@@ -199,9 +199,11 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
            }}
         >
           {/* El Planeta Crudo NATIVAMENTE Transparente */}
-          <img 
+          <motion.img 
             src={imgUrl} 
             alt={moduleInfo.titleEs} 
+            animate={moduleInfo.id === 'arcade' ? { rotate: 360 } : { rotate: 0 }}
+            transition={moduleInfo.id === 'arcade' ? { duration: 50, ease: "linear", repeat: Infinity } : {}}
             style={{ 
               width: '100%', 
               height: '100%', 
