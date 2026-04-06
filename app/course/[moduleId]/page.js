@@ -9,6 +9,7 @@ import { useParams, useRouter } from 'next/navigation';
 import { BookOpen, AlertCircle, ArrowRight, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import SatisfactionScale from '@/components/SatisfactionScale';
 
 export default function CourseModule() {
   const { user, userData, loading } = useAuth();
@@ -60,58 +61,72 @@ export default function CourseModule() {
       
       <main className="layout-container" style={{ flex: 1, padding: '3rem 2rem', display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 300px', gap: '3rem', alignItems: 'start' }}>
         
-        {/* Main Content Area */}
         <section style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           <div>
             <h1 style={{ color: moduleData.color, display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
               {moduleData.titleEs} 
-              <span style={{ fontSize: '1.5rem', opacity: 0.5, fontWeight: 'normal' }}>| {moduleData.titleEn}</span>
               {isCompleted && <CheckCircle color="var(--success)" size={32} />}
             </h1>
           </div>
 
-          <div className="glass-card" style={{ borderLeft: `4px solid ${moduleData.color}` }}>
-             <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-               <BookOpen size={24} color={moduleData.color} />
-               Visión General | Overview
-             </h3>
-             <p style={{ marginBottom: '1rem' }}><b>Español:</b> {moduleData.contentEs.intro}</p>
-             <p style={{ color: 'var(--text-muted)' }}><b>English:</b> {moduleData.contentEn.intro}</p>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
-            <div className="glass-card">
-              <h3 style={{ marginBottom: '1rem', fontSize: '1.25rem' }}>Datos Curiosos</h3>
-              <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                {moduleData.contentEs.facts.map((fact, i) => (
-                  <li key={i}>{fact}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="glass-card">
-              <h3 style={{ marginBottom: '1rem', fontSize: '1.25rem' }}>Cool Facts</h3>
-              <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.8rem', color: 'var(--text-muted)' }}>
-                {moduleData.contentEn.facts.map((fact, i) => (
-                  <li key={i}>{fact}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="glass-card" style={{ background: 'rgba(255, 215, 0, 0.05)', borderColor: 'rgba(255, 215, 0, 0.2)' }}>
-            <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: 'var(--gold-star)' }}>
-              <AlertCircle size={24} />
-              ¿Sabías qué? | Did you know?
-            </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              {moduleData.contentEs.rareFacts.map((factEs, i) => (
-                <div key={i} style={{ paddingBottom: i !== moduleData.contentEs.rareFacts.length - 1 ? '1rem' : 0, borderBottom: i !== moduleData.contentEs.rareFacts.length - 1 ? '1px solid rgba(255,255,255,0.1)' : 'none' }}>
-                  <p>🚀 {factEs}</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.4rem' }}>🛸 <i>{moduleData.contentEn.rareFacts[i]}</i></p>
+          {moduleData.contentEs.sections ? (
+            // NUEVO FORMATO 2.0 (Científico NASA)
+            moduleData.contentEs.sections.map((section, idx) => (
+              <div key={idx} className="glass-card" style={{ padding: '0', overflow: 'hidden', borderLeft: `4px solid ${section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color}` }}>
+                {section.image && (
+                  <div style={{ width: '100%', height: '300px', background: '#000', position: 'relative' }}>
+                     {/* eslint-disable-next-line @next/next/no-img-element */}
+                     <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: section.image.includes('cartoon_') ? 'contain' : 'cover' }} />
+                     {section.imgCaption && (
+                       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0,0,0,0.7)', padding: '0.8rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)' }}>
+                         📸 {section.imgCaption}
+                       </div>
+                     )}
+                  </div>
+                )}
+                <div style={{ padding: '2rem' }}>
+                  <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.2rem', fontSize: '1.4rem', color: section.style === 'highlight' ? 'var(--gold-star)' : 'inherit' }}>
+                    <BookOpen size={24} color={section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color} />
+                    {section.title}
+                  </h3>
+                  <p style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'rgba(255,255,255,0.9)' }}>
+                    {section.text}
+                  </p>
                 </div>
-              ))}
+              </div>
+            ))
+          ) : (
+            // FORMATO VIEJO 1.0 (Compatibilidad Inversa)
+            <div className="glass-card" style={{ borderLeft: `4px solid ${moduleData.color}` }}>
+               <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                 <BookOpen size={24} color={moduleData.color} />
+                 Visión General
+               </h3>
+               <p style={{ marginBottom: '1rem' }}>{moduleData.contentEs.intro}</p>
+               <h3 style={{ marginTop: '2rem', marginBottom: '1rem' }}>Datos Curiosos</h3>
+               <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                  {moduleData.contentEs.facts.map((fact, i) => <li key={i}>{fact}</li>)}
+               </ul>
             </div>
+          )}
+
+          {/* Sección de Bibliografía Oficial */}
+          {moduleData.contentEs.bibliography && (
+            <div style={{ marginTop: '1rem', padding: '1.5rem', background: 'rgba(0,0,0,0.3)', borderRadius: '12px', borderLeft: '3px solid var(--text-muted)' }}>
+              <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1rem' }}>Fuentes de Investigación Oficial</h4>
+              <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', listStyleType: 'circle', paddingLeft: '1.2rem' }}>
+                {moduleData.contentEs.bibliography.map((bib, i) => (
+                  <li key={i}>{bib}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Encuesta de Satisfacción */}
+          <div style={{ marginTop: '2rem' }}>
+            <SatisfactionScale moduleId={moduleData.id} userId={user?.uid} />
           </div>
+
         </section>
 
         {/* Sidebar / Quiz Section */}

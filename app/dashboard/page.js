@@ -55,9 +55,11 @@ export default function CourseHub() {
              </p>
              <h2 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.1 }}>Misión: Sistema Solar</h2>
              <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: '1rem 0 2rem 0' }}>Conquista los 9 planetas, descubre sus misterios bi-lingües y recolecta las medallas orbitales completando minijuegos de simulación.</p>
-             <Link href="/hub/solar-system" className="btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.2rem', display: 'inline-flex', alignItems: 'center', gap: '0.8rem' }}>
-               <PlayCircle size={24} /> Entrar al HUB Planetario
-             </Link>
+             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+               <Link href="/hub/solar-system" className="btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.3rem', display: 'inline-flex', alignItems: 'center', gap: '1rem', background: 'var(--electric-blue)', color: 'black', boxShadow: '0 0 30px rgba(0, 228, 255, 0.4)' }}>
+                 <PlayCircle size={28} /> DESPEGAR AL MAPA
+               </Link>
+             </motion.div>
           </div>
         </section>
 
@@ -69,24 +71,36 @@ export default function CourseHub() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             
             {/* Locked Course 1 */}
-            <div className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '2.5rem 2rem', opacity: 0.7 }}>
-               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.4)', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                 <Lock size={40} color="var(--text-muted)" />
-                 <h3 style={{ textTransform: 'uppercase', letterSpacing: '2px', marginTop: '1rem' }}>En Desarrollo</h3>
+            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 0.8, borderRadius: '20px' }}>
+               <div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '150px', height: '150px', background: 'url(/assets/cartoon_jupiter.png) center center / contain no-repeat', filter: 'grayscale(100%) opacity(0.5)' }}></div>
+               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)', zIndex: 0 }}></div>
+               
+               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'rgba(0,0,0,0.6)', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                 <Lock size={16} color="var(--text-muted)" />
+                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Fase 2</span>
                </div>
-               <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--starlight)' }}>Exploradores de Agujeros Negros</h3>
-               <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Nivel 2: Misiones Peligrosas y Física Cuántica para principiantes.</p>
-            </div>
+
+               <div style={{ position: 'relative', zIndex: 1 }}>
+                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--starlight)' }}>Anomalías Cósmicas</h3>
+                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Agujeros negros y cuásares. Próximamente.</p>
+               </div>
+            </motion.div>
 
             {/* Locked Course 2 */}
-            <div className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '2.5rem 2rem', opacity: 0.7 }}>
-               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.4)', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                 <Lock size={40} color="var(--text-muted)" />
-                 <h3 style={{ textTransform: 'uppercase', letterSpacing: '2px', marginTop: '1rem' }}>Muy Pronto</h3>
+            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 0.8, borderRadius: '20px' }}>
+               <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '150px', height: '150px', background: 'url(/assets/cartoon_saturn.png) center center / contain no-repeat', filter: 'grayscale(100%) opacity(0.5)' }}></div>
+               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)', zIndex: 0 }}></div>
+               
+               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'rgba(0,0,0,0.6)', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                 <Lock size={16} color="var(--text-muted)" />
+                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Fase 3</span>
                </div>
-               <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--starlight)' }}>La Vía Láctea Inexplorada</h3>
-               <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Nivel 3: Navegación Interestelar, Exoplanetas y Aliens imaginarios.</p>
-            </div>
+
+               <div style={{ position: 'relative', zIndex: 1 }}>
+                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--starlight)' }}>Navegación Interestelar</h3>
+                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Viajes a velocidad luz y exoplanetas.</p>
+               </div>
+            </motion.div>
 
           </div>
         </section>
