@@ -129,6 +129,18 @@ export default function SolarSystemMap() {
               );
            })}
 
+           {/* El Nuevo Exoplaneta Arcade / Minijuegos */}
+           <IsolatedPlanetNode 
+              key="arcade"
+              moduleInfo={{ id: 'arcade', titleEs: 'Recreativos (Arcade)', color: '#FF00FF' }} 
+              idx={100}
+              coords={{ left: '15%', top: '85%', size: 'clamp(60px, 7vw, 100px)' }} 
+              isCompleted={false} 
+              isPlayable={true}
+              isLocked={false}
+              customHref="/hub/arcade"
+           />
+
         </div>
 
       </main>
@@ -137,7 +149,7 @@ export default function SolarSystemMap() {
 }
 
 // Componente Independiente Flotante (Botón 2D)
-function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, isLocked }) {
+function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, isLocked, customHref }) {
   const [hovered, setHovered] = useState(false);
   
   // Archivo gráfico individual
@@ -148,8 +160,10 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
   const planetFilter = isLocked ? 'grayscale(80%) blur(2px) contrast(1.5)' : 'contrast(1.2)';
   const planetOpacity = isLocked ? 0.3 : 1;
 
+  const targetLink = isLocked ? '#' : (customHref || `/course/${moduleInfo.id}`);
+
   return (
-    <Link href={isLocked ? '#' : `/course/${moduleInfo.id}`} passHref>
+    <Link href={targetLink} passHref>
       <div 
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -238,10 +252,10 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
               }}
             >
                <h4 style={{ margin: 0, fontSize: '1.1rem', color: isLocked ? 'gray' : 'white', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                 {isLocked ? '?????' : `Misión ${moduleInfo.titleEs}`}
+                 {isLocked ? '?????' : (moduleInfo.id === 'arcade' ? 'Zona Arcade' : `Misión ${moduleInfo.titleEs}`)}
                </h4>
                <p style={{ margin: '0.3rem 0 0 0', fontSize: '0.85rem', color: isCompleted ? 'var(--success)' : (isLocked ? 'var(--text-muted)' : 'var(--electric-blue)') }}>
-                 {isLocked ? 'Espacio Inexplorado 🔒' : (isCompleted ? `Aterrizaje Exitoso ⭐` : 'Misión de Exploración Activa 🚀')}
+                 {isLocked ? 'Espacio Inexplorado 🔒' : (moduleInfo.id === 'arcade' ? '¡Minijuegos Activos! 👾' : (isCompleted ? `Aterrizaje Exitoso ⭐` : 'Misión de Exploración Activa 🚀'))}
                </p>
             </motion.div>
           )}

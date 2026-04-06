@@ -1,0 +1,104 @@
+'use client';
+import { useAuth } from '@/hooks/useAuth';
+import Navbar from '@/components/Navbar';
+import { useRouter } from 'next/navigation';
+import { ChevronLeft, Gamepad2, Trophy, Star } from 'lucide-react';
+import Link from 'next/link';
+import MemoryGame from '@/components/games/MemoryGame';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+
+export default function ArcadeExoplanet() {
+  const { user, userData, loading } = useAuth();
+  const router = useRouter();
+  const [activeGame, setActiveGame] = useState(null); // 'memory', 'words', etc.
+
+  useEffect(() => {
+    if (!loading && !user) router.push('/auth');
+  }, [user, loading, router]);
+
+  if (loading || !userData) {
+    return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a1a', color: 'white' }}>Aterrizando en Zona Arcade...</div>;
+  }
+
+  const userStars = userData?.progress?.stars || 0;
+
+  return (
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#050014' }}>
+      
+      {/* Botón Flotante para abandonar el Exoplaneta */}
+      <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 100 }}>
+         <Link href="/hub/solar-system" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none', background: 'rgba(255,0,255,0.2)', padding: '0.8rem 1.2rem', borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,0,255,0.5)' }}>
+            <ChevronLeft size={24} /> Órbita Sideral
+         </Link>
+      </div>
+
+      {/* Cyber Neon Background Effect */}
+      <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(circle at 50% -20%, rgba(255, 0, 255, 0.15), rgba(0,0,0,1))', zIndex: 0, pointerEvents: 'none' }}></div>
+
+      <main className="layout-container" style={{ flex: 1, padding: '6rem 2rem 2rem 2rem', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        
+        <header style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <motion.div animate={{ rotate: [0, 5, -5, 0] }} transition={{ repeat: Infinity, duration: 4 }}>
+             <Gamepad2 size={64} color="#FF00FF" style={{ filter: 'drop-shadow(0 0 15px rgba(255,0,255,0.8))' }} />
+          </motion.div>
+          <h1 style={{ fontSize: '3rem', margin: '1rem 0 0.5rem 0', color: 'white', textShadow: '0 0 20px #FF00FF' }}>Cibernética Arcade</h1>
+          <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>Centro de Reclutamiento Sensorial y Simulaciones</p>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,215,0,0.1)', border: '1px solid var(--gold-star)', padding: '0.5rem 1.5rem', borderRadius: '20px', marginTop: '1rem', color: 'var(--gold-star)' }}>
+             <Trophy size={18} /> Puntuación Gamer TotaL: {userStars} <Star size={14}/>
+          </div>
+        </header>
+
+        {/* Console Machine Selection */}
+        {!activeGame ? (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', width: '100%', maxWidth: '1000px' }}>
+            
+            {/* Máquina 1: Memorama */}
+            <div className="glass-card" style={{ border: '1px solid rgba(0, 255, 136, 0.4)', background: 'rgba(0, 255, 136, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(0, 255, 136, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(0,255,136,0.3)' }}>
+                  <img src="/assets/cartoon_earth.png" width="50" style={{ filter: 'drop-shadow(0 0 5px white)' }} />
+               </div>
+               <h2 style={{ color: 'var(--success)', margin: '0 0 0.5rem 0' }}>Memoria Fotográfica</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Empareja las holo-tarjetas planetarias gastando la menor cantidad de energía posible en tu radar.</p>
+               <button onClick={() => setActiveGame('memory')} className="btn-primary" style={{ background: 'var(--success)', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(0,255,136,0.4)', fontWeight: 'bold' }}>
+                 INICIAR SIMULACIÓN
+               </button>
+            </div>
+
+            {/* Máquina 2: Locked */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255, 255, 255, 0.1)', filter: 'grayscale(100%)', opacity: 0.5, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 255, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                  <span style={{ fontSize: '2rem' }}>🔤</span>
+               </div>
+               <h2 style={{ color: 'white', margin: '0 0 0.5rem 0' }}>Sopa Sideral</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Próximamente. Busca lexemas ocultos en tiempo récord.</p>
+               <button disabled style={{ background: 'rgba(255,255,255,0.1)', color: 'gray', padding: '0.8rem', borderRadius: '8px', cursor: 'not-allowed', width: '100%' }}>
+                 MÁQUINA EN MANTENIMIENTO
+               </button>
+            </div>
+
+          </div>
+        ) : (
+          <div style={{ width: '100%', maxWidth: '800px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+              <h2 style={{ color: 'var(--success)', margin: 0 }}>Simulador: Memoria Fotográfica</h2>
+              <button 
+                onClick={() => setActiveGame(null)} 
+                style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: 'white', padding: '0.5rem 1rem', borderRadius: '8px', cursor: 'pointer' }}
+              >
+                Cerrar Máquina
+              </button>
+            </div>
+            
+            <MemoryGame 
+               onComplete={(bonus) => {
+                 alert(`¡Nivel Excedido! Has demostrado alta competencia recolectando ${bonus} estrellas base. (En este arcade puedes jugar infinito por diversión)`);
+               }}
+            />
+          </div>
+        )}
+
+      </main>
+    </div>
+  );
+}
