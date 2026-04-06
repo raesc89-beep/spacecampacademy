@@ -34,7 +34,15 @@ export default function Navbar() {
           <img src="/assets/main_logo.png" alt="Space Academy Camp Logo" style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'contain', background: 'white' }} />
           <h2 style={{ margin: 0, fontSize: '1.25rem' }}>Space Camp</h2>
         </Link>
-
+        <div style={{ display: 'flex', gap: '1.5rem', marginLeft: '2rem' }}>
+           <Link href="/dashboard" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+             Base de Misiones
+           </Link>
+           <Link href="/dashboard/live" style={{ textDecoration: 'none', color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '0.4rem', border: '1px solid rgba(0, 255, 136, 0.4)', padding: '0.3rem 0.8rem', borderRadius: '15px', background: 'rgba(0,255,136,0.05)' }}>
+             <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--success)', display: 'inline-block' }} className="pulse-anim" />
+             En Vivo
+           </Link>
+        </div>
       </div>
       
       {!loading && user && (
