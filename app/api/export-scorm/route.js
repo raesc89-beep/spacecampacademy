@@ -120,7 +120,7 @@ export async function GET(request) {
   return new Response(readableWebStream, {
     headers: {
       'Content-Type': 'application/zip',
-      'Content-Disposition': \`attachment; filename="SpaceCamp_Mod_\${planetData.id}.zip"\`
+      'Content-Disposition': `attachment; filename="SpaceCamp_Mod_${planetData.id}.zip"`
     }
   });
 }
