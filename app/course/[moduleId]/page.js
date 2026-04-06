@@ -44,7 +44,7 @@ export default function CourseModule() {
   if (!moduleData) return null;
 
   const isCompleted = userData?.progress?.completedModules?.includes(moduleData.id);
-  const planetImageName = `planet_${moduleData.titleEn.toLowerCase()}.png`;
+  const planetImageName = `cartoon_${moduleData.titleEn.toLowerCase()}.png`;
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
