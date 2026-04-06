@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, Star, UserPlus } from 'lucide-react';
 import Image from 'next/image';
-
+import AnimatedMainLogo from '@/components/AnimatedMainLogo';
 export default function Home() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -9,7 +9,9 @@ export default function Home() {
       {/* Navbar Simple */}
       <nav style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(10px)', position: 'sticky', top: 0, zIndex: 100 }}>
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, fontFamily: 'var(--font-quantico)', color: 'white' }}>
-          <span style={{ fontSize: '1.8rem' }}>🚀</span> Space Camp Academy
+          <span style={{ fontSize: '1.8rem' }}>🚀</span> 
+          <AnimatedMainLogo size={40} />
+          Space Camp Academy
         </h2>
         <div style={{ display: 'flex', gap: '1rem' }}>
           <Link href="/auth" className="btn-secondary" style={{ padding: '0.6rem 1.2rem' }}>Login</Link>
@@ -41,20 +43,6 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Global Partner Banner */}
-        <section style={{ width: '100%', maxWidth: '1000px', margin: '0 auto', padding: '0 2rem' }}>
-          <img 
-            src="/assets/partner_banner.png" 
-            alt="Space Camp Academy Partners" 
-            style={{ 
-              width: '100%', 
-              height: 'auto', 
-              borderRadius: '24px', 
-              boxShadow: '0 0 50px rgba(0, 228, 255, 0.2)',
-              border: '2px solid rgba(255,255,255,0.1)' 
-            }} 
-          />
-        </section>
 
         {/* Commander Marco Velez Section */}
         <section className="glass-card" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 2fr', gap: '3rem', alignItems: 'center', maxWidth: '900px', width: '100%', padding: '3rem', margin: '4rem 0' }}>
@@ -81,7 +69,6 @@ export default function Home() {
           <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap', alignItems: 'center' }}>
             <img src="/assets/custom_1.jpg" alt="Partner 1" style={{ height: '80px', objectFit: 'contain', borderRadius: '12px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.1))' }} />
             <img src="/assets/custom_2.jpg" alt="Partner 2" style={{ height: '80px', objectFit: 'contain', borderRadius: '12px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.1))' }} />
-            <img src="/assets/custom_3.jpg" alt="Partner 3" style={{ height: '80px', objectFit: 'contain', borderRadius: '12px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.1))' }} />
             <img src="/assets/custom_4.jpg" alt="Partner 4" style={{ height: '80px', objectFit: 'contain', borderRadius: '12px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.1))' }} />
           </div>
         </section>

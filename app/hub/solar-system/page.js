@@ -81,23 +81,29 @@ export default function SolarSystemMap() {
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh' }}>
            
            {/* El Sol Masivo Generado por IA */}
-           <motion.img 
+           <motion.div 
              animate={{ rotate: 360 }} 
-             transition={{ duration: 200, repeat: Infinity, ease: "linear" }}
-             src="/assets/cartoon_sun.png" 
+             transition={{ duration: 250, repeat: Infinity, ease: "linear" }}
              style={{ 
                position: 'absolute', 
-               left: '-15%', 
-               top: '50%', 
-               transform: 'translateY(-50%)', 
-               height: '140%', 
-               width: 'auto', 
-               mixBlendMode: 'screen', // Borra el fondo negro de la imagen IA
+               left: '-25%', 
+               top: '-15%', 
+               height: '130%', 
+               aspectRatio: '1/1', 
                pointerEvents: 'none',
-               opacity: 0.9,
                zIndex: 0
              }} 
-           />
+           >
+             <img 
+               src="/assets/cartoon_sun.png" 
+               style={{ 
+                 width: '100%', 
+                 height: '100%', 
+                 objectFit: 'cover', 
+                 opacity: 0.9,
+               }} 
+             />
+           </motion.div>
 
            {orderedModules.map((mod, idx) => {
               const coords = orbitalData[mod.id.toLowerCase()];
@@ -137,8 +143,10 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
   // Archivo gráfico individual
   const imgUrl = `/assets/cartoon_${moduleInfo.id.toLowerCase()}.png`;
 
-  // El estilo de misterio: Si está bloqueado, bajamos drásticamente el brillo para crear una silueta cósmica
-  const planetFilter = isLocked ? 'brightness(0) drop-shadow(0 0 10px rgba(0,0,0,0.8))' : 'none';
+  // El estilo de misterio: En lugar de saturar de sombras físicas que causan los cuadros negros, 
+  // hacemos el planeta fantasmal/borroso cuando está inexplorado.
+  const planetFilter = isLocked ? 'grayscale(80%) blur(2px) contrast(1.5)' : 'contrast(1.2)';
+  const planetOpacity = isLocked ? 0.3 : 1;
 
   return (
     <Link href={isLocked ? '#' : `/course/${moduleInfo.id}`} passHref>
@@ -170,11 +178,13 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
              height: '100%', 
              position: 'relative',
              display: 'flex',
+             flexDirection: 'column',
              alignItems: 'center',
-             justifyContent: 'center'
+             justifyContent: 'center',
+             gap: '0.5rem'
            }}
         >
-          {/* El Planeta Crudo (Arte Generado) con mix-blend-mode para borrar el fondo negro */}
+          {/* El Planeta Crudo NATIVAMENTE Transparente */}
           <img 
             src={imgUrl} 
             alt={moduleInfo.titleEs} 
@@ -182,14 +192,24 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
               width: '100%', 
               height: '100%', 
               objectFit: 'contain',
-              mixBlendMode: 'screen', // Convierte el negro puro de la IA en transparente
               filter: planetFilter,
-              transition: 'filter 0.5s ease'
+              opacity: planetOpacity,
+              transition: 'all 0.5s ease'
             }} 
           />
+          <div style={{
+             fontFamily: 'var(--font-quantico)',
+             color: isLocked ? 'rgba(255,255,255,0.4)' : 'white',
+             fontSize: 'clamp(0.6rem, 1vw, 1rem)',
+             textShadow: '0 2px 10px rgba(0,0,0,0.9)',
+             textTransform: 'uppercase',
+             letterSpacing: '1px'
+          }}>
+             {isLocked ? '?????' : moduleInfo.titleEs}
+          </div>
 
           {/* Indicadores flotantes encima del planeta visual */}
-          {isLocked && <div style={{ position: 'absolute', padding: '0.4rem', borderRadius: '50%' }}><Lock size={24} color="rgba(255,255,255,0.3)" /></div>}
+          {isLocked && <div style={{ position: 'absolute', padding: '0.4rem', borderRadius: '50%' }}><Lock size={28} color="rgba(255,255,255,0.8)" /></div>}
           {isCompleted && <div style={{ position: 'absolute', bottom: '-10px', right: '-10px', background: 'rgba(0,0,0,0.8)', padding: '0.2rem', borderRadius: '50%', border: '1px solid var(--success)' }}><CheckCircle size={20} color="var(--success)" /></div>}
           {isPlayable && !isCompleted && !isLocked && <div style={{ position: 'absolute', top: '-15px', right: '-15px', padding: '0.2rem', animation: 'pulse 2s infinite' }}>✨</div>}
 
