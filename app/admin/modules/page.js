@@ -177,7 +177,7 @@ export default function AdminModulesPage() {
         <div>
           <h4 style={{ margin: '0 0 0.5rem 0', color: 'var(--gold-star)' }}>Protocolo de Cortafuegos</h4>
           <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-            Para que esta tecnología funcione libremente y subas ZIPs gigantes o fotos a la nube en tiempo real, deberás ir a tu consola en `console.firebase.google.com -> Storage -> Rules` y asegurarte de tener la regla de `allow write: if true;` configurada temporal o permanentemente por el administrador.
+            Para que esta tecnología funcione libremente y subas ZIPs gigantes o fotos a la nube en tiempo real, deberás ir a tu consola en `console.firebase.google.com &gt; Storage &gt; Rules` y asegurarte de tener la regla de `allow write: if true;` configurada temporal o permanentemente por el administrador.
           </p>
         </div>
       </section>
