@@ -171,6 +171,28 @@ export default function AdminModulesPage() {
         </form>
       </section>
 
+      {/* TAREA 5: Motor de Exportación Universitario SCORM */}
+      <section className="glass-card" style={{ border: '1px solid rgba(255, 184, 0, 0.2)' }}>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>
+          <Package size={24} color="var(--gold-star)" /> Generador Automático SCORM 1.2
+        </h2>
+        <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+          Convierte cualquier cápsula pedagógica de Space Camp en un paquete `.zip` certificado (imsmanifest.xml incluido) listo para montarse en plataformas como Moodle Universitario, Canvas o Blackboard.
+        </p>
+        
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+           <input type="text" id="planetExport" placeholder="ID (ej: mars, venus, earth)" defaultValue="mars" style={{ padding: '0.8rem', background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.2)', color: 'white', borderRadius: '8px' }} />
+           
+           <button 
+             onClick={() => { const val = document.getElementById('planetExport').value; window.open('/api/export-scorm?planet='+val, '_blank'); }}
+             className="btn-primary" 
+             style={{ padding: '0.8rem 1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'var(--gold-star)', color: 'black' }}
+           >
+             <UploadCloud size={20} style={{ transform: 'rotate(180deg)' }} /> Empaquetar y Descargar SCORM
+           </button>
+        </div>
+      </section>
+
       {/* Reglas de Seguridad Warning */}
       <section style={{ display: 'flex', gap: '1rem', padding: '1rem', background: 'rgba(255,215,0,0.05)', borderRadius: '12px', borderLeft: '4px solid var(--gold-star)' }}>
         <AlertCircle size={28} color="var(--gold-star)" />

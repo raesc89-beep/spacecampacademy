@@ -10,6 +10,7 @@ import { BookOpen, AlertCircle, ArrowRight, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
+import MemoryGame from '@/components/games/MemoryGame';
 
 export default function CourseModule() {
   const { user, userData, loading } = useAuth();
@@ -119,6 +120,17 @@ export default function CourseModule() {
                   <li key={i}>{bib}</li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {/* Componente de Gamificación (Aparece tras concluir curso) */}
+          {isCompleted && (
+            <div style={{ marginTop: '3rem' }}>
+              <MemoryGame 
+                onComplete={(bonus) => {
+                  alert(`¡Memoria perfecta! Has recolectado ${bonus} estrellas extra. (Sistema en construcción)`);
+                }} 
+              />
             </div>
           )}
 
