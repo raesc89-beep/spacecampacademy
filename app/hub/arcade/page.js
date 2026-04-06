@@ -6,6 +6,8 @@ import { ChevronLeft, Gamepad2, Trophy, Star } from 'lucide-react';
 import Link from 'next/link';
 import MemoryGame from '@/components/games/MemoryGame';
 import WordSearch from '@/components/games/WordSearch';
+import AsteroidTrivia from '@/components/games/AsteroidTrivia';
+import SpaceBingo from '@/components/games/SpaceBingo';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -78,12 +80,36 @@ export default function ArcadeExoplanet() {
                </button>
             </div>
 
+            {/* Máquina 3: Trivia de Asteroides */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255, 100, 200, 0.4)', background: 'rgba(255, 100, 200, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 100, 200, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,100,200,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>☄️</span>
+               </div>
+               <h2 style={{ color: '#FF64C8', margin: '0 0 0.5rem 0' }}>Trivia de Asteroides</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Reflejos y mente: Dispara a la respuesta correcta antes del impacto crítico.</p>
+               <button onClick={() => setActiveGame('trivia')} className="btn-primary" style={{ background: '#FF64C8', color: 'white', width: '100%', boxShadow: '0 0 20px rgba(255,100,200,0.5)', fontWeight: 'bold' }}>
+                 DEFENDER ÓRBITA
+               </button>
+            </div>
+
+            {/* Máquina 4: Lotería Cósmica */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255, 215, 0, 0.4)', background: 'rgba(255, 215, 0, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 215, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,215,0,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🎫</span>
+               </div>
+               <h2 style={{ color: 'var(--gold-star)', margin: '0 0 0.5rem 0' }}>Lotería Cósmica</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Reflejos auditivos y visuales. Marca la anomalía espacial al instante que el Cómputo la canta.</p>
+               <button onClick={() => setActiveGame('bingo')} className="btn-primary" style={{ background: 'var(--gold-star)', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(255,215,0,0.4)', fontWeight: 'bold' }}>
+                 EXTRAER TARJETA
+               </button>
+            </div>
+
           </div>
         ) : (
           <div style={{ width: '100%', maxWidth: '800px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-              <h2 style={{ color: activeGame === 'memory' ? 'var(--success)' : 'var(--electric-blue)', margin: 0 }}>
-                 Simulador: {activeGame === 'memory' ? 'Memoria Fotográfica' : 'Sopa Sideral'}
+              <h2 style={{ color: activeGame === 'memory' ? 'var(--success)' : (activeGame === 'words' ? 'var(--electric-blue)' : (activeGame === 'trivia' ? '#FF64C8' : 'var(--gold-star)')), margin: 0 }}>
+                 Simulador: {activeGame === 'memory' ? 'Memoria Fotográfica' : (activeGame === 'words' ? 'Sopa Sideral' : (activeGame === 'trivia' ? 'Defensa y Trivia' : 'Lotería Espacial'))}
               </h2>
               <button 
                 onClick={() => setActiveGame(null)} 
@@ -99,6 +125,14 @@ export default function ArcadeExoplanet() {
             
             {activeGame === 'words' && (
                <WordSearch onComplete={(bonus) => alert(`¡Lexemas decodificados! Logro desbloqueado con ${bonus} estrellas.`)} />
+            )}
+            
+            {activeGame === 'trivia' && (
+               <AsteroidTrivia onComplete={(bonus) => alert(`¡Sobreviviste a la lluvia! Nave a salvo. Has juntado ${bonus} Puntuación.`)} />
+            )}
+            
+            {activeGame === 'bingo' && (
+               <SpaceBingo onComplete={(bonus) => alert(`¡BINGO EN EL VACÍO! Has marcado todo el panel obteniendo ${bonus} monedas de recompensa especial.`)} />
             )}
           </div>
         )}
