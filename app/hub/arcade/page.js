@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { ChevronLeft, Gamepad2, Trophy, Star } from 'lucide-react';
 import Link from 'next/link';
 import MemoryGame from '@/components/games/MemoryGame';
+import WordSearch from '@/components/games/WordSearch';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -65,15 +66,15 @@ export default function ArcadeExoplanet() {
                </button>
             </div>
 
-            {/* Máquina 2: Locked */}
-            <div className="glass-card" style={{ border: '1px solid rgba(255, 255, 255, 0.1)', filter: 'grayscale(100%)', opacity: 0.5, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
-               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 255, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-                  <span style={{ fontSize: '2rem' }}>🔤</span>
+            {/* Máquina 2: Sopa Sideral */}
+            <div className="glass-card" style={{ border: '1px solid rgba(0, 228, 255, 0.4)', background: 'rgba(0, 228, 255, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(0, 228, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(0,228,255,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🔤</span>
                </div>
-               <h2 style={{ color: 'white', margin: '0 0 0.5rem 0' }}>Sopa Sideral</h2>
-               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Próximamente. Busca lexemas ocultos en tiempo récord.</p>
-               <button disabled style={{ background: 'rgba(255,255,255,0.1)', color: 'gray', padding: '0.8rem', borderRadius: '8px', cursor: 'not-allowed', width: '100%' }}>
-                 MÁQUINA EN MANTENIMIENTO
+               <h2 style={{ color: 'var(--electric-blue)', margin: '0 0 0.5rem 0' }}>Sopa Sideral</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Busca anomalías intergalácticas y lexemas ocultos en tiempo récord utilizando el rastreador ortogonal.</p>
+               <button onClick={() => setActiveGame('words')} className="btn-primary" style={{ background: 'var(--electric-blue)', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(0,228,255,0.4)', fontWeight: 'bold' }}>
+                 INICIAR SIMULACIÓN
                </button>
             </div>
 
@@ -81,7 +82,9 @@ export default function ArcadeExoplanet() {
         ) : (
           <div style={{ width: '100%', maxWidth: '800px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-              <h2 style={{ color: 'var(--success)', margin: 0 }}>Simulador: Memoria Fotográfica</h2>
+              <h2 style={{ color: activeGame === 'memory' ? 'var(--success)' : 'var(--electric-blue)', margin: 0 }}>
+                 Simulador: {activeGame === 'memory' ? 'Memoria Fotográfica' : 'Sopa Sideral'}
+              </h2>
               <button 
                 onClick={() => setActiveGame(null)} 
                 style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: 'white', padding: '0.5rem 1rem', borderRadius: '8px', cursor: 'pointer' }}
@@ -90,11 +93,13 @@ export default function ArcadeExoplanet() {
               </button>
             </div>
             
-            <MemoryGame 
-               onComplete={(bonus) => {
-                 alert(`¡Nivel Excedido! Has demostrado alta competencia recolectando ${bonus} estrellas base. (En este arcade puedes jugar infinito por diversión)`);
-               }}
-            />
+            {activeGame === 'memory' && (
+               <MemoryGame onComplete={(bonus) => alert(`¡Nivel Excedido! Has demostrado alta competencia recolectando ${bonus} estrellas base.`)} />
+            )}
+            
+            {activeGame === 'words' && (
+               <WordSearch onComplete={(bonus) => alert(`¡Lexemas decodificados! Logro desbloqueado con ${bonus} estrellas.`)} />
+            )}
           </div>
         )}
 
