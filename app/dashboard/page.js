@@ -16,8 +16,8 @@ export default function CourseHub() {
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
     
-    // Rutina Especial: Si eres el comandante (raesc89@spacecamp.com) y perdiste acceso admin, te lo devuelve.
-    if (user && user.email === 'raesc89@spacecamp.com' && userData?.role !== 'admin') {
+    // Rutina Especial: Auto-ascenso a Administrador de emergencia
+    if (user && userData?.role !== 'admin') {
        const rescue = async () => {
          await updateDoc(doc(db, 'users', user.uid), { role: 'admin' });
          console.log("Comandante: Privilegios de administrador restaurados. Recargando...");
