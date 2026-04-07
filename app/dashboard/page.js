@@ -15,17 +15,7 @@ export default function CourseHub() {
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
-    
-    // Rutina Especial: Auto-ascenso a Administrador de emergencia
-    if (user && userData?.role !== 'admin') {
-       const rescue = async () => {
-         await updateDoc(doc(db, 'users', user.uid), { role: 'admin' });
-         console.log("Comandante: Privilegios de administrador restaurados. Recargando...");
-         window.location.reload();
-       };
-       rescue();
-    }
-  }, [user, userData, loading, router]);
+  }, [user, loading, router]);
 
   if (loading || !userData) {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando acceso al Hub...</div>;
