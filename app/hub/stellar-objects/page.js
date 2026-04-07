@@ -9,7 +9,7 @@ import { Lock, CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function SolarSystemMap() {
+export default function StellarObjectsMap() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
   const [modules, setModules] = useState([]);
@@ -33,20 +33,14 @@ export default function SolarSystemMap() {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a1a', color: 'white' }}>Iniciando HUD Orbital...</div>;
   }
 
-  // Orden estricto del Sistema Solar (IDs exactos de Firebase)
-  const planetOrder = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
+  // Orden estricto de las Anomalías Cósmicas
+  const planetOrder = ['black_hole', 'quasar', 'pulsar'];
 
-  // Coordenadas orgánicas distribuidas a lo largo del "Canvas" de la galaxia
+  // Coordenadas orgánicas distribuidas a lo largo del "Canvas" de la galaxia profunda
   const orbitalData = {
-    mercury: { left: '18%', top: '55%', size: 'clamp(40px, 5vw, 70px)' },
-    venus: { left: '28%', top: '35%', size: 'clamp(50px, 6vw, 90px)' },
-    earth: { left: '38%', top: '65%', size: 'clamp(55px, 6.5vw, 95px)' },
-    mars: { left: '48%', top: '40%', size: 'clamp(45px, 5vw, 80px)' },
-    jupiter: { left: '60%', top: '50%', size: 'clamp(90px, 12vw, 170px)' },
-    saturn: { left: '72%', top: '25%', size: 'clamp(110px, 14vw, 200px)' },
-    uranus: { left: '85%', top: '60%', size: 'clamp(70px, 8vw, 120px)' },
-    neptune: { left: '92%', top: '30%', size: 'clamp(65px, 7.5vw, 110px)' },
-    pluto: { left: '96%', top: '80%', size: 'clamp(35px, 4vw, 60px)' }
+    black_hole: { left: '30%', top: '50%', size: 'clamp(150px, 20vw, 300px)' },
+    quasar: { left: '70%', top: '30%', size: 'clamp(90px, 12vw, 180px)' },
+    pulsar: { left: '80%', top: '70%', size: 'clamp(70px, 10vw, 140px)' }
   };
 
   // Determinar Índice de Progreso
@@ -75,36 +69,15 @@ export default function SolarSystemMap() {
          </Link>
       </div>
       
-      <main style={{ flex: 1, position: 'relative', width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', background: 'url(/assets/spiral_galaxy_bg.png) center center / cover' }}>
+      <main style={{ 
+        flex: 1, position: 'relative', width: '100vw', height: '100vh', 
+        display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', 
+        background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' 
+      }}>
         
         {/* Contenedor del Mapa 16:9 Máximo */}
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh' }}>
            
-           {/* El Sol Masivo Generado por IA */}
-           <motion.div 
-             animate={{ rotate: 360 }} 
-             transition={{ duration: 250, repeat: Infinity, ease: "linear" }}
-             style={{ 
-               position: 'absolute', 
-               left: '-25%', 
-               top: '-15%', 
-               height: '130%', 
-               aspectRatio: '1/1', 
-               pointerEvents: 'none',
-               zIndex: 0
-             }} 
-           >
-             <img 
-               src="/assets/cartoon_sun.png" 
-               style={{ 
-                 width: '100%', 
-                 height: '100%', 
-                 objectFit: 'cover', 
-                 opacity: 0.9,
-               }} 
-             />
-           </motion.div>
-
            {orderedModules.map((mod, idx) => {
               const coords = orbitalData[mod.id.toLowerCase()];
               if (!coords) return null;
@@ -112,9 +85,6 @@ export default function SolarSystemMap() {
               const isCompleted = idx <= maxCompletedIdx;
               const isPlayable = idx === currentPlayableIdx;
               const isLocked = idx > currentPlayableIdx;
-              
-              // Niebla de Guerra: Si está muy por delante, es invisible. Si es el SIGUIENTE bloqueado, es sombra.
-              // Para ser fieles a la Niebla, haremos TODO lo bloqueado como sombras oscuras.
               
               return (
                 <IsolatedPlanetNode 
@@ -129,18 +99,6 @@ export default function SolarSystemMap() {
               );
            })}
 
-           {/* El Nuevo Exoplaneta Arcade / Minijuegos */}
-           <IsolatedPlanetNode 
-              key="arcade"
-              moduleInfo={{ id: 'arcade', titleEs: 'Recreativos (Arcade)', color: '#FF00FF' }} 
-              idx={100}
-              coords={{ left: '15%', top: '105%', size: 'clamp(60px, 7vw, 100px)' }} 
-              isCompleted={false} 
-              isPlayable={true}
-              isLocked={false}
-              customHref="/hub/arcade"
-           />
-
         </div>
 
       </main>
@@ -153,7 +111,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
   const [hovered, setHovered] = useState(false);
   
   // Archivo gráfico individual
-  const imgUrl = `/assets/cartoon_${moduleInfo.id.toLowerCase()}.png`;
+  const imgUrl = `/assets/${moduleInfo.id.toLowerCase()}_icon.png`;
 
   // El estilo de misterio: En lugar de saturar de sombras físicas que causan los cuadros negros, 
   // hacemos el planeta fantasmal/borroso cuando está inexplorado.

@@ -20,6 +20,7 @@ export default function QuizMinigame() {
   const [showResults, setShowResults] = useState(false);
   const [saving, setSaving] = useState(false);
   const [isShaking, setIsShaking] = useState(false);
+  const [isExploding, setIsExploding] = useState(false); // FASE 3: Choque de anomalías
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
@@ -35,21 +36,34 @@ export default function QuizMinigame() {
 
   if (loading || !moduleData) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Cargando Simulador...</div>;
 
-  const totalQuestions = moduleData.quizEs.length;
-  const passed = score === totalQuestions;
-  const planetImageName = `planet_${moduleData.titleEn.toLowerCase()}.png`;
+  const totalQuestions = moduleData.quizEs?.length || 0;
+  const passed = score === totalQuestions && totalQuestions > 0;
+  
+  const isAnomaly = ['black_hole', 'quasar', 'pulsar'].includes(moduleData.id);
+  const planetImageName = isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn.toLowerCase().replace(/\s+/g, '_')}.png`;
 
   const handleAnswer = (optionIndex) => {
+    if (isExploding || isShaking) return; // Prevent double clicks
+    
     const isCorrect = optionIndex === moduleData.quizEs[currentQuestion].a;
     
     if (isCorrect) {
       setScore(score + 1);
       advanceGame(isCorrect);
     } else {
-      // Shake animation on wrong answer
-      setIsShaking(true);
-      setTimeout(() => setIsShaking(false), 500);
-      advanceGame(isCorrect);
+      if (isAnomaly) {
+        // FASE 3: Explosión en Anomalías
+        setIsExploding(true);
+        setTimeout(() => {
+          setIsExploding(false);
+          advanceGame(false);
+        }, 1500);
+      } else {
+        // Shake clásico en Sistema Solar
+        setIsShaking(true);
+        setTimeout(() => setIsShaking(false), 500);
+        advanceGame(isCorrect);
+      }
     }
   };
 
@@ -115,17 +129,22 @@ export default function QuizMinigame() {
                <motion.div 
                  animate={{ 
                    left: `${10 + (progressPercentage * 0.8)}%`,
-                   x: isShaking ? [-10, 10, -10, 10, 0] : 0,
-                   y: [-5, 5, -5], // Gentle hover effect
+                   x: isShaking || isExploding ? [-10, 10, -10, 10, -10, 10, 0] : 0,
+                   y: isExploding ? [0, 50, 80] : [-5, 5, -5], // Drop if exploding
+                   opacity: isExploding ? [1, 1, 0] : 1,
+                   rotate: isExploding ? [0, 90, 180] : 0
                  }}
                  transition={{ 
                    left: { type: 'spring', stiffness: 60, damping: 15 },
-                   x: { duration: 0.4 },
-                   y: { repeat: Infinity, duration: 4, ease: "easeInOut" }
+                   x: { duration: 0.4, repeat: isExploding ? 2 : 0 },
+                   y: isExploding ? { duration: 1.2, ease: "easeIn" } : { repeat: Infinity, duration: 4, ease: "easeInOut" },
+                   rotate: isExploding ? { duration: 1.2, ease: "easeIn" } : { duration: 0 },
+                   opacity: isExploding ? { duration: 1.2 } : { duration: 0 }
                  }}
                  style={{ position: 'absolute', zIndex: 4, marginLeft: '-24px', filter: `drop-shadow(0 0 10px ${moduleData.color})` }}
                >
-                 <Rocket size={48} color="white" fill={moduleData.color} style={{ transform: 'rotate(45deg)' }} />
+                 <Rocket size={48} color="white" fill={isExploding ? 'red' : moduleData.color} style={{ transform: 'rotate(45deg)' }} />
+                 {isExploding && <div style={{ position: 'absolute', top: '-10px', right: '-10px', fontSize: '2.5rem', animation: 'pulse 0.5s infinite' }}>💥</div>}
                </motion.div>
              </div>
            </div>
@@ -204,8 +223,8 @@ export default function QuizMinigame() {
                 </>
               )}
 
-              <Link href="/hub/solar-system" className="btn-primary" style={{ width: '100%', marginTop: '1.5rem' }}>
-                Volver al Cuartel General
+              <Link href={isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"} className="btn-primary" style={{ width: '100%', marginTop: '1.5rem' }}>
+                Volver al Mando Central
               </Link>
             </motion.div>
           )}

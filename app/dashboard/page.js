@@ -82,21 +82,23 @@ export default function CourseHub() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             
-            {/* Locked Course 1 */}
-            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 0.8, borderRadius: '20px' }}>
-               <div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '150px', height: '150px', background: 'url(/assets/cartoon_jupiter.png) center center / contain no-repeat', filter: 'grayscale(100%) opacity(0.5)' }}></div>
-               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)', zIndex: 0 }}></div>
-               
-               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'rgba(0,0,0,0.6)', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                 <Lock size={16} color="var(--text-muted)" />
-                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Fase 2</span>
-               </div>
+            {/* Active Course 2: Anomalías Cósmicas */}
+            <Link href="/hub/stellar-objects" style={{ textDecoration: 'none' }}>
+              <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(0, 228, 255, 0.4)' }}>
+                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url(/assets/black_hole_icon.png) center center / cover no-repeat', filter: 'brightness(0.6)' }}></div>
+                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)', zIndex: 0 }}></div>
+                 
+                 <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'var(--electric-blue)', color: 'black', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+                   <PlayCircle size={16} />
+                   <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Nuevo Vuelo</span>
+                 </div>
 
-               <div style={{ position: 'relative', zIndex: 1 }}>
-                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--starlight)' }}>Anomalías Cósmicas</h3>
-                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Agujeros negros y cuásares. Próximamente.</p>
-               </div>
-            </motion.div>
+                 <div style={{ position: 'relative', zIndex: 1 }}>
+                   <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'white', textShadow: '0 0 10px rgba(0,228,255,0.8)' }}>Anomalías Cósmicas</h3>
+                   <p style={{ color: 'var(--electric-blue)', marginTop: '0.5rem' }}>Agujeros negros, Cuásares y Púlsares.</p>
+                 </div>
+              </motion.div>
+            </Link>
 
             {/* Locked Course 2 */}
             <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 0.8, borderRadius: '20px' }}>

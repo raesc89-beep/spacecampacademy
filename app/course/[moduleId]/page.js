@@ -44,7 +44,10 @@ export default function CourseModule() {
   if (!moduleData) return null;
 
   const isCompleted = userData?.progress?.completedModules?.includes(moduleData.id);
-  const planetImageName = `cartoon_${moduleData.titleEn.toLowerCase()}.png`;
+  
+  // Lógica de archivo para planetas vs anomalías
+  const isAnomaly = ['black_hole', 'quasar', 'pulsar'].includes(moduleData.id);
+  const planetImageName = isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn.toLowerCase().replace(/\s+/g, '_')}.png`;
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -153,7 +156,7 @@ export default function CourseModule() {
           </div>
 
           <Link href="/dashboard" className="btn-secondary" style={{ textAlign: 'center' }}>
-            Volver al Mapa Estelar
+            Volver al Mando Central
           </Link>
         </aside>
 
