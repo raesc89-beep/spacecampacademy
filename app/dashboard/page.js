@@ -46,7 +46,7 @@ export default function CourseHub() {
 
         {/* Featured Course */}
         <section style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', padding: '4rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', minHeight: '400px', border: '1px solid rgba(255,255,255,0.1)' }}>
-          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url(/assets/planet_earth_1774878748720.png) no-repeat center right / cover', zIndex: -1, opacity: 0.5 }}></div>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url(/assets/solar_system_cover.png) no-repeat center right / cover', zIndex: -1, opacity: 0.7 }}></div>
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(90deg, #020308 0%, rgba(2,3,8,0.4) 100%)', zIndex: 0 }}></div>
           
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '600px' }}>

@@ -134,7 +134,7 @@ export default function SolarSystemMap() {
               key="arcade"
               moduleInfo={{ id: 'arcade', titleEs: 'Recreativos (Arcade)', color: '#FF00FF' }} 
               idx={100}
-              coords={{ left: '15%', top: '85%', size: 'clamp(60px, 7vw, 100px)' }} 
+              coords={{ left: '15%', top: '105%', size: 'clamp(60px, 7vw, 100px)' }} 
               isCompleted={false} 
               isPlayable={true}
               isLocked={false}
