@@ -1,5 +1,7 @@
 'use client';
 import { useAuth } from '@/hooks/useAuth';
+import { doc, updateDoc } from 'firebase/firestore';
+import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
@@ -13,7 +15,17 @@ export default function CourseHub() {
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
-  }, [user, loading, router]);
+    
+    // Rutina Especial: Si eres el comandante (raesc89@spacecamp.com) y perdiste acceso admin, te lo devuelve.
+    if (user && user.email === 'raesc89@spacecamp.com' && userData?.role !== 'admin') {
+       const rescue = async () => {
+         await updateDoc(doc(db, 'users', user.uid), { role: 'admin' });
+         console.log("Comandante: Privilegios de administrador restaurados. Recargando...");
+         window.location.reload();
+       };
+       rescue();
+    }
+  }, [user, userData, loading, router]);
 
   if (loading || !userData) {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando acceso al Hub...</div>;
