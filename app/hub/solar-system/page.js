@@ -75,7 +75,7 @@ export default function SolarSystemMap() {
          </Link>
       </div>
       
-      <main style={{ flex: 1, position: 'relative', width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', background: 'url(/assets/spiral_galaxy_bg.png) center center / cover' }}>
+      <main style={{ flex: 1, position: 'relative', width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', background: 'url(/assets/solar_system_map.png) center center / cover' }}>
         
         {/* Contenedor del Mapa 16:9 Máximo */}
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh' }}>
