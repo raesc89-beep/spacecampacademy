@@ -39,7 +39,7 @@ export default function QuizMinigame() {
   const totalQuestions = moduleData.quizEs?.length || 0;
   const passed = score === totalQuestions && totalQuestions > 0;
   
-  const isAnomaly = ['black_hole', 'quasar', 'pulsar'].includes(moduleData.id);
+  const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const planetImageName = isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn.toLowerCase().replace(/\s+/g, '_')}.png`;
 
   const handleAnswer = (optionIndex) => {

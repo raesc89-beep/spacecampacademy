@@ -34,13 +34,16 @@ export default function StellarObjectsMap() {
   }
 
   // Orden estricto de las Anomalías Cósmicas
-  const planetOrder = ['black_hole', 'quasar', 'pulsar'];
+  const planetOrder = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'];
 
   // Coordenadas orgánicas distribuidas a lo largo del "Canvas" de la galaxia profunda
   const orbitalData = {
     black_hole: { left: '30%', top: '50%', size: 'clamp(150px, 20vw, 300px)' },
-    quasar: { left: '70%', top: '30%', size: 'clamp(90px, 12vw, 180px)' },
-    pulsar: { left: '80%', top: '70%', size: 'clamp(70px, 10vw, 140px)' }
+    quasar: { left: '70%', top: '25%', size: 'clamp(90px, 12vw, 180px)' },
+    pulsar: { left: '85%', top: '75%', size: 'clamp(70px, 10vw, 140px)' },
+    red_dwarf: { left: '15%', top: '20%', size: 'clamp(50px, 8vw, 120px)' },
+    white_dwarf: { left: '50%', top: '80%', size: 'clamp(30px, 5vw, 80px)' },
+    wormhole: { left: '55%', top: '40%', size: 'clamp(120px, 16vw, 240px)' }
   };
 
   // Determinar Índice de Progreso
@@ -156,19 +159,21 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
              gap: '0.5rem'
            }}
         >
-          {/* El Planeta Crudo NATIVAMENTE Transparente */}
+          {/* La Anomalía Estelar NATIVAMENTE Transparente con Filtro Screen */}
           <motion.img 
             src={imgUrl} 
             alt={moduleInfo.titleEs} 
-            animate={moduleInfo.id === 'arcade' ? { rotate: 360 } : { rotate: 0 }}
-            transition={moduleInfo.id === 'arcade' ? { duration: 50, ease: "linear", repeat: Infinity } : {}}
+            animate={{ rotate: 360 }}
+            transition={{ duration: 80 + (idx * 20), ease: "linear", repeat: Infinity }}
             style={{ 
               width: '100%', 
               height: '100%', 
               objectFit: 'contain',
+              mixBlendMode: 'screen', /* Elimina cualquier rastro negro de la generación IA !! */
               filter: planetFilter,
               opacity: planetOpacity,
-              transition: 'all 0.5s ease'
+              transition: 'all 0.5s ease',
+              borderRadius: '50%'
             }} 
           />
           <div style={{
