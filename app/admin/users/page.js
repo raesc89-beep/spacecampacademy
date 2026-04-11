@@ -89,9 +89,13 @@ export default function AdminUsersPage() {
                        <span style={{ background: 'rgba(255,0,0,0.2)', color: 'var(--danger)', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
                           <Shield size={14} /> Admin
                        </span>
-                    ) : (
+                    ) : u.isApproved ? (
                        <span style={{ background: 'rgba(0,255,136,0.1)', color: 'var(--success)', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem' }}>
                           Cadete
+                       </span>
+                    ) : (
+                       <span style={{ background: 'rgba(255,165,0,0.2)', color: 'orange', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', fontWeight: 'bold' }}>
+                          En Revisión
                        </span>
                     )}
                   </td>
@@ -99,6 +103,19 @@ export default function AdminUsersPage() {
                   
                   <td style={{ padding: '1rem', textAlign: 'right' }}>
                     <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
+                      
+                      {u.role !== 'admin' && !u.isApproved && (
+                        <button 
+                           onClick={async () => {
+                             await updateDoc(doc(db, "users", u.uid), { isApproved: true });
+                             fetchUsers();
+                           }}
+                           title="Aprobar Ingreso de Cadete"
+                           style={{ background: 'rgba(0,255,136,0.2)', border: '1px solid var(--success)', color: 'var(--success)', padding: '0.5rem', borderRadius: '8px', cursor: 'pointer' }}
+                        >
+                           ✅ Aprobar
+                        </button>
+                      )}
                       
                       <button 
                          onClick={() => handleRoleChange(u.uid, u.role === 'admin' ? 'user' : 'admin')}

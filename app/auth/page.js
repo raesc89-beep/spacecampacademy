@@ -33,6 +33,7 @@ function AuthContent() {
           name,
           email,
           role: 'student',
+          isApproved: false, // Bloqueo Administrativo
           progress: {
             stars: 0,
             completedModules: [],
@@ -63,11 +64,11 @@ function AuthContent() {
       >
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', textAlign: 'center' }}>
           
-          {/* Fila de Logos Institucionales */}
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', padding: '0.8rem 1.5rem', background: 'rgba(255, 255, 255, 0.95)', borderRadius: '20px', boxShadow: '0 5px 20px rgba(0,0,0,0.3)' }}>
-             <img src="/assets/main_logo.png" alt="Space Camp Academy" style={{ height: '45px', objectFit: 'contain' }} />
-             <div style={{ width: '2px', height: '30px', background: '#e0e0e0' }} />
-             <img src="/assets/logo_nasa_auth.png" alt="NASA" style={{ height: '35px', objectFit: 'contain' }} />
+          {/* Fila de Logos Institucionales Orgánicos (Fase 3.6 Transparencias) */}
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2rem', padding: '1rem', width: '100%' }}>
+             <img src="/assets/main_logo.png" alt="Space Camp Academy" style={{ height: '70px', objectFit: 'contain', filter: 'drop-shadow(0px 0px 10px rgba(255,255,255,0.3))' }} />
+             <div style={{ width: '2px', height: '40px', background: 'rgba(255,255,255,0.2)' }} />
+             <img src="/assets/logo_nasa_auth.png" alt="NASA" style={{ height: '55px', objectFit: 'contain', filter: 'drop-shadow(0px 0px 10px rgba(255,255,255,0.3))' }} />
           </div>
           <h2 style={{ fontSize: '2rem', margin: 0 }}>
             {mode === 'register' ? 'Registro Espacial' : 'Acceso de Cadete'}

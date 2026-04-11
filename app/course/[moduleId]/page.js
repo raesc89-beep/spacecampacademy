@@ -137,7 +137,7 @@ export default function CourseModule() {
           
           <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1.5rem', background: `linear-gradient(135deg, rgba(255,255,255,0.05), ${moduleData.color}20)`, backdropFilter: 'blur(20px)' }}>
             <div style={{ width: '180px', height: '180px', borderRadius: '50%', boxShadow: `0 0 40px ${moduleData.color}60`, overflow: 'hidden', border: `4px solid ${moduleData.color}`, background: 'black' }}>
-               <img src={`/assets/${planetImageName}`} alt={moduleData.titleEs} style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: isAnomaly ? 'screen' : 'normal' }} onError={(e) => {e.target.style.display='none'}} />
+               <img src={`/assets/${planetImageName}`} alt={moduleData.titleEs} style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'normal' }} onError={(e) => {e.target.style.display='none'}} />
             </div>
             
             <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Misión {moduleData.titleEs}</h2>

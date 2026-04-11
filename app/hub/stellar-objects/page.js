@@ -169,7 +169,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
               width: '100%', 
               height: '100%', 
               objectFit: 'contain',
-              mixBlendMode: 'screen', /* Elimina cualquier rastro negro de la generación IA !! */
+              mixBlendMode: 'normal', /* Se removió el screen porque ya se pre-procesaron como PNGs nativos Alfa */
               filter: planetFilter,
               opacity: planetOpacity,
               transition: 'all 0.5s ease',

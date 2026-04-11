@@ -122,7 +122,7 @@ export default function QuizMinigame() {
                
                {/* Target Planet */}
                <div style={{ position: 'absolute', right: '0', zIndex: 3, width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: `2px solid ${moduleData.color}`, boxShadow: `0 0 20px ${moduleData.color}50`, background: '#000' }}>
-                 <img src={`/assets/${planetImageName}`} style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: isAnomaly ? 'screen' : 'normal' }} alt={moduleData.titleEs} onError={(e) => {e.target.style.display='none'}} />
+                 <img src={`/assets/${planetImageName}`} style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'normal' }} alt={moduleData.titleEs} onError={(e) => {e.target.style.display='none'}} />
                </div>
 
                {/* Spaceship */}
