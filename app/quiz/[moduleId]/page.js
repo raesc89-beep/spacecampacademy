@@ -122,7 +122,7 @@ export default function QuizMinigame() {
                
                {/* Target Planet */}
                <div style={{ position: 'absolute', right: '0', zIndex: 3, width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: `2px solid ${moduleData.color}`, boxShadow: `0 0 20px ${moduleData.color}50`, background: '#000' }}>
-                 <img src={`/assets/${planetImageName}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={moduleData.titleEs} onError={(e) => {e.target.style.display='none'}} />
+                 <img src={`/assets/${planetImageName}`} style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: isAnomaly ? 'screen' : 'normal' }} alt={moduleData.titleEs} onError={(e) => {e.target.style.display='none'}} />
                </div>
 
                {/* Spaceship */}
@@ -165,7 +165,9 @@ export default function QuizMinigame() {
                 <div style={{ margin: '1rem 0 2rem 0', textAlign: 'center' }}>
                   <span style={{ color: moduleData.color, fontWeight: 'bold', fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Fase {currentQuestion + 1} de {totalQuestions}</span>
                   <h2 style={{ fontSize: '2rem', margin: '1rem 0 0.5rem 0' }}>{moduleData.quizEs[currentQuestion].q}</h2>
-                  <p style={{ color: 'var(--text-muted)', fontStyle: 'italic' }}>{moduleData.quizEn[currentQuestion].q}</p>
+                  {moduleData.quizEn && moduleData.quizEn[currentQuestion] && (
+                    <p style={{ color: 'var(--text-muted)', fontStyle: 'italic' }}>{moduleData.quizEn[currentQuestion].q}</p>
+                  )}
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -186,7 +188,9 @@ export default function QuizMinigame() {
                       onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; }}
                     >
                       <div style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>{opt}</div>
-                      <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>{moduleData.quizEn[currentQuestion].options[i]}</div>
+                      {moduleData.quizEn && moduleData.quizEn[currentQuestion] && moduleData.quizEn[currentQuestion].options[i] && (
+                        <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>{moduleData.quizEn[currentQuestion].options[i]}</div>
+                      )}
                     </button>
                   ))}
                 </div>
