@@ -4,7 +4,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Radio, AlertTriangle, CheckCircle, Star } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
