@@ -13,8 +13,13 @@ export default function DecoderMinigame() {
   const router = useRouter();
 
   // Target Wave parameters (Secret alien signal)
-  const [targetAmpli] = useState(Math.floor(Math.random() * 40) + 20); // 20 to 60
-  const [targetFreq] = useState((Math.random() * 0.05 + 0.02).toFixed(3)); // 0.02 to 0.07
+  const [targetAmpli, setTargetAmpli] = useState(30); 
+  const [targetFreq, setTargetFreq] = useState('0.040'); 
+
+  useEffect(() => {
+    setTargetAmpli(Math.floor(Math.random() * 40) + 20); // 20 to 60
+    setTargetFreq((Math.random() * 0.05 + 0.02).toFixed(3)); // 0.02 to 0.07
+  }, []);
 
   // Player controls
   const [ampli, setAmpli] = useState(10);
