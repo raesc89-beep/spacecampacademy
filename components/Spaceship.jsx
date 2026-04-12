@@ -6,105 +6,199 @@ export default function Spaceship({
   hull = 'standard', 
   wings = 'basic', 
   engine = 'ion',
+  logo = 'none',
   size = 200,
   animate = false
 }) {
+  // Generate a darker variant of the base color for shading
+  const darkenColor = (hex, percent = 40) => {
+    let r = parseInt(hex.substring(1,3), 16);
+    let g = parseInt(hex.substring(3,5), 16);
+    let b = parseInt(hex.substring(5,7), 16);
+    r = Math.floor(r * (100 - percent) / 100);
+    g = Math.floor(g * (100 - percent) / 100);
+    b = Math.floor(b * (100 - percent) / 100);
+    return '#' + r.toString(16).padStart(2,'0') + g.toString(16).padStart(2,'0') + b.toString(16).padStart(2,'0');
+  };
+
+  const shade = darkenColor(color, 40);
+  const darkShade = darkenColor(color, 60);
+
+  const renderLogo = () => {
+    if (logo === 'nasa') {
+      return (
+         <g transform="translate(42, 45) scale(0.15)">
+           <circle cx="50" cy="50" r="45" fill="#0b3d91" />
+           <path d="M 10 50 Q 50 10 90 50" stroke="#fc3d21" strokeWidth="6" fill="none" />
+           <text x="50" y="55" fontSize="30" fill="white" textAnchor="middle" fontWeight="bold" fontFamily="sans-serif">NASA</text>
+         </g>
+      );
+    }
+    if (logo === 'spacecamp') {
+      return (
+         <g transform="translate(43, 46) scale(0.14)">
+           <circle cx="50" cy="50" r="45" fill="#111" stroke="#ff3366" strokeWidth="4" />
+           <text x="50" y="55" fontSize="24" fill="#00e4ff" textAnchor="middle" fontWeight="bold" fontFamily="sans-serif">SC</text>
+         </g>
+      );
+    }
+    if (logo === 'lockheed') {
+      return (
+         <g transform="translate(42, 46) scale(0.16)">
+           <polygon points="50,10 70,50 30,50" fill="#a0a0a0" />
+           <polygon points="50,90 70,50 30,50" fill="#e0e0e0" />
+           <circle cx="50" cy="50" r="5" fill="#00e4ff" />
+         </g>
+      );
+    }
+    return null;
+  };
+
   return (
     <svg width={size} height={size} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        {/* Glow Effects */}
+        <radialGradient id="cockpitGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#00e4ff" />
+          <stop offset="100%" stopColor="#0055ff" />
+        </radialGradient>
+        
+        <linearGradient id="hullGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor={shade} />
+          <stop offset="50%" stopColor={color} />
+          <stop offset="100%" stopColor={shade} />
+        </linearGradient>
+
+        <linearGradient id="bodyDetails" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="rgba(255,255,255,0.2)" />
+          <stop offset="100%" stopColor="rgba(0,0,0,0.3)" />
+        </linearGradient>
+
         <filter id="engineGlow" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation={engine === 'nova' ? "4" : "2"} result="blur" />
           <feComposite in="SourceGraphic" in2="blur" operator="over" />
         </filter>
-        <filter id="coreGlow" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="1" result="blur" />
-          <feComposite in="SourceGraphic" in2="blur" operator="over" />
-        </filter>
       </defs>
 
-      {/* --- ENGINES (Propulsor y Fuego) --- */}
+      {/* --- WINGS (Alas - Detrás del chasis) --- */}
+      {wings === 'basic' && (
+        <g stroke={darkShade} strokeWidth="1">
+           {/* Left Wing */}
+           <path d="M 40 50 L 15 85 L 45 80 Z" fill={color} />
+           <path d="M 40 50 L 15 85 L 45 80 Z" fill="url(#bodyDetails)" />
+           {/* Right Wing */}
+           <path d="M 60 50 L 85 85 L 55 80 Z" fill={color} />
+           <path d="M 60 50 L 85 85 L 55 80 Z" fill="url(#bodyDetails)" />
+        </g>
+      )}
+      
+      {wings === 'delta' && (
+        <g stroke={darkShade} strokeWidth="1">
+           {/* Aerodynamic swept back wings */}
+           <path d="M 50 30 L 5 80 L 35 85 L 50 65 Z" fill={color} />
+           <path d="M 50 30 L 5 80 L 35 85 L 50 65 Z" fill="url(#bodyDetails)" />
+           <path d="M 50 30 L 95 80 L 65 85 L 50 65 Z" fill={color} />
+           <path d="M 50 30 L 95 80 L 65 85 L 50 65 Z" fill="url(#bodyDetails)" />
+        </g>
+      )}
+
+      {wings === 'x-wing' && (
+        <g stroke={darkShade} strokeWidth="1">
+           {/* Upper X */}
+           <path d="M 45 40 L 5 25 L 30 55 Z" fill={shade} />
+           <path d="M 55 40 L 95 25 L 70 55 Z" fill={shade} />
+           {/* Lower X */}
+           <path d="M 40 60 L 0 85 L 35 80 Z" fill={color} />
+           <path d="M 40 60 L 0 85 L 35 80 Z" fill="url(#bodyDetails)" />
+           <path d="M 60 60 L 100 85 L 65 80 Z" fill={color} />
+           <path d="M 60 60 L 100 85 L 65 80 Z" fill="url(#bodyDetails)" />
+           {/* Wing Blasters */}
+           <rect x="0" y="80" width="4" height="15" fill="#333" />
+           <rect x="96" y="80" width="4" height="15" fill="#333" />
+        </g>
+      )}
+
+      {/* --- ENGINES (Propulsión y Escape térmico) --- */}
       <g style={{ transformOrigin: '50% 85%' }}>
         {engine === 'ion' && (
           <>
-            <rect x="42" y="80" width="16" height="10" fill="#333" rx="2" />
-            {(animate ? <motion.path d="M45,90 Q50,110 55,90 Z" fill="#00e4ff" filter="url(#engineGlow)"
-                animate={{ d: ["M45,90 Q50,110 55,90 Z", "M44,90 Q50,120 56,90 Z", "M45,90 Q50,110 55,90 Z"] }}
+            <path d="M 40 80 L 60 80 L 55 90 L 45 90 Z" fill="#222" stroke="#111" />
+            <rect x="42" y="88" width="16" height="4" fill="#000" />
+            {(animate ? <motion.path d="M45,92 Q50,110 55,92 Z" fill="#00e4ff" filter="url(#engineGlow)"
+                animate={{ d: ["M45,92 Q50,110 55,92 Z", "M44,92 Q50,115 56,92 Z", "M45,92 Q50,110 55,92 Z"] }}
                 transition={{ duration: 0.5, repeat: Infinity }} />
-              : <path d="M45,90 Q50,110 55,90 Z" fill="#00e4ff" filter="url(#engineGlow)" />
+              : <path d="M45,92 Q50,110 55,92 Z" fill="#00e4ff" filter="url(#engineGlow)" />
             )}
           </>
         )}
         
         {engine === 'plasma' && (
           <>
-            <rect x="35" y="75" width="10" height="12" fill="#222" rx="2" />
-            <rect x="55" y="75" width="10" height="12" fill="#222" rx="2" />
-            {(animate ? <motion.path d="M36,87 Q40,115 44,87 M56,87 Q60,115 64,87" fill="none" stroke="#d500f9" strokeWidth="6" strokeLinecap="round" filter="url(#engineGlow)"
-                animate={{ strokeWidth: [6, 8, 6], opacity: [0.8, 1, 0.8] }}
+            <path d="M 33 75 L 43 75 L 40 85 L 36 85 Z" fill="#222" />
+            <path d="M 57 75 L 67 75 L 64 85 L 60 85 Z" fill="#222" />
+            {(animate ? <motion.path d="M38,85 Q40,115 42,85 M58,85 Q60,115 62,85" fill="none" stroke="#d500f9" strokeWidth="5" strokeLinecap="round" filter="url(#engineGlow)"
+                animate={{ strokeWidth: [5, 7, 5], opacity: [0.8, 1, 0.8] }}
                 transition={{ duration: 0.2, repeat: Infinity }} />
-              : <path d="M36,87 Q40,115 44,87 M56,87 Q60,115 64,87" fill="none" stroke="#d500f9" strokeWidth="6" strokeLinecap="round" filter="url(#engineGlow)" />
+              : <path d="M38,85 Q40,115 42,85 M58,85 Q60,115 62,85" fill="none" stroke="#d500f9" strokeWidth="5" strokeLinecap="round" filter="url(#engineGlow)" />
             )}
           </>
         )}
 
         {engine === 'nova' && (
           <>
-            <polygon points="30,70 70,70 65,85 35,85" fill="#111" />
-            {(animate ? <motion.path d="M35,85 Q50,130 65,85 Z" fill="#ff7f00" filter="url(#engineGlow)"
-                animate={{ d: ["M35,85 Q50,130 65,85 Z", "M30,85 Q50,150 70,85 Z", "M35,85 Q50,130 65,85 Z"] }}
+            <path d="M 30 70 L 70 70 L 60 90 L 40 90 Z" fill="#151515" />
+            <rect x="35" y="85" width="30" height="5" fill="#ff7f00" filter="url(#engineGlow)" />
+            {(animate ? <motion.path d="M35,90 Q50,140 65,90 Z" fill="#ff4500" filter="url(#engineGlow)"
+                animate={{ d: ["M35,90 Q50,140 65,90 Z", "M30,90 Q50,160 70,90 Z", "M35,90 Q50,140 65,90 Z"] }}
                 transition={{ duration: 0.3, repeat: Infinity }} />
-              : <path d="M35,85 Q50,130 65,85 Z" fill="#ff7f00" filter="url(#engineGlow)" />
+              : <path d="M35,90 Q50,140 65,90 Z" fill="#ff4500" filter="url(#engineGlow)" />
             )}
           </>
         )}
       </g>
 
-      {/* --- WINGS (Alas) --- */}
-      {wings === 'basic' && (
-        <path d="M30,60 L15,80 L35,75 Z M70,60 L85,80 L65,75 Z" fill={color} opacity="0.8" />
-      )}
-      
-      {wings === 'delta' && (
-        <path d="M50,20 L5,85 L40,75 Z M50,20 L95,85 L60,75 Z" fill={color} opacity="0.6" />
-      )}
-
-      {wings === 'x-wing' && (
-        <>
-           <path d="M35,45 L5,35 L20,55 Z M65,45 L95,35 L80,55 Z" fill={color} opacity="0.9" />
-           <path d="M30,65 L0,85 L25,80 Z M70,65 L100,85 L75,80 Z" fill={color} opacity="0.7" />
-        </>
-      )}
-
-      {/* --- HULL (Chasis) --- */}
+      {/* --- HULL (Chasis Corporal) --- */}
       {hull === 'standard' && (
-        <>
-          <ellipse cx="50" cy="50" rx="18" ry="35" fill={color} />
-          <ellipse cx="50" cy="40" rx="10" ry="15" fill="#a0e0ff" filter="url(#coreGlow)" opacity="0.8" />
-        </>
+        <g stroke={darkShade} strokeWidth="1">
+          {/* Main Body */}
+          <ellipse cx="50" cy="45" rx="18" ry="40" fill="url(#hullGrad)" />
+          {/* Armor plates */}
+          <path d="M 35 45 Q 50 85 65 45" fill="none" stroke={shade} strokeWidth="2" />
+          <path d="M 32 45 Q 50 5 68 45" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
+          {/* Cockpit Window */}
+          <ellipse cx="50" cy="30" rx="8" ry="14" fill="url(#cockpitGlow)" stroke="#111" strokeWidth="2" />
+          <path d="M 45 25 L 55 25" stroke="rgba(255,255,255,0.8)" strokeWidth="1" />
+        </g>
       )}
       
       {hull === 'sharp' && (
-        <>
-          <polygon points="50,10 65,80 35,80" fill={color} />
-          <polygon points="50,25 58,60 42,60" fill="#a0e0ff" filter="url(#coreGlow)" opacity="0.8" />
-        </>
+        <g stroke={darkShade} strokeWidth="1">
+          <path d="M 50 5 L 68 75 L 50 85 L 32 75 Z" fill="url(#hullGrad)" />
+          {/* Internal armor lines */}
+          <path d="M 50 5 L 50 85" stroke={shade} strokeWidth="2" />
+          <path d="M 36 60 L 64 60" stroke={shade} strokeWidth="1" />
+          {/* Cockpit Window */}
+          <polygon points="50,20 56,40 44,40" fill="url(#cockpitGlow)" stroke="#111" strokeWidth="2" />
+        </g>
       )}
 
       {hull === 'heavy' && (
-        <>
-          <rect x="30" y="25" width="40" height="55" rx="8" fill={color} />
-          <polygon points="30,25 50,5 70,25" fill={color} />
-          <rect x="40" y="20" width="20" height="25" rx="4" fill="#a0e0ff" filter="url(#coreGlow)" opacity="0.7" />
-        </>
+        <g stroke={darkShade} strokeWidth="1">
+          {/* Front Nose */}
+          <polygon points="35,25 50,5 65,25" fill="url(#hullGrad)" />
+          {/* Main Block */}
+          <rect x="35" y="25" width="30" height="55" rx="4" fill="url(#hullGrad)" />
+          {/* Heavy plating */}
+          <line x1="35" y1="40" x2="65" y2="40" stroke={shade} strokeWidth="3" />
+          <line x1="35" y1="60" x2="65" y2="60" stroke={shade} strokeWidth="3" />
+          {/* Quad Cockpit Window */}
+          <rect x="42" y="15" width="16" height="10" rx="2" fill="url(#cockpitGlow)" stroke="#111" strokeWidth="1.5" />
+          <rect x="42" y="27" width="16" height="6" rx="2" fill="url(#cockpitGlow)" stroke="#111" strokeWidth="1.5" />
+        </g>
       )}
       
-      {/* Detalle Central Luminoso común */}
-      <circle cx="50" cy="65" r="4" fill="#fff" filter="url(#coreGlow)" opacity={animate ? 1 : 0.4} />
-      {animate && (
-        <motion.circle cx="50" cy="65" r="5" fill="#fff" filter="url(#coreGlow)" 
-           animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1, repeat: Infinity }} />
-      )}
+      {/* Detalle Central: Logo Rendering */}
+      {renderLogo()}
+
     </svg>
   );
 }
