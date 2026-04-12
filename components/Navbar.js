@@ -38,6 +38,9 @@ export default function Navbar() {
            <Link href="/dashboard" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
              Base de Misiones
            </Link>
+           <Link href="/hangar" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+             Astillero Naval
+           </Link>
            <Link href="/dashboard/live" style={{ textDecoration: 'none', color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '0.4rem', border: '1px solid rgba(0, 255, 136, 0.4)', padding: '0.3rem 0.8rem', borderRadius: '15px', background: 'rgba(0,255,136,0.05)' }}>
              <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--success)', display: 'inline-block' }} className="pulse-anim" />
              En Vivo

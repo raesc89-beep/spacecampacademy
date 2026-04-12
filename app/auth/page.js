@@ -34,6 +34,8 @@ function AuthContent() {
           email,
           role: 'student',
           isApproved: false, // Bloqueo Administrativo
+            shipData: { color: 'gray', hull: 'standard', wings: 'basic', engine: 'ion' },
+            inventory: ['gray', 'standard', 'basic', 'ion'],
           progress: {
             stars: 0,
             completedModules: [],

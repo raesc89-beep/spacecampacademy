@@ -108,19 +108,19 @@ export default function CourseHub() {
               </motion.div>
             </Link>
 
-            {/* Locked Course 2 */}
-            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 0.8, borderRadius: '20px' }}>
-               <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '150px', height: '150px', background: 'url(/assets/cartoon_saturn.png) center center / contain no-repeat', filter: 'grayscale(100%) opacity(0.5)' }}></div>
-               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)', zIndex: 0 }}></div>
+            {/* Minijuego 1: Decodificador (Fase 4) */}
+            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(0, 255, 136, 0.4)' }}>
+               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(circle at center, #0a192f 0%, #020308 100%)', zIndex: 0 }}></div>
                
-               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'rgba(0,0,0,0.6)', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                 <Lock size={16} color="var(--text-muted)" />
-                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Fase 3</span>
+               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'var(--success)', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'black', fontWeight: 'bold' }}>
+                 <PlayCircle size={16} />
+                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Nuevo Reto</span>
                </div>
 
                <div style={{ position: 'relative', zIndex: 1 }}>
-                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--starlight)' }}>Navegación Interestelar</h3>
-                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Viajes a velocidad luz y exoplanetas.</p>
+                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--success)' }}>Interceptación Estelar</h3>
+                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Decodifica frecuencias alienígenas para ganar polvo estelar rápido.</p>
+                 <Link href="/minigames/decoder" className="btn-secondary" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--success)', borderColor: 'var(--success)' }}>JUGAR AHORA</Link>
                </div>
             </motion.div>
 
