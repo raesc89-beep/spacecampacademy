@@ -114,13 +114,29 @@ export default function CourseHub() {
                
                <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'var(--success)', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'black', fontWeight: 'bold' }}>
                  <PlayCircle size={16} />
-                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Nuevo Reto</span>
+                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Reto Táctico</span>
                </div>
 
                <div style={{ position: 'relative', zIndex: 1 }}>
                  <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--success)' }}>Interceptación Estelar</h3>
-                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Decodifica frecuencias alienígenas para ganar polvo estelar rápido.</p>
+                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Decodifica frecuencias alienígenas para ganar polvo estelar.</p>
                  <Link href="/minigames/decoder" className="btn-secondary" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--success)', borderColor: 'var(--success)' }}>JUGAR AHORA</Link>
+               </div>
+            </motion.div>
+
+            {/* Minijuego 2: Laboratorio Planetario (Fase 5) */}
+            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(255, 87, 34, 0.4)' }}>
+               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(circle at center, rgba(255, 87, 34, 0.1) 0%, #020308 100%)', zIndex: 0 }}></div>
+               
+               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: '#ff5722', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'white', fontWeight: 'bold' }}>
+                 <PlayCircle size={16} />
+                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Prueba Final</span>
+               </div>
+
+               <div style={{ position: 'relative', zIndex: 1 }}>
+                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: '#ff5722' }}>Génesis Planetario</h3>
+                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Simulador experimental. Construye una exoplaneta manipulando gravedad y temperatura.</p>
+                 <Link href="/minigames/creator" className="btn-primary" style={{ display: 'inline-block', marginTop: '1rem', background: 'transparent', color: '#ff5722', borderColor: '#ff5722' }}>INICIAR MÁQUINA</Link>
                </div>
             </motion.div>
 

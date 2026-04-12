@@ -18,6 +18,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-firebase-hooks": "^5.1.1",
+    "recharts": "^3.8.1",
     "scorm-again": "^3.0.1"
   }
 }
