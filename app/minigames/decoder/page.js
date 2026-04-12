@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import { doc, updateDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
@@ -14,11 +14,11 @@ export default function DecoderMinigame() {
 
   // Target Wave parameters (Secret alien signal)
   const [targetAmpli, setTargetAmpli] = useState(30); 
-  const [targetFreq, setTargetFreq] = useState('0.040'); 
+  const [targetFreq, setTargetFreq] = useState(0.040); 
 
   useEffect(() => {
     setTargetAmpli(Math.floor(Math.random() * 40) + 20); // 20 to 60
-    setTargetFreq((Math.random() * 0.05 + 0.02).toFixed(3)); // 0.02 to 0.07
+    setTargetFreq(parseFloat((Math.random() * 0.05 + 0.02).toFixed(3))); // 0.02 to 0.07
   }, []);
 
   // Player controls
@@ -35,7 +35,7 @@ export default function DecoderMinigame() {
   useEffect(() => {
     // Check if synced
     const ampliDiff = Math.abs(ampli - targetAmpli);
-    const freqDiff = Math.abs(freq - parseFloat(targetFreq));
+    const freqDiff = Math.abs(freq - targetFreq);
     
     if (ampliDiff < 5 && freqDiff < 0.005) {
       if (!isSynced) setIsSynced(true);
@@ -48,9 +48,11 @@ export default function DecoderMinigame() {
     if (!user || rewardClaimed) return;
     const currentStars = userData?.progress?.stars || 0;
     const reward = 50;
-    await updateDoc(doc(db, 'users', user.uid), {
-      'progress.stars': currentStars + reward
-    });
+    await setDoc(doc(db, 'users', user.uid), {
+      progress: {
+        stars: currentStars + reward
+      }
+    }, { merge: true });
     setRewardClaimed(true);
   };
 

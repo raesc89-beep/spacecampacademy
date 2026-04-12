@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import { doc, updateDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
 import Spaceship from '@/components/Spaceship';
@@ -75,7 +75,7 @@ export default function Hangar() {
       // Equip instantly
       const newShip = { ...ship, [category]: item.id };
       setShip(newShip);
-      await updateDoc(doc(db, 'users', user.uid), { shipData: newShip });
+      await setDoc(doc(db, 'users', user.uid), { shipData: newShip }, { merge: true });
     } else {
       // Show confirmation prompt
       setConfirmItem({ category, item });
@@ -95,11 +95,13 @@ export default function Hangar() {
       setInventory(newInventory);
       setShip(newShip);
       
-      await updateDoc(doc(db, 'users', user.uid), {
-        'progress.stars': newStars,
+      await setDoc(doc(db, 'users', user.uid), {
+        progress: {
+          stars: newStars
+        },
         inventory: newInventory,
         shipData: newShip
-      });
+      }, { merge: true });
       setConfirmItem(null);
     } else {
       setConfirmItem(null);
