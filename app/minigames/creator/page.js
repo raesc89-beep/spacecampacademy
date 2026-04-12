@@ -75,45 +75,109 @@ export default function CreatorMinigame() {
   if (loading || !userData) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Arrancando Motor de Génesis...</div>;
 
   const renderPlanetVisual = () => {
-    const gradients = {
-      barren: 'radial-gradient(circle at 30% 30%, #8c7662, #4a3831, #000)',
-      magma: 'radial-gradient(circle at 30% 30%, #ff5722, #b71c1c, #000)',
-      ice: 'radial-gradient(circle at 30% 30%, #b3e5fc, #0277bd, #000)',
-      gas: 'radial-gradient(circle at 30% 30%, #d4e157, #827717, #000)',
-      habitable: 'radial-gradient(circle at 30% 30%, #4caf50, #0d47a1, #000)',
-      alien: 'radial-gradient(circle at 30% 30%, #b388ff, #311b92, #000)'
-    };
-    const shadows = {
-      barren: 'inset -20px -20px 40px rgba(0,0,0,0.8), 0 0 10px rgba(140, 118, 98, 0.2)',
-      magma: 'inset -20px -20px 40px rgba(0,0,0,0.8), 0 0 40px rgba(255, 87, 34, 0.8)',
-      ice: 'inset -20px -20px 40px rgba(0,0,0,0.8), 0 0 20px rgba(179, 229, 252, 0.5)',
-      gas: 'inset -20px -20px 40px rgba(0,0,0,0.8), 0 0 30px rgba(212, 225, 87, 0.4)',
-      habitable: 'inset -20px -20px 40px rgba(0,0,0,0.8), 0 0 50px rgba(76, 175, 80, 0.6)',
-      alien: 'inset -20px -20px 40px rgba(0,0,0,0.9), 0 0 60px rgba(179, 136, 255, 0.9)'
-    };
+    let textures = [];
+    let atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95)'; // Sombra fuerte base 3D
+    let glow = 'none';
+
+    if (planetState === 'barren') {
+      textures.push(
+        <div key="t-barren" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: '#5d4037' }}>
+           {/* Cráteres en CSS */}
+           <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 20% 30%, transparent 20%, rgba(0,0,0,0.4) 22%, transparent 25%), radial-gradient(circle at 70% 60%, transparent 10%, rgba(0,0,0,0.5) 12%, transparent 15%)', backgroundSize: '125px 125px' }}></div>
+           <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 20% 30%, transparent 20%, rgba(0,0,0,0.4) 22%, transparent 25%), radial-gradient(circle at 70% 60%, transparent 10%, rgba(0,0,0,0.5) 12%, transparent 15%)', backgroundSize: '125px 125px' }}></div>
+        </div>
+      );
+      glow = '0 0 15px rgba(140, 118, 98, 0.3)';
+    }
+
+    if (planetState === 'magma') {
+      textures.push(
+        <div key="t-magma" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 15s linear infinite', background: '#3e150a' }}>
+           {/* Ríos de lava y grietas */}
+           <div style={{ flex: 1, background: 'linear-gradient(45deg, transparent 40%, #ff3d00 45%, #ffea00 50%, #ff3d00 55%, transparent 60%), linear-gradient(-45deg, transparent 20%, #d50000 25%, #ff9100 30%, transparent 35%)', backgroundSize: '125px 125px' }}></div>
+           <div style={{ flex: 1, background: 'linear-gradient(45deg, transparent 40%, #ff3d00 45%, #ffea00 50%, #ff3d00 55%, transparent 60%), linear-gradient(-45deg, transparent 20%, #d50000 25%, #ff9100 30%, transparent 35%)', backgroundSize: '125px 125px' }}></div>
+        </div>
+      );
+      glow = '0 0 50px rgba(255, 87, 34, 0.9)';
+    }
+
+    if (planetState === 'ice') {
+      textures.push(
+        <div key="t-ice" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 40s linear infinite', background: '#e1f5fe' }}>
+           {/* Capas y fracturas de hielo */}
+           <div style={{ flex: 1, background: 'linear-gradient(15deg, transparent 30%, rgba(2, 119, 189, 0.3) 32%, transparent 35%), radial-gradient(ellipse at 50% 10%, #fff 20%, transparent 60%)', backgroundSize: '90px 140px' }}></div>
+           <div style={{ flex: 1, background: 'linear-gradient(15deg, transparent 30%, rgba(2, 119, 189, 0.3) 32%, transparent 35%), radial-gradient(ellipse at 50% 10%, #fff 20%, transparent 60%)', backgroundSize: '90px 140px' }}></div>
+        </div>
+      );
+      glow = '0 0 30px rgba(179, 229, 252, 0.6)';
+      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.9), inset 15px 15px 40px rgba(255,255,255,0.6)';
+    }
+
+    if (planetState === 'gas') {
+      textures.push(
+        <div key="t-gas" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 10s linear infinite', background: '#9e9d24' }}>
+           {/* Bandas de nubes tóxicas */}
+           <div style={{ flex: 1, background: 'repeating-linear-gradient(0deg, #827717, #827717 15px, #afb42b 15px, #afb42b 30px, #c0ca33 30px, #c0ca33 45px)', opacity: 0.9 }}></div>
+           <div style={{ flex: 1, background: 'repeating-linear-gradient(0deg, #827717, #827717 15px, #afb42b 15px, #afb42b 30px, #c0ca33 30px, #c0ca33 45px)', opacity: 0.9 }}></div>
+        </div>
+      );
+      glow = '0 0 40px rgba(212, 225, 87, 0.5)';
+      atmosphereShadow = 'inset -40px -40px 50px rgba(0,0,0,0.9), inset 10px 10px 30px rgba(212, 225, 87, 0.3)';
+    }
+
+    if (planetState === 'habitable') {
+      // Océanos y Continentes Terrestres
+      textures.push(
+        <div key="t-hab-land" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 25s linear infinite', background: '#1565c0' }}>
+           <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
+           <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
+        </div>
+      );
+      // Nubes blancas animadas un poco más veloz
+      textures.push(
+        <div key="t-hab-clouds" style={{ position: 'absolute', top: 0, left: 0, width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 18s linear infinite', opacity: 0.7, zIndex: 2 }}>
+           <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
+           <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
+        </div>
+      );
+      glow = '0 0 60px rgba(0, 228, 255, 0.7)';
+      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95), inset 10px 10px 30px rgba(0,228,255,0.5)';
+    }
+
+    if (planetState === 'alien') {
+      textures.push(
+        <div key="t-alien" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 12s linear infinite', background: '#1c002f' }}>
+           {/* Formaciones cristalinas brillantes */}
+           <div style={{ flex: 1, background: 'linear-gradient(60deg, transparent 30%, #e040fb 32%, transparent 34%), radial-gradient(circle at 40% 70%, #b388ff 8%, transparent 18%)', backgroundSize: '110px 110px' }}></div>
+           <div style={{ flex: 1, background: 'linear-gradient(60deg, transparent 30%, #e040fb 32%, transparent 34%), radial-gradient(circle at 40% 70%, #b388ff 8%, transparent 18%)', backgroundSize: '110px 110px' }}></div>
+        </div>
+      );
+      glow = '0 0 80px rgba(224, 64, 251, 1)';
+      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95), inset 10px 10px 40px rgba(179, 136, 255, 0.6)';
+    }
 
     return (
        <motion.div
-         key={planetState}
+         key="planet" // Mantener misma key global para no reiniciar el elemento entero, solo las capas internas cambian
          initial={{ scale: 0.8, opacity: 0 }}
          animate={{ scale: 1, opacity: 1 }}
          transition={{ type: 'spring', stiffness: 50 }}
          style={{
            width: '250px', height: '250px', borderRadius: '50%',
-           background: gradients[planetState],
-           boxShadow: shadows[planetState],
-           margin: '0 auto', position: 'relative'
+           boxShadow: glow,
+           margin: '0 auto', position: 'relative', overflow: 'hidden',
+           transform: 'translateZ(0)' // Forzar aceleración de hardware visual
          }}
        >
-         {/* Atmósfera */}
-         {planetState === 'habitable' && (
-            <div style={{ position: 'absolute', top: '-10px', left: '-10px', right: '-10px', bottom: '-10px', borderRadius: '50%', border: '2px solid rgba(255,255,255,0.2)', boxShadow: '0 0 20px rgba(0, 228, 255, 0.3)' }} />
-         )}
-         {planetState === 'alien' && (
-            <div style={{ position: 'absolute', top: '-20px', left: '-20px', right: '-20px', bottom: '-20px', borderRadius: '50%', border: '2px dotted rgba(179, 136, 255, 0.5)', animation: 'spin 10s linear infinite' }} />
-         )}
+         {textures}
+         {/* Sombra Esférica 3D Suprema superpuesta */}
+         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, borderRadius: '50%', boxShadow: atmosphereShadow, zIndex: 10, pointerEvents: 'none' }} />
+         
          <style jsx>{`
-           @keyframes spin { 100% { transform: rotate(360deg); } }
+           @keyframes planetSpin {
+             0% { transform: translateX(0); }
+             100% { transform: translateX(-50%); }
+           }
          `}</style>
        </motion.div>
     );
