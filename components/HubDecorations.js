@@ -46,11 +46,8 @@ export default function HubDecorations() {
           transition={{ duration: 35, ease: "linear", repeat: Infinity, repeatDelay: 10 }}
           style={{ offsetPath: "path('M -10,80 Q 30,20 60,70 T 110,40')", offsetRotate: "auto" }}
         >
-          {/* Simple Vector Spaceship */}
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
-             <path d="M12 2L2 22l10-4 10 4L12 2z" fill="var(--electric-blue)" opacity="0.8"/>
-             <path d="M12 22V18" stroke="orange" strokeWidth="3" opacity="0.8"/>
-          </svg>
+          {/* Premium Vector Spaceship */}
+          <img src="/assets/shuttle_vector.png" alt="Travel Shuttle" style={{ width: '40px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(0,228,255,0.5))' }} />
         </motion.g>
       </motion.svg>
 
@@ -64,11 +61,8 @@ export default function HubDecorations() {
           transition={{ duration: 45, ease: "easeInOut", repeat: Infinity, repeatDelay: 15 }}
           style={{ offsetPath: "path('M 110,10 Q 50,50 80,90 T -10,50')", offsetRotate: "auto" }}
         >
-          {/* Simple Vector UFO */}
-          <svg width="50" height="30" viewBox="0 0 24 24" fill="none" stroke="#00ff88" strokeWidth="1.5">
-             <ellipse cx="12" cy="14" rx="10" ry="4" fill="rgba(0,255,136,0.3)"/>
-             <path d="M7 13c0-3 2.5-6 5-6s5 3 5 6" fill="rgba(255,255,255,0.8)"/>
-          </svg>
+          {/* Premium Vector UFO */}
+          <img src="/assets/ufo_vector.png" alt="Alien UFO" style={{ width: '50px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(0,255,136,0.6))' }} />
         </motion.g>
       </motion.svg>
     </>
