@@ -5,7 +5,7 @@ import { Search, CheckCircle, AlertCircle } from 'lucide-react';
 
 const CHALLENGE = {
   riddle: "Mi ojo de cristal ha cartografiado los mares secos y las dunas de óxido. Mis seis ruedas han tallado surcos solitarios en la inmensidad marciana esperando volver a casa. Localízame en la tormenta rocosa.",
-  imageUrl: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop", // Landscape marciano
+  imageUrl: "/assets/mars_dust_storm.png", // Landscape marciano
   targetX: 75, // Porcentaje X (Aprox)
   targetY: 80, // Porcentaje Y (Aprox)
   radius: 8 // Tolerancia

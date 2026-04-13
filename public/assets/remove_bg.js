@@ -1,0 +1,53 @@
+const fs = require('fs');
+const Jimp = require('jimp');
+
+const files = [
+  'alien_ship_vector.png',
+  'heavy_cruiser_vector.png',
+  'shuttle_vector.png',
+  'ufo_vector.png',
+  'media__1776117446635.png', // Logo Space Camp (from previous)
+  'media__1776121655381.png', // Blue planet
+  'media__1776121774341.png', // Orange planet
+  'media__1776121801014.png'  // Pink planet
+];
+
+async function removeWhiteBackgrounds() {
+  for (const file of files) {
+    if (!fs.existsSync(file)) {
+      console.log(`Skipping: ${file} (not found)`);
+      continue;
+    }
+    try {
+      const image = await Jimp.read(file);
+      const width = image.bitmap.width;
+      const height = image.bitmap.height;
+
+      // Usar Pixel (0,0) como referencia de fondo
+      const refColor = image.getPixelColor(0, 0); 
+      const refR = Jimp.intToRGBA(refColor).r;
+      
+      // Asumir que toda imagen con esquinas muy claras tiene fondo recortable
+      if (refR > 235) {
+         image.scan(0, 0, width, height, function(x, y, idx) {
+           const red = this.bitmap.data[idx + 0];
+           const green = this.bitmap.data[idx + 1];
+           const blue = this.bitmap.data[idx + 2];
+           
+           // Si el pixel es "blanco o casi gris claro", lo volvemos 100% transparente
+           if (red > 230 && green > 230 && blue > 230) {
+             this.bitmap.data[idx + 3] = 0; // Alpha a 0
+           }
+         });
+         await image.writeAsync(file);
+         console.log(`Fondo extraído exitosamente: ${file}`);
+      } else {
+         console.log(`Fondo oscuro preservado: ${file}`);
+      }
+    } catch(e) {
+      console.error(`Error en ${file}`, e);
+    }
+  }
+}
+
+removeWhiteBackgrounds();

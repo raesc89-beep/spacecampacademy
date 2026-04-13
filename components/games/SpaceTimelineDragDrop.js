@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, CheckCircle, Crosshair } from 'lucide-react';
 
 const MILESTONES = [
-  { id: 'm1', year: "1957", title: "Sputnik 1", desc: "Primer satélite artificial." },
-  { id: 'm2', year: "1961", title: "Yuri Gagarin", desc: "Primer humano en orbitar la Tierra." },
-  { id: 'm3', year: "1969", title: "Apollo 11", desc: "El ser humano pisa la Luna por primera vez." },
-  { id: 'm4', year: "1977", title: "Voyager 1", desc: "Sonda lanzada hacia el espacio interestelar." },
-  { id: 'm5', year: "1981", title: "Transbordador Columbia", desc: "Primer vuelo del programa de transbordadores." },
-  { id: 'm6', year: "1990", title: "Telescopio Hubble", desc: "Lanzamiento del famoso observatorio orbital." },
-  { id: 'm7', year: "1998", title: "Estación Espacial (ISS)", desc: "Inicio de la construcción de la ISS." },
-  { id: 'm8', year: "2004", title: "Spirit & Opportunity", desc: "Rovers gemelos aterrizan en Marte." },
-  { id: 'm9', year: "2012", title: "Rover Curiosity", desc: "Aterrizaje del laboratorio móvil marciano." },
-  { id: 'm10', year: "2021", title: "James Webb", desc: "Despliegue del telescopio espacial más potente." }
+  { id: 'm1', year: "1957", title: "Sputnik 1", desc: "Primer satélite artificial.", img: '/assets/bepicolombo_probe.png' },
+  { id: 'm2', year: "1961", title: "Yuri Gagarin", desc: "Primer humano orbitando.", img: '/assets/planet_earth.png' },
+  { id: 'm3', year: "1969", title: "Apollo 11", desc: "El humano pisa la Luna.", img: '/assets/shuttle_vector.png' },
+  { id: 'm4', year: "1977", title: "Voyager 1", desc: "Viaje interestelar.", img: '/assets/bepicolombo_probe.png' },
+  { id: 'm5', year: "1981", title: "Transbordador", desc: "Primer vuelo reutilizable.", img: '/assets/shuttle_vector.png' },
+  { id: 'm6', year: "1990", title: "Telescopio Hubble", desc: "Famoso observatorio orbital.", img: '/assets/herschel_telescope_space.png' },
+  { id: 'm7', year: "1998", title: "Estación (ISS)", desc: "Construcción en órbita.", img: '/assets/shuttle_vector.png' },
+  { id: 'm8', year: "2004", title: "Rovers Gemelos", desc: "Rovers aterrizan en Marte.", img: '/assets/mars_human_colony_dome.png' },
+  { id: 'm9', year: "2012", title: "Rover Curiosity", desc: "Laboratorio móvil marciano.", img: '/assets/mars_dust_storm.png' },
+  { id: 'm10', year: "2021", title: "James Webb", desc: "Telescopio más potente.", img: '/assets/herschel_telescope_space.png' }
 ];
 
 export default function SpaceTimelineDragDrop({ onComplete }) {
@@ -24,7 +24,7 @@ export default function SpaceTimelineDragDrop({ onComplete }) {
 
   useEffect(() => {
     // Desordenar solo los eventos (para arrastrar)
-    const events = MILESTONES.map(m => ({ id: m.id, title: m.title, desc: m.desc }))
+    const events = MILESTONES.map(m => ({ id: m.id, title: m.title, desc: m.desc, img: m.img }))
                              .sort(() => Math.random() - 0.5);
     setShuffledEvents(events);
     setTimeline([...MILESTONES.map(m => ({ ...m, matched: null }))]);
@@ -92,11 +92,15 @@ export default function SpaceTimelineDragDrop({ onComplete }) {
                    layout
                    style={{
                      background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.2)',
-                     padding: '1rem', borderRadius: '12px', cursor: 'grab', userSelect: 'none'
+                     padding: '0.8rem', borderRadius: '12px', cursor: 'grab', userSelect: 'none',
+                     display: 'flex', alignItems: 'center', gap: '1rem'
                    }}
                  >
-                    <div style={{ fontWeight: 'bold', color: 'var(--electric-blue)' }}>{ev.title}</div>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{ev.desc}</div>
+                    <img src={ev.img} alt={ev.title} style={{ width: '45px', height: '45px', objectFit: 'contain', filter: 'drop-shadow(0 0 5px rgba(0, 228, 255, 0.5))' }} />
+                    <div>
+                      <div style={{ fontWeight: 'bold', color: 'var(--electric-blue)', fontSize: '0.95rem' }}>{ev.title}</div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{ev.desc}</div>
+                    </div>
                  </motion.div>
                ))}
              </AnimatePresence>
@@ -123,9 +127,12 @@ export default function SpaceTimelineDragDrop({ onComplete }) {
                       }}
                     >
                        {slot.matched ? (
-                         <div>
-                           <div style={{ fontWeight: 'bold' }}>{slot.matched.title}</div>
-                           <div style={{ fontSize: '0.85rem', color: 'white' }}>{slot.matched.desc}</div>
+                         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                           <img src={slot.matched.img} alt="Completado" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
+                           <div>
+                             <div style={{ fontWeight: 'bold' }}>{slot.matched.title}</div>
+                             <div style={{ fontSize: '0.85rem', color: 'white' }}>{slot.matched.desc}</div>
+                           </div>
                          </div>
                        ) : (
                          <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Crosshair size={16} /> Suelta la ficha correcta aquí</span>

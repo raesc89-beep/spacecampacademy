@@ -126,9 +126,7 @@ export default function Hangar() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Navbar />
-      
-      <main className="layout-container" style={{ flex: 1, padding: '2rem', display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) minmax(350px, 1.2fr)', gap: '2rem' }}>
+      <main className="layout-container" style={{ flex: 1, display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) minmax(350px, 1.2fr)', gap: '2rem' }}>
         
         {/* SHIP VIEWER */}
         <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', position: 'relative', overflow: 'hidden', padding: '2rem' }}>
@@ -138,11 +136,8 @@ export default function Hangar() {
           
           {/* Header Layout for Title and Stars */}
           <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1, marginBottom: '2rem' }}>
-             <h2 style={{ margin: 0, color: 'var(--starlight)' }}>Astillero Naval</h2>
+             <h2 style={{ margin: 0, color: 'var(--starlight)' }}></h2>
              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-               <Link href="/hangar/avatar" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
-                 <User size={16} /> Ver Avatar
-               </Link>
                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,215,0,0.1)', padding: '0.5rem 1rem', borderRadius: '30px', border: '1px solid rgba(255,215,0,0.3)' }}>
                  <Star color="var(--gold-star)" size={20} />
                  <span style={{ fontWeight: 'bold', color: 'var(--gold-star)', fontSize: '1.2rem' }}>{stars}</span>

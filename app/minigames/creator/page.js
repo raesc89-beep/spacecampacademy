@@ -46,15 +46,20 @@ export default function CreatorMinigame() {
     } else if (magneticField < 30) {
       state = 'barren';
       msg = 'Viento solar letal. El núcleo no genera campo magnético protector.';
-    } else if (temperature >= 10 && temperature <= 40 && gravity >= 0.8 && gravity <= 1.5 && magneticField >= 40 && magneticField <= 70) {
+    } else if (temperature >= -10 && temperature <= 25 && gravity >= 0.8 && gravity <= 1.2 && magneticField >= 30 && magneticField <= 60) {
+      state = 'acuatico';
+      msg = 'Mundo Acéanico Gélido. Los mares abarcan el 99% de la superficie con densas nubes.';
+    } else if (temperature >= 45 && gravity >= 1.6 && magneticField >= 50) {
+      state = 'anillos';
+      msg = 'Planeta Denso Rocoso. Su pozo gravitacional ha destrozado lunas creando un cinturón de asteroides naranja radiante.';
+    } else if (temperature >= 30 && temperature <= 50 && gravity >= 0.4 && gravity <= 1.0 && magneticField >= 80) {
       state = 'habitable';
       msg = '¡Biósfera Estabilizada! Disonancia armónica perfecta para la vida.';
     }
 
-    // Secret Alien Planet: T: -200, G: 3.5, EMF: 100
-    if (temperature === -200 && gravity >= 3.0 && magneticField === 100) {
+    if (temperature === -200 && gravity >= 3.0 && magneticField >= 90) {
       state = 'alien';
-      msg = 'ANOMALÍA DETECTADA: Elementos cristalinos de radiación bioluminiscente han creado vida exótica extrema.';
+      msg = 'ANOMALÍA DETECTADA: Elementos cristalinos de radiación fúngica bioluminiscente.';
     }
 
     setPlanetState(state);
@@ -75,14 +80,11 @@ export default function CreatorMinigame() {
   if (loading || !userData) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Arrancando Motor de Génesis...</div>;
 
   const renderPlanetVisual = () => {
-    let textures = [];
-    let atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95)'; // Sombra fuerte base 3D
-    let glow = 'none';
+    let planetElement = null;
 
     if (planetState === 'barren') {
-      textures.push(
-        <div key="t-barren" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: '#5d4037' }}>
-           {/* Cráteres en CSS */}
+      planetElement = (
+        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: '#5d4037' }}>
            <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 20% 30%, transparent 20%, rgba(0,0,0,0.4) 22%, transparent 25%), radial-gradient(circle at 70% 60%, transparent 10%, rgba(0,0,0,0.5) 12%, transparent 15%)', backgroundSize: '125px 125px' }}></div>
            <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 20% 30%, transparent 20%, rgba(0,0,0,0.4) 22%, transparent 25%), radial-gradient(circle at 70% 60%, transparent 10%, rgba(0,0,0,0.5) 12%, transparent 15%)', backgroundSize: '125px 125px' }}></div>
         </div>
@@ -91,9 +93,8 @@ export default function CreatorMinigame() {
     }
 
     if (planetState === 'magma') {
-      textures.push(
-        <div key="t-magma" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 15s linear infinite', background: '#3e150a' }}>
-           {/* Ríos de lava y grietas */}
+      planetElement = (
+        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 15s linear infinite', background: '#3e150a' }}>
            <div style={{ flex: 1, background: 'linear-gradient(45deg, transparent 40%, #ff3d00 45%, #ffea00 50%, #ff3d00 55%, transparent 60%), linear-gradient(-45deg, transparent 20%, #d50000 25%, #ff9100 30%, transparent 35%)', backgroundSize: '125px 125px' }}></div>
            <div style={{ flex: 1, background: 'linear-gradient(45deg, transparent 40%, #ff3d00 45%, #ffea00 50%, #ff3d00 55%, transparent 60%), linear-gradient(-45deg, transparent 20%, #d50000 25%, #ff9100 30%, transparent 35%)', backgroundSize: '125px 125px' }}></div>
         </div>
@@ -101,10 +102,24 @@ export default function CreatorMinigame() {
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
     }
 
+    if (planetState === 'acuatico') {
+      planetElement = <img src="/assets/media__1776121655381.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="Acuatico" />;
+      glow = '0 0 40px rgba(0, 153, 255, 0.8)';
+    }
+
+    if (planetState === 'anillos') {
+      planetElement = <img src="/assets/media__1776121774341.png" style={{ width: '140%', height: '140%', objectFit: 'contain', position: 'absolute', top: '-20%', left: '-20%' }} alt="Anillos" />;
+      glow = '0 0 40px rgba(255, 153, 51, 0.6)';
+    }
+
+    if (planetState === 'alien') {
+      planetElement = <img src="/assets/media__1776121801014.png" style={{ width: '140%', height: '140%', objectFit: 'contain', position: 'absolute', top: '-20%', left: '-20%' }} alt="Alien Fungico" />;
+      glow = '0 0 60px rgba(255, 0, 255, 0.8)';
+    }
+
     if (planetState === 'ice') {
-      textures.push(
-        <div key="t-ice" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 40s linear infinite', background: '#e1f5fe' }}>
-           {/* Capas y fracturas de hielo */}
+      planetElement = (
+        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 40s linear infinite', background: '#e1f5fe' }}>
            <div style={{ flex: 1, background: 'linear-gradient(15deg, transparent 30%, rgba(2, 119, 189, 0.3) 32%, transparent 35%), radial-gradient(ellipse at 50% 10%, #fff 20%, transparent 60%)', backgroundSize: '90px 140px' }}></div>
            <div style={{ flex: 1, background: 'linear-gradient(15deg, transparent 30%, rgba(2, 119, 189, 0.3) 32%, transparent 35%), radial-gradient(ellipse at 50% 10%, #fff 20%, transparent 60%)', backgroundSize: '90px 140px' }}></div>
         </div>
@@ -114,9 +129,8 @@ export default function CreatorMinigame() {
     }
 
     if (planetState === 'gas') {
-      textures.push(
-        <div key="t-gas" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 10s linear infinite', background: '#9e9d24' }}>
-           {/* Bandas de nubes tóxicas */}
+      planetElement = (
+        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 10s linear infinite', background: '#9e9d24' }}>
            <div style={{ flex: 1, background: 'repeating-linear-gradient(0deg, #827717, #827717 15px, #afb42b 15px, #afb42b 30px, #c0ca33 30px, #c0ca33 45px)', opacity: 0.9 }}></div>
            <div style={{ flex: 1, background: 'repeating-linear-gradient(0deg, #827717, #827717 15px, #afb42b 15px, #afb42b 30px, #c0ca33 30px, #c0ca33 45px)', opacity: 0.9 }}></div>
         </div>
@@ -126,52 +140,41 @@ export default function CreatorMinigame() {
     }
 
     if (planetState === 'habitable') {
-      // Océanos y Continentes Terrestres
-      textures.push(
-        <div key="t-hab-land" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 25s linear infinite', background: '#1565c0' }}>
-           <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
-           <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
-        </div>
+      planetElement = (
+        <>
+          <div style={{ position: 'absolute', width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 25s linear infinite', background: '#1565c0' }}>
+             <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
+             <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
+          </div>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 18s linear infinite', opacity: 0.7, zIndex: 2 }}>
+             <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
+             <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
+          </div>
+        </>
       );
-      // Nubes blancas animadas un poco más veloz
-      textures.push(
-        <div key="t-hab-clouds" style={{ position: 'absolute', top: 0, left: 0, width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 18s linear infinite', opacity: 0.7, zIndex: 2 }}>
-           <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
-           <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
-        </div>
-      );
-      glow = '0 0 60px rgba(0, 228, 255, 0.7)';
-      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95), inset 10px 10px 30px rgba(0,228,255,0.5)';
-    }
-
-    if (planetState === 'alien') {
-      textures.push(
-        <div key="t-alien" style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 12s linear infinite', background: '#1c002f' }}>
-           {/* Formaciones cristalinas brillantes */}
-           <div style={{ flex: 1, background: 'linear-gradient(60deg, transparent 30%, #e040fb 32%, transparent 34%), radial-gradient(circle at 40% 70%, #b388ff 8%, transparent 18%)', backgroundSize: '110px 110px' }}></div>
-           <div style={{ flex: 1, background: 'linear-gradient(60deg, transparent 30%, #e040fb 32%, transparent 34%), radial-gradient(circle at 40% 70%, #b388ff 8%, transparent 18%)', backgroundSize: '110px 110px' }}></div>
-        </div>
-      );
-      glow = '0 0 80px rgba(224, 64, 251, 1)';
-      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95), inset 10px 10px 40px rgba(179, 136, 255, 0.6)';
+      glow = '0 0 80px rgba(100, 200, 255, 0.4)';
+      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95), inset 10px 10px 40px rgba(100,200,255,0.4)';
     }
 
     return (
        <motion.div
-         key="planet" // Mantener misma key global para no reiniciar el elemento entero, solo las capas internas cambian
+         key="planet" // Mantener misma key global
          initial={{ scale: 0.8, opacity: 0 }}
          animate={{ scale: 1, opacity: 1 }}
          transition={{ type: 'spring', stiffness: 50 }}
          style={{
            width: '250px', height: '250px', borderRadius: '50%',
-           boxShadow: glow,
+           boxShadow: glow, flexShrink: 0,
            margin: '0 auto', position: 'relative', overflow: 'hidden',
-           transform: 'translateZ(0)' // Forzar aceleración de hardware visual
+           transform: 'translateZ(0)',
+           backgroundColor: '#000'
          }}
        >
-         {textures}
+         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+            {planetElement}
+         </div>
          {/* Sombra Esférica 3D Suprema superpuesta */}
-         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, borderRadius: '50%', boxShadow: atmosphereShadow, zIndex: 10, pointerEvents: 'none' }} />
+         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', boxShadow: atmosphereShadow, borderRadius: '50%', pointerEvents: 'none', zIndex: 10 }}></div>
          
          <style jsx>{`
            @keyframes planetSpin {

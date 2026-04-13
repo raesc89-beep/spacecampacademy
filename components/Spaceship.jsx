@@ -22,8 +22,8 @@ export default function Spaceship({
       return <img src="/assets/logo_nasa_auth.png" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '25%', filter: 'drop-shadow(0 0 5px rgba(255,255,255,0.5))', zIndex: 10 }} />;
     }
     if (logo === 'spacecamp') {
-      // Sello con rellenado blanco original (sin transparencia corrupta)
-      return <img src="/assets/main_logo.png" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '30%', zIndex: 10, background: 'rgba(255,255,255,0.1)', borderRadius: '50%' }} />;
+      // Sello con rellenado blanco puro (El pinche badge que mandaste)
+      return <img src="/assets/media__1776117446635.png" alt="Space Camp Logo Original" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '38%', zIndex: 10, filter: 'drop-shadow(0 0 10px rgba(0, 228, 255, 0.5))' }} />;
     }
     if (logo === 'lockheed') {
        return <img src="/assets/lockheed_logo.png" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '35%', zIndex: 10 }} />;
