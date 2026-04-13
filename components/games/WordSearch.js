@@ -98,22 +98,35 @@ export default function WordSearch({ onComplete }) {
     setSelection([{ r, c }]);
   };
 
-  const handlePointerEnter = (r, c) => {
-    if (!isSelecting) return;
-    // Logica simple: lineas rectas solamente (horizontal o vertical)
-    const start = selection[0];
-    if (start.r === r || start.c === c || Math.abs(start.r - r) === Math.abs(start.c - c)) {
-      // Reconstruir la ruta
-      let newSelection = [];
-      const dr = Math.sign(r - start.r);
-      const dc = Math.sign(c - start.c);
-      const steps = Math.max(Math.abs(r - start.r), Math.abs(c - start.c));
+  const handlePointerMoveGlobal = (e) => {
+    if (!isSelecting || selection.length === 0) return;
+    try {
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      const el = document.elementFromPoint(clientX, clientY);
+      if (!el) return;
+      const dataR = el.getAttribute('data-r');
+      const dataC = el.getAttribute('data-c');
       
-      for(let i = 0; i <= steps; i++) {
-        newSelection.push({ r: start.r + dr * i, c: start.c + dc * i });
+      if (dataR !== null && dataC !== null) {
+        const r = parseInt(dataR);
+        const c = parseInt(dataC);
+        const start = selection[0];
+        
+        // Logica de lineas rectas horizontales, verticales o diagonales
+        if (start.r === r || start.c === c || Math.abs(start.r - r) === Math.abs(start.c - c)) {
+          let newSelection = [];
+          const dr = Math.sign(r - start.r);
+          const dc = Math.sign(c - start.c);
+          const steps = Math.max(Math.abs(r - start.r), Math.abs(c - start.c));
+          
+          for(let i = 0; i <= steps; i++) {
+            newSelection.push({ r: start.r + dr * i, c: start.c + dc * i });
+          }
+          setSelection(newSelection);
+        }
       }
-      setSelection(newSelection);
-    }
+    } catch(err) {}
   };
 
   const handlePointerUp = () => {
@@ -139,6 +152,16 @@ export default function WordSearch({ onComplete }) {
     setSelection([]); // Limpiar selección tras intentar
   };
 
+  useEffect(() => {
+    const handleUp = () => handlePointerUp();
+    window.addEventListener('pointerup', handleUp);
+    window.addEventListener('touchend', handleUp);
+    return () => {
+      window.removeEventListener('pointerup', handleUp);
+      window.removeEventListener('touchend', handleUp);
+    };
+  }, [isSelecting, selection]);
+
   const isCellSelected = (r, c) => selection.some(pos => pos.r === r && pos.c === c);
 
   return (
@@ -163,15 +186,17 @@ export default function WordSearch({ onComplete }) {
 
       <div 
         style={{ display: 'inline-grid', gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`, gap: '4px', touchAction: 'none' }}
-        onPointerLeave={handlePointerUp}
+        onPointerMove={handlePointerMoveGlobal}
+        onTouchMove={handlePointerMoveGlobal}
+        onMouseLeave={handlePointerUp}
       >
         {grid.map((row, r) => (
           row.map((letter, c) => (
             <motion.div 
               key={`${r}-${c}`}
+              data-r={r}
+              data-c={c}
               onPointerDown={() => handlePointerDown(r, c)}
-              onPointerEnter={() => handlePointerEnter(r, c)}
-              onPointerUp={handlePointerUp}
               whileHover={{ scale: 1.1 }}
               style={{
                 width: '40px', height: '40px',

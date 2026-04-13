@@ -195,6 +195,18 @@ export default function Spaceship({
           <rect x="42" y="27" width="16" height="6" rx="2" fill="url(#cockpitGlow)" stroke="#111" strokeWidth="1.5" />
         </g>
       )}
+
+      {hull === 'alien' && (
+        <g stroke={darkShade} strokeWidth="1.5">
+          {/* Organic saucer shape */}
+          <path d="M 50 10 Q 80 40 50 85 Q 20 40 50 10 Z" fill="url(#hullGrad)" />
+          {/* Bioluminescent veins */}
+          <path d="M 50 20 Q 60 50 50 75" fill="none" stroke="#00ffcc" strokeWidth="2" filter="url(#engineGlow)" opacity="0.8" />
+          <path d="M 50 30 Q 35 50 50 65" fill="none" stroke="#00ffcc" strokeWidth="1" filter="url(#engineGlow)" opacity="0.6" />
+          {/* Alien insectoid eye Cockpit */}
+          <ellipse cx="50" cy="35" rx="12" ry="18" fill="url(#cockpitGlow)" stroke="#000" strokeWidth="2" />
+        </g>
+      )}
       
       {/* Detalle Central: Logo Rendering */}
       {renderLogo()}

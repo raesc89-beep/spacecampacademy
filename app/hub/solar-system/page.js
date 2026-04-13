@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 import { Lock, CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import HubDecorations from '@/components/HubDecorations';
 
 export default function SolarSystemMap() {
   const { user, userData, loading } = useAuth();
@@ -34,19 +35,20 @@ export default function SolarSystemMap() {
   }
 
   // Orden estricto del Sistema Solar (IDs exactos de Firebase)
-  const planetOrder = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
+  const planetOrder = ['sun', 'mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
 
   // Coordenadas orgánicas distribuidas a lo largo del "Canvas" de la galaxia
   const orbitalData = {
-    mercury: { left: '18%', top: '55%', size: 'clamp(40px, 5vw, 70px)' },
-    venus: { left: '28%', top: '35%', size: 'clamp(50px, 6vw, 90px)' },
-    earth: { left: '38%', top: '65%', size: 'clamp(55px, 6.5vw, 95px)' },
-    mars: { left: '48%', top: '40%', size: 'clamp(45px, 5vw, 80px)' },
-    jupiter: { left: '60%', top: '50%', size: 'clamp(90px, 12vw, 170px)' },
-    saturn: { left: '72%', top: '25%', size: 'clamp(110px, 14vw, 200px)' },
-    uranus: { left: '85%', top: '60%', size: 'clamp(70px, 8vw, 120px)' },
-    neptune: { left: '92%', top: '30%', size: 'clamp(65px, 7.5vw, 110px)' },
-    pluto: { left: '96%', top: '80%', size: 'clamp(35px, 4vw, 60px)' }
+    sun: { left: '10%', top: '50%', size: 'clamp(150px, 20vw, 300px)' },
+    mercury: { left: '28%', top: '35%', size: 'clamp(40px, 5vw, 70px)' },
+    venus: { left: '38%', top: '65%', size: 'clamp(50px, 6vw, 90px)' },
+    earth: { left: '48%', top: '40%', size: 'clamp(55px, 6.5vw, 95px)' },
+    mars: { left: '58%', top: '55%', size: 'clamp(45px, 5vw, 80px)' },
+    jupiter: { left: '72%', top: '30%', size: 'clamp(90px, 12vw, 170px)' },
+    saturn: { left: '85%', top: '60%', size: 'clamp(110px, 14vw, 200px)' },
+    uranus: { left: '92%', top: '35%', size: 'clamp(70px, 8vw, 120px)' },
+    neptune: { left: '96%', top: '70%', size: 'clamp(65px, 7.5vw, 110px)' },
+    pluto: { left: '98%', top: '90%', size: 'clamp(35px, 4vw, 60px)' }
   };
 
   // Determinar Índice de Progreso
@@ -81,33 +83,12 @@ export default function SolarSystemMap() {
         background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' 
       }}>
         
+        <HubDecorations />
+
         {/* Contenedor del Mapa 16:9 Máximo */}
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh' }}>
            
-           {/* El Sol Masivo Generado por IA */}
-           <motion.div 
-             animate={{ rotate: 360 }} 
-             transition={{ duration: 250, repeat: Infinity, ease: "linear" }}
-             style={{ 
-               position: 'absolute', 
-               left: '-25%', 
-               top: '-15%', 
-               height: '130%', 
-               aspectRatio: '1/1', 
-               pointerEvents: 'none',
-               zIndex: 0
-             }} 
-           >
-             <img 
-               src="/assets/cartoon_sun.png" 
-               style={{ 
-                 width: '100%', 
-                 height: '100%', 
-                 objectFit: 'cover', 
-                 opacity: 0.9,
-               }} 
-             />
-           </motion.div>
+           {/* El Sol ha sido extraído a la variable planetOrder */}
 
            {orderedModules.map((mod, idx) => {
               const coords = orbitalData[mod.id.toLowerCase()];

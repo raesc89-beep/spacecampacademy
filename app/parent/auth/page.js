@@ -35,7 +35,16 @@ export default function ParentAuth() {
         router.push('/parent/dashboard');
       }
     } catch (err) {
-      setError("Error de autenticación. Revisa tus credenciales.");
+      console.error(err);
+      if (err.code === 'auth/invalid-credential' || err.code === 'auth/wrong-password' || err.code === 'auth/user-not-found') {
+        setError('Credenciales incorrectas. Por favor, verifica tu correo y contraseña.');
+      } else if (err.code === 'auth/email-already-in-use') {
+        setError('Este correo electrónico ya está registrado.');
+      } else if (err.code === 'auth/weak-password') {
+        setError('La contraseña debe tener al menos 6 caracteres.');
+      } else {
+        setError("Error de autenticación. Revisa tus credenciales.");
+      }
     }
     setLoading(false);
   };

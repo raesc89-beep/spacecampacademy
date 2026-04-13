@@ -10,13 +10,19 @@ export default function AdminLayout({ children }) {
 
   if (loading) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando credenciales...</div>;
 
-  if (!user || userData?.role !== 'admin') {
+  const isPerpetualAdmin = user?.email === 'raesc89@gmail.com';
+  const hasAccess = isPerpetualAdmin || userData?.role === 'admin';
+
+  if (!user || !hasAccess) {
     return (
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
         <ShieldAlert size={80} color="var(--danger)" style={{ marginBottom: '1rem' }} />
         <h1>Acceso Denegado</h1>
         <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>No tienes permisos de administrador (Space Commander).</p>
-        <Link href="/" className="btn-primary">Volver a la Base</Link>
+        <div style={{ display: 'flex', gap: '1rem' }}>
+          <Link href="/" className="btn-primary" style={{ background: 'transparent', border: '1px solid white' }}>Volver a la Base</Link>
+          <Link href="/admin/auth" className="btn-primary">Validar Credenciales Navales</Link>
+        </div>
       </div>
     );
   }

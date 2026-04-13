@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 import { Lock, CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import HubDecorations from '@/components/HubDecorations';
 
 export default function StellarObjectsMap() {
   const { user, userData, loading } = useAuth();
@@ -78,6 +79,8 @@ export default function StellarObjectsMap() {
         background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' 
       }}>
         
+        <HubDecorations />
+
         {/* Contenedor del Mapa 16:9 Máximo */}
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh' }}>
            
@@ -116,10 +119,14 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
   // Archivo gráfico individual
   const imgUrl = `/assets/${moduleInfo.id.toLowerCase()}_icon.png`;
 
+  // Identificar si requiere difuminado de background estelar (Quasar/Pulsar)
+  const isGlowingAnomaly = moduleInfo.id === 'quasar' || moduleInfo.id === 'pulsar';
+
   // El estilo de misterio: En lugar de saturar de sombras físicas que causan los cuadros negros, 
   // hacemos el planeta fantasmal/borroso cuando está inexplorado.
-  const planetFilter = isLocked ? 'grayscale(80%) blur(2px) contrast(1.5)' : 'contrast(1.2)';
+  const planetFilter = isLocked ? 'grayscale(80%) blur(2px) contrast(1.5)' : (isGlowingAnomaly ? 'contrast(1.2) blur(1.5px)' : 'contrast(1.2)');
   const planetOpacity = isLocked ? 0.3 : 1;
+  const blendMode = isGlowingAnomaly ? 'screen' : 'normal';
 
   const targetLink = isLocked ? '#' : (customHref || `/course/${moduleInfo.id}`);
 
@@ -169,7 +176,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
               width: '100%', 
               height: '100%', 
               objectFit: 'contain',
-              mixBlendMode: 'normal', /* Se removió el screen porque ya se pre-procesaron como PNGs nativos Alfa */
+              mixBlendMode: blendMode,
               filter: planetFilter,
               opacity: planetOpacity,
               transition: 'all 0.5s ease',

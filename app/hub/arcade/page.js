@@ -8,6 +8,8 @@ import MemoryGame from '@/components/games/MemoryGame';
 import WordSearch from '@/components/games/WordSearch';
 import AsteroidTrivia from '@/components/games/AsteroidTrivia';
 import SpaceBingo from '@/components/games/SpaceBingo';
+import SpaceTimelineDragDrop from '@/components/games/SpaceTimelineDragDrop';
+import StarFinder from '@/components/games/StarFinder';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -104,6 +106,30 @@ export default function ArcadeExoplanet() {
                </button>
             </div>
 
+            {/* Máquina 5: Línea Temporal NASA */}
+            <div className="glass-card" style={{ border: '1px solid rgba(138, 43, 226, 0.4)', background: 'rgba(138, 43, 226, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(138, 43, 226, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(138,43,226,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🚀</span>
+               </div>
+               <h2 style={{ color: '#8A2BE2', margin: '0 0 0.5rem 0' }}>Carrera Espacial</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Ordena la historia sideral en esta prueba de Arrastrar y Soltar hitos de la NASA.</p>
+               <button onClick={() => setActiveGame('timeline')} className="btn-primary" style={{ background: '#8A2BE2', color: 'white', width: '100%', boxShadow: '0 0 20px rgba(138,43,226,0.4)', fontWeight: 'bold' }}>
+                 RECONSTRUIR
+               </button>
+            </div>
+
+            {/* Máquina 6: Radar Óptico */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255, 69, 0, 0.4)', background: 'rgba(255, 69, 0, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 69, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,69,0,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🔎</span>
+               </div>
+               <h2 style={{ color: '#FF4500', margin: '0 0 0.5rem 0' }}>Buscador Cósmico</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Agudiza tu visión. Descifra el acertijo y encuentra el objeto escondido en el polvo espacial.</p>
+               <button onClick={() => setActiveGame('finder')} className="btn-primary" style={{ background: '#FF4500', color: 'white', width: '100%', boxShadow: '0 0 20px rgba(255,69,0,0.4)', fontWeight: 'bold' }}>
+                 ESCANEAR
+               </button>
+            </div>
+
           </div>
         ) : (
           <div style={{ width: '100%', maxWidth: '800px' }}>
@@ -133,6 +159,14 @@ export default function ArcadeExoplanet() {
             
             {activeGame === 'bingo' && (
                <SpaceBingo onComplete={(bonus) => alert(`¡BINGO EN EL VACÍO! Has marcado todo el panel obteniendo ${bonus} monedas de recompensa especial.`)} />
+            )}
+
+            {activeGame === 'timeline' && (
+               <SpaceTimelineDragDrop onComplete={(bonus) => alert(`¡Historia Recuperada! Has alineado el tiempo ganando ${bonus} monedas.`)} />
+            )}
+
+            {activeGame === 'finder' && (
+               <StarFinder onComplete={(bonus) => alert(`¡Objeto Detectado! Optica calibrada. Recibes ${bonus} monedas.`)} />
             )}
           </div>
         )}

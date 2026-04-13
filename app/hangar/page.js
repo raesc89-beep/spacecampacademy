@@ -6,37 +6,39 @@ import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
 import Spaceship from '@/components/Spaceship';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, Shield, Zap, Sparkles, AlertTriangle, Image as ImageIcon } from 'lucide-react';
+import { Star, Shield, Zap, Sparkles, AlertTriangle, Image as ImageIcon, User } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const SHOP_ITEMS = {
   color: [
     { id: 'gray', name: 'Gris Titanio', price: 0, color: '#a0a0a0' },
-    { id: 'crimson', name: 'Rojo Carmesí', price: 5, color: '#ff3366' },
-    { id: 'gold', name: 'Oro Estelar', price: 10, color: '#ffd700' },
-    { id: 'neon', name: 'Cyber Neón', price: 15, color: '#00ffcc' },
-    { id: 'dark', name: 'Materia Oscura', price: 25, color: '#1a1a2e' }
+    { id: 'crimson', name: 'Rojo Carmesí', price: 200, color: '#ff3366' },
+    { id: 'gold', name: 'Oro Estelar', price: 400, color: '#ffd700' },
+    { id: 'neon', name: 'Cyber Neón', price: 600, color: '#00ffcc' },
+    { id: 'dark', name: 'Materia Oscura', price: 800, color: '#1a1a2e' }
   ],
   hull: [
     { id: 'standard', name: 'Cápsula Base', price: 0 },
-    { id: 'sharp', name: 'Caza Interceptor', price: 20 },
-    { id: 'heavy', name: 'Crucero Acorazado', price: 35 }
+    { id: 'sharp', name: 'Caza Interceptor', price: 300 },
+    { id: 'heavy', name: 'Crucero Acorazado', price: 500 },
+    { id: 'alien', name: 'Biocubierta Extraterrestre', price: 1500 }
   ],
   wings: [
     { id: 'basic', name: 'Aleta Ligera', price: 0 },
-    { id: 'delta', name: 'Alas Delta', price: 25 },
-    { id: 'x-wing', name: 'Cruzado X', price: 40 }
+    { id: 'delta', name: 'Alas Delta', price: 350 },
+    { id: 'x-wing', name: 'Cruzado X', price: 650 }
   ],
   engine: [
     { id: 'ion', name: 'Ión Estándar', price: 0 },
-    { id: 'plasma', name: 'Doble Plasma', price: 30 },
-    { id: 'nova', name: 'Explosión Nova', price: 50 }
+    { id: 'plasma', name: 'Doble Plasma', price: 400 },
+    { id: 'nova', name: 'Explosión Nova', price: 900 }
   ],
   logo: [
     { id: 'none', name: 'Sin Insignias', price: 0 },
-    { id: 'nasa', name: 'Sello NASA', price: 15 },
-    { id: 'spacecamp', name: 'Academia Espacial', price: 15 },
-    { id: 'lockheed', name: 'Armadura Lockheed', price: 25 }
+    { id: 'nasa', name: 'Sello NASA', price: 250 },
+    { id: 'spacecamp', name: 'Academia Espacial', price: 250 },
+    { id: 'lockheed', name: 'Armadura Lockheed', price: 500 }
   ]
 };
 
@@ -137,9 +139,14 @@ export default function Hangar() {
           {/* Header Layout for Title and Stars */}
           <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1, marginBottom: '2rem' }}>
              <h2 style={{ margin: 0, color: 'var(--starlight)' }}>Astillero Naval</h2>
-             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,215,0,0.1)', padding: '0.5rem 1rem', borderRadius: '30px', border: '1px solid rgba(255,215,0,0.3)' }}>
-               <Star color="var(--gold-star)" size={20} />
-               <span style={{ fontWeight: 'bold', color: 'var(--gold-star)', fontSize: '1.2rem' }}>{stars}</span>
+             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+               <Link href="/hangar/avatar" className="btn-secondary" style={{ padding: '0.4rem 0.8rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
+                 <User size={16} /> Ver Avatar
+               </Link>
+               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,215,0,0.1)', padding: '0.5rem 1rem', borderRadius: '30px', border: '1px solid rgba(255,215,0,0.3)' }}>
+                 <Star color="var(--gold-star)" size={20} />
+                 <span style={{ fontWeight: 'bold', color: 'var(--gold-star)', fontSize: '1.2rem' }}>{stars}</span>
+               </div>
              </div>
           </div>
 

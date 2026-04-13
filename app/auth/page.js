@@ -50,7 +50,15 @@ function AuthContent() {
       }
     } catch (err) {
       console.error(err);
-      setError(err.message.includes('auth/') ? 'Error al iniciar sesión. Verifica tus datos.' : err.message);
+      if (err.code === 'auth/invalid-credential' || err.code === 'auth/wrong-password' || err.code === 'auth/user-not-found') {
+        setError('Credenciales incorrectas. Por favor, verifica tu correo y contraseña.');
+      } else if (err.code === 'auth/email-already-in-use') {
+        setError('Este correo electrónico ya está registrado.');
+      } else if (err.code === 'auth/weak-password') {
+        setError('La contraseña debe tener al menos 6 caracteres.');
+      } else {
+        setError(err.message.includes('auth/') ? 'Error de autenticación. Verifica tus datos.' : err.message);
+      }
     }
     
     setLoading(false);

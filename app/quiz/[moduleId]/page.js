@@ -79,14 +79,22 @@ export default function QuizMinigame() {
   };
 
   const completeModule = async (finalScore) => {
-    if (finalScore === totalQuestions && !userData?.progress?.completedModules?.includes(moduleData.id)) {
-      setSaving(true);
-      await updateDoc(doc(db, "users", user.uid), {
-        "progress.completedModules": arrayUnion(moduleData.id),
-        "progress.badges": arrayUnion(moduleData.badgeEs),
-        "progress.stars": increment(50)
-      });
-      setSaving(false);
+    if (finalScore === totalQuestions) {
+      if (!userData?.progress?.completedModules?.includes(moduleData.id)) {
+        setSaving(true);
+        // Hacer un double check silencioso por seguridad
+        const freshUser = await getDoc(doc(db, "users", user.uid));
+        const freshCompleted = freshUser.data().progress?.completedModules || [];
+        
+        if (!freshCompleted.includes(moduleData.id)) {
+          await updateDoc(doc(db, "users", user.uid), {
+            "progress.completedModules": arrayUnion(moduleData.id),
+            "progress.badges": arrayUnion(moduleData.badgeEs),
+            "progress.stars": increment(50)
+          });
+        }
+        setSaving(false);
+      }
     }
   };
 
@@ -210,9 +218,11 @@ export default function QuizMinigame() {
                   
                   <div style={{ background: 'rgba(255,215,0,0.1)', padding: '2rem', borderRadius: '24px', margin: '2rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
                     <Shield size={60} color={moduleData.color} />
-                    <h3 style={{ margin: 0, fontSize: '1.5rem' }}>¡Medalla Ganada!</h3>
+                    <h3 style={{ margin: 0, fontSize: '1.5rem' }}>{userData?.progress?.completedModules?.includes(moduleData.id) ? 'Medalla Verificada' : '¡Medalla Ganada!'}</h3>
                     <p style={{ margin: 0, fontWeight: 'bold', color: moduleData.color, fontSize: '1.2rem' }}>{moduleData.badgeEs}</p>
-                    <p style={{ margin: 0, color: 'var(--gold-star)', fontWeight: 'bold' }}>+50 Polvo Estelar</p>
+                    <p style={{ margin: 0, color: 'var(--gold-star)', fontWeight: 'bold' }}>
+                       {userData?.progress?.completedModules?.includes(moduleData.id) ? 'Modo Repaso: Sin recompensa adicional' : '+50 Polvo Estelar'}
+                    </p>
                   </div>
                 </>
               ) : (

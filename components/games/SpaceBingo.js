@@ -109,29 +109,29 @@ export default function SpaceBingo({ onComplete }) {
     <div style={{ padding: '2rem', background: '#111', borderRadius: '20px', border: '2px solid rgba(255,215,0,0.3)', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       
       {/* Competitor HUD */}
-      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '15px', marginBottom: '1.5rem' }}>
-         <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', color: winner === 'bot1' ? 'var(--success)' : 'gray' }}>
-           <Bot size={24} /> 
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '15px', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: winner === 'bot1' ? 'var(--success)' : 'gray', filter: gameOver && winner !== 'bot1' ? 'grayscale(100%)' : 'none' }}>
+           <img src="/assets/bingo_android_x.png" alt="Androide X" style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: `3px solid ${winner === 'bot1' ? 'var(--success)' : 'orange'}` }} />
            <div>
-             <div style={{ fontSize: '0.8rem', textTransform: 'uppercase' }}>Androide X-1</div>
-             <div style={{ fontWeight: 'bold' }}>{bot1Score}/9 Atrapados</div>
+             <div style={{ fontSize: '1.2rem', textTransform: 'uppercase', color: 'orange', fontWeight: 'bold' }}>Androide X-1</div>
+             <div style={{ fontSize: '1.5rem', fontWeight: '900', color: 'white' }}>{bot1Score} <span style={{ fontSize:'0.9rem', color: 'gray' }}>/9</span></div>
            </div>
          </div>
          
-         <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', color: winner === 'player' ? 'var(--gold-star)' : 'white', background: 'rgba(255,215,0,0.1)', padding: '0.5rem 1rem', borderRadius: '10px' }}>
-           <User size={24} color="var(--gold-star)" /> 
+         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: winner === 'player' ? 'var(--gold-star)' : 'white', background: 'rgba(255,215,0,0.15)', padding: '1rem 2rem', borderRadius: '15px', border: '1px solid rgba(255,215,0,0.4)', filter: gameOver && winner !== 'player' ? 'grayscale(100%)' : 'none' }}>
+           <User size={36} color="var(--gold-star)" /> 
            <div>
-             <div style={{ fontSize: '0.8rem', textTransform: 'uppercase', color: 'var(--gold-star)' }}>Líder (Tú)</div>
-             <div style={{ fontWeight: 'bold' }}>{stamped.length}/9 Atrapados</div>
+             <div style={{ fontSize: '1.2rem', textTransform: 'uppercase', color: 'var(--gold-star)', fontWeight: 'bold' }}>Líder (Tú)</div>
+             <div style={{ fontSize: '2rem', fontWeight: '900', textShadow: '0 0 10px rgba(255,215,0,0.8)' }}>{stamped.length} <span style={{ fontSize:'1rem', color: 'var(--gold-star)' }}>/9</span></div>
            </div>
          </div>
 
-         <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', color: winner === 'bot2' ? 'var(--success)' : 'gray' }}>
-           <div>
-             <div style={{ fontSize: '0.8rem', textTransform: 'uppercase', textAlign: 'right' }}>Androide Y-2</div>
-             <div style={{ fontWeight: 'bold' }}>{bot2Score}/9 Atrapados</div>
+         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: winner === 'bot2' ? 'var(--success)' : 'gray', filter: gameOver && winner !== 'bot2' ? 'grayscale(100%)' : 'none' }}>
+           <div style={{ textAlign: 'right' }}>
+             <div style={{ fontSize: '1.2rem', textTransform: 'uppercase', color: 'cyan', fontWeight: 'bold' }}>Androide Y-2</div>
+             <div style={{ fontSize: '1.5rem', fontWeight: '900', color: 'white' }}>{bot2Score} <span style={{ fontSize:'0.9rem', color: 'gray' }}>/9</span></div>
            </div>
-           <Bot size={24} /> 
+           <img src="/assets/bingo_android_y.png" alt="Androide Y" style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: `3px solid ${winner === 'bot2' ? 'var(--success)' : 'cyan'}` }} />
          </div>
       </div>
 

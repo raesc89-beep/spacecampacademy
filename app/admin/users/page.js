@@ -26,7 +26,11 @@ export default function AdminUsersPage() {
     fetchUsers();
   }, []);
 
-  const handleRoleChange = async (uid, newRole) => {
+  const handleRoleChange = async (uid, newRole, email) => {
+    if (email === 'raesc89@gmail.com' && newRole !== 'admin') {
+      alert('Acción Denegada: Raúl Escalante es el Comandante Supremo Inmutable.');
+      return;
+    }
     try {
       await updateDoc(doc(db, 'users', uid), { role: newRole });
       fetchUsers(); // Refresh
@@ -152,19 +156,25 @@ export default function AdminUsersPage() {
                   </td>
                   <td style={{ padding: '1rem', color: 'var(--text-muted)' }}>{u.email}</td>
                   <td style={{ padding: '1rem' }}>
-                    {u.role === 'admin' ? (
+                    <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                      <select 
+                        value={u.role || 'user'} 
+                        onChange={(e) => handleRoleChange(u.uid, e.target.value, u.email)}
+                        style={{ padding: '0.4rem', background: 'var(--bg-card)', color: 'white', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '6px' }}
+                      >
+                        <option value="user">Cadete (Usuario)</option>
+                        <option value="admin">Space Commander</option>
+                      </select>
+                      {u.role === 'admin' ? (
                        <span style={{ background: 'rgba(255,0,0,0.2)', color: 'var(--danger)', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
-                          <Shield size={14} /> Admin
+                          <Shield size={14} />
                        </span>
-                    ) : u.isApproved ? (
-                       <span style={{ background: 'rgba(0,255,136,0.1)', color: 'var(--success)', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem' }}>
-                          Cadete
-                       </span>
-                    ) : (
-                       <span style={{ background: 'rgba(255,165,0,0.2)', color: 'orange', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', fontWeight: 'bold', border: '1px solid rgba(255,165,0,0.5)' }}>
+                      ) : !u.isApproved && (
+                       <span style={{ background: 'rgba(255,165,0,0.2)', color: 'orange', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', fontWeight: 'bold' }}>
                           En Revisión
                        </span>
-                    )}
+                      )}
+                    </div>
                   </td>
                   <td style={{ padding: '1rem', color: 'var(--gold-star)', fontWeight: 'bold' }}>{u.progress?.stars || 0} ⭐</td>
                   
@@ -185,7 +195,7 @@ export default function AdminUsersPage() {
                       )}
                       
                       <button 
-                         onClick={() => handleRoleChange(u.uid, u.role === 'admin' ? 'user' : 'admin')}
+                         onClick={() => handleRoleChange(u.uid, u.role === 'admin' ? 'user' : 'admin', u.email)}
                          title={u.role === 'admin' ? 'Revocar privilegios de Admin' : 'Ascender a Administrador'}
                          style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: 'white', padding: '0.5rem', borderRadius: '8px', cursor: 'pointer' }}
                       >
