@@ -24,9 +24,9 @@ export default function HubDecorations() {
         }}
       >
          <img 
-            src="/assets/space_camp_logo.png" 
+            src="/assets/main_logo.png" 
             alt="Space Camp Logo"
-            style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen' }} 
+            style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'normal' }} 
          />
       </motion.div>
 

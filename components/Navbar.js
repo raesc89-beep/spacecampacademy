@@ -31,7 +31,7 @@ export default function Navbar() {
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
         <Link href="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', textDecoration: 'none', color: 'white' }}>
-          <img src="/assets/space_camp_logo.png" alt="Space Academy Camp Logo" style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'contain', background: 'transparent' }} />
+          <img src="/assets/main_logo.png" alt="Space Academy Camp Logo" style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'contain', background: 'transparent' }} />
           <h2 style={{ margin: 0, fontSize: '1.25rem' }}>Space Camp</h2>
         </Link>
         <div style={{ display: 'flex', gap: '1.5rem', marginLeft: '2rem' }}>

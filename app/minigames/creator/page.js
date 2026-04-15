@@ -263,8 +263,13 @@ export default function CreatorMinigame() {
                  </motion.div>
               )}
               {rewardClaimed && (
-                 <div style={{ marginTop: 'auto', textAlign: 'center', padding: '1rem', border: '1px solid var(--gold-star)', background: 'rgba(255,215,0,0.1)', color: 'var(--gold-star)', borderRadius: '12px', fontWeight: 'bold', display: 'flex', center: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                    ¡Planeta Logrado! Base de estrellas incrementada. <CheckCircle />
+                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: 'auto' }}>
+                   <div style={{ textAlign: 'center', padding: '1rem', border: '1px solid var(--gold-star)', background: 'rgba(255,215,0,0.1)', color: 'var(--gold-star)', borderRadius: '12px', fontWeight: 'bold', display: 'flex', center: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                      ¡Planeta Logrado! Base de estrellas incrementada. <CheckCircle />
+                   </div>
+                   <Link href="/hub/solar-system" className="btn-secondary" style={{ textAlign: 'center', padding: '1rem' }}>
+                      Volver al Mapa Estelar
+                   </Link>
                  </div>
               )}
            </AnimatePresence>

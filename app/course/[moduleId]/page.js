@@ -155,8 +155,8 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href="/dashboard" className="btn-secondary" style={{ textAlign: 'center' }}>
-            Volver al Mando Central
+          <Link href={isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"} className="btn-secondary" style={{ textAlign: 'center' }}>
+            Volver al Mapa Estelar
           </Link>
         </aside>
 
