@@ -6,8 +6,8 @@ import { doc, getDoc } from 'firebase/firestore';
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { BookOpen, AlertCircle, ArrowRight, CheckCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { BookOpen, AlertCircle, ArrowRight, CheckCircle, X, Maximize2 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
 
@@ -18,6 +18,7 @@ export default function CourseModule() {
   
   const [moduleData, setModuleData] = useState(null);
   const [dataLoading, setDataLoading] = useState(true);
+  const [expandedImg, setExpandedImg] = useState(null);
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
@@ -45,10 +46,9 @@ export default function CourseModule() {
 
   const isCompleted = userData?.progress?.completedModules?.includes(moduleData.id);
   
-  // Lógica de archivo para planetas vs anomalías
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id.startsWith('animales_');
-  const planetImageName = isAnimal ? `animales/avatar_${moduleData.id.replace('animales_', '')}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
+  const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -60,6 +60,31 @@ export default function CourseModule() {
           style={{ width: '100%', height: '100%', background: `url(/assets/${planetImageName}) center center / contain no-repeat`, opacity: 0.15 }}
         />
       </div>
+
+      <AnimatePresence>
+        {expandedImg && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setExpandedImg(null)}
+            style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.9)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem', cursor: 'pointer' }}
+          >
+            <motion.div
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              style={{ position: 'relative', width: '100%', height: '100%', maxWidth: '1200px', maxHeight: '90vh' }}
+            >
+               {/* eslint-disable-next-line @next/next/no-img-element */}
+               <img src={expandedImg} alt="Expanded view" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+               <button onClick={(e) => { e.stopPropagation(); setExpandedImg(null); }} style={{ position: 'absolute', top: '-2rem', right: '-2rem', background: 'transparent', border: 'none', color: 'white', cursor: 'pointer', padding: '1rem' }}>
+                 <X size={32} />
+               </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <Navbar />
       
@@ -83,9 +108,18 @@ export default function CourseModule() {
                   </div>
                 )}
                 {section.image && !section.video && (
-                  <div style={{ width: '100%', height: '300px', background: '#000', position: 'relative' }}>
+                  <div 
+                    onClick={() => setExpandedImg(section.image)}
+                    className="expandable-image-container"
+                    style={{ width: '100%', height: '300px', background: '#000', position: 'relative', cursor: 'pointer', group: 'hover' }}
+                  >
                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                     <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: section.image.includes('cartoon_') ? 'contain' : 'cover' }} />
+                     <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: section.image.includes('cartoon_') ? 'contain' : 'cover', transition: 'transform 0.3s ease' }} className="course-image-hover" />
+                     
+                     <div style={{ position: 'absolute', top: '10px', right: '10px', background: 'rgba(0,0,0,0.6)', padding: '0.4rem', borderRadius: '50%', color: 'white', opacity: 0.8 }}>
+                        <Maximize2 size={16} />
+                     </div>
+
                      {section.imgCaption && (
                        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0,0,0,0.7)', padding: '0.8rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)' }}>
                          📸 {section.imgCaption}

@@ -159,3 +159,6 @@ p {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.expandable-image-container:hover .course-image-hover { transform: scale(1.05); }
+
