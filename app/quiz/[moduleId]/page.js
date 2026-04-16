@@ -40,7 +40,9 @@ export default function QuizMinigame() {
   const passed = score === totalQuestions && totalQuestions > 0;
   
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
-  const planetImageName = isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn.toLowerCase().replace(/\s+/g, '_')}.png`;
+  const isAnimal = moduleData.id?.startsWith('animales_');
+  const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn.toLowerCase().replace(/\s+/g, '_')}.png`);
+  const returnHub = isAnimal ? '/hub/animales' : (isAnomaly ? '/hub/stellar-objects' : '/hub/solar-system');
 
   const handleAnswer = (optionIndex) => {
     if (isExploding || isShaking) return; // Prevent double clicks
@@ -237,7 +239,7 @@ export default function QuizMinigame() {
                 </>
               )}
 
-              <Link href={isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"} className="btn-primary" style={{ width: '100%', marginTop: '1.5rem' }}>
+              <Link href={returnHub} className="btn-primary" style={{ width: '100%', marginTop: '1.5rem' }}>
                 Volver al Mando Central
               </Link>
             </motion.div>
