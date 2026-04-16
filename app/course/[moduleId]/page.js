@@ -48,7 +48,7 @@ export default function CourseModule() {
   // Lógica de archivo para planetas vs anomalías
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id.startsWith('animales_');
-  const planetImageName = isAnimal ? `animales/${moduleData.id}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
+  const planetImageName = isAnimal ? `animales/avatar_${moduleData.id.replace('animales_', '')}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
