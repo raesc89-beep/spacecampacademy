@@ -48,7 +48,7 @@ export default function CourseModule() {
   // Lógica de archivo para planetas vs anomalías
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id.startsWith('animales_');
-  const planetImageName = isAnimal ? `animales/Portada curso.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
+  const planetImageName = isAnimal ? `animales/${moduleData.id}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -161,7 +161,7 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href={isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"} className="btn-secondary" style={{ textAlign: 'center' }}>
+          <Link href={isAnimal ? "/hub/animales" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system")} className="btn-secondary" style={{ textAlign: 'center' }}>
             Volver al Mapa Estelar
           </Link>
         </aside>
