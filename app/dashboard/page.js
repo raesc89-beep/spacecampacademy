@@ -90,6 +90,24 @@ export default function CourseHub() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             
+            {/* Nuevo Curso 3: Animales en el Espacio */}
+            <Link href="/hub/animales" style={{ textDecoration: 'none' }}>
+              <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(255, 184, 0, 0.4)' }}>
+                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url(/assets/animales/Portada%20curso.png) center center / cover no-repeat', filter: 'brightness(0.6)' }}></div>
+                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)', zIndex: 0 }}></div>
+                 
+                 <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'var(--gold-star)', color: 'black', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+                   <PlayCircle size={16} />
+                   <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Nuevo Vuelo Biológico</span>
+                 </div>
+
+                 <div style={{ position: 'relative', zIndex: 1 }}>
+                   <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'white', textShadow: '0 0 10px rgba(255,184,0,0.8)' }}>Animales en el Espacio</h3>
+                   <p style={{ color: 'var(--gold-star)', marginTop: '0.5rem' }}>Pioneros peludos hacia las estrellas.</p>
+                 </div>
+              </motion.div>
+            </Link>
+
             {/* Active Course 2: Anomalías Cósmicas */}
             <Link href="/hub/stellar-objects" style={{ textDecoration: 'none' }}>
               <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(0, 228, 255, 0.4)' }}>

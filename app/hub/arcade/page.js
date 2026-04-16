@@ -10,6 +10,8 @@ import AsteroidTrivia from '@/components/games/AsteroidTrivia';
 import SpaceBingo from '@/components/games/SpaceBingo';
 import SpaceTimelineDragDrop from '@/components/games/SpaceTimelineDragDrop';
 import StarFinder from '@/components/games/StarFinder';
+import LaikaFinder from '@/components/games/LaikaFinder';
+import HamImpulse from '@/components/games/HamImpulse';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -130,12 +132,36 @@ export default function ArcadeExoplanet() {
                </button>
             </div>
 
+            {/* Máquina 7: Radar Biológico Laika */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255, 184, 0, 0.4)', background: 'rgba(255, 184, 0, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 184, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,184,0,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🐕‍🦺</span>
+               </div>
+               <h2 style={{ color: 'var(--gold-star)', margin: '0 0 0.5rem 0' }}>Encuentra a Laika</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Afina tu óptica estelar. Detecta a Laika perdida en la inmensidad gráfica y trae a la heroína a casa.</p>
+               <button onClick={() => setActiveGame('laika')} className="btn-primary" style={{ background: 'var(--gold-star)', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(255,184,0,0.4)', fontWeight: 'bold' }}>
+                 INICIAR BÚSQUEDA
+               </button>
+            </div>
+
+            {/* Máquina 8: Impulso Mercury Ham */}
+            <div className="glass-card" style={{ border: '1px solid rgba(0, 255, 136, 0.4)', background: 'rgba(0, 255, 136, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(0, 255, 136, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(0,255,136,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🐵</span>
+               </div>
+               <h2 style={{ color: 'var(--success)', margin: '0 0 0.5rem 0' }}>Impulso de Ham</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Pilota el motor suborbital. Presiona en el momento exacto para salvar a Ham de una altitud catastrófica.</p>
+               <button onClick={() => setActiveGame('ham')} className="btn-primary" style={{ background: 'var(--success)', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(0,255,136,0.4)', fontWeight: 'bold' }}>
+                 IGNICIÓN ORBITAL
+               </button>
+            </div>
+
           </div>
         ) : (
           <div style={{ width: '100%', maxWidth: '800px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-              <h2 style={{ color: activeGame === 'memory' ? 'var(--success)' : (activeGame === 'words' ? 'var(--electric-blue)' : (activeGame === 'trivia' ? '#FF64C8' : 'var(--gold-star)')), margin: 0 }}>
-                 Simulador: {activeGame === 'memory' ? 'Memoria Fotográfica' : (activeGame === 'words' ? 'Sopa Sideral' : (activeGame === 'trivia' ? 'Defensa y Trivia' : 'Lotería Espacial'))}
+              <h2 style={{ color: ['memory', 'ham'].includes(activeGame) ? 'var(--success)' : (['words'].includes(activeGame) ? 'var(--electric-blue)' : (['trivia'].includes(activeGame) ? '#FF64C8' : 'var(--gold-star)')), margin: 0 }}>
+                 Simulador: {activeGame === 'memory' ? 'Memoria Fotográfica' : (activeGame === 'words' ? 'Sopa Sideral' : (activeGame === 'trivia' ? 'Defensa y Trivia' : (activeGame === 'laika' ? 'Radar Biológico Táctico' : (activeGame === 'ham' ? 'Control de Impulso Mercury' : 'Lotería Espacial'))))}
               </h2>
               <button 
                 onClick={() => setActiveGame(null)} 
@@ -167,6 +193,14 @@ export default function ArcadeExoplanet() {
 
             {activeGame === 'finder' && (
                <StarFinder onComplete={(bonus) => alert(`¡Objeto Detectado! Optica calibrada. Recibes ${bonus} monedas.`)} />
+            )}
+
+            {activeGame === 'laika' && (
+               <LaikaFinder onComplete={(bonus) => alert(`¡Visualización Confirmada! Encontramos a Laika. Recibes ${bonus} monedas.`)} />
+            )}
+
+            {activeGame === 'ham' && (
+               <HamImpulse onComplete={(bonus) => alert(`¡Misión Terminada! Recibes recompensa de comandante: ${bonus} monedas.`)} />
             )}
           </div>
         )}

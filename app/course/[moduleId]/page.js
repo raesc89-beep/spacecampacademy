@@ -47,7 +47,8 @@ export default function CourseModule() {
   
   // Lógica de archivo para planetas vs anomalías
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
-  const planetImageName = isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn.toLowerCase().replace(/\s+/g, '_')}.png`;
+  const isAnimal = moduleData.id.startsWith('animales_');
+  const planetImageName = isAnimal ? `animales/Portada curso.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -76,7 +77,12 @@ export default function CourseModule() {
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
               <div key={idx} className="glass-card" style={{ padding: '0', overflow: 'hidden', borderLeft: `4px solid ${section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color}` }}>
-                {section.image && (
+                {section.video && (
+                  <div style={{ width: '100%', background: '#000', position: 'relative' }}>
+                     <video src={section.video} controls style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#111' }} />
+                  </div>
+                )}
+                {section.image && !section.video && (
                   <div style={{ width: '100%', height: '300px', background: '#000', position: 'relative' }}>
                      {/* eslint-disable-next-line @next/next/no-img-element */}
                      <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: section.image.includes('cartoon_') ? 'contain' : 'cover' }} />
