@@ -9,6 +9,8 @@ import { Shield, Sparkles, Rocket } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
+import { COURSE_DATA } from '@/lib/courseData';
+
 export default function QuizMinigame() {
   const { user, userData, loading } = useAuth();
   const params = useParams();

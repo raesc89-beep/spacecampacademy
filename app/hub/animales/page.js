@@ -10,6 +10,8 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import HubDecorations from '@/components/HubDecorations';
 
+import { COURSE_DATA } from '@/lib/courseData';
+
 export default function AnimalesHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
@@ -21,10 +23,7 @@ export default function AnimalesHub() {
 
   useEffect(() => {
     async function loadData() {
-      const q = collection(db, "modules");
-      const snap = await getDocs(q);
-      const data = snap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      setModules(data);
+      setModules(COURSE_DATA);
     }
     loadData();
   }, []);

@@ -12,6 +12,8 @@ import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
 import ApophisCountdown from '@/components/ApophisCountdown';
 
+import { COURSE_DATA } from '@/lib/courseData';
+
 export default function CourseModule() {
   const { user, userData, loading } = useAuth();
   const params = useParams();
@@ -28,8 +30,8 @@ export default function CourseModule() {
   useEffect(() => {
     async function fetchModule() {
       try {
-        const d = await getDoc(doc(db, "modules", params.moduleId));
-        if (d.exists()) setModuleData(d.data());
+        const mod = COURSE_DATA.find(c => c.id === params.moduleId);
+        if (mod) setModuleData(mod);
         else router.push('/dashboard');
       } catch (err) {
         console.error(err);
