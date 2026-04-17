@@ -90,13 +90,14 @@ export default function CreatorMinigame() {
     let glow = '';
     let atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.8)';
 
-    const createPlanetDiv = (bgUrl, size = '220% 220%') => (
+    const createPlanetDiv = (bgUrl, size = 'cover', extraStyle = {}) => (
       <div style={{ 
         width: '100%', height: '100%', display: 'flex', 
         animation: 'planetSpin 30s linear infinite', 
         background: `url(${bgUrl}) center center / ${size}`, 
         borderRadius: '50%',
-        boxShadow: `inset 0 0 20px rgba(0,0,0,0.8)`
+        boxShadow: `inset 0 0 20px rgba(0,0,0,0.8)`,
+        ...extraStyle
       }}>
       </div>
     );
@@ -107,7 +108,7 @@ export default function CreatorMinigame() {
     }
 
     if (planetState === 'magma') {
-      planetElement = createPlanetDiv('/assets/gen_magma.png', '220% 220%');
+      planetElement = createPlanetDiv('/assets/gen_magma.png', '150% 150%');
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
     }
 
@@ -118,37 +119,38 @@ export default function CreatorMinigame() {
     }
 
     if (planetState === 'venenoso') {
-      planetElement = createPlanetDiv('/assets/gen_venenoso.png', '220% 220%');
+      planetElement = createPlanetDiv('/assets/gen_venenoso.png', '100% 100%');
       glow = '0 0 60px rgba(0, 255, 100, 0.8)';
     }
 
     if (planetState === 'acuatico') {
-      planetElement = createPlanetDiv('/assets/upload_1.png', '220% 220%');
+      planetElement = createPlanetDiv('/assets/upload_1.png', '100% 100%');
       glow = '0 0 40px rgba(0, 153, 255, 0.8)';
     }
 
     if (planetState === 'anillos') {
-      planetElement = createPlanetDiv('/assets/upload_2.png', '220% 220%');
+      planetElement = createPlanetDiv('/assets/upload_2.png', '100% 100%');
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
     }
 
     if (planetState === 'alien') {
-      planetElement = createPlanetDiv('/assets/upload_3.png', '220% 220%');
+      planetElement = createPlanetDiv('/assets/upload_3.png', '100% 100%');
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
     }
 
     if (planetState === 'ice') {
-      planetElement = createPlanetDiv('/assets/earth_water_states.png');
-      glow = '0 0 30px rgba(179, 229, 252, 0.6)';
+      // Using Aquatic texture but processed via CSS to look ultra frozen and glacial
+      planetElement = createPlanetDiv('/assets/upload_1.png', '100% 100%', { filter: 'grayscale(1) brightness(1.7) contrast(1.2)' });
+      glow = '0 0 40px rgba(200, 240, 255, 0.9)';
     }
 
     if (planetState === 'gas') {
-      planetElement = createPlanetDiv('/assets/gen_gas.png', '220% 220%');
+      planetElement = createPlanetDiv('/assets/gen_gas.png', '110% 110%');
       glow = '0 0 40px rgba(212, 225, 255, 0.7)';
     }
 
     if (planetState === 'habitable') {
-      planetElement = createPlanetDiv('/assets/upload_4.png', '220% 220%');
+      planetElement = createPlanetDiv('/assets/upload_4.png', '100% 100%');
       glow = '0 0 50px rgba(100, 255, 255, 0.7)';
       atmosphereShadow = 'inset -30px -30px 50px rgba(0,0,0,0.8), inset 10px 10px 30px rgba(255, 255, 255, 0.2)';
     }
