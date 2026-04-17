@@ -105,7 +105,7 @@ export default function CourseModule() {
               <div key={idx} className="glass-card" style={{ padding: '0', overflow: 'hidden', borderLeft: `4px solid ${section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color}` }}>
                 {section.video && (
                   <div style={{ width: '100%', background: '#000', position: 'relative' }}>
-                     <video src={section.video} controls style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#111' }} />
+                     <video src={section.video} preload="none" controls style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#111' }} />
                   </div>
                 )}
                 {section.image && !section.video && (
@@ -115,7 +115,7 @@ export default function CourseModule() {
                     style={{ width: '100%', height: '300px', background: '#000', position: 'relative', cursor: 'pointer', group: 'hover' }}
                   >
                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                     <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: section.image.includes('cartoon_') ? 'contain' : 'cover', transition: 'transform 0.3s ease' }} className="course-image-hover" />
+                     <img src={section.image} loading="lazy" alt={section.title} style={{ width: '100%', height: '100%', objectFit: section.image.includes('cartoon_') ? 'contain' : 'cover', transition: 'transform 0.3s ease' }} className="course-image-hover" />
                      
                      <div style={{ position: 'absolute', top: '10px', right: '10px', background: 'rgba(0,0,0,0.6)', padding: '0.4rem', borderRadius: '50%', color: 'white', opacity: 0.8 }}>
                         <Maximize2 size={16} />
