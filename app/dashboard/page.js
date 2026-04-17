@@ -6,8 +6,63 @@ import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Lock, Star, PlayCircle, Rocket } from 'lucide-react';
+import { Lock, Star, PlayCircle, Rocket, Gamepad2 } from 'lucide-react';
 import { useEffect } from 'react';
+
+const DASHBOARD_MISSIONS = [
+  {
+    id: "asteroides",
+    title: "Asteroides y Cometas",
+    subtitle: "Rocas y hielos milenarios del espacio profundo.",
+    link: "/hub/asteroides-cometas",
+    bgImage: "url(/assets/asteroides/chicxulub_impact.png) center center / cover no-repeat",
+    badgeColor: "#EF4444",
+    badgeText: "Nuevo Vuelo Rocoso",
+    borderColor: "rgba(239, 68, 68, 0.4)"
+  },
+  {
+    id: "animales",
+    title: "Animales en el Espacio",
+    subtitle: "Pioneros peludos hacia las estrellas.",
+    link: "/hub/animales",
+    bgImage: "url(/assets/animales/Portada%20curso.png) center center / cover no-repeat",
+    badgeColor: "var(--gold-star)",
+    badgeText: "Vuelo Biológico",
+    borderColor: "rgba(255, 184, 0, 0.4)"
+  },
+  {
+    id: "stellar-objects",
+    title: "Anomalías Cósmicas",
+    subtitle: "Agujeros negros, Cuásares y Púlsares.",
+    link: "/hub/stellar-objects",
+    bgImage: "url(/assets/black_hole_icon.png) center center / cover no-repeat",
+    badgeColor: "var(--electric-blue)",
+    badgeText: "Astrofísica",
+    borderColor: "rgba(0, 228, 255, 0.4)"
+  },
+  {
+    id: "decoder",
+    title: "Interceptación Estelar",
+    subtitle: "Decodifica frecuencias alienígenas para ganar logros.",
+    link: "/minigames/decoder",
+    bgImage: "radial-gradient(circle at center, #0a192f 0%, #020308 100%)",
+    badgeColor: "var(--success)",
+    badgeText: "Minijuego",
+    borderColor: "rgba(0, 255, 136, 0.4)",
+    isMinigame: true
+  },
+  {
+    id: "creator",
+    title: "Génesis Planetario",
+    subtitle: "Simulador experimental físico. Construye una exoplaneta.",
+    link: "/minigames/creator",
+    bgImage: "radial-gradient(circle at center, rgba(255, 87, 34, 0.1) 0%, #020308 100%)",
+    badgeColor: "#ff5722",
+    badgeText: "Prueba Final",
+    borderColor: "rgba(255, 87, 34, 0.4)",
+    isMinigame: true
+  }
+];
 
 export default function CourseHub() {
   const { user, userData, loading } = useAuth();
@@ -83,80 +138,39 @@ export default function CourseHub() {
           </div>
         </section>
 
-        {/* Coming Soon Carousel */}
+        {/* Dynamic Coming Soon / Hub Catalog */}
         <section>
           <h2 style={{ fontSize: '2rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            Próximos Lanzamientos <span style={{ fontSize: '1rem', background: 'rgba(255,255,255,0.1)', padding: '0.3rem 0.8rem', borderRadius: '12px' }}>Coming Soon</span>
+            Exploración y Simuladores <span style={{ fontSize: '1rem', background: 'rgba(255,255,255,0.1)', padding: '0.3rem 0.8rem', borderRadius: '12px' }}>Actualizado</span>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             
-            {/* Nuevo Curso 3: Animales en el Espacio */}
-            <Link href="/hub/animales" style={{ textDecoration: 'none' }}>
-              <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(255, 184, 0, 0.4)' }}>
-                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url(/assets/animales/Portada%20curso.png) center center / cover no-repeat', filter: 'brightness(0.6)' }}></div>
-                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)', zIndex: 0 }}></div>
-                 
-                 <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'var(--gold-star)', color: 'black', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
-                   <PlayCircle size={16} />
-                   <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Nuevo Vuelo Biológico</span>
-                 </div>
+            {DASHBOARD_MISSIONS.map((mission) => (
+              <Link key={mission.id} href={mission.link} style={{ textDecoration: 'none' }}>
+                <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: `1px solid ${mission.borderColor}` }}>
+                   <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: mission.bgImage, filter: 'brightness(0.6)' }}></div>
+                   <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)', zIndex: 0 }}></div>
+                   
+                   <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: mission.badgeColor, color: mission.id === 'creator' ? 'white' : 'black', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+                     {mission.isMinigame ? <Gamepad2 size={16} /> : <PlayCircle size={16} />}
+                     <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>{mission.badgeText}</span>
+                   </div>
 
-                 <div style={{ position: 'relative', zIndex: 1 }}>
-                   <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'white', textShadow: '0 0 10px rgba(255,184,0,0.8)' }}>Animales en el Espacio</h3>
-                   <p style={{ color: 'var(--gold-star)', marginTop: '0.5rem' }}>Pioneros peludos hacia las estrellas.</p>
-                 </div>
-              </motion.div>
-            </Link>
-
-            {/* Active Course 2: Anomalías Cósmicas */}
-            <Link href="/hub/stellar-objects" style={{ textDecoration: 'none' }}>
-              <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(0, 228, 255, 0.4)' }}>
-                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url(/assets/black_hole_icon.png) center center / cover no-repeat', filter: 'brightness(0.6)' }}></div>
-                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)', zIndex: 0 }}></div>
-                 
-                 <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'var(--electric-blue)', color: 'black', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
-                   <PlayCircle size={16} />
-                   <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Nuevo Vuelo</span>
-                 </div>
-
-                 <div style={{ position: 'relative', zIndex: 1 }}>
-                   <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'white', textShadow: '0 0 10px rgba(0,228,255,0.8)' }}>Anomalías Cósmicas</h3>
-                   <p style={{ color: 'var(--electric-blue)', marginTop: '0.5rem' }}>Agujeros negros, Cuásares y Púlsares.</p>
-                 </div>
-              </motion.div>
-            </Link>
-
-            {/* Minijuego 1: Decodificador (Fase 4) */}
-            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(0, 255, 136, 0.4)' }}>
-               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(circle at center, #0a192f 0%, #020308 100%)', zIndex: 0 }}></div>
-               
-               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: 'var(--success)', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'black', fontWeight: 'bold' }}>
-                 <PlayCircle size={16} />
-                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Reto Táctico</span>
-               </div>
-
-               <div style={{ position: 'relative', zIndex: 1 }}>
-                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--success)' }}>Interceptación Estelar</h3>
-                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Decodifica frecuencias alienígenas para ganar polvo estelar.</p>
-                 <Link href="/minigames/decoder" className="btn-secondary" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--success)', borderColor: 'var(--success)' }}>JUGAR AHORA</Link>
-               </div>
-            </motion.div>
-
-            {/* Minijuego 2: Laboratorio Planetario (Fase 5) */}
-            <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: '1px solid rgba(255, 87, 34, 0.4)' }}>
-               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(circle at center, rgba(255, 87, 34, 0.1) 0%, #020308 100%)', zIndex: 0 }}></div>
-               
-               <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: '#ff5722', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'white', fontWeight: 'bold' }}>
-                 <PlayCircle size={16} />
-                 <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Prueba Final</span>
-               </div>
-
-               <div style={{ position: 'relative', zIndex: 1 }}>
-                 <h3 style={{ margin: 0, fontSize: '1.8rem', color: '#ff5722' }}>Génesis Planetario</h3>
-                 <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>Simulador experimental. Construye una exoplaneta manipulando gravedad y temperatura.</p>
-                 <Link href="/minigames/creator" className="btn-primary" style={{ display: 'inline-block', marginTop: '1rem', background: 'transparent', color: '#ff5722', borderColor: '#ff5722' }}>INICIAR MÁQUINA</Link>
-               </div>
-            </motion.div>
+                   <div style={{ position: 'relative', zIndex: 1 }}>
+                     <h3 style={{ margin: 0, fontSize: '1.8rem', color: mission.isMinigame ? mission.badgeColor : 'white', textShadow: `0 0 10px ${mission.borderColor}` }}>{mission.title}</h3>
+                     <p style={{ color: mission.isMinigame ? 'var(--text-muted)' : mission.badgeColor, marginTop: '0.5rem' }}>{mission.subtitle}</p>
+                     
+                     {mission.isMinigame && (
+                       <div style={{ marginTop: '1.5rem' }}>
+                          <div className={mission.id === 'creator' ? "btn-primary" : "btn-secondary"} style={{ padding: '0.8rem 1.5rem', display: 'inline-block', borderColor: mission.badgeColor, color: mission.badgeColor, background: 'transparent' }}>
+                            {mission.id === 'creator' ? 'INICIAR MÁQUINA' : 'JUGAR AHORA'}
+                          </div>
+                       </div>
+                     )}
+                   </div>
+                </motion.div>
+              </Link>
+            ))}
 
           </div>
         </section>

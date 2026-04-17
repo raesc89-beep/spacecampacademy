@@ -10,6 +10,7 @@ import { BookOpen, AlertCircle, ArrowRight, CheckCircle, X, Maximize2 } from 'lu
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
+import ApophisCountdown from '@/components/ApophisCountdown';
 
 export default function CourseModule() {
   const { user, userData, loading } = useAuth();
@@ -167,6 +168,7 @@ export default function CourseModule() {
 
           {/* Encuesta de Satisfacción */}
           <div style={{ marginTop: '2rem' }}>
+            {moduleData.id === 'asteroides_apophis' && <ApophisCountdown />}
             <SatisfactionScale moduleId={moduleData.id} userId={user?.uid} />
           </div>
 

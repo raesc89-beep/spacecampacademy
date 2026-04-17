@@ -77,6 +77,23 @@ export default function SolarSystemMap() {
          </Link>
       </div>
       
+      {/* Vehículos Espaciales de Fondo */}
+      <motion.img 
+        src="/assets/shuttle_vector.png" 
+        alt="Shuttle"
+        animate={{ x: ['-20vw', '120vw'], y: ['0vh', '15vh', '-5vh', '10vh'] }}
+        transition={{ repeat: Infinity, duration: 45, ease: "linear" }}
+        style={{ position: 'absolute', top: '20%', left: 0, width: '120px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 10px rgba(100,200,255,0.4))' }}
+      />
+      
+      <motion.img 
+        src="/assets/ufo_vector.png" 
+        alt="UFO"
+        animate={{ x: ['120vw', '-20vw'], y: ['0vh', '-20vh', '15vh', '5vh'] }}
+        transition={{ repeat: Infinity, duration: 65, ease: "linear" }}
+        style={{ position: 'absolute', top: '60%', left: 0, width: '150px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
+      />
+
       <main style={{ 
         flex: 1, position: 'relative', width: '100vw', height: '100vh', 
         display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', 

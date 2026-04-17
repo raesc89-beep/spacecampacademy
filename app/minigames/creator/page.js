@@ -103,17 +103,17 @@ export default function CreatorMinigame() {
     }
 
     if (planetState === 'acuatico') {
-      planetElement = <img src="/assets/media__1776121655381.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="Acuatico" />;
+      planetElement = <img src="/assets/generator_planet_acuatico.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="Acuatico" />;
       glow = '0 0 40px rgba(0, 153, 255, 0.8)';
     }
 
     if (planetState === 'anillos') {
-      planetElement = <img src="/assets/media__1776121774341.png" style={{ width: '140%', height: '140%', objectFit: 'contain', position: 'absolute', top: '-20%', left: '-20%' }} alt="Anillos" />;
+      planetElement = <img src="/assets/generator_planet_anillos.png" style={{ width: '100%', height: '100%', objectFit: 'contain', position: 'absolute', top: '0', left: '0' }} alt="Anillos" />;
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
     }
 
     if (planetState === 'alien') {
-      planetElement = <img src="/assets/media__1776121801014.png" style={{ width: '140%', height: '140%', objectFit: 'contain', position: 'absolute', top: '-20%', left: '-20%' }} alt="Alien Fungico" />;
+      planetElement = <img src="/assets/generator_planet_alien.png" style={{ width: '100%', height: '100%', objectFit: 'contain', position: 'absolute', top: '0', left: '0' }} alt="Alien Fungico" />;
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
     }
 
@@ -175,13 +175,6 @@ export default function CreatorMinigame() {
          </div>
          {/* Sombra Esférica 3D Suprema superpuesta */}
          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', boxShadow: atmosphereShadow, borderRadius: '50%', pointerEvents: 'none', zIndex: 10 }}></div>
-         
-         <style jsx>{`
-           @keyframes planetSpin {
-             0% { transform: translateX(0); }
-             100% { transform: translateX(-50%); }
-           }
-         `}</style>
        </motion.div>
     );
   };

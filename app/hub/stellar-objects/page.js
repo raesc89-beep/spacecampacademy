@@ -73,6 +73,23 @@ export default function StellarObjectsMap() {
          </Link>
       </div>
       
+      {/* Vehículos Espaciales de Fondo */}
+      <motion.img 
+        src="/assets/heavy_cruiser_vector.png" 
+        alt="Heavy Cruiser"
+        animate={{ x: ['-20vw', '120vw'], y: ['10vh', '-10vh', '5vh', '-5vh'] }}
+        transition={{ repeat: Infinity, duration: 75, ease: "linear" }}
+        style={{ position: 'absolute', top: '30%', left: 0, width: '300px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 15px rgba(100,100,255,0.4)) opacity(0.8)' }}
+      />
+      
+      <motion.img 
+        src="/assets/alien_ship_vector.png" 
+        alt="Alien Ship"
+        animate={{ x: ['120vw', '-20vw'], y: ['-10vh', '30vh', '-20vh', '10vh'] }}
+        transition={{ repeat: Infinity, duration: 55, ease: "linear" }}
+        style={{ position: 'absolute', top: '70%', left: 0, width: '180px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(255,50,255,0.6))' }}
+      />
+
       <main style={{ 
         flex: 1, position: 'relative', width: '100vw', height: '100vh', 
         display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', 
