@@ -91,7 +91,7 @@ export default function AsteroidsHub() {
 
               const isCompleted = idx <= maxCompletedIdx;
               const isPlayable = idx === currentPlayableIdx;
-              const isLocked = idx > currentPlayableIdx;
+              const isLocked = (userData?.role !== 'admin') && (idx > currentPlayableIdx);
               
               return (
                 <IsolatedPlanetNode 
