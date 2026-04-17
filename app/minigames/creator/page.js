@@ -90,120 +90,67 @@ export default function CreatorMinigame() {
     let glow = '';
     let atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.8)';
 
+    const createPlanetDiv = (bgUrl, size = '220% 220%') => (
+      <div style={{ 
+        width: '100%', height: '100%', display: 'flex', 
+        animation: 'planetSpin 30s linear infinite', 
+        background: `url(${bgUrl}) center center / ${size}`, 
+        borderRadius: '50%',
+        boxShadow: `inset 0 0 20px rgba(0,0,0,0.8)`
+      }}>
+      </div>
+    );
+
     if (planetState === 'barren') {
-      planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: '#5d4037' }}>
-           <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 20% 30%, transparent 20%, rgba(0,0,0,0.4) 22%, transparent 25%), radial-gradient(circle at 70% 60%, transparent 10%, rgba(0,0,0,0.5) 12%, transparent 15%)', backgroundSize: '125px 125px' }}></div>
-           <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 20% 30%, transparent 20%, rgba(0,0,0,0.4) 22%, transparent 25%), radial-gradient(circle at 70% 60%, transparent 10%, rgba(0,0,0,0.5) 12%, transparent 15%)', backgroundSize: '125px 125px' }}></div>
-        </div>
-      );
+      planetElement = createPlanetDiv('/assets/mercury_extremes.png');
       glow = '0 0 15px rgba(140, 118, 98, 0.3)';
     }
 
     if (planetState === 'magma') {
-      planetElement = (
-        <motion.img 
-          src="/assets/gen_magma.png" 
-          animate={{ scale: [1, 1.05, 1] }} 
-          transition={{ duration: 4, repeat: Infinity }}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-        />
-      );
+      planetElement = createPlanetDiv('/assets/gen_magma.png', '220% 220%');
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
     }
 
     if (planetState === 'desertico') {
-      planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: 'url(/assets/gen_desertico.jpg) center center / 150px 150px repeat', borderRadius: '50%' }}>
-        </div>
-      );
+      planetElement = createPlanetDiv('/assets/gen_desertico.jpg', '200px 200px repeat');
       glow = '0 0 40px rgba(200, 100, 50, 0.8)';
       atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.9), inset 10px 10px 40px rgba(200, 100, 50, 0.4)';
     }
 
     if (planetState === 'venenoso') {
-      planetElement = (
-        <motion.img 
-          src="/assets/gen_venenoso.png" 
-          animate={{ rotate: 360 }} 
-          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-        />
-      );
+      planetElement = createPlanetDiv('/assets/gen_venenoso.png', '220% 220%');
       glow = '0 0 60px rgba(0, 255, 100, 0.8)';
     }
 
     if (planetState === 'acuatico') {
-      planetElement = (
-        <motion.img 
-          src="/assets/upload_1.png" 
-          animate={{ rotate: 360 }} 
-          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-        />
-      );
+      planetElement = createPlanetDiv('/assets/upload_1.png', '220% 220%');
       glow = '0 0 40px rgba(0, 153, 255, 0.8)';
     }
 
     if (planetState === 'anillos') {
-      planetElement = (
-        <motion.img 
-          src="/assets/upload_2.png" 
-          animate={{ rotate: 360 }} 
-          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '150%', height: '150%', objectFit: 'cover', marginLeft: '-25%', marginTop: '-25%' }} 
-        />
-      );
+      planetElement = createPlanetDiv('/assets/upload_2.png', '220% 220%');
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
     }
 
     if (planetState === 'alien') {
-      planetElement = (
-        <motion.img 
-          src="/assets/upload_3.png" 
-          animate={{ rotate: 360 }} 
-          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-        />
-      );
+      planetElement = createPlanetDiv('/assets/upload_3.png', '220% 220%');
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
     }
 
     if (planetState === 'ice') {
-      planetElement = (
-        <motion.img 
-          src="/assets/earth_water_states.png" 
-          animate={{ rotate: -360 }} 
-          transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-        />
-      );
+      planetElement = createPlanetDiv('/assets/earth_water_states.png');
       glow = '0 0 30px rgba(179, 229, 252, 0.6)';
     }
 
     if (planetState === 'gas') {
-      planetElement = (
-        <motion.img 
-          src="/assets/gen_gas.png" 
-          animate={{ scale: [1, 1.02, 1] }} 
-          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
-        />
-      );
+      planetElement = createPlanetDiv('/assets/gen_gas.png', '220% 220%');
       glow = '0 0 40px rgba(212, 225, 255, 0.7)';
     }
 
     if (planetState === 'habitable') {
-      planetElement = (
-        <motion.img 
-          src="/assets/upload_4.png" 
-          animate={{ rotate: 360 }} 
-          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
-        />
-      );
-      glow = '0 0 80px rgba(100, 200, 255, 0.4)';
-      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95), inset 10px 10px 40px rgba(100,200,255,0.4)';
+      planetElement = createPlanetDiv('/assets/upload_4.png', '220% 220%');
+      glow = '0 0 50px rgba(100, 255, 255, 0.7)';
+      atmosphereShadow = 'inset -30px -30px 50px rgba(0,0,0,0.8), inset 10px 10px 30px rgba(255, 255, 255, 0.2)';
     }
 
     return (
