@@ -165,13 +165,10 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
                style={{ 
                  width: '100%', 
                  height: '100%', 
-                 objectFit: 'cover',
-                 borderRadius: '50%',
-                 border: `4px solid ${moduleInfo.color}`,
-                 boxShadow: hovered && !isLocked ? `0 0 40px ${moduleInfo.color}, 0 0 15px white` : `0 0 20px ${moduleInfo.color}80`,
-                 background: 'black',
+                 objectFit: 'contain',
                  filter: planetFilter, 
-                 opacity: planetOpacity
+                 opacity: planetOpacity,
+                 mixBlendMode: 'multiply'
                }}
                draggable="false"
              />

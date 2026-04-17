@@ -145,8 +145,7 @@ export default function SolarSystemMap() {
 // Componente Independiente Flotante (Botón 2D)
 function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, isLocked, customHref }) {
   const [hovered, setHovered] = useState(false);
-  const id = moduleInfo.id.toLowerCase();
-  const imgUrl = id === 'sun' ? `/assets/cartoon_sun.png` : `/assets/planet_${id}.png`;
+  const imgUrl = `/assets/cartoon_${moduleInfo.id.toLowerCase()}.png`;
 
   // El estilo de misterio: En lugar de saturar de sombras físicas que causan los cuadros negros, 
   // hacemos el planeta fantasmal/borroso cuando está inexplorado.

@@ -52,13 +52,13 @@ export default function CourseModule() {
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id.startsWith('animales_');
   const isAsteroide = moduleData.id.startsWith('asteroides_');
+  const isPluto = moduleData.id === 'pluto';
   const isSun = moduleData.id === 'sun';
-  const isPlanet = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'].includes(moduleData.id);
   
   const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
                           (isAnomaly ? `${moduleData.id}_icon.png` : 
                           (isSun ? 'cartoon_sun.png' : 
-                          (isPlanet ? `planet_${moduleData.id.toLowerCase()}.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\\s+/g, '_')}.png`)));
+                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\\s+/g, '_')}.png`)));
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
