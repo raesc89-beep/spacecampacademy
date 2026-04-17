@@ -161,7 +161,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
               objectFit: 'contain',
               filter: planetFilter, 
               opacity: planetOpacity,
-              mixBlendMode: (moduleInfo.id === 'asteroides_cometas' || moduleInfo.id === 'asteroides_apophis') ? 'lighten' : 'multiply'
+              mixBlendMode: 'normal'
             }}
             draggable="false"
           />
