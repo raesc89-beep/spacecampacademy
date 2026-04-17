@@ -31,18 +31,24 @@ export default function CreatorMinigame() {
     let state = 'barren';
     let msg = 'Planeta rocoso inerte. Sin atmósfera visible.';
 
-    if (temperature > 80) {
+    if (temperature > 80 && magneticField < 30) {
+      state = 'desertico';
+      msg = 'Temperatura extrema sin campo magnético. Toda el agua escapó al vacío dejando un páramo desértico agrietado.';
+    } else if (temperature > 80) {
       state = 'magma';
-      msg = 'Temperatura extrema. El agua se evapora y la corteza se derrite.';
+      msg = 'Temperatura crítica. El agua se evapora y la corteza se derrite.';
+    } else if (temperature >= 35 && temperature <= 70 && gravity >= 1.2 && magneticField <= 40) {
+      state = 'venenoso';
+      msg = 'Atmósfera espesa tóxica. Alta gravedad atrapa gases letales sobre biomas verdes y pantanosos nocivos.';
     } else if (temperature < -30) {
       state = 'ice';
-      msg = 'Glaciación global. Cualquier líquido está bloqueado bajo hielo.';
+      msg = 'Glaciación global. Cualquier líquido está bloqueado bajo gruesas capas de biomasa azul.';
     } else if (gravity < 0.6) {
       state = 'barren';
       msg = 'Baja gravedad. La atmósfera se escapa hacia el vacío (Efecto Marte).';
     } else if (gravity > 2.0) {
       state = 'gas';
-      msg = 'Alta gravedad. Ha aplastado la corteza reteniendo metano pesado.';
+      msg = 'Alta gravedad. Ha aplastado la corteza reteniendo bandas de metano pesado.';
     } else if (magneticField < 30) {
       state = 'barren';
       msg = 'Viento solar letal. El núcleo no genera campo magnético protector.';
@@ -96,12 +102,35 @@ export default function CreatorMinigame() {
 
     if (planetState === 'magma') {
       planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 15s linear infinite', background: '#3e150a' }}>
-           <div style={{ flex: 1, background: 'linear-gradient(45deg, transparent 40%, #ff3d00 45%, #ffea00 50%, #ff3d00 55%, transparent 60%), linear-gradient(-45deg, transparent 20%, #d50000 25%, #ff9100 30%, transparent 35%)', backgroundSize: '125px 125px' }}></div>
-           <div style={{ flex: 1, background: 'linear-gradient(45deg, transparent 40%, #ff3d00 45%, #ffea00 50%, #ff3d00 55%, transparent 60%), linear-gradient(-45deg, transparent 20%, #d50000 25%, #ff9100 30%, transparent 35%)', backgroundSize: '125px 125px' }}></div>
-        </div>
+        <motion.img 
+          src="/assets/gen_magma.png" 
+          animate={{ scale: [1, 1.05, 1] }} 
+          transition={{ duration: 4, repeat: Infinity }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+        />
       );
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
+    }
+
+    if (planetState === 'desertico') {
+      planetElement = (
+        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: 'url(/assets/gen_desertico.jpg) center center / 150px 150px repeat' }}>
+        </div>
+      );
+      glow = '0 0 40px rgba(200, 100, 50, 0.8)';
+      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.9), inset 10px 10px 40px rgba(200, 100, 50, 0.4)';
+    }
+
+    if (planetState === 'venenoso') {
+      planetElement = (
+        <motion.img 
+          src="/assets/gen_venenoso.png" 
+          animate={{ rotate: 360 }} 
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+        />
+      );
+      glow = '0 0 60px rgba(0, 255, 100, 0.8)';
     }
 
     if (planetState === 'acuatico') {
@@ -136,24 +165,26 @@ export default function CreatorMinigame() {
 
     if (planetState === 'ice') {
       planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 40s linear infinite', background: '#e1f5fe' }}>
-           <div style={{ flex: 1, background: 'linear-gradient(15deg, transparent 30%, rgba(2, 119, 189, 0.3) 32%, transparent 35%), radial-gradient(ellipse at 50% 10%, #fff 20%, transparent 60%)', backgroundSize: '90px 140px' }}></div>
-           <div style={{ flex: 1, background: 'linear-gradient(15deg, transparent 30%, rgba(2, 119, 189, 0.3) 32%, transparent 35%), radial-gradient(ellipse at 50% 10%, #fff 20%, transparent 60%)', backgroundSize: '90px 140px' }}></div>
-        </div>
+        <motion.img 
+          src="/assets/gen_ice.png" 
+          animate={{ rotate: -360 }} 
+          transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+        />
       );
       glow = '0 0 30px rgba(179, 229, 252, 0.6)';
-      atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.9), inset 15px 15px 40px rgba(255,255,255,0.6)';
     }
 
     if (planetState === 'gas') {
       planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 10s linear infinite', background: '#9e9d24' }}>
-           <div style={{ flex: 1, background: 'repeating-linear-gradient(0deg, #827717, #827717 15px, #afb42b 15px, #afb42b 30px, #c0ca33 30px, #c0ca33 45px)', opacity: 0.9 }}></div>
-           <div style={{ flex: 1, background: 'repeating-linear-gradient(0deg, #827717, #827717 15px, #afb42b 15px, #afb42b 30px, #c0ca33 30px, #c0ca33 45px)', opacity: 0.9 }}></div>
-        </div>
+        <motion.img 
+          src="/assets/gen_gas.png" 
+          animate={{ scale: [1, 1.02, 1] }} 
+          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+        />
       );
-      glow = '0 0 40px rgba(212, 225, 87, 0.5)';
-      atmosphereShadow = 'inset -40px -40px 50px rgba(0,0,0,0.9), inset 10px 10px 30px rgba(212, 225, 87, 0.3)';
+      glow = '0 0 40px rgba(212, 225, 255, 0.7)';
     }
 
     if (planetState === 'habitable') {
@@ -222,9 +253,21 @@ export default function CreatorMinigame() {
              style={{ 
                background: isWin ? (planetState === 'alien' ? 'rgba(179, 136, 255, 0.2)' : 'rgba(0,255,136,0.1)') : 'rgba(255,255,255,0.05)', 
                border: isWin ? (planetState === 'alien' ? '1px solid #b388ff' : '1px solid var(--success)') : '1px solid rgba(255,255,255,0.1)', 
-               padding: '1rem', borderRadius: '12px', zIndex: 1, width: '100%' 
+               padding: '1rem', borderRadius: '12px', zIndex: 1, width: '100%', display: 'flex', alignItems: 'center', gap: '1rem'
              }}
           >
+             <div style={{ padding: '0.5rem', background: 'rgba(255,255,255,0.1)', borderRadius: '50%' }}>
+               {planetState === 'desertico' && '🏜️'}
+               {planetState === 'venenoso' && '☣️'}
+               {planetState === 'acuatico' && '🌊'}
+               {planetState === 'magma' && '🌋'}
+               {planetState === 'ice' && '❄️'}
+               {planetState === 'gas' && '🌪️'}
+               {planetState === 'barren' && '🌑'}
+               {planetState === 'habitable' && '🌍'}
+               {planetState === 'alien' && '🛸'}
+               {planetState === 'anillos' && '🪐'}
+             </div>
              <p style={{ margin: 0, color: isWin ? (planetState === 'alien' ? '#b388ff' : 'var(--success)') : 'var(--text-muted)' }}>{feedbackMsg}</p>
           </motion.div>
         </div>

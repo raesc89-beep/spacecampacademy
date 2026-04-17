@@ -197,7 +197,7 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href={isAnimal ? "/hub/animales" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system")} className="btn-secondary" style={{ textAlign: 'center' }}>
+          <Link href={isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"))} className="btn-secondary" style={{ textAlign: 'center' }}>
             Volver al Mapa Estelar
           </Link>
         </aside>

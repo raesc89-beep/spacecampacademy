@@ -35,13 +35,12 @@ export default function AsteroidsHub() {
   // Orden estricto del curso
   const courseOrder = ['asteroides_intro', 'asteroides_meteoros', 'asteroides_cometas', 'asteroides_sondas', 'asteroides_apophis'];
 
-  // Coordenadas orgánicas distribuidas 
   const orbitalData = {
-    asteroides_intro: { left: '15%', top: '40%', size: 'clamp(100px, 12vw, 180px)', img: '/assets/asteroides/hub_intro.png' },
-    asteroides_meteoros: { left: '35%', top: '25%', size: 'clamp(120px, 14vw, 200px)', img: '/assets/asteroides/hub_meteoros.png' },
-    asteroides_cometas: { left: '55%', top: '65%', size: 'clamp(130px, 15vw, 220px)', img: '/assets/asteroides/hub_cometas.png' },
-    asteroides_sondas: { left: '75%', top: '30%', size: 'clamp(140px, 16vw, 240px)', img: '/assets/asteroides/hub_sondas.png' },
-    asteroides_apophis: { left: '85%', top: '70%', size: 'clamp(110px, 14vw, 200px)', img: '/assets/asteroides/hub_apophis.png' }
+    asteroides_intro: { left: '15%', top: '40%', size: 'clamp(100px, 12vw, 180px)', img: '/assets/asteroides/hub_intro_vector.png' },
+    asteroides_meteoros: { left: '35%', top: '25%', size: 'clamp(120px, 14vw, 200px)', img: '/assets/asteroides/hub_meteoros_vector.png' },
+    asteroides_cometas: { left: '55%', top: '65%', size: 'clamp(130px, 15vw, 220px)', img: '/assets/asteroides/hub_cometas_vector.png' },
+    asteroides_sondas: { left: '75%', top: '30%', size: 'clamp(140px, 16vw, 240px)', img: '/assets/asteroides/hub_sondas_vector.png' },
+    asteroides_apophis: { left: '85%', top: '70%', size: 'clamp(110px, 14vw, 200px)', img: '/assets/asteroides/hub_apophis_vector.png' }
   };
 
   // Determinar Índice de Progreso
@@ -157,18 +156,18 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
             <div style={{ position: 'absolute', top: '10%', left: '10%', right: '10%', bottom: '10%', borderRadius: '50%', background: moduleInfo.color, filter: 'blur(20px)', opacity: hovered ? 0.8 : 0.4, transition: 'opacity 0.3s' }}></div>
           )}
 
-          {/* Render del Planeta / Botón */}
+          {/* Render del Planeta / Botón Visual Libre de Fondos */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <div style={{
-            width: '100%', height: '100%', borderRadius: '50%', overflow: 'hidden',
-            boxShadow: `0 0 25px ${isLocked ? 'rgba(255,255,255,0.1)' : moduleInfo.color + 'aa'}`,
+            width: '100%', height: '100%', 
+            filter: `drop-shadow(0 0 25px ${isLocked ? 'rgba(255,255,255,0.1)' : moduleInfo.color + 'aa'})`,
             position: 'relative', zIndex: 2
           }}>
             <img 
               src={imgUrl} 
               alt={moduleInfo.titleEs} 
               style={{ 
-                width: '100%', height: '100%', objectFit: 'cover', 
+                width: '100%', height: '100%', objectFit: 'contain', 
                 filter: planetFilter, opacity: planetOpacity
               }} 
               draggable="false"
