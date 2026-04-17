@@ -51,6 +51,7 @@ export default function CourseModule() {
   
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id.startsWith('animales_');
+  const isAsteroide = moduleData.id.startsWith('asteroides_');
   const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
 
   return (
