@@ -78,7 +78,7 @@ export default function CourseHub() {
   }
 
   // Muro Administrativo de Autorización (Fase 3.6)
-  if (userData.role !== 'admin' && !userData.isApproved) {
+  if (false && userData.role !== "admin" && !userData.isApproved) { // Bypass Muro Restringido
     return (
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', background: 'radial-gradient(circle at center, #1a0b2e 0%, #000000 100%)' }}>
         <div style={{ background: 'rgba(255,255,255,0.05)', padding: '3rem', borderRadius: '24px', border: '1px solid rgba(255,51,102,0.3)', maxWidth: '500px' }}>

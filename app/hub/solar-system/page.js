@@ -105,7 +105,7 @@ export default function SolarSystemMap() {
 
               const isCompleted = idx <= maxCompletedIdx;
               const isPlayable = idx === currentPlayableIdx;
-              const isLocked = (userData?.role !== 'admin') && (idx > currentPlayableIdx);
+              const isLocked = false; // Bypass total remoto
               
               // Niebla de Guerra: Si está muy por delante, es invisible. Si es el SIGUIENTE bloqueado, es sombra.
               // Para ser fieles a la Niebla, haremos TODO lo bloqueado como sombras oscuras.
