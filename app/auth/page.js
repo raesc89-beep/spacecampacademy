@@ -56,8 +56,14 @@ function AuthContent() {
         setError('Este correo electrónico ya está registrado.');
       } else if (err.code === 'auth/weak-password') {
         setError('La contraseña debe tener al menos 6 caracteres.');
+      } else if (err.code === 'auth/unauthorized-domain') {
+        setError(`🚨 Error CRÍTICO: El dominio actual no está autorizado en Firebase. Añade el dominio de Vercel en la consola de Firebase Authentication -> Configuración -> Dominios Autorizados.`);
+      } else if (err.code === 'auth/network-request-failed') {
+        setError(`Sin conexión o CORS bloqueado. Verifica tu internet o las llaves de entorno de Vercel.`);
+      } else if (err.code === 'auth/api-key-not-valid. Please pass a valid API key.') {
+        setError(`🚨 Error CRÍTICO: Las variables de entorno de Firebase (NEXT_PUBLIC_FIREBASE_API_KEY) no se han configurado en Vercel.`);
       } else {
-        setError(err.message.includes('auth/') ? 'Error de autenticación. Verifica tus datos.' : err.message);
+        setError(`Error [${err.code || 'Desconocido'}]: ${err.message}`);
       }
     }
     

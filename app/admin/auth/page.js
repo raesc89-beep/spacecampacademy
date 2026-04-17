@@ -19,7 +19,13 @@ export default function AdminAuth() {
       await signInWithEmailAndPassword(auth, email, password);
       router.push('/admin/users');
     } catch (err) {
-      setError('Credenciales inválidas. Escudo de seguridad activado.');
+      if (err.code === 'auth/unauthorized-domain') {
+        setError('Error crítico: El dominio actual de Vercel no está autorizado en la consola de Firebase.');
+      } else if (err.code === 'auth/network-request-failed') {
+        setError('Error: Conexión fallida. Revisa las variables de entorno NEXT_PUBLIC de Vercel.');
+      } else {
+        setError('Credenciales inválidas. Escudo de seguridad activado.');
+      }
     }
   };
 

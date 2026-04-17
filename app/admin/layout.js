@@ -1,12 +1,18 @@
 'use client';
 import { useAuth } from '@/hooks/useAuth';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { LayoutDashboard, Users, BookOpen, FileText, Database, ShieldAlert } from 'lucide-react';
 
 export default function AdminLayout({ children }) {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
+  const pathname = usePathname();
+
+  // Permitir renderizar limpiamente la página de login de admin sin bloqueo preventivo
+  if (pathname === '/admin/auth') {
+    return <>{children}</>;
+  }
 
   if (loading) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando credenciales...</div>;
 
