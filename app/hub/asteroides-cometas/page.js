@@ -157,7 +157,9 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
             borderRadius: '50%',
             overflow: 'hidden',
             boxShadow: `0 0 25px ${isLocked ? 'rgba(255,255,255,0.1)' : moduleInfo.color + 'aa'}`,
-            position: 'relative', zIndex: 2
+            position: 'absolute', top: 0, left: 0,
+            zIndex: 2,
+            mixBlendMode: 'multiply'
           }}>
              <img 
                src={imgUrl} 
@@ -167,8 +169,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
                  height: '100%', 
                  objectFit: 'contain',
                  filter: planetFilter, 
-                 opacity: planetOpacity,
-                 mixBlendMode: 'multiply'
+                 opacity: planetOpacity
                }}
                draggable="false"
              />
