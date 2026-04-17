@@ -135,30 +135,36 @@ export default function CreatorMinigame() {
 
     if (planetState === 'acuatico') {
       planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 20s linear infinite', background: '#0288d1' }}>
-           <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 10%, transparent 20%)', backgroundSize: '60px 60px' }}></div>
-           <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 10%, transparent 20%)', backgroundSize: '60px 60px' }}></div>
-        </div>
+        <motion.img 
+          src="/assets/upload_1.png" 
+          animate={{ rotate: 360 }} 
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+        />
       );
       glow = '0 0 40px rgba(0, 153, 255, 0.8)';
     }
 
     if (planetState === 'anillos') {
       planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 25s linear infinite', background: '#e65100' }}>
-           <div style={{ flex: 1, background: 'repeating-linear-gradient(45deg, #ef6c00, #ef6c00 10px, #f57c00 10px, #f57c00 20px)' }}></div>
-           <div style={{ flex: 1, background: 'repeating-linear-gradient(45deg, #ef6c00, #ef6c00 10px, #f57c00 10px, #f57c00 20px)' }}></div>
-        </div>
+        <motion.img 
+          src="/assets/upload_2.png" 
+          animate={{ rotate: 360 }} 
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+          style={{ width: '150%', height: '150%', objectFit: 'contain', marginLeft: '-25%', marginTop: '-25%' }} 
+        />
       );
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
     }
 
     if (planetState === 'alien') {
       planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 10s linear infinite', background: '#4a148c' }}>
-           <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 30% 30%, #e040fb 10%, transparent 15%), radial-gradient(circle at 70% 60%, #e040fb 5%, transparent 10%)', backgroundSize: '80px 80px' }}></div>
-           <div style={{ flex: 1, backgroundImage: 'radial-gradient(circle at 30% 30%, #e040fb 10%, transparent 15%), radial-gradient(circle at 70% 60%, #e040fb 5%, transparent 10%)', backgroundSize: '80px 80px' }}></div>
-        </div>
+        <motion.img 
+          src="/assets/upload_3.png" 
+          animate={{ rotate: 360 }} 
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+        />
       );
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
     }
@@ -189,16 +195,12 @@ export default function CreatorMinigame() {
 
     if (planetState === 'habitable') {
       planetElement = (
-        <>
-          <div style={{ position: 'absolute', width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 25s linear infinite', background: '#1565c0' }}>
-             <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
-             <div style={{ flex: 1, background: 'radial-gradient(circle at 30% 50%, #4caf50 15%, transparent 25%), radial-gradient(ellipse at 70% 30%, #388e3c 10%, transparent 20%), radial-gradient(circle at 80% 70%, #8bc34a 12%, transparent 20%)', backgroundSize: '150px 150px' }}></div>
-          </div>
-          <div style={{ position: 'absolute', top: 0, left: 0, width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 18s linear infinite', opacity: 0.7, zIndex: 2 }}>
-             <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
-             <div style={{ flex: 1, background: 'radial-gradient(circle at 50% 20%, #fff 5%, transparent 20%), radial-gradient(ellipse at 20% 60%, #fff 8%, transparent 25%)', backgroundSize: '120px 120px' }}></div>
-          </div>
-        </>
+        <motion.img 
+          src="/assets/upload_4.png" 
+          animate={{ rotate: 360 }} 
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+        />
       );
       glow = '0 0 80px rgba(100, 200, 255, 0.4)';
       atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.95), inset 10px 10px 40px rgba(100,200,255,0.4)';

@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Lock, Star, PlayCircle, Rocket, Gamepad2 } from 'lucide-react';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 const DASHBOARD_MISSIONS = [
   {
@@ -15,7 +16,7 @@ const DASHBOARD_MISSIONS = [
     title: "Asteroides y Cometas",
     subtitle: "Rocas y hielos milenarios del espacio profundo.",
     link: "/hub/asteroides-cometas",
-    bgImage: "url(/assets/asteroides/chicxulub_impact.png) center center / cover no-repeat",
+    bgSrc: "/assets/asteroides/Rosseta.png",
     badgeColor: "#EF4444",
     badgeText: "Nuevo Vuelo Rocoso",
     borderColor: "rgba(239, 68, 68, 0.4)"
@@ -25,7 +26,7 @@ const DASHBOARD_MISSIONS = [
     title: "Animales en el Espacio",
     subtitle: "Pioneros peludos hacia las estrellas.",
     link: "/hub/animales",
-    bgImage: "url(/assets/animales/Portada%20curso.png) center center / cover no-repeat",
+    bgSrc: "/assets/animales/Portada%20curso.png",
     badgeColor: "var(--gold-star)",
     badgeText: "Vuelo Biológico",
     borderColor: "rgba(255, 184, 0, 0.4)"
@@ -35,7 +36,7 @@ const DASHBOARD_MISSIONS = [
     title: "Anomalías Cósmicas",
     subtitle: "Agujeros negros, Cuásares y Púlsares.",
     link: "/hub/stellar-objects",
-    bgImage: "url(/assets/black_hole_icon.png) center center / cover no-repeat",
+    bgSrc: "/assets/black_hole_icon.png",
     badgeColor: "var(--electric-blue)",
     badgeText: "Astrofísica",
     borderColor: "rgba(0, 228, 255, 0.4)"
@@ -121,7 +122,7 @@ export default function CourseHub() {
 
         {/* Featured Course */}
         <section style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', padding: '4rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', minHeight: '400px', border: '1px solid rgba(255,255,255,0.1)' }}>
-          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url(/assets/solar_system_cover.png) no-repeat center right / cover', zIndex: -1, opacity: 0.7 }}></div>
+          <Image src="/assets/solar_system_cover.png" alt="Solar System" fill style={{ objectFit: 'cover', zIndex: -1, opacity: 0.7 }} quality={75} priority />
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(90deg, #020308 0%, rgba(2,3,8,0.4) 100%)', zIndex: 0 }}></div>
           
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '600px' }}>
@@ -148,7 +149,11 @@ export default function CourseHub() {
             {DASHBOARD_MISSIONS.map((mission) => (
               <Link key={mission.id} href={mission.link} style={{ textDecoration: 'none' }}>
                 <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: `1px solid ${mission.borderColor}` }}>
-                   <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: mission.bgImage, filter: 'brightness(0.6)' }}></div>
+                   {mission.bgSrc ? (
+                      <Image src={mission.bgSrc} alt={mission.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover', filter: 'brightness(0.6)' }} quality={60} />
+                   ) : (
+                      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: mission.bgImage, filter: 'brightness(0.6)' }}></div>
+                   )}
                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)', zIndex: 0 }}></div>
                    
                    <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: mission.badgeColor, color: mission.id === 'creator' ? 'white' : 'black', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
