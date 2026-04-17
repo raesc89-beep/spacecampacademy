@@ -14,18 +14,13 @@ import { COURSE_DATA } from '@/lib/courseData';
 export default function AsteroidsHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
-  const [modules, setModules] = useState([]);
+  const modules = COURSE_DATA;
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
   }, [user, loading, router]);
 
-  useEffect(() => {
-    async function loadData() {
-      setModules(COURSE_DATA);
-    }
-    loadData();
-  }, []);
+  
 
   if (loading || !userData || modules.length === 0) {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a1a', color: 'white' }}>Inicializando Campo de Asteroides...</div>;
