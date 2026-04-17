@@ -38,11 +38,11 @@ export default function AnimalesHub() {
 
   // Coordenadas orgánicas distribuidas 
   const orbitalData = {
-    animales_intro: { left: '20%', top: '50%', size: 'clamp(100px, 12vw, 180px)', img: '/assets/animales/hub_intro.png' },
-    animales_mamiferos: { left: '35%', top: '30%', size: 'clamp(120px, 14vw, 200px)', img: '/assets/animales/hub_mamiferos.png' },
-    animales_albert_ham: { left: '55%', top: '70%', size: 'clamp(130px, 15vw, 220px)', img: '/assets/animales/hub_albert_ham.png' },
-    animales_laika: { left: '75%', top: '25%', size: 'clamp(140px, 16vw, 240px)', img: '/assets/animales/hub_laika.png' },
-    animales_gatos: { left: '90%', top: '60%', size: 'clamp(110px, 14vw, 200px)', img: '/assets/animales/hub_gatos.png' }
+    animales_intro: { left: '20%', top: '50%', size: 'clamp(80px, 9vw, 120px)', img: '/assets/animales/hub_intro.png' },
+    animales_mamiferos: { left: '35%', top: '30%', size: 'clamp(90px, 10vw, 140px)', img: '/assets/animales/hub_mamiferos.png' },
+    animales_albert_ham: { left: '55%', top: '70%', size: 'clamp(100px, 11vw, 150px)', img: '/assets/animales/hub_albert_ham.png' },
+    animales_laika: { left: '75%', top: '25%', size: 'clamp(110px, 12vw, 160px)', img: '/assets/animales/hub_laika.png' },
+    animales_gatos: { left: '90%', top: '60%', size: 'clamp(80px, 9vw, 130px)', img: '/assets/animales/hub_gatos.png' }
   };
 
   // Determinar Índice de Progreso
@@ -154,15 +154,14 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
              gap: '0.5rem'
            }}
         >
-          {/* Avatar Circular del Animal */}
+          {/* Avatar Circular del Animal Puro */}
           <div style={{
             width: '100%',
             height: '100%',
-            borderRadius: '50%',
-            overflow: 'hidden',
-            border: `4px solid ${isLocked ? 'gray' : moduleInfo.color}`,
-            boxShadow: `0 0 30px ${isLocked ? 'transparent' : moduleInfo.color + '60'}`,
-            background: 'black'
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            filter: `drop-shadow(0 0 20px ${isLocked ? 'transparent' : moduleInfo.color + '80'})`
           }}>
             <motion.img 
               src={imgUrl} 

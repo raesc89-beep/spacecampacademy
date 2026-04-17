@@ -41,8 +41,16 @@ export default function QuizMinigame() {
   
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id?.startsWith('animales_');
-  const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn.toLowerCase().replace(/\s+/g, '_')}.png`);
-  const returnHub = isAnimal ? '/hub/animales' : (isAnomaly ? '/hub/stellar-objects' : '/hub/solar-system');
+  const isAsteroid = moduleData.id?.startsWith('asteroides_');
+  
+  const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
+                          isAsteroid ? `asteroides/hub_${moduleData.id.replace('asteroides_', '')}.png` :
+                          (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
+                          
+  const returnHub = isAnimal ? '/hub/animales' : 
+                    isAnomaly ? '/hub/stellar-objects' : 
+                    isAsteroid ? '/hub/asteroides-cometas' : 
+                    '/hub/solar-system';
 
   const handleAnswer = (optionIndex) => {
     if (isExploding || isShaking) return; // Prevent double clicks

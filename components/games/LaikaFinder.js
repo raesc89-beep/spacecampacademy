@@ -3,15 +3,33 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, CheckCircle, AlertCircle } from 'lucide-react';
 
-const CHALLENGE = {
-  riddle: "Mi viaje es solitario, eterno y valiente. Búscame en esta imagen donde mi hocico descansa, y nunca dejo el vacío infinito estrellado.",
-  imageUrl: "/assets/animales/Laika 2.png", 
-  targetX: 50, 
-  targetY: 50,
-  radius: 20 
-};
+const CHALLENGES = [
+  {
+    riddle: "1. IGNICIÓN: El poderoso R-7 vuela hacia las estrellas despidiendo fuego. Localiza el ardiente motor del cohete.",
+    imageUrl: "/assets/animales/laika_challenge_1.png", 
+    targetX: 50, 
+    targetY: 70, // Exhaust is usually at the bottom
+    radius: 40 
+  },
+  {
+    riddle: "2. ÓRBITA SOLITARIA: Laika orbita silenciosamente dentro de la fría cápsula metálica. ¿Dónde se encuentra el Sputnik sobre el horizonte?",
+    imageUrl: "/assets/animales/laika_challenge_2.png", 
+    targetX: 50, 
+    targetY: 40, // Capsule usually central/upper
+    radius: 40 
+  },
+  {
+    riddle: "3. EL LEGADO ETERNO: En bronce heroico, su memoria vive. Señala el rostro de la valiente Laika en el monumento.",
+    imageUrl: "/assets/animales/laika_challenge_3.png", 
+    targetX: 50, 
+    targetY: 40, // Face usually upper center
+    radius: 40 
+  }
+];
 
 export default function LaikaFinder({ onComplete }) {
+  const [currentLevel, setCurrentLevel] = useState(0);
+  const CHALLENGE = CHALLENGES[Math.min(currentLevel, CHALLENGES.length - 1)];
   const [gameOver, setGameOver] = useState(false);
   const [clickDrops, setClickDrops] = useState([]);
 
@@ -33,8 +51,14 @@ export default function LaikaFinder({ onComplete }) {
     if (dist <= CHALLENGE.radius) {
       setGameOver(true);
       setTimeout(() => {
-        if (onComplete) onComplete(30);
-      }, 1500);
+        if (currentLevel + 1 < CHALLENGES.length) {
+          setCurrentLevel(prev => prev + 1);
+          setGameOver(false);
+          setClickDrops([]);
+        } else {
+          if (onComplete) onComplete(100);
+        }
+      }, 2000);
     }
   };
 
@@ -55,7 +79,9 @@ export default function LaikaFinder({ onComplete }) {
       {gameOver && (
         <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--success)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.8rem' }}>
           <CheckCircle size={32} />
-          <h2 style={{ margin: 0 }}>¡Heroica Laika Detectada!</h2>
+          <h2 style={{ margin: 0 }}>
+            {currentLevel + 1 === CHALLENGES.length ? '¡Misión Completa!' : '¡Objetivo Confirmado! Analizando Siguiente Sector...'}
+          </h2>
         </motion.div>
       )}
 

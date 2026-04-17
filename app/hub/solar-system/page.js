@@ -79,19 +79,19 @@ export default function SolarSystemMap() {
       
       {/* Vehículos Espaciales de Fondo */}
       <motion.img 
-        src="/assets/shuttle_vector.png" 
+        src="/assets/shuttle_user.png" 
         alt="Shuttle"
         animate={{ x: ['-20vw', '120vw'], y: ['0vh', '15vh', '-5vh', '10vh'] }}
         transition={{ repeat: Infinity, duration: 45, ease: "linear" }}
-        style={{ position: 'absolute', top: '20%', left: 0, width: '120px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 10px rgba(100,200,255,0.4))' }}
+        style={{ position: 'absolute', top: '20%', left: 0, width: '50px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 10px rgba(100,200,255,0.4))' }}
       />
       
       <motion.img 
-        src="/assets/ufo_vector.png" 
+        src="/assets/ufo_user.png" 
         alt="UFO"
         animate={{ x: ['120vw', '-20vw'], y: ['0vh', '-20vh', '15vh', '5vh'] }}
         transition={{ repeat: Infinity, duration: 65, ease: "linear" }}
-        style={{ position: 'absolute', top: '60%', left: 0, width: '150px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
+        style={{ position: 'absolute', top: '60%', left: 0, width: '80px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
       />
 
       <main style={{ 

@@ -1,11 +1,11 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Rocket, Power, Zap } from 'lucide-react';
 
 export default function HamImpulse({ onComplete }) {
   const [powerPhase, setPowerPhase] = useState(0); // Oscillating between 0 and 100
-  const [direction, setDirection] = useState(1);
+  const directionRef = useRef(1);
   const [isPlaying, setIsPlaying] = useState(true);
   const [result, setResult] = useState(null); // 'perfect', 'good', 'fail'
 
@@ -14,13 +14,13 @@ export default function HamImpulse({ onComplete }) {
     if (isPlaying) {
       interval = setInterval(() => {
         setPowerPhase(prev => {
-          let next = prev + (4 * direction);
+          let next = prev + (4 * directionRef.current);
           if (next >= 100) {
-             setDirection(-1);
+             directionRef.current = -1;
              return 100;
           }
           if (next <= 0) {
-             setDirection(1);
+             directionRef.current = 1;
              return 0;
           }
           return next;
@@ -28,7 +28,7 @@ export default function HamImpulse({ onComplete }) {
       }, 30);
     }
     return () => clearInterval(interval);
-  }, [isPlaying, direction]);
+  }, [isPlaying]);
 
   const handleLaunch = () => {
     if (!isPlaying) return;

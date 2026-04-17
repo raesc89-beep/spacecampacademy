@@ -159,16 +159,21 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
 
           {/* Render del Planeta / Botón */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img 
-            src={imgUrl} 
-            alt={moduleInfo.titleEs} 
-            style={{ 
-              width: '100%', height: '100%', objectFit: 'contain', 
-              filter: planetFilter, opacity: planetOpacity,
-              position: 'relative', zIndex: 2
-            }} 
-            draggable="false"
-          />
+          <div style={{
+            width: '100%', height: '100%', borderRadius: '50%', overflow: 'hidden',
+            boxShadow: `0 0 25px ${isLocked ? 'rgba(255,255,255,0.1)' : moduleInfo.color + 'aa'}`,
+            position: 'relative', zIndex: 2
+          }}>
+            <img 
+              src={imgUrl} 
+              alt={moduleInfo.titleEs} 
+              style={{ 
+                width: '100%', height: '100%', objectFit: 'cover', 
+                filter: planetFilter, opacity: planetOpacity
+              }} 
+              draggable="false"
+            />
+          </div>
 
           {/* Anillos de pulsación (Jugable) */}
           {isPlayable && !hovered && (
