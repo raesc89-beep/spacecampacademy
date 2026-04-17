@@ -150,30 +150,21 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
             <div style={{ position: 'absolute', top: '10%', left: '10%', right: '10%', bottom: '10%', borderRadius: '50%', background: moduleInfo.color, filter: 'blur(20px)', opacity: hovered ? 0.8 : 0.4, transition: 'opacity 0.3s' }}></div>
           )}
 
-          {/* Render del Planeta / Botón Visual */}
+          {/* Render del Planeta / Botón Visual al estilo Sistema Solar sin caja circular */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <div style={{
-            width: '100%', height: '100%', 
-            borderRadius: '50%',
-            overflow: 'hidden',
-            boxShadow: `0 0 25px ${isLocked ? 'rgba(255,255,255,0.1)' : moduleInfo.color + 'aa'}`,
-            position: 'absolute', top: 0, left: 0,
-            zIndex: 2,
-            mixBlendMode: 'normal'
-          }}>
-             <img 
-               src={imgUrl} 
-               alt={moduleInfo.titleEs}
-               style={{ 
-                 width: '100%', 
-                 height: '100%', 
-                 objectFit: 'cover',
-                 filter: planetFilter, 
-                 opacity: planetOpacity
-               }}
-               draggable="false"
-             />
-          </div>
+          <motion.img 
+            src={imgUrl} 
+            alt={moduleInfo.titleEs}
+            style={{ 
+              width: '100%', 
+              height: '100%', 
+              objectFit: 'contain',
+              filter: planetFilter, 
+              opacity: planetOpacity,
+              mixBlendMode: (moduleInfo.id === 'asteroides_cometas' || moduleInfo.id === 'asteroides_apophis') ? 'lighten' : 'multiply'
+            }}
+            draggable="false"
+          />
 
           {/* Anillos de pulsación (Jugable) */}
           {isPlayable && !hovered && (
