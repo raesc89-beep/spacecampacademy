@@ -159,15 +159,22 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
             boxShadow: `0 0 25px ${isLocked ? 'rgba(255,255,255,0.1)' : moduleInfo.color + 'aa'}`,
             position: 'relative', zIndex: 2
           }}>
-            <img 
-              src={imgUrl} 
-              alt={moduleInfo.titleEs} 
-              style={{ 
-                width: '100%', height: '100%', objectFit: 'cover', 
-                filter: planetFilter, opacity: planetOpacity
-              }} 
-              draggable="false"
-            />
+             <img 
+               src={imgUrl} 
+               alt={moduleInfo.titleEs}
+               style={{ 
+                 width: '100%', 
+                 height: '100%', 
+                 objectFit: 'cover',
+                 borderRadius: '50%',
+                 border: `4px solid ${moduleInfo.color}`,
+                 boxShadow: hovered && !isLocked ? `0 0 40px ${moduleInfo.color}, 0 0 15px white` : `0 0 20px ${moduleInfo.color}80`,
+                 background: 'black',
+                 filter: planetFilter, 
+                 opacity: planetOpacity
+               }}
+               draggable="false"
+             />
           </div>
 
           {/* Anillos de pulsación (Jugable) */}

@@ -52,7 +52,13 @@ export default function CourseModule() {
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id.startsWith('animales_');
   const isAsteroide = moduleData.id.startsWith('asteroides_');
-  const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
+  const isSun = moduleData.id === 'sun';
+  const isPlanet = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'].includes(moduleData.id);
+  
+  const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
+                          (isAnomaly ? `${moduleData.id}_icon.png` : 
+                          (isSun ? 'cartoon_sun.png' : 
+                          (isPlanet ? `planet_${moduleData.id.toLowerCase()}.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\\s+/g, '_')}.png`)));
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -182,7 +188,14 @@ export default function CourseModule() {
           
           <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1.5rem', background: `linear-gradient(135deg, rgba(255,255,255,0.05), ${moduleData.color}20)`, backdropFilter: 'blur(20px)' }}>
             <div style={{ width: '180px', height: '180px', borderRadius: '50%', boxShadow: `0 0 40px ${moduleData.color}60`, overflow: 'hidden', border: `4px solid ${moduleData.color}`, background: 'black' }}>
-               <img src={`/assets/${planetImageName}`} alt={moduleData.titleEs} style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'normal' }} onError={(e) => {e.target.style.display='none'}} />
+               <motion.img 
+                 src={`/assets/${planetImageName}`} 
+                 alt={moduleData.titleEs} 
+                 animate={{ rotate: 360 }}
+                 transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
+                 style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'normal' }} 
+                 onError={(e) => {e.target.style.display='none'}} 
+               />
             </div>
             
             <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Misión {moduleData.titleEs}</h2>
