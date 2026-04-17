@@ -30,11 +30,11 @@ export default function AsteroidsHub() {
   const courseOrder = ['asteroides_intro', 'asteroides_meteoros', 'asteroides_cometas', 'asteroides_sondas', 'asteroides_apophis'];
 
   const orbitalData = {
-    asteroides_intro: { left: '15%', top: '40%', size: 'clamp(100px, 12vw, 180px)', img: '/assets/asteroides/hub_intro_vector.png' },
-    asteroides_meteoros: { left: '35%', top: '25%', size: 'clamp(120px, 14vw, 200px)', img: '/assets/asteroides/hub_meteoros_vector.png' },
-    asteroides_cometas: { left: '55%', top: '65%', size: 'clamp(130px, 15vw, 220px)', img: '/assets/asteroides/hub_cometas_vector.png' },
-    asteroides_sondas: { left: '75%', top: '30%', size: 'clamp(140px, 16vw, 240px)', img: '/assets/asteroides/hub_sondas_vector.png' },
-    asteroides_apophis: { left: '85%', top: '70%', size: 'clamp(110px, 14vw, 200px)', img: '/assets/asteroides/hub_apophis_vector.png' }
+    asteroides_intro: { left: '15%', top: '40%', size: 'clamp(100px, 12vw, 180px)', img: '/assets/asteroides/hub_intro.png' },
+    asteroides_meteoros: { left: '35%', top: '25%', size: 'clamp(120px, 14vw, 200px)', img: '/assets/asteroides/hub_meteoros.png' },
+    asteroides_cometas: { left: '55%', top: '65%', size: 'clamp(130px, 15vw, 220px)', img: '/assets/cometas/halley.png' },
+    asteroides_sondas: { left: '75%', top: '30%', size: 'clamp(140px, 16vw, 240px)', img: '/assets/asteroides/hub_sondas.png' },
+    asteroides_apophis: { left: '85%', top: '70%', size: 'clamp(110px, 14vw, 200px)', img: '/assets/asteroides/hub_apophis.png' }
   };
 
   // Determinar Índice de Progreso
