@@ -1,6 +1,5 @@
-'use client';
 import { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Rocket, Power, Zap } from 'lucide-react';
 
 export default function HamImpulse({ onComplete }) {

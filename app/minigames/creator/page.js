@@ -73,7 +73,7 @@ export default function CreatorMinigame() {
   }, [temperature, gravity, magneticField]);
 
   const claimReward = async (amount = 100) => {
-    if (!user || rewardClaimed) return;
+    if (!user || rewardClaimed || (planetState !== 'habitable' && planetState !== 'alien')) return;
     const currentStars = userData?.progress?.stars || 0;
     await setDoc(doc(db, 'users', user.uid), {
       progress: {
@@ -106,7 +106,7 @@ export default function CreatorMinigame() {
           src="/assets/gen_magma.png" 
           animate={{ scale: [1, 1.05, 1] }} 
           transition={{ duration: 4, repeat: Infinity }}
-          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+          style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen' }} 
         />
       );
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
@@ -114,7 +114,7 @@ export default function CreatorMinigame() {
 
     if (planetState === 'desertico') {
       planetElement = (
-        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: 'url(/assets/gen_desertico.jpg) center center / 150px 150px repeat' }}>
+        <div style={{ width: '200%', height: '100%', display: 'flex', animation: 'planetSpin 30s linear infinite', background: 'url(/assets/gen_desertico.jpg) center center / 150px 150px repeat', borderRadius: '50%' }}>
         </div>
       );
       glow = '0 0 40px rgba(200, 100, 50, 0.8)';
@@ -127,7 +127,7 @@ export default function CreatorMinigame() {
           src="/assets/gen_venenoso.png" 
           animate={{ rotate: 360 }} 
           transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+          style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen' }} 
         />
       );
       glow = '0 0 60px rgba(0, 255, 100, 0.8)';
@@ -139,7 +139,7 @@ export default function CreatorMinigame() {
           src="/assets/upload_1.png" 
           animate={{ rotate: 360 }} 
           transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+          style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen' }} 
         />
       );
       glow = '0 0 40px rgba(0, 153, 255, 0.8)';
@@ -151,7 +151,7 @@ export default function CreatorMinigame() {
           src="/assets/upload_2.png" 
           animate={{ rotate: 360 }} 
           transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '150%', height: '150%', objectFit: 'contain', marginLeft: '-25%', marginTop: '-25%' }} 
+          style={{ width: '150%', height: '150%', objectFit: 'contain', marginLeft: '-25%', marginTop: '-25%', mixBlendMode: 'screen' }} 
         />
       );
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
@@ -163,7 +163,7 @@ export default function CreatorMinigame() {
           src="/assets/upload_3.png" 
           animate={{ rotate: 360 }} 
           transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+          style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen' }} 
         />
       );
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
@@ -175,7 +175,7 @@ export default function CreatorMinigame() {
           src="/assets/gen_ice.png" 
           animate={{ rotate: -360 }} 
           transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
-          style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+          style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen' }} 
         />
       );
       glow = '0 0 30px rgba(179, 229, 252, 0.6)';

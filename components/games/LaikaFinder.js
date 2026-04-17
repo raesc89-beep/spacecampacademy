@@ -24,6 +24,20 @@ const CHALLENGES = [
     targetX: 50, 
     targetY: 40, // Face usually upper center
     radius: 40 
+  },
+  {
+    riddle: "4. COLONIA MARCIANA: Décadas después de Laika, la base en Marte es un caos de domos. Hemos transportado una estatua en su honor. Búscala cerca del Rover en el domo inferior izquierdo.",
+    imageUrl: "/assets/mars_human_colony_dome.png", 
+    targetX: 20, 
+    targetY: 80, 
+    radius: 12 
+  },
+  {
+    riddle: "5. RADAR EXÓTICO: La sonda Venera es el pináculo de la ingeniería sobre Venus. Localiza la cápsula de escape de Laika orbitando sigilosamente por la atmósfera dorada densa superior.",
+    imageUrl: "/assets/venera_probe_venus.png", 
+    targetX: 85, 
+    targetY: 15, 
+    radius: 12
   }
 ];
 
