@@ -1,6 +1,5 @@
 
 const Jimp = require('jimp');
-
 async function floodFillTransparent(imgPath) {
   try {
     const image = await Jimp.read(imgPath);
@@ -24,15 +23,14 @@ async function floodFillTransparent(imgPath) {
         
         const dataIdx = i * 4;
         if (isBg(dataIdx)) {
-            data[dataIdx + 3] = 0; // Transparent
+            data[dataIdx + 3] = 0;
             queue.push([x+1, y], [x-1, y], [x, y+1], [x, y-1]);
         }
     }
 
-    // Pass 2: edge smoothing slightly
     for (let i = 0; i < width * height * 4; i += 4) {
       if (data[i+3] > 0 && data[i] < 30 && data[i+1] < 30 && data[i+2] < 30) {
-        data[i+3] = 150; // semi-transparent aliasing
+        data[i+3] = 120; // Anti-aliasing
       }
     }
 
@@ -42,9 +40,8 @@ async function floodFillTransparent(imgPath) {
 }
 
 async function run() {
-  await floodFillTransparent('public/assets/asteroides/clean_intro.png');
-  await floodFillTransparent('public/assets/asteroides/clean_cometas.png');
-  await floodFillTransparent('public/assets/asteroides/clean_apophis.png');
+  await floodFillTransparent('public/assets/animales/nuevo_hub_mamiferos.png');
+  await floodFillTransparent('public/assets/animales/nuevo_hub_gatos.png');
 }
 run();
 
