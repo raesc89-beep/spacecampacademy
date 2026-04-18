@@ -1,7 +1,7 @@
 
 const Jimp = require('jimp');
 
-async function floodFillTransparent(imgPath, isWhite) {
+async function floodFillTransparent(imgPath) {
   try {
     const image = await Jimp.read(imgPath);
     const { width, height, data } = image.bitmap;
@@ -10,7 +10,7 @@ async function floodFillTransparent(imgPath, isWhite) {
     
     const isBg = (idx) => {
         const r = data[idx], g = data[idx+1], b = data[idx+2];
-        return (r < 25 && g < 25 && b < 45); // Todo fondo negro/oscuro
+        return (r < 20 && g < 20 && b < 20); // Pure AI Black
     };
 
     let head = 0;
@@ -24,22 +24,27 @@ async function floodFillTransparent(imgPath, isWhite) {
         
         const dataIdx = i * 4;
         if (isBg(dataIdx)) {
-            data[dataIdx + 3] = 0; // Transparente
+            data[dataIdx + 3] = 0; // Transparent
             queue.push([x+1, y], [x-1, y], [x, y+1], [x, y-1]);
         }
     }
 
+    // Pass 2: edge smoothing slightly
+    for (let i = 0; i < width * height * 4; i += 4) {
+      if (data[i+3] > 0 && data[i] < 30 && data[i+1] < 30 && data[i+2] < 30) {
+        data[i+3] = 150; // semi-transparent aliasing
+      }
+    }
+
     await image.writeAsync(imgPath);
-    console.log('Background flood-filled transparent: ' + imgPath);
+    console.log('Processed newly generated vector: ' + imgPath);
   } catch(e) { console.error('Error in ' + imgPath, e); }
 }
 
-async function processAll() {
-    await floodFillTransparent('public/assets/animales/vector_intro.png', false);
-    await floodFillTransparent('public/assets/animales/vector_mamiferos.png', false);
-    await floodFillTransparent('public/assets/animales/vector_albert_ham.png', false);
-    await floodFillTransparent('public/assets/animales/vector_laika.png', false);
-    await floodFillTransparent('public/assets/animales/vector_gatos.png', false);
+async function run() {
+  await floodFillTransparent('public/assets/asteroides/clean_intro.png');
+  await floodFillTransparent('public/assets/asteroides/clean_cometas.png');
+  await floodFillTransparent('public/assets/asteroides/clean_apophis.png');
 }
-processAll();
+run();
 
