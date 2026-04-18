@@ -32,11 +32,11 @@ export default function AnimalesHub() {
 
   // Coordenadas orgánicas distribuidas 
   const orbitalData = {
-    animales_intro: { left: '20%', top: '50%', size: 'clamp(80px, 9vw, 120px)', img: '/assets/animales/hub_intro.png' },
-    animales_mamiferos: { left: '35%', top: '30%', size: 'clamp(90px, 10vw, 140px)', img: '/assets/animales/monkey_hub.png' },
-    animales_albert_ham: { left: '55%', top: '70%', size: 'clamp(100px, 11vw, 150px)', img: '/assets/animales/monkey_course_1.png' },
-    animales_laika: { left: '75%', top: '25%', size: 'clamp(110px, 12vw, 160px)', img: '/assets/animales/Laika 1.png' },
-    animales_gatos: { left: '90%', top: '60%', size: 'clamp(80px, 9vw, 130px)', img: '/assets/animales/cat_hub.png' }
+    animales_intro: { left: '20%', top: '50%', size: 'clamp(80px, 9vw, 120px)', img: '/assets/animales/vector_intro.png' },
+    animales_mamiferos: { left: '35%', top: '30%', size: 'clamp(90px, 10vw, 140px)', img: '/assets/animales/vector_mamiferos.png' },
+    animales_albert_ham: { left: '55%', top: '70%', size: 'clamp(100px, 11vw, 150px)', img: '/assets/animales/vector_albert_ham.png' },
+    animales_laika: { left: '75%', top: '25%', size: 'clamp(110px, 12vw, 160px)', img: '/assets/animales/vector_laika.png' },
+    animales_gatos: { left: '90%', top: '60%', size: 'clamp(80px, 9vw, 130px)', img: '/assets/animales/vector_gatos.png' }
   };
 
   // Determinar Índice de Progreso

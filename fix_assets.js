@@ -1,29 +1,45 @@
 
 const Jimp = require('jimp');
-async function removeBg(imgPath, isWhite) {
+
+async function floodFillTransparent(imgPath, isWhite) {
   try {
     const image = await Jimp.read(imgPath);
-    image.scan(0, 0, image.bitmap.width, image.bitmap.height, function (x, y, idx) {
-      const red = this.bitmap.data[idx + 0];
-      const green = this.bitmap.data[idx + 1];
-      const blue = this.bitmap.data[idx + 2];
-      if (isWhite && red > 230 && green > 230 && blue > 230) {
-        this.bitmap.data[idx + 3] = 0; // Transparentar blanco puro
-      } else if (!isWhite && red < 20 && green < 20 && blue < 20) {
-        this.bitmap.data[idx + 3] = 0; // Transparentar negro puro
-      }
-    });
+    const { width, height, data } = image.bitmap;
+    const visited = new Uint8Array(width * height);
+    const queue = [[0, 0], [width-1, 0], [0, height-1], [width-1, height-1]]; 
+    
+    const isBg = (idx) => {
+        const r = data[idx], g = data[idx+1], b = data[idx+2];
+        return (r < 25 && g < 25 && b < 45); // Todo fondo negro/oscuro
+    };
+
+    let head = 0;
+    while(head < queue.length) {
+        const [x, y] = queue[head++];
+        if (x<0 || x>=width || y<0 || y>=height) continue;
+        
+        const i = (y * width + x);
+        if (visited[i]) continue;
+        visited[i] = 1;
+        
+        const dataIdx = i * 4;
+        if (isBg(dataIdx)) {
+            data[dataIdx + 3] = 0; // Transparente
+            queue.push([x+1, y], [x-1, y], [x, y+1], [x, y-1]);
+        }
+    }
+
     await image.writeAsync(imgPath);
-    console.log('Procesado: ' + imgPath);
+    console.log('Background flood-filled transparent: ' + imgPath);
   } catch(e) { console.error('Error in ' + imgPath, e); }
 }
 
 async function processAll() {
-    await removeBg('public/assets/asteroides/hub_intro_vector.png', true);
-    await removeBg('public/assets/asteroides/hub_meteoros_vector.png', true);
-    await removeBg('public/assets/asteroides/hub_sondas_vector.png', true);
-    await removeBg('public/assets/asteroides/hub_cometas_vector.png', false);
-    await removeBg('public/assets/asteroides/hub_apophis_vector.png', false);
+    await floodFillTransparent('public/assets/animales/vector_intro.png', false);
+    await floodFillTransparent('public/assets/animales/vector_mamiferos.png', false);
+    await floodFillTransparent('public/assets/animales/vector_albert_ham.png', false);
+    await floodFillTransparent('public/assets/animales/vector_laika.png', false);
+    await floodFillTransparent('public/assets/animales/vector_gatos.png', false);
 }
 processAll();
 
