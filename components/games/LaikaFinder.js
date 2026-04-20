@@ -5,39 +5,39 @@ import { Search, CheckCircle, AlertCircle } from 'lucide-react';
 
 const CHALLENGES = [
   {
-    riddle: "1. IGNICIÓN: El poderoso R-7 vuela hacia las estrellas despidiendo fuego. Localiza el ardiente motor del cohete.",
+    riddle: "1. IGNICIÓN: El poderoso R-7 vuela hacia las estrellas despidiendo fuego, pero hay un problema. Un diminuto tubo de presurización tiene una fuga de vapor frío en la aleta más baja del extremo derecho del cohete. Señálalo.",
     imageUrl: "/assets/animales/laika_challenge_1.png", 
-    targetX: 50, 
-    targetY: 70, // Exhaust is usually at the bottom
-    radius: 40 
+    targetX: 83, 
+    targetY: 92, 
+    radius: 6 
   },
   {
-    riddle: "2. ÓRBITA SOLITARIA: Laika orbita silenciosamente dentro de la fría cápsula metálica. ¿Dónde se encuentra el Sputnik sobre el horizonte?",
+    riddle: "2. ÓRBITA SOLITARIA: La oscura inmensidad rodea el satélite, pero los sensores ópticos han identificado el brillo de una galaxia con forma espiral minúscula escondida en la esquina superior izquierda del cosmos.",
     imageUrl: "/assets/animales/laika_challenge_2.png", 
-    targetX: 50, 
-    targetY: 40, // Capsule usually central/upper
-    radius: 40 
+    targetX: 10, 
+    targetY: 10, 
+    radius: 6 
   },
   {
-    riddle: "3. EL LEGADO ETERNO: En bronce heroico, su memoria vive. Señala el rostro de la valiente Laika en el monumento.",
+    riddle: "3. EL LEGADO ETERNO: Más allá del rostro de bronce, el tiempo ha marcado un desperfecto arquitectónico. Localiza la pequeña grieta esculpida en la base del pilar inferior izquierdo del monumento.",
     imageUrl: "/assets/animales/laika_challenge_3.png", 
-    targetX: 50, 
-    targetY: 40, // Face usually upper center
-    radius: 40 
+    targetX: 25, 
+    targetY: 88, 
+    radius: 6 
   },
   {
-    riddle: "4. COLONIA MARCIANA: Décadas después de Laika, la base en Marte es un caos de domos. Hemos transportado una estatua en su honor. Búscala cerca del Rover en el domo inferior izquierdo.",
+    riddle: "4. COLONIA MARCIANA: Entre la magnitud de las biosferas naranjas, busca al Ingeniero Principal solitario que repara un fallo termoeléctrico en el techo del domo lejano de la extrema derecha.",
     imageUrl: "/assets/mars_human_colony_dome.png", 
-    targetX: 20, 
-    targetY: 80, 
-    radius: 12 
+    targetX: 92, 
+    targetY: 83, 
+    radius: 5 
   },
   {
-    riddle: "5. RADAR EXÓTICO: La sonda Venera es el pináculo de la ingeniería sobre Venus. Localiza la cápsula de escape de Laika orbitando sigilosamente por la atmósfera dorada densa superior.",
+    riddle: "5. RADAR EXÓTICO: La cápsula Venera escanea la infernal superficie. Detecta el pequeño cráter humeante que se esconde cerca del destello de azufre en el borde hiper-derecho.",
     imageUrl: "/assets/venera_probe_venus.png", 
-    targetX: 85, 
-    targetY: 15, 
-    radius: 12
+    targetX: 88, 
+    targetY: 92, 
+    radius: 5
   }
 ];
 
