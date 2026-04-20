@@ -30,11 +30,36 @@ export default function CourseModule() {
   useEffect(() => {
     async function fetchModule() {
       try {
+        // 1. Try Firestore first (CMS-edited version)
+        const firestoreDoc = await getDoc(doc(db, 'course_modules', params.moduleId));
+        
+        if (firestoreDoc.exists()) {
+          // Found a CMS-edited version — merge with static data for quiz/color/etc
+          const firestoreData = firestoreDoc.data();
+          const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
+          if (staticMod) {
+            setModuleData({
+              ...staticMod,
+              contentEs: {
+                ...staticMod.contentEs,
+                sections: firestoreData.sections || staticMod.contentEs?.sections || [],
+              }
+            });
+          } else {
+            router.push('/dashboard');
+          }
+        } else {
+          // 2. Fallback: use static courseData.js
+          const mod = COURSE_DATA.find(c => c.id === params.moduleId);
+          if (mod) setModuleData(mod);
+          else router.push('/dashboard');
+        }
+      } catch (err) {
+        console.error('Error loading module:', err);
+        // On any error, fallback to static data
         const mod = COURSE_DATA.find(c => c.id === params.moduleId);
         if (mod) setModuleData(mod);
         else router.push('/dashboard');
-      } catch (err) {
-        console.error(err);
       }
       setDataLoading(false);
     }
