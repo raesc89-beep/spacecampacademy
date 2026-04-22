@@ -28,23 +28,23 @@ const DASHBOARD_MISSIONS = [
     link: "/hub/animales",
     bgSrc: "/assets/animales/Portada%20curso.png",
     badgeColor: "var(--gold-star)",
-    badgeText: "Vuelo BiolÃ³gico",
+    badgeText: "Vuelo Biológico",
     borderColor: "rgba(255, 184, 0, 0.4)"
   },
   {
     id: "stellar-objects",
-    title: "AnomalÃ­as CÃ³smicas",
-    subtitle: "Agujeros negros, CuÃ¡sares y PÃºlsares.",
+    title: "Anomalías Cósmicas",
+    subtitle: "Agujeros negros, Cuásares y Púlsares.",
     link: "/hub/stellar-objects",
     bgSrc: "/assets/black_hole_icon.png",
     badgeColor: "var(--electric-blue)",
-    badgeText: "AstrofÃ­sica",
+    badgeText: "Astrofísica",
     borderColor: "rgba(0, 228, 255, 0.4)"
   },
   {
     id: "decoder",
-    title: "InterceptaciÃ³n Estelar",
-    subtitle: "Decodifica frecuencias alienÃ­genas para ganar logros.",
+    title: "Interceptación Estelar",
+    subtitle: "Decodifica frecuencias alienígenas para ganar logros.",
     link: "/minigames/decoder",
     bgImage: "radial-gradient(circle at center, #0a192f 0%, #020308 100%)",
     badgeColor: "var(--success)",
@@ -65,8 +65,8 @@ const DASHBOARD_MISSIONS = [
   },
   {
     id: "creator",
-    title: "GÃ©nesis Planetario",
-    subtitle: "Simulador experimental fÃ­sico. Construye una exoplaneta.",
+    title: "Génesis Planetario",
+    subtitle: "Simulador experimental físico. Construye una exoplaneta.",
     link: "/minigames/creator",
     bgImage: "radial-gradient(circle at center, rgba(255, 87, 34, 0.1) 0%, #020308 100%)",
     badgeColor: "#ff5722",
@@ -88,18 +88,18 @@ export default function CourseHub() {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando acceso al Hub...</div>;
   }
 
-  // Muro Administrativo de AutorizaciÃ³n (Fase 3.6)
+  // Muro Administrativo de Autorización (Fase 3.6)
   if (false && userData.role !== "admin" && !userData.isApproved) { // Bypass Muro Restringido
     return (
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', background: 'radial-gradient(circle at center, #1a0b2e 0%, #000000 100%)' }}>
         <div style={{ background: 'rgba(255,255,255,0.05)', padding: '3rem', borderRadius: '24px', border: '1px solid rgba(255,51,102,0.3)', maxWidth: '500px' }}>
            <h1 style={{ color: 'var(--danger)', fontSize: '2.5rem', marginBottom: '1rem' }}>Sector Restringido</h1>
            <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', marginBottom: '2rem' }}>
-             Tu identidad estÃ¡ siendo verificada por el <strong>Comandante en Jefe (Administrador)</strong>. <br/><br/>
-             Por protocolos intergalÃ¡cticos de seguridad, espera a que tu solicitud sea aprobada antes de ingresar a la EstaciÃ³n Central.
+             Tu identidad está siendo verificada por el <strong>Comandante en Jefe (Administrador)</strong>. <br/><br/>
+             Por protocolos intergalácticos de seguridad, espera a que tu solicitud sea aprobada antes de ingresar a la Estación Central.
            </p>
            <button onClick={() => { auth.signOut(); window.location.reload(); }} className="btn-secondary">
-             Cerrar SesiÃ³n
+             Cerrar Sesión
            </button>
         </div>
       </div>
@@ -117,8 +117,8 @@ export default function CourseHub() {
         {/* Welcome Section */}
         <section style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
           <div>
-            <h1 style={{ fontSize: '3rem', margin: 0, textShadow: '0 0 20px rgba(0, 228, 255, 0.3)' }}>CatÃ¡logo de Misiones</h1>
-            <p className="lead" style={{ margin: '0.5rem 0', color: 'var(--text-muted)' }}>Hola, Comandante {userData.name}. Escoge tu prÃ³ximo destino.</p>
+            <h1 style={{ fontSize: '3rem', margin: 0, textShadow: '0 0 20px rgba(0, 228, 255, 0.3)' }}>Catálogo de Misiones</h1>
+            <p className="lead" style={{ margin: '0.5rem 0', color: 'var(--text-muted)' }}>Hola, Comandante {userData.name}. Escoge tu próximo destino.</p>
           </div>
           <div className="glass-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem', minWidth: '200px', border: '1px solid rgba(255,215,0,0.3)' }}>
             <div style={{ background: 'rgba(255, 215, 0, 0.2)', padding: '1rem', borderRadius: '50%', boxShadow: '0 0 20px rgba(255, 215, 0, 0.4)' }}>
@@ -153,7 +153,7 @@ export default function CourseHub() {
         {/* Dynamic Coming Soon / Hub Catalog */}
         <section>
           <h2 style={{ fontSize: '2rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            ExploraciÃ³n y Simuladores <span style={{ fontSize: '1rem', background: 'rgba(255,255,255,0.1)', padding: '0.3rem 0.8rem', borderRadius: '12px' }}>Actualizado</span>
+            Exploración y Simuladores <span style={{ fontSize: '1rem', background: 'rgba(255,255,255,0.1)', padding: '0.3rem 0.8rem', borderRadius: '12px' }}>Actualizado</span>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             

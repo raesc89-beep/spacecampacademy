@@ -9,9 +9,7 @@ export default function Home() {
       {/* Navbar Simple */}
       <nav style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(10px)', position: 'sticky', top: 0, zIndex: 100 }}>
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, fontFamily: 'var(--font-quantico)', color: 'white' }}>
-          <span style={{ fontSize: '1.8rem' }}>🚀</span> 
-          <AnimatedMainLogo size={40} />
-          Space Camp Academy
+          <AnimatedMainLogo size={50} />
         </h2>
         <div style={{ display: 'flex', gap: '1rem' }}>
           <Link href="/auth" className="btn-secondary" style={{ padding: '0.6rem 1.2rem' }}>Login</Link>

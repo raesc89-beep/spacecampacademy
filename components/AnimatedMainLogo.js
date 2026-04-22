@@ -9,23 +9,17 @@ export default function AnimatedMainLogo({ size = 40 }) {
       whileHover={{ scale: 1.1, rotate: 180 }}
       transition={{ type: 'spring', stiffness: 200, damping: 10 }}
       style={{
-        width: `${size}px`,
         height: `${size}px`,
-        borderRadius: '50%',
-        background: 'white',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        overflow: 'hidden',
-        boxShadow: '0 0 15px rgba(0, 228, 255, 0.4)'
+        filter: 'drop-shadow(0 0 15px rgba(0, 228, 255, 0.4))'
       }}
     >
       <motion.img 
         src="/assets/main_logo.png" 
-        alt="Space Camp Academy Logo" 
-        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-        animate={{ rotate: 360 }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        alt="AMDE Logo" 
+        style={{ width: 'auto', height: '100%', objectFit: 'contain' }}
       />
     </motion.div>
   );
