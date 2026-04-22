@@ -123,17 +123,6 @@ export default function SolarSystemMap() {
               );
            })}
 
-           {/* El Nuevo Exoplaneta Arcade / Minijuegos */}
-           <IsolatedPlanetNode 
-              key="arcade"
-              moduleInfo={{ id: 'arcade', titleEs: 'Recreativos (Arcade)', color: '#FF00FF' }} 
-              idx={100}
-              coords={{ left: '60%', top: '80%', size: 'clamp(60px, 7vw, 100px)' }} 
-              isCompleted={false} 
-              isPlayable={true}
-              isLocked={false}
-              customHref="/hub/arcade"
-           />
 
         </div>
 

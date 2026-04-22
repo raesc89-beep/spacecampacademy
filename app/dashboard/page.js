@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useAuth } from '@/hooks/useAuth';
 import { doc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
@@ -28,23 +28,23 @@ const DASHBOARD_MISSIONS = [
     link: "/hub/animales",
     bgSrc: "/assets/animales/Portada%20curso.png",
     badgeColor: "var(--gold-star)",
-    badgeText: "Vuelo Biológico",
+    badgeText: "Vuelo BiolÃ³gico",
     borderColor: "rgba(255, 184, 0, 0.4)"
   },
   {
     id: "stellar-objects",
-    title: "Anomalías Cósmicas",
-    subtitle: "Agujeros negros, Cuásares y Púlsares.",
+    title: "AnomalÃ­as CÃ³smicas",
+    subtitle: "Agujeros negros, CuÃ¡sares y PÃºlsares.",
     link: "/hub/stellar-objects",
     bgSrc: "/assets/black_hole_icon.png",
     badgeColor: "var(--electric-blue)",
-    badgeText: "Astrofísica",
+    badgeText: "AstrofÃ­sica",
     borderColor: "rgba(0, 228, 255, 0.4)"
   },
   {
     id: "decoder",
-    title: "Interceptación Estelar",
-    subtitle: "Decodifica frecuencias alienígenas para ganar logros.",
+    title: "InterceptaciÃ³n Estelar",
+    subtitle: "Decodifica frecuencias alienÃ­genas para ganar logros.",
     link: "/minigames/decoder",
     bgImage: "radial-gradient(circle at center, #0a192f 0%, #020308 100%)",
     badgeColor: "var(--success)",
@@ -53,9 +53,20 @@ const DASHBOARD_MISSIONS = [
     isMinigame: true
   },
   {
+    id: "arcade",
+    title: "Zona Arcade",
+    subtitle: "8 minijuegos espaciales: memoria, trivia, bingo, Laika Finder y más.",
+    link: "/hub/arcade",
+    bgImage: "radial-gradient(circle at 30% 60%, rgba(255,0,255,0.15), rgba(0,0,0,1))",
+    badgeColor: "#FF00FF",
+    badgeText: "Minijuegos",
+    borderColor: "rgba(255,0,255,0.4)",
+    isMinigame: true
+  },
+  {
     id: "creator",
-    title: "Génesis Planetario",
-    subtitle: "Simulador experimental físico. Construye una exoplaneta.",
+    title: "GÃ©nesis Planetario",
+    subtitle: "Simulador experimental fÃ­sico. Construye una exoplaneta.",
     link: "/minigames/creator",
     bgImage: "radial-gradient(circle at center, rgba(255, 87, 34, 0.1) 0%, #020308 100%)",
     badgeColor: "#ff5722",
@@ -77,18 +88,18 @@ export default function CourseHub() {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando acceso al Hub...</div>;
   }
 
-  // Muro Administrativo de Autorización (Fase 3.6)
+  // Muro Administrativo de AutorizaciÃ³n (Fase 3.6)
   if (false && userData.role !== "admin" && !userData.isApproved) { // Bypass Muro Restringido
     return (
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', background: 'radial-gradient(circle at center, #1a0b2e 0%, #000000 100%)' }}>
         <div style={{ background: 'rgba(255,255,255,0.05)', padding: '3rem', borderRadius: '24px', border: '1px solid rgba(255,51,102,0.3)', maxWidth: '500px' }}>
            <h1 style={{ color: 'var(--danger)', fontSize: '2.5rem', marginBottom: '1rem' }}>Sector Restringido</h1>
            <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', marginBottom: '2rem' }}>
-             Tu identidad está siendo verificada por el <strong>Comandante en Jefe (Administrador)</strong>. <br/><br/>
-             Por protocolos intergalácticos de seguridad, espera a que tu solicitud sea aprobada antes de ingresar a la Estación Central.
+             Tu identidad estÃ¡ siendo verificada por el <strong>Comandante en Jefe (Administrador)</strong>. <br/><br/>
+             Por protocolos intergalÃ¡cticos de seguridad, espera a que tu solicitud sea aprobada antes de ingresar a la EstaciÃ³n Central.
            </p>
            <button onClick={() => { auth.signOut(); window.location.reload(); }} className="btn-secondary">
-             Cerrar Sesión
+             Cerrar SesiÃ³n
            </button>
         </div>
       </div>
@@ -106,8 +117,8 @@ export default function CourseHub() {
         {/* Welcome Section */}
         <section style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
           <div>
-            <h1 style={{ fontSize: '3rem', margin: 0, textShadow: '0 0 20px rgba(0, 228, 255, 0.3)' }}>Catálogo de Misiones</h1>
-            <p className="lead" style={{ margin: '0.5rem 0', color: 'var(--text-muted)' }}>Hola, Comandante {userData.name}. Escoge tu próximo destino.</p>
+            <h1 style={{ fontSize: '3rem', margin: 0, textShadow: '0 0 20px rgba(0, 228, 255, 0.3)' }}>CatÃ¡logo de Misiones</h1>
+            <p className="lead" style={{ margin: '0.5rem 0', color: 'var(--text-muted)' }}>Hola, Comandante {userData.name}. Escoge tu prÃ³ximo destino.</p>
           </div>
           <div className="glass-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem', minWidth: '200px', border: '1px solid rgba(255,215,0,0.3)' }}>
             <div style={{ background: 'rgba(255, 215, 0, 0.2)', padding: '1rem', borderRadius: '50%', boxShadow: '0 0 20px rgba(255, 215, 0, 0.4)' }}>
@@ -129,8 +140,8 @@ export default function CourseHub() {
              <p style={{ color: 'var(--electric-blue)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                <Rocket size={18} /> Curso Principal Activo
              </p>
-             <h2 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.1 }}>Misión: Sistema Solar</h2>
-             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: '1rem 0 2rem 0' }}>Conquista los 9 planetas, descubre sus misterios bi-lingües y recolecta las medallas orbitales completando minijuegos de simulación.</p>
+             <h2 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.1 }}>MisiÃ³n: Sistema Solar</h2>
+             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: '1rem 0 2rem 0' }}>Conquista los 9 planetas, descubre sus misterios bi-lingÃ¼es y recolecta las medallas orbitales completando minijuegos de simulaciÃ³n.</p>
              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                <Link href="/hub/solar-system" className="btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.3rem', display: 'inline-flex', alignItems: 'center', gap: '1rem', background: 'var(--electric-blue)', color: 'black', boxShadow: '0 0 30px rgba(0, 228, 255, 0.4)' }}>
                  <PlayCircle size={28} /> DESPEGAR AL MAPA
@@ -142,7 +153,7 @@ export default function CourseHub() {
         {/* Dynamic Coming Soon / Hub Catalog */}
         <section>
           <h2 style={{ fontSize: '2rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            Exploración y Simuladores <span style={{ fontSize: '1rem', background: 'rgba(255,255,255,0.1)', padding: '0.3rem 0.8rem', borderRadius: '12px' }}>Actualizado</span>
+            ExploraciÃ³n y Simuladores <span style={{ fontSize: '1rem', background: 'rgba(255,255,255,0.1)', padding: '0.3rem 0.8rem', borderRadius: '12px' }}>Actualizado</span>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             
@@ -168,7 +179,7 @@ export default function CourseHub() {
                      {mission.isMinigame && (
                        <div style={{ marginTop: '1.5rem' }}>
                           <div className={mission.id === 'creator' ? "btn-primary" : "btn-secondary"} style={{ padding: '0.8rem 1.5rem', display: 'inline-block', borderColor: mission.badgeColor, color: mission.badgeColor, background: 'transparent' }}>
-                            {mission.id === 'creator' ? 'INICIAR MÁQUINA' : 'JUGAR AHORA'}
+                            {mission.id === 'creator' ? 'INICIAR MÃQUINA' : 'JUGAR AHORA'}
                           </div>
                        </div>
                      )}
@@ -184,3 +195,4 @@ export default function CourseHub() {
     </div>
   );
 }
+
