@@ -24,7 +24,7 @@ export default function HubDecorations() {
         }}
       >
          <img 
-            src="/assets/main_logo.png" 
+            src="/assets/amde_logo.png"
             alt="Space Camp Logo"
             style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'normal' }} 
          />

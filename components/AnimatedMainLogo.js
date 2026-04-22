@@ -17,7 +17,7 @@ export default function AnimatedMainLogo({ size = 40 }) {
       }}
     >
       <motion.img 
-        src="/assets/main_logo.png" 
+        src="/assets/amde_logo.png" 
         alt="AMDE Logo" 
         style={{ width: 'auto', height: '100%', objectFit: 'contain' }}
       />

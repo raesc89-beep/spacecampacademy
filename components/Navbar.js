@@ -31,7 +31,7 @@ export default function Navbar() {
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
         <Link href="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', textDecoration: 'none', color: 'white' }}>
-          <img src="/assets/main_logo.png" alt="AMDE Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain', background: 'transparent' }} />
+          <img src="/assets/amde_logo.png" alt="AMDE Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain', background: 'transparent' }} />
         </Link>
         <div style={{ display: 'flex', gap: '1.5rem', marginLeft: '2rem' }}>
            <Link href="/dashboard" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
