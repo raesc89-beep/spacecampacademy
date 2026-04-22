@@ -35,9 +35,6 @@ export default function Home() {
             <Link href="/auth?m=register" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <UserPlus size={24} /> Comenzar Misión
             </Link>
-            <Link href="/parent/auth" className="btn-secondary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-              <Star size={24} /> Portal para Padres
-            </Link>
           </div>
         </header>
 
