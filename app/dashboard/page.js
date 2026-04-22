@@ -140,8 +140,8 @@ export default function CourseHub() {
              <p style={{ color: 'var(--electric-blue)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                <Rocket size={18} /> Curso Principal Activo
              </p>
-             <h2 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.1 }}>MisiÃ³n: Sistema Solar</h2>
-             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: '1rem 0 2rem 0' }}>Conquista los 9 planetas, descubre sus misterios bi-lingÃ¼es y recolecta las medallas orbitales completando minijuegos de simulaciÃ³n.</p>
+             <h2 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.1 }}>Misión: Sistema Solar</h2>
+             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: '1rem 0 2rem 0' }}>Conquista los 9 planetas, descubre sus misterios bilingües y recolecta las medallas orbitales completando minijuegos de simulación.</p>
              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                <Link href="/hub/solar-system" className="btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.3rem', display: 'inline-flex', alignItems: 'center', gap: '1rem', background: 'var(--electric-blue)', color: 'black', boxShadow: '0 0 30px rgba(0, 228, 255, 0.4)' }}>
                  <PlayCircle size={28} /> DESPEGAR AL MAPA
