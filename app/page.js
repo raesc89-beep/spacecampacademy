@@ -5,7 +5,19 @@ import AnimatedMainLogo from '@/components/AnimatedMainLogo';
 export default function Home() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.25, backgroundImage: 'url("/assets/galaxy_bg.gif")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', mixBlendMode: 'screen' }} />
+      <div style={{ 
+        position: 'fixed', top: '-10%', left: '-10%', width: '120%', height: '120%', zIndex: -1, 
+        opacity: 0.35, 
+        backgroundImage: 'url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2000&auto=format&fit=crop")', 
+        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', mixBlendMode: 'screen',
+        animation: 'slowDrift 60s linear infinite alternate'
+      }} />
+      <style>{`
+        @keyframes slowDrift {
+          0% { transform: scale(1) translate(0, 0); }
+          100% { transform: scale(1.1) translate(-2%, -2%); }
+        }
+      `}</style>
       {/* Navbar Simple */}
       <nav style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(10px)', position: 'sticky', top: 0, zIndex: 100 }}>
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, fontFamily: 'var(--font-quantico)', color: 'white' }}>
