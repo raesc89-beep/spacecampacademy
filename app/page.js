@@ -5,16 +5,12 @@ import AnimatedMainLogo from '@/components/AnimatedMainLogo';
 export default function Home() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.15, backgroundImage: 'url("https://media.giphy.com/media/aBovEwP522Uww/giphy.gif")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', mixBlendMode: 'screen' }} />
       {/* Navbar Simple */}
       <nav style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(10px)', position: 'sticky', top: 0, zIndex: 100 }}>
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, fontFamily: 'var(--font-quantico)', color: 'white' }}>
           <AnimatedMainLogo size={50} />
         </h2>
-        <div style={{ display: 'flex', gap: '1rem' }}>
-          <Link href="/auth" className="btn-secondary" style={{ padding: '0.6rem 1.2rem' }}>Login</Link>
-          <Link href="/auth?m=register" className="btn-primary" style={{ padding: '0.6rem 1.2rem' }}>Registrarse</Link>
-        </div>
       </nav>
 
       {/* Hero Section */}
@@ -34,6 +30,9 @@ export default function Home() {
           <div style={{ display: 'flex', gap: '1.5rem', marginTop: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Link href="/auth?m=register" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <UserPlus size={24} /> Comenzar Misión
+            </Link>
+            <Link href="/auth" className="btn-secondary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+              Log in
             </Link>
           </div>
         </header>
@@ -61,10 +60,8 @@ export default function Home() {
         {/* Partners / Logos Section */}
         <section style={{ textAlign: 'center', width: '100%' }}>
           <h3 style={{ color: 'var(--text-muted)', marginBottom: '2rem', textTransform: 'uppercase', letterSpacing: '3px', fontSize: '0.9rem' }}>Con el respaldo y colaboración de</h3>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <img src="/assets/custom_1.jpg" alt="Partner 1" style={{ height: '80px', objectFit: 'contain', borderRadius: '12px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.1))' }} />
-            <img src="/assets/custom_2.jpg" alt="Partner 2" style={{ height: '80px', objectFit: 'contain', borderRadius: '12px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.1))' }} />
-            <img src="/assets/custom_4.jpg" alt="Partner 4" style={{ height: '80px', objectFit: 'contain', borderRadius: '12px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.1))' }} />
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap', alignItems: 'center', filter: 'drop-shadow(0 0 15px rgba(255,255,255,0.2))' }}>
+            <AnimatedMainLogo size={120} />
           </div>
         </section>
 
