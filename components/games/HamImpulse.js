@@ -92,7 +92,7 @@ export default function HamImpulse({ onComplete }) {
            transition={{ type: 'spring', stiffness: 50 }}
            style={{ zIndex: 10, position: 'relative' }}
          >
-           <img src="/assets/animales/ham_ship_vector.png" alt="Ham Ship" style={{ width: '120px', height: 'auto' }} />
+           <img src="/assets/animales/ham_ship_3d.png" alt="Ham Ship" style={{ width: '120px', height: 'auto' }} />
            {successCount > 0 && (
              <motion.div 
                initial={{ opacity: 0 }} animate={{ opacity: 1 }}

@@ -24,6 +24,7 @@ export default function EditorMoodle() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [status, setStatus] = useState({ msg: '', type: '' });
+  const [uploadingId, setUploadingId] = useState(null);
 
   const showStatus = (msg, type = 'info') => {
     setStatus({ msg, type });
@@ -106,6 +107,30 @@ export default function EditorMoodle() {
 
   const updateSection = (id, field, value) => {
     setSections(sections.map(s => s.id === id ? { ...s, [field]: value } : s));
+  };
+
+  const handleFileUpload = async (file, secId, field) => {
+    if (!file) return;
+    setUploadingId(secId + field);
+    const formData = new FormData();
+    formData.append('file', file);
+    
+    try {
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        updateSection(secId, field, data.url);
+        showStatus('Archivo subido exitosamente', 'success');
+      } else {
+        showStatus('Error al subir: ' + data.error, 'error');
+      }
+    } catch (e) {
+      showStatus('Error de red al subir', 'error');
+    }
+    setUploadingId(null);
   };
 
   // UI Styles
@@ -206,8 +231,21 @@ export default function EditorMoodle() {
                               <ImageIcon size={14}/> Media Visual
                             </div>
                             
-                            <input type="text" value={sec.image} onChange={e => updateSection(sec.id, 'image', e.target.value)}
-                              placeholder="/assets/imagen.png" style={{ ...inlineInput, fontSize: '0.85rem' }} />
+                            <div 
+                              onDragOver={e => { e.preventDefault(); e.stopPropagation(); }}
+                              onDrop={e => {
+                                e.preventDefault(); e.stopPropagation();
+                                const file = e.dataTransfer.files[0];
+                                if (file) handleFileUpload(file, sec.id, 'image');
+                              }}
+                              style={{ border: '1px dashed rgba(0,255,136,0.3)', padding: '0.5rem', borderRadius: '8px', background: 'rgba(0,255,136,0.05)', display: 'flex', flexDirection: 'column', gap: '0.5rem', position: 'relative' }}
+                            >
+                               <input type="text" value={sec.image} onChange={e => updateSection(sec.id, 'image', e.target.value)}
+                                 placeholder="/assets/imagen.png" style={{ ...inlineInput, fontSize: '0.85rem' }} />
+                               <span style={{ fontSize: '0.75rem', color: 'rgba(0,255,136,0.6)', textAlign: 'center' }}>
+                                 {uploadingId === sec.id + 'image' ? 'Subiendo...' : 'O arrastra un archivo aquí'}
+                               </span>
+                            </div>
                               
                             {sec.image && (
                               <div style={{ width: '100%', height: '120px', background: '#000', borderRadius: '6px', overflow: 'hidden' }}>
@@ -219,8 +257,22 @@ export default function EditorMoodle() {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.8rem', textTransform: 'uppercase', marginTop: '0.5rem' }}>
                               <Video size={14}/> Video (Opcional)
                             </div>
-                            <input type="text" value={sec.video} onChange={e => updateSection(sec.id, 'video', e.target.value)}
-                              placeholder="URL del video mp4" style={{ ...inlineInput, fontSize: '0.85rem' }} />
+                            
+                            <div 
+                              onDragOver={e => { e.preventDefault(); e.stopPropagation(); }}
+                              onDrop={e => {
+                                e.preventDefault(); e.stopPropagation();
+                                const file = e.dataTransfer.files[0];
+                                if (file) handleFileUpload(file, sec.id, 'video');
+                              }}
+                              style={{ border: '1px dashed rgba(0,255,136,0.3)', padding: '0.5rem', borderRadius: '8px', background: 'rgba(0,255,136,0.05)', display: 'flex', flexDirection: 'column', gap: '0.5rem', position: 'relative' }}
+                            >
+                               <input type="text" value={sec.video} onChange={e => updateSection(sec.id, 'video', e.target.value)}
+                                 placeholder="URL del video mp4" style={{ ...inlineInput, fontSize: '0.85rem' }} />
+                               <span style={{ fontSize: '0.75rem', color: 'rgba(0,255,136,0.6)', textAlign: 'center' }}>
+                                 {uploadingId === sec.id + 'video' ? 'Subiendo...' : 'O arrastra un video aquí'}
+                               </span>
+                            </div>
                          </div>
                       </div>
 

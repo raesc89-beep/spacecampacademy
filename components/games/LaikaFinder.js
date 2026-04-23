@@ -99,7 +99,7 @@ export default function LaikaFinder({ onComplete }) {
         </motion.div>
       )}
 
-      <div style={{ position: 'relative', width: '100%', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.2)', cursor: gameOver ? 'default' : 'crosshair', minHeight: '300px', background: '#000' }}>
+      <div style={{ position: 'relative', width: '100%', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.2)', cursor: gameOver ? 'default' : 'crosshair', background: '#000', lineHeight: 0 }}>
          <img 
            src={CHALLENGE.imageUrl} 
            draggable="false"
