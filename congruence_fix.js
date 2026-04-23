@@ -106,9 +106,9 @@ function getWikiKeyword(moduleTitle, sectionTitle) {
 }
 
 // Function to get image from Wikipedia API
-async function getWikiImage(title) {
+async function getWikiImage(keyword) {
   try {
-    const res = await fetch('https://en.wikipedia.org/w/api.php?action=query&titles=' + encodeURIComponent(title) + '&prop=pageimages&format=json&pithumbsize=1000', {
+    const res = await fetch('https://en.wikipedia.org/w/api.php?action=query&titles=' + encodeURIComponent(keyword) + '&prop=pageimages&format=json&pithumbsize=1000', {
       headers: { 'User-Agent': 'SpaceCampBot/1.0 (raesc89@gmail.com)' }
     });
     if (!res.ok) return null;
@@ -116,28 +116,26 @@ async function getWikiImage(title) {
     if (data.query && data.query.pages) {
       const pageId = Object.keys(data.query.pages)[0];
       if (data.query.pages[pageId].thumbnail) {
-        return data.query.pages[pageId].thumbnail.source;
+        let src = data.query.pages[pageId].thumbnail.source;
+        if (src.includes('.svg') || src.includes('.webm') || src.includes('.ogv')) return null;
+        return src;
       }
     }
   } catch (e) {
-    // Ignore errors
   }
   return null;
 }
 
-// Fallback search just in case
-async function searchWikiImage(query) {
+async function getMultipleWikiImages(keyword) {
   try {
-     const searchRes = await fetch('https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=' + encodeURIComponent(query) + '&format=json', {
-       headers: { 'User-Agent': 'SpaceCampBot/1.0 (raesc89@gmail.com)' }
-     });
-     if (!searchRes.ok) return null;
-     const searchData = await searchRes.json();
-     if (searchData.query && searchData.query.search.length > 0) {
-        return await getWikiImage(searchData.query.search[0].title);
-     }
-  } catch(e) {}
-  return null;
+    const url = 'https://en.wikipedia.org/w/api.php?action=query&prop=pageimages&generator=images&gimlimit=50&titles=' + encodeURIComponent(keyword) + '&pithumbsize=1280&format=json';
+    const res = await fetch(url, { headers: { 'User-Agent': 'SpaceCampBot/1.0 (raesc89@gmail.com)' } });
+    const data = await res.json();
+    if (!data.query || !data.query.pages) return [];
+    return Object.values(data.query.pages)
+      .map(p => p.thumbnail ? p.thumbnail.source : null)
+      .filter(url => url && !url.includes('.svg') && !url.includes('.webm') && !url.includes('.ogv') && !url.toLowerCase().includes('icon') && !url.toLowerCase().includes('logo'));
+  } catch (e) { return []; }
 }
 
 async function run() {
@@ -160,18 +158,25 @@ async function run() {
       let concept = getWikiKeyword(moduleData.titleEs, section.title);
       
       let imgUrl = await getWikiImage(concept);
-      if (!imgUrl) imgUrl = await searchWikiImage(concept);
       
-      // If we STILL don't have an image, or it's a duplicate, we need a guaranteed unique fallback.
-      // But instead of picsum, let's use Unsplash Source with the concept keyword to keep it space themed!
+      // If we STILL don't have an image, or it's a duplicate, we use multiple generator
       if (!imgUrl || globalUsedImages.has(imgUrl)) {
-         // Using Wikipedia random article related to space as absolute fallback to avoid generic non-sense
-         const genericFallback = getWikiKeyword(moduleData.titleEs, "fallback"); // gets the module base noun
-         imgUrl = await getWikiImage(genericFallback);
-         // If still duplicate, just append a random query param to make the URL unique in our cache
-         if (globalUsedImages.has(imgUrl)) {
-             imgUrl = imgUrl + "?v=" + Math.random();
-         }
+          const multiple = await getMultipleWikiImages(concept);
+          let foundNew = false;
+          for (const u of multiple) {
+              if (!globalUsedImages.has(u)) { imgUrl = u; foundNew = true; break; }
+          }
+          if (!foundNew) {
+              const genericFallback = getWikiKeyword(moduleData.titleEs, "fallback");
+              const genericMultiple = await getMultipleWikiImages(genericFallback);
+              for (const u of genericMultiple) {
+                  if (!globalUsedImages.has(u)) { imgUrl = u; foundNew = true; break; }
+              }
+          }
+          // Ultimate fallback Unsplash to avoid breaking
+          if (!imgUrl || globalUsedImages.has(imgUrl)) {
+             imgUrl = "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1280&auto=format&fit=crop";
+          }
       }
       
       section.image = imgUrl; // Update image
