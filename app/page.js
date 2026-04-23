@@ -5,7 +5,7 @@ import AnimatedMainLogo from '@/components/AnimatedMainLogo';
 export default function Home() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.15, backgroundImage: 'url("https://media.giphy.com/media/aBovEwP522Uww/giphy.gif")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', mixBlendMode: 'screen' }} />
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.25, backgroundImage: 'url("/assets/galaxy_bg.gif")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', mixBlendMode: 'screen' }} />
       {/* Navbar Simple */}
       <nav style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(10px)', position: 'sticky', top: 0, zIndex: 100 }}>
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, fontFamily: 'var(--font-quantico)', color: 'white' }}>
