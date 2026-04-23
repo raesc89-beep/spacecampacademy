@@ -156,11 +156,7 @@ export default function CourseModule() {
                         <Maximize2 size={16} />
                      </div>
 
-                     {section.imgCaption && (
-                       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0,0,0,0.7)', padding: '0.8rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)' }}>
-                         📸 {section.imgCaption}
-                       </div>
-                     )}
+                     {/* Caption eliminado a petición del usuario */}
                   </div>
                 )}
                 <div style={{ padding: '2rem' }}>
