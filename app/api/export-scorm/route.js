@@ -44,7 +44,7 @@ export async function GET(request) {
       <div class="card">
         <h1>🌌 Expedición: ${planetData.titleEs}</h1>
         <p><strong>Clasificación:</strong> ${planetData.badgeEs}</p>
-        <p>Esta cápsula ha sido exportada desde Space Camp Academy (Módulo SCORM 1.2 Genérico).</p>
+        <p>Esta cápsula ha sido exportada desde Agencia Mexicana de Divulgación Espacial (Módulo SCORM 1.2 Genérico).</p>
         <hr/>
         <h2>${planetData.contentEs.sections[0]?.title || 'Visión General'}</h2>
         <p>${planetData.contentEs.sections[0]?.text || 'Recuperando datos satelitales...'}</p>
@@ -90,7 +90,7 @@ export async function GET(request) {
   </metadata>
   <organizations default="SpaceCamp_ORG">
     <organization identifier="SpaceCamp_ORG">
-      <title>Space Camp Academy - Módulo SCORM Exportado</title>
+      <title>Agencia Mexicana de Divulgación Espacial - Módulo SCORM Exportado</title>
       <item identifier="ITEM_1" identifierref="RES_1">
         <title>${planetData.titleEs}</title>
       </item>

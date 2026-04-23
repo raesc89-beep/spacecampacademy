@@ -80,7 +80,7 @@ export default function LiveTransmissionsCenter() {
                 {/* Metadatos del Stream */}
                 <div style={{ background: 'rgba(0,0,0,0.8)', padding: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
                   <h2 style={{ margin: 0, color: 'var(--starlight)' }}>{streamData?.title || 'Esperando Transmisión...'}</h2>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>{streamData?.active ? 'Transmisión Segura | Sistema Encriptado de Space Camp Academy' : 'Standby Mode'}</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>{streamData?.active ? 'Transmisión Segura | Sistema Encriptado de Agencia Mexicana de Divulgación Espacial' : 'Standby Mode'}</p>
                 </div>
               </div>
             </section>

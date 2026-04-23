@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 
 const metadata = {
-  title: 'Space Camp Academy | Explora los Planetas',
+  title: 'Agencia Mexicana de Divulgación Espacial | Explora los Planetas',
   description: 'Un viaje educativo por el Sistema Solar para cadetes espaciales. Aprende sobre los 9 planetas y gana medallas intergalácticas.',
 }
 

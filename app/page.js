@@ -7,9 +7,9 @@ export default function Home() {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div style={{ 
         position: 'fixed', top: '-10%', left: '-10%', width: '120%', height: '120%', zIndex: -1, 
-        opacity: 0.35, 
-        backgroundImage: 'url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2000&auto=format&fit=crop")', 
-        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', mixBlendMode: 'screen',
+        opacity: 0.4, 
+        backgroundImage: 'url("/assets/galaxy_bg.jpg")', 
+        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
         animation: 'slowDrift 60s linear infinite alternate'
       }} />
       <style>{`
@@ -36,7 +36,7 @@ export default function Home() {
             El Universo Entero <br/><span style={{ color: 'var(--electric-blue)' }}>A Tu Alcance</span>
           </h1>
           <p className="lead" style={{ fontSize: '1.3rem', opacity: 0.9, maxWidth: '600px' }}>
-            Explora el Sistema Solar, completa misiones interactivas y conviértete en un astronauta certificado por la Space Camp Academy.
+            Explora el Sistema Solar, completa misiones interactivas y conviértete en un astronauta certificado por la Agencia Mexicana de Divulgación Espacial.
           </p>
           
           <div style={{ display: 'flex', gap: '1.5rem', marginTop: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -59,7 +59,7 @@ export default function Home() {
             <div style={{ color: 'var(--gold-star)', fontWeight: 'bold', letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.9rem' }}>Astrofísico & Educador</div>
             <h2 style={{ margin: 0, fontSize: '2.5rem' }}>Marco Antonio Vélez Montaño</h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', lineHeight: 1.6 }}>
-              Director de Divulgación Científica y Coordinador Académico Internacional del Space Academy Camp. Con una profunda pasión por la educación aeroespacial y el acercamiento de los jóvenes a la tecnología espacial. Su misión es inspirar a la próxima generación de cadetes a explorar juntos los grandes misterios del Sistema Solar.
+              Director de Divulgación Científica y Coordinador Académico Internacional de la Agencia Mexicana de Divulgación Espacial. Con una profunda pasión por la educación aeroespacial y el acercamiento de los jóvenes a la tecnología espacial. Su misión es inspirar a la próxima generación de cadetes a explorar juntos los grandes misterios del Sistema Solar.
             </p>
             <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                <span style={{ padding: '0.4rem 1rem', background: 'rgba(255,255,255,0.1)', borderRadius: '20px', fontSize: '0.8rem' }}>Astrofísica</span>
@@ -80,7 +80,7 @@ export default function Home() {
       </main>
 
       <footer style={{ textAlign: 'center', padding: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: 'auto', background: 'rgba(0,0,0,0.5)' }}>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>© 2026 Space Camp Academy de Marco Velez. Todos los derechos reservados.</p>
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>© 2026 Agencia Mexicana de Divulgación Espacial. Todos los derechos reservados.</p>
       </footer>
     </div>
   );

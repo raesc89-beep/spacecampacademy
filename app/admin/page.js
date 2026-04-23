@@ -54,7 +54,7 @@ export default function AdminDashboardPage() {
         <h1 style={{ fontSize: '2.5rem', color: 'var(--electric-blue)', margin: 0, display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <Activity size={36} /> Comando Central
         </h1>
-        <p style={{ color: 'var(--text-muted)' }}>Bienvenido al cerebro de Space Camp Academy. Administra datos en tiempo real.</p>
+        <p style={{ color: 'var(--text-muted)' }}>Bienvenido al cerebro de Agencia Mexicana de Divulgación Espacial. Administra datos en tiempo real.</p>
       </div>
 
       {/* Tarjetas de Métricas Rápidas */}

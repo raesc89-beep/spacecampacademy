@@ -39,7 +39,7 @@ export default function AdminLayout({ children }) {
       <aside style={{ width: '250px', background: 'rgba(255,255,255,0.03)', borderRight: '1px solid rgba(255,255,255,0.05)', padding: '2rem 1rem', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         <div>
           <h2 style={{ fontSize: '1.2rem', color: 'var(--electric-blue)' }}>Moodle Admin</h2>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Space Camp Academy</span>
+          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Agencia Mexicana de Divulgación Espacial</span>
         </div>
 
         <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>

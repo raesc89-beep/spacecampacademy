@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function HubDecorations() {
   return (
     <>
-      {/* Logo Space Camp Academy Giratorio Arriba Derecha */}
+      {/* Logo Agencia Mexicana de Divulgación Espacial Giratorio Arriba Derecha */}
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}

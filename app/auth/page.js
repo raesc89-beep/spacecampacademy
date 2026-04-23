@@ -82,7 +82,7 @@ function AuthContent() {
           
           {/* Fila de Logos Institucionales Orgánicos (Fase 3.6 Transparencias) */}
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2rem', padding: '1rem', width: '100%' }}>
-             <img src="/assets/amde_logo.png" alt="Space Camp Academy" style={{ height: '70px', objectFit: 'contain', filter: 'drop-shadow(0px 0px 10px rgba(255,255,255,0.3))' }} />
+             <img src="/assets/amde_logo.png" alt="Agencia Mexicana de Divulgación Espacial" style={{ height: '70px', objectFit: 'contain', filter: 'drop-shadow(0px 0px 10px rgba(255,255,255,0.3))' }} />
              <div style={{ width: '2px', height: '40px', background: 'rgba(255,255,255,0.2)' }} />
              <img src="/assets/logo_nasa_auth.png" alt="NASA" style={{ height: '55px', objectFit: 'contain', filter: 'drop-shadow(0px 0px 10px rgba(255,255,255,0.3))' }} />
           </div>
