@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useAuth } from '@/hooks/useAuth';
 import { doc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
@@ -18,15 +18,25 @@ const DASHBOARD_MISSIONS = [
     link: "/hub/asteroides-cometas",
     bgSrc: "/assets/asteroides/Rosseta.png",
     badgeColor: "#EF4444",
-    badgeText: "Nuevo Vuelo Rocoso",
+    badgeText: "Vuelo Rocoso",
     borderColor: "rgba(239, 68, 68, 0.4)"
+  },
+  {
+    id: "viaje-planetas-gaseosos",
+    title: "Planetas Gaseosos",
+    subtitle: "Nubes colosales, vientos sónicos y lunas heladas.",
+    link: "/course/viaje-planetas-gaseosos",
+    bgImage: "radial-gradient(circle at 70% 30%, #8A2BE2 0%, #000 100%)",
+    badgeColor: "#8A2BE2",
+    badgeText: "Vuelo Atmosférico",
+    borderColor: "rgba(138, 43, 226, 0.4)"
   },
   {
     id: "animales",
     title: "Animales en el Espacio",
     subtitle: "Pioneros peludos hacia las estrellas.",
     link: "/hub/animales",
-    bgSrc: "/assets/animales/Portada%20curso.png",
+    bgSrc: "/assets/animales/portada_curso.png",
     badgeColor: "var(--gold-star)",
     badgeText: "Vuelo Biológico",
     borderColor: "rgba(255, 184, 0, 0.4)"

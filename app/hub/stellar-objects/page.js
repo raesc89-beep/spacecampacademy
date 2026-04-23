@@ -68,7 +68,7 @@ export default function StellarObjectsMap() {
       
       {/* Vehículos Espaciales de Fondo */}
       <motion.img 
-        src="/assets/heavy_cruiser_vector.png" 
+        src="/assets/shuttle_vector.png" 
         alt="Heavy Cruiser"
         animate={{ x: ['-20vw', '120vw'], y: ['10vh', '-10vh', '5vh', '-5vh'] }}
         transition={{ repeat: Infinity, duration: 75, ease: "linear" }}
@@ -76,7 +76,7 @@ export default function StellarObjectsMap() {
       />
       
       <motion.img 
-        src="/assets/alien_ship_vector.png" 
+        src="/assets/ufo_vector.png" 
         alt="Alien Ship"
         animate={{ x: ['120vw', '-20vw'], y: ['-10vh', '30vh', '-20vh', '10vh'] }}
         transition={{ repeat: Infinity, duration: 55, ease: "linear" }}
@@ -134,7 +134,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
 
   // El estilo de misterio: En lugar de saturar de sombras físicas que causan los cuadros negros, 
   // hacemos el planeta fantasmal/borroso cuando está inexplorado.
-  const planetFilter = isLocked ? 'grayscale(80%) blur(2px) contrast(1.5)' : (isGlowingAnomaly ? 'contrast(1.2) blur(1.5px)' : 'contrast(1.2)');
+  const planetFilter = isLocked ? 'grayscale(80%) blur(2px) contrast(1.5)' : 'contrast(1.2)';
   const planetOpacity = isLocked ? 0.3 : 1;
   const blendMode = isGlowingAnomaly ? 'screen' : 'normal';
 
