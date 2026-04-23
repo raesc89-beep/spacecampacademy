@@ -5,39 +5,18 @@ import { Search, CheckCircle, AlertCircle } from 'lucide-react';
 
 const CHALLENGES = [
   {
-    riddle: "1. IGNICIÓN: El poderoso R-7 vuela hacia las estrellas despidiendo fuego, pero hay un problema. Un diminuto tubo de presurización tiene una fuga de vapor frío en la aleta más baja del extremo derecho del cohete. Señálalo.",
+    riddle: "1. CALLES DE MOSCÚ: En este denso día de invierno de los años 50 en Rusia, busca a la perrita callejera blanca y marrón (Laika). Es difícil de encontrar entre tanta gente, nieve y abrigos.",
     imageUrl: "/assets/animales/laika_challenge_1.png", 
-    targetX: 83, 
-    targetY: 92, 
-    radius: 6 
+    targetX: 50, 
+    targetY: 50, 
+    radius: 30 
   },
   {
-    riddle: "2. ÓRBITA SOLITARIA: La oscura inmensidad rodea el satélite, pero los sensores ópticos han identificado el brillo de una galaxia con forma espiral minúscula escondida en la esquina superior izquierda del cosmos.",
+    riddle: "2. ÓRBITA TERRESTRE: Entre cientos de satélites, asteroides y basura espacial que orbitan la Tierra, encuentra la cápsula retro con forma cónica (el Sputnik 2) en la que viajó Laika.",
     imageUrl: "/assets/animales/laika_challenge_2.png", 
-    targetX: 10, 
-    targetY: 10, 
-    radius: 6 
-  },
-  {
-    riddle: "3. EL LEGADO ETERNO: Más allá del rostro de bronce, el tiempo ha marcado un desperfecto arquitectónico. Localiza la pequeña grieta esculpida en la base del pilar inferior izquierdo del monumento.",
-    imageUrl: "/assets/animales/laika_challenge_3.png", 
-    targetX: 25, 
-    targetY: 88, 
-    radius: 6 
-  },
-  {
-    riddle: "4. COLONIA MARCIANA: Entre la magnitud de las biosferas naranjas, busca al Ingeniero Principal solitario que repara un fallo termoeléctrico en el techo del domo lejano de la extrema derecha.",
-    imageUrl: "/assets/mars_human_colony_dome.png", 
-    targetX: 92, 
-    targetY: 83, 
-    radius: 5 
-  },
-  {
-    riddle: "5. RADAR EXÓTICO: La cápsula Venera escanea la infernal superficie. Detecta el pequeño cráter humeante que se esconde cerca del destello de azufre en el borde hiper-derecho.",
-    imageUrl: "/assets/venera_probe_venus.png", 
-    targetX: 88, 
-    targetY: 92, 
-    radius: 5
+    targetX: 50, 
+    targetY: 50, 
+    radius: 30 
   }
 ];
 
@@ -80,7 +59,7 @@ export default function LaikaFinder({ onComplete }) {
     <div style={{ padding: '2rem', background: 'rgba(0,0,0,0.6)', borderRadius: '20px', border: '1px solid rgba(255, 184, 0, 0.3)' }}>
       <header style={{ marginBottom: '2rem', textAlign: 'center' }}>
         <h3 style={{ margin: 0, color: 'var(--gold-star)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-           <Search /> Radar Táctico Canino
+           <Search /> Radar de Observación Profunda
         </h3>
         
         <div style={{ marginTop: '1rem', padding: '1.5rem', background: 'rgba(255, 184, 0, 0.1)', borderRadius: '12px', borderLeft: '4px solid var(--gold-star)' }}>
@@ -94,7 +73,7 @@ export default function LaikaFinder({ onComplete }) {
         <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--success)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.8rem' }}>
           <CheckCircle size={32} />
           <h2 style={{ margin: 0 }}>
-            {currentLevel + 1 === CHALLENGES.length ? '¡Misión Completa!' : '¡Objetivo Confirmado! Analizando Siguiente Sector...'}
+            {currentLevel + 1 === CHALLENGES.length ? '¡Misión Completa!' : '¡Objetivo Encontrado! Siguiente Desafío...'}
           </h2>
         </motion.div>
       )}
@@ -105,7 +84,7 @@ export default function LaikaFinder({ onComplete }) {
            draggable="false"
            onDragStart={(e) => e.preventDefault()}
            style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block', pointerEvents: 'none' }} 
-           alt="Laika en el Espacio" 
+           alt="Laika Finder Challenge" 
          />
          
          <div 

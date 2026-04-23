@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 
 const nasaKeywords = {
@@ -33,12 +34,12 @@ async function translate(text) {
     // Only translate the first 600 chars to avoid hitting GET limits on free endpoint, and to keep it digestible
     let textToTranslate = text.substring(0, 600);
     if (text.length > 600) textToTranslate += "...";
-    
+
     const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q=' + encodeURIComponent(textToTranslate);
     const res = await fetch(url);
     const data = await res.json();
     return data[0].map(x => x[0]).join('');
-  } catch(e) {
+  } catch (e) {
     console.error("Error translating:", e);
     return "Esta imagen fue capturada directamente por los instrumentos de alta tecnología de la NASA durante sus misiones de exploración profunda.";
   }
@@ -49,14 +50,14 @@ async function getNasaData(query) {
     const res = await fetch(`https://images-api.nasa.gov/search?q=${encodeURIComponent(query)}&media_type=image`);
     const data = await res.json();
     if (!data.collection || !data.collection.items) return [];
-    
+
     // Extract hrefs and descriptions
     const items = [];
     for (let item of data.collection.items) {
       if (item.links && item.links.length > 0 && item.data && item.data.length > 0) {
         items.push({
-           image: item.links[0].href,
-           description: item.data[0].description
+          image: item.links[0].href,
+          description: item.data[0].description
         });
       }
     }
@@ -69,55 +70,55 @@ async function getNasaData(query) {
 
 async function run() {
   console.log('Iniciando ensamblaje pedagógico NASA...');
-  
+
   const courseDataModule = await import('./lib/courseData.js');
   let data = courseDataModule.COURSE_DATA || courseDataModule.modules;
-  
+
   for (let moduleData of data) {
     const title = moduleData.titleEs.toLowerCase();
     console.log('Procesando módulo:', moduleData.titleEs);
-    
+
     if (!moduleData.contentEs || !moduleData.contentEs.sections) continue;
-    
+
     // Fetch exactly 15+ NASA images and descriptions
     let nasaQuery = nasaKeywords[title] || title;
     let nasaItems = await getNasaData(nasaQuery);
-    
+
     // If not enough, fallback to general space
     if (nasaItems.length < 15) {
-       let fallback = await getNasaData("milky way galaxy stars");
-       nasaItems = nasaItems.concat(fallback);
+      let fallback = await getNasaData("milky way galaxy stars");
+      nasaItems = nasaItems.concat(fallback);
     }
-    
+
     // For each section, assign an image and the translation
     for (let i = 0; i < moduleData.contentEs.sections.length; i++) {
       let section = moduleData.contentEs.sections[i];
       delete section.imgCaption;
-      
+
       let nasaItem = nasaItems[i] || nasaItems[0];
       section.image = nasaItem.image;
-      
-      console.log(` Traducciones NASA para [${moduleData.titleEs}] sección ${i+1}/15...`);
+
+      console.log(` Traducciones NASA para [${moduleData.titleEs}] sección ${i + 1}/15...`);
       let translatedNasaDesc = await translate(nasaItem.description);
-      
+
       // Clean up weird HTML tags from NASA descriptions if any
       translatedNasaDesc = translatedNasaDesc.replace(/<[^>]*>?/gm, '');
-      
+
       // Select random intros and outros
       const intro = introsPedagogicos[Math.floor(Math.random() * introsPedagogicos.length)];
       const outro = outrosPedagogicos[Math.floor(Math.random() * outrosPedagogicos.length)];
-      
+
       // ENSAMBLAJE
       // 1. Gancho Pedagógico
       // 2. Texto corto original de la currícula (Contexto)
       // 3. Texto científico crudo de la NASA traducido al español (Datos duros veraces)
       // 4. Cierre pedagógico
       const assembledText = `${intro}\n\n${section.text}\n\nEl reporte oficial de la NASA nos explica lo siguiente sobre esta fotografía: "${translatedNasaDesc}"\n\n${outro}`;
-      
+
       section.text = assembledText;
     }
   }
-  
+
   // Write back
   const newFileContent = '// Archivo maestro estático del curso\nexport const COURSE_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
   fs.writeFileSync('./lib/courseData.js', newFileContent);
