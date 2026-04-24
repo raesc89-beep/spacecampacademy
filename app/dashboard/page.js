@@ -42,6 +42,16 @@ const DASHBOARD_MISSIONS = [
     borderColor: "rgba(255, 184, 0, 0.4)"
   },
   {
+    id: "pioneros",
+    title: "Primeros en el Espacio",
+    subtitle: "Conoce a los valientes astronautas que abrieron el camino.",
+    link: "/hub/pioneros",
+    bgSrc: "/assets/dashboard/pioneros_cover.png",
+    badgeColor: "#00BFFF",
+    badgeText: "Vuelo Histórico",
+    borderColor: "rgba(0, 191, 255, 0.4)"
+  },
+  {
     id: "stellar-objects",
     title: "Anomalías Cósmicas",
     subtitle: "Agujeros negros, Cuásares y Púlsares.",
