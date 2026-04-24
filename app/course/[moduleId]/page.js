@@ -138,11 +138,15 @@ export default function CourseModule() {
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
               <div key={idx} className="glass-card" style={{ padding: '0', overflow: 'hidden', borderLeft: `4px solid ${section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color}` }}>
-                {section.video && (
+                {section.video && (section.video.includes('drive.google.com') || section.video.includes('youtube.com') || section.video.includes('youtu.be')) ? (
+                  <div style={{ width: '100%', background: '#000', position: 'relative', aspectRatio: '16/9' }}>
+                    <iframe src={section.video} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }} allow="autoplay; fullscreen" allowFullScreen></iframe>
+                  </div>
+                ) : section.video ? (
                   <div style={{ width: '100%', background: '#000', position: 'relative' }}>
                      <video src={section.video} preload="none" controls style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#111' }} />
                   </div>
-                )}
+                ) : null}
                 {section.image && !section.video && (
                   <div 
                     onClick={() => setExpandedImg(section.image)}
