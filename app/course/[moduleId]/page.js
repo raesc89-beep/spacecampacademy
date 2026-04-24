@@ -168,7 +168,7 @@ export default function CourseModule() {
                     <BookOpen size={24} color={section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color} />
                     {section.title}
                   </h3>
-                  <p style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'rgba(255,255,255,0.9)' }}>
+                  <p style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'rgba(255,255,255,0.9)', whiteSpace: 'pre-line' }}>
                     {section.text}
                   </p>
                 </div>
