@@ -172,12 +172,7 @@ export default function CourseModule() {
                     {section.title}
                   </h3>
                   <div style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'rgba(255,255,255,0.9)' }}>
-                    {Array.isArray(section.text) 
-                      ? section.text.map((line, i) => (
-                          <p key={i} style={{ display: 'block', margin: '0 0 1rem 0' }}>{line}</p>
-                        ))
-                      : <p style={{ whiteSpace: 'pre-line' }}>{section.text}</p>
-                    }
+                    <p style={{ whiteSpace: 'pre-line' }}>{section.text}</p>
                   </div>
                 </div>
               </div>
