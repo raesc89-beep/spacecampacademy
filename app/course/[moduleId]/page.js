@@ -74,17 +74,19 @@ export default function CourseModule() {
 
   const isCompleted = userData?.progress?.completedModules?.includes(moduleData.id);
   
-  const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
+  const isAnomaly = moduleData.id.startsWith('stellar-');
   const isAnimal = moduleData.id.startsWith('animales_');
   const isAsteroide = moduleData.id.startsWith('asteroides_');
+  const isPionero = moduleData.id.startsWith('pioneros_');
   const isPluto = moduleData.id === 'pluto';
   const isSun = moduleData.id === 'sun';
   
-  const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
+  const planetImageName = isPionero ? `pioneros/hub_${moduleData.id.replace('pioneros_', '')}.png` :
+                          (isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
                           (isAsteroide ? `asteroides/hub_${moduleData.id.replace('asteroides_', '')}.png` : 
                           (isAnomaly ? `${moduleData.id}_icon.png` : 
                           (isSun ? 'cartoon_sun.png' : 
-                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\\s+/g, '_')}.png`))));
+                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`)))));
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -231,6 +233,12 @@ export default function CourseModule() {
             </div>
             
             <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Misión {moduleData.titleEs}</h2>
+            {moduleData.badgeImage && (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginTop: '-0.5rem' }}>
+                <img src={moduleData.badgeImage} width={80} height={80} alt="Insignia" style={{ borderRadius: '50%', boxShadow: `0 0 15px ${moduleData.color}` }} />
+                <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', color: moduleData.color, letterSpacing: '1px', fontWeight: 'bold' }}>Insignia de Misión</span>
+              </div>
+            )}
             
             {!isCompleted ? (
               <p style={{ margin: 0, fontSize: '0.9rem' }}>Lee toda la información y luego pon a prueba tus conocimientos para ganar la medalla.</p>
