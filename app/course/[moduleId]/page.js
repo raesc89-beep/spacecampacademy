@@ -129,6 +129,7 @@ export default function CourseModule() {
         <section style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           <div>
             <h1 style={{ color: moduleData.color, display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+              {moduleData.badgeImage && <img src={moduleData.badgeImage} width={45} height={45} alt="Insignia de Misión" style={{ borderRadius: '50%', boxShadow: `0 0 10px ${moduleData.color}` }} />}
               {moduleData.titleEs} 
               {isCompleted && <CheckCircle color="var(--success)" size={32} />}
             </h1>
@@ -168,9 +169,14 @@ export default function CourseModule() {
                     <BookOpen size={24} color={section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color} />
                     {section.title}
                   </h3>
-                  <p style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'rgba(255,255,255,0.9)', whiteSpace: 'pre-line' }}>
-                    {section.text}
-                  </p>
+                  <div style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'rgba(255,255,255,0.9)' }}>
+                    {Array.isArray(section.text) 
+                      ? section.text.map((line, i) => (
+                          <p key={i} style={{ display: 'block', margin: '0 0 1rem 0' }}>{line}</p>
+                        ))
+                      : <p style={{ whiteSpace: 'pre-line' }}>{section.text}</p>
+                    }
+                  </div>
                 </div>
               </div>
             ))
