@@ -1,0 +1,12 @@
+<svg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
+  <rect x='40' y='60' width='20' height='20' rx='4' fill='#f1f5f9'/>
+  <!-- Rotors -->
+  <path d='M 10 40 L 90 40' stroke='#94a3b8' stroke-width='4'/>
+  <path d='M 20 50 L 80 50' stroke='#94a3b8' stroke-width='4'/>
+  <!-- Shaft -->
+  <rect x='48' y='30' width='4' height='30' fill='#cbd5e1'/>
+  <!-- Legs -->
+  <path d='M 40 80 L 20 95' stroke='#94a3b8' stroke-width='3'/>
+  <path d='M 60 80 L 80 95' stroke='#94a3b8' stroke-width='3'/>
+  <circle cx='50' cy='65' r='5' fill='#3b82f6'/>
+</svg>
