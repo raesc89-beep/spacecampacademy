@@ -62,6 +62,16 @@ const DASHBOARD_MISSIONS = [
     borderColor: "rgba(0, 228, 255, 0.4)"
   },
   {
+    id: "colisiones_estelares",
+    title: "Colisiones Estelares",
+    subtitle: "El majestuoso y destructivo choque de galaxias gigantes.",
+    link: "/course/colisiones_estelares",
+    bgSrc: "/assets/course_colisiones.png",
+    badgeColor: "#9933ff",
+    badgeText: "Evento Cósmico",
+    borderColor: "rgba(153, 51, 255, 0.4)"
+  },
+  {
     id: "decoder",
     title: "Interceptación Estelar",
     subtitle: "Decodifica frecuencias alienígenas para ganar logros.",

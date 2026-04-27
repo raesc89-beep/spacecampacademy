@@ -63,6 +63,17 @@ export default function CourseModule() {
             });
           }
 
+          // Parser de Google Drive automático
+          const parseDriveUrl = (url, type) => {
+            if (!url || !url.includes('drive.google.com')) return url;
+            const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+            if (match && match[1]) {
+              if (type === 'image') return `https://drive.google.com/uc?export=view&id=${match[1]}`;
+              if (type === 'video') return `https://drive.google.com/file/d/${match[1]}/preview`;
+            }
+            return url;
+          };
+
           // 2. Garantizar que cada sección tenga al menos 10 líneas
           sections = sections.map((sec, i) => {
             let txtArray = [];
@@ -78,7 +89,12 @@ export default function CourseModule() {
               padIdx++;
             }
 
-            return { ...sec, text: txtArray };
+            return { 
+              ...sec, 
+              text: txtArray,
+              image: parseDriveUrl(sec.image, 'image'),
+              video: parseDriveUrl(sec.video, 'video')
+            };
           });
 
           mod.contentEs.sections = sections;
