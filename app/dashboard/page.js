@@ -75,7 +75,7 @@ const DASHBOARD_MISSIONS = [
     id: "robots_espacio",
     title: "Robots en el Espacio",
     subtitle: "Conoce a los exploradores mecánicos que recorren Marte.",
-    link: "/course/robots_espacio",
+    link: "/hub/robots-espacio",
     bgSrc: "/assets/robots_espacio_cover.png",
     badgeColor: "#FF6347",
     badgeText: "Astroingeniería",
