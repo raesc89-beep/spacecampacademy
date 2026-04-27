@@ -72,6 +72,16 @@ const DASHBOARD_MISSIONS = [
     borderColor: "rgba(153, 51, 255, 0.4)"
   },
   {
+    id: "robots_espacio",
+    title: "Robots en el Espacio",
+    subtitle: "Conoce a los exploradores mecánicos que recorren Marte.",
+    link: "/course/robots_espacio",
+    bgSrc: "/assets/robots_espacio_cover.png",
+    badgeColor: "#FF6347",
+    badgeText: "Astroingeniería",
+    borderColor: "rgba(255, 99, 71, 0.4)"
+  },
+  {
     id: "decoder",
     title: "Interceptación Estelar",
     subtitle: "Decodifica frecuencias alienígenas para ganar logros.",
