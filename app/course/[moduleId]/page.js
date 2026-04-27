@@ -149,6 +149,7 @@ export default function CourseModule() {
   const isAnimal = moduleData.id.startsWith('animales_');
   const isAsteroide = moduleData.id.startsWith('asteroides_');
   const isPionero = moduleData.id.startsWith('pioneros_');
+  const isRobot = moduleData.id.startsWith('robots_');
   const isPluto = moduleData.id === 'pluto';
   const isSun = moduleData.id === 'sun';
   
@@ -324,7 +325,7 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href={isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"))} className="btn-secondary" style={{ textAlign: 'center' }}>
+          <Link href={isRobot ? "/hub/robots-espacio" : (isPionero ? "/hub/pioneros" : (isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"))))} className="btn-secondary" style={{ textAlign: 'center' }}>
             Volver al Mapa Estelar
           </Link>
         </aside>
