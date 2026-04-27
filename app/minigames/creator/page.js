@@ -103,23 +103,23 @@ export default function CreatorMinigame() {
     );
 
     if (planetState === 'barren') {
-      planetElement = createPlanetDiv('/assets/mercury_extremes.png');
+      planetElement = createPlanetDiv('/assets/gen_barren_vector.png', 'auto 100%');
       glow = '0 0 15px rgba(140, 118, 98, 0.3)';
     }
 
     if (planetState === 'magma') {
-      planetElement = createPlanetDiv('/assets/gen_magma.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_magma_vector.png', 'auto 100%');
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
     }
 
     if (planetState === 'desertico') {
-      planetElement = createPlanetDiv('/assets/gen_desertico.jpg', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_desertico_vector.png', 'auto 100%');
       glow = '0 0 40px rgba(200, 100, 50, 0.8)';
       atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.9), inset 10px 10px 40px rgba(200, 100, 50, 0.4)';
     }
 
     if (planetState === 'venenoso') {
-      planetElement = createPlanetDiv('/assets/gen_venenoso.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_venenoso_vector.png', 'auto 100%');
       glow = '0 0 60px rgba(0, 255, 100, 0.8)';
     }
 
@@ -129,12 +129,12 @@ export default function CreatorMinigame() {
     }
 
     if (planetState === 'anillos') {
-      planetElement = createPlanetDiv('/assets/upload_2.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_anillos_vector.png', 'auto 100%');
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
     }
 
     if (planetState === 'alien') {
-      planetElement = createPlanetDiv('/assets/upload_3.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_alien_vector.png', 'auto 100%');
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
     }
 

@@ -5,49 +5,118 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Radio, AlertTriangle, CheckCircle, Star } from 'lucide-react';
+import { Radio, AlertTriangle, CheckCircle, Star, Activity, Waves, Zap, Radar } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+// Storytelling lines for each level
+const STORY_LEVELS = [
+  "Nivel 1: Ruido Estático. Sintoniza la frecuencia base para limpiar la interferencia inicial.",
+  "Nivel 2: Desfase Cuántico. La señal rebota en la ionosfera, ajusta la fase para alinear el pulso.",
+  "Nivel 3: Resonancia Armónica. Detectamos ecos secundarios. Bloquea el armónico principal.",
+  "Nivel 4: Tormenta Solar. La estática es intensa. Busca el patrón oculto entre las ondas magnéticas.",
+  "Nivel 5: Espejismo Gravitacional. La onda se curva por un agujero negro cercano. Requiere precisión milimétrica.",
+  "Nivel 6: Encriptación Pulsar. Los latidos del púlsar camuflan el mensaje alienígena.",
+  "Nivel 7: Anomalía del Vórtice. Las cuatro variables físicas están desestabilizadas simultáneamente.",
+  "Nivel 8: Eco de la Nebulosa. El mensaje reacciona en bucle inverso. Afina cada decibelio.",
+  "Nivel 9: Barrera de Materia Oscura. Transmisión casi inaudible. Se requiere calibración absoluta.",
+  "Nivel 10: El Núcleo del Origen. La señal pura del Creador de Órbita-Zero. ¡Decodificación Final!"
+];
 
 export default function DecoderMinigame() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
 
+  // Levels
+  const [level, setLevel] = useState(1);
+  
   // Target Wave parameters (Secret alien signal)
   const [targetAmpli, setTargetAmpli] = useState(30); 
   const [targetFreq, setTargetFreq] = useState(0.040); 
-
-  useEffect(() => {
-    setTargetAmpli(Math.floor(Math.random() * 40) + 20); // 20 to 60
-    setTargetFreq(parseFloat((Math.random() * 0.05 + 0.02).toFixed(3))); // 0.02 to 0.07
-  }, []);
+  const [targetPhase, setTargetPhase] = useState(0); 
+  const [targetHarm, setTargetHarm] = useState(0);
 
   // Player controls
   const [ampli, setAmpli] = useState(10);
   const [freq, setFreq] = useState(0.01);
+  const [phase, setPhase] = useState(0);
+  const [harm, setHarm] = useState(0);
   
   const [isSynced, setIsSynced] = useState(false);
   const [rewardClaimed, setRewardClaimed] = useState(false);
+  const [gameComplete, setGameComplete] = useState(false);
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
   }, [user, loading, router]);
 
+  // Generate target based on level
+  const generateTargetForLevel = (currentLevel) => {
+    // Randomize targets but bound them
+    const tA = Math.floor(Math.random() * 50) + 20; // 20 to 70
+    const tF = parseFloat((Math.random() * 0.05 + 0.02).toFixed(3)); // 0.02 to 0.07
+    let tP = 0;
+    let tH = 0;
+
+    if (currentLevel >= 2) {
+      tP = Math.floor(Math.random() * 5) + 1; // 1 to 5 radians
+    }
+    if (currentLevel >= 3) {
+      tH = Math.floor(Math.random() * 15) + 5; // 5 to 20
+    }
+    
+    setTargetAmpli(tA);
+    setTargetFreq(tF);
+    setTargetPhase(tP);
+    setTargetHarm(tH);
+    setIsSynced(false);
+  };
+
+  // Run once on mount
   useEffect(() => {
-    // Check if synced
+    generateTargetForLevel(1);
+  }, []);
+
+  useEffect(() => {
+    // Tolerance tightens as level increases
+    const toleranceMulti = Math.max(0.3, 1 - (level * 0.05)); 
+    
     const ampliDiff = Math.abs(ampli - targetAmpli);
     const freqDiff = Math.abs(freq - targetFreq);
+    const phaseDiff = Math.abs(phase - targetPhase);
+    const harmDiff = Math.abs(harm - targetHarm);
     
-    if (ampliDiff < 5 && freqDiff < 0.005) {
+    // Base tolerances
+    const maxAmpliDiff = 5 * toleranceMulti;
+    const maxFreqDiff = 0.005 * toleranceMulti;
+    const maxPhaseDiff = 0.5 * toleranceMulti;
+    const maxHarmDiff = 3 * toleranceMulti;
+
+    const isAmpliOk = ampliDiff <= maxAmpliDiff;
+    const isFreqOk = freqDiff <= maxFreqDiff;
+    const isPhaseOk = (level < 2) || (phaseDiff <= maxPhaseDiff);
+    const isHarmOk = (level < 3) || (harmDiff <= maxHarmDiff);
+
+    if (isAmpliOk && isFreqOk && isPhaseOk && isHarmOk) {
       if (!isSynced) setIsSynced(true);
     } else {
       if (isSynced) setIsSynced(false);
     }
-  }, [ampli, freq, targetAmpli, targetFreq, isSynced]);
+  }, [ampli, freq, phase, harm, targetAmpli, targetFreq, targetPhase, targetHarm, isSynced, level]);
+
+  const advanceLevel = () => {
+    if (level < 10) {
+      setLevel(l => l + 1);
+      generateTargetForLevel(level + 1);
+    } else {
+      setGameComplete(true);
+    }
+  };
 
   const claimReward = async () => {
     if (!user || rewardClaimed) return;
     const currentStars = userData?.progress?.stars || 0;
-    const reward = 50;
+    const reward = 100 * level; // Escalar recompensa con el nivel
     await setDoc(doc(db, 'users', user.uid), {
       progress: {
         stars: currentStars + reward
@@ -56,29 +125,32 @@ export default function DecoderMinigame() {
     setRewardClaimed(true);
   };
 
-  if (loading || !userData) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Iniciando Decodificador...</div>;
+  if (loading || !userData) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Iniciando Consola de Mando...</div>;
 
   // Render SVG Path generator
-  const generateWavePath = (amplitude, frequency, phase = 0) => {
-    let path = 'M 0 ' + (100 - Math.sin(phase) * amplitude);
+  const generateWavePath = (a, f, p, h) => {
+    let path = 'M 0 ' + (100 - (Math.sin(p) * a + Math.cos(p*2) * h));
     for (let x = 0; x <= 600; x += 5) {
-      const y = 100 - Math.sin(x * frequency + phase) * amplitude;
+      const y = 100 - (Math.sin(x * f + p) * a + Math.sin(x * f * 2.5) * h);
       path += ' L ' + x + ' ' + y;
     }
     return path;
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#050a10' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#02050a' }}>
       <Navbar />
       
       <main className="layout-container" style={{ flex: 1, padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
         
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', maxWidth: '800px' }}>
           <h1 style={{ fontSize: '2.5rem', color: 'var(--starlight)', margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
-            <Radio size={32} /> Interceptación de Espectro
+            <Radio size={32} /> Interceptación Estelar
           </h1>
-          <p style={{ color: 'var(--text-muted)' }}>Misión de Inteligencia: Sintoniza la frecuencia de onda ajena para desbloquear la transmisión.</p>
+          <div style={{ background: 'rgba(0,228,255,0.05)', border: '1px solid var(--electric-blue)', borderRadius: '8px', padding: '1rem', marginTop: '1rem' }}>
+             <p style={{ color: 'var(--electric-blue)', margin: 0, fontWeight: 'bold' }}>NIVEL DE AMENAZA: {level} / 10</p>
+             <p style={{ color: 'var(--text-muted)', margin: '0.5rem 0 0 0', fontStyle: 'italic' }}>"{STORY_LEVELS[level-1]}"</p>
+          </div>
         </div>
 
         {/* RADAR SCREEN */}
@@ -86,87 +158,136 @@ export default function DecoderMinigame() {
             width: '100%', 
             maxWidth: '600px', 
             height: '250px', 
-            background: '#0a192f', 
+            background: '#040b14', 
             borderRadius: '16px', 
             border: isSynced ? '2px solid var(--success)' : '2px solid #172a45',
-            boxShadow: isSynced ? '0 0 30px rgba(0,255,136,0.3)' : '0 0 30px rgba(0,0,0,0.5)',
+            boxShadow: isSynced ? '0 0 30px rgba(0,255,136,0.4)' : '0 0 30px rgba(0,228,255,0.1)',
             position: 'relative',
             overflow: 'hidden'
         }}>
            {/* Grid lines */}
-           <div style={{ position: 'absolute', width: '100%', height: '100%', backgroundImage: 'linear-gradient(rgba(0,228,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,228,255,0.05) 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+           <div style={{ position: 'absolute', width: '100%', height: '100%', backgroundImage: 'linear-gradient(rgba(0,228,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,228,255,0.1) 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
            
            {/* Center Line */}
-           <div style={{ position: 'absolute', top: '50%', width: '100%', height: '1px', background: 'rgba(255,255,255,0.2)' }}></div>
+           <div style={{ position: 'absolute', top: '50%', width: '100%', height: '1px', background: 'rgba(0,228,255,0.3)', boxShadow: '0 0 5px var(--electric-blue)' }}></div>
 
            <svg width="100%" height="100%" viewBox="0 0 600 200" preserveAspectRatio="none" style={{ position: 'relative', zIndex: 1 }}>
               {/* Target Wave (Alien) */}
               <motion.path 
-                 d={generateWavePath(targetAmpli, targetFreq, 0)} 
+                 d={generateWavePath(targetAmpli, targetFreq, targetPhase, targetHarm)} 
                  fill="none" 
-                 stroke="rgba(255, 51, 102, 0.5)" 
-                 strokeWidth="4" 
-                 strokeDasharray="10 5" 
+                 stroke="rgba(255, 51, 102, 0.4)" 
+                 strokeWidth="5" 
+                 strokeDasharray="10 10" 
                  animate={{ strokeDashoffset: [0, 100] }}
-                 transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+                 transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
+                 style={{ filter: 'drop-shadow(0px 0px 5px rgba(255,51,102,0.8))' }}
               />
               {/* Player Wave */}
-              <path d={generateWavePath(ampli, freq, 0)} fill="none" stroke={isSynced ? 'var(--success)' : 'var(--electric-blue)'} strokeWidth="3" />
+              <path 
+                d={generateWavePath(ampli, freq, phase, harm)} 
+                fill="none" 
+                stroke={isSynced ? 'var(--success)' : 'var(--electric-blue)'} 
+                strokeWidth="3" 
+                style={{ filter: isSynced ? 'drop-shadow(0px 0px 8px rgba(0,255,136,0.8))' : 'drop-shadow(0px 0px 5px rgba(0,228,255,0.5))' }}
+              />
            </svg>
 
            {isSynced && (
-             <div style={{ position: 'absolute', bottom: '1rem', right: '1rem', background: 'rgba(0,255,136,0.2)', color: 'var(--success)', padding: '0.5rem 1rem', borderRadius: '8px', zIndex: 2, fontWeight: 'bold' }}>
-               ENLACE ESTABLECID0
-             </div>
+             <motion.div 
+               initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}
+               style={{ position: 'absolute', bottom: '1rem', right: '1rem', background: 'rgba(0,255,136,0.2)', color: 'var(--success)', padding: '0.5rem 1rem', borderRadius: '8px', zIndex: 2, fontWeight: 'bold', border: '1px solid var(--success)' }}>
+               ✓ SINCRONIZACIÓN PERFECTA
+             </motion.div>
            )}
         </div>
 
         {/* CONTROLS */}
-        <div className="glass-card" style={{ width: '100%', maxWidth: '600px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <div className="glass-card" style={{ width: '100%', maxWidth: '600px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem', background: 'rgba(10, 25, 47, 0.7)' }}>
            
            <div>
-             <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--electric-blue)', marginBottom: '0.5rem' }}>
-               <span>Amplitud (Poder)</span>
+             <div style={{ display: 'flex', justifyContent: 'space-between', color: '#ff5722', marginBottom: '0.5rem', fontWeight: 'bold' }}>
+               <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Activity size={18} /> Amplitud (Potencia)</span>
                <span>{ampli} dB</span>
              </div>
-             <input type="range" min="10" max="80" step="1" value={ampli} onChange={(e) => setAmpli(Number(e.target.value))} style={{ width: '100%' }} />
+             <input type="range" min="10" max="80" step="1" value={ampli} onChange={(e) => setAmpli(Number(e.target.value))} style={{ width: '100%', accentColor: '#ff5722' }} />
            </div>
 
            <div>
-             <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--electric-blue)', marginBottom: '0.5rem' }}>
-               <span>Frecuencia (Oscilación)</span>
+             <div style={{ display: 'flex', justifyContent: 'space-between', color: '#00e4ff', marginBottom: '0.5rem', fontWeight: 'bold' }}>
+               <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Waves size={18} /> Frecuencia (Oscilación)</span>
                <span>{(freq * 100).toFixed(1)} MHz</span>
              </div>
-             <input type="range" min="0.01" max="0.1" step="0.001" value={freq} onChange={(e) => setFreq(Number(e.target.value))} style={{ width: '100%' }} />
+             <input type="range" min="0.01" max="0.1" step="0.001" value={freq} onChange={(e) => setFreq(Number(e.target.value))} style={{ width: '100%', accentColor: '#00e4ff' }} />
            </div>
+
+           {/* Nivel 2+ Control de Fase */}
+           {level >= 2 && (
+             <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }}>
+               <div style={{ display: 'flex', justifyContent: 'space-between', color: '#b388ff', marginBottom: '0.5rem', fontWeight: 'bold' }}>
+                 <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Radar size={18} /> Fase (Desplazamiento)</span>
+                 <span>{phase.toFixed(1)} Rad</span>
+               </div>
+               <input type="range" min="0" max="6.28" step="0.1" value={phase} onChange={(e) => setPhase(Number(e.target.value))} style={{ width: '100%', accentColor: '#b388ff' }} />
+             </motion.div>
+           )}
+
+           {/* Nivel 3+ Control de Armónico */}
+           {level >= 3 && (
+             <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }}>
+               <div style={{ display: 'flex', justifyContent: 'space-between', color: '#d4e157', marginBottom: '0.5rem', fontWeight: 'bold' }}>
+                 <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Zap size={18} /> Ruido Armónico</span>
+                 <span>{harm} Hz</span>
+               </div>
+               <input type="range" min="0" max="25" step="1" value={harm} onChange={(e) => setHarm(Number(e.target.value))} style={{ width: '100%', accentColor: '#d4e157' }} />
+             </motion.div>
+           )}
 
         </div>
 
-        {/* DECODED MESSAGE & REWARD */}
+        {/* NEXT LEVEL / WIN MESSAGE */}
         <AnimatePresence>
-          {isSynced && (
+          {isSynced && !gameComplete && (
             <motion.div 
-               initial={{ opacity: 0, y: 20 }} 
-               animate={{ opacity: 1, y: 0 }}
+               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, scale: 0.9 }}
                className="glass-card" 
-               style={{ width: '100%', maxWidth: '600px', padding: '2rem', border: '1px solid var(--success)', background: 'rgba(0,255,136,0.05)', textAlign: 'center' }}
+               style={{ width: '100%', maxWidth: '600px', padding: '1.5rem', border: '1px solid var(--success)', background: 'rgba(0,255,136,0.1)', textAlign: 'center' }}
             >
-               <h3 style={{ color: 'var(--success)', margin: '0 0 1rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                 <CheckCircle /> Transmisión Desencriptada
-               </h3>
-               <p style={{ fontFamily: 'monospace', fontSize: '1.1rem', color: 'var(--starlight)', margin: '0 0 1.5rem 0' }}>
-                 "BZZZRT... ATENCIÓN CADETES... LOS ASTILLEROS NAVALES ESTÁN OPERATIVOS. UTILICEN SU POLVO ESTELAR PARA ACONDICIONAR SUS NAVES. CAMBIO Y FUERA... KZZSCHH"
+               <h3 style={{ color: 'var(--success)', margin: '0 0 1rem 0' }}>Señal Aislada con Éxito</h3>
+               <button className="btn-primary" onClick={advanceLevel} style={{ padding: '0.8rem 2rem', fontSize: '1.1rem', background: 'var(--success)', color: 'black' }}>
+                  Avanzar al Siguiente Nivel de Seguridad
+               </button>
+            </motion.div>
+          )}
+
+          {gameComplete && (
+            <motion.div 
+               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+               className="glass-card" 
+               style={{ width: '100%', maxWidth: '600px', padding: '2rem', border: '2px solid var(--gold-star)', background: 'rgba(255,215,0,0.1)', textAlign: 'center' }}
+            >
+               <h2 style={{ color: 'var(--gold-star)', margin: '0 0 1rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                 <Star fill="currentColor" /> DECODIFICACIÓN MAESTRA LOGRADA
+               </h2>
+               <p style={{ fontFamily: 'monospace', fontSize: '1.1rem', color: 'var(--starlight)', margin: '0 0 1.5rem 0', background: '#000', padding: '1rem', borderRadius: '8px' }}>
+                 "BZZZRT... ATENCIÓN COMANDANTE... LOS ASTILLEROS NAVALES ESTÁN OPERATIVOS Y LA AMENAZA FUE NEUTRALIZADA. EL CONOCIMIENTO ALIENÍGENA HA SIDO DESBLOQUEADO."
                </p>
 
                {rewardClaimed ? (
                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,215,0,0.2)', color: 'var(--gold-star)', padding: '0.8rem 1.5rem', borderRadius: '30px', fontWeight: 'bold' }}>
-                   ¡+50 Estrellas Transferidas! <Star fill="currentColor" />
+                   ¡1000 Estrellas Transferidas! <Star fill="currentColor" />
                  </div>
                ) : (
-                 <button className="btn-primary" onClick={claimReward} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2rem', fontSize: '1.1rem', background: 'var(--success)', color: 'black' }}>
-                    Extraer Recompensa <Star fill="black" size={20} />
+                 <button className="btn-primary" onClick={claimReward} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2rem', fontSize: '1.1rem', background: 'var(--gold-star)', color: 'black' }}>
+                    Extraer Tecnología (1000 Estrellas) <Star fill="black" size={20} />
                  </button>
                )}
+               
+               <div style={{ marginTop: '1.5rem' }}>
+                 <Link href="/hub/solar-system" className="btn-secondary" style={{ padding: '0.8rem 1.5rem' }}>
+                    Volver al Radar Estelar
+                 </Link>
+               </div>
             </motion.div>
           )}
         </AnimatePresence>
