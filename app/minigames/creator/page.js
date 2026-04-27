@@ -90,11 +90,14 @@ export default function CreatorMinigame() {
     let glow = '';
     let atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.8)';
 
-    const createPlanetDiv = (bgUrl, size = 'cover', extraStyle = {}) => (
+    const createPlanetDiv = (bgUrl, size = 'auto 130%', extraStyle = {}) => (
       <div style={{ 
         width: '100%', height: '100%', display: 'flex', 
         animation: 'planetSpin 30s linear infinite', 
-        background: `url(${bgUrl}) repeat-x 0 0 / auto 100%`, 
+        backgroundImage: `url(${bgUrl})`, 
+        backgroundRepeat: 'repeat-x',
+        backgroundPosition: '0 center',
+        backgroundSize: size,
         borderRadius: '50%',
         boxShadow: `inset 0 0 20px rgba(0,0,0,0.8)`,
         ...extraStyle
@@ -103,38 +106,38 @@ export default function CreatorMinigame() {
     );
 
     if (planetState === 'barren') {
-      planetElement = createPlanetDiv('/assets/gen_barren_vector.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_barren_texture.png', 'auto 130%');
       glow = '0 0 15px rgba(140, 118, 98, 0.3)';
     }
 
     if (planetState === 'magma') {
-      planetElement = createPlanetDiv('/assets/gen_magma_vector.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_magma_texture.png', 'auto 130%');
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
     }
 
     if (planetState === 'desertico') {
-      planetElement = createPlanetDiv('/assets/gen_desertico_vector.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_desertico_texture.png', 'auto 130%');
       glow = '0 0 40px rgba(200, 100, 50, 0.8)';
       atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.9), inset 10px 10px 40px rgba(200, 100, 50, 0.4)';
     }
 
     if (planetState === 'venenoso') {
-      planetElement = createPlanetDiv('/assets/gen_venenoso_vector.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_venenoso_texture.png', 'auto 130%');
       glow = '0 0 60px rgba(0, 255, 100, 0.8)';
     }
 
     if (planetState === 'acuatico') {
-      planetElement = createPlanetDiv('/assets/upload_1.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/upload_1.png', 'auto 130%');
       glow = '0 0 40px rgba(0, 153, 255, 0.8)';
     }
 
     if (planetState === 'anillos') {
-      planetElement = createPlanetDiv('/assets/gen_anillos_vector.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_anillos_texture.png', 'auto 130%');
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
     }
 
     if (planetState === 'alien') {
-      planetElement = createPlanetDiv('/assets/gen_alien_vector.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_alien_texture.png', 'auto 130%');
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
     }
 

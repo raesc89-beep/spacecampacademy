@@ -11,16 +11,16 @@ import Link from 'next/link';
 
 // Storytelling lines for each level
 const STORY_LEVELS = [
-  "Nivel 1: Ruido Estático. Sintoniza la frecuencia base para limpiar la interferencia inicial.",
-  "Nivel 2: Desfase Cuántico. La señal rebota en la ionosfera, ajusta la fase para alinear el pulso.",
-  "Nivel 3: Resonancia Armónica. Detectamos ecos secundarios. Bloquea el armónico principal.",
-  "Nivel 4: Tormenta Solar. La estática es intensa. Busca el patrón oculto entre las ondas magnéticas.",
-  "Nivel 5: Espejismo Gravitacional. La onda se curva por un agujero negro cercano. Requiere precisión milimétrica.",
-  "Nivel 6: Encriptación Pulsar. Los latidos del púlsar camuflan el mensaje alienígena.",
-  "Nivel 7: Anomalía del Vórtice. Las cuatro variables físicas están desestabilizadas simultáneamente.",
-  "Nivel 8: Eco de la Nebulosa. El mensaje reacciona en bucle inverso. Afina cada decibelio.",
-  "Nivel 9: Barrera de Materia Oscura. Transmisión casi inaudible. Se requiere calibración absoluta.",
-  "Nivel 10: El Núcleo del Origen. La señal pura del Creador de Órbita-Zero. ¡Decodificación Final!"
+  "NIVEL 1 - INFORME TÁCTICO: Hemos interceptado estática anómala proveniente del cuadrante Gamma. El patrón no es ruido de fondo cósmico, es un cifrado primitivo. Sintoniza la frecuencia y amplitud base para limpiar la interferencia y abrir el canal de datos inicial.",
+  "NIVEL 2 - INFORME TÁCTICO: La onda principal ha comenzado a rebotar violentamente contra nuestra ionosfera artificial. Esto está provocando un Desfase Cuántico. Necesitas calcular el ángulo exacto y ajustar la fase para alinear el pulso con nuestros receptores ópticos.",
+  "NIVEL 3 - INFORME TÁCTICO: ¡Atención! Detectamos resonancia secundaria superpuesta. El origen alienígena está usando un escudo armónico para camuflar el núcleo del mensaje. Bloquea y sincroniza ese armónico antes de que la onda principal se colapse y perdamos el rastro.",
+  "NIVEL 4 - INFORME TÁCTICO: Una masiva tormenta de viento solar acaba de golpear nuestros radares. El campo magnético está inyectando picos de estática letales. Busca pacientemente el patrón oculto entre las ráfagas; la amplitud y frecuencia deben ser absolutas.",
+  "NIVEL 5 - INFORME TÁCTICO: La señal está siendo distorsionada brutalmente por un Espejismo Gravitacional de un agujero negro cercano. Las leyes de la física normal ya no aplican aquí. Requiere una calibración milimétrica de todas las variables para no ser absorbidos.",
+  "NIVEL 6 - INFORME TÁCTICO: El emisor alienígena está utilizando los fuertes latidos electromagnéticos de un púlsar distante como encriptación natural. Sigue el ritmo del púlsar y alinea tu fase perfectamente para desencriptar este latido de energía profunda.",
+  "NIVEL 7 - INFORME TÁCTICO: ¡ALERTA CRÍTICA! Hemos entrado en una anomalía del vórtice. Las cuatro variables físicas de transmisión se han desestabilizado y fluctúan agresivamente. Necesitamos que operes como una máquina: ajusta rápido, ajusta preciso, o el enlace morirá.",
+  "NIVEL 8 - INFORME TÁCTICO: El mensaje parece reaccionar a nuestros escáneres, creando un bucle inverso o 'Eco de Nebulosa'. Si te pasas un solo hercio de frecuencia, la señal huirá. Afina cada decibelio y radian con frialdad de hielo espacial.",
+  "NIVEL 9 - INFORME TÁCTICO: Hemos chocado contra una espesa barrera de Materia Oscura pura. La transmisión es casi completamente inaudible y la absorción de energía es masiva. Requerimos calibración absoluta a ciegas. Demuestra por qué eres el Comandante.",
+  "NIVEL 10 - INFORME TÁCTICO: El velo ha caído. Estás frente a la frecuencia núcleo del mismísimo Creador de Órbita-Zero. Esta es la llave maestra de la tecnología alienígena antigua. Alinea el espectro final. ¡La historia de la humanidad depende de este último giro!"
 ];
 
 export default function DecoderMinigame() {
@@ -79,18 +79,18 @@ export default function DecoderMinigame() {
 
   useEffect(() => {
     // Tolerance tightens as level increases
-    const toleranceMulti = Math.max(0.3, 1 - (level * 0.05)); 
+    const toleranceMulti = Math.max(0.2, 1 - (level * 0.08)); 
     
     const ampliDiff = Math.abs(ampli - targetAmpli);
     const freqDiff = Math.abs(freq - targetFreq);
     const phaseDiff = Math.abs(phase - targetPhase);
     const harmDiff = Math.abs(harm - targetHarm);
     
-    // Base tolerances
-    const maxAmpliDiff = 5 * toleranceMulti;
-    const maxFreqDiff = 0.005 * toleranceMulti;
-    const maxPhaseDiff = 0.5 * toleranceMulti;
-    const maxHarmDiff = 3 * toleranceMulti;
+    // Base tolerances, very tight to force a visual match
+    const maxAmpliDiff = 3 * toleranceMulti;
+    const maxFreqDiff = 0.002 * toleranceMulti;
+    const maxPhaseDiff = 0.15 * toleranceMulti;
+    const maxHarmDiff = 1.5 * toleranceMulti;
 
     const isAmpliOk = ampliDiff <= maxAmpliDiff;
     const isFreqOk = freqDiff <= maxFreqDiff;
@@ -129,13 +129,19 @@ export default function DecoderMinigame() {
 
   // Render SVG Path generator
   const generateWavePath = (a, f, p, h) => {
-    let path = 'M 0 ' + (100 - (Math.sin(p) * a + Math.cos(p*2) * h));
+    let path = 'M 0 ' + (100 - (Math.sin(p) * a + Math.sin(0) * h));
     for (let x = 0; x <= 600; x += 5) {
       const y = 100 - (Math.sin(x * f + p) * a + Math.sin(x * f * 2.5) * h);
       path += ' L ' + x + ' ' + y;
     }
     return path;
   };
+
+  // Determinar qué valores dibujar. Si hay sincronía, usamos los valores objetivo para que el encaje visual sea PERFECTO
+  const drawAmpli = isSynced ? targetAmpli : ampli;
+  const drawFreq = isSynced ? targetFreq : freq;
+  const drawPhase = isSynced ? targetPhase : phase;
+  const drawHarm = isSynced ? targetHarm : harm;
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#02050a' }}>
@@ -185,11 +191,11 @@ export default function DecoderMinigame() {
               />
               {/* Player Wave */}
               <path 
-                d={generateWavePath(ampli, freq, phase, harm)} 
+                d={generateWavePath(drawAmpli, drawFreq, drawPhase, drawHarm)} 
                 fill="none" 
                 stroke={isSynced ? 'var(--success)' : 'var(--electric-blue)'} 
                 strokeWidth="3" 
-                style={{ filter: isSynced ? 'drop-shadow(0px 0px 8px rgba(0,255,136,0.8))' : 'drop-shadow(0px 0px 5px rgba(0,228,255,0.5))' }}
+                style={{ filter: isSynced ? 'drop-shadow(0px 0px 8px rgba(0,255,136,0.8))' : 'drop-shadow(0px 0px 5px rgba(0,228,255,0.5))', transition: 'd 0.3s ease-out' }}
               />
            </svg>
 
