@@ -28,7 +28,7 @@ export default function StellarObjectsMap() {
   }
 
   // Orden estricto de las Anomalías Cósmicas
-  const planetOrder = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'];
+  const planetOrder = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf'];
 
   // Coordenadas orgánicas distribuidas a lo largo del "Canvas" de la galaxia profunda
   const orbitalData = {
@@ -36,8 +36,7 @@ export default function StellarObjectsMap() {
     quasar: { left: '70%', top: '25%', size: 'clamp(90px, 12vw, 180px)' },
     pulsar: { left: '85%', top: '75%', size: 'clamp(70px, 10vw, 140px)' },
     red_dwarf: { left: '15%', top: '20%', size: 'clamp(50px, 8vw, 120px)' },
-    white_dwarf: { left: '50%', top: '80%', size: 'clamp(30px, 5vw, 80px)' },
-    wormhole: { left: '55%', top: '40%', size: 'clamp(120px, 16vw, 240px)' }
+    white_dwarf: { left: '50%', top: '80%', size: 'clamp(30px, 5vw, 80px)' }
   };
 
   // Determinar Índice de Progreso

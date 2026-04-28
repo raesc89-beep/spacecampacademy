@@ -82,6 +82,16 @@ const DASHBOARD_MISSIONS = [
     borderColor: "rgba(255, 99, 71, 0.4)"
   },
   {
+    id: "agujeros_gusano_er",
+    title: "Agujeros de Gusano Einstein-Rosen",
+    subtitle: "Atajos espaciotemporales, materia exótica y la visión de Contacto.",
+    link: "/course/agujeros_gusano_er",
+    bgSrc: "/assets/dashboard/agujeros_gusano_cover.png",
+    badgeColor: "#00FFCC",
+    badgeText: "Teoría Astrofísica",
+    borderColor: "rgba(0, 255, 204, 0.4)"
+  },
+  {
     id: "decoder",
     title: "Interceptación Estelar",
     subtitle: "Decodifica frecuencias alienígenas para ganar logros.",

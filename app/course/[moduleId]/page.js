@@ -39,6 +39,7 @@ export default function CourseModule() {
         // a no ser que el administrador agregue *más* secciones por su voluntad.
         const enforce15x15Rule = (mod) => {
           if (!mod || !mod.contentEs || !mod.contentEs.sections) return mod;
+          if (!mod.id.startsWith('robots_')) return mod; // SOLO APLICA A LOS ROVERS, no corromper otros cursos
           
           let sections = [...mod.contentEs.sections];
           const fallbacks = [
@@ -150,6 +151,7 @@ export default function CourseModule() {
   const isAsteroide = moduleData.id.startsWith('asteroides_');
   const isPionero = moduleData.id.startsWith('pioneros_');
   const isRobot = moduleData.id.startsWith('robots_');
+  const isEinsteinRosen = moduleData.id === 'agujeros_gusano_er';
   const isPluto = moduleData.id === 'pluto';
   const isSun = moduleData.id === 'sun';
   
@@ -325,7 +327,7 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href={isRobot ? "/hub/robots-espacio" : (isPionero ? "/hub/pioneros" : (isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"))))} className="btn-secondary" style={{ textAlign: 'center' }}>
+          <Link href={isEinsteinRosen ? "/dashboard" : (isRobot ? "/hub/robots-espacio" : (isPionero ? "/hub/pioneros" : (isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system")))))} className="btn-secondary" style={{ textAlign: 'center' }}>
             Volver al Mapa Estelar
           </Link>
         </aside>
