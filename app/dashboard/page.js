@@ -12,6 +12,16 @@ import Image from 'next/image';
 
 const DASHBOARD_MISSIONS = [
   {
+    id: "objetos_interestelares",
+    title: "Objetos Interestelares",
+    subtitle: "Viajeros de otros sistemas estelares cruzando nuestro vecindario.",
+    link: "/course/objetos_interestelares",
+    bgSrc: "https://source.unsplash.com/featured/?interstellar,nebula,galaxy",
+    badgeColor: "#00E4FF",
+    badgeText: "Exploración Galáctica",
+    borderColor: "rgba(0, 228, 255, 0.4)"
+  },
+  {
     id: "viaje_planetas_rocosos",
     title: "Planetas Rocosos",
     subtitle: "Explora la geología extrema de Mercurio, Venus, Tierra y Marte.",
