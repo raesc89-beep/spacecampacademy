@@ -6,19 +6,20 @@ export default function Home() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div style={{ 
-        position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -2, 
+        position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -2, 
         overflow: 'hidden', background: 'black'
       }}>
         <iframe 
-          src="https://drive.google.com/file/d/1rvCvI9sdKmPHyPUkELND1SWLzeElXSg1/preview" 
+          src="https://drive.google.com/file/d/1rvCvI9sdKmPHyPUkELND1SWLzeElXSg1/preview?autoplay=1" 
           style={{ 
             position: 'absolute', top: '50%', left: '50%', 
-            width: '100vw', height: '100vh', 
-            transform: 'translate(-50%, -50%) scale(1.5)', 
+            width: '100vw', height: '56.25vw', /* 16:9 ratio */
+            minHeight: '100vh', minWidth: '177.77vh', /* 16:9 ratio fallback */
+            transform: 'translate(-50%, -50%) scale(1.1)', 
             border: 'none', pointerEvents: 'none',
-            filter: 'blur(10px) brightness(0.6)' 
+            filter: 'blur(8px) brightness(0.5)' 
           }} 
-          allow="autoplay"
+          allow="autoplay; fullscreen"
         />
         {/* Marca de agua transparente */}
         <div style={{ 
