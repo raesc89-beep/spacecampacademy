@@ -12,6 +12,26 @@ import Image from 'next/image';
 
 const DASHBOARD_MISSIONS = [
   {
+    id: "viaje_planetas_rocosos",
+    title: "Planetas Rocosos",
+    subtitle: "Explora la geología extrema de Mercurio, Venus, Tierra y Marte.",
+    link: "/course/viaje_planetas_rocosos",
+    bgSrc: "/assets/dashboard/rocosos_cover.png",
+    badgeColor: "#D2691E",
+    badgeText: "Geología Estelar",
+    borderColor: "rgba(210, 105, 30, 0.4)"
+  },
+  {
+    id: "exoplanetas",
+    title: "Los Exoplanetas",
+    subtitle: "Cazando mundos lejanos más allá de nuestro sol.",
+    link: "/course/exoplanetas",
+    bgSrc: "/assets/dashboard/exoplanetas_cover.png",
+    badgeColor: "#9370DB",
+    badgeText: "Exploración Profunda",
+    borderColor: "rgba(147, 112, 219, 0.4)"
+  },
+  {
     id: "asteroides",
     title: "Asteroides y Cometas",
     subtitle: "Rocas y hielos milenarios del espacio profundo.",
@@ -125,6 +145,7 @@ const DASHBOARD_MISSIONS = [
     isMinigame: true
   }
 ];
+
 
 export default function CourseHub() {
   const { user, userData, loading } = useAuth();

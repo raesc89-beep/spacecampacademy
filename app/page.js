@@ -6,18 +6,29 @@ export default function Home() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div style={{ 
-        position: 'fixed', top: '-10%', left: '-10%', width: '120%', height: '120%', zIndex: -1, 
-        opacity: 0.4, 
-        backgroundImage: 'url("/assets/galaxy_bg.jpg")', 
-        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
-        animation: 'slowDrift 60s linear infinite alternate'
-      }} />
-      <style>{`
-        @keyframes slowDrift {
-          0% { transform: scale(1) translate(0, 0); }
-          100% { transform: scale(1.1) translate(-2%, -2%); }
-        }
-      `}</style>
+        position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -2, 
+        overflow: 'hidden', background: 'black'
+      }}>
+        <iframe 
+          src="https://drive.google.com/file/d/1rvCvI9sdKmPHyPUkELND1SWLzeElXSg1/preview" 
+          style={{ 
+            position: 'absolute', top: '50%', left: '50%', 
+            width: '100vw', height: '100vh', 
+            transform: 'translate(-50%, -50%) scale(1.5)', 
+            border: 'none', pointerEvents: 'none',
+            filter: 'blur(10px) brightness(0.6)' 
+          }} 
+          allow="autoplay"
+        />
+        {/* Marca de agua transparente */}
+        <div style={{ 
+          position: 'absolute', bottom: '2rem', right: '2rem', 
+          opacity: 0.1, pointerEvents: 'none', filter: 'grayscale(100%)' 
+        }}>
+          <AnimatedMainLogo size={150} />
+        </div>
+      </div>
+
       {/* Navbar Simple */}
       <nav style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(10px)', position: 'sticky', top: 0, zIndex: 100 }}>
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, fontFamily: 'var(--font-quantico)', color: 'white' }}>
