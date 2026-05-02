@@ -16,7 +16,7 @@ const DASHBOARD_MISSIONS = [
     title: "Objetos Interestelares",
     subtitle: "Viajeros de otros sistemas estelares cruzando nuestro vecindario.",
     link: "/course/objetos_interestelares",
-    bgSrc: "https://source.unsplash.com/featured/?interstellar,nebula,galaxy",
+    bgSrc: "/assets/dashboard/interestelar_cover.png",
     badgeColor: "#00E4FF",
     badgeText: "Exploración Galáctica",
     borderColor: "rgba(0, 228, 255, 0.4)"
