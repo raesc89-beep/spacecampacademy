@@ -30,6 +30,13 @@ export default function QuizMinigame() {
 
   useEffect(() => {
     async function fetchModule() {
+      if (params.moduleId === 'objetos_interestelares') {
+        const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
+        if (staticMod) {
+          setModuleData(staticMod);
+          return;
+        }
+      }
       const d = await getDoc(doc(db, "modules", params.moduleId));
       if (d.exists()) setModuleData(d.data());
     }
