@@ -40,7 +40,7 @@ const useAAAMaterials = (colors) => {
     emissive: new THREE.MeshStandardMaterial({ 
       color: colors.emissive, 
       emissive: colors.emissive, 
-      emissiveIntensity: 10, // Alto para Bloom
+      emissiveIntensity: 2, // Reducido para evitar blowout
       toneMapped: false 
     }),
     dark: new THREE.MeshStandardMaterial({
@@ -245,10 +245,10 @@ export default function SpaceshipScene() {
         {/* POSTPROCESADO AAA */}
         <EffectComposer disableNormalPass multisampling={4}>
           <Bloom 
-            luminanceThreshold={0.5} 
+            luminanceThreshold={0.9} 
             mipmapBlur 
-            intensity={2} 
-            radius={0.8} 
+            intensity={0.5} 
+            radius={0.3} 
           />
           <DepthOfField focusDistance={0} focalLength={0.02} bokehScale={2} height={480} />
           <Noise opacity={0.03} blendFunction={BlendFunction.OVERLAY} />
