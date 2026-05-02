@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
     "archiver": "^7.0.1",
     "firebase": "^12.11.0",
     "framer-motion": "^12.38.0",
@@ -19,6 +21,8 @@
     "react-dom": "19.2.4",
     "react-firebase-hooks": "^5.1.1",
     "recharts": "^3.8.1",
-    "scorm-again": "^3.0.1"
+    "scorm-again": "^3.0.1",
+    "three": "^0.184.0",
+    "zustand": "^5.0.12"
   }
 }
