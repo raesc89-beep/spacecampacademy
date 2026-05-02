@@ -102,6 +102,16 @@ export default function CourseModule() {
           return mod;
         };
 
+        // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, usar los datos puros del código para sobreescribir el CMS antiguo.
+        if (params.moduleId === 'objetos_interestelares') {
+          const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
+          if (staticMod) {
+             setModuleData(staticMod);
+             setDataLoading(false);
+             return;
+          }
+        }
+
         if (firestoreDoc.exists()) {
           // Found a CMS-edited version — merge with static data for quiz/color/etc
           const firestoreData = firestoreDoc.data();
