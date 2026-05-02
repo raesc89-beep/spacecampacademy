@@ -1,24 +1,50 @@
 'use client';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Environment, ContactShadows, Float, useGLTF } from '@react-three/drei';
+import { OrbitControls, Environment, ContactShadows, Float, useTexture, Stars } from '@react-three/drei';
 import { useShipStore } from '@/store/useShipStore';
 import * as THREE from 'three';
 
-// Material Components
-const getMaterials = (colors) => {
+// Procedural PBR Material with simulated detail
+const useShipMaterials = (colors) => {
+  // Using public seamless textures for realism
+  const [normalMap, roughnessMap] = useTexture([
+    'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/water/Water_1_M_Normal.jpg', // Repurposing as sci-fi panels via tiling
+    'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/golfball.jpg' // Adds micro-surface detail
+  ]);
+
+  normalMap.wrapS = normalMap.wrapT = THREE.RepeatWrapping;
+  normalMap.repeat.set(4, 4);
+  roughnessMap.wrapS = roughnessMap.wrapT = THREE.RepeatWrapping;
+  roughnessMap.repeat.set(2, 2);
+
   return {
     primary: new THREE.MeshStandardMaterial({ 
-      color: colors.primary, roughness: 0.2, metalness: 0.8 
+      color: colors.primary, 
+      roughness: 0.3, 
+      metalness: 0.8,
+      normalMap: normalMap,
+      normalScale: new THREE.Vector2(0.5, 0.5),
+      roughnessMap: roughnessMap
     }),
     secondary: new THREE.MeshStandardMaterial({ 
-      color: colors.secondary, roughness: 0.5, metalness: 0.5 
+      color: colors.secondary, 
+      roughness: 0.5, 
+      metalness: 0.6,
+      normalMap: normalMap,
+      normalScale: new THREE.Vector2(0.2, 0.2)
     }),
     emissive: new THREE.MeshStandardMaterial({ 
-      color: colors.emissive, emissive: colors.emissive, emissiveIntensity: 2, toneMapped: false 
+      color: colors.emissive, 
+      emissive: colors.emissive, 
+      emissiveIntensity: 5, 
+      toneMapped: false 
     }),
     dark: new THREE.MeshStandardMaterial({
-      color: '#111111', roughness: 0.9, metalness: 0.1
+      color: '#0a0a0a', roughness: 0.8, metalness: 0.9, normalMap: normalMap
+    }),
+    glass: new THREE.MeshPhysicalMaterial({
+      color: '#000000', metalness: 0.9, roughness: 0.1, envMapIntensity: 2, clearcoat: 1, transparent: true, opacity: 0.8
     })
   };
 };
@@ -26,137 +52,172 @@ const getMaterials = (colors) => {
 function ProceduralShip() {
   const { shipConfig } = useShipStore();
   const group = useRef();
-  const materials = getMaterials(shipConfig.colors);
+  
+  // Safe material loading
+  let materials;
+  try {
+    materials = useShipMaterials(shipConfig.colors);
+  } catch (e) {
+    // Fallback if textures fail to load
+    materials = {
+      primary: new THREE.MeshStandardMaterial({ color: shipConfig.colors.primary, metalness: 0.8, roughness: 0.2 }),
+      secondary: new THREE.MeshStandardMaterial({ color: shipConfig.colors.secondary, metalness: 0.6, roughness: 0.4 }),
+      emissive: new THREE.MeshStandardMaterial({ color: shipConfig.colors.emissive, emissive: shipConfig.colors.emissive, emissiveIntensity: 2 }),
+      dark: new THREE.MeshStandardMaterial({ color: '#111', metalness: 0.8, roughness: 0.8 }),
+      glass: new THREE.MeshStandardMaterial({ color: '#000', metalness: 1, roughness: 0 })
+    };
+  }
 
-  // Animación sutil de la nave
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
-    group.current.rotation.z = Math.sin(t * 0.5) * 0.05;
-    group.current.rotation.x = Math.cos(t * 0.4) * 0.05;
+    group.current.position.y = Math.sin(t) * 0.1;
   });
 
   return (
-    <group ref={group} dispose={null}>
-      {/* NÚCLEO CENTRAL (Siempre presente) */}
-      <mesh position={[0, 0, 0]} material={materials.emissive}>
-        <cylinderGeometry args={[0.3, 0.3, 1.5, 16]} />
+    <group ref={group} dispose={null} scale={1.5}>
+      {/* NÚCLEO CENTRAL (Reactor) */}
+      <mesh position={[0, 0.1, -0.5]} material={materials.emissive}>
+        <cylinderGeometry args={[0.4, 0.4, 0.8, 16]} rotation={[Math.PI/2, 0, 0]} />
+      </mesh>
+      <mesh position={[0, 0.1, -0.5]} material={materials.dark}>
+        <cylinderGeometry args={[0.45, 0.45, 0.6, 16]} rotation={[Math.PI/2, 0, 0]} />
       </mesh>
 
-      {/* FUSELAJE */}
+      {/* FUSELAJE (Más estilizado) */}
       {shipConfig.fuselage === 'fighter' && (
-        <mesh position={[0, 0, 1]} rotation={[Math.PI/2, 0, 0]} material={materials.primary}>
-          <coneGeometry args={[0.8, 4, 32]} />
-        </mesh>
+        <group>
+          <mesh position={[0, 0, 1.5]} rotation={[Math.PI/2, 0, 0]} material={materials.primary}>
+            <coneGeometry args={[0.6, 4, 6]} /> {/* Geometría hexagonal */}
+          </mesh>
+          <mesh position={[0, 0.2, 0.5]} material={materials.secondary}>
+             <boxGeometry args={[1.2, 0.4, 3]} />
+          </mesh>
+        </group>
       )}
       {shipConfig.fuselage === 'cargo' && (
-        <mesh position={[0, 0, 0]} material={materials.primary}>
-          <boxGeometry args={[1.5, 1.2, 4]} />
+        <mesh position={[0, 0, 1]} material={materials.primary}>
+          <boxGeometry args={[1.8, 1.5, 5]} />
         </mesh>
       )}
       {shipConfig.fuselage === 'explorer' && (
-        <mesh position={[0, 0, 0]} material={materials.primary}>
-          <capsuleGeometry args={[0.8, 3, 16, 32]} />
+        <mesh position={[0, 0, 1]} material={materials.primary}>
+          <capsuleGeometry args={[0.9, 4, 16, 32]} rotation={[Math.PI/2, 0, 0]} />
         </mesh>
       )}
 
-      {/* CABINA */}
-      <mesh position={[0, 0.5, 1.5]} material={materials.dark}>
-        <sphereGeometry args={[0.4, 32, 16, 0, Math.PI * 2, 0, Math.PI/2]} />
+      {/* CABINA DE CRISTAL (Estilo realista) */}
+      <mesh position={[0, 0.6, 1.8]} material={materials.glass}>
+        <sphereGeometry args={[0.45, 32, 16, 0, Math.PI * 2, 0, Math.PI/2]} />
+      </mesh>
+      <mesh position={[0, 0.5, 1.8]} material={materials.dark}>
+        <cylinderGeometry args={[0.48, 0.48, 0.2, 32]} />
       </mesh>
 
-      {/* ALAS */}
+      {/* ALAS AVANZADAS */}
       {shipConfig.wings === 'delta' && (
         <group>
-          <mesh position={[1.2, -0.2, 0]} rotation={[0, 0, -0.2]} material={materials.secondary}>
-            <boxGeometry args={[2.5, 0.1, 1.5]} />
+          <mesh position={[1.4, -0.1, 0.5]} rotation={[0, 0, -0.1]} material={materials.secondary}>
+            <cylinderGeometry args={[0.01, 2, 0.1, 3]} rotation={[0, -Math.PI/2, 0]} />
           </mesh>
-          <mesh position={[-1.2, -0.2, 0]} rotation={[0, 0, 0.2]} material={materials.secondary}>
-            <boxGeometry args={[2.5, 0.1, 1.5]} />
+          <mesh position={[-1.4, -0.1, 0.5]} rotation={[0, 0, 0.1]} material={materials.secondary}>
+            <cylinderGeometry args={[0.01, 2, 0.1, 3]} rotation={[0, Math.PI/2, 0]} />
           </mesh>
         </group>
       )}
       {shipConfig.wings === 'xwing' && (
         <group>
-          {/* Superior derecha, inferior derecha, sup izq, inf izq */}
-          <mesh position={[1, 0.5, -0.5]} rotation={[0, 0, -0.5]} material={materials.secondary}><boxGeometry args={[2, 0.1, 1]} /></mesh>
-          <mesh position={[1, -0.5, -0.5]} rotation={[0, 0, 0.5]} material={materials.secondary}><boxGeometry args={[2, 0.1, 1]} /></mesh>
-          <mesh position={[-1, 0.5, -0.5]} rotation={[0, 0, 0.5]} material={materials.secondary}><boxGeometry args={[2, 0.1, 1]} /></mesh>
-          <mesh position={[-1, -0.5, -0.5]} rotation={[0, 0, -0.5]} material={materials.secondary}><boxGeometry args={[2, 0.1, 1]} /></mesh>
+          <mesh position={[1.5, 0.8, 0]} rotation={[0, 0, -0.4]} material={materials.secondary}><boxGeometry args={[3, 0.1, 1.5]} /></mesh>
+          <mesh position={[1.5, -0.6, 0]} rotation={[0, 0, 0.4]} material={materials.secondary}><boxGeometry args={[3, 0.1, 1.5]} /></mesh>
+          <mesh position={[-1.5, 0.8, 0]} rotation={[0, 0, 0.4]} material={materials.secondary}><boxGeometry args={[3, 0.1, 1.5]} /></mesh>
+          <mesh position={[-1.5, -0.6, 0]} rotation={[0, 0, -0.4]} material={materials.secondary}><boxGeometry args={[3, 0.1, 1.5]} /></mesh>
         </group>
       )}
       {shipConfig.wings === 'ring' && (
-        <mesh position={[0, 0, -0.5]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}>
-          <torusGeometry args={[1.5, 0.2, 16, 64]} />
+        <mesh position={[0, 0, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}>
+          <torusGeometry args={[2.2, 0.3, 16, 64]} />
         </mesh>
       )}
 
-      {/* MOTORES */}
-      <group position={[0, 0, -2]}>
+      {/* MOTORES (Reactores detallados) */}
+      <group position={[0, 0, -1.5]}>
         {shipConfig.engines === 'ion' ? (
           <>
-            <mesh position={[0.4, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.3, 0.4, 0.5, 16]} rotation={[Math.PI/2,0,0]} /></mesh>
-            <mesh position={[0.4, 0, -0.3]} material={materials.emissive}><circleGeometry args={[0.25, 32]} rotation={[Math.PI,0,0]} /></mesh>
-            <mesh position={[-0.4, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.3, 0.4, 0.5, 16]} rotation={[Math.PI/2,0,0]} /></mesh>
-            <mesh position={[-0.4, 0, -0.3]} material={materials.emissive}><circleGeometry args={[0.25, 32]} rotation={[Math.PI,0,0]} /></mesh>
+            <mesh position={[0.6, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.4, 0.3, 1.5, 16]} rotation={[Math.PI/2,0,0]} /></mesh>
+            <mesh position={[0.6, 0, -0.8]} material={materials.emissive}><circleGeometry args={[0.3, 32]} rotation={[Math.PI,0,0]} /></mesh>
+            <mesh position={[-0.6, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.4, 0.3, 1.5, 16]} rotation={[Math.PI/2,0,0]} /></mesh>
+            <mesh position={[-0.6, 0, -0.8]} material={materials.emissive}><circleGeometry args={[0.3, 32]} rotation={[Math.PI,0,0]} /></mesh>
           </>
         ) : (
           <mesh position={[0, 0, 0]} material={materials.dark}>
-            <boxGeometry args={[1.5, 0.5, 0.5]} />
-            <mesh position={[0, 0, -0.26]} material={materials.emissive}>
-               <planeGeometry args={[1.3, 0.3]} rotation={[Math.PI,0,0]} />
+            <boxGeometry args={[2, 0.6, 1]} />
+            <mesh position={[0, 0, -0.51]} material={materials.emissive}>
+               <planeGeometry args={[1.8, 0.4]} rotation={[Math.PI,0,0]} />
             </mesh>
           </mesh>
         )}
       </group>
+    </group>
+  );
+}
 
-      {/* ARMAS */}
-      {shipConfig.weapon === 'laser' && (
-        <group position={[0, -0.5, 1.5]}>
-          <mesh position={[0.3, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.05, 0.05, 1, 8]} rotation={[Math.PI/2,0,0]}/></mesh>
-          <mesh position={[-0.3, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.05, 0.05, 1, 8]} rotation={[Math.PI/2,0,0]}/></mesh>
-          {/* Laser Glow */}
-          <mesh position={[0.3, 0, 0.5]} material={materials.emissive}><cylinderGeometry args={[0.02, 0.02, 0.5, 8]} rotation={[Math.PI/2,0,0]}/></mesh>
-          <mesh position={[-0.3, 0, 0.5]} material={materials.emissive}><cylinderGeometry args={[0.02, 0.02, 0.5, 8]} rotation={[Math.PI/2,0,0]}/></mesh>
-        </group>
-      )}
-      {shipConfig.weapon === 'missile' && (
-        <group position={[0, -0.6, 0.5]}>
-          <mesh position={[0.5, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.1, 0.1, 0.8, 8]} rotation={[Math.PI/2,0,0]}/></mesh>
-          <mesh position={[-0.5, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.1, 0.1, 0.8, 8]} rotation={[Math.PI/2,0,0]}/></mesh>
-        </group>
-      )}
+// Entorno de Hangar Espacial (Reemplaza el fondo vacío)
+function HangarEnvironment() {
+  return (
+    <group>
+      {/* Plataforma de Aterrizaje */}
+      <mesh position={[0, -2.5, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
+        <circleGeometry args={[15, 64]} />
+        <meshStandardMaterial color="#1a1a2e" metalness={0.5} roughness={0.2} />
+      </mesh>
+      {/* Anillos de luz de la plataforma */}
+      <mesh position={[0, -2.49, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <ringGeometry args={[14, 14.2, 64]} />
+        <meshBasicMaterial color="#00ffff" transparent opacity={0.5} />
+      </mesh>
+      <mesh position={[0, -2.49, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <ringGeometry args={[8, 8.1, 64]} />
+        <meshBasicMaterial color="#ff0055" transparent opacity={0.3} />
+      </mesh>
     </group>
   );
 }
 
 export default function SpaceshipScene() {
   return (
-    <div className="w-full h-full bg-slate-900 rounded-lg overflow-hidden relative shadow-2xl shadow-cyan-900/20 border border-slate-700/50">
-      {/* Background Grid Grid Overlay */}
-      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
-           style={{ backgroundImage: 'linear-gradient(rgba(0, 255, 255, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 255, 0.5) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-      
-      <Canvas shadows camera={{ position: [4, 3, 5], fov: 45 }} className="z-10">
-        <color attach="background" args={['#050816']} />
+    <div className="w-full h-full bg-[#030508]">
+      <Canvas shadows camera={{ position: [8, 4, 8], fov: 45 }}>
+        {/* Espacio profundo */}
+        <color attach="background" args={['#02040a']} />
+        <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
         
-        {/* Luces y Ambiente */}
-        <ambientLight intensity={0.5} />
-        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={2} castShadow />
-        <pointLight position={[-10, -10, -10]} intensity={1} color="#00FFFF" />
+        {/* Iluminación de Estudio Cinematográfica */}
+        <ambientLight intensity={0.2} />
+        <spotLight position={[0, 15, 0]} angle={0.6} penumbra={0.5} intensity={5} castShadow color="#ffffff" />
+        <spotLight position={[10, 5, 10]} angle={0.3} penumbra={1} intensity={3} color="#00ffff" />
+        <spotLight position={[-10, 5, -10]} angle={0.3} penumbra={1} intensity={3} color="#ff0055" />
         
-        {/* Entorno HDRI para reflejos metálicos realistas */}
-        <Environment preset="city" />
+        {/* Entorno HDRI para reflejos de metal de alta fidelidad */}
+        <Environment preset="studio" />
         
-        {/* Modelo Flotante */}
-        <Float speed={1.5} rotationIntensity={0.5} floatIntensity={0.5}>
+        {/* Escenario y Nave */}
+        <HangarEnvironment />
+        
+        <Float speed={2} rotationIntensity={0.2} floatIntensity={0.5}>
           <ProceduralShip />
         </Float>
         
-        {/* Sombras de Contacto */}
-        <ContactShadows position={[0, -2, 0]} opacity={0.5} scale={10} blur={2} far={4} />
+        <ContactShadows position={[0, -2.4, 0]} opacity={0.8} scale={20} blur={2} far={4} color="#000000" />
         
-        {/* Controles de Cámara Orbital */}
-        <OrbitControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / 1.5} enableZoom={true} enablePan={false} />
+        <OrbitControls 
+          makeDefault 
+          minPolarAngle={0} 
+          maxPolarAngle={Math.PI / 2 + 0.1} 
+          minDistance={5}
+          maxDistance={15}
+          enablePan={false}
+          autoRotate
+          autoRotateSpeed={0.5}
+        />
       </Canvas>
     </div>
   );
