@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ai-sdk/google": "^3.0.67",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
     "@react-three/postprocessing": "^3.0.4",
+    "ai": "^6.0.174",
     "archiver": "^7.0.1",
     "firebase": "^12.11.0",
     "framer-motion": "^12.38.0",
