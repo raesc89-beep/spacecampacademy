@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AstroD() {
   const [isOpen, setIsOpen] = useState(false);
+  const [localInput, setLocalInput] = useState('');
   const { user, userData } = useAuth();
   const messagesEndRef = useRef(null);
 
@@ -18,10 +19,17 @@ export default function AstroD() {
     } : null
   }), [userData?.role, userData?.progress?.stars]);
 
-  const { messages, input, setInput, handleInputChange, handleSubmit, isLoading, error, append } = useChat({
+  const { messages, isLoading, error, append } = useChat({
     api: '/api/astro-d',
     body: chatBody
   });
+
+  const handleCustomSubmit = (e) => {
+    e.preventDefault();
+    if (!localInput.trim()) return;
+    append({ role: 'user', content: localInput });
+    setLocalInput('');
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -227,7 +235,7 @@ export default function AstroD() {
             </div>
 
             {/* Input Area */}
-            <form onSubmit={handleSubmit} style={{ 
+            <form onSubmit={handleCustomSubmit} style={{ 
               padding: '1rem 1.5rem', 
               background: 'rgba(0,0,0,0.4)',
               borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -235,8 +243,8 @@ export default function AstroD() {
               gap: '0.8rem'
             }}>
               <input
-                value={input || ''}
-                onChange={handleInputChange}
+                value={localInput}
+                onChange={(e) => setLocalInput(e.target.value)}
                 placeholder="Transmite tu mensaje a Astro-D..."
                 style={{
                   flex: 1,
@@ -257,7 +265,7 @@ export default function AstroD() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 type="submit"
-                disabled={isLoading || !(input || '').trim()}
+                disabled={isLoading || !localInput.trim()}
                 style={{
                   background: 'var(--electric-blue)',
                   border: 'none',
@@ -268,8 +276,8 @@ export default function AstroD() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: 'black',
-                  cursor: isLoading || !(input || '').trim() ? 'not-allowed' : 'pointer',
-                  opacity: isLoading || !(input || '').trim() ? 0.5 : 1,
+                  cursor: isLoading || !localInput.trim() ? 'not-allowed' : 'pointer',
+                  opacity: isLoading || !localInput.trim() ? 0.5 : 1,
                   boxShadow: '0 0 15px rgba(0, 228, 255, 0.4)'
                 }}
               >
