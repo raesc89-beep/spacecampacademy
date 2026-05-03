@@ -12,6 +12,16 @@ import Image from 'next/image';
 
 const DASHBOARD_MISSIONS = [
   {
+    id: "ciencia_volver_al_futuro",
+    title: "La Ciencia de Volver al Futuro",
+    subtitle: "Cronodinámica, gravitación y energía de fusión a través del DeLorean.",
+    link: "/course/ciencia_volver_al_futuro",
+    bgSrc: "/assets/bttf/bttf_cover.png",
+    badgeColor: "#FF4500",
+    badgeText: "Física Cuántica",
+    borderColor: "rgba(255, 69, 0, 0.4)"
+  },
+  {
     id: "ciencia_star_wars",
     title: "La Ciencia de Star Wars",
     subtitle: "Astrofísica, biomecatrónica y evolución cuántica aplicada al universo galáctico.",

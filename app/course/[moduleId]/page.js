@@ -102,8 +102,8 @@ export default function CourseModule() {
           return mod;
         };
 
-        // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, arqueoastronomia_maya o ciencia_star_wars, usar los datos estáticos puros para sobreescribir el CMS antiguo.
-        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars') {
+        // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, arqueoastronomia_maya, ciencia_star_wars o ciencia_volver_al_futuro, usar los datos estáticos puros.
+        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro') {
           const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
           if (staticMod) {
              setModuleData(staticMod);
