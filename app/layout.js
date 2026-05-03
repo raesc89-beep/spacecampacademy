@@ -6,7 +6,8 @@ const metadata = {
   description: 'Un viaje educativo por el Sistema Solar para cadetes espaciales. Aprende sobre los 9 planetas y gana medallas intergalácticas.',
 }
 
-import AstroD from '@/components/AstroD'
+import dynamic from 'next/dynamic'
+const AstroD = dynamic(() => import('@/components/AstroD'), { ssr: false })
 
 export default function RootLayout({ children }) {
   return (
