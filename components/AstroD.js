@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { useChat } from 'ai/react';
+import { useChat } from '@ai-sdk/react';
 import { Bot, X, Send, Rocket, Sparkles } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 
