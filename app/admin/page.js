@@ -59,15 +59,17 @@ export default function AdminDashboardPage() {
 
       {/* Tarjetas de Métricas Rápidas */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
-        <div className="glass-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderLeft: '4px solid var(--starlight)' }}>
-          <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px' }}>
-            <Users size={28} color="var(--starlight)" />
+        <a href="/admin/users" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <div className="glass-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderLeft: '4px solid var(--starlight)', cursor: 'pointer', transition: 'transform 0.2s' }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
+            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px' }}>
+              <Users size={28} color="var(--starlight)" />
+            </div>
+            <div>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)' }}>Total Cadetes Registrados</p>
+              <h2 style={{ margin: 0, fontSize: '2rem' }}>{stats.users}</h2>
+            </div>
           </div>
-          <div>
-            <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)' }}>Total Cadetes Registrados</p>
-            <h2 style={{ margin: 0, fontSize: '2rem' }}>{stats.users}</h2>
-          </div>
-        </div>
+        </a>
       </div>
 
       {/* Control de Transmisión en Vivo (Tarea 9) */}
