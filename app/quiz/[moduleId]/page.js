@@ -30,7 +30,7 @@ export default function QuizMinigame() {
 
   useEffect(() => {
     async function fetchModule() {
-      if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya') {
+      if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars') {
         const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
         if (staticMod) {
           setModuleData(staticMod);
