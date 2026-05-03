@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import { useChat } from '@ai-sdk/react';
 import { X, Send, Sparkles, AlertTriangle, Loader2 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
@@ -11,14 +11,16 @@ export default function AstroD() {
   const { user, userData } = useAuth();
   const messagesEndRef = useRef(null);
 
+  const chatBody = useMemo(() => ({
+    userContext: userData ? {
+      role: userData.role,
+      stars: userData?.progress?.stars || 0
+    } : null
+  }), [userData?.role, userData?.progress?.stars]);
+
   const { messages, input, setInput, handleInputChange, handleSubmit, isLoading, error, append } = useChat({
     api: '/api/astro-d',
-    body: {
-      userContext: userData ? {
-        role: userData.role,
-        stars: userData?.progress?.stars || 0
-      } : null
-    }
+    body: chatBody
   });
 
   const scrollToBottom = () => {
