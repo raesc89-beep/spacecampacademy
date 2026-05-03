@@ -233,7 +233,7 @@ export default function AstroD() {
               gap: '0.8rem'
             }}>
               <input
-                value={input}
+                value={input || ''}
                 onChange={handleInputChange}
                 placeholder="Transmite tu mensaje a Astro-D..."
                 style={{
@@ -255,7 +255,7 @@ export default function AstroD() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 type="submit"
-                disabled={isLoading || !input.trim()}
+                disabled={isLoading || !(input || '').trim()}
                 style={{
                   background: 'var(--electric-blue)',
                   border: 'none',
@@ -266,8 +266,8 @@ export default function AstroD() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: 'black',
-                  cursor: isLoading || !input.trim() ? 'not-allowed' : 'pointer',
-                  opacity: isLoading || !input.trim() ? 0.5 : 1,
+                  cursor: isLoading || !(input || '').trim() ? 'not-allowed' : 'pointer',
+                  opacity: isLoading || !(input || '').trim() ? 0.5 : 1,
                   boxShadow: '0 0 15px rgba(0, 228, 255, 0.4)'
                 }}
               >
