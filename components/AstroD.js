@@ -8,10 +8,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AstroD() {
   const [isOpen, setIsOpen] = useState(false);
-  const { userData } = useAuth();
+  const { user, userData } = useAuth();
   const messagesEndRef = useRef(null);
 
-  const { messages, input, setInput, handleInputChange, handleSubmit, isLoading, error } = useChat({
+  const { messages, input, setInput, handleInputChange, handleSubmit, isLoading, error, append } = useChat({
     api: '/api/astro-d',
     body: {
       userContext: userData ? {
@@ -37,10 +37,10 @@ export default function AstroD() {
   ];
 
   const handlePresetClick = (q) => {
-    setInput(q);
-    // Para autosemmitir es complejo porque handleSubmit requiere un evento form,
-    // Pero podemos invocar a la API directamente, o simplemente dejar que el usuario le de Enviar.
+    append({ role: 'user', content: q });
   };
+
+  if (!user) return null;
 
   return (
     <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
