@@ -79,6 +79,6 @@ export async function POST(req) {
     return result.toDataStreamResponse();
   } catch (error) {
     console.error("Error en Astro-D:", error);
-    return new Response(JSON.stringify({ error: "Fallo en los sistemas de comunicación de Astro-D" }), { status: 500 });
+    return new Response(JSON.stringify({ error: "Fallo en los sistemas de comunicación de Astro-D", details: error.message || error.toString() }), { status: 500 });
   }
 }
