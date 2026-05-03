@@ -12,6 +12,16 @@ import Image from 'next/image';
 
 const DASHBOARD_MISSIONS = [
   {
+    id: "arqueoastronomia_maya",
+    title: "Arqueoastronomía Maya",
+    subtitle: "Descubre cómo los antiguos sabios decodificaron la danza de las estrellas.",
+    link: "/course/arqueoastronomia_maya",
+    bgSrc: "https://images.unsplash.com/photo-1518606899538-2cd1ab88001e?q=80&w=800",
+    badgeColor: "#00FF00",
+    badgeText: "Arqueoastronomía",
+    borderColor: "rgba(0, 255, 0, 0.4)"
+  },
+  {
     id: "objetos_interestelares",
     title: "Objetos Interestelares",
     subtitle: "Viajeros de otros sistemas estelares cruzando nuestro vecindario.",
