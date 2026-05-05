@@ -38,7 +38,7 @@ export async function POST(req) {
       `\n\n[CONTEXTO INVISIBLE DEL SISTEMA - NO MENCIONARLO AL USUARIO]: El usuario actual tiene el rol: ${userContext.role}, progreso: ${userContext.stars} estrellas de polvo cósmico.` : '';
 
     const result = streamText({
-      model: google('gemini-1.5-pro'),
+      model: google('gemini-1.5-flash'),
       system: systemPrompt + contextString,
       messages,
       // Implementación de Tool Calling (Agéntico)
