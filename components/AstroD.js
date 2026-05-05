@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AstroD() {
   const [isOpen, setIsOpen] = useState(false);
+  const [localInput, setLocalInput] = useState('');
   const { user, userData } = useAuth();
   const pathname = usePathname();
   const messagesEndRef = useRef(null);
@@ -20,10 +21,19 @@ export default function AstroD() {
     } : null
   }), [userData?.role, userData?.progress?.stars]);
 
-  const { messages, input, setInput, handleInputChange, handleSubmit, isLoading, error, append } = useChat({
+  const { messages, status, error, sendMessage } = useChat({
     api: '/api/astro-d',
     body: chatBody
   });
+
+  const isLoading = status === 'submitted' || status === 'streaming';
+
+  const handleCustomSubmit = (e) => {
+    e.preventDefault();
+    if (!localInput.trim()) return;
+    sendMessage({ role: 'user', text: localInput });
+    setLocalInput('');
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -41,10 +51,10 @@ export default function AstroD() {
   ];
 
   const handlePresetClick = (q) => {
-    append({ id: Date.now().toString(), role: 'user', content: q });
+    sendMessage({ role: 'user', text: q });
   };
 
-  if (!user || pathname === '/' || pathname === '/login') return null;
+  if (!user || pathname === '/' || pathname === '/auth') return null;
 
   return (
     <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
@@ -197,14 +207,14 @@ export default function AstroD() {
                     boxShadow: m.role === 'user' ? '0 5px 15px rgba(0,228,255,0.1)' : 'none'
                   }}
                 >
-                  {m.toolInvocations ? (
+                  {m.toolInvocations || m.parts?.filter(p => p.type === 'tool-invocation').length > 0 ? (
                     <div style={{ color: 'var(--gold-star)', fontStyle: 'italic', fontSize: '0.8rem' }}>
-                      {m.toolInvocations.map(t => (
-                        <div key={t.toolCallId}>⚙️ Ejecutando sub-rutina: {t.toolName}...</div>
+                      {(m.toolInvocations || m.parts?.filter(p => p.type === 'tool-invocation') || []).map(t => (
+                        <div key={t.toolCallId || t.toolInvocation?.toolCallId}>⚙️ Ejecutando sub-rutina: {t.toolName || t.toolInvocation?.toolName}...</div>
                       ))}
                     </div>
                   ) : (
-                    m.content.split('\\n').map((line, i) => <span key={i}>{line}<br/></span>)
+                    (m.content || m.parts?.filter(p => p.type === 'text').map(p => p.text).join('') || m.text || '').split('\\n').map((line, i) => <span key={i}>{line}<br/></span>)
                   )}
                 </motion.div>
               ))}
@@ -229,7 +239,7 @@ export default function AstroD() {
             </div>
 
             {/* Input Area */}
-            <form onSubmit={handleSubmit} style={{ 
+            <form onSubmit={handleCustomSubmit} style={{ 
               padding: '1rem 1.5rem', 
               background: 'rgba(0,0,0,0.4)',
               borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -237,8 +247,8 @@ export default function AstroD() {
               gap: '0.8rem'
             }}>
               <input
-                value={input || ''}
-                onChange={handleInputChange}
+                value={localInput}
+                onChange={(e) => setLocalInput(e.target.value)}
                 placeholder="Transmite tu mensaje a Astro-D..."
                 style={{
                   flex: 1,
@@ -259,7 +269,7 @@ export default function AstroD() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 type="submit"
-                disabled={isLoading || !(input || '').trim()}
+                disabled={isLoading || !localInput.trim()}
                 style={{
                   background: 'var(--electric-blue)',
                   border: 'none',
@@ -270,8 +280,8 @@ export default function AstroD() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: 'black',
-                  cursor: isLoading || !(input || '').trim() ? 'not-allowed' : 'pointer',
-                  opacity: isLoading || !(input || '').trim() ? 0.5 : 1,
+                  cursor: isLoading || !localInput.trim() ? 'not-allowed' : 'pointer',
+                  opacity: isLoading || !localInput.trim() ? 0.5 : 1,
                   boxShadow: '0 0 15px rgba(0, 228, 255, 0.4)'
                 }}
               >
