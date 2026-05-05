@@ -3,12 +3,13 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { useChat } from '@ai-sdk/react';
 import { usePathname } from 'next/navigation';
-import { X, Send, Sparkles, AlertTriangle, Loader2 } from 'lucide-react';
+import { X, Send, Sparkles, AlertTriangle, Loader2, Minus, Maximize2, Minimize2 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AstroD() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMaximized, setIsMaximized] = useState(false);
   const [localInput, setLocalInput] = useState('');
   const { user, userData } = useAuth();
   const pathname = usePathname();
@@ -59,33 +60,45 @@ export default function AstroD() {
   return (
     <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
       
-      {/* Botón flotante */}
+      {/* Botón flotante animado (3D) */}
       <AnimatePresence>
         {!isOpen && (
-          <motion.button 
+          <motion.div
             initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
+            animate={{ scale: 1, y: [0, -15, 0] }}
             exit={{ scale: 0 }}
-            whileHover={{ scale: 1.1, rotate: 5 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setIsOpen(true)}
-            style={{
-              background: 'linear-gradient(135deg, var(--electric-blue), #b026ff)',
-              border: '2px solid rgba(255,255,255,0.5)',
-              borderRadius: '50%',
-              width: '70px',
-              height: '70px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 0 25px rgba(0, 228, 255, 0.6), inset 0 0 10px rgba(255,255,255,0.5)',
-              cursor: 'pointer',
-              overflow: 'hidden',
-              padding: 0
+            transition={{ 
+              scale: { duration: 0.3 }, 
+              y: { repeat: Infinity, duration: 4, ease: "easeInOut" } 
+            }}
+            style={{ 
+              position: 'relative',
+              filter: 'drop-shadow(0 20px 15px rgba(0,0,0,0.5))'
             }}
           >
-            <img src="/assets/astrod.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </motion.button>
+            <motion.button 
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setIsOpen(true)}
+              style={{
+                background: 'linear-gradient(135deg, rgba(0, 228, 255, 0.2), rgba(176, 38, 255, 0.2))',
+                border: '2px solid rgba(0, 228, 255, 0.5)',
+                borderRadius: '50%',
+                width: '80px',
+                height: '80px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 0 30px rgba(0, 228, 255, 0.4), inset 0 0 20px rgba(0, 228, 255, 0.3)',
+                cursor: 'pointer',
+                overflow: 'hidden',
+                padding: 0,
+                backdropFilter: 'blur(10px)'
+              }}
+            >
+              <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '130%', height: '130%', objectFit: 'contain', transform: 'translateY(5px)' }} />
+            </motion.button>
+          </motion.div>
         )}
       </AnimatePresence>
 
@@ -98,8 +111,9 @@ export default function AstroD() {
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
             style={{
-              width: '380px',
-              height: '600px',
+              width: isMaximized ? 'min(90vw, 800px)' : '380px',
+              height: isMaximized ? '85vh' : '600px',
+              maxHeight: '90vh',
               background: 'rgba(10, 15, 30, 0.85)',
               backdropFilter: 'blur(20px)',
               border: '1px solid rgba(0, 228, 255, 0.4)',
@@ -107,7 +121,8 @@ export default function AstroD() {
               display: 'flex',
               flexDirection: 'column',
               boxShadow: '0 15px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 228, 255, 0.1)',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              transition: 'width 0.3s ease, height 0.3s ease'
             }}
           >
             {/* Header */}
@@ -128,7 +143,7 @@ export default function AstroD() {
                   border: '2px solid var(--electric-blue)',
                   boxShadow: '0 0 15px rgba(0, 228, 255, 0.5)'
                 }}>
-                  <img src="/assets/astrod.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '120%', height: '120%', objectFit: 'contain', transform: 'translateY(2px)' }} />
                 </div>
                 <div>
                   <h3 style={{ margin: 0, fontSize: '1.2rem', color: 'white', textShadow: '0 0 10px var(--electric-blue)' }}>Astro-D</h3>
@@ -138,14 +153,26 @@ export default function AstroD() {
                   </span>
                 </div>
               </div>
-              <button 
-                onClick={() => setIsOpen(false)}
-                style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', transition: 'color 0.2s' }}
-                onMouseOver={(e) => e.currentTarget.style.color = 'white'}
-                onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
-              >
-                <X size={24} />
-              </button>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                <button 
+                  onClick={() => setIsMaximized(!isMaximized)}
+                  style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', transition: 'color 0.2s', padding: '0.2rem' }}
+                  onMouseOver={(e) => e.currentTarget.style.color = 'var(--electric-blue)'}
+                  onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+                  title={isMaximized ? "Restaurar" : "Maximizar"}
+                >
+                  {isMaximized ? <Minimize2 size={20} /> : <Maximize2 size={20} />}
+                </button>
+                <button 
+                  onClick={() => setIsOpen(false)}
+                  style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', transition: 'color 0.2s', padding: '0.2rem' }}
+                  onMouseOver={(e) => e.currentTarget.style.color = 'white'}
+                  onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+                  title="Minimizar chat"
+                >
+                  <Minus size={24} />
+                </button>
+              </div>
             </div>
 
             {/* Messages Area */}
