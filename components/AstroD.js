@@ -230,8 +230,8 @@ export default function AstroD() {
               )}
 
               {error && (
-                <div style={{ alignSelf: 'center', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#ff4d4d', fontSize: '0.85rem', background: 'rgba(255,0,0,0.1)', border: '1px solid rgba(255,0,0,0.3)', padding: '0.8rem 1rem', borderRadius: '12px', textAlign: 'center' }}>
-                  <AlertTriangle size={18} /> Error de transmisión. Verifica que la API Key (GOOGLE_GENERATIVE_AI_API_KEY) esté configurada en Vercel.
+                <div style={{ alignSelf: 'center', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#ff4d4d', fontSize: '0.85rem', background: 'rgba(255,0,0,0.1)', border: '1px solid rgba(255,0,0,0.3)', padding: '0.8rem 1rem', borderRadius: '12px', textAlign: 'center', flexWrap: 'wrap' }}>
+                  <AlertTriangle size={18} /> {error.message || 'Error de transmisión. Verifica que la API Key (GOOGLE_GENERATIVE_AI_API_KEY) esté configurada en Vercel.'}
                 </div>
               )}
               
