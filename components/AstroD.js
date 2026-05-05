@@ -2,14 +2,15 @@
 
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { useChat } from '@ai-sdk/react';
+import { usePathname } from 'next/navigation';
 import { X, Send, Sparkles, AlertTriangle, Loader2 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AstroD() {
   const [isOpen, setIsOpen] = useState(false);
-  const [localInput, setLocalInput] = useState('');
   const { user, userData } = useAuth();
+  const pathname = usePathname();
   const messagesEndRef = useRef(null);
 
   const chatBody = useMemo(() => ({
@@ -19,17 +20,10 @@ export default function AstroD() {
     } : null
   }), [userData?.role, userData?.progress?.stars]);
 
-  const { messages, isLoading, error, append } = useChat({
+  const { messages, input, setInput, handleInputChange, handleSubmit, isLoading, error, append } = useChat({
     api: '/api/astro-d',
     body: chatBody
   });
-
-  const handleCustomSubmit = (e) => {
-    e.preventDefault();
-    if (!localInput.trim()) return;
-    append({ role: 'user', content: localInput });
-    setLocalInput('');
-  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -47,10 +41,10 @@ export default function AstroD() {
   ];
 
   const handlePresetClick = (q) => {
-    append({ role: 'user', content: q });
+    append({ id: Date.now().toString(), role: 'user', content: q });
   };
 
-  if (!user) return null;
+  if (!user || pathname === '/' || pathname === '/login') return null;
 
   return (
     <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
@@ -235,7 +229,7 @@ export default function AstroD() {
             </div>
 
             {/* Input Area */}
-            <form onSubmit={handleCustomSubmit} style={{ 
+            <form onSubmit={handleSubmit} style={{ 
               padding: '1rem 1.5rem', 
               background: 'rgba(0,0,0,0.4)',
               borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -243,8 +237,8 @@ export default function AstroD() {
               gap: '0.8rem'
             }}>
               <input
-                value={localInput}
-                onChange={(e) => setLocalInput(e.target.value)}
+                value={input || ''}
+                onChange={handleInputChange}
                 placeholder="Transmite tu mensaje a Astro-D..."
                 style={{
                   flex: 1,
@@ -265,7 +259,7 @@ export default function AstroD() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 type="submit"
-                disabled={isLoading || !localInput.trim()}
+                disabled={isLoading || !(input || '').trim()}
                 style={{
                   background: 'var(--electric-blue)',
                   border: 'none',
@@ -276,8 +270,8 @@ export default function AstroD() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: 'black',
-                  cursor: isLoading || !localInput.trim() ? 'not-allowed' : 'pointer',
-                  opacity: isLoading || !localInput.trim() ? 0.5 : 1,
+                  cursor: isLoading || !(input || '').trim() ? 'not-allowed' : 'pointer',
+                  opacity: isLoading || !(input || '').trim() ? 0.5 : 1,
                   boxShadow: '0 0 15px rgba(0, 228, 255, 0.4)'
                 }}
               >
