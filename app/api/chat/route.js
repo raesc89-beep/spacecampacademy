@@ -44,7 +44,7 @@ export async function POST(req) {
     }));
 
     const result = streamText({
-      model: google('gemini-1.5-pro'),
+      model: google('gemini-pro'),
       system: systemPrompt + contextString,
       messages: coreMessages,
       // Implementación de Tool Calling (Agéntico)
