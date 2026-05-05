@@ -37,10 +37,16 @@ export async function POST(req) {
     const contextString = userContext ? 
       `\n\n[CONTEXTO INVISIBLE DEL SISTEMA - NO MENCIONARLO AL USUARIO]: El usuario actual tiene el rol: ${userContext.role}, progreso: ${userContext.stars} estrellas de polvo cósmico.` : '';
 
+    // Sanitización estricta de mensajes para cumplir con el esquema ModelMessage[] de ai@6.x
+    const coreMessages = (messages || []).map(m => ({
+      role: m.role || 'user',
+      content: m.content || (m.parts && m.parts.length > 0 ? m.parts.map(p => p.text).join('') : '') || m.text || ''
+    }));
+
     const result = streamText({
       model: google('gemini-1.5-pro'),
       system: systemPrompt + contextString,
-      messages,
+      messages: coreMessages,
       // Implementación de Tool Calling (Agéntico)
       tools: {
         render_science_model: tool({
