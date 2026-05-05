@@ -73,7 +73,7 @@ export default function AstroD() {
             }}
             style={{ 
               position: 'relative',
-              filter: 'drop-shadow(0 20px 15px rgba(0,0,0,0.5))'
+              filter: 'drop-shadow(0 15px 25px rgba(0, 228, 255, 0.4))'
             }}
           >
             <motion.button 
@@ -81,22 +81,19 @@ export default function AstroD() {
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(true)}
               style={{
-                background: 'linear-gradient(135deg, rgba(0, 228, 255, 0.2), rgba(176, 38, 255, 0.2))',
-                border: '2px solid rgba(0, 228, 255, 0.5)',
-                borderRadius: '50%',
-                width: '80px',
-                height: '80px',
+                background: 'transparent',
+                border: 'none',
+                width: '100px',
+                height: '100px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 0 30px rgba(0, 228, 255, 0.4), inset 0 0 20px rgba(0, 228, 255, 0.3)',
                 cursor: 'pointer',
-                overflow: 'hidden',
                 padding: 0,
-                backdropFilter: 'blur(10px)'
+                outline: 'none'
               }}
             >
-              <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '130%', height: '130%', objectFit: 'contain', transform: 'translateY(5px)' }} />
+              <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </motion.button>
           </motion.div>
         )}
@@ -136,14 +133,14 @@ export default function AstroD() {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div style={{ 
-                  width: '45px',
-                  height: '45px',
-                  borderRadius: '50%',
-                  overflow: 'hidden',
-                  border: '2px solid var(--electric-blue)',
-                  boxShadow: '0 0 15px rgba(0, 228, 255, 0.5)'
+                  width: '50px',
+                  height: '50px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  filter: 'drop-shadow(0 0 8px rgba(0, 228, 255, 0.6))'
                 }}>
-                  <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '120%', height: '120%', objectFit: 'contain', transform: 'translateY(2px)' }} />
+                  <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 </div>
                 <div>
                   <h3 style={{ margin: 0, fontSize: '1.2rem', color: 'white', textShadow: '0 0 10px var(--electric-blue)' }}>Astro-D</h3>
