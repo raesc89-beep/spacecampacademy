@@ -38,13 +38,21 @@ export async function POST(req) {
       `\n\n[CONTEXTO INVISIBLE DEL SISTEMA - NO MENCIONARLO AL USUARIO]: El usuario actual tiene el rol: ${userContext.role}, progreso: ${userContext.stars} estrellas de polvo cósmico.` : '';
 
     // Sanitización estricta de mensajes para cumplir con el esquema ModelMessage[] de ai@6.x
-    const coreMessages = (messages || []).map(m => ({
-      role: m.role || 'user',
-      content: m.content || (m.parts && m.parts.length > 0 ? m.parts.map(p => p.text).join('') : '') || m.text || ''
-    }));
+    const coreMessages = (messages || []).map(m => {
+      let role = m.role;
+      if (!['user', 'assistant', 'system', 'tool'].includes(role)) role = 'user';
+      return {
+        role: role,
+        content: m.content || (m.parts && m.parts.length > 0 ? m.parts.map(p => p.text).join('') : '') || m.text || ''
+      };
+    });
+
+    try {
+      require('fs').writeFileSync('last_payload.json', JSON.stringify({ original: messages, mapped: coreMessages }, null, 2));
+    } catch(e) {}
 
     const result = streamText({
-      model: google('gemini-pro'),
+      model: google('gemini-1.5-flash-latest'),
       system: systemPrompt + contextString,
       messages: coreMessages,
       // Implementación de Tool Calling (Agéntico)
