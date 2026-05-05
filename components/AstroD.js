@@ -22,7 +22,7 @@ export default function AstroD() {
   }), [userData?.role, userData?.progress?.stars]);
 
   const { messages, status, error, sendMessage } = useChat({
-    api: '/api/astro-d',
+    api: '/api/chat',
     body: chatBody
   });
 
