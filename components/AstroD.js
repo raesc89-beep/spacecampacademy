@@ -93,7 +93,7 @@ export default function AstroD() {
                 outline: 'none'
               }}
             >
-              <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+              <img src="/astro-d-final.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </motion.button>
           </motion.div>
         )}
@@ -140,7 +140,7 @@ export default function AstroD() {
                   justifyContent: 'center',
                   filter: 'drop-shadow(0 0 8px rgba(0, 228, 255, 0.6))'
                 }}>
-                  <img src="/astro-d-3d.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  <img src="/astro-d-final.png" alt="Astro-D" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 </div>
                 <div>
                   <h3 style={{ margin: 0, fontSize: '1.2rem', color: 'white', textShadow: '0 0 10px var(--electric-blue)' }}>Astro-D</h3>
