@@ -50,7 +50,7 @@ export async function POST(req) {
     // DEBUG TEMP: Listar modelos disponibles de Google para esta API Key específica
     try {
       const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
-      if (apiKey && messages.length > 0 && messages[messages.length - 1].content === "¿Cómo entrenan los astronautas?") {
+      if (apiKey) {
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
         const data = await response.json();
         const availableModels = data.models ? data.models.map(m => m.name).filter(n => n.includes('gemini')).join(', ') : 'Ninguno';
