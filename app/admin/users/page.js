@@ -2,13 +2,27 @@
 import { useState, useEffect } from 'react';
 import { db } from '@/lib/firebase';
 import { collection, getDocs, updateDoc, doc, deleteDoc } from 'firebase/firestore';
-import { Users, Trash2, Edit, Mail, Shield, User, Activity, Star } from 'lucide-react';
+import { Users, Trash2, Shield, User, Activity, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { PieChart, Pie, Cell, Tooltip, BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+import { useAuth } from '@/hooks/useAuth';
+import { useRouter } from 'next/navigation';
 
 export default function AdminUsersPage() {
+  const { userData, loading: authLoading } = useAuth();
+  const router = useRouter();
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Protect route: redirect if not admin
+    if (!authLoading && userData && userData.role !== 'admin') {
+      router.push('/dashboard');
+    }
+    if (!authLoading && userData?.role === 'admin') {
+      fetchUsers();
+    }
+  }, [authLoading, userData]);
 
   const fetchUsers = async () => {
     setLoading(true);
@@ -22,18 +36,17 @@ export default function AdminUsersPage() {
     setLoading(false);
   };
 
-  useEffect(() => {
-    fetchUsers();
-  }, []);
-
   const handleRoleChange = async (uid, newRole, email) => {
+    // Protect admin supremo
     if (email === 'raesc89@gmail.com' && newRole !== 'admin') {
       alert('Acción Denegada: Raúl Escalante es el Comandante Supremo Inmutable.');
       return;
     }
+    // Normalize: 'user' maps to 'student' for new system
+    const normalizedRole = newRole === 'user' ? 'student' : newRole;
     try {
-      await updateDoc(doc(db, 'users', uid), { role: newRole });
-      fetchUsers(); // Refresh
+      await updateDoc(doc(db, 'users', uid), { role: normalizedRole });
+      fetchUsers();
     } catch (e) {
       alert('Error actualizando rol');
     }
@@ -64,6 +77,8 @@ export default function AdminUsersPage() {
     .map(u => ({ name: u.name ? u.name.split(' ')[0] : 'Desconocido', stars: u.progress?.stars || 0 }));
 
   const globalEconomy = users.reduce((acc, u) => acc + (u.progress?.stars || 0), 0);
+
+  if (accessDenied) return <div style={{ padding: '3rem', textAlign: 'center' }}>Acceso Denegado: Requiere nivel de Comandante.</div>;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingBottom: '3rem' }}>
@@ -158,11 +173,11 @@ export default function AdminUsersPage() {
                   <td style={{ padding: '1rem' }}>
                     <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                       <select 
-                        value={u.role || 'user'} 
+                        value={u.role || 'student'} 
                         onChange={(e) => handleRoleChange(u.uid, e.target.value, u.email)}
                         style={{ padding: '0.4rem', background: 'var(--bg-card)', color: 'white', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '6px' }}
                       >
-                        <option value="user">Cadete (Usuario)</option>
+                        <option value="student">Cadete (Usuario)</option>
                         <option value="admin">Space Commander</option>
                       </select>
                       {u.role === 'admin' ? (

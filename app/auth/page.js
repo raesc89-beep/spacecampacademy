@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { auth, db } from '@/lib/firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Rocket, Shield } from 'lucide-react';
@@ -19,6 +19,8 @@ function AuthContent() {
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [resetSent, setResetSent] = useState(false);
+  const [resetLoading, setResetLoading] = useState(false);
 
   const handleAuth = async (e) => {
     e.preventDefault();
@@ -68,6 +70,26 @@ function AuthContent() {
     }
     
     setLoading(false);
+  };
+
+  const handlePasswordReset = async () => {
+    if (!email) {
+      setError('Ingresa tu correo electrónico para restablecer tu contraseña.');
+      return;
+    }
+    setResetLoading(true);
+    setError('');
+    try {
+      await sendPasswordResetEmail(auth, email);
+      setResetSent(true);
+    } catch (err) {
+      if (err.code === 'auth/user-not-found') {
+        setError('No existe una cuenta con ese correo electrónico.');
+      } else {
+        setError('Error enviando el correo. Intenta de nuevo.');
+      }
+    }
+    setResetLoading(false);
   };
 
   return (
@@ -164,6 +186,23 @@ function AuthContent() {
           <button type="submit" className="btn-primary" disabled={loading} style={{ marginTop: '1rem', width: '100%' }}>
             {loading ? 'Procesando...' : (mode === 'register' ? '¡Unirme a la Academia!' : 'Iniciar Misión')}
           </button>
+
+          {mode === 'login' && (
+            <div style={{ textAlign: 'center' }}>
+              {resetSent ? (
+                <p style={{ color: 'var(--success)', fontSize: '0.9rem' }}>✅ Correo de restablecimiento enviado. Revisa tu bandeja de entrada.</p>
+              ) : (
+                <button
+                  type="button"
+                  onClick={handlePasswordReset}
+                  disabled={resetLoading}
+                  style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textDecoration: 'underline', fontFamily: 'inherit' }}
+                >
+                  {resetLoading ? 'Enviando...' : '¿Olvidaste tu contraseña?'}
+                </button>
+              )}
+            </div>
+          )}
         </form>
 
         <div style={{ textAlign: 'center', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>

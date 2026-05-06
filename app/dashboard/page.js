@@ -209,7 +209,7 @@ export default function CourseHub() {
              Tu identidad está siendo verificada por el <strong>Comandante en Jefe (Administrador)</strong>. <br/><br/>
              Por protocolos intergalácticos de seguridad, espera a que tu solicitud sea aprobada antes de ingresar a la Estación Central.
            </p>
-           <button onClick={() => { auth.signOut(); window.location.reload(); }} className="btn-secondary">
+           <button onClick={() => { import('firebase/auth').then(m => m.signOut(import('@/lib/firebase').then(f => f.auth))); window.location.href = '/'; }} className="btn-secondary">
              Cerrar Sesión
            </button>
         </div>
