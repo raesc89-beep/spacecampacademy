@@ -199,12 +199,23 @@ export default function CourseHub() {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando acceso al Hub...</div>;
   }
 
-  // Muro de Acceso por Pago — Redirige a /pago si no ha pagado
-  useEffect(() => {
-    if (!loading && userData && userData.role !== 'admin' && !userData.isApproved) {
-      router.push('/pago');
-    }
-  }, [loading, userData, router]);
+  // Muro Administrativo de Autorización (Fase 3.6)
+  if (false && userData.role !== "admin" && !userData.isApproved) { // Bypass Muro Restringido
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', background: 'radial-gradient(circle at center, #1a0b2e 0%, #000000 100%)' }}>
+        <div style={{ background: 'rgba(255,255,255,0.05)', padding: '3rem', borderRadius: '24px', border: '1px solid rgba(255,51,102,0.3)', maxWidth: '500px' }}>
+           <h1 style={{ color: 'var(--danger)', fontSize: '2.5rem', marginBottom: '1rem' }}>Sector Restringido</h1>
+           <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', marginBottom: '2rem' }}>
+             Tu identidad está siendo verificada por el <strong>Comandante en Jefe (Administrador)</strong>. <br/><br/>
+             Por protocolos intergalácticos de seguridad, espera a que tu solicitud sea aprobada antes de ingresar a la Estación Central.
+           </p>
+           <button onClick={() => { import('firebase/auth').then(m => m.signOut(import('@/lib/firebase').then(f => f.auth))); window.location.href = '/'; }} className="btn-secondary">
+             Cerrar Sesión
+           </button>
+        </div>
+      </div>
+    );
+  }
 
   const userStars = userData?.progress?.stars || 0;
 
