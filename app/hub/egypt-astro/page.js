@@ -39,15 +39,15 @@ function Stars() {
       {Array.from({ length: 100 }).map((_, i) => (
         <div key={i} style={{
           position: 'absolute',
-          left: \`\${Math.random() * 100}%\`,
-          top: \`\${Math.random() * 60}%\`, // Más estrellas en el cielo, menos en la arena
-          width: \`\${Math.random() * 2 + 1}px\`,
-          height: \`\${Math.random() * 2 + 1}px\`,
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 60}%`, // Más estrellas en el cielo, menos en la arena
+          width: `${Math.random() * 2 + 1}px`,
+          height: `${Math.random() * 2 + 1}px`,
           borderRadius: '50%',
           background: 'white',
           opacity: Math.random() * 0.7 + 0.3,
-          animation: \`twinkle \${Math.random() * 4 + 2}s ease-in-out infinite\`,
-          animationDelay: \`\${Math.random() * 3}s\`,
+          animation: `twinkle ${Math.random() * 4 + 2}s ease-in-out infinite`,
+          animationDelay: `${Math.random() * 3}s`,
         }} />
       ))}
     </div>
@@ -87,8 +87,8 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
             height: 'clamp(70px, 7vw, 100px)',
             borderRadius: '50%',
             boxShadow: hovered 
-               ? \`0 0 40px \${mod.color}ff, inset 0 0 20px \${mod.color}aa\` 
-               : \`0 0 20px \${mod.color}88\`,
+               ? `0 0 40px ${mod.color}ff, inset 0 0 20px ${mod.color}aa` 
+               : `0 0 20px ${mod.color}88`,
             transition: 'all 0.3s ease',
             display: 'flex',
             alignItems: 'center',
@@ -122,7 +122,7 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
               position: 'absolute',
               inset: '-2px',
               borderRadius: '50%',
-              border: \`2px solid \${hovered ? 'white' : mod.color + '55'}\`,
+              border: `2px solid ${hovered ? 'white' : mod.color + '55'}`,
               opacity: hovered ? 0.8 : 0.3,
               transition: 'all 0.3s ease',
               pointerEvents: 'none'
@@ -134,7 +134,7 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
             color: 'white',
             fontSize: 'clamp(0.6rem, 1vw, 0.85rem)',
             textAlign: 'center',
-            textShadow: \`0 2px 4px \${mod.color}, 0 4px 10px rgba(0,0,0,0.9)\`,
+            textShadow: `0 2px 4px ${mod.color}, 0 4px 10px rgba(0,0,0,0.9)`,
             textTransform: 'uppercase',
             letterSpacing: '1px',
             fontWeight: 700,
@@ -143,7 +143,7 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
             padding: '4px 12px',
             borderRadius: '20px',
             backdropFilter: 'blur(4px)',
-            border: \`1px solid \${mod.color}55\`
+            border: `1px solid ${mod.color}55`
           }}>
             {mod.titleEs}
           </div>
@@ -173,12 +173,12 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
                 transform: 'translateX(-50%)',
                 background: 'rgba(8, 4, 18, 0.95)',
                 backdropFilter: 'blur(12px)',
-                border: \`1px solid \${mod.color}\`,
+                border: `1px solid ${mod.color}`,
                 padding: '0.8rem 1.2rem',
                 borderRadius: '12px',
                 whiteSpace: 'nowrap',
                 pointerEvents: 'none',
-                boxShadow: \`0 8px 32px \${mod.color}66\`,
+                boxShadow: `0 8px 32px ${mod.color}66`,
                 zIndex: 100,
               }}
             >
@@ -254,7 +254,7 @@ export default function EgyptAstroHub() {
       {/* ── Canvas Principal (Fondo Panorámico) ── */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        background: \`url('/assets/egypt/hub_background.png') center/cover no-repeat\`,
+        background: `url('/assets/egypt/hub_background.png') center/cover no-repeat`,
       }}>
         {/* Filtro Oscuro Dinámico (Vignette) */}
         <div style={{

@@ -162,17 +162,6 @@ const DASHBOARD_MISSIONS = [
     borderColor: "rgba(0, 255, 204, 0.4)"
   },
   {
-    id: "decoder",
-    title: "Interceptación Estelar",
-    subtitle: "Decodifica frecuencias alienígenas para ganar logros.",
-    link: "/minigames/decoder",
-    bgSrc: "/assets/dashboard/decoder_cover.png",
-    badgeColor: "var(--success)",
-    badgeText: "Minijuego",
-    borderColor: "rgba(0, 255, 136, 0.4)",
-    isMinigame: true
-  },
-  {
     id: "arcade",
     title: "Zona Arcade",
     subtitle: "8 minijuegos espaciales: memoria, trivia, bingo, Laika Finder y más.",
@@ -181,17 +170,6 @@ const DASHBOARD_MISSIONS = [
     badgeColor: "#FF00FF",
     badgeText: "Minijuegos",
     borderColor: "rgba(255,0,255,0.4)",
-    isMinigame: true
-  },
-  {
-    id: "creator",
-    title: "Génesis Planetario",
-    subtitle: "Simulador experimental físico. Construye una exoplaneta.",
-    link: "/minigames/creator",
-    bgSrc: "/assets/dashboard/creator_cover.png",
-    badgeColor: "#ff5722",
-    badgeText: "Prueba Final",
-    borderColor: "rgba(255, 87, 34, 0.4)",
     isMinigame: true
   }
 ];

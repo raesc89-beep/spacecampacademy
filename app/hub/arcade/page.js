@@ -156,6 +156,30 @@ export default function ArcadeExoplanet() {
                </button>
             </div>
 
+            {/* Máquina 9: Interceptación Estelar */}
+            <div className="glass-card" style={{ border: '1px solid rgba(0, 255, 136, 0.4)', background: 'rgba(0, 255, 136, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(0, 255, 136, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(0,255,136,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>📻</span>
+               </div>
+               <h2 style={{ color: 'var(--success)', margin: '0 0 0.5rem 0' }}>Interceptación Estelar</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Decodifica frecuencias alienígenas en la radio espacial para ganar logros.</p>
+               <Link href="/minigames/decoder" className="btn-primary" style={{ background: 'var(--success)', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(0,255,136,0.4)', fontWeight: 'bold', display: 'block' }}>
+                 ESCUCHAR FRECUENCIAS
+               </Link>
+            </div>
+
+            {/* Máquina 10: Génesis Planetario */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255, 87, 34, 0.4)', background: 'rgba(255, 87, 34, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 87, 34, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,87,34,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🌍</span>
+               </div>
+               <h2 style={{ color: '#ff5722', margin: '0 0 0.5rem 0' }}>Génesis Planetario</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Simulador experimental físico. Construye un exoplaneta desde cero.</p>
+               <Link href="/minigames/creator" className="btn-primary" style={{ background: '#ff5722', color: 'white', width: '100%', boxShadow: '0 0 20px rgba(255,87,34,0.4)', fontWeight: 'bold', display: 'block' }}>
+                 INICIAR MÁQUINA
+               </Link>
+            </div>
+
           </div>
         ) : (
           <div style={{ width: '100%', maxWidth: '800px' }}>
