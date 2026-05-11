@@ -2,52 +2,59 @@
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Lock, CheckCircle, ChevronLeft } from 'lucide-react';
+import { CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const EGYPT_MODULES = [
-  { id: 'egypt_m1', titleEs: 'Nabta Playa',       color: '#D4A843', link: '/course/egypt_m1', icon: '/assets/egypt/m1_nabta_playa.png',  coords: { left: '20%', top: '35%',  size: 'clamp(100px,12vw,180px)' } },
-  { id: 'egypt_m2', titleEs: 'Los Decanos',        color: '#6A9FD4', link: '/course/egypt_m2', icon: '/assets/egypt/m2_decanos.png',       coords: { left: '60%', top: '18%',  size: 'clamp(90px,11vw,165px)'  } },
-  { id: 'egypt_m3', titleEs: 'Sopdet y Sirio',     color: '#C0E8FF', link: '/course/egypt_m3', icon: '/assets/egypt/m3_sopdet.png',        coords: { left: '82%', top: '42%',  size: 'clamp(85px,10vw,155px)'  } },
-  { id: 'egypt_m4', titleEs: 'Mesjetiu',           color: '#F5C842', link: '/course/egypt_m4', icon: '/assets/egypt/m4_mesjetiu.png',      coords: { left: '38%', top: '62%',  size: 'clamp(80px,10vw,148px)'  } },
-  { id: 'egypt_m5', titleEs: 'El Láser de Giza',   color: '#F0A500', link: '/course/egypt_m5', icon: '/assets/egypt/m5_giza.png',          coords: { left: '72%', top: '70%',  size: 'clamp(110px,13vw,195px)' } },
-  { id: 'egypt_m6', titleEs: 'Mapa del Universo',  color: '#9B6BFF', link: '/course/egypt_m6', icon: '/assets/egypt/m6_senenmut.png',      coords: { left: '10%', top: '72%',  size: 'clamp(80px,10vw,148px)'  } },
-  { id: 'egypt_m7', titleEs: 'Telescopios Piedra', color: '#5EC4A0', link: '/course/egypt_m7', icon: '/assets/egypt/m7_star_shafts.png',   coords: { left: '50%', top: '85%',  size: 'clamp(75px,9vw,136px)'   } },
-  { id: 'egypt_m8', titleEs: 'Abu Simbel',         color: '#FF9A3C', link: '/course/egypt_m8', icon: '/assets/egypt/m8_abu_simbel.png',    coords: { left: '88%', top: '22%',  size: 'clamp(70px,9vw,130px)'   } },
-  { id: 'egypt_m9', titleEs: 'Zodiaco Dendera',    color: '#D46A6A', link: '/course/egypt_m9', icon: '/assets/egypt/m9_dendera.png',       coords: { left: '28%', top: '20%',  size: 'clamp(80px,10vw,148px)'  } },
-  { id: 'egypt_m10', titleEs: 'Daga Espacial',     color: '#B0C4DE', link: '/course/egypt_m10', icon: '/assets/egypt/m10_daga.png',        coords: { left: '55%', top: '45%',  size: 'clamp(85px,10vw,155px)'  } },
-  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.png',  coords: { left: '15%', top: '52%',  size: 'clamp(75px,9vw,136px)'   } },
-  { id: 'egypt_m12', titleEs: 'Obeliscos',         color: '#E8C96A', link: '/course/egypt_m12', icon: '/assets/egypt/m12_obelisco.png',    coords: { left: '75%', top: '55%',  size: 'clamp(70px,8vw,125px)'   } },
-  { id: 'egypt_m13', titleEs: '365 Días',          color: '#80D080', link: '/course/egypt_m13', icon: '/assets/egypt/m13_calendario.png',  coords: { left: '42%', top: '30%',  size: 'clamp(80px,10vw,148px)'  } },
-  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.png',      coords: { left: '88%', top: '78%',  size: 'clamp(85px,10vw,155px)'  } },
-  { id: 'egypt_m15', titleEs: 'Ojo Satelital',     color: '#64B5F6', link: '/course/egypt_m15', icon: '/assets/egypt/m15_satelite.png',    coords: { left: '30%', top: '80%',  size: 'clamp(75px,9vw,136px)'   } },
+  // Top row (Sky)
+  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.png',  coords: { left: '15%', top: '15%' } },
+  { id: 'egypt_m6',  titleEs: 'Mapa del Universo', color: '#9B6BFF', link: '/course/egypt_m6',  icon: '/assets/egypt/m6_senenmut.png',     coords: { left: '35%', top: '10%' } },
+  { id: 'egypt_m2',  titleEs: 'Los Decanos',       color: '#6A9FD4', link: '/course/egypt_m2',  icon: '/assets/egypt/m2_decanos.png',      coords: { left: '60%', top: '12%' } },
+  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.png',      coords: { left: '85%', top: '18%' } },
+  
+  // Middle-Upper row (Sky/Horizon)
+  { id: 'egypt_m9',  titleEs: 'Zodiaco Dendera',   color: '#D46A6A', link: '/course/egypt_m9',  icon: '/assets/egypt/m9_dendera.png',      coords: { left: '25%', top: '32%' } },
+  { id: 'egypt_m4',  titleEs: 'Mesjetiu',          color: '#F5C842', link: '/course/egypt_m4',  icon: '/assets/egypt/m4_mesjetiu.png',     coords: { left: '50%', top: '28%' } },
+  { id: 'egypt_m3',  titleEs: 'Sopdet y Sirio',    color: '#C0E8FF', link: '/course/egypt_m3',  icon: '/assets/egypt/m3_sopdet.png',       coords: { left: '75%', top: '35%' } },
+
+  // Middle-Lower row (Horizon/Pyramids)
+  { id: 'egypt_m10', titleEs: 'Daga Espacial',     color: '#B0C4DE', link: '/course/egypt_m10', icon: '/assets/egypt/m10_daga.png',        coords: { left: '12%', top: '55%' } },
+  { id: 'egypt_m13', titleEs: '365 Días',          color: '#80D080', link: '/course/egypt_m13', icon: '/assets/egypt/m13_calendario.png',  coords: { left: '38%', top: '52%' } },
+  { id: 'egypt_m15', titleEs: 'Ojo Satelital',     color: '#64B5F6', link: '/course/egypt_m15', icon: '/assets/egypt/m15_satelite.png',    coords: { left: '65%', top: '50%' } },
+  { id: 'egypt_m8',  titleEs: 'Abu Simbel',        color: '#FF9A3C', link: '/course/egypt_m8',  icon: '/assets/egypt/m8_abu_simbel.png',   coords: { left: '88%', top: '58%' } },
+
+  // Bottom row (Desert foreground)
+  { id: 'egypt_m1',  titleEs: 'Nabta Playa',       color: '#D4A843', link: '/course/egypt_m1',  icon: '/assets/egypt/m1_nabta_playa.png',  coords: { left: '22%', top: '80%' } },
+  { id: 'egypt_m7',  titleEs: 'Telescopios',       color: '#5EC4A0', link: '/course/egypt_m7',  icon: '/assets/egypt/m7_star_shafts.png',  coords: { left: '48%', top: '75%' } },
+  { id: 'egypt_m5',  titleEs: 'Láser de Giza',     color: '#F0A500', link: '/course/egypt_m5',  icon: '/assets/egypt/m5_giza.png',         coords: { left: '72%', top: '80%' } },
+  { id: 'egypt_m12', titleEs: 'Obeliscos',         color: '#E8C96A', link: '/course/egypt_m12', icon: '/assets/egypt/m12_obelisco.png',    coords: { left: '92%', top: '82%' } },
 ];
 
-// ─── Estrellas de fondo generadas ─────────────────────────────────────────
+// ─── Estrellas de fondo animadas ─────────────────────────────────────────
 function Stars() {
   return (
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
-      {Array.from({ length: 80 }).map((_, i) => (
+      {Array.from({ length: 100 }).map((_, i) => (
         <div key={i} style={{
           position: 'absolute',
-          left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 100}%`,
-          width: `${Math.random() * 2 + 1}px`,
-          height: `${Math.random() * 2 + 1}px`,
+          left: \`\${Math.random() * 100}%\`,
+          top: \`\${Math.random() * 60}%\`, // Más estrellas en el cielo, menos en la arena
+          width: \`\${Math.random() * 2 + 1}px\`,
+          height: \`\${Math.random() * 2 + 1}px\`,
           borderRadius: '50%',
           background: 'white',
           opacity: Math.random() * 0.7 + 0.3,
-          animation: `twinkle ${Math.random() * 3 + 2}s ease-in-out infinite`,
-          animationDelay: `${Math.random() * 3}s`,
+          animation: \`twinkle \${Math.random() * 4 + 2}s ease-in-out infinite\`,
+          animationDelay: \`\${Math.random() * 3}s\`,
         }} />
       ))}
     </div>
   );
 }
 
-// ─── Nodo de módulo individual ─────────────────────────────────────────────
+// ─── Nodo de módulo circular y moderno ────────────────────────────────────
 function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
   const [hovered, setHovered] = useState(false);
 
@@ -60,8 +67,6 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
           position: 'absolute',
           left: mod.coords.left,
           top: mod.coords.top,
-          width: mod.coords.size,
-          height: mod.coords.size,
           transform: 'translate(-50%, -50%)',
           cursor: 'pointer',
           zIndex: hovered ? 50 : (10 + idx),
@@ -70,92 +75,103 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
         <motion.div
           animate={{ y: [0, -8, 0], scale: hovered ? 1.15 : 1 }}
           transition={{
-            y: { repeat: Infinity, duration: 3.5 + idx * 0.3, ease: 'easeInOut', delay: idx * 0.4 },
+            y: { repeat: Infinity, duration: 4 + Math.random() * 2, ease: 'easeInOut', delay: Math.random() * 2 },
             scale: { duration: 0.2 },
           }}
-          style={{ width: '100%', height: '100%', position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem' }}
         >
-          {/* Halo dorado al hacer hover */}
-          {hovered && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+          {/* Contenedor Circular de la Imagen */}
+          <div style={{
+            position: 'relative',
+            width: 'clamp(65px, 6.5vw, 95px)',
+            height: 'clamp(65px, 6.5vw, 95px)',
+            borderRadius: '50%',
+            padding: '4px',
+            background: \`linear-gradient(135deg, \${mod.color}aa, transparent)\`,
+            boxShadow: hovered 
+               ? \`0 0 25px \${mod.color}ff, inset 0 0 15px \${mod.color}aa\` 
+               : \`0 0 15px \${mod.color}55\`,
+            transition: 'all 0.3s ease',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <img
+              src={mod.icon}
+              alt={mod.titleEs}
               style={{
-                position: 'absolute', inset: '-8px',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
                 borderRadius: '50%',
-                border: `2px solid ${mod.color}`,
-                boxShadow: `0 0 20px ${mod.color}88, 0 0 40px ${mod.color}44`,
+                border: \`2px solid \${hovered ? 'white' : 'rgba(255,255,255,0.8)'}\`,
+                transition: 'all 0.3s ease',
               }}
             />
-          )}
+            {/* Overlay sutil para atenuar si no está activo */}
+            {!hovered && !isPlayable && !isCompleted && (
+              <div style={{ position: 'absolute', inset: '4px', borderRadius: '50%', background: 'rgba(0,0,0,0.3)' }} />
+            )}
+          </div>
 
-          {/* Imagen del módulo */}
-          <img
-            src={mod.icon}
-            alt={mod.titleEs}
-            style={{
-              width: '80%',
-              height: '80%',
-              objectFit: 'contain',
-              filter: `drop-shadow(0 0 12px ${mod.color}88)`,
-              transition: 'filter 0.3s ease',
-            }}
-          />
-
-          {/* Nombre */}
+          {/* Nombre Moderno */}
           <div style={{
             color: 'white',
-            fontSize: 'clamp(0.55rem, 0.9vw, 0.85rem)',
+            fontSize: 'clamp(0.6rem, 1vw, 0.85rem)',
             textAlign: 'center',
-            textShadow: '0 2px 8px rgba(0,0,0,0.9)',
+            textShadow: \`0 2px 4px \${mod.color}, 0 4px 10px rgba(0,0,0,0.9)\`,
             textTransform: 'uppercase',
             letterSpacing: '1px',
-            fontWeight: 600,
+            fontWeight: 700,
             lineHeight: 1.2,
-            maxWidth: '110%',
+            background: 'rgba(0,0,0,0.5)',
+            padding: '4px 12px',
+            borderRadius: '20px',
+            backdropFilter: 'blur(4px)',
+            border: \`1px solid \${mod.color}55\`
           }}>
             {mod.titleEs}
           </div>
 
-          {/* Indicadores */}
+          {/* Indicadores de Progreso */}
           {isCompleted && (
-            <div style={{ position: 'absolute', bottom: '-8px', right: '-8px', background: 'rgba(0,0,0,0.85)', padding: '0.2rem', borderRadius: '50%', border: '1px solid var(--success)' }}>
+            <div style={{ position: 'absolute', top: '0px', right: '0px', background: 'rgba(0,0,0,0.85)', padding: '0.2rem', borderRadius: '50%', border: '2px solid var(--success)', zIndex: 5, boxShadow: '0 0 10px var(--success)' }}>
               <CheckCircle size={18} color="var(--success)" />
             </div>
           )}
           {isPlayable && !isCompleted && (
-            <div style={{ position: 'absolute', top: '-14px', right: '-14px', fontSize: '1.2rem', animation: 'pulse 2s infinite' }}>✨</div>
+            <div style={{ position: 'absolute', top: '-10px', right: '-5px', fontSize: '1.4rem', animation: 'pulse 1.5s infinite', zIndex: 5 }}>✨</div>
           )}
         </motion.div>
 
-        {/* Tooltip */}
+        {/* Tooltip Dinámico */}
         <AnimatePresence>
           {hovered && (
             <motion.div
-              initial={{ opacity: 0, y: 12, scale: 0.85 }}
+              initial={{ opacity: 0, y: 15, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 8 }}
+              exit={{ opacity: 0, y: 10 }}
               style={{
                 position: 'absolute',
-                top: '115%',
+                top: '120%',
                 left: '50%',
                 transform: 'translateX(-50%)',
                 background: 'rgba(8, 4, 18, 0.95)',
                 backdropFilter: 'blur(12px)',
-                border: `1px solid ${mod.color}`,
-                padding: '0.7rem 1.1rem',
+                border: \`1px solid \${mod.color}\`,
+                padding: '0.8rem 1.2rem',
                 borderRadius: '12px',
                 whiteSpace: 'nowrap',
                 pointerEvents: 'none',
-                boxShadow: `0 8px 28px ${mod.color}44`,
+                boxShadow: \`0 8px 32px \${mod.color}66\`,
                 zIndex: 100,
               }}
             >
-              <h4 style={{ margin: 0, fontSize: '1rem', color: 'white', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                🏛️ {mod.titleEs}
+              <h4 style={{ margin: 0, fontSize: '1rem', color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{color: mod.color}}>✦</span> {mod.titleEs}
               </h4>
-              <p style={{ margin: '0.2rem 0 0 0', fontSize: '0.8rem', color: isCompleted ? 'var(--success)' : mod.color }}>
-                {isCompleted ? '✅ Misión Completada' : '🚀 Explorar Módulo'}
+              <p style={{ margin: '0.3rem 0 0 0', fontSize: '0.85rem', color: isCompleted ? 'var(--success)' : 'rgba(255,255,255,0.7)', fontWeight: 600 }}>
+                {isCompleted ? 'Misión Completada ✅' : 'Iniciar Exploración 🚀'}
               </p>
             </motion.div>
           )}
@@ -165,7 +181,7 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
   );
 }
 
-// ─── Componente principal ──────────────────────────────────────────────────
+// ─── Componente Principal del Hub ──────────────────────────────────────────
 export default function EgyptAstroHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
@@ -193,79 +209,78 @@ export default function EgyptAstroHub() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#04060E' }}>
 
-      {/* ── Botón volver ── */}
+      {/* ── Botón Volver ── */}
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 200 }}>
         <Link href="/dashboard" style={{
-          display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#D4A843',
+          display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#FFF',
           textDecoration: 'none', background: 'rgba(0,0,0,0.6)', padding: '0.7rem 1.2rem',
-          borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(212,168,67,0.4)',
-          fontSize: '0.9rem', fontWeight: 600,
-        }}>
-          <ChevronLeft size={20} /> Catálogo de Misiones
+          borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)',
+          fontSize: '0.9rem', fontWeight: 600, transition: 'all 0.3s',
+        }} className="hover:bg-white/10 hover:border-white/50">
+          <ChevronLeft size={20} /> Mapa Estelar
         </Link>
       </div>
 
-      {/* ── Título ── */}
-      <div style={{ position: 'absolute', top: '1.5rem', left: '50%', transform: 'translateX(-50%)', zIndex: 200, textAlign: 'center' }}>
+      {/* ── Título Centralizado ── */}
+      <div style={{ position: 'absolute', top: '1.5rem', left: '50%', transform: 'translateX(-50%)', zIndex: 200, textAlign: 'center', background: 'rgba(0,0,0,0.5)', padding: '0.5rem 2rem', borderRadius: '40px', backdropFilter: 'blur(5px)' }}>
         <h1 style={{
-          margin: 0, fontSize: 'clamp(1rem, 2.5vw, 2rem)',
+          margin: 0, fontSize: 'clamp(1rem, 2.5vw, 1.8rem)',
           background: 'linear-gradient(90deg, #D4A843, #F5E6B0, #D4A843)',
           WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-          textShadow: 'none', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 700,
+          textShadow: '0px 2px 10px rgba(0,0,0,0.8)', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 800,
         }}>
-          🏛️ Arqueoastronomía Egipcia
+          Arqueoastronomía Egipcia
         </h1>
-        <p style={{ margin: '0.2rem 0 0', color: 'rgba(212,168,67,0.7)', fontSize: 'clamp(0.6rem,1.2vw,0.9rem)', letterSpacing: '2px' }}>
+        <p style={{ margin: '0.2rem 0 0', color: '#D4A843', fontSize: 'clamp(0.6rem,1.2vw,0.85rem)', letterSpacing: '2px', fontWeight: 600 }}>
           El Cielo de los Faraones · 15 Misterios Cósmicos
         </p>
       </div>
 
-      {/* ── Canvas principal ── */}
+      {/* ── Canvas Principal (Fondo Panorámico) ── */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        background: `
-          radial-gradient(ellipse at 30% 20%, rgba(212,168,67,0.08) 0%, transparent 50%),
-          radial-gradient(ellipse at 70% 80%, rgba(106,159,212,0.06) 0%, transparent 50%),
-          url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?q=80&w=2560&auto=format&fit=crop') center/cover
-        `,
+        background: \`url('/assets/egypt/hub_background.png') center/cover no-repeat\`,
       }}>
-        {/* Overlay oscuro con textura egipcia */}
+        {/* Filtro Oscuro Dinámico (Vignette) */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(180deg, rgba(4,6,14,0.75) 0%, rgba(10,6,2,0.65) 60%, rgba(4,6,14,0.85) 100%)',
+          background: 'radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0.9) 100%)',
+          pointerEvents: 'none'
         }} />
 
-        {/* Estrellas animadas */}
+        {/* Efectos de Estrellas */}
         <Stars />
 
-        {/* Líneas de constelación decorativas */}
-        <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.15 }}>
-          <line x1="20%" y1="35%" x2="38%" y2="62%" stroke="#D4A843" strokeWidth="0.5" strokeDasharray="4 6" />
-          <line x1="38%" y1="62%" x2="55%" y2="45%" stroke="#D4A843" strokeWidth="0.5" strokeDasharray="4 6" />
-          <line x1="55%" y1="45%" x2="60%" y2="18%" stroke="#D4A843" strokeWidth="0.5" strokeDasharray="4 6" />
-          <line x1="60%" y1="18%" x2="28%" y2="20%" stroke="#D4A843" strokeWidth="0.5" strokeDasharray="4 6" />
-          <line x1="28%" y1="20%" x2="42%" y2="30%" stroke="#D4A843" strokeWidth="0.5" strokeDasharray="4 6" />
-          <line x1="72%" y1="70%" x2="82%" y2="42%" stroke="#6A9FD4" strokeWidth="0.5" strokeDasharray="4 6" />
-          <line x1="82%" y1="42%" x2="88%" y2="22%" stroke="#6A9FD4" strokeWidth="0.5" strokeDasharray="4 6" />
+        {/* Red de Líneas Estelares (Conectando Módulos) */}
+        <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.35 }}>
+          {/* Conexiones del Cielo */}
+          <line x1="15%" y1="15%" x2="35%" y2="10%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="35%" y1="10%" x2="60%" y2="12%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="60%" y1="12%" x2="85%" y2="18%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="35%" y1="10%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="60%" y1="12%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+
+          {/* Conexiones del Horizonte */}
+          <line x1="25%" y1="32%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="50%" y1="28%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          
+          <line x1="12%" y1="55%" x2="25%" y2="32%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="38%" y1="52%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="65%" y1="50%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="88%" y1="58%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+
+          {/* Conexiones de la Arena */}
+          <line x1="22%" y1="80%" x2="12%" y2="55%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="22%" y1="80%" x2="48%" y2="75%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="48%" y1="75%" x2="38%" y2="52%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="48%" y1="75%" x2="72%" y2="80%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="72%" y1="80%" x2="65%" y2="50%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="72%" y1="80%" x2="92%" y2="82%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+          <line x1="92%" y1="82%" x2="88%" y2="58%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
         </svg>
 
-        {/* Personaje flotante (Astrónomo egipcio) */}
-        <motion.img
-          src="/assets/egypt/hub_character.png"
-          alt="Astrónomo Egipcio"
-          animate={{ y: [0, -14, 0] }}
-          transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut' }}
-          style={{
-            position: 'absolute', right: '2%', bottom: '5%',
-            height: 'clamp(160px, 22vh, 320px)',
-            objectFit: 'contain',
-            filter: 'drop-shadow(0 0 20px rgba(212,168,67,0.5))',
-            zIndex: 5, pointerEvents: 'none',
-          }}
-        />
-
-        {/* Contenedor 16:9 del mapa */}
-        <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh', margin: '0 auto' }}>
+        {/* Nodos de los Módulos */}
+        <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '100vh', margin: '0 auto' }}>
           {EGYPT_MODULES.map((mod, idx) => (
             <EgyptModuleNode
               key={mod.id}
@@ -276,16 +291,33 @@ export default function EgyptAstroHub() {
             />
           ))}
         </div>
+
+        {/* Astronauta/Astrónomo Observador (Inferior Izquierda para balance) */}
+        <motion.img
+          src="/assets/egypt/hub_character.png"
+          alt="Astrónomo Egipcio"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
+          style={{
+            position: 'absolute', left: '2%', bottom: '2%',
+            height: 'clamp(150px, 20vh, 280px)',
+            objectFit: 'contain',
+            filter: 'drop-shadow(0 0 15px rgba(212,168,67,0.4))',
+            zIndex: 10, pointerEvents: 'none',
+            transform: 'scaleX(-1)' // Voltear para que mire hacia el centro
+          }}
+        />
+
       </main>
 
       <style>{`
         @keyframes twinkle {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 1; }
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.5); }
         }
         @keyframes pulse {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.3); }
+          0%, 100% { transform: scale(1); opacity: 0.8; }
+          50% { transform: scale(1.3); opacity: 1; }
         }
       `}</style>
     </div>
