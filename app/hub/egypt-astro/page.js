@@ -54,30 +54,30 @@ function Stars() {
   );
 }
 
-// ─── Efecto del Río Nilo Fluyendo con SVG Displacement ───────────────
+// ─── Efecto del Río Nilo Fluyendo con SVG Displacement y Clip-Path ───────────────
 function NileRiver() {
   return (
     <div style={{
       position: 'absolute',
-      bottom: 0, left: 0, right: 0, height: '40%',
-      pointerEvents: 'none', zIndex: 1
+      top: 0, bottom: 0, left: 0, right: 0,
+      pointerEvents: 'none', zIndex: 1,
+      clipPath: 'polygon(0% 38%, 20% 45%, 40% 52%, 60% 58%, 80% 62%, 100% 65%, 100% 85%, 80% 82%, 60% 78%, 40% 70%, 20% 60%, 0% 55%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion">
           <feTurbulence type="fractalNoise" baseFrequency="0.015 0.05" numOctaves="2" result="noise">
             <animate attributeName="baseFrequency" values="0.015 0.05; 0.02 0.08; 0.015 0.05" dur="10s" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </svg>
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'linear-gradient(to bottom, rgba(0, 180, 255, 0.0) 0%, rgba(0, 180, 255, 0.3) 50%, rgba(0, 100, 200, 0.6) 100%)',
-        maskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
-        WebkitMaskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
+        background: 'linear-gradient(to right, rgba(0, 150, 255, 0.1) 0%, rgba(0, 180, 255, 0.2) 50%, rgba(0, 100, 200, 0.15) 100%)',
         filter: 'url(#water-distortion)',
-        backdropFilter: 'blur(2px)',
-        WebkitBackdropFilter: 'blur(2px)'
+        backdropFilter: 'blur(3px)',
+        WebkitBackdropFilter: 'blur(3px)',
+        mixBlendMode: 'color-dodge'
       }}></div>
     </div>
   );
