@@ -1,0 +1,20 @@
+{
+  "original": [
+    {
+      "parts": [
+        {
+          "type": "text",
+          "text": "hola"
+        }
+      ],
+      "id": "123",
+      "role": "user"
+    }
+  ],
+  "mapped": [
+    {
+      "role": "user",
+      "content": "hola"
+    }
+  ]
+}

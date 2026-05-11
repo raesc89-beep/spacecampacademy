@@ -12,6 +12,16 @@ import Image from 'next/image';
 
 const DASHBOARD_MISSIONS = [
   {
+    id: "egypt_astro",
+    title: "Arqueoastronomía Egipcia",
+    subtitle: "Explora los secretos estelares y el cielo cósmico de los antiguos faraones.",
+    link: "/hub/egypt-astro",
+    bgSrc: "/assets/egypt/dashboard_cover.png",
+    badgeColor: "#D4A843",
+    badgeText: "Arqueoastronomía",
+    borderColor: "rgba(212, 168, 67, 0.4)"
+  },
+  {
     id: "ciencia_volver_al_futuro",
     title: "La Ciencia de Volver al Futuro",
     subtitle: "Cronodinámica, gravitación y energía de fusión a través del DeLorean.",

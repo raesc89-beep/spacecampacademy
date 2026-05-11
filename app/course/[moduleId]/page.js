@@ -161,16 +161,18 @@ export default function CourseModule() {
   const isAsteroide = moduleData.id.startsWith('asteroides_');
   const isPionero = moduleData.id.startsWith('pioneros_');
   const isRobot = moduleData.id.startsWith('robots_');
+  const isEgypt = moduleData.id.startsWith('egypt_');
   const isEinsteinRosen = moduleData.id === 'agujeros_gusano_er';
   const isPluto = moduleData.id === 'pluto';
   const isSun = moduleData.id === 'sun';
   
-  const planetImageName = isPionero ? `pioneros/hub_${moduleData.id.replace('pioneros_', '')}.png` :
+  const planetImageName = isEgypt ? moduleData.contentEs.sections[0].image.replace('/assets/', '') :
+                          (isPionero ? `pioneros/hub_${moduleData.id.replace('pioneros_', '')}.png` :
                           (isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
                           (isAsteroide ? `asteroides/hub_${moduleData.id.replace('asteroides_', '')}.png` : 
                           (isAnomaly ? `${moduleData.id}_icon.png` : 
                           (isSun ? 'cartoon_sun.png' : 
-                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`)))));
+                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`))))));
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -337,7 +339,7 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href={isEinsteinRosen ? "/dashboard" : (isRobot ? "/hub/robots-espacio" : (isPionero ? "/hub/pioneros" : (isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system")))))} className="btn-secondary" style={{ textAlign: 'center' }}>
+          <Link href={isEgypt ? "/hub/egypt-astro" : (isEinsteinRosen ? "/dashboard" : (isRobot ? "/hub/robots-espacio" : (isPionero ? "/hub/pioneros" : (isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"))))))} className="btn-secondary" style={{ textAlign: 'center' }}>
             Volver al Mapa Estelar
           </Link>
         </aside>
