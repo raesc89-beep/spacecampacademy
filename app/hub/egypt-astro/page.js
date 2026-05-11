@@ -8,16 +8,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const EGYPT_MODULES = [
-  // Top row (Sky)
-  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.png',  coords: { left: '15%', top: '15%' } },
-  { id: 'egypt_m6',  titleEs: 'Mapa del Universo', color: '#9B6BFF', link: '/course/egypt_m6',  icon: '/assets/egypt/m6_senenmut.png',     coords: { left: '35%', top: '10%' } },
-  { id: 'egypt_m2',  titleEs: 'Los Decanos',       color: '#6A9FD4', link: '/course/egypt_m2',  icon: '/assets/egypt/m2_decanos.png',      coords: { left: '60%', top: '12%' } },
-  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.png',      coords: { left: '85%', top: '18%' } },
+  // Top row (Sky) - BAJADOS para no encimar el título
+  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.png',  coords: { left: '15%', top: '25%' } },
+  { id: 'egypt_m6',  titleEs: 'Mapa del Universo', color: '#9B6BFF', link: '/course/egypt_m6',  icon: '/assets/egypt/m6_senenmut.png',     coords: { left: '35%', top: '22%' } },
+  { id: 'egypt_m2',  titleEs: 'Los Decanos',       color: '#6A9FD4', link: '/course/egypt_m2',  icon: '/assets/egypt/m2_decanos.png',      coords: { left: '60%', top: '22%' } },
+  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.png',      coords: { left: '85%', top: '25%' } },
   
-  // Middle-Upper row (Sky/Horizon)
-  { id: 'egypt_m9',  titleEs: 'Zodiaco Dendera',   color: '#D46A6A', link: '/course/egypt_m9',  icon: '/assets/egypt/m9_dendera.png',      coords: { left: '25%', top: '32%' } },
-  { id: 'egypt_m4',  titleEs: 'Mesjetiu',          color: '#F5C842', link: '/course/egypt_m4',  icon: '/assets/egypt/m4_mesjetiu.png',     coords: { left: '50%', top: '28%' } },
-  { id: 'egypt_m3',  titleEs: 'Sopdet y Sirio',    color: '#C0E8FF', link: '/course/egypt_m3',  icon: '/assets/egypt/m3_sopdet.png',       coords: { left: '75%', top: '35%' } },
+  // Middle-Upper row (Sky/Horizon) - BAJADOS ligeramente
+  { id: 'egypt_m9',  titleEs: 'Zodiaco Dendera',   color: '#D46A6A', link: '/course/egypt_m9',  icon: '/assets/egypt/m9_dendera.png',      coords: { left: '25%', top: '42%' } },
+  { id: 'egypt_m4',  titleEs: 'Mesjetiu',          color: '#F5C842', link: '/course/egypt_m4',  icon: '/assets/egypt/m4_mesjetiu.png',     coords: { left: '50%', top: '38%' } },
+  { id: 'egypt_m3',  titleEs: 'Sopdet y Sirio',    color: '#C0E8FF', link: '/course/egypt_m3',  icon: '/assets/egypt/m3_sopdet.png',       coords: { left: '75%', top: '45%' } },
 
   // Middle-Lower row (Horizon/Pyramids)
   { id: 'egypt_m10', titleEs: 'Daga Espacial',     color: '#B0C4DE', link: '/course/egypt_m10', icon: '/assets/egypt/m10_daga.png',        coords: { left: '12%', top: '55%' } },
@@ -54,21 +54,32 @@ function Stars() {
   );
 }
 
-// ─── Efecto del Río Nilo Fluyendo ─────────────────────────────────────────
+// ─── Efecto del Río Nilo Fluyendo con SVG Displacement ───────────────
 function NileRiver() {
   return (
     <div style={{
       position: 'absolute',
-      bottom: 0, left: 0, right: 0, height: '35%',
-      background: 'linear-gradient(to bottom, rgba(0, 150, 255, 0.15), rgba(0, 150, 255, 0.4))',
-      maskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%)',
-      WebkitMaskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%)',
-      backdropFilter: 'blur(4px)',
-      WebkitBackdropFilter: 'blur(4px)',
-      animation: 'waterFlow 6s ease-in-out infinite alternate',
-      pointerEvents: 'none',
-      zIndex: 1,
-    }}></div>
+      bottom: 0, left: 0, right: 0, height: '40%',
+      pointerEvents: 'none', zIndex: 1
+    }}>
+      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+        <filter id="water-distortion">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015 0.05" numOctaves="2" result="noise">
+            <animate attributeName="baseFrequency" values="0.015 0.05; 0.02 0.08; 0.015 0.05" dur="10s" repeatCount="indefinite" />
+          </feTurbulence>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </svg>
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: 'linear-gradient(to bottom, rgba(0, 180, 255, 0.0) 0%, rgba(0, 180, 255, 0.3) 50%, rgba(0, 100, 200, 0.6) 100%)',
+        maskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
+        WebkitMaskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
+        filter: 'url(#water-distortion)',
+        backdropFilter: 'blur(2px)',
+        WebkitBackdropFilter: 'blur(2px)'
+      }}></div>
+    </div>
   );
 }
 
