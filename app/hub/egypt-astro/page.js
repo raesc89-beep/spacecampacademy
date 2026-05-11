@@ -54,6 +54,28 @@ function Stars() {
   );
 }
 
+// ─── Lluvia de Cometas ─────────────────────────────────────────────────────
+function Comets() {
+  return (
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 1 }}>
+      {Array.from({ length: 5 }).map((_, i) => (
+        <div key={i} style={{
+          position: 'absolute',
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * -50}%`,
+          width: '2px',
+          height: '100px',
+          background: 'linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0))',
+          transform: 'rotate(-45deg)',
+          opacity: 0,
+          animation: `shootingStar ${Math.random() * 8 + 4}s linear infinite`,
+          animationDelay: `${Math.random() * 10}s`,
+        }} />
+      ))}
+    </div>
+  );
+}
+
 // ─── Nodo de módulo circular y moderno ────────────────────────────────────
 function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
   const [hovered, setHovered] = useState(false);
@@ -263,8 +285,9 @@ export default function EgyptAstroHub() {
           pointerEvents: 'none'
         }} />
 
-        {/* Efectos de Estrellas */}
+        {/* Efectos de Estrellas y Cometas */}
         <Stars />
+        <Comets />
 
         {/* Red de Líneas Estelares (Conectando Módulos) */}
         <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.35 }}>
@@ -319,7 +342,9 @@ export default function EgyptAstroHub() {
             objectFit: 'contain',
             filter: 'drop-shadow(0 0 15px rgba(212,168,67,0.4))',
             zIndex: 10, pointerEvents: 'none',
-            transform: 'scaleX(-1)' // Voltear para que mire hacia el centro
+            transform: 'scaleX(-1)', // Voltear para que mire hacia el centro
+            WebkitMaskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 80%)',
+            maskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 80%)',
           }}
         />
 
@@ -334,6 +359,8 @@ export default function EgyptAstroHub() {
           0%, 100% { transform: scale(1); opacity: 0.8; }
           50% { transform: scale(1.3); opacity: 1; }
         }
+      
+        @keyframes shootingStar { 0% { transform: translate(0, 0) rotate(-45deg); opacity: 1; } 20% { transform: translate(-400px, 400px) rotate(-45deg); opacity: 0; } 100% { transform: translate(-400px, 400px) rotate(-45deg); opacity: 0; } }
       `}</style>
     </div>
   );
