@@ -45,8 +45,8 @@ const DASHBOARD_MISSIONS = [
     id: "arqueoastronomia_maya",
     title: "Arqueoastronomía Maya",
     subtitle: "Descubre cómo los antiguos sabios decodificaron la danza de las estrellas.",
-    link: "/course/arqueoastronomia_maya",
-    bgSrc: "/assets/dashboard/maya_course_cover.png",
+    link: "/hub/maya-astro",
+    bgSrc: "/assets/maya/maya_course_cover.png",
     badgeColor: "#00FF00",
     badgeText: "Arqueoastronomía",
     borderColor: "rgba(0, 255, 0, 0.4)"

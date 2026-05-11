@@ -61,23 +61,23 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 1,
-      clipPath: 'polygon(0% 38%, 20% 45%, 40% 52%, 60% 58%, 80% 62%, 100% 65%, 100% 85%, 80% 82%, 60% 78%, 40% 70%, 20% 60%, 0% 55%)'
+      clipPath: 'polygon(0% 40%, 20% 45%, 40% 50%, 60% 56%, 80% 60%, 100% 64%, 100% 80%, 80% 75%, 60% 70%, 40% 65%, 20% 55%, 0% 50%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion">
           <feTurbulence type="fractalNoise" baseFrequency="0.015 0.05" numOctaves="2" result="noise">
             <animate attributeName="baseFrequency" values="0.015 0.05; 0.02 0.08; 0.015 0.05" dur="10s" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="25" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </svg>
       <div style={{
-        position: 'absolute', inset: 0,
-        background: 'linear-gradient(to right, rgba(0, 150, 255, 0.1) 0%, rgba(0, 180, 255, 0.2) 50%, rgba(0, 100, 200, 0.15) 100%)',
+        position: 'absolute', inset: -20,
+        background: 'linear-gradient(to right, rgba(0, 160, 255, 0.3) 0%, rgba(50, 200, 255, 0.4) 50%, rgba(0, 120, 220, 0.35) 100%)',
         filter: 'url(#water-distortion)',
-        backdropFilter: 'blur(3px)',
-        WebkitBackdropFilter: 'blur(3px)',
-        mixBlendMode: 'color-dodge'
+        backdropFilter: 'blur(2px)',
+        WebkitBackdropFilter: 'blur(2px)',
+        mixBlendMode: 'hard-light'
       }}></div>
     </div>
   );

@@ -319,10 +319,23 @@ export default function CourseModule() {
             </div>
             
             <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Misión {moduleData.titleEs}</h2>
-            {moduleData.badgeImage && (
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginTop: '-0.5rem' }}>
-                <img src={moduleData.badgeImage} width={80} height={80} alt="Insignia" style={{ borderRadius: '50%', boxShadow: `0 0 15px ${moduleData.color}` }} />
-                <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', color: moduleData.color, letterSpacing: '1px', fontWeight: 'bold' }}>Insignia de Misión</span>
+            {(moduleData.badgeIcon || moduleData.badgeImage) && (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.8rem', marginTop: '1rem', position: 'relative' }}>
+                <div style={{
+                   position: 'relative',
+                   width: '100px', height: '100px',
+                   borderRadius: '50%',
+                   background: `linear-gradient(45deg, #FFD700, #FFA500, #FF4500)`,
+                   padding: '6px',
+                   boxShadow: `0 0 20px ${moduleData.color}80, inset 0 0 10px rgba(0,0,0,0.5)`,
+                   display: 'flex', alignItems: 'center', justifyContent: 'center'
+                }}>
+                   <div style={{ position: 'absolute', top: '-10px', width: '20px', height: '30px', background: 'var(--gold-star)', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)', zIndex: 1 }} />
+                   <img src={moduleData.badgeIcon || moduleData.badgeImage} width={88} height={88} alt="Insignia" style={{ borderRadius: '50%', objectFit: 'cover', border: '3px solid #222' }} />
+                </div>
+                <span style={{ fontSize: '0.85rem', textTransform: 'uppercase', color: 'var(--gold-star)', letterSpacing: '1.5px', fontWeight: 'bold', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
+                  Insignia Oficial
+                </span>
               </div>
             )}
             

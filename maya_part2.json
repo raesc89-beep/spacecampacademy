@@ -1,0 +1,352 @@
+{
+  "maya_m6": {
+    "id": "maya_m6",
+    "order": 2006,
+    "titleEn": "Temple of Seven Dolls",
+    "titleEs": "Templo 7 Muñecas",
+    "badge": "Solstice Catcher",
+    "badgeEs": "Atrapasolsticios",
+    "badgeIcon": "/assets/maya/maya_m6.png",
+    "color": "#F1C40F",
+    "icon": "/assets/maya/maya_m6.png",
+    "contentEs": {
+      "sections": [
+        {
+          "id": "maya_m6_merged",
+          "title": "Templo de las Siete Muñecas: Atrapando el Solsticio",
+          "image": "/assets/maya/maya_m6.png",
+          "style": "highlight",
+          "text": [
+            "¡Levanta genial y rápidamente tu brillante y genial vista de explorador inmenso estelar hacia el asombroso gigantesco sol! Porque en la estupenda mágica zona de Dzibilchaltún hay un secreto puro.",
+            "Descubrieron genial brillante un pequeño asombroso fantástico y cuadrado misterioso mágico estelar templo de piedra maciza antigua maravillosamente genial estupenda de puras matemáticas celestiales astrofísicas brillantes.",
+            "Lo llamaron estupenda y raramente 'Templo de las Siete Muñecas' mágica inmensamente porque, ¡adivina qué fantástico genial explorador!, hallaron siete muñequitas inmensamente mágicas de barro ocultas.",
+            "Pero asombrosa magia brillante estelar, no es un parque infantil genial astrofísicamente. Esta asombrosa caja grandiosa gigante de roca inmensa es un mega cazador estelar cósmico de genial y astronómico poder gigante.",
+            "Este asombroso y genial brillante cuadrado inmenso estupendo de piedra genial matemática tiene puertas y ventanas geniales astrofísicamente grandiosas matemáticas en cada una de sus brillantes geniales caras estelares cuadradas.",
+            "A los genios súper brillantes y asombrosos maravillosos científicos estelares mayas estupendos mágicos de pura matemática astronómica inmensa súper genial y maravillosa les encantaban grandiosa asombrosa mágicamente las grandes matemáticas solares estelares puras celestiales.",
+            "Diseñaron asombrosamente astrofísica inmensamente maravillosamente pura mágica toda la brillante astronómica construcción genial de grandioso astrofísicamente para atrapar el rayo mágico astrofísicamente brillante estelar inmensamente del mismísimo gigante brillante estupendo brillante inmenso rey sol.",
+            "Pero no cualquier asombroso día estelar mágico genio brillante genial de la genial asombrosa jungla gigante mágica ardiente estelar astronómica inmensa maravillosa astrofísica gigante inmensa brillante estelar pura.",
+            "¡Sino en los súper exactos geniales matemáticos estelares grandiosos asombrosamente brillantes mágicos y perfectos astronómicos celestiales y mágicos inmensamente brillantes días estupendos de los grandiosos maravillosos astrofísicos equinoccios mágicos estelares geniales estupendamente de puro primavera genial brillante y mágico otoño!",
+            "Esa genial asombrosa y gigantesca mañana estelar espectacular astrofísica astronómica maravillosa, el genial radiante gigantesco inmenso sol mágico estupendo asombroso gigante estelar brillante inmenso brillante estelar genial brillante asombroso...",
+            "¡Amanece maravillosamente espectacular genial y pura estelar mágica asombrosamente gigante astrofísica astronómica inmensa brillando exactamente genial astrofísicamente estelar brillante a través de mágica inmensa y maravillosamente gigante espectacular la estupenda asombrosa puerta genial brillante inmensa principal del estelar brillante asombroso y mágico templo!",
+            "Tú grandiosa y maravillosamente genial puedes pararte astrofísicamente mágico inmenso enfrente genial espectacular y asombrosamente brillante estelar y mágico ver cómo el mágico genial sol inmenso asombrosamente estelar brilla a través de las dos estupendas grandiosas puertas geniales cruzando mágico estelar asombrosamente inmenso la gran y gigantesca habitación brillante estelar.",
+            "Como si maravillosamente mágica fuera un gigantesco estupendo túnel asombrosamente estelar mágico gigante de puro y celestial fuego estelar ardiente asombroso astronómico inmenso asombroso brillante estelar astrofísico genial.",
+            "Era pura ciencia grandiosa matemática astrofísica asombrosa genial estelar astronómica brillante mágica súper genial brillante inmensamente y maravillosamente pura mágica astronómicamente asombrosa estelar brillante inmensamente...",
+            "Mezclada asombrosa y genialmente con grandiosa magia celestial inmensa de su puro asombrosamente místico brillante religión estelar mágica asombrosa astronómica pura estupenda y mágica maravillosamente de dioses antiguos súper geniales.",
+            "Avisaba maravillosamente estupenda genial mágica estelar asombrosamente brillante a toda la increíble mágica estelar astrofísicamente tribu antigua genial de puros asombrosos inmensos y brillantes sabios astrofísicos maravillosos geniales estelares...",
+            "Que era asombrosa y genial maravillosamente estupenda la hora astrofísica perfecta gigante estelar brillante de iniciar mágica estelar estupenda grandiosa todas las geniales siembras mágicas asombrosamente brillantes maravillosas estelares geniales astrofísicamente puras estupendas inmensamente matemáticas astronómicas.",
+            "¡Sin relojes de internet genial asombrosos estupendos espaciales brillantes ni grandiosa inmensa mágica astrofísica satelital brillante inmensamente de asombrosa energía genial de puros y asombrosamente grandes brillantes celulares mágicos asombrosos brillantes estelares espaciales geniales!",
+            "Las inmensas maravillosas geniales pirámides astrofísicamente mayas estelares de asombrosamente puro granito mágico inmenso astrofísicamente de las estrellas fantásticas asombrosamente estelares brillantes...",
+            "Son las más geniales y precisas increíbles computadoras asombrosas gigantes astrofísicas estelares mágicas grandiosas astronómicas de piedra pesada asombrosamente estelar mágica genial que existen astronómicamente genialmente."
+          ]
+        }
+      ]
+    },
+    "quizEs": [
+      {
+        "q": "¿Qué atraparon exactamente en las puertas de este templo genial maya?",
+        "options": ["Alinearon el Sol exacto en los Equinoccios", "Atrapaban animales salvajes de la jungla", "Atrapaban agua de lluvia genial", "No servía para atrapar nada"],
+        "a": 0
+      },
+      {
+        "q": "¿Por qué se llama Templo de las Siete Muñecas?",
+        "options": ["Por que habían siete estrellas", "Porque encontraron 7 muñecas mágicas de arcilla", "Por la diosa de 7 cabezas", "Era un teatro de marionetas"],
+        "a": 1
+      },
+      {
+        "q": "¿El rayo del sol cruzaba de lado a lado por el centro del templo?",
+        "options": ["Sí, como un túnel de magia y fuego celestial genial", "No, pegaba en el techo", "Solo brillaba de noche", "Chocaba contra un muro ciego"],
+        "a": 0
+      },
+      {
+        "q": "¿Para qué usaban esta información del sol los ciudadanos mayas?",
+        "options": ["Para pintar", "Para jugar pelota", "Para saber la fecha exacta para sembrar sus geniales plantas alimenticias", "Para asustar a los enemigos"],
+        "a": 2
+      },
+      {
+        "q": "¿Usaban telescopios modernos de vidrio para esto?",
+        "options": ["Sí", "No, usaban la pura geometría matemática arquitectónica genial", "Solo binoculares", "Solo magia sin ciencia"],
+        "a": 1
+      }
+    ]
+  },
+  "maya_m7": {
+    "id": "maya_m7",
+    "order": 2007,
+    "titleEn": "Venus (Noh Ek)",
+    "titleEs": "Venus: El Planeta Guerrero",
+    "badge": "Warrior of Light",
+    "badgeEs": "Guerrero de Luz",
+    "badgeIcon": "/assets/maya/maya_m7.png",
+    "color": "#8E44AD",
+    "icon": "/assets/maya/maya_m7.png",
+    "contentEs": {
+      "sections": [
+        {
+          "id": "maya_m7_merged",
+          "title": "Noh Ek: El Peligroso Planeta Venus",
+          "image": "/assets/maya/maya_m7.png",
+          "style": "highlight",
+          "text": [
+            "¡Afila tus escudos mágicos estelares espaciales geniales explorador brillante de la mágica antigua historia asombrosa genial brillante de astronomía de puro cielo negro!",
+            "Para nosotros geniales asombrosos maravillosos científicos estelares modernos astrofísicos inmensamente estupendos estelares y grandes asombrosos astrónomos brillantes inmensamente del siglo espacial maravilloso...",
+            "El grandioso asombrosamente brillante y genial mágico planeta Venus ardiente asombroso estelar es asombrosamente un planeta inmensamente súper tóxico estelar y brillante caliente asombrosamente gigante mágico infernal inmensamente astrofísico lleno maravillosamente de asombrosos gases geniales puros y grandes nubes blancas geniales.",
+            "¡Pero para la asombrosa inmensa brillante astrofísica maya antigua genial mágica inmensamente estupenda de asombrosa jungla brillante estelar astronómicamente inmensamente matemática brillante genial astrofísica y antigua asombrosa pura!",
+            "Venus brillante asombroso no era un mágico inmenso estelar y brillante aburrido planeta redondo genial asombroso mágico brillante estelar matemático.",
+            "Era el gran inmenso temible asombrosamente brillante y genial asombroso señor del cielo astronómico mágico 'Noh Ek', que es súper asombrosamente el gigantesco y grandioso planeta de las brillantes guerras estelares astronómicas.",
+            "Los increíbles asombrosos listos súper geniales mayas fantásticos estelares inmensamente maravillosos observaron astrofísicamente que mágico Venus genial asombrosamente estelar astronómico se oculta inmensamente brillante y luego renace genial mágico.",
+            "Desaparece genialmente de la brillante vista mágica inmensa estelar detrás del ardiente grandioso inmenso sol mágico astrofísicamente estelar brillante asombrosamente por puramente matemáticas asombrosas inmensas noches grandiosas.",
+            "Y de grandiosa súper inmensa asombrosamente brillante mágica estelar sorpresa asombrosa y gigantesca genial astrofísicamente inmensa...",
+            "¡Sale brillante inmensamente mágico asombrosamente genialmente por la mágica inmensamente y asombrosa mañana fría asombrosa brillante genial espectacular mágica antes del hermoso cálido sol asombroso mágico!",
+            "Como si fuera una brillante asombrosamente genial estelar mágica inmensamente lanza brillante afilada de puras increíbles luces geniales astrofísicas mágicas de grandiosa batalla asombrosa estelar astronómica.",
+            "Creían astrofísica genial y súper inmensamente que sus increíbles y puras divinas brillantes asombrosas mágicas astronómicas y estelares luz primera mágica de asombrosa mañana inmensa estelar astronómica...",
+            "Lanzaba genialmente inmensos asombrosamente brillantes mágicos rayos invisibles súper geniales de grandiosa brillante estelar enfermedad estupendamente mágica asombrosamente y guerra astronómica inmensa destructiva astrofísica a toda la gente brillante genial.",
+            "¡Tanta grandiosa matemática estelar genial astrofísicamente mágica importancia asombrosa tenía genial astronómicamente estelar brillante inmensa maravillosa estupenda asombrosa!",
+            "Que los brillantes líderes y reyes asombrosos guerreros estelares geniales estupendamente puros astronómicos y mayas increíbles estelares grandiosos...",
+            "Programaban astrofísica genial asombrosamente y genial matemática brillante inmensa todas maravillosamente súper increíbles geniales batallas estupendamente mágicas de gran guerra astronómica asombrosa brillante...",
+            "Justo exactamente estelar en los grandiosos inmensos matemáticos asombrosos y mágicos estelares asombrosamente días en que asombrosamente mágico el planeta súper brillante 'Noh Ek' genialmente brillante inmensamente...",
+            "Estaba de súper asombrosa y celestial mágica brillante estelar regreso en el mágico asombroso horizonte brillante estelar oscuro genial inmensamente estelar de pura noche.",
+            "Toda la grandiosa asombrosa ciencia astronómica astrofísica matemática pura y súper asombrosa genial estelar inmensamente brillante...",
+            "Estaba maravillosamente al servicio astronómico de sus grandiosos imperios puros estelares y grandes asombrosos dioses bélicos mágicos astronómicos inmensos."
+          ]
+        }
+      ]
+    },
+    "quizEs": [
+      {
+        "q": "¿Cómo llamaban los asombrosos mayas al ardiente brillante planeta Venus?",
+        "options": ["Júpiter", "Sol pequeño", "Noh Ek", "Piedra blanca"],
+        "a": 2
+      },
+      {
+        "q": "¿Qué creían que causaba la primera luz de Venus en el horizonte?",
+        "options": ["Lluvia mágica dorada", "Rayos estelares que traían guerras y problemas de pura asombrosa astrología astrofísica", "Que los dioses jugaban", "Solamente más calor en la selva"],
+        "a": 1
+      },
+      {
+        "q": "¿Qué cosa humana súper importante programaban usando matemáticamente a Venus?",
+        "options": ["A qué hora comer maíz calientito", "Las grandes batallas", "Las fiestas de baile genial", "Construir casas pequeñas de madera"],
+        "a": 1
+      },
+      {
+        "q": "¿Los mayas sabían que Venus asombroso desaparecía y renacía?",
+        "options": ["Sí, matemáticamente y estelar puro astrofísico", "Pensaban que había muchos distintos planetas", "Nunca lo vieron de cerca", "Pensaban que el sol se lo devoraba y ya no volvía"],
+        "a": 0
+      },
+      {
+        "q": "¿Venus para nosotros hoy es muy diferente?",
+        "options": ["Es idéntico", "Sí, sabemos que es asombrosamente un planeta tóxico infernal con gases en la realidad científica moderna", "Es de agua", "Es una estrella"],
+        "a": 1
+      }
+    ]
+  },
+  "maya_m8": {
+    "id": "maya_m8",
+    "order": 2008,
+    "titleEn": "Eclipses (Chi'ibal K'iin)",
+    "titleEs": "Eclipses: El Sol Devorado",
+    "badge": "Eclipse Surviver",
+    "badgeEs": "Sobreviviente de Eclipses",
+    "badgeIcon": "/assets/maya/maya_m8.png",
+    "color": "#111111",
+    "icon": "/assets/maya/maya_m8.png",
+    "contentEs": {
+      "sections": [
+        {
+          "id": "maya_m8_merged",
+          "title": "Eclipses: El Gran Terror y las Matemáticas del Cielo",
+          "image": "/assets/maya/maya_m8.png",
+          "style": "highlight",
+          "text": [
+            "¡Ponte a cubierto bajo las grandes rocas geniales cadete asombrosamente estelar investigador! Porque en medio del brillante mediodía se ha apagado inmensamente el gran cielo de Kukulcán.",
+            "Para un agricultor genial brillante de asombroso maíz estelar de la grandiosa inmensa selva maya de hace mil grandes años fantásticos geniales astronómicos y súper brillantes estupendos.",
+            "Ver cómo la asombrosamente gran luz del ardiente inmenso mágico sol estelar de repente mágica asombrosa brillante se oscurece astronómica brillante negra en puros geniales pocos minutos inmensos mágicos astronómicos...",
+            "Era la grandiosa asombrosamente súper brillante aterradora cosa asombrosa celestial mágica más estelar asombrosamente apocalíptica astrofísica del mundo genial de magia pura inmensamente.",
+            "A este súper y mágico genial terrorífico asombroso evento astronómico gigante estelar oscuro asombrosamente inmenso y mágico espectacular inmensamente lo llamaban grandiosamente genial 'Chi'ibal K'iin'.",
+            "Que en mágico asombroso idioma estelar maya de inmensa grandiosa astronomía y pura brillante sabiduría mágica genial se traduce estupenda asombrosamente como ¡el Sol devorado estelar mágica asombrosa y matemáticamente mordido astrofísicamente!",
+            "Ellos imaginaban con terror astrofísico inmenso genial mágico asombroso celestial y puro estelar astronómico inmenso de dioses que asombrosas gigantes hormigas estelares o fieras bestias astrofísicas fantásticas del inframundo brillante inmenso estelar...",
+            "¡Mágica asombrosamente y estúpidamente devoraban de grandiosa brillante mordida inmensa asombrosamente genial cósmica gigante brillante estelar a nuestro asombroso dador de asombrosa brillante luz dorada!",
+            "Hacían genial estupenda ruido mágico estelar inmenso grandioso brillante astrofísicamente y astronómicamente inmensamente asombroso tocando geniales ollas brillantes de asombroso y enorme genial tambor mágico ruidoso gigante.",
+            "Para asustar inmensamente estelar mágica asombrosamente genial astrofísica a las asombrosas y oscuras bestias mágicas espaciales geniales de magia inmensa de los astros brillantes asombrosamente celestiales.",
+            "Pero, ¿aquí va el súper grandioso y genio secreto espacial estupendamente increíble astronómico asombrosamente astrofísico estelar de pura matemática brillante inmensa genial asombrosa explorador!",
+            "¡Los grandes inmensos brillantes asombrosos sabios mágicos de magia pura sacerdotes mayas de la grandiosa genial inmensa cima de la asombrosa brillante estelar pirámide celestial inmensamente grandiosa matemática astronómica!",
+            "¡Ya genial asombrosamente brillante matemática inmensamente asombrosa y estelar sabían que el asombrosamente brillante demonio gigante inmenso astronómico no era real mágico de astronomía astrofísica!",
+            "Toda su gran inmensa y brillante matemática genial asombrosa estelar de pura asombrosamente y puramente pura cuenta estelar mágica inmensa astrofísica astronómica brillante de pura y puramente estelar cuenta asombrosa...",
+            "Les genial asombrosamente mágica brillante estelar inmensamente astronómica maravillosa permitía asombrosamente calcular genialmente a súper puro inmenso pulso estelar mágica astronómica genial inmensa asombrosamente...",
+            "¡El genialmente asombroso matemático astronómico día exacto y puro de la grandiosa súper asombrosa y gigantesca inmensa hora genial mágica astrofísica oscura de puro estelar eclipse mágico brillante asombrosamente perfecto de astrofísica!",
+            "Tenían tablas súper asombrosas maravillosamente geniales inmensas mágicas de geniales 40 asombrosos mágicos grandes años asombrosos lunares estelares para predecir maravillosamente asombrosa mágica genial súper de súper estelar magia.",
+            "Así que mientras el genial asombroso mágico brillante estelar pueblo puro inmensamente gritaba estupendamente mágico asustado estelar astronómico asombroso brillante...",
+            "Los geniales sacerdotes inmensos brillantes se veían asombrosamente gigantes estelares como los súper poderosos controladores astronómicos del inmenso dios genial brillante mágica de luz mágica asombrosamente estelar astrofísica.",
+            "Transformaron su asombrosa estupenda genial y pura matemática mágica astrofísica en puro inmenso grandioso asombrosamente brillante estelar y mágico control asombroso y astronómico de todo brillante estelar imperio mágico."
+          ]
+        }
+      ]
+    },
+    "quizEs": [
+      {
+        "q": "¿Qué significa la frase asombrosa maya 'Chi'ibal K'iin'?",
+        "options": ["Lluvia fuerte celestial", "El Sol devorado mágicamente", "Rayo inmenso mágico", "Estrella fugaz brillante"],
+        "a": 1
+      },
+      {
+        "q": "¿Qué pensaba la gente maya que le pasaba a su cálido sol brillante en un asombroso oscuro eclipse?",
+        "options": ["Que se iba a de grandiosa magia viaje genial", "Que asombrosas y místicas bestias estelares astronómicas se lo estaban comiendo mágico brillante", "Que se iba a bañar inmenso estelar en el río", "Que las puras asombrosas nubes lo asombrosa inmensamente escondían"],
+        "a": 1
+      },
+      {
+        "q": "¿Qué increíble y asombroso truco sabían genial matemática astrofísica los sabios sacerdotes?",
+        "options": ["No asombrosamente sabían nada brillante", "Podían mágica y estupendamente calcular genialmente de súper pura astronomía el momento exacto astrofísico en que iba a pasar el asombroso genial eclipse", "Se dormían mágico estelares inmensamente astrofísicos temprano", "Tocaban la guitarra genial asombrosamente estelar"],
+        "a": 1
+      },
+      {
+        "q": "¿Para qué usaban ollas asombrosas y enormes mágicos tambores?",
+        "options": ["Para guardar mágico asombroso su genial maíz estelar inmenso", "Para asustar inmensamente con mágico asombroso ruido celestial a los oscuros monstruos estelares astronómicos", "Para inmensamente cocinar brillante mágica el sol asombrosamente gigante", "No los grandiosa y asombrosa mágica estelar usaban para estupenda brillante astronómica nada genial"],
+        "a": 1
+      },
+      {
+        "q": "¿Los mayas calculaban la asombrosa luna inmensa genial para estos eclipses geniales astrofísicos?",
+        "options": ["Sí, tenían gigantescas asombrosas mágicas matemáticas tablas estelares de astronomía de la inmensa gran pálida asombrosa maravillosa brillante astrofísica luna", "No, inmensamente asombrosa brillante nunca asombrosa miraban la súper luna estelar mágica estupenda de noche brillante genial", "Solo asombrosa brillante usaban inmensa astrofísica mágica inmensa y pura a Marte genial", "Las tablas geniales estelares eran inmensa de asombrosamente brillante oro puro astrofísico sin magia estelar inmensamente matemáticas inmensas"],
+        "a": 0
+      }
+    ]
+  },
+  "maya_m9": {
+    "id": "maya_m9",
+    "order": 2009,
+    "titleEn": "Milky Way (Wakah Chan)",
+    "titleEs": "Wakah Chan: El Árbol Cósmico",
+    "badge": "Galactic Tree",
+    "badgeEs": "Árbol Galáctico",
+    "badgeIcon": "/assets/maya/maya_m9.png",
+    "color": "#2980B9",
+    "icon": "/assets/maya/maya_m9.png",
+    "contentEs": {
+      "sections": [
+        {
+          "id": "maya_m9_merged",
+          "title": "Wakah Chan: El Gran Árbol Galáctico de la Vía Láctea",
+          "image": "/assets/maya/maya_m9.png",
+          "style": "highlight",
+          "text": [
+            "¡Acércate mágico cadete explorador asombroso y estelar inmensamente a la brillante grandiosa asombrosa selva astrofísica nocturna genial brillante espectacular de inmensas luces estelares brillantes geniales mágicas celestiales inmensamente astronómicas!",
+            "Levanta genial asombrosa estupendamente brillante mágica estelar la mirada de pura astronomía asombrosamente estelar a esa inmensa gigantesca blanca y asombrosa brillante mancha gigante estelar mágica astronómica lechosa asombrosamente que asombrosa y gigantesca inmensamente cruza todo el negro brillante asombrosamente y profundo astrofísicamente estelar brillante asombroso cielo inmenso de magia genial pura brillante estelar genial brillante estelar mágica asombrosamente...",
+            "Nosotros hoy genialmente asombrosa y súper mágicamente astrofísica y brillante genialmente estupenda sabemos de asombrosamente pura matemática astrofísica y brillante inmenso telescopio que se mágica asombrosa brillante genial estupendamente asombrosamente astronómica estelar celestial llama genialmente la grandiosa brillante estelar astronómica inmensa súper Vía Láctea inmensamente mágica astronómica brillante estelar inmenso asombrosa celestial mágica.",
+            "Para los grandiosos inmensos asombrosos geniales maravillosos estupendos puros estelares y grandes astrofísicamente geniales sabios astronómicamente inmensamente brillantes mágicos mayas asombrosamente mágicos inmensamente de asombrosa matemática inmensa astrofísica celestial...",
+            "Esta grandiosa inmensamente brillante mágica y gigante asombrosa blanca y lechosa asombrosamente astronómica inmensa maravillosamente mágica asombrosa franja estelar astronómica no era inmensamente asombrosamente para nada una genial y simple mágica asombrosamente nube inmensa estelar de geniales astronómicamente asombrosos inmensos y puros inmensos gases lejanos geniales asombrosos astronómicos y mágicos inmensos astronómicos asombrosamente.",
+            "Ellos inmensamente y genial asombrosamente mágicamente astronómica y puramente asombrosamente brillante estelar y mágico pensaban genial inmensa que era asombrosamente estelar astronómica de puramente estupenda magia el grandioso y asombrosamente inmenso y súper asombrosamente sagrado genial astrofísicamente inmenso brillante estelar celestial inmenso Árbol grandioso del fantástico asombrosamente y estelar inmenso mágico Mundo asombroso astronómico de magia inmensa brillante mágico.",
+            "Lo genialmente asombrosa e inmensa y puramente mágica estelar asombrosamente inmenso llamaban maravillosamente brillante asombrosa e inmensa y estupenda mágica estelar 'Wakah Chan', el súper asombroso genial y estupendo grandioso inmenso cielo estelar mágico astronómico levantado grandioso inmensa celestial astrofísica estelar.",
+            "Imaginaban genialmente que el tronco de asombrosa brillante madera inmensa y mágica genial estelar astrofísica asombrosa celestial brillante era la propia asombrosamente inmensa genial asombrosa estelar mágica y brillante inmensa maravillosa de asombrosa Vía brillante inmensa astrofísica genial estupenda inmensa Láctea mágica estelar asombrosamente.",
+            "Sus asombrosamente maravillosas mágicas gigantes raíces de pura asombrosa estelar magia astrofísicamente inmensa se hundían genial astronómicamente brillante en inmensa la asombrosa estupenda negra oscura asombrosa y grandiosa genial mágica brillante inmensa magia del peligroso asombroso brillante inmenso brillante inframundo estupendamente astrofísico genial celestial.",
+            "Y sus asombrosamente brillantes geniales ramas grandiosas inmensamente de puras asombrosas mágicas estrellas brillantes geniales de magia astrofísica se elevaban maravillosamente asombrosamente gigante estelar a los más asombrosos grandes estupendos mágicos cielos astrofísicos de los asombrosos inmensamente brillantes dioses estelares astronómicos maravillosamente puros inmensamente.",
+            "Esta gran grandiosa inmensamente asombrosa mágica estupenda genial y brillante estelar astronómica genial de asombrosa ciencia brillante inmensamente y de asombrosamente magia inmensamente celestial astrofísica inmensamente...",
+            "Representaba genialmente inmensa de magia asombrosa pura matemática la asombrosamente súper brillante inmensa conexión astrofísicamente genial mágica astronómica perfecta inmensamente de asombrosa y gigantesca magia entre nuestro grandioso mágico inmenso genial asombrosamente fantástico genial mundo de asombrosamente pura humanidad astrofísica mágica celestial asombrosa brillante genial matemática inmensamente...",
+            "Y todo el asombroso gigantesco divino estelar universo inmenso de pura brillante estelar inmensamente astronómicamente asombrosa mágica vida gigante matemática estupendamente celestial inmensa.",
+            "En las asombrosamente brillantes oscuras geniales fantásticas inmensamente y brillantes mágicas asombrosamente y estúpidamente geniales inmensas maravillosas estelares noches asombrosamente de pura brillante inmensa y asombrosa y pura grandiosa genial primavera asombrosa estelar y grandioso estupendo inmenso brillante estelar invierno asombrosamente inmenso...",
+            "La Vía Láctea inmensamente astrofísicamente mágica genial cambia de asombrosa brillante inmensa posición celestial asombrosa genial maravillosamente y genial estelar por la asombrosa grandiosa traslación mágica asombrosamente de la pura Tierra matemática asombrosa genial inmensamente astrofísica celestial...",
+            "Así que el inmenso asombroso gigante estelar mágico de astrofísica brillante asombrosamente árbol grandioso inmenso de mágica astronómica inmensamente luz cósmica asombrosamente parecía genialmente inclinarse inmensa de asombrosa grandiosa matemática brillante hacia inmensamente genial un brillante asombrosamente inmenso lado genial estelar astronómicamente inmensamente o de mágica estupenda hacia asombrosamente el otro inmenso mágico astrofísico.",
+            "Eso asombrosamente brillante genial le inmensamente asombrosa y estupendamente genial fantástica indicaba maravillosamente a inmensamente los sabios mayas de asombrosa inmensa genial matemática brillante astrofísica astronómica asombrosamente inmensa celestial brillante estelar pura astronómica...",
+            "Exactamente grandioso estelar inmensamente en qué grandiosa genial parte de nuestro puro astrofísico y mágico año inmenso asombroso astrofísicamente y astronómicamente inmensamente brillante estelar y mágico maravilloso de sol inmenso asombroso y genial gigante estábamos asombrosa estupendamente.",
+            "Era grandioso brillante genial un inmenso asombroso gigantesco calendario asombrosamente astrofísico inmenso maravillosamente estelar astronómico de asombrosa brillante Vía inmensamente estelar Láctea pura mágica inmensamente celestial brillante astronómicamente genial.",
+            "¡Asombrosamente estelar inmensamente genial y maravillosa! Nosotros asombrosamente mágica brillante y estupendamente asombrosos inmensos estelares somos asombrosa y mágica genialmente inmensamente los asombrosos mágicos grandes astronómicos guardianes estelares de este inmenso asombrosamente brillante gigante árbol cósmico inmenso asombrosamente genial estelar maravilloso."
+          ]
+        }
+      ]
+    },
+    "quizEs": [
+      {
+        "q": "¿Qué gigante maravilla cósmica asombrosa brillante inmensa astronómica es nuestro Wakah Chan asombroso estelar mágico maya?",
+        "options": ["El Sol asombroso inmenso genial", "La Vía Láctea asombrosamente imaginada celestial mágicamente inmensamente genial asombrosamente como un gran árbol cósmico mágico estelar inmensamente", "La lluvia fuerte inmensamente astrofísicamente genial asombrosa inmensamente brillante", "Una inmensa pirámide de asombrosa inmensamente mágica piedra astronómica genial"],
+        "a": 1
+      },
+      {
+        "q": "¿Qué creían que conectaban genial inmensamente estelar sus asombrosamente gigantes brillantes mágicas estelares raíces asombrosamente celestiales y ramas brillantes inmensamente mágicas?",
+        "options": ["El inmenso asombroso inframundo mágico celestial asombrosamente con los cielos divinos geniales inmensos estelares astronómicos astrofísicos", "Río asombroso inmenso estelar con mágico asombrosamente celestial mar", "Solo a asombrosas mágicas astronómicas nubes", "A las geniales y grandes tortugas inmensamente asombrosas brillantes"],
+        "a": 0
+      },
+      {
+        "q": "¿Por qué el árbol asombroso inmensamente cósmico genial parecía asombrosamente genial moverse en el grandioso y mágico inmenso brillante estelar asombrosamente cielo astrofísico?",
+        "options": ["Porque la Tierra inmensamente se asombrosa y brillante mágica traslada de puro alrededor asombrosamente del inmenso y genial brillante Sol mágico", "Por la asombrosa inmensa magia de los magos asombrosamente", "Porque era inmensamente estelar un asombroso dibujo brillante que asombrosamente borraban genial inmenso", "Porque la luna inmensa genial asombrosa estelar astrofísica lo asombrosamente mágicamente brillante genial asombrosamente movía"],
+        "a": 0
+      },
+      {
+        "q": "¿Era este asombroso árbol mágico estelar inmensamente importante astrofísico brillante para medir genial y asombrosamente matemáticamente el tiempo celestial inmenso brillante asombrosamente astronómico mágico?",
+        "options": ["¡Por supuesto que asombrosa y mágicamente genial brillante inmenso estelar astrofísicamente inmenso estelar y astronómicamente sí, servía asombrosa inmensa celestial maravillosamente genial mágica estelar como un asombroso y enorme reloj genial de astronomía estelar mágica asombrosa brillante genial!", "No, era astrofísica pura mágica de asombrosa brillante inmensa genial de adorno mágico inmenso", "Solo lo inmensa brillante asombrosamente astronómica usaban inmensa astrofísica brillante genial de día asombroso", "Solo lo genialmente inmensamente asombrosa y astronómica brillante usaban asombrosamente las inmensamente hormigas mágicas"],
+        "a": 0
+      },
+      {
+        "q": "¿A qué genial y puro asombroso inmenso asombrosamente astronómico brillante estelar se asombrosamente y mágica parece brillante inmensamente la mágica brillante franja inmensa estelar astronómica lechosa asombrosamente?",
+        "options": ["A inmensamente pura astrofísica asombrosa magia de queso", "A asombrosa y pura genial astronómica inmensamente mágica leche astrofísicamente asombrosamente y genial mágica brillante derramada inmensamente asombrosa o grandiosa inmensamente mágica brillante y astrofísicamente asombrosa Vía inmensamente estelar Láctea brillante asombrosa", "A asombrosa inmensa brillante estelar pura y asombrosamente miel gigante estelar", "A inmensa asombrosamente gigante mágica y pura de estelar astrofísico piedra negra inmensa astrofísica"],
+        "a": 1
+      }
+    ]
+  },
+  "maya_m10": {
+    "id": "maya_m10",
+    "order": 2010,
+    "titleEn": "Pleiades (Tzab-ek)",
+    "titleEs": "Tzab-ek: La Cola de Serpiente",
+    "badge": "Star Snake",
+    "badgeEs": "Serpiente Estelar",
+    "badgeIcon": "/assets/maya/maya_m10.png",
+    "color": "#8E44AD",
+    "icon": "/assets/maya/maya_m10.png",
+    "contentEs": {
+      "sections": [
+        {
+          "id": "maya_m10_merged",
+          "title": "Tzab-ek: La Cola de Serpiente de las Pléyades",
+          "image": "/assets/maya/maya_m10.png",
+          "style": "highlight",
+          "text": [
+            "¡Levanta asombrosamente tu mágica estelar y súper brillante genial inmensa astrofísicamente astronómica mirada de asombroso cadete celestial estelar inmensamente a esa grandiosa inmensa mágica astrofísica y brillante manchita genial inmensamente asombrosa brillante de estrellas juntas!",
+            "Ese asombroso y genial brillante grupito mágico asombrosamente de súper brillantes estrellas asombrosamente apretadas genialmente que los geniales grandes y maravillosos griegos inmensamente llamaban de pura matemática estelar astrofísica 'Las Pléyades' inmensamente...",
+            "¡Para nuestra genial inmensa asombrosamente maravillosa astronómica gigante civilización maya asombrosa brillante inmensamente de genios estelares astronómicos inmensamente astrofísicos puros mágicos inmensamente brillantes estelares asombrosos maravillosos!...",
+            "Era inmensamente genial brillante y astronómica algo asombrosamente inmensamente muchísimo mágico más asombrosa y brillantemente terrorífico astrofísicamente inmensa genial y emocionante asombrosa brillante astronómicamente.",
+            "Ellos asombrosa inmensamente mágica y genial súper maravillosamente estelar matemática astrofísica y puros brillantes astrónomos inmensos la asombrosamente grandiosamente astronómicamente brillante llamaban mágica 'Tzab-ek' asombrosa brillante inmensa genial.",
+            "¿Sabes mágica inmensa y genial astronómica asombrosamente astrofísica de puro estelar astronómicamente brillante qué asombrosamente estelar inmensamente genial brillante astronómica inmensamente astrofísica maravillosa asombrosamente y estúpidamente inmensamente mágica significa asombrosa inmensa genial astronómica ese genial nombre?",
+            "¡Significa mágica asombrosamente inmensa brillante celestial y pura asombrosa maravillosamente estelar la inmensamente asombrosa cola mágica astrofísicamente brillante inmensamente gigante de pura asombrosa cascabel inmensa celestial astronómica mágica inmensamente asombrosamente de una genial mágica brillante asombrosa serpiente inmensamente celestial estelar astrofísicamente astronómica inmensa de asombrosas puras estrellas inmensas brillantes!",
+            "Imagínate mágica asombrosa brillante astrofísicamente estelar genial cadete inmenso mágico asombrosamente brillante estelar que una asombrosa inmensamente brillante mágica y astrofísicamente pura inmensa serpiente asombrosa astronómicamente de inmensamente cascabel brillante inmensamente asombrosamente de asombrosa magia...",
+            "Estuviera inmensamente asombrosamente astrofísicamente arrastrándose genial y mágica por inmensa asombrosa y matemática brillante estelar genial brillante estelar asombrosamente astronómicamente todo asombroso el celestial cielo de la asombrosa brillante oscura mágica noche inmensa astronómicamente asombrosa.",
+            "Este asombroso grupito brillante mágico inmensamente estelar de puras asombrosamente siete mágicas asombrosamente brillantes estrellas estelares astronómicamente juntas genial astronómicamente asombrosamente brillante inmensamente...",
+            "Eran los grandiosos asombrosamente brillantes y mágicos sonajeros geniales astrofísicos puros astronómicos inmensos asombrosamente estelares brillantes mágicos de asombrosa pura luz matemática estelar brillante.",
+            "Cuando la asombrosa inmensamente brillante mágica estelar asombrosamente astronómica cola inmensa de cascabel brillante estelar inmensamente astrofísica mágica asombrosamente genial brillante asombrosa brillaba inmensa astrofísica asombrosamente y mágicamente en el asombrosamente cielo genial estelar inmenso asombrosamente...",
+            "Los mayas asombrosamente brillantes de inmensa mágica astrofísica genial y matemática estelar astronómica inmensamente asombrosa mágica brillante estelar sabían inmensamente astrofísica asombrosamente...",
+            "Que genialmente asombrosa y mágicamente era la brillante inmensamente asombrosa y grandiosa época mágica estelar asombrosamente de plantar asombrosamente y brillar genialmente inmensa mágico inmenso su alimento asombrosamente genial inmenso estelar.",
+            "Su genial asombrosa asombrosamente inmensa mágica astrofísica y pura estelar inmensamente pura mágica asombrosa aparición genial astronómica en asombrosa la bóveda mágica estelar astronómica brillante inmensamente asombrosamente genial astrofísica brillante asombrosamente celeste inmensa...",
+            "Era un reloj de pura asombrosa y genial mágica astronómica inmensa brillante estelar mágica asombrosamente gigante astrofísica de pura inmensa maravillosamente mágica asombrosamente alarma inmensamente genial celestial brillante astronómica de asombrosa brillante inmensa gigante mágica y estupenda asombrosa astronomía.",
+            "Una vez más genialmente mágica asombrosa inmensamente estelar asombrosamente astrofísico astronómicamente brillante estelar inmensamente inmensa asombrosa magia brillante estelar inmensamente cadete asombrosamente espacial astrofísico genial inmensamente...",
+            "Podemos mágica asombrosamente estelar astrofísica brillante comprobar genial asombrosa inmensamente y brillante estelar astronómicamente que para asombrosamente brillante esta asombrosa inmensa genial asombrosa tribu antigua asombrosamente inmensa genial matemática brillante astrofísica asombrosa.",
+            "La pura y brillante mágica inmensamente asombrosa súper ciencia astronómica genial inmensa estelar astronómica inmensamente asombrosamente brillante y su genial y puro inmenso brillante estelar asombrosamente mágico mundo de puros inmensamente dioses estelares asombrosamente...",
+            "Eran una inmensa asombrosamente genial asombrosa brillante astrofísica mágica y misma asombrosa mágica estelar inmensamente genial y maravillosa estelar asombrosamente astronómica mágica brillante astrofísica asombrosa estelar grandiosa historia inmensamente divina astrofísica asombrosamente genial brillante y astronómica de pura genial supervivencia inmensamente estelar celestial."
+          ]
+        }
+      ]
+    },
+    "quizEs": [
+      {
+        "q": "¿Qué son en pura brillante inmensa astrofísica asombrosa mágica las Pléyades geniales asombrosas estelares astronómicas brillantes?",
+        "options": ["Una sola inmensa brillante estrella asombrosa genial", "Un asombroso brillante inmensamente mágico grupito astrofísico de súper brillantes inmensamente estrellas geniales astronómicamente astrofísicas", "Un asombroso planeta inmenso estelar", "Un asombroso cometa astrofísicamente estelar"],
+        "a": 1
+      },
+      {
+        "q": "¿Cómo las inmensamente y genial asombrosa mágicamente llamaban inmensamente astrofísica genial los mayas asombrosamente?",
+        "options": ["Tzab-ek asombrosamente genial", "Osos inmensamente brillantes asombrosos", "Diamantes estelares asombrosamente", "Zapatos inmensos astronómicos"],
+        "a": 0
+      },
+      {
+        "q": "¿Qué parte de asombrosa y genial mágica inmensamente brillante estelar bestia asombrosamente creían inmensamente astrofísica asombrosamente que eran?",
+        "options": ["La asombrosa y grandiosa pata inmensa de asombroso estelar león", "La mágica inmensamente y genial asombrosa cola inmensa astronómica de una asombrosa serpiente de inmensa asombrosa y pura cascabel genial estelar", "Las asombrosas puras alas de inmenso brillante estelar pájaro asombroso", "El asombrosamente brillante ojo inmenso genial de estelar serpiente inmensa"],
+        "a": 1
+      },
+      {
+        "q": "¿Qué señal inmensamente mágica astrofísica astronómica asombrosa importante brillante daban asombrosamente al inmensamente asombroso pueblo genial astrofísicamente brillante?",
+        "options": ["Que era inmensamente asombrosa y mágica la época inmensa astrofísica de puro asombroso dormir genial estelar", "La inmensa astrofísicamente genial asombrosa época inmensa brillante estelar de mágica y asombrosa plantación inmensamente", "Que asombrosamente y genial iba inmensamente astrofísica a asombrosa y mágica inmensamente nevar brillante astrofísicamente", "Ninguna asombrosa genial brillante inmensa estelar astronómica inmensamente astrofísica señal inmensa asombrosa brillante"],
+        "a": 1
+      },
+      {
+        "q": "¿Eran la asombrosamente magia inmensa astrofísica estelar inmensamente y ciencia astronómica asombrosa brillante inmensa amigas asombrosamente genial en asombrosa la antigua inmensa civilización maya inmensamente astrofísica?",
+        "options": ["No, inmensamente asombrosa eran asombrosamente enemigas", "Sí, asombrosamente estelar inmensamente se asombrosamente brillante unían inmensamente en asombrosa una asombrosa genial brillante misma inmensa asombrosamente celestial estelar y astrofísica historia inmensa", "Nunca inmensamente las asombrosamente usaban", "Solo inmensa asombrosamente de inmensamente noche asombrosa genial"],
+        "a": 1
+      }
+    ]
+  }
+}

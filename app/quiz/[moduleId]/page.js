@@ -236,9 +236,27 @@ export default function QuizMinigame() {
                   <p style={{ fontSize: '1.2rem', margin: '1rem 0' }}>Llegaste a {moduleData.titleEs} con {score}/{totalQuestions} aciertos.</p>
                   
                   <div style={{ background: 'rgba(255,215,0,0.1)', padding: '2rem', borderRadius: '24px', margin: '2rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-                    <Shield size={60} color={moduleData.color} />
+                    
+                    {(moduleData.badgeIcon || moduleData.badgeImage) ? (
+                      <div style={{
+                         position: 'relative',
+                         width: '120px', height: '120px',
+                         borderRadius: '50%',
+                         background: `linear-gradient(45deg, #FFD700, #FFA500, #FF4500)`,
+                         padding: '8px',
+                         boxShadow: `0 0 30px ${moduleData.color}80, inset 0 0 15px rgba(0,0,0,0.6)`,
+                         display: 'flex', alignItems: 'center', justifyContent: 'center',
+                         marginBottom: '1rem'
+                      }}>
+                         <div style={{ position: 'absolute', top: '-15px', width: '24px', height: '40px', background: 'var(--gold-star)', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)', zIndex: 1 }} />
+                         <img src={moduleData.badgeIcon || moduleData.badgeImage} width={104} height={104} alt="Insignia" style={{ borderRadius: '50%', objectFit: 'cover', border: '4px solid #222' }} />
+                      </div>
+                    ) : (
+                      <Shield size={80} color={moduleData.color} style={{ filter: 'drop-shadow(0 0 15px rgba(255,215,0,0.5))' }} />
+                    )}
+
                     <h3 style={{ margin: 0, fontSize: '1.5rem' }}>{userData?.progress?.completedModules?.includes(moduleData.id) ? 'Medalla Verificada' : '¡Medalla Ganada!'}</h3>
-                    <p style={{ margin: 0, fontWeight: 'bold', color: moduleData.color, fontSize: '1.2rem' }}>{moduleData.badgeEs}</p>
+                    <p style={{ margin: 0, fontWeight: 'bold', color: moduleData.color, fontSize: '1.2rem', textTransform: 'uppercase' }}>{moduleData.badgeEs}</p>
                     <p style={{ margin: 0, color: 'var(--gold-star)', fontWeight: 'bold' }}>
                        {userData?.progress?.completedModules?.includes(moduleData.id) ? 'Modo Repaso: Sin recompensa adicional' : '+50 Polvo Estelar'}
                     </p>
