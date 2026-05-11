@@ -317,7 +317,6 @@ const HUGE_TEXTS = {
 [20] Literálmente y en el más hermoso de los cierres astronómicos posibles, las avanzadas herramientas que orbitan las estrellas nos están susurrando desde el cielo los mayores e indescifrables secretos enterrados de nuestro antiguo y mágico pasado planetario.\`
 };
 
-let content = fs.readFileSync('expandContent4.mjs', 'utf8').replace(/HUGE_TEXTS\s*=\s*\{[\s\S]*?\};\n\n/, ''); // Wait, I will write the final script
 
 const FINAL_CODE = \`
 import fs from 'fs';
