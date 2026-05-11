@@ -63,13 +63,15 @@ function Comets() {
           position: 'absolute',
           left: `${Math.random() * 100}%`,
           top: `${Math.random() * -50}%`,
-          width: '2px',
-          height: '100px',
-          background: 'linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0))',
-          transform: 'rotate(-45deg)',
+          width: `102.7106229806945px`,
+          height: '2px',
+          background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(100,200,255,0.8) 20%, rgba(0,0,0,0) 100%)',
+          borderRadius: '50%',
+          boxShadow: '0 0 10px rgba(255,255,255,0.8)',
+          transform: 'rotate(-35deg) scale(0)',
           opacity: 0,
-          animation: `shootingStar ${Math.random() * 8 + 4}s linear infinite`,
-          animationDelay: `${Math.random() * 10}s`,
+          animation: `shootingStar ${Math.random() * 5 + 3}s ease-in infinite`,
+          animationDelay: `${Math.random() * 8}s`,
         }} />
       ))}
     </div>
@@ -330,23 +332,7 @@ export default function EgyptAstroHub() {
           ))}
         </div>
 
-        {/* Astronauta/Astrónomo Observador (Inferior Izquierda para balance) */}
-        <motion.img
-          src="/assets/egypt/hub_character.png"
-          alt="Astrónomo Egipcio"
-          animate={{ y: [0, -10, 0] }}
-          transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
-          style={{
-            position: 'absolute', left: '2%', bottom: '2%',
-            height: 'clamp(150px, 20vh, 280px)',
-            objectFit: 'contain',
-            filter: 'drop-shadow(0 0 15px rgba(212,168,67,0.4))',
-            zIndex: 10, pointerEvents: 'none',
-            transform: 'scaleX(-1)', // Voltear para que mire hacia el centro
-            WebkitMaskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 80%)',
-            maskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 80%)',
-          }}
-        />
+
 
       </main>
 
@@ -360,7 +346,12 @@ export default function EgyptAstroHub() {
           50% { transform: scale(1.3); opacity: 1; }
         }
       
-        @keyframes shootingStar { 0% { transform: translate(0, 0) rotate(-45deg); opacity: 1; } 20% { transform: translate(-400px, 400px) rotate(-45deg); opacity: 0; } 100% { transform: translate(-400px, 400px) rotate(-45deg); opacity: 0; } }
+        @keyframes shootingStar { 
+          0% { transform: translate(0, 0) rotate(-35deg) scale(0); opacity: 0; } 
+          10% { opacity: 1; transform: translate(-50px, 35px) rotate(-35deg) scale(1); }
+          30% { opacity: 0; transform: translate(-300px, 210px) rotate(-35deg) scale(0.2); } 
+          100% { opacity: 0; transform: translate(-300px, 210px) rotate(-35deg) scale(0); } 
+        }
       `}</style>
     </div>
   );
