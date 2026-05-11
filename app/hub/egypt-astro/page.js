@@ -54,6 +54,23 @@ function Stars() {
   );
 }
 
+// ─── Efecto del Río Nilo Fluyendo ─────────────────────────────────────────
+function NileRiver() {
+  return (
+    <div style={{
+      position: 'absolute',
+      bottom: 0, left: 0, right: 0, height: '35%',
+      background: 'linear-gradient(to bottom, rgba(0, 150, 255, 0.05), rgba(0, 150, 255, 0.2))',
+      maskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
+      WebkitMaskImage: 'radial-gradient(ellipse at bottom center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
+      animation: 'waterFlow 6s ease-in-out infinite alternate',
+      pointerEvents: 'none',
+      zIndex: 1,
+      mixBlendMode: 'overlay'
+    }}></div>
+  );
+}
+
 // ─── Lluvia de Cometas ─────────────────────────────────────────────────────
 function Comets() {
   return (
@@ -287,8 +304,9 @@ export default function EgyptAstroHub() {
           pointerEvents: 'none'
         }} />
 
-        {/* Efectos de Estrellas y Cometas */}
+        {/* Efectos de Estrellas, Río y Cometas */}
         <Stars />
+        <NileRiver />
         <Comets />
 
         {/* Red de Líneas Estelares (Conectando Módulos) */}
@@ -346,6 +364,10 @@ export default function EgyptAstroHub() {
           50% { transform: scale(1.3); opacity: 1; }
         }
       
+        @keyframes waterFlow {
+          0% { transform: scaleY(1) translateY(0); filter: hue-rotate(0deg); opacity: 0.5; }
+          100% { transform: scaleY(1.05) translateY(10px); filter: hue-rotate(15deg); opacity: 0.9; }
+        }
         @keyframes shootingStar { 
           0% { transform: translate(0, 0) rotate(-35deg) scale(0); opacity: 0; } 
           10% { opacity: 1; transform: translate(-50px, 35px) rotate(-35deg) scale(1); }
