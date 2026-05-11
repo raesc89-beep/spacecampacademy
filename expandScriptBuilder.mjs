@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 const HUGE_TEXTS = {
-  "egypt_m1": \`[1] ¡Saludos, explorador espacial! Viajamos a Nabta Playa, el observatorio astronómico prehistórico más antiguo del mundo, ubicado en el ardiente desierto del Sahara.
+  "egypt_m1": `[1] ¡Saludos, explorador espacial! Viajamos a Nabta Playa, el observatorio astronómico prehistórico más antiguo del mundo, ubicado en el ardiente desierto del Sahara.
 [2] Antes de las famosas pirámides, hace más de 7,000 años, tribus nómadas erigieron estos gigantescos megalitos circulares.
 [3] No tenían telescopios de la NASA, pero su supervivencia dependía completamente de leer los movimientos de las estrellas.
 [4] Las piedras centrales estaban alineadas para predecir con exactitud el solsticio de verano.
@@ -20,9 +20,9 @@ const HUGE_TEXTS = {
 [17] Al migrar, llevaron consigo todos estos conocimientos estelares, sembrando la semilla de la ciencia faraónica.
 [18] Hoy en día, astrobiólogos de la ESA estudian ruinas como esta para entender cómo las civilizaciones tempranas interactúan con su entorno cósmico.
 [19] Nabta Playa no es solo un monumento, es el primer reloj y calendario de la historia humana.
-[20] Así es como la humanidad aprendió por primera vez a conectar los eventos en la Tierra con los ritmos del Universo profundo.\`,
+[20] Así es como la humanidad aprendió por primera vez a conectar los eventos en la Tierra con los ritmos del Universo profundo.`,
 
-  "egypt_m2": \`[1] Imagínate en medio de la oscuridad absoluta del desierto egipcio sin ningún reloj moderno. ¿Cómo mides la noche?
+  "egypt_m2": `[1] Imagínate en medio de la oscuridad absoluta del desierto egipcio sin ningún reloj moderno. ¿Cómo mides la noche?
 [2] Los astrónomos egipcios inventaron una solución brillante: dividieron la banda del cielo en 36 secciones.
 [3] A estos 36 grupos de estrellas brillantes los llamaron "Los Decanos" o estrellas decanales.
 [4] A medida que la Tierra rota, un nuevo Decano emerge sobre el horizonte este, marcando el paso de una hora.
@@ -41,9 +41,9 @@ const HUGE_TEXTS = {
 [17] Sí, la primera cronobiología médica de la historia fue controlada por la luz de estrellas lejanas.
 [18] Estudios recientes del Instituto Max Planck confirman la exactitud de los calendarios estelares encontrados en sarcófagos de Asyut.
 [19] Los Decanos representan la fusión perfecta entre la astronomía empírica pura y la mitología religiosa inmersiva.
-[20] Gracias a las estrellas del Nilo, nuestra sociedad moderna logró sincronizar sus relojes por primera vez en la historia.\`,
+[20] Gracias a las estrellas del Nilo, nuestra sociedad moderna logró sincronizar sus relojes por primera vez en la historia.`,
 
-  "egypt_m3": \`[1] De todas las estrellas en la bóveda celeste, Sirio (en la constelación del Can Mayor) reina de forma suprema.
+  "egypt_m3": `[1] De todas las estrellas en la bóveda celeste, Sirio (en la constelación del Can Mayor) reina de forma suprema.
 [2] Los egipcios la conocían como "Sopdet" y la personificaban como una diosa de deslumbrante belleza cósmica.
 [3] El destino entero del Imperio Egipcio dependía matemáticamente de los movimientos de esta sola estrella.
 [4] Cada año, Sopdet desaparecía del cielo nocturno durante exactamente 70 días al ser ocultada por el Sol.
@@ -62,9 +62,9 @@ const HUGE_TEXTS = {
 [17] Al terminar, la momia "renacía" en la tumba al mismo tiempo que la estrella renacía en el cielo.
 [18] Esta sincronización entre la biología mortuoria y la astrofísica demuestra un intelecto filosófico sin paralelo.
 [19] Los templos de la diosa Isis estaban alineados para atrapar la luz del Orto Helíaco en sus santuarios oscuros.
-[20] Así, la astronomía no solo medía el tiempo, sino que garantizaba la vida, el agua y la eternidad en el Nilo.\`,
+[20] Así, la astronomía no solo medía el tiempo, sino que garantizaba la vida, el agua y la eternidad en el Nilo.`,
 
-  "egypt_m4": \`[1] Si miras al cielo norte, encontrarás El Gran Cazo o la Osa Mayor.
+  "egypt_m4": `[1] Si miras al cielo norte, encontrarás El Gran Cazo o la Osa Mayor.
 [2] Pero para los astrónomos egipcios, esta formación era "Mesjetiu", la poderosa pata delantera de un toro cósmico.
 [3] Mesjetiu es una constelación circumpolar, lo que significa que gira cerca del polo y nunca se pone.
 [4] Mientras otras estrellas nacían y morían en el horizonte, Mesjetiu giraba en círculos eternos e inmortales.
@@ -83,9 +83,9 @@ const HUGE_TEXTS = {
 [17] En los textos antiguos, Mesjetiu estaba controlada por el dios Seth para que nunca tocara las aguas del inframundo.
 [18] Thot, el dios de la sabiduría, supervisaba estos cálculos que mantenían el orden cósmico o "Maat".
 [19] Gracias a Mesjetiu, los egipcios no solo construyeron tumbas, sino observatorios geodésicos a escala monumental.
-[20] Las estrellas imperecederas demostraron que, en Egipto, la matemática arquitectónica estaba escrita en el cielo.\`,
+[20] Las estrellas imperecederas demostraron que, en Egipto, la matemática arquitectónica estaba escrita en el cielo.`,
 
-  "egypt_m5": \`[1] Las Grandes Pirámides de Giza son la máxima proeza astronómica e ingenieril del mundo antiguo.
+  "egypt_m5": `[1] Las Grandes Pirámides de Giza son la máxima proeza astronómica e ingenieril del mundo antiguo.
 [2] Son máquinas de precisión geodésica, montañas artificiales ancladas matemáticamente a los cielos oscuros.
 [3] Su alineación hacia los cuatro puntos cardinales es perfecta, con un error estadístico prácticamente imperceptible.
 [4] ¿Cómo lograron este prodigio tecnológico milenios antes del GPS, los satélites o los láseres?
@@ -104,9 +104,9 @@ const HUGE_TEXTS = {
 [17] La civilización que las levantó entendía que la Tierra era un objeto que interactuaba geométricamente con los cielos.
 [18] Son el testimonio de piedra definitivo de que la raza humana puede alcanzar lo imposible combinando ciencia y creencia.
 [19] Los bloques megalíticos, que pesan toneladas, fueron izados no por alienígenas, sino por matemáticos estelares puros.
-[20] El "Láser de Giza" no es luz, sino la inquebrantable línea recta matemática trazada desde las estrellas hasta las dunas.\`,
+[20] El "Láser de Giza" no es luz, sino la inquebrantable línea recta matemática trazada desde las estrellas hasta las dunas.`,
 
-  "egypt_m6": \`[1] En las ardientes arenas de Deir el-Bahari se oculta la cámara secreta TT353, perteneciente al arquitecto Senenmut.
+  "egypt_m6": `[1] En las ardientes arenas de Deir el-Bahari se oculta la cámara secreta TT353, perteneciente al arquitecto Senenmut.
 [2] Senenmut fue el genio plebeyo, científico y consejero supremo de Hatshepsut, una de las mayores faraonas.
 [3] Su cámara no guarda oro macizo, sino el mapa astronómico del universo más antiguo descubierto por la humanidad.
 [4] En el techo de su cámara funeraria, trazó con precisión milimétrica la anatomía de los cielos egipcios.
@@ -125,9 +125,9 @@ const HUGE_TEXTS = {
 [17] Gracias a este catálogo, sabemos que Kemet (Egipto) fue la cuna de la astronomía descriptiva.
 [18] Senenmut codificó en este techo el secreto del cosmos: que la vida mortal está gobernada por fuerzas mecánicas y celestiales.
 [19] Su descubrimiento en la década de 1920 revolucionó completamente la egiptología y la historia de la ciencia antigua.
-[20] El techo de TT353 es verdaderamente la primera gran enciclopedia estelar de la raza humana, grabada para la eternidad.\`,
+[20] El techo de TT353 es verdaderamente la primera gran enciclopedia estelar de la raza humana, grabada para la eternidad.`,
 
-  "egypt_m7": \`[1] La Gran Pirámide del rey Keops esconde un misterio perturbador en las llamadas Cámaras del Rey y de la Reina.
+  "egypt_m7": `[1] La Gran Pirámide del rey Keops esconde un misterio perturbador en las llamadas Cámaras del Rey y de la Reina.
 [2] Desde las paredes de granito sólido de estas cámaras, se elevan unos canales estrechos de 20 por 20 centímetros.
 [3] Al principio de la arqueología, los egiptólogos creyeron ingenuamente que eran tuberías de ventilación para los obreros antiguos.
 [4] Sin embargo, investigaciones modernas con robots miniaturizados y láseres ópticos desmintieron por completo esta teoría simplista.
@@ -146,9 +146,9 @@ const HUGE_TEXTS = {
 [17] A medida que la Tierra bambolea en su eje (precesión), las estrellas cambian de lugar, por lo que los canales datan la pirámide perfectamente.
 [18] Son relojes de piedra masivos e inquebrantables, petrificando el cielo nocturno del año 2500 a.C.
 [19] Los canales estelares de Giza son la prueba innegable de la obsesión humana milenaria por alcanzar los cuerpos celestes.
-[20] Hoy en día mandamos cohetes; hace milenios, los egipcios lanzaban el alma misma a través del núcleo vivo de una pirámide.\`,
+[20] Hoy en día mandamos cohetes; hace milenios, los egipcios lanzaban el alma misma a través del núcleo vivo de una pirámide.`,
 
-  "egypt_m8": \`[1] Cerca de la remota frontera sur de Nubia, frente al Nilo, se levanta la maravilla megalómana del templo de Abu Simbel.
+  "egypt_m8": `[1] Cerca de la remota frontera sur de Nubia, frente al Nilo, se levanta la maravilla megalómana del templo de Abu Simbel.
 [2] Ordenado por Ramsés II (el Grande), este templo no fue construido, sino tallado enteramente dentro de una montaña de roca sólida.
 [3] Su fachada es colosal, custodiada por estatuas del faraón de 20 metros de altura que intimidan a cualquier visitante.
 [4] Pero el verdadero secreto hiper-científico de Abu Simbel está a 60 metros de profundidad, en las entrañas oscuras de la montaña.
@@ -167,9 +167,9 @@ const HUGE_TEXTS = {
 [17] Esto demuestra que los cálculos arqueoastronómicos de los arquitectos de Ramsés II superaban en fineza a algunas técnicas modernas.
 [18] Abu Simbel es un gigantesco reloj solar, un teatro cósmico diseñado para glorificar la vida inmortal del faraón a través del sol.
 [19] Es la prueba física inquebrantable de cómo la astronomía antigua podía doblegar a la geología de una montaña entera.
-[20] El rayo de sol que ilumina la oscuridad en Abu Simbel es la firma luminosa de una de las civilizaciones más grandes de la historia.\`,
+[20] El rayo de sol que ilumina la oscuridad en Abu Simbel es la firma luminosa de una de las civilizaciones más grandes de la historia.`,
 
-  "egypt_m9": \`[1] En las misteriosas y elevadas capillas del Templo de Hathor en Dendera, el cielo nocturno está petrificado en arenisca pura.
+  "egypt_m9": `[1] En las misteriosas y elevadas capillas del Templo de Hathor en Dendera, el cielo nocturno está petrificado en arenisca pura.
 [2] Los arqueólogos europeos se quedaron sin aliento al descubrir en el techo un inmenso bloque de piedra conocido como el Zodiaco de Dendera.
 [3] Es un planisferio cósmico, un colosal mapa circular bidimensional que resume y proyecta toda la bóveda estelar conocida.
 [4] Pero este mapa no es puramente egipcio; es el artefacto que demuestra la fusión intelectual suprema de la antigüedad.
@@ -188,9 +188,9 @@ const HUGE_TEXTS = {
 [17] La diosa Hathor, señora del cielo estrellado, domina el templo como la fuerza cósmica que une las órbitas de los cuerpos celestes.
 [18] Cada cincelazo en ese bloque requirió cálculos trigonométricos avanzados y observaciones que se extendieron durante milenios.
 [19] Las constelaciones nos recuerdan que las estrellas no pertenecen a una nación; son el patrimonio visual de la humanidad entera.
-[20] El Zodiaco de Dendera es el puente definitivo entre el universo matemático y la profunda espiritualidad de las civilizaciones pasadas.\`,
+[20] El Zodiaco de Dendera es el puente definitivo entre el universo matemático y la profunda espiritualidad de las civilizaciones pasadas.`,
 
-  "egypt_m10": \`[1] El Valle de los Reyes, 1925. Howard Carter desenvuelve cuidadosamente las gruesas capas de lino del rey niño, Tutankamón.
+  "egypt_m10": `[1] El Valle de los Reyes, 1925. Howard Carter desenvuelve cuidadosamente las gruesas capas de lino del rey niño, Tutankamón.
 [2] Oculta junto al muslo derecho de la momia dorada, se encontraba un arma misteriosa que revolucionaría la arqueología y la metalurgia.
 [3] Era una hermosa daga con empuñadura de oro puro y cristal, pero el enigma radicaba completamente en su hoja afilada y prístina.
 [4] La hoja era de hierro perfecto y brillante, completamente libre de óxido tras haber permanecido enterrada bajo tierra por 3,300 años.
@@ -209,9 +209,9 @@ const HUGE_TEXTS = {
 [17] Esta daga prueba que los antiguos observaban asombrados las lluvias de meteoritos, recogiéndolos como fragmentos literales de los dioses.
 [18] Para Tutankamón, el arma era un pasaporte celestial. Cortaría a los demonios en la oscuridad utilizando el poder concentrado de una estrella caída.
 [19] No es alienígena en el sentido de la ciencia ficción, sino el testimonio del ingenio humano utilizando regalos caídos directamente del sistema solar.
-[20] La daga de meteorito es la prueba irrefutable de que, en Egipto, la astrofísica y el armamento real estaban forjados en una misma pieza.\`,
+[20] La daga de meteorito es la prueba irrefutable de que, en Egipto, la astrofísica y el armamento real estaban forjados en una misma pieza.`,
 
-  "egypt_m11": \`[1] A diferencia del concepto moderno del universo como un espacio frío y vacío lleno de vacío y radiación, los egipcios veían vida.
+  "egypt_m11": `[1] A diferencia del concepto moderno del universo como un espacio frío y vacío lleno de vacío y radiación, los egipcios veían vida.
 [2] Para ellos, el cosmos era gigantesco, cálido, mágico e increíblemente interconectado. "Como es arriba, es abajo" dictaba la regla cósmica.
 [3] Al observar la magnífica cinta espiral que llamamos la Vía Láctea, no veían miles de millones de soles gaseosos en fusión nuclear.
 [4] Veían a "Nut", la deidad suprema y protectora del cielo, la colosal madre divina arqueada sobre toda la superficie de la Tierra.
@@ -230,9 +230,9 @@ const HUGE_TEXTS = {
 [17] Si Nut dejaba de sostener el cielo arqueado, la gravedad y el caos destruirían la existencia; era la fuerza de la naturaleza personificada.
 [18] Estudios recientes en astrometría revelan que el plano de la Vía Láctea era el verdadero eje referencial de muchas religiones arcaicas.
 [19] Así, la galaxia en la que giramos no era un concepto ajeno o lejano; era la propia anatomía y circulación sanguínea del universo ptolemaico.
-[20] El Nilo de Nut demuestra la profunda y poética necesidad del ser humano por conectar los ecosistemas terrestres con las maravillas galácticas.\`,
+[20] El Nilo de Nut demuestra la profunda y poética necesidad del ser humano por conectar los ecosistemas terrestres con las maravillas galácticas.`,
 
-  "egypt_m12": \`[1] Elevándose sobre los inmensos atrios de los templos antiguos, proyectando imponentes sombras bajo el sol implacable, encontramos a los Obeliscos.
+  "egypt_m12": `[1] Elevándose sobre los inmensos atrios de los templos antiguos, proyectando imponentes sombras bajo el sol implacable, encontramos a los Obeliscos.
 [2] Estéticamente deslumbrantes, estas columnas de hasta 30 metros de altura están talladas de un solo e inmenso bloque ininterrumpido de granito rojo masivo.
 [3] En la parte superior culminan en un ápice piramidal perfecto (el piramidión), que en la antigüedad estaba bañado en electro (oro y plata).
 [4] Este recubrimiento brillante estaba diseñado por los ingenieros ópticos antiguos para actuar como un destello cegador al atrapar el primer rayo del amanecer.
@@ -251,9 +251,9 @@ const HUGE_TEXTS = {
 [17] Muchos obeliscos fueron robados en siglos posteriores por los imperios romano y británico debido a su innegable majestuosidad y misterio matemático.
 [18] Por ejemplo, el que está en la Plaza de San Pedro en Roma o el de la Concordia en París; todos son faros de la brillantez astronómica de Kemet.
 [19] Un obelisco es, en última instancia, el intento más exitoso de la humanidad por atrapar la luz de una estrella en constante movimiento y medir su fuerza.
-[20] Transformaron la piedra inerte en la primera aguja de reloj de alta precisión de la historia global, uniendo el tiempo del sol con la arena de la Tierra.\`,
+[20] Transformaron la piedra inerte en la primera aguja de reloj de alta precisión de la historia global, uniendo el tiempo del sol con la arena de la Tierra.`,
 
-  "egypt_m13": \`[1] Te parece completamente natural que tu smartphone te diga que el año tiene 365 días, pero en la prehistoria, nadie sabía cuánto duraba la órbita terrestre.
+  "egypt_m13": `[1] Te parece completamente natural que tu smartphone te diga que el año tiene 365 días, pero en la prehistoria, nadie sabía cuánto duraba la órbita terrestre.
 [2] Las primeras civilizaciones primitivas del mundo (como Babilonia) basaron sus ineficientes calendarios en las fases observables y cambiantes de la luna.
 [3] El gigantesco problema científico de la Luna es que sus meses son asimétricos y caóticos, causando que un año lunar tenga apenas 354 días.
 [4] Rápidamente, el calendario se desfasaba de la realidad estacional; los meses de "frío" terminaban cayendo en pleno verano asfixiante, arruinando la agricultura.
@@ -272,9 +272,9 @@ const HUGE_TEXTS = {
 [17] Detente a pensar en esto: cada vez que agendas un evento en Google Calendar, estás utilizando tecnología matemática concebida hace cinco milenios junto a las orillas del río Nilo.
 [18] Superaron la superstición puramente astrológica e impusieron la geometría empírica sobre el caótico movimiento planetario del sistema solar interno.
 [19] Así, Egipto logró conquistar no solo grandes territorios físicos, sino algo infinitamente más elusivo, inmaterial y poderoso: lograron conquistar el Tiempo mismo.
-[20] El concepto de los 365 días es, posiblemente, el mayor, más antiguo y más duradero obsequio científico de los faraones al orden global contemporáneo.\`,
+[20] El concepto de los 365 días es, posiblemente, el mayor, más antiguo y más duradero obsequio científico de los faraones al orden global contemporáneo.`,
 
-  "egypt_m14": \`[1] El cielo del norte de África en el Antiguo Egipto era monótono, eternamente despejado y predecible, con el sol calcinando la tierra ininterrumpidamente día tras día.
+  "egypt_m14": `[1] El cielo del norte de África en el Antiguo Egipto era monótono, eternamente despejado y predecible, con el sol calcinando la tierra ininterrumpidamente día tras día.
 [2] Pero en raras, aterradoras y violentas excepciones astronómicas, el orden absoluto colapsaba; a plena luz del mediodía, un fenómeno paralizante y monstruoso se desataba.
 [3] Sin advertencia visible, una sombra negra y densa comenzaba a devorar lentamente al brillante y omnipresente sol dorado; la temperatura caía bruscamente y soplaba un viento helado.
 [4] Las aves dejaban de cantar, los animales entraban en pánico extremo, y una noche espeluznante, teñida de luces plateadas fantasmales, envolvía al mundo.
@@ -293,9 +293,9 @@ const HUGE_TEXTS = {
 [17] Al volver el sol, la multitud estallaba en vítores extáticos. Creían fielmente que la magia de los sacerdotes y el Faraón había logrado herir a Apofis y salvar la existencia misma del planeta.
 [18] Esto cimentó el poder de la astronomía en el imperio; el conocimiento de los astros no solo daba el calendario, sino que se percibía como el escudo militar contra el apocalipsis celestial.
 [19] Sorprendentemente, como un guiño poético de la ciencia moderna a la mitología antigua, la NASA descubrió en el año 2004 un inmenso y peligroso asteroide cercano a la Tierra.
-[20] Reconociendo su destructivo poder cósmico, los astrónomos contemporáneos lo bautizaron con el mismo nombre que el demonio egipcio de la oscuridad: el asteroide (99942) Apophis.\`,
+[20] Reconociendo su destructivo poder cósmico, los astrónomos contemporáneos lo bautizaron con el mismo nombre que el demonio egipcio de la oscuridad: el asteroide (99942) Apophis.`,
 
-  "egypt_m15": \`[1] Durante milenios consecutivos, los devotos astrónomos y sabios sacerdotes del antiguo Egipto mantuvieron sus cuellos firmemente alzados, estudiando extasiados el titilar de las estrellas oscuras.
+  "egypt_m15": `[1] Durante milenios consecutivos, los devotos astrónomos y sabios sacerdotes del antiguo Egipto mantuvieron sus cuellos firmemente alzados, estudiando extasiados el titilar de las estrellas oscuras.
 [2] Cartografiaron el firmamento utilizando matemática básica, rastrearon el tránsito de los grandes planetas y tallaron con cinceles los complejos engranajes mecánicos del cosmos en inmensos bloques de roca dura.
 [3] Hoy en día, miles de años después del entierro del último gran faraón, la humanidad moderna ha logrado cerrar un ciclo poético y asombrosamente tecnológico a escala interplanetaria.
 [4] Nosotros ahora somos aquellos que viajan y orbitan flotando allá arriba en el abismo gélido, rodeados del mismo polvo de estrellas infinito que ellos tanto se esforzaron por entender desde la arena.
@@ -314,11 +314,11 @@ const HUGE_TEXTS = {
 [17] En apenas las últimas dos décadas, gracias a la doctora Sarah Parcak y otros pioneros, estos "Ojos Espaciales" han desenterrado digitalmente y validado más de 17 pirámides desconocidas y más de 3,000 asentamientos humanos perdidos bajo el Sahara de Egipto.
 [18] Esto es simplemente alucinante, demostrando categóricamente que tras siglos de excavación manual exhaustiva con palas, apenas hemos rascado menos del uno por ciento de las inmensas maravillas de la civilización de Kemet.
 [19] La arqueología ya no depende del azar de un cepillo o del cansancio del sol ardiente en el desierto, ahora recae en los sensores ultra-sensibles que bailan en la microgravedad de las órbitas altas de la Tierra.
-[20] Literálmente y en el más hermoso de los cierres astronómicos posibles, las avanzadas herramientas que orbitan las estrellas nos están susurrando desde el cielo los mayores e indescifrables secretos enterrados de nuestro antiguo y mágico pasado planetario.\`
+[20] Literálmente y en el más hermoso de los cierres astronómicos posibles, las avanzadas herramientas que orbitan las estrellas nos están susurrando desde el cielo los mayores e indescifrables secretos enterrados de nuestro antiguo y mágico pasado planetario.`
 };
 
 
-const FINAL_CODE = \`
+const FINAL_CODE = `
 import fs from 'fs';
 import { COURSE_DATA } from './lib/courseData.js';
 
@@ -338,6 +338,6 @@ const updatedData = COURSE_DATA.map(mod => {
 const fileContent = 'export const COURSE_DATA = ' + JSON.stringify(updatedData, null, 2) + ';\\n';
 fs.writeFileSync('lib/courseData.js', fileContent, 'utf8');
 console.log('Successfully expanded all 15 modules with 20 massive paragraphs per module.');
-\`;
+`;
 
 fs.writeFileSync('expandContent4.mjs', FINAL_CODE, 'utf8');
