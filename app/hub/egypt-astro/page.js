@@ -80,38 +80,53 @@ function EgyptModuleNode({ mod, idx, isCompleted, isPlayable }) {
           }}
           style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem' }}
         >
-          {/* Contenedor Circular de la Imagen */}
+          {/* Contenedor Circular de la Imagen con Difuminado */}
           <div style={{
             position: 'relative',
-            width: 'clamp(65px, 6.5vw, 95px)',
-            height: 'clamp(65px, 6.5vw, 95px)',
+            width: 'clamp(70px, 7vw, 100px)',
+            height: 'clamp(70px, 7vw, 100px)',
             borderRadius: '50%',
-            padding: '4px',
-            background: \`linear-gradient(135deg, \${mod.color}aa, transparent)\`,
             boxShadow: hovered 
-               ? \`0 0 25px \${mod.color}ff, inset 0 0 15px \${mod.color}aa\` 
-               : \`0 0 15px \${mod.color}55\`,
+               ? \`0 0 40px \${mod.color}ff, inset 0 0 20px \${mod.color}aa\` 
+               : \`0 0 20px \${mod.color}88\`,
             transition: 'all 0.3s ease',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-            <img
-              src={mod.icon}
-              alt={mod.titleEs}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '50%',
-                border: \`2px solid \${hovered ? 'white' : 'rgba(255,255,255,0.8)'}\`,
-                transition: 'all 0.3s ease',
-              }}
-            />
-            {/* Overlay sutil para atenuar si no está activo */}
-            {!hovered && !isPlayable && !isCompleted && (
-              <div style={{ position: 'absolute', inset: '4px', borderRadius: '50%', background: 'rgba(0,0,0,0.3)' }} />
-            )}
+            <div style={{
+              position: 'absolute',
+              inset: 0,
+              borderRadius: '50%',
+              WebkitMaskImage: 'radial-gradient(circle at center, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 70%)',
+              maskImage: 'radial-gradient(circle at center, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 70%)',
+              overflow: 'hidden'
+            }}>
+              <img
+                src={mod.icon}
+                alt={mod.titleEs}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  transform: hovered ? 'scale(1.1)' : 'scale(1)',
+                  transition: 'transform 0.5s ease',
+                }}
+              />
+              {!hovered && !isPlayable && !isCompleted && (
+                <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)' }} />
+              )}
+            </div>
+            {/* Anillo de energía exterior para enmarcar el difuminado */}
+            <div style={{
+              position: 'absolute',
+              inset: '-2px',
+              borderRadius: '50%',
+              border: \`2px solid \${hovered ? 'white' : mod.color + '55'}\`,
+              opacity: hovered ? 0.8 : 0.3,
+              transition: 'all 0.3s ease',
+              pointerEvents: 'none'
+            }} />
           </div>
 
           {/* Nombre Moderno */}
