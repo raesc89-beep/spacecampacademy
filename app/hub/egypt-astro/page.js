@@ -54,30 +54,35 @@ function Stars() {
   );
 }
 
-// ─── Efecto del Río Nilo Fluyendo con SVG Displacement y Clip-Path ───────────────
+// ─── Efecto del Río Nilo Fluyendo con SVG Displacement ───────────────
 function NileRiver() {
   return (
     <div style={{
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 1,
-      clipPath: 'polygon(0% 40%, 20% 45%, 40% 50%, 60% 56%, 80% 60%, 100% 64%, 100% 80%, 80% 75%, 60% 70%, 40% 65%, 20% 55%, 0% 50%)'
+      // Usamos una máscara difuminada en la parte inferior central, donde típicamente va el cauce,
+      // para no tocar los pilares de los lados ni el cielo.
+      WebkitMaskImage: 'radial-gradient(ellipse 60% 40% at 50% 85%, black 20%, transparent 70%)',
+      maskImage: 'radial-gradient(ellipse 60% 40% at 50% 85%, black 20%, transparent 70%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion">
-          <feTurbulence type="fractalNoise" baseFrequency="0.015 0.05" numOctaves="2" result="noise">
-            <animate attributeName="baseFrequency" values="0.015 0.05; 0.02 0.08; 0.015 0.05" dur="10s" repeatCount="indefinite" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.01 0.05" numOctaves="2" result="noise">
+            <animate attributeName="baseFrequency" values="0.01 0.05; 0.015 0.07; 0.01 0.05" dur="15s" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="25" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </svg>
+      {/* Duplicamos la imagen de fondo exactamente igual, pero le aplicamos la distorsión del agua */}
       <div style={{
-        position: 'absolute', inset: -20,
-        background: 'linear-gradient(to right, rgba(0, 160, 255, 0.3) 0%, rgba(50, 200, 255, 0.4) 50%, rgba(0, 120, 220, 0.35) 100%)',
+        position: 'absolute', inset: 0,
+        backgroundImage: 'url(/assets/egypt_hub_bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center bottom',
+        backgroundRepeat: 'no-repeat',
         filter: 'url(#water-distortion)',
-        backdropFilter: 'blur(2px)',
-        WebkitBackdropFilter: 'blur(2px)',
-        mixBlendMode: 'hard-light'
+        transform: 'scale(1.02)' // Pequeño scale para evitar bordes duros de la distorsión
       }}></div>
     </div>
   );
