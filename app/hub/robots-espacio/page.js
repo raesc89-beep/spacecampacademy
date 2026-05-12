@@ -26,14 +26,14 @@ export default function RobotsHub() {
   // Por ahora, todos enlazan al gran curso interactivo que construimos.
 
   const orbitalData = [
-    { id: 'robots_historia', title: 'Historia', img: '/assets/rovers/curiosity.svg', left: '12%', top: '15%', size: 'clamp(60px, 8vw, 110px)' },
+    { id: 'robots_historia', title: 'Historia', img: '/assets/rovers/ai_historia.png', left: '72%', top: '12%', size: 'clamp(80px, 10vw, 130px)' },
     { id: 'robots_sojourner', title: 'Sojourner', img: '/assets/rovers/ai_sojourner.png', left: '25%', top: '82%', size: 'clamp(50px, 7vw, 90px)' },
     { id: 'robots_spirit', title: 'Spirit', img: '/assets/rovers/ai_spirit.png', left: '42%', top: '70%', size: 'clamp(70px, 9vw, 110px)' },
-    { id: 'robots_opportunity', title: 'Opportunity', img: '/assets/rovers/ai_spirit.png', left: '55%', top: '85%', size: 'clamp(70px, 9vw, 110px)' }, // Opportunity es gemelo de Spirit
+    { id: 'robots_opportunity', title: 'Opportunity', img: '/assets/rovers/ai_opportunity.png', left: '55%', top: '85%', size: 'clamp(70px, 9vw, 110px)' }, 
     { id: 'robots_curiosity', title: 'Curiosity', img: '/assets/rovers/ai_curiosity.png', left: '72%', top: '65%', size: 'clamp(90px, 11vw, 140px)' },
-    { id: 'robots_perseverance', title: 'Perseverance', img: '/assets/rovers/ai_curiosity.png', left: '88%', top: '78%', size: 'clamp(100px, 12vw, 150px)' }, // Perseverance se parece a Curiosity
-    { id: 'robots_ingenuity', title: 'Ingenuity', img: '/assets/rovers/ai_ingenuity.png', left: '75%', top: '25%', size: 'clamp(60px, 8vw, 100px)' },
-    { id: 'robots_futuras', title: 'Misiones Futuras', img: '/assets/rovers/perseverance.svg', left: '88%', top: '15%', size: 'clamp(70px, 9vw, 120px)' }
+    { id: 'robots_perseverance', title: 'Perseverance', img: '/assets/rovers/ai_curiosity.png', left: '88%', top: '78%', size: 'clamp(100px, 12vw, 150px)' },
+    { id: 'robots_ingenuity', title: 'Ingenuity', img: '/assets/rovers/ai_ingenuity.png', left: '85%', top: '28%', size: 'clamp(60px, 8vw, 100px)' },
+    { id: 'robots_futuras', title: 'Misiones Futuras', img: '/assets/rovers/ai_futuras.png', left: '90%', top: '10%', size: 'clamp(80px, 10vw, 130px)' }
   ];
 
   useEffect(() => {
