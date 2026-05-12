@@ -251,7 +251,47 @@ const globalStyles = `
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+@keyframes fireFlicker {
+  0% { opacity: 0.8; transform: scale(0.9) translateY(0); filter: drop-shadow(0 0 5px rgba(255,123,0,0.8)); }
+  25% { opacity: 1; transform: scale(1.1) translateY(-1px); filter: drop-shadow(0 0 12px rgba(255,69,0,0.9)); }
+  50% { opacity: 0.9; transform: scale(0.95) translateY(0); filter: drop-shadow(0 0 6px rgba(255,123,0,0.8)); }
+  75% { opacity: 1; transform: scale(1.05) translateY(-2px); filter: drop-shadow(0 0 15px rgba(255,69,0,1)); }
+  100% { opacity: 0.8; transform: scale(0.9) translateY(0); filter: drop-shadow(0 0 5px rgba(255,123,0,0.8)); }
+}
 `;
+
+// ─── Antorchas Lejanas en Pirámides ────────────────────────────────────────
+function JungleTorches() {
+  // Posiciones dinámicas a lo largo del horizonte lejano (aprox top: 55%-65%)
+  const torches = [
+    { left: '38%', top: '61%', size: 4, delay: 0.1 },
+    { left: '38.5%', top: '61.5%', size: 3, delay: 0.8 },
+    { left: '55%', top: '60%', size: 4.5, delay: 0.3 },
+    { left: '55.3%', top: '60.2%', size: 3.5, delay: 0.9 },
+    { left: '72%', top: '62%', size: 5, delay: 0.5 },
+    { left: '28%', top: '63%', size: 4, delay: 0.2 },
+    { left: '48%', top: '59%', size: 3, delay: 0.7 },
+  ];
+
+  return (
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1 }}>
+      {torches.map((t, i) => (
+        <div key={i} style={{
+          position: 'absolute',
+          left: t.left,
+          top: t.top,
+          width: `${t.size}px`,
+          height: `${t.size}px`,
+          background: 'radial-gradient(circle, #fff7a1 0%, #ff7b00 40%, #ff2a00 80%, transparent 100%)',
+          borderRadius: '50%',
+          animation: `fireFlicker ${0.4 + Math.random() * 0.4}s infinite alternate`,
+          animationDelay: `${t.delay}s`,
+          mixBlendMode: 'screen'
+        }} />
+      ))}
+    </div>
+  );
+}
 
 export default function MayaHub() {
   const { user, progress } = useAuth();
@@ -292,8 +332,10 @@ export default function MayaHub() {
         pointerEvents: 'none', zIndex: 0
       }} />
 
-      {/* Estrellas de fondo */}
+      {/* Estrellas, Cometas y Antorchas Lejanas */}
       <Stars />
+      <Comets />
+      <JungleTorches />
 
       {/* Header UI - Botón Volver y Título */}
       <div style={{
