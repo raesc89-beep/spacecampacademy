@@ -20,11 +20,16 @@ const globalStyles = `
     100% { transform: translateX(120vw) skewX(-25deg); opacity: 0; }
   }
   @keyframes dustDevil {
-    0% { transform: translateX(-10vw) scaleX(1) scaleY(1); opacity: 0; }
-    20% { opacity: 0.9; }
-    50% { transform: translateX(40vw) scaleX(1.8) scaleY(1.4); opacity: 0.7; }
-    80% { opacity: 0.9; }
-    100% { transform: translateX(110vw) scaleX(0.8) scaleY(1.6); opacity: 0; }
+    0% { transform: translateX(-10vw) scaleX(1) scaleY(1) skewX(10deg) rotate(0deg); opacity: 0; }
+    20% { opacity: 0.8; }
+    50% { transform: translateX(50vw) scaleX(1.3) scaleY(1.1) skewX(-15deg) rotate(5deg); opacity: 0.6; }
+    80% { opacity: 0.8; }
+    100% { transform: translateX(110vw) scaleX(0.8) scaleY(1.3) skewX(20deg) rotate(-5deg); opacity: 0; }
+  }
+  @keyframes blowingSand {
+    0% { background-position: 0 0; opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { background-position: 1500px 0; opacity: 0.3; }
   }
   @keyframes twinkle {
     0%, 100% { opacity: 0.3; transform: scale(1); }
@@ -91,29 +96,30 @@ function Comets() {
 function MartianDust() {
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1, overflow: 'hidden' }}>
-      {/* Viento general en la planicie (bruma naranja) */}
+      {/* Viento general en la planicie (Arena volando) */}
       <div style={{
-        position: 'absolute', bottom: '0', left: '0', right: '0', height: '50%',
+        position: 'absolute', bottom: '0', left: '0', right: '0', height: '40%',
+        backgroundImage: 'repeating-linear-gradient(90deg, transparent 0%, rgba(255, 80, 20, 0.1) 10%, transparent 20%)',
+        backgroundSize: '200px 100%',
+        filter: 'blur(5px)',
+        animation: 'blowingSand 8s linear infinite reverse'
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '15%', left: '0', right: '0', height: '60%',
         background: 'linear-gradient(90deg, transparent 0%, rgba(255, 60, 0, 0.25) 50%, transparent 100%)',
         filter: 'blur(40px)',
         animation: 'dustSweep 20s linear infinite'
       }} />
-      <div style={{
-        position: 'absolute', bottom: '15%', left: '0', right: '0', height: '30%',
-        background: 'linear-gradient(90deg, transparent 0%, rgba(255, 100, 20, 0.3) 50%, transparent 100%)',
-        filter: 'blur(30px)',
-        animation: 'dustSweep 15s linear infinite reverse',
-        animationDelay: '4s'
-      }} />
       
-      {/* Torbellino (Dust Devil) marciano, sumamente visible y grande */}
+      {/* Torbellino (Dust Devil) marciano, realista y retorcido */}
       <div style={{
-        position: 'absolute', bottom: '15%', left: '-10%', width: '350px', height: '600px',
-        background: 'radial-gradient(ellipse at center, rgba(255, 70, 0, 0.8) 0%, rgba(200, 40, 0, 0.4) 40%, transparent 70%)',
-        filter: 'blur(10px)',
-        borderRadius: '50% 50% 0 0',
+        position: 'absolute', bottom: '15%', left: '-10%', width: '120px', height: '550px',
+        background: 'linear-gradient(to top, rgba(255, 90, 20, 0.7) 0%, rgba(220, 50, 10, 0.3) 50%, transparent 100%)',
+        filter: 'blur(8px) contrast(1.5)',
+        borderRadius: '30% 100% 0 0',
         transformOrigin: 'bottom center',
-        animation: 'dustDevil 14s ease-in-out infinite'
+        animation: 'dustDevil 15s ease-in-out infinite',
+        boxShadow: '-10px 0 30px rgba(255, 50, 0, 0.5)'
       }} />
     </div>
   );
@@ -174,8 +180,8 @@ export default function RobotsHub() {
         {/* Viento y polvo marciano */}
         <MartianDust />
 
-        {/* Overlay anaranjado marciano */}
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(to top, rgba(200, 60, 0, 0.4), transparent)', pointerEvents: 'none' }} />
+        {/* Overlay anaranjado marciano y viñeta inmersiva mágica */}
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(circle at center, transparent 30%, rgba(10, 0, 0, 0.4) 100%), linear-gradient(to top, rgba(220, 50, 0, 0.3), transparent)', pointerEvents: 'none', zIndex: 0 }} />
 
         {/* Contenedor del Mapa */}
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh' }}>

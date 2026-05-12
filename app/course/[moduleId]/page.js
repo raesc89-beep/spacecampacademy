@@ -103,10 +103,10 @@ export default function CourseModule() {
         };
 
         // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, arqueoastronomia_maya, ciencia_star_wars o ciencia_volver_al_futuro, usar los datos estáticos puros.
-        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro') {
+        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('robots_')) {
           const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
           if (staticMod) {
-             setModuleData(staticMod);
+             setModuleData(enforce15x15Rule(staticMod));
              setDataLoading(false);
              return;
           }
@@ -309,7 +309,7 @@ export default function CourseModule() {
           <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1.5rem', background: `linear-gradient(135deg, rgba(255,255,255,0.05), ${moduleData.color}20)`, backdropFilter: 'blur(20px)' }}>
             <div style={{ width: '180px', height: '180px', borderRadius: '50%', boxShadow: `0 0 40px ${moduleData.color}60`, overflow: 'hidden', border: `4px solid ${moduleData.color}`, background: 'black' }}>
                <motion.img 
-                 src={`/assets/${planetImageName}`} 
+                 src={`/assets/${planetImageName}?v=2`} 
                  alt={moduleData.titleEs} 
                  animate={{ rotate: 360 }}
                  transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
