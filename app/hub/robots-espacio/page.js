@@ -26,14 +26,14 @@ export default function RobotsHub() {
   // Por ahora, todos enlazan al gran curso interactivo que construimos.
 
   const orbitalData = [
-    { id: 'robots_historia', title: 'Carrera Histórica', img: '/assets/rovers/ai_sojourner.png', left: '15%', top: '55%', size: 'clamp(100px, 12vw, 160px)' },
-    { id: 'robots_sojourner', title: 'Sojourner', img: '/assets/rovers/ai_sojourner.png', left: '30%', top: '35%', size: 'clamp(90px, 10vw, 140px)' },
-    { id: 'robots_opportunity', title: 'Opportunity', img: '/assets/rovers/ai_opportunity.png', left: '45%', top: '60%', size: 'clamp(120px, 15vw, 200px)' },
-    { id: 'robots_spirit', title: 'Spirit', img: '/assets/rovers/ai_spirit.png', left: '60%', top: '40%', size: 'clamp(110px, 13vw, 180px)' },
-    { id: 'robots_curiosity', title: 'Curiosity', img: '/assets/rovers/ai_curiosity.png', left: '75%', top: '65%', size: 'clamp(130px, 16vw, 220px)' },
-    { id: 'robots_perseverance', title: 'Perseverance', img: '/assets/rovers/ai_perseverance.png', left: '88%', top: '35%', size: 'clamp(140px, 18vw, 240px)' },
-    { id: 'robots_ingenuity', title: 'Ingenuity', img: '/assets/rovers/ai_ingenuity.png', left: '80%', top: '15%', size: 'clamp(80px, 9vw, 120px)' },
-    { id: 'robots_futuras', title: 'Misiones Futuras', img: '/assets/rovers/ai_curiosity.png', left: '10%', top: '25%', size: 'clamp(90px, 10vw, 130px)' }
+    { id: 'robots_historia', title: 'Historia', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Voyager_spacecraft_model.png/800px-Voyager_spacecraft_model.png', left: '12%', top: '15%', size: 'clamp(60px, 8vw, 110px)' },
+    { id: 'robots_sojourner', title: 'Sojourner', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Sojourner_rover_on_Mars_transparent.png/800px-Sojourner_rover_on_Mars_transparent.png', left: '25%', top: '82%', size: 'clamp(50px, 7vw, 90px)' },
+    { id: 'robots_spirit', title: 'Spirit', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/NASA_Mars_Rover.png/800px-NASA_Mars_Rover.png', left: '42%', top: '70%', size: 'clamp(70px, 9vw, 110px)' },
+    { id: 'robots_opportunity', title: 'Opportunity', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/NASA_Mars_Rover.png/800px-NASA_Mars_Rover.png', left: '55%', top: '85%', size: 'clamp(70px, 9vw, 110px)' },
+    { id: 'robots_curiosity', title: 'Curiosity', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Curiosity_rover.png/800px-Curiosity_rover.png', left: '72%', top: '65%', size: 'clamp(90px, 11vw, 140px)' },
+    { id: 'robots_perseverance', title: 'Perseverance', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mars_2020_rover_transparent_background.png/800px-Mars_2020_rover_transparent_background.png', left: '88%', top: '78%', size: 'clamp(100px, 12vw, 150px)' },
+    { id: 'robots_ingenuity', title: 'Ingenuity', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Mars_Helicopter_Ingenuity_transparent_background.png/800px-Mars_Helicopter_Ingenuity_transparent_background.png', left: '75%', top: '25%', size: 'clamp(60px, 8vw, 100px)' },
+    { id: 'robots_futuras', title: 'Misiones Futuras', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mars_Sample_Return_%28transparent%29.png/800px-Mars_Sample_Return_%28transparent%29.png', left: '88%', top: '15%', size: 'clamp(70px, 9vw, 120px)' }
   ];
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export default function RobotsHub() {
       <main style={{ 
         flex: 1, position: 'relative', width: '100vw', height: '100vh', 
         display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', 
-        background: 'url(/assets/dashboard/mars_landscape_vector.png) center center / cover' 
+        background: 'url(/assets/robots/robots_hub_bg.png) center bottom / cover' 
       }}>
         
         {/* Overlay anaranjado marciano */}
