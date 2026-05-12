@@ -111,15 +111,18 @@ function MartianDust() {
         animation: 'dustSweep 20s linear infinite'
       }} />
       
-      {/* Torbellino (Dust Devil) marciano, realista y retorcido */}
+      {/* Torbellino (Dust Devil) fotorrealista */}
       <div style={{
-        position: 'absolute', bottom: '15%', left: '-10%', width: '120px', height: '550px',
-        background: 'linear-gradient(to top, rgba(255, 90, 20, 0.7) 0%, rgba(220, 50, 10, 0.3) 50%, transparent 100%)',
-        filter: 'blur(8px) contrast(1.5)',
-        borderRadius: '30% 100% 0 0',
+        position: 'absolute', bottom: '10%', left: '-20%', width: '300px', height: '600px',
+        backgroundImage: 'url(/assets/robots/dust_devil.png)',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'bottom center',
+        mixBlendMode: 'screen',
+        opacity: 0.85,
+        filter: 'sepia(1) hue-rotate(-20deg) saturate(3) blur(1px)',
         transformOrigin: 'bottom center',
-        animation: 'dustDevil 15s ease-in-out infinite',
-        boxShadow: '-10px 0 30px rgba(255, 50, 0, 0.5)'
+        animation: 'dustDevil 18s linear infinite'
       }} />
     </div>
   );
