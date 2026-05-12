@@ -9,27 +9,27 @@ import { motion, AnimatePresence } from 'framer-motion';
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const MAYA_MODULES = [
   // Top row (Sky - Milky Way)
-  { id: 'maya_m9',  titleEs: 'Wakah Chan',        color: '#2980B9', link: '/course/maya_m9',  icon: '/assets/maya/maya_m9.png',  coords: { left: '15%', top: '20%' } },
-  { id: 'maya_m7',  titleEs: 'Venus',             color: '#8E44AD', link: '/course/maya_m7',  icon: '/assets/maya/maya_m7.png',  coords: { left: '40%', top: '15%' } },
-  { id: 'maya_m8',  titleEs: 'Eclipses',          color: '#111111', link: '/course/maya_m8',  icon: '/assets/maya/maya_m8.png',  coords: { left: '65%', top: '18%' } },
-  { id: 'maya_m10', titleEs: 'Pléyades',          color: '#8E44AD', link: '/course/maya_m10', icon: '/assets/maya/maya_m10.png', coords: { left: '88%', top: '30%' } },
+  { id: 'maya_m9',  titleEs: 'Wakah Chan',        color: '#2980B9', link: '/course/maya_m9',  icon: '/assets/maya/maya_m9.png',  coords: { left: '10%', top: '18%' } },
+  { id: 'maya_m7',  titleEs: 'Venus',             color: '#8E44AD', link: '/course/maya_m7',  icon: '/assets/maya/maya_m7.png',  coords: { left: '32%', top: '12%' } },
+  { id: 'maya_m8',  titleEs: 'Eclipses',          color: '#111111', link: '/course/maya_m8',  icon: '/assets/maya/maya_m8.png',  coords: { left: '55%', top: '15%' } },
   
   // Middle-Upper row (Horizon/Pyramid top)
-  { id: 'maya_m15', titleEs: 'Códice Dresde',     color: '#1A5F7A', link: '/course/maya_m15', icon: '/assets/maya/maya_m15.png', coords: { left: '25%', top: '35%' } },
-  { id: 'maya_m14', titleEs: 'Edzná Cenit',       color: '#F39C12', link: '/course/maya_m14', icon: '/assets/maya/maya_m14.png', coords: { left: '50%', top: '30%' } },
-  { id: 'maya_m4',  titleEs: 'Tzolk\'in',         color: '#4A90E2', link: '/course/maya_m4',  icon: '/assets/maya/maya_m4.png',  coords: { left: '75%', top: '35%' } },
+  { id: 'maya_m10', titleEs: 'Pléyades',          color: '#8E44AD', link: '/course/maya_m10', icon: '/assets/maya/maya_m10.png', coords: { left: '22%', top: '33%' } },
+  { id: 'maya_m15', titleEs: 'Códice Dresde',     color: '#1A5F7A', link: '/course/maya_m15', icon: '/assets/maya/maya_m15.png', coords: { left: '45%', top: '28%' } },
+  { id: 'maya_m14', titleEs: 'Edzná Cenit',       color: '#F39C12', link: '/course/maya_m14', icon: '/assets/maya/maya_m14.png', coords: { left: '70%', top: '32%' } },
+  { id: 'maya_m4',  titleEs: 'Tzolk\'in',         color: '#4A90E2', link: '/course/maya_m4',  icon: '/assets/maya/maya_m4.png',  coords: { left: '88%', top: '40%' } },
 
   // Middle-Lower row (Jungle/Ruins)
-  { id: 'maya_m11', titleEs: 'Palenque',          color: '#27AE60', link: '/course/maya_m11', icon: '/assets/maya/maya_m11.png', coords: { left: '12%', top: '55%' } },
-  { id: 'maya_m2',  titleEs: 'Kukulcán',          color: '#8E2B2B', link: '/course/maya_m2',  icon: '/assets/maya/maya_m2.png',  coords: { left: '38%', top: '50%' } },
-  { id: 'maya_m3',  titleEs: 'Haab',              color: '#D3882C', link: '/course/maya_m3',  icon: '/assets/maya/maya_m3.png',  coords: { left: '62%', top: '52%' } },
-  { id: 'maya_m13', titleEs: 'Uaxactún',          color: '#F39C12', link: '/course/maya_m13', icon: '/assets/maya/maya_m13.png', coords: { left: '85%', top: '55%' } },
+  { id: 'maya_m11', titleEs: 'Palenque',          color: '#27AE60', link: '/course/maya_m11', icon: '/assets/maya/maya_m11.png', coords: { left: '8%', top: '52%' } },
+  { id: 'maya_m2',  titleEs: 'Kukulcán',          color: '#8E2B2B', link: '/course/maya_m2',  icon: '/assets/maya/maya_m2.png',  coords: { left: '35%', top: '48%' } },
+  { id: 'maya_m3',  titleEs: 'Haab',              color: '#D3882C', link: '/course/maya_m3',  icon: '/assets/maya/maya_m3.png',  coords: { left: '60%', top: '52%' } },
+  { id: 'maya_m13', titleEs: 'Uaxactún',          color: '#F39C12', link: '/course/maya_m13', icon: '/assets/maya/maya_m13.png', coords: { left: '82%', top: '60%' } },
 
   // Bottom row (Foreground)
   { id: 'maya_m6',  titleEs: '7 Muñecas',         color: '#F1C40F', link: '/course/maya_m6',  icon: '/assets/maya/maya_m6.png',  coords: { left: '20%', top: '75%' } },
-  { id: 'maya_m1',  titleEs: 'El Caracol',        color: '#1A5F7A', link: '/course/maya_m1',  icon: '/assets/maya/maya_m1.png',  coords: { left: '45%', top: '70%' } },
-  { id: 'maya_m5',  titleEs: 'Rueda Calendárica', color: '#E65100', link: '/course/maya_m5',  icon: '/assets/maya/maya_m5.png',  coords: { left: '70%', top: '72%' } },
-  { id: 'maya_m12', titleEs: 'Copán',             color: '#E74C3C', link: '/course/maya_m12', icon: '/assets/maya/maya_m12.png', coords: { left: '90%', top: '78%' } },
+  { id: 'maya_m1',  titleEs: 'El Caracol',        color: '#1A5F7A', link: '/course/maya_m1',  icon: '/assets/maya/maya_m1.png',  coords: { left: '48%', top: '68%' } },
+  { id: 'maya_m5',  titleEs: 'Rueda Calendárica', color: '#E65100', link: '/course/maya_m5',  icon: '/assets/maya/maya_m5.png',  coords: { left: '72%', top: '75%' } },
+  { id: 'maya_m12', titleEs: 'Copán',             color: '#E74C3C', link: '/course/maya_m12', icon: '/assets/maya/maya_m12.png', coords: { left: '92%', top: '82%' } },
 ];
 
 // ─── Estrellas de fondo animadas ─────────────────────────────────────────
@@ -292,9 +292,8 @@ export default function MayaHub() {
         pointerEvents: 'none', zIndex: 0
       }} />
 
-      {/* Estrellas y cometas */}
+      {/* Estrellas de fondo */}
       <Stars />
-      <Comets />
 
       {/* Header UI - Botón Volver y Título */}
       <div style={{
