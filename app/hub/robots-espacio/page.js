@@ -31,9 +31,9 @@ const globalStyles = `
     50% { opacity: 1; transform: scale(1.5); boxShadow: 0 0 8px rgba(255,255,255,0.8); }
   }
   @keyframes shootingStar {
-    0% { transform: rotate(15deg) translateX(0) scale(1); opacity: 1; }
-    15% { transform: rotate(15deg) translateX(1500px) scale(0); opacity: 0; }
-    100% { transform: rotate(15deg) translateX(1500px) scale(0); opacity: 0; }
+    0% { transform: rotate(5deg) translateX(0) scale(1); opacity: 1; }
+    15% { transform: rotate(5deg) translateX(800px) scale(0); opacity: 0; }
+    100% { transform: rotate(5deg) translateX(800px) scale(0); opacity: 0; }
   }
 `;
 
@@ -45,8 +45,8 @@ function Stars() {
           position: 'absolute',
           left: `${Math.random() * 100}%`,
           top: `${Math.random() * 60}%`, // Cielo estrellado
-          width: `${Math.random() * 2 + 1}px`,
-          height: `${Math.random() * 2 + 1}px`,
+          width: `${Math.random() * 1.5 + 0.5}px`,
+          height: `${Math.random() * 1.5 + 0.5}px`,
           borderRadius: '50%',
           background: 'white',
           opacity: Math.random() * 0.7 + 0.3,
@@ -77,7 +77,7 @@ function Comets() {
             background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,150,100,0.8) 20%, rgba(0,0,0,0) 100%)', // Tono cálido para Marte
             borderRadius: '50%',
             boxShadow: '0 0 10px rgba(255,200,150,0.8)',
-            transform: 'rotate(15deg) scale(0)',
+            transform: 'rotate(5deg) scale(0)',
             opacity: 0,
             animation: `shootingStar ${duration}s ease-in infinite`,
             animationDelay: `${delay}s`,
@@ -106,14 +106,14 @@ function MartianDust() {
         animationDelay: '4s'
       }} />
       
-      {/* Torbellino (Dust Devil) marciano, muy visible */}
+      {/* Torbellino (Dust Devil) marciano, sumamente visible y grande */}
       <div style={{
-        position: 'absolute', bottom: '15%', left: '-10%', width: '200px', height: '400px',
-        background: 'radial-gradient(ellipse at center, rgba(255, 80, 10, 0.6) 0%, transparent 60%)',
-        filter: 'blur(20px)',
+        position: 'absolute', bottom: '15%', left: '-10%', width: '350px', height: '600px',
+        background: 'radial-gradient(ellipse at center, rgba(255, 70, 0, 0.8) 0%, rgba(200, 40, 0, 0.4) 40%, transparent 70%)',
+        filter: 'blur(10px)',
         borderRadius: '50% 50% 0 0',
         transformOrigin: 'bottom center',
-        animation: 'dustDevil 12s ease-in-out infinite'
+        animation: 'dustDevil 14s ease-in-out infinite'
       }} />
     </div>
   );
@@ -133,14 +133,14 @@ export default function RobotsHub() {
   // Por ahora, todos enlazan al gran curso interactivo que construimos.
 
   const orbitalData = [
-    { id: 'robots_historia', title: 'Historia', img: '/assets/rovers/ai_historia.png', left: '72%', top: '12%', size: 'clamp(80px, 10vw, 130px)' },
+    { id: 'robots_historia', title: 'Historia', img: '/assets/rovers/ai_historia.png', left: '20%', top: '15%', size: 'clamp(80px, 10vw, 130px)' },
     { id: 'robots_sojourner', title: 'Sojourner', img: '/assets/rovers/ai_sojourner.png', left: '25%', top: '82%', size: 'clamp(50px, 7vw, 90px)' },
     { id: 'robots_spirit', title: 'Spirit', img: '/assets/rovers/ai_spirit.png', left: '42%', top: '70%', size: 'clamp(70px, 9vw, 110px)' },
     { id: 'robots_opportunity', title: 'Opportunity', img: '/assets/rovers/ai_opportunity.png', left: '55%', top: '85%', size: 'clamp(70px, 9vw, 110px)' }, 
     { id: 'robots_curiosity', title: 'Curiosity', img: '/assets/rovers/ai_curiosity.png', left: '72%', top: '65%', size: 'clamp(90px, 11vw, 140px)' },
     { id: 'robots_perseverance', title: 'Perseverance', img: '/assets/rovers/ai_curiosity.png', left: '88%', top: '78%', size: 'clamp(100px, 12vw, 150px)' },
-    { id: 'robots_ingenuity', title: 'Ingenuity', img: '/assets/rovers/ai_ingenuity.png', left: '85%', top: '28%', size: 'clamp(60px, 8vw, 100px)' },
-    { id: 'robots_futuras', title: 'Misiones Futuras', img: '/assets/rovers/ai_futuras.png', left: '90%', top: '10%', size: 'clamp(80px, 10vw, 130px)' }
+    { id: 'robots_ingenuity', title: 'Ingenuity', img: '/assets/rovers/ai_ingenuity.png', left: '80%', top: '25%', size: 'clamp(60px, 8vw, 100px)' },
+    { id: 'robots_futuras', title: 'Misiones Futuras', img: '/assets/rovers/ai_futuras.png', left: '50%', top: '10%', size: 'clamp(80px, 10vw, 130px)' }
   ];
 
   useEffect(() => {
