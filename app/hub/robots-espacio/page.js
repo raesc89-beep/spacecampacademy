@@ -164,7 +164,7 @@ export default function RobotsHub() {
       <main style={{ 
         flex: 1, position: 'relative', width: '100vw', height: '100vh', 
         display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', 
-        background: 'url(/assets/robots/robots_hub_bg.png) center center / cover' 
+        background: 'url(/assets/robots/robots_hub_bg_v5.png) center center / cover' 
       }}>
         
         {/* Cielo místico estrellado */}
