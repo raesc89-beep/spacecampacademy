@@ -279,7 +279,7 @@ export default function MayaHub() {
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/assets/maya/maya_hub_bg.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         filter: 'brightness(0.9) contrast(1.1)',
         zIndex: 0

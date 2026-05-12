@@ -77,7 +77,7 @@ function NileRiver() {
       {/* Duplicamos la imagen de fondo exactamente igual, pero le aplicamos la distorsión del agua */}
       <div style={{
         position: 'absolute', inset: 0,
-        backgroundImage: 'url(/assets/egypt_hub_bg.png)',
+        backgroundImage: 'url(/assets/egypt/hub_background.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center bottom',
         backgroundRepeat: 'no-repeat',
