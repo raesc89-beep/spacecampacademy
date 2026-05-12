@@ -19,12 +19,11 @@ const globalStyles = `
     50% { opacity: 0.8; }
     100% { transform: translateX(120vw) skewX(-25deg); opacity: 0; }
   }
-  @keyframes dustDevil {
-    0% { transform: translateX(-10vw) scaleX(1) scaleY(1) skewX(10deg) rotate(0deg); opacity: 0; }
-    20% { opacity: 0.8; }
-    50% { transform: translateX(50vw) scaleX(1.3) scaleY(1.1) skewX(-15deg) rotate(5deg); opacity: 0.6; }
-    80% { opacity: 0.8; }
-    100% { transform: translateX(110vw) scaleX(0.8) scaleY(1.3) skewX(20deg) rotate(-5deg); opacity: 0; }
+  @keyframes dustHaze {
+    0% { opacity: 0; transform: translateX(-5%) scaleX(0.9); }
+    30% { opacity: 1; }
+    70% { opacity: 0.8; }
+    100% { opacity: 0; transform: translateX(8%) scaleX(1.1); }
   }
   @keyframes blowingSand {
     0% { background-position: 0 0; opacity: 0.3; }
@@ -96,33 +95,27 @@ function Comets() {
 function MartianDust() {
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1, overflow: 'hidden' }}>
-      {/* Viento general en la planicie (Arena volando) */}
+      {/* Bruma de polvo rojiza difuminada - capa 1 lenta */}
       <div style={{
-        position: 'absolute', bottom: '0', left: '0', right: '0', height: '40%',
-        backgroundImage: 'repeating-linear-gradient(90deg, transparent 0%, rgba(255, 80, 20, 0.1) 10%, transparent 20%)',
-        backgroundSize: '200px 100%',
-        filter: 'blur(5px)',
-        animation: 'blowingSand 8s linear infinite reverse'
+        position: 'absolute', bottom: '10%', left: '-10%', width: '50%', height: '45%',
+        background: 'radial-gradient(ellipse 80% 60% at 40% 80%, rgba(210,80,20,0.45) 0%, rgba(180,50,10,0.2) 50%, transparent 100%)',
+        filter: 'blur(30px)',
+        animation: 'dustHaze 22s ease-in-out infinite',
+        animationDelay: '0s'
       }} />
+      {/* Bruma de polvo rojiza difuminada - capa 2 más rápida */}
       <div style={{
-        position: 'absolute', bottom: '15%', left: '0', right: '0', height: '60%',
-        background: 'linear-gradient(90deg, transparent 0%, rgba(255, 60, 0, 0.25) 50%, transparent 100%)',
+        position: 'absolute', bottom: '5%', right: '-5%', width: '45%', height: '50%',
+        background: 'radial-gradient(ellipse 70% 55% at 60% 90%, rgba(200,70,10,0.35) 0%, rgba(160,40,5,0.15) 55%, transparent 100%)',
         filter: 'blur(40px)',
-        animation: 'dustSweep 20s linear infinite'
+        animation: 'dustHaze 16s ease-in-out infinite',
+        animationDelay: '-8s'
       }} />
-      
-      {/* Torbellino (Dust Devil) fotorrealista */}
+      {/* Velo de polvo tenue en el horizonte */}
       <div style={{
-        position: 'absolute', bottom: '10%', left: '-20%', width: '300px', height: '600px',
-        backgroundImage: 'url(/assets/robots/dust_devil.png)',
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'bottom center',
-        mixBlendMode: 'screen',
-        opacity: 0.85,
-        filter: 'sepia(1) hue-rotate(-20deg) saturate(3) blur(1px)',
-        transformOrigin: 'bottom center',
-        animation: 'dustDevil 18s linear infinite'
+        position: 'absolute', bottom: '28%', left: '0', right: '0', height: '15%',
+        background: 'linear-gradient(to top, rgba(220,90,30,0.18) 0%, transparent 100%)',
+        filter: 'blur(20px)'
       }} />
     </div>
   );
