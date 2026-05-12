@@ -14,46 +14,106 @@ import { COURSE_DATA } from '@/lib/courseData';
 
 const globalStyles = `
   @keyframes dustSweep {
-    0% { transform: translateX(-100%) skewX(-15deg); opacity: 0; }
-    20% { opacity: 0.6; }
-    80% { opacity: 0.6; }
-    100% { transform: translateX(200vw) skewX(-15deg); opacity: 0; }
+    0% { transform: translateX(-20vw) skewX(-25deg); opacity: 0; }
+    10% { opacity: 0.8; }
+    50% { opacity: 0.8; }
+    100% { transform: translateX(120vw) skewX(-25deg); opacity: 0; }
   }
   @keyframes dustDevil {
-    0% { transform: translateX(0) scaleX(1) scaleY(1); opacity: 0; }
-    20% { opacity: 0.8; }
-    50% { transform: translateX(30vw) scaleX(1.5) scaleY(1.2); opacity: 0.4; }
-    80% { opacity: 0.8; }
-    100% { transform: translateX(80vw) scaleX(0.8) scaleY(1.5); opacity: 0; }
+    0% { transform: translateX(-10vw) scaleX(1) scaleY(1); opacity: 0; }
+    20% { opacity: 0.9; }
+    50% { transform: translateX(40vw) scaleX(1.8) scaleY(1.4); opacity: 0.7; }
+    80% { opacity: 0.9; }
+    100% { transform: translateX(110vw) scaleX(0.8) scaleY(1.6); opacity: 0; }
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); boxShadow: 0 0 8px rgba(255,255,255,0.8); }
+  }
+  @keyframes shootingStar {
+    0% { transform: rotate(15deg) translateX(0) scale(1); opacity: 1; }
+    15% { transform: rotate(15deg) translateX(1500px) scale(0); opacity: 0; }
+    100% { transform: rotate(15deg) translateX(1500px) scale(0); opacity: 0; }
   }
 `;
+
+function Stars() {
+  return (
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
+      {Array.from({ length: 150 }).map((_, i) => (
+        <div key={i} style={{
+          position: 'absolute',
+          left: \`\${Math.random() * 100}%\`,
+          top: \`\${Math.random() * 60}%\`, // Cielo estrellado
+          width: \`\${Math.random() * 2 + 1}px\`,
+          height: \`\${Math.random() * 2 + 1}px\`,
+          borderRadius: '50%',
+          background: 'white',
+          opacity: Math.random() * 0.7 + 0.3,
+          animation: \`twinkle \${Math.random() * 4 + 2}s ease-in-out infinite\`,
+          animationDelay: \`\${Math.random() * 3}s\`,
+        }} />
+      ))}
+    </div>
+  );
+}
+
+function Comets() {
+  return (
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 1 }}>
+      {Array.from({ length: 5 }).map((_, i) => {
+        const width = Math.random() * 80 + 60;
+        const top = Math.random() * 30; // Solo en el cielo superior
+        const left = (Math.random() * 40) - 20; 
+        const duration = Math.random() * 5 + 4;
+        const delay = Math.random() * 10;
+        return (
+          <div key={i} style={{
+            position: 'absolute',
+            left: \`\${left}%\`,
+            top: \`\${top}%\`,
+            width: \`\${width}px\`,
+            height: '2px',
+            background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,150,100,0.8) 20%, rgba(0,0,0,0) 100%)', // Tono cálido para Marte
+            borderRadius: '50%',
+            boxShadow: '0 0 10px rgba(255,200,150,0.8)',
+            transform: 'rotate(15deg) scale(0)',
+            opacity: 0,
+            animation: \`shootingStar \${duration}s ease-in infinite\`,
+            animationDelay: \`\${delay}s\`,
+          }} />
+        );
+      })}
+    </div>
+  );
+}
 
 function MartianDust() {
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1, overflow: 'hidden' }}>
-      {/* Viento general en la planicie */}
+      {/* Viento general en la planicie (bruma naranja) */}
       <div style={{
-        position: 'absolute', bottom: '0', left: '0', right: '0', height: '60%',
-        background: 'linear-gradient(90deg, transparent 0%, rgba(200, 50, 0, 0.1) 50%, transparent 100%)',
-        filter: 'blur(30px)',
-        animation: 'dustSweep 25s linear infinite'
+        position: 'absolute', bottom: '0', left: '0', right: '0', height: '50%',
+        background: 'linear-gradient(90deg, transparent 0%, rgba(255, 60, 0, 0.25) 50%, transparent 100%)',
+        filter: 'blur(40px)',
+        animation: 'dustSweep 20s linear infinite'
       }} />
       <div style={{
-        position: 'absolute', bottom: '10%', left: '0', right: '0', height: '40%',
-        background: 'linear-gradient(90deg, transparent 0%, rgba(255, 80, 0, 0.15) 50%, transparent 100%)',
-        filter: 'blur(20px)',
-        animation: 'dustSweep 18s linear infinite reverse',
-        animationDelay: '5s'
+        position: 'absolute', bottom: '15%', left: '0', right: '0', height: '30%',
+        background: 'linear-gradient(90deg, transparent 0%, rgba(255, 100, 20, 0.3) 50%, transparent 100%)',
+        filter: 'blur(30px)',
+        animation: 'dustSweep 15s linear infinite reverse',
+        animationDelay: '4s'
       }} />
       
-      {/* Torbellino (Dust Devil) marciano */}
+      {/* Torbellino (Dust Devil) marciano, muy visible */}
       <div style={{
-        position: 'absolute', bottom: '20%', left: '-10%', width: '150px', height: '300px',
-        background: 'radial-gradient(ellipse at center, rgba(180, 40, 0, 0.4) 0%, transparent 70%)',
-        filter: 'blur(15px)',
+        position: 'absolute', bottom: '15%', left: '-10%', width: '200px', height: '400px',
+        background: 'radial-gradient(ellipse at center, rgba(255, 80, 10, 0.6) 0%, transparent 60%)',
+        filter: 'blur(20px)',
         borderRadius: '50% 50% 0 0',
         transformOrigin: 'bottom center',
-        animation: 'dustDevil 15s ease-in-out infinite'
+        animation: 'dustDevil 12s ease-in-out infinite'
       }} />
     </div>
   );
@@ -107,6 +167,10 @@ export default function RobotsHub() {
         background: 'url(/assets/robots/robots_hub_bg.png) center center / cover' 
       }}>
         
+        {/* Cielo místico estrellado */}
+        <Stars />
+        <Comets />
+
         {/* Viento y polvo marciano */}
         <MartianDust />
 
