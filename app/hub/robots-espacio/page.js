@@ -12,6 +12,53 @@ import HubDecorations from '@/components/HubDecorations';
 
 import { COURSE_DATA } from '@/lib/courseData';
 
+const globalStyles = `
+  @keyframes dustSweep {
+    0% { transform: translateX(-100%) skewX(-15deg); opacity: 0; }
+    20% { opacity: 0.6; }
+    80% { opacity: 0.6; }
+    100% { transform: translateX(200vw) skewX(-15deg); opacity: 0; }
+  }
+  @keyframes dustDevil {
+    0% { transform: translateX(0) scaleX(1) scaleY(1); opacity: 0; }
+    20% { opacity: 0.8; }
+    50% { transform: translateX(30vw) scaleX(1.5) scaleY(1.2); opacity: 0.4; }
+    80% { opacity: 0.8; }
+    100% { transform: translateX(80vw) scaleX(0.8) scaleY(1.5); opacity: 0; }
+  }
+`;
+
+function MartianDust() {
+  return (
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1, overflow: 'hidden' }}>
+      {/* Viento general en la planicie */}
+      <div style={{
+        position: 'absolute', bottom: '0', left: '0', right: '0', height: '60%',
+        background: 'linear-gradient(90deg, transparent 0%, rgba(200, 50, 0, 0.1) 50%, transparent 100%)',
+        filter: 'blur(30px)',
+        animation: 'dustSweep 25s linear infinite'
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '10%', left: '0', right: '0', height: '40%',
+        background: 'linear-gradient(90deg, transparent 0%, rgba(255, 80, 0, 0.15) 50%, transparent 100%)',
+        filter: 'blur(20px)',
+        animation: 'dustSweep 18s linear infinite reverse',
+        animationDelay: '5s'
+      }} />
+      
+      {/* Torbellino (Dust Devil) marciano */}
+      <div style={{
+        position: 'absolute', bottom: '20%', left: '-10%', width: '150px', height: '300px',
+        background: 'radial-gradient(ellipse at center, rgba(180, 40, 0, 0.4) 0%, transparent 70%)',
+        filter: 'blur(15px)',
+        borderRadius: '50% 50% 0 0',
+        transformOrigin: 'bottom center',
+        animation: 'dustDevil 15s ease-in-out infinite'
+      }} />
+    </div>
+  );
+}
+
 export default function RobotsHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
@@ -46,6 +93,7 @@ export default function RobotsHub() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#0a0a1a' }}>
+      <style>{globalStyles}</style>
       
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 100 }}>
          <Link href="/dashboard" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none', background: 'rgba(0,0,0,0.5)', padding: '0.8rem 1.2rem', borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)' }}>
@@ -59,6 +107,9 @@ export default function RobotsHub() {
         background: 'url(/assets/robots/robots_hub_bg.png) center center / cover' 
       }}>
         
+        {/* Viento y polvo marciano */}
+        <MartianDust />
+
         {/* Overlay anaranjado marciano */}
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(to top, rgba(200, 60, 0, 0.4), transparent)', pointerEvents: 'none' }} />
 
