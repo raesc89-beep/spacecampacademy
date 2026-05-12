@@ -43,15 +43,15 @@ function Stars() {
       {Array.from({ length: 150 }).map((_, i) => (
         <div key={i} style={{
           position: 'absolute',
-          left: \`\${Math.random() * 100}%\`,
-          top: \`\${Math.random() * 60}%\`, // Cielo estrellado
-          width: \`\${Math.random() * 2 + 1}px\`,
-          height: \`\${Math.random() * 2 + 1}px\`,
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 60}%`, // Cielo estrellado
+          width: `${Math.random() * 2 + 1}px`,
+          height: `${Math.random() * 2 + 1}px`,
           borderRadius: '50%',
           background: 'white',
           opacity: Math.random() * 0.7 + 0.3,
-          animation: \`twinkle \${Math.random() * 4 + 2}s ease-in-out infinite\`,
-          animationDelay: \`\${Math.random() * 3}s\`,
+          animation: `twinkle ${Math.random() * 4 + 2}s ease-in-out infinite`,
+          animationDelay: `${Math.random() * 3}s`,
         }} />
       ))}
     </div>
@@ -70,17 +70,17 @@ function Comets() {
         return (
           <div key={i} style={{
             position: 'absolute',
-            left: \`\${left}%\`,
-            top: \`\${top}%\`,
-            width: \`\${width}px\`,
+            left: `${left}%`,
+            top: `${top}%`,
+            width: `${width}px`,
             height: '2px',
             background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,150,100,0.8) 20%, rgba(0,0,0,0) 100%)', // Tono cálido para Marte
             borderRadius: '50%',
             boxShadow: '0 0 10px rgba(255,200,150,0.8)',
             transform: 'rotate(15deg) scale(0)',
             opacity: 0,
-            animation: \`shootingStar \${duration}s ease-in infinite\`,
-            animationDelay: \`\${delay}s\`,
+            animation: `shootingStar ${duration}s ease-in infinite`,
+            animationDelay: `${delay}s`,
           }} />
         );
       })}
