@@ -60,8 +60,8 @@ function Comets() {
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 1 }}>
       {Array.from({ length: 5 }).map((_, i) => {
         const width = Math.random() * 80 + 60;
-        const top = Math.random() * -30;
-        const left = Math.random() * 100;
+        const top = Math.random() * 25; // Solo en el 25% superior de la pantalla (cielo)
+        const left = (Math.random() * 40) - 20; // Empiezan desde la izquierda o ligeramente fuera
         const duration = Math.random() * 5 + 4;
         const delay = Math.random() * 10;
         return (
@@ -74,7 +74,7 @@ function Comets() {
             background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(100,255,150,0.8) 20%, rgba(0,0,0,0) 100%)',
             borderRadius: '50%',
             boxShadow: '0 0 10px rgba(255,255,255,0.8)',
-            transform: 'rotate(-45deg) scale(0)',
+            transform: 'rotate(15deg) scale(0)',
             opacity: 0,
             animation: `shootingStar ${duration}s ease-in infinite`,
             animationDelay: `${delay}s`,
@@ -243,9 +243,9 @@ const globalStyles = `
   50% { opacity: 1; transform: scale(1.5); boxShadow: 0 0 8px rgba(255,255,255,0.8); }
 }
 @keyframes shootingStar {
-  0% { transform: rotate(-45deg) translateX(0) scale(1); opacity: 1; }
-  20% { transform: rotate(-45deg) translateX(-1500px) scale(0); opacity: 0; }
-  100% { transform: rotate(-45deg) translateX(-1500px) scale(0); opacity: 0; }
+  0% { transform: rotate(15deg) translateX(0) scale(1); opacity: 1; }
+  15% { transform: rotate(15deg) translateX(1500px) scale(0); opacity: 0; }
+  100% { transform: rotate(15deg) translateX(1500px) scale(0); opacity: 0; }
 }
 @keyframes floatUp {
   0% { opacity: 0; transform: translateY(20px); }
@@ -262,15 +262,16 @@ const globalStyles = `
 
 // ─── Antorchas Lejanas en Pirámides ────────────────────────────────────────
 function JungleTorches() {
-  // Posiciones dinámicas a lo largo del horizonte lejano (aprox top: 55%-65%)
+  // Posiciones calculadas para alinearse con los puntos de luz de la imagen real
   const torches = [
-    { left: '38%', top: '61%', size: 4, delay: 0.1 },
-    { left: '38.5%', top: '61.5%', size: 3, delay: 0.8 },
-    { left: '55%', top: '60%', size: 4.5, delay: 0.3 },
-    { left: '55.3%', top: '60.2%', size: 3.5, delay: 0.9 },
-    { left: '72%', top: '62%', size: 5, delay: 0.5 },
-    { left: '28%', top: '63%', size: 4, delay: 0.2 },
-    { left: '48%', top: '59%', size: 3, delay: 0.7 },
+    // Ruinas en primer plano (inferior izquierda)
+    { left: '26.5%', top: '86.5%', size: 5, delay: 0.1 },
+    // Luces lejanas en la jungla (izquierda)
+    { left: '18.5%', top: '64%', size: 3, delay: 0.4 },
+    { left: '41%', top: '63%', size: 3, delay: 0.7 },
+    // Bases de las pirámides (horizonte)
+    { left: '55.5%', top: '46.5%', size: 4, delay: 0.2 },
+    { left: '64.5%', top: '48.5%', size: 4, delay: 0.8 },
   ];
 
   return (
