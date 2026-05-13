@@ -9,82 +9,73 @@ import { motion, AnimatePresence } from 'framer-motion';
 const SW_MODULES = [
   {
     id: 'starwars_sec_1',
-    title: 'Módulo 1',
-    subtitle: 'Los Parsecs y el Corredor de Kessel',
+    title: 'Los Parsecs y el Corredor de Kessel',
     color: '#00CFFF',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_1',
     icon: '/assets/starwars/module_1.png',
     coords: { left: '12%', top: '20%' },
   },
   {
     id: 'starwars_sec_2',
-    title: 'Módulo 2',
-    subtitle: 'Tatooine, Hoth y Degobha',
+    title: 'Tatooine, Hoth y Degobha',
     color: '#FF8C00',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_2',
     icon: '/assets/starwars/module_2.png',
     coords: { left: '32%', top: '15%' },
   },
   {
     id: 'starwars_sec_3',
-    title: 'Módulo 3',
-    subtitle: 'C3PO y R2-D2, Biomecatrónica e IA',
+    title: 'C3PO y R2-D2, Biomecatrónica e IA',
     color: '#7B68EE',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_3',
     icon: '/assets/starwars/module_3.png',
     coords: { left: '52%', top: '22%' },
   },
   {
     id: 'starwars_sec_4',
-    title: 'Módulo 4',
-    subtitle: 'Entrelazamiento Cuántico',
+    title: 'Entrelazamiento Cuántico',
     color: '#FFE81F',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_4',
     icon: '/assets/starwars/module_4.png',
     coords: { left: '18%', top: '35%' },
   },
   {
     id: 'starwars_sec_5',
-    title: 'Módulo 5',
-    subtitle: 'Xenobiología y Fauna',
+    title: 'Xenobiología y Fauna',
     color: '#00FF88',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_5',
     icon: '/assets/starwars/module_5.png',
     coords: { left: '38%', top: '35%' },
   },
   {
     id: 'starwars_sec_6',
-    title: 'Módulo 6',
-    subtitle: 'Física de Plasmas',
+    title: 'Física de Plasmas',
     color: '#FF3333',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_6',
     icon: '/assets/starwars/module_6.png',
     coords: { left: '58%', top: '38%' },
   },
   {
     id: 'starwars_sec_7',
-    title: 'Módulo 7',
-    subtitle: 'El Código Jedi',
+    title: 'El Código Jedi',
     color: '#00FFCC',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_7',
     icon: '/assets/starwars/module_7.png',
     coords: { left: '25%', top: '50%' },
   },
   {
     id: 'starwars_sec_8',
-    title: 'Módulo 8',
-    subtitle: 'Cruceros Espaciales',
+    title: 'Cruceros Espaciales',
     color: '#A0A0A0',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_8',
     icon: '/assets/starwars/module_8.png',
     coords: { left: '45%', top: '52%' },
   },
   {
     id: 'starwars_sec_9',
-    title: 'Módulo 9',
-    subtitle: 'Traje de Darth Vader',
+    title: 'Traje de Darth Vader',
     color: '#FF0055',
-    link: '/course/ciencia_star_wars',
+    link: '/course/starwars_sec_9',
     icon: '/assets/starwars/module_9.png',
     coords: { left: '65%', top: '54%' },
   },
@@ -227,11 +218,8 @@ function SWModuleNode({ mod, idx, isCompleted }) {
             border: `1px solid ${hovered ? mod.color : mod.color + '44'}`,
             transition: 'all 0.3s ease',
           }}>
-            <div style={{ fontSize: 'clamp(0.55rem, 0.9vw, 0.75rem)', color: mod.color, fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase' }}>
+            <div style={{ fontSize: 'clamp(0.65rem, 1vw, 0.85rem)', color: mod.color, fontWeight: 700, letterSpacing: '1px' }}>
               {mod.title}
-            </div>
-            <div style={{ fontSize: 'clamp(0.5rem, 0.8vw, 0.7rem)', color: 'rgba(255,255,255,0.85)', fontWeight: 500, lineHeight: 1.2 }}>
-              {mod.subtitle}
             </div>
           </div>
         </motion.div>
@@ -258,10 +246,7 @@ function SWModuleNode({ mod, idx, isCompleted }) {
                 zIndex: 100,
               }}
             >
-              <h4 style={{ margin: 0, fontSize: '1rem', color: mod.color }}>⚡ {mod.subtitle}</h4>
-              <p style={{ margin: '0.3rem 0 0', fontSize: '0.82rem', color: 'rgba(255,255,255,0.75)' }}>
-                Iniciar Módulo →
-              </p>
+              <h4 style={{ margin: 0, fontSize: '1rem', color: mod.color }}>⚡ Iniciar Misión</h4>
             </motion.div>
           )}
         </AnimatePresence>
@@ -382,22 +367,32 @@ export default function StarWarsHub() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA - Progress Indicator */}
         <div style={{
-          position: 'absolute', bottom: '3rem', left: '50%', transform: 'translateX(-50%)',
-          zIndex: 200, textAlign: 'center',
+          position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)',
+          background: 'rgba(0,0,0,0.7)',
+          border: '1px solid rgba(255, 232, 31, 0.3)',
+          padding: '1rem 2.5rem',
+          borderRadius: '40px',
+          backdropFilter: 'blur(10px)',
+          zIndex: 200,
+          boxShadow: '0 0 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(255, 232, 31, 0.1)',
+          display: 'flex', alignItems: 'center', gap: '1.5rem',
         }}>
-          <Link href="/course/ciencia_star_wars" style={{
-            display: 'inline-flex', alignItems: 'center', gap: '0.8rem',
-            background: 'linear-gradient(135deg, #FFE81F, #FFA500)',
-            color: '#000', padding: '1rem 2.5rem',
-            borderRadius: '50px', fontWeight: 800, fontSize: '1.1rem',
-            textDecoration: 'none', letterSpacing: '1px',
-            boxShadow: '0 0 40px rgba(255,232,31,0.5)',
-            transition: 'all 0.3s ease',
+          <div style={{ color: 'white', fontFamily: 'var(--font-heading)', fontSize: '1.1rem' }}>
+            Misiones Completadas:
+          </div>
+          <div style={{
+            background: 'rgba(255,255,255,0.1)',
+            padding: '0.5rem 1.5rem',
+            borderRadius: '20px',
+            color: '#FFE81F',
+            fontWeight: 'bold',
+            fontSize: '1.2rem',
+            textShadow: '0 0 10px rgba(255, 232, 31, 0.5)'
           }}>
-            ⚡ Iniciar Misión Galáctica
-          </Link>
+            {completedIds.filter(id => id.startsWith('starwars_sec')).length} / {SW_MODULES.length}
+          </div>
         </div>
       </main>
 
