@@ -13,7 +13,7 @@ const SW_MODULES = [
     color: '#00CFFF',
     link: '/course/starwars_sec_1',
     icon: '/assets/starwars/module_1.png',
-    coords: { left: '12%', top: '20%' },
+    coords: { left: '10%', top: '25%' },
   },
   {
     id: 'starwars_sec_2',
@@ -21,7 +21,7 @@ const SW_MODULES = [
     color: '#FF8C00',
     link: '/course/starwars_sec_2',
     icon: '/assets/starwars/module_2.png',
-    coords: { left: '32%', top: '15%' },
+    coords: { left: '28%', top: '15%' },
   },
   {
     id: 'starwars_sec_3',
@@ -29,7 +29,7 @@ const SW_MODULES = [
     color: '#7B68EE',
     link: '/course/starwars_sec_3',
     icon: '/assets/starwars/module_3.png',
-    coords: { left: '52%', top: '22%' },
+    coords: { left: '46%', top: '25%' },
   },
   {
     id: 'starwars_sec_4',
@@ -37,7 +37,7 @@ const SW_MODULES = [
     color: '#FFE81F',
     link: '/course/starwars_sec_4',
     icon: '/assets/starwars/module_4.png',
-    coords: { left: '18%', top: '35%' },
+    coords: { left: '15%', top: '50%' },
   },
   {
     id: 'starwars_sec_5',
@@ -45,7 +45,7 @@ const SW_MODULES = [
     color: '#00FF88',
     link: '/course/starwars_sec_5',
     icon: '/assets/starwars/module_5.png',
-    coords: { left: '38%', top: '35%' },
+    coords: { left: '35%', top: '45%' },
   },
   {
     id: 'starwars_sec_6',
@@ -53,7 +53,7 @@ const SW_MODULES = [
     color: '#FF3333',
     link: '/course/starwars_sec_6',
     icon: '/assets/starwars/module_6.png',
-    coords: { left: '58%', top: '38%' },
+    coords: { left: '55%', top: '48%' },
   },
   {
     id: 'starwars_sec_7',
@@ -61,7 +61,7 @@ const SW_MODULES = [
     color: '#00FFCC',
     link: '/course/starwars_sec_7',
     icon: '/assets/starwars/module_7.png',
-    coords: { left: '25%', top: '50%' },
+    coords: { left: '22%', top: '75%' },
   },
   {
     id: 'starwars_sec_8',
@@ -69,7 +69,7 @@ const SW_MODULES = [
     color: '#A0A0A0',
     link: '/course/starwars_sec_8',
     icon: '/assets/starwars/module_8.png',
-    coords: { left: '45%', top: '52%' },
+    coords: { left: '42%', top: '72%' },
   },
   {
     id: 'starwars_sec_9',
@@ -77,7 +77,7 @@ const SW_MODULES = [
     color: '#FF0055',
     link: '/course/starwars_sec_9',
     icon: '/assets/starwars/module_9.png',
-    coords: { left: '65%', top: '54%' },
+    coords: { left: '62%', top: '75%' },
   },
 ];
 
@@ -159,8 +159,8 @@ function SWModuleNode({ mod, idx, isCompleted }) {
           {/* Circular image with blur vignette */}
           <div style={{
             position: 'relative',
-            width: 'clamp(80px, 8vw, 110px)',
-            height: 'clamp(80px, 8vw, 110px)',
+            width: 'clamp(100px, 12vw, 150px)',
+            height: 'clamp(100px, 12vw, 150px)',
             borderRadius: '50%',
             boxShadow: hovered
               ? `0 0 50px ${mod.color}cc, 0 0 20px ${mod.color}88, inset 0 0 20px ${mod.color}44`
@@ -337,33 +337,25 @@ export default function StarWarsHub() {
 
         {/* Constellation lines between modules */}
         <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 2, opacity: 0.3 }}>
-          <line x1="12%" y1="20%" x2="32%" y2="15%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="32%" y1="15%" x2="52%" y2="22%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          
-          <line x1="12%" y1="20%" x2="18%" y2="35%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="32%" y1="15%" x2="38%" y2="35%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="52%" y1="22%" x2="58%" y2="38%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          
-          <line x1="18%" y1="35%" x2="38%" y2="35%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="38%" y1="35%" x2="58%" y2="38%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          
-          <line x1="18%" y1="35%" x2="25%" y2="50%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="38%" y1="35%" x2="45%" y2="52%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="58%" y1="38%" x2="65%" y2="54%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          
-          <line x1="25%" y1="50%" x2="45%" y2="52%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="45%" y1="52%" x2="65%" y2="54%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          {SW_MODULES.map((mod, i) => {
+            if (i === SW_MODULES.length - 1) return null;
+            const nextMod = SW_MODULES[i + 1];
+            return (
+              <line key={i} x1={mod.coords.left} y1={mod.coords.top} x2={nextMod.coords.left} y2={nextMod.coords.top} stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+            );
+          })}
         </svg>
 
         {/* Module nodes */}
-        <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '100vh', margin: '0 auto' }}>
+        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 10 }}>
           {SW_MODULES.map((mod, idx) => (
-            <SWModuleNode
-              key={mod.id}
-              mod={mod}
-              idx={idx}
-              isCompleted={completedIds.includes(mod.id)}
-            />
+            <div key={mod.id} style={{ pointerEvents: 'auto' }}>
+              <SWModuleNode
+                mod={mod}
+                idx={idx}
+                isCompleted={completedIds.includes(mod.id)}
+              />
+            </div>
           ))}
         </div>
 

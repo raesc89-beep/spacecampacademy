@@ -14,7 +14,7 @@ const BTTF_MODULES = [
     color: '#00FFFF', // Cyan glow
     link: '/course/bttf_m1',
     icon: '/assets/bttf/bttf_m1.png',
-    coords: { left: '15%', top: '25%' },
+    coords: { left: '15%', top: '20%' },
   },
   {
     id: 'bttf_m2',
@@ -22,7 +22,7 @@ const BTTF_MODULES = [
     color: '#FF00FF', // Magenta glow
     link: '/course/bttf_m2',
     icon: '/assets/bttf/bttf_m2.png',
-    coords: { left: '35%', top: '15%' },
+    coords: { left: '40%', top: '15%' },
   },
   {
     id: 'bttf_m3',
@@ -30,7 +30,7 @@ const BTTF_MODULES = [
     color: '#FFA500', // Orange glow
     link: '/course/bttf_m3',
     icon: '/assets/bttf/bttf_m3.png',
-    coords: { left: '55%', top: '25%' },
+    coords: { left: '65%', top: '20%' },
   },
   {
     id: 'bttf_m4',
@@ -38,7 +38,7 @@ const BTTF_MODULES = [
     color: '#FFFF00', // Yellow lightning
     link: '/course/bttf_m4',
     icon: '/assets/bttf/bttf_m4.png',
-    coords: { left: '75%', top: '15%' },
+    coords: { left: '25%', top: '40%' },
   },
   {
     id: 'bttf_m5',
@@ -46,7 +46,7 @@ const BTTF_MODULES = [
     color: '#00FF00', // Green hoverboard
     link: '/course/bttf_m5',
     icon: '/assets/bttf/bttf_m5.png',
-    coords: { left: '25%', top: '50%' },
+    coords: { left: '50%', top: '35%' },
   },
   {
     id: 'bttf_m6',
@@ -54,7 +54,7 @@ const BTTF_MODULES = [
     color: '#FF4500', // Fire trails
     link: '/course/bttf_m6',
     icon: '/assets/bttf/bttf_m6.png',
-    coords: { left: '45%', top: '45%' },
+    coords: { left: '75%', top: '45%' },
   },
   {
     id: 'bttf_m7',
@@ -62,7 +62,7 @@ const BTTF_MODULES = [
     color: '#8A2BE2', // Neon purple
     link: '/course/bttf_m7',
     icon: '/assets/bttf/bttf_m7.png',
-    coords: { left: '65%', top: '55%' },
+    coords: { left: '35%', top: '60%' },
   },
 ];
 
@@ -115,6 +115,33 @@ function LightningEffect() {
   );
 }
 
+// ─── Componente de Humo Realista ──────────────────────────────────────────
+function SmokeEffect() {
+  return (
+    <div style={{
+      position: 'absolute',
+      bottom: '-10%', left: '-5%', width: '50%', height: '40%',
+      pointerEvents: 'none',
+      zIndex: 2,
+      opacity: 0.6,
+      mixBlendMode: 'screen',
+    }}>
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: 'radial-gradient(ellipse at bottom left, rgba(200, 220, 255, 0.3) 0%, rgba(150, 180, 220, 0.1) 40%, transparent 70%)',
+        filter: 'blur(40px)',
+        animation: 'smokeDrift 12s infinite alternate ease-in-out',
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '0', left: '10%', width: '80%', height: '100%',
+        background: 'radial-gradient(ellipse at bottom center, rgba(200, 220, 255, 0.25) 0%, rgba(100, 140, 200, 0.05) 50%, transparent 70%)',
+        filter: 'blur(50px)',
+        animation: 'smokeDrift2 18s infinite alternate ease-in-out',
+      }} />
+    </div>
+  );
+}
+
 // ─── Estilos Globales para animaciones ─────────────────────────────────────
 const globalStyles = `
 @keyframes lightningFlash {
@@ -125,6 +152,16 @@ const globalStyles = `
   94% { opacity: 0; }
   95% { opacity: 0.6; }
   96%, 100% { opacity: 0; }
+}
+@keyframes smokeDrift {
+  0% { transform: scale(1) translate(0, 0) rotate(0deg); opacity: 0.5; }
+  50% { transform: scale(1.15) translate(5%, -5%) rotate(3deg); opacity: 0.8; }
+  100% { transform: scale(1.05) translate(10%, -2%) rotate(-2deg); opacity: 0.4; }
+}
+@keyframes smokeDrift2 {
+  0% { transform: scale(1) translate(0, 0); opacity: 0.4; }
+  50% { transform: scale(1.2) translate(-5%, -8%); opacity: 0.7; }
+  100% { transform: scale(1.1) translate(-2%, -3%); opacity: 0.5; }
 }
 @keyframes floatUp {
   0% { opacity: 0; transform: translateY(20px); }
@@ -161,8 +198,8 @@ function BTTFModuleNode({ mod, idx, isCompleted, isPlayable }) {
           {/* Avatar / Icono */}
           <div style={{
             position: 'relative',
-            width: 'clamp(70px, 7vw, 100px)',
-            height: 'clamp(70px, 7vw, 100px)',
+            width: 'clamp(100px, 12vw, 150px)',
+            height: 'clamp(100px, 12vw, 150px)',
             borderRadius: '50%',
             boxShadow: hovered 
                ? `0 0 40px ${mod.color}ff, inset 0 0 20px ${mod.color}aa` 
@@ -319,6 +356,9 @@ export default function BTTFHub() {
 
         {/* Efecto de Trueno Ligero en las Nubes */}
         <LightningEffect />
+        
+        {/* Efecto de Humo en la calle (esquina inferior izquierda) */}
+        <SmokeEffect />
 
         {/* Constelaciones */}
         <ConstellationLines />
