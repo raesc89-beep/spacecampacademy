@@ -305,7 +305,7 @@ export default function BTTFHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        backgroundImage: "url('/assets/bttf/bttf_bg.png')",
+        backgroundImage: "url('/assets/bttf/bttf_bg_v2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
