@@ -10,47 +10,83 @@ const SW_MODULES = [
   {
     id: 'starwars_sec_1',
     title: 'Módulo 1',
-    subtitle: 'Métrica de Alcubierre',
+    subtitle: 'Los Parsecs y el Corredor de Kessel',
     color: '#00CFFF',
     link: '/course/ciencia_star_wars',
     icon: '/assets/starwars/module_1.png',
-    coords: { left: '12%', top: '28%' },
+    coords: { left: '12%', top: '20%' },
   },
   {
     id: 'starwars_sec_2',
     title: 'Módulo 2',
-    subtitle: 'Sistemas Binarios',
+    subtitle: 'Tatooine, Hoth y Degobha',
     color: '#FF8C00',
     link: '/course/ciencia_star_wars',
     icon: '/assets/starwars/module_2.png',
-    coords: { left: '32%', top: '20%' },
+    coords: { left: '32%', top: '15%' },
   },
   {
     id: 'starwars_sec_3',
     title: 'Módulo 3',
-    subtitle: 'Biomecatrónica',
+    subtitle: 'C3PO y R2-D2, Biomecatrónica e IA',
     color: '#7B68EE',
     link: '/course/ciencia_star_wars',
     icon: '/assets/starwars/module_3.png',
-    coords: { left: '52%', top: '25%' },
+    coords: { left: '52%', top: '22%' },
   },
   {
     id: 'starwars_sec_4',
     title: 'Módulo 4',
-    subtitle: 'La Fuerza Cuántica',
+    subtitle: 'Entrelazamiento Cuántico',
     color: '#FFE81F',
     link: '/course/ciencia_star_wars',
     icon: '/assets/starwars/module_4.png',
-    coords: { left: '72%', top: '20%' },
+    coords: { left: '18%', top: '35%' },
   },
   {
     id: 'starwars_sec_5',
     title: 'Módulo 5',
-    subtitle: 'Xenobiología Galáctica',
+    subtitle: 'Xenobiología y Fauna',
     color: '#00FF88',
     link: '/course/ciencia_star_wars',
     icon: '/assets/starwars/module_5.png',
-    coords: { left: '88%', top: '30%' },
+    coords: { left: '38%', top: '35%' },
+  },
+  {
+    id: 'starwars_sec_6',
+    title: 'Módulo 6',
+    subtitle: 'Física de Plasmas',
+    color: '#FF3333',
+    link: '/course/ciencia_star_wars',
+    icon: '/assets/starwars/module_6.png',
+    coords: { left: '58%', top: '38%' },
+  },
+  {
+    id: 'starwars_sec_7',
+    title: 'Módulo 7',
+    subtitle: 'El Código Jedi',
+    color: '#00FFCC',
+    link: '/course/ciencia_star_wars',
+    icon: '/assets/starwars/module_7.png',
+    coords: { left: '25%', top: '50%' },
+  },
+  {
+    id: 'starwars_sec_8',
+    title: 'Módulo 8',
+    subtitle: 'Cruceros Espaciales',
+    color: '#A0A0A0',
+    link: '/course/ciencia_star_wars',
+    icon: '/assets/starwars/module_8.png',
+    coords: { left: '45%', top: '52%' },
+  },
+  {
+    id: 'starwars_sec_9',
+    title: 'Módulo 9',
+    subtitle: 'Traje de Darth Vader',
+    color: '#FF0055',
+    link: '/course/ciencia_star_wars',
+    icon: '/assets/starwars/module_9.png',
+    coords: { left: '65%', top: '54%' },
   },
 ];
 
@@ -285,7 +321,7 @@ export default function StarWarsHub() {
           La Ciencia de Star Wars
         </h1>
         <p style={{ margin: '0.2rem 0 0', color: 'rgba(255,232,31,0.7)', fontSize: 'clamp(0.6rem, 1.2vw, 0.82rem)', letterSpacing: '2px' }}>
-          Astrofísica · Biomecatrónica · Cuántica · 5 Módulos
+          Astrofísica · Biomecatrónica · Cuántica · 9 Módulos
         </p>
       </div>
 
@@ -316,10 +352,22 @@ export default function StarWarsHub() {
 
         {/* Constellation lines between modules */}
         <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 2, opacity: 0.3 }}>
-          <line x1="12%" y1="28%" x2="32%" y2="20%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="32%" y1="20%" x2="52%" y2="25%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="52%" y1="25%" x2="72%" y2="20%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-          <line x1="72%" y1="20%" x2="88%" y2="30%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="12%" y1="20%" x2="32%" y2="15%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="32%" y1="15%" x2="52%" y2="22%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          
+          <line x1="12%" y1="20%" x2="18%" y2="35%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="32%" y1="15%" x2="38%" y2="35%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="52%" y1="22%" x2="58%" y2="38%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          
+          <line x1="18%" y1="35%" x2="38%" y2="35%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="38%" y1="35%" x2="58%" y2="38%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          
+          <line x1="18%" y1="35%" x2="25%" y2="50%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="38%" y1="35%" x2="45%" y2="52%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="58%" y1="38%" x2="65%" y2="54%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          
+          <line x1="25%" y1="50%" x2="45%" y2="52%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
+          <line x1="45%" y1="52%" x2="65%" y2="54%" stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
         </svg>
 
         {/* Module nodes */}
