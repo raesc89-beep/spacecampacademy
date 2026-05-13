@@ -313,7 +313,7 @@ export default function StarWarsHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        backgroundImage: "url('/assets/starwars/star_wars_cover.png')",
+        backgroundImage: "url('/assets/starwars/star_wars_bg_v2.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',

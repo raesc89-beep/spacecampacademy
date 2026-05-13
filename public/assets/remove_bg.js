@@ -2,14 +2,10 @@ const fs = require('fs');
 const Jimp = require('jimp');
 
 const files = [
-  'alien_ship_vector.png',
-  'heavy_cruiser_vector.png',
-  'shuttle_vector.png',
-  'ufo_vector.png',
-  'media__1776117446635.png', // Logo Space Camp (from previous)
-  'media__1776121655381.png', // Blue planet
-  'media__1776121774341.png', // Orange planet
-  'media__1776121801014.png'  // Pink planet
+  'rovers/ai_historia.png',
+  'rovers/ai_futuras.png',
+  'rovers/ai_spirit.png',
+  'rovers/ai_opportunity.png'
 ];
 
 async function removeWhiteBackgrounds() {

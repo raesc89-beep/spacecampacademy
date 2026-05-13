@@ -25,7 +25,7 @@ const DASHBOARD_MISSIONS = [
     id: "ciencia_volver_al_futuro",
     title: "La Ciencia de Volver al Futuro",
     subtitle: "Cronodinámica, gravitación y energía de fusión a través del DeLorean.",
-    link: "/course/ciencia_volver_al_futuro",
+    link: "/hub/bttf",
     bgSrc: "/assets/bttf/bttf_cover.png",
     badgeColor: "#FF4500",
     badgeText: "Física Cuántica",
