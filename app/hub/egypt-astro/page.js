@@ -63,15 +63,15 @@ function NileRiver() {
       pointerEvents: 'none', zIndex: 1,
       // Usamos un gradiente lineal horizontal para limitar el efecto estrictamente a la banda de agua
       // y evitar que afecte la arena en la parte inferior o el cielo en la superior.
-      WebkitMaskImage: 'linear-gradient(to bottom, transparent 30%, black 42%, black 58%, transparent 65%)',
-      maskImage: 'linear-gradient(to bottom, transparent 30%, black 42%, black 58%, transparent 65%)'
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 50%, black 55%, black 68%, transparent 72%)',
+      maskImage: 'linear-gradient(to bottom, transparent 50%, black 55%, black 68%, transparent 72%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion">
           <feTurbulence type="fractalNoise" baseFrequency="0.01 0.05" numOctaves="2" result="noise">
             <animate attributeName="baseFrequency" values="0.01 0.05; 0.015 0.07; 0.01 0.05" dur="15s" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </svg>
       {/* Duplicamos la imagen de fondo exactamente igual, pero le aplicamos la distorsión del agua */}
@@ -79,10 +79,9 @@ function NileRiver() {
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/assets/egypt/hub_background.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         filter: 'url(#water-distortion)',
-        transform: 'scale(1.02)' // Pequeño scale para evitar bordes duros de la distorsión
       }}></div>
     </div>
   );

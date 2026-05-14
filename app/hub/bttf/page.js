@@ -109,14 +109,14 @@ function LightningEffect() {
       }} />
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 5, filter: 'drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff)' }}>
          <path 
-           d="M 22 0 L 25 10 L 18 15 L 20 25 L 15 35 L 22 45 L 12 55 L 25 65 L 10 75 L 30 85" 
+           d="M 43 0 L 46 65 L 75 78" 
            fill="none" stroke="#ffffff" strokeWidth="0.8" vectorEffect="non-scaling-stroke"
            strokeLinecap="round" strokeLinejoin="round"
            style={{ opacity: 0.8 }}
          />
          <path 
-           d="M 22 0 L 25 10 L 18 15 L 20 25 L 15 35 L 22 45 L 12 55 L 25 65 L 10 75 L 30 85" 
-           fill="none" stroke="#00ffff" strokeWidth="2.5" vectorEffect="non-scaling-stroke"
+           d="M 43 0 L 46 65 L 75 78" 
+           fill="none" stroke="#00ffff" strokeWidth="3" vectorEffect="non-scaling-stroke"
            strokeLinecap="round" strokeLinejoin="round"
            style={{
              strokeDasharray: '15, 80',
