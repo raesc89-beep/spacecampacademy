@@ -314,8 +314,9 @@ export default function StarWarsHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundImage: "url('/assets/starwars/star_wars_bg_v5.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center center',
+        backgroundColor: '#000000',
         backgroundRepeat: 'no-repeat',
       }}>
         {/* Dark overlay gradient */}

@@ -120,11 +120,13 @@ function SmokeEffect() {
   return (
     <div style={{
       position: 'absolute',
-      bottom: '-5%', left: '-5%', width: '60%', height: '50%',
+      bottom: '-10%', left: '-15%', width: '50%', height: '50%',
       pointerEvents: 'none',
       zIndex: 2,
-      opacity: 0.8,
-      mixBlendMode: 'screen', // Screen blend mode drops the black background
+      opacity: 0.85,
+      mixBlendMode: 'screen',
+      WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
+      maskImage: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
     }}>
       <img 
         src="/assets/bttf/smoke_effect.png" 
@@ -133,8 +135,8 @@ function SmokeEffect() {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          filter: 'blur(4px) contrast(1.2)',
-          animation: 'smokeDrift 12s infinite alternate ease-in-out',
+          filter: 'blur(6px) contrast(1.1)',
+          animation: 'smokeDrift 10s infinite alternate ease-in-out',
         }}
       />
     </div>
