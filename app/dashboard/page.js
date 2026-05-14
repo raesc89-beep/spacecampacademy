@@ -36,7 +36,7 @@ const DASHBOARD_MISSIONS = [
     title: "La Ciencia de Star Wars",
     subtitle: "Astrofísica, biomecatrónica y evolución cuántica aplicada al universo galáctico.",
     link: "/hub/star-wars",
-    bgSrc: "/assets/starwars/star_wars_bg_v4.png",
+    bgSrc: "/assets/starwars/star_wars_bg_v5.jpg",
     badgeColor: "#FFE81F",
     badgeText: "Astrofísica Teórica",
     borderColor: "rgba(255, 232, 31, 0.4)"
