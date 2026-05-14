@@ -14,7 +14,7 @@ const SW_MODULES = [
     color: '#00CFFF',
     link: '/course/starwars_sec_1',
     icon: '/assets/starwars/module_1.png',
-    coords: { left: '15%', top: '65%' },
+    coords: { left: '10%', top: '35%' },
   },
   {
     id: 'starwars_sec_2',
@@ -22,7 +22,7 @@ const SW_MODULES = [
     color: '#FF8C00',
     link: '/course/starwars_sec_2',
     icon: '/assets/starwars/module_2.png',
-    coords: { left: '18%', top: '45%' },
+    coords: { left: '12%', top: '55%' },
   },
   {
     id: 'starwars_sec_3',
@@ -30,7 +30,7 @@ const SW_MODULES = [
     color: '#7B68EE',
     link: '/course/starwars_sec_3',
     icon: '/assets/starwars/module_3.png',
-    coords: { left: '28%', top: '25%' },
+    coords: { left: '18%', top: '75%' },
   },
   {
     id: 'starwars_sec_4',
@@ -38,7 +38,7 @@ const SW_MODULES = [
     color: '#FFE81F',
     link: '/course/starwars_sec_4',
     icon: '/assets/starwars/module_4.png',
-    coords: { left: '40%', top: '12%' },
+    coords: { left: '30%', top: '85%' },
   },
   {
     id: 'starwars_sec_5',
@@ -46,7 +46,7 @@ const SW_MODULES = [
     color: '#00FF88',
     link: '/course/starwars_sec_5',
     icon: '/assets/starwars/module_5.png',
-    coords: { left: '50%', top: '8%' },
+    coords: { left: '50%', top: '88%' },
   },
   {
     id: 'starwars_sec_6',
@@ -54,7 +54,7 @@ const SW_MODULES = [
     color: '#FF3333',
     link: '/course/starwars_sec_6',
     icon: '/assets/starwars/module_6.png',
-    coords: { left: '60%', top: '12%' },
+    coords: { left: '70%', top: '85%' },
   },
   {
     id: 'starwars_sec_7',
@@ -62,7 +62,7 @@ const SW_MODULES = [
     color: '#00FFCC',
     link: '/course/starwars_sec_7',
     icon: '/assets/starwars/module_7.png',
-    coords: { left: '72%', top: '25%' },
+    coords: { left: '82%', top: '75%' },
   },
   {
     id: 'starwars_sec_8',
@@ -70,7 +70,7 @@ const SW_MODULES = [
     color: '#A0A0A0',
     link: '/course/starwars_sec_8',
     icon: '/assets/starwars/module_8.png',
-    coords: { left: '82%', top: '45%' },
+    coords: { left: '88%', top: '55%' },
   },
   {
     id: 'starwars_sec_9',
@@ -78,7 +78,7 @@ const SW_MODULES = [
     color: '#FF0055',
     link: '/course/starwars_sec_9',
     icon: '/assets/starwars/module_9.png',
-    coords: { left: '85%', top: '65%' },
+    coords: { left: '90%', top: '35%' },
   },
 ];
 
@@ -120,13 +120,13 @@ function Stars() {
 function StarshipsAnim() {
   return (
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 5 }}>
-      {/* Nave 1: Snowspeeder (Independiente, con su propio ciclo y delay) */}
+      {/* Nave 1: Snowspeeder (Independiente, de derecha a izquierda) */}
       <motion.img 
         src="/assets/starwars/ship1.png" 
         alt="Snowspeeder"
-        animate={{ x: ['-20vw', '120vw'], y: ['60vh', '40vh', '50vh', '20vh'], rotate: [5, -5, 5, -10] }}
+        animate={{ x: ['120vw', '-20vw'], y: ['60vh', '40vh', '50vh', '20vh'], rotate: [5, -5, 5, -10], rotateY: 180 }}
         transition={{ repeat: Infinity, duration: 35, repeatDelay: 25, ease: "linear" }}
-        style={{ position: 'absolute', top: 0, left: 0, width: '120px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))' }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '100px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))' }}
       />
       {/* Nave 2: X-Wing (Persecución: el X-Wing huye) */}
       <motion.img 

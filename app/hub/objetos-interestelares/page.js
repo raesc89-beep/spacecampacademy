@@ -95,10 +95,10 @@ export default function ObjetosInterestelaresHub() {
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%)', zIndex: 1 }} />
         
-        {/* Galaxia Giratoria Difuminada en el Centro */}
+        {/* Galaxia Giratoria en el Centro */}
         <div style={{
             position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            width: '80vw', height: '80vw', maxWidth: '1000px', maxHeight: '1000px',
+            width: '55vw', height: '55vw', maxWidth: '800px', maxHeight: '800px',
             pointerEvents: 'none', zIndex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center',
         }}>
           <motion.img
@@ -108,8 +108,8 @@ export default function ObjetosInterestelaresHub() {
             transition={{ repeat: Infinity, duration: 150, ease: "linear" }}
             style={{
               width: '100%', height: '100%', objectFit: 'contain',
-              mixBlendMode: 'screen', opacity: 0.75,
-              filter: 'blur(6px) contrast(1.2) brightness(1.3)',
+              mixBlendMode: 'screen', opacity: 0.85,
+              filter: 'contrast(1.1) brightness(1.1)',
             }}
           />
         </div>

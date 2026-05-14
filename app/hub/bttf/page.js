@@ -113,16 +113,17 @@ function LightningEffect() {
         mixBlendMode: 'screen',
         animation: 'lightningFlash 8s infinite',
       }} />
-      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 1, filter: 'drop-shadow(0 0 8px rgba(100, 255, 255, 1))' }}>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 5, filter: 'drop-shadow(0 0 6px #00ffff) drop-shadow(0 0 12px #00ffff)' }}>
          <path 
            d="M 85 0 L 80 15 L 77 15 L 65 30 L 70 33 L 60 45 L 62 48 L 50 60 L 52 65 L 40 75 L 35 80 L 25 80" 
            fill="none" 
-           stroke="#ccffff" 
-           strokeWidth="1.5" 
+           stroke="#ffffff" 
+           strokeWidth="0.5" 
+           vectorEffect="non-scaling-stroke"
            strokeLinecap="round"
            style={{
-             strokeDasharray: '5, 250',
-             animation: 'cablePulse 2.5s linear infinite'
+             strokeDasharray: '4, 40',
+             animation: 'cablePulse 1.2s linear infinite'
            }}
          />
       </svg>
