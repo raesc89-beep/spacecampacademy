@@ -100,18 +100,33 @@ function ConstellationLines() {
 // ─── Componente del Relámpago (Iluminación de Nubes) ──────────────────────
 function LightningEffect() {
   return (
-    <div style={{
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '60%', // Solo cubre la mitad superior donde están las nubes
-      background: 'radial-gradient(circle at 40% 10%, rgba(150, 200, 255, 0.4) 0%, rgba(150, 200, 255, 0) 60%)',
-      pointerEvents: 'none',
-      zIndex: 1,
-      mixBlendMode: 'screen',
-      animation: 'lightningFlash 8s infinite',
-    }} />
+    <>
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: 'radial-gradient(ellipse at 35% 15%, rgba(150, 220, 255, 0.25) 0%, rgba(150, 220, 255, 0) 65%)',
+        pointerEvents: 'none',
+        zIndex: 1,
+        mixBlendMode: 'screen',
+        animation: 'lightningFlash 8s infinite',
+      }} />
+      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 1, filter: 'drop-shadow(0 0 8px rgba(100, 255, 255, 1))' }}>
+         <path 
+           d="M 85 0 L 80 15 L 77 15 L 65 30 L 70 33 L 60 45 L 62 48 L 50 60 L 52 65 L 40 75 L 35 80 L 25 80" 
+           fill="none" 
+           stroke="#ccffff" 
+           strokeWidth="1.5" 
+           strokeLinecap="round"
+           style={{
+             strokeDasharray: '5, 250',
+             animation: 'cablePulse 2.5s linear infinite'
+           }}
+         />
+      </svg>
+    </>
   );
 }
 
@@ -167,6 +182,12 @@ const globalStyles = `
 @keyframes floatUp {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes cablePulse {
+  0% { stroke-dashoffset: 255; opacity: 0.2; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0.2; }
 }
 `;
 

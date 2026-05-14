@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import HubDecorations from '@/components/HubDecorations';
 
 const SW_MODULES = [
   {
@@ -313,8 +314,8 @@ export default function StarWarsHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        backgroundImage: "url('/assets/starwars/star_wars_bg_v5.jpg')",
-        backgroundSize: 'contain',
+        backgroundImage: "url('/assets/starwars/starwarshub.jpg')",
+        backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundColor: '#000000',
         backgroundRepeat: 'no-repeat',
@@ -331,6 +332,9 @@ export default function StarWarsHub() {
           background: 'radial-gradient(ellipse at center, transparent 35%, rgba(2,3,8,0.5) 80%, rgba(2,3,8,0.8) 100%)',
           pointerEvents: 'none', zIndex: 0,
         }} />
+
+        {/* Ambient floating dust particles (Arqueoastronomia style) */}
+        <HubDecorations />
 
         {/* Twinkling stars blended with background */}
         <Stars />
