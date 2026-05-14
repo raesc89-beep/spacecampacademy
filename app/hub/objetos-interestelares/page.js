@@ -91,10 +91,29 @@ export default function ObjetosInterestelaresHub() {
       <main style={{ 
         flex: 1, position: 'relative', width: '100vw', height: '100vh', 
         display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', 
-        background: 'url(https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2560&auto=format&fit=crop) center center / cover' 
+        background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' 
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%)', zIndex: 1 }} />
         
+        {/* Galaxia Giratoria Difuminada en el Centro */}
+        <div style={{
+            position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+            width: '80vw', height: '80vw', maxWidth: '1000px', maxHeight: '1000px',
+            pointerEvents: 'none', zIndex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center',
+        }}>
+          <motion.img
+            src="/assets/interestelar/galaxy_spin.png"
+            alt="Spinning Galaxy"
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 150, ease: "linear" }}
+            style={{
+              width: '100%', height: '100%', objectFit: 'contain',
+              mixBlendMode: 'screen', opacity: 0.75,
+              filter: 'blur(6px) contrast(1.2) brightness(1.3)',
+            }}
+          />
+        </div>
+
         <HubDecorations />
 
         {/* Contenedor del Mapa 16:9 Máximo */}
