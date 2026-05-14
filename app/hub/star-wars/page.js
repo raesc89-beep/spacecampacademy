@@ -84,15 +84,15 @@ const SW_MODULES = [
 
 // ─── Stars Component ─────────────────────────────────────────────────────────
 function Stars() {
-  const stars = Array.from({ length: 180 }, (_, i) => ({
+  const stars = Array.from({ length: 250 }, (_, i) => ({
     id: i,
     left: Math.random() * 100,
-    top: Math.random() * 70,
-    size: Math.random() * 2.5 + 0.5,
-    opacity: Math.random() * 0.8 + 0.2,
-    duration: Math.random() * 5 + 2,
+    top: Math.random() * 80,
+    size: Math.random() * 3 + 1,
+    opacity: Math.random() * 0.9 + 0.1,
+    duration: Math.random() * 4 + 1.5,
     delay: Math.random() * 4,
-    color: Math.random() > 0.8 ? '#88ccff' : 'white',
+    color: Math.random() > 0.8 ? '#88ccff' : (Math.random() > 0.9 ? '#ffcc88' : 'white'),
   }));
 
   return (
@@ -107,11 +107,43 @@ function Stars() {
           borderRadius: '50%',
           background: s.color,
           opacity: s.opacity,
-          animation: `twinkle ${s.duration}s ease-in-out infinite`,
+          animation: `twinkle ${s.duration}s ease-in-out infinite alternate`,
           animationDelay: `${s.delay}s`,
-          boxShadow: s.size > 1.8 ? `0 0 ${s.size * 3}px ${s.color}` : 'none',
+          boxShadow: `0 0 ${s.size * 4}px ${s.color}, 0 0 ${s.size * 8}px ${s.color}`,
         }} />
       ))}
+    </div>
+  );
+}
+
+// ─── Starships Animation Component ─────────────────────────────────────────
+function StarshipsAnim() {
+  return (
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 5 }}>
+      {/* Nave 1: Snowspeeder (Vuela de izq a der, nivel medio) */}
+      <motion.img 
+        src="/assets/starwars/ship1.png" 
+        alt="Snowspeeder"
+        animate={{ x: ['-20vw', '120vw'], y: ['60vh', '40vh', '50vh', '20vh'], rotate: [5, -5, 5, -10] }}
+        transition={{ repeat: Infinity, duration: 35, ease: "linear" }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '120px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))' }}
+      />
+      {/* Nave 2: X-Wing (Vuela de izq a der, rápido y subiendo) */}
+      <motion.img 
+        src="/assets/starwars/ship2.png" 
+        alt="X-Wing"
+        animate={{ x: ['-30vw', '130vw'], y: ['70vh', '10vh'], rotate: [-10, -25] }}
+        transition={{ repeat: Infinity, duration: 25, ease: "linear", delay: 8 }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '160px', filter: 'drop-shadow(0 0 15px rgba(0,255,255,0.4))' }}
+      />
+      {/* Nave 3: TIE Fighter (Vuela de izq a der, persiguiendo al X-wing) */}
+      <motion.img 
+        src="/assets/starwars/ship3.png" 
+        alt="TIE Fighter"
+        animate={{ x: ['-20vw', '120vw'], y: ['75vh', '15vh'], rotate: [-5, -15] }}
+        transition={{ repeat: Infinity, duration: 24, ease: "linear", delay: 10 }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '90px', filter: 'drop-shadow(0 0 10px rgba(255,50,50,0.6))' }}
+      />
     </div>
   );
 }
@@ -314,7 +346,7 @@ export default function StarWarsHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        backgroundImage: "url('/assets/starwars/starwarshub.jpg')",
+        backgroundImage: "url('/assets/starwars/starwarshub_enhanced.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundColor: '#000000',
@@ -339,6 +371,7 @@ export default function StarWarsHub() {
         {/* Twinkling stars blended with background */}
         <Stars />
         <LaserBeams />
+        <StarshipsAnim />
 
         {/* Constellation lines between modules */}
         <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 2, opacity: 0.3 }}>
