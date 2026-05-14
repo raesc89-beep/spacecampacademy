@@ -61,20 +61,19 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 1,
-      // Usamos un gradiente lineal horizontal para limitar el efecto estrictamente a la banda de agua
-      // y evitar que afecte la arena en la parte inferior o el cielo en la superior.
-      WebkitMaskImage: 'linear-gradient(to bottom, transparent 50%, black 55%, black 68%, transparent 72%)',
-      maskImage: 'linear-gradient(to bottom, transparent 50%, black 55%, black 68%, transparent 72%)'
+      // Máscara precisa alineada con el cauce del Nilo en la imagen (~43%-63% altura)
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 40%, black 45%, black 63%, transparent 68%)',
+      maskImage: 'linear-gradient(to bottom, transparent 40%, black 45%, black 63%, transparent 68%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion">
-          <feTurbulence type="fractalNoise" baseFrequency="0.01 0.05" numOctaves="2" result="noise">
-            <animate attributeName="baseFrequency" values="0.01 0.05; 0.015 0.07; 0.01 0.05" dur="15s" repeatCount="indefinite" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.015 0.04" numOctaves="3" result="noise">
+            <animate attributeName="baseFrequency" values="0.015 0.04; 0.02 0.06; 0.015 0.04" dur="12s" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </svg>
-      {/* Duplicamos la imagen de fondo exactamente igual, pero le aplicamos la distorsión del agua */}
+      {/* Capa duplicada del fondo con filtro de agua, alineada exactamente igual que el fondo principal */}
       <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/assets/egypt/hub_background.png)',

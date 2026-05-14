@@ -95,10 +95,21 @@ export default function ObjetosInterestelaresHub() {
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%)', zIndex: 1 }} />
         
+        {/* Nebulosa y polvo estelar alrededor de la galaxia */}
+        <div style={{
+            position: 'absolute', top: '50%', left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '70vw', height: '70vw', maxWidth: '1000px', maxHeight: '1000px',
+            pointerEvents: 'none', zIndex: 1,
+            background: 'radial-gradient(ellipse at 45% 55%, rgba(180,100,255,0.12) 0%, rgba(60,0,120,0.08) 35%, transparent 65%), radial-gradient(ellipse at 60% 40%, rgba(0,180,255,0.10) 0%, rgba(0,60,180,0.06) 30%, transparent 60%)',
+            mixBlendMode: 'screen',
+            animation: 'nebulaPulse 12s ease-in-out infinite',
+        }} />
+
         {/* Galaxia Giratoria en el Centro */}
         <div style={{
             position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            width: '55vw', height: '55vw', maxWidth: '800px', maxHeight: '800px',
+            width: '44vw', height: '44vw', maxWidth: '640px', maxHeight: '640px',
             pointerEvents: 'none', zIndex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center',
         }}>
           <motion.img
@@ -187,6 +198,12 @@ export default function ObjetosInterestelaresHub() {
         </div>
 
       </main>
+      <style>{`
+        @keyframes nebulaPulse {
+          0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+          50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+        }
+      `}</style>
     </div>
   );
 }

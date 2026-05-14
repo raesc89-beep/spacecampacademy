@@ -108,18 +108,19 @@ function LightningEffect() {
         animation: 'lightningFlash 8s infinite',
       }} />
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 5, filter: 'drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff)' }}>
+         {/* Cable estático de fondo - trazo base blanco tenue */}
          <path 
-           d="M 43 0 L 46 65 L 75 78" 
-           fill="none" stroke="#ffffff" strokeWidth="0.8" vectorEffect="non-scaling-stroke"
+           d="M 37 0 L 37 72 L 68 78" 
+           fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.2" vectorEffect="non-scaling-stroke"
            strokeLinecap="round" strokeLinejoin="round"
-           style={{ opacity: 0.8 }}
          />
+         {/* Pulso de electricidad animado en cian sobre el mismo cable */}
          <path 
-           d="M 43 0 L 46 65 L 75 78" 
+           d="M 37 0 L 37 72 L 68 78" 
            fill="none" stroke="#00ffff" strokeWidth="3" vectorEffect="non-scaling-stroke"
            strokeLinecap="round" strokeLinejoin="round"
            style={{
-             strokeDasharray: '15, 80',
+             strokeDasharray: '8, 120',
              animation: 'cablePulse 1s linear infinite'
            }}
          />
