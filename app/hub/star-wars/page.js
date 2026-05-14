@@ -120,29 +120,49 @@ function Stars() {
 function StarshipsAnim() {
   return (
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 5 }}>
-      {/* Nave 1: Snowspeeder (Vuela de izq a der, nivel medio) */}
+      {/* Nave 1: Snowspeeder (Independiente, con su propio ciclo y delay) */}
       <motion.img 
         src="/assets/starwars/ship1.png" 
         alt="Snowspeeder"
         animate={{ x: ['-20vw', '120vw'], y: ['60vh', '40vh', '50vh', '20vh'], rotate: [5, -5, 5, -10] }}
-        transition={{ repeat: Infinity, duration: 35, ease: "linear" }}
+        transition={{ repeat: Infinity, duration: 35, repeatDelay: 25, ease: "linear" }}
         style={{ position: 'absolute', top: 0, left: 0, width: '120px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))' }}
       />
-      {/* Nave 2: X-Wing (Vuela de izq a der, rápido y subiendo) */}
+      {/* Nave 2: X-Wing (Persecución: el X-Wing huye) */}
       <motion.img 
         src="/assets/starwars/ship2.png" 
         alt="X-Wing"
         animate={{ x: ['-30vw', '130vw'], y: ['70vh', '10vh'], rotate: [-10, -25] }}
-        transition={{ repeat: Infinity, duration: 25, ease: "linear", delay: 8 }}
+        transition={{ repeat: Infinity, duration: 25, repeatDelay: 20, ease: "linear", delay: 5 }}
         style={{ position: 'absolute', top: 0, left: 0, width: '160px', filter: 'drop-shadow(0 0 15px rgba(0,255,255,0.4))' }}
       />
-      {/* Nave 3: TIE Fighter (Vuela de izq a der, persiguiendo al X-wing) */}
+      {/* Nave 3: TIE Fighter (Persecución: persigue al X-wing de cerca) */}
       <motion.img 
         src="/assets/starwars/ship3.png" 
         alt="TIE Fighter"
         animate={{ x: ['-20vw', '120vw'], y: ['75vh', '15vh'], rotate: [-5, -15] }}
-        transition={{ repeat: Infinity, duration: 24, ease: "linear", delay: 10 }}
+        transition={{ repeat: Infinity, duration: 24, repeatDelay: 21, ease: "linear", delay: 7 }}
         style={{ position: 'absolute', top: 0, left: 0, width: '90px', filter: 'drop-shadow(0 0 10px rgba(255,50,50,0.6))' }}
+      />
+    </div>
+  );
+}
+
+// ─── Fog Effect Component ──────────────────────────────────────────────────
+function FogEffect() {
+  return (
+    <div style={{
+      position: 'absolute', bottom: '-10%', left: '-10%', width: '120%', height: '50%', pointerEvents: 'none', zIndex: 1,
+      opacity: 0.6, mixBlendMode: 'screen',
+      WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
+      maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
+    }}>
+      <motion.img 
+        src="/assets/bttf/smoke_effect.png" 
+        alt="Fog"
+        animate={{ x: ['-5%', '5%'] }}
+        transition={{ repeat: Infinity, duration: 25, ease: "easeInOut", repeatType: 'reverse' }}
+        style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'blur(10px) sepia(1) hue-rotate(180deg) saturate(3) brightness(0.6)' }}
       />
     </div>
   );
@@ -347,9 +367,9 @@ export default function StarWarsHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundImage: "url('/assets/starwars/starwarshub_enhanced.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        backgroundColor: '#000000',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center 40%',
+        backgroundColor: '#020308',
         backgroundRepeat: 'no-repeat',
       }}>
         {/* Dark overlay gradient */}
@@ -367,6 +387,9 @@ export default function StarWarsHub() {
 
         {/* Ambient floating dust particles (Arqueoastronomia style) */}
         <HubDecorations />
+
+        {/* Ambient Fog at the bottom */}
+        <FogEffect />
 
         {/* Twinkling stars blended with background */}
         <Stars />
