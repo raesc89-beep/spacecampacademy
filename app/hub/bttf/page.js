@@ -123,19 +123,19 @@ function SmokeEffect() {
       bottom: '-10%', left: '-5%', width: '50%', height: '40%',
       pointerEvents: 'none',
       zIndex: 2,
-      opacity: 0.6,
-      mixBlendMode: 'screen',
+      opacity: 0.9, // Aumentado para visibilidad
+      mixBlendMode: 'normal', // Cambiado a normal para evitar invisibilidad en fondos oscuros
     }}>
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'radial-gradient(ellipse at bottom left, rgba(200, 220, 255, 0.3) 0%, rgba(150, 180, 220, 0.1) 40%, transparent 70%)',
-        filter: 'blur(40px)',
+        background: 'radial-gradient(ellipse at bottom left, rgba(220, 220, 220, 0.6) 0%, rgba(180, 180, 180, 0.25) 40%, transparent 70%)',
+        filter: 'blur(30px)',
         animation: 'smokeDrift 12s infinite alternate ease-in-out',
       }} />
       <div style={{
         position: 'absolute', bottom: '0', left: '10%', width: '80%', height: '100%',
-        background: 'radial-gradient(ellipse at bottom center, rgba(200, 220, 255, 0.25) 0%, rgba(100, 140, 200, 0.05) 50%, transparent 70%)',
-        filter: 'blur(50px)',
+        background: 'radial-gradient(ellipse at bottom center, rgba(200, 200, 200, 0.5) 0%, rgba(150, 150, 150, 0.15) 50%, transparent 70%)',
+        filter: 'blur(40px)',
         animation: 'smokeDrift2 18s infinite alternate ease-in-out',
       }} />
     </div>

@@ -36,7 +36,7 @@ const DASHBOARD_MISSIONS = [
     title: "La Ciencia de Star Wars",
     subtitle: "Astrofísica, biomecatrónica y evolución cuántica aplicada al universo galáctico.",
     link: "/hub/star-wars",
-    bgSrc: "/assets/starwars/star_wars_cover.png",
+    bgSrc: "/assets/starwars/star_wars_bg_v4.png",
     badgeColor: "#FFE81F",
     badgeText: "Astrofísica Teórica",
     borderColor: "rgba(255, 232, 31, 0.4)"
@@ -65,7 +65,7 @@ const DASHBOARD_MISSIONS = [
     id: "viaje_planetas_rocosos",
     title: "Planetas Rocosos",
     subtitle: "Explora la geología extrema de Mercurio, Venus, Tierra y Marte.",
-    link: "/course/viaje_planetas_rocosos",
+    link: "/hub/planetas-rocosos",
     bgSrc: "/assets/dashboard/rocosos_cover.png",
     badgeColor: "#D2691E",
     badgeText: "Geología Estelar",
