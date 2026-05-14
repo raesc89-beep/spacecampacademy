@@ -61,10 +61,10 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 1,
-      // Usamos una máscara difuminada en la parte inferior central, donde típicamente va el cauce,
-      // para no tocar los pilares de los lados ni el cielo.
-      WebkitMaskImage: 'radial-gradient(ellipse 60% 40% at 50% 85%, black 20%, transparent 70%)',
-      maskImage: 'radial-gradient(ellipse 60% 40% at 50% 85%, black 20%, transparent 70%)'
+      // Usamos un gradiente lineal horizontal para limitar el efecto estrictamente a la banda de agua
+      // y evitar que afecte la arena en la parte inferior o el cielo en la superior.
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 30%, black 42%, black 58%, transparent 65%)',
+      maskImage: 'linear-gradient(to bottom, transparent 30%, black 42%, black 58%, transparent 65%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion">

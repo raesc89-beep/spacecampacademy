@@ -121,13 +121,17 @@ function StarshipsAnim() {
   return (
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 5 }}>
       {/* Nave 1: Snowspeeder (Independiente, de derecha a izquierda) */}
-      <motion.img 
-        src="/assets/starwars/ship1.png" 
-        alt="Snowspeeder"
-        animate={{ x: ['120vw', '-20vw'], y: ['60vh', '40vh', '50vh', '20vh'], rotate: [5, -5, 5, -10], rotateY: 180 }}
+      <motion.div 
+        animate={{ x: ['120vw', '-20vw'], y: ['60vh', '40vh', '50vh', '20vh'], rotate: [5, -5, 5, -10] }}
         transition={{ repeat: Infinity, duration: 35, repeatDelay: 25, ease: "linear" }}
-        style={{ position: 'absolute', top: 0, left: 0, width: '100px', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))' }}
-      />
+        style={{ position: 'absolute', top: 0, left: 0, zIndex: 5 }}
+      >
+        <img 
+          src="/assets/starwars/ship1.png" 
+          alt="Snowspeeder"
+          style={{ width: '100px', transform: 'scaleX(-1)', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))' }}
+        />
+      </motion.div>
       {/* Nave 2: X-Wing (Persecución: el X-Wing huye) */}
       <motion.img 
         src="/assets/starwars/ship2.png" 
@@ -366,12 +370,19 @@ export default function StarWarsHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        backgroundImage: "url('/assets/starwars/starwarshub_enhanced.png')",
-        backgroundSize: 'contain',
-        backgroundPosition: 'center 40%',
         backgroundColor: '#020308',
-        backgroundRepeat: 'no-repeat',
       }}>
+        {/* Background Image with seamless faded edges */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          backgroundImage: "url('/assets/starwars/starwarshub_enhanced.png')",
+          backgroundSize: 'contain',
+          backgroundPosition: 'center 40%',
+          backgroundRepeat: 'no-repeat',
+          WebkitMaskImage: 'radial-gradient(ellipse 70% 80% at 50% 40%, black 60%, transparent 100%)',
+          maskImage: 'radial-gradient(ellipse 70% 80% at 50% 40%, black 60%, transparent 100%)',
+          zIndex: 0,
+        }} />
         {/* Dark overlay gradient */}
         <div style={{
           position: 'absolute', inset: 0,

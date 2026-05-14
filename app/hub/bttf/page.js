@@ -102,28 +102,25 @@ function LightningEffect() {
   return (
     <>
       <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
+        position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
         background: 'radial-gradient(ellipse at 35% 15%, rgba(150, 220, 255, 0.25) 0%, rgba(150, 220, 255, 0) 65%)',
-        pointerEvents: 'none',
-        zIndex: 1,
-        mixBlendMode: 'screen',
+        pointerEvents: 'none', zIndex: 1, mixBlendMode: 'screen',
         animation: 'lightningFlash 8s infinite',
       }} />
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 5, filter: 'drop-shadow(0 0 6px #00ffff) drop-shadow(0 0 12px #00ffff)' }}>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 5, filter: 'drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff)' }}>
          <path 
-           d="M 85 0 L 80 15 L 77 15 L 65 30 L 70 33 L 60 45 L 62 48 L 50 60 L 52 65 L 40 75 L 35 80 L 25 80" 
-           fill="none" 
-           stroke="#ffffff" 
-           strokeWidth="0.5" 
-           vectorEffect="non-scaling-stroke"
-           strokeLinecap="round"
+           d="M 22 0 L 25 10 L 18 15 L 20 25 L 15 35 L 22 45 L 12 55 L 25 65 L 10 75 L 30 85" 
+           fill="none" stroke="#ffffff" strokeWidth="0.8" vectorEffect="non-scaling-stroke"
+           strokeLinecap="round" strokeLinejoin="round"
+           style={{ opacity: 0.8 }}
+         />
+         <path 
+           d="M 22 0 L 25 10 L 18 15 L 20 25 L 15 35 L 22 45 L 12 55 L 25 65 L 10 75 L 30 85" 
+           fill="none" stroke="#00ffff" strokeWidth="2.5" vectorEffect="non-scaling-stroke"
+           strokeLinecap="round" strokeLinejoin="round"
            style={{
-             strokeDasharray: '4, 40',
-             animation: 'cablePulse 1.2s linear infinite'
+             strokeDasharray: '15, 80',
+             animation: 'cablePulse 1s linear infinite'
            }}
          />
       </svg>
