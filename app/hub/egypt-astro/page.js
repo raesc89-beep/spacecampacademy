@@ -45,6 +45,7 @@ function Stars() {
           height: `${Math.random() * 2 + 1}px`,
           borderRadius: '50%',
           background: 'white',
+          background: 'white',
           opacity: Math.random() * 0.7 + 0.3,
           animation: `twinkle ${Math.random() * 4 + 2}s ease-in-out infinite`,
           animationDelay: `${Math.random() * 3}s`,
@@ -54,26 +55,26 @@ function Stars() {
   );
 }
 
-// ─── Efecto del Río Nilo Fluyendo con SVG Displacement ───────────────
+// ─── Efecto del Río Nilo Fluyendo con SVG Displacement ────────────────
 function NileRiver() {
   return (
     <div style={{
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
-      pointerEvents: 'none', zIndex: 1,
-      // Máscara precisa alineada con el cauce del Nilo en la imagen (~43%-63% altura)
-      WebkitMaskImage: 'linear-gradient(to bottom, transparent 40%, black 45%, black 63%, transparent 68%)',
-      maskImage: 'linear-gradient(to bottom, transparent 40%, black 45%, black 63%, transparent 68%)'
+      pointerEvents: 'none', zIndex: 2,
+      // Ventana exacta del río: empieza ~38%, sólido 43%-58%, desaparece ~63%
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 38%, black 43%, black 58%, transparent 63%)',
+      maskImage: 'linear-gradient(to bottom, transparent 38%, black 43%, black 58%, transparent 63%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
-        <filter id="water-distortion">
-          <feTurbulence type="fractalNoise" baseFrequency="0.015 0.04" numOctaves="3" result="noise">
-            <animate attributeName="baseFrequency" values="0.015 0.04; 0.02 0.06; 0.015 0.04" dur="12s" repeatCount="indefinite" />
+        <filter id="water-distortion" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012 0.035" numOctaves="3" result="noise">
+            <animate attributeName="baseFrequency" values="0.012 0.035; 0.018 0.05; 0.012 0.035" dur="10s" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </svg>
-      {/* Capa duplicada del fondo con filtro de agua, alineada exactamente igual que el fondo principal */}
+      {/* Misma imagen y parámetros que el main, con filtro de agua encima */}
       <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/assets/egypt/hub_background.png)',

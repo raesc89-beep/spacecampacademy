@@ -97,35 +97,15 @@ function ConstellationLines() {
   );
 }
 
-// ─── Componente del Relámpago (Iluminación de Nubes) ──────────────────────
+// ─── Componente de Iluminación de Nubes (sin cable) ──────────────────────
 function LightningEffect() {
   return (
-    <>
-      <div style={{
-        position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
-        background: 'radial-gradient(ellipse at 35% 15%, rgba(150, 220, 255, 0.25) 0%, rgba(150, 220, 255, 0) 65%)',
-        pointerEvents: 'none', zIndex: 1, mixBlendMode: 'screen',
-        animation: 'lightningFlash 8s infinite',
-      }} />
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 5, filter: 'drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff)' }}>
-         {/* Cable estático de fondo - trazo base blanco tenue */}
-         <path 
-           d="M 37 0 L 37 72 L 68 78" 
-           fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.2" vectorEffect="non-scaling-stroke"
-           strokeLinecap="round" strokeLinejoin="round"
-         />
-         {/* Pulso de electricidad animado en cian sobre el mismo cable */}
-         <path 
-           d="M 37 0 L 37 72 L 68 78" 
-           fill="none" stroke="#00ffff" strokeWidth="3" vectorEffect="non-scaling-stroke"
-           strokeLinecap="round" strokeLinejoin="round"
-           style={{
-             strokeDasharray: '8, 120',
-             animation: 'cablePulse 1s linear infinite'
-           }}
-         />
-      </svg>
-    </>
+    <div style={{
+      position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
+      background: 'radial-gradient(ellipse at 35% 15%, rgba(150, 220, 255, 0.25) 0%, rgba(150, 220, 255, 0) 65%)',
+      pointerEvents: 'none', zIndex: 1, mixBlendMode: 'screen',
+      animation: 'lightningFlash 8s infinite',
+    }} />
   );
 }
 

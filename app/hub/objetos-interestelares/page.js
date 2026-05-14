@@ -110,7 +110,10 @@ export default function ObjetosInterestelaresHub() {
         <div style={{
             position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
             width: '44vw', height: '44vw', maxWidth: '640px', maxHeight: '640px',
-            pointerEvents: 'none', zIndex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center',
+            pointerEvents: 'none', zIndex: 1,
+            // Mask para ocultar las esquinas cuadradas del PNG
+            WebkitMaskImage: 'radial-gradient(circle at center, black 45%, transparent 68%)',
+            maskImage: 'radial-gradient(circle at center, black 45%, transparent 68%)',
         }}>
           <motion.img
             src="/assets/interestelar/galaxy_spin.png"
@@ -119,8 +122,8 @@ export default function ObjetosInterestelaresHub() {
             transition={{ repeat: Infinity, duration: 150, ease: "linear" }}
             style={{
               width: '100%', height: '100%', objectFit: 'contain',
-              mixBlendMode: 'screen', opacity: 0.85,
-              filter: 'contrast(1.1) brightness(1.1)',
+              mixBlendMode: 'screen', opacity: 0.9,
+              filter: 'contrast(1.2) brightness(1.15) saturate(1.3)',
             }}
           />
         </div>
