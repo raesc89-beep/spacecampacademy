@@ -188,6 +188,39 @@ function ProceduralShipAAA() {
           </mesh>
         )}
       </group>
+
+      {/* ARMAMENTO */}
+      {shipConfig.weapon === 'laser' && (
+        <group position={[0, 0, 1.5]}>
+          {/* Cañones Láser Laterales */}
+          <mesh position={[1.2, 0.2, 0]} material={materials.dark}>
+            <cylinderGeometry args={[0.1, 0.1, 2, 16]} rotation={[Math.PI/2, 0, 0]} />
+          </mesh>
+          <mesh position={[1.2, 0.2, 1]} material={materials.emissive}>
+            <cylinderGeometry args={[0.08, 0.08, 0.5, 16]} rotation={[Math.PI/2, 0, 0]} />
+          </mesh>
+          <mesh position={[-1.2, 0.2, 0]} material={materials.dark}>
+            <cylinderGeometry args={[0.1, 0.1, 2, 16]} rotation={[Math.PI/2, 0, 0]} />
+          </mesh>
+          <mesh position={[-1.2, 0.2, 1]} material={materials.emissive}>
+            <cylinderGeometry args={[0.08, 0.08, 0.5, 16]} rotation={[Math.PI/2, 0, 0]} />
+          </mesh>
+        </group>
+      )}
+      {shipConfig.weapon === 'missile' && (
+        <group position={[0, -0.5, 0]}>
+          {/* Lanza Misiles Inferior */}
+          <mesh position={[0, 0, 0.5]} material={materials.dark}>
+            <boxGeometry args={[1.5, 0.4, 2]} />
+          </mesh>
+          <mesh position={[0.4, 0, 1.5]} material={materials.emissive}>
+            <cylinderGeometry args={[0.15, 0.15, 0.2, 16]} rotation={[Math.PI/2, 0, 0]} />
+          </mesh>
+          <mesh position={[-0.4, 0, 1.5]} material={materials.emissive}>
+            <cylinderGeometry args={[0.15, 0.15, 0.2, 16]} rotation={[Math.PI/2, 0, 0]} />
+          </mesh>
+        </group>
+      )}
     </group>
   );
 }
@@ -219,7 +252,7 @@ export default function SpaceshipScene() {
     <div style={{ width: '100%', height: '100%', backgroundColor: '#010204' }}>
       <Canvas shadows camera={{ position: [8, 4, 8], fov: 35 }} gl={{ antialias: true, alpha: true }}>
         <color attach="background" args={['#010204']} />
-        <Stars radius={150} depth={50} count={8000} factor={4} saturation={0.5} fade speed={1} />
+        <Stars radius={100} depth={50} count={10000} factor={8} saturation={0.8} fade speed={2} />
         
         {/* Iluminación Cinematográfica AAA */}
         <ambientLight intensity={0.1} />
@@ -258,7 +291,7 @@ export default function SpaceshipScene() {
           minPolarAngle={0} 
           maxPolarAngle={Math.PI / 2 + 0.1} 
           minDistance={6}
-          maxDistance={25}
+          maxDistance={40}
           enablePan={false}
           autoRotate
           autoRotateSpeed={0.3}

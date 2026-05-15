@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import dynamic from 'next/dynamic';
+import { usePathname } from 'next/navigation';
 
 const AstroD = dynamic(() => import('./AstroD'), { ssr: false });
 
@@ -25,6 +26,12 @@ class AstroDErrorBoundary extends React.Component {
 }
 
 export default function AstroDWrapper() {
+  const pathname = usePathname();
+  
+  if (pathname && pathname.startsWith('/hangar/nave')) {
+    return null;
+  }
+
   return (
     <AstroDErrorBoundary>
       <AstroD />
