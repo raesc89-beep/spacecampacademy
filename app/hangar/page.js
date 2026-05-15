@@ -1,216 +1,179 @@
 'use client';
-import { useState } from 'react';
+import { useAuth } from '@/hooks/useAuth';
 import Navbar from '@/components/Navbar';
-import { motion, AnimatePresence } from 'framer-motion';
-import dynamic from 'next/dynamic';
-import { useShipStore } from '@/store/useShipStore';
-import { Download, ChevronLeft, ChevronRight, Check } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { Rocket, User, Building, Wrench, Shield, Zap } from 'lucide-react';
+import { useEffect } from 'react';
+import Image from 'next/image';
 
-const SpaceshipScene = dynamic(() => import('@/components/shipyard/SpaceshipScene'), { ssr: false });
+const HANGAR_MODULES = [
+  {
+    id: "nave",
+    title: "Ensamblaje de Nave",
+    subtitle: "Construye y mejora tu vehículo espacial con tecnología de punta.",
+    link: "/hangar/nave",
+    icon: <Rocket size={48} color="#00E4FF" />,
+    bgSrc: "/assets/dashboard/interestelar_cover.png", // Or similar space ship background
+    borderColor: "rgba(0, 228, 255, 0.5)",
+    glowColor: "rgba(0, 228, 255, 0.2)",
+    features: ["Propulsores", "Escudos", "Pintura"]
+  },
+  {
+    id: "avatar",
+    title: "Creación de Astronauta",
+    subtitle: "Personaliza tu traje espacial, casco e insignias de la misión.",
+    link: "/hangar/avatar",
+    icon: <User size={48} color="#FFD700" />,
+    bgSrc: "/assets/dashboard/pioneros_cover.png", // Or avatar background
+    borderColor: "rgba(255, 215, 0, 0.5)",
+    glowColor: "rgba(255, 215, 0, 0.2)",
+    features: ["Traje", "Parches", "Especialidad"]
+  },
+  {
+    id: "base",
+    title: "Construcción de Base",
+    subtitle: "Diseña tu propia estación orbital. [Desarrollo Clasificado]",
+    link: "/hangar/base",
+    icon: <Building size={48} color="#9933FF" />,
+    bgSrc: "/assets/dashboard/agujeros_gusano_cover.png", // Or base background
+    borderColor: "rgba(153, 51, 255, 0.5)",
+    glowColor: "rgba(153, 51, 255, 0.2)",
+    features: ["Módulos", "Defensa", "Hábitat"],
+    isComingSoon: true
+  }
+];
 
-export default function Hangar() {
-  const { shipConfig, stats, setPart, setColor } = useShipStore();
-  
-  // Menú activo: 'fuselage', 'wings', 'engines', 'weapon', 'colors'
-  const [activeCategory, setActiveCategory] = useState('fuselage');
+export default function AstilleroHub() {
+  const { user, userData, loading } = useAuth();
+  const router = useRouter();
 
-  const palettePrimary = ['#1a1a1a', '#e63946', '#f4a261', '#2a9d8f', '#264653', '#8338ec', '#ff006e', '#ffbe0b', '#ffffff'];
-  const paletteSecondary = ['#2b2d42', '#8d99ae', '#edf2f4', '#ef233c', '#d90429', '#3a86ff', '#8ac926', '#1982c4', '#6a4c93'];
-  const paletteDetail = ['#ffba08', '#faa307', '#f48c06', '#e85d04', '#dc2f02', '#d00000', '#9d0208', '#6a040f', '#03071e'];
+  useEffect(() => {
+    if (!loading && !user) router.push('/auth');
+  }, [user, loading, router]);
 
-  const shipClasses = ['fighter', 'cargo', 'explorer'];
-  const shipClassLabels = { fighter: 'CAZA', cargo: 'CARGUERO', explorer: 'EXPLORADOR' };
-
-  const handleNextClass = () => {
-    const idx = shipClasses.indexOf(shipConfig.fuselage);
-    setPart('fuselage', shipClasses[(idx + 1) % shipClasses.length]);
-  };
-
-  const handlePrevClass = () => {
-    const idx = shipClasses.indexOf(shipConfig.fuselage);
-    setPart('fuselage', shipClasses[(idx - 1 + shipClasses.length) % shipClasses.length]);
-  };
-
-  const partOptions = {
-    fuselage: [
-      { id: 'fighter', label: 'Caza', img: '🚀' },
-      { id: 'cargo', label: 'Carguero', img: '🕋' },
-      { id: 'explorer', label: 'Explorador', img: '🛸' }
-    ],
-    wings: [
-      { id: 'delta', label: 'Delta V', img: '📐' },
-      { id: 'xwing', label: 'X-Quad', img: '✖️' },
-      { id: 'ring', label: 'Anillo', img: '⭕' }
-    ],
-    engines: [
-      { id: 'ion', label: 'Iónico', img: '🔵' },
-      { id: 'plasma', label: 'Plasma', img: '🔥' }
-    ],
-    weapon: [
-      { id: 'laser', label: 'Láser', img: '⚡' },
-      { id: 'missile', label: 'Misil', img: '🚀' },
-      { id: 'none', label: 'Paz', img: '🕊️' }
-    ]
-  };
+  if (loading || !userData) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#00E4FF' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+          <div className="pulse-anim" style={{ width: 50, height: 50, border: '4px solid #00E4FF', borderRadius: '50%', borderTopColor: 'transparent', animation: 'spin 1s linear infinite' }} />
+          Accediendo al Astillero Naval...
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="fixed inset-0 w-screen h-screen overflow-hidden bg-black font-sans selection:bg-cyan-500/30">
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#020308', overflow: 'hidden' }}>
+      <Navbar />
       
-      {/* Navbar overlay */}
-      <div className="absolute top-0 left-0 w-full z-50">
-        <Navbar />
-      </div>
+      {/* Background Ambience */}
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(circle at top, rgba(0,228,255,0.05) 0%, transparent 50%), radial-gradient(circle at bottom, rgba(153,51,255,0.05) 0%, transparent 50%)', zIndex: 0 }} />
 
-      {/* 3D Canvas Background */}
-      <div className="absolute inset-0 z-0">
-        <SpaceshipScene />
-      </div>
-
-      {/* UI OVERLAY - No Man's Sky Style */}
-      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col pt-20 pb-6 px-8">
+      <main style={{ flex: 1, padding: '4rem 5%', display: 'flex', flexDirection: 'column', gap: '4rem', position: 'relative', zIndex: 1, alignItems: 'center' }}>
         
-        {/* TOP ROW: Floating Categories */}
-        <div className="flex justify-center gap-12 mt-4 pointer-events-auto">
-          <CategoryIcon id="fuselage" label="FUSELAJE" icon="🚀" active={activeCategory === 'fuselage'} onClick={setActiveCategory} />
-          <CategoryIcon id="wings" label="ALAS" icon="✈️" active={activeCategory === 'wings'} onClick={setActiveCategory} />
-          <CategoryIcon id="engines" label="IMPULSOR" icon="🔥" active={activeCategory === 'engines'} onClick={setActiveCategory} />
-          <CategoryIcon id="weapon" label="ARMAS" icon="⚔️" active={activeCategory === 'weapon'} onClick={setActiveCategory} />
-          <CategoryIcon id="colors" label="PINTURA" icon="🎨" active={activeCategory === 'colors'} onClick={setActiveCategory} />
-        </div>
+        {/* Header */}
+        <header style={{ textAlign: 'center', maxWidth: '800px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.8rem', color: 'var(--electric-blue)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '3px', fontSize: '0.9rem', fontWeight: 600, border: '1px solid rgba(0,228,255,0.3)', padding: '0.5rem 1.5rem', borderRadius: '30px', background: 'rgba(0,228,255,0.05)' }}>
+            <Wrench size={18} /> Central de Ingeniería
+          </div>
+          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: 0, color: 'white', textShadow: '0 0 30px rgba(0, 228, 255, 0.3)', fontWeight: 900, lineHeight: 1.1 }}>
+            Astillero Naval
+          </h1>
+          <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.6)', marginTop: '1.5rem', lineHeight: 1.6 }}>
+            El núcleo de diseño y fabricación de la academia. Selecciona un departamento de ingeniería para comenzar el desarrollo de tu equipo espacial.
+          </p>
+        </header>
 
-        {/* MIDDLE SECTION: Part Selection or Colors (Shows below categories) */}
-        <div className="w-full flex justify-center mt-6 pointer-events-auto h-24">
-          <AnimatePresence mode="wait">
-            {activeCategory !== 'colors' ? (
+        {/* Modules Grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', width: '100%', maxWidth: '1200px' }}>
+          {HANGAR_MODULES.map((mod, idx) => {
+            const isClickable = !mod.isComingSoon;
+
+            const CardContent = () => (
               <motion.div 
-                key={activeCategory}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="flex gap-4"
+                whileHover={isClickable ? { y: -10, boxShadow: `0 20px 40px rgba(0,0,0,0.6), inset 0 0 30px ${mod.glowColor}, 0 0 0 2px ${mod.borderColor}` } : {}}
+                style={{
+                  position: 'relative',
+                  overflow: 'hidden',
+                  borderRadius: '24px',
+                  background: 'rgba(10, 15, 30, 0.7)',
+                  border: `1px solid ${mod.borderColor}`,
+                  height: '100%',
+                  minHeight: '450px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  transition: 'all 0.4s ease',
+                  cursor: isClickable ? 'pointer' : 'default',
+                  opacity: mod.isComingSoon ? 0.8 : 1,
+                  filter: mod.isComingSoon ? 'grayscale(0.5)' : 'none'
+                }}
               >
-                {partOptions[activeCategory].map(opt => (
-                  <div 
-                    key={opt.id}
-                    onClick={() => setPart(activeCategory, opt.id)}
-                    className={`w-32 h-24 rounded-lg border-2 cursor-pointer transition-all flex flex-col items-center justify-center bg-black/50 backdrop-blur-md ${shipConfig[activeCategory] === opt.id ? 'border-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.4)]' : 'border-white/20 hover:border-white/50'}`}
-                  >
-                    <span className="text-3xl mb-1">{opt.img}</span>
-                    <span className="text-[10px] text-white uppercase font-bold tracking-widest">{opt.label}</span>
+                {/* Background Image Image */}
+                <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+                  <Image src={mod.bgSrc} alt={mod.title} fill style={{ objectFit: 'cover', opacity: 0.3, mixBlendMode: 'luminosity' }} quality={60} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,15,30,0.4) 0%, rgba(10,15,30,1) 100%)' }}></div>
+                </div>
+
+                {/* Coming Soon Overlay */}
+                {mod.isComingSoon && (
+                  <div style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', background: 'rgba(255,51,102,0.2)', border: '1px solid var(--danger)', color: 'var(--danger)', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '1px', zIndex: 2, backdropFilter: 'blur(4px)' }}>
+                    PRÓXIMAMENTE
                   </div>
-                ))}
+                )}
+
+                {/* Content */}
+                <div style={{ position: 'relative', zIndex: 1, padding: '3rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', height: '100%' }}>
+                  <div style={{ background: `linear-gradient(135deg, ${mod.glowColor} 0%, transparent 100%)`, padding: '1.5rem', borderRadius: '50%', marginBottom: '2rem', border: `1px solid ${mod.borderColor}`, boxShadow: `0 0 30px ${mod.glowColor}` }}>
+                    {mod.icon}
+                  </div>
+                  
+                  <h2 style={{ fontSize: '2rem', color: 'white', margin: '0 0 1rem 0', textShadow: `0 2px 10px rgba(0,0,0,0.8)` }}>
+                    {mod.title}
+                  </h2>
+                  
+                  <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.05rem', lineHeight: 1.5, flex: 1 }}>
+                    {mod.subtitle}
+                  </p>
+
+                  {/* Feature Tags */}
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center', marginTop: '2rem' }}>
+                    {mod.features.map(f => (
+                      <span key={f} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: '0.4rem 0.8rem', borderRadius: '12px', fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)' }}>
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+
+                  {isClickable && (
+                     <div style={{ marginTop: '2.5rem', width: '100%' }}>
+                       <div style={{ background: mod.glowColor, border: `1px solid ${mod.borderColor}`, color: 'white', padding: '1rem', borderRadius: '16px', fontWeight: 'bold', letterSpacing: '1px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                         <Zap size={18} /> INICIAR PROTOCOLO
+                       </div>
+                     </div>
+                  )}
+                </div>
               </motion.div>
+            );
+
+            return isClickable ? (
+              <Link href={mod.link} key={mod.id} style={{ textDecoration: 'none' }}>
+                <CardContent />
+              </Link>
             ) : (
-               <div /> // Espacio vacío para colores (se renderizan abajo a la izq)
-            )}
-          </AnimatePresence>
+              <div key={mod.id}>
+                <CardContent />
+              </div>
+            );
+          })}
         </div>
 
-        {/* MAIN BODY: Palettes and Stats */}
-        <div className="flex-1 flex justify-between items-end pointer-events-auto pb-8">
-          
-          {/* BOTTOM LEFT: Color Palette */}
-          <div className={`w-[450px] transition-opacity duration-300 ${activeCategory === 'colors' ? 'opacity-100' : 'opacity-30'}`}>
-            <h3 className="text-white text-xs font-bold uppercase tracking-widest mb-3">Estilo de Pintura</h3>
-            <div className="bg-black/60 backdrop-blur-xl border border-white/20 p-4 rounded-xl shadow-2xl">
-              <ColorRow label="Cor primária" colors={palettePrimary} selected={shipConfig.colors.primary} onSelect={(c) => setColor('primary', c)} />
-              <div className="h-[1px] w-full bg-white/10 my-3" />
-              <ColorRow label="Cor secundária" colors={paletteSecondary} selected={shipConfig.colors.secondary} onSelect={(c) => setColor('secondary', c)} />
-              <div className="h-[1px] w-full bg-white/10 my-3" />
-              <ColorRow label="Cor de detalhe" colors={paletteDetail} selected={shipConfig.colors.emissive} onSelect={(c) => setColor('emissive', c)} />
-            </div>
-          </div>
-
-          {/* BOTTOM CENTER: Ship Class Navigator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-8 pointer-events-auto">
-             <button onClick={handlePrevClass} className="text-white/50 hover:text-white transition-colors p-2"><ChevronLeft size={24} /></button>
-             <div className="w-48 text-center">
-                <span className="text-white uppercase tracking-[0.3em] text-lg font-light">{shipClassLabels[shipConfig.fuselage]}</span>
-             </div>
-             <button onClick={handleNextClass} className="text-white/50 hover:text-white transition-colors p-2"><ChevronRight size={24} /></button>
-          </div>
-
-          {/* RIGHT SIDE: Ship Stats Panel */}
-          <div className="w-[350px] bg-black/60 backdrop-blur-xl border border-white/20 p-6 rounded-xl shadow-2xl mb-12">
-            <h2 className="text-2xl font-light text-white mb-1">Falcão de Itoyos</h2>
-            
-            <div className="flex items-center gap-3 mb-6 pb-4 border-b border-white/10">
-              <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-600 rounded flex items-center justify-center border border-yellow-200/50 shadow-[0_0_15px_rgba(255,165,0,0.5)]">
-                 <span className="text-black font-black text-xl">S</span>
-              </div>
-              <div>
-                <div className="text-[10px] text-white/50 uppercase tracking-widest">Configuración de fabricación</div>
-                <div className="text-yellow-500 text-xs font-bold uppercase tracking-wider">Nave de combate</div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <StatRow label="Potencial de daño" value={stats.damage} max={100} />
-              <StatRow label="Resistencia del escudo" value={stats.shield} max={100} />
-              <StatRow label="Alcance del hiperprop." value={stats.range} max={100} />
-              <StatRow label="Maniobrabilidad" value={stats.maneuverability} max={100} />
-            </div>
-
-            <button className="mt-8 w-full bg-white/10 hover:bg-white/20 border border-white/30 text-white font-light py-3 uppercase tracking-[0.2em] text-sm transition-all flex justify-center items-center gap-2">
-               <span>MONTAR</span>
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  );
-}
-
-// UI Subcomponents
-function CategoryIcon({ id, label, icon, active, onClick }) {
-  return (
-    <div className="flex flex-col items-center gap-2 cursor-pointer group" onClick={() => onClick(id)}>
-      <span className={`text-[10px] uppercase tracking-widest font-bold transition-colors ${active ? 'text-cyan-400' : 'text-white/50 group-hover:text-white'}`}>{label}</span>
-      <div className={`w-14 h-14 rounded border-2 flex items-center justify-center text-2xl transition-all ${active ? 'bg-cyan-900/40 border-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.4)]' : 'bg-black/40 backdrop-blur-md border-white/20 group-hover:border-white/50'}`}>
-        {icon}
-      </div>
-    </div>
-  );
-}
-
-function StatRow({ label, value, max }) {
-  return (
-    <div>
-      <div className="flex justify-between text-[11px] mb-1 uppercase tracking-wider">
-        <span className="text-white/70">{label}</span>
-        <span className="text-white font-mono">{value}</span>
-      </div>
-      <div className="h-[2px] w-full bg-white/10 overflow-hidden">
-        <motion.div 
-          initial={{ width: 0 }} 
-          animate={{ width: `${(value / max) * 100}%` }} 
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="h-full bg-white" 
-        />
-      </div>
-    </div>
-  );
-}
-
-function ColorRow({ label, colors, selected, onSelect }) {
-  return (
-    <div>
-      <div className="text-[10px] uppercase tracking-wider text-white/50 mb-1">{label}</div>
-      <div className="grid grid-cols-9 gap-[2px]">
-        {colors.map(c => (
-          <button 
-            key={c}
-            onClick={() => onSelect(c)}
-            style={{ backgroundColor: c }}
-            className="h-8 w-full relative transition-all hover:z-10 hover:scale-110 flex items-center justify-center"
-          >
-             {selected === c && (
-               <div className="absolute inset-0 border-[3px] border-white z-20 pointer-events-none" />
-             )}
-          </button>
-        ))}
-      </div>
+      </main>
+      
+      <style>{`
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+      `}</style>
     </div>
   );
 }

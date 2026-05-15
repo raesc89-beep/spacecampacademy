@@ -4,12 +4,13 @@ import { Rocket, LogOut, User } from 'lucide-react';
 import { auth } from '../lib/firebase';
 import { signOut } from 'firebase/auth';
 import { useAuth } from '@/hooks/useAuth';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import AnimatedLogos from './AnimatedLogos';
 
 export default function Navbar() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleLogout = async () => {
     await signOut(auth);
@@ -33,6 +34,11 @@ export default function Navbar() {
         <Link href="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', textDecoration: 'none', color: 'white' }}>
           <img src="/assets/amde_logo.png" alt="AMDE Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain', background: 'transparent' }} />
         </Link>
+        {pathname !== '/dashboard' && (
+          <Link href="/dashboard" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem', border: '1px solid rgba(255,255,255,0.2)', padding: '0.4rem 1rem', borderRadius: '20px', background: 'rgba(255,255,255,0.05)', fontSize: '0.9rem', fontWeight: 600, transition: 'all 0.3s ease' }}>
+            <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>←</span> Estación Central
+          </Link>
+        )}
       </div>
       
       {!loading && user && (
