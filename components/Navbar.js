@@ -34,7 +34,7 @@ export default function Navbar() {
           <img src="/assets/amde_logo.png" alt="AMDE Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain', background: 'transparent' }} />
         </Link>
         <div style={{ display: 'flex', gap: '1.5rem', marginLeft: '2rem' }}>
-           <Link href="/dashboard" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+           <Link href="/dashboard/misiones" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
              Base de Misiones
            </Link>
            <Link href="/hangar" style={{ textDecoration: 'none', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>

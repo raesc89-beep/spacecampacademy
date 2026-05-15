@@ -62,19 +62,19 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 2,
-      // Ventana exacta del río: empieza ~38%, sólido 43%-58%, desaparece ~63%
-      WebkitMaskImage: 'linear-gradient(to bottom, transparent 38%, black 43%, black 58%, transparent 63%)',
-      maskImage: 'linear-gradient(to bottom, transparent 38%, black 43%, black 58%, transparent 63%)'
+      // El río azul en la imagen ocupa aprox. del 28% al 52% del alto
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 28%, black 33%, black 50%, transparent 55%)',
+      maskImage: 'linear-gradient(to bottom, transparent 28%, black 33%, black 50%, transparent 55%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion" x="0" y="0" width="100%" height="100%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.012 0.035" numOctaves="3" result="noise">
-            <animate attributeName="baseFrequency" values="0.012 0.035; 0.018 0.05; 0.012 0.035" dur="10s" repeatCount="indefinite" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.008 0.025" numOctaves="3" result="noise">
+            <animate attributeName="baseFrequency" values="0.008 0.025; 0.012 0.04; 0.008 0.025" dur="8s" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </svg>
-      {/* Misma imagen y parámetros que el main, con filtro de agua encima */}
+      {/* Misma imagen con exactamente los mismos parámetros que el main */}
       <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/assets/egypt/hub_background.png)',
@@ -333,36 +333,36 @@ export default function EgyptAstroHub() {
         <NileRiver />
         <Comets />
 
-        {/* Red de Líneas Estelares (Conectando Módulos) */}
-        <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.35 }}>
-          {/* Conexiones del Cielo */}
-          <line x1="15%" y1="15%" x2="35%" y2="10%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="35%" y1="10%" x2="60%" y2="12%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="60%" y1="12%" x2="85%" y2="18%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="35%" y1="10%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="60%" y1="12%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-
-          {/* Conexiones del Horizonte */}
-          <line x1="25%" y1="32%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="50%" y1="28%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          
-          <line x1="12%" y1="55%" x2="25%" y2="32%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="38%" y1="52%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="65%" y1="50%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="88%" y1="58%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
-
-          {/* Conexiones de la Arena */}
-          <line x1="22%" y1="80%" x2="12%" y2="55%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="22%" y1="80%" x2="48%" y2="75%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="48%" y1="75%" x2="38%" y2="52%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="48%" y1="75%" x2="72%" y2="80%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="72%" y1="80%" x2="65%" y2="50%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="72%" y1="80%" x2="92%" y2="82%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
-          <line x1="92%" y1="82%" x2="88%" y2="58%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
-        </svg>
-
-        {/* Nodos de los Módulos */}
+        {/* Nodos de los Módulos y Red Estelar */}
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '100vh', margin: '0 auto' }}>
+          
+          {/* Red de Líneas Estelares (Conectando Módulos) */}
+          <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.35 }}>
+            {/* Conexiones del Cielo */}
+            <line x1="15%" y1="15%" x2="35%" y2="10%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="35%" y1="10%" x2="60%" y2="12%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="60%" y1="12%" x2="85%" y2="18%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="35%" y1="10%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="60%" y1="12%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+
+            {/* Conexiones del Horizonte */}
+            <line x1="25%" y1="32%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="50%" y1="28%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            
+            <line x1="12%" y1="55%" x2="25%" y2="32%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="38%" y1="52%" x2="50%" y2="28%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="65%" y1="50%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="88%" y1="58%" x2="75%" y2="35%" stroke="#FFF" strokeWidth="1" strokeDasharray="3 6" />
+
+            {/* Conexiones de la Arena */}
+            <line x1="22%" y1="80%" x2="12%" y2="55%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="22%" y1="80%" x2="48%" y2="75%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="48%" y1="75%" x2="38%" y2="52%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="48%" y1="75%" x2="72%" y2="80%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="72%" y1="80%" x2="65%" y2="50%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="72%" y1="80%" x2="92%" y2="82%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+            <line x1="92%" y1="82%" x2="88%" y2="58%" stroke="#D4A843" strokeWidth="1" strokeDasharray="3 6" />
+          </svg>
           {EGYPT_MODULES.map((mod, idx) => (
             <EgyptModuleNode
               key={mod.id}
