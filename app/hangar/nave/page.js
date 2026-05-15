@@ -47,155 +47,158 @@ export default function NaveHangar() {
   ];
 
   return (
-    <div className="fixed inset-0 w-screen h-screen overflow-hidden bg-[#2D1B4E] font-sans">
+    <div style={{ position: 'fixed', inset: 0, width: '100vw', height: '100vh', overflow: 'hidden', backgroundColor: '#2D1B4E', fontFamily: 'sans-serif' }}>
       
       {/* 3D Canvas Background (Viewport) */}
-      <div className="absolute inset-0 z-0">
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         <SpaceshipScene />
       </div>
 
       {/* COCKPIT OVERLAY UI */}
-      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-between overflow-hidden">
+      <div style={{ position: 'absolute', inset: 0, zIndex: 10, pointerEvents: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', overflow: 'hidden' }}>
         
         {/* Top Arch / Window Frame */}
-        <div className="w-full flex justify-between items-start pointer-events-auto">
+        <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', pointerEvents: 'auto' }}>
           {/* Left Arch */}
-          <div className="w-[30%] h-32 bg-[#e6e2db] rounded-br-[100px] shadow-[10px_10px_20px_rgba(0,0,0,0.5)] border-r-8 border-b-8 border-[#c9c5be] flex p-4 items-start">
-             <Link href="/hangar" className="bg-[#4fd1c5] hover:bg-[#38b2ac] text-[#1a202c] font-bold py-2 px-4 rounded-lg shadow-[inset_0_-4px_0_rgba(0,0,0,0.2)] flex items-center gap-2 transition-transform active:translate-y-1">
+          <div style={{ width: '30%', height: '128px', backgroundColor: '#e6e2db', borderBottomRightRadius: '100px', boxShadow: '10px 10px 20px rgba(0,0,0,0.5)', borderRight: '8px solid #c9c5be', borderBottom: '8px solid #c9c5be', display: 'flex', padding: '16px', alignItems: 'flex-start' }}>
+             <Link href="/hangar" style={{ backgroundColor: '#4fd1c5', color: '#1a202c', fontWeight: 'bold', padding: '8px 16px', borderRadius: '8px', boxShadow: 'inset 0 -4px 0 rgba(0,0,0,0.2)', display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', transition: 'transform 0.1s' }}>
                <ChevronLeft /> VOLVER AL ASTILLERO
              </Link>
           </div>
           {/* Top Center Frame */}
-          <div className="w-[40%] h-16 bg-[#4fd1c5] rounded-b-[50px] border-b-8 border-[#319795] shadow-[0_10px_20px_rgba(0,0,0,0.4)] flex justify-center items-end pb-2">
-             <div className="bg-[#1a202c] px-6 py-1 rounded-full text-[#4fd1c5] text-sm font-bold tracking-widest border border-[#319795] shadow-[inset_0_0_10px_#4fd1c5]">
+          <div style={{ width: '40%', height: '64px', backgroundColor: '#4fd1c5', borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderBottom: '8px solid #319795', boxShadow: '0 10px 20px rgba(0,0,0,0.4)', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', paddingBottom: '8px' }}>
+             <div style={{ backgroundColor: '#1a202c', padding: '4px 24px', borderRadius: '9999px', color: '#4fd1c5', fontSize: '14px', fontWeight: 'bold', letterSpacing: '2px', border: '1px solid #319795', boxShadow: 'inset 0 0 10px #4fd1c5' }}>
                SISTEMA DE ENSAMBLAJE ACTIVO
              </div>
           </div>
           {/* Right Arch */}
-          <div className="w-[30%] h-32 bg-[#e6e2db] rounded-bl-[100px] shadow-[-10px_10px_20px_rgba(0,0,0,0.5)] border-l-8 border-b-8 border-[#c9c5be] flex justify-end p-6">
-             <div className="w-16 h-16 rounded-full bg-[#1a202c] border-4 border-[#4fd1c5] shadow-[0_0_20px_#4fd1c5] grid place-items-center">
-               <Activity color="#4fd1c5" className="animate-pulse" />
+          <div style={{ width: '30%', height: '128px', backgroundColor: '#e6e2db', borderBottomLeftRadius: '100px', boxShadow: '-10px 10px 20px rgba(0,0,0,0.5)', borderLeft: '8px solid #c9c5be', borderBottom: '8px solid #c9c5be', display: 'flex', justifyContent: 'flex-end', padding: '24px' }}>
+             <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: '#1a202c', border: '4px solid #4fd1c5', boxShadow: '0 0 20px #4fd1c5', display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="pulse-anim">
+               <Activity color="#4fd1c5" />
              </div>
           </div>
         </div>
 
         {/* Dashboard Panels (Bottom & Sides) */}
-        <div className="w-full flex justify-between items-end pb-0 px-0 pointer-events-auto">
+        <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', pointerEvents: 'auto' }}>
           
           {/* LEFT PANEL: Stats Screen */}
           <div 
-            className="w-[28%] h-[400px] bg-[#e6e2db] rounded-tr-[80px] shadow-[10px_-10px_30px_rgba(0,0,0,0.6)] border-t-8 border-r-8 border-[#c9c5be] p-6 flex flex-col justify-end"
-            style={{ transform: 'perspective(1000px) rotateY(15deg)', transformOrigin: 'left bottom' }}
+            style={{ width: '28%', height: '400px', backgroundColor: '#e6e2db', borderTopRightRadius: '80px', boxShadow: '10px -10px 30px rgba(0,0,0,0.6)', borderTop: '8px solid #c9c5be', borderRight: '8px solid #c9c5be', padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', transform: 'perspective(1000px) rotateY(15deg)', transformOrigin: 'left bottom' }}
           >
             {/* Screen border */}
-            <div className="w-full h-[70%] bg-[#2c7a7b] rounded-xl p-3 border-[6px] border-[#319795] shadow-[inset_0_0_20px_rgba(0,0,0,0.5),_0_10px_20px_rgba(0,0,0,0.3)] mb-4">
+            <div style={{ width: '100%', height: '70%', backgroundColor: '#2c7a7b', borderRadius: '12px', padding: '12px', border: '6px solid #319795', boxShadow: 'inset 0 0 20px rgba(0,0,0,0.5), 0 10px 20px rgba(0,0,0,0.3)', marginBottom: '16px' }}>
               {/* Actual Screen */}
-              <div className="w-full h-full bg-[#e6fffa] rounded-lg border-[4px] border-[#81e6d9] p-4 flex flex-col justify-between overflow-hidden relative">
-                 <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.05)_50%)] bg-[length:100%_4px] pointer-events-none"></div>
-                 <h2 className="text-[#234e52] text-xl font-black uppercase tracking-widest text-center border-b-2 border-[#81e6d9] pb-2 mb-2">Estado de la Nave</h2>
+              <div style={{ width: '100%', height: '100%', backgroundColor: '#e6fffa', borderRadius: '8px', border: '4px solid #81e6d9', padding: '16px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
+                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(transparent 50%, rgba(0,0,0,0.05) 50%)', backgroundSize: '100% 4px', pointerEvents: 'none' }}></div>
+                 <h2 style={{ color: '#234e52', fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '2px', textAlign: 'center', borderBottom: '2px solid #81e6d9', paddingBottom: '8px', margin: '0 0 8px 0' }}>Estado de la Nave</h2>
                  
-                 <div className="flex-1 flex flex-col gap-3 justify-center">
-                   <CockpitStat label="POTENCIA" value={stats.damage} color="bg-red-500" />
-                   <CockpitStat label="ESCUDOS" value={stats.shield} color="bg-blue-500" />
-                   <CockpitStat label="ALCANCE" value={stats.range} color="bg-purple-500" />
-                   <CockpitStat label="AGILIDAD" value={stats.maneuverability} color="bg-green-500" />
+                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '12px', justifyContent: 'center' }}>
+                   <CockpitStat label="POTENCIA" value={stats.damage} color="#f56565" />
+                   <CockpitStat label="ESCUDOS" value={stats.shield} color="#4299e1" />
+                   <CockpitStat label="ALCANCE" value={stats.range} color="#9f7aea" />
+                   <CockpitStat label="AGILIDAD" value={stats.maneuverability} color="#48bb78" />
                  </div>
               </div>
             </div>
             
             {/* Physical Keypad */}
-            <div className="grid grid-cols-4 gap-2 px-2 pb-2">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px', padding: '0 8px 8px 8px' }}>
                {[...Array(8)].map((_, i) => (
-                 <div key={i} className="h-8 bg-[#f6e05e] rounded border-b-4 border-[#d69e2e] active:translate-y-1 active:border-b-0 transition-all cursor-pointer shadow-md"></div>
+                 <div key={i} style={{ height: '32px', backgroundColor: '#f6e05e', borderRadius: '4px', borderBottom: '4px solid #d69e2e', cursor: 'pointer', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }} className="btn-pushable"></div>
                ))}
             </div>
           </div>
 
           {/* CENTER PANEL: Main Controls */}
           <div 
-            className="w-[44%] h-[250px] bg-[#e6e2db] rounded-t-[40px] shadow-[0_-15px_30px_rgba(0,0,0,0.5)] border-t-8 border-[#c9c5be] p-4 flex flex-col items-center justify-end z-20"
-            style={{ transform: 'perspective(1000px) rotateX(20deg)', transformOrigin: 'bottom center' }}
+            style={{ width: '44%', height: '250px', backgroundColor: '#e6e2db', borderTopLeftRadius: '40px', borderTopRightRadius: '40px', boxShadow: '0 -15px 30px rgba(0,0,0,0.5)', borderTop: '8px solid #c9c5be', padding: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', zIndex: 20, transform: 'perspective(1000px) rotateX(20deg)', transformOrigin: 'bottom center' }}
           >
              {/* Center Screen */}
-             <div className="w-[80%] h-24 bg-[#319795] rounded-lg border-4 border-[#2c7a7b] mb-4 flex justify-between p-2 shadow-[inset_0_0_15px_rgba(0,0,0,0.5)]">
+             <div style={{ width: '80%', height: '96px', backgroundColor: '#319795', borderRadius: '8px', border: '4px solid #2c7a7b', marginBottom: '16px', display: 'flex', justifyContent: 'space-between', padding: '8px', boxShadow: 'inset 0 0 15px rgba(0,0,0,0.5)' }}>
                 {/* 3 panels inside center screen */}
-                <div className="w-[30%] bg-[#e6fffa] rounded border-2 border-[#81e6d9] flex flex-col items-center justify-center p-1">
-                   <span className="text-[10px] text-[#2c7a7b] font-bold text-center leading-tight">CLASE:</span>
-                   <span className="text-sm font-black text-[#234e52] text-center uppercase">{shipConfig.fuselage}</span>
+                <div style={{ width: '30%', backgroundColor: '#e6fffa', borderRadius: '4px', border: '2px solid #81e6d9', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '4px' }}>
+                   <span style={{ fontSize: '10px', color: '#2c7a7b', fontWeight: 'bold', textAlign: 'center', lineHeight: 1.2 }}>CLASE:</span>
+                   <span style={{ fontSize: '14px', fontWeight: 900, color: '#234e52', textAlign: 'center', textTransform: 'uppercase' }}>{shipConfig.fuselage}</span>
                 </div>
-                <div className="w-[38%] bg-[#81e6d9] rounded border-2 border-[#4fd1c5] relative overflow-hidden flex items-center justify-center">
-                   <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_50%,rgba(255,255,255,0.2)_50%)] bg-[length:20px_100%] animate-[slide_2s_linear_infinite]"></div>
-                   <Wrench size={32} className="text-[#234e52] relative z-10 animate-pulse" />
+                <div style={{ width: '38%', backgroundColor: '#81e6d9', borderRadius: '4px', border: '2px solid #4fd1c5', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.2) 50%)', backgroundSize: '20px 100%', animation: 'slide 2s linear infinite' }}></div>
+                   <Wrench size={32} color="#234e52" style={{ position: 'relative', zIndex: 10 }} className="pulse-anim" />
                 </div>
-                <div className="w-[30%] bg-[#e6fffa] rounded border-2 border-[#81e6d9] flex flex-col items-center justify-center p-1">
-                   <span className="text-[10px] text-[#2c7a7b] font-bold text-center leading-tight">SISTEMA:</span>
-                   <span className="text-sm font-black text-[#234e52] text-center uppercase">ÓPTIMO</span>
+                <div style={{ width: '30%', backgroundColor: '#e6fffa', borderRadius: '4px', border: '2px solid #81e6d9', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '4px' }}>
+                   <span style={{ fontSize: '10px', color: '#2c7a7b', fontWeight: 'bold', textAlign: 'center', lineHeight: 1.2 }}>SISTEMA:</span>
+                   <span style={{ fontSize: '14px', fontWeight: 900, color: '#234e52', textAlign: 'center', textTransform: 'uppercase' }}>ÓPTIMO</span>
                 </div>
              </div>
 
              {/* Main Category Buttons */}
-             <div className="flex w-full justify-between px-4 gap-2">
-               {categories.map(cat => (
-                 <button 
-                   key={cat.id}
-                   onClick={() => setActiveCategory(cat.id)}
-                   className={`flex-1 h-14 rounded-lg flex flex-col items-center justify-center gap-1 font-bold text-[10px] tracking-wider transition-all shadow-[0_4px_10px_rgba(0,0,0,0.2)] border-b-4
-                     ${activeCategory === cat.id 
-                       ? 'bg-[#f6e05e] border-[#d69e2e] text-[#744210] translate-y-1 border-b-0 shadow-inner' 
-                       : 'bg-[#ecc94b] border-[#b7791f] text-[#744210] hover:bg-[#f6e05e] active:translate-y-1 active:border-b-0'
-                     }`}
-                 >
-                   {cat.icon}
-                   {cat.label}
-                 </button>
-               ))}
+             <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', padding: '0 16px', gap: '8px' }}>
+               {categories.map(cat => {
+                 const isActive = activeCategory === cat.id;
+                 return (
+                   <button 
+                     key={cat.id}
+                     onClick={() => setActiveCategory(cat.id)}
+                     style={{ flex: 1, height: '56px', borderRadius: '8px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '4px', fontWeight: 'bold', fontSize: '10px', letterSpacing: '1px', transition: 'all 0.1s', border: 'none', cursor: 'pointer', ...isActive ? {
+                       backgroundColor: '#f6e05e', borderBottom: 'none', color: '#744210', transform: 'translateY(4px)', boxShadow: 'inset 0 4px 6px rgba(0,0,0,0.1)'
+                     } : {
+                       backgroundColor: '#ecc94b', borderBottom: '4px solid #b7791f', color: '#744210', boxShadow: '0 4px 10px rgba(0,0,0,0.2)'
+                     }}}
+                   >
+                     {cat.icon}
+                     {cat.label}
+                   </button>
+                 );
+               })}
              </div>
              
              {/* Small status lights */}
-             <div className="flex gap-4 mt-3">
-               <div className="w-4 h-4 rounded-full bg-[#48bb78] border-2 border-[#2f855a] shadow-[0_0_10px_#48bb78]"></div>
-               <div className="w-4 h-4 rounded-full bg-[#48bb78] border-2 border-[#2f855a] shadow-[0_0_10px_#48bb78]"></div>
-               <div className="w-4 h-4 rounded-full bg-[#ecc94b] border-2 border-[#b7791f]"></div>
+             <div style={{ display: 'flex', gap: '16px', marginTop: '12px' }}>
+               <div style={{ width: '16px', height: '16px', borderRadius: '50%', backgroundColor: '#48bb78', border: '2px solid #2f855a', boxShadow: '0 0 10px #48bb78' }}></div>
+               <div style={{ width: '16px', height: '16px', borderRadius: '50%', backgroundColor: '#48bb78', border: '2px solid #2f855a', boxShadow: '0 0 10px #48bb78' }}></div>
+               <div style={{ width: '16px', height: '16px', borderRadius: '50%', backgroundColor: '#ecc94b', border: '2px solid #b7791f' }}></div>
              </div>
           </div>
 
           {/* RIGHT PANEL: Options Screen */}
           <div 
-            className="w-[28%] h-[400px] bg-[#e6e2db] rounded-tl-[80px] shadow-[-10px_-10px_30px_rgba(0,0,0,0.6)] border-t-8 border-l-8 border-[#c9c5be] p-6 flex flex-col justify-end"
-            style={{ transform: 'perspective(1000px) rotateY(-15deg)', transformOrigin: 'right bottom' }}
+            style={{ width: '28%', height: '400px', backgroundColor: '#e6e2db', borderTopLeftRadius: '80px', boxShadow: '-10px -10px 30px rgba(0,0,0,0.6)', borderTop: '8px solid #c9c5be', borderLeft: '8px solid #c9c5be', padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', transform: 'perspective(1000px) rotateY(-15deg)', transformOrigin: 'right bottom' }}
           >
             {/* Screen border */}
-            <div className="w-full h-[70%] bg-[#2c7a7b] rounded-xl p-3 border-[6px] border-[#319795] shadow-[inset_0_0_20px_rgba(0,0,0,0.5),_0_10px_20px_rgba(0,0,0,0.3)] mb-4">
+            <div style={{ width: '100%', height: '70%', backgroundColor: '#2c7a7b', borderRadius: '12px', padding: '12px', border: '6px solid #319795', boxShadow: 'inset 0 0 20px rgba(0,0,0,0.5), 0 10px 20px rgba(0,0,0,0.3)', marginBottom: '16px' }}>
               {/* Actual Screen */}
-              <div className="w-full h-full bg-[#e6fffa] rounded-lg border-[4px] border-[#81e6d9] p-4 overflow-y-auto relative custom-scrollbar">
-                 <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.05)_50%)] bg-[length:100%_4px] pointer-events-none z-20"></div>
+              <div style={{ width: '100%', height: '100%', backgroundColor: '#e6fffa', borderRadius: '8px', border: '4px solid #81e6d9', padding: '16px', overflowY: 'auto', position: 'relative' }}>
+                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(transparent 50%, rgba(0,0,0,0.05) 50%)', backgroundSize: '100% 4px', pointerEvents: 'none', zIndex: 20 }}></div>
                  
-                 <h2 className="text-[#234e52] text-xl font-black uppercase tracking-widest text-center border-b-2 border-[#81e6d9] pb-2 mb-4 relative z-30">
+                 <h2 style={{ color: '#234e52', fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '2px', textAlign: 'center', borderBottom: '2px solid #81e6d9', paddingBottom: '8px', marginBottom: '16px', position: 'relative', zIndex: 30, margin: 0 }}>
                    {categories.find(c => c.id === activeCategory)?.label || 'OPCIONES'}
                  </h2>
 
-                 <div className="relative z-30 flex flex-col gap-3">
+                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', position: 'relative', zIndex: 30 }}>
                    <AnimatePresence mode="popLayout">
                      {activeCategory === 'colors' ? (
-                       <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="space-y-4">
+                       <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                          <CockpitColorPicker label="PRINCIPAL" colors={palettePrimary} selected={shipConfig.colors.primary} onSelect={c => setColor('primary', c)} />
                          <CockpitColorPicker label="SECUNDARIO" colors={paletteSecondary} selected={shipConfig.colors.secondary} onSelect={c => setColor('secondary', c)} />
                        </motion.div>
                      ) : (
-                       partOptions[activeCategory]?.map((opt, i) => (
-                         <motion.button
-                           initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: i * 0.1 }}
-                           key={opt.id}
-                           onClick={() => setPart(activeCategory, opt.id)}
-                           className={`w-full p-3 rounded-lg border-4 font-bold text-lg tracking-wide uppercase transition-all shadow-md text-left pl-4
-                             ${shipConfig[activeCategory] === opt.id 
-                               ? 'bg-[#319795] border-[#234e52] text-white shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] scale-[1.02]' 
-                               : 'bg-[#b2f5ea] border-[#81e6d9] text-[#2c7a7b] hover:bg-[#81e6d9] active:scale-95'
-                             }`}
-                         >
-                           {opt.label}
-                         </motion.button>
-                       ))
+                       partOptions[activeCategory]?.map((opt, i) => {
+                         const isSelected = shipConfig[activeCategory] === opt.id;
+                         return (
+                           <motion.button
+                             initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: i * 0.1 }}
+                             key={opt.id}
+                             onClick={() => setPart(activeCategory, opt.id)}
+                             style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '4px solid', fontWeight: 'bold', fontSize: '18px', letterSpacing: '1px', textTransform: 'uppercase', textAlign: 'left', paddingLeft: '16px', cursor: 'pointer', ...isSelected ? {
+                               backgroundColor: '#319795', borderColor: '#234e52', color: 'white', boxShadow: 'inset 0 0 10px rgba(0,0,0,0.5)', transform: 'scale(1.02)'
+                             } : {
+                               backgroundColor: '#b2f5ea', borderColor: '#81e6d9', color: '#2c7a7b'
+                             }}}
+                           >
+                             {opt.label}
+                           </motion.button>
+                         );
+                       })
                      )}
                    </AnimatePresence>
                  </div>
@@ -203,13 +206,13 @@ export default function NaveHangar() {
             </div>
             
             {/* Physical Dials/Buttons */}
-            <div className="flex justify-between px-4 pb-2">
-               <div className="w-12 h-12 rounded-full bg-[#e53e3e] border-b-4 border-[#c53030] shadow-md active:translate-y-1 active:border-b-0 cursor-pointer flex items-center justify-center text-white font-black">X</div>
-               <div className="grid grid-cols-2 gap-2">
-                 <div className="w-6 h-6 rounded-full bg-[#edf2f7] border-b-2 border-[#cbd5e0]"></div>
-                 <div className="w-6 h-6 rounded-full bg-[#edf2f7] border-b-2 border-[#cbd5e0]"></div>
-                 <div className="w-6 h-6 rounded-full bg-[#edf2f7] border-b-2 border-[#cbd5e0]"></div>
-                 <div className="w-6 h-6 rounded-full bg-[#edf2f7] border-b-2 border-[#cbd5e0]"></div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0 16px 8px 16px' }}>
+               <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: '#e53e3e', borderBottom: '4px solid #c53030', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 900 }}>X</div>
+               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' }}>
+                 <div style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#edf2f7', borderBottom: '2px solid #cbd5e0' }}></div>
+                 <div style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#edf2f7', borderBottom: '2px solid #cbd5e0' }}></div>
+                 <div style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#edf2f7', borderBottom: '2px solid #cbd5e0' }}></div>
+                 <div style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#edf2f7', borderBottom: '2px solid #cbd5e0' }}></div>
                </div>
             </div>
           </div>
@@ -219,9 +222,12 @@ export default function NaveHangar() {
       
       <style>{`
         @keyframes slide { from { background-position: 0 0; } to { background-position: 20px 0; } }
-        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: #319795; border-radius: 10px; }
+        .pulse-anim { animation: pulse 2s infinite; }
+        @keyframes pulse {
+          0% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.1); opacity: 0.8; }
+          100% { transform: scale(1); opacity: 1; }
+        }
       `}</style>
     </div>
   );
@@ -229,17 +235,17 @@ export default function NaveHangar() {
 
 function CockpitStat({ label, value, color }) {
   return (
-    <div>
-      <div className="flex justify-between text-[#2c7a7b] font-bold text-xs mb-1">
+    <div style={{ marginBottom: '4px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', color: '#2c7a7b', fontWeight: 'bold', fontSize: '12px', marginBottom: '4px' }}>
         <span>{label}</span>
         <span>{value}%</span>
       </div>
-      <div className="w-full h-4 bg-[#b2f5ea] rounded-full border-2 border-[#81e6d9] overflow-hidden p-[2px]">
+      <div style={{ width: '100%', height: '16px', backgroundColor: '#b2f5ea', borderRadius: '9999px', border: '2px solid #81e6d9', padding: '2px', overflow: 'hidden' }}>
         <motion.div 
           initial={{ width: 0 }} 
           animate={{ width: `${value}%` }} 
           transition={{ duration: 0.5 }}
-          className={`h-full rounded-full ${color} shadow-[inset_0_2px_4px_rgba(255,255,255,0.4)]`} 
+          style={{ height: '100%', borderRadius: '9999px', backgroundColor: color, boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.4)' }} 
         />
       </div>
     </div>
@@ -248,25 +254,23 @@ function CockpitStat({ label, value, color }) {
 
 function CockpitColorPicker({ label, colors, selected, onSelect }) {
   return (
-    <div className="mb-2">
-      <div className="text-[#2c7a7b] font-bold text-xs mb-2">{label}</div>
-      <div className="grid grid-cols-5 gap-2">
-        {colors.slice(0, 5).map(c => (
-          <button 
-            key={c}
-            onClick={() => onSelect(c)}
-            style={{ backgroundColor: c }}
-            className={`h-8 rounded shadow-md border-2 transition-transform ${selected === c ? 'border-[#1a202c] scale-110' : 'border-transparent hover:scale-105'}`}
-          />
-        ))}
-        {colors.slice(5).map(c => (
-          <button 
-            key={c}
-            onClick={() => onSelect(c)}
-            style={{ backgroundColor: c }}
-            className={`h-8 rounded shadow-md border-2 transition-transform ${selected === c ? 'border-[#1a202c] scale-110' : 'border-transparent hover:scale-105'}`}
-          />
-        ))}
+    <div style={{ marginBottom: '8px' }}>
+      <div style={{ color: '#2c7a7b', fontWeight: 'bold', fontSize: '12px', marginBottom: '8px' }}>{label}</div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '8px' }}>
+        {colors.map(c => {
+          const isSelected = selected === c;
+          return (
+            <button 
+              key={c}
+              onClick={() => onSelect(c)}
+              style={{ backgroundColor: c, height: '32px', borderRadius: '4px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', cursor: 'pointer', transition: 'transform 0.1s', ...isSelected ? {
+                border: '2px solid #1a202c', transform: 'scale(1.1)'
+              } : {
+                border: '2px solid transparent'
+              }}}
+            />
+          );
+        })}
       </div>
     </div>
   );
