@@ -11,72 +11,97 @@ import { useEffect, useState } from 'react';
 const APOLLO_MODULES = [
   {
     id: 'apollo11_m1', titleEs: 'El Cohete Saturn V', link: '/course/apollo11_m1',
-    color: '#FF6B35', coords: { left: '14%', top: '72%' },
+    color: '#FF6B35', coords: { left: '15%', top: '75%' },
     icon: '/assets/apollo11/m1_launch.png',
   },
   {
     id: 'apollo11_m2', titleEs: 'Rumbo a la Luna', link: '/course/apollo11_m2',
-    color: '#00C2FF', coords: { left: '29%', top: '52%' },
+    color: '#00C2FF', coords: { left: '15%', top: '40%' },
     icon: '/assets/apollo11/m2_trajectory.png',
   },
   {
     id: 'apollo11_m3', titleEs: 'Descenso del Águila', link: '/course/apollo11_m3',
-    color: '#C0E8FF', coords: { left: '46%', top: '34%' },
+    color: '#C0E8FF', coords: { left: '35%', top: '25%' },
     icon: '/assets/apollo11/m3_eagle.png',
   },
   {
     id: 'apollo11_m4', titleEs: 'El Primer Paso', link: '/course/apollo11_m4',
-    color: '#F5D020', coords: { left: '62%', top: '28%' },
+    color: '#F5D020', coords: { left: '65%', top: '25%' },
     icon: '/assets/apollo11/m4_moonwalk.png',
   },
   {
     id: 'apollo11_m5', titleEs: 'Regreso a Órbita', link: '/course/apollo11_m5',
-    color: '#A8FF78', coords: { left: '76%', top: '42%' },
+    color: '#A8FF78', coords: { left: '85%', top: '40%' },
     icon: '/assets/apollo11/m5_ascent.png',
   },
   {
     id: 'apollo11_m6', titleEs: 'Amerizaje y Triunfo', link: '/course/apollo11_m6',
-    color: '#38B6FF', coords: { left: '88%', top: '62%' },
+    color: '#38B6FF', coords: { left: '85%', top: '75%' },
     icon: '/assets/apollo11/m6_splashdown.png',
   },
 ];
 
-// ─── Partículas de fuego para la plataforma ────────────────────────────────
 function LaunchPadEmbers() {
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 2, overflow: 'hidden' }}>
-      {Array.from({ length: 18 }).map((_, i) => {
-        const left = 5 + Math.random() * 40; // Fuego de la plataforma (izquierda-centro)
-        const size = Math.random() * 4 + 2;
-        const duration = Math.random() * 4 + 3;
+      
+      {/* Humo denso animado */}
+      <div style={{
+        position: 'absolute', bottom: '-10%', left: '0%', width: '150%', height: '50%',
+        background: 'radial-gradient(ellipse at center, rgba(200, 200, 200, 0.4) 0%, rgba(100, 100, 100, 0.1) 40%, transparent 70%)',
+        filter: 'blur(30px)',
+        animation: 'smokeDrift 12s ease-in-out infinite alternate',
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '-5%', right: '-20%', width: '120%', height: '60%',
+        background: 'radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0%, rgba(150, 150, 150, 0.1) 50%, transparent 70%)',
+        filter: 'blur(40px)',
+        animation: 'smokeDrift 15s ease-in-out infinite alternate-reverse',
+      }} />
+
+      {/* Resplandor de Fuego (Llama principal de propulsión) */}
+      <div style={{
+        position: 'absolute', bottom: '0%', left: '50%', transform: 'translateX(-50%)',
+        width: '40%', height: '40%',
+        background: 'radial-gradient(ellipse at bottom, rgba(255, 107, 53, 0.6) 0%, rgba(255, 215, 0, 0.3) 30%, transparent 70%)',
+        filter: 'blur(40px)',
+        animation: 'firePulse 2s ease-in-out infinite',
+      }} />
+
+      {/* Chispas y Brasas */}
+      {Array.from({ length: 30 }).map((_, i) => {
+        const left = 30 + Math.random() * 40; // Concentrado al centro donde está el cohete
+        const size = Math.random() * 5 + 3;
+        const duration = Math.random() * 3 + 2;
         const delay = Math.random() * 5;
-        const color = ['#FF6B35', '#FF9A3C', '#FFD700', '#FFF'][Math.floor(Math.random() * 4)];
+        const color = ['#FF6B35', '#FF9A3C', '#FFD700', '#FFFFFF'][Math.floor(Math.random() * 4)];
         return (
           <div key={i} style={{
             position: 'absolute',
             left: `${left}%`,
-            bottom: '0%',
+            bottom: '5%',
             width: `${size}px`, height: `${size}px`,
             borderRadius: '50%',
             background: color,
-            boxShadow: `0 0 6px ${color}`,
+            boxShadow: `0 0 10px ${color}, 0 0 20px ${color}`,
             animation: `riseEmber ${duration}s ease-out ${delay}s infinite`,
           }} />
         );
       })}
+      
       <style>{`
+        @keyframes smokeDrift {
+          0% { transform: translateX(-5%) translateY(5%) scale(1); opacity: 0.5; }
+          100% { transform: translateX(5%) translateY(-5%) scale(1.1); opacity: 0.8; }
+        }
+        @keyframes firePulse {
+          0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+          50% { opacity: 0.9; transform: translateX(-50%) scale(1.1); }
+        }
         @keyframes riseEmber {
-          0%   { transform: translateY(0) scale(1); opacity: 0.9; }
-          80%  { transform: translateY(-70vh) translateX(${Math.random() > 0.5 ? '+' : '-'}20px) scale(0.4); opacity: 0.4; }
+          0%   { transform: translateY(0) scale(1); opacity: 1; }
+          80%  { transform: translateY(-60vh) translateX(${Math.random() > 0.5 ? '+' : '-'}30px) scale(0.5); opacity: 0.5; }
           100% { transform: translateY(-80vh) scale(0); opacity: 0; }
-        }
-        @keyframes countdownPulse {
-          0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(255, 107, 53, 0.8); }
-          50%       { opacity: 0.6; text-shadow: 0 0 40px rgba(255, 107, 53, 1); }
-        }
-        @keyframes scanLine {
-          0%   { transform: translateY(-100%); }
-          100% { transform: translateY(100vh); }
         }
       `}</style>
     </div>
@@ -306,11 +331,10 @@ export default function Apollo11Hub() {
                 <stop offset="100%" stopColor="#38B6FF" />
               </linearGradient>
             </defs>
-            {/* Arco de trayectoria de la misión */}
             <path
-              d="M 14% 72% Q 30% 20% 46% 34% Q 60% 15% 76% 42% Q 85% 55% 88% 62%"
-              fill="none" stroke="url(#trajectoryGrad)" strokeWidth="2"
-              strokeDasharray="8 6" vectorEffect="non-scaling-stroke"
+              d="M 15% 75% Q 15% 55% 15% 40% Q 25% 30% 35% 25% Q 50% 20% 65% 25% Q 75% 30% 85% 40% Q 85% 55% 85% 75%"
+              fill="none" stroke="url(#trajectoryGrad)" strokeWidth="3"
+              strokeDasharray="10 8" vectorEffect="non-scaling-stroke"
             />
           </svg>
 

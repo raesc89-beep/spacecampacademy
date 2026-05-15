@@ -14,7 +14,7 @@ const BTTF_MODULES = [
     color: '#00FFFF', // Cyan glow
     link: '/course/bttf_m1',
     icon: '/assets/bttf/bttf_m1.png',
-    coords: { left: '15%', top: '20%' },
+    coords: { left: '15%', top: '35%' },
   },
   {
     id: 'bttf_m2',
@@ -22,7 +22,7 @@ const BTTF_MODULES = [
     color: '#FF00FF', // Magenta glow
     link: '/course/bttf_m2',
     icon: '/assets/bttf/bttf_m2.png',
-    coords: { left: '40%', top: '15%' },
+    coords: { left: '40%', top: '25%' },
   },
   {
     id: 'bttf_m3',
@@ -30,7 +30,7 @@ const BTTF_MODULES = [
     color: '#FFA500', // Orange glow
     link: '/course/bttf_m3',
     icon: '/assets/bttf/bttf_m3.png',
-    coords: { left: '65%', top: '20%' },
+    coords: { left: '65%', top: '35%' },
   },
   {
     id: 'bttf_m4',
@@ -38,7 +38,7 @@ const BTTF_MODULES = [
     color: '#FFFF00', // Yellow lightning
     link: '/course/bttf_m4',
     icon: '/assets/bttf/bttf_m4.png',
-    coords: { left: '25%', top: '40%' },
+    coords: { left: '25%', top: '55%' },
   },
   {
     id: 'bttf_m5',
@@ -46,7 +46,7 @@ const BTTF_MODULES = [
     color: '#00FF00', // Green hoverboard
     link: '/course/bttf_m5',
     icon: '/assets/bttf/bttf_m5.png',
-    coords: { left: '50%', top: '35%' },
+    coords: { left: '50%', top: '50%' },
   },
   {
     id: 'bttf_m6',
@@ -54,7 +54,7 @@ const BTTF_MODULES = [
     color: '#FF4500', // Fire trails
     link: '/course/bttf_m6',
     icon: '/assets/bttf/bttf_m6.png',
-    coords: { left: '75%', top: '45%' },
+    coords: { left: '75%', top: '60%' },
   },
   {
     id: 'bttf_m7',
@@ -62,7 +62,7 @@ const BTTF_MODULES = [
     color: '#8A2BE2', // Neon purple
     link: '/course/bttf_m7',
     icon: '/assets/bttf/bttf_m7.png',
-    coords: { left: '35%', top: '60%' },
+    coords: { left: '40%', top: '75%' },
   },
 ];
 
@@ -137,6 +137,34 @@ function SmokeEffect() {
   );
 }
 
+// ─── Componente de Rieles de Fuego (DeLorean) ──────────────────────────────
+function FireTrailsEffect() {
+  return (
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 3, overflow: 'hidden' }}>
+      {/* Rastro de fuego Izquierdo */}
+      <div style={{
+        position: 'absolute', bottom: '15%', left: '0%', width: '100%', height: '8px',
+        background: 'linear-gradient(90deg, rgba(255,100,0,0) 0%, rgba(255,150,0,0.8) 50%, rgba(255,200,0,1) 80%, rgba(255,255,255,1) 100%)',
+        boxShadow: '0 0 20px #ff6600, 0 0 40px #ff3300',
+        transform: 'rotate(-5deg)',
+        transformOrigin: 'left center',
+        animation: 'fireTrailMove 3s infinite',
+        opacity: 0.7,
+      }} />
+      {/* Rastro de fuego Derecho */}
+      <div style={{
+        position: 'absolute', bottom: '10%', left: '0%', width: '100%', height: '8px',
+        background: 'linear-gradient(90deg, rgba(255,100,0,0) 0%, rgba(255,150,0,0.8) 50%, rgba(255,200,0,1) 80%, rgba(255,255,255,1) 100%)',
+        boxShadow: '0 0 20px #ff6600, 0 0 40px #ff3300',
+        transform: 'rotate(-5deg)',
+        transformOrigin: 'left center',
+        animation: 'fireTrailMove 3s infinite 0.2s',
+        opacity: 0.7,
+      }} />
+    </div>
+  );
+}
+
 // ─── Estilos Globales para animaciones ─────────────────────────────────────
 const globalStyles = `
 @keyframes lightningFlash {
@@ -167,6 +195,11 @@ const globalStyles = `
   20% { opacity: 1; }
   80% { opacity: 1; }
   100% { stroke-dashoffset: 0; opacity: 0.2; }
+}
+@keyframes fireTrailMove {
+  0% { transform: rotate(-5deg) translateX(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(-5deg) translateX(100%); opacity: 0; }
 }
 `;
 
@@ -360,6 +393,9 @@ export default function BTTFHub() {
         
         {/* Efecto de Humo en la calle (esquina inferior izquierda) */}
         <SmokeEffect />
+
+        {/* Efecto de Fuego en Rieles de DeLorean */}
+        <FireTrailsEffect />
 
         {/* Constelaciones */}
         <ConstellationLines />

@@ -7,8 +7,10 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Lock, Star, PlayCircle, Rocket, Gamepad2 } from 'lucide-react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Search, Map, ChevronRight, Lock, Star, PlayCircle, Rocket, Gamepad2, Filter } from 'lucide-react';
 
 const DASHBOARD_MISSIONS = [
   {
@@ -179,37 +181,21 @@ const DASHBOARD_MISSIONS = [
     bgSrc: "/assets/dashboard/arcade_cover.png",
     badgeColor: "#FF00FF",
     badgeText: "Minijuegos",
-    borderColor: "rgba(255,0,255,0.4)",
-    isMinigame: true
-  }
-];
-
-
-export default function CourseHub() {
+    borderColor: "rgba(255,0,export default function CourseHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
+  const [activeCategory, setActiveCategory] = useState('Todos');
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
   }, [user, loading, router]);
 
   if (loading || !userData) {
-    return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Validando acceso al Hub...</div>;
-  }
-
-  // Muro Administrativo de Autorización (Fase 3.6)
-  if (false && userData.role !== "admin" && !userData.isApproved) { // Bypass Muro Restringido
     return (
-      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', background: 'radial-gradient(circle at center, #1a0b2e 0%, #000000 100%)' }}>
-        <div style={{ background: 'rgba(255,255,255,0.05)', padding: '3rem', borderRadius: '24px', border: '1px solid rgba(255,51,102,0.3)', maxWidth: '500px' }}>
-           <h1 style={{ color: 'var(--danger)', fontSize: '2.5rem', marginBottom: '1rem' }}>Sector Restringido</h1>
-           <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', marginBottom: '2rem' }}>
-             Tu identidad está siendo verificada por el <strong>Comandante en Jefe (Administrador)</strong>. <br/><br/>
-             Por protocolos intergalácticos de seguridad, espera a que tu solicitud sea aprobada antes de ingresar a la Estación Central.
-           </p>
-           <button onClick={() => { import('firebase/auth').then(m => m.signOut(import('@/lib/firebase').then(f => f.auth))); window.location.href = '/'; }} className="btn-secondary">
-             Cerrar Sesión
-           </button>
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#00E4FF' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+          <div className="pulse-anim" style={{ width: 50, height: 50, border: '4px solid #00E4FF', borderRadius: '50%', borderTopColor: 'transparent', animation: 'spin 1s linear infinite' }} />
+          Accediendo a la Base de Datos Estelar...
         </div>
       </div>
     );
@@ -217,91 +203,173 @@ export default function CourseHub() {
 
   const userStars = userData?.progress?.stars || 0;
 
+  const categories = ['Todos', 'Arqueoastronomía', 'Exploración Galáctica', 'Misión Lunar', 'Teoría Astrofísica', 'Vuelo y Geología', 'Minijuegos'];
+
+  const getCategory = (badgeText) => {
+    if (badgeText.includes('Arqueoastronomía')) return 'Arqueoastronomía';
+    if (badgeText.includes('Exploración')) return 'Exploración Galáctica';
+    if (badgeText.includes('Misión Lunar')) return 'Misión Lunar';
+    if (badgeText.includes('Astrofísica') || badgeText.includes('Física') || badgeText.includes('Evento')) return 'Teoría Astrofísica';
+    if (badgeText.includes('Minijuegos')) return 'Minijuegos';
+    return 'Vuelo y Geología'; // Default for Vuelo Espacial, Historico, Biologico, Rocoso
+  };
+
+  const filteredMissions = activeCategory === 'Todos' 
+    ? DASHBOARD_MISSIONS 
+    : DASHBOARD_MISSIONS.filter(m => getCategory(m.badgeText) === activeCategory);
+
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#020308', overflow: 'hidden' }}>
       <Navbar />
       
-      <main className="layout-container" style={{ flex: 1, padding: '3rem 2rem', display: 'flex', flexDirection: 'column', gap: '4rem' }}>
+      {/* Background Ambience */}
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(circle at top right, rgba(0,228,255,0.05) 0%, transparent 40%), radial-gradient(circle at bottom left, rgba(153,51,255,0.05) 0%, transparent 40%)', zIndex: 0 }} />
+
+      <main style={{ flex: 1, padding: '3rem 5%', display: 'flex', flexDirection: 'column', gap: '3rem', position: 'relative', zIndex: 1 }}>
         
-        {/* Welcome Section */}
-        <section style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
+        {/* Encabezado */}
+        <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '2rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1.5rem' }}>
           <div>
-            <h1 style={{ fontSize: '3rem', margin: 0, textShadow: '0 0 20px rgba(0, 228, 255, 0.3)' }}>Catálogo de Misiones</h1>
-            <p className="lead" style={{ margin: '0.5rem 0', color: 'var(--text-muted)' }}>Hola, Comandante {userData.name}. Escoge tu próximo destino.</p>
-          </div>
-          <div className="glass-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem', minWidth: '200px', border: '1px solid rgba(255,215,0,0.3)' }}>
-            <div style={{ background: 'rgba(255, 215, 0, 0.2)', padding: '1rem', borderRadius: '50%', boxShadow: '0 0 20px rgba(255, 215, 0, 0.4)' }}>
-              <Star size={32} color="var(--gold-star)" />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', color: 'var(--electric-blue)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.85rem', fontWeight: 600 }}>
+              <Map size={18} /> Terminal de Navegación
             </div>
+            <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', margin: 0, color: 'white', textShadow: '0 0 20px rgba(0, 228, 255, 0.2)', fontWeight: 800 }}>
+              Catálogo de Misiones
+            </h1>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255,215,0,0.05)', padding: '0.8rem 1.5rem', borderRadius: '20px', border: '1px solid rgba(255,215,0,0.2)' }}>
+            <Star size={24} color="var(--gold-star)" />
             <div>
-              <p style={{ margin: 0, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '2px', color: 'var(--text-muted)' }}>Polvo Estelar Total</p>
-              <h2 style={{ margin: 0, fontSize: '2.5rem', color: 'var(--gold-star)', lineHeight: 1 }}>{userStars}</h2>
+              <p style={{ margin: 0, fontSize: '0.7rem', color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '1px' }}>Polvo Estelar Disponible</p>
+              <h2 style={{ margin: 0, fontSize: '1.8rem', color: 'var(--gold-star)', lineHeight: 1 }}>{userStars}</h2>
+            </div>
+          </div>
+        </header>
+
+        {/* Featured Mission - Sistema Solar */}
+        <section>
+          <div style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', padding: '3rem 4rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '350px', border: '1px solid rgba(0,228,255,0.3)', boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 40px rgba(0,228,255,0.1)' }}>
+            <Image src="/assets/solar_system_cover.png" alt="Solar System" fill style={{ objectFit: 'cover', zIndex: -1, opacity: 0.6 }} quality={85} priority />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(2,3,8,0.9) 0%, rgba(2,3,8,0.4) 60%, transparent 100%)', zIndex: 0 }}></div>
+            
+            <div style={{ position: 'relative', zIndex: 1, maxWidth: '600px' }}>
+               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(0,228,255,0.2)', color: '#00E4FF', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 'bold', letterSpacing: '1px', marginBottom: '1rem', border: '1px solid rgba(0,228,255,0.4)' }}>
+                 <Rocket size={14} /> MISIÓN PRIORITARIA DE LA FLOTA
+               </div>
+               <h2 style={{ fontSize: '3rem', margin: '0 0 1rem 0', color: 'white', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>El Sistema Solar</h2>
+               <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.8)', margin: '0 0 2rem 0', lineHeight: 1.5 }}>
+                 Conquista los 9 planetas, descubre sus misterios bilingües y recolecta las medallas orbitales en la experiencia insignia de la academia.
+               </p>
+               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ display: 'inline-block' }}>
+                 <Link href="/hub/solar-system" style={{ textDecoration: 'none', background: 'var(--electric-blue)', color: 'black', padding: '1rem 2.5rem', borderRadius: '30px', fontWeight: 'bold', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.8rem', boxShadow: '0 0 20px rgba(0,228,255,0.4)' }}>
+                   <PlayCircle size={24} /> Iniciar Secuencia
+                 </Link>
+               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Featured Course */}
-        <section style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', padding: '4rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', minHeight: '400px', border: '1px solid rgba(255,255,255,0.1)' }}>
-          <Image src="/assets/solar_system_cover.png" alt="Solar System" fill style={{ objectFit: 'cover', zIndex: -1, opacity: 0.7 }} quality={75} priority />
-          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(90deg, #020308 0%, rgba(2,3,8,0.4) 100%)', zIndex: 0 }}></div>
-          
-          <div style={{ position: 'relative', zIndex: 1, maxWidth: '600px' }}>
-             <p style={{ color: 'var(--electric-blue)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-               <Rocket size={18} /> Curso Principal Activo
-             </p>
-             <h2 style={{ fontSize: '3.5rem', margin: 0, lineHeight: 1.1 }}>Misión: Sistema Solar</h2>
-             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: '1rem 0 2rem 0' }}>Conquista los 9 planetas, descubre sus misterios bilingües y recolecta las medallas orbitales completando minijuegos de simulación.</p>
-             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-               <Link href="/hub/solar-system" className="btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.3rem', display: 'inline-flex', alignItems: 'center', gap: '1rem', background: 'var(--electric-blue)', color: 'black', boxShadow: '0 0 30px rgba(0, 228, 255, 0.4)' }}>
-                 <PlayCircle size={28} /> DESPEGAR AL MAPA
-               </Link>
-             </motion.div>
+        {/* Filtros */}
+        <section style={{ display: 'flex', alignItems: 'center', gap: '1rem', overflowX: 'auto', paddingBottom: '1rem', scrollbarWidth: 'none' }}>
+          <div style={{ color: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', gap: '0.5rem', paddingRight: '1rem', borderRight: '1px solid rgba(255,255,255,0.2)' }}>
+            <Filter size={18} /> Filtrar
           </div>
+          {categories.map(cat => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              style={{
+                background: activeCategory === cat ? 'rgba(0,228,255,0.15)' : 'transparent',
+                border: `1px solid ${activeCategory === cat ? '#00E4FF' : 'rgba(255,255,255,0.2)'}`,
+                color: activeCategory === cat ? '#00E4FF' : 'rgba(255,255,255,0.6)',
+                padding: '0.5rem 1.2rem',
+                borderRadius: '20px',
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+                fontWeight: 600,
+                transition: 'all 0.2s',
+                boxShadow: activeCategory === cat ? '0 0 15px rgba(0,228,255,0.2)' : 'none'
+              }}
+            >
+              {cat}
+            </button>
+          ))}
         </section>
 
-        {/* Dynamic Coming Soon / Hub Catalog */}
+        {/* Grid de Misiones */}
         <section>
-          <h2 style={{ fontSize: '2rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            Exploración y Simuladores <span style={{ fontSize: '1rem', background: 'rgba(255,255,255,0.1)', padding: '0.3rem 0.8rem', borderRadius: '12px' }}>Actualizado</span>
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            
-            {DASHBOARD_MISSIONS.map((mission) => (
-              <Link key={mission.id} href={mission.link} style={{ textDecoration: 'none' }}>
-                <motion.div whileHover={{ y: -10 }} className="glass-card" style={{ position: 'relative', overflow: 'hidden', padding: '12rem 2rem 2.5rem 2rem', opacity: 1, borderRadius: '20px', border: `1px solid ${mission.borderColor}` }}>
-                   {mission.bgSrc ? (
-                      <Image src={mission.bgSrc} alt={mission.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover', filter: 'brightness(0.6)' }} quality={60} />
-                   ) : (
-                      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: mission.bgImage, filter: 'brightness(0.6)' }}></div>
-                   )}
-                   <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)', zIndex: 0 }}></div>
-                   
-                   <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 1, background: mission.badgeColor, color: mission.id === 'creator' ? 'white' : 'black', padding: '0.5rem 1rem', borderRadius: '30px', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
-                     {mission.isMinigame ? <Gamepad2 size={16} /> : <PlayCircle size={16} />}
-                     <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>{mission.badgeText}</span>
-                   </div>
-
-                   <div style={{ position: 'relative', zIndex: 1 }}>
-                     <h3 style={{ margin: 0, fontSize: '1.8rem', color: mission.isMinigame ? mission.badgeColor : 'white', textShadow: `0 0 10px ${mission.borderColor}` }}>{mission.title}</h3>
-                     <p style={{ color: mission.isMinigame ? 'var(--text-muted)' : mission.badgeColor, marginTop: '0.5rem' }}>{mission.subtitle}</p>
-                     
-                     {mission.isMinigame && (
-                       <div style={{ marginTop: '1.5rem' }}>
-                          <div className={mission.id === 'creator' ? "btn-primary" : "btn-secondary"} style={{ padding: '0.8rem 1.5rem', display: 'inline-block', borderColor: mission.badgeColor, color: mission.badgeColor, background: 'transparent' }}>
-                            {mission.id === 'creator' ? 'INICIAR MÃQUINA' : 'JUGAR AHORA'}
-                          </div>
+          <AnimatePresence mode="popLayout">
+            <motion.div 
+              layout 
+              style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '2rem' }}
+            >
+              {filteredMissions.map((mission, idx) => (
+                <motion.div
+                  key={mission.id}
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.2, delay: idx * 0.05 }}
+                >
+                  <Link href={mission.link} style={{ textDecoration: 'none' }}>
+                    <motion.div 
+                      whileHover={{ y: -8, boxShadow: `0 15px 30px rgba(0,0,0,0.6), 0 0 0 1px ${mission.borderColor}, 0 0 20px ${mission.borderColor}` }}
+                      style={{ 
+                        position: 'relative', overflow: 'hidden', height: '100%', minHeight: '380px',
+                        background: 'rgba(10,15,30,0.5)', borderRadius: '20px', 
+                        border: '1px solid rgba(255,255,255,0.05)',
+                        display: 'flex', flexDirection: 'column',
+                        transition: 'all 0.3s ease'
+                      }}
+                    >
+                       {/* Imagen Superior */}
+                       <div style={{ position: 'relative', height: '200px', width: '100%' }}>
+                         {mission.bgSrc ? (
+                            <Image src={mission.bgSrc} alt={mission.title} fill style={{ objectFit: 'cover' }} quality={60} />
+                         ) : (
+                            <div style={{ position: 'absolute', inset: 0, background: mission.bgImage }}></div>
+                         )}
+                         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 0%, rgba(10,15,30,1) 100%)' }}></div>
+                         
+                         {/* Badge Superior */}
+                         <div style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'rgba(0,0,0,0.7)', border: `1px solid ${mission.badgeColor}`, color: mission.badgeColor, padding: '0.4rem 0.8rem', borderRadius: '15px', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '1px', backdropFilter: 'blur(5px)' }}>
+                           {mission.isMinigame ? <Gamepad2 size={14} /> : <Rocket size={14} />}
+                           {mission.badgeText}
+                         </div>
                        </div>
-                     )}
-                   </div>
+                       
+                       {/* Contenido Inferior */}
+                       <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', zIndex: 1 }}>
+                         <div>
+                           <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.4rem', color: 'white', lineHeight: 1.2 }}>{mission.title}</h3>
+                           <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.5, margin: 0 }}>{mission.subtitle}</p>
+                         </div>
+                         
+                         <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', color: mission.badgeColor, fontWeight: 600, fontSize: '0.9rem', gap: '0.5rem' }}>
+                           <span>{mission.isMinigame ? 'ACCEDER AL SIMULADOR' : 'VER EXPEDIENTE'}</span>
+                           <ChevronRight size={16} />
+                         </div>
+                       </div>
+                    </motion.div>
+                  </Link>
                 </motion.div>
-              </Link>
-            ))}
-
-          </div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
+          
+          {filteredMissions.length === 0 && (
+            <div style={{ textAlign: 'center', padding: '4rem', color: 'rgba(255,255,255,0.4)' }}>
+              No se encontraron misiones en esta categoría.
+            </div>
+          )}
         </section>
-
       </main>
+      
+      <style>{`
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+      `}</style>
     </div>
   );
 }
-
