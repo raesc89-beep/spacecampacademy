@@ -80,7 +80,7 @@ function ProceduralShipAAA() {
   });
 
   return (
-    <group ref={group} dispose={null} scale={1.5}>
+    <group ref={group} dispose={null} scale={2.5}>
       
       {/* NÚCLEO REACTOR (Emisivo Volumétrico) */}
       <mesh position={[0, 0.2, -0.2]} material={materials.emissive}>
@@ -217,7 +217,7 @@ function HangarEnvironment() {
 export default function SpaceshipScene() {
   return (
     <div className="w-full h-full bg-[#010204]">
-      <Canvas shadows camera={{ position: [10, 5, 10], fov: 40 }} gl={{ antialias: false }}>
+      <Canvas shadows camera={{ position: [8, 4, 8], fov: 35 }} gl={{ antialias: true }}>
         {/* Fondo Profundo */}
         <color attach="background" args={['#010204']} />
         <Stars radius={150} depth={50} count={8000} factor={4} saturation={0.5} fade speed={1} />
@@ -250,9 +250,8 @@ export default function SpaceshipScene() {
             intensity={0.5} 
             radius={0.3} 
           />
-          <DepthOfField focusDistance={0} focalLength={0.02} bokehScale={2} height={480} />
-          <Noise opacity={0.03} blendFunction={BlendFunction.OVERLAY} />
-          <Vignette eskil={false} offset={0.1} darkness={1.2} />
+          <Noise opacity={0.02} blendFunction={BlendFunction.OVERLAY} />
+          <Vignette eskil={false} offset={0.1} darkness={1.0} />
         </EffectComposer>
 
         <OrbitControls 
