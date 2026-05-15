@@ -3,10 +3,10 @@ import { useAuth } from '@/hooks/useAuth';
 import { doc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
-import { motion } from 'framer-motion';
+
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Lock, Star, PlayCircle, Rocket, Gamepad2 } from 'lucide-react';
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -181,7 +181,12 @@ const DASHBOARD_MISSIONS = [
     bgSrc: "/assets/dashboard/arcade_cover.png",
     badgeColor: "#FF00FF",
     badgeText: "Minijuegos",
-    borderColor: "rgba(255,0,export default function CourseHub() {
+    borderColor: "rgba(255,0,255,0.4)",
+    isMinigame: true
+  }
+];
+
+export default function CourseHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
   const [activeCategory, setActiveCategory] = useState('Todos');
