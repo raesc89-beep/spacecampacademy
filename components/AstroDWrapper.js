@@ -28,7 +28,7 @@ class AstroDErrorBoundary extends React.Component {
 export default function AstroDWrapper() {
   const pathname = usePathname();
   
-  if (pathname && pathname.startsWith('/hangar/nave')) {
+  if (pathname && pathname.startsWith('/hangar')) {
     return null;
   }
 

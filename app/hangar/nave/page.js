@@ -60,23 +60,38 @@ export default function NaveHangar() {
         {/* Top Arch / Window Frame */}
         <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', pointerEvents: 'none' }}>
           {/* Left Arch */}
-          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomRightRadius: '120px', boxShadow: '10px 10px 30px rgba(0, 228, 255, 0.1)', borderRight: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', padding: '24px', alignItems: 'flex-start' }}>
+          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomRightRadius: '120px', boxShadow: '10px 10px 30px rgba(0, 228, 255, 0.1)', borderRight: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', padding: '24px', alignItems: 'flex-start', justifyContent: 'space-between' }}>
              <div style={{ display: 'flex', gap: '8px' }}>
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00E4FF', boxShadow: '0 0 10px #00E4FF' }} className="pulse-anim"></div>
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#333' }}></div>
+                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#FF2A2A', boxShadow: '0 0 10px #FF2A2A' }} className="pulse-anim"></div>
+                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00E4FF', boxShadow: '0 0 10px #00E4FF' }}></div>
+                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00FF66', opacity: 0.5 }}></div>
+             </div>
+             {/* Mini Radar */}
+             <div style={{ width: '40px', height: '40px', borderRadius: '50%', border: '1px solid #00E4FF', position: 'relative', overflow: 'hidden' }}>
+               <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', backgroundColor: 'rgba(0,228,255,0.3)' }}></div>
+               <div style={{ position: 'absolute', top: 0, bottom: 0, left: '50%', width: '1px', backgroundColor: 'rgba(0,228,255,0.3)' }}></div>
+               <div style={{ position: 'absolute', top: '50%', left: '50%', width: '50%', height: '1px', backgroundColor: '#00E4FF', transformOrigin: 'left center', animation: 'spin 4s linear infinite' }}></div>
              </div>
           </div>
           
           {/* Top Center Frame */}
-          <div style={{ width: '40%', height: '50px', backgroundColor: '#070A10', borderBottomLeftRadius: '60px', borderBottomRightRadius: '60px', borderBottom: '4px solid #00E4FF', boxShadow: '0 10px 30px rgba(0, 228, 255, 0.2)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-             <div style={{ color: '#00E4FF', fontSize: '12px', fontWeight: 900, letterSpacing: '4px', textTransform: 'uppercase', textShadow: '0 0 10px #00E4FF' }}>
+          <div style={{ width: '45%', height: '64px', backgroundColor: '#070A10', borderBottomLeftRadius: '60px', borderBottomRightRadius: '60px', borderBottom: '4px solid #00E4FF', boxShadow: '0 10px 30px rgba(0, 228, 255, 0.2)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+             <div style={{ color: '#00E4FF', fontSize: '20px', fontWeight: 900, letterSpacing: '8px', textTransform: 'uppercase', textShadow: '0 0 15px #00E4FF', fontFamily: '"Courier New", Courier, monospace' }}>
                ASTILLERO NAVAL // EN LÍNEA
              </div>
           </div>
           
           {/* Right Arch */}
-          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomLeftRadius: '120px', boxShadow: '-10px 10px 30px rgba(0, 228, 255, 0.1)', borderLeft: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', justifyContent: 'flex-end', padding: '24px' }}>
-             <Grid color="#00E4FF" size={24} style={{ opacity: 0.5 }} />
+          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomLeftRadius: '120px', boxShadow: '-10px 10px 30px rgba(0, 228, 255, 0.1)', borderLeft: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', padding: '24px' }}>
+             {/* Data Blocks */}
+             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px' }}>
+               {[...Array(6)].map((_, i) => (
+                 <div key={i} style={{ width: '16px', height: '6px', backgroundColor: '#00E4FF', opacity: Math.random() > 0.5 ? 1 : 0.3, boxShadow: '0 0 5px #00E4FF' }}></div>
+               ))}
+             </div>
+             <div style={{ width: '40px', height: '40px', borderRadius: '8px', border: '2px solid #00E4FF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#00E4FF', fontWeight: 'bold' }}>
+               SYS
+             </div>
           </div>
         </div>
 
@@ -125,19 +140,37 @@ export default function NaveHangar() {
              <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '200px', height: '4px', backgroundColor: '#00E4FF', boxShadow: '0 0 20px #00E4FF' }}></div>
 
              {/* Center Screen */}
-             <div style={{ width: '90%', height: '80px', backgroundColor: '#010306', borderRadius: '12px', border: '1px solid #1a2a3a', display: 'flex', justifyContent: 'space-between', padding: '6px', boxShadow: 'inset 0 0 20px rgba(0,0,0,0.8)' }}>
-                {/* 3 panels inside center screen */}
-                <div style={{ width: '30%', backgroundColor: '#020b14', borderRadius: '8px', border: '1px solid rgba(0,228,255,0.2)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '4px' }}>
-                   <span style={{ fontSize: '9px', color: 'rgba(0,228,255,0.5)', fontWeight: 'bold', letterSpacing: '2px' }}>CLASE:</span>
-                   <span style={{ fontSize: '16px', fontWeight: 900, color: '#00E4FF', textTransform: 'uppercase', textShadow: '0 0 5px #00E4FF' }}>{shipConfig.fuselage}</span>
+             <div style={{ width: '90%', height: '80px', backgroundColor: '#010306', borderRadius: '12px', border: '1px solid #1a2a3a', display: 'flex', gap: '8px', padding: '6px', boxShadow: 'inset 0 0 20px rgba(0,0,0,0.8)' }}>
+                {/* CLASE DISPLAY */}
+                <div style={{ width: '35%', backgroundColor: '#020b14', borderRadius: '8px', border: '1px solid rgba(0,228,255,0.4)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '4px', position: 'relative', overflow: 'hidden' }}>
+                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(transparent 50%, rgba(0,228,255,0.1) 50%)', backgroundSize: '100% 4px' }}></div>
+                   <span style={{ fontSize: '10px', color: '#00E4FF', fontWeight: 'bold', letterSpacing: '3px', position: 'relative', zIndex: 10 }}>CLASE</span>
+                   <span style={{ fontSize: '20px', fontWeight: 900, color: '#FFFFFF', textTransform: 'uppercase', textShadow: '0 0 10px #00E4FF', position: 'relative', zIndex: 10 }}>{shipConfig.fuselage}</span>
                 </div>
-                <div style={{ width: '38%', backgroundColor: '#020b14', borderRadius: '8px', border: '1px solid rgba(0,228,255,0.4)', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'inset 0 0 15px rgba(0,228,255,0.1)' }}>
-                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, transparent 50%, rgba(0,228,255,0.1) 50%)', backgroundSize: '20px 100%', animation: 'slide 2s linear infinite' }}></div>
-                   <Wrench size={32} color="#00E4FF" style={{ position: 'relative', zIndex: 10 }} className="pulse-anim" />
-                </div>
-                <div style={{ width: '30%', backgroundColor: '#020b14', borderRadius: '8px', border: '1px solid rgba(0,228,255,0.2)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '4px' }}>
-                   <span style={{ fontSize: '9px', color: 'rgba(0,228,255,0.5)', fontWeight: 'bold', letterSpacing: '2px' }}>ESTADO:</span>
-                   <span style={{ fontSize: '16px', fontWeight: 900, color: '#00FF66', textTransform: 'uppercase', textShadow: '0 0 5px #00FF66' }}>ÓPTIMO</span>
+                
+                {/* CONTROL BOARD */}
+                <div style={{ flex: 1, backgroundColor: '#020b14', borderRadius: '8px', border: '1px solid rgba(0,228,255,0.2)', display: 'flex', alignItems: 'center', padding: '8px', gap: '16px', position: 'relative', overflow: 'hidden' }}>
+                   {/* Soundwave/Equalizer bars */}
+                   <div style={{ display: 'flex', alignItems: 'flex-end', gap: '4px', height: '40px' }}>
+                     {[...Array(8)].map((_, i) => (
+                       <div key={i} style={{ width: '6px', backgroundColor: '#00FF66', boxShadow: '0 0 5px #00FF66', height: `${Math.max(20, Math.random() * 100)}%`, animation: `pulse ${1 + Math.random()}s infinite` }}></div>
+                     ))}
+                   </div>
+                   
+                   <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                     {/* Data lines */}
+                     <div style={{ width: '100%', height: '2px', backgroundColor: '#00E4FF', opacity: 0.5 }}></div>
+                     <div style={{ width: '70%', height: '2px', backgroundColor: '#00E4FF', opacity: 0.3 }}></div>
+                     <div style={{ width: '90%', height: '2px', backgroundColor: '#FF2A2A', opacity: 0.5 }}></div>
+                   </div>
+
+                   {/* Action Buttons */}
+                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '6px' }}>
+                     <div style={{ width: '20px', height: '20px', backgroundColor: '#FF2A2A', borderRadius: '4px', boxShadow: '0 0 10px #FF2A2A' }}></div>
+                     <div style={{ width: '20px', height: '20px', backgroundColor: 'transparent', border: '2px solid #00E4FF', borderRadius: '4px' }}></div>
+                     <div style={{ width: '20px', height: '20px', backgroundColor: 'transparent', border: '2px solid #00E4FF', borderRadius: '4px' }}></div>
+                     <div style={{ width: '20px', height: '20px', backgroundColor: '#00E4FF', borderRadius: '4px', boxShadow: '0 0 10px #00E4FF' }}></div>
+                   </div>
                 </div>
              </div>
 
@@ -238,6 +271,7 @@ export default function NaveHangar() {
           50% { transform: scale(1.1); opacity: 0.7; box-shadow: 0 0 20px #00E4FF; }
           100% { transform: scale(1); opacity: 1; box-shadow: 0 0 10px #00E4FF; }
         }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(0, 228, 255, 0.3); border-radius: 10px; }
