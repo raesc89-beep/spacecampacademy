@@ -134,14 +134,23 @@ export default function AvatarHangar() {
         {/* Top Arch / Window Frame */}
         <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', pointerEvents: 'none' }}>
           {/* Left Arch */}
-          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomRightRadius: '120px', boxShadow: '10px 10px 30px rgba(0, 228, 255, 0.1)', borderRight: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', padding: '24px', alignItems: 'flex-start', justifyContent: 'space-between' }}>
-             <div style={{ display: 'flex', gap: '8px' }}>
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#FF2A2A', boxShadow: '0 0 10px #FF2A2A' }} className="pulse-anim"></div>
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00E4FF', boxShadow: '0 0 10px #00E4FF' }}></div>
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00FF66', opacity: 0.5 }}></div>
+          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomRightRadius: '120px', boxShadow: '10px 10px 30px rgba(0, 228, 255, 0.1)', borderRight: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', padding: '24px', alignItems: 'flex-start', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
+             {/* Tech Grid Background */}
+             <div style={{ position: 'absolute', inset: 0, opacity: 0.1, backgroundImage: 'linear-gradient(#00E4FF 1px, transparent 1px), linear-gradient(90deg, #00E4FF 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+             
+             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', zIndex: 1 }}>
+               <div style={{ display: 'flex', gap: '8px' }}>
+                  <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#FF2A2A', boxShadow: '0 0 10px #FF2A2A' }} className="pulse-anim"></div>
+                  <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00E4FF', boxShadow: '0 0 10px #00E4FF' }}></div>
+                  <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00FF66', opacity: 0.5 }}></div>
+               </div>
+               <div style={{ color: '#00E4FF', fontSize: '10px', fontWeight: 'bold', letterSpacing: '2px' }}>SYS.BIO.ON</div>
+               {/* Warning stripes */}
+               <div style={{ width: '60px', height: '4px', backgroundImage: 'repeating-linear-gradient(45deg, #FF2A2A, #FF2A2A 5px, transparent 5px, transparent 10px)' }}></div>
              </div>
+             
              {/* Mini Radar */}
-             <div style={{ width: '40px', height: '40px', borderRadius: '50%', border: '1px solid #00E4FF', position: 'relative', overflow: 'hidden' }}>
+             <div style={{ width: '40px', height: '40px', borderRadius: '50%', border: '1px solid #00E4FF', position: 'relative', overflow: 'hidden', zIndex: 1 }}>
                <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', backgroundColor: 'rgba(0,228,255,0.3)' }}></div>
                <div style={{ position: 'absolute', top: 0, bottom: 0, left: '50%', width: '1px', backgroundColor: 'rgba(0,228,255,0.3)' }}></div>
                <div style={{ position: 'absolute', top: '50%', left: '50%', width: '50%', height: '1px', backgroundColor: '#00E4FF', transformOrigin: 'left center', animation: 'spin 4s linear infinite' }}></div>
@@ -156,15 +165,25 @@ export default function AvatarHangar() {
           </div>
           
           {/* Right Arch */}
-          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomLeftRadius: '120px', boxShadow: '-10px 10px 30px rgba(0, 228, 255, 0.1)', borderLeft: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', padding: '24px' }}>
+          <div style={{ width: '30%', height: '100px', backgroundColor: '#070A10', borderBottomLeftRadius: '120px', boxShadow: '-10px 10px 30px rgba(0, 228, 255, 0.1)', borderLeft: '4px solid #00E4FF', borderBottom: '4px solid #00E4FF', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', padding: '24px', position: 'relative', overflow: 'hidden' }}>
+             {/* Tech Grid Background */}
+             <div style={{ position: 'absolute', inset: 0, opacity: 0.1, backgroundImage: 'linear-gradient(#00E4FF 1px, transparent 1px), linear-gradient(90deg, #00E4FF 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+             
              {/* Data Blocks */}
-             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px' }}>
-               {[...Array(6)].map((_, i) => (
-                 <div key={i} style={{ width: '16px', height: '6px', backgroundColor: '#00E4FF', opacity: Math.random() > 0.5 ? 1 : 0.3, boxShadow: '0 0 5px #00E4FF' }}></div>
-               ))}
+             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', zIndex: 1 }}>
+               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '4px' }}>
+                 {[...Array(8)].map((_, i) => (
+                   <div key={i} style={{ width: '12px', height: '6px', backgroundColor: '#00E4FF', opacity: Math.random() > 0.5 ? 1 : 0.3, boxShadow: '0 0 5px #00E4FF' }}></div>
+                 ))}
+               </div>
+               <div style={{ color: '#00E4FF', fontSize: '10px', fontWeight: 'bold', letterSpacing: '2px', textAlign: 'right' }}>DATA.LINK</div>
              </div>
-             <div style={{ width: '40px', height: '40px', borderRadius: '8px', border: '2px solid #00E4FF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#00E4FF', fontWeight: 'bold' }}>
-               BIO
+             
+             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '8px', zIndex: 1 }}>
+               <div style={{ width: '40px', height: '40px', borderRadius: '8px', border: '2px solid #00E4FF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#00E4FF', fontWeight: 'bold', boxShadow: 'inset 0 0 10px rgba(0,228,255,0.5)' }}>
+                 BIO
+               </div>
+               <div style={{ width: '40px', height: '2px', backgroundColor: '#00FF66', boxShadow: '0 0 10px #00FF66' }}></div>
              </div>
           </div>
         </div>

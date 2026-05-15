@@ -95,13 +95,13 @@ function ProceduralAstronaut({ skinTone, suitColor, visorColor, accentColor }) {
       </mesh>
 
       {/* Boots */}
-      <mesh position={[0.3, -0.4, 0.05]}>
-        <boxGeometry args={[0.35, 0.4, 0.45]} />
-        <meshStandardMaterial color={accentColor} roughness={0.5} metalness={0.4} />
+      <mesh position={[0.25, -0.45, 0.1]}>
+        <boxGeometry args={[0.35, 0.2, 0.55]} />
+        <meshStandardMaterial color={accentColor} roughness={0.7} />
       </mesh>
-      <mesh position={[-0.3, -0.4, 0.05]}>
-        <boxGeometry args={[0.35, 0.4, 0.45]} />
-        <meshStandardMaterial color={accentColor} roughness={0.5} metalness={0.4} />
+      <mesh position={[-0.25, -0.45, 0.1]}>
+        <boxGeometry args={[0.35, 0.2, 0.55]} />
+        <meshStandardMaterial color={accentColor} roughness={0.7} />
       </mesh>
     </group>
   );
@@ -139,12 +139,13 @@ export default function Astronaut3DScene({ skinTone, suitColor, visorColor, acce
           makeDefault 
           minPolarAngle={Math.PI / 4} 
           maxPolarAngle={Math.PI / 2 + 0.1} 
-          minDistance={4}
-          maxDistance={12}
           enablePan={false}
+          minDistance={3}
+          maxDistance={25}
+          enableDamping
+          dampingFactor={0.05}
           autoRotate
           autoRotateSpeed={1}
-          dampingFactor={0.05}
         />
       </Canvas>
     </div>

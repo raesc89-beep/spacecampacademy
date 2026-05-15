@@ -53,8 +53,8 @@ export default function DashboardLanding() {
           >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <motion.div
-                 animate={{ rotateY: 360 }}
-                 transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
+                 animate={{ rotate: 360 }}
+                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
               >
                  <Image src="/assets/amde_logo.png" alt="AMDE" width={60} height={60} style={{ filter: 'drop-shadow(0 0 10px #00E4FF)', objectFit: 'contain' }} />
               </motion.div>
@@ -96,26 +96,30 @@ export default function DashboardLanding() {
             {/* Base de Misiones */}
             <Link href="/dashboard/misiones" style={{ textDecoration: 'none' }}>
               <motion.div 
-                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,228,255,0.4), inset 0 0 40px rgba(0,228,255,0.2)' }}
-                whileTap={{ scale: 0.98 }}
-                style={{
-                  background: 'rgba(10, 20, 40, 0.65)',
-                  backdropFilter: 'blur(16px)',
-                  border: '2px solid rgba(0, 228, 255, 0.4)',
-                  borderRadius: '24px',
-                  padding: '3rem 2rem',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  gap: '1.5rem',
-                  boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,228,255,0.1)',
-                  transition: 'all 0.3s ease',
-                  cursor: 'pointer',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               >
+                <motion.div 
+                  whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,228,255,0.6), inset 0 0 40px rgba(0,228,255,0.4)' }}
+                  whileTap={{ scale: 0.98 }}
+                  style={{
+                    background: 'rgba(10, 20, 40, 0.65)',
+                    backdropFilter: 'blur(16px)',
+                    border: '2px solid rgba(0, 228, 255, 0.6)',
+                    borderRadius: '24px',
+                    padding: '3rem 2rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    gap: '1.5rem',
+                    boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,228,255,0.2), 0 0 15px rgba(0,228,255,0.3)',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                    position: 'relative',
+                    overflow: 'hidden'
+                  }}
+                >
                 {/* HUD Elements */}
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '40px', height: '40px', borderTop: '2px solid #00E4FF', borderLeft: '2px solid #00E4FF', borderTopLeftRadius: '24px' }}></div>
                 <div style={{ position: 'absolute', bottom: 0, right: 0, width: '40px', height: '40px', borderBottom: '2px solid #00E4FF', borderRight: '2px solid #00E4FF', borderBottomRightRadius: '24px' }}></div>
@@ -136,17 +140,22 @@ export default function DashboardLanding() {
                   <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.4 }}>Accede al catálogo interactivo y despega hacia tus próximas aventuras estelares.</p>
                 </div>
               </motion.div>
+              </motion.div>
             </Link>
 
             {/* Astillero Naval */}
             <Link href="/hangar" style={{ textDecoration: 'none' }}>
               <motion.div 
-                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(153,51,255,0.4), inset 0 0 40px rgba(153,51,255,0.2)' }}
+                animate={{ y: [5, -5, 5] }}
+                transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
+              >
+              <motion.div 
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(153,51,255,0.6), inset 0 0 40px rgba(153,51,255,0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
                   background: 'rgba(20, 15, 35, 0.65)',
                   backdropFilter: 'blur(16px)',
-                  border: '2px solid rgba(153, 51, 255, 0.4)',
+                  border: '2px solid rgba(153, 51, 255, 0.6)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
                   display: 'flex',
@@ -154,7 +163,7 @@ export default function DashboardLanding() {
                   alignItems: 'center',
                   textAlign: 'center',
                   gap: '1.5rem',
-                  boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(153,51,255,0.1)',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(153,51,255,0.2), 0 0 15px rgba(153,51,255,0.3)',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer',
                   position: 'relative',
@@ -181,17 +190,22 @@ export default function DashboardLanding() {
                   <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.4 }}>Gestiona tu flota, personaliza tus naves y mejora tus escudos con polvo estelar.</p>
                 </div>
               </motion.div>
+              </motion.div>
             </Link>
 
             {/* En Vivo */}
             <Link href="/dashboard/live" style={{ textDecoration: 'none' }}>
               <motion.div 
-                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,255,136,0.4), inset 0 0 40px rgba(0,255,136,0.2)' }}
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              >
+              <motion.div 
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,255,136,0.6), inset 0 0 40px rgba(0,255,136,0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
                   background: 'rgba(10, 30, 20, 0.65)',
                   backdropFilter: 'blur(16px)',
-                  border: '2px solid rgba(0, 255, 136, 0.4)',
+                  border: '2px solid rgba(0, 255, 136, 0.6)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
                   display: 'flex',
@@ -199,7 +213,7 @@ export default function DashboardLanding() {
                   alignItems: 'center',
                   textAlign: 'center',
                   gap: '1.5rem',
-                  boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,255,136,0.1)',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,255,136,0.2), 0 0 15px rgba(0,255,136,0.3)',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer',
                   position: 'relative',
@@ -227,6 +241,7 @@ export default function DashboardLanding() {
                   </h2>
                   <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.4 }}>Conéctate con otros comandantes y participa en transmisiones exclusivas en tiempo real.</p>
                 </div>
+              </motion.div>
               </motion.div>
             </Link>
 
