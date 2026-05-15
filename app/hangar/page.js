@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { Rocket, User, Building, Wrench, Shield, Zap } from 'lucide-react';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import { Canvas } from '@react-three/fiber';
+import { Stars } from '@react-three/drei';
 
 const HANGAR_MODULES = [
   {
@@ -69,7 +71,12 @@ export default function AstilleroHub() {
       <Navbar />
       
       {/* Background Ambience */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(circle at top, rgba(0,228,255,0.05) 0%, transparent 50%), radial-gradient(circle at bottom, rgba(153,51,255,0.05) 0%, transparent 50%)', zIndex: 0 }} />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={2} />
+        </Canvas>
+        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(circle at top, rgba(0,228,255,0.05) 0%, transparent 50%), radial-gradient(circle at bottom, rgba(153,51,255,0.05) 0%, transparent 50%)' }} />
+      </div>
 
       <main style={{ flex: 1, padding: '4rem 5%', display: 'flex', flexDirection: 'column', gap: '4rem', position: 'relative', zIndex: 1, alignItems: 'center' }}>
         
@@ -93,13 +100,13 @@ export default function AstilleroHub() {
 
             const CardContent = () => (
               <motion.div 
-                whileHover={isClickable ? { y: -10, boxShadow: `0 20px 40px rgba(0,0,0,0.6), inset 0 0 30px ${mod.glowColor}, 0 0 0 2px ${mod.borderColor}` } : {}}
+                whileHover={isClickable ? { y: -10, boxShadow: `0 20px 40px rgba(0,0,0,0.6), inset 0 0 40px ${mod.glowColor}` } : {}}
                 style={{
                   position: 'relative',
                   overflow: 'hidden',
                   borderRadius: '24px',
-                  background: 'rgba(10, 15, 30, 0.7)',
-                  border: `1px solid ${mod.borderColor}`,
+                  background: 'rgba(10, 15, 30, 0.85)',
+                  border: `2px solid ${mod.borderColor}`,
                   height: '100%',
                   minHeight: '450px',
                   display: 'flex',
@@ -107,26 +114,48 @@ export default function AstilleroHub() {
                   transition: 'all 0.4s ease',
                   cursor: isClickable ? 'pointer' : 'default',
                   opacity: mod.isComingSoon ? 0.8 : 1,
-                  filter: mod.isComingSoon ? 'grayscale(0.5)' : 'none'
+                  filter: mod.isComingSoon ? 'grayscale(0.5)' : 'none',
+                  boxShadow: `0 10px 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(255,255,255,0.02)`
                 }}
               >
-                {/* Background Image Image */}
+                {/* Background Image */}
                 <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-                  <Image src={mod.bgSrc} alt={mod.title} fill style={{ objectFit: 'cover', opacity: 0.3, mixBlendMode: 'luminosity' }} quality={60} />
+                  <Image src={mod.bgSrc} alt={mod.title} fill style={{ objectFit: 'cover', opacity: 0.25, mixBlendMode: 'luminosity' }} quality={60} />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,15,30,0.4) 0%, rgba(10,15,30,1) 100%)' }}></div>
                 </div>
 
+                {/* HUD Corners */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '50px', height: '50px', borderTop: `3px solid ${mod.borderColor}`, borderLeft: `3px solid ${mod.borderColor}`, borderTopLeftRadius: '24px', zIndex: 5 }}></div>
+                <div style={{ position: 'absolute', bottom: 0, right: 0, width: '50px', height: '50px', borderBottom: `3px solid ${mod.borderColor}`, borderRight: `3px solid ${mod.borderColor}`, borderBottomRightRadius: '24px', zIndex: 5 }}></div>
+
                 {/* Coming Soon Overlay */}
                 {mod.isComingSoon && (
-                  <div style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', background: 'rgba(255,51,102,0.2)', border: '1px solid var(--danger)', color: 'var(--danger)', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '1px', zIndex: 2, backdropFilter: 'blur(4px)' }}>
+                  <div style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', background: 'rgba(255,51,102,0.2)', border: '1px solid var(--danger)', color: 'var(--danger)', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '1px', zIndex: 6, backdropFilter: 'blur(4px)' }}>
                     PRÓXIMAMENTE
                   </div>
                 )}
 
                 {/* Content */}
                 <div style={{ position: 'relative', zIndex: 1, padding: '3rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', height: '100%' }}>
-                  <div style={{ background: `linear-gradient(135deg, ${mod.glowColor} 0%, transparent 100%)`, padding: '1.5rem', borderRadius: '50%', marginBottom: '2rem', border: `1px solid ${mod.borderColor}`, boxShadow: `0 0 30px ${mod.glowColor}` }}>
-                    {mod.icon}
+                  
+                  {/* Radar Icon Container */}
+                  <div style={{ 
+                    background: 'transparent', 
+                    padding: '1.5rem', 
+                    borderRadius: '50%', 
+                    marginBottom: '2rem', 
+                    border: `2px dashed ${mod.borderColor}`, 
+                    boxShadow: `0 0 30px ${mod.glowColor}, inset 0 0 15px ${mod.glowColor}`,
+                    position: 'relative',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    {/* Spinning Radar Ring */}
+                    <div style={{ position: 'absolute', inset: -10, border: `1px solid ${mod.borderColor}`, borderRadius: '50%', animation: `spin ${10 + idx * 2}s linear infinite ${idx % 2 === 0 ? '' : 'reverse'}`, opacity: 0.5 }}></div>
+                    <div style={{ position: 'relative', zIndex: 10, filter: `drop-shadow(0 0 10px ${mod.borderColor})` }}>
+                      {mod.icon}
+                    </div>
                   </div>
                   
                   <h2 style={{ fontSize: '2rem', color: 'white', margin: '0 0 1rem 0', textShadow: `0 2px 10px rgba(0,0,0,0.8)` }}>

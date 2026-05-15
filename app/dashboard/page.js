@@ -49,21 +49,29 @@ export default function DashboardLanding() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            style={{ textAlign: 'center' }}
+            style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
           >
-            <h1 style={{ 
-              fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', 
-              margin: 0, 
-              background: 'linear-gradient(180deg, #FFFFFF 0%, #88CCFF 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              textShadow: '0 0 40px rgba(0, 228, 255, 0.4)',
-              fontWeight: 900,
-              letterSpacing: '2px',
-              textTransform: 'uppercase'
-            }}>
-              Estación Orbital AMDE
-            </h1>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+              <motion.div
+                 animate={{ rotateY: 360 }}
+                 transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
+              >
+                 <Image src="/assets/amde_logo.png" alt="AMDE" width={60} height={60} style={{ filter: 'drop-shadow(0 0 10px #00E4FF)', objectFit: 'contain' }} />
+              </motion.div>
+              <h1 style={{ 
+                fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', 
+                margin: 0, 
+                background: 'linear-gradient(180deg, #FFFFFF 0%, #88CCFF 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                textShadow: '0 0 40px rgba(0, 228, 255, 0.4)',
+                fontWeight: 900,
+                letterSpacing: '2px',
+                textTransform: 'uppercase'
+              }}>
+                Estación Orbital
+              </h1>
+            </div>
             <p style={{ 
               fontSize: 'clamp(1rem, 1.5vw, 1.5rem)', 
               color: 'var(--electric-blue)', 
@@ -88,12 +96,12 @@ export default function DashboardLanding() {
             {/* Base de Misiones */}
             <Link href="/dashboard/misiones" style={{ textDecoration: 'none' }}>
               <motion.div 
-                whileHover={{ y: -10, scale: 1.02 }}
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,228,255,0.4), inset 0 0 40px rgba(0,228,255,0.2)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
                   background: 'rgba(10, 20, 40, 0.65)',
                   backdropFilter: 'blur(16px)',
-                  border: '1px solid rgba(0, 228, 255, 0.3)',
+                  border: '2px solid rgba(0, 228, 255, 0.4)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
                   display: 'flex',
@@ -103,18 +111,25 @@ export default function DashboardLanding() {
                   gap: '1.5rem',
                   boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,228,255,0.1)',
                   transition: 'all 0.3s ease',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  position: 'relative',
+                  overflow: 'hidden'
                 }}
-                className="hover:border-electric-blue hover:shadow-[0_0_30px_rgba(0,228,255,0.4)]"
               >
+                {/* HUD Elements */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '40px', height: '40px', borderTop: '2px solid #00E4FF', borderLeft: '2px solid #00E4FF', borderTopLeftRadius: '24px' }}></div>
+                <div style={{ position: 'absolute', bottom: 0, right: 0, width: '40px', height: '40px', borderBottom: '2px solid #00E4FF', borderRight: '2px solid #00E4FF', borderBottomRightRadius: '24px' }}></div>
+                
                 <div style={{ 
-                  background: 'linear-gradient(135deg, rgba(0,228,255,0.2) 0%, transparent 100%)',
+                  background: 'transparent',
                   padding: '1.5rem',
                   borderRadius: '50%',
-                  border: '1px solid rgba(0,228,255,0.5)',
-                  boxShadow: '0 0 30px rgba(0,228,255,0.2)'
+                  border: '2px dashed rgba(0,228,255,0.5)',
+                  boxShadow: '0 0 30px rgba(0,228,255,0.2), inset 0 0 15px rgba(0,228,255,0.2)',
+                  position: 'relative'
                 }}>
-                  <Rocket size={48} color="var(--electric-blue)" />
+                  <div style={{ position: 'absolute', inset: -8, border: '1px solid rgba(0,228,255,0.3)', borderRadius: '50%', animation: 'spin 10s linear infinite' }}></div>
+                  <Rocket size={48} color="var(--electric-blue)" style={{ filter: 'drop-shadow(0 0 10px #00E4FF)' }} />
                 </div>
                 <div>
                   <h2 style={{ color: 'white', fontSize: '2rem', margin: '0 0 0.5rem 0', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>Base de Misiones</h2>
@@ -126,12 +141,12 @@ export default function DashboardLanding() {
             {/* Astillero Naval */}
             <Link href="/hangar" style={{ textDecoration: 'none' }}>
               <motion.div 
-                whileHover={{ y: -10, scale: 1.02 }}
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(153,51,255,0.4), inset 0 0 40px rgba(153,51,255,0.2)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
                   background: 'rgba(20, 15, 35, 0.65)',
                   backdropFilter: 'blur(16px)',
-                  border: '1px solid rgba(153, 51, 255, 0.3)',
+                  border: '2px solid rgba(153, 51, 255, 0.4)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
                   display: 'flex',
@@ -141,18 +156,25 @@ export default function DashboardLanding() {
                   gap: '1.5rem',
                   boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(153,51,255,0.1)',
                   transition: 'all 0.3s ease',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  position: 'relative',
+                  overflow: 'hidden'
                 }}
-                className="hover:border-[rgba(153,51,255,1)] hover:shadow-[0_0_30px_rgba(153,51,255,0.4)]"
               >
+                {/* HUD Elements */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '40px', height: '40px', borderTop: '2px solid #9933FF', borderLeft: '2px solid #9933FF', borderTopLeftRadius: '24px' }}></div>
+                <div style={{ position: 'absolute', bottom: 0, right: 0, width: '40px', height: '40px', borderBottom: '2px solid #9933FF', borderRight: '2px solid #9933FF', borderBottomRightRadius: '24px' }}></div>
+                
                 <div style={{ 
-                  background: 'linear-gradient(135deg, rgba(153,51,255,0.2) 0%, transparent 100%)',
+                  background: 'transparent',
                   padding: '1.5rem',
                   borderRadius: '50%',
-                  border: '1px solid rgba(153,51,255,0.5)',
-                  boxShadow: '0 0 30px rgba(153,51,255,0.2)'
+                  border: '2px dashed rgba(153,51,255,0.5)',
+                  boxShadow: '0 0 30px rgba(153,51,255,0.2), inset 0 0 15px rgba(153,51,255,0.2)',
+                  position: 'relative'
                 }}>
-                  <Anchor size={48} color="#9933ff" />
+                  <div style={{ position: 'absolute', inset: -8, border: '1px solid rgba(153,51,255,0.3)', borderRadius: '50%', animation: 'spin 10s linear infinite reverse' }}></div>
+                  <Anchor size={48} color="#9933ff" style={{ filter: 'drop-shadow(0 0 10px #9933FF)' }} />
                 </div>
                 <div>
                   <h2 style={{ color: 'white', fontSize: '2rem', margin: '0 0 0.5rem 0', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>Astillero Naval</h2>
@@ -164,12 +186,12 @@ export default function DashboardLanding() {
             {/* En Vivo */}
             <Link href="/dashboard/live" style={{ textDecoration: 'none' }}>
               <motion.div 
-                whileHover={{ y: -10, scale: 1.02 }}
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,255,136,0.4), inset 0 0 40px rgba(0,255,136,0.2)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
                   background: 'rgba(10, 30, 20, 0.65)',
                   backdropFilter: 'blur(16px)',
-                  border: '1px solid rgba(0, 255, 136, 0.3)',
+                  border: '2px solid rgba(0, 255, 136, 0.4)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
                   display: 'flex',
@@ -179,18 +201,25 @@ export default function DashboardLanding() {
                   gap: '1.5rem',
                   boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,255,136,0.1)',
                   transition: 'all 0.3s ease',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  position: 'relative',
+                  overflow: 'hidden'
                 }}
-                className="hover:border-success hover:shadow-[0_0_30px_rgba(0,255,136,0.4)]"
               >
+                {/* HUD Elements */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '40px', height: '40px', borderTop: '2px solid #00FF88', borderLeft: '2px solid #00FF88', borderTopLeftRadius: '24px' }}></div>
+                <div style={{ position: 'absolute', bottom: 0, right: 0, width: '40px', height: '40px', borderBottom: '2px solid #00FF88', borderRight: '2px solid #00FF88', borderBottomRightRadius: '24px' }}></div>
+
                 <div style={{ 
-                  background: 'linear-gradient(135deg, rgba(0,255,136,0.2) 0%, transparent 100%)',
+                  background: 'transparent',
                   padding: '1.5rem',
                   borderRadius: '50%',
-                  border: '1px solid rgba(0,255,136,0.5)',
-                  boxShadow: '0 0 30px rgba(0,255,136,0.2)'
+                  border: '2px dashed rgba(0,255,136,0.5)',
+                  boxShadow: '0 0 30px rgba(0,255,136,0.2), inset 0 0 15px rgba(0,255,136,0.2)',
+                  position: 'relative'
                 }}>
-                  <Radio size={48} color="var(--success)" />
+                  <div style={{ position: 'absolute', inset: -8, border: '1px solid rgba(0,255,136,0.3)', borderRadius: '50%', animation: 'spin 8s linear infinite' }}></div>
+                  <Radio size={48} color="var(--success)" style={{ filter: 'drop-shadow(0 0 10px #00FF88)' }} />
                 </div>
                 <div>
                   <h2 style={{ color: 'white', fontSize: '2rem', margin: '0 0 0.5rem 0', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
@@ -204,6 +233,10 @@ export default function DashboardLanding() {
           </div>
         </div>
       </main>
+      <style>{`
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        .pulse-anim { animation: pulse 2s infinite; }
+      `}</style>
     </div>
   );
 }

@@ -8,7 +8,8 @@ import dynamic from 'next/dynamic';
 import { User, Shield, Sparkles, Activity, Grid } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import AstronautAvatar from '@/components/AstronautAvatar';
+
+const Astronaut3DScene = dynamic(() => import('@/components/shipyard/Astronaut3DScene'), { ssr: false });
 
 const AVATAR_SHOP = {
   skinTone: [
@@ -119,14 +120,11 @@ export default function AvatarHangar() {
       
       {/* 3D Canvas Background (Viewport) */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-         {/* Background gradient behind astronaut */}
-         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '60vw', height: '60vw', background: 'radial-gradient(circle, rgba(0,228,255,0.05) 0%, transparent 60%)', zIndex: -1 }}></div>
-         <AstronautAvatar 
+         <Astronaut3DScene 
            skinTone={getHexCode('skinTone', avatar.skinTone)}
            suitColor={getHexCode('suitColor', avatar.suitColor)}
            visorColor={getHexCode('visorColor', avatar.visorColor)}
            accentColor={getHexCode('accentColor', avatar.accentColor)}
-           animate={true} 
          />
       </div>
 
