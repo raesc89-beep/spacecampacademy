@@ -80,7 +80,7 @@ function ProceduralShipAAA() {
   });
 
   return (
-    <group ref={group} dispose={null} scale={2.5}>
+    <group ref={group} dispose={null} scale={2.5} position={[0, 1.5, 0]}>
       
       {/* NÚCLEO REACTOR (Emisivo Volumétrico) */}
       <mesh position={[0, 0.2, -0.2]} material={materials.emissive}>
@@ -216,9 +216,9 @@ function HangarEnvironment() {
 
 export default function SpaceshipScene() {
   return (
-    <div className="w-full h-full bg-gradient-to-b from-[#1E1139] to-[#8C3A68]">
+    <div style={{ width: '100%', height: '100%', backgroundColor: '#010204' }}>
       <Canvas shadows camera={{ position: [8, 4, 8], fov: 35 }} gl={{ antialias: true, alpha: true }}>
-        {/* Fondo Profundo transparente para que se vea el gradiente */}
+        <color attach="background" args={['#010204']} />
         <Stars radius={150} depth={50} count={8000} factor={4} saturation={0.5} fade speed={1} />
         
         {/* Iluminación Cinematográfica AAA */}
