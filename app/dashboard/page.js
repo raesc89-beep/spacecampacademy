@@ -52,6 +52,15 @@ export default function DashboardLanding() {
             style={{ position: 'absolute', top: '55%', left: 0, width: '8vw', minWidth: '60px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
           />
 
+          {/* Planeta Tierra */}
+          <motion.img 
+            src="https://media.giphy.com/media/xThtappQfQohcuRpeQ/giphy.gif" 
+            alt="Earth"
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 250, ease: "linear" }}
+            style={{ position: 'absolute', top: '5%', right: '15%', width: '40vw', minWidth: '300px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(0,180,255,0.4))', borderRadius: '50%' }}
+          />
+
           {/* Capa 2: Cabina Recortada (Primer Plano) */}
           <Image 
             src="/assets/dashboard/cockpit_overlay.png" 

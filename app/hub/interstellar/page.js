@@ -7,72 +7,56 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso ─────────────────────────────────────────────────────
-const BTTF_MODULES = [
+const INTERSTELLAR_MODULES = [
   {
-    id: 'bttf_m1',
-    title: 'El Condensador de Flujo',
-    color: '#00FFFF', // Cyan glow
-    link: '/course/bttf_m1',
-    icon: '/assets/bttf/bttf_m1.png',
+    id: 'interstellar_m1',
+    title: 'Einstein y la Red Invisible',
+    color: '#00E4FF', 
+    link: '/course/interstellar_m1',
+    icon: '/assets/interstellar/m1.png',
     coords: { left: '15%', top: '35%' },
   },
   {
-    id: 'bttf_m2',
-    title: 'Viajes en el Tiempo',
-    color: '#FF00FF', // Magenta glow
-    link: '/course/bttf_m2',
-    icon: '/assets/bttf/bttf_m2.png',
-    coords: { left: '40%', top: '25%' },
+    id: 'interstellar_m2',
+    title: 'Gargantúa',
+    color: '#FF3366',
+    link: '/course/interstellar_m2',
+    icon: '/assets/interstellar/m2.png',
+    coords: { left: '35%', top: '25%' },
   },
   {
-    id: 'bttf_m3',
-    title: 'Paradojas Temporales',
-    color: '#FFA500', // Orange glow
-    link: '/course/bttf_m3',
-    icon: '/assets/bttf/bttf_m3.png',
-    coords: { left: '65%', top: '35%' },
+    id: 'interstellar_m3',
+    title: 'El Tiempo es Elástico',
+    color: '#33FF66',
+    link: '/course/interstellar_m3',
+    icon: '/assets/interstellar/m3.png',
+    coords: { left: '55%', top: '35%' },
   },
   {
-    id: 'bttf_m4',
-    title: 'Energía a 1.21 Gigawatts',
-    color: '#FFFF00', // Yellow lightning
-    link: '/course/bttf_m4',
-    icon: '/assets/bttf/bttf_m4.png',
-    coords: { left: '25%', top: '55%' },
+    id: 'interstellar_m4',
+    title: 'Agujeros de Gusano',
+    color: '#9933FF',
+    link: '/course/interstellar_m4',
+    icon: '/assets/interstellar/m4.png',
+    coords: { left: '75%', top: '55%' },
   },
   {
-    id: 'bttf_m5',
-    title: 'Aeropatines y Antigravedad',
-    color: '#00FF00', // Green hoverboard
-    link: '/course/bttf_m5',
-    icon: '/assets/bttf/bttf_m5.png',
-    coords: { left: '50%', top: '50%' },
-  },
-  {
-    id: 'bttf_m6',
-    title: 'La Máquina del Tiempo',
-    color: '#FF4500', // Fire trails
-    link: '/course/bttf_m6',
-    icon: '/assets/bttf/bttf_m6.png',
-    coords: { left: '75%', top: '60%' },
-  },
-  {
-    id: 'bttf_m7',
-    title: 'Biotecnología del Futuro',
-    color: '#8A2BE2', // Neon purple
-    link: '/course/bttf_m7',
-    icon: '/assets/bttf/bttf_m7.png',
-    coords: { left: '40%', top: '75%' },
-  },
+    id: 'interstellar_m5',
+    title: 'El Teseracto y la 5D',
+    color: '#FFD700',
+    link: '/course/interstellar_m5',
+    icon: '/assets/interstellar/m5.png',
+    coords: { left: '50%', top: '65%' },
+  }
 ];
 
 // ─── Constelación de Nodos ──────────────────────────────────────────────────
 function ConstellationLines() {
   return (
     <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 5 }}>
-      {BTTF_MODULES.map((mod, i) => {
-        if (i === BTTF_MODULES.length - 1) return null;
-        const nextMod = BTTF_MODULES[i + 1];
+      {INTERSTELLAR_MODULES.map((mod, i) => {
+        if (i === INTERSTELLAR_MODULES.length - 1) return null;
+        const nextMod = INTERSTELLAR_MODULES[i + 1];
         return (
           <line
             key={i}
@@ -172,7 +156,7 @@ const globalStyles = `
 `;
 
 // ─── Nodo de Módulo ────────────────────────────────────────────────────────
-function BTTFModuleNode({ mod, idx, isCompleted, isPlayable }) {
+function InterstellarModuleNode({ mod, idx, isCompleted, isPlayable }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -320,7 +304,7 @@ function BTTFModuleNode({ mod, idx, isCompleted, isPlayable }) {
 }
 
 // ─── HUB Principal ──────────────────────────────────────────────────────────
-export default function BTTFHub() {
+export default function InterstellarHub() {
   const { user, progress } = useAuth();
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
@@ -436,9 +420,9 @@ export default function BTTFHub() {
 
         {/* Nodos de los módulos */}
         <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 10 }}>
-          {BTTF_MODULES.map((mod, idx) => (
+          {INTERSTELLAR_MODULES.map((mod, idx) => (
             <div key={mod.id} style={{ pointerEvents: 'auto' }}>
-              <BTTFModuleNode
+              <InterstellarModuleNode
                 mod={mod}
                 idx={idx}
                 isPlayable={getPlayableState(idx)}
@@ -472,7 +456,7 @@ export default function BTTFHub() {
             fontSize: '1.2rem',
             textShadow: '0 0 10px rgba(0, 255, 255, 0.5)'
           }}>
-            {completedIds.filter(id => id.startsWith('bttf_m')).length} / {BTTF_MODULES.length}
+            {completedIds.filter(id => id.startsWith('bttf_m')).length} / {INTERSTELLAR_MODULES.length}
           </div>
         </div>
       </main>

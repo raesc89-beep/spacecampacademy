@@ -45,6 +45,16 @@ const DASHBOARD_MISSIONS = [
     borderColor: "rgba(255, 232, 31, 0.4)"
   },
   {
+    id: "ciencia_interstellar",
+    title: "La Ciencia de Interstellar",
+    subtitle: "Agujeros negros, gravedad y dilatación temporal. ¿Podemos sobrevivir a Gargantúa?",
+    link: "/hub/interstellar",
+    bgSrc: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800",
+    badgeColor: "#00E4FF",
+    badgeText: "Astrofísica Teórica",
+    borderColor: "rgba(0, 228, 255, 0.4)"
+  },
+  {
     id: "arqueoastronomia_maya",
     title: "Arqueoastronomía Maya",
     subtitle: "Descubre cómo los antiguos sabios decodificaron la danza de las estrellas.",
