@@ -3,6 +3,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { doc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
+import HubDecorations from '@/components/HubDecorations';
 
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -217,7 +218,29 @@ export default function CourseHub() {
       <Navbar />
       
       {/* Background Ambience */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(circle at top right, rgba(0,228,255,0.05) 0%, transparent 40%), radial-gradient(circle at bottom left, rgba(153,51,255,0.05) 0%, transparent 40%)', zIndex: 0 }} />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }}>
+        {/* Animated stars */}
+        <HubDecorations />
+        
+        {/* Gradients */}
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at top right, rgba(0,228,255,0.05) 0%, transparent 40%), radial-gradient(circle at bottom left, rgba(153,51,255,0.05) 0%, transparent 40%)' }} />
+        
+        {/* Animated Cyber Grid */}
+        <div style={{ 
+          position: 'absolute', bottom: 0, left: 0, right: 0, height: '50%', 
+          background: 'linear-gradient(transparent 0%, rgba(0,228,255,0.05) 100%)',
+          perspective: '1000px',
+          overflow: 'hidden'
+        }}>
+          <div style={{
+             position: 'absolute', inset: -1000, 
+             background: 'linear-gradient(rgba(0, 228, 255, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 228, 255, 0.15) 1px, transparent 1px)',
+             backgroundSize: '80px 80px',
+             transform: 'rotateX(75deg) translateY(-200px)',
+             animation: 'gridMove 15s linear infinite'
+          }} />
+        </div>
+      </div>
 
       <main style={{ flex: 1, padding: '3rem 5%', display: 'flex', flexDirection: 'column', gap: '3rem', position: 'relative', zIndex: 1 }}>
         
@@ -363,6 +386,10 @@ export default function CourseHub() {
       
       <style>{`
         @keyframes spin { 100% { transform: rotate(360deg); } }
+        @keyframes gridMove {
+          0% { transform: rotateX(75deg) translateY(0); }
+          100% { transform: rotateX(75deg) translateY(80px); }
+        }
       `}</style>
     </div>
   );

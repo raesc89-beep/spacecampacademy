@@ -57,13 +57,12 @@ export default function DashboardLanding() {
             src="/assets/dashboard/cockpit_overlay.png" 
             alt="Cockpit View" 
             fill 
-            style={{ objectFit: 'cover', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.9)' }} 
+            style={{ objectFit: 'fill', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.95)' }} 
             priority 
           />
 
-          {/* Gradientes de Oscurecimiento para Legibilidad */}
-          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 0%, #020308 100%)', opacity: 0.8, pointerEvents: 'none' }}></div>
-          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'linear-gradient(to bottom, rgba(2,3,8,0.2) 0%, rgba(2,3,8,0.8) 100%)', pointerEvents: 'none' }}></div>
+          {/* Ligero difuminado en los bordes para Legibilidad sin tapar */}
+          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 30%, #020308 100%)', opacity: 0.4, pointerEvents: 'none' }}></div>
         </div>
 
         {/* Content */}
@@ -128,8 +127,8 @@ export default function DashboardLanding() {
                   whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,228,255,0.6), inset 0 0 40px rgba(0,228,255,0.4)' }}
                   whileTap={{ scale: 0.98 }}
                   style={{
-                    background: 'rgba(10, 20, 40, 0.65)',
-                    backdropFilter: 'blur(16px)',
+                    background: 'rgba(10, 20, 40, 0.25)',
+                    backdropFilter: 'blur(12px)',
                     border: '2px solid rgba(0, 228, 255, 0.6)',
                     borderRadius: '24px',
                     padding: '3rem 2rem',
@@ -178,8 +177,8 @@ export default function DashboardLanding() {
                 whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(153,51,255,0.6), inset 0 0 40px rgba(153,51,255,0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
-                  background: 'rgba(20, 15, 35, 0.65)',
-                  backdropFilter: 'blur(16px)',
+                  background: 'rgba(20, 15, 35, 0.25)',
+                  backdropFilter: 'blur(12px)',
                   border: '2px solid rgba(153, 51, 255, 0.6)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
@@ -228,8 +227,8 @@ export default function DashboardLanding() {
                 whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,255,136,0.6), inset 0 0 40px rgba(0,255,136,0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
-                  background: 'rgba(10, 30, 20, 0.65)',
-                  backdropFilter: 'blur(16px)',
+                  background: 'rgba(10, 30, 20, 0.25)',
+                  backdropFilter: 'blur(12px)',
                   border: '2px solid rgba(0, 255, 136, 0.6)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
@@ -280,8 +279,8 @@ export default function DashboardLanding() {
                 whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(255,0,255,0.6), inset 0 0 40px rgba(255,0,255,0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 style={{
-                  background: 'rgba(30, 10, 30, 0.65)',
-                  backdropFilter: 'blur(16px)',
+                  background: 'rgba(30, 10, 30, 0.25)',
+                  backdropFilter: 'blur(12px)',
                   border: '2px solid rgba(255, 0, 255, 0.6)',
                   borderRadius: '24px',
                   padding: '3rem 2rem',
