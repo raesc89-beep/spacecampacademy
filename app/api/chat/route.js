@@ -90,7 +90,18 @@ export async function POST(req) {
       },
     });
 
-    return result.toDataStreamResponse();
+    // The installed AI SDK version uses different method names for the stream response
+    if (typeof result.toDataStreamResponse === 'function') {
+      return result.toDataStreamResponse();
+    } else if (typeof result.toUIMessageStreamResponse === 'function') {
+      return result.toUIMessageStreamResponse();
+    } else if (typeof result.toTextStreamResponse === 'function') {
+      return result.toTextStreamResponse();
+    } else {
+      return new Response(result.textStream || result.fullStream, {
+        headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+      });
+    }
   } catch (error) {
     console.error("Error en Astro-D:", error);
     return new Response(JSON.stringify({ error: "Fallo en los sistemas de comunicación de Astro-D", details: error.message || error.toString() }), { status: 500 });

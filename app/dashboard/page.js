@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Rocket, Anchor, Radio, Star } from 'lucide-react';
+import { Rocket, Anchor, Radio, Star, Gamepad2 } from 'lucide-react';
 import { useEffect } from 'react';
 import Image from 'next/image';
 
@@ -240,6 +240,58 @@ export default function DashboardLanding() {
                     Misión en Vivo <span style={{ display: 'inline-block', width: 10, height: 10, background: 'var(--success)', borderRadius: '50%', marginLeft: '10px' }} className="pulse-anim"></span>
                   </h2>
                   <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.4 }}>Conéctate con otros comandantes y participa en transmisiones exclusivas en tiempo real.</p>
+                </div>
+              </motion.div>
+              </motion.div>
+            </Link>
+
+            {/* Zona Arcade */}
+            <Link href="/hub/arcade" style={{ textDecoration: 'none' }}>
+              <motion.div 
+                animate={{ y: [5, -5, 5] }}
+                transition={{ repeat: Infinity, duration: 4.8, ease: "easeInOut" }}
+              >
+              <motion.div 
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(255,0,255,0.6), inset 0 0 40px rgba(255,0,255,0.4)' }}
+                whileTap={{ scale: 0.98 }}
+                style={{
+                  background: 'rgba(30, 10, 30, 0.65)',
+                  backdropFilter: 'blur(16px)',
+                  border: '2px solid rgba(255, 0, 255, 0.6)',
+                  borderRadius: '24px',
+                  padding: '3rem 2rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  gap: '1.5rem',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(255,0,255,0.2), 0 0 15px rgba(255,0,255,0.3)',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+              >
+                {/* HUD Elements */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '40px', height: '40px', borderTop: '2px solid #FF00FF', borderLeft: '2px solid #FF00FF', borderTopLeftRadius: '24px' }}></div>
+                <div style={{ position: 'absolute', bottom: 0, right: 0, width: '40px', height: '40px', borderBottom: '2px solid #FF00FF', borderRight: '2px solid #FF00FF', borderBottomRightRadius: '24px' }}></div>
+
+                <div style={{ 
+                  background: 'transparent',
+                  padding: '1.5rem',
+                  borderRadius: '50%',
+                  border: '2px dashed rgba(255,0,255,0.5)',
+                  boxShadow: '0 0 30px rgba(255,0,255,0.2), inset 0 0 15px rgba(255,0,255,0.2)',
+                  position: 'relative'
+                }}>
+                  <div style={{ position: 'absolute', inset: -8, border: '1px solid rgba(255,0,255,0.3)', borderRadius: '50%', animation: 'spin 9s linear infinite reverse' }}></div>
+                  <Gamepad2 size={48} color="#FF00FF" style={{ filter: 'drop-shadow(0 0 10px #FF00FF)' }} />
+                </div>
+                <div>
+                  <h2 style={{ color: 'white', fontSize: '2rem', margin: '0 0 0.5rem 0', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
+                    Zona Arcade
+                  </h2>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.4 }}>Minijuegos espaciales para entrenar tu mente y agudizar tus reflejos.</p>
                 </div>
               </motion.div>
               </motion.div>

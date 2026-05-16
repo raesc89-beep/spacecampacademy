@@ -172,17 +172,6 @@ const DASHBOARD_MISSIONS = [
     badgeColor: "#FF6B35",
     badgeText: "Misión Lunar",
     borderColor: "rgba(255, 107, 53, 0.4)"
-  },
-  {
-    id: "arcade",
-    title: "Zona Arcade",
-    subtitle: "8 minijuegos espaciales: memoria, trivia, bingo, Laika Finder y más.",
-    link: "/hub/arcade",
-    bgSrc: "/assets/dashboard/arcade_cover.png",
-    badgeColor: "#FF00FF",
-    badgeText: "Minijuegos",
-    borderColor: "rgba(255,0,255,0.4)",
-    isMinigame: true
   }
 ];
 
