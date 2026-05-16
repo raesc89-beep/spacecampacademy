@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Rocket, Anchor, Radio, Star, Gamepad2 } from 'lucide-react';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import HubDecorations from '@/components/HubDecorations';
 
 export default function DashboardLanding() {
   const { user, userData, loading } = useAuth();
@@ -28,17 +29,41 @@ export default function DashboardLanding() {
       
       <main style={{ flex: 1, position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
         
-        {/* Background Image */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+        {/* Background Animation & Cockpit */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
+          {/* Capa 1: Espacio Estrellado y Decoraciones */}
+          <div style={{ position: 'absolute', inset: 0, background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' }} />
+          <HubDecorations />
+
+          {/* Vehículos Espaciales de Fondo */}
+          <motion.img 
+            src="/assets/shuttle_user.png" 
+            alt="Shuttle"
+            animate={{ x: ['-20vw', '120vw'], y: ['0vh', '15vh', '-5vh', '10vh'] }}
+            transition={{ repeat: Infinity, duration: 45, ease: "linear" }}
+            style={{ position: 'absolute', top: '25%', left: 0, width: '6vw', minWidth: '40px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 10px rgba(100,200,255,0.4))' }}
+          />
+          
+          <motion.img 
+            src="/assets/ufo_user.png" 
+            alt="UFO"
+            animate={{ x: ['120vw', '-20vw'], y: ['0vh', '-20vh', '15vh', '5vh'] }}
+            transition={{ repeat: Infinity, duration: 65, ease: "linear" }}
+            style={{ position: 'absolute', top: '55%', left: 0, width: '8vw', minWidth: '60px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
+          />
+
+          {/* Capa 2: Cabina Recortada (Primer Plano) */}
           <Image 
-            src="/assets/dashboard/space_base_dashboard.png" 
-            alt="Space Base Control Room" 
+            src="/assets/dashboard/cockpit_overlay.png" 
+            alt="Cockpit View" 
             fill 
-            style={{ objectFit: 'cover', filter: 'brightness(0.6) contrast(1.1)' }} 
+            style={{ objectFit: 'cover', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.9)' }} 
             priority 
           />
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, transparent 0%, #020308 100%)', opacity: 0.8 }}></div>
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(2,3,8,0.3) 0%, #020308 100%)' }}></div>
+
+          {/* Gradientes de Oscurecimiento para Legibilidad */}
+          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 0%, #020308 100%)', opacity: 0.8, pointerEvents: 'none' }}></div>
+          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'linear-gradient(to bottom, rgba(2,3,8,0.2) 0%, rgba(2,3,8,0.8) 100%)', pointerEvents: 'none' }}></div>
         </div>
 
         {/* Content */}
