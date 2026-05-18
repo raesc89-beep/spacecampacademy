@@ -93,33 +93,7 @@ function LightningEffect() {
   );
 }
 
-// ─── Componente de Humo Realista ──────────────────────────────────────────
-function SmokeEffect() {
-  return (
-    <div style={{
-      position: 'absolute',
-      bottom: '-10%', left: '-15%', width: '50%', height: '50%',
-      pointerEvents: 'none',
-      zIndex: 2,
-      opacity: 0.85,
-      mixBlendMode: 'screen',
-      WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
-      maskImage: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
-    }}>
-      <img
-        src="/assets/bttf/smoke_effect.png"
-        alt="Smoke"
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          filter: 'blur(6px) contrast(1.1)',
-          animation: 'smokeDrift 10s infinite alternate ease-in-out',
-        }}
-      />
-    </div>
-  );
-}
+// ─── Componente de Humo Realista (Eliminado para Interstellar) ──────────
 
 
 // ─── Estilos Globales para animaciones ─────────────────────────────────────
@@ -328,7 +302,7 @@ export default function InterstellarHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        backgroundImage: "url('/assets/bttf/bttf_bg_v2.jpg')",
+        backgroundImage: "url('/assets/interstellar/gargantua_bg.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
@@ -336,15 +310,21 @@ export default function InterstellarHub() {
         {/* Capas de oscurecimiento y niebla */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to bottom, rgba(5,10,20,0.7) 0%, rgba(5,10,20,0.3) 50%, rgba(5,10,20,0.8) 100%)',
+          background: 'linear-gradient(to bottom, rgba(5,10,20,0.5) 0%, rgba(5,10,20,0.2) 50%, rgba(5,10,20,0.7) 100%)',
           pointerEvents: 'none', zIndex: 1
+        }} />
+
+        {/* Estrellas Brillantes */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover',
+          opacity: 0.5,
+          mixBlendMode: 'screen',
+          pointerEvents: 'none', zIndex: 0
         }} />
 
         {/* Efecto de Trueno Ligero en las Nubes */}
         <LightningEffect />
-
-        {/* Efecto de Humo en la calle (esquina inferior izquierda) */}
-        <SmokeEffect />
 
 
         {/* Constelaciones */}
@@ -377,7 +357,7 @@ export default function InterstellarHub() {
             }}
           >
             <ChevronLeft size={20} />
-            Línea de Tiempo Principal
+            Regresar al Comando
           </motion.button>
 
           <motion.div
@@ -403,7 +383,7 @@ export default function InterstellarHub() {
                 fontFamily: 'var(--font-heading)',
                 textTransform: 'uppercase'
               }}>
-                LA CIENCIA DE VOLVER AL FUTURO
+                LA CIENCIA DE INTERSTELLAR
               </h1>
               <p style={{
                 color: '#00FFFF',
@@ -412,7 +392,7 @@ export default function InterstellarHub() {
                 textShadow: '0 2px 4px rgba(0,0,0,0.8)',
                 letterSpacing: '1px'
               }}>
-                Física Cuántica · Energía · 7 Módulos
+                Astrofísica · Gravedad · 5 Módulos
               </p>
             </div>
           </motion.div>
@@ -445,7 +425,7 @@ export default function InterstellarHub() {
           display: 'flex', alignItems: 'center', gap: '1.5rem',
         }}>
           <div style={{ color: 'white', fontFamily: 'var(--font-heading)', fontSize: '1.1rem' }}>
-            Módulos Temporales:
+            Progreso de Exploración:
           </div>
           <div style={{
             background: 'rgba(255,255,255,0.1)',
@@ -456,7 +436,7 @@ export default function InterstellarHub() {
             fontSize: '1.2rem',
             textShadow: '0 0 10px rgba(0, 255, 255, 0.5)'
           }}>
-            {completedIds.filter(id => id.startsWith('bttf_m')).length} / {INTERSTELLAR_MODULES.length}
+            {completedIds.filter(id => id.startsWith('interstellar_m')).length} / {INTERSTELLAR_MODULES.length}
           </div>
         </div>
       </main>

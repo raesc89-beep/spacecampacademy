@@ -52,19 +52,19 @@ export default function DashboardLanding() {
             style={{ position: 'absolute', top: '55%', left: 0, width: '8vw', minWidth: '60px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
           />
 
-          {/* Planeta Tierra */}
-          <motion.div 
-            animate={{ rotate: 360 }}
-            transition={{ repeat: Infinity, duration: 250, ease: "linear" }}
-            style={{ 
-              position: 'absolute', top: '10%', right: '-10%', 
-              width: '50vw', height: '50vw', minWidth: '350px', minHeight: '350px', 
-              zIndex: 1, pointerEvents: 'none', 
-              borderRadius: '50%',
-              background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / cover',
-              boxShadow: 'inset -30px -30px 60px rgba(0,0,0,0.9), 0 0 60px rgba(0, 180, 255, 0.3)'
-            }}
-          />
+          {/* Planeta Tierra (Contenedor Centrado) */}
+          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, pointerEvents: 'none' }}>
+            <motion.div 
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 250, ease: "linear" }}
+              style={{ 
+                width: '40vw', height: '40vw', minWidth: '300px', minHeight: '300px', 
+                borderRadius: '50%',
+                background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / cover',
+                boxShadow: 'inset -30px -30px 60px rgba(0,0,0,0.9), 0 0 60px rgba(0, 180, 255, 0.3)'
+              }}
+            />
+          </div>
 
           {/* Capa 2: Cabina Recortada (Primer Plano) */}
           <Image 

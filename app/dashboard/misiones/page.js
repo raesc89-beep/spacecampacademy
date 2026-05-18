@@ -49,7 +49,7 @@ const DASHBOARD_MISSIONS = [
     title: "La Ciencia de Interstellar",
     subtitle: "Agujeros negros, gravedad y dilatación temporal. ¿Podemos sobrevivir a Gargantúa?",
     link: "/hub/interstellar",
-    bgSrc: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800",
+    bgSrc: "/assets/interstellar/interstellar_card_bg.png",
     badgeColor: "#00E4FF",
     badgeText: "Astrofísica Teórica",
     borderColor: "rgba(0, 228, 255, 0.4)"
