@@ -302,15 +302,16 @@ export default function InterstellarHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
+        backgroundColor: '#000000',
         backgroundImage: "url('/assets/interstellar/gargantua_bg.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
       }}>
         {/* Capas de oscurecimiento y niebla */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to bottom, rgba(5,10,20,0.5) 0%, rgba(5,10,20,0.2) 50%, rgba(5,10,20,0.7) 100%)',
+          background: 'radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.8) 100%)',
           pointerEvents: 'none', zIndex: 1
         }} />
 
@@ -318,17 +319,10 @@ export default function InterstellarHub() {
         <div style={{
           position: 'absolute', inset: 0,
           background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover',
-          opacity: 0.5,
+          opacity: 0.7,
           mixBlendMode: 'screen',
           pointerEvents: 'none', zIndex: 0
         }} />
-
-        {/* Efecto de Trueno Ligero en las Nubes */}
-        <LightningEffect />
-
-
-        {/* Constelaciones */}
-        <ConstellationLines />
 
         {/* Header UI - Botón Volver y Título */}
         <div style={{
