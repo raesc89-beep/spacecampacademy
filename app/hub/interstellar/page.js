@@ -127,6 +127,11 @@ const globalStyles = `
   80% { opacity: 1; }
   100% { stroke-dashoffset: 0; opacity: 0.2; }
 }
+@keyframes gravitationalLensing {
+  0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); border-radius: 50% 55% 45% 50%; }
+  50% { transform: translate(-50%, -50%) rotate(180deg) scale(1.05); border-radius: 45% 50% 55% 45%; }
+  100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); border-radius: 50% 55% 45% 50%; }
+}
 `;
 
 // ─── Nodo de Módulo ────────────────────────────────────────────────────────
@@ -322,6 +327,18 @@ export default function InterstellarHub() {
           opacity: 0.7,
           mixBlendMode: 'screen',
           pointerEvents: 'none', zIndex: 0
+        }} />
+
+        {/* Efecto de Distorsión Óptica (Lente Gravitacional) */}
+        <div style={{
+          position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+          width: '70vw', height: '70vw', minWidth: '400px', minHeight: '400px',
+          borderRadius: '50%',
+          backdropFilter: 'blur(3px) contrast(1.5) brightness(1.2) hue-rotate(5deg)',
+          animation: 'gravitationalLensing 12s infinite linear',
+          pointerEvents: 'none', zIndex: 1,
+          maskImage: 'radial-gradient(circle at center, transparent 35%, black 45%, transparent 75%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, transparent 35%, black 45%, transparent 75%)'
         }} />
 
         {/* Header UI - Botón Volver y Título */}

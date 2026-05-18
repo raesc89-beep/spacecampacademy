@@ -58,10 +58,12 @@ export default function DashboardLanding() {
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 250, ease: "linear" }}
               style={{ 
-                width: '40vw', height: '40vw', minWidth: '300px', minHeight: '300px', 
+                width: '45vw', height: '45vw', minWidth: '350px', minHeight: '350px', 
                 borderRadius: '50%',
-                background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / cover',
-                boxShadow: 'inset -30px -30px 60px rgba(0,0,0,0.9), 0 0 60px rgba(0, 180, 255, 0.3)'
+                background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / 120% no-repeat',
+                boxShadow: 'inset -30px -30px 60px rgba(0,0,0,0.9), 0 0 60px rgba(0, 180, 255, 0.4)',
+                WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 72%)',
+                maskImage: 'radial-gradient(circle at center, black 60%, transparent 72%)'
               }}
             />
           </div>
@@ -71,7 +73,7 @@ export default function DashboardLanding() {
             src="/assets/dashboard/cockpit_overlay.png" 
             alt="Cockpit View" 
             fill 
-            style={{ objectFit: 'fill', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.95)' }} 
+            style={{ objectFit: 'contain', objectPosition: 'center bottom', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.95)' }} 
             priority 
           />
 
