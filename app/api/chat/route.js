@@ -51,6 +51,13 @@ export async function POST(req) {
       };
     });
 
+    if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY && !process.env.GEMINI_API_KEY) {
+      return new Response(JSON.stringify({ 
+        error: "Falta la clave API", 
+        details: "Comandante, la conexión con mi núcleo de IA está rota. Por favor agrega GOOGLE_GENERATIVE_AI_API_KEY en las variables de entorno de Vercel para que pueda funcionar en móviles y producción."
+      }), { status: 500, headers: { 'Content-Type': 'application/json' } });
+    }
+
     const result = streamText({
       model: google('gemini-2.5-flash'),
       system: systemPrompt + contextString,

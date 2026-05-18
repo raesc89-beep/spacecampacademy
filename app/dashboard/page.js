@@ -53,12 +53,17 @@ export default function DashboardLanding() {
           />
 
           {/* Planeta Tierra */}
-          <motion.img 
-            src="https://media.giphy.com/media/xThtappQfQohcuRpeQ/giphy.gif" 
-            alt="Earth"
+          <motion.div 
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 250, ease: "linear" }}
-            style={{ position: 'absolute', top: '5%', right: '15%', width: '40vw', minWidth: '300px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(0,180,255,0.4))', borderRadius: '50%' }}
+            style={{ 
+              position: 'absolute', top: '10%', right: '-10%', 
+              width: '50vw', height: '50vw', minWidth: '350px', minHeight: '350px', 
+              zIndex: 1, pointerEvents: 'none', 
+              borderRadius: '50%',
+              background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / cover',
+              boxShadow: 'inset -30px -30px 60px rgba(0,0,0,0.9), 0 0 60px rgba(0, 180, 255, 0.3)'
+            }}
           />
 
           {/* Capa 2: Cabina Recortada (Primer Plano) */}
@@ -92,13 +97,14 @@ export default function DashboardLanding() {
                  <Image src="/assets/amde_logo.png" alt="AMDE" width={60} height={60} style={{ filter: 'drop-shadow(0 0 10px #00E4FF)', objectFit: 'contain' }} />
               </motion.div>
               <h1 style={{ 
-                fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', 
+                fontSize: 'clamp(1.8rem, 5vw, 4.5rem)', 
                 margin: 0, 
                 background: 'linear-gradient(180deg, #FFFFFF 0%, #88CCFF 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 textShadow: '0 0 40px rgba(0, 228, 255, 0.4)',
-                fontWeight: 900,
+                fontFamily: 'system-ui, sans-serif',
+                fontWeight: 800,
                 letterSpacing: '2px',
                 textTransform: 'uppercase'
               }}>
@@ -124,7 +130,13 @@ export default function DashboardLanding() {
           </motion.div>
 
           {/* Main Portals / Buttons */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', width: '100%', marginTop: '2rem' }}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', 
+            gap: '1.5rem', 
+            width: '100%',
+            padding: '0 1rem'
+          }}>
             
             {/* Base de Misiones */}
             <Link href="/dashboard/misiones" style={{ textDecoration: 'none' }}>
@@ -136,16 +148,16 @@ export default function DashboardLanding() {
                   whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,228,255,0.6), inset 0 0 40px rgba(0,228,255,0.4)' }}
                   whileTap={{ scale: 0.98 }}
                   style={{
-                    background: 'rgba(10, 20, 40, 0.25)',
+                    background: 'rgba(10, 15, 30, 0.25)',
                     backdropFilter: 'blur(12px)',
                     border: '2px solid rgba(0, 228, 255, 0.6)',
                     borderRadius: '24px',
-                    padding: '3rem 2rem',
+                    padding: 'clamp(1.5rem, 3vw, 3rem) clamp(1rem, 2vw, 2rem)',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
                     textAlign: 'center',
-                    gap: '1.5rem',
+                    gap: '1rem',
                     boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,228,255,0.2), 0 0 15px rgba(0,228,255,0.3)',
                     transition: 'all 0.3s ease',
                     cursor: 'pointer',
@@ -190,12 +202,12 @@ export default function DashboardLanding() {
                   backdropFilter: 'blur(12px)',
                   border: '2px solid rgba(153, 51, 255, 0.6)',
                   borderRadius: '24px',
-                  padding: '3rem 2rem',
+                  padding: 'clamp(1.5rem, 3vw, 3rem) clamp(1rem, 2vw, 2rem)',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
                   textAlign: 'center',
-                  gap: '1.5rem',
+                  gap: '1rem',
                   boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(153,51,255,0.2), 0 0 15px rgba(153,51,255,0.3)',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer',
@@ -240,12 +252,12 @@ export default function DashboardLanding() {
                   backdropFilter: 'blur(12px)',
                   border: '2px solid rgba(0, 255, 136, 0.6)',
                   borderRadius: '24px',
-                  padding: '3rem 2rem',
+                  padding: 'clamp(1.5rem, 3vw, 3rem) clamp(1rem, 2vw, 2rem)',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
                   textAlign: 'center',
-                  gap: '1.5rem',
+                  gap: '1rem',
                   boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,255,136,0.2), 0 0 15px rgba(0,255,136,0.3)',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer',
@@ -292,7 +304,7 @@ export default function DashboardLanding() {
                   backdropFilter: 'blur(12px)',
                   border: '2px solid rgba(255, 0, 255, 0.6)',
                   borderRadius: '24px',
-                  padding: '3rem 2rem',
+                  padding: 'clamp(1.5rem, 3vw, 3rem) clamp(1rem, 2vw, 2rem)',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',

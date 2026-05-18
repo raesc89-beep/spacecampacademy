@@ -20,29 +20,32 @@ async function main() {
     // squircle dist
     const dist = Math.pow(dx, 3) + Math.pow(dy, 3);
 
+    const r = this.bitmap.data[idx];
+    const g = this.bitmap.data[idx + 1];
+    const b = this.bitmap.data[idx + 2];
+    const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+
     if (dist < 1) {
       const feather = 0.6;
       if (dist > feather) {
         const alpha = Math.floor(255 * (dist - feather) / (1 - feather));
-        
-        const r = this.bitmap.data[idx];
-        const g = this.bitmap.data[idx + 1];
-        const b = this.bitmap.data[idx + 2];
-        const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
         
         // If it's a bright pixel (earth/space), make it transparent
         if (luma > 40) {
            this.bitmap.data[idx + 3] = Math.min(this.bitmap.data[idx + 3], alpha);
         }
       } else {
-        const r = this.bitmap.data[idx];
-        const g = this.bitmap.data[idx + 1];
-        const b = this.bitmap.data[idx + 2];
-        const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-        
         if (luma > 30) {
            this.bitmap.data[idx + 3] = 0; 
         }
+      }
+    } else {
+      // SIDE WINDOWS:
+      // If we are on the left 20% or right 20% of the image, and it's upper half (windows), make bright pixels transparent
+      if ((x < w * 0.2 || x > w * 0.8) && y < h * 0.85) {
+         if (luma > 40) {
+            this.bitmap.data[idx + 3] = 0; // Make transparent so background shows through!
+         }
       }
     }
   });
