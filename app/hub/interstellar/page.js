@@ -329,16 +329,20 @@ export default function InterstellarHub() {
           pointerEvents: 'none', zIndex: 0
         }} />
 
-        {/* Efecto de Distorsión Óptica (Lente Gravitacional) */}
+        {/* Efecto de Distorsión Óptica (Lente Gravitacional Refractiva) */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-          width: '70vw', height: '70vw', minWidth: '400px', minHeight: '400px',
-          borderRadius: '50%',
-          backdropFilter: 'blur(3px) contrast(1.5) brightness(1.2) hue-rotate(5deg)',
-          animation: 'gravitationalLensing 12s infinite linear',
+          width: '90vw', height: '90vw', minWidth: '600px', minHeight: '600px',
+          backgroundImage: "url('/assets/interstellar/gargantua_bg.png')",
+          backgroundSize: '115%',
+          backgroundPosition: 'center center',
+          borderRadius: '45% 55% 40% 60%',
+          opacity: 0.6,
+          filter: 'contrast(1.3) brightness(1.2) hue-rotate(10deg)',
+          animation: 'gravitationalLensing 10s infinite linear',
           pointerEvents: 'none', zIndex: 1,
-          maskImage: 'radial-gradient(circle at center, transparent 35%, black 45%, transparent 75%)',
-          WebkitMaskImage: 'radial-gradient(circle at center, transparent 35%, black 45%, transparent 75%)'
+          maskImage: 'radial-gradient(circle at center, transparent 38%, black 48%, transparent 65%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, transparent 38%, black 48%, transparent 65%)'
         }} />
 
         {/* Header UI - Botón Volver y Título */}

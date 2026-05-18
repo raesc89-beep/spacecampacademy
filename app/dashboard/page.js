@@ -73,7 +73,7 @@ export default function DashboardLanding() {
             src="/assets/dashboard/cockpit_overlay.png" 
             alt="Cockpit View" 
             fill 
-            style={{ objectFit: 'contain', objectPosition: 'center bottom', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.95)' }} 
+            style={{ objectFit: 'cover', objectPosition: 'center bottom', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.95)' }} 
             priority 
           />
 
