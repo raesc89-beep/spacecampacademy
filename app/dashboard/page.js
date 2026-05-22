@@ -70,7 +70,7 @@ export default function DashboardLanding() {
 
           {/* Capa 2: Cabina Recortada (Primer Plano) */}
           <Image 
-            src="/assets/dashboard/cockpit_overlay.png" 
+            src="/assets/dashboard/window_frame.png" 
             alt="Cockpit View" 
             fill 
             style={{ objectFit: 'cover', objectPosition: 'center bottom', zIndex: 2, pointerEvents: 'none', filter: 'contrast(1.1) brightness(0.95)' }} 
