@@ -267,7 +267,7 @@ export default function Apollo11Hub() {
 
       {/* Botón Volver */}
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 200 }}>
-        <Link href="/dashboard" style={{
+        <Link href="/dashboard/misiones" style={{
           display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#FFF',
           textDecoration: 'none', background: 'rgba(0,0,0,0.65)', padding: '0.7rem 1.2rem',
           borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)',

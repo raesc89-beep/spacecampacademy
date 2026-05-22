@@ -90,69 +90,72 @@ function ProceduralShipAAA() {
         <cylinderGeometry args={[0.35, 0.35, 0.8, 16]} rotation={[Math.PI/2, 0, 0]} />
       </mesh>
 
-      {/* CLASES DE NAVE (Kitbashing procedural avanzado) */}
+      {/* CLASES DE NAVE (Geometrías Avanzadas y Realistas) */}
       {shipConfig.fuselage === 'fighter' && (
         <group>
-          {/* Caza: Aerodinámico, afilado */}
-          <mesh position={[0, 0, 1.8]} rotation={[Math.PI/2, 0, 0]} material={materials.primary}>
-            <cylinderGeometry args={[0.01, 0.8, 4, 6]} /> {/* Punta hexagonal */}
+          {/* Caza: Nariz afilada (Cono), cuerpo esbelto */}
+          <mesh position={[0, 0, 1.5]} rotation={[Math.PI/2, 0, 0]} material={materials.primary}>
+            <coneGeometry args={[0.5, 3.5, 16]} />
           </mesh>
-          <mesh position={[0, 0.3, 0.8]} material={materials.secondary}>
-             <boxGeometry args={[1.4, 0.3, 2.5]} />
+          <mesh position={[0, 0.2, 0.2]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}>
+             <cylinderGeometry args={[0.6, 0.6, 2.5, 16]} />
           </mesh>
-          <mesh position={[0, -0.2, 0.5]} material={materials.dark}>
-             <boxGeometry args={[1, 0.4, 3]} />
+          <mesh position={[0, -0.3, 0]} material={materials.dark}>
+             <boxGeometry args={[1, 0.4, 2.8]} />
           </mesh>
         </group>
       )}
       
       {shipConfig.fuselage === 'cargo' && (
         <group>
-          {/* Nave Minera: Pesada, industrial, cúbica */}
-          <mesh position={[0, 0, 1]} material={materials.primary}>
-            <boxGeometry args={[2.2, 1.8, 5]} />
+          {/* Nave Minera: Tanques cilíndricos, estructura reforzada */}
+          <mesh position={[0, 0, 0.8]} material={materials.primary}>
+            <boxGeometry args={[2, 1.5, 4.5]} />
           </mesh>
-          <mesh position={[0, 1.2, 0]} material={materials.industrial}>
-            <boxGeometry args={[1, 0.5, 3]} /> {/* Módulo extractor */}
+          <mesh position={[0, 1.2, -0.5]} material={materials.industrial}>
+            <boxGeometry args={[1.2, 0.6, 2]} />
           </mesh>
-          {/* Contenedores de carga laterales */}
-          <mesh position={[1.4, 0, 1]} material={materials.dark}><boxGeometry args={[0.8, 1.2, 3]} /></mesh>
-          <mesh position={[-1.4, 0, 1]} material={materials.dark}><boxGeometry args={[0.8, 1.2, 3]} /></mesh>
+          {/* Tanques de carga laterales (Cilíndricos) */}
+          <mesh position={[1.3, 0, 1]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.6, 0.6, 4, 16]} /></mesh>
+          <mesh position={[-1.3, 0, 1]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.6, 0.6, 4, 16]} /></mesh>
         </group>
       )}
 
       {shipConfig.fuselage === 'explorer' && (
         <group>
-          {/* Explorador: Redondeado, domos, sensores */}
-          <mesh position={[0, 0, 1.2]} material={materials.primary}>
-            <capsuleGeometry args={[0.9, 3.5, 32, 32]} rotation={[Math.PI/2, 0, 0]} />
+          {/* Explorador: Diseño suave, disco central, domos, cápsulas */}
+          <mesh position={[0, 0, 0.5]} material={materials.primary}>
+            <cylinderGeometry args={[1.8, 1.8, 0.6, 32]} />
           </mesh>
-          <mesh position={[0, 1, 0.5]} material={materials.glass}>
-            <sphereGeometry args={[0.6, 32, 16, 0, Math.PI*2, 0, Math.PI/2]} /> {/* Domo de observación */}
+          <mesh position={[0, 0, 2]} material={materials.primary}>
+            <capsuleGeometry args={[0.6, 2, 16, 16]} rotation={[Math.PI/2, 0, 0]} />
           </mesh>
-          {/* Antena de sensores */}
-          <mesh position={[1, 0, 3]} rotation={[Math.PI/2, 0, 0]} material={materials.dark}>
+          {/* Antenas de sensores laterales */}
+          <mesh position={[1.5, 0, 1]} rotation={[Math.PI/2, 0, -0.3]} material={materials.dark}>
+             <cylinderGeometry args={[0.05, 0.05, 2, 8]} />
+          </mesh>
+          <mesh position={[-1.5, 0, 1]} rotation={[Math.PI/2, 0, 0.3]} material={materials.dark}>
              <cylinderGeometry args={[0.05, 0.05, 2, 8]} />
           </mesh>
         </group>
       )}
 
       {/* CABINA PRINCIPAL (Común pero escalable) */}
-      <mesh position={[0, 0.7, 1.5]} material={materials.glass}>
-        <sphereGeometry args={[0.5, 32, 16, 0, Math.PI * 2, 0, Math.PI/2]} />
+      <mesh position={[0, 0.6, 1.8]} material={materials.glass}>
+        <sphereGeometry args={[0.45, 32, 16, 0, Math.PI * 2, 0, Math.PI/2]} />
       </mesh>
-      <mesh position={[0, 0.6, 1.5]} material={materials.dark}>
-        <cylinderGeometry args={[0.52, 0.52, 0.2, 32]} />
+      <mesh position={[0, 0.5, 1.8]} material={materials.dark}>
+        <cylinderGeometry args={[0.47, 0.47, 0.2, 32]} />
       </mesh>
 
-      {/* SISTEMA DE ALAS */}
+      {/* SISTEMA DE ALAS (Con ángulos agresivos) */}
       {shipConfig.wings === 'delta' && (
         <group>
-          <mesh position={[1.6, -0.1, 0]} rotation={[0, -0.2, -0.1]} material={materials.secondary}>
-             <boxGeometry args={[2.5, 0.1, 1.5]} />
+          <mesh position={[1.5, 0, 0]} rotation={[0, -0.3, -0.1]} material={materials.secondary}>
+             <boxGeometry args={[2.5, 0.08, 1.8]} />
           </mesh>
-          <mesh position={[-1.6, -0.1, 0]} rotation={[0, 0.2, 0.1]} material={materials.secondary}>
-             <boxGeometry args={[2.5, 0.1, 1.5]} />
+          <mesh position={[-1.5, 0, 0]} rotation={[0, 0.3, 0.1]} material={materials.secondary}>
+             <boxGeometry args={[2.5, 0.08, 1.8]} />
           </mesh>
         </group>
       )}

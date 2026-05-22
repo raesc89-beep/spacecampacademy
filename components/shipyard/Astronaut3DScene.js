@@ -95,12 +95,12 @@ function ProceduralAstronaut({ skinTone, suitColor, visorColor, accentColor }) {
       </mesh>
 
       {/* Boots */}
-      <mesh position={[0.25, -0.45, 0.1]}>
-        <boxGeometry args={[0.385, 0.22, 0.605]} />
+      <mesh position={[0.3, -0.5, 0.1]}>
+        <boxGeometry args={[0.55, 0.35, 0.75]} />
         <meshStandardMaterial color={accentColor} roughness={0.7} />
       </mesh>
-      <mesh position={[-0.25, -0.45, 0.1]}>
-        <boxGeometry args={[0.385, 0.22, 0.605]} />
+      <mesh position={[-0.3, -0.5, 0.1]}>
+        <boxGeometry args={[0.55, 0.35, 0.75]} />
         <meshStandardMaterial color={accentColor} roughness={0.7} />
       </mesh>
     </group>

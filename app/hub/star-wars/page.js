@@ -336,7 +336,7 @@ export default function StarWarsHub() {
 
       {/* Back button */}
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 200 }}>
-        <Link href="/dashboard" style={{
+        <Link href="/dashboard/misiones" style={{
           display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#FFE81F',
           textDecoration: 'none', background: 'rgba(0,0,0,0.7)', padding: '0.7rem 1.2rem',
           borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,232,31,0.3)',

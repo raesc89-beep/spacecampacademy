@@ -333,16 +333,30 @@ export default function InterstellarHub() {
           pointerEvents: 'none', zIndex: 0
         }} />
 
-        {/* Disco de Acreción Giratorio (Efecto Horizontal) */}
+        {/* Definición del filtro de Turbulencia (Niebla Viva) */}
+        <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+          <defs>
+            <filter id="accretion-noise">
+              <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" result="noise">
+                <animate attributeName="baseFrequency" values="0.015;0.02;0.015" dur="15s" repeatCount="indefinite" />
+              </feTurbulence>
+              <feDisplacementMap in="SourceGraphic" in2="noise" scale="40" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+          </defs>
+        </svg>
+
+        {/* Disco de Acreción Vivo (Efecto Horizontal de Niebla/Plasma) */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%) scaleY(0.25)',
-          width: '90vw', height: '90vw', minWidth: '600px', minHeight: '600px',
+          width: '95vw', height: '95vw', minWidth: '700px', minHeight: '700px',
           borderRadius: '50%',
-          background: 'conic-gradient(from 0deg, transparent 0%, rgba(255, 150, 50, 0.5) 20%, transparent 40%, rgba(255, 100, 0, 0.5) 60%, transparent 80%, rgba(255, 150, 50, 0.5) 100%)',
-          animation: 'accretionSpin 8s infinite linear',
+          background: 'conic-gradient(from 0deg, rgba(0,0,0,0) 0%, rgba(255,120,0,0.7) 15%, rgba(255,180,0,0.9) 30%, rgba(0,0,0,0) 50%, rgba(255,100,0,0.6) 65%, rgba(255,200,0,1) 85%, rgba(0,0,0,0) 100%)',
+          animation: 'accretionSpin 20s infinite linear',
           pointerEvents: 'none', zIndex: 1,
-          maskImage: 'radial-gradient(circle at center, transparent 30%, black 50%, transparent 70%)',
-          WebkitMaskImage: 'radial-gradient(circle at center, transparent 30%, black 50%, transparent 70%)'
+          maskImage: 'radial-gradient(circle at center, transparent 35%, black 48%, black 52%, transparent 70%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, transparent 35%, black 48%, black 52%, transparent 70%)',
+          filter: 'url(#accretion-noise) blur(3px) contrast(1.5)',
+          mixBlendMode: 'screen'
         }} />
 
         {/* Header UI - Botón Volver y Título */}
@@ -356,7 +370,7 @@ export default function InterstellarHub() {
             animate={{ opacity: 1, x: 0 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => router.push('/dashboard')}
+            onClick={() => router.push('/dashboard/misiones')}
             style={{
               pointerEvents: 'auto',
               background: 'rgba(0,0,0,0.6)',

@@ -67,7 +67,7 @@ export default function AsteroidsHub() {
 
       {/* Botón Flotante */}
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 100 }}>
-         <Link href="/dashboard" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none', background: 'rgba(0,0,0,0.5)', padding: '0.8rem 1.2rem', borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)' }}>
+         <Link href="/dashboard/misiones" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none', background: 'rgba(0,0,0,0.5)', padding: '0.8rem 1.2rem', borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)' }}>
             <ChevronLeft size={24} /> Volver al Catálogo
          </Link>
       </div>

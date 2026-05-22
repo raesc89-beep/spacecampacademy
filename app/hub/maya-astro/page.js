@@ -349,7 +349,7 @@ export default function MayaHub() {
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => router.push('/dashboard')}
+          onClick={() => router.push('/dashboard/misiones')}
           style={{
             pointerEvents: 'auto',
             background: 'rgba(0,0,0,0.6)',
