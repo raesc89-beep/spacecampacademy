@@ -4,6 +4,53 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
+import { Canvas, useFrame } from '@react-three/fiber';
+import * as THREE from 'three';
+import { useRef, useMemo } from 'react';
+
+// ─── Componente 3D WebGL del Agujero de Gusano ──────────────────────────────
+function WormholeTunnel() {
+  const meshRef = useRef();
+  
+  const tubeGeo = useMemo(() => {
+    class CustomCurve extends THREE.Curve {
+      getPoint(t, optionalTarget = new THREE.Vector3()) {
+        const x = Math.cos(t * Math.PI * 2) * 2;
+        const y = Math.sin(t * Math.PI * 2) * 2;
+        const z = t * 100 - 50;
+        return optionalTarget.set(x, y, z);
+      }
+    }
+    const path = new CustomCurve();
+    return new THREE.TubeGeometry(path, 100, 3, 30, false);
+  }, []);
+
+  useFrame((state, delta) => {
+    meshRef.current.position.z = (state.clock.elapsedTime * 15) % 100;
+    meshRef.current.rotation.z += delta * 0.2;
+  });
+
+  return (
+    <mesh ref={meshRef} geometry={tubeGeo}>
+      <meshBasicMaterial 
+        color="#00FFCC" 
+        wireframe={true} 
+        transparent={true} 
+        opacity={0.3}
+        side={THREE.BackSide}
+      />
+    </mesh>
+  );
+}
+
+function Wormhole3D() {
+  return (
+    <Canvas camera={{ position: [0, 0, 0], fov: 90 }}>
+      <WormholeTunnel />
+    </Canvas>
+  );
+}
+
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso Agujeros de Gusano ─────────────────────────────────────
@@ -218,30 +265,11 @@ export default function WormholeHub() {
         background: `url('/assets/dashboard/agujeros_gusano_cover.png') center/cover no-repeat`,
         overflow: 'hidden'
       }}>
-        {/* Animated Wormhole Tunnel Effect (Mejorado) */}
-        <div style={{
-          position: 'absolute', top: '50%', left: '50%', width: '200vw', height: '200vw',
-          transform: 'translate(-50%, -50%)',
-          background: 'repeating-radial-gradient(circle at center, transparent 0%, rgba(153, 51, 255, 0.4) 5%, transparent 10%, rgba(0, 228, 255, 0.4) 15%)',
-          animation: 'wormholeSpin 10s linear infinite',
-          WebkitMaskImage: 'radial-gradient(circle at center, transparent 10%, black 60%, transparent 100%)',
-          maskImage: 'radial-gradient(circle at center, transparent 10%, black 60%, transparent 100%)',
-          zIndex: 1, pointerEvents: 'none'
-        }} />
-        
-        {/* Capa de destello rotacional */}
-        <div style={{
-          position: 'absolute', top: '50%', left: '50%', width: '150vw', height: '150vw',
-          transform: 'translate(-50%, -50%)',
-          background: 'conic-gradient(from 0deg, transparent 0deg, rgba(255, 0, 255, 0.5) 90deg, transparent 180deg, rgba(0, 255, 204, 0.5) 270deg, transparent 360deg)',
-          animation: 'wormholeSpin 5s linear infinite reverse',
-          WebkitMaskImage: 'radial-gradient(circle at center, transparent 5%, black 40%, transparent 70%)',
-          maskImage: 'radial-gradient(circle at center, transparent 5%, black 40%, transparent 70%)',
-          mixBlendMode: 'screen',
-          zIndex: 1, pointerEvents: 'none'
-        }} />
-
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', zIndex: 1 }} />
+        {/* WebGL 3D Wormhole Effect */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <Wormhole3D />
+        </div>
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 10%, rgba(0,0,0,0.9) 100%)', pointerEvents: 'none', zIndex: 1 }} />
         
         <Stars />
 
