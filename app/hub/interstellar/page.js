@@ -311,42 +311,43 @@ export default function InterstellarHub() {
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        backgroundColor: '#02040a',
+        backgroundColor: '#000000',
+        overflow: 'hidden'
       }}>
+        {/* Video Background de Gargantúa */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 0,
+            opacity: 0.9,
+            filter: 'contrast(1.1) brightness(0.8)'
+          }}
+        >
+          <source src="/assets/interstellar/blackhole.mp4" type="video/mp4" />
+        </video>
+
+        {/* Capas de oscurecimiento y niebla para mejorar lectura de botones */}
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/assets/interstellar/gargantua_black_hole.png')",
-          backgroundSize: '65%',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat',
-          zIndex: 0
-        }} />
-
-        {/* Efecto animado del disco de acreción viva */}
-        <div style={{
-          position: 'absolute', top: '50%', left: '50%', width: '150vw', height: '150vw',
-          background: 'conic-gradient(from 0deg, rgba(255,165,0,0.1), rgba(255,100,0,0.3), rgba(255,200,0,0.1), rgba(255,165,0,0.1))',
-          mixBlendMode: 'color-dodge',
-          animation: 'accretionSpin 15s linear infinite',
-          WebkitMaskImage: 'radial-gradient(circle at center, transparent 15%, black 40%, transparent 60%)',
-          maskImage: 'radial-gradient(circle at center, transparent 15%, black 40%, transparent 60%)',
-          zIndex: 1, pointerEvents: 'none'
-        }} />
-
-        {/* Capas de oscurecimiento y niebla */}
-        <div style={{
-          position: 'absolute', inset: 0,
-          background: 'radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.8) 100%)',
+          background: 'radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.85) 100%)',
           pointerEvents: 'none', zIndex: 1
         }} />
 
-        {/* Estrellas Brillantes */}
+        {/* Estrellas Brillantes y Partículas Flotando */}
         <div style={{
           position: 'absolute', inset: 0,
           background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover',
-          opacity: 0.6,
+          opacity: 0.5,
           mixBlendMode: 'screen',
-          pointerEvents: 'none', zIndex: 0
+          pointerEvents: 'none', zIndex: 2
         }} />
 
 

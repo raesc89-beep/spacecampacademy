@@ -30,10 +30,9 @@ export default function DashboardLanding() {
       <main style={{ flex: 1, position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
         
         {/* Background Animation & Cockpit */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
-          {/* Capa 1: Espacio Estrellado y Decoraciones */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', backgroundColor: '#000000' }}>
+          {/* Capa 1: Espacio Estrellado */}
           <div style={{ position: 'absolute', inset: 0, background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' }} />
-          <HubDecorations />
 
           {/* Vehículos Espaciales de Fondo */}
           <motion.img 
@@ -56,7 +55,7 @@ export default function DashboardLanding() {
           <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, pointerEvents: 'none' }}>
             <motion.div 
               animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 250, ease: "linear" }}
+              transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
               style={{ 
                 width: '45vw', height: '45vw', minWidth: '350px', minHeight: '350px', 
                 borderRadius: '50%',
@@ -68,7 +67,7 @@ export default function DashboardLanding() {
             />
           </div>
 
-          {/* Capa 2: Cabina Recortada (Primer Plano) */}
+          {/* Capa 2: Cabina Recortada (Primer Plano) con mix-blend-mode para hacer transparencias las ventanas negras */}
           <Image 
             src="/assets/dashboard/window_frame.png" 
             alt="Cockpit View" 
@@ -78,15 +77,14 @@ export default function DashboardLanding() {
               objectPosition: 'center', 
               zIndex: 2, 
               pointerEvents: 'none', 
-              filter: 'contrast(1.1) brightness(0.95)',
-              WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 30%, black 60%)',
-              maskImage: 'radial-gradient(ellipse at center, transparent 30%, black 60%)'
+              mixBlendMode: 'screen',
+              filter: 'contrast(1.2)'
             }} 
             priority 
           />
 
           {/* Ligero difuminado en los bordes para Legibilidad sin tapar */}
-          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 30%, #020308 100%)', opacity: 0.4, pointerEvents: 'none' }}></div>
+          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 30%, #000000 100%)', opacity: 0.6, pointerEvents: 'none' }}></div>
         </div>
 
         {/* Content */}
