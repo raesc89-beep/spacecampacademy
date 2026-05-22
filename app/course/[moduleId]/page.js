@@ -353,7 +353,7 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href={isEgypt ? "/hub/egypt-astro" : (isEinsteinRosen ? "/dashboard" : (isRobot ? "/hub/robots-espacio" : (isPionero ? "/hub/pioneros" : (isAnimal ? "/hub/animales" : (isAsteroide ? "/hub/asteroides-cometas" : (isAnomaly ? "/hub/stellar-objects" : "/hub/solar-system"))))))} className="btn-secondary" style={{ textAlign: 'center' }}>
+          <Link href="/dashboard/misiones" className="btn-secondary" style={{ textAlign: 'center' }}>
             Volver al Mapa Estelar
           </Link>
         </aside>

@@ -132,6 +132,10 @@ const globalStyles = `
   50% { transform: translate(-50%, -50%) rotate(180deg) scale(1.05); border-radius: 45% 50% 55% 45%; }
   100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); border-radius: 50% 55% 45% 50%; }
 }
+@keyframes accretionSpin {
+  0% { transform: translate(-50%, -50%) scaleY(0.25) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) scaleY(0.25) rotate(360deg); }
+}
 `;
 
 // ─── Nodo de Módulo ────────────────────────────────────────────────────────
@@ -308,7 +312,7 @@ export default function InterstellarHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#000000',
-        backgroundImage: "url('/assets/interstellar/gargantua_bg.png')",
+        backgroundImage: "url('/assets/interstellar/gargantua_bg.jpg')",
         backgroundSize: 'contain',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
@@ -329,20 +333,16 @@ export default function InterstellarHub() {
           pointerEvents: 'none', zIndex: 0
         }} />
 
-        {/* Efecto de Distorsión Óptica (Lente Gravitacional Refractiva) */}
+        {/* Disco de Acreción Giratorio (Efecto Horizontal) */}
         <div style={{
-          position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+          position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%) scaleY(0.25)',
           width: '90vw', height: '90vw', minWidth: '600px', minHeight: '600px',
-          backgroundImage: "url('/assets/interstellar/gargantua_bg.png')",
-          backgroundSize: '115%',
-          backgroundPosition: 'center center',
-          borderRadius: '45% 55% 40% 60%',
-          opacity: 0.6,
-          filter: 'contrast(1.3) brightness(1.2) hue-rotate(10deg)',
-          animation: 'gravitationalLensing 10s infinite linear',
+          borderRadius: '50%',
+          background: 'conic-gradient(from 0deg, transparent 0%, rgba(255, 150, 50, 0.5) 20%, transparent 40%, rgba(255, 100, 0, 0.5) 60%, transparent 80%, rgba(255, 150, 50, 0.5) 100%)',
+          animation: 'accretionSpin 8s infinite linear',
           pointerEvents: 'none', zIndex: 1,
-          maskImage: 'radial-gradient(circle at center, transparent 38%, black 48%, transparent 65%)',
-          WebkitMaskImage: 'radial-gradient(circle at center, transparent 38%, black 48%, transparent 65%)'
+          maskImage: 'radial-gradient(circle at center, transparent 30%, black 50%, transparent 70%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, transparent 30%, black 50%, transparent 70%)'
         }} />
 
         {/* Header UI - Botón Volver y Título */}
