@@ -183,6 +183,16 @@ const DASHBOARD_MISSIONS = [
     badgeColor: "#FF6B35",
     badgeText: "Misión Lunar",
     borderColor: "rgba(255, 107, 53, 0.4)"
+  },
+  {
+    id: "copernico",
+    title: "Copérnico: Sus aportes a la ciencia",
+    subtitle: "El revolucionario astrónomo que detuvo el Sol y movió la Tierra.",
+    link: "/hub/copernico",
+    bgSrc: "/assets/copernico/copernico_cover.png",
+    badgeColor: "#FFD700",
+    badgeText: "Revolución Científica",
+    borderColor: "rgba(255, 215, 0, 0.4)"
   }
 ];
 

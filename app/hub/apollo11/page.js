@@ -11,102 +11,37 @@ import { useEffect, useState } from 'react';
 const APOLLO_MODULES = [
   {
     id: 'apollo11_m1', titleEs: 'El Cohete Saturn V', link: '/course/apollo11_m1',
-    color: '#FF6B35', coords: { left: '15%', top: '75%' },
+    color: '#FF6B35', coords: { left: '20%', top: '80%' },
     icon: '/assets/apollo11/m1_launch.png',
   },
   {
     id: 'apollo11_m2', titleEs: 'Rumbo a la Luna', link: '/course/apollo11_m2',
-    color: '#00C2FF', coords: { left: '15%', top: '40%' },
+    color: '#00C2FF', coords: { left: '25%', top: '55%' },
     icon: '/assets/apollo11/m2_trajectory.png',
   },
   {
     id: 'apollo11_m3', titleEs: 'Descenso del Águila', link: '/course/apollo11_m3',
-    color: '#C0E8FF', coords: { left: '35%', top: '25%' },
+    color: '#C0E8FF', coords: { left: '40%', top: '35%' },
     icon: '/assets/apollo11/m3_eagle.png',
   },
   {
     id: 'apollo11_m4', titleEs: 'El Primer Paso', link: '/course/apollo11_m4',
-    color: '#F5D020', coords: { left: '65%', top: '25%' },
+    color: '#F5D020', coords: { left: '60%', top: '35%' },
     icon: '/assets/apollo11/m4_moonwalk.png',
   },
   {
     id: 'apollo11_m5', titleEs: 'Regreso a Órbita', link: '/course/apollo11_m5',
-    color: '#A8FF78', coords: { left: '85%', top: '40%' },
+    color: '#A8FF78', coords: { left: '75%', top: '55%' },
     icon: '/assets/apollo11/m5_ascent.png',
   },
   {
     id: 'apollo11_m6', titleEs: 'Amerizaje y Triunfo', link: '/course/apollo11_m6',
-    color: '#38B6FF', coords: { left: '85%', top: '75%' },
+    color: '#38B6FF', coords: { left: '80%', top: '80%' },
     icon: '/assets/apollo11/m6_splashdown.png',
   },
 ];
 
-function LaunchPadEmbers() {
-  return (
-    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 2, overflow: 'hidden' }}>
-      
-      {/* Humo denso animado */}
-      <div style={{
-        position: 'absolute', bottom: '-10%', left: '0%', width: '150%', height: '50%',
-        background: 'radial-gradient(ellipse at center, rgba(200, 200, 200, 0.4) 0%, rgba(100, 100, 100, 0.1) 40%, transparent 70%)',
-        filter: 'blur(30px)',
-        animation: 'smokeDrift 12s ease-in-out infinite alternate',
-      }} />
-      <div style={{
-        position: 'absolute', bottom: '-5%', right: '-20%', width: '120%', height: '60%',
-        background: 'radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0%, rgba(150, 150, 150, 0.1) 50%, transparent 70%)',
-        filter: 'blur(40px)',
-        animation: 'smokeDrift 15s ease-in-out infinite alternate-reverse',
-      }} />
 
-      {/* Resplandor de Fuego (Llama principal de propulsión) */}
-      <div style={{
-        position: 'absolute', bottom: '0%', left: '50%', transform: 'translateX(-50%)',
-        width: '40%', height: '40%',
-        background: 'radial-gradient(ellipse at bottom, rgba(255, 107, 53, 0.6) 0%, rgba(255, 215, 0, 0.3) 30%, transparent 70%)',
-        filter: 'blur(40px)',
-        animation: 'firePulse 2s ease-in-out infinite',
-      }} />
-
-      {/* Chispas y Brasas */}
-      {Array.from({ length: 30 }).map((_, i) => {
-        const left = 30 + Math.random() * 40; // Concentrado al centro donde está el cohete
-        const size = Math.random() * 5 + 3;
-        const duration = Math.random() * 3 + 2;
-        const delay = Math.random() * 5;
-        const color = ['#FF6B35', '#FF9A3C', '#FFD700', '#FFFFFF'][Math.floor(Math.random() * 4)];
-        return (
-          <div key={i} style={{
-            position: 'absolute',
-            left: `${left}%`,
-            bottom: '5%',
-            width: `${size}px`, height: `${size}px`,
-            borderRadius: '50%',
-            background: color,
-            boxShadow: `0 0 10px ${color}, 0 0 20px ${color}`,
-            animation: `riseEmber ${duration}s ease-out ${delay}s infinite`,
-          }} />
-        );
-      })}
-      
-      <style>{`
-        @keyframes smokeDrift {
-          0% { transform: translateX(-5%) translateY(5%) scale(1); opacity: 0.5; }
-          100% { transform: translateX(5%) translateY(-5%) scale(1.1); opacity: 0.8; }
-        }
-        @keyframes firePulse {
-          0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
-          50% { opacity: 0.9; transform: translateX(-50%) scale(1.1); }
-        }
-        @keyframes riseEmber {
-          0%   { transform: translateY(0) scale(1); opacity: 1; }
-          80%  { transform: translateY(-60vh) translateX(${Math.random() > 0.5 ? '+' : '-'}30px) scale(0.5); opacity: 0.5; }
-          100% { transform: translateY(-80vh) scale(0); opacity: 0; }
-        }
-      `}</style>
-    </div>
-  );
-}
 
 // ─── Nodo de módulo ─────────────────────────────────────────────────────────
 function ApolloModuleNode({ mod, idx, isCompleted, isPlayable }) {
@@ -302,7 +237,7 @@ export default function Apollo11Hub() {
       {/* Canvas Principal */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        background: `url('/assets/apollo11/hub_background.png') center/cover no-repeat`,
+        background: `url('/assets/apollo11/vab_cape_canaveral_empty.png') center/cover no-repeat`,
       }}>
         {/* Vignette */}
         <div style={{
@@ -317,8 +252,7 @@ export default function Apollo11Hub() {
           background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px)',
         }} />
 
-        {/* Brasas / Fuego de plataforma */}
-        <LaunchPadEmbers />
+
 
         {/* Nodos de Módulos y Trayectoria */}
         <div style={{ position: 'relative', width: '100%', height: '100%', maxWidth: '1600px', margin: '0 auto' }}>
@@ -332,7 +266,7 @@ export default function Apollo11Hub() {
               </linearGradient>
             </defs>
             <path
-              d="M 15% 75% Q 15% 55% 15% 40% Q 25% 30% 35% 25% Q 50% 20% 65% 25% Q 75% 30% 85% 40% Q 85% 55% 85% 75%"
+              d="M 20% 80% Q 22% 65% 25% 55% Q 30% 45% 40% 35% Q 50% 30% 60% 35% Q 70% 45% 75% 55% Q 78% 65% 80% 80%"
               fill="none" stroke="url(#trajectoryGrad)" strokeWidth="3"
               strokeDasharray="10 8" vectorEffect="non-scaling-stroke"
             />
@@ -373,11 +307,6 @@ export default function Apollo11Hub() {
           @keyframes countdownPulse {
             0%, 100% { opacity: 1; }
             50%       { opacity: 0.75; }
-          }
-          @keyframes riseEmber {
-            0%   { transform: translateY(0) scale(1); opacity: 0.9; }
-            85%  { transform: translateY(-75vh) scale(0.3); opacity: 0.3; }
-            100% { transform: translateY(-85vh) scale(0); opacity: 0; }
           }
           @keyframes pulse {
             0%, 100% { transform: scale(1); }
