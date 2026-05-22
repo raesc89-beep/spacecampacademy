@@ -215,14 +215,26 @@ export default function WormholeHub() {
 
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        background: `url('/assets/dashboard/agujeros_gusano_cover.png') center/cover no-repeat`
+        background: `url('/assets/dashboard/agujeros_gusano_cover.png') center/cover no-repeat`,
+        overflow: 'hidden'
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.8) 100%)' }} />
+        {/* Animated Wormhole Tunnel Effect */}
+        <div style={{
+          position: 'absolute', top: '50%', left: '50%', width: '150vw', height: '150vw',
+          background: 'conic-gradient(from 0deg, rgba(0,255,204,0.1), rgba(153,51,255,0.4), rgba(0,228,255,0.1), rgba(0,255,204,0.1))',
+          mixBlendMode: 'color-dodge',
+          animation: 'wormholeSpin 15s linear infinite',
+          WebkitMaskImage: 'radial-gradient(circle at center, transparent 10%, black 50%, transparent 70%)',
+          maskImage: 'radial-gradient(circle at center, transparent 10%, black 50%, transparent 70%)',
+          pointerEvents: 'none', zIndex: 0
+        }} />
+
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', zIndex: 1 }} />
         
         <Stars />
 
         {/* Nodes and SVG Lines */}
-        <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '100vh', margin: '0 auto' }}>
+        <div style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', maxWidth: '1600px', margin: '0 auto', zIndex: 2 }}>
           
           <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.4 }}>
             <defs>
@@ -261,6 +273,11 @@ export default function WormholeHub() {
         @keyframes pulse {
           0%, 100% { transform: scale(1); opacity: 0.8; }
           50% { transform: scale(1.3); opacity: 1; }
+        }
+        @keyframes wormholeSpin {
+          0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+          50% { transform: translate(-50%, -50%) rotate(180deg) scale(1.1); }
+          100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); }
         }
       `}</style>
     </div>

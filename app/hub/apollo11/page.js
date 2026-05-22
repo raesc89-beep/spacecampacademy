@@ -255,7 +255,7 @@ export default function Apollo11Hub() {
 
 
         {/* Nodos de Módulos y Trayectoria */}
-        <div style={{ position: 'relative', width: '100%', height: '100%', maxWidth: '1600px', margin: '0 auto' }}>
+        <div style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', maxWidth: '1600px', margin: '0 auto' }}>
           {/* Trayectoria SVG conectando módulos */}
           <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 3, opacity: 0.45 }}>
             <defs>
