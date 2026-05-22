@@ -4,54 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
-import { Canvas, useFrame } from '@react-three/fiber';
-import * as THREE from 'three';
-import { useRef, useMemo } from 'react';
-
-// ─── Componente 3D WebGL del Agujero de Gusano ──────────────────────────────
-function WormholeTunnel() {
-  const meshRef = useRef();
-  
-  const tubeGeo = useMemo(() => {
-    class CustomCurve extends THREE.Curve {
-      getPoint(t, optionalTarget = new THREE.Vector3()) {
-        const x = Math.cos(t * Math.PI * 2) * 2;
-        const y = Math.sin(t * Math.PI * 2) * 2;
-        const z = t * 100 - 50;
-        return optionalTarget.set(x, y, z);
-      }
-    }
-    const path = new CustomCurve();
-    return new THREE.TubeGeometry(path, 100, 3, 30, false);
-  }, []);
-
-  useFrame((state, delta) => {
-    meshRef.current.position.z = (state.clock.elapsedTime * 15) % 100;
-    meshRef.current.rotation.z += delta * 0.2;
-  });
-
-  return (
-    <mesh ref={meshRef} geometry={tubeGeo}>
-      <meshBasicMaterial 
-        color="#00FFCC" 
-        wireframe={true} 
-        transparent={true} 
-        opacity={0.3}
-        side={THREE.BackSide}
-      />
-    </mesh>
-  );
-}
-
-function Wormhole3D() {
-  return (
-    <Canvas camera={{ position: [0, 0, 0], fov: 90 }}>
-      <WormholeTunnel />
-    </Canvas>
-  );
-}
-
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // ─── Módulos del curso Agujeros de Gusano ─────────────────────────────────────
 const WORMHOLE_MODULES = [
@@ -74,27 +27,6 @@ const WORMHOLE_MODULES = [
   { id: 'wormhole_m14', titleEs: 'Contacto I', color: '#FF00FF', link: '/course/wormhole_m14', icon: '/assets/badges/gusano_badge.png', coords: { left: '40%', top: '85%' } },
   { id: 'wormhole_m15', titleEs: 'Contacto II', color: '#FF00FF', link: '/course/wormhole_m15', icon: '/assets/badges/gusano_badge.png', coords: { left: '60%', top: '85%' } },
 ];
-
-function Stars() {
-  return (
-    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
-      {Array.from({ length: 150 }).map((_, i) => (
-        <div key={i} style={{
-          position: 'absolute',
-          left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 100}%`,
-          width: `${Math.random() * 3}px`,
-          height: `${Math.random() * 3}px`,
-          borderRadius: '50%',
-          background: Math.random() > 0.5 ? '#00FFCC' : '#FFFFFF',
-          opacity: Math.random() * 0.7 + 0.3,
-          animation: `twinkle ${Math.random() * 3 + 2}s ease-in-out infinite`,
-          animationDelay: `${Math.random() * 2}s`,
-        }} />
-      ))}
-    </div>
-  );
-}
 
 function WormholeNode({ mod, idx, isCompleted, isPlayable }) {
   const [hovered, setHovered] = useState(false);
@@ -183,38 +115,13 @@ function WormholeNode({ mod, idx, isCompleted, isPlayable }) {
               <CheckCircle size={18} color="var(--success)" />
             </div>
           )}
-          {isPlayable && !isCompleted && (
-            <div style={{ position: 'absolute', top: '-10px', right: '-5px', fontSize: '1.4rem', animation: 'pulse 1.5s infinite', zIndex: 5 }}>💫</div>
-          )}
         </motion.div>
-
-        <AnimatePresence>
-          {hovered && (
-            <motion.div
-              initial={{ opacity: 0, y: 15, scale: 0.8 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 10 }}
-              style={{
-                position: 'absolute', top: '120%', left: '50%', transform: 'translateX(-50%)',
-                background: 'rgba(5, 5, 15, 0.95)', backdropFilter: 'blur(12px)',
-                border: `1px solid ${mod.color}`, padding: '0.8rem 1.2rem',
-                borderRadius: '12px', whiteSpace: 'nowrap', pointerEvents: 'none',
-                boxShadow: `0 8px 32px ${mod.color}66`, zIndex: 100,
-              }}
-            >
-              <h4 style={{ margin: 0, fontSize: '1rem', color: 'white' }}><span style={{color: mod.color}}>✦</span> {mod.titleEs}</h4>
-              <p style={{ margin: '0.3rem 0 0 0', fontSize: '0.85rem', color: isCompleted ? 'var(--success)' : mod.color, fontWeight: 600 }}>
-                {isCompleted ? 'Atajo Cruzado ✅' : 'Entrar al Agujero 🌀'}
-              </p>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </div>
     </Link>
   );
 }
 
-export default function WormholeHub() {
+export default function AgujerosGusanoHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
 
@@ -222,20 +129,34 @@ export default function WormholeHub() {
     if (!loading && !user) router.push('/auth');
   }, [user, loading, router]);
 
-  if (loading || !userData) {
-    return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#00FFCC' }}>Conectando a la red espaciotemporal...</div>;
-  }
+  if (loading || !user) return <div style={{ height: '100vh', background: '#020308' }} />;
 
-  const completedIds = userData?.progress?.completedModules || [];
-  const moduleIds = WORMHOLE_MODULES.map(m => m.id);
-  let maxCompletedIdx = -1;
-  moduleIds.forEach((id, idx) => {
-    if (completedIds.some(c => c.toLowerCase() === id.toLowerCase())) maxCompletedIdx = idx;
-  });
-  const currentPlayableIdx = maxCompletedIdx + 1;
+  const completedModules = userData?.completedModules || [];
+  const completedCount = WORMHOLE_MODULES.filter(m => completedModules.includes(m.id)).length;
+  const progressPercent = Math.round((completedCount / WORMHOLE_MODULES.length) * 100);
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#020308' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#020308', position: 'relative' }}>
+      
+      {/* Video Background */}
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          zIndex: 0,
+          opacity: 0.8
+        }}
+      >
+        <source src="/assets/dashboard/wormhole_video.mp4" type="video/mp4" />
+      </video>
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 10%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', zIndex: 1 }} />
+
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 200 }}>
         <Link href="/dashboard/misiones" className="btn-secondary" style={{
           display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
@@ -243,7 +164,7 @@ export default function WormholeHub() {
           borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(0, 255, 204, 0.3)',
           color: '#00FFCC'
         }}>
-          <ChevronLeft size={20} /> Base de Misiones
+          <ChevronLeft size={20} /> Volver a Misiones
         </Link>
       </div>
 
@@ -260,66 +181,35 @@ export default function WormholeHub() {
         </p>
       </div>
 
-      <main style={{
-        flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        background: `url('/assets/dashboard/agujeros_gusano_cover.png') center/cover no-repeat`,
-        overflow: 'hidden'
-      }}>
-        {/* WebGL 3D Wormhole Effect */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <Wormhole3D />
-        </div>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 10%, rgba(0,0,0,0.9) 100%)', pointerEvents: 'none', zIndex: 1 }} />
-        
-        <Stars />
-
-        {/* Nodes and SVG Lines */}
+      <main style={{ flex: 1, position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', maxWidth: '1600px', margin: '0 auto', zIndex: 2 }}>
-          
-          <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.4 }}>
-            <defs>
-              <linearGradient id="wormholeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#00FFCC" />
-                <stop offset="50%" stopColor="#00E4FF" />
-                <stop offset="100%" stopColor="#9933FF" />
-              </linearGradient>
-            </defs>
-            <polyline 
-              points="15%,20% 30%,15% 50%,12% 70%,15% 85%,25% 80%,45% 60%,35% 40%,35% 20%,40% 15%,65% 35%,60% 55%,60% 75%,70% 60%,85% 40%,85%" 
-              fill="none" 
-              stroke="url(#wormholeGrad)" 
-              strokeWidth="2" 
-              strokeDasharray="6 8" 
-            />
-          </svg>
-
-          {WORMHOLE_MODULES.map((mod, idx) => (
-            <WormholeNode
-              key={mod.id}
-              mod={mod}
-              idx={idx}
-              isCompleted={idx <= maxCompletedIdx}
-              isPlayable={idx === currentPlayableIdx}
-            />
-          ))}
+          {WORMHOLE_MODULES.map((mod, index) => {
+            const isPlayable = index === 0 || completedModules.includes(WORMHOLE_MODULES[index - 1]?.id) || completedModules.includes(mod.id);
+            return (
+              <WormholeNode 
+                key={mod.id} 
+                mod={mod} 
+                idx={index} 
+                isCompleted={completedModules.includes(mod.id)} 
+                isPlayable={isPlayable}
+              />
+            );
+          })}
         </div>
       </main>
-
-      <style>{`
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.2; transform: scale(0.8); }
-          50% { opacity: 1; transform: scale(1.2); }
-        }
-        @keyframes pulse {
-          0%, 100% { transform: scale(1); opacity: 0.8; }
-          50% { transform: scale(1.3); opacity: 1; }
-        }
-        @keyframes wormholeSpin {
-          0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
-          50% { transform: translate(-50%, -50%) rotate(180deg) scale(1.1); }
-          100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); }
-        }
-      `}</style>
+      
+      <div style={{ position: 'absolute', bottom: '2rem', right: '2rem', zIndex: 200 }}>
+        <div style={{ background: 'rgba(0,0,0,0.8)', padding: '1rem', borderRadius: '15px', border: '1px solid #00FFCC', width: '250px', backdropFilter: 'blur(10px)' }}>
+          <h3 style={{ margin: '0 0 10px 0', fontSize: '0.9rem', color: '#00FFCC', textTransform: 'uppercase' }}>Progreso Científico</h3>
+          <div style={{ width: '100%', height: '8px', background: 'rgba(255,255,255,0.1)', borderRadius: '4px', overflow: 'hidden' }}>
+            <motion.div initial={{ width: 0 }} animate={{ width: `${progressPercent}%` }} transition={{ duration: 1 }} style={{ height: '100%', background: '#00FFCC', boxShadow: '0 0 10px #00FFCC' }} />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px', fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)' }}>
+            <span>{completedCount} módulos</span>
+            <span>{progressPercent}%</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

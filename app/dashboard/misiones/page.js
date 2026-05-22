@@ -189,7 +189,7 @@ const DASHBOARD_MISSIONS = [
     title: "Misión Apollo 8",
     subtitle: "El primer viaje tripulado alrededor de la Luna y el amanecer terrestre.",
     link: "/hub/apollo8",
-    bgSrc: "/assets/apollo11/course_card.png",
+    bgSrc: "/assets/dashboard/apollo8_cover.png",
     badgeColor: "#4169E1",
     badgeText: "Misión Lunar",
     borderColor: "rgba(65, 105, 225, 0.4)"
@@ -199,7 +199,7 @@ const DASHBOARD_MISSIONS = [
     title: "Misión Apollo 10",
     subtitle: "El ensayo general que allanó el camino hacia la superficie lunar.",
     link: "/hub/apollo10",
-    bgSrc: "/assets/apollo11/course_card.png",
+    bgSrc: "/assets/dashboard/apollo10_cover.png",
     badgeColor: "#32CD32",
     badgeText: "Misión Lunar",
     borderColor: "rgba(50, 205, 50, 0.4)"

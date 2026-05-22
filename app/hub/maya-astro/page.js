@@ -365,7 +365,7 @@ export default function MayaHub() {
           }}
         >
           <ChevronLeft size={20} />
-          Volver a la Academia
+          Volver a Misiones
         </motion.button>
 
         <motion.div 
