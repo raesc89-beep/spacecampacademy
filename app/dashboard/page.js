@@ -31,7 +31,7 @@ export default function DashboardLanding() {
         
         {/* Background Animation & Cockpit */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', backgroundColor: '#000000' }}>
-          {/* Capa 1: Espacio Estrellado */}
+          {/* Capa 1: Espacio Estrellado Puro sin efecto naranja */}
           <div style={{ position: 'absolute', inset: 0, background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' }} />
 
           {/* Vehículos Espaciales de Fondo */}
@@ -51,11 +51,11 @@ export default function DashboardLanding() {
             style={{ position: 'absolute', top: '55%', left: 0, width: '8vw', minWidth: '60px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
           />
 
-          {/* Planeta Tierra (Contenedor Centrado) */}
+          {/* Planeta Tierra (Contenedor Centrado rotando más rápido) */}
           <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, pointerEvents: 'none' }}>
             <motion.div 
               animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
+              transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
               style={{ 
                 width: '45vw', height: '45vw', minWidth: '350px', minHeight: '350px', 
                 borderRadius: '50%',
@@ -67,21 +67,28 @@ export default function DashboardLanding() {
             />
           </div>
 
-          {/* Capa 2: Cabina Recortada (Primer Plano) con mix-blend-mode para hacer transparencias las ventanas negras */}
-          <Image 
-            src="/assets/dashboard/window_frame.png" 
-            alt="Cockpit View" 
-            fill 
-            style={{ 
-              objectFit: 'cover', 
-              objectPosition: 'center', 
-              zIndex: 2, 
-              pointerEvents: 'none', 
-              mixBlendMode: 'screen',
-              filter: 'contrast(1.2)'
-            }} 
-            priority 
-          />
+          {/* Capa 2: Cabina Recortada (Primer Plano) con MÁSCARA SVG para perforar el centro */}
+          <div style={{ position: 'absolute', inset: 0, zIndex: 2, pointerEvents: 'none' }}>
+            <svg width="0" height="0">
+              <defs>
+                <clipPath id="window-clip" clipPathUnits="objectBoundingBox">
+                  {/* Un polígono que recorta un rectángulo central: Dibuja el borde exterior y luego el hueco interior */}
+                  <path d="M0,0 H1 V1 H0 Z M0.08,0.15 V0.9 H0.92 V0.15 Z" fillRule="evenodd" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundImage: 'url(/assets/dashboard/window_frame.png)',
+              backgroundSize: '100% 100%',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              clipPath: 'url(#window-clip)',
+              WebkitClipPath: 'url(#window-clip)',
+              filter: 'contrast(1.1) brightness(0.9)'
+            }} />
+          </div>
 
           {/* Ligero difuminado en los bordes para Legibilidad sin tapar */}
           <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 30%, #000000 100%)', opacity: 0.6, pointerEvents: 'none' }}></div>

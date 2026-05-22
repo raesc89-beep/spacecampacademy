@@ -218,15 +218,27 @@ export default function WormholeHub() {
         background: `url('/assets/dashboard/agujeros_gusano_cover.png') center/cover no-repeat`,
         overflow: 'hidden'
       }}>
-        {/* Animated Wormhole Tunnel Effect */}
+        {/* Animated Wormhole Tunnel Effect (Mejorado) */}
+        <div style={{
+          position: 'absolute', top: '50%', left: '50%', width: '200vw', height: '200vw',
+          transform: 'translate(-50%, -50%)',
+          background: 'repeating-radial-gradient(circle at center, transparent 0%, rgba(153, 51, 255, 0.4) 5%, transparent 10%, rgba(0, 228, 255, 0.4) 15%)',
+          animation: 'wormholeSpin 10s linear infinite',
+          WebkitMaskImage: 'radial-gradient(circle at center, transparent 10%, black 60%, transparent 100%)',
+          maskImage: 'radial-gradient(circle at center, transparent 10%, black 60%, transparent 100%)',
+          zIndex: 1, pointerEvents: 'none'
+        }} />
+        
+        {/* Capa de destello rotacional */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%', width: '150vw', height: '150vw',
-          background: 'conic-gradient(from 0deg, rgba(0,255,204,0.1), rgba(153,51,255,0.4), rgba(0,228,255,0.1), rgba(0,255,204,0.1))',
-          mixBlendMode: 'color-dodge',
-          animation: 'wormholeSpin 15s linear infinite',
-          WebkitMaskImage: 'radial-gradient(circle at center, transparent 10%, black 50%, transparent 70%)',
-          maskImage: 'radial-gradient(circle at center, transparent 10%, black 50%, transparent 70%)',
-          pointerEvents: 'none', zIndex: 0
+          transform: 'translate(-50%, -50%)',
+          background: 'conic-gradient(from 0deg, transparent 0deg, rgba(255, 0, 255, 0.5) 90deg, transparent 180deg, rgba(0, 255, 204, 0.5) 270deg, transparent 360deg)',
+          animation: 'wormholeSpin 5s linear infinite reverse',
+          WebkitMaskImage: 'radial-gradient(circle at center, transparent 5%, black 40%, transparent 70%)',
+          maskImage: 'radial-gradient(circle at center, transparent 5%, black 40%, transparent 70%)',
+          mixBlendMode: 'screen',
+          zIndex: 1, pointerEvents: 'none'
         }} />
 
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', zIndex: 1 }} />
