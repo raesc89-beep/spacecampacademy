@@ -105,11 +105,19 @@ export default function QuizMinigame() {
         const freshUser = await getDoc(doc(db, "users", user.uid));
         const freshCompleted = freshUser.data().progress?.completedModules || [];
         
+        // Calcular recompensa dinámica según dificultad
+        let reward = 50; // Fácil (<= 3 preguntas)
+        if (totalQuestions >= 7) {
+          reward = 200; // Difícil
+        } else if (totalQuestions >= 4) {
+          reward = 100; // Medio
+        }
+
         if (!freshCompleted.includes(moduleData.id)) {
           await updateDoc(doc(db, "users", user.uid), {
             "progress.completedModules": arrayUnion(moduleData.id),
             "progress.badges": arrayUnion(moduleData.badgeEs),
-            "progress.stars": increment(50)
+            "progress.stars": increment(reward)
           });
         }
         setSaving(false);
@@ -258,7 +266,7 @@ export default function QuizMinigame() {
                     <h3 style={{ margin: 0, fontSize: '1.5rem' }}>{userData?.progress?.completedModules?.includes(moduleData.id) ? 'Medalla Verificada' : '¡Medalla Ganada!'}</h3>
                     <p style={{ margin: 0, fontWeight: 'bold', color: moduleData.color, fontSize: '1.2rem', textTransform: 'uppercase' }}>{moduleData.badgeEs}</p>
                     <p style={{ margin: 0, color: 'var(--gold-star)', fontWeight: 'bold' }}>
-                       {userData?.progress?.completedModules?.includes(moduleData.id) ? 'Modo Repaso: Sin recompensa adicional' : '+50 Polvo Estelar'}
+                       {userData?.progress?.completedModules?.includes(moduleData.id) ? 'Modo Repaso: Sin recompensa adicional' : `+${totalQuestions >= 7 ? 200 : totalQuestions >= 4 ? 100 : 50} Polvo Estelar`}
                     </p>
                   </div>
                 </>

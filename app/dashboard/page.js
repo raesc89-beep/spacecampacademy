@@ -30,8 +30,10 @@ export default function DashboardLanding() {
       <main style={{ flex: 1, position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
         
         {/* Background Animation & Cockpit */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', backgroundColor: '#000000' }}>
-          {/* Capa 1: Espacio Estrellado Puro sin efecto naranja */}
+        {/* Background Animation & Cockpit */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', backgroundColor: '#020308' }}>
+          
+          {/* Capa 1: Deep Space Background */}
           <div style={{ position: 'absolute', inset: 0, background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover' }} />
 
           {/* Vehículos Espaciales de Fondo */}
@@ -39,59 +41,64 @@ export default function DashboardLanding() {
             src="/assets/shuttle_user.png" 
             alt="Shuttle"
             animate={{ x: ['-20vw', '120vw'], y: ['0vh', '15vh', '-5vh', '10vh'] }}
-            transition={{ repeat: Infinity, duration: 45, ease: "linear" }}
-            style={{ position: 'absolute', top: '25%', left: 0, width: '6vw', minWidth: '40px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 10px rgba(100,200,255,0.4))' }}
+            transition={{ repeat: Infinity, duration: 55, ease: "linear" }}
+            style={{ position: 'absolute', top: '25%', left: 0, width: '4vw', minWidth: '30px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 10px rgba(100,200,255,0.4))' }}
           />
           
           <motion.img 
             src="/assets/ufo_user.png" 
             alt="UFO"
             animate={{ x: ['120vw', '-20vw'], y: ['0vh', '-20vh', '15vh', '5vh'] }}
-            transition={{ repeat: Infinity, duration: 65, ease: "linear" }}
-            style={{ position: 'absolute', top: '55%', left: 0, width: '8vw', minWidth: '60px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
+            transition={{ repeat: Infinity, duration: 75, ease: "linear" }}
+            style={{ position: 'absolute', top: '45%', left: 0, width: '6vw', minWidth: '40px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 20px rgba(0,255,136,0.6))' }}
           />
 
-          {/* Planeta Tierra (Contenedor Centrado rotando más rápido) */}
-          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, pointerEvents: 'none' }}>
+          {/* Planeta Tierra (Escala realista, más pequeña para dar sensación de profundidad y lejanía) */}
+          <div style={{ position: 'absolute', top: '45%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, pointerEvents: 'none' }}>
             <motion.div 
               animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+              transition={{ repeat: Infinity, duration: 120, ease: "linear" }}
               style={{ 
-                width: '45vw', height: '45vw', minWidth: '350px', minHeight: '350px', 
+                width: '30vw', height: '30vw', minWidth: '250px', minHeight: '250px', 
                 borderRadius: '50%',
-                background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / 120% no-repeat',
-                boxShadow: 'inset -30px -30px 60px rgba(0,0,0,0.9), 0 0 60px rgba(0, 180, 255, 0.4)',
-                WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 72%)',
-                maskImage: 'radial-gradient(circle at center, black 60%, transparent 72%)'
+                background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / 110% no-repeat',
+                boxShadow: 'inset -20px -20px 40px rgba(0,0,0,0.9), 0 0 80px rgba(0, 180, 255, 0.2)',
               }}
             />
           </div>
 
-          {/* Capa 2: Cabina Recortada (Primer Plano) con MÁSCARA SVG para perforar el centro */}
-          <div style={{ position: 'absolute', inset: 0, zIndex: 2, pointerEvents: 'none' }}>
-            <svg width="0" height="0">
-              <defs>
-                <clipPath id="window-clip" clipPathUnits="objectBoundingBox">
-                  {/* Un polígono que recorta un rectángulo central: Dibuja el borde exterior y luego el hueco interior */}
-                  <path d="M0,0 H1 V1 H0 Z M0.08,0.15 V0.9 H0.92 V0.15 Z" fillRule="evenodd" />
-                </clipPath>
-              </defs>
-            </svg>
+          {/* Capa 2: Ventanal de la Estación Orbital (Efecto CSS inmersivo) */}
+          <div style={{ 
+            position: 'absolute', 
+            inset: 0, 
+            zIndex: 2, 
+            pointerEvents: 'none',
+            /* Marco metálico principal simulado con box-shadow inset */
+            boxShadow: 'inset 0 0 0 5vw #0a0e17, inset 0 0 40px 5vw rgba(0, 228, 255, 0.1), inset 0 0 100px 5vw rgba(0, 0, 0, 0.8)',
+            /* Curvas del ventanal usando un borde grueso y redondeado */
+            border: '2vw solid #050810',
+            borderRadius: '4vw',
+            /* Líneas de estructura del HUD simuladas con linear-gradients */
+            backgroundImage: `
+              linear-gradient(to right, transparent 20%, rgba(255,255,255,0.03) 20.1%, rgba(255,255,255,0.03) 20.2%, transparent 20.3%),
+              linear-gradient(to right, transparent 80%, rgba(255,255,255,0.03) 80.1%, rgba(255,255,255,0.03) 80.2%, transparent 80.3%),
+              linear-gradient(to bottom, transparent 20%, rgba(255,255,255,0.03) 20.1%, rgba(255,255,255,0.03) 20.2%, transparent 20.3%),
+              linear-gradient(to bottom, transparent 80%, rgba(255,255,255,0.03) 80.1%, rgba(255,255,255,0.03) 80.2%, transparent 80.3%)
+            `
+          }}>
+            {/* HUD Glass Reflection */}
             <div style={{
               position: 'absolute',
-              inset: 0,
-              backgroundImage: 'url(/assets/dashboard/window_frame.png)',
-              backgroundSize: '100% 100%',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              clipPath: 'url(#window-clip)',
-              WebkitClipPath: 'url(#window-clip)',
-              filter: 'contrast(1.1) brightness(0.9)'
+              inset: '5vw',
+              borderRadius: '2vw',
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 40%, transparent 60%, rgba(0,228,255,0.02) 100%)',
+              border: '1px solid rgba(0, 228, 255, 0.2)',
+              boxShadow: 'inset 0 0 20px rgba(0,228,255,0.1)'
             }} />
           </div>
 
-          {/* Ligero difuminado en los bordes para Legibilidad sin tapar */}
-          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 30%, #000000 100%)', opacity: 0.6, pointerEvents: 'none' }}></div>
+          {/* Ligero difuminado global para no interferir con la UI (viñeta) */}
+          <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none' }}></div>
         </div>
 
         {/* Content */}

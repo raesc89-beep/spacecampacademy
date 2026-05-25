@@ -213,6 +213,16 @@ const DASHBOARD_MISSIONS = [
     badgeColor: "#FFD700",
     badgeText: "Revolución Científica",
     borderColor: "rgba(255, 215, 0, 0.4)"
+  },
+  {
+    id: "area51",
+    title: "El Área 51 y la Ciencia detrás del Mito",
+    subtitle: "Descubre la verdadera historia aeroespacial detrás de la base militar más secreta del mundo.",
+    link: "/hub/area51",
+    bgSrc: "/assets/dashboard/area51_dashboard.png",
+    badgeColor: "#00FF00",
+    badgeText: "Desclasificación",
+    borderColor: "rgba(0, 255, 0, 0.4)"
   }
 ];
 

@@ -180,6 +180,30 @@ export default function ArcadeExoplanet() {
                </Link>
             </div>
 
+            {/* Máquina 11: Supervivencia Criptobiótica */}
+            <div className="glass-card" style={{ border: '1px solid rgba(0, 228, 255, 0.4)', background: 'rgba(0, 228, 255, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(0, 228, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(0,228,255,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🦠</span>
+               </div>
+               <h2 style={{ color: '#00E4FF', margin: '0 0 0.5rem 0' }}>Supervivencia Criptobiótica</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Utiliza WebGL para simular cuerpos blandos. Sobrevive a condiciones extremas con criptobiosis.</p>
+               <Link href="/arcade/tardigrado" className="btn-primary" style={{ background: '#00E4FF', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(0,228,255,0.4)', fontWeight: 'bold', display: 'block' }}>
+                 INICIAR SIMULACIÓN
+               </Link>
+            </div>
+
+            {/* Máquina 12: Carreras Relativistas */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255, 42, 42, 0.4)', background: 'rgba(255, 42, 42, 0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255, 42, 42, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,42,42,0.3)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🚀</span>
+               </div>
+               <h2 style={{ color: '#FF2A2A', margin: '0 0 0.5rem 0' }}>Carreras Relativistas</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Acelera a velocidades luz y observa la aberración cromática y el efecto Doppler.</p>
+               <Link href="/arcade/relatividad" className="btn-primary" style={{ background: '#FF2A2A', color: 'white', width: '100%', boxShadow: '0 0 20px rgba(255,42,42,0.4)', fontWeight: 'bold', display: 'block' }}>
+                 ACELERAR MOTOR
+               </Link>
+            </div>
+
           </div>
         ) : (
           <div style={{ width: '100%', maxWidth: '800px' }}>
