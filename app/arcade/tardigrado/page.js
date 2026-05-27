@@ -149,20 +149,32 @@ export default function TardigradeSurvivalGame() {
         if (this.nodes && this.nodes.length > 0) {
            ctx.moveTo(this.x + this.nodes[0].x, this.y + this.nodes[0].y);
            for(let i=1; i<this.nodes.length; i++) {
-              ctx.lineTo(this.x + this.nodes[i].x, this.y + this.nodes[i].y);
+              // Smooth bezier curve for amoeba look
+              const curr = this.nodes[i];
+              const next = this.nodes[(i + 1) % this.nodes.length];
+              const cx = this.x + (curr.x + next.x) / 2;
+              const cy = this.y + (curr.y + next.y) / 2;
+              ctx.quadraticCurveTo(this.x + curr.x, this.y + curr.y, cx, cy);
            }
         }
         ctx.closePath();
-        ctx.fillStyle = this.color || '#00FF66';
+        
+        // Organic radial gradient
+        const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.radius);
+        grad.addColorStop(0, this.color || '#00FF66');
+        grad.addColorStop(1, 'rgba(0, 100, 50, 0.8)');
+        ctx.fillStyle = grad;
         ctx.fill();
-        ctx.strokeStyle = '#FFFFFF';
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#00FF66';
         ctx.stroke();
 
-        // Draw cute eyes if active
+        // Draw nucleus/vacuole if active
         if (!this.isCryptobiotic) {
-          ctx.fillStyle = 'black';
-          ctx.beginPath(); ctx.arc(this.x - 10, this.y - 10, 3, 0, Math.PI*2); ctx.fill();
-          ctx.beginPath(); ctx.arc(this.x + 10, this.y - 10, 3, 0, Math.PI*2); ctx.fill();
+          ctx.fillStyle = 'rgba(0, 200, 255, 0.5)';
+          ctx.beginPath(); ctx.arc(this.x - 5, this.y - 5, 8, 0, Math.PI*2); ctx.fill();
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+          ctx.beginPath(); ctx.arc(this.x - 7, this.y - 7, 2, 0, Math.PI*2); ctx.fill();
         }
       }
     };
@@ -196,13 +208,13 @@ export default function TardigradeSurvivalGame() {
 
     // Spawner for Predators (Nematodes)
     setInterval(() => {
-       if (gameState !== 'playing' || engine.entities.filter(e => e.type === 'predator').length > 3) return;
+       if (gameState !== 'playing' || engine.entities.filter(e => e.type === 'predator').length > 5) return;
        engine.registerRigidBody({
           type: 'predator',
           x: Math.random() > 0.5 ? 0 : engine.width,
           y: Math.random() * engine.height,
-          vx: (Math.random() - 0.5) * 2,
-          vy: (Math.random() - 0.5) * 2,
+          vx: (Math.random() - 0.5) * 3,
+          vy: (Math.random() - 0.5) * 3,
           radius: 15,
           color: '#FF2A2A',
           update: function(dt) {
@@ -235,18 +247,43 @@ export default function TardigradeSurvivalGame() {
              if (this.y < 0 || this.y > engine.height) this.vy *= -1;
           },
           render: function(ctx) {
-            // Draw worm-like predator
+            // Draw worm-like predator with teeth
             ctx.fillStyle = this.color;
             ctx.beginPath();
             ctx.ellipse(this.x, this.y, this.radius * 2, this.radius, Math.atan2(this.vy, this.vx), 0, Math.PI*2);
             ctx.fill();
+            
+            // Draw teeth outline
+            ctx.strokeStyle = '#fff';
+            ctx.beginPath();
+            ctx.arc(this.x + Math.cos(Math.atan2(this.vy, this.vx)) * this.radius, this.y + Math.sin(Math.atan2(this.vy, this.vx)) * this.radius, 5, 0, Math.PI*2);
+            ctx.stroke();
           }
        });
-    }, 4000);
+    }, 1500);
 
-    // Clean dead entities
+    // Clean dead entities and draw background ecosystem
     engine.update = (function(originalUpdate) {
+      let time = 0;
       return function(dt) {
+         // Draw aquatic background first
+         if (this.ctx) {
+             const ctx = this.ctx;
+             ctx.fillStyle = '#001a11'; // Deep aquatic green/black
+             ctx.fillRect(0, 0, this.width, this.height);
+             
+             // Draw floating out-of-focus particles
+             time += dt;
+             ctx.fillStyle = 'rgba(0, 255, 100, 0.05)';
+             for(let i=0; i<30; i++) {
+                 const px = (Math.sin(time*0.5 + i) * 50 + i * 40) % this.width;
+                 const py = (Math.cos(time*0.3 + i) * 50 + i * 30) % this.height;
+                 ctx.beginPath();
+                 ctx.arc(Math.abs(px), Math.abs(py), (i%5)*10 + 5, 0, Math.PI*2);
+                 ctx.fill();
+             }
+         }
+         
          originalUpdate.call(this, dt);
          this.entities = this.entities.filter(e => !e.dead);
       };
@@ -334,7 +371,7 @@ export default function TardigradeSurvivalGame() {
       
       <main style={{ flex: 1, padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <header style={{ textAlign: 'center', marginBottom: '1rem' }}>
-           <h1 style={{ color: '#00E4FF', margin: '0 0 0.5rem 0', textShadow: '0 0 20px rgba(0,228,255,0.5)' }}>Tardígrado: Supervivencia Microbiana</h1>
+           <h1 style={{ color: '#00E4FF', margin: '0 0 0.5rem 0', textShadow: '0 0 20px rgba(0,228,255,0.5)' }}>Ameba Espacial: Supervivencia Microbiana</h1>
         </header>
 
         <div style={{ position: 'relative', width: '800px', height: '500px', border: '2px solid #00FF66', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 0 30px rgba(0,255,102,0.2)', backgroundColor: '#041512' }}>

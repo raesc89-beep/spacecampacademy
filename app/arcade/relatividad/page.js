@@ -26,16 +26,40 @@ export default function RelativisticRacingGame() {
   // Image cache
   const imgCache = useRef({});
 
-  // Preload Images
+  // Preload Images & Remove White Backgrounds
   useEffect(() => {
     const loadImages = async () => {
        const srcs = [SHIP_IMG_SRC, ...OBSTACLES];
        let loadedCount = 0;
+       
+       const removeWhiteBg = (img) => {
+         const canvas = document.createElement('canvas');
+         canvas.width = img.width; canvas.height = img.height;
+         const ctx = canvas.getContext('2d');
+         ctx.drawImage(img, 0, 0);
+         const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+         const data = imgData.data;
+         for (let i = 0; i < data.length; i += 4) {
+             // If pixel is very close to white, make transparent
+             if (data[i] > 230 && data[i+1] > 230 && data[i+2] > 230) {
+                 data[i+3] = 0; // alpha = 0
+             }
+         }
+         ctx.putImageData(imgData, 0, 0);
+         return canvas;
+       };
+
        srcs.forEach(src => {
           const img = new Image();
           img.src = src;
+          img.crossOrigin = "Anonymous";
           img.onload = () => {
-             imgCache.current[src] = img;
+             try {
+                imgCache.current[src] = removeWhiteBg(img);
+             } catch(e) {
+                // Fallback if canvas taint issues
+                imgCache.current[src] = img;
+             }
              loadedCount++;
              if (loadedCount === srcs.length) setImagesLoaded(true);
           };
@@ -67,9 +91,9 @@ export default function RelativisticRacingGame() {
     if (gameState !== 'playing') return;
 
     let interval = setInterval(() => {
-      // Auto-accelerate slowly
+      // Faster acceleration
       setVelocityC(prev => {
-        const next = Math.min(prev + 0.01, 0.99);
+        const next = Math.min(prev + 0.05, 0.99); // Increments faster
         return parseFloat(next.toFixed(2));
       });
     }, 1000);
@@ -110,9 +134,7 @@ export default function RelativisticRacingGame() {
            // Collision detection with ship
            const ship = engine.entities.find(e => e.id === 'ship');
            if (ship) {
-              // Simple circle collision
               const dist = Math.sqrt(Math.pow(this.x - ship.x, 2) + Math.pow(this.y - ship.y, 2));
-              // Adjust hitbox slightly smaller than visual radius for fairness
               if (dist < 30) {
                  setGameState('lost');
                  engine.stop();
@@ -129,7 +151,6 @@ export default function RelativisticRacingGame() {
               ctx.save();
               ctx.translate(this.x, this.y);
               ctx.rotate(this.rotation);
-              // Scale down obstacle
               ctx.drawImage(img, -this.radius, -this.radius, this.radius * 2, this.radius * 2);
               ctx.restore();
            }
@@ -142,7 +163,7 @@ export default function RelativisticRacingGame() {
     
     // Update distance
     setDistance(prev => {
-      const newDist = prev + (velocityC * 100);
+      const newDist = prev + (velocityC * 150);
       if (newDist >= targetDistance) {
          setGameState('won');
          engine.stop();
@@ -181,7 +202,8 @@ export default function RelativisticRacingGame() {
         if (img) {
           ctx.save();
           ctx.translate(this.x, this.y);
-          // Scale ship down
+          // Face up
+          ctx.rotate(-Math.PI / 2);
           ctx.drawImage(img, -45, -45, 90, 90);
           
           // Engine glow
@@ -189,7 +211,7 @@ export default function RelativisticRacingGame() {
           ctx.fillStyle = '#00E4FF';
           ctx.globalAlpha = 0.5 + Math.random() * 0.5;
           ctx.beginPath();
-          ctx.arc(0, 40, 15 + Math.random()*10, 0, Math.PI * 2);
+          ctx.arc(-40, 0, 15 + Math.random()*10, 0, Math.PI * 2);
           ctx.fill();
           
           ctx.restore();
@@ -281,7 +303,17 @@ export default function RelativisticRacingGame() {
            <h1 style={{ color: '#00E4FF', margin: '0 0 0.5rem 0', textShadow: '0 0 20px rgba(0,228,255,0.5)' }}>Carreras Relativistas</h1>
         </header>
 
-        <div style={{ position: 'relative', width: '800px', height: '500px', border: '2px solid #00E4FF', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 0 30px rgba(0,228,255,0.2)' }}>
+        <div style={{ 
+            position: 'relative', 
+            width: '800px', 
+            height: '500px', 
+            border: '2px solid #00E4FF', 
+            borderRadius: '12px', 
+            overflow: 'hidden', 
+            boxShadow: '0 0 30px rgba(0,228,255,0.2)',
+            // Espacio de fondo dinámico real
+            background: 'url(https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1000&auto=format&fit=crop) center / cover'
+        }}>
           <canvas 
             ref={canvasRef} 
             width={800} 
@@ -290,7 +322,8 @@ export default function RelativisticRacingGame() {
               width: '100%', 
               height: '100%',
               transform: `scale(${1 + velocityC * 0.5})`, // FOV Tunnel Vision
-              transition: 'transform 0.1s linear'
+              transition: 'transform 0.1s linear',
+              background: 'transparent' // Dejar ver el fondo de nebulosa
             }} 
           />
           

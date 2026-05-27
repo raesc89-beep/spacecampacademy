@@ -54,12 +54,12 @@ export default function DashboardLanding() {
           />
 
           {/* Planeta Tierra (Escala realista, más pequeña para dar sensación de profundidad y lejanía) */}
-          <div style={{ position: 'absolute', top: '45%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, pointerEvents: 'none' }}>
+          <div style={{ position: 'absolute', top: '45%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, pointerEvents: 'none', mixBlendMode: 'screen' }}>
             <motion.div 
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 120, ease: "linear" }}
               style={{ 
-                width: '30vw', height: '30vw', minWidth: '250px', minHeight: '250px', 
+                width: '25vw', height: '25vw', minWidth: '200px', minHeight: '200px', 
                 borderRadius: '50%',
                 background: 'url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop) center / 110% no-repeat',
                 boxShadow: 'inset -20px -20px 40px rgba(0,0,0,0.9), 0 0 80px rgba(0, 180, 255, 0.2)',
@@ -70,14 +70,14 @@ export default function DashboardLanding() {
           {/* Capa 2: Ventanal de la Estación Orbital (Efecto CSS inmersivo) */}
           <div style={{ 
             position: 'absolute', 
-            inset: 0, 
+            inset: '8vw', 
             zIndex: 2, 
             pointerEvents: 'none',
-            /* Marco metálico principal simulado con box-shadow inset */
-            boxShadow: 'inset 0 0 0 5vw #0a0e17, inset 0 0 40px 5vw rgba(0, 228, 255, 0.1), inset 0 0 100px 5vw rgba(0, 0, 0, 0.8)',
+            /* Marco metálico principal simulado con box-shadow inset y outline masivo para tapar el exterior */
+            boxShadow: '0 0 0 100vw #050810, inset 0 0 40px 5vw rgba(0, 228, 255, 0.1), inset 0 0 100px 5vw rgba(0, 0, 0, 0.9)',
             /* Curvas del ventanal usando un borde grueso y redondeado */
-            border: '2vw solid #050810',
-            borderRadius: '4vw',
+            border: '2vw solid #0a0e17',
+            borderRadius: '6vw',
             /* Líneas de estructura del HUD simuladas con linear-gradients */
             backgroundImage: `
               linear-gradient(to right, transparent 20%, rgba(255,255,255,0.03) 20.1%, rgba(255,255,255,0.03) 20.2%, transparent 20.3%),
@@ -89,8 +89,8 @@ export default function DashboardLanding() {
             {/* HUD Glass Reflection */}
             <div style={{
               position: 'absolute',
-              inset: '5vw',
-              borderRadius: '2vw',
+              inset: '2vw',
+              borderRadius: '3vw',
               background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 40%, transparent 60%, rgba(0,228,255,0.02) 100%)',
               border: '1px solid rgba(0, 228, 255, 0.2)',
               boxShadow: 'inset 0 0 20px rgba(0,228,255,0.1)'
