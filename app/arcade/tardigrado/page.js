@@ -262,6 +262,51 @@ export default function TardigradeSurvivalGame() {
        });
     }, 1500);
 
+    // Spawner for Healing Cells (Paramecium)
+    setInterval(() => {
+       if (gameState !== 'playing' || engine.entities.filter(e => e.type === 'healing').length > 3) return;
+       engine.registerRigidBody({
+          type: 'healing',
+          x: Math.random() * engine.width,
+          y: Math.random() * engine.height,
+          vx: (Math.random() - 0.5) * 1,
+          vy: (Math.random() - 0.5) * 1,
+          radius: 8,
+          color: '#00FF66',
+          update: function(dt) {
+             const player = engine.entities.find(e => e.id === 'tardy');
+             if (player && !player.isCryptobiotic) {
+                const dist = Math.sqrt(Math.pow(this.x - player.x, 2) + Math.pow(this.y - player.y, 2));
+                if (dist < player.radius + this.radius) {
+                   this.dead = true;
+                   setEnergy(e => Math.min(e + 30, 100)); // Heal player heavily
+                }
+             }
+             if (this.x < 0 || this.x > engine.width) this.vx *= -1;
+             if (this.y < 0 || this.y > engine.height) this.vy *= -1;
+          },
+          render: function(ctx) {
+             ctx.save();
+             ctx.translate(this.x, this.y);
+             ctx.rotate(Math.atan2(this.vy, this.vx));
+             // Paramecium body
+             ctx.fillStyle = this.color;
+             ctx.beginPath();
+             ctx.roundRect(-10, -5, 20, 10, 5);
+             ctx.fill();
+             // Cilia (hairs)
+             ctx.strokeStyle = 'rgba(0,255,100,0.8)';
+             for (let i = 0; i < Math.PI * 2; i += 0.5) {
+                ctx.beginPath();
+                ctx.moveTo(Math.cos(i)*10, Math.sin(i)*5);
+                ctx.lineTo(Math.cos(i)*14, Math.sin(i)*7);
+                ctx.stroke();
+             }
+             ctx.restore();
+          }
+       });
+    }, 5000); // Spawns every 5 seconds
+
     // Clean dead entities and draw background ecosystem
     engine.update = (function(originalUpdate) {
       let time = 0;
@@ -269,17 +314,17 @@ export default function TardigradeSurvivalGame() {
          // Draw aquatic background first
          if (this.ctx) {
              const ctx = this.ctx;
-             ctx.fillStyle = '#001a11'; // Deep aquatic green/black
+             ctx.fillStyle = '#002B1E'; // Deep aquatic green/black - made brighter
              ctx.fillRect(0, 0, this.width, this.height);
              
-             // Draw floating out-of-focus particles
+             // Draw floating out-of-focus particles (more visible)
              time += dt;
-             ctx.fillStyle = 'rgba(0, 255, 100, 0.05)';
-             for(let i=0; i<30; i++) {
+             ctx.fillStyle = 'rgba(0, 255, 120, 0.15)'; // Increased opacity
+             for(let i=0; i<40; i++) {
                  const px = (Math.sin(time*0.5 + i) * 50 + i * 40) % this.width;
                  const py = (Math.cos(time*0.3 + i) * 50 + i * 30) % this.height;
                  ctx.beginPath();
-                 ctx.arc(Math.abs(px), Math.abs(py), (i%5)*10 + 5, 0, Math.PI*2);
+                 ctx.arc(Math.abs(px), Math.abs(py), (i%5)*10 + 8, 0, Math.PI*2);
                  ctx.fill();
              }
          }
