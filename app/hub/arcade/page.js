@@ -12,6 +12,10 @@ import SpaceTimelineDragDrop from '@/components/games/SpaceTimelineDragDrop';
 import StarFinder from '@/components/games/StarFinder';
 import LaikaFinder from '@/components/games/LaikaFinder';
 import HamImpulse from '@/components/games/HamImpulse';
+import AstrolabioQuantico from '@/components/games/AstrolabioQuantico';
+import XenoPaleontologia from '@/components/games/XenoPaleontologia';
+import GravedadCero from '@/components/games/GravedadCero';
+import AsistenciaGravitacional from '@/components/games/AsistenciaGravitacional';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -204,6 +208,54 @@ export default function ArcadeExoplanet() {
                </Link>
             </div>
 
+            {/* Máquina 13: Astrolabio Cuántico */}
+            <div className="glass-card" style={{ border: '1px solid rgba(0,228,255,0.45)', background: 'rgba(0,228,255,0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(0,228,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(0,228,255,0.35)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🔭</span>
+               </div>
+               <h2 style={{ color: '#00E4FF', margin: '0 0 0.5rem 0' }}>Astrolabio Cuántico</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Alinea los anillos del astrolabio medieval a sus ángulos correctos para descifrar el firmamento. ¡Trabaja rápido!</p>
+               <button onClick={() => setActiveGame('astrolabio')} className="btn-primary" style={{ background: '#00E4FF', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(0,228,255,0.45)', fontWeight: 'bold' }}>
+                 CALIBRAR ESFERAS
+               </button>
+            </div>
+
+            {/* Máquina 14: Xeno-Paleontología */}
+            <div className="glass-card" style={{ border: '1px solid rgba(100,180,255,0.45)', background: 'rgba(100,180,255,0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(100,180,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(100,180,255,0.35)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🏺</span>
+               </div>
+               <h2 style={{ color: '#88CCFF', margin: '0 0 0.5rem 0' }}>Xeno-Paleontología</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Excava con el rayo láser para revelar fósiles alienígenas atrapados en el hielo marciano. ¡Cuidado con la integridad!</p>
+               <button onClick={() => setActiveGame('xeno')} className="btn-primary" style={{ background: '#88CCFF', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(100,180,255,0.45)', fontWeight: 'bold' }}>
+                 EXCAVAR
+               </button>
+            </div>
+
+            {/* Máquina 15: Gravedad Cero */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255,80,80,0.45)', background: 'rgba(255,80,80,0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255,80,80,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,80,80,0.35)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>⚡</span>
+               </div>
+               <h2 style={{ color: '#FF6060', margin: '0 0 0.5rem 0' }}>Reparación en Gravedad Cero</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>¡Emergencia! Reconecta los circuitos de oxígeno, energía y datos de la estación antes de que se acabe el O₂.</p>
+               <button onClick={() => setActiveGame('gravedad')} className="btn-primary" style={{ background: '#FF6060', color: 'white', width: '100%', boxShadow: '0 0 20px rgba(255,80,80,0.45)', fontWeight: 'bold' }}>
+                 🆘 EMERGENCIA
+               </button>
+            </div>
+
+            {/* Máquina 16: Asistencia Gravitacional */}
+            <div className="glass-card" style={{ border: '1px solid rgba(255,140,0,0.45)', background: 'rgba(255,140,0,0.05)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem' }}>
+               <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'rgba(255,140,0,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 0 20px rgba(255,140,0,0.35)' }}>
+                  <span style={{ fontSize: '2.5rem' }}>🛸</span>
+               </div>
+               <h2 style={{ color: '#FFAA44', margin: '0 0 0.5rem 0' }}>Asistencia Gravitacional</h2>
+               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Lanza una sonda y usa la gravedad de los planetas para hacer slingshot y recoger paquetes de datos.</p>
+               <button onClick={() => setActiveGame('slingshot')} className="btn-primary" style={{ background: '#FFAA44', color: 'black', width: '100%', boxShadow: '0 0 20px rgba(255,140,0,0.45)', fontWeight: 'bold' }}>
+                 🚀 LANZAR SONDA
+               </button>
+            </div>
+
           </div>
         ) : (
           <div style={{ width: '100%', maxWidth: '800px' }}>
@@ -249,6 +301,22 @@ export default function ArcadeExoplanet() {
 
             {activeGame === 'ham' && (
                <HamImpulse onComplete={(bonus) => alert(`¡Misión Terminada! Recibes recompensa de comandante: ${bonus} monedas.`)} />
+            )}
+
+            {activeGame === 'astrolabio' && (
+               <AstrolabioQuantico onComplete={(bonus) => setActiveGame(null)} />
+            )}
+
+            {activeGame === 'xeno' && (
+               <XenoPaleontologia onComplete={(bonus) => setActiveGame(null)} />
+            )}
+
+            {activeGame === 'gravedad' && (
+               <GravedadCero onComplete={(bonus) => setActiveGame(null)} />
+            )}
+
+            {activeGame === 'slingshot' && (
+               <AsistenciaGravitacional onComplete={(bonus) => setActiveGame(null)} />
             )}
           </div>
         )}

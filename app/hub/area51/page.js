@@ -1,9 +1,107 @@
 'use client';
+import { useEffect, useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { useRouter } from 'next/navigation';
 import { CheckCircle, ChevronLeft, ShieldAlert } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+
+// erratic, realistic plasma UAP (Unidentified Anomalous Phenomenon) component
+function UAP() {
+  const [key, setKey] = useState(0);
+  const [color, setColor] = useState('#ffffff');
+  const [glowColor, setGlowColor] = useState('rgba(255,255,255,0.8)');
+  const [path, setPath] = useState({ x: [], y: [] });
+
+  const colors = [
+    { main: '#ffffff', glow: 'rgba(255, 255, 255, 0.9)' }, // Blanco brillante
+    { main: '#ffaa00', glow: 'rgba(255, 170, 0, 0.9)' },   // Ámbar
+    { main: '#00d2ff', glow: 'rgba(0, 210, 255, 0.9)' }   // Azul eléctrico
+  ];
+
+  useEffect(() => {
+    const triggerUAP = () => {
+      // Pick random color
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      setColor(randomColor.main);
+      setGlowColor(randomColor.glow);
+
+      // Erratic, non-conventional path crossing the screen and stopping instantly (hypersonic changes)
+      const startFromLeft = Math.random() > 0.5;
+      
+      const xKeyframes = startFromLeft 
+        ? ['-10%', '25%', '20%', '55%', '50%', '85%', '80%', '115%'] 
+        : ['110%', '75%', '80%', '45%', '50%', '15%', '20%', '-15%'];
+
+      const yKeyframes = [
+        `${Math.random() * 40 + 20}%`,
+        `${Math.random() * 40 + 20}%`,
+        `${Math.random() * 40 + 20}%`,
+        `${Math.random() * 40 + 20}%`,
+        `${Math.random() * 40 + 20}%`,
+        `${Math.random() * 40 + 20}%`,
+        `${Math.random() * 40 + 20}%`,
+        `${Math.random() * 40 + 20}%`
+      ];
+
+      setPath({ x: xKeyframes, y: yKeyframes });
+      setKey(prev => prev + 1);
+    };
+
+    triggerUAP();
+
+    // Trigger UAP flight dynamically at different intervals (between 9s and 15s)
+    const interval = setInterval(() => {
+      triggerUAP();
+    }, 9000 + Math.random() * 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  if (path.x.length === 0) return null;
+
+  return (
+    <motion.div
+      key={key}
+      animate={{
+        left: path.x,
+        top: path.y,
+        scale: [0, 1.5, 1, 1.8, 1, 2, 0],
+      }}
+      transition={{
+        duration: 4.8,
+        ease: [0.19, 1, 0.22, 1], // Hypersonic rapid acceleration & sudden stop ease (characteristic UAP flight)
+        times: [0, 0.15, 0.3, 0.45, 0.6, 0.8, 1]
+      }}
+      style={{
+        position: 'absolute',
+        width: '12px',
+        height: '12px',
+        borderRadius: '50%',
+        backgroundColor: color,
+        boxShadow: `0 0 15px 5px ${color}, 0 0 30px 10px ${glowColor}, 0 0 50px 20px rgba(255,255,255,0.4)`,
+        zIndex: 5,
+        pointerEvents: 'none',
+        mixBlendMode: 'screen',
+      }}
+    >
+      {/* Visual glowing pulsating aura */}
+      <motion.div 
+        animate={{ scale: [1, 2.2, 1] }} 
+        transition={{ repeat: Infinity, duration: 0.25 }}
+        style={{
+          position: 'absolute',
+          inset: -6,
+          borderRadius: '50%',
+          border: `1.5px solid ${color}`,
+          opacity: 0.7,
+          filter: 'blur(2px)'
+        }}
+      />
+    </motion.div>
+  );
+}
+
 
 const AREA51_MODULES = [
   { id: 'area51_m1', titleEs: '¿Qué es el Área 51?', color: '#00FF00', link: '/course/area51_m1', icon: '/assets/badges/spy_badge.png', coords: { left: '15%', top: '40%' } },
@@ -88,6 +186,9 @@ export default function Area51Hub() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#020308', position: 'relative' }}>
+      
+      {/* Erratic Glowing Plasma UAP */}
+      <UAP />
       
       {/* Animated Background */}
       <style>{`

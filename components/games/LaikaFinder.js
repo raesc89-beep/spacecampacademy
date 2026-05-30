@@ -1,53 +1,52 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, CheckCircle, AlertCircle, Radar, Crosshair, Target } from 'lucide-react';
+import { Search, CheckCircle, AlertCircle, Radar, Crosshair } from 'lucide-react';
 
 const CHALLENGES = [
   {
-    riddle: "1. CALLES DE MOSCÚ: Busca a Laika (un perro blanco con manchas), un módulo lunar plateado, y una enorme huella de perro en la nieve.",
-    // using the timestamps from the recent generate_image calls
-    imageUrl: "/assets/animales/laika_challenge_1_1779733797282.png", 
+    riddle: "CALLES DE MOSCÚ: Haz clic sobre Laika (perro blanco con manchas en traje rojo), el módulo lunar plateado, y una huella gigante en la nieve.",
+    imageUrl: "/assets/animales/laika_challenge_1_1779733797282.png",
     targets: [
-      { id: 'laika', name: 'Laika', x: 50, y: 50, radius: 20, found: false },
-      { id: 'modulo', name: 'Módulo Lunar', x: 20, y: 70, radius: 20, found: false },
-      { id: 'huella', name: 'Huella', x: 80, y: 80, radius: 20, found: false }
+      { id: 'laika', name: 'Laika', x: 50, y: 50, radius: 18, found: false },
+      { id: 'modulo', name: 'Módulo Lunar', x: 20, y: 70, radius: 18, found: false },
+      { id: 'huella', name: 'Huella', x: 80, y: 80, radius: 18, found: false }
     ]
   },
   {
-    riddle: "2. ÓRBITA TERRESTRE: Encuentra a un perro astronauta, una cápsula cónica, y una huella flotante entre la multitud espacial.",
-    imageUrl: "/assets/animales/laika_challenge_2_1779733816425.png", 
+    riddle: "ÓRBITA TERRESTRE: Encuentra al perro astronauta flotando, una cápsula espacial cónica, y una huella flotante entre satélites.",
+    imageUrl: "/assets/animales/laika_challenge_2_1779733816425.png",
     targets: [
-      { id: 'laika', name: 'Perro Astronauta', x: 30, y: 40, radius: 20, found: false },
-      { id: 'modulo', name: 'Cápsula Espacial', x: 70, y: 30, radius: 20, found: false },
-      { id: 'huella', name: 'Huella Flotante', x: 50, y: 80, radius: 20, found: false }
+      { id: 'laika', name: 'Perro Astronauta', x: 30, y: 40, radius: 18, found: false },
+      { id: 'modulo', name: 'Cápsula Espacial', x: 70, y: 30, radius: 18, found: false },
+      { id: 'huella', name: 'Huella Flotante', x: 50, y: 80, radius: 18, found: false }
     ]
   },
   {
-    riddle: "3. COMANDO SOVIÉTICO: Entre el caos científico, localiza un casco de perro rojo, un módulo en miniatura y una huella en unos planos.",
-    imageUrl: "/assets/animales/laika_challenge_3_1779733835882.png", 
+    riddle: "COMANDO SOVIÉTICO: Entre el caos científico, localiza el casco rojo de Laika, un módulo en miniatura y una huella en los planos.",
+    imageUrl: "/assets/animales/laika_challenge_3_1779733835882.png",
     targets: [
-      { id: 'laika', name: 'Casco Rojo', x: 60, y: 60, radius: 20, found: false },
-      { id: 'modulo', name: 'Módulo Miniatura', x: 20, y: 40, radius: 20, found: false },
-      { id: 'huella', name: 'Huella en Planos', x: 80, y: 30, radius: 20, found: false }
+      { id: 'laika', name: 'Casco Rojo', x: 60, y: 60, radius: 18, found: false },
+      { id: 'modulo', name: 'Módulo Miniatura', x: 20, y: 40, radius: 18, found: false },
+      { id: 'huella', name: 'Huella en Planos', x: 80, y: 30, radius: 18, found: false }
     ]
   },
   {
-    riddle: "4. BOSQUE SIBERIANO: Encuentra un perro con traje espacial, la cápsula lunar estrellada entre los pinos y una huella gigante.",
-    imageUrl: "/assets/animales/laika_challenge_4_1779733853895.png", 
+    riddle: "BOSQUE SIBERIANO: Entre los pinos nevados halla un perro con traje espacial, una cápsula estrellada y una huella gigante.",
+    imageUrl: "/assets/animales/laika_challenge_4_1779733853895.png",
     targets: [
-      { id: 'laika', name: 'Perro en Traje', x: 45, y: 55, radius: 20, found: false },
-      { id: 'modulo', name: 'Cápsula Estrellada', x: 75, y: 25, radius: 20, found: false },
-      { id: 'huella', name: 'Huella Gigante', x: 20, y: 80, radius: 20, found: false }
+      { id: 'laika', name: 'Perro en Traje', x: 45, y: 55, radius: 18, found: false },
+      { id: 'modulo', name: 'Cápsula Estrellada', x: 75, y: 25, radius: 18, found: false },
+      { id: 'huella', name: 'Huella Gigante', x: 20, y: 80, radius: 18, found: false }
     ]
   },
   {
-    riddle: "5. PLAZA ROJA: Durante el desfile, ubica a Laika astronauta, un módulo lunar sobre un tanque y una huella de perro pintada.",
-    imageUrl: "/assets/animales/laika_challenge_5_1779733871604.png", 
+    riddle: "PLAZA ROJA: Durante el desfile épico ubica a Laika astronauta, un módulo sobre un tanque y una huella de perro pintada.",
+    imageUrl: "/assets/animales/laika_challenge_5_1779733871604.png",
     targets: [
-      { id: 'laika', name: 'Laika Astronauta', x: 80, y: 80, radius: 20, found: false },
-      { id: 'modulo', name: 'Módulo en Tanque', x: 50, y: 85, radius: 20, found: false },
-      { id: 'huella', name: 'Huella Pintada', x: 10, y: 90, radius: 20, found: false }
+      { id: 'laika', name: 'Laika Astronauta', x: 80, y: 80, radius: 18, found: false },
+      { id: 'modulo', name: 'Módulo en Tanque', x: 50, y: 85, radius: 18, found: false },
+      { id: 'huella', name: 'Huella Pintada', x: 10, y: 90, radius: 18, found: false }
     ]
   }
 ];
@@ -55,183 +54,174 @@ const CHALLENGES = [
 export default function LaikaFinder({ onComplete }) {
   const [currentLevel, setCurrentLevel] = useState(0);
   const [challenges, setChallenges] = useState(JSON.parse(JSON.stringify(CHALLENGES)));
-  const [gameOver, setGameOver] = useState(false);
+  const [levelDone, setLevelDone] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [message, setMessage] = useState('');
-  
+  const [messageType, setMessageType] = useState('info');
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0, visible: false });
+  const [score, setScore] = useState(0);
+  const [hintsUsed, setHintsUsed] = useState(0);
   const containerRef = useRef(null);
+  const msgTimerRef = useRef(null);
 
   const currentChallenge = challenges[Math.min(currentLevel, challenges.length - 1)];
   const allFound = currentChallenge.targets.every(t => t.found);
+  const foundCount = currentChallenge.targets.filter(t => t.found).length;
+
+  const showMsg = (text, type, duration) => {
+    if (msgTimerRef.current) clearTimeout(msgTimerRef.current);
+    setMessage(text);
+    setMessageType(type || 'info');
+    if ((duration || 2000) > 0) {
+      msgTimerRef.current = setTimeout(() => setMessage(''), duration || 2000);
+    }
+  };
 
   useEffect(() => {
-    if (allFound && !gameOver) {
-      setGameOver(true);
+    if (allFound && !levelDone) {
+      setLevelDone(true);
       setShowHelp(false);
-      setMessage('¡Nivel Completado!');
+      const pts = Math.max(100, 300 - hintsUsed * 50);
+      setScore(s => s + pts);
+      showMsg('¡Nivel Completado! +' + pts + ' pts', 'success', 3000);
       setTimeout(() => {
         if (currentLevel + 1 < challenges.length) {
           setCurrentLevel(prev => prev + 1);
-          setGameOver(false);
+          setLevelDone(false);
+          setHintsUsed(0);
           setMessage('');
         } else {
-          if (onComplete) onComplete(200);
+          showMsg('¡Misión Completada! Encontraste todo.', 'success', -1);
+          if (onComplete) onComplete(Math.round(score + 300));
         }
-      }, 2500);
+      }, 2800);
     }
-  }, [allFound, currentLevel, challenges, gameOver, onComplete]);
+  }, [allFound]);
 
-  const handleDragEnd = (event, info) => {
-    if (gameOver) return;
-    
-    // Get container dimensions
+  const handleImageClick = (e) => {
+    if (levelDone || allFound) return;
     const rect = containerRef.current.getBoundingClientRect();
-    
-    // Calculate relative drop coordinates (percentages)
-    const dropX = ((info.point.x - rect.left) / rect.width) * 100;
-    const dropY = ((info.point.y - rect.top) / rect.height) * 100;
-
-    let foundSomething = false;
-
-    const newChallenges = [...challenges];
-    const currentTargets = newChallenges[currentLevel].targets;
-
-    currentTargets.forEach(target => {
+    const clickX = ((e.clientX - rect.left) / rect.width) * 100;
+    const clickY = ((e.clientY - rect.top) / rect.height) * 100;
+    let found = false;
+    const newChallenges = JSON.parse(JSON.stringify(challenges));
+    newChallenges[currentLevel].targets.forEach(target => {
       if (!target.found) {
-        const dist = Math.sqrt(Math.pow(dropX - target.x, 2) + Math.pow(dropY - target.y, 2));
+        const dist = Math.sqrt(Math.pow(clickX - target.x, 2) + Math.pow(clickY - target.y, 2));
         if (dist <= target.radius) {
           target.found = true;
-          foundSomething = true;
-          setMessage(`¡Encontraste: ${target.name}!`);
-          setTimeout(() => setMessage(''), 2000);
+          found = true;
+          showMsg('¡Encontraste: ' + target.name + '!', 'success', 2500);
         }
       }
     });
-
-    if (foundSomething) {
+    if (found) {
       setChallenges(newChallenges);
     } else {
-      setMessage('Anomalía no detectada aquí...');
-      setTimeout(() => setMessage(''), 1000);
+      showMsg('Nada aquí... sigue buscando.', 'error', 1200);
     }
   };
 
-  const activateSonar = () => {
-    setShowHelp(true);
-    setMessage('Escaneando cuadrícula de búsqueda...');
-    setTimeout(() => {
-      setShowHelp(false);
-      setMessage('');
-    }, 3000);
+  const handleMouseMove = (e) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    setCursorPos({ x: e.clientX - rect.left, y: e.clientY - rect.top, visible: true });
   };
 
+  const activateSonar = () => {
+    if (showHelp || levelDone || allFound) return;
+    setHintsUsed(h => h + 1);
+    setShowHelp(true);
+    showMsg('Escaneando zona de búsqueda...', 'info', 3500);
+    setTimeout(() => setShowHelp(false), 3500);
+  };
+
+  const msgColor = messageType === 'success' ? '#00FF88' : messageType === 'error' ? '#FF4444' : '#00E4FF';
+
   return (
-    <div style={{ padding: '2rem', background: 'rgba(0,0,0,0.6)', borderRadius: '20px', border: '1px solid rgba(255, 184, 0, 0.3)' }}>
-      <header style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
+    <div style={{ padding: '1.5rem', background: 'rgba(0,0,0,0.75)', borderRadius: '20px', border: '1px solid rgba(255, 184, 0, 0.4)' }}>
+      <header style={{ marginBottom: '1.2rem', textAlign: 'center' }}>
         <h3 style={{ margin: 0, color: 'var(--gold-star)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-           <Search /> Radar Seek-n-Drop ({currentLevel + 1}/5)
+           <Search size={20}/> Misión Laika — Nivel {currentLevel + 1} / {challenges.length}
         </h3>
-        
-        <div style={{ marginTop: '1rem', padding: '1.5rem', background: 'rgba(255, 184, 0, 0.1)', borderRadius: '12px', borderLeft: '4px solid var(--gold-star)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '0.5rem' }}>
+           <span style={{ color: '#FFD700', fontSize: '0.9rem', fontWeight: 'bold' }}>Score: {score}</span>
+           <span style={{ color: '#aaa', fontSize: '0.85rem' }}>Pistas: {hintsUsed}</span>
+        </div>
+        <div style={{ marginTop: '1rem', padding: '1rem 1.5rem', background: 'rgba(255, 184, 0, 0.08)', borderRadius: '12px', borderLeft: '4px solid var(--gold-star)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
            <div style={{ flex: 1, textAlign: 'left' }}>
-             <p style={{ margin: 0, fontStyle: 'italic', fontSize: '1.1rem', color: 'white' }}>
-               « {currentChallenge.riddle} »
-             </p>
-             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
+             <p style={{ margin: '0 0 0.8rem 0', fontStyle: 'italic', fontSize: '1rem', color: 'white' }}>{currentChallenge.riddle}</p>
+             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                 {currentChallenge.targets.map(t => (
-                   <span key={t.id} style={{ 
-                     padding: '4px 12px', 
-                     borderRadius: '20px', 
-                     background: t.found ? 'var(--success)' : 'rgba(255,255,255,0.2)',
-                     color: t.found ? 'black' : 'white',
-                     fontWeight: 'bold',
-                     fontSize: '0.85rem'
-                   }}>
-                     {t.found ? '✓' : '•'} {t.name}
+                   <span key={t.id} style={{ padding: '4px 12px', borderRadius: '20px', background: t.found ? 'rgba(0,255,136,0.3)' : 'rgba(255,255,255,0.1)', border: '1px solid ' + (t.found ? '#00FF88' : 'rgba(255,255,255,0.2)'), color: t.found ? '#00FF88' : '#ccc', fontWeight: 'bold', fontSize: '0.82rem', transition: 'all 0.3s' }}>
+                     {t.found ? '✓' : '○'} {t.name}
                    </span>
                 ))}
              </div>
            </div>
-           
-           <button onClick={activateSonar} disabled={showHelp || gameOver || allFound} style={{ background: 'rgba(255, 184, 0, 0.2)', border: '1px solid var(--gold-star)', color: 'var(--gold-star)', padding: '0.8rem 1.5rem', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
-             <Radar size={18} /> Asistencia Sonar
+           <button onClick={activateSonar} disabled={showHelp || levelDone || allFound} style={{ background: showHelp ? 'rgba(255,184,0,0.4)' : 'rgba(255, 184, 0, 0.15)', border: '1px solid var(--gold-star)', color: 'var(--gold-star)', padding: '0.7rem 1.2rem', borderRadius: '10px', cursor: showHelp ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+             <Radar size={16} /> Pista Sonar
            </button>
         </div>
       </header>
 
-      {message && (
-        <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} style={{ textAlign: 'center', marginBottom: '1rem', color: gameOver ? 'var(--success)' : 'var(--electric-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.8rem', fontWeight: 'bold', fontSize: '1.2rem' }}>
-          {gameOver ? <CheckCircle size={24} /> : <AlertCircle size={24} />}
-          <h2 style={{ margin: 0 }}>{message}</h2>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {message && (
+          <motion.div key={message} initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ opacity: 0 }}
+            style={{ textAlign: 'center', marginBottom: '0.8rem', color: msgColor, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', fontWeight: 'bold', fontSize: '1.1rem', padding: '0.5rem', background: 'rgba(0,0,0,0.4)', borderRadius: '8px' }}>
+            {message}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-      <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-        
-        {/* Herramientas (Arrastrables) */}
-        <div style={{ width: '100px', display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px' }}>
-           <p style={{ margin: 0, fontSize: '0.8rem', color: '#aaa', textAlign: 'center' }}>Arrastra el Escáner a la imagen</p>
-           <motion.div
-             drag
-             dragSnapToOrigin
-             onDragEnd={handleDragEnd}
-             whileHover={{ scale: 1.1 }}
-             whileDrag={{ scale: 1.2, filter: 'drop-shadow(0 0 20px #00e4ff)' }}
-             style={{
-               width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(0, 228, 255, 0.2)', 
-               border: '3px solid #00e4ff', display: 'flex', alignItems: 'center', justifyContent: 'center',
-               cursor: 'grab', zIndex: 50, boxShadow: 'inset 0 0 10px #00e4ff'
-             }}
-           >
-             <Crosshair color="#00e4ff" size={30} />
-           </motion.div>
-        </div>
+      <div style={{ textAlign: 'center', marginBottom: '0.8rem', color: '#888', fontSize: '0.85rem' }}>
+        <Crosshair size={14} style={{ display: 'inline', marginRight: '4px', verticalAlign: 'middle' }}/>
+        Haz <strong style={{color:'#fff'}}>clic</strong> directamente sobre los elementos en la imagen
+      </div>
 
-        {/* Imagen Contenedor */}
-        <div ref={containerRef} style={{ position: 'relative', flex: 1, borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.2)', background: '#000', lineHeight: 0, minHeight: '400px' }}>
-           <img 
-             src={currentChallenge.imageUrl} 
-             draggable="false"
-             onDragStart={(e) => e.preventDefault()}
-             style={{ width: '100%', height: 'auto', display: 'block', pointerEvents: 'none' }} 
-             alt={`Reto Laika ${currentLevel + 1}`} 
-           />
-           
-           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, pointerEvents: 'none' }}>
-              {/* Sonar Help Circles */}
-              <AnimatePresence>
-                 {showHelp && !gameOver && currentChallenge.targets.map(target => !target.found && (
-                    <motion.div 
-                      key={target.id}
-                      initial={{ scale: 2, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0, opacity: 0 }} transition={{ duration: 0.5 }}
-                      style={{
-                        position: 'absolute', top: `${target.y}%`, left: `${target.x}%`, transform: 'translate(-50%, -50%)',
-                        width: `${target.radius * 2.5}%`, paddingTop: `${target.radius * 2.5}%`, 
-                        border: '4px dashed rgba(255, 184, 0, 0.8)', borderRadius: '50%', pointerEvents: 'none',
-                        background: 'radial-gradient(circle, rgba(255,184,0,0.2) 0%, rgba(255,184,0,0) 70%)'
-                      }}
-                    />
-                 ))}
-              </AnimatePresence>
+      <div
+        ref={containerRef}
+        onClick={handleImageClick}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => setCursorPos(c => ({ ...c, visible: false }))}
+        style={{ position: 'relative', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(255,184,0,0.4)', background: '#111', lineHeight: 0, minHeight: '400px', cursor: 'none', boxShadow: '0 0 30px rgba(255,184,0,0.15)' }}
+      >
+         <img src={currentChallenge.imageUrl} draggable="false" onDragStart={e => e.preventDefault()}
+           style={{ width: '100%', height: 'auto', display: 'block', pointerEvents: 'none', userSelect: 'none' }}
+           alt={'Reto Laika ' + (currentLevel + 1)}
+         />
 
-              {/* Found Targets Indicators */}
-              <AnimatePresence>
-                {currentChallenge.targets.map(target => target.found && (
-                   <motion.div 
-                     key={target.id}
-                     initial={{ scale: 0 }} animate={{ scale: 1 }}
-                     style={{ 
-                       position: 'absolute', top: `${target.y}%`, left: `${target.x}%`, transform: 'translate(-50%, -50%)',
-                       width: '50px', height: '50px', border: '3px solid #00ff88', borderRadius: '50%', boxShadow: '0 0 20px #00ff88',
-                       display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,255,136,0.3)', backdropFilter: 'blur(2px)'
-                     }}
-                   >
-                     <Target color="#00ff88" size={24} />
-                   </motion.div>
-                ))}
-              </AnimatePresence>
+         {cursorPos.visible && (
+           <div style={{ position: 'absolute', left: cursorPos.x, top: cursorPos.y, transform: 'translate(-50%, -50%)', pointerEvents: 'none', zIndex: 50 }}>
+             <div style={{ width: '40px', height: '40px', border: '2px solid #FFD700', borderRadius: '50%', position: 'absolute', top: '-20px', left: '-20px', boxShadow: '0 0 10px rgba(255,215,0,0.6)' }}/>
+             <div style={{ position: 'absolute', width: '20px', height: '2px', background: '#FFD700', top: '-1px', left: '-10px' }}/>
+             <div style={{ position: 'absolute', width: '2px', height: '20px', background: '#FFD700', top: '-10px', left: '-1px' }}/>
+             <div style={{ width: '6px', height: '6px', background: '#FFD700', borderRadius: '50%', position: 'absolute', top: '-3px', left: '-3px' }}/>
            </div>
-        </div>
+         )}
+
+         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, pointerEvents: 'none' }}>
+            <AnimatePresence>
+               {showHelp && !levelDone && currentChallenge.targets.map(target => !target.found && (
+                  <motion.div key={target.id + '-sonar'} initial={{ scale: 2.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0, opacity: 0 }} transition={{ duration: 0.6, type: 'spring' }}
+                    style={{ position: 'absolute', top: target.y + '%', left: target.x + '%', transform: 'translate(-50%, -50%)', width: (target.radius * 2.8) + '%', paddingTop: (target.radius * 2.8) + '%', border: '3px dashed rgba(255, 215, 0, 0.9)', borderRadius: '50%', pointerEvents: 'none', background: 'radial-gradient(circle, rgba(255,215,0,0.25) 0%, rgba(255,215,0,0) 70%)', boxShadow: '0 0 20px rgba(255,215,0,0.3)' }}
+                  />
+               ))}
+            </AnimatePresence>
+
+            <AnimatePresence>
+              {currentChallenge.targets.map(target => target.found && (
+                 <motion.div key={target.id + '-found'} initial={{ scale: 0, rotate: -90 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: 'spring', bounce: 0.5 }}
+                   style={{ position: 'absolute', top: target.y + '%', left: target.x + '%', transform: 'translate(-50%, -50%)', width: '52px', height: '52px', border: '3px solid #00FF88', borderRadius: '50%', boxShadow: '0 0 25px #00FF88', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,255,136,0.2)' }}>
+                   <CheckCircle color="#00FF88" size={28} />
+                 </motion.div>
+              ))}
+            </AnimatePresence>
+
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '4px', background: 'rgba(0,0,0,0.4)' }}>
+               <div style={{ width: (foundCount / currentChallenge.targets.length * 100) + '%', height: '100%', background: 'linear-gradient(to right, #FFD700, #00FF88)', transition: 'width 0.5s ease' }}/>
+            </div>
+         </div>
       </div>
     </div>
   );

@@ -99,7 +99,82 @@ export default function DashboardLanding() {
 
           {/* Ligero difuminado global para no interferir con la UI (viñeta) */}
           <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none' }}></div>
+
+          {/* === COCKPIT LEFT PANEL: Navigation & Systems === */}
+          <div style={{ position: 'absolute', left: '1.2vw', top: '50%', transform: 'translateY(-50%)', zIndex: 4, display: 'flex', flexDirection: 'column', gap: '0.6rem', width: '6vw', minWidth: '65px', pointerEvents: 'none' }}>
+            <div style={{ background: 'rgba(0,228,255,0.07)', border: '1px solid rgba(0,228,255,0.4)', borderRadius: '8px', padding: '0.4rem', textAlign: 'center' }}>
+              <div style={{ width: '100%', aspectRatio: '1', background: 'rgba(0,228,255,0.1)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '4px' }}>
+                <div style={{ width: '60%', height: '60%', borderRadius: '50%', border: '2px solid #00E4FF', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div style={{ width: '35%', height: '35%', background: '#00E4FF', borderRadius: '50%', boxShadow: '0 0 8px #00E4FF' }}/>
+                </div>
+              </div>
+              <div style={{ fontSize: '0.4rem', color: '#00E4FF', letterSpacing: '1px', textTransform: 'uppercase', fontFamily: 'monospace' }}>NAV SYS</div>
+            </div>
+            <div style={{ background: 'rgba(0,255,136,0.07)', border: '1px solid rgba(0,255,136,0.4)', borderRadius: '8px', padding: '0.4rem' }}>
+              <div style={{ fontSize: '0.4rem', color: '#00FF88', marginBottom: '4px', textAlign: 'center', letterSpacing: '1px', fontFamily: 'monospace' }}>PWR</div>
+              {[100, 85, 65, 40].map((val, i) => (
+                <div key={i} style={{ height: '4px', background: `rgba(0,255,136,${val/100})`, borderRadius: '2px', marginBottom: '2px', boxShadow: val > 70 ? '0 0 4px rgba(0,255,136,0.5)' : 'none' }}/>
+              ))}
+            </div>
+            <div style={{ background: 'rgba(153,51,255,0.07)', border: '1px solid rgba(153,51,255,0.4)', borderRadius: '8px', padding: '0.4rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.38rem', color: '#9933FF', marginBottom: '5px', letterSpacing: '1px', fontFamily: 'monospace' }}>STATUS</div>
+              {['#00FF88','#00E4FF','#9933FF'].map((c,i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '3px' }}>
+                  <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: c, boxShadow: `0 0 6px ${c}`, flexShrink: 0 }}/>
+                  <div style={{ flex: 1, height: '2px', background: `${c}33`, borderRadius: '1px' }}/>
+                </div>
+              ))}
+            </div>
+            <div style={{ background: 'rgba(255,215,0,0.07)', border: '1px solid rgba(255,215,0,0.35)', borderRadius: '8px', padding: '0.4rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.38rem', color: '#FFD700', letterSpacing: '1px', fontFamily: 'monospace', marginBottom: '4px' }}>GYRO</div>
+              <div style={{ fontSize: '0.65rem', color: '#FFD700', fontFamily: 'monospace', fontWeight: 'bold' }}>0.00°</div>
+            </div>
+          </div>
+
+          {/* === COCKPIT RIGHT PANEL: Telemetry Data === */}
+          <div style={{ position: 'absolute', right: '1.2vw', top: '50%', transform: 'translateY(-50%)', zIndex: 4, display: 'flex', flexDirection: 'column', gap: '0.6rem', width: '6.5vw', minWidth: '70px', pointerEvents: 'none' }}>
+            <div style={{ background: 'rgba(0,228,255,0.07)', border: '1px solid rgba(0,228,255,0.35)', borderRadius: '8px', padding: '0.4rem' }}>
+              <div style={{ fontSize: '0.38rem', color: '#00E4FF', letterSpacing: '1px', marginBottom: '3px', fontFamily: 'monospace' }}>ALTITUD</div>
+              <div style={{ fontSize: '0.65rem', color: 'white', fontFamily: 'monospace', fontWeight: 'bold' }}>408 km</div>
+              <div style={{ height: '2px', background: 'rgba(0,228,255,0.15)', borderRadius: '1px', marginTop: '4px', overflow: 'hidden' }}>
+                <div style={{ width: '78%', height: '100%', background: '#00E4FF', boxShadow: '0 0 4px #00E4FF' }}/>
+              </div>
+            </div>
+            <div style={{ background: 'rgba(255,215,0,0.07)', border: '1px solid rgba(255,215,0,0.35)', borderRadius: '8px', padding: '0.4rem' }}>
+              <div style={{ fontSize: '0.38rem', color: '#FFD700', letterSpacing: '1px', marginBottom: '3px', fontFamily: 'monospace' }}>VELOC</div>
+              <div style={{ fontSize: '0.65rem', color: 'white', fontFamily: 'monospace', fontWeight: 'bold' }}>7.66 km/s</div>
+              <div style={{ height: '2px', background: 'rgba(255,215,0,0.15)', borderRadius: '1px', marginTop: '4px', overflow: 'hidden' }}>
+                <div style={{ width: '92%', height: '100%', background: '#FFD700', boxShadow: '0 0 4px #FFD700' }}/>
+              </div>
+            </div>
+            <div style={{ background: 'rgba(255,80,80,0.07)', border: '1px solid rgba(255,80,80,0.35)', borderRadius: '8px', padding: '0.4rem' }}>
+              <div style={{ fontSize: '0.38rem', color: '#FF5050', letterSpacing: '1px', marginBottom: '3px', fontFamily: 'monospace' }}>TEMP EXT</div>
+              <div style={{ fontSize: '0.65rem', color: 'white', fontFamily: 'monospace', fontWeight: 'bold' }}>-157°C</div>
+              <div style={{ display: 'flex', gap: '2px', marginTop: '4px' }}>
+                {[1,2,3].map(i => <div key={i} style={{ flex: 1, height: '3px', background: i < 2 ? '#FF5050' : 'rgba(255,80,80,0.2)', borderRadius: '1px' }}/>)}
+              </div>
+            </div>
+            <div style={{ background: 'rgba(0,255,136,0.07)', border: '1px solid rgba(0,255,136,0.35)', borderRadius: '8px', padding: '0.4rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.38rem', color: '#00FF88', letterSpacing: '1px', marginBottom: '4px', fontFamily: 'monospace' }}>COMM</div>
+              <div style={{ display: 'flex', gap: '2px', alignItems: 'flex-end', height: '14px', justifyContent: 'center' }}>
+                {[3,5,8,11,14,11,8,5].map((h,i) => (
+                  <div key={i} style={{ width: '3px', height: `${h}px`, background: '#00FF88', borderRadius: '1px', boxShadow: h > 10 ? '0 0 3px #00FF88' : 'none' }}/>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* === COCKPIT BOTTOM BAR: Atmospheric Status === */}
+          <div style={{ position: 'absolute', bottom: '1.5vw', left: '50%', transform: 'translateX(-50%)', zIndex: 4, display: 'flex', gap: '0.6rem', alignItems: 'center', pointerEvents: 'none', flexWrap: 'nowrap' }}>
+            {[['O\u2082', '98%', '#00E4FF'], ['N\u2082', '74%', '#9933FF'], ['CO\u2082', '0.04%', '#00FF88'], ['PSI', '14.7', '#FFD700'], ['RH', '45%', '#FF8C00']].map(([label, val, color]) => (
+              <div key={label} style={{ background: 'rgba(0,0,0,0.75)', border: `1px solid ${color}44`, borderRadius: '6px', padding: '3px 8px', textAlign: 'center', backdropFilter: 'blur(8px)', boxShadow: `0 0 8px ${color}22` }}>
+                <div style={{ fontSize: '0.42rem', color: color, letterSpacing: '1px', fontFamily: 'monospace' }}>{label}</div>
+                <div style={{ fontSize: '0.65rem', color: 'white', fontFamily: 'monospace', fontWeight: 'bold' }}>{val}</div>
+              </div>
+            ))}
+          </div>
         </div>
+
 
         {/* Content */}
         <div style={{ position: 'relative', zIndex: 1, width: '100%', maxWidth: '1200px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3rem' }}>

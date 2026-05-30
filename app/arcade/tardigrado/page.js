@@ -118,11 +118,11 @@ export default function TardigradeSurvivalGame() {
         return nodes;
       },
       update: function(dt) {
-        // Bounce off walls
-        if (this.x < 50) { this.x = 50; this.vx *= -1; }
-        if (this.x > engine.width - 50) { this.x = engine.width - 50; this.vx *= -1; }
-        if (this.y < 50) { this.y = 50; this.vy *= -1; }
-        if (this.y > engine.height - 50) { this.y = engine.height - 50; this.vy *= -1; }
+        // Wrap-around boundaries (Efecto Pac-Man) instead of bouncing
+        if (this.x < -this.radius) this.x = engine.width + this.radius;
+        if (this.x > engine.width + this.radius) this.x = -this.radius;
+        if (this.y < -this.radius) this.y = engine.height + this.radius;
+        if (this.y > engine.height + this.radius) this.y = -this.radius;
         
         // Mouse/Touch Dragging for movement
         if (engine.mouseIsDown && !this.isCryptobiotic) {
@@ -202,62 +202,143 @@ export default function TardigradeSurvivalGame() {
                    setEnergy(e => Math.min(e + 10, 100));
                 }
              }
+             // Wrap-around boundaries (Efecto Pac-Man)
+             if (this.x < -10) this.x = engine.width + 10;
+             if (this.x > engine.width + 10) this.x = -10;
+             if (this.y < -10) this.y = engine.height + 10;
+             if (this.y > engine.height + 10) this.y = -10;
           }
        });
     }, 1000);
 
-    // Spawner for Predators (Nematodes)
+    // Spawner for Predators (Nematodes) — spawn from all 4 borders
     setInterval(() => {
-       if (gameState !== 'playing' || engine.entities.filter(e => e.type === 'predator').length > 5) return;
+       if (gameState !== 'playing' || engine.entities.filter(e => e.type === 'predator').length > 6) return;
+       
+       // Random spawn from any of the 4 borders
+       const border = Math.floor(Math.random() * 4);
+       let startX, startY;
+       if (border === 0) { startX = Math.random() * engine.width; startY = -20; } // top
+       else if (border === 1) { startX = engine.width + 20; startY = Math.random() * engine.height; } // right
+       else if (border === 2) { startX = Math.random() * engine.width; startY = engine.height + 20; } // bottom
+       else { startX = -20; startY = Math.random() * engine.height; } // left
+
+       // Individual speed variation (2.5 to 4.0) to prevent synchronization
+       const individualSpeed = 2.5 + Math.random() * 1.5;
+       // Unique wander phase so each nematode wanders independently
+       const wanderPhase = Math.random() * Math.PI * 2;
+
        engine.registerRigidBody({
           type: 'predator',
-          x: Math.random() > 0.5 ? 0 : engine.width,
-          y: Math.random() * engine.height,
-          vx: (Math.random() - 0.5) * 3,
-          vy: (Math.random() - 0.5) * 3,
+          x: startX,
+          y: startY,
+          vx: (Math.random() - 0.5) * 2,
+          vy: (Math.random() - 0.5) * 2,
           radius: 15,
           color: '#FF2A2A',
+          maxSpeed: individualSpeed,
+          wanderPhase: wanderPhase,
           update: function(dt) {
-             // Chasing AI
              const player = engine.entities.find(e => e.id === 'tardy');
-             if (player && !player.isCryptobiotic) {
+
+             if (player && player.isCryptobiotic) {
+                // === WANDER behavior during cryptobiosis (no longer chase) ===
+                this.wanderPhase = (this.wanderPhase || 0) + dt * 0.04;
+                this.vx += Math.cos(this.wanderPhase) * 0.3;
+                this.vy += Math.sin(this.wanderPhase) * 0.3;
+             } else if (player) {
+                // === CHASE player when active ===
                 const dx = player.x - this.x;
                 const dy = player.y - this.y;
                 const mag = Math.sqrt(dx*dx + dy*dy);
                 if (mag > 0) {
-                   this.vx += (dx / mag) * 0.5;
-                   this.vy += (dy / mag) * 0.5;
+                   this.vx += (dx / mag) * 0.4;
+                   this.vy += (dy / mag) * 0.4;
                 }
-                
-                // Speed limit
-                const speed = Math.sqrt(this.vx*this.vx + this.vy*this.vy);
-                if (speed > 3) {
-                   this.vx = (this.vx / speed) * 3;
-                   this.vy = (this.vy / speed) * 3;
-                }
-
-                // Attack
+                // Attack on contact
                 if (mag < player.radius + this.radius) {
-                   setEnergy(e => Math.max(0, e - 2)); // High damage over time while touching
+                   setEnergy(e => Math.max(0, e - 2));
                 }
              }
 
-             // Bounce
-             if (this.x < 0 || this.x > engine.width) this.vx *= -1;
-             if (this.y < 0 || this.y > engine.height) this.vy *= -1;
+             // === ANTI-FLOCKING: separation force from other predators ===
+             const siblings = engine.entities.filter(e => e.type === 'predator' && e !== this);
+             siblings.forEach(sibling => {
+                const sdx = this.x - sibling.x;
+                const sdy = this.y - sibling.y;
+                const sdist = Math.sqrt(sdx * sdx + sdy * sdy);
+                const separationRadius = 60; // minimum distance between predators
+                if (sdist < separationRadius && sdist > 0) {
+                   const repulse = (separationRadius - sdist) / separationRadius;
+                   this.vx += (sdx / sdist) * repulse * 1.5;
+                   this.vy += (sdy / sdist) * repulse * 1.5;
+                }
+             });
+
+             // Speed limit with individual variation
+             const speed = Math.sqrt(this.vx*this.vx + this.vy*this.vy);
+             const maxSpd = this.maxSpeed || 3;
+             if (speed > maxSpd) {
+                this.vx = (this.vx / speed) * maxSpd;
+                this.vy = (this.vy / speed) * maxSpd;
+             }
+
+             // Wrap-around boundaries (Efecto Pac-Man)
+             if (this.x < -this.radius * 2) this.x = engine.width + this.radius * 2;
+             if (this.x > engine.width + this.radius * 2) this.x = -this.radius * 2;
+             if (this.y < -this.radius * 2) this.y = engine.height + this.radius * 2;
+             if (this.y > engine.height + this.radius * 2) this.y = -this.radius * 2;
+
+             // Despawn after lifetime — always running to guarantee rotation
+             this.lifetime = (this.lifetime || 0) + dt * 0.016;
+             if (this.lifetime > 18) {
+                this.dead = true;
+             }
           },
           render: function(ctx) {
-            // Draw worm-like predator with teeth
-            ctx.fillStyle = this.color;
+            const angle = Math.atan2(this.vy, this.vx);
+            // Nematode body — elongated worm
+            ctx.save();
+            ctx.translate(this.x, this.y);
+            ctx.rotate(angle);
+            
+            // Main body gradient
+            const bodyGrad = ctx.createLinearGradient(-this.radius * 2, 0, this.radius * 2, 0);
+            bodyGrad.addColorStop(0, '#AA0000');
+            bodyGrad.addColorStop(0.5, '#FF2A2A');
+            bodyGrad.addColorStop(1, '#660000');
+            ctx.fillStyle = bodyGrad;
             ctx.beginPath();
-            ctx.ellipse(this.x, this.y, this.radius * 2, this.radius, Math.atan2(this.vy, this.vx), 0, Math.PI*2);
+            ctx.ellipse(0, 0, this.radius * 2.2, this.radius * 0.8, 0, 0, Math.PI*2);
             ctx.fill();
             
-            // Draw teeth outline
-            ctx.strokeStyle = '#fff';
+            // Segmentation lines (worm segments)
+            ctx.strokeStyle = 'rgba(255,80,80,0.5)';
+            ctx.lineWidth = 1;
+            for (let seg = -1; seg <= 1; seg++) {
+               ctx.beginPath();
+               ctx.moveTo(seg * this.radius * 0.7, -this.radius * 0.7);
+               ctx.lineTo(seg * this.radius * 0.7, this.radius * 0.7);
+               ctx.stroke();
+            }
+            
+            // Head with teeth
+            ctx.fillStyle = '#FF6666';
             ctx.beginPath();
-            ctx.arc(this.x + Math.cos(Math.atan2(this.vy, this.vx)) * this.radius, this.y + Math.sin(Math.atan2(this.vy, this.vx)) * this.radius, 5, 0, Math.PI*2);
-            ctx.stroke();
+            ctx.arc(this.radius * 2, 0, this.radius * 0.6, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Teeth
+            ctx.fillStyle = 'white';
+            for (let t = -1; t <= 1; t++) {
+               ctx.beginPath();
+               ctx.moveTo(this.radius * 2.5, t * 4);
+               ctx.lineTo(this.radius * 2.5 + 6, t * 4 - 2);
+               ctx.lineTo(this.radius * 2.5 + 6, t * 4 + 2);
+               ctx.closePath();
+               ctx.fill();
+            }
+            ctx.restore();
           }
        });
     }, 1500);
@@ -269,9 +350,9 @@ export default function TardigradeSurvivalGame() {
           type: 'healing',
           x: Math.random() * engine.width,
           y: Math.random() * engine.height,
-          vx: (Math.random() - 0.5) * 1,
-          vy: (Math.random() - 0.5) * 1,
-          radius: 8,
+          vx: (Math.random() - 0.5) * 2,
+          vy: (Math.random() - 0.5) * 2,
+          radius: 10,
           color: '#00FF66',
           update: function(dt) {
              const player = engine.entities.find(e => e.id === 'tardy');
@@ -282,24 +363,72 @@ export default function TardigradeSurvivalGame() {
                    setEnergy(e => Math.min(e + 30, 100)); // Heal player heavily
                 }
              }
-             if (this.x < 0 || this.x > engine.width) this.vx *= -1;
-             if (this.y < 0 || this.y > engine.height) this.vy *= -1;
+
+             // Zig-zag motion (adds organic and complex movement)
+             this.zigZagTime = (this.zigZagTime || 0) + dt * 0.05;
+             this.vy += Math.sin(this.zigZagTime) * 0.4;
+             
+             // Wrap-around boundaries (Efecto Pac-Man)
+             if (this.x < -20) this.x = engine.width + 20;
+             if (this.x > engine.width + 20) this.x = -20;
+             if (this.y < -20) this.y = engine.height + 20;
+             if (this.y > engine.height + 20) this.y = -20;
+
+             // Despawn cell after a lifetime limit (20s) to keep it fresh
+             this.lifetime = (this.lifetime || 0) + dt * 0.016;
+             if (this.lifetime > 20) {
+                this.dead = true;
+             }
+
+             // Dynamic pulsating size
+             this.radius = 10 + Math.sin(this.lifetime * 5) * 2;
           },
           render: function(ctx) {
              ctx.save();
              ctx.translate(this.x, this.y);
              ctx.rotate(Math.atan2(this.vy, this.vx));
-             // Paramecium body
-             ctx.fillStyle = this.color;
+
+             // Detailed Paramecium body with transparent gradients (Glassmorphism cell structure)
+             const cellGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, this.radius * 1.5);
+             cellGrad.addColorStop(0, 'rgba(0, 255, 102, 0.75)');
+             cellGrad.addColorStop(0.6, 'rgba(0, 200, 80, 0.4)');
+             cellGrad.addColorStop(1, 'rgba(0, 80, 30, 0.1)');
+             
+             ctx.fillStyle = cellGrad;
              ctx.beginPath();
-             ctx.roundRect(-10, -5, 20, 10, 5);
+             ctx.ellipse(0, 0, this.radius * 1.5, this.radius, 0, 0, Math.PI * 2);
              ctx.fill();
-             // Cilia (hairs)
-             ctx.strokeStyle = 'rgba(0,255,100,0.8)';
-             for (let i = 0; i < Math.PI * 2; i += 0.5) {
+
+             ctx.strokeStyle = 'rgba(0, 255, 102, 0.9)';
+             ctx.lineWidth = 1.5;
+             ctx.stroke();
+
+             // Draw nucleus and vacuoles (organic organelles) inside
+             ctx.fillStyle = 'rgba(0, 220, 255, 0.8)'; // Nucleus
+             ctx.beginPath();
+             ctx.arc(-this.radius * 0.2, 0, this.radius * 0.35, 0, Math.PI * 2);
+             ctx.fill();
+
+             ctx.fillStyle = 'rgba(255, 230, 0, 0.6)'; // Vacuole A
+             ctx.beginPath();
+             ctx.arc(this.radius * 0.5, -2, this.radius * 0.2, 0, Math.PI * 2);
+             ctx.fill();
+
+             ctx.fillStyle = 'rgba(255, 120, 255, 0.6)'; // Vacuole B
+             ctx.beginPath();
+             ctx.arc(-this.radius * 0.6, 2, this.radius * 0.22, 0, Math.PI * 2);
+             ctx.fill();
+
+             // Animated cilia (tiny moving hairs on the perimeter)
+             ctx.strokeStyle = 'rgba(0, 255, 102, 0.65)';
+             ctx.lineWidth = 1;
+             const wave = Math.sin((this.lifetime || 0) * 10) * 2;
+             for (let i = 0; i < Math.PI * 2; i += 0.3) {
                 ctx.beginPath();
-                ctx.moveTo(Math.cos(i)*10, Math.sin(i)*5);
-                ctx.lineTo(Math.cos(i)*14, Math.sin(i)*7);
+                const rx = Math.cos(i) * this.radius * 1.5;
+                const ry = Math.sin(i) * this.radius;
+                ctx.moveTo(rx, ry);
+                ctx.lineTo(rx + Math.cos(i + wave * 0.08) * 4, ry + Math.sin(i + wave * 0.08) * 4);
                 ctx.stroke();
              }
              ctx.restore();
@@ -421,6 +550,38 @@ export default function TardigradeSurvivalGame() {
 
         <div style={{ position: 'relative', width: '800px', height: '500px', border: '2px solid #00FF66', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 0 30px rgba(0,255,102,0.2)', backgroundColor: '#041512' }}>
           
+          {/* Botón Cerrar Máquina */}
+          <button 
+            onClick={() => window.location.href = '/hub/arcade'}
+            style={{
+              position: 'absolute',
+              top: '15px',
+              left: '15px',
+              zIndex: 30,
+              background: 'rgba(255, 0, 0, 0.85)',
+              color: 'white',
+              border: '2px solid #ff5555',
+              padding: '6px 12px',
+              borderRadius: '6px',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+              boxShadow: '0 0 15px rgba(255, 0, 0, 0.4)',
+              transition: 'all 0.2s',
+              fontFamily: 'monospace'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = '#ff0000';
+              e.currentTarget.style.boxShadow = '0 0 20px rgba(255, 0, 0, 0.8)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'rgba(255, 0, 0, 0.85)';
+              e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.4)';
+            }}
+          >
+            ← CERRAR MÁQUINA
+          </button>
+
           <canvas 
             ref={canvasRef} 
             width={800} 
