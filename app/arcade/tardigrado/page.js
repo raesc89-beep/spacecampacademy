@@ -343,125 +343,339 @@ export default function TardigradeSurvivalGame() {
        });
     }, 1500);
 
-    // Spawner for Healing Cells (Paramecium)
+    // === HEALING MICROORGANISM SPAWNER — 3 distinct organism types ===
+    const HEAL_TYPES = [
+      { name: 'Paramecio',  color: '#00FF88', glow: '#00AA55', healAmt: 18, speed: 2.0, shape: 'ellipse' },
+      { name: 'Euglena',    color: '#AAFF00', glow: '#66AA00', healAmt: 25, speed: 1.5, shape: 'flagella' },
+      { name: 'Clorela',    color: '#44FFDD', glow: '#00BBAA', healAmt: 12, speed: 2.8, shape: 'sphere'   },
+    ];
+
     setInterval(() => {
-       if (gameState !== 'playing' || engine.entities.filter(e => e.type === 'healing').length > 3) return;
+       if (gameState !== 'playing' || engine.entities.filter(e => e.type === 'healing').length > 4) return;
+       
+       const hType = HEAL_TYPES[Math.floor(Math.random() * HEAL_TYPES.length)];
+       
        engine.registerRigidBody({
           type: 'healing',
           x: Math.random() * engine.width,
           y: Math.random() * engine.height,
-          vx: (Math.random() - 0.5) * 2,
-          vy: (Math.random() - 0.5) * 2,
-          radius: 10,
-          color: '#00FF66',
+          vx: (Math.random() - 0.5) * hType.speed,
+          vy: (Math.random() - 0.5) * hType.speed,
+          radius: hType.shape === 'sphere' ? 9 : 12,
+          color: hType.color,
+          healAmt: hType.healAmt,
+          shape: hType.shape,
+          glowColor: hType.glow,
+          lifePhase: Math.random() * Math.PI * 2, // unique phase per organism
           update: function(dt) {
              const player = engine.entities.find(e => e.id === 'tardy');
-             if (player && !player.isCryptobiotic) {
+             if (player) {
                 const dist = Math.sqrt(Math.pow(this.x - player.x, 2) + Math.pow(this.y - player.y, 2));
-                if (dist < player.radius + this.radius) {
+                if (dist < player.radius + this.radius + 5) {
                    this.dead = true;
-                   setEnergy(e => Math.min(e + 30, 100)); // Heal player heavily
+                   setEnergy(e => Math.min(e + this.healAmt, 100));
                 }
              }
 
-             // Zig-zag motion (adds organic and complex movement)
-             this.zigZagTime = (this.zigZagTime || 0) + dt * 0.05;
-             this.vy += Math.sin(this.zigZagTime) * 0.4;
-             
-             // Wrap-around boundaries (Efecto Pac-Man)
+             // Shape-specific movement
+             this.lifePhase = (this.lifePhase || 0) + dt * 0.025;
+             if (this.shape === 'ellipse') {
+                // Paramecio: smooth zig-zag
+                this.vy += Math.sin(this.lifePhase) * 0.3;
+             } else if (this.shape === 'flagella') {
+                // Euglena: corkscrew spiral
+                this.vx += Math.cos(this.lifePhase * 1.5) * 0.25;
+                this.vy += Math.sin(this.lifePhase * 1.5) * 0.25;
+             } else {
+                // Clorela: random tumble
+                if (Math.random() < 0.01) {
+                   this.vx = (Math.random() - 0.5) * this.radius * 0.4;
+                   this.vy = (Math.random() - 0.5) * this.radius * 0.4;
+                }
+             }
+
+             // Speed cap
+             const sp = Math.sqrt(this.vx*this.vx + this.vy*this.vy);
+             const maxSp = hType ? hType.speed : 2.5;
+             if (sp > maxSp) { this.vx = (this.vx/sp)*maxSp; this.vy = (this.vy/sp)*maxSp; }
+
+             // Pulsating radius
+             this.radius = (this.shape === 'sphere' ? 9 : 12) + Math.sin(this.lifePhase * 3) * 2;
+
+             // Wrap-around
              if (this.x < -20) this.x = engine.width + 20;
              if (this.x > engine.width + 20) this.x = -20;
              if (this.y < -20) this.y = engine.height + 20;
              if (this.y > engine.height + 20) this.y = -20;
 
-             // Despawn cell after a lifetime limit (20s) to keep it fresh
+             // Lifetime
              this.lifetime = (this.lifetime || 0) + dt * 0.016;
-             if (this.lifetime > 20) {
-                this.dead = true;
-             }
-
-             // Dynamic pulsating size
-             this.radius = 10 + Math.sin(this.lifetime * 5) * 2;
+             if (this.lifetime > 22) this.dead = true;
           },
           render: function(ctx) {
              ctx.save();
              ctx.translate(this.x, this.y);
-             ctx.rotate(Math.atan2(this.vy, this.vx));
+             const angle = Math.atan2(this.vy, this.vx);
+             const lp = this.lifePhase || 0;
 
-             // Detailed Paramecium body with transparent gradients (Glassmorphism cell structure)
-             const cellGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, this.radius * 1.5);
-             cellGrad.addColorStop(0, 'rgba(0, 255, 102, 0.75)');
-             cellGrad.addColorStop(0.6, 'rgba(0, 200, 80, 0.4)');
-             cellGrad.addColorStop(1, 'rgba(0, 80, 30, 0.1)');
-             
-             ctx.fillStyle = cellGrad;
+             // Outer glow
+             const glowGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, this.radius * 2.2);
+             glowGrad.addColorStop(0, this.glowColor + 'BB');
+             glowGrad.addColorStop(1, 'rgba(0,0,0,0)');
+             ctx.fillStyle = glowGrad;
              ctx.beginPath();
-             ctx.ellipse(0, 0, this.radius * 1.5, this.radius, 0, 0, Math.PI * 2);
+             ctx.arc(0, 0, this.radius * 2.2, 0, Math.PI * 2);
              ctx.fill();
 
-             ctx.strokeStyle = 'rgba(0, 255, 102, 0.9)';
-             ctx.lineWidth = 1.5;
-             ctx.stroke();
-
-             // Draw nucleus and vacuoles (organic organelles) inside
-             ctx.fillStyle = 'rgba(0, 220, 255, 0.8)'; // Nucleus
-             ctx.beginPath();
-             ctx.arc(-this.radius * 0.2, 0, this.radius * 0.35, 0, Math.PI * 2);
-             ctx.fill();
-
-             ctx.fillStyle = 'rgba(255, 230, 0, 0.6)'; // Vacuole A
-             ctx.beginPath();
-             ctx.arc(this.radius * 0.5, -2, this.radius * 0.2, 0, Math.PI * 2);
-             ctx.fill();
-
-             ctx.fillStyle = 'rgba(255, 120, 255, 0.6)'; // Vacuole B
-             ctx.beginPath();
-             ctx.arc(-this.radius * 0.6, 2, this.radius * 0.22, 0, Math.PI * 2);
-             ctx.fill();
-
-             // Animated cilia (tiny moving hairs on the perimeter)
-             ctx.strokeStyle = 'rgba(0, 255, 102, 0.65)';
-             ctx.lineWidth = 1;
-             const wave = Math.sin((this.lifetime || 0) * 10) * 2;
-             for (let i = 0; i < Math.PI * 2; i += 0.3) {
+             if (this.shape === 'ellipse') {
+                // === PARAMECIO: elongated oval with cilia ===
+                ctx.rotate(angle);
+                const cellGrad = ctx.createLinearGradient(-this.radius*1.6, 0, this.radius*1.6, 0);
+                cellGrad.addColorStop(0, 'rgba(0,200,100,0.6)');
+                cellGrad.addColorStop(0.5, 'rgba(0,255,136,0.9)');
+                cellGrad.addColorStop(1, 'rgba(0,150,70,0.5)');
+                ctx.fillStyle = cellGrad;
                 ctx.beginPath();
-                const rx = Math.cos(i) * this.radius * 1.5;
-                const ry = Math.sin(i) * this.radius;
-                ctx.moveTo(rx, ry);
-                ctx.lineTo(rx + Math.cos(i + wave * 0.08) * 4, ry + Math.sin(i + wave * 0.08) * 4);
+                ctx.ellipse(0, 0, this.radius * 1.6, this.radius * 0.7, 0, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = 'rgba(0,255,136,0.8)';
+                ctx.lineWidth = 1;
                 ctx.stroke();
+                // Cilia
+                ctx.strokeStyle = 'rgba(0,255,136,0.5)';
+                ctx.lineWidth = 0.7;
+                for (let c = -4; c <= 4; c++) {
+                   const cx = c * this.radius * 0.35;
+                   ctx.beginPath();
+                   ctx.moveTo(cx, this.radius * 0.7);
+                   ctx.lineTo(cx + Math.sin(lp * 2 + c) * 4, this.radius * 0.7 + 6);
+                   ctx.stroke();
+                   ctx.beginPath();
+                   ctx.moveTo(cx, -this.radius * 0.7);
+                   ctx.lineTo(cx + Math.sin(lp * 2 + c + 1) * 4, -this.radius * 0.7 - 6);
+                   ctx.stroke();
+                }
+                // Nucleus
+                ctx.fillStyle = 'rgba(100,255,200,0.7)';
+                ctx.beginPath();
+                ctx.arc(0, 0, this.radius * 0.35, 0, Math.PI * 2);
+                ctx.fill();
+
+             } else if (this.shape === 'flagella') {
+                // === EUGLENA: teardrop with long flagella ===
+                const tearGrad = ctx.createRadialGradient(-2, -2, 0, 0, 0, this.radius);
+                tearGrad.addColorStop(0, 'rgba(200,255,0,0.9)');
+                tearGrad.addColorStop(0.6, 'rgba(100,200,0,0.7)');
+                tearGrad.addColorStop(1, 'rgba(50,100,0,0.3)');
+                ctx.rotate(angle);
+                ctx.fillStyle = tearGrad;
+                ctx.beginPath();
+                ctx.ellipse(0, 0, this.radius * 0.75, this.radius * 1.3, 0, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = 'rgba(180,255,0,0.8)';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+                // Flagellum
+                ctx.strokeStyle = 'rgba(150,255,0,0.7)';
+                ctx.lineWidth = 1.2;
+                ctx.beginPath();
+                ctx.moveTo(0, this.radius * 1.3);
+                for (let fp = 1; fp <= 8; fp++) {
+                   const fy = this.radius * 1.3 + fp * 5;
+                   const fx = Math.sin(lp * 3 + fp * 0.6) * 8;
+                   ctx.lineTo(fx, fy);
+                }
+                ctx.stroke();
+                // Chloroplast
+                ctx.fillStyle = 'rgba(50,200,0,0.8)';
+                ctx.beginPath();
+                ctx.ellipse(0, -2, this.radius * 0.5, this.radius * 0.25, 0, 0, Math.PI * 2);
+                ctx.fill();
+
+             } else {
+                // === CLORELA: glowing sphere with internal structure ===
+                const sphGrad = ctx.createRadialGradient(-this.radius*0.3, -this.radius*0.3, 0, 0, 0, this.radius);
+                sphGrad.addColorStop(0, 'rgba(200,255,240,0.95)');
+                sphGrad.addColorStop(0.4, 'rgba(60,220,200,0.8)');
+                sphGrad.addColorStop(1, 'rgba(0,100,120,0.5)');
+                ctx.fillStyle = sphGrad;
+                ctx.beginPath();
+                ctx.arc(0, 0, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = 'rgba(100,255,240,0.9)';
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+                // Internal cross-wall
+                ctx.strokeStyle = 'rgba(0,200,180,0.5)';
+                ctx.lineWidth = 0.8;
+                ctx.beginPath();
+                ctx.moveTo(-this.radius * 0.8, 0); ctx.lineTo(this.radius * 0.8, 0);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(0, -this.radius * 0.8); ctx.lineTo(0, this.radius * 0.8);
+                ctx.stroke();
+                // Pyrenoid (bright center dot)
+                ctx.fillStyle = 'rgba(255,255,255,0.9)';
+                ctx.beginPath();
+                ctx.arc(0, 0, this.radius * 0.2, 0, Math.PI * 2);
+                ctx.fill();
              }
+
+             // +HP label floating upward
+             ctx.restore();
+             ctx.save();
+             ctx.translate(this.x, this.y - this.radius - 8);
+             ctx.globalAlpha = 0.7 + Math.sin(lp * 2) * 0.3;
+             ctx.fillStyle = this.color;
+             ctx.font = 'bold 10px monospace';
+             ctx.textAlign = 'center';
+             ctx.fillText(`+${this.healAmt}`, 0, 0);
              ctx.restore();
           }
+
        });
-    }, 5000); // Spawns every 5 seconds
+    }, 1800);
 
     // Clean dead entities and draw background ecosystem
     engine.update = (function(originalUpdate) {
       let time = 0;
       return function(dt) {
-         // Draw aquatic background first
          if (this.ctx) {
              const ctx = this.ctx;
-             ctx.fillStyle = '#002B1E'; // Deep aquatic green/black - made brighter
-             ctx.fillRect(0, 0, this.width, this.height);
-             
-             // Draw floating out-of-focus particles (more visible)
-             time += dt;
-             ctx.fillStyle = 'rgba(0, 255, 120, 0.15)'; // Increased opacity
-             for(let i=0; i<40; i++) {
-                 const px = (Math.sin(time*0.5 + i) * 50 + i * 40) % this.width;
-                 const py = (Math.cos(time*0.3 + i) * 50 + i * 30) % this.height;
+             const W = this.width, H = this.height;
+             time += dt * 0.016;
+
+             // === DEEP OCEAN GRADIENT BASE ===
+             const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+             bgGrad.addColorStop(0, '#001A10');   // dark surface
+             bgGrad.addColorStop(0.4, '#003020'); // mid-depth teal
+             bgGrad.addColorStop(1,  '#001A2A');  // abyss blue
+             ctx.fillStyle = bgGrad;
+             ctx.fillRect(0, 0, W, H);
+
+             // === BIOLUMINESCENT LIGHT RAYS (surface light filtering down) ===
+             ctx.save();
+             ctx.globalCompositeOperation = 'screen';
+             for (let r = 0; r < 6; r++) {
+                 const rx = W * (0.1 + r * 0.15) + Math.sin(time * 0.3 + r) * 25;
+                 const rayGrad = ctx.createLinearGradient(rx, 0, rx + 30, H * 0.75);
+                 rayGrad.addColorStop(0, `rgba(0, 200, 100, ${0.06 + Math.sin(time + r) * 0.03})`);
+                 rayGrad.addColorStop(1, 'rgba(0, 100, 50, 0)');
+                 ctx.fillStyle = rayGrad;
                  ctx.beginPath();
-                 ctx.arc(Math.abs(px), Math.abs(py), (i%5)*10 + 8, 0, Math.PI*2);
+                 ctx.moveTo(rx - 8, 0);
+                 ctx.lineTo(rx + 35, H * 0.75);
+                 ctx.lineTo(rx + 15, H * 0.75);
+                 ctx.lineTo(rx - 25, 0);
+                 ctx.closePath();
                  ctx.fill();
              }
+             ctx.restore();
+
+             // === FLOATING ALGAE STRANDS ===
+             ctx.save();
+             ctx.globalCompositeOperation = 'source-over';
+             for (let a = 0; a < 8; a++) {
+                 const baseX = W * (a / 8) + 20;
+                 const waveAmp = 18 + a * 4;
+                 ctx.strokeStyle = `rgba(0, ${130 + a * 10}, ${50 + a * 8}, 0.55)`;
+                 ctx.lineWidth = 2.5;
+                 ctx.lineCap = 'round';
+                 ctx.beginPath();
+                 const segments = 12;
+                 for (let s = 0; s <= segments; s++) {
+                     const sy = H - s * (H / segments);
+                     const sx = baseX + Math.sin(time * 0.5 + s * 0.7 + a) * waveAmp;
+                     s === 0 ? ctx.moveTo(sx, sy) : ctx.lineTo(sx, sy);
+                 }
+                 ctx.stroke();
+             }
+             ctx.restore();
+
+             // === DIATOM MICROORGANISMS (hexagonal/circular glass shapes) ===
+             for (let d = 0; d < 15; d++) {
+                 const dx = ((d * 137.5 + time * 8) % W);
+                 const dy = ((d * 79.3 + time * 4 + 50) % H);
+                 const dr = 6 + (d % 4) * 4;
+                 const dAlpha = 0.2 + Math.sin(time * 1.5 + d) * 0.1;
+                 const dColors = ['rgba(0,220,150', 'rgba(100,220,200', 'rgba(50,180,120'];
+                 const dc = dColors[d % 3];
+
+                 ctx.save();
+                 ctx.translate(dx, dy);
+                 ctx.rotate(time * 0.2 + d);
+                 ctx.globalAlpha = dAlpha;
+
+                 // Hexagonal diatom shell
+                 ctx.strokeStyle = `${dc},0.8)`;
+                 ctx.lineWidth = 1;
+                 ctx.beginPath();
+                 for (let h = 0; h < 6; h++) {
+                     const angle = (h / 6) * Math.PI * 2;
+                     h === 0 ? ctx.moveTo(Math.cos(angle) * dr, Math.sin(angle) * dr)
+                             : ctx.lineTo(Math.cos(angle) * dr, Math.sin(angle) * dr);
+                 }
+                 ctx.closePath();
+                 ctx.stroke();
+
+                 // Inner ring
+                 ctx.strokeStyle = `${dc},0.4)`;
+                 ctx.beginPath();
+                 ctx.arc(0, 0, dr * 0.5, 0, Math.PI * 2);
+                 ctx.stroke();
+
+                 ctx.restore();
+             }
+
+             // === FLOATING BUBBLES ===
+             for (let b = 0; b < 20; b++) {
+                 const bPhase = (time * (0.4 + b * 0.02) + b * 0.5) % 1;
+                 const bx = W * ((b * 53.7 + Math.sin(time * 0.3 + b) * 0.05) % 1);
+                 const by = H - bPhase * H;
+                 const br = 2 + (b % 4) * 1.5;
+                 ctx.save();
+                 ctx.globalAlpha = 0.3 + Math.sin(time + b) * 0.1;
+                 ctx.strokeStyle = 'rgba(100,255,180,0.8)';
+                 ctx.lineWidth = 0.8;
+                 ctx.beginPath();
+                 ctx.arc(bx, by, br, 0, Math.PI * 2);
+                 ctx.stroke();
+                 // Highlight on bubble
+                 ctx.fillStyle = 'rgba(255,255,255,0.4)';
+                 ctx.beginPath();
+                 ctx.arc(bx - br * 0.3, by - br * 0.3, br * 0.3, 0, Math.PI * 2);
+                 ctx.fill();
+                 ctx.restore();
+             }
+
+             // === BACKGROUND MICRO-ORGANISM SILHOUETTES ===
+             ctx.save();
+             ctx.globalAlpha = 0.08;
+             ctx.fillStyle = '#00FF88';
+             for (let m = 0; m < 8; m++) {
+                 const mx = ((m * 110 + time * 6) % W);
+                 const my = ((m * 70 + time * 3) % H);
+                 // Amoeba-like blob shape
+                 ctx.beginPath();
+                 const blobR = 20 + m * 5;
+                 for (let p = 0; p < 8; p++) {
+                     const angle = (p / 8) * Math.PI * 2;
+                     const rad = blobR + Math.sin(time * 2 + p * 1.3 + m) * 8;
+                     const bpx = mx + Math.cos(angle) * rad;
+                     const bpy = my + Math.sin(angle) * rad;
+                     p === 0 ? ctx.moveTo(bpx, bpy) : ctx.lineTo(bpx, bpy);
+                 }
+                 ctx.closePath();
+                 ctx.fill();
+             }
+             ctx.restore();
          }
          
          originalUpdate.call(this, dt);
          this.entities = this.entities.filter(e => !e.dead);
       };
     })(engine.update);
+
 
     // Input listeners
     const onDown = (e) => {

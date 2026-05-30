@@ -66,38 +66,79 @@ function UAP() {
       animate={{
         left: path.x,
         top: path.y,
-        scale: [0, 1.5, 1, 1.8, 1, 2, 0],
+        scale: [0, 1.8, 1, 2, 1, 1.5, 0],
       }}
       transition={{
-        duration: 4.8,
-        ease: [0.19, 1, 0.22, 1], // Hypersonic rapid acceleration & sudden stop ease (characteristic UAP flight)
-        times: [0, 0.15, 0.3, 0.45, 0.6, 0.8, 1]
+        duration: 5.5,
+        ease: [0.19, 1, 0.22, 1],
+        times: [0, 0.12, 0.28, 0.44, 0.6, 0.82, 1]
       }}
       style={{
         position: 'absolute',
-        width: '12px',
-        height: '12px',
+        width: '30px',
+        height: '30px',
         borderRadius: '50%',
         backgroundColor: color,
-        boxShadow: `0 0 15px 5px ${color}, 0 0 30px 10px ${glowColor}, 0 0 50px 20px rgba(255,255,255,0.4)`,
-        zIndex: 5,
+        boxShadow: `0 0 20px 8px ${color}, 0 0 50px 20px ${glowColor}, 0 0 90px 35px rgba(255,255,255,0.3)`,
+        zIndex: 20,
         pointerEvents: 'none',
         mixBlendMode: 'screen',
       }}
     >
-      {/* Visual glowing pulsating aura */}
-      <motion.div 
-        animate={{ scale: [1, 2.2, 1] }} 
-        transition={{ repeat: Infinity, duration: 0.25 }}
+      {/* Inner bright core */}
+      <div style={{
+        position: 'absolute',
+        inset: '6px',
+        borderRadius: '50%',
+        background: 'radial-gradient(circle, white 0%, transparent 100%)',
+        opacity: 0.9,
+      }} />
+
+      {/* Pulsating corona ring 1 */}
+      <motion.div
+        animate={{ scale: [1, 2.5, 1], opacity: [0.8, 0, 0.8] }}
+        transition={{ repeat: Infinity, duration: 0.8, ease: 'easeOut' }}
         style={{
           position: 'absolute',
-          inset: -6,
+          inset: -8,
           borderRadius: '50%',
-          border: `1.5px solid ${color}`,
-          opacity: 0.7,
+          border: `2px solid ${color}`,
+          filter: 'blur(1px)'
+        }}
+      />
+
+      {/* Pulsating corona ring 2 — offset phase */}
+      <motion.div
+        animate={{ scale: [1, 3.5, 1], opacity: [0.5, 0, 0.5] }}
+        transition={{ repeat: Infinity, duration: 1.3, ease: 'easeOut', delay: 0.4 }}
+        style={{
+          position: 'absolute',
+          inset: -4,
+          borderRadius: '50%',
+          border: `1.5px solid ${glowColor}`,
           filter: 'blur(2px)'
         }}
       />
+
+      {/* Rotating spoke rays */}
+      <motion.div
+        animate={{ rotate: [0, 360] }}
+        transition={{ repeat: Infinity, duration: 2, ease: 'linear' }}
+        style={{ position: 'absolute', inset: 0 }}
+      >
+        {[0, 45, 90, 135, 180, 225, 270, 315].map(deg => (
+          <div key={deg} style={{
+            position: 'absolute',
+            top: '50%', left: '50%',
+            width: '28px', height: '2px',
+            background: `linear-gradient(to right, ${color}, transparent)`,
+            transformOrigin: '0 50%',
+            transform: `rotate(${deg}deg) translateY(-50%)`,
+            opacity: 0.6,
+            filter: 'blur(1px)',
+          }} />
+        ))}
+      </motion.div>
     </motion.div>
   );
 }
