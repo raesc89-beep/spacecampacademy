@@ -1,413 +1,480 @@
 'use client';
-import { useState, useRef, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Zap, Clock, Star, AlertTriangle } from 'lucide-react';
 
-// Orbital mechanics simulation
-const PLANETS = [
-  { id: 'sun', x: 400, y: 300, radius: 35, mass: 800, color: '#FFD700', name: 'Sol', glow: '#FF8C00' },
-  { id: 'earth', x: 620, y: 300, radius: 16, mass: 80, color: '#4499FF', name: 'Tierra', glow: '#2266CC', orbitR: 220 },
-  { id: 'mars', x: 400, y: 500, radius: 12, mass: 50, color: '#FF4422', name: 'Marte', glow: '#AA2200', orbitR: 200 },
-  { id: 'jupiter', x: 120, y: 300, radius: 24, mass: 200, color: '#CC8844', name: 'Júpiter', glow: '#996622', orbitR: 280 },
-];
+import { useRef, useEffect, useState, useCallback } from 'react';
 
-const DATA_PACKETS = [
-  { id: 0, x: 550, y: 150, collected: false, pts: 50 },
-  { id: 1, x: 200, y: 200, collected: false, pts: 75 },
-  { id: 2, x: 300, y: 480, collected: false, pts: 60 },
-  { id: 3, x: 650, y: 450, collected: false, pts: 100 },
-];
+// ─── Game constants ───────────────────────────────────────────────────────────
+const CANVAS_W    = 480;
+const CANVAS_H    = 320;
+const PROBE_X     = 90;          // fixed horizontal position of probe
+const GRAVITY     = 0.35;        // pixels/frame² pulling down
+const BOOST_VY    = -7.5;        // upward velocity on tap
+const WALL_SPEED  = 2.8;         // pixels/frame walls scroll left
+const WALL_W      = 22;          // wall thickness
+const WALL_GAP_START = 130;      // initial gap size (px)
+const WALL_GAP_MIN   = 70;       // minimum gap size
+const GAP_SHRINK     = 5;        // gap shrinks by this per successful pass
+const WIN_PASSES  = 10;          // passes needed to win
+const PROBE_R     = 10;          // collision radius of probe
 
+// ─── Main component ───────────────────────────────────────────────────────────
 export default function AsistenciaGravitacional({ onComplete }) {
-  const canvasRef = useRef(null);
-  const animRef = useRef(null);
-  const probeRef = useRef(null);
-  const stateRef = useRef({ gameState: 'aiming', fuel: 100, score: 0, packets: JSON.parse(JSON.stringify(DATA_PACKETS)), collisions: 0, trajectory: [], aimAngle: 0, power: 60 });
-  const [displayState, setDisplayState] = useState({ gameState: 'aiming', fuel: 100, score: 0, packets: JSON.parse(JSON.stringify(DATA_PACKETS)), collisions: 0 });
-  const [aimAngle, setAimAngle] = useState(45);
-  const [power, setPower] = useState(60);
-  const [message, setMessage] = useState('');
+  const canvasRef     = useRef(null);
+  const gameStateRef  = useRef(null); // holds mutable game state
+  const rafRef        = useRef(null);
 
-  const W = 800, H = 580;
+  // React state: only for screen switching (start / playing / gameover / won)
+  const [screen, setScreen] = useState('start'); // 'start' | 'playing' | 'gameover' | 'won'
+  const [finalScore, setFinalScore] = useState(0);
 
-  // Draw orbit lines & asteroids
-  const drawBackground = (ctx, t) => {
-    ctx.fillStyle = '#010208';
-    ctx.fillRect(0, 0, W, H);
-
-    // Stars
-    for (let i = 0; i < 80; i++) {
-      const sx = (i * 137.5 + 50) % W;
-      const sy = (i * 89.3 + 30) % H;
-      ctx.fillStyle = `rgba(255,255,255,${0.3 + Math.sin(t * 0.5 + i) * 0.2})`;
-      ctx.beginPath(); ctx.arc(sx, sy, 1, 0, Math.PI * 2); ctx.fill();
-    }
-
-    // Planet orbit rings
-    PLANETS.forEach(p => {
-      if (!p.orbitR) return;
-      ctx.strokeStyle = 'rgba(255,255,255,0.06)';
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.arc(PLANETS[0].x, PLANETS[0].y, p.orbitR, 0, Math.PI * 2);
-      ctx.stroke();
-    });
-
-    // Asteroid belt (procedural)
-    ctx.fillStyle = 'rgba(120,100,80,0.4)';
-    for (let a = 0; a < 40; a++) {
-      const angle = (a / 40) * Math.PI * 2 + t * 0.02;
-      const r = 330 + Math.sin(a * 3.7) * 20;
-      const ax = PLANETS[0].x + Math.cos(angle) * r;
-      const ay = PLANETS[0].y + Math.sin(angle) * r;
-      ctx.beginPath(); ctx.arc(ax, ay, 3 + (a % 3), 0, Math.PI * 2); ctx.fill();
-    }
-  };
-
-  const drawPlanets = (ctx, t) => {
-    PLANETS.forEach(planet => {
-      // Glow
-      const glow = ctx.createRadialGradient(planet.x, planet.y, planet.radius * 0.5, planet.x, planet.y, planet.radius * 2.5);
-      glow.addColorStop(0, planet.glow + '55');
-      glow.addColorStop(1, 'rgba(0,0,0,0)');
-      ctx.fillStyle = glow;
-      ctx.beginPath(); ctx.arc(planet.x, planet.y, planet.radius * 2.5, 0, Math.PI * 2); ctx.fill();
-
-      // Body
-      const bodyGrad = ctx.createRadialGradient(planet.x - planet.radius * 0.3, planet.y - planet.radius * 0.3, planet.radius * 0.1, planet.x, planet.y, planet.radius);
-      bodyGrad.addColorStop(0, '#ffffff55');
-      bodyGrad.addColorStop(0.3, planet.color);
-      bodyGrad.addColorStop(1, planet.glow);
-      ctx.fillStyle = bodyGrad;
-      ctx.beginPath(); ctx.arc(planet.x, planet.y, planet.radius, 0, Math.PI * 2); ctx.fill();
-
-      // Label
-      ctx.fillStyle = 'rgba(255,255,255,0.7)';
-      ctx.font = '11px monospace';
-      ctx.textAlign = 'center';
-      ctx.fillText(planet.name, planet.x, planet.y + planet.radius + 14);
-    });
-  };
-
-  const drawDataPackets = (ctx, packets, t) => {
-    packets.forEach(pkt => {
-      if (pkt.collected) return;
-      const pulse = Math.sin(t * 3 + pkt.id) * 0.3 + 0.7;
-      ctx.save();
-      ctx.globalAlpha = pulse;
-      const pktGrad = ctx.createRadialGradient(pkt.x, pkt.y, 0, pkt.x, pkt.y, 16);
-      pktGrad.addColorStop(0, '#00FF88');
-      pktGrad.addColorStop(0.5, '#00AA55');
-      pktGrad.addColorStop(1, 'rgba(0,255,136,0)');
-      ctx.fillStyle = pktGrad;
-      ctx.beginPath(); ctx.arc(pkt.x, pkt.y, 16, 0, Math.PI * 2); ctx.fill();
-
-      ctx.strokeStyle = '#00FF88';
-      ctx.lineWidth = 1.5;
-      ctx.beginPath();
-      for (let a = 0; a < 6; a++) {
-        const angle = (a / 6) * Math.PI * 2;
-        ctx.moveTo(pkt.x, pkt.y);
-        ctx.lineTo(pkt.x + Math.cos(angle) * 10, pkt.y + Math.sin(angle) * 10);
-      }
-      ctx.stroke();
-
-      ctx.fillStyle = '#00FF88';
-      ctx.font = 'bold 10px monospace';
-      ctx.textAlign = 'center';
-      ctx.fillText(`+${pkt.pts}`, pkt.x, pkt.y + 4);
-      ctx.restore();
-    });
-  };
-
-  const drawProbe = (ctx, probe, t) => {
-    if (!probe) return;
-    ctx.save();
-    ctx.translate(probe.x, probe.y);
-    const angle = Math.atan2(probe.vy, probe.vx);
-    ctx.rotate(angle);
-
-    // Engine exhaust
-    ctx.globalCompositeOperation = 'lighter';
-    ctx.fillStyle = `rgba(0,228,255,${0.3 + Math.random() * 0.3})`;
-    ctx.beginPath();
-    ctx.ellipse(-14, 0, 12 + Math.random() * 5, 4, 0, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.globalCompositeOperation = 'source-over';
-
-    // Body
-    ctx.fillStyle = '#C0C0C0';
-    ctx.beginPath();
-    ctx.ellipse(0, 0, 10, 6, 0, 0, Math.PI * 2);
-    ctx.fill();
-
-    // Solar panels
-    ctx.fillStyle = '#334488';
-    ctx.fillRect(-5, -14, 10, 6);
-    ctx.fillRect(-5, 8, 10, 6);
-    ctx.strokeStyle = '#5566AA';
-    ctx.lineWidth = 0.5;
-    for (let s = 0; s < 4; s++) {
-      ctx.beginPath();
-      ctx.moveTo(-5 + s * 3, -14);
-      ctx.lineTo(-5 + s * 3, -8);
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.moveTo(-5 + s * 3, 8);
-      ctx.lineTo(-5 + s * 3, 14);
-      ctx.stroke();
-    }
-
-    ctx.restore();
-  };
-
-  const drawTrajectory = (ctx, trajectory) => {
-    if (trajectory.length < 2) return;
-    ctx.save();
-    ctx.strokeStyle = 'rgba(0,228,255,0.35)';
-    ctx.lineWidth = 1;
-    ctx.setLineDash([4, 4]);
-    ctx.beginPath();
-    ctx.moveTo(trajectory[0].x, trajectory[0].y);
-    trajectory.forEach(pt => ctx.lineTo(pt.x, pt.y));
-    ctx.stroke();
-    ctx.setLineDash([]);
-    ctx.restore();
-  };
-
-  const drawAimingUI = (ctx, t) => {
-    const LAUNCH_X = 400, LAUNCH_Y = 540;
-    const angleRad = (stateRef.current.aimAngle * Math.PI) / 180;
-    const pw = stateRef.current.power / 100;
-
-    // Launch platform
-    ctx.fillStyle = '#334455';
-    ctx.beginPath(); ctx.roundRect(LAUNCH_X - 25, LAUNCH_Y - 10, 50, 20, 6); ctx.fill();
-    ctx.strokeStyle = '#00E4FF55'; ctx.lineWidth = 1; ctx.stroke();
-
-    // Aim arrow
-    const arrowLen = 40 + pw * 40;
-    ctx.strokeStyle = `rgba(255,200,0,${0.7 + Math.sin(t * 4) * 0.3})`;
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(LAUNCH_X, LAUNCH_Y);
-    ctx.lineTo(LAUNCH_X + Math.cos(angleRad) * arrowLen, LAUNCH_Y + Math.sin(angleRad) * arrowLen);
-    ctx.stroke();
-
-    // Arrowhead
-    const ax = LAUNCH_X + Math.cos(angleRad) * arrowLen;
-    const ay = LAUNCH_Y + Math.sin(angleRad) * arrowLen;
-    ctx.fillStyle = '#FFD700';
-    ctx.beginPath();
-    ctx.moveTo(ax, ay);
-    ctx.lineTo(ax - Math.cos(angleRad - 0.4) * 10, ay - Math.sin(angleRad - 0.4) * 10);
-    ctx.lineTo(ax - Math.cos(angleRad + 0.4) * 10, ay - Math.sin(angleRad + 0.4) * 10);
-    ctx.closePath(); ctx.fill();
-
-    ctx.fillStyle = '#00E4FF';
-    ctx.font = '12px monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText('PLATAFORMA', LAUNCH_X, LAUNCH_Y + 30);
-  };
-
-  // Main game loop
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    let t = 0;
-
-    const loop = () => {
-      const st = stateRef.current;
-      drawBackground(ctx, t);
-      drawDataPackets(ctx, st.packets, t);
-      drawPlanets(ctx, t);
-
-      if (st.gameState === 'aiming') {
-        drawAimingUI(ctx, t);
-      }
-
-      if (st.probe) {
-        // Physics: gravity from each planet
-        PLANETS.forEach(planet => {
-          const dx = planet.x - st.probe.x;
-          const dy = planet.y - st.probe.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          const force = (planet.mass * 0.08) / (dist * dist + 100);
-          st.probe.vx += (dx / dist) * force;
-          st.probe.vy += (dy / dist) * force;
-
-          // Collision
-          if (dist < planet.radius + 6 && !st.hitCooldown) {
-            st.probe = null;
-            st.gameState = 'aiming';
-            st.collisions++;
-            st.fuel = Math.max(0, st.fuel - 20);
-            setDisplayState(d => ({ ...d, collisions: st.collisions, fuel: st.fuel }));
-            setMessage(`💥 Colisión con ${planet.name}! -20% combustible`);
-            setTimeout(() => setMessage(''), 2000);
-            probeRef.current = null;
-            return;
-          }
-        });
-
-        if (st.probe) {
-          // Collect data packets
-          st.packets.forEach(pkt => {
-            if (pkt.collected) return;
-            const dx = pkt.x - st.probe.x;
-            const dy = pkt.y - st.probe.y;
-            if (Math.sqrt(dx * dx + dy * dy) < 18) {
-              pkt.collected = true;
-              st.score += pkt.pts;
-              setDisplayState(d => ({ ...d, score: st.score, packets: [...st.packets] }));
-              setMessage(`📡 ¡Datos recibidos! +${pkt.pts} pts`);
-              setTimeout(() => setMessage(''), 1500);
-            }
-          });
-
-          st.probe.x += st.probe.vx;
-          st.probe.y += st.probe.vy;
-          st.trajectory.push({ x: st.probe.x, y: st.probe.y });
-          if (st.trajectory.length > 120) st.trajectory.shift();
-
-          // Out of bounds → land
-          if (st.probe.x < -50 || st.probe.x > W + 50 || st.probe.y < -50 || st.probe.y > H + 50) {
-            st.probe = null;
-            st.gameState = 'aiming';
-            probeRef.current = null;
-          }
-        }
-
-        // Win: all collected
-        if (st.packets.every(p => p.collected) && st.gameState !== 'won') {
-          st.gameState = 'won';
-          setDisplayState(d => ({ ...d, gameState: 'won', score: st.score }));
-          if (onComplete) onComplete(st.score + Math.floor(st.fuel * 2));
-        }
-
-        // Fuel out
-        if (st.fuel <= 0 && st.gameState !== 'lost') {
-          st.gameState = 'lost';
-          setDisplayState(d => ({ ...d, gameState: 'lost' }));
-        }
-
-        drawTrajectory(ctx, st.trajectory);
-        if (st.probe) drawProbe(ctx, st.probe, t);
-      }
-
-      t += 0.016;
-      animRef.current = requestAnimationFrame(loop);
+  // ── Initialize game state ─────────────────────────────────────────────────
+  const initState = useCallback(() => {
+    const gapSize = WALL_GAP_START;
+    return {
+      probeY:    CANVAS_H / 2,
+      probeVY:   0,
+      walls:     [makeWall(CANVAS_W + 60, gapSize)], // start with one wall off-screen
+      passes:    0,
+      gapSize,
+      score:     0,
+      ticks:     0,
+      alive:     true,
+      stars:     makeStars(80),
     };
-
-    animRef.current = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(animRef.current);
   }, []);
 
-  const launch = () => {
-    const st = stateRef.current;
-    if (st.fuel <= 0 || st.gameState === 'won' || st.gameState === 'lost') return;
-    const angleRad = (aimAngle * Math.PI) / 180;
-    const speed = power * 0.08;
-    st.probe = { x: 400, y: 540, vx: Math.cos(angleRad) * speed, vy: Math.sin(angleRad) * speed };
-    st.gameState = 'flying';
-    st.trajectory = [];
-    st.fuel = Math.max(0, st.fuel - 10);
-    stateRef.current.aimAngle = aimAngle;
-    stateRef.current.power = power;
-    setDisplayState(d => ({ ...d, fuel: st.fuel, gameState: 'flying' }));
-  };
+  // ── Helpers ───────────────────────────────────────────────────────────────
+  function makeWall(x, gapSize) {
+    const gapTop = 30 + Math.random() * (CANVAS_H - gapSize - 60);
+    return { x, gapTop, gapBottom: gapTop + gapSize, passed: false };
+  }
 
-  const recall = () => {
-    const st = stateRef.current;
-    st.probe = null;
-    st.gameState = 'aiming';
-    setDisplayState(d => ({ ...d, gameState: 'aiming' }));
-  };
+  function makeStars(n) {
+    return Array.from({ length: n }, () => ({
+      x:  Math.random() * CANVAS_W,
+      y:  Math.random() * CANVAS_H,
+      r:  Math.random() * 1.5 + 0.3,
+      a:  Math.random() * 0.6 + 0.2,
+      sp: Math.random() * 0.4 + 0.1, // parallax speed
+    }));
+  }
 
-  const fuelColor = displayState.fuel > 50 ? '#00FF88' : displayState.fuel > 25 ? '#FFD700' : '#FF4444';
+  // ── Game loop ─────────────────────────────────────────────────────────────
+  const gameLoop = useCallback(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const gs  = gameStateRef.current;
+    if (!gs || !gs.alive) return;
 
+    gs.ticks++;
+
+    // ── Physics ──────────────────────────────────────────────────────────
+    gs.probeVY += GRAVITY;
+    gs.probeY  += gs.probeVY;
+
+    // ── Move stars (parallax) ─────────────────────────────────────────────
+    gs.stars.forEach(s => {
+      s.x -= s.sp;
+      if (s.x < 0) s.x = CANVAS_W;
+    });
+
+    // ── Move walls ────────────────────────────────────────────────────────
+    gs.walls.forEach(w => { w.x -= WALL_SPEED; });
+
+    // Spawn new wall when last one is far enough in
+    const last = gs.walls[gs.walls.length - 1];
+    if (last.x < CANVAS_W - 180) {
+      gs.walls.push(makeWall(CANVAS_W + 40, gs.gapSize));
+    }
+
+    // Remove walls that left screen
+    gs.walls = gs.walls.filter(w => w.x + WALL_W > -10);
+
+    // ── Collision & pass detection ────────────────────────────────────────
+    const probeTop    = gs.probeY - PROBE_R;
+    const probeBottom = gs.probeY + PROBE_R;
+
+    // Top/bottom boundary
+    if (probeTop <= 0 || probeBottom >= CANVAS_H) {
+      endGame(gs, false);
+      return;
+    }
+
+    for (const w of gs.walls) {
+      const probeRight = PROBE_X + PROBE_R;
+      const probeLeft  = PROBE_X - PROBE_R;
+
+      // Overlapping horizontally?
+      if (probeRight > w.x && probeLeft < w.x + WALL_W) {
+        // Hit top block or bottom block?
+        if (probeTop < w.gapTop || probeBottom > w.gapBottom) {
+          endGame(gs, false);
+          return;
+        }
+      }
+
+      // Passed through gap
+      if (!w.passed && w.x + WALL_W < PROBE_X - PROBE_R) {
+        w.passed    = true;
+        gs.passes++;
+        gs.score   += 10;
+        gs.gapSize  = Math.max(WALL_GAP_MIN, gs.gapSize - GAP_SHRINK);
+
+        if (gs.passes >= WIN_PASSES) {
+          endGame(gs, true);
+          return;
+        }
+      }
+    }
+
+    // ── Draw ─────────────────────────────────────────────────────────────
+    drawFrame(ctx, gs);
+
+    rafRef.current = requestAnimationFrame(gameLoop);
+  }, []); // eslint-disable-line
+
+  function endGame(gs, didWin) {
+    gs.alive = false;
+    cancelAnimationFrame(rafRef.current);
+    setFinalScore(gs.score);
+    if (didWin) {
+      setScreen('won');
+    } else {
+      setScreen('gameover');
+    }
+  }
+
+  // ── Draw everything ───────────────────────────────────────────────────────
+  function drawFrame(ctx, gs) {
+    // Background
+    const bg = ctx.createLinearGradient(0, 0, 0, CANVAS_H);
+    bg.addColorStop(0,   '#010a18');
+    bg.addColorStop(1,   '#020d22');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+
+    // Stars
+    gs.stars.forEach(s => {
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(200,220,255,${s.a})`;
+      ctx.fill();
+    });
+
+    // Walls
+    gs.walls.forEach(w => {
+      // Top block
+      drawWallBlock(ctx, w.x, 0, WALL_W, w.gapTop);
+      // Bottom block
+      drawWallBlock(ctx, w.x, w.gapBottom, WALL_W, CANVAS_H - w.gapBottom);
+      // Gap edge glow
+      ctx.strokeStyle = '#00e5ff';
+      ctx.lineWidth   = 2;
+      ctx.shadowColor = '#00e5ff';
+      ctx.shadowBlur  = 8;
+      ctx.beginPath();
+      ctx.moveTo(w.x,         w.gapTop);
+      ctx.lineTo(w.x + WALL_W, w.gapTop);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(w.x,          w.gapBottom);
+      ctx.lineTo(w.x + WALL_W, w.gapBottom);
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+    });
+
+    // Probe (glowing rocket triangle)
+    drawProbe(ctx, PROBE_X, gs.probeY, gs.probeVY);
+
+    // HUD
+    ctx.shadowBlur  = 0;
+    ctx.fillStyle   = 'rgba(0,229,255,0.9)';
+    ctx.font        = 'bold 14px monospace';
+    ctx.textAlign   = 'left';
+    ctx.fillText(`SCORE: ${gs.score}`, 12, 22);
+    ctx.fillText(`PASES: ${gs.passes}/${WIN_PASSES}`, 12, 40);
+
+    // Mini gap indicator bar (right side)
+    const barH   = 60;
+    const barX   = CANVAS_W - 18;
+    const barY   = 10;
+    ctx.fillStyle = '#0a2040';
+    ctx.fillRect(barX, barY, 8, barH);
+    const fillH  = (barH * gs.gapSize) / WALL_GAP_START;
+    ctx.fillStyle = '#00e5ff';
+    ctx.fillRect(barX, barY + barH - fillH, 8, fillH);
+    ctx.fillStyle = 'rgba(200,220,255,0.5)';
+    ctx.font      = '8px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('GAP', barX + 4, barY + barH + 12);
+  }
+
+  function drawWallBlock(ctx, x, y, w, h) {
+    if (h <= 0) return;
+    // Main fill
+    const grad = ctx.createLinearGradient(x, y, x + w, y);
+    grad.addColorStop(0,   '#071e38');
+    grad.addColorStop(0.5, '#0a2a4a');
+    grad.addColorStop(1,   '#071e38');
+    ctx.fillStyle   = grad;
+    ctx.fillRect(x, y, w, h);
+    // Edge lines
+    ctx.strokeStyle = '#0e3a60';
+    ctx.lineWidth   = 1;
+    ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+    // Circuit dots pattern
+    ctx.fillStyle = 'rgba(0,229,255,0.06)';
+    for (let dy = 10; dy < h; dy += 14) {
+      for (let dx = 5; dx < w; dx += 10) {
+        ctx.fillRect(x + dx, y + dy, 2, 2);
+      }
+    }
+  }
+
+  function drawProbe(ctx, x, y, vy) {
+    const tilt = Math.max(-0.5, Math.min(0.5, vy * 0.04));
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(tilt);
+
+    // Engine glow
+    ctx.shadowColor = '#00e5ff';
+    ctx.shadowBlur  = 18;
+
+    // Main body (triangle rocket)
+    ctx.beginPath();
+    ctx.moveTo(14, 0);          // nose
+    ctx.lineTo(-10, -9);        // left wing
+    ctx.lineTo(-6,  0);         // inner left
+    ctx.lineTo(-10,  9);        // right wing
+    ctx.closePath();
+    const bodyGrad = ctx.createLinearGradient(-10, 0, 14, 0);
+    bodyGrad.addColorStop(0,   '#1a5a8a');
+    bodyGrad.addColorStop(0.5, '#3a9adf');
+    bodyGrad.addColorStop(1,   '#00e5ff');
+    ctx.fillStyle   = bodyGrad;
+    ctx.fill();
+
+    // Thruster flame (behind probe)
+    ctx.shadowColor = '#ff9900';
+    ctx.shadowBlur  = 12;
+    ctx.beginPath();
+    ctx.moveTo(-6,  -5);
+    ctx.lineTo(-6 - (8 + Math.random() * 6), 0);
+    ctx.lineTo(-6,   5);
+    ctx.closePath();
+    const flameGrad = ctx.createLinearGradient(-6, 0, -18, 0);
+    flameGrad.addColorStop(0,   '#ff6600');
+    flameGrad.addColorStop(0.5, '#ffaa00');
+    flameGrad.addColorStop(1,   'rgba(255,200,0,0)');
+    ctx.fillStyle   = flameGrad;
+    ctx.fill();
+
+    // Cockpit window
+    ctx.shadowBlur  = 6;
+    ctx.shadowColor = '#00ffff';
+    ctx.beginPath();
+    ctx.arc(4, 0, 4, 0, Math.PI * 2);
+    ctx.fillStyle   = '#001a2a';
+    ctx.fill();
+    ctx.strokeStyle = '#00e5ff';
+    ctx.lineWidth   = 1;
+    ctx.stroke();
+
+    ctx.restore();
+  }
+
+  // ── Start / restart game ──────────────────────────────────────────────────
+  const startGame = useCallback(() => {
+    cancelAnimationFrame(rafRef.current);
+    gameStateRef.current = initState();
+    setScreen('playing');
+
+    // Draw first frame immediately, then kick off loop
+    requestAnimationFrame(() => {
+      rafRef.current = requestAnimationFrame(gameLoop);
+    });
+  }, [initState, gameLoop]);
+
+  // ── Input: boost on click/tap ─────────────────────────────────────────────
+  const handleBoost = useCallback(() => {
+    const gs = gameStateRef.current;
+    if (!gs || !gs.alive) return;
+    gs.probeVY = BOOST_VY;
+  }, []);
+
+  // Draw first static frame on mount so canvas isn't blank before start
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas || screen !== 'start') return;
+    const ctx = canvas.getContext('2d');
+    // Draw a simple space background preview
+    const bg = ctx.createLinearGradient(0, 0, 0, CANVAS_H);
+    bg.addColorStop(0, '#010a18');
+    bg.addColorStop(1, '#020d22');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+    makeStars(60).forEach(s => {
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(200,220,255,${s.a})`;
+      ctx.fill();
+    });
+    // Probe preview
+    drawProbe(ctx, PROBE_X, CANVAS_H / 2, 0);
+  }, [screen]); // eslint-disable-line
+
+  // Cleanup RAF on unmount
+  useEffect(() => () => cancelAnimationFrame(rafRef.current), []);
+
+  // ── Render ────────────────────────────────────────────────────────────────
   return (
-    <div style={{ background: 'rgba(0,0,0,0.85)', borderRadius: '20px', border: '1px solid rgba(0,228,255,0.25)', overflow: 'hidden' }}>
-      {/* HUD */}
-      <div style={{ padding: '0.8rem 1.2rem', display: 'flex', alignItems: 'center', gap: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.08)', flexWrap: 'wrap' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <span style={{ fontSize: '1.2rem' }}>🛸</span>
-          <span style={{ color: '#00E4FF', fontWeight: 'bold' }}>Asistencia Gravitacional</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'rgba(0,0,0,0.4)', padding: '4px 12px', borderRadius: '20px', border: `1px solid ${fuelColor}44` }}>
-          <Zap size={14} color={fuelColor} />
-          <span style={{ color: fuelColor, fontFamily: 'monospace', fontSize: '0.9rem' }}>{Math.round(displayState.fuel)}% FUEL</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'rgba(0,0,0,0.4)', padding: '4px 12px', borderRadius: '20px', border: '1px solid rgba(255,215,0,0.3)' }}>
-          <Star size={14} color="#FFD700" />
-          <span style={{ color: '#FFD700', fontFamily: 'monospace', fontSize: '0.9rem' }}>{displayState.score} pts</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'rgba(0,0,0,0.4)', padding: '4px 12px', borderRadius: '20px', border: '1px solid rgba(255,80,80,0.3)' }}>
-          <AlertTriangle size={14} color="#FF5050" />
-          <span style={{ color: '#FF5050', fontFamily: 'monospace', fontSize: '0.9rem' }}>{displayState.collisions} colisiones</span>
-        </div>
-        <div style={{ flex: 1, textAlign: 'right', color: '#888', fontSize: '0.8rem' }}>
-          Paquetes: {displayState.packets?.filter(p => p.collected).length || 0} / {DATA_PACKETS.length}
-        </div>
+    <div style={styles.wrapper}>
+      {/* Canvas (always mounted so refs work) */}
+      <div style={styles.canvasWrapper}>
+        <canvas
+          ref={canvasRef}
+          width={CANVAS_W}
+          height={CANVAS_H}
+          style={styles.canvas}
+          onClick={screen === 'playing' ? handleBoost : undefined}
+          onTouchStart={screen === 'playing' ? (e) => { e.preventDefault(); handleBoost(); } : undefined}
+        />
+
+        {/* ── Start overlay ── */}
+        {screen === 'start' && (
+          <div style={styles.overlay}>
+            <p style={styles.overlayTitle}>🚀 SURFEA LA GRAVEDAD</p>
+            <p style={styles.overlayText}>
+              Toca / haz clic para impulsar la sonda.<br />
+              ¡Pasa por las 10 anillas para ganar!
+            </p>
+            <div style={styles.tapHint}>TAP PARA VOLAR</div>
+            <button style={styles.bigBtn} onClick={startGame}>
+              INICIAR VUELO
+            </button>
+          </div>
+        )}
+
+        {/* ── Game over overlay ── */}
+        {screen === 'gameover' && (
+          <div style={styles.overlay}>
+            <p style={{ ...styles.overlayTitle, color: '#ff4d4d' }}>💥 ¡IMPACTO DETECTADO!</p>
+            <p style={styles.overlayText}>
+              Puntuación: <strong style={{ color: '#00e5ff' }}>{finalScore}</strong>
+            </p>
+            <button style={{ ...styles.bigBtn, background: '#ff4d4d' }} onClick={startGame}>
+              REINTENTAR
+            </button>
+          </div>
+        )}
+
+        {/* ── Win overlay ── */}
+        {screen === 'won' && (
+          <div style={styles.overlay}>
+            <p style={{ ...styles.overlayTitle, color: '#ffd700' }}>🏆 ¡MISIÓN COMPLETA!</p>
+            <p style={styles.overlayText}>
+              ¡{WIN_PASSES} anillas superadas!<br />
+              Puntuación: <strong style={{ color: '#00e5ff' }}>{finalScore}</strong>
+            </p>
+            <button
+              style={{ ...styles.bigBtn, background: '#ffd700', color: '#000d1a' }}
+              onClick={() => onComplete && onComplete(finalScore)}
+            >
+              CONTINUAR MISIÓN
+            </button>
+          </div>
+        )}
       </div>
 
-      {message && (
-        <div style={{ background: 'rgba(0,0,0,0.8)', color: 'white', padding: '6px 16px', textAlign: 'center', fontSize: '0.9rem', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-          {message}
-        </div>
+      {/* Controls hint (below canvas) */}
+      {screen === 'playing' && (
+        <p style={styles.hint}>TAP / CLICK → IMPULSARSE</p>
       )}
-
-      <div style={{ position: 'relative' }}>
-        <canvas ref={canvasRef} width={W} height={H} style={{ display: 'block', width: '100%' }} />
-
-        {/* Controls overlay */}
-        {displayState.gameState === 'aiming' && (
-          <div style={{ position: 'absolute', bottom: '16px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '1rem', alignItems: 'center', background: 'rgba(0,0,0,0.8)', padding: '0.8rem 1.5rem', borderRadius: '12px', border: '1px solid rgba(0,228,255,0.3)', backdropFilter: 'blur(8px)' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <label style={{ color: '#00E4FF', fontSize: '0.75rem', fontFamily: 'monospace' }}>ÁNGULO: {aimAngle}°</label>
-              <input type="range" min="-180" max="0" value={aimAngle} onChange={e => { setAimAngle(+e.target.value); stateRef.current.aimAngle = +e.target.value; }}
-                style={{ width: '120px', accentColor: '#00E4FF' }} />
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <label style={{ color: '#FFD700', fontSize: '0.75rem', fontFamily: 'monospace' }}>POTENCIA: {power}%</label>
-              <input type="range" min="20" max="100" value={power} onChange={e => { setPower(+e.target.value); stateRef.current.power = +e.target.value; }}
-                style={{ width: '120px', accentColor: '#FFD700' }} />
-            </div>
-            <button onClick={launch} style={{ background: 'linear-gradient(135deg, #00E4FF, #0066AA)', border: 'none', color: 'white', padding: '0.7rem 1.5rem', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.95rem', boxShadow: '0 0 15px rgba(0,228,255,0.4)' }}>
-              🚀 LANZAR
-            </button>
-          </div>
-        )}
-
-        {displayState.gameState === 'flying' && (
-          <div style={{ position: 'absolute', bottom: '16px', left: '50%', transform: 'translateX(-50%)', background: 'rgba(0,0,0,0.8)', padding: '0.6rem 1.5rem', borderRadius: '12px', border: '1px solid rgba(255,215,0,0.3)' }}>
-            <button onClick={recall} style={{ background: 'rgba(255,80,0,0.3)', border: '1px solid #FF5000', color: '#FF8844', padding: '6px 16px', borderRadius: '8px', cursor: 'pointer' }}>
-              ⛔ Abortar Misión
-            </button>
-          </div>
-        )}
-
-        {/* End screens */}
-        <AnimatePresence>
-          {(displayState.gameState === 'won' || displayState.gameState === 'lost') && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-              style={{ position: 'absolute', inset: 0, background: displayState.gameState === 'won' ? 'rgba(0,80,50,0.85)' : 'rgba(80,0,0,0.85)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', backdropFilter: 'blur(6px)' }}>
-              <div style={{ fontSize: '3.5rem', marginBottom: '0.8rem' }}>{displayState.gameState === 'won' ? '🛸' : '💀'}</div>
-              <h2 style={{ color: displayState.gameState === 'won' ? '#00FF88' : '#FF4444', margin: '0 0 0.5rem' }}>
-                {displayState.gameState === 'won' ? '¡Slingshot Maestro!' : 'Sin Combustible'}
-              </h2>
-              <p style={{ color: '#ccc', marginBottom: '1.5rem', maxWidth: '400px' }}>
-                {displayState.gameState === 'won'
-                  ? `Recolectaste todos los paquetes de datos con ${displayState.score} puntos.`
-                  : `Recolectaste ${displayState.packets?.filter(p => p.collected).length || 0} de ${DATA_PACKETS.length} paquetes.`}
-              </p>
-              <button onClick={() => window.location.reload()} style={{ background: displayState.gameState === 'won' ? '#00FF88' : '#FF4444', color: displayState.gameState === 'won' ? 'black' : 'white', border: 'none', padding: '0.8rem 2rem', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold' }}>
-                Nueva Misión
-              </button>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
     </div>
   );
 }
+
+// ─── Styles ──────────────────────────────────────────────────────────────────
+const styles = {
+  wrapper: {
+    display:         'flex',
+    flexDirection:   'column',
+    alignItems:      'center',
+    width:           '100%',
+    padding:         '16px',
+    fontFamily:      "'Courier New', monospace",
+    color:           '#c0d8ff',
+    background:      'linear-gradient(160deg, #020d1a 0%, #041528 100%)',
+    borderRadius:    '16px',
+    userSelect:      'none',
+  },
+  canvasWrapper: {
+    position:        'relative',
+    display:         'inline-block',
+    borderRadius:    '12px',
+    overflow:        'hidden',
+    border:          '1.5px solid #0a2a4a',
+    boxShadow:       '0 0 24px rgba(0,100,200,0.3)',
+    maxWidth:        '100%',
+  },
+  canvas: {
+    display:         'block',
+    maxWidth:        '100%',
+    cursor:          'pointer',
+    touchAction:     'none',
+  },
+  overlay: {
+    position:        'absolute',
+    inset:           0,
+    background:      'rgba(1,10,24,0.88)',
+    backdropFilter:  'blur(6px)',
+    display:         'flex',
+    flexDirection:   'column',
+    alignItems:      'center',
+    justifyContent:  'center',
+    gap:             '14px',
+    padding:         '24px',
+  },
+  overlayTitle: {
+    margin:          0,
+    fontSize:        '22px',
+    fontWeight:      'bold',
+    color:           '#00e5ff',
+    textAlign:       'center',
+    letterSpacing:   '2px',
+  },
+  overlayText: {
+    margin:          0,
+    fontSize:        '13px',
+    color:           '#7ab8ff',
+    textAlign:       'center',
+    lineHeight:      1.7,
+  },
+  tapHint: {
+    fontSize:        '28px',
+    fontWeight:      'bold',
+    color:           '#00e5ff',
+    letterSpacing:   '4px',
+    textShadow:      '0 0 20px #00e5ff',
+    animation:       'none',
+  },
+  bigBtn: {
+    padding:         '11px 28px',
+    fontSize:        '13px',
+    fontWeight:      'bold',
+    letterSpacing:   '2px',
+    background:      '#00e5ff',
+    color:           '#000d1a',
+    border:          'none',
+    borderRadius:    '8px',
+    cursor:          'pointer',
+  },
+  hint: {
+    margin:          '10px 0 0',
+    fontSize:        '10px',
+    letterSpacing:   '2px',
+    color:           '#2a5070',
+    textTransform:   'uppercase',
+  },
+};
