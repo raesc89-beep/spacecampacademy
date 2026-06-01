@@ -223,6 +223,36 @@ const DASHBOARD_MISSIONS = [
     badgeColor: "#00FF00",
     badgeText: "Desclasificación",
     borderColor: "rgba(0, 255, 0, 0.4)"
+  },
+  {
+    id: "galileo",
+    title: "Galileo Galilei",
+    subtitle: "El padre de la astronomía moderna: telescopio, lunas de Júpiter y la física del movimiento.",
+    link: "/hub/galileo",
+    bgSrc: "/assets/galileo/galileo_cover.png",
+    badgeColor: "#FFD700",
+    badgeText: "Revolución Científica",
+    borderColor: "rgba(255, 215, 0, 0.4)"
+  },
+  {
+    id: "faraday",
+    title: "Michael Faraday",
+    subtitle: "El genio autodidacta que domesticó la electricidad y cambió el mundo para siempre.",
+    link: "/hub/faraday",
+    bgSrc: "/assets/faraday/faraday_cover.png",
+    badgeColor: "#00E4FF",
+    badgeText: "Física Eléctrica",
+    borderColor: "rgba(0, 228, 255, 0.4)"
+  },
+  {
+    id: "davinci",
+    title: "Leonardo Da Vinci",
+    subtitle: "El genio universal del Renacimiento: arte, anatomía, ingeniería y vuelo en un solo hombre.",
+    link: "/hub/davinci",
+    bgSrc: "/assets/davinci/davinci_cover.png",
+    badgeColor: "#D4A843",
+    badgeText: "Revolución Científica",
+    borderColor: "rgba(212, 168, 67, 0.4)"
   }
 ];
 
