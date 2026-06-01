@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AstroD() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false);
   const [isMaximized, setIsMaximized] = useState(false);
   const [localInput, setLocalInput] = useState('');
   const { user, userData } = useAuth();
@@ -99,9 +100,45 @@ export default function AstroD() {
         )}
       </AnimatePresence>
 
+      {/* ── Minimized pill ── */}
+      <AnimatePresence>
+        {isOpen && isMinimized && (
+          <motion.div
+            key="pill"
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: 20 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+            onClick={() => setIsMinimized(false)}
+            style={{
+              display: 'flex', alignItems: 'center', gap: '10px',
+              background: 'rgba(10,15,30,0.92)',
+              backdropFilter: 'blur(16px)',
+              border: '1px solid rgba(0,228,255,0.45)',
+              borderRadius: '40px',
+              padding: '8px 16px 8px 8px',
+              cursor: 'pointer',
+              boxShadow: '0 4px 20px rgba(0,228,255,0.25)',
+              userSelect: 'none',
+            }}
+          >
+            <img src="/astro-d-final.png" alt="Astro-D" style={{ width: 40, height: 40, objectFit: 'contain', filter: 'drop-shadow(0 0 6px rgba(0,228,255,0.7))' }} />
+            <div>
+              <div style={{ color: 'white', fontSize: 13, fontWeight: 'bold', lineHeight: 1 }}>Astro-D</div>
+              <div style={{ color: '#00E4FF', fontSize: 10, letterSpacing: 1 }}>TAP PARA ABRIR</div>
+            </div>
+            <button
+              onClick={(e) => { e.stopPropagation(); setIsOpen(false); setIsMinimized(false); }}
+              style={{ background: 'transparent', border: 'none', color: 'rgba(255,255,255,0.4)', cursor: 'pointer', fontSize: 16, padding: '0 0 0 6px', lineHeight: 1 }}
+              title="Cerrar Astro-D"
+            >×</button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Ventana de Chat */}
       <AnimatePresence>
-        {isOpen && (
+        {isOpen && !isMinimized && (
           <motion.div 
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -160,14 +197,25 @@ export default function AstroD() {
                 >
                   {isMaximized ? <Minimize2 size={20} /> : <Maximize2 size={20} />}
                 </button>
+                {/* Minimize to pill */}
                 <button 
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => setIsMinimized(true)}
                   style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', transition: 'color 0.2s', padding: '0.2rem' }}
-                  onMouseOver={(e) => e.currentTarget.style.color = 'white'}
+                  onMouseOver={(e) => e.currentTarget.style.color = '#ffd700'}
                   onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
-                  title="Minimizar chat"
+                  title="Minimizar"
                 >
                   <Minus size={24} />
+                </button>
+                {/* Close fully */}
+                <button 
+                  onClick={() => { setIsOpen(false); setIsMinimized(false); }}
+                  style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', transition: 'color 0.2s', padding: '0.2rem' }}
+                  onMouseOver={(e) => e.currentTarget.style.color = '#ff4d4d'}
+                  onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+                  title="Cerrar"
+                >
+                  <X size={20} />
                 </button>
               </div>
             </div>

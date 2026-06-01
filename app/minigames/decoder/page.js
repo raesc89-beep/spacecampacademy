@@ -5,7 +5,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Radio, AlertTriangle, CheckCircle, Star, Activity, Waves, Zap, Radar } from 'lucide-react';
+import { Radio, AlertTriangle, CheckCircle, Star, Activity, Waves, Zap, Radar, ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
@@ -149,6 +149,13 @@ export default function DecoderMinigame() {
       
       <main className="layout-container" style={{ flex: 1, padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
         
+        {/* Botón Cerrar Máquina */}
+        <div style={{ width: '100%', maxWidth: '800px', display: 'flex', justifyContent: 'flex-start' }}>
+          <Link href="/hub/arcade" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'rgba(0,228,255,0.8)', textDecoration: 'none', background: 'rgba(0,228,255,0.08)', padding: '0.6rem 1.2rem', borderRadius: '20px', border: '1px solid rgba(0,228,255,0.3)', fontSize: '0.9rem', fontWeight: 'bold', transition: 'all 0.2s' }}>
+            <ChevronLeft size={18} /> ← CERRAR MÁQUINA
+          </Link>
+        </div>
+
         <div style={{ textAlign: 'center', maxWidth: '800px' }}>
           <h1 style={{ fontSize: '2.5rem', color: 'var(--starlight)', margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
             <Radio size={32} /> Interceptación Estelar

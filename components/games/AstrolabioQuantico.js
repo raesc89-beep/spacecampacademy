@@ -13,11 +13,21 @@ const STARS = [
   { id: 5, label: 'ζ', color: '#cc66ff', glow: '#9900ff', dark: '#330050', neon: '#dd99ff' },
 ];
 
-const WIN_ROUNDS = 3;       // must complete full-6 sequence this many times to win
-const MAX_SEQ   = 6;        // maximum sequence length
-const GAME_TIME = 60;       // seconds
-const FLASH_MS  = 600;      // how long each star is lit during playback
-const PAUSE_MS  = 250;      // gap between flashes
+const WIN_ROUNDS        = 5;    // must complete the full max sequence this many times to win
+const MAX_SEQ_LEN       = 12;   // maximum sequence length
+const GAME_TIME         = 60;   // seconds
+const PAUSE_MS          = 250;  // gap between flashes
+const DISPLAY_MS_START  = 650;  // initial flash duration
+const DISPLAY_MS_MIN    = 180;  // minimum flash duration
+
+// Sequence length for a given completed-round count
+// round 0 (first sequence) = 6 stars; round >=3 grows by 1 per round beyond base
+function seqLenForRound(completedRounds) {
+  // Before any round is completed, start at 6
+  const base = 6;
+  const extra = completedRounds >= 3 ? completedRounds - 2 : 0;
+  return Math.min(base + extra, MAX_SEQ_LEN);
+}
 
 // ─── Hexagon path (flat-top, 60×60) ─────────────────────────────────────────
 function hexPoints(cx, cy, r) {
@@ -101,18 +111,26 @@ function StarButton({ star, isLit, isActive, onClick, shake }) {
 // ─── Main component ──────────────────────────────────────────────────────────
 export default function AstrolabioQuantico({ onComplete }) {
   // game phase: 'idle' | 'playing' | 'input' | 'wrong' | 'won' | 'lost'
-  const [phase,        setPhase]        = useState('idle');
-  const [sequence,     setSequence]     = useState([]);   // the current sequence to memorize
-  const [inputSeq,     setInputSeq]     = useState([]);   // player's inputs this round
-  const [litStar,      setLitStar]      = useState(null); // which star is currently highlighted
-  const [score,        setScore]        = useState(0);    // max sequence length reached
-  const [timeLeft,     setTimeLeft]     = useState(GAME_TIME);
-  const [winStreak,    setWinStreak]    = useState(0);    // how many full-6 completions
-  const [shakeStar,    setShakeStar]    = useState(null);
-  const [statusMsg,    setStatusMsg]    = useState('');
+  const [phase,          setPhase]          = useState('idle');
+  const [sequence,       setSequence]       = useState([]);   // the current sequence to memorize
+  const [inputSeq,       setInputSeq]       = useState([]);   // player's inputs this round
+  const [litStar,        setLitStar]        = useState(null); // which star is currently highlighted
+  const [score,          setScore]          = useState(0);    // max sequence length reached
+  const [timeLeft,       setTimeLeft]       = useState(GAME_TIME);
+  const [winStreak,      setWinStreak]      = useState(0);    // how many full-sequence completions
+  const [shakeStar,      setShakeStar]      = useState(null);
+  const [statusMsg,      setStatusMsg]      = useState('');
+  const [displayMs,      setDisplayMs]      = useState(DISPLAY_MS_START); // flash duration, decreases each round
 
   const timerRef    = useRef(null);
   const playbackRef = useRef(null);
+  // Keep a ref so playSequence can always read the latest displayMs without stale closure
+  const displayMsRef = useRef(DISPLAY_MS_START);
+
+  // Keep displayMsRef in sync
+  useEffect(() => {
+    displayMsRef.current = displayMs;
+  }, [displayMs]);
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const clearTimers = useCallback(() => {
@@ -131,11 +149,12 @@ export default function AstrolabioQuantico({ onComplete }) {
       if (i < seq.length) {
         const starId = seq[i];
         setLitStar(starId);
+        const flashDuration = displayMsRef.current;
         playbackRef.current = setTimeout(() => {
           setLitStar(null);
           i++;
           playbackRef.current = setTimeout(step, PAUSE_MS);
-        }, FLASH_MS);
+        }, flashDuration);
       } else {
         // done playing — let player input
         setPhase('input');
@@ -148,7 +167,11 @@ export default function AstrolabioQuantico({ onComplete }) {
   // Start a brand-new game
   const startGame = useCallback(() => {
     clearTimers();
-    const firstSeq = [Math.floor(Math.random() * 6)];
+    // Reset displayMs to start value
+    setDisplayMs(DISPLAY_MS_START);
+    displayMsRef.current = DISPLAY_MS_START;
+
+    const firstSeq = Array.from({ length: 6 }, () => Math.floor(Math.random() * 6));
     setSequence(firstSeq);
     setScore(0);
     setWinStreak(0);
@@ -200,26 +223,37 @@ export default function AstrolabioQuantico({ onComplete }) {
     setInputSeq(newInput);
 
     if (newInput.length === sequence.length) {
-      // Completed this sequence
-      if (sequence.length === MAX_SEQ) {
-        const newStreak = winStreak + 1;
+      // Completed this sequence — check if it's the target length for this round
+      const newStreak = winStreak + 1;
+      const targetLen = seqLenForRound(newStreak); // length target for next round
+
+      // Decrement displayMs by 40ms, clamped to DISPLAY_MS_MIN
+      const newDisplayMs = Math.max(displayMsRef.current - 40, DISPLAY_MS_MIN);
+      setDisplayMs(newDisplayMs);
+      displayMsRef.current = newDisplayMs;
+
+      if (newStreak >= WIN_ROUNDS) {
+        // WIN!
         setWinStreak(newStreak);
-        if (newStreak >= WIN_ROUNDS) {
-          // WIN!
-          clearTimers();
-          setPhase('won');
-          setStatusMsg('¡Sistema Online! ¡Misión Completa!');
-          return;
-        }
-        // reset to length-1 sequence again
-        setStatusMsg('¡Perfecto! Iniciando ciclo…');
-        const freshSeq = [Math.floor(Math.random() * 6)];
-        setSequence(freshSeq);
-        setTimeout(() => playSequence(freshSeq), 800);
-      } else {
-        // Go to next (longer) sequence
+        clearTimers();
+        setPhase('won');
+        setStatusMsg('¡Sistema Online! ¡Misión Completa!');
+        return;
+      }
+
+      setWinStreak(newStreak);
+
+      // If sequence hasn't yet reached the target length for this streak level, grow it
+      if (sequence.length < targetLen) {
         setStatusMsg('¡Correcto! Añadiendo señal…');
         nextRound(sequence);
+      } else {
+        // At or beyond target — start a new sequence of the target length
+        setStatusMsg('¡Perfecto! Iniciando ciclo…');
+        const freshSeq = Array.from({ length: targetLen }, () => Math.floor(Math.random() * 6));
+        setSequence(freshSeq);
+        setScore(s => Math.max(s, freshSeq.length));
+        setTimeout(() => playSequence(freshSeq), 800);
       }
     }
   }, [phase, inputSeq, sequence, winStreak, clearTimers, playSequence, nextRound]);
@@ -229,6 +263,11 @@ export default function AstrolabioQuantico({ onComplete }) {
 
   // ── Timer color ─────────────────────────────────────────────────────────────
   const timerColor = timeLeft > 20 ? '#00e5ff' : timeLeft > 10 ? '#ffd700' : '#ff4d4d';
+
+  // ── Dynamic subtitle ─────────────────────────────────────────────────────────
+  const subtitleText = phase === 'idle'
+    ? '✨ MEMORIZA Y REPITE LA SECUENCIA ✨'
+    : `${'★'.repeat(winStreak || 0)} VEL: ${displayMs}ms`;
 
   // ── Layout ──────────────────────────────────────────────────────────────────
   return (
@@ -267,9 +306,18 @@ export default function AstrolabioQuantico({ onComplete }) {
 
       {/* ── Instruction header ── */}
       <div style={styles.header}>
-        <p style={styles.subtitle}>
-          ✨ Memoriza la secuencia y repítela ✨
-        </p>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={subtitleText}
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            style={styles.subtitle}
+          >
+            {subtitleText}
+          </motion.p>
+        </AnimatePresence>
         <AnimatePresence mode="wait">
           <motion.p
             key={statusMsg}
@@ -288,10 +336,25 @@ export default function AstrolabioQuantico({ onComplete }) {
         </AnimatePresence>
       </div>
 
+      {/* ── NIVEL indicator ── */}
+      {phase !== 'idle' && phase !== 'won' && phase !== 'lost' && (
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={winStreak}
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            style={styles.nivelBadge}
+          >
+            NIVEL {winStreak + 1} / {WIN_ROUNDS}
+          </motion.div>
+        </AnimatePresence>
+      )}
+
       {/* ── Round indicator ── */}
       {phase !== 'idle' && phase !== 'won' && phase !== 'lost' && (
         <div style={styles.roundRow}>
-          {Array.from({ length: MAX_SEQ }, (_, i) => (
+          {Array.from({ length: Math.min(sequence.length + 2, MAX_SEQ_LEN) }, (_, i) => (
             <div
               key={i}
               style={{
@@ -327,9 +390,7 @@ export default function AstrolabioQuantico({ onComplete }) {
         >
           <p style={styles.overlayTitle}>🌌 COSMOS PIANO</p>
           <p style={styles.overlayText}>
-            Las estrellas parpadearán en secuencia.<br />
-            ¡Memoriza y repite el patrón!<br />
-            Completa 3 rondas perfectas de 6 para ganar.
+            Memoriza y repite. La secuencia crece. ¡La velocidad aumenta!
           </p>
           <button style={styles.bigBtn} onClick={startGame}>
             INICIAR SISTEMA
@@ -499,15 +560,32 @@ const styles = {
     minHeight:       '22px',
     textShadow:      '0 0 10px currentColor',
   },
+  nivelBadge: {
+    zIndex:          1,
+    fontSize:        '11px',
+    fontWeight:      'bold',
+    letterSpacing:   '3px',
+    color:           '#00e5ff',
+    textShadow:      '0 0 12px #00e5ff88',
+    background:      'rgba(0,229,255,0.08)',
+    border:          '1px solid rgba(0,229,255,0.25)',
+    borderRadius:    '20px',
+    padding:         '4px 18px',
+    marginTop:       '2px',
+    textTransform:   'uppercase',
+  },
   roundRow: {
     display:         'flex',
-    gap:             '12px',
-    margin:          '10px 0 6px',
+    gap:             '8px',
+    margin:          '10px 0 4px',
     zIndex:          1,
+    flexWrap:        'wrap',
+    justifyContent:  'center',
+    maxWidth:        '320px',
   },
   roundDot: {
-    width:           '14px',
-    height:          '14px',
+    width:           '10px',
+    height:          '10px',
     borderRadius:    '50%',
     transition:      'background 0.3s, box-shadow 0.3s',
     border:          '1px solid rgba(0,150,255,0.3)',
