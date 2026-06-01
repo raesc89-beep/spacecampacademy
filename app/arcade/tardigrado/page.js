@@ -536,141 +536,140 @@ export default function TardigradeSurvivalGame() {
        });
     }, 1800);
 
-    // Clean dead entities and draw background ecosystem
-    engine.update = (function(originalUpdate) {
-      let time = 0;
-      return function(dt) {
-         if (this.ctx) {
-             const ctx = this.ctx;
-             const W = this.width, H = this.height;
-             time += dt * 0.016;
+    // === OVERRIDE render() (not update) so background draws BEFORE entities ===
+    // The engine.loop() calls update() THEN render(). render() does ctx.fillRect('#020308')
+    // which erases any background drawn in update(). So we override render() instead.
+    let bgTime = 0;
+    engine.render = (function(originalRender) {
+      return function() {
+         const ctx = this.ctx;
+         const W = this.width, H = this.height;
+         bgTime += 0.016; // ~60fps frame increment
 
-             // === DEEP OCEAN GRADIENT BASE ===
-             const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
-             bgGrad.addColorStop(0, '#001A10');   // dark surface
-             bgGrad.addColorStop(0.4, '#003020'); // mid-depth teal
-             bgGrad.addColorStop(1,  '#001A2A');  // abyss blue
-             ctx.fillStyle = bgGrad;
-             ctx.fillRect(0, 0, W, H);
+         // === DEEP OCEAN GRADIENT BASE ===
+         const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+         bgGrad.addColorStop(0, '#001A10');
+         bgGrad.addColorStop(0.4, '#003020');
+         bgGrad.addColorStop(1,  '#001A2A');
+         ctx.fillStyle = bgGrad;
+         ctx.fillRect(0, 0, W, H);
 
-             // === BIOLUMINESCENT LIGHT RAYS (surface light filtering down) ===
+         // === BIOLUMINESCENT LIGHT RAYS ===
+         ctx.save();
+         ctx.globalCompositeOperation = 'screen';
+         for (let r = 0; r < 6; r++) {
+             const rx = W * (0.1 + r * 0.15) + Math.sin(bgTime * 0.3 + r) * 25;
+             const rayGrad = ctx.createLinearGradient(rx, 0, rx + 30, H * 0.75);
+             rayGrad.addColorStop(0, `rgba(0, 200, 100, ${0.06 + Math.sin(bgTime + r) * 0.03})`);
+             rayGrad.addColorStop(1, 'rgba(0, 100, 50, 0)');
+             ctx.fillStyle = rayGrad;
+             ctx.beginPath();
+             ctx.moveTo(rx - 8, 0);
+             ctx.lineTo(rx + 35, H * 0.75);
+             ctx.lineTo(rx + 15, H * 0.75);
+             ctx.lineTo(rx - 25, 0);
+             ctx.closePath();
+             ctx.fill();
+         }
+         ctx.restore();
+
+         // === FLOATING ALGAE STRANDS ===
+         ctx.save();
+         for (let a = 0; a < 8; a++) {
+             const baseX = W * (a / 8) + 20;
+             const waveAmp = 18 + a * 4;
+             ctx.strokeStyle = `rgba(0, ${130 + a * 10}, ${50 + a * 8}, 0.6)`;
+             ctx.lineWidth = 2.5;
+             ctx.lineCap = 'round';
+             ctx.beginPath();
+             const segments = 12;
+             for (let s = 0; s <= segments; s++) {
+                 const sy = H - s * (H / segments);
+                 const sx = baseX + Math.sin(bgTime * 0.5 + s * 0.7 + a) * waveAmp;
+                 s === 0 ? ctx.moveTo(sx, sy) : ctx.lineTo(sx, sy);
+             }
+             ctx.stroke();
+         }
+         ctx.restore();
+
+         // === DIATOM MICROORGANISMS ===
+         for (let d = 0; d < 15; d++) {
+             const dx = ((d * 137.5 + bgTime * 8) % W);
+             const dy = ((d * 79.3 + bgTime * 4 + 50) % H);
+             const dr = 6 + (d % 4) * 4;
+             const dAlpha = 0.25 + Math.sin(bgTime * 1.5 + d) * 0.1;
+             const dColors = ['rgba(0,220,150', 'rgba(100,220,200', 'rgba(50,180,120'];
+             const dc = dColors[d % 3];
              ctx.save();
-             ctx.globalCompositeOperation = 'screen';
-             for (let r = 0; r < 6; r++) {
-                 const rx = W * (0.1 + r * 0.15) + Math.sin(time * 0.3 + r) * 25;
-                 const rayGrad = ctx.createLinearGradient(rx, 0, rx + 30, H * 0.75);
-                 rayGrad.addColorStop(0, `rgba(0, 200, 100, ${0.06 + Math.sin(time + r) * 0.03})`);
-                 rayGrad.addColorStop(1, 'rgba(0, 100, 50, 0)');
-                 ctx.fillStyle = rayGrad;
-                 ctx.beginPath();
-                 ctx.moveTo(rx - 8, 0);
-                 ctx.lineTo(rx + 35, H * 0.75);
-                 ctx.lineTo(rx + 15, H * 0.75);
-                 ctx.lineTo(rx - 25, 0);
-                 ctx.closePath();
-                 ctx.fill();
+             ctx.translate(dx, dy);
+             ctx.rotate(bgTime * 0.2 + d);
+             ctx.globalAlpha = dAlpha;
+             ctx.strokeStyle = `${dc},0.9)`;
+             ctx.lineWidth = 1.5;
+             ctx.beginPath();
+             for (let h = 0; h < 6; h++) {
+                 const angle = (h / 6) * Math.PI * 2;
+                 h === 0 ? ctx.moveTo(Math.cos(angle) * dr, Math.sin(angle) * dr)
+                         : ctx.lineTo(Math.cos(angle) * dr, Math.sin(angle) * dr);
              }
-             ctx.restore();
-
-             // === FLOATING ALGAE STRANDS ===
-             ctx.save();
-             ctx.globalCompositeOperation = 'source-over';
-             for (let a = 0; a < 8; a++) {
-                 const baseX = W * (a / 8) + 20;
-                 const waveAmp = 18 + a * 4;
-                 ctx.strokeStyle = `rgba(0, ${130 + a * 10}, ${50 + a * 8}, 0.55)`;
-                 ctx.lineWidth = 2.5;
-                 ctx.lineCap = 'round';
-                 ctx.beginPath();
-                 const segments = 12;
-                 for (let s = 0; s <= segments; s++) {
-                     const sy = H - s * (H / segments);
-                     const sx = baseX + Math.sin(time * 0.5 + s * 0.7 + a) * waveAmp;
-                     s === 0 ? ctx.moveTo(sx, sy) : ctx.lineTo(sx, sy);
-                 }
-                 ctx.stroke();
-             }
-             ctx.restore();
-
-             // === DIATOM MICROORGANISMS (hexagonal/circular glass shapes) ===
-             for (let d = 0; d < 15; d++) {
-                 const dx = ((d * 137.5 + time * 8) % W);
-                 const dy = ((d * 79.3 + time * 4 + 50) % H);
-                 const dr = 6 + (d % 4) * 4;
-                 const dAlpha = 0.2 + Math.sin(time * 1.5 + d) * 0.1;
-                 const dColors = ['rgba(0,220,150', 'rgba(100,220,200', 'rgba(50,180,120'];
-                 const dc = dColors[d % 3];
-
-                 ctx.save();
-                 ctx.translate(dx, dy);
-                 ctx.rotate(time * 0.2 + d);
-                 ctx.globalAlpha = dAlpha;
-
-                 // Hexagonal diatom shell
-                 ctx.strokeStyle = `${dc},0.8)`;
-                 ctx.lineWidth = 1;
-                 ctx.beginPath();
-                 for (let h = 0; h < 6; h++) {
-                     const angle = (h / 6) * Math.PI * 2;
-                     h === 0 ? ctx.moveTo(Math.cos(angle) * dr, Math.sin(angle) * dr)
-                             : ctx.lineTo(Math.cos(angle) * dr, Math.sin(angle) * dr);
-                 }
-                 ctx.closePath();
-                 ctx.stroke();
-
-                 // Inner ring
-                 ctx.strokeStyle = `${dc},0.4)`;
-                 ctx.beginPath();
-                 ctx.arc(0, 0, dr * 0.5, 0, Math.PI * 2);
-                 ctx.stroke();
-
-                 ctx.restore();
-             }
-
-             // === FLOATING BUBBLES ===
-             for (let b = 0; b < 20; b++) {
-                 const bPhase = (time * (0.4 + b * 0.02) + b * 0.5) % 1;
-                 const bx = W * ((b * 53.7 + Math.sin(time * 0.3 + b) * 0.05) % 1);
-                 const by = H - bPhase * H;
-                 const br = 2 + (b % 4) * 1.5;
-                 ctx.save();
-                 ctx.globalAlpha = 0.3 + Math.sin(time + b) * 0.1;
-                 ctx.strokeStyle = 'rgba(100,255,180,0.8)';
-                 ctx.lineWidth = 0.8;
-                 ctx.beginPath();
-                 ctx.arc(bx, by, br, 0, Math.PI * 2);
-                 ctx.stroke();
-                 // Highlight on bubble
-                 ctx.fillStyle = 'rgba(255,255,255,0.4)';
-                 ctx.beginPath();
-                 ctx.arc(bx - br * 0.3, by - br * 0.3, br * 0.3, 0, Math.PI * 2);
-                 ctx.fill();
-                 ctx.restore();
-             }
-
-             // === BACKGROUND MICRO-ORGANISM SILHOUETTES ===
-             ctx.save();
-             ctx.globalAlpha = 0.08;
-             ctx.fillStyle = '#00FF88';
-             for (let m = 0; m < 8; m++) {
-                 const mx = ((m * 110 + time * 6) % W);
-                 const my = ((m * 70 + time * 3) % H);
-                 // Amoeba-like blob shape
-                 ctx.beginPath();
-                 const blobR = 20 + m * 5;
-                 for (let p = 0; p < 8; p++) {
-                     const angle = (p / 8) * Math.PI * 2;
-                     const rad = blobR + Math.sin(time * 2 + p * 1.3 + m) * 8;
-                     const bpx = mx + Math.cos(angle) * rad;
-                     const bpy = my + Math.sin(angle) * rad;
-                     p === 0 ? ctx.moveTo(bpx, bpy) : ctx.lineTo(bpx, bpy);
-                 }
-                 ctx.closePath();
-                 ctx.fill();
-             }
+             ctx.closePath();
+             ctx.stroke();
+             ctx.strokeStyle = `${dc},0.4)`;
+             ctx.beginPath();
+             ctx.arc(0, 0, dr * 0.5, 0, Math.PI * 2);
+             ctx.stroke();
              ctx.restore();
          }
-         
+
+         // === FLOATING BUBBLES ===
+         for (let b = 0; b < 20; b++) {
+             const bPhase = (bgTime * (0.4 + b * 0.02) + b * 0.5) % 1;
+             const bx = W * ((b * 53.7) % 1) + Math.sin(bgTime * 0.3 + b) * 30;
+             const by = H - bPhase * H;
+             const br = 2 + (b % 4) * 1.5;
+             ctx.save();
+             ctx.globalAlpha = 0.4 + Math.sin(bgTime + b) * 0.15;
+             ctx.strokeStyle = 'rgba(100,255,180,0.9)';
+             ctx.lineWidth = 1;
+             ctx.beginPath();
+             ctx.arc(bx, by, br, 0, Math.PI * 2);
+             ctx.stroke();
+             ctx.fillStyle = 'rgba(255,255,255,0.5)';
+             ctx.beginPath();
+             ctx.arc(bx - br * 0.3, by - br * 0.3, br * 0.3, 0, Math.PI * 2);
+             ctx.fill();
+             ctx.restore();
+         }
+
+         // === BACKGROUND MICRO-ORGANISM SILHOUETTES ===
+         ctx.save();
+         ctx.globalAlpha = 0.12;
+         ctx.fillStyle = '#00FF88';
+         for (let m = 0; m < 8; m++) {
+             const mx = ((m * 110 + bgTime * 6) % W);
+             const my = ((m * 70 + bgTime * 3) % H);
+             ctx.beginPath();
+             const blobR = 20 + m * 5;
+             for (let p = 0; p < 8; p++) {
+                 const angle = (p / 8) * Math.PI * 2;
+                 const rad = blobR + Math.sin(bgTime * 2 + p * 1.3 + m) * 8;
+                 const bpx = mx + Math.cos(angle) * rad;
+                 const bpy = my + Math.sin(angle) * rad;
+                 p === 0 ? ctx.moveTo(bpx, bpy) : ctx.lineTo(bpx, bpy);
+             }
+             ctx.closePath();
+             ctx.fill();
+         }
+         ctx.restore();
+
+         // Now call the original render (draws all entities on top of background)
+         originalRender.call(this);
+      };
+    })(engine.render);
+
+    // Also keep update override just for entity cleanup
+    engine.update = (function(originalUpdate) {
+      return function(dt) {
          originalUpdate.call(this, dt);
          this.entities = this.entities.filter(e => !e.dead);
       };
@@ -678,6 +677,7 @@ export default function TardigradeSurvivalGame() {
 
 
     // Input listeners
+
     const onDown = (e) => {
       engine.mouseIsDown = true;
       const rect = canvasRef.current.getBoundingClientRect();

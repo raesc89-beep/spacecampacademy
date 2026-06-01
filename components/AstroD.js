@@ -108,8 +108,8 @@ export default function AstroD() {
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
             style={{
-              width: isMaximized ? 'min(90vw, 800px)' : '380px',
-              height: isMaximized ? '85vh' : '600px',
+              width: isMaximized ? 'min(90vw, 800px)' : 'min(380px, 95vw)',
+              height: isMaximized ? '85vh' : 'min(600px, 80vh)',
               maxHeight: '90vh',
               background: 'rgba(10, 15, 30, 0.85)',
               backdropFilter: 'blur(20px)',
@@ -253,11 +253,23 @@ export default function AstroD() {
                 </div>
               )}
 
-              {error && (
-                <div style={{ alignSelf: 'center', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#ff4d4d', fontSize: '0.85rem', background: 'rgba(255,0,0,0.1)', border: '1px solid rgba(255,0,0,0.3)', padding: '0.8rem 1rem', borderRadius: '12px', textAlign: 'center', flexWrap: 'wrap' }}>
-                  <AlertTriangle size={18} /> {error.message || 'Error de transmisión. Verifica que la API Key (GOOGLE_GENERATIVE_AI_API_KEY) esté configurada en Vercel.'}
-                </div>
-              )}
+              {error && (() => {
+                // Try to parse the JSON error body for a user-friendly message
+                let friendlyMsg = error.message || 'Error de transmisión.';
+                try {
+                  const parsed = JSON.parse(error.message);
+                  if (parsed.details) friendlyMsg = parsed.details;
+                  else if (parsed.error) friendlyMsg = parsed.error;
+                } catch (_) {}
+                // If it looks like an API key error, show a clean offline message
+                const isApiKeyErr = friendlyMsg.includes('API') || friendlyMsg.includes('clave') || friendlyMsg.includes('Vercel');
+                return (
+                  <div style={{ alignSelf: 'center', display: 'flex', alignItems: 'flex-start', gap: '0.5rem', color: isApiKeyErr ? '#FFD700' : '#ff4d4d', fontSize: '0.85rem', background: isApiKeyErr ? 'rgba(255,215,0,0.1)' : 'rgba(255,0,0,0.1)', border: `1px solid ${isApiKeyErr ? 'rgba(255,215,0,0.3)' : 'rgba(255,0,0,0.3)'}`, padding: '0.8rem 1rem', borderRadius: '12px', textAlign: 'left', maxWidth: '90%' }}>
+                    <AlertTriangle size={18} style={{ flexShrink: 0, marginTop: 2 }} />
+                    <span>{isApiKeyErr ? '🛸 Astro-D está en modo offline. Para activarlo en producción, configura GOOGLE_GENERATIVE_AI_API_KEY en las variables de entorno de Vercel.' : friendlyMsg}</span>
+                  </div>
+                );
+              })()}
               
               <div ref={messagesEndRef} />
             </div>

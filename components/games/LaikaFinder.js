@@ -8,45 +8,45 @@ const CHALLENGES = [
     riddle: "CALLES DE MOSCÚ: Haz clic sobre Laika (perro blanco con manchas en traje rojo), el módulo lunar plateado, y una huella gigante en la nieve.",
     imageUrl: "/assets/animales/laika_challenge_1_1779733797282.png",
     targets: [
-      { id: 'laika', name: 'Laika', x: 50, y: 50, radius: 18, found: false },
-      { id: 'modulo', name: 'Módulo Lunar', x: 20, y: 70, radius: 18, found: false },
-      { id: 'huella', name: 'Huella', x: 80, y: 80, radius: 18, found: false }
+      { id: 'laika', name: 'Laika', x: 50, y: 50, radius: 25, found: false },
+      { id: 'modulo', name: 'Módulo Lunar', x: 20, y: 70, radius: 25, found: false },
+      { id: 'huella', name: 'Huella', x: 80, y: 80, radius: 25, found: false }
     ]
   },
   {
     riddle: "ÓRBITA TERRESTRE: Encuentra al perro astronauta flotando, una cápsula espacial cónica, y una huella flotante entre satélites.",
     imageUrl: "/assets/animales/laika_challenge_2_1779733816425.png",
     targets: [
-      { id: 'laika', name: 'Perro Astronauta', x: 30, y: 40, radius: 18, found: false },
-      { id: 'modulo', name: 'Cápsula Espacial', x: 70, y: 30, radius: 18, found: false },
-      { id: 'huella', name: 'Huella Flotante', x: 50, y: 80, radius: 18, found: false }
+      { id: 'laika', name: 'Perro Astronauta', x: 30, y: 40, radius: 25, found: false },
+      { id: 'modulo', name: 'Cápsula Espacial', x: 70, y: 30, radius: 25, found: false },
+      { id: 'huella', name: 'Huella Flotante', x: 50, y: 80, radius: 25, found: false }
     ]
   },
   {
     riddle: "COMANDO SOVIÉTICO: Entre el caos científico, localiza el casco rojo de Laika, un módulo en miniatura y una huella en los planos.",
     imageUrl: "/assets/animales/laika_challenge_3_1779733835882.png",
     targets: [
-      { id: 'laika', name: 'Casco Rojo', x: 60, y: 60, radius: 18, found: false },
-      { id: 'modulo', name: 'Módulo Miniatura', x: 20, y: 40, radius: 18, found: false },
-      { id: 'huella', name: 'Huella en Planos', x: 80, y: 30, radius: 18, found: false }
+      { id: 'laika', name: 'Casco Rojo', x: 60, y: 60, radius: 25, found: false },
+      { id: 'modulo', name: 'Módulo Miniatura', x: 20, y: 40, radius: 25, found: false },
+      { id: 'huella', name: 'Huella en Planos', x: 80, y: 30, radius: 25, found: false }
     ]
   },
   {
     riddle: "BOSQUE SIBERIANO: Entre los pinos nevados halla un perro con traje espacial, una cápsula estrellada y una huella gigante.",
     imageUrl: "/assets/animales/laika_challenge_4_1779733853895.png",
     targets: [
-      { id: 'laika', name: 'Perro en Traje', x: 45, y: 55, radius: 18, found: false },
-      { id: 'modulo', name: 'Cápsula Estrellada', x: 75, y: 25, radius: 18, found: false },
-      { id: 'huella', name: 'Huella Gigante', x: 20, y: 80, radius: 18, found: false }
+      { id: 'laika', name: 'Perro en Traje', x: 45, y: 55, radius: 25, found: false },
+      { id: 'modulo', name: 'Cápsula Estrellada', x: 75, y: 25, radius: 25, found: false },
+      { id: 'huella', name: 'Huella Gigante', x: 20, y: 80, radius: 25, found: false }
     ]
   },
   {
     riddle: "PLAZA ROJA: Durante el desfile épico ubica a Laika astronauta, un módulo sobre un tanque y una huella de perro pintada.",
     imageUrl: "/assets/animales/laika_challenge_5_1779733871604.png",
     targets: [
-      { id: 'laika', name: 'Laika Astronauta', x: 80, y: 80, radius: 18, found: false },
-      { id: 'modulo', name: 'Módulo en Tanque', x: 50, y: 85, radius: 18, found: false },
-      { id: 'huella', name: 'Huella Pintada', x: 10, y: 90, radius: 18, found: false }
+      { id: 'laika', name: 'Laika Astronauta', x: 80, y: 80, radius: 25, found: false },
+      { id: 'modulo', name: 'Módulo en Tanque', x: 50, y: 85, radius: 25, found: false },
+      { id: 'huella', name: 'Huella Pintada', x: 10, y: 90, radius: 25, found: false }
     ]
   }
 ];
@@ -62,6 +62,7 @@ export default function LaikaFinder({ onComplete }) {
   const [score, setScore] = useState(0);
   const [hintsUsed, setHintsUsed] = useState(0);
   const containerRef = useRef(null);
+  const imgRef = useRef(null);
   const msgTimerRef = useRef(null);
 
   const currentChallenge = challenges[Math.min(currentLevel, challenges.length - 1)];
@@ -98,11 +99,16 @@ export default function LaikaFinder({ onComplete }) {
     }
   }, [allFound]);
 
-  const handleImageClick = (e) => {
+  const getClickCoords = (clientX, clientY) => {
+    const rect = imgRef.current.getBoundingClientRect();
+    const clickX = ((clientX - rect.left) / rect.width) * 100;
+    const clickY = ((clientY - rect.top) / rect.height) * 100;
+    return { clickX, clickY };
+  };
+
+  const processClick = (clientX, clientY) => {
     if (levelDone || allFound) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const clickX = ((e.clientX - rect.left) / rect.width) * 100;
-    const clickY = ((e.clientY - rect.top) / rect.height) * 100;
+    const { clickX, clickY } = getClickCoords(clientX, clientY);
     let found = false;
     const newChallenges = JSON.parse(JSON.stringify(challenges));
     newChallenges[currentLevel].targets.forEach(target => {
@@ -122,10 +128,21 @@ export default function LaikaFinder({ onComplete }) {
     }
   };
 
+  const handleImageClick = (e) => {
+    processClick(e.clientX, e.clientY);
+  };
+
+  const handleTouchEnd = (e) => {
+    e.preventDefault();
+    const touch = e.changedTouches[0];
+    processClick(touch.clientX, touch.clientY);
+  };
+
   const handleMouseMove = (e) => {
-    if (!containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    setCursorPos({ x: e.clientX - rect.left, y: e.clientY - rect.top, visible: true });
+    if (!imgRef.current) return;
+    const rect = imgRef.current.getBoundingClientRect();
+    const containerRect = containerRef.current.getBoundingClientRect();
+    setCursorPos({ x: e.clientX - containerRect.left, y: e.clientY - containerRect.top, visible: true });
   };
 
   const activateSonar = () => {
@@ -184,10 +201,11 @@ export default function LaikaFinder({ onComplete }) {
         onClick={handleImageClick}
         onMouseMove={handleMouseMove}
         onMouseLeave={() => setCursorPos(c => ({ ...c, visible: false }))}
+        onTouchEnd={handleTouchEnd}
         style={{ position: 'relative', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(255,184,0,0.4)', background: '#111', lineHeight: 0, minHeight: '400px', cursor: 'none', boxShadow: '0 0 30px rgba(255,184,0,0.15)' }}
       >
-         <img src={currentChallenge.imageUrl} draggable="false" onDragStart={e => e.preventDefault()}
-           style={{ width: '100%', height: 'auto', display: 'block', pointerEvents: 'none', userSelect: 'none' }}
+         <img ref={imgRef} src={currentChallenge.imageUrl} draggable="false" onDragStart={e => e.preventDefault()}
+           style={{ width: '100%', height: 'auto', display: 'block', userSelect: 'none' }}
            alt={'Reto Laika ' + (currentLevel + 1)}
          />
 
