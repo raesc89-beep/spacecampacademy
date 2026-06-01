@@ -59,7 +59,19 @@ export default function AstroD() {
   if (!user || pathname === '/' || pathname === '/auth') return null;
 
   return (
-    <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
+    <motion.div
+      drag
+      dragMomentum={false}
+      dragElastic={0}
+      dragConstraints={{
+        left: typeof window !== 'undefined' ? -(window.innerWidth - 120) : -1200,
+        right: 0,
+        top: typeof window !== 'undefined' ? -(window.innerHeight - 120) : -800,
+        bottom: 0
+      }}
+      style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}
+      whileDrag={{ scale: 1.02 }}
+    >
       
       {/* Botón flotante animado (3D) */}
       <AnimatePresence>
@@ -376,6 +388,6 @@ export default function AstroD() {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }

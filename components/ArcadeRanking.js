@@ -4,7 +4,6 @@ import { db } from '@/lib/firebase';
 import {
   collection,
   query,
-  where,
   orderBy,
   limit,
   onSnapshot,
@@ -24,7 +23,7 @@ export async function saveArcadeScore(db, gameId, gameName, userId, userName, sc
       gameName,
       userId,
       userName: userName || 'Jugador',
-      score,
+      score: Number(score),
       createdAt: serverTimestamp(),
     });
   } catch (err) {
@@ -55,7 +54,6 @@ function RankRow({ rank, entry }) {
         background: rank <= 3 ? `rgba(${rank === 1 ? '255,215,0' : rank === 2 ? '192,192,192' : '205,127,50'},0.07)` : 'rgba(255,255,255,0.03)',
         borderLeft: `3px solid ${color}`,
         marginBottom: '0.4rem',
-        transition: 'background 0.2s',
       }}
     >
       {/* Rank badge */}
@@ -91,7 +89,9 @@ function RankRow({ rank, entry }) {
         >
           {entry.userName}
         </div>
-        <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.68rem' }}>{dateStr}</div>
+        <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.68rem' }}>
+          {entry.gameName ? `${entry.gameName} · ` : ''}{dateStr}
+        </div>
       </div>
 
       {/* Score */}
@@ -104,7 +104,7 @@ function RankRow({ rank, entry }) {
           flexShrink: 0,
         }}
       >
-        {entry.score.toLocaleString()}
+        {Number(entry.score || 0).toLocaleString()}
       </div>
     </div>
   );
@@ -115,11 +115,11 @@ function RankRow({ rank, entry }) {
 // ─────────────────────────────────────────────
 export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
   const [tab, setTab] = useState(gameId === 'global' ? 'global' : 'game');
-  const [gameScores, setGameScores] = useState([]);
-  const [globalScores, setGlobalScores] = useState([]);
+  const [allScores, setAllScores] = useState([]);   // top-50 global, used for both tabs
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // Switch to game tab whenever gameId changes (a new game launched)
+  // Switch to game tab whenever gameId changes
   useEffect(() => {
     if (gameId && gameId !== 'global') {
       setTab('game');
@@ -128,41 +128,38 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
     }
   }, [gameId]);
 
-  // ── Game-specific listener ──
+  // ── Single query: top-50 by score globally (NO composite index needed) ──
   useEffect(() => {
-    if (!gameId || gameId === 'global') {
-      setGameScores([]);
-      return;
-    }
     setLoading(true);
-    const q = query(
-      collection(db, 'arcadeScores'),
-      where('gameId', '==', gameId),
-      orderBy('score', 'desc'),
-      limit(10)
-    );
-    const unsub = onSnapshot(q, (snap) => {
-      setGameScores(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-      setLoading(false);
-    });
-    return () => unsub();
-  }, [gameId]);
+    setError(null);
 
-  // ── Global listener ──
-  useEffect(() => {
     const q = query(
       collection(db, 'arcadeScores'),
       orderBy('score', 'desc'),
-      limit(10)
+      limit(50)
     );
-    const unsub = onSnapshot(q, (snap) => {
-      setGlobalScores(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-      setLoading(false);
-    });
+
+    const unsub = onSnapshot(
+      q,
+      (snap) => {
+        setAllScores(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+        setLoading(false);
+      },
+      (err) => {
+        console.error('[ArcadeRanking] Firestore error:', err);
+        setError('Sin conexión con el ranking');
+        setLoading(false);
+      }
+    );
+
     return () => unsub();
   }, []);
 
-  const activeScores = tab === 'game' ? gameScores : globalScores;
+  // Filter scores for the active tab
+  const activeScores = tab === 'game' && gameId && gameId !== 'global'
+    ? allScores.filter(s => s.gameId === gameId).slice(0, 10)
+    : allScores.slice(0, 10);
+
   const showGameTab = gameId && gameId !== 'global';
 
   return (
@@ -178,9 +175,9 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
         background: 'rgba(10, 0, 30, 0.75)',
         backdropFilter: 'blur(18px)',
         WebkitBackdropFilter: 'blur(18px)',
-        border: '1px solid rgba(0,228,255,0.25)',
+        border: '1px solid rgba(255,0,255,0.25)',
         borderRadius: '16px',
-        boxShadow: '0 0 40px rgba(0,228,255,0.08), inset 0 0 40px rgba(0,0,0,0.4)',
+        boxShadow: '0 0 40px rgba(255,0,255,0.08), inset 0 0 40px rgba(0,0,0,0.4)',
         overflow: 'hidden',
       }}
     >
@@ -188,21 +185,14 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
       <div
         style={{
           padding: '1rem 1rem 0.75rem',
-          background: 'linear-gradient(135deg, rgba(255,215,0,0.12), rgba(0,228,255,0.08))',
-          borderBottom: '1px solid rgba(0,228,255,0.15)',
+          background: 'linear-gradient(135deg, rgba(255,215,0,0.12), rgba(255,0,255,0.08))',
+          borderBottom: '1px solid rgba(255,0,255,0.15)',
           flexShrink: 0,
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
           <Trophy size={18} color="#FFD700" style={{ filter: 'drop-shadow(0 0 6px rgba(255,215,0,0.8))' }} />
-          <span
-            style={{
-              color: 'white',
-              fontWeight: 700,
-              fontSize: '0.95rem',
-              letterSpacing: '0.03em',
-            }}
-          >
+          <span style={{ color: 'white', fontWeight: 700, fontSize: '0.95rem', letterSpacing: '0.03em' }}>
             Ranking Arcade
           </span>
         </div>
@@ -233,9 +223,9 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
                 justifyContent: 'center',
                 gap: '0.25rem',
                 transition: 'all 0.2s',
-                background: tab === 'game' ? 'rgba(0,228,255,0.25)' : 'transparent',
-                color: tab === 'game' ? '#00E4FF' : 'rgba(255,255,255,0.45)',
-                boxShadow: tab === 'game' ? '0 0 10px rgba(0,228,255,0.2)' : 'none',
+                background: tab === 'game' ? 'rgba(255,0,255,0.25)' : 'transparent',
+                color: tab === 'game' ? '#FF00FF' : 'rgba(255,255,255,0.45)',
+                boxShadow: tab === 'game' ? '0 0 10px rgba(255,0,255,0.2)' : 'none',
               }}
             >
               <Gamepad2 size={12} /> Este Juego
@@ -265,12 +255,12 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
           </button>
         </div>
 
-        {/* Subtitle */}
+        {/* Game subtitle */}
         {tab === 'game' && showGameTab && (
           <div
             style={{
               marginTop: '0.5rem',
-              color: 'rgba(0,228,255,0.7)',
+              color: 'rgba(255,0,255,0.8)',
               fontSize: '0.7rem',
               fontWeight: 600,
               textTransform: 'uppercase',
@@ -288,30 +278,15 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
       {/* Score list */}
       <div style={{ overflowY: 'auto', flex: 1, padding: '0.75rem 0.75rem 1rem' }}>
         {loading ? (
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: '80px',
-              color: 'rgba(255,255,255,0.35)',
-              fontSize: '0.8rem',
-            }}
-          >
-            <span style={{ animation: 'pulse 1.5s infinite' }}>Cargando…</span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '80px', color: 'rgba(255,255,255,0.35)', fontSize: '0.8rem' }}>
+            <span>Conectando…</span>
+          </div>
+        ) : error ? (
+          <div style={{ textAlign: 'center', color: 'rgba(255,100,100,0.6)', fontSize: '0.75rem', padding: '1rem' }}>
+            ⚠️ {error}
           </div>
         ) : activeScores.length === 0 ? (
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: '100px',
-              gap: '0.5rem',
-              color: 'rgba(255,255,255,0.3)',
-            }}
-          >
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100px', gap: '0.5rem', color: 'rgba(255,255,255,0.3)' }}>
             <Medal size={28} style={{ opacity: 0.3 }} />
             <span style={{ fontSize: '0.78rem', textAlign: 'center' }}>
               Aún no hay puntajes.<br />¡Sé el primero!
@@ -328,7 +303,7 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
       <div
         style={{
           height: '2px',
-          background: 'linear-gradient(90deg, transparent, rgba(0,228,255,0.5), rgba(255,215,0,0.5), transparent)',
+          background: 'linear-gradient(90deg, transparent, rgba(255,0,255,0.5), rgba(255,215,0,0.5), transparent)',
           flexShrink: 0,
         }}
       />

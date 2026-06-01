@@ -78,8 +78,8 @@ export default function ArcadeExoplanet() {
       
       {/* Botón Flotante para abandonar el Exoplaneta */}
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 100 }}>
-         <Link href="/hub/solar-system" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none', background: 'rgba(255,0,255,0.2)', padding: '0.8rem 1.2rem', borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,0,255,0.5)' }}>
-             <ChevronLeft size={24} /> Órbita Sideral
+         <Link href="/dashboard/misiones" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none', background: 'rgba(255,0,255,0.2)', padding: '0.8rem 1.2rem', borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,0,255,0.5)' }}>
+             <ChevronLeft size={24} /> Estación Orbital
          </Link>
       </div>
 
