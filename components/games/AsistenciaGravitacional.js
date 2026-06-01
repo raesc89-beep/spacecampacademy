@@ -6,8 +6,9 @@ import { useRef, useEffect, useState, useCallback } from 'react';
 const CANVAS_W    = 480;
 const CANVAS_H    = 320;
 const PROBE_X     = 90;          // fixed horizontal position of probe
-const GRAVITY     = 0.35;        // pixels/frame² pulling down
-const BOOST_VY    = -7.5;        // upward velocity on tap
+const GRAVITY     = 0.35;        // pixels/frame² pulling down (full)
+const GRAVITY_HOLD = 0.06;       // gentle gravity while holding (float mode)
+const BOOST_VY    = -5.5;        // upward velocity on single tap (reduced slightly for balance)
 const WALL_SPEED  = 2.8;         // pixels/frame walls scroll left
 const WALL_W      = 22;          // wall thickness
 const WALL_GAP_START = 130;      // initial gap size (px)
@@ -32,7 +33,8 @@ export default function AsistenciaGravitacional({ onComplete }) {
     return {
       probeY:    CANVAS_H / 2,
       probeVY:   0,
-      walls:     [makeWall(CANVAS_W + 60, gapSize)], // start with one wall off-screen
+      isHeld:    false,           // true while mouse/touch is held down
+      walls:     [makeWall(CANVAS_W + 60, gapSize)],
       passes:    0,
       gapSize,
       score:     0,
@@ -69,7 +71,10 @@ export default function AsistenciaGravitacional({ onComplete }) {
     gs.ticks++;
 
     // ── Physics ──────────────────────────────────────────────────────────
-    gs.probeVY += GRAVITY;
+    const currentGravity = gs.isHeld ? GRAVITY_HOLD : GRAVITY;
+    gs.probeVY += currentGravity;
+    // Clamp fall speed when holding so it floats gently
+    if (gs.isHeld && gs.probeVY > 1.5) gs.probeVY = 1.5;
     gs.probeY  += gs.probeVY;
 
     // ── Move stars (parallax) ─────────────────────────────────────────────
@@ -296,11 +301,18 @@ export default function AsistenciaGravitacional({ onComplete }) {
     });
   }, [initState, gameLoop]);
 
-  // ── Input: boost on click/tap ─────────────────────────────────────────────
-  const handleBoost = useCallback(() => {
+  // ── Input: boost on tap, float on hold ───────────────────────────────────
+  const handleBoostDown = useCallback(() => {
     const gs = gameStateRef.current;
     if (!gs || !gs.alive) return;
-    gs.probeVY = BOOST_VY;
+    gs.isHeld  = true;
+    gs.probeVY = BOOST_VY; // initial upward kick on press
+  }, []);
+
+  const handleBoostUp = useCallback(() => {
+    const gs = gameStateRef.current;
+    if (!gs) return;
+    gs.isHeld = false;
   }, []);
 
   // Draw first static frame on mount so canvas isn't blank before start
@@ -337,8 +349,11 @@ export default function AsistenciaGravitacional({ onComplete }) {
           width={CANVAS_W}
           height={CANVAS_H}
           style={styles.canvas}
-          onClick={screen === 'playing' ? handleBoost : undefined}
-          onTouchStart={screen === 'playing' ? (e) => { e.preventDefault(); handleBoost(); } : undefined}
+          onMouseDown={screen === 'playing' ? handleBoostDown : undefined}
+          onMouseUp={screen === 'playing' ? handleBoostUp : undefined}
+          onMouseLeave={screen === 'playing' ? handleBoostUp : undefined}
+          onTouchStart={screen === 'playing' ? (e) => { e.preventDefault(); handleBoostDown(); } : undefined}
+          onTouchEnd={screen === 'playing' ? (e) => { e.preventDefault(); handleBoostUp(); } : undefined}
         />
 
         {/* ── Start overlay ── */}
@@ -389,7 +404,7 @@ export default function AsistenciaGravitacional({ onComplete }) {
 
       {/* Controls hint (below canvas) */}
       {screen === 'playing' && (
-        <p style={styles.hint}>TAP / CLICK → IMPULSARSE</p>
+        <p style={styles.hint}>MANTÉN PRESIONADO → FLOTAR &nbsp;|&nbsp; SUELTA → CAER</p>
       )}
     </div>
   );

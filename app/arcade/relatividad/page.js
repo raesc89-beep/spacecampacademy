@@ -13,34 +13,26 @@ const OBSTACLES = [
   '/assets/arcade/obstacle_alien_1779748408664.png'
 ];
 
-export default function RelativisticRacingGame() {
+const GAME_DURATION = 60; // seconds to survive
+
+export default function RelativisticDebrisDodger() {
   const canvasRef = useRef(null);
   const engineRef = useRef(null);
   const [gameState, setGameState] = useState('menu'); // menu, playing, won, lost
-  const [velocityC, setVelocityC] = useState(0); // 0 to 0.99c
-  const [distance, setDistance] = useState(0);
-  const targetDistance = 10000;
-  const [lorentz, setLorentz] = useState(1);
+  const [velocityC, setVelocityC] = useState(0.3);   // Fixed relativistic velocity display (0–0.99c)
+  const [lorentz, setLorentz] = useState(1.048);
   const [imagesLoaded, setImagesLoaded] = useState(false);
-  const [health, setHealth] = useState(100); // 100% Structural Integrity
-  
-  // Refs to prevent stale closures in the high-frequency physics game loop
-  const velocityRef = useRef(0);
-  const healthRef = useRef(100);
+  const [health, setHealth] = useState(3);            // 3 hits = dead
+  const [timeLeft, setTimeLeft] = useState(GAME_DURATION);
+
+  // Refs to prevent stale closures in the high-frequency game loop
+  const healthRef = useRef(3);
   const gameStateRef = useRef('menu');
-  
-  // Sync state values to refs
-  useEffect(() => {
-    velocityRef.current = velocityC;
-  }, [velocityC]);
+  const timeLeftRef = useRef(GAME_DURATION);
 
-  useEffect(() => {
-    healthRef.current = health;
-  }, [health]);
-
-  useEffect(() => {
-    gameStateRef.current = gameState;
-  }, [gameState]);
+  useEffect(() => { healthRef.current = health; }, [health]);
+  useEffect(() => { gameStateRef.current = gameState; }, [gameState]);
+  useEffect(() => { timeLeftRef.current = timeLeft; }, [timeLeft]);
 
   // Image cache
   const imgCache = useRef({});
@@ -48,54 +40,58 @@ export default function RelativisticRacingGame() {
   // Preload Images & Remove Solid Backgrounds (White for Ship, Black for Obstacles)
   useEffect(() => {
     const loadImages = async () => {
-       const srcs = [SHIP_IMG_SRC, ...OBSTACLES];
-       let loadedCount = 0;
-       
-       const cleanBackground = (img, isShip) => {
-         const canvas = document.createElement('canvas');
-         canvas.width = img.width; canvas.height = img.height;
-         const ctx = canvas.getContext('2d');
-         ctx.drawImage(img, 0, 0);
-         const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-         const data = imgData.data;
-         
-         for (let i = 0; i < data.length; i += 4) {
-             const r = data[i];
-             const g = data[i+1];
-             const b = data[i+2];
-             
-             if (isShip) {
-                 // For the ship, make solid white or extremely bright pixels transparent
-                 if (r > 240 && g > 240 && b > 240) {
-                     data[i+3] = 0; // alpha = 0
-                 }
-             } else {
-                 // For space obstacles, make solid black or extremely dark pixels transparent
-                 if (r < 25 && g < 25 && b < 25) {
-                     data[i+3] = 0; // alpha = 0
-                 }
-             }
-         }
-         ctx.putImageData(imgData, 0, 0);
-         return canvas;
-       };
+      const srcs = [SHIP_IMG_SRC, ...OBSTACLES];
+      let loadedCount = 0;
 
-       srcs.forEach(src => {
-          const img = new Image();
-          img.src = src;
-          img.crossOrigin = "Anonymous";
-          img.onload = () => {
-             try {
-                const isShip = (src === SHIP_IMG_SRC);
-                imgCache.current[src] = cleanBackground(img, isShip);
-             } catch(e) {
-                // Fallback if canvas taint issues
-                imgCache.current[src] = img;
-             }
-             loadedCount++;
-             if (loadedCount === srcs.length) setImagesLoaded(true);
-          };
-       });
+      const cleanBackground = (img, isShip) => {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.width; canvas.height = img.height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imgData.data;
+
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+
+          if (isShip) {
+            // For the ship, make solid white or extremely bright pixels transparent
+            if (r > 240 && g > 240 && b > 240) {
+              data[i + 3] = 0;
+            }
+          } else {
+            // For space obstacles, make solid black or extremely dark pixels transparent
+            if (r < 25 && g < 25 && b < 25) {
+              data[i + 3] = 0;
+            }
+          }
+        }
+        ctx.putImageData(imgData, 0, 0);
+        return canvas;
+      };
+
+      srcs.forEach(src => {
+        const img = new Image();
+        img.src = src;
+        img.crossOrigin = 'Anonymous';
+        img.onload = () => {
+          try {
+            const isShip = (src === SHIP_IMG_SRC);
+            imgCache.current[src] = cleanBackground(img, isShip);
+          } catch (e) {
+            imgCache.current[src] = img;
+          }
+          loadedCount++;
+          if (loadedCount === srcs.length) setImagesLoaded(true);
+        };
+        img.onerror = () => {
+          imgCache.current[src] = null;
+          loadedCount++;
+          if (loadedCount === srcs.length) setImagesLoaded(true);
+        };
+      });
     };
     loadImages();
   }, []);
@@ -103,488 +99,473 @@ export default function RelativisticRacingGame() {
   // Save telemetry when game ends
   useEffect(() => {
     if (gameState === 'won' || gameState === 'lost') {
-       fetch('/api/telemetry', {
-         method: 'POST',
-         headers: { 'Content-Type': 'application/json' },
-         body: JSON.stringify({
-           event: 'relativity_game_finished',
-           data: {
-             status: gameState,
-             max_velocity: velocityC,
-             distance_traveled: Math.floor(distance)
-           }
-         })
-       }).catch(err => console.error('Error logging telemetry:', err));
+      fetch('/api/telemetry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          event: 'relatividad_debris_finished',
+          data: {
+            status: gameState,
+            velocity_c: velocityC,
+            time_survived: GAME_DURATION - timeLeft,
+            hits_taken: 3 - health
+          }
+        })
+      }).catch(err => console.error('Error logging telemetry:', err));
     }
   }, [gameState]);
 
-  // Real-time speed acceleration timer
+  // Countdown timer while playing
   useEffect(() => {
     if (gameState !== 'playing') return;
 
-    let interval = setInterval(() => {
-      setVelocityC(prev => {
-        const next = Math.min(prev + 0.05, 0.99); // Accelerate faster
-        return parseFloat(next.toFixed(2));
+    // Reset timer on new game
+    setTimeLeft(GAME_DURATION);
+    timeLeftRef.current = GAME_DURATION;
+
+    const interval = setInterval(() => {
+      setTimeLeft(prev => {
+        const next = prev - 1;
+        timeLeftRef.current = next;
+        if (next <= 0) {
+          // Win!
+          setGameState('won');
+          if (engineRef.current) engineRef.current.stop();
+          return 0;
+        }
+        return next;
       });
     }, 1000);
 
     return () => clearInterval(interval);
   }, [gameState]);
 
-  // Adjust special relativistic constants (Lorentz Gamma, Time Dilation, etc.)
+  // Lorentz factor display (based on velocityC)
   useEffect(() => {
-    if (gameState !== 'playing') return;
-    
-    // Calculate Lorentz Factor
-    const gamma = 1 / Math.sqrt(1 - Math.pow(velocityC, 2));
+    const v = Math.min(velocityC, 0.9999);
+    const gamma = 1 / Math.sqrt(1 - v * v);
     setLorentz(gamma);
-    
-    if (engineRef.current) {
-       const engine = engineRef.current;
-       engine.effects.timeDilation = gamma * 2;
-       engine.effects.chromaticAberration = velocityC * 20;
-       engine.effects.bloom = velocityC * 0.8;
-    }
+  }, [velocityC]);
 
-    // Update distance
-    const distInterval = setInterval(() => {
-      setDistance(prev => {
-        const newDist = prev + (velocityC * 25);
-        if (newDist >= targetDistance) {
-           setGameState('won');
-           if (engineRef.current) engineRef.current.stop();
-        }
-        return newDist;
-      });
-    }, 100);
-
-    return () => clearInterval(distInterval);
-  }, [velocityC, gameState]);
-
-  // Synchronous collision/damage handler from canvas loop to React state
+  // Collision / damage handler
   const handleDamage = () => {
     if (healthRef.current <= 0) return;
     setHealth(prev => {
-      const nextH = Math.max(0, prev - 34); // 3-hit health system
-      if (nextH <= 0) {
-         setGameState('lost');
-         if (engineRef.current) engineRef.current.stop();
+      const next = Math.max(0, prev - 1);
+      healthRef.current = next;
+      if (next <= 0) {
+        setGameState('lost');
+        if (engineRef.current) engineRef.current.stop();
       }
-      return nextH;
+      return next;
     });
-    
-    // Physical camera shake/canvas vibration effect on impact
+
+    // Camera shake on impact
     if (canvasRef.current) {
-       canvasRef.current.style.transition = 'none';
-       canvasRef.current.style.transform = 'translate(10px, 10px)';
-       setTimeout(() => { if (canvasRef.current) canvasRef.current.style.transform = 'translate(-10px, -10px)'; }, 50);
-       setTimeout(() => { if (canvasRef.current) canvasRef.current.style.transform = 'translate(6px, -4px)'; }, 100);
-       setTimeout(() => { 
-         if (canvasRef.current) {
-            canvasRef.current.style.transform = 'none';
-            canvasRef.current.style.transition = 'transform 0.1s linear';
-         }
-       }, 150);
+      canvasRef.current.style.transition = 'none';
+      canvasRef.current.style.transform = 'translate(10px, 8px)';
+      setTimeout(() => { if (canvasRef.current) canvasRef.current.style.transform = 'translate(-10px, -8px)'; }, 50);
+      setTimeout(() => { if (canvasRef.current) canvasRef.current.style.transform = 'translate(6px, -4px)'; }, 100);
+      setTimeout(() => {
+        if (canvasRef.current) {
+          canvasRef.current.style.transform = 'none';
+          canvasRef.current.style.transition = 'transform 0.1s linear';
+        }
+      }, 150);
     }
   };
 
   // Engine & Canvas Setup
   useEffect(() => {
     if (!canvasRef.current || !imagesLoaded) return;
-    
+
     const engine = new AntigravityEngine(canvasRef.current);
     engineRef.current = engine;
-    
     engine.setEnvironment({ gravity: 0, fluidDensity: 0 });
 
-    // The Spacecraft with full 2D movement and organic glowing shield
+    // Reset health & timer refs for new game session
+    healthRef.current = 3;
+    setHealth(3);
+
+    // ─── SHIP — fixed Y, left/right only ───────────────────────────────────────
     const ship = {
       id: 'ship',
       type: 'rigidbody',
       x: engine.width / 2,
-      y: engine.height - 100,
-      radius: 35,
+      y: engine.height - 80,
+      radius: 32,
       isInvulnerable: false,
       isFlashing: false,
-      update: function(dt) {
-         // Smooth Keyboard movement in 2D (UP/DOWN/LEFT/RIGHT + WASD)
-         if (engine.keys?.ArrowLeft || engine.keys?.a) this.x -= 8 * dt;
-         if (engine.keys?.ArrowRight || engine.keys?.d) this.x += 8 * dt;
-         if (engine.keys?.ArrowUp || engine.keys?.w) this.y -= 8 * dt;
-         if (engine.keys?.ArrowDown || engine.keys?.s) this.y += 8 * dt;
+      update: function (dt) {
+        if (engine.keys?.ArrowLeft || engine.keys?.a)  this.x -= 8 * dt;
+        if (engine.keys?.ArrowRight || engine.keys?.d) this.x += 8 * dt;
 
-         // Clamp to visible canvas borders
-         if (this.x < 40) this.x = 40;
-         if (this.x > engine.width - 40) this.x = engine.width - 40;
-         if (this.y < 60) this.y = 60;
-         if (this.y > engine.height - 60) this.y = engine.height - 60;
+        // Clamp X; Y is FIXED
+        this.x = Math.max(50, Math.min(engine.width - 50, this.x));
+        this.y = engine.height - 80;
       },
-      render: function(ctx) {
+      render: function (ctx) {
         const img = imgCache.current[SHIP_IMG_SRC];
-        if (img) {
-          // Flashing effect during invulnerability frame
-          if (this.isFlashing && Math.floor(Date.now() / 100) % 2 === 0) {
-             return;
-          }
-          ctx.save();
-          ctx.translate(this.x, this.y);
-          ctx.rotate(-Math.PI / 2); // Rotate to face upwards (vertical travel)
 
-          // Glowing energy shield visual effect
-          if (this.isInvulnerable) {
-             ctx.strokeStyle = 'rgba(0, 228, 255, 0.9)';
-             ctx.lineWidth = 3;
-             ctx.beginPath();
-             ctx.arc(0, 0, 52, 0, Math.PI * 2);
-             ctx.stroke();
-             
-             const shieldGrad = ctx.createRadialGradient(0, 0, 40, 0, 0, 55);
-             shieldGrad.addColorStop(0, 'rgba(0, 228, 255, 0)');
-             shieldGrad.addColorStop(1, 'rgba(0, 228, 255, 0.25)');
-             ctx.fillStyle = shieldGrad;
-             ctx.fill();
-          }
+        // Invulnerability flash
+        if (this.isFlashing && Math.floor(Date.now() / 100) % 2 === 0) return;
 
-          ctx.drawImage(img, -45, -45, 90, 90);
-          
-          // Propulsion engine glow (pulses)
-          ctx.globalCompositeOperation = 'lighter';
-          ctx.fillStyle = '#00E4FF';
-          ctx.globalAlpha = 0.5 + Math.random() * 0.5;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        // Ship faces upward (towards incoming debris)
+        ctx.rotate(-Math.PI / 2);
+
+        // Glowing shield ring when invulnerable
+        if (this.isInvulnerable) {
+          ctx.strokeStyle = 'rgba(0, 228, 255, 0.9)';
+          ctx.lineWidth = 3;
           ctx.beginPath();
-          ctx.arc(-40, 0, 15 + Math.random()*10, 0, Math.PI * 2);
+          ctx.arc(0, 0, 50, 0, Math.PI * 2);
+          ctx.stroke();
+          const sg = ctx.createRadialGradient(0, 0, 38, 0, 0, 52);
+          sg.addColorStop(0, 'rgba(0, 228, 255, 0)');
+          sg.addColorStop(1, 'rgba(0, 228, 255, 0.25)');
+          ctx.fillStyle = sg;
           ctx.fill();
-          
-          ctx.restore();
         }
+
+        if (img) {
+          ctx.drawImage(img, -40, -40, 80, 80);
+        } else {
+          // Fallback triangle
+          ctx.fillStyle = '#00E4FF';
+          ctx.beginPath();
+          ctx.moveTo(40, 0);
+          ctx.lineTo(-25, -20);
+          ctx.lineTo(-25, 20);
+          ctx.closePath();
+          ctx.fill();
+        }
+
+        // Engine glow (pulses)
+        ctx.globalCompositeOperation = 'lighter';
+        ctx.fillStyle = '#00E4FF';
+        ctx.globalAlpha = 0.45 + Math.random() * 0.45;
+        ctx.beginPath();
+        ctx.arc(-35, 0, 12 + Math.random() * 8, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
       }
     };
     engine.registerRigidBody(ship);
 
-    // 3D Hyperspace Starfield — z-depth projection creates Star Wars hyperspace effect
-    const STAR_COUNT = 300;
-    // Center of the projection (hyperspace tunnel perspective)
-    const CX = engine.width / 2;
-    const CY = engine.height / 2;
-
-    for(let i = 0; i < STAR_COUNT; i++) {
+    // ─── STARFIELD — stars fall straight DOWN ──────────────────────────────────
+    // Each star has a 2D position that scrolls downward.
+    // velocityC drives star speed + blueshift tint.
+    const STAR_COUNT = 280;
+    for (let i = 0; i < STAR_COUNT; i++) {
       engine.registerRigidBody({
         type: 'star',
-        // 3D position: x3d/y3d are spread around center, z is depth (larger = farther)
-        x3d: (Math.random() - 0.5) * engine.width * 2.5,
-        y3d: (Math.random() - 0.5) * engine.height * 2.5,
-        z: Math.random() * 800 + 1,
-        zPrev: 0,  // for streak rendering
+        sx: Math.random() * engine.width,          // screen X
+        sy: Math.random() * engine.height,         // screen Y (already positioned randomly)
+        depth: Math.random() * 0.8 + 0.2,          // 0.2–1.0 — determines size & speed
         radius: 1,
-        update: function(dt) {
-           // Speed: how fast z decreases (stars approach) based on velocity factor
-           const gamma = 1 / Math.sqrt(1 - Math.pow(velocityRef.current, 2));
-           const starSpeed = (0.5 + velocityRef.current * 12) * gamma * 0.4 * dt;
-           this.zPrev = this.z;
-           this.z -= starSpeed;
-           // Reset star when it reaches the viewer
-           if (this.z <= 1) {
-              this.z = 800;
-              this.zPrev = 800;
-              this.x3d = (Math.random() - 0.5) * engine.width * 2.5;
-              this.y3d = (Math.random() - 0.5) * engine.height * 2.5;
-           }
+        update: function (dt) {
+          // Speed: base + velocity bonus
+          const v = Math.min(velocityC, 0.9999);
+          const gamma = 1 / Math.sqrt(1 - v * v);
+          const speed = (1.2 + v * 10) * gamma * 0.3 * this.depth * dt;
+          this.sy += speed;
+          // Wrap back to top
+          if (this.sy > engine.height + 5) {
+            this.sy = -5;
+            this.sx = Math.random() * engine.width;
+            this.depth = Math.random() * 0.8 + 0.2;
+          }
         },
-        render: function(ctx) {
-           // Project 3D coords to 2D screen (perspective division)
-           const scale = 400; // focal length
-           const px = (this.x3d / this.z) * scale + CX;
-           const py = (this.y3d / this.z) * scale + CY;
-           const pxPrev = (this.x3d / this.zPrev) * scale + CX;
-           const pyPrev = (this.y3d / this.zPrev) * scale + CY;
-           
-           // Size based on depth
-           const size = Math.max(0.5, (1 - this.z / 800) * 3);
-           
-           // Color: white at low speed, cyan blueshift at high speed
-           const v = velocityRef.current;
-           const r = Math.round(255 * (1 - v * 0.8));
-           const g = Math.round(220 + 35 * v);
-           const b = 255;
-           const alpha = Math.min(1, (1 - this.z / 800) * 1.5 + 0.1);
-           
-           // Only draw if on screen
-           if (px < -20 || px > engine.width + 20 || py < -20 || py > engine.height + 20) return;
+        render: function (ctx) {
+          const v = Math.min(velocityC, 0.9999);
+          // Blueshift tint
+          const rC = Math.round(255 * (1 - v * 0.85));
+          const gC = Math.round(210 + 45 * v);
+          const bC = 255;
+          const alpha = 0.3 + this.depth * 0.7;
+          const size = this.depth * 2.5;
 
-           if (v > 0.2 && this.zPrev > 0 && Math.abs(px - pxPrev) + Math.abs(py - pyPrev) > 1) {
-              // Draw streak line (hyperspace effect)
-              ctx.strokeStyle = `rgba(${r},${g},${b},${alpha})`;
-              ctx.lineWidth = size;
-              ctx.beginPath();
-              ctx.moveTo(pxPrev, pyPrev);
-              ctx.lineTo(px, py);
-              ctx.stroke();
-           } else {
-              // Draw dot at low speed
-              ctx.fillStyle = `rgba(${r},${g},${b},${alpha})`;
-              ctx.beginPath();
-              ctx.arc(px, py, size, 0, Math.PI * 2);
-              ctx.fill();
-           }
+          ctx.fillStyle = `rgba(${rC},${gC},${bC},${alpha})`;
+          ctx.beginPath();
+          ctx.arc(this.sx, this.sy, size, 0, Math.PI * 2);
+          ctx.fill();
+
+          // Draw a short streak for fast stars
+          if (v > 0.35) {
+            const streakLen = size * (v * 12 + 2);
+            ctx.strokeStyle = `rgba(${rC},${gC},${bC},${alpha * 0.5})`;
+            ctx.lineWidth = size * 0.8;
+            ctx.beginPath();
+            ctx.moveTo(this.sx, this.sy - streakLen);
+            ctx.lineTo(this.sx, this.sy);
+            ctx.stroke();
+          }
         }
       });
     }
 
-    // Overriding engine update loop to render cosmic background directly on canvas and manage spawns at 60fps
-    engine.update = (function(originalUpdate) {
-      let time = 0;
+    // ─── ENGINE UPDATE OVERRIDE — background + spawning logic ──────────────────
+    engine.update = (function (originalUpdate) {
+      let gameTime = 0;       // seconds elapsed since game start
       let lastSpawnTime = 0;
       let nebulaTime = 0;
-      return function(dt) {
-         if (this.ctx) {
-             const ctx = this.ctx;
-             
-             // Draw solid deep space void
-             ctx.fillStyle = '#02030d';
-             ctx.fillRect(0, 0, this.width, this.height);
-             
-             // === ENHANCED NEBULA BACKGROUND ===
-             nebulaTime += dt * 0.003;
-             ctx.save();
-             ctx.globalCompositeOperation = 'screen';
-             
-             // Deep magenta nebula cloud
-             const x1 = this.width * 0.55 + Math.sin(nebulaTime * 0.7) * 180;
-             const y1 = this.height * 0.4 + Math.cos(nebulaTime * 0.5) * 150;
-             const grad1 = ctx.createRadialGradient(x1, y1, 10, x1, y1, 420);
-             grad1.addColorStop(0, 'rgba(120, 0, 180, 0.55)');
-             grad1.addColorStop(0.4, 'rgba(80, 0, 120, 0.25)');
-             grad1.addColorStop(1, 'rgba(0, 0, 0, 0)');
-             ctx.fillStyle = grad1;
-             ctx.fillRect(0, 0, this.width, this.height);
 
-             // Cyan/electric-blue nebula
-             const x2 = this.width * 0.35 - Math.sin(nebulaTime * 0.55) * 160;
-             const y2 = this.height * 0.6 - Math.cos(nebulaTime * 0.65) * 130;
-             const grad2 = ctx.createRadialGradient(x2, y2, 10, x2, y2, 380);
-             grad2.addColorStop(0, 'rgba(0, 80, 150, 0.5)');
-             grad2.addColorStop(0.4, 'rgba(0, 40, 100, 0.22)');
-             grad2.addColorStop(1, 'rgba(0, 0, 0, 0)');
-             ctx.fillStyle = grad2;
-             ctx.fillRect(0, 0, this.width, this.height);
-             
-             // Warm orange cloud (distant star formation)
-             const x3 = this.width * 0.7 + Math.cos(nebulaTime * 0.4) * 100;
-             const y3 = this.height * 0.7 + Math.sin(nebulaTime * 0.6) * 80;
-             const grad3 = ctx.createRadialGradient(x3, y3, 5, x3, y3, 260);
-             grad3.addColorStop(0, 'rgba(140, 40, 0, 0.4)');
-             grad3.addColorStop(0.5, 'rgba(80, 20, 0, 0.15)');
-             grad3.addColorStop(1, 'rgba(0, 0, 0, 0)');
-             ctx.fillStyle = grad3;
-             ctx.fillRect(0, 0, this.width, this.height);
-             
-             ctx.restore();
-         }
+      return function (dt) {
+        const ctx = this.ctx;
+        if (ctx) {
+          // Deep space void
+          ctx.fillStyle = '#02030d';
+          ctx.fillRect(0, 0, this.width, this.height);
 
-         // Spawning logic integrated inside 60fps loop instead of stale React effect
-         if (gameStateRef.current === 'playing') {
-            time += dt * 0.016; // Increment game time in seconds
-            
-            const currentV = velocityRef.current;
-            const currentGamma = 1 / Math.sqrt(1 - Math.pow(currentV, 2));
-            
-            // Relativistic spawning speed (higher speeds increase frequencies)
-            const spawnIntervalThreshold = Math.max(0.25, 1.4 / currentGamma);
-            
-            if (time - lastSpawnTime > spawnIntervalThreshold) {
-               lastSpawnTime = time;
-               
-               // Random obstacle asset choice
-               const imgSrc = OBSTACLES[Math.floor(Math.random() * OBSTACLES.length)];
-               
-               // Diagonal trajectory vectors
-               const startFromTop = Math.random() > 0.35;
-               let startX, startY, vx, vy;
-               
-               if (startFromTop) {
-                  startX = Math.random() * this.width;
-                  startY = -60;
-                  vx = (Math.random() - 0.5) * 6; // Wide diagonal drifting
-                  vy = 3 + (currentV * 18);       // High relativistic downward speeds
-               } else {
-                  const fromLeft = Math.random() > 0.5;
-                  startX = fromLeft ? -60 : this.width + 60;
-                  startY = Math.random() * (this.height * 0.45);
-                  vx = fromLeft ? (2 + Math.random() * 5) : (-2 - Math.random() * 5);
-                  vy = 3 + (currentV * 18);
-               }
+          // Nebula clouds
+          nebulaTime += dt * 0.003;
+          ctx.save();
+          ctx.globalCompositeOperation = 'screen';
 
-               // Register obstacle with dynamic spin and diagonal physics
-               this.registerRigidBody({
-                 type: 'anomaly',
-                 x: startX,
-                 y: startY,
-                 radius: 35,
-                 imgSrc: imgSrc,
-                 vx: vx,
-                 vy: vy,
-                 rotation: Math.random() * Math.PI * 2,
-                 angularVelocity: (Math.random() - 0.5) * 0.18, // Spin
-                 update: function(dt) {
-                    this.x += this.vx * this.effects.timeDilation * dt * 0.12;
-                    this.y += this.vy * this.effects.timeDilation * dt * 0.12;
-                    this.rotation += this.angularVelocity * this.effects.timeDilation * dt * 0.12;
-                    
-                    // Direct target collision detection
-                    const playerShip = engine.entities.find(e => e.id === 'ship');
-                    if (playerShip) {
-                       const dist = Math.sqrt(Math.pow(this.x - playerShip.x, 2) + Math.pow(this.y - playerShip.y, 2));
-                       
-                       // Collision threshold with buffer
-                       if (dist < playerShip.radius + this.radius - 12) {
-                          this.dead = true; // Remove obstacle on impact
-                          
-                          // Strike damage system
-                          if (!playerShip.isInvulnerable) {
-                             playerShip.isInvulnerable = true;
-                             playerShip.isFlashing = true;
-                             
-                             // Trigger damage via synchronous callback
-                             handleDamage();
-                             
-                             setTimeout(() => {
-                                playerShip.isInvulnerable = false;
-                                playerShip.isFlashing = false;
-                             }, 1500);
-                          }
-                       }
-                    }
+          const x1 = this.width * 0.55 + Math.sin(nebulaTime * 0.7) * 180;
+          const y1 = this.height * 0.4 + Math.cos(nebulaTime * 0.5) * 150;
+          const g1 = ctx.createRadialGradient(x1, y1, 10, x1, y1, 420);
+          g1.addColorStop(0, 'rgba(120, 0, 180, 0.55)');
+          g1.addColorStop(0.4, 'rgba(80, 0, 120, 0.25)');
+          g1.addColorStop(1, 'rgba(0, 0, 0, 0)');
+          ctx.fillStyle = g1;
+          ctx.fillRect(0, 0, this.width, this.height);
 
-                    // Destroy obstacles that leave screen bounds
-                    if (this.y > engine.height + 150 || this.x < -150 || this.x > engine.width + 150) {
-                       this.dead = true; 
-                    }
-                 },
-                 render: function(ctx) {
-                    const img = imgCache.current[this.imgSrc];
-                    ctx.save();
-                    ctx.translate(this.x, this.y);
-                    ctx.rotate(this.rotation);
-                    if (img) {
-                       // Draw the obstacle image with transparency
-                       ctx.globalAlpha = 0.9;
-                       ctx.drawImage(img, -this.radius, -this.radius, this.radius * 2, this.radius * 2);
-                       ctx.globalAlpha = 1;
-                    } else {
-                       // Bright fallback so obstacles are ALWAYS visible even if image fails
-                       const obsGrad = ctx.createRadialGradient(0, 0, 2, 0, 0, this.radius);
-                       obsGrad.addColorStop(0, '#FF8844');
-                       obsGrad.addColorStop(0.6, '#CC4400');
-                       obsGrad.addColorStop(1, 'rgba(80,20,0,0.5)');
-                       ctx.fillStyle = obsGrad;
-                       ctx.beginPath();
-                       // Irregular asteroid shape
-                       for (let a = 0; a < Math.PI * 2; a += 0.5) {
-                          const noise = 0.7 + Math.random() * 0.3;
-                          const rx = Math.cos(a) * this.radius * noise;
-                          const ry = Math.sin(a) * this.radius * noise;
-                          a === 0 ? ctx.moveTo(rx, ry) : ctx.lineTo(rx, ry);
-                       }
-                       ctx.closePath();
-                       ctx.fill();
-                    }
-                    // ALWAYS draw glowing neon outline so obstacle is visible regardless of image
-                    ctx.strokeStyle = 'rgba(255, 120, 0, 0.9)';
-                    ctx.lineWidth = 2.5;
-                    ctx.shadowColor = '#FF6600';
-                    ctx.shadowBlur = 12;
-                    ctx.beginPath();
-                    ctx.arc(0, 0, this.radius - 2, 0, Math.PI * 2);
-                    ctx.stroke();
-                    ctx.shadowBlur = 0;
-                    ctx.restore();
-                 }
-               });
-            }
-         }
+          const x2 = this.width * 0.35 - Math.sin(nebulaTime * 0.55) * 160;
+          const y2 = this.height * 0.6 - Math.cos(nebulaTime * 0.65) * 130;
+          const g2 = ctx.createRadialGradient(x2, y2, 10, x2, y2, 380);
+          g2.addColorStop(0, 'rgba(0, 80, 150, 0.5)');
+          g2.addColorStop(0.4, 'rgba(0, 40, 100, 0.22)');
+          g2.addColorStop(1, 'rgba(0, 0, 0, 0)');
+          ctx.fillStyle = g2;
+          ctx.fillRect(0, 0, this.width, this.height);
 
-         originalUpdate.call(this, dt);
-         this.entities = this.entities.filter(e => !e.dead);
+          const x3 = this.width * 0.7 + Math.cos(nebulaTime * 0.4) * 100;
+          const y3 = this.height * 0.7 + Math.sin(nebulaTime * 0.6) * 80;
+          const g3 = ctx.createRadialGradient(x3, y3, 5, x3, y3, 260);
+          g3.addColorStop(0, 'rgba(140, 40, 0, 0.4)');
+          g3.addColorStop(0.5, 'rgba(80, 20, 0, 0.15)');
+          g3.addColorStop(1, 'rgba(0, 0, 0, 0)');
+          ctx.fillStyle = g3;
+          ctx.fillRect(0, 0, this.width, this.height);
+
+          ctx.restore();
+
+          // Relativistic color tint overlay (blueshift wash at high v)
+          const v = Math.min(velocityC, 0.9999);
+          if (v > 0.4) {
+            ctx.save();
+            ctx.globalCompositeOperation = 'screen';
+            ctx.fillStyle = `rgba(0, 80, 180, ${(v - 0.4) * 0.12})`;
+            ctx.fillRect(0, 0, this.width, this.height);
+            ctx.restore();
+          }
+        }
+
+        // ── DEBRIS SPAWNING ──────────────────────────────────────────────────
+        if (gameStateRef.current === 'playing') {
+          gameTime += dt * 0.016; // dt is in frames (~60fps), convert to seconds
+
+          // Spawn interval shrinks from 2 s → 0.4 s over 60 s
+          const progress = Math.min(gameTime / GAME_DURATION, 1);
+          const spawnInterval = 2.0 - progress * 1.6; // 2.0 → 0.4
+
+          if (gameTime - lastSpawnTime > spawnInterval) {
+            lastSpawnTime = gameTime;
+
+            const imgSrc = OBSTACLES[Math.floor(Math.random() * OBSTACLES.length)];
+
+            // Spawn from top at random X
+            const startX = Math.random() * (this.width - 60) + 30;
+            const startY = -55;
+
+            // Downward velocity grows with time; slight horizontal drift
+            const vy = 3 + gameTime * 0.03;
+            const vx = (Math.random() - 0.5) * 1.8; // gentle horizontal drift
+
+            this.registerRigidBody({
+              type: 'anomaly',
+              x: startX,
+              y: startY,
+              radius: 32,
+              imgSrc: imgSrc,
+              vx: vx,
+              vy: vy,
+              rotation: Math.random() * Math.PI * 2,
+              angularVelocity: (Math.random() - 0.5) * 0.12,
+              update: function (dt) {
+                this.x += this.vx * dt * 0.016 * 60; // normalize to 60fps
+                this.y += this.vy * dt * 0.016 * 60;
+                this.rotation += this.angularVelocity * dt * 0.016 * 60;
+
+                // Gentle drift correction – keep debris on screen horizontally
+                if (this.x < -60 || this.x > engine.width + 60) this.dead = true;
+
+                // Collision with ship
+                const playerShip = engine.entities.find(e => e.id === 'ship');
+                if (playerShip && !playerShip.isInvulnerable) {
+                  const dx = this.x - playerShip.x;
+                  const dy = this.y - playerShip.y;
+                  const dist = Math.sqrt(dx * dx + dy * dy);
+                  if (dist < playerShip.radius + this.radius - 10) {
+                    this.dead = true;
+                    playerShip.isInvulnerable = true;
+                    playerShip.isFlashing = true;
+                    handleDamage();
+                    setTimeout(() => {
+                      if (playerShip) {
+                        playerShip.isInvulnerable = false;
+                        playerShip.isFlashing = false;
+                      }
+                    }, 1500);
+                  }
+                }
+
+                // Remove when off-screen bottom
+                if (this.y > engine.height + 80) this.dead = true;
+              },
+              render: function (ctx) {
+                const img = imgCache.current[this.imgSrc];
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.rotation);
+
+                if (img) {
+                  ctx.globalAlpha = 0.92;
+                  ctx.drawImage(img, -this.radius, -this.radius, this.radius * 2, this.radius * 2);
+                  ctx.globalAlpha = 1;
+                } else {
+                  // Fallback glowing asteroid
+                  const og = ctx.createRadialGradient(0, 0, 2, 0, 0, this.radius);
+                  og.addColorStop(0, '#FF8844');
+                  og.addColorStop(0.6, '#CC4400');
+                  og.addColorStop(1, 'rgba(80,20,0,0.5)');
+                  ctx.fillStyle = og;
+                  ctx.beginPath();
+                  for (let a = 0; a < Math.PI * 2; a += 0.5) {
+                    const noise = 0.7 + Math.random() * 0.3;
+                    const rx = Math.cos(a) * this.radius * noise;
+                    const ry = Math.sin(a) * this.radius * noise;
+                    a === 0 ? ctx.moveTo(rx, ry) : ctx.lineTo(rx, ry);
+                  }
+                  ctx.closePath();
+                  ctx.fill();
+                }
+
+                // Always draw a neon outline
+                ctx.strokeStyle = 'rgba(255, 130, 0, 0.85)';
+                ctx.lineWidth = 2;
+                ctx.shadowColor = '#FF6600';
+                ctx.shadowBlur = 10;
+                ctx.beginPath();
+                ctx.arc(0, 0, this.radius - 2, 0, Math.PI * 2);
+                ctx.stroke();
+                ctx.shadowBlur = 0;
+                ctx.restore();
+              }
+            });
+          }
+
+          // ── CANVAS BOTTOM HINT ───────────────────────────────────────────────
+          if (ctx) {
+            ctx.save();
+            ctx.font = 'bold 13px monospace';
+            ctx.fillStyle = 'rgba(0, 228, 255, 0.45)';
+            ctx.textAlign = 'center';
+            ctx.fillText('← ESQUIVA →', this.width / 2, this.height - 10);
+            ctx.restore();
+          }
+        }
+
+        originalUpdate.call(this, dt);
+        this.entities = this.entities.filter(e => !e.dead);
       };
     })(engine.update);
 
-    // Input listeners
+    // ─── INPUT ──────────────────────────────────────────────────────────────────
     engine.keys = {};
-    const kd = (e) => engine.keys[e.key] = true;
-    const ku = (e) => engine.keys[e.key] = false;
+    const kd = (e) => { engine.keys[e.key] = true; };
+    const ku = (e) => { engine.keys[e.key] = false; };
     window.addEventListener('keydown', kd);
     window.addEventListener('keyup', ku);
 
-    // Mouse drag support for fluid 2D movement
-    let isDragging = false;
-    const onDown = () => isDragging = true;
-    const onUp = () => isDragging = false;
+    // Mouse / touch: follow cursor X (ship X only)
     const onMove = (e) => {
-      if (isDragging && gameStateRef.current === 'playing') {
-        const rect = canvasRef.current.getBoundingClientRect();
-        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-        const targetX = clientX - rect.left;
-        const targetY = clientY - rect.top;
-        
-        // Drag control with boundary clamp
-        ship.x = Math.max(40, Math.min(engine.width - 40, targetX));
-        ship.y = Math.max(60, Math.min(engine.height - 60, targetY));
-      }
+      if (gameStateRef.current !== 'playing') return;
+      const rect = canvasRef.current.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const scaleX = engine.width / rect.width;
+      const targetX = (clientX - rect.left) * scaleX;
+      ship.x = Math.max(50, Math.min(engine.width - 50, targetX));
     };
 
     const canvas = canvasRef.current;
-    canvas.addEventListener('mousedown', onDown);
-    canvas.addEventListener('mouseup', onUp);
     canvas.addEventListener('mousemove', onMove);
-    canvas.addEventListener('touchstart', onDown);
-    canvas.addEventListener('touchend', onUp);
-    canvas.addEventListener('touchmove', onMove);
+    canvas.addEventListener('touchmove', onMove, { passive: true });
 
     if (gameState === 'playing') {
-       engine.start();
+      engine.start();
     }
 
     return () => {
       window.removeEventListener('keydown', kd);
       window.removeEventListener('keyup', ku);
-      canvas.removeEventListener('mousedown', onDown);
-      canvas.removeEventListener('mouseup', onUp);
       canvas.removeEventListener('mousemove', onMove);
-      canvas.removeEventListener('touchstart', onDown);
-      canvas.removeEventListener('touchend', onUp);
       canvas.removeEventListener('touchmove', onMove);
       engine.stop();
     };
   }, [gameState, imagesLoaded]);
 
+  // ─── Loading screen ───────────────────────────────────────────────────────────
   if (!imagesLoaded) {
-    return <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#00E4FF', fontFamily: 'monospace' }}>CARGANDO VEHÍCULOS Y AMBIENTE ESTELAR...</div>;
+    return (
+      <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#00E4FF', fontFamily: 'monospace', fontSize: '1.1rem', letterSpacing: '0.08em' }}>
+        CARGANDO CAMPO DE DEBRIS...
+      </div>
+    );
   }
 
+  // ─── Health hearts helper ─────────────────────────────────────────────────────
+  const renderHearts = () => {
+    const hearts = [];
+    for (let i = 0; i < 3; i++) {
+      hearts.push(
+        <span key={i} style={{ fontSize: '1.4rem', opacity: i < health ? 1 : 0.2, filter: i < health ? 'drop-shadow(0 0 6px #FF4466)' : 'none', transition: 'opacity 0.3s' }}>
+          ♥
+        </span>
+      );
+    }
+    return hearts;
+  };
+
+  // ─── Main Render ──────────────────────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#020308', color: 'white' }}>
       <Navbar />
-      
+
       <main style={{ flex: 1, padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <header style={{ textAlign: 'center', marginBottom: '1rem' }}>
-           <h1 style={{ color: '#00E4FF', margin: '0 0 0.5rem 0', textShadow: '0 0 20px rgba(0,228,255,0.5)', fontFamily: 'monospace' }}>CARRERAS RELATIVISTAS</h1>
+          <h1 style={{ color: '#00E4FF', margin: '0 0 0.3rem 0', textShadow: '0 0 20px rgba(0,228,255,0.5)', fontFamily: 'monospace', fontSize: '1.6rem', letterSpacing: '0.1em' }}>
+            CAMPO DE DEBRIS RELATIVISTA
+          </h1>
         </header>
 
-        <div style={{ 
-            position: 'relative', 
-            width: '800px', 
-            height: '500px', 
-            border: '2px solid #00E4FF', 
-            borderRadius: '12px', 
-            overflow: 'hidden', 
-            boxShadow: '0 0 30px rgba(0,228,255,0.25)',
-            background: '#02030d'
+        <div style={{
+          position: 'relative',
+          width: '800px',
+          height: '500px',
+          border: '2px solid #00E4FF',
+          borderRadius: '12px',
+          overflow: 'hidden',
+          boxShadow: '0 0 30px rgba(0,228,255,0.25)',
+          background: '#02030d'
         }}>
-          
-          {/* Botón Cerrar Máquina */}
-          <button 
+
+          {/* Cerrar Máquina Button */}
+          <button
             onClick={() => window.location.href = '/hub/arcade'}
             style={{
               position: 'absolute',
@@ -615,89 +596,132 @@ export default function RelativisticRacingGame() {
             ← CERRAR MÁQUINA
           </button>
 
-          <canvas 
-            ref={canvasRef} 
-            width={800} 
-            height={500} 
-            style={{ 
-              width: '100%', 
+          {/* Canvas — NO scale transform */}
+          <canvas
+            ref={canvasRef}
+            width={800}
+            height={500}
+            style={{
+              width: '100%',
               height: '100%',
-              transform: `scale(${1 + velocityC * 0.3})`, // FOV Special Relativistic Effect
-              transition: 'transform 0.1s linear',
               background: 'transparent'
-            }} 
+            }}
           />
-          
-          {/* Main Menu */}
+
+          {/* ── MENU ── */}
           {gameState === 'menu' && (
-            <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.85)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', zIndex: 10 }}>
-              <Info size={48} color="#00E4FF" style={{ marginBottom: '1rem' }} />
-              <h2 style={{ color: 'white', marginBottom: '1rem', fontFamily: 'monospace' }}>Mecánica Especial de Altas Energías</h2>
-              <p style={{ maxWidth: '560px', color: '#aaa', lineHeight: 1.6, marginBottom: '2rem', fontSize: '0.95rem' }}>
-                Tu objetivo es guiar la astronave hasta la baliza final a <strong style={{color:'#00FF66'}}>10,000 UA</strong>.
-                <br/><br/>
-                Acelerarás automáticamente hasta alcanzar el <strong style={{color:'#00E4FF'}}>99% de la velocidad de la luz (0.99c)</strong>, deformando el tejido espaciotemporal.
-                <br/><br/>
-                <strong>Instrucciones:</strong><br/>
-                - Utiliza las flechas del teclado / teclas <strong>WASD</strong> (o arrastra por pantalla) para esquivar en <strong>2D</strong>.<br/>
-                - Evita asteroides, escombros orbitarios y patrullas alienígenas.<br/>
-                - Cada colisión restará <strong>34% de integridad estructural</strong>. Soporta hasta 3 choques antes de colapsar.
+            <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.88)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', zIndex: 10 }}>
+              <Rocket size={52} color="#00E4FF" style={{ marginBottom: '1rem', filter: 'drop-shadow(0 0 14px #00E4FF)' }} />
+              <h2 style={{ color: 'white', marginBottom: '0.8rem', fontFamily: 'monospace', fontSize: '1.35rem', letterSpacing: '0.08em' }}>
+                CAMPO DE DEBRIS RELATIVISTA
+              </h2>
+              <p style={{ maxWidth: '520px', color: '#aaa', lineHeight: 1.7, marginBottom: '2rem', fontSize: '0.95rem' }}>
+                Guía tu nave entre los campos de debris espaciales a velocidades relativistas.{' '}
+                <strong style={{ color: '#00FF66' }}>Sobrevive 60 segundos.</strong>
+                <br /><br />
+                <strong>Controles:</strong><br />
+                ← / → o <strong>A / D</strong> — mover izquierda / derecha<br />
+                Mueve el ratón sobre el campo para seguir la posición<br /><br />
+                Cada colisión consume <strong style={{ color: '#FF4466' }}>1 punto de integridad</strong>.{' '}
+                Dispones de <strong style={{ color: '#FF4466' }}>3 impactos</strong> antes de la destrucción.
               </p>
-              <button className="btn-primary" onClick={() => setGameState('playing')} style={{ background: '#00E4FF', color: 'black', fontWeight: 'bold' }}>
+              <button
+                className="btn-primary"
+                onClick={() => setGameState('playing')}
+                style={{ background: '#00E4FF', color: 'black', fontWeight: 'bold', padding: '0.75rem 2rem', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '1rem', fontFamily: 'monospace', boxShadow: '0 0 20px rgba(0,228,255,0.5)' }}
+              >
                 <Play size={20} style={{ display: 'inline', marginRight: '0.5rem', verticalAlign: 'middle' }} />
-                ACTIVAR CONDUCCIÓN RELATIVISTA
+                INICIAR MISIÓN
               </button>
             </div>
           )}
 
-          {/* Playing HUD */}
+          {/* ── PLAYING HUD ── */}
           {gameState === 'playing' && (
-            <div style={{ position: 'absolute', top: 20, left: 20, right: 20, display: 'flex', justifyContent: 'space-between', zIndex: 5, pointerEvents: 'none' }}>
-              
-              {/* Telemetry */}
-              <div style={{ fontFamily: 'monospace', color: '#00E4FF', textShadow: '0 0 5px #00E4FF', background: 'rgba(0,0,0,0.6)', padding: '10px 15px', borderRadius: '8px', border: '1px solid rgba(0, 228, 255, 0.4)' }}>
-                <div style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>VELOCIDAD: {(velocityC * 100).toFixed(0)}% c</div>
-                <div style={{ fontSize: '0.85rem', opacity: 0.85 }}>LORENTZ (γ): {lorentz.toFixed(2)}</div>
-              </div>
-              
-              {/* Health/Shield Integrity HUD */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', background: 'rgba(0,0,0,0.6)', padding: '10px 15px', borderRadius: '8px', border: '1px solid rgba(255, 50, 50, 0.4)', width: '200px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'monospace', fontSize: '0.8rem', fontWeight: 'bold', color: health > 35 ? '#ff5555' : '#ff1111' }}>
-                  <span>INTEGRIDAD CASCO</span>
-                  <span>{Math.round(health)}%</span>
+            <>
+              {/* Top Left: velocity + lorentz */}
+              <div style={{
+                position: 'absolute', top: 16, left: 16, zIndex: 5, pointerEvents: 'none',
+                fontFamily: 'monospace', color: '#00E4FF', textShadow: '0 0 5px #00E4FF',
+                background: 'rgba(0,0,0,0.65)', padding: '8px 14px', borderRadius: '8px',
+                border: '1px solid rgba(0,228,255,0.35)'
+              }}>
+                <div style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>
+                  {(velocityC * 100).toFixed(0)}% c
                 </div>
-                <div style={{ width: '100%', height: '8px', background: '#222', borderRadius: '4px', overflow: 'hidden', border: '1px solid #444' }}>
-                  <div style={{ width: `${health}%`, height: '100%', background: health > 50 ? '#00FF66' : health > 30 ? '#FFA500' : '#FF2A2A', transition: 'width 0.3s ease' }} />
-                </div>
+                <div style={{ fontSize: '0.78rem', opacity: 0.8 }}>γ = {lorentz.toFixed(3)}</div>
               </div>
 
-              {/* Space Beacon Target Progress */}
-              <div style={{ fontFamily: 'monospace', color: '#00FF66', textShadow: '0 0 5px #00FF66', background: 'rgba(0,0,0,0.6)', padding: '10px 15px', borderRadius: '8px', border: '1px solid rgba(0, 255, 102, 0.4)', fontSize: '1.1rem', fontWeight: 'bold', textAlign: 'right' }}>
-                DISTANCIA<br/>
-                {Math.floor(distance)} / 10000 UA
+              {/* Top Center: countdown */}
+              <div style={{
+                position: 'absolute', top: 16, left: '50%', transform: 'translateX(-50%)',
+                zIndex: 5, pointerEvents: 'none',
+                fontFamily: 'monospace', color: timeLeft <= 10 ? '#FF4466' : '#00FF99',
+                textShadow: `0 0 12px ${timeLeft <= 10 ? '#FF4466' : '#00FF99'}`,
+                background: 'rgba(0,0,0,0.65)', padding: '8px 18px', borderRadius: '8px',
+                border: `1px solid ${timeLeft <= 10 ? 'rgba(255,68,102,0.45)' : 'rgba(0,255,153,0.35)'}`,
+                fontSize: '1.4rem', fontWeight: 'bold', letterSpacing: '0.06em',
+                transition: 'color 0.3s, text-shadow 0.3s'
+              }}>
+                {String(timeLeft).padStart(2, '0')}s
               </div>
-            </div>
+
+              {/* Top Right: hull integrity hearts */}
+              <div style={{
+                position: 'absolute', top: 16, right: 16, zIndex: 5, pointerEvents: 'none',
+                background: 'rgba(0,0,0,0.65)', padding: '8px 14px', borderRadius: '8px',
+                border: '1px solid rgba(255,68,102,0.35)', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px'
+              }}>
+                <div style={{ fontFamily: 'monospace', fontSize: '0.72rem', color: '#FF4466', fontWeight: 'bold', letterSpacing: '0.06em' }}>
+                  INTEGRIDAD CASCO
+                </div>
+                <div style={{ display: 'flex', gap: '6px' }}>
+                  {renderHearts()}
+                </div>
+              </div>
+            </>
           )}
 
-          {/* Won Screen */}
+          {/* ── WON SCREEN ── */}
           {gameState === 'won' && (
-            <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,255,136,0.2)', backdropFilter: 'blur(10px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', zIndex: 10 }}>
-              <FastForward size={64} color="#00FF88" style={{ marginBottom: '1rem' }} />
-              <h2 style={{ color: 'white', fontSize: '2.5rem', marginBottom: '1rem', textShadow: '0 0 20px #00FF88', fontFamily: 'monospace' }}>¡SALTO HIPERESPACIAL COMPLETADO!</h2>
-              <p style={{ color: 'white', marginBottom: '2rem', maxWidth: '500px' }}>Alcanzaste las coordenadas destino manipulando con éxito la relatividad especial y la contracción de Lorentz.</p>
-              <button className="btn-primary" onClick={() => window.location.reload()} style={{ background: '#00FF88', color: 'black' }}>Sincronizar Logro Estudiantil</button>
+            <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,255,136,0.15)', backdropFilter: 'blur(10px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', zIndex: 10 }}>
+              <FastForward size={64} color="#00FF88" style={{ marginBottom: '1rem', filter: 'drop-shadow(0 0 20px #00FF88)' }} />
+              <h2 style={{ color: 'white', fontSize: '2.2rem', marginBottom: '1rem', textShadow: '0 0 20px #00FF88', fontFamily: 'monospace' }}>
+                ¡ZONA SEGURA ALCANZADA!
+              </h2>
+              <p style={{ color: '#ccc', marginBottom: '2rem', maxWidth: '480px', lineHeight: 1.6 }}>
+                Sobreviviste 60 segundos a través del campo de debris relativista. Tu comprensión de la contracción de Lorentz ha mantenido la nave intacta.
+              </p>
+              <button
+                className="btn-primary"
+                onClick={() => window.location.reload()}
+                style={{ background: '#00FF88', color: 'black', fontWeight: 'bold', padding: '0.75rem 2rem', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '1rem', fontFamily: 'monospace' }}
+              >
+                Sincronizar Logro Estudiantil
+              </button>
             </div>
           )}
 
-          {/* Lost Screen */}
+          {/* ── LOST SCREEN ── */}
           {gameState === 'lost' && (
-            <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,42,42,0.25)', backdropFilter: 'blur(10px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', zIndex: 10 }}>
-              <AlertTriangle size={64} color="#FF2A2A" style={{ marginBottom: '1rem' }} />
-              <h2 style={{ color: 'white', fontSize: '2.3rem', marginBottom: '1rem', textShadow: '0 0 20px #FF2A2A', fontFamily: 'monospace' }}>FUSIÓN DE CASCO DETECTADA</h2>
-              <p style={{ color: 'white', marginBottom: '2rem', maxWidth: '500px' }}>La integridad de la nave bajó al 0% debido a colisiones masivas de escombros espaciales sublumínicos.</p>
-              <button className="btn-primary" onClick={() => window.location.reload()} style={{ background: '#FF2A2A', color: 'white' }}>Rearmar y Reintentar</button>
+            <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,42,42,0.2)', backdropFilter: 'blur(10px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', zIndex: 10 }}>
+              <AlertTriangle size={64} color="#FF2A2A" style={{ marginBottom: '1rem', filter: 'drop-shadow(0 0 16px #FF2A2A)' }} />
+              <h2 style={{ color: 'white', fontSize: '2.1rem', marginBottom: '1rem', textShadow: '0 0 20px #FF2A2A', fontFamily: 'monospace' }}>
+                CASCO DESTRUIDO
+              </h2>
+              <p style={{ color: '#ccc', marginBottom: '2rem', maxWidth: '480px', lineHeight: 1.6 }}>
+                El campo de debris superó la integridad estructural de la nave. El tiempo relativista no perdona errores de maniobra.
+              </p>
+              <button
+                className="btn-primary"
+                onClick={() => window.location.reload()}
+                style={{ background: '#FF2A2A', color: 'white', fontWeight: 'bold', padding: '0.75rem 2rem', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '1rem', fontFamily: 'monospace' }}
+              >
+                Rearmar y Reintentar
+              </button>
             </div>
           )}
+
         </div>
       </main>
     </div>

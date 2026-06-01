@@ -261,7 +261,21 @@ export default function ArcadeExoplanet() {
           <div style={{ width: '100%', maxWidth: '800px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
               <h2 style={{ color: ['memory', 'ham'].includes(activeGame) ? 'var(--success)' : (['words'].includes(activeGame) ? 'var(--electric-blue)' : (['trivia'].includes(activeGame) ? '#FF64C8' : 'var(--gold-star)')), margin: 0 }}>
-                 Simulador: {activeGame === 'memory' ? 'Memoria Fotográfica' : (activeGame === 'words' ? 'Sopa Sideral' : (activeGame === 'trivia' ? 'Defensa y Trivia' : (activeGame === 'laika' ? 'Radar Biológico Táctico' : (activeGame === 'ham' ? 'Control de Impulso Mercury' : 'Lotería Espacial'))))}
+                 Simulador: {
+                   activeGame === 'memory'     ? 'Memoria Fotográfica' :
+                   activeGame === 'words'      ? 'Sopa Sideral' :
+                   activeGame === 'trivia'     ? 'Defensa y Trivia' :
+                   activeGame === 'laika'      ? 'Radar Biológico Táctico' :
+                   activeGame === 'ham'        ? 'Control de Impulso Mercury' :
+                   activeGame === 'astrolabio' ? 'Cosmos Piano' :
+                   activeGame === 'xeno'       ? 'Xeno-Paleontología' :
+                   activeGame === 'gravedad'   ? 'Conecta la Estación' :
+                   activeGame === 'slingshot'  ? 'Surfea la Gravedad' :
+                   activeGame === 'bingo'      ? 'Bingo Espacial' :
+                   activeGame === 'timeline'   ? 'Línea del Tiempo' :
+                   activeGame === 'finder'     ? 'Buscador Estelar' :
+                   'Simulador'
+                 }
               </h2>
               <button 
                 onClick={() => setActiveGame(null)} 

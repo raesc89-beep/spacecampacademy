@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Star configuration ───────────────────────────────────────────────────────
 const STARS = [
-  { id: 0, label: 'α', color: '#ff4d4d', glow: '#ff0000', dark: '#7a0000' },
-  { id: 1, label: 'β', color: '#4da6ff', glow: '#0088ff', dark: '#003d7a' },
-  { id: 2, label: 'γ', color: '#4dff88', glow: '#00ff55', dark: '#007a2a' },
-  { id: 3, label: 'δ', color: '#ffd700', glow: '#ffaa00', dark: '#7a5500' },
-  { id: 4, label: 'ε', color: '#00e5ff', glow: '#00ccee', dark: '#005566' },
-  { id: 5, label: 'ζ', color: '#cc66ff', glow: '#9900ff', dark: '#440077' },
+  { id: 0, label: 'α', color: '#ff5566', glow: '#ff0033', dark: '#6a0020', neon: '#ff8899' },
+  { id: 1, label: 'β', color: '#4da6ff', glow: '#0088ff', dark: '#002a5c', neon: '#88ccff' },
+  { id: 2, label: 'γ', color: '#44ff99', glow: '#00ee66', dark: '#003322', neon: '#88ffcc' },
+  { id: 3, label: 'δ', color: '#ffd700', glow: '#ffaa00', dark: '#5a3e00', neon: '#ffe866' },
+  { id: 4, label: 'ε', color: '#00e5ff', glow: '#00ccee', dark: '#003344', neon: '#66f0ff' },
+  { id: 5, label: 'ζ', color: '#cc66ff', glow: '#9900ff', dark: '#330050', neon: '#dd99ff' },
 ];
 
 const WIN_ROUNDS = 3;       // must complete full-6 sequence this many times to win
@@ -29,44 +29,65 @@ function hexPoints(cx, cy, r) {
 
 // ─── Single hex star button ──────────────────────────────────────────────────
 function StarButton({ star, isLit, isActive, onClick, shake }) {
-  const size = 70;
-  const r    = 32;
+  const size = 86;
+  const r    = 36;
   const cx   = size / 2;
   const cy   = size / 2;
 
   return (
     <motion.div
       onClick={onClick}
-      animate={shake ? { x: [0, -8, 8, -6, 6, 0] } : {}}
-      transition={{ duration: 0.35 }}
+      animate={shake ? { x: [0, -10, 10, -8, 8, -4, 4, 0] } : {}}
+      transition={{ duration: 0.4 }}
       style={{ display: 'inline-block', cursor: isActive ? 'pointer' : 'default' }}
-      whileHover={isActive ? { scale: 1.08 } : {}}
-      whileTap={isActive ? { scale: 0.95 } : {}}
+      whileHover={isActive ? { scale: 1.12, y: -4 } : {}}
+      whileTap={isActive ? { scale: 0.92 } : {}}
     >
       <motion.svg
         width={size}
         height={size}
         animate={{
-          scale: isLit ? 1.4 : 1,
+          scale: isLit ? 1.35 : 1,
           filter: isLit
-            ? `drop-shadow(0 0 14px ${star.glow}) drop-shadow(0 0 28px ${star.color})`
-            : `drop-shadow(0 0 4px ${star.dark})`,
+            ? `drop-shadow(0 0 16px ${star.glow}) drop-shadow(0 0 32px ${star.color}) drop-shadow(0 0 48px ${star.neon})`
+            : isActive
+            ? `drop-shadow(0 0 6px ${star.dark}88) drop-shadow(0 0 2px ${star.color}44)`
+            : `drop-shadow(0 0 3px ${star.dark})`,
         }}
-        transition={{ duration: 0.15 }}
+        transition={{ duration: 0.18 }}
       >
+        {/* Outer ring (lit only) */}
+        {isLit && (
+          <motion.polygon
+            points={hexPoints(cx, cy, r + 8)}
+            fill="none"
+            stroke={star.neon}
+            strokeWidth={1.5}
+            opacity={0.5}
+            animate={{ opacity: [0.3, 0.8, 0.3] }}
+            transition={{ repeat: Infinity, duration: 0.6 }}
+          />
+        )}
+        {/* Main hex body */}
         <polygon
           points={hexPoints(cx, cy, r)}
           fill={isLit ? star.color : star.dark}
-          stroke={star.color}
+          stroke={isLit ? star.neon : star.color}
           strokeWidth={isLit ? 2.5 : 1.5}
         />
+        {/* Inner hex shine */}
+        <polygon
+          points={hexPoints(cx, cy - 2, r * 0.55)}
+          fill={isLit ? `${star.neon}44` : `${star.color}18`}
+        />
+        {/* Label */}
         <text
           x={cx}
-          y={cy + 5}
+          y={cy + 6}
           textAnchor="middle"
           fill={isLit ? '#fff' : star.color}
-          fontSize={18}
-          fontFamily="monospace"
+          fontSize={22}
+          fontFamily="Georgia, serif"
           fontWeight="bold"
           style={{ pointerEvents: 'none', userSelect: 'none' }}
         >
@@ -212,39 +233,55 @@ export default function AstrolabioQuantico({ onComplete }) {
   // ── Layout ──────────────────────────────────────────────────────────────────
   return (
     <div style={styles.wrapper}>
-      {/* Starfield dots via CSS repeating gradient */}
+      {/* Animated nebula background layers */}
+      <div style={styles.nebula1} />
+      <div style={styles.nebula2} />
+      {/* Starfield dots */}
       <div style={styles.starfield} />
+      {/* Scanline overlay */}
+      <div style={styles.scanlines} />
 
       {/* ── Top bar ── */}
       <div style={styles.topBar}>
         <div style={styles.topItem}>
           <span style={styles.topLabel}>PUNTUACIÓN</span>
-          <span style={styles.topValue}>{score}</span>
+          <span style={{ ...styles.topValue, color: '#ffd700', textShadow: '0 0 12px #ffd700' }}>{score}</span>
         </div>
-        <div style={{ ...styles.topItem, alignItems: 'center' }}>
+        <div style={{ ...styles.topItem, alignItems: 'center', gap: '6px' }}>
           <span style={styles.gameTitle}>COSMOS PIANO</span>
           {winStreak > 0 && (
-            <span style={styles.streakBadge}>{'★'.repeat(winStreak)}</span>
+            <motion.span
+              style={styles.streakBadge}
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ repeat: 2, duration: 0.3 }}
+            >
+              {'★'.repeat(winStreak)}
+            </motion.span>
           )}
         </div>
         <div style={{ ...styles.topItem, alignItems: 'flex-end' }}>
           <span style={styles.topLabel}>TIEMPO</span>
-          <span style={{ ...styles.topValue, color: timerColor }}>{timeLeft}s</span>
+          <span style={{ ...styles.topValue, color: timerColor, textShadow: `0 0 12px ${timerColor}` }}>{timeLeft}s</span>
         </div>
       </div>
 
       {/* ── Instruction header ── */}
       <div style={styles.header}>
         <p style={styles.subtitle}>
-          Memoriza la secuencia y repítela
+          ✨ Memoriza la secuencia y repítela ✨
         </p>
         <AnimatePresence mode="wait">
           <motion.p
             key={statusMsg}
-            initial={{ opacity: 0, y: -6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            style={styles.statusMsg}
+            initial={{ opacity: 0, y: -8, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            style={{
+              ...styles.statusMsg,
+              color: statusMsg.includes('Error') ? '#ff6688' :
+                     statusMsg.includes('Correcto') || statusMsg.includes('Perfecto') ? '#44ff99' :
+                     statusMsg.includes('turno') ? '#ffd700' : '#a0c8ff'
+            }}
           >
             {statusMsg}
           </motion.p>
@@ -344,9 +381,9 @@ const styles = {
   wrapper: {
     position:        'relative',
     width:           '100%',
-    minHeight:       '520px',
-    background:      'linear-gradient(160deg, #020d1a 0%, #041528 50%, #060e24 100%)',
-    borderRadius:    '16px',
+    minHeight:       '580px',
+    background:      'linear-gradient(160deg, #010812 0%, #020f20 40%, #040a1c 70%, #08061a 100%)',
+    borderRadius:    '20px',
     overflow:        'hidden',
     display:         'flex',
     flexDirection:   'column',
@@ -354,109 +391,145 @@ const styles = {
     fontFamily:      "'Courier New', monospace",
     color:           '#c0d8ff',
     userSelect:      'none',
+    boxShadow:       '0 0 60px rgba(0,80,200,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+    border:          '1px solid rgba(0,180,255,0.15)',
+  },
+  nebula1: {
+    position:        'absolute',
+    inset:           0,
+    background:      'radial-gradient(ellipse 70% 50% at 20% 60%, rgba(80,0,180,0.18) 0%, transparent 70%)',
+    pointerEvents:   'none',
+    animation:       'none',
+  },
+  nebula2: {
+    position:        'absolute',
+    inset:           0,
+    background:      'radial-gradient(ellipse 60% 45% at 80% 30%, rgba(0,80,160,0.16) 0%, transparent 65%)',
+    pointerEvents:   'none',
+  },
+  scanlines: {
+    position:        'absolute',
+    inset:           0,
+    backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.07) 2px, rgba(0,0,0,0.07) 4px)',
+    pointerEvents:   'none',
+    zIndex:          0,
   },
   starfield: {
     position:        'absolute',
     inset:           0,
     backgroundImage: `
-      radial-gradient(1px 1px at 10% 20%, #ffffff55, transparent),
-      radial-gradient(1px 1px at 30% 60%, #ffffff33, transparent),
-      radial-gradient(1px 1px at 55% 15%, #ffffff44, transparent),
-      radial-gradient(1px 1px at 70% 80%, #ffffff22, transparent),
-      radial-gradient(1px 1px at 85% 40%, #ffffff55, transparent),
-      radial-gradient(1px 1px at 20% 90%, #ffffff33, transparent),
-      radial-gradient(1.5px 1.5px at 45% 50%, #ffffff22, transparent),
-      radial-gradient(1px 1px at 90% 10%, #ffffff44, transparent)
+      radial-gradient(1px 1px at 8% 15%, #ffffffaa, transparent),
+      radial-gradient(1.5px 1.5px at 22% 72%, #ffffff88, transparent),
+      radial-gradient(1px 1px at 38% 8%, #ffffffbb, transparent),
+      radial-gradient(1px 1px at 52% 55%, #ffffff66, transparent),
+      radial-gradient(2px 2px at 65% 82%, #ffffff44, transparent),
+      radial-gradient(1px 1px at 78% 18%, #ffffffcc, transparent),
+      radial-gradient(1px 1px at 88% 48%, #ffffff88, transparent),
+      radial-gradient(1.5px 1.5px at 14% 88%, #ffffff55, transparent),
+      radial-gradient(1px 1px at 44% 34%, #ffffffaa, transparent),
+      radial-gradient(1px 1px at 92% 70%, #ffffff77, transparent),
+      radial-gradient(1px 1px at 5% 50%, #ffffff66, transparent),
+      radial-gradient(1px 1px at 72% 40%, #ffffff99, transparent)
     `,
     pointerEvents:   'none',
+    zIndex:          0,
   },
   topBar: {
     width:           '100%',
     display:         'flex',
     justifyContent:  'space-between',
-    alignItems:      'flex-start',
-    padding:         '14px 20px 8px',
-    borderBottom:    '1px solid #0a2040',
+    alignItems:      'center',
+    padding:         '16px 24px 10px',
+    borderBottom:    '1px solid rgba(0,150,255,0.2)',
     zIndex:          1,
+    background:      'rgba(0,0,0,0.3)',
+    backdropFilter:  'blur(8px)',
   },
   topItem: {
     display:         'flex',
     flexDirection:   'column',
-    gap:             '2px',
-    minWidth:        '80px',
+    gap:             '3px',
+    minWidth:        '90px',
   },
   topLabel: {
     fontSize:        '9px',
-    letterSpacing:   '2px',
-    color:           '#4a6a8a',
+    letterSpacing:   '2.5px',
+    color:           '#3a5a8a',
     textTransform:   'uppercase',
   },
   topValue: {
-    fontSize:        '22px',
+    fontSize:        '26px',
     fontWeight:      'bold',
     color:           '#00e5ff',
     lineHeight:      1,
+    fontFamily:      'monospace',
   },
   gameTitle: {
-    fontSize:        '14px',
+    fontSize:        '15px',
     fontWeight:      'bold',
-    letterSpacing:   '3px',
-    color:           '#7ab8ff',
+    letterSpacing:   '4px',
+    background:      'linear-gradient(90deg, #00e5ff, #cc66ff, #ffd700)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
   },
   streakBadge: {
-    fontSize:        '12px',
+    fontSize:        '14px',
     color:           '#ffd700',
     marginTop:       '2px',
-    letterSpacing:   '2px',
+    letterSpacing:   '3px',
+    textShadow:      '0 0 10px #ffd700',
   },
   header: {
     textAlign:       'center',
-    padding:         '10px 16px 4px',
+    padding:         '12px 16px 6px',
     zIndex:          1,
   },
   subtitle: {
     margin:          0,
     fontSize:        '11px',
-    letterSpacing:   '1.5px',
-    color:           '#4a7aaa',
+    letterSpacing:   '2px',
+    color:           '#3a6a9a',
     textTransform:   'uppercase',
   },
   statusMsg: {
-    margin:          '6px 0 0',
-    fontSize:        '13px',
-    color:           '#a0c8ff',
-    minHeight:       '18px',
+    margin:          '8px 0 0',
+    fontSize:        '15px',
+    fontWeight:      'bold',
+    minHeight:       '22px',
+    textShadow:      '0 0 10px currentColor',
   },
   roundRow: {
     display:         'flex',
-    gap:             '10px',
-    margin:          '8px 0 4px',
+    gap:             '12px',
+    margin:          '10px 0 6px',
     zIndex:          1,
   },
   roundDot: {
-    width:           '12px',
-    height:          '12px',
+    width:           '14px',
+    height:          '14px',
     borderRadius:    '50%',
     transition:      'background 0.3s, box-shadow 0.3s',
+    border:          '1px solid rgba(0,150,255,0.3)',
   },
   starGrid: {
     display:         'grid',
-    gridTemplateColumns: 'repeat(3, 80px)',
-    gridTemplateRows:    'repeat(2, 80px)',
-    gap:             '12px',
+    gridTemplateColumns: 'repeat(3, 96px)',
+    gridTemplateRows:    'repeat(2, 96px)',
+    gap:             '16px',
     placeItems:      'center',
-    margin:          '16px 0',
+    margin:          '18px 0 8px',
     zIndex:          1,
   },
   overlay: {
     position:        'absolute',
     inset:           0,
-    background:      'rgba(2, 10, 24, 0.88)',
+    background:      'rgba(1, 6, 18, 0.92)',
     display:         'flex',
     flexDirection:   'column',
     alignItems:      'center',
     justifyContent:  'center',
-    gap:             '16px',
+    gap:             '18px',
     zIndex:          10,
     backdropFilter:  'blur(4px)',
     borderRadius:    '16px',
