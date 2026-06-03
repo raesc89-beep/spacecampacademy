@@ -65,6 +65,38 @@ service cloud.firestore {
     }
 
     // ─────────────────────────────────────────────
+    // COLECCIÓN: arcadeScores
+    // Todos los usuarios autenticados pueden leer (ranking).
+    // Un usuario solo puede escribir su propio score (docId = userId_gameId).
+    // ─────────────────────────────────────────────
+    match /arcadeScores/{scoreId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() &&
+                      request.resource.data.userId == request.auth.uid;
+    }
+
+    // ─────────────────────────────────────────────
+    // COLECCIÓN: course_modules
+    // Todos los usuarios autenticados pueden leer (páginas de curso).
+    // Solo admins pueden escribir (editor de módulos).
+    // ─────────────────────────────────────────────
+    match /course_modules/{moduleId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ─────────────────────────────────────────────
+    // COLECCIÓN: quizResults
+    // Usuarios autenticados pueden crear sus propios resultados.
+    // Solo admins pueden leer todos.
+    // ─────────────────────────────────────────────
+    match /quizResults/{resultId} {
+      allow create: if isAuthenticated();
+      allow read: if isAdmin();
+      allow update, delete: if isAdmin();
+    }
+
+    // ─────────────────────────────────────────────
     // BLOQUEO GLOBAL: cualquier colección no listada
     // está completamente bloqueada por defecto.
     // ─────────────────────────────────────────────
