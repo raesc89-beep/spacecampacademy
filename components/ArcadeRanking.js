@@ -7,7 +7,9 @@ import {
   orderBy,
   limit,
   onSnapshot,
-  addDoc,
+  doc,
+  getDoc,
+  setDoc,
   serverTimestamp,
 } from 'firebase/firestore';
 import { Trophy, Globe, Gamepad2, Medal } from 'lucide-react';
@@ -17,13 +19,21 @@ import { Trophy, Globe, Gamepad2, Medal } from 'lucide-react';
 // ─────────────────────────────────────────────
 export async function saveArcadeScore(db, gameId, gameName, userId, userName, score) {
   if (!userId || score === undefined || score === null) return;
+  const numScore = Number(score);
+  const docId = `${userId}_${gameId}`;
   try {
-    await addDoc(collection(db, 'arcadeScores'), {
+    const docRef = doc(db, 'arcadeScores', docId);
+    const existing = await getDoc(docRef);
+    if (existing.exists() && existing.data().score >= numScore) {
+      // Existing score is equal or higher — skip
+      return;
+    }
+    await setDoc(docRef, {
       gameId,
       gameName,
       userId,
       userName: userName || 'Jugador',
-      score: Number(score),
+      score: numScore,
       createdAt: serverTimestamp(),
     });
   } catch (err) {
@@ -282,8 +292,12 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
             <span>Conectando…</span>
           </div>
         ) : error ? (
-          <div style={{ textAlign: 'center', color: 'rgba(255,100,100,0.6)', fontSize: '0.75rem', padding: '1rem' }}>
-            ⚠️ {error}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100px', gap: '0.5rem', color: 'rgba(255,100,100,0.6)' }}>
+            <Medal size={28} style={{ opacity: 0.4, color: '#ff6464' }} />
+            <span style={{ fontSize: '0.78rem', textAlign: 'center' }}>
+              ⚠️ {error}<br />
+              <span style={{ fontSize: '0.68rem', opacity: 0.6 }}>Reintentando conexión…</span>
+            </span>
           </div>
         ) : activeScores.length === 0 ? (
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100px', gap: '0.5rem', color: 'rgba(255,255,255,0.3)' }}>

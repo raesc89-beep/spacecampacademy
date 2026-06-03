@@ -78,7 +78,7 @@ export default function AdminUsersPage() {
 
   const globalEconomy = users.reduce((acc, u) => acc + (u.progress?.stars || 0), 0);
 
-  if (accessDenied) return <div style={{ padding: '3rem', textAlign: 'center' }}>Acceso Denegado: Requiere nivel de Comandante.</div>;
+
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingBottom: '3rem' }}>

@@ -103,7 +103,7 @@ export default function CourseModule() {
         };
 
         // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, arqueoastronomia_maya, ciencia_star_wars o ciencia_volver_al_futuro, usar los datos estáticos puros.
-        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('robots_')) {
+        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('robots_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('davinci_')) {
           const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
           if (staticMod) {
              setModuleData(enforce15x15Rule(staticMod));
@@ -117,12 +117,22 @@ export default function CourseModule() {
           const firestoreData = firestoreDoc.data();
           const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
           if (staticMod) {
+            // Admin API writes sections to top-level 'sections' field in Firestore
+            // Legacy format had them nested under contentEs.sections
+            const firestoreSections = firestoreData.sections || firestoreData.contentEs?.sections || null;
+            const firestoreQuiz = firestoreData.quizEs || null;
             let mergedMod = {
               ...staticMod,
+              // Override color/title if admin changed them
+              ...(firestoreData.titleEs ? { titleEs: firestoreData.titleEs } : {}),
+              ...(firestoreData.badgeEs ? { badgeEs: firestoreData.badgeEs } : {}),
+              ...(firestoreData.color ? { color: firestoreData.color } : {}),
               contentEs: {
                 ...staticMod.contentEs,
-                sections: firestoreData.sections || staticMod.contentEs?.sections || [],
-              }
+                sections: firestoreSections || staticMod.contentEs?.sections || [],
+              },
+              // Use Firestore quiz if available
+              quizEs: firestoreQuiz || staticMod.quizEs || [],
             };
             setModuleData(enforce15x15Rule(mergedMod));
           } else {

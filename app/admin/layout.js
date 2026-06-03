@@ -2,7 +2,7 @@
 import { useAuth } from '@/hooks/useAuth';
 import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { LayoutDashboard, Users, BookOpen, FileText, Database, ShieldAlert } from 'lucide-react';
+import { LayoutDashboard, Users, BookOpen, HelpCircle, FileText, Database, ShieldAlert } from 'lucide-react';
 
 export default function AdminLayout({ children }) {
   const { user, userData, loading } = useAuth();
@@ -51,6 +51,9 @@ export default function AdminLayout({ children }) {
           </Link>
           <Link href="/admin/modules" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', padding: '0.8rem 1rem', borderRadius: '8px', color: 'white', textDecoration: 'none' }}>
             <BookOpen size={20} /> Editor Módulos
+          </Link>
+          <Link href="/admin/quiz" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', padding: '0.8rem 1rem', borderRadius: '8px', color: 'white', textDecoration: 'none' }}>
+            <HelpCircle size={20} /> Editor Quiz
           </Link>
           <Link href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', padding: '0.8rem 1rem', borderRadius: '8px', color: 'white', textDecoration: 'none', opacity: 0.5 }}>
             <FileText size={20} /> Reportes SCORM/H5P
