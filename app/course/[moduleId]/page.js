@@ -6,7 +6,7 @@ import { doc, getDoc } from 'firebase/firestore';
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { BookOpen, AlertCircle, ArrowRight, CheckCircle, X, Maximize2 } from 'lucide-react';
+import { BookOpen, AlertCircle, ArrowRight, CheckCircle, X, Maximize2, ChevronLeft, Home } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
@@ -164,6 +164,66 @@ export default function CourseModule() {
 
   if (!moduleData) return null;
 
+  // ── Smart hub back-navigation based on module ID prefix ──
+  const HUB_MAP = {
+    egypt: { path: '/hub/egypt-astro', name: 'Arqueoastronomía Egipcia' },
+    animales: { path: '/hub/animales', name: 'Animales del Espacio' },
+    apollo8: { path: '/hub/apollo8', name: 'Apollo 8' },
+    apollo10: { path: '/hub/apollo10', name: 'Apollo 10' },
+    apollo11: { path: '/hub/apollo11', name: 'Apollo 11' },
+    area51: { path: '/hub/area51', name: 'Área 51' },
+    asteroides: { path: '/hub/asteroides-cometas', name: 'Asteroides y Cometas' },
+    bttf: { path: '/hub/bttf', name: 'Volver al Futuro' },
+    copernico: { path: '/hub/copernico', name: 'Copérnico' },
+    davinci: { path: '/hub/davinci', name: 'Da Vinci' },
+    exoplanetas: { path: '/hub/exoplanetas', name: 'Exoplanetas' },
+    faraday: { path: '/hub/faraday', name: 'Faraday' },
+    galileo: { path: '/hub/galileo', name: 'Galileo' },
+    interestelar: { path: '/hub/interstellar', name: 'Interstellar' },
+    interstellar: { path: '/hub/interstellar', name: 'Interstellar' },
+    maya: { path: '/hub/maya-astro', name: 'Arqueoastronomía Maya' },
+    arqueoastronomia_maya: { path: '/hub/maya-astro', name: 'Arqueoastronomía Maya' },
+    objetos_interestelares: { path: '/hub/objetos-interestelares', name: 'Objetos Interestelares' },
+    pioneros: { path: '/hub/pioneros', name: 'Pioneros del Espacio' },
+    rocosos: { path: '/hub/planetas-rocosos', name: 'Planetas Rocosos' },
+    viaje_planetas_rocosos: { path: '/hub/planetas-rocosos', name: 'Planetas Rocosos' },
+    robots: { path: '/hub/robots-espacio', name: 'Robots en el Espacio' },
+    starwars: { path: '/hub/star-wars', name: 'Ciencia de Star Wars' },
+    agujeros: { path: '/hub/agujeros-gusano', name: 'Agujeros de Gusano' },
+    wormhole: { path: '/hub/agujeros-gusano', name: 'Agujeros de Gusano' },
+    stellar: { path: '/hub/stellar-objects', name: 'Objetos Estelares' },
+    black_hole: { path: '/hub/stellar-objects', name: 'Objetos Estelares' },
+    pulsar: { path: '/hub/stellar-objects', name: 'Objetos Estelares' },
+    quasar: { path: '/hub/stellar-objects', name: 'Objetos Estelares' },
+    white_dwarf: { path: '/hub/stellar-objects', name: 'Objetos Estelares' },
+    red_dwarf: { path: '/hub/stellar-objects', name: 'Objetos Estelares' },
+    earth: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    mars: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    jupiter: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    saturn: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    venus: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    mercury: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    neptune: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    uranus: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    pluto: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    sun: { path: '/hub/solar-system', name: 'Sistema Solar' },
+  };
+
+  function getHubInfo(moduleId) {
+    // Try exact match first
+    if (HUB_MAP[moduleId]) return HUB_MAP[moduleId];
+    // Try prefix matching (longest prefix first)
+    const keys = Object.keys(HUB_MAP).sort((a, b) => b.length - a.length);
+    for (const key of keys) {
+      if (moduleId.startsWith(key + '_') || moduleId.startsWith(key)) {
+        return HUB_MAP[key];
+      }
+    }
+    return null;
+  }
+
+  const hubInfo = getHubInfo(moduleData.id);
+
   const isCompleted = userData?.progress?.completedModules?.includes(moduleData.id);
   
   const isAnomaly = moduleData.id.startsWith('stellar-');
@@ -187,6 +247,35 @@ export default function CourseModule() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
+
+      {/* ── Breadcrumb Navigation Bar ── */}
+      <div style={{
+        position: 'sticky', top: 0, zIndex: 90,
+        background: 'rgba(7, 11, 25, 0.85)',
+        backdropFilter: 'blur(16px)',
+        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        padding: '0.65rem 2rem',
+        display: 'flex', alignItems: 'center', gap: '0.5rem',
+        fontSize: '0.82rem',
+      }}>
+        <Link href="/dashboard" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem', transition: 'color 0.2s' }}>
+          <Home size={13} /> Estación Orbital
+        </Link>
+        <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
+        <Link href="/dashboard/misiones" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', transition: 'color 0.2s' }}>
+          Base de Misiones
+        </Link>
+        {hubInfo && (
+          <>
+            <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
+            <Link href={hubInfo.path} style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', transition: 'color 0.2s' }}>
+              {hubInfo.name}
+            </Link>
+          </>
+        )}
+        <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
+        <span style={{ color: moduleData.color, fontWeight: 600 }}>{moduleData.titleEs}</span>
+      </div>
       {/* Dynamic Rotating Planet Background */}
       <div style={{ position: 'fixed', top: '-20%', right: '-20%', width: '150vw', height: '150vw', zIndex: -1, pointerEvents: 'none', filter: 'blur(3px)' }}>
         <motion.div 
@@ -363,9 +452,15 @@ export default function CourseModule() {
             </Link>
           </div>
 
-          <Link href="/dashboard/misiones" className="btn-secondary" style={{ textAlign: 'center' }}>
-            Volver al Mapa Estelar
-          </Link>
+          {hubInfo ? (
+            <Link href={hubInfo.path} className="btn-secondary" style={{ textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem' }}>
+              <ChevronLeft size={16} /> Volver a {hubInfo.name}
+            </Link>
+          ) : (
+            <Link href="/dashboard/misiones" className="btn-secondary" style={{ textAlign: 'center' }}>
+              Volver al Mapa Estelar
+            </Link>
+          )}
         </aside>
 
       </main>
