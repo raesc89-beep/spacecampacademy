@@ -1,0 +1,1609 @@
+{
+  "totalModules": 161,
+  "passing": [
+    {
+      "id": "egypt_m1",
+      "title": "Nabta Playa: El Primer Observatorio",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m2",
+      "title": "Los Decanos: El Reloj Estelar",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m3",
+      "title": "Sopdet y Sirio",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m4",
+      "title": "Mesjetiu: La Osa Mayor",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m5",
+      "title": "El Láser de Giza",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m6",
+      "title": "Mapa del Universo: La Tumba de Senenmut",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m7",
+      "title": "Telescopios de Piedra",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m8",
+      "title": "Abu Simbel y la Luz del Solsticio",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m9",
+      "title": "Zodiaco de Dendera",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m10",
+      "title": "Daga Espacial de Tutankamón",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m11",
+      "title": "El Nilo de Nut: La Vía Láctea",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m12",
+      "title": "Obeliscos: Relojes del Sol",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m13",
+      "title": "365 Días: El Calendario Civil",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m14",
+      "title": "Apofis y el Devorador de Soles",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "egypt_m15",
+      "title": "Ojo Satelital: Arqueología Espacial",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "sun",
+      "title": "El Sol",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "mercury",
+      "title": "Mercurio",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "venus",
+      "title": "Venus",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "earth",
+      "title": "Tierra",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "mars",
+      "title": "Marte",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "saturn",
+      "title": "Saturno",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "uranus",
+      "title": "Urano",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "neptune",
+      "title": "Neptuno",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pluto",
+      "title": "Plutón",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "black_hole",
+      "title": "Agujero Negro",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "quasar",
+      "title": "Cuásar",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pulsar",
+      "title": "Púlsar",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "red_dwarf",
+      "title": "Enana Roja",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "white_dwarf",
+      "title": "Enana Blanca",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "animales_intro",
+      "title": "Animales en el Espacio",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "animales_albert_ham",
+      "title": "Simio Albert y Simio Ham",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "animales_laika",
+      "title": "Laika",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "animales_gatos",
+      "title": "Gatos en el espacio",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "asteroides_intro",
+      "title": "Asteroides",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "asteroides_meteoros",
+      "title": "Meteoros",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "asteroides_cometas",
+      "title": "Cometas",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "asteroides_sondas",
+      "title": "Sondas",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "asteroides_apophis",
+      "title": "Asteroide Apophis",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "viaje-planetas-gaseosos",
+      "title": "Viaje a Planetas Gaseosos",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pioneros_yuri",
+      "title": "Yuri Gagarin",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pioneros_alan",
+      "title": "Alan Shepard",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pioneros_john",
+      "title": "John Glenn",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pioneros_valentina",
+      "title": "Valentina Tereshkova",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pioneros_leonov",
+      "title": "Aleksei Leonov",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pioneros_svetlana",
+      "title": "Svetlana Savitskaya",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "pioneros_sally",
+      "title": "Sally Ride",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "colisiones_estelares",
+      "title": "Colisiones Estelares",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_historia",
+      "title": "Carrera Histórica",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_sojourner",
+      "title": "Sojourner",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_opportunity",
+      "title": "Opportunity",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_spirit",
+      "title": "Spirit",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_curiosity",
+      "title": "Curiosity",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_perseverance",
+      "title": "Perseverance",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_ingenuity",
+      "title": "Ingenuity",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "robots_futuras",
+      "title": "Misiones Futuras",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "viaje_planetas_rocosos",
+      "title": "Viaje a Planetas Rocosos",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "exoplanetas",
+      "title": "Los Exoplanetas",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "arqueoastronomia_maya",
+      "title": "Arqueoastronomía Maya",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 10,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m1",
+      "title": "El Caracol: El Observatorio de Venus",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m2",
+      "title": "Kukulcán: La Serpiente de Luz",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m3",
+      "title": "El Calendario Haab",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m4",
+      "title": "El Tzolk'in: Ciclo Sagrado",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m5",
+      "title": "La Rueda Calendárica",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m6",
+      "title": "Templo 7 Muñecas",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m7",
+      "title": "Venus: El Planeta Guerrero",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "maya_m8",
+      "title": "Eclipses: El Sol Devorado",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m1",
+      "title": "¿Qué es un Puente Einstein-Rosen? (I)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m2",
+      "title": "¿Qué es un Puente Einstein-Rosen? (II)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m3",
+      "title": "La Historia de su Teoría (I)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m4",
+      "title": "La Historia de su Teoría (II)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m5",
+      "title": "Propiedades de los Agujeros de Gusano (I)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m6",
+      "title": "Propiedades de los Agujeros de Gusano (II)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m7",
+      "title": "¿Cómo Funciona un Agujero de Gusano? (I)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m8",
+      "title": "¿Cómo Funciona un Agujero de Gusano? (II)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m9",
+      "title": "¿Qué Pasa si Caigo en un Agujero de Gusano? (I)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m10",
+      "title": "¿Qué Pasa si Caigo en un Agujero de Gusano? (II)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m11",
+      "title": "Últimas Teorías y Experimentos (I)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m12",
+      "title": "Últimas Teorías y Experimentos (II)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m13",
+      "title": "La Paradoja Temporal",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m14",
+      "title": "La Visión de Carl Sagan y 'Contacto' (I)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "wormhole_m15",
+      "title": "La Visión de Carl Sagan y 'Contacto' (II)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "interstellar_m1",
+      "title": "Einstein y la Red Invisible",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "interstellar_m2",
+      "title": "Gargantúa – Anatomía de un Monstruo Gravitacional",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "interstellar_m3",
+      "title": "El Tiempo es Elástico (Dilatación Temporal)",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "interstellar_m4",
+      "title": "Agujeros de Gusano – Atajos Cósmicos",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "interstellar_m5",
+      "title": "El Teseracto y la Quinta Dimensión",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "copernico_m1",
+      "title": "El Universo Antes de Copérnico",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "copernico_m2",
+      "title": "La Revolución Heliocéntrica",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "copernico_m3",
+      "title": "De Revolutionibus Orbium Coelestium",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "copernico_m4",
+      "title": "Astronomía a Ojo Desnudo",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "copernico_m5",
+      "title": "El Legado de Copérnico",
+      "paragraphCount": 15,
+      "imageCount": 15,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "exoplanetas_m1",
+      "title": "Fundamentos y Tránsito",
+      "paragraphCount": 20,
+      "imageCount": 19,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "exoplanetas_m3",
+      "title": "Búsqueda y Telescopios",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "galileo_m1",
+      "title": "La Revolución del Telescopio",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "galileo_m2",
+      "title": "Galileo y las Lunas de Júpiter",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "galileo_m3",
+      "title": "Galileo contra la Inquisición",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "galileo_m4",
+      "title": "Las Leyes del Movimiento",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "galileo_m5",
+      "title": "El Legado de Galileo en el Espacio",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "faraday_m1",
+      "title": "El Niño que se Convirtió en Científico",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "faraday_m2",
+      "title": "La Inducción Electromagnética",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "faraday_m3",
+      "title": "La Jaula de Faraday",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "faraday_m4",
+      "title": "La Electrolisis y la Química",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "faraday_m5",
+      "title": "El Legado de Faraday",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "davinci_m1",
+      "title": "El Genio Universal",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "davinci_m2",
+      "title": "Las Máquinas Voladoras de Leonardo",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "davinci_m3",
+      "title": "Leonardo y la Anatomía Humana",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "davinci_m4",
+      "title": "Leonardo el Ingeniero",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "id": "davinci_m5",
+      "title": "El Método Científico de Leonardo",
+      "paragraphCount": 15,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [],
+      "warnings": []
+    }
+  ],
+  "failing": [
+    {
+      "id": "jupiter",
+      "title": "Júpiter",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 5,
+      "issues": [
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_1",
+      "title": "starwars_sec_1",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_2",
+      "title": "starwars_sec_2",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_3",
+      "title": "starwars_sec_3",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_4",
+      "title": "starwars_sec_4",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_5",
+      "title": "starwars_sec_5",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_6",
+      "title": "starwars_sec_6",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_7",
+      "title": "starwars_sec_7",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_8",
+      "title": "starwars_sec_8",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "starwars_sec_9",
+      "title": "starwars_sec_9",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "maya_m9",
+      "title": "Wakah Chan: El Árbol Cósmico",
+      "paragraphCount": 10,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 10 paragraphs (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "maya_m10",
+      "title": "Tzab-ek: La Cola de Serpiente",
+      "paragraphCount": 10,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 10 paragraphs (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "maya_m11",
+      "title": "Palenque y las Inscripciones",
+      "paragraphCount": 10,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 10 paragraphs (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "maya_m12",
+      "title": "Copán: Las Estelas Solares",
+      "paragraphCount": 9,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 9 paragraphs (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "maya_m13",
+      "title": "Uaxactún: Grupo E",
+      "paragraphCount": 10,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 10 paragraphs (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "maya_m14",
+      "title": "Edzná: Sol en el Cenit",
+      "paragraphCount": 10,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 10 paragraphs (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "maya_m15",
+      "title": "El Códice de Dresde",
+      "paragraphCount": 10,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 10 paragraphs (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bttf_m1",
+      "title": "bttf_m1",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bttf_m2",
+      "title": "bttf_m2",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bttf_m3",
+      "title": "bttf_m3",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bttf_m4",
+      "title": "bttf_m4",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bttf_m5",
+      "title": "bttf_m5",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bttf_m6",
+      "title": "bttf_m6",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bttf_m7",
+      "title": "bttf_m7",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "rocosos_m1",
+      "title": "rocosos_m1",
+      "paragraphCount": 3,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 3 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "rocosos_m2",
+      "title": "rocosos_m2",
+      "paragraphCount": 3,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 3 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "rocosos_m3",
+      "title": "rocosos_m3",
+      "paragraphCount": 3,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 3 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "rocosos_m4",
+      "title": "rocosos_m4",
+      "paragraphCount": 4,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 4 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "rocosos_m5",
+      "title": "rocosos_m5",
+      "paragraphCount": 3,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 3 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "rocosos_m6",
+      "title": "rocosos_m6",
+      "paragraphCount": 3,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 3 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "interestelar_m1",
+      "title": "interestelar_m1",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "interestelar_m2",
+      "title": "interestelar_m2",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "interestelar_m3",
+      "title": "interestelar_m3",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "interestelar_m4",
+      "title": "interestelar_m4",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "interestelar_m5",
+      "title": "interestelar_m5",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "interestelar_m6",
+      "title": "interestelar_m6",
+      "paragraphCount": 1,
+      "imageCount": 16,
+      "quizCount": 0,
+      "issues": [
+        "PARAGRAPH_COUNT: Only 1 paragraphs (need ≥15)",
+        "NO_QUIZ: Missing quizEs"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo11_m1",
+      "title": "El Cohete Saturn V",
+      "paragraphCount": 25,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "DUPLICATE_PARAGRAPHS: 10 duplicate paragraphs found",
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo11_m2",
+      "title": "Rumbo a la Luna: 3 Días en el Espacio Profundo",
+      "paragraphCount": 25,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "DUPLICATE_PARAGRAPHS: 10 duplicate paragraphs found",
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo11_m3",
+      "title": "El Águila Desciende: La Computadora que Salvó la Misión",
+      "paragraphCount": 25,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "DUPLICATE_PARAGRAPHS: 10 duplicate paragraphs found",
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo11_m4",
+      "title": "El Primer Paso: Un Momento para la Eternidad",
+      "paragraphCount": 25,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "DUPLICATE_PARAGRAPHS: 10 duplicate paragraphs found",
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo11_m5",
+      "title": "Ascenso Lunar: El Regreso más Difícil",
+      "paragraphCount": 25,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "DUPLICATE_PARAGRAPHS: 10 duplicate paragraphs found",
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo11_m6",
+      "title": "Amerizaje y Triunfo: El Regreso de los Héroes",
+      "paragraphCount": 25,
+      "imageCount": 16,
+      "quizCount": 5,
+      "issues": [
+        "DUPLICATE_PARAGRAPHS: 10 duplicate paragraphs found",
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo8_m1",
+      "title": "Génesis de la Misión",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo8_m2",
+      "title": "El Amanecer Terrestre",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "apollo10_m1",
+      "title": "El Ensayo General",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "exoplanetas_m2",
+      "title": "Tipos de Mundos",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 1,
+      "issues": [
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": [
+        "QUIZ_SHORT: Only 1 quiz questions (need 5)"
+      ]
+    },
+    {
+      "id": "exoplanetas_m4",
+      "title": "Atmósferas y Biofirmas",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 1,
+      "issues": [
+        "REPEATED_CONTENT: Multiple paragraphs start with identical text"
+      ],
+      "warnings": [
+        "QUIZ_SHORT: Only 1 quiz questions (need 5)"
+      ]
+    },
+    {
+      "id": "area51_m1",
+      "title": "¿Qué es el Área 51?",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "area51_m2",
+      "title": "Los Aviones Secretos",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "area51_m3",
+      "title": "El Origen de los Rumores",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "area51_m4",
+      "title": "Ciencia Real vs. Ficción",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "area51_m5",
+      "title": "El Equipo de Detección de Camelos",
+      "paragraphCount": 15,
+      "imageCount": 0,
+      "quizCount": 5,
+      "issues": [
+        "IMAGE_COUNT: Only 0 images (need ≥15)"
+      ],
+      "warnings": []
+    }
+  ],
+  "warnings": [
+    {
+      "id": "objetos_interestelares",
+      "title": "Objetos Interestelares",
+      "paragraphCount": 15,
+      "imageCount": 18,
+      "quizCount": 2,
+      "issues": [],
+      "warnings": [
+        "QUIZ_SHORT: Only 2 quiz questions (need 5)"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 161,
+    "passing": 108,
+    "warnings": 1,
+    "failing": 52,
+    "passRate": "67.1%"
+  }
+}

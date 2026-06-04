@@ -1,7 +1,7 @@
 'use client';
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, Star, Trophy, X, ChevronRight, Loader2 } from 'lucide-react';
+import { Clock, Star, Trophy, ChevronRight, ChevronLeft, Pickaxe } from 'lucide-react';
 
 
 // ─────────────────────────────────────────────────────────────
@@ -161,6 +161,7 @@ export default function XenoPaleontologia({ onComplete }) {
   const [revealed, setRevealed] = useState(false);
   const [message, setMessage] = useState('');
   const [showMuseum, setShowMuseum] = useState(false);
+  const [museumIdx, setMuseumIdx] = useState(0); // current specimen in museum viewer
 
   // Museum state (localStorage persisted)
   const [museum, setMuseum] = useState(() => {
@@ -497,222 +498,228 @@ export default function XenoPaleontologia({ onComplete }) {
   return (
     <div style={{ background: 'rgba(0,0,0,0.9)', borderRadius: '20px', border: '1px solid rgba(100,180,255,0.3)', overflow: 'hidden', position: 'relative' }}>
 
-      {/* ═══════════════════════════════════════════
-           BRITISH MUSEUM — PERSONAL COLLECTION
-          ═══════════════════════════════════════════ */}
+      {/* Museum Overlay — Single Specimen Viewer */}
       <AnimatePresence>
-        {showMuseum && (
-          <motion.div key="museum-overlay"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 30 }}
-            transition={{ type: 'spring', damping: 24, stiffness: 200 }}
-            style={{
-              position: 'absolute', inset: 0, zIndex: 100,
-              background: 'linear-gradient(160deg, #0C0A1E 0%, #130A22 40%, #0A1428 100%)',
-              display: 'flex', flexDirection: 'column',
-              borderRadius: '20px', overflow: 'hidden',
-              fontFamily: "'Georgia', 'Times New Roman', serif",
-            }}>
+        {showMuseum && (() => {
+          const currentSlot = FOSSILS[museumIdx];
+          const currentCollected = museum.find(m => m.id === currentSlot.name);
+          const collectedDate = currentCollected
+            ? new Date(currentCollected.discoveredAt).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' })
+            : null;
+          const prevIdx = (museumIdx - 1 + FOSSILS.length) % FOSSILS.length;
+          const nextIdx = (museumIdx + 1) % FOSSILS.length;
+          const gR = parseInt(currentSlot.glow.slice(1,3),16);
+          const gG = parseInt(currentSlot.glow.slice(3,5),16);
+          const gB = parseInt(currentSlot.glow.slice(5,7),16);
 
-            {/* Museum Header — British Museum style */}
-            <div style={{
-              background: 'linear-gradient(90deg, rgba(120,90,30,0.3) 0%, rgba(180,140,50,0.15) 50%, rgba(120,90,30,0.3) 100%)',
-              borderBottom: '1px solid rgba(180,140,50,0.4)',
-              padding: '1.2rem 2rem',
-              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            }}>
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-                  <div style={{ fontSize: '1.8rem' }}>🏛️</div>
+          return (
+            <motion.div key="museum-overlay"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ type: 'spring', damping: 26, stiffness: 260 }}
+              style={{
+                position: 'absolute', inset: 0, zIndex: 100,
+                display: 'flex', flexDirection: 'column',
+                borderRadius: '20px', overflow: 'hidden',
+                background: 'linear-gradient(180deg, #060414 0%, #0A0820 55%, #06101A 100%)',
+                fontFamily: "'Georgia', serif",
+              }}
+            >
+              {/* Header */}
+              <div style={{
+                padding: '0.8rem 1.2rem',
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                borderBottom: '1px solid rgba(100,60,200,0.3)',
+                background: 'rgba(10,5,30,0.85)',
+                backdropFilter: 'blur(12px)',
+                zIndex: 2, position: 'relative',
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <div style={{ fontSize: '1.4rem' }}>🏛️</div>
                   <div>
-                    <h2 style={{
-                      margin: 0, color: '#D4AF6A',
-                      fontSize: '1.25rem', fontWeight: 'normal', letterSpacing: '0.12em',
-                      textTransform: 'uppercase', textShadow: '0 0 20px rgba(212,175,106,0.5)',
-                    }}>
-                      Museo Xeno-Paleontológico Personal
-                    </h2>
-                    <p style={{ margin: '2px 0 0', color: 'rgba(212,175,106,0.6)', fontSize: '0.75rem', letterSpacing: '0.08em' }}>
-                      COLECCIÓN PRIVADA · ESPECÍMENES RECUPERADOS DE SITIOS EXTRATERRESTRES
-                    </p>
+                    <div style={{ color: '#C8A84A', fontSize: '0.8rem', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 'bold', textShadow: '0 0 12px rgba(200,168,74,0.5)' }}>
+                      Museo Xeno-Paleontológico
+                    </div>
+                    <div style={{ color: 'rgba(200,168,74,0.45)', fontSize: '0.6rem', letterSpacing: '0.06em' }}>
+                      COLECCIÓN PRIVADA · {museum.length}/{TOTAL_LEVELS} ESPECÍMENES
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{
-                  background: 'rgba(212,175,106,0.1)', border: '1px solid rgba(212,175,106,0.35)',
-                  borderRadius: '8px', padding: '0.4rem 1rem', textAlign: 'center',
-                }}>
-                  <div style={{ color: '#D4AF6A', fontFamily: 'monospace', fontSize: '1.4rem', fontWeight: 'bold' }}>{museum.length}/{TOTAL_LEVELS}</div>
-                  <div style={{ color: 'rgba(212,175,106,0.6)', fontSize: '0.65rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Especímenes</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
+                    {FOSSILS.map((f, i) => {
+                      const has = museum.some(m => m.id === f.name);
+                      return (
+                        <button key={i} onClick={() => setMuseumIdx(i)}
+                          style={{
+                            width: i === museumIdx ? 12 : 8, height: i === museumIdx ? 12 : 8,
+                            borderRadius: '50%', border: 'none', cursor: 'pointer', padding: 0,
+                            background: i === museumIdx ? '#C8A84A' : has ? f.glow : 'rgba(255,255,255,0.12)',
+                            transition: 'all 0.25s',
+                            boxShadow: i === museumIdx ? `0 0 8px ${currentSlot.glow}` : 'none',
+                          }}
+                        />
+                      );
+                    })}
+                  </div>
+                  <button onClick={() => setShowMuseum(false)}
+                    style={{
+                      background: 'rgba(100,60,200,0.2)', border: '1px solid rgba(100,60,200,0.5)',
+                      color: '#C8A84A', borderRadius: '8px', width: 32, height: 32,
+                      cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.2s',
+                    }}>
+                    <Pickaxe size={14} />
+                  </button>
                 </div>
-                <button onClick={() => setShowMuseum(false)}
-                  style={{
-                    background: 'rgba(212,175,106,0.1)', border: '1px solid rgba(212,175,106,0.35)',
-                    color: '#D4AF6A', borderRadius: '50%', width: 36, height: 36,
-                    cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: '1.1rem', transition: 'all 0.2s',
-                  }}>×</button>
               </div>
-            </div>
 
-            {/* Progress bar — museum collection */}
-            <div style={{ padding: '0.5rem 2rem', background: 'rgba(0,0,0,0.3)', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ flex: 1, height: '4px', background: 'rgba(255,255,255,0.06)', borderRadius: '2px', overflow: 'hidden' }}>
-                  <div style={{ width: `${(museum.length / TOTAL_LEVELS) * 100}%`, height: '100%', background: 'linear-gradient(90deg, #8B6914, #D4AF6A, #B8922A)', transition: 'width 0.6s', borderRadius: '2px', boxShadow: '0 0 8px rgba(212,175,106,0.5)' }} />
+              {/* Specimen display zone */}
+              <div style={{
+                flex: '0 0 auto', position: 'relative', height: '260px',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden',
+              }}>
+                {currentCollected && (
+                  <div style={{
+                    position: 'absolute', inset: 0, pointerEvents: 'none',
+                    background: `radial-gradient(ellipse at 50% 70%, rgba(${gR},${gG},${gB},0.18) 0%, transparent 70%)`,
+                  }} />
+                )}
+                <div style={{
+                  position: 'absolute', top: '0.7rem', left: '50%', transform: 'translateX(-50%)',
+                  padding: '3px 14px',
+                  background: 'rgba(0,0,0,0.75)', border: `1px solid ${currentSlot.glow}44`,
+                  borderRadius: '20px', color: currentSlot.glow,
+                  fontFamily: 'monospace', fontSize: '0.62rem', letterSpacing: '0.12em',
+                  textTransform: 'uppercase', zIndex: 3,
+                }}>
+                  XP-{String(museumIdx + 1).padStart(3, '0')} · {museumIdx + 1} / {FOSSILS.length}
                 </div>
-                <span style={{ color: 'rgba(212,175,106,0.7)', fontFamily: 'monospace', fontSize: '0.75rem', whiteSpace: 'nowrap' }}>
-                  {Math.round((museum.length / TOTAL_LEVELS) * 100)}% completado
+                <button onClick={() => setMuseumIdx(prevIdx)}
+                  style={{
+                    position: 'absolute', left: '0.8rem',
+                    background: 'rgba(0,0,0,0.65)', border: '1px solid rgba(200,168,74,0.35)',
+                    borderRadius: '50%', width: 42, height: 42, cursor: 'pointer',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    color: '#C8A84A', transition: 'all 0.2s', zIndex: 4,
+                  }}>
+                  <ChevronLeft size={20} />
+                </button>
+                <AnimatePresence mode="wait">
+                  <motion.div key={museumIdx}
+                    initial={{ opacity: 0, scale: 0.82, x: 30 }}
+                    animate={{ opacity: 1, scale: 1, x: 0 }}
+                    exit={{ opacity: 0, scale: 0.82, x: -30 }}
+                    transition={{ type: 'spring', damping: 22, stiffness: 220 }}
+                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+                  >
+                    {currentCollected ? (
+                      <>
+                        <img
+                          src={currentSlot.imagePath}
+                          alt={currentSlot.name}
+                          style={{
+                            width: '200px', height: '200px', objectFit: 'contain',
+                            filter: `drop-shadow(0 6px 20px ${currentSlot.glow}90) drop-shadow(0 0 50px ${currentSlot.glow}30)`,
+                            mixBlendMode: 'screen',
+                          }}
+                          onError={e => { e.currentTarget.style.opacity = '0'; }}
+                        />
+                        <div style={{
+                          width: '180px', height: '6px', marginTop: '-6px',
+                          background: `linear-gradient(90deg, transparent 0%, ${currentSlot.glow}60 25%, rgba(200,168,74,0.8) 50%, ${currentSlot.glow}60 75%, transparent 100%)`,
+                          borderRadius: '2px',
+                          boxShadow: `0 0 20px ${currentSlot.glow}80, 0 0 40px ${currentSlot.glow}30`,
+                        }} />
+                        <div style={{ width: '130px', height: '3px', marginTop: '2px', background: 'linear-gradient(90deg, transparent, rgba(200,168,74,0.3), transparent)', borderRadius: '1px' }} />
+                      </>
+                    ) : (
+                      <div style={{
+                        width: '180px', height: '200px',
+                        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                        border: '2px dashed rgba(100,100,150,0.25)', borderRadius: '14px', background: 'rgba(8,6,20,0.7)',
+                      }}>
+                        <div style={{ fontSize: '3rem', opacity: 0.25, marginBottom: '0.5rem' }}>?</div>
+                        <div style={{ color: 'rgba(100,100,150,0.45)', fontFamily: 'monospace', fontSize: '0.65rem', letterSpacing: '0.1em' }}>SIN DESCUBRIR</div>
+                      </div>
+                    )}
+                  </motion.div>
+                </AnimatePresence>
+                <button onClick={() => setMuseumIdx(nextIdx)}
+                  style={{
+                    position: 'absolute', right: '0.8rem',
+                    background: 'rgba(0,0,0,0.65)', border: '1px solid rgba(200,168,74,0.35)',
+                    borderRadius: '50%', width: 42, height: 42, cursor: 'pointer',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    color: '#C8A84A', transition: 'all 0.2s', zIndex: 4,
+                  }}>
+                  <ChevronRight size={20} />
+                </button>
+              </div>
+
+              {/* Info panel */}
+              <div style={{ flex: 1, overflowY: 'auto', padding: '0.8rem 1.2rem 1rem', background: 'rgba(5,3,15,0.95)', borderTop: `1px solid ${currentSlot.glow}33` }}>
+                {currentCollected ? (
+                  <>
+                    <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.7rem' }}>
+                      {[
+                        { icon: '⚗️', label: `${currentSlot.pts} pts base` },
+                        { icon: '⏳', label: currentSlot.era },
+                        { icon: '📍', label: currentSlot.location },
+                      ].map((tag, i) => (
+                        <div key={i} style={{
+                          background: i === 0 ? `rgba(${gR},${gG},${gB},0.15)` : i === 1 ? 'rgba(200,168,74,0.1)' : 'rgba(80,50,160,0.15)',
+                          border: `1px solid ${i === 0 ? currentSlot.glow + '44' : i === 1 ? 'rgba(200,168,74,0.3)' : 'rgba(80,50,160,0.3)'}`,
+                          borderRadius: '6px', padding: '3px 8px',
+                          display: 'flex', alignItems: 'center', gap: '4px',
+                        }}>
+                          <span style={{ fontSize: '0.65rem' }}>{tag.icon}</span>
+                          <span style={{ color: 'rgba(220,200,180,0.75)', fontSize: '0.62rem', lineHeight: 1.3 }}>{tag.label}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <h3 style={{ margin: '0 0 2px', color: '#C8A84A', fontSize: '1rem', letterSpacing: '0.04em', textShadow: `0 0 14px ${currentSlot.glow}55` }}>
+                      {currentSlot.name}
+                    </h3>
+                    <div style={{ color: 'rgba(200,168,74,0.55)', fontSize: '0.63rem', fontStyle: 'italic', marginBottom: '0.6rem' }}>
+                      {currentSlot.classification}
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.7rem' }}>
+                      <span style={{ color: '#FFD700', fontSize: '0.85rem' }}>
+                        {'★'.repeat(getDifficultyStars(currentSlot.pts))}{'☆'.repeat(5 - getDifficultyStars(currentSlot.pts))}
+                      </span>
+                      <span style={{ color: 'rgba(255,215,0,0.5)', fontFamily: 'monospace', fontSize: '0.68rem' }}>{currentCollected.pts} pts obtenidos</span>
+                      <span style={{ marginLeft: 'auto', color: 'rgba(200,168,74,0.35)', fontSize: '0.6rem' }}>{collectedDate}</span>
+                    </div>
+                    <div style={{
+                      background: 'rgba(3,2,10,0.8)', border: `1px solid rgba(${gR},${gG},${gB},0.15)`,
+                      borderRadius: '8px', padding: '0.7rem 0.9rem',
+                      color: 'rgba(215,205,185,0.82)', fontSize: '0.7rem', lineHeight: 1.75, fontFamily: "'Georgia', serif",
+                    }}>
+                      {currentSlot.description}
+                    </div>
+                  </>
+                ) : (
+                  <div style={{ textAlign: 'center', padding: '2rem 1rem', color: 'rgba(80,80,120,0.5)' }}>
+                    <div style={{ fontSize: '2.5rem', marginBottom: '0.7rem', opacity: 0.35 }}>🔒</div>
+                    <div style={{ fontSize: '0.82rem', letterSpacing: '0.05em', marginBottom: '0.4rem' }}>Espécimen no recuperado</div>
+                    <div style={{ fontSize: '0.68rem', opacity: 0.7, lineHeight: 1.6 }}>Completa una excavación para añadir este fósil a tu colección</div>
+                  </div>
+                )}
+              </div>
+
+              {/* Footer progress */}
+              <div style={{ padding: '0.5rem 1.2rem', borderTop: '1px solid rgba(80,50,160,0.2)', background: 'rgba(4,3,12,0.9)', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                <div style={{ flex: 1, height: '3px', background: 'rgba(255,255,255,0.05)', borderRadius: '2px', overflow: 'hidden' }}>
+                  <div style={{ width: `${(museum.length / TOTAL_LEVELS) * 100}%`, height: '100%', background: 'linear-gradient(90deg, #5533AA, #C8A84A)', transition: 'width 0.6s', borderRadius: '2px', boxShadow: '0 0 6px rgba(200,168,74,0.4)' }} />
+                </div>
+                <span style={{ color: 'rgba(200,168,74,0.5)', fontFamily: 'monospace', fontSize: '0.65rem', whiteSpace: 'nowrap' }}>
+                  {museum.length}/{TOTAL_LEVELS} · {museum.reduce((a, m) => a + (m.pts || 0), 0)} pts
                 </span>
               </div>
-            </div>
-
-            {/* Fossil specimen gallery */}
-            <div style={{ flex: 1, overflowY: 'auto', padding: '1.5rem 2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.2rem', alignContent: 'start' }}>
-              {FOSSILS.map((fossil, idx) => {
-                const collected = museum.find(m => m.id === fossil.name);
-                const collectedDate = collected ? new Date(collected.discoveredAt).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
-                const fossilImg = loadedImagesRef.current[fossil.name];
-
-                return (
-                  <motion.div
-                    key={fossil.name}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: collected ? 1 : 0.38, y: 0 }}
-                    transition={{ delay: idx * 0.05 }}
-                    style={{
-                      background: collected
-                        ? `linear-gradient(160deg, rgba(20,15,5,0.95) 0%, rgba(${parseInt(fossil.glow.slice(1,3),16)},${parseInt(fossil.glow.slice(3,5),16)},${parseInt(fossil.glow.slice(5,7),16)},0.04) 100%)`
-                        : 'rgba(10,8,20,0.8)',
-                      border: collected ? `1px solid rgba(180,140,50,0.35)` : '1px solid rgba(100,100,120,0.2)',
-                      borderRadius: '12px',
-                      overflow: 'hidden',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      boxShadow: collected ? `0 4px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(212,175,106,0.1)` : 'none',
-                      transition: 'all 0.3s',
-                    }}
-                  >
-                    {/* Specimen image area */}
-                    <div style={{
-                      height: '160px', position: 'relative', overflow: 'hidden',
-                      background: collected
-                        ? `radial-gradient(ellipse at center, ${fossil.glow}15 0%, rgba(5,10,20,0.9) 70%)`
-                        : 'rgba(5,8,15,0.9)',
-                      borderBottom: `1px solid rgba(180,140,50,0.15)`,
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    }}>
-                      {collected && fossilImg ? (
-                        <>
-                          {/* Specimen number tag */}
-                          <div style={{
-                            position: 'absolute', top: '0.6rem', left: '0.6rem',
-                            background: 'rgba(0,0,0,0.7)', border: '1px solid rgba(180,140,50,0.4)',
-                            borderRadius: '4px', padding: '2px 7px',
-                            color: '#D4AF6A', fontSize: '0.62rem', letterSpacing: '0.08em',
-                            fontFamily: 'monospace', textTransform: 'uppercase',
-                          }}>
-                            XP-{String(idx + 1).padStart(3, '0')}
-                          </div>
-                          <img
-                            src={fossil.imagePath}
-                            alt={fossil.name}
-                            style={{
-                              maxWidth: '140px', maxHeight: '140px',
-                              objectFit: 'contain',
-                              filter: `drop-shadow(0 0 12px ${fossil.glow}60)`,
-                              transition: 'transform 0.3s',
-                            }}
-                            onError={e => { e.target.style.display='none'; }}
-                          />
-                          {/* Glow underlay */}
-                          <div style={{
-                            position: 'absolute', bottom: 0, left: 0, right: 0, height: '40px',
-                            background: `linear-gradient(transparent, ${fossil.glow}20)`,
-                            pointerEvents: 'none',
-                          }} />
-                        </>
-                      ) : (
-                        <div style={{ textAlign: 'center', opacity: 0.3 }}>
-                          <div style={{ fontSize: '2.5rem', marginBottom: '0.3rem' }}>?</div>
-                          <div style={{ color: '#556', fontSize: '0.7rem', letterSpacing: '0.05em', fontFamily: 'monospace' }}>ESPECIMEN #{idx + 1}</div>
-                          <div style={{ color: '#334', fontSize: '0.6rem', marginTop: '0.2rem' }}>NO DESCUBIERTO</div>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Specimen details */}
-                    <div style={{ padding: '0.9rem 1rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      <div style={{
-                        color: collected ? '#D4AF6A' : '#444',
-                        fontSize: '0.9rem', fontWeight: 'bold', letterSpacing: '0.03em',
-                        lineHeight: 1.3,
-                      }}>
-                        {collected ? fossil.name : `Fósil Desconocido #${idx + 1}`}
-                      </div>
-
-                      {collected && (
-                        <>
-                          {/* Classification */}
-                          <div style={{ color: 'rgba(180,140,50,0.7)', fontSize: '0.63rem', letterSpacing: '0.03em', fontStyle: 'italic', lineHeight: 1.4 }}>
-                            {fossil.classification}
-                          </div>
-
-                          {/* Divider */}
-                          <div style={{ height: '1px', background: 'rgba(180,140,50,0.15)', margin: '0.2rem 0' }} />
-
-                          {/* Era & Location */}
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                            <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'flex-start' }}>
-                              <span style={{ color: '#D4AF6A', fontSize: '0.62rem', opacity: 0.6, letterSpacing: '0.05em', textTransform: 'uppercase', whiteSpace: 'nowrap', paddingTop: '1px' }}>ERA</span>
-                              <span style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.7rem', lineHeight: 1.3 }}>{fossil.era}</span>
-                            </div>
-                            <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'flex-start' }}>
-                              <span style={{ color: '#D4AF6A', fontSize: '0.62rem', opacity: 0.6, letterSpacing: '0.05em', textTransform: 'uppercase', whiteSpace: 'nowrap', paddingTop: '1px' }}>LOC.</span>
-                              <span style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.7rem', lineHeight: 1.3 }}>{fossil.location}</span>
-                            </div>
-                          </div>
-
-                          {/* Scientific description */}
-                          <div style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.7rem', lineHeight: 1.6, marginTop: '0.3rem', fontFamily: "'Georgia', serif" }}>
-                            {fossil.description.substring(0, 180)}...
-                          </div>
-
-                          {/* Footer metadata */}
-                          <div style={{
-                            marginTop: 'auto', paddingTop: '0.5rem',
-                            borderTop: '1px solid rgba(180,140,50,0.12)',
-                            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                          }}>
-                            <span style={{ color: '#D4AF6A', fontFamily: 'monospace', fontSize: '0.78rem', fontWeight: 'bold' }}>⭐ {collected.pts} pts</span>
-                            <span style={{ color: 'rgba(180,140,50,0.5)', fontSize: '0.62rem' }}>Descubierto: {collectedDate}</span>
-                          </div>
-                        </>
-                      )}
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
-
-            {/* Museum footer */}
-            <div style={{
-              padding: '0.7rem 2rem',
-              borderTop: '1px solid rgba(180,140,50,0.2)',
-              background: 'rgba(0,0,0,0.4)',
-              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-            }}>
-              <span style={{ color: 'rgba(180,140,50,0.4)', fontSize: '0.65rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-                🏛️ Colección Personal · Instituto de Xeno-Paleontología · Marte, Sol 4023
-              </span>
-              <span style={{ color: 'rgba(180,140,50,0.5)', fontFamily: 'monospace', fontSize: '0.72rem' }}>
-                TOTAL ACUMULADO: {museum.reduce((a, m) => a + (m.pts || 0), 0)} pts
-              </span>
-            </div>
-          </motion.div>
-        )}
+            </motion.div>
+          );
+        })()}
       </AnimatePresence>
 
       {/* HUD */}

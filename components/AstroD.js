@@ -11,6 +11,7 @@ export default function AstroD() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [isMaximized, setIsMaximized] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
   const [localInput, setLocalInput] = useState('');
   const { user, userData } = useAuth();
   const pathname = usePathname();
@@ -63,12 +64,8 @@ export default function AstroD() {
       drag
       dragMomentum={false}
       dragElastic={0}
-      dragConstraints={{
-        left: typeof window !== 'undefined' ? -(window.innerWidth - 120) : -1200,
-        right: 0,
-        top: typeof window !== 'undefined' ? -(window.innerHeight - 120) : -800,
-        bottom: 0
-      }}
+      onDragStart={() => setIsDragging(true)}
+      onDragEnd={() => { setTimeout(() => setIsDragging(false), 150); }}
       style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}
       whileDrag={{ scale: 1.02 }}
     >
@@ -92,7 +89,7 @@ export default function AstroD() {
             <motion.button 
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => setIsOpen(true)}
+              onClick={() => { if (!isDragging) setIsOpen(true); }}
               style={{
                 background: 'transparent',
                 border: 'none',
