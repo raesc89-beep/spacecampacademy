@@ -47,7 +47,18 @@ const useAAAMaterials = (colors) => {
       color: '#080808', roughness: 0.9, metalness: 1.0, normalMap: normalMap
     }),
     glass: new THREE.MeshPhysicalMaterial({
-      color: '#000000', metalness: 1, roughness: 0, envMapIntensity: 3, clearcoat: 1, transparent: true, opacity: 0.85
+      color: '#88ccff',
+      metalness: 0.0,
+      roughness: 0.05,
+      transmission: 0.92,
+      thickness: 0.5,
+      ior: 1.5,
+      envMapIntensity: 1.5,
+      clearcoat: 1.0,
+      clearcoatRoughness: 0.1,
+      transparent: true,
+      opacity: 0.95,
+      side: THREE.DoubleSide
     }),
     industrial: new THREE.MeshPhysicalMaterial({
       color: '#d4a373', roughness: 0.8, metalness: 0.5, normalMap: normalMap, normalScale: new THREE.Vector2(1, 1)
@@ -68,7 +79,7 @@ function ProceduralShipAAA() {
       secondary: new THREE.MeshStandardMaterial({ color: shipConfig.colors.secondary }),
       emissive: new THREE.MeshBasicMaterial({ color: shipConfig.colors.emissive }),
       dark: new THREE.MeshStandardMaterial({ color: '#111' }),
-      glass: new THREE.MeshStandardMaterial({ color: '#222' }),
+      glass: new THREE.MeshStandardMaterial({ color: '#88ccff', transparent: true, opacity: 0.7 }),
       industrial: new THREE.MeshStandardMaterial({ color: '#aa6622' })
     };
   }
@@ -146,6 +157,72 @@ function ProceduralShipAAA() {
         </group>
       )}
 
+      {shipConfig.fuselage === 'cruiser' && (
+        <group scale={1.5}>
+          {/* Crucero Espacial: Enorme y acorazado */}
+          <mesh position={[0, 0, 0]} material={materials.dark}>
+            <boxGeometry args={[3, 1.8, 7]} />
+          </mesh>
+          {/* Puente de mando elevado */}
+          <mesh position={[0, 1.5, 1]} material={materials.primary}>
+            <boxGeometry args={[1.5, 1.2, 2]} />
+          </mesh>
+          <mesh position={[0, 1.5, 2.1]} rotation={[0.2, 0, 0]} material={materials.glass}>
+            <boxGeometry args={[1.2, 0.6, 0.5]} />
+          </mesh>
+          {/* Paneles laterales */}
+          <mesh position={[1.6, 0, 0]} material={materials.secondary}>
+             <boxGeometry args={[0.5, 1.5, 6]} />
+          </mesh>
+          <mesh position={[-1.6, 0, 0]} material={materials.secondary}>
+             <boxGeometry args={[0.5, 1.5, 6]} />
+          </mesh>
+        </group>
+      )}
+
+      {shipConfig.fuselage === 'destroyer' && (
+        <group scale={1.3}>
+          {/* Destructor Estelar: Triángulo masivo */}
+          <mesh position={[0, 0, 0]} material={materials.secondary}>
+            <cylinderGeometry args={[0.5, 3, 8, 3]} rotation={[Math.PI/2, 0, Math.PI/2]} />
+          </mesh>
+          <mesh position={[0, 0.5, -2]} material={materials.primary}>
+            <boxGeometry args={[1.5, 1, 2]} />
+          </mesh>
+        </group>
+      )}
+
+      {shipConfig.fuselage === 'stealth' && (
+        <group>
+          {/* Nave Furtiva: Ala volante muy plana */}
+          <mesh position={[0, 0, 0]} material={materials.dark}>
+            <cylinderGeometry args={[0, 3, 4, 3]} rotation={[Math.PI/2, Math.PI, 0]} />
+          </mesh>
+          <mesh position={[0, 0.2, 0]} material={materials.glass}>
+            <boxGeometry args={[1, 0.4, 1.5]} />
+          </mesh>
+        </group>
+      )}
+
+      {shipConfig.fuselage === 'carrier' && (
+        <group scale={1.6}>
+          {/* Nave Nodriza: Plana, ancha, múltiples bahías */}
+          <mesh position={[0, 0, 0]} material={materials.secondary}>
+            <boxGeometry args={[4, 1.2, 6]} />
+          </mesh>
+          <mesh position={[0, 0.8, -1]} material={materials.primary}>
+            <boxGeometry args={[2, 0.8, 3]} />
+          </mesh>
+          {/* Bahías luminosas */}
+          <mesh position={[2.1, 0, 0]} material={materials.emissive}>
+            <boxGeometry args={[0.2, 0.5, 4]} />
+          </mesh>
+          <mesh position={[-2.1, 0, 0]} material={materials.emissive}>
+            <boxGeometry args={[0.2, 0.5, 4]} />
+          </mesh>
+        </group>
+      )}
+
       {/* ─── SISTEMA DE ALAS ─── */}
       {shipConfig.wings === 'delta' && (
         <group>
@@ -205,6 +282,73 @@ function ProceduralShipAAA() {
         </group>
       )}
 
+      {shipConfig.wings === 'heavy' && (
+        <group>
+          {/* Alas pesadas: bloques acorazados */}
+          <mesh position={[2, 0, -1]} material={materials.dark}>
+             <boxGeometry args={[2, 0.6, 3]} />
+          </mesh>
+          <mesh position={[-2, 0, -1]} material={materials.dark}>
+             <boxGeometry args={[2, 0.6, 3]} />
+          </mesh>
+          <mesh position={[2.8, 0, -1]} material={materials.primary}>
+             <boxGeometry args={[0.5, 0.8, 2.5]} />
+          </mesh>
+          <mesh position={[-2.8, 0, -1]} material={materials.primary}>
+             <boxGeometry args={[0.5, 0.8, 2.5]} />
+          </mesh>
+        </group>
+      )}
+
+      {shipConfig.wings === 'sweep' && (
+        <group>
+          {/* Alas en flecha (hacia adelante) */}
+          <mesh position={[2, 0, 1]} rotation={[0, Math.PI/4, 0]} material={materials.primary}>
+             <boxGeometry args={[4, 0.2, 1.5]} />
+          </mesh>
+          <mesh position={[-2, 0, 1]} rotation={[0, -Math.PI/4, 0]} material={materials.primary}>
+             <boxGeometry args={[4, 0.2, 1.5]} />
+          </mesh>
+        </group>
+      )}
+
+      {shipConfig.wings === 'vwing' && (
+        <group>
+          {/* Formación en V vertical */}
+          <mesh position={[1.5, 1.5, -1]} rotation={[0, 0, -Math.PI/4]} material={materials.secondary}>
+             <boxGeometry args={[0.2, 3, 2]} />
+          </mesh>
+          <mesh position={[-1.5, 1.5, -1]} rotation={[0, 0, Math.PI/4]} material={materials.secondary}>
+             <boxGeometry args={[0.2, 3, 2]} />
+          </mesh>
+          <mesh position={[1.5, -1.5, -1]} rotation={[0, 0, Math.PI/4]} material={materials.secondary}>
+             <boxGeometry args={[0.2, 3, 2]} />
+          </mesh>
+          <mesh position={[-1.5, -1.5, -1]} rotation={[0, 0, -Math.PI/4]} material={materials.secondary}>
+             <boxGeometry args={[0.2, 3, 2]} />
+          </mesh>
+        </group>
+      )}
+
+      {shipConfig.wings === 'scimitar' && (
+        <group>
+          {/* Alas curvas (Cimitarra) usando cilindros recortados o cajas inclinadas */}
+          <mesh position={[2.5, 0, -0.5]} rotation={[0, -Math.PI/6, Math.PI/12]} material={materials.primary}>
+             <boxGeometry args={[3.5, 0.15, 1.2]} />
+          </mesh>
+          <mesh position={[-2.5, 0, -0.5]} rotation={[0, Math.PI/6, -Math.PI/12]} material={materials.primary}>
+             <boxGeometry args={[3.5, 0.15, 1.2]} />
+          </mesh>
+          {/* Bordes brillantes */}
+          <mesh position={[3.5, 0, 0.5]} rotation={[0, -Math.PI/4, Math.PI/12]} material={materials.emissive}>
+             <boxGeometry args={[2, 0.2, 0.2]} />
+          </mesh>
+          <mesh position={[-3.5, 0, 0.5]} rotation={[0, Math.PI/4, -Math.PI/12]} material={materials.emissive}>
+             <boxGeometry args={[2, 0.2, 0.2]} />
+          </mesh>
+        </group>
+      )}
+
       {/* ─── MOTORES PROPULSORES ─── */}
       {shipConfig.engines === 'ion' && (
         <group position={[0, 0, -2.8]}>
@@ -225,6 +369,53 @@ function ProceduralShipAAA() {
           {/* Líneas de plasma laterales */}
           <mesh position={[0.8, 0, 0]} material={materials.emissive}><boxGeometry args={[0.1, 0.5, 1.5]} /></mesh>
           <mesh position={[-0.8, 0, 0]} material={materials.emissive}><boxGeometry args={[0.1, 0.5, 1.5]} /></mesh>
+        </group>
+      )}
+
+      {shipConfig.engines === 'twin' && (
+        <group position={[0, 0, -3.0]}>
+          {/* Doble motor cilíndrico */}
+          <mesh position={[0.6, 0, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.4, 0.5, 1.5, 16]} /></mesh>
+          <mesh position={[-0.6, 0, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.4, 0.5, 1.5, 16]} /></mesh>
+          {/* Luz de propulsión */}
+          <mesh position={[0.6, 0, -0.8]} rotation={[Math.PI/2, 0, 0]} material={materials.emissive}><cylinderGeometry args={[0.3, 0.1, 0.4, 16]} /></mesh>
+          <mesh position={[-0.6, 0, -0.8]} rotation={[Math.PI/2, 0, 0]} material={materials.emissive}><cylinderGeometry args={[0.3, 0.1, 0.4, 16]} /></mesh>
+        </group>
+      )}
+
+      {shipConfig.engines === 'quad' && (
+        <group position={[0, 0, -3.0]}>
+          {/* Cuatro motores */}
+          <mesh position={[0.8, 0.4, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.3, 0.4, 1.2, 8]} /></mesh>
+          <mesh position={[-0.8, 0.4, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.3, 0.4, 1.2, 8]} /></mesh>
+          <mesh position={[0.8, -0.4, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.3, 0.4, 1.2, 8]} /></mesh>
+          <mesh position={[-0.8, -0.4, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.dark}><cylinderGeometry args={[0.3, 0.4, 1.2, 8]} /></mesh>
+          
+          <mesh position={[0.8, 0.4, -0.7]} rotation={[Math.PI/2, 0, 0]} material={materials.emissive}><cylinderGeometry args={[0.2, 0.1, 0.3, 8]} /></mesh>
+          <mesh position={[-0.8, 0.4, -0.7]} rotation={[Math.PI/2, 0, 0]} material={materials.emissive}><cylinderGeometry args={[0.2, 0.1, 0.3, 8]} /></mesh>
+          <mesh position={[0.8, -0.4, -0.7]} rotation={[Math.PI/2, 0, 0]} material={materials.emissive}><cylinderGeometry args={[0.2, 0.1, 0.3, 8]} /></mesh>
+          <mesh position={[-0.8, -0.4, -0.7]} rotation={[Math.PI/2, 0, 0]} material={materials.emissive}><cylinderGeometry args={[0.2, 0.1, 0.3, 8]} /></mesh>
+        </group>
+      )}
+
+      {shipConfig.engines === 'pulse' && (
+        <group position={[0, 0, -2.8]}>
+          {/* Motor de pulso: un gran anillo u óvalo trasero */}
+          <mesh position={[0, 0, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.primary}><cylinderGeometry args={[1.2, 1.0, 1.5, 32]} /></mesh>
+          <mesh position={[0, 0, -0.8]} rotation={[Math.PI/2, 0, 0]} material={materials.emissive}><cylinderGeometry args={[1.0, 1.0, 0.2, 32]} /></mesh>
+        </group>
+      )}
+
+      {shipConfig.engines === 'warp' && (
+        <group position={[0, 0, -2.5]}>
+          {/* Motor warp: barquillas largas */}
+          <mesh position={[1.5, 0.5, 0]} material={materials.industrial}><boxGeometry args={[0.5, 0.5, 4]} /></mesh>
+          <mesh position={[-1.5, 0.5, 0]} material={materials.industrial}><boxGeometry args={[0.5, 0.5, 4]} /></mesh>
+          <mesh position={[1.5, 0.5, 0]} material={materials.glass}><boxGeometry args={[0.6, 0.3, 3]} /></mesh>
+          <mesh position={[-1.5, 0.5, 0]} material={materials.glass}><boxGeometry args={[0.6, 0.3, 3]} /></mesh>
+          {/* Interior luminoso warp */}
+          <mesh position={[1.5, 0.5, 0]} material={materials.emissive}><boxGeometry args={[0.1, 0.1, 3.5]} /></mesh>
+          <mesh position={[-1.5, 0.5, 0]} material={materials.emissive}><boxGeometry args={[0.1, 0.1, 3.5]} /></mesh>
         </group>
       )}
 
@@ -258,6 +449,49 @@ function ProceduralShipAAA() {
           <mesh position={[-0.4, 0, 0.8]} material={materials.emissive}>
             <boxGeometry args={[0.3, 0.3, 0.2]} />
           </mesh>
+        </group>
+      )}
+
+      {shipConfig.weapon === 'railgun' && (
+        <group position={[0, -0.6, 2]}>
+          {/* Cañón de riel largo central */}
+          <mesh position={[0, 0, 0]} material={materials.dark}><boxGeometry args={[0.6, 0.4, 4]} /></mesh>
+          <mesh position={[0.35, 0, 1]} material={materials.primary}><boxGeometry args={[0.2, 0.5, 2]} /></mesh>
+          <mesh position={[-0.35, 0, 1]} material={materials.primary}><boxGeometry args={[0.2, 0.5, 2]} /></mesh>
+          <mesh position={[0, 0, 1.5]} material={materials.emissive}><boxGeometry args={[0.1, 0.1, 3]} /></mesh>
+        </group>
+      )}
+
+      {shipConfig.weapon === 'photon' && (
+        <group position={[0, 0, 2]}>
+          {/* Torpedos Fotónicos (esferas brillantes) */}
+          <mesh position={[1, -0.4, 0]} material={materials.dark}><boxGeometry args={[0.5, 0.5, 1.5]} /></mesh>
+          <mesh position={[-1, -0.4, 0]} material={materials.dark}><boxGeometry args={[0.5, 0.5, 1.5]} /></mesh>
+          <mesh position={[1, -0.4, 0.8]} material={materials.emissive}><sphereGeometry args={[0.2, 16, 16]} /></mesh>
+          <mesh position={[-1, -0.4, 0.8]} material={materials.emissive}><sphereGeometry args={[0.2, 16, 16]} /></mesh>
+        </group>
+      )}
+
+      {shipConfig.weapon === 'torpedo' && (
+        <group position={[0, -0.8, 1]}>
+          {/* Torpedos pesados (grandes cilindros) */}
+          <mesh position={[0.8, 0, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.3, 0.3, 2, 8]} /></mesh>
+          <mesh position={[-0.8, 0, 0]} rotation={[Math.PI/2, 0, 0]} material={materials.secondary}><cylinderGeometry args={[0.3, 0.3, 2, 8]} /></mesh>
+          <mesh position={[0.8, 0, 1.1]} material={materials.emissive}><cylinderGeometry args={[0.25, 0, 0.5, 8]} rotation={[Math.PI/2, 0, 0]} /></mesh>
+          <mesh position={[-0.8, 0, 1.1]} material={materials.emissive}><cylinderGeometry args={[0.25, 0, 0.5, 8]} rotation={[Math.PI/2, 0, 0]} /></mesh>
+        </group>
+      )}
+
+      {shipConfig.weapon === 'swarm' && (
+        <group position={[0, -0.3, 1]}>
+          {/* Enjambre de misiles (múltiples pequeños tubos) */}
+          <mesh position={[0, 0, 0]} material={materials.dark}><boxGeometry args={[2, 0.6, 1]} /></mesh>
+          {[...Array(6)].map((_, i) => (
+             <mesh key={`swarm-1-${i}`} position={[-0.75 + (i * 0.3), 0.15, 0.6]} material={materials.emissive}><circleGeometry args={[0.08, 8]} /></mesh>
+          ))}
+          {[...Array(6)].map((_, i) => (
+             <mesh key={`swarm-2-${i}`} position={[-0.75 + (i * 0.3), -0.15, 0.6]} material={materials.emissive}><circleGeometry args={[0.08, 8]} /></mesh>
+          ))}
         </group>
       )}
     </group>

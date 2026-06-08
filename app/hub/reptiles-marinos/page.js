@@ -7,16 +7,16 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const MARINOS_MODULES = [
-  { id: 'marinos_m1', title: 'Los Mares del Mesozoico', color: '#006994', link: '/course/marinos_m1', icon: '/assets/reptiles_marinos/marinos_m1.png', coords: { left: '12%', top: '18%' } },
-  { id: 'marinos_m2', title: 'Los Ictiosaurios', color: '#20B2AA', link: '/course/marinos_m2', icon: '/assets/reptiles_marinos/marinos_m2.png', coords: { left: '30%', top: '35%' } },
-  { id: 'marinos_m3', title: 'Los Plesiosaurios', color: '#4169E1', link: '/course/marinos_m3', icon: '/assets/reptiles_marinos/marinos_m3.png', coords: { left: '50%', top: '20%' } },
-  { id: 'marinos_m4', title: 'Los Pliosaurios', color: '#191970', link: '/course/marinos_m4', icon: '/assets/reptiles_marinos/marinos_m4.png', coords: { left: '70%', top: '38%' } },
-  { id: 'marinos_m5', title: 'El Mosasaurus', color: '#008B8B', link: '/course/marinos_m5', icon: '/assets/reptiles_marinos/marinos_m5.png', coords: { left: '88%', top: '22%' } },
-  { id: 'marinos_m6', title: 'Tylosaurus', color: '#2F4F4F', link: '/course/marinos_m6', icon: '/assets/reptiles_marinos/marinos_m6.png', coords: { left: '15%', top: '55%' } },
-  { id: 'marinos_m7', title: 'La Rama Evolutiva', color: '#5F9EA0', link: '/course/marinos_m7', icon: '/assets/reptiles_marinos/marinos_m7.png', coords: { left: '35%', top: '68%' } },
-  { id: 'marinos_m8', title: 'Ecosistema Marino', color: '#00CED1', link: '/course/marinos_m8', icon: '/assets/reptiles_marinos/marinos_m8.png', coords: { left: '55%', top: '55%' } },
-  { id: 'marinos_m9', title: 'La Gran Extinción', color: '#B22222', link: '/course/marinos_m9', icon: '/assets/reptiles_marinos/marinos_m9.png', coords: { left: '75%', top: '68%' } },
-  { id: 'marinos_m10', title: 'Paleontología Marina', color: '#DAA520', link: '/course/marinos_m10', icon: '/assets/reptiles_marinos/marinos_m10.png', coords: { left: '88%', top: '55%' } },
+  { id: 'marinos_m1', title: 'Ictiosaurios: Los Delfines del Mesozoico', color: '#006994', link: '/course/marinos_m1', icon: '/assets/reptiles_marinos/marinos_m1.png', coords: { left: '12%', top: '18%' } },
+  { id: 'marinos_m2', title: 'Plesiosaurios: Los Cuellos del Abismo', color: '#20B2AA', link: '/course/marinos_m2', icon: '/assets/reptiles_marinos/marinos_m2.png', coords: { left: '30%', top: '35%' } },
+  { id: 'marinos_m3', title: 'Mosasaurios: Los Depredadores Supremos', color: '#4169E1', link: '/course/marinos_m3', icon: '/assets/reptiles_marinos/marinos_m3.png', coords: { left: '50%', top: '20%' } },
+  { id: 'marinos_m4', title: 'Tiburones Prehistóricos', color: '#191970', link: '/course/marinos_m4', icon: '/assets/reptiles_marinos/marinos_m4.png', coords: { left: '70%', top: '38%' } },
+  { id: 'marinos_m5', title: 'Amonites: Los Caracoles del Abismo', color: '#008B8B', link: '/course/marinos_m5', icon: '/assets/reptiles_marinos/marinos_m5.png', coords: { left: '88%', top: '22%' } },
+  { id: 'marinos_m6', title: 'Notosaurios y Placodontos', color: '#2F4F4F', link: '/course/marinos_m6', icon: '/assets/reptiles_marinos/marinos_m6.png', coords: { left: '15%', top: '55%' } },
+  { id: 'marinos_m7', title: 'Tortugas Marinas Prehistóricas', color: '#5F9EA0', link: '/course/marinos_m7', icon: '/assets/reptiles_marinos/marinos_m7.png', coords: { left: '35%', top: '68%' } },
+  { id: 'marinos_m8', title: 'Criaturas de las Profundidades', color: '#00CED1', link: '/course/marinos_m8', icon: '/assets/reptiles_marinos/marinos_m8.png', coords: { left: '55%', top: '55%' } },
+  { id: 'marinos_m9', title: 'Ecosistemas Marinos Prehistóricos', color: '#B22222', link: '/course/marinos_m9', icon: '/assets/reptiles_marinos/marinos_m9.png', coords: { left: '75%', top: '68%' } },
+  { id: 'marinos_m10', title: 'Paleontología Marina Moderna', color: '#DAA520', link: '/course/marinos_m10', icon: '/assets/reptiles_marinos/marinos_m10.png', coords: { left: '88%', top: '55%' } },
 ];
 
 // Floating bubbles

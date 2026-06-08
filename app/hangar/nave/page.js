@@ -4,14 +4,16 @@ import Navbar from '@/components/Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import { useShipStore } from '@/store/useShipStore';
-import { Rocket, Shield, Zap, Target, Palette, Wrench, ChevronLeft, Activity, Grid } from 'lucide-react';
+import { Rocket, Shield, Zap, Target, Palette, Wrench, ChevronLeft, Activity, Grid, Save, Archive } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const SpaceshipScene = dynamic(() => import('@/components/shipyard/SpaceshipScene'), { ssr: false });
 
 export default function NaveHangar() {
-  const { shipConfig, stats, setPart, setColor } = useShipStore();
+  const { shipConfig, stats, setPart, setColor, saveCurrentShip } = useShipStore();
   const [activeCategory, setActiveCategory] = useState('fuselage');
+  const router = useRouter();
 
   const palettePrimary = ['#1a1a1a', '#e63946', '#f4a261', '#2a9d8f', '#264653', '#8338ec', '#ff006e', '#ffbe0b', '#ffffff'];
   const paletteSecondary = ['#2b2d42', '#8d99ae', '#edf2f4', '#ef233c', '#d90429', '#3a86ff', '#8ac926', '#1982c4', '#6a4c93'];
@@ -20,21 +22,37 @@ export default function NaveHangar() {
     fuselage: [
       { id: 'fighter', label: 'Caza Ligero' },
       { id: 'cargo', label: 'Carguero' },
-      { id: 'explorer', label: 'Explorador' }
+      { id: 'explorer', label: 'Explorador' },
+      { id: 'cruiser', label: 'Crucero Espacial' },
+      { id: 'destroyer', label: 'Destructor Estelar' },
+      { id: 'stealth', label: 'Nave Furtiva' },
+      { id: 'carrier', label: 'Nave Nodriza' }
     ],
     wings: [
       { id: 'delta', label: 'Alas Delta' },
       { id: 'xwing', label: 'X-Quad' },
-      { id: 'ring', label: 'Anillo Estelar' }
+      { id: 'ring', label: 'Anillo Estelar' },
+      { id: 'heavy', label: 'Blindaje Pesado' },
+      { id: 'sweep', label: 'Alas en Flecha' },
+      { id: 'vwing', label: 'Formación V' },
+      { id: 'scimitar', label: 'Corte Cimitarra' }
     ],
     engines: [
       { id: 'ion', label: 'Motor Iónico' },
-      { id: 'plasma', label: 'Reactor Plasma' }
+      { id: 'plasma', label: 'Reactor Plasma' },
+      { id: 'twin', label: 'Motor Gemelo' },
+      { id: 'quad', label: 'Propulsor Cuádruple' },
+      { id: 'pulse', label: 'Motor de Pulso' },
+      { id: 'warp', label: 'Motor Warp' }
     ],
     weapon: [
       { id: 'laser', label: 'Cañón Láser' },
       { id: 'missile', label: 'Lanza Misiles' },
-      { id: 'none', label: 'Módulo Pacífico' }
+      { id: 'none', label: 'Módulo Pacífico' },
+      { id: 'railgun', label: 'Cañón de Riel' },
+      { id: 'photon', label: 'Cañón Fotónico' },
+      { id: 'torpedo', label: 'Torpedos de Protones' },
+      { id: 'swarm', label: 'Enjambre Micro-Misiles' }
     ]
   };
 
@@ -267,13 +285,34 @@ export default function NaveHangar() {
               </div>
             </div>
             
-            {/* Back Button inside Cockpit Panel */}
-            <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '0 8px 8px 8px', zIndex: 10 }}>
-               <Link href="/hangar" style={{ textDecoration: 'none' }}>
-                 <div style={{ height: '40px', padding: '0 24px', borderRadius: '8px', backgroundColor: 'transparent', border: '2px solid #FF2A2A', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FF2A2A', fontWeight: 900, letterSpacing: '2px', fontSize: '12px', cursor: 'pointer', transition: 'all 0.2s' }}
-                      onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255, 42, 42, 0.1)'; e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 42, 42, 0.4)'; }}
-                      onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.boxShadow = 'none'; }}>
-                    &lt; REGRESAR
+            {/* Back Button and Save Button inside Cockpit Panel */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '8px', padding: '0 8px 8px 8px', zIndex: 10 }}>
+               <Link href="/hangar" style={{ textDecoration: 'none', flex: 1 }}>
+                 <div
+                   style={{ height: '40px', borderRadius: '8px', backgroundColor: 'transparent', border: '1px solid #FF2A2A', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FF2A2A', fontWeight: 900, letterSpacing: '1px', fontSize: '10px', cursor: 'pointer', transition: 'all 0.2s' }}
+                   onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255, 42, 42, 0.1)'; e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 42, 42, 0.4)'; }}
+                   onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.boxShadow = 'none'; }}>
+                   &lt; SALIR
+                 </div>
+               </Link>
+
+               <div
+                 style={{ height: '40px', flex: 1, borderRadius: '8px', backgroundColor: 'rgba(0, 255, 102, 0.1)', border: '1px solid #00FF66', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#00FF66', fontWeight: 900, letterSpacing: '1px', fontSize: '10px', cursor: 'pointer', transition: 'all 0.2s', boxShadow: '0 0 10px rgba(0, 255, 102, 0.3), inset 0 0 10px rgba(0, 255, 102, 0.2)', textShadow: '0 0 5px #00FF66' }}
+                 onClick={() => {
+                   saveCurrentShip();
+                   alert('Nave guardada holográficamente en Mi Hangar.');
+                 }}
+                 onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 255, 102, 0.2)'; e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 102, 0.6), inset 0 0 15px rgba(0, 255, 102, 0.4)'; e.currentTarget.style.transform = 'scale(1.05)'; }}
+                 onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 255, 102, 0.1)'; e.currentTarget.style.boxShadow = '0 0 10px rgba(0, 255, 102, 0.3), inset 0 0 10px rgba(0, 255, 102, 0.2)'; e.currentTarget.style.transform = 'scale(1)'; }}>
+                 <Save size={14} style={{ marginRight: '4px' }} /> GUARDAR
+               </div>
+
+               <Link href="/hangar/mi-hangar" style={{ textDecoration: 'none', flex: 1 }}>
+                 <div
+                   style={{ height: '40px', borderRadius: '8px', backgroundColor: 'rgba(0, 228, 255, 0.1)', border: '1px solid #00E4FF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#00E4FF', fontWeight: 900, letterSpacing: '1px', fontSize: '10px', cursor: 'pointer', transition: 'all 0.2s', boxShadow: '0 0 10px rgba(0, 228, 255, 0.3), inset 0 0 10px rgba(0, 228, 255, 0.2)', textShadow: '0 0 5px #00E4FF' }}
+                   onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 228, 255, 0.2)'; e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 228, 255, 0.6), inset 0 0 15px rgba(0, 228, 255, 0.4)'; e.currentTarget.style.transform = 'scale(1.05)'; }}
+                   onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 228, 255, 0.1)'; e.currentTarget.style.boxShadow = '0 0 10px rgba(0, 228, 255, 0.3), inset 0 0 10px rgba(0, 228, 255, 0.2)'; e.currentTarget.style.transform = 'scale(1)'; }}>
+                   <Archive size={14} style={{ marginRight: '4px' }} /> HANGAR
                  </div>
                </Link>
             </div>

@@ -7,16 +7,16 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const DINOS_MODULES = [
-  { id: 'dinos_m1', title: 'La Tierra Primitiva', color: '#8B4513', link: '/course/dinos_m1', icon: '/assets/dinosaurios/dinos_m1.png', coords: { left: '10%', top: '30%' } },
-  { id: 'dinos_m2', title: 'El Triásico', color: '#CD853F', link: '/course/dinos_m2', icon: '/assets/dinosaurios/dinos_m2.png', coords: { left: '25%', top: '55%' } },
-  { id: 'dinos_m3', title: 'El Jurásico', color: '#228B22', link: '/course/dinos_m3', icon: '/assets/dinosaurios/dinos_m3.png', coords: { left: '38%', top: '28%' } },
-  { id: 'dinos_m4', title: 'El Cretácico', color: '#B22222', link: '/course/dinos_m4', icon: '/assets/dinosaurios/dinos_m4.png', coords: { left: '52%', top: '58%' } },
-  { id: 'dinos_m5', title: 'Herbívoros Colosales', color: '#2E8B57', link: '/course/dinos_m5', icon: '/assets/dinosaurios/dinos_m5.png', coords: { left: '65%', top: '30%' } },
-  { id: 'dinos_m6', title: 'Depredadores Supremos', color: '#DC143C', link: '/course/dinos_m6', icon: '/assets/dinosaurios/dinos_m6.png', coords: { left: '78%', top: '55%' } },
-  { id: 'dinos_m7', title: 'Dinosaurios a Aves', color: '#4682B4', link: '/course/dinos_m7', icon: '/assets/dinosaurios/dinos_m7.png', coords: { left: '88%', top: '28%' } },
-  { id: 'dinos_m8', title: 'Paleontología', color: '#DAA520', link: '/course/dinos_m8', icon: '/assets/dinosaurios/dinos_m8.png', coords: { left: '15%', top: '75%' } },
-  { id: 'dinos_m9', title: 'La Extinción K-Pg', color: '#FF4500', link: '/course/dinos_m9', icon: '/assets/dinosaurios/dinos_m9.png', coords: { left: '45%', top: '78%' } },
-  { id: 'dinos_m10', title: 'El Legado', color: '#9370DB', link: '/course/dinos_m10', icon: '/assets/dinosaurios/dinos_m10.png', coords: { left: '75%', top: '78%' } },
+  { id: 'dinos_m1', title: 'El Amanecer del Triásico', color: '#8B4513', link: '/course/dinos_m1', icon: '/assets/dinosaurios/dinos_m1.png', coords: { left: '10%', top: '30%' } },
+  { id: 'dinos_m2', title: 'Gigantes del Jurásico', color: '#CD853F', link: '/course/dinos_m2', icon: '/assets/dinosaurios/dinos_m2.png', coords: { left: '25%', top: '55%' } },
+  { id: 'dinos_m3', title: 'Tyrannosaurus Rex: El Rey Supremo', color: '#228B22', link: '/course/dinos_m3', icon: '/assets/dinosaurios/dinos_m3.png', coords: { left: '38%', top: '28%' } },
+  { id: 'dinos_m4', title: 'Velociraptores: Cazadores Inteligentes', color: '#B22222', link: '/course/dinos_m4', icon: '/assets/dinosaurios/dinos_m4.png', coords: { left: '52%', top: '58%' } },
+  { id: 'dinos_m5', title: 'Pterosaurios: Los Señores del Cielo', color: '#2E8B57', link: '/course/dinos_m5', icon: '/assets/dinosaurios/dinos_m5.png', coords: { left: '65%', top: '30%' } },
+  { id: 'dinos_m6', title: 'Dinosaurios Acorazados', color: '#DC143C', link: '/course/dinos_m6', icon: '/assets/dinosaurios/dinos_m6.png', coords: { left: '78%', top: '55%' } },
+  { id: 'dinos_m7', title: 'Nidos y Crías de Dinosaurio', color: '#4682B4', link: '/course/dinos_m7', icon: '/assets/dinosaurios/dinos_m7.png', coords: { left: '88%', top: '28%' } },
+  { id: 'dinos_m8', title: 'El Mundo del Cretácico', color: '#DAA520', link: '/course/dinos_m8', icon: '/assets/dinosaurios/dinos_m8.png', coords: { left: '15%', top: '75%' } },
+  { id: 'dinos_m9', title: 'El Asteroide que Cambió Todo', color: '#FF4500', link: '/course/dinos_m9', icon: '/assets/dinosaurios/dinos_m9.png', coords: { left: '45%', top: '78%' } },
+  { id: 'dinos_m10', title: 'Paleontología del Futuro', color: '#9370DB', link: '/course/dinos_m10', icon: '/assets/dinosaurios/dinos_m10.png', coords: { left: '75%', top: '78%' } },
 ];
 
 // Volcanic ash particles

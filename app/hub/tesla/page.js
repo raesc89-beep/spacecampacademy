@@ -7,16 +7,16 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const TESLA_MODULES = [
-  { id: 'tesla_m1', title: 'El Nacimiento de un Genio', color: '#7B68EE', link: '/course/tesla_m1', icon: '/assets/tesla/tesla_m1.png', coords: { left: '12%', top: '35%' } },
-  { id: 'tesla_m2', title: 'La Guerra de las Corrientes', color: '#FFD700', link: '/course/tesla_m2', icon: '/assets/tesla/tesla_m2.png', coords: { left: '28%', top: '22%' } },
-  { id: 'tesla_m3', title: 'Motor de Inducción', color: '#00CED1', link: '/course/tesla_m3', icon: '/assets/tesla/tesla_m3.png', coords: { left: '45%', top: '45%' } },
-  { id: 'tesla_m4', title: 'La Bobina de Tesla', color: '#9400D3', link: '/course/tesla_m4', icon: '/assets/tesla/tesla_m4.png', coords: { left: '62%', top: '22%' } },
-  { id: 'tesla_m5', title: 'Wardenclyffe', color: '#4B0082', link: '/course/tesla_m5', icon: '/assets/tesla/tesla_m5.png', coords: { left: '78%', top: '40%' } },
-  { id: 'tesla_m6', title: 'Radio, Rayos X y más', color: '#00BFFF', link: '/course/tesla_m6', icon: '/assets/tesla/tesla_m6.png', coords: { left: '88%', top: '60%' } },
-  { id: 'tesla_m7', title: 'Iluminación del Mundo', color: '#FFD700', link: '/course/tesla_m7', icon: '/assets/tesla/tesla_m7.png', coords: { left: '18%', top: '65%' } },
-  { id: 'tesla_m8', title: 'Genio y Soledad', color: '#696969', link: '/course/tesla_m8', icon: '/assets/tesla/tesla_m8.png', coords: { left: '38%', top: '72%' } },
-  { id: 'tesla_m9', title: 'Teorías de Conspiración', color: '#FF4500', link: '/course/tesla_m9', icon: '/assets/tesla/tesla_m9.png', coords: { left: '58%', top: '72%' } },
-  { id: 'tesla_m10', title: 'El Legado de Tesla', color: '#32CD32', link: '/course/tesla_m10', icon: '/assets/tesla/tesla_m10.png', coords: { left: '78%', top: '72%' } },
+  { id: 'tesla_m1', title: 'Nacido en una Tormenta', color: '#7B68EE', link: '/course/tesla_m1', icon: '/assets/tesla/tesla_m1.png', coords: { left: '12%', top: '35%' } },
+  { id: 'tesla_m2', title: 'Corriente Alterna vs Corriente Continua', color: '#FFD700', link: '/course/tesla_m2', icon: '/assets/tesla/tesla_m2.png', coords: { left: '28%', top: '22%' } },
+  { id: 'tesla_m3', title: 'La Bobina de Tesla', color: '#00CED1', link: '/course/tesla_m3', icon: '/assets/tesla/tesla_m3.png', coords: { left: '45%', top: '45%' } },
+  { id: 'tesla_m4', title: 'El Sueño de la Energía Inalámbrica', color: '#9400D3', link: '/course/tesla_m4', icon: '/assets/tesla/tesla_m4.png', coords: { left: '62%', top: '22%' } },
+  { id: 'tesla_m5', title: 'Radio y Control Remoto', color: '#4B0082', link: '/course/tesla_m5', icon: '/assets/tesla/tesla_m5.png', coords: { left: '78%', top: '40%' } },
+  { id: 'tesla_m6', title: 'Rayos X y Medicina', color: '#00BFFF', link: '/course/tesla_m6', icon: '/assets/tesla/tesla_m6.png', coords: { left: '88%', top: '60%' } },
+  { id: 'tesla_m7', title: 'La Central de las Cataratas del Niágara', color: '#FFD700', link: '/course/tesla_m7', icon: '/assets/tesla/tesla_m7.png', coords: { left: '18%', top: '65%' } },
+  { id: 'tesla_m8', title: 'Las Invenciones Olvidadas de Tesla', color: '#696969', link: '/course/tesla_m8', icon: '/assets/tesla/tesla_m8.png', coords: { left: '38%', top: '72%' } },
+  { id: 'tesla_m9', title: 'Los Últimos Años de Tesla', color: '#FF4500', link: '/course/tesla_m9', icon: '/assets/tesla/tesla_m9.png', coords: { left: '58%', top: '72%' } },
+  { id: 'tesla_m10', title: 'El Legado Eterno de Tesla', color: '#32CD32', link: '/course/tesla_m10', icon: '/assets/tesla/tesla_m10.png', coords: { left: '78%', top: '72%' } },
 ];
 
 // Electric particles floating
