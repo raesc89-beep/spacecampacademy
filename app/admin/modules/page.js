@@ -11,17 +11,25 @@ import { motion, AnimatePresence, Reorder } from 'framer-motion';
 
 // ─── Course Groups Config (for filtering) ───
 const COURSE_GROUPS = [
-  { id: 'solar', label: '🪐 Sistema Solar', prefixes: ['sun','mercury','venus','earth','mars','jupiter','saturn','uranus','neptune','pluto','moon','dwarf'] },
-  { id: 'egypt', label: '🏺 Arqueoastronomía Egipcia', prefixes: ['egypt_'] },
-  { id: 'maya', label: '🌿 Arqueoastronomía Maya', prefixes: ['maya_'] },
-  { id: 'dinos', label: '🦕 Dinosaurios', prefixes: ['dinos_'] },
-  { id: 'marinos', label: '🌊 Reptiles Marinos', prefixes: ['marinos_'] },
-  { id: 'tesla', label: '⚡ Nikola Tesla', prefixes: ['tesla_'] },
-  { id: 'pioneros', label: '🚀 Pioneros del Espacio', prefixes: ['pioneros_'] },
-  { id: 'colisiones', label: '💥 Colisiones Estelares', prefixes: ['colisiones_'] },
-  { id: 'robots', label: '🤖 Robótica Espacial', prefixes: ['robot','rover','satelit','hubble','voyager'] },
-  { id: 'otros', label: '📚 Otros Módulos', prefixes: [] },
+  { id: 'solar',       label: '🪐 Sistema Solar',            prefixes: ['sun','mercury','venus','earth','mars','jupiter','saturn','uranus','neptune','pluto','moon','dwarf'] },
+  { id: 'egypt',       label: '🏺 Arqueoastronomía Egipcia', prefixes: ['egypt_'] },
+  { id: 'maya',        label: '🌿 Arqueoastronomía Maya',    prefixes: ['maya_','arqueoastronomia_maya'] },
+  { id: 'dinos',       label: '🦕 Dinosaurios',             prefixes: ['dinos_'] },
+  { id: 'marinos',     label: '🌊 Reptiles Marinos',        prefixes: ['marinos_'] },
+  { id: 'tesla',       label: '⚡ Nikola Tesla',            prefixes: ['tesla_'] },
+  { id: 'pioneros',    label: '🚀 Pioneros del Espacio',    prefixes: ['pioneros_'] },
+  { id: 'apollo',      label: '🌕 Misiones Apollo',         prefixes: ['apollo'] },
+  { id: 'cientificos', label: '🔭 Grandes Científicos',     prefixes: ['copernico_','galileo_','faraday_','davinci_'] },
+  { id: 'area51',      label: '🛸 Área 51',                 prefixes: ['area51_'] },
+  { id: 'anomalias',   label: '💥 Anomalías Estelares',     prefixes: ['colisiones_','black_','quasar','pulsar','red_','white_','wormhole'] },
+  { id: 'robots',      label: '🤖 Robótica Espacial',       prefixes: ['robots_'] },
+  { id: 'animales',    label: '🐾 Animales del Espacio',    prefixes: ['animales_'] },
+  { id: 'asteroides',  label: '☄️ Asteroides y Cometas',    prefixes: ['asteroides_','rocosos_'] },
+  { id: 'peliculas',   label: '🎬 Ciencia en el Cine',      prefixes: ['starwars_','bttf_','interstellar_','interestelar_','objetos_'] },
+  { id: 'viajes',      label: '🛰️ Viajes Espaciales',       prefixes: ['viaje','exoplanetas_','arqueoastronomia_'] },
+  { id: 'otros',       label: '📚 Otros Módulos',           prefixes: [] },
 ];
+
 
 function getModuleCourse(moduleId) {
   const id = (moduleId || '').toLowerCase();

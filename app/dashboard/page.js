@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Rocket, Anchor, Radio, Star, Gamepad2 } from 'lucide-react';
+import { Rocket, Anchor, Radio, Star, Gamepad2, Trophy } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import HubDecorations from '@/components/HubDecorations';
@@ -50,6 +50,9 @@ export default function DashboardLanding() {
   }
 
   const userStars = userData?.progress?.stars || 0;
+  const userAchievements = userData?.progress?.achievements || {};
+  const unlockedCount = Object.keys(userAchievements).length;
+  const TOTAL_ACHIEVEMENTS = 30;
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#020308', overflow: 'hidden' }}>
@@ -198,6 +201,22 @@ export default function DashboardLanding() {
                 {telemetry.commBars.map((h,i) => (
                   <div key={i} style={{ width: '3px', height: `${h}px`, background: '#00FF88', borderRadius: '1px', boxShadow: h > 10 ? '0 0 3px #00FF88' : 'none' }}/>
                 ))}
+              </div>
+            </div>
+            {/* ── LOGROS widget ── */}
+            <div style={{ background: 'rgba(255,215,0,0.07)', border: '1px solid rgba(255,215,0,0.35)', borderRadius: '8px', padding: '0.4rem' }}>
+              <div style={{ fontSize: '0.38rem', color: '#FFD700', letterSpacing: '1px', marginBottom: '3px', fontFamily: 'monospace', display: 'flex', alignItems: 'center', gap: '3px' }}>🏆 LOGROS</div>
+              <div style={{ fontSize: '0.65rem', color: 'white', fontFamily: 'monospace', fontWeight: 'bold' }}>{unlockedCount}<span style={{ fontSize: '0.45rem', color: 'rgba(255,255,255,0.35)' }}>/{TOTAL_ACHIEVEMENTS}</span></div>
+              <div style={{ height: '2px', background: 'rgba(255,215,0,0.15)', borderRadius: '1px', marginTop: '4px', overflow: 'hidden' }}>
+                <div style={{ width: `${Math.round((unlockedCount / TOTAL_ACHIEVEMENTS) * 100)}%`, height: '100%', background: '#FFD700', boxShadow: '0 0 4px #FFD700' }}/>
+              </div>
+            </div>
+            {/* ── POLVO ESTELAR widget ── */}
+            <div style={{ background: 'rgba(0,255,136,0.07)', border: '1px solid rgba(0,255,136,0.35)', borderRadius: '8px', padding: '0.4rem' }}>
+              <div style={{ fontSize: '0.38rem', color: '#00FF88', letterSpacing: '1px', marginBottom: '3px', fontFamily: 'monospace' }}>✨ POLVO</div>
+              <div style={{ fontSize: '0.6rem', color: 'white', fontFamily: 'monospace', fontWeight: 'bold', whiteSpace: 'nowrap' }}>{userStars.toLocaleString()}</div>
+              <div style={{ display: 'flex', gap: '1px', marginTop: '4px' }}>
+                {[1,2,3,4].map(i => <div key={i} style={{ flex: 1, height: '2px', background: userStars > (i-1)*500 ? '#00FF88' : 'rgba(0,255,136,0.15)', borderRadius: '1px', boxShadow: userStars > (i-1)*500 ? '0 0 3px #00FF88' : 'none' }}/>)}
               </div>
             </div>
           </div>
