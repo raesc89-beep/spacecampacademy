@@ -253,6 +253,36 @@ const DASHBOARD_MISSIONS = [
     badgeColor: "#D4A843",
     badgeText: "Revolución Científica",
     borderColor: "rgba(212, 168, 67, 0.4)"
+  },
+  {
+    id: "dinosaurios",
+    title: "Los Dinosaurios: La Era de los Titanes",
+    subtitle: "Viaja al Mesozoico y descubre a las criaturas más gigantescas que jamás pisaron la Tierra.",
+    link: "/hub/dinosaurios",
+    bgSrc: "/assets/dinosaurios/dinosaurios_cover.png",
+    badgeColor: "#8B4513",
+    badgeText: "Paleontología",
+    borderColor: "rgba(139, 69, 19, 0.4)"
+  },
+  {
+    id: "reptiles_marinos",
+    title: "Reptiles Marinos Prehistóricos",
+    subtitle: "Sumérgete en los océanos del Mesozoico y conoce a los leviatanes que dominaron las profundidades.",
+    link: "/hub/reptiles-marinos",
+    bgSrc: "/assets/reptiles_marinos/reptiles_marinos_cover.png",
+    badgeColor: "#006994",
+    badgeText: "Paleontología",
+    borderColor: "rgba(0, 105, 148, 0.4)"
+  },
+  {
+    id: "tesla",
+    title: "Nikola Tesla: El Mago de la Electricidad",
+    subtitle: "Descubre al genio que domesticó el rayo, soñó con energía libre y cambió el mundo para siempre.",
+    link: "/hub/tesla",
+    bgSrc: "/assets/tesla/tesla_cover.png",
+    badgeColor: "#7B68EE",
+    badgeText: "Revolución Científica",
+    borderColor: "rgba(123, 104, 238, 0.4)"
   }
 ];
 
@@ -278,7 +308,7 @@ export default function CourseHub() {
 
   const userStars = userData?.progress?.stars || 0;
 
-  const categories = ['Todos', 'Arqueoastronomía', 'Exploración Galáctica', 'Misión Lunar', 'Teoría Astrofísica', 'Vuelo y Geología', 'Minijuegos'];
+  const categories = ['Todos', 'Arqueoastronomía', 'Exploración Galáctica', 'Misión Lunar', 'Teoría Astrofísica', 'Vuelo y Geología', 'Paleontología', 'Revolución Científica', 'Minijuegos'];
 
   const getCategory = (badgeText) => {
     if (badgeText.includes('Arqueoastronomía')) return 'Arqueoastronomía';
@@ -286,7 +316,9 @@ export default function CourseHub() {
     if (badgeText.includes('Misión Lunar')) return 'Misión Lunar';
     if (badgeText.includes('Astrofísica') || badgeText.includes('Física') || badgeText.includes('Evento')) return 'Teoría Astrofísica';
     if (badgeText.includes('Minijuegos')) return 'Minijuegos';
-    return 'Vuelo y Geología'; // Default for Vuelo Espacial, Historico, Biologico, Rocoso
+    if (badgeText.includes('Paleontología')) return 'Paleontología';
+    if (badgeText.includes('Revolución Científica')) return 'Revolución Científica';
+    return 'Vuelo y Geología';
   };
 
   const filteredMissions = activeCategory === 'Todos' 
