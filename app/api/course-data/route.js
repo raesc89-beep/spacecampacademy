@@ -1,28 +1,5 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-// Path to lib/courseData.js
-const courseDataPath = path.join(process.cwd(), 'lib', 'courseData.js');
-
-// ── Local file helpers (work in dev, fail gracefully on Vercel) ──
-function readCourseData() {
-  const content = fs.readFileSync(courseDataPath, 'utf8');
-  const jsonStr = content.substring(content.indexOf('['), content.lastIndexOf(']') + 1);
-  return JSON.parse(jsonStr);
-}
-
-function tryWriteCourseData(data) {
-  try {
-    const newContent =
-      '// Archivo maestro estático del curso\nexport const COURSE_DATA = ' +
-      JSON.stringify(data, null, 2) +
-      ';\n';
-    fs.writeFileSync(courseDataPath, newContent, 'utf8');
-  } catch (_) {
-    // Vercel read-only filesystem — silently skip local write
-  }
-}
+import { COURSE_DATA } from '@/lib/courseData';
 
 // ── Firestore write via REST (no Admin SDK needed) ──
 // Uses the Firebase Web REST API with the project's public API key.
@@ -38,7 +15,10 @@ async function writeModuleToFirestore(moduleId, fields) {
   function toFirestoreValue(val) {
     if (val === null || val === undefined) return { nullValue: null };
     if (typeof val === 'boolean') return { booleanValue: val };
-    if (typeof val === 'number') return { integerValue: String(val) };
+    if (typeof val === 'number') {
+      if (Number.isInteger(val)) return { integerValue: String(val) };
+      return { doubleValue: val };
+    }
     if (typeof val === 'string') return { stringValue: val };
     if (Array.isArray(val)) {
       return { arrayValue: { values: val.map(toFirestoreValue) } };
@@ -67,17 +47,35 @@ async function writeModuleToFirestore(moduleId, fields) {
     if (!res.ok) {
       const errText = await res.text();
       console.error('[course-data API] Firestore write failed:', res.status, errText);
+      return false;
     }
+    return true;
   } catch (e) {
     console.error('[course-data API] Firestore write error:', e.message);
+    return false;
   }
+}
+
+// ── In-memory mutable copy of the course data ──
+// We keep a mutable copy in memory so edits persist across requests
+// during the same server session (dev mode). The canonical source
+// for production is Firestore; this is a convenience for the admin editor.
+let mutableCourseData = null;
+
+function getCourseData() {
+  if (!mutableCourseData) {
+    // Deep clone from the static import so mutations don't affect the module cache
+    mutableCourseData = JSON.parse(JSON.stringify(COURSE_DATA));
+  }
+  return mutableCourseData;
 }
 
 export async function GET() {
   try {
-    const data = readCourseData();
+    const data = getCourseData();
     return NextResponse.json(data);
   } catch (err) {
+    console.error('[course-data API] GET error:', err);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
@@ -85,20 +83,34 @@ export async function GET() {
 export async function POST(req) {
   try {
     const { action, payload } = await req.json();
-    let data = readCourseData();
+    const data = getCourseData();
 
     if (action === 'update_module') {
       const idx = data.findIndex(m => m.id === payload.id);
-      if (idx !== -1) {
-        data[idx] = { ...data[idx], ...payload };
-        // Sync metadata to Firestore
-        await writeModuleToFirestore(payload.id, {
-          titleEs: data[idx].titleEs || '',
-          badgeEs: data[idx].badgeEs || '',
-          color: data[idx].color || '#00e4ff',
-        });
+      if (idx === -1) {
+        return NextResponse.json({ error: `Módulo "${payload.id}" no encontrado` }, { status: 404 });
       }
+      // Merge payload into existing module (but don't overwrite contentEs/quizEs from here)
+      const { id, ...updates } = payload;
+      data[idx] = { ...data[idx], ...updates };
+      // Sync metadata to Firestore
+      const firestoreOk = await writeModuleToFirestore(payload.id, {
+        titleEs: data[idx].titleEs || '',
+        badgeEs: data[idx].badgeEs || '',
+        color: data[idx].color || '#00e4ff',
+        visible: data[idx].visible !== false,
+        updatedAt: new Date().toISOString(),
+      });
+      if (!firestoreOk) {
+        console.warn('[course-data API] Firestore sync failed for update_module, but in-memory update succeeded');
+      }
+
     } else if (action === 'add_module') {
+      // Check for duplicate ID
+      const existingIdx = data.findIndex(m => m.id === payload.id);
+      if (existingIdx !== -1) {
+        return NextResponse.json({ error: `Ya existe un módulo con ID "${payload.id}"` }, { status: 409 });
+      }
       const newModule = {
         id: payload.id || `mod_${Date.now()}`,
         order: data.length + 1,
@@ -107,39 +119,68 @@ export async function POST(req) {
         badge: payload.badgeEs,
         badgeEs: payload.badgeEs,
         color: payload.color || '#00e4ff',
-        contentEs: { sections: [], bibliography: [] },
+        contentEs: { sections: [] },
         quizEs: [],
-        quiz: [],
       };
       data.push(newModule);
+      // Also write new module to Firestore
+      await writeModuleToFirestore(newModule.id, {
+        titleEs: newModule.titleEs,
+        badgeEs: newModule.badgeEs,
+        color: newModule.color,
+        contentEs: newModule.contentEs,
+        quizEs: newModule.quizEs,
+        createdAt: new Date().toISOString(),
+      });
+
     } else if (action === 'delete_module') {
-      data = data.filter(m => m.id !== payload.id);
+      const idx = data.findIndex(m => m.id === payload.id);
+      if (idx !== -1) {
+        data.splice(idx, 1);
+      }
+
     } else if (action === 'update_sections') {
       const idx = data.findIndex(m => m.id === payload.id);
-      if (idx !== -1) {
-        data[idx].contentEs.sections = payload.sections;
-        // ── KEY FIX: write sections to Firestore so course page sees changes ──
-        await writeModuleToFirestore(payload.id, {
-          sections: payload.sections,
-          updatedAt: new Date().toISOString(),
-        });
+      if (idx === -1) {
+        return NextResponse.json({ error: `Módulo "${payload.id}" no encontrado` }, { status: 404 });
       }
+      // Ensure contentEs exists
+      if (!data[idx].contentEs) {
+        data[idx].contentEs = {};
+      }
+      data[idx].contentEs.sections = payload.sections;
+      // Write sections to Firestore so course page sees changes
+      const firestoreOk = await writeModuleToFirestore(payload.id, {
+        contentEs: data[idx].contentEs,
+        updatedAt: new Date().toISOString(),
+      });
+      if (!firestoreOk) {
+        console.warn('[course-data API] Firestore sync failed for update_sections');
+      }
+
     } else if (action === 'update_quiz') {
       const idx = data.findIndex(m => m.id === payload.id);
-      if (idx !== -1) {
-        data[idx].quizEs = payload.quizEs;
-        // Also sync quiz to Firestore
-        await writeModuleToFirestore(payload.id, {
-          quizEs: payload.quizEs,
-          updatedAt: new Date().toISOString(),
-        });
+      if (idx === -1) {
+        return NextResponse.json({ error: `Módulo "${payload.id}" no encontrado` }, { status: 404 });
       }
+      data[idx].quizEs = payload.quizEs;
+      // Sync quiz to Firestore
+      const firestoreOk = await writeModuleToFirestore(payload.id, {
+        quizEs: payload.quizEs,
+        updatedAt: new Date().toISOString(),
+      });
+      if (!firestoreOk) {
+        console.warn('[course-data API] Firestore sync failed for update_quiz');
+      }
+
+    } else {
+      return NextResponse.json({ error: `Acción desconocida: "${action}"` }, { status: 400 });
     }
 
-    // Always try to write local file (works in dev)
-    tryWriteCourseData(data);
+    // Update the in-memory reference
+    mutableCourseData = data;
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, moduleCount: data.length });
   } catch (err) {
     console.error('[course-data API] POST error:', err);
     return NextResponse.json({ error: err.message }, { status: 500 });

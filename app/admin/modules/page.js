@@ -3,7 +3,8 @@ import { useState, useEffect, useRef } from 'react';
 import {
   BookOpen, Plus, Save, RefreshCw, Trash2, Video, Image as ImageIcon,
   AlertCircle, GripVertical, Type, X, Layout, Eye, Edit3,
-  Volume2, Tag, Copy, ChevronDown, EyeOff, FileText, Search
+  Volume2, Tag, Copy, ChevronDown, EyeOff, FileText, Search,
+  CheckCircle, Sparkles, Layers, PenTool, Palette
 } from 'lucide-react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 
@@ -38,23 +39,33 @@ export default function EditorMoodle() {
   const [saving, setSaving] = useState(false);
   const [status, setStatus] = useState({ msg: '', type: '' });
   const [uploadingId, setUploadingId] = useState(null);
-  const [addBlockMenu, setAddBlockMenu] = useState(null); // index where menu is open
+  const [addBlockMenu, setAddBlockMenu] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [hasUnsaved, setHasUnsaved] = useState(false);
 
   const showStatus = (msg, type = 'info') => {
     setStatus({ msg, type });
-    setTimeout(() => setStatus({ msg: '', type: '' }), 4000);
+    if (type !== 'error') {
+      setTimeout(() => setStatus({ msg: '', type: '' }), 5000);
+    }
   };
 
   const loadData = async () => {
     setLoading(true);
     try {
       const res = await fetch('/api/course-data');
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        throw new Error(errData.error || `HTTP ${res.status}`);
+      }
       const data = await res.json();
+      if (!Array.isArray(data)) {
+        throw new Error('La respuesta del servidor no es un array válido');
+      }
       setModules(data);
     } catch (err) {
-      showStatus('Error cargando módulos', 'error');
+      console.error('[EditorMoodle] loadData error:', err);
+      showStatus(`Error cargando módulos: ${err.message}`, 'error');
     }
     setLoading(false);
   };
@@ -63,61 +74,93 @@ export default function EditorMoodle() {
 
   const loadModule = () => {
     const mod = modules.find(m => m.id === selectedModuleId);
-    if (mod) {
-      setModuleData({
-        titleEs: mod.titleEs,
-        badgeEs: mod.badgeEs,
-        color: mod.color,
-        visible: mod.visible !== false,
-      });
-      const loadedSections = (mod.contentEs?.sections || []).map(s => ({
-        ...s,
-        id: s.id || `blk_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
-        type: s.type || 'text',
-        visible: s.visible !== false,
-      }));
-      setSections(loadedSections);
-      setHasUnsaved(false);
-      setEditMode(true);
-      showStatus('Módulo cargado para edición', 'success');
+    if (!mod) {
+      showStatus('Módulo no encontrado en la lista', 'error');
+      return;
     }
+    setModuleData({
+      titleEs: mod.titleEs || '',
+      badgeEs: mod.badgeEs || '',
+      color: mod.color || '#00E4FF',
+      visible: mod.visible !== false,
+    });
+    const loadedSections = (mod.contentEs?.sections || []).map(s => ({
+      ...s,
+      id: s.id || `blk_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      type: s.type || 'text',
+      visible: s.visible !== false,
+    }));
+    setSections(loadedSections);
+    setHasUnsaved(false);
+    setEditMode(true);
+    showStatus(`✅ Módulo "${mod.titleEs || mod.id}" cargado para edición`, 'success');
   };
 
   const handleCreateModule = async () => {
     const titleEs = prompt('Título del nuevo módulo (ej: Misión Júpiter):');
-    if (!titleEs) return;
-    const id = titleEs.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    if (!titleEs || !titleEs.trim()) return;
+    const id = titleEs.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    if (!id) {
+      showStatus('El título no genera un ID válido', 'error');
+      return;
+    }
     setSaving(true);
     try {
-      await fetch('/api/course-data', {
+      const res = await fetch('/api/course-data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'add_module', payload: { id, titleEs, badgeEs: titleEs } })
+        body: JSON.stringify({ action: 'add_module', payload: { id, titleEs: titleEs.trim(), badgeEs: titleEs.trim() } })
       });
-      showStatus('Módulo creado', 'success');
+      const result = await res.json();
+      if (!res.ok) {
+        throw new Error(result.error || `HTTP ${res.status}`);
+      }
+      showStatus(`✅ Módulo "${titleEs}" creado exitosamente`, 'success');
       await loadData();
       setSelectedModuleId(id);
-    } catch (e) { showStatus('Error al crear', 'error'); }
+    } catch (e) {
+      console.error('[EditorMoodle] create error:', e);
+      showStatus(`Error al crear módulo: ${e.message}`, 'error');
+    }
     setSaving(false);
   };
 
   const saveModuleChanges = async () => {
+    if (!selectedModuleId || !moduleData) {
+      showStatus('No hay módulo seleccionado para guardar', 'error');
+      return;
+    }
     setSaving(true);
     try {
-      await fetch('/api/course-data', {
+      // Step 1: Update module metadata
+      const res1 = await fetch('/api/course-data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'update_module', payload: { id: selectedModuleId, ...moduleData } })
       });
-      await fetch('/api/course-data', {
+      const result1 = await res1.json();
+      if (!res1.ok) {
+        throw new Error(`Error guardando metadatos: ${result1.error || res1.status}`);
+      }
+
+      // Step 2: Update sections/content
+      const res2 = await fetch('/api/course-data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'update_sections', payload: { id: selectedModuleId, sections } })
       });
+      const result2 = await res2.json();
+      if (!res2.ok) {
+        throw new Error(`Error guardando contenido: ${result2.error || res2.status}`);
+      }
+
       setHasUnsaved(false);
-      showStatus('¡Curso publicado exitosamente!', 'success');
+      showStatus('🚀 ¡Curso publicado exitosamente!', 'success');
       await loadData();
-    } catch (e) { showStatus('Error al guardar', 'error'); }
+    } catch (e) {
+      console.error('[EditorMoodle] save error:', e);
+      showStatus(`Error al guardar: ${e.message}`, 'error');
+    }
     setSaving(false);
   };
 
@@ -170,136 +213,242 @@ export default function EditorMoodle() {
     try {
       const res = await fetch('/api/upload', { method: 'POST', body: formData });
       const data = await res.json();
-      if (data.success) {
-        updateSection(secId, field, data.url);
-        showStatus('Archivo subido', 'success');
-      } else { showStatus('Error: ' + data.error, 'error'); }
-    } catch (e) { showStatus('Error de red', 'error'); }
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Upload failed');
+      }
+      updateSection(secId, field, data.url);
+      showStatus('📎 Archivo subido exitosamente', 'success');
+    } catch (e) {
+      console.error('[EditorMoodle] upload error:', e);
+      showStatus(`Error al subir archivo: ${e.message}`, 'error');
+    }
     setUploadingId(null);
   };
-
-  // Styles
-  const inputTheme = { background: 'rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '8px', padding: '0.6rem 1rem', width: '100%', outline: 'none', transition: 'border-color 0.2s' };
-  const inlineInput = { background: 'transparent', border: 'none', borderBottom: '1px dashed rgba(255,255,255,0.3)', color: 'white', width: '100%', outline: 'none', transition: 'all 0.2s' };
 
   const filteredModules = searchTerm
     ? modules.filter(m => (m.titleEs || m.id).toLowerCase().includes(searchTerm.toLowerCase()))
     : modules;
 
-  if (loading && modules.length === 0) return <div style={{ color: 'white', padding: '2rem' }}>Iniciando Creador de Cursos...</div>;
-
-  // ─── Block type icon helper ───
   const blockTypeInfo = (type) => BLOCK_TYPES.find(b => b.type === type) || BLOCK_TYPES[0];
+
+  // ── LOADING STATE ──
+  if (loading && modules.length === 0) {
+    return (
+      <div style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+        minHeight: '60vh', gap: '1.5rem',
+      }}>
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+        >
+          <Sparkles size={48} color="#00E4FF" />
+        </motion.div>
+        <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '1.1rem' }}>Cargando Creador de Cursos...</p>
+      </div>
+    );
+  }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
 
       {/* ═══ HEADER ═══ */}
-      <header style={{ background: 'rgba(0,0,0,0.4)', padding: '1.5rem 2rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-          <h1 style={{ margin: 0, color: 'var(--electric-blue)', display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1.6rem' }}>
-            <Layout size={28} /> Creador de Cursos
-          </h1>
+      <header style={{
+        background: 'linear-gradient(135deg, rgba(0,228,255,0.08), rgba(0,0,0,0.5))',
+        padding: '2rem 2.5rem',
+        borderRadius: '20px',
+        border: '1px solid rgba(0,228,255,0.15)',
+        backdropFilter: 'blur(12px)',
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div style={{
+              width: 52, height: 52, borderRadius: '16px',
+              background: 'linear-gradient(135deg, rgba(0,228,255,0.2), rgba(0,228,255,0.05))',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              boxShadow: '0 0 30px rgba(0,228,255,0.15)',
+              border: '1px solid rgba(0,228,255,0.2)',
+            }}>
+              <PenTool size={26} color="#00E4FF" />
+            </div>
+            <div>
+              <h1 style={{ margin: 0, color: '#00E4FF', fontSize: '1.8rem', fontWeight: 800, letterSpacing: '-0.02em' }}>
+                Editor de Contenido
+              </h1>
+              <p style={{ margin: 0, color: 'rgba(255,255,255,0.4)', fontSize: '0.82rem' }}>
+                {modules.length} módulos disponibles • Sistema de bloques drag & drop
+              </p>
+            </div>
+          </div>
 
           {/* Edit/Preview toggle */}
           {moduleData && (
-            <button
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
               onClick={() => setEditMode(!editMode)}
               style={{
-                background: editMode ? 'rgba(0,228,255,0.12)' : 'rgba(0,255,136,0.12)',
-                border: `1px solid ${editMode ? 'rgba(0,228,255,0.4)' : 'rgba(0,255,136,0.4)'}`,
+                background: editMode ? 'rgba(0,228,255,0.1)' : 'rgba(0,255,136,0.1)',
+                border: `1px solid ${editMode ? 'rgba(0,228,255,0.35)' : 'rgba(0,255,136,0.35)'}`,
                 color: editMode ? '#00E4FF' : '#00FF88',
-                padding: '0.5rem 1.2rem',
-                borderRadius: '10px',
+                padding: '0.6rem 1.4rem',
+                borderRadius: '12px',
                 cursor: 'pointer',
-                fontWeight: 'bold',
+                fontWeight: 700,
                 fontSize: '0.85rem',
                 display: 'flex', alignItems: 'center', gap: '0.5rem',
                 transition: 'all 0.25s',
               }}
             >
-              {editMode ? <><Eye size={16} /> Modo Vista Previa</> : <><Edit3 size={16} /> Activar Edición</>}
-            </button>
+              {editMode ? <><Eye size={16} /> Vista Previa</> : <><Edit3 size={16} /> Edición</>}
+            </motion.button>
           )}
         </div>
 
-        <div style={{ display: 'flex', gap: '0.75rem' }}>
+        {/* Selector row */}
+        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'stretch' }}>
           <div style={{ position: 'relative', width: '200px' }}>
-            <Search size={14} style={{ position: 'absolute', left: '0.7rem', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.3)' }} />
+            <Search size={14} style={{ position: 'absolute', left: '0.8rem', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.25)' }} />
             <input
-              type="text" placeholder="Buscar..." value={searchTerm}
+              type="text" placeholder="Buscar módulo..." value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
-              style={{ ...inputTheme, paddingLeft: '2rem', fontSize: '0.82rem' }}
+              style={{ ...styles.input, paddingLeft: '2.2rem', fontSize: '0.82rem' }}
             />
           </div>
-          <select value={selectedModuleId} onChange={e => { setSelectedModuleId(e.target.value); setModuleData(null); }} style={{ ...inputTheme, flex: 1, cursor: 'pointer' }}>
+          <select
+            value={selectedModuleId}
+            onChange={e => { setSelectedModuleId(e.target.value); setModuleData(null); }}
+            style={{ ...styles.input, flex: 1, cursor: 'pointer', appearance: 'none',
+              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='rgba(255,255,255,0.4)' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E")`,
+              backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center',
+            }}
+          >
             <option value="">— Selecciona un curso a editar —</option>
             {filteredModules.map(m => <option key={m.id} value={m.id}>{m.titleEs || m.id}</option>)}
           </select>
-          <button onClick={loadModule} disabled={!selectedModuleId} className="btn-primary" style={{ padding: '0 1.5rem', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.97 }}
+            onClick={loadModule}
+            disabled={!selectedModuleId}
+            style={{
+              ...styles.btnPrimary,
+              opacity: selectedModuleId ? 1 : 0.4,
+              cursor: selectedModuleId ? 'pointer' : 'not-allowed',
+              display: 'flex', alignItems: 'center', gap: '0.5rem',
+            }}
+          >
             <BookOpen size={16} /> Cargar
-          </button>
-          <button onClick={handleCreateModule} className="btn-outline" style={{ whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.97 }}
+            onClick={handleCreateModule}
+            style={{ ...styles.btnOutline, display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+          >
             <Plus size={16} /> Nuevo
-          </button>
+          </motion.button>
         </div>
       </header>
 
       {/* ═══ STATUS TOAST ═══ */}
       <AnimatePresence>
         {status.msg && (
-          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-            style={{ padding: '0.8rem 1.2rem', borderRadius: '10px', background: status.type === 'success' ? 'rgba(0,255,136,0.12)' : 'rgba(255,50,50,0.12)', color: 'white', border: `1px solid ${status.type === 'success' ? 'rgba(0,255,136,0.4)' : 'rgba(255,50,50,0.4)'}`, display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
-            <AlertCircle size={16} /> {status.msg}
+          <motion.div
+            initial={{ opacity: 0, y: -15, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            style={{
+              padding: '1rem 1.5rem',
+              borderRadius: '14px',
+              background: status.type === 'success' ? 'rgba(0,255,136,0.1)' : status.type === 'error' ? 'rgba(255,50,50,0.1)' : 'rgba(0,228,255,0.1)',
+              color: 'white',
+              border: `1px solid ${status.type === 'success' ? 'rgba(0,255,136,0.35)' : status.type === 'error' ? 'rgba(255,50,50,0.35)' : 'rgba(0,228,255,0.35)'}`,
+              display: 'flex', alignItems: 'center', gap: '0.75rem',
+              fontSize: '0.92rem', fontWeight: 500,
+              boxShadow: `0 4px 20px ${status.type === 'success' ? 'rgba(0,255,136,0.1)' : status.type === 'error' ? 'rgba(255,50,50,0.1)' : 'rgba(0,228,255,0.1)'}`,
+            }}
+          >
+            {status.type === 'success' ? <CheckCircle size={18} color="#00FF88" /> :
+             status.type === 'error' ? <AlertCircle size={18} color="#ff5555" /> :
+             <AlertCircle size={18} color="#00E4FF" />}
+            <span>{status.msg}</span>
+            {status.type === 'error' && (
+              <button onClick={() => setStatus({ msg: '', type: '' })} style={{
+                marginLeft: 'auto', background: 'none', border: 'none', color: 'rgba(255,255,255,0.5)', cursor: 'pointer',
+              }}>
+                <X size={16} />
+              </button>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* ═══ EDITOR CANVAS ═══ */}
       {moduleData && (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
 
           {/* Module Cover / Metadata */}
           <div style={{
-            background: `linear-gradient(to right, rgba(0,0,0,0.8), ${moduleData.color}20)`,
-            padding: '1.5rem 2rem', borderRadius: '16px',
+            background: `linear-gradient(135deg, rgba(0,0,0,0.7), ${moduleData.color}12)`,
+            padding: '2rem 2.5rem', borderRadius: '20px',
             borderLeft: `5px solid ${moduleData.color}`,
+            border: `1px solid ${moduleData.color}25`,
             marginBottom: '1.5rem',
             display: 'flex', gap: '2rem', alignItems: 'stretch',
+            position: 'relative', overflow: 'hidden',
           }}>
-            <div style={{ flex: 1 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                <FileText size={14} color="rgba(255,255,255,0.4)" />
-                <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Portada del Módulo</span>
+            {/* Subtle decorative glow */}
+            <div style={{
+              position: 'absolute', top: '-50%', right: '-20%',
+              width: '400px', height: '400px',
+              background: `radial-gradient(circle, ${moduleData.color}08 0%, transparent 70%)`,
+              borderRadius: '50%', pointerEvents: 'none',
+            }} />
+
+            <div style={{ flex: 1, position: 'relative', zIndex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                <Layers size={14} color="rgba(255,255,255,0.35)" />
+                <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.35)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 700 }}>
+                  Portada del Módulo
+                </span>
               </div>
               {editMode ? (
                 <>
                   <input type="text" value={moduleData.titleEs}
                     onChange={e => { setModuleData({ ...moduleData, titleEs: e.target.value }); setHasUnsaved(true); }}
-                    style={{ ...inlineInput, fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.8rem' }}
+                    style={{ ...styles.inlineInput, fontSize: '2rem', fontWeight: 800, marginBottom: '0.8rem', letterSpacing: '-0.02em' }}
                     placeholder="Título del Módulo"
                   />
                   <input type="text" value={moduleData.badgeEs}
                     onChange={e => { setModuleData({ ...moduleData, badgeEs: e.target.value }); setHasUnsaved(true); }}
-                    style={{ ...inlineInput, fontSize: '1.1rem', color: 'var(--text-muted)' }}
-                    placeholder="Subtítulo o descripción"
+                    style={{ ...styles.inlineInput, fontSize: '1.1rem', color: 'rgba(255,255,255,0.5)' }}
+                    placeholder="Subtítulo o descripción corta"
                   />
                 </>
               ) : (
                 <>
-                  <h2 style={{ margin: '0 0 0.5rem 0', color: 'white', fontSize: '2rem' }}>{moduleData.titleEs || 'Sin título'}</h2>
-                  <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '1.1rem' }}>{moduleData.badgeEs || 'Sin descripción'}</p>
+                  <h2 style={{ margin: '0 0 0.5rem 0', color: 'white', fontSize: '2rem', fontWeight: 800, letterSpacing: '-0.02em' }}>{moduleData.titleEs || 'Sin título'}</h2>
+                  <p style={{ margin: 0, color: 'rgba(255,255,255,0.5)', fontSize: '1.1rem' }}>{moduleData.badgeEs || 'Sin descripción'}</p>
                 </>
               )}
             </div>
             {editMode && (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', alignItems: 'center', justifyContent: 'center', minWidth: '120px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', alignItems: 'center', justifyContent: 'center', minWidth: '100px', position: 'relative', zIndex: 1 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>Color:</span>
+                  <Palette size={14} color="rgba(255,255,255,0.4)" />
+                  <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', fontWeight: 600 }}>Color</span>
+                </div>
+                <div style={{ position: 'relative' }}>
                   <input type="color" value={moduleData.color}
                     onChange={e => { setModuleData({ ...moduleData, color: e.target.value }); setHasUnsaved(true); }}
-                    style={{ width: '36px', height: '36px', border: 'none', background: 'transparent', cursor: 'pointer' }}
+                    style={{ width: '44px', height: '44px', border: 'none', background: 'transparent', cursor: 'pointer', borderRadius: '12px' }}
                   />
+                  <div style={{
+                    position: 'absolute', inset: -3, borderRadius: '14px',
+                    border: `2px solid ${moduleData.color}60`, pointerEvents: 'none',
+                    boxShadow: `0 0 15px ${moduleData.color}20`,
+                  }} />
                 </div>
               </div>
             )}
@@ -316,43 +465,44 @@ export default function EditorMoodle() {
                 <Reorder.Item key={sec.id} value={sec} style={{ position: 'relative' }} dragListener={editMode}>
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: sec.visible !== false ? 1 : 0.4, y: 0 }}
+                    animate={{ opacity: sec.visible !== false ? 1 : 0.35, y: 0 }}
                     transition={{ delay: index * 0.03 }}
                     style={{
-                      background: 'rgba(255,255,255,0.03)',
-                      borderRadius: '12px',
-                      border: `1px solid ${editMode ? blockTypeInfo(sec.type).color + '30' : 'rgba(255,255,255,0.06)'}`,
+                      background: 'rgba(255,255,255,0.025)',
+                      borderRadius: '14px',
+                      border: `1px solid ${editMode ? blockTypeInfo(sec.type).color + '25' : 'rgba(255,255,255,0.05)'}`,
                       overflow: 'hidden',
                       display: 'flex',
-                      transition: 'border-color 0.2s, opacity 0.2s',
+                      transition: 'border-color 0.2s, opacity 0.3s',
                     }}
                   >
                     {/* Drag Handle + Type indicator */}
                     {editMode && (
                       <div style={{
-                        width: '40px',
-                        background: blockTypeInfo(sec.type).color + '08',
-                        borderRight: `1px solid ${blockTypeInfo(sec.type).color}20`,
+                        width: '44px',
+                        background: blockTypeInfo(sec.type).color + '06',
+                        borderRight: `1px solid ${blockTypeInfo(sec.type).color}15`,
                         display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                        gap: '0.4rem', cursor: 'grab', color: 'rgba(255,255,255,0.25)',
+                        gap: '0.5rem', cursor: 'grab', color: 'rgba(255,255,255,0.2)',
+                        transition: 'background 0.2s',
                       }}>
                         <GripVertical size={14} />
-                        <span style={{ fontSize: '1rem' }}>{blockTypeInfo(sec.type).icon}</span>
+                        <span style={{ fontSize: '1.1rem' }}>{blockTypeInfo(sec.type).icon}</span>
                       </div>
                     )}
 
                     {/* Content area */}
-                    <div style={{ padding: editMode ? '1.2rem' : '1.5rem 2rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                    <div style={{ padding: editMode ? '1.2rem 1.5rem' : '1.5rem 2rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
 
                       {/* Block header with actions */}
                       {editMode && (
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                           <input type="text" value={sec.title || ''} onChange={e => updateSection(sec.id, 'title', e.target.value)}
                             placeholder="Título de la sección (opcional)"
-                            style={{ ...inlineInput, fontSize: '1.15rem', fontWeight: 'bold', color: blockTypeInfo(sec.type).color, flex: 1 }}
+                            style={{ ...styles.inlineInput, fontSize: '1.1rem', fontWeight: 700, color: blockTypeInfo(sec.type).color, flex: 1 }}
                           />
                           {/* Action toolbar */}
-                          <div style={{ display: 'flex', gap: '0.25rem', marginLeft: '0.5rem' }}>
+                          <div style={{ display: 'flex', gap: '0.3rem', marginLeft: '0.75rem' }}>
                             <ToolbarBtn icon={<Copy size={14} />} title="Duplicar" onClick={() => duplicateBlock(index)} />
                             <ToolbarBtn icon={sec.visible ? <Eye size={14} /> : <EyeOff size={14} />} title="Visibilidad" onClick={() => toggleBlockVisibility(sec.id)} active={!sec.visible} />
                             <ToolbarBtn icon={<Trash2 size={14} />} title="Eliminar" onClick={() => removeSection(sec.id)} danger />
@@ -362,7 +512,7 @@ export default function EditorMoodle() {
 
                       {/* Preview mode title */}
                       {!editMode && sec.title && (
-                        <h3 style={{ margin: 0, color: moduleData.color, fontSize: '1.3rem' }}>{sec.title}</h3>
+                        <h3 style={{ margin: 0, color: moduleData.color, fontSize: '1.3rem', fontWeight: 700 }}>{sec.title}</h3>
                       )}
 
                       {/* ─── TEXT BLOCK ─── */}
@@ -373,17 +523,17 @@ export default function EditorMoodle() {
                               <textarea
                                 value={sec.text || ''} onChange={e => updateSection(sec.id, 'text', e.target.value)}
                                 placeholder="Escribe el texto pedagógico aquí..."
-                                style={{ ...inputTheme, minHeight: '100px', resize: 'vertical', lineHeight: '1.6', fontSize: '0.95rem' }}
+                                style={{ ...styles.input, minHeight: '120px', resize: 'vertical', lineHeight: '1.7', fontSize: '0.95rem' }}
                               />
                             ) : (
-                              <p style={{ margin: 0, color: 'rgba(255,255,255,0.85)', lineHeight: '1.7', fontSize: '1rem' }}>
+                              <p style={{ margin: 0, color: 'rgba(255,255,255,0.85)', lineHeight: '1.8', fontSize: '1rem' }}>
                                 {sec.text || '(Sin contenido)'}
                               </p>
                             )}
                           </div>
                           {/* Image/Video sidebar for text blocks */}
                           {editMode && (
-                            <MediaPanel sec={sec} updateSection={updateSection} handleFileUpload={handleFileUpload} uploadingId={uploadingId} inputStyle={inlineInput} />
+                            <MediaPanel sec={sec} updateSection={updateSection} handleFileUpload={handleFileUpload} uploadingId={uploadingId} />
                           )}
                         </div>
                       )}
@@ -397,15 +547,14 @@ export default function EditorMoodle() {
                             onChange={v => updateSection(sec.id, 'image', v)}
                             onDrop={file => handleFileUpload(file, sec.id, 'image')}
                             uploading={uploadingId === sec.id + 'image'}
-                            inputStyle={inlineInput}
-                            preview={sec.image && <img src={sec.image} alt="preview" style={{ width: '100%', maxHeight: '250px', objectFit: 'contain', borderRadius: '8px', background: '#000' }} />}
+                            preview={sec.image && <img src={sec.image} alt="preview" style={{ width: '100%', maxHeight: '250px', objectFit: 'contain', borderRadius: '10px', background: '#000' }} />}
                           >
                             <input type="text" value={sec.imgCaption || ''} onChange={e => updateSection(sec.id, 'imgCaption', e.target.value)}
-                              placeholder="Pie de imagen (opcional)" style={{ ...inlineInput, fontSize: '0.85rem', marginTop: '0.5rem' }} />
+                              placeholder="Pie de imagen (opcional)" style={{ ...styles.inlineInput, fontSize: '0.85rem', marginTop: '0.5rem' }} />
                           </DropZone>
                         ) : sec.image ? (
                           <div style={{ textAlign: 'center' }}>
-                            <img src={sec.image} alt={sec.imgCaption || ''} style={{ maxWidth: '100%', maxHeight: '350px', borderRadius: '10px' }} />
+                            <img src={sec.image} alt={sec.imgCaption || ''} style={{ maxWidth: '100%', maxHeight: '350px', borderRadius: '12px' }} />
                             {sec.imgCaption && <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.85rem', marginTop: '0.5rem' }}>{sec.imgCaption}</p>}
                           </div>
                         ) : null
@@ -420,10 +569,9 @@ export default function EditorMoodle() {
                             onChange={v => updateSection(sec.id, 'video', v)}
                             onDrop={file => handleFileUpload(file, sec.id, 'video')}
                             uploading={uploadingId === sec.id + 'video'}
-                            inputStyle={inlineInput}
                           />
                         ) : sec.video ? (
-                          <div style={{ background: '#000', borderRadius: '10px', overflow: 'hidden', aspectRatio: '16/9', maxWidth: '640px' }}>
+                          <div style={{ background: '#000', borderRadius: '12px', overflow: 'hidden', aspectRatio: '16/9', maxWidth: '640px' }}>
                             {sec.video.includes('youtube') || sec.video.includes('youtu.be') ? (
                               <iframe src={sec.video.replace('watch?v=', 'embed/')} style={{ width: '100%', height: '100%', border: 'none' }} allowFullScreen />
                             ) : (
@@ -442,7 +590,6 @@ export default function EditorMoodle() {
                             onChange={v => updateSection(sec.id, 'audio', v)}
                             onDrop={file => handleFileUpload(file, sec.id, 'audio')}
                             uploading={uploadingId === sec.id + 'audio'}
-                            inputStyle={inlineInput}
                             preview={sec.audio && <audio src={sec.audio} controls style={{ width: '100%', marginTop: '0.5rem' }} />}
                           />
                         ) : sec.audio ? (
@@ -455,15 +602,15 @@ export default function EditorMoodle() {
                         editMode ? (
                           <input type="text" value={sec.text || ''} onChange={e => updateSection(sec.id, 'text', e.target.value)}
                             placeholder="Texto de etiqueta (divisor visual)"
-                            style={{ ...inlineInput, fontSize: '1.1rem', fontWeight: 600, color: '#B388FF', textAlign: 'center', padding: '0.8rem' }}
+                            style={{ ...styles.inlineInput, fontSize: '1.1rem', fontWeight: 700, color: '#B388FF', textAlign: 'center', padding: '0.8rem' }}
                           />
                         ) : (
                           <div style={{
                             textAlign: 'center', padding: '1rem 2rem',
-                            borderTop: '1px solid rgba(138,43,226,0.3)',
-                            borderBottom: '1px solid rgba(138,43,226,0.3)',
-                            color: '#B388FF', fontWeight: 600, fontSize: '1.1rem',
-                            letterSpacing: '0.02em',
+                            borderTop: '1px solid rgba(138,43,226,0.25)',
+                            borderBottom: '1px solid rgba(138,43,226,0.25)',
+                            color: '#B388FF', fontWeight: 700, fontSize: '1.1rem',
+                            letterSpacing: '0.03em',
                           }}>
                             {sec.text || '─── ───'}
                           </div>
@@ -485,154 +632,260 @@ export default function EditorMoodle() {
               ))}
             </Reorder.Group>
 
-            {/* Add block at end (if empty) */}
+            {/* Add block when empty */}
             {editMode && sections.length === 0 && (
-              <div style={{ display: 'flex', justifyContent: 'center', padding: '3rem 0' }}>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                style={{
+                  display: 'flex', justifyContent: 'center', padding: '4rem 0',
+                }}
+              >
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ color: 'rgba(255,255,255,0.3)', marginBottom: '1rem' }}>Sin bloques de contenido. Agrega el primero:</p>
-                  <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center' }}>
+                  <div style={{
+                    width: 80, height: 80, borderRadius: '50%',
+                    background: 'rgba(0,228,255,0.08)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    margin: '0 auto 1.5rem',
+                    border: '2px dashed rgba(0,228,255,0.2)',
+                  }}>
+                    <Layers size={36} color="rgba(0,228,255,0.4)" />
+                  </div>
+                  <p style={{ color: 'rgba(255,255,255,0.4)', marginBottom: '1.5rem', fontSize: '1rem' }}>Sin bloques de contenido. Agrega el primero:</p>
+                  <div style={{ display: 'flex', gap: '0.6rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                     {BLOCK_TYPES.map(bt => (
-                      <button key={bt.type} onClick={() => addBlock(bt.type)}
+                      <motion.button
+                        key={bt.type}
+                        whileHover={{ scale: 1.05, y: -2 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => addBlock(bt.type)}
                         style={{
-                          background: `${bt.color}15`,
-                          border: `1px solid ${bt.color}40`,
+                          background: `${bt.color}10`,
+                          border: `1px solid ${bt.color}30`,
                           color: bt.color,
-                          padding: '0.7rem 1.2rem',
-                          borderRadius: '10px',
+                          padding: '0.7rem 1.3rem',
+                          borderRadius: '12px',
                           cursor: 'pointer',
-                          fontWeight: 600,
+                          fontWeight: 700,
                           fontSize: '0.85rem',
-                          display: 'flex', alignItems: 'center', gap: '0.4rem',
+                          display: 'flex', alignItems: 'center', gap: '0.5rem',
+                          transition: 'all 0.2s',
                         }}
                       >
-                        <span>{bt.icon}</span> {bt.label}
-                      </button>
+                        <span style={{ fontSize: '1.1rem' }}>{bt.icon}</span> {bt.label}
+                      </motion.button>
                     ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )}
           </div>
 
           {/* ═══ STICKY SAVE BAR ═══ */}
-          <div style={{
-            position: 'sticky', bottom: '1.5rem', marginTop: '1rem',
-            background: 'rgba(10, 15, 30, 0.92)',
-            backdropFilter: 'blur(12px)',
-            padding: '0.8rem 1.5rem',
-            borderRadius: '16px',
-            border: `1px solid ${hasUnsaved ? 'rgba(255,165,0,0.5)' : `${moduleData.color}60`}`,
-            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-            boxShadow: `0 -4px 30px rgba(0,0,0,0.5)`,
-          }}>
-            <div style={{ color: 'white', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.9rem' }}>
-              <span>{sections.length} Bloques</span>
-              {hasUnsaved && <span style={{ color: '#FFA500', fontSize: '0.8rem' }}>● Cambios sin guardar</span>}
-            </div>
-            <button onClick={saveModuleChanges} disabled={saving}
-              style={{
-                background: moduleData.color, color: 'black', border: 'none',
-                padding: '0.7rem 2rem', borderRadius: '10px', fontSize: '1rem', fontWeight: 'bold',
-                cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem',
-                boxShadow: `0 0 20px ${moduleData.color}40`,
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            style={{
+              position: 'sticky', bottom: '1.5rem', marginTop: '1.5rem',
+              background: 'rgba(8, 10, 25, 0.95)',
+              backdropFilter: 'blur(16px)',
+              padding: '1rem 2rem',
+              borderRadius: '18px',
+              border: `1px solid ${hasUnsaved ? 'rgba(255,165,0,0.4)' : `${moduleData.color}30`}`,
+              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+              boxShadow: `0 -8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.03) inset`,
+              transition: 'border-color 0.3s',
+            }}
+          >
+            <div style={{ color: 'white', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '1.2rem', fontSize: '0.9rem' }}>
+              <div style={{
+                display: 'flex', alignItems: 'center', gap: '0.4rem',
+                background: 'rgba(255,255,255,0.05)', padding: '0.35rem 0.8rem', borderRadius: '8px',
               }}>
+                <Layers size={14} color="rgba(255,255,255,0.4)" />
+                <span>{sections.length} Bloques</span>
+              </div>
+              {hasUnsaved && (
+                <motion.span
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  style={{ color: '#FFA500', fontSize: '0.82rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.3rem' }}
+                >
+                  <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#FFA500', display: 'inline-block' }} />
+                  Cambios sin guardar
+                </motion.span>
+              )}
+            </div>
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.96 }}
+              onClick={saveModuleChanges}
+              disabled={saving}
+              style={{
+                background: `linear-gradient(135deg, ${moduleData.color}, ${moduleData.color}CC)`,
+                color: '#000', border: 'none',
+                padding: '0.75rem 2.5rem', borderRadius: '12px',
+                fontSize: '0.95rem', fontWeight: 800,
+                cursor: saving ? 'wait' : 'pointer',
+                display: 'flex', alignItems: 'center', gap: '0.6rem',
+                boxShadow: `0 4px 20px ${moduleData.color}30`,
+                letterSpacing: '0.02em',
+                opacity: saving ? 0.7 : 1,
+                transition: 'opacity 0.2s',
+              }}
+            >
               {saving ? <RefreshCw size={18} className="spin" /> : <Save size={18} />}
-              PUBLICAR CURSO
-            </button>
-          </div>
+              {saving ? 'GUARDANDO...' : 'PUBLICAR CURSO'}
+            </motion.button>
+          </motion.div>
         </motion.div>
       )}
 
       <style>{`
-        .btn-primary { background: var(--electric-blue); color: black; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
-        .btn-outline { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; cursor: pointer; padding: 0.6rem 1rem; font-weight: bold; }
         .spin { animation: spin 1s linear infinite; }
         @keyframes spin { 100% { transform: rotate(360deg); } }
-        *:focus { outline: 2px solid rgba(0,228,255,0.4); outline-offset: 2px; }
-        select option { background: #1a1a2e; color: white; }
-      `}</style>
+        *:focus { outline: 2px solid rgba(0,228,255,0.35); outline-offset: 2px; }
+        select option { background: #0a0e1a; color: white; }
+        textarea:focus, input:focus { border-color: rgba(0,228,255,0.45) !important; }
+        input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.2); }
+      `}
+      </style>
     </div>
   );
 }
+
+// ─── Shared Styles ───
+const styles = {
+  input: {
+    background: 'rgba(0,0,0,0.3)',
+    border: '1px solid rgba(255,255,255,0.1)',
+    color: 'white',
+    borderRadius: '10px',
+    padding: '0.65rem 1.1rem',
+    width: '100%',
+    outline: 'none',
+    transition: 'border-color 0.25s, box-shadow 0.25s',
+    fontSize: '0.92rem',
+  },
+  inlineInput: {
+    background: 'transparent',
+    border: 'none',
+    borderBottom: '1px dashed rgba(255,255,255,0.2)',
+    color: 'white',
+    width: '100%',
+    outline: 'none',
+    transition: 'all 0.25s',
+    padding: '0.2rem 0',
+  },
+  btnPrimary: {
+    background: 'linear-gradient(135deg, #00E4FF, #00C4E0)',
+    color: '#000',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    fontWeight: 700,
+    padding: '0 1.5rem',
+    fontSize: '0.88rem',
+    whiteSpace: 'nowrap',
+  },
+  btnOutline: {
+    background: 'rgba(255,255,255,0.04)',
+    color: 'white',
+    border: '1px solid rgba(255,255,255,0.15)',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    padding: '0.6rem 1.1rem',
+    fontWeight: 700,
+    fontSize: '0.88rem',
+    whiteSpace: 'nowrap',
+    transition: 'all 0.2s',
+  },
+};
 
 // ─── Sub-components ───
 
 function ToolbarBtn({ icon, title, onClick, danger, active }) {
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.15 }}
+      whileTap={{ scale: 0.9 }}
       onClick={onClick}
       title={title}
       style={{
-        background: danger ? 'rgba(255,50,50,0.08)' : active ? 'rgba(255,165,0,0.12)' : 'rgba(255,255,255,0.04)',
-        border: `1px solid ${danger ? 'rgba(255,50,50,0.2)' : active ? 'rgba(255,165,0,0.3)' : 'rgba(255,255,255,0.08)'}`,
-        color: danger ? '#ff5555' : active ? '#FFA500' : 'rgba(255,255,255,0.45)',
-        borderRadius: '6px',
-        padding: '0.35rem',
+        background: danger ? 'rgba(255,50,50,0.08)' : active ? 'rgba(255,165,0,0.1)' : 'rgba(255,255,255,0.03)',
+        border: `1px solid ${danger ? 'rgba(255,50,50,0.2)' : active ? 'rgba(255,165,0,0.25)' : 'rgba(255,255,255,0.08)'}`,
+        color: danger ? '#ff5555' : active ? '#FFA500' : 'rgba(255,255,255,0.4)',
+        borderRadius: '8px',
+        padding: '0.4rem',
         cursor: 'pointer',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         transition: 'all 0.15s',
       }}
     >
       {icon}
-    </button>
+    </motion.button>
   );
 }
 
 function AddBlockButton({ index, onSelect, isOpen, onToggle }) {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', padding: '0.3rem 0', position: 'relative' }}>
-      <button
+    <div style={{ display: 'flex', justifyContent: 'center', padding: '0.35rem 0', position: 'relative' }}>
+      <motion.button
+        whileHover={{ scale: 1.15 }}
+        whileTap={{ scale: 0.9 }}
         onClick={onToggle}
         style={{
-          width: '28px', height: '28px', borderRadius: '50%',
-          background: isOpen ? 'rgba(0,228,255,0.2)' : 'rgba(255,255,255,0.05)',
-          border: `1px solid ${isOpen ? 'rgba(0,228,255,0.5)' : 'rgba(255,255,255,0.1)'}`,
-          color: isOpen ? '#00E4FF' : 'rgba(255,255,255,0.3)',
+          width: '30px', height: '30px', borderRadius: '50%',
+          background: isOpen ? 'rgba(0,228,255,0.15)' : 'rgba(255,255,255,0.04)',
+          border: `1px solid ${isOpen ? 'rgba(0,228,255,0.4)' : 'rgba(255,255,255,0.1)'}`,
+          color: isOpen ? '#00E4FF' : 'rgba(255,255,255,0.25)',
           cursor: 'pointer',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           transition: 'all 0.2s',
-          fontSize: '1rem', fontWeight: 700,
         }}
       >
         {isOpen ? <X size={14} /> : <Plus size={14} />}
-      </button>
+      </motion.button>
 
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: -5 }}
+            initial={{ opacity: 0, scale: 0.85, y: -8 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9 }}
+            exit={{ opacity: 0, scale: 0.85 }}
             style={{
               position: 'absolute', top: '100%', zIndex: 50,
-              background: 'rgba(15, 10, 35, 0.95)',
-              backdropFilter: 'blur(16px)',
-              border: '1px solid rgba(0,228,255,0.3)',
-              borderRadius: '12px',
-              padding: '0.5rem',
-              display: 'flex', gap: '0.3rem',
-              boxShadow: '0 8px 30px rgba(0,0,0,0.6)',
+              background: 'rgba(10, 8, 30, 0.97)',
+              backdropFilter: 'blur(20px)',
+              border: '1px solid rgba(0,228,255,0.25)',
+              borderRadius: '14px',
+              padding: '0.6rem',
+              display: 'flex', gap: '0.35rem',
+              boxShadow: '0 12px 40px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.05) inset',
             }}
           >
             {BLOCK_TYPES.map(bt => (
-              <button key={bt.type} onClick={() => onSelect(bt.type)}
+              <motion.button
+                key={bt.type}
+                whileHover={{ y: -3, background: `${bt.color}15` }}
+                whileTap={{ scale: 0.92 }}
+                onClick={() => onSelect(bt.type)}
                 style={{
                   background: 'transparent',
                   border: 'none',
                   color: bt.color,
-                  padding: '0.5rem 0.8rem',
-                  borderRadius: '8px',
+                  padding: '0.55rem 0.9rem',
+                  borderRadius: '10px',
                   cursor: 'pointer',
-                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.2rem',
-                  fontSize: '0.7rem', fontWeight: 600,
+                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.25rem',
+                  fontSize: '0.7rem', fontWeight: 700,
                   transition: 'background 0.15s',
                 }}
-                onMouseEnter={e => e.target.style.background = `${bt.color}15`}
-                onMouseLeave={e => e.target.style.background = 'transparent'}
               >
                 <span style={{ fontSize: '1.3rem' }}>{bt.icon}</span>
                 {bt.label}
-              </button>
+              </motion.button>
             ))}
           </motion.div>
         )}
@@ -641,54 +894,59 @@ function AddBlockButton({ index, onSelect, isOpen, onToggle }) {
   );
 }
 
-function MediaPanel({ sec, updateSection, handleFileUpload, uploadingId, inputStyle }) {
+function MediaPanel({ sec, updateSection, handleFileUpload, uploadingId }) {
   return (
-    <div style={{ width: '260px', background: 'rgba(0,0,0,0.25)', borderRadius: '10px', padding: '0.8rem', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'rgba(255,255,255,0.4)', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+    <div style={{
+      width: '270px', background: 'rgba(0,0,0,0.2)', borderRadius: '12px',
+      padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.7rem',
+      border: '1px solid rgba(255,255,255,0.05)',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'rgba(255,255,255,0.35)', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: 700 }}>
         <ImageIcon size={12} /> Recursos Multimedia
       </div>
       <DropZone label="Imagen" value={sec.image} onChange={v => updateSection(sec.id, 'image', v)}
         onDrop={file => handleFileUpload(file, sec.id, 'image')}
         uploading={uploadingId === sec.id + 'image'}
-        inputStyle={inputStyle}
-        preview={sec.image && <img src={sec.image} alt="preview" style={{ width: '100%', height: '90px', objectFit: 'cover', borderRadius: '6px' }} onError={e => e.target.style.opacity = 0.2} />}
+        preview={sec.image && <img src={sec.image} alt="preview" style={{ width: '100%', height: '80px', objectFit: 'cover', borderRadius: '8px' }} onError={e => e.target.style.opacity = 0.2} />}
         compact
       />
       <DropZone label="Video" value={sec.video} onChange={v => updateSection(sec.id, 'video', v)}
         onDrop={file => handleFileUpload(file, sec.id, 'video')}
         uploading={uploadingId === sec.id + 'video'}
-        inputStyle={inputStyle}
         compact
       />
       <DropZone label="Audio" value={sec.audio || ''} onChange={v => updateSection(sec.id, 'audio', v)}
         onDrop={file => handleFileUpload(file, sec.id, 'audio')}
         uploading={uploadingId === sec.id + 'audio'}
-        inputStyle={inputStyle}
         compact
       />
     </div>
   );
 }
 
-function DropZone({ label, value, onChange, onDrop, uploading, inputStyle, preview, children, compact }) {
+function DropZone({ label, value, onChange, onDrop, uploading, preview, children, compact }) {
+  const [isDragOver, setIsDragOver] = useState(false);
+
   return (
     <div
-      onDragOver={e => { e.preventDefault(); e.stopPropagation(); }}
-      onDrop={e => { e.preventDefault(); e.stopPropagation(); const f = e.dataTransfer.files[0]; if (f) onDrop(f); }}
+      onDragOver={e => { e.preventDefault(); e.stopPropagation(); setIsDragOver(true); }}
+      onDragLeave={() => setIsDragOver(false)}
+      onDrop={e => { e.preventDefault(); e.stopPropagation(); setIsDragOver(false); const f = e.dataTransfer.files[0]; if (f) onDrop(f); }}
       style={{
-        border: '1px dashed rgba(0,255,136,0.25)',
-        padding: compact ? '0.4rem' : '0.6rem',
-        borderRadius: '8px',
-        background: 'rgba(0,255,136,0.03)',
-        display: 'flex', flexDirection: 'column', gap: compact ? '0.3rem' : '0.4rem',
+        border: `1px dashed ${isDragOver ? 'rgba(0,255,136,0.5)' : 'rgba(0,255,136,0.2)'}`,
+        padding: compact ? '0.5rem' : '0.7rem',
+        borderRadius: '10px',
+        background: isDragOver ? 'rgba(0,255,136,0.06)' : 'rgba(0,255,136,0.02)',
+        display: 'flex', flexDirection: 'column', gap: compact ? '0.35rem' : '0.5rem',
+        transition: 'all 0.2s',
       }}
     >
       <input type="text" value={value || ''} onChange={e => onChange(e.target.value)}
         placeholder={`${label} URL o ruta`}
-        style={{ ...inputStyle, fontSize: compact ? '0.78rem' : '0.85rem' }}
+        style={{ ...styles.inlineInput, fontSize: compact ? '0.78rem' : '0.85rem' }}
       />
-      <span style={{ fontSize: '0.68rem', color: 'rgba(0,255,136,0.5)', textAlign: 'center' }}>
-        {uploading ? '⏳ Subiendo...' : `📎 Arrastra ${label.toLowerCase()} aquí`}
+      <span style={{ fontSize: '0.68rem', color: 'rgba(0,255,136,0.45)', textAlign: 'center', fontWeight: 500 }}>
+        {uploading ? '⏳ Subiendo archivo...' : `📎 Arrastra ${label.toLowerCase()} aquí`}
       </span>
       {preview}
       {children}
