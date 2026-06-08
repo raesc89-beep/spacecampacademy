@@ -10,6 +10,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
 import { COURSE_DATA } from '@/lib/courseData';
+import { checkAchievements, getNewAchievements, getAchievementInfo } from '@/lib/achievements';
+import AchievementToast from '@/components/AchievementToast';
 
 export default function QuizMinigame() {
   const { user, userData, loading } = useAuth();
@@ -23,6 +25,8 @@ export default function QuizMinigame() {
   const [saving, setSaving] = useState(false);
   const [isShaking, setIsShaking] = useState(false);
   const [isExploding, setIsExploding] = useState(false); // FASE 3: Choque de anomalías
+  const [newAchievementIds, setNewAchievementIds] = useState([]);
+  const [quizStartTime] = useState(Date.now());
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
@@ -30,7 +34,9 @@ export default function QuizMinigame() {
 
   useEffect(() => {
     async function fetchModule() {
-      if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro') {
+      // Static courses loaded directly from COURSE_DATA
+      const isStaticCourse = params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('dinos_') || params.moduleId.startsWith('marinos_') || params.moduleId.startsWith('tesla_') || params.moduleId.startsWith('egypt_') || params.moduleId.startsWith('copernico_') || params.moduleId.startsWith('davinci_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('apollo') || params.moduleId.startsWith('area51_') || params.moduleId.startsWith('bttf_') || params.moduleId.startsWith('robots_');
+      if (isStaticCourse) {
         const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
         if (staticMod) {
           setModuleData(staticMod);
@@ -51,14 +57,23 @@ export default function QuizMinigame() {
   const isAnomaly = ['black_hole', 'quasar', 'pulsar', 'red_dwarf', 'white_dwarf', 'wormhole'].includes(moduleData.id);
   const isAnimal = moduleData.id?.startsWith('animales_');
   const isAsteroid = moduleData.id?.startsWith('asteroides_');
+  const isDinos = moduleData.id?.startsWith('dinos_');
+  const isMarinos = moduleData.id?.startsWith('marinos_');
+  const isTesla = moduleData.id?.startsWith('tesla_');
   
   const planetImageName = isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
                           isAsteroid ? `asteroides/hub_${moduleData.id.replace('asteroides_', '')}.png` :
+                          isDinos ? `dinosaurios/${moduleData.id}.png` :
+                          isMarinos ? `reptiles_marinos/${moduleData.id}.png` :
+                          isTesla ? `tesla/${moduleData.id}.png` :
                           (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
                           
   const returnHub = isAnimal ? '/hub/animales' : 
                     isAnomaly ? '/hub/stellar-objects' : 
                     isAsteroid ? '/hub/asteroides-cometas' : 
+                    isDinos ? '/hub/dinosaurios' :
+                    isMarinos ? '/hub/reptiles-marinos' :
+                    isTesla ? '/hub/tesla' :
                     '/hub/solar-system';
 
   const handleAnswer = (optionIndex) => {
@@ -101,25 +116,49 @@ export default function QuizMinigame() {
     if (finalScore === totalQuestions) {
       if (!userData?.progress?.completedModules?.includes(moduleData.id)) {
         setSaving(true);
-        // Hacer un double check silencioso por seguridad
         const freshUser = await getDoc(doc(db, "users", user.uid));
-        const freshCompleted = freshUser.data().progress?.completedModules || [];
-        
-        // Calcular recompensa dinámica según dificultad
-        let reward = 50; // Fácil (<= 3 preguntas)
-        if (totalQuestions >= 7) {
-          reward = 200; // Difícil
-        } else if (totalQuestions >= 4) {
-          reward = 100; // Medio
-        }
+        const freshData = freshUser.data();
+        const freshCompleted = freshData.progress?.completedModules || [];
+
+        // Reward calculation
+        let reward = 50;
+        if (totalQuestions >= 7) reward = 200;
+        else if (totalQuestions >= 4) reward = 100;
+
+        const isPerfect = finalScore === totalQuestions;
+        const elapsedSec = Math.floor((Date.now() - quizStartTime) / 1000);
+        const isSpeedQuiz = isPerfect && elapsedSec < 60;
 
         if (!freshCompleted.includes(moduleData.id)) {
           await updateDoc(doc(db, "users", user.uid), {
             "progress.completedModules": arrayUnion(moduleData.id),
             "progress.badges": arrayUnion(moduleData.badgeEs),
-            "progress.stars": increment(reward)
+            "progress.stars": increment(reward),
+            ...(isPerfect ? { "progress.perfectQuizzes": increment(1) } : {}),
           });
         }
+
+        // Re-fetch to evaluate achievements with latest data
+        const updatedUser = await getDoc(doc(db, "users", user.uid));
+        const updatedData = updatedUser.data();
+
+        const oldAchievements = freshData.progress?.achievements || {};
+        const newAch = checkAchievements(updatedData, {
+          speedQuiz: isSpeedQuiz,
+          modulesToday: 1,
+        });
+        const newIds = getNewAchievements(oldAchievements, newAch);
+
+        if (newIds.length > 0) {
+          // Save them to Firestore
+          const achievementsUpdate = {};
+          newIds.forEach(([id, data]) => {
+            achievementsUpdate[`progress.achievements.${id}`] = data;
+          });
+          await updateDoc(doc(db, "users", user.uid), achievementsUpdate);
+          setNewAchievementIds(newIds.map(([id]) => id));
+        }
+
         setSaving(false);
       }
     }
@@ -290,6 +329,7 @@ export default function QuizMinigame() {
 
         </div>
       </main>
+      <AchievementToast achievements={newAchievementIds} onDismiss={() => setNewAchievementIds([])} />
     </div>
   );
 }

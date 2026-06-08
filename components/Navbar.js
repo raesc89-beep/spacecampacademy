@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { Rocket, LogOut, User } from 'lucide-react';
+import { Rocket, LogOut, User, Trophy } from 'lucide-react';
 import { auth } from '../lib/firebase';
 import { signOut } from 'firebase/auth';
 import { useAuth } from '@/hooks/useAuth';
@@ -52,7 +52,14 @@ export default function Navbar() {
               <span style={{ fontSize: '0.7rem', background: 'var(--danger)', padding: '0.2rem 0.5rem', borderRadius: '10px' }}>Admin</span>
             )}
           </div>
-          <button 
+          <Link
+            href="/profile/logros"
+            title="Mis Logros"
+            style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', textDecoration: 'none', color: 'rgba(255,215,0,0.7)', padding: '0.45rem 0.9rem', borderRadius: '20px', background: 'rgba(255,215,0,0.06)', border: '1px solid rgba(255,215,0,0.18)', fontSize: '0.82rem', fontWeight: 700, transition: 'all 0.2s' }}
+          >
+            <Trophy size={15} /> Logros
+          </Link>
+          <button
             onClick={handleLogout}
             style={{ 
               background: 'transparent', 
