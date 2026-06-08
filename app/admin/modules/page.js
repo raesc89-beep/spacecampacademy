@@ -1,12 +1,38 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import {
   BookOpen, Plus, Save, RefreshCw, Trash2, Video, Image as ImageIcon,
   AlertCircle, GripVertical, Type, X, Layout, Eye, Edit3,
   Volume2, Tag, Copy, ChevronDown, EyeOff, FileText, Search,
-  CheckCircle, Sparkles, Layers, PenTool, Palette
+  CheckCircle, Sparkles, Layers, PenTool, Palette, Bold, Italic,
+  List, Heading, AlignLeft, ChevronRight, Filter
 } from 'lucide-react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
+
+// ─── Course Groups Config (for filtering) ───
+const COURSE_GROUPS = [
+  { id: 'solar', label: '🪐 Sistema Solar', prefixes: ['sun','mercury','venus','earth','mars','jupiter','saturn','uranus','neptune','pluto','moon','dwarf'] },
+  { id: 'egypt', label: '🏺 Arqueoastronomía Egipcia', prefixes: ['egypt_'] },
+  { id: 'maya', label: '🌿 Arqueoastronomía Maya', prefixes: ['maya_'] },
+  { id: 'dinos', label: '🦕 Dinosaurios', prefixes: ['dinos_'] },
+  { id: 'marinos', label: '🌊 Reptiles Marinos', prefixes: ['marinos_'] },
+  { id: 'tesla', label: '⚡ Nikola Tesla', prefixes: ['tesla_'] },
+  { id: 'pioneros', label: '🚀 Pioneros del Espacio', prefixes: ['pioneros_'] },
+  { id: 'colisiones', label: '💥 Colisiones Estelares', prefixes: ['colisiones_'] },
+  { id: 'robots', label: '🤖 Robótica Espacial', prefixes: ['robot','rover','satelit','hubble','voyager'] },
+  { id: 'otros', label: '📚 Otros Módulos', prefixes: [] },
+];
+
+function getModuleCourse(moduleId) {
+  const id = (moduleId || '').toLowerCase();
+  for (const group of COURSE_GROUPS) {
+    if (group.id === 'otros') continue;
+    for (const prefix of group.prefixes) {
+      if (id.startsWith(prefix)) return group.id;
+    }
+  }
+  return 'otros';
+}
 
 // Block types
 const BLOCK_TYPES = [
@@ -42,6 +68,8 @@ export default function EditorMoodle() {
   const [addBlockMenu, setAddBlockMenu] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [hasUnsaved, setHasUnsaved] = useState(false);
+  const [selectedCourse, setSelectedCourse] = useState('');
+  const textareaRefs = useRef({});
 
   const showStatus = (msg, type = 'info') => {
     setStatus({ msg, type });
@@ -225,11 +253,41 @@ export default function EditorMoodle() {
     setUploadingId(null);
   };
 
-  const filteredModules = searchTerm
-    ? modules.filter(m => (m.titleEs || m.id).toLowerCase().includes(searchTerm.toLowerCase()))
+  // Modules filtered by course group and search term
+  const filteredByCourse = selectedCourse
+    ? modules.filter(m => getModuleCourse(m.id) === selectedCourse)
     : modules;
+  const filteredModules = searchTerm
+    ? filteredByCourse.filter(m => (m.titleEs || m.id).toLowerCase().includes(searchTerm.toLowerCase()))
+    : filteredByCourse;
+
+  // Grouped modules for the select optgroups
+  const groupedModules = COURSE_GROUPS.reduce((acc, group) => {
+    const mods = filteredByCourse.filter(m => getModuleCourse(m.id) === group.id);
+    if (mods.length > 0) acc.push({ ...group, modules: mods });
+    return acc;
+  }, []);
 
   const blockTypeInfo = (type) => BLOCK_TYPES.find(b => b.type === type) || BLOCK_TYPES[0];
+
+  // Rich text formatter helper
+  const insertFormat = (secId, format) => {
+    const ta = textareaRefs.current[secId];
+    if (!ta) return;
+    const start = ta.selectionStart;
+    const end = ta.selectionEnd;
+    const selected = ta.value.substring(start, end);
+    const current = ta.value;
+    let insert = '';
+    if (format === 'bold') insert = `**${selected || 'texto'}**`;
+    else if (format === 'italic') insert = `_${selected || 'texto'}_`;
+    else if (format === 'h2') insert = `\n## ${selected || 'Subtítulo'}\n`;
+    else if (format === 'h3') insert = `\n### ${selected || 'Sección'}\n`;
+    else if (format === 'list') insert = `\n- ${selected || 'elemento'}\n`;
+    const newVal = current.substring(0, start) + insert + current.substring(end);
+    updateSection(secId, 'text', newVal);
+    setTimeout(() => { ta.focus(); ta.selectionStart = ta.selectionEnd = start + insert.length; }, 50);
+  };
 
   // ── LOADING STATE ──
   if (loading && modules.length === 0) {
@@ -305,49 +363,90 @@ export default function EditorMoodle() {
           )}
         </div>
 
-        {/* Selector row */}
-        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'stretch' }}>
-          <div style={{ position: 'relative', width: '200px' }}>
-            <Search size={14} style={{ position: 'absolute', left: '0.8rem', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.25)' }} />
-            <input
-              type="text" placeholder="Buscar módulo..." value={searchTerm}
-              onChange={e => setSearchTerm(e.target.value)}
-              style={{ ...styles.input, paddingLeft: '2.2rem', fontSize: '0.82rem' }}
-            />
+        {/* ─── Moodle-style Selector Panel ─── */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          {/* Row 1: Course filter + search */}
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', fontWeight: 700, whiteSpace: 'nowrap' }}>
+              <Filter size={14} /> Filtrar por curso:
+            </div>
+            <select
+              value={selectedCourse}
+              onChange={e => { setSelectedCourse(e.target.value); setSelectedModuleId(''); setModuleData(null); }}
+              style={{ ...styles.input, flex: 1, cursor: 'pointer', fontSize: '0.85rem',
+                background: 'rgba(0,228,255,0.05)', border: '1px solid rgba(0,228,255,0.2)' }}
+            >
+              <option value="">— Todos los cursos ({modules.length} módulos) —</option>
+              {COURSE_GROUPS.map(g => {
+                const count = modules.filter(m => getModuleCourse(m.id) === g.id).length;
+                if (count === 0) return null;
+                return <option key={g.id} value={g.id}>{g.label} ({count} módulos)</option>;
+              })}
+            </select>
+            <div style={{ position: 'relative', width: '220px', flexShrink: 0 }}>
+              <Search size={14} style={{ position: 'absolute', left: '0.8rem', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.25)' }} />
+              <input
+                type="text" placeholder="Buscar en el curso..." value={searchTerm}
+                onChange={e => setSearchTerm(e.target.value)}
+                style={{ ...styles.input, paddingLeft: '2.2rem', fontSize: '0.82rem' }}
+              />
+            </div>
           </div>
-          <select
-            value={selectedModuleId}
-            onChange={e => { setSelectedModuleId(e.target.value); setModuleData(null); }}
-            style={{ ...styles.input, flex: 1, cursor: 'pointer', appearance: 'none',
-              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='rgba(255,255,255,0.4)' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E")`,
-              backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center',
-            }}
-          >
-            <option value="">— Selecciona un curso a editar —</option>
-            {filteredModules.map(m => <option key={m.id} value={m.id}>{m.titleEs || m.id}</option>)}
-          </select>
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.97 }}
-            onClick={loadModule}
-            disabled={!selectedModuleId}
-            style={{
-              ...styles.btnPrimary,
-              opacity: selectedModuleId ? 1 : 0.4,
-              cursor: selectedModuleId ? 'pointer' : 'not-allowed',
-              display: 'flex', alignItems: 'center', gap: '0.5rem',
-            }}
-          >
-            <BookOpen size={16} /> Cargar
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.97 }}
-            onClick={handleCreateModule}
-            style={{ ...styles.btnOutline, display: 'flex', alignItems: 'center', gap: '0.5rem' }}
-          >
-            <Plus size={16} /> Nuevo
-          </motion.button>
+          {/* Row 2: Module selector + actions */}
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'stretch' }}>
+            <select
+              value={selectedModuleId}
+              onChange={e => { setSelectedModuleId(e.target.value); setModuleData(null); }}
+              style={{ ...styles.input, flex: 1, cursor: 'pointer',
+                minHeight: '44px', fontSize: '0.9rem',
+                background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.12)' }}
+            >
+              <option value="">— Selecciona un módulo a editar —</option>
+              {selectedCourse ? (
+                filteredModules.map(m => (
+                  <option key={m.id} value={m.id}>{m.titleEs || m.id}</option>
+                ))
+              ) : (
+                groupedModules.map(group => (
+                  <optgroup key={group.id} label={group.label}>
+                    {group.modules.map(m => (
+                      <option key={m.id} value={m.id}>{m.titleEs || m.id}</option>
+                    ))}
+                  </optgroup>
+                ))
+              )}
+            </select>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={loadModule}
+              disabled={!selectedModuleId}
+              style={{
+                ...styles.btnPrimary,
+                opacity: selectedModuleId ? 1 : 0.4,
+                cursor: selectedModuleId ? 'pointer' : 'not-allowed',
+                display: 'flex', alignItems: 'center', gap: '0.5rem',
+                minHeight: '44px', padding: '0 1.5rem',
+              }}
+            >
+              <BookOpen size={16} /> Cargar
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={handleCreateModule}
+              style={{ ...styles.btnOutline, display: 'flex', alignItems: 'center', gap: '0.5rem', minHeight: '44px' }}
+            >
+              <Plus size={16} /> Nuevo
+            </motion.button>
+          </div>
+          {/* Module count badge */}
+          {filteredModules.length > 0 && (
+            <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.3)', paddingLeft: '0.5rem' }}>
+              {filteredModules.length} módulo{filteredModules.length !== 1 ? 's' : ''} disponible{filteredModules.length !== 1 ? 's' : ''}
+              {selectedCourse && <span> en {COURSE_GROUPS.find(g => g.id === selectedCourse)?.label}</span>}
+            </div>
+          )}
         </div>
       </header>
 
@@ -518,15 +617,58 @@ export default function EditorMoodle() {
                       {/* ─── TEXT BLOCK ─── */}
                       {(sec.type === 'text' || !sec.type) && (
                         <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                          <div style={{ flex: 1 }}>
+                          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                             {editMode ? (
-                              <textarea
-                                value={sec.text || ''} onChange={e => updateSection(sec.id, 'text', e.target.value)}
-                                placeholder="Escribe el texto pedagógico aquí..."
-                                style={{ ...styles.input, minHeight: '120px', resize: 'vertical', lineHeight: '1.7', fontSize: '0.95rem' }}
-                              />
+                              <>
+                                {/* ── Formatting Toolbar ── */}
+                                <div style={{
+                                  display: 'flex', gap: '0.3rem', padding: '0.4rem 0.6rem',
+                                  background: 'rgba(0,0,0,0.25)', borderRadius: '8px 8px 0 0',
+                                  border: '1px solid rgba(255,255,255,0.08)', borderBottom: 'none',
+                                  flexWrap: 'wrap',
+                                }}>
+                                  {[
+                                    { label: 'B', title: 'Negrita (**texto**)', format: 'bold', style: { fontWeight: 900, fontSize: '13px' } },
+                                    { label: 'I', title: 'Cursiva (_texto_)', format: 'italic', style: { fontStyle: 'italic', fontSize: '13px' } },
+                                    { label: 'H2', title: 'Subtítulo (## texto)', format: 'h2', style: { fontSize: '11px', fontWeight: 700 } },
+                                    { label: 'H3', title: 'Sección (### texto)', format: 'h3', style: { fontSize: '11px', fontWeight: 700 } },
+                                    { label: '• Lista', title: 'Lista (- elemento)', format: 'list', style: { fontSize: '11px' } },
+                                  ].map(btn => (
+                                    <button
+                                      key={btn.format}
+                                      title={btn.title}
+                                      onMouseDown={e => { e.preventDefault(); insertFormat(sec.id, btn.format); }}
+                                      style={{
+                                        ...btn.style,
+                                        background: 'rgba(255,255,255,0.06)',
+                                        border: '1px solid rgba(255,255,255,0.1)',
+                                        color: 'rgba(255,255,255,0.7)',
+                                        borderRadius: '5px',
+                                        padding: '3px 8px',
+                                        cursor: 'pointer',
+                                        fontFamily: 'monospace',
+                                        transition: 'all 0.15s',
+                                      }}
+                                      onMouseOver={e => e.currentTarget.style.background = 'rgba(0,228,255,0.12)'}
+                                      onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.06)'}
+                                    >{btn.label}</button>
+                                  ))}
+                                  <span style={{ marginLeft: 'auto', color: 'rgba(255,255,255,0.2)', fontSize: '0.72rem', alignSelf: 'center' }}>
+                                    Markdown soportado
+                                  </span>
+                                </div>
+                                <textarea
+                                  ref={el => textareaRefs.current[sec.id] = el}
+                                  value={sec.text || ''} onChange={e => updateSection(sec.id, 'text', e.target.value)}
+                                  placeholder="Escribe el texto pedagógico aquí... Soporta Markdown: **negrita**, _cursiva_, ## Título, - lista"
+                                  style={{ ...styles.input, minHeight: '380px', resize: 'vertical', lineHeight: '1.8', fontSize: '0.95rem', borderRadius: '0 0 10px 10px', fontFamily: '"Courier New", monospace' }}
+                                />
+                                <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.2)', textAlign: 'right' }}>
+                                  {(sec.text || '').length} caracteres · {(sec.text || '').split('\n').length} líneas
+                                </div>
+                              </>
                             ) : (
-                              <p style={{ margin: 0, color: 'rgba(255,255,255,0.85)', lineHeight: '1.8', fontSize: '1rem' }}>
+                              <p style={{ margin: 0, color: 'rgba(255,255,255,0.85)', lineHeight: '1.8', fontSize: '1rem', whiteSpace: 'pre-wrap' }}>
                                 {sec.text || '(Sin contenido)'}
                               </p>
                             )}
