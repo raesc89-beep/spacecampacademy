@@ -26,7 +26,7 @@ const COURSE_GROUPS = [
   { id: 'animales',    label: '🐾 Animales del Espacio',    prefixes: ['animales_'] },
   { id: 'asteroides',  label: '☄️ Asteroides y Cometas',    prefixes: ['asteroides_','rocosos_'] },
   { id: 'peliculas',   label: '🎬 Ciencia en el Cine',      prefixes: ['starwars_','bttf_','interstellar_','interestelar_','objetos_'] },
-  { id: 'viajes',      label: '🛰️ Viajes Espaciales',       prefixes: ['viaje','exoplanetas_','arqueoastronomia_'] },
+  { id: 'viajes',      label: '🛰️ Viajes Espaciales',       prefixes: ['viaje','exoplanetas_','exoplanetas','arqueoastronomia_'] },
   { id: 'otros',       label: '📚 Otros Módulos',           prefixes: [] },
 ];
 

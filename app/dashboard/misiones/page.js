@@ -308,17 +308,19 @@ export default function CourseHub() {
 
   const userStars = userData?.progress?.stars || 0;
 
-  const categories = ['Todos', 'Arqueoastronomía', 'Exploración Galáctica', 'Misión Lunar', 'Teoría Astrofísica', 'Vuelo y Geología', 'Paleontología', 'Revolución Científica', 'Minijuegos'];
+  const categories = ['Todos', 'Arqueoastronomía', 'Exploración Galáctica', 'Misión Lunar', 'Física y Astrofísica', 'Paleontología', 'Revolución Científica', 'Ciencia en el Cine', 'Robótica y Vuelo'];
 
   const getCategory = (badgeText) => {
-    if (badgeText.includes('Arqueoastronomía')) return 'Arqueoastronomía';
-    if (badgeText.includes('Exploración')) return 'Exploración Galáctica';
-    if (badgeText.includes('Misión Lunar')) return 'Misión Lunar';
-    if (badgeText.includes('Astrofísica') || badgeText.includes('Física') || badgeText.includes('Evento')) return 'Teoría Astrofísica';
-    if (badgeText.includes('Minijuegos')) return 'Minijuegos';
-    if (badgeText.includes('Paleontología')) return 'Paleontología';
-    if (badgeText.includes('Revolución Científica')) return 'Revolución Científica';
-    return 'Vuelo y Geología';
+    if (!badgeText) return 'Robótica y Vuelo';
+    const b = badgeText.toLowerCase();
+    if (b.includes('arqueoastronomía') || b.includes('arqueoastronomia')) return 'Arqueoastronomía';
+    if (b.includes('exploración') || b.includes('exploracion') || b.includes('galáctica') || b.includes('galactica') || b.includes('profunda')) return 'Exploración Galáctica';
+    if (b.includes('lunar') || b.includes('apolo') || b.includes('apollo')) return 'Misión Lunar';
+    if (b.includes('astrofísica') || b.includes('astrofisica') || b.includes('físic') || b.includes('fisic') || b.includes('cuántica') || b.includes('cuantica') || b.includes('teórica') || b.includes('teorica') || b.includes('eléctrica') || b.includes('electrica') || b.includes('evento') || b.includes('cósmico') || b.includes('cosmico')) return 'Física y Astrofísica';
+    if (b.includes('paleontología') || b.includes('paleontologia')) return 'Paleontología';
+    if (b.includes('revolución') || b.includes('revolucion') || b.includes('científica') || b.includes('cientifica')) return 'Revolución Científica';
+    if (b.includes('física cuántica') || b.includes('cine') || b.includes('película') || b.includes('pelicula')) return 'Ciencia en el Cine';
+    return 'Robótica y Vuelo';
   };
 
   const filteredMissions = activeCategory === 'Todos' 

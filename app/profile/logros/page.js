@@ -6,6 +6,7 @@ import { ACHIEVEMENTS_CATALOG, getAchievementProgress } from '@/lib/achievements
 import { Trophy, Lock, Star, Filter } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Navbar from '@/components/Navbar';
 
 const CATEGORIES = [
   { id: 'all', label: 'Todos', icon: '🌌' },
@@ -26,16 +27,23 @@ const RARITY_LABELS = {
 };
 
 export default function LogrosPage() {
-  const { user, progress } = useAuth();
+  const { user, userData, loading } = useAuth();
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
   const [activeCategory, setActiveCategory] = useState('all');
-  const [filterUnlocked, setFilterUnlocked] = useState('all'); // 'all' | 'unlocked' | 'locked'
+  const [filterUnlocked, setFilterUnlocked] = useState('all');
 
   useEffect(() => { setMounted(true); }, []);
-  if (!mounted) return null;
+  useEffect(() => { if (!loading && !user) router.push('/auth'); }, [user, loading, router]);
 
-  const userAchievements = progress?.achievements || {};
+  if (!mounted || loading) return (
+    <div style={{ minHeight: '100vh', background: '#030712', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFD700', fontSize: '1rem', letterSpacing: '2px', fontFamily: 'monospace' }}>
+      Cargando logros...
+    </div>
+  );
+
+  // userData?.progress contains the user's achievements
+  const userAchievements = userData?.progress?.achievements || {};
   const { unlocked, total, percent } = getAchievementProgress(userAchievements);
 
   const filtered = ACHIEVEMENTS_CATALOG.filter(a => {
@@ -49,6 +57,7 @@ export default function LogrosPage() {
 
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #030712 0%, #0a0e1a 50%, #060812 100%)' }}>
+      <Navbar />
       {/* Stars background */}
       <div style={{ position: 'fixed', inset: 0, pointerEvents: 'none', overflow: 'hidden', zIndex: 0 }}>
         {[...Array(80)].map((_, i) => (
