@@ -111,7 +111,11 @@ export const useShipStore = create(
     }),
     {
       name: 'space-camp-ship-storage',
-      partialize: (state) => ({ savedShips: state.savedShips }),
+      partialize: (state) => ({
+        shipConfig: state.shipConfig,
+        stats: state.stats,
+        savedShips: state.savedShips,
+      }),
     }
   )
 );
