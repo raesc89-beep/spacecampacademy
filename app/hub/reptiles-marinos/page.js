@@ -19,45 +19,7 @@ const MARINOS_MODULES = [
   { id: 'marinos_m10', title: 'Paleontología Marina Moderna',             color: '#DAA520', link: '/course/marinos_m10', icon: '/assets/reptiles_marinos/marinos_m10.png', coords: { left: '88%', top: '55%' } },
 ];
 
-// ── Plesiosaurio SVG realista ──────────────────────────────────────────────────
-function PlesiosauroSvg({ scale = 1, flip = false }) {
-  return (
-    <svg width={420 * scale} height={180 * scale} viewBox="0 0 420 180" fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      style={{ transform: flip ? 'scaleX(-1)' : 'none', filter: 'drop-shadow(0 0 12px rgba(0,180,255,0.35))' }}>
-      {/* Neck */}
-      <path d="M280,82 C305,55 330,30 348,18 C358,10 372,14 370,26 C368,36 352,42 336,55 C318,70 300,85 290,92"
-        stroke="rgba(80,160,200,0.85)" strokeWidth="14" strokeLinecap="round" fill="none"/>
-      <path d="M280,82 C305,55 330,30 348,18 C358,10 372,14 370,26 C368,36 352,42 336,55 C318,70 300,85 290,92"
-        stroke="rgba(140,210,240,0.4)" strokeWidth="6" strokeLinecap="round" fill="none"/>
-      {/* Head */}
-      <ellipse cx="370" cy="22" rx="18" ry="10" fill="rgba(70,140,180,0.9)" />
-      <path d="M370,14 Q395,12 408,18 Q395,22 370,22 Z" fill="rgba(60,130,170,0.9)" />
-      <path d="M370,22 Q395,24 408,18" stroke="rgba(100,170,200,0.6)" strokeWidth="1.5" fill="none" />
-      <circle cx="382" cy="17" r="4" fill="rgba(0,220,255,0.9)" />
-      <circle cx="383" cy="16" r="1.8" fill="white" opacity="0.8" />
-      <circle cx="383.5" cy="16.2" r="0.8" fill="#000" />
-      <path d="M388,20 L390,23 M393,19 L395,22 M398,18 L400,21" stroke="rgba(230,230,200,0.6)" strokeWidth="1" />
-      {/* Body */}
-      <ellipse cx="200" cy="95" rx="110" ry="42" fill="rgba(55,120,160,0.88)" />
-      <ellipse cx="200" cy="104" rx="85" ry="22" fill="rgba(100,175,210,0.35)" />
-      <ellipse cx="180" cy="78" rx="60" ry="14" fill="rgba(140,210,240,0.25)" />
-      {[...Array(8)].map((_, i) => (
-        <ellipse key={i} cx={140 + i * 18} cy={88 + (i % 3) * 6} rx={4 + (i % 2) * 2} ry={3}
-          fill="rgba(80,190,220,0.18)" />
-      ))}
-      {/* Tail */}
-      <path d="M90,95 Q60,88 30,72 Q12,60 5,50 Q15,55 25,65 Q50,82 75,90 Q60,95 30,108 Q12,112 5,108 Q15,102 30,98 Q60,100 90,95"
-        fill="rgba(55,120,160,0.88)" />
-      {/* Front flippers */}
-      <path d="M240,108 Q255,135 245,155 Q235,165 228,158 Q230,142 235,120 Z" fill="rgba(50,110,150,0.82)" />
-      <path d="M155,108 Q140,135 150,155 Q160,165 167,158 Q165,142 160,120 Z" fill="rgba(50,110,150,0.82)" />
-      {/* Rear flippers */}
-      <path d="M135,100 Q115,122 120,142 Q128,152 135,145 Q133,128 135,108 Z" fill="rgba(45,105,145,0.75)" />
-      <path d="M260,100 Q280,122 275,142 Q267,152 260,145 Q262,128 260,108 Z" fill="rgba(45,105,145,0.75)" />
-    </svg>
-  );
-}
+// (No inline SVG — using PNG images for creatures instead)
 
 // ── Burbujas realistas ─────────────────────────────────────────────────────────
 function Bubbles() {
@@ -149,40 +111,64 @@ function GodsRays() {
   );
 }
 
-// ── 4 Plesiosaurios nadando en el fondo ────────────────────────────────────────
-function SwimmingPlesiosaurs() {
+// ── Criaturas marinas nadando (PNG animados) ───────────────────────────────────
+function SwimmingCreatures() {
+  const creatures = [
+    // Plesiosaurio grande — fondo profundo, lento (izq → der)
+    { src: '/assets/reptiles_marinos/plesiosaurio_swim.png', top: '58%', width: 'clamp(280px,30vw,420px)', anim: 'swimRight 48s -8s linear infinite', opacity: 0.5, blur: '1.5px', flip: false },
+    // Ictiosaurio mediano — profundidad media (der → izq)
+    { src: '/assets/reptiles_marinos/ichthyosaurus_swim.png', top: '30%', width: 'clamp(180px,20vw,300px)', anim: 'swimLeft 32s -12s linear infinite', opacity: 0.6, blur: '0px', flip: true },
+    // Plesiosaurio pequeño — muy profundo, muy lento
+    { src: '/assets/reptiles_marinos/plesiosaurio_swim.png', top: '76%', width: 'clamp(140px,15vw,220px)', anim: 'swimRight 62s -30s linear infinite', opacity: 0.25, blur: '3px', flip: false },
+    // Ictiosaurio cercano — superficie (der → izq)
+    { src: '/assets/reptiles_marinos/ichthyosaurus_swim.png', top: '18%', width: 'clamp(120px,12vw,190px)', anim: 'swimLeft 24s -5s linear infinite', opacity: 0.4, blur: '0.5px', flip: true },
+    // Plesiosaurio mediano — profundidad media (der → izq)
+    { src: '/assets/reptiles_marinos/plesiosaurio_swim.png', top: '44%', width: 'clamp(200px,22vw,340px)', anim: 'swimLeft 38s -20s linear infinite', opacity: 0.55, blur: '0.8px', flip: true },
+  ];
+
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 5, overflow: 'hidden' }}>
-      {/* Grande, fondo profundo, lento — izq → der */}
-      <div style={{ position: 'absolute', top: '60%', animation: 'plesiRight 42s -8s linear infinite', opacity: 0.55, filter: 'blur(1.5px)' }}>
-        <PlesiosauroSvg scale={0.9} />
-      </div>
-      {/* Mediano, profundidad media, vel media — der → izq */}
-      <div style={{ position: 'absolute', top: '32%', animation: 'plesiLeft 30s -15s linear infinite', opacity: 0.7 }}>
-        <PlesiosauroSvg scale={0.65} flip={true} />
-      </div>
-      {/* Pequeño, muy profundo, muy lento */}
-      <div style={{ position: 'absolute', top: '78%', animation: 'plesiRight 58s -25s linear infinite', opacity: 0.28, filter: 'blur(3px)' }}>
-        <PlesiosauroSvg scale={0.5} />
-      </div>
-      {/* Cercano al frente, cerca de la superficie — der → izq */}
-      <div style={{ position: 'absolute', top: '20%', animation: 'plesiLeft 22s -5s linear infinite', opacity: 0.45, filter: 'blur(0.5px)' }}>
-        <PlesiosauroSvg scale={0.42} flip={true} />
-      </div>
+      {creatures.map((c, i) => (
+        <div key={i} style={{
+          position: 'absolute',
+          top: c.top,
+          animation: c.anim,
+          opacity: c.opacity,
+          filter: `blur(${c.blur}) drop-shadow(0 0 20px rgba(0,180,255,0.3))`,
+        }}>
+          <img
+            src={c.src}
+            alt=""
+            style={{
+              width: c.width,
+              height: 'auto',
+              transform: c.flip ? 'scaleX(-1)' : 'none',
+              objectFit: 'contain',
+            }}
+            draggable={false}
+          />
+        </div>
+      ))}
       <style>{`
-        @keyframes plesiRight {
-          0%   { left: -25%; transform: translateY(0); }
-          25%  { transform: translateY(-18px); }
-          50%  { transform: translateY(10px); }
-          75%  { transform: translateY(-12px); }
-          100% { left: 115%; transform: translateY(0); }
+        @keyframes swimRight {
+          0%   { left: -30%; transform: translateY(0); }
+          15%  { transform: translateY(-20px); }
+          30%  { transform: translateY(12px); }
+          45%  { transform: translateY(-14px); }
+          60%  { transform: translateY(8px); }
+          75%  { transform: translateY(-10px); }
+          90%  { transform: translateY(6px); }
+          100% { left: 110%; transform: translateY(0); }
         }
-        @keyframes plesiLeft {
-          0%   { right: -25%; transform: translateY(0); }
-          25%  { transform: translateY(14px); }
-          50%  { transform: translateY(-16px); }
-          75%  { transform: translateY(10px); }
-          100% { right: 115%; transform: translateY(0); }
+        @keyframes swimLeft {
+          0%   { right: -30%; transform: translateY(0); }
+          15%  { transform: translateY(16px); }
+          30%  { transform: translateY(-18px); }
+          45%  { transform: translateY(10px); }
+          60%  { transform: translateY(-12px); }
+          75%  { transform: translateY(8px); }
+          90%  { transform: translateY(-6px); }
+          100% { right: 110%; transform: translateY(0); }
         }
       `}</style>
     </div>
@@ -313,7 +299,7 @@ export default function ReptilesMarinos() {
         <WaterSurface />
         <Bubbles />
         <BiolumParticles />
-        <SwimmingPlesiosaurs />
+        <SwimmingCreatures />
         <OceanTrail />
 
         {/* HEADER */}

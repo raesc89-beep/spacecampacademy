@@ -29,15 +29,19 @@ function VisorMaterial({ color }) {
   return (
     <meshPhysicalMaterial
       color={color}
-      roughness={0.05}
-      metalness={0.0}
+      roughness={0.08}
+      metalness={0.15}
       clearcoat={1.0}
       clearcoatRoughness={0.0}
-      transmission={0.35}
-      thickness={0.4}
-      ior={1.5}
-      reflectivity={0.9}
-      envMapIntensity={3.0}
+      transmission={0.12}
+      thickness={0.6}
+      ior={1.8}
+      reflectivity={1.0}
+      envMapIntensity={4.0}
+      emissive={color}
+      emissiveIntensity={0.15}
+      opacity={0.92}
+      transparent={true}
     />
   );
 }
@@ -74,62 +78,44 @@ function ProceduralAstronaut({ skinTone, suitColor, visorColor, accentColor }) {
   return (
     <group ref={group} scale={1.75} position={[0, -1.2, 0]}>
 
-      {/* ── BOOTS — realistic space boot shape ──────────────────────────── */}
+      {/* ── BOOTS — realistic space boot ──────────────────────────────── */}
       {/* LEFT BOOT */}
-      {/* Ankle/upper cuff */}
-      <mesh position={[-0.3, -0.38, 0.05]} castShadow>
-        <cylinderGeometry args={[0.24, 0.27, 0.28, 24]} />
+      {/* Ankle cuff — tapers from leg (top 0.18) to boot (bottom 0.24) */}
+      <mesh position={[-0.3, -0.48, 0.04]} castShadow>
+        <cylinderGeometry args={[0.18, 0.24, 0.2, 24]} />
         <ClayMaterial color={suitColor} roughness={0.45} clearcoat={0.8} />
       </mesh>
-      {/* Velcro strap top */}
-      <mesh position={[-0.3, -0.27, 0.05]}>
-        <torusGeometry args={[0.26, 0.045, 10, 32]} />
+      {/* Velcro strap */}
+      <mesh position={[-0.3, -0.40, 0.04]}>
+        <torusGeometry args={[0.22, 0.04, 10, 32]} />
         <ClayMaterial color={accentColor} roughness={0.3} clearcoat={1.0} />
       </mesh>
       {/* Foot body — capsule horizontal */}
-      <mesh position={[-0.3, -0.58, 0.1]} rotation={[Math.PI / 2, 0, 0]} castShadow>
-        <capsuleGeometry args={[0.19, 0.44, 12, 24]} />
+      <mesh position={[-0.3, -0.62, 0.08]} rotation={[Math.PI / 2, 0, 0]} castShadow>
+        <capsuleGeometry args={[0.17, 0.36, 12, 24]} />
         <RubberMaterial color={suitColor} />
       </mesh>
-      {/* Toe cap — rounded front */}
-      <mesh position={[-0.3, -0.57, 0.35]}>
-        <sphereGeometry args={[0.2, 20, 20, 0, Math.PI * 2, 0, Math.PI / 1.8]} />
-        <RubberMaterial color={suitColor} />
-      </mesh>
-      {/* Velcro strap lower */}
-      <mesh position={[-0.3, -0.5, 0.08]} rotation={[0.15, 0, 0]}>
-        <torusGeometry args={[0.22, 0.038, 10, 32]} />
-        <ClayMaterial color={accentColor} roughness={0.3} clearcoat={1.0} />
-      </mesh>
-      {/* Sole */}
-      <mesh position={[-0.3, -0.72, 0.1]} castShadow>
-        <capsuleGeometry args={[0.21, 0.46, 8, 20]} />
+      {/* Sole — flat dark base */}
+      <mesh position={[-0.3, -0.76, 0.08]} castShadow>
+        <boxGeometry args={[0.38, 0.06, 0.54, 2, 1, 2]} />
         <ClayMaterial color="#0a0a0a" roughness={0.95} clearcoat={0.05} />
       </mesh>
 
       {/* RIGHT BOOT */}
-      <mesh position={[0.3, -0.38, 0.05]} castShadow>
-        <cylinderGeometry args={[0.24, 0.27, 0.28, 24]} />
+      <mesh position={[0.3, -0.48, 0.04]} castShadow>
+        <cylinderGeometry args={[0.18, 0.24, 0.2, 24]} />
         <ClayMaterial color={suitColor} roughness={0.45} clearcoat={0.8} />
       </mesh>
-      <mesh position={[0.3, -0.27, 0.05]}>
-        <torusGeometry args={[0.26, 0.045, 10, 32]} />
+      <mesh position={[0.3, -0.40, 0.04]}>
+        <torusGeometry args={[0.22, 0.04, 10, 32]} />
         <ClayMaterial color={accentColor} roughness={0.3} clearcoat={1.0} />
       </mesh>
-      <mesh position={[0.3, -0.58, 0.1]} rotation={[Math.PI / 2, 0, 0]} castShadow>
-        <capsuleGeometry args={[0.19, 0.44, 12, 24]} />
+      <mesh position={[0.3, -0.62, 0.08]} rotation={[Math.PI / 2, 0, 0]} castShadow>
+        <capsuleGeometry args={[0.17, 0.36, 12, 24]} />
         <RubberMaterial color={suitColor} />
       </mesh>
-      <mesh position={[0.3, -0.57, 0.35]}>
-        <sphereGeometry args={[0.2, 20, 20, 0, Math.PI * 2, 0, Math.PI / 1.8]} />
-        <RubberMaterial color={suitColor} />
-      </mesh>
-      <mesh position={[0.3, -0.5, 0.08]} rotation={[0.15, 0, 0]}>
-        <torusGeometry args={[0.22, 0.038, 10, 32]} />
-        <ClayMaterial color={accentColor} roughness={0.3} clearcoat={1.0} />
-      </mesh>
-      <mesh position={[0.3, -0.72, 0.1]} castShadow>
-        <capsuleGeometry args={[0.21, 0.46, 8, 20]} />
+      <mesh position={[0.3, -0.76, 0.08]} castShadow>
+        <boxGeometry args={[0.38, 0.06, 0.54, 2, 1, 2]} />
         <ClayMaterial color="#0a0a0a" roughness={0.95} clearcoat={0.05} />
       </mesh>
 
@@ -296,9 +282,9 @@ function ProceduralAstronaut({ skinTone, suitColor, visorColor, accentColor }) {
         <torusGeometry args={[0.4, 0.055, 16, 48]} />
         <ClayMaterial color={accentColor} roughness={0.25} clearcoat={1.0} />
       </mesh>
-      {/* Visor lens */}
-      <mesh position={[0, 2.26, 0.28]} rotation={[0.25, 0, 0]}>
-        <circleGeometry args={[0.38, 48]} />
+      {/* Visor lens — 3D half-dome visible from all angles */}
+      <mesh position={[0, 2.26, 0.12]} rotation={[0.25, 0, 0]}>
+        <sphereGeometry args={[0.42, 48, 24, 0, Math.PI * 2, 0, Math.PI / 2]} />
         <VisorMaterial color={visorColor} />
       </mesh>
       {/* Face/skin behind visor */}

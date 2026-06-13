@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Rocket, Anchor, Radio, Star, Gamepad2, Trophy } from 'lucide-react';
+import { Rocket, Anchor, Radio, Star, Gamepad2, Trophy, UserCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import HubDecorations from '@/components/HubDecorations';
@@ -491,6 +491,56 @@ export default function DashboardLanding() {
                     Zona Arcade
                   </h2>
                   <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.4 }}>Minijuegos espaciales para entrenar tu mente y agudizar tus reflejos.</p>
+                </div>
+              </motion.div>
+              </motion.div>
+            </Link>
+
+            {/* Perfil del Cadete */}
+            <Link href="/profile" style={{ textDecoration: 'none' }}>
+              <motion.div 
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 5.2, ease: "easeInOut" }}
+              >
+              <motion.div 
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 10px 40px rgba(0,206,209,0.6), inset 0 0 40px rgba(0,206,209,0.4)' }}
+                whileTap={{ scale: 0.98 }}
+                style={{
+                  background: 'rgba(10, 25, 30, 0.25)',
+                  backdropFilter: 'blur(12px)',
+                  border: '2px solid rgba(0, 206, 209, 0.6)',
+                  borderRadius: '24px',
+                  padding: 'clamp(1.5rem, 3vw, 3rem) clamp(1rem, 2vw, 2rem)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  gap: '1rem',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,206,209,0.2), 0 0 15px rgba(0,206,209,0.3)',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+              >
+                {/* HUD Elements */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '40px', height: '40px', borderTop: '2px solid #00CED1', borderLeft: '2px solid #00CED1', borderTopLeftRadius: '24px' }}></div>
+                <div style={{ position: 'absolute', bottom: 0, right: 0, width: '40px', height: '40px', borderBottom: '2px solid #00CED1', borderRight: '2px solid #00CED1', borderBottomRightRadius: '24px' }}></div>
+
+                <div style={{ 
+                  background: 'transparent',
+                  padding: '1.5rem',
+                  borderRadius: '50%',
+                  border: '2px dashed rgba(0,206,209,0.5)',
+                  boxShadow: '0 0 30px rgba(0,206,209,0.2), inset 0 0 15px rgba(0,206,209,0.2)',
+                  position: 'relative'
+                }}>
+                  <div style={{ position: 'absolute', inset: -8, border: '1px solid rgba(0,206,209,0.3)', borderRadius: '50%', animation: 'spin 11s linear infinite' }}></div>
+                  <UserCircle size={48} color="#00CED1" style={{ filter: 'drop-shadow(0 0 10px #00CED1)' }} />
+                </div>
+                <div>
+                  <h2 style={{ color: 'white', fontSize: '2rem', margin: '0 0 0.5rem 0', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>Perfil del Cadete</h2>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.4 }}>Personaliza tu identidad, gestiona tu equipo y comparte tu progreso espacial.</p>
                 </div>
               </motion.div>
               </motion.div>

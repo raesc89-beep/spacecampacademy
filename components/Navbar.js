@@ -43,7 +43,10 @@ export default function Navbar() {
       
       {!loading && user && (
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <Link href="/profile" style={{ textDecoration: 'none', color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', transition: 'all 0.2s ease', padding: '0.3rem 0.8rem', borderRadius: '20px', border: '1px solid transparent' }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(0,206,209,0.4)'; e.currentTarget.style.background = 'rgba(0,206,209,0.08)'; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = 'transparent'; e.currentTarget.style.background = 'transparent'; }}
+          >
             <div style={{ padding: '0.5rem', background: 'rgba(255, 255, 255, 0.1)', borderRadius: '50%' }}>
               <User size={18} color="var(--starlight)" />
             </div>
@@ -51,7 +54,7 @@ export default function Navbar() {
             {userData?.role === 'admin' && (
               <span style={{ fontSize: '0.7rem', background: 'var(--danger)', padding: '0.2rem 0.5rem', borderRadius: '10px' }}>Admin</span>
             )}
-          </div>
+          </Link>
           <Link
             href="/profile/logros"
             title="Mis Logros"
