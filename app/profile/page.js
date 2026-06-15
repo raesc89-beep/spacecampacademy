@@ -214,6 +214,7 @@ export default function CadeteProfilePage() {
   const [toastVisible, setToastVisible] = useState(false);
   const [toastMsg, setToastMsg] = useState('');
   const [photoPreview, setPhotoPreview] = useState(null);
+  const [isDragging, setIsDragging] = useState(false);
 
   // Redirect if not logged in
   useEffect(() => {
@@ -244,10 +245,13 @@ export default function CadeteProfilePage() {
     setTimeout(() => setToastVisible(false), 3000);
   };
 
-  // Handle photo upload
-  const handlePhotoUpload = async (e) => {
-    const file = e.target.files?.[0];
+  // Handle photo upload (from file input or drag-drop)
+  const processPhotoFile = async (file) => {
     if (!file || !user) return;
+    if (!file.type.startsWith('image/')) {
+      showToast('❌ Solo se permiten archivos de imagen');
+      return;
+    }
 
     // Immediate preview
     const previewUrl = URL.createObjectURL(file);
@@ -268,6 +272,31 @@ export default function CadeteProfilePage() {
     } finally {
       setUploading(false);
     }
+  };
+
+  const handlePhotoUpload = (e) => {
+    const file = e.target.files?.[0];
+    processPhotoFile(file);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(false);
+    const file = e.dataTransfer.files?.[0];
+    processPhotoFile(file);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(false);
   };
 
   // Save profile
@@ -406,34 +435,46 @@ export default function CadeteProfilePage() {
 
             {/* Photo + Name row */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center', width: '100%' }}>
-              {/* Photo circle */}
+              {/* Photo circle — click or drag-and-drop */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => fileInputRef.current?.click()}
+                onDrop={handleDrop}
+                onDragOver={handleDragOver}
+                onDragLeave={handleDragLeave}
                 style={{
                   width: 130, height: 130, borderRadius: '50%', cursor: 'pointer',
                   background: currentPhotoUrl
                     ? `url(${currentPhotoUrl}) center / cover no-repeat`
                     : 'linear-gradient(135deg, rgba(0,228,255,0.15), rgba(153,51,255,0.15))',
-                  border: '3px solid rgba(0, 228, 255, 0.5)',
-                  boxShadow: '0 0 30px rgba(0,228,255,0.2), inset 0 0 20px rgba(0,0,0,0.3)',
+                  border: isDragging 
+                    ? '3px solid rgba(0,255,136,0.8)' 
+                    : '3px solid rgba(0, 228, 255, 0.5)',
+                  boxShadow: isDragging 
+                    ? '0 0 40px rgba(0,255,136,0.4), inset 0 0 30px rgba(0,255,136,0.15)'
+                    : '0 0 30px rgba(0,228,255,0.2), inset 0 0 20px rgba(0,0,0,0.3)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   position: 'relative', flexShrink: 0,
+                  transition: 'border-color 0.3s, box-shadow 0.3s',
                 }}
               >
-                {!currentPhotoUrl && <UserCircle size={56} color="rgba(0,228,255,0.4)" />}
+                {!currentPhotoUrl && !isDragging && <UserCircle size={56} color="rgba(0,228,255,0.4)" />}
+                {isDragging && <Camera size={40} color="#00FF88" style={{ filter: 'drop-shadow(0 0 10px #00FF88)' }} />}
                 {/* Camera overlay */}
-                <div style={{
-                  position: 'absolute', inset: 0, borderRadius: '50%',
-                  background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  opacity: 0, transition: 'opacity 0.3s',
-                }}
-                  onMouseEnter={e => e.currentTarget.style.opacity = 1}
-                  onMouseLeave={e => e.currentTarget.style.opacity = 0}
-                >
-                  <Camera size={28} color="#00E4FF" />
-                </div>
+                {!isDragging && (
+                  <div style={{
+                    position: 'absolute', inset: 0, borderRadius: '50%',
+                    background: 'rgba(0,0,0,0.5)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.3rem',
+                    opacity: 0, transition: 'opacity 0.3s',
+                  }}
+                    onMouseEnter={e => e.currentTarget.style.opacity = 1}
+                    onMouseLeave={e => e.currentTarget.style.opacity = 0}
+                  >
+                    <Camera size={24} color="#00E4FF" />
+                    <span style={{ fontSize: '0.6rem', color: '#00E4FF', textAlign: 'center', lineHeight: 1.2 }}>Click o<br/>arrastra</span>
+                  </div>
+                )}
                 {uploading && (
                   <div style={{ position: 'absolute', inset: 0, borderRadius: '50%', background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: 'linear' }}

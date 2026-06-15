@@ -29,19 +29,17 @@ function VisorMaterial({ color }) {
   return (
     <meshPhysicalMaterial
       color={color}
-      roughness={0.08}
-      metalness={0.15}
+      roughness={0.05}
+      metalness={0.45}
       clearcoat={1.0}
       clearcoatRoughness={0.0}
-      transmission={0.12}
-      thickness={0.6}
-      ior={1.8}
       reflectivity={1.0}
-      envMapIntensity={4.0}
+      envMapIntensity={2.5}
       emissive={color}
-      emissiveIntensity={0.15}
-      opacity={0.92}
+      emissiveIntensity={0.35}
+      opacity={0.85}
       transparent={true}
+      side={2}
     />
   );
 }
