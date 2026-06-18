@@ -207,6 +207,10 @@ export default function CourseModule() {
     uranus: { path: '/hub/solar-system', name: 'Sistema Solar' },
     pluto: { path: '/hub/solar-system', name: 'Sistema Solar' },
     sun: { path: '/hub/solar-system', name: 'Sistema Solar' },
+    cecilia: { path: '/hub/cecilia-payne', name: 'Cecilia Payne-Gaposchkin' },
+    marinos: { path: '/hub/reptiles-marinos', name: 'Reptiles Marinos' },
+    dinos: { path: '/hub/dinosaurios', name: 'Los Dinosaurios' },
+    tesla: { path: '/hub/tesla', name: 'Nikola Tesla' },
   };
 
   function getHubInfo(moduleId) {

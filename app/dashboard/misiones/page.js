@@ -255,6 +255,16 @@ const DASHBOARD_MISSIONS = [
     borderColor: "rgba(212, 168, 67, 0.4)"
   },
   {
+    id: "cecilia-payne",
+    title: "Cecilia Payne-Gaposchkin",
+    subtitle: "La astrónoma londinense que descubrió que las estrellas son principalmente hidrógeno — el mayor hallazgo de la astrofísica del siglo XX.",
+    link: "/hub/cecilia-payne",
+    bgSrc: "/assets/cecilia_payne_cover.png",
+    badgeColor: "#9B59B6",
+    badgeText: "Astrofísica Pionera",
+    borderColor: "rgba(155, 89, 182, 0.4)"
+  },
+  {
     id: "dinosaurios",
     title: "Los Dinosaurios: La Era de los Titanes",
     subtitle: "Viaja al Mesozoico y descubre a las criaturas más gigantescas que jamás pisaron la Tierra.",

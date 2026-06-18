@@ -28,6 +28,7 @@ const COURSE_GROUPS = [
   { id: 'peliculas',   label: '🎬 Ciencia en el Cine',      prefixes: ['starwars_','bttf_','interstellar_','interestelar_','objetos_'] },
   { id: 'viajes',      label: '🛰️ Viajes Espaciales',       prefixes: ['viaje','exoplanetas_','exoplanetas','arqueoastronomia_'] },
   { id: 'otros',       label: '📚 Otros Módulos',           prefixes: [] },
+  { id: 'cecilia',     label: '⭐ Cecilia Payne',           prefixes: ['cecilia_'] },
 ];
 
 

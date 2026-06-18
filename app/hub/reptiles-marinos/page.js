@@ -111,107 +111,52 @@ function GodsRays() {
   );
 }
 
-// ── Siluetas SVG de criaturas marinas ────────────────────────────────────────
-function MosasaurusSvg({ w = 320 }) {
-  return (
-    <svg width={w} height={w * 0.3} viewBox="0 0 320 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Body */}
-      <path d="M30,52 Q10,48 4,44 Q0,40 8,38 Q16,36 30,42 L30,52Z" fill="rgba(10,30,50,0.9)" />
-      <path d="M30,47 Q80,20 160,28 Q240,34 280,40 Q300,43 310,46 Q316,48 316,50 Q316,53 308,54 Q290,56 280,54 Q240,58 160,55 Q80,58 30,47Z" fill="rgba(10,30,50,0.92)" />
-      {/* Jaw */}
-      <path d="M280,48 Q296,44 312,46 Q316,47 314,50 Q308,55 290,54 L280,52Z" fill="rgba(8,25,45,0.95)" />
-      <path d="M290,47 L294,45 M298,46 L301,44 M304,47 L306,45" stroke="rgba(200,220,240,0.25)" strokeWidth="1"/>
-      {/* Eye */}
-      <circle cx="286" cy="44" r="4" fill="rgba(0,200,220,0.7)"/>
-      <circle cx="287" cy="43" r="1.5" fill="rgba(255,255,255,0.5)"/>
-      {/* Dorsal fin */}
-      <path d="M180,30 Q190,14 200,28" fill="rgba(10,30,50,0.85)" />
-      {/* Flippers */}
-      <path d="M120,54 Q110,72 100,80 Q98,82 96,78 Q100,64 118,52Z" fill="rgba(10,30,50,0.8)" />
-      <path d="M200,52 Q195,66 190,72 Q188,74 187,70 Q190,60 198,50Z" fill="rgba(10,30,50,0.75)" />
-      {/* Tail */}
-      <path d="M30,47 Q18,36 8,28 Q4,24 8,26 Q18,30 28,42Z" fill="rgba(10,30,50,0.8)" />
-      <path d="M30,52 Q18,60 8,68 Q4,72 8,70 Q18,64 28,54Z" fill="rgba(10,30,50,0.8)" />
-    </svg>
-  );
-}
-
-function PlesiosaurusSvg({ w = 360 }) {
-  return (
-    <svg width={w} height={w * 0.45} viewBox="0 0 360 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Tail */}
-      <path d="M20,80 Q8,72 4,64 Q2,58 6,60 Q12,66 18,74Z" fill="rgba(10,30,50,0.8)" />
-      <path d="M20,84 Q8,90 4,98 Q2,104 6,100 Q12,92 18,86Z" fill="rgba(10,30,50,0.8)" />
-      {/* Body */}
-      <ellipse cx="120" cy="82" rx="100" ry="32" fill="rgba(10,30,50,0.9)" />
-      <ellipse cx="120" cy="88" rx="70" ry="18" fill="rgba(15,40,65,0.4)" />
-      {/* Neck */}
-      <path d="M210,70 Q240,50 265,32 Q280,22 295,16 Q310,10 320,14 Q326,18 322,24 Q316,30 300,38 Q275,50 250,60 Q230,68 215,74" stroke="rgba(10,30,50,0.9)" strokeWidth="16" strokeLinecap="round" fill="none"/>
-      {/* Head */}
-      <ellipse cx="322" cy="18" rx="20" ry="10" fill="rgba(10,30,50,0.92)" />
-      <path d="M330,12 Q350,10 356,16 Q350,20 330,20Z" fill="rgba(8,25,45,0.9)" />
-      <circle cx="338" cy="13" r="3" fill="rgba(0,200,220,0.6)"/>
-      <circle cx="339" cy="12" r="1.2" fill="rgba(255,255,255,0.4)"/>
-      {/* Teeth */}
-      <path d="M342,18 L344,21 M347,17 L349,20 M352,16 L353,19" stroke="rgba(200,220,240,0.2)" strokeWidth="0.8"/>
-      {/* Flippers front */}
-      <path d="M170,92 Q180,115 176,135 Q174,142 170,138 Q172,120 168,96Z" fill="rgba(10,30,50,0.82)" />
-      <path d="M80,92 Q70,115 74,135 Q76,142 80,138 Q78,120 82,96Z" fill="rgba(10,30,50,0.82)" />
-      {/* Flippers rear */}
-      <path d="M55,88 Q45,102 48,115 Q50,120 54,114 Q52,100 56,90Z" fill="rgba(10,30,50,0.7)" />
-      <path d="M185,88 Q195,102 192,115 Q190,120 186,114 Q188,100 184,90Z" fill="rgba(10,30,50,0.7)" />
-    </svg>
-  );
-}
-
-function IchthyosaurusSvg({ w = 240 }) {
-  return (
-    <svg width={w} height={w * 0.4} viewBox="0 0 240 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Body — dolphin shape */}
-      <path d="M24,50 Q60,24 120,30 Q180,34 210,42 Q230,46 236,48 Q240,50 236,52 Q230,54 210,54 Q180,58 120,56 Q60,60 24,50Z" fill="rgba(10,30,50,0.9)"/>
-      {/* Eye — large round */}
-      <circle cx="210" cy="44" r="6" fill="rgba(0,200,220,0.65)"/>
-      <circle cx="211" cy="43" r="2.5" fill="rgba(255,255,255,0.45)"/>
-      {/* Snout */}
-      <path d="M224,46 Q236,44 240,48 Q236,52 224,50Z" fill="rgba(8,25,45,0.95)"/>
-      {/* Dorsal fin */}
-      <path d="M130,32 Q140,12 150,30" fill="rgba(10,30,50,0.85)"/>
-      {/* Tail — crescent */}
-      <path d="M24,48 Q12,36 6,26 Q4,22 8,24 Q16,32 22,42Z" fill="rgba(10,30,50,0.82)"/>
-      <path d="M24,52 Q12,62 6,70 Q4,74 8,72 Q16,64 22,54Z" fill="rgba(10,30,50,0.82)"/>
-      {/* Pectoral flippers */}
-      <path d="M160,54 Q155,70 150,78 Q148,80 147,76 Q150,64 158,52Z" fill="rgba(10,30,50,0.75)"/>
-      {/* Pelvic flipper */}
-      <path d="M90,56 Q86,66 84,72 Q83,74 82,70 Q84,62 88,54Z" fill="rgba(10,30,50,0.7)"/>
-    </svg>
-  );
-}
-
-// ── Criaturas marinas nadando (siluetas CSS animadas) ────────────────────────
+// ── Criaturas marinas nadando (imágenes PNG reales con fondo eliminado) ──────
 function SwimmingCreatures() {
   const creatures = [
-    // Mosasaurio grande — fondo profundo, lento (izq → der)
-    { type: 'mosasaurus', w: 380, top: '55%', anim: 'swimRight 50s -8s linear infinite', opacity: 0.45, blur: '1.5px', flip: false },
-    // Plesiosaurio mediano — profundidad media (der → izq)
-    { type: 'plesiosaurus', w: 300, top: '32%', anim: 'swimLeft 36s -14s linear infinite', opacity: 0.55, blur: '0px', flip: true },
-    // Ictiosaurio pequeño — muy profundo, muy lento
-    { type: 'ichthyosaurus', w: 180, top: '74%', anim: 'swimRight 58s -28s linear infinite', opacity: 0.22, blur: '3px', flip: false },
-    // Ictiosaurio cercano — superficie
-    { type: 'ichthyosaurus', w: 150, top: '16%', anim: 'swimLeft 22s -5s linear infinite', opacity: 0.35, blur: '0.5px', flip: true },
-    // Mosasaurio pequeño — profundidad media (der → izq)
-    { type: 'mosasaurus', w: 220, top: '44%', anim: 'swimLeft 42s -20s linear infinite', opacity: 0.3, blur: '1px', flip: true },
+    // Plesiosaurio grande — profundidad media (izq → der)
+    {
+      src: '/assets/reptiles_marinos/plesiosaurio_swim.png',
+      w: 380, top: '38%',
+      anim: 'swimRight 50s -8s linear infinite',
+      opacity: 0.82, blur: '0px', flip: false,
+    },
+    // Mosasaurio grande — fondo profundo (der → izq)
+    {
+      src: '/assets/reptiles_marinos/mosasaurus_swim.png',
+      w: 420, top: '58%',
+      anim: 'swimLeft 44s -14s linear infinite',
+      opacity: 0.72, blur: '1.5px', flip: false,
+    },
+    // Plesiosaurio pequeño — superficie (der → izq)
+    {
+      src: '/assets/reptiles_marinos/plesiosaurio_swim.png',
+      w: 210, top: '18%',
+      anim: 'swimLeft 62s -30s linear infinite',
+      opacity: 0.45, blur: '0px', flip: true,
+    },
+    // Ictiosaurio — profundidad media
+    {
+      src: '/assets/reptiles_marinos/ichthyosaurus_swim.png',
+      w: 200, top: '28%',
+      anim: 'swimRight 28s -5s linear infinite',
+      opacity: 0.5, blur: '0px', flip: false,
+    },
+    // Mosasaurio pequeño — muy profundo
+    {
+      src: '/assets/reptiles_marinos/mosasaurus_swim.png',
+      w: 240, top: '72%',
+      anim: 'swimRight 68s -25s linear infinite',
+      opacity: 0.28, blur: '3px', flip: true,
+    },
     // Plesiosaurio lejano — muy profundo
-    { type: 'plesiosaurus', w: 180, top: '68%', anim: 'swimRight 65s -35s linear infinite', opacity: 0.18, blur: '4px', flip: false },
+    {
+      src: '/assets/reptiles_marinos/plesiosaurio_swim.png',
+      w: 160, top: '82%',
+      anim: 'swimLeft 75s -40s linear infinite',
+      opacity: 0.18, blur: '4px', flip: false,
+    },
   ];
-
-  const renderCreature = (type, w) => {
-    switch(type) {
-      case 'mosasaurus': return <MosasaurusSvg w={w} />;
-      case 'plesiosaurus': return <PlesiosaurusSvg w={w} />;
-      case 'ichthyosaurus': return <IchthyosaurusSvg w={w} />;
-      default: return null;
-    }
-  };
 
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 5, overflow: 'hidden' }}>
@@ -221,37 +166,37 @@ function SwimmingCreatures() {
           top: c.top,
           animation: c.anim,
           opacity: c.opacity,
-          filter: `blur(${c.blur}) drop-shadow(0 0 15px rgba(0,180,255,0.25))`,
-          transform: c.flip ? 'scaleX(-1)' : 'none',
+          filter: `blur(${c.blur}) drop-shadow(0 4px 20px rgba(0,100,150,0.4))`,
         }}>
-          {renderCreature(c.type, c.w)}
+          <img
+            src={c.src}
+            alt=""
+            draggable={false}
+            style={{
+              width: c.w,
+              height: 'auto',
+              objectFit: 'contain',
+              transform: c.flip ? 'scaleX(-1)' : 'none',
+              display: 'block',
+              mixBlendMode: 'normal',
+            }}
+          />
         </div>
       ))}
       <style>{`
         @keyframes swimRight {
-          0%   { left: -30%; transform: translateY(0); }
-          15%  { transform: translateY(-20px); }
-          30%  { transform: translateY(12px); }
-          45%  { transform: translateY(-14px); }
-          60%  { transform: translateY(8px); }
-          75%  { transform: translateY(-10px); }
-          90%  { transform: translateY(6px); }
-          100% { left: 110%; transform: translateY(0); }
+          0%   { left: -35%; }
+          100% { left: 115%; }
         }
         @keyframes swimLeft {
-          0%   { right: -30%; transform: translateY(0); }
-          15%  { transform: translateY(16px); }
-          30%  { transform: translateY(-18px); }
-          45%  { transform: translateY(10px); }
-          60%  { transform: translateY(-12px); }
-          75%  { transform: translateY(8px); }
-          90%  { transform: translateY(-6px); }
-          100% { right: 110%; transform: translateY(0); }
+          0%   { right: -35%; }
+          100% { right: 115%; }
         }
       `}</style>
     </div>
   );
 }
+
 
 // ── Superficie del agua ─────────────────────────────────────────────────────────
 function WaterSurface() {
