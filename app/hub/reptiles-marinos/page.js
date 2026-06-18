@@ -160,29 +160,34 @@ function SwimmingCreatures() {
 
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 5, overflow: 'hidden' }}>
-      {creatures.map((c, i) => (
-        <div key={i} style={{
-          position: 'absolute',
-          top: c.top,
-          animation: c.anim,
-          opacity: c.opacity,
-          filter: `blur(${c.blur}) drop-shadow(0 4px 20px rgba(0,100,150,0.4))`,
-        }}>
-          <img
-            src={c.src}
-            alt=""
-            draggable={false}
-            style={{
-              width: c.w,
-              height: 'auto',
-              objectFit: 'contain',
-              transform: c.flip ? 'scaleX(-1)' : 'none',
-              display: 'block',
-              mixBlendMode: 'normal',
-            }}
-          />
-        </div>
-      ))}
+      {creatures.map((c, i) => {
+        const goesRight = c.anim.includes('swimRight');
+        return (
+          <div key={i} style={{
+            position: 'absolute',
+            top: c.top,
+            // swimRight starts from left side, swimLeft from right side
+            ...(goesRight ? { left: '-35%' } : { right: '-35%' }),
+            animation: c.anim,
+            opacity: c.opacity,
+            filter: `blur(${c.blur}) drop-shadow(0 4px 20px rgba(0,100,150,0.4))`,
+          }}>
+            <img
+              src={c.src}
+              alt=""
+              draggable={false}
+              style={{
+                width: c.w,
+                height: 'auto',
+                objectFit: 'contain',
+                transform: c.flip ? 'scaleX(-1)' : 'none',
+                display: 'block',
+                mixBlendMode: 'normal',
+              }}
+            />
+          </div>
+        );
+      })}
       <style>{`
         @keyframes swimRight {
           0%   { left: -35%; }
