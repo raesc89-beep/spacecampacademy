@@ -132,6 +132,24 @@ function SwimmingCreatures() {
           opacity: 0.75,
         }}
       />
+      {/* Criatura marina GIF animada — trayectoria curva der→izq, profundidad media-alta */}
+      <motion.img
+        src="/assets/reptiles_marinos/marine_creature.gif"
+        alt="Reptil Marino"
+        draggable={false}
+        animate={{
+          x: ['125vw', '85vw', '55vw', '25vw', '-25vw'],
+          y: ['0vh', '8vh', '-5vh', '6vh', '3vh'],
+        }}
+        transition={{ repeat: Infinity, duration: 48, ease: 'linear' }}
+        style={{
+          position: 'absolute', top: '45%', left: 0,
+          width: '280px', height: 'auto',
+          filter: 'drop-shadow(0 4px 25px rgba(0,120,180,0.6))',
+          opacity: 0.8,
+          transform: 'scaleX(-1)',
+        }}
+      />
       {/* Ictiosaurio pequeño lejano — trayectoria der→izq, profundo, borroso */}
       <motion.img
         src="/assets/reptiles_marinos/ichthyosaurus_swim.png"
