@@ -375,12 +375,12 @@ export default function StarWarsHub() {
         {/* Background Image with seamless faded edges */}
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/assets/starwars/starwarshub_enhanced.png')",
-          backgroundSize: 'contain',
-          backgroundPosition: 'center 40%',
+          backgroundImage: "url('/assets/starwars/starwars_deathstar_bg.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat',
-          WebkitMaskImage: 'radial-gradient(ellipse 70% 80% at 50% 40%, black 60%, transparent 100%)',
-          maskImage: 'radial-gradient(ellipse 70% 80% at 50% 40%, black 60%, transparent 100%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 85% 90% at 50% 50%, black 65%, transparent 100%)',
+          maskImage: 'radial-gradient(ellipse 85% 90% at 50% 50%, black 65%, transparent 100%)',
           zIndex: 0,
         }} />
         {/* Dark overlay gradient */}
@@ -462,8 +462,12 @@ export default function StarWarsHub() {
 
       <style>{`
         @keyframes twinkle {
-          0%, 100% { opacity: 0.2; transform: scale(1); }
-          50% { opacity: 1; transform: scale(1.6); }
+          0%, 100% { opacity: 0.15; transform: scale(1); }
+          15% { opacity: 0.9; transform: scale(1.5); }
+          25% { opacity: 0.3; transform: scale(1.1); }
+          50% { opacity: 1; transform: scale(1.8); }
+          65% { opacity: 0.4; transform: scale(1.2); }
+          80% { opacity: 0.8; transform: scale(1.4); }
         }
         @keyframes laserPulse {
           0%, 100% { opacity: 0.15; }

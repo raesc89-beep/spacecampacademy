@@ -262,16 +262,18 @@ const globalStyles = `
 
 // ─── Antorchas Lejanas en Pirámides ────────────────────────────────────────
 function JungleTorches() {
-  // Posiciones calculadas para alinearse con los puntos de luz de la imagen real
+  // Posiciones corregidas para alinearse con las antorchas visibles en las pirámides/templos
   const torches = [
-    // Ruinas en primer plano (inferior izquierda)
-    { left: '26.5%', top: '86.5%', size: 5, delay: 0.1 },
-    // Luces lejanas en la jungla (izquierda)
-    { left: '18.5%', top: '64%', size: 3, delay: 0.4 },
-    { left: '41%', top: '63%', size: 3, delay: 0.7 },
-    // Bases de las pirámides (horizonte)
-    { left: '55.5%', top: '46.5%', size: 4, delay: 0.2 },
-    { left: '64.5%', top: '48.5%', size: 4, delay: 0.8 },
+    // Cima del templo grande izquierdo (Tikal Templo I)
+    { left: '22%', top: '40%', size: 6, delay: 0.1 },
+    // Base/escalinata del templo izquierdo
+    { left: '24%', top: '56%', size: 4, delay: 0.5 },
+    // Pirámide central baja (Edzná)
+    { left: '38%', top: '68%', size: 5, delay: 0.3 },
+    // Cima del templo grande derecho (Tikal Templo II)
+    { left: '70%', top: '36%', size: 6, delay: 0.7 },
+    // Base/escalinata del templo derecho
+    { left: '68%', top: '52%', size: 4, delay: 0.2 },
   ];
 
   return (

@@ -111,93 +111,45 @@ function GodsRays() {
   );
 }
 
-// ── Criaturas marinas nadando (imágenes PNG reales con fondo eliminado) ──────
+// ── Criaturas marinas nadando con trayectorias curvas (estilo Sistema Solar) ──
 function SwimmingCreatures() {
-  const creatures = [
-    // Plesiosaurio grande — profundidad media (izq → der)
-    {
-      src: '/assets/reptiles_marinos/plesiosaurio_swim.png',
-      w: 380, top: '38%',
-      anim: 'swimRight 50s -8s linear infinite',
-      opacity: 0.82, blur: '0px', flip: false,
-    },
-    // Mosasaurio grande — fondo profundo (der → izq)
-    {
-      src: '/assets/reptiles_marinos/mosasaurus_swim.png',
-      w: 420, top: '58%',
-      anim: 'swimLeft 44s -14s linear infinite',
-      opacity: 0.72, blur: '1.5px', flip: false,
-    },
-    // Plesiosaurio pequeño — superficie (der → izq)
-    {
-      src: '/assets/reptiles_marinos/plesiosaurio_swim.png',
-      w: 210, top: '18%',
-      anim: 'swimLeft 62s -30s linear infinite',
-      opacity: 0.45, blur: '0px', flip: true,
-    },
-    // Ictiosaurio — profundidad media
-    {
-      src: '/assets/reptiles_marinos/ichthyosaurus_swim.png',
-      w: 200, top: '28%',
-      anim: 'swimRight 28s -5s linear infinite',
-      opacity: 0.5, blur: '0px', flip: false,
-    },
-    // Mosasaurio pequeño — muy profundo
-    {
-      src: '/assets/reptiles_marinos/mosasaurus_swim.png',
-      w: 240, top: '72%',
-      anim: 'swimRight 68s -25s linear infinite',
-      opacity: 0.28, blur: '3px', flip: true,
-    },
-    // Plesiosaurio lejano — muy profundo
-    {
-      src: '/assets/reptiles_marinos/plesiosaurio_swim.png',
-      w: 160, top: '82%',
-      anim: 'swimLeft 75s -40s linear infinite',
-      opacity: 0.18, blur: '4px', flip: false,
-    },
-  ];
-
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 5, overflow: 'hidden' }}>
-      {creatures.map((c, i) => {
-        const goesRight = c.anim.includes('swimRight');
-        return (
-          <div key={i} style={{
-            position: 'absolute',
-            top: c.top,
-            // swimRight starts from left side, swimLeft from right side
-            ...(goesRight ? { left: '-35%' } : { right: '-35%' }),
-            animation: c.anim,
-            opacity: c.opacity,
-            filter: `blur(${c.blur}) drop-shadow(0 4px 20px rgba(0,100,150,0.4))`,
-          }}>
-            <img
-              src={c.src}
-              alt=""
-              draggable={false}
-              style={{
-                width: c.w,
-                height: 'auto',
-                objectFit: 'contain',
-                transform: c.flip ? 'scaleX(-1)' : 'none',
-                display: 'block',
-                mixBlendMode: 'normal',
-              }}
-            />
-          </div>
-        );
-      })}
-      <style>{`
-        @keyframes swimRight {
-          0%   { left: -35%; }
-          100% { left: 115%; }
-        }
-        @keyframes swimLeft {
-          0%   { right: -35%; }
-          100% { right: 115%; }
-        }
-      `}</style>
+      {/* Ictiosaurio — trayectoria curva izq→der, profundidad media */}
+      <motion.img
+        src="/assets/reptiles_marinos/ichthyosaurus_swim.png"
+        alt="Ictiosaurio"
+        draggable={false}
+        animate={{
+          x: ['-20vw', '25vw', '50vw', '75vw', '120vw'],
+          y: ['5vh', '-3vh', '8vh', '-2vh', '4vh'],
+        }}
+        transition={{ repeat: Infinity, duration: 40, ease: 'linear' }}
+        style={{
+          position: 'absolute', top: '30%', left: 0,
+          width: '220px', height: 'auto',
+          filter: 'drop-shadow(0 4px 20px rgba(0,100,150,0.5))',
+          opacity: 0.75,
+        }}
+      />
+      {/* Ictiosaurio pequeño lejano — trayectoria der→izq, profundo, borroso */}
+      <motion.img
+        src="/assets/reptiles_marinos/ichthyosaurus_swim.png"
+        alt="Ictiosaurio lejano"
+        draggable={false}
+        animate={{
+          x: ['120vw', '80vw', '50vw', '20vw', '-25vw'],
+          y: ['0vh', '6vh', '-4vh', '5vh', '2vh'],
+        }}
+        transition={{ repeat: Infinity, duration: 55, ease: 'linear' }}
+        style={{
+          position: 'absolute', top: '65%', left: 0,
+          width: '140px', height: 'auto',
+          filter: 'blur(2px) drop-shadow(0 4px 15px rgba(0,80,120,0.4))',
+          opacity: 0.35,
+          transform: 'scaleX(-1)',
+        }}
+      />
     </div>
   );
 }

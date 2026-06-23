@@ -62,9 +62,10 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 2,
-      // El río azul en la imagen ocupa aprox. del 28% al 52% del alto
-      WebkitMaskImage: 'linear-gradient(to bottom, transparent 28%, black 33%, black 50%, transparent 55%)',
-      maskImage: 'linear-gradient(to bottom, transparent 28%, black 33%, black 50%, transparent 55%)'
+      // El río Nilo fluye en la parte inferior de la imagen, debajo del poblado iluminado
+      // La vegetación verde y el agua están entre ~73% y ~88% del alto de la imagen
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 70%, black 75%, black 85%, transparent 90%)',
+      maskImage: 'linear-gradient(to bottom, transparent 70%, black 75%, black 85%, transparent 90%)'
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion" x="0" y="0" width="100%" height="100%">

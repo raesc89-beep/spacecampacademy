@@ -79,13 +79,43 @@ export default function ObjetosInterestelaresHub() {
         </p>
       </div>
       
-      {/* Nave tipo Sonda en Movimiento de Fondo */}
+      {/* Asteroide cruzando el espacio — lento, parte superior */}
       <motion.img 
-        src="/assets/shuttle_user.png" 
-        alt="Sonda Exploradora"
-        animate={{ x: ['-20vw', '120vw'], y: ['20vh', '5vh', '15vh', '-10vh'], rotate: [10, 5, 10] }}
-        transition={{ repeat: Infinity, duration: 55, ease: "linear" }}
-        style={{ position: 'absolute', top: '30%', left: 0, width: '40px', zIndex: 1, pointerEvents: 'none', filter: 'drop-shadow(0 0 10px rgba(0,228,255,0.6)) grayscale(50%)' }}
+        src="/assets/interestelar/asteroid_cross.png" 
+        alt="Asteroide"
+        animate={{ 
+          x: ['-15vw', '30vw', '60vw', '90vw', '125vw'], 
+          y: ['0vh', '5vh', '-3vh', '8vh', '2vh'],
+          rotate: [0, 45, 120, 200, 360],
+        }}
+        transition={{ repeat: Infinity, duration: 65, ease: "linear" }}
+        style={{ position: 'absolute', top: '15%', left: 0, width: '60px', zIndex: 1, pointerEvents: 'none', 
+                 filter: 'drop-shadow(0 0 8px rgba(180,140,80,0.5))' }}
+      />
+      {/* Cometa brillante — rápido, con cola, parte media */}
+      <motion.img 
+        src="/assets/interestelar/comet_cross.png" 
+        alt="Cometa"
+        animate={{ 
+          x: ['-20vw', '25vw', '55vw', '85vw', '130vw'], 
+          y: ['10vh', '-5vh', '12vh', '-8vh', '5vh'],
+        }}
+        transition={{ repeat: Infinity, duration: 38, ease: "linear" }}
+        style={{ position: 'absolute', top: '40%', left: 0, width: '80px', zIndex: 1, pointerEvents: 'none', 
+                 filter: 'drop-shadow(0 0 15px rgba(100,200,255,0.7))' }}
+      />
+      {/* Oumuamua tipo — lento, der→izq, parte inferior */}
+      <motion.img 
+        src="/assets/interestelar/oumuamua_cross.png" 
+        alt="Objeto Interestelar tipo Oumuamua"
+        animate={{ 
+          x: ['125vw', '80vw', '45vw', '10vw', '-20vw'], 
+          y: ['0vh', '-8vh', '5vh', '-3vh', '2vh'],
+          rotate: [0, -10, -25, -15, 0],
+        }}
+        transition={{ repeat: Infinity, duration: 72, ease: "linear" }}
+        style={{ position: 'absolute', top: '65%', left: 0, width: '55px', zIndex: 1, pointerEvents: 'none', 
+                 filter: 'drop-shadow(0 0 10px rgba(200,100,50,0.5))', transform: 'scaleX(-1)' }}
       />
 
       <main style={{ 
