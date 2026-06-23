@@ -118,24 +118,24 @@ const globalStyles = `
 // ─── Efecto de Llama de la Vela/Lámpara ───────────────────────────────────
 function CandleFlame() {
   return (
-    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 3 }}>
-      {/* Llama principal */}
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 8 }}>
+      {/* Llama principal — visible y grande */}
       <div style={{
         position: 'absolute',
-        left: '66%', top: '48%',
-        width: '8px', height: '16px',
+        left: '66%', top: '45%',
+        width: '20px', height: '40px',
         background: 'radial-gradient(ellipse at 50% 80%, #fff9c4 0%, #ffcc02 25%, #ff8800 55%, #ff4400 80%, transparent 100%)',
         borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
         animation: 'candleFlicker 0.6s ease-in-out infinite',
-        filter: 'blur(0.5px)',
+        filter: 'blur(1px)',
         mixBlendMode: 'screen',
       }} />
       {/* Brillo cálido interior */}
       <div style={{
         position: 'absolute',
-        left: '65.5%', top: '47%',
-        width: '12px', height: '20px',
-        background: 'radial-gradient(ellipse, rgba(255,200,50,0.7) 0%, rgba(255,130,0,0.3) 40%, transparent 70%)',
+        left: '65%', top: '43%',
+        width: '30px', height: '50px',
+        background: 'radial-gradient(ellipse, rgba(255,200,50,0.8) 0%, rgba(255,130,0,0.4) 40%, transparent 70%)',
         borderRadius: '50%',
         animation: 'candleFlicker 0.8s 0.1s ease-in-out infinite',
         mixBlendMode: 'screen',
@@ -143,24 +143,24 @@ function CandleFlame() {
       {/* Iluminación ambiental grande — ilumina el libro y el área circundante */}
       <div style={{
         position: 'absolute',
-        left: '56%', top: '35%',
-        width: '28%', height: '40%',
-        background: 'radial-gradient(ellipse at 55% 55%, rgba(255,180,50,0.35) 0%, rgba(255,130,20,0.15) 35%, rgba(200,100,0,0.05) 60%, transparent 80%)',
+        left: '50%', top: '30%',
+        width: '40%', height: '50%',
+        background: 'radial-gradient(ellipse at 55% 55%, rgba(255,180,50,0.45) 0%, rgba(255,130,20,0.2) 35%, rgba(200,100,0,0.08) 60%, transparent 80%)',
         animation: 'candleGlow 3s ease-in-out infinite',
         mixBlendMode: 'screen',
-        filter: 'blur(8px)',
+        filter: 'blur(12px)',
       }} />
       {/* Pequeñas brasas flotantes */}
       {[0, 1, 2].map(i => (
         <div key={i} style={{
           position: 'absolute',
           left: `${65 + (i - 1) * 2}%`,
-          top: '47%',
-          width: '2px', height: '2px',
+          top: '44%',
+          width: '3px', height: '3px',
           borderRadius: '50%',
-          background: '#ffaa00',
+          background: '#ffcc00',
           animation: `emberFloat ${2 + i * 0.8}s ${i * 1.2}s ease-out infinite`,
-          '--drift': `${(i - 1) * 8}px`,
+          '--drift': `${(i - 1) * 10}px`,
           mixBlendMode: 'screen',
           opacity: 0,
         }} />

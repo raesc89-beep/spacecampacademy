@@ -62,10 +62,10 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 2,
-      // El río Nilo fluye en la parte inferior de la imagen, debajo del poblado iluminado
-      // La vegetación verde y el agua están entre ~73% y ~88% del alto de la imagen
-      WebkitMaskImage: 'linear-gradient(to bottom, transparent 70%, black 75%, black 85%, transparent 90%)',
-      maskImage: 'linear-gradient(to bottom, transparent 70%, black 75%, black 85%, transparent 90%)'
+      // El río Nilo corre en diagonal desde la esquina superior-derecha
+      // hacia la parte inferior-derecha de la imagen (~25-30 grados de ángulo)
+      // Usamos clip-path polygon para seguir la trayectoria diagonal del río
+      clipPath: 'polygon(60% 50%, 75% 55%, 100% 65%, 100% 90%, 85% 85%, 65% 75%, 55% 65%)',
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion" x="0" y="0" width="100%" height="100%">

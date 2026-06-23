@@ -89,20 +89,8 @@ export default function ObjetosInterestelaresHub() {
           rotate: [0, 45, 120, 200, 360],
         }}
         transition={{ repeat: Infinity, duration: 65, ease: "linear" }}
-        style={{ position: 'absolute', top: '15%', left: 0, width: '60px', zIndex: 1, pointerEvents: 'none', 
-                 filter: 'drop-shadow(0 0 8px rgba(180,140,80,0.5))' }}
-      />
-      {/* Cometa brillante — rápido, con cola, parte media */}
-      <motion.img 
-        src="/assets/interestelar/comet_cross.png" 
-        alt="Cometa"
-        animate={{ 
-          x: ['-20vw', '25vw', '55vw', '85vw', '130vw'], 
-          y: ['10vh', '-5vh', '12vh', '-8vh', '5vh'],
-        }}
-        transition={{ repeat: Infinity, duration: 38, ease: "linear" }}
-        style={{ position: 'absolute', top: '40%', left: 0, width: '80px', zIndex: 1, pointerEvents: 'none', 
-                 filter: 'drop-shadow(0 0 15px rgba(100,200,255,0.7))' }}
+        style={{ position: 'absolute', top: '15%', left: 0, width: '100px', zIndex: 1, pointerEvents: 'none', 
+                 filter: 'drop-shadow(0 0 12px rgba(180,140,80,0.6))' }}
       />
       {/* Oumuamua tipo — lento, der→izq, parte inferior */}
       <motion.img 
@@ -114,8 +102,8 @@ export default function ObjetosInterestelaresHub() {
           rotate: [0, -10, -25, -15, 0],
         }}
         transition={{ repeat: Infinity, duration: 72, ease: "linear" }}
-        style={{ position: 'absolute', top: '65%', left: 0, width: '55px', zIndex: 1, pointerEvents: 'none', 
-                 filter: 'drop-shadow(0 0 10px rgba(200,100,50,0.5))', transform: 'scaleX(-1)' }}
+        style={{ position: 'absolute', top: '55%', left: 0, width: '90px', zIndex: 1, pointerEvents: 'none', 
+                 filter: 'drop-shadow(0 0 12px rgba(200,100,50,0.6))', transform: 'scaleX(-1)' }}
       />
 
       <main style={{ 

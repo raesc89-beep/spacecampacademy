@@ -130,24 +130,24 @@ function SwimmingCreatures() {
           width: '220px', height: 'auto',
           filter: 'drop-shadow(0 4px 20px rgba(0,100,150,0.5))',
           opacity: 0.75,
+          transform: 'scaleX(-1)',
         }}
       />
-      {/* Criatura marina GIF animada — trayectoria curva der→izq, profundidad media-alta */}
+      {/* Criatura marina GIF animada — trayectoria curva sinuosa der→izq */}
       <motion.img
         src="/assets/reptiles_marinos/marine_creature.gif"
         alt="Reptil Marino"
         draggable={false}
         animate={{
-          x: ['125vw', '85vw', '55vw', '25vw', '-25vw'],
-          y: ['0vh', '8vh', '-5vh', '6vh', '3vh'],
+          x: ['130vw', '95vw', '60vw', '30vw', '-5vw', '-30vw'],
+          y: ['3vh', '-6vh', '10vh', '-4vh', '7vh', '0vh'],
         }}
-        transition={{ repeat: Infinity, duration: 48, ease: 'linear' }}
+        transition={{ repeat: Infinity, duration: 52, ease: 'linear' }}
         style={{
           position: 'absolute', top: '45%', left: 0,
           width: '280px', height: 'auto',
           filter: 'drop-shadow(0 4px 25px rgba(0,120,180,0.6))',
           opacity: 0.8,
-          transform: 'scaleX(-1)',
         }}
       />
       {/* Ictiosaurio pequeño lejano — trayectoria der→izq, profundo, borroso */}
@@ -165,7 +165,6 @@ function SwimmingCreatures() {
           width: '140px', height: 'auto',
           filter: 'blur(2px) drop-shadow(0 4px 15px rgba(0,80,120,0.4))',
           opacity: 0.35,
-          transform: 'scaleX(-1)',
         }}
       />
     </div>

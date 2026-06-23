@@ -302,222 +302,150 @@ export default function CeciliaPayneHub() {
   const completedCount = CECILIA_MODULES.filter(m => completedModules.includes(m.id)).length;
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      position: 'relative',
-      overflow: 'hidden',
-      background: 'linear-gradient(180deg, #08001A 0%, #0D0025 30%, #0A0020 60%, #05000F 100%)',
-      fontFamily: "'Outfit', 'Inter', sans-serif",
-    }}>
-      {/* Fondo de imagen de portada */}
-      <div style={{
-        position: 'absolute', inset: 0, zIndex: 0,
-        backgroundImage: 'url(/assets/cecilia_payne_cover.png)',
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', backgroundColor: '#08001A', overflow: 'hidden' }}>
+
+      {/* Main canvas */}
+      <main style={{
+        flex: 1, position: 'relative', width: '100vw', height: '100vh',
+        backgroundColor: '#08001A',
+        backgroundImage: "url('/assets/cecilia_payne_cover.png')",
         backgroundSize: 'cover',
-        backgroundPosition: 'center top',
-        opacity: 0.15,
-        filter: 'blur(2px)',
-      }} />
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+      }}>
+        {/* Capas de oscurecimiento */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'radial-gradient(circle at center, rgba(8,0,26,0) 0%, rgba(8,0,26,0.6) 80%, rgba(8,0,26,0.9) 100%)',
+          pointerEvents: 'none', zIndex: 1
+        }} />
 
-      {/* Gradiente de profundidad */}
-      <div style={{
-        position: 'absolute', inset: 0, zIndex: 1,
-        background: 'linear-gradient(to bottom, rgba(8,0,26,0.6) 0%, rgba(8,0,26,0.2) 40%, rgba(8,0,26,0.7) 80%, rgba(5,0,15,0.95) 100%)',
-      }} />
+        {/* Estrellas de fondo */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2560&auto=format&fit=crop) center center / cover',
+          opacity: 0.25,
+          mixBlendMode: 'screen',
+          pointerEvents: 'none', zIndex: 0
+        }} />
 
-      {/* Nebulosa decorativa */}
-      <div style={{
-        position: 'absolute', top: '10%', right: '5%', width: 500, height: 500,
-        background: 'radial-gradient(ellipse, rgba(155,89,182,0.12) 0%, transparent 70%)',
-        borderRadius: '50%', zIndex: 2, filter: 'blur(40px)',
-      }} />
-      <div style={{
-        position: 'absolute', bottom: '15%', left: '5%', width: 400, height: 400,
-        background: 'radial-gradient(ellipse, rgba(0,206,209,0.08) 0%, transparent 70%)',
-        borderRadius: '50%', zIndex: 2, filter: 'blur(40px)',
-      }} />
-      <div style={{
-        position: 'absolute', top: '40%', left: '40%', width: 300, height: 300,
-        background: 'radial-gradient(ellipse, rgba(212,160,23,0.07) 0%, transparent 70%)',
-        borderRadius: '50%', zIndex: 2, filter: 'blur(30px)',
-      }} />
+        {/* Partículas y bandas espectrales */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 2 }}>
+          <SpectralParticles />
+          <SpectralBands />
+        </div>
 
-      {/* Partículas y bandas espectrales */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 3 }}>
-        <SpectralParticles />
-        <SpectralBands />
-      </div>
+        <ConstellationLines />
 
-      {/* Botón volver */}
-      <div style={{ position: 'fixed', top: '1.5rem', left: '1.5rem', zIndex: 100 }}>
-        <Link href="/dashboard">
-          <motion.div
-            whileHover={{ scale: 1.08, x: -4 }}
+        {/* Header UI - Botón Volver y Título */}
+        <div style={{
+          position: 'absolute', top: 0, left: 0, right: 0,
+          display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start',
+          padding: '2rem', zIndex: 100, pointerEvents: 'none'
+        }}>
+          <motion.button
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => router.push('/dashboard/misiones')}
             style={{
+              pointerEvents: 'auto',
+              background: 'rgba(0,0,0,0.6)',
+              border: '1px solid rgba(155,89,182,0.4)',
+              color: 'white',
               display: 'flex', alignItems: 'center', gap: '0.5rem',
-              background: 'rgba(155,89,182,0.15)', backdropFilter: 'blur(10px)',
-              border: '1px solid rgba(155,89,182,0.4)', borderRadius: '30px',
-              padding: '0.5rem 1.2rem', color: '#C39BD3', cursor: 'pointer',
-              fontSize: '0.85rem', fontWeight: 600,
+              padding: '0.75rem 1.5rem',
+              borderRadius: '30px',
+              cursor: 'pointer',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0 4px 15px rgba(0,0,0,0.5)',
+              fontFamily: "'Outfit', sans-serif",
             }}
           >
-            <ChevronLeft size={18} /> Estación
-          </motion.div>
-        </Link>
-      </div>
+            <ChevronLeft size={20} />
+            Regresar al Comando
+          </motion.button>
 
-      {/* Contenido principal */}
-      <div style={{ position: 'relative', zIndex: 10, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-
-        {/* Header */}
-        <div style={{ textAlign: 'center', paddingTop: '6rem', paddingBottom: '2rem', paddingInline: '2rem' }}>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.5rem' }}
           >
-            {/* Ícono de espectroscopía */}
-            <motion.div
-              animate={{ rotate: [0, 10, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 8, ease: 'easeInOut' }}
-              style={{ fontSize: '3.5rem', marginBottom: '1rem', display: 'inline-block', filter: 'drop-shadow(0 0 20px #9B59B6)' }}
-            >
-              🔭
-            </motion.div>
-
-            {/* Título */}
-            <h1 style={{
-              fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-              fontWeight: 900,
-              background: 'linear-gradient(135deg, #C39BD3 0%, #D4A017 40%, #00CED1 80%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              margin: '0 0 0.5rem 0',
-              lineHeight: 1.2,
-              letterSpacing: '-1px',
-              textShadow: 'none',
+            <div style={{
+              background: 'rgba(0,0,0,0.7)',
+              padding: '1rem 2rem',
+              borderRadius: '30px',
+              border: '1px solid rgba(155,89,182,0.3)',
+              boxShadow: '0 0 20px rgba(0,0,0,0.8)',
+              backdropFilter: 'blur(8px)',
+              pointerEvents: 'auto'
             }}>
-              Cecilia Payne-Gaposchkin
-            </h1>
-            <h2 style={{
-              fontSize: 'clamp(0.9rem, 2vw, 1.2rem)',
-              color: '#C39BD3',
-              fontWeight: 400,
-              margin: '0 0 1.5rem 0',
-              opacity: 0.9,
-              letterSpacing: '2px',
-              textTransform: 'uppercase',
-            }}>
-              La Astrónoma que Descubrió de qué Están Hechas las Estrellas
-            </h2>
-
-            {/* Frase célebre */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              style={{
-                display: 'inline-block',
-                background: 'rgba(155,89,182,0.1)',
-                border: '1px solid rgba(155,89,182,0.3)',
-                borderRadius: '16px',
-                padding: '0.8rem 1.8rem',
-                backdropFilter: 'blur(8px)',
-                marginBottom: '2rem',
-              }}
-            >
-              <p style={{ color: '#E8D5F5', fontSize: '0.95rem', fontStyle: 'italic', margin: 0, lineHeight: 1.5 }}>
-                "El mayor reconocimiento que puede recibir una persona es haber hecho su trabajo de tal manera que le importe a otros."
-              </p>
-              <p style={{ color: '#9B59B6', fontSize: '0.8rem', margin: '0.4rem 0 0 0', fontWeight: 600 }}>— Cecilia Payne-Gaposchkin, 1976</p>
-            </motion.div>
-
-            {/* Progreso */}
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
-              <div style={{
-                display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
-                background: 'rgba(155,89,182,0.12)', border: '1px solid rgba(155,89,182,0.3)',
-                borderRadius: '30px', padding: '0.5rem 1.2rem', backdropFilter: 'blur(8px)',
+              <h1 style={{
+                color: 'white',
+                margin: 0,
+                fontSize: '2rem',
+                textShadow: '0 0 10px rgba(155,89,182,0.6), 0 0 20px rgba(155,89,182,0.4)',
+                letterSpacing: '2px',
+                fontFamily: "'Outfit', sans-serif",
+                textTransform: 'uppercase'
               }}>
-                <Sparkles size={18} color="#9B59B6" />
-                <span style={{ color: '#C39BD3', fontSize: '0.9rem', fontWeight: 600 }}>
-                  {completedCount} / {CECILIA_MODULES.length} Misiones
-                </span>
-              </div>
-              {completedCount === CECILIA_MODULES.length && (
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  style={{
-                    display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
-                    background: 'rgba(0,255,136,0.1)', border: '1px solid rgba(0,255,136,0.3)',
-                    borderRadius: '30px', padding: '0.5rem 1.2rem',
-                  }}
-                >
-                  <CheckCircle size={18} color="#00FF88" />
-                  <span style={{ color: '#00FF88', fontSize: '0.9rem', fontWeight: 700 }}>¡Curso Completado!</span>
-                </motion.div>
-              )}
+                CECILIA PAYNE
+              </h1>
+              <p style={{
+                color: '#C39BD3',
+                margin: '0.2rem 0 0 0',
+                fontSize: '0.9rem',
+                textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+                letterSpacing: '1px'
+              }}>
+                La Astrónoma Pionera · 4 Módulos
+              </p>
             </div>
           </motion.div>
         </div>
 
-        {/* Mapa de misiones */}
-        <div style={{ flex: 1, position: 'relative', minHeight: '400px' }}>
-          <ConstellationLines />
+        {/* Nodos de los módulos */}
+        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 10 }}>
           {CECILIA_MODULES.map((mod, idx) => (
-            <CeciliaModuleNode
-              key={mod.id}
-              mod={mod}
-              idx={idx}
-              isCompleted={completedModules.includes(mod.id)}
-            />
+            <div key={mod.id} style={{ pointerEvents: 'auto' }}>
+              <CeciliaModuleNode
+                mod={mod}
+                idx={idx}
+                isCompleted={completedModules.includes(mod.id)}
+              />
+            </div>
           ))}
         </div>
 
-        {/* Footer informativo */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8 }}
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: '1rem',
-            padding: '2rem 2rem 3rem',
-            maxWidth: '900px',
-            margin: '0 auto',
-            width: '100%',
-          }}
-        >
-          {[
-            { icon: '🇬🇧', label: 'Origen', value: 'Wendover, Inglaterra, 1900' },
-            { icon: '⭐', label: 'Descubrimiento', value: 'Las estrellas son 90% hidrógeno' },
-            { icon: '🏛️', label: 'Universidad', value: 'Harvard Observatory' },
-            { icon: '🏆', label: 'Logro histórico', value: '1ª profesora titular en Harvard' },
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ y: -4, boxShadow: '0 8px 30px rgba(155,89,182,0.3)' }}
-              style={{
-                background: 'rgba(155,89,182,0.08)',
-                border: '1px solid rgba(155,89,182,0.2)',
-                borderRadius: '16px',
-                padding: '1.2rem',
-                backdropFilter: 'blur(8px)',
-                textAlign: 'center',
-                transition: 'all 0.3s',
-              }}
-            >
-              <div style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>{item.icon}</div>
-              <div style={{ color: '#9B59B6', fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 700, marginBottom: '0.3rem' }}>{item.label}</div>
-              <div style={{ color: '#E8D5F5', fontSize: '0.85rem', lineHeight: 1.4 }}>{item.value}</div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
+        {/* Bottom CTA - Progress Indicator */}
+        <div style={{
+          position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)',
+          background: 'rgba(0,0,0,0.7)',
+          border: '1px solid rgba(155,89,182,0.3)',
+          padding: '1rem 2.5rem',
+          borderRadius: '40px',
+          backdropFilter: 'blur(10px)',
+          zIndex: 200,
+          boxShadow: '0 0 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(155,89,182,0.1)',
+          display: 'flex', alignItems: 'center', gap: '1.5rem',
+        }}>
+          <div style={{ color: 'white', fontFamily: "'Outfit', sans-serif", fontSize: '1.1rem' }}>
+            Progreso de Exploración:
+          </div>
+          <div style={{
+            background: 'rgba(255,255,255,0.1)',
+            padding: '0.5rem 1.5rem',
+            borderRadius: '20px',
+            color: '#C39BD3',
+            fontWeight: 'bold',
+            fontSize: '1.2rem',
+            textShadow: '0 0 10px rgba(155,89,182,0.5)'
+          }}>
+            {completedCount} / {CECILIA_MODULES.length}
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

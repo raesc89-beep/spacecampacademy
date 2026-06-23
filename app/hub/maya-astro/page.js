@@ -40,7 +40,7 @@ function Stars() {
         <div key={i} style={{
           position: 'absolute',
           left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 50}%`, // Más estrellas en el cielo
+          top: `${Math.random() * 35}%`, // Solo en el cielo, no en la jungla
           width: `${Math.random() * 2 + 1}px`,
           height: `${Math.random() * 2 + 1}px`,
           borderRadius: '50%',
@@ -262,18 +262,20 @@ const globalStyles = `
 
 // ─── Antorchas Lejanas en Pirámides ────────────────────────────────────────
 function JungleTorches() {
-  // Posiciones corregidas para alinearse con las antorchas visibles en las pirámides/templos
+  // Posiciones exactas de las antorchas visibles en la imagen de fondo:
+  // Imagen muestra: ruinas en primer plano (abajo-izq) con columnas y antorchas,
+  // dos templos piramidales al fondo (centro-der) sobresaliendo de la selva
   const torches = [
-    // Cima del templo grande izquierdo (Tikal Templo I)
-    { left: '22%', top: '40%', size: 6, delay: 0.1 },
-    // Base/escalinata del templo izquierdo
-    { left: '24%', top: '56%', size: 4, delay: 0.5 },
-    // Pirámide central baja (Edzná)
-    { left: '38%', top: '68%', size: 5, delay: 0.3 },
-    // Cima del templo grande derecho (Tikal Templo II)
-    { left: '70%', top: '36%', size: 6, delay: 0.7 },
-    // Base/escalinata del templo derecho
-    { left: '68%', top: '52%', size: 4, delay: 0.2 },
+    // Antorcha en columna izquierda de las ruinas (primer plano)
+    { left: '18%', top: '68%', size: 5, delay: 0.1 },
+    // Antorcha en columna derecha de las ruinas (primer plano)
+    { left: '32%', top: '73%', size: 5, delay: 0.5 },
+    // Antorcha central entre las ruinas
+    { left: '40%', top: '76%', size: 4, delay: 0.3 },
+    // Brillo en el templo izquierdo (al fondo, sobre la selva)
+    { left: '55%', top: '57%', size: 6, delay: 0.7 },
+    // Brillo en el templo derecho (al fondo, sobre la selva)
+    { left: '67%', top: '54%', size: 6, delay: 0.2 },
   ];
 
   return (
