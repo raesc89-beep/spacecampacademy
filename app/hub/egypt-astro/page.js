@@ -62,10 +62,12 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 2,
-      // El río Nilo corre en diagonal desde la esquina superior-derecha
-      // hacia la parte inferior-derecha de la imagen (~25-30 grados de ángulo)
-      // Usamos clip-path polygon para seguir la trayectoria diagonal del río
-      clipPath: 'polygon(60% 50%, 75% 55%, 100% 65%, 100% 90%, 85% 85%, 65% 75%, 55% 65%)',
+      // El Nilo corre horizontalmente entre los módulos de la fila media (top ~55%)
+      // y los módulos de abajo (top ~75%). El agua está entre ~62% y ~74%
+      // Usamos referencia de los botones: Ojo Satelital (65%,50%) está arriba del río,
+      // Telescopios (48%,75%) y Nabta Playa (22%,80%) están debajo del río
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3) 63%, black 66%, black 72%, rgba(0,0,0,0.3) 74%, transparent 76%)',
+      maskImage: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3) 63%, black 66%, black 72%, rgba(0,0,0,0.3) 74%, transparent 76%)',
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion" x="0" y="0" width="100%" height="100%">

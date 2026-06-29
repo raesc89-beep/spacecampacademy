@@ -1,55 +1,62 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, CheckCircle, AlertCircle, Radar, Crosshair } from 'lucide-react';
+import { Search, CheckCircle, AlertCircle, Radar, Crosshair, Clock, Timer } from 'lucide-react';
 
 const CHALLENGES = [
   {
-    riddle: "CALLES DE MOSCÚ: Haz clic sobre Laika (perro blanco con manchas en traje rojo), el módulo lunar plateado, y una huella gigante en la nieve.",
+    riddle: "CALLES DE MOSCÚ: Haz clic sobre Laika (el perro callejero), el satélite Sputnik en el techo, y la huella gigante en la nieve.",
     imageUrl: "/assets/animales/laika_challenge_1_1779733797282.png",
     targets: [
-      { id: 'laika', name: 'Laika', x: 50, y: 50, radius: 25, found: false },
-      { id: 'modulo', name: 'Módulo Lunar', x: 20, y: 70, radius: 25, found: false },
-      { id: 'huella', name: 'Huella', x: 80, y: 80, radius: 25, found: false }
+      { id: 'laika', name: 'Laika', x: 72, y: 88, radius: 8, found: false },
+      { id: 'modulo', name: 'Satélite Sputnik', x: 32, y: 26, radius: 8, found: false },
+      { id: 'huella', name: 'Huella en la Nieve', x: 38, y: 78, radius: 8, found: false }
     ]
   },
   {
-    riddle: "ÓRBITA TERRESTRE: Encuentra al perro astronauta flotando, una cápsula espacial cónica, y una huella flotante entre satélites.",
+    riddle: "ÓRBITA TERRESTRE: Encuentra al perro astronauta flotando en el espacio, una cápsula espacial cónica, y la tarjeta con huella de perro.",
     imageUrl: "/assets/animales/laika_challenge_2_1779733816425.png",
     targets: [
-      { id: 'laika', name: 'Perro Astronauta', x: 30, y: 40, radius: 25, found: false },
-      { id: 'modulo', name: 'Cápsula Espacial', x: 70, y: 30, radius: 25, found: false },
-      { id: 'huella', name: 'Huella Flotante', x: 50, y: 80, radius: 25, found: false }
+      { id: 'laika', name: 'Perro Astronauta', x: 22, y: 52, radius: 8, found: false },
+      { id: 'modulo', name: 'Cápsula Espacial', x: 72, y: 68, radius: 8, found: false },
+      { id: 'huella', name: 'Tarjeta con Huella', x: 48, y: 42, radius: 8, found: false }
     ]
   },
   {
-    riddle: "COMANDO SOVIÉTICO: Entre el caos científico, localiza el casco rojo de Laika, un módulo en miniatura y una huella en los planos.",
+    riddle: "COMANDO SOVIÉTICO: Localiza a Laika con su casco espacial, el módulo miniatura en los planos, y la huella de perro en los esquemas.",
     imageUrl: "/assets/animales/laika_challenge_3_1779733835882.png",
     targets: [
-      { id: 'laika', name: 'Casco Rojo', x: 60, y: 60, radius: 25, found: false },
-      { id: 'modulo', name: 'Módulo Miniatura', x: 20, y: 40, radius: 25, found: false },
-      { id: 'huella', name: 'Huella en Planos', x: 80, y: 30, radius: 25, found: false }
+      { id: 'laika', name: 'Laika con Casco', x: 10, y: 45, radius: 8, found: false },
+      { id: 'modulo', name: 'Módulo en los Planos', x: 35, y: 62, radius: 8, found: false },
+      { id: 'huella', name: 'Huella en Esquemas', x: 42, y: 72, radius: 8, found: false }
     ]
   },
   {
-    riddle: "BOSQUE SIBERIANO: Entre los pinos nevados halla un perro con traje espacial, una cápsula estrellada y una huella gigante.",
+    riddle: "BOSQUE SIBERIANO: Entre los pinos nevados halla al astronauta, la cápsula estrellada marcada LUNAR, y la huella gigante en la nieve.",
     imageUrl: "/assets/animales/laika_challenge_4_1779733853895.png",
     targets: [
-      { id: 'laika', name: 'Perro en Traje', x: 45, y: 55, radius: 25, found: false },
-      { id: 'modulo', name: 'Cápsula Estrellada', x: 75, y: 25, radius: 25, found: false },
-      { id: 'huella', name: 'Huella Gigante', x: 20, y: 80, radius: 25, found: false }
+      { id: 'laika', name: 'Astronauta en el Bosque', x: 38, y: 52, radius: 8, found: false },
+      { id: 'modulo', name: 'Cápsula LUNAR', x: 73, y: 72, radius: 8, found: false },
+      { id: 'huella', name: 'Huella Gigante', x: 72, y: 25, radius: 8, found: false }
     ]
   },
   {
-    riddle: "PLAZA ROJA: Durante el desfile épico ubica a Laika astronauta, un módulo sobre un tanque y una huella de perro pintada.",
+    riddle: "PLAZA ROJA: Durante el desfile épico ubica a Laika astronauta con su letrero, el módulo sobre un tanque, y la huella roja pintada.",
     imageUrl: "/assets/animales/laika_challenge_5_1779733871604.png",
     targets: [
-      { id: 'laika', name: 'Laika Astronauta', x: 80, y: 80, radius: 25, found: false },
-      { id: 'modulo', name: 'Módulo en Tanque', x: 50, y: 85, radius: 25, found: false },
-      { id: 'huella', name: 'Huella Pintada', x: 10, y: 90, radius: 25, found: false }
+      { id: 'laika', name: 'Laika Astronauta', x: 18, y: 88, radius: 8, found: false },
+      { id: 'modulo', name: 'Módulo en Tanque', x: 57, y: 62, radius: 8, found: false },
+      { id: 'huella', name: 'Huella Roja', x: 22, y: 93, radius: 8, found: false }
     ]
   }
 ];
+
+// Format seconds to MM:SS
+const formatTime = (totalSeconds) => {
+  const mins = Math.floor(totalSeconds / 60);
+  const secs = totalSeconds % 60;
+  return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+};
 
 export default function LaikaFinder({ onComplete }) {
   const [currentLevel, setCurrentLevel] = useState(0);
@@ -61,13 +68,29 @@ export default function LaikaFinder({ onComplete }) {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0, visible: false });
   const [score, setScore] = useState(0);
   const [hintsUsed, setHintsUsed] = useState(0);
+  const [elapsedTime, setElapsedTime] = useState(0);
+  const [gameStarted, setGameStarted] = useState(false);
+  const [gameFinished, setGameFinished] = useState(false);
   const containerRef = useRef(null);
   const imgRef = useRef(null);
   const msgTimerRef = useRef(null);
+  const timerIntervalRef = useRef(null);
 
   const currentChallenge = challenges[Math.min(currentLevel, challenges.length - 1)];
   const allFound = currentChallenge.targets.every(t => t.found);
   const foundCount = currentChallenge.targets.filter(t => t.found).length;
+
+  // Chronometer — starts when player first clicks, runs until game is complete
+  useEffect(() => {
+    if (gameStarted && !gameFinished) {
+      timerIntervalRef.current = setInterval(() => {
+        setElapsedTime(prev => prev + 1);
+      }, 1000);
+    }
+    return () => {
+      if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
+    };
+  }, [gameStarted, gameFinished]);
 
   const showMsg = (text, type, duration) => {
     if (msgTimerRef.current) clearTimeout(msgTimerRef.current);
@@ -92,8 +115,11 @@ export default function LaikaFinder({ onComplete }) {
           setHintsUsed(0);
           setMessage('');
         } else {
-          showMsg('¡Misión Completada! Encontraste todo.', 'success', -1);
-          if (onComplete) onComplete(Math.round(score + 300));
+          // Game complete — stop chronometer
+          setGameFinished(true);
+          const finalScore = Math.round(score + pts);
+          showMsg(`¡Misión Completada! Tiempo: ${formatTime(elapsedTime)} — ${finalScore} pts`, 'success', -1);
+          if (onComplete) onComplete(finalScore);
         }
       }, 2800);
     }
@@ -107,7 +133,11 @@ export default function LaikaFinder({ onComplete }) {
   };
 
   const processClick = (clientX, clientY) => {
-    if (levelDone || allFound) return;
+    if (levelDone || allFound || gameFinished) return;
+
+    // Start chronometer on first click
+    if (!gameStarted) setGameStarted(true);
+
     const { clickX, clickY } = getClickCoords(clientX, clientY);
     let found = false;
     const newChallenges = JSON.parse(JSON.stringify(challenges));
@@ -140,13 +170,13 @@ export default function LaikaFinder({ onComplete }) {
 
   const handleMouseMove = (e) => {
     if (!imgRef.current) return;
-    const rect = imgRef.current.getBoundingClientRect();
     const containerRect = containerRef.current.getBoundingClientRect();
     setCursorPos({ x: e.clientX - containerRect.left, y: e.clientY - containerRect.top, visible: true });
   };
 
   const activateSonar = () => {
-    if (showHelp || levelDone || allFound) return;
+    if (showHelp || levelDone || allFound || gameFinished) return;
+    if (!gameStarted) setGameStarted(true);
     setHintsUsed(h => h + 1);
     setShowHelp(true);
     showMsg('Escaneando zona de búsqueda...', 'info', 3500);
@@ -161,9 +191,23 @@ export default function LaikaFinder({ onComplete }) {
         <h3 style={{ margin: 0, color: 'var(--gold-star)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
            <Search size={20}/> Misión Laika — Nivel {currentLevel + 1} / {challenges.length}
         </h3>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '0.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
            <span style={{ color: '#FFD700', fontSize: '0.9rem', fontWeight: 'bold' }}>Score: {score}</span>
            <span style={{ color: '#aaa', fontSize: '0.85rem' }}>Pistas: {hintsUsed}</span>
+           {/* Chronometer */}
+           <span style={{
+             display: 'flex', alignItems: 'center', gap: '0.4rem',
+             color: gameFinished ? '#00FF88' : '#00E4FF',
+             fontSize: '1rem', fontWeight: 'bold', fontFamily: 'monospace',
+             background: 'rgba(0,228,255,0.1)',
+             padding: '4px 12px', borderRadius: '8px',
+             border: `1px solid ${gameFinished ? 'rgba(0,255,136,0.4)' : 'rgba(0,228,255,0.3)'}`,
+             textShadow: `0 0 8px ${gameFinished ? '#00FF88' : '#00E4FF'}`,
+             animation: gameStarted && !gameFinished ? 'none' : 'none'
+           }}>
+             <Timer size={14} />
+             {formatTime(elapsedTime)}
+           </span>
         </div>
         <div style={{ marginTop: '1rem', padding: '1rem 1.5rem', background: 'rgba(255, 184, 0, 0.08)', borderRadius: '12px', borderLeft: '4px solid var(--gold-star)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
            <div style={{ flex: 1, textAlign: 'left' }}>
@@ -176,7 +220,7 @@ export default function LaikaFinder({ onComplete }) {
                 ))}
              </div>
            </div>
-           <button onClick={activateSonar} disabled={showHelp || levelDone || allFound} style={{ background: showHelp ? 'rgba(255,184,0,0.4)' : 'rgba(255, 184, 0, 0.15)', border: '1px solid var(--gold-star)', color: 'var(--gold-star)', padding: '0.7rem 1.2rem', borderRadius: '10px', cursor: showHelp ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+           <button onClick={activateSonar} disabled={showHelp || levelDone || allFound || gameFinished} style={{ background: showHelp ? 'rgba(255,184,0,0.4)' : 'rgba(255, 184, 0, 0.15)', border: '1px solid var(--gold-star)', color: 'var(--gold-star)', padding: '0.7rem 1.2rem', borderRadius: '10px', cursor: showHelp ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
              <Radar size={16} /> Pista Sonar
            </button>
         </div>
@@ -190,6 +234,13 @@ export default function LaikaFinder({ onComplete }) {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {!gameStarted && (
+        <div style={{ textAlign: 'center', marginBottom: '0.8rem', color: '#00E4FF', fontSize: '0.9rem', fontWeight: 'bold', padding: '0.5rem', background: 'rgba(0,228,255,0.08)', borderRadius: '8px', border: '1px solid rgba(0,228,255,0.2)' }}>
+          <Clock size={14} style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle' }}/>
+          El cronómetro empezará cuando hagas tu primer clic. ¡El jugador más rápido lidera el ranking!
+        </div>
+      )}
 
       <div style={{ textAlign: 'center', marginBottom: '0.8rem', color: '#888', fontSize: '0.85rem' }}>
         <Crosshair size={14} style={{ display: 'inline', marginRight: '4px', verticalAlign: 'middle' }}/>

@@ -260,39 +260,49 @@ const globalStyles = `
 }
 `;
 
-// ─── Antorchas Lejanas en Pirámides ────────────────────────────────────────
+// ─── Antorchas en Templos y Ruinas ────────────────────────────────────────
 function JungleTorches() {
-  // Posiciones exactas de las antorchas visibles en la imagen de fondo:
-  // Imagen muestra: ruinas en primer plano (abajo-izq) con columnas y antorchas,
-  // dos templos piramidales al fondo (centro-der) sobresaliendo de la selva
+  // Posiciones basadas en los brillos naranjas visibles en la imagen de fondo:
+  // Los templos sobresalen de la selva al fondo, con antorchas iluminadas.
+  // Referencia: Edzná Cenit está en (70%, 32%), Uaxactún en (82%, 60%)
+  // Los templos de fondo están entre esos módulos
   const torches = [
-    // Antorcha en columna izquierda de las ruinas (primer plano)
-    { left: '18%', top: '68%', size: 5, delay: 0.1 },
-    // Antorcha en columna derecha de las ruinas (primer plano)
-    { left: '32%', top: '73%', size: 5, delay: 0.5 },
-    // Antorcha central entre las ruinas
-    { left: '40%', top: '76%', size: 4, delay: 0.3 },
-    // Brillo en el templo izquierdo (al fondo, sobre la selva)
-    { left: '55%', top: '57%', size: 6, delay: 0.7 },
-    // Brillo en el templo derecho (al fondo, sobre la selva)
-    { left: '67%', top: '54%', size: 6, delay: 0.2 },
+    // Antorcha templo izquierdo al fondo (junto a módulo Edzná ~70%, 32%)
+    { left: '53%', top: '41%', size: 8, delay: 0.1 },
+    { left: '56%', top: '43%', size: 6, delay: 0.6 },
+    // Antorcha templo derecho al fondo
+    { left: '69%', top: '38%', size: 8, delay: 0.3 },
+    { left: '72%', top: '40%', size: 6, delay: 0.8 },
+    // Antorchas en ruinas del primer plano (cerca de las columnas)
+    { left: '20%', top: '67%', size: 5, delay: 0.2 },
+    { left: '35%', top: '72%', size: 5, delay: 0.5 },
   ];
 
   return (
-    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1 }}>
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 3 }}>
       {torches.map((t, i) => (
-        <div key={i} style={{
-          position: 'absolute',
-          left: t.left,
-          top: t.top,
-          width: `${t.size}px`,
-          height: `${t.size}px`,
-          background: 'radial-gradient(circle, #fff7a1 0%, #ff7b00 40%, #ff2a00 80%, transparent 100%)',
-          borderRadius: '50%',
-          animation: `fireFlicker ${0.4 + Math.random() * 0.4}s infinite alternate`,
-          animationDelay: `${t.delay}s`,
-          mixBlendMode: 'screen'
-        }} />
+        <div key={i} style={{ position: 'absolute', left: t.left, top: t.top }}>
+          {/* Brillo ambiental */}
+          <div style={{
+            position: 'absolute',
+            width: `${t.size * 6}px`, height: `${t.size * 6}px`,
+            top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+            background: `radial-gradient(circle, rgba(255,150,30,0.4) 0%, rgba(255,100,0,0.1) 40%, transparent 70%)`,
+            borderRadius: '50%',
+            animation: `fireFlicker ${0.5 + Math.random() * 0.5}s infinite alternate`,
+            animationDelay: `${t.delay}s`,
+          }} />
+          {/* Llama central */}
+          <div style={{
+            width: `${t.size}px`, height: `${t.size}px`,
+            background: 'radial-gradient(circle, #fff7a1 0%, #ff7b00 40%, #ff2a00 80%, transparent 100%)',
+            borderRadius: '50%',
+            animation: `fireFlicker ${0.4 + Math.random() * 0.4}s infinite alternate`,
+            animationDelay: `${t.delay}s`,
+            mixBlendMode: 'screen',
+            boxShadow: '0 0 8px rgba(255,120,0,0.8), 0 0 16px rgba(255,80,0,0.4)',
+          }} />
+        </div>
       ))}
     </div>
   );

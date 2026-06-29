@@ -376,11 +376,11 @@ export default function StarWarsHub() {
         <div style={{
           position: 'absolute', inset: 0,
           backgroundImage: "url('/assets/starwars/starwars_deathstar_bg.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
+          backgroundSize: '65%',
+          backgroundPosition: 'center 35%',
           backgroundRepeat: 'no-repeat',
-          WebkitMaskImage: 'radial-gradient(ellipse 85% 90% at 50% 50%, black 65%, transparent 100%)',
-          maskImage: 'radial-gradient(ellipse 85% 90% at 50% 50%, black 65%, transparent 100%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 80% 85% at 50% 40%, black 55%, transparent 95%)',
+          maskImage: 'radial-gradient(ellipse 80% 85% at 50% 40%, black 55%, transparent 95%)',
           zIndex: 0,
         }} />
         {/* Dark overlay gradient */}

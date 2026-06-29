@@ -103,7 +103,7 @@ export default function CourseModule() {
         };
 
         // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, arqueoastronomia_maya, ciencia_star_wars o ciencia_volver_al_futuro, usar los datos estáticos puros.
-        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('robots_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('davinci_')) {
+        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('robots_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('davinci_') || params.moduleId.startsWith('cecilia_') || params.moduleId.startsWith('sagan_') || params.moduleId.startsWith('curie_') || params.moduleId.startsWith('astro_train_') || params.moduleId.startsWith('einstein_') || params.moduleId.startsWith('griegos_') || params.moduleId.startsWith('arrival_')) {
           const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
           if (staticMod) {
              setModuleData(enforce15x15Rule(staticMod));
@@ -179,7 +179,7 @@ export default function CourseModule() {
     exoplanetas: { path: '/hub/exoplanetas', name: 'Exoplanetas' },
     faraday: { path: '/hub/faraday', name: 'Faraday' },
     galileo: { path: '/hub/galileo', name: 'Galileo' },
-    interestelar: { path: '/hub/interstellar', name: 'Interstellar' },
+    interestelar: { path: '/hub/objetos-interestelares', name: 'Objetos Interestelares' },
     interstellar: { path: '/hub/interstellar', name: 'Interstellar' },
     maya: { path: '/hub/maya-astro', name: 'Arqueoastronomía Maya' },
     arqueoastronomia_maya: { path: '/hub/maya-astro', name: 'Arqueoastronomía Maya' },
@@ -211,6 +211,12 @@ export default function CourseModule() {
     marinos: { path: '/hub/reptiles-marinos', name: 'Reptiles Marinos' },
     dinos: { path: '/hub/dinosaurios', name: 'Los Dinosaurios' },
     tesla: { path: '/hub/tesla', name: 'Nikola Tesla' },
+    sagan: { path: '/hub/carl-sagan', name: 'Carl Sagan' },
+    curie: { path: '/hub/marie-curie', name: 'Marie Curie' },
+    astro_train: { path: '/hub/astronauts-training', name: 'Entrenamiento Astronauta' },
+    einstein: { path: '/hub/albert-einstein', name: 'Albert Einstein' },
+    griegos: { path: '/hub/griegos-ciencia', name: 'Los Griegos en la Ciencia' },
+    arrival: { path: '/hub/arrival-ciencia', name: 'La Ciencia de Arrival' },
   };
 
   function getHubInfo(moduleId) {

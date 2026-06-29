@@ -293,6 +293,66 @@ const DASHBOARD_MISSIONS = [
     badgeColor: "#7B68EE",
     badgeText: "Revolución Científica",
     borderColor: "rgba(123, 104, 238, 0.4)"
+  },
+  {
+    id: "carl_sagan",
+    title: "Carl Sagan: Su Visión del Cosmos",
+    subtitle: "El astrónomo que nos enseñó a soñar con las estrellas. Voyager, Cosmos, el Pálido Punto Azul y SETI.",
+    link: "/hub/carl-sagan",
+    bgSrc: "/assets/carl_sagan/sagan_cover.png",
+    badgeColor: "#1E90FF",
+    badgeText: "Exploración Galáctica",
+    borderColor: "rgba(30, 144, 255, 0.4)"
+  },
+  {
+    id: "marie_curie",
+    title: "Marie Curie: Pionera de la Radiactividad",
+    subtitle: "De Varsovia a dos Premios Nobel. La científica que descubrió el Polonio y el Radio y cambió la medicina para siempre.",
+    link: "/hub/marie-curie",
+    bgSrc: "/assets/marie_curie/curie_cover.png",
+    badgeColor: "#00FF88",
+    badgeText: "Revolución Científica",
+    borderColor: "rgba(0, 255, 136, 0.4)"
+  },
+  {
+    id: "astronauts_training",
+    title: "¿Cómo Entrenan los Astronautas?",
+    subtitle: "Piscinas gigantes, centrífugas, supervivencia extrema y simuladores. Los pasos para llegar al espacio.",
+    link: "/hub/astronauts-training",
+    bgSrc: "/assets/astronaut_training/astro_train_cover.png",
+    badgeColor: "#FF6B35",
+    badgeText: "Exploración Galáctica",
+    borderColor: "rgba(255, 107, 53, 0.4)"
+  },
+  {
+    id: "albert_einstein",
+    title: "Albert Einstein: El Genio del Siglo XX",
+    subtitle: "E=mc², la Relatividad General, el eclipse de 1919 y su legado pacifista. La mente que reescribió la física.",
+    link: "/hub/albert-einstein",
+    bgSrc: "/assets/albert_einstein/einstein_cover.png",
+    badgeColor: "#FF4500",
+    badgeText: "Física y Astrofísica",
+    borderColor: "rgba(255, 69, 0, 0.4)"
+  },
+  {
+    id: "griegos_ciencia",
+    title: "Los Griegos: Padres de la Ciencia",
+    subtitle: "De Tales a Hipatia. Los genios de la antigüedad que inventaron la ciencia, las matemáticas y la filosofía natural.",
+    link: "/hub/griegos-ciencia",
+    bgSrc: "/assets/griegos_ciencia/griegos_cover.png",
+    badgeColor: "#D4A017",
+    badgeText: "Revolución Científica",
+    borderColor: "rgba(212, 160, 23, 0.4)"
+  },
+  {
+    id: "arrival_ciencia",
+    title: "La Ciencia de Arrival",
+    subtitle: "Lingüística, xenolingüística, tiempo no lineal y SETI. La ciencia real detrás de la película de Denis Villeneuve.",
+    link: "/hub/arrival-ciencia",
+    bgSrc: "/assets/arrival_ciencia/arrival_cover.png",
+    badgeColor: "#708090",
+    badgeText: "Ciencia en el Cine",
+    borderColor: "rgba(112, 128, 144, 0.4)"
   }
 ];
 

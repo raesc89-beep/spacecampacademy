@@ -328,7 +328,7 @@ export default function XenoPaleontologia({ onComplete }) {
         ctx.translate(-FOSSIL_CX, -FOSSIL_CY);
         const currentImage = loadedImagesRef.current[currentFossil.name];
         if (currentImage) {
-          ctx.globalCompositeOperation = 'lighter';
+          ctx.globalCompositeOperation = 'source-over';
           ctx.shadowColor = currentFossil.glow;
           ctx.shadowBlur = 40;
           const iw = 180, ih = 180;
@@ -859,7 +859,7 @@ export default function XenoPaleontologia({ onComplete }) {
                       vctx.translate(-30, -30);
                       const currentImage = loadedImagesRef.current[currentFossil.name];
                       if (currentImage) {
-                        vctx.globalCompositeOperation = 'lighter';
+                        vctx.globalCompositeOperation = 'source-over';
                         vctx.shadowColor = currentFossil.glow;
                         vctx.shadowBlur = 30;
                         const iw = 150, ih = 150;

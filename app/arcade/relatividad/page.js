@@ -13,26 +13,26 @@ const OBSTACLES = [
   '/assets/arcade/obstacle_alien_1779748408664.png'
 ];
 
-const GAME_DURATION = 60; // seconds to survive
+// Game has no fixed duration — survive as long as possible
 
 export default function RelativisticDebrisDodger() {
   const canvasRef = useRef(null);
   const engineRef = useRef(null);
-  const [gameState, setGameState] = useState('menu'); // menu, playing, won, lost
+  const [gameState, setGameState] = useState('menu'); // menu, playing, lost
   const [velocityC, setVelocityC] = useState(0.3);   // Fixed relativistic velocity display (0–0.99c)
   const [lorentz, setLorentz] = useState(1.048);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [health, setHealth] = useState(3);            // 3 hits = dead
-  const [timeLeft, setTimeLeft] = useState(GAME_DURATION);
+  const [elapsedTime, setElapsedTime] = useState(0);
 
   // Refs to prevent stale closures in the high-frequency game loop
   const healthRef = useRef(3);
   const gameStateRef = useRef('menu');
-  const timeLeftRef = useRef(GAME_DURATION);
+  const elapsedTimeRef = useRef(0);
 
   useEffect(() => { healthRef.current = health; }, [health]);
   useEffect(() => { gameStateRef.current = gameState; }, [gameState]);
-  useEffect(() => { timeLeftRef.current = timeLeft; }, [timeLeft]);
+  useEffect(() => { elapsedTimeRef.current = elapsedTime; }, [elapsedTime]);
 
   // Image cache
   const imgCache = useRef({});
@@ -62,9 +62,13 @@ export default function RelativisticDebrisDodger() {
               data[i + 3] = 0;
             }
           } else {
-            // For space obstacles, make solid black or extremely dark pixels transparent
-            if (r < 25 && g < 25 && b < 25) {
+            // For space obstacles, remove white/light backgrounds AND very dark pixels
+            if ((r > 235 && g > 235 && b > 235) ||
+                (r > 200 && g > 200 && b > 200 && Math.abs(r-g) < 15 && Math.abs(g-b) < 15)) {
               data[i + 3] = 0;
+            } else if (r > 180 && g > 180 && b > 180 && Math.abs(r-g) < 20 && Math.abs(g-b) < 20) {
+              // Soft edge for light gray transition
+              data[i + 3] = Math.min(data[i + 3], Math.round(255 * (1 - (Math.min(r,g,b) - 180) / 55)));
             }
           }
         }
@@ -98,7 +102,7 @@ export default function RelativisticDebrisDodger() {
 
   // Save telemetry when game ends
   useEffect(() => {
-    if (gameState === 'won' || gameState === 'lost') {
+    if (gameState === 'lost') {
       fetch('/api/telemetry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -107,7 +111,7 @@ export default function RelativisticDebrisDodger() {
           data: {
             status: gameState,
             velocity_c: velocityC,
-            time_survived: GAME_DURATION - timeLeft,
+            time_survived: elapsedTime,
             hits_taken: 3 - health
           }
         })
@@ -115,28 +119,18 @@ export default function RelativisticDebrisDodger() {
     }
   }, [gameState]);
 
-  // Countdown timer while playing
+  // Stopwatch timer while playing (counts UP)
   useEffect(() => {
     if (gameState !== 'playing') return;
-
-    // Reset timer on new game
-    setTimeLeft(GAME_DURATION);
-    timeLeftRef.current = GAME_DURATION;
-
+    setElapsedTime(0);
+    elapsedTimeRef.current = 0;
     const interval = setInterval(() => {
-      setTimeLeft(prev => {
-        const next = prev - 1;
-        timeLeftRef.current = next;
-        if (next <= 0) {
-          // Win!
-          setGameState('won');
-          if (engineRef.current) engineRef.current.stop();
-          return 0;
-        }
+      setElapsedTime(prev => {
+        const next = prev + 1;
+        elapsedTimeRef.current = next;
         return next;
       });
     }, 1000);
-
     return () => clearInterval(interval);
   }, [gameState]);
 
@@ -369,9 +363,9 @@ export default function RelativisticDebrisDodger() {
         if (gameStateRef.current === 'playing') {
           gameTime += dt * 0.016; // dt is in frames (~60fps), convert to seconds
 
-          // Spawn interval shrinks from 2 s → 0.4 s over 60 s
-          const progress = Math.min(gameTime / GAME_DURATION, 1);
-          const spawnInterval = 2.0 - progress * 1.6; // 2.0 → 0.4
+          // Spawn interval shrinks from 2 s → 0.3 s over 120 s
+          const progress = Math.min(gameTime / 120, 1);
+          const spawnInterval = Math.max(0.3, 2.0 - progress * 1.7);
 
           if (gameTime - lastSpawnTime > spawnInterval) {
             lastSpawnTime = gameTime;
@@ -617,7 +611,7 @@ export default function RelativisticDebrisDodger() {
               </h2>
               <p style={{ maxWidth: '520px', color: '#aaa', lineHeight: 1.7, marginBottom: '2rem', fontSize: '0.95rem' }}>
                 Guía tu nave entre los campos de debris espaciales a velocidades relativistas.{' '}
-                <strong style={{ color: '#00FF66' }}>Sobrevive 60 segundos.</strong>
+                <strong style={{ color: '#00FF66' }}>Sobrevive el mayor tiempo posible. Tu cronómetro marcará tu record.</strong>
                 <br /><br />
                 <strong>Controles:</strong><br />
                 ← / → o <strong>A / D</strong> — mover izquierda / derecha<br />
@@ -652,18 +646,19 @@ export default function RelativisticDebrisDodger() {
                 <div style={{ fontSize: '0.78rem', opacity: 0.8 }}>γ = {lorentz.toFixed(3)}</div>
               </div>
 
-              {/* Top Center: countdown */}
+              {/* Top Center: stopwatch */}
               <div style={{
                 position: 'absolute', top: 16, left: '50%', transform: 'translateX(-50%)',
                 zIndex: 5, pointerEvents: 'none',
-                fontFamily: 'monospace', color: timeLeft <= 10 ? '#FF4466' : '#00FF99',
-                textShadow: `0 0 12px ${timeLeft <= 10 ? '#FF4466' : '#00FF99'}`,
+                fontFamily: 'monospace', color: '#00FF99',
+                textShadow: '0 0 12px #00FF99',
                 background: 'rgba(0,0,0,0.65)', padding: '8px 18px', borderRadius: '8px',
-                border: `1px solid ${timeLeft <= 10 ? 'rgba(255,68,102,0.45)' : 'rgba(0,255,153,0.35)'}`,
+                border: '1px solid rgba(0,255,153,0.35)',
                 fontSize: '1.4rem', fontWeight: 'bold', letterSpacing: '0.06em',
-                transition: 'color 0.3s, text-shadow 0.3s'
+                display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px'
               }}>
-                {String(timeLeft).padStart(2, '0')}s
+                <span style={{ fontSize: '0.6rem', opacity: 0.8, letterSpacing: '0.12em' }}>CRONÓMETRO</span>
+                {String(Math.floor(elapsedTime / 60)).padStart(2, '0')}:{String(elapsedTime % 60).padStart(2, '0')}
               </div>
 
               {/* Top Right: hull integrity hearts */}
@@ -682,25 +677,6 @@ export default function RelativisticDebrisDodger() {
             </>
           )}
 
-          {/* ── WON SCREEN ── */}
-          {gameState === 'won' && (
-            <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,255,136,0.15)', backdropFilter: 'blur(10px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', zIndex: 10 }}>
-              <FastForward size={64} color="#00FF88" style={{ marginBottom: '1rem', filter: 'drop-shadow(0 0 20px #00FF88)' }} />
-              <h2 style={{ color: 'white', fontSize: '2.2rem', marginBottom: '1rem', textShadow: '0 0 20px #00FF88', fontFamily: 'monospace' }}>
-                ¡ZONA SEGURA ALCANZADA!
-              </h2>
-              <p style={{ color: '#ccc', marginBottom: '2rem', maxWidth: '480px', lineHeight: 1.6 }}>
-                Sobreviviste 60 segundos a través del campo de debris relativista. Tu comprensión de la contracción de Lorentz ha mantenido la nave intacta.
-              </p>
-              <button
-                className="btn-primary"
-                onClick={() => window.location.reload()}
-                style={{ background: '#00FF88', color: 'black', fontWeight: 'bold', padding: '0.75rem 2rem', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '1rem', fontFamily: 'monospace' }}
-              >
-                Sincronizar Logro Estudiantil
-              </button>
-            </div>
-          )}
 
           {/* ── LOST SCREEN ── */}
           {gameState === 'lost' && (
@@ -709,8 +685,11 @@ export default function RelativisticDebrisDodger() {
               <h2 style={{ color: 'white', fontSize: '2.1rem', marginBottom: '1rem', textShadow: '0 0 20px #FF2A2A', fontFamily: 'monospace' }}>
                 CASCO DESTRUIDO
               </h2>
-              <p style={{ color: '#ccc', marginBottom: '2rem', maxWidth: '480px', lineHeight: 1.6 }}>
-                El campo de debris superó la integridad estructural de la nave. El tiempo relativista no perdona errores de maniobra.
+              <p style={{ color: '#ccc', marginBottom: '0.5rem', maxWidth: '480px', lineHeight: 1.6 }}>
+                El campo de debris superó la integridad estructural de la nave.
+              </p>
+              <p style={{ color: '#00FF99', marginBottom: '2rem', fontFamily: 'monospace', fontSize: '1.3rem', fontWeight: 'bold', textShadow: '0 0 10px #00FF99' }}>
+                Tu record de supervivencia: {String(Math.floor(elapsedTime / 60)).padStart(2, '0')}:{String(elapsedTime % 60).padStart(2, '0')}
               </p>
               <button
                 className="btn-primary"

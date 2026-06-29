@@ -122,40 +122,40 @@ function CandleFlame() {
       {/* Llama principal — visible y grande */}
       <div style={{
         position: 'absolute',
-        left: '66%', top: '45%',
-        width: '20px', height: '40px',
+        left: '10.5%', top: '28%',
+        width: '24px', height: '48px',
         background: 'radial-gradient(ellipse at 50% 80%, #fff9c4 0%, #ffcc02 25%, #ff8800 55%, #ff4400 80%, transparent 100%)',
         borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
         animation: 'candleFlicker 0.6s ease-in-out infinite',
-        filter: 'blur(1px)',
+        filter: 'blur(1.5px)',
         mixBlendMode: 'screen',
       }} />
       {/* Brillo cálido interior */}
       <div style={{
         position: 'absolute',
-        left: '65%', top: '43%',
-        width: '30px', height: '50px',
-        background: 'radial-gradient(ellipse, rgba(255,200,50,0.8) 0%, rgba(255,130,0,0.4) 40%, transparent 70%)',
+        left: '9.5%', top: '26%',
+        width: '36px', height: '58px',
+        background: 'radial-gradient(ellipse, rgba(255,200,50,0.9) 0%, rgba(255,130,0,0.5) 40%, transparent 70%)',
         borderRadius: '50%',
         animation: 'candleFlicker 0.8s 0.1s ease-in-out infinite',
         mixBlendMode: 'screen',
       }} />
-      {/* Iluminación ambiental grande — ilumina el libro y el área circundante */}
+      {/* Iluminación ambiental grande — ilumina el área circundante del candelabro */}
       <div style={{
         position: 'absolute',
-        left: '50%', top: '30%',
-        width: '40%', height: '50%',
-        background: 'radial-gradient(ellipse at 55% 55%, rgba(255,180,50,0.45) 0%, rgba(255,130,20,0.2) 35%, rgba(200,100,0,0.08) 60%, transparent 80%)',
+        left: '2%', top: '15%',
+        width: '25%', height: '45%',
+        background: 'radial-gradient(ellipse at 50% 55%, rgba(255,180,50,0.5) 0%, rgba(255,130,20,0.25) 30%, rgba(200,100,0,0.1) 55%, transparent 80%)',
         animation: 'candleGlow 3s ease-in-out infinite',
         mixBlendMode: 'screen',
-        filter: 'blur(12px)',
+        filter: 'blur(15px)',
       }} />
       {/* Pequeñas brasas flotantes */}
       {[0, 1, 2].map(i => (
         <div key={i} style={{
           position: 'absolute',
-          left: `${65 + (i - 1) * 2}%`,
-          top: '44%',
+          left: `${10 + (i - 1) * 1.5}%`,
+          top: '27%',
           width: '3px', height: '3px',
           borderRadius: '50%',
           background: '#ffcc00',

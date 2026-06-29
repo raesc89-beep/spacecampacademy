@@ -79,20 +79,33 @@ export default function ObjetosInterestelaresHub() {
         </p>
       </div>
       
-      {/* Asteroide cruzando el espacio — lento, parte superior */}
+      {/* Asteroide 1 cruzando el espacio — izq→der, parte superior, con rotación */}
       <motion.img 
         src="/assets/interestelar/asteroid_cross.png" 
         alt="Asteroide"
         animate={{ 
           x: ['-15vw', '30vw', '60vw', '90vw', '125vw'], 
           y: ['0vh', '5vh', '-3vh', '8vh', '2vh'],
-          rotate: [0, 45, 120, 200, 360],
+          rotate: [0, 90, 180, 270, 360],
         }}
-        transition={{ repeat: Infinity, duration: 65, ease: "linear" }}
-        style={{ position: 'absolute', top: '15%', left: 0, width: '100px', zIndex: 1, pointerEvents: 'none', 
+        transition={{ repeat: Infinity, duration: 55, ease: "linear" }}
+        style={{ position: 'absolute', top: '15%', left: 0, width: '110px', zIndex: 1, pointerEvents: 'none', 
                  filter: 'drop-shadow(0 0 12px rgba(180,140,80,0.6))' }}
       />
-      {/* Oumuamua tipo — lento, der→izq, parte inferior */}
+      {/* Asteroide 2 — der→izq, parte media-alta, rotación inversa */}
+      <motion.img 
+        src="/assets/interestelar/asteroid_cross.png" 
+        alt="Asteroide 2"
+        animate={{ 
+          x: ['130vw', '90vw', '50vw', '15vw', '-20vw'], 
+          y: ['3vh', '-6vh', '4vh', '-2vh', '5vh'],
+          rotate: [360, 260, 170, 80, 0],
+        }}
+        transition={{ repeat: Infinity, duration: 70, ease: "linear" }}
+        style={{ position: 'absolute', top: '35%', left: 0, width: '75px', zIndex: 1, pointerEvents: 'none', 
+                 filter: 'drop-shadow(0 0 10px rgba(180,140,80,0.5))', opacity: 0.7 }}
+      />
+      {/* Oumuamua — lento, der→izq, parte inferior, más grande */}
       <motion.img 
         src="/assets/interestelar/oumuamua_cross.png" 
         alt="Objeto Interestelar tipo Oumuamua"
@@ -102,8 +115,8 @@ export default function ObjetosInterestelaresHub() {
           rotate: [0, -10, -25, -15, 0],
         }}
         transition={{ repeat: Infinity, duration: 72, ease: "linear" }}
-        style={{ position: 'absolute', top: '55%', left: 0, width: '90px', zIndex: 1, pointerEvents: 'none', 
-                 filter: 'drop-shadow(0 0 12px rgba(200,100,50,0.6))', transform: 'scaleX(-1)' }}
+        style={{ position: 'absolute', top: '55%', left: 0, width: '130px', zIndex: 1, pointerEvents: 'none', 
+                 filter: 'drop-shadow(0 0 15px rgba(200,100,50,0.7))', transform: 'scaleX(-1)' }}
       />
 
       <main style={{ 
@@ -127,7 +140,7 @@ export default function ObjetosInterestelaresHub() {
         {/* Galaxia Giratoria en el Centro */}
         <div style={{
             position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            width: '44vw', height: '44vw', maxWidth: '640px', maxHeight: '640px',
+            width: '32vw', height: '32vw', maxWidth: '480px', maxHeight: '480px',
             pointerEvents: 'none', zIndex: 1,
             // Mask para ocultar las esquinas cuadradas del PNG
             WebkitMaskImage: 'radial-gradient(circle at center, black 45%, transparent 68%)',
