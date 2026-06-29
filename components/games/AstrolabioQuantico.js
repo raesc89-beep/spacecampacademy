@@ -13,20 +13,35 @@ const STARS = [
   { id: 5, label: 'ζ', color: '#cc66ff', glow: '#9900ff', dark: '#330050', neon: '#dd99ff' },
 ];
 
-const WIN_ROUNDS        = 5;    // must complete the full max sequence this many times to win
-const MAX_SEQ_LEN       = 12;   // maximum sequence length
-const GAME_TIME         = 60;   // seconds
 const PAUSE_MS          = 250;  // gap between flashes
-const DISPLAY_MS_START  = 650;  // initial flash duration
-const DISPLAY_MS_MIN    = 180;  // minimum flash duration
+const FLASH_MS_START    = 600;  // initial flash duration
+const FLASH_MS_DECREMENT = 30; // decrease per round
+const FLASH_MS_MIN      = 150;  // minimum flash duration
 
-// Sequence length for a given completed-round count
-// round 0 (first sequence) = 6 stars; round >=3 grows by 1 per round beyond base
-function seqLenForRound(completedRounds) {
-  // Before any round is completed, start at 6
-  const base = 6;
-  const extra = completedRounds >= 3 ? completedRounds - 2 : 0;
-  return Math.min(base + extra, MAX_SEQ_LEN);
+// Pattern length for a given round number (1-indexed)
+function patternLenForRound(round) {
+  if (round <= 3)  return 3;
+  if (round <= 6)  return 4;
+  if (round <= 9)  return 5;
+  if (round <= 12) return 6;
+  return 7 + (round - 13); // 13→7, 14→8, 15→9 …
+}
+
+// Flash duration for a given round number (1-indexed)
+function flashMsForRound(round) {
+  return Math.max(FLASH_MS_START - (round - 1) * FLASH_MS_DECREMENT, FLASH_MS_MIN);
+}
+
+// Format seconds → MM:SS
+function formatTime(totalSeconds) {
+  const m = Math.floor(totalSeconds / 60);
+  const s = totalSeconds % 60;
+  return `${m}:${s.toString().padStart(2, '0')}`;
+}
+
+// Generate a random sequence of given length
+function generateSequence(len) {
+  return Array.from({ length: len }, () => Math.floor(Math.random() * 6));
 }
 
 // ─── Hexagon path (flat-top, 60×60) ─────────────────────────────────────────
@@ -110,32 +125,39 @@ function StarButton({ star, isLit, isActive, onClick, shake }) {
 
 // ─── Main component ──────────────────────────────────────────────────────────
 export default function AstrolabioQuantico({ onComplete }) {
-  // game phase: 'idle' | 'playing' | 'input' | 'wrong' | 'won' | 'lost'
+  // game phase: 'idle' | 'playing' | 'input' | 'lost'
   const [phase,          setPhase]          = useState('idle');
   const [sequence,       setSequence]       = useState([]);   // the current sequence to memorize
   const [inputSeq,       setInputSeq]       = useState([]);   // player's inputs this round
   const [litStar,        setLitStar]        = useState(null); // which star is currently highlighted
-  const [score,          setScore]          = useState(0);    // max sequence length reached
-  const [timeLeft,       setTimeLeft]       = useState(GAME_TIME);
-  const [winStreak,      setWinStreak]      = useState(0);    // how many full-sequence completions
+  const [completedRounds, setCompletedRounds] = useState(0);  // rounds successfully completed
+  const [currentRound,   setCurrentRound]   = useState(1);    // current round number (1-indexed)
+  const [elapsedTime,    setElapsedTime]    = useState(0);    // stopwatch in seconds
+  const [score,          setScore]          = useState(0);    // running score
   const [shakeStar,      setShakeStar]      = useState(null);
   const [statusMsg,      setStatusMsg]      = useState('');
-  const [displayMs,      setDisplayMs]      = useState(DISPLAY_MS_START); // flash duration, decreases each round
+  const [flashMs,        setFlashMs]        = useState(FLASH_MS_START);
 
-  const timerRef    = useRef(null);
-  const playbackRef = useRef(null);
-  // Keep a ref so playSequence can always read the latest displayMs without stale closure
-  const displayMsRef = useRef(DISPLAY_MS_START);
+  const stopwatchRef = useRef(null);
+  const playbackRef  = useRef(null);
+  const flashMsRef   = useRef(FLASH_MS_START);
+  const elapsedRef   = useRef(0);
+  const completedRef = useRef(0);
 
-  // Keep displayMsRef in sync
-  useEffect(() => {
-    displayMsRef.current = displayMs;
-  }, [displayMs]);
+  // Keep refs in sync
+  useEffect(() => { flashMsRef.current = flashMs; }, [flashMs]);
+  useEffect(() => { elapsedRef.current = elapsedTime; }, [elapsedTime]);
+  useEffect(() => { completedRef.current = completedRounds; }, [completedRounds]);
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const clearTimers = useCallback(() => {
-    clearInterval(timerRef.current);
+    clearInterval(stopwatchRef.current);
     clearTimeout(playbackRef.current);
+  }, []);
+
+  // Calculate score from rounds and elapsed time
+  const calcScore = useCallback((rounds, seconds) => {
+    return (rounds * 100) + (seconds * 2);
   }, []);
 
   // Build and play back a sequence
@@ -149,12 +171,12 @@ export default function AstrolabioQuantico({ onComplete }) {
       if (i < seq.length) {
         const starId = seq[i];
         setLitStar(starId);
-        const flashDuration = displayMsRef.current;
+        const duration = flashMsRef.current;
         playbackRef.current = setTimeout(() => {
           setLitStar(null);
           i++;
           playbackRef.current = setTimeout(step, PAUSE_MS);
-        }, flashDuration);
+        }, duration);
       } else {
         // done playing — let player input
         setPhase('input');
@@ -167,38 +189,36 @@ export default function AstrolabioQuantico({ onComplete }) {
   // Start a brand-new game
   const startGame = useCallback(() => {
     clearTimers();
-    // Reset displayMs to start value
-    setDisplayMs(DISPLAY_MS_START);
-    displayMsRef.current = DISPLAY_MS_START;
 
-    const firstSeq = Array.from({ length: 6 }, () => Math.floor(Math.random() * 6));
+    // Reset everything
+    const round = 1;
+    const len = patternLenForRound(round);
+    const speed = flashMsForRound(round);
+    const firstSeq = generateSequence(len);
+
+    setFlashMs(speed);
+    flashMsRef.current = speed;
     setSequence(firstSeq);
+    setCompletedRounds(0);
+    completedRef.current = 0;
+    setCurrentRound(round);
+    setElapsedTime(0);
+    elapsedRef.current = 0;
     setScore(0);
-    setWinStreak(0);
-    setTimeLeft(GAME_TIME);
 
-    // countdown timer
-    timerRef.current = setInterval(() => {
-      setTimeLeft(t => {
-        if (t <= 1) {
-          clearInterval(timerRef.current);
-          setPhase('lost');
-          return 0;
-        }
-        return t - 1;
+    // Start stopwatch (counts UP)
+    stopwatchRef.current = setInterval(() => {
+      setElapsedTime(t => {
+        const newT = t + 1;
+        elapsedRef.current = newT;
+        // Update score in real-time
+        setScore(calcScore(completedRef.current, newT));
+        return newT;
       });
     }, 1000);
 
     playSequence(firstSeq);
-  }, [clearTimers, playSequence]);
-
-  // Extend sequence by one random star
-  const nextRound = useCallback((currentSeq) => {
-    const nextSeq = [...currentSeq, Math.floor(Math.random() * 6)];
-    setSequence(nextSeq);
-    setScore(s => Math.max(s, nextSeq.length));
-    setTimeout(() => playSequence(nextSeq), 700);
-  }, [playSequence]);
+  }, [clearTimers, playSequence, calcScore]);
 
   // Handle player clicking a star
   const handleStarClick = useCallback((starId) => {
@@ -208,66 +228,55 @@ export default function AstrolabioQuantico({ onComplete }) {
     const pos      = newInput.length - 1;
 
     if (newInput[pos] !== sequence[pos]) {
-      // Wrong!
+      // WRONG — game over!
+      clearTimers();
       setShakeStar(starId);
-      setStatusMsg('⚠ Error de Sistema — reiniciando secuencia…');
-      setPhase('wrong');
-      setTimeout(() => {
-        setShakeStar(null);
-        // Replay same sequence
-        playSequence(sequence);
-      }, 1200);
+      setPhase('lost');
+      // Final score uses current completedRounds and elapsed time
+      const finalScore = calcScore(completedRef.current, elapsedRef.current);
+      setScore(finalScore);
+      setStatusMsg('⚠ Error — Fin de la Misión');
+      setTimeout(() => setShakeStar(null), 800);
       return;
     }
 
     setInputSeq(newInput);
 
     if (newInput.length === sequence.length) {
-      // Completed this sequence — check if it's the target length for this round
-      const newStreak = winStreak + 1;
-      const targetLen = seqLenForRound(newStreak); // length target for next round
+      // Completed this round!
+      const newCompleted = completedRounds + 1;
+      setCompletedRounds(newCompleted);
+      completedRef.current = newCompleted;
 
-      // Decrement displayMs by 40ms, clamped to DISPLAY_MS_MIN
-      const newDisplayMs = Math.max(displayMsRef.current - 40, DISPLAY_MS_MIN);
-      setDisplayMs(newDisplayMs);
-      displayMsRef.current = newDisplayMs;
+      // Update score immediately
+      setScore(calcScore(newCompleted, elapsedRef.current));
 
-      if (newStreak >= WIN_ROUNDS) {
-        // WIN!
-        setWinStreak(newStreak);
-        clearTimers();
-        setPhase('won');
-        setStatusMsg('¡Sistema Online! ¡Misión Completa!');
-        return;
-      }
+      // Prepare next round
+      const nextRound = currentRound + 1;
+      const nextLen = patternLenForRound(nextRound);
+      const nextSpeed = flashMsForRound(nextRound);
 
-      setWinStreak(newStreak);
+      setCurrentRound(nextRound);
+      setFlashMs(nextSpeed);
+      flashMsRef.current = nextSpeed;
 
-      // If sequence hasn't yet reached the target length for this streak level, grow it
-      if (sequence.length < targetLen) {
-        setStatusMsg('¡Correcto! Añadiendo señal…');
-        nextRound(sequence);
-      } else {
-        // At or beyond target — start a new sequence of the target length
-        setStatusMsg('¡Perfecto! Iniciando ciclo…');
-        const freshSeq = Array.from({ length: targetLen }, () => Math.floor(Math.random() * 6));
-        setSequence(freshSeq);
-        setScore(s => Math.max(s, freshSeq.length));
-        setTimeout(() => playSequence(freshSeq), 800);
-      }
+      setStatusMsg(`¡Perfecto! Ronda ${nextRound} — ${nextLen} señales`);
+
+      // Generate a completely new random sequence
+      const freshSeq = generateSequence(nextLen);
+      setSequence(freshSeq);
+      setTimeout(() => playSequence(freshSeq), 800);
     }
-  }, [phase, inputSeq, sequence, winStreak, clearTimers, playSequence, nextRound]);
+  }, [phase, inputSeq, sequence, completedRounds, currentRound, clearTimers, playSequence, calcScore]);
 
   // Cleanup on unmount
   useEffect(() => () => clearTimers(), [clearTimers]);
 
-  // ── Timer color ─────────────────────────────────────────────────────────────
-  const timerColor = timeLeft > 20 ? '#00e5ff' : timeLeft > 10 ? '#ffd700' : '#ff4d4d';
-
   // ── Dynamic subtitle ─────────────────────────────────────────────────────────
+  const patternLen = patternLenForRound(currentRound);
   const subtitleText = phase === 'idle'
     ? '✨ MEMORIZA Y REPITE LA SECUENCIA ✨'
-    : `${'★'.repeat(winStreak || 0)} VEL: ${displayMs}ms`;
+    : `RONDA ${currentRound} · ${patternLen} SEÑALES · VEL: ${flashMs}ms`;
 
   // ── Layout ──────────────────────────────────────────────────────────────────
   return (
@@ -288,19 +297,21 @@ export default function AstrolabioQuantico({ onComplete }) {
         </div>
         <div style={{ ...styles.topItem, alignItems: 'center', gap: '6px' }}>
           <span style={styles.gameTitle}>COSMOS PIANO</span>
-          {winStreak > 0 && (
+          {completedRounds > 0 && (
             <motion.span
               style={styles.streakBadge}
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ repeat: 2, duration: 0.3 }}
             >
-              {'★'.repeat(winStreak)}
+              {'★'.repeat(Math.min(completedRounds, 10))}
             </motion.span>
           )}
         </div>
         <div style={{ ...styles.topItem, alignItems: 'flex-end' }}>
           <span style={styles.topLabel}>TIEMPO</span>
-          <span style={{ ...styles.topValue, color: timerColor, textShadow: `0 0 12px ${timerColor}` }}>{timeLeft}s</span>
+          <span style={{ ...styles.topValue, color: '#00e5ff', textShadow: '0 0 12px #00e5ff' }}>
+            {formatTime(elapsedTime)}
+          </span>
         </div>
       </div>
 
@@ -327,7 +338,7 @@ export default function AstrolabioQuantico({ onComplete }) {
             style={{
               ...styles.statusMsg,
               color: statusMsg.includes('Error') ? '#ff6688' :
-                     statusMsg.includes('Correcto') || statusMsg.includes('Perfecto') ? '#44ff99' :
+                     statusMsg.includes('Perfecto') ? '#44ff99' :
                      statusMsg.includes('turno') ? '#ffd700' : '#a0c8ff'
             }}
           >
@@ -336,31 +347,33 @@ export default function AstrolabioQuantico({ onComplete }) {
         </AnimatePresence>
       </div>
 
-      {/* ── NIVEL indicator ── */}
-      {phase !== 'idle' && phase !== 'won' && phase !== 'lost' && (
+      {/* ── RONDA / PATRÓN indicator ── */}
+      {phase !== 'idle' && phase !== 'lost' && (
         <AnimatePresence mode="wait">
           <motion.div
-            key={winStreak}
+            key={currentRound}
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
             style={styles.nivelBadge}
           >
-            NIVEL {winStreak + 1} / {WIN_ROUNDS}
+            RONDA {currentRound} · PATRÓN: {patternLen}
           </motion.div>
         </AnimatePresence>
       )}
 
-      {/* ── Round indicator ── */}
-      {phase !== 'idle' && phase !== 'won' && phase !== 'lost' && (
+      {/* ── Round progress dots ── */}
+      {phase !== 'idle' && phase !== 'lost' && (
         <div style={styles.roundRow}>
-          {Array.from({ length: Math.min(sequence.length + 2, MAX_SEQ_LEN) }, (_, i) => (
+          {Array.from({ length: patternLen }, (_, i) => (
             <div
               key={i}
               style={{
                 ...styles.roundDot,
-                background: i < sequence.length ? '#00e5ff' : '#1a2a3a',
-                boxShadow: i < sequence.length ? '0 0 8px #00e5ff' : 'none',
+                background: i < inputSeq.length ? '#44ff99' :
+                             i < sequence.length ? '#00e5ff' : '#1a2a3a',
+                boxShadow: i < inputSeq.length ? '0 0 8px #44ff99' :
+                            i < sequence.length ? '0 0 8px #00e5ff' : 'none',
               }}
             />
           ))}
@@ -390,7 +403,11 @@ export default function AstrolabioQuantico({ onComplete }) {
         >
           <p style={styles.overlayTitle}>🌌 COSMOS PIANO</p>
           <p style={styles.overlayText}>
-            Memoriza y repite. La secuencia crece. ¡La velocidad aumenta!
+            Memoriza y repite. La secuencia cambia cada ronda.<br />
+            La dificultad aumenta progresivamente. ¡Sin límite de tiempo!<br />
+            <span style={{ color: '#ffd700', fontSize: '12px' }}>
+              Un error y la misión termina
+            </span>
           </p>
           <button style={styles.bigBtn} onClick={startGame}>
             INICIAR SISTEMA
@@ -398,39 +415,45 @@ export default function AstrolabioQuantico({ onComplete }) {
         </motion.div>
       )}
 
-      {/* ── Win screen ── */}
-      {phase === 'won' && (
+      {/* ── Lost screen (game over on mistake) ── */}
+      {phase === 'lost' && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           style={styles.overlay}
         >
-          <p style={{ ...styles.overlayTitle, color: '#ffd700' }}>🏆 ¡MISIÓN COMPLETA!</p>
+          <p style={{ ...styles.overlayTitle, color: '#ff4d4d' }}>⚠ FIN DE MISIÓN</p>
+          <div style={styles.statsGrid}>
+            <div style={styles.statItem}>
+              <span style={styles.statLabel}>RONDAS</span>
+              <span style={{ ...styles.statValue, color: '#00e5ff' }}>{completedRounds}</span>
+            </div>
+            <div style={styles.statItem}>
+              <span style={styles.statLabel}>TIEMPO</span>
+              <span style={{ ...styles.statValue, color: '#cc66ff' }}>{formatTime(elapsedTime)}</span>
+            </div>
+            <div style={styles.statItem}>
+              <span style={styles.statLabel}>MAX PATRÓN</span>
+              <span style={{ ...styles.statValue, color: '#44ff99' }}>{patternLenForRound(currentRound)}</span>
+            </div>
+          </div>
           <p style={styles.overlayText}>
-            Secuencia maestra decodificada.<br />
-            Puntuación final: <strong style={{ color: '#00e5ff' }}>{score}</strong>
+            Puntuación final: <strong style={{ color: '#ffd700', fontSize: '22px' }}>{score}</strong>
           </p>
-          <button style={{ ...styles.bigBtn, background: '#ffd700', color: '#000' }}
-            onClick={() => onComplete && onComplete(score)}>
-            CONTINUAR MISIÓN
-          </button>
-        </motion.div>
-      )}
-
-      {/* ── Lost screen ── */}
-      {phase === 'lost' && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          style={styles.overlay}
-        >
-          <p style={{ ...styles.overlayTitle, color: '#ff4d4d' }}>⏱ TIEMPO AGOTADO</p>
-          <p style={styles.overlayText}>
-            Mejor puntuación: <strong style={{ color: '#00e5ff' }}>{score}</strong>
+          <p style={{ ...styles.overlayText, fontSize: '11px', color: '#5a7a9a' }}>
+            ({completedRounds} × 100) + ({elapsedTime}s × 2) = {score}
           </p>
-          <button style={{ ...styles.bigBtn, background: '#ff4d4d' }} onClick={startGame}>
-            REINTENTAR
-          </button>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <button style={{ ...styles.bigBtn, background: '#ff4d4d' }} onClick={startGame}>
+              REINTENTAR
+            </button>
+            <button
+              style={{ ...styles.bigBtn, background: '#ffd700', color: '#000' }}
+              onClick={() => onComplete && onComplete(score)}
+            >
+              CONTINUAR
+            </button>
+          </div>
         </motion.div>
       )}
     </div>
@@ -639,5 +662,29 @@ const styles = {
     borderRadius:    '8px',
     cursor:          'pointer',
     transition:      'transform 0.15s, opacity 0.15s',
+  },
+  statsGrid: {
+    display:         'flex',
+    gap:             '24px',
+    justifyContent:  'center',
+    flexWrap:        'wrap',
+  },
+  statItem: {
+    display:         'flex',
+    flexDirection:   'column',
+    alignItems:      'center',
+    gap:             '4px',
+  },
+  statLabel: {
+    fontSize:        '9px',
+    letterSpacing:   '2px',
+    color:           '#3a5a8a',
+    textTransform:   'uppercase',
+  },
+  statValue: {
+    fontSize:        '28px',
+    fontWeight:      'bold',
+    fontFamily:      'monospace',
+    lineHeight:      1,
   },
 };

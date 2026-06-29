@@ -564,13 +564,17 @@ export default function SpaceshipScene() {
         <OrbitControls 
           makeDefault 
           minPolarAngle={0} 
-          maxPolarAngle={Math.PI / 2 + 0.1} 
-          minDistance={6}
-          maxDistance={40}
+          maxPolarAngle={Math.PI * 0.85} 
+          minDistance={3}
+          maxDistance={45}
           enablePan={false}
+          enableZoom={true}
+          zoomSpeed={1.2}
+          rotateSpeed={0.8}
+          enableDamping={true}
+          dampingFactor={0.12}
           autoRotate
           autoRotateSpeed={0.3}
-          dampingFactor={0.05}
         />
       </Canvas>
     </div>

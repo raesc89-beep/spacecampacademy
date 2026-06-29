@@ -12,7 +12,7 @@ import {
   setDoc,
   serverTimestamp,
 } from 'firebase/firestore';
-import { Trophy, Globe, Gamepad2, Medal } from 'lucide-react';
+import { Trophy, Globe, Gamepad2, Medal, User } from 'lucide-react';
 
 // ─────────────────────────────────────────────
 //  Helper: save a score to Firestore
@@ -44,7 +44,7 @@ export async function saveArcadeScore(db, gameId, gameName, userId, userName, sc
 // ─────────────────────────────────────────────
 //  Sub-component: a single rank row
 // ─────────────────────────────────────────────
-function RankRow({ rank, entry }) {
+function RankRow({ rank, entry, isCurrentUser }) {
   const medalColors = { 1: '#FFD700', 2: '#C0C0C0', 3: '#CD7F32' };
   const color = medalColors[rank] || 'rgba(0,228,255,0.7)';
 
@@ -61,9 +61,12 @@ function RankRow({ rank, entry }) {
         gap: '0.5rem',
         padding: '0.55rem 0.75rem',
         borderRadius: '10px',
-        background: rank <= 3 ? `rgba(${rank === 1 ? '255,215,0' : rank === 2 ? '192,192,192' : '205,127,50'},0.07)` : 'rgba(255,255,255,0.03)',
-        borderLeft: `3px solid ${color}`,
+        background: isCurrentUser
+          ? 'rgba(0,228,255,0.12)'
+          : rank <= 3 ? `rgba(${rank === 1 ? '255,215,0' : rank === 2 ? '192,192,192' : '205,127,50'},0.07)` : 'rgba(255,255,255,0.03)',
+        borderLeft: `3px solid ${isCurrentUser ? '#00e4ff' : color}`,
         marginBottom: '0.4rem',
+        outline: isCurrentUser ? '1px solid rgba(0,228,255,0.3)' : 'none',
       }}
     >
       {/* Rank badge */}
@@ -89,15 +92,15 @@ function RankRow({ rank, entry }) {
       <div style={{ overflow: 'hidden' }}>
         <div
           style={{
-            color: 'rgba(255,255,255,0.9)',
-            fontWeight: 600,
+            color: isCurrentUser ? '#00e4ff' : 'rgba(255,255,255,0.9)',
+            fontWeight: isCurrentUser ? 700 : 600,
             fontSize: '0.82rem',
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
           }}
         >
-          {entry.userName}
+          {isCurrentUser ? '⭐ ' : ''}{entry.userName}
         </div>
         <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.68rem' }}>
           {entry.gameName ? `${entry.gameName} · ` : ''}{dateStr}
@@ -107,10 +110,10 @@ function RankRow({ rank, entry }) {
       {/* Score */}
       <div
         style={{
-          color,
+          color: isCurrentUser ? '#00e4ff' : color,
           fontWeight: 700,
           fontSize: '0.9rem',
-          textShadow: `0 0 8px ${color}`,
+          textShadow: `0 0 8px ${isCurrentUser ? '#00e4ff' : color}`,
           flexShrink: 0,
         }}
       >
@@ -166,9 +169,22 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
   }, []);
 
   // Filter scores for the active tab
-  const activeScores = tab === 'game' && gameId && gameId !== 'global'
-    ? allScores.filter(s => s.gameId === gameId).slice(0, 10)
+  const gameScores = gameId && gameId !== 'global'
+    ? allScores.filter(s => s.gameId === gameId)
+    : [];
+  const myScores = currentUserId
+    ? allScores.filter(s => s.userId === currentUserId).sort((a, b) => b.score - a.score)
+    : [];
+
+  const activeScores = tab === 'game'
+    ? gameScores.slice(0, 10)
+    : tab === 'mine'
+    ? myScores.slice(0, 15)
     : allScores.slice(0, 10);
+
+  // Find user's rank in current game
+  const userGameRank = gameScores.findIndex(s => s.userId === currentUserId) + 1;
+  const userGlobalRank = allScores.findIndex(s => s.userId === currentUserId) + 1;
 
   const showGameTab = gameId && gameId !== 'global';
 
@@ -263,6 +279,28 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
           >
             <Globe size={12} /> Global
           </button>
+          <button
+            onClick={() => setTab('mine')}
+            style={{
+              flex: 1,
+              padding: '0.4rem 0.5rem',
+              borderRadius: '7px',
+              border: 'none',
+              cursor: 'pointer',
+              fontSize: '0.72rem',
+              fontWeight: 600,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.25rem',
+              transition: 'all 0.2s',
+              background: tab === 'mine' ? 'rgba(0,228,255,0.2)' : 'transparent',
+              color: tab === 'mine' ? '#00e4ff' : 'rgba(255,255,255,0.45)',
+              boxShadow: tab === 'mine' ? '0 0 10px rgba(0,228,255,0.15)' : 'none',
+            }}
+          >
+            <User size={12} /> Mi Ranking
+          </button>
         </div>
 
         {/* Game subtitle */}
@@ -281,6 +319,22 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
             }}
           >
             {gameName || gameId}
+          </div>
+        )}
+        {/* User position indicator */}
+        {tab === 'game' && showGameTab && userGameRank > 0 && (
+          <div style={{ marginTop: '0.35rem', color: '#00e4ff', fontSize: '0.7rem', fontWeight: 600 }}>
+            Tu posición: #{userGameRank}
+          </div>
+        )}
+        {tab === 'global' && userGlobalRank > 0 && (
+          <div style={{ marginTop: '0.35rem', color: '#00e4ff', fontSize: '0.7rem', fontWeight: 600 }}>
+            Tu posición global: #{userGlobalRank}
+          </div>
+        )}
+        {tab === 'mine' && (
+          <div style={{ marginTop: '0.35rem', color: '#00e4ff', fontSize: '0.7rem', fontWeight: 600 }}>
+            Mis Mejores Puntajes · {myScores.length} juego{myScores.length !== 1 ? 's' : ''}
           </div>
         )}
       </div>
@@ -308,7 +362,7 @@ export default function ArcadeRanking({ gameId, gameName, currentUserId }) {
           </div>
         ) : (
           activeScores.map((entry, idx) => (
-            <RankRow key={entry.id} rank={idx + 1} entry={entry} />
+            <RankRow key={entry.id} rank={idx + 1} entry={entry} isCurrentUser={entry.userId === currentUserId} />
           ))
         )}
       </div>

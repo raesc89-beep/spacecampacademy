@@ -124,6 +124,20 @@ function getDifficultyStars(pts) {
 // Main component
 // ─────────────────────────────────────────────────────────────
 export default function XenoPaleontologia({ onComplete }) {
+
+  // Reset game to initial state (avoids window.location.reload)
+  const resetGame = () => {
+    setGameState('intro');
+    setLevel(1);
+    setTotalScore(0);
+    setTimeLeft(45);
+    setIntegrity(100);
+    setDigMap(null);
+    setDiscoveredPx(0);
+    setFossilRevealed(false);
+    setCurrentFossil(null);
+    setMuseumOpen(false);
+  };
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const loadedImagesRef = useRef({});
 
@@ -942,9 +956,13 @@ export default function XenoPaleontologia({ onComplete }) {
                 {integrity <= 0 ? 'Fósil Destruido' : 'Tiempo Agotado'}
               </h2>
               <p style={{ color: '#ccc', maxWidth: '380px', marginBottom: '1rem' }}>El fósil no pudo ser recuperado.</p>
-              <button onClick={() => window.location.reload()}
+              <button onClick={resetGame}
                 style={{ background: '#FF8844', color: 'black', border: 'none', padding: '0.8rem 2rem', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold' }}>
                 Reintentar
+              </button>
+              <button onClick={() => { if (onComplete) onComplete(0); }}
+                style={{ background: 'transparent', color: '#88CCFF', border: '1px solid rgba(100,180,255,0.4)', padding: '0.8rem 2rem', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold', marginTop: '0.5rem' }}>
+                Volver al Arcade
               </button>
             </motion.div>
           )}
@@ -971,7 +989,7 @@ export default function XenoPaleontologia({ onComplete }) {
                   style={{ background: '#FFD700', color: 'black', border: 'none', padding: '0.8rem 2rem', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold', fontSize: '1rem' }}>
                   Continuar Misión 🚀
                 </button>
-                <button onClick={() => window.location.reload()}
+                <button onClick={resetGame}
                   style={{ background: 'transparent', color: '#88CCFF', border: '1px solid rgba(100,180,255,0.4)', padding: '0.8rem 2rem', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold', fontSize: '1rem' }}>
                   Nueva Expedición
                 </button>

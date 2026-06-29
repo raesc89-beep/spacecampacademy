@@ -349,9 +349,10 @@ export default function Astronaut3DScene({ skinTone, suitColor, visorColor, acce
 
         <ContactShadows position={[0, -2.85, 0]} opacity={0.55} scale={8} blur={2.5} far={5} color="#0066aa" />
 
-        <OrbitControls makeDefault minPolarAngle={Math.PI / 5} maxPolarAngle={Math.PI / 2 + 0.15}
-          enablePan={false} minDistance={3.5} maxDistance={18}
-          enableDamping dampingFactor={0.06}
+        <OrbitControls makeDefault minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI * 0.8}
+          enablePan={false} minDistance={2} maxDistance={20}
+          enableZoom={true} zoomSpeed={1.2} rotateSpeed={0.8}
+          enableDamping dampingFactor={0.12}
           autoRotate autoRotateSpeed={0.8} />
       </Canvas>
     </div>
