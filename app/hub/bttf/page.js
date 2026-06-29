@@ -200,8 +200,8 @@ function BTTFModuleNode({ mod, idx, isCompleted, isPlayable }) {
           {/* Avatar / Icono */}
           <div style={{
             position: 'relative',
-            width: 'clamp(100px, 12vw, 150px)',
-            height: 'clamp(100px, 12vw, 150px)',
+            width: 'clamp(70px, 8vw, 100px)',
+            height: 'clamp(70px, 8vw, 100px)',
             borderRadius: '50%',
             boxShadow: hovered
               ? `0 0 40px ${mod.color}ff, inset 0 0 20px ${mod.color}aa`

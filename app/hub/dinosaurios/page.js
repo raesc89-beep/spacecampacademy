@@ -168,6 +168,88 @@ export default function DinosauriosHub() {
         <VolcanicLightning />
         <FootprintTrail />
 
+        {/* Animated Dinosaur GIFs */}
+        {/* Pterosaur 1 — flies across the sky left to right, high up */}
+        <motion.img
+          src="/assets/dinosaurios/pterosaur_fly.gif"
+          alt="Pterosaurio volando"
+          draggable={false}
+          animate={{
+            x: ['-15vw', '20vw', '50vw', '80vw', '115vw'],
+            y: ['2vh', '-4vh', '5vh', '-2vh', '3vh'],
+          }}
+          transition={{ repeat: Infinity, duration: 28, ease: 'linear' }}
+          style={{
+            position: 'absolute', top: '8%', left: 0,
+            width: '100px', height: 'auto',
+            filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.4))',
+            opacity: 0.85,
+            zIndex: 6,
+            pointerEvents: 'none',
+          }}
+        />
+        {/* Pterosaur 2 — flies right to left, slightly lower, delayed */}
+        <motion.img
+          src="/assets/dinosaurios/pterosaur_fly.gif"
+          alt="Pterosaurio volando 2"
+          draggable={false}
+          animate={{
+            x: ['120vw', '85vw', '55vw', '25vw', '-20vw'],
+            y: ['5vh', '-3vh', '7vh', '-1vh', '4vh'],
+          }}
+          transition={{ repeat: Infinity, duration: 35, ease: 'linear', delay: 12 }}
+          style={{
+            position: 'absolute', top: '14%', left: 0,
+            width: '75px', height: 'auto',
+            filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3))',
+            opacity: 0.7,
+            transform: 'scaleX(-1)',
+            zIndex: 6,
+            pointerEvents: 'none',
+          }}
+        />
+
+        {/* T-Rex — walks slowly through the jungle/lower area */}
+        <motion.img
+          src="/assets/dinosaurios/trex_walk.gif"
+          alt="T-Rex caminando"
+          draggable={false}
+          animate={{
+            x: ['-20vw', '10vw', '35vw', '60vw', '115vw'],
+            y: ['0vh', '2vh', '-1vh', '1vh', '0vh'],
+          }}
+          transition={{ repeat: Infinity, duration: 65, ease: 'linear' }}
+          style={{
+            position: 'absolute', bottom: '12%', left: 0,
+            width: '130px', height: 'auto',
+            filter: 'drop-shadow(0 6px 15px rgba(0,0,0,0.6))',
+            opacity: 0.8,
+            zIndex: 6,
+            pointerEvents: 'none',
+          }}
+        />
+
+        {/* Brachiosaurus — moves gently in the river/vegetation mid area */}
+        <motion.img
+          src="/assets/dinosaurios/brachio_walk.gif"
+          alt="Brachiosaurio en el rio"
+          draggable={false}
+          animate={{
+            x: ['115vw', '80vw', '50vw', '20vw', '-20vw'],
+            y: ['0vh', '-2vh', '3vh', '-1vh', '1vh'],
+          }}
+          transition={{ repeat: Infinity, duration: 80, ease: 'linear', delay: 8 }}
+          style={{
+            position: 'absolute', bottom: '18%', left: 0,
+            width: '160px', height: 'auto',
+            filter: 'drop-shadow(0 6px 18px rgba(0,0,0,0.5))',
+            opacity: 0.75,
+            transform: 'scaleX(-1)',
+            zIndex: 5,
+            pointerEvents: 'none',
+          }}
+        />
+
         {/* Header */}
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', padding: '2rem', zIndex: 100, pointerEvents: 'none' }}>
           <motion.button initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}

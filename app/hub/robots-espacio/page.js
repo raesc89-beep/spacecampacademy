@@ -140,7 +140,7 @@ export default function RobotsHub() {
     { id: 'robots_spirit', title: 'Spirit', img: '/assets/rovers/ai_spirit.png', left: '42%', top: '70%', size: 'clamp(70px, 9vw, 110px)' },
     { id: 'robots_opportunity', title: 'Opportunity', img: '/assets/rovers/ai_opportunity.png', left: '55%', top: '85%', size: 'clamp(70px, 9vw, 110px)' }, 
     { id: 'robots_curiosity', title: 'Curiosity', img: '/assets/rovers/ai_curiosity.png', left: '72%', top: '65%', size: 'clamp(90px, 11vw, 140px)' },
-    { id: 'robots_perseverance', title: 'Perseverance', img: '/assets/rovers/ai_curiosity.png', left: '88%', top: '78%', size: 'clamp(100px, 12vw, 150px)' },
+    { id: 'robots_perseverance', title: 'Perseverance', img: '/assets/rovers/ai_curiosity.png', left: '88%', top: '78%', size: 'clamp(70px, 9vw, 110px)' },
     { id: 'robots_ingenuity', title: 'Ingenuity', img: '/assets/rovers/ai_ingenuity.png', left: '80%', top: '25%', size: 'clamp(60px, 8vw, 100px)' },
     { id: 'robots_futuras', title: 'Misiones Futuras', img: '/assets/rovers/ai_futuras.png', left: '50%', top: '10%', size: 'clamp(80px, 10vw, 130px)' }
   ];

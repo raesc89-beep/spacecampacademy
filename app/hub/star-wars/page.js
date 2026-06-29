@@ -14,7 +14,7 @@ const SW_MODULES = [
     color: '#00CFFF',
     link: '/course/starwars_sec_1',
     icon: '/assets/starwars/module_1.png',
-    coords: { left: '10%', top: '35%' },
+    coords: { left: '6%', top: '28%' },
   },
   {
     id: 'starwars_sec_2',
@@ -22,7 +22,7 @@ const SW_MODULES = [
     color: '#FF8C00',
     link: '/course/starwars_sec_2',
     icon: '/assets/starwars/module_2.png',
-    coords: { left: '12%', top: '55%' },
+    coords: { left: '8%', top: '58%' },
   },
   {
     id: 'starwars_sec_3',
@@ -30,7 +30,7 @@ const SW_MODULES = [
     color: '#7B68EE',
     link: '/course/starwars_sec_3',
     icon: '/assets/starwars/module_3.png',
-    coords: { left: '18%', top: '75%' },
+    coords: { left: '14%', top: '82%' },
   },
   {
     id: 'starwars_sec_4',
@@ -38,7 +38,7 @@ const SW_MODULES = [
     color: '#FFE81F',
     link: '/course/starwars_sec_4',
     icon: '/assets/starwars/module_4.png',
-    coords: { left: '30%', top: '85%' },
+    coords: { left: '32%', top: '88%' },
   },
   {
     id: 'starwars_sec_5',
@@ -46,7 +46,7 @@ const SW_MODULES = [
     color: '#00FF88',
     link: '/course/starwars_sec_5',
     icon: '/assets/starwars/module_5.png',
-    coords: { left: '50%', top: '88%' },
+    coords: { left: '50%', top: '90%' },
   },
   {
     id: 'starwars_sec_6',
@@ -54,7 +54,7 @@ const SW_MODULES = [
     color: '#FF3333',
     link: '/course/starwars_sec_6',
     icon: '/assets/starwars/module_6.png',
-    coords: { left: '70%', top: '85%' },
+    coords: { left: '68%', top: '88%' },
   },
   {
     id: 'starwars_sec_7',
@@ -62,7 +62,7 @@ const SW_MODULES = [
     color: '#00FFCC',
     link: '/course/starwars_sec_7',
     icon: '/assets/starwars/module_7.png',
-    coords: { left: '82%', top: '75%' },
+    coords: { left: '86%', top: '82%' },
   },
   {
     id: 'starwars_sec_8',
@@ -70,7 +70,7 @@ const SW_MODULES = [
     color: '#A0A0A0',
     link: '/course/starwars_sec_8',
     icon: '/assets/starwars/module_8.png',
-    coords: { left: '88%', top: '55%' },
+    coords: { left: '92%', top: '58%' },
   },
   {
     id: 'starwars_sec_9',
@@ -78,22 +78,30 @@ const SW_MODULES = [
     color: '#FF0055',
     link: '/course/starwars_sec_9',
     icon: '/assets/starwars/module_9.png',
-    coords: { left: '90%', top: '35%' },
+    coords: { left: '94%', top: '28%' },
   },
 ];
 
 // ─── Stars Component ─────────────────────────────────────────────────────────
 function Stars() {
-  const stars = Array.from({ length: 250 }, (_, i) => ({
-    id: i,
-    left: Math.random() * 100,
-    top: Math.random() * 80,
-    size: Math.random() * 3 + 1,
-    opacity: Math.random() * 0.9 + 0.1,
-    duration: Math.random() * 4 + 1.5,
-    delay: Math.random() * 4,
-    color: Math.random() > 0.8 ? '#88ccff' : (Math.random() > 0.9 ? '#ffcc88' : 'white'),
-  }));
+  const stars = Array.from({ length: 200 }, (_, i) => {
+    // Keep stars away from the Death Star center area (roughly 25%-75% x, 10%-60% y)
+    let left, top;
+    do {
+      left = Math.random() * 100;
+      top = Math.random() * 85;
+    } while (left > 25 && left < 75 && top > 10 && top < 55);
+    return {
+      id: i,
+      left,
+      top,
+      size: Math.random() * 2.5 + 0.5,
+      opacity: Math.random() * 0.7 + 0.1,
+      duration: Math.random() * 4 + 1.5,
+      delay: Math.random() * 4,
+      color: Math.random() > 0.8 ? '#88ccff' : (Math.random() > 0.9 ? '#ffcc88' : 'white'),
+    };
+  });
 
   return (
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 1 }}>
@@ -216,8 +224,8 @@ function SWModuleNode({ mod, idx, isCompleted }) {
           {/* Circular image with blur vignette */}
           <div style={{
             position: 'relative',
-            width: 'clamp(100px, 12vw, 150px)',
-            height: 'clamp(100px, 12vw, 150px)',
+            width: 'clamp(60px, 7vw, 90px)',
+            height: 'clamp(60px, 7vw, 90px)',
             borderRadius: '50%',
             boxShadow: hovered
               ? `0 0 50px ${mod.color}cc, 0 0 20px ${mod.color}88, inset 0 0 20px ${mod.color}44`
@@ -376,11 +384,11 @@ export default function StarWarsHub() {
         <div style={{
           position: 'absolute', inset: 0,
           backgroundImage: "url('/assets/starwars/starwars_deathstar_bg.png')",
-          backgroundSize: '65%',
-          backgroundPosition: 'center 35%',
+          backgroundSize: '40%',
+          backgroundPosition: 'center 30%',
           backgroundRepeat: 'no-repeat',
-          WebkitMaskImage: 'radial-gradient(ellipse 80% 85% at 50% 40%, black 55%, transparent 95%)',
-          maskImage: 'radial-gradient(ellipse 80% 85% at 50% 40%, black 55%, transparent 95%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 70% 75% at 50% 35%, black 50%, transparent 90%)',
+          maskImage: 'radial-gradient(ellipse 70% 75% at 50% 35%, black 50%, transparent 90%)',
           zIndex: 0,
         }} />
         {/* Dark overlay gradient */}

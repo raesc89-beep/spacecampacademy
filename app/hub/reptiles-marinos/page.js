@@ -130,7 +130,6 @@ function SwimmingCreatures() {
           width: '220px', height: 'auto',
           filter: 'drop-shadow(0 4px 20px rgba(0,100,150,0.5))',
           opacity: 0.75,
-          transform: 'scaleX(-1)',
         }}
       />
       {/* Criatura marina GIF animada — trayectoria curva sinuosa der→izq */}
@@ -165,6 +164,7 @@ function SwimmingCreatures() {
           width: '140px', height: 'auto',
           filter: 'blur(2px) drop-shadow(0 4px 15px rgba(0,80,120,0.4))',
           opacity: 0.35,
+          transform: 'scaleX(-1)',
         }}
       />
     </div>
