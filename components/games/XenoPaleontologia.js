@@ -635,7 +635,9 @@ export default function XenoPaleontologia({ onComplete }) {
                           style={{
                             width: '200px', height: '200px', objectFit: 'contain',
                             filter: `drop-shadow(0 6px 20px ${currentSlot.glow}90) drop-shadow(0 0 50px ${currentSlot.glow}30)`,
-                            mixBlendMode: 'screen',
+                            background: 'radial-gradient(circle, #0a1520 60%, transparent 100%)',
+                            borderRadius: '50%',
+                            padding: '10px',
                           }}
                           onError={e => { e.currentTarget.style.opacity = '0'; }}
                         />
