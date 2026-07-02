@@ -124,20 +124,6 @@ function getDifficultyStars(pts) {
 // Main component
 // ─────────────────────────────────────────────────────────────
 export default function XenoPaleontologia({ onComplete }) {
-
-  // Reset game to initial state (avoids window.location.reload)
-  const resetGame = () => {
-    setGameState('intro');
-    setLevel(1);
-    setTotalScore(0);
-    setTimeLeft(45);
-    setIntegrity(100);
-    setDigMap(null);
-    setDiscoveredPx(0);
-    setFossilRevealed(false);
-    setCurrentFossil(null);
-    setMuseumOpen(false);
-  };
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const loadedImagesRef = useRef({});
 
@@ -182,6 +168,20 @@ export default function XenoPaleontologia({ onComplete }) {
     try { return JSON.parse(localStorage.getItem('xenoMuseum') || '[]'); }
     catch { return []; }
   });
+
+  // Reset game to initial state (avoids window.location.reload)
+  const resetGame = useCallback(() => {
+    setCurrentLevel(0);
+    setGameState('digging');
+    setTimeLeft(getTimeForLevel(0));
+    setIntegrity(100);
+    setScore(0);
+    setTotalScore(0);
+    setRevealed(false);
+    setMessage('');
+    setShowMuseum(false);
+    setMuseumIdx(0);
+  }, []);
 
   const addToMuseum = (fossil) => {
     const alreadyIn = museum.some(m => m.id === fossil.name);
