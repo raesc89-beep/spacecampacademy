@@ -9,12 +9,12 @@ import { Lock, CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import HubDecorations from '@/components/HubDecorations';
-import { COURSE_DATA } from '@/lib/courseData';
+import { COURSE_CATALOG } from '@/lib/courseCatalog';
 
 export default function SolarSystemMap() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
-  const modules = COURSE_DATA;
+  const modules = COURSE_CATALOG;
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');

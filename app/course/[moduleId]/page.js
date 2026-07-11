@@ -12,12 +12,13 @@ import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
 import ApophisCountdown from '@/components/ApophisCountdown';
 
-import { COURSE_DATA } from '@/lib/courseData';
+import { useCourseData } from '@/hooks/useCourseData';
 
 export default function CourseModule() {
   const { user, userData, loading } = useAuth();
   const params = useParams();
   const router = useRouter();
+  const { data: staticData, loading: catalogLoading } = useCourseData(params.moduleId);
   
   const [moduleData, setModuleData] = useState(null);
   const [dataLoading, setDataLoading] = useState(true);
@@ -28,6 +29,8 @@ export default function CourseModule() {
   }, [user, loading, router]);
 
   useEffect(() => {
+    if (catalogLoading || !params.moduleId) return;
+
     async function fetchModule() {
       try {
         // 1. Try Firestore first (CMS-edited version)
@@ -104,9 +107,8 @@ export default function CourseModule() {
 
         // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, arqueoastronomia_maya, ciencia_star_wars o ciencia_volver_al_futuro, usar los datos estáticos puros.
         if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('robots_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('davinci_') || params.moduleId.startsWith('cecilia_') || params.moduleId.startsWith('sagan_') || params.moduleId.startsWith('curie_') || params.moduleId.startsWith('astro_train_') || params.moduleId.startsWith('einstein_') || params.moduleId.startsWith('griegos_') || params.moduleId.startsWith('arrival_')) {
-          const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
-          if (staticMod) {
-             setModuleData(enforce15x15Rule(staticMod));
+          if (staticData) {
+             setModuleData(enforce15x15Rule(staticData));
              setDataLoading(false);
              return;
           }
@@ -115,48 +117,43 @@ export default function CourseModule() {
         if (firestoreDoc.exists()) {
           // Found a CMS-edited version — merge with static data for quiz/color/etc
           const firestoreData = firestoreDoc.data();
-          const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
-          if (staticMod) {
+          if (staticData) {
             // Admin API writes sections to top-level 'sections' field in Firestore
             // Legacy format had them nested under contentEs.sections
             const firestoreSections = firestoreData.sections || firestoreData.contentEs?.sections || null;
             const firestoreQuiz = firestoreData.quizEs || null;
             let mergedMod = {
-              ...staticMod,
+              ...staticData,
               // Override color/title if admin changed them
               ...(firestoreData.titleEs ? { titleEs: firestoreData.titleEs } : {}),
               ...(firestoreData.badgeEs ? { badgeEs: firestoreData.badgeEs } : {}),
               ...(firestoreData.color ? { color: firestoreData.color } : {}),
               contentEs: {
-                ...staticMod.contentEs,
-                sections: firestoreSections || staticMod.contentEs?.sections || [],
+                ...staticData.contentEs,
+                sections: firestoreSections || staticData.contentEs?.sections || [],
               },
               // Use Firestore quiz if available
-              quizEs: firestoreQuiz || staticMod.quizEs || [],
+              quizEs: firestoreQuiz || staticData.quizEs || [],
             };
             setModuleData(enforce15x15Rule(mergedMod));
           } else {
             router.push('/dashboard');
           }
         } else {
-          // 2. Fallback: use static courseData.js
-          let mod = COURSE_DATA.find(c => c.id === params.moduleId);
-          if (mod) setModuleData(enforce15x15Rule(JSON.parse(JSON.stringify(mod))));
+          // 2. Fallback: use static data from API
+          if (staticData) setModuleData(enforce15x15Rule(JSON.parse(JSON.stringify(staticData))));
           else router.push('/dashboard');
         }
       } catch (err) {
         console.error('Error loading module:', err);
         // On any error, fallback to static data
-        let mod = COURSE_DATA.find(c => c.id === params.moduleId);
-        // Debe haber enforce15x15Rule pero para no ensuciar el catch, la creamos afuera o copiamos la logica:
-        // Por simplicidad en este parche, cargamos directo
-        if (mod) setModuleData(mod);
+        if (staticData) setModuleData(staticData);
         else router.push('/dashboard');
       }
       setDataLoading(false);
     }
-    if (params.moduleId) fetchModule();
-  }, [params.moduleId]);
+    fetchModule();
+  }, [params.moduleId, staticData, catalogLoading]);
 
   if (loading || dataLoading) {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Viajando al planeta...</div>;

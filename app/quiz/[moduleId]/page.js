@@ -9,7 +9,7 @@ import { Shield, Sparkles, Rocket } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
-import { COURSE_DATA } from '@/lib/courseData';
+import { useCourseData } from '@/hooks/useCourseData';
 import { checkAchievements, getNewAchievements, getAchievementInfo } from '@/lib/achievements';
 import AchievementToast from '@/components/AchievementToast';
 
@@ -17,6 +17,7 @@ export default function QuizMinigame() {
   const { user, userData, loading } = useAuth();
   const params = useParams();
   const router = useRouter();
+  const { data: staticData, loading: catalogLoading } = useCourseData(params.moduleId);
   
   const [moduleData, setModuleData] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -33,21 +34,22 @@ export default function QuizMinigame() {
   }, [user, loading, router]);
 
   useEffect(() => {
+    if (catalogLoading || !params.moduleId) return;
+
     async function fetchModule() {
-      // Static courses loaded directly from COURSE_DATA
+      // Static courses loaded directly from API
       const isStaticCourse = params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('dinos_') || params.moduleId.startsWith('marinos_') || params.moduleId.startsWith('tesla_') || params.moduleId.startsWith('egypt_') || params.moduleId.startsWith('copernico_') || params.moduleId.startsWith('davinci_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('apollo') || params.moduleId.startsWith('area51_') || params.moduleId.startsWith('bttf_') || params.moduleId.startsWith('robots_') || params.moduleId.startsWith('cecilia_') || params.moduleId.startsWith('sagan_') || params.moduleId.startsWith('curie_') || params.moduleId.startsWith('astro_train_') || params.moduleId.startsWith('einstein_') || params.moduleId.startsWith('griegos_') || params.moduleId.startsWith('arrival_');
       if (isStaticCourse) {
-        const staticMod = COURSE_DATA.find(c => c.id === params.moduleId);
-        if (staticMod) {
-          setModuleData(staticMod);
+        if (staticData) {
+          setModuleData(staticData);
           return;
         }
       }
       const d = await getDoc(doc(db, "modules", params.moduleId));
       if (d.exists()) setModuleData(d.data());
     }
-    if (params.moduleId) fetchModule();
-  }, [params.moduleId]);
+    fetchModule();
+  }, [params.moduleId, staticData, catalogLoading]);
 
   if (loading || !moduleData) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Cargando Simulador...</div>;
 

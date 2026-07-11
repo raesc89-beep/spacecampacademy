@@ -9,12 +9,12 @@ import { Lock, CheckCircle, ChevronLeft, Rocket } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import { COURSE_DATA } from '@/lib/courseData';
+import { COURSE_CATALOG } from '@/lib/courseCatalog';
 
 export default function AsteroidsHub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
-  const modules = COURSE_DATA;
+  const modules = COURSE_CATALOG;
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');

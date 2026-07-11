@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { CheckCircle, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { COURSE_DATA } from '@/lib/courseData';
+import { COURSE_CATALOG } from '@/lib/courseCatalog';
 import { useEffect, useState } from 'react';
 
 // ─── Módulos del Apollo 11 ─────────────────────────────────────────────────
@@ -174,7 +174,7 @@ function ApolloModuleNode({ mod, idx, isCompleted, isPlayable }) {
 export default function Apollo11Hub() {
   const { user, userData, loading } = useAuth();
   const router = useRouter();
-  const modules = COURSE_DATA;
+  const modules = COURSE_CATALOG;
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
