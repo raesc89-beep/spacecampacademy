@@ -365,9 +365,35 @@ export default function RelativisticDebrisDodger() {
         if (gameStateRef.current === 'playing') {
           gameTime += dt * 0.016; // dt is in frames (~60fps), convert to seconds
 
-          // Spawn interval shrinks from 2 s → 0.3 s over 120 s
-          const progress = Math.min(gameTime / 120, 1);
-          const spawnInterval = Math.max(0.3, 2.0 - progress * 1.7);
+          // ── PROGRESSIVE DIFFICULTY TIERS ──
+          // Tier 1 (0-15s):  Easy — slow, few obstacles
+          // Tier 2 (15-30s): Moderate — faster spawns
+          // Tier 3 (30-45s): Challenging — quicker, more drift
+          // Tier 4 (45-60s): Hard — fast and dense
+          // Tier 5 (60s+):   Extreme — overwhelming debris field
+          let tier, spawnInterval, baseSpeed, maxDrift;
+          if (gameTime < 15) {
+            tier = 1; spawnInterval = 2.0; baseSpeed = 2.5; maxDrift = 1.0;
+          } else if (gameTime < 30) {
+            tier = 2; spawnInterval = 1.4; baseSpeed = 3.5; maxDrift = 1.5;
+          } else if (gameTime < 45) {
+            tier = 3; spawnInterval = 0.9; baseSpeed = 5.0; maxDrift = 2.5;
+          } else if (gameTime < 60) {
+            tier = 4; spawnInterval = 0.55; baseSpeed = 6.5; maxDrift = 3.5;
+          } else {
+            tier = 5;
+            // After 60s, keep escalating smoothly
+            const extra = Math.min((gameTime - 60) / 60, 1); // 0→1 over next 60s
+            spawnInterval = Math.max(0.25, 0.55 - extra * 0.3);
+            baseSpeed = 6.5 + extra * 4;
+            maxDrift = 3.5 + extra * 2;
+          }
+
+          // Store tier for HUD (via velocityC hack — repurpose for display)
+          // Actually set it via a ref-accessible var
+          if (typeof this._difficultyTier === 'undefined' || this._difficultyTier !== tier) {
+            this._difficultyTier = tier;
+          }
 
           if (gameTime - lastSpawnTime > spawnInterval) {
             lastSpawnTime = gameTime;
@@ -378,9 +404,9 @@ export default function RelativisticDebrisDodger() {
             const startX = Math.random() * (this.width - 60) + 30;
             const startY = -55;
 
-            // Downward velocity grows with time; slight horizontal drift
-            const vy = 3 + gameTime * 0.03;
-            const vx = (Math.random() - 0.5) * 1.8; // gentle horizontal drift
+            // Speed with slight randomness
+            const vy = baseSpeed + Math.random() * 1.5;
+            const vx = (Math.random() - 0.5) * maxDrift;
 
             this.registerRigidBody({
               type: 'anomaly',
@@ -675,6 +701,21 @@ export default function RelativisticDebrisDodger() {
                 <div style={{ display: 'flex', gap: '6px' }}>
                   {renderHearts()}
                 </div>
+              </div>
+
+              {/* Bottom Center: Difficulty Tier */}
+              <div style={{
+                position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)',
+                zIndex: 5, pointerEvents: 'none',
+                fontFamily: 'monospace', fontSize: '0.75rem', fontWeight: 'bold',
+                letterSpacing: '0.1em',
+                color: elapsedTime < 15 ? '#00FF88' : elapsedTime < 30 ? '#FFCC00' : elapsedTime < 45 ? '#FF8800' : elapsedTime < 60 ? '#FF4444' : '#FF00FF',
+                textShadow: `0 0 10px ${elapsedTime < 15 ? '#00FF88' : elapsedTime < 30 ? '#FFCC00' : elapsedTime < 45 ? '#FF8800' : elapsedTime < 60 ? '#FF4444' : '#FF00FF'}`,
+                background: 'rgba(0,0,0,0.65)', padding: '5px 16px', borderRadius: '6px',
+                border: `1px solid ${elapsedTime < 15 ? 'rgba(0,255,136,0.4)' : elapsedTime < 30 ? 'rgba(255,204,0,0.4)' : elapsedTime < 45 ? 'rgba(255,136,0,0.4)' : elapsedTime < 60 ? 'rgba(255,68,68,0.4)' : 'rgba(255,0,255,0.4)'}`
+              }}>
+                NIVEL {elapsedTime < 15 ? '1' : elapsedTime < 30 ? '2' : elapsedTime < 45 ? '3' : elapsedTime < 60 ? '4' : '5'}{' '}
+                — {elapsedTime < 15 ? 'CALMADO' : elapsedTime < 30 ? 'MODERADO' : elapsedTime < 45 ? 'PELIGROSO' : elapsedTime < 60 ? 'CRÍTICO' : 'EXTREMO'}
               </div>
             </>
           )}

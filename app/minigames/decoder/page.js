@@ -1,11 +1,12 @@
 'use client';
 import { useState, useEffect } from 'react';
+import React from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import Navbar from '@/components/Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Radio, AlertTriangle, CheckCircle, Star, Activity, Waves, Zap, Radar, ChevronLeft } from 'lucide-react';
+import { Radio, AlertTriangle, CheckCircle, Star, Activity, Waves, Zap, Radar, ChevronLeft, Timer, Clock } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
@@ -45,6 +46,23 @@ export default function DecoderMinigame() {
   const [isSynced, setIsSynced] = useState(false);
   const [rewardClaimed, setRewardClaimed] = useState(false);
   const [gameComplete, setGameComplete] = useState(false);
+  const [elapsedTime, setElapsedTime] = useState(0);
+  const [gameStarted, setGameStarted] = useState(false);
+  const timerRef = React.useRef(null);
+
+  // Format seconds to MM:SS
+  const formatTime = (t) => `${String(Math.floor(t / 60)).padStart(2, '0')}:${String(t % 60).padStart(2, '0')}`;
+
+  // Chronometer
+  useEffect(() => {
+    if (gameStarted && !gameComplete) {
+      timerRef.current = setInterval(() => setElapsedTime(p => p + 1), 1000);
+    }
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
+  }, [gameStarted, gameComplete]);
+
+  // Start timer on first slider interaction
+  const startGame = () => { if (!gameStarted) setGameStarted(true); };
 
   useEffect(() => {
     if (!loading && !user) router.push('/auth');
@@ -113,15 +131,28 @@ export default function DecoderMinigame() {
     }
   };
 
+  // Time-based scoring
+  const getTimeBonus = () => Math.max(0, 600 - elapsedTime);
+  const getFinalScore = () => (100 * 10) + getTimeBonus(); // Base 1000 + time bonus
+
   const claimReward = async () => {
     if (!user || rewardClaimed) return;
     const currentStars = userData?.progress?.stars || 0;
-    const reward = 100 * level; // Escalar recompensa con el nivel
+    const finalScore = getFinalScore();
     await setDoc(doc(db, 'users', user.uid), {
       progress: {
-        stars: currentStars + reward
+        stars: currentStars + finalScore
       }
     }, { merge: true });
+    // Save to arcade rankings
+    await setDoc(doc(db, 'arcadeScores', `decoder_${user.uid}`), {
+      score: finalScore,
+      time: elapsedTime,
+      userId: user.uid,
+      displayName: userData?.displayName || 'Cadete',
+      gameId: 'decoder',
+      timestamp: Date.now()
+    });
     setRewardClaimed(true);
   };
 
@@ -161,9 +192,15 @@ export default function DecoderMinigame() {
             <Radio size={32} /> Interceptación Estelar
           </h1>
           <div style={{ background: 'rgba(0,228,255,0.05)', border: '1px solid var(--electric-blue)', borderRadius: '8px', padding: '1rem', marginTop: '1rem' }}>
-             <p style={{ color: 'var(--electric-blue)', margin: 0, fontWeight: 'bold' }}>NIVEL DE AMENAZA: {level} / 10</p>
-             <p style={{ color: 'var(--text-muted)', margin: '0.5rem 0 0 0', fontStyle: 'italic' }}>"{STORY_LEVELS[level-1]}"</p>
-          </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <p style={{ color: 'var(--electric-blue)', margin: 0, fontWeight: 'bold' }}>NIVEL DE AMENAZA: {level} / 10</p>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: gameComplete ? '#00FF88' : '#00E4FF', fontSize: '1.1rem', fontWeight: 'bold', fontFamily: 'monospace', background: 'rgba(0,228,255,0.1)', padding: '6px 14px', borderRadius: '8px', border: `1px solid ${gameComplete ? 'rgba(0,255,136,0.4)' : 'rgba(0,228,255,0.3)'}`, textShadow: `0 0 8px ${gameComplete ? '#00FF88' : '#00E4FF'}` }}>
+                  <Timer size={16} /> {formatTime(elapsedTime)}
+                </span>
+              </div>
+              {!gameStarted && <p style={{ color: '#00E4FF', margin: '0.5rem 0 0 0', fontSize: '0.85rem', fontWeight: 'bold' }}><Clock size={14} style={{ display: 'inline', marginRight: '4px', verticalAlign: 'middle' }}/>El cronómetro inicia al mover un control. ¡Más rápido = más puntos!</p>}
+              <p style={{ color: 'var(--text-muted)', margin: '0.5rem 0 0 0', fontStyle: 'italic' }}>"{STORY_LEVELS[level-1]}"</p>
+           </div>
         </div>
 
         {/* RADAR SCREEN */}
@@ -223,7 +260,7 @@ export default function DecoderMinigame() {
                <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Activity size={18} /> Amplitud (Potencia)</span>
                <span>{ampli} dB</span>
              </div>
-             <input type="range" min="10" max="80" step="1" value={ampli} onChange={(e) => setAmpli(Number(e.target.value))} style={{ width: '100%', accentColor: '#ff5722' }} />
+             <input type="range" min="10" max="80" step="1" value={ampli} onChange={(e) => { startGame(); setAmpli(Number(e.target.value)); }} style={{ width: '100%', accentColor: '#ff5722' }} />
            </div>
 
            <div>
@@ -231,7 +268,7 @@ export default function DecoderMinigame() {
                <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Waves size={18} /> Frecuencia (Oscilación)</span>
                <span>{(freq * 100).toFixed(1)} MHz</span>
              </div>
-             <input type="range" min="0.01" max="0.1" step="0.001" value={freq} onChange={(e) => setFreq(Number(e.target.value))} style={{ width: '100%', accentColor: '#00e4ff' }} />
+             <input type="range" min="0.01" max="0.1" step="0.001" value={freq} onChange={(e) => { startGame(); setFreq(Number(e.target.value)); }} style={{ width: '100%', accentColor: '#00e4ff' }} />
            </div>
 
            {/* Nivel 2+ Control de Fase */}
@@ -241,7 +278,7 @@ export default function DecoderMinigame() {
                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Radar size={18} /> Fase (Desplazamiento)</span>
                  <span>{phase.toFixed(1)} Rad</span>
                </div>
-               <input type="range" min="0" max="6.28" step="0.1" value={phase} onChange={(e) => setPhase(Number(e.target.value))} style={{ width: '100%', accentColor: '#b388ff' }} />
+               <input type="range" min="0" max="6.28" step="0.1" value={phase} onChange={(e) => { startGame(); setPhase(Number(e.target.value)); }} style={{ width: '100%', accentColor: '#b388ff' }} />
              </motion.div>
            )}
 
@@ -252,7 +289,7 @@ export default function DecoderMinigame() {
                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Zap size={18} /> Ruido Armónico</span>
                  <span>{harm} Hz</span>
                </div>
-               <input type="range" min="0" max="25" step="1" value={harm} onChange={(e) => setHarm(Number(e.target.value))} style={{ width: '100%', accentColor: '#d4e157' }} />
+               <input type="range" min="0" max="25" step="1" value={harm} onChange={(e) => { startGame(); setHarm(Number(e.target.value)); }} style={{ width: '100%', accentColor: '#d4e157' }} />
              </motion.div>
            )}
 
@@ -282,17 +319,31 @@ export default function DecoderMinigame() {
                <h2 style={{ color: 'var(--gold-star)', margin: '0 0 1rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
                  <Star fill="currentColor" /> DECODIFICACIÓN MAESTRA LOGRADA
                </h2>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', margin: '1rem 0', flexWrap: 'wrap' }}>
+                  <div style={{ background: 'rgba(0,228,255,0.1)', padding: '0.8rem 1.2rem', borderRadius: '12px', border: '1px solid rgba(0,228,255,0.3)', textAlign: 'center' }}>
+                    <div style={{ color: '#00E4FF', fontSize: '0.8rem', fontWeight: 'bold' }}>TIEMPO</div>
+                    <div style={{ color: 'white', fontSize: '1.3rem', fontFamily: 'monospace', fontWeight: 'bold' }}>{formatTime(elapsedTime)}</div>
+                  </div>
+                  <div style={{ background: 'rgba(0,255,136,0.1)', padding: '0.8rem 1.2rem', borderRadius: '12px', border: '1px solid rgba(0,255,136,0.3)', textAlign: 'center' }}>
+                    <div style={{ color: '#00FF88', fontSize: '0.8rem', fontWeight: 'bold' }}>BONUS TIEMPO</div>
+                    <div style={{ color: 'white', fontSize: '1.3rem', fontFamily: 'monospace', fontWeight: 'bold' }}>+{getTimeBonus()}</div>
+                  </div>
+                  <div style={{ background: 'rgba(255,215,0,0.1)', padding: '0.8rem 1.2rem', borderRadius: '12px', border: '1px solid rgba(255,215,0,0.3)', textAlign: 'center' }}>
+                    <div style={{ color: '#FFD700', fontSize: '0.8rem', fontWeight: 'bold' }}>SCORE TOTAL</div>
+                    <div style={{ color: 'white', fontSize: '1.3rem', fontFamily: 'monospace', fontWeight: 'bold' }}>{getFinalScore()}</div>
+                  </div>
+                </div>
                <p style={{ fontFamily: 'monospace', fontSize: '1.1rem', color: 'var(--starlight)', margin: '0 0 1.5rem 0', background: '#000', padding: '1rem', borderRadius: '8px' }}>
                  "BZZZRT... ATENCIÓN COMANDANTE... LOS ASTILLEROS NAVALES ESTÁN OPERATIVOS Y LA AMENAZA FUE NEUTRALIZADA. EL CONOCIMIENTO ALIENÍGENA HA SIDO DESBLOQUEADO."
                </p>
 
                {rewardClaimed ? (
                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,215,0,0.2)', color: 'var(--gold-star)', padding: '0.8rem 1.5rem', borderRadius: '30px', fontWeight: 'bold' }}>
-                   ¡1000 Estrellas Transferidas! <Star fill="currentColor" />
+                   ¡{getFinalScore()} Estrellas Transferidas! <Star fill="currentColor" />
                  </div>
                ) : (
                  <button className="btn-primary" onClick={claimReward} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2rem', fontSize: '1.1rem', background: 'var(--gold-star)', color: 'black' }}>
-                    Extraer Tecnología (1000 Estrellas) <Star fill="black" size={20} />
+                    Extraer Tecnología ({getFinalScore()} Estrellas) <Star fill="black" size={20} />
                  </button>
                )}
                

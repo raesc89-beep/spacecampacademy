@@ -26,6 +26,7 @@ export default function AsistenciaGravitacional({ onComplete }) {
   // React state: only for screen switching (start / playing / gameover / won)
   const [screen, setScreen] = useState('start'); // 'start' | 'playing' | 'gameover' | 'won'
   const [finalScore, setFinalScore] = useState(0);
+  const [survivalTime, setSurvivalTime] = useState(0); // seconds survived
 
   // ── Initialize game state ─────────────────────────────────────────────────
   const initState = useCallback(() => {
@@ -41,6 +42,8 @@ export default function AsistenciaGravitacional({ onComplete }) {
       ticks:     0,
       alive:     true,
       stars:     makeStars(80),
+      startTime: Date.now(),
+      elapsedMs: 0,
     };
   }, []);
 
@@ -69,6 +72,7 @@ export default function AsistenciaGravitacional({ onComplete }) {
     if (!gs || !gs.alive) return;
 
     gs.ticks++;
+    gs.elapsedMs = Date.now() - gs.startTime;
 
     // ── Physics ──────────────────────────────────────────────────────────
     const currentGravity = gs.isHeld ? GRAVITY_HOLD : GRAVITY;
@@ -141,7 +145,11 @@ export default function AsistenciaGravitacional({ onComplete }) {
   function endGame(gs, didWin) {
     gs.alive = false;
     cancelAnimationFrame(rafRef.current);
-    setFinalScore(gs.score);
+    const survSecs = Math.floor(gs.elapsedMs / 1000);
+    setSurvivalTime(survSecs);
+    // Time-based scoring: base pass score + 5 pts per second survived
+    const timeScore = gs.score + (survSecs * 5);
+    setFinalScore(timeScore);
     if (didWin) {
       setScreen('won');
     } else {
@@ -198,6 +206,24 @@ export default function AsistenciaGravitacional({ onComplete }) {
     ctx.textAlign   = 'left';
     ctx.fillText(`SCORE: ${gs.score}`, 12, 22);
     ctx.fillText(`PASES: ${gs.passes}/${WIN_PASSES}`, 12, 40);
+
+    // Chronometer (top center)
+    const secs = Math.floor(gs.elapsedMs / 1000);
+    const mm = String(Math.floor(secs / 60)).padStart(2, '0');
+    const ss = String(secs % 60).padStart(2, '0');
+    const ms = String(Math.floor((gs.elapsedMs % 1000) / 10)).padStart(2, '0');
+    ctx.save();
+    ctx.fillStyle   = '#00FF99';
+    ctx.font        = 'bold 16px monospace';
+    ctx.textAlign   = 'center';
+    ctx.shadowColor = '#00FF99';
+    ctx.shadowBlur  = 10;
+    ctx.fillText(`${mm}:${ss}.${ms}`, CANVAS_W / 2, 22);
+    ctx.shadowBlur = 0;
+    ctx.font       = '8px monospace';
+    ctx.fillStyle  = 'rgba(0,255,153,0.6)';
+    ctx.fillText('SUPERVIVENCIA', CANVAS_W / 2, 34);
+    ctx.restore();
 
     // Mini gap indicator bar (right side)
     const barH   = 60;
@@ -375,9 +401,16 @@ export default function AsistenciaGravitacional({ onComplete }) {
         {screen === 'gameover' && (
           <div style={styles.overlay}>
             <p style={{ ...styles.overlayTitle, color: '#ff4d4d' }}>💥 ¡IMPACTO DETECTADO!</p>
-            <p style={styles.overlayText}>
-              Puntuación: <strong style={{ color: '#00e5ff' }}>{finalScore}</strong>
-            </p>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <div style={{ background: 'rgba(0,229,255,0.1)', padding: '8px 16px', borderRadius: '10px', border: '1px solid rgba(0,229,255,0.3)', textAlign: 'center' }}>
+                <div style={{ color: '#00e5ff', fontSize: '10px', fontWeight: 'bold', letterSpacing: '1px' }}>TIEMPO</div>
+                <div style={{ color: 'white', fontSize: '18px', fontFamily: 'monospace', fontWeight: 'bold' }}>{String(Math.floor(survivalTime / 60)).padStart(2, '0')}:{String(survivalTime % 60).padStart(2, '0')}</div>
+              </div>
+              <div style={{ background: 'rgba(255,215,0,0.1)', padding: '8px 16px', borderRadius: '10px', border: '1px solid rgba(255,215,0,0.3)', textAlign: 'center' }}>
+                <div style={{ color: '#FFD700', fontSize: '10px', fontWeight: 'bold', letterSpacing: '1px' }}>SCORE</div>
+                <div style={{ color: 'white', fontSize: '18px', fontFamily: 'monospace', fontWeight: 'bold' }}>{finalScore}</div>
+              </div>
+            </div>
             <button style={{ ...styles.bigBtn, background: '#ff4d4d' }} onClick={startGame}>
               REINTENTAR
             </button>
@@ -389,9 +422,18 @@ export default function AsistenciaGravitacional({ onComplete }) {
           <div style={styles.overlay}>
             <p style={{ ...styles.overlayTitle, color: '#ffd700' }}>🏆 ¡MISIÓN COMPLETA!</p>
             <p style={styles.overlayText}>
-              ¡{WIN_PASSES} anillas superadas!<br />
-              Puntuación: <strong style={{ color: '#00e5ff' }}>{finalScore}</strong>
+              ¡{WIN_PASSES} anillas superadas!
             </p>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <div style={{ background: 'rgba(0,255,153,0.1)', padding: '8px 16px', borderRadius: '10px', border: '1px solid rgba(0,255,153,0.3)', textAlign: 'center' }}>
+                <div style={{ color: '#00FF99', fontSize: '10px', fontWeight: 'bold', letterSpacing: '1px' }}>TIEMPO</div>
+                <div style={{ color: 'white', fontSize: '18px', fontFamily: 'monospace', fontWeight: 'bold' }}>{String(Math.floor(survivalTime / 60)).padStart(2, '0')}:{String(survivalTime % 60).padStart(2, '0')}</div>
+              </div>
+              <div style={{ background: 'rgba(255,215,0,0.1)', padding: '8px 16px', borderRadius: '10px', border: '1px solid rgba(255,215,0,0.3)', textAlign: 'center' }}>
+                <div style={{ color: '#FFD700', fontSize: '10px', fontWeight: 'bold', letterSpacing: '1px' }}>SCORE</div>
+                <div style={{ color: 'white', fontSize: '18px', fontFamily: 'monospace', fontWeight: 'bold' }}>{finalScore}</div>
+              </div>
+            </div>
             <button
               style={{ ...styles.bigBtn, background: '#ffd700', color: '#000d1a' }}
               onClick={() => onComplete && onComplete(finalScore)}
