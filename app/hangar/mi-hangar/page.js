@@ -5,6 +5,7 @@ import { useShipStore } from '@/store/useShipStore';
 import { Rocket, Trash2, ArrowLeft, Loader2, Edit3, Check, X, Archive, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 // Stat pentagon component (inspired by Ace Combat stat radar)
 function StatRadar({ stats }) {
@@ -54,6 +55,7 @@ function RenameField({ currentName, onSave, onCancel }) {
 }
 
 export default function MiHangar() {
+  const router = useRouter();
   const { savedShips, deleteShip, loadShip, renameShip } = useShipStore();
   const [loadingId, setLoadingId] = useState(null);
   const [renamingId, setRenamingId] = useState(null);
@@ -300,7 +302,7 @@ export default function MiHangar() {
                         onClick={() => {
                           setLoadingId(selectedShip.id);
                           loadShip(selectedShip.id);
-                          setTimeout(() => window.location.href = '/hangar/nave', 500);
+                          setTimeout(() => router.push('/hangar/nave'), 500);
                         }}
                         style={{ flex: 1, padding: '11px 0', background: 'rgba(0,228,255,0.1)', border: '1px solid #00E4FF', borderRadius: '8px', color: '#00E4FF', fontWeight: 800, cursor: 'pointer', fontSize: '0.8rem', letterSpacing: '2px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', transition: 'all 0.2s' }}
                         onMouseOver={e => { e.currentTarget.style.background = 'rgba(0,228,255,0.2)'; e.currentTarget.style.boxShadow = '0 0 20px rgba(0,228,255,0.3)'; }}

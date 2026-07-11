@@ -4,11 +4,14 @@
   /* Solar System Color Palette */
   --space-dark: #070B19;
   --space-darker: #04060E;
+  --space-void: #0a0a1a;
   --nebula-purple: #5A2E98;
   --nebula-pink: #C52A85;
   --electric-blue: #00E4FF;
+  --electric-cyan: #00e5ff;
   --starlight: #FFFFFF;
   --gold-star: #FFD700;
+  --magenta: #ff00ff;
   
   /* Planets Accents */
   --planet-mercury: #8C8C8C;
@@ -25,8 +28,52 @@
   --card-border: rgba(255, 255, 255, 0.1);
   --text-main: #FFFFFF;
   --text-muted: rgba(255, 255, 255, 0.6);
+  --text-secondary: rgba(255, 255, 255, 0.4);
   --success: #00FF88;
   --danger: #FF3366;
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Glass / Effects */
+  --glass-bg: rgba(10, 10, 26, 0.75);
+  --glass-bg-light: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(16px);
+  --glow-cyan: 0 0 20px rgba(0, 229, 255, 0.3);
+  --glow-gold: 0 0 20px rgba(255, 215, 0, 0.3);
+  --glow-magenta: 0 0 20px rgba(255, 0, 255, 0.3);
+  --glow-danger: 0 0 20px rgba(255, 51, 102, 0.3);
+
+  /* Typography */
+  --font-display: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
 }
 
 * {

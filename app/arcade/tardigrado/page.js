@@ -4,8 +4,10 @@ import Navbar from '@/components/Navbar';
 import { AntigravityEngine } from '@/lib/antigravity/engine';
 import { Shield, Droplets, Zap, Play, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 export default function TardigradeSurvivalGame() {
+  const router = useRouter();
   const canvasRef = useRef(null);
   const engineRef = useRef(null);
   const [gameState, setGameState] = useState('menu'); // menu, playing, won, lost
@@ -33,7 +35,7 @@ export default function TardigradeSurvivalGame() {
          })
        }).catch(err => console.error('Error logging telemetry:', err));
     }
-  }, [gameState]);
+  }, [gameState, biomass, timeSurvived]);
 
   // Game Loop timers
   useEffect(() => {
@@ -766,7 +768,7 @@ export default function TardigradeSurvivalGame() {
           
           {/* Botón Cerrar Máquina */}
           <button 
-            onClick={() => window.location.href = '/hub/arcade'}
+            onClick={() => router.push('/hub/arcade')}
             style={{
               position: 'absolute',
               top: '15px',
@@ -906,7 +908,7 @@ export default function TardigradeSurvivalGame() {
             <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,255,136,0.3)', backdropFilter: 'blur(5px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', zIndex: 20 }}>
               <h2 style={{ color: 'white', fontSize: '2.5rem', marginBottom: '1rem', textShadow: '0 0 20px #00FF88' }}>¡Evolución Exitosa!</h2>
               <p style={{ color: 'white', marginBottom: '2rem' }}>El espécimen acumuló {biomass} biomasa y prosperó en su microhábitat.</p>
-              <button className="btn-primary" onClick={() => window.location.reload()} style={{ background: '#00FF88', color: 'black' }}>Sincronizar Progreso y Continuar</button>
+              <button className="btn-primary" onClick={() => { setGameState('menu'); setHydration(100); setEnergy(100); setBiomass(0); setTimeSurvived(0); setCryptobiosis(false); setWarning(''); }} style={{ background: '#00FF88', color: 'black' }}>Sincronizar Progreso y Continuar</button>
             </div>
           )}
 
@@ -915,7 +917,7 @@ export default function TardigradeSurvivalGame() {
             <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,42,42,0.3)', backdropFilter: 'blur(5px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', zIndex: 20 }}>
               <h2 style={{ color: 'white', fontSize: '2.5rem', marginBottom: '1rem', textShadow: '0 0 20px #FF2A2A' }}>Fallo Biológico</h2>
               <p style={{ color: 'white', marginBottom: '2rem' }}>El espécimen sucumbió ante los extremos ambientales o depredadores.</p>
-              <button className="btn-primary" onClick={() => window.location.reload()} style={{ background: '#FF2A2A', color: 'white' }}>Reiniciar Simulación</button>
+              <button className="btn-primary" onClick={() => { setGameState('menu'); setHydration(100); setEnergy(100); setBiomass(0); setTimeSurvived(0); setCryptobiosis(false); setWarning(''); }} style={{ background: '#FF2A2A', color: 'white' }}>Reiniciar Simulación</button>
             </div>
           )}
         </div>

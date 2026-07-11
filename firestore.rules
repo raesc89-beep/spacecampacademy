@@ -46,11 +46,13 @@ service cloud.firestore {
     // ─────────────────────────────────────────────
     // COLECCIÓN: modules
     // Cualquier usuario autenticado puede leer el progreso.
-    // Cada usuario puede escribir solo su propio progreso.
+    // Escritura: solo el propio usuario puede escribir su progreso
+    // (el userId debe estar en el documento) o un admin.
     // ─────────────────────────────────────────────
     match /modules/{moduleId} {
       allow read: if isAuthenticated();
-      allow write: if isAuthenticated();
+      allow write: if isAuthenticated() &&
+                      (request.resource.data.userId == request.auth.uid || isAdmin());
     }
 
     // ─────────────────────────────────────────────
@@ -67,13 +69,19 @@ service cloud.firestore {
     // ─────────────────────────────────────────────
     // COLECCIÓN: arcadeScores
     // Todos los usuarios autenticados pueden leer (ranking).
-    // Un usuario solo puede escribir su propio score (docId = userId_gameId).
+    // Un usuario solo puede crear/actualizar su propio score.
+    // El docId debe empezar con su uid. Solo se permiten scores
+    // mayores o iguales al existente (anti-cheat).
     // ─────────────────────────────────────────────
     match /arcadeScores/{scoreId} {
       allow read: if isAuthenticated();
-      // Document ID is userId_gameId, JS enforces personal-best guard.
-      // Allow any authenticated user to write (userId is embedded in docId).
-      allow write: if isAuthenticated();
+      allow create: if isAuthenticated() &&
+                       scoreId.matches(request.auth.uid + '_.*') &&
+                       request.resource.data.userId == request.auth.uid;
+      allow update: if isAuthenticated() &&
+                       scoreId.matches(request.auth.uid + '_.*') &&
+                       request.resource.data.userId == request.auth.uid &&
+                       request.resource.data.score >= resource.data.score;
     }
 
     // ─────────────────────────────────────────────

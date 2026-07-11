@@ -163,11 +163,14 @@ export default function XenoPaleontologia({ onComplete }) {
   const [showMuseum, setShowMuseum] = useState(false);
   const [museumIdx, setMuseumIdx] = useState(0); // current specimen in museum viewer
 
-  // Museum state (localStorage persisted)
-  const [museum, setMuseum] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('xenoMuseum') || '[]'); }
-    catch { return []; }
-  });
+  // Museum state (localStorage persisted — hydrated client-side to avoid SSR crash)
+  const [museum, setMuseum] = useState([]);
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('xenoMuseum');
+      if (stored) setMuseum(JSON.parse(stored));
+    } catch { /* ignore parse errors */ }
+  }, []);
 
   // Reset game to initial state (avoids window.location.reload)
   const resetGame = useCallback(() => {

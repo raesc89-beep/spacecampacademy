@@ -1,9 +1,10 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import { AntigravityEngine } from '@/lib/antigravity/engine';
 import { Rocket, FastForward, Play, Info, AlertTriangle, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 // Image Assets
 const SHIP_IMG_SRC = '/assets/arcade/ship.png';
@@ -16,6 +17,7 @@ const OBSTACLES = [
 // Game has no fixed duration — survive as long as possible
 
 export default function RelativisticDebrisDodger() {
+  const router = useRouter();
   const canvasRef = useRef(null);
   const engineRef = useRef(null);
   const [gameState, setGameState] = useState('menu'); // menu, playing, lost
@@ -117,7 +119,7 @@ export default function RelativisticDebrisDodger() {
         })
       }).catch(err => console.error('Error logging telemetry:', err));
     }
-  }, [gameState]);
+  }, [gameState, velocityC, elapsedTime, health]);
 
   // Stopwatch timer while playing (counts UP)
   useEffect(() => {
@@ -560,7 +562,7 @@ export default function RelativisticDebrisDodger() {
 
           {/* Cerrar Máquina Button */}
           <button
-            onClick={() => window.location.href = '/hub/arcade'}
+            onClick={() => router.push('/hub/arcade')}
             style={{
               position: 'absolute',
               top: '15px',
@@ -693,7 +695,7 @@ export default function RelativisticDebrisDodger() {
               </p>
               <button
                 className="btn-primary"
-                onClick={() => window.location.reload()}
+                onClick={() => { setGameState('menu'); setHealth(3); setElapsedTime(0); setVelocityC(0.3); healthRef.current = 3; elapsedTimeRef.current = 0; }}
                 style={{ background: '#FF2A2A', color: 'white', fontWeight: 'bold', padding: '0.75rem 2rem', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '1rem', fontFamily: 'monospace' }}
               >
                 Rearmar y Reintentar
