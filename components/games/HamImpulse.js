@@ -197,7 +197,7 @@ function ArcGauge({ powerPhase, isPlaying }) {
 }
 
 // ─── Main Component ───────────────────────────────────────────────────────────
-const REQUIRED_WINS = 4;
+const REQUIRED_WINS = 10;
 
 export default function HamImpulse({ onComplete }) {
   const [powerPhase, setPowerPhase] = useState(0);
@@ -205,7 +205,7 @@ export default function HamImpulse({ onComplete }) {
   const [isPlaying, setIsPlaying] = useState(true);
   const [result, setResult] = useState(null);
   const [successCount, setSuccessCount] = useState(0);
-  const [speed, setSpeed] = useState(30);
+  const [speed, setSpeed] = useState(40);
   const [screenFlash, setScreenFlash] = useState(null);
   const { particles, emit } = useParticles();
 
@@ -261,7 +261,7 @@ export default function HamImpulse({ onComplete }) {
           if (onComplete) onComplete(100);
         } else {
           setResult(null);
-          setSpeed(prev => Math.max(10, prev - 6));
+          setSpeed(prev => Math.max(8, prev - 3));
           setIsPlaying(true);
         }
       } else {
@@ -273,8 +273,8 @@ export default function HamImpulse({ onComplete }) {
     }, 1500);
   };
 
-  const takeoffY = -(successCount * 30);
-  const shipScale = 1 + successCount * 0.05;
+  const takeoffY = -(successCount * 15);
+  const shipScale = 1 + successCount * 0.03;
 
   return (
     <div style={{

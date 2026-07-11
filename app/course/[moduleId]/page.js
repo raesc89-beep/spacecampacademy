@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
 import ApophisCountdown from '@/components/ApophisCountdown';
+import InteractiveInfographic_EgyptM11 from '@/components/infographics/InteractiveInfographic_EgyptM11';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -330,7 +331,12 @@ export default function CourseModule() {
             </h1>
           </div>
 
-          {moduleData.contentEs.sections ? (
+          {/* ── INFOGRAPHIC PILOT: egypt_m11 gets interactive infographic ── */}
+          {moduleData.id === 'egypt_m11' && (
+            <InteractiveInfographic_EgyptM11 />
+          )}
+
+          {moduleData.id !== 'egypt_m11' && moduleData.contentEs.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
               <div key={idx} className="glass-card" style={{ padding: '0', overflow: 'hidden', borderLeft: `4px solid ${section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color}` }}>
