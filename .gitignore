@@ -68,13 +68,17 @@ sw_sections.json
 titles_dump.json
 maya_part*.json
 part*.json
+last_payload.json
 
 # temp asset directories
 public/assets/temp/
 public/assets/temp2/
 public/assets/temp3/
 
-# one-off dev/agent scripts in root
+# ─────────────────────────────────────────────
+# One-off dev/agent/migration scripts in root
+# These are NOT part of the application
+# ─────────────────────────────────────────────
 fix*.js
 patch*.js
 expand*.js
@@ -87,6 +91,53 @@ build*.log
 build*.txt
 log.txt
 audit_report.md
+
+# Additional one-off scripts not covered above
+apply_*.js
+clean_hallucinations.js
+cleanup.js
+congruence_fix.js
+copy_assets.js
+cutout.js
+download_*.js
+dump_exo.js
+export_temario.js
+fetch_*.js
+make_*.js
+mega_fix_*.js
+migrate_*.js
+nasa_*.js
+newModules.js
+nuke_locks.js
+perfect_wiki_images.js
+process_*.js
+process-*.js
+replace_links.js
+restore_videos.js
+revert_ss.js
+seed_firebase.mjs
+set_admin*.js
+split_*.js
+super_nasa.js
+test_*.js
+test-*.js
+update_*.js
+
+# ES module scripts
+addEgyptCourseData.js
+expandContent*.mjs
+expandScriptBuilder.mjs
+fixContent.mjs
+fixContent.js
+fixCourseData*.js
+fixPioneros*.js
+fixVideos.js
+generateEgyptContent.mjs
+test_rules.mjs
+
+# Temporary markdown/text exports
+temario_export.md
+temario_oficial.md
 
 # scripts directory (migration/dev scripts)
 scripts/
