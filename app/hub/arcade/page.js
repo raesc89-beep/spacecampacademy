@@ -28,12 +28,12 @@ const GAME_NAMES = {
   trivia:     'Trivia de Asteroides',
   bingo:      'Lotería Cósmica',
   timeline:   'Carrera Espacial',
-  finder:     'Buscador Cósmico',
+  finder:     'Radar de Anomalías',
   laika:      'Encuentra a Laika',
   ham:        'Impulso de Ham',
   astrolabio: 'Astrolabio Cuántico',
   xeno:       'Xeno-Paleontología',
-  gravedad:   'Reparación en Gravedad Cero',
+  gravedad:   'Conecta la Estación',
   slingshot:  'Asistencia Gravitacional',
 };
 
@@ -45,11 +45,11 @@ const GAMES = [
   { id: 'bingo', name: 'Lotería Cósmica', desc: 'Marca la anomalía al instante que el Cómputo la canta.', emoji: '🎫', color: '#FFD700', btnText: 'EXTRAER TARJETA', action: 'inline', category: 'cerebro' },
   { id: 'timeline', name: 'Carrera Espacial', desc: 'Ordena la historia sideral arrastrando hitos NASA.', emoji: '🚀', color: '#8A2BE2', btnText: 'RECONSTRUIR', action: 'inline', category: 'accion' },
   { id: 'ham', name: 'Impulso de Ham', desc: 'Presiona en el momento exacto para salvar a Ham.', emoji: '🐵', color: '#00FF88', btnText: 'IGNICIÓN ORBITAL', action: 'inline', category: 'accion' },
-  { id: 'gravedad', name: 'Gravedad Cero', desc: 'Reconecta los circuitos antes de que se acabe el O₂.', emoji: '⚡', color: '#FF6060', btnText: '🆘 EMERGENCIA', action: 'inline', category: 'accion' },
+  { id: 'gravedad', name: 'Conecta la Estación', desc: 'Lanza el cable a través de cinturones de asteroides para conectar la ISS.', emoji: '🔗', color: '#FF6060', btnText: '🚀 LANZAR CABLE', action: 'inline', category: 'accion' },
   { id: 'slingshot', name: 'Asistencia Gravitacional', desc: 'Usa la gravedad de los planetas para hacer slingshot.', emoji: '🛸', color: '#FFAA44', btnText: '🚀 LANZAR SONDA', action: 'inline', category: 'accion' },
   { id: 'astrolabio', name: 'Astrolabio Cuántico', desc: 'Alinea los anillos del astrolabio medieval.', emoji: '🔭', color: '#00E4FF', btnText: 'CALIBRAR ESFERAS', action: 'inline', category: 'ciencia' },
   { id: 'xeno', name: 'Xeno-Paleontología', desc: 'Excava fósiles alienígenas en el hielo marciano.', emoji: '🏺', color: '#88CCFF', btnText: 'EXCAVAR', action: 'inline', category: 'ciencia' },
-  { id: 'finder', name: 'Buscador Cósmico', desc: 'Descifra acertijos y encuentra objetos escondidos.', emoji: '🔎', color: '#FF4500', btnText: 'ESCANEAR', action: 'inline', category: 'ciencia' },
+  { id: 'finder', name: 'Radar de Anomalías', desc: 'Detecta señales en el radar cósmico antes de que se desvanezcan.', emoji: '📡', color: '#00FF88', btnText: '📡 ACTIVAR RADAR', action: 'inline', category: 'ciencia' },
   { id: 'laika', name: 'Encuentra a Laika', desc: 'Detecta a Laika perdida en la inmensidad gráfica.', emoji: '🐕‍🦺', color: '#FFD700', btnText: 'INICIAR BÚSQUEDA', action: 'inline', category: 'aventura' },
   { id: 'decoder', name: 'Interceptación Estelar', desc: 'Decodifica frecuencias alienígenas en la radio.', emoji: '📻', color: '#00FF88', btnText: 'ESCUCHAR FRECUENCIAS', action: 'link', href: '/minigames/decoder', category: 'aventura' },
   { id: 'creator', name: 'Génesis Planetario', desc: 'Simulador experimental. Construye un exoplaneta.', emoji: '🌍', color: '#ff5722', btnText: 'INICIAR MÁQUINA', action: 'link', href: '/minigames/creator', category: 'aventura' },
@@ -583,7 +583,7 @@ export default function ArcadeExoplanet() {
                        activeGame === 'slingshot'  ? 'Surfea la Gravedad' :
                        activeGame === 'bingo'      ? 'Bingo Espacial' :
                        activeGame === 'timeline'   ? 'Línea del Tiempo' :
-                       activeGame === 'finder'     ? 'Buscador Estelar' :
+                       activeGame === 'finder'     ? 'Radar de Anomalías' :
                        'Simulador'
                      }
                   </h2>
