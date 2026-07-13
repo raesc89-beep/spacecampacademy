@@ -290,18 +290,21 @@ export default function CourseModule() {
           <Home size={13} /> Estación Orbital
         </Link>
         <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
-        <Link href="/dashboard/misiones" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', transition: 'color 0.2s' }}>
-          Base de Misiones
-        </Link>
-        {hubInfo && (
+        {hubInfo ? (
           <>
-            <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
-            <Link href={hubInfo.path} style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', transition: 'color 0.2s' }}>
-              {hubInfo.name}
+            <Link href={hubInfo.path} style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 500 }}>
+              ← {hubInfo.name}
             </Link>
+            <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
+          </>
+        ) : (
+          <>
+            <Link href="/dashboard/misiones" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', transition: 'color 0.2s' }}>
+              Base de Misiones
+            </Link>
+            <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
           </>
         )}
-        <span style={{ color: 'rgba(255,255,255,0.2)' }}>›</span>
         <span style={{ color: moduleData.color, fontWeight: 600 }}>{moduleData.titleEs}</span>
       </div>
       {/* Dynamic Rotating Planet Background */}
