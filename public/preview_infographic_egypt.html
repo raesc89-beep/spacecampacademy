@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview: Infografía Interactiva — El Nilo de Nut</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: radial-gradient(ellipse at center, #12123a 0%, #0a0a1a 70%);
+      min-height: 100vh;
+      color: white;
+      padding: 2rem;
+    }
+    .infographic-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, #0B0E2D 0%, #1A1040 40%, #0B0E2D 100%);
+      border-radius: 24px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(232,201,106,0.12);
+      box-shadow: 0 0 60px rgba(11,14,45,0.8), inset 0 0 80px rgba(0,0,0,0.3);
+    }
+
+    /* Star field */
+    .star-field {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      border-radius: 50%;
+      background: #fff;
+      animation: twinkle var(--dur) ease-in-out infinite;
+      animation-delay: var(--delay);
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: var(--base-o); }
+      50% { opacity: 1; }
+    }
+
+    /* Header */
+    .nut-header {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      margin-bottom: -10px;
+    }
+    .nut-header h1 {
+      font-size: 1.5rem;
+      color: #E8C96A;
+      font-family: Georgia, serif;
+      letter-spacing: 3px;
+      margin-bottom: 0.3rem;
+      text-shadow: 0 0 20px rgba(232,201,106,0.4);
+    }
+    .nut-header h2 {
+      font-size: 0.85rem;
+      color: rgba(232,201,106,0.6);
+      font-family: monospace;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    /* Progress */
+    .progress-container {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.6rem 1rem;
+      background: rgba(255,255,255,0.03);
+      border-radius: 30px;
+      border: 1px solid rgba(232,201,106,0.15);
+      max-width: 400px;
+      margin: 1.5rem auto;
+      position: relative;
+      z-index: 2;
+    }
+    .progress-bar {
+      flex: 1;
+      height: 6px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #E8C96A, #FFD700);
+      border-radius: 3px;
+      box-shadow: 0 0 8px rgba(232,201,106,0.4);
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    .progress-text {
+      font-size: 0.75rem;
+      color: #E8C96A;
+      font-family: monospace;
+      font-weight: bold;
+      min-width: 45px;
+      text-align: right;
+    }
+
+    /* Instruction */
+    .instruction {
+      text-align: center;
+      color: rgba(232,201,106,0.7);
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    /* Nodes Grid */
+    .nodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 0.8rem;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Node Button */
+    .node-btn {
+      background: rgba(255,255,255,0.03);
+      border: 2px solid rgba(232,201,106,0.25);
+      border-radius: 16px;
+      padding: 1.2rem 1rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      font-family: 'Outfit', sans-serif;
+    }
+    .node-btn:hover {
+      transform: scale(1.05) translateY(-3px);
+    }
+    .node-btn.active {
+      border-color: var(--node-color);
+      background: linear-gradient(135deg, color-mix(in srgb, var(--node-color) 15%, transparent), color-mix(in srgb, var(--node-color) 5%, transparent));
+      box-shadow: 0 0 25px color-mix(in srgb, var(--node-color) 40%, transparent), 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .node-btn .hieroglyph {
+      position: absolute;
+      top: 5px;
+      right: 8px;
+      font-size: 1.4rem;
+      opacity: 0.08;
+      color: var(--node-color);
+      font-family: serif;
+      pointer-events: none;
+    }
+    .node-btn .emoji {
+      font-size: 2rem;
+      line-height: 1;
+      transition: filter 0.3s;
+    }
+    .node-btn.active .emoji {
+      filter: drop-shadow(0 0 8px var(--node-color));
+      animation: emoji-pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes emoji-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+    .node-btn .title {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-align: center;
+      line-height: 1.3;
+      transition: color 0.3s;
+    }
+    .node-btn.active .title {
+      color: var(--node-color);
+    }
+    .node-btn .active-bar {
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      right: 20%;
+      height: 3px;
+      background: var(--node-color);
+      border-radius: 3px 3px 0 0;
+      box-shadow: 0 0 10px var(--node-color);
+      display: none;
+    }
+    .node-btn.active .active-bar { display: block; }
+
+    /* Content Panel */
+    .content-panel {
+      background: rgba(15, 15, 40, 0.85);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 2rem;
+      position: relative;
+      z-index: 3;
+      margin-top: 0.5rem;
+      animation: panel-in 0.4s ease-out;
+      display: none;
+    }
+    .content-panel.visible { display: block; }
+    @keyframes panel-in {
+      from { opacity: 0; transform: translateY(20px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .content-panel .close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: rgba(255,255,255,0.5);
+      font-size: 1.1rem;
+      transition: all 0.2s;
+    }
+    .content-panel .close-btn:hover {
+      background: rgba(255,255,255,0.15);
+      color: white;
+    }
+    .content-panel .panel-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .content-panel .panel-emoji {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+    .content-panel .panel-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .content-panel .hieroglyph-row {
+      font-size: 1.5rem;
+      opacity: 0.12;
+      font-family: serif;
+    }
+    .content-panel .paragraphs {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .content-panel .paragraphs p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.85);
+    }
+    .content-panel .fact-box {
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+    .content-panel .fact-box p {
+      font-style: italic;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.95rem;
+    }
+    .content-panel .fact-box .sparkle {
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 1rem;
+    }
+
+    /* Completion */
+    .completion {
+      text-align: center;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: rgba(232,201,106,0.08);
+      border-radius: 16px;
+      border: 1px solid rgba(232,201,106,0.25);
+      position: relative;
+      z-index: 2;
+      display: none;
+      animation: panel-in 0.5s ease-out;
+    }
+    .completion.visible { display: block; }
+    .completion p:first-child {
+      color: #FFD700;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .completion p:last-child {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      margin-top: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="infographic-container" id="infographic">
+  <!-- Star field -->
+  <div class="star-field" id="starField"></div>
+
+  <!-- Nut Header SVG -->
+  <div class="nut-header">
+    <svg viewBox="0 0 600 120" style="width:100%;max-width:600px;height:auto;filter:drop-shadow(0 0 10px rgba(232,201,106,0.3))">
+      <path d="M 30 110 Q 80 20, 300 10 Q 520 20, 570 110" fill="none" stroke="url(#nutGrad)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="80" cy="30" r="3" fill="#FFD700" opacity="0.6"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.3s" repeatCount="indefinite"/></circle>
+      <circle cx="150" cy="22" r="3" fill="#FFD700" opacity="0.7"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="220" cy="17" r="3" fill="#FFD700" opacity="0.5"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="300" cy="25" r="4" fill="#FFD700" opacity="0.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="380" cy="17" r="3" fill="#FFD700" opacity="0.6"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="450" cy="22" r="3" fill="#FFD700" opacity="0.7"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.1s" repeatCount="indefinite"/></circle>
+      <circle cx="520" cy="30" r="3" fill="#FFD700" opacity="0.5"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="30" cy="110" r="5" fill="rgba(232,201,106,0.6)"/>
+      <circle cx="570" cy="110" r="5" fill="rgba(232,201,106,0.6)"/>
+      <circle cx="300" cy="8" r="7" fill="rgba(232,201,106,0.8)" style="filter:drop-shadow(0 0 8px rgba(232,201,106,0.5))"/>
+      <defs>
+        <linearGradient id="nutGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="rgba(232,201,106,0.3)"/>
+          <stop offset="50%" stop-color="rgba(232,201,106,0.9)"/>
+          <stop offset="100%" stop-color="rgba(232,201,106,0.3)"/>
+        </linearGradient>
+      </defs>
+      <text x="300" y="80" text-anchor="middle" fill="#E8C96A" font-size="18" font-weight="bold" font-family="Georgia, serif" letter-spacing="3">EL NILO DE NUT</text>
+      <text x="300" y="100" text-anchor="middle" fill="rgba(232,201,106,0.6)" font-size="11" font-family="monospace" letter-spacing="2">LA VÍA LÁCTEA EN EL ANTIGUO EGIPTO</text>
+    </svg>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-container">
+    <span style="font-size:14px">⭐</span>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-text" id="progressText">0/8</span>
+  </div>
+
+  <!-- Instruction -->
+  <p class="instruction" id="instruction">▶ Haz clic en cada tema para explorar ▶</p>
+
+  <!-- Nodes Grid -->
+  <div class="nodes-grid" id="nodesGrid"></div>
+
+  <!-- Content Panel -->
+  <div class="content-panel" id="contentPanel">
+    <button class="close-btn" id="closeBtn" title="Cerrar">✕</button>
+    <div class="panel-header">
+      <span class="panel-emoji" id="panelEmoji"></span>
+      <div>
+        <div class="panel-title" id="panelTitle"></div>
+        <div class="hieroglyph-row" id="panelHiero"></div>
+      </div>
+    </div>
+    <div class="paragraphs" id="panelContent"></div>
+  </div>
+
+  <!-- Completion -->
+  <div class="completion" id="completion">
+    <p>🏆 ¡Has explorado todos los secretos del Nilo de Nut!</p>
+    <p>Ahora puedes tomar el quiz para ganar tu insignia de Navegante Galáctico</p>
+  </div>
+</div>
+
+<script>
+// ── Content Data ──
+const NODES = [
+  { id: 'nut', emoji: '🌙', title: '¿Quién es Nut?', color: '#C4A7E7', icon: '𓇯', content: [
+    'Imagina que pudieras ver a una persona gigante estirándose de un lado al otro del cielo. ¡Así veían los antiguos egipcios a Nut (se pronuncia "Nut"), la diosa del cielo!',
+    'Los egipcios imaginaban a Nut como una mujer enorme que se arqueaba sobre la Tierra. Sus dedos de los pies tocaban un horizonte y sus manos el otro. Su cuerpo formaba la bóveda del cielo.',
+    'Las estrellas eran joyas brillantes pintadas en su piel. Cada noche, Nut se tragaba al Sol por el oeste y lo hacía nacer de nuevo por el este cada mañana. ¡Era como si ella fuera el cielo entero!',
+    '¿Sabías que...? Nut aparece pintada dentro de muchos sarcófagos egipcios. Los difuntos eran colocados "dentro del vientre de Nut", esperando renacer como estrellas nuevas. ¡Una idea preciosa!',
+  ]},
+  { id: 'nilo-cielo', emoji: '🌊', title: 'El Nilo del Cielo', color: '#7EC8E3', icon: '𓈖', content: [
+    '¿Has visto alguna vez la Vía Láctea en una noche sin luces de ciudad? Es una franja de luz blanca que cruza todo el cielo, como un río de estrellas.',
+    'Los egipcios la veían claramente porque vivían en el desierto, sin contaminación lumínica. Para ellos, esa franja brillante era un río celeste: ¡el reflejo del río Nilo en el cielo!',
+    'El Nilo era el río más importante de Egipto. Les daba agua, comida y vida. Así que imaginar otro Nilo allá arriba, hecho de estrellas, era una forma hermosa de conectar el cielo con la Tierra.',
+    'Dato curioso: En julio y agosto, cuando el Nilo se inundaba y fertilizaba los campos, la Vía Láctea estaba en su posición más visible en el cielo nocturno. ¡El Nilo de arriba y el de abajo coincidían!',
+  ]},
+  { id: 'arriba-abajo', emoji: '✨', title: 'Como es Arriba, es Abajo', color: '#FFD700', icon: '𓂀', content: [
+    'Los egipcios tenían una idea muy bonita: lo que pasa en el cielo también pasa en la Tierra. Si ves un río de estrellas arriba, hay un río de agua abajo.',
+    'Este principio se resume en una frase famosa: "Como es arriba, es abajo." Es como decir que el cielo es un espejo de la Tierra, y la Tierra es un espejo del cielo.',
+    'Por eso construían templos alineados con las estrellas. Querían que sus edificios en la Tierra coincidieran exactamente con lo que veían en el cielo.',
+    'Ejemplo fácil: Piensa en cuando ves la Luna reflejada en un lago. Hay una Luna arriba y otra "abajo" en el agua. Los egipcios pensaban que todo el universo funcionaba así.',
+  ]},
+  { id: 'orion-piramides', emoji: '🔺', title: 'Orión y las Pirámides', color: '#E8C96A', icon: '𓉔', content: [
+    'Las tres famosas pirámides de Guiza están alineadas de una forma muy curiosa. En 1994, Robert Bauval propuso una hipótesis interesante:',
+    'Las tres pirámides podrían imitar la posición de las tres estrellas del Cinturón de Orión (Alnitak, Alnilam y Mintaka). Y así como esas estrellas están "a orillas" de la Vía Láctea, las pirámides están a orillas del Nilo.',
+    '¡Importante! Esta es una hipótesis, no un hecho comprobado. Algunos científicos la apoyan, pero otros dicen que las coincidencias no son tan exactas. En ciencia, siempre es bueno cuestionar.',
+    'Lo que sí sabemos con certeza es que los egipcios conocían muy bien la constelación de Orión. La asociaban con Osiris, el dios de la resurrección. Y la estrella Sirio era la diosa Isis.',
+  ]},
+  { id: 'sagitario', emoji: '🕳️', title: 'El Monstruo del Centro', color: '#FF6B6B', icon: '𓆣', content: [
+    '¿Ves la parte más brillante y gorda de la Vía Láctea? Está en la dirección de la constelación de Sagitario. Ahí se esconde algo increíble: ¡un agujero negro supermasivo!',
+    'Se llama Sagitario A* y tiene la masa de 4 millones de soles. Es tan poderoso que ni la luz puede escapar de él.',
+    'En 2020, los científicos Reinhard Genzel y Andrea Ghez ganaron el Premio Nobel de Física por demostrar que este agujero negro realmente existe.',
+    'Dato curioso: Si los egipcios hubieran sabido esto, seguramente habrían dicho que Apofis, la serpiente del caos, estaba ahí en el centro, devorando la luz.',
+  ]},
+  { id: 'viaje-faraon', emoji: '👑', title: 'El Viaje del Faraón', color: '#F5A623', icon: '𓋹', content: [
+    'Los "Textos de las Pirámides" son los textos religiosos más antiguos del mundo, ¡escritos hace unos 4,400 años!',
+    'Estos textos describen un viaje épico: cuando el faraón moría, su alma viajaba por la Vía Láctea para reunirse con Osiris en la constelación de Orión.',
+    'El faraón era identificado con Osiris, y la reina con Isis (la estrella Sirio). Morir no era el final, sino el comienzo de un viaje cósmico entre las estrellas.',
+    'Los techos de las tumbas se pintaban con estrellas doradas sobre fondo azul. El difunto estaba literalmente "dentro del vientre de Nut".',
+  ]},
+  { id: 'navegantes', emoji: '⛵', title: '¡Navegantes del Nilo!', color: '#4ECDC4', icon: '𓊝', content: [
+    'La Vía Láctea no solo era bonita: ¡era útil! Los marineros egipcios usaban esa franja de luz para orientarse por la noche.',
+    'Combinada con la estrella polar y las constelaciones conocidas, la Vía Láctea era parte del "GPS antiguo" que permitía navegar desde Egipto hasta Creta y Fenicia.',
+    'En el desierto del Sahara, el cielo nocturno es tan oscuro que la Vía Láctea proyecta una sombra tenue sobre el suelo. ¡Una sombra hecha de luz de estrellas!',
+    'Dato increíble: Los astrónomos modernos instalan sus telescopios en desiertos remotos por la misma razón: máxima oscuridad y aire limpio.',
+  ]},
+  { id: 'galaxia-numeros', emoji: '🔢', title: 'Nuestra Galaxia en Números', color: '#00E4FF', icon: '𓊹', content: [
+    'La Vía Láctea tiene entre 100,000 y 200,000 años luz de diámetro. ¡La luz tarda 100,000 años en cruzarla!',
+    'Contiene entre 100,000 millones y 400,000 millones de estrellas. Nuestro Sol es solo UNA de ellas. Y tarda 225 millones de años en dar una vuelta alrededor del centro.',
+    'La galaxia más cercana es Andrómeda, a 2.5 millones de años luz de distancia. Y más allá hay miles de millones de otras galaxias.',
+    '¿Sabías que...? La palabra griega "galaxias" significa "leche", y de ahí viene "galaxia". Los egipcios simplemente la llamaban: "el Nilo del cielo". 🌌',
+  ]},
+];
+
+let activeNode = null;
+const explored = new Set();
+
+// Generate stars
+const starField = document.getElementById('starField');
+for (let i = 0; i < 80; i++) {
+  const star = document.createElement('div');
+  star.className = 'star';
+  const size = Math.random() * 2 + 0.5;
+  const opacity = Math.random() * 0.5 + 0.15;
+  star.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;width:${size}px;height:${size}px;--dur:${Math.random()*4+2}s;--delay:${i*0.06}s;--base-o:${opacity};box-shadow:0 0 ${size*3}px rgba(200,220,255,${opacity})`;
+  starField.appendChild(star);
+}
+
+// Generate node buttons
+const nodesGrid = document.getElementById('nodesGrid');
+NODES.forEach(node => {
+  const btn = document.createElement('button');
+  btn.className = 'node-btn';
+  btn.style.setProperty('--node-color', node.color);
+  btn.dataset.id = node.id;
+  btn.innerHTML = `
+    <span class="hieroglyph">${node.icon}</span>
+    <span class="emoji">${node.emoji}</span>
+    <span class="title">${node.title}</span>
+    <div class="active-bar"></div>
+  `;
+  btn.addEventListener('click', () => handleNodeClick(node.id));
+  nodesGrid.appendChild(btn);
+});
+
+function handleNodeClick(nodeId) {
+  if (activeNode === nodeId) {
+    activeNode = null;
+    renderPanel();
+    updateButtons();
+    return;
+  }
+  activeNode = nodeId;
+  explored.add(nodeId);
+  updateProgress();
+  renderPanel();
+  updateButtons();
+
+  if (explored.size > 0) {
+    document.getElementById('instruction').style.display = 'none';
+  }
+  if (explored.size === NODES.length) {
+    document.getElementById('completion').classList.add('visible');
+  }
+}
+
+function updateButtons() {
+  document.querySelectorAll('.node-btn').forEach(btn => {
+    if (btn.dataset.id === activeNode) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+function updateProgress() {
+  const pct = (explored.size / NODES.length) * 100;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = explored.size + '/' + NODES.length;
+}
+
+function renderPanel() {
+  const panel = document.getElementById('contentPanel');
+  if (!activeNode) {
+    panel.classList.remove('visible');
+    return;
+  }
+  const node = NODES.find(n => n.id === activeNode);
+  if (!node) return;
+
+  document.getElementById('panelEmoji').textContent = node.emoji;
+  document.getElementById('panelTitle').textContent = node.title;
+  document.getElementById('panelTitle').style.color = node.color;
+  document.getElementById('panelHiero').textContent = `${node.icon} ${node.icon} ${node.icon}`;
+  document.getElementById('panelHiero').style.color = node.color;
+  panel.style.borderColor = node.color + '40';
+
+  const contentDiv = document.getElementById('panelContent');
+  contentDiv.innerHTML = '';
+  node.content.forEach((para, i) => {
+    const isFact = para.startsWith('¿Sabías') || para.startsWith('Dato') || para.startsWith('¡Importante') || para.startsWith('Ejemplo');
+    if (isFact) {
+      const box = document.createElement('div');
+      box.className = 'fact-box';
+      box.style.background = node.color + '10';
+      box.style.border = `1px solid ${node.color}30`;
+      box.innerHTML = `<span class="sparkle">✨</span><p>${para}</p>`;
+      contentDiv.appendChild(box);
+    } else {
+      const p = document.createElement('p');
+      p.textContent = para;
+      if (i > 0) {
+        p.style.paddingLeft = '0.5rem';
+        p.style.borderLeft = `2px solid ${node.color}20`;
+      }
+      contentDiv.appendChild(p);
+    }
+  });
+
+  panel.classList.add('visible');
+  panel.style.animation = 'none';
+  panel.offsetHeight; // trigger reflow
+  panel.style.animation = 'panel-in 0.4s ease-out';
+}
+
+document.getElementById('closeBtn').addEventListener('click', () => {
+  activeNode = null;
+  renderPanel();
+  updateButtons();
+});
+</script>
+
+</body>
+</html>
