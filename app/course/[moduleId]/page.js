@@ -356,7 +356,8 @@ export default function CourseModule() {
             <InteractiveInfographic_EgyptM11 />
           )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.contentEs.sections ? (
+          {moduleData.id !== 'egypt_m11' && (
+            moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
               <div key={idx} className="glass-card" style={{ padding: '0', overflow: 'hidden', borderLeft: `4px solid ${section.style === 'highlight' ? 'var(--gold-star)' : moduleData.color}` }}>
@@ -401,8 +402,8 @@ export default function CourseModule() {
                 </div>
               </div>
             ))
-          ) : (
-            // FORMATO VIEJO 1.0 (Compatibilidad Inversa)
+          ) : moduleData.contentEs?.facts ? (
+            // FORMATO VIEJO 1.0 (Compatibilidad Inversa) — only if facts exist
             <div className="glass-card" style={{ borderLeft: `4px solid ${moduleData.color}` }}>
                <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                  <BookOpen size={24} color={moduleData.color} />
@@ -414,6 +415,7 @@ export default function CourseModule() {
                   {moduleData.contentEs.facts.map((fact, i) => <li key={i}>{fact}</li>)}
                </ul>
             </div>
+          ) : null
           )}
 
           {/* Sección de Bibliografía Oficial */}
