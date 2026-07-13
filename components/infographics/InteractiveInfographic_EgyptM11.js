@@ -515,7 +515,7 @@ export default function InteractiveInfographic_EgyptM11() {
       {/* Nodes Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))',
         gap: '0.8rem',
         position: 'relative',
         zIndex: 2,
@@ -569,19 +569,6 @@ export default function InteractiveInfographic_EgyptM11() {
         )}
       </AnimatePresence>
 
-      {/* Responsive styles */}
-      <style jsx global>{`
-        @media (max-width: 768px) {
-          .infographic-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-          }
-        }
-        @media (max-width: 480px) {
-          .infographic-grid {
-            grid-template-columns: 1fr 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

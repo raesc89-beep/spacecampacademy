@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, AlertTriangle, CheckCircle, Star, Thermometer, ShieldAlert, AlignVerticalSpaceAround } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function CreatorMinigame() {
   const { user, userData, loading } = useAuth();
@@ -90,7 +91,7 @@ export default function CreatorMinigame() {
     let glow = '';
     let atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.8)';
 
-    const createPlanetDiv = (bgUrl, size = 'auto 130%', extraStyle = {}) => (
+    const createPlanetDiv = (bgUrl, size = '200% 100%', extraStyle = {}) => (
       <div style={{ 
         width: '100%', height: '100%', display: 'flex', 
         animation: 'planetSpin 30s linear infinite', 
@@ -106,54 +107,54 @@ export default function CreatorMinigame() {
     );
 
     if (planetState === 'barren') {
-      planetElement = createPlanetDiv('/assets/gen_barren_texture.png', 'auto 130%');
+      planetElement = createPlanetDiv('/assets/gen_barren_texture.png');
       glow = '0 0 15px rgba(140, 118, 98, 0.3)';
     }
 
     if (planetState === 'magma') {
-      planetElement = createPlanetDiv('/assets/gen_magma_texture.png', 'auto 130%');
+      planetElement = createPlanetDiv('/assets/gen_magma_texture.png');
       glow = '0 0 50px rgba(255, 87, 34, 0.9)';
     }
 
     if (planetState === 'desertico') {
-      planetElement = createPlanetDiv('/assets/gen_desertico_texture.png', 'auto 130%');
+      planetElement = createPlanetDiv('/assets/gen_desertico_texture.png');
       glow = '0 0 40px rgba(200, 100, 50, 0.8)';
       atmosphereShadow = 'inset -40px -40px 60px rgba(0,0,0,0.9), inset 10px 10px 40px rgba(200, 100, 50, 0.4)';
     }
 
     if (planetState === 'venenoso') {
-      planetElement = createPlanetDiv('/assets/gen_venenoso_texture.png', 'auto 130%');
+      planetElement = createPlanetDiv('/assets/gen_venenoso_texture.png');
       glow = '0 0 60px rgba(0, 255, 100, 0.8)';
     }
 
     if (planetState === 'acuatico') {
-      planetElement = createPlanetDiv('/assets/upload_1.png', 'auto 130%');
+      planetElement = createPlanetDiv('/assets/upload_1.png');
       glow = '0 0 40px rgba(0, 153, 255, 0.8)';
     }
 
     if (planetState === 'anillos') {
-      planetElement = createPlanetDiv('/assets/gen_anillos_texture.png', 'auto 130%');
+      planetElement = createPlanetDiv('/assets/gen_anillos_texture.png');
       glow = '0 0 40px rgba(255, 153, 51, 0.6)';
     }
 
     if (planetState === 'alien') {
-      planetElement = createPlanetDiv('/assets/gen_alien_texture.png', 'auto 130%');
+      planetElement = createPlanetDiv('/assets/gen_alien_texture.png');
       glow = '0 0 60px rgba(255, 0, 255, 0.8)';
     }
 
     if (planetState === 'ice') {
       // Using Aquatic texture but processed via CSS to look ultra frozen and glacial
-      planetElement = createPlanetDiv('/assets/upload_1.png', 'auto 100%', { filter: 'grayscale(1) brightness(1.7) contrast(1.2)' });
+      planetElement = createPlanetDiv('/assets/upload_1.png', '200% 100%', { filter: 'grayscale(1) brightness(1.7) contrast(1.2)' });
       glow = '0 0 40px rgba(200, 240, 255, 0.9)';
     }
 
     if (planetState === 'gas') {
-      planetElement = createPlanetDiv('/assets/gen_gas.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/gen_gas.png');
       glow = '0 0 40px rgba(212, 225, 255, 0.7)';
     }
 
     if (planetState === 'habitable') {
-      planetElement = createPlanetDiv('/assets/upload_4.png', 'auto 100%');
+      planetElement = createPlanetDiv('/assets/upload_4.png');
       glow = '0 0 50px rgba(100, 255, 255, 0.7)';
       atmosphereShadow = 'inset -30px -30px 50px rgba(0,0,0,0.8), inset 10px 10px 30px rgba(255, 255, 255, 0.2)';
     }
@@ -271,10 +272,10 @@ export default function CreatorMinigame() {
               )}
               {rewardClaimed && (
                  <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: 'auto' }}>
-                   <div style={{ textAlign: 'center', padding: '1rem', border: '1px solid var(--gold-star)', background: 'rgba(255,215,0,0.1)', color: 'var(--gold-star)', borderRadius: '12px', fontWeight: 'bold', display: 'flex', center: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                   <div style={{ textAlign: 'center', padding: '1rem', border: '1px solid var(--gold-star)', background: 'rgba(255,215,0,0.1)', color: 'var(--gold-star)', borderRadius: '12px', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
                       ¡Planeta Logrado! Base de estrellas incrementada. <CheckCircle />
                    </div>
-                   <Link href="/hub/solar-system" className="btn-secondary" style={{ textAlign: 'center', padding: '1rem' }}>
+                   <Link href="/hub/arcade" className="btn-secondary" style={{ textAlign: 'center', padding: '1rem' }}>
                       Volver al Mapa Estelar
                    </Link>
                  </div>

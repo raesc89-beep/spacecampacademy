@@ -244,7 +244,7 @@ export default function CourseModule() {
   const isPluto = moduleData.id === 'pluto';
   const isSun = moduleData.id === 'sun';
   
-  const planetImageName = isEgypt ? moduleData.contentEs.sections[0].image.replace('/assets/', '') :
+  const planetImageName = isEgypt ? (moduleData.contentEs?.sections?.[0]?.image?.replace('/assets/', '') || 'egypt_placeholder.png') :
                           (isRobot ? `rovers/ai_${moduleData.id.replace('robots_', '')}.png` :
                           (isPionero ? `pioneros/hub_${moduleData.id.replace('pioneros_', '')}.png` :
                           (isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 

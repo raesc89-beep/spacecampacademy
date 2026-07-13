@@ -1,595 +1,671 @@
 'use client';
 
-import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 
-// ─── Node labels (space station components) ───────────────────────────────────
-const NODE_LABELS = [
-  { key: 'O2',    label: 'O₂',     color: '#00e5ff' },
-  { key: 'PWR',   label: 'PWR',    color: '#ffd700' },
-  { key: 'COMM',  label: 'COMM',   color: '#ff6b6b' },
-  { key: 'NAV',   label: 'NAV',    color: '#7bed9f' },
-  { key: 'LIFE',  label: 'LIFE',   color: '#cc66ff' },
-  { key: 'DOCK',  label: 'DOCK',   color: '#ff8844' },
-  { key: 'SOLAR', label: 'SOLAR',  color: '#ffee00' },
-  { key: 'THRML', label: 'THRML',  color: '#44aaff' },
-  { key: 'GYRO',  label: 'GYRO',   color: '#ff44aa' },
-  { key: 'FUEL',  label: 'FUEL',   color: '#88ff44' },
-  { key: 'SHIELD',label: 'SHLD',   color: '#aa88ff' },
-  { key: 'AI',    label: 'A.I.',   color: '#ff6600' },
+// ═══════════════════════════════════════════════════════
+//   CONECTA LA ESTACIÓN — Cable Launch Through Asteroid Belts
+// ═══════════════════════════════════════════════════════
+
+const CANVAS_W = 800;
+const CANVAS_H = 500;
+const MAX_LIVES = 5;
+const TOTAL_CONNECTIONS = 4;
+
+// Connection point positions on the ISS (right side)
+const CONN_POINTS = [
+  { id: 'O2',   label: 'O₂',   y: 100, color: '#00e5ff' },
+  { id: 'PWR',  label: 'PWR',  y: 200, color: '#ffd700' },
+  { id: 'COMM', label: 'COMM', y: 300, color: '#ff6b6b' },
+  { id: 'NAV',  label: 'NAV',  y: 400, color: '#7bed9f' },
 ];
 
-// ─── Line segment intersection check ──────────────────────────────────────────
-function segmentsIntersect(p1, p2, p3, p4) {
-  const d1x = p2.x - p1.x, d1y = p2.y - p1.y;
-  const d2x = p4.x - p3.x, d2y = p4.y - p3.y;
-  const cross = d1x * d2y - d1y * d2x;
-  if (Math.abs(cross) < 1e-10) return false;
-  const t = ((p3.x - p1.x) * d2y - (p3.y - p1.y) * d2x) / cross;
-  const u = ((p3.x - p1.x) * d1y - (p3.y - p1.y) * d1x) / cross;
-  return t > 0.01 && t < 0.99 && u > 0.01 && u < 0.99;
+// Asteroid belt configuration per level
+const BELT_CONFIGS = [
+  { count: 5, speed: 1.2, gapSize: 120 },   // Belt 1 (leftmost)
+  { count: 6, speed: -1.5, gapSize: 100 },   // Belt 2 (middle)
+  { count: 7, speed: 1.8, gapSize: 90 },     // Belt 3 (rightmost)
+];
+
+function createAsteroid(beltX, canvasH, idx, total, speed) {
+  const spacing = canvasH / total;
+  return {
+    x: beltX + (Math.random() - 0.5) * 30,
+    y: idx * spacing + Math.random() * 20,
+    radius: 12 + Math.random() * 16,
+    speed: speed * (0.8 + Math.random() * 0.4),
+    rotation: Math.random() * Math.PI * 2,
+    rotSpeed: (Math.random() - 0.5) * 0.03,
+    vertices: Array.from({ length: 7 + Math.floor(Math.random() * 4) }, (_, i) => {
+      const angle = (i / (7 + Math.floor(Math.random() * 4))) * Math.PI * 2;
+      const variation = 0.6 + Math.random() * 0.4;
+      return { angle, r: variation };
+    }),
+    shade: Math.floor(Math.random() * 3), // 0=dark, 1=med, 2=light
+  };
 }
 
-// ─── Count edge crossings ────────────────────────────────────────────────────
-function countCrossings(nodes, edges) {
-  let count = 0;
-  for (let i = 0; i < edges.length; i++) {
-    for (let j = i + 1; j < edges.length; j++) {
-      const e1 = edges[i], e2 = edges[j];
-      // Skip edges that share a node
-      if (e1[0] === e2[0] || e1[0] === e2[1] || e1[1] === e2[0] || e1[1] === e2[1]) continue;
-      if (segmentsIntersect(nodes[e1[0]], nodes[e1[1]], nodes[e2[0]], nodes[e2[1]])) {
-        count++;
-      }
-    }
-  }
-  return count;
-}
-
-// ─── Check if a specific edge is crossed by any other ────────────────────────
-function isEdgeCrossed(edgeIdx, nodes, edges) {
-  const e1 = edges[edgeIdx];
-  for (let j = 0; j < edges.length; j++) {
-    if (j === edgeIdx) continue;
-    const e2 = edges[j];
-    if (e1[0] === e2[0] || e1[0] === e2[1] || e1[1] === e2[0] || e1[1] === e2[1]) continue;
-    if (segmentsIntersect(nodes[e1[0]], nodes[e1[1]], nodes[e2[0]], nodes[e2[1]])) {
-      return true;
-    }
-  }
-  return false;
-}
-
-// ─── Generate a planar graph level ───────────────────────────────────────────
-function generateLevel(numNodes) {
-  const W = 700, H = 500, PAD = 60;
-
-  // Place solution positions evenly in a circle
-  const solutionPositions = [];
-  const cx = W / 2, cy = H / 2;
-  const radius = Math.min(W, H) / 2 - PAD;
-  for (let i = 0; i < numNodes; i++) {
-    const angle = (2 * Math.PI * i) / numNodes - Math.PI / 2;
-    solutionPositions.push({
-      x: cx + radius * Math.cos(angle),
-      y: cy + radius * Math.sin(angle),
-    });
-  }
-
-  // Generate edges — connect each node to its neighbors + some cross-connections
-  const edges = [];
-  for (let i = 0; i < numNodes; i++) {
-    edges.push([i, (i + 1) % numNodes]); // ring
-  }
-  // Add some diagonal edges to make it interesting
-  const extraEdges = Math.max(1, Math.floor(numNodes * 0.6));
-  for (let k = 0; k < extraEdges; k++) {
-    let a, b, attempts = 0;
-    do {
-      a = Math.floor(Math.random() * numNodes);
-      b = Math.floor(Math.random() * numNodes);
-      attempts++;
-    } while (
-      (a === b || Math.abs(a - b) <= 1 || Math.abs(a - b) === numNodes - 1 ||
-       edges.some(e => (e[0] === a && e[1] === b) || (e[0] === b && e[1] === a))) &&
-      attempts < 50
-    );
-    if (attempts < 50) edges.push([a, b]);
-  }
-
-  // Scramble positions to create tangles (shuffle into inner area)
-  const scrambled = solutionPositions.map(() => ({
-    x: PAD + Math.random() * (W - PAD * 2),
-    y: PAD + Math.random() * (H - PAD * 2),
+function initBelts(canvasH) {
+  const beltPositions = [250, 420, 590]; // x positions of the 3 belts
+  return BELT_CONFIGS.map((cfg, beltIdx) => ({
+    x: beltPositions[beltIdx],
+    asteroids: Array.from({ length: cfg.count }, (_, i) =>
+      createAsteroid(beltPositions[beltIdx], canvasH, i, cfg.count, cfg.speed)
+    ),
+    gapSize: cfg.gapSize,
+    speed: cfg.speed,
   }));
-
-  // Ensure there ARE crossings (re-shuffle if needed)
-  let tries = 0;
-  while (countCrossings(scrambled, edges) < 2 && tries < 20) {
-    for (let i = 0; i < numNodes; i++) {
-      scrambled[i] = {
-        x: PAD + Math.random() * (W - PAD * 2),
-        y: PAD + Math.random() * (H - PAD * 2),
-      };
-    }
-    tries++;
-  }
-
-  return { nodes: scrambled, edges, width: W, height: H };
 }
 
-// ─── Format time MM:SS ───────────────────────────────────────────────────────
-function fmtTime(s) {
-  const m = Math.floor(s / 60);
-  const sec = s % 60;
-  return `${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
-}
+export default function GravedadCero({ onComplete }) {
+  const canvasRef = useRef(null);
+  const [gameState, setGameState] = useState('ready'); // ready, playing, launching, hit, success, gameover
+  const [lives, setLives] = useState(MAX_LIVES);
+  const [connected, setConnected] = useState([]);
+  const [currentTarget, setCurrentTarget] = useState(0);
+  const [score, setScore] = useState(0);
+  const [cable, setCable] = useState(null); // { startY, progress, hit }
+  
+  const gameRef = useRef({
+    belts: [],
+    stars: [],
+    astronautBob: 0,
+    cable: null,
+    animId: null,
+    lastTime: 0,
+  });
 
-// ─── Floating animation offsets (zero gravity effect) ─────────────────────────
-function useFloatOffsets(count) {
-  const [offsets, setOffsets] = useState(() =>
-    Array.from({ length: count }, () => ({
-      dx: 0, dy: 0,
-      ax: Math.random() * 3 + 1, ay: Math.random() * 3 + 1.5,
-      px: Math.random() * Math.PI * 2, py: Math.random() * Math.PI * 2,
-    }))
-  );
-  const frameRef = useRef(null);
-  const startRef = useRef(Date.now());
-
+  // Initialize stars
   useEffect(() => {
-    const animate = () => {
-      const t = (Date.now() - startRef.current) / 1000;
-      setOffsets(prev => prev.map(o => ({
-        ...o,
-        dx: Math.sin(t * 0.5 + o.px) * o.ax,
-        dy: Math.cos(t * 0.7 + o.py) * o.ay,
-      })));
-      frameRef.current = requestAnimationFrame(animate);
-    };
-    frameRef.current = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(frameRef.current);
+    gameRef.current.stars = Array.from({ length: 120 }, () => ({
+      x: Math.random() * CANVAS_W,
+      y: Math.random() * CANVAS_H,
+      r: Math.random() * 1.5 + 0.3,
+      twinkleSpeed: Math.random() * 2 + 1,
+      twinklePhase: Math.random() * Math.PI * 2,
+      brightness: Math.random() * 0.5 + 0.3,
+    }));
   }, []);
 
-  // Resize array when count changes
+  // Initialize belts
   useEffect(() => {
-    setOffsets(prev => {
-      if (prev.length >= count) return prev.slice(0, count);
-      const extra = Array.from({ length: count - prev.length }, () => ({
-        dx: 0, dy: 0,
-        ax: Math.random() * 3 + 1, ay: Math.random() * 3 + 1.5,
-        px: Math.random() * Math.PI * 2, py: Math.random() * Math.PI * 2,
-      }));
-      return [...prev, ...extra];
-    });
-    startRef.current = Date.now();
-  }, [count]);
-
-  return offsets;
-}
-
-// ═══════════════════════════════════════════════════════════════════════════════
-//  MAIN COMPONENT
-// ═══════════════════════════════════════════════════════════════════════════════
-export default function GravedadCero({ onComplete }) {
-  const [phase, setPhase] = useState('intro');     // intro | playing | levelComplete
-  const [level, setLevel] = useState(1);
-  const [totalScore, setTotalScore] = useState(0);
-  const [elapsed, setElapsed] = useState(0);        // seconds
-  const [levelStartTime, setLevelStartTime] = useState(0);
-
-  // Level data
-  const [nodes, setNodes] = useState([]);
-  const [edges, setEdges] = useState([]);
-  const [boardW, setBoardW] = useState(700);
-  const [boardH, setBoardH] = useState(500);
-
-  // Drag state
-  const [dragging, setDragging] = useState(null);   // node index or null
-  const containerRef = useRef(null);
-  const timerRef = useRef(null);
-
-  // Float animation
-  const numNodes = 4 + level;  // Level 1 = 5 nodes, Level 2 = 6, etc.
-  const floatOffsets = useFloatOffsets(nodes.length);
-
-  // ── Crossings count ────────────────────────────────────────────────────────
-  const crossings = useMemo(() => {
-    if (nodes.length === 0 || edges.length === 0) return 999;
-    return countCrossings(nodes, edges);
-  }, [nodes, edges]);
-
-  // ── Edge crossed status ────────────────────────────────────────────────────
-  const edgeCrossed = useMemo(() => {
-    return edges.map((_, idx) => isEdgeCrossed(idx, nodes, edges));
-  }, [nodes, edges]);
-
-  // ── Timer ──────────────────────────────────────────────────────────────────
-  useEffect(() => {
-    if (phase === 'playing') {
-      timerRef.current = setInterval(() => {
-        setElapsed(e => e + 1);
-      }, 1000);
+    if (gameState === 'playing' || gameState === 'ready') {
+      gameRef.current.belts = initBelts(CANVAS_H);
     }
-    return () => clearInterval(timerRef.current);
-  }, [phase]);
+  }, [gameState]);
 
-  // ── Check level complete ───────────────────────────────────────────────────
+  // Main game loop
   useEffect(() => {
-    if (phase === 'playing' && crossings === 0 && nodes.length > 0) {
-      clearInterval(timerRef.current);
-      const levelTime = elapsed - levelStartTime;
-      const levelScore = Math.max(100, level * 1000 - levelTime * 5);
-      setTotalScore(prev => prev + levelScore);
-      setPhase('levelComplete');
-    }
-  }, [crossings, phase, nodes.length]);
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    
+    const draw = (timestamp) => {
+      gameRef.current.animId = requestAnimationFrame(draw);
+      const dt = Math.min((timestamp - (gameRef.current.lastTime || timestamp)) / 16.67, 3);
+      gameRef.current.lastTime = timestamp;
 
-  // ── Start level ────────────────────────────────────────────────────────────
-  const startLevel = useCallback((lvl) => {
-    const n = 4 + lvl;
-    const { nodes: newNodes, edges: newEdges, width, height } = generateLevel(n);
-    setNodes(newNodes);
-    setEdges(newEdges);
-    setBoardW(width);
-    setBoardH(height);
-    setLevel(lvl);
-    setLevelStartTime(elapsed);
-    setPhase('playing');
-  }, [elapsed]);
+      ctx.clearRect(0, 0, CANVAS_W, CANVAS_H);
+
+      // ── Background gradient ──
+      const bgGrad = ctx.createLinearGradient(0, 0, CANVAS_W, CANVAS_H);
+      bgGrad.addColorStop(0, '#040816');
+      bgGrad.addColorStop(0.5, '#0a0e24');
+      bgGrad.addColorStop(1, '#050a18');
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+
+      // ── Stars with twinkling ──
+      const t = timestamp * 0.001;
+      for (const star of gameRef.current.stars) {
+        const twinkle = star.brightness + 0.3 * Math.sin(t * star.twinkleSpeed + star.twinklePhase);
+        ctx.globalAlpha = Math.max(0.1, Math.min(1, twinkle));
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+
+      // ── Astronaut (left side) ──
+      const astroX = 60;
+      const targetConn = CONN_POINTS[currentTarget] || CONN_POINTS[0];
+      const astroY = targetConn.y;
+      gameRef.current.astronautBob = Math.sin(t * 1.5) * 5;
+      const bobY = astroY + gameRef.current.astronautBob;
+      drawAstronaut(ctx, astroX, bobY, t);
+
+      // ── ISS (right side) ──
+      drawISS(ctx, CANVAS_W - 80, CANVAS_H / 2, connected, currentTarget, t);
+
+      // ── Asteroid belts ──
+      for (const belt of gameRef.current.belts) {
+        for (const ast of belt.asteroids) {
+          // Move asteroids
+          ast.y += ast.speed * dt;
+          ast.rotation += ast.rotSpeed * dt;
+          // Wrap around
+          if (ast.speed > 0 && ast.y > CANVAS_H + ast.radius * 2) {
+            ast.y = -ast.radius * 2;
+            ast.x = belt.x + (Math.random() - 0.5) * 30;
+          }
+          if (ast.speed < 0 && ast.y < -ast.radius * 2) {
+            ast.y = CANVAS_H + ast.radius * 2;
+            ast.x = belt.x + (Math.random() - 0.5) * 30;
+          }
+          drawAsteroid(ctx, ast);
+        }
+      }
+
+      // ── Cable animation ──
+      const cableData = gameRef.current.cable;
+      if (cableData && cableData.active) {
+        cableData.progress += 4 * dt;
+        const endX = CANVAS_W - 110;
+        const cableLen = endX - astroX;
+        const currentX = astroX + Math.min(cableData.progress, cableLen);
+        const cableY = cableData.startY;
+
+        // Draw cable
+        ctx.strokeStyle = targetConn.color;
+        ctx.lineWidth = 3;
+        ctx.shadowColor = targetConn.color;
+        ctx.shadowBlur = 8;
+        ctx.beginPath();
+        ctx.moveTo(astroX + 15, cableY);
+        ctx.lineTo(currentX, cableY);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+
+        // Cable grapple hook at tip
+        ctx.fillStyle = targetConn.color;
+        ctx.beginPath();
+        ctx.arc(currentX, cableY, 4, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Check collision with asteroid belts
+        if (!cableData.collisionChecked) {
+          for (const belt of gameRef.current.belts) {
+            const beltMinX = belt.x - 40;
+            const beltMaxX = belt.x + 40;
+            if (currentX >= beltMinX && currentX <= beltMaxX) {
+              for (const ast of belt.asteroids) {
+                const dx = currentX - ast.x;
+                const dy = cableY - ast.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < ast.radius + 3) {
+                  // HIT!
+                  cableData.hit = true;
+                  cableData.active = false;
+                  cableData.collisionChecked = true;
+                  // Explosion particles
+                  cableData.particles = Array.from({ length: 12 }, () => ({
+                    x: currentX,
+                    y: cableY,
+                    vx: (Math.random() - 0.5) * 6,
+                    vy: (Math.random() - 0.5) * 6,
+                    life: 1,
+                    color: targetConn.color,
+                  }));
+                  setLives(prev => {
+                    const newLives = prev - 1;
+                    if (newLives <= 0) {
+                      setTimeout(() => setGameState('gameover'), 800);
+                    } else {
+                      setTimeout(() => {
+                        gameRef.current.cable = null;
+                        setCable(null);
+                      }, 1000);
+                    }
+                    return newLives;
+                  });
+                  break;
+                }
+              }
+              if (cableData.hit) break;
+            }
+          }
+        }
+
+        // Check if cable reached ISS
+        if (currentX >= endX && !cableData.hit && !cableData.collisionChecked) {
+          cableData.collisionChecked = true;
+          cableData.active = false;
+          cableData.success = true;
+          setConnected(prev => {
+            const newConn = [...prev, targetConn.id];
+            if (newConn.length >= TOTAL_CONNECTIONS) {
+              setScore(s => {
+                const finalScore = s + 50;
+                setTimeout(() => {
+                  setGameState('success');
+                  if (onComplete) onComplete(finalScore);
+                }, 1200);
+                return finalScore;
+              });
+            } else {
+              setScore(s => s + 25);
+              setCurrentTarget(t => t + 1);
+              setTimeout(() => {
+                gameRef.current.cable = null;
+                setCable(null);
+              }, 800);
+            }
+            return newConn;
+          });
+        }
+
+        // Draw explosion particles
+        if (cableData.particles) {
+          for (const p of cableData.particles) {
+            p.x += p.vx * dt;
+            p.y += p.vy * dt;
+            p.life -= 0.03 * dt;
+            if (p.life > 0) {
+              ctx.globalAlpha = p.life;
+              ctx.fillStyle = p.color;
+              ctx.beginPath();
+              ctx.arc(p.x, p.y, 3 * p.life, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+          ctx.globalAlpha = 1;
+        }
+      }
+
+      // ── Connected cables (persistent) ──
+      for (let i = 0; i < connected.length; i++) {
+        const cp = CONN_POINTS.find(c => c.id === connected[i]);
+        if (!cp) continue;
+        ctx.strokeStyle = cp.color;
+        ctx.lineWidth = 2;
+        ctx.globalAlpha = 0.5 + 0.2 * Math.sin(t * 2 + i);
+        ctx.setLineDash([6, 4]);
+        ctx.beginPath();
+        ctx.moveTo(astroX + 15, cp.y);
+        ctx.lineTo(CANVAS_W - 110, cp.y);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.globalAlpha = 1;
+      }
+
+      // ── HUD ──
+      drawHUD(ctx, lives, connected.length, score, gameState);
+    };
+
+    gameRef.current.animId = requestAnimationFrame(draw);
+    return () => {
+      if (gameRef.current.animId) cancelAnimationFrame(gameRef.current.animId);
+    };
+  }, [gameState, lives, connected, currentTarget, score]);
+
+  // ── Launch cable ──
+  const launchCable = useCallback(() => {
+    if (gameState !== 'playing' || gameRef.current.cable?.active) return;
+    const targetConn = CONN_POINTS[currentTarget];
+    if (!targetConn) return;
+    const cableData = {
+      startY: targetConn.y + gameRef.current.astronautBob,
+      progress: 0,
+      active: true,
+      hit: false,
+      success: false,
+      collisionChecked: false,
+      particles: null,
+    };
+    gameRef.current.cable = cableData;
+    setCable(cableData);
+  }, [gameState, currentTarget]);
 
   const startGame = useCallback(() => {
-    setElapsed(0);
-    setTotalScore(0);
-    setLevelStartTime(0);
-    startLevel(1);
-  }, [startLevel]);
-
-  const nextLevel = useCallback(() => {
-    startLevel(level + 1);
-  }, [level, startLevel]);
-
-  // ── Get pointer position relative to SVG ───────────────────────────────────
-  const getPos = useCallback((e) => {
-    const rect = containerRef.current?.getBoundingClientRect();
-    if (!rect) return { x: 0, y: 0 };
-    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-    const scaleX = boardW / rect.width;
-    const scaleY = boardH / rect.height;
-    return {
-      x: (clientX - rect.left) * scaleX,
-      y: (clientY - rect.top) * scaleY,
-    };
-  }, [boardW, boardH]);
-
-  // ── Drag handlers ──────────────────────────────────────────────────────────
-  const onPointerDown = useCallback((idx, e) => {
-    e.preventDefault();
-    setDragging(idx);
+    setGameState('playing');
+    setLives(MAX_LIVES);
+    setConnected([]);
+    setCurrentTarget(0);
+    setScore(0);
+    setCable(null);
+    gameRef.current.cable = null;
+    gameRef.current.belts = initBelts(CANVAS_H);
   }, []);
 
-  const onPointerMove = useCallback((e) => {
-    if (dragging === null) return;
-    e.preventDefault();
-    const pos = getPos(e);
-    setNodes(prev => {
-      const next = [...prev];
-      next[dragging] = { x: Math.max(20, Math.min(boardW - 20, pos.x)), y: Math.max(20, Math.min(boardH - 20, pos.y)) };
-      return next;
-    });
-  }, [dragging, getPos, boardW, boardH]);
-
-  const onPointerUp = useCallback(() => {
-    setDragging(null);
-  }, []);
-
-  // ── Global pointer listeners ───────────────────────────────────────────────
-  useEffect(() => {
-    if (dragging !== null) {
-      const moveH = (e) => onPointerMove(e);
-      const upH = () => onPointerUp();
-      window.addEventListener('mousemove', moveH);
-      window.addEventListener('mouseup', upH);
-      window.addEventListener('touchmove', moveH, { passive: false });
-      window.addEventListener('touchend', upH);
-      return () => {
-        window.removeEventListener('mousemove', moveH);
-        window.removeEventListener('mouseup', upH);
-        window.removeEventListener('touchmove', moveH);
-        window.removeEventListener('touchend', upH);
-      };
-    }
-  }, [dragging, onPointerMove, onPointerUp]);
-
-  // ─── INTRO SCREEN ──────────────────────────────────────────────────────────
-  if (phase === 'intro') {
-    return (
-      <div style={{
-        width: '100%', height: '100%', minHeight: '500px',
-        background: 'radial-gradient(ellipse at 30% 30%, #0a1628 0%, #060a12 60%, #020308 100%)',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-        color: 'white', fontFamily: 'sans-serif', gap: '1.2rem', padding: '2rem',
-        position: 'relative', overflow: 'hidden',
-      }}>
-        {/* Background particles */}
-        <div style={{ position: 'absolute', inset: 0, opacity: 0.3, pointerEvents: 'none' }}>
-          {Array.from({ length: 40 }, (_, i) => (
-            <div key={i} style={{
-              position: 'absolute',
-              left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%`,
-              width: `${1 + Math.random() * 2}px`, height: `${1 + Math.random() * 2}px`,
-              borderRadius: '50%', background: 'white',
-              animation: `twinkle ${2 + Math.random() * 3}s ${Math.random() * 3}s ease-in-out infinite alternate`,
-            }} />
-          ))}
-        </div>
-
-        <div style={{ fontSize: '4rem', marginBottom: '0.3rem' }}>🛸</div>
-        <h1 style={{
-          fontSize: '1.8rem', margin: 0, textAlign: 'center',
-          background: 'linear-gradient(90deg, #00e5ff, #cc66ff)',
-          WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-          fontWeight: 800, letterSpacing: '2px',
-        }}>
-          DESENREDA LA ESTACIÓN
-        </h1>
-        <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', textAlign: 'center', maxWidth: '400px', lineHeight: 1.6 }}>
-          Los módulos de la estación espacial están enredados. Arrastra los nodos para que
-          <span style={{ color: '#00e5ff' }}> ninguna línea se cruce</span>.
-          ¡Niveles progresivos, cada vez más difícil!
-        </p>
-        <button
-          onClick={startGame}
-          style={{
-            background: 'linear-gradient(135deg, #00e5ff, #cc66ff)',
-            color: '#000', border: 'none', padding: '1rem 3rem',
-            borderRadius: '14px', fontSize: '1.1rem', fontWeight: 800,
-            cursor: 'pointer', letterSpacing: '1px',
-            boxShadow: '0 0 30px rgba(0,228,255,0.3)',
-            marginTop: '0.5rem',
-          }}
-        >
-          INICIAR MISIÓN
-        </button>
-
-        <style>{`
-          @keyframes twinkle {
-            0% { opacity: 0.2; }
-            100% { opacity: 1; }
-          }
-        `}</style>
-      </div>
-    );
-  }
-
-  // ─── LEVEL COMPLETE SCREEN ─────────────────────────────────────────────────
-  if (phase === 'levelComplete') {
-    const levelTime = elapsed - levelStartTime;
-    const levelScore = Math.max(100, level * 1000 - levelTime * 5);
-    return (
-      <div style={{
-        width: '100%', height: '100%', minHeight: '500px',
-        background: 'radial-gradient(ellipse at 50% 40%, #0a2030 0%, #060a12 100%)',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-        color: 'white', fontFamily: 'sans-serif', gap: '1rem', padding: '2rem',
-      }}>
-        <div style={{ fontSize: '4rem' }}>✨</div>
-        <h2 style={{ color: '#00e5ff', margin: 0, fontSize: '1.6rem', textShadow: '0 0 20px #00e5ff' }}>
-          ¡Nivel {level} Completado!
-        </h2>
-        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <div style={{ background: 'rgba(0,228,255,0.1)', border: '1px solid rgba(0,228,255,0.3)', borderRadius: '12px', padding: '0.7rem 1.5rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.2rem' }}>TIEMPO</div>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#00e5ff', fontFamily: 'monospace' }}>{fmtTime(levelTime)}</div>
-          </div>
-          <div style={{ background: 'rgba(255,215,0,0.1)', border: '1px solid rgba(255,215,0,0.3)', borderRadius: '12px', padding: '0.7rem 1.5rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.2rem' }}>PUNTAJE NIVEL</div>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#FFD700', fontFamily: 'monospace' }}>+{levelScore}</div>
-          </div>
-          <div style={{ background: 'rgba(204,102,255,0.1)', border: '1px solid rgba(204,102,255,0.3)', borderRadius: '12px', padding: '0.7rem 1.5rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.2rem' }}>TOTAL</div>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#cc66ff', fontFamily: 'monospace' }}>{totalScore}</div>
-          </div>
-        </div>
-        <div style={{ display: 'flex', gap: '0.8rem', marginTop: '0.5rem' }}>
-          <button onClick={nextLevel} style={{
-            background: 'linear-gradient(135deg, #00e5ff, #00aadd)', color: '#000',
-            border: 'none', padding: '0.8rem 2rem', borderRadius: '10px',
-            fontWeight: 800, cursor: 'pointer', fontSize: '1rem',
-          }}>
-            SIGUIENTE NIVEL →
-          </button>
-          <button onClick={() => { if (onComplete) onComplete(totalScore); }} style={{
-            background: 'transparent', color: '#cc66ff',
-            border: '1px solid rgba(204,102,255,0.4)', padding: '0.8rem 2rem',
-            borderRadius: '10px', fontWeight: 700, cursor: 'pointer', fontSize: '1rem',
-          }}>
-            Finalizar ({totalScore} pts)
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  // ─── PLAYING SCREEN ────────────────────────────────────────────────────────
   return (
-    <div style={{
-      width: '100%', height: '100%', minHeight: '500px',
-      background: 'radial-gradient(ellipse at 40% 20%, #0a1628 0%, #060a12 60%, #020308 100%)',
-      display: 'flex', flexDirection: 'column',
-      color: 'white', fontFamily: 'sans-serif',
-      position: 'relative', overflow: 'hidden',
-      userSelect: 'none',
-    }}>
-      {/* HUD */}
-      <div style={{
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        padding: '0.8rem 1.2rem',
-        background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid rgba(0,228,255,0.15)', flexShrink: 0, zIndex: 10,
-      }}>
-        <div style={{ display: 'flex', gap: '1.2rem', alignItems: 'center' }}>
-          <div>
-            <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '1px' }}>NIVEL</div>
-            <div style={{ fontSize: '1.1rem', fontWeight: 800, color: '#00e5ff' }}>{level}</div>
-          </div>
-          <div>
-            <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '1px' }}>CRUCES</div>
-            <div style={{ fontSize: '1.1rem', fontWeight: 800, color: crossings > 0 ? '#ff6b6b' : '#7bed9f' }}>{crossings}</div>
-          </div>
-          <div>
-            <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '1px' }}>NODOS</div>
-            <div style={{ fontSize: '1.1rem', fontWeight: 800, color: '#cc66ff' }}>{nodes.length}</div>
-          </div>
-        </div>
-        <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '1px' }}>DESENREDA LA ESTACIÓN</div>
-          <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.3)' }}>Arrastra los módulos</div>
-        </div>
-        <div style={{ display: 'flex', gap: '1.2rem', alignItems: 'center' }}>
-          <div style={{ textAlign: 'right' }}>
-            <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '1px' }}>TIEMPO</div>
-            <div style={{ fontSize: '1.1rem', fontWeight: 800, color: '#ffd700', fontFamily: 'monospace' }}>{fmtTime(elapsed)}</div>
-          </div>
-          <div style={{ textAlign: 'right' }}>
-            <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '1px' }}>PUNTAJE</div>
-            <div style={{ fontSize: '1.1rem', fontWeight: 800, color: '#cc66ff', fontFamily: 'monospace' }}>{totalScore}</div>
-          </div>
-        </div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
+      {/* Title */}
+      <div style={{ textAlign: 'center' }}>
+        <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
+          Lanza el cable a través de los cinturones de asteroides para conectar la estación
+        </p>
       </div>
 
-      {/* Game board */}
-      <div
-        ref={containerRef}
-        style={{
-          flex: 1, position: 'relative', cursor: dragging !== null ? 'grabbing' : 'default',
-          touchAction: 'none',
-        }}
-        onMouseMove={onPointerMove}
-        onMouseUp={onPointerUp}
-        onTouchMove={onPointerMove}
-        onTouchEnd={onPointerUp}
-      >
-        <svg
-          viewBox={`0 0 ${boardW} ${boardH}`}
-          style={{ width: '100%', height: '100%', display: 'block' }}
-          preserveAspectRatio="xMidYMid meet"
-        >
-          {/* Grid dots background */}
-          <defs>
-            <pattern id="grid-dots" width="40" height="40" patternUnits="userSpaceOnUse">
-              <circle cx="20" cy="20" r="0.5" fill="rgba(255,255,255,0.06)" />
-            </pattern>
-            <filter id="glow">
-              <feGaussianBlur stdDeviation="3" result="blur" />
-              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-            </filter>
-          </defs>
-          <rect width={boardW} height={boardH} fill="url(#grid-dots)" />
-
-          {/* Edges */}
-          {edges.map((edge, idx) => {
-            const n1 = nodes[edge[0]];
-            const n2 = nodes[edge[1]];
-            if (!n1 || !n2) return null;
-            const fo1 = (dragging === edge[0]) ? { dx: 0, dy: 0 } : (floatOffsets[edge[0]] || { dx: 0, dy: 0 });
-            const fo2 = (dragging === edge[1]) ? { dx: 0, dy: 0 } : (floatOffsets[edge[1]] || { dx: 0, dy: 0 });
-            const crossed = edgeCrossed[idx];
-            return (
-              <line
-                key={`e-${idx}`}
-                x1={n1.x + fo1.dx} y1={n1.y + fo1.dy}
-                x2={n2.x + fo2.dx} y2={n2.y + fo2.dy}
-                stroke={crossed ? '#ff4444' : '#00e5ff'}
-                strokeWidth={crossed ? 2.5 : 2}
-                strokeOpacity={crossed ? 0.8 : 0.5}
-                strokeLinecap="round"
-                style={{
-                  filter: crossed ? 'none' : 'url(#glow)',
-                  transition: 'stroke 0.3s ease, stroke-opacity 0.3s ease',
-                }}
-              />
-            );
-          })}
-
-          {/* Nodes */}
-          {nodes.map((node, idx) => {
-            const label = NODE_LABELS[idx % NODE_LABELS.length];
-            const isDragging = dragging === idx;
-            const fo = isDragging ? { dx: 0, dy: 0 } : (floatOffsets[idx] || { dx: 0, dy: 0 });
-            const nx = node.x + fo.dx;
-            const ny = node.y + fo.dy;
-            return (
-              <g
-                key={`n-${idx}`}
-                transform={`translate(${nx}, ${ny})`}
-                style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
-                onMouseDown={(e) => onPointerDown(idx, e)}
-                onTouchStart={(e) => onPointerDown(idx, e)}
-              >
-                {/* Outer glow */}
-                <circle r={isDragging ? 26 : 22} fill="none"
-                  stroke={label.color} strokeWidth="1.5"
-                  strokeOpacity={isDragging ? 0.8 : 0.3}
-                  style={{ transition: 'all 0.2s' }}
-                />
-                {/* Main circle */}
-                <circle r={18}
-                  fill={isDragging ? label.color + '44' : 'rgba(10,20,40,0.9)'}
-                  stroke={label.color}
-                  strokeWidth={isDragging ? 2.5 : 1.5}
-                  style={{ transition: 'all 0.2s', filter: isDragging ? `drop-shadow(0 0 10px ${label.color})` : 'none' }}
-                />
-                {/* Label */}
-                <text
-                  textAnchor="middle" dominantBaseline="central"
-                  fill={label.color} fontSize="9" fontWeight="700"
-                  fontFamily="monospace" style={{ pointerEvents: 'none' }}
-                >
-                  {label.label}
-                </text>
-              </g>
-            );
-          })}
-        </svg>
-      </div>
-
-      {/* Crossings progress bar */}
+      {/* Canvas */}
       <div style={{
-        padding: '0.5rem 1.2rem 0.8rem',
-        background: 'rgba(0,0,0,0.5)', flexShrink: 0,
-        display: 'flex', alignItems: 'center', gap: '1rem',
+        position: 'relative',
+        borderRadius: '16px',
+        overflow: 'hidden',
+        border: '1px solid rgba(255,255,255,0.1)',
+        boxShadow: '0 0 40px rgba(0,228,255,0.08)',
       }}>
-        <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', whiteSpace: 'nowrap' }}>
-          {crossings > 0 ? `${crossings} cruce${crossings > 1 ? 's' : ''} restante${crossings > 1 ? 's' : ''}` : '¡Sin cruces!'}
-        </span>
-        <div style={{ flex: 1, height: '6px', borderRadius: '3px', background: 'rgba(255,255,255,0.08)', overflow: 'hidden' }}>
+        <canvas
+          ref={canvasRef}
+          width={CANVAS_W}
+          height={CANVAS_H}
+          onClick={gameState === 'playing' ? launchCable : undefined}
+          style={{
+            display: 'block',
+            cursor: gameState === 'playing' ? 'crosshair' : 'default',
+            maxWidth: '100%',
+            height: 'auto',
+          }}
+        />
+
+        {/* Ready overlay */}
+        {gameState === 'ready' && (
           <div style={{
-            height: '100%', borderRadius: '3px',
-            background: crossings > 0
-              ? 'linear-gradient(90deg, #ff4444, #ff8844)'
-              : 'linear-gradient(90deg, #7bed9f, #00e5ff)',
-            width: crossings > 0 ? `${Math.max(5, 100 - crossings * 10)}%` : '100%',
-            transition: 'all 0.5s ease',
-            boxShadow: crossings === 0 ? '0 0 10px #00e5ff' : 'none',
-          }} />
-        </div>
-        <button onClick={() => { if (onComplete) onComplete(totalScore); }} style={{
-          background: 'rgba(204,102,255,0.15)', color: '#cc66ff',
-          border: '1px solid rgba(204,102,255,0.3)', padding: '0.4rem 1rem',
-          borderRadius: '8px', fontSize: '0.75rem', fontWeight: 700,
-          cursor: 'pointer', whiteSpace: 'nowrap',
-        }}>
-          Finalizar
-        </button>
+            position: 'absolute', inset: 0,
+            background: 'rgba(0,0,0,0.7)',
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'center', justifyContent: 'center',
+            gap: '1rem',
+          }}>
+            <div style={{ fontSize: '3rem' }}>🧑‍🚀</div>
+            <h3 style={{ color: '#00e5ff', margin: 0, fontSize: '1.4rem' }}>Conecta la Estación</h3>
+            <p style={{ color: 'rgba(255,255,255,0.6)', maxWidth: '400px', textAlign: 'center', fontSize: '0.9rem', lineHeight: 1.5 }}>
+              Haz clic para lanzar el cable hacia la estación ISS. Debes atravesar 3 cinturones de asteroides sin chocar. Tienes {MAX_LIVES} vidas y debes conectar {TOTAL_CONNECTIONS} puntos.
+            </p>
+            <button
+              onClick={startGame}
+              style={{
+                background: 'linear-gradient(135deg, #00e5ff, #007cf0)',
+                color: '#040816',
+                border: 'none',
+                padding: '0.8rem 2.5rem',
+                borderRadius: '12px',
+                fontSize: '1rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                fontFamily: "'Outfit', sans-serif",
+                boxShadow: '0 0 20px rgba(0,229,255,0.4)',
+              }}
+            >
+              🚀 Iniciar Conexión
+            </button>
+          </div>
+        )}
+
+        {/* Game Over overlay */}
+        {gameState === 'gameover' && (
+          <div style={{
+            position: 'absolute', inset: 0,
+            background: 'rgba(0,0,0,0.8)',
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'center', justifyContent: 'center',
+            gap: '1rem',
+          }}>
+            <div style={{ fontSize: '3rem' }}>💥</div>
+            <h3 style={{ color: '#ff6b6b', margin: 0 }}>Conexión Perdida</h3>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem' }}>
+              Has agotado tus {MAX_LIVES} vidas. Conectaste {connected.length}/{TOTAL_CONNECTIONS} puntos.
+            </p>
+            <div style={{ display: 'flex', gap: '0.8rem' }}>
+              <button
+                onClick={startGame}
+                style={{
+                  background: 'linear-gradient(135deg, #00e5ff, #007cf0)',
+                  color: '#040816', border: 'none',
+                  padding: '0.7rem 2rem', borderRadius: '10px',
+                  fontSize: '0.9rem', fontWeight: 700, cursor: 'pointer',
+                  fontFamily: "'Outfit', sans-serif",
+                }}
+              >
+                🔄 Reintentar
+              </button>
+              <button
+                onClick={() => onComplete && onComplete(score)}
+                style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  color: 'white', border: '1px solid rgba(255,255,255,0.2)',
+                  padding: '0.7rem 2rem', borderRadius: '10px',
+                  fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer',
+                  fontFamily: "'Outfit', sans-serif",
+                }}
+              >
+                Salir
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Success overlay */}
+        {gameState === 'success' && (
+          <div style={{
+            position: 'absolute', inset: 0,
+            background: 'rgba(0,0,0,0.7)',
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'center', justifyContent: 'center',
+            gap: '1rem',
+          }}>
+            <div style={{ fontSize: '3rem' }}>🎉</div>
+            <h3 style={{ color: '#7bed9f', margin: 0 }}>¡Estación Conectada!</h3>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem' }}>
+              Todos los sistemas están en línea. Puntuación: {score}
+            </p>
+          </div>
+        )}
       </div>
 
-      <style>{`
-        @keyframes twinkle {
-          0% { opacity: 0.2; }
-          100% { opacity: 1; }
-        }
-      `}</style>
+      {/* Lives display */}
+      {gameState === 'playing' && (
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', marginRight: '0.5rem' }}>Vidas:</span>
+          {Array.from({ length: MAX_LIVES }, (_, i) => (
+            <span
+              key={i}
+              style={{
+                fontSize: '1.2rem',
+                opacity: i < lives ? 1 : 0.2,
+                transition: 'opacity 0.3s',
+              }}
+            >
+              ❤️
+            </span>
+          ))}
+          <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', marginLeft: '1rem' }}>
+            Conexión {currentTarget + 1}/{TOTAL_CONNECTIONS}
+          </span>
+        </div>
+      )}
     </div>
   );
+}
+
+// ═══════════════════════════════════════════════════════
+//   DRAW HELPERS
+// ═══════════════════════════════════════════════════════
+
+function drawAstronaut(ctx, x, y, t) {
+  ctx.save();
+  ctx.translate(x, y);
+  // Suit body
+  ctx.fillStyle = '#e8e8e8';
+  ctx.beginPath();
+  ctx.ellipse(0, 0, 14, 18, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(0,228,255,0.4)';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+  // Helmet
+  ctx.fillStyle = '#1a1a3e';
+  ctx.beginPath();
+  ctx.arc(0, -14, 11, 0, Math.PI * 2);
+  ctx.fill();
+  // Visor reflection
+  ctx.fillStyle = 'rgba(0,228,255,0.3)';
+  ctx.beginPath();
+  ctx.arc(-2, -15, 7, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = 'rgba(255,255,255,0.15)';
+  ctx.beginPath();
+  ctx.arc(-4, -17, 3, 0, Math.PI * 2);
+  ctx.fill();
+  // Backpack
+  ctx.fillStyle = '#555';
+  ctx.fillRect(-8, -5, -6, 14);
+  ctx.fillStyle = '#333';
+  ctx.fillRect(-9, -2, -4, 4);
+  // Right arm (reaching out)
+  ctx.strokeStyle = '#e8e8e8';
+  ctx.lineWidth = 5;
+  ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.moveTo(10, -4);
+  ctx.lineTo(20, -2 + Math.sin(t * 3) * 2);
+  ctx.stroke();
+  // Legs
+  ctx.beginPath();
+  ctx.moveTo(-5, 16);
+  ctx.lineTo(-7, 28 + Math.sin(t * 0.8) * 2);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(5, 16);
+  ctx.lineTo(7, 28 - Math.sin(t * 0.8) * 2);
+  ctx.stroke();
+  // Tether line from backpack
+  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.lineWidth = 1;
+  ctx.setLineDash([3, 3]);
+  ctx.beginPath();
+  ctx.moveTo(-14, 5);
+  ctx.lineTo(-40, 5 + Math.sin(t) * 10);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.restore();
+}
+
+function drawISS(ctx, x, y, connected, currentTarget, t) {
+  ctx.save();
+  ctx.translate(x, y);
+  
+  // Main body
+  ctx.fillStyle = '#2a2a4a';
+  ctx.fillRect(-25, -CANVAS_H / 2 + 40, 50, CANVAS_H - 80);
+  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(-25, -CANVAS_H / 2 + 40, 50, CANVAS_H - 80);
+
+  // Solar panels
+  const panelY = [-160, -80, 80, 160];
+  for (const py of panelY) {
+    // Left panel
+    ctx.fillStyle = '#1a3366';
+    ctx.fillRect(25, py - 15, 35, 30);
+    ctx.strokeStyle = '#4488cc';
+    ctx.lineWidth = 0.5;
+    for (let i = 0; i < 4; i++) {
+      ctx.beginPath();
+      ctx.moveTo(25, py - 15 + i * 8);
+      ctx.lineTo(60, py - 15 + i * 8);
+      ctx.stroke();
+    }
+    // Small glow
+    ctx.fillStyle = `rgba(68,136,204,${0.2 + 0.1 * Math.sin(t + py)})`;
+    ctx.fillRect(27, py - 13, 31, 26);
+  }
+
+  // Connection points
+  for (let i = 0; i < CONN_POINTS.length; i++) {
+    const cp = CONN_POINTS[i];
+    const cpLocalY = cp.y - CANVAS_H / 2;
+    const isConnected = connected.includes(cp.id);
+    const isCurrent = i === currentTarget && !isConnected;
+    
+    // Port circle
+    ctx.fillStyle = isConnected ? cp.color : (isCurrent ? `${cp.color}60` : 'rgba(255,255,255,0.1)');
+    ctx.beginPath();
+    ctx.arc(-30, cpLocalY, 8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = cp.color;
+    ctx.lineWidth = isCurrent ? 2 : 1;
+    ctx.stroke();
+
+    // Label
+    ctx.fillStyle = isConnected ? cp.color : 'rgba(255,255,255,0.4)';
+    ctx.font = 'bold 9px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(cp.label, -30, cpLocalY + 20);
+
+    // Pulsing ring for current target
+    if (isCurrent) {
+      ctx.strokeStyle = cp.color;
+      ctx.lineWidth = 1.5;
+      ctx.globalAlpha = 0.3 + 0.3 * Math.sin(t * 4);
+      ctx.beginPath();
+      ctx.arc(-30, cpLocalY, 14, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    }
+
+    // Connected checkmark
+    if (isConnected) {
+      ctx.fillStyle = '#040816';
+      ctx.font = 'bold 10px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('✓', -30, cpLocalY);
+      ctx.textBaseline = 'alphabetic';
+    }
+  }
+  ctx.restore();
+}
+
+function drawAsteroid(ctx, ast) {
+  ctx.save();
+  ctx.translate(ast.x, ast.y);
+  ctx.rotate(ast.rotation);
+  
+  const colors = ['#3a3a4a', '#4a4a5a', '#5a5a6a'];
+  ctx.fillStyle = colors[ast.shade];
+  
+  ctx.beginPath();
+  const verts = ast.vertices;
+  for (let i = 0; i < verts.length; i++) {
+    const v = verts[i];
+    const r = ast.radius * v.r;
+    const angle = v.angle;
+    const px = Math.cos(angle) * r;
+    const py = Math.sin(angle) * r;
+    if (i === 0) ctx.moveTo(px, py);
+    else ctx.lineTo(px, py);
+  }
+  ctx.closePath();
+  ctx.fill();
+  
+  // Subtle edge highlight
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+  
+  // Craters
+  ctx.fillStyle = 'rgba(0,0,0,0.25)';
+  ctx.beginPath();
+  ctx.arc(ast.radius * 0.2, ast.radius * 0.1, ast.radius * 0.2, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(-ast.radius * 0.3, -ast.radius * 0.2, ast.radius * 0.12, 0, Math.PI * 2);
+  ctx.fill();
+  
+  ctx.restore();
+}
+
+function drawHUD(ctx, lives, connected, score, gameState) {
+  if (gameState !== 'playing') return;
+  // Score
+  ctx.fillStyle = 'rgba(255,255,255,0.8)';
+  ctx.font = 'bold 14px monospace';
+  ctx.textAlign = 'right';
+  ctx.fillText(`SCORE: ${score}`, CANVAS_W - 20, 25);
+  
+  // Connection status
+  ctx.textAlign = 'left';
+  ctx.fillStyle = '#00e5ff';
+  ctx.font = 'bold 11px monospace';
+  ctx.fillText(`CONEXIONES: ${connected}/${TOTAL_CONNECTIONS}`, 20, 25);
 }
