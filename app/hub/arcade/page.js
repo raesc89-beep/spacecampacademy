@@ -332,7 +332,7 @@ export default function ArcadeExoplanet() {
       {/* ── Back Button ── */}
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 100 }}>
         <Link
-          href="/dashboard/misiones"
+          href="/dashboard"
           style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white',
             textDecoration: 'none', background: 'rgba(255,0,255,0.15)',

@@ -107,7 +107,7 @@ export default function CourseModule() {
         };
 
         // FORZAR ACTUALIZACIÓN: Si es objetos_interestelares, arqueoastronomia_maya, ciencia_star_wars o ciencia_volver_al_futuro, usar los datos estáticos puros.
-        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('robots_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('davinci_') || params.moduleId.startsWith('cecilia_') || params.moduleId.startsWith('sagan_') || params.moduleId.startsWith('curie_') || params.moduleId.startsWith('astro_train_') || params.moduleId.startsWith('einstein_') || params.moduleId.startsWith('griegos_') || params.moduleId.startsWith('arrival_')) {
+        if (params.moduleId === 'objetos_interestelares' || params.moduleId === 'arqueoastronomia_maya' || params.moduleId === 'ciencia_star_wars' || params.moduleId === 'ciencia_volver_al_futuro' || params.moduleId.startsWith('egypt_') || params.moduleId.startsWith('robots_') || params.moduleId.startsWith('galileo_') || params.moduleId.startsWith('faraday_') || params.moduleId.startsWith('davinci_') || params.moduleId.startsWith('cecilia_') || params.moduleId.startsWith('sagan_') || params.moduleId.startsWith('curie_') || params.moduleId.startsWith('astro_train_') || params.moduleId.startsWith('einstein_') || params.moduleId.startsWith('griegos_') || params.moduleId.startsWith('arrival_')) {
           if (staticData) {
              setModuleData(enforce15x15Rule(staticData));
              setDataLoading(false);
