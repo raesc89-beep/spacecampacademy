@@ -70,13 +70,74 @@ export default function QuizMinigame() {
                           isTesla ? `tesla/${moduleData.id}.png` :
                           (isAnomaly ? `${moduleData.id}_icon.png` : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`);
                           
-  const returnHub = isAnimal ? '/hub/animales' : 
-                    isAnomaly ? '/hub/stellar-objects' : 
-                    isAsteroid ? '/hub/asteroides-cometas' : 
-                    isDinos ? '/hub/dinosaurios' :
-                    isMarinos ? '/hub/reptiles-marinos' :
-                    isTesla ? '/hub/tesla' :
-                    '/hub/solar-system';
+  // ── Smart hub back-navigation (matches course page HUB_MAP) ──
+  const QUIZ_HUB_MAP = {
+    egypt: '/hub/egypt-astro',
+    animales: '/hub/animales',
+    apollo8: '/hub/apollo8',
+    apollo10: '/hub/apollo10',
+    apollo11: '/hub/apollo11',
+    area51: '/hub/area51',
+    asteroides: '/hub/asteroides-cometas',
+    bttf: '/hub/bttf',
+    copernico: '/hub/copernico',
+    davinci: '/hub/davinci',
+    exoplanetas: '/hub/exoplanetas',
+    faraday: '/hub/faraday',
+    galileo: '/hub/galileo',
+    interestelar: '/hub/objetos-interestelares',
+    interstellar: '/hub/interstellar',
+    maya: '/hub/maya-astro',
+    arqueoastronomia_maya: '/hub/maya-astro',
+    objetos_interestelares: '/hub/objetos-interestelares',
+    pioneros: '/hub/pioneros',
+    rocosos: '/hub/planetas-rocosos',
+    viaje_planetas_rocosos: '/hub/planetas-rocosos',
+    robots: '/hub/robots-espacio',
+    starwars: '/hub/star-wars',
+    agujeros: '/hub/agujeros-gusano',
+    wormhole: '/hub/agujeros-gusano',
+    stellar: '/hub/stellar-objects',
+    black_hole: '/hub/stellar-objects',
+    pulsar: '/hub/stellar-objects',
+    quasar: '/hub/stellar-objects',
+    white_dwarf: '/hub/stellar-objects',
+    red_dwarf: '/hub/stellar-objects',
+    earth: '/hub/solar-system',
+    mars: '/hub/solar-system',
+    jupiter: '/hub/solar-system',
+    saturn: '/hub/solar-system',
+    venus: '/hub/solar-system',
+    mercury: '/hub/solar-system',
+    neptune: '/hub/solar-system',
+    uranus: '/hub/solar-system',
+    pluto: '/hub/solar-system',
+    sun: '/hub/solar-system',
+    cecilia: '/hub/cecilia-payne',
+    dinos: '/hub/dinosaurios',
+    marinos: '/hub/reptiles-marinos',
+    tesla: '/hub/tesla',
+    sagan: '/hub/carl-sagan',
+    curie: '/hub/marie-curie',
+    astro_train: '/hub/astronauts-training',
+    einstein: '/hub/albert-einstein',
+    griegos: '/hub/griegos-ciencia',
+    arrival: '/hub/arrival-ciencia',
+  };
+  
+  function getQuizReturnHub(moduleId) {
+    if (!moduleId) return '/dashboard';
+    if (QUIZ_HUB_MAP[moduleId]) return QUIZ_HUB_MAP[moduleId];
+    const keys = Object.keys(QUIZ_HUB_MAP).sort((a, b) => b.length - a.length);
+    for (const key of keys) {
+      if (moduleId.startsWith(key + '_') || moduleId.startsWith(key)) {
+        return QUIZ_HUB_MAP[key];
+      }
+    }
+    return '/dashboard';
+  }
+  
+  const returnHub = getQuizReturnHub(moduleData.id);
 
   const handleAnswer = (optionIndex) => {
     if (isExploding || isShaking) return; // Prevent double clicks

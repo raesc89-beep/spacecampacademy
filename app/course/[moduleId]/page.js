@@ -12,6 +12,7 @@ import Link from 'next/link';
 import SatisfactionScale from '@/components/SatisfactionScale';
 import ApophisCountdown from '@/components/ApophisCountdown';
 import InteractiveInfographic_EgyptM11 from '@/components/infographics/InteractiveInfographic_EgyptM11';
+import InteractiveInfographic_EgyptM9 from '@/components/infographics/InteractiveInfographic_EgyptM9';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -354,12 +355,15 @@ export default function CourseModule() {
             </h1>
           </div>
 
-          {/* ── INFOGRAPHIC PILOT: egypt_m11 gets interactive infographic ── */}
+          {/* ── INTERACTIVE INFOGRAPHICS: egypt modules ── */}
           {moduleData.id === 'egypt_m11' && (
             <InteractiveInfographic_EgyptM11 />
           )}
+          {moduleData.id === 'egypt_m9' && (
+            <InteractiveInfographic_EgyptM9 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
