@@ -148,178 +148,14 @@ const DECO_MAP = {
   'legado': [DecoZodiacWheel, DecoLotus, DecoCelestialDisk],
 };
 
-// ─── SVG Button Icons (inline, no raster images needed) ──────────────────────
-function BtnIconDisk({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      <circle cx="30" cy="30" r="24" fill="none" stroke={color} strokeWidth="1.5" opacity="0.6" />
-      <circle cx="30" cy="30" r="16" fill="none" stroke={color} strokeWidth="1" opacity="0.4" />
-      <circle cx="30" cy="30" r="4" fill={color} opacity="0.7" />
-      {[0,30,60,90,120,150,180,210,240,270,300,330].map((a,i) => {
-        const r1 = 16, r2 = 24, rad = (a * Math.PI) / 180;
-        return <line key={i} x1={30+r1*Math.cos(rad)} y1={30+r1*Math.sin(rad)} x2={30+r2*Math.cos(rad)} y2={30+r2*Math.sin(rad)} stroke={color} strokeWidth="1" opacity="0.5" />;
-      })}
-      {[15,75,135,195,255,315].map((a,i) => {
-        const r = 20, rad = (a * Math.PI) / 180;
-        return <circle key={i} cx={30+r*Math.cos(rad)} cy={30+r*Math.sin(rad)} r="2" fill={color} opacity="0.5" />;
-      })}
-    </svg>
-  );
-}
-
-function BtnIconConstellation({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      {/* Leo-like constellation */}
-      <circle cx="15" cy="20" r="2.5" fill={color} opacity="0.8" />
-      <circle cx="25" cy="15" r="2" fill={color} opacity="0.8" />
-      <circle cx="35" cy="18" r="2.5" fill={color} opacity="0.8" />
-      <circle cx="40" cy="28" r="2" fill={color} opacity="0.8" />
-      <circle cx="35" cy="38" r="2.5" fill={color} opacity="0.8" />
-      <circle cx="22" cy="40" r="2" fill={color} opacity="0.8" />
-      <circle cx="20" cy="30" r="2" fill={color} opacity="0.8" />
-      <line x1="15" y1="20" x2="25" y2="15" stroke={color} strokeWidth="1" opacity="0.5" />
-      <line x1="25" y1="15" x2="35" y2="18" stroke={color} strokeWidth="1" opacity="0.5" />
-      <line x1="35" y1="18" x2="40" y2="28" stroke={color} strokeWidth="1" opacity="0.5" />
-      <line x1="40" y1="28" x2="35" y2="38" stroke={color} strokeWidth="1" opacity="0.5" />
-      <line x1="35" y1="38" x2="22" y2="40" stroke={color} strokeWidth="1" opacity="0.5" />
-      <line x1="22" y1="40" x2="20" y2="30" stroke={color} strokeWidth="1" opacity="0.5" />
-      <line x1="20" y1="30" x2="15" y2="20" stroke={color} strokeWidth="1" opacity="0.5" />
-      {/* Glow */}
-      {[{x:45,y:12,r:1.2},{x:48,y:42,r:1},{x:10,y:45,r:1.3},{x:50,y:22,r:0.8}].map((s,i) => <circle key={i} cx={s.x} cy={s.y} r={s.r} fill={color} opacity="0.3" />)}
-    </svg>
-  );
-}
-
-function BtnIconTemple({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      {/* Temple facade */}
-      <rect x="10" y="12" width="40" height="4" fill={color} opacity="0.5" rx="1" />
-      <rect x="14" y="16" width="5" height="28" fill={color} opacity="0.35" rx="1" />
-      <rect x="24" y="16" width="5" height="28" fill={color} opacity="0.35" rx="1" />
-      <rect x="34" y="16" width="5" height="28" fill={color} opacity="0.35" rx="1" />
-      <rect x="10" y="44" width="40" height="3" fill={color} opacity="0.4" rx="1" />
-      {/* Hathor face at top */}
-      <circle cx="30" cy="8" r="3" fill={color} opacity="0.5" />
-      <path d="M26 7 Q24 3 22 2" stroke={color} strokeWidth="1" fill="none" opacity="0.4" />
-      <path d="M34 7 Q36 3 38 2" stroke={color} strokeWidth="1" fill="none" opacity="0.4" />
-    </svg>
-  );
-}
-
-function BtnIconLouvre({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      {/* Louvre pyramid */}
-      <polygon points="30,12 48,42 12,42" fill="none" stroke={color} strokeWidth="1.5" opacity="0.6" />
-      <line x1="30" y1="12" x2="30" y2="42" stroke={color} strokeWidth="0.5" opacity="0.3" />
-      <line x1="21" y1="27" x2="39" y2="27" stroke={color} strokeWidth="0.5" opacity="0.3" />
-      {/* Glass panels */}
-      <line x1="24" y1="20" x2="36" y2="20" stroke={color} strokeWidth="0.5" opacity="0.2" />
-      <line x1="18" y1="34" x2="42" y2="34" stroke={color} strokeWidth="0.5" opacity="0.2" />
-      {/* Ground reflection */}
-      <polygon points="30,48 44,42 16,42" fill={color} opacity="0.1" />
-      {/* Stars */}
-      <circle cx="14" cy="16" r="1" fill={color} opacity="0.4" />
-      <circle cx="48" cy="20" r="1.2" fill={color} opacity="0.3" />
-    </svg>
-  );
-}
-
-function BtnIconCalendar({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      {/* Calendar/dating concept */}
-      <circle cx="30" cy="28" r="16" fill="none" stroke={color} strokeWidth="1.5" opacity="0.5" />
-      <line x1="30" y1="28" x2="30" y2="16" stroke={color} strokeWidth="2" opacity="0.7" strokeLinecap="round" />
-      <line x1="30" y1="28" x2="40" y2="32" stroke={color} strokeWidth="1.5" opacity="0.5" strokeLinecap="round" />
-      {/* Star markers */}
-      {[0,60,120,180,240,300].map((a,i) => {
-        const r = 16, rad = (a * Math.PI) / 180;
-        return <circle key={i} cx={30+r*Math.cos(rad)} cy={28+r*Math.sin(rad)} r="1.5" fill={color} opacity="0.6" />;
-      })}
-      <text x="30" y="50" textAnchor="middle" fill={color} fontSize="7" opacity="0.5" fontFamily="monospace">50 a.C.</text>
-    </svg>
-  );
-}
-
-function BtnIconCreatures({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      {/* Crocodile silhouette */}
-      <path d="M8 22 Q14 18 22 19 Q30 20 38 20 Q44 19 48 17 L52 17 L52 20 L48 22 Q44 25 38 25 Q30 26 22 25 Q14 24 8 26 Z" fill={color} opacity="0.4" />
-      {/* Hippo silhouette below */}
-      <ellipse cx="30" cy="42" rx="14" ry="8" fill={color} opacity="0.25" />
-      <ellipse cx="20" cy="36" rx="6" ry="7" fill={color} opacity="0.2" />
-      <circle cx="18" cy="34" r="1.5" fill={color} opacity="0.6" />
-    </svg>
-  );
-}
-
-function BtnIconPlanets({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      {/* Saturn */}
-      <circle cx="20" cy="20" r="6" fill={color} opacity="0.4" />
-      <ellipse cx="20" cy="20" rx="12" ry="3" fill="none" stroke={color} strokeWidth="1" opacity="0.4" transform="rotate(-20 20 20)" />
-      {/* Jupiter */}
-      <circle cx="42" cy="35" r="8" fill={color} opacity="0.3" />
-      <line x1="34" y1="33" x2="50" y2="33" stroke={color} strokeWidth="0.8" opacity="0.3" />
-      <line x1="35" y1="36" x2="49" y2="36" stroke={color} strokeWidth="0.8" opacity="0.3" />
-      {/* Mars */}
-      <circle cx="15" cy="42" r="4" fill={color} opacity="0.35" />
-      {/* Small stars */}
-      <circle cx="38" cy="14" r="1" fill={color} opacity="0.4" />
-      <circle cx="48" cy="48" r="1.2" fill={color} opacity="0.3" />
-    </svg>
-  );
-}
-
-function BtnIconLegacy({ color }) {
-  return (
-    <svg viewBox="0 0 60 60" style={{ width: '100%', height: '100%' }}>
-      <circle cx="30" cy="30" r="28" fill="#0D1025" />
-      {/* Journey path: Babylon → Greece → Egypt → Rome → Today */}
-      <path d="M10 40 Q18 20 30 18 Q42 16 50 30" fill="none" stroke={color} strokeWidth="1.5" opacity="0.5" strokeLinecap="round" />
-      <circle cx="10" cy="40" r="3" fill={color} opacity="0.5" />
-      <circle cx="22" cy="24" r="3" fill={color} opacity="0.5" />
-      <circle cx="34" cy="18" r="3" fill={color} opacity="0.5" />
-      <circle cx="44" cy="22" r="3" fill={color} opacity="0.5" />
-      <circle cx="50" cy="30" r="4" fill={color} opacity="0.7" />
-      {/* Arrow */}
-      <path d="M50 30 L54 28 L52 33 Z" fill={color} opacity="0.5" />
-      {/* Stars above */}
-      {[{x:16,y:12,r:1.2},{x:30,y:8,r:1.5},{x:44,y:10,r:1},{x:50,y:15,r:1.3}].map((s,i) => <circle key={i} cx={s.x} cy={s.y} r={s.r} fill={color} opacity="0.3" />)}
-      <text x="30" y="50" textAnchor="middle" fill={color} fontSize="6" opacity="0.4" fontFamily="monospace">5000 AÑOS</text>
-    </svg>
-  );
-}
-
-const BTN_ICON_MAP = {
-  'disco-zodiacal': BtnIconDisk,
-  'constelaciones': BtnIconConstellation,
-  'templo-hathor': BtnIconTemple,
-  'robo-louvre': BtnIconLouvre,
-  'datacion': BtnIconCalendar,
-  'criaturas': BtnIconCreatures,
-  'planetas': BtnIconPlanets,
-  'legado': BtnIconLegacy,
-};
-
 // ─── Content Data ────────────────────────────────────────────────────────────
 const INFOGRAPHIC_NODES = [
   {
     id: 'disco-zodiacal',
     title: 'El Disco del Cielo',
     color: '#D46A6A',
+    btnImage: '/assets/egypt/infographic_dendera/btn_disco.png',
+    image: '/assets/egypt/infographic_dendera/hero_disco.png',
     content: [
       'En el techo de un pequeño cuarto oscuro dentro del templo de Hathor en Dendera, Egipto, existía un tesoro extraordinario: un disco de piedra arenisca de 2.5 metros de diámetro y varias toneladas de peso que contenía el mapa circular más antiguo del cielo nocturno que ha sobrevivido hasta nuestros días.',
       'Este es el Zodiaco de Dendera, tallado hace aproximadamente 2,050 años (c. 50 a.C.) durante la dinastía ptolemaica, cuando los faraones eran de origen griego. El disco muestra el cielo completo organizado como un reloj cósmico: en el centro está el polo norte celeste rodeado por las estrellas circumpolares, y en los anillos exteriores se despliegan las 36 constelaciones decanales del calendario estelar egipcio.',
@@ -333,6 +169,8 @@ const INFOGRAPHIC_NODES = [
     id: 'constelaciones',
     title: 'Las 12 + las Egipcias',
     color: '#7EB8C9',
+    btnImage: '/assets/egypt/infographic_dendera/btn_constelaciones.png',
+    image: '/assets/egypt/infographic_dendera/hero_constelaciones.png',
     content: [
       'El Zodiaco de Dendera muestra las 12 constelaciones zodiacales que todavía conocemos: Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis. Pero aquí viene lo fascinante: también incluye constelaciones puramente egipcias que no aparecen en ningún otro mapa del mundo antiguo.',
       'El Cocodrilo Celestial (Sobek) aparece con la cola curvada, representando una región del cielo cerca de lo que hoy llamamos Capricornio. El Hipopótamo Erguido (Reret/Taweret) sostiene un bastón y un cocodrilo pequeño, ubicada donde hoy vemos la Osa Mayor. Un Chacal sobre un azadón marca la posición de lo que los griegos llamarían la constelación del Boyero.',
@@ -346,6 +184,8 @@ const INFOGRAPHIC_NODES = [
     id: 'templo-hathor',
     title: 'El Templo de Hathor',
     color: '#C9A96E',
+    btnImage: '/assets/egypt/infographic_dendera/btn_templo.png',
+    image: '/assets/egypt/infographic_dendera/hero_templo.png',
     content: [
       'El templo de Hathor en Dendera es uno de los mejor conservados de todo Egipto. Fue construido entre el 54 a.C. y el 20 d.C., durante los últimos faraones ptolemaicos y los primeros emperadores romanos. Hathor era la diosa del amor, la música, la alegría y la astronomía — los egipcios la llamaban "Señora de las Estrellas".',
       'Las 24 columnas del gran hall hipóstilo tienen capiteles con el rostro de Hathor con orejas de vaca, un diseño único en la arquitectura egipcia. El techo de este hall está pintado con escenas astronómicas espectaculares que muestran el viaje del Sol y las constelaciones nocturnas, conservando sus colores originales después de 2,000 años.',
@@ -359,6 +199,8 @@ const INFOGRAPHIC_NODES = [
     id: 'robo-louvre',
     title: 'El Robo del Zodiaco',
     color: '#8B6B8B',
+    btnImage: '/assets/egypt/infographic_dendera/btn_louvre.png',
+    image: '/assets/egypt/infographic_dendera/hero_louvre.png',
     content: [
       'En 1820, el ingeniero francés Claude Lelorrain llegó a Dendera con un encargo del cónsul general de Francia: arrancar el Zodiaco del techo del templo y enviarlo a París. Usando sierras, cinceles, pólvora y un equipo de trabajadores locales, cortó el bloque de piedra del techo en 22 días de trabajo brutal.',
       'El bloque de piedra, de aproximadamente 2.5 x 2.5 metros y varias toneladas de peso, fue transportado en barco por el Nilo hasta Alejandría, y desde allí hasta Marsella. Lelorrain vendió el Zodiaco al rey Luis XVIII por 150,000 francos (equivalente a millones de euros actuales). Desde 1822, se exhibe en el Museo del Louvre de París.',
@@ -372,6 +214,8 @@ const INFOGRAPHIC_NODES = [
     id: 'datacion',
     title: 'Fotografía del Cielo del 50 a.C.',
     color: '#E8C96A',
+    btnImage: '/assets/egypt/infographic_dendera/btn_datacion.png',
+    image: '/assets/egypt/infographic_dendera/hero_datacion.png',
     content: [
       'El Zodiaco de Dendera funciona como una "fotografía" del cielo de hace 2,000 años. Los astrónomos modernos han usado computadoras para simular el cielo nocturno de cada año de la Antigüedad y compararlo con las posiciones de las estrellas y planetas del Zodiaco. El resultado: la disposición corresponde exactamente al cielo del año 50 a.C.',
       'Los cinco planetas visibles a simple vista (Mercurio, Venus, Marte, Júpiter y Saturno) aparecen representados en el disco en posiciones específicas relativas a las constelaciones. Los astrónomos Eric Aubourg (CEA-Saclay, 1995) y Juan Antonio Belmonte (IAC Tenerife, 2003) confirmaron independientemente que estas posiciones coinciden con una alineación planetaria única del 50 a.C.',
@@ -385,6 +229,8 @@ const INFOGRAPHIC_NODES = [
     id: 'criaturas',
     title: 'Criaturas del Cielo Egipcio',
     color: '#6B8E6B',
+    btnImage: '/assets/egypt/infographic_dendera/btn_criaturas.png',
+    image: '/assets/egypt/infographic_dendera/hero_criaturas.png',
     content: [
       'El cielo egipcio estaba poblado de criaturas que no aparecen en ningún otro sistema astronómico del mundo. El Hipopótamo Erguido (Reret o Taweret) es una de las más impresionantes: una hipopótama de pie sobre sus patas traseras, con cola de cocodrilo, garras de león y pechos humanos. En el Zodiaco de Dendera, Reret sostiene un bastón y un cocodrilo atado.',
       'Reret corresponde aproximadamente a nuestra Osa Mayor, pero los egipcios veían una criatura protectora donde los griegos veían un oso y los mesopotámicos veían un carro. La "Pata de Buey" (Mesketiu) es la otra constelación circumpolar principal, visible toda la noche: corresponde a las siete estrellas más brillantes de la Osa Mayor formando la pata trasera de un toro.',
@@ -398,6 +244,8 @@ const INFOGRAPHIC_NODES = [
     id: 'planetas',
     title: 'Los Dioses Errantes',
     color: '#E8A87C',
+    btnImage: '/assets/egypt/infographic_dendera/btn_planetas.png',
+    image: '/assets/egypt/infographic_dendera/hero_planetas.png',
     content: [
       'Los egipcios llamaban a los planetas "estrellas que no descansan" o "estrellas infatigables" porque, a diferencia de las estrellas fijas, se movían lentamente entre las constelaciones. En el Zodiaco de Dendera, los cinco planetas visibles aparecen representados con iconografía que fusiona tradiciones egipcias y griegas.',
       'Saturno aparece como Horus-Toro (Hor-ka-pet): un hombre con cabeza de halcón de pie sobre una barca divina. Júpiter es Horus-el-Misterioso (Hor-pest-djeba): un águila sobre una serpiente. Marte es Horus-Rojo (Hor-Desher): un guerrero con cabeza de halcón sosteniendo un cetro was. Venus es la "Estrella de la Mañana" y Mercurio el "Planeta de Set".',
@@ -411,6 +259,8 @@ const INFOGRAPHIC_NODES = [
     id: 'legado',
     title: 'El Viaje de 5,000 Años',
     color: '#9B8EC7',
+    btnImage: '/assets/egypt/infographic_dendera/btn_legado.png',
+    image: '/assets/egypt/infographic_dendera/hero_legado.png',
     content: [
       'El Zodiaco de Dendera nos cuenta una historia épica de cómo el conocimiento astronómico ha viajado a través del tiempo y las culturas. Los mesopotamios de Babilonia (c. 3000 a.C.) observaron el cielo y crearon el zodíaco de 12 constelaciones basándose en la franja del cielo por donde se mueven el Sol, la Luna y los planetas (la eclíptica).',
       'Los griegos adoptaron el zodíaco babilónico y lo refinaron matemáticamente. Hiparco de Nicea (c. 190-120 a.C.) creó el primer catálogo estelar preciso con la posición de 850 estrellas y descubrió la precesión de los equinoccios. Cuando Alejandro Magno conquistó Egipto (332 a.C.), los griegos llevaron su astronomía al Nilo.',
@@ -502,9 +352,8 @@ function ZodiacHeader() {
   );
 }
 
-// ─── Organic Node Button (SVG icon-based) ────────────────────────────────────
+// ─── Organic Node Button (raster image-based, matching M11) ──────────────────
 function NodeButton({ node, isActive, onClick, index }) {
-  const BtnIcon = BTN_ICON_MAP[node.id];
   return (
     <motion.button
       onClick={onClick}
@@ -537,7 +386,8 @@ function NodeButton({ node, isActive, onClick, index }) {
         transition: 'all 0.3s ease',
         position: 'relative',
       }}>
-        {BtnIcon && <BtnIcon color={node.color} />}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         {isActive && (
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
@@ -619,29 +469,28 @@ function ContentPanel({ node, onClose }) {
         <X size={18} />
       </button>
 
-      {/* ─── Hero Section with SVG icon ─── */}
+      {/* ─── Two-Column Hero Section ─── */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: '200px 1fr',
+        gridTemplateColumns: '1fr 1fr',
         gap: '0',
-        minHeight: '260px',
+        minHeight: '280px',
       }}>
-        {/* Left: SVG Hero Icon */}
+        {/* Left: Hero Image */}
         <div style={{
           position: 'relative',
           overflow: 'hidden',
           background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))`,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '1.5rem',
         }}>
-          <div style={{ width: '160px', height: '160px', opacity: 0.85 }}>
-            {BTN_ICON_MAP[node.id] && BTN_ICON_MAP[node.id]({ color: node.color })}
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={node.image} alt={node.title} style={{
+            width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9,
+            minHeight: '280px',
+          }} />
+          {/* Bottom gradient */}
           <div style={{
-            position: 'absolute', bottom: 0, left: 0, right: 0, height: '40px',
-            background: `linear-gradient(transparent, ${node.color}10)`,
+            position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
+            background: `linear-gradient(transparent, ${node.color}15)`,
           }} />
         </div>
 
@@ -664,7 +513,8 @@ function ContentPanel({ node, onClose }) {
               border: `2px solid ${node.color}40`,
               flexShrink: 0,
             }}>
-              {BTN_ICON_MAP[node.id] && BTN_ICON_MAP[node.id]({ color: node.color })}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </span>
             {node.title}
           </h3>
@@ -832,7 +682,10 @@ export default function InteractiveInfographic_EgyptM9() {
 
   return (
     <div style={{
-      background: 'linear-gradient(180deg, #120E1A 0%, #1A1028 40%, #120E1A 100%)',
+      backgroundImage: 'linear-gradient(180deg, rgba(18,14,26,0.82) 0%, rgba(26,16,40,0.78) 40%, rgba(18,14,26,0.85) 100%), url(/assets/egypt/infographic_dendera/bg_templo.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
       borderRadius: '24px',
       padding: '2rem 1.5rem',
       position: 'relative',

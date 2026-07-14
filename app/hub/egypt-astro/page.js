@@ -35,16 +35,15 @@ const EGYPT_MODULES = [
 // ─── Estrellas de fondo animadas ─────────────────────────────────────────
 function Stars() {
   return (
-    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 0 }}>
       {Array.from({ length: 100 }).map((_, i) => (
         <div key={i} style={{
           position: 'absolute',
           left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 60}%`, // Más estrellas en el cielo, menos en la arena
+          top: `${Math.random() * 40}%`,
           width: `${Math.random() * 2 + 1}px`,
           height: `${Math.random() * 2 + 1}px`,
           borderRadius: '50%',
-          background: 'white',
           background: 'white',
           opacity: Math.random() * 0.7 + 0.3,
           animation: `twinkle ${Math.random() * 4 + 2}s ease-in-out infinite`,
@@ -62,12 +61,10 @@ function NileRiver() {
       position: 'absolute',
       top: 0, bottom: 0, left: 0, right: 0,
       pointerEvents: 'none', zIndex: 2,
-      // El Nilo corre horizontalmente entre los módulos de la fila media (top ~55%)
-      // y los módulos de abajo (top ~75%). El agua está entre ~62% y ~74%
-      // Usamos referencia de los botones: Ojo Satelital (65%,50%) está arriba del río,
-      // Telescopios (48%,75%) y Nabta Playa (22%,80%) están debajo del río
-      WebkitMaskImage: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3) 63%, black 66%, black 72%, rgba(0,0,0,0.3) 74%, transparent 76%)',
-      maskImage: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3) 63%, black 66%, black 72%, rgba(0,0,0,0.3) 74%, transparent 76%)',
+      // El Nilo corre horizontalmente por debajo de los módulos de la fila media.
+      // Alineado con la topografía real del río en hub_background.png (banda 68%-82%)
+      WebkitMaskImage: 'linear-gradient(to bottom, transparent 68%, rgba(0,0,0,0.3) 70%, black 73%, black 78%, rgba(0,0,0,0.3) 80%, transparent 82%)',
+      maskImage: 'linear-gradient(to bottom, transparent 68%, rgba(0,0,0,0.3) 70%, black 73%, black 78%, rgba(0,0,0,0.3) 80%, transparent 82%)',
     }}>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="water-distortion" x="0" y="0" width="100%" height="100%">
