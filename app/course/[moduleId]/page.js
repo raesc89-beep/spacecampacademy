@@ -13,6 +13,7 @@ import SatisfactionScale from '@/components/SatisfactionScale';
 import ApophisCountdown from '@/components/ApophisCountdown';
 import InteractiveInfographic_EgyptM11 from '@/components/infographics/InteractiveInfographic_EgyptM11';
 import InteractiveInfographic_EgyptM9 from '@/components/infographics/InteractiveInfographic_EgyptM9';
+import InteractiveInfographic_EgyptM10 from '@/components/infographics/InteractiveInfographic_EgyptM10';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -362,8 +363,11 @@ export default function CourseModule() {
           {moduleData.id === 'egypt_m9' && (
             <InteractiveInfographic_EgyptM9 />
           )}
+          {moduleData.id === 'egypt_m10' && (
+            <InteractiveInfographic_EgyptM10 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
