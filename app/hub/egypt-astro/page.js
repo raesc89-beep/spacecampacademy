@@ -8,28 +8,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const EGYPT_MODULES = [
-  // Top row (Sky) - BAJADOS para no encimar el título
-  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.png',  coords: { left: '15%', top: '25%' } },
-  { id: 'egypt_m6',  titleEs: 'Mapa del Universo', color: '#9B6BFF', link: '/course/egypt_m6',  icon: '/assets/egypt/m6_senenmut.png',     coords: { left: '35%', top: '22%' } },
-  { id: 'egypt_m2',  titleEs: 'Los Decanos',       color: '#6A9FD4', link: '/course/egypt_m2',  icon: '/assets/egypt/m2_decanos.png',      coords: { left: '60%', top: '22%' } },
-  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.png',      coords: { left: '85%', top: '25%' } },
-  
-  // Middle-Upper row (Sky/Horizon) - BAJADOS ligeramente
-  { id: 'egypt_m9',  titleEs: 'Zodiaco Dendera',   color: '#D46A6A', link: '/course/egypt_m9',  icon: '/assets/egypt/m9_dendera.png',      coords: { left: '25%', top: '42%' } },
-  { id: 'egypt_m4',  titleEs: 'Mesjetiu',          color: '#F5C842', link: '/course/egypt_m4',  icon: '/assets/egypt/m4_mesjetiu.png',     coords: { left: '50%', top: '38%' } },
-  { id: 'egypt_m3',  titleEs: 'Sopdet y Sirio',    color: '#C0E8FF', link: '/course/egypt_m3',  icon: '/assets/egypt/m3_sopdet.png',       coords: { left: '75%', top: '45%' } },
+  // Top row (Sky)
+  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.png',  coords: { left: '20%', top: '22%' } },
+  { id: 'egypt_m6',  titleEs: 'Mapa del Universo', color: '#9B6BFF', link: '/course/egypt_m6',  icon: '/assets/egypt/m6_senenmut.png',     coords: { left: '50%', top: '20%' } },
+  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.png',      coords: { left: '80%', top: '22%' } },
 
-  // Middle-Lower row (Horizon/Pyramids)
-  { id: 'egypt_m10', titleEs: 'Daga Espacial',     color: '#B0C4DE', link: '/course/egypt_m10', icon: '/assets/egypt/m10_daga.png',        coords: { left: '12%', top: '55%' } },
-  { id: 'egypt_m13', titleEs: '365 Días',          color: '#80D080', link: '/course/egypt_m13', icon: '/assets/egypt/m13_calendario.png',  coords: { left: '38%', top: '52%' } },
-  { id: 'egypt_m15', titleEs: 'Ojo Satelital',     color: '#64B5F6', link: '/course/egypt_m15', icon: '/assets/egypt/m15_satelite.png',    coords: { left: '65%', top: '50%' } },
-  { id: 'egypt_m8',  titleEs: 'Abu Simbel',        color: '#FF9A3C', link: '/course/egypt_m8',  icon: '/assets/egypt/m8_abu_simbel.png',   coords: { left: '88%', top: '58%' } },
+  // Middle row (Horizon)
+  { id: 'egypt_m9',  titleEs: 'Zodiaco Dendera',   color: '#D46A6A', link: '/course/egypt_m9',  icon: '/assets/egypt/m9_dendera.png',      coords: { left: '15%', top: '42%' } },
+  { id: 'egypt_m10', titleEs: 'Daga Espacial',     color: '#B0C4DE', link: '/course/egypt_m10', icon: '/assets/egypt/m10_daga.png',        coords: { left: '40%', top: '45%' } },
+  { id: 'egypt_m13', titleEs: '365 Días',          color: '#80D080', link: '/course/egypt_m13', icon: '/assets/egypt/m13_calendario.png',  coords: { left: '62%', top: '42%' } },
+  { id: 'egypt_m8',  titleEs: 'Abu Simbel',        color: '#FF9A3C', link: '/course/egypt_m8',  icon: '/assets/egypt/m8_abu_simbel.png',   coords: { left: '85%', top: '46%' } },
 
   // Bottom row (Desert foreground)
-  { id: 'egypt_m1',  titleEs: 'Nabta Playa',       color: '#D4A843', link: '/course/egypt_m1',  icon: '/assets/egypt/m1_nabta_playa.png',  coords: { left: '22%', top: '80%' } },
-  { id: 'egypt_m7',  titleEs: 'Telescopios',       color: '#5EC4A0', link: '/course/egypt_m7',  icon: '/assets/egypt/m7_star_shafts.png',  coords: { left: '48%', top: '75%' } },
-  { id: 'egypt_m5',  titleEs: 'Láser de Giza',     color: '#F0A500', link: '/course/egypt_m5',  icon: '/assets/egypt/m5_giza.png',         coords: { left: '72%', top: '80%' } },
-  { id: 'egypt_m12', titleEs: 'Obeliscos',         color: '#E8C96A', link: '/course/egypt_m12', icon: '/assets/egypt/m12_obelisco.png',    coords: { left: '92%', top: '82%' } },
+  { id: 'egypt_m1',  titleEs: 'Nabta Playa',       color: '#D4A843', link: '/course/egypt_m1',  icon: '/assets/egypt/m1_nabta_playa.png',  coords: { left: '20%', top: '75%' } },
+  { id: 'egypt_m5',  titleEs: 'Láser de Giza',     color: '#F0A500', link: '/course/egypt_m5',  icon: '/assets/egypt/m5_giza.png',         coords: { left: '50%', top: '78%' } },
+  { id: 'egypt_m12', titleEs: 'Obeliscos',         color: '#E8C96A', link: '/course/egypt_m12', icon: '/assets/egypt/m12_obelisco.png',    coords: { left: '80%', top: '75%' } },
 ];
 
 // ─── Estrellas de fondo animadas ─────────────────────────────────────────
