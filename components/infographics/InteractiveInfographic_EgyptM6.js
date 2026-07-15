@@ -1,0 +1,692 @@
+'use client';
+
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
+
+// ─── SVG Decorative Elements ─────────────────────────────────────────────────
+function DecoAnkh({ size = 60, color = '#9B6BFF', style = {} }) {
+  return (
+    <svg width={size} height={size * 1.4} viewBox="0 0 40 56" style={{ opacity: 0.25, ...style }}>
+      <ellipse cx="20" cy="12" rx="10" ry="12" fill="none" stroke={color} strokeWidth="3" />
+      <line x1="20" y1="24" x2="20" y2="52" stroke={color} strokeWidth="3" strokeLinecap="round" />
+      <line x1="8" y1="34" x2="32" y2="34" stroke={color} strokeWidth="3" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function DecoEye({ size = 80, color = '#7EC8E3', style = {} }) {
+  return (
+    <svg width={size} height={size * 0.6} viewBox="0 0 80 48" style={{ opacity: 0.2, ...style }}>
+      <path d="M10 24 Q40 0 70 24 Q40 48 10 24Z" fill="none" stroke={color} strokeWidth="2.5" />
+      <circle cx="40" cy="24" r="8" fill={color} opacity="0.4" />
+      <circle cx="40" cy="24" r="4" fill={color} opacity="0.7" />
+      <path d="M40 32 Q35 42 28 46" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" />
+      <line x1="28" y1="46" x2="22" y2="44" stroke={color} strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function DecoScarab({ size = 70, color = '#FFD700', style = {} }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" style={{ opacity: 0.2, ...style }}>
+      <circle cx="30" cy="14" r="10" fill={color} opacity="0.5" />
+      <ellipse cx="30" cy="36" rx="12" ry="16" fill={color} opacity="0.3" />
+      <path d="M18 30 Q2 18 6 6" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" />
+      <path d="M42 30 Q58 18 54 6" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" />
+      <line x1="18" y1="36" x2="6" y2="40" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="42" y1="36" x2="54" y2="40" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="18" y1="42" x2="8" y2="50" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="42" y1="42" x2="52" y2="50" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function DecoPyramid({ size = 70, color = '#E8C96A', style = {} }) {
+  return (
+    <svg width={size} height={size * 0.7} viewBox="0 0 80 56" style={{ opacity: 0.2, ...style }}>
+      <polygon points="40,4 72,52 8,52" fill="none" stroke={color} strokeWidth="2" />
+      <polygon points="56,8 80,52 40,52" fill="none" stroke={color} strokeWidth="1.5" opacity="0.5" />
+      <circle cx="40" cy="2" r="2" fill={color} opacity="0.8" />
+      <circle cx="56" cy="6" r="1.5" fill={color} opacity="0.6" />
+      <circle cx="48" cy="0" r="1" fill={color} opacity="0.4" />
+    </svg>
+  );
+}
+
+function DecoStarCluster({ size = 60, color = '#C4A7E7', style = {} }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" style={{ opacity: 0.2, ...style }}>
+      {[{x:30,y:10,r:3},{x:15,y:25,r:2},{x:45,y:20,r:2.5},{x:20,y:45,r:2},{x:40,y:42,r:3},{x:30,y:30,r:4},{x:10,y:12,r:1.5},{x:50,y:48,r:1.5}].map((s,i) => (
+        <g key={i}>
+          <circle cx={s.x} cy={s.y} r={s.r} fill={color} opacity={0.6} />
+          <circle cx={s.x} cy={s.y} r={s.r * 2.5} fill={color} opacity={0.1} />
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function DecoCelestialMap({ size = 80, color = '#9B6BFF', style = {} }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 80 80" style={{ opacity: 0.22, ...style }}>
+      {/* Outer ring - celestial dome */}
+      <circle cx="40" cy="40" r="34" fill="none" stroke={color} strokeWidth="1.5" strokeDasharray="3 5" />
+      <circle cx="40" cy="40" r="28" fill="none" stroke={color} strokeWidth="1" opacity="0.4" />
+      {/* Dividing line - north/south */}
+      <line x1="6" y1="40" x2="74" y2="40" stroke={color} strokeWidth="1" opacity="0.3" />
+      {/* Constellation dots */}
+      {[{x:25,y:20},{x:35,y:15},{x:45,y:18},{x:55,y:22},{x:30,y:28},{x:50,y:30}].map((p,i) => (
+        <circle key={`n${i}`} cx={p.x} cy={p.y} r="2" fill={color} opacity="0.6" />
+      ))}
+      {/* Constellation lines */}
+      <polyline points="25,20 35,15 45,18 55,22" fill="none" stroke={color} strokeWidth="0.8" opacity="0.4" />
+      <polyline points="30,28 35,15" fill="none" stroke={color} strokeWidth="0.8" opacity="0.3" />
+      {/* Planet boats in south */}
+      {[20, 35, 50, 62].map((x, i) => (
+        <g key={`p${i}`}>
+          <path d={`M${x-5},55 Q${x},50 ${x+5},55`} fill="none" stroke={color} strokeWidth="1.2" opacity="0.5" />
+          <circle cx={x} cy={52} r="1.5" fill={color} opacity="0.5" />
+        </g>
+      ))}
+      {/* Decan markers in south */}
+      {[15, 25, 35, 45, 55, 65].map((x, i) => (
+        <rect key={`d${i}`} x={x-1} y={64} width="2" height="5" rx="0.5" fill={color} opacity="0.3" />
+      ))}
+    </svg>
+  );
+}
+
+function DecoSolarBoat({ size = 80, color = '#FFB347', style = {} }) {
+  return (
+    <svg width={size} height={size * 0.5} viewBox="0 0 80 40" style={{ opacity: 0.2, ...style }}>
+      {/* Boat hull */}
+      <path d="M10 30 Q15 18 40 16 Q65 18 70 30 Z" fill={color} opacity="0.2" stroke={color} strokeWidth="1.5" />
+      {/* Curved prow */}
+      <path d="M10 30 Q5 25 8 18 Q10 14 14 10" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      {/* Curved stern */}
+      <path d="M70 30 Q75 25 72 18" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      {/* Sun disk on the boat */}
+      <circle cx="40" cy="10" r="7" fill={color} opacity="0.4" />
+      <circle cx="40" cy="10" r="10" fill="none" stroke={color} strokeWidth="0.8" opacity="0.3" />
+      {/* Rays */}
+      {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => {
+        const rad = (angle * Math.PI) / 180;
+        const x1 = 40 + 11 * Math.cos(rad);
+        const y1 = 10 + 11 * Math.sin(rad);
+        const x2 = 40 + 14 * Math.cos(rad);
+        const y2 = 10 + 14 * Math.sin(rad);
+        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} strokeWidth="1" strokeLinecap="round" opacity="0.4" />;
+      })}
+    </svg>
+  );
+}
+
+function DecoHieroglyphColumn({ size = 40, color = '#9B6BFF', style = {} }) {
+  return (
+    <svg width={size} height={size * 3} viewBox="0 0 30 90" style={{ opacity: 0.15, ...style }}>
+      {/* Cartouche border */}
+      <rect x="4" y="2" width="22" height="86" rx="11" fill="none" stroke={color} strokeWidth="1.5" />
+      {/* Abstract glyphs */}
+      <circle cx="15" cy="14" r="5" fill="none" stroke={color} strokeWidth="1" />
+      <circle cx="15" cy="14" r="2" fill={color} opacity="0.4" />
+      <path d="M10 28 L20 28 L15 22 Z" fill={color} opacity="0.3" />
+      <line x1="10" y1="36" x2="20" y2="36" stroke={color} strokeWidth="1" />
+      <path d="M10 44 Q15 38 20 44 Q15 50 10 44Z" fill="none" stroke={color} strokeWidth="1" />
+      <rect x="10" y="56" width="10" height="6" rx="1" fill={color} opacity="0.3" />
+      <path d="M12 68 L18 68 L18 76 L12 76 Z" fill="none" stroke={color} strokeWidth="1" />
+      <circle cx="15" cy="72" r="2" fill={color} opacity="0.3" />
+      <line x1="10" y1="82" x2="20" y2="82" stroke={color} strokeWidth="1.5" />
+    </svg>
+  );
+}
+
+// Map node IDs to decorative SVGs
+const DECO_MAP = {
+  'senenmut': [DecoCelestialMap, DecoAnkh, DecoPyramid],
+  'techo-astronomico': [DecoCelestialMap, DecoStarCluster, DecoSolarBoat],
+  'planetas-barcas': [DecoSolarBoat, DecoCelestialMap, DecoStarCluster],
+  'constelaciones': [DecoStarCluster, DecoEye, DecoCelestialMap],
+  'decanos': [DecoStarCluster, DecoScarab, DecoAnkh],
+  'hatshepsut': [DecoAnkh, DecoPyramid, DecoHieroglyphColumn],
+  'ciencia-moderna': [DecoCelestialMap, DecoEye, DecoStarCluster],
+  'legado-cosmos': [DecoStarCluster, DecoAnkh, DecoCelestialMap],
+};
+
+// ─── Content Data ────────────────────────────────────────────────────────────
+const INFOGRAPHIC_NODES = [
+  {
+    id: 'senenmut',
+    title: 'Senenmut: El Genio',
+    color: '#9B6BFF',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_senenmut.png',
+    image: '/assets/egypt/infographic_senenmut/hero_senenmut.png',
+    content: [
+      'Imagina que eres el hombre más inteligente de todo Egipto, el favorito de la reina más poderosa de la historia. Ese hombre se llamaba Senenmut, y vivió hace unos 3,500 años, durante la dinastía XVIII. No era faraón, ni príncipe, ni guerrero... era algo mucho más interesante: ¡un arquitecto-científico que sabía de todo!',
+      'Senenmut era el arquitecto personal de Hatshepsut, la única mujer que gobernó Egipto como faraón con poder completo. Él diseñó su obra maestra: el templo de Deir el-Bahari, un edificio tan hermoso que hoy sigue siendo considerado una de las maravillas de la arquitectura antigua. Pero su tumba escondía un secreto aún más impresionante que el templo.',
+      'En las inscripciones de su tumba, Senenmut se describe como "maestro de todas las ciencias y artes conocidas". En el Antiguo Egipto no existía la separación entre disciplinas que tenemos hoy. El mismo hombre que diseñaba templos también calculaba posiciones de estrellas, supervisaba el tejido de telas de lino, coordinaba expediciones comerciales y escribía poesía. Era como mezclar a un ingeniero, un astrónomo, un artista y un empresario en una sola persona.',
+      'Su relación con Hatshepsut es uno de los grandes misterios de la historia. Algunos historiadores creen que eran pareja; otros piensan que era una relación estrictamente profesional. Lo cierto es que Hatshepsut le dio un privilegio que ningún otro no-real había recibido en toda la historia egipcia: ¡el permiso de tener su tumba en el Valle de los Reyes, un lugar reservado exclusivamente para faraones!',
+      'Su tumba secreta fue descubierta en 1925 por el arqueólogo Herbert Winlock del Museo Metropolitano de Nueva York. Estaba esculpida en la roca viva de la colina de Deir el-Bahari, escondida detrás de la tumba principal que Senenmut nunca llegó a usar. Cuando los arqueólogos entraron por primera vez y alumbraron el techo con sus linternas, descubrieron algo que los dejó sin palabras.',
+    ],
+    fact: 'Senenmut tenía más de 80 títulos oficiales, más que cualquier otro funcionario en la historia de Egipto. Entre ellos: "Supervisor de los graneros de Amón", "Jefe de los trabajos del rey", "Tutor de la princesa Neferura" y "Guardián de los sellos reales". ¡Era básicamente el hombre que hacía funcionar todo el país!',
+  },
+  {
+    id: 'techo-astronomico',
+    title: 'El Techo del Cielo',
+    color: '#4A90D9',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_techo.png',
+    image: '/assets/egypt/infographic_senenmut/hero_techo.png',
+    content: [
+      '¿Qué pasaría si pudieras tomar una foto del cielo entero por la noche y pegarla en el techo de tu habitación? Eso es exactamente lo que hizo Senenmut hace 3,500 años, pero en vez de usar una cámara, usó a los mejores artistas de Egipto y pigmentos minerales que todavía brillan hoy.',
+      'El techo astronómico de su tumba es el primer mapa celeste completo que conocemos. Tiene dos mitades perfectamente diferenciadas: la mitad norte muestra las constelaciones circumpolares (las que nunca se ponen, como la Osa Mayor), y la mitad sur muestra los 36 grupos de estrellas llamados "Decanos" que los egipcios usaban como reloj nocturno.',
+      'Los artistas usaron pigmentos minerales de altísima calidad: lapislázuli molido para el azul profundo del cielo nocturno, ocre para el amarillo dorado de las estrellas, y carbón vegetal para el negro del espacio. Estos colores son tan estables químicamente que, después de 3,500 años en la oscuridad total de la tumba, ¡todavía brillan como si los hubieran pintado ayer!',
+      'Lo que hace único a este techo es que combina AMBAS zonas del cielo en una sola imagen. Antes de Senenmut, los egipcios representaban el cielo norte o el cielo sur por separado. Él fue el primero en juntar todo en un solo mapa, creando lo que podemos considerar el primer "atlas celeste" de la historia.',
+      'La orientación de la tumba también tiene significado astronómico. La entrada está colocada de tal forma que, en ciertos días del año, la luz del Sol penetra hasta las pinturas del techo, iluminando momentáneamente el mapa celeste. Es como si Senenmut hubiera diseñado un efecto especial donde el Sol real "visitara" su cielo pintado.',
+    ],
+    fact: 'Hoy, equipos científicos documentan el techo de Senenmut con fotogrametría de alta resolución, escaneo láser 3D y análisis multiespectral. Han descubierto capas de pigmento invisibles a simple vista que revelan correcciones y cambios que los artistas hicieron durante la creación del mapa. ¡Hasta los antiguos egipcios borraban y volvían a dibujar!',
+  },
+  {
+    id: 'planetas-barcas',
+    title: 'Planetas en Barcas',
+    color: '#FFB347',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_planetas.png',
+    image: '/assets/egypt/infographic_senenmut/hero_planetas.png',
+    content: [
+      'Si miras el cielo por la noche, verás miles de estrellas que parecen moverse todas juntas, como si estuvieran pegadas a una gran bola que gira lentamente. Pero hay cinco "estrellas" que hacen trampas: se mueven por su cuenta, van más rápido o más lento, ¡e incluso a veces parecen ir hacia atrás! Esas son los planetas, y los egipcios los descubrieron hace miles de años.',
+      'El mapa de Senenmut incluye los cinco planetas visibles a simple vista: Mercurio, Venus, Marte, Júpiter y Saturno. Pero no los dibujó como puntos de luz: los representó como barcas divinas navegando por el cielo. Para los egipcios, si algo se movía de forma diferente al resto, era porque tenía "voluntad propia", ¡como un barco con su propio capitán!',
+      'Cada planeta-barca tenía su propia identidad divina. Los egipcios llamaban a Júpiter "Hor-tash-tawy" (Horus que ilumina las dos tierras) y a Saturno "Hor-ka-pet" (Horus toro del cielo). Venus era "la estrella de la mañana" o "la estrella de la tarde" dependiendo de cuándo aparecía. Marte, con su brillo rojizo, estaba asociado con Horus el Rojo.',
+      'Los científicos modernos han verificado con software de simulación astronómica que las posiciones de los planetas en el mapa de Senenmut corresponden a alineaciones reales que ocurrieron en fechas específicas durante los siglos XV y XVI a.C. Esto significa que el mapa no es pura fantasía religiosa: ¡es una representación astronómica real de un cielo observable en una fecha concreta!',
+      'Este es un dato increíble: el mapa de Senenmut es la primera representación conocida en la historia donde los planetas se muestran como objetos distintos de las estrellas fijas. Los egipcios entendieron, 2,000 años antes que los griegos, que había dos tipos de objetos en el cielo: los que están "fijos" y los que "viajan". La palabra griega "planetes" (errantes) vino después, pero la idea ya estaba aquí.',
+    ],
+    fact: 'Venus puede ser tanto "estrella de la mañana" como "estrella de la tarde" porque su órbita está más cerca del Sol que la Tierra. Dependiendo de dónde esté en su órbita, la vemos justo antes del amanecer o justo después del atardecer. ¡Los egipcios tardaron siglos en darse cuenta de que eran el mismo objeto!',
+  },
+  {
+    id: 'constelaciones',
+    title: 'Monstruos del Cielo',
+    color: '#4CAF50',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_constelaciones.png',
+    image: '/assets/egypt/infographic_senenmut/hero_constelaciones.png',
+    content: [
+      '¿Sabías que los egipcios veían animales completamente diferentes a nosotros cuando miraban las estrellas? Donde nosotros vemos la Osa Mayor (un oso o un carro), ellos veían a "Mesjetiu", ¡la pata delantera de un toro! Y donde nosotros vemos a Draco (el dragón), ellos veían un cocodrilo y un hipopótamo cósmicos.',
+      'La mitad norte del techo de Senenmut muestra las constelaciones circumpolares, que son las que nunca se ponen: están tan cerca del Polo Norte celeste que dan vueltas alrededor de él toda la noche sin tocar el horizonte. Para los egipcios, estas constelaciones eran "inmortales" porque nunca "morían" (nunca desaparecían bajo el horizonte).',
+      'La constelación más importante era Mesjetiu (nuestra Osa Mayor). Los egipcios la representaban como la pata delantera de un toro sagrado que había sido cortada por Horus para evitar que Seth causara caos en el cielo. El Hipopótamo celestial (la constelación que incluye nuestra Draco) era Taweret, la diosa protectora de los partos, que sujetaba la pata del toro con una cadena invisible de estrellas.',
+      'El Cocodrilo celestial estaba asociado con Sobek, el dios del agua y la fertilidad. Aparecía cerca del Hipopótamo en las representaciones egipcias, y los sacerdotes-astrónomos enseñaban que estos tres "monstruos del cielo" (Toro, Hipopótamo y Cocodrilo) mantenían el orden del universo girando eternamente alrededor del punto central del cielo.',
+      'Los nombres egipcios de las constelaciones nos enseñan algo importante: cada cultura ve el cielo a través de sus propios ojos. Un pastor griego veía osos y cazadores; un navegante polinesio veía canoas y anzuelos; un nómada egipcio veía los animales del Nilo. Las mismas estrellas, contando historias completamente diferentes. ¡El cielo es el primer libro de la humanidad, y cada pueblo lo leyó en su propio idioma!',
+    ],
+    fact: 'La Osa Mayor (Mesjetiu para los egipcios) es tan importante astronómicamente que aparece en las tapas de ataúdes egipcios, en techos de templos y en papiros funerarios. Era considerada la "brújula del cielo" porque sus estrellas apuntan al Polo Norte celeste. Los constructores de las pirámides la usaban para alinear sus monumentos con el norte verdadero.',
+  },
+  {
+    id: 'decanos',
+    title: 'El Reloj de Estrellas',
+    color: '#E57373',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_decanos.png',
+    image: '/assets/egypt/infographic_senenmut/hero_decanos.png',
+    content: [
+      'Antes de que existieran los relojes, ¿cómo sabías qué hora era por la noche? Los egipcios inventaron algo genial: dividieron el cielo en 36 grupos de estrellas llamados "Decanos" (del griego "dekanoi", porque cada uno gobernaba 10 días del año). Cada hora de la noche, un nuevo Decano aparecía por el horizonte este, como un reloj de estrellas.',
+      'El sistema funcionaba así: los sacerdotes-astrónomos, llamados "Observadores de la Hora", se sentaban en los techos de los templos y miraban hacia el este. Cuando un grupo específico de estrellas (un Decano) aparecía sobre el horizonte, marcaba el inicio de una nueva hora. La noche se dividía en 12 horas, cada una señalada por la aparición de un Decano diferente.',
+      'El techo de Senenmut muestra los 36 Decanos de forma clara y ordenada en la mitad sur del mapa. Cada Decano está representado por un símbolo específico que los astrónomos podían identificar rápidamente. Combinados con las 12 horas del día (medidas con relojes de sol), los Decanos creaban el día de 24 horas que seguimos usando hoy.',
+      'Este es un dato que casi nadie sabe: ¡la razón por la que nuestro día tiene 24 horas viene directamente de los Decanos egipcios! Los griegos adoptaron el sistema de 12 horas nocturnas + 12 horas diurnas de los egipcios, los romanos lo heredaron de los griegos, y nosotros lo heredamos de los romanos. Cada vez que miras un reloj, estás usando un invento egipcio de hace 4,000 años.',
+      'Los Decanos también servían para el calendario. Como cada Decano "reinaba" durante 10 días (una "década" egipcia), 36 Decanos × 10 días = 360 días. Los egipcios añadían 5 días extra al final del año (llamados "epagómenos" o días "sobre el año") para completar los 365 días del año solar. ¡Su calendario era tan preciso que solo se equivocaba un día cada cuatro años!',
+    ],
+    fact: 'La estrella Sirio (llamada "Sopdet" por los egipcios) era el Decano más importante de todos. Su primera aparición en el horizonte después de 70 días de invisibilidad (el "orto helíaco") marcaba el inicio del año nuevo egipcio y coincidía casi exactamente con el inicio de la inundación anual del Nilo. ¡Una estrella les avisaba de que el río iba a crecer!',
+  },
+  {
+    id: 'hatshepsut',
+    title: 'La Reina Faraón',
+    color: '#E91E63',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_hatshepsut.png',
+    image: '/assets/egypt/infographic_senenmut/hero_hatshepsut.png',
+    content: [
+      'Para entender la tumba de Senenmut, hay que conocer a la mujer que hizo posible todo: Hatshepsut, la reina que se convirtió en faraón. En el Antiguo Egipto, las mujeres tenían más derechos que en casi cualquier otra civilización antigua: podían heredar propiedades, divorciarse y hacer negocios. Pero gobernar como faraón... eso no se había visto nunca.',
+      'Hatshepsut no era una guerrera; era una líder estratégica. En vez de conquistar territorios con ejércitos, expandió el comercio. Organizó la famosa expedición al País de Punt (probablemente la actual Somalia o Eritrea), donde trajo árboles de incienso, oro, marfil, pieles de leopardo y monos vivos. Fue una de las expediciones comerciales más ambiciosas de la antigüedad.',
+      'Para legitimarse como faraón, Hatshepsut se hacía representar con barba postiza, el nemes (tocado real) y todos los símbolos del poder faraónico. No era que quisiera "hacerse pasar por hombre": era que el cargo de faraón estaba tan asociado con esos símbolos que necesitaba usarlos para que la gente la reconociera como gobernante legítima. Es como si un presidente moderno usara traje y corbata aunque no le gustaran.',
+      'El templo de Deir el-Bahari, diseñado por Senenmut para Hatshepsut, es una obra maestra de tres terrazas escalonadas construidas contra el acantilado de la montaña. Sus proporciones matemáticas usan la proporción áurea (1.618...), el mismo número que aparece en los pétalos de las flores y en las espirales de los caracoles. Es uno de los edificios más elegantes jamás construidos.',
+      'Después de la muerte de Hatshepsut, su sucesor Tutmosis III ordenó borrar su nombre y sus imágenes de todos los monumentos. Pero la tumba secreta de Senenmut, oculta bajo la roca, escapó a la destrucción. Irónicamente, el mapa celeste que Senenmut pintó para honrar a su reina sobrevivió intacto durante 3,500 años, convirtiéndose en uno de los legados científicos más importantes de la era de Hatshepsut.',
+    ],
+    fact: 'Hatshepsut fue tan exitosa que Egipto vivió uno de sus periodos de mayor prosperidad durante su reinado de 22 años. Construyó más monumentos que cualquier otro faraón anterior. Cuando Tutmosis III borró su nombre, no fue por odio personal: fue porque necesitaba justificar su propia legitimidad como heredero directo de Tutmosis II, saltándose el reinado de Hatshepsut.',
+  },
+  {
+    id: 'ciencia-moderna',
+    title: 'Descifrando el Mapa',
+    color: '#00BCD4',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_ciencia.png',
+    image: '/assets/egypt/infographic_senenmut/hero_ciencia.png',
+    content: [
+      'Durante siglos, el mapa de Senenmut fue un enigma. Los científicos sabían que representaba el cielo, pero no podían descifrar todos los símbolos. ¿Ese círculo era Júpiter o Saturno? ¿Esa barca era Venus o Mercurio? Fue como tener un mapa del tesoro sin saber qué significaban los símbolos.',
+      'El gran avance llegó cuando los astrónomos empezaron a usar software de simulación astronómica (como Stellarium o programas de la NASA) para "rebobinar" el cielo y ver exactamente cómo se veía desde Luxor hace 3,500 años. Compararon las posiciones simuladas de los planetas con las posiciones en el mapa y descubrieron correspondencias sorprendentes.',
+      'Los resultados sugieren que el mapa no es genérico o simbólico: representa una fecha real. Las posiciones relativas de los planetas en el mapa coinciden con alineaciones que ocurrieron en momentos específicos del reinado de Hatshepsut. Es como si Senenmut hubiera "tomado una foto" del cielo de una noche particular y la hubiera pintado en su techo.',
+      'El famoso Techo Astronómico de Seti I, pintado unos 200 años después en el Valle de los Reyes, es claramente una versión expandida y refinada del mapa de Senenmut. Esto demuestra que el conocimiento astronómico egipcio se transmitía de generación en generación, con cada nueva versión más completa y precisa. Exactamente como funciona la ciencia hoy: cada generación mejora lo que heredó.',
+      'Hoy, la identificación precisa de todos los símbolos del mapa sigue siendo un área activa de investigación. Cada pocos años se publican nuevas interpretaciones en revistas científicas. Un símbolo que muestra un hombre con una estrella sobre la cabeza podría ser la representación más antigua del planeta Júpiter. Otro símbolo podría ser Venus en su fase de lucero matutino. El mapa de Senenmut sigue revelando secretos 3,500 años después.',
+    ],
+    fact: 'El "orto helíaco" de Sirio (cuando aparece por primera vez justo antes del amanecer después de 70 días de invisibilidad) era la observación astronómica más importante del año egipcio. Los científicos modernos han calculado que en la época de Senenmut, este evento ocurría alrededor del 17 de julio en nuestro calendario. ¡Los sacerdotes esperaban ese día como nosotros esperamos la Navidad!',
+  },
+  {
+    id: 'legado-cosmos',
+    title: 'El Legado Cósmico',
+    color: '#AB47BC',
+    btnImage: '/assets/egypt/infographic_senenmut/btn_legado.png',
+    image: '/assets/egypt/infographic_senenmut/hero_legado.png',
+    content: [
+      'El mapa de Senenmut no se quedó solo en una tumba. Su influencia se extendió como ondas en un lago. Los sacerdotes de las generaciones siguientes lo copiaron, lo mejoraron y lo expandieron en los techos de los templos y tumbas reales más importantes de Egipto. Es como una cadena de conocimiento que conecta el pasado con el presente.',
+      'Los comerciantes fenicios llevaron conocimientos astronómicos egipcios por todo el Mediterráneo. Los filósofos griegos como Tales de Mileto, Pitágoras y Platón viajaron a Egipto y estudiaron en las escuelas sacerdotales. Cuando Alejandro Magno fundó Alejandría en 332 a.C., la fusión del pensamiento egipcio, griego y babilónico creó la astronomía científica que Ptolomeo sistematizó en su "Almagesto".',
+      'La idea de dividir la noche en 12 horas usando los Decanos viajó de Egipto a Grecia, de Grecia a Roma, y de Roma a todo el mundo occidental. El concepto de un calendario de 365 días con ajustes periódicos también es de origen egipcio. Julio César consultó al astrónomo egipcio Sosígenes para crear el calendario Juliano en el 46 a.C., que con ligeras modificaciones del papa Gregorio XIII se convirtió en el calendario que usamos hoy.',
+      'Piensa en esto: cada vez que miras un reloj de 24 horas, cada vez que consultas el calendario, cada vez que alguien dice "son las 3 de la mañana"... estás usando inventos que tienen raíces en las noches estrelladas del Antiguo Egipto. Los sacerdotes que observaban los Decanos desde los techos de los templos no podían imaginar que su sistema de medir el tiempo seguiría usándose 4,000 años después.',
+      'El gran mensaje del mapa de Senenmut es que los humanos siempre hemos querido representar y entender el universo. Desde las pinturas en cuevas hasta los telescopios espaciales como el James Webb, pasando por los techos pintados de una tumba en Luxor, la curiosidad humana por el cosmos ha sido constante. Senenmut nos dejó un mensaje que sigue brillando: mira hacia arriba, aprende los patrones del cielo, y úsalos para vivir mejor.',
+    ],
+    fact: 'El calendario egipcio de 365 días fue tan preciso que los romanos lo adoptaron y lo usaron durante 1,600 años. El "error" del calendario egipcio era de solo un día cada 4 años (porque el año real tiene 365.25 días). Julio César arregló esto añadiendo un día extra cada 4 años: el año bisiesto. ¡Gracias, Senenmut, por darnos el 29 de febrero!',
+  },
+];
+
+// ─── Star Field Background ──────────────────────────────────────────────────
+function StarField() {
+  const canvasRef = useRef(null);
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const resize = () => {
+      canvas.width = canvas.parentElement.offsetWidth;
+      canvas.height = canvas.parentElement.offsetHeight;
+    };
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const stars = Array.from({ length: 90 }, () => ({
+      x: Math.random() * w, y: Math.random() * h,
+      r: Math.random() * 1.5 + 0.3,
+      o: Math.random() * 0.5 + 0.15,
+      speed: Math.random() * 0.003 + 0.001,
+      phase: Math.random() * Math.PI * 2,
+    }));
+    let frame;
+    function draw(t) {
+      ctx.clearRect(0, 0, w, h);
+      stars.forEach(s => {
+        const opacity = s.o + Math.sin(t * s.speed + s.phase) * 0.25;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(155, 107, 255, ${Math.max(0, opacity)})`;
+        ctx.fill();
+      });
+      frame = requestAnimationFrame(draw);
+    }
+    frame = requestAnimationFrame(draw);
+    return () => cancelAnimationFrame(frame);
+  }, []);
+  return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
+}
+
+// ─── Senenmut Header SVG ────────────────────────────────────────────────────
+function SenenmutHeader() {
+  return (
+    <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-20px' }}>
+      <svg viewBox="0 0 600 120" style={{ width: '100%', maxWidth: '600px', height: 'auto', filter: 'drop-shadow(0 0 10px rgba(155,107,255,0.3))' }}>
+        {/* Celestial dome arch */}
+        <path d="M 30 110 Q 80 20, 300 10 Q 520 20, 570 110" fill="none" stroke="url(#senenmutGrad)" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Constellation dots along the arch */}
+        {[80, 130, 185, 240, 300, 360, 415, 470, 520].map((cx, i) => {
+          const cy = 10 + Math.abs(cx - 300) * 0.14 + 12;
+          return (
+            <g key={i}>
+              <motion.circle cx={cx} cy={cy} r="3" fill="#9B6BFF"
+                animate={{ opacity: [0.3, 1, 0.3], r: [2, 3.5, 2] }}
+                transition={{ duration: 2 + i * 0.25, repeat: Infinity, ease: 'easeInOut', delay: i * 0.25 }}
+                style={{ filter: 'drop-shadow(0 0 5px #9B6BFF)' }}
+              />
+              {/* Constellation lines between some dots */}
+              {i > 0 && i % 2 === 0 && (
+                <line
+                  x1={[80, 130, 185, 240, 300, 360, 415, 470, 520][i-1]}
+                  y1={10 + Math.abs([80, 130, 185, 240, 300, 360, 415, 470, 520][i-1] - 300) * 0.14 + 12}
+                  x2={cx} y2={cy}
+                  stroke="rgba(155,107,255,0.3)" strokeWidth="1"
+                />
+              )}
+            </g>
+          );
+        })}
+        {/* Center celestial disk */}
+        <circle cx="300" cy="8" r="10" fill="rgba(155,107,255,0.5)" style={{ filter: 'drop-shadow(0 0 12px rgba(155,107,255,0.5))' }} />
+        <circle cx="300" cy="8" r="14" fill="none" stroke="rgba(155,107,255,0.3)" strokeWidth="1" />
+        <circle cx="300" cy="8" r="5" fill="rgba(155,107,255,0.8)" />
+        <circle cx="30" cy="110" r="5" fill="rgba(155,107,255,0.4)" />
+        <circle cx="570" cy="110" r="5" fill="rgba(155,107,255,0.4)" />
+        <defs>
+          <linearGradient id="senenmutGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="rgba(155,107,255,0.2)" />
+            <stop offset="50%" stopColor="rgba(155,107,255,0.9)" />
+            <stop offset="100%" stopColor="rgba(155,107,255,0.2)" />
+          </linearGradient>
+        </defs>
+        <text x="300" y="70" textAnchor="middle" fill="#9B6BFF" fontSize="17" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">MAPA DEL UNIVERSO</text>
+        <text x="300" y="90" textAnchor="middle" fill="rgba(155,107,255,0.6)" fontSize="10.5" fontFamily="monospace" letterSpacing="2">LA TUMBA DE SENENMUT · CIRCA 1473 A.C.</text>
+      </svg>
+    </div>
+  );
+}
+
+// ─── Organic Node Button (circular image-based) ─────────────────────────────
+function NodeButton({ node, isActive, onClick, index }) {
+  return (
+    <motion.button
+      onClick={onClick}
+      whileHover={{ scale: 1.08, y: -5 }}
+      whileTap={{ scale: 0.95 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.06, type: 'spring', stiffness: 300, damping: 25 }}
+      style={{
+        background: 'none', border: 'none', cursor: 'pointer',
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        gap: '0.5rem', padding: '0.5rem', position: 'relative',
+      }}
+    >
+      <div style={{
+        width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden',
+        border: `3px solid ${isActive ? node.color : 'rgba(155,107,255,0.2)'}`,
+        boxShadow: isActive
+          ? `0 0 20px ${node.color}50, 0 0 40px ${node.color}20, inset 0 0 15px ${node.color}30`
+          : '0 4px 15px rgba(0,0,0,0.3)',
+        transition: 'all 0.3s ease', position: 'relative',
+      }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={node.btnImage} alt={node.title} style={{
+          width: '100%', height: '100%', objectFit: 'cover',
+          transition: 'transform 0.3s ease', transform: isActive ? 'scale(1.1)' : 'scale(1)',
+        }} />
+        {isActive && (
+          <motion.div
+            animate={{ opacity: [0.4, 0.8, 0.4] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            style={{
+              position: 'absolute', inset: '-4px', borderRadius: '50%',
+              border: `2px solid ${node.color}`, pointerEvents: 'none',
+            }}
+          />
+        )}
+      </div>
+      <span style={{
+        color: isActive ? node.color : 'rgba(255,255,255,0.75)',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing: '0.3px',
+        textAlign: 'center', lineHeight: 1.2, transition: 'color 0.3s',
+        maxWidth: '100px', textShadow: isActive ? `0 0 8px ${node.color}40` : 'none',
+      }}>
+        {node.title}
+      </span>
+      {isActive && (
+        <motion.div layoutId="activeDotM6"
+          style={{ width: '6px', height: '6px', borderRadius: '50%',
+            background: node.color, boxShadow: `0 0 8px ${node.color}` }}
+        />
+      )}
+    </motion.button>
+  );
+}
+
+// ─── Magazine-Style Content Panel ────────────────────────────────────────────
+function ContentPanel({ node, onClose }) {
+  const decoComponents = DECO_MAP[node.id] || [];
+  const decoPositions = [
+    { top: '8%', right: '-10px', rotate: 15 },
+    { top: '45%', left: '-15px', rotate: -10 },
+    { bottom: '12%', right: '5px', rotate: 20 },
+  ];
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: 15, scale: 0.97 }}
+      transition={{ type: 'spring', stiffness: 250, damping: 25 }}
+      style={{
+        background: 'rgba(12, 12, 35, 0.9)', backdropFilter: 'blur(24px)',
+        border: `1px solid ${node.color}30`, borderRadius: '24px',
+        position: 'relative', zIndex: 3, marginTop: '1rem', overflow: 'hidden',
+      }}
+    >
+      <button onClick={onClose} style={{
+        position: 'absolute', top: '1rem', right: '1rem', zIndex: 10,
+        background: 'rgba(0,0,0,0.6)', border: `1px solid ${node.color}40`,
+        borderRadius: '50%', width: '40px', height: '40px',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        cursor: 'pointer', color: node.color, transition: 'all 0.2s',
+      }}>
+        <X size={18} />
+      </button>
+
+      {/* Two-Column Hero */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', minHeight: '280px' }}>
+        <div style={{
+          position: 'relative', overflow: 'hidden',
+          background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))`,
+        }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={node.image} alt={node.title} style={{
+            width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, minHeight: '280px',
+          }} />
+          <div style={{
+            position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
+            background: `linear-gradient(transparent, ${node.color}15)`,
+          }} />
+        </div>
+        <div style={{ padding: '2rem 2rem 1.5rem 1.5rem', position: 'relative' }}>
+          {decoComponents[0] && (
+            <div style={{ position: 'absolute', top: '10px', right: '50px', transform: 'rotate(15deg)', pointerEvents: 'none' }}>
+              {decoComponents[0]({ size: 50, color: node.color })}
+            </div>
+          )}
+          <h3 style={{
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
+            color: node.color, letterSpacing: '-0.02em',
+            display: 'flex', alignItems: 'center', gap: '0.6rem',
+          }}>
+            <span style={{
+              display: 'inline-flex', width: '40px', height: '40px',
+              borderRadius: '50%', overflow: 'hidden', border: `2px solid ${node.color}40`, flexShrink: 0,
+            }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </span>
+            {node.title}
+          </h3>
+          {node.content.slice(0, 2).map((para, i) => (
+            <p key={i} style={{
+              margin: '0 0 0.8rem', fontSize: '0.95rem', lineHeight: 1.75,
+              color: 'rgba(255,255,255,0.85)',
+            }}>
+              {para}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      {/* Magazine Body */}
+      <div style={{ padding: '1.5rem 2rem 2rem', position: 'relative' }}>
+        {decoComponents.map((Deco, i) => {
+          const pos = decoPositions[i] || {};
+          return (
+            <motion.div key={i}
+              animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
+              transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
+              style={{ position: 'absolute', ...pos, zIndex: 1, pointerEvents: 'none' }}
+            >
+              <Deco size={55 + i * 10} color={node.color} />
+            </motion.div>
+          );
+        })}
+        <div style={{
+          display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem 2rem',
+          position: 'relative', zIndex: 2,
+        }}>
+          {node.content.slice(2).map((para, i) => {
+            const isWide = i === node.content.slice(2).length - 1 && (node.content.slice(2).length % 2 !== 0);
+            return (
+              <div key={i} style={{
+                gridColumn: isWide ? '1 / -1' : 'auto',
+                background: 'rgba(255,255,255,0.02)', borderRadius: '12px',
+                padding: '1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative',
+              }}>
+                <div style={{
+                  position: 'absolute', top: '-8px', left: '12px',
+                  background: node.color, color: '#0B0E2D',
+                  fontSize: '0.65rem', fontWeight: 800,
+                  padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
+                }}>
+                  {i === 0 ? '◆' : i === 1 ? '◇' : '★'}
+                </div>
+                <p style={{
+                  margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
+                  color: 'rgba(255,255,255,0.85)',
+                }}>
+                  {para}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Fact Box */}
+        {node.fact && (
+          <div style={{
+            marginTop: '1.5rem',
+            background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,
+            border: `1px solid ${node.color}25`, borderRadius: '16px',
+            padding: '1.2rem 1.5rem', display: 'flex', alignItems: 'flex-start',
+            gap: '1rem', position: 'relative', zIndex: 2,
+          }}>
+            <div style={{
+              flexShrink: 0, width: '36px', height: '36px', borderRadius: '50%',
+              background: `${node.color}20`,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }}>
+              <Sparkles size={18} style={{ color: node.color }} />
+            </div>
+            <div>
+              <span style={{
+                fontSize: '0.7rem', fontWeight: 800, color: node.color,
+                letterSpacing: '2px', textTransform: 'uppercase',
+              }}>
+                Dato Científico
+              </span>
+              <p style={{
+                margin: '0.3rem 0 0', fontStyle: 'italic',
+                color: 'rgba(255,255,255,0.9)', fontSize: '0.92rem', lineHeight: 1.7,
+              }}>
+                {node.fact}
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+    </motion.div>
+  );
+}
+
+// ─── Progress Bar ────────────────────────────────────────────────────────────
+function ProgressBar({ explored, total }) {
+  const pct = (explored / total) * 100;
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'center', gap: '0.8rem', padding: '0.6rem 1rem',
+      background: 'rgba(255,255,255,0.03)', borderRadius: '30px',
+      border: '1px solid rgba(155,107,255,0.15)',
+    }}>
+      <Star size={14} style={{ color: '#9B6BFF', flexShrink: 0 }} />
+      <div style={{ flex: 1, height: '6px', background: 'rgba(255,255,255,0.06)', borderRadius: '3px', overflow: 'hidden' }}>
+        <motion.div animate={{ width: `${pct}%` }} transition={{ type: 'spring', stiffness: 200, damping: 25 }}
+          style={{ height: '100%', background: 'linear-gradient(90deg, #7B4FD4, #9B6BFF)', borderRadius: '3px', boxShadow: '0 0 8px rgba(155,107,255,0.4)' }}
+        />
+      </div>
+      <span style={{ fontSize: '0.75rem', color: '#9B6BFF', fontFamily: 'monospace', fontWeight: 'bold', minWidth: '45px', textAlign: 'right' }}>
+        {explored}/{total}
+      </span>
+    </div>
+  );
+}
+
+// ─── Main Infographic Component ──────────────────────────────────────────────
+export default function InteractiveInfographic_EgyptM6() {
+  const [activeNode, setActiveNode] = useState(null);
+  const [explored, setExplored] = useState(new Set());
+
+  const handleNodeClick = (nodeId) => {
+    if (activeNode === nodeId) {
+      setActiveNode(null);
+    } else {
+      setActiveNode(nodeId);
+      setExplored(prev => new Set([...prev, nodeId]));
+    }
+  };
+
+  const activeData = INFOGRAPHIC_NODES.find(n => n.id === activeNode);
+
+  return (
+    <div style={{
+      backgroundImage: 'linear-gradient(180deg, rgba(18,14,36,0.85) 0%, rgba(30,18,50,0.80) 40%, rgba(18,14,36,0.88) 100%), url(/assets/egypt/infographic_senenmut/bg_senenmut.png)',
+      backgroundSize: 'cover', backgroundPosition: 'center center',
+      borderRadius: '24px', padding: '2rem 1.5rem', position: 'relative',
+      overflow: 'hidden', border: '1px solid rgba(155,107,255,0.12)',
+      boxShadow: '0 0 60px rgba(11,14,45,0.8), inset 0 0 80px rgba(0,0,0,0.3)',
+    }}>
+      <StarField />
+      <SenenmutHeader />
+
+      <div style={{ position: 'relative', zIndex: 2, maxWidth: '400px', margin: '0 auto 1.5rem' }}>
+        <ProgressBar explored={explored.size} total={INFOGRAPHIC_NODES.length} />
+      </div>
+
+      {explored.size === 0 && (
+        <motion.p
+          animate={{ opacity: [0.5, 1, 0.5] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          style={{
+            textAlign: 'center', color: 'rgba(155,107,255,0.7)', fontSize: '0.85rem',
+            marginBottom: '1rem', position: 'relative', zIndex: 2,
+            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
+          }}
+        >
+          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
+        </motion.p>
+      )}
+
+      <div style={{
+        display: 'flex', flexWrap: 'wrap', justifyContent: 'center',
+        gap: '0.8rem 1.2rem', position: 'relative', zIndex: 2,
+        marginBottom: '1rem', padding: '0 0.5rem',
+      }}>
+        {INFOGRAPHIC_NODES.map((node, index) => (
+          <NodeButton key={node.id} node={node} index={index}
+            isActive={activeNode === node.id}
+            onClick={() => handleNodeClick(node.id)}
+          />
+        ))}
+      </div>
+
+      <AnimatePresence mode="wait">
+        {activeData && (
+          <ContentPanel key={activeData.id} node={activeData} onClose={() => setActiveNode(null)} />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {explored.size === INFOGRAPHIC_NODES.length && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            style={{
+              textAlign: 'center', marginTop: '1.5rem', padding: '1rem',
+              background: 'rgba(155,107,255,0.08)', borderRadius: '16px',
+              border: '1px solid rgba(155,107,255,0.25)', position: 'relative', zIndex: 2,
+            }}
+          >
+            <p style={{ margin: 0, color: '#9B6BFF', fontSize: '1.1rem', fontWeight: 'bold' }}>
+              🗺️ ¡Has descifrado todos los secretos del Mapa del Universo!
+            </p>
+            <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
+              Ahora puedes tomar el quiz para ganar tu insignia de Cartógrafo Estelar
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
