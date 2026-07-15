@@ -18,6 +18,7 @@ import InteractiveInfographic_EgyptM1 from '@/components/infographics/Interactiv
 import InteractiveInfographic_EgyptM6 from '@/components/infographics/InteractiveInfographic_EgyptM6';
 import InteractiveInfographic_EgyptM5 from '@/components/infographics/InteractiveInfographic_EgyptM5';
 import InteractiveInfographic_EgyptM8 from '@/components/infographics/InteractiveInfographic_EgyptM8';
+import InteractiveInfographic_EgyptM14 from '@/components/infographics/InteractiveInfographic_EgyptM14';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -382,8 +383,11 @@ export default function CourseModule() {
           {moduleData.id === 'egypt_m8' && (
             <InteractiveInfographic_EgyptM8 />
           )}
+          {moduleData.id === 'egypt_m14' && (
+            <InteractiveInfographic_EgyptM14 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
