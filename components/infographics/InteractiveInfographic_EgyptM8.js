@@ -500,44 +500,7 @@ function NodeButton({ node, isActive, onClick, index, explored }) {
   );
 }
 
-// ─── Two-image hero layout ────────────────────────────────────────────────────
-function TwoImageHero({ node }) {
-  // Use the main hero image for slot 1, and the btn image cropped for slot 2
-  return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 0.6fr', gap: '0', minHeight: '260px', overflow: 'hidden' }}>
-      <div style={{ position: 'relative', overflow: 'hidden', background: `linear-gradient(135deg, ${node.color}18, rgba(0,0,0,0.5))` }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={node.image} alt={node.title}
-          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, minHeight: '260px' }}
-        />
-        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: `linear-gradient(transparent, ${node.color}18)` }} />
-      </div>
-      <div style={{
-        display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
-        padding: '1.5rem 1rem', gap: '1rem',
-        background: `linear-gradient(180deg, ${node.color}10, rgba(0,0,0,0.5))`,
-        position: 'relative',
-      }}>
-        <div style={{
-          width: '80px', height: '80px', borderRadius: '50%', overflow: 'hidden',
-          border: `3px solid ${node.color}50`,
-          boxShadow: `0 0 20px ${node.color}30`,
-        }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-        <h3 style={{
-          margin: 0, fontSize: '1.15rem', fontWeight: 800,
-          color: node.color, textAlign: 'center', lineHeight: 1.2, letterSpacing: '-0.01em',
-        }}>
-          {node.title}
-        </h3>
-      </div>
-    </div>
-  );
-}
-
-// ─── Content Panel ────────────────────────────────────────────────────────────
+// ─── Content Panel (Estándar M9) ─────────────────────────────────────────────
 function ContentPanel({ node, onClose }) {
   const decoComponents = DECO_MAP[node.id] || [];
   const decoPositions = [
@@ -568,12 +531,69 @@ function ContentPanel({ node, onClose }) {
         <X size={18} />
       </button>
 
-      {/* Two-image hero */}
-      <TwoImageHero node={node} />
+      {/* ─── Two-Column Hero (Estándar: imagen + título y texto) ─── */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '0',
+        minHeight: '280px',
+      }}>
+        {/* Izquierda: Hero Image */}
+        <div style={{
+          position: 'relative',
+          overflow: 'hidden',
+          background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))`,
+        }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={node.image} alt={node.title} style={{
+            width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9,
+            minHeight: '280px',
+          }} />
+          <div style={{
+            position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
+            background: `linear-gradient(transparent, ${node.color}15)`,
+          }} />
+        </div>
 
-      {/* Body */}
+        {/* Derecha: Título + primeros 2 párrafos */}
+        <div style={{ padding: '2rem 2rem 1.5rem 1.5rem', position: 'relative' }}>
+          {decoComponents[0] && (
+            <div style={{ position: 'absolute', top: '10px', right: '50px', transform: 'rotate(15deg)', pointerEvents: 'none' }}>
+              {decoComponents[0]({ size: 50, color: node.color })}
+            </div>
+          )}
+
+          <h3 style={{
+            margin: '0 0 0.8rem', fontSize: '1.4rem', fontWeight: 800,
+            color: node.color, letterSpacing: '-0.02em',
+            display: 'flex', alignItems: 'center', gap: '0.6rem',
+          }}>
+            <span style={{
+              display: 'inline-flex', width: '40px', height: '40px',
+              borderRadius: '50%', overflow: 'hidden',
+              border: `2px solid ${node.color}40`,
+              flexShrink: 0,
+            }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </span>
+            {node.title}
+          </h3>
+
+          {node.content.slice(0, 2).map((para, i) => (
+            <p key={i} style={{
+              margin: '0 0 0.8rem', fontSize: '0.95rem', lineHeight: 1.75,
+              color: 'rgba(255,255,255,0.85)',
+            }}>
+              {para}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── Magazine Body ─── */}
       <div style={{ padding: '1.5rem 2rem 2rem', position: 'relative' }}>
-        {/* Floating decoratives */}
+        {/* Decorativos flotantes */}
         {decoComponents.map((Deco, i) => {
           const pos = decoPositions[i] || {};
           return (
@@ -587,28 +607,10 @@ function ContentPanel({ node, onClose }) {
           );
         })}
 
-        {/* First 2 paragraphs full width */}
-        <div style={{ position: 'relative', zIndex: 2 }}>
-          {node.content.slice(0, 2).map((para, i) => (
-            <p key={i} style={{
-              margin: '0 0 0.9rem', fontSize: '0.95rem', lineHeight: 1.78,
-              color: 'rgba(255,255,255,0.88)',
-            }}>
-              {i === 0 && <span style={{
-                float: 'left', fontSize: '3rem', lineHeight: '2.4rem', marginRight: '0.4rem',
-                color: node.color, fontWeight: 900, fontFamily: 'Georgia, serif',
-              }}>
-                {para.charAt(0)}
-              </span>}
-              {i === 0 ? para.slice(1) : para}
-            </p>
-          ))}
-        </div>
-
-        {/* Remaining paragraphs in 2 columns */}
+        {/* Párrafos restantes en 2 columnas */}
         <div style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem 1.8rem',
-          position: 'relative', zIndex: 2, marginTop: '0.5rem',
+          position: 'relative', zIndex: 2,
         }}>
           {node.content.slice(2).map((para, i) => {
             const isWide = i === node.content.slice(2).length - 1 && (node.content.slice(2).length % 2 !== 0);
