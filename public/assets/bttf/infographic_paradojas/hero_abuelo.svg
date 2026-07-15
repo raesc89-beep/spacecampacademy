@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <linearGradient id="hero-bg-abuelo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </linearGradient>
+    <linearGradient id="hero-border-abuelo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFA500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="12" fill="url(#hero-bg-abuelo)"/>
+  <circle cx="22" cy="12" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="95" cy="59" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="168" cy="106" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="241" cy="153" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="314" cy="200" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="387" cy="247" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="460" cy="294" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="533" cy="341" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="16" cy="388" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="89" cy="45" r="0.8" fill="white" opacity="0.35"/>
+  <circle cx="162" cy="92" r="1.1" fill="white" opacity="0.15"/>
+  <circle cx="235" cy="139" r="1.4" fill="white" opacity="0.2"/>
+  <circle cx="308" cy="186" r="0.5" fill="white" opacity="0.25"/>
+  <circle cx="381" cy="233" r="0.8" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="454" cy="280" r="1.1" fill="white" opacity="0.35"/>
+  <circle cx="527" cy="327" r="1.4" fill="white" opacity="0.15"/>
+  <circle cx="10" cy="374" r="0.5" fill="white" opacity="0.2"/>
+  <circle cx="83" cy="31" r="0.8" fill="white" opacity="0.25"/>
+  <circle cx="156" cy="78" r="1.1" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="229" cy="125" r="1.4" fill="white" opacity="0.35"/>
+  <circle cx="302" cy="172" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="375" cy="219" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="448" cy="266" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="521" cy="313" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="594" cy="360" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="77" cy="17" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="150" cy="64" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="223" cy="111" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="296" cy="158" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="369" cy="205" r="0.8" fill="white" opacity="0.35"/>
+  <g>
+    
+    <!-- Grandfather clock -->
+    <rect x="250" y="60" width="100" height="260" rx="8" fill="#1a0a2e" stroke="#00CCFF" stroke-width="2" filter="url(#neon-glow)"/>
+    <circle cx="300" cy="140" r="40" fill="#0d0520" stroke="#FFA500" stroke-width="2"/>
+    <line x1="300" y1="140" x2="300" y2="110" stroke="#FFA500" stroke-width="2" stroke-linecap="round"/>
+    <line x1="300" y1="140" x2="320" y2="150" stroke="#00CCFF" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="300" cy="140" r="3" fill="#FFA500"/>
+    <!-- Pendulum -->
+    <line x1="300" y1="200" x2="280" y2="280" stroke="#FFA500" stroke-width="1.5"/>
+    <circle cx="280" cy="285" r="10" fill="none" stroke="#FFA500" stroke-width="1.5"/>
+    <!-- Clock numerals -->
+    <text x="300" y="111" font-family="serif" font-size="10" fill="#00CCFF" text-anchor="middle" opacity="0.7">12</text>
+    <text x="332" y="143" font-family="serif" font-size="10" fill="#00CCFF" text-anchor="middle" opacity="0.7">3</text>
+    <text x="300" y="175" font-family="serif" font-size="10" fill="#00CCFF" text-anchor="middle" opacity="0.7">6</text>
+    <text x="268" y="143" font-family="serif" font-size="10" fill="#00CCFF" text-anchor="middle" opacity="0.7">9</text>
+    <!-- Timeline splitting from clock -->
+    <path d="M350,140 C380,140 400,100 450,80" stroke="#00CCFF" stroke-width="3" fill="none" filter="url(#neon-glow)"/>
+    <path d="M350,140 C380,140 400,180 450,220" stroke="#FFA500" stroke-width="3" fill="none" filter="url(#neon-glow)" opacity="0.35"/>
+    <!-- Solid branch with people -->
+    <circle cx="460" cy="75" r="12" fill="none" stroke="#00CCFF" stroke-width="1.5"/>
+    <circle cx="490" cy="65" r="10" fill="none" stroke="#00CCFF" stroke-width="1"/>
+    <circle cx="520" cy="75" r="8" fill="none" stroke="#00CCFF" stroke-width="1"/>
+    <!-- Fading branch -->
+    <circle cx="460" cy="225" r="12" fill="none" stroke="#FFA500" stroke-width="1.5" opacity="0.3"/>
+    <circle cx="490" cy="235" r="10" fill="none" stroke="#FFA500" stroke-width="1" opacity="0.2"/>
+    <circle cx="520" cy="225" r="8" fill="none" stroke="#FFA500" stroke-width="1" opacity="0.1"/>
+    <!-- Left decorative elements -->
+    <path d="M80,200 C120,180 140,220 180,200" stroke="#00CCFF" stroke-width="1" fill="none" opacity="0.3"/>
+    <text x="100" y="350" font-family="monospace" font-size="14" fill="#00CCFF" opacity="0.4">PARADOJA DEL ABUELO</text>
+
+  </g>
+  <rect width="600" height="400" rx="12" fill="none" stroke="url(#hero-border-abuelo)" stroke-width="2"/>
+</svg>

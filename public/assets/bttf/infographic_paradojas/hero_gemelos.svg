@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <linearGradient id="hero-bg-gemelos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </linearGradient>
+    <linearGradient id="hero-border-gemelos" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFA500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="12" fill="url(#hero-bg-gemelos)"/>
+  <circle cx="22" cy="12" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="95" cy="59" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="168" cy="106" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="241" cy="153" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="314" cy="200" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="387" cy="247" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="460" cy="294" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="533" cy="341" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="16" cy="388" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="89" cy="45" r="0.8" fill="white" opacity="0.35"/>
+  <circle cx="162" cy="92" r="1.1" fill="white" opacity="0.15"/>
+  <circle cx="235" cy="139" r="1.4" fill="white" opacity="0.2"/>
+  <circle cx="308" cy="186" r="0.5" fill="white" opacity="0.25"/>
+  <circle cx="381" cy="233" r="0.8" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="454" cy="280" r="1.1" fill="white" opacity="0.35"/>
+  <circle cx="527" cy="327" r="1.4" fill="white" opacity="0.15"/>
+  <circle cx="10" cy="374" r="0.5" fill="white" opacity="0.2"/>
+  <circle cx="83" cy="31" r="0.8" fill="white" opacity="0.25"/>
+  <circle cx="156" cy="78" r="1.1" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="229" cy="125" r="1.4" fill="white" opacity="0.35"/>
+  <circle cx="302" cy="172" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="375" cy="219" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="448" cy="266" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="521" cy="313" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="594" cy="360" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="77" cy="17" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="150" cy="64" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="223" cy="111" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="296" cy="158" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="369" cy="205" r="0.8" fill="white" opacity="0.35"/>
+  <g>
+    
+    <!-- Earth -->
+    <circle cx="130" cy="300" r="55" fill="none" stroke="#00CCFF" stroke-width="2"/>
+    <circle cx="130" cy="300" r="40" fill="#00CCFF" opacity="0.06"/>
+    <ellipse cx="130" cy="300" rx="52" ry="18" fill="none" stroke="#00CCFF" stroke-width="0.7" opacity="0.4"/>
+    <circle cx="115" cy="285" r="12" fill="#00CCFF" opacity="0.1"/>
+    <circle cx="145" cy="310" r="8" fill="#00CCFF" opacity="0.08"/>
+    <!-- Rocket path (arc from Earth to space and back) -->
+    <path d="M185,280 C250,100 400,50 480,120" stroke="#FFA500" stroke-width="2" fill="none" stroke-dasharray="8,4" filter="url(#neon-glow)"/>
+    <path d="M480,120 C500,180 420,300 300,320" stroke="#FFA500" stroke-width="2" fill="none" stroke-dasharray="8,4" filter="url(#neon-glow)" opacity="0.5"/>
+    <!-- Rocket -->
+    <g transform="translate(480, 115) rotate(-30)">
+      <path d="M0,-20 L8,10 L-8,10 Z" fill="#FFA500" stroke="#FF6B00" stroke-width="1"/>
+      <rect x="-4" y="10" width="8" height="6" fill="#FF6B00"/>
+      <path d="M-6,16 L0,28 L6,16" fill="#FFA500" opacity="0.6" filter="url(#neon-glow)"/>
+    </g>
+    <!-- Young astronaut (on Earth) -->
+    <g transform="translate(80, 220)">
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#00CCFF" stroke-width="2"/>
+      <line x1="0" y1="14" x2="0" y2="45" stroke="#00CCFF" stroke-width="2"/>
+      <line x1="0" y1="22" x2="-15" y2="35" stroke="#00CCFF" stroke-width="1.5"/>
+      <line x1="0" y1="22" x2="15" y2="35" stroke="#00CCFF" stroke-width="1.5"/>
+      <text x="0" y="-20" font-family="monospace" font-size="9" fill="#00CCFF" text-anchor="middle">JOVEN</text>
+    </g>
+    <!-- Old astronaut (returning) -->
+    <g transform="translate(300, 250)">
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#FFA500" stroke-width="2"/>
+      <path d="M0,14 C0,30 -2,40 -4,50" fill="none" stroke="#FFA500" stroke-width="2"/>
+      <line x1="0" y1="22" x2="-18" y2="32" stroke="#FFA500" stroke-width="1.5"/>
+      <line x1="-2" y1="25" x2="12" y2="38" stroke="#FFA500" stroke-width="1.5"/>
+      <text x="0" y="-20" font-family="monospace" font-size="9" fill="#FFA500" text-anchor="middle">ENVEJECIDO</text>
+    </g>
+    <!-- Time comparison -->
+    <rect x="350" y="280" width="120" height="50" rx="6" fill="#0d0520" stroke="#00CCFF" stroke-width="1"/>
+    <text x="410" y="300" font-family="monospace" font-size="9" fill="#00CCFF" text-anchor="middle">Tierra: 30 años</text>
+    <text x="410" y="318" font-family="monospace" font-size="9" fill="#FFA500" text-anchor="middle">Nave: 1 año</text>
+
+  </g>
+  <rect width="600" height="400" rx="12" fill="none" stroke="url(#hero-border-gemelos)" stroke-width="2"/>
+</svg>

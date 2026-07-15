@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <clipPath id="btn-clip-mundos"><circle cx="100" cy="100" r="90"/></clipPath>
+    <radialGradient id="btn-bg-mundos" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </radialGradient>
+    <linearGradient id="btn-ring-mundos" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF6B00"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="url(#btn-ring-mundos)" stroke-width="3" filter="url(#neon-glow)"/>
+  <circle cx="100" cy="100" r="90" fill="url(#btn-bg-mundos)"/>
+  <g clip-path="url(#btn-clip-mundos)">
+    
+    <!-- Branching point -->
+    <circle cx="100" cy="140" r="6" fill="#FFA500" filter="url(#neon-glow)"/>
+    <!-- Branches to multiple universes -->
+    <line x1="100" y1="140" x2="55" y2="65" stroke="#00CCFF" stroke-width="2" filter="url(#neon-glow)"/>
+    <line x1="100" y1="140" x2="100" y2="50" stroke="#FFA500" stroke-width="2" filter="url(#neon-glow)"/>
+    <line x1="100" y1="140" x2="145" y2="65" stroke="#FF6B00" stroke-width="2" filter="url(#neon-glow)"/>
+    <!-- Universe spheres -->
+    <circle cx="55" cy="60" r="16" fill="none" stroke="#00CCFF" stroke-width="1.5"/>
+    <circle cx="55" cy="60" r="10" fill="#00CCFF" opacity="0.15"/>
+    <ellipse cx="55" cy="60" rx="14" ry="5" fill="none" stroke="#00CCFF" stroke-width="0.5" opacity="0.6"/>
+    <circle cx="100" cy="45" r="16" fill="none" stroke="#FFA500" stroke-width="1.5"/>
+    <circle cx="100" cy="45" r="10" fill="#FFA500" opacity="0.15"/>
+    <ellipse cx="100" cy="45" rx="14" ry="5" fill="none" stroke="#FFA500" stroke-width="0.5" opacity="0.6"/>
+    <circle cx="145" cy="60" r="16" fill="none" stroke="#FF6B00" stroke-width="1.5"/>
+    <circle cx="145" cy="60" r="10" fill="#FF6B00" opacity="0.15"/>
+    <ellipse cx="145" cy="60" rx="14" ry="5" fill="none" stroke="#FF6B00" stroke-width="0.5" opacity="0.6"/>
+    <!-- Trunk line -->
+    <line x1="100" y1="170" x2="100" y2="140" stroke="#FFA500" stroke-width="2.5"/>
+
+  </g>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="url(#btn-ring-mundos)" stroke-width="1.5" opacity="0.5"/>
+</svg>

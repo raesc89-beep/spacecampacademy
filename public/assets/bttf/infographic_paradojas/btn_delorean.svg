@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <clipPath id="btn-clip-delorean"><circle cx="100" cy="100" r="90"/></clipPath>
+    <radialGradient id="btn-bg-delorean" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </radialGradient>
+    <linearGradient id="btn-ring-delorean" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF6B00"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="url(#btn-ring-delorean)" stroke-width="3" filter="url(#neon-glow)"/>
+  <circle cx="100" cy="100" r="90" fill="url(#btn-bg-delorean)"/>
+  <g clip-path="url(#btn-clip-delorean)">
+    
+    <!-- Stylized DeLorean body -->
+    <path d="M45,115 L55,95 L145,95 L155,115 Z" fill="#1a0a2e" stroke="#00CCFF" stroke-width="2"/>
+    <path d="M65,95 L72,78 L128,78 L135,95" fill="#1a0a2e" stroke="#00CCFF" stroke-width="1.5"/>
+    <!-- Wheels -->
+    <circle cx="75" cy="118" r="8" fill="#1a0a2e" stroke="#FFA500" stroke-width="2"/>
+    <circle cx="125" cy="118" r="8" fill="#1a0a2e" stroke="#FFA500" stroke-width="2"/>
+    <!-- Fire trails -->
+    <path d="M43,115 C30,118 20,112 15,120" stroke="#FF6B00" stroke-width="3" fill="none" filter="url(#neon-glow)" opacity="0.8"/>
+    <path d="M43,118 C28,122 18,116 10,125" stroke="#FFA500" stroke-width="2" fill="none" filter="url(#neon-glow)" opacity="0.6"/>
+    <path d="M43,112 C33,110 25,115 18,110" stroke="#FFA500" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <!-- 88 mph display -->
+    <rect x="82" y="82" width="36" height="12" rx="2" fill="#1a0a2e" stroke="#00CCFF" stroke-width="1"/>
+    <text x="100" y="92" font-family="monospace" font-size="9" fill="#00CCFF" text-anchor="middle" font-weight="bold">88 MPH</text>
+    <!-- Flux lines -->
+    <line x1="155" y1="100" x2="175" y2="98" stroke="#00CCFF" stroke-width="1" opacity="0.4"/>
+    <line x1="155" y1="105" x2="180" y2="105" stroke="#00CCFF" stroke-width="1" opacity="0.3"/>
+    <line x1="155" y1="110" x2="175" y2="112" stroke="#00CCFF" stroke-width="1" opacity="0.4"/>
+
+  </g>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="url(#btn-ring-delorean)" stroke-width="1.5" opacity="0.5"/>
+</svg>

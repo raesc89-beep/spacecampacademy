@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <linearGradient id="hero-bg-novikov" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </linearGradient>
+    <linearGradient id="hero-border-novikov" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFA500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="12" fill="url(#hero-bg-novikov)"/>
+  <circle cx="22" cy="12" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="95" cy="59" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="168" cy="106" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="241" cy="153" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="314" cy="200" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="387" cy="247" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="460" cy="294" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="533" cy="341" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="16" cy="388" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="89" cy="45" r="0.8" fill="white" opacity="0.35"/>
+  <circle cx="162" cy="92" r="1.1" fill="white" opacity="0.15"/>
+  <circle cx="235" cy="139" r="1.4" fill="white" opacity="0.2"/>
+  <circle cx="308" cy="186" r="0.5" fill="white" opacity="0.25"/>
+  <circle cx="381" cy="233" r="0.8" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="454" cy="280" r="1.1" fill="white" opacity="0.35"/>
+  <circle cx="527" cy="327" r="1.4" fill="white" opacity="0.15"/>
+  <circle cx="10" cy="374" r="0.5" fill="white" opacity="0.2"/>
+  <circle cx="83" cy="31" r="0.8" fill="white" opacity="0.25"/>
+  <circle cx="156" cy="78" r="1.1" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="229" cy="125" r="1.4" fill="white" opacity="0.35"/>
+  <circle cx="302" cy="172" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="375" cy="219" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="448" cy="266" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="521" cy="313" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="594" cy="360" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="77" cy="17" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="150" cy="64" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="223" cy="111" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="296" cy="158" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="369" cy="205" r="0.8" fill="white" opacity="0.35"/>
+  <g>
+    
+    <!-- Large shield / barrier -->
+    <path d="M300,40 L460,100 L460,250 C460,320 380,360 300,380 C220,360 140,320 140,250 L140,100 Z" fill="none" stroke="#00CCFF" stroke-width="3" filter="url(#neon-glow)"/>
+    <path d="M300,55 L445,110 L445,245 C445,310 370,345 300,363 C230,345 155,310 155,245 L155,110 Z" fill="#00CCFF" opacity="0.04"/>
+    <!-- Timeline inside shield (protected) -->
+    <line x1="200" y1="200" x2="400" y2="200" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="250" cy="200" r="6" fill="#FFA500"/>
+    <circle cx="300" cy="200" r="6" fill="#FFA500"/>
+    <circle cx="350" cy="200" r="6" fill="#FFA500"/>
+    <!-- Check marks on events -->
+    <text x="250" y="185" font-family="monospace" font-size="14" fill="#00FF88" text-anchor="middle">✓</text>
+    <text x="300" y="185" font-family="monospace" font-size="14" fill="#00FF88" text-anchor="middle">✓</text>
+    <text x="350" y="185" font-family="monospace" font-size="14" fill="#00FF88" text-anchor="middle">✓</text>
+    <!-- Paradox attempts bouncing off -->
+    <g opacity="0.6">
+      <line x1="80" y1="80" x2="145" y2="120" stroke="#FF6B00" stroke-width="2"/>
+      <line x1="145" y1="120" x2="100" y2="140" stroke="#FF6B00" stroke-width="2" stroke-dasharray="4,3"/>
+      <text x="65" y="75" font-family="monospace" font-size="10" fill="#FF6B00">✗ paradoja</text>
+    </g>
+    <g opacity="0.6">
+      <line x1="520" y1="150" x2="455" y2="180" stroke="#FF6B00" stroke-width="2"/>
+      <line x1="455" y1="180" x2="500" y2="210" stroke="#FF6B00" stroke-width="2" stroke-dasharray="4,3"/>
+      <text x="490" y="145" font-family="monospace" font-size="10" fill="#FF6B00">✗ cambio</text>
+    </g>
+    <g opacity="0.5">
+      <line x1="100" y1="320" x2="155" y2="290" stroke="#FF6B00" stroke-width="1.5"/>
+      <line x1="155" y1="290" x2="120" y2="260" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="4,3"/>
+    </g>
+    <!-- Label -->
+    <text x="300" y="260" font-family="monospace" font-size="10" fill="#00CCFF" text-anchor="middle" opacity="0.6">AUTOCONSISTENCIA DE NOVIKOV</text>
+    <!-- Lock symbol -->
+    <rect x="285" y="290" width="30" height="22" rx="4" fill="none" stroke="#FFA500" stroke-width="2"/>
+    <path d="M290,290 L290,280 C290,270 310,270 310,280 L310,290" fill="none" stroke="#FFA500" stroke-width="2"/>
+    <circle cx="300" cy="303" r="3" fill="#FFA500"/>
+
+  </g>
+  <rect width="600" height="400" rx="12" fill="none" stroke="url(#hero-border-novikov)" stroke-width="2"/>
+</svg>

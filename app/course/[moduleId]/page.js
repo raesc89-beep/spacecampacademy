@@ -19,6 +19,8 @@ import InteractiveInfographic_EgyptM6 from '@/components/infographics/Interactiv
 import InteractiveInfographic_EgyptM5 from '@/components/infographics/InteractiveInfographic_EgyptM5';
 import InteractiveInfographic_EgyptM8 from '@/components/infographics/InteractiveInfographic_EgyptM8';
 import InteractiveInfographic_EgyptM14 from '@/components/infographics/InteractiveInfographic_EgyptM14';
+import InteractiveInfographic_EgyptM12 from '@/components/infographics/InteractiveInfographic_EgyptM12';
+import InteractiveInfographic_BttfM3 from '@/components/infographics/InteractiveInfographic_BttfM3';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -386,8 +388,14 @@ export default function CourseModule() {
           {moduleData.id === 'egypt_m14' && (
             <InteractiveInfographic_EgyptM14 />
           )}
+          {moduleData.id === 'egypt_m12' && (
+            <InteractiveInfographic_EgyptM12 />
+          )}
+          {moduleData.id === 'bttf_m3' && (
+            <InteractiveInfographic_BttfM3 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'bttf_m3' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (

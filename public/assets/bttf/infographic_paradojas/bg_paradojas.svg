@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <radialGradient id="bg-vortex" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a0a2e" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#0d0520"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </radialGradient>
+    <radialGradient id="vortex-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#FFA500" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="ribbon1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00CCFF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00CCFF" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#FFA500" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="gear-shadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00CCFF" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Deep space base -->
+  <rect width="1200" height="800" fill="#050210"/>
+  <rect width="1200" height="800" fill="url(#bg-vortex)"/>
+  <!-- Stars -->
+  <circle cx="23.0" cy="11.0" r="0.5" fill="white" opacity="0.30"/>
+  <circle cx="160.5" cy="100.3" r="0.8" fill="white" opacity="0.40"/>
+  <circle cx="298.0" cy="189.6" r="1.1" fill="white" opacity="0.50"/>
+  <circle cx="435.5" cy="278.9" r="1.4" fill="white" opacity="0.60"/>
+  <circle cx="573.0" cy="368.2" r="1.7" fill="white" opacity="0.70"/>
+  <circle cx="710.5" cy="457.5" r="0.5" fill="white" opacity="0.80"/>
+  <circle cx="848.0" cy="546.8" r="0.8" fill="white" opacity="0.90"/>
+  <circle cx="985.5" cy="636.1" r="1.1" fill="white" opacity="0.30"/>
+  <circle cx="1123.0" cy="725.4" r="1.4" fill="white" opacity="0.40"/>
+  <circle cx="60.5" cy="14.7" r="1.7" fill="white" opacity="0.50"/>
+  <circle cx="198.0" cy="104.0" r="0.5" fill="white" opacity="0.60"/>
+  <circle cx="335.5" cy="193.3" r="0.8" fill="white" opacity="0.70"/>
+  <circle cx="473.0" cy="282.6" r="1.1" fill="white" opacity="0.80"/>
+  <circle cx="610.5" cy="371.9" r="1.4" fill="white" opacity="0.90"/>
+  <circle cx="748.0" cy="461.2" r="1.7" fill="white" opacity="0.30"/>
+  <circle cx="885.5" cy="550.5" r="0.5" fill="white" opacity="0.40"/>
+  <circle cx="1023.0" cy="639.8" r="0.8" fill="white" opacity="0.50"/>
+  <circle cx="1160.5" cy="729.1" r="1.1" fill="white" opacity="0.60"/>
+  <circle cx="98.0" cy="18.4" r="1.4" fill="white" opacity="0.70"/>
+  <circle cx="235.5" cy="107.7" r="1.7" fill="white" opacity="0.80"/>
+  <circle cx="373.0" cy="197.0" r="0.5" fill="white" opacity="0.90"/>
+  <circle cx="510.5" cy="286.3" r="0.8" fill="white" opacity="0.30"/>
+  <circle cx="648.0" cy="375.6" r="1.1" fill="white" opacity="0.40"/>
+  <circle cx="785.5" cy="464.9" r="1.4" fill="white" opacity="0.50"/>
+  <circle cx="923.0" cy="554.2" r="1.7" fill="white" opacity="0.60"/>
+  <circle cx="1060.5" cy="643.5" r="0.5" fill="white" opacity="0.70"/>
+  <circle cx="1198.0" cy="732.8" r="0.8" fill="white" opacity="0.80"/>
+  <circle cx="135.5" cy="22.1" r="1.1" fill="white" opacity="0.90"/>
+  <circle cx="273.0" cy="111.4" r="1.4" fill="white" opacity="0.30"/>
+  <circle cx="410.5" cy="200.7" r="1.7" fill="white" opacity="0.40"/>
+  <circle cx="548.0" cy="290.0" r="0.5" fill="white" opacity="0.50"/>
+  <circle cx="685.5" cy="379.3" r="0.8" fill="white" opacity="0.60"/>
+  <circle cx="823.0" cy="468.6" r="1.1" fill="white" opacity="0.70"/>
+  <circle cx="960.5" cy="557.9" r="1.4" fill="white" opacity="0.80"/>
+  <circle cx="1098.0" cy="647.2" r="1.7" fill="white" opacity="0.90"/>
+  <circle cx="35.5" cy="736.5" r="0.5" fill="white" opacity="0.30"/>
+  <circle cx="173.0" cy="25.8" r="0.8" fill="white" opacity="0.40"/>
+  <circle cx="310.5" cy="115.1" r="1.1" fill="white" opacity="0.50"/>
+  <circle cx="448.0" cy="204.4" r="1.4" fill="white" opacity="0.60"/>
+  <circle cx="585.5" cy="293.7" r="1.7" fill="white" opacity="0.70"/>
+  <circle cx="723.0" cy="383.0" r="0.5" fill="white" opacity="0.80"/>
+  <circle cx="860.5" cy="472.3" r="0.8" fill="white" opacity="0.90"/>
+  <circle cx="998.0" cy="561.6" r="1.1" fill="white" opacity="0.30"/>
+  <circle cx="1135.5" cy="650.9" r="1.4" fill="white" opacity="0.40"/>
+  <circle cx="73.0" cy="740.2" r="1.7" fill="white" opacity="0.50"/>
+  <circle cx="210.5" cy="29.5" r="0.5" fill="white" opacity="0.60"/>
+  <circle cx="348.0" cy="118.8" r="0.8" fill="white" opacity="0.70"/>
+  <circle cx="485.5" cy="208.1" r="1.1" fill="white" opacity="0.80"/>
+  <circle cx="623.0" cy="297.4" r="1.4" fill="white" opacity="0.90"/>
+  <circle cx="760.5" cy="386.7" r="1.7" fill="white" opacity="0.30"/>
+  <circle cx="898.0" cy="476.0" r="0.5" fill="white" opacity="0.40"/>
+  <circle cx="1035.5" cy="565.3" r="0.8" fill="white" opacity="0.50"/>
+  <circle cx="1173.0" cy="654.6" r="1.1" fill="white" opacity="0.60"/>
+  <circle cx="110.5" cy="743.9" r="1.4" fill="white" opacity="0.70"/>
+  <circle cx="248.0" cy="33.2" r="1.7" fill="white" opacity="0.80"/>
+  <circle cx="385.5" cy="122.5" r="0.5" fill="white" opacity="0.90"/>
+  <circle cx="523.0" cy="211.8" r="0.8" fill="white" opacity="0.30"/>
+  <circle cx="660.5" cy="301.1" r="1.1" fill="white" opacity="0.40"/>
+  <circle cx="798.0" cy="390.4" r="1.4" fill="white" opacity="0.50"/>
+  <circle cx="935.5" cy="479.7" r="1.7" fill="white" opacity="0.60"/>
+  <circle cx="1073.0" cy="569.0" r="0.5" fill="white" opacity="0.70"/>
+  <circle cx="10.5" cy="658.3" r="0.8" fill="white" opacity="0.80"/>
+  <circle cx="148.0" cy="747.6" r="1.1" fill="white" opacity="0.90"/>
+  <circle cx="285.5" cy="36.9" r="1.4" fill="white" opacity="0.30"/>
+  <circle cx="423.0" cy="126.2" r="1.7" fill="white" opacity="0.40"/>
+  <circle cx="560.5" cy="215.5" r="0.5" fill="white" opacity="0.50"/>
+  <circle cx="698.0" cy="304.8" r="0.8" fill="white" opacity="0.60"/>
+  <circle cx="835.5" cy="394.1" r="1.1" fill="white" opacity="0.70"/>
+  <circle cx="973.0" cy="483.4" r="1.4" fill="white" opacity="0.80"/>
+  <circle cx="1110.5" cy="572.7" r="1.7" fill="white" opacity="0.90"/>
+  <circle cx="48.0" cy="662.0" r="0.5" fill="white" opacity="0.30"/>
+  <circle cx="185.5" cy="751.3" r="0.8" fill="white" opacity="0.40"/>
+  <circle cx="323.0" cy="40.6" r="1.1" fill="white" opacity="0.50"/>
+  <circle cx="460.5" cy="129.9" r="1.4" fill="white" opacity="0.60"/>
+  <circle cx="598.0" cy="219.2" r="1.7" fill="white" opacity="0.70"/>
+  <circle cx="735.5" cy="308.5" r="0.5" fill="white" opacity="0.80"/>
+  <circle cx="873.0" cy="397.8" r="0.8" fill="white" opacity="0.90"/>
+  <circle cx="1010.5" cy="487.1" r="1.1" fill="white" opacity="0.30"/>
+  <circle cx="1148.0" cy="576.4" r="1.4" fill="white" opacity="0.40"/>
+  <circle cx="85.5" cy="665.7" r="1.7" fill="white" opacity="0.50"/>
+  <!-- Vortex spirals -->
+  <g opacity="0.25">
+    <ellipse cx="600" cy="400" rx="500" ry="350" fill="url(#vortex-core)"/>
+    <path d="M600,400 Q800,400 825,677.1281292110203" stroke="#00CCFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M600,400 Q741.4213562373095,506.06601717798213 483.5314297038656,709.0962644125018" stroke="#FFA500" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M600,400 Q600,550 210.2885682970026,560" stroke="#00CCFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M600,400 Q458.5786437626905,506.06601717798213 165.33337816991923,317.1779055671935" stroke="#FFA500" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M600,400 Q400,400 374.9999999999998,122.87187078897966" stroke="#00CCFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M600,400 Q458.5786437626905,293.93398282201787 716.4685702961345,90.9037355874982" stroke="#FFA500" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M600,400 Q600,250 989.7114317029973,239.99999999999986" stroke="#00CCFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M600,400 Q741.4213562373095,293.93398282201787 1034.6666218300807,482.82209443280647" stroke="#FFA500" stroke-width="1.5" fill="none" opacity="0.4"/>
+  </g>
+  <!-- Clock gears (decorative) -->
+  <g transform="translate(150, 650)" filter="url(#gear-shadow)" opacity="0.15">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#00CCFF" stroke-width="2"/>
+    <rect x="51" y="-8" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(0, 55, 0)"/>
+    <rect x="43.63139720814413" y="19.499999999999996" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(30, 47.63139720814413, 27.499999999999996)"/>
+    <rect x="23.500000000000007" y="39.63139720814412" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(60, 27.500000000000007, 47.63139720814412)"/>
+    <rect x="-3.9999999999999964" y="47" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(90, 3.3677786976552213e-15, 55)"/>
+    <rect x="-31.49999999999999" y="39.63139720814413" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(120, -27.49999999999999, 47.63139720814413)"/>
+    <rect x="-51.63139720814413" y="19.499999999999996" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(150, -47.63139720814413, 27.499999999999996)"/>
+    <rect x="-59" y="-7.999999999999993" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(180, -55, 6.735557395310443e-15)"/>
+    <rect x="-51.63139720814412" y="-35.50000000000001" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(210, -47.63139720814412, -27.500000000000007)"/>
+    <rect x="-31.500000000000025" y="-55.631397208144115" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(240, -27.500000000000025, -47.631397208144115)"/>
+    <rect x="-4.00000000000001" y="-63" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(270, -1.0103336092965664e-14, -55)"/>
+    <rect x="23.500000000000007" y="-55.63139720814412" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(300, 27.500000000000007, -47.63139720814412)"/>
+    <rect x="43.63139720814411" y="-35.50000000000003" width="8" height="16" rx="2" fill="#00CCFF" transform="rotate(330, 47.63139720814411, -27.500000000000025)"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#00CCFF" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="5" fill="#00CCFF"/>
+  </g>
+  <g transform="translate(1050, 150)" filter="url(#gear-shadow)" opacity="0.12">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#FFA500" stroke-width="2"/>
+    <rect x="37" y="-6" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(0, 40, 0)"/>
+    <rect x="25.284271247461902" y="22.2842712474619" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(45, 28.284271247461902, 28.2842712474619)"/>
+    <rect x="-2.9999999999999973" y="34" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(90, 2.4492935982947065e-15, 40)"/>
+    <rect x="-31.2842712474619" y="22.284271247461902" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(135, -28.2842712474619, 28.284271247461902)"/>
+    <rect x="-43" y="-5.999999999999995" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(180, -40, 4.898587196589413e-15)"/>
+    <rect x="-31.28427124746191" y="-34.2842712474619" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(225, -28.28427124746191, -28.2842712474619)"/>
+    <rect x="-3.0000000000000075" y="-46" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(270, -7.347880794884118e-15, -40)"/>
+    <rect x="25.284271247461895" y="-34.28427124746191" width="6" height="12" rx="2" fill="#FFA500" transform="rotate(315, 28.284271247461895, -28.28427124746191)"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#FFA500" stroke-width="1"/>
+    <circle cx="0" cy="0" r="4" fill="#FFA500"/>
+  </g>
+  <!-- Timeline ribbons -->
+  <path d="M0,300 C200,280 400,350 600,300 S1000,250 1200,320" stroke="url(#ribbon1)" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M0,500 C300,520 500,460 700,510 S1000,540 1200,480" stroke="url(#ribbon1)" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M0,650 C250,630 450,680 650,640 S950,620 1200,660" stroke="url(#ribbon1)" stroke-width="1" fill="none" opacity="0.2"/>
+  <!-- Corner vignette -->
+  <rect width="1200" height="800" fill="url(#bg-vortex)" opacity="0.5"/>
+</svg>

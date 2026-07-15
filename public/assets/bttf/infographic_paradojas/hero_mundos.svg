@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <linearGradient id="hero-bg-mundos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </linearGradient>
+    <linearGradient id="hero-border-mundos" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFA500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="12" fill="url(#hero-bg-mundos)"/>
+  <circle cx="22" cy="12" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="95" cy="59" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="168" cy="106" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="241" cy="153" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="314" cy="200" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="387" cy="247" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="460" cy="294" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="533" cy="341" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="16" cy="388" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="89" cy="45" r="0.8" fill="white" opacity="0.35"/>
+  <circle cx="162" cy="92" r="1.1" fill="white" opacity="0.15"/>
+  <circle cx="235" cy="139" r="1.4" fill="white" opacity="0.2"/>
+  <circle cx="308" cy="186" r="0.5" fill="white" opacity="0.25"/>
+  <circle cx="381" cy="233" r="0.8" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="454" cy="280" r="1.1" fill="white" opacity="0.35"/>
+  <circle cx="527" cy="327" r="1.4" fill="white" opacity="0.15"/>
+  <circle cx="10" cy="374" r="0.5" fill="white" opacity="0.2"/>
+  <circle cx="83" cy="31" r="0.8" fill="white" opacity="0.25"/>
+  <circle cx="156" cy="78" r="1.1" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="229" cy="125" r="1.4" fill="white" opacity="0.35"/>
+  <circle cx="302" cy="172" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="375" cy="219" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="448" cy="266" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="521" cy="313" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="594" cy="360" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="77" cy="17" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="150" cy="64" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="223" cy="111" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="296" cy="158" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="369" cy="205" r="0.8" fill="white" opacity="0.35"/>
+  <g>
+    
+    <!-- Central splitting point -->
+    <circle cx="150" cy="200" r="10" fill="#FFA500" filter="url(#neon-glow)"/>
+    <!-- Quantum bridges -->
+    <path d="M160,195 C220,150 280,130 340,120" stroke="#00CCFF" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+    <path d="M160,200 C220,200 280,200 350,200" stroke="#FFA500" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+    <path d="M160,205 C220,250 280,270 340,280" stroke="#FF6B00" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+    <!-- Universe spheres -->
+    <g transform="translate(380, 110)">
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#00CCFF" stroke-width="2"/>
+      <circle cx="0" cy="0" r="30" fill="#00CCFF" opacity="0.08"/>
+      <ellipse cx="0" cy="0" rx="42" ry="15" fill="none" stroke="#00CCFF" stroke-width="0.8" opacity="0.5"/>
+      <ellipse cx="0" cy="0" rx="30" ry="42" fill="none" stroke="#00CCFF" stroke-width="0.5" opacity="0.3"/>
+      <circle cx="-10" cy="-5" r="8" fill="#00CCFF" opacity="0.15"/>
+      <circle cx="12" cy="8" r="5" fill="#00CCFF" opacity="0.1"/>
+    </g>
+    <g transform="translate(400, 200)">
+      <circle cx="0" cy="0" r="50" fill="none" stroke="#FFA500" stroke-width="2"/>
+      <circle cx="0" cy="0" r="35" fill="#FFA500" opacity="0.08"/>
+      <ellipse cx="0" cy="0" rx="47" ry="17" fill="none" stroke="#FFA500" stroke-width="0.8" opacity="0.5"/>
+      <ellipse cx="0" cy="0" rx="33" ry="47" fill="none" stroke="#FFA500" stroke-width="0.5" opacity="0.3"/>
+      <circle cx="-12" cy="-8" r="10" fill="#FFA500" opacity="0.15"/>
+      <circle cx="15" cy="10" r="6" fill="#FFA500" opacity="0.1"/>
+    </g>
+    <g transform="translate(380, 290)">
+      <circle cx="0" cy="0" r="40" fill="none" stroke="#FF6B00" stroke-width="2"/>
+      <circle cx="0" cy="0" r="28" fill="#FF6B00" opacity="0.08"/>
+      <ellipse cx="0" cy="0" rx="37" ry="13" fill="none" stroke="#FF6B00" stroke-width="0.8" opacity="0.5"/>
+      <circle cx="-8" cy="-4" r="7" fill="#FF6B00" opacity="0.15"/>
+    </g>
+    <!-- Labels -->
+    <text x="150" y="240" font-family="monospace" font-size="9" fill="#FFA500" text-anchor="middle" opacity="0.5">BIFURCACIÓN</text>
+    <text x="480" y="110" font-family="monospace" font-size="8" fill="#00CCFF" opacity="0.5">Universo A</text>
+    <text x="500" y="200" font-family="monospace" font-size="8" fill="#FFA500" opacity="0.5">Universo B</text>
+    <text x="480" y="290" font-family="monospace" font-size="8" fill="#FF6B00" opacity="0.5">Universo C</text>
+
+  </g>
+  <rect width="600" height="400" rx="12" fill="none" stroke="url(#hero-border-mundos)" stroke-width="2"/>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <linearGradient id="hero-bg-delorean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </linearGradient>
+    <linearGradient id="hero-border-delorean" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFA500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="12" fill="url(#hero-bg-delorean)"/>
+  <circle cx="22" cy="12" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="95" cy="59" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="168" cy="106" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="241" cy="153" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="314" cy="200" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="387" cy="247" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="460" cy="294" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="533" cy="341" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="16" cy="388" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="89" cy="45" r="0.8" fill="white" opacity="0.35"/>
+  <circle cx="162" cy="92" r="1.1" fill="white" opacity="0.15"/>
+  <circle cx="235" cy="139" r="1.4" fill="white" opacity="0.2"/>
+  <circle cx="308" cy="186" r="0.5" fill="white" opacity="0.25"/>
+  <circle cx="381" cy="233" r="0.8" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="454" cy="280" r="1.1" fill="white" opacity="0.35"/>
+  <circle cx="527" cy="327" r="1.4" fill="white" opacity="0.15"/>
+  <circle cx="10" cy="374" r="0.5" fill="white" opacity="0.2"/>
+  <circle cx="83" cy="31" r="0.8" fill="white" opacity="0.25"/>
+  <circle cx="156" cy="78" r="1.1" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="229" cy="125" r="1.4" fill="white" opacity="0.35"/>
+  <circle cx="302" cy="172" r="0.5" fill="white" opacity="0.15"/>
+  <circle cx="375" cy="219" r="0.8" fill="white" opacity="0.2"/>
+  <circle cx="448" cy="266" r="1.1" fill="white" opacity="0.25"/>
+  <circle cx="521" cy="313" r="1.4" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="594" cy="360" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="77" cy="17" r="0.8" fill="white" opacity="0.15"/>
+  <circle cx="150" cy="64" r="1.1" fill="white" opacity="0.2"/>
+  <circle cx="223" cy="111" r="1.4" fill="white" opacity="0.25"/>
+  <circle cx="296" cy="158" r="0.5" fill="white" opacity="0.30000000000000004"/>
+  <circle cx="369" cy="205" r="0.8" fill="white" opacity="0.35"/>
+  <g>
+    
+    <!-- Road/ground -->
+    <line x1="0" y1="300" x2="600" y2="300" stroke="#1a0a2e" stroke-width="40"/>
+    <line x1="0" y1="300" x2="600" y2="300" stroke="#FFA500" stroke-width="1" stroke-dasharray="20,15" opacity="0.4"/>
+    <!-- DeLorean car body -->
+    <g transform="translate(250, 240)">
+      <!-- Body -->
+      <path d="M-80,40 L-60,0 L80,0 L100,40 Z" fill="#1a0a2e" stroke="#00CCFF" stroke-width="2.5"/>
+      <path d="M-45,0 L-35,-25 L55,-25 L65,0" fill="#1a0a2e" stroke="#00CCFF" stroke-width="2"/>
+      <!-- Windshield -->
+      <path d="M-30,-22 L-22,-2 L50,-2 L58,-22" fill="#00CCFF" opacity="0.1" stroke="#00CCFF" stroke-width="0.5"/>
+      <!-- Wheels -->
+      <circle cx="-50" cy="45" r="14" fill="#0d0520" stroke="#FFA500" stroke-width="2.5"/>
+      <circle cx="-50" cy="45" r="6" fill="none" stroke="#FFA500" stroke-width="1"/>
+      <circle cx="65" cy="45" r="14" fill="#0d0520" stroke="#FFA500" stroke-width="2.5"/>
+      <circle cx="65" cy="45" r="6" fill="none" stroke="#FFA500" stroke-width="1"/>
+      <!-- Door lines -->
+      <line x1="-10" y1="0" x2="-10" y2="35" stroke="#00CCFF" stroke-width="1" opacity="0.5"/>
+      <line x1="20" y1="0" x2="20" y2="35" stroke="#00CCFF" stroke-width="1" opacity="0.5"/>
+    </g>
+    <!-- Fire trails -->
+    <g filter="url(#neon-glow)">
+      <path d="M168,280 C130,282 90,275 40,290" stroke="#FF6B00" stroke-width="5" fill="none" opacity="0.8"/>
+      <path d="M168,285 C120,288 80,282 20,298" stroke="#FFA500" stroke-width="3" fill="none" opacity="0.6"/>
+      <path d="M168,275 C135,272 100,278 50,268" stroke="#FFA500" stroke-width="2" fill="none" opacity="0.5"/>
+      <path d="M168,290 C140,295 110,290 60,305" stroke="#FF6B00" stroke-width="2" fill="none" opacity="0.4"/>
+    </g>
+    <!-- Speed lines -->
+    <line x1="360" y1="260" x2="420" y2="258" stroke="#00CCFF" stroke-width="1.5" opacity="0.3"/>
+    <line x1="360" y1="270" x2="440" y2="270" stroke="#00CCFF" stroke-width="1" opacity="0.2"/>
+    <line x1="360" y1="280" x2="430" y2="282" stroke="#00CCFF" stroke-width="1.5" opacity="0.3"/>
+    <!-- 88 Display -->
+    <rect x="420" y="80" width="120" height="60" rx="8" fill="#0d0520" stroke="#00CCFF" stroke-width="2"/>
+    <text x="480" y="105" font-family="monospace" font-size="12" fill="#00CCFF" text-anchor="middle" opacity="0.7">VELOCIDAD</text>
+    <text x="480" y="130" font-family="monospace" font-size="28" fill="#FFA500" text-anchor="middle" font-weight="bold" filter="url(#neon-glow)">88</text>
+    <text x="530" y="130" font-family="monospace" font-size="10" fill="#FFA500">MPH</text>
+    <!-- Clock showing time warp -->
+    <circle cx="100" cy="100" r="40" fill="#0d0520" stroke="#FFA500" stroke-width="2"/>
+    <line x1="100" y1="100" x2="100" y2="70" stroke="#FFA500" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="100" x2="125" y2="110" stroke="#00CCFF" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="100" cy="100" r="3" fill="#FFA500"/>
+    <!-- Spiral around clock -->
+    <path d="M100,55 C130,55 145,80 140,100 C135,120 115,135 100,135 C85,135 70,125 68,105" stroke="#00CCFF" stroke-width="1" fill="none" opacity="0.4" stroke-dasharray="4,3"/>
+
+  </g>
+  <rect width="600" height="400" rx="12" fill="none" stroke="url(#hero-border-delorean)" stroke-width="2"/>
+</svg>

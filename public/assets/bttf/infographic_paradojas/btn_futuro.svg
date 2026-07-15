@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    
+  <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00CCFF" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00CCFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-orange" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFA500" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00CCFF"/>
+    <stop offset="100%" stop-color="#0088AA"/>
+  </linearGradient>
+  <linearGradient id="neon-orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFA500"/>
+    <stop offset="100%" stop-color="#FF6B00"/>
+  </linearGradient>
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft-glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+    <clipPath id="btn-clip-futuro"><circle cx="100" cy="100" r="90"/></clipPath>
+    <radialGradient id="btn-bg-futuro" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#050210"/>
+    </radialGradient>
+    <linearGradient id="btn-ring-futuro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00CCFF"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF6B00"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="url(#btn-ring-futuro)" stroke-width="3" filter="url(#neon-glow)"/>
+  <circle cx="100" cy="100" r="90" fill="url(#btn-bg-futuro)"/>
+  <g clip-path="url(#btn-clip-futuro)">
+    
+    <!-- Telescope base -->
+    <rect x="90" y="130" width="20" height="30" rx="3" fill="#1a0a2e" stroke="#FFA500" stroke-width="1.5"/>
+    <!-- Telescope tube -->
+    <path d="M85,130 L75,80 L125,80 L115,130" fill="#1a0a2e" stroke="#00CCFF" stroke-width="2"/>
+    <ellipse cx="100" cy="78" rx="25" ry="8" fill="#1a0a2e" stroke="#00CCFF" stroke-width="1.5"/>
+    <!-- Multiple futures emanating -->
+    <line x1="85" y1="72" x2="55" y2="40" stroke="#00CCFF" stroke-width="1.5" stroke-dasharray="4,2" filter="url(#neon-glow)"/>
+    <line x1="100" y1="70" x2="100" y2="30" stroke="#FFA500" stroke-width="1.5" stroke-dasharray="4,2" filter="url(#neon-glow)"/>
+    <line x1="115" y1="72" x2="145" y2="40" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="4,2" filter="url(#neon-glow)"/>
+    <!-- Future stars -->
+    <circle cx="55" cy="38" r="5" fill="#00CCFF" opacity="0.5" filter="url(#soft-glow)"/>
+    <circle cx="100" cy="28" r="5" fill="#FFA500" opacity="0.5" filter="url(#soft-glow)"/>
+    <circle cx="145" cy="38" r="5" fill="#FF6B00" opacity="0.5" filter="url(#soft-glow)"/>
+    <!-- Tripod -->
+    <line x1="90" y1="160" x2="75" y2="175" stroke="#FFA500" stroke-width="1.5"/>
+    <line x1="110" y1="160" x2="125" y2="175" stroke="#FFA500" stroke-width="1.5"/>
+
+  </g>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="url(#btn-ring-futuro)" stroke-width="1.5" opacity="0.5"/>
+</svg>
