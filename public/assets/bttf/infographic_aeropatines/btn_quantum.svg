@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs><radialGradient id="btnBg"><stop offset="0%" stop-color="#1a0a2e"/><stop offset="100%" stop-color="#0d0418"/></radialGradient><linearGradient id="btnRing" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E040FB"/><stop offset="100%" stop-color="#00CCFF"/></linearGradient></defs>
+<circle cx="100" cy="100" r="98" fill="url(#btnBg)"/>
+<circle cx="100" cy="100" r="94" fill="none" stroke="url(#btnRing)" stroke-width="2" opacity=".5"/>
+
+    <line x1="50" y1="110" x2="150" y2="110" stroke="#00E676" stroke-width="3" opacity=".5"/>
+    <rect x="70" y="85" width="60" height="8" rx="4" fill="#00E676" opacity=".7"/>
+    <ellipse cx="100" cy="80" rx="25" ry="3" fill="#00E676" opacity=".2"/>
+    <line x1="75" y1="93" x2="75" y2="110" stroke="#00E676" stroke-width=".8" opacity=".3" stroke-dasharray="2 2"/><line x1="90" y1="93" x2="90" y2="110" stroke="#00E676" stroke-width=".8" opacity=".3" stroke-dasharray="2 2"/><line x1="105" y1="93" x2="105" y2="110" stroke="#00E676" stroke-width=".8" opacity=".3" stroke-dasharray="2 2"/><line x1="120" y1="93" x2="120" y2="110" stroke="#00E676" stroke-width=".8" opacity=".3" stroke-dasharray="2 2"/>
+    <text x="100" y="140" text-anchor="middle" fill="#00E676" font-size="9" font-weight="bold" font-family="sans-serif">FLUX PIN</text>
+  
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs><linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#1a0a2e"/></linearGradient><radialGradient id="heroGlow"><stop offset="0%" stop-color="#E040FB22"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+<rect width="600" height="400" fill="url(#heroBg)"/>
+<circle cx="300" cy="200" r="180" fill="url(#heroGlow)"/>
+
+    <rect x="180" y="200" width="240" height="18" rx="9" fill="#E040FB" opacity=".7"/>
+    <rect x="200" y="195" width="200" height="12" rx="6" fill="#E040FB" opacity=".3"/>
+    <ellipse cx="300" cy="240" rx="100" ry="12" fill="#E040FB" opacity=".15"/>
+    <circle cx="250" cy="170" r="8" fill="#E040FB" opacity="0.5"/><circle cx="350" cy="170" r="8" fill="#E040FB" opacity="0.5"/>
+    <rect x="270" y="140" width="60" height="50" rx="5" fill="#E040FB" opacity=".15"/>
+    <text x="300" y="300" text-anchor="middle" fill="#E040FB" font-size="18" font-weight="bold" font-family="sans-serif">EL AEROPATÍN DE BTTF</text>
+    <text x="300" y="325" text-anchor="middle" fill="#fff" font-size="12" opacity=".5" font-family="sans-serif">Hill Valley • 2015</text>
+    <circle cx="69.8662266437553" cy="333.84895191214576" r="1.8023947035851424" fill="#E040FB" opacity="0.2"/><circle cx="306.4557220363968" cy="273.25143560806487" r="0.510209771073213" fill="#E040FB" opacity="0.2"/><circle cx="362.38247466034096" cy="230.994560003221" r="1.4212534240365378" fill="#E040FB" opacity="0.2"/><circle cx="471.5431142396878" cy="15.542906145579671" r="1.6093637032368413" fill="#E040FB" opacity="0.2"/><circle cx="328.62526566675126" cy="341.6333160882283" r="1.9828869110422453" fill="#E040FB" opacity="0.2"/><circle cx="183.5548935113239" cy="154.9803645196493" r="1.9626224931854261" fill="#E040FB" opacity="0.2"/><circle cx="60.77660416393829" cy="145.25698358632414" r="0.6588594378081788" fill="#E040FB" opacity="0.2"/><circle cx="341.91962500135674" cy="396.7117531422123" r="1.3736303400620629" fill="#E040FB" opacity="0.2"/><circle cx="547.7195624177807" cy="330.2027076459119" r="1.2970303354463562" fill="#E040FB" opacity="0.2"/><circle cx="537.5123793304402" cy="227.0427219795165" r="1.508215339880633" fill="#E040FB" opacity="0.2"/><circle cx="228.56564731885862" cy="223.77120305474523" r="1.701442266619292" fill="#E040FB" opacity="0.2"/><circle cx="237.00042864467844" cy="368.10289686598765" r="1.438587936557119" fill="#E040FB" opacity="0.2"/><circle cx="36.377568239397704" cy="27.362572804612697" r="1.545480669770125" fill="#E040FB" opacity="0.2"/><circle cx="411.6747413650837" cy="322.51629002966" r="1.1517723307060037" fill="#E040FB" opacity="0.2"/><circle cx="52.970460746478196" cy="33.42930912087208" r="1.8175704277562255" fill="#E040FB" opacity="0.2"/>
+  
+</svg>

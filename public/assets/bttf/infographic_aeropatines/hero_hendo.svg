@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs><linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#1a0a2e"/></linearGradient><radialGradient id="heroGlow"><stop offset="0%" stop-color="#E040FB22"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+<rect width="600" height="400" fill="url(#heroBg)"/>
+<circle cx="300" cy="200" r="180" fill="url(#heroGlow)"/>
+
+    <rect x="170" y="185" width="260" height="16" rx="8" fill="#FF6B00" opacity=".6"/>
+    <circle cx="190" cy="200" r="8" fill="#FF6B00" opacity="0.2"/><circle cx="230" cy="200" r="8" fill="#FF6B00" opacity="0.2"/><circle cx="270" cy="200" r="8" fill="#FF6B00" opacity="0.2"/><circle cx="310" cy="200" r="8" fill="#FF6B00" opacity="0.2"/><circle cx="350" cy="200" r="8" fill="#FF6B00" opacity="0.2"/><circle cx="390" cy="200" r="8" fill="#FF6B00" opacity="0.2"/>
+    <path d="M190 210 Q205 230 220 210" fill="none" stroke="#FF6B00" stroke-width="1.5" opacity=".35"/><path d="M250 210 Q265 230 280 210" fill="none" stroke="#FF6B00" stroke-width="1.5" opacity=".35"/><path d="M310 210 Q325 230 340 210" fill="none" stroke="#FF6B00" stroke-width="1.5" opacity=".35"/><path d="M370 210 Q385 230 400 210" fill="none" stroke="#FF6B00" stroke-width="1.5" opacity=".35"/>
+    <rect x="200" y="250" width="200" height="3" rx="1.5" fill="#B87333" opacity=".4"/>
+    <text x="300" y="290" text-anchor="middle" fill="#FF6B00" font-size="16" font-weight="bold" font-family="sans-serif">HENDO HOVERBOARD</text>
+    <text x="300" y="315" text-anchor="middle" fill="#fff" font-size="11" opacity=".5" font-family="sans-serif">Ley de Lenz • Corrientes de Foucault</text>
+  
+</svg>

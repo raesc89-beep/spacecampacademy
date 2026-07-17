@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs><radialGradient id="btnBg"><stop offset="0%" stop-color="#1a0a2e"/><stop offset="100%" stop-color="#0d0418"/></radialGradient><linearGradient id="btnRing" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E040FB"/><stop offset="100%" stop-color="#00CCFF"/></linearGradient></defs>
+<circle cx="100" cy="100" r="98" fill="url(#btnBg)"/>
+<circle cx="100" cy="100" r="94" fill="none" stroke="url(#btnRing)" stroke-width="2" opacity=".5"/>
+
+    <line x1="100" y1="55" x2="100" y2="95" stroke="#FFA500" stroke-width="1.5" opacity=".5" stroke-dasharray="3 3"/>
+    <circle cx="100" cy="55" r="6" fill="#4CAF50" opacity="0.8"/>
+    <circle cx="100" cy="100" r="8" fill="#FFA500" opacity="0.15"/>
+    <text x="100" y="130" text-anchor="middle" fill="#FFA500" font-size="12" font-weight="bold" font-family="sans-serif">F=mg</text>
+    <text x="100" y="148" text-anchor="middle" fill="#fff" font-size="9" opacity=".5" font-family="sans-serif">9.8 m/s²</text>
+    <line x1="60" y1="105" x2="60" y2="115" stroke="#FFA500" stroke-width=".5" opacity=".3"/><line x1="80" y1="105" x2="80" y2="115" stroke="#FFA500" stroke-width=".5" opacity=".3"/><line x1="100" y1="105" x2="100" y2="115" stroke="#FFA500" stroke-width=".5" opacity=".3"/><line x1="120" y1="105" x2="120" y2="115" stroke="#FFA500" stroke-width=".5" opacity=".3"/><line x1="140" y1="105" x2="140" y2="115" stroke="#FFA500" stroke-width=".5" opacity=".3"/>
+  
+</svg>

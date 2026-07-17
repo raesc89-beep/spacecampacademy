@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs><linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#1a0a2e"/></linearGradient><radialGradient id="heroGlow"><stop offset="0%" stop-color="#E040FB22"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+<rect width="600" height="400" fill="url(#heroBg)"/>
+<circle cx="300" cy="200" r="180" fill="url(#heroGlow)"/>
+
+    <ellipse cx="300" cy="200" rx="200" ry="60" fill="none" stroke="#FFD740" stroke-width="2" opacity=".3"/>
+    <rect x="150" y="180" width="300" height="40" rx="20" fill="#FFD740" opacity=".08"/>
+    <circle cx="180" cy="200" r="4" fill="#FFD740" opacity="0.3"/><circle cx="230" cy="200" r="4" fill="#FFD740" opacity="0.3"/><circle cx="280" cy="200" r="4" fill="#FFD740" opacity="0.3"/><circle cx="330" cy="200" r="4" fill="#FFD740" opacity="0.3"/><circle cx="380" cy="200" r="4" fill="#FFD740" opacity="0.3"/><circle cx="420" cy="200" r="4" fill="#FFD740" opacity="0.3"/>
+    <ellipse cx="300" cy="200" rx="120" ry="35" fill="none" stroke="#FFD740" stroke-width="1" opacity=".2"/>
+    <circle cx="300" cy="200" r="8" fill="#FFD740" opacity="0.5"/>
+    <text x="300" y="300" text-anchor="middle" fill="#FFD740" font-size="16" font-weight="bold" font-family="sans-serif">SUSPENSIÓN EM</text>
+    <text x="300" y="325" text-anchor="middle" fill="#fff" font-size="11" opacity=".5" font-family="sans-serif">Hyperloop • MagLev • Acústica</text>
+  
+</svg>
