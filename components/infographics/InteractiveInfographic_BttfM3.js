@@ -336,14 +336,11 @@ function ParadoxHeader() {
 /* ═══════════════════════════
    EXPANDABLE PARAGRAPH
    ═══════════════════════════ */
-const EXPAND_DIRS = ['down', 'left', 'right', 'up'];
-function seededDir(i) { return EXPAND_DIRS[(i * 7 + 3) % 4]; }
+const EXPAND_DIRS = ['down', 'down', 'down', 'down'];
+function seededDir(i) { return 'down'; }
 
 const dirVariants = {
-  down:  { hidden: { height: 0, opacity: 0 },                 visible: { height: 'auto', opacity: 1 } },
-  up:    { hidden: { height: 0, opacity: 0, y: 20 },          visible: { height: 'auto', opacity: 1, y: 0 } },
-  left:  { hidden: { width: 0, opacity: 0, x: 40 },           visible: { width: '100%', opacity: 1, x: 0 } },
-  right: { hidden: { width: 0, opacity: 0, x: -40 },          visible: { width: '100%', opacity: 1, x: 0 } },
+  down:  { hidden: { height: 0, opacity: 0, y: 8 },  visible: { height: 'auto', opacity: 1, y: 0 } },
 };
 
 function ExpandIcon({ open }) {
@@ -383,7 +380,7 @@ function ExpandableParagraph({ text, index, nodeColor }) {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            transition={{ duration: 0.35, ease: 'easeInOut' }}
+            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
             style={{ overflow: 'hidden', marginTop: 6, paddingLeft: 26 }}
           >
             <p style={{ margin: 0, fontSize: 14, lineHeight: 1.65, color: '#ccc' }}>{rest}</p>
@@ -491,7 +488,7 @@ function ContentPanel({ node, onClose }) {
       </div>
 
       {/* ─── MAGAZINE BODY ─── */}
-      <div style={{ padding: '20px 28px 14px', columns: bodyParas.length > 2 ? '2 280px' : '1', columnGap: 24 }}>
+      <div style={{ padding: '20px 28px 14px', display: 'flex', flexDirection: 'column', gap: 0 }}>
         {bodyParas.map((p, i) => (
           <ExpandableParagraph key={i} text={p} index={i} nodeColor={node.color} />
         ))}
