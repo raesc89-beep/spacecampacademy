@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+    <defs>
+      <radialGradient id="glow1" cx="50%" cy="20%" r="40%">
+        <stop offset="0%" stop-color="#FFD700" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="transparent"/>
+      </radialGradient>
+    </defs>
+    <rect width="600" height="400" fill="#0d0806"/>
+    <rect width="600" height="400" fill="url(#glow1)"/>
+    <polygon points="300,60 320,120 310,380 290,380 280,120" fill="#2a1a0a" stroke="#DAA520" stroke-width="2"/>
+    <polygon points="285,68 315,68 320,120 280,120" fill="#FFD700" opacity="0.7" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="300" cy="60" r="12" fill="#FFD700" opacity="0.5"/>
+    <circle cx="300" cy="60" r="20" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <circle cx="300" cy="60" r="30" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.15"/>
+    <line x1="300" y1="60" x2="300" y2="10" stroke="#FFD700" stroke-width="1.5" opacity="0.2"/><line x1="300" y1="60" x2="343.30127018922195" y2="35" stroke="#FFD700" stroke-width="1.5" opacity="0.2"/><line x1="300" y1="60" x2="343.30127018922195" y2="85" stroke="#FFD700" stroke-width="1.5" opacity="0.2"/><line x1="300" y1="60" x2="300" y2="110" stroke="#FFD700" stroke-width="1.5" opacity="0.2"/><line x1="300" y1="60" x2="256.69872981077805" y2="85" stroke="#FFD700" stroke-width="1.5" opacity="0.2"/><line x1="300" y1="60" x2="256.69872981077805" y2="34.99999999999999" stroke="#FFD700" stroke-width="1.5" opacity="0.2"/>
+  </svg>

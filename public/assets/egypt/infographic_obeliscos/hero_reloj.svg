@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+    <defs>
+      <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#1a1208"/>
+        <stop offset="100%" stop-color="#2a1a0a"/>
+      </linearGradient>
+    </defs>
+    <rect width="600" height="400" fill="url(#bg1)"/>
+    <polygon points="300,40 315,80 310,340 290,340 285,80" fill="#3a2a1a" stroke="#E8C96A" stroke-width="2"/>
+    <polygon points="292,44 308,44 315,80 285,80" fill="#E8C96A" opacity="0.6"/>
+    <circle cx="300" cy="38" r="6" fill="#FFD700" opacity="0.8"/>
+    <line x1="300" y1="340" x2="520" y2="330" stroke="#E8C96A" stroke-width="3" opacity="0.3" stroke-dasharray="8 4"/>
+    <ellipse cx="300" cy="350" rx="120" ry="15" fill="none" stroke="#E8C96A" stroke-width="1" opacity="0.2"/>
+    <line x1="300" y1="350" x2="400" y2="350" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="386.6025403784439" y2="356" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="350" y2="360.39230484541326" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="300" y2="362" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="250.00000000000003" y2="360.39230484541326" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="213.39745962155612" y2="356" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="200" y2="350" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="213.39745962155615" y2="344" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="249.99999999999994" y2="339.60769515458674" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="300" y2="338" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="350" y2="339.60769515458674" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/><line x1="300" y1="350" x2="386.60254037844385" y2="344" stroke="#E8C96A" stroke-width="0.5" opacity="0.15"/>
+    <circle cx="520" cy="80" r="40" fill="#FFD700" opacity="0.12"/>
+    <circle cx="520" cy="80" r="25" fill="#FFD700" opacity="0.2"/>
+  </svg>
