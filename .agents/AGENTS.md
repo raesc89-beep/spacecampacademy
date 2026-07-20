@@ -83,3 +83,47 @@ Antes de finalizar cualquier archivo de curso:
 - **Sin excepciones**: Esta regla aplica incluso si el agente está ejecutando tareas automatizadas o en segundo plano.
 - **Notificación**: Siempre informar al usuario el costo estimado antes de iniciar una sesión de generación masiva.
 
+## 9. Estrategia de Cuota Gratuita Primero (Free-First Billing)
+
+> **REGLA INELUDIBLE**: Toda generación de imágenes o uso de APIs de Google AI DEBE agotar primero la cuota gratuita disponible antes de consumir créditos de paga. Esta regla optimiza el gasto mezclando recursos gratuitos y pagados.
+
+### Orden de prioridad (cascada obligatoria):
+
+1. **Cuota gratuita del IDE** (Antigravity / Gemini Code Assist): Usar la herramienta `generate_image` integrada del IDE siempre que esté disponible y funcional. Costo: $0.
+2. **Free Tier de Google AI Studio API**: Cuando la cuota del IDE se agote, usar la API con el API key del proyecto. Los modelos gratuitos tienen límites de RPM/RPD (requests per minute/day). Respetar estos límites sin forzar.
+3. **Créditos de paga de Google AI Studio**: Solo después de confirmar que la cuota gratuita se agotó (error 429 persistente o límite diario alcanzado), proceder con créditos de paga sujetos al tope de $400 MXN/día (Sección 8).
+
+### Implementación técnica en scripts de generación:
+
+```
+CASCADA DE GENERACIÓN:
+┌─────────────────────────┐
+│ 1. Intentar FREE TIER   │ ← Pausas largas entre requests (12-15s)
+│    (misma API, sin costo)│    para respetar RPM limits del free tier
+├─────────────────────────┤
+│ Si HTTP 429 persistente  │ ← Free quota agotada
+│ (3+ intentos con 60s    │
+│  espera entre cada uno)  │
+├─────────────────────────┤
+│ 2. PAID TIER             │ ← Pausas cortas (2-3s), sujeto a $400 MXN/día
+│    (misma API, con costo)│
+└─────────────────────────┘
+```
+
+### Reglas de detección de cuota:
+- **HTTP 429**: Indica rate limit. En free tier, esperar 60s y reintentar hasta 3 veces.
+- **3 x 429 consecutivos con 60s de espera**: Se considera cuota gratuita agotada → activar modo de paga.
+- **Registrar en `.api_spend_log.json`**: Campo `freeQuotaExhausted: true` con timestamp cuando se detecte agotamiento.
+- **Al inicio de cada sesión**: Asumir que la cuota gratuita está disponible (se reinicia diariamente).
+
+### Lo que NUNCA hacer:
+- ❌ NO saltar directamente a créditos de paga sin intentar la cuota gratuita primero.
+- ❌ NO asumir que la cuota gratuita está agotada sin recibir errores 429 persistentes.
+- ❌ NO usar pausas cortas (< 10s) cuando se está en modo gratuito — esto fuerza rate limits innecesariamente.
+- ❌ NO generar más de 15 imágenes por minuto en modo gratuito (respetar RPM del free tier).
+
+### Notificación al usuario:
+- Informar claramente en qué modo se está operando: `[FREE]` o `[PAID]`.
+- Al cambiar de free a paid, notificar: "⚠️ Cuota gratuita agotada. Cambiando a créditos de paga ($X MXN restante del presupuesto diario)."
+- Al finalizar, reportar desglose: "X imágenes gratuitas + Y imágenes de paga = $Z MXN total."
+
