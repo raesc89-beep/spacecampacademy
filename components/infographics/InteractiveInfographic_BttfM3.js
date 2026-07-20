@@ -149,8 +149,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'paradoja-abuelo', title: 'La Paradoja del Abuelo', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_abuelo.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.png',
+    image: '/assets/bttf/infographic_paradojas/hero_abuelo.png',
     content: [
       '¿Qué es una paradoja? Es como un acertijo que no tiene respuesta. Piensa en esta frase: «Esta oración es falsa». Si es falsa, entonces dice la verdad, pero si dice la verdad... ¡entonces es falsa! Tu cerebro entra en un bucle infinito. Las paradojas temporales funcionan exactamente así, pero con viajes en el tiempo.',
       'La paradoja del abuelo es la más famosa: imagina que viajas al pasado y evitas que tu abuelo conozca a tu abuela. Si nunca se conocen, tus padres nunca nacen, y tú tampoco. Pero si tú nunca naces... ¡nunca puedes viajar al pasado para impedirlo! Es un círculo imposible que se repite para siempre.',
@@ -162,8 +162,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'muchos-mundos', title: 'Universos Paralelos', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_mundos.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_mundos.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_mundos.png',
+    image: '/assets/bttf/infographic_paradojas/hero_mundos.png',
     content: [
       'En 1957, un joven físico llamado Hugh Everett propuso una idea revolucionaria en su tesis doctoral: cada vez que ocurre un evento cuántico — como un electrón eligiendo ir a la izquierda o a la derecha — el universo se divide en dos. En uno va a la izquierda, en otro a la derecha. Y ambos universos son igual de reales.',
       '¡Esta idea resuelve la paradoja del abuelo! Si viajas al pasado y cambias algo, no estás cambiando TU pasado sino creando una línea temporal diferente. Tu universo original sigue intacto. Es como un río que se divide en dos ramas: ambas siguen fluyendo, solo que en direcciones distintas.',
@@ -175,8 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'bootstrap', title: 'El Bucle Bootstrap', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_bootstrap.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_bootstrap.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_bootstrap.png',
+    image: '/assets/bttf/infographic_paradojas/hero_bootstrap.png',
     content: [
       '¿Qué pasa cuando algo existe sin haber sido creado jamás? Eso es una paradoja bootstrap. Imagina que encuentras un libro con la fórmula de una máquina del tiempo, la construyes, viajas al pasado y dejas el libro para que tu yo más joven lo encuentre. ¿Quién escribió la fórmula? ¡Nadie! La información existe en un bucle sin principio ni final.',
       'En «Volver al Futuro», esto sucede con «Johnny B. Goode». Marty toca la canción en el baile de 1955. El primo de Chuck Berry llama a Chuck y le dice: «¡Escucha este sonido nuevo!» Así que Chuck Berry aprende la canción... de Marty, quien la aprendió... de Chuck Berry. ¿Quién la compuso realmente? ¡Es un bucle perfecto sin origen!',
@@ -188,8 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gemelos', title: 'La Paradoja de los Gemelos', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_gemelos.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.png',
+    image: '/assets/bttf/infographic_paradojas/hero_gemelos.png',
     content: [
       '¡Esto NO es realmente una paradoja — es física REAL y comprobada! La Teoría de la Relatividad Especial de Einstein (1905) nos dice algo asombroso: cuanto más rápido te mueves, más lento pasa el tiempo para ti. No es una ilusión ni un truco: el tiempo literalmente se estira.',
       'Explicación sencilla: si tu gemelo se sube a una nave que viaja al 90% de la velocidad de la luz durante 5 años (según su reloj), cuando regrese a la Tierra habrán pasado 11.5 años para ti. Tú tienes 11.5 años más, pero tu gemelo solo 5. ¡No es ciencia ficción, son las ecuaciones de Einstein!',
@@ -201,8 +201,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'novikov', title: 'El Principio de Autoconsistencia', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_novikov.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_novikov.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_novikov.png',
+    image: '/assets/bttf/infographic_paradojas/hero_novikov.png',
     content: [
       'El físico ruso Igor Novikov propuso en los años 1980 una idea fascinante: ¿y si el universo simplemente NO PERMITE las paradojas? Su «Principio de Autoconsistencia» dice que cualquier evento que ocurra mediante viaje en el tiempo DEBE ser consistente con la historia. No puedes cambiar el pasado porque el universo no te deja.',
       'Imagínalo así: intentas viajar al pasado para impedir la primera cita de tus padres. Pero tu auto se descompone camino allá. Lo arreglas e intentas de nuevo, pero te pierdes. Lo intentas una tercera vez y te resbalas. SIEMPRE algo sale mal. El universo conspira para que la historia se mantenga intacta, como si tuviera un guardián invisible.',
@@ -214,8 +214,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'delorean', title: 'Ciencia Detrás del DeLorean', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_delorean.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_delorean.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_delorean.png',
+    image: '/assets/bttf/infographic_paradojas/hero_delorean.png',
     content: [
       '¿Por qué 88 millas por hora? Bob Gale, el guionista, confesó que eligió ese número porque se veía bien en el velocímetro. Pero hay física real sobre velocidad y tiempo: según Einstein, cuanto más rápido te mueves, más se distorsiona el tiempo. A 88 mph no pasa nada especial, pero ¡a velocidades cercanas a la luz sí!',
       'El condensador de fluzo es ficción, pero el concepto de necesitar energía enorme es totalmente real. Para deformar el espacio-tiempo necesitarías «materia exótica» con energía negativa. Esto no es ciencia ficción barata: los físicos como Miguel Alcubierre han propuesto motores warp que necesitan exactamente este tipo de energía para funcionar.',
@@ -227,8 +227,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cronologia', title: 'La Protección Cronológica', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_cronologia.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_cronologia.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_cronologia.png',
+    image: '/assets/bttf/infographic_paradojas/hero_cronologia.png',
     content: [
       'En 1992, Stephen Hawking propuso la «Conjetura de Protección Cronológica»: las leyes de la física IMPIDEN viajar al pasado. No es que sea difícil o que necesites tecnología avanzada — según Hawking, el universo tiene reglas fundamentales que lo hacen físicamente imposible. Es la respuesta más radical a las paradojas temporales.',
       'Hawking hizo un experimento brillante en 2009: organizó una fiesta para viajeros del tiempo en la Universidad de Cambridge. Preparó champán, globos y un cartel de bienvenida. Pero envió las invitaciones DESPUÉS de la fiesta. Si el viaje al pasado fuera posible, alguien del futuro habría leído la invitación y asistido. Nadie apareció.',
@@ -240,8 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-ciencia', title: 'El Futuro de la Ciencia del Tiempo', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_futuro.svg',
-    image: '/assets/bttf/infographic_paradojas/hero_futuro.svg',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_futuro.png',
+    image: '/assets/bttf/infographic_paradojas/hero_futuro.png',
     content: [
       'Lo que SABEMOS que funciona: viajar al futuro es real y está comprobado. El GPS corrige efectos relativistas cada día. Los astronautas de la ISS viajan al futuro milisegundos cada misión. En aceleradores de partículas como el CERN, las partículas subatómicas viajan al futuro constantemente — muones que deberían desintegrarse en microsegundos sobreviven mucho más porque el tiempo se ralentiza para ellos.',
       'Lo que NO sabemos: ¿Existen las curvas temporales cerradas de Gödel en el universo real? ¿Se pueden estabilizar los agujeros de gusano con materia exótica? ¿Es correcta la conjetura de protección cronológica de Hawking? Estas son preguntas abiertas que los mejores físicos del mundo están investigando ahora mismo.',
@@ -398,24 +398,43 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
   return (
     <motion.button
       onClick={onClick}
-      whileHover={{ scale: 1.12 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.1, rotate: [0, -2, 2, 0] }}
+      whileTap={{ scale: 0.92 }}
       style={{
-        position: 'relative', width: 72, height: 72, borderRadius: '50%', border: `3px solid ${node.color}`,
-        background: `radial-gradient(circle, ${node.color}22, transparent)`,
-        cursor: 'pointer', padding: 0, outline: 'none',
-        boxShadow: isActive ? `0 0 18px ${node.color}88` : `0 0 6px ${node.color}33`,
-        transition: 'box-shadow .3s',
+        position: 'relative', width: 78, height: 78, borderRadius: 8,
+        border: `2px solid ${node.color}`,
+        borderTop: `2px solid ${node.color}cc`,
+        borderBottom: `3px solid ${node.color}66`,
+        background: `linear-gradient(135deg, #1a1a2e 0%, #0f0f23 50%, #1a1a2e 100%)`,
+        cursor: 'pointer', padding: 3, outline: 'none',
+        boxShadow: isActive
+          ? `0 0 20px ${node.color}aa, 0 0 40px ${node.color}44, inset 0 0 15px ${node.color}33, 0 4px 8px rgba(0,0,0,.6)`
+          : `0 0 8px ${node.color}44, 0 2px 6px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.08)`,
+        transition: 'box-shadow .3s, border-color .3s',
+        overflow: 'hidden',
       }}
     >
+      {/* Retro CRT scanline overlay */}
+      <div style={{
+        position: 'absolute', inset: 0, borderRadius: 6, zIndex: 2, pointerEvents: 'none',
+        background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.15) 2px, rgba(0,0,0,.15) 4px)',
+        mixBlendMode: 'overlay',
+      }} />
+      {/* Chrome corner accents */}
+      <div style={{ position: 'absolute', top: 0, left: 0, width: 8, height: 8, borderTop: `2px solid ${node.color}`, borderLeft: `2px solid ${node.color}`, borderRadius: '6px 0 0 0', zIndex: 3 }} />
+      <div style={{ position: 'absolute', top: 0, right: 0, width: 8, height: 8, borderTop: `2px solid ${node.color}`, borderRight: `2px solid ${node.color}`, borderRadius: '0 6px 0 0', zIndex: 3 }} />
+      <div style={{ position: 'absolute', bottom: 0, left: 0, width: 8, height: 8, borderBottom: `2px solid ${node.color}`, borderLeft: `2px solid ${node.color}`, borderRadius: '0 0 0 6px', zIndex: 3 }} />
+      <div style={{ position: 'absolute', bottom: 0, right: 0, width: 8, height: 8, borderBottom: `2px solid ${node.color}`, borderRight: `2px solid ${node.color}`, borderRadius: '0 0 6px 0', zIndex: 3 }} />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={node.btnImage} alt={node.title}
-        style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
+        style={{ width: '100%', height: '100%', borderRadius: 5, objectFit: 'cover', filter: isActive ? 'saturate(1.3) brightness(1.1)' : 'saturate(0.85) brightness(0.9)' }} />
       {isExplored && (
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
           style={{
-            position: 'absolute', top: -4, right: -4, width: 20, height: 20, borderRadius: '50%',
-            background: '#00E676', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            position: 'absolute', top: -6, right: -6, width: 22, height: 22, borderRadius: 4,
+            background: 'linear-gradient(135deg, #00E676, #00C853)', border: '2px solid #0a0a1a',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 4,
+            boxShadow: '0 0 8px #00E67688',
           }}>
           <svg viewBox="0 0 16 16" width={12} height={12}>
             <path d="M3 8l3 3 7-7" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -423,11 +442,12 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
         </motion.div>
       )}
       <div style={{
-        position: 'absolute', bottom: -22, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap',
-        fontSize: 9, fontWeight: 700, color: node.color, letterSpacing: 0.5, textTransform: 'uppercase',
-        textShadow: '0 1px 4px rgba(0,0,0,.8)',
+        position: 'absolute', bottom: -24, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap',
+        fontSize: 8, fontWeight: 800, color: node.color, letterSpacing: 1.5, textTransform: 'uppercase',
+        textShadow: `0 0 8px ${node.color}88, 0 1px 3px rgba(0,0,0,.9)`,
+        fontFamily: "'Exo 2', 'Courier New', monospace",
       }}>
-        {node.title.length > 16 ? node.title.slice(0, 15) + '…' : node.title}
+        {node.title.length > 14 ? node.title.slice(0, 13) + '…' : node.title}
       </div>
     </motion.button>
   );
@@ -487,11 +507,33 @@ function ContentPanel({ node, onClose }) {
         </div>
       </div>
 
-      {/* ─── MAGAZINE BODY ─── */}
-      <div style={{ padding: '20px 28px 14px', display: 'flex', flexDirection: 'column', gap: 0 }}>
-        {bodyParas.map((p, i) => (
-          <ExpandableParagraph key={i} text={p} index={i} nodeColor={node.color} />
-        ))}
+      {/* ─── MAGAZINE BODY — M9-standard 2-column grid ─── */}
+      <div style={{ padding: '20px 28px 14px' }}>
+        <div style={{
+          display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem 2rem',
+        }}>
+          {bodyParas.map((p, i) => {
+            const isWide = i === bodyParas.length - 1 && (bodyParas.length % 2 !== 0);
+            return (
+              <div key={i} style={{
+                gridColumn: isWide ? '1 / -1' : 'auto',
+                background: 'rgba(255,255,255,0.02)', borderRadius: 12,
+                padding: '1.2rem', borderLeft: `3px solid ${node.color}30`,
+                position: 'relative',
+              }}>
+                <div style={{
+                  position: 'absolute', top: -8, left: 12,
+                  background: node.color, color: '#0a0a1a',
+                  fontSize: '0.65rem', fontWeight: 800,
+                  padding: '2px 8px', borderRadius: 8, letterSpacing: 1,
+                }}>
+                  {i === 0 ? '◆' : i === 1 ? '◇' : '★'}
+                </div>
+                <p style={{ margin: 0, fontSize: 14, lineHeight: 1.75, color: '#ccc' }}>{p}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {/* ─── FACT ─── */}
@@ -558,8 +600,8 @@ export default function InteractiveInfographic_BttfM3() {
       {/* bg image */}
       <div style={{
         position: 'absolute', inset: 0,
-        backgroundImage: 'url(/assets/bttf/infographic_paradojas/bg_paradojas.svg)',
-        backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.1, pointerEvents: 'none',
+        backgroundImage: 'url(/assets/bttf/infographic_paradojas/bg_paradojas.png)',
+        backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, pointerEvents: 'none',
       }} />
 
       {/* canvas particles */}

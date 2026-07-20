@@ -144,8 +144,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'pelicula', title: 'El Aeropatín en la Película', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_pelicula.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_pelicula.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_pelicula.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_pelicula.png',
     content: [
       'En «Volver al Futuro Parte II» (1989), Marty McFly llega al año 2015 y descubre los aeropatines — ¡patinetas que flotan! La película muestra a chicos usándolos en la plaza de Hill Valley. El director Robert Zemeckis hizo una broma diciendo que los aeropatines eran reales pero que los grupos de padres no permitían venderlos. ¡Mucha gente le creyó!',
       '¿Cómo los filmaron? Los actores estaban parados en tablas reales sujetas con cables y arneses. El equipo usó tecnología de pantalla azul y plataformas mecánicas. Michael J. Fox tuvo que repetir muchas tomas porque el arnés era incómodo. ¡El aeropatín rosa de Mattel se convirtió en uno de los accesorios de película más icónicos de la historia!',
@@ -157,8 +157,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'maglev', title: 'Trenes Maglev: Levitación Real', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_maglev.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_maglev.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_maglev.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_maglev.png',
     content: [
       '¡Los trenes de levitación magnética (maglev) son REALES y vuelan! No por el aire como aviones, sino que flotan sobre sus vías sin contacto alguno. Imagina un tren que nunca toca los rieles — sin fricción, sin ruedas, solo un colchón de fuerza magnética invisible. Es lo más cercano a un aeropatín real.',
       'El Maglev de Shanghái en China alcanza 431 km/h (268 mph) en servicio regular desde 2004. Usa suspensión electromagnética (EMS) donde electroimanes en el tren son atraídos hacia arriba por un riel de acero. ¡El espacio es de solo 10mm! Es como un abrazo magnético que levanta todo el tren.',
@@ -170,8 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lexus', title: 'El Hoverboard de Lexus (2015)', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_lexus.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_lexus.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_lexus.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_lexus.png',
     content: [
       'En 2015 — el año exacto que BTTF2 predijo los aeropatines — Lexus (la compañía de autos) reveló un aeropatín funcional REAL llamado «SLIDE». Se veía como algo de la película: elegante, humeante con vapor, flotando sobre el suelo. Internet enloqueció. ¿Era real? SÍ, absolutamente lo era.',
       'Cómo funciona: El SLIDE usa dos criostatos (contenedores) llenos de superconductores enfriados a -197°C usando nitrógeno líquido. Los superconductores crean el efecto Meissner, que repele campos magnéticos. La tabla flota porque es empujada físicamente lejos de los imanes incrustados en la superficie debajo.',
@@ -183,8 +183,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'hendo', title: 'El Hendo Hoverboard y Tony Hawk', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_hendo.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_hendo.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_hendo.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_hendo.png',
     content: [
       'En 2014, un año antes del proyecto Lexus, una compañía llamada Arx Pax creó el Hendo Hoverboard. ¡El legendario skateboarder Tony Hawk fue uno de los primeros en montarlo! El video de Tony Hawk en un aeropatín real se hizo viral — fue como ver el futuro llegar.',
       'El Hendo usa una tecnología completamente diferente a Lexus: la Ley de Lenz y corrientes de Foucault. Cuando un imán se mueve cerca de una superficie conductora (como cobre o aluminio), crea corrientes eléctricas arremolinadas en el metal. ¡Estas corrientes generan su propio campo magnético que empuja CONTRA el imán original! Mientras más rápido te muevas, ¡más fuerte la repulsión!',
@@ -196,8 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'newton', title: 'Las Leyes de Newton y la Gravedad', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_newton.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_newton.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_newton.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_newton.png',
     content: [
       'Para entender los aeropatines, primero necesitas entender contra qué estás luchando: ¡LA GRAVEDAD! Isaac Newton (1687) descubrió que cada objeto con masa atrae a cada otro objeto con masa. La Tierra te jala hacia abajo con una fuerza calculada por F = m × g, donde g = 9.8 m/s². Eso significa que por cada kilogramo que pesas, ¡la Tierra te jala con 9.8 Newtons de fuerza!',
       'Experimento sencillo: sostén un libro en tu mano. ¿Sientes el peso? Eso es la gravedad jalándolo hacia abajo a 9.8 m/s². Ahora piensa: tus músculos empujan HACIA ARRIBA con exactamente la misma fuerza. El libro no se mueve porque las fuerzas se cancelan. Un aeropatín hace lo mismo — empuja hacia arriba con una fuerza magnética o electromagnética igual a la de la gravedad.',
@@ -209,8 +209,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'quantum', title: 'Levitación Cuántica: Flux Pinning', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_quantum.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_quantum.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_quantum.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_quantum.png',
     content: [
       'La levitación cuántica es lo más cercano a la MAGIA en la física real. Un disco superconductor, enfriado con nitrógeno líquido a -196°C, puede colocarse sobre una pista magnética y se BLOQUEARÁ en el aire. No solo flota — se BLOQUEA. Puedes empujarlo y regresa a su posición. Puedes voltear la pista de cabeza y el disco cuelga debajo sin caerse. ¡Es increíble!',
       'Este fenómeno se llama «flux pinning» o «bloqueo cuántico». Cuando un superconductor Tipo II se enfría, diminutos tubos de campo magnético (llamados tubos de flujo o vórtices) quedan atrapados dentro de imperfecciones microscópicas del superconductor. Estos tubos actúan como pines que bloquean al superconductor en una posición específica dentro del campo magnético.',
@@ -222,8 +222,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'electro', title: 'Suspensión EM en la Vida Real', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_electro.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_electro.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_electro.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_electro.png',
     content: [
       'La suspensión electromagnética (EMS) se usa todos los días en tecnología real. El ejemplo más visible: trenes maglev. Pero EMS también aparece en lugares inesperados. Los rodamientos magnéticos en turbinas industriales eliminan la fricción. Algunos elevadores experimentales usan levitación electromagnética. ¡Hasta tu disco duro tiene un cabezal de lectura-escritura que «vuela» sobre un colchón de aire a solo nanómetros sobre el disco giratorio!',
       'Hay dos tipos principales: EMS (suspensión electromagnética) usa atracción — los electroimanes son jalados HACIA ARRIBA hacia un riel ferromagnético arriba. EDS (suspensión electrodinámica) usa repulsión — los imanes en movimiento crean corrientes de Foucault en una vía conductora que empujan el vehículo HACIA ARRIBA. Ambos funcionan, pero EDS requiere alta velocidad para generar suficiente sustentación.',
@@ -235,8 +235,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-antgrav', title: 'El Futuro de la Antigravedad', color: '#FF5252',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_futuro.svg',
-    image: '/assets/bttf/infographic_aeropatines/hero_futuro.svg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_futuro.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_futuro.png',
     content: [
       'Lo que SABEMOS que funciona hoy: levitación magnética (trenes maglev), levitación cuántica con superconductores (demostraciones de laboratorio), suspensión electromagnética (rodamientos industriales), levitación acústica (objetos pequeños sobre ondas sonoras) y flotación por Ley de Lenz (tabla Hendo sobre superficies de cobre). Todo es REAL, probado y usado.',
       'Lo que NO sabemos aún: si la verdadera antigravedad (cancelar la fuerza gravitacional misma) es posible. El gravitón — la partícula teórica que transporta la fuerza gravitacional — nunca ha sido detectado. Si pudiéramos manipular gravitones de la misma forma que manipulamos fotones (luz), podríamos teóricamente crear campos antigravitacionales. Pero esto está muy lejos de la ciencia actual.',
@@ -394,24 +394,43 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
   return (
     <motion.button
       onClick={onClick}
-      whileHover={{ scale: 1.12 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.1, rotate: [0, -2, 2, 0] }}
+      whileTap={{ scale: 0.92 }}
       style={{
-        position: 'relative', width: 72, height: 72, borderRadius: '50%', border: `3px solid ${node.color}`,
-        background: `radial-gradient(circle, ${node.color}22, transparent)`,
-        cursor: 'pointer', padding: 0, outline: 'none',
-        boxShadow: isActive ? `0 0 18px ${node.color}88` : `0 0 6px ${node.color}33`,
-        transition: 'box-shadow .3s',
+        position: 'relative', width: 78, height: 78, borderRadius: 8,
+        border: `2px solid ${node.color}`,
+        borderTop: `2px solid ${node.color}cc`,
+        borderBottom: `3px solid ${node.color}66`,
+        background: `linear-gradient(135deg, #1a1a2e 0%, #0f0f23 50%, #1a1a2e 100%)`,
+        cursor: 'pointer', padding: 3, outline: 'none',
+        boxShadow: isActive
+          ? `0 0 20px ${node.color}aa, 0 0 40px ${node.color}44, inset 0 0 15px ${node.color}33, 0 4px 8px rgba(0,0,0,.6)`
+          : `0 0 8px ${node.color}44, 0 2px 6px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.08)`,
+        transition: 'box-shadow .3s, border-color .3s',
+        overflow: 'hidden',
       }}
     >
+      {/* Retro CRT scanline overlay */}
+      <div style={{
+        position: 'absolute', inset: 0, borderRadius: 6, zIndex: 2, pointerEvents: 'none',
+        background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.15) 2px, rgba(0,0,0,.15) 4px)',
+        mixBlendMode: 'overlay',
+      }} />
+      {/* Chrome corner accents */}
+      <div style={{ position: 'absolute', top: 0, left: 0, width: 8, height: 8, borderTop: `2px solid ${node.color}`, borderLeft: `2px solid ${node.color}`, borderRadius: '6px 0 0 0', zIndex: 3 }} />
+      <div style={{ position: 'absolute', top: 0, right: 0, width: 8, height: 8, borderTop: `2px solid ${node.color}`, borderRight: `2px solid ${node.color}`, borderRadius: '0 6px 0 0', zIndex: 3 }} />
+      <div style={{ position: 'absolute', bottom: 0, left: 0, width: 8, height: 8, borderBottom: `2px solid ${node.color}`, borderLeft: `2px solid ${node.color}`, borderRadius: '0 0 0 6px', zIndex: 3 }} />
+      <div style={{ position: 'absolute', bottom: 0, right: 0, width: 8, height: 8, borderBottom: `2px solid ${node.color}`, borderRight: `2px solid ${node.color}`, borderRadius: '0 0 6px 0', zIndex: 3 }} />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={node.btnImage} alt={node.title}
-        style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
+        style={{ width: '100%', height: '100%', borderRadius: 5, objectFit: 'cover', filter: isActive ? 'saturate(1.3) brightness(1.1)' : 'saturate(0.85) brightness(0.9)' }} />
       {isExplored && (
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
           style={{
-            position: 'absolute', top: -4, right: -4, width: 20, height: 20, borderRadius: '50%',
-            background: '#00E676', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            position: 'absolute', top: -6, right: -6, width: 22, height: 22, borderRadius: 4,
+            background: 'linear-gradient(135deg, #00E676, #00C853)', border: '2px solid #0a0a1a',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 4,
+            boxShadow: '0 0 8px #00E67688',
           }}>
           <svg viewBox="0 0 16 16" width={12} height={12}>
             <path d="M3 8l3 3 7-7" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -419,11 +438,12 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
         </motion.div>
       )}
       <div style={{
-        position: 'absolute', bottom: -22, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap',
-        fontSize: 9, fontWeight: 700, color: node.color, letterSpacing: 0.5, textTransform: 'uppercase',
-        textShadow: '0 1px 4px rgba(0,0,0,.8)',
+        position: 'absolute', bottom: -24, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap',
+        fontSize: 8, fontWeight: 800, color: node.color, letterSpacing: 1.5, textTransform: 'uppercase',
+        textShadow: `0 0 8px ${node.color}88, 0 1px 3px rgba(0,0,0,.9)`,
+        fontFamily: "'Exo 2', 'Courier New', monospace",
       }}>
-        {node.title.length > 16 ? node.title.slice(0, 15) + '…' : node.title}
+        {node.title.length > 14 ? node.title.slice(0, 13) + '…' : node.title}
       </div>
     </motion.button>
   );
@@ -483,11 +503,33 @@ function ContentPanel({ node, onClose }) {
         </div>
       </div>
 
-      {/* ─── MAGAZINE BODY ─── */}
-      <div style={{ padding: '20px 28px 14px', display: 'flex', flexDirection: 'column', gap: 0 }}>
-        {bodyParas.map((p, i) => (
-          <ExpandableParagraph key={i} text={p} index={i} nodeColor={node.color} />
-        ))}
+      {/* ─── MAGAZINE BODY — M9-standard 2-column grid ─── */}
+      <div style={{ padding: '20px 28px 14px' }}>
+        <div style={{
+          display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem 2rem',
+        }}>
+          {bodyParas.map((p, i) => {
+            const isWide = i === bodyParas.length - 1 && (bodyParas.length % 2 !== 0);
+            return (
+              <div key={i} style={{
+                gridColumn: isWide ? '1 / -1' : 'auto',
+                background: 'rgba(255,255,255,0.02)', borderRadius: 12,
+                padding: '1.2rem', borderLeft: `3px solid ${node.color}30`,
+                position: 'relative',
+              }}>
+                <div style={{
+                  position: 'absolute', top: -8, left: 12,
+                  background: node.color, color: '#0a0a1a',
+                  fontSize: '0.65rem', fontWeight: 800,
+                  padding: '2px 8px', borderRadius: 8, letterSpacing: 1,
+                }}>
+                  {i === 0 ? '◆' : i === 1 ? '◇' : '★'}
+                </div>
+                <p style={{ margin: 0, fontSize: 14, lineHeight: 1.75, color: '#ccc' }}>{p}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {/* ─── FACT ─── */}
@@ -554,8 +596,8 @@ export default function InteractiveInfographic_BttfM5() {
       {/* bg image */}
       <div style={{
         position: 'absolute', inset: 0,
-        backgroundImage: 'url(/assets/bttf/infographic_aeropatines/bg_aeropatines.svg)',
-        backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.1, pointerEvents: 'none',
+        backgroundImage: 'url(/assets/bttf/infographic_aeropatines/bg_aeropatines.png)',
+        backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, pointerEvents: 'none',
       }} />
 
       {/* canvas particles */}

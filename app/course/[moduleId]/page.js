@@ -22,6 +22,7 @@ import InteractiveInfographic_EgyptM14 from '@/components/infographics/Interacti
 import InteractiveInfographic_EgyptM12 from '@/components/infographics/InteractiveInfographic_EgyptM12';
 import InteractiveInfographic_BttfM3 from '@/components/infographics/InteractiveInfographic_BttfM3';
 import InteractiveInfographic_BttfM5 from '@/components/infographics/InteractiveInfographic_BttfM5';
+import InteractiveInfographic_BttfM2 from '@/components/infographics/InteractiveInfographic_BttfM2';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -134,7 +135,8 @@ export default function CourseModule() {
           params.moduleId.startsWith('astro_train_') ||
           params.moduleId.startsWith('einstein_') ||
           params.moduleId.startsWith('griegos_') ||
-          params.moduleId.startsWith('arrival_')
+          params.moduleId.startsWith('arrival_') ||
+          params.moduleId.startsWith('bttf_')
         );
 
         if (isForceStatic && staticData) {
@@ -398,8 +400,11 @@ export default function CourseModule() {
           {moduleData.id === 'bttf_m5' && (
             <InteractiveInfographic_BttfM5 />
           )}
+          {moduleData.id === 'bttf_m2' && (
+            <InteractiveInfographic_BttfM2 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
