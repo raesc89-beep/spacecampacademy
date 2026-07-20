@@ -32,6 +32,9 @@ yarn-error.log*
 
 # env files
 .env*
+.api_spend_log.json
+generate_bttf_images.*
+_list_models.js
 
 # vercel
 .vercel

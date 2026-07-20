@@ -66,3 +66,20 @@ Antes de finalizar cualquier archivo de curso:
 3. Verificar que todos los hechos mencionados son reales.
 4. Verificar que las rutas de imágenes coinciden con los archivos existentes.
 5. Verificar que los IDs de módulo no colisionan con cursos existentes.
+
+## 8. Presupuesto de Generación de Imágenes (API)
+
+> **REGLA DE PRESUPUESTO**: Cuando se use la API de Google AI Studio (Gemini / Imagen) para generar imágenes — ya sea porque la quota interna del IDE se agotó o por decisión de eficiencia — se debe respetar un **límite diario de $400 pesos mexicanos** (~$20 USD).
+
+### Reglas de presupuesto:
+- **Tope diario**: $400 MXN por día calendario en generación de imágenes vía API.
+- **Tracking obligatorio**: Todo script de generación debe llevar un registro del gasto acumulado del día en un archivo `.api_spend_log.json` en la raíz del proyecto.
+- **Cálculo de costos**: Usar los precios oficiales de la API de Google AI Studio al momento de ejecución. Referencia aproximada:
+  - Imagen 4.0 Standard: ~$0.04 USD/imagen
+  - Imagen 4.0 Ultra: ~$0.08 USD/imagen
+  - Gemini Flash Image: ~$0.04 USD/imagen
+- **Parada automática**: Si el gasto acumulado del día alcanza el 90% del tope ($360 MXN), el script debe detenerse e informar al usuario.
+- **Tipo de cambio**: Usar 20 MXN = 1 USD como referencia conservadora. Si el tipo de cambio real es diferente, ajustar a favor de la protección del presupuesto.
+- **Sin excepciones**: Esta regla aplica incluso si el agente está ejecutando tareas automatizadas o en segundo plano.
+- **Notificación**: Siempre informar al usuario el costo estimado antes de iniciar una sesión de generación masiva.
+
