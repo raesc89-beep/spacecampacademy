@@ -1,3 +1,45 @@
+/**
+ * ═══════════════════════════════════════════════════════════════════
+ * ⚠️  ASTRO-D API ROUTE — DESACTIVADO (MODO OFFLINE)
+ * ═══════════════════════════════════════════════════════════════════
+ * 
+ * RAZÓN: Este endpoint consumía ~$16 USD/día del presupuesto de Google Cloud
+ * porque cada mensaje de chat llamaba a gemini-2.5-flash en producción.
+ * El presupuesto de $20 USD estaba destinado EXCLUSIVAMENTE a generación
+ * de imágenes, no a chat en tiempo real.
+ * 
+ * DESACTIVADO: 2026-07-20 por auditoría de presupuesto
+ * 
+ * PARA REACTIVAR: 
+ *   1. Descomentar el código original al final de este archivo
+ *   2. Configurar rate limiting (max 10 msgs/user/hora)
+ *   3. Configurar autenticación (solo usuarios logueados)
+ *   4. Considerar usar gemini-2.0-flash-lite (10x más barato)
+ *   5. Asegurar presupuesto separado para chat vs imágenes
+ * ═══════════════════════════════════════════════════════════════════
+ */
+
+export async function POST(req) {
+  // Modo offline — NO hace llamadas API ($0 costo)
+  return new Response(JSON.stringify({
+    id: 'offline-' + Date.now(),
+    choices: [{
+      message: {
+        role: 'assistant',
+        content: '🛸 ¡Hola, Comandante! Astro-D está en modo de mantenimiento mientras mejoramos nuestros sistemas de comunicación interestelar. Vuelve pronto para continuar tu entrenamiento espacial. ¡Las estrellas nos esperan! ⭐'
+      }
+    }]
+  }), { 
+    status: 200, 
+    headers: { 'Content-Type': 'application/json' } 
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+ * CÓDIGO ORIGINAL (preservado para reactivación futura)
+ * Descomentar cuando se configure rate limiting y presupuesto separado
+ * ═══════════════════════════════════════════════════════════════════
+
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
 import { streamText, tool } from 'ai';
 import { z } from 'zod';
@@ -114,3 +156,6 @@ export async function POST(req) {
     return new Response(JSON.stringify({ error: "Fallo en los sistemas de comunicación de Astro-D", details: error.message || error.toString() }), { status: 500 });
   }
 }
+
+═══════════════════════════════════════════════════════════════════ */
+
