@@ -290,4 +290,37 @@ expandables: [
 - [ ] Cursos de películas: cada nodo tiene expandable "En la Película"
 - [ ] Expandables usan componente `ExpandableSection` con animaciones
 - [ ] Información en expandables es verificable y real
+- [ ] Si usa bannerImage: imagen panorámica presente y temáticamente correlacionada
+
+### 12.7 Banner Panorámico entre Expandables (OPCIONAL):
+Cada nodo del ContentPanel puede incluir un campo `bannerImage` (string, path a imagen PNG).
+Si está presente, se renderiza como una imagen horizontal tipo banner panorámico a **ancho completo**
+entre los dos bloques de expandables.
+
+**Especificaciones:**
+- `width: '100%'`, `borderRadius: '12px'`, `objectFit: 'cover'`
+- `maxHeight: '180px'` para no dominar la sección
+- Overlay gradient sutil en bordes para integración visual
+- Caption temático opcional bajo la imagen en `fontSize: '0.7rem'`, color atenuado
+
+**Requisitos:**
+- La imagen DEBE estar correlacionada temáticamente con el nodo (§2)
+- Estilo artístico "Nilo de Nut" (§10.2)
+- Formato PNG, resolución mínima para cubrir ancho completo
+
+**Ejemplo:**
+```jsx
+// En el data del nodo:
+bannerImage: '/assets/starwars/infographic_mundos/banner_tatooine.png',
+bannerCaption: 'El doble atardecer de Tatooine — inspirado por Kepler-16b'
+
+// En ContentPanel, entre expandables:
+{node.bannerImage && (
+  <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+    <img src={node.bannerImage} alt={node.bannerCaption || ''} 
+         style={{ width: '100%', maxHeight: '180px', objectFit: 'cover' }} />
+    {node.bannerCaption && <p style={{ fontSize: '0.7rem', opacity: 0.5 }}>{node.bannerCaption}</p>}
+  </div>
+)}
+```
 
