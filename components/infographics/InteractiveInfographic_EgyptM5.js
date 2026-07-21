@@ -157,6 +157,13 @@ const DECO_MAP = {
 };
 
 // ─── Content Data ────────────────────────────────────────────────────────────
+const BIBLIOGRAPHY = [
+  'Lehner, M. (1997). The Complete Pyramids, Thames & Hudson',
+  'Bauval, R. & Gilbert, A. (1994). The Orion Mystery, Crown',
+  'Morishima, K. et al. (2017). Discovery of a big void in Khufu\'s Pyramid by muon tomography, Nature, 552',
+  'Dash, G. (2018). New angles on the Great Pyramid, AERA',
+];
+
 const INFOGRAPHIC_NODES = [
   {
     id: 'conductos',
@@ -691,6 +698,24 @@ export default function InteractiveInfographic_EgyptM5() {
           </motion.div>
         )}
       </AnimatePresence>
+          {/* ─── Bibliografía ─── */}
+      <div style={{
+        marginTop: '2rem', padding: '1.5rem 2rem',
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        background: 'rgba(0,0,0,0.3)',
+        borderRadius: '0 0 16px 16px',
+      }}>
+        <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
+          textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          📚 Fuentes y Referencias
+        </h4>
+        <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
+          listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
+          {BIBLIOGRAPHY.map((ref, i) => (
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

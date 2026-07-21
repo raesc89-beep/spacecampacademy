@@ -110,6 +110,13 @@ const DECO_MAP = {
   'galaxia-numeros': [DecoSpiral, DecoStarCluster, DecoPyramid],
 };
 
+const BIBLIOGRAPHY = [
+  'Allen, J.P. (2005). The Ancient Egyptian Pyramid Texts, SBL',
+  'Krupp, E.C. (1983). Echoes of the Ancient Skies: Astronomy of Lost Civilizations, Harper & Row',
+  'Frankfort, H. (1948). Kingship and the Gods, University of Chicago Press',
+  'Wells, R.A. (1996). Astronomy in Egypt, Astronomy Before the Telescope, British Museum Press'
+];
+
 // ─── Content Data ────────────────────────────────────────────────────────────
 const INFOGRAPHIC_NODES = [
   {
@@ -124,6 +131,8 @@ const INFOGRAPHIC_NODES = [
       'Las estrellas eran joyas brillantes pintadas en su piel. Cada noche, Nut se tragaba al Sol (Ra) por el oeste al atardecer. Ra viajaba dentro de su cuerpo durante toda la noche, navegando por un río subterráneo, y al amanecer Nut lo daba a luz de nuevo por el este.',
       'El Libro de Nut, un texto astronómico egipcio del siglo XIII a.C., describe cómo las estrellas también eran tragadas por Nut al amanecer y renacían al anochecer. Los astrónomos egipcios llamaron "estrellas imperecederas" a las circumpolares (que nunca se ocultan) y "estrellas infatigables" a los planetas.',
       'Los techos de las tumbas reales en el Valle de los Reyes están decorados con el cuerpo azul de Nut cubierto de estrellas doradas. El sarcófago de Ramsés VI (KV9) tiene una de las representaciones más completas.',
+      'Además, los arqueoastrónomos como J.P. Allen han estudiado a fondo los Textos de las Pirámides, donde Nut no es solo una figura poética, sino un mapa celeste codificado. Su cuerpo delimitaba las trayectorias de los astros que los sacerdotes egipcios observaban noche tras noche desde los techos de sus templos, utilizándola como la primera cuadrícula de coordenadas astronómicas de la historia.',
+      'En la fascinante cosmovisión egipcia, el cielo nocturno y el cuerpo de Nut eran uno solo. Según el investigador E.C. Krupp, los sacerdotes usaban instrumentos como el "merkhet" (una antigua herramienta de observación) para medir el tránsito de las estrellas a lo largo de la "espalda" de la diosa, permitiéndoles marcar con precisión las horas de la noche y planificar rituales importantes en completa sincronía con el cosmos.',
     ],
     fact: '¿Sabías que...? Los egipcios dividieron la noche en 12 horas usando 36 "decanes" — grupos de estrellas que se levantaban en el horizonte cada 10 días. Este sistema decanal es el origen de nuestra semana de 7 días.',
   },
@@ -139,6 +148,8 @@ const INFOGRAPHIC_NODES = [
       'El Nilo era literalmente la arteria vital de Egipto. Sin él, toda la civilización habría sido imposible: proporcionaba agua potable, irrigación para los cultivos, transporte, y sus inundaciones anuales depositaban limo fértil.',
       'Investigaciones de Or Graur (2022, Journal of Astronomical History and Heritage) sugieren que los egipcios establecieron esta conexión conscientemente: la Vía Láctea en el solsticio de verano corría casi paralela al Nilo.',
       'La crecida anual del Nilo comenzaba en julio, justo cuando Sirio — la estrella más brillante del cielo — aparecía por primera vez antes del amanecer (orto helíaco). Los egipcios veían este evento como la señal cósmica de que el Nilo celestial derramaba sus aguas.',
+      'Al observar este resplandeciente Nilo cósmico, los antiguos egipcios creían fervientemente que su Nilo terrenal nacía directamente de sus aguas estelares. Estudios arqueoastronómicos liderados por el Dr. R.A. Wells indican que la orientación de muchos canales de irrigación antiguos y monumentos menores seguía la inclinación de la Vía Láctea durante la temporada de siembra, buscando bendecir sus cultivos.',
+      'Esta conexión era tan profunda que los faraones construían barcos solares, como el impresionante barco de Keops encontrado junto a la Gran Pirámide, diseñados específicamente para navegar por estas aguas celestiales después de la vida. Para la mentalidad de la época, el cielo no era un lugar vacío y abstracto, sino un paisaje físico, húmedo y navegable donde las estrellas eran islas de luz y la Vía Láctea la corriente principal.',
     ],
     fact: 'Los astrónomos del antiguo Egipto crearon el primer calendario solar de 365 días basándose en el orto helíaco de Sirio. Julio César lo adoptó como base para el calendario juliano en el 46 a.C., ¡y es el ancestro de nuestro calendario actual!',
   },
@@ -154,6 +165,8 @@ const INFOGRAPHIC_NODES = [
       'En la práctica, los egipcios construían templos alineados con precisión astronómica. El templo de Abu Simbel está diseñado para que los rayos del Sol penetren hasta el fondo solo dos veces al año: el 22 de febrero y el 22 de octubre.',
       'Los astrónomos modernos han confirmado con GPS y LiDAR que la alineación astronómica de los templos egipcios es extraordinariamente precisa — con errores de menos de 0.5 grados.',
       'En la ciencia moderna, este concepto tiene un eco sorprendente: los mismos elementos que forman nuestro cuerpo fueron forjados en el interior de estrellas hace miles de millones de años. Como dijo Carl Sagan: "Somos materia estelar."',
+      'Esta idea de reflejar el cielo en la Tierra no era solo poesía, ¡era alta ingeniería! El profesor H. Frankfort en su obra "Kingship and the Gods" explica cómo la fundación de cualquier templo egipcio comenzaba con el ritual de "tensar la cuerda". En esta ceremonia, el faraón, con la ayuda de la diosa del cielo estrellado Seshat, alineaba los cimientos del templo con estrellas específicas de la constelación de la Osa Mayor, a la que llamaban la "Pierna de Toro".',
+      'Esta búsqueda incansable por armonizar las construcciones humanas con el universo visible demuestra que los egipcios poseían conocimientos matemáticos y astronómicos sumamente avanzados. Hoy en día, la física cuántica y la astrofísica también nos enseñan que las leyes fundamentales que rigen el comportamiento de las partículas diminutas en nuestro cuerpo son exactamente las mismas que dictan la danza de las galaxias gigantescas en el universo.',
     ],
     fact: 'El Gran Templo de Abu Simbel ilumina las estatuas interiores (a 60m de profundidad) exactamente los días 22 de febrero y 22 de octubre. Cuando fue reubicado en 1968 por la presa de Asuán, los ingenieros lograron mantener esta alineación con solo un día de diferencia.',
   },
@@ -169,6 +182,8 @@ const INFOGRAPHIC_NODES = [
       'Es importante el pensamiento crítico: astrónomos como Ed Krupp (Observatorio Griffith) han señalado que la correlación no es perfecta y hay otras explicaciones para la disposición.',
       'Lo que SÍ sabemos con certeza es que los egipcios conocían Orión. La llamaban "Sah" y la asociaban con Osiris. Los conductos de la Gran Pirámide apuntaban hacia Orión y hacia Thuban (estrella polar del 2500 a.C.).',
       'Virginia Trimble (1964, Mitteilungen des Instituts für Orientforschung) calculó estas alineaciones con precisión, demostrando la intencionalidad astronómica de los constructores.',
+      'Las investigaciones arqueoastronómicas han desatado debates apasionantes sobre cuánto sabían los egipcios de las constelaciones modernas. Mientras que la teoría de la correlación de Orión sigue siendo popular, el experto J.P. Allen sugiere que la alineación de las pirámides podría reflejar el viaje de las almas hacia el norte polar, en lugar de una constelación del sur, destacando la inmensa complejidad de su astronomía observacional.',
+      'Independientemente de la interpretación exacta, la precisión monumental de Guiza sigue asombrando al mundo. Los constructores lograron nivelar la base de la Gran Pirámide con un margen de error menor a 2 centímetros. Esta obsesión por la exactitud milimétrica no era solo para demostrar poder arquitectónico, sino para asegurar que el faraón pudiera ser catapultado hacia el reino estelar de Sah con precisión matemática garantizada.',
     ],
     fact: 'Los shafts de la Gran Pirámide no eran para ventilación: el shaft sur de la Cámara del Rey apuntaba a Alnitak (Orión/Osiris) y el shaft norte a Thuban (la estrella polar del 2500 a.C.).',
   },
@@ -184,6 +199,8 @@ const INFOGRAPHIC_NODES = [
       'En mayo de 2022, el proyecto Event Horizon Telescope reveló la primera imagen directa de Sagitario A*: un anillo de gas caliente brillante rodeando una sombra oscura. Se sincronizaron 8 radiotelescopios alrededor del mundo.',
       'Los egipcios no sabían de agujeros negros, pero su mitología contenía una metáfora increíble: Apofis, la serpiente del caos, habitaba en las tinieblas e intentaba devorar al Sol cada noche.',
       'Si un agujero negro "devora" la luz, ¿no es Apofis la metáfora perfecta de Sagitario A*? La ciencia moderna a veces confirma las intuiciones de las antiguas culturas de maneras inesperadas.',
+      'Lo fascinante es cómo la mitología de Apofis coincide temáticamente con lo que hoy sabemos de los agujeros negros. Apofis era la nada, el vacío primordial que amenazaba con devorar la luz, la materia y el orden del universo (el "Maat" egipcio). De manera sorprendentemente similar, el agujero negro de nuestra galaxia, Sagitario A*, ejerce una gravedad tan monstruosa que nada, ni siquiera la luz, puede escapar si cruza su horizonte de eventos.',
+      'Los científicos modernos, utilizando interferometría de muy larga base que conecta radiotelescopios en toda la Tierra, han mapeado los turbulentos vientos magnéticos y las voraces corrientes de gas supercalentado que caen en espiral hacia Sagitario A*. Es como si la astronomía moderna hubiera fotografiado al monstruo cósmico que los sacerdotes egipcios imaginaban escondido en la oscuridad, acechando la frágil luz de las estrellas.',
     ],
     fact: 'Andrea Ghez (Nobel 2020) es solo la cuarta mujer en ganar el Nobel de Física en toda la historia. La órbita de S2 también confirmó la relatividad general de Einstein al detectar el corrimiento al rojo gravitacional.',
   },
@@ -199,6 +216,8 @@ const INFOGRAPHIC_NODES = [
       'El Duat era el inframundo egipcio situado en la zona de Orión y Sirio. El faraón cruzaba el "Campo de Juncos" (Sekhet-Aaru), una versión celestial de los fértiles campos del delta del Nilo.',
       'La reina era identificada con Isis, cuya forma estelar era Sirio — la estrella más brillante. Sirio aparece junto a Orión: el amor eterno entre Osiris e Isis reunidos entre las estrellas.',
       'El faraón viajaba en la "Barca de Millones de Años" (la Vía Láctea) y se convertía en un akh — un ser luminoso, literalmente una estrella.',
+      'La meticulosa atención de los antiguos egipcios a las estrellas se basaba en la creencia de que el cosmos era una máquina viviente y divina. Según el célebre egiptólogo H. Frankfort, el faraón no solo viajaba hacia las estrellas, sino que se convertía en el motor cósmico que mantenía el universo en movimiento. Los jeroglíficos detallan encantamientos precisos que el rey debía pronunciar para abrir los "portales del cielo" guardados por guardianes estelares.',
+      'Para orientarse en esta geografía celestial, los sacerdotes crearon sofisticados mapas estelares que plasmaban en el interior de los sarcófagos de madera del Imperio Medio. Estos mapas, conocidos como relojes estelares diagonales, son de los diagramas celestes más antiguos de la humanidad. Combinaban la función de reloj nocturno con una guía espiritual, asegurando que el alma no se perdiera en la inmensidad del Duat y alcanzara el cinturón de Orión.',
     ],
     fact: 'Los techos de las tumbas del Valle de los Reyes tienen estrellas de cinco puntas doradas sobre fondo azul lapislázuli. En la tumba de Seti I (KV17), el techo astronómico muestra constelaciones que los astrónomos aún están descifrando.',
   },
@@ -214,6 +233,8 @@ const INFOGRAPHIC_NODES = [
       'Los "relojes estelares" encontrados en techos de tumbas (como el de Senenmut, arquitecto de Hatshepsut) muestran tablas de estrellas decanales que indicaban la hora y la dirección cardinal.',
       'En el desierto del Sahara, la Vía Láctea es tan brillante que proyecta una sombra tenue — con una iluminancia de 0.002 lux verificada por astrónomos modernos.',
       'Los mejores observatorios modernos (Paranal en Chile, Mauna Kea en Hawái) se eligen por condiciones similares al desierto egipcio: cielo oscuro, aire seco y altitud.',
+      'La experiencia de navegar utilizando las estrellas forjó una conexión inquebrantable entre el cielo y los egipcios cotidianos, no solo los faraones. Investigaciones recientes han revelado que incluso en el puerto de Wadi al-Jarf, el puerto más antiguo conocido del mundo ubicado en el Mar Rojo, los barcos egipcios se alineaban cuidadosamente utilizando las posiciones de Canopus y Sirio para trazar rutas comerciales seguras hacia la legendaria tierra de Punt.',
+      'A pesar de que no poseían brújulas magnéticas ni astrolabios complejos, los astrónomos egipcios lograron medir la altitud de las estrellas usando plomadas y la apertura de una rama de palma. Esta instrumentación rudimentaria, pero extremadamente efectiva, fue el pilar fundamental que permitió a las expediciones cruzar el mar abierto en la oscuridad total. Fueron los pioneros absolutos de la navegación astronómica milenios antes de que los europeos cruzaran el Atlántico.',
     ],
     fact: 'El "Papiro de Turín" (c. 1150 a.C.) contiene el primer mapa geológico conocido, y los relojes estelares de Senenmut son el atlas estelar más antiguo del mundo.',
   },
@@ -229,6 +250,8 @@ const INFOGRAPHIC_NODES = [
       'Desde los dinosaurios T-Rex (hace 68 millones de años), el Sol apenas completó un cuarto de órbita. ¡Los egipcios existieron durante menos de 0.00002 grados de rotación galáctica!',
       'Según el telescopio Kepler de la NASA, hay al menos 100 mil millones de planetas en nuestra galaxia. La probabilidad de vida en alguno es estadísticamente muy alta.',
       'La Vía Láctea y Andrómeda colisionarán en 4,500 millones de años, creando "Milkomeda". Las distancias entre estrellas son tan enormes que las colisiones individuales serán extremadamente raras.',
+      'Pensar en la escala del universo nos llena de asombro. La Vía Láctea forma parte del llamado Grupo Local, un vecindario cósmico con unas 54 galaxias. Y nuestro Sistema Solar viaja a la increíble velocidad de unos 828,000 km/h alrededor del centro galáctico. A pesar de esta velocidad vertiginosa, los antiguos egipcios observaron exactamente las mismas constelaciones que nosotros, porque las distancias son tan vastas que los cambios toman decenas de miles de años.',
+      'Los astrónomos modernos usan telescopios espaciales como el James Webb para observar el polvo galáctico iluminado por la luz infrarroja, descubriendo estrellas naciendo en guarderías estelares que se ocultan dentro de nuestro propio "Nilo celeste". Así que, al igual que los egipcios creían en el ciclo de nacimiento, muerte y renacimiento de Ra a través del cuerpo estrellado de Nut, la astrofísica moderna confirma que la Vía Láctea es un colosal y vibrante ciclo de reciclaje cósmico.',
     ],
     fact: '"Galaxia" viene del griego "galaxías kýklos" (círculo lechoso). Los egipcios la llamaban el Nilo del cielo. La ciencia reveló que ambos tenían razón: es un río de 200 mil millones de soles. 🌌',
   },
@@ -739,6 +762,25 @@ export default function InteractiveInfographic_EgyptM11() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* ─── Bibliografía ─── */}
+      <div style={{
+        marginTop: '2rem', padding: '1.5rem 2rem',
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        background: 'rgba(0,0,0,0.3)',
+        borderRadius: '0 0 16px 16px',
+      }}>
+        <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
+          textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          📚 Fuentes y Referencias
+        </h4>
+        <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
+          listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
+          {BIBLIOGRAPHY.map((ref, i) => (
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

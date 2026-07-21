@@ -141,6 +141,13 @@ const DECO_MAP = {
 /* ═══════════════════════════════
    INFOGRAPHIC_NODES — 8 nodes
    ═══════════════════════════════ */
+const BIBLIOGRAPHY = [
+  'Bachelet, E. (1912). Levitating Transmitting Apparatus, US Patent 1,020,942',
+  'Earnshaw, S. (1842). On the nature of the molecular forces, Trans. Cambridge Phil. Soc., 7',
+  'Braunbeck, W. (1939). Freischwebende Korper im elektrischen und magnetischen Feld, Zeitschrift fur Physik, 112',
+  'Simon, M.D. et al. (1997). Spin stabilized magnetic levitation, American Journal of Physics, 65',
+];
+
 const INFOGRAPHIC_NODES = [
   {
     id: 'pelicula', title: 'El Aeropatín en la Película', color: '#E040FB',
@@ -477,19 +484,20 @@ function ContentPanel({ node, onClose }) {
         <X size={16} color="#fff" />
       </button>
 
-      {/* ─── HERO: two-column ─── */}
+      {/* ─── HERO: two-column (estándar Abu Simbel) ─── */}
       <div style={{
-        display: 'grid', gridTemplateColumns: '280px 1fr', gap: 0,
-        borderBottom: `1px solid ${node.color}22`,
+        display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0,
+        minHeight: '280px',
       }}>
         {/* hero image */}
         <div style={{
-          background: `linear-gradient(135deg, ${node.color}18, transparent)`,
-          display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20, minHeight: 220,
+          position: 'relative', overflow: 'hidden', height: '100%',
+          background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))`,
         }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={node.image} alt={node.title}
-            style={{ width: '100%', maxWidth: 220, height: 'auto', borderRadius: 12 }} />
+            style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, minHeight: '280px' }} />
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: `linear-gradient(transparent, ${node.color}15)` }} />
         </div>
         {/* hero text */}
         <div style={{ padding: '28px 28px 20px 12px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -660,6 +668,25 @@ export default function InteractiveInfographic_BttfM5() {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* ─── Bibliografía ─── */}
+        <div style={{
+          marginTop: '2rem', padding: '1.5rem 2rem',
+          borderTop: '1px solid rgba(255,255,255,0.1)',
+          background: 'rgba(0,0,0,0.3)',
+          borderRadius: '0 0 16px 16px',
+        }}>
+          <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
+            textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            📚 Fuentes y Referencias
+          </h4>
+          <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
+            listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
+            {BIBLIOGRAPHY.map((ref, i) => (
+              <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -154,6 +154,13 @@ const DECO_MAP = {
 };
 
 // ─── Content Data ────────────────────────────────────────────────────────────
+const BIBLIOGRAPHY = [
+  'Lull, J. & Belmonte, J.A. (2006). A firmament above Thebes, Journal for the History of Astronomy, 37',
+  'Dorman, P.F. (1988). The Monuments of Senenmut, Kegan Paul',
+  'Neugebauer, O. & Parker, R. (1969). Egyptian Astronomical Texts, Brown University Press',
+  'Clagett, M. (1995). Ancient Egyptian Science, Vol. 2: Calendars, Clocks, and Astronomy',
+];
+
 const INFOGRAPHIC_NODES = [
   {
     id: 'senenmut',
@@ -687,6 +694,24 @@ export default function InteractiveInfographic_EgyptM6() {
           </motion.div>
         )}
       </AnimatePresence>
+          {/* ─── Bibliografía ─── */}
+      <div style={{
+        marginTop: '2rem', padding: '1.5rem 2rem',
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        background: 'rgba(0,0,0,0.3)',
+        borderRadius: '0 0 16px 16px',
+      }}>
+        <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
+          textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          📚 Fuentes y Referencias
+        </h4>
+        <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
+          listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
+          {BIBLIOGRAPHY.map((ref, i) => (
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

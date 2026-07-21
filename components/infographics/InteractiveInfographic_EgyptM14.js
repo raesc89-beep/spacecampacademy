@@ -218,6 +218,13 @@ const DECO_MAP = {
 };
 
 // ─── Infographic Nodes ────────────────────────────────────────────────────────
+const BIBLIOGRAPHY = [
+  'Brozovic, M. et al. (2018). Goldstone and Arecibo radar observations of (99942) Apophis, Icarus, 300',
+  'NASA/JPL (2021). Apophis: Planetary Defense Exercise, NASA Technical Report',
+  'Daly, R.T. et al. (2023). Successful kinetic impact into asteroid Dimorphos, Nature, 616',
+  'Krupp, E.C. (1991). Beyond the Blue Horizon: Myths and Legends of the Sun, Moon, Stars, and Planets, HarperCollins',
+];
+
 const INFOGRAPHIC_NODES = [
   {
     id: 'serpiente',
@@ -777,6 +784,24 @@ export default function InteractiveInfographic_EgyptM14() {
           </motion.div>
         )}
       </AnimatePresence>
+          {/* ─── Bibliografía ─── */}
+      <div style={{
+        marginTop: '2rem', padding: '1.5rem 2rem',
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        background: 'rgba(0,0,0,0.3)',
+        borderRadius: '0 0 16px 16px',
+      }}>
+        <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
+          textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          📚 Fuentes y Referencias
+        </h4>
+        <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
+          listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
+          {BIBLIOGRAPHY.map((ref, i) => (
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

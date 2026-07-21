@@ -127,3 +127,88 @@ CASCADA DE GENERACIÓN:
 - Al cambiar de free a paid, notificar: "⚠️ Cuota gratuita agotada. Cambiando a créditos de paga ($X MXN restante del presupuesto diario)."
 - Al finalizar, reportar desglose: "X imágenes gratuitas + Y imágenes de paga = $Z MXN total."
 
+## 10. Estándar de Imágenes en Infografías Interactivas
+
+> **REGLA DE CONSISTENCIA VISUAL**: Todas las infografías interactivas deben usar el mismo layout de imagen hero Y el mismo estilo artístico. El estándar de layout es el componente `InteractiveInfographic_EgyptM8.js` (Abu Simbel).
+
+### 10.1 Layout obligatorio del Hero:
+```jsx
+// Grid del hero: SIEMPRE 1fr 1fr (50/50)
+gridTemplateColumns: '1fr 1fr'
+minHeight: '280px'
+
+// Contenedor de imagen: SIEMPRE con height explícito
+position: 'relative'
+overflow: 'hidden'
+height: '100%'  // ← OBLIGATORIO para que cover llene la celda del grid
+
+// Imagen hero: SIEMPRE cover completo
+width: '100%'
+height: '100%'
+objectFit: 'cover'
+opacity: 0.9
+minHeight: '280px'
+```
+
+### 10.2 Estilo Artístico Obligatorio ("Nilo de Nut"):
+Todas las imágenes generadas para infografías (btn_*, hero_*, bg_*) DEBEN seguir este estilo:
+- **Tipo**: Ilustración digital estilizada / vector art con detalles — NO fotorrealista, NO flat cartoon.
+- **Paleta**: Tonos profundos de azul índigo + ámbar/dorado cálido. Cielos nocturnos con Vía Láctea, reflejos dorados.
+- **Texturas**: Colores limpios con gradientes sutiles. Agua con reflejos, piedra con vetas, cielos detallados con estrellas.
+- **Personajes**: Proporcionados semi-estilizados (como ilustración de libro infantil premium, NO chibi/cartoon).
+- **Composición**: Escenas narrativas cinematográficas con profundidad de campo, elementos superpuestos en capas.
+- **Ambiente**: Épico, aventurero, educativo. Similar a concept art de películas animadas de aventura.
+- **Prompt suffix obligatorio**: Toda generación de imagen DEBE terminar con: `"Illustrated digital art style, clean vector aesthetic with subtle gradients, deep indigo blue and warm golden amber palette, detailed night sky with stars, stylized semi-realistic proportions, educational adventure illustration for children ages 8-13, cinematic composition with depth. No text, no letters, no words."`
+
+### 10.3 Lo que NUNCA hacer:
+- ❌ NO usar `gridTemplateColumns: '280px 1fr'` — hace la imagen demasiado pequeña.
+- ❌ NO usar `maxWidth: 220` ni `height: 'auto'` en imágenes hero — rompe la consistencia.
+- ❌ NO omitir `height: '100%'` en el div contenedor de la imagen — causa que la imagen no llene la celda.
+- ❌ NO cambiar el ratio 50/50 del grid sin autorización del usuario.
+- ❌ NO generar imágenes fotorrealistas ni flat/cartoon — solo estilo "Nilo de Nut" ilustrado.
+- ❌ NO crear componentes de infografía nuevos con layouts diferentes al estándar.
+
+### 10.4 Verificación (pre-commit checklist):
+- [ ] `gridTemplateColumns` del hero es `'1fr 1fr'`
+- [ ] Imagen usa `objectFit: 'cover'` con `width: '100%'` y `height: '100%'`
+- [ ] Contenedor de imagen tiene `height: '100%'`
+- [ ] Todas las imágenes son PNG (no SVG placeholders)
+- [ ] Estilo artístico coincide con referencia "Nilo de Nut" (ilustración digital estilizada)
+
+## 11. Bibliografía Obligatoria en Infografías Interactivas
+
+> **REGLA DE SUSTENTABILIDAD ACADÉMICA**: Toda infografía interactiva DEBE incluir una sección de bibliografía al pie del componente que liste las fuentes académicas de donde se extrajo la información.
+
+### Estructura obligatoria:
+```jsx
+// 1. Definir BIBLIOGRAPHY como const antes del array de nodos
+const BIBLIOGRAPHY = [
+  'Autor, A. (Año). Título de la obra, Editorial',
+  'Autor, B. et al. (Año). "Título del artículo", Revista, Vol',
+  // 4-8 fuentes por infografía
+];
+
+// 2. Renderizar footer de bibliografía al final del componente
+<div style={{
+  marginTop: '2rem', padding: '1.5rem 2rem',
+  borderTop: '1px solid rgba(255,255,255,0.1)',
+  background: 'rgba(0,0,0,0.3)',
+  borderRadius: '0 0 16px 16px',
+}}>
+  <h4>📚 Fuentes y Referencias</h4>
+  <ul>{BIBLIOGRAPHY.map((ref, i) => <li key={i}>• {ref}</li>)}</ul>
+</div>
+```
+
+### Requisitos de las fuentes:
+- **Mínimo 4, máximo 8** fuentes por infografía.
+- Fuentes deben ser **verificables**: libros publicados, artículos en journals peer-reviewed, reportes de instituciones reconocidas (NASA, UNESCO, CNRS, etc.).
+- ❌ NO usar Wikipedia como fuente directa (se puede usar como punto de partida para encontrar fuentes primarias).
+- ❌ NO inventar títulos de artículos, años de publicación, o nombres de autores.
+- ❌ NO usar blogs, videos de YouTube, o redes sociales como fuentes académicas.
+- Las fuentes deben cubrir los temas principales del módulo (no ser genéricas).
+
+### Verificación:
+- Antes de hacer commit de cualquier infografía, verificar que existe `const BIBLIOGRAPHY` con al menos 4 entradas reales.
+- Verificar que el footer de bibliografía se renderiza al final del componente.
+

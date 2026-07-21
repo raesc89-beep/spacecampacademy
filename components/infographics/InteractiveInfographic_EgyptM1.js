@@ -124,6 +124,13 @@ const DECO_MAP = {
 };
 
 // ─── Content Data ────────────────────────────────────────────────────────────
+const BIBLIOGRAPHY = [
+  'Malville, J.M. et al. (1998). Megaliths and Neolithic astronomy in southern Egypt, Nature, 392',
+  'Wendorf, F. & Schild, R. (2001). Holocene Settlement of the Egyptian Sahara, Springer',
+  'Brophy, T.G. (2002). The Origin Map, Writers Club Press',
+  'Malville, J.M. (2015). Astronomy at Nabta Playa, Handbook of Archaeoastronomy',
+];
+
 const INFOGRAPHIC_NODES = [
   {
     id: 'observatorio',
@@ -761,6 +768,24 @@ export default function InteractiveInfographic_EgyptM1() {
           </motion.div>
         )}
       </AnimatePresence>
+          {/* ─── Bibliografía ─── */}
+      <div style={{
+        marginTop: '2rem', padding: '1.5rem 2rem',
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        background: 'rgba(0,0,0,0.3)',
+        borderRadius: '0 0 16px 16px',
+      }}>
+        <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
+          textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          📚 Fuentes y Referencias
+        </h4>
+        <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
+          listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
+          {BIBLIOGRAPHY.map((ref, i) => (
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

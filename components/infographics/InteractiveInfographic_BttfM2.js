@@ -143,6 +143,13 @@ const DECO_MAP = {
 };
 
 // ─── Content Data ────────────────────────────────────────────────────────────
+const BIBLIOGRAPHY = [
+  'Einstein, A. (1905). Zur Elektrodynamik bewegter Korper, Annalen der Physik, 17',
+  'Hawking, S. (1988). A Brief History of Time, Bantam Books',
+  'Thorne, K. (2014). The Science of Interstellar, W.W. Norton',
+  'Gott, J.R. (2001). Time Travel in Einstein\'s Universe, Houghton Mifflin',
+];
+
 const INFOGRAPHIC_NODES = [
   {
     id: 'relatividad-basico',
@@ -571,6 +578,7 @@ function ContentPanel({ node, onClose }) {
         <div style={{
           position: 'relative',
           overflow: 'hidden',
+          height: '100%',
           background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))`,
         }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -865,6 +873,24 @@ export default function InteractiveInfographic_BttfM2() {
           </motion.div>
         )}
       </AnimatePresence>
+          {/* ─── Bibliografía ─── */}
+      <div style={{
+        marginTop: '2rem', padding: '1.5rem 2rem',
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        background: 'rgba(0,0,0,0.3)',
+        borderRadius: '0 0 16px 16px',
+      }}>
+        <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
+          textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          📚 Fuentes y Referencias
+        </h4>
+        <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
+          listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
+          {BIBLIOGRAPHY.map((ref, i) => (
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
