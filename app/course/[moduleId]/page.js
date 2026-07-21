@@ -279,15 +279,17 @@ export default function CourseModule() {
   const isEinsteinRosen = moduleData.id === 'agujeros_gusano_er';
   const isPluto = moduleData.id === 'pluto';
   const isSun = moduleData.id === 'sun';
+  const isBttf = moduleData.id.startsWith('bttf_');
   
   const planetImageName = isEgypt ? (moduleData.contentEs?.sections?.[0]?.image?.replace('/assets/', '') || 'egypt_placeholder.png') :
+                          (isBttf ? `bttf/${moduleData.id}.png` :
                           (isRobot ? `rovers/ai_${moduleData.id.replace('robots_', '')}.png` :
                           (isPionero ? `pioneros/hub_${moduleData.id.replace('pioneros_', '')}.png` :
                           (isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
                           (isAsteroide ? `asteroides/hub_${moduleData.id.replace('asteroides_', '')}.png` : 
                           (isAnomaly ? `${moduleData.id}_icon.png` : 
                           (isSun ? 'cartoon_sun.png' : 
-                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`)))))));
+                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`))))))));
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
@@ -517,7 +519,7 @@ export default function CourseModule() {
                />
             </div>
             
-            <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Misión {moduleData.titleEs}</h2>
+            <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Misión {moduleData.titleEs || moduleData.title}</h2>
             {(moduleData.badgeIcon || moduleData.badgeImage) && (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.8rem', marginTop: '1rem', position: 'relative' }}>
                 <div style={{
