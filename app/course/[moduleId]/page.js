@@ -24,6 +24,9 @@ import InteractiveInfographic_BttfM3 from '@/components/infographics/Interactive
 import InteractiveInfographic_BttfM5 from '@/components/infographics/InteractiveInfographic_BttfM5';
 import InteractiveInfographic_BttfM2 from '@/components/infographics/InteractiveInfographic_BttfM2';
 import InteractiveInfographic_BttfM6 from '@/components/infographics/InteractiveInfographic_BttfM6';
+import InteractiveInfographic_BttfM1 from '@/components/infographics/InteractiveInfographic_BttfM1';
+import InteractiveInfographic_BttfM4 from '@/components/infographics/InteractiveInfographic_BttfM4';
+import InteractiveInfographic_BttfM7 from '@/components/infographics/InteractiveInfographic_BttfM7';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -407,8 +410,17 @@ export default function CourseModule() {
           {moduleData.id === 'bttf_m6' && (
             <InteractiveInfographic_BttfM6 />
           )}
+          {moduleData.id === 'bttf_m1' && (
+            <InteractiveInfographic_BttfM1 />
+          )}
+          {moduleData.id === 'bttf_m4' && (
+            <InteractiveInfographic_BttfM4 />
+          )}
+          {moduleData.id === 'bttf_m7' && (
+            <InteractiveInfographic_BttfM7 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
