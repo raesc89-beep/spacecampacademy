@@ -212,3 +212,82 @@ const BIBLIOGRAPHY = [
 - Antes de hacer commit de cualquier infografía, verificar que existe `const BIBLIOGRAPHY` con al menos 4 entradas reales.
 - Verificar que el footer de bibliografía se renderiza al final del componente.
 
+## 12. Estructura Obligatoria del ContentPanel en Infografías Interactivas
+
+> **REGLA DE ESTRUCTURA MODELO**: El componente de referencia es `InteractiveInfographic_BttfM2.js` (Viajes en el Tiempo). Toda infografía DEBE replicar esta estructura exacta en su ContentPanel.
+
+### 12.1 Hero Section (Two-Column Layout):
+El hero SIEMPRE sigue el estándar de la Regla 10 (1fr 1fr, cover). El usuario ha validado que la proporción imagen-texto es correcta en este modelo.
+
+### 12.2 Mini-Avatar junto al Título (OBLIGATORIO):
+Al lado del título de cada nodo, DEBE haber una imagen circular pequeña (40x40px) que muestra la `btnImage` del nodo. Este detalle es **inviolable**.
+```jsx
+<h3 style={{
+  display: 'flex', alignItems: 'center', gap: '0.6rem',
+}}>
+  <span style={{
+    display: 'inline-flex', width: '40px', height: '40px',
+    borderRadius: '50%', overflow: 'hidden',
+    border: `2px solid ${node.color}40`,
+    flexShrink: 0,
+  }}>
+    <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+  </span>
+  {node.title}
+</h3>
+```
+
+### 12.3 Secciones Expandibles / Colapsables (OBLIGATORIO):
+Cada nodo DEBE tener al menos 2 botones colapsables en el array `expandables`. Estas secciones mantienen la curiosidad y la interactividad.
+
+**Estructura del dato:**
+```jsx
+expandables: [
+  { label: '¿Sabías que...?', icon: 'clock', text: '...' },
+  { label: 'Dato Científico', icon: 'atom', text: '...' },
+],
+```
+
+**Tipos de expandables disponibles:**
+| Label | Icon | Cuándo usar |
+|---|---|---|
+| `¿Sabías que...?` | `clock` | Dato curioso relacionado al tema |
+| `Dato Científico` | `atom` | Explicación técnica/científica ampliada |
+| `En la Película` | `zap` | **SOLO para cursos basados en películas** |
+
+**Componente ExpandableSection:**
+- Botón con icono circular, label en color del nodo, y chevron de apertura
+- Al expandirse: animación con dirección aleatoria (up/down/left/right)
+- Contenido con border-left de 3px en color del nodo
+- hover effect con fondo semitransparente
+
+### 12.4 Sección "En la Película" (OBLIGATORIO en cursos de películas):
+**APLICA EXCLUSIVAMENTE** a cursos cuya temática está basada en una película (ej: "La Ciencia de Volver al Futuro", "La Ciencia de Star Wars", etc.).
+
+**Requisitos:**
+- CADA nodo del curso DEBE incluir un expandable con `label: 'En la Película'`
+- El contenido DEBE ser información **verificable y real** de la película correlacionada con el tema científico del nodo
+- El icono DEBE ser `'zap'` (⚡)
+- El texto DEBE conectar el concepto científico con la escena/dato real de la película
+
+**Ejemplo correcto:**
+```jsx
+{ label: 'En la Película', icon: 'zap',
+  text: 'Marty no es el único que casi causa una paradoja. En BTTF II, el viejo Biff roba el DeLorean y se da el almanaque deportivo a sí mismo en 1955...' }
+```
+
+### 12.5 Lo que NUNCA hacer:
+- ❌ NO omitir el mini-avatar circular junto al título — es un detalle de diseño inviolable
+- ❌ NO crear nodos sin expandables — mínimo 2 secciones colapsables por nodo
+- ❌ NO omitir "En la Película" en cursos basados en películas
+- ❌ NO inventar datos falsos en expandables — toda información debe ser verificable
+- ❌ NO crear expandables sin animación de apertura/cierre
+- ❌ NO cambiar los iconos asignados a cada tipo de expandable
+
+### 12.6 Verificación (pre-commit checklist):
+- [ ] Cada nodo tiene mini-avatar (btnImage) junto al título
+- [ ] Cada nodo tiene array `expandables` con ≥ 2 entradas
+- [ ] Cursos de películas: cada nodo tiene expandable "En la Película"
+- [ ] Expandables usan componente `ExpandableSection` con animaciones
+- [ ] Información en expandables es verificable y real
+
