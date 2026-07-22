@@ -383,12 +383,12 @@ export default function StarWarsHub() {
         {/* Background Image with seamless faded edges */}
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/assets/starwars/starwars_deathstar_bg.png')",
-          backgroundSize: '40%',
-          backgroundPosition: 'center 30%',
+          backgroundImage: "url('/assets/starwars/starwars_deathstar_bg_new.png')",
+          backgroundSize: '55%',
+          backgroundPosition: 'center 35%',
           backgroundRepeat: 'no-repeat',
-          WebkitMaskImage: 'radial-gradient(ellipse 70% 75% at 50% 35%, black 50%, transparent 90%)',
-          maskImage: 'radial-gradient(ellipse 70% 75% at 50% 35%, black 50%, transparent 90%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 38%, black 40%, transparent 85%)',
+          maskImage: 'radial-gradient(ellipse 80% 80% at 50% 38%, black 40%, transparent 85%)',
           zIndex: 0,
         }} />
         {/* Dark overlay gradient */}
