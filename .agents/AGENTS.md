@@ -301,12 +301,13 @@ entre los dos bloques de expandables.
 - `width: '100%'`, `borderRadius: '12px'`, `objectFit: 'cover'`
 - `maxHeight: '180px'` para no dominar la sección
 - Overlay gradient sutil en bordes para integración visual
-- Caption temático opcional bajo la imagen en `fontSize: '0.7rem'`, color atenuado
+- Caption temático sobre overlay gradient, `fontSize: '0.85rem'`, `fontStyle: 'italic'`, `color: '#FFF'` con `textShadow` para legibilidad
 
 **Requisitos:**
 - La imagen DEBE estar correlacionada temáticamente con el nodo (§2)
 - Estilo artístico "Nilo de Nut" (§10.2)
 - Formato PNG, resolución mínima para cubrir ancho completo
+- Caption posicionado `absolute` sobre la imagen con gradient overlay inferior
 
 **Ejemplo:**
 ```jsx
@@ -318,8 +319,15 @@ bannerCaption: 'El doble atardecer de Tatooine — inspirado por Kepler-16b'
 {node.bannerImage && (
   <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
     <img src={node.bannerImage} alt={node.bannerCaption || ''} 
-         style={{ width: '100%', maxHeight: '180px', objectFit: 'cover' }} />
-    {node.bannerCaption && <p style={{ fontSize: '0.7rem', opacity: 0.5 }}>{node.bannerCaption}</p>}
+         style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+    {node.bannerCaption && (
+      <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                  fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                  textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+        {node.bannerCaption}
+      </p>
+    )}
   </div>
 )}
 ```
