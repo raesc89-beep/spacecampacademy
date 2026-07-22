@@ -332,3 +332,136 @@ bannerCaption: 'El doble atardecer de Tatooine — inspirado por Kepler-16b'
 )}
 ```
 
+## 13. Estándar de Volumen de Contenido en Infografías Interactivas
+
+> **REGLA DE DENSIDAD INFORMATIVA**: Toda infografía interactiva DEBE cumplir con umbrales mínimos de volumen de texto por nodo. Estos umbrales garantizan que cada nodo ofrezca una experiencia educativa completa, eliminando espacios vacíos y manteniendo consistencia visual con el estándar de referencia.
+
+### 13.1 Componente de Referencia (Golden Standard):
+El benchmark se establece a partir de `InteractiveInfographic_BttfM1.js` (La Ciencia del Viaje en el Tiempo), ajustado con un **+5% de margen de calidad** para asegurar que las futuras generaciones superen el estándar mínimo.
+
+### 13.2 Umbrales Mínimos por Nodo (benchmark + 5%):
+
+| Elemento | Mínimo requerido | Descripción |
+|---|---|---|
+| **Párrafos (`content[]`)** | **5 párrafos** | 2 en Hero Section + 3 en Magazine Body |
+| **Chars por párrafo (avg)** | **≥ 400 caracteres** | Promedio de los 5 párrafos del nodo |
+| **Chars por expandable (avg)** | **≥ 300 caracteres** | Promedio de los textos en `expandables[].text` |
+| **Chars del fact** | **≥ 300 caracteres** | Campo `fact` del nodo |
+| **Total por nodo (mínimo)** | **≥ 2,500 caracteres** | Suma de `content[]` + `expandables[].text` + `fact` |
+| **Total por infografía** | **≥ 17,500 caracteres** | Suma de todos los nodos (asumiendo ≥ 7 nodos) |
+
+### 13.3 Distribución del Contenido en el Layout:
+```
+┌───────────────────────────────────────────────┐
+│  HERO SECTION (grid 1fr 1fr, minHeight 280px) │
+│  ├─ Columna Izquierda: content[0] + content[1]│
+│  └─ Columna Derecha: hero image (cover)       │
+├───────────────────────────────────────────────┤
+│  MAGAZINE BODY (grid 1fr 1fr, cards estilo)   │
+│  ├─ Card ◆: content[2]                        │
+│  ├─ Card ◇: content[3]                        │
+│  └─ Card wide (1/-1): content[4]              │
+├───────────────────────────────────────────────┤
+│  EXPANDABLES (grid 1fr 1fr, colapsables)      │
+│  ├─ expandables[0] (≥ 300 chars)              │
+│  └─ expandables[1] (≥ 300 chars)              │
+├───────────────────────────────────────────────┤
+│  BANNER (opcional, §12.7)                     │
+├───────────────────────────────────────────────┤
+│  FACTO FASCINANTE (≥ 300 chars)               │
+└───────────────────────────────────────────────┘
+```
+
+### 13.4 Requisitos de Calidad del Contenido:
+- Cada párrafo DEBE contener al menos **un dato verificable** (fecha, cifra, nombre de científico, nombre de misión, etc.)
+- Cada párrafo DEBE usar al menos **una analogía o metáfora** estilo Feynman para hacer el concepto accesible
+- Los párrafos del body (content[2], [3], [4]) DEBEN profundizar progresivamente: dato general → mecanismo científico → implicación/conexión con la vida real
+- El 5to párrafo (content[4]) DEBE servir como **cierre narrativo** que conecte con el futuro de la ciencia o invite a la reflexión
+- Los expandables DEBEN aportar información **complementaria y NO redundante** con el contenido principal
+
+### 13.5 Lo que NUNCA hacer:
+- ❌ NO crear nodos con menos de 5 párrafos en `content[]`
+- ❌ NO escribir párrafos de menos de 250 caracteres (mínimo absoluto por párrafo individual)
+- ❌ NO dejar el Magazine Body con solo 2 párrafos (siempre 3: 2 en grid + 1 wide)
+- ❌ NO copiar texto del `content[]` en los `expandables` ni en el `fact` — cada campo es contenido único
+- ❌ NO usar `auto-fit` ni `minmax()` en el grid del body — siempre `1fr 1fr` fijo
+- ❌ NO usar `minHeight` mayor a `280px` en el Hero Section — causa espacios vacíos
+
+## 14. Auditoría Integral Pre-Commit (Científica + Extensión)
+
+> **REGLA INELUDIBLE**: Antes de hacer `git commit` de CUALQUIER infografía interactiva (nueva o editada), el agente DEBE ejecutar una auditoría integral de dos fases: verificación científica y verificación de extensión de contenido. NO se puede hacer commit sin pasar ambas fases.
+
+### 14.1 FASE 1 — Auditoría Científica:
+Para CADA nodo de la infografía, verificar:
+
+| Check | Criterio | Acción si falla |
+|---|---|---|
+| **Fechas** | Toda fecha mencionada es real y verificable | Corregir o eliminar |
+| **Nombres propios** | Científicos, misiones, instituciones existen y están bien escritos | Corregir ortografía |
+| **Cifras** | Temperaturas, distancias, masas, velocidades son precisas | Verificar con fuente y corregir |
+| **Atribuciones** | Descubrimientos atribuidos a la persona/equipo correcto | Corregir atribución |
+| **Analogías** | Las analogías son científicamente válidas (no distorsionan el concepto) | Reescribir analogía |
+| **Consistencia interna** | No hay contradicciones entre párrafos del mismo nodo o entre nodos | Unificar datos |
+
+### 14.2 FASE 2 — Auditoría de Extensión de Contenido:
+Para CADA nodo de la infografía, verificar los umbrales de §13.2:
+
+```
+CHECKLIST DE EXTENSIÓN (ejecutar por cada nodo):
+┌─────────────────────────────────────────────────────┐
+│ □ content[] tiene exactamente 5 párrafos            │
+│ □ content[0] ≥ 350 chars                            │
+│ □ content[1] ≥ 350 chars                            │
+│ □ content[2] ≥ 350 chars                            │
+│ □ content[3] ≥ 350 chars                            │
+│ □ content[4] ≥ 350 chars                            │
+│ □ Promedio de los 5 párrafos ≥ 400 chars            │
+│ □ expandables[0].text ≥ 300 chars                   │
+│ □ expandables[1].text ≥ 300 chars                   │
+│ □ fact ≥ 300 chars                                  │
+│ □ Total del nodo ≥ 2,500 chars                      │
+│ □ Grid del body usa '1fr 1fr' (no auto-fit)         │
+│ □ Hero minHeight es '280px' (no mayor)              │
+└─────────────────────────────────────────────────────┘
+
+CHECKLIST GLOBAL (ejecutar una vez por infografía):
+┌─────────────────────────────────────────────────────┐
+│ □ Total de TODOS los nodos ≥ 17,500 chars           │
+│ □ Ningún párrafo individual < 250 chars             │
+│ □ No hay texto duplicado entre content/expandables  │
+│ □ El body tiene 3 párrafos en grid cards (no plano) │
+│ □ BIBLIOGRAPHY existe con ≥ 4 fuentes reales (§11) │
+└─────────────────────────────────────────────────────┘
+```
+
+### 14.3 Formato de Reporte de Auditoría:
+Al completar la auditoría, el agente DEBE generar un reporte breve en la respuesta al usuario con el siguiente formato:
+
+```
+📊 AUDITORÍA INTEGRAL — [Nombre de la Infografía]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔬 FASE 1 — Científica:
+   ✅ Fechas verificadas: X/X
+   ✅ Nombres validados: X/X
+   ✅ Cifras precisas: X/X
+   ✅ Atribuciones correctas: X/X
+   ⚠️ Correcciones aplicadas: [lista si aplica]
+
+📏 FASE 2 — Extensión:
+   ✅ Párrafos por nodo: 5/5 en todos los nodos
+   ✅ Promedio chars/párrafo: XXX (≥ 400 ✓)
+   ✅ Promedio chars/expandable: XXX (≥ 300 ✓)
+   ✅ Total por infografía: XX,XXX chars (≥ 17,500 ✓)
+   ❌ Nodos bajo umbral: [lista si aplica]
+
+RESULTADO: ✅ APROBADA / ❌ RECHAZADA (requiere corrección)
+```
+
+### 14.4 Lo que NUNCA hacer:
+- ❌ NO hacer `git commit` de una infografía sin ejecutar ambas fases de auditoría
+- ❌ NO omitir el reporte de auditoría en la respuesta al usuario
+- ❌ NO marcar como "aprobada" una infografía que tenga algún nodo bajo los umbrales mínimos
+- ❌ NO ignorar errores de la Fase 1 (científica) aunque la Fase 2 (extensión) pase correctamente
+- ❌ NO asumir que el contenido anterior cumple — siempre re-auditar al editar
+
