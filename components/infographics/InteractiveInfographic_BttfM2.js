@@ -461,7 +461,6 @@ const EXPAND_ICONS = {
 
 function ExpandableSection({ item, color }) {
   const [open, setOpen] = useState(false);
-  const [lightboxSrc, setLightboxSrc] = useState(null);
   const dir = useMemo(() => DIRECTIONS[Math.floor(Math.random() * 4)], []);
   const IconComp = EXPAND_ICONS[item.icon] || Sparkles;
   
@@ -533,7 +532,7 @@ function ExpandableSection({ item, color }) {
 }
 
 // ─── Magazine-Style Content Panel ────────────────────────────────────────────
-function ContentPanel({ node, onClose }) {
+function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
   const decoPositions = [
@@ -775,6 +774,7 @@ function ProgressBar({ explored, total }) {
 
 // ─── Main Infographic Component ──────────────────────────────────────────────
 export default function InteractiveInfographic_BttfM2() {
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
   const [explored, setExplored] = useState(new Set());
 
@@ -851,6 +851,7 @@ export default function InteractiveInfographic_BttfM2() {
             key={activeData.id}
             node={activeData}
             onClose={() => setActiveNode(null)}
+            setLightboxSrc={setLightboxSrc}
           />
         )}
       </AnimatePresence>

@@ -584,10 +584,10 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
 
           {node.bannerImage && (
             <div style={{ position: 'relative', width: '100%', height: '160px', borderRadius: '12px', overflow: 'hidden', margin: '1.5rem 0', border: `1px solid ${node.color}33` }}>
-              <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${node.bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} onClick={() => setLightboxSrc(node.bannerImage)}/>
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%)' }} />
+              <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${node.bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center', cursor: 'pointer' }} onClick={() => setLightboxSrc(node.bannerImage)}/>
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%)', pointerEvents: 'none' }} />
               {node.bannerCaption && (
-                <div style={{ position: 'absolute', bottom: '1rem', left: '1rem', right: '1rem', textAlign: 'center', fontSize: '0.9rem', color: '#FFF', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
+                <div style={{ position: 'absolute', bottom: '1rem', left: '1rem', right: '1rem', textAlign: 'center', fontSize: '0.9rem', color: '#FFF', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic', textShadow: '0 2px 4px rgba(0,0,0,0.8)', pointerEvents: 'none' }}>
                   {node.bannerCaption}
                 </div>
               )}

@@ -431,7 +431,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 }
 
 // ─── Magazine-Style Content Panel ────────────────────────────────────────────
-function ContentPanel({ node, onClose }) {
+function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   const decoPositions = [
     { top: '8%', right: '-10px', rotate: 15 },
@@ -474,6 +474,7 @@ function ContentPanel({ node, onClose }) {
           <div style={{
             position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
             background: `linear-gradient(transparent, ${node.color}15)`,
+            pointerEvents: 'none',
           }} />
         </div>
         <div style={{ padding: '2rem 2rem 1.5rem 1.5rem', position: 'relative' }}>
@@ -672,7 +673,7 @@ export default function InteractiveInfographic_EgyptM6() {
 
       <AnimatePresence mode="wait">
         {activeData && (
-          <ContentPanel key={activeData.id} node={activeData} onClose={() => setActiveNode(null)} />
+          <ContentPanel key={activeData.id} node={activeData} onClose={() => setActiveNode(null)} setLightboxSrc={setLightboxSrc} />
         )}
       </AnimatePresence>
 

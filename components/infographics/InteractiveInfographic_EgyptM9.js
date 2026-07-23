@@ -449,7 +449,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 }
 
 // ─── Magazine-Style Content Panel ────────────────────────────────────────────
-function ContentPanel({ node, onClose }) {
+function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
   const decoPositions = [
@@ -759,6 +759,7 @@ export default function InteractiveInfographic_EgyptM9() {
             key={activeData.id}
             node={activeData}
             onClose={() => setActiveNode(null)}
+            setLightboxSrc={setLightboxSrc}
           />
         )}
       </AnimatePresence>

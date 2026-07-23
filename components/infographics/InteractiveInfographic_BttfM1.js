@@ -460,7 +460,6 @@ const EXPAND_ICONS = {
 
 function ExpandableSection({ item, color }) {
   const [open, setOpen] = useState(false);
-  const [lightboxSrc, setLightboxSrc] = useState(null);
   const dir = useMemo(() => DIRECTIONS[Math.floor(Math.random() * 4)], []);
   const IconComp = EXPAND_ICONS[item.icon] || Sparkles;
   
@@ -532,7 +531,7 @@ function ExpandableSection({ item, color }) {
 }
 
 // ─── Magazine-Style Content Panel ────────────────────────────────────────────
-function ContentPanel({ node, onClose }) {
+function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
   const decoPositions = [
@@ -590,6 +589,7 @@ function ContentPanel({ node, onClose }) {
           <div style={{
             position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
             background: `linear-gradient(transparent, ${node.color}15)`,
+            pointerEvents: 'none',
           }} />
         </div>
 
@@ -751,6 +751,7 @@ function ProgressBar({ visited, total }) {
 
 // ─── Main Component ──────────────────────────────────────────────────────────
 export default function InteractiveInfographic_BttfM1() {
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
   const [visitedNodes, setVisitedNodes] = useState([]);
 
@@ -831,6 +832,7 @@ export default function InteractiveInfographic_BttfM1() {
               key={activeNode}
               node={INFOGRAPHIC_NODES.find(n => n.id === activeNode)}
               onClose={() => setActiveNode(null)}
+              setLightboxSrc={setLightboxSrc}
             />
           )}
         </AnimatePresence>

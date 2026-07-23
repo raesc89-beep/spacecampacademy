@@ -365,7 +365,6 @@ function ExpandIcon({ open }) {
 
 function ExpandableParagraph({ text, index, nodeColor }) {
   const [open, setOpen] = useState(false);
-  const [lightboxSrc, setLightboxSrc] = useState(null);
   const dir = seededDir(index);
   const firstSentence = text.split(/(?<=\.)\s/)[0];
   const rest = text.slice(firstSentence.length).trim();
@@ -465,7 +464,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
 /* ═══════════════════════
    CONTENT PANEL
    ═══════════════════════ */
-function ContentPanel({ node, onClose }) {
+function ContentPanel({ node, onClose, setLightboxSrc }) {
   if (!node) return null;
   const heroParas = node.content.slice(0, 2);
   const bodyParas = node.content.slice(2);
@@ -503,7 +502,7 @@ function ContentPanel({ node, onClose }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={node.image} alt={node.title}
             onClick={() => setLightboxSrc(node.image)} style={{ width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9, minHeight: '280px' }} />
-          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: `linear-gradient(transparent, ${node.color}15)` }} />
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: `linear-gradient(transparent, ${node.color}15)`, pointerEvents: 'none' }} />
         </div>
         {/* hero text */}
         <div style={{ padding: '28px 28px 20px 12px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -590,6 +589,7 @@ function ProgressBar({ explored, total }) {
    MAIN COMPONENT
    ══════════════════════════════════════ */
 export default function InteractiveInfographic_BttfM3() {
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeId, setActiveId] = useState(null);
   const [explored, setExplored] = useState(new Set());
 
@@ -649,7 +649,7 @@ export default function InteractiveInfographic_BttfM3() {
 
         {/* panel */}
         <AnimatePresence mode="wait">
-          {activeNode && <ContentPanel key={activeNode.id} node={activeNode} onClose={() => setActiveId(null)} />}
+          {activeNode && <ContentPanel key={activeNode.id} node={activeNode} onClose={() => setActiveId(null)} setLightboxSrc={setLightboxSrc} />}
         </AnimatePresence>
 
         {/* completion message */}

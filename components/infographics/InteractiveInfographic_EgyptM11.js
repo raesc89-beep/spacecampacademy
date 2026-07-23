@@ -421,7 +421,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 }
 
 // ─── Magazine-Style Content Panel ────────────────────────────────────────────
-function ContentPanel({ node, onClose }) {
+function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
   // Positions for floating decorative elements
@@ -481,6 +481,7 @@ function ContentPanel({ node, onClose }) {
           <div style={{
             position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
             background: `linear-gradient(transparent, ${node.color}15)`,
+            pointerEvents: 'none',
           }} />
         </div>
 
@@ -739,6 +740,7 @@ export default function InteractiveInfographic_EgyptM11() {
             key={activeData.id}
             node={activeData}
             onClose={() => setActiveNode(null)}
+            setLightboxSrc={setLightboxSrc}
           />
         )}
       </AnimatePresence>

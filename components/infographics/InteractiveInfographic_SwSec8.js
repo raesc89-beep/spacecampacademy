@@ -571,11 +571,11 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
             <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
               <img src={node.bannerImage} alt={node.bannerCaption || ''} 
                    onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)', pointerEvents: 'none' }} />
               {node.bannerCaption && (
                 <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
                             fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
-                            textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                            textShadow: '0 1px 3px rgba(0,0,0,0.8)', pointerEvents: 'none' }}>
                   {node.bannerCaption}
                 </p>
               )}
