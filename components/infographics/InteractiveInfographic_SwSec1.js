@@ -102,11 +102,11 @@ const BIBLIOGRAPHY = [
 ];
 
 const FALCON_GALLERY = [
-  { src: '/assets/starwars/infographic_kessel/falcon_hyperspace.png', caption: 'El Halcón Milenario saltando al hiperespacio' },
-  { src: '/assets/starwars/infographic_kessel/falcon_kessel_run.png', caption: 'Navegando entre agujeros negros en el Corredor de Kessel' },
-  { src: '/assets/starwars/infographic_kessel/falcon_cockpit_stars.png', caption: 'Vista desde la cabina hacia las estrellas infinitas' },
-  { src: '/assets/starwars/infographic_kessel/falcon_asteroid_field.png', caption: 'Esquivando asteroides a velocidad imposible' },
-  { src: '/assets/starwars/infographic_kessel/falcon_orbit_planet.png', caption: 'Orbitando un mundo desconocido con dos soles' },
+  { src: '/assets/starwars/infographic_kessel/falcon_hyperspace.png', caption: 'El Halcón Milenario — vista isométrica con detalles de ingeniería' },
+  { src: '/assets/starwars/infographic_kessel/falcon_kessel_run.png', caption: 'Navegando por el espacio profundo a toda velocidad' },
+  { src: '/assets/starwars/infographic_kessel/falcon_cockpit_stars.png', caption: 'Plano técnico del Halcón Milenario — vista superior' },
+  { src: '/assets/starwars/infographic_kessel/falcon_asteroid_field.png', caption: 'El Halcón y un X-Wing: la nave que hizo el Corredor de Kessel' },
+  { src: '/assets/starwars/infographic_kessel/falcon_orbit_planet.png', caption: 'El carguero más rápido de la galaxia en órbita' },
 ];
 
 const INFOGRAPHIC_NODES = [

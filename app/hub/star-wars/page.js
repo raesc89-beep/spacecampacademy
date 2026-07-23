@@ -383,7 +383,7 @@ export default function StarWarsHub() {
         {/* Background Image with seamless faded edges */}
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/assets/starwars/starwars_deathstar_bg_new.png')",
+          backgroundImage: "url('/assets/starwars/death_star_hub.jpg')",
           backgroundSize: '55%',
           backgroundPosition: 'center 35%',
           backgroundRepeat: 'no-repeat',
