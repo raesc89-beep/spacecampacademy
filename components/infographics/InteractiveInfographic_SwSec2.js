@@ -463,7 +463,6 @@ const NodeButton = ({ node, isVisited, onClick }) => {
 
 const ExpandableSection = ({ data, color, direction }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [lightboxSrc, setLightboxSrc] = useState(null);
   const variant = dirVariants[direction] || dirVariants.up;
   
   return (
@@ -511,7 +510,7 @@ const ExpandableSection = ({ data, color, direction }) => {
   );
 };
 
-const ContentPanel = ({ node, onClose, onNext, isLast }) => {
+const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   
@@ -752,6 +751,7 @@ const ProgressBar = ({ total, visitedCount }) => {
 };
 
 export default function InteractiveInfographic_SwSec2() {
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const [visitedNodes, setVisitedNodes] = useState([]);
   const [activeNodeId, setActiveNodeId] = useState(null);
   
@@ -884,6 +884,7 @@ export default function InteractiveInfographic_SwSec2() {
       <AnimatePresence>
         {activeNodeId && (
           <ContentPanel 
+            setLightboxSrc={setLightboxSrc}
             node={activeNode} 
             onClose={() => setActiveNodeId(null)}
             onNext={handleNext}

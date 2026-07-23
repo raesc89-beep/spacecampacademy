@@ -452,7 +452,6 @@ const NodeButton = ({ node, isVisited, onClick }) => {
 
 const ExpandableSection = ({ data, color, direction }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [lightboxSrc, setLightboxSrc] = useState(null);
   const variant = dirVariants[direction] || dirVariants.up;
   
   return (
@@ -500,7 +499,7 @@ const ExpandableSection = ({ data, color, direction }) => {
   );
 };
 
-const ContentPanel = ({ node, onClose, onNext, isLast }) => {
+const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   
@@ -655,6 +654,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
 };
 
 export default function InteractiveInfographic_SwSec3() {
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
   const [visitedNodes, setVisitedNodes] = useState(new Set());
 
@@ -757,6 +757,7 @@ export default function InteractiveInfographic_SwSec3() {
             onClose={() => setActiveNode(null)}
             onNext={handleNext}
             isLast={INFOGRAPHIC_NODES.findIndex(n => n.id === activeNode) === INFOGRAPHIC_NODES.length - 1}
+            setLightboxSrc={setLightboxSrc}
           />
         )}
       </AnimatePresence>

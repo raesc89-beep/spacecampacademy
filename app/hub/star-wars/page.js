@@ -2,7 +2,7 @@
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import HubDecorations from '@/components/HubDecorations';
@@ -10,82 +10,90 @@ import HubDecorations from '@/components/HubDecorations';
 const SW_MODULES = [
   {
     id: 'starwars_sec_1',
+    num: '01',
     title: 'Los Parsecs y el Corredor de Kessel',
+    subtitle: 'Astrofísica & Relatividad',
     color: '#00CFFF',
     link: '/course/starwars_sec_1',
     icon: '/assets/starwars/module_1.png',
-    coords: { left: '6%', top: '28%' },
   },
   {
     id: 'starwars_sec_2',
+    num: '02',
     title: 'Tatooine, Hoth y Degobha',
+    subtitle: 'Exoplanetas & Climas Extremos',
     color: '#FF8C00',
     link: '/course/starwars_sec_2',
     icon: '/assets/starwars/module_2.png',
-    coords: { left: '8%', top: '58%' },
   },
   {
     id: 'starwars_sec_3',
-    title: 'C3PO y R2-D2, Biomecatrónica e IA',
+    num: '03',
+    title: 'C3PO y R2-D2',
+    subtitle: 'Biomecatrónica e IA',
     color: '#7B68EE',
     link: '/course/starwars_sec_3',
     icon: '/assets/starwars/module_3.png',
-    coords: { left: '14%', top: '82%' },
   },
   {
     id: 'starwars_sec_4',
+    num: '04',
     title: 'Entrelazamiento Cuántico',
+    subtitle: 'Física Cuántica',
     color: '#FFE81F',
     link: '/course/starwars_sec_4',
     icon: '/assets/starwars/module_4.png',
-    coords: { left: '32%', top: '88%' },
   },
   {
     id: 'starwars_sec_5',
+    num: '05',
     title: 'Xenobiología y Fauna',
+    subtitle: 'Biología Alienígena',
     color: '#00FF88',
     link: '/course/starwars_sec_5',
     icon: '/assets/starwars/module_5.png',
-    coords: { left: '50%', top: '90%' },
   },
   {
     id: 'starwars_sec_6',
+    num: '06',
     title: 'Física de Plasmas',
+    subtitle: 'Sables de Luz & Energía',
     color: '#FF3333',
     link: '/course/starwars_sec_6',
     icon: '/assets/starwars/module_6.png',
-    coords: { left: '68%', top: '88%' },
   },
   {
     id: 'starwars_sec_7',
+    num: '07',
     title: 'El Código Jedi',
+    subtitle: 'Filosofía & Ética',
     color: '#00FFCC',
     link: '/course/starwars_sec_7',
     icon: '/assets/starwars/module_7.png',
-    coords: { left: '86%', top: '82%' },
   },
   {
     id: 'starwars_sec_8',
+    num: '08',
     title: 'Cruceros Espaciales',
+    subtitle: 'Ingeniería Aeroespacial',
     color: '#A0A0A0',
     link: '/course/starwars_sec_8',
     icon: '/assets/starwars/module_8.png',
-    coords: { left: '92%', top: '58%' },
   },
   {
     id: 'starwars_sec_9',
+    num: '09',
     title: 'Traje de Darth Vader',
+    subtitle: 'Tecnología Biomédica',
     color: '#FF0055',
     link: '/course/starwars_sec_9',
     icon: '/assets/starwars/module_9.png',
-    coords: { left: '94%', top: '28%' },
   },
 ];
 
 // ─── Stars Component ─────────────────────────────────────────────────────────
 function Stars() {
   const stars = Array.from({ length: 180 }, (_, i) => {
-    // Keep stars away from the Death Star center area (roughly 25%-75% x, 10%-60% y)
     let left, top;
     do {
       left = Math.random() * 100;
@@ -197,124 +205,126 @@ function LaserBeams() {
   );
 }
 
-// ─── Module Node ──────────────────────────────────────────────────────────────
-function SWModuleNode({ mod, idx, isCompleted }) {
+// ─── Module Card — Imperial Command Deck ──────────────────────────────────────
+function SWModuleCard({ mod, idx, isCompleted }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={mod.link} passHref>
-      <div
+    <Link href={mod.link} style={{ textDecoration: 'none' }}>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: idx * 0.08, duration: 0.5, ease: 'easeOut' }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
-          position: 'absolute',
-          left: mod.coords.left,
-          top: mod.coords.top,
-          transform: 'translate(-50%, -50%)',
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.9rem',
+          padding: '0.7rem 1rem',
+          background: hovered 
+            ? `linear-gradient(135deg, ${mod.color}18, rgba(255,255,255,0.04))`
+            : 'rgba(2,3,8,0.75)',
+          border: `1px solid ${hovered ? mod.color + '55' : 'rgba(120,180,255,0.12)'}`,
+          borderRadius: '10px',
+          backdropFilter: 'blur(12px)',
           cursor: 'pointer',
-          zIndex: hovered ? 50 : (10 + idx),
+          transition: 'all 0.35s ease',
+          transform: hovered ? 'translateY(-2px)' : 'translateY(0)',
+          boxShadow: hovered 
+            ? `0 4px 20px ${mod.color}22, 0 0 1px ${mod.color}44, inset 0 0 20px ${mod.color}08`
+            : '0 2px 8px rgba(0,0,0,0.3)',
+          overflow: 'hidden',
         }}
       >
-        <motion.div
-          animate={{ y: [0, -8, 0] }}
-          transition={{ repeat: Infinity, duration: 4 + idx * 0.7, ease: 'easeInOut' }}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem' }}
-        >
-          {/* Circular image — Imperial Panel style */}
-          <div style={{
-            position: 'relative',
-            width: 'clamp(60px, 7vw, 90px)',
-            height: 'clamp(60px, 7vw, 90px)',
-            borderRadius: '50%',
-            boxShadow: hovered
-              ? '0 0 25px rgba(120,180,255,0.35), 0 0 8px rgba(255,255,255,0.2)'
-              : '0 0 12px rgba(120,180,255,0.15), 0 0 4px rgba(255,255,255,0.1)',
-            transition: 'all 0.35s ease',
-          }}>
-            {/* Image with radial mask for edge blur */}
-            <div style={{
-              position: 'absolute', inset: 0, borderRadius: '50%',
-              WebkitMaskImage: 'radial-gradient(circle at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0) 75%)',
-              maskImage: 'radial-gradient(circle at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0) 75%)',
-              overflow: 'hidden',
-            }}>
-              <img
-                src={mod.icon}
-                alt={mod.title}
-                style={{
-                  width: '100%', height: '100%', objectFit: 'cover',
-                  transform: hovered ? 'scale(1.08)' : 'scale(1)',
-                  transition: 'transform 0.5s ease',
-                  filter: hovered ? 'brightness(1.1) saturate(0.9)' : 'brightness(0.75) saturate(0.7)',
-                }}
-              />
-            </div>
-            {/* Outer holographic ring */}
-            <div style={{
-              position: 'absolute', inset: '-3px', borderRadius: '50%',
-              border: `1.5px solid ${hovered ? 'rgba(120,180,255,0.6)' : 'rgba(120,180,255,0.2)'}`,
-              boxShadow: hovered ? '0 0 10px rgba(120,180,255,0.3)' : 'none',
-              transition: 'all 0.3s ease',
-              pointerEvents: 'none',
-            }} />
-            {/* Completed badge */}
-            {isCompleted && (
-              <div style={{
-                position: 'absolute', top: '0px', right: '0px',
-                background: '#FFE81F', borderRadius: '50%',
-                width: '20px', height: '20px',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '11px', color: '#000', fontWeight: 'bold', zIndex: 5,
-                boxShadow: '0 0 8px rgba(255,232,31,0.5)',
-              }}>✓</div>
-            )}
-          </div>
+        {/* Scanline decoration */}
+        <div style={{
+          position: 'absolute', top: 0, left: 0, right: 0, height: '1px',
+          background: `linear-gradient(90deg, transparent, ${mod.color}${hovered ? '40' : '15'}, transparent)`,
+          transition: 'all 0.3s ease',
+        }} />
 
-          {/* Label — Imperial Panel */}
-          <div style={{
-            color: '#FFE81F',
-            textAlign: 'center',
-            textShadow: '0 1px 6px rgba(0,0,0,0.9)',
-            background: 'rgba(2,3,8,0.75)',
-            padding: '4px 14px',
-            borderRadius: '6px',
-            backdropFilter: 'blur(6px)',
-            border: `1px solid ${hovered ? 'rgba(120,180,255,0.4)' : 'rgba(120,180,255,0.15)'}`,
-            transition: 'all 0.3s ease',
-          }}>
-            <div style={{ fontSize: 'clamp(0.6rem, 0.95vw, 0.8rem)', fontWeight: 600, letterSpacing: '0.5px' }}>
-              {mod.title}
-            </div>
-          </div>
-        </motion.div>
+        {/* Module number — tiny badge */}
+        <div style={{
+          position: 'absolute', top: '4px', right: '8px',
+          fontSize: '0.55rem', fontFamily: "'Orbitron', sans-serif",
+          color: mod.color, opacity: 0.5, letterSpacing: '1px',
+          fontWeight: 600,
+        }}>
+          {mod.num}
+        </div>
 
-        {/* Tooltip */}
-        <AnimatePresence>
-          {hovered && (
-            <motion.div
-              initial={{ opacity: 0, y: 15, scale: 0.85 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 10 }}
-              style={{
-                position: 'absolute',
-                top: '115%', left: '50%',
-                transform: 'translateX(-50%)',
-                background: 'rgba(2,3,8,0.92)',
-                backdropFilter: 'blur(14px)',
-                border: '1px solid rgba(255,232,31,0.4)',
-                padding: '0.7rem 1.2rem',
-                borderRadius: '8px',
-                whiteSpace: 'nowrap',
-                pointerEvents: 'none',
-                boxShadow: '0 6px 24px rgba(0,0,0,0.7)',
-                zIndex: 100,
-              }}
-            >
-              <h4 style={{ margin: 0, fontSize: '0.9rem', color: '#FFE81F', fontWeight: 600 }}>⚡ Iniciar Misión</h4>
-            </motion.div>
+        {/* Thumbnail */}
+        <div style={{
+          position: 'relative', flexShrink: 0,
+          width: '48px', height: '48px', borderRadius: '8px',
+          overflow: 'hidden',
+          border: `1px solid ${hovered ? mod.color + '44' : 'rgba(120,180,255,0.15)'}`,
+          transition: 'border 0.3s ease',
+        }}>
+          <img
+            src={mod.icon}
+            alt={mod.title}
+            style={{
+              width: '100%', height: '100%', objectFit: 'cover',
+              transform: hovered ? 'scale(1.1)' : 'scale(1)',
+              transition: 'transform 0.5s ease',
+              filter: hovered ? 'brightness(1.15) saturate(1.1)' : 'brightness(0.8) saturate(0.8)',
+            }}
+          />
+          {/* Completed badge */}
+          {isCompleted && (
+            <div style={{
+              position: 'absolute', top: '-1px', right: '-1px',
+              background: '#FFE81F', borderRadius: '0 7px 0 6px',
+              width: '16px', height: '16px',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: '9px', color: '#000', fontWeight: 'bold',
+            }}>✓</div>
           )}
-        </AnimatePresence>
-      </div>
+        </div>
+
+        {/* Text content */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{
+            fontFamily: "'Orbitron', sans-serif",
+            fontSize: '0.65rem',
+            fontWeight: 700,
+            color: hovered ? '#fff' : 'rgba(255,255,255,0.88)',
+            letterSpacing: '0.5px',
+            lineHeight: 1.3,
+            transition: 'color 0.3s ease',
+            whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
+          }}>
+            {mod.title}
+          </div>
+          <div style={{
+            fontFamily: "'Orbitron', sans-serif",
+            fontSize: '0.5rem',
+            color: mod.color,
+            opacity: hovered ? 0.9 : 0.55,
+            letterSpacing: '1.5px',
+            textTransform: 'uppercase',
+            marginTop: '2px',
+            transition: 'opacity 0.3s ease',
+            fontWeight: 500,
+          }}>
+            {mod.subtitle}
+          </div>
+        </div>
+
+        {/* Arrow */}
+        <ChevronRight 
+          size={14} 
+          style={{ 
+            color: hovered ? mod.color : 'rgba(255,255,255,0.2)',
+            transition: 'all 0.3s ease',
+            transform: hovered ? 'translateX(2px)' : 'translateX(0)',
+            flexShrink: 0,
+          }} 
+        />
+      </motion.div>
     </Link>
   );
 }
@@ -330,54 +340,36 @@ export default function StarWarsHub() {
 
   if (loading || !userData) {
     return (
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#FFE81F', fontFamily: 'sans-serif' }}>
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#FFE81F', fontFamily: "'Orbitron', sans-serif" }}>
         Iniciando Computadora de Navegación Galáctica...
       </div>
     );
   }
 
   const completedIds = userData?.progress?.completedModules || [];
+  const completedCount = completedIds.filter(id => id.startsWith('starwars_sec')).length;
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#020308' }}>
 
       {/* Back button */}
-      <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 200 }}>
+      <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 200 }}>
         <Link href="/dashboard/misiones" style={{
-          display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#FFE81F',
-          textDecoration: 'none', background: 'rgba(0,0,0,0.7)', padding: '0.7rem 1.2rem',
+          display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: '#FFE81F',
+          textDecoration: 'none', background: 'rgba(0,0,0,0.7)', padding: '0.5rem 1rem',
           borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,232,31,0.3)',
-          fontSize: '0.9rem', fontWeight: 600, transition: 'all 0.3s',
+          fontSize: '0.7rem', fontWeight: 600, fontFamily: "'Orbitron', sans-serif",
+          letterSpacing: '1px', transition: 'all 0.3s',
         }}>
-          <ChevronLeft size={20} /> Mapa Estelar
+          <ChevronLeft size={16} /> MAPA ESTELAR
         </Link>
-      </div>
-
-      {/* Title */}
-      <div style={{
-        position: 'absolute', top: '1.5rem', left: '50%', transform: 'translateX(-50%)',
-        zIndex: 200, textAlign: 'center',
-        background: 'rgba(0,0,0,0.6)', padding: '0.6rem 2.5rem',
-        borderRadius: '40px', backdropFilter: 'blur(8px)',
-        border: '1px solid rgba(255,232,31,0.2)',
-      }}>
-        <h1 style={{
-          margin: 0, fontSize: 'clamp(1rem, 2.5vw, 1.8rem)',
-          background: 'linear-gradient(90deg, #FFE81F, #FFA500, #FFE81F)',
-          WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-          letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 800,
-        }}>
-          La Ciencia de Star Wars
-        </h1>
-        <p style={{ margin: '0.2rem 0 0', color: 'rgba(255,232,31,0.7)', fontSize: 'clamp(0.6rem, 1.2vw, 0.82rem)', letterSpacing: '2px' }}>
-          Astrofísica · Biomecatrónica · Cuántica · 9 Módulos
-        </p>
       </div>
 
       {/* Main canvas */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#020308',
+        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
       }}>
         {/* Background Image with seamless faded edges */}
         <div style={{
@@ -403,7 +395,7 @@ export default function StarWarsHub() {
           pointerEvents: 'none', zIndex: 0,
         }} />
 
-        {/* Ambient floating dust particles (Arqueoastronomia style) */}
+        {/* Ambient floating dust particles */}
         <HubDecorations />
 
         {/* Ambient Fog at the bottom */}
@@ -413,60 +405,89 @@ export default function StarWarsHub() {
         <Stars />
         <StarshipsAnim />
 
-        {/* Constellation lines between modules */}
-        <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 2, opacity: 0.3 }}>
-          {SW_MODULES.map((mod, i) => {
-            if (i === SW_MODULES.length - 1) return null;
-            const nextMod = SW_MODULES[i + 1];
-            return (
-              <line key={i} x1={mod.coords.left} y1={mod.coords.top} x2={nextMod.coords.left} y2={nextMod.coords.top} stroke="#FFE81F" strokeWidth="1" strokeDasharray="4 8" />
-            );
-          })}
-        </svg>
-
-        {/* Module nodes */}
-        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 10 }}>
-          {SW_MODULES.map((mod, idx) => (
-            <div key={mod.id} style={{ pointerEvents: 'auto' }}>
-              <SWModuleNode
-                mod={mod}
-                idx={idx}
-                isCompleted={completedIds.includes(mod.id)}
+        {/* ─── Title ────────────────────────────────────────────────── */}
+        <div style={{
+          position: 'relative', zIndex: 100, textAlign: 'center',
+          marginBottom: '1.5rem',
+        }}>
+          <h1 style={{
+            margin: 0, fontSize: 'clamp(0.85rem, 2.2vw, 1.5rem)',
+            fontFamily: "'Orbitron', sans-serif",
+            background: 'linear-gradient(90deg, #FFE81F, #FFA500, #FFE81F)',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+            letterSpacing: '4px', textTransform: 'uppercase', fontWeight: 900,
+          }}>
+            La Ciencia de Star Wars
+          </h1>
+          <p style={{
+            margin: '0.3rem 0 0', color: 'rgba(255,232,31,0.5)',
+            fontSize: 'clamp(0.45rem, 0.9vw, 0.6rem)', letterSpacing: '3px',
+            fontFamily: "'Orbitron', sans-serif", fontWeight: 400,
+            textTransform: 'uppercase',
+          }}>
+            Astrofísica · Biomecatrónica · Cuántica · 9 Módulos
+          </p>
+          {/* Progress inline */}
+          <div style={{
+            marginTop: '0.6rem', display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
+            background: 'rgba(0,0,0,0.5)', padding: '0.35rem 1rem',
+            borderRadius: '20px', border: '1px solid rgba(255,232,31,0.15)',
+            backdropFilter: 'blur(6px)',
+          }}>
+            <span style={{
+              fontFamily: "'Orbitron', sans-serif", fontSize: '0.5rem',
+              color: 'rgba(255,255,255,0.5)', letterSpacing: '1px', fontWeight: 500,
+            }}>
+              MISIONES
+            </span>
+            {/* Mini progress bar */}
+            <div style={{
+              width: '80px', height: '3px', background: 'rgba(255,255,255,0.1)',
+              borderRadius: '2px', overflow: 'hidden',
+            }}>
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: `${(completedCount / SW_MODULES.length) * 100}%` }}
+                transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
+                style={{
+                  height: '100%', borderRadius: '2px',
+                  background: 'linear-gradient(90deg, #FFE81F, #FFA500)',
+                }}
               />
             </div>
-          ))}
+            <span style={{
+              fontFamily: "'Orbitron', sans-serif", fontSize: '0.55rem',
+              color: '#FFE81F', fontWeight: 700, letterSpacing: '1px',
+            }}>
+              {completedCount}/{SW_MODULES.length}
+            </span>
+          </div>
         </div>
 
-        {/* Bottom CTA - Progress Indicator */}
+        {/* ─── Module Grid ────────────────────────────────────────── */}
         <div style={{
-          position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)',
-          background: 'rgba(0,0,0,0.7)',
-          border: '1px solid rgba(255, 232, 31, 0.3)',
-          padding: '1rem 2.5rem',
-          borderRadius: '40px',
-          backdropFilter: 'blur(10px)',
-          zIndex: 200,
-          boxShadow: '0 0 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(255, 232, 31, 0.1)',
-          display: 'flex', alignItems: 'center', gap: '1.5rem',
+          position: 'relative', zIndex: 100,
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, minmax(0, 280px))',
+          gap: '0.6rem',
+          padding: '0 1.5rem',
+          maxWidth: '900px',
+          width: '100%',
         }}>
-          <div style={{ color: 'white', fontFamily: 'var(--font-heading)', fontSize: '1.1rem' }}>
-            Misiones Completadas:
-          </div>
-          <div style={{
-            background: 'rgba(255,255,255,0.1)',
-            padding: '0.5rem 1.5rem',
-            borderRadius: '20px',
-            color: '#FFE81F',
-            fontWeight: 'bold',
-            fontSize: '1.2rem',
-            textShadow: '0 0 10px rgba(255, 232, 31, 0.5)'
-          }}>
-            {completedIds.filter(id => id.startsWith('starwars_sec')).length} / {SW_MODULES.length}
-          </div>
+          {SW_MODULES.map((mod, idx) => (
+            <SWModuleCard
+              key={mod.id}
+              mod={mod}
+              idx={idx}
+              isCompleted={completedIds.includes(mod.id)}
+            />
+          ))}
         </div>
       </main>
 
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
         @keyframes twinkle {
           0%, 100% { opacity: 0.15; transform: scale(1); }
           15% { opacity: 0.9; transform: scale(1.5); }
@@ -478,6 +499,19 @@ export default function StarWarsHub() {
         @keyframes laserPulse {
           0%, 100% { opacity: 0.15; }
           50% { opacity: 0.5; }
+        }
+
+        /* Responsive: 2 cols on tablet, 1 col on mobile */
+        @media (max-width: 768px) {
+          div[style*="grid-template-columns: repeat(3"] {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+        @media (max-width: 480px) {
+          div[style*="grid-template-columns: repeat(3"],
+          div[style*="grid-template-columns: repeat(2"] {
+            grid-template-columns: 1fr !important;
+          }
         }
       `}</style>
     </div>
