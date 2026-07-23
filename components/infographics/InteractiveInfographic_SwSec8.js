@@ -325,7 +325,7 @@ const StarField = () => {
         
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = \`rgba(200, 220, 255, \${Math.abs(star.opacity)})\`;
+        ctx.fillStyle = `rgba(200, 220, 255, ${Math.abs(star.opacity)})`;
         ctx.fill();
       });
       
@@ -405,11 +405,11 @@ const NodeButton = ({ node, isVisited, onClick }) => {
         height: '90px',
         borderRadius: '50%',
         padding: 0,
-        border: \`3px solid \${isComplete ? node.color : '#333'}\`,
+        border: `3px solid ${isComplete ? node.color : '#333'}`,
         background: '#1A1C29',
         cursor: 'pointer',
         overflow: 'hidden',
-        boxShadow: isComplete ? \`0 0 15px \${node.color}55\` : 'none',
+        boxShadow: isComplete ? `0 0 15px ${node.color}55` : 'none',
         zIndex: 10
       }}
     >
@@ -439,7 +439,7 @@ const ExpandableSection = ({ data, color, direction }) => {
   const variant = dirVariants[direction] || dirVariants.up;
   
   return (
-    <div style={{ marginBottom: '1rem', background: '#1A1C29', borderRadius: '8px', overflow: 'hidden', border: \`1px solid \${color}33\` }}>
+    <div style={{ marginBottom: '1rem', background: '#1A1C29', borderRadius: '8px', overflow: 'hidden', border: `1px solid ${color}33` }}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         style={{
@@ -448,7 +448,7 @@ const ExpandableSection = ({ data, color, direction }) => {
           alignItems: 'center',
           justifyContent: 'space-between',
           padding: '1rem',
-          background: isOpen ? \`\${color}11\` : 'transparent',
+          background: isOpen ? `${color}11` : 'transparent',
           border: 'none',
           color: '#FFF',
           cursor: 'pointer',
@@ -502,7 +502,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
         borderRadius: '24px',
         overflow: 'hidden',
         zIndex: 100,
-        boxShadow: \`0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px \${node.color}33\`,
+        boxShadow: `0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px ${node.color}33`,
         display: 'flex',
         flexDirection: 'column'
       }}
@@ -510,12 +510,12 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
       <DecoComp1 size={200} color={node.color} style={{ position: 'absolute', top: '-50px', left: '-50px', opacity: 0.05, zIndex: 0 }} />
       <DecoComp2 size={150} color={node.color} style={{ position: 'absolute', bottom: '10%', right: '-20px', opacity: 0.05, zIndex: 0 }} />
       
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem 2rem', background: \`linear-gradient(90deg, #1A1C29 0%, \${node.color}22 100%)\`, zIndex: 10, borderBottom: \`1px solid \${node.color}33\` }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem 2rem', background: `linear-gradient(90deg, #1A1C29 0%, ${node.color}22 100%)`, zIndex: 10, borderBottom: `1px solid ${node.color}33` }}>
         <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', margin: 0, fontFamily: '"Oswald", sans-serif', fontSize: '1.5rem', color: '#FFF' }}>
           <span style={{
             display: 'inline-flex', width: '40px', height: '40px',
             borderRadius: '50%', overflow: 'hidden',
-            border: \`2px solid \${node.color}40\`,
+            border: `2px solid ${node.color}40`,
             flexShrink: 0,
           }}>
             <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -541,7 +541,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
             </p>
           </div>
           <div style={{ position: 'relative', overflow: 'hidden', height: '100%' }}>
-            <img src={node.image} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, minHeight: '280px', borderLeft: \`4px solid \${node.color}\` }} />
+            <img src={node.image} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, minHeight: '280px', borderLeft: `4px solid ${node.color}` }} />
           </div>
         </div>
 
@@ -556,7 +556,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
             </p>
           </div>
           
-          <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC', margin: '1rem 0 0 0', padding: '1.5rem', background: \`linear-gradient(90deg, \${node.color}11, transparent)\`, borderRadius: '12px', borderLeft: \`4px solid \${node.color}\` }}>
+          <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC', margin: '1rem 0 0 0', padding: '1.5rem', background: `linear-gradient(90deg, ${node.color}11, transparent)`, borderRadius: '12px', borderLeft: `4px solid ${node.color}` }}>
             {node.content[4]}
           </p>
 
@@ -581,7 +581,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
             </div>
           )}
 
-          <div style={{ position: 'relative', padding: '1.5rem', background: \`linear-gradient(135deg, \${node.color}11, transparent)\`, border: \`1px solid \${node.color}33\`, borderRadius: '12px' }}>
+          <div style={{ position: 'relative', padding: '1.5rem', background: `linear-gradient(135deg, ${node.color}11, transparent)`, border: `1px solid ${node.color}33`, borderRadius: '12px' }}>
             <div style={{ position: 'absolute', top: -12, left: 16, background: '#0B0D17', padding: '0 8px', color: node.color, fontWeight: 'bold', fontSize: '0.9rem', fontFamily: '"Oswald", sans-serif' }}>
               <Star size={14} style={{ display: 'inline', marginRight: 4, verticalAlign: 'middle' }}/> DATO FASCINANTE
             </div>
@@ -594,7 +594,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
             <button
               onClick={onNext}
               style={{
-                background: \`linear-gradient(45deg, \${node.color}, \${node.color}88)\`,
+                background: `linear-gradient(45deg, ${node.color}, ${node.color}88)`,
                 border: 'none',
                 padding: '1rem 2rem',
                 borderRadius: '30px',
@@ -606,7 +606,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '0.5rem',
-                boxShadow: \`0 4px 15px \${node.color}66\`
+                boxShadow: `0 4px 15px ${node.color}66`
               }}
             >
               {isLast ? 'COMPLETAR ENTRENAMIENTO' : 'SIGUIENTE LECCIÓN'}
