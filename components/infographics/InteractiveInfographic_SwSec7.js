@@ -1,0 +1,726 @@
+'use client';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
+
+/* =========================================================================
+   1. DECORATIVE SVG COMPONENTS (Jedi Themed)
+   ========================================================================= */
+
+const DecoLightsaber = ({ size = 24, color = "currentColor", style }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
+    <line x1="12" y1="2" x2="12" y2="16" stroke={color} strokeWidth="3" strokeLinecap="round" opacity="0.9"/>
+    <rect x="10" y="16" width="4" height="6" rx="1" stroke={color} strokeWidth="1.5" opacity="0.7"/>
+    <line x1="9" y1="18" x2="15" y2="18" stroke={color} strokeWidth="1.5" opacity="0.8"/>
+  </svg>
+);
+
+const DecoHolocron = ({ size = 24, color = "currentColor", style }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
+    <polygon points="12,2 22,12 12,22 2,12" stroke={color} strokeWidth="1.5" fill={`${color}22`} />
+    <polygon points="12,6 18,12 12,18 6,12" stroke={color} strokeWidth="1.5" opacity="0.7" />
+    <circle cx="12" cy="12" r="2" fill={color} />
+  </svg>
+);
+
+const DecoForceRipple = ({ size = 24, color = "currentColor", style }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
+    <circle cx="12" cy="12" r="10" stroke={color} strokeWidth="1" opacity="0.3"/>
+    <circle cx="12" cy="12" r="6" stroke={color} strokeWidth="1.5" opacity="0.6"/>
+    <circle cx="12" cy="12" r="2" fill={color} opacity="0.9"/>
+  </svg>
+);
+
+const DecoBrain = ({ size = 24, color = "currentColor", style }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
+    <path d="M12 4C8 4 5 7 5 11C5 12.5 5.5 13.8 6.3 14.8C6.1 16.5 7 18 9 18.5C9.5 20 11 21 12 21C13 21 14.5 20 15 18.5C17 18 17.9 16.5 17.7 14.8C18.5 13.8 19 12.5 19 11C19 7 16 4 12 4Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" opacity="0.8"/>
+    <path d="M12 4V21" stroke={color} strokeWidth="1" strokeDasharray="2 2" opacity="0.5"/>
+    <path d="M8 9C9 9 9.5 10 9.5 11" stroke={color} strokeWidth="1" opacity="0.6"/>
+    <path d="M16 9C15 9 14.5 10 14.5 11" stroke={color} strokeWidth="1" opacity="0.6"/>
+  </svg>
+);
+
+const DecoJediSymbol = ({ size = 24, color = "currentColor", style }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
+    <path d="M12 2L14 8H20L15 12L17 18L12 14.5L7 18L9 12L4 8H10L12 2Z" stroke={color} strokeWidth="1.5" strokeLinejoin="round" opacity="0.8"/>
+    <line x1="12" y1="2" x2="12" y2="22" stroke={color} strokeWidth="1" opacity="0.4"/>
+  </svg>
+);
+
+const DECO_MAP = {
+  'amigdala-meditacion': [DecoBrain, DecoForceRipple],
+  'mindfulness-jedi': [DecoHolocron, DecoJediSymbol],
+  'neuroplasticidad': [DecoBrain, DecoLightsaber],
+  'respiracion-kenobi': [DecoForceRipple, DecoHolocron],
+  'inteligencia-emocional': [DecoJediSymbol, DecoForceRipple],
+  'lado-oscuro-cortisol': [DecoLightsaber, DecoBrain],
+  'sueno-jedi': [DecoHolocron, DecoForceRipple],
+};
+
+/* =========================================================================
+   2. DATA & CONTENT
+   ========================================================================= */
+
+const BIBLIOGRAPHY = [
+  "Lazar, S. W., et al. (2005). 'Meditation experience is associated with increased cortical thickness'. Neuroreport, 16(17).",
+  "Goleman, D. (1995). 'Emotional Intelligence: Why It Can Matter More Than IQ'. Bantam Books.",
+  "McEwen, B. S. (2007). 'Physiology and neurobiology of stress and adaptation: central role of the brain'. Physiological Reviews, 87(3).",
+  "Walker, M. (2017). 'Why We Sleep: Unlocking the Power of Sleep and Dreams'. Scribner.",
+  "Doidge, N. (2007). 'The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science'. Viking Press.",
+  "Tang, Y. Y., et al. (2015). 'The neuroscience of mindfulness meditation'. Nature Reviews Neuroscience, 16(4)."
+];
+
+const INFOGRAPHIC_NODES = [
+  {
+    id: 'amigdala-meditacion',
+    title: 'La Amígdala: Tu Alarma Interna',
+    color: '#7B68EE',
+    btnImage: '/assets/starwars/infographic_jedi/btn_amigdala_meditacion.png',
+    image: '/assets/starwars/infographic_jedi/hero_amigdala_meditacion.png',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_amigdala_meditacion.png',
+    bannerCaption: 'Un Padawan aprendiendo a calmar su mente en los silenciosos salones del Templo Jedi.',
+    content: [
+      "Imagina que dentro de tu cabeza, justo en el centro de tu cerebro, tienes un pequeño pero poderoso botón de alarma del tamaño de una almendra. Esta pequeña estructura se llama 'amígdala', y su trabajo principal es mantenerte a salvo de los peligros. Cuando nuestros ancestros vivían en cavernas y veían un tigre dientes de sable, la amígdala encendía la alarma roja, preparando el cuerpo para correr muy rápido o pelear con todas sus fuerzas. ¡Era como una sirena de emergencia súper ruidosa!",
+      "El problema es que hoy en día no hay tigres en las calles, pero tu amígdala sigue encendiendo la alarma roja cuando tienes un examen difícil de matemáticas, cuando te peleas con tu mejor amigo, o cuando te pones muy nervioso. Esto hace que tu corazón lata muy rápido y tus manos suden, igual que si estuvieras en un peligro real. Cuando la amígdala grita demasiado fuerte, no deja que otra parte de tu cerebro, la que te ayuda a pensar con claridad y resolver problemas (la corteza prefrontal), haga su trabajo.",
+      "Aquí es donde entra la sabiduría milenaria. Los científicos de lugares famosos como la Universidad de Harvard han descubierto algo asombroso usando máquinas que pueden ver dentro de nuestro cerebro. Se dieron cuenta de que las personas que practican meditación o 'mindfulness' todos los días logran encoger físicamente el tamaño de su amígdala. Es decir, con solo respirar y estar tranquilos, ¡hacen que su botón de alarma sea menos escandaloso y más fácil de controlar!",
+      "Ser un Caballero Jedi requiere exactamente esta misma habilidad. Cuando un Jedi se enfrenta a un Sith con un sable de luz, su cuerpo instintivamente quiere asustarse. Pero a través de un entrenamiento mental riguroso y la conexión profunda con la Fuerza, un Jedi aprende a bajar el volumen de esa alarma interna. En lugar de reaccionar con miedo o ira, reaccionan con una calma absoluta y un enfoque cristalino. Es el triunfo de la mente pacífica sobre los instintos básicos.",
+      "Así que, la próxima vez que sientas que la alarma de tu amígdala se dispara porque estás enojado o asustado, recuerda que tienes el poder de calmarla. Con solo cerrar los ojos, respirar lenta y profundamente unas cuantas veces, y concentrarte en el presente, estás apagando esa alarma roja. Estás usando la neurociencia para entrenar tu mente, dando el primer paso real para convertirte en un Maestro de tus propias emociones."
+    ],
+    expandables: [
+      { 
+        label: 'En la Película', 
+        icon: 'zap', 
+        text: 'En el Episodio I: La Amenaza Fantasma, durante el épico e intenso duelo final, hay un momento en que Qui-Gon Jinn y Darth Maul quedan separados temporalmente por un campo de energía rojo brillante. En lugar de enojarse, pasearse impacientemente o golpear el escudo como lo hace el Sith, el sereno Maestro Jedi Qui-Gon Jinn se arrodilla inmediatamente en el suelo del generador y comienza a meditar. Al hacerlo, apaga la respuesta de pánico de su amígdala, baja su ritmo cardíaco y recupera su claridad mental para el inminente combate.' 
+      },
+      { 
+        label: 'Dato Científico', 
+        icon: 'atom', 
+        text: 'Los estudios de resonancia magnética funcional (fMRI) liderados por la investigadora Sara Lazar demostraron que la práctica constante de la meditación y el mindfulness durante un programa intensivo de apenas 8 semanas es tiempo suficiente para provocar una disminución medible y real en la densidad de la materia gris en la amígdala humana, la zona cerebral que procesa el estrés intenso, el miedo y la ansiedad.' 
+      }
+    ],
+    fact: 'La amígdala, una estructura cerebral del tamaño de una almendra, actúa como el sistema de alarma principal del cuerpo. Estudios de Harvard demuestran que la meditación reduce su tamaño físico y su reactividad, ayudándonos a mantener la calma bajo presión extrema.'
+  },
+  {
+    id: 'mindfulness-jedi',
+    title: 'Meditación Jedi: La Ciencia del Mindfulness',
+    color: '#00CED1',
+    btnImage: '/assets/starwars/infographic_jedi/btn_mindfulness_jedi.png',
+    image: '/assets/starwars/infographic_jedi/hero_mindfulness_jedi.png',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_mindfulness_jedi.png',
+    bannerCaption: 'La profunda conexión con la Fuerza comienza silenciando el ruido del universo exterior.',
+    content: [
+      "¿Has intentado alguna vez sentarte completamente quieto y no pensar en absolutamente nada? Si lo has intentado, seguro te diste cuenta de que es casi imposible. Tu mente parece un monito saltando de rama en rama: piensas en tu tarea, en lo que vas a cenar, en un recuerdo gracioso. A esto los budistas lo llaman 'la mente de mono'. El 'Mindfulness' o atención plena es una técnica antigua que no busca callar al monito por la fuerza, sino enseñarle a sentarse pacíficamente a observar.",
+      "El mindfulness significa simplemente prestar muchísima atención al momento presente de manera intencional y sin juzgar si es bueno o malo. Es como convertirte en un observador científico de tus propios pensamientos. Si estás comiendo una manzana, el mindfulness es notar el crujido, el sabor dulce, el jugo frío, en lugar de estar viendo la televisión mientras comes en piloto automático. Es despertar verdaderamente al 'aquí y ahora'.",
+      "Los científicos y doctores de instituciones como UCLA se dieron cuenta de que esta práctica tiene beneficios médicos y psicológicos increíbles. Las personas que practican mindfulness mejoran su memoria, su concentración y son mucho más felices. Al entrenar el cerebro para estar en el presente, fortaleces las conexiones neuronales que te ayudan a prestar atención. ¡Es como llevar a tu cerebro al gimnasio y levantar pesas invisibles de concentración!",
+      "El Código Jedi dice: 'No hay emoción, hay paz'. Esto no significa que los Jedi sean robots sin sentimientos, sino que practican el mindfulness más avanzado de la galaxia. Cuando un Jedi 'siente la Fuerza fluir a través de él', está en un estado de atención plena perfecta. Están sintiendo la vida que los rodea, las rocas, los árboles, las criaturas, sin permitir que las distracciones del pasado o las preocupaciones del futuro los desequilibren.",
+      "Tú puedes practicar este entrenamiento Jedi hoy mismo. Dedica tan solo cinco minutos al día a sentarte en silencio y prestar atención exclusiva a tu respiración. Cuando tu mente de mono empiece a saltar hacia otros pensamientos (¡y lo hará!), simplemente sonríe, date cuenta de que te distrajiste, y regresa tu atención suavemente al aire que entra y sale de tu nariz. Con este sencillo entrenamiento diario, estarás cultivando una mente tan clara y enfocada como la de un Maestro Jedi."
+    ],
+    expandables: [
+      { 
+        label: 'En la Película', 
+        icon: 'zap', 
+        text: 'En el Episodio V: El Imperio Contraataca, el sabio Maestro Yoda regaña constantemente al joven aprendiz Luke Skywalker por su falta de atención plena durante su duro entrenamiento en los sombríos pantanos de Dagobah. "Toda su vida ha mirado lejos, al futuro, al horizonte. ¡Nunca su mente en donde estaba! ¡Hmm! ¡En lo que hacía!", exclama Yoda. Esta es una lección maestra y fundamental sobre el verdadero concepto psicológico del mindfulness: la importancia vital de mantener la mente y la concentración ancladas rígidamente en el momento presente.' 
+      },
+      { 
+        label: '¿Sabías que...?', 
+        icon: 'clock', 
+        text: 'Un estudio de investigación exhaustivo realizado por psicólogos de la Universidad de Harvard descubrió de forma asombrosa que las mentes humanas vagan y se distraen perdiendo el enfoque durante casi el 47% de sus horas de vigilia. Además, concluyeron que una mente divagante es típicamente una mente infeliz, ya que solemos pensar en preocupaciones o arrepentimientos. El mindfulness nos ayuda activamente a reducir ese altísimo porcentaje.' 
+      }
+    ],
+    fact: 'El mindfulness es la práctica psicológica de centrar intencionalmente toda la atención en el momento presente. Investigaciones de UCLA muestran que practicarlo regularmente fortalece las áreas del cerebro responsables de la memoria, el aprendizaje y la regulación emocional, tal como los Jedi entrenan su conexión pacífica con la Fuerza.'
+  },
+  {
+    id: 'neuroplasticidad',
+    title: 'El Cerebro que se Entrena: Neuroplasticidad',
+    color: '#FFB74D',
+    btnImage: '/assets/starwars/infographic_jedi/btn_neuroplasticidad.png',
+    image: '/assets/starwars/infographic_jedi/hero_neuroplasticidad.png',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_neuroplasticidad.png',
+    bannerCaption: 'Las vías neuronales se fortalecen con la repetición, igual que el dominio del sable de luz.',
+    content: [
+      "Hace muchos años, los científicos creían que nuestro cerebro era como una computadora de fábrica: nacías con ciertos cables conectados y, una vez que llegabas a ser adulto, esos cables no se podían cambiar nunca más. Si no eras bueno en matemáticas o en música, pensaban que estabas atrapado así para siempre. ¡Pero estaban completamente equivocados! Descubrieron algo llamado 'Neuroplasticidad', que es la maravillosa habilidad de tu cerebro para cambiar de forma física y crear nuevas conexiones.",
+      "Imagina tu cerebro como un inmenso bosque inexplorado. Cuando aprendes algo nuevo por primera vez, es como caminar por entre los arbustos altos; es difícil y lento. Pero si caminas por ese mismo sendero todos los días, aplastas la hierba y haces un caminito de tierra. Si sigues practicando, ese camino se convierte en una carretera pavimentada y luego en una autopista súper rápida por donde la información viaja a la velocidad de la luz. ¡Tus neuronas se conectan fuertemente!",
+      "Por el contrario, si dejas de caminar por un sendero, la hierba vuelve a crecer y el camino desaparece. En la neurociencia, hay un dicho muy famoso que dice: 'Las neuronas que se disparan juntas, se conectan juntas'. Esto significa que cualquier cosa que practiques repetidamente (tocar el piano, resolver acertijos, o incluso ser paciente) modificará la estructura microscópica de tu cerebro, haciéndote cada vez mejor y más rápido en esa tarea específica.",
+      "El duro entrenamiento de un Padawan Jedi en el Templo de Coruscant se basa completamente en esta ciencia de la neuroplasticidad. No nacen sabiendo cómo desviar los disparos láser de los droides de entrenamiento con los ojos vendados. Requiere horas, días y años de repetición incesante. Cada vez que levantan el sable, cada vez que meditan, están forjando y fortaleciendo autopistas neuronales en sus cerebros que les permiten tener reflejos casi sobrehumanos.",
+      "Tú también tienes este superpoder plástico dentro de tu cabeza. Si sientes que eres malo en algo, ya sea en un deporte, en leer o en dibujar, no significa que no puedas hacerlo; solo significa que aún no has caminado lo suficiente por ese sendero neuronal. Con esfuerzo, repetición y paciencia, tienes la capacidad literal y científica de remodelar tu propio cerebro para lograr lo que te propongas."
+    ],
+    expandables: [
+      { 
+        label: 'En la Película', 
+        icon: 'zap', 
+        text: 'En el Episodio IV: Una Nueva Esperanza, Obi-Wan Kenobi le pone a Luke Skywalker un casco con el visor bajado que no le permite ver absolutamente nada, forzándolo a detener los rápidos disparos de un pequeño droide escurridizo de entrenamiento usando únicamente su intuición. Al principio, el inexperto Luke falla miserablemente y recibe varios impactos dolorosos. Sin embargo, al seguir intentándolo y abrirse a sentir la Fuerza, logra desviar tres disparos seguidos, demostrando cómo su cerebro joven comenzaba a forjar rápidamente nuevas y poderosas vías neuronales.' 
+      },
+      { 
+        label: 'Dato Científico', 
+        icon: 'atom', 
+        text: 'El famoso estudio científico realizado con los taxistas de la ciudad de Londres comprobó de manera irrefutable la existencia de la neuroplasticidad en adultos. Para obtener su difícil licencia, los taxistas debían memorizar miles de calles y laberínticas rutas. Las resonancias magnéticas mostraron claramente que el hipocampo de sus cerebros (el área crítica encargada de la memoria y navegación espacial) creció físicamente de tamaño y se volvió significativamente más grande y denso que el de las personas comunes.' 
+      }
+    ],
+    fact: 'La neuroplasticidad es la capacidad del cerebro para reorganizarse y crear nuevas vías neuronales a lo largo de toda la vida. La práctica constante fortalece las conexiones, demostrando científicamente que el esfuerzo continuo puede alterar físicamente la estructura cerebral para adquirir nuevas habilidades asombrosas.'
+  },
+  {
+    id: 'respiracion-kenobi',
+    title: 'Respira como Obi-Wan: Técnica 4-7-8',
+    color: '#66BB6A',
+    btnImage: '/assets/starwars/infographic_jedi/btn_respiracion_kenobi.png',
+    image: '/assets/starwars/infographic_jedi/hero_respiracion_kenobi.png',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_respiracion_kenobi.png',
+    bannerCaption: 'El control del aire es el control de la mente, un puente directo hacia el sistema nervioso.',
+    content: [
+      "¿Sabías que tienes un 'freno de mano' secreto en tu cuerpo que puede detener el estrés casi al instante? La magia está escondida en algo tan simple y aburrido que hacemos miles de veces al día sin siquiera darnos cuenta: respirar. Normalmente, la respiración es automática, pero es la única función automática de nuestro cuerpo que también podemos controlar a voluntad. Al cambiar la forma en que respiramos, podemos hackear nuestro sistema nervioso.",
+      "Existe un nervio súper largo e importante en tu cuerpo llamado el 'Nervio Vago'. Viaja desde tu cerebro, baja por tu cuello, y llega hasta tu corazón y tu estómago. Cuando te asustas y respiras rápido, el nervio vago le dice a tu corazón que lata a toda prisa. Pero cuando tomas aire lentamente y, sobre todo, cuando exhalas el aire muy despacio, el nervio vago envía un poderoso mensaje calmante al corazón y al cerebro: 'Tranquilo, todo está a salvo'.",
+      "Incluso los astronautas de la NASA, los buzos profesionales y los soldados usan técnicas de respiración especiales para no entrar en pánico en situaciones de vida o muerte. Una técnica muy famosa y fácil de aprender es la 'Respiración 4-7-8'. Consiste en tomar aire por la nariz durante 4 segundos, aguantar y sostener ese aire en los pulmones por 7 segundos, y finalmente soplar el aire por la boca muy, muy despacio durante 8 segundos.",
+      "Imagina al legendario Maestro Obi-Wan Kenobi escondido en la inmensa Estrella de la Muerte, rodeado de cientos de Stormtroopers que lo buscan. Si su corazón latiera de miedo, cometería errores fatales. A través de la profunda conexión con la Fuerza y el control perfecto de su respiración, Obi-Wan logra calmar su sistema nervioso por completo, moviéndose por los pasillos con una tranquilidad absoluta y engañando las mentes débiles de los guardias.",
+      "Puedes usar la técnica del 4-7-8 cuando te sientas muy enojado, cuando no puedas dormir por la noche, o antes de hablar en público en la escuela. Hazlo cuatro veces seguidas y sentirás físicamente cómo una ola de tranquilidad recorre tu cuerpo entero. Es una herramienta biológica gratuita, poderosa y siempre disponible que te convierte en el verdadero dueño de tus emociones, igual que un Maestro Jedi experimentado."
+    ],
+    expandables: [
+      { 
+        label: 'En la Película', 
+        icon: 'zap', 
+        text: 'En la aclamada serie de televisión Obi-Wan Kenobi, vemos al destrozado y exiliado Jedi sufriendo graves ataques de pánico y un terrible estrés postraumático constante (TEPT) mientras se esconde en los desiertos de Tatooine. Para poder reconectarse nuevamente con la Fuerza, superar el miedo paralizante a Darth Vader y recuperar su antiguo y legendario poder, Obi-Wan debe volver a lo más básico de su entrenamiento en el Templo: recuperar el control consciente, rítmico y pacífico de su propia respiración.' 
+      },
+      { 
+        label: '¿Sabías que...?', 
+        icon: 'clock', 
+        text: 'El prolongar intencionalmente el tiempo de la exhalación (sacar el aire más lento de lo que lo metes) estimula directamente y de manera mecánica el sistema nervioso parasimpático del cuerpo humano. Esta es la parte de nuestro complejo sistema biológico que se encarga del fundamental modo de "descansar y digerir", y actúa como el contra-balance perfecto y natural que frena la respuesta destructiva de "lucha o huida" que nos causa tanto estrés.' 
+      }
+    ],
+    fact: 'Controlar el ritmo de la respiración es la forma más rápida de intervenir conscientemente en el sistema nervioso autónomo. La técnica 4-7-8, al prolongar enormemente la fase de exhalación, estimula el nervio vago y reduce el ritmo cardíaco dramáticamente, brindando calma instantánea.'
+  },
+  {
+    id: 'inteligencia-emocional',
+    title: 'El Poder de la Empatía Jedi',
+    color: '#42A5F5',
+    btnImage: '/assets/starwars/infographic_jedi/btn_inteligencia_emocional.png',
+    image: '/assets/starwars/infographic_jedi/hero_inteligencia_emocional.png',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_inteligencia_emocional.png',
+    bannerCaption: 'Sentir las emociones de otros en la galaxia: la ciencia de las neuronas espejo.',
+    content: [
+      "Ser inteligente no solo significa saber multiplicar números grandes o recordar muchos datos de historia. En el año 1995, un psicólogo muy famoso llamado Daniel Goleman le dijo al mundo que existe algo igual de importante: la 'Inteligencia Emocional'. Esta es la maravillosa capacidad de entender lo que tú mismo sientes, controlar esos sentimientos, y lo que es más increíble, entender y sentir genuinamente las emociones de las demás personas a tu alrededor.",
+      "Para lograr esto, nuestro cerebro tiene una herramienta secreta y mágica descubierta recientemente llamada 'Neuronas Espejo'. Estas pequeñas células se activan no solo cuando tú haces algo, sino también cuando ves a otra persona hacer algo. Si ves a tu amigo llorar o golpearse el dedo del pie, tus propias neuronas espejo se encienden en las mismas áreas de dolor en tu cerebro. ¡Literalmente sientes una pizca de su dolor! Esto es lo que crea la empatía.",
+      "La empatía es el superpoder humano que nos permite conectarnos profundamente con los demás. Nos hace querer ayudar a alguien que está triste y nos hace reír cuando vemos a alguien carcajearse (por eso la risa es tan contagiosa). Las personas con alta inteligencia emocional saben leer las caras, el tono de voz y el lenguaje corporal de los demás como si fueran un libro abierto, creando amistades fuertes y resolviendo problemas sin pelear.",
+      "En el universo de Star Wars, la Fuerza fluye a través de todos los seres vivos, conectándolos. Cuando un Jedi usa la Fuerza para 'sentir' las emociones o las intenciones de otra criatura, está usando una versión amplificada e hiperdesarrollada de la inteligencia emocional y las neuronas espejo. No necesitan palabras; pueden sentir el miedo, la tristeza o el lado luminoso en el interior del corazón de otra persona de manera instintiva y clara.",
+      "Desarrollar tu inteligencia emocional toma tiempo. El primer paso es nombrar tus emociones: decir 'estoy frustrado' en lugar de simplemente gritar y romper cosas. El segundo paso es observar a los demás e intentar imaginar sinceramente cómo se ven las cosas desde sus propios zapatos. Al entrenar tu empatía, te vuelves un líder compasivo, alguien que trae luz y paz a tus amigos y a tu comunidad, igual que los guardianes de la paz galáctica."
+    ],
+    expandables: [
+      { 
+        label: 'En la Película', 
+        icon: 'zap', 
+        text: 'En el final del Episodio VI: El Retorno del Jedi, Luke Skywalker demuestra la forma más elevada y pura de inteligencia emocional y empatía de toda la saga. A pesar de que su padre, Darth Vader, es un monstruo despiadado que aterroriza la galaxia, Luke se niega a pelear y dice "Siento el bien en ti, el conflicto". Gracias a esa profunda conexión empática inquebrantable, Luke logra tocar el corazón enterrado de Anakin Skywalker, redimiéndolo y salvando el universo.' 
+      },
+      { 
+        label: 'Dato Científico', 
+        icon: 'atom', 
+        text: 'Las neuronas espejo fueron descubiertas casi por accidente en la década de 1990 por un equipo de neurocientíficos italianos liderados por Giacomo Rizzolatti mientras estudiaban los cerebros de los monos macacos. Notaron asombrados que las neuronas motoras del mono se disparaban enormemente con solo mirar a un investigador humano recoger un maní, exactamente de la misma manera que si el propio mono hubiera recogido físicamente el alimento.' 
+      }
+    ],
+    fact: 'La Inteligencia Emocional, popularizada mundialmente por Daniel Goleman, es la capacidad de identificar, evaluar y controlar las emociones propias y ajenas. La base neurológica de la empatía humana se atribuye fuertemente a las neuronas espejo, que nos permiten resonar emocionalmente con los demás.'
+  },
+  {
+    id: 'lado-oscuro-cortisol',
+    title: 'El Lado Oscuro: Estrés y Cortisol',
+    color: '#EF5350',
+    btnImage: '/assets/starwars/infographic_jedi/btn_lado_oscuro_cortisol.png',
+    image: '/assets/starwars/infographic_jedi/hero_lado_oscuro_cortisol.png',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_lado_oscuro_cortisol.png',
+    bannerCaption: 'El miedo lleva a la ira, la ira al odio... y el estrés crónico daña el cerebro.',
+    content: [
+      "El sabio Maestro Yoda dijo una vez la frase más famosa de la psicología galáctica: 'El miedo es el camino hacia el Lado Oscuro. El miedo lleva a la ira, la ira lleva al odio, el odio lleva al sufrimiento'. Aunque suena a misticismo espacial, estas sabias palabras describen perfectamente lo que ocurre químicamente en nuestro propio cuerpo cuando nos dejamos consumir por el estrés negativo, la ansiedad y el pánico constante.",
+      "Cuando sentimos mucho miedo o enojo, nuestro cuerpo libera una hormona poderosa llamada 'Cortisol'. Un poquito de cortisol es bueno; te ayuda a despertar por la mañana y te da un impulso de energía si tienes que correr una carrera deportiva. Pero cuando vives constantemente enojado, estresado por las tareas o con miedo, tu cuerpo se inunda con cantidades tóxicas de cortisol día y noche, lo que los médicos llaman 'estrés crónico'.",
+      "El cortisol en exceso es como un veneno lento para tu cerebro. Los científicos, como el famoso investigador Bruce McEwen, descubrieron que el estrés crónico literalmente encoge partes vitales del cerebro, específicamente el 'hipocampo', que es la zona donde guardamos los recuerdos y aprendemos cosas nuevas. Además, el exceso de estrés te hace estar de mal humor, te enferma del estómago y baja las defensas de tu cuerpo para combatir los virus.",
+      "La trágica caída de Anakin Skywalker hacia el Lado Oscuro para convertirse en Darth Vader es la historia perfecta del daño que causa el estrés extremo. Anakin estaba aterrorizado y obsesionado con el miedo a perder a sus seres queridos. Esa ansiedad constante lo llenó de ira y nubló por completo su juicio y su razón. El Lado Oscuro no es magia; es la representación de dejar que las emociones destructivas y el cortisol tomen el control total de tus acciones.",
+      "La psicología positiva nos enseña cómo evitar caer en este Lado Oscuro emocional. Cultivar la gratitud diaria (dar gracias por lo bueno que tienes), dormir bien, hacer ejercicio, y platicar de tus miedos con alguien en quien confías, reduce drásticamente los niveles de cortisol en tu sangre. Aprender a soltar lo que no puedes controlar, como enseñan los Jedi, es el escudo científico más fuerte contra la toxicidad del estrés."
+    ],
+    expandables: [
+      { 
+        label: 'En la Película', 
+        icon: 'zap', 
+        text: 'En el Episodio III: La Venganza de los Sith, el Canciller Palpatine (Darth Sidious) manipula magistralmente el miedo natural del joven Anakin de perder a su esposa Padmé. Palpatine actúa como una fuente constante de estrés psicológico tóxico, susurrándole mentiras que aumentan su paranoia y aislamiento. Cuando el miedo y la desesperación de Anakin alcanzan su punto máximo, su corteza prefrontal lógica se apaga por completo, y sucumbe a las pasiones violentas del Lado Oscuro.' 
+      },
+      { 
+        label: '¿Sabías que...?', 
+        icon: 'clock', 
+        text: 'Los estudios de neurobiología y fisiología humana demuestran que el llanto emocional real (las lágrimas de tristeza o ira extrema) contiene trazas y niveles significativos de cortisol y de otras hormonas del estrés. Los científicos postulan que el acto físico de llorar es literalmente una forma asombrosa en que nuestro cuerpo se purga y se limpia expulsando esas sustancias químicas dañinas para ayudarnos a sentirnos aliviados y en paz después.' 
+      }
+    ],
+    fact: 'El cortisol es la principal hormona del estrés en el cuerpo humano. Aunque es vital para la supervivencia a corto plazo, el estrés crónico inunda el cerebro con niveles tóxicos de cortisol, lo que deteriora severamente la memoria, debilita el sistema inmunológico y nubla el juicio crítico.'
+  },
+  {
+    id: 'sueno-jedi',
+    title: 'Sueño REM: El Entrenamiento Nocturno',
+    color: '#AB47BC',
+    btnImage: '/assets/starwars/infographic_jedi/btn_sueno_jedi.png',
+    image: '/assets/starwars/infographic_jedi/hero_sueno_jedi.png',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_sueno_jedi.png',
+    bannerCaption: 'Incluso los Maestros más poderosos necesitan que su cerebro se repare en la noche.',
+    content: [
+      "Podrías pensar que cuando duermes por la noche, tu cerebro simplemente se apaga como si fuera el interruptor de una computadora. ¡Nada más lejos de la realidad! Mientras tú estás profundamente dormido y roncando, tu cerebro está trabajando a toda máquina, más activo que nunca. Dormir bien es el superpoder menos valorado y más increíble que tenemos, y es absolutamente necesario para mantener la cordura y aprender cosas nuevas.",
+      "Hay una fase mágica del sueño llamada 'Sueño REM' (Movimiento Rápido de los Ojos). Durante esta etapa, que ocurre varias veces durante la noche, es cuando tenemos los sueños más vívidos y locos. Pero la ciencia moderna, liderada por expertos del sueño como Matthew Walker, ha descubierto que el sueño REM es como una terapia nocturna gratuita. El cerebro toma todas las emociones difíciles del día, les quita la carga de estrés, y las organiza pacíficamente.",
+      "Además de sanar las emociones, el sueño es el momento en que el cerebro guarda la información de forma permanente. Si pasaste todo el día practicando un truco nuevo en la bicicleta o estudiando para un examen, tu cerebro repite esas mismas conexiones neuronales miles de veces durante la noche profunda para consolidar el aprendizaje. Si no duermes bien, es como si no hubieras guardado el documento de tu computadora, y al día siguiente ¡se te olvida casi todo!",
+      "Los Jedi en el templo tienen rutinas muy estrictas de descanso. Saben que un cuerpo agotado y una mente privada de sueño son blancos fáciles para el Lado Oscuro. Las ilusiones, la impaciencia y la pérdida de control en el uso de la Fuerza son consecuencias directas de no descansar el cerebro. La conexión mística a menudo se revela en los sueños y visiones nocturnas, donde la mente subconsciente está completamente libre del ruido.",
+      "Para tener un verdadero entrenamiento nocturno de Maestro, debes alejarte de las pantallas brillantes de los celulares y tabletas al menos una hora antes de dormir (la luz azul engaña a tu cerebro haciéndole creer que es de día). Mantén tu cuarto oscuro y fresco. Al darle a tu cuerpo las valiosas 9 a 10 horas de sueño que los niños y adolescentes necesitan, estarás construyendo un cerebro invencible, sano y listo para cualquier desafío galáctico."
+    ],
+    expandables: [
+      { 
+        label: 'En la Película', 
+        icon: 'zap', 
+        text: 'A lo largo de toda la saga, los sueños, las visiones y el descanso son elementos cruciales en la vida de los usuarios de la Fuerza. Anakin sufre de horribles pesadillas proféticas que le impiden descansar, lo que deteriora enormemente su salud mental y aumenta su ansiedad diurna. Por otro lado, un sueño reparador y las visiones meditativas guiadas permiten a personajes sabios como Yoda o Rey encontrar respuestas profundas y claridad en momentos de máxima confusión.' 
+      },
+      { 
+        label: 'Dato Científico', 
+        icon: 'atom', 
+        text: 'Durante la etapa de sueño profundo no REM, el cerebro humano hace algo extraordinario y fascinante: literalmente reduce un poco el tamaño físico de sus células para permitir que el fluido cefalorraquídeo fluya a raudales, actuando como un potente sistema de lavado o lavadora interna que limpia y elimina por completo las toxinas acumuladas durante las horas de vigilia, previniendo el daño cerebral a largo plazo.' 
+      }
+    ],
+    fact: 'El sueño REM (Movimiento Rápido de los Ojos) es una fase crítica del descanso nocturno donde se produce la consolidación de la memoria y la regulación emocional profunda. El neurocientífico Matthew Walker describe el sueño como la herramienta natural más efectiva que poseemos para reiniciar nuestra salud cerebral y física diaria.'
+  }
+];
+
+const DIRECTIONS = ['up', 'down', 'left', 'right'];
+const dirVariants = {
+  up:    { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } },
+  down:  { hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } },
+  left:  { hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0 } },
+  right: { hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }
+};
+
+const EXPAND_ICONS = {
+  zap: <Zap size={18} />,
+  clock: <Clock size={18} />,
+  atom: <Atom size={18} />
+};
+
+/* =========================================================================
+   3. COMPONENTS
+   ========================================================================= */
+
+const StarField = () => {
+  const canvasRef = useRef(null);
+  
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    
+    const setSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    setSize();
+    window.addEventListener('resize', setSize);
+    
+    const stars = Array.from({ length: 150 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 1.5,
+      opacity: Math.random(),
+      speed: (Math.random() * 0.05) + 0.01
+    }));
+
+    let animationFrameId;
+    const render = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach(star => {
+        star.opacity += star.speed;
+        if (star.opacity > 1 || star.opacity < 0) star.speed *= -1;
+        
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(200, 220, 255, ${Math.abs(star.opacity)})`;
+        ctx.fill();
+      });
+      
+      if (Math.random() < 0.005) {
+        ctx.beginPath();
+        const startX = Math.random() * canvas.width;
+        const startY = Math.random() * (canvas.height / 2);
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(startX - 20, startY + 20);
+        ctx.strokeStyle = 'rgba(200,220,255,0.8)';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      }
+      
+      animationFrameId = requestAnimationFrame(render);
+    };
+    render();
+    
+    return () => {
+      window.removeEventListener('resize', setSize);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
+  return <canvas ref={canvasRef} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }} />;
+};
+
+const GalacticHeader = ({ nodes, activeId }) => {
+  return (
+    <div style={{ textAlign: 'center', marginBottom: '2rem', position: 'relative', zIndex: 10 }}>
+      <h1 style={{ 
+        fontFamily: '"Oswald", sans-serif', 
+        fontSize: '2.5rem', 
+        fontWeight: 700, 
+        color: '#AB47BC',
+        letterSpacing: '2px',
+        margin: '0 0 0.5rem 0',
+        textTransform: 'uppercase',
+        textShadow: '0 2px 10px rgba(171, 71, 188, 0.4)'
+      }}>
+        EL CÓDIGO JEDI
+      </h1>
+      <h2 style={{
+        fontFamily: '"Lora", serif',
+        fontSize: '1rem',
+        color: '#B0BEC5',
+        margin: 0,
+        letterSpacing: '1px'
+      }}>
+        NEUROCIENCIA &middot; MINDFULNESS &middot; EMPATÍA
+      </h2>
+      
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
+        {nodes.map(n => (
+          <motion.div 
+            key={n.id} 
+            layoutId={n.id === activeId ? "activeDotSwSec7" : undefined}
+            style={{ width: 12, height: 12, borderRadius: '50%', backgroundColor: n.id === activeId ? n.color : '#2A2D3E', transition: 'background-color 0.3s' }} 
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const NodeButton = ({ node, isVisited, onClick }) => {
+  const isComplete = isVisited(node.id);
+  
+  return (
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={() => onClick(node)}
+      style={{
+        position: 'relative',
+        width: '90px',
+        height: '90px',
+        borderRadius: '50%',
+        padding: 0,
+        border: `3px solid ${isComplete ? node.color : '#333'}`,
+        background: '#1A1C29',
+        cursor: 'pointer',
+        overflow: 'hidden',
+        boxShadow: isComplete ? `0 0 15px ${node.color}55` : 'none',
+        zIndex: 10
+      }}
+    >
+      <img 
+        src={node.btnImage} 
+        alt={node.title}
+        style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: isComplete ? 1 : 0.6 }}
+      />
+      {isComplete && (
+        <div style={{
+          position: 'absolute',
+          top: '5px',
+          right: '5px',
+          background: node.color,
+          borderRadius: '50%',
+          padding: '2px'
+        }}>
+          <Sparkles size={12} color="#000" />
+        </div>
+      )}
+    </motion.button>
+  );
+};
+
+const ExpandableSection = ({ data, color, direction }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const variant = dirVariants[direction] || dirVariants.up;
+  
+  return (
+    <div style={{ marginBottom: '1rem', background: '#1A1C29', borderRadius: '8px', overflow: 'hidden', border: `1px solid ${color}33` }}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        style={{
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '1rem',
+          background: isOpen ? `${color}11` : 'transparent',
+          border: 'none',
+          color: '#FFF',
+          cursor: 'pointer',
+          fontFamily: '"Oswald", sans-serif'
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <span style={{ color: color }}>{EXPAND_ICONS[data.icon] || <Star size={18}/>}</span>
+          <span style={{ fontWeight: 600, letterSpacing: '0.5px' }}>{data.label}</span>
+        </div>
+        <motion.div animate={{ rotate: isOpen ? 180 : 0 }}>
+          <ChevronDown size={18} color={color} />
+        </motion.div>
+      </button>
+      
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            variants={variant}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            style={{ padding: '0 1rem 1rem 1rem' }}
+          >
+            <p style={{ margin: 0, fontFamily: '"Lora", serif', fontSize: '0.9rem', lineHeight: 1.6, color: '#CFD8DC' }}>
+              {data.text}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+const ContentPanel = ({ node, onClose, onNext, isLast }) => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  
+  const DecoComp1 = DECO_MAP[node.id]?.[0] || DecoJediSymbol;
+  const DecoComp2 = DECO_MAP[node.id]?.[1] || DecoHolocron;
+  
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50, scale: 0.9 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      style={{
+        position: 'fixed',
+        inset: '2rem',
+        background: '#0B0D17',
+        borderRadius: '24px',
+        overflow: 'hidden',
+        zIndex: 100,
+        boxShadow: `0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px ${node.color}33`,
+        display: 'flex',
+        flexDirection: 'column'
+      }}
+    >
+      <DecoComp1 size={200} color={node.color} style={{ position: 'absolute', top: '-50px', left: '-50px', opacity: 0.05, zIndex: 0 }} />
+      <DecoComp2 size={150} color={node.color} style={{ position: 'absolute', bottom: '10%', right: '-20px', opacity: 0.05, zIndex: 0 }} />
+      
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem 2rem', background: `linear-gradient(90deg, #1A1C29 0%, ${node.color}22 100%)`, zIndex: 10, borderBottom: `1px solid ${node.color}33` }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div style={{ width: 40, height: 40, borderRadius: '50%', background: node.color, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <img src={node.btnImage} alt="icon" style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover' }} />
+          </div>
+          <h2 style={{ margin: 0, fontFamily: '"Oswald", sans-serif', fontSize: '1.5rem', color: '#FFF' }}>{node.title}</h2>
+        </div>
+        <button onClick={onClose} style={{ background: 'rgba(0,0,0,0.2)', border: 'none', color: '#FFF', cursor: 'pointer', padding: '0.5rem', borderRadius: '50%' }}>
+          <X size={24} />
+        </button>
+      </div>
+      
+      <div style={{ flex: 1, overflowY: 'auto', zIndex: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: '280px' }}>
+          <div style={{ padding: '2rem', background: '#1A1C29', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#E0E0E0' }}>
+              <span style={{ fontSize: '3rem', float: 'left', lineHeight: '2.5rem', paddingRight: '8px', color: node.color, fontFamily: '"Oswald", sans-serif' }}>
+                {node.content[0].charAt(0)}
+              </span>
+              {node.content[0].substring(1)}
+            </p>
+          </div>
+          <div style={{ 
+            backgroundImage: `url(${node.image})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center',
+            borderLeft: `4px solid ${node.color}`
+          }} />
+        </div>
+
+        <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC' }}>
+            {node.content[1]}
+          </p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '1rem' }}>
+            <div style={{ position: 'relative', padding: '1.5rem', background: `linear-gradient(135deg, ${node.color}11, transparent)`, border: `1px solid ${node.color}33`, borderRadius: '12px' }}>
+              <div style={{ position: 'absolute', top: -12, left: 16, background: '#0B0D17', padding: '0 8px', color: node.color, fontWeight: 'bold', fontSize: '0.9rem', fontFamily: '"Oswald", sans-serif' }}>
+                <Star size={14} style={{ display: 'inline', marginRight: 4, verticalAlign: 'middle' }}/> DATAFILA
+              </div>
+              <p style={{ fontFamily: '"Lora", serif', fontSize: '1rem', lineHeight: 1.6, color: '#FFF', margin: 0 }}>
+                {node.fact}
+              </p>
+            </div>
+            <div>
+              {node.expandables.map((exp, i) => (
+                <ExpandableSection key={i} data={exp} color={node.color} direction={DIRECTIONS[i % DIRECTIONS.length]} />
+              ))}
+            </div>
+          </div>
+          
+          <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC', marginTop: '1rem' }}>
+            {node.content[2]}
+          </p>
+
+          {node.bannerImage && (
+            <div style={{ margin: '2rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}55` }}>
+              <img src={node.bannerImage} alt="banner" style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+              {node.bannerCaption && (
+                <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic' }}>
+                  {node.bannerCaption}
+                </div>
+              )}
+            </div>
+          )}
+
+          <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC' }}>
+            {node.content[3]}
+          </p>
+          <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC' }}>
+            {node.content[4]}
+          </p>
+        </div>
+      </div>
+      
+      <div style={{ padding: '1rem 2rem', background: '#1A1C29', borderTop: `1px solid ${node.color}33`, display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
+        <div style={{ color: '#90A4AE', fontSize: '0.9rem', fontFamily: '"Oswald", sans-serif' }}>
+          ARCHIVOS DEL TEMPLO / {node.title.toUpperCase()}
+        </div>
+        <button 
+          onClick={onNext}
+          style={{ 
+            background: node.color, 
+            color: '#000', 
+            border: 'none', 
+            padding: '0.75rem 2rem', 
+            borderRadius: '24px', 
+            fontWeight: 'bold', 
+            fontFamily: '"Oswald", sans-serif',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            boxShadow: `0 4px 15px ${node.color}66`
+          }}
+        >
+          {isLast ? 'FINALIZAR' : 'SIGUIENTE'} <ChevronRight size={18} />
+        </button>
+      </div>
+    </motion.div>
+  );
+};
+
+export default function InteractiveInfographic_SwSec7() {
+  const [activeNode, setActiveNode] = useState(null);
+  const [visitedNodes, setVisitedNodes] = useState(new Set());
+
+  const progress = (visitedNodes.size / INFOGRAPHIC_NODES.length) * 100;
+  const isAllComplete = visitedNodes.size === INFOGRAPHIC_NODES.length;
+
+  const handleNodeClick = (node) => {
+    setActiveNode(node.id);
+    if (!visitedNodes.has(node.id)) {
+      setVisitedNodes(prev => new Set(prev).add(node.id));
+    }
+  };
+
+  const handleNext = () => {
+    const currentIndex = INFOGRAPHIC_NODES.findIndex(n => n.id === activeNode);
+    if (currentIndex < INFOGRAPHIC_NODES.length - 1) {
+      const nextNode = INFOGRAPHIC_NODES[currentIndex + 1];
+      handleNodeClick(nextNode);
+    } else {
+      setActiveNode(null);
+    }
+  };
+
+  return (
+    <div style={{ position: 'relative', width: '100%', minHeight: '100vh', background: '#05060A', overflow: 'hidden', fontFamily: '"Lora", serif' }}>
+      <StarField />
+      
+      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.15, backgroundImage: 'url(/assets/starwars/infographic_jedi/bg_jedi.png)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
+
+      <div style={{ position: 'relative', zIndex: 10, padding: '3rem 2rem', maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <GalacticHeader nodes={INFOGRAPHIC_NODES} activeId={activeNode} />
+        
+        <div style={{ 
+          position: 'relative', 
+          width: '100%', 
+          maxWidth: '800px', 
+          height: '400px',
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '2rem',
+          marginTop: '3rem'
+        }}>
+          {INFOGRAPHIC_NODES.map((node, i) => (
+            <motion.div
+              key={node.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+            >
+              <NodeButton node={node} isVisited={(id) => visitedNodes.has(id)} onClick={handleNodeClick} />
+            </motion.div>
+          ))}
+        </div>
+
+        <div style={{ width: '100%', maxWidth: '600px', marginTop: '4rem', background: '#1A1C29', borderRadius: '12px', padding: '1rem', border: '1px solid #333' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontFamily: '"Oswald", sans-serif', color: '#90A4AE' }}>
+            <span>CONEXIÓN CON LA FUERZA</span>
+            <span>{Math.round(progress)}%</span>
+          </div>
+          <div style={{ width: '100%', height: '8px', background: '#0B0D17', borderRadius: '4px', overflow: 'hidden' }}>
+            <motion.div 
+              initial={{ width: 0 }}
+              animate={{ width: `${progress}%` }}
+              style={{ height: '100%', background: 'linear-gradient(90deg, #AB47BC, #42A5F5)', boxShadow: '0 0 10px #42A5F5' }}
+            />
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {isAllComplete && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}
+            >
+              <img src="/assets/starwars/infographic_jedi/badge_jedi.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+              ¡ENTRENAMIENTO JEDI COMPLETADO!
+              <Sparkles size={24} />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+
+        <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
+          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÓN (Bibliografía)</h3>
+          <ul style={{ margin: 0, padding: '0 0 0 1rem', color: '#78909C', fontFamily: '"Lora", serif', fontSize: '0.9rem', lineHeight: 1.8 }}>
+            {BIBLIOGRAPHY.map((item, idx) => (
+              <li key={idx} style={{ marginBottom: '0.5rem' }}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+
+      <AnimatePresence>
+        {activeNode && (
+          <ContentPanel 
+            node={INFOGRAPHIC_NODES.find(n => n.id === activeNode)} 
+            onClose={() => setActiveNode(null)}
+            onNext={handleNext}
+            isLast={INFOGRAPHIC_NODES.findIndex(n => n.id === activeNode) === INFOGRAPHIC_NODES.length - 1}
+          />
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}

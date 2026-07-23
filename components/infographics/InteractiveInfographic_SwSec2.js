@@ -95,6 +95,10 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/starwars/infographic_mundos/hero_tatooine.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_tatooine.png',
     bannerCaption: 'El doble atardecer de Tatooine — inspirado en el descubrimiento de Kepler-16b',
+    extraImages: [
+      { src: '/assets/starwars/infographic_mundos/extra_tatooine_atardecer.png', caption: 'Atardecer con dos soles sobre las chozas de Tatooine' },
+      { src: '/assets/starwars/infographic_mundos/extra_tatooine_pueblo.png', caption: 'El pueblo de Tatooine bajo los dos soles del desierto' }
+    ],
     content: [
       "¿Te imaginas caminar por la calle en un día soleado y tener no una, sino dos sombras detrás de ti? Así sería la vida en un mundo con dos soles. En 2011, los astrónomos descubrieron un planeta real que orbita alrededor de un par de estrellas, igual que el famoso hogar de Luke Skywalker. Este descubrimiento sacudió al mundo científico porque durante décadas se pensó que un planeta no podría mantener una órbita estable alrededor de dos estrellas sin ser expulsado al vacío del espacio.",
       "A estos mundos los llamamos 'planetas circumbinarios', una palabra elegante para decir que viajan en un gran círculo alrededor de dos estrellas que giran juntas en el centro. Las dos estrellas de Kepler-16 se emparejan bailando un vals cósmico, y el planeta las rodea a lo lejos observando el espectáculo. La estrella principal (Kepler-16A) es una enana naranja con un 69% de la masa de nuestro Sol, mientras que su compañera (Kepler-16B) es una enana roja mucho más pequeña, con solo un 20%.",
@@ -153,6 +157,10 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/starwars/infographic_mundos/hero_hoth.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_hoth.png',
     bannerCaption: 'Europa, la luna helada de Júpiter, tiene un océano subterráneo que podría albergar vida',
+    extraImages: [
+      { src: '/assets/starwars/infographic_mundos/extra_hoth_vader.png', caption: 'Vader patrullando las llanuras heladas de Hoth' },
+      { src: '/assets/starwars/infographic_mundos/extra_hoth_jinete.png', caption: 'Un jinete solitario sobre las colinas nevadas' }
+    ],
     content: [
       "Imagina una pista de patinaje gigante del tamaño de una luna entera, llena de grietas kilométricas y crestas afiladas como cuchillos de hielo. En nuestro propio sistema solar tenemos mundos parecidos al congelado planeta Hoth. La luna Europa, de Júpiter, está cubierta por una corteza de hielo durísima, y su superficie se congela a -160°C. Si pudieras pararte en ella, verías un paisaje blanco y agrietado extendiéndose hasta el horizonte, con el gigantesco Júpiter dominando el cielo.",
       "Pero la verdadera magia ocurre bajo ese hielo. La inmensa gravedad de Júpiter estira y aplasta a Europa como si fuera una pelota antiestrés cósmica. A este fenómeno los científicos lo llaman 'calentamiento mareal'. La fricción constante dentro de la luna genera suficiente calor para derretir el hielo por debajo, formando un gigantesco océano oscuro que contiene el doble de agua que todos los océanos de la Tierra combinados.",
@@ -182,6 +190,10 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/starwars/infographic_mundos/hero_dagobah.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_dagobah.png',
     bannerCaption: 'En el periodo Carbonífero, hace 300 millones de años, la Tierra lucía como Dagobah',
+    extraImages: [
+      { src: '/assets/starwars/infographic_mundos/extra_dagobah_pantano.png', caption: 'El oscuro pantano de Dagobah bajo la lluvia' },
+      { src: '/assets/starwars/infographic_mundos/extra_dagobah_xwing.png', caption: 'El X-Wing de Luke hundido en el pantano de Dagobah' }
+    ],
     content: [
       "Si viajaras en el tiempo unos 300 millones de años, aterrizarías en un planeta muy similar al pantanoso exilio de Yoda. La Tierra estaba en pleno período Carbonífero (359-299 millones de años atrás), un mundo cálido y húmedo cubierto por espesos bosques y pantanos impenetrables. No había flores, ni pájaros, ni mamíferos. Solo helechos gigantes, licópodos de 40 metros de alto y el sonido de insectos zumbando entre la niebla.",
       "Durante este período, la atmósfera tenía mucho más oxígeno que hoy. Mientras que ahora respiramos un 21% de oxígeno, en aquel entonces los niveles alcanzaban el 35%, casi el doble. Los científicos descubrieron esto analizando burbujas de aire atrapadas en ámbar fósil. Este exceso de oxígeno provocó un fenómeno sorprendente que habría fascinado a cualquier biólogo: ¡los insectos crecieron a tamaños absolutamente monstruosos!",
@@ -612,6 +624,59 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
                   {node.bannerCaption}
                 </p>
               )}
+            </div>
+          )}
+
+          {/* Extra Images Gallery */}
+          {node.extraImages && node.extraImages.length > 0 && (
+            <div style={{ margin: '1.5rem 0' }}>
+              <h4 style={{ fontFamily: '"Oswald", sans-serif', color: node.color, margin: '0 0 1rem 0', fontSize: '0.85rem', letterSpacing: '2px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Star size={14} /> GALERÍA DEL PLANETA
+              </h4>
+              <div style={{ display: 'grid', gridTemplateColumns: node.extraImages.length === 1 ? '1fr' : '1fr 1fr', gap: '1rem' }}>
+                {node.extraImages.map((img, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                    style={{
+                      borderRadius: '12px',
+                      overflow: 'hidden',
+                      position: 'relative',
+                      border: `1px solid ${node.color}30`,
+                      background: 'rgba(0,0,0,0.3)',
+                    }}
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.caption || ''}
+                      style={{
+                        width: '100%',
+                        height: '180px',
+                        objectFit: 'cover',
+                        display: 'block',
+                      }}
+                    />
+                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 50%, rgba(10,12,30,0.7) 100%)' }} />
+                    {img.caption && (
+                      <p style={{
+                        position: 'absolute',
+                        bottom: '0.5rem',
+                        width: '100%',
+                        textAlign: 'center',
+                        fontSize: '0.75rem',
+                        color: 'rgba(255,255,255,0.8)',
+                        margin: 0,
+                        fontStyle: 'italic',
+                        padding: '0 0.5rem',
+                        textShadow: '0 1px 3px rgba(0,0,0,0.9)',
+                      }}>
+                        {img.caption}
+                      </p>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
             </div>
           )}
           
