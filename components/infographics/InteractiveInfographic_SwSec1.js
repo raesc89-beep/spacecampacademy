@@ -101,13 +101,6 @@ const BIBLIOGRAPHY = [
   "Gaia Collaboration (2022). 'Gaia Data Release 3', Astronomy & Astrophysics, 674"
 ];
 
-const FALCON_GALLERY = [
-  { src: '/assets/starwars/infographic_kessel/falcon_hyperspace.png', caption: 'El Halcón Milenario — vista isométrica con detalles de ingeniería' },
-  { src: '/assets/starwars/infographic_kessel/falcon_kessel_run.png', caption: 'Navegando por el espacio profundo a toda velocidad' },
-  { src: '/assets/starwars/infographic_kessel/falcon_cockpit_stars.png', caption: 'Plano técnico del Halcón Milenario — vista superior' },
-  { src: '/assets/starwars/infographic_kessel/falcon_asteroid_field.png', caption: 'El Halcón y un X-Wing: la nave que hizo el Corredor de Kessel' },
-  { src: '/assets/starwars/infographic_kessel/falcon_orbit_planet.png', caption: 'El carguero más rápido de la galaxia en órbita' },
-];
 
 const INFOGRAPHIC_NODES = [
   {
@@ -738,57 +731,6 @@ export default function InteractiveInfographic_SwSec1() {
           )}
         </AnimatePresence>
 
-        {/* Galería del Halcón Milenario */}
-        <div style={{ marginTop: '4rem', width: '100%', maxWidth: '800px' }}>
-          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#FFB74D', fontSize: '1.4rem', textAlign: 'center', marginBottom: '1.5rem', textShadow: '0 0 20px rgba(255,183,77,0.3)' }}>
-            🚀 EL HALCÓN MILENARIO EN EL CORREDOR DE KESSEL
-          </h3>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
-            gap: '1rem' 
-          }}>
-            {FALCON_GALLERY.map((img, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.15 }}
-                whileHover={{ scale: 1.03, y: -4 }}
-                style={{
-                  borderRadius: '12px',
-                  overflow: 'hidden',
-                  border: '1px solid rgba(255,183,77,0.3)',
-                  background: '#0B0D17',
-                  cursor: 'pointer',
-                  boxShadow: '0 4px 15px rgba(0,0,0,0.5)',
-                }}
-              >
-                <div style={{ position: 'relative', overflow: 'hidden', height: '160px' }}>
-                  <img 
-                    src={img.src} 
-                    alt={img.caption}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
-                    onMouseOver={e => e.currentTarget.style.transform = 'scale(1.08)'}
-                    onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
-                  />
-                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 50%, rgba(5,6,10,0.85) 100%)' }} />
-                </div>
-                <p style={{ 
-                  padding: '0.6rem 0.8rem', 
-                  margin: 0, 
-                  fontSize: '0.8rem', 
-                  color: '#B0BEC5', 
-                  fontFamily: '"Oswald", sans-serif',
-                  textAlign: 'center',
-                  lineHeight: 1.3
-                }}>
-                  {img.caption}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
 
         <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
           <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS JEDI (Bibliografía)</h3>
