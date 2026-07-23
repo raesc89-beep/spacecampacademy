@@ -84,7 +84,7 @@ const SW_MODULES = [
 
 // ─── Stars Component ─────────────────────────────────────────────────────────
 function Stars() {
-  const stars = Array.from({ length: 200 }, (_, i) => {
+  const stars = Array.from({ length: 180 }, (_, i) => {
     // Keep stars away from the Death Star center area (roughly 25%-75% x, 10%-60% y)
     let left, top;
     do {
@@ -95,11 +95,10 @@ function Stars() {
       id: i,
       left,
       top,
-      size: Math.random() * 2.5 + 0.5,
-      opacity: Math.random() * 0.7 + 0.1,
+      size: Math.random() * 1.5 + 0.3,
+      opacity: Math.random() * 0.6 + 0.1,
       duration: Math.random() * 4 + 1.5,
       delay: Math.random() * 4,
-      color: Math.random() > 0.8 ? '#88ccff' : (Math.random() > 0.9 ? '#ffcc88' : 'white'),
     };
   });
 
@@ -113,11 +112,11 @@ function Stars() {
           width: `${s.size}px`,
           height: `${s.size}px`,
           borderRadius: '50%',
-          background: s.color,
+          background: 'white',
           opacity: s.opacity,
           animation: `twinkle ${s.duration}s ease-in-out infinite alternate`,
           animationDelay: `${s.delay}s`,
-          boxShadow: `0 0 ${s.size * 4}px ${s.color}, 0 0 ${s.size * 8}px ${s.color}`,
+          boxShadow: `0 0 ${s.size * 2}px rgba(255,255,255,0.6), 0 0 ${s.size * 3}px rgba(255,255,255,0.3)`,
         }} />
       ))}
     </div>
@@ -137,7 +136,7 @@ function StarshipsAnim() {
         <img 
           src="/assets/starwars/ship1.png" 
           alt="Snowspeeder"
-          style={{ width: '100px', transform: 'scaleX(-1)', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))' }}
+          style={{ width: '80px', transform: 'scaleX(-1)', filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.2))' }}
         />
       </motion.div>
       {/* Nave 2: X-Wing (Persecución: el X-Wing huye) */}
@@ -146,7 +145,7 @@ function StarshipsAnim() {
         alt="X-Wing"
         animate={{ x: ['-30vw', '130vw'], y: ['70vh', '10vh'], rotate: [-10, -25] }}
         transition={{ repeat: Infinity, duration: 25, repeatDelay: 20, ease: "linear", delay: 5 }}
-        style={{ position: 'absolute', top: 0, left: 0, width: '160px', filter: 'drop-shadow(0 0 15px rgba(0,255,255,0.4))' }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '128px', filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.2))' }}
       />
       {/* Nave 3: TIE Fighter (Persecución: persigue al X-wing de cerca) */}
       <motion.img 
@@ -154,7 +153,7 @@ function StarshipsAnim() {
         alt="TIE Fighter"
         animate={{ x: ['-20vw', '120vw'], y: ['75vh', '15vh'], rotate: [-5, -15] }}
         transition={{ repeat: Infinity, duration: 24, repeatDelay: 21, ease: "linear", delay: 7 }}
-        style={{ position: 'absolute', top: 0, left: 0, width: '90px', filter: 'drop-shadow(0 0 10px rgba(255,50,50,0.6))' }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '72px', filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.2))' }}
       />
     </div>
   );
@@ -217,19 +216,19 @@ function SWModuleNode({ mod, idx, isCompleted }) {
         }}
       >
         <motion.div
-          animate={{ y: [0, -10, 0] }}
+          animate={{ y: [0, -8, 0] }}
           transition={{ repeat: Infinity, duration: 4 + idx * 0.7, ease: 'easeInOut' }}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.7rem' }}
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem' }}
         >
-          {/* Circular image with blur vignette */}
+          {/* Circular image — Imperial Panel style */}
           <div style={{
             position: 'relative',
             width: 'clamp(60px, 7vw, 90px)',
             height: 'clamp(60px, 7vw, 90px)',
             borderRadius: '50%',
             boxShadow: hovered
-              ? `0 0 50px ${mod.color}cc, 0 0 20px ${mod.color}88, inset 0 0 20px ${mod.color}44`
-              : `0 0 25px ${mod.color}66, 0 0 8px ${mod.color}44`,
+              ? '0 0 25px rgba(120,180,255,0.35), 0 0 8px rgba(255,255,255,0.2)'
+              : '0 0 12px rgba(120,180,255,0.15), 0 0 4px rgba(255,255,255,0.1)',
             transition: 'all 0.35s ease',
           }}>
             {/* Image with radial mask for edge blur */}
@@ -241,20 +240,20 @@ function SWModuleNode({ mod, idx, isCompleted }) {
             }}>
               <img
                 src={mod.icon}
-                alt={mod.subtitle}
+                alt={mod.title}
                 style={{
                   width: '100%', height: '100%', objectFit: 'cover',
-                  transform: hovered ? 'scale(1.12)' : 'scale(1)',
+                  transform: hovered ? 'scale(1.08)' : 'scale(1)',
                   transition: 'transform 0.5s ease',
-                  filter: hovered ? 'brightness(1.15)' : 'brightness(0.85)',
+                  filter: hovered ? 'brightness(1.1) saturate(0.9)' : 'brightness(0.75) saturate(0.7)',
                 }}
               />
             </div>
-            {/* Outer energy ring */}
+            {/* Outer holographic ring */}
             <div style={{
               position: 'absolute', inset: '-3px', borderRadius: '50%',
-              border: `2px solid ${hovered ? mod.color + 'ff' : mod.color + '55'}`,
-              boxShadow: hovered ? `0 0 15px ${mod.color}` : 'none',
+              border: `1.5px solid ${hovered ? 'rgba(120,180,255,0.6)' : 'rgba(120,180,255,0.2)'}`,
+              boxShadow: hovered ? '0 0 10px rgba(120,180,255,0.3)' : 'none',
               transition: 'all 0.3s ease',
               pointerEvents: 'none',
             }} />
@@ -262,28 +261,28 @@ function SWModuleNode({ mod, idx, isCompleted }) {
             {isCompleted && (
               <div style={{
                 position: 'absolute', top: '0px', right: '0px',
-                background: '#00ff88', borderRadius: '50%',
-                width: '22px', height: '22px',
+                background: '#FFE81F', borderRadius: '50%',
+                width: '20px', height: '20px',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '12px', zIndex: 5,
-                boxShadow: '0 0 10px #00ff88',
+                fontSize: '11px', color: '#000', fontWeight: 'bold', zIndex: 5,
+                boxShadow: '0 0 8px rgba(255,232,31,0.5)',
               }}>✓</div>
             )}
           </div>
 
-          {/* Label */}
+          {/* Label — Imperial Panel */}
           <div style={{
-            color: 'white',
+            color: '#FFE81F',
             textAlign: 'center',
-            textShadow: `0 2px 8px ${mod.color}, 0 4px 16px rgba(0,0,0,0.9)`,
-            background: 'rgba(0,0,0,0.65)',
+            textShadow: '0 1px 6px rgba(0,0,0,0.9)',
+            background: 'rgba(2,3,8,0.75)',
             padding: '4px 14px',
-            borderRadius: '20px',
+            borderRadius: '6px',
             backdropFilter: 'blur(6px)',
-            border: `1px solid ${hovered ? mod.color : mod.color + '44'}`,
+            border: `1px solid ${hovered ? 'rgba(120,180,255,0.4)' : 'rgba(120,180,255,0.15)'}`,
             transition: 'all 0.3s ease',
           }}>
-            <div style={{ fontSize: 'clamp(0.65rem, 1vw, 0.85rem)', color: mod.color, fontWeight: 700, letterSpacing: '1px' }}>
+            <div style={{ fontSize: 'clamp(0.6rem, 0.95vw, 0.8rem)', fontWeight: 600, letterSpacing: '0.5px' }}>
               {mod.title}
             </div>
           </div>
@@ -300,18 +299,18 @@ function SWModuleNode({ mod, idx, isCompleted }) {
                 position: 'absolute',
                 top: '115%', left: '50%',
                 transform: 'translateX(-50%)',
-                background: 'rgba(4, 6, 20, 0.95)',
+                background: 'rgba(2,3,8,0.92)',
                 backdropFilter: 'blur(14px)',
-                border: `1px solid ${mod.color}`,
-                padding: '0.8rem 1.4rem',
-                borderRadius: '14px',
+                border: '1px solid rgba(255,232,31,0.4)',
+                padding: '0.7rem 1.2rem',
+                borderRadius: '8px',
                 whiteSpace: 'nowrap',
                 pointerEvents: 'none',
-                boxShadow: `0 8px 32px ${mod.color}55`,
+                boxShadow: '0 6px 24px rgba(0,0,0,0.7)',
                 zIndex: 100,
               }}
             >
-              <h4 style={{ margin: 0, fontSize: '1rem', color: mod.color }}>⚡ Iniciar Misión</h4>
+              <h4 style={{ margin: 0, fontSize: '0.9rem', color: '#FFE81F', fontWeight: 600 }}>⚡ Iniciar Misión</h4>
             </motion.div>
           )}
         </AnimatePresence>
@@ -412,7 +411,6 @@ export default function StarWarsHub() {
 
         {/* Twinkling stars blended with background */}
         <Stars />
-        <LaserBeams />
         <StarshipsAnim />
 
         {/* Constellation lines between modules */}
