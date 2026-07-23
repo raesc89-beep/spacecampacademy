@@ -101,6 +101,14 @@ const BIBLIOGRAPHY = [
   "Gaia Collaboration (2022). 'Gaia Data Release 3', Astronomy & Astrophysics, 674"
 ];
 
+const FALCON_GALLERY = [
+  { src: '/assets/starwars/infographic_kessel/falcon_hyperspace.png', caption: 'El Halcón Milenario saltando al hiperespacio' },
+  { src: '/assets/starwars/infographic_kessel/falcon_kessel_run.png', caption: 'Navegando entre agujeros negros en el Corredor de Kessel' },
+  { src: '/assets/starwars/infographic_kessel/falcon_cockpit_stars.png', caption: 'Vista desde la cabina hacia las estrellas infinitas' },
+  { src: '/assets/starwars/infographic_kessel/falcon_asteroid_field.png', caption: 'Esquivando asteroides a velocidad imposible' },
+  { src: '/assets/starwars/infographic_kessel/falcon_orbit_planet.png', caption: 'Orbitando un mundo desconocido con dos soles' },
+];
+
 const INFOGRAPHIC_NODES = [
   {
     id: 'parsec-definicion',
@@ -166,6 +174,8 @@ const INFOGRAPHIC_NODES = [
     color: '#AB47BC',
     btnImage: '/assets/starwars/infographic_kessel/btn_escalera.png',
     image: '/assets/starwars/infographic_kessel/hero_escalera.png',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_escalera.png',
+    bannerCaption: 'Cada peldaño de la escalera cósmica nos permite medir distancias cada vez más inmensas.',
     content: [
       "¿Cómo medirías la distancia a una ciudad lejana si no tuvieras un mapa ni un odómetro en tu auto? En la Tierra es relativamente fácil usar reglas o lásers, pero en el espacio profundo, los astrónomos no tienen una cinta métrica infinita. Una vez que las estrellas están demasiado lejos, el truco del paralaje estelar deja de funcionar porque el salto visual es tan microscópico que nuestros instrumentos no pueden detectarlo. Es aquí donde la ingeniosidad humana tuvo que construir lo que hoy conocemos cariñosamente como la 'Escalera de Distancias Cósmicas', un método paso a paso para medir el inabarcable universo.",
       "El primer gran peldaño de esta escalera se construyó gracias a la brillante astrónoma Henrietta Swan Leavitt en el año 1912. Ella estaba analizando montones de placas fotográficas y descubrió un tipo especial de estrellas latientes llamadas 'Cefeidas'. Henrietta notó un patrón asombrosamente rítmico y hermoso: cuanto más brillante era intrínsecamente la estrella, más tiempo tardaba en parpadear o latir. Este descubrimiento cambió la historia, porque al medir simplemente el tiempo que tardaba en pulsar una estrella lejana, los astrónomos ahora podían saber exactamente cuánta luz emitía de verdad.",
@@ -193,6 +203,8 @@ const INFOGRAPHIC_NODES = [
     color: '#FF7043',
     btnImage: '/assets/starwars/infographic_kessel/btn_velocidad.png',
     image: '/assets/starwars/infographic_kessel/hero_velocidad.png',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_velocidad.png',
+    bannerCaption: 'La luz viaja a 300,000 km/s — el límite absoluto del cosmos.',
     content: [
       "Si existiera una policía de tránsito en el cosmos, tendría un trabajo muy sencillo, porque en nuestro universo solo existe un único y estricto límite de velocidad que nadie puede romper: la velocidad de la luz. Conocida por la famosa letra 'c', la luz viaja en el vacío a la asombrosa e incomprensible rapidez de casi 300,000 kilómetros por cada segundo que pasa. A esta vertiginosa velocidad, un rayo de luz podría dar la vuelta a la Tierra entera siete veces y media en un solo segundo, o viajar desde la superficie de nuestra Luna hasta nuestros ojos en poco más de un segundo.",
       "Pero, ¿por qué nada puede ir más rápido que la luz? La culpa de esta prohibición cósmica la tiene un genio llamado Albert Einstein y su famosa teoría de la Relatividad Especial, publicada en 1905. Einstein descubrió que a medida que un objeto con masa, como una nave espacial o una persona, se mueve más y más rápido acelerando por el espacio, la energía que se requiere para empujarlo y aumentar aún más su velocidad crece exponencialmente. Para que algo sólido lograra alcanzar la velocidad exacta de la luz, requeriría una cantidad infinita de energía, lo cual es físicamente imposible en nuestra realidad.",
@@ -220,6 +232,8 @@ const INFOGRAPHIC_NODES = [
     color: '#66BB6A',
     btnImage: '/assets/starwars/infographic_kessel/btn_warp.png',
     image: '/assets/starwars/infographic_kessel/hero_warp.png',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_warp.png',
+    bannerCaption: 'Del concepto de Alcubierre a los solitones de Lentz: la evolución del motor de curvatura.',
     content: [
       "¿Es realmente imposible viajar más rápido que la luz sin romper las leyes estrictas de la física fundamental? Sorprendentemente, un brillante y atrevido físico teórico mexicano llamado Miguel Alcubierre propuso una idea revolucionaria en el año 1994 que dejó boquiabiertos a muchos científicos. Inspirado por la icónica ciencia ficción de Star Trek, desarrolló una asombrosa solución matemática basada en las mismísimas ecuaciones de la relatividad de Einstein, un concepto teórico que hoy en día todo el mundo conoce como el famoso e intrigante 'Motor de Curvatura' o 'Warp Drive'.",
       "El concepto ingenioso de Alcubierre es el siguiente: la nave en sí misma no se mueve más rápido que la luz a través de su espacio inmediato, algo que Einstein prohibió estrictamente. En lugar de eso, la nave se encapsula de forma segura dentro de una 'burbuja de curvatura' o burbuja de espacio-tiempo. El motor hipotético comprime o encoge rápidamente el espacio situado justo delante de la nave y expande velozmente el espacio ubicado justo detrás de ella. Al hacer esto, la nave simplemente surfea dócilmente en una ola del propio tejido espaciotemporal, deslizándose de forma majestuosa.",
@@ -276,6 +290,8 @@ const INFOGRAPHIC_NODES = [
     color: '#42A5F5',
     btnImage: '/assets/starwars/infographic_kessel/btn_navegacion.png',
     image: '/assets/starwars/infographic_kessel/hero_navegacion.png',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_navegacion.png',
+    bannerCaption: 'La Red del Espacio Profundo mantiene contacto con nuestras sondas más lejanas.',
     content: [
       "Navegar exitosamente a través de nuestro colosal Sistema Solar, para no hablar del casi infinito vacío del abismo interestelar, representa uno de los desafíos técnicos más monumentales, alucinantes y formidables de toda la gran historia de la ingeniería y de la humanidad contemporánea en sí misma. ¿Cómo puede una minúscula y delicada sonda espacial como la famosa nave Voyager 1 saber con absoluta exactitud en qué recóndito y oscuro lugar remoto se halla cuando está navegando a miles de millones de fríos y tenebrosos kilómetros completamente lejos de nuestro diminuto y reconfortante hogar terrestre?",
       "Las heroicas y legendarias sondas interplanetarias Voyager 1 y Voyager 2, ambas magistralmente impulsadas por la agencia NASA en el emocionante año pionero de 1977, orientan su frágil e imparable rumbo en el frío espacio empleando asombrosos y avanzados 'rastreadores de estrellas'. Estos sumamente ingeniosos sensores visuales escanean metódica y permanentemente el firmamento negro para ubicar la luz constante de estrellas de referencia famosas y brillantes, como la resplandeciente Canopus o incluso el mismísimo Sol de nuestro propio barrio estelar, calculando así sus coordenadas espaciales precisas.",
@@ -721,6 +737,58 @@ export default function InteractiveInfographic_SwSec1() {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* Galería del Halcón Milenario */}
+        <div style={{ marginTop: '4rem', width: '100%', maxWidth: '800px' }}>
+          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#FFB74D', fontSize: '1.4rem', textAlign: 'center', marginBottom: '1.5rem', textShadow: '0 0 20px rgba(255,183,77,0.3)' }}>
+            🚀 EL HALCÓN MILENARIO EN EL CORREDOR DE KESSEL
+          </h3>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
+            gap: '1rem' 
+          }}>
+            {FALCON_GALLERY.map((img, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.15 }}
+                whileHover={{ scale: 1.03, y: -4 }}
+                style={{
+                  borderRadius: '12px',
+                  overflow: 'hidden',
+                  border: '1px solid rgba(255,183,77,0.3)',
+                  background: '#0B0D17',
+                  cursor: 'pointer',
+                  boxShadow: '0 4px 15px rgba(0,0,0,0.5)',
+                }}
+              >
+                <div style={{ position: 'relative', overflow: 'hidden', height: '160px' }}>
+                  <img 
+                    src={img.src} 
+                    alt={img.caption}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
+                    onMouseOver={e => e.currentTarget.style.transform = 'scale(1.08)'}
+                    onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
+                  />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 50%, rgba(5,6,10,0.85) 100%)' }} />
+                </div>
+                <p style={{ 
+                  padding: '0.6rem 0.8rem', 
+                  margin: 0, 
+                  fontSize: '0.8rem', 
+                  color: '#B0BEC5', 
+                  fontFamily: '"Oswald", sans-serif',
+                  textAlign: 'center',
+                  lineHeight: 1.3
+                }}>
+                  {img.caption}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
           <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS JEDI (Bibliografía)</h3>
