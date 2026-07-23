@@ -465,3 +465,43 @@ RESULTADO: ✅ APROBADA / ❌ RECHAZADA (requiere corrección)
 - ❌ NO ignorar errores de la Fase 1 (científica) aunque la Fase 2 (extensión) pase correctamente
 - ❌ NO asumir que el contenido anterior cumple — siempre re-auditar al editar
 
+---
+
+## 15. Imágenes Clickeables con Lightbox en Infografías Interactivas
+
+> **REGLA DE INTERACTIVIDAD VISUAL**: Toda imagen visible en una infografía interactiva (hero, banner, extras) DEBE ser clickeable y abrir un lightbox fullscreen para que el usuario aprecie el detalle completo.
+
+### 15.1 Componente ImageLightbox
+El componente `ImageLightbox.js` ubicado en `components/infographics/ImageLightbox.js` es el componente reutilizable obligatorio. Características:
+- **Trigger**: `onClick` handler en cualquier imagen hero, banner o extra
+- **Modal**: Overlay oscuro fullscreen (`rgba(0,0,0,0.92)`) con la imagen centrada
+- **Controles**: Botón X para cerrar, click en overlay para cerrar, tecla Escape
+- **Animación**: fade-in/out con `framer-motion`
+- **Responsive**: `max-width: 90vw`, `max-height: 90vh`, `object-fit: contain`
+
+### 15.2 Implementación Obligatoria
+Al crear o editar cualquier infografía interactiva:
+
+1. **Import**: `import ImageLightbox from './ImageLightbox';`
+2. **Estado**: `const [lightboxSrc, setLightboxSrc] = useState(null);`
+3. **onClick en hero images**: `onClick={() => setLightboxSrc(node.image)}`
+4. **onClick en banner images**: `onClick={() => setLightboxSrc(node.bannerImage)}`
+5. **onClick en extra images**: `onClick={() => setLightboxSrc(img.src)}`
+6. **cursor: 'pointer'**: En toda imagen clickeable
+7. **Componente al final**: `<ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />`
+
+### 15.3 Imágenes Extra (extraImages)
+Los nodos pueden incluir un array opcional `extraImages` con imágenes proporcionadas por el usuario:
+```js
+extraImages: [
+  { src: '/assets/course/extras/image.png', caption: 'Descripción de la imagen' }
+]
+```
+Se renderizan en una mini-galería al final del ContentPanel con grid responsive y hover effects.
+
+### 15.4 Lo que NUNCA hacer:
+- ❌ NO crear imágenes hero/banner sin `onClick` handler
+- ❌ NO omitir `cursor: 'pointer'` en imágenes clickeables
+- ❌ NO usar `window.open()` ni navegación externa — siempre lightbox in-app
+- ❌ NO olvidar agregar el estado `lightboxSrc` al componente
+- ❌ NO colocar el `<ImageLightbox />` dentro de un loop — va una sola vez al final del JSX

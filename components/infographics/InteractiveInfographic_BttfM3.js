@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
 
+import ImageLightbox from './ImageLightbox';
 /* ═══════════════════════════════════════════
    SVG DECORATIVE ELEMENTS — TIME PARADOXES
    ═══════════════════════════════════════════ */
@@ -364,6 +365,7 @@ function ExpandIcon({ open }) {
 
 function ExpandableParagraph({ text, index, nodeColor }) {
   const [open, setOpen] = useState(false);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const dir = seededDir(index);
   const firstSentence = text.split(/(?<=\.)\s/)[0];
   const rest = text.slice(firstSentence.length).trim();
@@ -500,7 +502,7 @@ function ContentPanel({ node, onClose }) {
         }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={node.image} alt={node.title}
-            style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, minHeight: '280px' }} />
+            onClick={() => setLightboxSrc(node.image)} style={{ width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9, minHeight: '280px' }} />
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: `linear-gradient(transparent, ${node.color}15)` }} />
         </div>
         {/* hero text */}
@@ -692,6 +694,9 @@ export default function InteractiveInfographic_BttfM3() {
           </ul>
         </div>
       </div>
+
+      {/* ImageLightbox §15 */}
+      <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
 }

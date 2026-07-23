@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 
+import ImageLightbox from './ImageLightbox';
 // ─── SVG Decorative Elements (Time Machine themed) ────────────────────────────
 function DecoGear({ size = 70, color = '#6EC6FF', style = {} }) {
   return (
@@ -459,6 +460,7 @@ const EXPAND_ICONS = {
 
 function ExpandableSection({ item, color }) {
   const [open, setOpen] = useState(false);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const dir = useMemo(() => DIRECTIONS[Math.floor(Math.random() * 4)], []);
   const IconComp = EXPAND_ICONS[item.icon] || Sparkles;
   
@@ -581,8 +583,8 @@ function ContentPanel({ node, onClose }) {
           background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))`,
         }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={node.image} alt={node.title} style={{
-            width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9,
+          <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{
+            width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9,
             minHeight: '280px',
           }} />
           <div style={{
@@ -879,6 +881,9 @@ export default function InteractiveInfographic_BttfM7() {
           </ul>
         </div>
       </div>
+
+      {/* ImageLightbox §15 */}
+      <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
 }

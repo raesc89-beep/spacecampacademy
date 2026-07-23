@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 
+import ImageLightbox from './ImageLightbox';
 /* =========================================================================
    1. DECORATIVE SVG COMPONENTS (Robotics Themed)
    ========================================================================= */
@@ -98,7 +99,10 @@ const INFOGRAPHIC_NODES = [
         text: 'La innovadora arquitectura "Transformer" revolucionó para siempre la Inteligencia Artificial porque procesa frases enteras utilizando un mecanismo llamado "auto-atención" (self-attention). Esto le permite a la máquina entender, por ejemplo, que la palabra "banco" significa cosas completamente diferentes si está en la frase "banco de arena del río" o en la frase "cuenta bancaria en el banco". Como referencia de poder, el avanzado modelo de lenguaje GPT-4 cuenta con aproximadamente 1.8 billones de parámetros entrenados.' 
       }
     ],
-    fact: 'En 2017, un equipo de genios investigadores de Google publicó un artículo titulado "Attention Is All You Need". Este documento ha sido citado más de 100,000 veces en investigaciones posteriores, convirtiéndolo en uno de los artículos científicos más famosos, revolucionarios e influyentes en toda la historia de la informática. Gracias a ese texto, hoy existen todos los chatbots modernos.'
+    fact: 'En 2017, un equipo de genios investigadores de Google publicó un artículo titulado "Attention Is All You Need". Este documento ha sido citado más de 100,000 veces en investigaciones posteriores, convirtiéndolo en uno de los artículos científicos más famosos, revolucionarios e influyentes en toda la historia de la informática. Gracias a ese texto, hoy existen todos los chatbots modernos.',
+    extraImages: [
+      { src: '/assets/starwars/infographic_droides/extras/c3po_r2d2_tatooine.png', caption: 'C-3PO y R2-D2 en Tatooine — los droides más icónicos de Star Wars' }
+    ]
   },
   {
     id: 'rovers-autonomos',
@@ -127,7 +131,10 @@ const INFOGRAPHIC_NODES = [
         text: 'Los ingenieros de la NASA diseñaron inicialmente al helicóptero Ingenuity pensando que solo sobreviviría para realizar un máximo de 5 vuelos experimentales. Sorprendiendo maravillosamente a todos, completó un total de 72 vuelos durante casi 3 años, recorriendo 17.7 kilómetros en total y alcanzando alturas de hasta 24 metros. Cada uno de sus vuelos tenía que ser absolutamente autónomo, ya que el enorme retraso de la señal de radio de la Tierra hace que el pilotaje en tiempo real sea imposible.' 
       }
     ],
-    fact: 'El sofisticado sistema de inteligencia artificial AutoNav que utiliza el rover Perseverance funciona combinando múltiples cámaras estéreo con una red neuronal profunda. Esto le permite crear detallados mapas 3D del terreno marciano en tiempo real mientras se mueve, logrando conducirse autónomamente a una velocidad de 120 metros por hora, cuatro veces más rápido que Curiosity.'
+    fact: 'El sofisticado sistema de inteligencia artificial AutoNav que utiliza el rover Perseverance funciona combinando múltiples cámaras estéreo con una red neuronal profunda. Esto le permite crear detallados mapas 3D del terreno marciano en tiempo real mientras se mueve, logrando conducirse autónomamente a una velocidad de 120 metros por hora, cuatro veces más rápido que Curiosity.',
+    extraImages: [
+      { src: '/assets/starwars/infographic_droides/extras/c3po_r2d2_poster.png', caption: 'C-3PO y R2-D2 — arte conceptual inspirado en la trilogía original' }
+    ]
   },
   {
     id: 'protesis-bionicas',
@@ -214,7 +221,10 @@ const INFOGRAPHIC_NODES = [
         text: 'El complejo cerebro del humanoide Atlas emplea simultáneamente algoritmos avanzados de "control predictivo de modelos" y el uso extensivo del "aprendizaje automático" (machine learning) más actual para calcular dinámicamente cómo mantener su pesado cuerpo de 89 kilogramos en un balance inquebrantable y perfecto. Además de eso, el mundialmente famoso perro-robot amarillo Spot ha sido formalmente adquirido por el mismísimo Jet Propulsion Laboratory (JPL) de la agencia espacial NASA, quienes lo han empleado para recorrer, cartografiar y explorar cavernas subterráneas estrechas y terrenos difíciles en la Tierra para practicar misiones planetarias.' 
       }
     ],
-    fact: 'En el asombroso y productivo año de 2024, la compañía Boston Dynamics sorprendió al mundo tecnológico revelando un rediseño completo de su robot Atlas, cambiando la pesada y anticuada tecnología hidráulica por una maquinaria totalmente eléctrica. El nuevo y esbelto Atlas eléctrico puede rotar mágicamente sus múltiples articulaciones robóticas en unos increíbles 360 grados completos, que es un movimiento biomecánicamente imposible y destructivo para un humano, y además logra levantarse desde el suelo empleando unas espeluznantes y alienígenas maniobras que jamás se habían visto antes en la robótica.'
+    fact: 'En el asombroso y productivo año de 2024, la compañía Boston Dynamics sorprendió al mundo tecnológico revelando un rediseño completo de su robot Atlas, cambiando la pesada y anticuada tecnología hidráulica por una maquinaria totalmente eléctrica. El nuevo y esbelto Atlas eléctrico puede rotar mágicamente sus múltiples articulaciones robóticas en unos increíbles 360 grados completos, que es un movimiento biomecánicamente imposible y destructivo para un humano, y además logra levantarse desde el suelo empleando unas espeluznantes y alienígenas maniobras que jamás se habían visto antes en la robótica.',
+    extraImages: [
+      { src: '/assets/starwars/infographic_droides/extras/grievous_battle.png', caption: 'General Grievous — el temible cyborg con cuatro lightsabers' }
+    ]
   },
   {
     id: 'ia-cientifica',
@@ -272,7 +282,11 @@ const INFOGRAPHIC_NODES = [
         text: 'La prestigiosa y gigantesca competencia internacional conocida como FIRST Robotics, que fue genialmente fundada e impulsada por el asombroso inventor Dean Kamen durante el año 1989 (el mismo grandioso inventor que también fue pionero en crear el veloz Segway de dos ruedas y en inventar la grandiosa y compleja silla de ruedas mecatrónica y escaladora de peldaños bautizada iBOT) ya cuenta hoy día con la apasionada e increíble participación entusiasta de muchísimos más de 650,000 jovencitos y talentosos estudiantes provenientes de unos 100 increíbles países del globo; revelándose felizmente en varios valiosos y exhaustivos estudios estadísticos y encuestas serias de trayectoria académica que los incontables alumnos graduados de todos los complejos programas que organiza anualmente FIRST logran tener y mantener unas maravillosas y altísimas probabilidades de entre el doble y el triple de decantarse a estudiar con profundo éxito diversas grandiosas y avanzadas carreras vinculadas directamente a todas las difíciles disciplinas de la gran ciencia y las maravillosas y pujantes ingenierías STEM a nivel universitario.' 
       }
     ],
-    fact: 'El visionario Isaac Asimov postuló sus icónicas "Tres Leyes" fundamentales de la Robótica en 1942: Primera: Un robot no debe dañar a un humano ni permitir con su inacción que sufra gran daño. Segunda: Debe cumplir órdenes dadas a menos que estas ordenanzas letales violen tajantemente y por completo a la primera. Tercera: Un robot debe salvaguardar siempre su propia integridad, siempre y cuando no lo haga violando terriblemente las otras vitales leyes. Es sumamente asombroso darse cuenta cabal de que esas tres grandiosas e históricas leyes, nacidas completamente de la brillante imaginación literaria de la ficción escrita, ahora han servido directamente para lograr y permitir inspirar múltiples, estrictas y profundas regulaciones de seguridad tecnológica publicadas por instituciones internacionales y organizaciones globales como el IEEE y la propia UNESCO en las directrices morales mundiales.'
+    fact: 'El visionario Isaac Asimov postuló sus icónicas "Tres Leyes" fundamentales de la Robótica en 1942: Primera: Un robot no debe dañar a un humano ni permitir con su inacción que sufra gran daño. Segunda: Debe cumplir órdenes dadas a menos que estas ordenanzas letales violen tajantemente y por completo a la primera. Tercera: Un robot debe salvaguardar siempre su propia integridad, siempre y cuando no lo haga violando terriblemente las otras vitales leyes. Es sumamente asombroso darse cuenta cabal de que esas tres grandiosas e históricas leyes, nacidas completamente de la brillante imaginación literaria de la ficción escrita, ahora han servido directamente para lograr y permitir inspirar múltiples, estrictas y profundas regulaciones de seguridad tecnológica publicadas por instituciones internacionales y organizaciones globales como el IEEE y la propia UNESCO en las directrices morales mundiales.',
+    extraImages: [
+      { src: '/assets/starwars/infographic_droides/extras/bb8_cartoon.png', caption: 'BB-8 — el adorable droide esférico de la nueva trilogía' },
+      { src: '/assets/starwars/infographic_droides/extras/bb8_vector.png', caption: 'BB-8 — diseño vectorial del droide astromecánico' }
+    ]
   }
 ];
 
@@ -438,6 +452,7 @@ const NodeButton = ({ node, isVisited, onClick }) => {
 
 const ExpandableSection = ({ data, color, direction }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const variant = dirVariants[direction] || dirVariants.up;
   
   return (
@@ -538,8 +553,9 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
             backgroundImage: `url(${node.image})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center',
-            borderLeft: `4px solid ${node.color}`
-          }} />
+            borderLeft: `4px solid ${node.color}`,
+            cursor: 'pointer'
+          }} onClick={() => setLightboxSrc(node.image)} />
         </div>
 
         <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -569,7 +585,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
 
           {node.bannerImage && (
             <div style={{ position: 'relative', width: '100%', height: '160px', borderRadius: '12px', overflow: 'hidden', margin: '1.5rem 0', border: `1px solid ${node.color}33` }}>
-              <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${node.bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+              <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${node.bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} onClick={() => setLightboxSrc(node.bannerImage)}/>
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%)' }} />
               {node.bannerCaption && (
                 <div style={{ position: 'absolute', bottom: '1rem', left: '1rem', right: '1rem', textAlign: 'center', fontSize: '0.9rem', color: '#FFF', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
@@ -585,6 +601,28 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
           <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC' }}>
             {node.content[4]}
           </p>
+
+          {/* Extra Images Gallery §15 */}
+          {node.extraImages && node.extraImages.length > 0 && (
+            <div style={{ marginTop: '1.5rem' }}>
+              <div style={{ color: node.color, fontWeight: 'bold', fontSize: '0.9rem', fontFamily: '"Oswald", sans-serif', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Sparkles size={16} /> GALERÍA DE IMÁGENES
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: node.extraImages.length === 1 ? '1fr' : '1fr 1fr', gap: '0.75rem' }}>
+                {node.extraImages.map((img, i) => (
+                  <div key={i} style={{ position: 'relative', borderRadius: '10px', overflow: 'hidden', border: `1px solid ${node.color}33`, cursor: 'pointer' }} onClick={() => setLightboxSrc(img.src)}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={img.src} alt={img.caption} style={{ width: '100%', height: '140px', objectFit: 'cover', display: 'block', transition: 'transform 0.3s ease' }} onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.target.style.transform = 'scale(1)'} />
+                    {img.caption && (
+                      <div style={{ padding: '0.5rem 0.75rem', background: 'rgba(0,0,0,0.7)', fontSize: '0.8rem', color: '#B0BEC5', fontFamily: '"Lora", serif', fontStyle: 'italic' }}>
+                        {img.caption}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
       
@@ -722,6 +760,9 @@ export default function InteractiveInfographic_SwSec3() {
           />
         )}
       </AnimatePresence>
+
+      {/* ImageLightbox §15 */}
+      <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
 }

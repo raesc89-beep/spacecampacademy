@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
 
+import ImageLightbox from './ImageLightbox';
 // ─── SVG Decorative Elements ──────────────────────────────────────────────────
 
 function DecoSerpent({ size = 80, color = '#FF5252', style = {} }) {
@@ -561,7 +562,7 @@ function ContentPanel({ node, onClose }) {
         }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={node.image} alt={node.title}
-            style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.88, minHeight: '280px' }}
+            onClick={() => setLightboxSrc(node.image)} style={{ width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.88, minHeight: '280px' }}
           />
           <div style={{
             position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
@@ -703,6 +704,7 @@ function ProgressBar({ explored, total }) {
 // ─── Main Component ────────────────────────────────────────────────────────────
 export default function InteractiveInfographic_EgyptM14() {
   const [activeNode, setActiveNode] = useState(null);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const [explored, setExplored] = useState(new Set());
 
   const handleNodeClick = (nodeId) => {
@@ -802,6 +804,9 @@ export default function InteractiveInfographic_EgyptM14() {
           ))}
         </ul>
       </div>
+
+      {/* ImageLightbox §15 */}
+      <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
 }

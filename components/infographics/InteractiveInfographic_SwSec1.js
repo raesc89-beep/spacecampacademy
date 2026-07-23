@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 
+import ImageLightbox from './ImageLightbox';
 /* =========================================================================
    1. DECORATIVE SVG COMPONENTS (Star Wars Themed)
    ========================================================================= */
@@ -469,6 +470,7 @@ const NodeButton = ({ node, isVisited, onClick }) => {
 
 const ExpandableSection = ({ data, color, direction }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const variant = dirVariants[direction] || dirVariants.up;
   
   return (
@@ -569,8 +571,9 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
             backgroundImage: `url(${node.image})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center',
-            borderLeft: `4px solid ${node.color}`
-          }} />
+            borderLeft: `4px solid ${node.color}`,
+            cursor: 'pointer'
+          }} onClick={() => setLightboxSrc(node.image)} />
         </div>
 
         <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -600,7 +603,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
 
           {node.bannerImage && (
             <div style={{ margin: '2rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}55` }}>
-              <img src={node.bannerImage} alt="banner" style={{ width: '100%', height: 'auto', display: 'block' }} />
+              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)} style={{ cursor: 'pointer', width: '100%', height: 'auto', display: 'block' }} />
               {node.bannerCaption && (
                 <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif' }}>
                   {node.bannerCaption}
@@ -753,6 +756,9 @@ export default function InteractiveInfographic_SwSec1() {
           />
         )}
       </AnimatePresence>
+
+      {/* ImageLightbox §15 */}
+      <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
 }

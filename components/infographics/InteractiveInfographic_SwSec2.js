@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 
+import ImageLightbox from './ImageLightbox';
 /* =========================================================================
    1. DECORATIVE SVG COMPONENTS (Star Wars Themed)
    ========================================================================= */
@@ -462,6 +463,7 @@ const NodeButton = ({ node, isVisited, onClick }) => {
 
 const ExpandableSection = ({ data, color, direction }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const variant = dirVariants[direction] || dirVariants.up;
   
   return (
@@ -565,7 +567,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
             </p>
           </div>
           <div style={{ position: 'relative' }}>
-            <img src={node.image} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{ width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer' }} />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #1A1C29 0%, transparent 20%)' }} />
           </div>
         </div>
@@ -617,7 +619,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast }) => {
           {node.bannerImage && (
             <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
               <img src={node.bannerImage} alt={node.bannerCaption || ''} 
-                   style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                   onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
               {node.bannerCaption && (
                 <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center', fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic', textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
@@ -889,6 +891,9 @@ export default function InteractiveInfographic_SwSec2() {
           />
         )}
       </AnimatePresence>
+
+      {/* ImageLightbox §15 */}
+      <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
 }
