@@ -220,7 +220,7 @@ function IsolatedRoverNode({ nodeInfo, idx }) {
       >
         <motion.div 
            animate={{ 
-             y: [0, -8, 0], // LevitaciÃ³n suave marciana
+             y: [0, -8, 0], // Levitación suave marciana
              scale: hovered ? 1.15 : 1
            }}
            transition={{ 
@@ -281,7 +281,7 @@ function IsolatedRoverNode({ nodeInfo, idx }) {
 
         </motion.div>
 
-        {/* Tooltip Hover (InformaciÃ³n) */}
+        {/* Tooltip Hover (Información) */}
         <AnimatePresence>
           {hovered && (
             <motion.div 
@@ -308,7 +308,7 @@ function IsolatedRoverNode({ nodeInfo, idx }) {
                  Rover {nodeInfo.title}
                </h4>
                <p style={{ margin: '0.3rem 0 0 0', fontSize: '0.85rem', color: '#FF6347' }}>
-                 MisiÃ³n Activa en Marte ðŸš€
+                 Misión Activa en Marte ðŸš€
                </p>
             </motion.div>
           )}

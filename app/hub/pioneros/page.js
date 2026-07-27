@@ -30,7 +30,7 @@ export default function PionerosHub() {
   // Orden estricto del curso
   const courseOrder = ['pioneros_yuri', 'pioneros_alan', 'pioneros_john', 'pioneros_valentina', 'pioneros_leonov', 'pioneros_svetlana', 'pioneros_sally'];
 
-  // Coordenadas orgÃ¡nicas distribuidas 
+  // Coordenadas orgánicas distribuidas 
   const orbitalData = {
     pioneros_yuri: { left: '15%', top: '40%', size: 'clamp(90px, 10vw, 130px)', img: '/assets/pioneros/hub_yuri.png' },
     pioneros_alan: { left: '30%', top: '65%', size: 'clamp(85px, 9.5vw, 120px)', img: '/assets/pioneros/hub_alan.png' },
@@ -41,7 +41,7 @@ export default function PionerosHub() {
     pioneros_sally: { left: '92%', top: '40%', size: 'clamp(85px, 9.5vw, 120px)', img: '/assets/pioneros/hub_sally.png' }
   };
 
-  // Determinar Ãndice de Progreso
+  // Determinar Índice de Progreso
   let maxCompletedIdx = -1;
   const completedIds = userData?.progress?.completedModules || [];
   courseOrder.forEach((p, idx) => {
@@ -51,13 +51,13 @@ export default function PionerosHub() {
   
   const currentPlayableIdx = maxCompletedIdx + 1;
 
-  // Filtrar los modulos a sÃ³lo los 5 ordenados
+  // Filtrar los modulos a sólo los 5 ordenados
   const orderedModules = courseOrder.map(pid => modules.find(m => m.id.toLowerCase() === pid)).filter(Boolean);
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#0a0a1a' }}>
       
-      {/* BotÃ³n Flotante */}
+      {/* Botón Flotante */}
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', zIndex: 100 }}>
          <Link href="/dashboard/misiones" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none', background: 'rgba(0,0,0,0.5)', padding: '0.8rem 1.2rem', borderRadius: '30px', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)' }}>
             <ChevronLeft size={24} /> Volver a Misiones
@@ -72,7 +72,7 @@ export default function PionerosHub() {
         
         <HubDecorations />
 
-        {/* Contenedor del Mapa 16:9 MÃ¡ximo */}
+        {/* Contenedor del Mapa 16:9 Máximo */}
         <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', aspectRatio: '16/9', maxHeight: '90vh' }}>
            
            {orderedModules.map((mod, idx) => {
@@ -103,7 +103,7 @@ export default function PionerosHub() {
   );
 }
 
-// Componente Independiente Flotante (BotÃ³n 2D)
+// Componente Independiente Flotante (Botón 2D)
 function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, isLocked }) {
   const [hovered, setHovered] = useState(false);
   
@@ -132,7 +132,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
       >
         <motion.div 
            animate={{ 
-             y: isLocked ? 0 : [0, -10, 0], // LevitaciÃ³n suave si estÃ¡ desbloqueado
+             y: isLocked ? 0 : [0, -10, 0], // Levitación suave si está desbloqueado
              scale: hovered && !isLocked ? 1.15 : 1
            }}
            transition={{ 
@@ -194,7 +194,7 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
 
         </motion.div>
 
-        {/* Tooltip Hover (InformaciÃ³n MÃ¡gica) */}
+        {/* Tooltip Hover (Información Mágica) */}
         <AnimatePresence>
           {hovered && (
             <motion.div 
@@ -218,10 +218,10 @@ function IsolatedPlanetNode({ moduleInfo, idx, coords, isCompleted, isPlayable, 
               }}
             >
                <h4 style={{ margin: 0, fontSize: '1.1rem', color: isLocked ? 'gray' : 'white', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                 {isLocked ? '?????' : `MisiÃ³n ${moduleInfo.titleEs}`}
+                 {isLocked ? '?????' : `Misión ${moduleInfo.titleEs}`}
                </h4>
                <p style={{ margin: '0.3rem 0 0 0', fontSize: '0.85rem', color: isCompleted ? 'var(--success)' : (isLocked ? 'var(--text-muted)' : 'var(--electric-blue)') }}>
-                 {isLocked ? 'Espacio Inexplorado ðŸ”’' : (isCompleted ? `Aterrizaje Exitoso â­` : 'MisiÃ³n de ExploraciÃ³n Activa ðŸš€')}
+                 {isLocked ? 'Espacio Inexplorado ðŸ”’' : (isCompleted ? `Aterrizaje Exitoso â­` : 'Misión de Exploración Activa ðŸš€')}
                </p>
             </motion.div>
           )}
