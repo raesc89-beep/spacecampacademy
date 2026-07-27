@@ -601,7 +601,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', position: 'relative', zIndex: 2 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative', zIndex: 2 }}>
           {node.expandables && node.expandables.map((exp, i) => (
              <ExpandableSection key={i} item={exp} color={node.color} />
           ))}

@@ -608,7 +608,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
           </div>
           
           {/* Expandables */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
             {node.expandables.map((exp, idx) => (
               <ExpandableSection 
                 key={idx} 

@@ -696,7 +696,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {/* ─── Expandable Interactive Sections ─── */}
         {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {node.expandables.map((item, i) => (
                 <ExpandableSection key={i} item={item} color={node.color} />
               ))}

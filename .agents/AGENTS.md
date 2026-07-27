@@ -170,6 +170,7 @@ Todas las imágenes generadas para infografías (btn_*, hero_*, bg_*) DEBEN segu
 - ❌ NO usar `backgroundImage: url(...)` en CSS para mostrar imágenes hero — causa celdas vacías sin altura explícita. SIEMPRE usar `<img>` tag con `objectFit: 'cover'`.
 - ❌ NO escribir captions/subtítulos de imágenes (`bannerCaption`, `imgCaption`) que suenen como prompts de IA generativa. Los captions deben ser **descripciones educativas factuales**, no descripciones dramáticas del contenido visual.
 - ❌ NO omitir el **prompt suffix obligatorio** "Nilo de Nut" (§10.2) al generar imágenes con API externa. Esta regla es ineludible e inviolable.
+- ❌ NO usar `display: 'grid', gridTemplateColumns: '1fr 1fr'` para contenedores de `expandables` — causa celdas vacías cuando hay número impar de items. SIEMPRE usar `display: 'flex', flexDirection: 'column'` para expandables.
 
 ### 10.4 Verificación (pre-commit checklist):
 - [ ] `gridTemplateColumns` del hero es `'1fr 1fr'`
@@ -179,6 +180,7 @@ Todas las imágenes generadas para infografías (btn_*, hero_*, bg_*) DEBEN segu
 - [ ] Estilo artístico coincide con referencia "Nilo de Nut" (ilustración digital estilizada)
 - [ ] Los `bannerCaption` son **educativos y factuales** (no suenan como prompts de generación)
 - [ ] El prompt suffix obligatorio fue incluido en toda generación de imágenes vía API
+- [ ] Contenedores de `expandables` usan `flex` column (NO `grid` 1fr 1fr)
 
 ## 11. Bibliografía Obligatoria en Infografías Interactivas
 
