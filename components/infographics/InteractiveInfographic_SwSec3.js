@@ -732,7 +732,7 @@ export default function InteractiveInfographic_SwSec3() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_droides/badge_droides.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+              <img src="/assets/starwars/infographic_droides/sw_badge_3.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
               ¡SISTEMAS INICIALIZADOS!
               <Sparkles size={24} />
             </motion.div>

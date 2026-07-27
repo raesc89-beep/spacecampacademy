@@ -33,6 +33,10 @@ import InteractiveInfographic_SwSec1 from '@/components/infographics/Interactive
 import InteractiveInfographic_SwSec7 from '@/components/infographics/InteractiveInfographic_SwSec7';
 import InteractiveInfographic_SwSec8 from '@/components/infographics/InteractiveInfographic_SwSec8';
 import InteractiveInfographic_SwSec3 from '@/components/infographics/InteractiveInfographic_SwSec3';
+import InteractiveInfographic_SwSec4 from '@/components/infographics/InteractiveInfographic_SwSec4';
+import InteractiveInfographic_SwSec5 from '@/components/infographics/InteractiveInfographic_SwSec5';
+import InteractiveInfographic_SwSec6 from '@/components/infographics/InteractiveInfographic_SwSec6';
+import InteractiveInfographic_SwSec9 from '@/components/infographics/InteractiveInfographic_SwSec9';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -445,8 +449,20 @@ export default function CourseModule() {
           {moduleData.id === 'starwars_sec_3' && (
             <InteractiveInfographic_SwSec3 />
           )}
+          {moduleData.id === 'starwars_sec_4' && (
+            <InteractiveInfographic_SwSec4 />
+          )}
+          {moduleData.id === 'starwars_sec_5' && (
+            <InteractiveInfographic_SwSec5 />
+          )}
+          {moduleData.id === 'starwars_sec_6' && (
+            <InteractiveInfographic_SwSec6 />
+          )}
+          {moduleData.id === 'starwars_sec_9' && (
+            <InteractiveInfographic_SwSec9 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (

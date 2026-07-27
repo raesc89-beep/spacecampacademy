@@ -695,7 +695,7 @@ export default function InteractiveInfographic_SwSec7() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_jedi/badge_jedi.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+              <img src="/assets/starwars/infographic_jedi/sw_badge_7.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
               ¡ENTRENAMIENTO JEDI COMPLETADO!
               <Sparkles size={24} />
             </motion.div>

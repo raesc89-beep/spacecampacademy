@@ -224,6 +224,11 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/starwars/infographic_mundos/hero_lava.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_lava.png',
     bannerCaption: '55 Cancri e: un año dura solo 18 horas y su superficie supera los 2,000°C',
+    extraImages: [
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_1.png', caption: 'Duelo épico en Mustafar: siluetas bajo un sol abrasador de lava' },
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_2.png', caption: 'Anakin y Obi-Wan cruzan sables sobre ríos de magma ardiente' },
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_sector.png', caption: 'Mustafar — Sector Atravis: el planeta volcánico más temido de la galaxia' }
+    ],
     content: [
       "Hay rincones del universo donde el infierno es un lugar real. Imagina un planeta rocoso que orbita tan cerca de su estrella que su superficie se derrite por completo, convirtiéndose en un océano hirviente de roca fundida color naranja brillante. 55 Cancri e, también conocido como Janssen, es uno de esos terroríficos 'mundos de lava'. Se encuentra a solo 40 años-luz de nosotros, en la constelación de Cáncer, y fue uno de los primeros 'supertierra' descubiertos.",
       "Está tan cerca de su estrella madre que su año completo (una vuelta entera alrededor de la estrella) dura tan solo 18 horas. ¡Podrías celebrar tu cumpleaños todos los días! Pero haría demasiado calor para la fiesta: la temperatura en su cara diurna supera los 2,500°C, suficiente para derretir acero, titanio y prácticamente cualquier metal conocido. Además, siempre muestra la misma cara a su estrella, creando un hemisferio de día eterno y otro de noche perpetua.",
