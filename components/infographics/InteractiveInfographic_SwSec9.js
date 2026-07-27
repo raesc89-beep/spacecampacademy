@@ -92,7 +92,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_vader/btn_protesis_bionicas.png',
     image: '/assets/starwars/infographic_vader/hero_protesis_bionicas.png',
     bannerImage: '/assets/starwars/infographic_vader/banner_protesis_bionicas.png',
-    bannerCaption: 'Un avance biomédico que fusiona carne y metal para restaurar extremidades perdidas.',
+    bannerCaption: "Las prótesis biónicas modernas usan sensores mioeléctricos que traducen señales musculares en movimientos precisos.",
     content: [
       "Imagina perder una extremidad y poder reemplazarla con un brazo robótico completamente funcional que responde directamente a tus pensamientos. En el mundo de la medicina moderna y la ingeniería biomédica, las prótesis biónicas han dejado de ser ciencia ficción para convertirse en una realidad transformadora. Utilizando materiales ligeros como la fibra de carbono y el titanio, junto con motores miniaturizados y sensores de alta precisión, los ingenieros han logrado crear extremidades artificiales que imitan de manera sorprendente el movimiento fluido y natural del cuerpo humano, devolviendo la independencia y mejorando drásticamente la calidad de vida de miles de pacientes amputados alrededor del mundo.",
       "Para lograr que una mano metálica se cierre con solo pensarlo, los médicos utilizan un procedimiento quirúrgico revolucionario llamado 'Reinervación Muscular Dirigida' (TMR, por sus siglas en inglés). Durante esta compleja cirugía, los cirujanos toman los nervios periféricos residuales que solían controlar el brazo amputado y los reconectan cuidadosamente a otros músculos sanos en el pecho o el hombro del paciente. Cuando el paciente piensa en cerrar su mano ausente, el cerebro envía la señal eléctrica, el nervio activa el músculo del pecho, y unos sensores especiales pegados a la piel captan esa pequeñísima corriente eléctrica, enviando inmediatamente un comando a la computadora de la prótesis robótica.",
@@ -126,7 +126,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_vader/btn_soporte_vital.png',
     image: '/assets/starwars/infographic_vader/hero_soporte_vital.png',
     bannerImage: '/assets/starwars/infographic_vader/banner_soporte_vital.png',
-    bannerCaption: 'Un ambiente hermético y presurizado diseñado para mantener vivo un cuerpo devastado.',
+    bannerCaption: "Los sistemas de soporte vital regulan presión, oxígeno y temperatura para sustituir funciones orgánicas comprometidas.",
     content: [
       "Cuando el entorno que nos rodea es absoluta y completamente letal para la frágil biología humana, la ingeniería de soporte vital se convierte en nuestro único y más resistente escudo protector. Un sistema de soporte vital (Life Support System) es una compleja e intrincada red tecnológica diseñada específicamente para proporcionar los elementos básicos e indispensables que un organismo humano necesita biológicamente para sobrevivir: oxígeno puro, presión atmosférica estable, eliminación eficiente del dióxido de carbono tóxico, agua potable limpia y una regulación estricta y constante de la temperatura corporal central.",
       "El traje emblemático, oscuro e intimidante de Darth Vader es, en su núcleo más fundamental, una cámara de reanimación médica andante y una unidad de cuidados intensivos miniaturizada. Tras sufrir quemaduras volcánicas catastróficas y letales que destruyeron irreversiblemente casi la totalidad de su piel y sus pulmones en las ardientes orillas de lava del planeta Mustafar, Anakin Skywalker dependía al cien por ciento de su gruesa armadura de obsidiana presurizada. Este traje sellado de manera hermética servía simultáneamente como una barrera estéril contra infecciones masivas mortales y como un sistema de ventilación pulmonar mecánico ininterrumpido.",
@@ -160,7 +160,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_vader/btn_exoesqueletos.png',
     image: '/assets/starwars/infographic_vader/hero_exoesqueletos.png',
     bannerImage: '/assets/starwars/infographic_vader/banner_exoesqueletos.png',
-    bannerCaption: 'Motores hidráulicos y sensores biomecánicos que otorgan fuerza sobrenatural.',
+    bannerCaption: "Los exoesqueletos robóticos asisten la movilidad multiplicando la fuerza humana mediante actuadores hidráulicos y eléctricos.",
     content: [
       "¿Te imaginas poder levantar pesadas cargas industriales de cien kilogramos de peso con la misma tremenda facilidad con la que levantas una mochila liviana de libros, o lograr que una persona valiente que está postrada permanentemente en una silla de ruedas vuelva a caminar por sí misma? Esto ya no es magia fantástica, es la espectacular maravilla mecatrónica de los exoesqueletos robóticos motorizados. Un exoesqueleto biomédico es, en esencia, una potente armadura exterior mecanizada e inteligente, diseñada específicamente para acoplarse alrededor del frágil cuerpo humano y multiplicar artificialmente su fuerza biológica muscular, su velocidad motriz o su resistencia articular básica.",
       "El pesado e imponente traje de Darth Vader actúa fundamentalmente como un primitivo pero poderoso exoesqueleto médico. Debido al espantoso daño catastrófico e irreversible que sufrieron absolutamente todos sus músculos corporales biológicos y toda su columna vertebral central durante las abrasadoras quemaduras fatales en el planeta Mustafar, el cuerpo físico original de Anakin Skywalker era demasiado débil y doloroso para siquiera lograr sostener el inmenso peso de sí mismo y mantenerse de pie erecto. Su reluciente armadura metálica está completamente provista y equipada con potentes servomotores mecánicos silenciosos y potentes pistones neumáticos hidráulicos en todas las articulaciones, que literalmente le ayudan a realizar el pesado trabajo biomecánico de caminar lentamente e incluso luchar intensamente, sustituyendo por completo la fuerza trágicamente perdida de su propia carne dañada.",
@@ -194,7 +194,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_vader/btn_interfaz_cerebro.png',
     image: '/assets/starwars/infographic_vader/hero_interfaz_cerebro.png',
     bannerImage: '/assets/starwars/infographic_vader/banner_interfaz_cerebro.png',
-    bannerCaption: 'Chips microscópicos que leen los impulsos eléctricos y traducen el pensamiento puro en acción.',
+    bannerCaption: "Las interfaces cerebro-computadora (BCI) decodifican señales neuronales corticales para controlar dispositivos externos.",
     content: [
       "Imagina poder mover un brazo robótico, escribir un mensaje o pilotar un dron con solo pensarlo, sin mover un solo músculo de tu cuerpo. Eso es exactamente lo que logran las Interfaces Cerebro-Computadora, conocidas como BCI por sus siglas en inglés (Brain-Computer Interface). Esta tecnología crea un puente directo entre tu cerebro y una máquina externa, traduciendo las señales eléctricas de tus neuronas en comandos digitales que un ordenador puede interpretar y ejecutar. Es como si tu cerebro tuviera un cable USB invisible conectado directamente al mundo digital, permitiéndote interactuar con la tecnología usando únicamente el poder de tus pensamientos.",
       "Para captar las señales del cerebro, los ingenieros biomédicos utilizan diferentes técnicas según el nivel de precisión que necesitan. La forma más sencilla y no invasiva es la electroencefalografía (EEG), que consiste en colocar una malla con docenas de pequeños sensores sobre el cuero cabelludo. Estos sensores detectan las ondas eléctricas que producen miles de millones de neuronas al comunicarse entre sí. Sin embargo, la señal que llega a través del cráneo es débil y borrosa, como intentar escuchar una conversación a través de una pared gruesa. Por eso, para aplicaciones más precisas, los científicos desarrollaron implantes que se colocan directamente sobre la superficie del cerebro o incluso dentro de él.",
@@ -228,7 +228,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_vader/btn_regeneracion_tejidos.png',
     image: '/assets/starwars/infographic_vader/hero_regeneracion_tejidos.png',
     bannerImage: '/assets/starwars/infographic_vader/banner_regeneracion_tejidos.png',
-    bannerCaption: 'Terapias regenerativas y células madre para sanar heridas que alguna vez fueron incurables.',
+    bannerCaption: "La medicina regenerativa emplea células madre y bioandamios para reconstruir tejidos dañados como cartílago y piel.",
     content: [
       "En el universo de Star Wars, cuando un personaje resulta gravemente herido, quemado por lava o mutilado en combate, la solución médica galáctica es sumergirlo durante horas en un enorme tanque vertical lleno de un misterioso líquido azulado llamado Bacta. Este gel biológico ficticio acelera la regeneración de tejidos dañados, cierra heridas y repara quemaduras a una velocidad que haría llorar de envidia a cualquier cirujano terrestre. Aunque parezca pura fantasía, la ciencia real de la medicina regenerativa está trabajando para crear algo parecido: terapias que estimulen al cuerpo humano para repararse a sí mismo de maneras que antes se consideraban completamente imposibles.",
       "El equivalente terrestre más cercano al Bacta son las células madre. Piensa en ellas como las piezas de LEGO más versátiles del cuerpo: son células que todavía no se han especializado y que pueden transformarse en casi cualquier tipo de tejido que el organismo necesite. Las células madre embrionarias pueden convertirse en neuronas, células musculares, células de la piel, cartílago, hueso o incluso células del corazón. En 2006, el científico japonés Shinya Yamanaka descubrió algo revolucionario: podía tomar células adultas normales (como las de la piel) y reprogramarlas para que volvieran a ser células madre. Las llamó iPSCs (células madre pluripotentes inducidas), y este descubrimiento le valió el Premio Nobel de Medicina en 2012.",
@@ -262,7 +262,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_vader/btn_respiracion_asistida.png',
     image: '/assets/starwars/infographic_vader/hero_respiracion_asistida.png',
     bannerImage: '/assets/starwars/infographic_vader/banner_respiracion_asistida.png',
-    bannerCaption: 'Ventiladores mecánicos y pulmones artificiales: la tecnología detrás del icónico sonido.',
+    bannerCaption: "Los ventiladores mecánicos administran ciclos de presión positiva para asistir o reemplazar la respiración pulmonar.",
     content: [
       "Ese sonido rítmico, profundo y aterrador que escuchas cada vez que Darth Vader aparece en pantalla es probablemente el efecto sonoro más reconocible de toda la historia del cine. Pero detrás de ese inquietante silbido mecánico hay una realidad médica muy concreta: lo que estás escuchando es esencialmente un ventilador mecánico. El traje negro de Vader funciona como un sistema de soporte vital portátil que fuerza aire presurizado y enriquecido con oxígeno hacia el interior de sus pulmones severamente dañados por las quemaduras que sufrió en Mustafar, exactamente igual que las máquinas de ventilación asistida que salvan miles de vidas cada día en los hospitales de todo el mundo.",
       "En las Unidades de Cuidados Intensivos (UCI), los ventiladores mecánicos son equipos fundamentales que sostienen la vida de pacientes que no pueden respirar por sí mismos. Funcionan generando una presión positiva que empuja una mezcla calibrada de oxígeno y aire a través de un tubo endotraqueal insertado en la tráquea del paciente. Los ventiladores modernos, como el Hamilton C6 o el Draeger V500, son computadoras sofisticadas que monitorizan en tiempo real más de 50 parámetros respiratorios: volumen de aire, frecuencia, presión, niveles de CO2 y saturación de oxígeno. Pueden detectar cuándo el paciente intenta respirar por su cuenta y sincronizarse con su esfuerzo natural.",
@@ -296,7 +296,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_vader/btn_cyborgs_futuro.png',
     image: '/assets/starwars/infographic_vader/hero_cyborgs_futuro.png',
     bannerImage: '/assets/starwars/infographic_vader/banner_cyborgs_futuro.png',
-    bannerCaption: 'La filosofía de la fusión biónica: hasta qué punto seguimos siendo humanos.',
+    bannerCaption: "El concepto de cyborg, acuñado en 1960 por Clynes y Kline, explora la integración de tecnología con biología humana.",
     content: [
       "Darth Vader plantea una de las preguntas filosóficas más profundas de toda la saga: cuando reemplazas tus brazos, tus piernas, tus pulmones y casi todo tu cuerpo por máquinas, en qué momento dejas de ser humano y te conviertes en algo diferente. La palabra cyborg (organismo cibernético) fue inventada en 1960 por los científicos Manfred Clynes y Nathan Kline en un artículo para la NASA, donde proponían modificar el cuerpo humano con tecnología para que pudiera sobrevivir en el espacio sin necesidad de trajes espaciales. La idea era simple pero revolucionaria: en lugar de cambiar el ambiente para adaptarlo al humano, cambiar al humano para adaptarlo al ambiente.",
       "Lo que mucha gente no sabe es que millones de personas en el mundo ya son técnicamente cyborgs. Si tienes un marcapasos cardíaco (un dispositivo electrónico del tamaño de una moneda grande implantado bajo la piel que envía pulsos eléctricos para regular el ritmo del corazón), eres un cyborg. Si llevas un implante coclear (un electrodo insertado en la cóclea del oído interno que convierte sonidos en señales eléctricas enviadas directamente al nervio auditivo), eres un cyborg. Solo en Estados Unidos, más de 3 millones de personas llevan marcapasos y unas 120,000 tienen implantes cocleares. Estos dispositivos demuestran que la fusión entre biología y tecnología ya no es ciencia ficción, sino medicina cotidiana.",
@@ -583,13 +583,11 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
               {node.content[0].substring(1)}
             </p>
           </div>
-          <div style={{ 
-            backgroundImage: `url(${node.image})`, 
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center',
-            borderLeft: `4px solid ${node.color}`,
-            cursor: 'pointer'
-          }} onClick={() => setLightboxSrc(node.image)} />
+          <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))` }}>
+            <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{
+              width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9, minHeight: '280px',
+            }} />
+          </div>
         </div>
 
         <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

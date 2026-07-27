@@ -167,13 +167,18 @@ Todas las imágenes generadas para infografías (btn_*, hero_*, bg_*) DEBEN segu
 - ❌ NO cambiar el ratio 50/50 del grid sin autorización del usuario.
 - ❌ NO generar imágenes fotorrealistas ni flat/cartoon — solo estilo "Nilo de Nut" ilustrado.
 - ❌ NO crear componentes de infografía nuevos con layouts diferentes al estándar.
+- ❌ NO usar `backgroundImage: url(...)` en CSS para mostrar imágenes hero — causa celdas vacías sin altura explícita. SIEMPRE usar `<img>` tag con `objectFit: 'cover'`.
+- ❌ NO escribir captions/subtítulos de imágenes (`bannerCaption`, `imgCaption`) que suenen como prompts de IA generativa. Los captions deben ser **descripciones educativas factuales**, no descripciones dramáticas del contenido visual.
+- ❌ NO omitir el **prompt suffix obligatorio** "Nilo de Nut" (§10.2) al generar imágenes con API externa. Esta regla es ineludible e inviolable.
 
 ### 10.4 Verificación (pre-commit checklist):
 - [ ] `gridTemplateColumns` del hero es `'1fr 1fr'`
-- [ ] Imagen usa `objectFit: 'cover'` con `width: '100%'` y `height: '100%'`
-- [ ] Contenedor de imagen tiene `height: '100%'`
+- [ ] Imagen hero usa `<img>` tag (NO `backgroundImage` CSS) con `objectFit: 'cover'`, `width: '100%'`, `height: '100%'`
+- [ ] Contenedor de imagen tiene `height: '100%'` y `overflow: 'hidden'`
 - [ ] Todas las imágenes son PNG (no SVG placeholders)
 - [ ] Estilo artístico coincide con referencia "Nilo de Nut" (ilustración digital estilizada)
+- [ ] Los `bannerCaption` son **educativos y factuales** (no suenan como prompts de generación)
+- [ ] El prompt suffix obligatorio fue incluido en toda generación de imágenes vía API
 
 ## 11. Bibliografía Obligatoria en Infografías Interactivas
 

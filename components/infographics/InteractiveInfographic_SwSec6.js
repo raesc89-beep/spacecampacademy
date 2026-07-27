@@ -77,7 +77,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_plasmas/btn_plasma_estado.png',
     image: '/assets/starwars/infographic_plasmas/hero_plasma_estado.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_plasma_estado.png',
-    bannerCaption: 'Más del 99% del universo visible está compuesto por plasma ardiente y luminoso, brillando en la inmensidad del espacio.',
+    bannerCaption: "El plasma es el cuarto estado de la materia y constituye más del 99% de la materia visible del universo.",
     content: [
       "Desde que somos muy pequeños en la escuela, nos enseñan que la materia existe principalmente en tres estados comunes: sólido (como un bloque de hielo congelado), líquido (como el agua fresca que bebemos todos los días) y gas (como el vapor invisible que sale de una olla hirviendo). Pero resulta que estos tres estados son en realidad una rareza increíble en la inmensidad del universo. El universo está dominado por un misterioso y fascinante cuarto estado.",
       "Este cuarto estado de la materia es lo que los científicos de todo el mundo llaman 'plasma'. Para crear plasma de manera artificial o natural, debes tomar un gas común y calentarlo a temperaturas tan increíblemente extremas y altas que los átomos mismos literalmente se rompen y se desarman por la violencia del calor. Cuando esto ocurre, los electrones, que son pequeñísimos, escapan de sus átomos, creando una sopa hirviente y brillante llena de partículas cargadas de electricidad.",
@@ -111,7 +111,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_plasmas/btn_sable_laser.png',
     image: '/assets/starwars/infographic_plasmas/hero_sable_laser.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_sable_laser.png',
-    bannerCaption: 'Un potente tubo de contención magnética moldeando meticulosamente un filo de plasma a miles de grados de temperatura.',
+    bannerCaption: "La contención magnética permite confinar plasma a millones de grados dentro de campos electromagnéticos toroidales.",
     content: [
       "El arma más elegante e icónica de un Caballero Jedi es, sin duda alguna, el sable de luz. Durante décadas enteras, millones de niños y grandes científicos brillantes de todo el mundo han soñado con poder construir uno real. El problema físico y tecnológico con los verdaderos láseres en nuestro universo es que la luz simplemente no se detiene a un metro de distancia. Si enciendes un láser real apuntando hacia el cielo abierto, el rayo de luz viaja infinitamente hacia el espacio sideral.",
       "Además, la luz normal o la luz de un láser no choca físicamente contra otra luz. Si cruzas los haces de luz brillante de dos linternas poderosas en la oscuridad, los rayos de luz simplemente pasan limpiamente uno a través del otro sin hacer ningún ruido de choque ni rebotar como lo hacen las famosas y épicas espadas en los grandiosos combates de las películas. Entonces, para que un sable de luz sea posible en la vida real, no podría estar hecho de simples y puros fotones de luz.",
@@ -145,7 +145,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_plasmas/btn_blasters_energia.png',
     image: '/assets/starwars/infographic_plasmas/hero_blasters_energia.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_blasters_energia.png',
-    bannerCaption: 'Municiones de gas ardiente encapsuladas temporalmente que viajan por el espacio a altísimas velocidades letales.',
+    bannerCaption: "Los aceleradores de partículas impulsan iones a velocidades cercanas a la de la luz usando campos electromagnéticos.",
     content: [
       "En el increíble universo galáctico, los soldados de asalto Stormtroopers y los valientes contrabandistas como Han Solo no utilizan antiguas pistolas que disparan balas de plomo convencionales como en el viejo oeste de la Tierra. En su lugar, siempre disparan potentes armas llamadas 'Blasters'. Cuando alguien dispara un moderno blaster de asalto, lo que sale volando ruidosamente por el aire no es un pedazo físico de metal afilado, sino un brillante, caliente y letal proyectil de brillante color rojo, verde o azul.",
       "A pesar de que su nombre popular pueda hacer pensar que disparan un simple rayo láser recto de luz ininterrumpida, si observas cuidadosamente y con mucha atención las escenas de acción, verás que los disparos o tiros del blaster son, en realidad, rayos cortos y encapsulados. Viajan lo suficientemente lento y claro como para que el ojo humano pueda verlos moverse velozmente a través de las grandes habitaciones e incluso, con el entrenamiento perfecto de la Fuerza, para que un Jedi pueda esquivarlos.",
@@ -179,7 +179,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_plasmas/btn_escudos_deflectores.png',
     image: '/assets/starwars/infographic_plasmas/hero_escudos_deflectores.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_escudos_deflectores.png',
-    bannerCaption: 'Burbujas protectoras inmensas e invisibles compuestas de pura y violenta repulsión electromagnética.',
+    bannerCaption: "Los escudos electromagnéticos deflectan partículas cargadas, similar a cómo la magnetosfera terrestre protege del viento solar.",
     content: [
       "Cada vez que el valiente y famoso Halcón Milenario huye a toda velocidad perseguido por destructores imperiales o entra temerariamente a un peligroso e inestable campo de rocas de asteroides, los sabios y hábiles pilotos siempre ordenan rápidamente a gritos: '¡Activen los escudos deflectores traseros de inmediato!'. De repente, una especie de burbuja gigante o una impenetrable cúpula invisible recubre y protege fuertemente por completo a toda la valiosa nave espacial.",
       "Estos enormes campos de fuerza deflectores tienen el inmenso poder de detener físicamente explosiones directas, rayos mortíferos de energía dirigida, fuego intenso de cañones de combate y rocas espaciales sólidas, sin sufrir aparentemente ni una sola abolladura mecánica grave en el resistente casco exterior o coraza metálica de la astronave. En la historia de la ciencia ficción galáctica, estos grandiosos escudos vitales absorben toda esa masiva y violenta energía cinética entrante.",
@@ -213,7 +213,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/starwars/infographic_plasmas/btn_fusion_nuclear.png",
     image: "/assets/starwars/infographic_plasmas/hero_fusion_nuclear.png",
     bannerImage: "/assets/starwars/infographic_plasmas/banner_fusion_nuclear.png",
-    bannerCaption: "Cámaras gigantes en forma de dona aplastando violentamente el plasma para imitar un diminuto sol embotellado.",
+    bannerCaption: "Los reactores tokamak confinan plasma a 150 millones de grados en forma toroidal para lograr la fusión nuclear controlada.",
     content: [
       "Para que el temible Imperio Galáctico pueda hacer saltar a sus pesados Destructores Estelares a través del hiperespacio, se requiere una cantidad de energía brutal. Las fuentes de energía tradicionales, como el gas o los paneles solares, jamás serían suficientes para mover una fortaleza del tamaño de una ciudad entera. La respuesta a este inmenso desafío tecnológico se encuentra en dominar un proceso monumental llamado fusión nuclear, que es exactamente el mismo motor natural que enciende a nuestro brillante Sol y a todas las demás estrellas luminosas del firmamento nocturno.",
       "Imagina que tienes piezas de Lego esparcidas por toda tu habitación y decides unirlas con mucha fuerza para crear una figura nueva. En el corazón candente de nuestro Sol, a una temperatura sofocante de quince millones de grados Celsius y bajo una presión aplastante de doscientas cincuenta mil millones de atmósferas, la gravedad junta violentamente átomos de hidrógeno. Específicamente, une dos tipos especiales de hidrógeno llamados deuterio y tritio. Al fusionarse, estos se transforman en helio y liberan un destello cegador de energía pura durante el proceso.",
@@ -247,7 +247,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/starwars/infographic_plasmas/btn_rayos_ionicos.png",
     image: "/assets/starwars/infographic_plasmas/hero_rayos_ionicos.png",
     bannerImage: "/assets/starwars/infographic_plasmas/banner_rayos_ionicos.png",
-    bannerCaption: "Naves impulsadas por silenciosos y débiles pero constantes soplos de reluciente gas ionizado que viajan por el oscuro espacio profundo.",
+    bannerCaption: "Los motores iónicos aceleran gas xenón ionizado para generar empuje continuo, alcanzando velocidades de 90 km/s.",
     content: [
       "Cuando pensamos en batallas espaciales, normalmente imaginamos explosiones deslumbrantes que destruyen naves enemigas con fuego brillante y chispas voladoras. Sin embargo, en el helado y remoto planeta Hoth, los valientes rebeldes utilizaron un tipo diferente de armamento: el famoso cañón de iones defensivo. En lugar de perforar el blindaje metálico de los temibles Destructores Estelares, este enorme dispositivo azul disparaba relámpagos concentrados diseñados para sobrecargar los delicados circuitos electrónicos y dejar las máquinas totalmente apagadas y flotando a la deriva.",
       "En el mundo real de la ciencia contemporánea, los iones no se usan típicamente para crear cañones destructivos, sino para impulsar pacíficamente nuestras naves robóticas a través del silencioso vacío del sistema solar. La propulsión iónica funciona despojando a los átomos de un gas noble, como el xenón, de algunos de sus electrones. Al perder electrones, los átomos adquieren una carga eléctrica positiva y se convierten en iones puros. Luego, la nave espacial utiliza rejillas electrificadas muy potentes para repeler estos iones y dispararlos velozmente hacia atrás.",
@@ -281,7 +281,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/starwars/infographic_plasmas/btn_estrella_muerte.png",
     image: "/assets/starwars/infographic_plasmas/hero_estrella_muerte.png",
     bannerImage: "/assets/starwars/infographic_plasmas/banner_estrella_muerte.png",
-    bannerCaption: "Cristales especiales kyber inmensos canalizando monumentales y pavorosos rayos de poder destructor incomparable en la oscura galaxia.",
+    bannerCaption: "Los láseres de alta potencia concentran fotones coherentes mediante cristales amplificadores para transferir energía a largas distancias.",
     content: [
       "La temible estación espacial esférica conocida como la Estrella de la Muerte se convirtió en el arma de terror definitiva del Imperio Galáctico. Su gigantesco cañón cóncavo podía disparar un haz de energía tan desmesuradamente poderoso que era capaz de aniquilar un planeta entero con un solo impacto, como tristemente lo demostró al pulverizar el pacífico mundo de Alderaan. Esta asombrosa demostración de fuerza letal en la gran pantalla ha inspirado a generaciones de ingenieros ópticos a estudiar meticulosamente hasta dónde pueden llegar realmente las capacidades técnicas de la luz pura.",
       "Para comprender estos formidables rayos destructores, primero debemos explorar la verdadera ciencia que se esconde detrás del fascinante acrónimo LASER, que en inglés significa \"Amplificación de Luz por Emisión Estimulada de Radiación\". Fue inventado en el año mil novecientos sesenta por el brillante físico estadounidense Theodore Maiman. A diferencia de las bombillas comunes que emiten luz difusa en todas las direcciones de la habitación, un láser genera ondas de luz idénticas y perfectamente alineadas, permitiendo enfocar toda esa energía concentrada en un punto minúsculo a gran distancia sin perder potencia.",
@@ -568,13 +568,11 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
               {node.content[0].substring(1)}
             </p>
           </div>
-          <div style={{ 
-            backgroundImage: `url(${node.image})`, 
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center',
-            borderLeft: `4px solid ${node.color}`,
-            cursor: 'pointer'
-          }} onClick={() => setLightboxSrc(node.image)} />
+          <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))` }}>
+            <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{
+              width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9, minHeight: '280px',
+            }} />
+          </div>
         </div>
 
         <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

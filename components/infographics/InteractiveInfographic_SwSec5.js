@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
@@ -87,7 +87,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_extremofilos.png',
     image: '/assets/starwars/infographic_fauna/hero_extremofilos.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_extremofilos.png',
-    bannerCaption: 'Criaturas microscópicas como los tardígrados pueden sobrevivir en el vacío absoluto del espacio.',
+    bannerCaption: "Los tardígrados sobreviven condiciones extremas: vacío espacial, radiación y temperaturas de −272°C a 150°C.",
     content: [
       "¿Alguna vez te has preguntado cómo sería vivir en un volcán en erupción, en el fondo congelado del océano, o incluso flotando en el espacio exterior sin un traje espacial? Para los humanos, esto suena a una misión imposible que terminaría muy mal. Sin embargo, en nuestro propio planeta Tierra, existen pequeños superhéroes biológicos que consideran estos ambientes mortales como su hogar dulce hogar. Los científicos los llaman 'Extremófilos', que significa literalmente 'amantes de lo extremo'. Estos asombrosos organismos nos demuestran que la vida es resistente y adaptable.",
       "El campeón indiscutible de los extremófilos es un animalito microscópico llamado 'Tardígrado', o también conocido cariñosamente como 'osito de agua'. Estas diminutas criaturas de ocho patas pueden sobrevivir a temperaturas de más de 150 grados Celsius (¡más caliente que el agua hirviendo!) y a fríos espantosos de casi -270 grados Celsius. Pero eso no es todo: si los secas por completo, se encogen en una pequeña bolita llamada 'ton' y pueden pasar décadas sin una sola gota de agua, despertando como si nada cuando finalmente los mojas. ¡Tienen un mecanismo de animación suspendida asombroso!",
@@ -121,7 +121,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_sarlacc_digestivo.png',
     image: '/assets/starwars/infographic_fauna/hero_sarlacc_digestivo.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_sarlacc_digestivo.png',
-    bannerCaption: 'Un depredador que espera en las arenas del desierto, utilizando el engaño como trampa letal.',
+    bannerCaption: "Los depredadores emboscadores, como las arañas trampilla, emplean estrategias pasivas para capturar presas sin persecución.",
     content: [
       "Imagina que caminas tranquilamente por el cálido desierto arenoso, tropiezas accidentalmente y caes irremediablemente en un inmenso y oscuro foso cónico profundo, solo para descubrir con terror absoluto que las paredes orgánicas y resbaladizas están vivas y llenas de dientes. Esto es exactamente lo que le ocurre a las desventuradas víctimas del temible y glotón monstruo Sarlacc en el conocido pozo de Carkoon en Tatooine. Aunque esto ciertamente parece un monstruo alienígena totalmente inventado, en la Tierra real tenemos animales fascinantes y letales con tácticas de emboscada ocultas sorprendentemente similares.",
       "La extraña y prolongada biología monstruosa de la dolorosa digestión extrema gástrica es un tema científico inmensamente complejo y verdaderamente fascinante de analizar. El nervioso droide robótico dorado C-3PO menciona aterrado a los héroes prisioneros que las víctimas devoradas del enorme Sarlacc gigante serán miserablemente digeridas lentamente a lo largo de un prolongado y agonizante periodo espantoso de mil largos años continuos sin descanso. Desde una perspectiva biológica realista terrestre, para que un gran organismo carnívoro animal se tome tanto tiempo digiriendo vivo y sufriendo a su pobre presa.",
@@ -155,7 +155,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_rancor_megafauna.png',
     image: '/assets/starwars/infographic_fauna/hero_rancor_megafauna.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_rancor_megafauna.png',
-    bannerCaption: 'Gigantes imponentes que requieren adaptaciones óseas masivas para sostener su tremendo peso.',
+    bannerCaption: "La megafauna terrestre, como el Paraceratherium de 20 toneladas, requería estructuras óseas reforzadas por la ley del cuadrado-cubo.",
     content: [
       "Cuando la pesada e inmensa puerta blindada de metal del oscuro calabozo subterráneo secreto del líder criminal Jabba se levanta rechinando estrepitosamente, revela aterradoramente desde las profundidades a una de las criaturas monstruosas carnívoras biológicas pesadas gigantescas más absolutamente aterradoras y brutalmente salvajes destructivas de toda la inmensa y fantástica galaxia completa: el gigantesco y bestial monstruo colosal corpulento y feroz monstruo legendario alienígena mítico inmenso llamado Rancor salvaje bestia. Con sus enormes garras letales largas rasgadoras formidables cortantes mortales filosas gruesas monstruosas.",
       "El ser un increíble monstruo gigante enorme y pesado inmenso aterrador biológico masivo corpulento no es un asunto metabólico tan fácil, sencillo y simplemente resuelto mágico y rápido como maravillosamente simplemente llanamente a veces suele parecer en las películas fantásticas espectaculares increíbles galácticas visuales en gran pantalla oscura del moderno cine de ciencia ficción imaginativa debido directamente natural científica inevitablemente fundamental constante pesada a una rigurosa inquebrantable e inamovible matemática sólida e irrompible pesada física constante inalterable y universal llamada comúnmente científica biológicamente por genios la brillante Ley Cuadrático-Cúbica física.",
@@ -189,7 +189,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_tauntaun_adaptacion.png',
     image: '/assets/starwars/infographic_fauna/hero_tauntaun_adaptacion.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_tauntaun_adaptacion.png',
-    bannerCaption: 'Las capas de grasa y el pelaje especializado actúan como el escudo biológico definitivo.',
+    bannerCaption: "Los mamíferos árticos desarrollan grasa subcutánea, contracorriente vascular y pelaje multicapa para sobrevivir a −50°C.",
     content: [
       "Imaginen que están caminando en un lugar tan frío que incluso el aliento se congela en el aire antes de tocar el suelo. Así es el planeta helado de Hoth, un mundo implacable con temperaturas mortales. Para sobrevivir en ambientes tan extremos, los animales no pueden simplemente ponerse un abrigo de invierno. Deben poseer adaptaciones biológicas fascinantes que funcionan como una armadura invisible contra la temperatura. La naturaleza, en su infinita sabiduría, ha desarrollado ingeniosas estrategias para mantener el calor corporal, desde alteraciones en la circulación sanguínea hasta la creación de anticongelantes biológicos internos.",
       "Un mecanismo crucial que utilizan los animales del Ártico terrestre es el intercambio de calor a contracorriente. Piensen en esto como un sistema de tuberías inteligente donde las arterias cálidas que bajan del corazón calientan la sangre fría de las venas que regresa de las extremidades. De este modo, el calor se retiene en el núcleo vital del cuerpo y no se pierde por las patas o las aletas. Es como si el cuerpo reciclara constantemente su propia calefacción, asegurando que los órganos principales funcionen perfectamente mientras las patas pueden soportar el hielo sin llegar a congelarse.",
@@ -223,7 +223,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_purrgil_migracion.png',
     image: '/assets/starwars/infographic_fauna/hero_purrgil_migracion.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_purrgil_migracion.png',
-    bannerCaption: 'Las enormes ballenas espaciales navegan usando un sentido magnético innato a través de las estrellas.',
+    bannerCaption: "Las ballenas jorobadas migran 8,000 km guiándose por el campo magnético terrestre, fenómeno llamado magnetorrecepción.",
     content: [
       "El reino animal está lleno de viajeros incansables que emprenden trayectos épicos a través del mundo entero sin el uso de mapas o sistemas de posicionamiento satelital. Esta inmensa capacidad para la migración es uno de los mayores misterios biológicos de la naturaleza. Organismos de diversas especies cruzan océanos y continentes enteros guiados por señales invisibles del entorno, superando obstáculos formidables y condiciones climáticas extremas para llegar con una precisión impecable a sus destinos de reproducción o alimentación.",
       "Uno de los ejemplos más notables de resistencia es el del charrán ártico, un ave marina relativamente pequeña que realiza un recorrido migratorio anual de aproximadamente setenta mil kilómetros. Viaja desde las zonas de cría en el Ártico hasta la Antártida y regresa en un ciclo continuo, experimentando dos veranos cada año y viendo más luz diurna que cualquier otra criatura del planeta. Este impresionante viaje de resistencia demuestra cómo la evolución ha dotado a ciertas especies de capacidades físicas y de navegación incomparables.",
@@ -257,7 +257,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_bioluminiscencia.png',
     image: '/assets/starwars/infographic_fauna/hero_bioluminiscencia.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_bioluminiscencia.png',
-    bannerCaption: 'La luz fría de la biología ilumina los abismos más oscuros de la naturaleza.',
+    bannerCaption: "La bioluminiscencia es una reacción química entre luciferina y luciferasa que produce luz sin calor en organismos marinos.",
     content: [
       "Cuando exploramos las partes más recónditas de la naturaleza, especialmente los inmensos abismos marinos donde la luz solar jamás logra penetrar, encontramos un espectáculo brillante casi mágico. La bioluminiscencia es la capacidad espectacular de un organismo vivo para producir y emitir su propia luz. Este fenómeno, en lugar de ser una simple fantasía visual, es el resultado directo de una reacción química fría y sumamente eficiente que ha evolucionado de forma independiente en decenas de grupos animales diferentes a lo largo del tiempo biológico.",
       "El corazón químico de este deslumbrante fenómeno se basa en dos componentes moleculares clave: la molécula llamada luciferina y la enzima denominada luciferasa. Cuando la luciferina reacciona con el oxígeno, la enzima luciferasa actúa como un acelerador catalítico que permite la liberación de energía luminosa en forma de fotones. Es una luz excepcionalmente fría, lo que significa que casi no genera calor, a diferencia de nuestras bombillas incandescentes tradicionales donde una gran cantidad de energía se desperdicia trágicamente por el calentamiento.",
@@ -291,7 +291,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_exobiologia_futuro.png',
     image: '/assets/starwars/infographic_fauna/hero_exobiologia_futuro.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_exobiologia_futuro.png',
-    bannerCaption: 'Nuestros telescopios buscan firmas químicas que revelen la presencia de vida biológica.',
+    bannerCaption: "El telescopio James Webb analiza las atmósferas de exoplanetas buscando biofirmas como oxígeno, metano y vapor de agua.",
     content: [
       "Desde los albores de la civilización, el ser humano ha contemplado la inmensidad del firmamento nocturno preguntándose si estamos completamente solos en el vasto cosmos. Esta profunda interrogante filosófica ha dado origen a la astrobiología, una disciplina científica moderna que combina la astronomía, la biología molecular y la geología planetaria para rastrear la presencia de ecosistemas orgánicos más allá de nuestro planeta natal, utilizando la rigurosa metodología empírica para descifrar los misterios de la evolución estelar.",
       "Para ordenar nuestras expectativas sobre la vida galáctica, el célebre astrónomo Frank Drake formuló en 1961 su famosa ecuación matemática probabilística. La Ecuación de Drake calcula teóricamente el número de civilizaciones activas y comunicativas dentro de la Vía Láctea, considerando factores variables como la tasa de formación de estrellas adecuadas, la fracción de aquellas con sistemas planetarios y la remota posibilidad de que emerja tecnología detectable. Es un marco de referencia fenomenal para dimensionar las matemáticas cósmicas de la existencia.",
@@ -511,7 +511,11 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
               {node.content[0].substring(1)}
             </p>
           </div>
-          <div style={{ backgroundImage: `url(${node.image})`, backgroundSize: 'cover', backgroundPosition: 'center', borderLeft: `4px solid ${node.color}`, cursor: 'pointer' }} onClick={() => setLightboxSrc(node.image)} />
+          <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))` }}>
+            <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{
+              width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9, minHeight: '280px',
+            }} />
+          </div>
         </div>
         <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC' }}>{node.content[1]}</p>

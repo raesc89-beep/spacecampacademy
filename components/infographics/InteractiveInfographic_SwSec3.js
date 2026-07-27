@@ -548,13 +548,11 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
               {node.content[0].substring(1)}
             </p>
           </div>
-          <div style={{ 
-            backgroundImage: `url(${node.image})`, 
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center',
-            borderLeft: `4px solid ${node.color}`,
-            cursor: 'pointer'
-          }} onClick={() => setLightboxSrc(node.image)} />
+          <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))` }}>
+            <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{
+              width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9, minHeight: '280px',
+            }} />
+          </div>
         </div>
 
         <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
