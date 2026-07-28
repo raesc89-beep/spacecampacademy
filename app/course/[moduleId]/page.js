@@ -37,6 +37,11 @@ import InteractiveInfographic_SwSec4 from '@/components/infographics/Interactive
 import InteractiveInfographic_SwSec5 from '@/components/infographics/InteractiveInfographic_SwSec5';
 import InteractiveInfographic_SwSec6 from '@/components/infographics/InteractiveInfographic_SwSec6';
 import InteractiveInfographic_SwSec9 from '@/components/infographics/InteractiveInfographic_SwSec9';
+import InteractiveInfographic_InterstellarM1 from '@/components/infographics/InteractiveInfographic_InterstellarM1';
+import InteractiveInfographic_InterstellarM2 from '@/components/infographics/InteractiveInfographic_InterstellarM2';
+import InteractiveInfographic_InterstellarM3 from '@/components/infographics/InteractiveInfographic_InterstellarM3';
+import InteractiveInfographic_InterstellarM4 from '@/components/infographics/InteractiveInfographic_InterstellarM4';
+import InteractiveInfographic_InterstellarM5 from '@/components/infographics/InteractiveInfographic_InterstellarM5';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -461,8 +466,23 @@ export default function CourseModule() {
           {moduleData.id === 'starwars_sec_9' && (
             <InteractiveInfographic_SwSec9 />
           )}
+          {moduleData.id === 'interstellar_m1' && (
+            <InteractiveInfographic_InterstellarM1 />
+          )}
+          {moduleData.id === 'interstellar_m2' && (
+            <InteractiveInfographic_InterstellarM2 />
+          )}
+          {moduleData.id === 'interstellar_m3' && (
+            <InteractiveInfographic_InterstellarM3 />
+          )}
+          {moduleData.id === 'interstellar_m4' && (
+            <InteractiveInfographic_InterstellarM4 />
+          )}
+          {moduleData.id === 'interstellar_m5' && (
+            <InteractiveInfographic_InterstellarM5 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
