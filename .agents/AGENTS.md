@@ -408,6 +408,7 @@ Para CADA nodo de la infografía, verificar:
 | **Cifras** | Temperaturas, distancias, masas, velocidades son precisas | Verificar con fuente y corregir |
 | **Atribuciones** | Descubrimientos atribuidos a la persona/equipo correcto | Corregir atribución |
 | **Analogías** | Las analogías son científicamente válidas (no distorsionan el concepto) | Reescribir analogía |
+| **Word Salad** | NO se permite la acumulación de 3+ adjetivos/adverbios consecutivos sin valor informativo (ej: "el grandioso, inmenso, colosal e implacable"). Máximo 1 adjetivo calificativo por sustantivo. El contenido debe ser directo, preciso y científico. | Reescribir párrafo completo eliminando adjetivos redundantes |
 | **Consistencia interna** | No hay contradicciones entre párrafos del mismo nodo o entre nodos | Unificar datos |
 
 ### 14.2 FASE 2 — Auditoría de Extensión de Contenido:
