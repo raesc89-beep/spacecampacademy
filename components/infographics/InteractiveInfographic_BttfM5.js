@@ -161,7 +161,7 @@ const INFOGRAPHIC_NODES = [
       'La física en la película: el aeropatín parece repeler la gravedad misma. En realidad, no puedes simplemente cancelar la gravedad — es una de las cuatro fuerzas fundamentales del universo. Pero SÍ puedes crear una fuerza hacia arriba lo suficientemente fuerte para contrarrestarla. ¡Eso es lo que hace la levitación magnética!',
       'Mattel sacó juguetes de aeropatín después de BTTF2. Eran solo tablas normales sin ruedas (no flotaban). La utilería original de la película se vendió en una subasta por $501,000 dólares en 2021. Solo existen un puñado de aeropatines usados en la filmación.',
     ],
-    fact: 'Robert Zemeckis le dijo a un entrevistador de TV en 1989 que los aeropatines eran reales y que «han existido por años, pero grupos de padres presionaron a las tiendas para que no los vendieran». Miles de personas llamaron a jugueterías intentando comprar uno. Después admitió que era una broma.',
+    fact: 'El icónico aeropatín rosa de Mattel que usó Michael J. Fox no era más que una tabla de madera de un scooter modificada. Los utileros de la película le quitaron las ruedas, la repintaron con colores brillantes y le agregaron un parche de velcro para que los zapatos del actor se mantuvieran en su lugar.',
   },
   {
     id: 'maglev', title: 'Trenes Maglev: Levitación Real', color: '#00CCFF',
@@ -200,7 +200,7 @@ const INFOGRAPHIC_NODES = [
       'La limitación: el Hendo SOLO funciona sobre superficies metálicas conductoras — láminas de cobre o aluminio. Llévalo afuera al concreto o asfalto y no pasa nada. Los fundadores, Greg y Jill Henderson, crearon la tecnología de flotación para protección contra terremotos — ¡su verdadero objetivo era levitar edificios enteros durante sismos!',
       'El Hendo 2.0 (su versión mejorada) usó una campaña de Kickstarter y recaudó $510,590 dólares de 3,169 patrocinadores. El respaldo de Tony Hawk fue crucial. La tabla flota aproximadamente 2.5 cm sobre la superficie y puede soportar un jinete de hasta 136 kg. Suena como una aspiradora cuando funciona — ¡los imanes giratorios crean un zumbido fuerte!',
     ],
-    fact: 'La pareja Henderson (Greg y Jill) originalmente no querían construir aeropatines. Su compañía Arx Pax creó «Arquitectura de Campo Magnético» (MFA) para levitar edificios durante terremotos, salvándolos del daño. ¡El aeropatín solo fue una demo divertida para atraer atención a su tecnología antisísmica! Su patente real es para estructuras levitantes.',
+    fact: 'Para financiar su primer modelo de aeropatín, Hendo lanzó una campaña en Kickstarter en 2014 con una meta de $250,000 dólares. El proyecto fue un éxito masivo y recaudó más de $510,000. Los patrocinadores que aportaron $10,000 o más recibieron uno de los primeros diez aeropatines funcionales producidos.',
   },
   {
     id: 'newton', title: 'Las Leyes de Newton y la Gravedad', color: '#FFA500',

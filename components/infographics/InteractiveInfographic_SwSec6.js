@@ -147,30 +147,30 @@ const INFOGRAPHIC_NODES = [
     bannerImage: '/assets/starwars/infographic_plasmas/banner_blasters_energia.png',
     bannerCaption: "Los aceleradores de partículas impulsan iones a velocidades cercanas a la de la luz usando campos electromagnéticos.",
     content: [
-      "En el increíble universo galáctico, los soldados de asalto Stormtroopers y los valientes contrabandistas como Han Solo no utilizan antiguas pistolas que disparan balas de plomo convencionales como en el viejo oeste de la Tierra. En su lugar, siempre disparan potentes armas llamadas 'Blasters'. Cuando alguien dispara un moderno blaster de asalto, lo que sale volando ruidosamente por el aire no es un pedazo físico de metal afilado, sino un brillante, caliente y letal proyectil de brillante color rojo, verde o azul.",
-      "A pesar de que su nombre popular pueda hacer pensar que disparan un simple rayo láser recto de luz ininterrumpida, si observas cuidadosamente y con mucha atención las escenas de acción, verás que los disparos o tiros del blaster son, en realidad, rayos cortos y encapsulados. Viajan lo suficientemente lento y claro como para que el ojo humano pueda verlos moverse velozmente a través de las grandes habitaciones e incluso, con el entrenamiento perfecto de la Fuerza, para que un Jedi pueda esquivarlos.",
-      "Para la ciencia moderna del mundo real, esto nos indica inmediatamente que los blasters definitivamente no disparan láseres reales hechos puramente de luz, ya que la luz verdadera viaja a unos insuperables 300,000 kilómetros exactos por cada segundo, siendo invisible en el aire vacío e instantánea. Lo que realmente disparan estas armas futuristas son diminutos y extremadamente compactos cúmulos empaquetados de mortífero plasma supercaliente.",
-      "El arma espacial de combate funcionaría tomando un gas especial de munición alojado en su cargador recargable, inyectándole una inmensa y violenta descarga electromagnética para ionizarlo, y luego lo dispararía utilizando un tubo acelerador de partículas en miniatura. El grandísimo y difícil problema científico en la vida real es que estos empaquetados cúmulos de plasma, sin un contenedor sólido que los mantenga unidos, tenderían a disiparse, esparcirse y enfriarse en el aire muy rápidamente.",
-      "Aquí en nuestro planeta Tierra real, los ejércitos de defensa y las gigantescas empresas de tecnología militar ya están desarrollando actualmente prototipos secretos de Armas de Energía Dirigida (DEW). Sistemas inmensos como el láser ATHENA se prueban montados rígidamente en enormes camiones militares o en barcos acorazados para quemar pequeños drones enemigos desde la distancia, pero aún no han logrado comprimir y meter toda esa monumental energía en una simple y portátil pistola de cinturón."
+      "En el universo galáctico, los soldados de asalto y los contrabandistas como Han Solo no utilizan armas que disparan balas de metal convencionales. En su lugar, utilizan blasters. Cuando se dispara un blaster, lo que sale volando por el aire no es un pedazo sólido de plomo, sino un proyectil brillante de color rojo, verde o azul compuesto de energía.",
+      "Aunque a menudo se les llama armas láser, si observas cuidadosamente las escenas de acción, notarás que los disparos del blaster viajan como rayos cortos. Se mueven lo suficientemente lento como para que el ojo humano pueda verlos cruzar la habitación. ¡Un Jedi entrenado en la Fuerza puede incluso esquivarlos!",
+      "La ciencia moderna nos indica que los blasters no pueden disparar láseres reales de luz pura. La luz viaja a 300,000 kilómetros por segundo y es invisible en el vacío. En realidad, los científicos sugieren que estas armas disparan grupos concentrados de plasma a alta temperatura, lo que explica su velocidad y visibilidad.",
+      "Un blaster funcionaría ionizando un gas almacenado en su cargador con una fuerte descarga electromagnética y luego disparándolo a través de un acelerador de partículas en miniatura. El problema físico en el mundo real es que estos cúmulos de plasma, sin un contenedor que los mantenga unidos, se disiparían y enfriarían rápidamente en el aire.",
+      "En la Tierra, ya se están desarrollando Armas de Energía Dirigida (DEW). Sistemas grandes como el láser ATHENA se prueban montados en vehículos pesados para interceptar pequeños drones a distancia. Sin embargo, la tecnología actual aún no puede miniaturizar y comprimir toda esa energía en una pistola portátil como las que vemos en el cine."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el gran Episodio IV: Una Nueva Esperanza, cuando vemos las acaloradas y frenéticas batallas en los peligrosos pasillos de abordaje metálicos o dentro del gigantesco bloque de celdas y prisiones de rescate, los impactantes disparos de blaster rebotan dramática e impredeciblemente contra las sólidas paredes y dejan gigantescas marcas quemadas de carbón y agujeros derretidos, evidenciando grandes daños térmicos y no impactos mecánicos.' 
+        text: 'En el Episodio IV: Una Nueva Esperanza, durante las batallas en los pasillos, los disparos de blaster rebotan contra las paredes y dejan marcas de quemaduras y metal derretido. Esto evidencia que el daño es térmico, producido por calor extremo, y no un impacto mecánico tradicional.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'La Marina y Defensa de los Estados Unidos de América ya ha desplegado e instalado operativamente en varios de sus enormes barcos militares y destructores de guerra el avanzado Sistema de Armas Láser (LaWS). A diferencia dramática y obvia de un blaster cinematográfico que lanza rayos brillantes, el rayo letal del LaWS de combate es un potente rayo infrarrojo que es completamente invisible al ojo desnudo del ser humano y silencioso.' 
+        text: 'La Marina de los Estados Unidos ya ha instalado el Sistema de Armas Láser (LaWS) en algunos buques. A diferencia del blaster cinematográfico de colores brillantes, el LaWS dispara un rayo infrarrojo completamente invisible al ojo humano y es silencioso.' 
       },
       {
         label: '¿Sabías que...?',
         icon: 'sparkles',
-        text: 'Para producir el mundialmente famoso, icónico e inolvidable sonido "pew-pew" o "piu-piu" agudo de los letales disparos del blaster en la primera y genial película del año 1977, el ingenioso diseñador acústico Ben Burtt golpeó repetida y fuertemente los enormes y tirantes cables tensores metálicos de acero puro de una gran torre de antena de radio de alta frecuencia utilizando simplemente una pesada llave inglesa o tuerca de metal.'
+        text: 'Para crear el famoso sonido "pew-pew" de los blasters en la película de 1977, el diseñador de sonido Ben Burtt golpeó los cables tensores de una torre de radio con una llave metálica.'
       }
     ],
-    fact: 'Los blasters de la famosa ficción se comportan físicamente de un modo muy diferente a la luz láser real. Viajan mucho más lento que la velocidad inalcanzable de la luz y actúan como "balas" concentradas, lo que sugiere firmemente a los científicos que son disparadores hiper-acelerados de grupos de partículas de plasma confinado.'
+    fact: 'Los blasters de la ciencia ficción se comportan como disparadores de grupos de partículas de plasma confinado, en lugar de verdaderos láseres, ya que viajan mucho más lento que la velocidad de la luz.'
   },
   {
     id: 'escudos-deflectores',
@@ -181,30 +181,30 @@ const INFOGRAPHIC_NODES = [
     bannerImage: '/assets/starwars/infographic_plasmas/banner_escudos_deflectores.png',
     bannerCaption: "Los escudos electromagnéticos deflectan partículas cargadas, similar a cómo la magnetosfera terrestre protege del viento solar.",
     content: [
-      "Cada vez que el valiente y famoso Halcón Milenario huye a toda velocidad perseguido por destructores imperiales o entra temerariamente a un peligroso e inestable campo de rocas de asteroides, los sabios y hábiles pilotos siempre ordenan rápidamente a gritos: '¡Activen los escudos deflectores traseros de inmediato!'. De repente, una especie de burbuja gigante o una impenetrable cúpula invisible recubre y protege fuertemente por completo a toda la valiosa nave espacial.",
-      "Estos enormes campos de fuerza deflectores tienen el inmenso poder de detener físicamente explosiones directas, rayos mortíferos de energía dirigida, fuego intenso de cañones de combate y rocas espaciales sólidas, sin sufrir aparentemente ni una sola abolladura mecánica grave en el resistente casco exterior o coraza metálica de la astronave. En la historia de la ciencia ficción galáctica, estos grandiosos escudos vitales absorben toda esa masiva y violenta energía cinética entrante.",
-      "Crear un escudo completamente invisible y sólido como un muro de ladrillos que sea capaz de detener cualquier tipo de materia sólida es, a la luz de nuestra física humana actual terrestre, algo verdaderamente cercano a lo casi imposible. Sin embargo, en pleno siglo XXI, los brillantes ingenieros y científicos en los gigantescos laboratorios reales de experimentación aeronáutica ya están trabajando asombrosamente de verdad en las asombrosas bases rudimentarias de estos grandes escudos.",
-      "La idea científica central más realista y apoyada por grandes genios investigadores utiliza una vez más la majestuosa y versátil física del estado de los plasmas y de los poderosos electromagnetismos y magnetosfera protectora de nuestro sol. Un sistema de protección real, como el que investigan fuertemente gigantes tecnológicos mundiales, implica proyectar frente a los blindajes militares un gigantesco campo y capa de plasma altísimamente denso en fracciones minúsculas de segundo.",
-      "Cuando se acerca veloz y letalmente la onda de choque inmensamente caliente y rápida de una terrible explosión balística de combate, este muro artificial invisible compuesto únicamente de gases sobrecalentados y fuertemente ionizados absorbería enormemente parte de la peligrosa y masiva energía que se aproxima mediante su asombrosa interacción eléctrica con las furiosas ondas, desviando gran parte del tremendo golpe físico, simulando los famosos y geniales escudos galácticos de las películas."
+      "Cuando el Halcón Milenario huye de destructores imperiales o atraviesa un campo de asteroides, los pilotos ordenan activar los escudos deflectores. En cuestión de segundos, una cúpula de energía invisible recubre y protege la nave.",
+      "Estos campos de fuerza tienen el poder de detener impactos directos de armas y el choque de rocas espaciales a alta velocidad. Los escudos absorben toda la energía cinética entrante, protegiendo el casco metálico de la nave sin sufrir abolladuras.",
+      "Crear un escudo invisible que actúe como un muro de ladrillos contra objetos sólidos es casi imposible con nuestra física actual. Sin embargo, los ingenieros aeronáuticos están investigando conceptos que se acercan bastante a esta tecnología de ciencia ficción.",
+      "La propuesta científica más realista se basa en la física de los plasmas y el electromagnetismo. Un sistema de protección real implicaría proyectar una capa de plasma extremadamente denso alrededor de un vehículo en fracciones de segundo.",
+      "Cuando una onda de choque explosiva se acerca, este muro de gas sobrecalentado e ionizado podría absorber y dispersar gran parte de la energía mediante interacción electromagnética, mitigando el impacto de forma similar a los escudos galácticos."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En la gran batalla final apocalíptica de la luna forestal de Endor en el clásico Episodio VI: El Retorno del Jedi, la colosal y mortífera segunda Estrella de la Muerte se encuentra altamente protegida por un inmenso y poderoso campo deflector gigantesco, el cual es proyectado incesantemente desde unas enormes, potentes e imponentes instalaciones generadoras fortificadas y profundamente custodiadas que se encuentran en la exuberante superficie verde de la luna.' 
+        text: 'En el Episodio VI: El Retorno del Jedi, la segunda Estrella de la Muerte está protegida por un campo deflector masivo. Este escudo es proyectado desde un generador instalado en la superficie de la luna de Endor.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'En el fantástico año tecnológico del año 2015, la gigante e histórica compañía de defensa militar aeronáutica mundial, Boeing Company, de hecho patentó oficial y legalmente algo asombroso y alucinante que ellos llamaron "Método y gran sistema para el poderoso alivio y rápida atenuación de masivas ondas de choque usando un asombroso escudo activo electromagnético".' 
+        text: 'En 2015, la compañía aeroespacial Boeing patentó un "Método y sistema para la atenuación de ondas de choque mediante un arco electromagnético". Es un paso teórico hacia los escudos de fuerza reales.' 
       },
       {
         label: '¿Sabías que...?',
         icon: 'sparkles',
-        text: 'Existen increíbles e impresionantes "ventanas de plasma" reales y totalmente funcionales construidas y funcionando en prestigiosos laboratorios de física nuclear y aceleradores mundiales. Usando fuerzas magnéticas avanzadas se crea una densa lámina de plasma hipercaliente que mantiene un estricto y total vacío hermético y espacial en un lado de un gran tubo cilíndrico de metal sin que se requiera utilizar para nada un cristal sólido.'
+        text: 'Existen "ventanas de plasma" en laboratorios de física de partículas. Utilizan un campo magnético para contener una fina capa de plasma que separa el vacío del aire normal sin necesidad de usar un cristal sólido.'
       }
     ],
-    fact: 'Los ingenieros del mundo real estudian activamente inmensos generadores de campos de fuerza usando plasma hiper ionizado como una gruesa almohada capaz de mitigar e interceptar severas ondas explosivas aéreas y destructivas antes de que golpeen los vehículos.'
+    fact: 'Los ingenieros investigan generadores de campos electromagnéticos que usan plasma ionizado para interceptar y dispersar ondas expansivas antes de que alcancen a los vehículos.'
   },
   {
     id: "fusion-nuclear",
