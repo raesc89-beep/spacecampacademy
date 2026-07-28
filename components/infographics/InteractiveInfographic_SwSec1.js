@@ -103,11 +103,11 @@ const BIBLIOGRAPHY = [
 ];
 
 const FALCON_GALLERY = [
-  { src: '/assets/starwars/infographic_kessel/falcon_hyperspace.png', caption: 'El Halcón Milenario saltando al hiperespacio' },
-  { src: '/assets/starwars/infographic_kessel/falcon_kessel_run.png', caption: 'Navegando entre agujeros negros en el Corredor de Kessel' },
-  { src: '/assets/starwars/infographic_kessel/falcon_cockpit_stars.png', caption: 'Vista desde la cabina hacia las estrellas infinitas' },
-  { src: '/assets/starwars/infographic_kessel/falcon_asteroid_field.png', caption: 'Esquivando asteroides a velocidad imposible' },
-  { src: '/assets/starwars/infographic_kessel/falcon_orbit_planet.png', caption: 'Orbitando un mundo desconocido con dos soles' },
+  { src: '/assets/starwars/infographic_kessel/falcon_poster_art.png', caption: 'Carguero corelliano YT-1300, la nave más rápida de la galaxia según Han Solo' },
+  { src: '/assets/starwars/infographic_kessel/falcon_blueprint.jpg', caption: 'Planos técnicos del YT-1300: vista superior, lateral y frontal con anotaciones en Aurebesh' },
+  { src: '/assets/starwars/infographic_kessel/falcon_tie_chase.png', caption: 'El Halcón Milenario evadiendo cazas TIE sobre Jakku en El Despertar de la Fuerza (2015)' },
+  { src: '/assets/starwars/infographic_kessel/falcon_hyperspace.jpg', caption: 'Representación del salto al hiperespacio: las estrellas se alargan por la dilatación relativista' },
+  { src: '/assets/starwars/infographic_kessel/falcon_topdown.png', caption: 'Vista cenital del Halcón Milenario mostrando su icónico diseño de disco asimétrico' },
 ];
 
 const INFOGRAPHIC_NODES = [
@@ -265,7 +265,7 @@ const INFOGRAPHIC_NODES = [
     bannerImage: '/assets/starwars/infographic_kessel/banner_agujeros.png',
     bannerCaption: 'Los agujeros negros retuercen tanto la gravedad que ni siquiera la luz puede escapar de su interior.',
     content: [
-      "En la apasionante leyenda y mitología del famoso Corredor de Kessel, la zona más letal y terrorífica se conoce coloquialmente como 'Las Fauces', un espeluznante cúmulo densamente poblado por colosales agujeros negros. Estos monstruosos pozos gravitatorios no son en absoluto una simple fantasía o un recurso barato de ciencia ficción cinematográfica. En nuestro impredecible y maravilloso universo real, los agujeros negros son posiblemente los objetos más fascinantes, destructivos y asombrosamente misteriosos que existen en toda la inmensa extensión del gélido cosmos inexplorado.",
+      "En la historia del Corredor de Kessel, la zona más conocida es 'Las Fauces', un cúmulo poblado por agujeros negros. Estos pozos gravitatorios no son solo ciencia ficción. En el universo real, los agujeros negros son objetos fascinantes y misteriosos del cosmos inexplorado.",
       "Un agujero negro se forma típicamente cuando una estrella súper masiva, al menos unas veinte veces más pesada que nuestro propio modesto Sol, agota por completo todo su combustible de fusión nuclear y muere exhausta. Al detenerse bruscamente la reacción que generaba su energía hacia afuera, no hay nada que soporte el abrumador peso de la estrella, y la poderosa gravedad aplasta su enorme núcleo violentamente hacia adentro. Todo el material gigantesco se comprime incesantemente hasta quedar atrapado en un minúsculo e infinitamente denso punto geométrico que los astrofísicos llaman la 'singularidad'.",
       "La atracción gravitatoria de estos colapsos espectaculares es tan asombrosamente colosal e intensa que domina absolutamente su vecindario espacial cercano. Hay una temida y definitiva frontera o límite invisible alrededor del mortífero agujero negro llamada cariñosamente el 'horizonte de sucesos'. Si algo, incluso la luz más veloz del universo, cruza desprevenidamente esa invisible línea de no retorno gravitatorio, quedará atrapado sin remedio para toda la eternidad. Es por esta simple pero aplastante razón que los denominamos agujeros verdaderamente 'negros', ya que no emiten luz.",
       "Quizás el aspecto más extraño, perturbador y contra intuitivo de los poderosos agujeros negros es el fenómeno increíble conocido formalmente en la física relativista como la 'dilatación gravitacional del tiempo'. A medida que un valiente observador espacial se acerca temerariamente a un inmenso campo gravitacional, el tiempo literalmente se ralentiza y frena su ritmo de avance constante para esa persona en relación y comparación con las demás personas que se encuentran muy lejos, protegidas, seguras y libres de esa distorsión cósmica fundamental y abrumadoramente intensa de la relatividad.",
@@ -275,7 +275,7 @@ const INFOGRAPHIC_NODES = [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el largometraje "Solo: Una Historia de Star Wars", el Halcón Milenario y su valiente tripulación experimentan un aterrador y extremo peligro mortal debido a la irresistible y poderosa atracción implacable de El Sumidero de Kessel. Han Solo utiliza inteligentemente un pequeño y volátil frasco del valioso mineral combustible de hiper-propulsión líquido (coaxium) en bruto e inestable para darle mágicamente a los motores de la nave un explosivo impulso abrumador para liberarse justo en el límite fatídico del ineludible e invisible horizonte de sucesos.' 
+        text: 'En la película "Solo: Una Historia de Star Wars", el Halcón Milenario y su tripulación enfrentan el peligro de la atracción gravitatoria de El Sumidero de Kessel. Han Solo utiliza un pequeño frasco del combustible líquido (coaxium) en bruto para darle a los motores un impulso que les permita escapar justo antes de cruzar el horizonte de sucesos.' 
       },
       { 
         label: 'Dato Científico', 
@@ -294,11 +294,11 @@ const INFOGRAPHIC_NODES = [
     bannerImage: '/assets/starwars/infographic_kessel/banner_navegacion.png',
     bannerCaption: 'La Red del Espacio Profundo mantiene contacto con nuestras sondas más lejanas.',
     content: [
-      "Navegar exitosamente a través de nuestro colosal Sistema Solar, para no hablar del casi infinito vacío del abismo interestelar, representa uno de los desafíos técnicos más monumentales, alucinantes y formidables de toda la gran historia de la ingeniería y de la humanidad contemporánea en sí misma. ¿Cómo puede una minúscula y delicada sonda espacial como la famosa nave Voyager 1 saber con absoluta exactitud en qué recóndito y oscuro lugar remoto se halla cuando está navegando a miles de millones de fríos y tenebrosos kilómetros completamente lejos de nuestro diminuto y reconfortante hogar terrestre?",
-      "Las heroicas y legendarias sondas interplanetarias Voyager 1 y Voyager 2, ambas magistralmente impulsadas por la agencia NASA en el emocionante año pionero de 1977, orientan su frágil e imparable rumbo en el frío espacio empleando asombrosos y avanzados 'rastreadores de estrellas'. Estos sumamente ingeniosos sensores visuales escanean metódica y permanentemente el firmamento negro para ubicar la luz constante de estrellas de referencia famosas y brillantes, como la resplandeciente Canopus o incluso el mismísimo Sol de nuestro propio barrio estelar, calculando así sus coordenadas espaciales precisas.",
-      "Para lograr comunicarse eficazmente de manera continua y sin interrupciones con estas preciosas naves espaciales, la incansable NASA utiliza la gigantesca Red del Espacio Profundo (DSN, por sus siglas en inglés). La DSN es fundamentalmente un conjunto interconectado de descomunales y poderosas antenas parabólicas de radio de increíble alcance y gran potencia localizadas estratégicamente alrededor del globo terráqueo en la soleada California, en Madrid (España) y en Canberra (Australia). Esto garantiza que, mientras la inmensa esfera de la Tierra rota, siempre haya una antena apuntando firmemente hacia el objetivo cósmico.",
-      "En el emocionante e incierto futuro de los viajes interestelares humanos, los astrónomos visionarios proponen valientemente utilizar exóticos y extraños cadáveres estelares densos y magnéticos llamados púlsares (estrellas de neutrones ultracompactas que giran frenéticamente a ritmos vertiginosos lanzando haces deslumbrantes de radiación constante al vacío cósmico) para construir un infalible Sistema de Posicionamiento Global verdaderamente intergaláctico, seguro y sumamente fiable. Sus incesantes pulsaciones cósmicas intermitentes son tan ridículamente precisas, ordenadas y constantes como los mejores relojes atómicos terrestres.",
-      "De hecho, este innovador y futurista concepto de asombrosa ciencia no es simplemente otra vaga y soñadora ficción especulativa, ya que proyectos increíblemente osados y valientes liderados por ingenieros de vanguardia como la asombrosa iniciativa 'Breakthrough Starshot' apuntan fehacientemente y con tremenda convicción a impulsar muy pequeñas naves exploratorias, velas ligeras y sondas no tripuladas utilizando gigantescos enjambres coordinados de poderosos láseres, alcanzando asombrosamente hasta un inconcebible y alucinante 20% de la máxima e insuperable velocidad de la luz hacia nuestra vecina estelar más cercana, Alfa Centauri."
+      "Navegar por nuestro Sistema Solar, y más aún por el espacio interestelar, es un gran desafío técnico. ¿Cómo sabe una sonda espacial como la Voyager 1 en qué lugar se encuentra cuando viaja a miles de millones de kilómetros de la Tierra?",
+      "Las sondas interplanetarias Voyager 1 y Voyager 2, lanzadas por la NASA en 1977, orientan su rumbo empleando 'rastreadores de estrellas'. Estos sensores visuales escanean el cielo para ubicar la luz de estrellas de referencia brillantes, como Canopus o nuestro Sol, calculando así sus coordenadas espaciales exactas.",
+      "Para comunicarse con estas naves, la NASA utiliza la Red del Espacio Profundo (DSN). Es una red de grandes antenas parabólicas ubicadas en California, Madrid y Canberra. Esto garantiza que, mientras la Tierra rota, siempre haya una antena apuntando hacia las naves.",
+      "Para futuros viajes interestelares, los astrónomos proponen usar púlsares (estrellas de neutrones que giran rápidamente y emiten radiación) como un Sistema de Posicionamiento Global galáctico. Sus pulsaciones son tan constantes que funcionan como relojes de precisión en el espacio.",
+      "Este concepto es parte de investigaciones reales. Proyectos como 'Breakthrough Starshot' buscan impulsar pequeñas sondas utilizando rayos láser desde la Tierra, con el objetivo de alcanzar un 20% de la velocidad de la luz hacia nuestra vecina estelar más cercana, Alfa Centauri."
     ],
     expandables: [
       { 
@@ -658,6 +658,15 @@ export default function InteractiveInfographic_SwSec1() {
   const [activeNode, setActiveNode] = useState(null);
   const [visitedNodes, setVisitedNodes] = useState(new Set());
 
+  const shuffledFalcons = useMemo(() => {
+    const arr = [...FALCON_GALLERY];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, []);
+
   const progress = (visitedNodes.size / INFOGRAPHIC_NODES.length) * 100;
   const isAllComplete = visitedNodes.size === INFOGRAPHIC_NODES.length;
 
@@ -749,7 +758,7 @@ export default function InteractiveInfographic_SwSec1() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
             gap: '1rem' 
           }}>
-            {FALCON_GALLERY.map((img, idx) => (
+            {shuffledFalcons.map((img, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}

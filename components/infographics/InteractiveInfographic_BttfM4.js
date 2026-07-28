@@ -259,7 +259,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'Mientras viajar al futuro está comprobado, viajar al pasado es el verdadero desafío. Según las matemáticas de la relatividad general, el espacio-tiempo puede doblarse sobre sí mismo creando "Curvas Cerradas de Tiempo". En teoría, si siguieras una de estas curvas, volverías a un momento anterior en el tiempo.',
       'El problema con el viaje al pasado son las violaciones de la causalidad, más conocidas como paradojas temporales. La "paradoja del abuelo" nos pregunta: ¿Qué pasa si viajas en el tiempo e impides que tus abuelos se conozcan? Si no naces, no puedes viajar en el tiempo, pero si no viajas, sí naces. Es una contradicción lógica.',
-      'Para evitar estos dolores de cabeza cósmicos, Stephen Hawking propuso la "Conjetura de Protección de la Cronología". Según él, las leyes de la física evitarán siempre la creación de curvas cerradas de tiempo a nivel macroscópico. Si intentas crear una máquina del tiempo hacia el pasado, fluctuaciones cuánticas la destruirán antes de que funcione.',
+      'Para evitar estos desafíos lógicos, Stephen Hawking propuso la "Conjetura de Protección de la Cronología". Según él, las leyes de la física evitarán siempre la creación de curvas cerradas de tiempo a nivel macroscópico. Si intentas crear una máquina del tiempo hacia el pasado, fluctuaciones cuánticas la destruirán antes de que funcione.',
       'Otra posible solución a las paradojas son los universos paralelos. En esta interpretación, si cambias algo en el pasado, no alteras tu línea temporal original, sino que creas una nueva rama de la realidad. Cada decisión y viaje en el tiempo generaría un nuevo universo independiente.'
     ],
     expandables: [

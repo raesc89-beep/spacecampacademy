@@ -160,7 +160,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.png',
     image: '/assets/bttf/infographic_paradojas/hero_abuelo.png',
     content: [
-      '¿Qué es una paradoja? Es como un acertijo que no tiene respuesta. Piensa en esta frase: «Esta oración es falsa». Si es falsa, entonces dice la verdad, pero si dice la verdad... ¡entonces es falsa! Tu cerebro entra en un bucle infinito. Las paradojas temporales funcionan exactamente así, pero con viajes en el tiempo.',
+      '¿Qué es una paradoja? Es como un acertijo sin solución lógica. Piensa en esta frase: «Esta oración es falsa». Si es falsa, entonces dice la verdad, pero si dice la verdad, entonces debería ser falsa. Las paradojas temporales funcionan de manera similar, creando bucles sin aparente solución.',
       'La paradoja del abuelo es la más famosa: imagina que viajas al pasado y evitas que tu abuelo conozca a tu abuela. Si nunca se conocen, tus padres nunca nacen, y tú tampoco. Pero si tú nunca naces... ¡nunca puedes viajar al pasado para impedirlo! Es un círculo imposible que se repite para siempre.',
       'Detrás de esta paradoja hay física real. La Teoría de la Relatividad de Einstein (1905 y 1915) demostró que viajar al FUTURO es posible — ¡y ya está comprobado con relojes atómicos! Pero viajar al pasado crea problemas lógicos. Las ecuaciones de Einstein no lo prohíben explícitamente, lo cual preocupó al propio Einstein.',
       'En «Volver al Futuro», esta paradoja se muestra de forma brillante: cuando Marty accidentalmente impide que sus padres se conozcan en 1955, su mano empieza a desvanecerse y la foto familiar se borra poco a poco. Es una representación visual perfecta de cómo cambiar el pasado te destruiría a ti mismo.',
@@ -199,7 +199,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.png',
     image: '/assets/bttf/infographic_paradojas/hero_gemelos.png',
     content: [
-      '¡Esto NO es realmente una paradoja — es física REAL y comprobada! La Teoría de la Relatividad Especial de Einstein (1905) nos dice algo asombroso: cuanto más rápido te mueves, más lento pasa el tiempo para ti. No es una ilusión ni un truco: el tiempo literalmente se estira.',
+      'Esto no es realmente una paradoja, sino física real y comprobada. La Teoría de la Relatividad Especial de Einstein (1905) nos dice algo asombroso: cuanto más rápido te mueves, más lento pasa el tiempo para ti. No es una ilusión ni un truco: el tiempo literalmente se estira.',
       'Explicación sencilla: si tu gemelo se sube a una nave que viaja al 90% de la velocidad de la luz durante 5 años (según su reloj), cuando regrese a la Tierra habrán pasado 11.5 años para ti. Tú tienes 11.5 años más, pero tu gemelo solo 5. ¡No es ciencia ficción, son las ecuaciones de Einstein!',
       'Esto fue COMPROBADO experimentalmente. En 1971, los físicos Hafele y Keating pusieron relojes atómicos en aviones comerciales que dieron la vuelta al mundo. Al aterrizar, los relojes del vuelo hacia el este habían perdido unos 59 nanosegundos, muy cerca de lo que las ecuaciones de Einstein predecían. ¡Es uno de los experimentos más elegantes de la historia!',
       'Lo usamos TODOS LOS DÍAS. Los satélites GPS orbitan la Tierra a gran velocidad y en gravedad más débil. Sus relojes se desfasan 38 microsegundos por día comparados con los relojes terrestres. Sin la corrección de Einstein, el GPS acumularía un error de ¡10 kilómetros diarios! Tu teléfono usa la relatividad cada vez que abres Google Maps.',
