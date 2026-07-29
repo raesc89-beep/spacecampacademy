@@ -48,6 +48,21 @@ import InteractiveInfographic_InterestelarM3 from '@/components/infographics/Int
 import InteractiveInfographic_InterestelarM4 from '@/components/infographics/InteractiveInfographic_InterestelarM4';
 import InteractiveInfographic_InterestelarM5 from '@/components/infographics/InteractiveInfographic_InterestelarM5';
 import InteractiveInfographic_InterestelarM6 from '@/components/infographics/InteractiveInfographic_InterestelarM6';
+import InteractiveInfographic_MayaM1 from '@/components/infographics/InteractiveInfographic_MayaM1';
+import InteractiveInfographic_MayaM2 from '@/components/infographics/InteractiveInfographic_MayaM2';
+import InteractiveInfographic_MayaM3 from '@/components/infographics/InteractiveInfographic_MayaM3';
+import InteractiveInfographic_MayaM4 from '@/components/infographics/InteractiveInfographic_MayaM4';
+import InteractiveInfographic_MayaM5 from '@/components/infographics/InteractiveInfographic_MayaM5';
+import InteractiveInfographic_MayaM6 from '@/components/infographics/InteractiveInfographic_MayaM6';
+import InteractiveInfographic_MayaM7 from '@/components/infographics/InteractiveInfographic_MayaM7';
+import InteractiveInfographic_MayaM8 from '@/components/infographics/InteractiveInfographic_MayaM8';
+import InteractiveInfographic_MayaM9 from '@/components/infographics/InteractiveInfographic_MayaM9';
+import InteractiveInfographic_MayaM10 from '@/components/infographics/InteractiveInfographic_MayaM10';
+import InteractiveInfographic_MayaM11 from '@/components/infographics/InteractiveInfographic_MayaM11';
+import InteractiveInfographic_MayaM12 from '@/components/infographics/InteractiveInfographic_MayaM12';
+import InteractiveInfographic_MayaM13 from '@/components/infographics/InteractiveInfographic_MayaM13';
+import InteractiveInfographic_MayaM14 from '@/components/infographics/InteractiveInfographic_MayaM14';
+import InteractiveInfographic_MayaM15 from '@/components/infographics/InteractiveInfographic_MayaM15';
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -505,8 +520,53 @@ export default function CourseModule() {
           {moduleData.id === 'interestelar_m6' && (
             <InteractiveInfographic_InterestelarM6 />
           )}
+          {moduleData.id === 'maya_m1' && (
+            <InteractiveInfographic_MayaM1 />
+          )}
+          {moduleData.id === 'maya_m2' && (
+            <InteractiveInfographic_MayaM2 />
+          )}
+          {moduleData.id === 'maya_m3' && (
+            <InteractiveInfographic_MayaM3 />
+          )}
+          {moduleData.id === 'maya_m4' && (
+            <InteractiveInfographic_MayaM4 />
+          )}
+          {moduleData.id === 'maya_m5' && (
+            <InteractiveInfographic_MayaM5 />
+          )}
+          {moduleData.id === 'maya_m6' && (
+            <InteractiveInfographic_MayaM6 />
+          )}
+          {moduleData.id === 'maya_m7' && (
+            <InteractiveInfographic_MayaM7 />
+          )}
+          {moduleData.id === 'maya_m8' && (
+            <InteractiveInfographic_MayaM8 />
+          )}
+          {moduleData.id === 'maya_m9' && (
+            <InteractiveInfographic_MayaM9 />
+          )}
+          {moduleData.id === 'maya_m10' && (
+            <InteractiveInfographic_MayaM10 />
+          )}
+          {moduleData.id === 'maya_m11' && (
+            <InteractiveInfographic_MayaM11 />
+          )}
+          {moduleData.id === 'maya_m12' && (
+            <InteractiveInfographic_MayaM12 />
+          )}
+          {moduleData.id === 'maya_m13' && (
+            <InteractiveInfographic_MayaM13 />
+          )}
+          {moduleData.id === 'maya_m14' && (
+            <InteractiveInfographic_MayaM14 />
+          )}
+          {moduleData.id === 'maya_m15' && (
+            <InteractiveInfographic_MayaM15 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
