@@ -11,42 +11,47 @@ const INTERSTELLAR_MODULES = [
   {
     id: 'interstellar_m1',
     title: 'Einstein y la Red Invisible',
+    subtitle: 'Gravedad · Curvatura · Geodésicas',
     color: '#00E4FF', 
     link: '/course/interstellar_m1',
-    icon: '/assets/interstellar/interstellar_m1.png',
+    icon: '/assets/interstellar/interstellar_m1.jpg',
     coords: { left: '15%', top: '35%' },
   },
   {
     id: 'interstellar_m2',
     title: 'Gargantúa',
-    color: '#FF3366',
+    subtitle: 'Agujeros Negros · Horizonte de Sucesos',
+    color: '#FF6B35',
     link: '/course/interstellar_m2',
-    icon: '/assets/interstellar/interstellar_m2.png',
-    coords: { left: '35%', top: '25%' },
+    icon: '/assets/interstellar/interstellar_m2.jpg',
+    coords: { left: '35%', top: '22%' },
   },
   {
     id: 'interstellar_m3',
     title: 'El Tiempo es Elástico',
-    color: '#33FF66',
+    subtitle: 'Dilatación Temporal · Paradoja de Gemelos',
+    color: '#4FFFB0',
     link: '/course/interstellar_m3',
-    icon: '/assets/interstellar/interstellar_m3.png',
-    coords: { left: '55%', top: '35%' },
+    icon: '/assets/interstellar/interstellar_m3.jpg',
+    coords: { left: '58%', top: '35%' },
   },
   {
     id: 'interstellar_m4',
     title: 'Agujeros de Gusano',
-    color: '#9933FF',
+    subtitle: 'Puentes Einstein-Rosen · Materia Exótica',
+    color: '#B366FF',
     link: '/course/interstellar_m4',
-    icon: '/assets/interstellar/interstellar_m4.png',
-    coords: { left: '75%', top: '55%' },
+    icon: '/assets/interstellar/interstellar_m4.jpg',
+    coords: { left: '78%', top: '50%' },
   },
   {
     id: 'interstellar_m5',
     title: 'El Teseracto y la 5D',
+    subtitle: 'Dimensiones Extra · Teoría de Cuerdas',
     color: '#FFD700',
     link: '/course/interstellar_m5',
-    icon: '/assets/interstellar/interstellar_m5.png',
-    coords: { left: '50%', top: '65%' },
+    icon: '/assets/interstellar/interstellar_m5.jpg',
+    coords: { left: '48%', top: '62%' },
   }
 ];
 
@@ -138,9 +143,10 @@ const globalStyles = `
 }
 `;
 
-// ─── Nodo de Módulo ────────────────────────────────────────────────────────
+// ─── Nodo de Módulo (Rediseño Cinematográfico Interstellar) ──────────────
 function InterstellarModuleNode({ mod, idx, isCompleted, isPlayable }) {
   const [hovered, setHovered] = useState(false);
+  const moduleNum = idx + 1;
 
   return (
     <Link href={mod.link} passHref>
@@ -157,34 +163,62 @@ function InterstellarModuleNode({ mod, idx, isCompleted, isPlayable }) {
         }}
       >
         <motion.div
-          animate={{ y: [0, -8, 0], scale: hovered ? 1.15 : 1 }}
+          animate={{ y: [0, -6, 0], scale: hovered ? 1.12 : 1 }}
           transition={{
-            y: { repeat: Infinity, duration: 4 + Math.random() * 2, ease: 'easeInOut', delay: Math.random() * 2 },
-            scale: { duration: 0.2 },
+            y: { repeat: Infinity, duration: 5 + idx * 0.5, ease: 'easeInOut' },
+            scale: { duration: 0.3, ease: 'easeOut' },
           }}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem' }}
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}
         >
-          {/* Avatar / Icono */}
+          {/* Contenedor principal del nodo */}
           <div style={{
             position: 'relative',
-            width: 'clamp(70px, 8vw, 100px)',
-            height: 'clamp(70px, 8vw, 100px)',
-            borderRadius: '50%',
-            boxShadow: hovered
-              ? `0 0 40px ${mod.color}ff, inset 0 0 20px ${mod.color}aa`
-              : `0 0 20px ${mod.color}88`,
-            transition: 'all 0.3s ease',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            width: 'clamp(90px, 10vw, 130px)',
+            height: 'clamp(90px, 10vw, 130px)',
           }}>
+            {/* Anillo exterior - Disco de Acreción */}
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
+              style={{
+                position: 'absolute',
+                inset: '-6px',
+                borderRadius: '50%',
+                border: `2px solid ${hovered ? mod.color : mod.color + '44'}`,
+                boxShadow: hovered
+                  ? `0 0 25px ${mod.color}88, inset 0 0 15px ${mod.color}44`
+                  : `0 0 8px ${mod.color}33`,
+                transition: 'all 0.4s ease',
+                pointerEvents: 'none',
+              }}
+            />
+            
+            {/* Segundo anillo - Ergosfera */}
+            <motion.div
+              animate={{ rotate: -360 }}
+              transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
+              style={{
+                position: 'absolute',
+                inset: '-12px',
+                borderRadius: '50%',
+                border: `1px dashed ${hovered ? mod.color + '66' : mod.color + '22'}`,
+                transition: 'all 0.4s ease',
+                pointerEvents: 'none',
+              }}
+            />
+
+            {/* Imagen del módulo */}
             <div style={{
-              position: 'absolute',
-              inset: 0,
+              position: 'relative',
+              width: '100%',
+              height: '100%',
               borderRadius: '50%',
-              WebkitMaskImage: 'radial-gradient(circle at center, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 70%)',
-              maskImage: 'radial-gradient(circle at center, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 70%)',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              border: `2.5px solid ${hovered ? mod.color : mod.color + '88'}`,
+              boxShadow: hovered
+                ? `0 0 50px ${mod.color}cc, 0 0 100px ${mod.color}44, inset 0 0 30px rgba(0,0,0,0.5)`
+                : `0 0 20px ${mod.color}66, inset 0 0 20px rgba(0,0,0,0.4)`,
+              transition: 'all 0.4s ease',
             }}>
               <img
                 src={mod.icon}
@@ -193,87 +227,135 @@ function InterstellarModuleNode({ mod, idx, isCompleted, isPlayable }) {
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  transform: hovered ? 'scale(1.1)' : 'scale(1)',
-                  transition: 'transform 0.5s ease',
+                  transform: hovered ? 'scale(1.15)' : 'scale(1.05)',
+                  transition: 'transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                  filter: hovered ? 'brightness(1.2) saturate(1.3)' : 'brightness(0.85) saturate(0.9)',
                 }}
               />
-              {!hovered && !isPlayable && !isCompleted && (
-                <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)' }} />
+              {/* Viñeta interior */}
+              <div style={{
+                position: 'absolute',
+                inset: 0,
+                borderRadius: '50%',
+                background: `radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.6) 100%)`,
+                pointerEvents: 'none',
+              }} />
+              {/* Overlay oscuro si no es playable */}
+              {!isPlayable && !isCompleted && (
+                <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.55)', borderRadius: '50%' }} />
               )}
             </div>
-            {/* Anillo de energía exterior */}
+
+            {/* Número de módulo */}
             <div style={{
               position: 'absolute',
-              inset: '-2px',
+              bottom: '-2px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              background: hovered ? mod.color : 'rgba(0,0,0,0.8)',
+              color: hovered ? '#000' : mod.color,
+              width: '22px',
+              height: '22px',
               borderRadius: '50%',
-              border: `2px solid ${hovered ? 'white' : mod.color + '55'}`,
-              opacity: hovered ? 0.8 : 0.3,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '0.7rem',
+              fontWeight: 800,
+              border: `1.5px solid ${mod.color}`,
               transition: 'all 0.3s ease',
-              pointerEvents: 'none'
-            }} />
+              zIndex: 5,
+              fontFamily: 'var(--font-heading)',
+            }}>
+              {moduleNum}
+            </div>
+
+            {/* Completado Badge */}
+            {isCompleted && (
+              <motion.div
+                initial={{ scale: 0, rotate: -180 }}
+                animate={{ scale: 1, rotate: 0 }}
+                style={{
+                  position: 'absolute',
+                  top: -4, right: -4,
+                  background: mod.color,
+                  borderRadius: '50%',
+                  padding: '3px',
+                  boxShadow: `0 0 15px ${mod.color}`,
+                  zIndex: 10,
+                  border: '2px solid rgba(0,0,0,0.5)',
+                }}
+              >
+                <CheckCircle size={14} color="black" />
+              </motion.div>
+            )}
           </div>
 
-          {/* Label */}
-          <div style={{
-            color: 'white',
-            textAlign: 'center',
-            textShadow: `0 2px 8px ${mod.color}, 0 4px 16px rgba(0,0,0,0.9)`,
-            background: 'rgba(0,0,0,0.65)',
-            padding: '4px 14px',
-            borderRadius: '20px',
-            backdropFilter: 'blur(6px)',
-            border: `1px solid ${hovered ? mod.color : mod.color + '44'}`,
-            transition: 'all 0.3s ease',
-          }}>
-            <div style={{ fontSize: 'clamp(0.65rem, 1vw, 0.85rem)', color: mod.color, fontWeight: 700, letterSpacing: '1px' }}>
+          {/* Label con título y subtítulo */}
+          <motion.div 
+            animate={{ opacity: hovered ? 1 : 0.85 }}
+            style={{
+              textAlign: 'center',
+              background: hovered ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.6)',
+              padding: hovered ? '6px 16px' : '4px 12px',
+              borderRadius: '16px',
+              backdropFilter: 'blur(8px)',
+              border: `1px solid ${hovered ? mod.color + 'aa' : mod.color + '33'}`,
+              transition: 'all 0.3s ease',
+              maxWidth: 'clamp(100px, 12vw, 160px)',
+              boxShadow: hovered ? `0 4px 20px rgba(0,0,0,0.8), 0 0 15px ${mod.color}22` : 'none',
+            }}
+          >
+            <div style={{
+              fontSize: 'clamp(0.6rem, 0.9vw, 0.8rem)',
+              color: mod.color,
+              fontWeight: 700,
+              letterSpacing: '0.5px',
+              lineHeight: 1.3,
+              fontFamily: 'var(--font-heading)',
+            }}>
               {mod.title}
             </div>
-          </div>
+            {hovered && mod.subtitle && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                style={{
+                  fontSize: '0.55rem',
+                  color: 'rgba(255,255,255,0.6)',
+                  marginTop: '2px',
+                  letterSpacing: '0.3px',
+                }}
+              >
+                {mod.subtitle}
+              </motion.div>
+            )}
+          </motion.div>
 
-          {/* Completado Badge */}
-          {isCompleted && (
-            <motion.div
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              style={{
-                position: 'absolute',
-                top: -8, right: -8,
-                background: '#00FFFF',
-                borderRadius: '50%',
-                padding: '4px',
-                boxShadow: '0 0 10px #00FFFF',
-                zIndex: 10,
-              }}
-            >
-              <CheckCircle size={16} color="black" />
-            </motion.div>
-          )}
-
-          {/* Partículas de Relámpago al hacer hover */}
+          {/* Partículas gravitacionales al hover */}
           <AnimatePresence>
             {hovered && (
               <>
-                {Array.from({ length: 5 }).map((_, i) => (
+                {Array.from({ length: 6 }).map((_, i) => (
                   <motion.div
                     key={i}
-                    initial={{ opacity: 1, scale: 0, x: 0, y: 0 }}
+                    initial={{ opacity: 0.8, scale: 0 }}
                     animate={{
                       opacity: 0,
-                      scale: Math.random() * 2 + 0.5,
-                      x: (Math.random() - 0.5) * 80,
-                      y: (Math.random() - 0.5) * 80
+                      scale: 1.5,
+                      x: Math.cos((i / 6) * Math.PI * 2) * 60,
+                      y: Math.sin((i / 6) * Math.PI * 2) * 60,
                     }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 + Math.random() * 0.5, ease: "easeOut" }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.08 }}
                     style={{
                       position: 'absolute',
-                      width: 4, height: 12,
-                      borderRadius: '2px',
+                      width: 3, height: 3,
+                      borderRadius: '50%',
                       background: mod.color,
-                      top: '50%', left: '50%',
-                      boxShadow: `0 0 10px ${mod.color}`,
+                      top: '35%', left: '50%',
+                      boxShadow: `0 0 8px ${mod.color}`,
                       pointerEvents: 'none',
-                      transform: `rotate(${Math.random() * 360}deg)`
                     }}
                   />
                 ))}
