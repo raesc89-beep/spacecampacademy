@@ -116,7 +116,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'El Haab Maya', icon: 'clock', text: 'El calendario Haab de 365 días se dividía en 18 meses de 20 días cada uno (360 días), más un periodo final llamado "Wayeb" de 5 días. Durante el Wayeb, se creía que las barreras entre los mundos se debilitaban, por lo que era un tiempo de rituales y mucha precaución.' },
-      { label: 'Un Nombre Español', icon: 'zap', text: 'El nombre "El Castillo" se lo dieron los conquistadores españoles en el siglo XVI porque la imponente estructura les recordaba a las fortalezas europeas. Sin embargo, para los mayas, este era el Templo de Kukulcán, el dios serpiente emplumada de la sabiduría y el viento.' },
+      { label: 'Un Nombre Español', icon: 'clock', text: 'El nombre "El Castillo" se lo dieron los conquistadores españoles en el siglo XVI porque la imponente estructura les recordaba a las fortalezas europeas. Sin embargo, para los mayas, este era el Templo de Kukulcán, el dios serpiente emplumada de la sabiduría y el viento.' },
     ],
     fact: 'En el interior de la pirámide principal que vemos hoy, ¡hay otra pirámide oculta más antigua! Es una práctica común en Mesoamérica: los gobernantes construían sus nuevos templos envolviendo y ampliando los edificios anteriores, como si fueran muñecas rusas gigantes hechas de piedra maciza y estuco.',
   },
@@ -134,7 +134,7 @@ const INFOGRAPHIC_NODES = [
       'El fenómeno es dinámico. No es solo una imagen estática. Comienza lentamente y a lo largo de aproximadamente tres horas, la serpiente parece deslizarse hacia abajo y ondulando por el costado de la pirámide a medida que cambia el ángulo del sol. ¡Es una película de animación en piedra impulsada por el movimiento de nuestro sistema solar!',
     ],
     expandables: [
-      { label: 'Un Dios Viajero', icon: 'zap', text: 'Kukulcán es la versión maya del dios Quetzalcóatl de la cultura tolteca y azteca en el centro de México. Significa "Serpiente Emplumada", combinando al quetzal (el ave del cielo) y la serpiente (el animal de la tierra). Era un dios unificador en Mesoamérica.' },
+      { label: 'Un Dios Viajero', icon: 'atom', text: 'Kukulcán es la versión maya del dios Quetzalcóatl de la cultura tolteca y azteca en el centro de México. Significa "Serpiente Emplumada", combinando al quetzal (el ave del cielo) y la serpiente (el animal de la tierra). Era un dios unificador en Mesoamérica.' },
       { label: 'Precisión Relojera', icon: 'clock', text: 'El evento no dura solo un día, sino que es visible durante varios días alrededor de las fechas de los equinoccios, pero alcanza su máxima perfección de 7 triángulos completos y perfectos exactamente en el día del equinoccio, dependiendo de las condiciones de las nubes.' },
     ],
     fact: 'El diseño es tan meticuloso que un pequeño error en el ángulo de inclinación de los muros de la pirámide, o en la orientación de sus esquinas respecto a la posición del sol en el ecuador, habría arruinado completamente el efecto. Los arquitectos mayas no solo entendían astronomía, dominaban la geometría 3D.',
@@ -153,7 +153,7 @@ const INFOGRAPHIC_NODES = [
       'Los constructores no usaron computadoras ni programas de diseño 3D. Observaron pacientemente los ciclos solares durante décadas o siglos desde observatorios como El Caracol (también en Chichén Itzá). Entendieron cómo se movían los astros y aplicaron ese conocimiento para diseñar su arquitectura sagrada.',
     ],
     expandables: [
-      { label: 'Luz y Sombra', icon: 'zap', text: 'El uso de la luz y la sombra en la arquitectura antigua se llama "hierofanía", una revelación de lo sagrado a través de fenómenos físicos. Para los mayas, el sol no solo iluminaba, sino que hablaba y animaba a los dioses de piedra cuando se daban las alineaciones correctas.' },
+      { label: 'Luz y Sombra', icon: 'clock', text: 'El uso de la luz y la sombra en la arquitectura antigua se llama "hierofanía", una revelación de lo sagrado a través de fenómenos físicos. Para los mayas, el sol no solo iluminaba, sino que hablaba y animaba a los dioses de piedra cuando se daban las alineaciones correctas.' },
       { label: 'Matemática Maya', icon: 'atom', text: 'Los mayas usaban un sistema matemático vigesimal (base 20) e inventaron el concepto del cero de forma independiente mucho antes que las culturas europeas. Su símbolo para el cero era una concha, lo que les permitía hacer cálculos astronómicos y calendáricos de enorme complejidad.' },
     ],
     fact: 'Debido a la precesión de los equinoccios (un bamboleo lento de la Tierra en su eje), la posición de las estrellas cambia con los milenios. Sin embargo, el fenómeno de la serpiente de luz se basa en el ciclo anual del sol, por lo que sigue funcionando hoy casi igual de bien que hace mil años cuando fue inaugurada la pirámide.',
@@ -172,7 +172,7 @@ const INFOGRAPHIC_NODES = [
       'Toda la estructura es una inmensa ecuación. Números astronómicos y ciclos de tiempo están horneados en el diseño de las terrazas, paneles y escalones. Los mayas no solo construían para que se viera bien; diseñaban sus templos para que fueran monumentos perpetuos al tiempo mismo, funcionando en perfecta sincronía cósmica.',
     ],
     expandables: [
-      { label: 'El Fuego Nuevo', icon: 'zap', text: 'El ciclo de 52 años era el más importante para los mesoamericanos. Al final de un ciclo, creían que el mundo podría acabar. Si el sol volvía a salir y las Pléyades cruzaban el cenit, celebraban la "Ceremonia del Fuego Nuevo", encendiendo hogueras para asegurar otros 52 años de vida y sol.' },
+      { label: 'El Fuego Nuevo', icon: 'atom', text: 'El ciclo de 52 años era el más importante para los mesoamericanos. Al final de un ciclo, creían que el mundo podría acabar. Si el sol volvía a salir y las Pléyades cruzaban el cenit, celebraban la "Ceremonia del Fuego Nuevo", encendiendo hogueras para asegurar otros 52 años de vida y sol.' },
       { label: 'Dos Engranajes', icon: 'clock', text: 'Imagina el calendario Haab y el Tzolkín como dos grandes engranajes, uno con 365 dientes y otro con 260 dientes. Si haces girar ambos al mismo tiempo partiendo del mismo punto, tardarán exactamente 52 años solares (o 73 ciclos sagrados) en volver a alinearse en la misma posición inicial.' },
     ],
     fact: 'Además del Haab y el Tzolkín, los mayas usaban la "Cuenta Larga" para registrar fechas desde un punto de inicio mítico en el 3114 a.C. Esto les permitía fechar monumentos y estelas con una precisión que abarcaba miles de años, calculando eventos pasados y futuros con una notación numérica elegante de puntos y barras.',
@@ -191,7 +191,7 @@ const INFOGRAPHIC_NODES = [
       '¿Fue intencional? Muchos expertos creen que sí. Los mayas no construyeron escalones de tamaño aleatorio. La altura y profundidad precisas de los peldaños de la escalinata norte fueron diseñadas no solo para proyectar las sombras de la Serpiente de Luz, sino para hacer que el edificio "cantara" con la voz del ave sagrada. ¡Arquitectura audiovisual mil años antes del cine!',
     ],
     expandables: [
-      { label: 'El Ave Sagrada', icon: 'zap', text: 'El quetzal macho tiene largas plumas de cola color esmeralda que pueden medir más de un metro de largo. En la antigüedad, estas plumas valían más que el oro y se usaban para hacer los majestuosos penachos de los gobernantes mayas y aztecas. Era el ave de la libertad.' },
+      { label: 'El Ave Sagrada', icon: 'clock', text: 'El quetzal macho tiene largas plumas de cola color esmeralda que pueden medir más de un metro de largo. En la antigüedad, estas plumas valían más que el oro y se usaban para hacer los majestuosos penachos de los gobernantes mayas y aztecas. Era el ave de la libertad.' },
       { label: 'El Gran Juego de Pelota', icon: 'clock', text: 'Chichén Itzá tiene otro milagro acústico en su Gran Juego de Pelota. Un susurro en uno de los pequeños templos en los extremos puede escucharse claramente a más de 135 metros de distancia en el otro extremo, y los ecos allí rebotan hasta 7 veces debido a los altos muros paralelos.' },
     ],
     fact: 'El ingeniero acústico David Lubman presentó un estudio pionero sobre este eco en 1998, demostrando científicamente la asombrosa similitud entre el sonido del aplauso rebotado y la firma sónica de un quetzal. Esto cambió la forma en que los arqueólogos estudian la música y el sonido en las ruinas mesoamericanas.',
@@ -211,7 +211,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'Una Tercera Pirámide', icon: 'atom', text: '¡La historia no termina ahí! En 2015, utilizando tomografía eléctrica de resistividad 3D, ingenieros descubrieron que dentro de Kukulcán I hay AÚN OTRA pirámide más pequeña enterrada (Kukulcán 0). Es una muñeca rusa de tres capas que abarca la evolución completa de Chichén Itzá.' },
-      { label: 'El Cenote Oculto', icon: 'zap', text: 'Ese mismo escaneo 3D reveló otro secreto profundo: toda la pirámide de El Castillo está construida directamente sobre un gran cenote oculto, un río o cueva subterránea llena de agua. Para los mayas, los cenotes eran las puertas principales al inframundo, haciendo del lugar el punto más sagrado posible.' },
+      { label: 'El Cenote Oculto', icon: 'atom', text: 'Ese mismo escaneo 3D reveló otro secreto profundo: toda la pirámide de El Castillo está construida directamente sobre un gran cenote oculto, un río o cueva subterránea llena de agua. Para los mayas, los cenotes eran las puertas principales al inframundo, haciendo del lugar el punto más sagrado posible.' },
     ],
     fact: 'El color original de la pirámide exterior no era del tono gris piedra que vemos hoy en día. ¡Estaba completamente cubierta de estuco y pintada de rojo intenso, con detalles en azul brillante y verde! En los días soleados del apogeo maya, este edificio enorme brillaba deslumbrante a kilómetros de distancia.',
   },
@@ -230,7 +230,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'Redescubrimiento', icon: 'clock', text: 'Después de la caída del Imperio Maya, Chichén Itzá fue abandonada lentamente y la selva devoró los edificios. No fue hasta el siglo XIX, con exploradores como John Lloyd Stephens y Frederick Catherwood (quien hizo increíbles dibujos de las ruinas en 1843), que el mundo moderno se fascinó con el sitio.' },
-      { label: 'Un Cielo para el Mañana', icon: 'zap', text: 'Además de conservar las ruinas de piedra, existe un movimiento para conservar el "Cielo Oscuro" alrededor de sitios astronómicos antiguos como este, reduciendo la contaminación lumínica urbana para que podamos seguir viendo las estrellas tal como los antiguos astrónomos mayas las veían.' },
+      { label: 'Un Cielo para el Mañana', icon: 'clock', text: 'Además de conservar las ruinas de piedra, existe un movimiento para conservar el "Cielo Oscuro" alrededor de sitios astronómicos antiguos como este, reduciendo la contaminación lumínica urbana para que podamos seguir viendo las estrellas tal como los antiguos astrónomos mayas las veían.' },
     ],
     fact: 'En la década de 1920, la Institución Carnegie financió gran parte de las excavaciones y restauraciones iniciales de Chichén Itzá, trabajando con el gobierno mexicano. Un arqueólogo y diplomático pionero, Sylvanus Morley, dirigió estos enormes esfuerzos de excavación, desenterrando literalmente una de las grandes ciudades perdidas de la selva.',
   },

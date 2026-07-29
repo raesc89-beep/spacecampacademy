@@ -124,7 +124,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En muchas culturas antiguas de todo el mundo, la Vía Láctea fue imaginada como un camino, un río o un árbol. Los antiguos griegos pensaban que era leche derramada, los aborígenes australianos veían un emú oscuro y las tribus de América del Norte veían el camino polvoriento por donde caminaban los espíritus estelares.' },
-      { label: 'Observación Diaria', icon: 'zap', text: 'A diferencia de nosotros que tenemos farolas brillantes y luces de ciudad que ocultan las estrellas, los antiguos mayas tenían noches de oscuridad total. Su vista de la Vía Láctea era tan intensa y detallada que podían ver nubes oscuras de polvo espacial bloqueando la luz de las estrellas detrás, formando figuras en negro.' }
+      { label: 'Observación Diaria', icon: 'clock', text: 'A diferencia de nosotros que tenemos farolas brillantes y luces de ciudad que ocultan las estrellas, los antiguos mayas tenían noches de oscuridad total. Su vista de la Vía Láctea era tan intensa y detallada que podían ver nubes oscuras de polvo espacial bloqueando la luz de las estrellas detrás, formando figuras en negro.' }
     ],
     fact: 'El monstruo cósmico que los mayas veían en la Vía Láctea horizontal solía representarse como un cocodrilo con dos cabezas. Esto parece raro, pero tiene sentido científico astronómico. Una cabeza apuntaba hacia el lugar donde sale el sol y la otra hacia donde se oculta. Las dos bocas del reptil representaban los puntos opuestos del horizonte, conectando el ciclo completo del día y la noche.'
   },
@@ -162,7 +162,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las semillas esponjosas de la ceiba flotan en el viento como la nieve suave. Esta pelusa especial se llama kapok. En épocas recientes, antes de que existieran los materiales sintéticos, el material flotante kapok de la ceiba se usaba para rellenar salvavidas de emergencia en los grandes barcos del océano profundo.' },
-      { label: 'Mundo Biológico', icon: 'zap', text: 'El árbol sagrado no solo conecta mundos en la historia mítica. En la biología real de la selva espesa, es un verdadero universo conectado. Murciélagos fruteros polinizan sus flores de noche en el nivel medio, monos comen hojas arriba y miles de insectos raros viven entre las grandes raíces tabulares en el suelo sombreado.' }
+      { label: 'Mundo Biológico', icon: 'atom', text: 'El árbol sagrado no solo conecta mundos en la historia mítica. En la biología real de la selva espesa, es un verdadero universo conectado. Murciélagos fruteros polinizan sus flores de noche en el nivel medio, monos comen hojas arriba y miles de insectos raros viven entre las grandes raíces tabulares en el suelo sombreado.' }
     ],
     fact: 'En las piezas de arte antiguas descubiertas por los arqueólogos modernos, como en el sarcófago grabado del famoso rey Kinich Janaab Pakal en la gran ciudad de Palenque, el árbol ceiba cósmico aparece con un pájaro celestial parado en la punta. Este monstruo aviar místico representa el reino más alto del cielo, observando tranquilamente todo el mundo debajo de sus plumas mágicas.'
   },
@@ -181,7 +181,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las antiguas pirámides de piedra mayas no eran solo tumbas para gobernantes o fortalezas de defensa. Eran modelos arquitectónicos detallados de los tres grandes niveles cósmicos. La base ancha tocaba Xibalbá oscuro en el fondo, las escaleras representaban el nivel humano del suelo y el templo pequeño de arriba simulaba la puerta celestial sagrada.' },
-      { label: 'Leyendas Antiguas', icon: 'zap', text: 'Según las viejas historias heroicas, cruzar a Xibalbá era un viaje muy peligroso y aterrador. Había ríos de escorpiones picadores, casas de hielo congelante, murciélagos con grandes garras, y señores de la oscuridad con nombres feos que engañaban a los héroes humanos jóvenes. Era la prueba extrema de valor humano inteligente.' }
+      { label: 'Leyendas Antiguas', icon: 'clock', text: 'Según las viejas historias heroicas, cruzar a Xibalbá era un viaje muy peligroso y aterrador. Había ríos de escorpiones picadores, casas de hielo congelante, murciélagos con grandes garras, y señores de la oscuridad con nombres feos que engañaban a los héroes humanos jóvenes. Era la prueba extrema de valor humano inteligente.' }
     ],
     fact: 'El número sagrado trece correspondía a las principales articulaciones mayores del cuerpo humano fuerte: dos tobillos bajos, dos rodillas sólidas, dos caderas, dos muñecas sueltas, dos codos curvos, dos hombros anchos y un cuello móvil central. Así, los pensadores mayas conectaron inteligentemente la anatomía física humana interna con los grandes trece niveles altos del gran cielo nocturno exterior, conectando la persona con el universo amplio.'
   },
@@ -200,7 +200,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los antiguos sabios mayas usaban palos rústicos cruzados simples con muescas como simples herramientas visuales manuales prácticas, colocados frente a puertas cuadradadas alineadas. Desde un punto oscuro fijo y un palo cruzado en X adelante, creaban un sistema de puntería efectivo barato, muy parecido a las miras pequeñas de los rifles largos modernos que alinean un pequeño tubo metálico para enfocar puntos lejanos oscuros precisamente.' },
-      { label: 'Uso Práctico', icon: 'zap', text: 'Aún hoy en tiempos rápidos modernos en partes apartadas silenciosas y remotas de las selvas húmedas mexicanas sureñas grandes, algunas viejas personas campesinas usan la sombra larga blanca y el cambio angular que hace la galaxia nocturna blanca como indicador útil básico para predecir lluvia mojada pesada sobre los campos de granja.' }
+      { label: 'Uso Práctico', icon: 'atom', text: 'Aún hoy en tiempos rápidos modernos en partes apartadas silenciosas y remotas de las selvas húmedas mexicanas sureñas grandes, algunas viejas personas campesinas usan la sombra larga blanca y el cambio angular que hace la galaxia nocturna blanca como indicador útil básico para predecir lluvia mojada pesada sobre los campos de granja.' }
     ],
     fact: 'Un arqueólogo moderno famoso llamado Anthony Aveni usó grandes computadoras potentes digitales rápidas con datos viejos astronómicos y logró descubrir asombrado que las avenidas principales amplias peatonales en la gran metrópolis de Teotihuacan lejana en México grande se alineaban intencionalmente a la perfección con el hundimiento profundo de la gran Vía Láctea lejana hace casi ya cerca de largos dos mil pesados años.'
   },
@@ -219,7 +219,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El texto del Popol Vuh casi se perdió en el tiempo. Solo sobrevivió porque un sacerdote europeo en Guatemala, llamado Francisco Ximénez, escuchó las historias, copió un manuscrito oculto y lo tradujo. Sin ese momento de suerte, no sabríamos nada de esta conexión astronómica que inventaron los antiguos pueblos de América. Hoy es nuestro mayor tesoro.' },
-      { label: 'Conexión Cultural', icon: 'zap', text: 'Para estudiar ciencia hoy, nosotros vamos a aulas cerradas con pizarras blancas. Para aprender ciencia en la selva antigua, las personas se reunían alrededor del fuego para escuchar cantos. La historia poética y el mito colorido eran la mejor manera de guardar información compleja sobre la rotación terrestre en su memoria.' }
+      { label: 'Conexión Cultural', icon: 'clock', text: 'Para estudiar ciencia hoy, nosotros vamos a aulas cerradas con pizarras blancas. Para aprender ciencia en la selva antigua, las personas se reunían alrededor del fuego para escuchar cantos. La historia poética y el mito colorido eran la mejor manera de guardar información compleja sobre la rotación terrestre en su memoria.' }
     ],
     fact: 'En muchas lenguas mayas indígenas, la palabra para decir sol, la palabra para decir día y la palabra para nombrar el concepto abstracto del tiempo son exactamente la misma palabra corta: K\'in. Esta antigua palabra de una sílaba resume perfectamente su ciencia astronómica. Entendían que el movimiento de los astros brillantes en el firmamento oscuro, la duración de nuestras pequeñas vidas mortales y el avance del tiempo eran todo la misma fuerza giratoria.'
   }

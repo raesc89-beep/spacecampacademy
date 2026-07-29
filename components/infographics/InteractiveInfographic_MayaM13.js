@@ -108,7 +108,7 @@ const INFOGRAPHIC_NODES = [
     expandables: [
       {
         label: '¿Sabías que...?',
-        icon: 'zap',
+        icon: 'clock',
         text: 'La ciudad de Uaxactún fue un lugar tan adelantado a su tiempo que, cuando los arqueólogos empezaron a investigar, descubrieron aquí una de las primeras pinturas al fresco del mundo maya, mostrando escenas cortesanas llenas de vida, así como la primera arquitectura de gran tamaño que probaba que los mayas preclásicos eran arquitectos geniales.',
       },
       {
@@ -140,7 +140,7 @@ const INFOGRAPHIC_NODES = [
       },
       {
         label: 'Mecánica del Observatorio',
-        icon: 'zap',
+        icon: 'atom',
         text: 'La maravilla del Grupo E es que transforma el movimiento de la Tierra alrededor del Sol en un movimiento visible del Sol a lo largo del horizonte oriental de la ciudad. Para alguien parado en la pirámide oeste, el sol parece "moverse" lentamente de norte a sur y de regreso, usando los templos esteños como reglas de medición.',
       },
     ],
@@ -194,7 +194,7 @@ const INFOGRAPHIC_NODES = [
       },
       {
         label: 'Ilusión de Movimiento',
-        icon: 'zap',
+        icon: 'clock',
         text: 'Aunque decimos que "el sol se mueve por el horizonte", la ciencia nos dice que en realidad es la Tierra la que se inclina y orbita alrededor del sol a lo largo de un año. Los mayas medían con maestría el resultado visible de esta mecánica celeste, sin necesitar naves espaciales para saber que los ciclos celestes seguían patrones estrictamente matemáticos.',
       },
     ],
@@ -216,7 +216,7 @@ const INFOGRAPHIC_NODES = [
     expandables: [
       {
         label: 'Sitios Emblemáticos',
-        icon: 'zap',
+        icon: 'atom',
         text: 'Además de Uaxactún y Ceibal, se han encontrado complejos de Grupo E impresionantes en grandes ciudades como Nakbé, El Mirador, Caracol, Cenote, y Yaxhá. Muchos de estos gigantes siguen sepultados bajo toneladas de raíces de la selva y tierra, esperando que la tecnología láser LIDAR moderna los saque a la luz desde el espacio.',
       },
       {
@@ -270,7 +270,7 @@ const INFOGRAPHIC_NODES = [
     expandables: [
       {
         label: 'Alineaciones Complejas',
-        icon: 'zap',
+        icon: 'clock',
         text: 'Aunque empezamos llamándolos simples marcadores de solsticios y equinoccios, las últimas dos décadas de mediciones con tecnología láser (teodolitos y GPS precisos) en docenas de sitios han revelado que las alineaciones marcan también fechas críticas de la siembra y de eventos lunares complejos, demostrando una profundidad científica que sigue sorprendiéndonos.',
       },
       {
