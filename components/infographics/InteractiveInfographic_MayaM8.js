@@ -6,7 +6,7 @@ import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from '
 
 import ImageLightbox from './ImageLightbox';
 
-// ─── SVG Decorative Elements (Maya Eclipses themed) ────────────────────────────
+// â”€â”€â”€ SVG Decorative Elements (Maya Eclipses themed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function DecoEclipse({ size = 70, color = '#FFD54F', style = {} }) {
   return (
@@ -112,7 +112,7 @@ const DECO_MAP = {
   'ciencia-supersticion': [DecoEclipse, DecoJaguar, DecoSarosCycle],
 };
 
-// ─── Content Data ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const BIBLIOGRAPHY = [
   'Bricker, V.R. & Bricker, H.M. (2011). Astronomy in the Maya Codices, American Philosophical Society',
   'Aveni, A.F. (2001). Skywatchers of Ancient Mexico, University of Texas Press',
@@ -129,74 +129,74 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m8/btn_chiibal-kiin.jpg',
     image: '/assets/maya/infographic_m8/hero_chiibal-kiin.jpg',
     content: [
-      "Para los antiguos mayas, un eclipse solar no era un simple evento donde la Luna bloqueaba la luz. Lo llamaban 'Chiibal K\'iin', que significa literalmente 'el Sol devorado'. Imaginaban que criaturas gigantescas, como jaguares celestiales o serpientes estelares, daban mordiscos a nuestro astro rey en pleno día. Era un momento de mucho miedo porque el Sol era la fuente de toda la vida y el calor en su mundo.",
-      'Imagina que estás jugando en el patio y, de repente, sin nubes, el cielo comienza a oscurecerse en pleno mediodía. Los pájaros dejan de cantar y los perros aúllan. Para un niño maya hace mil años, esto significaba que el mundo podía terminar. Creían que si el Sol era completamente comido por el jaguar cósmico, la oscuridad sería eterna y los monstruos bajarían a la Tierra para comerse a las personas.',
-      'Por esta razón, cuando ocurría un eclipse, las ciudades mayas estallaban en ruido. Las personas golpeaban tambores de madera, hacían sonar caparazones de tortuga y gritaban al cielo. El objetivo era hacer tanto ruido como fuera posible para asustar al jaguar celestial y obligarlo a escupir al Sol. Es como cuando golpeas ollas para asustar a un animal salvaje que entra a tu jardín, pero a escala cósmica.',
-      'Aunque la historia del jaguar suena a cuento de magia, la respuesta de los sacerdotes mayas fue muy científica. Decidieron que la única forma de proteger al Sol era saber exactamente cuándo el jaguar intentaría atacar. Comenzaron a registrar meticulosamente el movimiento del Sol y la Luna. Anotaban cada día, cada fase lunar y cada eclipse que veían. A lo largo de muchos años, acumularon montones de datos.',
-      'Al mirar estos registros durante cientos de años, descubrieron patrones matemáticos. Se dieron cuenta de que los ataques del jaguar no eran aleatorios, sino que seguían reglas matemáticas estrictas. Convertir el miedo en matemáticas fue uno de los logros más grandes de la humanidad. Pasaron de gritarle al cielo a calcular las órbitas con una precisión que sorprende a los astrónomos modernos.',
+      "Para los antiguos mayas, un eclipse solar no era un simple evento donde la Luna bloqueaba la luz. Lo llamaban 'Chiibal K\'iin', que significa literalmente 'el Sol devorado'. Imaginaban que criaturas gigantescas, como jaguares celestiales o serpientes estelares, daban mordiscos a nuestro astro rey en pleno dÃ­a. Era un momento de mucho miedo porque el Sol era la fuente de toda la vida y el calor en su mundo.",
+      'Imagina que estÃ¡s jugando en el patio y, de repente, sin nubes, el cielo comienza a oscurecerse en pleno mediodÃ­a. Los pÃ¡jaros dejan de cantar y los perros aÃºllan. Para un niÃ±o maya hace mil aÃ±os, esto significaba que el mundo podÃ­a terminar. CreÃ­an que si el Sol era completamente comido por el jaguar cÃ³smico, la oscuridad serÃ­a eterna y los monstruos bajarÃ­an a la Tierra para comerse a las personas.',
+      'Por esta razÃ³n, cuando ocurrÃ­a un eclipse, las ciudades mayas estallaban en ruido. Las personas golpeaban tambores de madera, hacÃ­an sonar caparazones de tortuga y gritaban al cielo. El objetivo era hacer tanto ruido como fuera posible para asustar al jaguar celestial y obligarlo a escupir al Sol. Es como cuando golpeas ollas para asustar a un animal salvaje que entra a tu jardÃ­n, pero a escala cÃ³smica.',
+      'Aunque la historia del jaguar suena a cuento de magia, la respuesta de los sacerdotes mayas fue muy cientÃ­fica. Decidieron que la Ãºnica forma de proteger al Sol era saber exactamente cuÃ¡ndo el jaguar intentarÃ­a atacar. Comenzaron a registrar meticulosamente el movimiento del Sol y la Luna. Anotaban cada dÃ­a, cada fase lunar y cada eclipse que veÃ­an. A lo largo de muchos aÃ±os, acumularon montones de datos.',
+      'Al mirar estos registros durante cientos de aÃ±os, descubrieron patrones matemÃ¡ticos. Se dieron cuenta de que los ataques del jaguar no eran aleatorios, sino que seguÃ­an reglas matemÃ¡ticas estrictas. Convertir el miedo en matemÃ¡ticas fue uno de los logros mÃ¡s grandes de la humanidad. Pasaron de gritarle al cielo a calcular las Ã³rbitas con una precisiÃ³n que sorprende a los astrÃ³nomos modernos.',
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La palabra maya "Chiibal" no solo se usaba para los eclipses. Es la misma raíz de la palabra usada cuando un perro o un jaguar muerde algo. Los mayas veían el cielo no como un espacio vacío, sino como una selva viva donde el Sol, la Luna y las estrellas eran animales poderosos que cazaban y eran cazados. Esta visión de un universo vivo y depredador era común en toda Mesoamérica.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Un eclipse solar ocurre porque la Luna, que es 400 veces más pequeña que el Sol, está exactamente 400 veces más cerca de la Tierra. Esto hace que, vistos desde nuestro planeta, ambos parezcan tener exactamente el mismo tamaño en el cielo. Esta increíble coincidencia geométrica es lo que permite que el pequeño disco de la Luna cubra completamente el enorme disco del Sol durante un eclipse total.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'La palabra maya "Chiibal" no solo se usaba para los eclipses. Es la misma raÃ­z de la palabra usada cuando un perro o un jaguar muerde algo. Los mayas veÃ­an el cielo no como un espacio vacÃ­o, sino como una selva viva donde el Sol, la Luna y las estrellas eran animales poderosos que cazaban y eran cazados. Esta visiÃ³n de un universo vivo y depredador era comÃºn en toda MesoamÃ©rica.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'Un eclipse solar ocurre porque la Luna, que es 400 veces mÃ¡s pequeÃ±a que el Sol, estÃ¡ exactamente 400 veces mÃ¡s cerca de la Tierra. Esto hace que, vistos desde nuestro planeta, ambos parezcan tener exactamente el mismo tamaÃ±o en el cielo. Esta increÃ­ble coincidencia geomÃ©trica es lo que permite que el pequeÃ±o disco de la Luna cubra completamente el enorme disco del Sol durante un eclipse total.' },
     ],
-    fact: 'En el año 1991, hubo un eclipse solar total en México. Los arqueólogos notaron que algunas comunidades mayas modernas aún conservaban la tradición de hacer ruido golpeando metales y ollas para "ayudar" al Sol. Esto demuestra que la antigua memoria del Chiibal K\'iin ha sobrevivido durante más de mil años, transmitida de abuelos a nietos, manteniendo viva la historia del jaguar cósmico.',
+    fact: 'En el aÃ±o 1991, hubo un eclipse solar total en MÃ©xico. Los arqueÃ³logos notaron que algunas comunidades mayas modernas aÃºn conservaban la tradiciÃ³n de hacer ruido golpeando metales y ollas para "ayudar" al Sol. Esto demuestra que la antigua memoria del Chiibal K\'iin ha sobrevivido durante mÃ¡s de mil aÃ±os, transmitida de abuelos a nietos, manteniendo viva la historia del jaguar cÃ³smico.',
   },
   {
     id: 'tabla-eclipses-dresde',
-    title: 'El Códice de Dresde',
+    title: 'El CÃ³dice de Dresde',
     color: '#C62828',
     btnImage: '/assets/maya/infographic_m8/btn_tabla-eclipses-dresde.jpg',
     image: '/assets/maya/infographic_m8/hero_tabla-eclipses-dresde.jpg',
     content: [
-      'El Códice de Dresde es un libro maya antiguo, escrito en papel de corteza de árbol plegado como un acordeón. Es uno de los pocos libros mayas que sobrevivió a la conquista. En sus páginas 51 a 58, contiene algo espectacular: una tabla matemática diseñada específicamente para predecir eclipses. Es como un calendario del futuro, pero en lugar de marcar cumpleaños, marca los días en que el Sol está en peligro.',
-      'Para entender cómo funciona, imagina que tienes un tren que da vueltas a una pista circular y anotas cuánto tarda en completar cada vuelta. Los astrónomos mayas hicieron lo mismo con la Luna. Descubrieron que 405 meses lunares (el tiempo de una Luna llena a la siguiente) duran exactamente 11,960 días. Este número mágico es la base de toda su tabla de eclipses y demuestra una capacidad de observación increíble.',
-      'Pero, ¿por qué es tan importante este número? Porque 11,960 días también equivalen casi exactamente a 46 años sagrados mayas (llamados Tzolkin, que duran 260 días cada uno). Los mayas amaban que los ciclos cósmicos encajaran como piezas de Lego. Al alinear el ciclo de la Luna con su calendario sagrado, crearon un sistema perfecto para saber cuándo las órbitas crearían el peligro de un eclipse solar.',
-      'Las páginas del códice están llenas de números escritos con puntos (que valen uno) y barras (que valen cinco). La tabla divide los 11,960 días en grupos más pequeños, generalmente de 177 o 148 días. Estos números no son aleatorios. Corresponden exactamente al tiempo que pasa entre las "estaciones de eclipses", que son los períodos en los que las órbitas de la Tierra y la Luna se cruzan en el ángulo correcto.',
-      'Lo más brillante de esta tabla es que no predecía eclipses visibles individuales. Los mayas sabían que no todos los eclipses se ven desde su ciudad. La tabla predecía las "ventanas de peligro". Es como un pronóstico del clima que te advierte de la temporada de huracanes; no te dice si lloverá sobre tu casa hoy, pero te dice cuándo debes estar alerta. Era una herramienta de supervivencia cósmica y matemática.',
+      'El CÃ³dice de Dresde es un libro maya antiguo, escrito en papel de corteza de Ã¡rbol plegado como un acordeÃ³n. Es uno de los pocos libros mayas que sobreviviÃ³ a la conquista. En sus pÃ¡ginas 51 a 58, contiene algo espectacular: una tabla matemÃ¡tica diseÃ±ada especÃ­ficamente para predecir eclipses. Es como un calendario del futuro, pero en lugar de marcar cumpleaÃ±os, marca los dÃ­as en que el Sol estÃ¡ en peligro.',
+      'Para entender cÃ³mo funciona, imagina que tienes un tren que da vueltas a una pista circular y anotas cuÃ¡nto tarda en completar cada vuelta. Los astrÃ³nomos mayas hicieron lo mismo con la Luna. Descubrieron que 405 meses lunares (el tiempo de una Luna llena a la siguiente) duran exactamente 11,960 dÃ­as. Este nÃºmero mÃ¡gico es la base de toda su tabla de eclipses y demuestra una capacidad de observaciÃ³n increÃ­ble.',
+      'Pero, Â¿por quÃ© es tan importante este nÃºmero? Porque 11,960 dÃ­as tambiÃ©n equivalen casi exactamente a 46 aÃ±os sagrados mayas (llamados Tzolkin, que duran 260 dÃ­as cada uno). Los mayas amaban que los ciclos cÃ³smicos encajaran como piezas de Lego. Al alinear el ciclo de la Luna con su calendario sagrado, crearon un sistema perfecto para saber cuÃ¡ndo las Ã³rbitas crearÃ­an el peligro de un eclipse solar.',
+      'Las pÃ¡ginas del cÃ³dice estÃ¡n llenas de nÃºmeros escritos con puntos (que valen uno) y barras (que valen cinco). La tabla divide los 11,960 dÃ­as en grupos mÃ¡s pequeÃ±os, generalmente de 177 o 148 dÃ­as. Estos nÃºmeros no son aleatorios. Corresponden exactamente al tiempo que pasa entre las "estaciones de eclipses", que son los perÃ­odos en los que las Ã³rbitas de la Tierra y la Luna se cruzan en el Ã¡ngulo correcto.',
+      'Lo mÃ¡s brillante de esta tabla es que no predecÃ­a eclipses visibles individuales. Los mayas sabÃ­an que no todos los eclipses se ven desde su ciudad. La tabla predecÃ­a las "ventanas de peligro". Es como un pronÃ³stico del clima que te advierte de la temporada de huracanes; no te dice si lloverÃ¡ sobre tu casa hoy, pero te dice cuÃ¡ndo debes estar alerta. Era una herramienta de supervivencia cÃ³smica y matemÃ¡tica.',
     ],
     expandables: [
-      { label: 'En el Códice', icon: 'clock', text: 'El Códice de Dresde recibe su nombre porque se conserva en la ciudad de Dresde, en Alemania. Nadie sabe exactamente cómo llegó a Europa desde México, pero probablemente fue enviado como un regalo curioso al emperador Carlos V en el siglo dieciséis. Durante la Segunda Guerra Mundial, el libro casi fue destruido por una bomba, pero afortunadamente sobrevivió con daños menores.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En la tabla de eclipses del Códice, hay dibujos (glifos) colgando de "bandas celestiales". Estos dibujos muestran imágenes muy gráficas del Sol y la Luna siendo tragados, o a la diosa de la muerte. Estas imágenes eran advertencias visuales para los sacerdotes sobre el tipo de peligro y el tipo de ritual que debían realizar para proteger al mundo de la oscuridad.' },
+      { label: 'En el CÃ³dice', icon: 'clock', text: 'El CÃ³dice de Dresde recibe su nombre porque se conserva en la ciudad de Dresde, en Alemania. Nadie sabe exactamente cÃ³mo llegÃ³ a Europa desde MÃ©xico, pero probablemente fue enviado como un regalo curioso al emperador Carlos V en el siglo diecisÃ©is. Durante la Segunda Guerra Mundial, el libro casi fue destruido por una bomba, pero afortunadamente sobreviviÃ³ con daÃ±os menores.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'En la tabla de eclipses del CÃ³dice, hay dibujos (glifos) colgando de "bandas celestiales". Estos dibujos muestran imÃ¡genes muy grÃ¡ficas del Sol y la Luna siendo tragados, o a la diosa de la muerte. Estas imÃ¡genes eran advertencias visuales para los sacerdotes sobre el tipo de peligro y el tipo de ritual que debÃ­an realizar para proteger al mundo de la oscuridad.' },
     ],
-    fact: 'El sistema matemático maya usaba el concepto del cero cientos de años antes de que llegara a Europa. Usaban un dibujo de un caparazón de caracol para representar el cero. Además, su sistema era vigesimal (basado en veinte) en lugar de decimal (basado en diez) como el nuestro. Esto les permitía hacer cálculos gigantescos, como los 11,960 días de la tabla de eclipses, de manera muy compacta y eficiente.',
+    fact: 'El sistema matemÃ¡tico maya usaba el concepto del cero cientos de aÃ±os antes de que llegara a Europa. Usaban un dibujo de un caparazÃ³n de caracol para representar el cero. AdemÃ¡s, su sistema era vigesimal (basado en veinte) en lugar de decimal (basado en diez) como el nuestro. Esto les permitÃ­a hacer cÃ¡lculos gigantescos, como los 11,960 dÃ­as de la tabla de eclipses, de manera muy compacta y eficiente.',
   },
   {
     id: 'mecanismo-eclipses',
-    title: 'La Mecánica Oculta',
+    title: 'La MecÃ¡nica Oculta',
     color: '#0D47A1',
     btnImage: '/assets/maya/infographic_m8/btn_mecanismo-eclipses.jpg',
     image: '/assets/maya/infographic_m8/hero_mecanismo-eclipses.jpg',
     content: [
-      'Imagina dos aros de hula-hula. Uno es la pista de la Tierra alrededor del Sol, y el otro es la pista de la Luna alrededor de la Tierra. Si ambos aros estuvieran perfectamente planos sobre una mesa, tendríamos un eclipse solar cada mes cuando la Luna pasara por el medio. Pero el aro de la Luna está ligeramente inclinado. La mayoría de los meses, la Luna pasa un poco por arriba o por abajo del Sol.',
-      'Los puntos mágicos donde estos dos aros inclinados se cruzan se llaman "nodos". Para que ocurra un eclipse, la Luna debe estar cruzando uno de estos nodos exactamente al mismo tiempo que pasa entre la Tierra y el Sol. Esto es como intentar que dos trenes que viajan por vías diferentes lleguen a un cruce exactamente en el mismo segundo. Solo ocurre durante ciertas épocas del año llamadas "temporadas de eclipses".',
-      'Aquí es donde entra el famoso Ciclo de Saros. Los astrónomos antiguos, tanto los babilonios como los mayas, descubrieron que la Tierra, la Luna y el Sol regresan casi exactamente a la misma posición geométrica cada 6,585.3 días (aproximadamente 18 años y 11 días). Después de este tiempo, el ciclo de eclipses se repite casi idéntico. Es como un bucle gigante en la coreografía de los astros.',
-      'Lo asombroso de los mayas es que lograron calcular estas ventanas de peligro sin tener telescopios, sin saber que la Tierra era redonda, y sin entender que los planetas orbitan alrededor del Sol. Su método no era construir modelos físicos del sistema solar, sino encontrar los patrones matemáticos en el tiempo. Era pura ciencia de observación y aritmética, llevada a su nivel más alto posible.',
-      'Piensa en ello como intentar entender las reglas de un videojuego súper complejo solo mirando la pantalla durante años, anotando cada vez que un enemigo aparece. Nunca ves el código de programación, pero descubres el patrón perfecto de cuándo atacar. Los mayas no conocían las leyes de la gravedad de Newton, pero sus números predecían el comportamiento de los planetas con precisión increíble.',
+      'Imagina dos aros de hula-hula. Uno es la pista de la Tierra alrededor del Sol, y el otro es la pista de la Luna alrededor de la Tierra. Si ambos aros estuvieran perfectamente planos sobre una mesa, tendrÃ­amos un eclipse solar cada mes cuando la Luna pasara por el medio. Pero el aro de la Luna estÃ¡ ligeramente inclinado. La mayorÃ­a de los meses, la Luna pasa un poco por arriba o por abajo del Sol.',
+      'Los puntos mÃ¡gicos donde estos dos aros inclinados se cruzan se llaman "nodos". Para que ocurra un eclipse, la Luna debe estar cruzando uno de estos nodos exactamente al mismo tiempo que pasa entre la Tierra y el Sol. Esto es como intentar que dos trenes que viajan por vÃ­as diferentes lleguen a un cruce exactamente en el mismo segundo. Solo ocurre durante ciertas Ã©pocas del aÃ±o llamadas "temporadas de eclipses".',
+      'AquÃ­ es donde entra el famoso Ciclo de Saros. Los astrÃ³nomos antiguos, tanto los babilonios como los mayas, descubrieron que la Tierra, la Luna y el Sol regresan casi exactamente a la misma posiciÃ³n geomÃ©trica cada 6,585.3 dÃ­as (aproximadamente 18 aÃ±os y 11 dÃ­as). DespuÃ©s de este tiempo, el ciclo de eclipses se repite casi idÃ©ntico. Es como un bucle gigante en la coreografÃ­a de los astros.',
+      'Lo asombroso de los mayas es que lograron calcular estas ventanas de peligro sin tener telescopios, sin saber que la Tierra era redonda, y sin entender que los planetas orbitan alrededor del Sol. Su mÃ©todo no era construir modelos fÃ­sicos del sistema solar, sino encontrar los patrones matemÃ¡ticos en el tiempo. Era pura ciencia de observaciÃ³n y aritmÃ©tica, llevada a su nivel mÃ¡s alto posible.',
+      'Piensa en ello como intentar entender las reglas de un videojuego sÃºper complejo solo mirando la pantalla durante aÃ±os, anotando cada vez que un enemigo aparece. Nunca ves el cÃ³digo de programaciÃ³n, pero descubres el patrÃ³n perfecto de cuÃ¡ndo atacar. Los mayas no conocÃ­an las leyes de la gravedad de Newton, pero sus nÃºmeros predecÃ­an el comportamiento de los planetas con precisiÃ³n increÃ­ble.',
     ],
     expandables: [
-      { label: 'Dato Científico', icon: 'atom', text: 'El .3 en los 6,585.3 días del ciclo de Saros es crucial. Es aproximadamente un tercio de día (8 horas). Debido a estas 8 horas extra, la Tierra gira un tercio de vuelta adicional antes del siguiente eclipse del ciclo. Por lo tanto, el mismo eclipse se repetirá 18 años después, pero será visible en una parte diferente del mundo, desplazado unos 120 grados hacia el oeste.' },
-      { label: 'La coincidencia', icon: 'atom', text: 'Los mayas fueron muy afortunados. En el pasado remoto, la Luna estaba mucho más cerca de la Tierra y los eclipses totales eran muy comunes. En el futuro lejano, la Luna estará tan lejos que nunca podrá cubrir el Sol. Los humanos (y los mayas) existen en el punto exacto de la historia de la Tierra donde ambos discos miden exactamente medio grado en el cielo.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'El .3 en los 6,585.3 dÃ­as del ciclo de Saros es crucial. Es aproximadamente un tercio de dÃ­a (8 horas). Debido a estas 8 horas extra, la Tierra gira un tercio de vuelta adicional antes del siguiente eclipse del ciclo. Por lo tanto, el mismo eclipse se repetirÃ¡ 18 aÃ±os despuÃ©s, pero serÃ¡ visible en una parte diferente del mundo, desplazado unos 120 grados hacia el oeste.' },
+      { label: 'La coincidencia', icon: 'atom', text: 'Los mayas fueron muy afortunados. En el pasado remoto, la Luna estaba mucho mÃ¡s cerca de la Tierra y los eclipses totales eran muy comunes. En el futuro lejano, la Luna estarÃ¡ tan lejos que nunca podrÃ¡ cubrir el Sol. Los humanos (y los mayas) existen en el punto exacto de la historia de la Tierra donde ambos discos miden exactamente medio grado en el cielo.' },
     ],
-    fact: 'Las órbitas no son círculos perfectos, sino óvalos (elipses). Cuando la Luna está en su punto más alejado de la Tierra (apogeo) y pasa frente al Sol, no logra cubrirlo por completo. Esto deja un anillo de fuego brillante alrededor de la sombra lunar, conocido como eclipse anular. Los mayas también registraron estos eventos en sus tablas matemáticas con gran cuidado y respeto.',
+    fact: 'Las Ã³rbitas no son cÃ­rculos perfectos, sino Ã³valos (elipses). Cuando la Luna estÃ¡ en su punto mÃ¡s alejado de la Tierra (apogeo) y pasa frente al Sol, no logra cubrirlo por completo. Esto deja un anillo de fuego brillante alrededor de la sombra lunar, conocido como eclipse anular. Los mayas tambiÃ©n registraron estos eventos en sus tablas matemÃ¡ticas con gran cuidado y respeto.',
   },
   {
     id: 'prediccion-precisa',
-    title: 'Matemáticas Mayas vs El Mundo',
+    title: 'MatemÃ¡ticas Mayas vs El Mundo',
     color: '#311B92',
     btnImage: '/assets/maya/infographic_m8/btn_prediccion-precisa.jpg',
     image: '/assets/maya/infographic_m8/hero_prediccion-precisa.jpg',
     content: [
-      'Para entender cuán buenas eran las matemáticas mayas, los científicos modernos pusieron a prueba la Tabla de Eclipses del Códice de Dresde. Descubrieron que su ciclo de 11,960 días tiene un error de apenas una fracción de día a lo largo de treinta y tres años. ¡Es un nivel de precisión asombroso para personas que hacían todos sus cálculos observando a simple vista y escribiendo en corteza de árbol!',
-      'Al otro lado del mundo, en la antigua Mesopotamia, los astrónomos babilonios también descubrieron los ciclos de los eclipses. Usaban el Ciclo de Saros de 18 años. Los griegos antiguos aprendieron de los babilonios y construyeron la famosa Máquina de Anticitera, un ordenador de engranajes de bronce, para calcular los eclipses. Pero los mayas lograron algo similar estando completamente aislados.',
-      'La astronomía maya se desarrolló de manera completamente independiente. Nunca conocieron a los babilonios, griegos o chinos. Inventaron su propia forma de matemáticas, su propio sistema de escritura y su propio calendario complejo. Que dos culturas separadas por océanos gigantescos llegaran a conclusiones matemáticas similares demuestra que las leyes de la naturaleza son universales y medibles.',
-      'Un detalle fascinante de las tablas mayas es que incluyen "factores de corrección". Es como cuando tu reloj se atrasa un minuto cada mes, y tú aprendes a sumar un minuto al leer la hora. Los astrónomos mayas sabían que su sistema de 11,960 días no era infinitamente perfecto y se desfasaría con los siglos. Así que escribieron instrucciones matemáticas para ajustar y corregir la tabla en el futuro.',
-      'Esta capacidad de auto-corregir sus matemáticas muestra que la ciencia maya no era estática. No era solo una religión rígida, sino un sistema dinámico. Los sacerdotes astrónomos eran verdaderos científicos que revisaban sus teorías, comparaban sus datos antiguos con las nuevas observaciones y ajustaban sus modelos matemáticos para que fueran más precisos. Era ciencia en estado puro.',
+      'Para entender cuÃ¡n buenas eran las matemÃ¡ticas mayas, los cientÃ­ficos modernos pusieron a prueba la Tabla de Eclipses del CÃ³dice de Dresde. Descubrieron que su ciclo de 11,960 dÃ­as tiene un error de apenas una fracciÃ³n de dÃ­a a lo largo de treinta y tres aÃ±os. Â¡Es un nivel de precisiÃ³n asombroso para personas que hacÃ­an todos sus cÃ¡lculos observando a simple vista y escribiendo en corteza de Ã¡rbol!',
+      'Al otro lado del mundo, en la antigua Mesopotamia, los astrÃ³nomos babilonios tambiÃ©n descubrieron los ciclos de los eclipses. Usaban el Ciclo de Saros de 18 aÃ±os. Los griegos antiguos aprendieron de los babilonios y construyeron la famosa MÃ¡quina de Anticitera, un ordenador de engranajes de bronce, para calcular los eclipses. Pero los mayas lograron algo similar estando completamente aislados.',
+      'La astronomÃ­a maya se desarrollÃ³ de manera completamente independiente. Nunca conocieron a los babilonios, griegos o chinos. Inventaron su propia forma de matemÃ¡ticas, su propio sistema de escritura y su propio calendario complejo. Que dos culturas separadas por ocÃ©anos gigantescos llegaran a conclusiones matemÃ¡ticas similares demuestra que las leyes de la naturaleza son universales y medibles.',
+      'Un detalle fascinante de las tablas mayas es que incluyen "factores de correcciÃ³n". Es como cuando tu reloj se atrasa un minuto cada mes, y tÃº aprendes a sumar un minuto al leer la hora. Los astrÃ³nomos mayas sabÃ­an que su sistema de 11,960 dÃ­as no era infinitamente perfecto y se desfasarÃ­a con los siglos. AsÃ­ que escribieron instrucciones matemÃ¡ticas para ajustar y corregir la tabla en el futuro.',
+      'Esta capacidad de auto-corregir sus matemÃ¡ticas muestra que la ciencia maya no era estÃ¡tica. No era solo una religiÃ³n rÃ­gida, sino un sistema dinÃ¡mico. Los sacerdotes astrÃ³nomos eran verdaderos cientÃ­ficos que revisaban sus teorÃ­as, comparaban sus datos antiguos con las nuevas observaciones y ajustaban sus modelos matemÃ¡ticos para que fueran mÃ¡s precisos. Era ciencia en estado puro.',
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El calendario sagrado maya, el Tzolkin de 260 días, encajaba perfectamente con las predicciones astronómicas porque un año de eclipses (el tiempo para que el Sol pase por ambos nodos de la órbita lunar) es de aproximadamente 346.6 días. Los mayas encontraron el mínimo común múltiplo entre estos extraños ciclos cósmicos y su calendario ritual.' },
-      { label: 'En la historia', icon: 'clock', text: 'Fray Diego de Landa, un sacerdote español en el siglo dieciséis, quemó miles de libros mayas porque los consideraba "mentiras del diablo". Hoy, solo nos quedan cuatro códices mayas legibles en todo el mundo. Si no fuera por esta tragedia histórica, conoceríamos mucho más sobre los asombrosos cálculos astronómicos que estas mentes brillantes lograron realizar.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'El calendario sagrado maya, el Tzolkin de 260 dÃ­as, encajaba perfectamente con las predicciones astronÃ³micas porque un aÃ±o de eclipses (el tiempo para que el Sol pase por ambos nodos de la Ã³rbita lunar) es de aproximadamente 346.6 dÃ­as. Los mayas encontraron el mÃ­nimo comÃºn mÃºltiplo entre estos extraÃ±os ciclos cÃ³smicos y su calendario ritual.' },
+      { label: 'En la historia', icon: 'clock', text: 'Fray Diego de Landa, un sacerdote espaÃ±ol en el siglo diecisÃ©is, quemÃ³ miles de libros mayas porque los consideraba "mentiras del diablo". Hoy, solo nos quedan cuatro cÃ³dices mayas legibles en todo el mundo. Si no fuera por esta tragedia histÃ³rica, conocerÃ­amos mucho mÃ¡s sobre los asombrosos cÃ¡lculos astronÃ³micos que estas mentes brillantes lograron realizar.' },
     ],
-    fact: 'Un astrofísico moderno calculó que la predicción de la longitud del mes lunar hecha por los astrónomos mayas de la ciudad de Copán era de 29.53020 días. El valor moderno medido con satélites láser es de 29.53059 días. ¡Los mayas tenían un error de menos de un minuto por mes! Lograron esto contando los días entre cientos de lunas llenas a lo largo de décadas.',
+    fact: 'Un astrofÃ­sico moderno calculÃ³ que la predicciÃ³n de la longitud del mes lunar hecha por los astrÃ³nomos mayas de la ciudad de CopÃ¡n era de 29.53020 dÃ­as. El valor moderno medido con satÃ©lites lÃ¡ser es de 29.53059 dÃ­as. Â¡Los mayas tenÃ­an un error de menos de un minuto por mes! Lograron esto contando los dÃ­as entre cientos de lunas llenas a lo largo de dÃ©cadas.',
   },
   {
     id: 'eclipse-lunar',
@@ -205,17 +205,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m8/btn_eclipse-lunar.jpg',
     image: '/assets/maya/infographic_m8/hero_eclipse-lunar.jpg',
     content: [
-      'Mientras los eclipses solares eran aterradores por el día, los eclipses lunares traían su propio tipo de miedo mágico por la noche. Los mayas llamaban al eclipse lunar "Chiibal Uh", que significa "la mordida de la Luna". Durante un eclipse lunar total, la Tierra se pone exactamente entre el Sol y la Luna, proyectando una sombra gigante que cubre la cara brillante de nuestro satélite natural.',
-      'Lo más dramático de un eclipse lunar total es que la Luna no desaparece por completo en la oscuridad. En lugar de volverse negra, se tiñe de un profundo color rojo oscuro, parecido al color del óxido o la sangre. Para los mayas, esta "Luna de Sangre" era una señal visual poderosa y aterradora. Imaginaban que el jaguar cósmico estaba masticando a la diosa de la Luna y haciéndola sangrar.',
-      '¿Por qué se pone roja la Luna de verdad? Imagina que estás en la Luna mirando hacia la Tierra durante el eclipse. Verías a nuestro planeta como un círculo negro que tapa el Sol, pero alrededor del borde de la Tierra verías un anillo brillante de fuego. Ese anillo es la luz de todos los amaneceres y atardeceres del mundo ocurriendo al mismo tiempo. Esa luz rojiza es la que se refleja en la Luna.',
-      'Debido a esta asociación con la sangre y las heridas en el cielo, los eclipses lunares impulsaban a los reyes mayas a realizar rituales de sacrificio. Sentían que, si los dioses celestiales estaban sangrando, los humanos debían ofrecer su propia sangre para mantener el equilibrio del universo. Los gobernantes realizaban ceremonias usando espinas de mantarraya para ofrendar pequeñas gotas sagradas.',
-      'Curiosamente, los eclipses lunares son mucho más fáciles de ver que los solares. Un eclipse solar solo se puede ver desde una pequeña franja de sombra en la Tierra. Pero un eclipse lunar se puede ver desde cualquier lugar del mundo donde sea de noche. Por eso, los mayas tenían muchísimos más registros visuales de eclipses lunares para alimentar sus tablas matemáticas y mejorar sus cálculos.',
+      'Mientras los eclipses solares eran aterradores por el dÃ­a, los eclipses lunares traÃ­an su propio tipo de miedo mÃ¡gico por la noche. Los mayas llamaban al eclipse lunar "Chiibal Uh", que significa "la mordida de la Luna". Durante un eclipse lunar total, la Tierra se pone exactamente entre el Sol y la Luna, proyectando una sombra gigante que cubre la cara brillante de nuestro satÃ©lite natural.',
+      'Lo mÃ¡s dramÃ¡tico de un eclipse lunar total es que la Luna no desaparece por completo en la oscuridad. En lugar de volverse negra, se tiÃ±e de un profundo color rojo oscuro, parecido al color del Ã³xido o la sangre. Para los mayas, esta "Luna de Sangre" era una seÃ±al visual poderosa y aterradora. Imaginaban que el jaguar cÃ³smico estaba masticando a la diosa de la Luna y haciÃ©ndola sangrar.',
+      'Â¿Por quÃ© se pone roja la Luna de verdad? Imagina que estÃ¡s en la Luna mirando hacia la Tierra durante el eclipse. VerÃ­as a nuestro planeta como un cÃ­rculo negro que tapa el Sol, pero alrededor del borde de la Tierra verÃ­as un anillo brillante de fuego. Ese anillo es la luz de todos los amaneceres y atardeceres del mundo ocurriendo al mismo tiempo. Esa luz rojiza es la que se refleja en la Luna.',
+      'Debido a esta asociaciÃ³n con la sangre y las heridas en el cielo, los eclipses lunares impulsaban a los reyes mayas a realizar rituales de sacrificio. SentÃ­an que, si los dioses celestiales estaban sangrando, los humanos debÃ­an ofrecer su propia sangre para mantener el equilibrio del universo. Los gobernantes realizaban ceremonias usando espinas de mantarraya para ofrendar pequeÃ±as gotas sagradas.',
+      'Curiosamente, los eclipses lunares son mucho mÃ¡s fÃ¡ciles de ver que los solares. Un eclipse solar solo se puede ver desde una pequeÃ±a franja de sombra en la Tierra. Pero un eclipse lunar se puede ver desde cualquier lugar del mundo donde sea de noche. Por eso, los mayas tenÃ­an muchÃ­simos mÃ¡s registros visuales de eclipses lunares para alimentar sus tablas matemÃ¡ticas y mejorar sus cÃ¡lculos.',
     ],
     expandables: [
-      { label: 'Dato Científico', icon: 'atom', text: 'El fenómeno que tiñe la Luna de rojo se llama dispersión de Rayleigh. Es el mismo efecto óptico que hace que nuestro cielo sea azul durante el día y rojo al atardecer. La atmósfera de la Tierra actúa como una lente gigante que dobla la luz del Sol, filtrando los colores azules y dejando pasar solo la luz roja para bañar la superficie lunar.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La diosa maya de la Luna, Ixchel, era una de las figuras más poderosas de su religión. Se la asociaba con el agua, la fertilidad, los tejidos y los partos. Cuando ocurría un eclipse lunar, las mujeres embarazadas creían que el peligro cósmico podía causar malformaciones en sus bebés, por lo que usaban amuletos protectores de piedra roja.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'El fenÃ³meno que tiÃ±e la Luna de rojo se llama dispersiÃ³n de Rayleigh. Es el mismo efecto Ã³ptico que hace que nuestro cielo sea azul durante el dÃ­a y rojo al atardecer. La atmÃ³sfera de la Tierra actÃºa como una lente gigante que dobla la luz del Sol, filtrando los colores azules y dejando pasar solo la luz roja para baÃ±ar la superficie lunar.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'La diosa maya de la Luna, Ixchel, era una de las figuras mÃ¡s poderosas de su religiÃ³n. Se la asociaba con el agua, la fertilidad, los tejidos y los partos. Cuando ocurrÃ­a un eclipse lunar, las mujeres embarazadas creÃ­an que el peligro cÃ³smico podÃ­a causar malformaciones en sus bebÃ©s, por lo que usaban amuletos protectores de piedra roja.' },
     ],
-    fact: 'Un eclipse lunar máximo puede durar hasta una hora y cuarenta y siete minutos en su fase de totalidad (cuando está completamente rojo). Este largo tiempo les daba a los sacerdotes mayas la oportunidad perfecta para encender hogueras en las pirámides, tocar los tambores sagrados y realizar cantos complejos antes de que la luz blanca regresara al satélite.',
+    fact: 'Un eclipse lunar mÃ¡ximo puede durar hasta una hora y cuarenta y siete minutos en su fase de totalidad (cuando estÃ¡ completamente rojo). Este largo tiempo les daba a los sacerdotes mayas la oportunidad perfecta para encender hogueras en las pirÃ¡mides, tocar los tambores sagrados y realizar cantos complejos antes de que la luz blanca regresara al satÃ©lite.',
   },
   {
     id: 'registro-historico',
@@ -224,17 +224,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m8/btn_registro-historico.jpg',
     image: '/assets/maya/infographic_m8/hero_registro-historico.jpg',
     content: [
-      'Los mayas no solo escribían en papel de corteza; también tallaban sus descubrimientos en grandes columnas de piedra llamadas estelas. Estas piedras son como los libros de historia o los noticieros de la ciudad, donde los reyes anunciaban sus victorias, cumpleaños y eventos astronómicos importantes. Al combinar fechas esculpidas con computadoras modernas, podemos comprobar la precisión de sus observaciones.',
-      'Un ejemplo asombroso se encuentra en la antigua ciudad de Copán (en la actual Honduras). En un altar de piedra, tallaron una fecha que corresponde al calendario gregoriano moderno. Los astrónomos actuales corrieron sus programas de computadora hacia atrás en el tiempo y descubrieron que, exactamente en ese mismo día, un eclipse solar parcial oscureció los cielos sobre esa selva.',
-      'Los reyes mayas a menudo usaban los eclipses para legitimar su poder. Si un rey sabía, gracias a sus matemáticos, que el Sol iba a ser "mordido", podía organizar una gran ceremonia pública en la plaza. En el momento exacto en que comenzaba la oscuridad, el rey ordenaba al jaguar cósmico que se alejara. Cuando la luz regresaba, el pueblo creía que el rey había salvado al mundo.',
-      'El conocimiento era poder supremo. Los sacerdotes astrónomos eran la élite de la sociedad porque controlaban el calendario. Decían cuándo plantar el maíz, cuándo ir a la guerra y cuándo hacer ceremonias. Un error en la predicción de un eclipse podía costarle la cabeza al astrónomo, ya que indicaría que el rey había perdido su conexión divina con los dioses del cielo. Las matemáticas eran de vida o muerte.',
-      'A través de la epigrafía (el estudio de leer los glifos antiguos), sabemos que los mayas conectaban eventos celestes con historias de sus antepasados. Si un eclipse ocurría cerca del aniversario de la muerte de un rey importante, decían que el espíritu de ese rey estaba peleando en el cielo. La astronomía y la historia política estaban tejidas en un mismo hilo mágico y exacto.',
+      'Los mayas no solo escribÃ­an en papel de corteza; tambiÃ©n tallaban sus descubrimientos en grandes columnas de piedra llamadas estelas. Estas piedras son como los libros de historia o los noticieros de la ciudad, donde los reyes anunciaban sus victorias, cumpleaÃ±os y eventos astronÃ³micos importantes. Al combinar fechas esculpidas con computadoras modernas, podemos comprobar la precisiÃ³n de sus observaciones.',
+      'Un ejemplo asombroso se encuentra en la antigua ciudad de CopÃ¡n (en la actual Honduras). En un altar de piedra, tallaron una fecha que corresponde al calendario gregoriano moderno. Los astrÃ³nomos actuales corrieron sus programas de computadora hacia atrÃ¡s en el tiempo y descubrieron que, exactamente en ese mismo dÃ­a, un eclipse solar parcial oscureciÃ³ los cielos sobre esa selva.',
+      'Los reyes mayas a menudo usaban los eclipses para legitimar su poder. Si un rey sabÃ­a, gracias a sus matemÃ¡ticos, que el Sol iba a ser "mordido", podÃ­a organizar una gran ceremonia pÃºblica en la plaza. En el momento exacto en que comenzaba la oscuridad, el rey ordenaba al jaguar cÃ³smico que se alejara. Cuando la luz regresaba, el pueblo creÃ­a que el rey habÃ­a salvado al mundo.',
+      'El conocimiento era poder supremo. Los sacerdotes astrÃ³nomos eran la Ã©lite de la sociedad porque controlaban el calendario. DecÃ­an cuÃ¡ndo plantar el maÃ­z, cuÃ¡ndo ir a la guerra y cuÃ¡ndo hacer ceremonias. Un error en la predicciÃ³n de un eclipse podÃ­a costarle la cabeza al astrÃ³nomo, ya que indicarÃ­a que el rey habÃ­a perdido su conexiÃ³n divina con los dioses del cielo. Las matemÃ¡ticas eran de vida o muerte.',
+      'A travÃ©s de la epigrafÃ­a (el estudio de leer los glifos antiguos), sabemos que los mayas conectaban eventos celestes con historias de sus antepasados. Si un eclipse ocurrÃ­a cerca del aniversario de la muerte de un rey importante, decÃ­an que el espÃ­ritu de ese rey estaba peleando en el cielo. La astronomÃ­a y la historia polÃ­tica estaban tejidas en un mismo hilo mÃ¡gico y exacto.',
     ],
     expandables: [
-      { label: 'En las piedras', icon: 'atom', text: 'En la ciudad de Santa Elena, los arqueólogos encontraron un monumento que registra el ascenso al poder de un rey llamado "Jaguar Humeante". Lo fascinante es que la fecha tallada en la piedra para su coronación coincide perfectamente con un eclipse lunar visible en la región. El rey usó el espectáculo celestial como efectos especiales naturales para su ceremonia.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El sistema de fechas mayas, llamado la Cuenta Larga, es tan preciso que puede especificar un solo día único dentro de un ciclo de 5,125 años. Es como decir "martes 14 a las 3 pm" pero sin que se repita nunca en miles de años. Esta exactitud extrema es la razón por la que hoy podemos relacionar sus monumentos de piedra con cálculos astronómicos de la NASA.' },
+      { label: 'En las piedras', icon: 'atom', text: 'En la ciudad de Santa Elena, los arqueÃ³logos encontraron un monumento que registra el ascenso al poder de un rey llamado "Jaguar Humeante". Lo fascinante es que la fecha tallada en la piedra para su coronaciÃ³n coincide perfectamente con un eclipse lunar visible en la regiÃ³n. El rey usÃ³ el espectÃ¡culo celestial como efectos especiales naturales para su ceremonia.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'El sistema de fechas mayas, llamado la Cuenta Larga, es tan preciso que puede especificar un solo dÃ­a Ãºnico dentro de un ciclo de 5,125 aÃ±os. Es como decir "martes 14 a las 3 pm" pero sin que se repita nunca en miles de aÃ±os. Esta exactitud extrema es la razÃ³n por la que hoy podemos relacionar sus monumentos de piedra con cÃ¡lculos astronÃ³micos de la NASA.' },
     ],
-    fact: 'El mayor triunfo de la arqueoastronomía moderna ha sido usar los eclipses registrados en piedra para sincronizar el calendario maya antiguo con el calendario cristiano europeo. Dado que la astronomía moderna puede calcular la fecha exacta de un eclipse en el pasado a la hora y minuto exacto, estas piedras actúan como el ancla definitiva para datar toda la historia maya.',
+    fact: 'El mayor triunfo de la arqueoastronomÃ­a moderna ha sido usar los eclipses registrados en piedra para sincronizar el calendario maya antiguo con el calendario cristiano europeo. Dado que la astronomÃ­a moderna puede calcular la fecha exacta de un eclipse en el pasado a la hora y minuto exacto, estas piedras actÃºan como el ancla definitiva para datar toda la historia maya.',
   },
   {
     id: 'ciencia-supersticion',
@@ -243,21 +243,21 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m8/btn_ciencia-supersticion.jpg',
     image: '/assets/maya/infographic_m8/hero_ciencia-supersticion.jpg',
     content: [
-      'Al estudiar a los mayas, nos encontramos con un choque fascinante: ¿cómo podían ser científicos tan brillantes y matemáticos tan lógicos, y al mismo tiempo creer literalmente que un jaguar gigante se estaba comiendo al Sol? Para entender esto, debemos quitarnos nuestros lentes modernos y pensar como ellos. Para los mayas, la ciencia y la religión no eran cosas opuestas, eran exactamente lo mismo.',
-      'Imagina que eres un detective intentando entender el comportamiento de un fantasma. Mides la temperatura, anotas la hora, calculas su velocidad. Usas métodos científicos rigurosos para estudiar algo sobrenatural. Los mayas hacían eso con el cosmos. Las matemáticas eran su herramienta para entender la mente de los dioses. Calcular la órbita de un planeta era como leer el diario íntimo de la deidad.',
-      'El empirismo es la base de la ciencia moderna: recolectar datos reales observando el mundo cuidadosamente durante mucho tiempo. Los mayas fueron campeones del empirismo. Subían a lo alto de sus pirámides, que servían como observatorios gigantes, y usaban palos cruzados para medir las posiciones de las estrellas contra el horizonte, noche tras noche, siglo tras siglo. No inventaban los datos.',
-      'Su método de recolección de datos era impecable y cien por ciento científico. Fue la interpretación de esos datos la que fue mitológica. Construyeron una teoría matemática perfecta sobre CÓMO se movían las luces en el cielo, pero su respuesta a POR QUÉ se movían involucraba monstruos, batallas y sangre. Esta mezcla de recolección de datos precisos y narrativa mágica es única en la historia antigua.',
-      'Al final, el legado de la astronomía maya nos enseña una lección profunda. La inteligencia humana es universal. Hace mil años, en medio de la densa selva tropical, sin computadoras, lentes de cristal o metal forjado, la mente humana buscó patrones en el caos. Encontraron el ritmo matemático oculto en el miedo oscuro de un eclipse, y escribieron ese ritmo para la eternidad.',
+      'Al estudiar a los mayas, nos encontramos con un choque fascinante: Â¿cÃ³mo podÃ­an ser cientÃ­ficos tan brillantes y matemÃ¡ticos tan lÃ³gicos, y al mismo tiempo creer literalmente que un jaguar gigante se estaba comiendo al Sol? Para entender esto, debemos quitarnos nuestros lentes modernos y pensar como ellos. Para los mayas, la ciencia y la religiÃ³n no eran cosas opuestas, eran exactamente lo mismo.',
+      'Imagina que eres un detective intentando entender el comportamiento de un fantasma. Mides la temperatura, anotas la hora, calculas su velocidad. Usas mÃ©todos cientÃ­ficos rigurosos para estudiar algo sobrenatural. Los mayas hacÃ­an eso con el cosmos. Las matemÃ¡ticas eran su herramienta para entender la mente de los dioses. Calcular la Ã³rbita de un planeta era como leer el diario Ã­ntimo de la deidad.',
+      'El empirismo es la base de la ciencia moderna: recolectar datos reales observando el mundo cuidadosamente durante mucho tiempo. Los mayas fueron campeones del empirismo. SubÃ­an a lo alto de sus pirÃ¡mides, que servÃ­an como observatorios gigantes, y usaban palos cruzados para medir las posiciones de las estrellas contra el horizonte, noche tras noche, siglo tras siglo. No inventaban los datos.',
+      'Su mÃ©todo de recolecciÃ³n de datos era impecable y cien por ciento cientÃ­fico. Fue la interpretaciÃ³n de esos datos la que fue mitolÃ³gica. Construyeron una teorÃ­a matemÃ¡tica perfecta sobre CÃ“MO se movÃ­an las luces en el cielo, pero su respuesta a POR QUÃ‰ se movÃ­an involucraba monstruos, batallas y sangre. Esta mezcla de recolecciÃ³n de datos precisos y narrativa mÃ¡gica es Ãºnica en la historia antigua.',
+      'Al final, el legado de la astronomÃ­a maya nos enseÃ±a una lecciÃ³n profunda. La inteligencia humana es universal. Hace mil aÃ±os, en medio de la densa selva tropical, sin computadoras, lentes de cristal o metal forjado, la mente humana buscÃ³ patrones en el caos. Encontraron el ritmo matemÃ¡tico oculto en el miedo oscuro de un eclipse, y escribieron ese ritmo para la eternidad.',
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las famosas pirámides mayas no solo eran tumbas o templos; eran gigantescos instrumentos astronómicos de piedra. El edificio del Caracol en Chichén Itzá tiene ventanas estrechas alineadas perfectamente con los puntos donde se pone el Sol durante los equinoccios y donde Venus alcanza sus posiciones más extremas en el horizonte. ¡La arquitectura misma era un reloj!' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La diferencia entre astrología y astronomía: La astronomía mide y calcula las posiciones físicas y el movimiento real de los astros (ciencia maya fuerte). La astrología cree que esos astros controlan el destino de las personas (creencia maya fuerte). Hoy las separamos, pero para los mayas y casi todas las culturas antiguas, eran una sola disciplina sagrada.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Las famosas pirÃ¡mides mayas no solo eran tumbas o templos; eran gigantescos instrumentos astronÃ³micos de piedra. El edificio del Caracol en ChichÃ©n ItzÃ¡ tiene ventanas estrechas alineadas perfectamente con los puntos donde se pone el Sol durante los equinoccios y donde Venus alcanza sus posiciones mÃ¡s extremas en el horizonte. Â¡La arquitectura misma era un reloj!' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'La diferencia entre astrologÃ­a y astronomÃ­a: La astronomÃ­a mide y calcula las posiciones fÃ­sicas y el movimiento real de los astros (ciencia maya fuerte). La astrologÃ­a cree que esos astros controlan el destino de las personas (creencia maya fuerte). Hoy las separamos, pero para los mayas y casi todas las culturas antiguas, eran una sola disciplina sagrada.' },
     ],
-    fact: 'El sistema matemático maya era tan avanzado que los sacerdotes podían predecir un eclipse que ocurriría muchos años después de su propia muerte. Escribían estos cálculos en los códices sabiendo que nunca vivirían para comprobarlos. Confiaban ciegamente en el poder de sus ecuaciones. Era un acto supremo de fe en la ciencia y un regalo de conocimiento para las futuras generaciones.',
+    fact: 'El sistema matemÃ¡tico maya era tan avanzado que los sacerdotes podÃ­an predecir un eclipse que ocurrirÃ­a muchos aÃ±os despuÃ©s de su propia muerte. EscribÃ­an estos cÃ¡lculos en los cÃ³dices sabiendo que nunca vivirÃ­an para comprobarlos. Confiaban ciegamente en el poder de sus ecuaciones. Era un acto supremo de fe en la ciencia y un regalo de conocimiento para las futuras generaciones.',
   }
 ];
 
-// ─── Temporal Particle Field (Canvas Background) ──────────────────────────────
+// â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TemporalField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -301,7 +301,7 @@ function TemporalField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Maya Header ──────────────────────────────────────────────────────
+// â”€â”€â”€ Maya Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function MayaHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-10px' }}>
@@ -341,7 +341,7 @@ function MayaHeader() {
   );
 }
 
-// ─── Organic Node Button ─────────────────────────
+// â”€â”€â”€ Organic Node Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -421,7 +421,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Expandable Section with Random Direction ────────────────────────────────
+// â”€â”€â”€ Expandable Section with Random Direction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DIRECTIONS = ['up', 'down', 'left', 'right'];
 const dirVariants = {
   up:    { hidden: { y: -30, opacity: 0 }, visible: { y: 0, opacity: 1 } },
@@ -508,7 +508,7 @@ function ExpandableSection({ item, color }) {
   );
 }
 
-// ─── Magazine-Style Content Panel ────────────────────────────────────────────
+// â”€â”€â”€ Magazine-Style Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
@@ -545,7 +545,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={18} />
       </button>
 
-      {/* ─── Two-Column Hero Section ─── */}
+      {/* â”€â”€â”€ Two-Column Hero Section â”€â”€â”€ */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -606,7 +606,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── Magazine Body ─── */}
+      {/* â”€â”€â”€ Magazine Body â”€â”€â”€ */}
       <div style={{
         padding: '1.5rem 2rem 2rem',
         position: 'relative',
@@ -658,7 +658,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
                 }}>
-                  {i === 0 ? '◆' : '◇'}
+                  {i === 0 ? 'â—†' : 'â—‡'}
                 </div>
                 <p style={{
                   margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
@@ -671,14 +671,14 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* ─── Expandable Interactive Sections ─── */}
+        {/* â”€â”€â”€ Expandable Interactive Sections â”€â”€â”€ */}
         {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '2rem', position: 'relative', zIndex: 2 }}>
             <h4 style={{
               fontSize: '1.1rem', color: node.color,
               margin: '0 0 1rem', display: 'flex', alignItems: 'center', gap: '0.5rem',
             }}>
-              <ChevronRight size={18} /> Explorar Más
+              <ChevronRight size={18} /> Explorar MÃ¡s
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               {node.expandables.map((exp, i) => (
@@ -688,7 +688,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {/* ─── Fact Highlight ─── */}
+        {/* â”€â”€â”€ Fact Highlight â”€â”€â”€ */}
         {node.fact && (
           <div style={{
             marginTop: '2rem',
@@ -711,7 +711,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato Científico
+                Dato CientÃ­fico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -728,7 +728,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ explored, total }) {
   const pct = (explored / total) * 100;
   return (
@@ -752,7 +752,7 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-// ─── Main Infographic Component ──────────────────────────────────────────────
+// â”€â”€â”€ Main Infographic Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_MayaM8() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
@@ -771,7 +771,7 @@ export default function InteractiveInfographic_MayaM8() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(15,10,10,0.85) 0%, rgba(20,10,15,0.8) 40%, rgba(15,10,10,0.88) 100%), url(/assets/maya/infographic_m8/bg_maya_eclipses.jpg)',
+      backgroundImage: 'linear-gradient(180deg, rgba(15,10,10,0.85) 0%, rgba(20,10,15,0.8) 40%, rgba(15,10,10,0.88) 100%), ',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
@@ -822,7 +822,7 @@ export default function InteractiveInfographic_MayaM8() {
         
         <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center' }}>
           <h4 style={{ fontSize: '0.9rem', color: '#FFD54F', margin: '0 0 1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
-            Fuentes Académicas
+            Fuentes AcadÃ©micas
           </h4>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {BIBLIOGRAPHY.map((bib, i) => (
@@ -835,7 +835,7 @@ export default function InteractiveInfographic_MayaM8() {
       </div>
 
       {lightboxSrc && (
-        <ImageLightbox src={lightboxSrc} alt="Ampliación" onClose={() => setLightboxSrc(null)} />
+        <ImageLightbox src={lightboxSrc} alt="AmpliaciÃ³n" onClose={() => setLightboxSrc(null)} />
       )}
     </div>
   );

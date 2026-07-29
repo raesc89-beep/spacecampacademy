@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
 
-// ─── SVG Decorative Elements (Maya Astronomy themed) ─────────────────────────
+// â”€â”€â”€ SVG Decorative Elements (Maya Astronomy themed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function DecoPleiades({ size = 70, color = '#E8EAF6', style = {} }) {
   return (
@@ -90,8 +90,8 @@ const BIBLIOGRAPHY = [
   'Milbrath, S. (1999). Star Gods of the Maya, University of Texas Press',
   'Aveni, A.F. (2001). Skywatchers of Ancient Mexico, University of Texas Press',
   'Tedlock, D. (1996). Popol Vuh: The Definitive Edition of The Mayan Book of the Dawn of Life, Simon & Schuster',
-  'Malmström, V.H. (1997). Cycles of the Sun, Mysteries of the Moon, University of Texas Press',
-  'Šprajc, I. (2001). Orientaciones Astronómicas en la Arquitectura Prehispánica del Centro de México, INAH',
+  'MalmstrÃ¶m, V.H. (1997). Cycles of the Sun, Mysteries of the Moon, University of Texas Press',
+  'Å prajc, I. (2001). Orientaciones AstronÃ³micas en la Arquitectura PrehispÃ¡nica del Centro de MÃ©xico, INAH',
 ];
 
 const INFOGRAPHIC_NODES = [
@@ -102,17 +102,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m10/btn_tzab-ek-nombre.jpg',
     image: '/assets/maya/infographic_m10/hero_tzab-ek-nombre.jpg',
     content: [
-      'Imagina que miras el cielo nocturno y ves un grupo muy junto de estrellas brillantes. Este pequeño racimo parece una nube de luz suave. Los astrónomos mayas observaron este mismo grupo hace miles de años. Ellos lo llamaron Tzab-ek en su idioma yucateco. Tzab-ek significa literalmente la cola de la serpiente. Cuando miras a estas estrellas juntas, realmente parecen los segmentos unidos de un cascabel sonando en la oscuridad del universo.',
-      'Nosotros hoy conocemos a este grupo como las Pléyades o las Siete Hermanas. Es un cúmulo estelar abierto, lo que significa que son estrellas jóvenes que nacieron juntas de la misma nube de gas. Es como si fueran una familia de estrellas que todavía viajan juntas por el espacio. Para los mayas, este grupo no era solo un adorno en el cielo. Era una de las constelaciones más importantes de su cultura entera. Las observaban con mucha atención cada noche.',
-      'Aunque a veces les decimos las Siete Hermanas, la cantidad exacta de estrellas que puedes ver depende de lo oscuro que esté el cielo. En una noche despejada, lejos de las luces de cualquier ciudad, podrías llegar a contar hasta nueve estrellas. Los sabios mayas, que tenían cielos oscuros sin contaminación, podían ver muchos detalles. Ellos construyeron ciudades enteras para poder seguir el camino de estas estrellas en particular.',
-      'El cielo funcionaba como un reloj gigante y perfecto para los observadores mesoamericanos. Tzab-ek era como la manecilla de este reloj. Al observar dónde salían estas estrellas en el horizonte, los sacerdotes podían saber exactamente en qué parte del año estaban. Esto era vital para sobrevivir. Sin calendarios de papel ni teléfonos, el cielo nocturno era la única forma de saber cuándo cambiarían las estaciones del año.',
-      'Piensa en el cielo como un mapa en movimiento. Las Pléyades se encuentran en la constelación que hoy llamamos Tauro. Para encontrar a Tzab-ek, solo tienes que buscar una forma de cucharón en miniatura. Es tan distintiva que una vez que aprendes a identificarla, tu ojo siempre la encontrará rápidamente. Los niños mayas seguramente aprendían a buscar este cascabel desde que eran pequeños, sentados afuera de sus casas.'
+      'Imagina que miras el cielo nocturno y ves un grupo muy junto de estrellas brillantes. Este pequeÃ±o racimo parece una nube de luz suave. Los astrÃ³nomos mayas observaron este mismo grupo hace miles de aÃ±os. Ellos lo llamaron Tzab-ek en su idioma yucateco. Tzab-ek significa literalmente la cola de la serpiente. Cuando miras a estas estrellas juntas, realmente parecen los segmentos unidos de un cascabel sonando en la oscuridad del universo.',
+      'Nosotros hoy conocemos a este grupo como las PlÃ©yades o las Siete Hermanas. Es un cÃºmulo estelar abierto, lo que significa que son estrellas jÃ³venes que nacieron juntas de la misma nube de gas. Es como si fueran una familia de estrellas que todavÃ­a viajan juntas por el espacio. Para los mayas, este grupo no era solo un adorno en el cielo. Era una de las constelaciones mÃ¡s importantes de su cultura entera. Las observaban con mucha atenciÃ³n cada noche.',
+      'Aunque a veces les decimos las Siete Hermanas, la cantidad exacta de estrellas que puedes ver depende de lo oscuro que estÃ© el cielo. En una noche despejada, lejos de las luces de cualquier ciudad, podrÃ­as llegar a contar hasta nueve estrellas. Los sabios mayas, que tenÃ­an cielos oscuros sin contaminaciÃ³n, podÃ­an ver muchos detalles. Ellos construyeron ciudades enteras para poder seguir el camino de estas estrellas en particular.',
+      'El cielo funcionaba como un reloj gigante y perfecto para los observadores mesoamericanos. Tzab-ek era como la manecilla de este reloj. Al observar dÃ³nde salÃ­an estas estrellas en el horizonte, los sacerdotes podÃ­an saber exactamente en quÃ© parte del aÃ±o estaban. Esto era vital para sobrevivir. Sin calendarios de papel ni telÃ©fonos, el cielo nocturno era la Ãºnica forma de saber cuÃ¡ndo cambiarÃ­an las estaciones del aÃ±o.',
+      'Piensa en el cielo como un mapa en movimiento. Las PlÃ©yades se encuentran en la constelaciÃ³n que hoy llamamos Tauro. Para encontrar a Tzab-ek, solo tienes que buscar una forma de cucharÃ³n en miniatura. Es tan distintiva que una vez que aprendes a identificarla, tu ojo siempre la encontrarÃ¡ rÃ¡pidamente. Los niÃ±os mayas seguramente aprendÃ­an a buscar este cascabel desde que eran pequeÃ±os, sentados afuera de sus casas.'
     ],
     expandables: [
-      { label: 'El viaje de la luz', icon: 'clock', text: 'Cuando miras a Tzab-ek hoy, la luz que entra a tus ojos comenzó su viaje hace aproximadamente cuatrocientos cuarenta años. Esto significa que estás viendo las estrellas tal como eran en el pasado. Es como recibir una carta que tardó siglos en llegar viajando a la velocidad máxima permitida por el cosmos infinito.' },
-      { label: 'Cúmulos estelares jóvenes', icon: 'atom', text: 'Las Pléyades son estrellas muy jóvenes en términos astronómicos. Tienen solo cien millones de años. Eso suena a mucho tiempo, pero nuestro Sol tiene cuatro mil quinientos millones de años. Si el Sol fuera un abuelo, las estrellas de Tzab-ek serían apenas unos bebés brillando en su cuna de polvo.' }
+      { label: 'El viaje de la luz', icon: 'clock', text: 'Cuando miras a Tzab-ek hoy, la luz que entra a tus ojos comenzÃ³ su viaje hace aproximadamente cuatrocientos cuarenta aÃ±os. Esto significa que estÃ¡s viendo las estrellas tal como eran en el pasado. Es como recibir una carta que tardÃ³ siglos en llegar viajando a la velocidad mÃ¡xima permitida por el cosmos infinito.' },
+      { label: 'CÃºmulos estelares jÃ³venes', icon: 'atom', text: 'Las PlÃ©yades son estrellas muy jÃ³venes en tÃ©rminos astronÃ³micos. Tienen solo cien millones de aÃ±os. Eso suena a mucho tiempo, pero nuestro Sol tiene cuatro mil quinientos millones de aÃ±os. Si el Sol fuera un abuelo, las estrellas de Tzab-ek serÃ­an apenas unos bebÃ©s brillando en su cuna de polvo.' }
     ],
-    fact: 'Las Pléyades contienen en realidad más de mil estrellas en total, aunque nuestros ojos sin ayuda de telescopios solo pueden ver las más brillantes. Toda esta familia estelar está unida por la fuerza de gravedad y se mueve junta a través del espacio a una velocidad de cuarenta kilómetros por segundo. Con el tiempo, dentro de doscientos cincuenta millones de años, este grupo se separará lentamente.'
+    fact: 'Las PlÃ©yades contienen en realidad mÃ¡s de mil estrellas en total, aunque nuestros ojos sin ayuda de telescopios solo pueden ver las mÃ¡s brillantes. Toda esta familia estelar estÃ¡ unida por la fuerza de gravedad y se mueve junta a travÃ©s del espacio a una velocidad de cuarenta kilÃ³metros por segundo. Con el tiempo, dentro de doscientos cincuenta millones de aÃ±os, este grupo se separarÃ¡ lentamente.'
   },
   {
     id: 'paso-cenital',
@@ -121,36 +121,36 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m10/btn_paso-cenital.jpg',
     image: '/assets/maya/infographic_m10/hero_paso-cenital.jpg',
     content: [
-      'Imagina que el cielo es una cúpula sobre tu cabeza. El punto más alto se llama el cenit. Es como si trazaras una línea desde el centro de la Tierra, que pasa por tu cabeza y sigue hasta tocar el techo del cielo. El paso cenital ocurre cuando un astro pasa justo por este punto exacto. En las latitudes de las ciudades mayas, que están cerca del paralelo veinte, este fenómeno astronómico tiene una importancia enorme para la naturaleza.',
-      'Cuando el Sol o unas estrellas pasan por el cenit, los objetos como los postes no hacen ninguna sombra hacia los lados. Es un momento donde la luz cae verticalmente. Para los sabios mayas, el paso de Tzab-ek por el cenit en la mitad de la noche era un aviso del universo. Ocurría cerca de nuestro mes de mayo. Este evento astronómico era la alarma que despertaba a la naturaleza para el inicio de un nuevo ciclo vital.',
-      'El paso cenital de las Pléyades anunciaba la llegada inminente de la temporada de lluvias. Piensa en la lluvia como la sangre que le da vida a la tierra reseca. Después de muchos meses de sol, los campesinos miraban hacia el cielo esperando esta señal. Cuando el cascabel cruzaba el punto más alto del firmamento, sabían que las nubes pronto traerían el agua necesaria para sembrar. La astronomía dictaba el ritmo de la vida.',
-      'Los arquitectos mayas eran tan precisos que construyeron edificios especiales solo para marcar este momento exacto. Hacían agujeros en los techos de cavernas o creaban chimeneas de piedra en sus observatorios. Durante el paso cenital, la luz bajaba por estos túneles rectos e iluminaba una cámara oscura en el fondo. Era una forma inteligente de capturar el paso del tiempo usando solo roca y luz. Un calendario que nunca fallaba.',
-      'Este alineamiento entre el cielo y la tierra demuestra que los mayas entendían la geometría del espacio muy bien. Ellos sabían que la Tierra es redonda y que la posición de las estrellas cambia dependiendo de dónde te encuentres en el planeta. Si viajas al norte, las Pléyades nunca pasarán justo arriba de tu cabeza. Este fenómeno solo se puede ver en la zona donde se desarrolló esta civilización antigua.'
+      'Imagina que el cielo es una cÃºpula sobre tu cabeza. El punto mÃ¡s alto se llama el cenit. Es como si trazaras una lÃ­nea desde el centro de la Tierra, que pasa por tu cabeza y sigue hasta tocar el techo del cielo. El paso cenital ocurre cuando un astro pasa justo por este punto exacto. En las latitudes de las ciudades mayas, que estÃ¡n cerca del paralelo veinte, este fenÃ³meno astronÃ³mico tiene una importancia enorme para la naturaleza.',
+      'Cuando el Sol o unas estrellas pasan por el cenit, los objetos como los postes no hacen ninguna sombra hacia los lados. Es un momento donde la luz cae verticalmente. Para los sabios mayas, el paso de Tzab-ek por el cenit en la mitad de la noche era un aviso del universo. OcurrÃ­a cerca de nuestro mes de mayo. Este evento astronÃ³mico era la alarma que despertaba a la naturaleza para el inicio de un nuevo ciclo vital.',
+      'El paso cenital de las PlÃ©yades anunciaba la llegada inminente de la temporada de lluvias. Piensa en la lluvia como la sangre que le da vida a la tierra reseca. DespuÃ©s de muchos meses de sol, los campesinos miraban hacia el cielo esperando esta seÃ±al. Cuando el cascabel cruzaba el punto mÃ¡s alto del firmamento, sabÃ­an que las nubes pronto traerÃ­an el agua necesaria para sembrar. La astronomÃ­a dictaba el ritmo de la vida.',
+      'Los arquitectos mayas eran tan precisos que construyeron edificios especiales solo para marcar este momento exacto. HacÃ­an agujeros en los techos de cavernas o creaban chimeneas de piedra en sus observatorios. Durante el paso cenital, la luz bajaba por estos tÃºneles rectos e iluminaba una cÃ¡mara oscura en el fondo. Era una forma inteligente de capturar el paso del tiempo usando solo roca y luz. Un calendario que nunca fallaba.',
+      'Este alineamiento entre el cielo y la tierra demuestra que los mayas entendÃ­an la geometrÃ­a del espacio muy bien. Ellos sabÃ­an que la Tierra es redonda y que la posiciÃ³n de las estrellas cambia dependiendo de dÃ³nde te encuentres en el planeta. Si viajas al norte, las PlÃ©yades nunca pasarÃ¡n justo arriba de tu cabeza. Este fenÃ³meno solo se puede ver en la zona donde se desarrollÃ³ esta civilizaciÃ³n antigua.'
     ],
     expandables: [
-      { label: 'La danza de las sombras', icon: 'clock', text: 'Durante un paso cenital solar, puedes pararte derecho al mediodía y ver cómo tu propia sombra desaparece debajo de tus zapatos. Los mayas medían estas sombras con estelas altas de piedra para calcular con gran exactitud la duración del año trópico. Es un método sumamente elegante de usar las herramientas de la naturaleza natural.' },
-      { label: 'Medición del tiempo nocturno', icon: 'clock', text: 'Las estrellas sirven para medir el tiempo durante la noche al igual que el Sol lo hace durante el día. Observar a Tzab-ek cruzar el meridiano superior ayudaba a los sacerdotes a dividir la noche en horas exactas. El cielo era un reloj gigante lleno de puntos brillantes que giraban sobre un eje invisible y constante.' }
+      { label: 'La danza de las sombras', icon: 'clock', text: 'Durante un paso cenital solar, puedes pararte derecho al mediodÃ­a y ver cÃ³mo tu propia sombra desaparece debajo de tus zapatos. Los mayas medÃ­an estas sombras con estelas altas de piedra para calcular con gran exactitud la duraciÃ³n del aÃ±o trÃ³pico. Es un mÃ©todo sumamente elegante de usar las herramientas de la naturaleza natural.' },
+      { label: 'MediciÃ³n del tiempo nocturno', icon: 'clock', text: 'Las estrellas sirven para medir el tiempo durante la noche al igual que el Sol lo hace durante el dÃ­a. Observar a Tzab-ek cruzar el meridiano superior ayudaba a los sacerdotes a dividir la noche en horas exactas. El cielo era un reloj gigante lleno de puntos brillantes que giraban sobre un eje invisible y constante.' }
     ],
-    fact: 'El paralelo de veinte grados pasa justo por encima de la península de Yucatán. Debido a la inclinación del eje del planeta Tierra, las estrellas que tienen una declinación cercana a los veinticuatro grados, como las Pléyades, logran alcanzar el punto cenital visible en esta región geográfica. Los cálculos para predecir esto requieren observaciones de muchas décadas continuas.'
+    fact: 'El paralelo de veinte grados pasa justo por encima de la penÃ­nsula de YucatÃ¡n. Debido a la inclinaciÃ³n del eje del planeta Tierra, las estrellas que tienen una declinaciÃ³n cercana a los veinticuatro grados, como las PlÃ©yades, logran alcanzar el punto cenital visible en esta regiÃ³n geogrÃ¡fica. Los cÃ¡lculos para predecir esto requieren observaciones de muchas dÃ©cadas continuas.'
   },
   {
     id: 'calendario-agricola',
-    title: 'Calendario Agrícola',
+    title: 'Calendario AgrÃ­cola',
     color: '#F9A825',
     btnImage: '/assets/maya/infographic_m10/btn_calendario-agricola.jpg',
     image: '/assets/maya/infographic_m10/hero_calendario-agricola.jpg',
     content: [
-      'El evento astronómico llamado orto helíaco suena complicado, pero es un concepto muy simple. Imagina que las estrellas y el Sol están jugando a las escondidas. El orto helíaco ocurre en el primer día del año en que puedes ver una estrella salir por el este justo antes de que la luz del Sol la borre. Es la primera aparición visible de la estrella después de haber estado escondida detrás del brillo durante varias semanas. Para Tzab-ek, esto pasa a finales de abril.',
-      'Cuando el cascabel volvía a aparecer en la madrugada, era el aviso más urgente para los campesinos mayas. Significaba que era el momento exacto para preparar la milpa, que es el campo donde siembran el maíz. Si empezaban antes, la tierra estaba seca. Si empezaban después, las lluvias arruinarían las semillas. Las estrellas funcionaban como un calendario perfecto y gratuito que todos podían leer si miraban al horizonte del amanecer.',
-      'El ciclo de cultivar el maíz estaba amarrado de manera invisible a los movimientos de las Pléyades. Las familias enteras trabajaban cortando y quemando la maleza del campo antes de que llegaran las lluvias prometidas por las estrellas. La ceniza rica en minerales servía como abono nutritivo para la tierra cansada. Este método tradicional requiere una sincronización con la naturaleza para que la cosecha sea muy abundante.',
-      'Es fascinante pensar que la supervivencia de millones de personas dependía de observar correctamente un puñado de luces distantes. No usaban termómetros ni pronósticos de computadora. Su tecnología era la observación paciente y sistemática del horizonte. Sabían que las estrellas nunca mienten. El ciclo del universo físico y el ciclo biológico de las plantas estaban conectados por el conocimiento ancestral que se pasaba de abuelos a nietos.',
-      'El maíz no era solo un alimento para los mayas; era la sustancia sagrada de la que estaban hechos los primeros humanos según sus historias antiguas. Por lo tanto, seguir a Tzab-ek para saber cuándo sembrar el maíz era una actividad religiosa también. Era como seguir las instrucciones directas de los creadores del mundo escritas en la pizarra del cielo. Cada semilla plantada era una respuesta al mensaje que traían las estrellas de la madrugada.'
+      'El evento astronÃ³mico llamado orto helÃ­aco suena complicado, pero es un concepto muy simple. Imagina que las estrellas y el Sol estÃ¡n jugando a las escondidas. El orto helÃ­aco ocurre en el primer dÃ­a del aÃ±o en que puedes ver una estrella salir por el este justo antes de que la luz del Sol la borre. Es la primera apariciÃ³n visible de la estrella despuÃ©s de haber estado escondida detrÃ¡s del brillo durante varias semanas. Para Tzab-ek, esto pasa a finales de abril.',
+      'Cuando el cascabel volvÃ­a a aparecer en la madrugada, era el aviso mÃ¡s urgente para los campesinos mayas. Significaba que era el momento exacto para preparar la milpa, que es el campo donde siembran el maÃ­z. Si empezaban antes, la tierra estaba seca. Si empezaban despuÃ©s, las lluvias arruinarÃ­an las semillas. Las estrellas funcionaban como un calendario perfecto y gratuito que todos podÃ­an leer si miraban al horizonte del amanecer.',
+      'El ciclo de cultivar el maÃ­z estaba amarrado de manera invisible a los movimientos de las PlÃ©yades. Las familias enteras trabajaban cortando y quemando la maleza del campo antes de que llegaran las lluvias prometidas por las estrellas. La ceniza rica en minerales servÃ­a como abono nutritivo para la tierra cansada. Este mÃ©todo tradicional requiere una sincronizaciÃ³n con la naturaleza para que la cosecha sea muy abundante.',
+      'Es fascinante pensar que la supervivencia de millones de personas dependÃ­a de observar correctamente un puÃ±ado de luces distantes. No usaban termÃ³metros ni pronÃ³sticos de computadora. Su tecnologÃ­a era la observaciÃ³n paciente y sistemÃ¡tica del horizonte. SabÃ­an que las estrellas nunca mienten. El ciclo del universo fÃ­sico y el ciclo biolÃ³gico de las plantas estaban conectados por el conocimiento ancestral que se pasaba de abuelos a nietos.',
+      'El maÃ­z no era solo un alimento para los mayas; era la sustancia sagrada de la que estaban hechos los primeros humanos segÃºn sus historias antiguas. Por lo tanto, seguir a Tzab-ek para saber cuÃ¡ndo sembrar el maÃ­z era una actividad religiosa tambiÃ©n. Era como seguir las instrucciones directas de los creadores del mundo escritas en la pizarra del cielo. Cada semilla plantada era una respuesta al mensaje que traÃ­an las estrellas de la madrugada.'
     ],
     expandables: [
-      { label: 'El giro de la Tierra', icon: 'clock', text: 'El orto helíaco sucede porque la Tierra se mueve alrededor del Sol a lo largo del año. Cada día que pasa, el Sol parece moverse un poco hacia el este en relación a las estrellas de fondo. Esto hace que diferentes constelaciones queden visibles en momentos diferentes del año. Es un ciclo anual y cíclico sin fin aparente.' },
-      { label: 'El cultivo de la milpa', icon: 'atom', text: 'El sistema agrícola maya no solo sembraba maíz. Sembraban frijoles que se enredaban en el tallo del maíz y calabazas que cubrían el suelo para mantener la humedad. Este método inteligente previene las plagas destructivas y mantiene la tierra sana durante mucho tiempo. Es un sistema ecológico finamente equilibrado.' }
+      { label: 'El giro de la Tierra', icon: 'clock', text: 'El orto helÃ­aco sucede porque la Tierra se mueve alrededor del Sol a lo largo del aÃ±o. Cada dÃ­a que pasa, el Sol parece moverse un poco hacia el este en relaciÃ³n a las estrellas de fondo. Esto hace que diferentes constelaciones queden visibles en momentos diferentes del aÃ±o. Es un ciclo anual y cÃ­clico sin fin aparente.' },
+      { label: 'El cultivo de la milpa', icon: 'atom', text: 'El sistema agrÃ­cola maya no solo sembraba maÃ­z. Sembraban frijoles que se enredaban en el tallo del maÃ­z y calabazas que cubrÃ­an el suelo para mantener la humedad. Este mÃ©todo inteligente previene las plagas destructivas y mantiene la tierra sana durante mucho tiempo. Es un sistema ecolÃ³gico finamente equilibrado.' }
     ],
-    fact: 'El Códice de Madrid, que es uno de los pocos libros mayas originales que sobrevivieron a la historia, contiene páginas dedicadas exclusivamente a los ciclos agrícolas. Muestra dibujos de dioses plantando semillas usando palos afilados, acompañados por glifos que indican las fechas astronómicas exactas. Los investigadores han encontrado una relación directa entre estas fechas y los movimientos de Tzab-ek.'
+    fact: 'El CÃ³dice de Madrid, que es uno de los pocos libros mayas originales que sobrevivieron a la historia, contiene pÃ¡ginas dedicadas exclusivamente a los ciclos agrÃ­colas. Muestra dibujos de dioses plantando semillas usando palos afilados, acompaÃ±ados por glifos que indican las fechas astronÃ³micas exactas. Los investigadores han encontrado una relaciÃ³n directa entre estas fechas y los movimientos de Tzab-ek.'
   },
   {
     id: 'nueva-cuenta-fuego',
@@ -159,55 +159,55 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m10/btn_nueva-cuenta-fuego.jpg',
     image: '/assets/maya/infographic_m10/hero_nueva-cuenta-fuego.jpg',
     content: [
-      'Imagina vivir en un mundo donde el calendario más largo se acaba por completo. Para los habitantes de Mesoamérica, como los aztecas y otros pueblos conectados con la tradición maya, esto pasaba cada cincuenta y dos años. Sus dos calendarios principales, el civil de trescientos sesenta y cinco días y el ritual de doscientos sesenta días, volvían a empezar juntos en ese momento exacto. Era como el cambio de siglo más importante de todos.',
-      'Esta fecha monumental se marcaba con una ceremonia llamada el Fuego Nuevo. La señal cósmica para iniciar este ritual profundo era el paso de las Pléyades por el punto más alto del cielo durante la medianoche. Si el cascabel no se detenía y continuaba su camino continuo por el cielo, significaba que el universo seguiría existiendo por otro ciclo completo. Era una prueba física de que la maquinaria del mundo no se había roto.',
-      'Para prepararse para este momento de renovación, la gente rompía todas sus vasijas viejas y limpiaba sus casas profundamente. La parte más dramática era que apagaban todos los fuegos de todas las ciudades. Imagina un mundo sumergido en una oscuridad densa, sin una sola llama encendida. La única luz que quedaba era la luz tenue de las estrellas frías que cruzaban lentamente por encima de sus cabezas.',
-      'Cuando los sacerdotes observaban desde una montaña alta que Tzab-ek cruzaba el cenit, sabían que el mundo estaba a salvo. Entonces tomaban dos trozos de madera seca y los frotaban rápidamente hasta crear una pequeña chispa roja. Este nuevo fuego sagrado nacía en el pecho del cielo. De esta única llama inicial, mensajeros rápidos corrían con antorchas ardientes para llevar el fuego a cada templo del imperio dormido.',
-      'Es una analogía hermosa sobre los ciclos del tiempo. Así como las estrellas giran y vuelven a su lugar, la vida humana también debe renovarse y empezar limpia otra vez. El cosmos participaba en esta fiesta de cumpleaños del mundo. Las Pléyades no eran solo indicadores agrícolas; eran los engranajes brillantes que marcaban el inicio y el fin del tiempo cósmico mismo. El destino de la humanidad estaba atado a este racimo estelar.'
+      'Imagina vivir en un mundo donde el calendario mÃ¡s largo se acaba por completo. Para los habitantes de MesoamÃ©rica, como los aztecas y otros pueblos conectados con la tradiciÃ³n maya, esto pasaba cada cincuenta y dos aÃ±os. Sus dos calendarios principales, el civil de trescientos sesenta y cinco dÃ­as y el ritual de doscientos sesenta dÃ­as, volvÃ­an a empezar juntos en ese momento exacto. Era como el cambio de siglo mÃ¡s importante de todos.',
+      'Esta fecha monumental se marcaba con una ceremonia llamada el Fuego Nuevo. La seÃ±al cÃ³smica para iniciar este ritual profundo era el paso de las PlÃ©yades por el punto mÃ¡s alto del cielo durante la medianoche. Si el cascabel no se detenÃ­a y continuaba su camino continuo por el cielo, significaba que el universo seguirÃ­a existiendo por otro ciclo completo. Era una prueba fÃ­sica de que la maquinaria del mundo no se habÃ­a roto.',
+      'Para prepararse para este momento de renovaciÃ³n, la gente rompÃ­a todas sus vasijas viejas y limpiaba sus casas profundamente. La parte mÃ¡s dramÃ¡tica era que apagaban todos los fuegos de todas las ciudades. Imagina un mundo sumergido en una oscuridad densa, sin una sola llama encendida. La Ãºnica luz que quedaba era la luz tenue de las estrellas frÃ­as que cruzaban lentamente por encima de sus cabezas.',
+      'Cuando los sacerdotes observaban desde una montaÃ±a alta que Tzab-ek cruzaba el cenit, sabÃ­an que el mundo estaba a salvo. Entonces tomaban dos trozos de madera seca y los frotaban rÃ¡pidamente hasta crear una pequeÃ±a chispa roja. Este nuevo fuego sagrado nacÃ­a en el pecho del cielo. De esta Ãºnica llama inicial, mensajeros rÃ¡pidos corrÃ­an con antorchas ardientes para llevar el fuego a cada templo del imperio dormido.',
+      'Es una analogÃ­a hermosa sobre los ciclos del tiempo. AsÃ­ como las estrellas giran y vuelven a su lugar, la vida humana tambiÃ©n debe renovarse y empezar limpia otra vez. El cosmos participaba en esta fiesta de cumpleaÃ±os del mundo. Las PlÃ©yades no eran solo indicadores agrÃ­colas; eran los engranajes brillantes que marcaban el inicio y el fin del tiempo cÃ³smico mismo. El destino de la humanidad estaba atado a este racimo estelar.'
     ],
     expandables: [
-      { label: 'El ciclo del Siglo', icon: 'atom', text: 'El número cincuenta y dos no es casualidad. Es el mínimo común múltiplo de los dos calendarios importantes. Pasaban trece mil ochocientos ochenta días exactos para que las fechas volvieran a combinarse igual. Una persona que vivía para ver este evento dos veces se consideraba un anciano de enorme respeto y sabiduría total.' },
-      { label: 'Constelación del Fuego', icon: 'clock', text: 'En muchas culturas antiguas, a las Pléyades se les asocia con el fuego. Esto podría ser porque parecen un grupo de brasas calientes que brillan juntas en la oscuridad. Su luz azulada parpadea mucho más cuando están cerca del horizonte, debido a las turbulencias invisibles de la atmósfera terrestre que distorsionan la visión.' }
+      { label: 'El ciclo del Siglo', icon: 'atom', text: 'El nÃºmero cincuenta y dos no es casualidad. Es el mÃ­nimo comÃºn mÃºltiplo de los dos calendarios importantes. Pasaban trece mil ochocientos ochenta dÃ­as exactos para que las fechas volvieran a combinarse igual. Una persona que vivÃ­a para ver este evento dos veces se consideraba un anciano de enorme respeto y sabidurÃ­a total.' },
+      { label: 'ConstelaciÃ³n del Fuego', icon: 'clock', text: 'En muchas culturas antiguas, a las PlÃ©yades se les asocia con el fuego. Esto podrÃ­a ser porque parecen un grupo de brasas calientes que brillan juntas en la oscuridad. Su luz azulada parpadea mucho mÃ¡s cuando estÃ¡n cerca del horizonte, debido a las turbulencias invisibles de la atmÃ³sfera terrestre que distorsionan la visiÃ³n.' }
     ],
-    fact: 'Los registros históricos escritos muestran que la última gran Ceremonia del Fuego Nuevo celebrada por los aztecas ocurrió en el año mil quinientos siete de nuestra era. Fue realizada en la cumbre del Cerro de la Estrella, ubicado cerca del centro de la actual Ciudad de México. Las investigaciones astronómicas confirman que en noviembre de ese año específico, las Pléyades cruzaron el cenit de ese lugar exacto.'
+    fact: 'Los registros histÃ³ricos escritos muestran que la Ãºltima gran Ceremonia del Fuego Nuevo celebrada por los aztecas ocurriÃ³ en el aÃ±o mil quinientos siete de nuestra era. Fue realizada en la cumbre del Cerro de la Estrella, ubicado cerca del centro de la actual Ciudad de MÃ©xico. Las investigaciones astronÃ³micas confirman que en noviembre de ese aÃ±o especÃ­fico, las PlÃ©yades cruzaron el cenit de ese lugar exacto.'
   },
   {
     id: 'astronomia-precisa',
-    title: 'Astronomía Precisa',
+    title: 'AstronomÃ­a Precisa',
     color: '#2E7D32',
     btnImage: '/assets/maya/infographic_m10/btn_astronomia-precisa.jpg',
     image: '/assets/maya/infographic_m10/hero_astronomia-precisa.jpg',
     content: [
-      'Si crees que para ser un buen astrónomo necesitas usar un telescopio moderno gigante, los mayas probarían que estás equivocado. Ellos lograron una precisión astronómica increíble usando solo sus ojos humanos y edificios de piedra muy largos. Imagina usar la pared de tu casa para ver por dónde sale el sol cada día y hacer marcas en el suelo a lo largo de los años. Así fue como empezaron a entender el ritmo del inmenso universo estrellado.',
-      'Los sabios mayas no solo anotaban la posición diaria de las cosas. Ellos descubrieron un movimiento de la Tierra increíblemente lento llamado la precesión de los equinoccios. Piensa en un trompo que está girando rápido pero también se tambalea muy lentamente de lado a lado. Nuestro planeta hace exactamente lo mismo. Este tambaleo hace que la posición aparente de las estrellas cambie un poquito cada siglo. ¡Es un ciclo que tarda veintiséis mil años en completarse!',
-      'Detectar un cambio tan minúsculo requiere observaciones metódicas durante muchísimas generaciones humanas. Los abuelos pasaban sus libros de datos anotados a los nietos, siglo tras siglo sin interrupción. Notaron que el punto exacto por donde Tzab-ek salía en el horizonte este iba cambiando poco a poco con el paso de los años. Alinear un templo a una estrella requiere saber que ese alineamiento dejará de ser perfecto en el futuro.',
-      'En muchas zonas arqueológicas famosas como Chichén Itzá o Uxmal, hay edificios que están deliberadamente orientados para apuntar hacia las Pléyades. Las calles antiguas y las plazas ceremoniales siguen líneas rectas que apuntan al horizonte por donde este cascabel cósmico subía al cielo. Usaron la arquitectura inmensa como un instrumento astronómico gigante que convertía su profundo conocimiento matemático en pura roca sólida.',
-      'Esta precisión asombra a los científicos de hoy. Usando una matemática base veinte y símbolos escritos complejos, lograron calcular órbitas planetarias con un error de apenas unas fracciones de día. Conocer el movimiento exacto del universo les daba un poder político inmenso a los gobernantes, porque demostraba que estaban en sintonía perfecta con los dioses creadores. Eran los dueños del tiempo porque sabían medirlo de manera impecable.'
+      'Si crees que para ser un buen astrÃ³nomo necesitas usar un telescopio moderno gigante, los mayas probarÃ­an que estÃ¡s equivocado. Ellos lograron una precisiÃ³n astronÃ³mica increÃ­ble usando solo sus ojos humanos y edificios de piedra muy largos. Imagina usar la pared de tu casa para ver por dÃ³nde sale el sol cada dÃ­a y hacer marcas en el suelo a lo largo de los aÃ±os. AsÃ­ fue como empezaron a entender el ritmo del inmenso universo estrellado.',
+      'Los sabios mayas no solo anotaban la posiciÃ³n diaria de las cosas. Ellos descubrieron un movimiento de la Tierra increÃ­blemente lento llamado la precesiÃ³n de los equinoccios. Piensa en un trompo que estÃ¡ girando rÃ¡pido pero tambiÃ©n se tambalea muy lentamente de lado a lado. Nuestro planeta hace exactamente lo mismo. Este tambaleo hace que la posiciÃ³n aparente de las estrellas cambie un poquito cada siglo. Â¡Es un ciclo que tarda veintisÃ©is mil aÃ±os en completarse!',
+      'Detectar un cambio tan minÃºsculo requiere observaciones metÃ³dicas durante muchÃ­simas generaciones humanas. Los abuelos pasaban sus libros de datos anotados a los nietos, siglo tras siglo sin interrupciÃ³n. Notaron que el punto exacto por donde Tzab-ek salÃ­a en el horizonte este iba cambiando poco a poco con el paso de los aÃ±os. Alinear un templo a una estrella requiere saber que ese alineamiento dejarÃ¡ de ser perfecto en el futuro.',
+      'En muchas zonas arqueolÃ³gicas famosas como ChichÃ©n ItzÃ¡ o Uxmal, hay edificios que estÃ¡n deliberadamente orientados para apuntar hacia las PlÃ©yades. Las calles antiguas y las plazas ceremoniales siguen lÃ­neas rectas que apuntan al horizonte por donde este cascabel cÃ³smico subÃ­a al cielo. Usaron la arquitectura inmensa como un instrumento astronÃ³mico gigante que convertÃ­a su profundo conocimiento matemÃ¡tico en pura roca sÃ³lida.',
+      'Esta precisiÃ³n asombra a los cientÃ­ficos de hoy. Usando una matemÃ¡tica base veinte y sÃ­mbolos escritos complejos, lograron calcular Ã³rbitas planetarias con un error de apenas unas fracciones de dÃ­a. Conocer el movimiento exacto del universo les daba un poder polÃ­tico inmenso a los gobernantes, porque demostraba que estaban en sintonÃ­a perfecta con los dioses creadores. Eran los dueÃ±os del tiempo porque sabÃ­an medirlo de manera impecable.'
     ],
     expandables: [
-      { label: 'Arquitectura alienada', icon: 'atom', text: 'El famoso Palacio del Gobernador en Uxmal no está alineado con el resto de la ciudad. Su fachada principal está girada unos grados hacia el sureste. Los arqueólogos descubrieron que apunta exactamente al punto por donde salía Venus cuando alcanzaba su extremo máximo en el horizonte durante el siglo noveno.' },
-      { label: 'Matemáticas estelares', icon: 'clock', text: 'El sistema numérico maya era muy elegante. Solo necesitaban tres símbolos básicos para escribir cualquier cantidad enorme: un punto que vale uno, una raya horizontal que vale cinco y un caracol marino que representa el número cero. Fueron una de las primeras civilizaciones mundiales en usar el cero de forma posicional matemática.' }
+      { label: 'Arquitectura alienada', icon: 'atom', text: 'El famoso Palacio del Gobernador en Uxmal no estÃ¡ alineado con el resto de la ciudad. Su fachada principal estÃ¡ girada unos grados hacia el sureste. Los arqueÃ³logos descubrieron que apunta exactamente al punto por donde salÃ­a Venus cuando alcanzaba su extremo mÃ¡ximo en el horizonte durante el siglo noveno.' },
+      { label: 'MatemÃ¡ticas estelares', icon: 'clock', text: 'El sistema numÃ©rico maya era muy elegante. Solo necesitaban tres sÃ­mbolos bÃ¡sicos para escribir cualquier cantidad enorme: un punto que vale uno, una raya horizontal que vale cinco y un caracol marino que representa el nÃºmero cero. Fueron una de las primeras civilizaciones mundiales en usar el cero de forma posicional matemÃ¡tica.' }
     ],
-    fact: 'El arqueoastrónomo Anthony Aveni comprobó midiendo las calles de la ciudad antigua de Teotihuacán que su orientación principal tiene una desviación de quince grados y medio al este del norte geográfico verdadero. Esa línea recta milenaria apunta exactamente a la posición donde se veía el ocultamiento de las Pléyades en el horizonte durante la época en que la enorme metrópolis urbana fue construida laboriosamente.'
+    fact: 'El arqueoastrÃ³nomo Anthony Aveni comprobÃ³ midiendo las calles de la ciudad antigua de TeotihuacÃ¡n que su orientaciÃ³n principal tiene una desviaciÃ³n de quince grados y medio al este del norte geogrÃ¡fico verdadero. Esa lÃ­nea recta milenaria apunta exactamente a la posiciÃ³n donde se veÃ­a el ocultamiento de las PlÃ©yades en el horizonte durante la Ã©poca en que la enorme metrÃ³polis urbana fue construida laboriosamente.'
   },
   {
     id: 'cascabel-cosmico',
-    title: 'Cascabel Cósmico',
+    title: 'Cascabel CÃ³smico',
     color: '#311B92',
     btnImage: '/assets/maya/infographic_m10/btn_cascabel-cosmico.jpg',
     image: '/assets/maya/infographic_m10/hero_cascabel-cosmico.jpg',
     content: [
-      '¿Por qué llamaron a este grupo de estrellas una cola de serpiente y no un cucharón como nosotros? Para entenderlo, tenemos que pensar como un campesino mesoamericano rodeado de selva profunda. La serpiente de cascabel es un animal poderoso y muy respetado en su región tropical cálida. Además, la serpiente tiene una piel escamosa que se renueva y cambia periódicamente, lo que la convierte en un símbolo perfecto de la vida renovable.',
-      'Si miras el dibujo que forman las siete estrellas principales de las Pléyades, realmente se parece a los anillos duros que forman el cascabel final de la víbora. Cuando la serpiente real mueve su cascabel en el suelo, hace un sonido fuerte para avisar su presencia antes de morder. De manera similar, cuando Tzab-ek aparecía brillando fuerte en el cielo matutino, era un aviso ruidoso de que el tiempo lluvioso estaba a punto de llegar.',
-      'En la mitología antigua maya, hay un dios muy importante llamado Chaac. Es el dios de la lluvia, de los relámpagos fuertes y de las tormentas violentas. A menudo se le representa cargando un hacha afilada que produce los truenos y acompañado por grandes serpientes míticas de agua. La serpiente celestial de estrellas está conectada íntimamente con este dios benefactor de la lluvia. Es el mensajero que trae el agua dulce para las semillas.',
-      'El arte antiguo mesoamericano está lleno de dibujos de serpientes con plumas y con estrellas. La famosa Serpiente Emplumada de Chichén Itzá, que baja por la pirámide durante el equinoccio, es parte de este mismo lenguaje simbólico. Las estrellas no eran esferas de gas ardiente para ellos; eran seres vivos inmortales que habitaban el techo del mundo. Tzab-ek era un animal cósmico gigante que nadaba a través del océano oscuro del cielo.',
-      'Usar analogías de animales para entender las estrellas es algo que todos los humanos hacemos desde siempre. Los griegos vieron toros y osos inmensos; los mayas vieron tortugas redondas, jaguares moteados y serpientes ruidosas. Es nuestra manera humana de intentar ordenar un universo que es inmenso y caótico. Pintamos figuras conocidas conectando los puntos brillantes distantes para sentir que el cielo es una extensión familiar de nuestro propio patio.'
+      'Â¿Por quÃ© llamaron a este grupo de estrellas una cola de serpiente y no un cucharÃ³n como nosotros? Para entenderlo, tenemos que pensar como un campesino mesoamericano rodeado de selva profunda. La serpiente de cascabel es un animal poderoso y muy respetado en su regiÃ³n tropical cÃ¡lida. AdemÃ¡s, la serpiente tiene una piel escamosa que se renueva y cambia periÃ³dicamente, lo que la convierte en un sÃ­mbolo perfecto de la vida renovable.',
+      'Si miras el dibujo que forman las siete estrellas principales de las PlÃ©yades, realmente se parece a los anillos duros que forman el cascabel final de la vÃ­bora. Cuando la serpiente real mueve su cascabel en el suelo, hace un sonido fuerte para avisar su presencia antes de morder. De manera similar, cuando Tzab-ek aparecÃ­a brillando fuerte en el cielo matutino, era un aviso ruidoso de que el tiempo lluvioso estaba a punto de llegar.',
+      'En la mitologÃ­a antigua maya, hay un dios muy importante llamado Chaac. Es el dios de la lluvia, de los relÃ¡mpagos fuertes y de las tormentas violentas. A menudo se le representa cargando un hacha afilada que produce los truenos y acompaÃ±ado por grandes serpientes mÃ­ticas de agua. La serpiente celestial de estrellas estÃ¡ conectada Ã­ntimamente con este dios benefactor de la lluvia. Es el mensajero que trae el agua dulce para las semillas.',
+      'El arte antiguo mesoamericano estÃ¡ lleno de dibujos de serpientes con plumas y con estrellas. La famosa Serpiente Emplumada de ChichÃ©n ItzÃ¡, que baja por la pirÃ¡mide durante el equinoccio, es parte de este mismo lenguaje simbÃ³lico. Las estrellas no eran esferas de gas ardiente para ellos; eran seres vivos inmortales que habitaban el techo del mundo. Tzab-ek era un animal cÃ³smico gigante que nadaba a travÃ©s del ocÃ©ano oscuro del cielo.',
+      'Usar analogÃ­as de animales para entender las estrellas es algo que todos los humanos hacemos desde siempre. Los griegos vieron toros y osos inmensos; los mayas vieron tortugas redondas, jaguares moteados y serpientes ruidosas. Es nuestra manera humana de intentar ordenar un universo que es inmenso y caÃ³tico. Pintamos figuras conocidas conectando los puntos brillantes distantes para sentir que el cielo es una extensiÃ³n familiar de nuestro propio patio.'
     ],
     expandables: [
-      { label: 'Estrellas animales', icon: 'clock', text: 'Otra constelación muy importante para los mayas era Ak-ek, que significa la Estrella Tortuga. Esta corresponde a una parte de lo que nosotros conocemos hoy como la constelación de Orión. Las tres estrellas del cinturón de Orión formaban el caparazón duro de la tortuga cósmica flotando en el cielo estrellado y vasto.' },
-      { label: 'El sonido del cascabel', icon: 'atom', text: 'El cascabel de la serpiente real no tiene piezas adentro que suenen como unas maracas. El sonido peculiar se produce porque los anillos de queratina hueca chocan entre sí muy rápido, unas cincuenta veces por cada segundo. Las estrellas vibran con luz distante; la serpiente vibra con un sonido rápido de advertencia constante.' }
+      { label: 'Estrellas animales', icon: 'clock', text: 'Otra constelaciÃ³n muy importante para los mayas era Ak-ek, que significa la Estrella Tortuga. Esta corresponde a una parte de lo que nosotros conocemos hoy como la constelaciÃ³n de OriÃ³n. Las tres estrellas del cinturÃ³n de OriÃ³n formaban el caparazÃ³n duro de la tortuga cÃ³smica flotando en el cielo estrellado y vasto.' },
+      { label: 'El sonido del cascabel', icon: 'atom', text: 'El cascabel de la serpiente real no tiene piezas adentro que suenen como unas maracas. El sonido peculiar se produce porque los anillos de queratina hueca chocan entre sÃ­ muy rÃ¡pido, unas cincuenta veces por cada segundo. Las estrellas vibran con luz distante; la serpiente vibra con un sonido rÃ¡pido de advertencia constante.' }
     ],
-    fact: 'En el famoso libro sagrado maya llamado Popol Vuh, que narra la creación misteriosa del mundo, se menciona a un grupo de cuatrocientos muchachos jóvenes que fueron asesinados por un monstruo terrestre llamado Zipacná. Las leyendas dicen que estos jóvenes inocentes subieron al cielo oscuro para convertirse en las brillantes estrellas del grupo de las Pléyades y vivir allí eternamente como luces en la noche profunda.'
+    fact: 'En el famoso libro sagrado maya llamado Popol Vuh, que narra la creaciÃ³n misteriosa del mundo, se menciona a un grupo de cuatrocientos muchachos jÃ³venes que fueron asesinados por un monstruo terrestre llamado ZipacnÃ¡. Las leyendas dicen que estos jÃ³venes inocentes subieron al cielo oscuro para convertirse en las brillantes estrellas del grupo de las PlÃ©yades y vivir allÃ­ eternamente como luces en la noche profunda.'
   },
   {
     id: 'culturas-comparadas',
@@ -216,21 +216,21 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m10/btn_culturas-comparadas.jpg',
     image: '/assets/maya/infographic_m10/hero_culturas-comparadas.jpg',
     content: [
-      'Lo más increíble de las Pléyades no es solo lo importantes que eran para los antiguos mayas, sino que casi todas las culturas antiguas del mundo entero les prestaron la misma atención. Como es un grupo estelar muy brillante y compacto, resalta mucho en la bóveda del cielo. Es como un faro luminoso único que llama la vista humana de forma casi magnética sin importar en qué continente te encuentres parado hoy.',
-      'Piensa en el otro lado del gran océano pacífico. En Japón, a este mismo grupo de estrellas lo llaman Subaru. Significa literalmente unir fuerzas o agruparse juntos. Si alguna vez has visto el logotipo de los autos marca Subaru, notarás que es exactamente un grupo de seis estrellas conectadas entre sí. Ellos también usaban el cielo para saber cuándo plantar su arroz importante. Es una herramienta agrícola que traspasa fronteras enormes.',
-      'Para los intrépidos navegantes del pueblo maorí en la lejana Nueva Zelanda, este conjunto de estrellas se llama Matariki. Su aparición lenta antes de que salga el sol frío del invierno marca el inicio de todo el año nuevo tradicional de su calendario milenario. Las familias se reúnen contentas para recordar a los familiares que murieron durante el año pasado y para celebrar unidos la promesa de una nueva cosecha futura.',
-      'En el país inmenso de la India, el grupo se conoce como Krittika, y está fuertemente asociado con el fuego sagrado de la creación mística y con las seis madres maravillosas que cuidaron al dios guerrero llamado Kartikeya. Por otro lado, en la mitología clásica europea, son famosas como las Siete Hermanas asustadas que fueron convertidas rápidamente en pájaros blancos y luego en estrellas eternas para escapar de un cazador rudo.',
-      'Es un recordatorio poderoso de que todos los seres humanos compartimos exactamente el mismo cielo nocturno. Aunque los mayas imaginaron una cola de serpiente de cascabel ruidosa y los griegos vieron a siete hermanas bellas huyendo rápidamente, el propósito práctico y esencial era exactamente el mismo. Mirábamos unidos hacia arriba para poder entender cómo vivir mejor aquí abajo. El universo estrellado fue verdaderamente nuestro primer maestro global.'
+      'Lo mÃ¡s increÃ­ble de las PlÃ©yades no es solo lo importantes que eran para los antiguos mayas, sino que casi todas las culturas antiguas del mundo entero les prestaron la misma atenciÃ³n. Como es un grupo estelar muy brillante y compacto, resalta mucho en la bÃ³veda del cielo. Es como un faro luminoso Ãºnico que llama la vista humana de forma casi magnÃ©tica sin importar en quÃ© continente te encuentres parado hoy.',
+      'Piensa en el otro lado del gran ocÃ©ano pacÃ­fico. En JapÃ³n, a este mismo grupo de estrellas lo llaman Subaru. Significa literalmente unir fuerzas o agruparse juntos. Si alguna vez has visto el logotipo de los autos marca Subaru, notarÃ¡s que es exactamente un grupo de seis estrellas conectadas entre sÃ­. Ellos tambiÃ©n usaban el cielo para saber cuÃ¡ndo plantar su arroz importante. Es una herramienta agrÃ­cola que traspasa fronteras enormes.',
+      'Para los intrÃ©pidos navegantes del pueblo maorÃ­ en la lejana Nueva Zelanda, este conjunto de estrellas se llama Matariki. Su apariciÃ³n lenta antes de que salga el sol frÃ­o del invierno marca el inicio de todo el aÃ±o nuevo tradicional de su calendario milenario. Las familias se reÃºnen contentas para recordar a los familiares que murieron durante el aÃ±o pasado y para celebrar unidos la promesa de una nueva cosecha futura.',
+      'En el paÃ­s inmenso de la India, el grupo se conoce como Krittika, y estÃ¡ fuertemente asociado con el fuego sagrado de la creaciÃ³n mÃ­stica y con las seis madres maravillosas que cuidaron al dios guerrero llamado Kartikeya. Por otro lado, en la mitologÃ­a clÃ¡sica europea, son famosas como las Siete Hermanas asustadas que fueron convertidas rÃ¡pidamente en pÃ¡jaros blancos y luego en estrellas eternas para escapar de un cazador rudo.',
+      'Es un recordatorio poderoso de que todos los seres humanos compartimos exactamente el mismo cielo nocturno. Aunque los mayas imaginaron una cola de serpiente de cascabel ruidosa y los griegos vieron a siete hermanas bellas huyendo rÃ¡pidamente, el propÃ³sito prÃ¡ctico y esencial era exactamente el mismo. MirÃ¡bamos unidos hacia arriba para poder entender cÃ³mo vivir mejor aquÃ­ abajo. El universo estrellado fue verdaderamente nuestro primer maestro global.'
     ],
     expandables: [
-      { label: 'El mito perdido', icon: 'atom', text: 'Muchas culturas mundiales completamente separadas tienen mitos sobre por qué una de las siete estrellas principales se perdió y ahora solo se ven seis. Los científicos descubrieron que hace cien mil años, dos estrellas del grupo estaban mucho más separadas y eran visibles como dos diferentes. Luego se movieron muy juntas gradualmente.' },
-      { label: 'Herramienta universal', icon: 'clock', text: 'Sin importar si cultivaban el sagrado maíz verde en México, el arroz húmedo en Japón o las papas grandes en Nueva Zelanda, el movimiento anual regular y preciso de este cúmulo abierto en el cielo profundo servía para marcar fielmente los tiempos del delicado mundo natural. Era el mismo reloj para toda la humanidad antigua.' }
+      { label: 'El mito perdido', icon: 'atom', text: 'Muchas culturas mundiales completamente separadas tienen mitos sobre por quÃ© una de las siete estrellas principales se perdiÃ³ y ahora solo se ven seis. Los cientÃ­ficos descubrieron que hace cien mil aÃ±os, dos estrellas del grupo estaban mucho mÃ¡s separadas y eran visibles como dos diferentes. Luego se movieron muy juntas gradualmente.' },
+      { label: 'Herramienta universal', icon: 'clock', text: 'Sin importar si cultivaban el sagrado maÃ­z verde en MÃ©xico, el arroz hÃºmedo en JapÃ³n o las papas grandes en Nueva Zelanda, el movimiento anual regular y preciso de este cÃºmulo abierto en el cielo profundo servÃ­a para marcar fielmente los tiempos del delicado mundo natural. Era el mismo reloj para toda la humanidad antigua.' }
     ],
-    fact: 'La mención escrita más antigua y verificada sobre las brillantes Pléyades se encuentra en los famosos textos chinos astronómicos que datan aproximadamente del año dos mil trescientos cincuenta antes de nuestra era común. También aparecen representadas visualmente en el enigmático Disco Celeste de Nebra, un artefacto de bronce europeo que tiene más de tres mil seiscientos años de antigüedad misteriosa e indiscutible.'
+    fact: 'La menciÃ³n escrita mÃ¡s antigua y verificada sobre las brillantes PlÃ©yades se encuentra en los famosos textos chinos astronÃ³micos que datan aproximadamente del aÃ±o dos mil trescientos cincuenta antes de nuestra era comÃºn. TambiÃ©n aparecen representadas visualmente en el enigmÃ¡tico Disco Celeste de Nebra, un artefacto de bronce europeo que tiene mÃ¡s de tres mil seiscientos aÃ±os de antigÃ¼edad misteriosa e indiscutible.'
   }
 ];
 
-// ─── Temporal Particle Field (Canvas Background) ──────────────────────────────
+// â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TemporalField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -274,7 +274,7 @@ function TemporalField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Header ──────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function MayaAstronomyHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-10px' }}>
@@ -311,7 +311,7 @@ function MayaAstronomyHeader() {
   );
 }
 
-// ─── Organic Node Button ─────────────────────────────────────────────────────
+// â”€â”€â”€ Organic Node Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -389,7 +389,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Expandable Section ──────────────────────────────────────────────────────
+// â”€â”€â”€ Expandable Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DIRECTIONS = ['up', 'down', 'left', 'right'];
 const dirVariants = {
   up:    { hidden: { y: -30, opacity: 0 }, visible: { y: 0, opacity: 1 } },
@@ -464,7 +464,7 @@ function ExpandableSection({ item, color }) {
   );
 }
 
-// ─── Content Panel ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   const decoPositions = [
@@ -538,7 +538,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             return (
               <div key={i} style={{ gridColumn: isWide ? '1 / -1' : 'auto', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', padding: '1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative' }}>
                 <div style={{ position: 'absolute', top: '-8px', left: '12px', background: node.color, color: '#0B0E2D', fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px' }}>
-                  {i === 0 ? '◆' : '◇'}
+                  {i === 0 ? 'â—†' : 'â—‡'}
                 </div>
                 <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.75, color: 'rgba(255,255,255,0.85)' }}>{para}</p>
               </div>
@@ -547,7 +547,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
         {(node.expandables && node.expandables.length > 0) && (
           <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', position: 'relative', zIndex: 2 }}>
-            <h4 style={{ margin: '0 0 0.5rem', color: node.color, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Explorar más</h4>
+            <h4 style={{ margin: '0 0 0.5rem', color: node.color, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Explorar mÃ¡s</h4>
             {node.expandables.map((exp, i) => (
               <ExpandableSection key={i} item={exp} color={node.color} />
             ))}
@@ -559,7 +559,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <Sparkles size={18} style={{ color: node.color }} />
             </div>
             <div>
-              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase' }}>Dato Científico</span>
+              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase' }}>Dato CientÃ­fico</span>
               <p style={{ margin: '0.3rem 0 0', fontStyle: 'italic', color: 'rgba(255,255,255,0.9)', fontSize: '0.92rem', lineHeight: 1.7 }}>{node.fact}</p>
             </div>
           </div>
@@ -569,7 +569,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ explored, total }) {
   const pct = (explored / total) * 100;
   return (
@@ -583,7 +583,7 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-// ─── Main Infographic Component ──────────────────────────────────────────────
+// â”€â”€â”€ Main Infographic Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_MayaM10() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
@@ -601,7 +601,7 @@ export default function InteractiveInfographic_MayaM10() {
   const activeData = INFOGRAPHIC_NODES.find(n => n.id === activeNode);
 
   return (
-    <div style={{ backgroundImage: 'linear-gradient(180deg, rgba(10,15,25,0.85) 0%, rgba(15,20,30,0.8) 40%, rgba(10,15,25,0.88) 100%), url(/assets/maya/infographic_m10/bg_tzabek.jpg)', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', borderRadius: '24px', padding: '2rem 1.5rem', position: 'relative', overflow: 'hidden' }}>
+    <div style={{ backgroundImage: 'linear-gradient(180deg, rgba(10,15,25,0.85) 0%, rgba(15,20,30,0.8) 40%, rgba(10,15,25,0.88) 100%), ', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', borderRadius: '24px', padding: '2rem 1.5rem', position: 'relative', overflow: 'hidden' }}>
       <TemporalField />
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', position: 'relative', zIndex: 2, marginBottom: '2rem' }}>
         <MayaAstronomyHeader />
@@ -621,7 +621,7 @@ export default function InteractiveInfographic_MayaM10() {
       </AnimatePresence>
       <div style={{ marginTop: '3rem', padding: '2rem', background: 'rgba(0,0,0,0.4)', borderRadius: '16px', position: 'relative', zIndex: 2 }}>
         <h4 style={{ margin: '0 0 1rem', color: '#F9A825', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <Star size={16} /> Fuentes y Bibliografía
+          <Star size={16} /> Fuentes y BibliografÃ­a
         </h4>
         <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
           {BIBLIOGRAPHY.map((bib, i) => (

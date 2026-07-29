@@ -181,8 +181,8 @@ const INFOGRAPHIC_NODES = [
     id: 'limite-solar-interestelar',
     title: 'El Límite Interestelar',
     color: '#00695C',
-    btnImage: '/assets/interestelar/infographic_m5/btn_limite.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_limite.jpg',
+    btnImage: '/assets/interestelar/infographic_m5/btn_limite-solar-interestelar.jpg',
+    image: '/assets/interestelar/infographic_m5/hero_limite-solar-interestelar.jpg',
     content: [
       '¿Dónde termina verdaderamente nuestro hogar espacial y dónde empieza el misterioso espacio interestelar infinito? Responder a esto depende de cómo definas la "frontera" invisible. Mucha gente cree equivocadamente que el sistema solar termina justo después de Plutón o en la heliopausa expansiva (donde el viento solar choca violentamente con el medio interestelar), pero gravitacionalmente hablando, eso es solo el vecindario interior cercano. La Nube de Oort extensa es la última región remota donde la gravedad de nuestro Sol tiene la última palabra dominante, marcando el límite absoluto y real del imperio solar vasto.',
       'Esta frontera gravitacional extrema se llama la Esfera de Hill teórica. Imagina que el Sol tiene una cuerda gravitacional muy larga atada a todos los cometas de hielo esféricos. Mientras un cometa esté dentro de esta esfera enorme protectora, el Sol puede retenerlo y hacerlo orbitar constantemente. Pero a unas cien mil o doscientas mil unidades astronómicas lejanas, esa cuerda invisible imaginaria se vuelve demasiado débil y frágil. En ese límite extremo asombroso, la gravedad combinada enorme de toda la galaxia masiva y el tirón de las estrellas cercanas arranca el cometa definitivamente. Cruza la línea y ya eres formalmente un objeto interestelar libre.',
@@ -200,8 +200,8 @@ const INFOGRAPHIC_NODES = [
     id: 'perturbaciones-estelares',
     title: 'Estrellas Errantes Peligrosas',
     color: '#FF8F00',
-    btnImage: '/assets/interestelar/infographic_m5/btn_perturbaciones.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_perturbaciones.jpg',
+    btnImage: '/assets/interestelar/infographic_m5/btn_perturbaciones-estelares.jpg',
+    image: '/assets/interestelar/infographic_m5/hero_perturbaciones-estelares.jpg',
     content: [
       '¿Sabías que las estrellas masivas no se quedan quietas en el espacio negro, sino que vagan constantemente como barcos gigantes en un océano inmenso e infinito? A lo largo de su viaje majestuoso de millones de años lentos alrededor del centro galáctico denso, nuestro Sol brillante se cruza cercanamente con otras estrellas nómadas. Cuando una estrella intrusa pasa cerca de nuestra frontera extrema lejana, su gravedad masiva causa estragos enormes. Imagina caminar torpemente por una habitación llena de globos de agua colgantes atados por hilos invisibles débiles; tu paso brusco hará que todos se muevan salvajemente y algunos caigan precipitadamente al suelo duro.',
       'Uno de los encuentros estelares más famosos y estudiados es el de la estrella de Scholz misteriosa. Hace apenas setenta mil años pasados cortos (un parpadeo en el tiempo cósmico, cuando los humanos antiguos caminaban por África prehistórica y los neandertales robustos habitaban Europa), esta enana roja tenue pasó rozando casi a través de los límites exteriores de la Nube de Oort inmensa. Llegó a estar a menos de un año luz de cercanía alarmante de nuestro Sol central. Aunque no causó una catástrofe inmediata visible, su tirón gravitacional sutil perturbó a muchos cometas helados, alterando sus órbitas frágiles permanentemente.',
@@ -219,8 +219,8 @@ const INFOGRAPHIC_NODES = [
     id: 'exploracion-futura',
     title: 'El Futuro de la Exploración',
     color: '#ECEFF1',
-    btnImage: '/assets/interestelar/infographic_m5/btn_exploracion.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_exploracion.jpg',
+    btnImage: '/assets/interestelar/infographic_m5/btn_exploracion-futura.jpg',
+    image: '/assets/interestelar/infographic_m5/hero_exploracion-futura.jpg',
     content: [
       'Hasta el día de hoy moderno, ninguna nave espacial robótica humana construida jamás ha alcanzado verdaderamente la misteriosa Nube de Oort inmensa. Y hay una buena y frustrante razón científica para esto: está terriblemente y ridículamente lejos en la oscuridad abismal. La sonda New Horizons valiente, que voló velozmente más allá de Plutón enano en 2015 a velocidades récords inigualables, tardará varios siglos dolorosamente largos tan solo en rasguñar el borde interior más cercano imaginario. Con nuestra actual y limitada tecnología de propulsión química tradicional ruidosa, un viaje dedicado exclusivo hacia ese lugar insondable es prácticamente y absolutamente imposible en el tiempo de vida de un investigador.',
       'Pero los ingenieros espaciales visionarios y audaces nunca se rinden fácilmente ante un desafío formidable y enorme. Para explorar este congelador primordial antiguo y valioso, necesitamos sistemas de propulsión radicalmente nuevos revolucionarios y diferentes. Las velas solares delgadas y brillantes, que usan el empuje suave pero constante de los fotones solares para acelerar en el vacío, podrían alcanzar velocidades increíbles asombrosas a largo plazo, reduciendo el viaje tedioso de milenios enteros a tal vez un siglo de espera. Los cohetes de propulsión nuclear térmica innovadores o iónicos potentes, que son mucho más eficientes energéticamente y poderosos que quemar combustible líquido químico, podrían acercar el viaje a márgenes humanos realistas.',

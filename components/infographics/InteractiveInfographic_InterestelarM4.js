@@ -793,7 +793,7 @@ export default function InteractiveInfographic_InterestelarM4() {
       }}>
         <motion.div
           initial={{ width: 0 }}
-          animate={{ width: `\${progress}%` }}
+          animate={{ width: `${progress}%` }}
           style={{ height: '100%', background: '#F44336', boxShadow: '0 0 10px #F44336' }}
         />
       </div>

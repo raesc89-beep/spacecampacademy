@@ -265,7 +265,7 @@ function TemporalField() {
         if (p.x < -5 || p.x > w + 5) p.x = Math.random() * w;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(\${p.hue}, \${Math.max(0, opacity)})`;
+        ctx.fillStyle = `rgba(${p.hue}, ${Math.max(0, opacity)})`;
         ctx.fill();
       });
       frame = requestAnimationFrame(draw);
@@ -291,7 +291,7 @@ function VoyagerHeader() {
             <motion.circle key={i} cx={cx} cy={cy} r="4" fill={colors[i]}
               animate={{ opacity: [0.3, 1, 0.3], r: [3, 5, 3] }}
               transition={{ duration: 2 + i * 0.3, repeat: Infinity, ease: 'easeInOut', delay: i * 0.3 }}
-              style={{ filter: `drop-shadow(0 0 6px \${colors[i]})` }}
+              style={{ filter: `drop-shadow(0 0 6px ${colors[i]})` }}
             />
           );
         })}
@@ -339,9 +339,9 @@ function NodeButton({ node, isActive, onClick, index }) {
         height: '90px',
         borderRadius: '50%',
         overflow: 'hidden',
-        border: `3px solid \${isActive ? node.color : 'rgba(255,255,255,0.2)'}`,
+        border: `3px solid ${isActive ? node.color : 'rgba(255,255,255,0.2)'}`,
         boxShadow: isActive
-          ? `0 0 20px \${node.color}50, 0 0 40px \${node.color}20, inset 0 0 15px \${node.color}30`
+          ? `0 0 20px ${node.color}50, 0 0 40px ${node.color}20, inset 0 0 15px ${node.color}30`
           : '0 4px 15px rgba(0,0,0,0.3)',
         transition: 'all 0.3s ease',
         position: 'relative',
@@ -356,7 +356,7 @@ function NodeButton({ node, isActive, onClick, index }) {
               position: 'absolute',
               inset: '-4px',
               borderRadius: '50%',
-              border: `2px solid \${node.color}`,
+              border: `2px solid ${node.color}`,
               pointerEvents: 'none',
             }}
           />
@@ -372,7 +372,7 @@ function NodeButton({ node, isActive, onClick, index }) {
         lineHeight: 1.2,
         transition: 'color 0.3s',
         maxWidth: '100px',
-        textShadow: isActive ? `0 0 8px \${node.color}40` : 'none',
+        textShadow: isActive ? `0 0 8px ${node.color}40` : 'none',
       }}>
         {node.title}
       </span>
@@ -384,7 +384,7 @@ function NodeButton({ node, isActive, onClick, index }) {
             width: '6px', height: '6px',
             borderRadius: '50%',
             background: node.color,
-            boxShadow: `0 0 8px \${node.color}`,
+            boxShadow: `0 0 8px ${node.color}`,
           }}
         />
       )}
@@ -416,13 +416,13 @@ function ExpandableSection({ item, color }) {
     <div style={{
       marginTop: '0.8rem',
       borderRadius: '14px',
-      border: `1px solid \${color}25`,
+      border: `1px solid ${color}25`,
       overflow: 'hidden',
-      background: `linear-gradient(135deg, \${color}08, transparent)`,
+      background: `linear-gradient(135deg, ${color}08, transparent)`,
     }}>
       <motion.button
         onClick={() => setOpen(!open)}
-        whileHover={{ backgroundColor: `\${color}12` }}
+        whileHover={{ backgroundColor: `${color}12` }}
         style={{
           width: '100%',
           display: 'flex',
@@ -440,7 +440,7 @@ function ExpandableSection({ item, color }) {
           transition={{ duration: 0.3 }}
           style={{
             width: '30px', height: '30px', borderRadius: '50%',
-            background: `\${color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            background: `${color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center',
             flexShrink: 0,
           }}
         >
@@ -467,7 +467,7 @@ function ExpandableSection({ item, color }) {
             <p style={{
               margin: 0, fontSize: '0.9rem', lineHeight: 1.75,
               color: 'rgba(255,255,255,0.85)',
-              borderLeft: `3px solid \${color}30`,
+              borderLeft: `3px solid ${color}30`,
               paddingLeft: '0.8rem',
             }}>
               {item.text}
@@ -498,7 +498,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
       style={{
         background: 'rgba(10, 12, 30, 0.92)',
         backdropFilter: 'blur(24px)',
-        border: `1px solid \${node.color}30`,
+        border: `1px solid ${node.color}30`,
         borderRadius: '24px',
         position: 'relative',
         zIndex: 3,
@@ -508,7 +508,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
     >
       <button onClick={onClose} style={{
         position: 'absolute', top: '1rem', right: '1rem', zIndex: 10,
-        background: 'rgba(0,0,0,0.6)', border: `1px solid \${node.color}40`,
+        background: 'rgba(0,0,0,0.6)', border: `1px solid ${node.color}40`,
         borderRadius: '50%', width: '40px', height: '40px',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         cursor: 'pointer', color: node.color, transition: 'all 0.2s',
@@ -528,7 +528,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           position: 'relative',
           overflow: 'hidden',
           height: '100%',
-          background: `linear-gradient(135deg, \${node.color}15, rgba(0,0,0,0.4))`,
+          background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))`,
         }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{
@@ -537,7 +537,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           }} />
           <div style={{
             position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px',
-            background: `linear-gradient(transparent, \${node.color}15)`,
+            background: `linear-gradient(transparent, ${node.color}15)`,
           }} />
         </div>
 
@@ -557,7 +557,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             <span style={{
               display: 'inline-flex', width: '40px', height: '40px',
               borderRadius: '50%', overflow: 'hidden',
-              border: `2px solid \${node.color}40`,
+              border: `2px solid ${node.color}40`,
               flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -618,7 +618,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   background: 'rgba(255,255,255,0.02)',
                   borderRadius: '12px',
                   padding: '1.2rem',
-                  borderLeft: `3px solid \${node.color}30`,
+                  borderLeft: `3px solid ${node.color}30`,
                   position: 'relative',
                 }}
               >
@@ -664,8 +664,8 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           marginTop: '2rem',
           padding: '1.5rem',
           borderRadius: '16px',
-          background: `linear-gradient(135deg, \${node.color}15, transparent)`,
-          border: `1px solid \${node.color}40`,
+          background: `linear-gradient(135deg, ${node.color}15, transparent)`,
+          border: `1px solid ${node.color}40`,
           position: 'relative',
           zIndex: 2,
         }}>
@@ -730,7 +730,7 @@ export default function InteractiveInfographic_InterestelarM6() {
         <div style={{ flex: 1, height: '4px', background: 'rgba(255,255,255,0.1)', borderRadius: '2px', overflow: 'hidden' }}>
           <motion.div
             initial={{ width: 0 }}
-            animate={{ width: `\${progress}%` }}
+            animate={{ width: `${progress}%` }}
             transition={{ duration: 0.5 }}
             style={{ height: '100%', background: '#FFD54F' }}
           />

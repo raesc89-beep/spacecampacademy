@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
 
-// ─── SVG Decorative Elements (Maya Codex themed) ────────────────────────────
+// â”€â”€â”€ SVG Decorative Elements (Maya Codex themed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function DecoCodexFold({ size = 70, color = '#C62828', style = {} }) {
   return (
     <svg width={size} height={size} viewBox="0 0 60 60" style={{ opacity: 0.22, ...style }}>
@@ -95,36 +95,36 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m15/btn_codice-descubrimiento.jpg',
     image: '/assets/maya/infographic_m15/hero_codice-descubrimiento.jpg',
     content: [
-      'Imagina encontrar un libro antiguo sin saber de dónde viene. Así comenzó la historia moderna del Códice de Dresde. En el año 1739, Johann Christian Götze, director de la Biblioteca Real de Sajonia en la ciudad de Dresde, Alemania, compró este extraño documento a un propietario privado en Viena. Nadie sabía quién lo había escrito, qué idioma contenía o cómo había cruzado el océano desde América hasta Europa.',
-      'Durante casi un siglo, el códice fue un misterio total. Era como un rompecabezas cuyas piezas no encajaban con ningún otro libro conocido. Los eruditos europeos lo miraban con fascinación, pero sus extraños dibujos de dioses, animales y símbolos geométricos eran indescifrables. Fue hasta el siglo XIX cuando un bibliotecario llamado Ernst Förstemann comenzó a estudiar seriamente sus páginas y descubrió que los puntos y barras eran un sistema matemático.',
-      'El viaje de este libro estuvo lleno de peligros. El mayor riesgo ocurrió durante la Segunda Guerra Mundial. En 1945, los Aliados bombardearon intensamente la ciudad de Dresde, destruyendo gran parte de sus edificios. La biblioteca donde se guardaba el códice sufrió daños inmensos. El libro logró sobrevivir gracias a que estaba resguardado en un sótano, pero sufrió fuertes daños por el agua utilizada para apagar los incendios del edificio.',
-      'Hoy en día, el Códice de Dresde se conserva en la Sächsische Landesbibliothek (Biblioteca Estatal de Sajonia). Se exhibe en una sala especial con temperatura y humedad controladas para evitar que el papel antiguo se deshaga. Es un tesoro invaluable porque es uno de los pocos libros mayas que sobrevivieron a la destrucción colonial. Es como tener un mensaje directo del pasado, guardado celosamente.',
-      'Los historiadores creen que el códice fue enviado a Europa poco después de la conquista española, tal vez como un regalo para el rey Carlos V. Durante cientos de años pasó de mano en mano entre nobles y coleccionistas antes de llegar a la biblioteca. Su supervivencia es un verdadero milagro histórico, una pequeña ventana que nos permite observar la inmensa sabiduría científica y astronómica de la antigua civilización maya.'
+      'Imagina encontrar un libro antiguo sin saber de dÃ³nde viene. AsÃ­ comenzÃ³ la historia moderna del CÃ³dice de Dresde. En el aÃ±o 1739, Johann Christian GÃ¶tze, director de la Biblioteca Real de Sajonia en la ciudad de Dresde, Alemania, comprÃ³ este extraÃ±o documento a un propietario privado en Viena. Nadie sabÃ­a quiÃ©n lo habÃ­a escrito, quÃ© idioma contenÃ­a o cÃ³mo habÃ­a cruzado el ocÃ©ano desde AmÃ©rica hasta Europa.',
+      'Durante casi un siglo, el cÃ³dice fue un misterio total. Era como un rompecabezas cuyas piezas no encajaban con ningÃºn otro libro conocido. Los eruditos europeos lo miraban con fascinaciÃ³n, pero sus extraÃ±os dibujos de dioses, animales y sÃ­mbolos geomÃ©tricos eran indescifrables. Fue hasta el siglo XIX cuando un bibliotecario llamado Ernst FÃ¶rstemann comenzÃ³ a estudiar seriamente sus pÃ¡ginas y descubriÃ³ que los puntos y barras eran un sistema matemÃ¡tico.',
+      'El viaje de este libro estuvo lleno de peligros. El mayor riesgo ocurriÃ³ durante la Segunda Guerra Mundial. En 1945, los Aliados bombardearon intensamente la ciudad de Dresde, destruyendo gran parte de sus edificios. La biblioteca donde se guardaba el cÃ³dice sufriÃ³ daÃ±os inmensos. El libro logrÃ³ sobrevivir gracias a que estaba resguardado en un sÃ³tano, pero sufriÃ³ fuertes daÃ±os por el agua utilizada para apagar los incendios del edificio.',
+      'Hoy en dÃ­a, el CÃ³dice de Dresde se conserva en la SÃ¤chsische Landesbibliothek (Biblioteca Estatal de Sajonia). Se exhibe en una sala especial con temperatura y humedad controladas para evitar que el papel antiguo se deshaga. Es un tesoro invaluable porque es uno de los pocos libros mayas que sobrevivieron a la destrucciÃ³n colonial. Es como tener un mensaje directo del pasado, guardado celosamente.',
+      'Los historiadores creen que el cÃ³dice fue enviado a Europa poco despuÃ©s de la conquista espaÃ±ola, tal vez como un regalo para el rey Carlos V. Durante cientos de aÃ±os pasÃ³ de mano en mano entre nobles y coleccionistas antes de llegar a la biblioteca. Su supervivencia es un verdadero milagro histÃ³rico, una pequeÃ±a ventana que nos permite observar la inmensa sabidurÃ­a cientÃ­fica y astronÃ³mica de la antigua civilizaciÃ³n maya.'
     ],
     expandables: [
-      { label: 'Un Tesoro Rescatado', icon: 'clock', text: 'El daño por agua de 1945 fue un momento crítico. El agua hizo que los pigmentos antiguos comenzaran a correrse y manchar las páginas. Los restauradores tuvieron que trabajar con extremo cuidado durante años para secar el documento sin romperlo. Gracias a fotografías tomadas antes de la guerra, sabemos cómo lucían las partes que se borraron.' },
-      { label: 'El Primer Vistazo', icon: 'clock', text: 'Cuando Alexander von Humboldt, el famoso explorador y científico alemán, vio el códice en el siglo XIX, incluyó algunas páginas en sus publicaciones. Esto ayudó a que científicos de todo el mundo conocieran el documento, iniciando la carrera internacional para descifrar la misteriosa escritura maya y sus complejos números matemáticos.' }
+      { label: 'Un Tesoro Rescatado', icon: 'clock', text: 'El daÃ±o por agua de 1945 fue un momento crÃ­tico. El agua hizo que los pigmentos antiguos comenzaran a correrse y manchar las pÃ¡ginas. Los restauradores tuvieron que trabajar con extremo cuidado durante aÃ±os para secar el documento sin romperlo. Gracias a fotografÃ­as tomadas antes de la guerra, sabemos cÃ³mo lucÃ­an las partes que se borraron.' },
+      { label: 'El Primer Vistazo', icon: 'clock', text: 'Cuando Alexander von Humboldt, el famoso explorador y cientÃ­fico alemÃ¡n, vio el cÃ³dice en el siglo XIX, incluyÃ³ algunas pÃ¡ginas en sus publicaciones. Esto ayudÃ³ a que cientÃ­ficos de todo el mundo conocieran el documento, iniciando la carrera internacional para descifrar la misteriosa escritura maya y sus complejos nÃºmeros matemÃ¡ticos.' }
     ],
-    fact: 'El Códice de Dresde no es un libro que se lee de izquierda a derecha como los nuestros. Los investigadores descubrieron que sus páginas contienen secciones independientes llamadas "almanaques", y cada almanaque tiene un orden de lectura específico, a menudo en zigzag. ¡Es como leer un mapa del cielo donde cada dirección tiene un significado matemático diferente!'
+    fact: 'El CÃ³dice de Dresde no es un libro que se lee de izquierda a derecha como los nuestros. Los investigadores descubrieron que sus pÃ¡ginas contienen secciones independientes llamadas "almanaques", y cada almanaque tiene un orden de lectura especÃ­fico, a menudo en zigzag. Â¡Es como leer un mapa del cielo donde cada direcciÃ³n tiene un significado matemÃ¡tico diferente!'
   },
   {
     id: 'estructura-fisica',
-    title: 'Estructura Física',
+    title: 'Estructura FÃ­sica',
     color: '#5D4037',
     btnImage: '/assets/maya/infographic_m15/btn_estructura-fisica.jpg',
     image: '/assets/maya/infographic_m15/hero_estructura-fisica.jpg',
     content: [
-      'Si piensas en un libro actual, imaginas hojas de papel cosidas en el lomo. El Códice de Dresde es completamente diferente. Es una tira larguísima que mide unos impresionantes 3.56 metros de largo. Para poder guardarlo y leerlo, los mayas lo doblaron como un acordeón, creando 39 hojas que se pueden leer por ambos lados. Este formato se llama "libro biombo" o formato en acordeón, ideal para desplegar en mesas ceremoniales.',
-      'El material sobre el que está escrito es otra maravilla. No es papel hecho de pulpa de madera común. Los artesanos mayas utilizaban la corteza interna de un árbol de higuera silvestre. A este material especial lo llamaban "amate". Para prepararlo, remojaban la corteza, la golpeaban con piedras especiales hasta dejarla fina, y finalmente la cubrían con una capa de cal blanca para crear una superficie lisa donde pintar.',
-      'Los artistas mayas, conocidos como "escribas", eran personas de muy alto rango en la sociedad. Utilizaban pinceles finísimos hechos con pelo de animales para dibujar los glifos. Estos escribas trabajaban con una precisión increíble, dibujando pequeños símbolos matemáticos y rostros de dioses en espacios de apenas un centímetro cuadrado. Su pulso firme era el de un experto artista y matemático al mismo tiempo.',
-      'Para pintar el códice, usaron pigmentos naturales. El negro brillante se hacía con carbón fino; el rojo intenso venía de minerales como la hematita o de insectos como la cochinilla; y el famoso "Azul Maya", un color turquesa brillante, se lograba mezclando arcilla con la planta del añil. Este azul es tan resistente que ha mantenido su brillo durante siglos a pesar de la humedad y el tiempo transcurrido.',
-      'Los expertos creen que el libro que tenemos en Dresde no es el texto original, sino una copia hecha alrededor del siglo XI o XII (entre los años 1000 y 1200 d.C.) en la región de Chichén Itzá, Yucatán. Es como cuando sacas una fotocopia de los apuntes de tu profesor, pero los mayas copiaban a mano antiguos tratados astronómicos que tenían cientos de años de antigüedad, asegurando que el conocimiento no se perdiera.'
+      'Si piensas en un libro actual, imaginas hojas de papel cosidas en el lomo. El CÃ³dice de Dresde es completamente diferente. Es una tira larguÃ­sima que mide unos impresionantes 3.56 metros de largo. Para poder guardarlo y leerlo, los mayas lo doblaron como un acordeÃ³n, creando 39 hojas que se pueden leer por ambos lados. Este formato se llama "libro biombo" o formato en acordeÃ³n, ideal para desplegar en mesas ceremoniales.',
+      'El material sobre el que estÃ¡ escrito es otra maravilla. No es papel hecho de pulpa de madera comÃºn. Los artesanos mayas utilizaban la corteza interna de un Ã¡rbol de higuera silvestre. A este material especial lo llamaban "amate". Para prepararlo, remojaban la corteza, la golpeaban con piedras especiales hasta dejarla fina, y finalmente la cubrÃ­an con una capa de cal blanca para crear una superficie lisa donde pintar.',
+      'Los artistas mayas, conocidos como "escribas", eran personas de muy alto rango en la sociedad. Utilizaban pinceles finÃ­simos hechos con pelo de animales para dibujar los glifos. Estos escribas trabajaban con una precisiÃ³n increÃ­ble, dibujando pequeÃ±os sÃ­mbolos matemÃ¡ticos y rostros de dioses en espacios de apenas un centÃ­metro cuadrado. Su pulso firme era el de un experto artista y matemÃ¡tico al mismo tiempo.',
+      'Para pintar el cÃ³dice, usaron pigmentos naturales. El negro brillante se hacÃ­a con carbÃ³n fino; el rojo intenso venÃ­a de minerales como la hematita o de insectos como la cochinilla; y el famoso "Azul Maya", un color turquesa brillante, se lograba mezclando arcilla con la planta del aÃ±il. Este azul es tan resistente que ha mantenido su brillo durante siglos a pesar de la humedad y el tiempo transcurrido.',
+      'Los expertos creen que el libro que tenemos en Dresde no es el texto original, sino una copia hecha alrededor del siglo XI o XII (entre los aÃ±os 1000 y 1200 d.C.) en la regiÃ³n de ChichÃ©n ItzÃ¡, YucatÃ¡n. Es como cuando sacas una fotocopia de los apuntes de tu profesor, pero los mayas copiaban a mano antiguos tratados astronÃ³micos que tenÃ­an cientos de aÃ±os de antigÃ¼edad, asegurando que el conocimiento no se perdiera.'
     ],
     expandables: [
-      { label: 'El Papel Amate', icon: 'atom', text: 'El proceso de crear papel amate (corteza batida) requería gran habilidad. Los arqueólogos han encontrado los "golpeadores de corteza" de piedra que usaban los artesanos. La capa de cal blanca aplicada encima actuaba como un sellador; sin ella, la tinta se habría esparcido por las fibras de la madera como agua en una servilleta de papel.' },
-      { label: 'Manos Diferentes', icon: 'atom', text: 'Al analizar cuidadosamente el estilo de los dibujos, los investigadores han descubierto que al menos ocho artistas diferentes trabajaron en la creación del Códice de Dresde. Cada escriba tenía su propia manera particular de dibujar ciertos glifos o rostros de dioses, revelando que el libro fue un enorme trabajo en equipo.' }
+      { label: 'El Papel Amate', icon: 'atom', text: 'El proceso de crear papel amate (corteza batida) requerÃ­a gran habilidad. Los arqueÃ³logos han encontrado los "golpeadores de corteza" de piedra que usaban los artesanos. La capa de cal blanca aplicada encima actuaba como un sellador; sin ella, la tinta se habrÃ­a esparcido por las fibras de la madera como agua en una servilleta de papel.' },
+      { label: 'Manos Diferentes', icon: 'atom', text: 'Al analizar cuidadosamente el estilo de los dibujos, los investigadores han descubierto que al menos ocho artistas diferentes trabajaron en la creaciÃ³n del CÃ³dice de Dresde. Cada escriba tenÃ­a su propia manera particular de dibujar ciertos glifos o rostros de dioses, revelando que el libro fue un enorme trabajo en equipo.' }
     ],
-    fact: 'El formato de acordeón de 39 páginas permite que el libro tenga en total 78 "páginas" legibles (cuatro páginas se dejaron en blanco). Este diseño plegable era increíblemente práctico: un sacerdote podía abrir el libro exactamente en la sección que necesitaba consultar para una ceremonia específica, sin tener que pasar páginas una por una como hacemos hoy.'
+    fact: 'El formato de acordeÃ³n de 39 pÃ¡ginas permite que el libro tenga en total 78 "pÃ¡ginas" legibles (cuatro pÃ¡ginas se dejaron en blanco). Este diseÃ±o plegable era increÃ­blemente prÃ¡ctico: un sacerdote podÃ­a abrir el libro exactamente en la secciÃ³n que necesitaba consultar para una ceremonia especÃ­fica, sin tener que pasar pÃ¡ginas una por una como hacemos hoy.'
   },
   {
     id: 'tablas-venus',
@@ -133,17 +133,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m15/btn_tablas-venus.jpg',
     image: '/assets/maya/infographic_m15/hero_tablas-venus.jpg',
     content: [
-      'Imagina intentar predecir el movimiento de un planeta sin usar telescopios, computadoras ni calculadoras. Eso es exactamente lo que lograron los astrónomos mayas con el planeta Venus. En las páginas 24 y de la 46 a la 50 del códice, se encuentran las famosas "Tablas de Venus". Estas tablas registran el ciclo completo del planeta visto desde la Tierra, dividiéndolo en cuatro fases distintas durante un largo período.',
-      'Venus es el objeto más brillante en el cielo nocturno después de la Luna. Para los mayas, no era solo un planeta hermoso; representaba una fuerza poderosa y peligrosa asociada con deidades guerreras. El ciclo de Venus, desde que aparece como estrella de la mañana hasta que se convierte en estrella de la tarde, dura en promedio 584 días. Las tablas del códice registran estos ciclos con una precisión que sorprende a los astrónomos modernos.',
-      'Las tablas no solo cuentan un ciclo corto. Son capaces de rastrear a Venus durante más de 33,000 días consecutivos. ¡Eso es como llevar un calendario de eventos durante 90 años sin equivocarse! Los sacerdotes utilizaban esta información para predecir cuándo el planeta aparecería por primera vez en el horizonte antes del amanecer, un evento llamado "salida helíaca", que consideraban un momento crítico lleno de gran poder.',
-      'El mayor triunfo de los matemáticos mayas en estas tablas fue manejar el error acumulado. El ciclo de Venus no dura exactamente 584 días; en realidad, es de 583.92 días. Esa pequeñísima diferencia parece insignificante, pero a lo largo de décadas, los días se desajustarían. Los mayas inventaron un sistema de corrección, como nuestros años bisiestos, para restar días de su calendario y mantener las predicciones perfectas.',
-      'Gracias a estas correcciones matemáticas avanzadas, las Tablas de Venus del Códice de Dresde son consideradas los datos astronómicos más exactos del planeta Venus creados antes de la invención del telescopio en Europa. Es una prueba contundente de que la observación constante y la matemática inteligente pueden igualar o superar la tecnología moderna. Los mayas eran verdaderos maestros del cielo. Imagina que son detectives estelares anotando pistas cada noche sin fallar. Así armaron un reloj cósmico perfecto usando solamente sus ojos naturales y muchísima paciencia.'
+      'Imagina intentar predecir el movimiento de un planeta sin usar telescopios, computadoras ni calculadoras. Eso es exactamente lo que lograron los astrÃ³nomos mayas con el planeta Venus. En las pÃ¡ginas 24 y de la 46 a la 50 del cÃ³dice, se encuentran las famosas "Tablas de Venus". Estas tablas registran el ciclo completo del planeta visto desde la Tierra, dividiÃ©ndolo en cuatro fases distintas durante un largo perÃ­odo.',
+      'Venus es el objeto mÃ¡s brillante en el cielo nocturno despuÃ©s de la Luna. Para los mayas, no era solo un planeta hermoso; representaba una fuerza poderosa y peligrosa asociada con deidades guerreras. El ciclo de Venus, desde que aparece como estrella de la maÃ±ana hasta que se convierte en estrella de la tarde, dura en promedio 584 dÃ­as. Las tablas del cÃ³dice registran estos ciclos con una precisiÃ³n que sorprende a los astrÃ³nomos modernos.',
+      'Las tablas no solo cuentan un ciclo corto. Son capaces de rastrear a Venus durante mÃ¡s de 33,000 dÃ­as consecutivos. Â¡Eso es como llevar un calendario de eventos durante 90 aÃ±os sin equivocarse! Los sacerdotes utilizaban esta informaciÃ³n para predecir cuÃ¡ndo el planeta aparecerÃ­a por primera vez en el horizonte antes del amanecer, un evento llamado "salida helÃ­aca", que consideraban un momento crÃ­tico lleno de gran poder.',
+      'El mayor triunfo de los matemÃ¡ticos mayas en estas tablas fue manejar el error acumulado. El ciclo de Venus no dura exactamente 584 dÃ­as; en realidad, es de 583.92 dÃ­as. Esa pequeÃ±Ã­sima diferencia parece insignificante, pero a lo largo de dÃ©cadas, los dÃ­as se desajustarÃ­an. Los mayas inventaron un sistema de correcciÃ³n, como nuestros aÃ±os bisiestos, para restar dÃ­as de su calendario y mantener las predicciones perfectas.',
+      'Gracias a estas correcciones matemÃ¡ticas avanzadas, las Tablas de Venus del CÃ³dice de Dresde son consideradas los datos astronÃ³micos mÃ¡s exactos del planeta Venus creados antes de la invenciÃ³n del telescopio en Europa. Es una prueba contundente de que la observaciÃ³n constante y la matemÃ¡tica inteligente pueden igualar o superar la tecnologÃ­a moderna. Los mayas eran verdaderos maestros del cielo. Imagina que son detectives estelares anotando pistas cada noche sin fallar. AsÃ­ armaron un reloj cÃ³smico perfecto usando solamente sus ojos naturales y muchÃ­sima paciencia.'
     ],
     expandables: [
-      { label: 'Las Cuatro Fases', icon: 'atom', text: 'Los mayas dividieron el viaje de Venus en cuatro estaciones visuales: 236 días como estrella de la mañana, 90 días desaparecido detrás del Sol, 250 días como estrella de la tarde, y 8 días desaparecido frente al Sol. Esta observación detallada muestra una comprensión profunda de cómo los planetas orbitan alrededor de nuestra estrella central.' },
-      { label: 'Corrección del Calendario', icon: 'clock', text: 'En la página 24, el códice muestra múltiplos del ciclo de Venus y fechas específicas donde los sacerdotes debían saltarse días para corregir el calendario. Es un algoritmo de corrección astronómica increíblemente elegante. Cuando los europeos descubrieron esto, quedaron estupefactos ante la brillantez matemática maya.' }
+      { label: 'Las Cuatro Fases', icon: 'atom', text: 'Los mayas dividieron el viaje de Venus en cuatro estaciones visuales: 236 dÃ­as como estrella de la maÃ±ana, 90 dÃ­as desaparecido detrÃ¡s del Sol, 250 dÃ­as como estrella de la tarde, y 8 dÃ­as desaparecido frente al Sol. Esta observaciÃ³n detallada muestra una comprensiÃ³n profunda de cÃ³mo los planetas orbitan alrededor de nuestra estrella central.' },
+      { label: 'CorrecciÃ³n del Calendario', icon: 'clock', text: 'En la pÃ¡gina 24, el cÃ³dice muestra mÃºltiplos del ciclo de Venus y fechas especÃ­ficas donde los sacerdotes debÃ­an saltarse dÃ­as para corregir el calendario. Es un algoritmo de correcciÃ³n astronÃ³mica increÃ­blemente elegante. Cuando los europeos descubrieron esto, quedaron estupefactos ante la brillantez matemÃ¡tica maya.' }
     ],
-    fact: 'La salida helíaca de Venus (cuando aparece en el cielo justo antes del amanecer después de días de estar oculto) era considerada un momento muy peligroso. Los mayas creían que la luz del planeta brillaba como rayos o lanzas que afectaban a los reyes y las cosechas, por lo que usaban el Códice de Dresde para saber exactamente cuándo debían prepararse para estos días críticos.'
+    fact: 'La salida helÃ­aca de Venus (cuando aparece en el cielo justo antes del amanecer despuÃ©s de dÃ­as de estar oculto) era considerada un momento muy peligroso. Los mayas creÃ­an que la luz del planeta brillaba como rayos o lanzas que afectaban a los reyes y las cosechas, por lo que usaban el CÃ³dice de Dresde para saber exactamente cuÃ¡ndo debÃ­an prepararse para estos dÃ­as crÃ­ticos.'
   },
   {
     id: 'tablas-eclipses',
@@ -152,17 +152,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m15/btn_tablas-eclipses.jpg',
     image: '/assets/maya/infographic_m15/hero_tablas-eclipses.jpg',
     content: [
-      'Un eclipse solar —cuando el día se oscurece repentinamente— aterrorizaba a muchas culturas antiguas. Pero los mayas, en lugar de solo asustarse, decidieron estudiar el fenómeno. En las páginas 51 a 58 del Códice de Dresde, los astrónomos crearon un manual completo para advertir sobre la posible ocurrencia de eclipses solares y lunares. Era su propio sistema de alerta temprana contra la oscuridad. Piensa en este manual como una alarma climática para el espacio exterior. Si sabían cuándo vendría la gran sombra, podían prepararse tranquilos sin tener miedo.',
-      'Para construir esta tabla, los mayas registraron pacientemente las fases de la luna durante generaciones. Descubrieron un patrón matemático asombroso: agruparon 405 meses lunares (lunaciones) que equivalen a 11,960 días. Este número mágico es un ciclo gigante que conecta los movimientos del Sol, la Luna y la Tierra, permitiendo predecir cuándo se alinearán para formar un eclipse. Es como descubrir el ritmo secreto de una danza cósmica entre tres amigos gigantes. Al conocer los pasos exactos, sabían cuándo los grandes bailarines iban a encontrarse.',
-      'Las tablas están divididas en 69 grupos de lunas. Para los matemáticos, lo fascinante es que los mayas agruparon los meses en paquetes de 5 y 6 lunaciones. ¿Por qué? Porque descubrieron que los eclipses solo pueden ocurrir en esos intervalos específicos (aproximadamente cada 148 o 177 días). Es como saber que el autobús escolar solo pasa a ciertas horas; si sabes el horario, sabes cuándo estar alerta. Tener estos paquetes predecibles funcionaba como un calendario escolar gigante. Así nunca llegaban tarde para observar el asombroso espectáculo del cielo.',
-      'El manuscrito contiene dibujos muy descriptivos para marcar estos eventos peligrosos. Muestran símbolos del Sol o de la Luna colgando de bandas celestiales, a veces acompañados de monstruos oscuros que parecen devorar la luz. Estos dibujos no eran simple arte; eran advertencias de "temporada de peligro" para que los sacerdotes realizaran ceremonias que ayudaran al Sol a sobrevivir al ataque celestial.',
-      'Aunque la tabla es brillante, no garantizaba que el eclipse sería visible desde la ciudad maya. Predecía cuándo las condiciones matemáticas eran correctas para un eclipse en alguna parte del planeta Tierra. Funcionaba perfectamente como una herramienta de predicción funcional, lo que demuestra que los mayas entendían la periodicidad de las órbitas espaciales con un nivel de sofisticación extraordinario.'
+      'Un eclipse solar â€”cuando el dÃ­a se oscurece repentinamenteâ€” aterrorizaba a muchas culturas antiguas. Pero los mayas, en lugar de solo asustarse, decidieron estudiar el fenÃ³meno. En las pÃ¡ginas 51 a 58 del CÃ³dice de Dresde, los astrÃ³nomos crearon un manual completo para advertir sobre la posible ocurrencia de eclipses solares y lunares. Era su propio sistema de alerta temprana contra la oscuridad. Piensa en este manual como una alarma climÃ¡tica para el espacio exterior. Si sabÃ­an cuÃ¡ndo vendrÃ­a la gran sombra, podÃ­an prepararse tranquilos sin tener miedo.',
+      'Para construir esta tabla, los mayas registraron pacientemente las fases de la luna durante generaciones. Descubrieron un patrÃ³n matemÃ¡tico asombroso: agruparon 405 meses lunares (lunaciones) que equivalen a 11,960 dÃ­as. Este nÃºmero mÃ¡gico es un ciclo gigante que conecta los movimientos del Sol, la Luna y la Tierra, permitiendo predecir cuÃ¡ndo se alinearÃ¡n para formar un eclipse. Es como descubrir el ritmo secreto de una danza cÃ³smica entre tres amigos gigantes. Al conocer los pasos exactos, sabÃ­an cuÃ¡ndo los grandes bailarines iban a encontrarse.',
+      'Las tablas estÃ¡n divididas en 69 grupos de lunas. Para los matemÃ¡ticos, lo fascinante es que los mayas agruparon los meses en paquetes de 5 y 6 lunaciones. Â¿Por quÃ©? Porque descubrieron que los eclipses solo pueden ocurrir en esos intervalos especÃ­ficos (aproximadamente cada 148 o 177 dÃ­as). Es como saber que el autobÃºs escolar solo pasa a ciertas horas; si sabes el horario, sabes cuÃ¡ndo estar alerta. Tener estos paquetes predecibles funcionaba como un calendario escolar gigante. AsÃ­ nunca llegaban tarde para observar el asombroso espectÃ¡culo del cielo.',
+      'El manuscrito contiene dibujos muy descriptivos para marcar estos eventos peligrosos. Muestran sÃ­mbolos del Sol o de la Luna colgando de bandas celestiales, a veces acompaÃ±ados de monstruos oscuros que parecen devorar la luz. Estos dibujos no eran simple arte; eran advertencias de "temporada de peligro" para que los sacerdotes realizaran ceremonias que ayudaran al Sol a sobrevivir al ataque celestial.',
+      'Aunque la tabla es brillante, no garantizaba que el eclipse serÃ­a visible desde la ciudad maya. PredecÃ­a cuÃ¡ndo las condiciones matemÃ¡ticas eran correctas para un eclipse en alguna parte del planeta Tierra. Funcionaba perfectamente como una herramienta de predicciÃ³n funcional, lo que demuestra que los mayas entendÃ­an la periodicidad de las Ã³rbitas espaciales con un nivel de sofisticaciÃ³n extraordinario.'
     ],
     expandables: [
-      { label: 'El Número Mágico 11,960', icon: 'atom', text: 'El ciclo de 11,960 días es excepcional porque conecta los ciclos lunares, el año solar e incluso el calendario sagrado maya de 260 días (el Tzolkin). 11,960 es exactamente divisible por 260 (46 años sagrados). Para los mayas, encontrar números que sincronizaran múltiples calendarios naturales era la mayor prueba del orden divino del universo.' },
-      { label: 'Imágenes del Peligro', icon: 'clock', text: 'En la tabla, entre las columnas de números matemáticos, hay imágenes de serpientes celestes o criaturas mordiendo el glifo kin (el Sol). Para los mayas, un eclipse era una batalla cósmica. La tabla funcionaba como un horario para saber cuándo el dios del sol necesitaría ayuda de los humanos a través de ofrendas.' }
+      { label: 'El NÃºmero MÃ¡gico 11,960', icon: 'atom', text: 'El ciclo de 11,960 dÃ­as es excepcional porque conecta los ciclos lunares, el aÃ±o solar e incluso el calendario sagrado maya de 260 dÃ­as (el Tzolkin). 11,960 es exactamente divisible por 260 (46 aÃ±os sagrados). Para los mayas, encontrar nÃºmeros que sincronizaran mÃºltiples calendarios naturales era la mayor prueba del orden divino del universo.' },
+      { label: 'ImÃ¡genes del Peligro', icon: 'clock', text: 'En la tabla, entre las columnas de nÃºmeros matemÃ¡ticos, hay imÃ¡genes de serpientes celestes o criaturas mordiendo el glifo kin (el Sol). Para los mayas, un eclipse era una batalla cÃ³smica. La tabla funcionaba como un horario para saber cuÃ¡ndo el dios del sol necesitarÃ­a ayuda de los humanos a travÃ©s de ofrendas.' }
     ],
-    fact: 'Los astrónomos modernos han introducido los datos de la tabla de eclipses del Códice de Dresde en computadoras y confirmaron que la tabla cubre un período real de 33 años (el siglo VIII d.C.), logrando predecir las "ventanas" de tiempo para los eclipses solares con una precisión impecable. ¡Es un observatorio astronómico en papel!'
+    fact: 'Los astrÃ³nomos modernos han introducido los datos de la tabla de eclipses del CÃ³dice de Dresde en computadoras y confirmaron que la tabla cubre un perÃ­odo real de 33 aÃ±os (el siglo VIII d.C.), logrando predecir las "ventanas" de tiempo para los eclipses solares con una precisiÃ³n impecable. Â¡Es un observatorio astronÃ³mico en papel!'
   },
   {
     id: 'tablas-lluvia',
@@ -171,36 +171,36 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m15/btn_tablas-lluvia.jpg',
     image: '/assets/maya/infographic_m15/hero_tablas-lluvia.jpg',
     content: [
-      'Mientras Venus y los eclipses eran eventos dramáticos, la supervivencia diaria de los mayas dependía de algo mucho más terrenal: la agricultura. Una gran parte del Códice de Dresde está dedicada a almanaques que conectan los ciclos del cielo con las lluvias y las estaciones de siembra. Es esencialmente el calendario del agricultor más avanzado del mundo antiguo, uniendo el cielo y la tierra. Era su propia aplicación climática, pero escrita en frágil papel. Sin esta valiosa guía, las fuertes plantas simplemente no podrían crecer altas.',
-      'En estas secciones, el dios principal que aparece una y otra vez es Chaac, el poderoso dios maya de la lluvia. Los artistas lo dibujaron portando hachas que simbolizan los truenos y vasijas de donde derrama el agua vital sobre los campos de maíz. Estas ilustraciones están estrechamente ligadas a los cuatro puntos cardinales, indicando de qué dirección vendrían los vientos y las tormentas estacionales.',
-      'Pero no todo era lluvia; los mayas también vigilaban al planeta Marte. En unas páginas fascinantes del códice, los expertos han identificado tablas dedicadas a este planeta rojo. Marte tiene un movimiento extraño en el cielo nocturno llamado "movimiento retrógrado" — a veces parece detenerse y moverse hacia atrás. Los mayas mapearon estos curiosos retrocesos celestiales con gran paciencia. Imagina un veloz coche que frena y viaja en reversa repentinamente. Así veían ellos al planeta marciano, como un corredor espacial haciendo trucos increíbles.',
-      'El almanaque de Marte asocia al planeta con una extraña deidad de largo hocico que desciende del cielo cósmico. El ciclo registrado en estas tablas es de 780 días, que es asombrosamente preciso: el período real en el que Marte y la Tierra vuelven a alinearse con el Sol (período sinódico) es de 779.94 días. Su registro es prácticamente perfecto sin usar herramientas modernas de medición óptica. Lograr esta precisión matemática es como adivinar el número exacto de pequeños dulces sin tocarlos. Usaron su ingenio humano para ganar este juego celestial.',
-      'Estos almanaques eran manuales prácticos de supervivencia. Los sacerdotes usaban el libro para decirle a la gente cuándo quemar la selva, cuándo sembrar la semilla del maíz y cuándo prepararse para fuertes tormentas. Al combinar los ciclos de Marte, las fases de la luna y las estaciones de lluvia, el códice era una computadora de papel que garantizaba que la civilización tuviera comida cada año. Como un útil recetario, indicaba los ingredientes precisos del tiempo atmosférico. Así lograban obtener las mejores cosechas para alimentar a miles de hambrientos aldeanos.'
+      'Mientras Venus y los eclipses eran eventos dramÃ¡ticos, la supervivencia diaria de los mayas dependÃ­a de algo mucho mÃ¡s terrenal: la agricultura. Una gran parte del CÃ³dice de Dresde estÃ¡ dedicada a almanaques que conectan los ciclos del cielo con las lluvias y las estaciones de siembra. Es esencialmente el calendario del agricultor mÃ¡s avanzado del mundo antiguo, uniendo el cielo y la tierra. Era su propia aplicaciÃ³n climÃ¡tica, pero escrita en frÃ¡gil papel. Sin esta valiosa guÃ­a, las fuertes plantas simplemente no podrÃ­an crecer altas.',
+      'En estas secciones, el dios principal que aparece una y otra vez es Chaac, el poderoso dios maya de la lluvia. Los artistas lo dibujaron portando hachas que simbolizan los truenos y vasijas de donde derrama el agua vital sobre los campos de maÃ­z. Estas ilustraciones estÃ¡n estrechamente ligadas a los cuatro puntos cardinales, indicando de quÃ© direcciÃ³n vendrÃ­an los vientos y las tormentas estacionales.',
+      'Pero no todo era lluvia; los mayas tambiÃ©n vigilaban al planeta Marte. En unas pÃ¡ginas fascinantes del cÃ³dice, los expertos han identificado tablas dedicadas a este planeta rojo. Marte tiene un movimiento extraÃ±o en el cielo nocturno llamado "movimiento retrÃ³grado" â€” a veces parece detenerse y moverse hacia atrÃ¡s. Los mayas mapearon estos curiosos retrocesos celestiales con gran paciencia. Imagina un veloz coche que frena y viaja en reversa repentinamente. AsÃ­ veÃ­an ellos al planeta marciano, como un corredor espacial haciendo trucos increÃ­bles.',
+      'El almanaque de Marte asocia al planeta con una extraÃ±a deidad de largo hocico que desciende del cielo cÃ³smico. El ciclo registrado en estas tablas es de 780 dÃ­as, que es asombrosamente preciso: el perÃ­odo real en el que Marte y la Tierra vuelven a alinearse con el Sol (perÃ­odo sinÃ³dico) es de 779.94 dÃ­as. Su registro es prÃ¡cticamente perfecto sin usar herramientas modernas de mediciÃ³n Ã³ptica. Lograr esta precisiÃ³n matemÃ¡tica es como adivinar el nÃºmero exacto de pequeÃ±os dulces sin tocarlos. Usaron su ingenio humano para ganar este juego celestial.',
+      'Estos almanaques eran manuales prÃ¡cticos de supervivencia. Los sacerdotes usaban el libro para decirle a la gente cuÃ¡ndo quemar la selva, cuÃ¡ndo sembrar la semilla del maÃ­z y cuÃ¡ndo prepararse para fuertes tormentas. Al combinar los ciclos de Marte, las fases de la luna y las estaciones de lluvia, el cÃ³dice era una computadora de papel que garantizaba que la civilizaciÃ³n tuviera comida cada aÃ±o. Como un Ãºtil recetario, indicaba los ingredientes precisos del tiempo atmosfÃ©rico. AsÃ­ lograban obtener las mejores cosechas para alimentar a miles de hambrientos aldeanos.'
     ],
     expandables: [
-      { label: 'El Dios Chaac', icon: 'atom', text: 'Chaac es fácilmente reconocible en el códice por su larga nariz rizada y colmillos. A menudo se le representa en grupos de cuatro, cada uno asociado a un color cardinal: rojo (Este), blanco (Norte), negro (Oeste) y amarillo (Sur). Estas direcciones eran fundamentales para predecir el clima agrícola en la península de Yucatán.' },
-      { label: 'El Planeta Rojo', icon: 'atom', text: 'El ciclo de 780 días de Marte es muy interesante. Los mayas lo dividieron en intervalos de 78 días. Para entender esto con el sistema Feynman: imagina una pista de carreras ovalada. La Tierra corre rápido por el carril interior, y Marte corre lento por el exterior. Cada 780 días, la Tierra da una vuelta de ventaja y vuelve a rebasar a Marte.' }
+      { label: 'El Dios Chaac', icon: 'atom', text: 'Chaac es fÃ¡cilmente reconocible en el cÃ³dice por su larga nariz rizada y colmillos. A menudo se le representa en grupos de cuatro, cada uno asociado a un color cardinal: rojo (Este), blanco (Norte), negro (Oeste) y amarillo (Sur). Estas direcciones eran fundamentales para predecir el clima agrÃ­cola en la penÃ­nsula de YucatÃ¡n.' },
+      { label: 'El Planeta Rojo', icon: 'atom', text: 'El ciclo de 780 dÃ­as de Marte es muy interesante. Los mayas lo dividieron en intervalos de 78 dÃ­as. Para entender esto con el sistema Feynman: imagina una pista de carreras ovalada. La Tierra corre rÃ¡pido por el carril interior, y Marte corre lento por el exterior. Cada 780 dÃ­as, la Tierra da una vuelta de ventaja y vuelve a rebasar a Marte.' }
     ],
-    fact: 'Una sección del códice (página 74) muestra una imagen aterradora que los arqueólogos llaman "El Diluvio". Se ve un gigantesco cocodrilo celestial vomitando una tormenta masiva, mientras una diosa anciana vierte cántaros de agua destructiva. Los expertos debaten si representa la estación de huracanes o una profecía del fin del mundo maya por ahogamiento.'
+    fact: 'Una secciÃ³n del cÃ³dice (pÃ¡gina 74) muestra una imagen aterradora que los arqueÃ³logos llaman "El Diluvio". Se ve un gigantesco cocodrilo celestial vomitando una tormenta masiva, mientras una diosa anciana vierte cÃ¡ntaros de agua destructiva. Los expertos debaten si representa la estaciÃ³n de huracanes o una profecÃ­a del fin del mundo maya por ahogamiento.'
   },
   {
     id: 'matematica-codice',
-    title: 'La Matemática',
+    title: 'La MatemÃ¡tica',
     color: '#F9A825',
     btnImage: '/assets/maya/infographic_m15/btn_matematica-codice.jpg',
     image: '/assets/maya/infographic_m15/hero_matematica-codice.jpg',
     content: [
-      'Para entender el universo, primero debes dominar los números. El Códice de Dresde es un monumento brillante a la matemática maya. Ellos utilizaban un sistema vigesimal, lo que significa que en lugar de contar de 10 en 10 como hacemos nosotros, contaban de 20 en 20. Imagina contar usando no solo los diez dedos de tus manos, sino sumando también los diez dedos de tus pies. ¡Así pensaban los matemáticos mayas!',
-      'Su forma de escribir los números era increíblemente simple y poderosa: un punto representaba el uno, y una barra horizontal representaba el cinco. Para escribir el número 13, simplemente dibujabas dos barras (que suman 10) y tres puntos encima. Con solo estos dos símbolos básicos, podían construir números gigantescos apilándolos en columnas verticales ascendentes. Imagina usar bloques de construcción donde los puntos son bloques pequeños y las barras son bloques largos. Apilando estas simples piezas podían construir grandes torres que alcanzaban el vasto cielo.',
-      'El mayor genio de su sistema fue la invención del cero matemático, que dibujaban con un símbolo en forma de concha de caracol. Muchas civilizaciones antiguas, como los romanos, no tenían el número cero, lo que hacía que sus cálculos grandes fueran una pesadilla. El cero maya permitía mantener la posición de grandes cantidades, revolucionando su capacidad para calcular eventos que sucederían miles de años en el futuro.',
-      'El códice está lleno de largas columnas de números que, cuando se traducen, revelan "Fechas de Cuenta Larga". Este era un calendario continuo que marcaba los días transcurridos desde el día cero de la creación del mundo maya (que equivale a nuestro año 3114 a.C.). Las páginas muestran multiplicaciones masivas, con números que suman millones de días transcurridos con precisión absoluta. Funciona como el medidor de un auto nuevo que nunca se detiene. Seguía contando cada día como un viaje infinito por la gran autopista del tiempo.',
-      'Lo más impresionante es cómo usaban la matemática para corregir sus propios errores. El códice incluye "algoritmos" antiguos — series de instrucciones matemáticas paso a paso. Si un ciclo cósmico no encajaba perfectamente, el documento enseñaba al sacerdote cómo sumar o restar ciertas cantidades matemáticas para recalibrar los relojes. Es verdadera programación de computadoras, hecha completamente a mano sobre corteza de árbol.'
+      'Para entender el universo, primero debes dominar los nÃºmeros. El CÃ³dice de Dresde es un monumento brillante a la matemÃ¡tica maya. Ellos utilizaban un sistema vigesimal, lo que significa que en lugar de contar de 10 en 10 como hacemos nosotros, contaban de 20 en 20. Imagina contar usando no solo los diez dedos de tus manos, sino sumando tambiÃ©n los diez dedos de tus pies. Â¡AsÃ­ pensaban los matemÃ¡ticos mayas!',
+      'Su forma de escribir los nÃºmeros era increÃ­blemente simple y poderosa: un punto representaba el uno, y una barra horizontal representaba el cinco. Para escribir el nÃºmero 13, simplemente dibujabas dos barras (que suman 10) y tres puntos encima. Con solo estos dos sÃ­mbolos bÃ¡sicos, podÃ­an construir nÃºmeros gigantescos apilÃ¡ndolos en columnas verticales ascendentes. Imagina usar bloques de construcciÃ³n donde los puntos son bloques pequeÃ±os y las barras son bloques largos. Apilando estas simples piezas podÃ­an construir grandes torres que alcanzaban el vasto cielo.',
+      'El mayor genio de su sistema fue la invenciÃ³n del cero matemÃ¡tico, que dibujaban con un sÃ­mbolo en forma de concha de caracol. Muchas civilizaciones antiguas, como los romanos, no tenÃ­an el nÃºmero cero, lo que hacÃ­a que sus cÃ¡lculos grandes fueran una pesadilla. El cero maya permitÃ­a mantener la posiciÃ³n de grandes cantidades, revolucionando su capacidad para calcular eventos que sucederÃ­an miles de aÃ±os en el futuro.',
+      'El cÃ³dice estÃ¡ lleno de largas columnas de nÃºmeros que, cuando se traducen, revelan "Fechas de Cuenta Larga". Este era un calendario continuo que marcaba los dÃ­as transcurridos desde el dÃ­a cero de la creaciÃ³n del mundo maya (que equivale a nuestro aÃ±o 3114 a.C.). Las pÃ¡ginas muestran multiplicaciones masivas, con nÃºmeros que suman millones de dÃ­as transcurridos con precisiÃ³n absoluta. Funciona como el medidor de un auto nuevo que nunca se detiene. SeguÃ­a contando cada dÃ­a como un viaje infinito por la gran autopista del tiempo.',
+      'Lo mÃ¡s impresionante es cÃ³mo usaban la matemÃ¡tica para corregir sus propios errores. El cÃ³dice incluye "algoritmos" antiguos â€” series de instrucciones matemÃ¡ticas paso a paso. Si un ciclo cÃ³smico no encajaba perfectamente, el documento enseÃ±aba al sacerdote cÃ³mo sumar o restar ciertas cantidades matemÃ¡ticas para recalibrar los relojes. Es verdadera programaciÃ³n de computadoras, hecha completamente a mano sobre corteza de Ã¡rbol.'
     ],
     expandables: [
-      { label: 'El Cero de Concha', icon: 'clock', text: 'El concepto del cero como valor posicional es uno de los mayores logros intelectuales de la humanidad. Los mayas lo desarrollaron de manera independiente siglos antes que los europeos. Su símbolo de concha (probablemente representando un puño vacío) permitía distinguir entre el número 20 y el número 400 en su sistema apilado.' },
-      { label: 'Multiplicaciones Antiguas', icon: 'atom', text: 'Varias páginas del Códice de Dresde contienen lo que esencialmente son "tablas de multiplicar" gigantes. En lugar de tener que hacer cálculos largos cada vez, los sacerdotes podían buscar rápidamente en el libro múltiplos precalculados de ciclos importantes, como múltiplos de 91 días o de 78 días. Un ahorro de tiempo vital.' }
+      { label: 'El Cero de Concha', icon: 'clock', text: 'El concepto del cero como valor posicional es uno de los mayores logros intelectuales de la humanidad. Los mayas lo desarrollaron de manera independiente siglos antes que los europeos. Su sÃ­mbolo de concha (probablemente representando un puÃ±o vacÃ­o) permitÃ­a distinguir entre el nÃºmero 20 y el nÃºmero 400 en su sistema apilado.' },
+      { label: 'Multiplicaciones Antiguas', icon: 'atom', text: 'Varias pÃ¡ginas del CÃ³dice de Dresde contienen lo que esencialmente son "tablas de multiplicar" gigantes. En lugar de tener que hacer cÃ¡lculos largos cada vez, los sacerdotes podÃ­an buscar rÃ¡pidamente en el libro mÃºltiplos precalculados de ciclos importantes, como mÃºltiplos de 91 dÃ­as o de 78 dÃ­as. Un ahorro de tiempo vital.' }
     ],
-    fact: 'El sistema de Cuenta Larga en el códice puede calcular fechas en el pasado y futuro profundo. El llamado "Número Serpiente" en las páginas del códice contiene un cálculo matemático que viaja hacia atrás en el tiempo por más de 12 millones de días, apuntando a eventos míticos que ocurrieron antes de la creación humana. ¡El infinito matemático en sus manos!'
+    fact: 'El sistema de Cuenta Larga en el cÃ³dice puede calcular fechas en el pasado y futuro profundo. El llamado "NÃºmero Serpiente" en las pÃ¡ginas del cÃ³dice contiene un cÃ¡lculo matemÃ¡tico que viaja hacia atrÃ¡s en el tiempo por mÃ¡s de 12 millones de dÃ­as, apuntando a eventos mÃ­ticos que ocurrieron antes de la creaciÃ³n humana. Â¡El infinito matemÃ¡tico en sus manos!'
   },
   {
     id: 'supervivencia-codice',
@@ -209,21 +209,21 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m15/btn_supervivencia-codice.jpg',
     image: '/assets/maya/infographic_m15/hero_supervivencia-codice.jpg',
     content: [
-      'El Códice de Dresde es un superviviente extraordinario de una de las mayores tragedias culturales de la historia humana. En la actualidad, solo existen cuatro códices mayas auténticos en todo el mundo: el de Dresde, el de Madrid, el de París y el recién validado Códice Maya de México (antes Grolier). ¿Por qué existen tan pocos libros de una civilización que construyó inmensas ciudades y pirámides? Imagina que de una gran biblioteca solo logran rescatarse cuatro libritos. Es un gran misterio que revela la dolorosa fragilidad del conocimiento humano.',
-      'La respuesta se encuentra en un evento sombrío ocurrido en el siglo XVI. En julio del año 1562, en el pueblo de Maní en Yucatán, un obispo franciscano llamado Diego de Landa realizó un "auto de fe". En un intento por imponer la religión europea, ordenó quemar en una enorme hoguera pública miles de objetos sagrados y, trágicamente, un gran número de códices mayas antiguos. Fue como si un fuerte incendio borrara la memoria central de una computadora antigua. Muchas increíbles historias y descubrimientos científicos se esfumaron rápidamente entre el oscuro humo.',
-      'El propio obispo Landa escribió sobre este fuego destructivo, afirmando que los libros contenían "supersticiones y falsedades del demonio", y relató cómo los nativos mayas lloraron amargamente mientras el conocimiento de sus ancestros se reducía a cenizas. En esa sola tarde, se quemaron siglos incalculables de literatura, astronomía, medicina e historia antigua centroamericana. Es triste como formatear el disco duro de un gran científico. Miles de asombrosos inventos y relatos maravillosos desaparecieron por completo en unas breves horas.',
-      'Los cuatro libros que sobrevivieron escaparon de este fuego porque probablemente fueron enviados secretamente a Europa por soldados curiosos o sacerdotes antes de la quema masiva. El Códice de Dresde es considerado unánimemente como el más hermoso y científicamente complejo de los cuatro sobrevivientes, una obra maestra que nos muestra lo que perdimos aquel día en las hogueras de Maní. Estos cuatro héroes de papel cruzaron el mar escondidos como invaluables tesoros. Hoy nos recuerdan la tremenda inteligencia de una cultura brillante.',
-      'Cada vez que miramos las páginas del Códice de Dresde, no solo vemos tablas astronómicas y dibujos matemáticos hermosos; estamos mirando el legado resistente del pueblo maya. Es una enciclopedia frágil de papel de corteza que venció las distancias oceánicas, escapó de la inquisición colonial, sobrevivió los bombardeos de la guerra moderna y sigue asombrando a los científicos del mundo actual.'
+      'El CÃ³dice de Dresde es un superviviente extraordinario de una de las mayores tragedias culturales de la historia humana. En la actualidad, solo existen cuatro cÃ³dices mayas autÃ©nticos en todo el mundo: el de Dresde, el de Madrid, el de ParÃ­s y el reciÃ©n validado CÃ³dice Maya de MÃ©xico (antes Grolier). Â¿Por quÃ© existen tan pocos libros de una civilizaciÃ³n que construyÃ³ inmensas ciudades y pirÃ¡mides? Imagina que de una gran biblioteca solo logran rescatarse cuatro libritos. Es un gran misterio que revela la dolorosa fragilidad del conocimiento humano.',
+      'La respuesta se encuentra en un evento sombrÃ­o ocurrido en el siglo XVI. En julio del aÃ±o 1562, en el pueblo de ManÃ­ en YucatÃ¡n, un obispo franciscano llamado Diego de Landa realizÃ³ un "auto de fe". En un intento por imponer la religiÃ³n europea, ordenÃ³ quemar en una enorme hoguera pÃºblica miles de objetos sagrados y, trÃ¡gicamente, un gran nÃºmero de cÃ³dices mayas antiguos. Fue como si un fuerte incendio borrara la memoria central de una computadora antigua. Muchas increÃ­bles historias y descubrimientos cientÃ­ficos se esfumaron rÃ¡pidamente entre el oscuro humo.',
+      'El propio obispo Landa escribiÃ³ sobre este fuego destructivo, afirmando que los libros contenÃ­an "supersticiones y falsedades del demonio", y relatÃ³ cÃ³mo los nativos mayas lloraron amargamente mientras el conocimiento de sus ancestros se reducÃ­a a cenizas. En esa sola tarde, se quemaron siglos incalculables de literatura, astronomÃ­a, medicina e historia antigua centroamericana. Es triste como formatear el disco duro de un gran cientÃ­fico. Miles de asombrosos inventos y relatos maravillosos desaparecieron por completo en unas breves horas.',
+      'Los cuatro libros que sobrevivieron escaparon de este fuego porque probablemente fueron enviados secretamente a Europa por soldados curiosos o sacerdotes antes de la quema masiva. El CÃ³dice de Dresde es considerado unÃ¡nimemente como el mÃ¡s hermoso y cientÃ­ficamente complejo de los cuatro sobrevivientes, una obra maestra que nos muestra lo que perdimos aquel dÃ­a en las hogueras de ManÃ­. Estos cuatro hÃ©roes de papel cruzaron el mar escondidos como invaluables tesoros. Hoy nos recuerdan la tremenda inteligencia de una cultura brillante.',
+      'Cada vez que miramos las pÃ¡ginas del CÃ³dice de Dresde, no solo vemos tablas astronÃ³micas y dibujos matemÃ¡ticos hermosos; estamos mirando el legado resistente del pueblo maya. Es una enciclopedia frÃ¡gil de papel de corteza que venciÃ³ las distancias oceÃ¡nicas, escapÃ³ de la inquisiciÃ³n colonial, sobreviviÃ³ los bombardeos de la guerra moderna y sigue asombrando a los cientÃ­ficos del mundo actual.'
     ],
     expandables: [
-      { label: 'Los Cuatro Sobrevivientes', icon: 'atom', text: 'Los otros tres libros se nombran por las ciudades donde residen actualmente: el Códice de París (que trata sobre rituales), el Códice de Madrid (un manual astrológico para agricultores), y el Códice Maya de México (un fragmento enfocado solo en el planeta Venus, considerado el más antiguo de todos).' },
-      { label: 'La Ironía Histórica', icon: 'clock', text: 'Paradójicamente, el mismo obispo Diego de Landa que quemó los libros escribió después una crónica llamada "Relación de las cosas de Yucatán". En este libro documentó el alfabeto maya de manera imperfecta, pero sus notas fueron la clave fundamental (la "Piedra de Rosetta") que permitió a los expertos modernos descifrar la escritura y leer el Códice de Dresde.' }
+      { label: 'Los Cuatro Sobrevivientes', icon: 'atom', text: 'Los otros tres libros se nombran por las ciudades donde residen actualmente: el CÃ³dice de ParÃ­s (que trata sobre rituales), el CÃ³dice de Madrid (un manual astrolÃ³gico para agricultores), y el CÃ³dice Maya de MÃ©xico (un fragmento enfocado solo en el planeta Venus, considerado el mÃ¡s antiguo de todos).' },
+      { label: 'La IronÃ­a HistÃ³rica', icon: 'clock', text: 'ParadÃ³jicamente, el mismo obispo Diego de Landa que quemÃ³ los libros escribiÃ³ despuÃ©s una crÃ³nica llamada "RelaciÃ³n de las cosas de YucatÃ¡n". En este libro documentÃ³ el alfabeto maya de manera imperfecta, pero sus notas fueron la clave fundamental (la "Piedra de Rosetta") que permitiÃ³ a los expertos modernos descifrar la escritura y leer el CÃ³dice de Dresde.' }
     ],
-    fact: 'El conocimiento contenido en el Códice de Dresde era tan avanzado que cuando el astrónomo estadounidense John Teeple descifró las tablas de eclipses en la década de 1920, la comunidad científica internacional finalmente reconoció que los antiguos mayas tenían matemáticos brillantes que rivalizaban en conocimientos con los astrónomos de la antigua Grecia.'
+    fact: 'El conocimiento contenido en el CÃ³dice de Dresde era tan avanzado que cuando el astrÃ³nomo estadounidense John Teeple descifrÃ³ las tablas de eclipses en la dÃ©cada de 1920, la comunidad cientÃ­fica internacional finalmente reconociÃ³ que los antiguos mayas tenÃ­an matemÃ¡ticos brillantes que rivalizaban en conocimientos con los astrÃ³nomos de la antigua Grecia.'
   }
 ];
 
-// ─── Temporal Particle Field (Canvas Background) ──────────────────────────────
+// â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TemporalField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -267,7 +267,7 @@ function TemporalField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Header ──────────────────────────────────────────────────────
+// â”€â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function MayaHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-10px' }}>
@@ -296,14 +296,14 @@ function MayaHeader() {
             <stop offset="100%" stopColor="rgba(198,40,40,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#C62828" fontSize="20" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">EL CÓDICE DE DRESDE</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(198,40,40,0.7)" fontSize="11" fontFamily="monospace" letterSpacing="2">EL LIBRO ASTRONÓMICO DE LOS MAYAS</text>
+        <text x="300" y="80" textAnchor="middle" fill="#C62828" fontSize="20" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">EL CÃ“DICE DE DRESDE</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(198,40,40,0.7)" fontSize="11" fontFamily="monospace" letterSpacing="2">EL LIBRO ASTRONÃ“MICO DE LOS MAYAS</text>
       </svg>
     </div>
   );
 }
 
-// ─── Organic Node Button ─────────────────────────
+// â”€â”€â”€ Organic Node Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -382,7 +382,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Expandable Section with Random Direction ────────────────────────────────
+// â”€â”€â”€ Expandable Section with Random Direction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DIRECTIONS = ['up', 'down', 'left', 'right'];
 const dirVariants = {
   up:    { hidden: { y: -30, opacity: 0 }, visible: { y: 0, opacity: 1 } },
@@ -469,7 +469,7 @@ function ExpandableSection({ item, color }) {
   );
 }
 
-// ─── Content Panel ────────────────────────────────────────────
+// â”€â”€â”€ Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
@@ -613,7 +613,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
                 }}>
-                  {i === 0 ? '◆' : '◇'}
+                  {i === 0 ? 'â—†' : 'â—‡'}
                 </div>
                 <p style={{
                   margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
@@ -664,7 +664,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Sabiduría Códice
+                SabidurÃ­a CÃ³dice
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -681,7 +681,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ explored, total }) {
   const pct = (explored / total) * 100;
   return (
@@ -705,7 +705,7 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-// ─── Main Infographic Component ──────────────────────────────────────────────
+// â”€â”€â”€ Main Infographic Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_MayaM15() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
@@ -724,7 +724,7 @@ export default function InteractiveInfographic_MayaM15() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(15,10,10,0.85) 0%, rgba(20,15,10,0.8) 40%, rgba(15,10,10,0.88) 100%), url(/assets/maya/infographic_m15/bg_codex.jpg)',
+      backgroundImage: 'linear-gradient(180deg, rgba(15,10,10,0.85) 0%, rgba(20,15,10,0.8) 40%, rgba(15,10,10,0.88) 100%), ',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
@@ -785,7 +785,7 @@ export default function InteractiveInfographic_MayaM15() {
             >
               <Sparkles size={32} style={{ margin: '0 auto 1rem', opacity: 0.3 }} />
               <p style={{ fontSize: '0.9rem', margin: 0 }}>
-                Selecciona un nodo interactivo para explorar los misterios astronómicos y matemáticos del Códice de Dresde.
+                Selecciona un nodo interactivo para explorar los misterios astronÃ³micos y matemÃ¡ticos del CÃ³dice de Dresde.
               </p>
             </motion.div>
           )}
@@ -800,7 +800,7 @@ export default function InteractiveInfographic_MayaM15() {
           gap: '1rem',
         }}>
           <h4 style={{ margin: 0, fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '2px' }}>
-            Bibliografía y Fuentes del Módulo
+            BibliografÃ­a y Fuentes del MÃ³dulo
           </h4>
           <ul style={{
             margin: 0, padding: 0, listStyle: 'none',
@@ -812,7 +812,7 @@ export default function InteractiveInfographic_MayaM15() {
                 display: 'flex', gap: '0.5rem', alignItems: 'flex-start',
                 lineHeight: 1.4,
               }}>
-                <span style={{ color: '#C62828' }}>■</span> {bib}
+                <span style={{ color: '#C62828' }}>â– </span> {bib}
               </li>
             ))}
           </ul>
