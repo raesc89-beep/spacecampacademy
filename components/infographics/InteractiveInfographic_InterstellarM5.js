@@ -530,13 +530,14 @@ export default function InteractiveInfographic_InterstellarM5() {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: '1fr 1fr',
             minHeight: '280px', // hero layout min height
           }}>
             {/* Hero Image Section */}
             <div style={{
               position: 'relative',
               overflow: 'hidden',
+              height: '100%',
               minHeight: '280px',
             }}>
               <AnimatePresence mode="wait">

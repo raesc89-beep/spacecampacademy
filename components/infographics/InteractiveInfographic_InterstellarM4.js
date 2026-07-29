@@ -505,7 +505,7 @@ export default function InteractiveInfographic_InterstellarM4() {
             {/* Hero Layout: 1fr 1fr */}
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: '1fr 1fr',
               minHeight: '280px',
               borderBottom: `1px solid ${activeNode.color}20`,
             }}>
