@@ -133,14 +133,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_daga/btn_metal.png',
     image: '/assets/egypt/infographic_daga/hero_metal.png',
     content: [
-      'Imagina que encuentras una piedra brillante y pesada en medio del desierto. No es como las demÃ¡s piedras: es oscura, metÃ¡lica y parece que alguien la dejÃ³ caer del cielo. Los antiguos egipcios encontraban piedras asÃ­ y las llamaban \'ba en pet\', que significa \'Â¡el metal del cielo!\' Y resulta que tenÃ­an toda la razÃ³n: ese metal habÃ­a caÃ­do literalmente del espacio exterior.',
-      'Hace 3,300 aÃ±os, los egipcios no conocÃ­an el hierro. Sus espadas, herramientas y joyas eran de bronce (una mezcla de cobre y estaÃ±o). El hierro era tan raro que valÃ­a mÃ¡s que el oro. Solo podÃ­an obtenerlo de una fuente misteriosa: rocas oscuras y pesadas que a veces aparecÃ­an en el desierto del Sahara despuÃ©s de luces brillantes en el cielo nocturno.',
-      'Hoy sabemos que esas rocas son meteoritos de hierro: fragmentos de asteroides que viajaron por el espacio durante millones de aÃ±os antes de caer a la Tierra. Cuando un asteroide se forma en el sistema solar, su centro se llena de hierro mezclado con nÃ­quel (entre 5% y 35%) y un poquito de cobalto. Es como el relleno metÃ¡lico de una pelota cÃ³smica gigante.',
-      'En 2016, cientÃ­ficos italianos y egipcios usaron una tÃ©cnica llamada fluorescencia de rayos X (imagina una linterna especial que puede ver de quÃ© estÃ¡ hecho algo por dentro sin romperlo) para analizar la daga de TutankamÃ³n. Descubrieron que la hoja contiene 11% de nÃ­quel y 0.6% de cobalto â€” Â¡exactamente la receta de un meteorito!',
-      'El desierto del Sahara es uno de los mejores lugares del mundo para encontrar meteoritos, porque son piedras negras sobre arena dorada, como encontrar un botÃ³n oscuro en una sÃ¡bana blanca. Los egipcios los recogÃ­an desde hacÃ­a miles de aÃ±os antes de TutankamÃ³n.',
-      'Para los egipcios, un material que caÃ­a como estrellas fugaces era un regalo de los dioses, digno de ser entregado Ãºnicamente al soberano de las Dos Tierras.',
+      'Imagina que encuentras una piedra brillante y pesada en medio del desierto. No es como las demás piedras: es oscura, metálica y parece que alguien la dejó caer del cielo. Los antiguos egipcios encontraban piedras así y las llamaban \'ba en pet\', que significa \'¡el metal del cielo!\' Y resulta que tenían toda la razón: ese metal había caído literalmente del espacio exterior.',
+      'Hace 3,300 años, los egipcios no conocían el hierro. Sus espadas, herramientas y joyas eran de bronce (una mezcla de cobre y estaño). El hierro era tan raro que valía más que el oro. Solo podían obtenerlo de una fuente misteriosa: rocas oscuras y pesadas que a veces aparecían en el desierto del Sahara después de luces brillantes en el cielo nocturno.',
+      'Hoy sabemos que esas rocas son meteoritos de hierro: fragmentos de asteroides que viajaron por el espacio durante millones de años antes de caer a la Tierra. Cuando un asteroide se forma en el sistema solar, su centro se llena de hierro mezclado con níquel (entre 5% y 35%) y un poquito de cobalto. Es como el relleno metálico de una pelota cósmica gigante.',
+      'En 2016, científicos italianos y egipcios usaron una técnica llamada fluorescencia de rayos X (imagina una linterna especial que puede ver de qué está hecho algo por dentro sin romperlo) para analizar la daga de Tutankamón. Descubrieron que la hoja contiene 11% de níquel y 0.6% de cobalto â€” ¡exactamente la receta de un meteorito!',
+      'El desierto del Sahara es uno de los mejores lugares del mundo para encontrar meteoritos, porque son piedras negras sobre arena dorada, como encontrar un botón oscuro en una sábana blanca. Los egipcios los recogían desde hacía miles de años antes de Tutankamón.',
+      'Para los egipcios, un material que caía como estrellas fugaces era un regalo de los dioses, digno de ser entregado únicamente al soberano de las Dos Tierras.',
     ],
-    fact: 'Â¿SabÃ­as que la palabra "hierro" en muchos idiomas antiguos significa "metal del cielo"? En sumerio es "AN.BAR" (fuego del cielo), en hitita "KU.AN" (metal del cielo), y en copto egipcio "benipe" (maravilla del cielo). Â¡Todas las civilizaciones antiguas sabÃ­an que venÃ­a del espacio!',
+    fact: '¿Sabías que la palabra "hierro" en muchos idiomas antiguos significa "metal del cielo"? En sumerio es "AN.BAR" (fuego del cielo), en hitita "KU.AN" (metal del cielo), y en copto egipcio "benipe" (maravilla del cielo). ¡Todas las civilizaciones antiguas sabían que venía del espacio!',
   },
   {
     id: 'daga-forja',
@@ -149,30 +149,30 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_daga/btn_forja.png',
     image: '/assets/egypt/infographic_daga/hero_forja.png',
     content: [
-      'Imagina que intentas moldear una moneda usando solo un martillo y una roca caliente. Ahora imagina que esa moneda estÃ¡ hecha del metal mÃ¡s duro que conoces. Â¡AsÃ­ de difÃ­cil era trabajar el hierro meteorÃ­tico! Los artesanos egipcios lograron algo increÃ­ble: convertir un trozo de roca espacial en una daga elegante y afilada.',
-      'El hierro meteorÃ­tico es mucho mÃ¡s duro que el bronce porque contiene cristales de una aleaciÃ³n especial llamada kamacita y taenita (mezclas naturales de hierro y nÃ­quel que solo se forman en el espacio, donde el metal se enfrÃ­a durante millones de aÃ±os). Si lo calientas demasiado, se agrieta. Si lo golpeas muy fuerte, se rompe.',
-      'Los artesanos descubrieron una tÃ©cnica genial: el forjado en frÃ­o. En lugar de calentar el metal hasta que estuviera rojo (como hacemos hoy con el acero), lo martillaban a temperatura baja, dÃ¡ndole forma poco a poco con miles de golpes precisos. Es como moldear plastilina frÃ­a: lento pero efectivo.',
-      'La hoja resultante tiene 34.2 centÃ­metros de largo y es sorprendentemente delgada y equilibrada. Los anÃ¡lisis con microscopio electrÃ³nico muestran lÃ­neas de WidmanstÃ¤tten: patrones geomÃ©tricos que solo aparecen en el hierro que se enfriÃ³ en el espacio durante millones de aÃ±os. Son como las huellas digitales del meteorito original.',
-      'La empuÃ±adura es una obra maestra: oro puro con incrustaciones de granito rojo, cristal de roca y lapislÃ¡zuli azul (traÃ­do desde AfganistÃ¡n, a 5,000 km de distancia). El pomo tiene un diseÃ±o de flores de loto y estrellas. Una sola daga combinaba metal del espacio, oro de Nubia y piedras de Asia Central.',
-      'Este forjado en frÃ­o a partir de un fragmento de asteroide requiriÃ³ una paciencia y habilidad que asombra incluso a los herreros modernos.',
+      'Imagina que intentas moldear una moneda usando solo un martillo y una roca caliente. Ahora imagina que esa moneda está hecha del metal más duro que conoces. ¡Así de difícil era trabajar el hierro meteorítico! Los artesanos egipcios lograron algo increíble: convertir un trozo de roca espacial en una daga elegante y afilada.',
+      'El hierro meteorítico es mucho más duro que el bronce porque contiene cristales de una aleación especial llamada kamacita y taenita (mezclas naturales de hierro y níquel que solo se forman en el espacio, donde el metal se enfría durante millones de años). Si lo calientas demasiado, se agrieta. Si lo golpeas muy fuerte, se rompe.',
+      'Los artesanos descubrieron una técnica genial: el forjado en frío. En lugar de calentar el metal hasta que estuviera rojo (como hacemos hoy con el acero), lo martillaban a temperatura baja, dándole forma poco a poco con miles de golpes precisos. Es como moldear plastilina fría: lento pero efectivo.',
+      'La hoja resultante tiene 34.2 centímetros de largo y es sorprendentemente delgada y equilibrada. Los análisis con microscopio electrónico muestran líneas de Widmanstätten: patrones geométricos que solo aparecen en el hierro que se enfrió en el espacio durante millones de años. Son como las huellas digitales del meteorito original.',
+      'La empuñadura es una obra maestra: oro puro con incrustaciones de granito rojo, cristal de roca y lapislázuli azul (traído desde Afganistán, a 5,000 km de distancia). El pomo tiene un diseño de flores de loto y estrellas. Una sola daga combinaba metal del espacio, oro de Nubia y piedras de Asia Central.',
+      'Este forjado en frío a partir de un fragmento de asteroide requirió una paciencia y habilidad que asombra incluso a los herreros modernos.',
     ],
-    fact: 'Las lÃ­neas de WidmanstÃ¤tten son tan Ãºnicas que funcionan como "huellas digitales" de cada meteorito. Solo se forman cuando el hierro-nÃ­quel se enfrÃ­a a una velocidad de 1-100 grados cada millÃ³n de aÃ±os â€” algo imposible de replicar en la Tierra. Â¡Es la prueba definitiva de que algo vino del espacio!',
+    fact: 'Las líneas de Widmanstätten son tan únicas que funcionan como "huellas digitales" de cada meteorito. Solo se forman cuando el hierro-níquel se enfría a una velocidad de 1-100 grados cada millón de años â€” algo imposible de replicar en la Tierra. ¡Es la prueba definitiva de que algo vino del espacio!',
   },
   {
     id: 'tumba-tut',
-    title: 'La Tumba del FaraÃ³n NiÃ±o',
+    title: 'La Tumba del Faraón Niño',
     color: '#FFD700',
     btnImage: '/assets/egypt/infographic_daga/btn_tumba.png',
     image: '/assets/egypt/infographic_daga/hero_tumba.png',
     content: [
-      'TutankamÃ³n se convirtiÃ³ en faraÃ³n cuando tenÃ­a solo 9 aÃ±os, Â¡mÃ¡s o menos tu edad! Imagina que un dÃ­a te dicen que eres el rey de todo Egipto. TendrÃ­as tu propio palacio, miles de sirvientes, y la gente te tratarÃ­a como un dios viviente. TutankamÃ³n viviÃ³ eso durante 10 aÃ±os hasta que muriÃ³ misteriosamente a los 19.',
-      'Cuando TutankamÃ³n muriÃ³ (alrededor del aÃ±o 1323 a.C.), fue enterrado en el Valle de los Reyes, un lugar secreto en las montaÃ±as de Luxor donde los faraones escondÃ­an sus tumbas para protegerlas de los ladrones. Su tumba era pequeÃ±a comparada con la de otros faraones, pero estaba llena hasta el techo con mÃ¡s de 5,000 objetos.',
-      'Durante 3,245 aÃ±os, la tumba permaneciÃ³ escondida bajo toneladas de arena y escombros. Todos los demÃ¡s faraones habÃ­an sido saqueados por ladrones de tumbas. Pero la de TutankamÃ³n sobreviviÃ³ intacta gracias a que otra tumba (la de RamsÃ©s VI) fue construida directamente encima, y los escombros de la construcciÃ³n sellaron la entrada.',
-      'El 4 de noviembre de 1922, un niÃ±o que cargaba agua para los arqueÃ³logos tropezÃ³ con un escalÃ³n de piedra. Howard Carter, el arqueÃ³logo britÃ¡nico que llevaba 6 aÃ±os buscando, excavÃ³ y encontrÃ³ una puerta sellada. Cuando hizo un agujero y acercÃ³ una vela, su compaÃ±ero Lord Carnarvon preguntÃ³: \'Â¿Puedes ver algo?\' Carter respondiÃ³: \'SÃ­, cosas maravillosas.\'',
-      'Carter tardÃ³ 10 aÃ±os en catalogar los 5,398 objetos de la tumba. La daga meteorÃ­tica estaba envuelta en las vendas de lino de la momia, colocada junto al muslo derecho. Junto a ella habÃ­a otra daga de hoja de oro. Los objetos junto al cuerpo eran los mÃ¡s sagrados: acompaÃ±arÃ­an al faraÃ³n en su viaje por el inframundo.',
-      'Entre todos los lujos terrenales y tesoros de oro macizo, esta pequeÃ±a hoja de metal extraterrestre era su posesiÃ³n mÃ¡s rara para el viaje al mÃ¡s allÃ¡.',
+      'Tutankamón se convirtió en faraón cuando tenía solo 9 años, ¡más o menos tu edad! Imagina que un día te dicen que eres el rey de todo Egipto. Tendrías tu propio palacio, miles de sirvientes, y la gente te trataría como un dios viviente. Tutankamón vivió eso durante 10 años hasta que murió misteriosamente a los 19.',
+      'Cuando Tutankamón murió (alrededor del año 1323 a.C.), fue enterrado en el Valle de los Reyes, un lugar secreto en las montañas de Luxor donde los faraones escondían sus tumbas para protegerlas de los ladrones. Su tumba era pequeña comparada con la de otros faraones, pero estaba llena hasta el techo con más de 5,000 objetos.',
+      'Durante 3,245 años, la tumba permaneció escondida bajo toneladas de arena y escombros. Todos los demás faraones habían sido saqueados por ladrones de tumbas. Pero la de Tutankamón sobrevivió intacta gracias a que otra tumba (la de Ramsés VI) fue construida directamente encima, y los escombros de la construcción sellaron la entrada.',
+      'El 4 de noviembre de 1922, un niño que cargaba agua para los arqueólogos tropezó con un escalón de piedra. Howard Carter, el arqueólogo británico que llevaba 6 años buscando, excavó y encontró una puerta sellada. Cuando hizo un agujero y acercó una vela, su compañero Lord Carnarvon preguntó: \'¿Puedes ver algo?\' Carter respondió: \'Sí, cosas maravillosas.\'',
+      'Carter tardó 10 años en catalogar los 5,398 objetos de la tumba. La daga meteorítica estaba envuelta en las vendas de lino de la momia, colocada junto al muslo derecho. Junto a ella había otra daga de hoja de oro. Los objetos junto al cuerpo eran los más sagrados: acompañarían al faraón en su viaje por el inframundo.',
+      'Entre todos los lujos terrenales y tesoros de oro macizo, esta pequeña hoja de metal extraterrestre era su posesión más rara para el viaje al más allá.',
     ],
-    fact: 'Â¿SabÃ­as que la famosa "MaldiciÃ³n de TutankamÃ³n" nunca existiÃ³? Lord Carnarvon muriÃ³ por una infecciÃ³n de mosquito, no por ninguna maldiciÃ³n. Howard Carter, quien abriÃ³ la tumba y tocÃ³ todos los objetos, viviÃ³ 17 aÃ±os mÃ¡s hasta los 64. Â¡La ciencia siempre derrota a la supersticiÃ³n!',
+    fact: '¿Sabías que la famosa "Maldición de Tutankamón" nunca existió? Lord Carnarvon murió por una infección de mosquito, no por ninguna maldición. Howard Carter, quien abrió la tumba y tocó todos los objetos, vivió 17 años más hasta los 64. ¡La ciencia siempre derrota a la superstición!',
   },
   {
     id: 'rayos-x',
@@ -181,14 +181,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_daga/btn_rayosx.png',
     image: '/assets/egypt/infographic_daga/hero_rayosx.png',
     content: [
-      'Â¿CÃ³mo puedes saber de quÃ© estÃ¡ hecho algo por dentro sin romperlo? Los doctores usan rayos X para ver tus huesos, Â¿verdad? Los cientÃ­ficos usan algo parecido pero mÃ¡s sofisticado: la fluorescencia de rayos X portÃ¡til (pXRF). Es como una pistola de rayos lÃ¡ser que le dispara rayos X a un objeto y lee los colores de luz que rebotan.',
-      'Cada elemento quÃ­mico (hierro, nÃ­quel, cobalto, oro) emite un color de luz diferente cuando los rayos X lo golpean, como si cada Ã¡tomo tuviera su propia melodÃ­a musical. La mÃ¡quina puede escuchar todas esas melodÃ­as al mismo tiempo y decirte exactamente quÃ© ingredientes tiene el objeto. Â¡Y todo sin tocarlo!',
-      'En 2016, Daniela Comelli y su equipo del PolitÃ©cnico de MilÃ¡n apuntaron su pXRF a la hoja de la daga. Los resultados: hierro (Fe), 11% de nÃ­quel (Ni) y 0.6% de cobalto (Co). El hierro de la Tierra normalmente tiene menos de 4% de nÃ­quel. Pero el hierro de los meteoritos tiene entre 5% y 35%. Â¡La daga estaba hecha de metal espacial!',
-      'En 2022, Takafumi Matsui de la Universidad de Chiba (JapÃ³n) usÃ³ una tÃ©cnica aÃºn mÃ¡s avanzada: mapeo quÃ­mico por microsonda electrÃ³nica. DescubriÃ³ que la distribuciÃ³n del nÃ­quel en la hoja forma bandas, las famosas lÃ­neas de WidmanstÃ¤tten, confirmando que el hierro se cristalizÃ³ en el vacÃ­o del espacio.',
-      'Los investigadores incluso pudieron identificar de quÃ© tipo de meteorito vino la daga. Por las proporciones de nÃ­quel y cobalto, coincide con los meteoritos de tipo octaedrita, que son fragmentos del nÃºcleo de asteroides destruidos hace miles de millones de aÃ±os. Â¡La daga de un faraÃ³n de 19 aÃ±os fue forjada con los restos de un mundo destruido!',
-      'La tecnologÃ­a de fluorescencia revelÃ³ que la hoja del rey adolescente fue forjada con los restos metÃ¡licos de un cuerpo celeste destruido en los albores del universo.',
+      '¿Cómo puedes saber de qué está hecho algo por dentro sin romperlo? Los doctores usan rayos X para ver tus huesos, ¿verdad? Los científicos usan algo parecido pero más sofisticado: la fluorescencia de rayos X portátil (pXRF). Es como una pistola de rayos láser que le dispara rayos X a un objeto y lee los colores de luz que rebotan.',
+      'Cada elemento químico (hierro, níquel, cobalto, oro) emite un color de luz diferente cuando los rayos X lo golpean, como si cada átomo tuviera su propia melodía musical. La máquina puede escuchar todas esas melodías al mismo tiempo y decirte exactamente qué ingredientes tiene el objeto. ¡Y todo sin tocarlo!',
+      'En 2016, Daniela Comelli y su equipo del Politécnico de Milán apuntaron su pXRF a la hoja de la daga. Los resultados: hierro (Fe), 11% de níquel (Ni) y 0.6% de cobalto (Co). El hierro de la Tierra normalmente tiene menos de 4% de níquel. Pero el hierro de los meteoritos tiene entre 5% y 35%. ¡La daga estaba hecha de metal espacial!',
+      'En 2022, Takafumi Matsui de la Universidad de Chiba (Japón) usó una técnica aún más avanzada: mapeo químico por microsonda electrónica. Descubrió que la distribución del níquel en la hoja forma bandas, las famosas líneas de Widmanstätten, confirmando que el hierro se cristalizó en el vacío del espacio.',
+      'Los investigadores incluso pudieron identificar de qué tipo de meteorito vino la daga. Por las proporciones de níquel y cobalto, coincide con los meteoritos de tipo octaedrita, que son fragmentos del núcleo de asteroides destruidos hace miles de millones de años. ¡La daga de un faraón de 19 años fue forjada con los restos de un mundo destruido!',
+      'La tecnología de fluorescencia reveló que la hoja del rey adolescente fue forjada con los restos metálicos de un cuerpo celeste destruido en los albores del universo.',
     ],
-    fact: 'La tÃ©cnica de fluorescencia de rayos X es la misma que usa la NASA en sus rovers marcianos (Curiosity y Perseverance) para analizar las rocas de Marte. Los mismos rayos X que revelaron el secreto de la daga de TutankamÃ³n buscan seÃ±ales de vida en otro planeta.',
+    fact: 'La técnica de fluorescencia de rayos X es la misma que usa la NASA en sus rovers marcianos (Curiosity y Perseverance) para analizar las rocas de Marte. Los mismos rayos X que revelaron el secreto de la daga de Tutankamón buscan señales de vida en otro planeta.',
   },
   {
     id: 'meteoritos-mundo',
@@ -197,14 +197,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_daga/btn_meteoritos.png',
     image: '/assets/egypt/infographic_daga/hero_meteoritos.png',
     content: [
-      'TutankamÃ³n no fue el Ãºnico que usÃ³ metal del espacio. Â¡Los humanos de todo el mundo han recogido y usado meteoritos desde hace miles de aÃ±os! Los inuit del Ãrtico (en Groenlandia y CanadÃ¡) forjaron cuchillos, arpones y puntas de lanza usando fragmentos de un meteorito gigante llamado "Cabo York" que cayÃ³ hace 10,000 aÃ±os.',
-      'El explorador Robert Peary encontrÃ³ en 1894 tres enormes trozos del meteorito Cabo York entre los inuit. El mÃ¡s grande, llamado "Ahnighito" (La Tienda), pesa Â¡31 toneladas! Los inuit lo habÃ­an usado durante generaciones golpeÃ¡ndolo con piedras para arrancar pedazos de hierro. Hoy estÃ¡ en el Museo de Historia Natural de Nueva York.',
-      'En la antigua Sumeria (actual Irak), los textos cuneiformes de hace 5,000 aÃ±os mencionan el hierro como "AN.BAR" (fuego del cielo). Los hititas de Anatolia (actual TurquÃ­a) tenÃ­an tanto hierro meteorÃ­tico que lo usaban como regalo diplomÃ¡tico. Â¡Una carta del rey hitita al faraÃ³n RamsÃ©s II menciona el envÃ­o de una espada de "hierro del cielo"!',
-      'El meteorito de Hoba, en Namibia (Ãfrica del Sur), es el meteorito mÃ¡s grande conocido que sigue donde cayÃ³: pesa Â¡60 toneladas! Es tan grande que nadie ha podido moverlo. Los pueblos locales lo veneraban y las comunidades cercanas aÃºn lo visitan como sitio sagrado.',
-      'Cada aÃ±o, unas 48,000 toneladas de material meteorÃ­tico caen a la Tierra, pero la mayorÃ­a son partÃ­culas microscÃ³picas (polvo cÃ³smico). Los meteoritos de hierro grandes (de varios kilos) solo caen unas 5-10 veces por aÃ±o en todo el planeta. Encontrar uno y forjarlo como hicieron los egipcios era un logro extraordinario.',
-      'Antes de aprender a extraer mineral de las minas, el cielo fue la Ãºnica mina de hierro que la humanidad conociÃ³ para crear herramientas indestructibles.',
+      'Tutankamón no fue el único que usó metal del espacio. ¡Los humanos de todo el mundo han recogido y usado meteoritos desde hace miles de años! Los inuit del Ártico (en Groenlandia y Canadá) forjaron cuchillos, arpones y puntas de lanza usando fragmentos de un meteorito gigante llamado "Cabo York" que cayó hace 10,000 años.',
+      'El explorador Robert Peary encontró en 1894 tres enormes trozos del meteorito Cabo York entre los inuit. El más grande, llamado "Ahnighito" (La Tienda), pesa ¡31 toneladas! Los inuit lo habían usado durante generaciones golpeándolo con piedras para arrancar pedazos de hierro. Hoy está en el Museo de Historia Natural de Nueva York.',
+      'En la antigua Sumeria (actual Irak), los textos cuneiformes de hace 5,000 años mencionan el hierro como "AN.BAR" (fuego del cielo). Los hititas de Anatolia (actual Turquía) tenían tanto hierro meteorítico que lo usaban como regalo diplomático. ¡Una carta del rey hitita al faraón Ramsés II menciona el envío de una espada de "hierro del cielo"!',
+      'El meteorito de Hoba, en Namibia (África del Sur), es el meteorito más grande conocido que sigue donde cayó: pesa ¡60 toneladas! Es tan grande que nadie ha podido moverlo. Los pueblos locales lo veneraban y las comunidades cercanas aún lo visitan como sitio sagrado.',
+      'Cada año, unas 48,000 toneladas de material meteorítico caen a la Tierra, pero la mayoría son partículas microscópicas (polvo cósmico). Los meteoritos de hierro grandes (de varios kilos) solo caen unas 5-10 veces por año en todo el planeta. Encontrar uno y forjarlo como hicieron los egipcios era un logro extraordinario.',
+      'Antes de aprender a extraer mineral de las minas, el cielo fue la única mina de hierro que la humanidad conoció para crear herramientas indestructibles.',
     ],
-    fact: 'El meteorito mÃ¡s caro jamÃ¡s vendido fue un trozo del meteorito Fukang (China), una pallasita con cristales de olivino (una gema verde) incrustados en hierro-nÃ­quel. Un trozo se vendiÃ³ por 2 millones de dÃ³lares. Â¡Los meteoritos de hierro son literalmente joyas del espacio!',
+    fact: 'El meteorito más caro jamás vendido fue un trozo del meteorito Fukang (China), una pallasita con cristales de olivino (una gema verde) incrustados en hierro-níquel. Un trozo se vendió por 2 millones de dólares. ¡Los meteoritos de hierro son literalmente joyas del espacio!',
   },
   {
     id: 'supernova-origen',
@@ -213,14 +213,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_daga/btn_supernova.png',
     image: '/assets/egypt/infographic_daga/hero_supernova.png',
     content: [
-      'Â¿De dÃ³nde viene el hierro del meteorito de TutankamÃ³n? Para responder esto, necesitamos viajar 5 mil millones de aÃ±os atrÃ¡s, antes de que existiera la Tierra, el Sol, o nuestro sistema solar. Todo el hierro del universo fue cocinado dentro de estrellas gigantes, como en una cocina cÃ³smica a millones de grados.',
-      'Las estrellas funcionan fusionando Ã¡tomos ligeros para crear Ã¡tomos mÃ¡s pesados. El Sol convierte hidrÃ³geno en helio. Las estrellas mÃ¡s grandes pueden seguir: helio â†’ carbono â†’ oxÃ­geno â†’ neÃ³n â†’ silicio â†’ Â¡hierro! El hierro es el Ãºltimo elemento que una estrella puede crear. Es como el Ãºltimo piso de un edificio: cuando una estrella llena su nÃºcleo de hierro, Â¡ya no puede producir mÃ¡s energÃ­a!',
-      'Cuando el nÃºcleo de hierro de una estrella masiva se vuelve demasiado grande, la estrella colapsa sobre sÃ­ misma en menos de un segundo y explota en una supernova, una de las explosiones mÃ¡s grandes del universo. La supernova lanza hierro, nÃ­quel, cobalto y todos los demÃ¡s elementos al espacio a velocidades de miles de kilÃ³metros por segundo.',
-      'Ese polvo de supernova se mezclÃ³ con gas y partÃ­culas en una nube cÃ³smica que, hace 4,600 millones de aÃ±os, empezÃ³ a colapsar y girar hasta formar nuestro sistema solar. Los trozos mÃ¡s grandes de hierro y nÃ­quel se juntaron para formar los nÃºcleos de asteroides. Cuando esos asteroides chocaron entre sÃ­, se rompieron, y algunos fragmentos cayeron a la Tierra como meteoritos.',
-      'AsÃ­ que el metal de la daga de TutankamÃ³n fue creado en el interior de una estrella que explotÃ³ hace miles de millones de aÃ±os, viajÃ³ por el espacio como parte de un asteroide, cayÃ³ al Sahara como meteorito, fue recogido por egipcios, forjado por artesanos, y colocado junto al cuerpo de un faraÃ³n. Â¡Es una historia de 5 mil millones de aÃ±os resumida en una sola daga!',
-      'Saber que un arma egipcia antigua estÃ¡ forjada con la explosiÃ³n final de una estrella moribunda conecta la arqueologÃ­a terrestre con la astrofÃ­sica mÃ¡s extrema.',
+      '¿De dónde viene el hierro del meteorito de Tutankamón? Para responder esto, necesitamos viajar 5 mil millones de años atrás, antes de que existiera la Tierra, el Sol, o nuestro sistema solar. Todo el hierro del universo fue cocinado dentro de estrellas gigantes, como en una cocina cósmica a millones de grados.',
+      'Las estrellas funcionan fusionando átomos ligeros para crear átomos más pesados. El Sol convierte hidrógeno en helio. Las estrellas más grandes pueden seguir: helio â†’ carbono â†’ oxígeno â†’ neón â†’ silicio â†’ ¡hierro! El hierro es el último elemento que una estrella puede crear. Es como el último piso de un edificio: cuando una estrella llena su núcleo de hierro, ¡ya no puede producir más energía!',
+      'Cuando el núcleo de hierro de una estrella masiva se vuelve demasiado grande, la estrella colapsa sobre sí misma en menos de un segundo y explota en una supernova, una de las explosiones más grandes del universo. La supernova lanza hierro, níquel, cobalto y todos los demás elementos al espacio a velocidades de miles de kilómetros por segundo.',
+      'Ese polvo de supernova se mezcló con gas y partículas en una nube cósmica que, hace 4,600 millones de años, empezó a colapsar y girar hasta formar nuestro sistema solar. Los trozos más grandes de hierro y níquel se juntaron para formar los núcleos de asteroides. Cuando esos asteroides chocaron entre sí, se rompieron, y algunos fragmentos cayeron a la Tierra como meteoritos.',
+      'Así que el metal de la daga de Tutankamón fue creado en el interior de una estrella que explotó hace miles de millones de años, viajó por el espacio como parte de un asteroide, cayó al Sahara como meteorito, fue recogido por egipcios, forjado por artesanos, y colocado junto al cuerpo de un faraón. ¡Es una historia de 5 mil millones de años resumida en una sola daga!',
+      'Saber que un arma egipcia antigua está forjada con la explosión final de una estrella moribunda conecta la arqueología terrestre con la astrofísica más extrema.',
     ],
-    fact: 'Carl Sagan dijo: "Somos materia estelar." Todo el hierro de tu sangre (la hemoglobina que transporta oxÃ­geno) fue forjado dentro de una estrella que explotÃ³ hace miles de millones de aÃ±os. Â¡TÃº literalmente tienes polvo de estrellas corriendo por tus venas, igual que la daga de TutankamÃ³n!',
+    fact: 'Carl Sagan dijo: "Somos materia estelar." Todo el hierro de tu sangre (la hemoglobina que transporta oxígeno) fue forjado dentro de una estrella que explotó hace miles de millones de años. ¡Tú literalmente tienes polvo de estrellas corriendo por tus venas, igual que la daga de Tutankamón!',
   },
   {
     id: 'tesoro-museo',
@@ -229,30 +229,30 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_daga/btn_museo.png',
     image: '/assets/egypt/infographic_daga/hero_museo.png',
     content: [
-      'Hoy, la daga de TutankamÃ³n descansa en el Gran Museo Egipcio (GEM) de El Cairo, el museo mÃ¡s grande del mundo dedicado a una sola civilizaciÃ³n. Miles de personas la ven cada dÃ­a sin saber que estÃ¡n contemplando metal que viajÃ³ por el espacio durante millones de aÃ±os.',
-      'La daga estÃ¡ en una vitrina especial con temperatura y humedad controladas, porque el hierro meteorÃ­tico puede oxidarse (convertirse en herrumbre) si no se conserva correctamente. DespuÃ©s de 3,300 aÃ±os, la hoja sigue en excelentes condiciones gracias al clima seco del desierto egipcio y al sellado hermÃ©tico de la tumba.',
-      'En 2022, un estudio publicado en Meteoritics & Planetary Science analizÃ³ 24 objetos de hierro del Antiguo Egipto guardados en museos europeos. Resultado sorprendente: la mayorÃ­a de los objetos de hierro mÃ¡s antiguos (antes de 1200 a.C.) eran de origen meteorÃ­tico. Los egipcios usaban hierro del espacio Â¡mucho antes de aprender a fundir hierro terrestre!',
-      'La mÃ¡scara funeraria de TutankamÃ³n (11 kilos de oro macizo) es probablemente el objeto mÃ¡s famoso del Antiguo Egipto, pero la daga meteorÃ­tica es quizÃ¡s el mÃ¡s fascinante cientÃ­ficamente. Es evidencia fÃ­sica de la conexiÃ³n entre el espacio exterior y las civilizaciones humanas mÃ¡s antiguas.',
-      'Egipto ha construido el nuevo Gran Museo Egipcio cerca de las pirÃ¡mides de Guiza con un costo de mil millones de dÃ³lares. Es el museo arqueolÃ³gico mÃ¡s grande del mundo, con 480,000 metros cuadrados dedicados a exhibir los tesoros de los faraones. La daga meteorÃ­tica de TutankamÃ³n tendrÃ¡ un lugar de honor en la colecciÃ³n.',
-      'Este descubrimiento cientÃ­fico ha transformado una daga ya legendaria en la pieza de arqueoastronomÃ­a mÃ¡s fascinante que sobrevive de la Edad del Bronce.',
+      'Hoy, la daga de Tutankamón descansa en el Gran Museo Egipcio (GEM) de El Cairo, el museo más grande del mundo dedicado a una sola civilización. Miles de personas la ven cada día sin saber que están contemplando metal que viajó por el espacio durante millones de años.',
+      'La daga está en una vitrina especial con temperatura y humedad controladas, porque el hierro meteorítico puede oxidarse (convertirse en herrumbre) si no se conserva correctamente. Después de 3,300 años, la hoja sigue en excelentes condiciones gracias al clima seco del desierto egipcio y al sellado hermético de la tumba.',
+      'En 2022, un estudio publicado en Meteoritics & Planetary Science analizó 24 objetos de hierro del Antiguo Egipto guardados en museos europeos. Resultado sorprendente: la mayoría de los objetos de hierro más antiguos (antes de 1200 a.C.) eran de origen meteorítico. Los egipcios usaban hierro del espacio ¡mucho antes de aprender a fundir hierro terrestre!',
+      'La máscara funeraria de Tutankamón (11 kilos de oro macizo) es probablemente el objeto más famoso del Antiguo Egipto, pero la daga meteorítica es quizás el más fascinante científicamente. Es evidencia física de la conexión entre el espacio exterior y las civilizaciones humanas más antiguas.',
+      'Egipto ha construido el nuevo Gran Museo Egipcio cerca de las pirámides de Guiza con un costo de mil millones de dólares. Es el museo arqueológico más grande del mundo, con 480,000 metros cuadrados dedicados a exhibir los tesoros de los faraones. La daga meteorítica de Tutankamón tendrá un lugar de honor en la colección.',
+      'Este descubrimiento científico ha transformado una daga ya legendaria en la pieza de arqueoastronomía más fascinante que sobrevive de la Edad del Bronce.',
     ],
-    fact: 'La tumba de TutankamÃ³n contenÃ­a 5,398 objetos, incluyendo 6 carros de guerra, 130 bastones, 46 arcos, un trono de oro, sandalias de oro, ropa interior de lino, juegos de mesa, comida deshidratada, vino (Â¡de 3,300 aÃ±os!), y hasta un mechÃ³n de pelo de su abuela. Â¡Era como empacar para el viaje mÃ¡s largo de la historia!',
+    fact: 'La tumba de Tutankamón contenía 5,398 objetos, incluyendo 6 carros de guerra, 130 bastones, 46 arcos, un trono de oro, sandalias de oro, ropa interior de lino, juegos de mesa, comida deshidratada, vino (¡de 3,300 años!), y hasta un mechón de pelo de su abuela. ¡Era como empacar para el viaje más largo de la historia!',
   },
   {
     id: 'legado-cosmico',
-    title: 'Legado CÃ³smico',
+    title: 'Legado Cósmico',
     color: '#1ABC9C',
     btnImage: '/assets/egypt/infographic_daga/btn_legado.png',
     image: '/assets/egypt/infographic_daga/hero_legado.png',
     content: [
-      'La daga de TutankamÃ³n nos enseÃ±a algo increÃ­ble: desde los inicios de la civilizaciÃ³n, los humanos hemos sido exploradores del espacio sin saberlo. Cada vez que un antiguo egipcio recogÃ­a un meteorito del desierto, estaba haciendo contacto con el cosmos, recuperando material que habÃ­a viajado millones de kilÃ³metros.',
-      'Hoy, la NASA y otras agencias espaciales planean traer muestras de asteroides a la Tierra. La misiÃ³n OSIRIS-REx de la NASA ya trajo 121 gramos del asteroide Bennu en 2023, y la misiÃ³n Hayabusa2 de JapÃ³n trajo muestras del asteroide Ryugu en 2020. Estamos haciendo exactamente lo que los egipcios hicieron hace 3,300 aÃ±os: recoger material del espacio.',
-      'Los cientÃ­ficos descubrieron que las muestras de Bennu contienen aminoÃ¡cidos (los bloques de construcciÃ³n de la vida) y agua. Los asteroides podrÃ­an haber sembrado la Tierra con los ingredientes bÃ¡sicos para la vida hace 4,000 millones de aÃ±os. El hierro meteorÃ­tico de la daga es primo hermano de las rocas que quizÃ¡s trajeron la vida a nuestro planeta.',
-      'Algunas empresas como Planetary Resources y AstroForge planean minar asteroides en el futuro. Un solo asteroide metÃ¡lico de 1 kilÃ³metro podrÃ­a contener mÃ¡s platino que todo lo que se ha extraÃ­do en la historia de la humanidad. La minerÃ­a espacial convertirÃ­a a los asteroides en la fuente de recursos mÃ¡s valiosa del sistema solar.',
-      'La daga de TutankamÃ³n es un puente entre el pasado y el futuro. Un artesano egipcio de hace 3,300 aÃ±os y un ingeniero de la NASA de 2025 comparten el mismo sueÃ±o: usar los materiales del espacio para crear algo extraordinario. El faraÃ³n niÃ±o estarÃ­a orgulloso de saber que su daga inspirÃ³ a generaciones de cientÃ­ficos a mirar hacia las estrellas.',
-      'Al estudiar estos meteoritos antiguos, los arqueÃ³logos modernos y los cientÃ­ficos espaciales comparten la misma fascinaciÃ³n por los misterios ocultos en las rocas del cielo.',
+      'La daga de Tutankamón nos enseña algo increíble: desde los inicios de la civilización, los humanos hemos sido exploradores del espacio sin saberlo. Cada vez que un antiguo egipcio recogía un meteorito del desierto, estaba haciendo contacto con el cosmos, recuperando material que había viajado millones de kilómetros.',
+      'Hoy, la NASA y otras agencias espaciales planean traer muestras de asteroides a la Tierra. La misión OSIRIS-REx de la NASA ya trajo 121 gramos del asteroide Bennu en 2023, y la misión Hayabusa2 de Japón trajo muestras del asteroide Ryugu en 2020. Estamos haciendo exactamente lo que los egipcios hicieron hace 3,300 años: recoger material del espacio.',
+      'Los científicos descubrieron que las muestras de Bennu contienen aminoácidos (los bloques de construcción de la vida) y agua. Los asteroides podrían haber sembrado la Tierra con los ingredientes básicos para la vida hace 4,000 millones de años. El hierro meteorítico de la daga es primo hermano de las rocas que quizás trajeron la vida a nuestro planeta.',
+      'Algunas empresas como Planetary Resources y AstroForge planean minar asteroides en el futuro. Un solo asteroide metálico de 1 kilómetro podría contener más platino que todo lo que se ha extraído en la historia de la humanidad. La minería espacial convertiría a los asteroides en la fuente de recursos más valiosa del sistema solar.',
+      'La daga de Tutankamón es un puente entre el pasado y el futuro. Un artesano egipcio de hace 3,300 años y un ingeniero de la NASA de 2025 comparten el mismo sueño: usar los materiales del espacio para crear algo extraordinario. El faraón niño estaría orgulloso de saber que su daga inspiró a generaciones de científicos a mirar hacia las estrellas.',
+      'Al estudiar estos meteoritos antiguos, los arqueólogos modernos y los científicos espaciales comparten la misma fascinación por los misterios ocultos en las rocas del cielo.',
     ],
-    fact: 'El asteroide 16 Psyche, que la NASA visitarÃ¡ con su sonda del mismo nombre, es un nÃºcleo expuesto de hierro-nÃ­quel de 226 km de diÃ¡metro. Si pudiÃ©ramos traer todo su metal a la Tierra, valdrÃ­a aproximadamente 10 quintillones de dÃ³lares (Â¡10 seguido de 18 ceros!). Â¡Es del mismo tipo de material que la daga de TutankamÃ³n!',
+    fact: 'El asteroide 16 Psyche, que la NASA visitará con su sonda del mismo nombre, es un núcleo expuesto de hierro-níquel de 226 km de diámetro. Si pudiéramos traer todo su metal a la Tierra, valdría aproximadamente 10 quintillones de dólares (¡10 seguido de 18 ceros!). ¡Es del mismo tipo de material que la daga de Tutankamón!',
   },
 ];
 
@@ -622,7 +622,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato CientÃ­fico
+                Dato Científico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -713,7 +713,7 @@ export default function InteractiveInfographic_EgyptM10() {
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
           }}
         >
-          <ChevronRight size={14} /> Toca cada cÃ­rculo para explorar <ChevronRight size={14} />
+          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
         </motion.p>
       )}
 
@@ -764,7 +764,7 @@ export default function InteractiveInfographic_EgyptM10() {
             }}
           >
             <p style={{ margin: 0, color: '#B0C4DE', fontSize: '1.1rem', fontWeight: 'bold' }}>
-              ðŸ—¡ï¸ Â¡Has explorado todos los secretos de la Daga Espacial!
+              ðŸ—¡ï¸ ¡Has explorado todos los secretos de la Daga Espacial!
             </p>
             <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
               Ahora puedes tomar el quiz para ganar tu insignia de Herrero de Meteoritos
@@ -772,7 +772,7 @@ export default function InteractiveInfographic_EgyptM10() {
           </motion.div>
         )}
       </AnimatePresence>
-          {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
+          {/* â”€â”€â”€ Bibliografía â”€â”€â”€ */}
       <div style={{
         marginTop: '2rem', padding: '1.5rem 2rem',
         borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -786,7 +786,7 @@ export default function InteractiveInfographic_EgyptM10() {
         <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
           listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
-            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
           ))}
         </ul>
       </div>

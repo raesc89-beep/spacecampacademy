@@ -165,14 +165,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_dendera/btn_disco.png',
     image: '/assets/egypt/infographic_dendera/hero_disco.png',
     content: [
-      'En el techo de un pequeÃ±o cuarto oscuro dentro del templo de Hathor en Dendera, Egipto, existÃ­a un tesoro extraordinario: un disco de piedra arenisca de 2.5 metros de diÃ¡metro y varias toneladas de peso que contenÃ­a el mapa circular mÃ¡s antiguo del cielo nocturno que ha sobrevivido hasta nuestros dÃ­as.',
-      'Este es el Zodiaco de Dendera, tallado hace aproximadamente 2,050 aÃ±os (c. 50 a.C.) durante la dinastÃ­a ptolemaica, cuando los faraones eran de origen griego. El disco muestra el cielo completo organizado como un reloj cÃ³smico: en el centro estÃ¡ el polo norte celeste rodeado por las estrellas circumpolares, y en los anillos exteriores se despliegan las 36 constelaciones decanales del calendario estelar egipcio.',
-      'Lo extraordinario del diseÃ±o es su precisiÃ³n geomÃ©trica. Cuatro pares de figuras con forma de halcones y diosas con brazos levantados sostienen el disco desde sus bordes, representando los ocho puntos cardinales e intercardinales. La composiciÃ³n es a la vez un mapa astronÃ³mico funcional y una obra maestra del arte religioso egipcio.',
-      'El astrÃ³nomo francÃ©s Sylvie Cauville (CNRS) dedicÃ³ 20 aÃ±os a traducir los 2,500 jeroglÃ­ficos del templo de Dendera. Su trabajo revelÃ³ que cada figura del zodiaco tiene un nombre egipcio especÃ­fico y un significado astronÃ³mico preciso, no meramente decorativo.',
-      'La orientaciÃ³n del disco codifica la precesiÃ³n de los equinoccios: el eje del mundo aparece ligeramente desplazado respecto al centro geomÃ©trico, indicando que los egipcios conocÃ­an este fenÃ³meno descubierto por Hiparco de Nicea (c. 190-120 a.C.).',
-      'Esta monumental obra de piedra representa el esfuerzo mÃ¡s ambicioso del mundo antiguo por capturar todo el firmamento en una sola imagen.',
+      'En el techo de un pequeño cuarto oscuro dentro del templo de Hathor en Dendera, Egipto, existía un tesoro extraordinario: un disco de piedra arenisca de 2.5 metros de diámetro y varias toneladas de peso que contenía el mapa circular más antiguo del cielo nocturno que ha sobrevivido hasta nuestros días.',
+      'Este es el Zodiaco de Dendera, tallado hace aproximadamente 2,050 años (c. 50 a.C.) durante la dinastía ptolemaica, cuando los faraones eran de origen griego. El disco muestra el cielo completo organizado como un reloj cósmico: en el centro está el polo norte celeste rodeado por las estrellas circumpolares, y en los anillos exteriores se despliegan las 36 constelaciones decanales del calendario estelar egipcio.',
+      'Lo extraordinario del diseño es su precisión geométrica. Cuatro pares de figuras con forma de halcones y diosas con brazos levantados sostienen el disco desde sus bordes, representando los ocho puntos cardinales e intercardinales. La composición es a la vez un mapa astronómico funcional y una obra maestra del arte religioso egipcio.',
+      'El astrónomo francés Sylvie Cauville (CNRS) dedicó 20 años a traducir los 2,500 jeroglíficos del templo de Dendera. Su trabajo reveló que cada figura del zodiaco tiene un nombre egipcio específico y un significado astronómico preciso, no meramente decorativo.',
+      'La orientación del disco codifica la precesión de los equinoccios: el eje del mundo aparece ligeramente desplazado respecto al centro geométrico, indicando que los egipcios conocían este fenómeno descubierto por Hiparco de Nicea (c. 190-120 a.C.).',
+      'Esta monumental obra de piedra representa el esfuerzo más ambicioso del mundo antiguo por capturar todo el firmamento en una sola imagen.',
     ],
-    fact: 'El Zodiaco de Dendera es el Ãºnico mapa celeste circular completo de la AntigÃ¼edad. Los mapas babilonios eran tablas numÃ©ricas, y los griegos usaban esferas armilares. Solo los egipcios crearon un "planisferio" tallado en piedra.',
+    fact: 'El Zodiaco de Dendera es el único mapa celeste circular completo de la Antigüedad. Los mapas babilonios eran tablas numéricas, y los griegos usaban esferas armilares. Solo los egipcios crearon un "planisferio" tallado en piedra.',
   },
   {
     id: 'constelaciones',
@@ -181,14 +181,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_dendera/btn_constelaciones.png',
     image: '/assets/egypt/infographic_dendera/hero_constelaciones.png',
     content: [
-      'El Zodiaco de Dendera muestra las 12 constelaciones zodiacales que todavÃ­a conocemos: Aries, Tauro, GÃ©minis, CÃ¡ncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis. Pero aquÃ­ viene lo fascinante: tambiÃ©n incluye constelaciones puramente egipcias que no aparecen en ningÃºn otro mapa del mundo antiguo.',
-      'El Cocodrilo Celestial (Sobek) aparece con la cola curvada, representando una regiÃ³n del cielo cerca de lo que hoy llamamos Capricornio. El HipopÃ³tamo Erguido (Reret/Taweret) sostiene un bastÃ³n y un cocodrilo pequeÃ±o, ubicada donde hoy vemos la Osa Mayor. Un Chacal sobre un azadÃ³n marca la posiciÃ³n de lo que los griegos llamarÃ­an la constelaciÃ³n del Boyero.',
-      'La fusiÃ³n es asombrosa: en un mismo disco coexisten el toro mesopotÃ¡mico de Tauro, el leÃ³n griego de Leo, y el hipopÃ³tamo egipcio de Reret. Es el documento mÃ¡s antiguo que demuestra la convergencia de tres tradiciones astronÃ³micas diferentes (babilÃ³nica, griega y egipcia) en un solo monumento.',
-      'Los egipcios originalmente no usaban el zodÃ­aco de 12 signos. Su sistema nativo se basaba en 36 Decanos: grupos de estrellas que se levantaban sucesivamente en el horizonte cada 10 dÃ­as a lo largo del aÃ±o. Este sistema decanal fue creado al menos 2,000 aÃ±os antes que el zodÃ­aco de 12 constelaciones.',
-      'El egiptÃ³logo alemÃ¡n Christian Leitz (Universidad de TÃ¼bingen) identificÃ³ en el Zodiaco de Dendera la representaciÃ³n mÃ¡s completa de la transiciÃ³n del sistema decanal egipcio al sistema zodiacal greco-babilÃ³nico. Dendera marca el momento exacto en que un sistema reemplazÃ³ al otro.',
-      'Esta mezcla de constelaciones clÃ¡sicas y deidades estelares demuestra cÃ³mo las diferentes culturas compartÃ­an sus conocimientos celestes a orillas del Nilo.',
+      'El Zodiaco de Dendera muestra las 12 constelaciones zodiacales que todavía conocemos: Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis. Pero aquí viene lo fascinante: también incluye constelaciones puramente egipcias que no aparecen en ningún otro mapa del mundo antiguo.',
+      'El Cocodrilo Celestial (Sobek) aparece con la cola curvada, representando una región del cielo cerca de lo que hoy llamamos Capricornio. El Hipopótamo Erguido (Reret/Taweret) sostiene un bastón y un cocodrilo pequeño, ubicada donde hoy vemos la Osa Mayor. Un Chacal sobre un azadón marca la posición de lo que los griegos llamarían la constelación del Boyero.',
+      'La fusión es asombrosa: en un mismo disco coexisten el toro mesopotámico de Tauro, el león griego de Leo, y el hipopótamo egipcio de Reret. Es el documento más antiguo que demuestra la convergencia de tres tradiciones astronómicas diferentes (babilónica, griega y egipcia) en un solo monumento.',
+      'Los egipcios originalmente no usaban el zodíaco de 12 signos. Su sistema nativo se basaba en 36 Decanos: grupos de estrellas que se levantaban sucesivamente en el horizonte cada 10 días a lo largo del año. Este sistema decanal fue creado al menos 2,000 años antes que el zodíaco de 12 constelaciones.',
+      'El egiptólogo alemán Christian Leitz (Universidad de Tübingen) identificó en el Zodiaco de Dendera la representación más completa de la transición del sistema decanal egipcio al sistema zodiacal greco-babilónico. Dendera marca el momento exacto en que un sistema reemplazó al otro.',
+      'Esta mezcla de constelaciones clásicas y deidades estelares demuestra cómo las diferentes culturas compartían sus conocimientos celestes a orillas del Nilo.',
     ],
-    fact: 'Los 36 Decanos egipcios fueron adoptados por los astrÃ³nomos griegos como "prosopa" (caras), despuÃ©s por los astrÃ³logos Ã¡rabes, y finalmente llegaron a la Europa medieval. Los 36 naipes de la baraja espaÃ±ola descienden indirectamente de los Decanos egipcios.',
+    fact: 'Los 36 Decanos egipcios fueron adoptados por los astrónomos griegos como "prosopa" (caras), después por los astrólogos árabes, y finalmente llegaron a la Europa medieval. Los 36 naipes de la baraja española descienden indirectamente de los Decanos egipcios.',
   },
   {
     id: 'templo-hathor',
@@ -197,14 +197,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_dendera/btn_templo.png',
     image: '/assets/egypt/infographic_dendera/hero_templo.png',
     content: [
-      'El templo de Hathor en Dendera es uno de los mejor conservados de todo Egipto. Fue construido entre el 54 a.C. y el 20 d.C., durante los Ãºltimos faraones ptolemaicos y los primeros emperadores romanos. Hathor era la diosa del amor, la mÃºsica, la alegrÃ­a y la astronomÃ­a â€” los egipcios la llamaban "SeÃ±ora de las Estrellas".',
-      'Las 24 columnas del gran hall hipÃ³stilo tienen capiteles con el rostro de Hathor con orejas de vaca, un diseÃ±o Ãºnico en la arquitectura egipcia. El techo de este hall estÃ¡ pintado con escenas astronÃ³micas espectaculares que muestran el viaje del Sol y las constelaciones nocturnas, conservando sus colores originales despuÃ©s de 2,000 aÃ±os.',
-      'Cleopatra VII (la Ãºltima faraona de Egipto, 69-30 a.C.) estÃ¡ representada en los relieves exteriores del templo junto a su hijo CesariÃ³n (hijo de Julio CÃ©sar). Es una de las pocas representaciones autÃ©nticas que sobreviven. Las monedas de la Ã©poca muestran a Cleopatra con rasgos mÃ¡s austeros y expresiÃ³n inteligente, muy diferente de la imagen de Hollywood.',
-      'Debajo de las cÃ¡maras principales existe un sistema de criptas subterrÃ¡neas donde se guardaban los objetos rituales mÃ¡s sagrados: estatuillas de oro, papiros con textos secretos, y recipientes para ungÃ¼entos sagrados. Las paredes muestran relieves que han sido interpretados como todo tipo de cosas, desde bombillas elÃ©ctricas (pseudociencia) hasta flores de loto con serpientes (la interpretaciÃ³n arqueolÃ³gica aceptada).',
-      'El templo funcionaba tambiÃ©n como un observatorio astronÃ³mico. En el techo de la capilla este de Osiris (donde estaba el Zodiaco) hay aberturas que permitÃ­an observar estrellas especÃ­ficas. Los sacerdotes usaban estas observaciones para determinar las horas nocturnas y los dÃ­as festivos del calendario religioso.',
-      'La arquitectura del santuario evidencia que, para los egipcios, no existÃ­a separaciÃ³n entre la observaciÃ³n matemÃ¡tica de los astros y su veneraciÃ³n religiosa.',
+      'El templo de Hathor en Dendera es uno de los mejor conservados de todo Egipto. Fue construido entre el 54 a.C. y el 20 d.C., durante los últimos faraones ptolemaicos y los primeros emperadores romanos. Hathor era la diosa del amor, la música, la alegría y la astronomía â€” los egipcios la llamaban "Señora de las Estrellas".',
+      'Las 24 columnas del gran hall hipóstilo tienen capiteles con el rostro de Hathor con orejas de vaca, un diseño único en la arquitectura egipcia. El techo de este hall está pintado con escenas astronómicas espectaculares que muestran el viaje del Sol y las constelaciones nocturnas, conservando sus colores originales después de 2,000 años.',
+      'Cleopatra VII (la última faraona de Egipto, 69-30 a.C.) está representada en los relieves exteriores del templo junto a su hijo Cesarión (hijo de Julio César). Es una de las pocas representaciones auténticas que sobreviven. Las monedas de la época muestran a Cleopatra con rasgos más austeros y expresión inteligente, muy diferente de la imagen de Hollywood.',
+      'Debajo de las cámaras principales existe un sistema de criptas subterráneas donde se guardaban los objetos rituales más sagrados: estatuillas de oro, papiros con textos secretos, y recipientes para ungüentos sagrados. Las paredes muestran relieves que han sido interpretados como todo tipo de cosas, desde bombillas eléctricas (pseudociencia) hasta flores de loto con serpientes (la interpretación arqueológica aceptada).',
+      'El templo funcionaba también como un observatorio astronómico. En el techo de la capilla este de Osiris (donde estaba el Zodiaco) hay aberturas que permitían observar estrellas específicas. Los sacerdotes usaban estas observaciones para determinar las horas nocturnas y los días festivos del calendario religioso.',
+      'La arquitectura del santuario evidencia que, para los egipcios, no existía separación entre la observación matemática de los astros y su veneración religiosa.',
     ],
-    fact: 'El templo de Hathor en Dendera fue usado como iglesia cristiana copta durante siglos despuÃ©s de la caÃ­da del paganismo (c. 400 d.C.). El hollÃ­n de las hogueras coptas ennegrecÃ­a los techos, pero tambiÃ©n los protegiÃ³ de la erosiÃ³n. Al limpiar el hollÃ­n en el siglo XIX, los colores originales aparecieron perfectamente conservados.',
+    fact: 'El templo de Hathor en Dendera fue usado como iglesia cristiana copta durante siglos después de la caída del paganismo (c. 400 d.C.). El hollín de las hogueras coptas ennegrecía los techos, pero también los protegió de la erosión. Al limpiar el hollín en el siglo XIX, los colores originales aparecieron perfectamente conservados.',
   },
   {
     id: 'robo-louvre',
@@ -213,30 +213,30 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_dendera/btn_louvre.png',
     image: '/assets/egypt/infographic_dendera/hero_louvre.png',
     content: [
-      'En 1820, el ingeniero francÃ©s Claude Lelorrain llegÃ³ a Dendera con un encargo del cÃ³nsul general de Francia: arrancar el Zodiaco del techo del templo y enviarlo a ParÃ­s. Usando sierras, cinceles, pÃ³lvora y un equipo de trabajadores locales, cortÃ³ el bloque de piedra del techo en 22 dÃ­as de trabajo brutal.',
-      'El bloque de piedra, de aproximadamente 2.5 x 2.5 metros y varias toneladas de peso, fue transportado en barco por el Nilo hasta AlejandrÃ­a, y desde allÃ­ hasta Marsella. Lelorrain vendiÃ³ el Zodiaco al rey Luis XVIII por 150,000 francos (equivalente a millones de euros actuales). Desde 1822, se exhibe en el Museo del Louvre de ParÃ­s.',
-      'En el templo de Dendera, en el lugar donde estaba el original, hay hoy una copia de yeso pintado que el gobierno francÃ©s instalÃ³ como "compensaciÃ³n". Los visitantes del templo caminan bajo un falso que es una pÃ¡lida sombra del original. Esta historia es desafortunadamente representativa del saqueo sistemÃ¡tico del patrimonio egipcio durante el colonialismo europeo.',
-      'Egipto ha solicitado repetidamente la devoluciÃ³n del Zodiaco de Dendera. El ex-ministro de antigÃ¼edades Zahi Hawass incluyÃ³ el Zodiaco en su lista de los cinco objetos mÃ¡s importantes que Egipto reclama (junto con la Piedra de Rosetta del Museo BritÃ¡nico y el busto de Nefertiti del Museo de BerlÃ­n).',
-      'La controversia del Zodiaco refleja un debate global sobre patrimonio cultural: Â¿los grandes museos del mundo preservan objetos que de otro modo se perderÃ­an, o son cÃ³mplices de un saqueo colonial? El caso del Zodiaco de Dendera es especialmente doloroso porque el templo estÃ¡ perfectamente conservado y podrÃ­a albergar el original con seguridad.',
-      'Aunque el techo original descansa a miles de kilÃ³metros de su santuario, sigue siendo un testimonio silencioso del valor incalculable del conocimiento antiguo.',
+      'En 1820, el ingeniero francés Claude Lelorrain llegó a Dendera con un encargo del cónsul general de Francia: arrancar el Zodiaco del techo del templo y enviarlo a París. Usando sierras, cinceles, pólvora y un equipo de trabajadores locales, cortó el bloque de piedra del techo en 22 días de trabajo brutal.',
+      'El bloque de piedra, de aproximadamente 2.5 x 2.5 metros y varias toneladas de peso, fue transportado en barco por el Nilo hasta Alejandría, y desde allí hasta Marsella. Lelorrain vendió el Zodiaco al rey Luis XVIII por 150,000 francos (equivalente a millones de euros actuales). Desde 1822, se exhibe en el Museo del Louvre de París.',
+      'En el templo de Dendera, en el lugar donde estaba el original, hay hoy una copia de yeso pintado que el gobierno francés instaló como "compensación". Los visitantes del templo caminan bajo un falso que es una pálida sombra del original. Esta historia es desafortunadamente representativa del saqueo sistemático del patrimonio egipcio durante el colonialismo europeo.',
+      'Egipto ha solicitado repetidamente la devolución del Zodiaco de Dendera. El ex-ministro de antigüedades Zahi Hawass incluyó el Zodiaco en su lista de los cinco objetos más importantes que Egipto reclama (junto con la Piedra de Rosetta del Museo Británico y el busto de Nefertiti del Museo de Berlín).',
+      'La controversia del Zodiaco refleja un debate global sobre patrimonio cultural: ¿los grandes museos del mundo preservan objetos que de otro modo se perderían, o son cómplices de un saqueo colonial? El caso del Zodiaco de Dendera es especialmente doloroso porque el templo está perfectamente conservado y podría albergar el original con seguridad.',
+      'Aunque el techo original descansa a miles de kilómetros de su santuario, sigue siendo un testimonio silencioso del valor incalculable del conocimiento antiguo.',
     ],
-    fact: 'Cuando NapoleÃ³n invadiÃ³ Egipto en 1798, llevÃ³ consigo 167 cientÃ­ficos y artistas (la "Commission des Sciences et des Arts") ademÃ¡s de sus soldados. Esta expediciÃ³n produjo la monumental "Description de l\'Ã‰gypte" (23 volÃºmenes) pero tambiÃ©n iniciÃ³ la era del saqueo arqueolÃ³gico a escala industrial.',
+    fact: 'Cuando Napoleón invadió Egipto en 1798, llevó consigo 167 científicos y artistas (la "Commission des Sciences et des Arts") además de sus soldados. Esta expedición produjo la monumental "Description de l\'Égypte" (23 volúmenes) pero también inició la era del saqueo arqueológico a escala industrial.',
   },
   {
     id: 'datacion',
-    title: 'FotografÃ­a del Cielo del 50 a.C.',
+    title: 'Fotografía del Cielo del 50 a.C.',
     color: '#E8C96A',
     btnImage: '/assets/egypt/infographic_dendera/btn_datacion.png',
     image: '/assets/egypt/infographic_dendera/hero_datacion.png',
     content: [
-      'El Zodiaco de Dendera funciona como una "fotografÃ­a" del cielo de hace 2,000 aÃ±os. Los astrÃ³nomos modernos han usado computadoras para simular el cielo nocturno de cada aÃ±o de la AntigÃ¼edad y compararlo con las posiciones de las estrellas y planetas del Zodiaco. El resultado: la disposiciÃ³n corresponde exactamente al cielo del aÃ±o 50 a.C.',
-      'Los cinco planetas visibles a simple vista (Mercurio, Venus, Marte, JÃºpiter y Saturno) aparecen representados en el disco en posiciones especÃ­ficas relativas a las constelaciones. Los astrÃ³nomos Eric Aubourg (CEA-Saclay, 1995) y Juan Antonio Belmonte (IAC Tenerife, 2003) confirmaron independientemente que estas posiciones coinciden con una alineaciÃ³n planetaria Ãºnica del 50 a.C.',
-      'Esta capacidad de usar la astronomÃ­a como una "mÃ¡quina del tiempo" para fechar monumentos antiguos se llama arqueoastronomÃ­a computacional. Es una de las herramientas mÃ¡s poderosas de la arqueologÃ­a moderna porque los movimientos planetarios son absolutamente predecibles y reversibles en el tiempo.',
-      'La dataciÃ³n astronÃ³mica del Zodiaco causÃ³ una furibunda controversia en la Francia del siglo XIX. Los creacionistas bÃ­blicos insistÃ­an en que el Zodiaco tenÃ­a 15,000 aÃ±os (para demostrar que la Biblia era incorrecta sobre la edad del mundo), mientras que los defensores de la cronologÃ­a bÃ­blica intentaban demostrar que era mÃ¡s reciente. El debate fue resuelto por Jean-Baptiste Biot (1847) usando astronomÃ­a posicional precisa.',
-      'El matemÃ¡tico francÃ©s Jean-Baptiste Fourier (famoso por la Transformada de Fourier, herramienta fundamental en telecomunicaciones, procesamiento de seÃ±ales y compresiÃ³n de imÃ¡genes modernas) fue uno de los primeros cientÃ­ficos en analizar matemÃ¡ticamente el Zodiaco. Fourier habÃ­a acompaÃ±ado a NapoleÃ³n a Egipto como miembro de la expediciÃ³n cientÃ­fica.',
-      'Gracias a estas matemÃ¡ticas celestes, hoy sabemos que los sacerdotes esculpieron un mapa estelar mÃ¡s preciso que muchos observatorios europeos mil aÃ±os despuÃ©s.',
+      'El Zodiaco de Dendera funciona como una "fotografía" del cielo de hace 2,000 años. Los astrónomos modernos han usado computadoras para simular el cielo nocturno de cada año de la Antigüedad y compararlo con las posiciones de las estrellas y planetas del Zodiaco. El resultado: la disposición corresponde exactamente al cielo del año 50 a.C.',
+      'Los cinco planetas visibles a simple vista (Mercurio, Venus, Marte, Júpiter y Saturno) aparecen representados en el disco en posiciones específicas relativas a las constelaciones. Los astrónomos Eric Aubourg (CEA-Saclay, 1995) y Juan Antonio Belmonte (IAC Tenerife, 2003) confirmaron independientemente que estas posiciones coinciden con una alineación planetaria única del 50 a.C.',
+      'Esta capacidad de usar la astronomía como una "máquina del tiempo" para fechar monumentos antiguos se llama arqueoastronomía computacional. Es una de las herramientas más poderosas de la arqueología moderna porque los movimientos planetarios son absolutamente predecibles y reversibles en el tiempo.',
+      'La datación astronómica del Zodiaco causó una furibunda controversia en la Francia del siglo XIX. Los creacionistas bíblicos insistían en que el Zodiaco tenía 15,000 años (para demostrar que la Biblia era incorrecta sobre la edad del mundo), mientras que los defensores de la cronología bíblica intentaban demostrar que era más reciente. El debate fue resuelto por Jean-Baptiste Biot (1847) usando astronomía posicional precisa.',
+      'El matemático francés Jean-Baptiste Fourier (famoso por la Transformada de Fourier, herramienta fundamental en telecomunicaciones, procesamiento de señales y compresión de imágenes modernas) fue uno de los primeros científicos en analizar matemáticamente el Zodiaco. Fourier había acompañado a Napoleón a Egipto como miembro de la expedición científica.',
+      'Gracias a estas matemáticas celestes, hoy sabemos que los sacerdotes esculpieron un mapa estelar más preciso que muchos observatorios europeos mil años después.',
     ],
-    fact: 'La Transformada de Fourier, inventada por el mismo matemÃ¡tico que estudiÃ³ el Zodiaco de Dendera, es la base del formato JPEG, la compresiÃ³n MP3, el WiFi, la resonancia magnÃ©tica mÃ©dica y prÃ¡cticamente toda la tecnologÃ­a digital moderna. Â¡El estudio de un mapa estelar egipcio contribuyÃ³ a inventar el futuro!',
+    fact: 'La Transformada de Fourier, inventada por el mismo matemático que estudió el Zodiaco de Dendera, es la base del formato JPEG, la compresión MP3, el WiFi, la resonancia magnética médica y prácticamente toda la tecnología digital moderna. ¡El estudio de un mapa estelar egipcio contribuyó a inventar el futuro!',
   },
   {
     id: 'criaturas',
@@ -245,14 +245,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_dendera/btn_criaturas.png',
     image: '/assets/egypt/infographic_dendera/hero_criaturas.png',
     content: [
-      'El cielo egipcio estaba poblado de criaturas que no aparecen en ningÃºn otro sistema astronÃ³mico del mundo. El HipopÃ³tamo Erguido (Reret o Taweret) es una de las mÃ¡s impresionantes: una hipopÃ³tama de pie sobre sus patas traseras, con cola de cocodrilo, garras de leÃ³n y pechos humanos. En el Zodiaco de Dendera, Reret sostiene un bastÃ³n y un cocodrilo atado.',
-      'Reret corresponde aproximadamente a nuestra Osa Mayor, pero los egipcios veÃ­an una criatura protectora donde los griegos veÃ­an un oso y los mesopotÃ¡micos veÃ­an un carro. La "Pata de Buey" (Mesketiu) es la otra constelaciÃ³n circumpolar principal, visible toda la noche: corresponde a las siete estrellas mÃ¡s brillantes de la Osa Mayor formando la pata trasera de un toro.',
-      'El cocodrilo Sobek aparece con la cola curvada hacia arriba. En los relojes estelares de las tumbas del Valle de los Reyes, Sobek sirve como marcador de la hora: su posiciÃ³n en el cielo indicaba el momento de la noche. Los sacerdotes observaban cuÃ¡ntas "estrellas de hora" habÃ­an cruzado el meridiano sobre una plomada.',
-      'La cobra celestial (Wadjet/Uraeus) tambiÃ©n aparece en el Zodiaco, representando la constelaciÃ³n que los griegos llamaban Hydra. La cobra era el sÃ­mbolo del Bajo Egipto y aparecÃ­a en la corona del faraÃ³n como protecciÃ³n mÃ¡gica. En el cielo, la cobra protegÃ­a el disco solar nocturno durante su viaje por el Duat (inframundo).',
-      'El astrÃ³nomo JosÃ© Lull (Universidad de Valencia) catalogÃ³ mÃ¡s de 100 figuras celestes diferentes en los techos astronÃ³micos de las tumbas egipcias, de las cuales solo unas 40 han sido identificadas con constelaciones modernas. El resto permanece como un misterio que los arqueoastrÃ³nomos intentan resolver comparando mÃºltiples fuentes.',
-      'Este peculiar zoolÃ³gico estelar nos recuerda que cada civilizaciÃ³n proyectÃ³ sus propios mitos y animales sobre los mismos puntos de luz en la oscuridad.',
+      'El cielo egipcio estaba poblado de criaturas que no aparecen en ningún otro sistema astronómico del mundo. El Hipopótamo Erguido (Reret o Taweret) es una de las más impresionantes: una hipopótama de pie sobre sus patas traseras, con cola de cocodrilo, garras de león y pechos humanos. En el Zodiaco de Dendera, Reret sostiene un bastón y un cocodrilo atado.',
+      'Reret corresponde aproximadamente a nuestra Osa Mayor, pero los egipcios veían una criatura protectora donde los griegos veían un oso y los mesopotámicos veían un carro. La "Pata de Buey" (Mesketiu) es la otra constelación circumpolar principal, visible toda la noche: corresponde a las siete estrellas más brillantes de la Osa Mayor formando la pata trasera de un toro.',
+      'El cocodrilo Sobek aparece con la cola curvada hacia arriba. En los relojes estelares de las tumbas del Valle de los Reyes, Sobek sirve como marcador de la hora: su posición en el cielo indicaba el momento de la noche. Los sacerdotes observaban cuántas "estrellas de hora" habían cruzado el meridiano sobre una plomada.',
+      'La cobra celestial (Wadjet/Uraeus) también aparece en el Zodiaco, representando la constelación que los griegos llamaban Hydra. La cobra era el símbolo del Bajo Egipto y aparecía en la corona del faraón como protección mágica. En el cielo, la cobra protegía el disco solar nocturno durante su viaje por el Duat (inframundo).',
+      'El astrónomo José Lull (Universidad de Valencia) catalogó más de 100 figuras celestes diferentes en los techos astronómicos de las tumbas egipcias, de las cuales solo unas 40 han sido identificadas con constelaciones modernas. El resto permanece como un misterio que los arqueoastrónomos intentan resolver comparando múltiples fuentes.',
+      'Este peculiar zoológico estelar nos recuerda que cada civilización proyectó sus propios mitos y animales sobre los mismos puntos de luz en la oscuridad.',
     ],
-    fact: 'Taweret (el HipopÃ³tamo Erguido del cielo) era tambiÃ©n la diosa protectora del embarazo y el parto. Los amuletos de Taweret eran los mÃ¡s populares en el Egipto antiguo â€” se han encontrado miles en excavaciones. Una diosa hipopÃ³tama celestial protegiendo a las madres: Â¡la primera constelaciÃ³n "maternal" de la historia!',
+    fact: 'Taweret (el Hipopótamo Erguido del cielo) era también la diosa protectora del embarazo y el parto. Los amuletos de Taweret eran los más populares en el Egipto antiguo â€” se han encontrado miles en excavaciones. Una diosa hipopótama celestial protegiendo a las madres: ¡la primera constelación "maternal" de la historia!',
   },
   {
     id: 'planetas',
@@ -261,30 +261,30 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_dendera/btn_planetas.png',
     image: '/assets/egypt/infographic_dendera/hero_planetas.png',
     content: [
-      'Los egipcios llamaban a los planetas "estrellas que no descansan" o "estrellas infatigables" porque, a diferencia de las estrellas fijas, se movÃ­an lentamente entre las constelaciones. En el Zodiaco de Dendera, los cinco planetas visibles aparecen representados con iconografÃ­a que fusiona tradiciones egipcias y griegas.',
-      'Saturno aparece como Horus-Toro (Hor-ka-pet): un hombre con cabeza de halcÃ³n de pie sobre una barca divina. JÃºpiter es Horus-el-Misterioso (Hor-pest-djeba): un Ã¡guila sobre una serpiente. Marte es Horus-Rojo (Hor-Desher): un guerrero con cabeza de halcÃ³n sosteniendo un cetro was. Venus es la "Estrella de la MaÃ±ana" y Mercurio el "Planeta de Set".',
-      'La identificaciÃ³n de los planetas con Horus (el dios halcÃ³n) es exclusivamente egipcia. Los griegos los asociaron con Zeus, Ares, Afrodita, Hermes y Cronos. Los babilonios con Marduk, Nergal, Ishtar, Nabu y Ninurta. La misma observaciÃ³n â€” cinco luces que se mueven entre las estrellas fijas â€” produjo sistemas mitolÃ³gicos completamente diferentes.',
-      'Los astrÃ³nomos del templo de Dendera mantenÃ­an registros precisos de las posiciones planetarias. Estos registros eran esenciales para la astrologÃ­a (que en Egipto estaba fusionada con la medicina) pero tambiÃ©n produjeron datos astronÃ³micos de valor incalculable. Las tablas planetarias egipcias ayudaron a los astrÃ³nomos modernos a reconstruir las Ã³rbitas planetarias con mayor precisiÃ³n.',
-      'La representaciÃ³n de Marte como "Horus Rojo" es especialmente reveladora: los egipcios observaron correctamente el color rojizo de Marte, que se debe al Ã³xido de hierro en su superficie. Esta observaciÃ³n, hecha a simple vista hace mÃ¡s de 2,000 aÃ±os, fue confirmada por las misiones robÃ³ticas de la NASA en el siglo XXI.',
-      'Identificar el verdadero color de Marte y registrar meticulosamente sus Ã³rbitas demuestra que los sacerdotes eran tanto astrÃ³nomos observacionales como lÃ­deres religiosos.',
+      'Los egipcios llamaban a los planetas "estrellas que no descansan" o "estrellas infatigables" porque, a diferencia de las estrellas fijas, se movían lentamente entre las constelaciones. En el Zodiaco de Dendera, los cinco planetas visibles aparecen representados con iconografía que fusiona tradiciones egipcias y griegas.',
+      'Saturno aparece como Horus-Toro (Hor-ka-pet): un hombre con cabeza de halcón de pie sobre una barca divina. Júpiter es Horus-el-Misterioso (Hor-pest-djeba): un águila sobre una serpiente. Marte es Horus-Rojo (Hor-Desher): un guerrero con cabeza de halcón sosteniendo un cetro was. Venus es la "Estrella de la Mañana" y Mercurio el "Planeta de Set".',
+      'La identificación de los planetas con Horus (el dios halcón) es exclusivamente egipcia. Los griegos los asociaron con Zeus, Ares, Afrodita, Hermes y Cronos. Los babilonios con Marduk, Nergal, Ishtar, Nabu y Ninurta. La misma observación â€” cinco luces que se mueven entre las estrellas fijas â€” produjo sistemas mitológicos completamente diferentes.',
+      'Los astrónomos del templo de Dendera mantenían registros precisos de las posiciones planetarias. Estos registros eran esenciales para la astrología (que en Egipto estaba fusionada con la medicina) pero también produjeron datos astronómicos de valor incalculable. Las tablas planetarias egipcias ayudaron a los astrónomos modernos a reconstruir las órbitas planetarias con mayor precisión.',
+      'La representación de Marte como "Horus Rojo" es especialmente reveladora: los egipcios observaron correctamente el color rojizo de Marte, que se debe al óxido de hierro en su superficie. Esta observación, hecha a simple vista hace más de 2,000 años, fue confirmada por las misiones robóticas de la NASA en el siglo XXI.',
+      'Identificar el verdadero color de Marte y registrar meticulosamente sus órbitas demuestra que los sacerdotes eran tanto astrónomos observacionales como líderes religiosos.',
     ],
-    fact: 'Los nombres de los dÃ­as de la semana en espaÃ±ol (Lunes=Luna, Martes=Marte, MiÃ©rcoles=Mercurio, Jueves=JÃºpiter, Viernes=Venus) vienen directamente de la asociaciÃ³n planetaria que los egipcios transmitieron a los griegos, los griegos a los romanos, y los romanos a nosotros. Â¡Cada semana usamos astronomÃ­a egipcia!',
+    fact: 'Los nombres de los días de la semana en español (Lunes=Luna, Martes=Marte, Miércoles=Mercurio, Jueves=Júpiter, Viernes=Venus) vienen directamente de la asociación planetaria que los egipcios transmitieron a los griegos, los griegos a los romanos, y los romanos a nosotros. ¡Cada semana usamos astronomía egipcia!',
   },
   {
     id: 'legado',
-    title: 'El Viaje de 5,000 AÃ±os',
+    title: 'El Viaje de 5,000 Años',
     color: '#9B8EC7',
     btnImage: '/assets/egypt/infographic_dendera/btn_legado.png',
     image: '/assets/egypt/infographic_dendera/hero_legado.png',
     content: [
-      'El Zodiaco de Dendera nos cuenta una historia Ã©pica de cÃ³mo el conocimiento astronÃ³mico ha viajado a travÃ©s del tiempo y las culturas. Los mesopotamios de Babilonia (c. 3000 a.C.) observaron el cielo y crearon el zodÃ­aco de 12 constelaciones basÃ¡ndose en la franja del cielo por donde se mueven el Sol, la Luna y los planetas (la eclÃ­ptica).',
-      'Los griegos adoptaron el zodÃ­aco babilÃ³nico y lo refinaron matemÃ¡ticamente. Hiparco de Nicea (c. 190-120 a.C.) creÃ³ el primer catÃ¡logo estelar preciso con la posiciÃ³n de 850 estrellas y descubriÃ³ la precesiÃ³n de los equinoccios. Cuando Alejandro Magno conquistÃ³ Egipto (332 a.C.), los griegos llevaron su astronomÃ­a al Nilo.',
-      'Los egipcios fusionaron la astronomÃ­a griega con su propia tradiciÃ³n milenaria de Decanos (36 constelaciones estelares de 10 dÃ­as cada una) y crearon el Zodiaco de Dendera: una obra maestra de sÃ­ntesis cultural. El disco de piedra es la prueba fÃ­sica de que dos sistemas astronÃ³micos de miles de aÃ±os de antigÃ¼edad convergieron en un solo monumento.',
-      'Este conocimiento llegÃ³ a Roma con la conquista de Egipto (30 a.C.). Los romanos lo transmitieron a toda Europa. Los astrÃ³logos Ã¡rabes medievales tradujeron y mejoraron los textos astronÃ³micos egipcios y griegos. El astrÃ³logo Ã¡rabe Abu Ma\'shar (787-886 d.C.) transmitiÃ³ los Decanos egipcios a la Europa medieval a travÃ©s de sus traducciones latinas.',
-      'Hoy, cuando lees tu horÃ³scopo en el periÃ³dico, estÃ¡s viendo el Ãºltimo destello de este viaje de 5,000 aÃ±os. Los 12 signos zodiacales son los mismos que aparecen en el Zodiaco de Dendera, que a su vez los heredÃ³ de Babilonia. La astronomÃ­a moderna naciÃ³ de la astrologÃ­a antigua, y la astrologÃ­a antigua naciÃ³ de la observaciÃ³n paciente de pastores mesopotÃ¡micos que miraban el cielo nocturno.',
-      'AsÃ­, este disco de piedra se convierte en el puente definitivo que conecta las observaciones milenarias de los desiertos antiguos con los mapas celestes de hoy.',
+      'El Zodiaco de Dendera nos cuenta una historia épica de cómo el conocimiento astronómico ha viajado a través del tiempo y las culturas. Los mesopotamios de Babilonia (c. 3000 a.C.) observaron el cielo y crearon el zodíaco de 12 constelaciones basándose en la franja del cielo por donde se mueven el Sol, la Luna y los planetas (la eclíptica).',
+      'Los griegos adoptaron el zodíaco babilónico y lo refinaron matemáticamente. Hiparco de Nicea (c. 190-120 a.C.) creó el primer catálogo estelar preciso con la posición de 850 estrellas y descubrió la precesión de los equinoccios. Cuando Alejandro Magno conquistó Egipto (332 a.C.), los griegos llevaron su astronomía al Nilo.',
+      'Los egipcios fusionaron la astronomía griega con su propia tradición milenaria de Decanos (36 constelaciones estelares de 10 días cada una) y crearon el Zodiaco de Dendera: una obra maestra de síntesis cultural. El disco de piedra es la prueba física de que dos sistemas astronómicos de miles de años de antigüedad convergieron en un solo monumento.',
+      'Este conocimiento llegó a Roma con la conquista de Egipto (30 a.C.). Los romanos lo transmitieron a toda Europa. Los astrólogos árabes medievales tradujeron y mejoraron los textos astronómicos egipcios y griegos. El astrólogo árabe Abu Ma\'shar (787-886 d.C.) transmitió los Decanos egipcios a la Europa medieval a través de sus traducciones latinas.',
+      'Hoy, cuando lees tu horóscopo en el periódico, estás viendo el último destello de este viaje de 5,000 años. Los 12 signos zodiacales son los mismos que aparecen en el Zodiaco de Dendera, que a su vez los heredó de Babilonia. La astronomía moderna nació de la astrología antigua, y la astrología antigua nació de la observación paciente de pastores mesopotámicos que miraban el cielo nocturno.',
+      'Así, este disco de piedra se convierte en el puente definitivo que conecta las observaciones milenarias de los desiertos antiguos con los mapas celestes de hoy.',
     ],
-    fact: 'La palabra "zodiaco" viene del griego "zodiakos kyklos" (cÃ­rculo de animales). Pero en realidad, solo 7 de los 12 signos son animales (Aries, Tauro, CÃ¡ncer, Leo, Escorpio, Capricornio, Piscis). Los otros cinco son humanos (GÃ©minis, Virgo, Acuario, Sagitario) o un objeto (Libra). Â¡El "cÃ­rculo de animales" no es tan animal como su nombre sugiere!',
+    fact: 'La palabra "zodiaco" viene del griego "zodiakos kyklos" (círculo de animales). Pero en realidad, solo 7 de los 12 signos son animales (Aries, Tauro, Cáncer, Leo, Escorpio, Capricornio, Piscis). Los otros cinco son humanos (Géminis, Virgo, Acuario, Sagitario) o un objeto (Libra). ¡El "círculo de animales" no es tan animal como su nombre sugiere!',
   },
 ];
 
@@ -639,7 +639,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato CientÃ­fico
+                Dato Científico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -728,7 +728,7 @@ export default function InteractiveInfographic_EgyptM9() {
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
           }}
         >
-          <ChevronRight size={14} /> Toca cada cÃ­rculo para explorar <ChevronRight size={14} />
+          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
         </motion.p>
       )}
 
@@ -776,15 +776,15 @@ export default function InteractiveInfographic_EgyptM9() {
             }}
           >
             <p style={{ margin: 0, color: '#D46A6A', fontSize: '1.1rem', fontWeight: 'bold' }}>
-              ðŸ† Â¡Has descifrado todos los secretos del Zodiaco de Dendera!
+              ðŸ† ¡Has descifrado todos los secretos del Zodiaco de Dendera!
             </p>
             <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
-              Ahora puedes tomar el quiz para ganar tu insignia de AstrÃ³logo Maestro
+              Ahora puedes tomar el quiz para ganar tu insignia de Astrólogo Maestro
             </p>
           </motion.div>
         )}
       </AnimatePresence>
-          {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
+          {/* â”€â”€â”€ Bibliografía â”€â”€â”€ */}
       <div style={{
         marginTop: '2rem', padding: '1.5rem 2rem',
         borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -798,7 +798,7 @@ export default function InteractiveInfographic_EgyptM9() {
         <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
           listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
-            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
           ))}
         </ul>
       </div>

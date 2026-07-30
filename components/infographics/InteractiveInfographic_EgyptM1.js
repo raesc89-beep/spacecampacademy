@@ -140,13 +140,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_nabta/btn_observatorio.png',
     image: '/assets/egypt/infographic_nabta/hero_observatorio.png',
     content: [
-      'Imagina que estÃ¡s acampando en el desierto, sin telÃ©fono, sin reloj, sin calendario... Â¿CÃ³mo sabrÃ­as en quÃ© dÃ­a del aÃ±o estÃ¡s? Hace mÃ¡s de 7,000 aÃ±os, unas tribus muy ingeniosas resolvieron este problema de una manera brillante: construyeron un cÃ­rculo de piedras gigantes que funcionaba como un reloj y calendario cÃ³smico. Ese lugar se llama Nabta Playa, y estÃ¡ en el desierto del Sahara, en el sur de Egipto.',
-      'El cÃ­rculo de Nabta Playa es considerado el observatorio astronÃ³mico mÃ¡s antiguo de toda la Tierra, construido entre el 4800 y el 4000 a.C. Para que te hagas una idea: es aproximadamente 1,000 aÃ±os mÃ¡s antiguo que Stonehenge en Inglaterra y 2,000 aÃ±os mÃ¡s antiguo que las PirÃ¡mides de Guiza. Â¡Estos constructores eran los primeros cientÃ­ficos del cielo!',
-      'El "crÃ³mlech" (cÃ­rculo de piedras) consta de 30 piedras dispuestas en cÃ­rculo, con 6 piedras centrales mÃ¡s pequeÃ±as colocadas en posiciones muy especÃ­ficas. No estÃ¡n puestas al azar: cada piedra seÃ±ala hacia una direcciÃ³n astronÃ³mica importante, como la salida del Sol en el solsticio de verano o la posiciÃ³n de ciertas estrellas.',
-      'Los arqueÃ³logos Fred Wendorf y Romuald Schild descubrieron este sitio en los aÃ±os 1990 durante expediciones financiadas por la National Geographic Society. Encontraron no solo el cÃ­rculo de piedras, sino tambiÃ©n cinco alineamientos megalÃ­ticos que se extienden desde un conjunto central, como rayos de una rueda gigante apuntando al cielo.',
-      'Hoy, Nabta Playa se encuentra a unos 800 km al sur de El Cairo y 100 km al oeste de Abu Simbel, en coordenadas 22Â°32\' Norte, 30Â°42\' Este. Es uno de los lugares mÃ¡s remotos y Ã¡ridos del planeta, pero su importancia cientÃ­fica es enorme: nos muestra que la astronomÃ­a naciÃ³ mucho antes de lo que pensÃ¡bamos.',
+      'Imagina que estás acampando en el desierto, sin teléfono, sin reloj, sin calendario... ¿Cómo sabrías en qué día del año estás? Hace más de 7,000 años, unas tribus muy ingeniosas resolvieron este problema de una manera brillante: construyeron un círculo de piedras gigantes que funcionaba como un reloj y calendario cósmico. Ese lugar se llama Nabta Playa, y está en el desierto del Sahara, en el sur de Egipto.',
+      'El círculo de Nabta Playa es considerado el observatorio astronómico más antiguo de toda la Tierra, construido entre el 4800 y el 4000 a.C. Para que te hagas una idea: es aproximadamente 1,000 años más antiguo que Stonehenge en Inglaterra y 2,000 años más antiguo que las Pirámides de Guiza. ¡Estos constructores eran los primeros científicos del cielo!',
+      'El "crómlech" (círculo de piedras) consta de 30 piedras dispuestas en círculo, con 6 piedras centrales más pequeñas colocadas en posiciones muy específicas. No están puestas al azar: cada piedra señala hacia una dirección astronómica importante, como la salida del Sol en el solsticio de verano o la posición de ciertas estrellas.',
+      'Los arqueólogos Fred Wendorf y Romuald Schild descubrieron este sitio en los años 1990 durante expediciones financiadas por la National Geographic Society. Encontraron no solo el círculo de piedras, sino también cinco alineamientos megalíticos que se extienden desde un conjunto central, como rayos de una rueda gigante apuntando al cielo.',
+      'Hoy, Nabta Playa se encuentra a unos 800 km al sur de El Cairo y 100 km al oeste de Abu Simbel, en coordenadas 22°32\' Norte, 30°42\' Este. Es uno de los lugares más remotos y áridos del planeta, pero su importancia científica es enorme: nos muestra que la astronomía nació mucho antes de lo que pensábamos.',
     ],
-    fact: 'Â¿SabÃ­as que Nabta Playa es tan antiguo que cuando se construyÃ³, el Sahara no era un desierto? Era una sabana verde con lagos, gacelas y jirafas. El observatorio fue construido junto a un lago que hoy es solo arena seca.',
+    fact: '¿Sabías que Nabta Playa es tan antiguo que cuando se construyó, el Sahara no era un desierto? Era una sabana verde con lagos, gacelas y jirafas. El observatorio fue construido junto a un lago que hoy es solo arena seca.',
   },
   {
     id: 'sahara-verde',
@@ -155,13 +155,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_nabta/btn_sahara.png',
     image: '/assets/egypt/infographic_nabta/hero_sahara.png',
     content: [
-      'Â¿Te imaginas el desierto del Sahara con rÃ­os, lagos y bosques? Parece ciencia ficciÃ³n, pero hace entre 11,000 y 5,000 aÃ±os era exactamente asÃ­. Los cientÃ­ficos llaman a este periodo el "Sahara Verde" o "Periodo HÃºmedo Africano". La Tierra se inclinÃ³ ligeramente diferente hacia el Sol, y eso cambiÃ³ los patrones de lluvia sobre todo el norte de Ãfrica.',
-      'En Nabta Playa, los arqueÃ³logos encontraron huesos de peces de agua dulce, conchas de moluscos, y restos de plantas que solo crecen cerca del agua. HabÃ­a una gran cuenca endorreica (un lago que no tiene salida al mar) donde las tribus se reunÃ­an durante la temporada de lluvias del monzÃ³n. Era como un oasis gigante en medio de lo que hoy es puro desierto.',
-      'Las tribus que vivÃ­an aquÃ­ eran pastores seminÃ³madas que criaban ganado vacuno. SeguÃ­an las lluvias estacionales: cuando llovÃ­a (verano), se reunÃ­an cerca del lago de Nabta Playa. Cuando llegaba la estaciÃ³n seca (invierno), se movÃ­an hacia el sur buscando pastos. Necesitaban saber exactamente cuÃ¡ndo iba a llover para sobrevivir, y por eso empezaron a estudiar las estrellas.',
-      'El cambio climÃ¡tico que convirtiÃ³ el Sahara en un desierto fue gradual. Entre el 5500 y el 3500 a.C., las lluvias fueron disminuyendo poco a poco. Las tribus se vieron obligadas a migrar hacia la Ãºnica fuente de agua permanente de la regiÃ³n: el rÃ­o Nilo. Esta migraciÃ³n es una de las teorÃ­as mÃ¡s aceptadas sobre el origen de la civilizaciÃ³n egipcia.',
-      'Los sedimentos del lago de Nabta Playa cuentan esta historia como capas de un pastel: las capas mÃ¡s profundas tienen arcilla hÃºmeda y restos orgÃ¡nicos (cuando habÃ­a agua), y las capas superiores son arena seca (cuando el desierto tomÃ³ control). Es como leer un libro de historia escrito por la propia Tierra.',
+      '¿Te imaginas el desierto del Sahara con ríos, lagos y bosques? Parece ciencia ficción, pero hace entre 11,000 y 5,000 años era exactamente así. Los científicos llaman a este periodo el "Sahara Verde" o "Periodo Húmedo Africano". La Tierra se inclinó ligeramente diferente hacia el Sol, y eso cambió los patrones de lluvia sobre todo el norte de África.',
+      'En Nabta Playa, los arqueólogos encontraron huesos de peces de agua dulce, conchas de moluscos, y restos de plantas que solo crecen cerca del agua. Había una gran cuenca endorreica (un lago que no tiene salida al mar) donde las tribus se reunían durante la temporada de lluvias del monzón. Era como un oasis gigante en medio de lo que hoy es puro desierto.',
+      'Las tribus que vivían aquí eran pastores seminómadas que criaban ganado vacuno. Seguían las lluvias estacionales: cuando llovía (verano), se reunían cerca del lago de Nabta Playa. Cuando llegaba la estación seca (invierno), se movían hacia el sur buscando pastos. Necesitaban saber exactamente cuándo iba a llover para sobrevivir, y por eso empezaron a estudiar las estrellas.',
+      'El cambio climático que convirtió el Sahara en un desierto fue gradual. Entre el 5500 y el 3500 a.C., las lluvias fueron disminuyendo poco a poco. Las tribus se vieron obligadas a migrar hacia la única fuente de agua permanente de la región: el río Nilo. Esta migración es una de las teorías más aceptadas sobre el origen de la civilización egipcia.',
+      'Los sedimentos del lago de Nabta Playa cuentan esta historia como capas de un pastel: las capas más profundas tienen arcilla húmeda y restos orgánicos (cuando había agua), y las capas superiores son arena seca (cuando el desierto tomó control). Es como leer un libro de historia escrito por la propia Tierra.',
     ],
-    fact: 'El "Sahara Verde" fue tan hÃºmedo que tenÃ­a rÃ­os mÃ¡s grandes que el Mississippi. Los cientÃ­ficos han encontrado pinturas rupestres en el Sahara mostrando hipopÃ³tamos, cocodrilos y elefantes nadando. Â¡Hoy esos mismos lugares tienen las temperaturas mÃ¡s altas del planeta!',
+    fact: 'El "Sahara Verde" fue tan húmedo que tenía ríos más grandes que el Mississippi. Los científicos han encontrado pinturas rupestres en el Sahara mostrando hipopótamos, cocodrilos y elefantes nadando. ¡Hoy esos mismos lugares tienen las temperaturas más altas del planeta!',
   },
   {
     id: 'megalitos',
@@ -170,13 +170,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_nabta/btn_megalitos.png',
     image: '/assets/egypt/infographic_nabta/hero_megalitos.png',
     content: [
-      'Las piedras de Nabta Playa no son piedras cualquiera: son megalitos, palabra que viene del griego "mega" (grande) y "lithos" (piedra). Algunas pesan varias toneladas y fueron traÃ­das desde canteras a kilÃ³metros de distancia. Â¿CÃ³mo las transportaron sin ruedas, sin animales de carga entrenados y sin herramientas de metal? Â¡Solo con ingenio humano y trabajo en equipo!',
-      'El cÃ­rculo principal tiene un diÃ¡metro de aproximadamente 4 metros y estÃ¡ formado por 30 piedras relativamente pequeÃ±as. Pero lo mÃ¡s interesante son las 6 piedras centrales: estÃ¡n colocadas en dos lÃ­neas de 3, y cada lÃ­nea tiene una inclinaciÃ³n diferente. El astrofÃ­sico Thomas G. Brophy propuso que estas piedras representan estrellas especÃ­ficas del cielo.',
-      'AdemÃ¡s del cÃ­rculo, hay cinco alineamientos megalÃ­ticos que se extienden como los radios de una bicicleta desde un punto central. Cada alineamiento apunta hacia una direcciÃ³n astronÃ³micamente significativa. Es como si hubieran dibujado flechas gigantes en el suelo diciendo: "Â¡Mira hacia allÃ¡ para ver algo importante en el cielo!"',
-      'Algunos de los megalitos enterrados son verdaderamente impresionantes. Los arqueÃ³logos encontraron piedras esculpidas de hasta 2.5 metros de alto enterradas bajo la superficie, con formas que parecen representar figuras o sÃ­mbolos. Uno de los hallazgos mÃ¡s sorprendentes fue una roca esculpida que algunos investigadores interpretan como un intento temprano de escultura monumental egipcia.',
-      'Las excavaciones tambiÃ©n revelaron complejos subterrÃ¡neos: cÃ¡maras de piedra con techos forrados de arcilla donde se realizaban ceremonias. En estas cÃ¡maras se encontraron esqueletos completos de ganado vacuno, cuidadosamente enterrados como ofrendas rituales. Cada piedra, cada alineamiento, cada cÃ¡mara tenÃ­a un propÃ³sito preciso conectado con el cielo.',
+      'Las piedras de Nabta Playa no son piedras cualquiera: son megalitos, palabra que viene del griego "mega" (grande) y "lithos" (piedra). Algunas pesan varias toneladas y fueron traídas desde canteras a kilómetros de distancia. ¿Cómo las transportaron sin ruedas, sin animales de carga entrenados y sin herramientas de metal? ¡Solo con ingenio humano y trabajo en equipo!',
+      'El círculo principal tiene un diámetro de aproximadamente 4 metros y está formado por 30 piedras relativamente pequeñas. Pero lo más interesante son las 6 piedras centrales: están colocadas en dos líneas de 3, y cada línea tiene una inclinación diferente. El astrofísico Thomas G. Brophy propuso que estas piedras representan estrellas específicas del cielo.',
+      'Además del círculo, hay cinco alineamientos megalíticos que se extienden como los radios de una bicicleta desde un punto central. Cada alineamiento apunta hacia una dirección astronómicamente significativa. Es como si hubieran dibujado flechas gigantes en el suelo diciendo: "¡Mira hacia allá para ver algo importante en el cielo!"',
+      'Algunos de los megalitos enterrados son verdaderamente impresionantes. Los arqueólogos encontraron piedras esculpidas de hasta 2.5 metros de alto enterradas bajo la superficie, con formas que parecen representar figuras o símbolos. Uno de los hallazgos más sorprendentes fue una roca esculpida que algunos investigadores interpretan como un intento temprano de escultura monumental egipcia.',
+      'Las excavaciones también revelaron complejos subterráneos: cámaras de piedra con techos forrados de arcilla donde se realizaban ceremonias. En estas cámaras se encontraron esqueletos completos de ganado vacuno, cuidadosamente enterrados como ofrendas rituales. Cada piedra, cada alineamiento, cada cámara tenía un propósito preciso conectado con el cielo.',
     ],
-    fact: 'Los constructores de Nabta Playa no tenÃ­an ninguna herramienta de metal. Todo lo hicieron con piedra contra piedra, cuerdas de fibra vegetal y palancas de madera. Mover una piedra de 2 toneladas requerÃ­a al menos 20 personas tirando coordinadamente. Â¡Era un proyecto comunitario de toda la tribu!',
+    fact: 'Los constructores de Nabta Playa no tenían ninguna herramienta de metal. Todo lo hicieron con piedra contra piedra, cuerdas de fibra vegetal y palancas de madera. Mover una piedra de 2 toneladas requería al menos 20 personas tirando coordinadamente. ¡Era un proyecto comunitario de toda la tribu!',
   },
   {
     id: 'solsticio',
@@ -185,58 +185,58 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_nabta/btn_solsticio.png',
     image: '/assets/egypt/infographic_nabta/hero_solsticio.png',
     content: [
-      'Â¿Sabes quÃ© es el solsticio de verano? Es el dÃ­a mÃ¡s largo del aÃ±o, cuando el Sol alcanza su punto mÃ¡s alto en el cielo. En el hemisferio norte ocurre alrededor del 21 de junio. Para las tribus de Nabta Playa, este dÃ­a era crucial: marcaba el inicio de la temporada de lluvias del monzÃ³n africano, lo que significaba Â¡agua, comida y vida!',
-      'El cÃ­rculo de piedras tiene cuatro pares de piedras a modo de "puertas" enfrentadas dos a dos. Una pareja estÃ¡ orientada perfectamente en direcciÃ³n norte-sur (como una brÃºjula). La segunda pareja apunta en direcciÃ³n nordeste-suroeste, seÃ±alando exactamente el punto del horizonte donde sale el Sol durante el solsticio de verano.',
-      'Imagina que estÃ¡s parado en el centro del cÃ­rculo hace 7,000 aÃ±os. Miras a travÃ©s de una de las "puertas" de piedra y ves el Sol saliendo exactamente entre las dos piedras. Â¡Ese es el dÃ­a del solsticio! Es como tener un calendario de piedra gigante: cuando el Sol se asoma por la puerta correcta, sabes que las lluvias llegarÃ¡n pronto.',
-      'Lo mÃ¡s asombroso es la precisiÃ³n. Los cientÃ­ficos modernos han verificado con GPS y software astronÃ³mico que las alineaciones siguen siendo precisas despuÃ©s de 7,000 aÃ±os. La inclinaciÃ³n del eje terrestre ha cambiado ligeramente desde entonces (un efecto llamado precesiÃ³n), pero los constructores originales acertaron con una precisiÃ³n de menos de 1 grado.',
-      'Este "reloj de piedra" no solo marcaba el solsticio. Combinando las diferentes puertas y alineamientos, las tribus podÃ­an predecir las estaciones completas: cuÃ¡ndo sembrar, cuÃ¡ndo mover el ganado, cuÃ¡ndo preparar los campamentos de verano. Era una computadora astronÃ³mica hecha de roca, Â¡miles de aÃ±os antes de que existieran los nÃºmeros escritos!',
+      '¿Sabes qué es el solsticio de verano? Es el día más largo del año, cuando el Sol alcanza su punto más alto en el cielo. En el hemisferio norte ocurre alrededor del 21 de junio. Para las tribus de Nabta Playa, este día era crucial: marcaba el inicio de la temporada de lluvias del monzón africano, lo que significaba ¡agua, comida y vida!',
+      'El círculo de piedras tiene cuatro pares de piedras a modo de "puertas" enfrentadas dos a dos. Una pareja está orientada perfectamente en dirección norte-sur (como una brújula). La segunda pareja apunta en dirección nordeste-suroeste, señalando exactamente el punto del horizonte donde sale el Sol durante el solsticio de verano.',
+      'Imagina que estás parado en el centro del círculo hace 7,000 años. Miras a través de una de las "puertas" de piedra y ves el Sol saliendo exactamente entre las dos piedras. ¡Ese es el día del solsticio! Es como tener un calendario de piedra gigante: cuando el Sol se asoma por la puerta correcta, sabes que las lluvias llegarán pronto.',
+      'Lo más asombroso es la precisión. Los científicos modernos han verificado con GPS y software astronómico que las alineaciones siguen siendo precisas después de 7,000 años. La inclinación del eje terrestre ha cambiado ligeramente desde entonces (un efecto llamado precesión), pero los constructores originales acertaron con una precisión de menos de 1 grado.',
+      'Este "reloj de piedra" no solo marcaba el solsticio. Combinando las diferentes puertas y alineamientos, las tribus podían predecir las estaciones completas: cuándo sembrar, cuándo mover el ganado, cuándo preparar los campamentos de verano. Era una computadora astronómica hecha de roca, ¡miles de años antes de que existieran los números escritos!',
     ],
-    fact: 'En Nabta Playa, el solsticio de verano era tan importante que lo celebraban con grandes festines. Los arqueÃ³logos encontraron miles de huesos de animales concentrados en capas que corresponden a las temporadas de lluvia: evidencia de banquetes comunitarios que duraban dÃ­as.',
+    fact: 'En Nabta Playa, el solsticio de verano era tan importante que lo celebraban con grandes festines. Los arqueólogos encontraron miles de huesos de animales concentrados en capas que corresponden a las temporadas de lluvia: evidencia de banquetes comunitarios que duraban días.',
   },
   {
     id: 'orion-map',
-    title: 'El Mapa de OriÃ³n',
+    title: 'El Mapa de Orión',
     color: '#7EC8E3',
     btnImage: '/assets/egypt/infographic_nabta/btn_orion.png',
     image: '/assets/egypt/infographic_nabta/hero_orion.png',
     content: [
-      'Â¿Conoces el cinturÃ³n de OriÃ³n? Son tres estrellas brillantes en lÃ­nea recta (Alnitak, Alnilam y Mintaka) que puedes ver fÃ¡cilmente en el cielo nocturno de invierno. Son tan reconocibles que casi todas las civilizaciones antiguas las identificaron. Â¡Y las tribus de Nabta Playa las mapearon en piedra hace 7,000 aÃ±os!',
-      'El astrofÃ­sico Thomas G. Brophy, en su libro "The Origin Map" (2002), propuso algo fascinante: las 6 piedras centrales del cÃ­rculo representan estrellas de la constelaciÃ³n de OriÃ³n. Tres piedras corresponden al cinturÃ³n de OriÃ³n, y las otras tres al "hombro" de OriÃ³n (las estrellas Betelgeuse, Bellatrix y la estrella principal). Las piedras con mayor inclinaciÃ³n representan estrellas mÃ¡s lejanas.',
-      'Si Brophy tiene razÃ³n, Nabta Playa no era solo un calendario solar, sino tambiÃ©n un mapa estelar tridimensional. Los constructores no solo seÃ±alaron dÃ³nde estÃ¡n las estrellas en el cielo (posiciÃ³n angular), sino que tambiÃ©n codificaron su distancia relativa usando la inclinaciÃ³n de las piedras. Â¡Eso serÃ­a extraordinariamente avanzado para su Ã©poca!',
-      'Esta teorÃ­a es debatida entre los cientÃ­ficos. Algunos arqueÃ³logos como Mark Lehner reconocen la importancia del sitio pero son cautelosos sobre interpretaciones demasiado ambiciosas. Lo que sÃ­ es indiscutible es que los alineamientos megalÃ­ticos apuntan hacia estrellas importantes del cielo antiguo, incluyendo las del cinturÃ³n de OriÃ³n y Sirio, la estrella mÃ¡s brillante del cielo nocturno.',
-      'La conexiÃ³n OriÃ³n-Egipto es profundÃ­sima. Los antiguos egipcios llamaban al cinturÃ³n de OriÃ³n "Sah" y lo asociaban con Osiris, el dios del inframundo. Si Nabta Playa ya mapeaba a OriÃ³n miles de aÃ±os antes de los faraones, significarÃ­a que la obsesiÃ³n egipcia con esta constelaciÃ³n tiene raÃ­ces mucho mÃ¡s antiguas de lo que imaginamos.',
+      '¿Conoces el cinturón de Orión? Son tres estrellas brillantes en línea recta (Alnitak, Alnilam y Mintaka) que puedes ver fácilmente en el cielo nocturno de invierno. Son tan reconocibles que casi todas las civilizaciones antiguas las identificaron. ¡Y las tribus de Nabta Playa las mapearon en piedra hace 7,000 años!',
+      'El astrofísico Thomas G. Brophy, en su libro "The Origin Map" (2002), propuso algo fascinante: las 6 piedras centrales del círculo representan estrellas de la constelación de Orión. Tres piedras corresponden al cinturón de Orión, y las otras tres al "hombro" de Orión (las estrellas Betelgeuse, Bellatrix y la estrella principal). Las piedras con mayor inclinación representan estrellas más lejanas.',
+      'Si Brophy tiene razón, Nabta Playa no era solo un calendario solar, sino también un mapa estelar tridimensional. Los constructores no solo señalaron dónde están las estrellas en el cielo (posición angular), sino que también codificaron su distancia relativa usando la inclinación de las piedras. ¡Eso sería extraordinariamente avanzado para su época!',
+      'Esta teoría es debatida entre los científicos. Algunos arqueólogos como Mark Lehner reconocen la importancia del sitio pero son cautelosos sobre interpretaciones demasiado ambiciosas. Lo que sí es indiscutible es que los alineamientos megalíticos apuntan hacia estrellas importantes del cielo antiguo, incluyendo las del cinturón de Orión y Sirio, la estrella más brillante del cielo nocturno.',
+      'La conexión Orión-Egipto es profundísima. Los antiguos egipcios llamaban al cinturón de Orión "Sah" y lo asociaban con Osiris, el dios del inframundo. Si Nabta Playa ya mapeaba a Orión miles de años antes de los faraones, significaría que la obsesión egipcia con esta constelación tiene raíces mucho más antiguas de lo que imaginamos.',
     ],
-    fact: 'Las tres estrellas del cinturÃ³n de OriÃ³n estÃ¡n a distancias muy diferentes de nosotros: Alnitak estÃ¡ a 1,200 aÃ±os luz, Alnilam a 2,000 aÃ±os luz, y Mintaka a 1,200 aÃ±os luz. Parecen estar juntas, pero en realidad estÃ¡n separadas por cientos de aÃ±os luz. Â¡La luz que ves hoy de Alnilam saliÃ³ de esa estrella cuando los romanos aÃºn no existÃ­an!',
+    fact: 'Las tres estrellas del cinturón de Orión están a distancias muy diferentes de nosotros: Alnitak está a 1,200 años luz, Alnilam a 2,000 años luz, y Mintaka a 1,200 años luz. Parecen estar juntas, pero en realidad están separadas por cientos de años luz. ¡La luz que ves hoy de Alnilam salió de esa estrella cuando los romanos aún no existían!',
   },
   {
     id: 'tribus',
-    title: 'Los Primeros CientÃ­ficos',
+    title: 'Los Primeros Científicos',
     color: '#E57373',
     btnImage: '/assets/egypt/infographic_nabta/btn_tribus.png',
     image: '/assets/egypt/infographic_nabta/hero_tribus.png',
     content: [
-      'Las tribus que construyeron Nabta Playa no tenÃ­an escritura, ni metal, ni ruedas. Pero tenÃ­an algo mÃ¡s poderoso: curiosidad y capacidad de observaciÃ³n. Durante generaciones, padres e hijos se sentaron bajo el cielo estrellado y fueron aprendiendo los patrones: quÃ© estrellas aparecÃ­an en quÃ© Ã©poca, cuÃ¡ndo salÃ­a el Sol en cada punto del horizonte.',
-      'Eran pastores seminÃ³madas que criaban ganado vacuno, cabras y ovejas. Su vida dependÃ­a de encontrar agua y pastizales, y el cielo era su guÃ­a. Desarrollaron un conocimiento astronÃ³mico prÃ¡ctico: no era filosofÃ­a abstracta, era supervivencia pura. Si no podÃ­as predecir las lluvias, tu ganado morÃ­a de sed y tu familia pasaba hambre.',
-      'Los enterramientos de ganado en cÃ¡maras de piedra revelan algo fascinante: estas tribus tenÃ­an una religiÃ³n organizada centrada en el cielo y los animales. Los profesores Wendorf y Schild sugieren que el culto al ganado vacuno de Nabta Playa es un ancestro directo del culto a Hathor, la diosa vaca del Antiguo Egipto. El cielo y los animales eran sagrados.',
-      'La organizaciÃ³n social necesaria para construir Nabta Playa era impresionante. Mover megalitos de toneladas requiere planificaciÃ³n, liderazgo, y cooperaciÃ³n entre cientos de personas. Estas tribus no eran "primitivas": tenÃ­an jerarquÃ­as sociales, ceremonias complejas y un sistema de conocimiento astronÃ³mico que se transmitÃ­a de generaciÃ³n en generaciÃ³n.',
-      'Piensa en esto: sin papel, sin computadoras, sin escuelas... todo el conocimiento astronÃ³mico se guardaba en la memoria humana y se transmitÃ­a oralmente. Los ancianos eran las "bibliotecas vivientes" de la tribu. Cuando un anciano morÃ­a, era como perder un disco duro lleno de datos. Por eso construyeron las piedras: para que el conocimiento sobreviviera a las personas.',
+      'Las tribus que construyeron Nabta Playa no tenían escritura, ni metal, ni ruedas. Pero tenían algo más poderoso: curiosidad y capacidad de observación. Durante generaciones, padres e hijos se sentaron bajo el cielo estrellado y fueron aprendiendo los patrones: qué estrellas aparecían en qué época, cuándo salía el Sol en cada punto del horizonte.',
+      'Eran pastores seminómadas que criaban ganado vacuno, cabras y ovejas. Su vida dependía de encontrar agua y pastizales, y el cielo era su guía. Desarrollaron un conocimiento astronómico práctico: no era filosofía abstracta, era supervivencia pura. Si no podías predecir las lluvias, tu ganado moría de sed y tu familia pasaba hambre.',
+      'Los enterramientos de ganado en cámaras de piedra revelan algo fascinante: estas tribus tenían una religión organizada centrada en el cielo y los animales. Los profesores Wendorf y Schild sugieren que el culto al ganado vacuno de Nabta Playa es un ancestro directo del culto a Hathor, la diosa vaca del Antiguo Egipto. El cielo y los animales eran sagrados.',
+      'La organización social necesaria para construir Nabta Playa era impresionante. Mover megalitos de toneladas requiere planificación, liderazgo, y cooperación entre cientos de personas. Estas tribus no eran "primitivas": tenían jerarquías sociales, ceremonias complejas y un sistema de conocimiento astronómico que se transmitía de generación en generación.',
+      'Piensa en esto: sin papel, sin computadoras, sin escuelas... todo el conocimiento astronómico se guardaba en la memoria humana y se transmitía oralmente. Los ancianos eran las "bibliotecas vivientes" de la tribu. Cuando un anciano moría, era como perder un disco duro lleno de datos. Por eso construyeron las piedras: para que el conocimiento sobreviviera a las personas.',
     ],
-    fact: 'Los huesos encontrados en Nabta Playa revelan que estas tribus eran sorprendentemente saludables. MedÃ­an en promedio 1.75 metros (altos para su Ã©poca), tenÃ­an huesos fuertes y dientes sanos. Su dieta de leche, carne, pescado del lago y plantas silvestres era mÃ¡s nutritiva que la de muchos agricultores posteriores.',
+    fact: 'Los huesos encontrados en Nabta Playa revelan que estas tribus eran sorprendentemente saludables. Medían en promedio 1.75 metros (altos para su época), tenían huesos fuertes y dientes sanos. Su dieta de leche, carne, pescado del lago y plantas silvestres era más nutritiva que la de muchos agricultores posteriores.',
   },
   {
     id: 'stonehenge',
-    title: 'MÃ¡s Antiguo que Stonehenge',
+    title: 'Más Antiguo que Stonehenge',
     color: '#9E9E9E',
     btnImage: '/assets/egypt/infographic_nabta/btn_stonehenge.png',
     image: '/assets/egypt/infographic_nabta/hero_stonehenge.png',
     content: [
-      'Cuando alguien dice "antiguo observatorio de piedra", la mayorÃ­a piensa en Stonehenge, en Inglaterra. Pero Nabta Playa se construyÃ³ entre el 4800 y el 4000 a.C., mientras que Stonehenge se empezÃ³ alrededor del 3000 a.C. Â¡Nabta Playa es entre 1,000 y 2,000 aÃ±os mÃ¡s antiguo! Cuando los britÃ¡nicos empezaron a poner la primera piedra de Stonehenge, Nabta Playa ya llevaba milenios funcionando.',
-      'Las diferencias no son solo de edad. Stonehenge pesa unas 4,000 toneladas y sus piedras mÃ¡s grandes pesan 25 toneladas cada una. Nabta Playa es mucho mÃ¡s modesto en tamaÃ±o, pero su propÃ³sito astronÃ³mico es igual de sofisticado. Es como comparar un reloj de pulsera con un reloj de pared: ambos dan la hora, pero uno es mÃ¡s portÃ¡til.',
-      'Hay otros observatorios antiguos en el mundo: GÃ¶bekli Tepe en TurquÃ­a (9500 a.C.) es mÃ¡s antiguo, pero su funciÃ³n astronÃ³mica es debatida. Los templos de Malta (3600 a.C.) tienen alineaciones solares. Carnac en Francia (4500 a.C.) tiene miles de menhires. Nabta Playa destaca porque combina calendario solar + mapa estelar + rituales en un solo complejo.',
-      'La gran pregunta es: Â¿las ideas viajaron de un lugar a otro, o diferentes pueblos inventaron la astronomÃ­a de manera independiente? La mayorÃ­a de los cientÃ­ficos cree que la astronomÃ­a megalÃ­tica se inventÃ³ mÃºltiples veces en diferentes lugares. Cuando miras el cielo todas las noches durante generaciones, eventualmente descubres sus patrones. Es como si las estrellas enseÃ±aran astronomÃ­a a cualquiera que tuviera paciencia para escuchar.',
-      'Lo que hace Ãºnico a Nabta Playa es su ubicaciÃ³n en Ãfrica. Durante mucho tiempo, los europeos creyeron que la astronomÃ­a antigua era "su" invento (Stonehenge, los griegos). Nabta Playa demuestra que Ãfrica tuvo los primeros astrÃ³nomos del mundo, mil aÃ±os antes que Europa. La ciencia no tiene nacionalidad: pertenece a toda la humanidad.',
+      'Cuando alguien dice "antiguo observatorio de piedra", la mayoría piensa en Stonehenge, en Inglaterra. Pero Nabta Playa se construyó entre el 4800 y el 4000 a.C., mientras que Stonehenge se empezó alrededor del 3000 a.C. ¡Nabta Playa es entre 1,000 y 2,000 años más antiguo! Cuando los británicos empezaron a poner la primera piedra de Stonehenge, Nabta Playa ya llevaba milenios funcionando.',
+      'Las diferencias no son solo de edad. Stonehenge pesa unas 4,000 toneladas y sus piedras más grandes pesan 25 toneladas cada una. Nabta Playa es mucho más modesto en tamaño, pero su propósito astronómico es igual de sofisticado. Es como comparar un reloj de pulsera con un reloj de pared: ambos dan la hora, pero uno es más portátil.',
+      'Hay otros observatorios antiguos en el mundo: Göbekli Tepe en Turquía (9500 a.C.) es más antiguo, pero su función astronómica es debatida. Los templos de Malta (3600 a.C.) tienen alineaciones solares. Carnac en Francia (4500 a.C.) tiene miles de menhires. Nabta Playa destaca porque combina calendario solar + mapa estelar + rituales en un solo complejo.',
+      'La gran pregunta es: ¿las ideas viajaron de un lugar a otro, o diferentes pueblos inventaron la astronomía de manera independiente? La mayoría de los científicos cree que la astronomía megalítica se inventó múltiples veces en diferentes lugares. Cuando miras el cielo todas las noches durante generaciones, eventualmente descubres sus patrones. Es como si las estrellas enseñaran astronomía a cualquiera que tuviera paciencia para escuchar.',
+      'Lo que hace único a Nabta Playa es su ubicación en África. Durante mucho tiempo, los europeos creyeron que la astronomía antigua era "su" invento (Stonehenge, los griegos). Nabta Playa demuestra que África tuvo los primeros astrónomos del mundo, mil años antes que Europa. La ciencia no tiene nacionalidad: pertenece a toda la humanidad.',
     ],
-    fact: 'Stonehenge tardÃ³ 1,500 aÃ±os en completarse (del 3000 al 1500 a.C.). En cambio, Nabta Playa fue construido y modificado durante mÃ¡s de 2,000 aÃ±os. Si contamos toda la actividad humana en el sitio, Nabta Playa estuvo en uso durante mÃ¡s de 5,000 aÃ±os: mÃ¡s tiempo del que ha existido la escritura.',
+    fact: 'Stonehenge tardó 1,500 años en completarse (del 3000 al 1500 a.C.). En cambio, Nabta Playa fue construido y modificado durante más de 2,000 años. Si contamos toda la actividad humana en el sitio, Nabta Playa estuvo en uso durante más de 5,000 años: más tiempo del que ha existido la escritura.',
   },
   {
     id: 'legado-nilo',
@@ -245,13 +245,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_nabta/btn_legado.png',
     image: '/assets/egypt/infographic_nabta/hero_legado.png',
     content: [
-      'Cuando el Sahara se secÃ³, las tribus de Nabta Playa no desaparecieron: migraron hacia el este, hacia la Ãºnica fuente de agua que nunca se secaba: el rÃ­o Nilo. Se llevaron con ellas algo mÃ¡s valioso que cualquier tesoro material: miles de aÃ±os de conocimiento astronÃ³mico guardado en sus mentes y en sus tradiciones orales.',
-      'Esta migraciÃ³n, que ocurriÃ³ entre el 3500 y el 3000 a.C., coincide exactamente con el periodo en que la civilizaciÃ³n egipcia empezÃ³ a formarse a orillas del Nilo. Los primeros asentamientos predinÃ¡sticos del Valle del Nilo muestran prÃ¡cticas culturales sorprendentemente similares a las de Nabta Playa: culto al ganado, enterramientos rituales y orientaciÃ³n astronÃ³mica de estructuras.',
-      'El egiptÃ³logo Mark Lehner, aunque cauteloso, admite: "Tiene sentido, pero no de un modo directo. No se puede ir directamente de estos megalitos a la pirÃ¡mide de Dyeser." Es decir, Nabta Playa no inventÃ³ las pirÃ¡mides, pero plantÃ³ las semillas del conocimiento que eventualmente floreciÃ³ en la gran civilizaciÃ³n egipcia.',
-      'Las conexiones son fascinantes: el culto al ganado de Nabta Playa se transformÃ³ en el culto a Hathor (la diosa vaca). La obsesiÃ³n con OriÃ³n se convirtiÃ³ en el culto a Osiris-Sah. La orientaciÃ³n astronÃ³mica de las piedras se refinÃ³ hasta crear las pirÃ¡mides alineadas con las estrellas. Es como una semilla que crece hasta convertirse en un Ã¡rbol gigante.',
-      'Hoy, la NASA y agencias espaciales de todo el mundo estudian Nabta Playa como ejemplo de cÃ³mo los humanos pueden usar la astronomÃ­a con tecnologÃ­a mÃ­nima. Si algÃºn dÃ­a colonizamos Marte y perdemos la tecnologÃ­a, necesitaremos saber hacer lo que hicieron las tribus de Nabta Playa: mirar el cielo con ojos inteligentes y construir herramientas con las piedras del suelo.',
+      'Cuando el Sahara se secó, las tribus de Nabta Playa no desaparecieron: migraron hacia el este, hacia la única fuente de agua que nunca se secaba: el río Nilo. Se llevaron con ellas algo más valioso que cualquier tesoro material: miles de años de conocimiento astronómico guardado en sus mentes y en sus tradiciones orales.',
+      'Esta migración, que ocurrió entre el 3500 y el 3000 a.C., coincide exactamente con el periodo en que la civilización egipcia empezó a formarse a orillas del Nilo. Los primeros asentamientos predinásticos del Valle del Nilo muestran prácticas culturales sorprendentemente similares a las de Nabta Playa: culto al ganado, enterramientos rituales y orientación astronómica de estructuras.',
+      'El egiptólogo Mark Lehner, aunque cauteloso, admite: "Tiene sentido, pero no de un modo directo. No se puede ir directamente de estos megalitos a la pirámide de Dyeser." Es decir, Nabta Playa no inventó las pirámides, pero plantó las semillas del conocimiento que eventualmente floreció en la gran civilización egipcia.',
+      'Las conexiones son fascinantes: el culto al ganado de Nabta Playa se transformó en el culto a Hathor (la diosa vaca). La obsesión con Orión se convirtió en el culto a Osiris-Sah. La orientación astronómica de las piedras se refinó hasta crear las pirámides alineadas con las estrellas. Es como una semilla que crece hasta convertirse en un árbol gigante.',
+      'Hoy, la NASA y agencias espaciales de todo el mundo estudian Nabta Playa como ejemplo de cómo los humanos pueden usar la astronomía con tecnología mínima. Si algún día colonizamos Marte y perdemos la tecnología, necesitaremos saber hacer lo que hicieron las tribus de Nabta Playa: mirar el cielo con ojos inteligentes y construir herramientas con las piedras del suelo.',
     ],
-    fact: 'La distancia de Nabta Playa al Nilo es de unos 400 km caminando. Con ganado y niÃ±os, el viaje habrÃ­a tomado entre 2 y 4 semanas. Los arqueÃ³logos han encontrado "estaciones de camino" (sitios con restos de campamentos temporales) que marcan la ruta de migraciÃ³n. Â¡Era como una autopista neolÃ­tica a travÃ©s del desierto!',
+    fact: 'La distancia de Nabta Playa al Nilo es de unos 400 km caminando. Con ganado y niños, el viaje habría tomado entre 2 y 4 semanas. Los arqueólogos han encontrado "estaciones de camino" (sitios con restos de campamentos temporales) que marcan la ruta de migración. ¡Era como una autopista neolítica a través del desierto!',
   },
 ];
 
@@ -622,7 +622,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato CientÃ­fico
+                Dato Científico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -713,7 +713,7 @@ export default function InteractiveInfographic_EgyptM1() {
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
           }}
         >
-          <ChevronRight size={14} /> Toca cada cÃ­rculo para explorar <ChevronRight size={14} />
+          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
         </motion.p>
       )}
 
@@ -764,15 +764,15 @@ export default function InteractiveInfographic_EgyptM1() {
             }}
           >
             <p style={{ margin: 0, color: '#D4A843', fontSize: '1.1rem', fontWeight: 'bold' }}>
-              ðŸª¨ Â¡Has explorado todos los secretos de Nabta Playa!
+              ðŸª¨ ¡Has explorado todos los secretos de Nabta Playa!
             </p>
             <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
-              Ahora puedes tomar el quiz para ganar tu insignia de AstrÃ³nomo Ancestral
+              Ahora puedes tomar el quiz para ganar tu insignia de Astrónomo Ancestral
             </p>
           </motion.div>
         )}
       </AnimatePresence>
-          {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
+          {/* â”€â”€â”€ Bibliografía â”€â”€â”€ */}
       <div style={{
         marginTop: '2rem', padding: '1.5rem 2rem',
         borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -786,7 +786,7 @@ export default function InteractiveInfographic_EgyptM1() {
         <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
           listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
-            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
           ))}
         </ul>
       </div>

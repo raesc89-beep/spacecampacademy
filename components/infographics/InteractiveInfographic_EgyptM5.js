@@ -173,58 +173,58 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_giza/btn_conductos.png',
     image: '/assets/egypt/infographic_giza/hero_conductos.png',
     content: [
-      'Imagina que estÃ¡s dentro de la pirÃ¡mide mÃ¡s grande del mundo, en una habitaciÃ³n de piedra oscura y silenciosa. Si levantas la vista, ves cuatro tÃºneles estrechos que salen de las paredes y se pierden en la oscuridad. Durante mÃ¡s de cien aÃ±os, todo el mundo pensÃ³ que eran simples "conductos de ventilaciÃ³n" para que entrara aire fresco. Â¡Pero resulta que eran algo mucho mÃ¡s increÃ­ble!',
-      'La Gran PirÃ¡mide de Guiza tiene cuatro de estos tÃºneles angostos (de apenas 20 cm de ancho) que salen de la CÃ¡mara del Rey y de la CÃ¡mara de la Reina. Son como tubos largos que atraviesan decenas de metros de piedra maciza hasta llegar al exterior. Imagina un tubo de cartÃ³n largo y estrecho: si miras por un extremo, solo ves un pedacito de cielo. Eso es exactamente lo que hacen estos conductos.',
-      'Cuando los astrÃ³nomos Kate Spence y Robert Bauval calcularon las posiciones de las estrellas en el aÃ±o 2450 a.C. (Â¡cuando se construyÃ³ la pirÃ¡mide!), descubrieron algo asombroso: Â¡cada conducto apuntaba directamente a una estrella importante! No eran conductos de aire... Â¡eran telescopios de piedra apuntando al cosmos!',
-      'Los constructores de la pirÃ¡mide diseÃ±aron cada conducto con un Ã¡ngulo preciso para que, desde la cÃ¡mara interior, una persona pudiera ver exactamente una estrella especÃ­fica a travÃ©s del tÃºnel. Es como cuando miras por el tubo de un telescopio y ves exactamente un puntito de luz: estos tÃºneles hacÃ­an lo mismo, pero estaban hechos de millones de bloques de piedra.',
-      'Los cientÃ­ficos modernos han verificado estas alineaciones usando software de simulaciÃ³n astronÃ³mica que puede "rebobinar" el cielo 4,500 aÃ±os. Las posiciones coinciden con una precisiÃ³n sorprendente. Estos conductos eran, literalmente, canales de comunicaciÃ³n cÃ³smica entre el faraÃ³n en el interior de la pirÃ¡mide y los dioses que vivÃ­an en las estrellas.',
+      'Imagina que estás dentro de la pirámide más grande del mundo, en una habitación de piedra oscura y silenciosa. Si levantas la vista, ves cuatro túneles estrechos que salen de las paredes y se pierden en la oscuridad. Durante más de cien años, todo el mundo pensó que eran simples "conductos de ventilación" para que entrara aire fresco. ¡Pero resulta que eran algo mucho más increíble!',
+      'La Gran Pirámide de Guiza tiene cuatro de estos túneles angostos (de apenas 20 cm de ancho) que salen de la Cámara del Rey y de la Cámara de la Reina. Son como tubos largos que atraviesan decenas de metros de piedra maciza hasta llegar al exterior. Imagina un tubo de cartón largo y estrecho: si miras por un extremo, solo ves un pedacito de cielo. Eso es exactamente lo que hacen estos conductos.',
+      'Cuando los astrónomos Kate Spence y Robert Bauval calcularon las posiciones de las estrellas en el año 2450 a.C. (¡cuando se construyó la pirámide!), descubrieron algo asombroso: ¡cada conducto apuntaba directamente a una estrella importante! No eran conductos de aire... ¡eran telescopios de piedra apuntando al cosmos!',
+      'Los constructores de la pirámide diseñaron cada conducto con un ángulo preciso para que, desde la cámara interior, una persona pudiera ver exactamente una estrella específica a través del túnel. Es como cuando miras por el tubo de un telescopio y ves exactamente un puntito de luz: estos túneles hacían lo mismo, pero estaban hechos de millones de bloques de piedra.',
+      'Los científicos modernos han verificado estas alineaciones usando software de simulación astronómica que puede "rebobinar" el cielo 4,500 años. Las posiciones coinciden con una precisión sorprendente. Estos conductos eran, literalmente, canales de comunicación cósmica entre el faraón en el interior de la pirámide y los dioses que vivían en las estrellas.',
     ],
-    fact: 'Los conductos miden apenas 20 Ã— 20 cm, el tamaÃ±o de una caja de zapatos. A pesar de ser tan pequeÃ±os, atraviesan mÃ¡s de 60 metros de piedra maciza con un Ã¡ngulo constante. Si el Ã¡ngulo variara solo 1 grado, Â¡la estrella objetivo se perderÃ­a por completo! Los ingenieros egipcios mantuvieron la precisiÃ³n metro tras metro durante toda la construcciÃ³n.',
+    fact: 'Los conductos miden apenas 20 Ã— 20 cm, el tamaño de una caja de zapatos. A pesar de ser tan pequeños, atraviesan más de 60 metros de piedra maciza con un ángulo constante. Si el ángulo variara solo 1 grado, ¡la estrella objetivo se perdería por completo! Los ingenieros egipcios mantuvieron la precisión metro tras metro durante toda la construcción.',
   },
   {
     id: 'estrellas-laser',
-    title: 'El LÃ¡ser Estelar',
+    title: 'El Láser Estelar',
     color: '#FFD700',
     btnImage: '/assets/egypt/infographic_giza/btn_laser.png',
     image: '/assets/egypt/infographic_giza/hero_laser.png',
     content: [
-      'Â¿Hacia quÃ© estrellas apuntaban estos "lÃ¡seres de piedra"? Cada conducto tenÃ­a un destino celestial diferente, y cada uno contaba una historia sobre la vida despuÃ©s de la muerte del faraÃ³n. Para los egipcios, morir no era el final: era el comienzo de un viaje a las estrellas.',
-      'El conducto norte de la CÃ¡mara del Rey apuntaba hacia Thuban, que en el aÃ±o 2450 a.C. era la Estrella Polar. Hoy esa posiciÃ³n la ocupa Polaris, pero hace 4,500 aÃ±os, Thuban (en la constelaciÃ³n de Draco) era el punto fijo alrededor del cual giraba todo el cielo nocturno. Apuntar hacia ella significaba seÃ±alar el centro del universo.',
-      'El conducto sur de la CÃ¡mara del Rey apuntaba hacia Alnitak (Zeta Orionis), la estrella mÃ¡s baja del CinturÃ³n de OriÃ³n. Para los egipcios, OriÃ³n era la constelaciÃ³n sagrada de Osiris, el dios de la muerte y la resurrecciÃ³n. Este conducto era el camino por donde el alma del faraÃ³n viajaba para reunirse con Osiris en el cielo.',
-      'El conducto sur de la CÃ¡mara de la Reina apuntaba directamente a Sirio, la estrella mÃ¡s brillante del cielo nocturno. Sirio era la estrella de la diosa Isis (esposa de Osiris), y su primera apariciÃ³n cada aÃ±o marcaba el comienzo de la inundaciÃ³n del Nilo y el AÃ±o Nuevo egipcio. Â¡Una estrella que les avisaba de que el rÃ­o iba a crecer!',
-      'El conducto norte de la CÃ¡mara de la Reina apuntaba a Kochab, una estrella en la Osa Menor. La combinaciÃ³n de los cuatro conductos creaba un mapa cÃ³smico completo: norte y sur, masculino y femenino, vida y muerte, Osiris e Isis. Era como tener cuatro flechas que apuntaban a los cuatro pilares del universo egipcio.',
+      '¿Hacia qué estrellas apuntaban estos "láseres de piedra"? Cada conducto tenía un destino celestial diferente, y cada uno contaba una historia sobre la vida después de la muerte del faraón. Para los egipcios, morir no era el final: era el comienzo de un viaje a las estrellas.',
+      'El conducto norte de la Cámara del Rey apuntaba hacia Thuban, que en el año 2450 a.C. era la Estrella Polar. Hoy esa posición la ocupa Polaris, pero hace 4,500 años, Thuban (en la constelación de Draco) era el punto fijo alrededor del cual giraba todo el cielo nocturno. Apuntar hacia ella significaba señalar el centro del universo.',
+      'El conducto sur de la Cámara del Rey apuntaba hacia Alnitak (Zeta Orionis), la estrella más baja del Cinturón de Orión. Para los egipcios, Orión era la constelación sagrada de Osiris, el dios de la muerte y la resurrección. Este conducto era el camino por donde el alma del faraón viajaba para reunirse con Osiris en el cielo.',
+      'El conducto sur de la Cámara de la Reina apuntaba directamente a Sirio, la estrella más brillante del cielo nocturno. Sirio era la estrella de la diosa Isis (esposa de Osiris), y su primera aparición cada año marcaba el comienzo de la inundación del Nilo y el Año Nuevo egipcio. ¡Una estrella que les avisaba de que el río iba a crecer!',
+      'El conducto norte de la Cámara de la Reina apuntaba a Kochab, una estrella en la Osa Menor. La combinación de los cuatro conductos creaba un mapa cósmico completo: norte y sur, masculino y femenino, vida y muerte, Osiris e Isis. Era como tener cuatro flechas que apuntaban a los cuatro pilares del universo egipcio.',
     ],
-    fact: 'Thuban fue la estrella polar durante mÃ¡s de 2,000 aÃ±os. Debido a un fenÃ³meno llamado "precesiÃ³n", el eje de la Tierra se mueve como un trompo lento, completando un giro cada 26,000 aÃ±os. Esto significa que diferentes estrellas "toman el turno" de ser la estrella polar. Â¡En el aÃ±o 14,000 d.C., serÃ¡ Vega la estrella polar!',
+    fact: 'Thuban fue la estrella polar durante más de 2,000 años. Debido a un fenómeno llamado "precesión", el eje de la Tierra se mueve como un trompo lento, completando un giro cada 26,000 años. Esto significa que diferentes estrellas "toman el turno" de ser la estrella polar. ¡En el año 14,000 d.C., será Vega la estrella polar!',
   },
   {
     id: 'precision',
-    title: 'PrecisiÃ³n Imposible',
+    title: 'Precisión Imposible',
     color: '#4CAF50',
     btnImage: '/assets/egypt/infographic_giza/btn_precision.png',
     image: '/assets/egypt/infographic_giza/hero_precision.png',
     content: [
-      'AquÃ­ viene lo que deja a los cientÃ­ficos con la boca abierta: Â¿cÃ³mo lograron semejante precisiÃ³n sin computadoras, sin telescopios modernos y sin GPS? La respuesta es tan simple como genial: usaban dos estrellas y una cuerda con un peso.',
-      'El mÃ©todo, reconstruido por la astrÃ³noma Kate Spence de la Universidad de Cambridge, funcionaba asÃ­: los astrÃ³nomos egipcios observaban dos estrellas circumpolares especÃ­ficas (Mizar y Kochab). En un momento preciso de cada noche, estas dos estrellas se alinean perfectamente en vertical. Cuando eso ocurrÃ­a, Â¡marcaban el Norte verdadero con error de solo 2 minutos de arco!',
-      'Para que entiendas lo preciso que es: 2 minutos de arco es aproximadamente 1/15 del ancho de la Luna llena vista desde la Tierra. Los egipcios podÃ­an apuntar a una direcciÃ³n del cielo con un error menor que una moneda vista desde 50 metros de distancia. Todo esto con un palo, una cuerda y sus propios ojos.',
-      'El instrumento se llamaba "merkhet" (que significa "instrumento de conocimiento"). Era simplemente una plomada: una cuerda con un peso que cuelga perfectamente vertical por la gravedad. Alineando dos merkhets con una estrella, determinaban el meridiano exacto (la lÃ­nea norte-sur). Otro instrumento, el "bay" (una palma de palmera con una ranura en V), servÃ­a para apuntar.',
-      'La base de la Gran PirÃ¡mide mide 230.4 metros de lado, y la diferencia entre el lado mÃ¡s largo y el mÃ¡s corto es de solo 4.4 centÃ­metros. Eso es un error de apenas 0.02%, menos que el grosor de tu dedo meÃ±ique. Para lograr esa precisiÃ³n en un edificio de 147 metros de alto y 2.3 millones de bloques de piedra se necesita una maestrÃ­a matemÃ¡tica que todavÃ­a asombra a los ingenieros modernos.',
+      'Aquí viene lo que deja a los científicos con la boca abierta: ¿cómo lograron semejante precisión sin computadoras, sin telescopios modernos y sin GPS? La respuesta es tan simple como genial: usaban dos estrellas y una cuerda con un peso.',
+      'El método, reconstruido por la astrónoma Kate Spence de la Universidad de Cambridge, funcionaba así: los astrónomos egipcios observaban dos estrellas circumpolares específicas (Mizar y Kochab). En un momento preciso de cada noche, estas dos estrellas se alinean perfectamente en vertical. Cuando eso ocurría, ¡marcaban el Norte verdadero con error de solo 2 minutos de arco!',
+      'Para que entiendas lo preciso que es: 2 minutos de arco es aproximadamente 1/15 del ancho de la Luna llena vista desde la Tierra. Los egipcios podían apuntar a una dirección del cielo con un error menor que una moneda vista desde 50 metros de distancia. Todo esto con un palo, una cuerda y sus propios ojos.',
+      'El instrumento se llamaba "merkhet" (que significa "instrumento de conocimiento"). Era simplemente una plomada: una cuerda con un peso que cuelga perfectamente vertical por la gravedad. Alineando dos merkhets con una estrella, determinaban el meridiano exacto (la línea norte-sur). Otro instrumento, el "bay" (una palma de palmera con una ranura en V), servía para apuntar.',
+      'La base de la Gran Pirámide mide 230.4 metros de lado, y la diferencia entre el lado más largo y el más corto es de solo 4.4 centímetros. Eso es un error de apenas 0.02%, menos que el grosor de tu dedo meñique. Para lograr esa precisión en un edificio de 147 metros de alto y 2.3 millones de bloques de piedra se necesita una maestría matemática que todavía asombra a los ingenieros modernos.',
     ],
-    fact: 'Los cuatro lados de la Gran PirÃ¡mide estÃ¡n orientados casi perfectamente hacia los cuatro puntos cardinales, con un error de solo 3 minutos y 6 segundos de arco respecto al Norte verdadero. Cuando la pirÃ¡mide se terminÃ³ de construir (ca. 2450 a.C.), ese error era probablemente de cero: la pequeÃ±a desviaciÃ³n se debe a la precesiÃ³n terrestre acumulada durante 4,500 aÃ±os.',
+    fact: 'Los cuatro lados de la Gran Pirámide están orientados casi perfectamente hacia los cuatro puntos cardinales, con un error de solo 3 minutos y 6 segundos de arco respecto al Norte verdadero. Cuando la pirámide se terminó de construir (ca. 2450 a.C.), ese error era probablemente de cero: la pequeña desviación se debe a la precesión terrestre acumulada durante 4,500 años.',
   },
   {
     id: 'orion-piramides',
-    title: 'OriÃ³n en la Tierra',
+    title: 'Orión en la Tierra',
     color: '#9B6BFF',
     btnImage: '/assets/egypt/infographic_giza/btn_orion.png',
     image: '/assets/egypt/infographic_giza/hero_orion.png',
     content: [
-      'Si pudieras flotar sobre la meseta de Guiza y mirar hacia abajo, verÃ­as algo curioso: las tres pirÃ¡mides no estÃ¡n en lÃ­nea recta. Dos de ellas (Keops y KefrÃ©n) estÃ¡n casi perfectamente alineadas, pero la tercera (Micerinos) estÃ¡ ligeramente desplazada hacia un lado. Â¿Error de construcciÃ³n? Â¡Para nada!',
-      'El ingeniero Robert Bauval propuso en 1994 la "TeorÃ­a de la CorrelaciÃ³n de OriÃ³n": las tres pirÃ¡mides de Guiza imitan la disposiciÃ³n de las tres estrellas del CinturÃ³n de OriÃ³n (Alnitak, Alnilam y Mintaka). Dos estrellas del cinturÃ³n estÃ¡n alineadas, y la tercera estÃ¡ ligeramente desplazada, exactamente como las pirÃ¡mides.',
-      'La teorÃ­a dice que los egipcios construyeron una copia del cielo en la tierra. OriÃ³n representaba a Osiris, dios de la muerte y la resurrecciÃ³n, y la VÃ­a LÃ¡ctea representaba el Nilo celestial. Las pirÃ¡mides serÃ­an "espejos" de las estrellas, conectando la tierra con el cielo para que el faraÃ³n pudiera ascender fÃ¡cilmente al reino de los dioses.',
-      'Esta teorÃ­a es debatida entre los cientÃ­ficos: algunos la apoyan con entusiasmo y otros seÃ±alan que la correlaciÃ³n no es perfecta si se analiza con detalle. Lo que sÃ­ es un hecho comprobado es que el conducto sur de la CÃ¡mara del Rey apunta directamente a Alnitak (la estrella inferior del CinturÃ³n de OriÃ³n), lo cual confirma la importancia de OriÃ³n para los constructores.',
-      'Ya sea que la correlaciÃ³n completa sea intencional o coincidencia, un hecho es innegable: los constructores de Guiza tenÃ­an un conocimiento astronÃ³mico profundo y lo integraron deliberadamente en la arquitectura de sus monumentos. Las pirÃ¡mides no eran simples tumbas; eran mÃ¡quinas cÃ³smicas diseÃ±adas para conectar la tierra con las estrellas.',
+      'Si pudieras flotar sobre la meseta de Guiza y mirar hacia abajo, verías algo curioso: las tres pirámides no están en línea recta. Dos de ellas (Keops y Kefrén) están casi perfectamente alineadas, pero la tercera (Micerinos) está ligeramente desplazada hacia un lado. ¿Error de construcción? ¡Para nada!',
+      'El ingeniero Robert Bauval propuso en 1994 la "Teoría de la Correlación de Orión": las tres pirámides de Guiza imitan la disposición de las tres estrellas del Cinturón de Orión (Alnitak, Alnilam y Mintaka). Dos estrellas del cinturón están alineadas, y la tercera está ligeramente desplazada, exactamente como las pirámides.',
+      'La teoría dice que los egipcios construyeron una copia del cielo en la tierra. Orión representaba a Osiris, dios de la muerte y la resurrección, y la Vía Láctea representaba el Nilo celestial. Las pirámides serían "espejos" de las estrellas, conectando la tierra con el cielo para que el faraón pudiera ascender fácilmente al reino de los dioses.',
+      'Esta teoría es debatida entre los científicos: algunos la apoyan con entusiasmo y otros señalan que la correlación no es perfecta si se analiza con detalle. Lo que sí es un hecho comprobado es que el conducto sur de la Cámara del Rey apunta directamente a Alnitak (la estrella inferior del Cinturón de Orión), lo cual confirma la importancia de Orión para los constructores.',
+      'Ya sea que la correlación completa sea intencional o coincidencia, un hecho es innegable: los constructores de Guiza tenían un conocimiento astronómico profundo y lo integraron deliberadamente en la arquitectura de sus monumentos. Las pirámides no eran simples tumbas; eran máquinas cósmicas diseñadas para conectar la tierra con las estrellas.',
     ],
-    fact: 'El nombre egipcio de OriÃ³n era "Sah", y era considerado la manifestaciÃ³n celestial de Osiris. Cada aÃ±o, cuando OriÃ³n "resucitaba" (aparecÃ­a por primera vez despuÃ©s de 70 dÃ­as de invisibilidad), los sacerdotes celebraban el renacimiento de Osiris. Los 70 dÃ­as de invisibilidad de OriÃ³n corresponden casi exactamente con los 70 dÃ­as del proceso de momificaciÃ³n. Â¡No es coincidencia!',
+    fact: 'El nombre egipcio de Orión era "Sah", y era considerado la manifestación celestial de Osiris. Cada año, cuando Orión "resucitaba" (aparecía por primera vez después de 70 días de invisibilidad), los sacerdotes celebraban el renacimiento de Osiris. Los 70 días de invisibilidad de Orión corresponden casi exactamente con los 70 días del proceso de momificación. ¡No es coincidencia!',
   },
   {
     id: 'constructores',
@@ -233,43 +233,43 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_giza/btn_constructores.png',
     image: '/assets/egypt/infographic_giza/hero_constructores.png',
     content: [
-      'Hay un mito que necesitamos destruir ahora mismo: Â¡los constructores de las pirÃ¡mides NO eran esclavos! Durante siglos se creyÃ³ la historia de que miles de esclavos fueron obligados a arrastrar piedras bajo el sol ardiente. Pero la evidencia arqueolÃ³gica moderna cuenta una historia completamente diferente.',
-      'Los papiros y las marcas en los bloques de piedra revelan que los constructores eran obreros asalariados, organizados en equipos con nombres geniales como "Los Amigos de Keops" o "Los Borrachos de Micerinos" (Â¡sÃ­, de verdad se llamaban asÃ­!). Trabajaban por turnos, tenÃ­an dÃ­as de descanso, buena alimentaciÃ³n y hasta seguro mÃ©dico.',
-      'Los esqueletos encontrados en el cementerio de los trabajadores cerca de las pirÃ¡mides muestran huesos que se rompieron y sanaron correctamente gracias a cirugÃ­a. Los doctores egipcios les ponÃ­an fÃ©rulas y los cuidaban hasta que se recuperaban. Un esclavo no recibirÃ­a esa atenciÃ³n. Estos trabajadores eran valorados y respetados.',
-      'El arquitecto jefe fue muy probablemente Hemiunu, sobrino del faraÃ³n Keops. Su estatua, descubierta en Guiza, lo muestra como un hombre corpulento y seguro de sÃ­ mismo. Coordinaba miles de trabajadores, decenas de ingenieros y el suministro de materiales durante dÃ©cadas. Era el equivalente antiguo al director de la NASA.',
-      'El papiro de Wadi el-Jarf, descubierto en 2013, es el diario real de un supervisor llamado Merer que dirigÃ­a un equipo de transportistas. Describe en detalle cÃ³mo transportaban los enormes bloques de granito desde AsuÃ¡n (Â¡a 800 km de distancia!) usando barcazas en el Nilo capaces de cargar 60 toneladas. Es el "registro de vuelo" mÃ¡s antiguo del mundo.',
+      'Hay un mito que necesitamos destruir ahora mismo: ¡los constructores de las pirámides NO eran esclavos! Durante siglos se creyó la historia de que miles de esclavos fueron obligados a arrastrar piedras bajo el sol ardiente. Pero la evidencia arqueológica moderna cuenta una historia completamente diferente.',
+      'Los papiros y las marcas en los bloques de piedra revelan que los constructores eran obreros asalariados, organizados en equipos con nombres geniales como "Los Amigos de Keops" o "Los Borrachos de Micerinos" (¡sí, de verdad se llamaban así!). Trabajaban por turnos, tenían días de descanso, buena alimentación y hasta seguro médico.',
+      'Los esqueletos encontrados en el cementerio de los trabajadores cerca de las pirámides muestran huesos que se rompieron y sanaron correctamente gracias a cirugía. Los doctores egipcios les ponían férulas y los cuidaban hasta que se recuperaban. Un esclavo no recibiría esa atención. Estos trabajadores eran valorados y respetados.',
+      'El arquitecto jefe fue muy probablemente Hemiunu, sobrino del faraón Keops. Su estatua, descubierta en Guiza, lo muestra como un hombre corpulento y seguro de sí mismo. Coordinaba miles de trabajadores, decenas de ingenieros y el suministro de materiales durante décadas. Era el equivalente antiguo al director de la NASA.',
+      'El papiro de Wadi el-Jarf, descubierto en 2013, es el diario real de un supervisor llamado Merer que dirigía un equipo de transportistas. Describe en detalle cómo transportaban los enormes bloques de granito desde Asuán (¡a 800 km de distancia!) usando barcazas en el Nilo capaces de cargar 60 toneladas. Es el "registro de vuelo" más antiguo del mundo.',
     ],
-    fact: 'La Gran PirÃ¡mide tiene 2.3 millones de bloques de piedra caliza, con un peso promedio de 2.5 toneladas cada uno. Si los apilases uno encima de otro, llegarÃ­an a una altura de 4,600 km, Â¡mÃ¡s de la mitad de la distancia a la Luna! Los bloques de granito de las cÃ¡maras internas pesan hasta 80 toneladas y fueron transportados desde canteras a 800 km de distancia.',
+    fact: 'La Gran Pirámide tiene 2.3 millones de bloques de piedra caliza, con un peso promedio de 2.5 toneladas cada uno. Si los apilases uno encima de otro, llegarían a una altura de 4,600 km, ¡más de la mitad de la distancia a la Luna! Los bloques de granito de las cámaras internas pesan hasta 80 toneladas y fueron transportados desde canteras a 800 km de distancia.',
   },
   {
     id: 'scan-pyramids',
-    title: 'Muones CÃ³smicos',
+    title: 'Muones Cósmicos',
     color: '#4FC3F7',
     btnImage: '/assets/egypt/infographic_giza/btn_muones.png',
     image: '/assets/egypt/infographic_giza/hero_muones.png',
     content: [
-      'En 2015, un equipo internacional de cientÃ­ficos empezÃ³ a "radiografiar" las pirÃ¡mides de Guiza usando una tecnologÃ­a que parece ciencia ficciÃ³n: Â¡partÃ­culas subatÃ³micas que llueven desde el espacio! El proyecto se llamÃ³ ScanPyramids, y usÃ³ los muones cÃ³smicos para ver dentro de la pirÃ¡mide sin tocar una sola piedra.',
-      'Los muones son partÃ­culas que se crean cuando los rayos cÃ³smicos (partÃ­culas de alta energÃ­a que viajan por el universo) chocan contra la atmÃ³sfera terrestre. Estos muones atraviesan casi todo: edificios, montaÃ±as, pirÃ¡mides... Pero cuando encuentran piedra densa, algunos se frenan y desaparecen. Si hay una cavidad vacÃ­a, mÃ¡s muones la atraviesan.',
-      'Es como hacer una radiografÃ­a gigante: asÃ­ como los rayos X atraviesan tu cuerpo pero se detienen en los huesos (por eso ves los huesos blancos en la imagen), los muones atraviesan la pirÃ¡mide pero se frenan en la piedra. Si un detector dentro de la pirÃ¡mide recibe mÃ¡s muones de lo esperado en cierta direcciÃ³n, Â¡significa que hay un espacio vacÃ­o por ahÃ­!',
-      'En 2017, los cientÃ­ficos anunciaron un descubrimiento sensacional: una cavidad oculta de al menos 30 metros de largo encima de la Gran GalerÃ­a. Nadie sabÃ­a que existÃ­a esta "habitaciÃ³n secreta". Es tan grande como un aviÃ³n de pasajeros y ha estado oculta durante 4,500 aÃ±os. TodavÃ­a no sabemos quÃ© hay dentro ni para quÃ© servÃ­a.',
-      'AdemÃ¡s de los muones, ScanPyramids usÃ³ termografÃ­a infrarroja (que detecta diferencias de temperatura en la superficie) y fotogrametrÃ­a 3D. La termografÃ­a revelÃ³ que hay zonas en la cara norte de la pirÃ¡mide que estÃ¡n mÃ¡s calientes que las demÃ¡s, lo que sugiere que hay cÃ¡maras o corredores detrÃ¡s de la piedra que aÃºn no hemos encontrado. Â¡La pirÃ¡mide sigue guardando secretos!',
+      'En 2015, un equipo internacional de científicos empezó a "radiografiar" las pirámides de Guiza usando una tecnología que parece ciencia ficción: ¡partículas subatómicas que llueven desde el espacio! El proyecto se llamó ScanPyramids, y usó los muones cósmicos para ver dentro de la pirámide sin tocar una sola piedra.',
+      'Los muones son partículas que se crean cuando los rayos cósmicos (partículas de alta energía que viajan por el universo) chocan contra la atmósfera terrestre. Estos muones atraviesan casi todo: edificios, montañas, pirámides... Pero cuando encuentran piedra densa, algunos se frenan y desaparecen. Si hay una cavidad vacía, más muones la atraviesan.',
+      'Es como hacer una radiografía gigante: así como los rayos X atraviesan tu cuerpo pero se detienen en los huesos (por eso ves los huesos blancos en la imagen), los muones atraviesan la pirámide pero se frenan en la piedra. Si un detector dentro de la pirámide recibe más muones de lo esperado en cierta dirección, ¡significa que hay un espacio vacío por ahí!',
+      'En 2017, los científicos anunciaron un descubrimiento sensacional: una cavidad oculta de al menos 30 metros de largo encima de la Gran Galería. Nadie sabía que existía esta "habitación secreta". Es tan grande como un avión de pasajeros y ha estado oculta durante 4,500 años. Todavía no sabemos qué hay dentro ni para qué servía.',
+      'Además de los muones, ScanPyramids usó termografía infrarroja (que detecta diferencias de temperatura en la superficie) y fotogrametría 3D. La termografía reveló que hay zonas en la cara norte de la pirámide que están más calientes que las demás, lo que sugiere que hay cámaras o corredores detrás de la piedra que aún no hemos encontrado. ¡La pirámide sigue guardando secretos!',
     ],
-    fact: 'Cada minuto, unos 10,000 muones atraviesan cada metro cuadrado de tu cuerpo. Â¡Ahora mismo, mientras lees esto, millones de muones estÃ¡n pasando a travÃ©s de ti! Son completamente inofensivos. Los cientÃ­ficos de ScanPyramids colocaron detectores especiales dentro de la pirÃ¡mide durante meses para contar los muones y crear un "mapa de vacÃ­os" del interior.',
+    fact: 'Cada minuto, unos 10,000 muones atraviesan cada metro cuadrado de tu cuerpo. ¡Ahora mismo, mientras lees esto, millones de muones están pasando a través de ti! Son completamente inofensivos. Los científicos de ScanPyramids colocaron detectores especiales dentro de la pirámide durante meses para contar los muones y crear un "mapa de vacíos" del interior.',
   },
   {
     id: 'temperatura',
-    title: 'La PirÃ¡mide Termo',
+    title: 'La Pirámide Termo',
     color: '#E57373',
     btnImage: '/assets/egypt/infographic_giza/btn_temperatura.png',
     image: '/assets/egypt/infographic_giza/hero_temperatura.png',
     content: [
-      'Â¿SabÃ­as que la Gran PirÃ¡mide es como un termo gigante? La temperatura en su interior se mantiene constante a 20Â°C durante todo el aÃ±o, sin importar si afuera hace 40Â°C de calor en verano o baja a 5Â°C en las noches de invierno. Â¡Es como tener aire acondicionado natural desde hace 4,500 aÃ±os!',
-      'Esto funciona por el mismo principio que mantiene las cuevas frescas en verano y tibias en invierno: la enorme masa de piedra actÃºa como un "amortiguador tÃ©rmico". Los 6.5 millones de toneladas de piedra caliza absorben el calor del dÃ­a muy lentamente y lo liberan por la noche. Para cuando el calor del exterior llega al centro, la noche ya enfriÃ³ la superficie y el ciclo se repite.',
-      'Los egipcios probablemente conocÃ­an y aprovechaban esta propiedad tÃ©rmica. La temperatura estable de 20Â°C es perfecta para preservar objetos: ni tan caliente como para secar y agrietar los materiales, ni tan frÃ­a como para generar humedad. Los papiros, las telas de lino y los alimentos sagrados depositados con el faraÃ³n se conservarÃ­an en condiciones ideales.',
-      'Pero hay algo mÃ¡s misterioso: la termografÃ­a infrarroja de ScanPyramids encontrÃ³ anomalÃ­as tÃ©rmicas en la base de la pirÃ¡mide y en su cara norte. Algunos bloques de piedra estÃ¡n mÃ¡s calientes que otros, lo que sugiere que detrÃ¡s hay espacios vacÃ­os o corredores ocultos por donde circula aire a diferente temperatura. Es como detectar una habitaciÃ³n secreta mirando la temperatura de las paredes.',
-      'La posiciÃ³n geogrÃ¡fica de la pirÃ¡mide tambiÃ©n es notable. EstÃ¡ en el vÃ©rtice exacto del delta del Nilo, donde el rÃ­o se divide en sus mÃºltiples brazos hacia el mar. Desde el espacio, esta posiciÃ³n parece perfecta, como si los arquitectos hubieran tenido una vista aÃ©rea de todo Egipto. Los cientÃ­ficos debaten si esto fue calculado o es una coincidencia extraordinaria.',
+      '¿Sabías que la Gran Pirámide es como un termo gigante? La temperatura en su interior se mantiene constante a 20°C durante todo el año, sin importar si afuera hace 40°C de calor en verano o baja a 5°C en las noches de invierno. ¡Es como tener aire acondicionado natural desde hace 4,500 años!',
+      'Esto funciona por el mismo principio que mantiene las cuevas frescas en verano y tibias en invierno: la enorme masa de piedra actúa como un "amortiguador térmico". Los 6.5 millones de toneladas de piedra caliza absorben el calor del día muy lentamente y lo liberan por la noche. Para cuando el calor del exterior llega al centro, la noche ya enfrió la superficie y el ciclo se repite.',
+      'Los egipcios probablemente conocían y aprovechaban esta propiedad térmica. La temperatura estable de 20°C es perfecta para preservar objetos: ni tan caliente como para secar y agrietar los materiales, ni tan fría como para generar humedad. Los papiros, las telas de lino y los alimentos sagrados depositados con el faraón se conservarían en condiciones ideales.',
+      'Pero hay algo más misterioso: la termografía infrarroja de ScanPyramids encontró anomalías térmicas en la base de la pirámide y en su cara norte. Algunos bloques de piedra están más calientes que otros, lo que sugiere que detrás hay espacios vacíos o corredores ocultos por donde circula aire a diferente temperatura. Es como detectar una habitación secreta mirando la temperatura de las paredes.',
+      'La posición geográfica de la pirámide también es notable. Está en el vértice exacto del delta del Nilo, donde el río se divide en sus múltiples brazos hacia el mar. Desde el espacio, esta posición parece perfecta, como si los arquitectos hubieran tenido una vista aérea de todo Egipto. Los científicos debaten si esto fue calculado o es una coincidencia extraordinaria.',
     ],
-    fact: 'Si pudieras poner toda la piedra de la Gran PirÃ¡mide en fila, harÃ­as un muro de 1 metro de alto que le darÃ­a la vuelta a toda Francia. La base de la pirÃ¡mide cubre un Ã¡rea de 5.3 hectÃ¡reas, Â¡suficiente para estacionar 2,000 autobuses escolares! Y pesa 6.5 millones de toneladas, mÃ¡s que todos los edificios del centro de Londres juntos.',
+    fact: 'Si pudieras poner toda la piedra de la Gran Pirámide en fila, harías un muro de 1 metro de alto que le daría la vuelta a toda Francia. La base de la pirámide cubre un área de 5.3 hectáreas, ¡suficiente para estacionar 2,000 autobuses escolares! Y pesa 6.5 millones de toneladas, más que todos los edificios del centro de Londres juntos.',
   },
   {
     id: 'legado-giza',
@@ -278,13 +278,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_giza/btn_legado.png',
     image: '/assets/egypt/infographic_giza/hero_legado.png',
     content: [
-      'La Gran PirÃ¡mide fue el edificio mÃ¡s alto del mundo durante 3,871 aÃ±os, desde que se terminÃ³ en el 2450 a.C. hasta que la catedral de Lincoln, en Inglaterra, la superÃ³ en 1311 d.C. Â¡Ninguna otra estructura humana ha mantenido un rÃ©cord durante tanto tiempo! Y todavÃ­a sigue siendo el edificio antiguo mÃ¡s grande del mundo.',
-      'El legado de las alineaciones astronÃ³micas de Guiza viajÃ³ por todo el mundo antiguo. Los comerciantes fenicios llevaron conocimientos egipcios al MediterrÃ¡neo. Los griegos como Tales, PitÃ¡goras y PlatÃ³n estudiaron en las escuelas sacerdotales de Egipto. Y cuando Alejandro Magno fundÃ³ AlejandrÃ­a, la fusiÃ³n de pensamiento egipcio, griego y babilÃ³nico creÃ³ la astronomÃ­a cientÃ­fica.',
-      'Las catedrales gÃ³ticas de la Europa medieval heredaron la tradiciÃ³n egipcia sin saberlo. Sus naves largas actÃºan como los corredores egipcios, dirigiendo la luz del sol hacia el altar en fechas especÃ­ficas. Sus rosetones (ventanas circulares) estÃ¡n orientados astronÃ³micamente. Los constructores medievales continuaron una tradiciÃ³n que comenzÃ³ en Guiza hace 4,500 aÃ±os.',
-      'Hoy, la Gran PirÃ¡mide es Patrimonio de la Humanidad y la Ãºltima de las Siete Maravillas del Mundo Antiguo que sigue en pie. Las otras seis (los Jardines de Babilonia, el Coloso de Rodas, el Faro de AlejandrÃ­a, el Templo de Artemisa, la Estatua de Zeus y el Mausoleo de Halicarnaso) desaparecieron hace siglos. Solo la pirÃ¡mide resistiÃ³ al tiempo.',
-      'El gran mensaje de Guiza es que la ciencia y el arte siempre han estado unidos. Los egipcios no separaban la ingenierÃ­a de la religiÃ³n, ni la matemÃ¡tica de la poesÃ­a. Todo era parte de un solo esfuerzo por entender y celebrar el universo. Cuando miramos esas alineaciones estelares perfectas, no vemos solo tÃ©cnica: vemos el amor de una civilizaciÃ³n por las estrellas.',
+      'La Gran Pirámide fue el edificio más alto del mundo durante 3,871 años, desde que se terminó en el 2450 a.C. hasta que la catedral de Lincoln, en Inglaterra, la superó en 1311 d.C. ¡Ninguna otra estructura humana ha mantenido un récord durante tanto tiempo! Y todavía sigue siendo el edificio antiguo más grande del mundo.',
+      'El legado de las alineaciones astronómicas de Guiza viajó por todo el mundo antiguo. Los comerciantes fenicios llevaron conocimientos egipcios al Mediterráneo. Los griegos como Tales, Pitágoras y Platón estudiaron en las escuelas sacerdotales de Egipto. Y cuando Alejandro Magno fundó Alejandría, la fusión de pensamiento egipcio, griego y babilónico creó la astronomía científica.',
+      'Las catedrales góticas de la Europa medieval heredaron la tradición egipcia sin saberlo. Sus naves largas actúan como los corredores egipcios, dirigiendo la luz del sol hacia el altar en fechas específicas. Sus rosetones (ventanas circulares) están orientados astronómicamente. Los constructores medievales continuaron una tradición que comenzó en Guiza hace 4,500 años.',
+      'Hoy, la Gran Pirámide es Patrimonio de la Humanidad y la última de las Siete Maravillas del Mundo Antiguo que sigue en pie. Las otras seis (los Jardines de Babilonia, el Coloso de Rodas, el Faro de Alejandría, el Templo de Artemisa, la Estatua de Zeus y el Mausoleo de Halicarnaso) desaparecieron hace siglos. Solo la pirámide resistió al tiempo.',
+      'El gran mensaje de Guiza es que la ciencia y el arte siempre han estado unidos. Los egipcios no separaban la ingeniería de la religión, ni la matemática de la poesía. Todo era parte de un solo esfuerzo por entender y celebrar el universo. Cuando miramos esas alineaciones estelares perfectas, no vemos solo técnica: vemos el amor de una civilización por las estrellas.',
     ],
-    fact: 'De las Siete Maravillas del Mundo Antiguo, la Gran PirÃ¡mide es la mÃ¡s antigua (construida ca. 2560 a.C.) y la Ãºnica que sigue existiendo. El Faro de AlejandrÃ­a, la segunda maravilla mÃ¡s duradera, se derrumbÃ³ por terremotos en el siglo XIV. La pirÃ¡mide ha sobrevivido 4,500 aÃ±os de terremotos, invasiones, tormentas de arena y erosiÃ³n. A este ritmo, seguirÃ¡ ahÃ­ cuando nuestros tÃ¡tara-tÃ¡tara-tataranietos la visiten.',
+    fact: 'De las Siete Maravillas del Mundo Antiguo, la Gran Pirámide es la más antigua (construida ca. 2560 a.C.) y la única que sigue existiendo. El Faro de Alejandría, la segunda maravilla más duradera, se derrumbó por terremotos en el siglo XIV. La pirámide ha sobrevivido 4,500 años de terremotos, invasiones, tormentas de arena y erosión. A este ritmo, seguirá ahí cuando nuestros tátara-tátara-tataranietos la visiten.',
   },
 ];
 
@@ -369,8 +369,8 @@ function GizaHeader() {
             <stop offset="100%" stopColor="rgba(240,165,0,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="75" textAnchor="middle" fill="#F0A500" fontSize="17" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">EL LÃSER DE GIZA</text>
-        <text x="300" y="95" textAnchor="middle" fill="rgba(240,165,0,0.6)" fontSize="10.5" fontFamily="monospace" letterSpacing="2">LA GRAN PIRÃMIDE Â· CIRCA 2450 A.C.</text>
+        <text x="300" y="75" textAnchor="middle" fill="#F0A500" fontSize="17" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">EL LÁSER DE GIZA</text>
+        <text x="300" y="95" textAnchor="middle" fill="rgba(240,165,0,0.6)" fontSize="10.5" fontFamily="monospace" letterSpacing="2">LA GRAN PIRÁMIDE · CIRCA 2450 A.C.</text>
       </svg>
     </div>
   );
@@ -578,7 +578,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato CientÃ­fico
+                Dato Científico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -658,7 +658,7 @@ export default function InteractiveInfographic_EgyptM5() {
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
           }}
         >
-          <ChevronRight size={14} /> Toca cada cÃ­rculo para explorar <ChevronRight size={14} />
+          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
         </motion.p>
       )}
 
@@ -693,7 +693,7 @@ export default function InteractiveInfographic_EgyptM5() {
             }}
           >
             <p style={{ margin: 0, color: '#F0A500', fontSize: '1.1rem', fontWeight: 'bold' }}>
-              ðŸ”º Â¡Has descubierto todos los secretos del LÃ¡ser de Giza!
+              ðŸ”º ¡Has descubierto todos los secretos del Láser de Giza!
             </p>
             <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
               Ahora puedes tomar el quiz para ganar tu insignia de Constructor Estelar
@@ -701,7 +701,7 @@ export default function InteractiveInfographic_EgyptM5() {
           </motion.div>
         )}
       </AnimatePresence>
-          {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
+          {/* â”€â”€â”€ Bibliografía â”€â”€â”€ */}
       <div style={{
         marginTop: '2rem', padding: '1.5rem 2rem',
         borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -715,7 +715,7 @@ export default function InteractiveInfographic_EgyptM5() {
         <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
           listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
-            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
           ))}
         </ul>
       </div>

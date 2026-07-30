@@ -82,173 +82,173 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'extremofilos',
-    title: 'Vida en lo Imposible: ExtremÃ³filos',
+    title: 'Vida en lo Imposible: Extremófilos',
     color: '#66BB6A',
     btnImage: '/assets/starwars/infographic_fauna/btn_extremofilos.png',
     image: '/assets/starwars/infographic_fauna/hero_extremofilos.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_extremofilos.png',
-    bannerCaption: "Los tardÃ­grados sobreviven condiciones extremas: vacÃ­o espacial, radiaciÃ³n y temperaturas de âˆ’272Â°C a 150Â°C.",
+    bannerCaption: "Los tardígrados sobreviven condiciones extremas: vacío espacial, radiación y temperaturas de âˆ’272°C a 150°C.",
     content: [
-      "Â¿Alguna vez te has preguntado cÃ³mo serÃ­a vivir en un volcÃ¡n en erupciÃ³n, en el fondo del ocÃ©ano o flotando en el espacio? Para los humanos, esto es imposible. Sin embargo, en la Tierra existen pequeÃ±os organismos biolÃ³gicos que consideran estos ambientes extremos como su hogar. Los cientÃ­ficos los llaman 'extremÃ³filos', que significa amantes de lo extremo.",
-      "El campeÃ³n de los extremÃ³filos es un animal microscÃ³pico llamado tardÃ­grado, tambiÃ©n conocido como osito de agua. Estas diminutas criaturas de ocho patas pueden sobrevivir a temperaturas de mÃ¡s de 150 grados Celsius y a frÃ­os espantosos de casi -270 grados Celsius. Si se secan, se encogen en una bolita llamada 'ton' y pueden pasar dÃ©cadas sin agua, despertando cuando finalmente los mojas.",
-      "Los tardÃ­grados no estÃ¡n solos. Existe una bacteria llamada Deinococcus radiodurans, conocida como 'Conan la Bacteria'. Puede sobrevivir a niveles de radiaciÃ³n que destruirÃ­an el ADN de un ser humano miles de veces. Cuando la radiaciÃ³n rompe su cÃ³digo genÃ©tico, esta bacteria tiene un sistema de reparaciÃ³n rÃ¡pido que vuelve a unir las piezas en cuestiÃ³n de horas.",
-      "Estos descubrimientos terrestres han revolucionado la astrobiologÃ­a, la ciencia que estudia la vida en el universo. Antes, los cientÃ­ficos creÃ­an que un planeta necesitaba tener un clima templado como la Tierra para albergar vida. Pero al descubrir a los extremÃ³filos, comprendieron que la vida podrÃ­a esconderse en lugares que pensÃ¡bamos imposibles, como debajo del hielo de Europa (una luna de JÃºpiter) o en Marte.",
-      "En el universo de Star Wars, la variedad de planetas extremos estÃ¡ directamente inspirada en la asombrosa biologÃ­a de la Tierra. Si un planeta rocoso estÃ¡ cubierto de lava como Mustafar, o congelado bajo gruesas capas de hielo como Hoth, la biologÃ­a nos enseÃ±a que, si hay energÃ­a, la vida puede prosperar."
+      "¿Alguna vez te has preguntado cómo sería vivir en un volcán en erupción, en el fondo del océano o flotando en el espacio? Para los humanos, esto es imposible. Sin embargo, en la Tierra existen pequeños organismos biológicos que consideran estos ambientes extremos como su hogar. Los científicos los llaman 'extremófilos', que significa amantes de lo extremo.",
+      "El campeón de los extremófilos es un animal microscópico llamado tardígrado, también conocido como osito de agua. Estas diminutas criaturas de ocho patas pueden sobrevivir a temperaturas de más de 150 grados Celsius y a fríos espantosos de casi -270 grados Celsius. Si se secan, se encogen en una bolita llamada 'ton' y pueden pasar décadas sin agua, despertando cuando finalmente los mojas.",
+      "Los tardígrados no están solos. Existe una bacteria llamada Deinococcus radiodurans, conocida como 'Conan la Bacteria'. Puede sobrevivir a niveles de radiación que destruirían el ADN de un ser humano miles de veces. Cuando la radiación rompe su código genético, esta bacteria tiene un sistema de reparación rápido que vuelve a unir las piezas en cuestión de horas.",
+      "Estos descubrimientos terrestres han revolucionado la astrobiología, la ciencia que estudia la vida en el universo. Antes, los científicos creían que un planeta necesitaba tener un clima templado como la Tierra para albergar vida. Pero al descubrir a los extremófilos, comprendieron que la vida podría esconderse en lugares que pensábamos imposibles, como debajo del hielo de Europa (una luna de Júpiter) o en Marte.",
+      "En el universo de Star Wars, la variedad de planetas extremos está directamente inspirada en la asombrosa biología de la Tierra. Si un planeta rocoso está cubierto de lava como Mustafar, o congelado bajo gruesas capas de hielo como Hoth, la biología nos enseña que, si hay energía, la vida puede prosperar."
     ],
     expandables: [
       { 
-        label: 'En la PelÃ­cula', 
+        label: 'En la Película', 
         icon: 'zap', 
-        text: 'En El Imperio Contraataca, vemos a la babosa espacial (Exogorth), una criatura que vive dentro de tÃºneles en asteroides en el vacÃ­o del espacio. Este es un ejemplo cinematogrÃ¡fico de un monstruo espacial concebido como un organismo extremÃ³filo.' 
+        text: 'En El Imperio Contraataca, vemos a la babosa espacial (Exogorth), una criatura que vive dentro de túneles en asteroides en el vacío del espacio. Este es un ejemplo cinematográfico de un monstruo espacial concebido como un organismo extremófilo.' 
       },
       { 
-        label: 'Dato CientÃ­fico', 
+        label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'Para sobrevivir a la desecaciÃ³n, los tardÃ­grados producen una proteÃ­na especial llamada ProteÃ­na IntrÃ­nsecamente Desordenada (TDP). Cuando el agua desaparece de sus cuerpos, estas proteÃ­nas forman un escudo protector similar al cristal.' 
+        text: 'Para sobrevivir a la desecación, los tardígrados producen una proteína especial llamada Proteína Intrínsecamente Desordenada (TDP). Cuando el agua desaparece de sus cuerpos, estas proteínas forman un escudo protector similar al cristal.' 
       },
       { 
-        label: 'Â¿SabÃ­as que...?', 
+        label: '¿Sabías que...?', 
         icon: 'sparkles', 
-        text: 'Los tardÃ­grados fueron los primeros animales multicelulares en sobrevivir al vacÃ­o del espacio exterior. En 2007, un grupo de investigadores los enviÃ³ a bordo de la nave cientÃ­fica FOTON-M3, exponiÃ©ndolos directamente al espacio sin protecciÃ³n.' 
+        text: 'Los tardígrados fueron los primeros animales multicelulares en sobrevivir al vacío del espacio exterior. En 2007, un grupo de investigadores los envió a bordo de la nave científica FOTON-M3, exponiéndolos directamente al espacio sin protección.' 
       }
     ],
-    fact: 'La astrobiologÃ­a estudia las posibilidades matemÃ¡ticas y biolÃ³gicas de encontrar vida extraterrestre basÃ¡ndose en los modelos de supervivencia de los organismos extremÃ³filos terrestres.'
+    fact: 'La astrobiología estudia las posibilidades matemáticas y biológicas de encontrar vida extraterrestre basándose en los modelos de supervivencia de los organismos extremófilos terrestres.'
   },
   {
     id: 'sarlacc-digestivo',
-    title: 'El Sarlacc: DigestiÃ³n de 1000 AÃ±os',
+    title: 'El Sarlacc: Digestión de 1000 Años',
     color: '#FFB74D',
     btnImage: '/assets/starwars/infographic_fauna/btn_sarlacc_digestivo.png',
     image: '/assets/starwars/infographic_fauna/hero_sarlacc_digestivo.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_sarlacc_digestivo.png',
-    bannerCaption: "Los depredadores emboscadores, como las araÃ±as trampilla, emplean estrategias pasivas para capturar presas sin persecuciÃ³n.",
+    bannerCaption: "Los depredadores emboscadores, como las arañas trampilla, emplean estrategias pasivas para capturar presas sin persecución.",
     content: [
-      "Imagina caer en un foso profundo y resbaladizo cuyas paredes estÃ¡n vivas y llenas de dientes. AsÃ­ funciona el Sarlacc en Tatooine, un gigantesco depredador pasivo. Aunque parezca de otro mundo, en la Tierra existen criaturas asombrosas que tambiÃ©n esperan pacientemente a que sus presas caigan directamente en sus bocas.",
-      "El androide C-3PO menciona que ser tragado por un Sarlacc significa ser digerido a lo largo de mil aÃ±os de sufrimiento continuo. Desde una perspectiva biolÃ³gica terrestre, una digestiÃ³n tan prolongada es imposible, pero el concepto se inspira en organismos reales que disuelven a sus vÃ­ctimas mediante un complejo proceso quÃ­mico.",
-      "En nuestro planeta, las plantas carnÃ­voras como las del gÃ©nero Nepenthes habitan zonas pantanosas con suelos carentes de nitrÃ³geno. Para sobrevivir, desarrollan estructuras en forma de jarra profunda que actÃºan como trampas. Cuando un insecto cae, no puede escapar y se convierte en el alimento que la planta necesita para crecer.",
-      "El secreto de este letal proceso biolÃ³gico reside en las enzimas digestivas. Estas diminutas proteÃ­nas actÃºan como agentes destructores que descomponen las molÃ©culas de la presa. En el fondo de la trampa, un caldo quÃ­mico altamente corrosivo transforma los tejidos sÃ³lidos en nutrientes lÃ­quidos asimilables.",
-      "La prÃ³xima vez que veas al cazarrecompensas Boba Fett caer en las fauces de la enorme bestia del desierto, recuerda que los sistemas digestivos reales pueden ser igual de sorprendentes. La naturaleza nos demuestra que no siempre el cazador mÃ¡s rÃ¡pido gana; a veces, la paciencia y un estÃ³mago resistente son armas mucho mÃ¡s eficaces."
+      "Imagina caer en un foso profundo y resbaladizo cuyas paredes están vivas y llenas de dientes. Así funciona el Sarlacc en Tatooine, un gigantesco depredador pasivo. Aunque parezca de otro mundo, en la Tierra existen criaturas asombrosas que también esperan pacientemente a que sus presas caigan directamente en sus bocas.",
+      "El androide C-3PO menciona que ser tragado por un Sarlacc significa ser digerido a lo largo de mil años de sufrimiento continuo. Desde una perspectiva biológica terrestre, una digestión tan prolongada es imposible, pero el concepto se inspira en organismos reales que disuelven a sus víctimas mediante un complejo proceso químico.",
+      "En nuestro planeta, las plantas carnívoras como las del género Nepenthes habitan zonas pantanosas con suelos carentes de nitrógeno. Para sobrevivir, desarrollan estructuras en forma de jarra profunda que actúan como trampas. Cuando un insecto cae, no puede escapar y se convierte en el alimento que la planta necesita para crecer.",
+      "El secreto de este letal proceso biológico reside en las enzimas digestivas. Estas diminutas proteínas actúan como agentes destructores que descomponen las moléculas de la presa. En el fondo de la trampa, un caldo químico altamente corrosivo transforma los tejidos sólidos en nutrientes líquidos asimilables.",
+      "La próxima vez que veas al cazarrecompensas Boba Fett caer en las fauces de la enorme bestia del desierto, recuerda que los sistemas digestivos reales pueden ser igual de sorprendentes. La naturaleza nos demuestra que no siempre el cazador más rápido gana; a veces, la paciencia y un estómago resistente son armas mucho más eficaces."
     ],
     expandables: [
       { 
-        label: 'En la PelÃ­cula', 
+        label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el Episodio VI: El Retorno del Jedi, el lÃ­der criminal Jabba el Hutt condena a Luke Skywalker y sus amigos a ser devorados por el Sarlacc en el pozo de Carkoon. Esta criatura se ha convertido en uno de los monstruos mÃ¡s icÃ³nicos de la saga por su peculiar mÃ©todo de ejecuciÃ³n.' 
+        text: 'En el Episodio VI: El Retorno del Jedi, el líder criminal Jabba el Hutt condena a Luke Skywalker y sus amigos a ser devorados por el Sarlacc en el pozo de Carkoon. Esta criatura se ha convertido en uno de los monstruos más icónicos de la saga por su peculiar método de ejecución.' 
       },
       { 
-        label: 'Dato CientÃ­fico', 
+        label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'La planta carnÃ­vora gigante Nepenthes rajah de Borneo tiene una trampa tan grande que ocasionalmente puede capturar y digerir pequeÃ±os vertebrados, como ranas e incluso ratones. Su trampa contiene hasta dos litros y medio de fluido digestivo altamente especializado.' 
+        text: 'La planta carnívora gigante Nepenthes rajah de Borneo tiene una trampa tan grande que ocasionalmente puede capturar y digerir pequeños vertebrados, como ranas e incluso ratones. Su trampa contiene hasta dos litros y medio de fluido digestivo altamente especializado.' 
       },
       { 
-        label: 'Â¿SabÃ­as que...?', 
+        label: '¿Sabías que...?', 
         icon: 'sparkles', 
-        text: 'Algunas avispas parasitoides inyectan sus huevos directamente dentro de orugas vivas. Al nacer, las larvas devoran lentamente a la oruga desde adentro, evitando consumir sus Ã³rganos vitales para mantenerla viva el mayor tiempo posible, similar al lento proceso digestivo del Sarlacc.' 
+        text: 'Algunas avispas parasitoides inyectan sus huevos directamente dentro de orugas vivas. Al nacer, las larvas devoran lentamente a la oruga desde adentro, evitando consumir sus órganos vitales para mantenerla viva el mayor tiempo posible, similar al lento proceso digestivo del Sarlacc.' 
       }
     ],
-    fact: 'El estÃ³mago humano debe producir una gruesa capa de mucosidad protectora de forma constante. Sin esta barrera esencial, los potentes Ã¡cidos y las enzimas gÃ¡stricas literalmente comenzarÃ­an a digerir los propios tejidos del estÃ³mago.'
+    fact: 'El estómago humano debe producir una gruesa capa de mucosidad protectora de forma constante. Sin esta barrera esencial, los potentes ácidos y las enzimas gástricas literalmente comenzarían a digerir los propios tejidos del estómago.'
   },
   {
     id: 'rancor-megafauna',
-    title: 'El Rancor: Megafauna PrehistÃ³rica',
+    title: 'El Rancor: Megafauna Prehistórica',
     color: '#26A69A',
     btnImage: '/assets/starwars/infographic_fauna/btn_rancor_megafauna.png',
     image: '/assets/starwars/infographic_fauna/hero_rancor_megafauna.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_rancor_megafauna.png',
-    bannerCaption: "La megafauna terrestre, como el Paraceratherium de 20 toneladas, requerÃ­a estructuras Ã³seas reforzadas por la ley del cuadrado-cubo.",
+    bannerCaption: "La megafauna terrestre, como el Paraceratherium de 20 toneladas, requería estructuras óseas reforzadas por la ley del cuadrado-cubo.",
     content: [
-      "Cuando la inmensa puerta del calabozo de Jabba se levanta, emerge una de las criaturas carnÃ­voras mÃ¡s aterradoras de la galaxia: el Rancor. Este monstruo bÃ­pedo con garras gigantes y piel blindada parece una pesadilla imparable. Pero diseÃ±ar biolÃ³gicamente a un gigante asÃ­ requiere algo mÃ¡s que imaginaciÃ³n.",
-      "El tamaÃ±o de los animales estÃ¡ estrictamente limitado por una regla fÃ­sica fundamental: la ley del cuadrado-cubo. A medida que un ser vivo crece, su volumen y peso aumentan mucho mÃ¡s rÃ¡pido que la fuerza de sus huesos o mÃºsculos. Un animal gigantesco necesita adaptaciones extremas solo para poder sostener su propio peso.",
-      "Para que criaturas enormes como los antiguos dinosaurios terÃ³podos, como el Tyrannosaurus rex, pudieran caminar sin fracturarse las piernas, necesitaban huesos increÃ­blemente densos y fuertes. AdemÃ¡s, requerÃ­an una musculatura adaptada para soportar y mover grandes masas, lo que limita significativamente su agilidad y velocidad mÃ¡xima.",
-      "Un monstruo del tamaÃ±o del Rancor tendrÃ­a requerimientos calÃ³ricos colosales. Para mantener su metabolismo activo y reparar sus tejidos, necesitarÃ­a consumir enormes cantidades de alimento a diario. Esto obliga a los grandes depredadores a pasar la mayor parte de su tiempo cazando o consumiendo grandes presas para sobrevivir.",
-      "Aunque ya no tenemos grandes dinosaurios carnÃ­voros caminando por la Tierra, el estudio de la megafauna prehistÃ³rica nos ayuda a comprender los lÃ­mites biolÃ³gicos. Estos titanes del pasado demuestran que el tamaÃ±o extremo es posible, pero siempre viene acompaÃ±ado de un delicado equilibrio energÃ©tico y biomecÃ¡nico."
+      "Cuando la inmensa puerta del calabozo de Jabba se levanta, emerge una de las criaturas carnívoras más aterradoras de la galaxia: el Rancor. Este monstruo bípedo con garras gigantes y piel blindada parece una pesadilla imparable. Pero diseñar biológicamente a un gigante así requiere algo más que imaginación.",
+      "El tamaño de los animales está estrictamente limitado por una regla física fundamental: la ley del cuadrado-cubo. A medida que un ser vivo crece, su volumen y peso aumentan mucho más rápido que la fuerza de sus huesos o músculos. Un animal gigantesco necesita adaptaciones extremas solo para poder sostener su propio peso.",
+      "Para que criaturas enormes como los antiguos dinosaurios terópodos, como el Tyrannosaurus rex, pudieran caminar sin fracturarse las piernas, necesitaban huesos increíblemente densos y fuertes. Además, requerían una musculatura adaptada para soportar y mover grandes masas, lo que limita significativamente su agilidad y velocidad máxima.",
+      "Un monstruo del tamaño del Rancor tendría requerimientos calóricos colosales. Para mantener su metabolismo activo y reparar sus tejidos, necesitaría consumir enormes cantidades de alimento a diario. Esto obliga a los grandes depredadores a pasar la mayor parte de su tiempo cazando o consumiendo grandes presas para sobrevivir.",
+      "Aunque ya no tenemos grandes dinosaurios carnívoros caminando por la Tierra, el estudio de la megafauna prehistórica nos ayuda a comprender los límites biológicos. Estos titanes del pasado demuestran que el tamaño extremo es posible, pero siempre viene acompañado de un delicado equilibrio energético y biomecánico."
     ],
     expandables: [
       { 
-        label: 'En la PelÃ­cula', 
+        label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el Episodio VI: El Retorno del Jedi, Luke Skywalker se enfrenta al feroz Rancor de Jabba desarmado. Usando su astucia en lugar de fuerza bruta, logra derrotarlo aplastÃ¡ndolo con la gran puerta de la cueva, demostrando que el tamaÃ±o masivo tambiÃ©n tiene desventajas tÃ¡cticas.' 
+        text: 'En el Episodio VI: El Retorno del Jedi, Luke Skywalker se enfrenta al feroz Rancor de Jabba desarmado. Usando su astucia en lugar de fuerza bruta, logra derrotarlo aplastándolo con la gran puerta de la cueva, demostrando que el tamaño masivo también tiene desventajas tácticas.' 
       },
       { 
-        label: 'Dato CientÃ­fico', 
+        label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'La piel de los grandes mamÃ­feros terrestres, como los elefantes o rinocerontes, es gruesa y altamente resistente. Sin embargo, carecen de pelaje extenso porque su gran volumen corporal dificulta la disipaciÃ³n de calor; tener una piel expuesta les permite regular mejor su temperatura.' 
+        text: 'La piel de los grandes mamíferos terrestres, como los elefantes o rinocerontes, es gruesa y altamente resistente. Sin embargo, carecen de pelaje extenso porque su gran volumen corporal dificulta la disipación de calor; tener una piel expuesta les permite regular mejor su temperatura.' 
       },
       { 
-        label: 'Â¿SabÃ­as que...?', 
+        label: '¿Sabías que...?', 
         icon: 'sparkles', 
-        text: 'El animal mÃ¡s grande que jamÃ¡s ha existido en la Tierra no es un dinosaurio, sino la ballena azul contemporÃ¡nea. El medio acuÃ¡tico proporciona flotabilidad, contrarrestando los efectos de la gravedad y permitiÃ©ndole alcanzar tamaÃ±os de hasta 30 metros de largo que serÃ­an imposibles en tierra firme.' 
+        text: 'El animal más grande que jamás ha existido en la Tierra no es un dinosaurio, sino la ballena azul contemporánea. El medio acuático proporciona flotabilidad, contrarrestando los efectos de la gravedad y permitiéndole alcanzar tamaños de hasta 30 metros de largo que serían imposibles en tierra firme.' 
       }
     ],
-    fact: 'La ley del cuadrado-cubo, descrita por Galileo Galilei en 1638, establece que cuando un objeto aumenta de tamaÃ±o, su superficie crece al cuadrado mientras que su volumen crece al cubo, dictando asÃ­ el lÃ­mite de tamaÃ±o de cualquier animal terrestre.'
+    fact: 'La ley del cuadrado-cubo, descrita por Galileo Galilei en 1638, establece que cuando un objeto aumenta de tamaño, su superficie crece al cuadrado mientras que su volumen crece al cubo, dictando así el límite de tamaño de cualquier animal terrestre.'
   },
   {
     id: 'tauntaun-adaptacion',
-    title: 'Tauntauns: AdaptaciÃ³n al FrÃ­o Extremo',
+    title: 'Tauntauns: Adaptación al Frío Extremo',
     color: '#AED581',
     btnImage: '/assets/starwars/infographic_fauna/btn_tauntaun_adaptacion.png',
     image: '/assets/starwars/infographic_fauna/hero_tauntaun_adaptacion.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_tauntaun_adaptacion.png',
-    bannerCaption: "Los mamÃ­feros Ã¡rticos desarrollan grasa subcutÃ¡nea, contracorriente vascular y pelaje multicapa para sobrevivir a âˆ’50Â°C.",
+    bannerCaption: "Los mamíferos árticos desarrollan grasa subcutánea, contracorriente vascular y pelaje multicapa para sobrevivir a âˆ’50°C.",
     content: [
-      "Imaginen que estÃ¡n caminando en un lugar tan frÃ­o que incluso el aliento se congela en el aire antes de tocar el suelo. AsÃ­ es el planeta helado de Hoth, un mundo implacable con temperaturas mortales. Para sobrevivir en ambientes tan extremos, los animales no pueden simplemente ponerse un abrigo de invierno. Deben poseer adaptaciones biolÃ³gicas fascinantes que funcionan como una armadura invisible contra la temperatura. La naturaleza, en su infinita sabidurÃ­a, ha desarrollado ingeniosas estrategias para mantener el calor corporal, desde alteraciones en la circulaciÃ³n sanguÃ­nea hasta la creaciÃ³n de anticongelantes biolÃ³gicos internos.",
-      "Un mecanismo crucial que utilizan los animales del Ãrtico terrestre es el intercambio de calor a contracorriente. Piensen en esto como un sistema de tuberÃ­as inteligente donde las arterias cÃ¡lidas que bajan del corazÃ³n calientan la sangre frÃ­a de las venas que regresa de las extremidades. De este modo, el calor se retiene en el nÃºcleo vital del cuerpo y no se pierde por las patas o las aletas. Es como si el cuerpo reciclara constantemente su propia calefacciÃ³n, asegurando que los Ã³rganos principales funcionen perfectamente mientras las patas pueden soportar el hielo sin llegar a congelarse.",
-      "Otra estrategia formidable es la termogÃ©nesis que se produce en el tejido adiposo marrÃ³n, una grasa especializada diseÃ±ada especÃ­ficamente para generar calor en lugar de simplemente almacenar energÃ­a. Funciona casi como un motor interno de combustiÃ³n que se enciende cuando las temperaturas caen drÃ¡sticamente. AdemÃ¡s, animales como el zorro Ã¡rtico poseen un pelaje extraordinario compuesto por pelos que tienen el centro hueco. Este espacio vacÃ­o atrapa el aire caliente cerca de la piel, creando un excelente aislamiento tÃ©rmico que funciona exactamente como el doble cristal de las ventanas en una casa moderna.",
-      "El verdadero salto cientÃ­fico ocurriÃ³ en el aÃ±o 1969, cuando el investigador Arthur DeVries hizo un descubrimiento que cambiÃ³ la biologÃ­a marina para siempre. Mientras estudiaba peces en las aguas gÃ©lidas de la AntÃ¡rtida, notÃ³ que estos no se convertÃ­an en bloques de hielo a pesar de estar en un medio a temperaturas bajo cero. DeVries descubriÃ³ que la sangre de estos peces contenÃ­a unas proteÃ­nas especiales que evitaban la cristalizaciÃ³n del agua en sus venas, actuando igual que el lÃ­quido anticongelante que ponemos en el motor de un automÃ³vil durante el invierno extremo.",
-      "Estas proteÃ­nas anticongelantes, tambiÃ©n conocidas como AFPs, se adhieren a los cristales microscÃ³picos de hielo y evitan que crezcan y rompan las cÃ©lulas desde adentro. Al explorar la galaxia, vemos paralelos impresionantes en la ciencia ficciÃ³n. En el clÃ¡sico del cine, cuando el contrabandista Han Solo utiliza su sable de luz para abrir el vientre del Tauntaun caÃ­do y proteger a Luke Skywalker, nos muestra que el interior de estas criaturas debe mantener un inmenso calor biolÃ³gico, usando gruesas capas de grasa y probablemente sistemas internos muy similares a los de nuestros propios animales polares."
+      "Imaginen que están caminando en un lugar tan frío que incluso el aliento se congela en el aire antes de tocar el suelo. Así es el planeta helado de Hoth, un mundo implacable con temperaturas mortales. Para sobrevivir en ambientes tan extremos, los animales no pueden simplemente ponerse un abrigo de invierno. Deben poseer adaptaciones biológicas fascinantes que funcionan como una armadura invisible contra la temperatura. La naturaleza, en su infinita sabiduría, ha desarrollado ingeniosas estrategias para mantener el calor corporal, desde alteraciones en la circulación sanguínea hasta la creación de anticongelantes biológicos internos.",
+      "Un mecanismo crucial que utilizan los animales del Ártico terrestre es el intercambio de calor a contracorriente. Piensen en esto como un sistema de tuberías inteligente donde las arterias cálidas que bajan del corazón calientan la sangre fría de las venas que regresa de las extremidades. De este modo, el calor se retiene en el núcleo vital del cuerpo y no se pierde por las patas o las aletas. Es como si el cuerpo reciclara constantemente su propia calefacción, asegurando que los órganos principales funcionen perfectamente mientras las patas pueden soportar el hielo sin llegar a congelarse.",
+      "Otra estrategia formidable es la termogénesis que se produce en el tejido adiposo marrón, una grasa especializada diseñada específicamente para generar calor en lugar de simplemente almacenar energía. Funciona casi como un motor interno de combustión que se enciende cuando las temperaturas caen drásticamente. Además, animales como el zorro ártico poseen un pelaje extraordinario compuesto por pelos que tienen el centro hueco. Este espacio vacío atrapa el aire caliente cerca de la piel, creando un excelente aislamiento térmico que funciona exactamente como el doble cristal de las ventanas en una casa moderna.",
+      "El verdadero salto científico ocurrió en el año 1969, cuando el investigador Arthur DeVries hizo un descubrimiento que cambió la biología marina para siempre. Mientras estudiaba peces en las aguas gélidas de la Antártida, notó que estos no se convertían en bloques de hielo a pesar de estar en un medio a temperaturas bajo cero. DeVries descubrió que la sangre de estos peces contenía unas proteínas especiales que evitaban la cristalización del agua en sus venas, actuando igual que el líquido anticongelante que ponemos en el motor de un automóvil durante el invierno extremo.",
+      "Estas proteínas anticongelantes, también conocidas como AFPs, se adhieren a los cristales microscópicos de hielo y evitan que crezcan y rompan las células desde adentro. Al explorar la galaxia, vemos paralelos impresionantes en la ciencia ficción. En el clásico del cine, cuando el contrabandista Han Solo utiliza su sable de luz para abrir el vientre del Tauntaun caído y proteger a Luke Skywalker, nos muestra que el interior de estas criaturas debe mantener un inmenso calor biológico, usando gruesas capas de grasa y probablemente sistemas internos muy similares a los de nuestros propios animales polares."
     ],
     expandables: [
       { 
-        label: 'En la PelÃ­cula', 
+        label: 'En la Película', 
         icon: 'zap', 
-        text: "En El Imperio Contraataca (1980), los rebeldes utilizan a los Tauntauns como monturas de patrullaje porque sus adaptaciones biolÃ³gicas superan a las mÃ¡quinas, las cuales se congelan constantemente en el clima severo de Hoth. La icÃ³nica escena donde Han Solo resguarda a Luke Skywalker dentro del cuerpo cÃ¡lido de su montura subraya perfectamente el concepto de aislamiento tÃ©rmico animal extremo." 
+        text: "En El Imperio Contraataca (1980), los rebeldes utilizan a los Tauntauns como monturas de patrullaje porque sus adaptaciones biológicas superan a las máquinas, las cuales se congelan constantemente en el clima severo de Hoth. La icónica escena donde Han Solo resguarda a Luke Skywalker dentro del cuerpo cálido de su montura subraya perfectamente el concepto de aislamiento térmico animal extremo." 
       },
       { 
-        label: 'Dato CientÃ­fico', 
+        label: 'Dato Científico', 
         icon: 'atom', 
-        text: "El aislamiento proporcionado por el pelaje del zorro Ã¡rtico es tan excepcionalmente eficiente que el animal no empieza a temblar ni a sentir frÃ­o hasta que la temperatura ambiente desciende por debajo de los asombrosos menos 70 grados Celsius. Sus pelos con un nÃºcleo hueco atrapan el aire aislante, reduciendo al mÃ­nimo absoluto la transferencia tÃ©rmica hacia el entorno exterior helado." 
+        text: "El aislamiento proporcionado por el pelaje del zorro ártico es tan excepcionalmente eficiente que el animal no empieza a temblar ni a sentir frío hasta que la temperatura ambiente desciende por debajo de los asombrosos menos 70 grados Celsius. Sus pelos con un núcleo hueco atrapan el aire aislante, reduciendo al mínimo absoluto la transferencia térmica hacia el entorno exterior helado." 
       },
       { 
-        label: 'Â¿SabÃ­as que...?', 
+        label: '¿Sabías que...?', 
         icon: 'sparkles', 
-        text: "El descubrimiento de las proteÃ­nas anticongelantes por el cientÃ­fico Arthur DeVries en 1969 no solo nos ayudÃ³ a comprender cÃ³mo sobreviven los peces antÃ¡rticos, sino que ha inspirado aplicaciones prÃ¡cticas en nuestra vida diaria, desde mejorar la textura de los helados comerciales hasta prolongar el tiempo de viabilidad de los Ã³rganos humanos durante los trasplantes mÃ©dicos crÃ­ticos." 
+        text: "El descubrimiento de las proteínas anticongelantes por el científico Arthur DeVries en 1969 no solo nos ayudó a comprender cómo sobreviven los peces antárticos, sino que ha inspirado aplicaciones prácticas en nuestra vida diaria, desde mejorar la textura de los helados comerciales hasta prolongar el tiempo de viabilidad de los órganos humanos durante los trasplantes médicos críticos." 
       }
     ],
-    fact: "El tejido adiposo marrÃ³n es un tipo especializado de grasa que quema calorÃ­as directamente para generar calor corporal vital sin necesidad de temblar. Al mismo tiempo, las proteÃ­nas anticongelantes detienen el crecimiento de los diminutos cristales de hielo en el torrente sanguÃ­neo, protegiendo las membranas celulares y permitiendo que la vida florezca incluso en los climas mÃ¡s inclementes de la Tierra."
+    fact: "El tejido adiposo marrón es un tipo especializado de grasa que quema calorías directamente para generar calor corporal vital sin necesidad de temblar. Al mismo tiempo, las proteínas anticongelantes detienen el crecimiento de los diminutos cristales de hielo en el torrente sanguíneo, protegiendo las membranas celulares y permitiendo que la vida florezca incluso en los climas más inclementes de la Tierra."
   },
   {
     id: 'purrgil-migracion',
-    title: 'Los Purrgil: MigraciÃ³n Espacial',
+    title: 'Los Purrgil: Migración Espacial',
     color: '#FF7043',
     btnImage: '/assets/starwars/infographic_fauna/btn_purrgil_migracion.png',
     image: '/assets/starwars/infographic_fauna/hero_purrgil_migracion.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_purrgil_migracion.png',
-    bannerCaption: "Las ballenas jorobadas migran 8,000 km guiÃ¡ndose por el campo magnÃ©tico terrestre, fenÃ³meno llamado magnetorrecepciÃ³n.",
+    bannerCaption: "Las ballenas jorobadas migran 8,000 km guiándose por el campo magnético terrestre, fenómeno llamado magnetorrecepción.",
     content: [
-      "El reino animal estÃ¡ lleno de viajeros incansables que emprenden trayectos Ã©picos a travÃ©s del mundo entero sin el uso de mapas o sistemas de posicionamiento satelital. Esta inmensa capacidad para la migraciÃ³n es uno de los mayores misterios biolÃ³gicos de la naturaleza. Organismos de diversas especies cruzan ocÃ©anos y continentes enteros guiados por seÃ±ales invisibles del entorno, superando obstÃ¡culos formidables y condiciones climÃ¡ticas extremas para llegar con una precisiÃ³n impecable a sus destinos de reproducciÃ³n o alimentaciÃ³n.",
-      "Uno de los ejemplos mÃ¡s notables de resistencia es el del charrÃ¡n Ã¡rtico, un ave marina relativamente pequeÃ±a que realiza un recorrido migratorio anual de aproximadamente setenta mil kilÃ³metros. Viaja desde las zonas de crÃ­a en el Ãrtico hasta la AntÃ¡rtida y regresa en un ciclo continuo, experimentando dos veranos cada aÃ±o y viendo mÃ¡s luz diurna que cualquier otra criatura del planeta. Este impresionante viaje de resistencia demuestra cÃ³mo la evoluciÃ³n ha dotado a ciertas especies de capacidades fÃ­sicas y de navegaciÃ³n incomparables.",
-      "Â¿Pero cÃ³mo logran orientarse exactamente estos animales majestuosos? La respuesta reside en un fenÃ³meno conocido como magnetorrecepciÃ³n. Se ha descubierto que diversas especies, incluyendo ciertas aves y tortugas marinas, poseen pequeÃ±os cristales de magnetita, un mineral de Ã³xido de hierro con la fÃ³rmula quÃ­mica Fe3O4, alojados principalmente en sus picos o sistemas nerviosos. Esta maravilla biolÃ³gica funciona como una brÃºjula interna, permitiÃ©ndoles percibir de manera directa el campo magnÃ©tico de la Tierra y ajustar sus rutas migratorias.",
-      "Otro caso fascinante es el de la migraciÃ³n de las majestuosas mariposas monarca, que viajan miles de kilÃ³metros desde AmÃ©rica del Norte hasta los cÃ¡lidos bosques de MÃ©xico. A diferencia de las aves, estas mariposas utilizan principalmente una especie de compÃ¡s solar interno, midiendo meticulosamente la posiciÃ³n del sol en el firmamento combinado con su propio reloj circadiano para mantener la direcciÃ³n correcta. A esto se suma el canto de las inmensas ballenas jorobadas, que puede viajar mÃ¡s de tres mil kilÃ³metros bajo el agua oceÃ¡nica.",
-      "La ciencia de la migraciÃ³n y la navegaciÃ³n innata se refleja de manera espectacular en la galaxia de ficciÃ³n. Los gigantescos Purrgil, las famosas ballenas espaciales vistas en la serie animada Star Wars Rebels, son capaces de navegar por el oscuro vacÃ­o del cosmos y entrar en el hiperespacio sin tecnologÃ­a alguna. AsÃ­ como nuestros animales terrestres leen los campos magnÃ©ticos del planeta, los Purrgil deben percibir flujos de energÃ­a estelar o redes gravitacionales para trazar rutas interestelares de forma biolÃ³gica y completamente natural."
+      "El reino animal está lleno de viajeros incansables que emprenden trayectos épicos a través del mundo entero sin el uso de mapas o sistemas de posicionamiento satelital. Esta inmensa capacidad para la migración es uno de los mayores misterios biológicos de la naturaleza. Organismos de diversas especies cruzan océanos y continentes enteros guiados por señales invisibles del entorno, superando obstáculos formidables y condiciones climáticas extremas para llegar con una precisión impecable a sus destinos de reproducción o alimentación.",
+      "Uno de los ejemplos más notables de resistencia es el del charrán ártico, un ave marina relativamente pequeña que realiza un recorrido migratorio anual de aproximadamente setenta mil kilómetros. Viaja desde las zonas de cría en el Ártico hasta la Antártida y regresa en un ciclo continuo, experimentando dos veranos cada año y viendo más luz diurna que cualquier otra criatura del planeta. Este impresionante viaje de resistencia demuestra cómo la evolución ha dotado a ciertas especies de capacidades físicas y de navegación incomparables.",
+      "¿Pero cómo logran orientarse exactamente estos animales majestuosos? La respuesta reside en un fenómeno conocido como magnetorrecepción. Se ha descubierto que diversas especies, incluyendo ciertas aves y tortugas marinas, poseen pequeños cristales de magnetita, un mineral de óxido de hierro con la fórmula química Fe3O4, alojados principalmente en sus picos o sistemas nerviosos. Esta maravilla biológica funciona como una brújula interna, permitiéndoles percibir de manera directa el campo magnético de la Tierra y ajustar sus rutas migratorias.",
+      "Otro caso fascinante es el de la migración de las majestuosas mariposas monarca, que viajan miles de kilómetros desde América del Norte hasta los cálidos bosques de México. A diferencia de las aves, estas mariposas utilizan principalmente una especie de compás solar interno, midiendo meticulosamente la posición del sol en el firmamento combinado con su propio reloj circadiano para mantener la dirección correcta. A esto se suma el canto de las inmensas ballenas jorobadas, que puede viajar más de tres mil kilómetros bajo el agua oceánica.",
+      "La ciencia de la migración y la navegación innata se refleja de manera espectacular en la galaxia de ficción. Los gigantescos Purrgil, las famosas ballenas espaciales vistas en la serie animada Star Wars Rebels, son capaces de navegar por el oscuro vacío del cosmos y entrar en el hiperespacio sin tecnología alguna. Así como nuestros animales terrestres leen los campos magnéticos del planeta, los Purrgil deben percibir flujos de energía estelar o redes gravitacionales para trazar rutas interestelares de forma biológica y completamente natural."
     ],
     expandables: [
       { 
-        label: 'En la PelÃ­cula', 
+        label: 'En la Película', 
         icon: 'zap', 
-        text: "En la aclamada serie animada Star Wars Rebels y posteriormente en la serie de acciÃ³n real Ahsoka, descubrimos que los Purrgil son los responsables originales de inspirar la tecnologÃ­a de los motores hiperespaciales. Observando a estas magnÃ­ficas bestias, los primeros ingenieros galÃ¡cticos aprendieron a surcar las estrellas usando rutas seguras naturales similares a las grandes autopistas migratorias." 
+        text: "En la aclamada serie animada Star Wars Rebels y posteriormente en la serie de acción real Ahsoka, descubrimos que los Purrgil son los responsables originales de inspirar la tecnología de los motores hiperespaciales. Observando a estas magníficas bestias, los primeros ingenieros galácticos aprendieron a surcar las estrellas usando rutas seguras naturales similares a las grandes autopistas migratorias." 
       },
       { 
-        label: 'Dato CientÃ­fico', 
+        label: 'Dato Científico', 
         icon: 'atom', 
-        text: "La magnetita encontrada en los picos de muchas aves migratorias responde fÃ­sicamente a los cambios de intensidad e inclinaciÃ³n del campo magnÃ©tico terrestre. El Ã³xido de hierro Fe3O4 forma estructuras minÃºsculas que transmiten seÃ±ales nerviosas directamente al cerebro del ave, permitiendo que el organismo literalmente sienta y visualice su posiciÃ³n global con un margen de error verdaderamente minÃºsculo." 
+        text: "La magnetita encontrada en los picos de muchas aves migratorias responde físicamente a los cambios de intensidad e inclinación del campo magnético terrestre. El óxido de hierro Fe3O4 forma estructuras minúsculas que transmiten señales nerviosas directamente al cerebro del ave, permitiendo que el organismo literalmente sienta y visualice su posición global con un margen de error verdaderamente minúsculo." 
       },
       { 
-        label: 'Â¿SabÃ­as que...?', 
+        label: '¿Sabías que...?', 
         icon: 'sparkles', 
-        text: "Las enormes ballenas jorobadas no solo migran distancias masivas de hasta veinticinco mil kilÃ³metros anuales, sino que utilizan el agua como un fenomenal conductor acÃºstico para transmitir sus complejos cantos a mÃ¡s de tres mil kilÃ³metros de distancia. Esta comunicaciÃ³n sonora les ayuda a mantener al grupo unido a travÃ©s de las inmensas y vastas cuencas oceÃ¡nicas del mundo." 
+        text: "Las enormes ballenas jorobadas no solo migran distancias masivas de hasta veinticinco mil kilómetros anuales, sino que utilizan el agua como un fenomenal conductor acústico para transmitir sus complejos cantos a más de tres mil kilómetros de distancia. Esta comunicación sonora les ayuda a mantener al grupo unido a través de las inmensas y vastas cuencas oceánicas del mundo." 
       }
     ],
-    fact: "La extraordinaria capacidad de magnetorrecepciÃ³n permite que animales que jamÃ¡s han recorrido una ruta especÃ­fica puedan encontrar su camino guiados por el campo magnÃ©tico de la Tierra. El pequeÃ±o charrÃ¡n Ã¡rtico completa una travesÃ­a de 70,000 kilÃ³metros al aÃ±o, el viaje migratorio mÃ¡s largo de cualquier especie conocida por la ciencia biolÃ³gica moderna."
+    fact: "La extraordinaria capacidad de magnetorrecepción permite que animales que jamás han recorrido una ruta específica puedan encontrar su camino guiados por el campo magnético de la Tierra. El pequeño charrán ártico completa una travesía de 70,000 kilómetros al año, el viaje migratorio más largo de cualquier especie conocida por la ciencia biológica moderna."
   },
   {
     id: 'bioluminiscencia',
@@ -257,32 +257,32 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_bioluminiscencia.png',
     image: '/assets/starwars/infographic_fauna/hero_bioluminiscencia.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_bioluminiscencia.png',
-    bannerCaption: "La bioluminiscencia es una reacciÃ³n quÃ­mica entre luciferina y luciferasa que produce luz sin calor en organismos marinos.",
+    bannerCaption: "La bioluminiscencia es una reacción química entre luciferina y luciferasa que produce luz sin calor en organismos marinos.",
     content: [
-      "Cuando exploramos las partes mÃ¡s recÃ³nditas de la naturaleza, especialmente los inmensos abismos marinos donde la luz solar jamÃ¡s logra penetrar, encontramos un espectÃ¡culo brillante casi mÃ¡gico. La bioluminiscencia es la capacidad espectacular de un organismo vivo para producir y emitir su propia luz. Este fenÃ³meno, en lugar de ser una simple fantasÃ­a visual, es el resultado directo de una reacciÃ³n quÃ­mica frÃ­a y sumamente eficiente que ha evolucionado de forma independiente en decenas de grupos animales diferentes a lo largo del tiempo biolÃ³gico.",
-      "El corazÃ³n quÃ­mico de este deslumbrante fenÃ³meno se basa en dos componentes moleculares clave: la molÃ©cula llamada luciferina y la enzima denominada luciferasa. Cuando la luciferina reacciona con el oxÃ­geno, la enzima luciferasa actÃºa como un acelerador catalÃ­tico que permite la liberaciÃ³n de energÃ­a luminosa en forma de fotones. Es una luz excepcionalmente frÃ­a, lo que significa que casi no genera calor, a diferencia de nuestras bombillas incandescentes tradicionales donde una gran cantidad de energÃ­a se desperdicia trÃ¡gicamente por el calentamiento.",
-      "En las profundidades del vasto ocÃ©ano terrestre, se estima que un setenta y seis por ciento de todos los organismos pelÃ¡gicos tienen la capacidad de producir bioluminiscencia. Peces abisales, como el aterrador pero fascinante pez pescador, utilizan esta luz brillante como una trampa colgante para engaÃ±ar y atraer a sus presas en la mÃ¡s absoluta oscuridad. AdemÃ¡s, criaturas microscÃ³picas como los dinoflagelados pueden iluminar las olas marinas durante la noche en un espectÃ¡culo masivo de defensa sincronizada, asustando a los depredadores menores.",
-      "El impacto de este estudio en la ciencia moderna ha sido verdaderamente monumental. En el aÃ±o 2008, el Premio Nobel de QuÃ­mica fue otorgado por el aislamiento y desarrollo de la ProteÃ­na Verde Fluorescente, tambiÃ©n conocida como GFP, extraÃ­da originalmente de la medusa Aequorea victoria. Esta proteÃ­na revolucionaria permite a los investigadores mÃ©dicos iluminar el interior de cÃ©lulas vivas y rastrear el crecimiento de tumores o el desarrollo neuronal, cambiando para siempre el panorama de la investigaciÃ³n mÃ©dica y la ingenierÃ­a genÃ©tica.",
-      "En el rico universo de la ciencia ficciÃ³n galÃ¡ctica, a menudo presenciamos selvas brillantes, cavernas fluorescentes y extraÃ±as criaturas luminosas que habitan planetas exÃ³ticos carentes de un sol intenso. Estos mundos oscuros pero llenos de luz biolÃ³gica no son tan descabellados si miramos las maravillas fosforescentes de nuestras propias trincheras oceÃ¡nicas. La naturaleza demuestra una y otra vez que la capacidad de generar luz propia es una adaptaciÃ³n universal poderosa para sobrevivir, cazar y comunicarse en los entornos mÃ¡s carentes de energÃ­a."
+      "Cuando exploramos las partes más recónditas de la naturaleza, especialmente los inmensos abismos marinos donde la luz solar jamás logra penetrar, encontramos un espectáculo brillante casi mágico. La bioluminiscencia es la capacidad espectacular de un organismo vivo para producir y emitir su propia luz. Este fenómeno, en lugar de ser una simple fantasía visual, es el resultado directo de una reacción química fría y sumamente eficiente que ha evolucionado de forma independiente en decenas de grupos animales diferentes a lo largo del tiempo biológico.",
+      "El corazón químico de este deslumbrante fenómeno se basa en dos componentes moleculares clave: la molécula llamada luciferina y la enzima denominada luciferasa. Cuando la luciferina reacciona con el oxígeno, la enzima luciferasa actúa como un acelerador catalítico que permite la liberación de energía luminosa en forma de fotones. Es una luz excepcionalmente fría, lo que significa que casi no genera calor, a diferencia de nuestras bombillas incandescentes tradicionales donde una gran cantidad de energía se desperdicia trágicamente por el calentamiento.",
+      "En las profundidades del vasto océano terrestre, se estima que un setenta y seis por ciento de todos los organismos pelágicos tienen la capacidad de producir bioluminiscencia. Peces abisales, como el aterrador pero fascinante pez pescador, utilizan esta luz brillante como una trampa colgante para engañar y atraer a sus presas en la más absoluta oscuridad. Además, criaturas microscópicas como los dinoflagelados pueden iluminar las olas marinas durante la noche en un espectáculo masivo de defensa sincronizada, asustando a los depredadores menores.",
+      "El impacto de este estudio en la ciencia moderna ha sido verdaderamente monumental. En el año 2008, el Premio Nobel de Química fue otorgado por el aislamiento y desarrollo de la Proteína Verde Fluorescente, también conocida como GFP, extraída originalmente de la medusa Aequorea victoria. Esta proteína revolucionaria permite a los investigadores médicos iluminar el interior de células vivas y rastrear el crecimiento de tumores o el desarrollo neuronal, cambiando para siempre el panorama de la investigación médica y la ingeniería genética.",
+      "En el rico universo de la ciencia ficción galáctica, a menudo presenciamos selvas brillantes, cavernas fluorescentes y extrañas criaturas luminosas que habitan planetas exóticos carentes de un sol intenso. Estos mundos oscuros pero llenos de luz biológica no son tan descabellados si miramos las maravillas fosforescentes de nuestras propias trincheras oceánicas. La naturaleza demuestra una y otra vez que la capacidad de generar luz propia es una adaptación universal poderosa para sobrevivir, cazar y comunicarse en los entornos más carentes de energía."
     ],
     expandables: [
       { 
-        label: 'En la PelÃ­cula', 
+        label: 'En la Película', 
         icon: 'zap', 
-        text: "En episodios de The Clone Wars, observamos la espesa e intrigante selva del planeta Umbara, donde la flora y fauna locales desprenden un fulgor iridiscente en una oscuridad perpetua. Del mismo modo, en las cuevas cristalinas de las regiones desconocidas, diversas especies de insectos y bestias generan luz frÃ­a, reflejando fielmente cÃ³mo operan los ecosistemas en las oscuras y gÃ©lidas trincheras oceÃ¡nicas de nuestro planeta." 
+        text: "En episodios de The Clone Wars, observamos la espesa e intrigante selva del planeta Umbara, donde la flora y fauna locales desprenden un fulgor iridiscente en una oscuridad perpetua. Del mismo modo, en las cuevas cristalinas de las regiones desconocidas, diversas especies de insectos y bestias generan luz fría, reflejando fielmente cómo operan los ecosistemas en las oscuras y gélidas trincheras oceánicas de nuestro planeta." 
       },
       { 
-        label: 'Dato CientÃ­fico', 
+        label: 'Dato Científico', 
         icon: 'atom', 
-        text: "La reacciÃ³n quÃ­mica responsable de la bioluminiscencia es energÃ©ticamente tan perfecta que el 98% de la energÃ­a consumida por las molÃ©culas se libera puramente en forma de fotones de luz, con apenas un mÃ­nimo residuo tÃ©rmico. Comparada con las bombillas incandescentes del pasado, que desperdician hasta el 90% de su energÃ­a emitiendo un calor inÃºtil, la biologÃ­a sigue siendo infinitamente superior a nuestra tecnologÃ­a." 
+        text: "La reacción química responsable de la bioluminiscencia es energéticamente tan perfecta que el 98% de la energía consumida por las moléculas se libera puramente en forma de fotones de luz, con apenas un mínimo residuo térmico. Comparada con las bombillas incandescentes del pasado, que desperdician hasta el 90% de su energía emitiendo un calor inútil, la biología sigue siendo infinitamente superior a nuestra tecnología." 
       },
       { 
-        label: 'Â¿SabÃ­as que...?', 
+        label: '¿Sabías que...?', 
         icon: 'sparkles', 
-        text: "El descubrimiento de la ProteÃ­na Verde Fluorescente (GFP) de la medusa Aequorea victoria revolucionÃ³ el campo mÃ©dico de la biologÃ­a molecular celular. Fue tan indispensable para iluminar procesos invisibles que los cientÃ­ficos Osamu Shimomura, Martin Chalfie y Roger Y. Tsien fueron galardonados conjuntamente con el cÃ©lebre y muy prestigioso Premio Nobel de QuÃ­mica en el memorable aÃ±o 2008 por este monumental avance cientÃ­fico." 
+        text: "El descubrimiento de la Proteína Verde Fluorescente (GFP) de la medusa Aequorea victoria revolucionó el campo médico de la biología molecular celular. Fue tan indispensable para iluminar procesos invisibles que los científicos Osamu Shimomura, Martin Chalfie y Roger Y. Tsien fueron galardonados conjuntamente con el célebre y muy prestigioso Premio Nobel de Química en el memorable año 2008 por este monumental avance científico." 
       }
     ],
-    fact: "MÃ¡s del 76% de los organismos que habitan la columna de agua profunda en los ocÃ©anos del mundo producen algÃºn tipo de luz bioluminiscente. La reacciÃ³n de luciferina y luciferasa es un ejemplo perfecto de convergencia evolutiva, donde la naturaleza encontrÃ³ la misma soluciÃ³n brillante una y otra vez para iluminar la oscuridad extrema."
+    fact: "Más del 76% de los organismos que habitan la columna de agua profunda en los océanos del mundo producen algún tipo de luz bioluminiscente. La reacción de luciferina y luciferasa es un ejemplo perfecto de convergencia evolutiva, donde la naturaleza encontró la misma solución brillante una y otra vez para iluminar la oscuridad extrema."
   },
   {
     id: 'exobiologia-futuro',
@@ -291,32 +291,32 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_fauna/btn_exobiologia_futuro.png',
     image: '/assets/starwars/infographic_fauna/hero_exobiologia_futuro.png',
     bannerImage: '/assets/starwars/infographic_fauna/banner_exobiologia_futuro.png',
-    bannerCaption: "El telescopio James Webb analiza las atmÃ³sferas de exoplanetas buscando biofirmas como oxÃ­geno, metano y vapor de agua.",
+    bannerCaption: "El telescopio James Webb analiza las atmósferas de exoplanetas buscando biofirmas como oxígeno, metano y vapor de agua.",
     content: [
-      "Desde los albores de la civilizaciÃ³n, el ser humano ha contemplado la inmensidad del firmamento nocturno preguntÃ¡ndose si estamos completamente solos en el vasto cosmos. Esta profunda interrogante filosÃ³fica ha dado origen a la astrobiologÃ­a, una disciplina cientÃ­fica moderna que combina la astronomÃ­a, la biologÃ­a molecular y la geologÃ­a planetaria para rastrear la presencia de ecosistemas orgÃ¡nicos mÃ¡s allÃ¡ de nuestro planeta natal, utilizando la rigurosa metodologÃ­a empÃ­rica para descifrar los misterios de la evoluciÃ³n estelar.",
-      "Para ordenar nuestras expectativas sobre la vida galÃ¡ctica, el cÃ©lebre astrÃ³nomo Frank Drake formulÃ³ en 1961 su famosa ecuaciÃ³n matemÃ¡tica probabilÃ­stica. La EcuaciÃ³n de Drake calcula teÃ³ricamente el nÃºmero de civilizaciones activas y comunicativas dentro de la VÃ­a LÃ¡ctea, considerando factores variables como la tasa de formaciÃ³n de estrellas adecuadas, la fracciÃ³n de aquellas con sistemas planetarios y la remota posibilidad de que emerja tecnologÃ­a detectable. Es un marco de referencia fenomenal para dimensionar las matemÃ¡ticas cÃ³smicas de la existencia.",
-      "Nuestra exploraciÃ³n no se detiene en meras suposiciones teÃ³ricas. Proyectos emblemÃ¡ticos como el programa SETI se dedican a escanear activamente los cielos en busca de anomalÃ­as de radiofrecuencia. El ejemplo mÃ¡s famoso de este esfuerzo ocurriÃ³ en 1977, cuando el radiotelescopio Big Ear detectÃ³ la enigmÃ¡tica SeÃ±al Wow!, una transmisiÃ³n de banda estrecha sorprendentemente intensa que durÃ³ 72 segundos. Aunque su origen nunca fue plenamente explicado, sigue siendo el candidato mÃ¡s intrigante en la histÃ³rica bÃºsqueda de transmisiones alienÃ­genas inteligentes.",
-      "Actualmente, la esperanza de encontrar microorganismos vivos se concentra muy cerca de nuestro hogar solar, especÃ­ficamente en las lunas oceÃ¡nicas de los planetas gigantes. Encelado, satÃ©lite de Saturno, y Europa, satÃ©lite de JÃºpiter, ocultan gigantescos ocÃ©anos lÃ­quidos bajo gruesas capas de hielo glacial. Los cientÃ­ficos sospechan que, impulsados por chimeneas hidrotermales submarinas en sus lechos oceÃ¡nicos, estos entornos oscuros y cÃ¡lidos albergan las condiciones biolÃ³gicas quÃ­micas exactas para sostener formas de vida extremÃ³filas semejantes a las terrestres.",
-      "En un salto tecnolÃ³gico sin precedentes, el monumental Telescopio Espacial James Webb ahora puede analizar las atmÃ³sferas de exoplanetas situados a aÃ±os luz de distancia. Al descomponer la luz de sus soles a travÃ©s de un espectrÃ³grafo preciso, los astrofÃ­sicos buscan activamente biofirmas moleculares inequÃ­vocas, como metano y oxÃ­geno, que delaten procesos biolÃ³gicos subyacentes. El universo rebosante de flora y fauna de las pelÃ­culas clÃ¡sicas nos inspira constantemente a perfeccionar nuestras herramientas y seguir mirando con asombro hacia lo desconocido."
+      "Desde los albores de la civilización, el ser humano ha contemplado la inmensidad del firmamento nocturno preguntándose si estamos completamente solos en el vasto cosmos. Esta profunda interrogante filosófica ha dado origen a la astrobiología, una disciplina científica moderna que combina la astronomía, la biología molecular y la geología planetaria para rastrear la presencia de ecosistemas orgánicos más allá de nuestro planeta natal, utilizando la rigurosa metodología empírica para descifrar los misterios de la evolución estelar.",
+      "Para ordenar nuestras expectativas sobre la vida galáctica, el célebre astrónomo Frank Drake formuló en 1961 su famosa ecuación matemática probabilística. La Ecuación de Drake calcula teóricamente el número de civilizaciones activas y comunicativas dentro de la Vía Láctea, considerando factores variables como la tasa de formación de estrellas adecuadas, la fracción de aquellas con sistemas planetarios y la remota posibilidad de que emerja tecnología detectable. Es un marco de referencia fenomenal para dimensionar las matemáticas cósmicas de la existencia.",
+      "Nuestra exploración no se detiene en meras suposiciones teóricas. Proyectos emblemáticos como el programa SETI se dedican a escanear activamente los cielos en busca de anomalías de radiofrecuencia. El ejemplo más famoso de este esfuerzo ocurrió en 1977, cuando el radiotelescopio Big Ear detectó la enigmática Señal Wow!, una transmisión de banda estrecha sorprendentemente intensa que duró 72 segundos. Aunque su origen nunca fue plenamente explicado, sigue siendo el candidato más intrigante en la histórica búsqueda de transmisiones alienígenas inteligentes.",
+      "Actualmente, la esperanza de encontrar microorganismos vivos se concentra muy cerca de nuestro hogar solar, específicamente en las lunas oceánicas de los planetas gigantes. Encelado, satélite de Saturno, y Europa, satélite de Júpiter, ocultan gigantescos océanos líquidos bajo gruesas capas de hielo glacial. Los científicos sospechan que, impulsados por chimeneas hidrotermales submarinas en sus lechos oceánicos, estos entornos oscuros y cálidos albergan las condiciones biológicas químicas exactas para sostener formas de vida extremófilas semejantes a las terrestres.",
+      "En un salto tecnológico sin precedentes, el monumental Telescopio Espacial James Webb ahora puede analizar las atmósferas de exoplanetas situados a años luz de distancia. Al descomponer la luz de sus soles a través de un espectrógrafo preciso, los astrofísicos buscan activamente biofirmas moleculares inequívocas, como metano y oxígeno, que delaten procesos biológicos subyacentes. El universo rebosante de flora y fauna de las películas clásicas nos inspira constantemente a perfeccionar nuestras herramientas y seguir mirando con asombro hacia lo desconocido."
     ],
     expandables: [
       { 
-        label: 'En la PelÃ­cula', 
+        label: 'En la Película', 
         icon: 'zap', 
-        text: "El extenso universo cinematogrÃ¡fico nos muestra un tapiz inagotable donde miles de formas de vida diferentes interactÃºan diariamente en planetas y estaciones espaciales densamente pobladas. La existencia de especies infinitamente variadas como los Wookiees, los Mon Calamari y los misteriosos y ancestrales Yoda resuenan directamente con el optimismo cientÃ­fico moderno de que los mundos alienÃ­genas podrÃ­an albergar biomas y ecosistemas profundamente complejos y diversos." 
+        text: "El extenso universo cinematográfico nos muestra un tapiz inagotable donde miles de formas de vida diferentes interactúan diariamente en planetas y estaciones espaciales densamente pobladas. La existencia de especies infinitamente variadas como los Wookiees, los Mon Calamari y los misteriosos y ancestrales Yoda resuenan directamente con el optimismo científico moderno de que los mundos alienígenas podrían albergar biomas y ecosistemas profundamente complejos y diversos." 
       },
       { 
-        label: 'Dato CientÃ­fico', 
+        label: 'Dato Científico', 
         icon: 'atom', 
-        text: "El Telescopio Espacial James Webb utiliza la avanzada tÃ©cnica de espectroscopÃ­a de trÃ¡nsito para detectar biofirmas. Cuando un planeta lejano pasa frente a su estrella madre, la luz estelar es filtrada por la atmÃ³sfera planetaria. Los distintos gases absorben ciertas longitudes de onda especÃ­ficas, creando un cÃ³digo de barras quÃ­mico Ãºnico que los astrÃ³nomos pueden leer y analizar meticulosamente desde la seguridad de nuestro sistema solar." 
+        text: "El Telescopio Espacial James Webb utiliza la avanzada técnica de espectroscopía de tránsito para detectar biofirmas. Cuando un planeta lejano pasa frente a su estrella madre, la luz estelar es filtrada por la atmósfera planetaria. Los distintos gases absorben ciertas longitudes de onda específicas, creando un código de barras químico único que los astrónomos pueden leer y analizar meticulosamente desde la seguridad de nuestro sistema solar." 
       },
       { 
-        label: 'Â¿SabÃ­as que...?', 
+        label: '¿Sabías que...?', 
         icon: 'sparkles', 
-        text: "El famoso y aÃºn inexplicable misterio de la SeÃ±al Wow! de 1977 recibiÃ³ su inusual nombre debido a que el astrÃ³nomo voluntario Jerry R. Ehman quedÃ³ tan impactado por la abrumadora y clara intensidad del registro de radio impreso en papel continuo, que circulÃ³ los datos astronÃ³micos con un bolÃ­grafo rojo y escribiÃ³ la palabra inglesa Wow en el margen superior de la histÃ³rica hoja de investigaciÃ³n." 
+        text: "El famoso y aún inexplicable misterio de la Señal Wow! de 1977 recibió su inusual nombre debido a que el astrónomo voluntario Jerry R. Ehman quedó tan impactado por la abrumadora y clara intensidad del registro de radio impreso en papel continuo, que circuló los datos astronómicos con un bolígrafo rojo y escribió la palabra inglesa Wow en el margen superior de la histórica hoja de investigación." 
       }
     ],
-    fact: "La astrobiologÃ­a moderna se enfoca en detectar gases inestables como el metano o el oxÃ­geno en atmÃ³sferas lejanas de otros mundos, ya que la coexistencia simultÃ¡nea de estos elementos quÃ­micos suele requerir una reposiciÃ³n biolÃ³gica continua. Encelado y Europa son hoy los principales candidatos de nuestro vecindario solar."
+    fact: "La astrobiología moderna se enfoca en detectar gases inestables como el metano o el oxígeno en atmósferas lejanas de otros mundos, ya que la coexistencia simultánea de estos elementos químicos suele requerir una reposición biológica continua. Encelado y Europa son hoy los principales candidatos de nuestro vecindario solar."
   }
 ];
 
@@ -400,7 +400,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         textTransform: 'uppercase',
         textShadow: '0 2px 10px rgba(171, 71, 188, 0.4)'
       }}>
-        XENOBIOLOGÃA Y LA FAUNA DE STAR WARS
+        XENOBIOLOGÍA Y LA FAUNA DE STAR WARS
       </h1>
       <h2 style={{
         fontFamily: '"Lora", serif',
@@ -409,7 +409,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         margin: 0,
         letterSpacing: '1px'
       }}>
-        BIOLOGÃA EXTREMA &middot; MEGAFAUNA &middot; ADAPTACIÃ“N
+        BIOLOGÍA EXTREMA &middot; MEGAFAUNA &middot; ADAPTACIÃ“N
       </h2>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
         {nodes.map(n => (
@@ -592,13 +592,13 @@ export default function InteractiveInfographic_SwSec5() {
           {isAllComplete && (
             <motion.div initial={{ opacity: 0, scale: 0.9, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}>
               <img src="/assets/starwars/infographic_fauna/badge_fauna.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
-              Â¡DATOS XENOBIOLÃ“GICOS COMPLETADOS!
+              ¡DATOS XENOBIOLÃ“GICOS COMPLETADOS!
               <Sparkles size={24} />
             </motion.div>
           )}
         </AnimatePresence>
         <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
-          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÃ“N (BibliografÃ­a)</h3>
+          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÃ“N (Bibliografía)</h3>
           <ul style={{ margin: 0, padding: '0 0 0 1rem', color: '#78909C', fontFamily: '"Lora", serif', fontSize: '0.9rem', lineHeight: 1.8 }}>
             {BIBLIOGRAPHY.map((item, idx) => <li key={idx} style={{ marginBottom: '0.5rem' }}>{item}</li>)}
           </ul>

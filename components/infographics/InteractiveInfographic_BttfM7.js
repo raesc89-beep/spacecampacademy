@@ -144,21 +144,21 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'metodo-cientifico',
-    title: 'El MÃ©todo CientÃ­fico',
+    title: 'El Método Científico',
     color: '#6EC6FF',
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_metodo.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_metodo.png',
     content: [
-      'Â¿Alguna vez te has preguntado cÃ³mo los cientÃ­ficos descubren cosas nuevas? Todo empieza con la curiosidad, pero para convertir esa curiosidad en un descubrimiento real, utilizan una herramienta especial llamada el "MÃ©todo CientÃ­fico". Este es un proceso paso a paso que asegura que los resultados sean precisos y comprobables. Es como seguir una receta cuidadosamente, pero en lugar de hacer un pastel, estÃ¡s descubriendo los secretos del universo.',
-      'El proceso comienza con una observaciÃ³n: notas algo interesante, como una manzana cayendo de un Ã¡rbol. Luego, haces una pregunta y formas una "hipÃ³tesis", que es una suposiciÃ³n educada de por quÃ© sucede eso. Â¡AquÃ­ es donde entra la parte divertida! DiseÃ±as un experimento para probar si tu hipÃ³tesis es correcta. Durante el experimento, recopilas datos, mides, observas y anotas absolutamente todo lo que pasa.',
-      'DespuÃ©s de recolectar toda esa informaciÃ³n, es hora de analizarla. Revisas los datos como un detective buscando pistas. Â¿Los resultados apoyan tu hipÃ³tesis original o la contradicen? Con base en esto, sacas una conclusiÃ³n. Si tu experimento demostrÃ³ que estabas equivocado, Â¡eso tambiÃ©n es un descubrimiento importante! Los cientÃ­ficos aprenden tanto de los errores como de los aciertos, ajustando sus teorÃ­as y probando de nuevo.',
-      'El Ãºltimo paso es crucial: verificar y compartir. Un experimento debe poder ser repetido por otros cientÃ­ficos en diferentes partes del mundo para comprobar que los resultados son vÃ¡lidos. AsÃ­ es como la ciencia avanza, construyendo sobre el conocimiento de los demÃ¡s de manera colaborativa, asegurando que las "verdades" cientÃ­ficas sean sÃ³lidas y estÃ©n probadas mÃ¡s allÃ¡ de toda duda razonable.'
+      '¿Alguna vez te has preguntado cómo los científicos descubren cosas nuevas? Todo empieza con la curiosidad, pero para convertir esa curiosidad en un descubrimiento real, utilizan una herramienta especial llamada el "Método Científico". Este es un proceso paso a paso que asegura que los resultados sean precisos y comprobables. Es como seguir una receta cuidadosamente, pero en lugar de hacer un pastel, estás descubriendo los secretos del universo.',
+      'El proceso comienza con una observación: notas algo interesante, como una manzana cayendo de un árbol. Luego, haces una pregunta y formas una "hipótesis", que es una suposición educada de por qué sucede eso. ¡Aquí es donde entra la parte divertida! Diseñas un experimento para probar si tu hipótesis es correcta. Durante el experimento, recopilas datos, mides, observas y anotas absolutamente todo lo que pasa.',
+      'Después de recolectar toda esa información, es hora de analizarla. Revisas los datos como un detective buscando pistas. ¿Los resultados apoyan tu hipótesis original o la contradicen? Con base en esto, sacas una conclusión. Si tu experimento demostró que estabas equivocado, ¡eso también es un descubrimiento importante! Los científicos aprenden tanto de los errores como de los aciertos, ajustando sus teorías y probando de nuevo.',
+      'El último paso es crucial: verificar y compartir. Un experimento debe poder ser repetido por otros científicos en diferentes partes del mundo para comprobar que los resultados son válidos. Así es como la ciencia avanza, construyendo sobre el conocimiento de los demás de manera colaborativa, asegurando que las "verdades" científicas sean sólidas y estén probadas más allá de toda duda razonable.'
     ],
     expandables: [
-      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown encarna el mÃ©todo cientÃ­fico a la perfecciÃ³n. Cuando prueba el DeLorean por primera vez en el centro comercial Twin Pines, graba todo el experimento, usa a Einstein (su perro) para la primera prueba con un reloj sincronizado, observa los resultados (el reloj de Einstein estÃ¡ atrasado 1 minuto), analiza los datos y concluye que el viaje en el tiempo es posible.' },
-      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'El filÃ³sofo y cientÃ­fico AlhacÃ©n (Ibn al-Haytham), en el siglo XI, fue uno de los primeros en usar un mÃ©todo experimental para comprobar teorÃ­as. UsÃ³ experimentos controlados para demostrar que la luz viaja en lÃ­nea recta y entra a nuestros ojos, cambiando para siempre la forma en que entendemos la Ã³ptica.' }
+      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown encarna el método científico a la perfección. Cuando prueba el DeLorean por primera vez en el centro comercial Twin Pines, graba todo el experimento, usa a Einstein (su perro) para la primera prueba con un reloj sincronizado, observa los resultados (el reloj de Einstein está atrasado 1 minuto), analiza los datos y concluye que el viaje en el tiempo es posible.' },
+      { label: '¿Sabías que...?', icon: 'clock', text: 'El filósofo y científico Alhacén (Ibn al-Haytham), en el siglo XI, fue uno de los primeros en usar un método experimental para comprobar teorías. Usó experimentos controlados para demostrar que la luz viaja en línea recta y entra a nuestros ojos, cambiando para siempre la forma en que entendemos la óptica.' }
     ],
-    fact: 'El mÃ©todo cientÃ­fico no es solo para laboratorios; Â¡lo usas todos los dÃ­as! Cuando intentas encender una lÃ¡mpara y no funciona (observaciÃ³n), piensas que el foco estÃ¡ fundido (hipÃ³tesis), cambias el foco por uno nuevo (experimento), y si la luz enciende, tu conclusiÃ³n es que tenÃ­as razÃ³n.'
+    fact: 'El método científico no es solo para laboratorios; ¡lo usas todos los días! Cuando intentas encender una lámpara y no funciona (observación), piensas que el foco está fundido (hipótesis), cambias el foco por uno nuevo (experimento), y si la luz enciende, tu conclusión es que tenías razón.'
   },
   {
     id: 'electricidad',
@@ -167,16 +167,16 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_electricidad.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_electricidad.png',
     content: [
-      'Los rayos han fascinado y aterrado a la humanidad desde el principio de los tiempos. Un rayo es bÃ¡sicamente una descarga gigantesca de electricidad estÃ¡tica. Durante una tormenta, las partÃ­culas de hielo en las nubes chocan entre sÃ­, creando una carga elÃ©ctrica inmensa. Cuando esa carga se vuelve demasiado grande, busca el camino mÃ¡s rÃ¡pido hacia el suelo, y se produce un relÃ¡mpago que ilumina el cielo.',
-      'La energÃ­a que contiene un solo rayo es absolutamente descomunal. Un rayo tÃ­pico transporta millones de voltios y puede alcanzar temperaturas de hasta 30,000 grados Celsius. Â¡Eso es cinco veces mÃ¡s caliente que la superficie del Sol! Esta increÃ­ble temperatura calienta el aire circundante tan rÃ¡pido que explota, creando el sonido estruendoso que conocemos como trueno. La energÃ­a es tan intensa que puede convertir la arena en cristal.',
-      'Nuestra comprensiÃ³n de la electricidad dio un salto gigante en 1752, cuando Benjamin Franklin realizÃ³ su famoso experimento con una cometa. VolÃ³ una cometa con una llave de metal durante una tormenta (Â¡un experimento muy peligroso que no debes intentar!). Las chispas que saltaron de la llave confirmaron que los rayos eran de la misma naturaleza que la electricidad estÃ¡tica, uniendo estos dos conceptos para siempre.',
-      'Hoy en dÃ­a, la electricidad alimenta nuestro mundo moderno, desde las luces de nuestra casa hasta las supercomputadoras. Sin embargo, aprovechar la energÃ­a cruda y caÃ³tica de un rayo natural sigue siendo casi imposible. Los rayos son demasiado rÃ¡pidos y errÃ¡ticos para que podamos capturar y almacenar toda esa energÃ­a de manera eficiente con nuestra tecnologÃ­a actual. Â¡La naturaleza todavÃ­a tiene el rÃ©cord de poder bruto!'
+      'Los rayos han fascinado y aterrado a la humanidad desde el principio de los tiempos. Un rayo es básicamente una descarga gigantesca de electricidad estática. Durante una tormenta, las partículas de hielo en las nubes chocan entre sí, creando una carga eléctrica inmensa. Cuando esa carga se vuelve demasiado grande, busca el camino más rápido hacia el suelo, y se produce un relámpago que ilumina el cielo.',
+      'La energía que contiene un solo rayo es absolutamente descomunal. Un rayo típico transporta millones de voltios y puede alcanzar temperaturas de hasta 30,000 grados Celsius. ¡Eso es cinco veces más caliente que la superficie del Sol! Esta increíble temperatura calienta el aire circundante tan rápido que explota, creando el sonido estruendoso que conocemos como trueno. La energía es tan intensa que puede convertir la arena en cristal.',
+      'Nuestra comprensión de la electricidad dio un salto gigante en 1752, cuando Benjamin Franklin realizó su famoso experimento con una cometa. Voló una cometa con una llave de metal durante una tormenta (¡un experimento muy peligroso que no debes intentar!). Las chispas que saltaron de la llave confirmaron que los rayos eran de la misma naturaleza que la electricidad estática, uniendo estos dos conceptos para siempre.',
+      'Hoy en día, la electricidad alimenta nuestro mundo moderno, desde las luces de nuestra casa hasta las supercomputadoras. Sin embargo, aprovechar la energía cruda y caótica de un rayo natural sigue siendo casi imposible. Los rayos son demasiado rápidos y erráticos para que podamos capturar y almacenar toda esa energía de manera eficiente con nuestra tecnología actual. ¡La naturaleza todavía tiene el récord de poder bruto!'
     ],
     expandables: [
-      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Para viajar en el tiempo, el condensador de flujo necesita 1.21 gigawatts de potencia. Al no poder conseguir plutonio en 1955, Doc Brown canaliza la energÃ­a del rayo que cae en la torre del reloj directamente al DeLorean. Esta es una representaciÃ³n brillante, aunque exagerada, de intentar aprovechar la inmensa energÃ­a de la naturaleza.' },
-      { label: 'Dato CientÃ­fico', icon: 'atom', text: '1.21 Gigawatts es una cantidad colosal de energÃ­a. Para generar tanta electricidad de forma continua, necesitarÃ­as aproximadamente 3.1 millones de paneles solares funcionando a pleno rendimiento, o la producciÃ³n combinada de varios reactores nucleares comerciales. Â¡Y un solo relÃ¡mpago lo hace en fracciones de segundo!' }
+      { label: 'En la Película', icon: 'zap', text: 'Para viajar en el tiempo, el condensador de flujo necesita 1.21 gigawatts de potencia. Al no poder conseguir plutonio en 1955, Doc Brown canaliza la energía del rayo que cae en la torre del reloj directamente al DeLorean. Esta es una representación brillante, aunque exagerada, de intentar aprovechar la inmensa energía de la naturaleza.' },
+      { label: 'Dato Científico', icon: 'atom', text: '1.21 Gigawatts es una cantidad colosal de energía. Para generar tanta electricidad de forma continua, necesitarías aproximadamente 3.1 millones de paneles solares funcionando a pleno rendimiento, o la producción combinada de varios reactores nucleares comerciales. ¡Y un solo relámpago lo hace en fracciones de segundo!' }
     ],
-    fact: 'Existen relÃ¡mpagos que no van hacia el suelo, sino hacia arriba. Conocidos como "Duendes Rojos" (Red Sprites) y "Chorros Azules" (Blue Jets), estas misteriosas descargas elÃ©ctricas ocurren muy por encima de las nubes de tormenta, alcanzando hasta el borde del espacio.'
+    fact: 'Existen relámpagos que no van hacia el suelo, sino hacia arriba. Conocidos como "Duendes Rojos" (Red Sprites) y "Chorros Azules" (Blue Jets), estas misteriosas descargas eléctricas ocurren muy por encima de las nubes de tormenta, alcanzando hasta el borde del espacio.'
   },
   {
     id: 'guerra-corrientes',
@@ -185,70 +185,70 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_corrientes.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_corrientes.png',
     content: [
-      'A finales del siglo XIX, dos mentes brillantes se enfrentaron en una batalla Ã©pica que definirÃ­a el futuro de la tecnologÃ­a: Thomas Edison y Nikola Tesla. Este conflicto es conocido como la "Guerra de las Corrientes". El objetivo era decidir quÃ© sistema de transmisiÃ³n elÃ©ctrica iluminarÃ­a los hogares del mundo. Fue una lucha de ingenio, negocios y ciencia que cambiÃ³ nuestra historia.',
-      'Thomas Edison, un inventor famoso e implacable hombre de negocios, defendÃ­a la Corriente Continua (DC). En este sistema, la electricidad fluye en una sola direcciÃ³n. Era seguro pero tenÃ­a un problema grave: no podÃ­a transmitirse a largas distancias sin perder mucha energÃ­a. Edison habrÃ­a necesitado construir una planta de energÃ­a en cada vecindario para mantener las luces encendidas en toda la ciudad.',
-      'Nikola Tesla, un genio excÃ©ntrico y visionario, apoyado por el empresario George Westinghouse, propuso la Corriente Alterna (AC). La corriente alterna invierte su direcciÃ³n muchas veces por segundo. Su gran ventaja era que podÃ­a usar transformadores para elevar el voltaje, viajar cientos de kilÃ³metros a travÃ©s de cables delgados, y luego reducir el voltaje para usarlo de manera segura en los hogares.',
-      'Finalmente, la visiÃ³n de Tesla triunfÃ³. La Corriente Alterna demostrÃ³ ser superior para iluminar el mundo moderno, comenzando con la iluminaciÃ³n de la ExposiciÃ³n Universal de Chicago en 1893 y la planta hidroelÃ©ctrica en las Cataratas del NiÃ¡gara. Sin embargo, hoy en dÃ­a usamos ambos sistemas: la red elÃ©ctrica usa AC, pero nuestros telÃ©fonos, computadoras y autos elÃ©ctricos funcionan con DC.'
+      'A finales del siglo XIX, dos mentes brillantes se enfrentaron en una batalla épica que definiría el futuro de la tecnología: Thomas Edison y Nikola Tesla. Este conflicto es conocido como la "Guerra de las Corrientes". El objetivo era decidir qué sistema de transmisión eléctrica iluminaría los hogares del mundo. Fue una lucha de ingenio, negocios y ciencia que cambió nuestra historia.',
+      'Thomas Edison, un inventor famoso e implacable hombre de negocios, defendía la Corriente Continua (DC). En este sistema, la electricidad fluye en una sola dirección. Era seguro pero tenía un problema grave: no podía transmitirse a largas distancias sin perder mucha energía. Edison habría necesitado construir una planta de energía en cada vecindario para mantener las luces encendidas en toda la ciudad.',
+      'Nikola Tesla, un genio excéntrico y visionario, apoyado por el empresario George Westinghouse, propuso la Corriente Alterna (AC). La corriente alterna invierte su dirección muchas veces por segundo. Su gran ventaja era que podía usar transformadores para elevar el voltaje, viajar cientos de kilómetros a través de cables delgados, y luego reducir el voltaje para usarlo de manera segura en los hogares.',
+      'Finalmente, la visión de Tesla triunfó. La Corriente Alterna demostró ser superior para iluminar el mundo moderno, comenzando con la iluminación de la Exposición Universal de Chicago en 1893 y la planta hidroeléctrica en las Cataratas del Niágara. Sin embargo, hoy en día usamos ambos sistemas: la red eléctrica usa AC, pero nuestros teléfonos, computadoras y autos eléctricos funcionan con DC.'
     ],
     expandables: [
-      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Doc Brown tiene mucho en comÃºn con Nikola Tesla. Ambos son genios excÃ©ntricos, inventores solitarios y algo incomprendidos por la sociedad de su tiempo, obsesionados con controlar grandes cantidades de energÃ­a. El enorme amplificador de guitarra en la casa de Doc y sus experimentos salvajes recuerdan el famoso laboratorio de Tesla en Colorado Springs.' },
-      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Durante la Guerra de las Corrientes, Edison organizÃ³ demostraciones pÃºblicas donde electrocutaba animales usando corriente alterna para intentar asustar a la gente y convencerlos de que el sistema de Tesla era peligroso. A pesar de estas tÃ¡cticas sucias, la eficiencia matemÃ¡tica y fÃ­sica del sistema de Tesla finalmente prevaleciÃ³.' }
+      { label: 'En la Película', icon: 'zap', text: 'Doc Brown tiene mucho en común con Nikola Tesla. Ambos son genios excéntricos, inventores solitarios y algo incomprendidos por la sociedad de su tiempo, obsesionados con controlar grandes cantidades de energía. El enorme amplificador de guitarra en la casa de Doc y sus experimentos salvajes recuerdan el famoso laboratorio de Tesla en Colorado Springs.' },
+      { label: '¿Sabías que...?', icon: 'clock', text: 'Durante la Guerra de las Corrientes, Edison organizó demostraciones públicas donde electrocutaba animales usando corriente alterna para intentar asustar a la gente y convencerlos de que el sistema de Tesla era peligroso. A pesar de estas tácticas sucias, la eficiencia matemática y física del sistema de Tesla finalmente prevaleció.' }
     ],
-    fact: 'Nikola Tesla soÃ±aba con transmitir electricidad de forma inalÃ¡mbrica a todo el planeta a travÃ©s del aire y la tierra. ConstruyÃ³ la enorme Torre Wardenclyffe en Nueva York para probar esto, pero el proyecto se quedÃ³ sin fondos antes de completarse.'
+    fact: 'Nikola Tesla soñaba con transmitir electricidad de forma inalámbrica a todo el planeta a través del aire y la tierra. Construyó la enorme Torre Wardenclyffe en Nueva York para probar esto, pero el proyecto se quedó sin fondos antes de completarse.'
   },
   {
     id: 'semiconductores',
-    title: 'RevoluciÃ³n Digital',
+    title: 'Revolución Digital',
     color: '#B388FF',
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_semiconductores.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_semiconductores.png',
     content: [
-      'Si tuvieras que elegir el invento mÃ¡s importante del siglo XX, el transistor serÃ­a el ganador indiscutible. Inventado en 1947 en los Laboratorios Bell por Bardeen, Brattain y Shockley, este diminuto dispositivo cambiÃ³ el mundo. Antes de los transistores, las computadoras usaban "tubos de vacÃ­o" gigantes, frÃ¡giles y que se calentaban muchÃ­simo. El transistor hizo el mismo trabajo pero era minÃºsculo, frÃ­o y casi irrompible.',
-      'Pero, Â¿quÃ© hace un transistor? BÃ¡sicamente, es un interruptor microscÃ³pico. Permite que la electricidad pase (un "1") o la detiene (un "0"). Combinando millones de estos interruptores, puedes procesar informaciÃ³n compleja, matemÃ¡ticas y lÃ³gica. EstÃ¡n hechos de materiales semiconductores, principalmente silicio, que tienen la propiedad mÃ¡gica de poder conducir la electricidad a veces y detenerla otras veces.',
-      'A medida que los ingenieros aprendieron a hacer transistores mÃ¡s pequeÃ±os, inventaron el "microchip" o circuito integrado. Al poner miles de transistores en un solo pedacito de silicio, los aparatos electrÃ³nicos se volvieron mÃ¡s rÃ¡pidos, baratos y diminutos. Esto fue predicho por la "Ley de Moore" (formulada por Gordon Moore en 1965), que decÃ­a que la cantidad de transistores en un chip se duplicarÃ­a cada dos aÃ±os.',
-      'Esta revoluciÃ³n permitiÃ³ pasar de computadoras del tamaÃ±o de una habitaciÃ³n a smartphones que caben en tu bolsillo. Hoy en dÃ­a, un procesador moderno contiene miles de millones de transistores, cada uno mÃ¡s pequeÃ±o que un virus. Sin los semiconductores, no tendrÃ­amos internet, videojuegos, ni, por supuesto, la tecnologÃ­a necesaria para viajar al espacio.'
+      'Si tuvieras que elegir el invento más importante del siglo XX, el transistor sería el ganador indiscutible. Inventado en 1947 en los Laboratorios Bell por Bardeen, Brattain y Shockley, este diminuto dispositivo cambió el mundo. Antes de los transistores, las computadoras usaban "tubos de vacío" gigantes, frágiles y que se calentaban muchísimo. El transistor hizo el mismo trabajo pero era minúsculo, frío y casi irrompible.',
+      'Pero, ¿qué hace un transistor? Básicamente, es un interruptor microscópico. Permite que la electricidad pase (un "1") o la detiene (un "0"). Combinando millones de estos interruptores, puedes procesar información compleja, matemáticas y lógica. Están hechos de materiales semiconductores, principalmente silicio, que tienen la propiedad mágica de poder conducir la electricidad a veces y detenerla otras veces.',
+      'A medida que los ingenieros aprendieron a hacer transistores más pequeños, inventaron el "microchip" o circuito integrado. Al poner miles de transistores en un solo pedacito de silicio, los aparatos electrónicos se volvieron más rápidos, baratos y diminutos. Esto fue predicho por la "Ley de Moore" (formulada por Gordon Moore en 1965), que decía que la cantidad de transistores en un chip se duplicaría cada dos años.',
+      'Esta revolución permitió pasar de computadoras del tamaño de una habitación a smartphones que caben en tu bolsillo. Hoy en día, un procesador moderno contiene miles de millones de transistores, cada uno más pequeño que un virus. Sin los semiconductores, no tendríamos internet, videojuegos, ni, por supuesto, la tecnología necesaria para viajar al espacio.'
     ],
     expandables: [
-      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Cuando el Doc de 1955 ve la videocÃ¡mara JVC portÃ¡til de Marty, se sorprende enormemente por su tamaÃ±o y capacidad. En 1955, el transistor apenas comenzaba a usarse, y las cÃ¡maras de televisiÃ³n eran enormes equipos de estudio que dependÃ­an de pesados tubos de vacÃ­o. Â¡La videocÃ¡mara de Marty era verdadera magia del futuro!' },
-      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'Los transistores modernos son tan pequeÃ±os que su tamaÃ±o se mide en nanÃ³metros. Para que te hagas una idea, un cabello humano tiene un grosor de unos 80,000 nanÃ³metros. Los transistores en los chips actuales pueden medir apenas 3 nanÃ³metros de ancho. Â¡Son casi a escala atÃ³mica!' }
+      { label: 'En la Película', icon: 'zap', text: 'Cuando el Doc de 1955 ve la videocámara JVC portátil de Marty, se sorprende enormemente por su tamaño y capacidad. En 1955, el transistor apenas comenzaba a usarse, y las cámaras de televisión eran enormes equipos de estudio que dependían de pesados tubos de vacío. ¡La videocámara de Marty era verdadera magia del futuro!' },
+      { label: 'Dato Científico', icon: 'atom', text: 'Los transistores modernos son tan pequeños que su tamaño se mide en nanómetros. Para que te hagas una idea, un cabello humano tiene un grosor de unos 80,000 nanómetros. Los transistores en los chips actuales pueden medir apenas 3 nanómetros de ancho. ¡Son casi a escala atómica!' }
     ],
-    fact: 'El silicio es el material estrella para los semiconductores, Â¡y es sorprendentemente comÃºn! Es el segundo elemento mÃ¡s abundante en la corteza terrestre, despuÃ©s del oxÃ­geno. La arena normal de la playa estÃ¡ hecha principalmente de diÃ³xido de silicio.'
+    fact: 'El silicio es el material estrella para los semiconductores, ¡y es sorprendentemente común! Es el segundo elemento más abundante en la corteza terrestre, después del oxígeno. La arena normal de la playa está hecha principalmente de dióxido de silicio.'
   },
   {
     id: 'biotecnologia',
-    title: 'CRISPR y BiotecnologÃ­a',
+    title: 'CRISPR y Biotecnología',
     color: '#00E5FF',
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_biotec.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_biotec.png',
     content: [
-      'Â¿QuÃ© pasarÃ­a si pudieras editar tu cÃ³digo genÃ©tico igual que editas un texto en la computadora? Eso es lo que hace la biotecnologÃ­a moderna. En 2012, las cientÃ­ficas Jennifer Doudna y Emmanuelle Charpentier descubrieron una herramienta revolucionaria llamada CRISPR-Cas9. Esta herramienta funciona como unas "tijeras moleculares" ultraprecisas que pueden cortar el ADN en un lugar exacto.',
-      'El ADN es el manual de instrucciones de nuestro cuerpo. Cuando una parte del cÃ³digo estÃ¡ defectuosa, puede causar enfermedades. Antes de CRISPR, editar el ADN era un proceso lento, difÃ­cil y muy caro. Con esta nueva tecnologÃ­a, los cientÃ­ficos pueden programar las tijeras para encontrar la mutaciÃ³n exacta, cortarla y reemplazarla con cÃ³digo sano. Â¡Es un avance que cambiÃ³ la medicina para siempre!',
-      'CRISPR no se inventÃ³ de la nada; en realidad, los cientÃ­ficos lo copiaron de la naturaleza. Resulta que las bacterias llevan millones de aÃ±os usando un sistema similar para defenderse de los virus. Las bacterias guardan "recortes" del ADN del virus para recordarlo, y si el virus ataca de nuevo, usan la enzima Cas9 para cortarlo y destruirlo. Los cientÃ­ficos adaptaron este sistema natural para usarlo en cualquier cÃ©lula.',
-      'Las posibilidades de la biotecnologÃ­a son asombrosas. AdemÃ¡s de curar enfermedades genÃ©ticas, podemos usarla para crear cultivos que resistan sequÃ­as (vital frente al cambio climÃ¡tico), desarrollar nuevos materiales ecolÃ³gicos, o incluso combatir el envejecimiento celular. Sin embargo, este gran poder viene con la enorme responsabilidad Ã©tica de decidir quÃ© cambios genÃ©ticos deberÃ­amos y no deberÃ­amos hacer.'
+      '¿Qué pasaría si pudieras editar tu código genético igual que editas un texto en la computadora? Eso es lo que hace la biotecnología moderna. En 2012, las científicas Jennifer Doudna y Emmanuelle Charpentier descubrieron una herramienta revolucionaria llamada CRISPR-Cas9. Esta herramienta funciona como unas "tijeras moleculares" ultraprecisas que pueden cortar el ADN en un lugar exacto.',
+      'El ADN es el manual de instrucciones de nuestro cuerpo. Cuando una parte del código está defectuosa, puede causar enfermedades. Antes de CRISPR, editar el ADN era un proceso lento, difícil y muy caro. Con esta nueva tecnología, los científicos pueden programar las tijeras para encontrar la mutación exacta, cortarla y reemplazarla con código sano. ¡Es un avance que cambió la medicina para siempre!',
+      'CRISPR no se inventó de la nada; en realidad, los científicos lo copiaron de la naturaleza. Resulta que las bacterias llevan millones de años usando un sistema similar para defenderse de los virus. Las bacterias guardan "recortes" del ADN del virus para recordarlo, y si el virus ataca de nuevo, usan la enzima Cas9 para cortarlo y destruirlo. Los científicos adaptaron este sistema natural para usarlo en cualquier célula.',
+      'Las posibilidades de la biotecnología son asombrosas. Además de curar enfermedades genéticas, podemos usarla para crear cultivos que resistan sequías (vital frente al cambio climático), desarrollar nuevos materiales ecológicos, o incluso combatir el envejecimiento celular. Sin embargo, este gran poder viene con la enorme responsabilidad ética de decidir qué cambios genéticos deberíamos y no deberíamos hacer.'
     ],
     expandables: [
-      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Cuando Doc viaja al futuro (aÃ±o 2015), visita una clÃ­nica de rejuvenecimiento que le aÃ±ade dÃ©cadas a su vida. Le cambian la sangre, el bazo y el colon, y le reducen las arrugas. Hoy, la ciencia mÃ©dica moderna con CRISPR y terapias gÃ©nicas busca algo similar: entender y eventualmente ralentizar el envejecimiento celular real de nuestro cuerpo.' },
-      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Por su desarrollo de CRISPR-Cas9, Emmanuelle Charpentier y Jennifer Doudna ganaron el Premio Nobel de QuÃ­mica en 2020. Fue la primera vez en la historia que un Premio Nobel de ciencias fue otorgado a dos mujeres, marcando un hito inspirador para la ciencia y la igualdad.' }
+      { label: 'En la Película', icon: 'zap', text: 'Cuando Doc viaja al futuro (año 2015), visita una clínica de rejuvenecimiento que le añade décadas a su vida. Le cambian la sangre, el bazo y el colon, y le reducen las arrugas. Hoy, la ciencia médica moderna con CRISPR y terapias génicas busca algo similar: entender y eventualmente ralentizar el envejecimiento celular real de nuestro cuerpo.' },
+      { label: '¿Sabías que...?', icon: 'clock', text: 'Por su desarrollo de CRISPR-Cas9, Emmanuelle Charpentier y Jennifer Doudna ganaron el Premio Nobel de Química en 2020. Fue la primera vez en la historia que un Premio Nobel de ciencias fue otorgado a dos mujeres, marcando un hito inspirador para la ciencia y la igualdad.' }
     ],
-    fact: 'La biotecnologÃ­a no solo se aplica a humanos. Se estÃ¡ utilizando tecnologÃ­a genÃ©tica para intentar "resucitar" o proteger especies en peligro. Existen proyectos en marcha que buscan traer de vuelta al mamut lanudo alterando genÃ©ticamente el ADN de sus parientes vivos mÃ¡s cercanos, los elefantes asiÃ¡ticos.'
+    fact: 'La biotecnología no solo se aplica a humanos. Se está utilizando tecnología genética para intentar "resucitar" o proteger especies en peligro. Existen proyectos en marcha que buscan traer de vuelta al mamut lanudo alterando genéticamente el ADN de sus parientes vivos más cercanos, los elefantes asiáticos.'
   },
   {
     id: 'espacio-futuro',
-    title: 'ExploraciÃ³n Espacial',
+    title: 'Exploración Espacial',
     color: '#CE93D8',
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_espacio.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_espacio.png',
     content: [
-      'Durante dÃ©cadas, el sueÃ±o de viajar por el espacio parecÃ­a detenido. Pero hoy, estamos viviendo un nuevo renacimiento espacial. La gran innovaciÃ³n reciente han sido los cohetes reutilizables. HistÃ³ricamente, un cohete volaba una vez y se descartaba en el ocÃ©ano, lo que hacÃ­a que ir al espacio fuera increÃ­blemente caro. Hoy en dÃ­a, gracias a empresas como SpaceX, los cohetes pueden aterrizar de pie y volar de nuevo.',
-      'Esta reducciÃ³n de costos estÃ¡ acelerando nuestros planes. El programa Artemis de la NASA tiene como objetivo devolver a los humanos a la Luna. Pero esta vez no vamos de visita; Â¡vamos para quedarnos! El plan incluye construir una estaciÃ³n espacial en Ã³rbita lunar (Gateway) y bases en la superficie, sirviendo como campo de entrenamiento para el prÃ³ximo gran salto: Marte.',
-      'Mientras planeamos viajar mÃ¡s lejos, nuestros "ojos" robÃ³ticos ya estÃ¡n explorando el cosmos. El Telescopio Espacial James Webb, lanzado en 2021, es una maravilla de la ingenierÃ­a. Es tan potente que puede ver las atmÃ³sferas de planetas que giran alrededor de otras estrellas y capturar la luz de las primeras galaxias que se formaron poco despuÃ©s del Big Bang, permitiÃ©ndonos literalmente mirar hacia el pasado.',
-      'El futuro de la exploraciÃ³n espacial no serÃ¡ solo para astronautas del gobierno. El turismo espacial estÃ¡ comenzando a florecer, y pronto la minerÃ­a de asteroides podrÃ­a darnos acceso a metales preciosos sin daÃ±ar la Tierra. Convertirnos en una especie multiplanetaria no es solo una aventura; es un paso necesario para asegurar la supervivencia a largo plazo de la humanidad.'
+      'Durante décadas, el sueño de viajar por el espacio parecía detenido. Pero hoy, estamos viviendo un nuevo renacimiento espacial. La gran innovación reciente han sido los cohetes reutilizables. Históricamente, un cohete volaba una vez y se descartaba en el océano, lo que hacía que ir al espacio fuera increíblemente caro. Hoy en día, gracias a empresas como SpaceX, los cohetes pueden aterrizar de pie y volar de nuevo.',
+      'Esta reducción de costos está acelerando nuestros planes. El programa Artemis de la NASA tiene como objetivo devolver a los humanos a la Luna. Pero esta vez no vamos de visita; ¡vamos para quedarnos! El plan incluye construir una estación espacial en órbita lunar (Gateway) y bases en la superficie, sirviendo como campo de entrenamiento para el próximo gran salto: Marte.',
+      'Mientras planeamos viajar más lejos, nuestros "ojos" robóticos ya están explorando el cosmos. El Telescopio Espacial James Webb, lanzado en 2021, es una maravilla de la ingeniería. Es tan potente que puede ver las atmósferas de planetas que giran alrededor de otras estrellas y capturar la luz de las primeras galaxias que se formaron poco después del Big Bang, permitiéndonos literalmente mirar hacia el pasado.',
+      'El futuro de la exploración espacial no será solo para astronautas del gobierno. El turismo espacial está comenzando a florecer, y pronto la minería de asteroides podría darnos acceso a metales preciosos sin dañar la Tierra. Convertirnos en una especie multiplanetaria no es solo una aventura; es un paso necesario para asegurar la supervivencia a largo plazo de la humanidad.'
     ],
     expandables: [
-      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En BTTF, el 2015 estÃ¡ lleno de autos voladores usando "aeroconversiÃ³n". Aunque todavÃ­a no tenemos autos voladores diarios por razones de seguridad, las tecnologÃ­as de propulsiÃ³n estÃ¡n avanzando. La visiÃ³n de la pelÃ­cula sobre la gravedad controlada y el transporte futurista se refleja hoy en los avances de la aeronÃ¡utica, cohetes de despegue vertical e investigaciones en levitaciÃ³n magnÃ©tica.' },
-      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'El viaje a Marte toma alrededor de 7 a 9 meses usando la tecnologÃ­a de propulsiÃ³n quÃ­mica actual, y las oportunidades de lanzamiento ocurren solo cada 26 meses cuando la Tierra y Marte estÃ¡n alineados. Â¡Es un viaje largo y sin paradas de descanso!' }
+      { label: 'En la Película', icon: 'zap', text: 'En BTTF, el 2015 está lleno de autos voladores usando "aeroconversión". Aunque todavía no tenemos autos voladores diarios por razones de seguridad, las tecnologías de propulsión están avanzando. La visión de la película sobre la gravedad controlada y el transporte futurista se refleja hoy en los avances de la aeronáutica, cohetes de despegue vertical e investigaciones en levitación magnética.' },
+      { label: 'Dato Científico', icon: 'atom', text: 'El viaje a Marte toma alrededor de 7 a 9 meses usando la tecnología de propulsión química actual, y las oportunidades de lanzamiento ocurren solo cada 26 meses cuando la Tierra y Marte están alineados. ¡Es un viaje largo y sin paradas de descanso!' }
     ],
-    fact: 'El Telescopio Espacial James Webb usa un espejo recubierto de oro. La capa de oro es tan fina que, a pesar de que el espejo mide 6.5 metros de ancho, Â¡solo se usaron aproximadamente 48 gramos de oro para cubrirlo todo (el tamaÃ±o de una pelota de golf)!'
+    fact: 'El Telescopio Espacial James Webb usa un espejo recubierto de oro. La capa de oro es tan fina que, a pesar de que el espejo mide 6.5 metros de ancho, ¡solo se usaron aproximadamente 48 gramos de oro para cubrirlo todo (el tamaño de una pelota de golf)!'
   },
   {
     id: 'sostenibilidad',
@@ -257,16 +257,16 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_sostenible.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_sostenible.png',
     content: [
-      'Si queremos un futuro en el que haya alguien a quien viajar en el tiempo, necesitamos proteger la Tierra hoy. La sostenibilidad significa vivir de manera que satisfagamos nuestras necesidades actuales sin robarle a las futuras generaciones la capacidad de satisfacer las suyas. El mayor desafÃ­o que enfrentamos en este siglo es el cambio climÃ¡tico provocado por la emisiÃ³n excesiva de gases de efecto invernadero.',
-      'La soluciÃ³n requiere una transformaciÃ³n completa en cÃ³mo generamos energÃ­a. Estamos dejando atrÃ¡s los combustibles fÃ³siles para abrazar fuentes renovables: energÃ­a solar, turbinas eÃ³licas y geotÃ©rmica. Estas fuentes aprovechan las fuerzas naturales e inagotables del planeta. AdemÃ¡s, los cientÃ­ficos estÃ¡n investigando nuevas baterÃ­as y mÃ©todos para almacenar esa energÃ­a de forma limpia.',
-      'TambiÃ©n debemos cambiar de una "economÃ­a lineal" (tomar, hacer, tirar) a una "economÃ­a circular". En una economÃ­a circular, los residuos no existen; todo estÃ¡ diseÃ±ado para ser reparado, reutilizado, reciclado o compostado. Es como imitar a la naturaleza, donde las hojas caÃ­das de un Ã¡rbol se convierten en abono para nuevas plantas. Â¡La basura de hoy debe ser el recurso de maÃ±ana!',
-      'Este futuro sostenible estÃ¡ en manos de la prÃ³xima generaciÃ³n: jÃ³venes cientÃ­ficos, ingenieros, polÃ­ticos y ciudadanos informados. Cada pequeÃ±o esfuerzo cuenta, desde desarrollar nuevos plÃ¡sticos biodegradables con biotecnologÃ­a hasta plantar Ã¡rboles y conservar el agua. La ciencia nos da las herramientas y la tecnologÃ­a, pero la responsabilidad de usarlas sabiamente es de todos nosotros.'
+      'Si queremos un futuro en el que haya alguien a quien viajar en el tiempo, necesitamos proteger la Tierra hoy. La sostenibilidad significa vivir de manera que satisfagamos nuestras necesidades actuales sin robarle a las futuras generaciones la capacidad de satisfacer las suyas. El mayor desafío que enfrentamos en este siglo es el cambio climático provocado por la emisión excesiva de gases de efecto invernadero.',
+      'La solución requiere una transformación completa en cómo generamos energía. Estamos dejando atrás los combustibles fósiles para abrazar fuentes renovables: energía solar, turbinas eólicas y geotérmica. Estas fuentes aprovechan las fuerzas naturales e inagotables del planeta. Además, los científicos están investigando nuevas baterías y métodos para almacenar esa energía de forma limpia.',
+      'También debemos cambiar de una "economía lineal" (tomar, hacer, tirar) a una "economía circular". En una economía circular, los residuos no existen; todo está diseñado para ser reparado, reutilizado, reciclado o compostado. Es como imitar a la naturaleza, donde las hojas caídas de un árbol se convierten en abono para nuevas plantas. ¡La basura de hoy debe ser el recurso de mañana!',
+      'Este futuro sostenible está en manos de la próxima generación: jóvenes científicos, ingenieros, políticos y ciudadanos informados. Cada pequeño esfuerzo cuenta, desde desarrollar nuevos plásticos biodegradables con biotecnología hasta plantar árboles y conservar el agua. La ciencia nos da las herramientas y la tecnología, pero la responsabilidad de usarlas sabiamente es de todos nosotros.'
     ],
     expandables: [
-      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Al final de la pelÃ­cula, el Doc de 2015 usa el "Mr. Fusion", un dispositivo en el DeLorean que convierte restos de basura (cÃ¡scaras de plÃ¡tano, cerveza sobrante) en energÃ­a masiva y limpia. Â¡Ese es el sueÃ±o absoluto de la sostenibilidad y la economÃ­a circular! Transformar los desechos directamente en energÃ­a usable sin contaminaciÃ³n.' },
-      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'El 100% de la energÃ­a que usa el paÃ­s de Islandia proviene de fuentes renovables. Debido a su geografÃ­a volcÃ¡nica Ãºnica, utilizan casi exclusivamente energÃ­a geotÃ©rmica e hidroelÃ©ctrica, demostrando que es posible operar una sociedad moderna completa sin depender de combustibles fÃ³siles.' }
+      { label: 'En la Película', icon: 'zap', text: 'Al final de la película, el Doc de 2015 usa el "Mr. Fusion", un dispositivo en el DeLorean que convierte restos de basura (cáscaras de plátano, cerveza sobrante) en energía masiva y limpia. ¡Ese es el sueño absoluto de la sostenibilidad y la economía circular! Transformar los desechos directamente en energía usable sin contaminación.' },
+      { label: '¿Sabías que...?', icon: 'clock', text: 'El 100% de la energía que usa el país de Islandia proviene de fuentes renovables. Debido a su geografía volcánica única, utilizan casi exclusivamente energía geotérmica e hidroeléctrica, demostrando que es posible operar una sociedad moderna completa sin depender de combustibles fósiles.' }
     ],
-    fact: 'Existen bacterias descubiertas recientemente, como la "Ideonella sakaiensis", que han evolucionado naturalmente para alimentarse de plÃ¡stico PET. Los cientÃ­ficos estÃ¡n usando biotecnologÃ­a para estudiar sus enzimas e intentar crear sÃºper-bacterias que nos ayuden a reciclar las montaÃ±as de plÃ¡stico que hemos creado.'
+    fact: 'Existen bacterias descubiertas recientemente, como la "Ideonella sakaiensis", que han evolucionado naturalmente para alimentarse de plástico PET. Los científicos están usando biotecnología para estudiar sus enzimas e intentar crear súper-bacterias que nos ayuden a reciclar las montañas de plástico que hemos creado.'
   }
 ];
 
@@ -356,8 +356,8 @@ function TimeMachineHeader() {
             <stop offset="100%" stopColor="rgba(0,229,255,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">BIOTECNOLOGÃA DEL FUTURO</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(0,229,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA QUE TRANSFORMARÃ EL MAÃ‘ANA</text>
+        <text x="300" y="80" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">BIOTECNOLOGÍA DEL FUTURO</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(0,229,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA QUE TRANSFORMARÁ EL MAÃ‘ANA</text>
       </svg>
     </div>
   );
@@ -733,7 +733,7 @@ function ProgressBar({ visited, total }) {
   return (
     <div style={{ width: '100%', maxWidth: '400px', margin: '0 auto 2rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
-        <span>Progreso de ExploraciÃ³n</span>
+        <span>Progreso de Exploración</span>
         <span>{visited.length} / {total} Completado</span>
       </div>
       <div style={{ width: '100%', height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '3px', overflow: 'hidden' }}>
@@ -801,7 +801,7 @@ export default function InteractiveInfographic_BttfM7() {
             animate={{ opacity: 1 }}
             style={{ textAlign: 'center', color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', marginBottom: '2rem' }}
           >
-            Toca cada cÃ­rculo para explorar
+            Toca cada círculo para explorar
           </motion.p>
         )}
 
@@ -850,10 +850,10 @@ export default function InteractiveInfographic_BttfM7() {
               }}
             >
               <h4 style={{ color: '#00E5FF', margin: '0 0 1rem', fontSize: '1.5rem' }}>
-                ðŸ† Â¡Has completado la MisiÃ³n CientÃ­fica!
+                ðŸ† ¡Has completado la Misión Científica!
               </h4>
               <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '1.5rem' }}>
-                Has explorado los increÃ­bles avances cientÃ­ficos que transformarÃ¡n nuestro futuro. Â¿EstÃ¡s listo para poner a prueba tus conocimientos?
+                Has explorado los increíbles avances científicos que transformarán nuestro futuro. ¿Estás listo para poner a prueba tus conocimientos?
               </p>
               <button style={{
                 padding: '0.8rem 2rem', background: '#00E5FF', color: '#0B0E2D',
@@ -870,12 +870,12 @@ export default function InteractiveInfographic_BttfM7() {
         {/* Bibliography */}
         <div style={{ marginTop: '4rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem' }}>
           <h5 style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0 0 1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
-            Fuentes CientÃ­ficas y BibliografÃ­a
+            Fuentes Científicas y Bibliografía
           </h5>
           <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {BIBLIOGRAPHY.map((item, i) => (
               <li key={i} style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <span style={{ color: '#00E5FF', opacity: 0.5 }}>â€¢</span>
+                <span style={{ color: '#00E5FF', opacity: 0.5 }}>•</span>
                 {item}
               </li>
             ))}
