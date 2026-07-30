@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
 
 import ImageLightbox from './ImageLightbox';
-/* ═══════════════════════════════════════════
-   SVG DECORATIVE ELEMENTS — TIME PARADOXES
-   ═══════════════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   SVG DECORATIVE ELEMENTS â€” TIME PARADOXES
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const DecoWormhole = ({ x, y, s = 1 }) => (
   <motion.svg viewBox="0 0 60 60" width={60 * s} height={60 * s}
     style={{ position: 'absolute', left: x, top: y, pointerEvents: 'none' }}
@@ -98,9 +98,9 @@ const DecoFluxLines = ({ x, y, s = 1 }) => (
   </motion.svg>
 );
 
-/* ═══════════════════════════
-   DECO_MAP  — 3 per node
-   ═══════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   DECO_MAP  â€” 3 per node
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const DECO_MAP = {
   'paradoja-abuelo': [
     <DecoInfinityLoop key="d0" x="2%" y="12%" s={1.1} />,
@@ -144,9 +144,9 @@ const DECO_MAP = {
   ],
 };
 
-/* ═══════════════════════════════
-   INFOGRAPHIC_NODES  — 8 nodes
-   ═══════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   INFOGRAPHIC_NODES  â€” 8 nodes
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const BIBLIOGRAPHY = [
   'Deutsch, D. (1991). Quantum mechanics near closed timelike lines, Physical Review D, 44',
   'Novikov, I.D. (1989). An analysis of the operation of a time machine, JETP, 68',
@@ -160,110 +160,110 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.png',
     image: '/assets/bttf/infographic_paradojas/hero_abuelo.png',
     content: [
-      '¿Qué es una paradoja? Es como un acertijo sin solución lógica. Piensa en esta frase: «Esta oración es falsa». Si es falsa, entonces dice la verdad, pero si dice la verdad, entonces debería ser falsa. Las paradojas temporales funcionan de manera similar, creando bucles sin aparente solución.',
-      'La paradoja del abuelo es la más famosa: imagina que viajas al pasado y evitas que tu abuelo conozca a tu abuela. Si nunca se conocen, tus padres nunca nacen, y tú tampoco. Pero si tú nunca naces... ¡nunca puedes viajar al pasado para impedirlo! Es un círculo imposible que se repite para siempre.',
-      'Detrás de esta paradoja hay física real. La Teoría de la Relatividad de Einstein (1905 y 1915) demostró que viajar al FUTURO es posible — ¡y ya está comprobado con relojes atómicos! Pero viajar al pasado crea problemas lógicos. Las ecuaciones de Einstein no lo prohíben explícitamente, lo cual preocupó al propio Einstein.',
-      'En «Volver al Futuro», esta paradoja se muestra de forma brillante: cuando Marty accidentalmente impide que sus padres se conozcan en 1955, su mano empieza a desvanecerse y la foto familiar se borra poco a poco. Es una representación visual perfecta de cómo cambiar el pasado te destruiría a ti mismo.',
-      'Los físicos se toman esto muy en serio. Kurt Gödel, el mejor amigo de Einstein en Princeton, encontró en 1949 soluciones a las ecuaciones de la Relatividad General que permiten «curvas temporales cerradas» — caminos matemáticos que te llevan al pasado. Le regaló esta solución a Einstein por su cumpleaños. Einstein quedó perturbado porque su propia teoría parecía permitir lo imposible.',
+      'Â¿QuÃ© es una paradoja? Es como un acertijo sin soluciÃ³n lÃ³gica. Piensa en esta frase: Â«Esta oraciÃ³n es falsaÂ». Si es falsa, entonces dice la verdad, pero si dice la verdad, entonces deberÃ­a ser falsa. Las paradojas temporales funcionan de manera similar, creando bucles sin aparente soluciÃ³n.',
+      'La paradoja del abuelo es la mÃ¡s famosa: imagina que viajas al pasado y evitas que tu abuelo conozca a tu abuela. Si nunca se conocen, tus padres nunca nacen, y tÃº tampoco. Pero si tÃº nunca naces... Â¡nunca puedes viajar al pasado para impedirlo! Es un cÃ­rculo imposible que se repite para siempre.',
+      'DetrÃ¡s de esta paradoja hay fÃ­sica real. La TeorÃ­a de la Relatividad de Einstein (1905 y 1915) demostrÃ³ que viajar al FUTURO es posible â€” Â¡y ya estÃ¡ comprobado con relojes atÃ³micos! Pero viajar al pasado crea problemas lÃ³gicos. Las ecuaciones de Einstein no lo prohÃ­ben explÃ­citamente, lo cual preocupÃ³ al propio Einstein.',
+      'En Â«Volver al FuturoÂ», esta paradoja se muestra de forma brillante: cuando Marty accidentalmente impide que sus padres se conozcan en 1955, su mano empieza a desvanecerse y la foto familiar se borra poco a poco. Es una representaciÃ³n visual perfecta de cÃ³mo cambiar el pasado te destruirÃ­a a ti mismo.',
+      'Los fÃ­sicos se toman esto muy en serio. Kurt GÃ¶del, el mejor amigo de Einstein en Princeton, encontrÃ³ en 1949 soluciones a las ecuaciones de la Relatividad General que permiten Â«curvas temporales cerradasÂ» â€” caminos matemÃ¡ticos que te llevan al pasado. Le regalÃ³ esta soluciÃ³n a Einstein por su cumpleaÃ±os. Einstein quedÃ³ perturbado porque su propia teorÃ­a parecÃ­a permitir lo imposible.',
     ],
-    fact: 'Kurt Gödel le regaló a Einstein un universo en rotación por su cumpleaños en 1949, demostrando que los viajes al pasado eran matemáticamente posibles según la propia teoría de Einstein. A Einstein le inquietó profundamente.',
+    fact: 'Kurt GÃ¶del le regalÃ³ a Einstein un universo en rotaciÃ³n por su cumpleaÃ±os en 1949, demostrando que los viajes al pasado eran matemÃ¡ticamente posibles segÃºn la propia teorÃ­a de Einstein. A Einstein le inquietÃ³ profundamente.',
   },
   {
     id: 'muchos-mundos', title: 'Universos Paralelos', color: '#00CCFF',
     btnImage: '/assets/bttf/infographic_paradojas/btn_mundos.png',
     image: '/assets/bttf/infographic_paradojas/hero_mundos.png',
     content: [
-      'En 1957, un joven físico llamado Hugh Everett propuso una idea revolucionaria en su tesis doctoral: cada vez que ocurre un evento cuántico — como un electrón eligiendo ir a la izquierda o a la derecha — el universo se divide en dos. En uno va a la izquierda, en otro a la derecha. Y ambos universos son igual de reales.',
-      '¡Esta idea resuelve la paradoja del abuelo! Si viajas al pasado y cambias algo, no estás cambiando TU pasado sino creando una línea temporal diferente. Tu universo original sigue intacto. Es como un río que se divide en dos ramas: ambas siguen fluyendo, solo que en direcciones distintas.',
-      'En «Volver al Futuro Parte II», Doc Brown usa una pizarra para explicar exactamente esto. Dibuja cómo la línea temporal se bifurca cuando Biff roba el almanaque deportivo y crea un 1985 alternativo. ¡Los guionistas usaron física cuántica real como inspiración para la trama!',
-      'La física detrás se llama «decoherencia cuántica». ¿Recuerdas al gato de Schrödinger? Un gato en una caja está teóricamente vivo Y muerto al mismo tiempo. En la interpretación de Muchos Mundos, ambas opciones ocurren: en un universo el gato vive, en otro no. La «superposición cuántica» es real a nivel subatómico — se ha demostrado en laboratorios miles de veces.',
-      '¿Cuántos científicos creen en esto? En una encuesta de 2013 en una conferencia de fundamentos cuánticos, aproximadamente el 18% de los físicos favorecieron la interpretación de Muchos Mundos. Puede parecer poco, pero es la segunda más popular después de la interpretación de Copenhague. Físicos famosos como Sean Carroll y David Deutsch la defienden activamente.',
+      'En 1957, un joven fÃ­sico llamado Hugh Everett propuso una idea revolucionaria en su tesis doctoral: cada vez que ocurre un evento cuÃ¡ntico â€” como un electrÃ³n eligiendo ir a la izquierda o a la derecha â€” el universo se divide en dos. En uno va a la izquierda, en otro a la derecha. Y ambos universos son igual de reales.',
+      'Â¡Esta idea resuelve la paradoja del abuelo! Si viajas al pasado y cambias algo, no estÃ¡s cambiando TU pasado sino creando una lÃ­nea temporal diferente. Tu universo original sigue intacto. Es como un rÃ­o que se divide en dos ramas: ambas siguen fluyendo, solo que en direcciones distintas.',
+      'En Â«Volver al Futuro Parte IIÂ», Doc Brown usa una pizarra para explicar exactamente esto. Dibuja cÃ³mo la lÃ­nea temporal se bifurca cuando Biff roba el almanaque deportivo y crea un 1985 alternativo. Â¡Los guionistas usaron fÃ­sica cuÃ¡ntica real como inspiraciÃ³n para la trama!',
+      'La fÃ­sica detrÃ¡s se llama Â«decoherencia cuÃ¡nticaÂ». Â¿Recuerdas al gato de SchrÃ¶dinger? Un gato en una caja estÃ¡ teÃ³ricamente vivo Y muerto al mismo tiempo. En la interpretaciÃ³n de Muchos Mundos, ambas opciones ocurren: en un universo el gato vive, en otro no. La Â«superposiciÃ³n cuÃ¡nticaÂ» es real a nivel subatÃ³mico â€” se ha demostrado en laboratorios miles de veces.',
+      'Â¿CuÃ¡ntos cientÃ­ficos creen en esto? En una encuesta de 2013 en una conferencia de fundamentos cuÃ¡nticos, aproximadamente el 18% de los fÃ­sicos favorecieron la interpretaciÃ³n de Muchos Mundos. Puede parecer poco, pero es la segunda mÃ¡s popular despuÃ©s de la interpretaciÃ³n de Copenhague. FÃ­sicos famosos como Sean Carroll y David Deutsch la defienden activamente.',
     ],
-    fact: 'Hugh Everett propuso los Muchos Mundos en su tesis doctoral de 1957. Su director John Wheeler la apoyó, pero Niels Bohr la rechazó. Everett abandonó la física y se convirtió en contratista militar. Murió a los 51 años sin saber que su teoría se volvería respetada.',
+    fact: 'Hugh Everett propuso los Muchos Mundos en su tesis doctoral de 1957. Su director John Wheeler la apoyÃ³, pero Niels Bohr la rechazÃ³. Everett abandonÃ³ la fÃ­sica y se convirtiÃ³ en contratista militar. MuriÃ³ a los 51 aÃ±os sin saber que su teorÃ­a se volverÃ­a respetada.',
   },
   {
     id: 'bootstrap', title: 'El Bucle Bootstrap', color: '#E040FB',
     btnImage: '/assets/bttf/infographic_paradojas/btn_bootstrap.png',
     image: '/assets/bttf/infographic_paradojas/hero_bootstrap.png',
     content: [
-      '¿Qué pasa cuando algo existe sin haber sido creado jamás? Eso es una paradoja bootstrap. Imagina que encuentras un libro con la fórmula de una máquina del tiempo, la construyes, viajas al pasado y dejas el libro para que tu yo más joven lo encuentre. ¿Quién escribió la fórmula? ¡Nadie! La información existe en un bucle sin principio ni final.',
-      'En «Volver al Futuro», esto sucede con «Johnny B. Goode». Marty toca la canción en el baile de 1955. El primo de Chuck Berry llama a Chuck y le dice: «¡Escucha este sonido nuevo!» Así que Chuck Berry aprende la canción... de Marty, quien la aprendió... de Chuck Berry. ¿Quién la compuso realmente? ¡Es un bucle perfecto sin origen!',
-      'Otro ejemplo clásico: imagina que viajas al pasado y le das a Beethoven las partituras de su Quinta Sinfonía antes de que la componga. Beethoven la copia y se hace famoso. Tú aprendiste la sinfonía de Beethoven, pero Beethoven la aprendió de ti. La música existe, se puede tocar, se puede escuchar... pero nunca fue compuesta por nadie.',
-      'Desde el punto de vista científico, las paradojas bootstrap son peculiares. No violan la termodinámica — la entropía sigue aumentando normalmente. Pero sí violan la causalidad: todo efecto debería tener una causa, y aquí la causa y el efecto son la misma cosa. Algunos físicos argumentan que esto no es realmente un problema si las curvas temporales cerradas existen.',
-      'El escritor Robert Heinlein llevó esto al extremo en su relato «All You Zombies» (1959). En esta historia, una persona viaja en el tiempo y resulta ser su propia madre, su propio padre y su propio/a hijo/a. Es la paradoja bootstrap definitiva: un ser humano completo que se crea a sí mismo. ¡El bucle más cerrado posible!',
+      'Â¿QuÃ© pasa cuando algo existe sin haber sido creado jamÃ¡s? Eso es una paradoja bootstrap. Imagina que encuentras un libro con la fÃ³rmula de una mÃ¡quina del tiempo, la construyes, viajas al pasado y dejas el libro para que tu yo mÃ¡s joven lo encuentre. Â¿QuiÃ©n escribiÃ³ la fÃ³rmula? Â¡Nadie! La informaciÃ³n existe en un bucle sin principio ni final.',
+      'En Â«Volver al FuturoÂ», esto sucede con Â«Johnny B. GoodeÂ». Marty toca la canciÃ³n en el baile de 1955. El primo de Chuck Berry llama a Chuck y le dice: Â«Â¡Escucha este sonido nuevo!Â» AsÃ­ que Chuck Berry aprende la canciÃ³n... de Marty, quien la aprendiÃ³... de Chuck Berry. Â¿QuiÃ©n la compuso realmente? Â¡Es un bucle perfecto sin origen!',
+      'Otro ejemplo clÃ¡sico: imagina que viajas al pasado y le das a Beethoven las partituras de su Quinta SinfonÃ­a antes de que la componga. Beethoven la copia y se hace famoso. TÃº aprendiste la sinfonÃ­a de Beethoven, pero Beethoven la aprendiÃ³ de ti. La mÃºsica existe, se puede tocar, se puede escuchar... pero nunca fue compuesta por nadie.',
+      'Desde el punto de vista cientÃ­fico, las paradojas bootstrap son peculiares. No violan la termodinÃ¡mica â€” la entropÃ­a sigue aumentando normalmente. Pero sÃ­ violan la causalidad: todo efecto deberÃ­a tener una causa, y aquÃ­ la causa y el efecto son la misma cosa. Algunos fÃ­sicos argumentan que esto no es realmente un problema si las curvas temporales cerradas existen.',
+      'El escritor Robert Heinlein llevÃ³ esto al extremo en su relato Â«All You ZombiesÂ» (1959). En esta historia, una persona viaja en el tiempo y resulta ser su propia madre, su propio padre y su propio/a hijo/a. Es la paradoja bootstrap definitiva: un ser humano completo que se crea a sÃ­ mismo. Â¡El bucle mÃ¡s cerrado posible!',
     ],
-    fact: 'El nombre «paradoja bootstrap» viene del relato de Robert Heinlein «By His Bootstraps» (1941). La frase «levantarte tirando de tus propias botas» originalmente describía algo imposible — ¡no puedes levantarte tirando de tus propios zapatos!',
+    fact: 'El nombre Â«paradoja bootstrapÂ» viene del relato de Robert Heinlein Â«By His BootstrapsÂ» (1941). La frase Â«levantarte tirando de tus propias botasÂ» originalmente describÃ­a algo imposible â€” Â¡no puedes levantarte tirando de tus propios zapatos!',
   },
   {
     id: 'gemelos', title: 'La Paradoja de los Gemelos', color: '#FF6B00',
     btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.png',
     image: '/assets/bttf/infographic_paradojas/hero_gemelos.png',
     content: [
-      'Esto no es realmente una paradoja, sino física real y comprobada. La Teoría de la Relatividad Especial de Einstein (1905) nos dice algo asombroso: cuanto más rápido te mueves, más lento pasa el tiempo para ti. No es una ilusión ni un truco: el tiempo literalmente se estira.',
-      'Explicación sencilla: si tu gemelo se sube a una nave que viaja al 90% de la velocidad de la luz durante 5 años (según su reloj), cuando regrese a la Tierra habrán pasado 11.5 años para ti. Tú tienes 11.5 años más, pero tu gemelo solo 5. ¡No es ciencia ficción, son las ecuaciones de Einstein!',
-      'Esto fue COMPROBADO experimentalmente. En 1971, los físicos Hafele y Keating pusieron relojes atómicos en aviones comerciales que dieron la vuelta al mundo. Al aterrizar, los relojes del vuelo hacia el este habían perdido unos 59 nanosegundos, muy cerca de lo que las ecuaciones de Einstein predecían. ¡Es uno de los experimentos más elegantes de la historia!',
-      'Lo usamos TODOS LOS DÍAS. Los satélites GPS orbitan la Tierra a gran velocidad y en gravedad más débil. Sus relojes se desfasan 38 microsegundos por día comparados con los relojes terrestres. Sin la corrección de Einstein, el GPS acumularía un error de ¡10 kilómetros diarios! Tu teléfono usa la relatividad cada vez que abres Google Maps.',
-      'El astronauta Scott Kelly pasó 340 días en la Estación Espacial Internacional (2015-2016). La ISS orbita a 7.66 km/s. Cuando regresó, era 5 milisegundos más joven que su hermano gemelo idéntico Mark Kelly. Cinco milisegundos de viaje real al futuro. Scott Kelly es, literalmente, un viajero del tiempo.',
+      'Esto no es realmente una paradoja, sino fÃ­sica real y comprobada. La TeorÃ­a de la Relatividad Especial de Einstein (1905) nos dice algo asombroso: cuanto mÃ¡s rÃ¡pido te mueves, mÃ¡s lento pasa el tiempo para ti. No es una ilusiÃ³n ni un truco: el tiempo literalmente se estira.',
+      'ExplicaciÃ³n sencilla: si tu gemelo se sube a una nave que viaja al 90% de la velocidad de la luz durante 5 aÃ±os (segÃºn su reloj), cuando regrese a la Tierra habrÃ¡n pasado 11.5 aÃ±os para ti. TÃº tienes 11.5 aÃ±os mÃ¡s, pero tu gemelo solo 5. Â¡No es ciencia ficciÃ³n, son las ecuaciones de Einstein!',
+      'Esto fue COMPROBADO experimentalmente. En 1971, los fÃ­sicos Hafele y Keating pusieron relojes atÃ³micos en aviones comerciales que dieron la vuelta al mundo. Al aterrizar, los relojes del vuelo hacia el este habÃ­an perdido unos 59 nanosegundos, muy cerca de lo que las ecuaciones de Einstein predecÃ­an. Â¡Es uno de los experimentos mÃ¡s elegantes de la historia!',
+      'Lo usamos TODOS LOS DÃAS. Los satÃ©lites GPS orbitan la Tierra a gran velocidad y en gravedad mÃ¡s dÃ©bil. Sus relojes se desfasan 38 microsegundos por dÃ­a comparados con los relojes terrestres. Sin la correcciÃ³n de Einstein, el GPS acumularÃ­a un error de Â¡10 kilÃ³metros diarios! Tu telÃ©fono usa la relatividad cada vez que abres Google Maps.',
+      'El astronauta Scott Kelly pasÃ³ 340 dÃ­as en la EstaciÃ³n Espacial Internacional (2015-2016). La ISS orbita a 7.66 km/s. Cuando regresÃ³, era 5 milisegundos mÃ¡s joven que su hermano gemelo idÃ©ntico Mark Kelly. Cinco milisegundos de viaje real al futuro. Scott Kelly es, literalmente, un viajero del tiempo.',
     ],
-    fact: 'Scott Kelly es 5 milisegundos más joven que su gemelo idéntico Mark Kelly (ahora senador de EE.UU. por Arizona) porque pasó 520 días totales en el espacio. La ISS orbita a 7.66 km/s. Cada astronauta que regresa de la ISS ha viajado un poquito al futuro.',
+    fact: 'Scott Kelly es 5 milisegundos mÃ¡s joven que su gemelo idÃ©ntico Mark Kelly (ahora senador de EE.UU. por Arizona) porque pasÃ³ 520 dÃ­as totales en el espacio. La ISS orbita a 7.66 km/s. Cada astronauta que regresa de la ISS ha viajado un poquito al futuro.',
   },
   {
     id: 'novikov', title: 'El Principio de Autoconsistencia', color: '#7C4DFF',
     btnImage: '/assets/bttf/infographic_paradojas/btn_novikov.png',
     image: '/assets/bttf/infographic_paradojas/hero_novikov.png',
     content: [
-      'El físico ruso Igor Novikov propuso en los años 1980 una idea fascinante: ¿y si el universo simplemente NO PERMITE las paradojas? Su «Principio de Autoconsistencia» dice que cualquier evento que ocurra mediante viaje en el tiempo DEBE ser consistente con la historia. No puedes cambiar el pasado porque el universo no te deja.',
-      'Imagínalo así: intentas viajar al pasado para impedir la primera cita de tus padres. Pero tu auto se descompone camino allá. Lo arreglas e intentas de nuevo, pero te pierdes. Lo intentas una tercera vez y te resbalas. SIEMPRE algo sale mal. El universo conspira para que la historia se mantenga intacta, como si tuviera un guardián invisible.',
-      'Kip Thorne — quien ganó el Premio Nobel de Física en 2017 por detectar ondas gravitacionales — trabajó con Novikov en la fundamentación matemática de este principio. Thorne también fue el consultor científico de la película «Interstellar» (2014), donde estas ideas se exploran visualmente.',
-      'Thorne diseñó un experimento mental famoso: una bola de billar entra en un agujero de gusano, sale en el pasado y choca con su versión anterior. ¿Se impide a sí misma entrar? Thorne demostró matemáticamente que la bola SIEMPRE rebota de una manera autoconsistente — nunca se impide su propia entrada, pero sí se desvía ligeramente.',
-      'En «Volver al Futuro», esto es esencialmente lo que ocurre. A pesar de todos los cambios que Marty causa, la historia encuentra formas de reajustarse. Sus padres SÍ se enamoran al final, aunque de manera diferente. La línea temporal se dobla pero no se rompe, exactamente como predice Novikov.',
+      'El fÃ­sico ruso Igor Novikov propuso en los aÃ±os 1980 una idea fascinante: Â¿y si el universo simplemente NO PERMITE las paradojas? Su Â«Principio de AutoconsistenciaÂ» dice que cualquier evento que ocurra mediante viaje en el tiempo DEBE ser consistente con la historia. No puedes cambiar el pasado porque el universo no te deja.',
+      'ImagÃ­nalo asÃ­: intentas viajar al pasado para impedir la primera cita de tus padres. Pero tu auto se descompone camino allÃ¡. Lo arreglas e intentas de nuevo, pero te pierdes. Lo intentas una tercera vez y te resbalas. SIEMPRE algo sale mal. El universo conspira para que la historia se mantenga intacta, como si tuviera un guardiÃ¡n invisible.',
+      'Kip Thorne â€” quien ganÃ³ el Premio Nobel de FÃ­sica en 2017 por detectar ondas gravitacionales â€” trabajÃ³ con Novikov en la fundamentaciÃ³n matemÃ¡tica de este principio. Thorne tambiÃ©n fue el consultor cientÃ­fico de la pelÃ­cula Â«InterstellarÂ» (2014), donde estas ideas se exploran visualmente.',
+      'Thorne diseÃ±Ã³ un experimento mental famoso: una bola de billar entra en un agujero de gusano, sale en el pasado y choca con su versiÃ³n anterior. Â¿Se impide a sÃ­ misma entrar? Thorne demostrÃ³ matemÃ¡ticamente que la bola SIEMPRE rebota de una manera autoconsistente â€” nunca se impide su propia entrada, pero sÃ­ se desvÃ­a ligeramente.',
+      'En Â«Volver al FuturoÂ», esto es esencialmente lo que ocurre. A pesar de todos los cambios que Marty causa, la historia encuentra formas de reajustarse. Sus padres SÃ se enamoran al final, aunque de manera diferente. La lÃ­nea temporal se dobla pero no se rompe, exactamente como predice Novikov.',
     ],
-    fact: 'Kip Thorne ganó el Nobel de Física 2017 por detectar ondas gravitacionales. También fue consultor científico de «Interstellar» (2014) y sus ecuaciones del agujero negro Gargantúa fueron tan precisas que generaron artículos científicos reales. Literalmente convirtió una película en investigación.',
+    fact: 'Kip Thorne ganÃ³ el Nobel de FÃ­sica 2017 por detectar ondas gravitacionales. TambiÃ©n fue consultor cientÃ­fico de Â«InterstellarÂ» (2014) y sus ecuaciones del agujero negro GargantÃºa fueron tan precisas que generaron artÃ­culos cientÃ­ficos reales. Literalmente convirtiÃ³ una pelÃ­cula en investigaciÃ³n.',
   },
   {
-    id: 'delorean', title: 'Ciencia Detrás del DeLorean', color: '#FFA500',
+    id: 'delorean', title: 'Ciencia DetrÃ¡s del DeLorean', color: '#FFA500',
     btnImage: '/assets/bttf/infographic_paradojas/btn_delorean.png',
     image: '/assets/bttf/infographic_paradojas/hero_delorean.png',
     content: [
-      '¿Por qué 88 millas por hora? Bob Gale, el guionista, confesó que eligió ese número porque se veía bien en el velocímetro. Pero hay física real sobre velocidad y tiempo: según Einstein, cuanto más rápido te mueves, más se distorsiona el tiempo. A 88 mph no pasa nada especial, pero ¡a velocidades cercanas a la luz sí!',
-      'El condensador de fluzo es ficción, pero el concepto de necesitar energía enorme es totalmente real. Para deformar el espacio-tiempo necesitarías «materia exótica» con energía negativa. Esto no es ciencia ficción barata: los físicos como Miguel Alcubierre han propuesto motores warp que necesitan exactamente este tipo de energía para funcionar.',
-      '1.21 gigawatts: ¡es una unidad real de potencia! Un rayo descarga aproximadamente 1 terawatt (1,000 GW), pero solo durante microsegundos. Mantener 1.21 GW de forma sostenida equivale a la producción de un reactor nuclear completo. Doc Brown necesitaba la energía de una central nuclear o un rayo para alimentar el viaje temporal.',
-      'Las estelas de fuego del DeLorean a 88 mph son icónicas pero no son física real. En la realidad, un objeto acercándose a la velocidad de la luz emitiría radiación de Cherenkov — un resplandor AZUL, no fuego naranja. Esta radiación ocurre cuando partículas viajan más rápido que la luz en un medio como el agua. ¡Se puede ver en reactores nucleares!',
-      'El DeLorean DMC-12 real: solo se fabricaron 9,000 unidades entre 1981 y 1983. John DeLorean fue arrestado por tráfico de drogas intentando salvar su empresa, pero fue absuelto. El auto tenía puertas de ala de gaviota y carrocería de acero inoxidable. Su aspecto futurista fue la razón por la que Zemeckis y Gale lo eligieron para la película.',
+      'Â¿Por quÃ© 88 millas por hora? Bob Gale, el guionista, confesÃ³ que eligiÃ³ ese nÃºmero porque se veÃ­a bien en el velocÃ­metro. Pero hay fÃ­sica real sobre velocidad y tiempo: segÃºn Einstein, cuanto mÃ¡s rÃ¡pido te mueves, mÃ¡s se distorsiona el tiempo. A 88 mph no pasa nada especial, pero Â¡a velocidades cercanas a la luz sÃ­!',
+      'El condensador de fluzo es ficciÃ³n, pero el concepto de necesitar energÃ­a enorme es totalmente real. Para deformar el espacio-tiempo necesitarÃ­as Â«materia exÃ³ticaÂ» con energÃ­a negativa. Esto no es ciencia ficciÃ³n barata: los fÃ­sicos como Miguel Alcubierre han propuesto motores warp que necesitan exactamente este tipo de energÃ­a para funcionar.',
+      '1.21 gigawatts: Â¡es una unidad real de potencia! Un rayo descarga aproximadamente 1 terawatt (1,000 GW), pero solo durante microsegundos. Mantener 1.21 GW de forma sostenida equivale a la producciÃ³n de un reactor nuclear completo. Doc Brown necesitaba la energÃ­a de una central nuclear o un rayo para alimentar el viaje temporal.',
+      'Las estelas de fuego del DeLorean a 88 mph son icÃ³nicas pero no son fÃ­sica real. En la realidad, un objeto acercÃ¡ndose a la velocidad de la luz emitirÃ­a radiaciÃ³n de Cherenkov â€” un resplandor AZUL, no fuego naranja. Esta radiaciÃ³n ocurre cuando partÃ­culas viajan mÃ¡s rÃ¡pido que la luz en un medio como el agua. Â¡Se puede ver en reactores nucleares!',
+      'El DeLorean DMC-12 real: solo se fabricaron 9,000 unidades entre 1981 y 1983. John DeLorean fue arrestado por trÃ¡fico de drogas intentando salvar su empresa, pero fue absuelto. El auto tenÃ­a puertas de ala de gaviota y carrocerÃ­a de acero inoxidable. Su aspecto futurista fue la razÃ³n por la que Zemeckis y Gale lo eligieron para la pelÃ­cula.',
     ],
-    fact: 'El guion original tenía la máquina del tiempo como un refrigerador, no un auto. Steven Spielberg (productor ejecutivo) temía que los niños se encerraran en refrigeradores imitando la película, así que lo cambiaron a un auto. El DeLorean fue elegido porque su carrocería de acero y puertas de gaviota ya parecían una nave espacial.',
+    fact: 'El guion original tenÃ­a la mÃ¡quina del tiempo como un refrigerador, no un auto. Steven Spielberg (productor ejecutivo) temÃ­a que los niÃ±os se encerraran en refrigeradores imitando la pelÃ­cula, asÃ­ que lo cambiaron a un auto. El DeLorean fue elegido porque su carrocerÃ­a de acero y puertas de gaviota ya parecÃ­an una nave espacial.',
   },
   {
-    id: 'cronologia', title: 'La Protección Cronológica', color: '#00E676',
+    id: 'cronologia', title: 'La ProtecciÃ³n CronolÃ³gica', color: '#00E676',
     btnImage: '/assets/bttf/infographic_paradojas/btn_cronologia.png',
     image: '/assets/bttf/infographic_paradojas/hero_cronologia.png',
     content: [
-      'En 1992, Stephen Hawking propuso la «Conjetura de Protección Cronológica»: las leyes de la física IMPIDEN viajar al pasado. No es que sea difícil o que necesites tecnología avanzada — según Hawking, el universo tiene reglas fundamentales que lo hacen físicamente imposible. Es la respuesta más radical a las paradojas temporales.',
-      'Hawking hizo un experimento brillante en 2009: organizó una fiesta para viajeros del tiempo en la Universidad de Cambridge. Preparó champán, globos y un cartel de bienvenida. Pero envió las invitaciones DESPUÉS de la fiesta. Si el viaje al pasado fuera posible, alguien del futuro habría leído la invitación y asistido. Nadie apareció.',
-      '¿Por qué la física podría impedirlo? Cuando intentas construir una máquina del tiempo usando un agujero de gusano, los efectos cuánticos cerca de la máquina crearían una acumulación infinita de energía. Esta energía destruiría la máquina antes de que pudiera funcionar. Es como si el universo dijera: «No, esto no va a pasar».',
-      'Existe una idea relacionada llamada «censura cósmica»: el universo tiene protecciones incorporadas contra situaciones extremas. Así como los horizontes de eventos esconden las singularidades de los agujeros negros (para que no veamos física «rota»), la protección cronológica escondería o destruiría cualquier máquina del tiempo.',
-      'Pero el propio Hawking admitió algo importante: no podemos DEMOSTRAR que el viaje al pasado es imposible hasta que tengamos una teoría completa de gravedad cuántica. La Relatividad General y la Mecánica Cuántica no están unificadas todavía. Mientras esa unificación no ocurra, la puerta al viaje temporal queda matemáticamente abierta.',
+      'En 1992, Stephen Hawking propuso la Â«Conjetura de ProtecciÃ³n CronolÃ³gicaÂ»: las leyes de la fÃ­sica IMPIDEN viajar al pasado. No es que sea difÃ­cil o que necesites tecnologÃ­a avanzada â€” segÃºn Hawking, el universo tiene reglas fundamentales que lo hacen fÃ­sicamente imposible. Es la respuesta mÃ¡s radical a las paradojas temporales.',
+      'Hawking hizo un experimento brillante en 2009: organizÃ³ una fiesta para viajeros del tiempo en la Universidad de Cambridge. PreparÃ³ champÃ¡n, globos y un cartel de bienvenida. Pero enviÃ³ las invitaciones DESPUÃ‰S de la fiesta. Si el viaje al pasado fuera posible, alguien del futuro habrÃ­a leÃ­do la invitaciÃ³n y asistido. Nadie apareciÃ³.',
+      'Â¿Por quÃ© la fÃ­sica podrÃ­a impedirlo? Cuando intentas construir una mÃ¡quina del tiempo usando un agujero de gusano, los efectos cuÃ¡nticos cerca de la mÃ¡quina crearÃ­an una acumulaciÃ³n infinita de energÃ­a. Esta energÃ­a destruirÃ­a la mÃ¡quina antes de que pudiera funcionar. Es como si el universo dijera: Â«No, esto no va a pasarÂ».',
+      'Existe una idea relacionada llamada Â«censura cÃ³smicaÂ»: el universo tiene protecciones incorporadas contra situaciones extremas. AsÃ­ como los horizontes de eventos esconden las singularidades de los agujeros negros (para que no veamos fÃ­sica Â«rotaÂ»), la protecciÃ³n cronolÃ³gica esconderÃ­a o destruirÃ­a cualquier mÃ¡quina del tiempo.',
+      'Pero el propio Hawking admitiÃ³ algo importante: no podemos DEMOSTRAR que el viaje al pasado es imposible hasta que tengamos una teorÃ­a completa de gravedad cuÃ¡ntica. La Relatividad General y la MecÃ¡nica CuÃ¡ntica no estÃ¡n unificadas todavÃ­a. Mientras esa unificaciÃ³n no ocurra, la puerta al viaje temporal queda matemÃ¡ticamente abierta.',
     ],
-    fact: 'La fiesta de Stephen Hawking para viajeros del tiempo fue el 28 de junio de 2009 en Cambridge. Las invitaciones se enviaron DESPUÉS, con coordenadas exactas: 52°12\'21"N, 0°7\'4.7"E. Nadie apareció. Hawking mantuvo el champán listo por si acaso y dijo: «Tengo evidencia experimental de que el viaje en el tiempo no es posible.»',
+    fact: 'La fiesta de Stephen Hawking para viajeros del tiempo fue el 28 de junio de 2009 en Cambridge. Las invitaciones se enviaron DESPUÃ‰S, con coordenadas exactas: 52Â°12\'21"N, 0Â°7\'4.7"E. Nadie apareciÃ³. Hawking mantuvo el champÃ¡n listo por si acaso y dijo: Â«Tengo evidencia experimental de que el viaje en el tiempo no es posible.Â»',
   },
   {
     id: 'futuro-ciencia', title: 'El Futuro de la Ciencia del Tiempo', color: '#FFD740',
     btnImage: '/assets/bttf/infographic_paradojas/btn_futuro.png',
     image: '/assets/bttf/infographic_paradojas/hero_futuro.png',
     content: [
-      'Lo que SABEMOS que funciona: viajar al futuro es real y está comprobado. El GPS corrige efectos relativistas cada día. Los astronautas de la ISS viajan al futuro milisegundos cada misión. En aceleradores de partículas como el CERN, las partículas subatómicas viajan al futuro constantemente — muones que deberían desintegrarse en microsegundos sobreviven mucho más porque el tiempo se ralentiza para ellos.',
-      'Lo que NO sabemos: ¿Existen las curvas temporales cerradas de Gödel en el universo real? ¿Se pueden estabilizar los agujeros de gusano con materia exótica? ¿Es correcta la conjetura de protección cronológica de Hawking? Estas son preguntas abiertas que los mejores físicos del mundo están investigando ahora mismo.',
-      'Las fronteras actuales de la investigación son fascinantes. La computación cuántica podría simular escenarios de viaje temporal. La conjetura ER=EPR (propuesta por Maldacena y Susskind en 2013) sugiere que los agujeros de gusano y el entrelazamiento cuántico son LA MISMA COSA. Si esto es correcto, cada par de partículas entrelazadas sería un micro-agujero de gusano.',
-      'La ciencia ficción impulsa la ciencia real. «Volver al Futuro» inspiró a generaciones de físicos. «Interstellar» produjo artículos científicos reales sobre agujeros negros. «Tenet» de Nolan exploró la inversión de entropía. Kip Thorne, Premio Nobel, confirmó que las películas inspiran investigación genuina. La imaginación de hoy es la ciencia de mañana.',
-      'La lección más importante: las paradojas no son solo acertijos divertidos — son herramientas científicas. Cada paradoja señala un hueco en nuestro conocimiento. La paradoja del abuelo nos muestra que no entendemos la causalidad completamente. La paradoja de los gemelos nos enseñó que el tiempo es relativo. Resolver paradojas es como resolver pistas: cada una nos acerca más a la verdad del universo.',
+      'Lo que SABEMOS que funciona: viajar al futuro es real y estÃ¡ comprobado. El GPS corrige efectos relativistas cada dÃ­a. Los astronautas de la ISS viajan al futuro milisegundos cada misiÃ³n. En aceleradores de partÃ­culas como el CERN, las partÃ­culas subatÃ³micas viajan al futuro constantemente â€” muones que deberÃ­an desintegrarse en microsegundos sobreviven mucho mÃ¡s porque el tiempo se ralentiza para ellos.',
+      'Lo que NO sabemos: Â¿Existen las curvas temporales cerradas de GÃ¶del en el universo real? Â¿Se pueden estabilizar los agujeros de gusano con materia exÃ³tica? Â¿Es correcta la conjetura de protecciÃ³n cronolÃ³gica de Hawking? Estas son preguntas abiertas que los mejores fÃ­sicos del mundo estÃ¡n investigando ahora mismo.',
+      'Las fronteras actuales de la investigaciÃ³n son fascinantes. La computaciÃ³n cuÃ¡ntica podrÃ­a simular escenarios de viaje temporal. La conjetura ER=EPR (propuesta por Maldacena y Susskind en 2013) sugiere que los agujeros de gusano y el entrelazamiento cuÃ¡ntico son LA MISMA COSA. Si esto es correcto, cada par de partÃ­culas entrelazadas serÃ­a un micro-agujero de gusano.',
+      'La ciencia ficciÃ³n impulsa la ciencia real. Â«Volver al FuturoÂ» inspirÃ³ a generaciones de fÃ­sicos. Â«InterstellarÂ» produjo artÃ­culos cientÃ­ficos reales sobre agujeros negros. Â«TenetÂ» de Nolan explorÃ³ la inversiÃ³n de entropÃ­a. Kip Thorne, Premio Nobel, confirmÃ³ que las pelÃ­culas inspiran investigaciÃ³n genuina. La imaginaciÃ³n de hoy es la ciencia de maÃ±ana.',
+      'La lecciÃ³n mÃ¡s importante: las paradojas no son solo acertijos divertidos â€” son herramientas cientÃ­ficas. Cada paradoja seÃ±ala un hueco en nuestro conocimiento. La paradoja del abuelo nos muestra que no entendemos la causalidad completamente. La paradoja de los gemelos nos enseÃ±Ã³ que el tiempo es relativo. Resolver paradojas es como resolver pistas: cada una nos acerca mÃ¡s a la verdad del universo.',
     ],
-    fact: 'En 2014, científicos de la Universidad de Queensland simularon un fotón viajando a través de curvas temporales cerradas e interactuando con su versión más joven. La simulación mostró que el fotón SIEMPRE encontraba un camino autoconsistente, apoyando los modelos teóricos de viaje temporal autoconsistente. Fue la primera simulación cuántica de este tipo, publicada en Nature Communications.',
+    fact: 'En 2014, cientÃ­ficos de la Universidad de Queensland simularon un fotÃ³n viajando a travÃ©s de curvas temporales cerradas e interactuando con su versiÃ³n mÃ¡s joven. La simulaciÃ³n mostrÃ³ que el fotÃ³n SIEMPRE encontraba un camino autoconsistente, apoyando los modelos teÃ³ricos de viaje temporal autoconsistente. Fue la primera simulaciÃ³n cuÃ¡ntica de este tipo, publicada en Nature Communications.',
   },
 ];
 
-/* ══════════════════════════════════
-   TEMPORAL FIELD — animated canvas
-   ══════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   TEMPORAL FIELD â€” animated canvas
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function TemporalField() {
   const ref = useRef(null);
   useEffect(() => {
@@ -317,9 +317,9 @@ function TemporalField() {
   return <canvas ref={ref} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }} />;
 }
 
-/* ═══════════════════════
-   SVG HEADER  — vortex
-   ═══════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   SVG HEADER  â€” vortex
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ParadoxHeader() {
   return (
     <svg viewBox="0 0 600 90" style={{ width: '100%', maxWidth: 600, display: 'block', margin: '0 auto' }}>
@@ -341,9 +341,9 @@ function ParadoxHeader() {
   );
 }
 
-/* ═══════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    EXPANDABLE PARAGRAPH
-   ═══════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const EXPAND_DIRS = ['down', 'down', 'down', 'down'];
 function seededDir(i) { return 'down'; }
 
@@ -399,9 +399,9 @@ function ExpandableParagraph({ text, index, nodeColor }) {
   );
 }
 
-/* ═══════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    NODE BUTTON
-   ═══════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function NodeButton({ node, isActive, isExplored, onClick }) {
   return (
     <motion.button
@@ -435,7 +435,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
       <div style={{ position: 'absolute', bottom: 0, right: 0, width: 8, height: 8, borderBottom: `2px solid ${node.color}`, borderRight: `2px solid ${node.color}`, borderRadius: '0 0 6px 0', zIndex: 3 }} />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={node.btnImage} alt={node.title}
-        style={{ width: '100%', height: '100%', borderRadius: 5, objectFit: 'cover', filter: isActive ? 'saturate(1.3) brightness(1.1)' : 'saturate(0.85) brightness(0.9)' }} />
+        style={{ width: '100%', height: '100%', borderRadius: 5, objectFit: 'cover', filter: isActive ? 'saturate(1.3) brightness(1.1)' : 'saturate(0.85) brightness(0.9)' }}  loading="lazy" />
       {isExplored && (
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
           style={{
@@ -455,15 +455,15 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
         textShadow: `0 0 8px ${node.color}88, 0 1px 3px rgba(0,0,0,.9)`,
         fontFamily: "'Exo 2', 'Courier New', monospace",
       }}>
-        {node.title.length > 14 ? node.title.slice(0, 13) + '…' : node.title}
+        {node.title.length > 14 ? node.title.slice(0, 13) + 'â€¦' : node.title}
       </div>
     </motion.button>
   );
 }
 
-/* ═══════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    CONTENT PANEL
-   ═══════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   if (!node) return null;
   const heroParas = node.content.slice(0, 2);
@@ -489,7 +489,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={16} color="#fff" />
       </button>
 
-      {/* ─── HERO: two-column (estándar Abu Simbel) ─── */}
+      {/* â”€â”€â”€ HERO: two-column (estÃ¡ndar Abu Simbel) â”€â”€â”€ */}
       <div style={{
         display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0,
         minHeight: '280px',
@@ -516,7 +516,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── MAGAZINE BODY — M9-standard 2-column grid ─── */}
+      {/* â”€â”€â”€ MAGAZINE BODY â€” M9-standard 2-column grid â”€â”€â”€ */}
       <div style={{ padding: '20px 28px 14px' }}>
         <div style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem 2rem',
@@ -536,7 +536,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: 8, letterSpacing: 1,
                 }}>
-                  {i === 0 ? '◆' : i === 1 ? '◇' : '★'}
+                  {i === 0 ? 'â—†' : i === 1 ? 'â—‡' : 'â˜…'}
                 </div>
                 <p style={{ margin: 0, fontSize: 14, lineHeight: 1.75, color: '#ccc' }}>{p}</p>
               </div>
@@ -545,7 +545,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── FACT ─── */}
+      {/* â”€â”€â”€ FACT â”€â”€â”€ */}
       <div style={{
         margin: '0 28px 20px', padding: '14px 16px', borderRadius: 10,
         background: `linear-gradient(90deg, ${node.color}14, transparent)`,
@@ -563,9 +563,9 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-/* ═══════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    PROGRESS BAR
-   ═══════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ProgressBar({ explored, total }) {
   const pct = Math.round((explored / total) * 100);
   return (
@@ -585,9 +585,9 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-/* ══════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    MAIN COMPONENT
-   ══════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 export default function InteractiveInfographic_BttfM3() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeId, setActiveId] = useState(null);
@@ -624,7 +624,7 @@ export default function InteractiveInfographic_BttfM3() {
         </div>
       )}
 
-      {/* ─── CONTENT ─── */}
+      {/* â”€â”€â”€ CONTENT â”€â”€â”€ */}
       <div style={{ position: 'relative', zIndex: 2, padding: '32px 16px 48px' }}>
         {/* header */}
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -666,7 +666,7 @@ export default function InteractiveInfographic_BttfM3() {
                 <Star size={36} color="#FFD740" fill="#FFD740" style={{ margin: '0 auto 10px', display: 'block' }} />
               </motion.div>
               <p style={{ fontSize: 20, fontWeight: 800, color: '#FFA500', margin: '0 0 8px', fontFamily: "'Orbitron',sans-serif" }}>
-                ⏰ ¡Has dominado las Paradojas del Tiempo!
+                â° Â¡Has dominado las Paradojas del Tiempo!
               </p>
               <p style={{ fontSize: 14, color: '#ccc', margin: 0 }}>
                 Ahora puedes tomar el quiz para ganar tu insignia de Viajero Temporal
@@ -675,7 +675,7 @@ export default function InteractiveInfographic_BttfM3() {
           )}
         </AnimatePresence>
 
-        {/* ─── Bibliografía ─── */}
+        {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
         <div style={{
           marginTop: '2rem', padding: '1.5rem 2rem',
           borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -684,18 +684,18 @@ export default function InteractiveInfographic_BttfM3() {
         }}>
           <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
             textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-            📚 Fuentes y Referencias
+            ðŸ“š Fuentes y Referencias
           </h4>
           <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
             listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
             {BIBLIOGRAPHY.map((ref, i) => (
-              <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+              <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
             ))}
           </ul>
         </div>
       </div>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

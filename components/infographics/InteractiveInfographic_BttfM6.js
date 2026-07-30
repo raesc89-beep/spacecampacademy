@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 
 import ImageLightbox from './ImageLightbox';
-// ─── SVG Decorative Elements (Time Machine themed) ────────────────────────────
+// â”€â”€â”€ SVG Decorative Elements (Time Machine themed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function DecoGear({ size = 70, color = '#6EC6FF', style = {} }) {
   return (
     <svg width={size} height={size} viewBox="0 0 60 60" style={{ opacity: 0.22, ...style }}>
@@ -144,21 +144,21 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'hg-wells',
-    title: 'La Primera Máquina del Tiempo',
+    title: 'La Primera MÃ¡quina del Tiempo',
     color: '#FF6B35',
     btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_wells.png',
     image: '/assets/bttf/infographic_maquina_tiempo/hero_wells.png',
     content: [
-      'Imagina que estás sentado en tu silla favorita y de repente... ¡puedes viajar a cualquier momento de la historia! En 1895, un escritor inglés llamado H.G. Wells publicó una novela llamada \'La Máquina del Tiempo\' y cambió para siempre cómo pensamos sobre viajar en el tiempo. Wells imaginó un aparato con palancas y cristales que podía avanzar y retroceder por el tiempo como un coche avanza y retrocede por una carretera.',
-      'Lo increíble de Wells es que escribió esto DIEZ años antes de que Einstein publicara su teoría de la relatividad. En esa época, los científicos pensaban que el tiempo era como un reloj gigante que funcionaba igual para todos, en todas partes. Nadie sospechaba que el tiempo podía estirarse, comprimirse o curvarse. Wells fue un visionario que imaginó lo que la ciencia tardaría décadas en confirmar.',
-      'Antes de Wells, el viaje en el tiempo en la literatura se hacía con magia o sueños. El personaje se dormía y despertaba en otra época (como en \'Un yanqui en la corte del Rey Arturo\' de Mark Twain, 1889). La genialidad de Wells fue inventar una MÁQUINA — un dispositivo tecnológico. Esto conectó el viaje temporal con la ciencia y la ingeniería, no con la fantasía.',
-      'La novela de Wells también planteó la primera pregunta filosófica del viaje en el tiempo: ¿qué encontraríamos en el futuro lejano? Su viajero llega al año 802,701 y descubre que la humanidad se ha dividido en dos especies: los Eloi (pacíficos pero indefensos) y los Morlocks (subterráneos y depredadores). Wells usó la ciencia ficción para preguntarse: ¿hacia dónde vamos como especie?'
+      'Imagina que estÃ¡s sentado en tu silla favorita y de repente... Â¡puedes viajar a cualquier momento de la historia! En 1895, un escritor inglÃ©s llamado H.G. Wells publicÃ³ una novela llamada \'La MÃ¡quina del Tiempo\' y cambiÃ³ para siempre cÃ³mo pensamos sobre viajar en el tiempo. Wells imaginÃ³ un aparato con palancas y cristales que podÃ­a avanzar y retroceder por el tiempo como un coche avanza y retrocede por una carretera.',
+      'Lo increÃ­ble de Wells es que escribiÃ³ esto DIEZ aÃ±os antes de que Einstein publicara su teorÃ­a de la relatividad. En esa Ã©poca, los cientÃ­ficos pensaban que el tiempo era como un reloj gigante que funcionaba igual para todos, en todas partes. Nadie sospechaba que el tiempo podÃ­a estirarse, comprimirse o curvarse. Wells fue un visionario que imaginÃ³ lo que la ciencia tardarÃ­a dÃ©cadas en confirmar.',
+      'Antes de Wells, el viaje en el tiempo en la literatura se hacÃ­a con magia o sueÃ±os. El personaje se dormÃ­a y despertaba en otra Ã©poca (como en \'Un yanqui en la corte del Rey Arturo\' de Mark Twain, 1889). La genialidad de Wells fue inventar una MÃQUINA â€” un dispositivo tecnolÃ³gico. Esto conectÃ³ el viaje temporal con la ciencia y la ingenierÃ­a, no con la fantasÃ­a.',
+      'La novela de Wells tambiÃ©n planteÃ³ la primera pregunta filosÃ³fica del viaje en el tiempo: Â¿quÃ© encontrarÃ­amos en el futuro lejano? Su viajero llega al aÃ±o 802,701 y descubre que la humanidad se ha dividido en dos especies: los Eloi (pacÃ­ficos pero indefensos) y los Morlocks (subterrÃ¡neos y depredadores). Wells usÃ³ la ciencia ficciÃ³n para preguntarse: Â¿hacia dÃ³nde vamos como especie?'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En \'Regreso al Futuro\', Doc Brown es un inventor excéntrico que crea una máquina del tiempo en su garaje. Esto es un homenaje directo a H.G. Wells: un genio solitario que construye algo imposible. La diferencia es que Doc usa un DeLorean y Wells imaginó una silla con palancas de cristal. ¡Pero la idea fundamental es idéntica!' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'H.G. Wells predijo los tanques de guerra (en \'La Guerra de los Mundos\', 1898), los bombardeos aéreos (en \'La Guerra en el Aire\', 1908) y la energía nuclear (en \'The World Set Free\', 1914, ¡30 años antes de Hiroshima!). Winston Churchill lo consultaba sobre el futuro de la tecnología militar.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En \'Regreso al Futuro\', Doc Brown es un inventor excÃ©ntrico que crea una mÃ¡quina del tiempo en su garaje. Esto es un homenaje directo a H.G. Wells: un genio solitario que construye algo imposible. La diferencia es que Doc usa un DeLorean y Wells imaginÃ³ una silla con palancas de cristal. Â¡Pero la idea fundamental es idÃ©ntica!' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'H.G. Wells predijo los tanques de guerra (en \'La Guerra de los Mundos\', 1898), los bombardeos aÃ©reos (en \'La Guerra en el Aire\', 1908) y la energÃ­a nuclear (en \'The World Set Free\', 1914, Â¡30 aÃ±os antes de Hiroshima!). Winston Churchill lo consultaba sobre el futuro de la tecnologÃ­a militar.' }
     ],
-    fact: 'La novela \'La Máquina del Tiempo\' de Wells se ha adaptado al cine dos veces (1960 y 2002), pero ninguna captura la verdadera intención de Wells: era una crítica social sobre la desigualdad de clases en la Inglaterra victoriana. Los Eloi representaban a la aristocracia ociosa y los Morlocks a la clase trabajadora. ¡La ciencia ficción como espejo de la sociedad!'
+    fact: 'La novela \'La MÃ¡quina del Tiempo\' de Wells se ha adaptado al cine dos veces (1960 y 2002), pero ninguna captura la verdadera intenciÃ³n de Wells: era una crÃ­tica social sobre la desigualdad de clases en la Inglaterra victoriana. Los Eloi representaban a la aristocracia ociosa y los Morlocks a la clase trabajadora. Â¡La ciencia ficciÃ³n como espejo de la sociedad!'
   },
   {
     id: 'agujeros-gusano',
@@ -167,16 +167,16 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gusano.png',
     image: '/assets/bttf/infographic_maquina_tiempo/hero_gusano.png',
     content: [
-      'Imagina una hoja de papel con dos puntos dibujados en extremos opuestos. Para ir de uno a otro, una hormiga tendría que caminar todo el borde del papel. Pero si doblas el papel por la mitad... ¡los dos puntos se tocan! Solo necesitas hacer un agujerito para pasar de uno al otro instantáneamente. Eso es, básicamente, un agujero de gusano: un atajo a través del espacio-tiempo.',
-      'Einstein y su colega Nathan Rosen propusieron esta idea en 1935. Los llamaron \'puentes Einstein-Rosen\'. La idea es que si el espacio-tiempo puede curvarse (y sabemos que sí, porque la gravedad lo curva), entonces en teoría podría curvarse tanto que dos regiones distantes se conecten por un túnel. Imagina el espacio como una sábana estirada: si pones algo muy pesado, la sábana se hunde. Si dos hundimientos se conectan por debajo... ¡puente!',
-      '¿Pero podría un agujero de gusano servir como máquina del tiempo? ¡Sí, en teoría! El físico Kip Thorne (Premio Nobel 2017) propuso en 1988 que si aceleras uno de los extremos del agujero de gusano a velocidades cercanas a la luz, el tiempo pasaría más despacio en ese extremo (por la dilatación temporal de Einstein). Entonces, los dos extremos existirían en momentos diferentes. Al cruzar el agujero, ¡viajarías en el tiempo!',
-      'El problema: para mantener un agujero de gusano abierto necesitarías \'materia exótica\' — un tipo de materia con energía negativa. Es como pedir que algo tenga peso negativo, que empuje hacia arriba en vez de caer. Hasta ahora, no sabemos si la materia exótica existe en cantidades suficientes. El efecto Casimir (una fuerza cuántica entre dos placas metálicas) produce algo parecido, pero en cantidades microscópicas.'
+      'Imagina una hoja de papel con dos puntos dibujados en extremos opuestos. Para ir de uno a otro, una hormiga tendrÃ­a que caminar todo el borde del papel. Pero si doblas el papel por la mitad... Â¡los dos puntos se tocan! Solo necesitas hacer un agujerito para pasar de uno al otro instantÃ¡neamente. Eso es, bÃ¡sicamente, un agujero de gusano: un atajo a travÃ©s del espacio-tiempo.',
+      'Einstein y su colega Nathan Rosen propusieron esta idea en 1935. Los llamaron \'puentes Einstein-Rosen\'. La idea es que si el espacio-tiempo puede curvarse (y sabemos que sÃ­, porque la gravedad lo curva), entonces en teorÃ­a podrÃ­a curvarse tanto que dos regiones distantes se conecten por un tÃºnel. Imagina el espacio como una sÃ¡bana estirada: si pones algo muy pesado, la sÃ¡bana se hunde. Si dos hundimientos se conectan por debajo... Â¡puente!',
+      'Â¿Pero podrÃ­a un agujero de gusano servir como mÃ¡quina del tiempo? Â¡SÃ­, en teorÃ­a! El fÃ­sico Kip Thorne (Premio Nobel 2017) propuso en 1988 que si aceleras uno de los extremos del agujero de gusano a velocidades cercanas a la luz, el tiempo pasarÃ­a mÃ¡s despacio en ese extremo (por la dilataciÃ³n temporal de Einstein). Entonces, los dos extremos existirÃ­an en momentos diferentes. Al cruzar el agujero, Â¡viajarÃ­as en el tiempo!',
+      'El problema: para mantener un agujero de gusano abierto necesitarÃ­as \'materia exÃ³tica\' â€” un tipo de materia con energÃ­a negativa. Es como pedir que algo tenga peso negativo, que empuje hacia arriba en vez de caer. Hasta ahora, no sabemos si la materia exÃ³tica existe en cantidades suficientes. El efecto Casimir (una fuerza cuÃ¡ntica entre dos placas metÃ¡licas) produce algo parecido, pero en cantidades microscÃ³picas.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En BTTF, el condensador de flujo crea una \'ruptura\' en el espacio-tiempo que el DeLorean atraviesa a 88 mph. Aunque la película no usa la palabra \'agujero de gusano\', la idea de un puente que conecta dos puntos distantes en el tiempo se basa en este mismo principio teórico.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Kip Thorne escribió el primer artículo científico serio sobre agujeros de gusano como máquinas del tiempo en 1988... ¡inspirado por una pregunta de Carl Sagan! Sagan estaba escribiendo su novela \'Contact\' y necesitaba un método científicamente plausible para viajar instantáneamente. Le pidió ayuda a Thorne, y de esa consulta entre amigos salió un artículo que cambió la física teórica.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En BTTF, el condensador de flujo crea una \'ruptura\' en el espacio-tiempo que el DeLorean atraviesa a 88 mph. Aunque la pelÃ­cula no usa la palabra \'agujero de gusano\', la idea de un puente que conecta dos puntos distantes en el tiempo se basa en este mismo principio teÃ³rico.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'Kip Thorne escribiÃ³ el primer artÃ­culo cientÃ­fico serio sobre agujeros de gusano como mÃ¡quinas del tiempo en 1988... Â¡inspirado por una pregunta de Carl Sagan! Sagan estaba escribiendo su novela \'Contact\' y necesitaba un mÃ©todo cientÃ­ficamente plausible para viajar instantÃ¡neamente. Le pidiÃ³ ayuda a Thorne, y de esa consulta entre amigos saliÃ³ un artÃ­culo que cambiÃ³ la fÃ­sica teÃ³rica.' }
     ],
-    fact: 'En 2019, los físicos Juan Maldacena y Alexei Milekhin propusieron un agujero de gusano \'humanamente atravesable\' que NO requeriría materia exótica, solo geometría del espacio-tiempo muy específica. El viaje tomaría menos de un segundo para el viajero, pero miles de años pasarían en el exterior. ¡Es un viaje al futuro, no al pasado!'
+    fact: 'En 2019, los fÃ­sicos Juan Maldacena y Alexei Milekhin propusieron un agujero de gusano \'humanamente atravesable\' que NO requerirÃ­a materia exÃ³tica, solo geometrÃ­a del espacio-tiempo muy especÃ­fica. El viaje tomarÃ­a menos de un segundo para el viajero, pero miles de aÃ±os pasarÃ­an en el exterior. Â¡Es un viaje al futuro, no al pasado!'
   },
   {
     id: 'motor-alcubierre',
@@ -185,34 +185,34 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_warp.png',
     image: '/assets/bttf/infographic_maquina_tiempo/hero_warp.png',
     content: [
-      'En Star Trek, la nave Enterprise viaja más rápido que la luz gracias a un \'motor warp\'. Suena a pura ciencia ficción, ¿verdad? Pues en 1994, un físico mexicano llamado Miguel Alcubierre demostró matemáticamente que esto PODRÍA funcionar. No violando las leyes de Einstein, sino usándolas de una manera que nadie había pensado antes.',
-      'La idea es genial: en vez de mover la nave a través del espacio, ¡mueves el ESPACIO alrededor de la nave! Imagina que estás parado sobre una alfombra mágica: la alfombra se contrae delante de ti y se expande detrás. Tú no te mueves, pero el punto donde estás parado sí cambia de posición. Técnicamente, tú nunca superas la velocidad de la luz, pero llegas a tu destino más rápido que la luz.',
-      '¿Por qué esto no viola la relatividad? Porque Einstein dijo que nada puede viajar MÁS RÁPIDO que la luz A TRAVÉS del espacio. Pero no dijo nada sobre mover el espacio mismo. De hecho, el universo ya hace esto: las galaxias más lejanas se alejan de nosotros más rápido que la luz, porque es el espacio entre ellas y nosotros el que se expande, no las galaxias moviéndose.',
-      'Los problemas del motor Alcubierre son enormes: necesitaría una cantidad de materia exótica equivalente a la masa de Júpiter (con signo negativo), la burbuja generaría temperaturas letales por radiación Hawking en sus paredes, y una vez iniciada la burbuja, ¡no podrías controlarla desde dentro! Es como subirse a un tren sin frenos. Pero el solo hecho de que la matemática funcione ya es revolucionario.'
+      'En Star Trek, la nave Enterprise viaja mÃ¡s rÃ¡pido que la luz gracias a un \'motor warp\'. Suena a pura ciencia ficciÃ³n, Â¿verdad? Pues en 1994, un fÃ­sico mexicano llamado Miguel Alcubierre demostrÃ³ matemÃ¡ticamente que esto PODRÃA funcionar. No violando las leyes de Einstein, sino usÃ¡ndolas de una manera que nadie habÃ­a pensado antes.',
+      'La idea es genial: en vez de mover la nave a travÃ©s del espacio, Â¡mueves el ESPACIO alrededor de la nave! Imagina que estÃ¡s parado sobre una alfombra mÃ¡gica: la alfombra se contrae delante de ti y se expande detrÃ¡s. TÃº no te mueves, pero el punto donde estÃ¡s parado sÃ­ cambia de posiciÃ³n. TÃ©cnicamente, tÃº nunca superas la velocidad de la luz, pero llegas a tu destino mÃ¡s rÃ¡pido que la luz.',
+      'Â¿Por quÃ© esto no viola la relatividad? Porque Einstein dijo que nada puede viajar MÃS RÃPIDO que la luz A TRAVÃ‰S del espacio. Pero no dijo nada sobre mover el espacio mismo. De hecho, el universo ya hace esto: las galaxias mÃ¡s lejanas se alejan de nosotros mÃ¡s rÃ¡pido que la luz, porque es el espacio entre ellas y nosotros el que se expande, no las galaxias moviÃ©ndose.',
+      'Los problemas del motor Alcubierre son enormes: necesitarÃ­a una cantidad de materia exÃ³tica equivalente a la masa de JÃºpiter (con signo negativo), la burbuja generarÃ­a temperaturas letales por radiaciÃ³n Hawking en sus paredes, y una vez iniciada la burbuja, Â¡no podrÃ­as controlarla desde dentro! Es como subirse a un tren sin frenos. Pero el solo hecho de que la matemÃ¡tica funcione ya es revolucionario.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El DeLorean no usa un motor warp, pero la idea de necesitar una velocidad específica (88 mph) para \'activar\' el viaje en el tiempo tiene una analogía real: en el motor Alcubierre, la burbuja necesita alcanzar una configuración energética precisa para formarse. Es como si hubiera un \'umbral\' que debes cruzar — ¡exactamente como las 88 millas por hora!' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Miguel Alcubierre, el físico mexicano que propuso el motor warp, se inspiró DIRECTAMENTE en Star Trek. Era fan de la serie cuando era niño en la Ciudad de México. Años después, como estudiante de doctorado en Gales, se preguntó: \'¿Podría la relatividad general permitir algo así?\' La respuesta fue sí. ¡De niño fan a físico que cambió el campo!' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'El DeLorean no usa un motor warp, pero la idea de necesitar una velocidad especÃ­fica (88 mph) para \'activar\' el viaje en el tiempo tiene una analogÃ­a real: en el motor Alcubierre, la burbuja necesita alcanzar una configuraciÃ³n energÃ©tica precisa para formarse. Es como si hubiera un \'umbral\' que debes cruzar â€” Â¡exactamente como las 88 millas por hora!' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Miguel Alcubierre, el fÃ­sico mexicano que propuso el motor warp, se inspirÃ³ DIRECTAMENTE en Star Trek. Era fan de la serie cuando era niÃ±o en la Ciudad de MÃ©xico. AÃ±os despuÃ©s, como estudiante de doctorado en Gales, se preguntÃ³: \'Â¿PodrÃ­a la relatividad general permitir algo asÃ­?\' La respuesta fue sÃ­. Â¡De niÃ±o fan a fÃ­sico que cambiÃ³ el campo!' }
     ],
-    fact: 'En 2021, el físico Erik Lentz publicó un artículo proponiendo una burbuja warp que NO necesitaría materia exótica, solo energía positiva organizada de una manera específica. Aunque necesitaría la energía equivalente a cientos de masas solares, es la primera vez que se elimina el requisito de materia exótica. La comunidad científica lo debate activamente.'
+    fact: 'En 2021, el fÃ­sico Erik Lentz publicÃ³ un artÃ­culo proponiendo una burbuja warp que NO necesitarÃ­a materia exÃ³tica, solo energÃ­a positiva organizada de una manera especÃ­fica. Aunque necesitarÃ­a la energÃ­a equivalente a cientos de masas solares, es la primera vez que se elimina el requisito de materia exÃ³tica. La comunidad cientÃ­fica lo debate activamente.'
   },
   {
     id: 'delorean-ingenieria',
-    title: 'Ingeniería del DeLorean',
+    title: 'IngenierÃ­a del DeLorean',
     color: '#FFA726',
     btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_delorean.png',
     image: '/assets/bttf/infographic_maquina_tiempo/hero_delorean.png',
     content: [
-      'El DeLorean DMC-12 es probablemente el coche más famoso del cine. Pero, ¿sabías que su historia real es tan dramática como la película? Fue creado por John DeLorean, un ejecutivo rebelde de General Motors que decidió construir su propio auto deportivo. Instaló su fábrica en Belfast, Irlanda del Norte, en pleno conflicto armado, ¡con fondos del gobierno británico!',
-      'La carrocería del DeLorean es de acero inoxidable sin pintar — el único coche de producción en serie que jamás ha tenido esta característica. El acero inoxidable resiste la corrosión porque contiene cromo (al menos 10.5%), que forma una capa invisible de óxido de cromo que protege el metal. Es la misma razón por la que tus cubiertos de acero inoxidable no se oxidan en el fregadero.',
-      'Las famosas puertas \'de gaviota\' (gull-wing doors) del DeLorean se abren hacia arriba, no hacia los lados. Esto no era solo estética: permitía abrir las puertas en espacios de estacionamiento más estrechos. El mecanismo usa resortes de torsión y amortiguadores de gas (como los del portón trasero de una camioneta). En la película, estas puertas le dan al DeLorean su aspecto de nave espacial.',
-      'Solo se fabricaron 9,000 DeLoreans entre 1981 y 1983 antes de que la empresa quebrara. John DeLorean fue arrestado por cargos de narcotráfico (luego absuelto), y la empresa cerró. Hoy, un DeLorean original en buen estado vale entre $50,000 y $100,000 dólares. Una empresa en Texas (DeLorean Motor Company of Texas) aún fabrica repuestos y restaura los coches sobrevivientes.'
+      'El DeLorean DMC-12 es probablemente el coche mÃ¡s famoso del cine. Pero, Â¿sabÃ­as que su historia real es tan dramÃ¡tica como la pelÃ­cula? Fue creado por John DeLorean, un ejecutivo rebelde de General Motors que decidiÃ³ construir su propio auto deportivo. InstalÃ³ su fÃ¡brica en Belfast, Irlanda del Norte, en pleno conflicto armado, Â¡con fondos del gobierno britÃ¡nico!',
+      'La carrocerÃ­a del DeLorean es de acero inoxidable sin pintar â€” el Ãºnico coche de producciÃ³n en serie que jamÃ¡s ha tenido esta caracterÃ­stica. El acero inoxidable resiste la corrosiÃ³n porque contiene cromo (al menos 10.5%), que forma una capa invisible de Ã³xido de cromo que protege el metal. Es la misma razÃ³n por la que tus cubiertos de acero inoxidable no se oxidan en el fregadero.',
+      'Las famosas puertas \'de gaviota\' (gull-wing doors) del DeLorean se abren hacia arriba, no hacia los lados. Esto no era solo estÃ©tica: permitÃ­a abrir las puertas en espacios de estacionamiento mÃ¡s estrechos. El mecanismo usa resortes de torsiÃ³n y amortiguadores de gas (como los del portÃ³n trasero de una camioneta). En la pelÃ­cula, estas puertas le dan al DeLorean su aspecto de nave espacial.',
+      'Solo se fabricaron 9,000 DeLoreans entre 1981 y 1983 antes de que la empresa quebrara. John DeLorean fue arrestado por cargos de narcotrÃ¡fico (luego absuelto), y la empresa cerrÃ³. Hoy, un DeLorean original en buen estado vale entre $50,000 y $100,000 dÃ³lares. Una empresa en Texas (DeLorean Motor Company of Texas) aÃºn fabrica repuestos y restaura los coches sobrevivientes.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El guion original de BTTF tenía la máquina del tiempo como un REFRIGERADOR, no un coche. Steven Spielberg (productor ejecutivo) temió que los niños se encerraran en refrigeradores imitando a Marty, así que los guionistas lo cambiaron a un coche. Eligieron el DeLorean porque su carrocería de acero y puertas de gaviota ya parecían una nave espacial.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'A 88 mph (141 km/h), el DeLorean enfrenta una fuerza de arrastre aerodinámico de aproximadamente 450 Newtons. Su coeficiente aerodinámico (Cd) es de 0.35 — no es terrible, pero tampoco elegante. Para comparar: un Tesla Model S tiene 0.208. El motor V6 PRV de 2.8 litros del DeLorean producía solo 130 HP, lo justo para alcanzar 88 mph... ¡pero sin sobrar potencia!' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'El guion original de BTTF tenÃ­a la mÃ¡quina del tiempo como un REFRIGERADOR, no un coche. Steven Spielberg (productor ejecutivo) temiÃ³ que los niÃ±os se encerraran en refrigeradores imitando a Marty, asÃ­ que los guionistas lo cambiaron a un coche. Eligieron el DeLorean porque su carrocerÃ­a de acero y puertas de gaviota ya parecÃ­an una nave espacial.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'A 88 mph (141 km/h), el DeLorean enfrenta una fuerza de arrastre aerodinÃ¡mico de aproximadamente 450 Newtons. Su coeficiente aerodinÃ¡mico (Cd) es de 0.35 â€” no es terrible, pero tampoco elegante. Para comparar: un Tesla Model S tiene 0.208. El motor V6 PRV de 2.8 litros del DeLorean producÃ­a solo 130 HP, lo justo para alcanzar 88 mph... Â¡pero sin sobrar potencia!' }
     ],
-    fact: 'En la vida real, el DeLorean era un coche bastante lento. Su motor V6 de 130 caballos (originalmente iba a ser un Wankel rotativo) lo aceleraba de 0 a 100 km/h en 10.5 segundos — más lento que un Honda Civic actual. La ironía es que la máquina del tiempo más famosa del cine necesita velocidad para funcionar, ¡pero el coche real era notoriamente lento!'
+    fact: 'En la vida real, el DeLorean era un coche bastante lento. Su motor V6 de 130 caballos (originalmente iba a ser un Wankel rotativo) lo aceleraba de 0 a 100 km/h en 10.5 segundos â€” mÃ¡s lento que un Honda Civic actual. La ironÃ­a es que la mÃ¡quina del tiempo mÃ¡s famosa del cine necesita velocidad para funcionar, Â¡pero el coche real era notoriamente lento!'
   },
   {
     id: 'condensador-flujo',
@@ -221,34 +221,34 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_condensador.png',
     image: '/assets/bttf/infographic_maquina_tiempo/hero_condensador.png',
     content: [
-      'En la película, el condensador de flujo (flux capacitor) es \'lo que hace posible el viaje en el tiempo\'. Doc Brown cuenta que lo inventó el 5 de noviembre de 1955, cuando se resbaló en el baño y se golpeó la cabeza con el lavabo. Al despertar, tuvo la visión del condensador: una Y invertida con tres brazos que canalizan energía. A veces, los grandes inventos nacen de accidentes.',
-      'Aunque el condensador de flujo es ficción, el concepto de \'flujo\' es 100% real en física. El flujo electromagnético mide cuántas líneas de campo magnético pasan a través de una superficie. Michael Faraday descubrió en 1831 que un flujo magnético cambiante genera electricidad — ¡y así funcionan todos los generadores del mundo! Cada vez que enciendes una luz, estás usando un descubrimiento sobre flujo.',
-      'La energía que necesita el condensador — 1.21 gigawatts — es una cifra real y enorme. Un gigawatt = mil millones de watts. Para contexto: tu casa consume unos 5,000 watts en un día ocupado. Una central nuclear grande produce alrededor de 1 gigawatt. Un rayo natural produce entre 1 y 5 gigawatts, pero solo durante 30 microsegundos. Doc eligió un rayo porque es literalmente lo único en la naturaleza que produce suficiente energía.',
-      'En BTTF II, Doc reemplaza el plutonio con \'Mr. Fusion\', un pequeño reactor de fusión que convierte basura doméstica en energía. La fusión nuclear (unir átomos de hidrógeno para formar helio, como hace el Sol) es real y produce energías enormes. El proyecto ITER en Francia busca lograr fusión controlada para 2035. Si lo consiguen, una bañera de agua marina produciría la energía equivalente a 300 barriles de petróleo.'
+      'En la pelÃ­cula, el condensador de flujo (flux capacitor) es \'lo que hace posible el viaje en el tiempo\'. Doc Brown cuenta que lo inventÃ³ el 5 de noviembre de 1955, cuando se resbalÃ³ en el baÃ±o y se golpeÃ³ la cabeza con el lavabo. Al despertar, tuvo la visiÃ³n del condensador: una Y invertida con tres brazos que canalizan energÃ­a. A veces, los grandes inventos nacen de accidentes.',
+      'Aunque el condensador de flujo es ficciÃ³n, el concepto de \'flujo\' es 100% real en fÃ­sica. El flujo electromagnÃ©tico mide cuÃ¡ntas lÃ­neas de campo magnÃ©tico pasan a travÃ©s de una superficie. Michael Faraday descubriÃ³ en 1831 que un flujo magnÃ©tico cambiante genera electricidad â€” Â¡y asÃ­ funcionan todos los generadores del mundo! Cada vez que enciendes una luz, estÃ¡s usando un descubrimiento sobre flujo.',
+      'La energÃ­a que necesita el condensador â€” 1.21 gigawatts â€” es una cifra real y enorme. Un gigawatt = mil millones de watts. Para contexto: tu casa consume unos 5,000 watts en un dÃ­a ocupado. Una central nuclear grande produce alrededor de 1 gigawatt. Un rayo natural produce entre 1 y 5 gigawatts, pero solo durante 30 microsegundos. Doc eligiÃ³ un rayo porque es literalmente lo Ãºnico en la naturaleza que produce suficiente energÃ­a.',
+      'En BTTF II, Doc reemplaza el plutonio con \'Mr. Fusion\', un pequeÃ±o reactor de fusiÃ³n que convierte basura domÃ©stica en energÃ­a. La fusiÃ³n nuclear (unir Ã¡tomos de hidrÃ³geno para formar helio, como hace el Sol) es real y produce energÃ­as enormes. El proyecto ITER en Francia busca lograr fusiÃ³n controlada para 2035. Si lo consiguen, una baÃ±era de agua marina producirÃ­a la energÃ­a equivalente a 300 barriles de petrÃ³leo.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En los primeros borradores del guion de "Regreso al Futuro", la máquina del tiempo era un refrigerador forrado de plomo. Para obtener la energía inmensa necesaria para el viaje temporal, Marty debía llevar el refrigerador al centro de una prueba de explosión nuclear en Nevada.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En 2014, científicos de la Universidad de Queensland, Australia, crearon un dispositivo real que llamaron \'capacitor de flujo cuántico\' (quantum flux capacitor). No viaja en el tiempo, pero puede hacer que la información cuántica circule en dos direcciones simultáneamente — algo que las computadoras cuánticas necesitan. Los científicos reconocieron que el nombre fue un homenaje deliberado a BTTF.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En los primeros borradores del guion de "Regreso al Futuro", la mÃ¡quina del tiempo era un refrigerador forrado de plomo. Para obtener la energÃ­a inmensa necesaria para el viaje temporal, Marty debÃ­a llevar el refrigerador al centro de una prueba de explosiÃ³n nuclear en Nevada.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'En 2014, cientÃ­ficos de la Universidad de Queensland, Australia, crearon un dispositivo real que llamaron \'capacitor de flujo cuÃ¡ntico\' (quantum flux capacitor). No viaja en el tiempo, pero puede hacer que la informaciÃ³n cuÃ¡ntica circule en dos direcciones simultÃ¡neamente â€” algo que las computadoras cuÃ¡nticas necesitan. Los cientÃ­ficos reconocieron que el nombre fue un homenaje deliberado a BTTF.' }
     ],
-    fact: 'El diseño en \'Y\' del condensador de flujo fue dibujado por el diseñador de producción Lawrence G. Paull. La forma tiene tres \'brazos\' que convergen en un centro brillante. Curiosamente, algunos chips de computadora modernos tienen una topología similar para distribuir energía. El condensador de flujo ficción inspiró investigación real en distribución de flujo energético.'
+    fact: 'El diseÃ±o en \'Y\' del condensador de flujo fue dibujado por el diseÃ±ador de producciÃ³n Lawrence G. Paull. La forma tiene tres \'brazos\' que convergen en un centro brillante. Curiosamente, algunos chips de computadora modernos tienen una topologÃ­a similar para distribuir energÃ­a. El condensador de flujo ficciÃ³n inspirÃ³ investigaciÃ³n real en distribuciÃ³n de flujo energÃ©tico.'
   },
   {
     id: 'turistas-futuro',
-    title: '¿Dónde Están los Turistas?',
+    title: 'Â¿DÃ³nde EstÃ¡n los Turistas?',
     color: '#66BB6A',
     btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_turistas.png',
     image: '/assets/bttf/infographic_maquina_tiempo/hero_turistas.png',
     content: [
-      'Si las máquinas del tiempo se inventaran algún día en el futuro, ¿por qué no nos visitan turistas del futuro? Esta pregunta se parece a la famosa Paradoja de Fermi sobre extraterrestres (\'si existen, ¿dónde están?\'), pero aplicada al tiempo. Es una de las preguntas más elegantes y simples de la física: la ausencia de visitantes del futuro podría ser evidencia de que el viaje al pasado es imposible.',
-      'Stephen Hawking puso esto a prueba de la manera más creativa posible. El 28 de junio de 2009, organizó una \'Fiesta para Viajeros del Tiempo\' en la Universidad de Cambridge. Preparó champán, globos, un cartel de bienvenida... pero envió las invitaciones DESPUÉS de la fiesta. Su lógica: si alguien del futuro inventara una máquina del tiempo, recibiría la invitación y vendría. Nadie apareció.',
-      'Pero hay explicaciones posibles además de \'es imposible\'. Una: solo puedes viajar al pasado hasta el momento en que se creó la primera máquina del tiempo (como sugieren los agujeros de gusano). Si esa máquina se construye en el año 3000, nadie podría visitarnos en 2026. Dos: quizás nos visitan pero son tan discretos que no los detectamos. Tres: quizás las leyes de la física lo impiden específicamente.',
-      'Stephen Hawking propuso en 1992 la \'Conjetura de Protección de la Cronología\': las leyes de la física conspiran para impedir el viaje al pasado. Es como si el universo tuviera un sistema inmunológico contra las paradojas temporales. Cada vez que intentas construir una máquina del tiempo con agujeros de gusano, los efectos cuánticos crean una acumulación infinita de energía que destruye la máquina antes de que funcione.'
+      'Si las mÃ¡quinas del tiempo se inventaran algÃºn dÃ­a en el futuro, Â¿por quÃ© no nos visitan turistas del futuro? Esta pregunta se parece a la famosa Paradoja de Fermi sobre extraterrestres (\'si existen, Â¿dÃ³nde estÃ¡n?\'), pero aplicada al tiempo. Es una de las preguntas mÃ¡s elegantes y simples de la fÃ­sica: la ausencia de visitantes del futuro podrÃ­a ser evidencia de que el viaje al pasado es imposible.',
+      'Stephen Hawking puso esto a prueba de la manera mÃ¡s creativa posible. El 28 de junio de 2009, organizÃ³ una \'Fiesta para Viajeros del Tiempo\' en la Universidad de Cambridge. PreparÃ³ champÃ¡n, globos, un cartel de bienvenida... pero enviÃ³ las invitaciones DESPUÃ‰S de la fiesta. Su lÃ³gica: si alguien del futuro inventara una mÃ¡quina del tiempo, recibirÃ­a la invitaciÃ³n y vendrÃ­a. Nadie apareciÃ³.',
+      'Pero hay explicaciones posibles ademÃ¡s de \'es imposible\'. Una: solo puedes viajar al pasado hasta el momento en que se creÃ³ la primera mÃ¡quina del tiempo (como sugieren los agujeros de gusano). Si esa mÃ¡quina se construye en el aÃ±o 3000, nadie podrÃ­a visitarnos en 2026. Dos: quizÃ¡s nos visitan pero son tan discretos que no los detectamos. Tres: quizÃ¡s las leyes de la fÃ­sica lo impiden especÃ­ficamente.',
+      'Stephen Hawking propuso en 1992 la \'Conjetura de ProtecciÃ³n de la CronologÃ­a\': las leyes de la fÃ­sica conspiran para impedir el viaje al pasado. Es como si el universo tuviera un sistema inmunolÃ³gico contra las paradojas temporales. Cada vez que intentas construir una mÃ¡quina del tiempo con agujeros de gusano, los efectos cuÃ¡nticos crean una acumulaciÃ³n infinita de energÃ­a que destruye la mÃ¡quina antes de que funcione.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En BTTF, la máquina del tiempo SOLO transporta a quien está dentro del DeLorean. No hay \'turistas\' aleatorios apareciendo del futuro porque solo existe UNA máquina (la de Doc). Cuando Biff roba el DeLorean en BTTF II, es la primera vez que alguien más la usa — y crea un desastre temporal. La película ilustra perfectamente por qué controlar el acceso a una máquina del tiempo es crucial.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La paradoja del turista tiene una solución matemática elegante llamada \'Principio de Autoconsistencia de Novikov\' (1980s): las leyes de la física solo permitirían viajes al pasado que NO crean paradojas. No podrías matar a tu abuelo ni crear contradicciones. El universo te \'forzaría\' a actuar de manera consistente. Es como si la realidad tuviera un auto-corrector.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En BTTF, la mÃ¡quina del tiempo SOLO transporta a quien estÃ¡ dentro del DeLorean. No hay \'turistas\' aleatorios apareciendo del futuro porque solo existe UNA mÃ¡quina (la de Doc). Cuando Biff roba el DeLorean en BTTF II, es la primera vez que alguien mÃ¡s la usa â€” y crea un desastre temporal. La pelÃ­cula ilustra perfectamente por quÃ© controlar el acceso a una mÃ¡quina del tiempo es crucial.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'La paradoja del turista tiene una soluciÃ³n matemÃ¡tica elegante llamada \'Principio de Autoconsistencia de Novikov\' (1980s): las leyes de la fÃ­sica solo permitirÃ­an viajes al pasado que NO crean paradojas. No podrÃ­as matar a tu abuelo ni crear contradicciones. El universo te \'forzarÃ­a\' a actuar de manera consistente. Es como si la realidad tuviera un auto-corrector.' }
     ],
-    fact: 'Hawking consideró su fiesta vacía como \'evidencia experimental\' (con humor) contra el viaje al pasado. Pero hay un detalle delicioso: un viajero del futuro inteligente SABRÍA que ir a la fiesta de Hawking confirmaría públicamente el viaje temporal, con consecuencias impredecibles. ¡Quizás la razón de no ir a la fiesta es que sería la peor decisión posible para un viajero del tiempo!'
+    fact: 'Hawking considerÃ³ su fiesta vacÃ­a como \'evidencia experimental\' (con humor) contra el viaje al pasado. Pero hay un detalle delicioso: un viajero del futuro inteligente SABRÃA que ir a la fiesta de Hawking confirmarÃ­a pÃºblicamente el viaje temporal, con consecuencias impredecibles. Â¡QuizÃ¡s la razÃ³n de no ir a la fiesta es que serÃ­a la peor decisiÃ³n posible para un viajero del tiempo!'
   },
   {
     id: 'gobernanza-temporal',
@@ -257,20 +257,20 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gobernanza.png',
     image: '/assets/bttf/infographic_maquina_tiempo/hero_gobernanza.png',
     content: [
-      'Imagina que mañana se inventa una máquina del tiempo funcional. ¿Quién debería tener acceso? ¿Gobiernos? ¿Científicos? ¿Cualquier persona con dinero suficiente? Esta pregunta — la gobernanza temporal — es quizás el mayor desafío ético que la humanidad jamás enfrentaría. Comparado con esto, las leyes sobre energía nuclear son sencillas.',
-      'En 1964, el astrónomo ruso Nikolái Kardashev propuso una escala para clasificar civilizaciones según la energía que pueden usar. Tipo I: toda la energía de su planeta. Tipo II: toda la energía de su estrella. Tipo III: toda la energía de su galaxia. Los físicos estiman que para construir una máquina del tiempo real necesitarías ser al menos Tipo II o III. La humanidad actual es apenas Tipo 0.7.',
-      'Si el viaje al pasado fuera posible, los problemas éticos serían enormes. ¿Está bien evitar guerras? ¿Y si al evitar una guerra causas otra peor? ¿Deberíamos \'arreglar\' la historia o aceptarla tal como fue? El filósofo David Lewis argumentó en 1976 que estas preguntas son irrelevantes porque el universo SIEMPRE mantendría la consistencia — no podrías cambiar nada que ya haya pasado.',
-      'La ciencia ficción explora estas preguntas con historias de \'agentes del tiempo\' que vigilan que nadie cambie la historia. Desde \'Doctor Who\' hasta \'Loki\' de Marvel, la idea de una policía temporal es fascinante. Pero en la realidad, el problema sería aún más complejo: ¿quién decide qué es la \'historia correcta\'? ¿Y qué pasa si dos civilizaciones con máquinas del tiempo compiten por cambiar el pasado a su favor?'
+      'Imagina que maÃ±ana se inventa una mÃ¡quina del tiempo funcional. Â¿QuiÃ©n deberÃ­a tener acceso? Â¿Gobiernos? Â¿CientÃ­ficos? Â¿Cualquier persona con dinero suficiente? Esta pregunta â€” la gobernanza temporal â€” es quizÃ¡s el mayor desafÃ­o Ã©tico que la humanidad jamÃ¡s enfrentarÃ­a. Comparado con esto, las leyes sobre energÃ­a nuclear son sencillas.',
+      'En 1964, el astrÃ³nomo ruso NikolÃ¡i Kardashev propuso una escala para clasificar civilizaciones segÃºn la energÃ­a que pueden usar. Tipo I: toda la energÃ­a de su planeta. Tipo II: toda la energÃ­a de su estrella. Tipo III: toda la energÃ­a de su galaxia. Los fÃ­sicos estiman que para construir una mÃ¡quina del tiempo real necesitarÃ­as ser al menos Tipo II o III. La humanidad actual es apenas Tipo 0.7.',
+      'Si el viaje al pasado fuera posible, los problemas Ã©ticos serÃ­an enormes. Â¿EstÃ¡ bien evitar guerras? Â¿Y si al evitar una guerra causas otra peor? Â¿DeberÃ­amos \'arreglar\' la historia o aceptarla tal como fue? El filÃ³sofo David Lewis argumentÃ³ en 1976 que estas preguntas son irrelevantes porque el universo SIEMPRE mantendrÃ­a la consistencia â€” no podrÃ­as cambiar nada que ya haya pasado.',
+      'La ciencia ficciÃ³n explora estas preguntas con historias de \'agentes del tiempo\' que vigilan que nadie cambie la historia. Desde \'Doctor Who\' hasta \'Loki\' de Marvel, la idea de una policÃ­a temporal es fascinante. Pero en la realidad, el problema serÃ­a aÃºn mÃ¡s complejo: Â¿quiÃ©n decide quÃ© es la \'historia correcta\'? Â¿Y quÃ© pasa si dos civilizaciones con mÃ¡quinas del tiempo compiten por cambiar el pasado a su favor?'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Doc Brown destruye el DeLorean al final de BTTF III porque comprende que la máquina del tiempo es demasiado peligrosa. Es una decisión de \'gobernanza temporal\' personal: elige que nadie más pueda viajar en el tiempo. Sin embargo, Doc construye un NUEVO vehículo temporal (la locomotora) — sugiriendo que la tentación del viaje temporal es irresistible, incluso para su inventor.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La humanidad consume actualmente unos 18 terawatts de energía total (toda la electricidad, transporte, industria del planeta). Una civilización Tipo I necesitaría 174 petawatts (10,000 veces más). Una Tipo II usaría la energía total del Sol: 3.8 × 10²⁶ watts. Para tener perspectiva: la energía que produce el Sol en UN SEGUNDO bastaría para alimentar toda la civilización humana actual durante 500,000 años.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Doc Brown destruye el DeLorean al final de BTTF III porque comprende que la mÃ¡quina del tiempo es demasiado peligrosa. Es una decisiÃ³n de \'gobernanza temporal\' personal: elige que nadie mÃ¡s pueda viajar en el tiempo. Sin embargo, Doc construye un NUEVO vehÃ­culo temporal (la locomotora) â€” sugiriendo que la tentaciÃ³n del viaje temporal es irresistible, incluso para su inventor.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'La humanidad consume actualmente unos 18 terawatts de energÃ­a total (toda la electricidad, transporte, industria del planeta). Una civilizaciÃ³n Tipo I necesitarÃ­a 174 petawatts (10,000 veces mÃ¡s). Una Tipo II usarÃ­a la energÃ­a total del Sol: 3.8 Ã— 10Â²â¶ watts. Para tener perspectiva: la energÃ­a que produce el Sol en UN SEGUNDO bastarÃ­a para alimentar toda la civilizaciÃ³n humana actual durante 500,000 aÃ±os.' }
     ],
-    fact: 'En 2004, el astrofísico Richard Gott III calculó que la probabilidad de que nuestra civilización sobreviva lo suficiente para construir una máquina del tiempo es de menos del 5%, usando el \'Argumento del Juicio Final\' (Doomsday Argument). Su razonamiento estadístico sugiere que el hecho de que existamos tan temprano en la historia de la humanidad hace improbable que la humanidad dure millones de años más. ¡Demoledor pero fascinante!'
+    fact: 'En 2004, el astrofÃ­sico Richard Gott III calculÃ³ que la probabilidad de que nuestra civilizaciÃ³n sobreviva lo suficiente para construir una mÃ¡quina del tiempo es de menos del 5%, usando el \'Argumento del Juicio Final\' (Doomsday Argument). Su razonamiento estadÃ­stico sugiere que el hecho de que existamos tan temprano en la historia de la humanidad hace improbable que la humanidad dure millones de aÃ±os mÃ¡s. Â¡Demoledor pero fascinante!'
   }
 ];
 
-// ─── Temporal Particle Field (Canvas Background) ──────────────────────────────
+// â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TemporalField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -324,7 +324,7 @@ function TemporalField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Time Machine Header ──────────────────────────────────────────────────────
+// â”€â”€â”€ Time Machine Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TimeMachineHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-10px' }}>
@@ -356,14 +356,14 @@ function TimeMachineHeader() {
             <stop offset="100%" stopColor="rgba(0,229,255,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">LA MÁQUINA DEL TIEMPO</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(0,229,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA DETRÁS DE LA FICCIÓN</text>
+        <text x="300" y="80" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">LA MÃQUINA DEL TIEMPO</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(0,229,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA DETRÃS DE LA FICCIÃ“N</text>
       </svg>
     </div>
   );
 }
 
-// ─── Organic Node Button (matching style) ─────────────────────────
+// â”€â”€â”€ Organic Node Button (matching style) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -398,7 +398,7 @@ function NodeButton({ node, isActive, onClick, index }) {
         position: 'relative',
       }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
         {isActive && (
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
@@ -443,7 +443,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Expandable Section with Random Direction ────────────────────────────────
+// â”€â”€â”€ Expandable Section with Random Direction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DIRECTIONS = ['up', 'down', 'left', 'right'];
 const dirVariants = {
   up:    { hidden: { y: -30, opacity: 0 }, visible: { y: 0, opacity: 1 } },
@@ -530,7 +530,7 @@ function ExpandableSection({ item, color }) {
   );
 }
 
-// ─── Magazine-Style Content Panel ────────────────────────────────────────────
+// â”€â”€â”€ Magazine-Style Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
@@ -567,7 +567,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={18} />
       </button>
 
-      {/* ─── Two-Column Hero Section ─── */}
+      {/* â”€â”€â”€ Two-Column Hero Section â”€â”€â”€ */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -612,7 +612,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
             </span>
             {node.title}
           </h3>
@@ -628,7 +628,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── Magazine Body ─── */}
+      {/* â”€â”€â”€ Magazine Body â”€â”€â”€ */}
       <div style={{
         padding: '1.5rem 2rem 2rem',
         position: 'relative',
@@ -680,7 +680,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
                 }}>
-                  {i === 0 ? '◆' : '◇'}
+                  {i === 0 ? 'â—†' : 'â—‡'}
                 </div>
                 <p style={{
                   margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
@@ -693,7 +693,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* ─── Expandable Interactive Sections ─── */}
+        {/* â”€â”€â”€ Expandable Interactive Sections â”€â”€â”€ */}
         {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -704,7 +704,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {/* ─── Fact Box ─── */}
+        {/* â”€â”€â”€ Fact Box â”€â”€â”€ */}
         <motion.div
           whileHover={{ scale: 1.01 }}
           style={{
@@ -727,13 +727,13 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ visited, total }) {
   const progress = (visited.length / total) * 100;
   return (
     <div style={{ width: '100%', maxWidth: '400px', margin: '0 auto 2rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
-        <span>Progreso de Exploración</span>
+        <span>Progreso de ExploraciÃ³n</span>
         <span>{visited.length} / {total} Completado</span>
       </div>
       <div style={{ width: '100%', height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '3px', overflow: 'hidden' }}>
@@ -748,7 +748,7 @@ function ProgressBar({ visited, total }) {
   );
 }
 
-// ─── Main Component ──────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_BttfM6() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
@@ -801,7 +801,7 @@ export default function InteractiveInfographic_BttfM6() {
             animate={{ opacity: 1 }}
             style={{ textAlign: 'center', color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', marginBottom: '2rem' }}
           >
-            Toca cada círculo para explorar
+            Toca cada cÃ­rculo para explorar
           </motion.p>
         )}
 
@@ -850,10 +850,10 @@ export default function InteractiveInfographic_BttfM6() {
               }}
             >
               <h4 style={{ color: '#00E5FF', margin: '0 0 1rem', fontSize: '1.5rem' }}>
-                🏆 ¡Has dominado los secretos de la Máquina del Tiempo!
+                ðŸ† Â¡Has dominado los secretos de la MÃ¡quina del Tiempo!
               </h4>
               <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '1.5rem' }}>
-                Has explorado toda la ciencia detrás de las máquinas del tiempo. ¿Estás listo para poner a prueba tus conocimientos?
+                Has explorado toda la ciencia detrÃ¡s de las mÃ¡quinas del tiempo. Â¿EstÃ¡s listo para poner a prueba tus conocimientos?
               </p>
               <button style={{
                 padding: '0.8rem 2rem', background: '#00E5FF', color: '#0B0E2D',
@@ -870,12 +870,12 @@ export default function InteractiveInfographic_BttfM6() {
         {/* Bibliography */}
         <div style={{ marginTop: '4rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem' }}>
           <h5 style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0 0 1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
-            Fuentes Científicas y Bibliografía
+            Fuentes CientÃ­ficas y BibliografÃ­a
           </h5>
           <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {BIBLIOGRAPHY.map((item, i) => (
               <li key={i} style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <span style={{ color: '#00E5FF', opacity: 0.5 }}>•</span>
+                <span style={{ color: '#00E5FF', opacity: 0.5 }}>â€¢</span>
                 {item}
               </li>
             ))}
@@ -883,7 +883,7 @@ export default function InteractiveInfographic_BttfM6() {
         </div>
       </div>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

@@ -6,7 +6,7 @@ import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from '
 
 import ImageLightbox from './ImageLightbox';
 
-// ─── SVG Decorative Elements (Maya E-Group themed) ────────────────────────────
+// â”€â”€â”€ SVG Decorative Elements (Maya E-Group themed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function DecoEGroup({ size = 70, color = '#A1887F', style = {} }) {
   return (
     <svg width={size} height={size} viewBox="0 0 60 60" style={{ opacity: 0.22, ...style }}>
@@ -88,36 +88,36 @@ const BIBLIOGRAPHY = [
   'Chase, A.F. & Chase, D.Z. (1995). "External Impetus, Internal Synthesis, and Standardization: E Group Assemblages", Acta Mesoamericana, 8',
   'Inomata, T. et al. (2013). "Early Ceremonial Constructions at Ceibal, Guatemala", Science, 340',
   'Aimers, J.J. & Rice, P.M. (2006). "Astronomy, Ritual, and the Interpretation of Maya E-Group Architectural Assemblages", Ancient Mesoamerica, 17',
-  'Šprajc, I. (2001). Orientaciones Astronómicas en la Arquitectura Prehispánica, INAH',
+  'Å prajc, I. (2001). Orientaciones AstronÃ³micas en la Arquitectura PrehispÃ¡nica, INAH',
 ];
 
 const INFOGRAPHIC_NODES = [
   {
     id: 'uaxactun-sitio',
-    title: 'El Sitio: Uaxactún',
+    title: 'El Sitio: UaxactÃºn',
     color: '#A1887F',
     btnImage: '/assets/maya/infographic_m13/btn_uaxactun-sitio.jpg',
     image: '/assets/maya/infographic_m13/hero_uaxactun-sitio.jpg',
     content: [
-      'Imagina una ciudad antigua oculta bajo el espeso verde de la selva tropical. Uaxactún, ubicada en el norte del departamento de Petén en Guatemala, es uno de los asentamientos más venerables y antiguos de la civilización maya. Sus constructores comenzaron a levantar edificios impresionantes desde el período Preclásico (alrededor del año 900 antes de Cristo). Es como pensar en la fundación de una gran capital moderna, pero miles de años atrás, cuando los constructores usaban herramientas de piedra y una sabiduría increíble para diseñar su entorno.',
-      "El nombre de la ciudad tiene una historia fascinante que parece sacada de un cuento de aventuras arqueológicas. Fue bautizada en la década de 1920 por el famoso investigador Sylvanus Morley. Al encontrar una estela de piedra muy antigua que marcaba el ciclo de tiempo maya conocido como el 'Baktún 8', decidió combinar la palabra maya para el número ocho (Uaxac) con la palabra para piedra (Tún). Así nació el nombre 'Ocho Piedras'. Su nombre original antiguo podría haber sido Siaan K\'aan, que significa poéticamente 'Nacida del Cielo'.",
-      'Durante siglos, Uaxactún fue un reino poderoso que competía de igual a igual con su imponente y famoso vecino: la gran ciudad de Tikal, que está apenas a 23 kilómetros al sur (lo que sería un día de caminata por la selva). Imagina dos grandes equipos deportivos rivales de la misma región compitiendo por ser el mejor. En el siglo IV, esta rivalidad culminó en un conflicto histórico liderado por el gobernante de Tikal con ayuda externa, lo que marcó un antes y un después en la política maya de las tierras bajas.',
-      'Sin embargo, Uaxactún no solo fue famosa por sus guerras o su poder político. Su mayor tesoro fue el conocimiento. Sus plazas y edificios no estaban puestos al azar. Al igual que nosotros organizamos nuestra habitación para que entre mejor la luz por la ventana o ponemos el escritorio donde no haya ruido, los arquitectos de Uaxactún acomodaron gigantescos monumentos de piedra para interactuar de forma perfecta con el sol, las estrellas y el paso de las estaciones. Eran maestros del espacio y el tiempo.',
-      'El mayor orgullo de Uaxactún fue la creación de un tipo especial de conjunto de edificios que hoy asombra a científicos de todo el planeta. Un verdadero laboratorio astronómico hecho de estuco y piedra caliza. Este complejo permitía a los sacerdotes y sabios mirar al horizonte para saber con precisión milimétrica cuándo sembrar, cuándo cosechar y cuándo realizar grandes festivales. Un avance tecnológico monumental que se convertiría en un molde copiado por cientos de ciudades.',
+      'Imagina una ciudad antigua oculta bajo el espeso verde de la selva tropical. UaxactÃºn, ubicada en el norte del departamento de PetÃ©n en Guatemala, es uno de los asentamientos mÃ¡s venerables y antiguos de la civilizaciÃ³n maya. Sus constructores comenzaron a levantar edificios impresionantes desde el perÃ­odo PreclÃ¡sico (alrededor del aÃ±o 900 antes de Cristo). Es como pensar en la fundaciÃ³n de una gran capital moderna, pero miles de aÃ±os atrÃ¡s, cuando los constructores usaban herramientas de piedra y una sabidurÃ­a increÃ­ble para diseÃ±ar su entorno.',
+      "El nombre de la ciudad tiene una historia fascinante que parece sacada de un cuento de aventuras arqueolÃ³gicas. Fue bautizada en la dÃ©cada de 1920 por el famoso investigador Sylvanus Morley. Al encontrar una estela de piedra muy antigua que marcaba el ciclo de tiempo maya conocido como el 'BaktÃºn 8', decidiÃ³ combinar la palabra maya para el nÃºmero ocho (Uaxac) con la palabra para piedra (TÃºn). AsÃ­ naciÃ³ el nombre 'Ocho Piedras'. Su nombre original antiguo podrÃ­a haber sido Siaan K\'aan, que significa poÃ©ticamente 'Nacida del Cielo'.",
+      'Durante siglos, UaxactÃºn fue un reino poderoso que competÃ­a de igual a igual con su imponente y famoso vecino: la gran ciudad de Tikal, que estÃ¡ apenas a 23 kilÃ³metros al sur (lo que serÃ­a un dÃ­a de caminata por la selva). Imagina dos grandes equipos deportivos rivales de la misma regiÃ³n compitiendo por ser el mejor. En el siglo IV, esta rivalidad culminÃ³ en un conflicto histÃ³rico liderado por el gobernante de Tikal con ayuda externa, lo que marcÃ³ un antes y un despuÃ©s en la polÃ­tica maya de las tierras bajas.',
+      'Sin embargo, UaxactÃºn no solo fue famosa por sus guerras o su poder polÃ­tico. Su mayor tesoro fue el conocimiento. Sus plazas y edificios no estaban puestos al azar. Al igual que nosotros organizamos nuestra habitaciÃ³n para que entre mejor la luz por la ventana o ponemos el escritorio donde no haya ruido, los arquitectos de UaxactÃºn acomodaron gigantescos monumentos de piedra para interactuar de forma perfecta con el sol, las estrellas y el paso de las estaciones. Eran maestros del espacio y el tiempo.',
+      'El mayor orgullo de UaxactÃºn fue la creaciÃ³n de un tipo especial de conjunto de edificios que hoy asombra a cientÃ­ficos de todo el planeta. Un verdadero laboratorio astronÃ³mico hecho de estuco y piedra caliza. Este complejo permitÃ­a a los sacerdotes y sabios mirar al horizonte para saber con precisiÃ³n milimÃ©trica cuÃ¡ndo sembrar, cuÃ¡ndo cosechar y cuÃ¡ndo realizar grandes festivales. Un avance tecnolÃ³gico monumental que se convertirÃ­a en un molde copiado por cientos de ciudades.',
     ],
     expandables: [
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'clock',
-        text: 'La ciudad de Uaxactún fue un lugar tan adelantado a su tiempo que, cuando los arqueólogos empezaron a investigar, descubrieron aquí una de las primeras pinturas al fresco del mundo maya, mostrando escenas cortesanas llenas de vida, así como la primera arquitectura de gran tamaño que probaba que los mayas preclásicos eran arquitectos geniales.',
+        text: 'La ciudad de UaxactÃºn fue un lugar tan adelantado a su tiempo que, cuando los arqueÃ³logos empezaron a investigar, descubrieron aquÃ­ una de las primeras pinturas al fresco del mundo maya, mostrando escenas cortesanas llenas de vida, asÃ­ como la primera arquitectura de gran tamaÃ±o que probaba que los mayas preclÃ¡sicos eran arquitectos geniales.',
       },
       {
-        label: 'Dato Astronómico',
+        label: 'Dato AstronÃ³mico',
         icon: 'atom',
-        text: 'A diferencia de los observatorios modernos que tienen cúpulas y telescopios gigantes de metal y cristal apuntando al cielo nocturno, los observatorios mayas como los de Uaxactún miraban el horizonte al amanecer o al atardecer para medir los cambios de posición de los astros a simple vista a lo largo del año. ¡Pura geometría y paciencia!',
+        text: 'A diferencia de los observatorios modernos que tienen cÃºpulas y telescopios gigantes de metal y cristal apuntando al cielo nocturno, los observatorios mayas como los de UaxactÃºn miraban el horizonte al amanecer o al atardecer para medir los cambios de posiciÃ³n de los astros a simple vista a lo largo del aÃ±o. Â¡Pura geometrÃ­a y paciencia!',
       },
     ],
-    fact: 'El asentamiento fue tan longevo y estable que las evidencias muestran ocupación continua desde el año 900 a.C. hasta cerca del 900 d.C. Es decir, casi 2000 años de existencia ininterrumpida. Si comparamos, muchas de las ciudades modernas o países de hoy apenas tienen unos cuantos cientos de años de haber sido fundados. ¡Uaxactún fue verdaderamente eterna!',
+    fact: 'El asentamiento fue tan longevo y estable que las evidencias muestran ocupaciÃ³n continua desde el aÃ±o 900 a.C. hasta cerca del 900 d.C. Es decir, casi 2000 aÃ±os de existencia ininterrumpida. Si comparamos, muchas de las ciudades modernas o paÃ­ses de hoy apenas tienen unos cuantos cientos de aÃ±os de haber sido fundados. Â¡UaxactÃºn fue verdaderamente eterna!',
   },
   {
     id: 'grupo-e-original',
@@ -126,25 +126,25 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m13/btn_grupo-e-original.jpg',
     image: '/assets/maya/infographic_m13/hero_grupo-e-original.jpg',
     content: [
-      'Todo comenzó con un mapa y una letra del alfabeto. En el año 1924, el explorador y arqueólogo danés Frans Blom, al servicio del Instituto Carnegie de Washington, estaba cartografiando las ruinas de Uaxactún. Para mantener el orden, decidió nombrar los distintos conjuntos de edificios con letras: Grupo A, Grupo B, Grupo C, y así sucesivamente. Al llegar a una plaza particular rodeada de cuatro estructuras principales, la bautizó sencillamente como el "Grupo E".',
-      'Pero el Grupo E no era solo otro conjunto de piedras amontonadas por el tiempo. Al mirar con cuidado cómo estaban alineados estos edificios, Blom notó algo extraordinario. Había una pirámide grande del lado oeste (donde se pone el sol) y una plataforma alargada del lado este (por donde sale el sol) que sostenía tres templos más pequeños. Blom y otros científicos pronto se dieron cuenta de que las posiciones de los edificios marcaban exactamente los puntos de salida del sol en los solsticios y equinoccios.',
-      'Imagina tener un gigantesco reloj solar del tamaño de varias canchas de fútbol. Así de asombroso es el Grupo E de Uaxactún. Para los mayas, no era necesario inventar un telescopio de lentes; su telescopio era la arquitectura misma. El diseño era tan ingenioso y perfecto que los arqueólogos modernos quedaron maravillados por la exactitud de los ángulos y la relación visual entre la pirámide de observación y los templos orientales.',
-      'El impacto de este descubrimiento fue tan masivo en el mundo científico que el nombre "Grupo E" pasó de ser una simple etiqueta en un mapa a convertirse en un término oficial en la arqueología mundial. Hoy en día, si un experto encuentra en cualquier lugar de Mesoamérica un arreglo arquitectónico similar con una pirámide al oeste y una plataforma alargada al este, lo clasifica automáticamente como un "Complejo Tipo Grupo E". ¡El original de Uaxactún le dio su nombre a todo un modelo científico!',
-      'Esta revelación cambió para siempre nuestra percepción de los antiguos mayas. Antes se pensaba que sus ciudades crecían de forma desordenada, como un bosque salvaje. El Grupo E demostró que los centros urbanos estaban planificados matemáticamente y orientados cósmicamente desde las primeras piedras puestas en el suelo. Los mayas no solo construían edificios; construían gigantescos instrumentos astronómicos habitables.',
+      'Todo comenzÃ³ con un mapa y una letra del alfabeto. En el aÃ±o 1924, el explorador y arqueÃ³logo danÃ©s Frans Blom, al servicio del Instituto Carnegie de Washington, estaba cartografiando las ruinas de UaxactÃºn. Para mantener el orden, decidiÃ³ nombrar los distintos conjuntos de edificios con letras: Grupo A, Grupo B, Grupo C, y asÃ­ sucesivamente. Al llegar a una plaza particular rodeada de cuatro estructuras principales, la bautizÃ³ sencillamente como el "Grupo E".',
+      'Pero el Grupo E no era solo otro conjunto de piedras amontonadas por el tiempo. Al mirar con cuidado cÃ³mo estaban alineados estos edificios, Blom notÃ³ algo extraordinario. HabÃ­a una pirÃ¡mide grande del lado oeste (donde se pone el sol) y una plataforma alargada del lado este (por donde sale el sol) que sostenÃ­a tres templos mÃ¡s pequeÃ±os. Blom y otros cientÃ­ficos pronto se dieron cuenta de que las posiciones de los edificios marcaban exactamente los puntos de salida del sol en los solsticios y equinoccios.',
+      'Imagina tener un gigantesco reloj solar del tamaÃ±o de varias canchas de fÃºtbol. AsÃ­ de asombroso es el Grupo E de UaxactÃºn. Para los mayas, no era necesario inventar un telescopio de lentes; su telescopio era la arquitectura misma. El diseÃ±o era tan ingenioso y perfecto que los arqueÃ³logos modernos quedaron maravillados por la exactitud de los Ã¡ngulos y la relaciÃ³n visual entre la pirÃ¡mide de observaciÃ³n y los templos orientales.',
+      'El impacto de este descubrimiento fue tan masivo en el mundo cientÃ­fico que el nombre "Grupo E" pasÃ³ de ser una simple etiqueta en un mapa a convertirse en un tÃ©rmino oficial en la arqueologÃ­a mundial. Hoy en dÃ­a, si un experto encuentra en cualquier lugar de MesoamÃ©rica un arreglo arquitectÃ³nico similar con una pirÃ¡mide al oeste y una plataforma alargada al este, lo clasifica automÃ¡ticamente como un "Complejo Tipo Grupo E". Â¡El original de UaxactÃºn le dio su nombre a todo un modelo cientÃ­fico!',
+      'Esta revelaciÃ³n cambiÃ³ para siempre nuestra percepciÃ³n de los antiguos mayas. Antes se pensaba que sus ciudades crecÃ­an de forma desordenada, como un bosque salvaje. El Grupo E demostrÃ³ que los centros urbanos estaban planificados matemÃ¡ticamente y orientados cÃ³smicamente desde las primeras piedras puestas en el suelo. Los mayas no solo construÃ­an edificios; construÃ­an gigantescos instrumentos astronÃ³micos habitables.',
     ],
     expandables: [
       {
-        label: 'En la Arqueología',
+        label: 'En la ArqueologÃ­a',
         icon: 'clock',
-        text: 'Frans Blom, el descubridor del alineamiento solar en el Grupo E, también fue fundamental en la exploración de Palenque y otras zonas de Chiapas. Junto a Oliver La Farge, realizó expediciones que abrieron los ojos del mundo a las maravillas del mundo maya ocultas en la profundidad de la selva.',
+        text: 'Frans Blom, el descubridor del alineamiento solar en el Grupo E, tambiÃ©n fue fundamental en la exploraciÃ³n de Palenque y otras zonas de Chiapas. Junto a Oliver La Farge, realizÃ³ expediciones que abrieron los ojos del mundo a las maravillas del mundo maya ocultas en la profundidad de la selva.',
       },
       {
-        label: 'Mecánica del Observatorio',
+        label: 'MecÃ¡nica del Observatorio',
         icon: 'atom',
-        text: 'La maravilla del Grupo E es que transforma el movimiento de la Tierra alrededor del Sol en un movimiento visible del Sol a lo largo del horizonte oriental de la ciudad. Para alguien parado en la pirámide oeste, el sol parece "moverse" lentamente de norte a sur y de regreso, usando los templos esteños como reglas de medición.',
+        text: 'La maravilla del Grupo E es que transforma el movimiento de la Tierra alrededor del Sol en un movimiento visible del Sol a lo largo del horizonte oriental de la ciudad. Para alguien parado en la pirÃ¡mide oeste, el sol parece "moverse" lentamente de norte a sur y de regreso, usando los templos esteÃ±os como reglas de mediciÃ³n.',
       },
     ],
-    fact: 'El Grupo E de Uaxactún no solo servía como observatorio, sino que era el centro de gigantescas ceremonias públicas. A diferencia de un astrónomo moderno trabajando solo en un cuarto oscuro, los sacerdotes mayas observaban el sol naciente frente a miles de personas que abarrotaban la plaza, uniendo en un solo instante la ciencia exacta, la religión y el teatro político.',
+    fact: 'El Grupo E de UaxactÃºn no solo servÃ­a como observatorio, sino que era el centro de gigantescas ceremonias pÃºblicas. A diferencia de un astrÃ³nomo moderno trabajando solo en un cuarto oscuro, los sacerdotes mayas observaban el sol naciente frente a miles de personas que abarrotaban la plaza, uniendo en un solo instante la ciencia exacta, la religiÃ³n y el teatro polÃ­tico.',
   },
   {
     id: 'tres-templos',
@@ -153,52 +153,52 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m13/btn_tres-templos.jpg',
     image: '/assets/maya/infographic_m13/hero_tres-templos.jpg',
     content: [
-      'Al pararte en la Plaza del Grupo E, miras hacia el este y te encuentras con una larga plataforma elevada que soporta tres construcciones separadas. Estos son los famosos "Tres Templos" (conocidos en los mapas como Estructuras E-I, E-II y E-III). Imagina que son como las marcas de las horas en el borde de un reloj analógico inmenso. No fueron puestos ahí por estética, sino como precisas miras astronómicas de piedra sólida.',
-      'El templo situado en el extremo norte (hacia tu izquierda si miras al este) es el marcador del verano. Durante el Solsticio de Verano, el 21 de junio, el día más largo del año en el hemisferio norte, un sacerdote parado en las escalinatas de la pirámide oeste vería el sol salir exactamente por detrás de este templo norte. Es como si el sol naciera coronando este edificio para anunciar que el ciclo cálido y lluvioso había llegado a su punto máximo.',
-      'El templo del centro es quizá el más especial. Marca los días de equilibrio cósmico absoluto: los Equinoccios (alrededor del 21 de marzo y 21 de septiembre). En estos dos días, el día y la noche duran exactamente lo mismo. Visto desde el punto de observación occidental, el sol despunta majestuosamente justo por detrás de la parte central del templo de en medio. El universo se encuentra en balance, y la arquitectura lo testifica.',
-      'Finalmente, el templo situado en el extremo sur marca el Solsticio de Invierno, alrededor del 21 de diciembre. Es el día con menos horas de luz solar del año. En esa fecha clave, el sol asoma por detrás del templo sur. A partir de este momento, los días comenzarán lentamente a ser más largos otra vez, marcando el renacimiento de la luz y el comienzo del viaje del sol de regreso hacia el norte.',
-      'Al colocar estos tres templos, los constructores mayas crearon un marco visual que encuadraba el recorrido anual del sol. Piensa en el sol como un péndulo de luz que se mueve lentamente de un templo a otro a lo largo de 365 días. Esta maravillosa máquina del tiempo inamovible no tiene engranajes ni baterías; su motor es la rotación y traslación del planeta Tierra, y su pantalla es el horizonte oriental.',
+      'Al pararte en la Plaza del Grupo E, miras hacia el este y te encuentras con una larga plataforma elevada que soporta tres construcciones separadas. Estos son los famosos "Tres Templos" (conocidos en los mapas como Estructuras E-I, E-II y E-III). Imagina que son como las marcas de las horas en el borde de un reloj analÃ³gico inmenso. No fueron puestos ahÃ­ por estÃ©tica, sino como precisas miras astronÃ³micas de piedra sÃ³lida.',
+      'El templo situado en el extremo norte (hacia tu izquierda si miras al este) es el marcador del verano. Durante el Solsticio de Verano, el 21 de junio, el dÃ­a mÃ¡s largo del aÃ±o en el hemisferio norte, un sacerdote parado en las escalinatas de la pirÃ¡mide oeste verÃ­a el sol salir exactamente por detrÃ¡s de este templo norte. Es como si el sol naciera coronando este edificio para anunciar que el ciclo cÃ¡lido y lluvioso habÃ­a llegado a su punto mÃ¡ximo.',
+      'El templo del centro es quizÃ¡ el mÃ¡s especial. Marca los dÃ­as de equilibrio cÃ³smico absoluto: los Equinoccios (alrededor del 21 de marzo y 21 de septiembre). En estos dos dÃ­as, el dÃ­a y la noche duran exactamente lo mismo. Visto desde el punto de observaciÃ³n occidental, el sol despunta majestuosamente justo por detrÃ¡s de la parte central del templo de en medio. El universo se encuentra en balance, y la arquitectura lo testifica.',
+      'Finalmente, el templo situado en el extremo sur marca el Solsticio de Invierno, alrededor del 21 de diciembre. Es el dÃ­a con menos horas de luz solar del aÃ±o. En esa fecha clave, el sol asoma por detrÃ¡s del templo sur. A partir de este momento, los dÃ­as comenzarÃ¡n lentamente a ser mÃ¡s largos otra vez, marcando el renacimiento de la luz y el comienzo del viaje del sol de regreso hacia el norte.',
+      'Al colocar estos tres templos, los constructores mayas crearon un marco visual que encuadraba el recorrido anual del sol. Piensa en el sol como un pÃ©ndulo de luz que se mueve lentamente de un templo a otro a lo largo de 365 dÃ­as. Esta maravillosa mÃ¡quina del tiempo inamovible no tiene engranajes ni baterÃ­as; su motor es la rotaciÃ³n y traslaciÃ³n del planeta Tierra, y su pantalla es el horizonte oriental.',
     ],
     expandables: [
       {
-        label: 'Geometría Exacta',
+        label: 'GeometrÃ­a Exacta',
         icon: 'atom',
-        text: 'Para que los tres templos funcionen correctamente, la distancia entre ellos y la pirámide de observación oeste debe ser calculada con matemáticas complejas. Los arquitectos mayas tenían que conocer la amplitud angular del movimiento solar (alrededor de 49 grados en esa latitud) y traducirla a la longitud de la plaza para espaciar los templos correctamente.',
+        text: 'Para que los tres templos funcionen correctamente, la distancia entre ellos y la pirÃ¡mide de observaciÃ³n oeste debe ser calculada con matemÃ¡ticas complejas. Los arquitectos mayas tenÃ­an que conocer la amplitud angular del movimiento solar (alrededor de 49 grados en esa latitud) y traducirla a la longitud de la plaza para espaciar los templos correctamente.',
       },
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'clock',
-        text: 'Aunque hoy los vemos como ruinas grises y de piedra expuesta, en su época de gloria estos templos estaban cubiertos de una gruesa capa de estuco, que era yeso liso y reluciente, y estaban pintados de colores vibrantes, especialmente rojo carmesí. Imagina ver salir el sol brillante coronando un edificio rojo fuego en medio del verdor selvático.',
+        text: 'Aunque hoy los vemos como ruinas grises y de piedra expuesta, en su Ã©poca de gloria estos templos estaban cubiertos de una gruesa capa de estuco, que era yeso liso y reluciente, y estaban pintados de colores vibrantes, especialmente rojo carmesÃ­. Imagina ver salir el sol brillante coronando un edificio rojo fuego en medio del verdor selvÃ¡tico.',
       },
     ],
-    fact: 'El diseño tripartito (tres templos) se volvió tan sagrado para los mayas que no solo lo usaron para grupos astronómicos E, sino que esta simetría influyó en otros edificios rituales y míticos. En su religión, la creación del mundo moderno fue marcada por los dioses al colocar tres piedras fundamentales en el cielo cósmico, conocidas como el Fogón de la Creación. Los tres templos podrían ser una representación terrenal de este mito.',
+    fact: 'El diseÃ±o tripartito (tres templos) se volviÃ³ tan sagrado para los mayas que no solo lo usaron para grupos astronÃ³micos E, sino que esta simetrÃ­a influyÃ³ en otros edificios rituales y mÃ­ticos. En su religiÃ³n, la creaciÃ³n del mundo moderno fue marcada por los dioses al colocar tres piedras fundamentales en el cielo cÃ³smico, conocidas como el FogÃ³n de la CreaciÃ³n. Los tres templos podrÃ­an ser una representaciÃ³n terrenal de este mito.',
   },
   {
     id: 'funcionamiento-solar',
-    title: 'Cómo Funciona',
+    title: 'CÃ³mo Funciona',
     color: '#FF8F00',
     btnImage: '/assets/maya/infographic_m13/btn_funcionamiento-solar.jpg',
     image: '/assets/maya/infographic_m13/hero_funcionamiento-solar.jpg',
     content: [
-      'Para entender cómo funciona verdaderamente esta genialidad arquitectónica, ponte en los zapatos de un sacerdote o sabio maya hace dos mil años. Tu puesto de trabajo está en la Estructura E-VII-sub, una pirámide hermosamente decorada con mascarones de estuco, ubicada en el lado oeste de la plaza. Te levantas en la madrugada profunda y subes las escalinatas oscuras antes de que el sol acaricie el cielo.',
-      'Llegas al punto de observación superior y te volteas para mirar al este, justo hacia la plataforma alargada que sostiene los tres templos frontales. La plaza entre la pirámide y los templos está en penumbras. Y entonces ocurre la magia científica: empiezas a llevar un registro sistemático de exactamente en qué punto de los edificios amanece el sol cada día a lo largo de muchas semanas y meses. Eres un relojero del sol.',
-      'A medida que pasa el año, el punto exacto de la salida del sol se desplaza por el horizonte, como si estuviera caminando por encima de la plataforma de los templos. En junio, el amanecer ocurre muy a la izquierda (templo norte). En los meses siguientes, cada mañana el sol amanece un poquito más a la derecha. En septiembre amanece detrás del templo del medio, y para diciembre, el amanecer llega hasta el extremo derecho (templo sur).',
-      'Este viaje de ida y vuelta del sol por el horizonte marca lo que llamamos el ciclo tropical o año solar. Con las esquinas y los centros de los templos orientales, el Grupo E podía marcar fechas importantísimas para la agricultura. Imagínate este edificio como una gran alarma silenciosa que le decía al pueblo de Uaxactún: "¡Prepárense, las lluvias fuertes llegarán en 20 días, es hora de limpiar los campos y empezar a sembrar el maíz y el frijol!".',
-      'Lo que hace fascinante al sistema es que dependía del punto de vista. Para que todo funcionara perfecto, el observador DEBÍA estar parado exactamente en el eje de la pirámide oeste. Si te movías cinco metros al norte o al sur, las mediciones se arruinaban. La arquitectura guiaba físicamente a los astrónomos al punto exacto donde la ilusión geométrica del movimiento planetario cuadraba perfectamente con las piedras milenarias.',
+      'Para entender cÃ³mo funciona verdaderamente esta genialidad arquitectÃ³nica, ponte en los zapatos de un sacerdote o sabio maya hace dos mil aÃ±os. Tu puesto de trabajo estÃ¡ en la Estructura E-VII-sub, una pirÃ¡mide hermosamente decorada con mascarones de estuco, ubicada en el lado oeste de la plaza. Te levantas en la madrugada profunda y subes las escalinatas oscuras antes de que el sol acaricie el cielo.',
+      'Llegas al punto de observaciÃ³n superior y te volteas para mirar al este, justo hacia la plataforma alargada que sostiene los tres templos frontales. La plaza entre la pirÃ¡mide y los templos estÃ¡ en penumbras. Y entonces ocurre la magia cientÃ­fica: empiezas a llevar un registro sistemÃ¡tico de exactamente en quÃ© punto de los edificios amanece el sol cada dÃ­a a lo largo de muchas semanas y meses. Eres un relojero del sol.',
+      'A medida que pasa el aÃ±o, el punto exacto de la salida del sol se desplaza por el horizonte, como si estuviera caminando por encima de la plataforma de los templos. En junio, el amanecer ocurre muy a la izquierda (templo norte). En los meses siguientes, cada maÃ±ana el sol amanece un poquito mÃ¡s a la derecha. En septiembre amanece detrÃ¡s del templo del medio, y para diciembre, el amanecer llega hasta el extremo derecho (templo sur).',
+      'Este viaje de ida y vuelta del sol por el horizonte marca lo que llamamos el ciclo tropical o aÃ±o solar. Con las esquinas y los centros de los templos orientales, el Grupo E podÃ­a marcar fechas importantÃ­simas para la agricultura. ImagÃ­nate este edificio como una gran alarma silenciosa que le decÃ­a al pueblo de UaxactÃºn: "Â¡PrepÃ¡rense, las lluvias fuertes llegarÃ¡n en 20 dÃ­as, es hora de limpiar los campos y empezar a sembrar el maÃ­z y el frijol!".',
+      'Lo que hace fascinante al sistema es que dependÃ­a del punto de vista. Para que todo funcionara perfecto, el observador DEBÃA estar parado exactamente en el eje de la pirÃ¡mide oeste. Si te movÃ­as cinco metros al norte o al sur, las mediciones se arruinaban. La arquitectura guiaba fÃ­sicamente a los astrÃ³nomos al punto exacto donde la ilusiÃ³n geomÃ©trica del movimiento planetario cuadraba perfectamente con las piedras milenarias.',
     ],
     expandables: [
       {
-        label: 'Calendario Agrícola',
+        label: 'Calendario AgrÃ­cola',
         icon: 'clock',
-        text: 'La principal razón práctica para gastar miles de horas de trabajo construyendo el Grupo E era asegurar la supervivencia alimentaria. En regiones donde no hay estaciones tan marcadas por la nieve como en Europa, saber el momento exacto para sembrar antes del inicio de la temporada de huracanes y lluvias torrenciales marcaba la diferencia entre la abundancia y la hambruna.',
+        text: 'La principal razÃ³n prÃ¡ctica para gastar miles de horas de trabajo construyendo el Grupo E era asegurar la supervivencia alimentaria. En regiones donde no hay estaciones tan marcadas por la nieve como en Europa, saber el momento exacto para sembrar antes del inicio de la temporada de huracanes y lluvias torrenciales marcaba la diferencia entre la abundancia y la hambruna.',
       },
       {
-        label: 'Ilusión de Movimiento',
+        label: 'IlusiÃ³n de Movimiento',
         icon: 'clock',
-        text: 'Aunque decimos que "el sol se mueve por el horizonte", la ciencia nos dice que en realidad es la Tierra la que se inclina y orbita alrededor del sol a lo largo de un año. Los mayas medían con maestría el resultado visible de esta mecánica celeste, sin necesitar naves espaciales para saber que los ciclos celestes seguían patrones estrictamente matemáticos.',
+        text: 'Aunque decimos que "el sol se mueve por el horizonte", la ciencia nos dice que en realidad es la Tierra la que se inclina y orbita alrededor del sol a lo largo de un aÃ±o. Los mayas medÃ­an con maestrÃ­a el resultado visible de esta mecÃ¡nica celeste, sin necesitar naves espaciales para saber que los ciclos celestes seguÃ­an patrones estrictamente matemÃ¡ticos.',
       },
     ],
-    fact: 'Estudios recientes liderados por astrónomos y arqueólogos como Ivan Šprajc han demostrado que muchos Grupos E no solo marcaban los solsticios y equinoccios matemáticos exactos (21 de marzo, 21 de junio, etc.), sino que también marcaban "fechas clave" en cuartos del año agrario, correspondientes al 20 de febrero o el 30 de abril, días fundamentales para los ciclos tradicionales de lluvia en la región de Petén.',
+    fact: 'Estudios recientes liderados por astrÃ³nomos y arqueÃ³logos como Ivan Å prajc han demostrado que muchos Grupos E no solo marcaban los solsticios y equinoccios matemÃ¡ticos exactos (21 de marzo, 21 de junio, etc.), sino que tambiÃ©n marcaban "fechas clave" en cuartos del aÃ±o agrario, correspondientes al 20 de febrero o el 30 de abril, dÃ­as fundamentales para los ciclos tradicionales de lluvia en la regiÃ³n de PetÃ©n.',
   },
   {
     id: 'grupos-e-mundo-maya',
@@ -207,52 +207,52 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m13/btn_grupos-e-mundo-maya.jpg',
     image: '/assets/maya/infographic_m13/hero_grupos-e-mundo-maya.jpg',
     content: [
-      'Si inventaras la mejor y más increíble calculadora del mundo, pronto otros empezarían a hacer sus propias versiones. Eso es exactamente lo que ocurrió con los Grupos E de los mayas. Lo que comenzó como un modelo brillante en unas cuantas ciudades tempranas, se esparció como pólvora intelectual por todas las densas junglas de Mesoamérica. Los arqueólogos han descubierto más de 100 de estos complejos astronómicos estandarizados a lo largo de la historia de esta civilización.',
-      'Puedes encontrar ruinas de Grupos E desde las cálidas selvas del estado de Chiapas en México, cruzando por toda Guatemala, y llegando hasta los sitios arqueológicos ocultos de Belice. Todos mantienen la misma receta básica: una estructura de observación al lado poniente y una plataforma extendida al oriente. Es como si el diseño del Grupo E fuera el primer "código abierto" o franquicia tecnológica exitosa de toda la América prehispánica.',
-      'Curiosamente, con el paso de los siglos y el crecimiento de las dinastías mayas en el Período Clásico, el significado del Grupo E evolucionó. En ciudades enormes como Tikal o Caracol, construyeron variantes de Grupos E que ya no apuntaban perfectamente a los solsticios. ¿Por qué harían una calculadora que no sumara bien? Los arqueólogos creen que, con el tiempo, el diseño se volvió sagrado de forma simbólica.',
-      'Es decir, los Grupos E tardíos pasaron de ser observatorios científicos puros a convertirse en gigantescos escenarios para rituales políticos y religiosos. Se usaban para conectar a los reyes vivos con el poder mágico de la salida del sol, afirmando que los gobernantes podían controlar el tiempo mismo. Imagina usar un viejo reloj de bolsillo no para ver la hora, sino como un símbolo de la autoridad heredada de tu abuelo; así usaban los reyes clásicos el diseño del Grupo E.',
-      'El hecho de que tantas ciudades copiaran este modelo demuestra la tremenda interconexión que tenían los antiguos mayas. No eran poblados aislados y solitarios. Eran una red masiva de intelectuales, arquitectos y nobles que compartían planos maestros de urbanismo a través de cientos de kilómetros sin usar caballos, ruedas ni internet. La estandarización de los Grupos E prueba una increíble unidad cultural que abrazaba a millones de personas.',
+      'Si inventaras la mejor y mÃ¡s increÃ­ble calculadora del mundo, pronto otros empezarÃ­an a hacer sus propias versiones. Eso es exactamente lo que ocurriÃ³ con los Grupos E de los mayas. Lo que comenzÃ³ como un modelo brillante en unas cuantas ciudades tempranas, se esparciÃ³ como pÃ³lvora intelectual por todas las densas junglas de MesoamÃ©rica. Los arqueÃ³logos han descubierto mÃ¡s de 100 de estos complejos astronÃ³micos estandarizados a lo largo de la historia de esta civilizaciÃ³n.',
+      'Puedes encontrar ruinas de Grupos E desde las cÃ¡lidas selvas del estado de Chiapas en MÃ©xico, cruzando por toda Guatemala, y llegando hasta los sitios arqueolÃ³gicos ocultos de Belice. Todos mantienen la misma receta bÃ¡sica: una estructura de observaciÃ³n al lado poniente y una plataforma extendida al oriente. Es como si el diseÃ±o del Grupo E fuera el primer "cÃ³digo abierto" o franquicia tecnolÃ³gica exitosa de toda la AmÃ©rica prehispÃ¡nica.',
+      'Curiosamente, con el paso de los siglos y el crecimiento de las dinastÃ­as mayas en el PerÃ­odo ClÃ¡sico, el significado del Grupo E evolucionÃ³. En ciudades enormes como Tikal o Caracol, construyeron variantes de Grupos E que ya no apuntaban perfectamente a los solsticios. Â¿Por quÃ© harÃ­an una calculadora que no sumara bien? Los arqueÃ³logos creen que, con el tiempo, el diseÃ±o se volviÃ³ sagrado de forma simbÃ³lica.',
+      'Es decir, los Grupos E tardÃ­os pasaron de ser observatorios cientÃ­ficos puros a convertirse en gigantescos escenarios para rituales polÃ­ticos y religiosos. Se usaban para conectar a los reyes vivos con el poder mÃ¡gico de la salida del sol, afirmando que los gobernantes podÃ­an controlar el tiempo mismo. Imagina usar un viejo reloj de bolsillo no para ver la hora, sino como un sÃ­mbolo de la autoridad heredada de tu abuelo; asÃ­ usaban los reyes clÃ¡sicos el diseÃ±o del Grupo E.',
+      'El hecho de que tantas ciudades copiaran este modelo demuestra la tremenda interconexiÃ³n que tenÃ­an los antiguos mayas. No eran poblados aislados y solitarios. Eran una red masiva de intelectuales, arquitectos y nobles que compartÃ­an planos maestros de urbanismo a travÃ©s de cientos de kilÃ³metros sin usar caballos, ruedas ni internet. La estandarizaciÃ³n de los Grupos E prueba una increÃ­ble unidad cultural que abrazaba a millones de personas.',
     ],
     expandables: [
       {
-        label: 'Sitios Emblemáticos',
+        label: 'Sitios EmblemÃ¡ticos',
         icon: 'atom',
-        text: 'Además de Uaxactún y Ceibal, se han encontrado complejos de Grupo E impresionantes en grandes ciudades como Nakbé, El Mirador, Caracol, Cenote, y Yaxhá. Muchos de estos gigantes siguen sepultados bajo toneladas de raíces de la selva y tierra, esperando que la tecnología láser LIDAR moderna los saque a la luz desde el espacio.',
+        text: 'AdemÃ¡s de UaxactÃºn y Ceibal, se han encontrado complejos de Grupo E impresionantes en grandes ciudades como NakbÃ©, El Mirador, Caracol, Cenote, y YaxhÃ¡. Muchos de estos gigantes siguen sepultados bajo toneladas de raÃ­ces de la selva y tierra, esperando que la tecnologÃ­a lÃ¡ser LIDAR moderna los saque a la luz desde el espacio.',
       },
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'atom',
-        text: 'La estandarización en la arquitectura antigua no es común a menos que exista un fuerte sistema de creencias compartidas o un gobierno central que lo exija. El hecho de que cientos de reinos mayas independientes, que incluso se hacían la guerra entre ellos, acordaran construir los mismos complejos astronómicos es uno de los mayores misterios y maravillas de la arqueología.',
+        text: 'La estandarizaciÃ³n en la arquitectura antigua no es comÃºn a menos que exista un fuerte sistema de creencias compartidas o un gobierno central que lo exija. El hecho de que cientos de reinos mayas independientes, que incluso se hacÃ­an la guerra entre ellos, acordaran construir los mismos complejos astronÃ³micos es uno de los mayores misterios y maravillas de la arqueologÃ­a.',
       },
     ],
-    fact: 'Algunos de los descubrimientos modernos más sorprendentes se han dado en un sitio monumental recién descubierto en Tabasco, México, llamado Aguada Fénix. Datando de antes del 1000 a.C., presenta una plataforma artificial masiva orientada en el típico patrón este-oeste que antecede a los Grupos E y demuestra que la obsesión con las alineaciones solares y los espacios rituales es todavía más antigua de lo que creíamos.',
+    fact: 'Algunos de los descubrimientos modernos mÃ¡s sorprendentes se han dado en un sitio monumental reciÃ©n descubierto en Tabasco, MÃ©xico, llamado Aguada FÃ©nix. Datando de antes del 1000 a.C., presenta una plataforma artificial masiva orientada en el tÃ­pico patrÃ³n este-oeste que antecede a los Grupos E y demuestra que la obsesiÃ³n con las alineaciones solares y los espacios rituales es todavÃ­a mÃ¡s antigua de lo que creÃ­amos.',
   },
   {
     id: 'ceibal-mas-antiguo',
-    title: 'Ceibal: El Más Antiguo',
+    title: 'Ceibal: El MÃ¡s Antiguo',
     color: '#5D4037',
     btnImage: '/assets/maya/infographic_m13/btn_ceibal-mas-antiguo.jpg',
     image: '/assets/maya/infographic_m13/hero_ceibal-mas-antiguo.jpg',
     content: [
-      'Durante muchas décadas, todos los arqueólogos pensaban que Uaxactún era la madre de todos los Grupos E, el lugar de origen del invento. Sin embargo, la arqueología moderna y las fechas de radiocarbono llegaron a cambiar el libro de historia. Excavaciones recientes en la majestuosa ciudad de Ceibal, cerca del río La Pasión en Guatemala, descubrieron algo que dejó sin palabras al mundo académico internacional en el año 2013.',
-      'Los investigadores, cavando profundo debajo de las pirámides más recientes de Ceibal, encontraron evidencias de un pequeño complejo estilo Grupo E que data del año 1000 a 950 antes de Cristo. ¡Esto lo hace 200 años más antiguo que el famoso grupo de Uaxactún, e incluso más antiguo que centros olmecas como La Venta! Ceibal nos arrebató el aliento y reclamó la corona como la cuna conocida del observatorio solar.',
-      'Imagínate viajar a Ceibal en el año 950 a.C. No verías imponentes pirámides de piedra caliza y estuco, sino montículos humildes hechos con capas de tierra apisonada y arcilla, rematados con templos de madera y techos de palmas de guano. Y a pesar de que los materiales eran sencillos y humildes, la matemática astronómica de las alineaciones ya estaba allí. Las raíces de la ciencia maya comenzaron literalmente en el lodo y la tierra cruda.',
-      'Esto significa que la observación rigurosa del sol y la creación de una arquitectura estandarizada comenzó mucho antes de que los mayas empezaran a construir sus clásicas bóvedas de piedra o a tallar estelas gigantes con reyes y guerreros. La planificación de los cielos y los astros fue el primer gran proyecto comunitario de la sociedad maya, antes del arte sofisticado, antes del esplendor; el sol fue su primer maestro.',
-      'El descubrimiento de Ceibal sugiere que las ideas complejas sobre astronomía y organización social en Mesoamérica no se inventaron en un solo lugar y luego se repartieron (como pensábamos de la civilización Olmeca). Más bien, hubo una red de comunidades muy antiguas interactuando, innovando juntas, experimentando y creando estos arreglos arquitectónicos en grupo. El Grupo E no fue un invento de un día, sino la obra cumbre de generaciones de mentes brillantes.',
+      'Durante muchas dÃ©cadas, todos los arqueÃ³logos pensaban que UaxactÃºn era la madre de todos los Grupos E, el lugar de origen del invento. Sin embargo, la arqueologÃ­a moderna y las fechas de radiocarbono llegaron a cambiar el libro de historia. Excavaciones recientes en la majestuosa ciudad de Ceibal, cerca del rÃ­o La PasiÃ³n en Guatemala, descubrieron algo que dejÃ³ sin palabras al mundo acadÃ©mico internacional en el aÃ±o 2013.',
+      'Los investigadores, cavando profundo debajo de las pirÃ¡mides mÃ¡s recientes de Ceibal, encontraron evidencias de un pequeÃ±o complejo estilo Grupo E que data del aÃ±o 1000 a 950 antes de Cristo. Â¡Esto lo hace 200 aÃ±os mÃ¡s antiguo que el famoso grupo de UaxactÃºn, e incluso mÃ¡s antiguo que centros olmecas como La Venta! Ceibal nos arrebatÃ³ el aliento y reclamÃ³ la corona como la cuna conocida del observatorio solar.',
+      'ImagÃ­nate viajar a Ceibal en el aÃ±o 950 a.C. No verÃ­as imponentes pirÃ¡mides de piedra caliza y estuco, sino montÃ­culos humildes hechos con capas de tierra apisonada y arcilla, rematados con templos de madera y techos de palmas de guano. Y a pesar de que los materiales eran sencillos y humildes, la matemÃ¡tica astronÃ³mica de las alineaciones ya estaba allÃ­. Las raÃ­ces de la ciencia maya comenzaron literalmente en el lodo y la tierra cruda.',
+      'Esto significa que la observaciÃ³n rigurosa del sol y la creaciÃ³n de una arquitectura estandarizada comenzÃ³ mucho antes de que los mayas empezaran a construir sus clÃ¡sicas bÃ³vedas de piedra o a tallar estelas gigantes con reyes y guerreros. La planificaciÃ³n de los cielos y los astros fue el primer gran proyecto comunitario de la sociedad maya, antes del arte sofisticado, antes del esplendor; el sol fue su primer maestro.',
+      'El descubrimiento de Ceibal sugiere que las ideas complejas sobre astronomÃ­a y organizaciÃ³n social en MesoamÃ©rica no se inventaron en un solo lugar y luego se repartieron (como pensÃ¡bamos de la civilizaciÃ³n Olmeca). MÃ¡s bien, hubo una red de comunidades muy antiguas interactuando, innovando juntas, experimentando y creando estos arreglos arquitectÃ³nicos en grupo. El Grupo E no fue un invento de un dÃ­a, sino la obra cumbre de generaciones de mentes brillantes.',
     ],
     expandables: [
       {
         label: 'Cita en la Ciencia',
         icon: 'atom',
-        text: 'La investigación en Ceibal, liderada por el prestigioso arqueólogo Takeshi Inomata de la Universidad de Arizona, fue publicada en la revista "Science". El equipo realizó docenas de pozos profundos y decenas de dataciones de radiocarbono (Carbono 14) para probar más allá de toda duda que los orígenes del ceremonialismo maya eran increíblemente tempranos.',
+        text: 'La investigaciÃ³n en Ceibal, liderada por el prestigioso arqueÃ³logo Takeshi Inomata de la Universidad de Arizona, fue publicada en la revista "Science". El equipo realizÃ³ docenas de pozos profundos y decenas de dataciones de radiocarbono (Carbono 14) para probar mÃ¡s allÃ¡ de toda duda que los orÃ­genes del ceremonialismo maya eran increÃ­blemente tempranos.',
       },
       {
         label: 'De Tierra a Piedra',
         icon: 'clock',
-        text: 'La tradición arquitectónica en lugares como Ceibal nos muestra la evolución de la tecnología constructiva de los mayas. Comenzaron construyendo sus montañas sagradas artificiales usando toneladas de tierra compactada durante siglos, para luego aprender, mil años después, a revestir edificios masivos con impresionantes bloques de piedra cortada a la medida.',
+        text: 'La tradiciÃ³n arquitectÃ³nica en lugares como Ceibal nos muestra la evoluciÃ³n de la tecnologÃ­a constructiva de los mayas. Comenzaron construyendo sus montaÃ±as sagradas artificiales usando toneladas de tierra compactada durante siglos, para luego aprender, mil aÃ±os despuÃ©s, a revestir edificios masivos con impresionantes bloques de piedra cortada a la medida.',
       },
     ],
-    fact: 'En la plaza central temprana de Ceibal, frente a su incipiente Grupo E, los arqueólogos descubrieron hachas de jadeíta verde finamente pulidas que habían sido enterradas cuidadosamente en forma de cruz como ofrendas. El jade, más duro que el acero, tuvo que ser importado desde montañas muy lejanas en Guatemala, lo que demuestra la riqueza de este primer centro de estudios astronómicos.',
+    fact: 'En la plaza central temprana de Ceibal, frente a su incipiente Grupo E, los arqueÃ³logos descubrieron hachas de jadeÃ­ta verde finamente pulidas que habÃ­an sido enterradas cuidadosamente en forma de cruz como ofrendas. El jade, mÃ¡s duro que el acero, tuvo que ser importado desde montaÃ±as muy lejanas en Guatemala, lo que demuestra la riqueza de este primer centro de estudios astronÃ³micos.',
   },
   {
     id: 'legado-arquitectonico',
@@ -261,29 +261,29 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m13/btn_legado-arquitectonico.jpg',
     image: '/assets/maya/infographic_m13/hero_legado-arquitectonico.jpg',
     content: [
-      'Al estudiar los Grupos E como el de Uaxactún, los científicos modernos han llegado a una conclusión demoledora sobre la historia de América: los mayas no fueron solo los místicos de la selva descritos por las novelas, sino astrónomos rigurosos, sistemáticos e implacables desde sus orígenes más tempranos. Su arquitectura demuestra que poseían un pensamiento empírico ordenado que rivaliza con las matemáticas de los antiguos griegos o los sabios de Babilonia.',
-      'Piénsalo de esta manera: hoy construimos aceleradores de partículas de kilómetros de diámetro y mandamos el Telescopio James Webb al vacío espacial para entender los secretos del universo. Los constructores mayas, hace 3,000 años, construyeron enormes máquinas cívicas y plazas ceremoniales en medio de la densa jungla de caobas para comprender exactamente los mismos ritmos universales de la luz y el tiempo.',
-      'Su visión de la ciencia era única y hermosa porque nunca la separaron del arte, la comunidad y lo sagrado. Un Grupo E no era un edificio frío donde los científicos trabajaban a puerta cerrada. Era el corazón de la ciudad, un punto de encuentro masivo donde toda la sociedad veía materializarse la ciencia cósmica y la religión simultáneamente frente a sus propios ojos cada mañana de solsticio o equinoccio.',
-      'Incluso hoy en día, las tecnologías de punta como los sensores LIDAR aéreos (láseres que penetran el dosel de la selva) siguen revelando docenas de Grupos E ocultos a plena vista bajo grandes mantos verdes. Con cada nuevo montículo desenterrado, confirmamos la tremenda importancia de este diseño y entendemos que nuestro mapa de las súper ciudades preclásicas apenas está en sus primeras etapas de dibujo.',
-      'El legado del Grupo E perdurará siempre en el conocimiento humano. Nos recuerda que desde el principio de los tiempos, los seres humanos hemos levantado nuestra vista hacia las estrellas y el horizonte en un intento de medir lo infinito, de predecir el futuro de nuestras cosechas y, en última instancia, de encontrar nuestro pequeño, pero significado lugar bajo la gran bóveda del sol.',
+      'Al estudiar los Grupos E como el de UaxactÃºn, los cientÃ­ficos modernos han llegado a una conclusiÃ³n demoledora sobre la historia de AmÃ©rica: los mayas no fueron solo los mÃ­sticos de la selva descritos por las novelas, sino astrÃ³nomos rigurosos, sistemÃ¡ticos e implacables desde sus orÃ­genes mÃ¡s tempranos. Su arquitectura demuestra que poseÃ­an un pensamiento empÃ­rico ordenado que rivaliza con las matemÃ¡ticas de los antiguos griegos o los sabios de Babilonia.',
+      'PiÃ©nsalo de esta manera: hoy construimos aceleradores de partÃ­culas de kilÃ³metros de diÃ¡metro y mandamos el Telescopio James Webb al vacÃ­o espacial para entender los secretos del universo. Los constructores mayas, hace 3,000 aÃ±os, construyeron enormes mÃ¡quinas cÃ­vicas y plazas ceremoniales en medio de la densa jungla de caobas para comprender exactamente los mismos ritmos universales de la luz y el tiempo.',
+      'Su visiÃ³n de la ciencia era Ãºnica y hermosa porque nunca la separaron del arte, la comunidad y lo sagrado. Un Grupo E no era un edificio frÃ­o donde los cientÃ­ficos trabajaban a puerta cerrada. Era el corazÃ³n de la ciudad, un punto de encuentro masivo donde toda la sociedad veÃ­a materializarse la ciencia cÃ³smica y la religiÃ³n simultÃ¡neamente frente a sus propios ojos cada maÃ±ana de solsticio o equinoccio.',
+      'Incluso hoy en dÃ­a, las tecnologÃ­as de punta como los sensores LIDAR aÃ©reos (lÃ¡seres que penetran el dosel de la selva) siguen revelando docenas de Grupos E ocultos a plena vista bajo grandes mantos verdes. Con cada nuevo montÃ­culo desenterrado, confirmamos la tremenda importancia de este diseÃ±o y entendemos que nuestro mapa de las sÃºper ciudades preclÃ¡sicas apenas estÃ¡ en sus primeras etapas de dibujo.',
+      'El legado del Grupo E perdurarÃ¡ siempre en el conocimiento humano. Nos recuerda que desde el principio de los tiempos, los seres humanos hemos levantado nuestra vista hacia las estrellas y el horizonte en un intento de medir lo infinito, de predecir el futuro de nuestras cosechas y, en Ãºltima instancia, de encontrar nuestro pequeÃ±o, pero significado lugar bajo la gran bÃ³veda del sol.',
     ],
     expandables: [
       {
         label: 'Alineaciones Complejas',
         icon: 'clock',
-        text: 'Aunque empezamos llamándolos simples marcadores de solsticios y equinoccios, las últimas dos décadas de mediciones con tecnología láser (teodolitos y GPS precisos) en docenas de sitios han revelado que las alineaciones marcan también fechas críticas de la siembra y de eventos lunares complejos, demostrando una profundidad científica que sigue sorprendiéndonos.',
+        text: 'Aunque empezamos llamÃ¡ndolos simples marcadores de solsticios y equinoccios, las Ãºltimas dos dÃ©cadas de mediciones con tecnologÃ­a lÃ¡ser (teodolitos y GPS precisos) en docenas de sitios han revelado que las alineaciones marcan tambiÃ©n fechas crÃ­ticas de la siembra y de eventos lunares complejos, demostrando una profundidad cientÃ­fica que sigue sorprendiÃ©ndonos.',
       },
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'clock',
-        text: 'La inspiración de los observatorios astronómicos mayas ha trascendido siglos. Arquitectos y urbanistas contemporáneos en diversas partes de Latinoamérica a menudo integran ejes solares y alineaciones equinocciales en el diseño de nuevos parques, plazas y museos, pagando un tributo directo al ingenio mesoamericano prehispánico.',
+        text: 'La inspiraciÃ³n de los observatorios astronÃ³micos mayas ha trascendido siglos. Arquitectos y urbanistas contemporÃ¡neos en diversas partes de LatinoamÃ©rica a menudo integran ejes solares y alineaciones equinocciales en el diseÃ±o de nuevos parques, plazas y museos, pagando un tributo directo al ingenio mesoamericano prehispÃ¡nico.',
       },
     ],
-    fact: 'La gran paradoja que nos enseñan los Grupos E mayas es que para dominar la visión del cosmos estrellado, primero tuvieron que aprender a dominar la tierra sobre la cual se encontraban parados. Fueron maestros de la ingeniería, los rellenos constructivos, el uso de morteros de cal, y el cálculo de la refracción de luz; verdaderos titanes interdisciplinarios miles de años antes de que naciéramos nosotros.',
+    fact: 'La gran paradoja que nos enseÃ±an los Grupos E mayas es que para dominar la visiÃ³n del cosmos estrellado, primero tuvieron que aprender a dominar la tierra sobre la cual se encontraban parados. Fueron maestros de la ingenierÃ­a, los rellenos constructivos, el uso de morteros de cal, y el cÃ¡lculo de la refracciÃ³n de luz; verdaderos titanes interdisciplinarios miles de aÃ±os antes de que naciÃ©ramos nosotros.',
   },
 ];
 
-// ─── Temporal Particle Field (Canvas Background) ──────────────────────────────
+// â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TemporalField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -327,7 +327,7 @@ function TemporalField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Maya Header ──────────────────────────────────────────────────────
+// â”€â”€â”€ Maya Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function MayaHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-10px' }}>
@@ -357,14 +357,14 @@ function MayaHeader() {
             <stop offset="100%" stopColor="rgba(255,143,0,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#FF8F00" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">UAXACTÚN</text>
+        <text x="300" y="80" textAnchor="middle" fill="#FF8F00" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">UAXACTÃšN</text>
         <text x="300" y="100" textAnchor="middle" fill="rgba(255,143,0,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">GRUPO E: EL OBSERVATORIO SOLAR</text>
       </svg>
     </div>
   );
 }
 
-// ─── Organic Node Button ───────────────────────────────────────────────────
+// â”€â”€â”€ Organic Node Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -399,7 +399,7 @@ function NodeButton({ node, isActive, onClick, index }) {
         position: 'relative',
       }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
         {isActive && (
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
@@ -444,7 +444,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Expandable Section with Random Direction ────────────────────────────────
+// â”€â”€â”€ Expandable Section with Random Direction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DIRECTIONS = ['up', 'down', 'left', 'right'];
 const dirVariants = {
   up:    { hidden: { y: -30, opacity: 0 }, visible: { y: 0, opacity: 1 } },
@@ -533,7 +533,7 @@ function ExpandableSection({ item, color }) {
   );
 }
 
-// ─── Magazine-Style Content Panel ────────────────────────────────────────────
+// â”€â”€â”€ Magazine-Style Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
@@ -570,7 +570,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={18} />
       </button>
 
-      {/* ─── Two-Column Hero Section ─── */}
+      {/* â”€â”€â”€ Two-Column Hero Section â”€â”€â”€ */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -615,7 +615,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
             </span>
             {node.title}
           </h3>
@@ -631,7 +631,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── Magazine Body ─── */}
+      {/* â”€â”€â”€ Magazine Body â”€â”€â”€ */}
       <div style={{
         padding: '1.5rem 2rem 2rem',
         position: 'relative',
@@ -683,7 +683,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
                 }}>
-                  {i === 0 ? '◆' : '◇'}
+                  {i === 0 ? 'â—†' : 'â—‡'}
                 </div>
                 <p style={{
                   margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
@@ -696,7 +696,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* ─── Expandable Interactive Sections ─── */}
+        {/* â”€â”€â”€ Expandable Interactive Sections â”€â”€â”€ */}
         {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '2rem', position: 'relative', zIndex: 2 }}>
             <h4 style={{
@@ -713,7 +713,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {/* ─── Highlight Fact ─── */}
+        {/* â”€â”€â”€ Highlight Fact â”€â”€â”€ */}
         <div style={{
           marginTop: '2rem',
           background: `linear-gradient(90deg, ${node.color}20, transparent)`,
@@ -738,7 +738,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ nodes, exploredIds }) {
   const progress = (exploredIds.size / nodes.length) * 100;
   
@@ -762,7 +762,7 @@ function ProgressBar({ nodes, exploredIds }) {
   );
 }
 
-// ─── Main Component ──────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographicMayaM13() {
   const [activeNode, setActiveNode] = useState(null);
   const [explored, setExplored] = useState(new Set());

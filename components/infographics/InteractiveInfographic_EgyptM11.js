@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
 
 import ImageLightbox from './ImageLightbox';
-// ─── SVG Decorative Elements (inline, no external images needed) ─────────────
+// â”€â”€â”€ SVG Decorative Elements (inline, no external images needed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function DecoAnkh({ size = 60, color = '#E8C96A', style = {} }) {
   return (
     <svg width={size} height={size * 1.4} viewBox="0 0 40 56" style={{ opacity: 0.25, ...style }}>
@@ -118,24 +118,24 @@ const BIBLIOGRAPHY = [
   'Wells, R.A. (1996). Astronomy in Egypt, Astronomy Before the Telescope, British Museum Press'
 ];
 
-// ─── Content Data ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const INFOGRAPHIC_NODES = [
   {
     id: 'nut',
-    title: '¿Quién es Nut?',
+    title: 'Â¿QuiÃ©n es Nut?',
     color: '#C4A7E7',
     btnImage: '/assets/egypt/infographic/btn_nut.png',
     image: '/assets/egypt/infographic/nut_goddess.png',
     content: [
-      'Imagina que pudieras ver a una persona gigante estirándose de un lado al otro del cielo. ¡Así veían los antiguos egipcios a Nut (se pronuncia "Nut"), la diosa del cielo! En la cosmología egipcia, Nut era una de las deidades más antiguas, hija de Shu (dios del aire) y Tefnut (diosa de la humedad).',
-      'Los egipcios imaginaban a Nut como una mujer enorme que se arqueaba sobre la Tierra con la espalda formando la bóveda celeste. Sus dedos de los pies tocaban el horizonte oriental y sus manos el horizonte occidental. Debajo de ella estaba Geb, el dios de la Tierra, su esposo, tendido boca arriba.',
-      'Las estrellas eran joyas brillantes pintadas en su piel. Cada noche, Nut se tragaba al Sol (Ra) por el oeste al atardecer. Ra viajaba dentro de su cuerpo durante toda la noche, navegando por un río subterráneo, y al amanecer Nut lo daba a luz de nuevo por el este.',
-      'El Libro de Nut, un texto astronómico egipcio del siglo XIII a.C., describe cómo las estrellas también eran tragadas por Nut al amanecer y renacían al anochecer. Los astrónomos egipcios llamaron "estrellas imperecederas" a las circumpolares (que nunca se ocultan) y "estrellas infatigables" a los planetas.',
-      'Los techos de las tumbas reales en el Valle de los Reyes están decorados con el cuerpo azul de Nut cubierto de estrellas doradas. El sarcófago de Ramsés VI (KV9) tiene una de las representaciones más completas.',
-      'Además, los arqueoastrónomos como J.P. Allen han estudiado a fondo los Textos de las Pirámides, donde Nut no es solo una figura poética, sino un mapa celeste codificado. Su cuerpo delimitaba las trayectorias de los astros que los sacerdotes egipcios observaban noche tras noche desde los techos de sus templos, utilizándola como la primera cuadrícula de coordenadas astronómicas de la historia.',
-      'En la fascinante cosmovisión egipcia, el cielo nocturno y el cuerpo de Nut eran uno solo. Según el investigador E.C. Krupp, los sacerdotes usaban instrumentos como el "merkhet" (una antigua herramienta de observación) para medir el tránsito de las estrellas a lo largo de la "espalda" de la diosa, permitiéndoles marcar con precisión las horas de la noche y planificar rituales importantes en completa sincronía con el cosmos.',
+      'Imagina que pudieras ver a una persona gigante estirÃ¡ndose de un lado al otro del cielo. Â¡AsÃ­ veÃ­an los antiguos egipcios a Nut (se pronuncia "Nut"), la diosa del cielo! En la cosmologÃ­a egipcia, Nut era una de las deidades mÃ¡s antiguas, hija de Shu (dios del aire) y Tefnut (diosa de la humedad).',
+      'Los egipcios imaginaban a Nut como una mujer enorme que se arqueaba sobre la Tierra con la espalda formando la bÃ³veda celeste. Sus dedos de los pies tocaban el horizonte oriental y sus manos el horizonte occidental. Debajo de ella estaba Geb, el dios de la Tierra, su esposo, tendido boca arriba.',
+      'Las estrellas eran joyas brillantes pintadas en su piel. Cada noche, Nut se tragaba al Sol (Ra) por el oeste al atardecer. Ra viajaba dentro de su cuerpo durante toda la noche, navegando por un rÃ­o subterrÃ¡neo, y al amanecer Nut lo daba a luz de nuevo por el este.',
+      'El Libro de Nut, un texto astronÃ³mico egipcio del siglo XIII a.C., describe cÃ³mo las estrellas tambiÃ©n eran tragadas por Nut al amanecer y renacÃ­an al anochecer. Los astrÃ³nomos egipcios llamaron "estrellas imperecederas" a las circumpolares (que nunca se ocultan) y "estrellas infatigables" a los planetas.',
+      'Los techos de las tumbas reales en el Valle de los Reyes estÃ¡n decorados con el cuerpo azul de Nut cubierto de estrellas doradas. El sarcÃ³fago de RamsÃ©s VI (KV9) tiene una de las representaciones mÃ¡s completas.',
+      'AdemÃ¡s, los arqueoastrÃ³nomos como J.P. Allen han estudiado a fondo los Textos de las PirÃ¡mides, donde Nut no es solo una figura poÃ©tica, sino un mapa celeste codificado. Su cuerpo delimitaba las trayectorias de los astros que los sacerdotes egipcios observaban noche tras noche desde los techos de sus templos, utilizÃ¡ndola como la primera cuadrÃ­cula de coordenadas astronÃ³micas de la historia.',
+      'En la fascinante cosmovisiÃ³n egipcia, el cielo nocturno y el cuerpo de Nut eran uno solo. SegÃºn el investigador E.C. Krupp, los sacerdotes usaban instrumentos como el "merkhet" (una antigua herramienta de observaciÃ³n) para medir el trÃ¡nsito de las estrellas a lo largo de la "espalda" de la diosa, permitiÃ©ndoles marcar con precisiÃ³n las horas de la noche y planificar rituales importantes en completa sincronÃ­a con el cosmos.',
     ],
-    fact: '¿Sabías que...? Los egipcios dividieron la noche en 12 horas usando 36 "decanes" — grupos de estrellas que se levantaban en el horizonte cada 10 días. Este sistema decanal es el origen de nuestra semana de 7 días.',
+    fact: 'Â¿SabÃ­as que...? Los egipcios dividieron la noche en 12 horas usando 36 "decanes" â€” grupos de estrellas que se levantaban en el horizonte cada 10 dÃ­as. Este sistema decanal es el origen de nuestra semana de 7 dÃ­as.',
   },
   {
     id: 'nilo-cielo',
@@ -144,15 +144,15 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic/btn_nile.png',
     image: '/assets/egypt/infographic/nile_milkyway.png',
     content: [
-      '¿Has visto alguna vez la Vía Láctea en una noche sin luces de ciudad? Es una franja de luz blanquecina que cruza todo el cielo, compuesta por cientos de miles de millones de estrellas tan lejanas que su luz se funde en un río luminoso.',
-      'Los egipcios la veían con una claridad impresionante porque vivían en el desierto del Sahara, donde la contaminación lumínica era inexistente. Para ellos, esa franja brillante era un río cósmico: ¡el reflejo del Nilo en el cielo!',
-      'El Nilo era literalmente la arteria vital de Egipto. Sin él, toda la civilización habría sido imposible: proporcionaba agua potable, irrigación para los cultivos, transporte, y sus inundaciones anuales depositaban limo fértil.',
-      'Investigaciones de Or Graur (2022, Journal of Astronomical History and Heritage) sugieren que los egipcios establecieron esta conexión conscientemente: la Vía Láctea en el solsticio de verano corría casi paralela al Nilo.',
-      'La crecida anual del Nilo comenzaba en julio, justo cuando Sirio — la estrella más brillante del cielo — aparecía por primera vez antes del amanecer (orto helíaco). Los egipcios veían este evento como la señal cósmica de que el Nilo celestial derramaba sus aguas.',
-      'Al observar este resplandeciente Nilo cósmico, los antiguos egipcios creían fervientemente que su Nilo terrenal nacía directamente de sus aguas estelares. Estudios arqueoastronómicos liderados por el Dr. R.A. Wells indican que la orientación de muchos canales de irrigación antiguos y monumentos menores seguía la inclinación de la Vía Láctea durante la temporada de siembra, buscando bendecir sus cultivos.',
-      'Esta conexión era tan profunda que los faraones construían barcos solares, como el impresionante barco de Keops encontrado junto a la Gran Pirámide, diseñados específicamente para navegar por estas aguas celestiales después de la vida. Para la mentalidad de la época, el cielo no era un lugar vacío y abstracto, sino un paisaje físico, húmedo y navegable donde las estrellas eran islas de luz y la Vía Láctea la corriente principal.',
+      'Â¿Has visto alguna vez la VÃ­a LÃ¡ctea en una noche sin luces de ciudad? Es una franja de luz blanquecina que cruza todo el cielo, compuesta por cientos de miles de millones de estrellas tan lejanas que su luz se funde en un rÃ­o luminoso.',
+      'Los egipcios la veÃ­an con una claridad impresionante porque vivÃ­an en el desierto del Sahara, donde la contaminaciÃ³n lumÃ­nica era inexistente. Para ellos, esa franja brillante era un rÃ­o cÃ³smico: Â¡el reflejo del Nilo en el cielo!',
+      'El Nilo era literalmente la arteria vital de Egipto. Sin Ã©l, toda la civilizaciÃ³n habrÃ­a sido imposible: proporcionaba agua potable, irrigaciÃ³n para los cultivos, transporte, y sus inundaciones anuales depositaban limo fÃ©rtil.',
+      'Investigaciones de Or Graur (2022, Journal of Astronomical History and Heritage) sugieren que los egipcios establecieron esta conexiÃ³n conscientemente: la VÃ­a LÃ¡ctea en el solsticio de verano corrÃ­a casi paralela al Nilo.',
+      'La crecida anual del Nilo comenzaba en julio, justo cuando Sirio â€” la estrella mÃ¡s brillante del cielo â€” aparecÃ­a por primera vez antes del amanecer (orto helÃ­aco). Los egipcios veÃ­an este evento como la seÃ±al cÃ³smica de que el Nilo celestial derramaba sus aguas.',
+      'Al observar este resplandeciente Nilo cÃ³smico, los antiguos egipcios creÃ­an fervientemente que su Nilo terrenal nacÃ­a directamente de sus aguas estelares. Estudios arqueoastronÃ³micos liderados por el Dr. R.A. Wells indican que la orientaciÃ³n de muchos canales de irrigaciÃ³n antiguos y monumentos menores seguÃ­a la inclinaciÃ³n de la VÃ­a LÃ¡ctea durante la temporada de siembra, buscando bendecir sus cultivos.',
+      'Esta conexiÃ³n era tan profunda que los faraones construÃ­an barcos solares, como el impresionante barco de Keops encontrado junto a la Gran PirÃ¡mide, diseÃ±ados especÃ­ficamente para navegar por estas aguas celestiales despuÃ©s de la vida. Para la mentalidad de la Ã©poca, el cielo no era un lugar vacÃ­o y abstracto, sino un paisaje fÃ­sico, hÃºmedo y navegable donde las estrellas eran islas de luz y la VÃ­a LÃ¡ctea la corriente principal.',
     ],
-    fact: 'Los astrónomos del antiguo Egipto crearon el primer calendario solar de 365 días basándose en el orto helíaco de Sirio. Julio César lo adoptó como base para el calendario juliano en el 46 a.C., ¡y es el ancestro de nuestro calendario actual!',
+    fact: 'Los astrÃ³nomos del antiguo Egipto crearon el primer calendario solar de 365 dÃ­as basÃ¡ndose en el orto helÃ­aco de Sirio. Julio CÃ©sar lo adoptÃ³ como base para el calendario juliano en el 46 a.C., Â¡y es el ancestro de nuestro calendario actual!',
   },
   {
     id: 'arriba-abajo',
@@ -161,32 +161,32 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic/btn_above.png',
     image: '/assets/egypt/infographic/as_above_below.png',
     content: [
-      'Los egipcios tenían un principio filosófico profundo: lo que ocurre en el cielo es un reflejo de lo que sucede en la Tierra. El cosmos y la Tierra son espejos el uno del otro.',
-      'Este concepto, conocido como el principio hermético "Como es arriba, es abajo" (atribuido a Hermes Trismegisto, fusión del dios egipcio Thot con Hermes griego), establecía que el macrocosmos y el microcosmos están conectados por las mismas leyes.',
-      'En la práctica, los egipcios construían templos alineados con precisión astronómica. El templo de Abu Simbel está diseñado para que los rayos del Sol penetren hasta el fondo solo dos veces al año: el 22 de febrero y el 22 de octubre.',
-      'Los astrónomos modernos han confirmado con GPS y LiDAR que la alineación astronómica de los templos egipcios es extraordinariamente precisa — con errores de menos de 0.5 grados.',
-      'En la ciencia moderna, este concepto tiene un eco sorprendente: los mismos elementos que forman nuestro cuerpo fueron forjados en el interior de estrellas hace miles de millones de años. Como dijo Carl Sagan: "Somos materia estelar."',
-      'Esta idea de reflejar el cielo en la Tierra no era solo poesía, ¡era alta ingeniería! El profesor H. Frankfort en su obra "Kingship and the Gods" explica cómo la fundación de cualquier templo egipcio comenzaba con el ritual de "tensar la cuerda". En esta ceremonia, el faraón, con la ayuda de la diosa del cielo estrellado Seshat, alineaba los cimientos del templo con estrellas específicas de la constelación de la Osa Mayor, a la que llamaban la "Pierna de Toro".',
-      'Esta búsqueda incansable por armonizar las construcciones humanas con el universo visible demuestra que los egipcios poseían conocimientos matemáticos y astronómicos sumamente avanzados. Hoy en día, la física cuántica y la astrofísica también nos enseñan que las leyes fundamentales que rigen el comportamiento de las partículas diminutas en nuestro cuerpo son exactamente las mismas que dictan la danza de las galaxias gigantescas en el universo.',
+      'Los egipcios tenÃ­an un principio filosÃ³fico profundo: lo que ocurre en el cielo es un reflejo de lo que sucede en la Tierra. El cosmos y la Tierra son espejos el uno del otro.',
+      'Este concepto, conocido como el principio hermÃ©tico "Como es arriba, es abajo" (atribuido a Hermes Trismegisto, fusiÃ³n del dios egipcio Thot con Hermes griego), establecÃ­a que el macrocosmos y el microcosmos estÃ¡n conectados por las mismas leyes.',
+      'En la prÃ¡ctica, los egipcios construÃ­an templos alineados con precisiÃ³n astronÃ³mica. El templo de Abu Simbel estÃ¡ diseÃ±ado para que los rayos del Sol penetren hasta el fondo solo dos veces al aÃ±o: el 22 de febrero y el 22 de octubre.',
+      'Los astrÃ³nomos modernos han confirmado con GPS y LiDAR que la alineaciÃ³n astronÃ³mica de los templos egipcios es extraordinariamente precisa â€” con errores de menos de 0.5 grados.',
+      'En la ciencia moderna, este concepto tiene un eco sorprendente: los mismos elementos que forman nuestro cuerpo fueron forjados en el interior de estrellas hace miles de millones de aÃ±os. Como dijo Carl Sagan: "Somos materia estelar."',
+      'Esta idea de reflejar el cielo en la Tierra no era solo poesÃ­a, Â¡era alta ingenierÃ­a! El profesor H. Frankfort en su obra "Kingship and the Gods" explica cÃ³mo la fundaciÃ³n de cualquier templo egipcio comenzaba con el ritual de "tensar la cuerda". En esta ceremonia, el faraÃ³n, con la ayuda de la diosa del cielo estrellado Seshat, alineaba los cimientos del templo con estrellas especÃ­ficas de la constelaciÃ³n de la Osa Mayor, a la que llamaban la "Pierna de Toro".',
+      'Esta bÃºsqueda incansable por armonizar las construcciones humanas con el universo visible demuestra que los egipcios poseÃ­an conocimientos matemÃ¡ticos y astronÃ³micos sumamente avanzados. Hoy en dÃ­a, la fÃ­sica cuÃ¡ntica y la astrofÃ­sica tambiÃ©n nos enseÃ±an que las leyes fundamentales que rigen el comportamiento de las partÃ­culas diminutas en nuestro cuerpo son exactamente las mismas que dictan la danza de las galaxias gigantescas en el universo.',
     ],
-    fact: 'El Gran Templo de Abu Simbel ilumina las estatuas interiores (a 60m de profundidad) exactamente los días 22 de febrero y 22 de octubre. Cuando fue reubicado en 1968 por la presa de Asuán, los ingenieros lograron mantener esta alineación con solo un día de diferencia.',
+    fact: 'El Gran Templo de Abu Simbel ilumina las estatuas interiores (a 60m de profundidad) exactamente los dÃ­as 22 de febrero y 22 de octubre. Cuando fue reubicado en 1968 por la presa de AsuÃ¡n, los ingenieros lograron mantener esta alineaciÃ³n con solo un dÃ­a de diferencia.',
   },
   {
     id: 'orion-piramides',
-    title: 'Orión y las Pirámides',
+    title: 'OriÃ³n y las PirÃ¡mides',
     color: '#E8C96A',
     btnImage: '/assets/egypt/infographic/btn_pyramids.png',
     image: '/assets/egypt/infographic/pyramids_orion.png',
     content: [
-      'Las tres grandes pirámides de Guiza — Keops (146m), Kefrén (143m) y Micerinos (65m) — fueron construidas durante la IV Dinastía (c. 2580-2510 a.C.) y son las únicas de las Siete Maravillas del Mundo Antiguo que sobreviven.',
-      'Robert Bauval (1994) observó que las tres pirámides están dispuestas de forma similar a las tres estrellas del Cinturón de Orión: Alnitak, Alnilam y Mintaka. Incluso la ligera desviación de Micerinos corresponde al desplazamiento de Mintaka.',
-      'Es importante el pensamiento crítico: astrónomos como Ed Krupp (Observatorio Griffith) han señalado que la correlación no es perfecta y hay otras explicaciones para la disposición.',
-      'Lo que SÍ sabemos con certeza es que los egipcios conocían Orión. La llamaban "Sah" y la asociaban con Osiris. Los conductos de la Gran Pirámide apuntaban hacia Orión y hacia Thuban (estrella polar del 2500 a.C.).',
-      'Virginia Trimble (1964, Mitteilungen des Instituts für Orientforschung) calculó estas alineaciones con precisión, demostrando la intencionalidad astronómica de los constructores.',
-      'Las investigaciones arqueoastronómicas han desatado debates apasionantes sobre cuánto sabían los egipcios de las constelaciones modernas. Mientras que la teoría de la correlación de Orión sigue siendo popular, el experto J.P. Allen sugiere que la alineación de las pirámides podría reflejar el viaje de las almas hacia el norte polar, en lugar de una constelación del sur, destacando la inmensa complejidad de su astronomía observacional.',
-      'Independientemente de la interpretación exacta, la precisión monumental de Guiza sigue asombrando al mundo. Los constructores lograron nivelar la base de la Gran Pirámide con un margen de error menor a 2 centímetros. Esta obsesión por la exactitud milimétrica no era solo para demostrar poder arquitectónico, sino para asegurar que el faraón pudiera ser catapultado hacia el reino estelar de Sah con precisión matemática garantizada.',
+      'Las tres grandes pirÃ¡mides de Guiza â€” Keops (146m), KefrÃ©n (143m) y Micerinos (65m) â€” fueron construidas durante la IV DinastÃ­a (c. 2580-2510 a.C.) y son las Ãºnicas de las Siete Maravillas del Mundo Antiguo que sobreviven.',
+      'Robert Bauval (1994) observÃ³ que las tres pirÃ¡mides estÃ¡n dispuestas de forma similar a las tres estrellas del CinturÃ³n de OriÃ³n: Alnitak, Alnilam y Mintaka. Incluso la ligera desviaciÃ³n de Micerinos corresponde al desplazamiento de Mintaka.',
+      'Es importante el pensamiento crÃ­tico: astrÃ³nomos como Ed Krupp (Observatorio Griffith) han seÃ±alado que la correlaciÃ³n no es perfecta y hay otras explicaciones para la disposiciÃ³n.',
+      'Lo que SÃ sabemos con certeza es que los egipcios conocÃ­an OriÃ³n. La llamaban "Sah" y la asociaban con Osiris. Los conductos de la Gran PirÃ¡mide apuntaban hacia OriÃ³n y hacia Thuban (estrella polar del 2500 a.C.).',
+      'Virginia Trimble (1964, Mitteilungen des Instituts fÃ¼r Orientforschung) calculÃ³ estas alineaciones con precisiÃ³n, demostrando la intencionalidad astronÃ³mica de los constructores.',
+      'Las investigaciones arqueoastronÃ³micas han desatado debates apasionantes sobre cuÃ¡nto sabÃ­an los egipcios de las constelaciones modernas. Mientras que la teorÃ­a de la correlaciÃ³n de OriÃ³n sigue siendo popular, el experto J.P. Allen sugiere que la alineaciÃ³n de las pirÃ¡mides podrÃ­a reflejar el viaje de las almas hacia el norte polar, en lugar de una constelaciÃ³n del sur, destacando la inmensa complejidad de su astronomÃ­a observacional.',
+      'Independientemente de la interpretaciÃ³n exacta, la precisiÃ³n monumental de Guiza sigue asombrando al mundo. Los constructores lograron nivelar la base de la Gran PirÃ¡mide con un margen de error menor a 2 centÃ­metros. Esta obsesiÃ³n por la exactitud milimÃ©trica no era solo para demostrar poder arquitectÃ³nico, sino para asegurar que el faraÃ³n pudiera ser catapultado hacia el reino estelar de Sah con precisiÃ³n matemÃ¡tica garantizada.',
     ],
-    fact: 'Los shafts de la Gran Pirámide no eran para ventilación: el shaft sur de la Cámara del Rey apuntaba a Alnitak (Orión/Osiris) y el shaft norte a Thuban (la estrella polar del 2500 a.C.).',
+    fact: 'Los shafts de la Gran PirÃ¡mide no eran para ventilaciÃ³n: el shaft sur de la CÃ¡mara del Rey apuntaba a Alnitak (OriÃ³n/Osiris) y el shaft norte a Thuban (la estrella polar del 2500 a.C.).',
   },
   {
     id: 'sagitario',
@@ -195,70 +195,70 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic/btn_blackhole.png',
     image: '/assets/egypt/infographic/sagittarius_blackhole.png',
     content: [
-      'En la dirección de la constelación de Sagitario se esconde algo verdaderamente monstruoso: un agujero negro supermasivo llamado Sagitario A* — con la masa de 4.15 millones de soles comprimida en un espacio más pequeño que la órbita de Mercurio.',
-      'En 2020, Reinhard Genzel y Andrea Ghez ganaron el Premio Nobel de Física por demostrar su existencia. Durante más de 20 años, rastrearon la estrella S2, que orbita Sagitario A* a velocidades de hasta 25,000 km/s (¡8% de la velocidad de la luz!).',
-      'En mayo de 2022, el proyecto Event Horizon Telescope reveló la primera imagen directa de Sagitario A*: un anillo de gas caliente brillante rodeando una sombra oscura. Se sincronizaron 8 radiotelescopios alrededor del mundo.',
-      'Los egipcios no sabían de agujeros negros, pero su mitología contenía una metáfora increíble: Apofis, la serpiente del caos, habitaba en las tinieblas e intentaba devorar al Sol cada noche.',
-      'Si un agujero negro "devora" la luz, ¿no es Apofis la metáfora perfecta de Sagitario A*? La ciencia moderna a veces confirma las intuiciones de las antiguas culturas de maneras inesperadas.',
-      'Lo fascinante es cómo la mitología de Apofis coincide temáticamente con lo que hoy sabemos de los agujeros negros. Apofis era la nada, el vacío primordial que amenazaba con devorar la luz, la materia y el orden del universo (el "Maat" egipcio). De manera sorprendentemente similar, el agujero negro de nuestra galaxia, Sagitario A*, ejerce una gravedad tan monstruosa que nada, ni siquiera la luz, puede escapar si cruza su horizonte de eventos.',
-      'Los científicos modernos, utilizando interferometría de muy larga base que conecta radiotelescopios en toda la Tierra, han mapeado los turbulentos vientos magnéticos y las voraces corrientes de gas supercalentado que caen en espiral hacia Sagitario A*. Es como si la astronomía moderna hubiera fotografiado al monstruo cósmico que los sacerdotes egipcios imaginaban escondido en la oscuridad, acechando la frágil luz de las estrellas.',
+      'En la direcciÃ³n de la constelaciÃ³n de Sagitario se esconde algo verdaderamente monstruoso: un agujero negro supermasivo llamado Sagitario A* â€” con la masa de 4.15 millones de soles comprimida en un espacio mÃ¡s pequeÃ±o que la Ã³rbita de Mercurio.',
+      'En 2020, Reinhard Genzel y Andrea Ghez ganaron el Premio Nobel de FÃ­sica por demostrar su existencia. Durante mÃ¡s de 20 aÃ±os, rastrearon la estrella S2, que orbita Sagitario A* a velocidades de hasta 25,000 km/s (Â¡8% de la velocidad de la luz!).',
+      'En mayo de 2022, el proyecto Event Horizon Telescope revelÃ³ la primera imagen directa de Sagitario A*: un anillo de gas caliente brillante rodeando una sombra oscura. Se sincronizaron 8 radiotelescopios alrededor del mundo.',
+      'Los egipcios no sabÃ­an de agujeros negros, pero su mitologÃ­a contenÃ­a una metÃ¡fora increÃ­ble: Apofis, la serpiente del caos, habitaba en las tinieblas e intentaba devorar al Sol cada noche.',
+      'Si un agujero negro "devora" la luz, Â¿no es Apofis la metÃ¡fora perfecta de Sagitario A*? La ciencia moderna a veces confirma las intuiciones de las antiguas culturas de maneras inesperadas.',
+      'Lo fascinante es cÃ³mo la mitologÃ­a de Apofis coincide temÃ¡ticamente con lo que hoy sabemos de los agujeros negros. Apofis era la nada, el vacÃ­o primordial que amenazaba con devorar la luz, la materia y el orden del universo (el "Maat" egipcio). De manera sorprendentemente similar, el agujero negro de nuestra galaxia, Sagitario A*, ejerce una gravedad tan monstruosa que nada, ni siquiera la luz, puede escapar si cruza su horizonte de eventos.',
+      'Los cientÃ­ficos modernos, utilizando interferometrÃ­a de muy larga base que conecta radiotelescopios en toda la Tierra, han mapeado los turbulentos vientos magnÃ©ticos y las voraces corrientes de gas supercalentado que caen en espiral hacia Sagitario A*. Es como si la astronomÃ­a moderna hubiera fotografiado al monstruo cÃ³smico que los sacerdotes egipcios imaginaban escondido en la oscuridad, acechando la frÃ¡gil luz de las estrellas.',
     ],
-    fact: 'Andrea Ghez (Nobel 2020) es solo la cuarta mujer en ganar el Nobel de Física en toda la historia. La órbita de S2 también confirmó la relatividad general de Einstein al detectar el corrimiento al rojo gravitacional.',
+    fact: 'Andrea Ghez (Nobel 2020) es solo la cuarta mujer en ganar el Nobel de FÃ­sica en toda la historia. La Ã³rbita de S2 tambiÃ©n confirmÃ³ la relatividad general de Einstein al detectar el corrimiento al rojo gravitacional.',
   },
   {
     id: 'viaje-faraon',
-    title: 'El Viaje del Faraón',
+    title: 'El Viaje del FaraÃ³n',
     color: '#F5A623',
     btnImage: '/assets/egypt/infographic/btn_pharaoh.png',
     image: '/assets/egypt/infographic/pharaoh_stars.png',
     content: [
-      'Los "Textos de las Pirámides" son los escritos religiosos más antiguos del mundo, grabados en la pirámide de Unas (c. 2345 a.C.) con más de 800 declaraciones mágicas que describen el viaje del alma del faraón hacia las estrellas.',
-      '"Oh Rey, eres esta gran estrella, compañera de Orión, que atraviesa el cielo con Orión, que navega el Duat con Osiris" (Utterance 466). Las declaraciones son instrucciones de navegación cósmica.',
-      'El Duat era el inframundo egipcio situado en la zona de Orión y Sirio. El faraón cruzaba el "Campo de Juncos" (Sekhet-Aaru), una versión celestial de los fértiles campos del delta del Nilo.',
-      'La reina era identificada con Isis, cuya forma estelar era Sirio — la estrella más brillante. Sirio aparece junto a Orión: el amor eterno entre Osiris e Isis reunidos entre las estrellas.',
-      'El faraón viajaba en la "Barca de Millones de Años" (la Vía Láctea) y se convertía en un akh — un ser luminoso, literalmente una estrella.',
-      'La meticulosa atención de los antiguos egipcios a las estrellas se basaba en la creencia de que el cosmos era una máquina viviente y divina. Según el célebre egiptólogo H. Frankfort, el faraón no solo viajaba hacia las estrellas, sino que se convertía en el motor cósmico que mantenía el universo en movimiento. Los jeroglíficos detallan encantamientos precisos que el rey debía pronunciar para abrir los "portales del cielo" guardados por guardianes estelares.',
-      'Para orientarse en esta geografía celestial, los sacerdotes crearon sofisticados mapas estelares que plasmaban en el interior de los sarcófagos de madera del Imperio Medio. Estos mapas, conocidos como relojes estelares diagonales, son de los diagramas celestes más antiguos de la humanidad. Combinaban la función de reloj nocturno con una guía espiritual, asegurando que el alma no se perdiera en la inmensidad del Duat y alcanzara el cinturón de Orión.',
+      'Los "Textos de las PirÃ¡mides" son los escritos religiosos mÃ¡s antiguos del mundo, grabados en la pirÃ¡mide de Unas (c. 2345 a.C.) con mÃ¡s de 800 declaraciones mÃ¡gicas que describen el viaje del alma del faraÃ³n hacia las estrellas.',
+      '"Oh Rey, eres esta gran estrella, compaÃ±era de OriÃ³n, que atraviesa el cielo con OriÃ³n, que navega el Duat con Osiris" (Utterance 466). Las declaraciones son instrucciones de navegaciÃ³n cÃ³smica.',
+      'El Duat era el inframundo egipcio situado en la zona de OriÃ³n y Sirio. El faraÃ³n cruzaba el "Campo de Juncos" (Sekhet-Aaru), una versiÃ³n celestial de los fÃ©rtiles campos del delta del Nilo.',
+      'La reina era identificada con Isis, cuya forma estelar era Sirio â€” la estrella mÃ¡s brillante. Sirio aparece junto a OriÃ³n: el amor eterno entre Osiris e Isis reunidos entre las estrellas.',
+      'El faraÃ³n viajaba en la "Barca de Millones de AÃ±os" (la VÃ­a LÃ¡ctea) y se convertÃ­a en un akh â€” un ser luminoso, literalmente una estrella.',
+      'La meticulosa atenciÃ³n de los antiguos egipcios a las estrellas se basaba en la creencia de que el cosmos era una mÃ¡quina viviente y divina. SegÃºn el cÃ©lebre egiptÃ³logo H. Frankfort, el faraÃ³n no solo viajaba hacia las estrellas, sino que se convertÃ­a en el motor cÃ³smico que mantenÃ­a el universo en movimiento. Los jeroglÃ­ficos detallan encantamientos precisos que el rey debÃ­a pronunciar para abrir los "portales del cielo" guardados por guardianes estelares.',
+      'Para orientarse en esta geografÃ­a celestial, los sacerdotes crearon sofisticados mapas estelares que plasmaban en el interior de los sarcÃ³fagos de madera del Imperio Medio. Estos mapas, conocidos como relojes estelares diagonales, son de los diagramas celestes mÃ¡s antiguos de la humanidad. Combinaban la funciÃ³n de reloj nocturno con una guÃ­a espiritual, asegurando que el alma no se perdiera en la inmensidad del Duat y alcanzara el cinturÃ³n de OriÃ³n.',
     ],
-    fact: 'Los techos de las tumbas del Valle de los Reyes tienen estrellas de cinco puntas doradas sobre fondo azul lapislázuli. En la tumba de Seti I (KV17), el techo astronómico muestra constelaciones que los astrónomos aún están descifrando.',
+    fact: 'Los techos de las tumbas del Valle de los Reyes tienen estrellas de cinco puntas doradas sobre fondo azul lapislÃ¡zuli. En la tumba de Seti I (KV17), el techo astronÃ³mico muestra constelaciones que los astrÃ³nomos aÃºn estÃ¡n descifrando.',
   },
   {
     id: 'navegantes',
-    title: '¡Navegantes del Nilo Cósmico!',
+    title: 'Â¡Navegantes del Nilo CÃ³smico!',
     color: '#4ECDC4',
     btnImage: '/assets/egypt/infographic/btn_ship.png',
     image: '/assets/egypt/infographic/celestial_navigation.png',
     content: [
-      'La Vía Láctea no solo era un concepto religioso: ¡era una herramienta de navegación práctica! Los marineros usaban la franja de la Vía Láctea junto con estrellas específicas para orientarse en viajes nocturnos.',
-      'Los egipcios fueron grandes navegantes. Sus barcos llegaban hasta Biblos (Líbano), Punt (probablemente Somalia), y Creta. La reina Hatshepsut (c. 1470 a.C.) envió una famosa expedición naval documentada en su templo.',
-      'Los "relojes estelares" encontrados en techos de tumbas (como el de Senenmut, arquitecto de Hatshepsut) muestran tablas de estrellas decanales que indicaban la hora y la dirección cardinal.',
-      'En el desierto del Sahara, la Vía Láctea es tan brillante que proyecta una sombra tenue — con una iluminancia de 0.002 lux verificada por astrónomos modernos.',
-      'Los mejores observatorios modernos (Paranal en Chile, Mauna Kea en Hawái) se eligen por condiciones similares al desierto egipcio: cielo oscuro, aire seco y altitud.',
-      'La experiencia de navegar utilizando las estrellas forjó una conexión inquebrantable entre el cielo y los egipcios cotidianos, no solo los faraones. Investigaciones recientes han revelado que incluso en el puerto de Wadi al-Jarf, el puerto más antiguo conocido del mundo ubicado en el Mar Rojo, los barcos egipcios se alineaban cuidadosamente utilizando las posiciones de Canopus y Sirio para trazar rutas comerciales seguras hacia la legendaria tierra de Punt.',
-      'A pesar de que no poseían brújulas magnéticas ni astrolabios complejos, los astrónomos egipcios lograron medir la altitud de las estrellas usando plomadas y la apertura de una rama de palma. Esta instrumentación rudimentaria, pero extremadamente efectiva, fue el pilar fundamental que permitió a las expediciones cruzar el mar abierto en la oscuridad total. Fueron los pioneros absolutos de la navegación astronómica milenios antes de que los europeos cruzaran el Atlántico.',
+      'La VÃ­a LÃ¡ctea no solo era un concepto religioso: Â¡era una herramienta de navegaciÃ³n prÃ¡ctica! Los marineros usaban la franja de la VÃ­a LÃ¡ctea junto con estrellas especÃ­ficas para orientarse en viajes nocturnos.',
+      'Los egipcios fueron grandes navegantes. Sus barcos llegaban hasta Biblos (LÃ­bano), Punt (probablemente Somalia), y Creta. La reina Hatshepsut (c. 1470 a.C.) enviÃ³ una famosa expediciÃ³n naval documentada en su templo.',
+      'Los "relojes estelares" encontrados en techos de tumbas (como el de Senenmut, arquitecto de Hatshepsut) muestran tablas de estrellas decanales que indicaban la hora y la direcciÃ³n cardinal.',
+      'En el desierto del Sahara, la VÃ­a LÃ¡ctea es tan brillante que proyecta una sombra tenue â€” con una iluminancia de 0.002 lux verificada por astrÃ³nomos modernos.',
+      'Los mejores observatorios modernos (Paranal en Chile, Mauna Kea en HawÃ¡i) se eligen por condiciones similares al desierto egipcio: cielo oscuro, aire seco y altitud.',
+      'La experiencia de navegar utilizando las estrellas forjÃ³ una conexiÃ³n inquebrantable entre el cielo y los egipcios cotidianos, no solo los faraones. Investigaciones recientes han revelado que incluso en el puerto de Wadi al-Jarf, el puerto mÃ¡s antiguo conocido del mundo ubicado en el Mar Rojo, los barcos egipcios se alineaban cuidadosamente utilizando las posiciones de Canopus y Sirio para trazar rutas comerciales seguras hacia la legendaria tierra de Punt.',
+      'A pesar de que no poseÃ­an brÃºjulas magnÃ©ticas ni astrolabios complejos, los astrÃ³nomos egipcios lograron medir la altitud de las estrellas usando plomadas y la apertura de una rama de palma. Esta instrumentaciÃ³n rudimentaria, pero extremadamente efectiva, fue el pilar fundamental que permitiÃ³ a las expediciones cruzar el mar abierto en la oscuridad total. Fueron los pioneros absolutos de la navegaciÃ³n astronÃ³mica milenios antes de que los europeos cruzaran el AtlÃ¡ntico.',
     ],
-    fact: 'El "Papiro de Turín" (c. 1150 a.C.) contiene el primer mapa geológico conocido, y los relojes estelares de Senenmut son el atlas estelar más antiguo del mundo.',
+    fact: 'El "Papiro de TurÃ­n" (c. 1150 a.C.) contiene el primer mapa geolÃ³gico conocido, y los relojes estelares de Senenmut son el atlas estelar mÃ¡s antiguo del mundo.',
   },
   {
     id: 'galaxia-numeros',
-    title: 'Nuestra Galaxia en Números',
+    title: 'Nuestra Galaxia en NÃºmeros',
     color: '#00E4FF',
     btnImage: '/assets/egypt/infographic/btn_galaxy.png',
     image: '/assets/egypt/infographic/galaxy_numbers.png',
     content: [
-      'La Vía Láctea tiene un diámetro de 100,000 a 180,000 años luz. Si fuera del tamaño de España, nuestro Sistema Solar sería más pequeño que un grano de arena.',
-      'Contiene entre 100,000 y 400,000 millones de estrellas. Nuestro Sol está a 26,000 años luz del centro, en el "Brazo de Orión". Tarda 225-250 millones de años en completar una órbita galáctica.',
-      'Desde los dinosaurios T-Rex (hace 68 millones de años), el Sol apenas completó un cuarto de órbita. ¡Los egipcios existieron durante menos de 0.00002 grados de rotación galáctica!',
-      'Según el telescopio Kepler de la NASA, hay al menos 100 mil millones de planetas en nuestra galaxia. La probabilidad de vida en alguno es estadísticamente muy alta.',
-      'La Vía Láctea y Andrómeda colisionarán en 4,500 millones de años, creando "Milkomeda". Las distancias entre estrellas son tan enormes que las colisiones individuales serán extremadamente raras.',
-      'Pensar en la escala del universo nos llena de asombro. La Vía Láctea forma parte del llamado Grupo Local, un vecindario cósmico con unas 54 galaxias. Y nuestro Sistema Solar viaja a la increíble velocidad de unos 828,000 km/h alrededor del centro galáctico. A pesar de esta velocidad vertiginosa, los antiguos egipcios observaron exactamente las mismas constelaciones que nosotros, porque las distancias son tan vastas que los cambios toman decenas de miles de años.',
-      'Los astrónomos modernos usan telescopios espaciales como el James Webb para observar el polvo galáctico iluminado por la luz infrarroja, descubriendo estrellas naciendo en guarderías estelares que se ocultan dentro de nuestro propio "Nilo celeste". Así que, al igual que los egipcios creían en el ciclo de nacimiento, muerte y renacimiento de Ra a través del cuerpo estrellado de Nut, la astrofísica moderna confirma que la Vía Láctea es un colosal y vibrante ciclo de reciclaje cósmico.',
+      'La VÃ­a LÃ¡ctea tiene un diÃ¡metro de 100,000 a 180,000 aÃ±os luz. Si fuera del tamaÃ±o de EspaÃ±a, nuestro Sistema Solar serÃ­a mÃ¡s pequeÃ±o que un grano de arena.',
+      'Contiene entre 100,000 y 400,000 millones de estrellas. Nuestro Sol estÃ¡ a 26,000 aÃ±os luz del centro, en el "Brazo de OriÃ³n". Tarda 225-250 millones de aÃ±os en completar una Ã³rbita galÃ¡ctica.',
+      'Desde los dinosaurios T-Rex (hace 68 millones de aÃ±os), el Sol apenas completÃ³ un cuarto de Ã³rbita. Â¡Los egipcios existieron durante menos de 0.00002 grados de rotaciÃ³n galÃ¡ctica!',
+      'SegÃºn el telescopio Kepler de la NASA, hay al menos 100 mil millones de planetas en nuestra galaxia. La probabilidad de vida en alguno es estadÃ­sticamente muy alta.',
+      'La VÃ­a LÃ¡ctea y AndrÃ³meda colisionarÃ¡n en 4,500 millones de aÃ±os, creando "Milkomeda". Las distancias entre estrellas son tan enormes que las colisiones individuales serÃ¡n extremadamente raras.',
+      'Pensar en la escala del universo nos llena de asombro. La VÃ­a LÃ¡ctea forma parte del llamado Grupo Local, un vecindario cÃ³smico con unas 54 galaxias. Y nuestro Sistema Solar viaja a la increÃ­ble velocidad de unos 828,000 km/h alrededor del centro galÃ¡ctico. A pesar de esta velocidad vertiginosa, los antiguos egipcios observaron exactamente las mismas constelaciones que nosotros, porque las distancias son tan vastas que los cambios toman decenas de miles de aÃ±os.',
+      'Los astrÃ³nomos modernos usan telescopios espaciales como el James Webb para observar el polvo galÃ¡ctico iluminado por la luz infrarroja, descubriendo estrellas naciendo en guarderÃ­as estelares que se ocultan dentro de nuestro propio "Nilo celeste". AsÃ­ que, al igual que los egipcios creÃ­an en el ciclo de nacimiento, muerte y renacimiento de Ra a travÃ©s del cuerpo estrellado de Nut, la astrofÃ­sica moderna confirma que la VÃ­a LÃ¡ctea es un colosal y vibrante ciclo de reciclaje cÃ³smico.',
     ],
-    fact: '"Galaxia" viene del griego "galaxías kýklos" (círculo lechoso). Los egipcios la llamaban el Nilo del cielo. La ciencia reveló que ambos tenían razón: es un río de 200 mil millones de soles. 🌌',
+    fact: '"Galaxia" viene del griego "galaxÃ­as kÃ½klos" (cÃ­rculo lechoso). Los egipcios la llamaban el Nilo del cielo. La ciencia revelÃ³ que ambos tenÃ­an razÃ³n: es un rÃ­o de 200 mil millones de soles. ðŸŒŒ',
   },
 ];
 
-// ─── Star Field Background ──────────────────────────────────────────────────
+// â”€â”€â”€ Star Field Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function StarField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -296,7 +296,7 @@ function StarField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Nut Silhouette SVG Header ───────────────────────────────────────────────
+// â”€â”€â”€ Nut Silhouette SVG Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NutHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-20px' }}>
@@ -320,13 +320,13 @@ function NutHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#E8C96A" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">EL NILO DE NUT</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(232,201,106,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA VÍA LÁCTEA EN EL ANTIGUO EGIPTO</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(232,201,106,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA VÃA LÃCTEA EN EL ANTIGUO EGIPTO</text>
       </svg>
     </div>
   );
 }
 
-// ─── Organic Node Button (circular image-based) ─────────────────────────────
+// â”€â”€â”€ Organic Node Button (circular image-based) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -372,7 +372,7 @@ function NodeButton({ node, isActive, onClick, index }) {
             transition: 'transform 0.3s ease',
             transform: isActive ? 'scale(1.1)' : 'scale(1)',
           }}
-        />
+         loading="lazy" />
         {/* Glow ring when active */}
         {isActive && (
           <motion.div
@@ -420,7 +420,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Magazine-Style Content Panel ────────────────────────────────────────────
+// â”€â”€â”€ Magazine-Style Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
@@ -459,7 +459,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={18} />
       </button>
 
-      {/* ─── Two-Column Hero Section ─── */}
+      {/* â”€â”€â”€ Two-Column Hero Section â”€â”€â”€ */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -506,7 +506,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
             </span>
             {node.title}
           </h3>
@@ -522,7 +522,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── Magazine Body: Alternating text + decorations ─── */}
+      {/* â”€â”€â”€ Magazine Body: Alternating text + decorations â”€â”€â”€ */}
       <div style={{
         padding: '1.5rem 2rem 2rem',
         position: 'relative',
@@ -577,7 +577,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
                 }}>
-                  {i === 0 ? '◆' : i === 1 ? '◇' : '★'}
+                  {i === 0 ? 'â—†' : i === 1 ? 'â—‡' : 'â˜…'}
                 </div>
                 <p style={{
                   margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
@@ -590,7 +590,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* ─── Fact Box (styled as pull-quote) ─── */}
+        {/* â”€â”€â”€ Fact Box (styled as pull-quote) â”€â”€â”€ */}
         {node.fact && (
           <div style={{
             marginTop: '1.5rem',
@@ -618,7 +618,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato Científico
+                Dato CientÃ­fico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -635,7 +635,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ explored, total }) {
   const pct = (explored / total) * 100;
   return (
@@ -659,7 +659,7 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-// ─── Main Infographic Component ──────────────────────────────────────────────
+// â”€â”€â”€ Main Infographic Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_EgyptM11() {
   const [activeNode, setActiveNode] = useState(null);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -707,11 +707,11 @@ export default function InteractiveInfographic_EgyptM11() {
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
           }}
         >
-          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
+          <ChevronRight size={14} /> Toca cada cÃ­rculo para explorar <ChevronRight size={14} />
         </motion.p>
       )}
 
-      {/* ─── Organic Circular Nodes Grid ─── */}
+      {/* â”€â”€â”€ Organic Circular Nodes Grid â”€â”€â”€ */}
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -758,16 +758,16 @@ export default function InteractiveInfographic_EgyptM11() {
             }}
           >
             <p style={{ margin: 0, color: '#FFD700', fontSize: '1.1rem', fontWeight: 'bold' }}>
-              🏆 ¡Has explorado todos los secretos del Nilo de Nut!
+              ðŸ† Â¡Has explorado todos los secretos del Nilo de Nut!
             </p>
             <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
-              Ahora puedes tomar el quiz para ganar tu insignia de Navegante Galáctico
+              Ahora puedes tomar el quiz para ganar tu insignia de Navegante GalÃ¡ctico
             </p>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* ─── Bibliografía ─── */}
+      {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
       <div style={{
         marginTop: '2rem', padding: '1.5rem 2rem',
         borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -776,17 +776,17 @@ export default function InteractiveInfographic_EgyptM11() {
       }}>
         <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
           textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-          📚 Fuentes y Referencias
+          ðŸ“š Fuentes y Referencias
         </h4>
         <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
           listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
-            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
           ))}
         </ul>
       </div>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

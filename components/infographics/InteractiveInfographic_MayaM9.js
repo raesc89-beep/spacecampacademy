@@ -6,7 +6,7 @@ import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from '
 
 import ImageLightbox from './ImageLightbox';
 
-// ─── SVG Decorative Elements (Maya / Cosmic themed) ─────────────────────────
+// â”€â”€â”€ SVG Decorative Elements (Maya / Cosmic themed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function DecoCeibaTree({ size = 70, color = '#1B5E20', style = {} }) {
   return (
@@ -79,7 +79,7 @@ const DECO_MAP = {
   'popol-vuh-cielo': [DecoCrocodile, DecoCanoe, DecoThreeLevels],
 };
 
-// ─── Content Data ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const BIBLIOGRAPHY = [
   "Freidel, D., Schele, L. & Parker, J. (1993). Maya Cosmos: Three Thousand Years on the Shaman\'s Path, William Morrow",
@@ -92,60 +92,60 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'wakah-chan-arbol',
-    title: 'Wakah Chan: El Árbol Cósmico',
+    title: 'Wakah Chan: El Ãrbol CÃ³smico',
     color: '#CFD8DC',
     btnImage: '/assets/maya/infographic_m9/btn_wakah-chan-arbol.jpg',
     image: '/assets/maya/infographic_m9/hero_wakah-chan-arbol.jpg',
     content: [
-      'Wakah Chan significa "Cielo Elevado". Es un árbol gigante, pero no uno de madera y hojas. Es un árbol hecho de estrellas brillantes. Imagina que sales al patio en una noche oscura, miras hacia arriba y ves una banda brillante de polvo estelar cruzando el cielo. Nosotros la llamamos Vía Láctea. Para los antiguos mayas, esa banda gigante de estrellas era el Wakah Chan. Era el árbol más grande del universo, plantado justo en el centro del mundo para sostener todo.',
-      'Este árbol estelar funciona como una carretera gigante que conecta tres lugares diferentes. Imagina un edificio con tres pisos. El sótano oscuro y húmedo es Xibalbá, el mundo subterráneo donde viven los señores del inframundo. El primer piso es la Tierra, donde vivimos nosotros, cultivamos maíz y construimos ciudades. El segundo piso es el cielo diurno, donde brillan el sol y los planetas. El Wakah Chan es como el ascensor brillante que conecta estos tres niveles.',
-      'Las raíces del árbol estelar se hunden en el suelo, bajando hacia las cuevas oscuras de Xibalbá. Su tronco pasa a través de nuestra Tierra, y sus ramas se abren en el cielo superior, tocando las nubes. Esta idea ayudaba a los mayas a entender cómo las cosas del cielo podían afectar a las cosas de abajo, como la lluvia cayendo a la tierra. Todo estaba conectado por este enorme pilar de polvo estelar y luz blanca brillante, como un esqueleto que mantiene todo el universo unido.',
-      'Los gobernantes mayas querían ser como este gran árbol cósmico. Cuando un rey se vestía para una ceremonia importante, usaba ropa que lo hacía ver como el Wakah Chan. Se ponía un cinturón ancho que representaba el tronco y plumas verdes en la cabeza que representaban las ramas. El rey creía que, al hacer esto, podía traer energía del cielo a su pueblo, actuando como un puente viviente entre los dioses arriba y los humanos abajo.',
-      'Entender el Wakah Chan nos ayuda a ver cómo la ciencia y la imaginación pueden trabajar juntas. Los mayas miraban las mismas estrellas que vemos hoy con nuestros telescopios modernos. Pero en lugar de ver solo rocas espaciales lejanas, veían un mapa brillante que explicaba cómo funcionaba su mundo. Era su forma de explicar algo tan grande y complejo como la galaxia, usando la imagen simple de un árbol que veían crecer en su selva todos los días.'
+      'Wakah Chan significa "Cielo Elevado". Es un Ã¡rbol gigante, pero no uno de madera y hojas. Es un Ã¡rbol hecho de estrellas brillantes. Imagina que sales al patio en una noche oscura, miras hacia arriba y ves una banda brillante de polvo estelar cruzando el cielo. Nosotros la llamamos VÃ­a LÃ¡ctea. Para los antiguos mayas, esa banda gigante de estrellas era el Wakah Chan. Era el Ã¡rbol mÃ¡s grande del universo, plantado justo en el centro del mundo para sostener todo.',
+      'Este Ã¡rbol estelar funciona como una carretera gigante que conecta tres lugares diferentes. Imagina un edificio con tres pisos. El sÃ³tano oscuro y hÃºmedo es XibalbÃ¡, el mundo subterrÃ¡neo donde viven los seÃ±ores del inframundo. El primer piso es la Tierra, donde vivimos nosotros, cultivamos maÃ­z y construimos ciudades. El segundo piso es el cielo diurno, donde brillan el sol y los planetas. El Wakah Chan es como el ascensor brillante que conecta estos tres niveles.',
+      'Las raÃ­ces del Ã¡rbol estelar se hunden en el suelo, bajando hacia las cuevas oscuras de XibalbÃ¡. Su tronco pasa a travÃ©s de nuestra Tierra, y sus ramas se abren en el cielo superior, tocando las nubes. Esta idea ayudaba a los mayas a entender cÃ³mo las cosas del cielo podÃ­an afectar a las cosas de abajo, como la lluvia cayendo a la tierra. Todo estaba conectado por este enorme pilar de polvo estelar y luz blanca brillante, como un esqueleto que mantiene todo el universo unido.',
+      'Los gobernantes mayas querÃ­an ser como este gran Ã¡rbol cÃ³smico. Cuando un rey se vestÃ­a para una ceremonia importante, usaba ropa que lo hacÃ­a ver como el Wakah Chan. Se ponÃ­a un cinturÃ³n ancho que representaba el tronco y plumas verdes en la cabeza que representaban las ramas. El rey creÃ­a que, al hacer esto, podÃ­a traer energÃ­a del cielo a su pueblo, actuando como un puente viviente entre los dioses arriba y los humanos abajo.',
+      'Entender el Wakah Chan nos ayuda a ver cÃ³mo la ciencia y la imaginaciÃ³n pueden trabajar juntas. Los mayas miraban las mismas estrellas que vemos hoy con nuestros telescopios modernos. Pero en lugar de ver solo rocas espaciales lejanas, veÃ­an un mapa brillante que explicaba cÃ³mo funcionaba su mundo. Era su forma de explicar algo tan grande y complejo como la galaxia, usando la imagen simple de un Ã¡rbol que veÃ­an crecer en su selva todos los dÃ­as.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los mayas no construyeron telescopios de cristal como nosotros. Hacían sus observaciones astronómicas usando palos cruzados, líneas visuales en edificios de piedra y mucha paciencia. Registraron el movimiento de las estrellas con tanta precisión matemática que sus mapas celestes siguen siendo exactos hoy. ¡Eran verdaderos científicos del cielo nocturno!' },
-      { label: 'Concepto Científico', icon: 'atom', text: 'La Vía Láctea que los mayas llamaron Wakah Chan es en realidad un disco plano y enorme formado por miles de millones de soles. Como vivimos dentro de ese disco estelar, lo vemos de lado. Por eso parece una banda alargada cruzando el cielo, como el tronco de un árbol altísimo de luz brillante sobre nuestras cabezas.' }
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Los mayas no construyeron telescopios de cristal como nosotros. HacÃ­an sus observaciones astronÃ³micas usando palos cruzados, lÃ­neas visuales en edificios de piedra y mucha paciencia. Registraron el movimiento de las estrellas con tanta precisiÃ³n matemÃ¡tica que sus mapas celestes siguen siendo exactos hoy. Â¡Eran verdaderos cientÃ­ficos del cielo nocturno!' },
+      { label: 'Concepto CientÃ­fico', icon: 'atom', text: 'La VÃ­a LÃ¡ctea que los mayas llamaron Wakah Chan es en realidad un disco plano y enorme formado por miles de millones de soles. Como vivimos dentro de ese disco estelar, lo vemos de lado. Por eso parece una banda alargada cruzando el cielo, como el tronco de un Ã¡rbol altÃ­simo de luz brillante sobre nuestras cabezas.' }
     ],
-    fact: 'El nombre completo del árbol cósmico en las inscripciones mayas antiguas a menudo aparece escrito con un símbolo que parece una cruz y otro que significa cielo. Esta "cruz" maya no tiene relación con otras religiones, sino que marca el cruce de direcciones, el centro absoluto de su mundo. Al entender este glifo, los arqueólogos lograron leer que las plazas centrales de las ciudades mayas eran réplicas a escala de este árbol central.'
+    fact: 'El nombre completo del Ã¡rbol cÃ³smico en las inscripciones mayas antiguas a menudo aparece escrito con un sÃ­mbolo que parece una cruz y otro que significa cielo. Esta "cruz" maya no tiene relaciÃ³n con otras religiones, sino que marca el cruce de direcciones, el centro absoluto de su mundo. Al entender este glifo, los arqueÃ³logos lograron leer que las plazas centrales de las ciudades mayas eran rÃ©plicas a escala de este Ã¡rbol central.'
   },
   {
     id: 'via-lactea-maya',
-    title: 'La Vía Láctea Maya',
+    title: 'La VÃ­a LÃ¡ctea Maya',
     color: '#4A148C',
     btnImage: '/assets/maya/infographic_m9/btn_via-lactea-maya.jpg',
     image: '/assets/maya/infographic_m9/hero_via-lactea-maya.jpg',
     content: [
-      'La Vía Láctea no siempre se ve igual en el cielo nocturno. Como nuestro planeta Tierra gira sobre sí mismo y también viaja alrededor del sol, la posición de las estrellas parece cambiar. A veces, la Vía Láctea está de pie, apuntando de norte a sur. Cuando los observadores mayas veían esta línea brillante vertical, decían que era el árbol cósmico levantado. Parecía un pilar enorme que sostenía el cielo nocturno para que no cayera sobre la tierra.',
-      'Pero a medida que avanzaba la noche, la banda de estrellas parecía inclinarse y acostarse lentamente en el cielo, apuntando de este a oeste. Cuando la Vía Láctea estaba en esta posición horizontal, los mayas ya no veían un árbol. En su lugar, veían una forma diferente: la imaginaban como una canoa cósmica flotando en un río de estrellas, o como un enorme cocodrilo estelar nadando a través del gran océano negro de la noche oscura.',
-      'Piensa en esto como mirar una nube mullida en el cielo. Si la miras desde un lado, puede parecer un perro corriendo, pero si el viento la voltea, puede parecer un barco navegando. Los mayas hicieron lo mismo, pero con la galaxia entera. Usaron diferentes nombres y diferentes formas para describir la misma banda de estrellas, dependiendo de cómo estuviera girada en relación con el horizonte, demostrando una comprensión profunda de la rotación terrestre.',
-      'Esta transformación de árbol a cocodrilo no era solo un cuento antes de dormir. Era información valiosa sobre cómo se movía el mundo físico. Los sacerdotes mayas, que eran como los científicos modernos, pasaban noches enteras sentados en lo alto de sus pirámides de piedra, mirando hacia arriba. Al observar cómo el árbol estelar se inclinaba y se convertía en cocodrilo galáctico, podían saber qué hora de la noche era sin necesidad de usar relojes mecánicos.',
-      'Este cambio estelar también anunciaba la llegada de diferentes estaciones climáticas a lo largo del año solar. Si el árbol de estrellas estaba de pie justo después de que se ponía el sol, los mayas sabían que el clima seco estaba terminando y que pronto llegarían las lluvias fuertes. La forma del cielo les decía exactamente cuándo debían plantar sus semillas de maíz en la tierra. Las estrellas eran su calendario gigante, escrito con luz galáctica sobre un fondo negro.'
+      'La VÃ­a LÃ¡ctea no siempre se ve igual en el cielo nocturno. Como nuestro planeta Tierra gira sobre sÃ­ mismo y tambiÃ©n viaja alrededor del sol, la posiciÃ³n de las estrellas parece cambiar. A veces, la VÃ­a LÃ¡ctea estÃ¡ de pie, apuntando de norte a sur. Cuando los observadores mayas veÃ­an esta lÃ­nea brillante vertical, decÃ­an que era el Ã¡rbol cÃ³smico levantado. ParecÃ­a un pilar enorme que sostenÃ­a el cielo nocturno para que no cayera sobre la tierra.',
+      'Pero a medida que avanzaba la noche, la banda de estrellas parecÃ­a inclinarse y acostarse lentamente en el cielo, apuntando de este a oeste. Cuando la VÃ­a LÃ¡ctea estaba en esta posiciÃ³n horizontal, los mayas ya no veÃ­an un Ã¡rbol. En su lugar, veÃ­an una forma diferente: la imaginaban como una canoa cÃ³smica flotando en un rÃ­o de estrellas, o como un enorme cocodrilo estelar nadando a travÃ©s del gran ocÃ©ano negro de la noche oscura.',
+      'Piensa en esto como mirar una nube mullida en el cielo. Si la miras desde un lado, puede parecer un perro corriendo, pero si el viento la voltea, puede parecer un barco navegando. Los mayas hicieron lo mismo, pero con la galaxia entera. Usaron diferentes nombres y diferentes formas para describir la misma banda de estrellas, dependiendo de cÃ³mo estuviera girada en relaciÃ³n con el horizonte, demostrando una comprensiÃ³n profunda de la rotaciÃ³n terrestre.',
+      'Esta transformaciÃ³n de Ã¡rbol a cocodrilo no era solo un cuento antes de dormir. Era informaciÃ³n valiosa sobre cÃ³mo se movÃ­a el mundo fÃ­sico. Los sacerdotes mayas, que eran como los cientÃ­ficos modernos, pasaban noches enteras sentados en lo alto de sus pirÃ¡mides de piedra, mirando hacia arriba. Al observar cÃ³mo el Ã¡rbol estelar se inclinaba y se convertÃ­a en cocodrilo galÃ¡ctico, podÃ­an saber quÃ© hora de la noche era sin necesidad de usar relojes mecÃ¡nicos.',
+      'Este cambio estelar tambiÃ©n anunciaba la llegada de diferentes estaciones climÃ¡ticas a lo largo del aÃ±o solar. Si el Ã¡rbol de estrellas estaba de pie justo despuÃ©s de que se ponÃ­a el sol, los mayas sabÃ­an que el clima seco estaba terminando y que pronto llegarÃ­an las lluvias fuertes. La forma del cielo les decÃ­a exactamente cuÃ¡ndo debÃ­an plantar sus semillas de maÃ­z en la tierra. Las estrellas eran su calendario gigante, escrito con luz galÃ¡ctica sobre un fondo negro.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En muchas culturas antiguas de todo el mundo, la Vía Láctea fue imaginada como un camino, un río o un árbol. Los antiguos griegos pensaban que era leche derramada, los aborígenes australianos veían un emú oscuro y las tribus de América del Norte veían el camino polvoriento por donde caminaban los espíritus estelares.' },
-      { label: 'Observación Diaria', icon: 'clock', text: 'A diferencia de nosotros que tenemos farolas brillantes y luces de ciudad que ocultan las estrellas, los antiguos mayas tenían noches de oscuridad total. Su vista de la Vía Láctea era tan intensa y detallada que podían ver nubes oscuras de polvo espacial bloqueando la luz de las estrellas detrás, formando figuras en negro.' }
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'En muchas culturas antiguas de todo el mundo, la VÃ­a LÃ¡ctea fue imaginada como un camino, un rÃ­o o un Ã¡rbol. Los antiguos griegos pensaban que era leche derramada, los aborÃ­genes australianos veÃ­an un emÃº oscuro y las tribus de AmÃ©rica del Norte veÃ­an el camino polvoriento por donde caminaban los espÃ­ritus estelares.' },
+      { label: 'ObservaciÃ³n Diaria', icon: 'clock', text: 'A diferencia de nosotros que tenemos farolas brillantes y luces de ciudad que ocultan las estrellas, los antiguos mayas tenÃ­an noches de oscuridad total. Su vista de la VÃ­a LÃ¡ctea era tan intensa y detallada que podÃ­an ver nubes oscuras de polvo espacial bloqueando la luz de las estrellas detrÃ¡s, formando figuras en negro.' }
     ],
-    fact: 'El monstruo cósmico que los mayas veían en la Vía Láctea horizontal solía representarse como un cocodrilo con dos cabezas. Esto parece raro, pero tiene sentido científico astronómico. Una cabeza apuntaba hacia el lugar donde sale el sol y la otra hacia donde se oculta. Las dos bocas del reptil representaban los puntos opuestos del horizonte, conectando el ciclo completo del día y la noche.'
+    fact: 'El monstruo cÃ³smico que los mayas veÃ­an en la VÃ­a LÃ¡ctea horizontal solÃ­a representarse como un cocodrilo con dos cabezas. Esto parece raro, pero tiene sentido cientÃ­fico astronÃ³mico. Una cabeza apuntaba hacia el lugar donde sale el sol y la otra hacia donde se oculta. Las dos bocas del reptil representaban los puntos opuestos del horizonte, conectando el ciclo completo del dÃ­a y la noche.'
   },
   {
     id: 'canoa-cosmica',
-    title: 'La Canoa Cósmica',
+    title: 'La Canoa CÃ³smica',
     color: '#0277BD',
     btnImage: '/assets/maya/infographic_m9/btn_canoa-cosmica.jpg',
     image: '/assets/maya/infographic_m9/hero_canoa-cosmica.jpg',
     content: [
-      'Cuando la Vía Láctea se pone horizontal y corre de este a oeste, los antiguos mayas la llamaban la Canoa Cósmica. Imagina una barca de madera larga flotando en un río brillante de estrellas brillantes, navegando silenciosamente a través del cielo nocturno. En la gran historia de la creación maya, escrita en un libro sagrado llamado Popol Vuh, esta canoa galáctica tiene un trabajo muy importante: transportar al gran Dios del Maíz en su viaje.',
-      'En la proa, la parte delantera del barco estelar, va un dios especial que rema con fuerza; y en la popa, la parte trasera, va otro remero cósmico. Los llamamos los "Dioses Remeros". Estos remeros estelares guían la barca que lleva el alma del Dios del Maíz hacia Xibalbá, el reino oscuro bajo la tierra, después de que termina el tiempo de la cosecha. Este viaje mítico a través de las estrellas es una historia sobre cómo las cosas mueren en invierno y vuelven a nacer.',
-      'Lo increíble es que los mayas tallaron escenas de esta historia del Dios del Maíz y su canoa en huesos diminutos. Los arqueólogos encontraron unos huesos exquisitamente tallados en la ciudad de Tikal, que muestran exactamente este viaje cósmico celestial. En el hueso grabado, se ve la canoa larga con los dioses trabajando duro para remar a través del agua estelar, mientras el Dios del Maíz va sentado en el centro con un sombrero alto.',
-      'Esta historia mágica en realidad ayudaba a los niños a entender hechos básicos sobre su suministro diario de alimentos. El viaje del Dios del Maíz en la canoa celeste explicaba por qué las semillas deben ser enterradas en la oscuridad de la tierra sucia para poder brotar como nuevas plantas verdes de maíz meses después. La canoa que viajaba hacia el inframundo representaba las semillas entrando bajo tierra para empezar a crecer de nuevo con la lluvia fresca.',
-      'Los remeros estelares de esta gran historia corresponden a estrellas reales o grupos de estrellas que los observadores antiguos podían ver brillar en el cielo nocturno. Una vez más, usaron su gran mapa galáctico para contar la historia más importante de su cultura. Ver la Canoa Cósmica por encima de sus cabezas les daba esperanza. Les decía que, aunque las plantas se marchitaran, el gran motor del cielo seguía girando y pronto traería nueva vida verde a sus campos secos.'
+      'Cuando la VÃ­a LÃ¡ctea se pone horizontal y corre de este a oeste, los antiguos mayas la llamaban la Canoa CÃ³smica. Imagina una barca de madera larga flotando en un rÃ­o brillante de estrellas brillantes, navegando silenciosamente a travÃ©s del cielo nocturno. En la gran historia de la creaciÃ³n maya, escrita en un libro sagrado llamado Popol Vuh, esta canoa galÃ¡ctica tiene un trabajo muy importante: transportar al gran Dios del MaÃ­z en su viaje.',
+      'En la proa, la parte delantera del barco estelar, va un dios especial que rema con fuerza; y en la popa, la parte trasera, va otro remero cÃ³smico. Los llamamos los "Dioses Remeros". Estos remeros estelares guÃ­an la barca que lleva el alma del Dios del MaÃ­z hacia XibalbÃ¡, el reino oscuro bajo la tierra, despuÃ©s de que termina el tiempo de la cosecha. Este viaje mÃ­tico a travÃ©s de las estrellas es una historia sobre cÃ³mo las cosas mueren en invierno y vuelven a nacer.',
+      'Lo increÃ­ble es que los mayas tallaron escenas de esta historia del Dios del MaÃ­z y su canoa en huesos diminutos. Los arqueÃ³logos encontraron unos huesos exquisitamente tallados en la ciudad de Tikal, que muestran exactamente este viaje cÃ³smico celestial. En el hueso grabado, se ve la canoa larga con los dioses trabajando duro para remar a travÃ©s del agua estelar, mientras el Dios del MaÃ­z va sentado en el centro con un sombrero alto.',
+      'Esta historia mÃ¡gica en realidad ayudaba a los niÃ±os a entender hechos bÃ¡sicos sobre su suministro diario de alimentos. El viaje del Dios del MaÃ­z en la canoa celeste explicaba por quÃ© las semillas deben ser enterradas en la oscuridad de la tierra sucia para poder brotar como nuevas plantas verdes de maÃ­z meses despuÃ©s. La canoa que viajaba hacia el inframundo representaba las semillas entrando bajo tierra para empezar a crecer de nuevo con la lluvia fresca.',
+      'Los remeros estelares de esta gran historia corresponden a estrellas reales o grupos de estrellas que los observadores antiguos podÃ­an ver brillar en el cielo nocturno. Una vez mÃ¡s, usaron su gran mapa galÃ¡ctico para contar la historia mÃ¡s importante de su cultura. Ver la Canoa CÃ³smica por encima de sus cabezas les daba esperanza. Les decÃ­a que, aunque las plantas se marchitaran, el gran motor del cielo seguÃ­a girando y pronto traerÃ­a nueva vida verde a sus campos secos.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los famosos huesos tallados de Tikal, que muestran la historia completa de la canoa cósmica remando hacia el inframundo, son increíblemente pequeños. Algunos miden menos de un palmo de largo. Los artistas mayas usaban herramientas afiladas hechas de piedra obsidiana, porque el metal aún no era común en su selva tropical húmeda.' },
-      { label: 'Concepto Científico', icon: 'atom', text: 'La idea de un río brillante flotando en el cielo es una descripción bastante precisa de cómo se ve nuestro brazo en espiral de la galaxia desde la superficie de la tierra. Estamos mirando a través del plano galáctico, donde se concentra todo el polvo, el gas brillante y millones de estrellas jóvenes apretadas en una banda.' }
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Los famosos huesos tallados de Tikal, que muestran la historia completa de la canoa cÃ³smica remando hacia el inframundo, son increÃ­blemente pequeÃ±os. Algunos miden menos de un palmo de largo. Los artistas mayas usaban herramientas afiladas hechas de piedra obsidiana, porque el metal aÃºn no era comÃºn en su selva tropical hÃºmeda.' },
+      { label: 'Concepto CientÃ­fico', icon: 'atom', text: 'La idea de un rÃ­o brillante flotando en el cielo es una descripciÃ³n bastante precisa de cÃ³mo se ve nuestro brazo en espiral de la galaxia desde la superficie de la tierra. Estamos mirando a travÃ©s del plano galÃ¡ctico, donde se concentra todo el polvo, el gas brillante y millones de estrellas jÃ³venes apretadas en una banda.' }
     ],
-    fact: 'Algunos investigadores han notado que en ciertas épocas del año y bajo el cielo despejado de América Central, las estrellas brillantes que forman la constelación moderna de Orión están ubicadas justo donde estarían los Dioses Remeros en la Vía Láctea, dirigiendo la gran canoa brillante a lo largo de su viaje celestial.'
+    fact: 'Algunos investigadores han notado que en ciertas Ã©pocas del aÃ±o y bajo el cielo despejado de AmÃ©rica Central, las estrellas brillantes que forman la constelaciÃ³n moderna de OriÃ³n estÃ¡n ubicadas justo donde estarÃ­an los Dioses Remeros en la VÃ­a LÃ¡ctea, dirigiendo la gran canoa brillante a lo largo de su viaje celestial.'
   },
   {
     id: 'ceiba-sagrada',
@@ -154,17 +154,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m9/btn_ceiba-sagrada.jpg',
     image: '/assets/maya/infographic_m9/hero_ceiba-sagrada.jpg',
     content: [
-      'El árbol físico en el que se basaron para imaginar el Wakah Chan galáctico es un árbol real llamado Ceiba pentandra. Si alguna vez caminas por la selva húmeda del sur de México o de Guatemala, notarás la ceiba inmediatamente. Crece mucho más alto que el resto del dosel verde forestal. Algunas ceibas enormes pueden medir más de 60 metros de altura, lo que las hace casi tan altas como un edificio moderno de veinte pisos parado en medio de la jungla espesa.',
-      'En la parte inferior, el tronco de la gran ceiba no es liso y redondo como el de un manzano. Tiene raíces enormes que parecen paredes delgadas de madera, llamadas raíces tabulares. Estas raíces anchas se extienden en todas las direcciones como los dedos de un pie gigante, hundiendo sus puntas profundas en la tierra oscura. Para los antiguos constructores de ciudades, estas raíces que bajaban a la tierra representaban las entradas húmedas al temido Xibalbá, el mundo inferior.',
-      'El tronco central del árbol sagrado es recto, cilíndrico y está cubierto de espinas cónicas cuando el árbol es joven, como armadura vegetal protectora. Esta parte alta del tronco representaba el mundo de en medio terrestre, donde vivimos las personas, los animales ruidosos y las plantas verdes. Y en la cima más alta de la ceiba majestuosa, las ramas crecen horizontalmente como si formaran un gran techo plano, como un enorme paraguas verde tocando las nubes lluviosas.',
-      'Ese dosel alto y ancho es tan denso que bloquea el sol brillante, y forma una gran plataforma natural elevada. En la imaginación maya antigua, estas ramas altas correspondían a los niveles celestiales, los pisos superiores del universo, habitados por aves sagradas como el quetzal verde. Como es el árbol más visible y alto de su ambiente salvaje, tenía sentido perfecto usar la ceiba gigante como la plantilla terrenal para entender la Vía Láctea que cruza el cielo.',
-      'Incluso hoy en día, en muchas plazas centrales y pueblos de Centroamérica moderna, encontrarás un enorme árbol de ceiba creciendo pacíficamente en el centro exacto. La gente aún lo considera un ser vivo muy respetado y protege sus ramas verdes. Cada gran ciudad maya antigua, como Tikal o Copán, también fue construida como un mapa mágico, con las plazas abiertas imitando el claro de la selva y las altas pirámides de piedra rodeando un árbol sagrado o pilar central simulado.'
+      'El Ã¡rbol fÃ­sico en el que se basaron para imaginar el Wakah Chan galÃ¡ctico es un Ã¡rbol real llamado Ceiba pentandra. Si alguna vez caminas por la selva hÃºmeda del sur de MÃ©xico o de Guatemala, notarÃ¡s la ceiba inmediatamente. Crece mucho mÃ¡s alto que el resto del dosel verde forestal. Algunas ceibas enormes pueden medir mÃ¡s de 60 metros de altura, lo que las hace casi tan altas como un edificio moderno de veinte pisos parado en medio de la jungla espesa.',
+      'En la parte inferior, el tronco de la gran ceiba no es liso y redondo como el de un manzano. Tiene raÃ­ces enormes que parecen paredes delgadas de madera, llamadas raÃ­ces tabulares. Estas raÃ­ces anchas se extienden en todas las direcciones como los dedos de un pie gigante, hundiendo sus puntas profundas en la tierra oscura. Para los antiguos constructores de ciudades, estas raÃ­ces que bajaban a la tierra representaban las entradas hÃºmedas al temido XibalbÃ¡, el mundo inferior.',
+      'El tronco central del Ã¡rbol sagrado es recto, cilÃ­ndrico y estÃ¡ cubierto de espinas cÃ³nicas cuando el Ã¡rbol es joven, como armadura vegetal protectora. Esta parte alta del tronco representaba el mundo de en medio terrestre, donde vivimos las personas, los animales ruidosos y las plantas verdes. Y en la cima mÃ¡s alta de la ceiba majestuosa, las ramas crecen horizontalmente como si formaran un gran techo plano, como un enorme paraguas verde tocando las nubes lluviosas.',
+      'Ese dosel alto y ancho es tan denso que bloquea el sol brillante, y forma una gran plataforma natural elevada. En la imaginaciÃ³n maya antigua, estas ramas altas correspondÃ­an a los niveles celestiales, los pisos superiores del universo, habitados por aves sagradas como el quetzal verde. Como es el Ã¡rbol mÃ¡s visible y alto de su ambiente salvaje, tenÃ­a sentido perfecto usar la ceiba gigante como la plantilla terrenal para entender la VÃ­a LÃ¡ctea que cruza el cielo.',
+      'Incluso hoy en dÃ­a, en muchas plazas centrales y pueblos de CentroamÃ©rica moderna, encontrarÃ¡s un enorme Ã¡rbol de ceiba creciendo pacÃ­ficamente en el centro exacto. La gente aÃºn lo considera un ser vivo muy respetado y protege sus ramas verdes. Cada gran ciudad maya antigua, como Tikal o CopÃ¡n, tambiÃ©n fue construida como un mapa mÃ¡gico, con las plazas abiertas imitando el claro de la selva y las altas pirÃ¡mides de piedra rodeando un Ã¡rbol sagrado o pilar central simulado.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las semillas esponjosas de la ceiba flotan en el viento como la nieve suave. Esta pelusa especial se llama kapok. En épocas recientes, antes de que existieran los materiales sintéticos, el material flotante kapok de la ceiba se usaba para rellenar salvavidas de emergencia en los grandes barcos del océano profundo.' },
-      { label: 'Mundo Biológico', icon: 'atom', text: 'El árbol sagrado no solo conecta mundos en la historia mítica. En la biología real de la selva espesa, es un verdadero universo conectado. Murciélagos fruteros polinizan sus flores de noche en el nivel medio, monos comen hojas arriba y miles de insectos raros viven entre las grandes raíces tabulares en el suelo sombreado.' }
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Las semillas esponjosas de la ceiba flotan en el viento como la nieve suave. Esta pelusa especial se llama kapok. En Ã©pocas recientes, antes de que existieran los materiales sintÃ©ticos, el material flotante kapok de la ceiba se usaba para rellenar salvavidas de emergencia en los grandes barcos del ocÃ©ano profundo.' },
+      { label: 'Mundo BiolÃ³gico', icon: 'atom', text: 'El Ã¡rbol sagrado no solo conecta mundos en la historia mÃ­tica. En la biologÃ­a real de la selva espesa, es un verdadero universo conectado. MurciÃ©lagos fruteros polinizan sus flores de noche en el nivel medio, monos comen hojas arriba y miles de insectos raros viven entre las grandes raÃ­ces tabulares en el suelo sombreado.' }
     ],
-    fact: 'En las piezas de arte antiguas descubiertas por los arqueólogos modernos, como en el sarcófago grabado del famoso rey Kinich Janaab Pakal en la gran ciudad de Palenque, el árbol ceiba cósmico aparece con un pájaro celestial parado en la punta. Este monstruo aviar místico representa el reino más alto del cielo, observando tranquilamente todo el mundo debajo de sus plumas mágicas.'
+    fact: 'En las piezas de arte antiguas descubiertas por los arqueÃ³logos modernos, como en el sarcÃ³fago grabado del famoso rey Kinich Janaab Pakal en la gran ciudad de Palenque, el Ã¡rbol ceiba cÃ³smico aparece con un pÃ¡jaro celestial parado en la punta. Este monstruo aviar mÃ­stico representa el reino mÃ¡s alto del cielo, observando tranquilamente todo el mundo debajo de sus plumas mÃ¡gicas.'
   },
   {
     id: 'tres-niveles',
@@ -173,36 +173,36 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m9/btn_tres-niveles.jpg',
     image: '/assets/maya/infographic_m9/hero_tres-niveles.jpg',
     content: [
-      'Los arquitectos mayas imaginaron un mundo estructurado, como un teatro gigante de varios pisos apilados uno sobre otro. No veían un espacio vacío y oscuro lleno de esferas de roca. Ellos imaginaron que el cosmos brillante tenía tres grandes niveles separados. Arriba de todo, estaba el cielo alto, dividido en trece pisos invisibles como una gran torre celeste, donde vivían las nubes de lluvia, los vientos veloces, el sol brillante diurno y la luna pálida nocturna.',
-      'En el medio estaba nuestro mundo, la Tierra firme donde vivimos. Imaginaban que el mundo humano no era una esfera redonda rodando en el espacio negro, sino un lugar plano. Creían que estábamos de pie sobre la espalda de un monstruo gigante, como un cocodrilo cósmico o una tortuga antigua de tierra, que flotaba en un océano enorme primigenio. Es una forma hermosa de explicar cómo el suelo sólido se siente fuerte bajo los pies rodeado por las aguas marinas azules infinitas.',
-      'Y abajo en la profundidad sombría estaba Xibalbá, el mundo subterráneo que tenía nueve oscuros pisos descendentes. Este lugar temido, un gran laberinto de cuevas peligrosas y ríos de sangre caliente, era regido por los señores de la muerte pálida. El mundo bajo tierra no era un infierno de castigo de fuego, sino una parte normal del ciclo completo natural. Las semillas caen a la oscuridad bajo la tierra profunda antes de brotar al sol con vida nueva brillante.',
-      'El árbol cósmico Wakah Chan era la parte más importante de esta gran casa galáctica, porque era la única estructura resistente que pasaba a través de los tres pisos, conectando Xibalbá oscuro, la Tierra plana y el Cielo alto en una sola pieza estable. A través del tronco brillante del gran árbol galáctico, los espíritus errantes, el agua vital, las plegarias humanas y los dioses cósmicos podían subir y bajar cruzando los grandes límites impenetrables del universo mágico.',
-      'Los mayas fueron tan detallados que su sistema matemático y calendárico antiguo reflejaba estos números importantes constantemente. El ciclo especial de tiempo, llamado Tzolkin, usa combinaciones exactas del número trece y veinte para marcar días importantes. Para ellos, el tiempo que corría sin parar y el espacio del cosmos que habitaban no eran dos cosas separadas, sino una misma gran máquina conectada de tres niveles y ciclos numéricos sagrados que repetían eternamente.'
+      'Los arquitectos mayas imaginaron un mundo estructurado, como un teatro gigante de varios pisos apilados uno sobre otro. No veÃ­an un espacio vacÃ­o y oscuro lleno de esferas de roca. Ellos imaginaron que el cosmos brillante tenÃ­a tres grandes niveles separados. Arriba de todo, estaba el cielo alto, dividido en trece pisos invisibles como una gran torre celeste, donde vivÃ­an las nubes de lluvia, los vientos veloces, el sol brillante diurno y la luna pÃ¡lida nocturna.',
+      'En el medio estaba nuestro mundo, la Tierra firme donde vivimos. Imaginaban que el mundo humano no era una esfera redonda rodando en el espacio negro, sino un lugar plano. CreÃ­an que estÃ¡bamos de pie sobre la espalda de un monstruo gigante, como un cocodrilo cÃ³smico o una tortuga antigua de tierra, que flotaba en un ocÃ©ano enorme primigenio. Es una forma hermosa de explicar cÃ³mo el suelo sÃ³lido se siente fuerte bajo los pies rodeado por las aguas marinas azules infinitas.',
+      'Y abajo en la profundidad sombrÃ­a estaba XibalbÃ¡, el mundo subterrÃ¡neo que tenÃ­a nueve oscuros pisos descendentes. Este lugar temido, un gran laberinto de cuevas peligrosas y rÃ­os de sangre caliente, era regido por los seÃ±ores de la muerte pÃ¡lida. El mundo bajo tierra no era un infierno de castigo de fuego, sino una parte normal del ciclo completo natural. Las semillas caen a la oscuridad bajo la tierra profunda antes de brotar al sol con vida nueva brillante.',
+      'El Ã¡rbol cÃ³smico Wakah Chan era la parte mÃ¡s importante de esta gran casa galÃ¡ctica, porque era la Ãºnica estructura resistente que pasaba a travÃ©s de los tres pisos, conectando XibalbÃ¡ oscuro, la Tierra plana y el Cielo alto en una sola pieza estable. A travÃ©s del tronco brillante del gran Ã¡rbol galÃ¡ctico, los espÃ­ritus errantes, el agua vital, las plegarias humanas y los dioses cÃ³smicos podÃ­an subir y bajar cruzando los grandes lÃ­mites impenetrables del universo mÃ¡gico.',
+      'Los mayas fueron tan detallados que su sistema matemÃ¡tico y calendÃ¡rico antiguo reflejaba estos nÃºmeros importantes constantemente. El ciclo especial de tiempo, llamado Tzolkin, usa combinaciones exactas del nÃºmero trece y veinte para marcar dÃ­as importantes. Para ellos, el tiempo que corrÃ­a sin parar y el espacio del cosmos que habitaban no eran dos cosas separadas, sino una misma gran mÃ¡quina conectada de tres niveles y ciclos numÃ©ricos sagrados que repetÃ­an eternamente.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las antiguas pirámides de piedra mayas no eran solo tumbas para gobernantes o fortalezas de defensa. Eran modelos arquitectónicos detallados de los tres grandes niveles cósmicos. La base ancha tocaba Xibalbá oscuro en el fondo, las escaleras representaban el nivel humano del suelo y el templo pequeño de arriba simulaba la puerta celestial sagrada.' },
-      { label: 'Leyendas Antiguas', icon: 'clock', text: 'Según las viejas historias heroicas, cruzar a Xibalbá era un viaje muy peligroso y aterrador. Había ríos de escorpiones picadores, casas de hielo congelante, murciélagos con grandes garras, y señores de la oscuridad con nombres feos que engañaban a los héroes humanos jóvenes. Era la prueba extrema de valor humano inteligente.' }
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Las antiguas pirÃ¡mides de piedra mayas no eran solo tumbas para gobernantes o fortalezas de defensa. Eran modelos arquitectÃ³nicos detallados de los tres grandes niveles cÃ³smicos. La base ancha tocaba XibalbÃ¡ oscuro en el fondo, las escaleras representaban el nivel humano del suelo y el templo pequeÃ±o de arriba simulaba la puerta celestial sagrada.' },
+      { label: 'Leyendas Antiguas', icon: 'clock', text: 'SegÃºn las viejas historias heroicas, cruzar a XibalbÃ¡ era un viaje muy peligroso y aterrador. HabÃ­a rÃ­os de escorpiones picadores, casas de hielo congelante, murciÃ©lagos con grandes garras, y seÃ±ores de la oscuridad con nombres feos que engaÃ±aban a los hÃ©roes humanos jÃ³venes. Era la prueba extrema de valor humano inteligente.' }
     ],
-    fact: 'El número sagrado trece correspondía a las principales articulaciones mayores del cuerpo humano fuerte: dos tobillos bajos, dos rodillas sólidas, dos caderas, dos muñecas sueltas, dos codos curvos, dos hombros anchos y un cuello móvil central. Así, los pensadores mayas conectaron inteligentemente la anatomía física humana interna con los grandes trece niveles altos del gran cielo nocturno exterior, conectando la persona con el universo amplio.'
+    fact: 'El nÃºmero sagrado trece correspondÃ­a a las principales articulaciones mayores del cuerpo humano fuerte: dos tobillos bajos, dos rodillas sÃ³lidas, dos caderas, dos muÃ±ecas sueltas, dos codos curvos, dos hombros anchos y un cuello mÃ³vil central. AsÃ­, los pensadores mayas conectaron inteligentemente la anatomÃ­a fÃ­sica humana interna con los grandes trece niveles altos del gran cielo nocturno exterior, conectando la persona con el universo amplio.'
   },
   {
     id: 'orientacion-nocturna',
-    title: 'Orientación Nocturna',
+    title: 'OrientaciÃ³n Nocturna',
     color: '#4E342E',
     btnImage: '/assets/maya/infographic_m9/btn_orientacion-nocturna.jpg',
     image: '/assets/maya/infographic_m9/hero_orientacion-nocturna.jpg',
     content: [
-      'Hoy en día, si queremos saber qué hora exacta de la noche es, miramos nuestros relojes de muñeca y teléfonos digitales de bolsillo. Si queremos saber a dónde viajar o manejar el carro hacia el norte oscuro, miramos las flechas parpadeantes de una pantalla táctil brillante. Los antiguos astrónomos no tenían herramientas electrónicas pequeñas con baterías. Su herramienta gigante más precisa de navegación nocturna colgaba silenciosamente sobre sus cabezas calvas: el majestuoso Wakah Chan luminoso estelar.',
-      'Al igual que el Sol caliente cruza la bóveda del cielo durante el día iluminado, la gran banda blanca polvorienta de la galaxia Vía Láctea cambia de posición constantemente a lo largo de las horas oscuras de la noche silenciosa. Los guardianes celestes aprendieron este giro lento regular como si estuvieran memorizando los números en la cara de un reloj gigante mecánico preciso. A medida que el gran árbol galáctico se acostaba en la negrura oscura, sabían que amanecer brillante estaba cerca inminente.',
-      'Y porque la Tierra azul no solo gira rápidamente como un trompo pequeño sino que también da una vuelta completa larga alrededor del fuego del Sol, el cielo estrellado lejano se ve un poco diferente cada nueva semana sucesiva del año. Así, en enero frío el pilar brillante del árbol aparece en una posición diferente a la que tiene en junio lluvioso húmedo a la misma hora exacta después del atardecer rojizo crepuscular en el horizonte oeste lejano.',
-      'Esta comprensión experta de los grandes relojes del universo les daba un poder importante. Saber a qué hora terminar la ceremonia religiosa nocturna, cuándo plantar la semilla de maíz resistente, cómo evitar caminar en un bosque sombrío oscuro desorientado en plena oscuridad ciega, requería conocer las estrellas precisas pequeñas y la Vía Láctea blanca pálida mejor que los surcos finos profundos en las palmas de sus propias manos oscuras delgadas.',
-      'Los edificios altos y complejos mayas antiguos se construían alineando directamente sus grandes ventanas de piedra cuadradadas y pórticos profundos con posiciones clave importantes que la Vía Láctea inmensa ocupaba en la bóveda oscura. Eran observatorios de roca sólida permanente, alineados como lentes de cámaras grandes pesadas para atrapar líneas visuales directas precisas. Así, la gran ceiba cósmica blanca gobernaba cómo trazaban las amplias calles rectas pavimentadas blancas en la tierra húmeda inferior.'
+      'Hoy en dÃ­a, si queremos saber quÃ© hora exacta de la noche es, miramos nuestros relojes de muÃ±eca y telÃ©fonos digitales de bolsillo. Si queremos saber a dÃ³nde viajar o manejar el carro hacia el norte oscuro, miramos las flechas parpadeantes de una pantalla tÃ¡ctil brillante. Los antiguos astrÃ³nomos no tenÃ­an herramientas electrÃ³nicas pequeÃ±as con baterÃ­as. Su herramienta gigante mÃ¡s precisa de navegaciÃ³n nocturna colgaba silenciosamente sobre sus cabezas calvas: el majestuoso Wakah Chan luminoso estelar.',
+      'Al igual que el Sol caliente cruza la bÃ³veda del cielo durante el dÃ­a iluminado, la gran banda blanca polvorienta de la galaxia VÃ­a LÃ¡ctea cambia de posiciÃ³n constantemente a lo largo de las horas oscuras de la noche silenciosa. Los guardianes celestes aprendieron este giro lento regular como si estuvieran memorizando los nÃºmeros en la cara de un reloj gigante mecÃ¡nico preciso. A medida que el gran Ã¡rbol galÃ¡ctico se acostaba en la negrura oscura, sabÃ­an que amanecer brillante estaba cerca inminente.',
+      'Y porque la Tierra azul no solo gira rÃ¡pidamente como un trompo pequeÃ±o sino que tambiÃ©n da una vuelta completa larga alrededor del fuego del Sol, el cielo estrellado lejano se ve un poco diferente cada nueva semana sucesiva del aÃ±o. AsÃ­, en enero frÃ­o el pilar brillante del Ã¡rbol aparece en una posiciÃ³n diferente a la que tiene en junio lluvioso hÃºmedo a la misma hora exacta despuÃ©s del atardecer rojizo crepuscular en el horizonte oeste lejano.',
+      'Esta comprensiÃ³n experta de los grandes relojes del universo les daba un poder importante. Saber a quÃ© hora terminar la ceremonia religiosa nocturna, cuÃ¡ndo plantar la semilla de maÃ­z resistente, cÃ³mo evitar caminar en un bosque sombrÃ­o oscuro desorientado en plena oscuridad ciega, requerÃ­a conocer las estrellas precisas pequeÃ±as y la VÃ­a LÃ¡ctea blanca pÃ¡lida mejor que los surcos finos profundos en las palmas de sus propias manos oscuras delgadas.',
+      'Los edificios altos y complejos mayas antiguos se construÃ­an alineando directamente sus grandes ventanas de piedra cuadradadas y pÃ³rticos profundos con posiciones clave importantes que la VÃ­a LÃ¡ctea inmensa ocupaba en la bÃ³veda oscura. Eran observatorios de roca sÃ³lida permanente, alineados como lentes de cÃ¡maras grandes pesadas para atrapar lÃ­neas visuales directas precisas. AsÃ­, la gran ceiba cÃ³smica blanca gobernaba cÃ³mo trazaban las amplias calles rectas pavimentadas blancas en la tierra hÃºmeda inferior.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los antiguos sabios mayas usaban palos rústicos cruzados simples con muescas como simples herramientas visuales manuales prácticas, colocados frente a puertas cuadradadas alineadas. Desde un punto oscuro fijo y un palo cruzado en X adelante, creaban un sistema de puntería efectivo barato, muy parecido a las miras pequeñas de los rifles largos modernos que alinean un pequeño tubo metálico para enfocar puntos lejanos oscuros precisamente.' },
-      { label: 'Uso Práctico', icon: 'atom', text: 'Aún hoy en tiempos rápidos modernos en partes apartadas silenciosas y remotas de las selvas húmedas mexicanas sureñas grandes, algunas viejas personas campesinas usan la sombra larga blanca y el cambio angular que hace la galaxia nocturna blanca como indicador útil básico para predecir lluvia mojada pesada sobre los campos de granja.' }
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Los antiguos sabios mayas usaban palos rÃºsticos cruzados simples con muescas como simples herramientas visuales manuales prÃ¡cticas, colocados frente a puertas cuadradadas alineadas. Desde un punto oscuro fijo y un palo cruzado en X adelante, creaban un sistema de punterÃ­a efectivo barato, muy parecido a las miras pequeÃ±as de los rifles largos modernos que alinean un pequeÃ±o tubo metÃ¡lico para enfocar puntos lejanos oscuros precisamente.' },
+      { label: 'Uso PrÃ¡ctico', icon: 'atom', text: 'AÃºn hoy en tiempos rÃ¡pidos modernos en partes apartadas silenciosas y remotas de las selvas hÃºmedas mexicanas sureÃ±as grandes, algunas viejas personas campesinas usan la sombra larga blanca y el cambio angular que hace la galaxia nocturna blanca como indicador Ãºtil bÃ¡sico para predecir lluvia mojada pesada sobre los campos de granja.' }
     ],
-    fact: 'Un arqueólogo moderno famoso llamado Anthony Aveni usó grandes computadoras potentes digitales rápidas con datos viejos astronómicos y logró descubrir asombrado que las avenidas principales amplias peatonales en la gran metrópolis de Teotihuacan lejana en México grande se alineaban intencionalmente a la perfección con el hundimiento profundo de la gran Vía Láctea lejana hace casi ya cerca de largos dos mil pesados años.'
+    fact: 'Un arqueÃ³logo moderno famoso llamado Anthony Aveni usÃ³ grandes computadoras potentes digitales rÃ¡pidas con datos viejos astronÃ³micos y logrÃ³ descubrir asombrado que las avenidas principales amplias peatonales en la gran metrÃ³polis de Teotihuacan lejana en MÃ©xico grande se alineaban intencionalmente a la perfecciÃ³n con el hundimiento profundo de la gran VÃ­a LÃ¡ctea lejana hace casi ya cerca de largos dos mil pesados aÃ±os.'
   },
   {
     id: 'popol-vuh-cielo',
@@ -211,21 +211,21 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m9/btn_popol-vuh-cielo.jpg',
     image: '/assets/maya/infographic_m9/hero_popol-vuh-cielo.jpg',
     content: [
-      'El libro más famoso de los mayas antiguos se llama el Popol Vuh. Aunque puede parecer un cuento lleno de monstruos mágicos y aventuras sobre dos gemelos jóvenes que viajan bajo tierra para jugar un peligroso juego de pelota contra los señores de la muerte, en realidad es mucho más. Este libro antiguo es un complejo mapa de ciencias del cielo disfrazado de un relato fantástico misterioso. Cada uno de los personajes heroicos principales en sus densas páginas corresponde a algo que puedes ver si observas bien el cielo nocturno estrellado.',
-      'En la historia, los Gemelos Héroes bajan al peligroso Xibalbá para jugar contra reyes engañosos. Los astrónomos descubrieron que el viaje de estos muchachos valientes coincide con la manera en que el sol y la luna viajan en el cielo y desaparecen bajo el horizonte. Cuando el sol se oculta, decían que estaba entrando al mundo subterráneo de los muertos para luchar durante la noche, para poder nacer triunfante como luz nueva al amanecer.',
-      'Los grandes personajes monstruosos de esta gran historia del cielo también tienen identidades astronómicas precisas. Un personaje terrible que se llama Siete Guacamayo gigante, un ave fanfarrona, fingía ser el verdadero sol en una época oscura. El mito habla de cómo los jóvenes héroes le disparan y el ave herida cae. Esto describe el movimiento de las estrellas brillantes que forman la Osa Mayor moderna cuando caen hacia el horizonte norte.',
-      'Hasta el momento central cuando los valientes niños patean mágicamente la gran pelota rebotadora para ganar, se sincroniza asombrosamente bien con los grandes ciclos astronómicos. Los movimientos estelares de Venus radiante brillante se pueden medir tan exactamente mediante estos viejos mitos, que los viejos cuentos poéticos se convierten en una gran enciclopedia científica de astronomía. El conocimiento empírico fue empacado en cuentos emocionantes para la gente.',
-      'Los mayas fueron sabios brillantes. Al contar un cuento emocionante, lograron que un conocimiento astronómico complejo pasara de abuelos a nietos durante cientos de años. Entender esto prueba que la ciencia matemática no es un invento reciente. Siempre ha estado escondida en las grandes historias antiguas que contamos bajo el cielo. Wakah Chan, la enorme Vía Láctea, no era solo decoración. Era el escenario de la primera gran ciencia humana en el misterioso continente americano.'
+      'El libro mÃ¡s famoso de los mayas antiguos se llama el Popol Vuh. Aunque puede parecer un cuento lleno de monstruos mÃ¡gicos y aventuras sobre dos gemelos jÃ³venes que viajan bajo tierra para jugar un peligroso juego de pelota contra los seÃ±ores de la muerte, en realidad es mucho mÃ¡s. Este libro antiguo es un complejo mapa de ciencias del cielo disfrazado de un relato fantÃ¡stico misterioso. Cada uno de los personajes heroicos principales en sus densas pÃ¡ginas corresponde a algo que puedes ver si observas bien el cielo nocturno estrellado.',
+      'En la historia, los Gemelos HÃ©roes bajan al peligroso XibalbÃ¡ para jugar contra reyes engaÃ±osos. Los astrÃ³nomos descubrieron que el viaje de estos muchachos valientes coincide con la manera en que el sol y la luna viajan en el cielo y desaparecen bajo el horizonte. Cuando el sol se oculta, decÃ­an que estaba entrando al mundo subterrÃ¡neo de los muertos para luchar durante la noche, para poder nacer triunfante como luz nueva al amanecer.',
+      'Los grandes personajes monstruosos de esta gran historia del cielo tambiÃ©n tienen identidades astronÃ³micas precisas. Un personaje terrible que se llama Siete Guacamayo gigante, un ave fanfarrona, fingÃ­a ser el verdadero sol en una Ã©poca oscura. El mito habla de cÃ³mo los jÃ³venes hÃ©roes le disparan y el ave herida cae. Esto describe el movimiento de las estrellas brillantes que forman la Osa Mayor moderna cuando caen hacia el horizonte norte.',
+      'Hasta el momento central cuando los valientes niÃ±os patean mÃ¡gicamente la gran pelota rebotadora para ganar, se sincroniza asombrosamente bien con los grandes ciclos astronÃ³micos. Los movimientos estelares de Venus radiante brillante se pueden medir tan exactamente mediante estos viejos mitos, que los viejos cuentos poÃ©ticos se convierten en una gran enciclopedia cientÃ­fica de astronomÃ­a. El conocimiento empÃ­rico fue empacado en cuentos emocionantes para la gente.',
+      'Los mayas fueron sabios brillantes. Al contar un cuento emocionante, lograron que un conocimiento astronÃ³mico complejo pasara de abuelos a nietos durante cientos de aÃ±os. Entender esto prueba que la ciencia matemÃ¡tica no es un invento reciente. Siempre ha estado escondida en las grandes historias antiguas que contamos bajo el cielo. Wakah Chan, la enorme VÃ­a LÃ¡ctea, no era solo decoraciÃ³n. Era el escenario de la primera gran ciencia humana en el misterioso continente americano.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El texto del Popol Vuh casi se perdió en el tiempo. Solo sobrevivió porque un sacerdote europeo en Guatemala, llamado Francisco Ximénez, escuchó las historias, copió un manuscrito oculto y lo tradujo. Sin ese momento de suerte, no sabríamos nada de esta conexión astronómica que inventaron los antiguos pueblos de América. Hoy es nuestro mayor tesoro.' },
-      { label: 'Conexión Cultural', icon: 'clock', text: 'Para estudiar ciencia hoy, nosotros vamos a aulas cerradas con pizarras blancas. Para aprender ciencia en la selva antigua, las personas se reunían alrededor del fuego para escuchar cantos. La historia poética y el mito colorido eran la mejor manera de guardar información compleja sobre la rotación terrestre en su memoria.' }
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'El texto del Popol Vuh casi se perdiÃ³ en el tiempo. Solo sobreviviÃ³ porque un sacerdote europeo en Guatemala, llamado Francisco XimÃ©nez, escuchÃ³ las historias, copiÃ³ un manuscrito oculto y lo tradujo. Sin ese momento de suerte, no sabrÃ­amos nada de esta conexiÃ³n astronÃ³mica que inventaron los antiguos pueblos de AmÃ©rica. Hoy es nuestro mayor tesoro.' },
+      { label: 'ConexiÃ³n Cultural', icon: 'clock', text: 'Para estudiar ciencia hoy, nosotros vamos a aulas cerradas con pizarras blancas. Para aprender ciencia en la selva antigua, las personas se reunÃ­an alrededor del fuego para escuchar cantos. La historia poÃ©tica y el mito colorido eran la mejor manera de guardar informaciÃ³n compleja sobre la rotaciÃ³n terrestre en su memoria.' }
     ],
-    fact: 'En muchas lenguas mayas indígenas, la palabra para decir sol, la palabra para decir día y la palabra para nombrar el concepto abstracto del tiempo son exactamente la misma palabra corta: K\'in. Esta antigua palabra de una sílaba resume perfectamente su ciencia astronómica. Entendían que el movimiento de los astros brillantes en el firmamento oscuro, la duración de nuestras pequeñas vidas mortales y el avance del tiempo eran todo la misma fuerza giratoria.'
+    fact: 'En muchas lenguas mayas indÃ­genas, la palabra para decir sol, la palabra para decir dÃ­a y la palabra para nombrar el concepto abstracto del tiempo son exactamente la misma palabra corta: K\'in. Esta antigua palabra de una sÃ­laba resume perfectamente su ciencia astronÃ³mica. EntendÃ­an que el movimiento de los astros brillantes en el firmamento oscuro, la duraciÃ³n de nuestras pequeÃ±as vidas mortales y el avance del tiempo eran todo la misma fuerza giratoria.'
   }
 ];
 
-// ─── Temporal Particle Field (Canvas Background) ──────────────────────────────
+// â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function TemporalField() {
   const canvasRef = useRef(null);
@@ -270,7 +270,7 @@ function TemporalField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Header ──────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function WakahChanHeader() {
   return (
@@ -300,13 +300,13 @@ function WakahChanHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#CFD8DC" fontSize="22" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="4">WAKAH CHAN</text>
-        <text x="300" y="105" textAnchor="middle" fill="rgba(255,213,79,0.9)" fontSize="12" fontFamily="monospace" letterSpacing="2">EL ÁRBOL CÓSMICO</text>
+        <text x="300" y="105" textAnchor="middle" fill="rgba(255,213,79,0.9)" fontSize="12" fontFamily="monospace" letterSpacing="2">EL ÃRBOL CÃ“SMICO</text>
       </svg>
     </div>
   );
 }
 
-// ─── Node Button ─────────────────────────────────────────────────────────────
+// â”€â”€â”€ Node Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function NodeButton({ node, isActive, onClick, index }) {
   return (
@@ -336,7 +336,7 @@ function NodeButton({ node, isActive, onClick, index }) {
         transition: 'all 0.3s ease', position: 'relative',
       }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
         {isActive && (
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
@@ -363,7 +363,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Expandable Section ──────────────────────────────────────────────────────
+// â”€â”€â”€ Expandable Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const DIRECTIONS = ['up', 'down', 'left', 'right'];
 const dirVariants = {
@@ -423,7 +423,7 @@ function ExpandableSection({ item, color }) {
   );
 }
 
-// ─── Content Panel ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
@@ -479,7 +479,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               border: `2px solid ${node.color}40`, flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
             </span>
             {node.title}
           </h3>
@@ -507,7 +507,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             return (
               <div key={i} style={{ gridColumn: isWide ? '1 / -1' : 'auto', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', padding: '1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative' }}>
                 <div style={{ position: 'absolute', top: '-8px', left: '12px', background: node.color, color: '#0B0E2D', fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px' }}>
-                  {i === 0 ? '◆' : '◇'}
+                  {i === 0 ? 'â—†' : 'â—‡'}
                 </div>
                 <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.75, color: 'rgba(255,255,255,0.85)' }}>
                   {para}
@@ -537,7 +537,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function ProgressBar({ nodes, activeNodeId }) {
   const activeIndex = nodes.findIndex(n => n.id === activeNodeId);
@@ -547,7 +547,7 @@ function ProgressBar({ nodes, activeNodeId }) {
     <div style={{ margin: '2rem auto 0', maxWidth: '400px', width: '100%', position: 'relative', zIndex: 10 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
         <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', fontWeight: 'bold' }}>
-          MÓDULO 9
+          MÃ“DULO 9
         </span>
         <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', fontWeight: 'bold' }}>
           {activeIndex === -1 ? 0 : activeIndex + 1} / {nodes.length}
@@ -564,7 +564,7 @@ function ProgressBar({ nodes, activeNodeId }) {
   );
 }
 
-// ─── Main Component ──────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function InteractiveInfographic_MayaM9() {
   const [activeNodeId, setActiveNodeId] = useState(INFOGRAPHIC_NODES[0].id);
@@ -609,7 +609,7 @@ export default function InteractiveInfographic_MayaM9() {
         <ProgressBar nodes={INFOGRAPHIC_NODES} activeNodeId={activeNodeId} />
         
         <div style={{ marginTop: '3rem', padding: '2rem', background: 'rgba(0,0,0,0.4)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
-          <h4 style={{ color: 'rgba(255,255,255,0.9)', margin: '0 0 1rem 0', fontSize: '1.1rem' }}>Bibliografía y Fuentes Académicas</h4>
+          <h4 style={{ color: 'rgba(255,255,255,0.9)', margin: '0 0 1rem 0', fontSize: '1.1rem' }}>BibliografÃ­a y Fuentes AcadÃ©micas</h4>
           <ul style={{ margin: 0, padding: '0 0 0 1.5rem', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', lineHeight: 1.8 }}>
             {BIBLIOGRAPHY.map((bib, i) => (
               <li key={i}>{bib}</li>

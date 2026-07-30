@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
 
 import ImageLightbox from './ImageLightbox';
-// ─── SVG Decorative Elements ─────────────────────────────────────────────────
+// â”€â”€â”€ SVG Decorative Elements â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function DecoAnkh({ size = 60, color = '#9B6BFF', style = {} }) {
   return (
     <svg width={size} height={size * 1.4} viewBox="0 0 40 56" style={{ opacity: 0.25, ...style }}>
@@ -154,7 +154,7 @@ const DECO_MAP = {
   'legado-cosmos': [DecoStarCluster, DecoAnkh, DecoCelestialMap],
 };
 
-// ─── Content Data ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const BIBLIOGRAPHY = [
   'Lull, J. & Belmonte, J.A. (2006). A firmament above Thebes, Journal for the History of Astronomy, 37',
   'Dorman, P.F. (1988). The Monuments of Senenmut, Kegan Paul',
@@ -170,13 +170,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_senenmut.png',
     image: '/assets/egypt/infographic_senenmut/hero_senenmut.png',
     content: [
-      'Imagina que eres el hombre más inteligente de todo Egipto, el favorito de la reina más poderosa de la historia. Ese hombre se llamaba Senenmut, y vivió hace unos 3,500 años, durante la dinastía XVIII. No era faraón, ni príncipe, ni guerrero... era algo mucho más interesante: ¡un arquitecto-científico que sabía de todo!',
-      'Senenmut era el arquitecto personal de Hatshepsut, la única mujer que gobernó Egipto como faraón con poder completo. Él diseñó su obra maestra: el templo de Deir el-Bahari, un edificio tan hermoso que hoy sigue siendo considerado una de las maravillas de la arquitectura antigua. Pero su tumba escondía un secreto aún más impresionante que el templo.',
-      'En las inscripciones de su tumba, Senenmut se describe como "maestro de todas las ciencias y artes conocidas". En el Antiguo Egipto no existía la separación entre disciplinas que tenemos hoy. El mismo hombre que diseñaba templos también calculaba posiciones de estrellas, supervisaba el tejido de telas de lino, coordinaba expediciones comerciales y escribía poesía. Era como mezclar a un ingeniero, un astrónomo, un artista y un empresario en una sola persona.',
-      'Su relación con Hatshepsut es uno de los grandes misterios de la historia. Algunos historiadores creen que eran pareja; otros piensan que era una relación estrictamente profesional. Lo cierto es que Hatshepsut le dio un privilegio que ningún otro no-real había recibido en toda la historia egipcia: ¡el permiso de tener su tumba en el Valle de los Reyes, un lugar reservado exclusivamente para faraones!',
-      'Su tumba secreta fue descubierta en 1925 por el arqueólogo Herbert Winlock del Museo Metropolitano de Nueva York. Estaba esculpida en la roca viva de la colina de Deir el-Bahari, escondida detrás de la tumba principal que Senenmut nunca llegó a usar. Cuando los arqueólogos entraron por primera vez y alumbraron el techo con sus linternas, descubrieron algo que los dejó sin palabras.',
+      'Imagina que eres el hombre mÃ¡s inteligente de todo Egipto, el favorito de la reina mÃ¡s poderosa de la historia. Ese hombre se llamaba Senenmut, y viviÃ³ hace unos 3,500 aÃ±os, durante la dinastÃ­a XVIII. No era faraÃ³n, ni prÃ­ncipe, ni guerrero... era algo mucho mÃ¡s interesante: Â¡un arquitecto-cientÃ­fico que sabÃ­a de todo!',
+      'Senenmut era el arquitecto personal de Hatshepsut, la Ãºnica mujer que gobernÃ³ Egipto como faraÃ³n con poder completo. Ã‰l diseÃ±Ã³ su obra maestra: el templo de Deir el-Bahari, un edificio tan hermoso que hoy sigue siendo considerado una de las maravillas de la arquitectura antigua. Pero su tumba escondÃ­a un secreto aÃºn mÃ¡s impresionante que el templo.',
+      'En las inscripciones de su tumba, Senenmut se describe como "maestro de todas las ciencias y artes conocidas". En el Antiguo Egipto no existÃ­a la separaciÃ³n entre disciplinas que tenemos hoy. El mismo hombre que diseÃ±aba templos tambiÃ©n calculaba posiciones de estrellas, supervisaba el tejido de telas de lino, coordinaba expediciones comerciales y escribÃ­a poesÃ­a. Era como mezclar a un ingeniero, un astrÃ³nomo, un artista y un empresario en una sola persona.',
+      'Su relaciÃ³n con Hatshepsut es uno de los grandes misterios de la historia. Algunos historiadores creen que eran pareja; otros piensan que era una relaciÃ³n estrictamente profesional. Lo cierto es que Hatshepsut le dio un privilegio que ningÃºn otro no-real habÃ­a recibido en toda la historia egipcia: Â¡el permiso de tener su tumba en el Valle de los Reyes, un lugar reservado exclusivamente para faraones!',
+      'Su tumba secreta fue descubierta en 1925 por el arqueÃ³logo Herbert Winlock del Museo Metropolitano de Nueva York. Estaba esculpida en la roca viva de la colina de Deir el-Bahari, escondida detrÃ¡s de la tumba principal que Senenmut nunca llegÃ³ a usar. Cuando los arqueÃ³logos entraron por primera vez y alumbraron el techo con sus linternas, descubrieron algo que los dejÃ³ sin palabras.',
     ],
-    fact: 'Senenmut tenía más de 80 títulos oficiales, más que cualquier otro funcionario en la historia de Egipto. Entre ellos: "Supervisor de los graneros de Amón", "Jefe de los trabajos del rey", "Tutor de la princesa Neferura" y "Guardián de los sellos reales". ¡Era básicamente el hombre que hacía funcionar todo el país!',
+    fact: 'Senenmut tenÃ­a mÃ¡s de 80 tÃ­tulos oficiales, mÃ¡s que cualquier otro funcionario en la historia de Egipto. Entre ellos: "Supervisor de los graneros de AmÃ³n", "Jefe de los trabajos del rey", "Tutor de la princesa Neferura" y "GuardiÃ¡n de los sellos reales". Â¡Era bÃ¡sicamente el hombre que hacÃ­a funcionar todo el paÃ­s!',
   },
   {
     id: 'techo-astronomico',
@@ -185,13 +185,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_techo.png',
     image: '/assets/egypt/infographic_senenmut/hero_techo.png',
     content: [
-      '¿Qué pasaría si pudieras tomar una foto del cielo entero por la noche y pegarla en el techo de tu habitación? Eso es exactamente lo que hizo Senenmut hace 3,500 años, pero en vez de usar una cámara, usó a los mejores artistas de Egipto y pigmentos minerales que todavía brillan hoy.',
-      'El techo astronómico de su tumba es el primer mapa celeste completo que conocemos. Tiene dos mitades perfectamente diferenciadas: la mitad norte muestra las constelaciones circumpolares (las que nunca se ponen, como la Osa Mayor), y la mitad sur muestra los 36 grupos de estrellas llamados "Decanos" que los egipcios usaban como reloj nocturno.',
-      'Los artistas usaron pigmentos minerales de altísima calidad: lapislázuli molido para el azul profundo del cielo nocturno, ocre para el amarillo dorado de las estrellas, y carbón vegetal para el negro del espacio. Estos colores son tan estables químicamente que, después de 3,500 años en la oscuridad total de la tumba, ¡todavía brillan como si los hubieran pintado ayer!',
-      'Lo que hace único a este techo es que combina AMBAS zonas del cielo en una sola imagen. Antes de Senenmut, los egipcios representaban el cielo norte o el cielo sur por separado. Él fue el primero en juntar todo en un solo mapa, creando lo que podemos considerar el primer "atlas celeste" de la historia.',
-      'La orientación de la tumba también tiene significado astronómico. La entrada está colocada de tal forma que, en ciertos días del año, la luz del Sol penetra hasta las pinturas del techo, iluminando momentáneamente el mapa celeste. Es como si Senenmut hubiera diseñado un efecto especial donde el Sol real "visitara" su cielo pintado.',
+      'Â¿QuÃ© pasarÃ­a si pudieras tomar una foto del cielo entero por la noche y pegarla en el techo de tu habitaciÃ³n? Eso es exactamente lo que hizo Senenmut hace 3,500 aÃ±os, pero en vez de usar una cÃ¡mara, usÃ³ a los mejores artistas de Egipto y pigmentos minerales que todavÃ­a brillan hoy.',
+      'El techo astronÃ³mico de su tumba es el primer mapa celeste completo que conocemos. Tiene dos mitades perfectamente diferenciadas: la mitad norte muestra las constelaciones circumpolares (las que nunca se ponen, como la Osa Mayor), y la mitad sur muestra los 36 grupos de estrellas llamados "Decanos" que los egipcios usaban como reloj nocturno.',
+      'Los artistas usaron pigmentos minerales de altÃ­sima calidad: lapislÃ¡zuli molido para el azul profundo del cielo nocturno, ocre para el amarillo dorado de las estrellas, y carbÃ³n vegetal para el negro del espacio. Estos colores son tan estables quÃ­micamente que, despuÃ©s de 3,500 aÃ±os en la oscuridad total de la tumba, Â¡todavÃ­a brillan como si los hubieran pintado ayer!',
+      'Lo que hace Ãºnico a este techo es que combina AMBAS zonas del cielo en una sola imagen. Antes de Senenmut, los egipcios representaban el cielo norte o el cielo sur por separado. Ã‰l fue el primero en juntar todo en un solo mapa, creando lo que podemos considerar el primer "atlas celeste" de la historia.',
+      'La orientaciÃ³n de la tumba tambiÃ©n tiene significado astronÃ³mico. La entrada estÃ¡ colocada de tal forma que, en ciertos dÃ­as del aÃ±o, la luz del Sol penetra hasta las pinturas del techo, iluminando momentÃ¡neamente el mapa celeste. Es como si Senenmut hubiera diseÃ±ado un efecto especial donde el Sol real "visitara" su cielo pintado.',
     ],
-    fact: 'Hoy, equipos científicos documentan el techo de Senenmut con fotogrametría de alta resolución, escaneo láser 3D y análisis multiespectral. Han descubierto capas de pigmento invisibles a simple vista que revelan correcciones y cambios que los artistas hicieron durante la creación del mapa. ¡Hasta los antiguos egipcios borraban y volvían a dibujar!',
+    fact: 'Hoy, equipos cientÃ­ficos documentan el techo de Senenmut con fotogrametrÃ­a de alta resoluciÃ³n, escaneo lÃ¡ser 3D y anÃ¡lisis multiespectral. Han descubierto capas de pigmento invisibles a simple vista que revelan correcciones y cambios que los artistas hicieron durante la creaciÃ³n del mapa. Â¡Hasta los antiguos egipcios borraban y volvÃ­an a dibujar!',
   },
   {
     id: 'planetas-barcas',
@@ -200,13 +200,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_planetas.png',
     image: '/assets/egypt/infographic_senenmut/hero_planetas.png',
     content: [
-      'Si miras el cielo por la noche, verás miles de estrellas que parecen moverse todas juntas, como si estuvieran pegadas a una gran bola que gira lentamente. Pero hay cinco "estrellas" que hacen trampas: se mueven por su cuenta, van más rápido o más lento, ¡e incluso a veces parecen ir hacia atrás! Esas son los planetas, y los egipcios los descubrieron hace miles de años.',
-      'El mapa de Senenmut incluye los cinco planetas visibles a simple vista: Mercurio, Venus, Marte, Júpiter y Saturno. Pero no los dibujó como puntos de luz: los representó como barcas divinas navegando por el cielo. Para los egipcios, si algo se movía de forma diferente al resto, era porque tenía "voluntad propia", ¡como un barco con su propio capitán!',
-      'Cada planeta-barca tenía su propia identidad divina. Los egipcios llamaban a Júpiter "Hor-tash-tawy" (Horus que ilumina las dos tierras) y a Saturno "Hor-ka-pet" (Horus toro del cielo). Venus era "la estrella de la mañana" o "la estrella de la tarde" dependiendo de cuándo aparecía. Marte, con su brillo rojizo, estaba asociado con Horus el Rojo.',
-      'Los científicos modernos han verificado con software de simulación astronómica que las posiciones de los planetas en el mapa de Senenmut corresponden a alineaciones reales que ocurrieron en fechas específicas durante los siglos XV y XVI a.C. Esto significa que el mapa no es pura fantasía religiosa: ¡es una representación astronómica real de un cielo observable en una fecha concreta!',
-      'Este es un dato increíble: el mapa de Senenmut es la primera representación conocida en la historia donde los planetas se muestran como objetos distintos de las estrellas fijas. Los egipcios entendieron, 2,000 años antes que los griegos, que había dos tipos de objetos en el cielo: los que están "fijos" y los que "viajan". La palabra griega "planetes" (errantes) vino después, pero la idea ya estaba aquí.',
+      'Si miras el cielo por la noche, verÃ¡s miles de estrellas que parecen moverse todas juntas, como si estuvieran pegadas a una gran bola que gira lentamente. Pero hay cinco "estrellas" que hacen trampas: se mueven por su cuenta, van mÃ¡s rÃ¡pido o mÃ¡s lento, Â¡e incluso a veces parecen ir hacia atrÃ¡s! Esas son los planetas, y los egipcios los descubrieron hace miles de aÃ±os.',
+      'El mapa de Senenmut incluye los cinco planetas visibles a simple vista: Mercurio, Venus, Marte, JÃºpiter y Saturno. Pero no los dibujÃ³ como puntos de luz: los representÃ³ como barcas divinas navegando por el cielo. Para los egipcios, si algo se movÃ­a de forma diferente al resto, era porque tenÃ­a "voluntad propia", Â¡como un barco con su propio capitÃ¡n!',
+      'Cada planeta-barca tenÃ­a su propia identidad divina. Los egipcios llamaban a JÃºpiter "Hor-tash-tawy" (Horus que ilumina las dos tierras) y a Saturno "Hor-ka-pet" (Horus toro del cielo). Venus era "la estrella de la maÃ±ana" o "la estrella de la tarde" dependiendo de cuÃ¡ndo aparecÃ­a. Marte, con su brillo rojizo, estaba asociado con Horus el Rojo.',
+      'Los cientÃ­ficos modernos han verificado con software de simulaciÃ³n astronÃ³mica que las posiciones de los planetas en el mapa de Senenmut corresponden a alineaciones reales que ocurrieron en fechas especÃ­ficas durante los siglos XV y XVI a.C. Esto significa que el mapa no es pura fantasÃ­a religiosa: Â¡es una representaciÃ³n astronÃ³mica real de un cielo observable en una fecha concreta!',
+      'Este es un dato increÃ­ble: el mapa de Senenmut es la primera representaciÃ³n conocida en la historia donde los planetas se muestran como objetos distintos de las estrellas fijas. Los egipcios entendieron, 2,000 aÃ±os antes que los griegos, que habÃ­a dos tipos de objetos en el cielo: los que estÃ¡n "fijos" y los que "viajan". La palabra griega "planetes" (errantes) vino despuÃ©s, pero la idea ya estaba aquÃ­.',
     ],
-    fact: 'Venus puede ser tanto "estrella de la mañana" como "estrella de la tarde" porque su órbita está más cerca del Sol que la Tierra. Dependiendo de dónde esté en su órbita, la vemos justo antes del amanecer o justo después del atardecer. ¡Los egipcios tardaron siglos en darse cuenta de que eran el mismo objeto!',
+    fact: 'Venus puede ser tanto "estrella de la maÃ±ana" como "estrella de la tarde" porque su Ã³rbita estÃ¡ mÃ¡s cerca del Sol que la Tierra. Dependiendo de dÃ³nde estÃ© en su Ã³rbita, la vemos justo antes del amanecer o justo despuÃ©s del atardecer. Â¡Los egipcios tardaron siglos en darse cuenta de que eran el mismo objeto!',
   },
   {
     id: 'constelaciones',
@@ -215,13 +215,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_constelaciones.png',
     image: '/assets/egypt/infographic_senenmut/hero_constelaciones.png',
     content: [
-      '¿Sabías que los egipcios veían animales completamente diferentes a nosotros cuando miraban las estrellas? Donde nosotros vemos la Osa Mayor (un oso o un carro), ellos veían a "Mesjetiu", ¡la pata delantera de un toro! Y donde nosotros vemos a Draco (el dragón), ellos veían un cocodrilo y un hipopótamo cósmicos.',
-      'La mitad norte del techo de Senenmut muestra las constelaciones circumpolares, que son las que nunca se ponen: están tan cerca del Polo Norte celeste que dan vueltas alrededor de él toda la noche sin tocar el horizonte. Para los egipcios, estas constelaciones eran "inmortales" porque nunca "morían" (nunca desaparecían bajo el horizonte).',
-      'La constelación más importante era Mesjetiu (nuestra Osa Mayor). Los egipcios la representaban como la pata delantera de un toro sagrado que había sido cortada por Horus para evitar que Seth causara caos en el cielo. El Hipopótamo celestial (la constelación que incluye nuestra Draco) era Taweret, la diosa protectora de los partos, que sujetaba la pata del toro con una cadena invisible de estrellas.',
-      'El Cocodrilo celestial estaba asociado con Sobek, el dios del agua y la fertilidad. Aparecía cerca del Hipopótamo en las representaciones egipcias, y los sacerdotes-astrónomos enseñaban que estos tres "monstruos del cielo" (Toro, Hipopótamo y Cocodrilo) mantenían el orden del universo girando eternamente alrededor del punto central del cielo.',
-      'Los nombres egipcios de las constelaciones nos enseñan algo importante: cada cultura ve el cielo a través de sus propios ojos. Un pastor griego veía osos y cazadores; un navegante polinesio veía canoas y anzuelos; un nómada egipcio veía los animales del Nilo. Las mismas estrellas, contando historias completamente diferentes. ¡El cielo es el primer libro de la humanidad, y cada pueblo lo leyó en su propio idioma!',
+      'Â¿SabÃ­as que los egipcios veÃ­an animales completamente diferentes a nosotros cuando miraban las estrellas? Donde nosotros vemos la Osa Mayor (un oso o un carro), ellos veÃ­an a "Mesjetiu", Â¡la pata delantera de un toro! Y donde nosotros vemos a Draco (el dragÃ³n), ellos veÃ­an un cocodrilo y un hipopÃ³tamo cÃ³smicos.',
+      'La mitad norte del techo de Senenmut muestra las constelaciones circumpolares, que son las que nunca se ponen: estÃ¡n tan cerca del Polo Norte celeste que dan vueltas alrededor de Ã©l toda la noche sin tocar el horizonte. Para los egipcios, estas constelaciones eran "inmortales" porque nunca "morÃ­an" (nunca desaparecÃ­an bajo el horizonte).',
+      'La constelaciÃ³n mÃ¡s importante era Mesjetiu (nuestra Osa Mayor). Los egipcios la representaban como la pata delantera de un toro sagrado que habÃ­a sido cortada por Horus para evitar que Seth causara caos en el cielo. El HipopÃ³tamo celestial (la constelaciÃ³n que incluye nuestra Draco) era Taweret, la diosa protectora de los partos, que sujetaba la pata del toro con una cadena invisible de estrellas.',
+      'El Cocodrilo celestial estaba asociado con Sobek, el dios del agua y la fertilidad. AparecÃ­a cerca del HipopÃ³tamo en las representaciones egipcias, y los sacerdotes-astrÃ³nomos enseÃ±aban que estos tres "monstruos del cielo" (Toro, HipopÃ³tamo y Cocodrilo) mantenÃ­an el orden del universo girando eternamente alrededor del punto central del cielo.',
+      'Los nombres egipcios de las constelaciones nos enseÃ±an algo importante: cada cultura ve el cielo a travÃ©s de sus propios ojos. Un pastor griego veÃ­a osos y cazadores; un navegante polinesio veÃ­a canoas y anzuelos; un nÃ³mada egipcio veÃ­a los animales del Nilo. Las mismas estrellas, contando historias completamente diferentes. Â¡El cielo es el primer libro de la humanidad, y cada pueblo lo leyÃ³ en su propio idioma!',
     ],
-    fact: 'La Osa Mayor (Mesjetiu para los egipcios) es tan importante astronómicamente que aparece en las tapas de ataúdes egipcios, en techos de templos y en papiros funerarios. Era considerada la "brújula del cielo" porque sus estrellas apuntan al Polo Norte celeste. Los constructores de las pirámides la usaban para alinear sus monumentos con el norte verdadero.',
+    fact: 'La Osa Mayor (Mesjetiu para los egipcios) es tan importante astronÃ³micamente que aparece en las tapas de ataÃºdes egipcios, en techos de templos y en papiros funerarios. Era considerada la "brÃºjula del cielo" porque sus estrellas apuntan al Polo Norte celeste. Los constructores de las pirÃ¡mides la usaban para alinear sus monumentos con el norte verdadero.',
   },
   {
     id: 'decanos',
@@ -230,28 +230,28 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_decanos.png',
     image: '/assets/egypt/infographic_senenmut/hero_decanos.png',
     content: [
-      'Antes de que existieran los relojes, ¿cómo sabías qué hora era por la noche? Los egipcios inventaron algo genial: dividieron el cielo en 36 grupos de estrellas llamados "Decanos" (del griego "dekanoi", porque cada uno gobernaba 10 días del año). Cada hora de la noche, un nuevo Decano aparecía por el horizonte este, como un reloj de estrellas.',
-      'El sistema funcionaba así: los sacerdotes-astrónomos, llamados "Observadores de la Hora", se sentaban en los techos de los templos y miraban hacia el este. Cuando un grupo específico de estrellas (un Decano) aparecía sobre el horizonte, marcaba el inicio de una nueva hora. La noche se dividía en 12 horas, cada una señalada por la aparición de un Decano diferente.',
-      'El techo de Senenmut muestra los 36 Decanos de forma clara y ordenada en la mitad sur del mapa. Cada Decano está representado por un símbolo específico que los astrónomos podían identificar rápidamente. Combinados con las 12 horas del día (medidas con relojes de sol), los Decanos creaban el día de 24 horas que seguimos usando hoy.',
-      'Este es un dato que casi nadie sabe: ¡la razón por la que nuestro día tiene 24 horas viene directamente de los Decanos egipcios! Los griegos adoptaron el sistema de 12 horas nocturnas + 12 horas diurnas de los egipcios, los romanos lo heredaron de los griegos, y nosotros lo heredamos de los romanos. Cada vez que miras un reloj, estás usando un invento egipcio de hace 4,000 años.',
-      'Los Decanos también servían para el calendario. Como cada Decano "reinaba" durante 10 días (una "década" egipcia), 36 Decanos × 10 días = 360 días. Los egipcios añadían 5 días extra al final del año (llamados "epagómenos" o días "sobre el año") para completar los 365 días del año solar. ¡Su calendario era tan preciso que solo se equivocaba un día cada cuatro años!',
+      'Antes de que existieran los relojes, Â¿cÃ³mo sabÃ­as quÃ© hora era por la noche? Los egipcios inventaron algo genial: dividieron el cielo en 36 grupos de estrellas llamados "Decanos" (del griego "dekanoi", porque cada uno gobernaba 10 dÃ­as del aÃ±o). Cada hora de la noche, un nuevo Decano aparecÃ­a por el horizonte este, como un reloj de estrellas.',
+      'El sistema funcionaba asÃ­: los sacerdotes-astrÃ³nomos, llamados "Observadores de la Hora", se sentaban en los techos de los templos y miraban hacia el este. Cuando un grupo especÃ­fico de estrellas (un Decano) aparecÃ­a sobre el horizonte, marcaba el inicio de una nueva hora. La noche se dividÃ­a en 12 horas, cada una seÃ±alada por la apariciÃ³n de un Decano diferente.',
+      'El techo de Senenmut muestra los 36 Decanos de forma clara y ordenada en la mitad sur del mapa. Cada Decano estÃ¡ representado por un sÃ­mbolo especÃ­fico que los astrÃ³nomos podÃ­an identificar rÃ¡pidamente. Combinados con las 12 horas del dÃ­a (medidas con relojes de sol), los Decanos creaban el dÃ­a de 24 horas que seguimos usando hoy.',
+      'Este es un dato que casi nadie sabe: Â¡la razÃ³n por la que nuestro dÃ­a tiene 24 horas viene directamente de los Decanos egipcios! Los griegos adoptaron el sistema de 12 horas nocturnas + 12 horas diurnas de los egipcios, los romanos lo heredaron de los griegos, y nosotros lo heredamos de los romanos. Cada vez que miras un reloj, estÃ¡s usando un invento egipcio de hace 4,000 aÃ±os.',
+      'Los Decanos tambiÃ©n servÃ­an para el calendario. Como cada Decano "reinaba" durante 10 dÃ­as (una "dÃ©cada" egipcia), 36 Decanos Ã— 10 dÃ­as = 360 dÃ­as. Los egipcios aÃ±adÃ­an 5 dÃ­as extra al final del aÃ±o (llamados "epagÃ³menos" o dÃ­as "sobre el aÃ±o") para completar los 365 dÃ­as del aÃ±o solar. Â¡Su calendario era tan preciso que solo se equivocaba un dÃ­a cada cuatro aÃ±os!',
     ],
-    fact: 'La estrella Sirio (llamada "Sopdet" por los egipcios) era el Decano más importante de todos. Su primera aparición en el horizonte después de 70 días de invisibilidad (el "orto helíaco") marcaba el inicio del año nuevo egipcio y coincidía casi exactamente con el inicio de la inundación anual del Nilo. ¡Una estrella les avisaba de que el río iba a crecer!',
+    fact: 'La estrella Sirio (llamada "Sopdet" por los egipcios) era el Decano mÃ¡s importante de todos. Su primera apariciÃ³n en el horizonte despuÃ©s de 70 dÃ­as de invisibilidad (el "orto helÃ­aco") marcaba el inicio del aÃ±o nuevo egipcio y coincidÃ­a casi exactamente con el inicio de la inundaciÃ³n anual del Nilo. Â¡Una estrella les avisaba de que el rÃ­o iba a crecer!',
   },
   {
     id: 'hatshepsut',
-    title: 'La Reina Faraón',
+    title: 'La Reina FaraÃ³n',
     color: '#E91E63',
     btnImage: '/assets/egypt/infographic_senenmut/btn_hatshepsut.png',
     image: '/assets/egypt/infographic_senenmut/hero_hatshepsut.png',
     content: [
-      'Para entender la tumba de Senenmut, hay que conocer a la mujer que hizo posible todo: Hatshepsut, la reina que se convirtió en faraón. En el Antiguo Egipto, las mujeres tenían más derechos que en casi cualquier otra civilización antigua: podían heredar propiedades, divorciarse y hacer negocios. Pero gobernar como faraón... eso no se había visto nunca.',
-      'Hatshepsut no era una guerrera; era una líder estratégica. En vez de conquistar territorios con ejércitos, expandió el comercio. Organizó la famosa expedición al País de Punt (probablemente la actual Somalia o Eritrea), donde trajo árboles de incienso, oro, marfil, pieles de leopardo y monos vivos. Fue una de las expediciones comerciales más ambiciosas de la antigüedad.',
-      'Para legitimarse como faraón, Hatshepsut se hacía representar con barba postiza, el nemes (tocado real) y todos los símbolos del poder faraónico. No era que quisiera "hacerse pasar por hombre": era que el cargo de faraón estaba tan asociado con esos símbolos que necesitaba usarlos para que la gente la reconociera como gobernante legítima. Es como si un presidente moderno usara traje y corbata aunque no le gustaran.',
-      'El templo de Deir el-Bahari, diseñado por Senenmut para Hatshepsut, es una obra maestra de tres terrazas escalonadas construidas contra el acantilado de la montaña. Sus proporciones matemáticas usan la proporción áurea (1.618...), el mismo número que aparece en los pétalos de las flores y en las espirales de los caracoles. Es uno de los edificios más elegantes jamás construidos.',
-      'Después de la muerte de Hatshepsut, su sucesor Tutmosis III ordenó borrar su nombre y sus imágenes de todos los monumentos. Pero la tumba secreta de Senenmut, oculta bajo la roca, escapó a la destrucción. Irónicamente, el mapa celeste que Senenmut pintó para honrar a su reina sobrevivió intacto durante 3,500 años, convirtiéndose en uno de los legados científicos más importantes de la era de Hatshepsut.',
+      'Para entender la tumba de Senenmut, hay que conocer a la mujer que hizo posible todo: Hatshepsut, la reina que se convirtiÃ³ en faraÃ³n. En el Antiguo Egipto, las mujeres tenÃ­an mÃ¡s derechos que en casi cualquier otra civilizaciÃ³n antigua: podÃ­an heredar propiedades, divorciarse y hacer negocios. Pero gobernar como faraÃ³n... eso no se habÃ­a visto nunca.',
+      'Hatshepsut no era una guerrera; era una lÃ­der estratÃ©gica. En vez de conquistar territorios con ejÃ©rcitos, expandiÃ³ el comercio. OrganizÃ³ la famosa expediciÃ³n al PaÃ­s de Punt (probablemente la actual Somalia o Eritrea), donde trajo Ã¡rboles de incienso, oro, marfil, pieles de leopardo y monos vivos. Fue una de las expediciones comerciales mÃ¡s ambiciosas de la antigÃ¼edad.',
+      'Para legitimarse como faraÃ³n, Hatshepsut se hacÃ­a representar con barba postiza, el nemes (tocado real) y todos los sÃ­mbolos del poder faraÃ³nico. No era que quisiera "hacerse pasar por hombre": era que el cargo de faraÃ³n estaba tan asociado con esos sÃ­mbolos que necesitaba usarlos para que la gente la reconociera como gobernante legÃ­tima. Es como si un presidente moderno usara traje y corbata aunque no le gustaran.',
+      'El templo de Deir el-Bahari, diseÃ±ado por Senenmut para Hatshepsut, es una obra maestra de tres terrazas escalonadas construidas contra el acantilado de la montaÃ±a. Sus proporciones matemÃ¡ticas usan la proporciÃ³n Ã¡urea (1.618...), el mismo nÃºmero que aparece en los pÃ©talos de las flores y en las espirales de los caracoles. Es uno de los edificios mÃ¡s elegantes jamÃ¡s construidos.',
+      'DespuÃ©s de la muerte de Hatshepsut, su sucesor Tutmosis III ordenÃ³ borrar su nombre y sus imÃ¡genes de todos los monumentos. Pero la tumba secreta de Senenmut, oculta bajo la roca, escapÃ³ a la destrucciÃ³n. IrÃ³nicamente, el mapa celeste que Senenmut pintÃ³ para honrar a su reina sobreviviÃ³ intacto durante 3,500 aÃ±os, convirtiÃ©ndose en uno de los legados cientÃ­ficos mÃ¡s importantes de la era de Hatshepsut.',
     ],
-    fact: 'Hatshepsut fue tan exitosa que Egipto vivió uno de sus periodos de mayor prosperidad durante su reinado de 22 años. Construyó más monumentos que cualquier otro faraón anterior. Cuando Tutmosis III borró su nombre, no fue por odio personal: fue porque necesitaba justificar su propia legitimidad como heredero directo de Tutmosis II, saltándose el reinado de Hatshepsut.',
+    fact: 'Hatshepsut fue tan exitosa que Egipto viviÃ³ uno de sus periodos de mayor prosperidad durante su reinado de 22 aÃ±os. ConstruyÃ³ mÃ¡s monumentos que cualquier otro faraÃ³n anterior. Cuando Tutmosis III borrÃ³ su nombre, no fue por odio personal: fue porque necesitaba justificar su propia legitimidad como heredero directo de Tutmosis II, saltÃ¡ndose el reinado de Hatshepsut.',
   },
   {
     id: 'ciencia-moderna',
@@ -260,32 +260,32 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_ciencia.png',
     image: '/assets/egypt/infographic_senenmut/hero_ciencia.png',
     content: [
-      'Durante siglos, el mapa de Senenmut fue un enigma. Los científicos sabían que representaba el cielo, pero no podían descifrar todos los símbolos. ¿Ese círculo era Júpiter o Saturno? ¿Esa barca era Venus o Mercurio? Fue como tener un mapa del tesoro sin saber qué significaban los símbolos.',
-      'El gran avance llegó cuando los astrónomos empezaron a usar software de simulación astronómica (como Stellarium o programas de la NASA) para "rebobinar" el cielo y ver exactamente cómo se veía desde Luxor hace 3,500 años. Compararon las posiciones simuladas de los planetas con las posiciones en el mapa y descubrieron correspondencias sorprendentes.',
-      'Los resultados sugieren que el mapa no es genérico o simbólico: representa una fecha real. Las posiciones relativas de los planetas en el mapa coinciden con alineaciones que ocurrieron en momentos específicos del reinado de Hatshepsut. Es como si Senenmut hubiera "tomado una foto" del cielo de una noche particular y la hubiera pintado en su techo.',
-      'El famoso Techo Astronómico de Seti I, pintado unos 200 años después en el Valle de los Reyes, es claramente una versión expandida y refinada del mapa de Senenmut. Esto demuestra que el conocimiento astronómico egipcio se transmitía de generación en generación, con cada nueva versión más completa y precisa. Exactamente como funciona la ciencia hoy: cada generación mejora lo que heredó.',
-      'Hoy, la identificación precisa de todos los símbolos del mapa sigue siendo un área activa de investigación. Cada pocos años se publican nuevas interpretaciones en revistas científicas. Un símbolo que muestra un hombre con una estrella sobre la cabeza podría ser la representación más antigua del planeta Júpiter. Otro símbolo podría ser Venus en su fase de lucero matutino. El mapa de Senenmut sigue revelando secretos 3,500 años después.',
+      'Durante siglos, el mapa de Senenmut fue un enigma. Los cientÃ­ficos sabÃ­an que representaba el cielo, pero no podÃ­an descifrar todos los sÃ­mbolos. Â¿Ese cÃ­rculo era JÃºpiter o Saturno? Â¿Esa barca era Venus o Mercurio? Fue como tener un mapa del tesoro sin saber quÃ© significaban los sÃ­mbolos.',
+      'El gran avance llegÃ³ cuando los astrÃ³nomos empezaron a usar software de simulaciÃ³n astronÃ³mica (como Stellarium o programas de la NASA) para "rebobinar" el cielo y ver exactamente cÃ³mo se veÃ­a desde Luxor hace 3,500 aÃ±os. Compararon las posiciones simuladas de los planetas con las posiciones en el mapa y descubrieron correspondencias sorprendentes.',
+      'Los resultados sugieren que el mapa no es genÃ©rico o simbÃ³lico: representa una fecha real. Las posiciones relativas de los planetas en el mapa coinciden con alineaciones que ocurrieron en momentos especÃ­ficos del reinado de Hatshepsut. Es como si Senenmut hubiera "tomado una foto" del cielo de una noche particular y la hubiera pintado en su techo.',
+      'El famoso Techo AstronÃ³mico de Seti I, pintado unos 200 aÃ±os despuÃ©s en el Valle de los Reyes, es claramente una versiÃ³n expandida y refinada del mapa de Senenmut. Esto demuestra que el conocimiento astronÃ³mico egipcio se transmitÃ­a de generaciÃ³n en generaciÃ³n, con cada nueva versiÃ³n mÃ¡s completa y precisa. Exactamente como funciona la ciencia hoy: cada generaciÃ³n mejora lo que heredÃ³.',
+      'Hoy, la identificaciÃ³n precisa de todos los sÃ­mbolos del mapa sigue siendo un Ã¡rea activa de investigaciÃ³n. Cada pocos aÃ±os se publican nuevas interpretaciones en revistas cientÃ­ficas. Un sÃ­mbolo que muestra un hombre con una estrella sobre la cabeza podrÃ­a ser la representaciÃ³n mÃ¡s antigua del planeta JÃºpiter. Otro sÃ­mbolo podrÃ­a ser Venus en su fase de lucero matutino. El mapa de Senenmut sigue revelando secretos 3,500 aÃ±os despuÃ©s.',
     ],
-    fact: 'El "orto helíaco" de Sirio (cuando aparece por primera vez justo antes del amanecer después de 70 días de invisibilidad) era la observación astronómica más importante del año egipcio. Los científicos modernos han calculado que en la época de Senenmut, este evento ocurría alrededor del 17 de julio en nuestro calendario. ¡Los sacerdotes esperaban ese día como nosotros esperamos la Navidad!',
+    fact: 'El "orto helÃ­aco" de Sirio (cuando aparece por primera vez justo antes del amanecer despuÃ©s de 70 dÃ­as de invisibilidad) era la observaciÃ³n astronÃ³mica mÃ¡s importante del aÃ±o egipcio. Los cientÃ­ficos modernos han calculado que en la Ã©poca de Senenmut, este evento ocurrÃ­a alrededor del 17 de julio en nuestro calendario. Â¡Los sacerdotes esperaban ese dÃ­a como nosotros esperamos la Navidad!',
   },
   {
     id: 'legado-cosmos',
-    title: 'El Legado Cósmico',
+    title: 'El Legado CÃ³smico',
     color: '#AB47BC',
     btnImage: '/assets/egypt/infographic_senenmut/btn_legado.png',
     image: '/assets/egypt/infographic_senenmut/hero_legado.png',
     content: [
-      'El mapa de Senenmut no se quedó solo en una tumba. Su influencia se extendió como ondas en un lago. Los sacerdotes de las generaciones siguientes lo copiaron, lo mejoraron y lo expandieron en los techos de los templos y tumbas reales más importantes de Egipto. Es como una cadena de conocimiento que conecta el pasado con el presente.',
-      'Los comerciantes fenicios llevaron conocimientos astronómicos egipcios por todo el Mediterráneo. Los filósofos griegos como Tales de Mileto, Pitágoras y Platón viajaron a Egipto y estudiaron en las escuelas sacerdotales. Cuando Alejandro Magno fundó Alejandría en 332 a.C., la fusión del pensamiento egipcio, griego y babilónico creó la astronomía científica que Ptolomeo sistematizó en su "Almagesto".',
-      'La idea de dividir la noche en 12 horas usando los Decanos viajó de Egipto a Grecia, de Grecia a Roma, y de Roma a todo el mundo occidental. El concepto de un calendario de 365 días con ajustes periódicos también es de origen egipcio. Julio César consultó al astrónomo egipcio Sosígenes para crear el calendario Juliano en el 46 a.C., que con ligeras modificaciones del papa Gregorio XIII se convirtió en el calendario que usamos hoy.',
-      'Piensa en esto: cada vez que miras un reloj de 24 horas, cada vez que consultas el calendario, cada vez que alguien dice "son las 3 de la mañana"... estás usando inventos que tienen raíces en las noches estrelladas del Antiguo Egipto. Los sacerdotes que observaban los Decanos desde los techos de los templos no podían imaginar que su sistema de medir el tiempo seguiría usándose 4,000 años después.',
-      'El gran mensaje del mapa de Senenmut es que los humanos siempre hemos querido representar y entender el universo. Desde las pinturas en cuevas hasta los telescopios espaciales como el James Webb, pasando por los techos pintados de una tumba en Luxor, la curiosidad humana por el cosmos ha sido constante. Senenmut nos dejó un mensaje que sigue brillando: mira hacia arriba, aprende los patrones del cielo, y úsalos para vivir mejor.',
+      'El mapa de Senenmut no se quedÃ³ solo en una tumba. Su influencia se extendiÃ³ como ondas en un lago. Los sacerdotes de las generaciones siguientes lo copiaron, lo mejoraron y lo expandieron en los techos de los templos y tumbas reales mÃ¡s importantes de Egipto. Es como una cadena de conocimiento que conecta el pasado con el presente.',
+      'Los comerciantes fenicios llevaron conocimientos astronÃ³micos egipcios por todo el MediterrÃ¡neo. Los filÃ³sofos griegos como Tales de Mileto, PitÃ¡goras y PlatÃ³n viajaron a Egipto y estudiaron en las escuelas sacerdotales. Cuando Alejandro Magno fundÃ³ AlejandrÃ­a en 332 a.C., la fusiÃ³n del pensamiento egipcio, griego y babilÃ³nico creÃ³ la astronomÃ­a cientÃ­fica que Ptolomeo sistematizÃ³ en su "Almagesto".',
+      'La idea de dividir la noche en 12 horas usando los Decanos viajÃ³ de Egipto a Grecia, de Grecia a Roma, y de Roma a todo el mundo occidental. El concepto de un calendario de 365 dÃ­as con ajustes periÃ³dicos tambiÃ©n es de origen egipcio. Julio CÃ©sar consultÃ³ al astrÃ³nomo egipcio SosÃ­genes para crear el calendario Juliano en el 46 a.C., que con ligeras modificaciones del papa Gregorio XIII se convirtiÃ³ en el calendario que usamos hoy.',
+      'Piensa en esto: cada vez que miras un reloj de 24 horas, cada vez que consultas el calendario, cada vez que alguien dice "son las 3 de la maÃ±ana"... estÃ¡s usando inventos que tienen raÃ­ces en las noches estrelladas del Antiguo Egipto. Los sacerdotes que observaban los Decanos desde los techos de los templos no podÃ­an imaginar que su sistema de medir el tiempo seguirÃ­a usÃ¡ndose 4,000 aÃ±os despuÃ©s.',
+      'El gran mensaje del mapa de Senenmut es que los humanos siempre hemos querido representar y entender el universo. Desde las pinturas en cuevas hasta los telescopios espaciales como el James Webb, pasando por los techos pintados de una tumba en Luxor, la curiosidad humana por el cosmos ha sido constante. Senenmut nos dejÃ³ un mensaje que sigue brillando: mira hacia arriba, aprende los patrones del cielo, y Ãºsalos para vivir mejor.',
     ],
-    fact: 'El calendario egipcio de 365 días fue tan preciso que los romanos lo adoptaron y lo usaron durante 1,600 años. El "error" del calendario egipcio era de solo un día cada 4 años (porque el año real tiene 365.25 días). Julio César arregló esto añadiendo un día extra cada 4 años: el año bisiesto. ¡Gracias, Senenmut, por darnos el 29 de febrero!',
+    fact: 'El calendario egipcio de 365 dÃ­as fue tan preciso que los romanos lo adoptaron y lo usaron durante 1,600 aÃ±os. El "error" del calendario egipcio era de solo un dÃ­a cada 4 aÃ±os (porque el aÃ±o real tiene 365.25 dÃ­as). Julio CÃ©sar arreglÃ³ esto aÃ±adiendo un dÃ­a extra cada 4 aÃ±os: el aÃ±o bisiesto. Â¡Gracias, Senenmut, por darnos el 29 de febrero!',
   },
 ];
 
-// ─── Star Field Background ──────────────────────────────────────────────────
+// â”€â”€â”€ Star Field Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function StarField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -323,7 +323,7 @@ function StarField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Senenmut Header SVG ────────────────────────────────────────────────────
+// â”€â”€â”€ Senenmut Header SVG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function SenenmutHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-20px' }}>
@@ -366,13 +366,13 @@ function SenenmutHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="70" textAnchor="middle" fill="#9B6BFF" fontSize="17" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">MAPA DEL UNIVERSO</text>
-        <text x="300" y="90" textAnchor="middle" fill="rgba(155,107,255,0.6)" fontSize="10.5" fontFamily="monospace" letterSpacing="2">LA TUMBA DE SENENMUT · CIRCA 1473 A.C.</text>
+        <text x="300" y="90" textAnchor="middle" fill="rgba(155,107,255,0.6)" fontSize="10.5" fontFamily="monospace" letterSpacing="2">LA TUMBA DE SENENMUT Â· CIRCA 1473 A.C.</text>
       </svg>
     </div>
   );
 }
 
-// ─── Organic Node Button (circular image-based) ─────────────────────────────
+// â”€â”€â”€ Organic Node Button (circular image-based) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -400,7 +400,7 @@ function NodeButton({ node, isActive, onClick, index }) {
         <img src={node.btnImage} alt={node.title} style={{
           width: '100%', height: '100%', objectFit: 'cover',
           transition: 'transform 0.3s ease', transform: isActive ? 'scale(1.1)' : 'scale(1)',
-        }} />
+        }}  loading="lazy" />
         {isActive && (
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
@@ -430,7 +430,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Magazine-Style Content Panel ────────────────────────────────────────────
+// â”€â”€â”€ Magazine-Style Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   const decoPositions = [
@@ -493,7 +493,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               borderRadius: '50%', overflow: 'hidden', border: `2px solid ${node.color}40`, flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
             </span>
             {node.title}
           </h3>
@@ -540,7 +540,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
                 }}>
-                  {i === 0 ? '◆' : i === 1 ? '◇' : '★'}
+                  {i === 0 ? 'â—†' : i === 1 ? 'â—‡' : 'â˜…'}
                 </div>
                 <p style={{
                   margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
@@ -574,7 +574,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato Científico
+                Dato CientÃ­fico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -590,7 +590,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ explored, total }) {
   const pct = (explored / total) * 100;
   return (
@@ -612,7 +612,7 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-// ─── Main Infographic Component ──────────────────────────────────────────────
+// â”€â”€â”€ Main Infographic Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_EgyptM6() {
   const [activeNode, setActiveNode] = useState(null);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -654,7 +654,7 @@ export default function InteractiveInfographic_EgyptM6() {
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
           }}
         >
-          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
+          <ChevronRight size={14} /> Toca cada cÃ­rculo para explorar <ChevronRight size={14} />
         </motion.p>
       )}
 
@@ -689,15 +689,15 @@ export default function InteractiveInfographic_EgyptM6() {
             }}
           >
             <p style={{ margin: 0, color: '#9B6BFF', fontSize: '1.1rem', fontWeight: 'bold' }}>
-              🗺️ ¡Has descifrado todos los secretos del Mapa del Universo!
+              ðŸ—ºï¸ Â¡Has descifrado todos los secretos del Mapa del Universo!
             </p>
             <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
-              Ahora puedes tomar el quiz para ganar tu insignia de Cartógrafo Estelar
+              Ahora puedes tomar el quiz para ganar tu insignia de CartÃ³grafo Estelar
             </p>
           </motion.div>
         )}
       </AnimatePresence>
-          {/* ─── Bibliografía ─── */}
+          {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
       <div style={{
         marginTop: '2rem', padding: '1.5rem 2rem',
         borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -706,17 +706,17 @@ export default function InteractiveInfographic_EgyptM6() {
       }}>
         <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
           textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-          📚 Fuentes y Referencias
+          ðŸ“š Fuentes y Referencias
         </h4>
         <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
           listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
-            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
           ))}
         </ul>
       </div>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

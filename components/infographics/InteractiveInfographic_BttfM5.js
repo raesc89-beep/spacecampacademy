@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
 
 import ImageLightbox from './ImageLightbox';
-/* ═══════════════════════════════════════════
-   SVG DECORATIVE ELEMENTS — ANTI-GRAVITY
-   ═══════════════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   SVG DECORATIVE ELEMENTS â€” ANTI-GRAVITY
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const DecoMagneticField = ({ x, y, s = 1 }) => (
   <motion.svg viewBox="0 0 60 60" width={60 * s} height={60 * s}
     style={{ position: 'absolute', left: x, top: y, pointerEvents: 'none' }}
@@ -93,9 +93,9 @@ const DecoFluxLines = ({ x, y, s = 1 }) => (
   </motion.svg>
 );
 
-/* ═════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    DECO_MAP per node
-   ═════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const DECO_MAP = {
   pelicula: [
     <DecoHoverboard key="d0" x="5%" y="12%" s={1.3} />,
@@ -139,9 +139,9 @@ const DECO_MAP = {
   ],
 };
 
-/* ═══════════════════════════════
-   INFOGRAPHIC_NODES — 8 nodes
-   ═══════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   INFOGRAPHIC_NODES â€” 8 nodes
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const BIBLIOGRAPHY = [
   'Bachelet, E. (1912). Levitating Transmitting Apparatus, US Patent 1,020,942',
   'Earnshaw, S. (1842). On the nature of the molecular forces, Trans. Cambridge Phil. Soc., 7',
@@ -151,114 +151,114 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'pelicula', title: 'El Aeropatín en la Película', color: '#E040FB',
+    id: 'pelicula', title: 'El AeropatÃ­n en la PelÃ­cula', color: '#E040FB',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_pelicula.png',
     image: '/assets/bttf/infographic_aeropatines/hero_pelicula.png',
     content: [
-      'En «Volver al Futuro Parte II» (1989), Marty McFly llega al año 2015 y descubre los aeropatines — ¡patinetas que flotan! La película muestra a chicos usándolos en la plaza de Hill Valley. El director Robert Zemeckis hizo una broma diciendo que los aeropatines eran reales pero que los grupos de padres no permitían venderlos. ¡Mucha gente le creyó!',
-      '¿Cómo los filmaron? Los actores estaban parados en tablas reales sujetas con cables y arneses. El equipo usó tecnología de pantalla azul y plataformas mecánicas. Michael J. Fox tuvo que repetir muchas tomas porque el arnés era incómodo. ¡El aeropatín rosa de Mattel se convirtió en uno de los accesorios de película más icónicos de la historia!',
-      'La película predijo que 2015 tendría aeropatines, y cuando llegó el 2015 real, ¿todavía no los teníamos... o sí? ¡Compañías como Lexus y Hendo SÍ crearon aeropatines funcionales ese año, inspirados por la película! La ciencia ficción se convirtió en realidad científica, solo que no exactamente como la imaginaron.',
-      'La física en la película: el aeropatín parece repeler la gravedad misma. En realidad, no puedes simplemente cancelar la gravedad — es una de las cuatro fuerzas fundamentales del universo. Pero SÍ puedes crear una fuerza hacia arriba lo suficientemente fuerte para contrarrestarla. ¡Eso es lo que hace la levitación magnética!',
-      'Mattel sacó juguetes de aeropatín después de BTTF2. Eran solo tablas normales sin ruedas (no flotaban). La utilería original de la película se vendió en una subasta por $501,000 dólares en 2021. Solo existen un puñado de aeropatines usados en la filmación.',
+      'En Â«Volver al Futuro Parte IIÂ» (1989), Marty McFly llega al aÃ±o 2015 y descubre los aeropatines â€” Â¡patinetas que flotan! La pelÃ­cula muestra a chicos usÃ¡ndolos en la plaza de Hill Valley. El director Robert Zemeckis hizo una broma diciendo que los aeropatines eran reales pero que los grupos de padres no permitÃ­an venderlos. Â¡Mucha gente le creyÃ³!',
+      'Â¿CÃ³mo los filmaron? Los actores estaban parados en tablas reales sujetas con cables y arneses. El equipo usÃ³ tecnologÃ­a de pantalla azul y plataformas mecÃ¡nicas. Michael J. Fox tuvo que repetir muchas tomas porque el arnÃ©s era incÃ³modo. Â¡El aeropatÃ­n rosa de Mattel se convirtiÃ³ en uno de los accesorios de pelÃ­cula mÃ¡s icÃ³nicos de la historia!',
+      'La pelÃ­cula predijo que 2015 tendrÃ­a aeropatines, y cuando llegÃ³ el 2015 real, Â¿todavÃ­a no los tenÃ­amos... o sÃ­? Â¡CompaÃ±Ã­as como Lexus y Hendo SÃ crearon aeropatines funcionales ese aÃ±o, inspirados por la pelÃ­cula! La ciencia ficciÃ³n se convirtiÃ³ en realidad cientÃ­fica, solo que no exactamente como la imaginaron.',
+      'La fÃ­sica en la pelÃ­cula: el aeropatÃ­n parece repeler la gravedad misma. En realidad, no puedes simplemente cancelar la gravedad â€” es una de las cuatro fuerzas fundamentales del universo. Pero SÃ puedes crear una fuerza hacia arriba lo suficientemente fuerte para contrarrestarla. Â¡Eso es lo que hace la levitaciÃ³n magnÃ©tica!',
+      'Mattel sacÃ³ juguetes de aeropatÃ­n despuÃ©s de BTTF2. Eran solo tablas normales sin ruedas (no flotaban). La utilerÃ­a original de la pelÃ­cula se vendiÃ³ en una subasta por $501,000 dÃ³lares en 2021. Solo existen un puÃ±ado de aeropatines usados en la filmaciÃ³n.',
     ],
-    fact: 'El icónico aeropatín rosa de Mattel que usó Michael J. Fox no era más que una tabla de madera de un scooter modificada. Los utileros de la película le quitaron las ruedas, la repintaron con colores brillantes y le agregaron un parche de velcro para que los zapatos del actor se mantuvieran en su lugar.',
+    fact: 'El icÃ³nico aeropatÃ­n rosa de Mattel que usÃ³ Michael J. Fox no era mÃ¡s que una tabla de madera de un scooter modificada. Los utileros de la pelÃ­cula le quitaron las ruedas, la repintaron con colores brillantes y le agregaron un parche de velcro para que los zapatos del actor se mantuvieran en su lugar.',
   },
   {
-    id: 'maglev', title: 'Trenes Maglev: Levitación Real', color: '#00CCFF',
+    id: 'maglev', title: 'Trenes Maglev: LevitaciÃ³n Real', color: '#00CCFF',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_maglev.png',
     image: '/assets/bttf/infographic_aeropatines/hero_maglev.png',
     content: [
-      '¡Los trenes de levitación magnética (maglev) son REALES y vuelan! No por el aire como aviones, sino que flotan sobre sus vías sin contacto alguno. Imagina un tren que nunca toca los rieles — sin fricción, sin ruedas, solo un colchón de fuerza magnética invisible. Es lo más cercano a un aeropatín real.',
-      'El Maglev de Shanghái en China alcanza 431 km/h (268 mph) en servicio regular desde 2004. Usa suspensión electromagnética (EMS) donde electroimanes en el tren son atraídos hacia arriba por un riel de acero. ¡El espacio es de solo 10mm! Es como un abrazo magnético que levanta todo el tren.',
-      'El SCMaglev de Japón estableció el récord mundial de velocidad: 603 km/h (375 mph) en 2015. Usa imanes superconductores enfriados a -269°C con helio líquido. A esa temperatura, los imanes se vuelven increíblemente poderosos. El tren flota 10cm sobre la vía. ¡Un viaje de Tokio a Osaka que toma 2.5 horas en tren bala tomaría solo 40 minutos!',
-      '¿Cómo funciona? Piensa en dos imanes: cuando empujas los mismos polos juntos (Norte-Norte o Sur-Sur), se repelen. Ahora imagina miles de imanes súper poderosos haciendo esto debajo de un tren. La fuerza de repulsión levanta todo el tren de la vía. Imanes guía a los lados lo mantienen centrado.',
-      'El efecto Meissner es el verdadero superpoder: cuando ciertos materiales se enfrían por debajo de una temperatura crítica, se convierten en superconductores y expulsan completamente los campos magnéticos. Esto significa que un imán colocado sobre un superconductor flotará — es empujado físicamente por el campo expulsado. Es real, se demuestra en laboratorios de todo el mundo, y es la base de los trenes más rápidos de la Tierra.',
+      'Â¡Los trenes de levitaciÃ³n magnÃ©tica (maglev) son REALES y vuelan! No por el aire como aviones, sino que flotan sobre sus vÃ­as sin contacto alguno. Imagina un tren que nunca toca los rieles â€” sin fricciÃ³n, sin ruedas, solo un colchÃ³n de fuerza magnÃ©tica invisible. Es lo mÃ¡s cercano a un aeropatÃ­n real.',
+      'El Maglev de ShanghÃ¡i en China alcanza 431 km/h (268 mph) en servicio regular desde 2004. Usa suspensiÃ³n electromagnÃ©tica (EMS) donde electroimanes en el tren son atraÃ­dos hacia arriba por un riel de acero. Â¡El espacio es de solo 10mm! Es como un abrazo magnÃ©tico que levanta todo el tren.',
+      'El SCMaglev de JapÃ³n estableciÃ³ el rÃ©cord mundial de velocidad: 603 km/h (375 mph) en 2015. Usa imanes superconductores enfriados a -269Â°C con helio lÃ­quido. A esa temperatura, los imanes se vuelven increÃ­blemente poderosos. El tren flota 10cm sobre la vÃ­a. Â¡Un viaje de Tokio a Osaka que toma 2.5 horas en tren bala tomarÃ­a solo 40 minutos!',
+      'Â¿CÃ³mo funciona? Piensa en dos imanes: cuando empujas los mismos polos juntos (Norte-Norte o Sur-Sur), se repelen. Ahora imagina miles de imanes sÃºper poderosos haciendo esto debajo de un tren. La fuerza de repulsiÃ³n levanta todo el tren de la vÃ­a. Imanes guÃ­a a los lados lo mantienen centrado.',
+      'El efecto Meissner es el verdadero superpoder: cuando ciertos materiales se enfrÃ­an por debajo de una temperatura crÃ­tica, se convierten en superconductores y expulsan completamente los campos magnÃ©ticos. Esto significa que un imÃ¡n colocado sobre un superconductor flotarÃ¡ â€” es empujado fÃ­sicamente por el campo expulsado. Es real, se demuestra en laboratorios de todo el mundo, y es la base de los trenes mÃ¡s rÃ¡pidos de la Tierra.',
     ],
-    fact: 'El Maglev de Shanghái acelera de 0 a 431 km/h en solo 2 minutos. El viaje del aeropuerto a la ciudad toma solo 7 minutos y 20 segundos. Durante el viaje, puedes sostener una moneda de canto sobre la bandeja ¡y no se cae! — no hay vibración porque el tren nunca toca la vía.',
+    fact: 'El Maglev de ShanghÃ¡i acelera de 0 a 431 km/h en solo 2 minutos. El viaje del aeropuerto a la ciudad toma solo 7 minutos y 20 segundos. Durante el viaje, puedes sostener una moneda de canto sobre la bandeja Â¡y no se cae! â€” no hay vibraciÃ³n porque el tren nunca toca la vÃ­a.',
   },
   {
     id: 'lexus', title: 'El Hoverboard de Lexus (2015)', color: '#7C4DFF',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_lexus.png',
     image: '/assets/bttf/infographic_aeropatines/hero_lexus.png',
     content: [
-      'En 2015 — el año exacto que BTTF2 predijo los aeropatines — Lexus (la compañía de autos) reveló un aeropatín funcional REAL llamado «SLIDE». Se veía como algo de la película: elegante, humeante con vapor, flotando sobre el suelo. El mundo entero lo quiso saber. Y sí, era real.',
-      'Cómo funciona: El SLIDE usa dos criostatos (contenedores) llenos de superconductores enfriados a -197°C usando nitrógeno líquido. Los superconductores crean el efecto Meissner, que repele campos magnéticos. La tabla flota porque es empujada físicamente lejos de los imanes incrustados en la superficie debajo.',
-      'El truco: Lexus construyó un skatepark PERSONALIZADO en Barcelona, España, con imanes permanentes ocultos bajo la superficie de concreto. El aeropatín SOLO funciona en esa pista específica. Llévalo a una banqueta normal y simplemente se queda ahí. ¡La pista magnética costó millones de euros construir!',
-      'El nitrógeno líquido se acaba después de unos 10-20 minutos, así que la tabla gradualmente se hunde mientras los superconductores se calientan. Los pilotos tenían que rellenar el nitrógeno entre corridas. El skateboarder profesional Ross McGouran fue el primero en montarlo exitosamente. Le tomó semanas de práctica — ¡flotar en una superficie sin fricción NO es nada como patinar normalmente!',
-      'Todo el proyecto fue una campaña publicitaria — Lexus gastó aproximadamente $10+ millones en el aeropatín para promover su marca. Pero la CIENCIA era 100% real. Sin trucos, sin cables, sin CGI. Pura física de superconductores. Demostró que flotar sobre campos magnéticos es posible, solo que no (todavía) práctico.',
+      'En 2015 â€” el aÃ±o exacto que BTTF2 predijo los aeropatines â€” Lexus (la compaÃ±Ã­a de autos) revelÃ³ un aeropatÃ­n funcional REAL llamado Â«SLIDEÂ». Se veÃ­a como algo de la pelÃ­cula: elegante, humeante con vapor, flotando sobre el suelo. El mundo entero lo quiso saber. Y sÃ­, era real.',
+      'CÃ³mo funciona: El SLIDE usa dos criostatos (contenedores) llenos de superconductores enfriados a -197Â°C usando nitrÃ³geno lÃ­quido. Los superconductores crean el efecto Meissner, que repele campos magnÃ©ticos. La tabla flota porque es empujada fÃ­sicamente lejos de los imanes incrustados en la superficie debajo.',
+      'El truco: Lexus construyÃ³ un skatepark PERSONALIZADO en Barcelona, EspaÃ±a, con imanes permanentes ocultos bajo la superficie de concreto. El aeropatÃ­n SOLO funciona en esa pista especÃ­fica. LlÃ©valo a una banqueta normal y simplemente se queda ahÃ­. Â¡La pista magnÃ©tica costÃ³ millones de euros construir!',
+      'El nitrÃ³geno lÃ­quido se acaba despuÃ©s de unos 10-20 minutos, asÃ­ que la tabla gradualmente se hunde mientras los superconductores se calientan. Los pilotos tenÃ­an que rellenar el nitrÃ³geno entre corridas. El skateboarder profesional Ross McGouran fue el primero en montarlo exitosamente. Le tomÃ³ semanas de prÃ¡ctica â€” Â¡flotar en una superficie sin fricciÃ³n NO es nada como patinar normalmente!',
+      'Todo el proyecto fue una campaÃ±a publicitaria â€” Lexus gastÃ³ aproximadamente $10+ millones en el aeropatÃ­n para promover su marca. Pero la CIENCIA era 100% real. Sin trucos, sin cables, sin CGI. Pura fÃ­sica de superconductores. DemostrÃ³ que flotar sobre campos magnÃ©ticos es posible, solo que no (todavÃ­a) prÃ¡ctico.',
     ],
-    fact: 'Cuando Ross McGouran intentó el aeropatín de Lexus por primera vez, ¡se cayó inmediatamente! No hay fricción contra qué empujar — girar, frenar y balancearte son completamente diferentes al skateboarding. Dijo que era como «intentar pararte sobre una bola de hielo». Le tomó 6 semanas de práctica dominar trucos básicos.',
+    fact: 'Cuando Ross McGouran intentÃ³ el aeropatÃ­n de Lexus por primera vez, Â¡se cayÃ³ inmediatamente! No hay fricciÃ³n contra quÃ© empujar â€” girar, frenar y balancearte son completamente diferentes al skateboarding. Dijo que era como Â«intentar pararte sobre una bola de hieloÂ». Le tomÃ³ 6 semanas de prÃ¡ctica dominar trucos bÃ¡sicos.',
   },
   {
     id: 'hendo', title: 'El Hendo Hoverboard y Tony Hawk', color: '#FF6B00',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_hendo.png',
     image: '/assets/bttf/infographic_aeropatines/hero_hendo.png',
     content: [
-      'En 2014, un año antes del proyecto Lexus, una compañía llamada Arx Pax creó el Hendo Hoverboard. ¡El legendario skateboarder Tony Hawk fue uno de los primeros en montarlo! El video de Tony Hawk en un aeropatín real se hizo viral — fue como ver el futuro llegar.',
-      'El Hendo usa una tecnología completamente diferente a Lexus: la Ley de Lenz y corrientes de Foucault. Cuando un imán se mueve cerca de una superficie conductora (como cobre o aluminio), crea corrientes eléctricas arremolinadas en el metal. ¡Estas corrientes generan su propio campo magnético que empuja CONTRA el imán original! Mientras más rápido te muevas, ¡más fuerte la repulsión!',
-      'Piénsalo así: deja caer un imán por un tubo de cobre. En vez de caer rápido, se desliza lentamente — casi flotando. El cobre no es magnético, pero el imán en movimiento crea corrientes eléctricas que luchan contra su movimiento. El Hendo escala esto con imanes giratorios que crean una fuerza de flotación constante.',
-      'La limitación: el Hendo SOLO funciona sobre superficies metálicas conductoras — láminas de cobre o aluminio. Llévalo afuera al concreto o asfalto y no pasa nada. Los fundadores, Greg y Jill Henderson, crearon la tecnología de flotación para protección contra terremotos — ¡su verdadero objetivo era levitar edificios enteros durante sismos!',
-      'El Hendo 2.0 (su versión mejorada) usó una campaña de Kickstarter y recaudó $510,590 dólares de 3,169 patrocinadores. El respaldo de Tony Hawk fue crucial. La tabla flota aproximadamente 2.5 cm sobre la superficie y puede soportar un jinete de hasta 136 kg. Suena como una aspiradora cuando funciona — ¡los imanes giratorios crean un zumbido fuerte!',
+      'En 2014, un aÃ±o antes del proyecto Lexus, una compaÃ±Ã­a llamada Arx Pax creÃ³ el Hendo Hoverboard. Â¡El legendario skateboarder Tony Hawk fue uno de los primeros en montarlo! El video de Tony Hawk en un aeropatÃ­n real se hizo viral â€” fue como ver el futuro llegar.',
+      'El Hendo usa una tecnologÃ­a completamente diferente a Lexus: la Ley de Lenz y corrientes de Foucault. Cuando un imÃ¡n se mueve cerca de una superficie conductora (como cobre o aluminio), crea corrientes elÃ©ctricas arremolinadas en el metal. Â¡Estas corrientes generan su propio campo magnÃ©tico que empuja CONTRA el imÃ¡n original! Mientras mÃ¡s rÃ¡pido te muevas, Â¡mÃ¡s fuerte la repulsiÃ³n!',
+      'PiÃ©nsalo asÃ­: deja caer un imÃ¡n por un tubo de cobre. En vez de caer rÃ¡pido, se desliza lentamente â€” casi flotando. El cobre no es magnÃ©tico, pero el imÃ¡n en movimiento crea corrientes elÃ©ctricas que luchan contra su movimiento. El Hendo escala esto con imanes giratorios que crean una fuerza de flotaciÃ³n constante.',
+      'La limitaciÃ³n: el Hendo SOLO funciona sobre superficies metÃ¡licas conductoras â€” lÃ¡minas de cobre o aluminio. LlÃ©valo afuera al concreto o asfalto y no pasa nada. Los fundadores, Greg y Jill Henderson, crearon la tecnologÃ­a de flotaciÃ³n para protecciÃ³n contra terremotos â€” Â¡su verdadero objetivo era levitar edificios enteros durante sismos!',
+      'El Hendo 2.0 (su versiÃ³n mejorada) usÃ³ una campaÃ±a de Kickstarter y recaudÃ³ $510,590 dÃ³lares de 3,169 patrocinadores. El respaldo de Tony Hawk fue crucial. La tabla flota aproximadamente 2.5 cm sobre la superficie y puede soportar un jinete de hasta 136 kg. Suena como una aspiradora cuando funciona â€” Â¡los imanes giratorios crean un zumbido fuerte!',
     ],
-    fact: 'Para financiar su primer modelo de aeropatín, Hendo lanzó una campaña en Kickstarter en 2014 con una meta de $250,000 dólares. El proyecto fue un éxito masivo y recaudó más de $510,000. Los patrocinadores que aportaron $10,000 o más recibieron uno de los primeros diez aeropatines funcionales producidos.',
+    fact: 'Para financiar su primer modelo de aeropatÃ­n, Hendo lanzÃ³ una campaÃ±a en Kickstarter en 2014 con una meta de $250,000 dÃ³lares. El proyecto fue un Ã©xito masivo y recaudÃ³ mÃ¡s de $510,000. Los patrocinadores que aportaron $10,000 o mÃ¡s recibieron uno de los primeros diez aeropatines funcionales producidos.',
   },
   {
     id: 'newton', title: 'Las Leyes de Newton y la Gravedad', color: '#FFA500',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_newton.png',
     image: '/assets/bttf/infographic_aeropatines/hero_newton.png',
     content: [
-      'Para entender los aeropatines, primero necesitas entender contra qué estás luchando: la gravedad. Isaac Newton (1687) descubrió que cada objeto con masa atrae a cada otro objeto con masa. La Tierra te jala hacia abajo con una fuerza calculada por F = m × g, donde g = 9.8 m/s². Eso significa que por cada kilogramo que pesas, ¡la Tierra te jala con 9.8 Newtons de fuerza!',
-      'Experimento sencillo: sostén un libro en tu mano. ¿Sientes el peso? Eso es la gravedad jalándolo hacia abajo a 9.8 m/s². Ahora piensa: tus músculos empujan HACIA ARRIBA con exactamente la misma fuerza. El libro no se mueve porque las fuerzas se cancelan. Un aeropatín hace lo mismo — empuja hacia arriba con una fuerza magnética o electromagnética igual a la de la gravedad.',
-      'Gravedad en otros mundos: en la Luna, g = 1.6 m/s² (aproximadamente 1/6 de la Tierra). ¡Un niño de 60 kg pesa 588 Newtons en la Tierra pero solo 96 Newtons en la Luna! Podrías saltar 6 veces más alto. En Júpiter, g = 24.8 m/s² — pesarías 2.5 veces más y un aeropatín necesitaría 2.5 veces más potencia para levantarte.',
-      'La Tercera Ley de Newton es el secreto de los aeropatines: «Para cada acción, hay una reacción igual y opuesta». Cuando los imanes empujan HACIA ABAJO sobre una superficie conductora, la superficie empuja al aeropatín HACIA ARRIBA. El par acción-reacción crea la flotación. Así también funcionan los cohetes — el gas caliente empuja hacia abajo, el cohete empuja hacia arriba.',
-      'Dato de gravedad divertido: ¡si sueltas una pluma y una bola de boliche en el vacío (sin aire), tocan el suelo al EXACTO mismo tiempo! Galileo descubrió esto en los 1600s, y el astronauta del Apollo 15, David Scott, lo demostró en la Luna en 1971 dejando caer un martillo y una pluma. En el vacío, todo cae a la misma velocidad porque la gravedad acelera todos los objetos por igual.',
+      'Para entender los aeropatines, primero necesitas entender contra quÃ© estÃ¡s luchando: la gravedad. Isaac Newton (1687) descubriÃ³ que cada objeto con masa atrae a cada otro objeto con masa. La Tierra te jala hacia abajo con una fuerza calculada por F = m Ã— g, donde g = 9.8 m/sÂ². Eso significa que por cada kilogramo que pesas, Â¡la Tierra te jala con 9.8 Newtons de fuerza!',
+      'Experimento sencillo: sostÃ©n un libro en tu mano. Â¿Sientes el peso? Eso es la gravedad jalÃ¡ndolo hacia abajo a 9.8 m/sÂ². Ahora piensa: tus mÃºsculos empujan HACIA ARRIBA con exactamente la misma fuerza. El libro no se mueve porque las fuerzas se cancelan. Un aeropatÃ­n hace lo mismo â€” empuja hacia arriba con una fuerza magnÃ©tica o electromagnÃ©tica igual a la de la gravedad.',
+      'Gravedad en otros mundos: en la Luna, g = 1.6 m/sÂ² (aproximadamente 1/6 de la Tierra). Â¡Un niÃ±o de 60 kg pesa 588 Newtons en la Tierra pero solo 96 Newtons en la Luna! PodrÃ­as saltar 6 veces mÃ¡s alto. En JÃºpiter, g = 24.8 m/sÂ² â€” pesarÃ­as 2.5 veces mÃ¡s y un aeropatÃ­n necesitarÃ­a 2.5 veces mÃ¡s potencia para levantarte.',
+      'La Tercera Ley de Newton es el secreto de los aeropatines: Â«Para cada acciÃ³n, hay una reacciÃ³n igual y opuestaÂ». Cuando los imanes empujan HACIA ABAJO sobre una superficie conductora, la superficie empuja al aeropatÃ­n HACIA ARRIBA. El par acciÃ³n-reacciÃ³n crea la flotaciÃ³n. AsÃ­ tambiÃ©n funcionan los cohetes â€” el gas caliente empuja hacia abajo, el cohete empuja hacia arriba.',
+      'Dato de gravedad divertido: Â¡si sueltas una pluma y una bola de boliche en el vacÃ­o (sin aire), tocan el suelo al EXACTO mismo tiempo! Galileo descubriÃ³ esto en los 1600s, y el astronauta del Apollo 15, David Scott, lo demostrÃ³ en la Luna en 1971 dejando caer un martillo y una pluma. En el vacÃ­o, todo cae a la misma velocidad porque la gravedad acelera todos los objetos por igual.',
     ],
-    fact: 'En 1971, el astronauta del Apollo 15 David Scott se paró en la Luna y soltó un martillo y una pluma al mismo tiempo en televisión en vivo. Golpearon la superficie lunar simultáneamente. Dijo «¡Qué tal! Esto demuestra que el Sr. Galileo tenía razón.» El video ha sido visto más de 20 millones de veces en YouTube.',
+    fact: 'En 1971, el astronauta del Apollo 15 David Scott se parÃ³ en la Luna y soltÃ³ un martillo y una pluma al mismo tiempo en televisiÃ³n en vivo. Golpearon la superficie lunar simultÃ¡neamente. Dijo Â«Â¡QuÃ© tal! Esto demuestra que el Sr. Galileo tenÃ­a razÃ³n.Â» El video ha sido visto mÃ¡s de 20 millones de veces en YouTube.',
   },
   {
-    id: 'quantum', title: 'Levitación Cuántica: Flux Pinning', color: '#00E676',
+    id: 'quantum', title: 'LevitaciÃ³n CuÃ¡ntica: Flux Pinning', color: '#00E676',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_quantum.png',
     image: '/assets/bttf/infographic_aeropatines/hero_quantum.png',
     content: [
-      'La levitación cuántica es uno de los fenómenos más asombrosos de la física. Un disco superconductor, enfriado con nitrógeno líquido a -196°C, puede colocarse sobre una pista magnética y se BLOQUEARÁ en el aire. No solo flota — se BLOQUEA. Puedes empujarlo y regresa a su posición. Puedes voltear la pista de cabeza y el disco cuelga debajo sin caerse. ¡Es increíble!',
-      'Este fenómeno se llama «flux pinning» o «bloqueo cuántico». Cuando un superconductor Tipo II se enfría, diminutos tubos de campo magnético (llamados tubos de flujo o vórtices) quedan atrapados dentro de imperfecciones microscópicas del superconductor. Estos tubos actúan como pines que bloquean al superconductor en una posición específica dentro del campo magnético.',
-      'La demostración más famosa fue del Dr. Boaz Almog en la Universidad de Tel Aviv en 2011. Su charla TED mostrando un disco superconductor flotando sobre una pista circular se hizo viral con más de 5 millones de vistas. El disco se mueve suavemente por la pista como un aeropatín real — sin fricción, silencioso, mágico.',
-      '¿Por qué es «cuántica»? Porque la superconductividad misma es un fenómeno de mecánica cuántica. Debajo de la temperatura crítica, los electrones en el material forman «pares de Cooper» que se mueven sin resistencia. Estos electrones emparejados crean un estado cuántico donde la corriente eléctrica fluye para siempre sin perder energía. Es literalmente un milagro cuántico ocurriendo a escala macroscópica (visible).',
-      'Aplicaciones reales hoy: la levitación cuántica se usa en algunos prototipos maglev y ha sido propuesta para rodamientos sin fricción en volantes de inercia para almacenamiento de energía. Científicos del MIT la están explorando para infraestructura de computación cuántica. La principal limitación es la temperatura — mantener las cosas a -196°C requiere nitrógeno líquido constante. Si alguien inventa un superconductor a temperatura ambiente, los aeropatines de levitación cuántica se vuelven posibles.',
+      'La levitaciÃ³n cuÃ¡ntica es uno de los fenÃ³menos mÃ¡s asombrosos de la fÃ­sica. Un disco superconductor, enfriado con nitrÃ³geno lÃ­quido a -196Â°C, puede colocarse sobre una pista magnÃ©tica y se BLOQUEARÃ en el aire. No solo flota â€” se BLOQUEA. Puedes empujarlo y regresa a su posiciÃ³n. Puedes voltear la pista de cabeza y el disco cuelga debajo sin caerse. Â¡Es increÃ­ble!',
+      'Este fenÃ³meno se llama Â«flux pinningÂ» o Â«bloqueo cuÃ¡nticoÂ». Cuando un superconductor Tipo II se enfrÃ­a, diminutos tubos de campo magnÃ©tico (llamados tubos de flujo o vÃ³rtices) quedan atrapados dentro de imperfecciones microscÃ³picas del superconductor. Estos tubos actÃºan como pines que bloquean al superconductor en una posiciÃ³n especÃ­fica dentro del campo magnÃ©tico.',
+      'La demostraciÃ³n mÃ¡s famosa fue del Dr. Boaz Almog en la Universidad de Tel Aviv en 2011. Su charla TED mostrando un disco superconductor flotando sobre una pista circular se hizo viral con mÃ¡s de 5 millones de vistas. El disco se mueve suavemente por la pista como un aeropatÃ­n real â€” sin fricciÃ³n, silencioso, mÃ¡gico.',
+      'Â¿Por quÃ© es Â«cuÃ¡nticaÂ»? Porque la superconductividad misma es un fenÃ³meno de mecÃ¡nica cuÃ¡ntica. Debajo de la temperatura crÃ­tica, los electrones en el material forman Â«pares de CooperÂ» que se mueven sin resistencia. Estos electrones emparejados crean un estado cuÃ¡ntico donde la corriente elÃ©ctrica fluye para siempre sin perder energÃ­a. Es literalmente un milagro cuÃ¡ntico ocurriendo a escala macroscÃ³pica (visible).',
+      'Aplicaciones reales hoy: la levitaciÃ³n cuÃ¡ntica se usa en algunos prototipos maglev y ha sido propuesta para rodamientos sin fricciÃ³n en volantes de inercia para almacenamiento de energÃ­a. CientÃ­ficos del MIT la estÃ¡n explorando para infraestructura de computaciÃ³n cuÃ¡ntica. La principal limitaciÃ³n es la temperatura â€” mantener las cosas a -196Â°C requiere nitrÃ³geno lÃ­quido constante. Si alguien inventa un superconductor a temperatura ambiente, los aeropatines de levitaciÃ³n cuÃ¡ntica se vuelven posibles.',
     ],
-    fact: 'En la Universidad de Tel Aviv, el Dr. Boaz Almog demostró un disco superconductor de solo 0.5 mm de espesor — más delgado que una tarjeta de crédito — flotando en una pista magnética cargando 70,000 veces su propio peso. Inclinó la pista a 90 grados y el disco se quedó bloqueado. La volteó de cabeza y el disco colgó sin caerse. La audiencia quedó boquiabierta.',
+    fact: 'En la Universidad de Tel Aviv, el Dr. Boaz Almog demostrÃ³ un disco superconductor de solo 0.5 mm de espesor â€” mÃ¡s delgado que una tarjeta de crÃ©dito â€” flotando en una pista magnÃ©tica cargando 70,000 veces su propio peso. InclinÃ³ la pista a 90 grados y el disco se quedÃ³ bloqueado. La volteÃ³ de cabeza y el disco colgÃ³ sin caerse. La audiencia quedÃ³ boquiabierta.',
   },
   {
-    id: 'electro', title: 'Suspensión EM en la Vida Real', color: '#FFD740',
+    id: 'electro', title: 'SuspensiÃ³n EM en la Vida Real', color: '#FFD740',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_electro.png',
     image: '/assets/bttf/infographic_aeropatines/hero_electro.png',
     content: [
-      'La suspensión electromagnética (EMS) se usa todos los días en tecnología real. El ejemplo más visible: trenes maglev. Pero EMS también aparece en lugares inesperados. Los rodamientos magnéticos en turbinas industriales eliminan la fricción. Algunos elevadores experimentales usan levitación electromagnética. ¡Hasta tu disco duro tiene un cabezal de lectura-escritura que «vuela» sobre un colchón de aire a solo nanómetros sobre el disco giratorio!',
-      'Hay dos tipos principales: EMS (suspensión electromagnética) usa atracción — los electroimanes son jalados HACIA ARRIBA hacia un riel ferromagnético arriba. EDS (suspensión electrodinámica) usa repulsión — los imanes en movimiento crean corrientes de Foucault en una vía conductora que empujan el vehículo HACIA ARRIBA. Ambos funcionan, pero EDS requiere alta velocidad para generar suficiente sustentación.',
-      'El concepto Hyperloop (propuesto por Elon Musk en 2013) combina levitación electromagnética con tubos de casi-vacío. Al eliminar la resistencia del aire Y la fricción de la vía, los vehículos podrían teóricamente viajar a más de 1,000 km/h. Virgin Hyperloop logró la primera prueba con humanos en 2020 en el desierto de Nevada — dos pasajeros viajaron a velocidad modesta pero en un tubo de vacío real.',
-      'Las turbinas eólicas de levitación magnética son una innovación real: el eje de la turbina flota sobre imanes en vez de rodamientos mecánicos. Esto elimina pérdidas por fricción (los rodamientos desperdician 5-10% de energía), reduce el ruido y extiende la vida útil de la turbina. ¡Ingenieros chinos han construido turbinas MagLev que generan energía con vientos de solo 1.5 m/s! — las turbinas regulares necesitan al menos 3-4 m/s.',
-      'La levitación acústica es otra forma real de flotar: usando ondas sonoras enfocadas, puedes suspender objetos pequeños en el aire. Funciona con gotas de agua, pequeñas cuentas, e incluso insectos pequeños (sin hacerles daño). Científicos de la Universidad de Bristol crearon un «rayo tractor» usando 64 bocinas diminutas que pueden mover objetos por el aire usando solo sonido. No es anti-gravedad, ¡pero SÍ es levitación real!',
+      'La suspensiÃ³n electromagnÃ©tica (EMS) se usa todos los dÃ­as en tecnologÃ­a real. El ejemplo mÃ¡s visible: trenes maglev. Pero EMS tambiÃ©n aparece en lugares inesperados. Los rodamientos magnÃ©ticos en turbinas industriales eliminan la fricciÃ³n. Algunos elevadores experimentales usan levitaciÃ³n electromagnÃ©tica. Â¡Hasta tu disco duro tiene un cabezal de lectura-escritura que Â«vuelaÂ» sobre un colchÃ³n de aire a solo nanÃ³metros sobre el disco giratorio!',
+      'Hay dos tipos principales: EMS (suspensiÃ³n electromagnÃ©tica) usa atracciÃ³n â€” los electroimanes son jalados HACIA ARRIBA hacia un riel ferromagnÃ©tico arriba. EDS (suspensiÃ³n electrodinÃ¡mica) usa repulsiÃ³n â€” los imanes en movimiento crean corrientes de Foucault en una vÃ­a conductora que empujan el vehÃ­culo HACIA ARRIBA. Ambos funcionan, pero EDS requiere alta velocidad para generar suficiente sustentaciÃ³n.',
+      'El concepto Hyperloop (propuesto por Elon Musk en 2013) combina levitaciÃ³n electromagnÃ©tica con tubos de casi-vacÃ­o. Al eliminar la resistencia del aire Y la fricciÃ³n de la vÃ­a, los vehÃ­culos podrÃ­an teÃ³ricamente viajar a mÃ¡s de 1,000 km/h. Virgin Hyperloop logrÃ³ la primera prueba con humanos en 2020 en el desierto de Nevada â€” dos pasajeros viajaron a velocidad modesta pero en un tubo de vacÃ­o real.',
+      'Las turbinas eÃ³licas de levitaciÃ³n magnÃ©tica son una innovaciÃ³n real: el eje de la turbina flota sobre imanes en vez de rodamientos mecÃ¡nicos. Esto elimina pÃ©rdidas por fricciÃ³n (los rodamientos desperdician 5-10% de energÃ­a), reduce el ruido y extiende la vida Ãºtil de la turbina. Â¡Ingenieros chinos han construido turbinas MagLev que generan energÃ­a con vientos de solo 1.5 m/s! â€” las turbinas regulares necesitan al menos 3-4 m/s.',
+      'La levitaciÃ³n acÃºstica es otra forma real de flotar: usando ondas sonoras enfocadas, puedes suspender objetos pequeÃ±os en el aire. Funciona con gotas de agua, pequeÃ±as cuentas, e incluso insectos pequeÃ±os (sin hacerles daÃ±o). CientÃ­ficos de la Universidad de Bristol crearon un Â«rayo tractorÂ» usando 64 bocinas diminutas que pueden mover objetos por el aire usando solo sonido. No es anti-gravedad, Â¡pero SÃ es levitaciÃ³n real!',
     ],
-    fact: 'Dentro del disco duro de tu computadora, el cabezal de lectura-escritura «vuela» a solo 3-5 nanómetros sobre el disco giratorio — eso es aproximadamente 1/20,000 del ancho de un cabello humano. Si el cabezal fuera un Boeing 747, estaría volando a 800 km/h a solo 1 milímetro sobre el suelo. Cualquier partícula de polvo a esa escala sería como una montaña. Por eso los discos duros están sellados.',
+    fact: 'Dentro del disco duro de tu computadora, el cabezal de lectura-escritura Â«vuelaÂ» a solo 3-5 nanÃ³metros sobre el disco giratorio â€” eso es aproximadamente 1/20,000 del ancho de un cabello humano. Si el cabezal fuera un Boeing 747, estarÃ­a volando a 800 km/h a solo 1 milÃ­metro sobre el suelo. Cualquier partÃ­cula de polvo a esa escala serÃ­a como una montaÃ±a. Por eso los discos duros estÃ¡n sellados.',
   },
   {
     id: 'futuro-antgrav', title: 'El Futuro de la Antigravedad', color: '#FF5252',
     btnImage: '/assets/bttf/infographic_aeropatines/btn_futuro.png',
     image: '/assets/bttf/infographic_aeropatines/hero_futuro.png',
     content: [
-      'Lo que SABEMOS que funciona hoy: levitación magnética (trenes maglev), levitación cuántica con superconductores (demostraciones de laboratorio), suspensión electromagnética (rodamientos industriales), levitación acústica (objetos pequeños sobre ondas sonoras) y flotación por Ley de Lenz (tabla Hendo sobre superficies de cobre). Todo es REAL, probado y usado.',
-      'Lo que NO sabemos aún: si la verdadera antigravedad (cancelar la fuerza gravitacional misma) es posible. El gravitón — la partícula teórica que transporta la fuerza gravitacional — nunca ha sido detectado. Si pudiéramos manipular gravitones de la misma forma que manipulamos fotones (luz), podríamos teóricamente crear campos antigravitacionales. Pero esto está muy lejos de la ciencia actual.',
-      'El laboratorio Eagleworks de la NASA (oficialmente el Laboratorio de Física de Propulsión Avanzada) ha probado conceptos controversiales como el «EmDrive» — un motor que aparentaba crear empuje sin propelente. Los resultados iniciales fueron emocionantes pero experimentos posteriores mostraron que el efecto probablemente era error de medición. La ciencia real requiere pruebas rigurosas, y afirmaciones extraordinarias necesitan evidencia extraordinaria.',
-      'Los metamateriales son una frontera emocionante: materiales diseñados con estructuras más pequeñas que la longitud de onda de las ondas con las que interactúan. Los científicos han creado metamateriales que curvan la luz alrededor de objetos (¡capas de invisibilidad!). ¿Podrían principios similares funcionar para la gravedad? Algunos físicos teorizan que los metamateriales gravitacionales podrían algún día blindar o redirigir ondas gravitacionales.',
-      'El sueño de un aeropatín personal no ha muerto — está evolucionando. Los superconductores a temperatura ambiente (si se logran) revolucionarían todo. En 2023, un equipo coreano afirmó haber creado uno (llamado LK-99) pero otros laboratorios no pudieron replicarlo. La búsqueda continúa. Mientras tanto, las tablas de vuelo con drones (como el Omni Hoverboard de Catalin Alexandru Duru, que voló 275.9 metros en 2015, récord Guinness) demuestran que ¡el vuelo personal SÍ es alcanzable!',
+      'Lo que SABEMOS que funciona hoy: levitaciÃ³n magnÃ©tica (trenes maglev), levitaciÃ³n cuÃ¡ntica con superconductores (demostraciones de laboratorio), suspensiÃ³n electromagnÃ©tica (rodamientos industriales), levitaciÃ³n acÃºstica (objetos pequeÃ±os sobre ondas sonoras) y flotaciÃ³n por Ley de Lenz (tabla Hendo sobre superficies de cobre). Todo es REAL, probado y usado.',
+      'Lo que NO sabemos aÃºn: si la verdadera antigravedad (cancelar la fuerza gravitacional misma) es posible. El gravitÃ³n â€” la partÃ­cula teÃ³rica que transporta la fuerza gravitacional â€” nunca ha sido detectado. Si pudiÃ©ramos manipular gravitones de la misma forma que manipulamos fotones (luz), podrÃ­amos teÃ³ricamente crear campos antigravitacionales. Pero esto estÃ¡ muy lejos de la ciencia actual.',
+      'El laboratorio Eagleworks de la NASA (oficialmente el Laboratorio de FÃ­sica de PropulsiÃ³n Avanzada) ha probado conceptos controversiales como el Â«EmDriveÂ» â€” un motor que aparentaba crear empuje sin propelente. Los resultados iniciales fueron emocionantes pero experimentos posteriores mostraron que el efecto probablemente era error de mediciÃ³n. La ciencia real requiere pruebas rigurosas, y afirmaciones extraordinarias necesitan evidencia extraordinaria.',
+      'Los metamateriales son una frontera emocionante: materiales diseÃ±ados con estructuras mÃ¡s pequeÃ±as que la longitud de onda de las ondas con las que interactÃºan. Los cientÃ­ficos han creado metamateriales que curvan la luz alrededor de objetos (Â¡capas de invisibilidad!). Â¿PodrÃ­an principios similares funcionar para la gravedad? Algunos fÃ­sicos teorizan que los metamateriales gravitacionales podrÃ­an algÃºn dÃ­a blindar o redirigir ondas gravitacionales.',
+      'El sueÃ±o de un aeropatÃ­n personal no ha muerto â€” estÃ¡ evolucionando. Los superconductores a temperatura ambiente (si se logran) revolucionarÃ­an todo. En 2023, un equipo coreano afirmÃ³ haber creado uno (llamado LK-99) pero otros laboratorios no pudieron replicarlo. La bÃºsqueda continÃºa. Mientras tanto, las tablas de vuelo con drones (como el Omni Hoverboard de Catalin Alexandru Duru, que volÃ³ 275.9 metros en 2015, rÃ©cord Guinness) demuestran que Â¡el vuelo personal SÃ es alcanzable!',
     ],
-    fact: 'En 2015, el inventor canadiense Catalin Alexandru Duru estableció el Récord Guinness para el vuelo más largo en aeropatín: 275.9 metros a una altura de 5 metros. Su tabla usaba hélices de dron, no imanes. En 2019, el inventor francés Franky Zapata cruzó el Canal de la Mancha en su Flyboard Air — 35 km en 22 minutos a velocidades de hasta 170 km/h y alturas de hasta 15 metros. Literalmente voló sobre el mar en un aeropatín.',
+    fact: 'En 2015, el inventor canadiense Catalin Alexandru Duru estableciÃ³ el RÃ©cord Guinness para el vuelo mÃ¡s largo en aeropatÃ­n: 275.9 metros a una altura de 5 metros. Su tabla usaba hÃ©lices de dron, no imanes. En 2019, el inventor francÃ©s Franky Zapata cruzÃ³ el Canal de la Mancha en su Flyboard Air â€” 35 km en 22 minutos a velocidades de hasta 170 km/h y alturas de hasta 15 metros. Literalmente volÃ³ sobre el mar en un aeropatÃ­n.',
   },
 ];
 
-/* ══════════════════════════════════
-   ANTI-GRAVITY FIELD — animated canvas
-   ══════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   ANTI-GRAVITY FIELD â€” animated canvas
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function AntiGravityField() {
   const ref = useRef(null);
   useEffect(() => {
@@ -310,9 +310,9 @@ function AntiGravityField() {
   return <canvas ref={ref} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }} />;
 }
 
-/* ═══════════════════════
-   SVG HEADER — hover
-   ═══════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   SVG HEADER â€” hover
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function HoverHeader() {
   return (
     <svg viewBox="0 0 600 90" style={{ width: '100%', maxWidth: 600, display: 'block', margin: '0 auto' }}>
@@ -337,9 +337,9 @@ function HoverHeader() {
   );
 }
 
-/* ═══════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    EXPANDABLE PARAGRAPH
-   ═══════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const EXPAND_DIRS = ['down', 'down', 'down', 'down'];
 function seededDir(i) { return 'down'; }
 
@@ -395,9 +395,9 @@ function ExpandableParagraph({ text, index, nodeColor }) {
   );
 }
 
-/* ═══════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    NODE BUTTON
-   ═══════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function NodeButton({ node, isActive, isExplored, onClick }) {
   return (
     <motion.button
@@ -431,7 +431,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
       <div style={{ position: 'absolute', bottom: 0, right: 0, width: 8, height: 8, borderBottom: `2px solid ${node.color}`, borderRight: `2px solid ${node.color}`, borderRadius: '0 0 6px 0', zIndex: 3 }} />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={node.btnImage} alt={node.title}
-        style={{ width: '100%', height: '100%', borderRadius: 5, objectFit: 'cover', filter: isActive ? 'saturate(1.3) brightness(1.1)' : 'saturate(0.85) brightness(0.9)' }} />
+        style={{ width: '100%', height: '100%', borderRadius: 5, objectFit: 'cover', filter: isActive ? 'saturate(1.3) brightness(1.1)' : 'saturate(0.85) brightness(0.9)' }}  loading="lazy" />
       {isExplored && (
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
           style={{
@@ -451,15 +451,15 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
         textShadow: `0 0 8px ${node.color}88, 0 1px 3px rgba(0,0,0,.9)`,
         fontFamily: "'Exo 2', 'Courier New', monospace",
       }}>
-        {node.title.length > 14 ? node.title.slice(0, 13) + '…' : node.title}
+        {node.title.length > 14 ? node.title.slice(0, 13) + 'â€¦' : node.title}
       </div>
     </motion.button>
   );
 }
 
-/* ═══════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    CONTENT PANEL
-   ═══════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   if (!node) return null;
   const heroParas = node.content.slice(0, 2);
@@ -485,7 +485,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={16} color="#fff" />
       </button>
 
-      {/* ─── HERO: two-column (estándar Abu Simbel) ─── */}
+      {/* â”€â”€â”€ HERO: two-column (estÃ¡ndar Abu Simbel) â”€â”€â”€ */}
       <div style={{
         display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0,
         minHeight: '280px',
@@ -512,7 +512,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── MAGAZINE BODY — M9-standard 2-column grid ─── */}
+      {/* â”€â”€â”€ MAGAZINE BODY â€” M9-standard 2-column grid â”€â”€â”€ */}
       <div style={{ padding: '20px 28px 14px' }}>
         <div style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem 2rem',
@@ -532,7 +532,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: 8, letterSpacing: 1,
                 }}>
-                  {i === 0 ? '◆' : i === 1 ? '◇' : '★'}
+                  {i === 0 ? 'â—†' : i === 1 ? 'â—‡' : 'â˜…'}
                 </div>
                 <p style={{ margin: 0, fontSize: 14, lineHeight: 1.75, color: '#ccc' }}>{p}</p>
               </div>
@@ -541,7 +541,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── FACT ─── */}
+      {/* â”€â”€â”€ FACT â”€â”€â”€ */}
       <div style={{
         margin: '0 28px 20px', padding: '14px 16px', borderRadius: 10,
         background: `linear-gradient(90deg, ${node.color}14, transparent)`,
@@ -559,9 +559,9 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-/* ═══════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    PROGRESS BAR
-   ═══════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ProgressBar({ explored, total }) {
   const pct = Math.round((explored / total) * 100);
   return (
@@ -581,9 +581,9 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-/* ══════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    MAIN COMPONENT
-   ══════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 export default function InteractiveInfographic_BttfM5() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeId, setActiveId] = useState(null);
@@ -620,7 +620,7 @@ export default function InteractiveInfographic_BttfM5() {
         </div>
       )}
 
-      {/* ─── CONTENT ─── */}
+      {/* â”€â”€â”€ CONTENT â”€â”€â”€ */}
       <div style={{ position: 'relative', zIndex: 2, padding: '32px 16px 48px' }}>
         {/* header */}
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -662,7 +662,7 @@ export default function InteractiveInfographic_BttfM5() {
                 <Star size={36} color="#E040FB" fill="#E040FB" style={{ margin: '0 auto 10px', display: 'block' }} />
               </motion.div>
               <p style={{ fontSize: 20, fontWeight: 800, color: '#E040FB', margin: '0 0 8px', fontFamily: "'Orbitron',sans-serif" }}>
-                🛹 ¡Has dominado la Antigravedad!
+                ðŸ›¹ Â¡Has dominado la Antigravedad!
               </p>
               <p style={{ fontSize: 14, color: '#ccc', margin: 0 }}>
                 Ahora puedes tomar el quiz para ganar tu insignia de Ingeniero Antigravitacional
@@ -671,7 +671,7 @@ export default function InteractiveInfographic_BttfM5() {
           )}
         </AnimatePresence>
 
-        {/* ─── Bibliografía ─── */}
+        {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
         <div style={{
           marginTop: '2rem', padding: '1.5rem 2rem',
           borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -680,18 +680,18 @@ export default function InteractiveInfographic_BttfM5() {
         }}>
           <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
             textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-            📚 Fuentes y Referencias
+            ðŸ“š Fuentes y Referencias
           </h4>
           <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
             listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
             {BIBLIOGRAPHY.map((ref, i) => (
-              <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+              <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
             ))}
           </ul>
         </div>
       </div>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

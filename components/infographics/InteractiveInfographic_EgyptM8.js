@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star } from 'lucide-react';
 
 import ImageLightbox from './ImageLightbox';
-// ─── SVG Decorative Elements ─────────────────────────────────────────────────
+// â”€â”€â”€ SVG Decorative Elements â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function DecoSunRay({ size = 70, color = '#FF9A3C', style = {} }) {
   return (
@@ -109,7 +109,7 @@ function DecoCompassAngle({ size = 65, color = '#FF9A3C', style = {} }) {
       })}
       {/* Sun on angle */}
       <circle cx="30" cy="15" r="5" fill={color} opacity="0.5" />
-      <text x="20" y="46" fontSize="8" fill={color} opacity="0.6" fontFamily="monospace">22°</text>
+      <text x="20" y="46" fontSize="8" fill={color} opacity="0.6" fontFamily="monospace">22Â°</text>
     </svg>
   );
 }
@@ -178,7 +178,7 @@ function DecoNefertari({ size = 60, color = '#FF9A3C', style = {} }) {
   );
 }
 
-// ─── Deco map per node ────────────────────────────────────────────────────────
+// â”€â”€â”€ Deco map per node â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DECO_MAP = {
   'fenomeno': [DecoSunRay, DecoCorridor, DecoTemple],
   'colosos': [DecoStatue, DecoTemple, DecoSunRay],
@@ -190,7 +190,7 @@ const DECO_MAP = {
   'legado': [DecoUNESCO, DecoStatue, DecoSunRay],
 };
 
-// ─── Infographic Node Content ────────────────────────────────────────────────
+// â”€â”€â”€ Infographic Node Content â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const BIBLIOGRAPHY = [
   'Kitchen, K.A. (1982). Pharaoh Triumphant: The Life and Times of Ramesses II, Aris & Phillips',
   'Desroches-Noblecourt, C. (1997). Le Fabuleux Heritage de l\'Egypte, Schwartz',
@@ -201,18 +201,18 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'fenomeno',
-    title: 'El Fenómeno Solar',
+    title: 'El FenÃ³meno Solar',
     color: '#FF9A3C',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_fenomeno.png',
     image: '/assets/egypt/infographic_abusimbel/hero_fenomeno.png',
     content: [
-      'Imagina que eres un faraón hace 3,200 años. Construyes un templo gigante dentro de una montaña y calculas que, exactamente dos días al año, los primeros rayos del sol de la mañana entrarán por la puerta y viajarán por un corredor oscuro de 65 metros —¡casi tan largo como una cancha de fútbol americano!— para iluminar tus estatuas en el fondo. Eso es exactamente lo que hizo Ramsés II con Abu Simbel.',
-      'Cada año, el 22 de febrero y el 22 de octubre, algo mágico sucede en el sur de Egipto. El sol sale por el horizonte y sus primeros rayos entran por la puerta del templo, viajan 65 metros por el corredor completamente oscuro, y al final iluminan cuatro estatuas de los dioses en el santuario. Es como si el sol fuera un faro gigante apuntando exactamente a un punto secreto dentro de una montaña.',
-      '¿Por qué esas dos fechas exactas? Los historiadores creen que el 22 de febrero era el cumpleaños de Ramsés II, y el 22 de octubre era el día de su coronación como faraón. Así, el sol —el dios más poderoso del cielo— aparecía cada año para "felicitar" a Ramsés en sus días más importantes. Era su forma de demostrar que era un dios en la Tierra.',
-      'De las cuatro estatuas que se iluminan, tres son dioses del sol: Ramsés II, Ra-Horajti (dios del horizonte solar) y Amón (rey de los dioses). Pero una estatua —la de Ptah, el dios de las tinieblas y la oscuridad— siempre permanece en sombra. ¡Hasta en el diseño del templo los egipcios contaban una historia sobre la lucha entre la luz y la oscuridad!',
-      'La precisión de este diseño es increíble. Los ingenieros egipcios calcularon el ángulo exacto al que sale el sol el 22 de febrero en esa latitud específica (22° Norte). Luego excavaron el corredor de 65 metros con exactamente ese ángulo. Si el ángulo fuera solo 1 grado diferente, el rayo de luz se desviaría varios metros y nunca llegaría a las estatuas. Es como apuntar un láser con una precisión perfecta durante 65 metros dentro de roca sólida.',
+      'Imagina que eres un faraÃ³n hace 3,200 aÃ±os. Construyes un templo gigante dentro de una montaÃ±a y calculas que, exactamente dos dÃ­as al aÃ±o, los primeros rayos del sol de la maÃ±ana entrarÃ¡n por la puerta y viajarÃ¡n por un corredor oscuro de 65 metros â€”Â¡casi tan largo como una cancha de fÃºtbol americano!â€” para iluminar tus estatuas en el fondo. Eso es exactamente lo que hizo RamsÃ©s II con Abu Simbel.',
+      'Cada aÃ±o, el 22 de febrero y el 22 de octubre, algo mÃ¡gico sucede en el sur de Egipto. El sol sale por el horizonte y sus primeros rayos entran por la puerta del templo, viajan 65 metros por el corredor completamente oscuro, y al final iluminan cuatro estatuas de los dioses en el santuario. Es como si el sol fuera un faro gigante apuntando exactamente a un punto secreto dentro de una montaÃ±a.',
+      'Â¿Por quÃ© esas dos fechas exactas? Los historiadores creen que el 22 de febrero era el cumpleaÃ±os de RamsÃ©s II, y el 22 de octubre era el dÃ­a de su coronaciÃ³n como faraÃ³n. AsÃ­, el sol â€”el dios mÃ¡s poderoso del cieloâ€” aparecÃ­a cada aÃ±o para "felicitar" a RamsÃ©s en sus dÃ­as mÃ¡s importantes. Era su forma de demostrar que era un dios en la Tierra.',
+      'De las cuatro estatuas que se iluminan, tres son dioses del sol: RamsÃ©s II, Ra-Horajti (dios del horizonte solar) y AmÃ³n (rey de los dioses). Pero una estatua â€”la de Ptah, el dios de las tinieblas y la oscuridadâ€” siempre permanece en sombra. Â¡Hasta en el diseÃ±o del templo los egipcios contaban una historia sobre la lucha entre la luz y la oscuridad!',
+      'La precisiÃ³n de este diseÃ±o es increÃ­ble. Los ingenieros egipcios calcularon el Ã¡ngulo exacto al que sale el sol el 22 de febrero en esa latitud especÃ­fica (22Â° Norte). Luego excavaron el corredor de 65 metros con exactamente ese Ã¡ngulo. Si el Ã¡ngulo fuera solo 1 grado diferente, el rayo de luz se desviarÃ­a varios metros y nunca llegarÃ­a a las estatuas. Es como apuntar un lÃ¡ser con una precisiÃ³n perfecta durante 65 metros dentro de roca sÃ³lida.',
     ],
-    fact: 'El 22 de febrero y el 22 de octubre NO son los solsticios ni los equinoccios. Son dos días específicos que solo se pueden calcular sabiendo con exactitud la latitud del lugar (22° Norte). Los ingenieros egipcios descubrieron y usaron geometría solar avanzada 3,200 años antes de que inventáramos las computadoras. Hoy los astrónomos modernos verifican sus cálculos con software y son casi perfectos.',
+    fact: 'El 22 de febrero y el 22 de octubre NO son los solsticios ni los equinoccios. Son dos dÃ­as especÃ­ficos que solo se pueden calcular sabiendo con exactitud la latitud del lugar (22Â° Norte). Los ingenieros egipcios descubrieron y usaron geometrÃ­a solar avanzada 3,200 aÃ±os antes de que inventÃ¡ramos las computadoras. Hoy los astrÃ³nomos modernos verifican sus cÃ¡lculos con software y son casi perfectos.',
   },
   {
     id: 'colosos',
@@ -221,43 +221,43 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_abusimbel/btn_colosos.png',
     image: '/assets/egypt/infographic_abusimbel/hero_colosos.png',
     content: [
-      'Imagina que estás caminando por el desierto y de repente ves cuatro personas gigantes sentadas en una montaña. ¡Cada una mide entre 17 y 20 metros de altura! Para que te imagines el tamaño: si pusieras cuatro jirafa adultas una encima de otra, apenas llegarían a la barbilla de estas estatuas. Esos son los cuatro colosos de Abu Simbel.',
-      'Las cuatro estatuas muestran a Ramsés II sentado en su trono, con las manos sobre las rodillas. A sus pies, esculpidas mucho más pequeñas, aparecen figuras de su esposa favorita Nefertari, su madre Tuy, y algunos de sus muchos hijos. El mensaje era claro: Ramsés II era tan grande comparado con el resto que hasta su familia parecía pequeña.',
-      'Las cuatro figuras son idénticas —todas muestran a Ramsés II— pero representan diferentes aspectos de su divinidad. Era una forma egipcia de decir "Ramsés II es tan importante que necesitamos cuatro versiones de él para guardar el templo". Para los nubios al sur y los libios al oeste que pasaban por ahí, ver esas cuatro estatuas gigantes era un mensaje muy claro: no te metas con Egipto.',
-      'Una de las estatuas tiene la parte superior rota —se cayó por un terremoto hace más de 2,000 años— y los fragmentos todavía están en el suelo, justo donde cayeron. Cuando los ingenieros modernos trasladaron el templo en los años 1960, dejaron los fragmentos exactamente en el mismo lugar. Decidieron que era más honesto mostrar que el tiempo también afecta las cosas más grandes.',
-      'Entre las piernas de los colosos y alrededor de los pies, hay pequeñas figuras esculpidas de prisioneros con las manos atadas. Representan a los enemigos de Egipto: nubios al sur, libios al oeste, asiáticos al este. Era un mensaje político en piedra: Ramsés II tenía a sus enemigos "aplastados" literalmente bajo sus pies para siempre.',
+      'Imagina que estÃ¡s caminando por el desierto y de repente ves cuatro personas gigantes sentadas en una montaÃ±a. Â¡Cada una mide entre 17 y 20 metros de altura! Para que te imagines el tamaÃ±o: si pusieras cuatro jirafa adultas una encima de otra, apenas llegarÃ­an a la barbilla de estas estatuas. Esos son los cuatro colosos de Abu Simbel.',
+      'Las cuatro estatuas muestran a RamsÃ©s II sentado en su trono, con las manos sobre las rodillas. A sus pies, esculpidas mucho mÃ¡s pequeÃ±as, aparecen figuras de su esposa favorita Nefertari, su madre Tuy, y algunos de sus muchos hijos. El mensaje era claro: RamsÃ©s II era tan grande comparado con el resto que hasta su familia parecÃ­a pequeÃ±a.',
+      'Las cuatro figuras son idÃ©nticas â€”todas muestran a RamsÃ©s IIâ€” pero representan diferentes aspectos de su divinidad. Era una forma egipcia de decir "RamsÃ©s II es tan importante que necesitamos cuatro versiones de Ã©l para guardar el templo". Para los nubios al sur y los libios al oeste que pasaban por ahÃ­, ver esas cuatro estatuas gigantes era un mensaje muy claro: no te metas con Egipto.',
+      'Una de las estatuas tiene la parte superior rota â€”se cayÃ³ por un terremoto hace mÃ¡s de 2,000 aÃ±osâ€” y los fragmentos todavÃ­a estÃ¡n en el suelo, justo donde cayeron. Cuando los ingenieros modernos trasladaron el templo en los aÃ±os 1960, dejaron los fragmentos exactamente en el mismo lugar. Decidieron que era mÃ¡s honesto mostrar que el tiempo tambiÃ©n afecta las cosas mÃ¡s grandes.',
+      'Entre las piernas de los colosos y alrededor de los pies, hay pequeÃ±as figuras esculpidas de prisioneros con las manos atadas. Representan a los enemigos de Egipto: nubios al sur, libios al oeste, asiÃ¡ticos al este. Era un mensaje polÃ­tico en piedra: RamsÃ©s II tenÃ­a a sus enemigos "aplastados" literalmente bajo sus pies para siempre.',
     ],
-    fact: 'Ramsés II vivió aproximadamente 90 años (1303-1213 a.C.), lo que era extraordinariamente raro en la antigüedad cuando la esperanza de vida promedio era de 35 años. Tuvo más de 100 hijos e hijas. Gobernó Egipto durante 66 años, el segundo reinado más largo de toda la historia egipcia. Construyó más monumentos que cualquier otro faraón. ¡Era literalmente el faraón más "extra" de todos!',
+    fact: 'RamsÃ©s II viviÃ³ aproximadamente 90 aÃ±os (1303-1213 a.C.), lo que era extraordinariamente raro en la antigÃ¼edad cuando la esperanza de vida promedio era de 35 aÃ±os. Tuvo mÃ¡s de 100 hijos e hijas. GobernÃ³ Egipto durante 66 aÃ±os, el segundo reinado mÃ¡s largo de toda la historia egipcia. ConstruyÃ³ mÃ¡s monumentos que cualquier otro faraÃ³n. Â¡Era literalmente el faraÃ³n mÃ¡s "extra" de todos!',
   },
   {
     id: 'ingenieria',
-    title: 'Ingeniería Faraónica',
+    title: 'IngenierÃ­a FaraÃ³nica',
     color: '#E8851A',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_ingenieria.png',
     image: '/assets/egypt/infographic_abusimbel/hero_ingenieria.png',
     content: [
-      '¿Cómo pudieron los egipcios calcular el ángulo exacto del sol sin Google Maps, sin calculadoras y sin telescopios? La respuesta es fascinante: usaban palos, sombras y mucha observación paciente. Durante años, los sacerdotes-astrónomos registraron exactamente en qué punto del horizonte salía el sol cada día del año. Con esos datos, construyeron un modelo mental perfectamente preciso del cielo.',
-      'El corredor de Abu Simbel mide 65 metros de largo —casi tan largo como dos albercas olímpicas una detrás de otra— y fue excavado completamente a mano en roca de arenisca roja. La puerta de entrada tiene un área de solo unos cuantos metros cuadrados, y el corredor se va estrechando hacia adentro. Lograr que un rayo de luz entre por ese hueco pequeño y viaje 65 metros hasta exactamente el punto correcto requirió un cálculo preciso.',
-      'El ángulo del corredor corresponde al ángulo solar del amanecer del 22 de febrero en la latitud 22° Norte. Para calcular este ángulo, los ingenieros egipcios usaron un sistema de medición angular basado en la Estrella Polar (Thuban, en esa época) y las sombras del mediodía solar. Midieron con varas graduadas y cuerdas tensadas durante varios años antes de excavar.',
-      'La tolerancia de error en la construcción fue extraordinaria. Si el corredor se hubiera desviado solo 0.5 grados en cualquier dirección, el rayo de luz habría fallado el blanco por más de 50 centímetros. Pero no falló. Después de 3,200 años, el fenómeno sigue ocurriendo con precisión perfecta. Incluso cuando se trasladó el templo en los años 1960, los ingenieros modernos se aseguraron de replicar el mismo ángulo exacto.',
-      'La precisión requerida equivale a apuntar un puntero láser desde 100 metros de distancia hacia un blanco del tamaño de una moneda. Los egipcios lo lograron sin tecnología moderna, solo con observación, matemáticas y paciencia. Es posiblemente el cálculo de ingeniería más asombroso de la antigüedad.',
+      'Â¿CÃ³mo pudieron los egipcios calcular el Ã¡ngulo exacto del sol sin Google Maps, sin calculadoras y sin telescopios? La respuesta es fascinante: usaban palos, sombras y mucha observaciÃ³n paciente. Durante aÃ±os, los sacerdotes-astrÃ³nomos registraron exactamente en quÃ© punto del horizonte salÃ­a el sol cada dÃ­a del aÃ±o. Con esos datos, construyeron un modelo mental perfectamente preciso del cielo.',
+      'El corredor de Abu Simbel mide 65 metros de largo â€”casi tan largo como dos albercas olÃ­mpicas una detrÃ¡s de otraâ€” y fue excavado completamente a mano en roca de arenisca roja. La puerta de entrada tiene un Ã¡rea de solo unos cuantos metros cuadrados, y el corredor se va estrechando hacia adentro. Lograr que un rayo de luz entre por ese hueco pequeÃ±o y viaje 65 metros hasta exactamente el punto correcto requiriÃ³ un cÃ¡lculo preciso.',
+      'El Ã¡ngulo del corredor corresponde al Ã¡ngulo solar del amanecer del 22 de febrero en la latitud 22Â° Norte. Para calcular este Ã¡ngulo, los ingenieros egipcios usaron un sistema de mediciÃ³n angular basado en la Estrella Polar (Thuban, en esa Ã©poca) y las sombras del mediodÃ­a solar. Midieron con varas graduadas y cuerdas tensadas durante varios aÃ±os antes de excavar.',
+      'La tolerancia de error en la construcciÃ³n fue extraordinaria. Si el corredor se hubiera desviado solo 0.5 grados en cualquier direcciÃ³n, el rayo de luz habrÃ­a fallado el blanco por mÃ¡s de 50 centÃ­metros. Pero no fallÃ³. DespuÃ©s de 3,200 aÃ±os, el fenÃ³meno sigue ocurriendo con precisiÃ³n perfecta. Incluso cuando se trasladÃ³ el templo en los aÃ±os 1960, los ingenieros modernos se aseguraron de replicar el mismo Ã¡ngulo exacto.',
+      'La precisiÃ³n requerida equivale a apuntar un puntero lÃ¡ser desde 100 metros de distancia hacia un blanco del tamaÃ±o de una moneda. Los egipcios lo lograron sin tecnologÃ­a moderna, solo con observaciÃ³n, matemÃ¡ticas y paciencia. Es posiblemente el cÃ¡lculo de ingenierÃ­a mÃ¡s asombroso de la antigÃ¼edad.',
     ],
-    fact: 'Los ingenieros egipcios usaron un sistema llamado "seked" para calcular ángulos. Un seked era la cantidad de palmos horizontales por cada codo (unidad de medida) de altura vertical, similar a nuestra tangente trigonométrica. ¡Estaban usando trigonométria práctica 2,000 años antes de que los griegos inventaran formalmente la trigonometría! El papiro de Rhind (hacia 1650 a.C.) describe estos cálculos con detalle.',
+    fact: 'Los ingenieros egipcios usaron un sistema llamado "seked" para calcular Ã¡ngulos. Un seked era la cantidad de palmos horizontales por cada codo (unidad de medida) de altura vertical, similar a nuestra tangente trigonomÃ©trica. Â¡Estaban usando trigonomÃ©tria prÃ¡ctica 2,000 aÃ±os antes de que los griegos inventaran formalmente la trigonometrÃ­a! El papiro de Rhind (hacia 1650 a.C.) describe estos cÃ¡lculos con detalle.',
   },
   {
     id: 'ramses',
-    title: 'Ramsés el Grande',
+    title: 'RamsÃ©s el Grande',
     color: '#FF7043',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_ramses.png',
     image: '/assets/egypt/infographic_abusimbel/hero_ramses.png',
     content: [
-      'Ramsés II no solo construyó Abu Simbel; construyó más templos, colosales estatuas y monumentos que cualquier otro faraón en la historia de Egipto. Si todos los faraones egipcios fueran superhéroes, Ramsés II sería el que tiene el videojuego con más nivel de dificultad terminado, más trofeos, y encima de eso se auto-otorgó el título de "El Grande". Porque sí, Ramsés fue quien empezó a llamarse a sí mismo "El Grande".',
-      'Abu Simbel cuenta en sus paredes la historia de la Batalla de Qadesh (hacia 1274 a.C.), la batalla más grande de carros de guerra de la historia antigua. Ramsés II se enfrentó al rey hitita Muwatalli II con miles de soldados y carros de guerra. El resultado fue un empate: ninguno de los dos ganó claramente. Pero en las paredes de Abu Simbel, Ramsés lo pintó como una victoria aplastante donde él solo derrotó a miles de enemigos.',
-      'Los muros del templo muestran a Ramsés en su carro de guerra, enorme, disparando flechas hacia los enemigos que caen en pánico a su alrededor. Hay una escena específica donde Ramsés aparece tan grande que ocupa la mitad del mural, mientras sus enemigos son diminutos. Era propaganda política en piedra: "Yo soy tan poderoso que soy básicamente un dios".',
-      'La Batalla de Qadesh terminó con el primer tratado de paz internacional de la historia conocida, firmado entre Ramsés II y el rey hitita Muwatalli II. Este tratado, grabado tanto en jeroglíficos como en cuneiforme hitita, fue un acuerdo de no agresión y defensa mutua. Una copia está en el Museo Egipcio de El Cairo, y otra en la sede de las Naciones Unidas en Nueva York, como símbolo de la primera diplomacia de la historia.',
-      'Ramsés II fue tan famoso que muchos faraones posteriores quisieron parecerse a él. Varios faraones tomaron prestado su nombre (hay nueve "Ramsés" en la historia de Egipto). También se borró el nombre de otros faraones en monumentos antiguos y grabó el suyo propio, convirtiéndose efectivamente en el padre fundador del turismo arqueológico confuso de Egipto.',
+      'RamsÃ©s II no solo construyÃ³ Abu Simbel; construyÃ³ mÃ¡s templos, colosales estatuas y monumentos que cualquier otro faraÃ³n en la historia de Egipto. Si todos los faraones egipcios fueran superhÃ©roes, RamsÃ©s II serÃ­a el que tiene el videojuego con mÃ¡s nivel de dificultad terminado, mÃ¡s trofeos, y encima de eso se auto-otorgÃ³ el tÃ­tulo de "El Grande". Porque sÃ­, RamsÃ©s fue quien empezÃ³ a llamarse a sÃ­ mismo "El Grande".',
+      'Abu Simbel cuenta en sus paredes la historia de la Batalla de Qadesh (hacia 1274 a.C.), la batalla mÃ¡s grande de carros de guerra de la historia antigua. RamsÃ©s II se enfrentÃ³ al rey hitita Muwatalli II con miles de soldados y carros de guerra. El resultado fue un empate: ninguno de los dos ganÃ³ claramente. Pero en las paredes de Abu Simbel, RamsÃ©s lo pintÃ³ como una victoria aplastante donde Ã©l solo derrotÃ³ a miles de enemigos.',
+      'Los muros del templo muestran a RamsÃ©s en su carro de guerra, enorme, disparando flechas hacia los enemigos que caen en pÃ¡nico a su alrededor. Hay una escena especÃ­fica donde RamsÃ©s aparece tan grande que ocupa la mitad del mural, mientras sus enemigos son diminutos. Era propaganda polÃ­tica en piedra: "Yo soy tan poderoso que soy bÃ¡sicamente un dios".',
+      'La Batalla de Qadesh terminÃ³ con el primer tratado de paz internacional de la historia conocida, firmado entre RamsÃ©s II y el rey hitita Muwatalli II. Este tratado, grabado tanto en jeroglÃ­ficos como en cuneiforme hitita, fue un acuerdo de no agresiÃ³n y defensa mutua. Una copia estÃ¡ en el Museo Egipcio de El Cairo, y otra en la sede de las Naciones Unidas en Nueva York, como sÃ­mbolo de la primera diplomacia de la historia.',
+      'RamsÃ©s II fue tan famoso que muchos faraones posteriores quisieron parecerse a Ã©l. Varios faraones tomaron prestado su nombre (hay nueve "RamsÃ©s" en la historia de Egipto). TambiÃ©n se borrÃ³ el nombre de otros faraones en monumentos antiguos y grabÃ³ el suyo propio, convirtiÃ©ndose efectivamente en el padre fundador del turismo arqueolÃ³gico confuso de Egipto.',
     ],
-    fact: 'El tratado de Qadesh (hacia 1258 a.C.) es el primer tratado de paz internacional de la historia del que tenemos registro escrito. Una copia en cuneiforme hitita está expuesta en la sede de las Naciones Unidas en Nueva York como símbolo de la diplomacia internacional. ¡La primera vez que dos países dijeron "hagamos las paces por escrito" fue hace 3,280 años y el documento sobrevivió!',
+    fact: 'El tratado de Qadesh (hacia 1258 a.C.) es el primer tratado de paz internacional de la historia del que tenemos registro escrito. Una copia en cuneiforme hitita estÃ¡ expuesta en la sede de las Naciones Unidas en Nueva York como sÃ­mbolo de la diplomacia internacional. Â¡La primera vez que dos paÃ­ses dijeron "hagamos las paces por escrito" fue hace 3,280 aÃ±os y el documento sobreviviÃ³!',
   },
   {
     id: 'arenisca',
@@ -266,13 +266,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_abusimbel/btn_arenisca.png',
     image: '/assets/egypt/infographic_abusimbel/hero_arenisca.png',
     content: [
-      '¿Por qué Abu Simbel es rojo-naranja? La respuesta está en la roca: es arenisca de Nubia, un tipo de roca formada hace millones de años cuando esa región era el fondo de un mar antiguo. La arenisca está compuesta de granos de cuarzo cementados con óxido de hierro, y ese óxido de hierro es exactamente el mismo compuesto que hace que el óxido de tus bicicletas sea café-rojizo.',
-      'Los ingenieros egipcios eligieron deliberadamente este material por sus propiedades ópticas únicas. Cuando la luz del sol de la mañana toca la arenisca roja de Nubia, la roca absorbe algunas longitudes de onda de la luz y refleja principalmente los tonos dorados y anaranjados. Esto significa que durante el fenómeno solar del 22 de febrero, las estatuas no solo se iluminan: ¡parecen literalmente encenderse con fuego dorado!',
-      'La arenisca también tiene una propiedad térmica interesante: se calienta muy rápidamente con el sol de la mañana pero tarda horas en enfriarse. Los sacerdotes egipcios describían este fenómeno como "la roca que guarda el calor del dios sol incluso después de que él se va". Era parte de la experiencia religiosa: tocar la piedra caliente por la tarde y sentir que el sol todavía estaba presente en ella.',
-      'Sin embargo, la arenisca también es el mayor reto de conservación de Abu Simbel. Es una roca relativamente blanda que se erosiona con el viento y el agua. Las caras de las estatuas han perdido detalles a lo largo de 3,200 años de viento de arena del desierto. Hoy los conservadores aplican químicos especiales para endurecer la superficie y frenar la erosión, usando técnicas que no dañan la roca original.',
-      'Cuando el templo fue trasladado en los años 1960, los geólogos analizaron en detalle la composición química de la arenisca para asegurarse de que los bloques cortados se recolocaran con el mismo lado hacia afuera. La arenisca tiene capas de diferente dureza (algunas más compactas, otras más porosas), y colocarlos al revés habría acelerado la erosión. Hasta en el traslado pensaron en la física de los materiales.',
+      'Â¿Por quÃ© Abu Simbel es rojo-naranja? La respuesta estÃ¡ en la roca: es arenisca de Nubia, un tipo de roca formada hace millones de aÃ±os cuando esa regiÃ³n era el fondo de un mar antiguo. La arenisca estÃ¡ compuesta de granos de cuarzo cementados con Ã³xido de hierro, y ese Ã³xido de hierro es exactamente el mismo compuesto que hace que el Ã³xido de tus bicicletas sea cafÃ©-rojizo.',
+      'Los ingenieros egipcios eligieron deliberadamente este material por sus propiedades Ã³pticas Ãºnicas. Cuando la luz del sol de la maÃ±ana toca la arenisca roja de Nubia, la roca absorbe algunas longitudes de onda de la luz y refleja principalmente los tonos dorados y anaranjados. Esto significa que durante el fenÃ³meno solar del 22 de febrero, las estatuas no solo se iluminan: Â¡parecen literalmente encenderse con fuego dorado!',
+      'La arenisca tambiÃ©n tiene una propiedad tÃ©rmica interesante: se calienta muy rÃ¡pidamente con el sol de la maÃ±ana pero tarda horas en enfriarse. Los sacerdotes egipcios describÃ­an este fenÃ³meno como "la roca que guarda el calor del dios sol incluso despuÃ©s de que Ã©l se va". Era parte de la experiencia religiosa: tocar la piedra caliente por la tarde y sentir que el sol todavÃ­a estaba presente en ella.',
+      'Sin embargo, la arenisca tambiÃ©n es el mayor reto de conservaciÃ³n de Abu Simbel. Es una roca relativamente blanda que se erosiona con el viento y el agua. Las caras de las estatuas han perdido detalles a lo largo de 3,200 aÃ±os de viento de arena del desierto. Hoy los conservadores aplican quÃ­micos especiales para endurecer la superficie y frenar la erosiÃ³n, usando tÃ©cnicas que no daÃ±an la roca original.',
+      'Cuando el templo fue trasladado en los aÃ±os 1960, los geÃ³logos analizaron en detalle la composiciÃ³n quÃ­mica de la arenisca para asegurarse de que los bloques cortados se recolocaran con el mismo lado hacia afuera. La arenisca tiene capas de diferente dureza (algunas mÃ¡s compactas, otras mÃ¡s porosas), y colocarlos al revÃ©s habrÃ­a acelerado la erosiÃ³n. Hasta en el traslado pensaron en la fÃ­sica de los materiales.',
     ],
-    fact: 'La arenisca de Nubia que forma Abu Simbel tiene aproximadamente 65 millones de años de antigüedad: se formó durante el período Cretácico, ¡cuando los dinosaurios todavía vivían! Los granos de cuarzo y feldespato que la componen son fragmentos de montañas mucho más antiguas que se erosionaron, viajaron por ríos y se depositaron en el fondo del mar. En cada bloque del templo hay literalmente fragmentos de montañas de hace cientos de millones de años.',
+    fact: 'La arenisca de Nubia que forma Abu Simbel tiene aproximadamente 65 millones de aÃ±os de antigÃ¼edad: se formÃ³ durante el perÃ­odo CretÃ¡cico, Â¡cuando los dinosaurios todavÃ­a vivÃ­an! Los granos de cuarzo y feldespato que la componen son fragmentos de montaÃ±as mucho mÃ¡s antiguas que se erosionaron, viajaron por rÃ­os y se depositaron en el fondo del mar. En cada bloque del templo hay literalmente fragmentos de montaÃ±as de hace cientos de millones de aÃ±os.',
   },
   {
     id: 'rescate',
@@ -281,13 +281,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_abusimbel/btn_rescate.png',
     image: '/assets/egypt/infographic_abusimbel/hero_rescate.png',
     content: [
-      'En 1960, el gobierno de Egipto decidió construir la Gran Presa de Asuán para controlar las inundaciones del Nilo y generar electricidad. El problema: la presa crearía el Lago Nasser, un lago artificial que inundaría completamente Abu Simbel bajo 40 metros de agua. El mundo entero entró en pánico: ¿cómo salvar uno de los monumentos más importantes de la humanidad?',
-      'La UNESCO (la agencia cultural de las Naciones Unidas) lanzó una campaña de ayuda internacional de emergencia. Ingenieros de 50 países diferentes llegaron a Egipto con una misión casi imposible: mover un templo excavado en una montaña sin destruirlo. Primero calcularon que era físicamente posible cortarlo en bloques y reensamblarlo. El plan tomó cuatro años (1964-1968) y costó 80 millones de dólares (equivalentes a más de 600 millones de hoy).',
-      'Los ingenieros cortaron el templo completo en 1,036 bloques de piedra. El bloque más grande pesaba 30 toneladas —el peso de cinco elefantes africanos adultos— y el más pequeño pesaba unos 10 kg. Usaron motosierras con discos diamantados para cortar la roca sin vibrar demasiado (las vibraciones habrían roto las pinturas y los relieves). Luego numeraron cada bloque y lo fotografiaron desde múltiples ángulos.',
-      'Los bloques fueron transportados colina arriba, 65 metros más alto y 200 metros más lejos del borde del lago. Ahí, los ingenieros construyeron una cúpula artificial de hormigón para reproducir exactamente la oscuridad interior del templo original. Después reensamblaron los 1,036 bloques como un gigantesco rompecabezas tridimensional, usando los números y las fotografías para asegurarse de que cada bloque estuviera exactamente en su lugar correcto.',
-      'La parte más difícil fue mantener las mismas orientaciones astronómicas. Los ingenieros usaron computadoras (recién inventadas en esa época) para calcular el ángulo exacto del corredor que replicara el fenómeno solar del 22 de febrero. Lo lograron: cuando el templo fue reinaugurado en 1968, el fenómeno ocurrió exactamente igual que en el templo original. Un error de cálculo de varios días ocurrió por las diferencias de la nueva posición pero el fenómeno lumínico se replicó.',
+      'En 1960, el gobierno de Egipto decidiÃ³ construir la Gran Presa de AsuÃ¡n para controlar las inundaciones del Nilo y generar electricidad. El problema: la presa crearÃ­a el Lago Nasser, un lago artificial que inundarÃ­a completamente Abu Simbel bajo 40 metros de agua. El mundo entero entrÃ³ en pÃ¡nico: Â¿cÃ³mo salvar uno de los monumentos mÃ¡s importantes de la humanidad?',
+      'La UNESCO (la agencia cultural de las Naciones Unidas) lanzÃ³ una campaÃ±a de ayuda internacional de emergencia. Ingenieros de 50 paÃ­ses diferentes llegaron a Egipto con una misiÃ³n casi imposible: mover un templo excavado en una montaÃ±a sin destruirlo. Primero calcularon que era fÃ­sicamente posible cortarlo en bloques y reensamblarlo. El plan tomÃ³ cuatro aÃ±os (1964-1968) y costÃ³ 80 millones de dÃ³lares (equivalentes a mÃ¡s de 600 millones de hoy).',
+      'Los ingenieros cortaron el templo completo en 1,036 bloques de piedra. El bloque mÃ¡s grande pesaba 30 toneladas â€”el peso de cinco elefantes africanos adultosâ€” y el mÃ¡s pequeÃ±o pesaba unos 10 kg. Usaron motosierras con discos diamantados para cortar la roca sin vibrar demasiado (las vibraciones habrÃ­an roto las pinturas y los relieves). Luego numeraron cada bloque y lo fotografiaron desde mÃºltiples Ã¡ngulos.',
+      'Los bloques fueron transportados colina arriba, 65 metros mÃ¡s alto y 200 metros mÃ¡s lejos del borde del lago. AhÃ­, los ingenieros construyeron una cÃºpula artificial de hormigÃ³n para reproducir exactamente la oscuridad interior del templo original. DespuÃ©s reensamblaron los 1,036 bloques como un gigantesco rompecabezas tridimensional, usando los nÃºmeros y las fotografÃ­as para asegurarse de que cada bloque estuviera exactamente en su lugar correcto.',
+      'La parte mÃ¡s difÃ­cil fue mantener las mismas orientaciones astronÃ³micas. Los ingenieros usaron computadoras (reciÃ©n inventadas en esa Ã©poca) para calcular el Ã¡ngulo exacto del corredor que replicara el fenÃ³meno solar del 22 de febrero. Lo lograron: cuando el templo fue reinaugurado en 1968, el fenÃ³meno ocurriÃ³ exactamente igual que en el templo original. Un error de cÃ¡lculo de varios dÃ­as ocurriÃ³ por las diferencias de la nueva posiciÃ³n pero el fenÃ³meno lumÃ­nico se replicÃ³.',
     ],
-    fact: 'El traslado de Abu Simbel fue tan impresionante que inspiró directamente la Convención del Patrimonio Mundial de la UNESCO, firmada en 1972. Esta convención hoy protege 1,199 sitios culturales y naturales en 168 países, desde la Gran Muralla China hasta los Parques Nacionales de Argentina. Sin Abu Simbel, ese sistema de protección global quizás no existiría. ¡Un templo del año 1264 a.C. protege el patrimonio del siglo XXI!',
+    fact: 'El traslado de Abu Simbel fue tan impresionante que inspirÃ³ directamente la ConvenciÃ³n del Patrimonio Mundial de la UNESCO, firmada en 1972. Esta convenciÃ³n hoy protege 1,199 sitios culturales y naturales en 168 paÃ­ses, desde la Gran Muralla China hasta los Parques Nacionales de Argentina. Sin Abu Simbel, ese sistema de protecciÃ³n global quizÃ¡s no existirÃ­a. Â¡Un templo del aÃ±o 1264 a.C. protege el patrimonio del siglo XXI!',
   },
   {
     id: 'nefertari',
@@ -296,13 +296,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_abusimbel/btn_nefertari.png',
     image: '/assets/egypt/infographic_abusimbel/hero_nefertari.png',
     content: [
-      'Junto al gran templo de Ramsés II hay un segundo templo, más pequeño pero igual de hermoso: el Templo de Nefertari, la esposa favorita de Ramsés II. En la historia de Egipto —3,000 años de historia con cientos de faraones— solo hay un puñado de casos donde una reina recibió un templo completo dedicado a ella. Nefertari es uno de esos casos rarísimos, lo que habla de lo especial que fue su relación con Ramsés.',
-      'El Templo de Nefertari está dedicado a Hathor, la diosa egipcia del amor, la música, la belleza y la alegría. Las pinturas interiores son las más coloridas y mejor conservadas de todo Egipto. Los azules, rojos, verdes y amarillos de hace 3,200 años siguen siendo brillantes hoy, protegidos por el ambiente seco del desierto. Es literalmente el "museo de arte" más antiguo del mundo en perfecto estado.',
-      'La fachada del templo de Nefertari tiene seis estatuas colosales: cuatro de Ramsés II y dos de Nefertari. Pero hay algo notable: todas las estatuas tienen la misma altura. En el arte egipcio, el tamaño indicaba importancia: los faraones siempre se representaban más grandes que todo el mundo. Que Nefertari tuviera estatuas del mismo tamaño que Ramsés era una declaración pública enorme: "Esta mujer es mi igual".',
-      'El templo de Nefertari también tiene un fenómeno solar, aunque diferente al de Ramsés. En los equinoccios (21 de marzo y 21 de septiembre), cuando el sol sale exactamente por el Este, los primeros rayos entran por la puerta y iluminan el rostro de la estatua de Hathor en el santuario interior. Es una alineación más sencilla que la de Ramsés, pero igualmente intencional.',
-      'Las inscripciones del templo de Nefertari contienen una de las declaraciones de amor más famosas de la antigüedad. Ramsés II escribió sobre Nefertari: "La más bella de todas, por quien el sol brilla". En el mundo antiguo donde las mujeres eran frecuentemente invisibles en los registros oficiales, tener un faraón escribiendo poesía de amor en un templo monumental era algo verdaderamente extraordinario.',
+      'Junto al gran templo de RamsÃ©s II hay un segundo templo, mÃ¡s pequeÃ±o pero igual de hermoso: el Templo de Nefertari, la esposa favorita de RamsÃ©s II. En la historia de Egipto â€”3,000 aÃ±os de historia con cientos de faraonesâ€” solo hay un puÃ±ado de casos donde una reina recibiÃ³ un templo completo dedicado a ella. Nefertari es uno de esos casos rarÃ­simos, lo que habla de lo especial que fue su relaciÃ³n con RamsÃ©s.',
+      'El Templo de Nefertari estÃ¡ dedicado a Hathor, la diosa egipcia del amor, la mÃºsica, la belleza y la alegrÃ­a. Las pinturas interiores son las mÃ¡s coloridas y mejor conservadas de todo Egipto. Los azules, rojos, verdes y amarillos de hace 3,200 aÃ±os siguen siendo brillantes hoy, protegidos por el ambiente seco del desierto. Es literalmente el "museo de arte" mÃ¡s antiguo del mundo en perfecto estado.',
+      'La fachada del templo de Nefertari tiene seis estatuas colosales: cuatro de RamsÃ©s II y dos de Nefertari. Pero hay algo notable: todas las estatuas tienen la misma altura. En el arte egipcio, el tamaÃ±o indicaba importancia: los faraones siempre se representaban mÃ¡s grandes que todo el mundo. Que Nefertari tuviera estatuas del mismo tamaÃ±o que RamsÃ©s era una declaraciÃ³n pÃºblica enorme: "Esta mujer es mi igual".',
+      'El templo de Nefertari tambiÃ©n tiene un fenÃ³meno solar, aunque diferente al de RamsÃ©s. En los equinoccios (21 de marzo y 21 de septiembre), cuando el sol sale exactamente por el Este, los primeros rayos entran por la puerta y iluminan el rostro de la estatua de Hathor en el santuario interior. Es una alineaciÃ³n mÃ¡s sencilla que la de RamsÃ©s, pero igualmente intencional.',
+      'Las inscripciones del templo de Nefertari contienen una de las declaraciones de amor mÃ¡s famosas de la antigÃ¼edad. RamsÃ©s II escribiÃ³ sobre Nefertari: "La mÃ¡s bella de todas, por quien el sol brilla". En el mundo antiguo donde las mujeres eran frecuentemente invisibles en los registros oficiales, tener un faraÃ³n escribiendo poesÃ­a de amor en un templo monumental era algo verdaderamente extraordinario.',
     ],
-    fact: 'El nombre completo de Nefertari era "Nefertari Meryetmut", que significa "La Bella Compañera, Amada de Mut". Las pinturas de su tumba en el Valle de las Reinas (QV66) son consideradas las más bellas del Antiguo Egipto. Cuando se descubrieron en 1904, algunos colores eran tan brillantes que los arqueólogos creyeron que eran pinturas modernas. Habían sobrevivido 3,200 años intactos en el ambiente seco del desierto.',
+    fact: 'El nombre completo de Nefertari era "Nefertari Meryetmut", que significa "La Bella CompaÃ±era, Amada de Mut". Las pinturas de su tumba en el Valle de las Reinas (QV66) son consideradas las mÃ¡s bellas del Antiguo Egipto. Cuando se descubrieron en 1904, algunos colores eran tan brillantes que los arqueÃ³logos creyeron que eran pinturas modernas. HabÃ­an sobrevivido 3,200 aÃ±os intactos en el ambiente seco del desierto.',
   },
   {
     id: 'legado',
@@ -311,17 +311,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_abusimbel/btn_legado.png',
     image: '/assets/egypt/infographic_abusimbel/hero_legado.png',
     content: [
-      'Cada año, el 22 de febrero y el 22 de octubre, miles de personas de todo el mundo viajan al sur de Egipto para presenciar el fenómeno solar de Abu Simbel. Se congregan antes del amanecer en la oscuridad del desierto, esperan en silencio, y luego observan cómo los primeros rayos del sol entran por la puerta del templo y viajan por el corredor hasta iluminar las estatuas. Es uno de los pocos espectáculos astronómicos que puedes ver sin ningún instrumento especial.',
-      'Abu Simbel se convirtió en Patrimonio de la Humanidad de la UNESCO en 1979, junto con los demás templos de Nubia. Hoy es el segundo sitio arqueológico más visitado de Egipto después de las Pirámides de Guiza, con más de 500,000 visitantes al año. El ingreso por turismo es vital para la economía local y para financiar la conservación de los templos.',
-      'El impacto más duradero de Abu Simbel fue político y cultural: su rescate en los años 1960 demostró que la humanidad podía unirse para proteger el patrimonio cultural compartido. Esta idea fue el germen de la Convención del Patrimonio Mundial de la UNESCO (1972), que hoy protege sitios en todos los continentes, desde las Cataratas de Iguazú hasta la Gran Barrera de Coral, pasando por el casco histórico de la Ciudad de México.',
-      'La experiencia de trasladar Abu Simbel generó técnicas de conservación que hoy se usan en todo el mundo. Los métodos de consolidación química de rocas porosas, los sistemas de monitoreo de temperatura y humedad en monumentos, y los protocolos de documentación fotográfica 3D que se desarrollaron en Abu Simbel son hoy estándares internacionales en arqueología.',
-      'Hay algo profundamente poético en el legado de Abu Simbel: un templo construido por un faraón para glorificarse a sí mismo y demostrar su poder terminó siendo el símbolo del esfuerzo colectivo de la humanidad para proteger su herencia cultural común. Ramsés II quería ser recordado como un dios. En cambio, lo recordamos como la inspiración para el mayor sistema de protección del patrimonio humano de la historia.',
+      'Cada aÃ±o, el 22 de febrero y el 22 de octubre, miles de personas de todo el mundo viajan al sur de Egipto para presenciar el fenÃ³meno solar de Abu Simbel. Se congregan antes del amanecer en la oscuridad del desierto, esperan en silencio, y luego observan cÃ³mo los primeros rayos del sol entran por la puerta del templo y viajan por el corredor hasta iluminar las estatuas. Es uno de los pocos espectÃ¡culos astronÃ³micos que puedes ver sin ningÃºn instrumento especial.',
+      'Abu Simbel se convirtiÃ³ en Patrimonio de la Humanidad de la UNESCO en 1979, junto con los demÃ¡s templos de Nubia. Hoy es el segundo sitio arqueolÃ³gico mÃ¡s visitado de Egipto despuÃ©s de las PirÃ¡mides de Guiza, con mÃ¡s de 500,000 visitantes al aÃ±o. El ingreso por turismo es vital para la economÃ­a local y para financiar la conservaciÃ³n de los templos.',
+      'El impacto mÃ¡s duradero de Abu Simbel fue polÃ­tico y cultural: su rescate en los aÃ±os 1960 demostrÃ³ que la humanidad podÃ­a unirse para proteger el patrimonio cultural compartido. Esta idea fue el germen de la ConvenciÃ³n del Patrimonio Mundial de la UNESCO (1972), que hoy protege sitios en todos los continentes, desde las Cataratas de IguazÃº hasta la Gran Barrera de Coral, pasando por el casco histÃ³rico de la Ciudad de MÃ©xico.',
+      'La experiencia de trasladar Abu Simbel generÃ³ tÃ©cnicas de conservaciÃ³n que hoy se usan en todo el mundo. Los mÃ©todos de consolidaciÃ³n quÃ­mica de rocas porosas, los sistemas de monitoreo de temperatura y humedad en monumentos, y los protocolos de documentaciÃ³n fotogrÃ¡fica 3D que se desarrollaron en Abu Simbel son hoy estÃ¡ndares internacionales en arqueologÃ­a.',
+      'Hay algo profundamente poÃ©tico en el legado de Abu Simbel: un templo construido por un faraÃ³n para glorificarse a sÃ­ mismo y demostrar su poder terminÃ³ siendo el sÃ­mbolo del esfuerzo colectivo de la humanidad para proteger su herencia cultural comÃºn. RamsÃ©s II querÃ­a ser recordado como un dios. En cambio, lo recordamos como la inspiraciÃ³n para el mayor sistema de protecciÃ³n del patrimonio humano de la historia.',
     ],
-    fact: 'La Convención del Patrimonio Mundial de la UNESCO, inspirada por el rescate de Abu Simbel, ha sido firmada por 195 países, más que cualquier otro tratado internacional en la historia. Protege 1,199 sitios en 168 países. Algunos de los sitios más increíbles: las Islas Galápagos, el Coliseo Romano, Machu Picchu, los Parques Nacionales de Yellowstone, la Ciudad Prohibida de China, y las Pirámides de Guiza. ¡Todo gracias a que Egipto necesitó mover un templo!',
+    fact: 'La ConvenciÃ³n del Patrimonio Mundial de la UNESCO, inspirada por el rescate de Abu Simbel, ha sido firmada por 195 paÃ­ses, mÃ¡s que cualquier otro tratado internacional en la historia. Protege 1,199 sitios en 168 paÃ­ses. Algunos de los sitios mÃ¡s increÃ­bles: las Islas GalÃ¡pagos, el Coliseo Romano, Machu Picchu, los Parques Nacionales de Yellowstone, la Ciudad Prohibida de China, y las PirÃ¡mides de Guiza. Â¡Todo gracias a que Egipto necesitÃ³ mover un templo!',
   },
 ];
 
-// ─── Animated Star / Sand Particle Field ────────────────────────────────────
+// â”€â”€â”€ Animated Star / Sand Particle Field â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function SandParticleField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -376,7 +376,7 @@ function SandParticleField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Abu Simbel SVG Header ───────────────────────────────────────────────────
+// â”€â”€â”€ Abu Simbel SVG Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function AbuSimbelHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-16px' }}>
@@ -433,7 +433,7 @@ function AbuSimbelHeader() {
         ))}
         {/* Title */}
         <text x="320" y="85" textAnchor="middle" fill="#FF9A3C" fontSize="17" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">ABU SIMBEL</text>
-        <text x="320" y="105" textAnchor="middle" fill="rgba(255,154,60,0.65)" fontSize="10.5" fontFamily="monospace" letterSpacing="2.5">LA LUZ DEL SOLSTICIO · 1264 A.C.</text>
+        <text x="320" y="105" textAnchor="middle" fill="rgba(255,154,60,0.65)" fontSize="10.5" fontFamily="monospace" letterSpacing="2.5">LA LUZ DEL SOLSTICIO Â· 1264 A.C.</text>
         {/* Gradient for background fading */}
         <defs>
           <linearGradient id="abuGrad" x1="0" y1="0" x2="1" y2="0">
@@ -447,7 +447,7 @@ function AbuSimbelHeader() {
   );
 }
 
-// ─── Node Button ─────────────────────────────────────────────────────────────
+// â”€â”€â”€ Node Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index, explored }) {
   const wasExplored = explored.has(node.id);
   return (
@@ -475,14 +475,14 @@ function NodeButton({ node, isActive, onClick, index, explored }) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={node.btnImage} alt={node.title}
           style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s', transform: isActive ? 'scale(1.1)' : 'scale(1)' }}
-        />
+         loading="lazy" />
         {wasExplored && !isActive && (
           <div style={{
             position: 'absolute', bottom: '4px', right: '4px',
             width: '18px', height: '18px', borderRadius: '50%',
             background: node.color, display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            <span style={{ color: '#1A0A00', fontSize: '10px', fontWeight: 900 }}>✓</span>
+            <span style={{ color: '#1A0A00', fontSize: '10px', fontWeight: 900 }}>âœ“</span>
           </div>
         )}
         {isActive && (
@@ -508,7 +508,7 @@ function NodeButton({ node, isActive, onClick, index, explored }) {
   );
 }
 
-// ─── Content Panel (Estándar M9) ─────────────────────────────────────────────
+// â”€â”€â”€ Content Panel (EstÃ¡ndar M9) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   const decoPositions = [
@@ -539,7 +539,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={18} />
       </button>
 
-      {/* ─── Two-Column Hero (Estándar: imagen + título y texto) ─── */}
+      {/* â”€â”€â”€ Two-Column Hero (EstÃ¡ndar: imagen + tÃ­tulo y texto) â”€â”€â”€ */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -564,7 +564,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           }} />
         </div>
 
-        {/* Derecha: Título + primeros 2 párrafos */}
+        {/* Derecha: TÃ­tulo + primeros 2 pÃ¡rrafos */}
         <div style={{ padding: '2rem 2rem 1.5rem 1.5rem', position: 'relative' }}>
           {decoComponents[0] && (
             <div style={{ position: 'absolute', top: '10px', right: '50px', transform: 'rotate(15deg)', pointerEvents: 'none' }}>
@@ -584,7 +584,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
             </span>
             {node.title}
           </h3>
@@ -600,7 +600,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── Magazine Body ─── */}
+      {/* â”€â”€â”€ Magazine Body â”€â”€â”€ */}
       <div style={{ padding: '1.5rem 2rem 2rem', position: 'relative' }}>
         {/* Decorativos flotantes */}
         {decoComponents.map((Deco, i) => {
@@ -616,7 +616,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           );
         })}
 
-        {/* Párrafos restantes en 2 columnas */}
+        {/* PÃ¡rrafos restantes en 2 columnas */}
         <div style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem 1.8rem',
           position: 'relative', zIndex: 2,
@@ -636,7 +636,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
                 }}>
-                  {['◆', '◇', '★', '◉'][i % 4]}
+                  {['â—†', 'â—‡', 'â˜…', 'â—‰'][i % 4]}
                 </div>
                 <p style={{ margin: 0, fontSize: '0.94rem', lineHeight: 1.76, color: 'rgba(255,255,255,0.86)' }}>
                   {para}
@@ -668,7 +668,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 fontSize: '0.7rem', fontWeight: 800, color: node.color,
                 letterSpacing: '2px', textTransform: 'uppercase',
               }}>
-                Dato Científico
+                Dato CientÃ­fico
               </span>
               <p style={{
                 margin: '0.3rem 0 0', fontStyle: 'italic',
@@ -684,7 +684,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ─────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ explored, total }) {
   const pct = (explored / total) * 100;
   return (
@@ -713,7 +713,7 @@ function ProgressBar({ explored, total }) {
   );
 }
 
-// ─── Main Component ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_EgyptM8() {
   const [activeNode, setActiveNode] = useState(null);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -755,7 +755,7 @@ export default function InteractiveInfographic_EgyptM8() {
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem',
           }}
         >
-          <ChevronRight size={14} /> Toca cada círculo para explorar <ChevronRight size={14} />
+          <ChevronRight size={14} /> Toca cada cÃ­rculo para explorar <ChevronRight size={14} />
         </motion.p>
       )}
 
@@ -794,15 +794,15 @@ export default function InteractiveInfographic_EgyptM8() {
             }}
           >
             <p style={{ margin: 0, color: '#FF9A3C', fontSize: '1.1rem', fontWeight: 'bold' }}>
-              ☀️ ¡Has descubierto todos los secretos de Abu Simbel!
+              â˜€ï¸ Â¡Has descubierto todos los secretos de Abu Simbel!
             </p>
             <p style={{ margin: '0.4rem 0 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
-              Ahora puedes tomar el quiz para ganar tu insignia de Rayo de Ramsés
+              Ahora puedes tomar el quiz para ganar tu insignia de Rayo de RamsÃ©s
             </p>
           </motion.div>
         )}
       </AnimatePresence>
-          {/* ─── Bibliografía ─── */}
+          {/* â”€â”€â”€ BibliografÃ­a â”€â”€â”€ */}
       <div style={{
         marginTop: '2rem', padding: '1.5rem 2rem',
         borderTop: '1px solid rgba(255,255,255,0.1)',
@@ -811,17 +811,17 @@ export default function InteractiveInfographic_EgyptM8() {
       }}>
         <h4 style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.8rem',
           textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-          📚 Fuentes y Referencias
+          ðŸ“š Fuentes y Referencias
         </h4>
         <ul style={{ fontSize: '0.75rem', color: '#666', lineHeight: 1.8,
           listStyle: 'none', padding: 0, margin: 0, columns: 2, columnGap: '2rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
-            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>• {ref}</li>
+            <li key={i} style={{ breakInside: 'avoid', marginBottom: '0.4rem' }}>â€¢ {ref}</li>
           ))}
         </ul>
       </div>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

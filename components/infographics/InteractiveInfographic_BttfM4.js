@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 
 import ImageLightbox from './ImageLightbox';
-// ─── SVG Decorative Elements (Time Machine themed) ────────────────────────────
+// â”€â”€â”€ SVG Decorative Elements (Time Machine themed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function DecoGear({ size = 70, color = '#6EC6FF', style = {} }) {
   return (
     <svg width={size} height={size} viewBox="0 0 60 60" style={{ opacity: 0.22, ...style }}>
@@ -133,7 +133,7 @@ const DECO_MAP = {
 };
 
 const BIBLIOGRAPHY = [
-  "Boltzmann, L. (1877). 'Über die Beziehung zwischen dem zweiten Hauptsatze', Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften",
+  "Boltzmann, L. (1877). 'Ãœber die Beziehung zwischen dem zweiten Hauptsatze', Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften",
   "Hawking, S. (1988). A Brief History of Time, Bantam Books",
   "Penrose, R. (2004). The Road to Reality, Jonathan Cape",
   "Carroll, S. (2010). From Eternity to Here: The Quest for the Ultimate Theory of Time, Dutton",
@@ -149,16 +149,16 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_naturaleza.png',
     image: '/assets/bttf/infographic_gigawatts/hero_naturaleza.png',
     content: [
-      '¿Qué es exactamente el tiempo? El filósofo San Agustín dijo una vez: "Si nadie me lo pregunta, lo sé; pero si trato de explicarlo, no lo sé." Durante mucho tiempo, la humanidad creyó que el tiempo era como un río gigante y constante. Pensábamos que fluía a la misma velocidad en todo el universo, sin importar dónde estuvieras.',
-      'Isaac Newton, el famoso científico de la gravedad, describió el tiempo como un reloj perfecto e inalterable. Según Newton, si tú y yo tenemos relojes sincronizados, siempre marcarán la misma hora, incluso si uno de nosotros viaja a otra estrella. Esta visión clásica hizo que entender el universo pareciera muy ordenado.',
-      'Sin embargo, Albert Einstein llegó para cambiarlo todo. Einstein descubrió que el tiempo NO es absoluto. De hecho, el tiempo es elástico: puede estirarse y comprimirse. A diferencia de un río uniforme, el tiempo es más como una cama elástica, que se dobla dependiendo de la masa de los objetos y la velocidad a la que te mueves.',
-      'Esto significa que no hay un solo "reloj" maestro para todo el universo. Cada persona, cada planeta y cada estrella tiene su propio ritmo de tiempo. Esta idea filosófica y científica es la base de todo lo que entendemos hoy sobre los viajes temporales y el espacio-tiempo.'
+      'Â¿QuÃ© es exactamente el tiempo? El filÃ³sofo San AgustÃ­n dijo una vez: "Si nadie me lo pregunta, lo sÃ©; pero si trato de explicarlo, no lo sÃ©." Durante mucho tiempo, la humanidad creyÃ³ que el tiempo era como un rÃ­o gigante y constante. PensÃ¡bamos que fluÃ­a a la misma velocidad en todo el universo, sin importar dÃ³nde estuvieras.',
+      'Isaac Newton, el famoso cientÃ­fico de la gravedad, describiÃ³ el tiempo como un reloj perfecto e inalterable. SegÃºn Newton, si tÃº y yo tenemos relojes sincronizados, siempre marcarÃ¡n la misma hora, incluso si uno de nosotros viaja a otra estrella. Esta visiÃ³n clÃ¡sica hizo que entender el universo pareciera muy ordenado.',
+      'Sin embargo, Albert Einstein llegÃ³ para cambiarlo todo. Einstein descubriÃ³ que el tiempo NO es absoluto. De hecho, el tiempo es elÃ¡stico: puede estirarse y comprimirse. A diferencia de un rÃ­o uniforme, el tiempo es mÃ¡s como una cama elÃ¡stica, que se dobla dependiendo de la masa de los objetos y la velocidad a la que te mueves.',
+      'Esto significa que no hay un solo "reloj" maestro para todo el universo. Cada persona, cada planeta y cada estrella tiene su propio ritmo de tiempo. Esta idea filosÃ³fica y cientÃ­fica es la base de todo lo que entendemos hoy sobre los viajes temporales y el espacio-tiempo.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Doc Brown utiliza una pizarra para explicar a Marty cómo sus acciones han alterado la naturaleza de su tiempo. Dibuja una línea de tiempo recta y luego muestra cómo se divide en un 1985 alternativo. Esta es una brillante visualización de la idea de que el tiempo puede tomar múltiples direcciones dependiendo de nuestras elecciones.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'A nivel fundamental de la física cuántica, muchas ecuaciones funcionan igual de bien hacia adelante o hacia atrás en el tiempo. La dirección del tiempo no está codificada en las leyes más básicas del universo, lo que ha llevado a algunos físicos a sugerir que el flujo del tiempo podría ser una ilusión.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En "Regreso al Futuro II", Doc Brown utiliza una pizarra para explicar a Marty cÃ³mo sus acciones han alterado la naturaleza de su tiempo. Dibuja una lÃ­nea de tiempo recta y luego muestra cÃ³mo se divide en un 1985 alternativo. Esta es una brillante visualizaciÃ³n de la idea de que el tiempo puede tomar mÃºltiples direcciones dependiendo de nuestras elecciones.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'A nivel fundamental de la fÃ­sica cuÃ¡ntica, muchas ecuaciones funcionan igual de bien hacia adelante o hacia atrÃ¡s en el tiempo. La direcciÃ³n del tiempo no estÃ¡ codificada en las leyes mÃ¡s bÃ¡sicas del universo, lo que ha llevado a algunos fÃ­sicos a sugerir que el flujo del tiempo podrÃ­a ser una ilusiÃ³n.' }
     ],
-    fact: 'San Agustín, en el siglo IV, propuso que el pasado y el futuro no existen realmente; solo existe un "presente continuo" en la mente humana. Esta antigua idea sigue debatiéndose entre los físicos teóricos de hoy en día.'
+    fact: 'San AgustÃ­n, en el siglo IV, propuso que el pasado y el futuro no existen realmente; solo existe un "presente continuo" en la mente humana. Esta antigua idea sigue debatiÃ©ndose entre los fÃ­sicos teÃ³ricos de hoy en dÃ­a.'
   },
   {
     id: 'simultaneidad',
@@ -167,34 +167,34 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_simultaneidad.png',
     image: '/assets/bttf/infographic_gigawatts/hero_simultaneidad.png',
     content: [
-      '¿Alguna vez has pensado que algo ocurrió "al mismo tiempo"? Einstein demostró que eventos que parecen simultáneos para una persona pueden ocurrir en momentos distintos para otra. Esto se conoce como la Relatividad de la Simultaneidad, y es uno de los conceptos más sorprendentes de la física moderna.',
-      'Para explicarlo, Einstein imaginó un tren en movimiento. Si dos rayos caen al mismo tiempo en los extremos del tren, alguien parado afuera lo verá suceder a la vez. Pero un pasajero dentro del tren, que se mueve hacia uno de los rayos, verá ese rayo caer primero, porque la luz llega a sus ojos un instante antes.',
-      '¿Quién de los dos tiene razón? ¡Ambos! No existe un punto de vista "correcto" en el universo. La simultaneidad depende totalmente de tu estado de movimiento. Esto destruye la idea de que podemos decir con certeza qué ocurrió "ahora mismo" en otra galaxia.',
-      'Esto tiene profundas consecuencias. Si el "ahora" de una persona es diferente al de otra, entonces el pasado, el presente y el futuro deben existir todos de alguna forma al mismo tiempo. Es lo que los científicos llaman el "Universo Bloque", donde todos los momentos están congelados en una estructura de cuatro dimensiones.'
+      'Â¿Alguna vez has pensado que algo ocurriÃ³ "al mismo tiempo"? Einstein demostrÃ³ que eventos que parecen simultÃ¡neos para una persona pueden ocurrir en momentos distintos para otra. Esto se conoce como la Relatividad de la Simultaneidad, y es uno de los conceptos mÃ¡s sorprendentes de la fÃ­sica moderna.',
+      'Para explicarlo, Einstein imaginÃ³ un tren en movimiento. Si dos rayos caen al mismo tiempo en los extremos del tren, alguien parado afuera lo verÃ¡ suceder a la vez. Pero un pasajero dentro del tren, que se mueve hacia uno de los rayos, verÃ¡ ese rayo caer primero, porque la luz llega a sus ojos un instante antes.',
+      'Â¿QuiÃ©n de los dos tiene razÃ³n? Â¡Ambos! No existe un punto de vista "correcto" en el universo. La simultaneidad depende totalmente de tu estado de movimiento. Esto destruye la idea de que podemos decir con certeza quÃ© ocurriÃ³ "ahora mismo" en otra galaxia.',
+      'Esto tiene profundas consecuencias. Si el "ahora" de una persona es diferente al de otra, entonces el pasado, el presente y el futuro deben existir todos de alguna forma al mismo tiempo. Es lo que los cientÃ­ficos llaman el "Universo Bloque", donde todos los momentos estÃ¡n congelados en una estructura de cuatro dimensiones.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Hay momentos en la saga donde Marty y Doc experimentan los mismos eventos desde perspectivas de tiempo totalmente diferentes. En la primera película, el "presente" de Marty en 1985 ocurre simultáneamente con el "futuro" que el Doc original de 1955 está intentando cambiar. Sus líneas temporales personales se cruzan de forma fascinante.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Debido a la velocidad a la que la luz viaja desde las estrellas, siempre estamos viendo el pasado. Si la estrella Betelgeuse explotara hoy mismo, los humanos no se enterarían hasta dentro de unos 600 años. Por lo tanto, el concepto de "simultaneidad" a escalas cósmicas pierde su significado habitual.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Hay momentos en la saga donde Marty y Doc experimentan los mismos eventos desde perspectivas de tiempo totalmente diferentes. En la primera pelÃ­cula, el "presente" de Marty en 1985 ocurre simultÃ¡neamente con el "futuro" que el Doc original de 1955 estÃ¡ intentando cambiar. Sus lÃ­neas temporales personales se cruzan de forma fascinante.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'Debido a la velocidad a la que la luz viaja desde las estrellas, siempre estamos viendo el pasado. Si la estrella Betelgeuse explotara hoy mismo, los humanos no se enterarÃ­an hasta dentro de unos 600 aÃ±os. Por lo tanto, el concepto de "simultaneidad" a escalas cÃ³smicas pierde su significado habitual.' }
     ],
-    fact: 'Si te estás moviendo rápidamente respecto a una persona en la otra punta del universo, tu "ahora" podría incluir eventos que para ellos ocurrieron en el siglo XIX, o eventos que sucederán en el siglo XXII.'
+    fact: 'Si te estÃ¡s moviendo rÃ¡pidamente respecto a una persona en la otra punta del universo, tu "ahora" podrÃ­a incluir eventos que para ellos ocurrieron en el siglo XIX, o eventos que sucederÃ¡n en el siglo XXII.'
   },
   {
     id: 'entropia',
-    title: 'Entropía y Desorden',
+    title: 'EntropÃ­a y Desorden',
     color: '#00E5FF',
     btnImage: '/assets/bttf/infographic_gigawatts/btn_entropia.png',
     image: '/assets/bttf/infographic_gigawatts/hero_entropia.png',
     content: [
-      'Si rompes un huevo, no puedes volver a unirlo. Si mezclas café y leche, no puedes separarlos después. Esta tendencia de las cosas a ir del orden al desorden se llama entropía. Es la esencia de la Segunda Ley de la Termodinámica y es crucial para entender la energía.',
-      'La entropía es lo único en la física fundamental que nos da una dirección real para el tiempo. Las ecuaciones de movimiento funcionan igual hacia atrás que hacia adelante, pero el universo en su conjunto siempre se vuelve más desordenado. A esto lo llamamos la "flecha del tiempo", apuntando siempre hacia un mayor caos.',
-      'Para que la entropía aumente ahora, el universo tuvo que empezar en un estado de bajísima entropía, es decir, muy ordenado. Los científicos creen que el Big Bang fue este estado especial. Toda la historia del universo, desde las galaxias hasta la vida misma, es un proceso gradual de aumento de entropía.',
-      'Aprovechar la energía, como la de 1.21 gigawatts, siempre implica generar calor y aumentar la entropía global. Un DeLorean viajando en el tiempo requeriría manejar enormes cantidades de energía de forma concentrada, luchando temporalmente contra esta tendencia natural hacia el desorden.'
+      'Si rompes un huevo, no puedes volver a unirlo. Si mezclas cafÃ© y leche, no puedes separarlos despuÃ©s. Esta tendencia de las cosas a ir del orden al desorden se llama entropÃ­a. Es la esencia de la Segunda Ley de la TermodinÃ¡mica y es crucial para entender la energÃ­a.',
+      'La entropÃ­a es lo Ãºnico en la fÃ­sica fundamental que nos da una direcciÃ³n real para el tiempo. Las ecuaciones de movimiento funcionan igual hacia atrÃ¡s que hacia adelante, pero el universo en su conjunto siempre se vuelve mÃ¡s desordenado. A esto lo llamamos la "flecha del tiempo", apuntando siempre hacia un mayor caos.',
+      'Para que la entropÃ­a aumente ahora, el universo tuvo que empezar en un estado de bajÃ­sima entropÃ­a, es decir, muy ordenado. Los cientÃ­ficos creen que el Big Bang fue este estado especial. Toda la historia del universo, desde las galaxias hasta la vida misma, es un proceso gradual de aumento de entropÃ­a.',
+      'Aprovechar la energÃ­a, como la de 1.21 gigawatts, siempre implica generar calor y aumentar la entropÃ­a global. Un DeLorean viajando en el tiempo requerirÃ­a manejar enormes cantidades de energÃ­a de forma concentrada, luchando temporalmente contra esta tendencia natural hacia el desorden.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cuando el viejo Biff le entrega el almanaque deportivo a su yo joven, desata una cascada de eventos que aumenta drásticamente el "desorden" (la entropía) de la línea temporal. El Hill Valley pacífico se convierte en un caos dominado por el crimen. Es una representación metafórica perfecta de cómo el caos tiende a dominar si se altera el orden inicial.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Ludwig Boltzmann, quien formuló las ecuaciones de la entropía, sugirió que tal vez vivimos en una rara burbuja de baja entropía dentro de un multiverso inmenso. Esta idea ayudó a sentar las bases de la cosmología moderna.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Cuando el viejo Biff le entrega el almanaque deportivo a su yo joven, desata una cascada de eventos que aumenta drÃ¡sticamente el "desorden" (la entropÃ­a) de la lÃ­nea temporal. El Hill Valley pacÃ­fico se convierte en un caos dominado por el crimen. Es una representaciÃ³n metafÃ³rica perfecta de cÃ³mo el caos tiende a dominar si se altera el orden inicial.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'El fÃ­sico Ludwig Boltzmann, quien formulÃ³ las ecuaciones de la entropÃ­a, sugiriÃ³ que tal vez vivimos en una rara burbuja de baja entropÃ­a dentro de un multiverso inmenso. Esta idea ayudÃ³ a sentar las bases de la cosmologÃ­a moderna.' }
     ],
-    fact: 'El hielo derritiéndose en un vaso de agua es un ejemplo perfecto del aumento de entropía. El calor se distribuye y las moléculas de agua se vuelven más caóticas. ¡El flujo del tiempo se puede medir con un cubo de hielo!'
+    fact: 'El hielo derritiÃ©ndose en un vaso de agua es un ejemplo perfecto del aumento de entropÃ­a. El calor se distribuye y las molÃ©culas de agua se vuelven mÃ¡s caÃ³ticas. Â¡El flujo del tiempo se puede medir con un cubo de hielo!'
   },
   {
     id: 'memoria-tiempo',
@@ -203,34 +203,34 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_memoria.png',
     image: '/assets/bttf/infographic_gigawatts/hero_memoria.png',
     content: [
-      '¿Por qué recordamos el pasado y no el futuro? Suena a una pregunta obvia, pero para la física es un misterio profundo. La memoria es, en esencia, la huella digital del tiempo impresa en nuestro cerebro, creada por los procesos de aumento de entropía que dejan marcas físicas.',
-      'Cuando experimentamos algo, las conexiones en nuestro cerebro (las sinapsis) cambian de forma física. Este proceso requiere energía y genera calor, dejando un rastro irreversible de información. Los recuerdos son como huellas en la arena: solo pueden formarse después de que alguien haya caminado por allí.',
-      'Algunos filósofos sugieren que nuestra percepción del tiempo que "fluye" se debe únicamente a la forma en que el cerebro procesa y almacena memorias secuencialmente. Sin esta capacidad de recordar el estado anterior y compararlo con el nuevo, no sentiríamos el paso del tiempo.',
-      'Si pudiéramos viajar al pasado, nos enfrentaríamos a problemas con nuestras propias memorias. Si un viajero del tiempo cambia su propio pasado de manera que nunca construyó la máquina, ¿de dónde provienen los recuerdos físicos almacenados en su cerebro? La memoria ancla nuestra identidad a nuestra línea temporal.'
+      'Â¿Por quÃ© recordamos el pasado y no el futuro? Suena a una pregunta obvia, pero para la fÃ­sica es un misterio profundo. La memoria es, en esencia, la huella digital del tiempo impresa en nuestro cerebro, creada por los procesos de aumento de entropÃ­a que dejan marcas fÃ­sicas.',
+      'Cuando experimentamos algo, las conexiones en nuestro cerebro (las sinapsis) cambian de forma fÃ­sica. Este proceso requiere energÃ­a y genera calor, dejando un rastro irreversible de informaciÃ³n. Los recuerdos son como huellas en la arena: solo pueden formarse despuÃ©s de que alguien haya caminado por allÃ­.',
+      'Algunos filÃ³sofos sugieren que nuestra percepciÃ³n del tiempo que "fluye" se debe Ãºnicamente a la forma en que el cerebro procesa y almacena memorias secuencialmente. Sin esta capacidad de recordar el estado anterior y compararlo con el nuevo, no sentirÃ­amos el paso del tiempo.',
+      'Si pudiÃ©ramos viajar al pasado, nos enfrentarÃ­amos a problemas con nuestras propias memorias. Si un viajero del tiempo cambia su propio pasado de manera que nunca construyÃ³ la mÃ¡quina, Â¿de dÃ³nde provienen los recuerdos fÃ­sicos almacenados en su cerebro? La memoria ancla nuestra identidad a nuestra lÃ­nea temporal.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Uno de los elementos visuales más icónicos de BTTF es la fotografía de la familia de Marty. A medida que él altera el pasado, sus hermanos (y eventualmente él mismo) comienzan a borrarse de la foto. Esto ilustra cómo las alteraciones temporales destruyen las pruebas físicas (como fotos o memorias) del pasado original.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los ordenadores también tienen una flecha del tiempo ligada a la memoria. El Principio de Landauer establece que borrar un solo bit de información en un ordenador siempre liberará una pequeña cantidad de calor. La memoria y la entropía térmica están unidas.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'Uno de los elementos visuales mÃ¡s icÃ³nicos de BTTF es la fotografÃ­a de la familia de Marty. A medida que Ã©l altera el pasado, sus hermanos (y eventualmente Ã©l mismo) comienzan a borrarse de la foto. Esto ilustra cÃ³mo las alteraciones temporales destruyen las pruebas fÃ­sicas (como fotos o memorias) del pasado original.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'Los ordenadores tambiÃ©n tienen una flecha del tiempo ligada a la memoria. El Principio de Landauer establece que borrar un solo bit de informaciÃ³n en un ordenador siempre liberarÃ¡ una pequeÃ±a cantidad de calor. La memoria y la entropÃ­a tÃ©rmica estÃ¡n unidas.' }
     ],
-    fact: 'El "presente" que percibes tiene en realidad unos 80 milisegundos de retraso. El cerebro tarda ese tiempo en juntar la información de la vista, el oído y el tacto, para crear un momento coherente. ¡Siempre vives en el pasado reciente!'
+    fact: 'El "presente" que percibes tiene en realidad unos 80 milisegundos de retraso. El cerebro tarda ese tiempo en juntar la informaciÃ³n de la vista, el oÃ­do y el tacto, para crear un momento coherente. Â¡Siempre vives en el pasado reciente!'
   },
   {
     id: 'cuantica-tiempo',
-    title: 'Mecánica Cuántica',
+    title: 'MecÃ¡nica CuÃ¡ntica',
     color: '#E040FB',
     btnImage: '/assets/bttf/infographic_gigawatts/btn_cuantica.png',
     image: '/assets/bttf/infographic_gigawatts/hero_cuantica.png',
     content: [
-      'A nivel microscópico, las reglas del universo se vuelven increíblemente extrañas. La mecánica cuántica nos dice que las partículas como electrones o fotones pueden estar en múltiples estados a la vez. Sin embargo, cuando las observamos, "colapsan" en un estado único y definido. Este momento de colapso define el antes y el después.',
-      'Para algunos físicos, el tiempo podría no ser una característica fundamental del universo, sino algo "emergente". Igual que la temperatura emerge de millones de moléculas chocando entre sí, el tiempo podría surgir del entrelazamiento cuántico entre incontables partículas en todo el cosmos.',
-      'La famosa ecuación de Wheeler-DeWitt, un intento de combinar la cuántica con la gravedad, no incluye la variable del tiempo. Según esta ecuación, el universo en su estado más puro y matemático está congelado y estático. Es nuestra perspectiva dentro del universo la que genera la ilusión del cambio.',
-      'Si alguna vez logramos viajar en el tiempo o generar energías tan precisas como 1.21 gigawatts, la solución probablemente estará en dominar la física cuántica. Los computadores cuánticos del futuro podrían simular o incluso manipular eventos a escalas subatómicas de formas que hoy parecen magia.'
+      'A nivel microscÃ³pico, las reglas del universo se vuelven increÃ­blemente extraÃ±as. La mecÃ¡nica cuÃ¡ntica nos dice que las partÃ­culas como electrones o fotones pueden estar en mÃºltiples estados a la vez. Sin embargo, cuando las observamos, "colapsan" en un estado Ãºnico y definido. Este momento de colapso define el antes y el despuÃ©s.',
+      'Para algunos fÃ­sicos, el tiempo podrÃ­a no ser una caracterÃ­stica fundamental del universo, sino algo "emergente". Igual que la temperatura emerge de millones de molÃ©culas chocando entre sÃ­, el tiempo podrÃ­a surgir del entrelazamiento cuÃ¡ntico entre incontables partÃ­culas en todo el cosmos.',
+      'La famosa ecuaciÃ³n de Wheeler-DeWitt, un intento de combinar la cuÃ¡ntica con la gravedad, no incluye la variable del tiempo. SegÃºn esta ecuaciÃ³n, el universo en su estado mÃ¡s puro y matemÃ¡tico estÃ¡ congelado y estÃ¡tico. Es nuestra perspectiva dentro del universo la que genera la ilusiÃ³n del cambio.',
+      'Si alguna vez logramos viajar en el tiempo o generar energÃ­as tan precisas como 1.21 gigawatts, la soluciÃ³n probablemente estarÃ¡ en dominar la fÃ­sica cuÃ¡ntica. Los computadores cuÃ¡nticos del futuro podrÃ­an simular o incluso manipular eventos a escalas subatÃ³micas de formas que hoy parecen magia.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El momento exacto en que el rayo golpea la torre del reloj (a las 10:04 pm) requiere una transferencia precisa de energía cuántica. Doc Brown tiene que calcular el milisegundo exacto para que la energía canalice hacia el condensador de flujo. Es una metáfora de los eventos cuánticos precisos y repentinos que cambian el curso del universo.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Un experimento famoso conocido como el "Borrador Cuántico de Elección Retardada" sugiere que, a escala subatómica, una medición en el presente puede aparentemente influir en el estado de un fotón en el pasado. ¡El tiempo a nivel cuántico es verdaderamente extraño!' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'El momento exacto en que el rayo golpea la torre del reloj (a las 10:04 pm) requiere una transferencia precisa de energÃ­a cuÃ¡ntica. Doc Brown tiene que calcular el milisegundo exacto para que la energÃ­a canalice hacia el condensador de flujo. Es una metÃ¡fora de los eventos cuÃ¡nticos precisos y repentinos que cambian el curso del universo.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'Un experimento famoso conocido como el "Borrador CuÃ¡ntico de ElecciÃ³n Retardada" sugiere que, a escala subatÃ³mica, una mediciÃ³n en el presente puede aparentemente influir en el estado de un fotÃ³n en el pasado. Â¡El tiempo a nivel cuÃ¡ntico es verdaderamente extraÃ±o!' }
     ],
-    fact: 'Las partículas cuánticas pueden entrar en un estado de superposición donde están, de alguna forma, "fuera" del flujo normal del tiempo. Solo interactúan con la historia cuando se enredan con el mundo macroscópico.'
+    fact: 'Las partÃ­culas cuÃ¡nticas pueden entrar en un estado de superposiciÃ³n donde estÃ¡n, de alguna forma, "fuera" del flujo normal del tiempo. Solo interactÃºan con la historia cuando se enredan con el mundo macroscÃ³pico.'
   },
   {
     id: 'viaje-futuro',
@@ -239,16 +239,16 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_futuro.png',
     image: '/assets/bttf/infographic_gigawatts/hero_futuro.png',
     content: [
-      'Viajar al futuro no es ciencia ficción: ¡es un hecho comprobado! La teoría de la relatividad de Einstein demuestra que si te mueves a gran velocidad, el tiempo pasará más lento para ti en comparación con alguien que se queda quieto. Este fenómeno se llama "dilatación del tiempo".',
-      'Lo hemos comprobado en experimentos reales. Cuando volamos relojes atómicos muy precisos alrededor del mundo en aviones a reacción, regresan marcando fracciones de segundo menos que los relojes que se quedaron en la Tierra. Los viajeros han envejecido menos que nosotros.',
-      'Los astronautas en la Estación Espacial Internacional (ISS) viajan a más de 27,000 km/h. Tras pasar meses en el espacio, regresan a la Tierra habiendo viajado una pequeña fracción de segundo hacia el futuro. El astronauta Sergei Krikalev viajó aproximadamente 0.02 segundos al futuro tras pasar más de 800 días en órbita.',
-      'Además, los satélites GPS que usamos para la navegación deben ajustar continuamente sus relojes internos. Debido a su velocidad y a estar más lejos de la gravedad terrestre, su tiempo no coincide con el nuestro. Sin las matemáticas del viaje al futuro de Einstein, el GPS fallaría en cuestión de horas.'
+      'Viajar al futuro no es ciencia ficciÃ³n: Â¡es un hecho comprobado! La teorÃ­a de la relatividad de Einstein demuestra que si te mueves a gran velocidad, el tiempo pasarÃ¡ mÃ¡s lento para ti en comparaciÃ³n con alguien que se queda quieto. Este fenÃ³meno se llama "dilataciÃ³n del tiempo".',
+      'Lo hemos comprobado en experimentos reales. Cuando volamos relojes atÃ³micos muy precisos alrededor del mundo en aviones a reacciÃ³n, regresan marcando fracciones de segundo menos que los relojes que se quedaron en la Tierra. Los viajeros han envejecido menos que nosotros.',
+      'Los astronautas en la EstaciÃ³n Espacial Internacional (ISS) viajan a mÃ¡s de 27,000 km/h. Tras pasar meses en el espacio, regresan a la Tierra habiendo viajado una pequeÃ±a fracciÃ³n de segundo hacia el futuro. El astronauta Sergei Krikalev viajÃ³ aproximadamente 0.02 segundos al futuro tras pasar mÃ¡s de 800 dÃ­as en Ã³rbita.',
+      'AdemÃ¡s, los satÃ©lites GPS que usamos para la navegaciÃ³n deben ajustar continuamente sus relojes internos. Debido a su velocidad y a estar mÃ¡s lejos de la gravedad terrestre, su tiempo no coincide con el nuestro. Sin las matemÃ¡ticas del viaje al futuro de Einstein, el GPS fallarÃ­a en cuestiÃ³n de horas.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al año 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad holográfica. Aunque la película sobreestimó algunas tecnologías, la idea de dar un "salto" y encontrar una sociedad transformada por la innovación tecnológica captura la esencia del viaje hacia el futuro.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Partículas subatómicas llamadas muones, que se crean cuando los rayos cósmicos chocan con la atmósfera, duran tan poco que deberían desintegrarse antes de llegar al suelo. Sin embargo, llegan a la superficie porque viajan casi a la velocidad de la luz, lo que "ralentiza" su reloj interno. ¡Ellos experimentan su propio viaje al futuro!' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al aÃ±o 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad hologrÃ¡fica. Aunque la pelÃ­cula sobreestimÃ³ algunas tecnologÃ­as, la idea de dar un "salto" y encontrar una sociedad transformada por la innovaciÃ³n tecnolÃ³gica captura la esencia del viaje hacia el futuro.' },
+      { label: 'Dato CientÃ­fico', icon: 'atom', text: 'PartÃ­culas subatÃ³micas llamadas muones, que se crean cuando los rayos cÃ³smicos chocan con la atmÃ³sfera, duran tan poco que deberÃ­an desintegrarse antes de llegar al suelo. Sin embargo, llegan a la superficie porque viajan casi a la velocidad de la luz, lo que "ralentiza" su reloj interno. Â¡Ellos experimentan su propio viaje al futuro!' }
     ],
-    fact: 'Si pudieras viajar en una nave al 99.99% de la velocidad de la luz durante lo que para ti sería 1 año, al volver a la Tierra descubrirías que han pasado casi 70 años. ¡Habrías saltado al futuro de la humanidad!'
+    fact: 'Si pudieras viajar en una nave al 99.99% de la velocidad de la luz durante lo que para ti serÃ­a 1 aÃ±o, al volver a la Tierra descubrirÃ­as que han pasado casi 70 aÃ±os. Â¡HabrÃ­as saltado al futuro de la humanidad!'
   },
   {
     id: 'viaje-pasado',
@@ -257,20 +257,20 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_pasado.png',
     image: '/assets/bttf/infographic_gigawatts/hero_pasado.png',
     content: [
-      'Mientras viajar al futuro está comprobado, viajar al pasado es el verdadero desafío. Según las matemáticas de la relatividad general, el espacio-tiempo puede doblarse sobre sí mismo creando "Curvas Cerradas de Tiempo". En teoría, si siguieras una de estas curvas, volverías a un momento anterior en el tiempo.',
-      'El problema con el viaje al pasado son las violaciones de la causalidad, más conocidas como paradojas temporales. La "paradoja del abuelo" nos pregunta: ¿Qué pasa si viajas en el tiempo e impides que tus abuelos se conozcan? Si no naces, no puedes viajar en el tiempo, pero si no viajas, sí naces. Es una contradicción lógica.',
-      'Para evitar estos desafíos lógicos, Stephen Hawking propuso la "Conjetura de Protección de la Cronología". Según él, las leyes de la física evitarán siempre la creación de curvas cerradas de tiempo a nivel macroscópico. Si intentas crear una máquina del tiempo hacia el pasado, fluctuaciones cuánticas la destruirán antes de que funcione.',
-      'Otra posible solución a las paradojas son los universos paralelos. En esta interpretación, si cambias algo en el pasado, no alteras tu línea temporal original, sino que creas una nueva rama de la realidad. Cada decisión y viaje en el tiempo generaría un nuevo universo independiente.'
+      'Mientras viajar al futuro estÃ¡ comprobado, viajar al pasado es el verdadero desafÃ­o. SegÃºn las matemÃ¡ticas de la relatividad general, el espacio-tiempo puede doblarse sobre sÃ­ mismo creando "Curvas Cerradas de Tiempo". En teorÃ­a, si siguieras una de estas curvas, volverÃ­as a un momento anterior en el tiempo.',
+      'El problema con el viaje al pasado son las violaciones de la causalidad, mÃ¡s conocidas como paradojas temporales. La "paradoja del abuelo" nos pregunta: Â¿QuÃ© pasa si viajas en el tiempo e impides que tus abuelos se conozcan? Si no naces, no puedes viajar en el tiempo, pero si no viajas, sÃ­ naces. Es una contradicciÃ³n lÃ³gica.',
+      'Para evitar estos desafÃ­os lÃ³gicos, Stephen Hawking propuso la "Conjetura de ProtecciÃ³n de la CronologÃ­a". SegÃºn Ã©l, las leyes de la fÃ­sica evitarÃ¡n siempre la creaciÃ³n de curvas cerradas de tiempo a nivel macroscÃ³pico. Si intentas crear una mÃ¡quina del tiempo hacia el pasado, fluctuaciones cuÃ¡nticas la destruirÃ¡n antes de que funcione.',
+      'Otra posible soluciÃ³n a las paradojas son los universos paralelos. En esta interpretaciÃ³n, si cambias algo en el pasado, no alteras tu lÃ­nea temporal original, sino que creas una nueva rama de la realidad. Cada decisiÃ³n y viaje en el tiempo generarÃ­a un nuevo universo independiente.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La trama de la primera película gira exactamente en torno al peligro del viaje al pasado. Al interactuar con sus padres adolescentes en 1955, Marty rompe la cadena causal que lleva a su propio nacimiento, corriendo el riesgo de ser borrado de la existencia. Él debe actuar como un "reparador" de la línea temporal para salvarse.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Kip Thorne descubrió matemáticamente que podrías, en teoría, convertir un agujero de gusano en una máquina para viajar al pasado moviendo uno de sus extremos a casi la velocidad de la luz y luego trayéndolo de vuelta.' }
+      { label: 'En la PelÃ­cula', icon: 'zap', text: 'La trama de la primera pelÃ­cula gira exactamente en torno al peligro del viaje al pasado. Al interactuar con sus padres adolescentes en 1955, Marty rompe la cadena causal que lleva a su propio nacimiento, corriendo el riesgo de ser borrado de la existencia. Ã‰l debe actuar como un "reparador" de la lÃ­nea temporal para salvarse.' },
+      { label: 'Â¿SabÃ­as que...?', icon: 'clock', text: 'El fÃ­sico Kip Thorne descubriÃ³ matemÃ¡ticamente que podrÃ­as, en teorÃ­a, convertir un agujero de gusano en una mÃ¡quina para viajar al pasado moviendo uno de sus extremos a casi la velocidad de la luz y luego trayÃ©ndolo de vuelta.' }
     ],
-    fact: 'A nivel de las matemáticas puras de Einstein, viajar al pasado está permitido. Son las complicaciones y paradojas lógicas posteriores las que hacen que los físicos sospechen que el universo debe tener un mecanismo oculto para prohibirlo.'
+    fact: 'A nivel de las matemÃ¡ticas puras de Einstein, viajar al pasado estÃ¡ permitido. Son las complicaciones y paradojas lÃ³gicas posteriores las que hacen que los fÃ­sicos sospechen que el universo debe tener un mecanismo oculto para prohibirlo.'
   }
 ];
 
-// ─── Temporal Particle Field (Canvas Background) ──────────────────────────────
+// â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TemporalField() {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -324,7 +324,7 @@ function TemporalField() {
   return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }} />;
 }
 
-// ─── Time Machine Header ──────────────────────────────────────────────────────
+// â”€â”€â”€ Time Machine Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TimeMachineHeader() {
   return (
     <div style={{ width: '100%', textAlign: 'center', position: 'relative', zIndex: 2, marginBottom: '-10px' }}>
@@ -356,14 +356,14 @@ function TimeMachineHeader() {
             <stop offset="100%" stopColor="rgba(0,229,255,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">ENERGÍA A 1.21 GIGAWATTS</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(0,229,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA DE LA ENERGÍA Y EL TIEMPO</text>
+        <text x="300" y="80" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">ENERGÃA A 1.21 GIGAWATTS</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(0,229,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA DE LA ENERGÃA Y EL TIEMPO</text>
       </svg>
     </div>
   );
 }
 
-// ─── Organic Node Button (matching style) ─────────────────────────
+// â”€â”€â”€ Organic Node Button (matching style) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function NodeButton({ node, isActive, onClick, index }) {
   return (
     <motion.button
@@ -398,7 +398,7 @@ function NodeButton({ node, isActive, onClick, index }) {
         position: 'relative',
       }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={node.btnImage} alt={node.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
         {isActive && (
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
@@ -443,7 +443,7 @@ function NodeButton({ node, isActive, onClick, index }) {
   );
 }
 
-// ─── Expandable Section with Random Direction ────────────────────────────────
+// â”€â”€â”€ Expandable Section with Random Direction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DIRECTIONS = ['up', 'down', 'left', 'right'];
 const dirVariants = {
   up:    { hidden: { y: -30, opacity: 0 }, visible: { y: 0, opacity: 1 } },
@@ -530,7 +530,7 @@ function ExpandableSection({ item, color }) {
   );
 }
 
-// ─── Magazine-Style Content Panel ────────────────────────────────────────────
+// â”€â”€â”€ Magazine-Style Content Panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ContentPanel({ node, onClose, setLightboxSrc }) {
   const decoComponents = DECO_MAP[node.id] || [];
   
@@ -567,7 +567,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         <X size={18} />
       </button>
 
-      {/* ─── Two-Column Hero Section ─── */}
+      {/* â”€â”€â”€ Two-Column Hero Section â”€â”€â”€ */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -612,7 +612,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               flexShrink: 0,
             }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
             </span>
             {node.title}
           </h3>
@@ -628,7 +628,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
       </div>
 
-      {/* ─── Magazine Body ─── */}
+      {/* â”€â”€â”€ Magazine Body â”€â”€â”€ */}
       <div style={{
         padding: '1.5rem 2rem 2rem',
         position: 'relative',
@@ -680,7 +680,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
                 }}>
-                  {i === 0 ? '◆' : '◇'}
+                  {i === 0 ? 'â—†' : 'â—‡'}
                 </div>
                 <p style={{
                   margin: 0, fontSize: '0.95rem', lineHeight: 1.75,
@@ -693,7 +693,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* ─── Expandable Interactive Sections ─── */}
+        {/* â”€â”€â”€ Expandable Interactive Sections â”€â”€â”€ */}
         {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -704,7 +704,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {/* ─── Fact Box ─── */}
+        {/* â”€â”€â”€ Fact Box â”€â”€â”€ */}
         <motion.div
           whileHover={{ scale: 1.01 }}
           style={{
@@ -727,13 +727,13 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
   );
 }
 
-// ─── Progress Bar ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ProgressBar({ visited, total }) {
   const progress = (visited.length / total) * 100;
   return (
     <div style={{ width: '100%', maxWidth: '400px', margin: '0 auto 2rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
-        <span>Progreso de Exploración</span>
+        <span>Progreso de ExploraciÃ³n</span>
         <span>{visited.length} / {total} Completado</span>
       </div>
       <div style={{ width: '100%', height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '3px', overflow: 'hidden' }}>
@@ -748,7 +748,7 @@ function ProgressBar({ visited, total }) {
   );
 }
 
-// ─── Main Component ──────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function InteractiveInfographic_BttfM4() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeNode, setActiveNode] = useState(null);
@@ -801,7 +801,7 @@ export default function InteractiveInfographic_BttfM4() {
             animate={{ opacity: 1 }}
             style={{ textAlign: 'center', color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', marginBottom: '2rem' }}
           >
-            Toca cada círculo para explorar
+            Toca cada cÃ­rculo para explorar
           </motion.p>
         )}
 
@@ -850,10 +850,10 @@ export default function InteractiveInfographic_BttfM4() {
               }}
             >
               <h4 style={{ color: '#00E5FF', margin: '0 0 1rem', fontSize: '1.5rem' }}>
-                🏆 ¡Has dominado los secretos de la Máquina del Tiempo!
+                ðŸ† Â¡Has dominado los secretos de la MÃ¡quina del Tiempo!
               </h4>
               <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '1.5rem' }}>
-                Has explorado toda la ciencia detrás de las máquinas del tiempo. ¿Estás listo para poner a prueba tus conocimientos?
+                Has explorado toda la ciencia detrÃ¡s de las mÃ¡quinas del tiempo. Â¿EstÃ¡s listo para poner a prueba tus conocimientos?
               </p>
               <button style={{
                 padding: '0.8rem 2rem', background: '#00E5FF', color: '#0B0E2D',
@@ -870,12 +870,12 @@ export default function InteractiveInfographic_BttfM4() {
         {/* Bibliography */}
         <div style={{ marginTop: '4rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem' }}>
           <h5 style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0 0 1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
-            Fuentes Científicas y Bibliografía
+            Fuentes CientÃ­ficas y BibliografÃ­a
           </h5>
           <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {BIBLIOGRAPHY.map((item, i) => (
               <li key={i} style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <span style={{ color: '#00E5FF', opacity: 0.5 }}>•</span>
+                <span style={{ color: '#00E5FF', opacity: 0.5 }}>â€¢</span>
                 {item}
               </li>
             ))}
@@ -883,7 +883,7 @@ export default function InteractiveInfographic_BttfM4() {
         </div>
       </div>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

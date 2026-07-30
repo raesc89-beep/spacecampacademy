@@ -74,61 +74,61 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'amigdala-meditacion',
-    title: 'La Amígdala: Tu Alarma Interna',
+    title: 'La AmÃ­gdala: Tu Alarma Interna',
     color: '#7B68EE',
     btnImage: '/assets/starwars/infographic_jedi/btn_amigdala_meditacion.png',
     image: '/assets/starwars/infographic_jedi/hero_amigdala_meditacion.png',
     bannerImage: '/assets/starwars/infographic_jedi/banner_amigdala_meditacion.png',
     bannerCaption: 'Un Padawan aprendiendo a calmar su mente en los silenciosos salones del Templo Jedi.',
     content: [
-      "Imagina que dentro de tu cabeza, justo en el centro de tu cerebro, tienes un pequeño pero poderoso botón de alarma del tamaño de una almendra. Esta pequeña estructura se llama 'amígdala', y su trabajo principal es mantenerte a salvo de los peligros. Cuando nuestros ancestros vivían en cavernas y veían un tigre dientes de sable, la amígdala encendía la alarma roja, preparando el cuerpo para correr muy rápido o pelear con todas sus fuerzas. ¡Era como una sirena de emergencia súper ruidosa!",
-      "El problema es que hoy en día no hay tigres en las calles, pero tu amígdala sigue encendiendo la alarma roja cuando tienes un examen difícil de matemáticas, cuando te peleas con tu mejor amigo, o cuando te pones muy nervioso. Esto hace que tu corazón lata muy rápido y tus manos suden, igual que si estuvieras en un peligro real. Cuando la amígdala grita demasiado fuerte, no deja que otra parte de tu cerebro, la que te ayuda a pensar con claridad y resolver problemas (la corteza prefrontal), haga su trabajo.",
-      "Aquí es donde entra la sabiduría milenaria. Los científicos de lugares famosos como la Universidad de Harvard han descubierto algo asombroso usando máquinas que pueden ver dentro de nuestro cerebro. Se dieron cuenta de que las personas que practican meditación o 'mindfulness' todos los días logran encoger físicamente el tamaño de su amígdala. Es decir, con solo respirar y estar tranquilos, ¡hacen que su botón de alarma sea menos escandaloso y más fácil de controlar!",
-      "Ser un Caballero Jedi requiere exactamente esta misma habilidad. Cuando un Jedi se enfrenta a un Sith con un sable de luz, su cuerpo instintivamente quiere asustarse. Pero a través de un entrenamiento mental riguroso y la conexión profunda con la Fuerza, un Jedi aprende a bajar el volumen de esa alarma interna. En lugar de reaccionar con miedo o ira, reaccionan con una calma absoluta y un enfoque cristalino. Es el triunfo de la mente pacífica sobre los instintos básicos.",
-      "Así que, la próxima vez que sientas que la alarma de tu amígdala se dispara porque estás enojado o asustado, recuerda que tienes el poder de calmarla. Con solo cerrar los ojos, respirar lenta y profundamente unas cuantas veces, y concentrarte en el presente, estás apagando esa alarma roja. Estás usando la neurociencia para entrenar tu mente, dando el primer paso real para convertirte en un Maestro de tus propias emociones."
+      "Imagina que dentro de tu cabeza, justo en el centro de tu cerebro, tienes un pequeÃ±o pero poderoso botÃ³n de alarma del tamaÃ±o de una almendra. Esta pequeÃ±a estructura se llama 'amÃ­gdala', y su trabajo principal es mantenerte a salvo de los peligros. Cuando nuestros ancestros vivÃ­an en cavernas y veÃ­an un tigre dientes de sable, la amÃ­gdala encendÃ­a la alarma roja, preparando el cuerpo para correr muy rÃ¡pido o pelear con todas sus fuerzas. Â¡Era como una sirena de emergencia sÃºper ruidosa!",
+      "El problema es que hoy en dÃ­a no hay tigres en las calles, pero tu amÃ­gdala sigue encendiendo la alarma roja cuando tienes un examen difÃ­cil de matemÃ¡ticas, cuando te peleas con tu mejor amigo, o cuando te pones muy nervioso. Esto hace que tu corazÃ³n lata muy rÃ¡pido y tus manos suden, igual que si estuvieras en un peligro real. Cuando la amÃ­gdala grita demasiado fuerte, no deja que otra parte de tu cerebro, la que te ayuda a pensar con claridad y resolver problemas (la corteza prefrontal), haga su trabajo.",
+      "AquÃ­ es donde entra la sabidurÃ­a milenaria. Los cientÃ­ficos de lugares famosos como la Universidad de Harvard han descubierto algo asombroso usando mÃ¡quinas que pueden ver dentro de nuestro cerebro. Se dieron cuenta de que las personas que practican meditaciÃ³n o 'mindfulness' todos los dÃ­as logran encoger fÃ­sicamente el tamaÃ±o de su amÃ­gdala. Es decir, con solo respirar y estar tranquilos, Â¡hacen que su botÃ³n de alarma sea menos escandaloso y mÃ¡s fÃ¡cil de controlar!",
+      "Ser un Caballero Jedi requiere exactamente esta misma habilidad. Cuando un Jedi se enfrenta a un Sith con un sable de luz, su cuerpo instintivamente quiere asustarse. Pero a travÃ©s de un entrenamiento mental riguroso y la conexiÃ³n profunda con la Fuerza, un Jedi aprende a bajar el volumen de esa alarma interna. En lugar de reaccionar con miedo o ira, reaccionan con una calma absoluta y un enfoque cristalino. Es el triunfo de la mente pacÃ­fica sobre los instintos bÃ¡sicos.",
+      "AsÃ­ que, la prÃ³xima vez que sientas que la alarma de tu amÃ­gdala se dispara porque estÃ¡s enojado o asustado, recuerda que tienes el poder de calmarla. Con solo cerrar los ojos, respirar lenta y profundamente unas cuantas veces, y concentrarte en el presente, estÃ¡s apagando esa alarma roja. EstÃ¡s usando la neurociencia para entrenar tu mente, dando el primer paso real para convertirte en un Maestro de tus propias emociones."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el Episodio I: La Amenaza Fantasma, durante el épico e intenso duelo final, hay un momento en que Qui-Gon Jinn y Darth Maul quedan separados temporalmente por un campo de energía rojo brillante. En lugar de enojarse, pasearse impacientemente o golpear el escudo como lo hace el Sith, el sereno Maestro Jedi Qui-Gon Jinn se arrodilla inmediatamente en el suelo del generador y comienza a meditar. Al hacerlo, apaga la respuesta de pánico de su amígdala, baja su ritmo cardíaco y recupera su claridad mental para el inminente combate.' 
+        text: 'En el Episodio I: La Amenaza Fantasma, durante el Ã©pico e intenso duelo final, hay un momento en que Qui-Gon Jinn y Darth Maul quedan separados temporalmente por un campo de energÃ­a rojo brillante. En lugar de enojarse, pasearse impacientemente o golpear el escudo como lo hace el Sith, el sereno Maestro Jedi Qui-Gon Jinn se arrodilla inmediatamente en el suelo del generador y comienza a meditar. Al hacerlo, apaga la respuesta de pÃ¡nico de su amÃ­gdala, baja su ritmo cardÃ­aco y recupera su claridad mental para el inminente combate.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'Los estudios de resonancia magnética funcional (fMRI) liderados por la investigadora Sara Lazar demostraron que la práctica constante de la meditación y el mindfulness durante un programa intensivo de apenas 8 semanas es tiempo suficiente para provocar una disminución medible y real en la densidad de la materia gris en la amígdala humana, la zona cerebral que procesa el estrés intenso, el miedo y la ansiedad.' 
+        text: 'Los estudios de resonancia magnÃ©tica funcional (fMRI) liderados por la investigadora Sara Lazar demostraron que la prÃ¡ctica constante de la meditaciÃ³n y el mindfulness durante un programa intensivo de apenas 8 semanas es tiempo suficiente para provocar una disminuciÃ³n medible y real en la densidad de la materia gris en la amÃ­gdala humana, la zona cerebral que procesa el estrÃ©s intenso, el miedo y la ansiedad.' 
       }
     ],
-    fact: 'La amígdala, una estructura cerebral del tamaño de una almendra, actúa como el sistema de alarma principal del cuerpo. Estudios de Harvard demuestran que la meditación reduce su tamaño físico y su reactividad, ayudándonos a mantener la calma bajo presión extrema.'
+    fact: 'La amÃ­gdala, una estructura cerebral del tamaÃ±o de una almendra, actÃºa como el sistema de alarma principal del cuerpo. Estudios de Harvard demuestran que la meditaciÃ³n reduce su tamaÃ±o fÃ­sico y su reactividad, ayudÃ¡ndonos a mantener la calma bajo presiÃ³n extrema.'
   },
   {
     id: 'mindfulness-jedi',
-    title: 'Meditación Jedi: La Ciencia del Mindfulness',
+    title: 'MeditaciÃ³n Jedi: La Ciencia del Mindfulness',
     color: '#00CED1',
     btnImage: '/assets/starwars/infographic_jedi/btn_mindfulness_jedi.png',
     image: '/assets/starwars/infographic_jedi/hero_mindfulness_jedi.png',
     bannerImage: '/assets/starwars/infographic_jedi/banner_mindfulness_jedi.png',
-    bannerCaption: 'La profunda conexión con la Fuerza comienza silenciando el ruido del universo exterior.',
+    bannerCaption: 'La profunda conexiÃ³n con la Fuerza comienza silenciando el ruido del universo exterior.',
     content: [
-      "¿Has intentado alguna vez sentarte completamente quieto y no pensar en absolutamente nada? Si lo has intentado, seguro te diste cuenta de que es casi imposible. Tu mente parece un monito saltando de rama en rama: piensas en tu tarea, en lo que vas a cenar, en un recuerdo gracioso. A esto los budistas lo llaman 'la mente de mono'. El 'Mindfulness' o atención plena es una técnica antigua que no busca callar al monito por la fuerza, sino enseñarle a sentarse pacíficamente a observar.",
-      "El mindfulness significa simplemente prestar muchísima atención al momento presente de manera intencional y sin juzgar si es bueno o malo. Es como convertirte en un observador científico de tus propios pensamientos. Si estás comiendo una manzana, el mindfulness es notar el crujido, el sabor dulce, el jugo frío, en lugar de estar viendo la televisión mientras comes en piloto automático. Es despertar verdaderamente al 'aquí y ahora'.",
-      "Los científicos y doctores de instituciones como UCLA se dieron cuenta de que esta práctica tiene beneficios médicos y psicológicos increíbles. Las personas que practican mindfulness mejoran su memoria, su concentración y son mucho más felices. Al entrenar el cerebro para estar en el presente, fortaleces las conexiones neuronales que te ayudan a prestar atención. ¡Es como llevar a tu cerebro al gimnasio y levantar pesas invisibles de concentración!",
-      "El Código Jedi dice: 'No hay emoción, hay paz'. Esto no significa que los Jedi sean robots sin sentimientos, sino que practican el mindfulness más avanzado de la galaxia. Cuando un Jedi 'siente la Fuerza fluir a través de él', está en un estado de atención plena perfecta. Están sintiendo la vida que los rodea, las rocas, los árboles, las criaturas, sin permitir que las distracciones del pasado o las preocupaciones del futuro los desequilibren.",
-      "Tú puedes practicar este entrenamiento Jedi hoy mismo. Dedica tan solo cinco minutos al día a sentarte en silencio y prestar atención exclusiva a tu respiración. Cuando tu mente de mono empiece a saltar hacia otros pensamientos (¡y lo hará!), simplemente sonríe, date cuenta de que te distrajiste, y regresa tu atención suavemente al aire que entra y sale de tu nariz. Con este sencillo entrenamiento diario, estarás cultivando una mente tan clara y enfocada como la de un Maestro Jedi."
+      "Â¿Has intentado alguna vez sentarte completamente quieto y no pensar en absolutamente nada? Si lo has intentado, seguro te diste cuenta de que es casi imposible. Tu mente parece un monito saltando de rama en rama: piensas en tu tarea, en lo que vas a cenar, en un recuerdo gracioso. A esto los budistas lo llaman 'la mente de mono'. El 'Mindfulness' o atenciÃ³n plena es una tÃ©cnica antigua que no busca callar al monito por la fuerza, sino enseÃ±arle a sentarse pacÃ­ficamente a observar.",
+      "El mindfulness significa simplemente prestar muchÃ­sima atenciÃ³n al momento presente de manera intencional y sin juzgar si es bueno o malo. Es como convertirte en un observador cientÃ­fico de tus propios pensamientos. Si estÃ¡s comiendo una manzana, el mindfulness es notar el crujido, el sabor dulce, el jugo frÃ­o, en lugar de estar viendo la televisiÃ³n mientras comes en piloto automÃ¡tico. Es despertar verdaderamente al 'aquÃ­ y ahora'.",
+      "Los cientÃ­ficos y doctores de instituciones como UCLA se dieron cuenta de que esta prÃ¡ctica tiene beneficios mÃ©dicos y psicolÃ³gicos increÃ­bles. Las personas que practican mindfulness mejoran su memoria, su concentraciÃ³n y son mucho mÃ¡s felices. Al entrenar el cerebro para estar en el presente, fortaleces las conexiones neuronales que te ayudan a prestar atenciÃ³n. Â¡Es como llevar a tu cerebro al gimnasio y levantar pesas invisibles de concentraciÃ³n!",
+      "El CÃ³digo Jedi dice: 'No hay emociÃ³n, hay paz'. Esto no significa que los Jedi sean robots sin sentimientos, sino que practican el mindfulness mÃ¡s avanzado de la galaxia. Cuando un Jedi 'siente la Fuerza fluir a travÃ©s de Ã©l', estÃ¡ en un estado de atenciÃ³n plena perfecta. EstÃ¡n sintiendo la vida que los rodea, las rocas, los Ã¡rboles, las criaturas, sin permitir que las distracciones del pasado o las preocupaciones del futuro los desequilibren.",
+      "TÃº puedes practicar este entrenamiento Jedi hoy mismo. Dedica tan solo cinco minutos al dÃ­a a sentarte en silencio y prestar atenciÃ³n exclusiva a tu respiraciÃ³n. Cuando tu mente de mono empiece a saltar hacia otros pensamientos (Â¡y lo harÃ¡!), simplemente sonrÃ­e, date cuenta de que te distrajiste, y regresa tu atenciÃ³n suavemente al aire que entra y sale de tu nariz. Con este sencillo entrenamiento diario, estarÃ¡s cultivando una mente tan clara y enfocada como la de un Maestro Jedi."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el Episodio V: El Imperio Contraataca, el sabio Maestro Yoda regaña constantemente al joven aprendiz Luke Skywalker por su falta de atención plena durante su duro entrenamiento en los sombríos pantanos de Dagobah. "Toda su vida ha mirado lejos, al futuro, al horizonte. ¡Nunca su mente en donde estaba! ¡Hmm! ¡En lo que hacía!", exclama Yoda. Esta es una lección maestra y fundamental sobre el verdadero concepto psicológico del mindfulness: la importancia vital de mantener la mente y la concentración ancladas rígidamente en el momento presente.' 
+        text: 'En el Episodio V: El Imperio Contraataca, el sabio Maestro Yoda regaÃ±a constantemente al joven aprendiz Luke Skywalker por su falta de atenciÃ³n plena durante su duro entrenamiento en los sombrÃ­os pantanos de Dagobah. "Toda su vida ha mirado lejos, al futuro, al horizonte. Â¡Nunca su mente en donde estaba! Â¡Hmm! Â¡En lo que hacÃ­a!", exclama Yoda. Esta es una lecciÃ³n maestra y fundamental sobre el verdadero concepto psicolÃ³gico del mindfulness: la importancia vital de mantener la mente y la concentraciÃ³n ancladas rÃ­gidamente en el momento presente.' 
       },
       { 
-        label: '¿Sabías que...?', 
+        label: 'Â¿SabÃ­as que...?', 
         icon: 'clock', 
-        text: 'Un estudio de investigación exhaustivo realizado por psicólogos de la Universidad de Harvard descubrió de forma asombrosa que las mentes humanas vagan y se distraen perdiendo el enfoque durante casi el 47% de sus horas de vigilia. Además, concluyeron que una mente divagante es típicamente una mente infeliz, ya que solemos pensar en preocupaciones o arrepentimientos. El mindfulness nos ayuda activamente a reducir ese altísimo porcentaje.' 
+        text: 'Un estudio de investigaciÃ³n exhaustivo realizado por psicÃ³logos de la Universidad de Harvard descubriÃ³ de forma asombrosa que las mentes humanas vagan y se distraen perdiendo el enfoque durante casi el 47% de sus horas de vigilia. AdemÃ¡s, concluyeron que una mente divagante es tÃ­picamente una mente infeliz, ya que solemos pensar en preocupaciones o arrepentimientos. El mindfulness nos ayuda activamente a reducir ese altÃ­simo porcentaje.' 
       }
     ],
-    fact: 'El mindfulness es la práctica psicológica de centrar intencionalmente toda la atención en el momento presente. Investigaciones de UCLA muestran que practicarlo regularmente fortalece las áreas del cerebro responsables de la memoria, el aprendizaje y la regulación emocional, tal como los Jedi entrenan su conexión pacífica con la Fuerza.'
+    fact: 'El mindfulness es la prÃ¡ctica psicolÃ³gica de centrar intencionalmente toda la atenciÃ³n en el momento presente. Investigaciones de UCLA muestran que practicarlo regularmente fortalece las Ã¡reas del cerebro responsables de la memoria, el aprendizaje y la regulaciÃ³n emocional, tal como los Jedi entrenan su conexiÃ³n pacÃ­fica con la Fuerza.'
   },
   {
     id: 'neuroplasticidad',
@@ -137,143 +137,143 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_jedi/btn_neuroplasticidad.png',
     image: '/assets/starwars/infographic_jedi/hero_neuroplasticidad.png',
     bannerImage: '/assets/starwars/infographic_jedi/banner_neuroplasticidad.png',
-    bannerCaption: 'Las vías neuronales se fortalecen con la repetición, igual que el dominio del sable de luz.',
+    bannerCaption: 'Las vÃ­as neuronales se fortalecen con la repeticiÃ³n, igual que el dominio del sable de luz.',
     content: [
-      "Hace muchos años, los científicos creían que nuestro cerebro era como una computadora de fábrica: nacías con ciertos cables conectados y, una vez que llegabas a ser adulto, esos cables no se podían cambiar nunca más. Si no eras bueno en matemáticas o en música, pensaban que estabas atrapado así para siempre. ¡Pero estaban completamente equivocados! Descubrieron algo llamado 'Neuroplasticidad', que es la maravillosa habilidad de tu cerebro para cambiar de forma física y crear nuevas conexiones.",
-      "Imagina tu cerebro como un inmenso bosque inexplorado. Cuando aprendes algo nuevo por primera vez, es como caminar por entre los arbustos altos; es difícil y lento. Pero si caminas por ese mismo sendero todos los días, aplastas la hierba y haces un caminito de tierra. Si sigues practicando, ese camino se convierte en una carretera pavimentada y luego en una autopista súper rápida por donde la información viaja a la velocidad de la luz. ¡Tus neuronas se conectan fuertemente!",
-      "Por el contrario, si dejas de caminar por un sendero, la hierba vuelve a crecer y el camino desaparece. En la neurociencia, hay un dicho muy famoso que dice: 'Las neuronas que se disparan juntas, se conectan juntas'. Esto significa que cualquier cosa que practiques repetidamente (tocar el piano, resolver acertijos, o incluso ser paciente) modificará la estructura microscópica de tu cerebro, haciéndote cada vez mejor y más rápido en esa tarea específica.",
-      "El duro entrenamiento de un Padawan Jedi en el Templo de Coruscant se basa completamente en esta ciencia de la neuroplasticidad. No nacen sabiendo cómo desviar los disparos láser de los droides de entrenamiento con los ojos vendados. Requiere horas, días y años de repetición incesante. Cada vez que levantan el sable, cada vez que meditan, están forjando y fortaleciendo autopistas neuronales en sus cerebros que les permiten tener reflejos casi sobrehumanos.",
-      "Tú también tienes este superpoder plástico dentro de tu cabeza. Si sientes que eres malo en algo, ya sea en un deporte, en leer o en dibujar, no significa que no puedas hacerlo; solo significa que aún no has caminado lo suficiente por ese sendero neuronal. Con esfuerzo, repetición y paciencia, tienes la capacidad literal y científica de remodelar tu propio cerebro para lograr lo que te propongas."
+      "Hace muchos aÃ±os, los cientÃ­ficos creÃ­an que nuestro cerebro era como una computadora de fÃ¡brica: nacÃ­as con ciertos cables conectados y, una vez que llegabas a ser adulto, esos cables no se podÃ­an cambiar nunca mÃ¡s. Si no eras bueno en matemÃ¡ticas o en mÃºsica, pensaban que estabas atrapado asÃ­ para siempre. Â¡Pero estaban completamente equivocados! Descubrieron algo llamado 'Neuroplasticidad', que es la maravillosa habilidad de tu cerebro para cambiar de forma fÃ­sica y crear nuevas conexiones.",
+      "Imagina tu cerebro como un inmenso bosque inexplorado. Cuando aprendes algo nuevo por primera vez, es como caminar por entre los arbustos altos; es difÃ­cil y lento. Pero si caminas por ese mismo sendero todos los dÃ­as, aplastas la hierba y haces un caminito de tierra. Si sigues practicando, ese camino se convierte en una carretera pavimentada y luego en una autopista sÃºper rÃ¡pida por donde la informaciÃ³n viaja a la velocidad de la luz. Â¡Tus neuronas se conectan fuertemente!",
+      "Por el contrario, si dejas de caminar por un sendero, la hierba vuelve a crecer y el camino desaparece. En la neurociencia, hay un dicho muy famoso que dice: 'Las neuronas que se disparan juntas, se conectan juntas'. Esto significa que cualquier cosa que practiques repetidamente (tocar el piano, resolver acertijos, o incluso ser paciente) modificarÃ¡ la estructura microscÃ³pica de tu cerebro, haciÃ©ndote cada vez mejor y mÃ¡s rÃ¡pido en esa tarea especÃ­fica.",
+      "El duro entrenamiento de un Padawan Jedi en el Templo de Coruscant se basa completamente en esta ciencia de la neuroplasticidad. No nacen sabiendo cÃ³mo desviar los disparos lÃ¡ser de los droides de entrenamiento con los ojos vendados. Requiere horas, dÃ­as y aÃ±os de repeticiÃ³n incesante. Cada vez que levantan el sable, cada vez que meditan, estÃ¡n forjando y fortaleciendo autopistas neuronales en sus cerebros que les permiten tener reflejos casi sobrehumanos.",
+      "TÃº tambiÃ©n tienes este superpoder plÃ¡stico dentro de tu cabeza. Si sientes que eres malo en algo, ya sea en un deporte, en leer o en dibujar, no significa que no puedas hacerlo; solo significa que aÃºn no has caminado lo suficiente por ese sendero neuronal. Con esfuerzo, repeticiÃ³n y paciencia, tienes la capacidad literal y cientÃ­fica de remodelar tu propio cerebro para lograr lo que te propongas."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el Episodio IV: Una Nueva Esperanza, Obi-Wan Kenobi le pone a Luke Skywalker un casco con el visor bajado que no le permite ver absolutamente nada, forzándolo a detener los rápidos disparos de un pequeño droide escurridizo de entrenamiento usando únicamente su intuición. Al principio, el inexperto Luke falla miserablemente y recibe varios impactos dolorosos. Sin embargo, al seguir intentándolo y abrirse a sentir la Fuerza, logra desviar tres disparos seguidos, demostrando cómo su cerebro joven comenzaba a forjar rápidamente nuevas y poderosas vías neuronales.' 
+        text: 'En el Episodio IV: Una Nueva Esperanza, Obi-Wan Kenobi le pone a Luke Skywalker un casco con el visor bajado que no le permite ver absolutamente nada, forzÃ¡ndolo a detener los rÃ¡pidos disparos de un pequeÃ±o droide escurridizo de entrenamiento usando Ãºnicamente su intuiciÃ³n. Al principio, el inexperto Luke falla miserablemente y recibe varios impactos dolorosos. Sin embargo, al seguir intentÃ¡ndolo y abrirse a sentir la Fuerza, logra desviar tres disparos seguidos, demostrando cÃ³mo su cerebro joven comenzaba a forjar rÃ¡pidamente nuevas y poderosas vÃ­as neuronales.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'El famoso estudio científico realizado con los taxistas de la ciudad de Londres comprobó de manera irrefutable la existencia de la neuroplasticidad en adultos. Para obtener su difícil licencia, los taxistas debían memorizar miles de calles y laberínticas rutas. Las resonancias magnéticas mostraron claramente que el hipocampo de sus cerebros (el área crítica encargada de la memoria y navegación espacial) creció físicamente de tamaño y se volvió significativamente más grande y denso que el de las personas comunes.' 
+        text: 'El famoso estudio cientÃ­fico realizado con los taxistas de la ciudad de Londres comprobÃ³ de manera irrefutable la existencia de la neuroplasticidad en adultos. Para obtener su difÃ­cil licencia, los taxistas debÃ­an memorizar miles de calles y laberÃ­nticas rutas. Las resonancias magnÃ©ticas mostraron claramente que el hipocampo de sus cerebros (el Ã¡rea crÃ­tica encargada de la memoria y navegaciÃ³n espacial) creciÃ³ fÃ­sicamente de tamaÃ±o y se volviÃ³ significativamente mÃ¡s grande y denso que el de las personas comunes.' 
       }
     ],
-    fact: 'La neuroplasticidad es la capacidad del cerebro para reorganizarse y crear nuevas vías neuronales a lo largo de toda la vida. La práctica constante fortalece las conexiones, demostrando científicamente que el esfuerzo continuo puede alterar físicamente la estructura cerebral para adquirir nuevas habilidades asombrosas.'
+    fact: 'La neuroplasticidad es la capacidad del cerebro para reorganizarse y crear nuevas vÃ­as neuronales a lo largo de toda la vida. La prÃ¡ctica constante fortalece las conexiones, demostrando cientÃ­ficamente que el esfuerzo continuo puede alterar fÃ­sicamente la estructura cerebral para adquirir nuevas habilidades asombrosas.'
   },
   {
     id: 'respiracion-kenobi',
-    title: 'Respira como Obi-Wan: Técnica 4-7-8',
+    title: 'Respira como Obi-Wan: TÃ©cnica 4-7-8',
     color: '#66BB6A',
     btnImage: '/assets/starwars/infographic_jedi/btn_respiracion_kenobi.png',
     image: '/assets/starwars/infographic_jedi/hero_respiracion_kenobi.png',
     bannerImage: '/assets/starwars/infographic_jedi/banner_respiracion_kenobi.png',
     bannerCaption: 'El control del aire es el control de la mente, un puente directo hacia el sistema nervioso.',
     content: [
-      "¿Sabías que tienes un 'freno de mano' secreto en tu cuerpo que puede detener el estrés casi al instante? La magia está escondida en algo tan simple y aburrido que hacemos miles de veces al día sin siquiera darnos cuenta: respirar. Normalmente, la respiración es automática, pero es la única función automática de nuestro cuerpo que también podemos controlar a voluntad. Al cambiar la forma en que respiramos, podemos hackear nuestro sistema nervioso.",
-      "Existe un nervio súper largo e importante en tu cuerpo llamado el 'Nervio Vago'. Viaja desde tu cerebro, baja por tu cuello, y llega hasta tu corazón y tu estómago. Cuando te asustas y respiras rápido, el nervio vago le dice a tu corazón que lata a toda prisa. Pero cuando tomas aire lentamente y, sobre todo, cuando exhalas el aire muy despacio, el nervio vago envía un poderoso mensaje calmante al corazón y al cerebro: 'Tranquilo, todo está a salvo'.",
-      "Incluso los astronautas de la NASA, los buzos profesionales y los soldados usan técnicas de respiración especiales para no entrar en pánico en situaciones de vida o muerte. Una técnica muy famosa y fácil de aprender es la 'Respiración 4-7-8'. Consiste en tomar aire por la nariz durante 4 segundos, aguantar y sostener ese aire en los pulmones por 7 segundos, y finalmente soplar el aire por la boca muy, muy despacio durante 8 segundos.",
-      "Imagina al legendario Maestro Obi-Wan Kenobi escondido en la inmensa Estrella de la Muerte, rodeado de cientos de Stormtroopers que lo buscan. Si su corazón latiera de miedo, cometería errores fatales. A través de la profunda conexión con la Fuerza y el control perfecto de su respiración, Obi-Wan logra calmar su sistema nervioso por completo, moviéndose por los pasillos con una tranquilidad absoluta y engañando las mentes débiles de los guardias.",
-      "Puedes usar la técnica del 4-7-8 cuando te sientas muy enojado, cuando no puedas dormir por la noche, o antes de hablar en público en la escuela. Hazlo cuatro veces seguidas y sentirás físicamente cómo una ola de tranquilidad recorre tu cuerpo entero. Es una herramienta biológica gratuita, poderosa y siempre disponible que te convierte en el verdadero dueño de tus emociones, igual que un Maestro Jedi experimentado."
+      "Â¿SabÃ­as que tienes un 'freno de mano' secreto en tu cuerpo que puede detener el estrÃ©s casi al instante? La magia estÃ¡ escondida en algo tan simple y aburrido que hacemos miles de veces al dÃ­a sin siquiera darnos cuenta: respirar. Normalmente, la respiraciÃ³n es automÃ¡tica, pero es la Ãºnica funciÃ³n automÃ¡tica de nuestro cuerpo que tambiÃ©n podemos controlar a voluntad. Al cambiar la forma en que respiramos, podemos hackear nuestro sistema nervioso.",
+      "Existe un nervio sÃºper largo e importante en tu cuerpo llamado el 'Nervio Vago'. Viaja desde tu cerebro, baja por tu cuello, y llega hasta tu corazÃ³n y tu estÃ³mago. Cuando te asustas y respiras rÃ¡pido, el nervio vago le dice a tu corazÃ³n que lata a toda prisa. Pero cuando tomas aire lentamente y, sobre todo, cuando exhalas el aire muy despacio, el nervio vago envÃ­a un poderoso mensaje calmante al corazÃ³n y al cerebro: 'Tranquilo, todo estÃ¡ a salvo'.",
+      "Incluso los astronautas de la NASA, los buzos profesionales y los soldados usan tÃ©cnicas de respiraciÃ³n especiales para no entrar en pÃ¡nico en situaciones de vida o muerte. Una tÃ©cnica muy famosa y fÃ¡cil de aprender es la 'RespiraciÃ³n 4-7-8'. Consiste en tomar aire por la nariz durante 4 segundos, aguantar y sostener ese aire en los pulmones por 7 segundos, y finalmente soplar el aire por la boca muy, muy despacio durante 8 segundos.",
+      "Imagina al legendario Maestro Obi-Wan Kenobi escondido en la inmensa Estrella de la Muerte, rodeado de cientos de Stormtroopers que lo buscan. Si su corazÃ³n latiera de miedo, cometerÃ­a errores fatales. A travÃ©s de la profunda conexiÃ³n con la Fuerza y el control perfecto de su respiraciÃ³n, Obi-Wan logra calmar su sistema nervioso por completo, moviÃ©ndose por los pasillos con una tranquilidad absoluta y engaÃ±ando las mentes dÃ©biles de los guardias.",
+      "Puedes usar la tÃ©cnica del 4-7-8 cuando te sientas muy enojado, cuando no puedas dormir por la noche, o antes de hablar en pÃºblico en la escuela. Hazlo cuatro veces seguidas y sentirÃ¡s fÃ­sicamente cÃ³mo una ola de tranquilidad recorre tu cuerpo entero. Es una herramienta biolÃ³gica gratuita, poderosa y siempre disponible que te convierte en el verdadero dueÃ±o de tus emociones, igual que un Maestro Jedi experimentado."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En la aclamada serie de televisión Obi-Wan Kenobi, vemos al destrozado y exiliado Jedi sufriendo graves ataques de pánico y un terrible estrés postraumático constante (TEPT) mientras se esconde en los desiertos de Tatooine. Para poder reconectarse nuevamente con la Fuerza, superar el miedo paralizante a Darth Vader y recuperar su antiguo y legendario poder, Obi-Wan debe volver a lo más básico de su entrenamiento en el Templo: recuperar el control consciente, rítmico y pacífico de su propia respiración.' 
+        text: 'En la aclamada serie de televisiÃ³n Obi-Wan Kenobi, vemos al destrozado y exiliado Jedi sufriendo graves ataques de pÃ¡nico y un terrible estrÃ©s postraumÃ¡tico constante (TEPT) mientras se esconde en los desiertos de Tatooine. Para poder reconectarse nuevamente con la Fuerza, superar el miedo paralizante a Darth Vader y recuperar su antiguo y legendario poder, Obi-Wan debe volver a lo mÃ¡s bÃ¡sico de su entrenamiento en el Templo: recuperar el control consciente, rÃ­tmico y pacÃ­fico de su propia respiraciÃ³n.' 
       },
       { 
-        label: '¿Sabías que...?', 
+        label: 'Â¿SabÃ­as que...?', 
         icon: 'clock', 
-        text: 'El prolongar intencionalmente el tiempo de la exhalación (sacar el aire más lento de lo que lo metes) estimula directamente y de manera mecánica el sistema nervioso parasimpático del cuerpo humano. Esta es la parte de nuestro complejo sistema biológico que se encarga del fundamental modo de "descansar y digerir", y actúa como el contra-balance perfecto y natural que frena la respuesta destructiva de "lucha o huida" que nos causa tanto estrés.' 
+        text: 'El prolongar intencionalmente el tiempo de la exhalaciÃ³n (sacar el aire mÃ¡s lento de lo que lo metes) estimula directamente y de manera mecÃ¡nica el sistema nervioso parasimpÃ¡tico del cuerpo humano. Esta es la parte de nuestro complejo sistema biolÃ³gico que se encarga del fundamental modo de "descansar y digerir", y actÃºa como el contra-balance perfecto y natural que frena la respuesta destructiva de "lucha o huida" que nos causa tanto estrÃ©s.' 
       }
     ],
-    fact: 'Controlar el ritmo de la respiración es la forma más rápida de intervenir conscientemente en el sistema nervioso autónomo. La técnica 4-7-8, al prolongar enormemente la fase de exhalación, estimula el nervio vago y reduce el ritmo cardíaco dramáticamente, brindando calma instantánea.'
+    fact: 'Controlar el ritmo de la respiraciÃ³n es la forma mÃ¡s rÃ¡pida de intervenir conscientemente en el sistema nervioso autÃ³nomo. La tÃ©cnica 4-7-8, al prolongar enormemente la fase de exhalaciÃ³n, estimula el nervio vago y reduce el ritmo cardÃ­aco dramÃ¡ticamente, brindando calma instantÃ¡nea.'
   },
   {
     id: 'inteligencia-emocional',
-    title: 'El Poder de la Empatía Jedi',
+    title: 'El Poder de la EmpatÃ­a Jedi',
     color: '#42A5F5',
     btnImage: '/assets/starwars/infographic_jedi/btn_inteligencia_emocional.png',
     image: '/assets/starwars/infographic_jedi/hero_inteligencia_emocional.png',
     bannerImage: '/assets/starwars/infographic_jedi/banner_inteligencia_emocional.png',
     bannerCaption: 'Sentir las emociones de otros en la galaxia: la ciencia de las neuronas espejo.',
     content: [
-      "Ser inteligente no solo significa saber multiplicar números grandes o recordar muchos datos de historia. En el año 1995, un psicólogo muy famoso llamado Daniel Goleman le dijo al mundo que existe algo igual de importante: la 'Inteligencia Emocional'. Esta es la maravillosa capacidad de entender lo que tú mismo sientes, controlar esos sentimientos, y lo que es más increíble, entender y sentir genuinamente las emociones de las demás personas a tu alrededor.",
-      "Para lograr esto, nuestro cerebro tiene una herramienta secreta y mágica descubierta recientemente llamada 'Neuronas Espejo'. Estas pequeñas células se activan no solo cuando tú haces algo, sino también cuando ves a otra persona hacer algo. Si ves a tu amigo llorar o golpearse el dedo del pie, tus propias neuronas espejo se encienden en las mismas áreas de dolor en tu cerebro. ¡Literalmente sientes una pizca de su dolor! Esto es lo que crea la empatía.",
-      "La empatía es el superpoder humano que nos permite conectarnos profundamente con los demás. Nos hace querer ayudar a alguien que está triste y nos hace reír cuando vemos a alguien carcajearse (por eso la risa es tan contagiosa). Las personas con alta inteligencia emocional saben leer las caras, el tono de voz y el lenguaje corporal de los demás como si fueran un libro abierto, creando amistades fuertes y resolviendo problemas sin pelear.",
-      "En el universo de Star Wars, la Fuerza fluye a través de todos los seres vivos, conectándolos. Cuando un Jedi usa la Fuerza para 'sentir' las emociones o las intenciones de otra criatura, está usando una versión amplificada e hiperdesarrollada de la inteligencia emocional y las neuronas espejo. No necesitan palabras; pueden sentir el miedo, la tristeza o el lado luminoso en el interior del corazón de otra persona de manera instintiva y clara.",
-      "Desarrollar tu inteligencia emocional toma tiempo. El primer paso es nombrar tus emociones: decir 'estoy frustrado' en lugar de simplemente gritar y romper cosas. El segundo paso es observar a los demás e intentar imaginar sinceramente cómo se ven las cosas desde sus propios zapatos. Al entrenar tu empatía, te vuelves un líder compasivo, alguien que trae luz y paz a tus amigos y a tu comunidad, igual que los guardianes de la paz galáctica."
+      "Ser inteligente no solo significa saber multiplicar nÃºmeros grandes o recordar muchos datos de historia. En el aÃ±o 1995, un psicÃ³logo muy famoso llamado Daniel Goleman le dijo al mundo que existe algo igual de importante: la 'Inteligencia Emocional'. Esta es la maravillosa capacidad de entender lo que tÃº mismo sientes, controlar esos sentimientos, y lo que es mÃ¡s increÃ­ble, entender y sentir genuinamente las emociones de las demÃ¡s personas a tu alrededor.",
+      "Para lograr esto, nuestro cerebro tiene una herramienta secreta y mÃ¡gica descubierta recientemente llamada 'Neuronas Espejo'. Estas pequeÃ±as cÃ©lulas se activan no solo cuando tÃº haces algo, sino tambiÃ©n cuando ves a otra persona hacer algo. Si ves a tu amigo llorar o golpearse el dedo del pie, tus propias neuronas espejo se encienden en las mismas Ã¡reas de dolor en tu cerebro. Â¡Literalmente sientes una pizca de su dolor! Esto es lo que crea la empatÃ­a.",
+      "La empatÃ­a es el superpoder humano que nos permite conectarnos profundamente con los demÃ¡s. Nos hace querer ayudar a alguien que estÃ¡ triste y nos hace reÃ­r cuando vemos a alguien carcajearse (por eso la risa es tan contagiosa). Las personas con alta inteligencia emocional saben leer las caras, el tono de voz y el lenguaje corporal de los demÃ¡s como si fueran un libro abierto, creando amistades fuertes y resolviendo problemas sin pelear.",
+      "En el universo de Star Wars, la Fuerza fluye a travÃ©s de todos los seres vivos, conectÃ¡ndolos. Cuando un Jedi usa la Fuerza para 'sentir' las emociones o las intenciones de otra criatura, estÃ¡ usando una versiÃ³n amplificada e hiperdesarrollada de la inteligencia emocional y las neuronas espejo. No necesitan palabras; pueden sentir el miedo, la tristeza o el lado luminoso en el interior del corazÃ³n de otra persona de manera instintiva y clara.",
+      "Desarrollar tu inteligencia emocional toma tiempo. El primer paso es nombrar tus emociones: decir 'estoy frustrado' en lugar de simplemente gritar y romper cosas. El segundo paso es observar a los demÃ¡s e intentar imaginar sinceramente cÃ³mo se ven las cosas desde sus propios zapatos. Al entrenar tu empatÃ­a, te vuelves un lÃ­der compasivo, alguien que trae luz y paz a tus amigos y a tu comunidad, igual que los guardianes de la paz galÃ¡ctica."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el final del Episodio VI: El Retorno del Jedi, Luke Skywalker demuestra la forma más elevada y pura de inteligencia emocional y empatía de toda la saga. A pesar de que su padre, Darth Vader, es un monstruo despiadado que aterroriza la galaxia, Luke se niega a pelear y dice "Siento el bien en ti, el conflicto". Gracias a esa profunda conexión empática inquebrantable, Luke logra tocar el corazón enterrado de Anakin Skywalker, redimiéndolo y salvando el universo.' 
+        text: 'En el final del Episodio VI: El Retorno del Jedi, Luke Skywalker demuestra la forma mÃ¡s elevada y pura de inteligencia emocional y empatÃ­a de toda la saga. A pesar de que su padre, Darth Vader, es un monstruo despiadado que aterroriza la galaxia, Luke se niega a pelear y dice "Siento el bien en ti, el conflicto". Gracias a esa profunda conexiÃ³n empÃ¡tica inquebrantable, Luke logra tocar el corazÃ³n enterrado de Anakin Skywalker, redimiÃ©ndolo y salvando el universo.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'Las neuronas espejo fueron descubiertas casi por accidente en la década de 1990 por un equipo de neurocientíficos italianos liderados por Giacomo Rizzolatti mientras estudiaban los cerebros de los monos macacos. Notaron asombrados que las neuronas motoras del mono se disparaban enormemente con solo mirar a un investigador humano recoger un maní, exactamente de la misma manera que si el propio mono hubiera recogido físicamente el alimento.' 
+        text: 'Las neuronas espejo fueron descubiertas casi por accidente en la dÃ©cada de 1990 por un equipo de neurocientÃ­ficos italianos liderados por Giacomo Rizzolatti mientras estudiaban los cerebros de los monos macacos. Notaron asombrados que las neuronas motoras del mono se disparaban enormemente con solo mirar a un investigador humano recoger un manÃ­, exactamente de la misma manera que si el propio mono hubiera recogido fÃ­sicamente el alimento.' 
       }
     ],
-    fact: 'La Inteligencia Emocional, popularizada mundialmente por Daniel Goleman, es la capacidad de identificar, evaluar y controlar las emociones propias y ajenas. La base neurológica de la empatía humana se atribuye fuertemente a las neuronas espejo, que nos permiten resonar emocionalmente con los demás.'
+    fact: 'La Inteligencia Emocional, popularizada mundialmente por Daniel Goleman, es la capacidad de identificar, evaluar y controlar las emociones propias y ajenas. La base neurolÃ³gica de la empatÃ­a humana se atribuye fuertemente a las neuronas espejo, que nos permiten resonar emocionalmente con los demÃ¡s.'
   },
   {
     id: 'lado-oscuro-cortisol',
-    title: 'El Lado Oscuro: Estrés y Cortisol',
+    title: 'El Lado Oscuro: EstrÃ©s y Cortisol',
     color: '#EF5350',
     btnImage: '/assets/starwars/infographic_jedi/btn_lado_oscuro_cortisol.png',
     image: '/assets/starwars/infographic_jedi/hero_lado_oscuro_cortisol.png',
     bannerImage: '/assets/starwars/infographic_jedi/banner_lado_oscuro_cortisol.png',
-    bannerCaption: 'El miedo lleva a la ira, la ira al odio... y el estrés crónico daña el cerebro.',
+    bannerCaption: 'El miedo lleva a la ira, la ira al odio... y el estrÃ©s crÃ³nico daÃ±a el cerebro.',
     content: [
-      "El sabio Maestro Yoda dijo una vez la frase más famosa de la psicología galáctica: 'El miedo es el camino hacia el Lado Oscuro. El miedo lleva a la ira, la ira lleva al odio, el odio lleva al sufrimiento'. Aunque suena a misticismo espacial, estas sabias palabras describen perfectamente lo que ocurre químicamente en nuestro propio cuerpo cuando nos dejamos consumir por el estrés negativo, la ansiedad y el pánico constante.",
-      "Cuando sentimos mucho miedo o enojo, nuestro cuerpo libera una hormona poderosa llamada 'Cortisol'. Un poquito de cortisol es bueno; te ayuda a despertar por la mañana y te da un impulso de energía si tienes que correr una carrera deportiva. Pero cuando vives constantemente enojado, estresado por las tareas o con miedo, tu cuerpo se inunda con cantidades tóxicas de cortisol día y noche, lo que los médicos llaman 'estrés crónico'.",
-      "El cortisol en exceso es como un veneno lento para tu cerebro. Los científicos, como el famoso investigador Bruce McEwen, descubrieron que el estrés crónico literalmente encoge partes vitales del cerebro, específicamente el 'hipocampo', que es la zona donde guardamos los recuerdos y aprendemos cosas nuevas. Además, el exceso de estrés te hace estar de mal humor, te enferma del estómago y baja las defensas de tu cuerpo para combatir los virus.",
-      "La trágica caída de Anakin Skywalker hacia el Lado Oscuro para convertirse en Darth Vader es la historia perfecta del daño que causa el estrés extremo. Anakin estaba aterrorizado y obsesionado con el miedo a perder a sus seres queridos. Esa ansiedad constante lo llenó de ira y nubló por completo su juicio y su razón. El Lado Oscuro no es magia; es la representación de dejar que las emociones destructivas y el cortisol tomen el control total de tus acciones.",
-      "La psicología positiva nos enseña cómo evitar caer en este Lado Oscuro emocional. Cultivar la gratitud diaria (dar gracias por lo bueno que tienes), dormir bien, hacer ejercicio, y platicar de tus miedos con alguien en quien confías, reduce drásticamente los niveles de cortisol en tu sangre. Aprender a soltar lo que no puedes controlar, como enseñan los Jedi, es el escudo científico más fuerte contra la toxicidad del estrés."
+      "El sabio Maestro Yoda dijo una vez la frase mÃ¡s famosa de la psicologÃ­a galÃ¡ctica: 'El miedo es el camino hacia el Lado Oscuro. El miedo lleva a la ira, la ira lleva al odio, el odio lleva al sufrimiento'. Aunque suena a misticismo espacial, estas sabias palabras describen perfectamente lo que ocurre quÃ­micamente en nuestro propio cuerpo cuando nos dejamos consumir por el estrÃ©s negativo, la ansiedad y el pÃ¡nico constante.",
+      "Cuando sentimos mucho miedo o enojo, nuestro cuerpo libera una hormona poderosa llamada 'Cortisol'. Un poquito de cortisol es bueno; te ayuda a despertar por la maÃ±ana y te da un impulso de energÃ­a si tienes que correr una carrera deportiva. Pero cuando vives constantemente enojado, estresado por las tareas o con miedo, tu cuerpo se inunda con cantidades tÃ³xicas de cortisol dÃ­a y noche, lo que los mÃ©dicos llaman 'estrÃ©s crÃ³nico'.",
+      "El cortisol en exceso es como un veneno lento para tu cerebro. Los cientÃ­ficos, como el famoso investigador Bruce McEwen, descubrieron que el estrÃ©s crÃ³nico literalmente encoge partes vitales del cerebro, especÃ­ficamente el 'hipocampo', que es la zona donde guardamos los recuerdos y aprendemos cosas nuevas. AdemÃ¡s, el exceso de estrÃ©s te hace estar de mal humor, te enferma del estÃ³mago y baja las defensas de tu cuerpo para combatir los virus.",
+      "La trÃ¡gica caÃ­da de Anakin Skywalker hacia el Lado Oscuro para convertirse en Darth Vader es la historia perfecta del daÃ±o que causa el estrÃ©s extremo. Anakin estaba aterrorizado y obsesionado con el miedo a perder a sus seres queridos. Esa ansiedad constante lo llenÃ³ de ira y nublÃ³ por completo su juicio y su razÃ³n. El Lado Oscuro no es magia; es la representaciÃ³n de dejar que las emociones destructivas y el cortisol tomen el control total de tus acciones.",
+      "La psicologÃ­a positiva nos enseÃ±a cÃ³mo evitar caer en este Lado Oscuro emocional. Cultivar la gratitud diaria (dar gracias por lo bueno que tienes), dormir bien, hacer ejercicio, y platicar de tus miedos con alguien en quien confÃ­as, reduce drÃ¡sticamente los niveles de cortisol en tu sangre. Aprender a soltar lo que no puedes controlar, como enseÃ±an los Jedi, es el escudo cientÃ­fico mÃ¡s fuerte contra la toxicidad del estrÃ©s."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el Episodio III: La Venganza de los Sith, el Canciller Palpatine (Darth Sidious) manipula magistralmente el miedo natural del joven Anakin de perder a su esposa Padmé. Palpatine actúa como una fuente constante de estrés psicológico tóxico, susurrándole mentiras que aumentan su paranoia y aislamiento. Cuando el miedo y la desesperación de Anakin alcanzan su punto máximo, su corteza prefrontal lógica se apaga por completo, y sucumbe a las pasiones violentas del Lado Oscuro.' 
+        text: 'En el Episodio III: La Venganza de los Sith, el Canciller Palpatine (Darth Sidious) manipula magistralmente el miedo natural del joven Anakin de perder a su esposa PadmÃ©. Palpatine actÃºa como una fuente constante de estrÃ©s psicolÃ³gico tÃ³xico, susurrÃ¡ndole mentiras que aumentan su paranoia y aislamiento. Cuando el miedo y la desesperaciÃ³n de Anakin alcanzan su punto mÃ¡ximo, su corteza prefrontal lÃ³gica se apaga por completo, y sucumbe a las pasiones violentas del Lado Oscuro.' 
       },
       { 
-        label: '¿Sabías que...?', 
+        label: 'Â¿SabÃ­as que...?', 
         icon: 'clock', 
-        text: 'Los estudios de neurobiología y fisiología humana demuestran que el llanto emocional real (las lágrimas de tristeza o ira extrema) contiene trazas y niveles significativos de cortisol y de otras hormonas del estrés. Los científicos postulan que el acto físico de llorar es literalmente una forma asombrosa en que nuestro cuerpo se purga y se limpia expulsando esas sustancias químicas dañinas para ayudarnos a sentirnos aliviados y en paz después.' 
+        text: 'Los estudios de neurobiologÃ­a y fisiologÃ­a humana demuestran que el llanto emocional real (las lÃ¡grimas de tristeza o ira extrema) contiene trazas y niveles significativos de cortisol y de otras hormonas del estrÃ©s. Los cientÃ­ficos postulan que el acto fÃ­sico de llorar es literalmente una forma asombrosa en que nuestro cuerpo se purga y se limpia expulsando esas sustancias quÃ­micas daÃ±inas para ayudarnos a sentirnos aliviados y en paz despuÃ©s.' 
       }
     ],
-    fact: 'El cortisol es la principal hormona del estrés en el cuerpo humano. Aunque es vital para la supervivencia a corto plazo, el estrés crónico inunda el cerebro con niveles tóxicos de cortisol, lo que deteriora severamente la memoria, debilita el sistema inmunológico y nubla el juicio crítico.'
+    fact: 'El cortisol es la principal hormona del estrÃ©s en el cuerpo humano. Aunque es vital para la supervivencia a corto plazo, el estrÃ©s crÃ³nico inunda el cerebro con niveles tÃ³xicos de cortisol, lo que deteriora severamente la memoria, debilita el sistema inmunolÃ³gico y nubla el juicio crÃ­tico.'
   },
   {
     id: 'sueno-jedi',
-    title: 'Sueño REM: El Entrenamiento Nocturno',
+    title: 'SueÃ±o REM: El Entrenamiento Nocturno',
     color: '#AB47BC',
     btnImage: '/assets/starwars/infographic_jedi/btn_sueno_jedi.png',
     image: '/assets/starwars/infographic_jedi/hero_sueno_jedi.png',
     bannerImage: '/assets/starwars/infographic_jedi/banner_sueno_jedi.png',
-    bannerCaption: 'Incluso los Maestros más poderosos necesitan que su cerebro se repare en la noche.',
+    bannerCaption: 'Incluso los Maestros mÃ¡s poderosos necesitan que su cerebro se repare en la noche.',
     content: [
-      "Podrías pensar que cuando duermes por la noche, tu cerebro simplemente se apaga como si fuera el interruptor de una computadora. ¡Nada más lejos de la realidad! Mientras tú estás profundamente dormido y roncando, tu cerebro está trabajando a toda máquina, más activo que nunca. Dormir bien es el superpoder menos valorado y más increíble que tenemos, y es absolutamente necesario para mantener la cordura y aprender cosas nuevas.",
-      "Hay una fase mágica del sueño llamada 'Sueño REM' (Movimiento Rápido de los Ojos). Durante esta etapa, que ocurre varias veces durante la noche, es cuando tenemos los sueños más vívidos y locos. Pero la ciencia moderna, liderada por expertos del sueño como Matthew Walker, ha descubierto que el sueño REM es como una terapia nocturna gratuita. El cerebro toma todas las emociones difíciles del día, les quita la carga de estrés, y las organiza pacíficamente.",
-      "Además de sanar las emociones, el sueño es el momento en que el cerebro guarda la información de forma permanente. Si pasaste todo el día practicando un truco nuevo en la bicicleta o estudiando para un examen, tu cerebro repite esas mismas conexiones neuronales miles de veces durante la noche profunda para consolidar el aprendizaje. Si no duermes bien, es como si no hubieras guardado el documento de tu computadora, y al día siguiente ¡se te olvida casi todo!",
-      "Los Jedi en el templo tienen rutinas muy estrictas de descanso. Saben que un cuerpo agotado y una mente privada de sueño son blancos fáciles para el Lado Oscuro. Las ilusiones, la impaciencia y la pérdida de control en el uso de la Fuerza son consecuencias directas de no descansar el cerebro. La conexión mística a menudo se revela en los sueños y visiones nocturnas, donde la mente subconsciente está completamente libre del ruido.",
-      "Para tener un verdadero entrenamiento nocturno de Maestro, debes alejarte de las pantallas brillantes de los celulares y tabletas al menos una hora antes de dormir (la luz azul engaña a tu cerebro haciéndole creer que es de día). Mantén tu cuarto oscuro y fresco. Al darle a tu cuerpo las valiosas 9 a 10 horas de sueño que los niños y adolescentes necesitan, estarás construyendo un cerebro invencible, sano y listo para cualquier desafío galáctico."
+      "PodrÃ­as pensar que cuando duermes por la noche, tu cerebro simplemente se apaga como si fuera el interruptor de una computadora. Â¡Nada mÃ¡s lejos de la realidad! Mientras tÃº estÃ¡s profundamente dormido y roncando, tu cerebro estÃ¡ trabajando a toda mÃ¡quina, mÃ¡s activo que nunca. Dormir bien es el superpoder menos valorado y mÃ¡s increÃ­ble que tenemos, y es absolutamente necesario para mantener la cordura y aprender cosas nuevas.",
+      "Hay una fase mÃ¡gica del sueÃ±o llamada 'SueÃ±o REM' (Movimiento RÃ¡pido de los Ojos). Durante esta etapa, que ocurre varias veces durante la noche, es cuando tenemos los sueÃ±os mÃ¡s vÃ­vidos y locos. Pero la ciencia moderna, liderada por expertos del sueÃ±o como Matthew Walker, ha descubierto que el sueÃ±o REM es como una terapia nocturna gratuita. El cerebro toma todas las emociones difÃ­ciles del dÃ­a, les quita la carga de estrÃ©s, y las organiza pacÃ­ficamente.",
+      "AdemÃ¡s de sanar las emociones, el sueÃ±o es el momento en que el cerebro guarda la informaciÃ³n de forma permanente. Si pasaste todo el dÃ­a practicando un truco nuevo en la bicicleta o estudiando para un examen, tu cerebro repite esas mismas conexiones neuronales miles de veces durante la noche profunda para consolidar el aprendizaje. Si no duermes bien, es como si no hubieras guardado el documento de tu computadora, y al dÃ­a siguiente Â¡se te olvida casi todo!",
+      "Los Jedi en el templo tienen rutinas muy estrictas de descanso. Saben que un cuerpo agotado y una mente privada de sueÃ±o son blancos fÃ¡ciles para el Lado Oscuro. Las ilusiones, la impaciencia y la pÃ©rdida de control en el uso de la Fuerza son consecuencias directas de no descansar el cerebro. La conexiÃ³n mÃ­stica a menudo se revela en los sueÃ±os y visiones nocturnas, donde la mente subconsciente estÃ¡ completamente libre del ruido.",
+      "Para tener un verdadero entrenamiento nocturno de Maestro, debes alejarte de las pantallas brillantes de los celulares y tabletas al menos una hora antes de dormir (la luz azul engaÃ±a a tu cerebro haciÃ©ndole creer que es de dÃ­a). MantÃ©n tu cuarto oscuro y fresco. Al darle a tu cuerpo las valiosas 9 a 10 horas de sueÃ±o que los niÃ±os y adolescentes necesitan, estarÃ¡s construyendo un cerebro invencible, sano y listo para cualquier desafÃ­o galÃ¡ctico."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'A lo largo de toda la saga, los sueños, las visiones y el descanso son elementos cruciales en la vida de los usuarios de la Fuerza. Anakin sufre de horribles pesadillas proféticas que le impiden descansar, lo que deteriora enormemente su salud mental y aumenta su ansiedad diurna. Por otro lado, un sueño reparador y las visiones meditativas guiadas permiten a personajes sabios como Yoda o Rey encontrar respuestas profundas y claridad en momentos de máxima confusión.' 
+        text: 'A lo largo de toda la saga, los sueÃ±os, las visiones y el descanso son elementos cruciales en la vida de los usuarios de la Fuerza. Anakin sufre de horribles pesadillas profÃ©ticas que le impiden descansar, lo que deteriora enormemente su salud mental y aumenta su ansiedad diurna. Por otro lado, un sueÃ±o reparador y las visiones meditativas guiadas permiten a personajes sabios como Yoda o Rey encontrar respuestas profundas y claridad en momentos de mÃ¡xima confusiÃ³n.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'Durante la etapa de sueño profundo no REM, el cerebro humano hace algo extraordinario y fascinante: literalmente reduce un poco el tamaño físico de sus células para permitir que el fluido cefalorraquídeo fluya a raudales, actuando como un potente sistema de lavado o lavadora interna que limpia y elimina por completo las toxinas acumuladas durante las horas de vigilia, previniendo el daño cerebral a largo plazo.' 
+        text: 'Durante la etapa de sueÃ±o profundo no REM, el cerebro humano hace algo extraordinario y fascinante: literalmente reduce un poco el tamaÃ±o fÃ­sico de sus cÃ©lulas para permitir que el fluido cefalorraquÃ­deo fluya a raudales, actuando como un potente sistema de lavado o lavadora interna que limpia y elimina por completo las toxinas acumuladas durante las horas de vigilia, previniendo el daÃ±o cerebral a largo plazo.' 
       }
     ],
-    fact: 'El sueño REM (Movimiento Rápido de los Ojos) es una fase crítica del descanso nocturno donde se produce la consolidación de la memoria y la regulación emocional profunda. El neurocientífico Matthew Walker describe el sueño como la herramienta natural más efectiva que poseemos para reiniciar nuestra salud cerebral y física diaria.'
+    fact: 'El sueÃ±o REM (Movimiento RÃ¡pido de los Ojos) es una fase crÃ­tica del descanso nocturno donde se produce la consolidaciÃ³n de la memoria y la regulaciÃ³n emocional profunda. El neurocientÃ­fico Matthew Walker describe el sueÃ±o como la herramienta natural mÃ¡s efectiva que poseemos para reiniciar nuestra salud cerebral y fÃ­sica diaria.'
   }
 ];
 
@@ -368,7 +368,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         textTransform: 'uppercase',
         textShadow: '0 2px 10px rgba(171, 71, 188, 0.4)'
       }}>
-        EL CÓDIGO JEDI
+        EL CÃ“DIGO JEDI
       </h1>
       <h2 style={{
         fontFamily: '"Lora", serif',
@@ -377,7 +377,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         margin: 0,
         letterSpacing: '1px'
       }}>
-        NEUROCIENCIA &middot; MINDFULNESS &middot; EMPATÍA
+        NEUROCIENCIA &middot; MINDFULNESS &middot; EMPATÃA
       </h2>
       
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
@@ -419,7 +419,7 @@ const NodeButton = ({ node, isVisited, onClick }) => {
         src={node.btnImage} 
         alt={node.title}
         style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: isComplete ? 1 : 0.6 }}
-      />
+       loading="lazy" />
       {isComplete && (
         <div style={{
           position: 'absolute',
@@ -515,7 +515,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem 2rem', background: `linear-gradient(90deg, #1A1C29 0%, ${node.color}22 100%)`, zIndex: 10, borderBottom: `1px solid ${node.color}33` }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <div style={{ width: 40, height: 40, borderRadius: '50%', background: node.color, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={node.btnImage} alt="icon" style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover' }} />
+            <img src={node.btnImage} alt="icon" style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover' }}  loading="lazy" />
           </div>
           <h2 style={{ margin: 0, fontFamily: '"Oswald", sans-serif', fontSize: '1.5rem', color: '#FFF' }}>{node.title}</h2>
         </div>
@@ -674,7 +674,7 @@ export default function InteractiveInfographic_SwSec7() {
 
         <div style={{ width: '100%', maxWidth: '600px', marginTop: '4rem', background: '#1A1C29', borderRadius: '12px', padding: '1rem', border: '1px solid #333' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontFamily: '"Oswald", sans-serif', color: '#90A4AE' }}>
-            <span>CONEXIÓN CON LA FUERZA</span>
+            <span>CONEXIÃ“N CON LA FUERZA</span>
             <span>{Math.round(progress)}%</span>
           </div>
           <div style={{ width: '100%', height: '8px', background: '#0B0D17', borderRadius: '4px', overflow: 'hidden' }}>
@@ -693,8 +693,8 @@ export default function InteractiveInfographic_SwSec7() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_jedi/sw_badge_7.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
-              ¡ENTRENAMIENTO JEDI COMPLETADO!
+              <img src="/assets/starwars/infographic_jedi/sw_badge_7.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              Â¡ENTRENAMIENTO JEDI COMPLETADO!
               <Sparkles size={24} />
             </motion.div>
           )}
@@ -702,7 +702,7 @@ export default function InteractiveInfographic_SwSec7() {
 
 
         <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
-          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÓN (Bibliografía)</h3>
+          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÃ“N (BibliografÃ­a)</h3>
           <ul style={{ margin: 0, padding: '0 0 0 1rem', color: '#78909C', fontFamily: '"Lora", serif', fontSize: '0.9rem', lineHeight: 1.8 }}>
             {BIBLIOGRAPHY.map((item, idx) => (
               <li key={idx} style={{ marginBottom: '0.5rem' }}>{item}</li>
@@ -724,7 +724,7 @@ export default function InteractiveInfographic_SwSec7() {
         )}
       </AnimatePresence>
 
-      {/* ImageLightbox §15 */}
+      {/* ImageLightbox Â§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

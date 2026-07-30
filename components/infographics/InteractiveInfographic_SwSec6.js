@@ -77,236 +77,236 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_plasmas/btn_plasma_estado.png',
     image: '/assets/starwars/infographic_plasmas/hero_plasma_estado.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_plasma_estado.png',
-    bannerCaption: "El plasma es el cuarto estado de la materia y constituye más del 99% de la materia visible del universo.",
+    bannerCaption: "El plasma es el cuarto estado de la materia y constituye mÃ¡s del 99% de la materia visible del universo.",
     content: [
-      "Desde que somos muy pequeños en la escuela, nos enseñan que la materia existe principalmente en tres estados comunes: sólido (como un bloque de hielo congelado), líquido (como el agua fresca que bebemos todos los días) y gas (como el vapor invisible que sale de una olla hirviendo). Pero resulta que estos tres estados son en realidad una rareza increíble en la inmensidad del universo. El universo está dominado por un misterioso y fascinante cuarto estado.",
-      "Este cuarto estado de la materia es lo que los científicos de todo el mundo llaman 'plasma'. Para crear plasma de manera artificial o natural, debes tomar un gas común y calentarlo a temperaturas tan increíblemente extremas y altas que los átomos mismos literalmente se rompen y se desarman por la violencia del calor. Cuando esto ocurre, los electrones, que son pequeñísimos, escapan de sus átomos, creando una sopa hirviente y brillante llena de partículas cargadas de electricidad.",
-      "Lo que hace al plasma tan especial y totalmente distinto de cualquier gas normal es que, debido a que está repleto de diminutas partículas cargadas eléctricamente vagando libremente por todas partes, responde y reacciona fuertemente a las fuerzas de los campos magnéticos y eléctricos. Si acercas un imán verdaderamente poderoso a un gas normal, no ocurre absolutamente nada. Pero si acercas ese mismo imán gigante a una nube de plasma ardiente, puedes moldearlo, empujarlo y atraparlo como si estuvieras moldeando plastilina brillante.",
-      "Aunque el plasma suene a ciencia ficción avanzada o parezca sacado exclusivamente de películas del futuro, lo vemos absolutamente todos los días de nuestra vida. Nuestro sol abrasador, así como todas y cada una de las millones de estrellas parpadeantes que puedes ver en el cielo nocturno despejado, son en realidad gigantescas e inmensas bolas giratorias de plasma supercaliente. ¡De hecho, más del asombroso 99% de toda la materia visible en todo nuestro universo conocido está hecho enteramente de plasma!",
-      "En el increíble y expansivo universo de Star Wars, los ingenieros galácticos y los maestros Jedi han aprendido hace muchísimo tiempo a manipular, estabilizar y controlar el impredecible plasma con una precisión asombrosa. Las armas más icónicas, peligrosas y famosas, así como los motores que permiten a las grandes naves cruceros viajar a través de las infinitas estrellas, utilizan la maravillosa física de los plasmas como su principal fuente de funcionamiento."
+      "Desde que somos muy pequeÃ±os en la escuela, nos enseÃ±an que la materia existe principalmente en tres estados comunes: sÃ³lido (como un bloque de hielo congelado), lÃ­quido (como el agua fresca que bebemos todos los dÃ­as) y gas (como el vapor invisible que sale de una olla hirviendo). Pero resulta que estos tres estados son en realidad una rareza increÃ­ble en la inmensidad del universo. El universo estÃ¡ dominado por un misterioso y fascinante cuarto estado.",
+      "Este cuarto estado de la materia es lo que los cientÃ­ficos de todo el mundo llaman 'plasma'. Para crear plasma de manera artificial o natural, debes tomar un gas comÃºn y calentarlo a temperaturas tan increÃ­blemente extremas y altas que los Ã¡tomos mismos literalmente se rompen y se desarman por la violencia del calor. Cuando esto ocurre, los electrones, que son pequeÃ±Ã­simos, escapan de sus Ã¡tomos, creando una sopa hirviente y brillante llena de partÃ­culas cargadas de electricidad.",
+      "Lo que hace al plasma tan especial y totalmente distinto de cualquier gas normal es que, debido a que estÃ¡ repleto de diminutas partÃ­culas cargadas elÃ©ctricamente vagando libremente por todas partes, responde y reacciona fuertemente a las fuerzas de los campos magnÃ©ticos y elÃ©ctricos. Si acercas un imÃ¡n verdaderamente poderoso a un gas normal, no ocurre absolutamente nada. Pero si acercas ese mismo imÃ¡n gigante a una nube de plasma ardiente, puedes moldearlo, empujarlo y atraparlo como si estuvieras moldeando plastilina brillante.",
+      "Aunque el plasma suene a ciencia ficciÃ³n avanzada o parezca sacado exclusivamente de pelÃ­culas del futuro, lo vemos absolutamente todos los dÃ­as de nuestra vida. Nuestro sol abrasador, asÃ­ como todas y cada una de las millones de estrellas parpadeantes que puedes ver en el cielo nocturno despejado, son en realidad gigantescas e inmensas bolas giratorias de plasma supercaliente. Â¡De hecho, mÃ¡s del asombroso 99% de toda la materia visible en todo nuestro universo conocido estÃ¡ hecho enteramente de plasma!",
+      "En el increÃ­ble y expansivo universo de Star Wars, los ingenieros galÃ¡cticos y los maestros Jedi han aprendido hace muchÃ­simo tiempo a manipular, estabilizar y controlar el impredecible plasma con una precisiÃ³n asombrosa. Las armas mÃ¡s icÃ³nicas, peligrosas y famosas, asÃ­ como los motores que permiten a las grandes naves cruceros viajar a travÃ©s de las infinitas estrellas, utilizan la maravillosa fÃ­sica de los plasmas como su principal fuente de funcionamiento."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En toda la épica y larguísima saga de películas de Star Wars, desde las precuelas hasta las secuelas, siempre vemos gigantescas y majestuosas instalaciones industriales galácticas, como las refinerías de Naboo o la cámara de congelación en Bespin, que están dedicadas a extraer, purificar y procesar plasma de los profundos núcleos planetarios para usarlo como la fuente de combustible primordial de naves espaciales y ciudades.' 
+        text: 'En toda la Ã©pica y larguÃ­sima saga de pelÃ­culas de Star Wars, desde las precuelas hasta las secuelas, siempre vemos gigantescas y majestuosas instalaciones industriales galÃ¡cticas, como las refinerÃ­as de Naboo o la cÃ¡mara de congelaciÃ³n en Bespin, que estÃ¡n dedicadas a extraer, purificar y procesar plasma de los profundos nÃºcleos planetarios para usarlo como la fuente de combustible primordial de naves espaciales y ciudades.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'En nuestro propio y hermoso planeta Tierra, el plasma natural es bastante raro de observar directamente a nivel del suelo, pero sí existe de forma espectacular y destructiva: el núcleo central de un relámpago brillante durante una fuerte tormenta eléctrica es plasma puro alcanzando temperaturas asombrosamente altas, al igual que las mágicas, danzantes y coloridas luces de las hermosas auroras boreales en los polos.' 
+        text: 'En nuestro propio y hermoso planeta Tierra, el plasma natural es bastante raro de observar directamente a nivel del suelo, pero sÃ­ existe de forma espectacular y destructiva: el nÃºcleo central de un relÃ¡mpago brillante durante una fuerte tormenta elÃ©ctrica es plasma puro alcanzando temperaturas asombrosamente altas, al igual que las mÃ¡gicas, danzantes y coloridas luces de las hermosas auroras boreales en los polos.' 
       },
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'sparkles',
-        text: 'Los antiguos e icónicos televisores de pantalla plana que pesaban muchísimo y que se volvieron muy populares a principios de los años 2000 eran conocidos popularmente como "televisores de plasma" justamente porque en su interior tenían millones de minúsculas celdas o burbujas microscópicas atrapadas entre dos gruesos paneles de cristal, las cuales se llenaban de verdaderos gases ionizados que brillaban intensamente para crear la imagen.'
+        text: 'Los antiguos e icÃ³nicos televisores de pantalla plana que pesaban muchÃ­simo y que se volvieron muy populares a principios de los aÃ±os 2000 eran conocidos popularmente como "televisores de plasma" justamente porque en su interior tenÃ­an millones de minÃºsculas celdas o burbujas microscÃ³picas atrapadas entre dos gruesos paneles de cristal, las cuales se llenaban de verdaderos gases ionizados que brillaban intensamente para crear la imagen.'
       }
     ],
-    fact: 'El plasma es científicamente el cuarto estado fundamental de la materia. Se forma cuando un gas se calienta a temperaturas tan sumamente extremas que sus átomos se ionizan por completo, liberando sus electrones y transformándose en una mezcla gaseosa pero altamente conductora de electricidad y sensible al magnetismo.'
+    fact: 'El plasma es cientÃ­ficamente el cuarto estado fundamental de la materia. Se forma cuando un gas se calienta a temperaturas tan sumamente extremas que sus Ã¡tomos se ionizan por completo, liberando sus electrones y transformÃ¡ndose en una mezcla gaseosa pero altamente conductora de electricidad y sensible al magnetismo.'
   },
   {
     id: 'sable-laser',
-    title: '¿Podremos Construir un Sable Láser?',
+    title: 'Â¿Podremos Construir un Sable LÃ¡ser?',
     color: '#448AFF',
     btnImage: '/assets/starwars/infographic_plasmas/btn_sable_laser.png',
     image: '/assets/starwars/infographic_plasmas/hero_sable_laser.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_sable_laser.png',
-    bannerCaption: "La contención magnética permite confinar plasma a millones de grados dentro de campos electromagnéticos toroidales.",
+    bannerCaption: "La contenciÃ³n magnÃ©tica permite confinar plasma a millones de grados dentro de campos electromagnÃ©ticos toroidales.",
     content: [
-      "El arma más elegante e icónica de un Caballero Jedi es, sin duda alguna, el sable de luz. Durante décadas enteras, millones de niños y grandes científicos brillantes de todo el mundo han soñado con poder construir uno real. El problema físico y tecnológico con los verdaderos láseres en nuestro universo es que la luz simplemente no se detiene a un metro de distancia. Si enciendes un láser real apuntando hacia el cielo abierto, el rayo de luz viaja infinitamente hacia el espacio sideral.",
-      "Además, la luz normal o la luz de un láser no choca físicamente contra otra luz. Si cruzas los haces de luz brillante de dos linternas poderosas en la oscuridad, los rayos de luz simplemente pasan limpiamente uno a través del otro sin hacer ningún ruido de choque ni rebotar como lo hacen las famosas y épicas espadas en los grandiosos combates de las películas. Entonces, para que un sable de luz sea posible en la vida real, no podría estar hecho de simples y puros fotones de luz.",
-      "Aquí es exactamente donde entra la física avanzada de los plasmas. Los grandes científicos teóricos de la actualidad proponen y creen firmemente que, si algún día lográramos construir de verdad un sable de luz funcional, su brillante hoja letal no estaría compuesta de luz láser pura, sino de un fino, denso y letal chorro de plasma supercaliente, ardiendo intensamente a miles y miles de grados centígrados, capaz de derretir gruesas puertas de metal blindado en un abrir y cerrar de ojos.",
-      "Pero, ¿cómo demonios evitamos que ese plasma ardiente se expanda peligrosamente, te queme las manos y queme todo el lugar de inmediato? La increíble respuesta científica está en un concepto tecnológico llamado 'contención magnética'. Como aprendimos antes, el plasma reacciona fuertemente a los imanes. La empuñadura mecánica del sable de luz tendría que proyectar un poderosísimo campo magnético con forma de un largo tubo delgado e invisible.",
-      "Este campo de fuerza magnética actuaría como una especie de resistente botella invisible e inquebrantable, manteniendo el ardiente gas ionizado perfectamente confinado dentro de una hoja que mide exactamente un metro de largo. Cuando dos de estos hipotéticos e increíbles sables de plasma magnético chocaran fuertemente en un intenso duelo cuerpo a cuerpo, las fortísimas y densas fuerzas magnéticas se repelerían y rebotarían espectacularmente entre sí, creando ese característico y electrizante choque letal."
+      "El arma mÃ¡s elegante e icÃ³nica de un Caballero Jedi es, sin duda alguna, el sable de luz. Durante dÃ©cadas enteras, millones de niÃ±os y grandes cientÃ­ficos brillantes de todo el mundo han soÃ±ado con poder construir uno real. El problema fÃ­sico y tecnolÃ³gico con los verdaderos lÃ¡seres en nuestro universo es que la luz simplemente no se detiene a un metro de distancia. Si enciendes un lÃ¡ser real apuntando hacia el cielo abierto, el rayo de luz viaja infinitamente hacia el espacio sideral.",
+      "AdemÃ¡s, la luz normal o la luz de un lÃ¡ser no choca fÃ­sicamente contra otra luz. Si cruzas los haces de luz brillante de dos linternas poderosas en la oscuridad, los rayos de luz simplemente pasan limpiamente uno a travÃ©s del otro sin hacer ningÃºn ruido de choque ni rebotar como lo hacen las famosas y Ã©picas espadas en los grandiosos combates de las pelÃ­culas. Entonces, para que un sable de luz sea posible en la vida real, no podrÃ­a estar hecho de simples y puros fotones de luz.",
+      "AquÃ­ es exactamente donde entra la fÃ­sica avanzada de los plasmas. Los grandes cientÃ­ficos teÃ³ricos de la actualidad proponen y creen firmemente que, si algÃºn dÃ­a logrÃ¡ramos construir de verdad un sable de luz funcional, su brillante hoja letal no estarÃ­a compuesta de luz lÃ¡ser pura, sino de un fino, denso y letal chorro de plasma supercaliente, ardiendo intensamente a miles y miles de grados centÃ­grados, capaz de derretir gruesas puertas de metal blindado en un abrir y cerrar de ojos.",
+      "Pero, Â¿cÃ³mo demonios evitamos que ese plasma ardiente se expanda peligrosamente, te queme las manos y queme todo el lugar de inmediato? La increÃ­ble respuesta cientÃ­fica estÃ¡ en un concepto tecnolÃ³gico llamado 'contenciÃ³n magnÃ©tica'. Como aprendimos antes, el plasma reacciona fuertemente a los imanes. La empuÃ±adura mecÃ¡nica del sable de luz tendrÃ­a que proyectar un poderosÃ­simo campo magnÃ©tico con forma de un largo tubo delgado e invisible.",
+      "Este campo de fuerza magnÃ©tica actuarÃ­a como una especie de resistente botella invisible e inquebrantable, manteniendo el ardiente gas ionizado perfectamente confinado dentro de una hoja que mide exactamente un metro de largo. Cuando dos de estos hipotÃ©ticos e increÃ­bles sables de plasma magnÃ©tico chocaran fuertemente en un intenso duelo cuerpo a cuerpo, las fortÃ­simas y densas fuerzas magnÃ©ticas se repelerÃ­an y rebotarÃ­an espectacularmente entre sÃ­, creando ese caracterÃ­stico y electrizante choque letal."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el largometraje Episodio I: La Amenaza Fantasma, vemos al pacífico pero poderoso maestro Qui-Gon Jinn hundir profundamente su brillante sable de luz verde en las gigantescas y súper blindadas puertas de metal puro de la nave Federación de Comercio. El metal grueso a su alrededor inmediatamente comienza a brillar de color naranja brillante, a burbujear y a derretirse en forma líquida espectacular, una clara demostración de las increíbles temperaturas térmicas de un plasma confinado.' 
+        text: 'En el largometraje Episodio I: La Amenaza Fantasma, vemos al pacÃ­fico pero poderoso maestro Qui-Gon Jinn hundir profundamente su brillante sable de luz verde en las gigantescas y sÃºper blindadas puertas de metal puro de la nave FederaciÃ³n de Comercio. El metal grueso a su alrededor inmediatamente comienza a brillar de color naranja brillante, a burbujear y a derretirse en forma lÃ­quida espectacular, una clara demostraciÃ³n de las increÃ­bles temperaturas tÃ©rmicas de un plasma confinado.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'En la actualidad moderna, en muchas fábricas industriales gigantes alrededor de todo el planeta Tierra, ya utilizamos cortadoras de arco de plasma reales. Estas potentes máquinas industriales utilizan aire comprimido o gases especiales soplados a enormes e increíbles velocidades que, al pasar por un potente arco eléctrico, se transforman velozmente en un mortífero rayo de plasma a casi 30,000 grados Celsius.' 
+        text: 'En la actualidad moderna, en muchas fÃ¡bricas industriales gigantes alrededor de todo el planeta Tierra, ya utilizamos cortadoras de arco de plasma reales. Estas potentes mÃ¡quinas industriales utilizan aire comprimido o gases especiales soplados a enormes e increÃ­bles velocidades que, al pasar por un potente arco elÃ©ctrico, se transforman velozmente en un mortÃ­fero rayo de plasma a casi 30,000 grados Celsius.' 
       },
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'sparkles',
-        text: 'Un extraordinario grupo de intrépidos físicos en la respetada Universidad de Harvard ha logrado un tremendo hito científico al hacer que puros fotones de luz (que normalmente jamás tienen masa propia) logren interactuar, chocar y rebotar unos con otros, uniéndose y formando un tipo de "molécula de luz". A esta nueva forma exótica y muy extraña de materia luminosa la llamaron, en tono de broma seria, materia "sable de luz".'
+        text: 'Un extraordinario grupo de intrÃ©pidos fÃ­sicos en la respetada Universidad de Harvard ha logrado un tremendo hito cientÃ­fico al hacer que puros fotones de luz (que normalmente jamÃ¡s tienen masa propia) logren interactuar, chocar y rebotar unos con otros, uniÃ©ndose y formando un tipo de "molÃ©cula de luz". A esta nueva forma exÃ³tica y muy extraÃ±a de materia luminosa la llamaron, en tono de broma seria, materia "sable de luz".'
       }
     ],
-    fact: 'Físicamente, un sable láser real no podría estar compuesto únicamente por luz, ya que los fotones no pueden detenerse a una distancia predeterminada. El modelo teórico más acertado propone un poderoso cañón que emite plasma confinado herméticamente en una robusta botella electromagnética invisible.'
+    fact: 'FÃ­sicamente, un sable lÃ¡ser real no podrÃ­a estar compuesto Ãºnicamente por luz, ya que los fotones no pueden detenerse a una distancia predeterminada. El modelo teÃ³rico mÃ¡s acertado propone un poderoso caÃ±Ã³n que emite plasma confinado hermÃ©ticamente en una robusta botella electromagnÃ©tica invisible.'
   },
   {
     id: 'blasters-energia',
-    title: 'Blasters: Armas de Energía Dirigida',
+    title: 'Blasters: Armas de EnergÃ­a Dirigida',
     color: '#FF6E40',
     btnImage: '/assets/starwars/infographic_plasmas/btn_blasters_energia.png',
     image: '/assets/starwars/infographic_plasmas/hero_blasters_energia.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_blasters_energia.png',
-    bannerCaption: "Los aceleradores de partículas impulsan iones a velocidades cercanas a la de la luz usando campos electromagnéticos.",
+    bannerCaption: "Los aceleradores de partÃ­culas impulsan iones a velocidades cercanas a la de la luz usando campos electromagnÃ©ticos.",
     content: [
-      "En el universo galáctico, los soldados de asalto y los contrabandistas como Han Solo no utilizan armas que disparan balas de metal convencionales. En su lugar, utilizan blasters. Cuando se dispara un blaster, lo que sale volando por el aire no es un pedazo sólido de plomo, sino un proyectil brillante de color rojo, verde o azul compuesto de energía.",
-      "Aunque a menudo se les llama armas láser, si observas cuidadosamente las escenas de acción, notarás que los disparos del blaster viajan como rayos cortos. Se mueven lo suficientemente lento como para que el ojo humano pueda verlos cruzar la habitación. ¡Un Jedi entrenado en la Fuerza puede incluso esquivarlos!",
-      "La ciencia moderna nos indica que los blasters no pueden disparar láseres reales de luz pura. La luz viaja a 300,000 kilómetros por segundo y es invisible en el vacío. En realidad, los científicos sugieren que estas armas disparan grupos concentrados de plasma a alta temperatura, lo que explica su velocidad y visibilidad.",
-      "Un blaster funcionaría ionizando un gas almacenado en su cargador con una fuerte descarga electromagnética y luego disparándolo a través de un acelerador de partículas en miniatura. El problema físico en el mundo real es que estos cúmulos de plasma, sin un contenedor que los mantenga unidos, se disiparían y enfriarían rápidamente en el aire.",
-      "En la Tierra, ya se están desarrollando Armas de Energía Dirigida (DEW). Sistemas grandes como el láser ATHENA se prueban montados en vehículos pesados para interceptar pequeños drones a distancia. Sin embargo, la tecnología actual aún no puede miniaturizar y comprimir toda esa energía en una pistola portátil como las que vemos en el cine."
+      "En el universo galÃ¡ctico, los soldados de asalto y los contrabandistas como Han Solo no utilizan armas que disparan balas de metal convencionales. En su lugar, utilizan blasters. Cuando se dispara un blaster, lo que sale volando por el aire no es un pedazo sÃ³lido de plomo, sino un proyectil brillante de color rojo, verde o azul compuesto de energÃ­a.",
+      "Aunque a menudo se les llama armas lÃ¡ser, si observas cuidadosamente las escenas de acciÃ³n, notarÃ¡s que los disparos del blaster viajan como rayos cortos. Se mueven lo suficientemente lento como para que el ojo humano pueda verlos cruzar la habitaciÃ³n. Â¡Un Jedi entrenado en la Fuerza puede incluso esquivarlos!",
+      "La ciencia moderna nos indica que los blasters no pueden disparar lÃ¡seres reales de luz pura. La luz viaja a 300,000 kilÃ³metros por segundo y es invisible en el vacÃ­o. En realidad, los cientÃ­ficos sugieren que estas armas disparan grupos concentrados de plasma a alta temperatura, lo que explica su velocidad y visibilidad.",
+      "Un blaster funcionarÃ­a ionizando un gas almacenado en su cargador con una fuerte descarga electromagnÃ©tica y luego disparÃ¡ndolo a travÃ©s de un acelerador de partÃ­culas en miniatura. El problema fÃ­sico en el mundo real es que estos cÃºmulos de plasma, sin un contenedor que los mantenga unidos, se disiparÃ­an y enfriarÃ­an rÃ¡pidamente en el aire.",
+      "En la Tierra, ya se estÃ¡n desarrollando Armas de EnergÃ­a Dirigida (DEW). Sistemas grandes como el lÃ¡ser ATHENA se prueban montados en vehÃ­culos pesados para interceptar pequeÃ±os drones a distancia. Sin embargo, la tecnologÃ­a actual aÃºn no puede miniaturizar y comprimir toda esa energÃ­a en una pistola portÃ¡til como las que vemos en el cine."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el Episodio IV: Una Nueva Esperanza, durante las batallas en los pasillos, los disparos de blaster rebotan contra las paredes y dejan marcas de quemaduras y metal derretido. Esto evidencia que el daño es térmico, producido por calor extremo, y no un impacto mecánico tradicional.' 
+        text: 'En el Episodio IV: Una Nueva Esperanza, durante las batallas en los pasillos, los disparos de blaster rebotan contra las paredes y dejan marcas de quemaduras y metal derretido. Esto evidencia que el daÃ±o es tÃ©rmico, producido por calor extremo, y no un impacto mecÃ¡nico tradicional.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'La Marina de los Estados Unidos ya ha instalado el Sistema de Armas Láser (LaWS) en algunos buques. A diferencia del blaster cinematográfico de colores brillantes, el LaWS dispara un rayo infrarrojo completamente invisible al ojo humano y es silencioso.' 
+        text: 'La Marina de los Estados Unidos ya ha instalado el Sistema de Armas LÃ¡ser (LaWS) en algunos buques. A diferencia del blaster cinematogrÃ¡fico de colores brillantes, el LaWS dispara un rayo infrarrojo completamente invisible al ojo humano y es silencioso.' 
       },
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'sparkles',
-        text: 'Para crear el famoso sonido "pew-pew" de los blasters en la película de 1977, el diseñador de sonido Ben Burtt golpeó los cables tensores de una torre de radio con una llave metálica.'
+        text: 'Para crear el famoso sonido "pew-pew" de los blasters en la pelÃ­cula de 1977, el diseÃ±ador de sonido Ben Burtt golpeÃ³ los cables tensores de una torre de radio con una llave metÃ¡lica.'
       }
     ],
-    fact: 'Los blasters de la ciencia ficción se comportan como disparadores de grupos de partículas de plasma confinado, en lugar de verdaderos láseres, ya que viajan mucho más lento que la velocidad de la luz.'
+    fact: 'Los blasters de la ciencia ficciÃ³n se comportan como disparadores de grupos de partÃ­culas de plasma confinado, en lugar de verdaderos lÃ¡seres, ya que viajan mucho mÃ¡s lento que la velocidad de la luz.'
   },
   {
     id: 'escudos-deflectores',
-    title: 'Escudos Deflectores: ¿Son Posibles?',
+    title: 'Escudos Deflectores: Â¿Son Posibles?',
     color: '#40C4FF',
     btnImage: '/assets/starwars/infographic_plasmas/btn_escudos_deflectores.png',
     image: '/assets/starwars/infographic_plasmas/hero_escudos_deflectores.png',
     bannerImage: '/assets/starwars/infographic_plasmas/banner_escudos_deflectores.png',
-    bannerCaption: "Los escudos electromagnéticos deflectan partículas cargadas, similar a cómo la magnetosfera terrestre protege del viento solar.",
+    bannerCaption: "Los escudos electromagnÃ©ticos deflectan partÃ­culas cargadas, similar a cÃ³mo la magnetosfera terrestre protege del viento solar.",
     content: [
-      "Cuando el Halcón Milenario huye de destructores imperiales o atraviesa un campo de asteroides, los pilotos ordenan activar los escudos deflectores. En cuestión de segundos, una cúpula de energía invisible recubre y protege la nave.",
-      "Estos campos de fuerza tienen el poder de detener impactos directos de armas y el choque de rocas espaciales a alta velocidad. Los escudos absorben toda la energía cinética entrante, protegiendo el casco metálico de la nave sin sufrir abolladuras.",
-      "Crear un escudo invisible que actúe como un muro de ladrillos contra objetos sólidos es casi imposible con nuestra física actual. Sin embargo, los ingenieros aeronáuticos están investigando conceptos que se acercan bastante a esta tecnología de ciencia ficción.",
-      "La propuesta científica más realista se basa en la física de los plasmas y el electromagnetismo. Un sistema de protección real implicaría proyectar una capa de plasma extremadamente denso alrededor de un vehículo en fracciones de segundo.",
-      "Cuando una onda de choque explosiva se acerca, este muro de gas sobrecalentado e ionizado podría absorber y dispersar gran parte de la energía mediante interacción electromagnética, mitigando el impacto de forma similar a los escudos galácticos."
+      "Cuando el HalcÃ³n Milenario huye de destructores imperiales o atraviesa un campo de asteroides, los pilotos ordenan activar los escudos deflectores. En cuestiÃ³n de segundos, una cÃºpula de energÃ­a invisible recubre y protege la nave.",
+      "Estos campos de fuerza tienen el poder de detener impactos directos de armas y el choque de rocas espaciales a alta velocidad. Los escudos absorben toda la energÃ­a cinÃ©tica entrante, protegiendo el casco metÃ¡lico de la nave sin sufrir abolladuras.",
+      "Crear un escudo invisible que actÃºe como un muro de ladrillos contra objetos sÃ³lidos es casi imposible con nuestra fÃ­sica actual. Sin embargo, los ingenieros aeronÃ¡uticos estÃ¡n investigando conceptos que se acercan bastante a esta tecnologÃ­a de ciencia ficciÃ³n.",
+      "La propuesta cientÃ­fica mÃ¡s realista se basa en la fÃ­sica de los plasmas y el electromagnetismo. Un sistema de protecciÃ³n real implicarÃ­a proyectar una capa de plasma extremadamente denso alrededor de un vehÃ­culo en fracciones de segundo.",
+      "Cuando una onda de choque explosiva se acerca, este muro de gas sobrecalentado e ionizado podrÃ­a absorber y dispersar gran parte de la energÃ­a mediante interacciÃ³n electromagnÃ©tica, mitigando el impacto de forma similar a los escudos galÃ¡cticos."
     ],
     expandables: [
       { 
-        label: 'En la Película', 
+        label: 'En la PelÃ­cula', 
         icon: 'zap', 
-        text: 'En el Episodio VI: El Retorno del Jedi, la segunda Estrella de la Muerte está protegida por un campo deflector masivo. Este escudo es proyectado desde un generador instalado en la superficie de la luna de Endor.' 
+        text: 'En el Episodio VI: El Retorno del Jedi, la segunda Estrella de la Muerte estÃ¡ protegida por un campo deflector masivo. Este escudo es proyectado desde un generador instalado en la superficie de la luna de Endor.' 
       },
       { 
-        label: 'Dato Científico', 
+        label: 'Dato CientÃ­fico', 
         icon: 'atom', 
-        text: 'En 2015, la compañía aeroespacial Boeing patentó un "Método y sistema para la atenuación de ondas de choque mediante un arco electromagnético". Es un paso teórico hacia los escudos de fuerza reales.' 
+        text: 'En 2015, la compaÃ±Ã­a aeroespacial Boeing patentÃ³ un "MÃ©todo y sistema para la atenuaciÃ³n de ondas de choque mediante un arco electromagnÃ©tico". Es un paso teÃ³rico hacia los escudos de fuerza reales.' 
       },
       {
-        label: '¿Sabías que...?',
+        label: 'Â¿SabÃ­as que...?',
         icon: 'sparkles',
-        text: 'Existen "ventanas de plasma" en laboratorios de física de partículas. Utilizan un campo magnético para contener una fina capa de plasma que separa el vacío del aire normal sin necesidad de usar un cristal sólido.'
+        text: 'Existen "ventanas de plasma" en laboratorios de fÃ­sica de partÃ­culas. Utilizan un campo magnÃ©tico para contener una fina capa de plasma que separa el vacÃ­o del aire normal sin necesidad de usar un cristal sÃ³lido.'
       }
     ],
-    fact: 'Los ingenieros investigan generadores de campos electromagnéticos que usan plasma ionizado para interceptar y dispersar ondas expansivas antes de que alcancen a los vehículos.'
+    fact: 'Los ingenieros investigan generadores de campos electromagnÃ©ticos que usan plasma ionizado para interceptar y dispersar ondas expansivas antes de que alcancen a los vehÃ­culos.'
   },
   {
     id: "fusion-nuclear",
-    title: "Fusión Nuclear: La Energía de las Estrellas",
+    title: "FusiÃ³n Nuclear: La EnergÃ­a de las Estrellas",
     color: "#FF1744",
     btnImage: "/assets/starwars/infographic_plasmas/btn_fusion_nuclear.png",
     image: "/assets/starwars/infographic_plasmas/hero_fusion_nuclear.png",
     bannerImage: "/assets/starwars/infographic_plasmas/banner_fusion_nuclear.png",
-    bannerCaption: "Los reactores tokamak confinan plasma a 150 millones de grados en forma toroidal para lograr la fusión nuclear controlada.",
+    bannerCaption: "Los reactores tokamak confinan plasma a 150 millones de grados en forma toroidal para lograr la fusiÃ³n nuclear controlada.",
     content: [
-      "Para que el temible Imperio Galáctico pueda hacer saltar a sus pesados Destructores Estelares a través del hiperespacio, se requiere una cantidad de energía brutal. Las fuentes de energía tradicionales, como el gas o los paneles solares, jamás serían suficientes para mover una fortaleza del tamaño de una ciudad entera. La respuesta a este inmenso desafío tecnológico se encuentra en dominar un proceso monumental llamado fusión nuclear, que es exactamente el mismo motor natural que enciende a nuestro brillante Sol y a todas las demás estrellas luminosas del firmamento nocturno.",
-      "Imagina que tienes piezas de Lego esparcidas por toda tu habitación y decides unirlas con mucha fuerza para crear una figura nueva. En el corazón candente de nuestro Sol, a una temperatura sofocante de quince millones de grados Celsius y bajo una presión aplastante de doscientas cincuenta mil millones de atmósferas, la gravedad junta violentamente átomos de hidrógeno. Específicamente, une dos tipos especiales de hidrógeno llamados deuterio y tritio. Al fusionarse, estos se transforman en helio y liberan un destello cegador de energía pura durante el proceso.",
-      "La meta científica más ambiciosa de nuestra era moderna es construir un \"sol embotellado\" aquí mismo en la Tierra. En Cadarache, Francia, treinta y cinco países están colaborando para construir el Reactor Termonuclear Experimental Internacional, conocido mundialmente como ITER. Este gigantesco proyecto de veintidós mil millones de dólares consiste en una máquina colosal de veintitrés mil toneladas. Su núcleo es un inmenso dispositivo llamado Tokamak, que tiene la forma exacta de una rosquilla de metal gigante diseñada para contener el fuego estelar.",
-      "Dentro de este enorme Tokamak francés, el gas se calienta tanto que se convierte en plasma hirviente. Como ningún material conocido en el universo puede soportar tocar algo tan ridículamente caliente sin derretirse al instante, los ingenieros utilizan una trampa invisible. Emplean imanes superconductores extremadamente potentes, enfriados a temperaturas glaciales, para crear un campo magnético en forma de anillo. Este campo invisible sostiene el plasma flotando en el vacío, evitando que toque las paredes metálicas de la cámara principal.",
-      "El cinco de diciembre de dos mil veintidós, los científicos del National Ignition Facility en el Laboratorio Nacional Lawrence Livermore lograron un hito histórico espectacular. Usando rayos de luz ultraconcentrada, consiguieron por primera vez la \"ignición\" de la fusión. Introdujeron dos punto cero cinco megajulios de energía y lograron que la pequeña cápsula devolviera tres punto quince megajulios. ¡Produjeron más energía de la que gastaron! Este avance nos acerca al sueño de tener electricidad completamente limpia e inagotable para iluminar todo el mundo."
+      "Para que el temible Imperio GalÃ¡ctico pueda hacer saltar a sus pesados Destructores Estelares a travÃ©s del hiperespacio, se requiere una cantidad de energÃ­a brutal. Las fuentes de energÃ­a tradicionales, como el gas o los paneles solares, jamÃ¡s serÃ­an suficientes para mover una fortaleza del tamaÃ±o de una ciudad entera. La respuesta a este inmenso desafÃ­o tecnolÃ³gico se encuentra en dominar un proceso monumental llamado fusiÃ³n nuclear, que es exactamente el mismo motor natural que enciende a nuestro brillante Sol y a todas las demÃ¡s estrellas luminosas del firmamento nocturno.",
+      "Imagina que tienes piezas de Lego esparcidas por toda tu habitaciÃ³n y decides unirlas con mucha fuerza para crear una figura nueva. En el corazÃ³n candente de nuestro Sol, a una temperatura sofocante de quince millones de grados Celsius y bajo una presiÃ³n aplastante de doscientas cincuenta mil millones de atmÃ³sferas, la gravedad junta violentamente Ã¡tomos de hidrÃ³geno. EspecÃ­ficamente, une dos tipos especiales de hidrÃ³geno llamados deuterio y tritio. Al fusionarse, estos se transforman en helio y liberan un destello cegador de energÃ­a pura durante el proceso.",
+      "La meta cientÃ­fica mÃ¡s ambiciosa de nuestra era moderna es construir un \"sol embotellado\" aquÃ­ mismo en la Tierra. En Cadarache, Francia, treinta y cinco paÃ­ses estÃ¡n colaborando para construir el Reactor Termonuclear Experimental Internacional, conocido mundialmente como ITER. Este gigantesco proyecto de veintidÃ³s mil millones de dÃ³lares consiste en una mÃ¡quina colosal de veintitrÃ©s mil toneladas. Su nÃºcleo es un inmenso dispositivo llamado Tokamak, que tiene la forma exacta de una rosquilla de metal gigante diseÃ±ada para contener el fuego estelar.",
+      "Dentro de este enorme Tokamak francÃ©s, el gas se calienta tanto que se convierte en plasma hirviente. Como ningÃºn material conocido en el universo puede soportar tocar algo tan ridÃ­culamente caliente sin derretirse al instante, los ingenieros utilizan una trampa invisible. Emplean imanes superconductores extremadamente potentes, enfriados a temperaturas glaciales, para crear un campo magnÃ©tico en forma de anillo. Este campo invisible sostiene el plasma flotando en el vacÃ­o, evitando que toque las paredes metÃ¡licas de la cÃ¡mara principal.",
+      "El cinco de diciembre de dos mil veintidÃ³s, los cientÃ­ficos del National Ignition Facility en el Laboratorio Nacional Lawrence Livermore lograron un hito histÃ³rico espectacular. Usando rayos de luz ultraconcentrada, consiguieron por primera vez la \"igniciÃ³n\" de la fusiÃ³n. Introdujeron dos punto cero cinco megajulios de energÃ­a y lograron que la pequeÃ±a cÃ¡psula devolviera tres punto quince megajulios. Â¡Produjeron mÃ¡s energÃ­a de la que gastaron! Este avance nos acerca al sueÃ±o de tener electricidad completamente limpia e inagotable para iluminar todo el mundo."
     ],
     expandables: [
       { 
-        label: "En la Película", 
+        label: "En la PelÃ­cula", 
         icon: "zap", 
-        text: "En el complejo universo de Star Wars, los majestuosos e imponentes Destructores Estelares y las estaciones de batalla espaciales no funcionan con combustibles fósiles, sino que obtienen su formidable poder destructivo de algo llamado reactores de hipermetria. Esta tecnología de ciencia ficción se basa conceptualmente en los principios reales de la fusión nuclear, utilizando inmensas cámaras de contención magnética para exprimir el plasma hasta que libera la energía equivalente a la de una pequeña estrella atrapada en la sala de máquinas." 
+        text: "En el complejo universo de Star Wars, los majestuosos e imponentes Destructores Estelares y las estaciones de batalla espaciales no funcionan con combustibles fÃ³siles, sino que obtienen su formidable poder destructivo de algo llamado reactores de hipermetria. Esta tecnologÃ­a de ciencia ficciÃ³n se basa conceptualmente en los principios reales de la fusiÃ³n nuclear, utilizando inmensas cÃ¡maras de contenciÃ³n magnÃ©tica para exprimir el plasma hasta que libera la energÃ­a equivalente a la de una pequeÃ±a estrella atrapada en la sala de mÃ¡quinas." 
       },
       { 
-        label: "Dato Científico", 
+        label: "Dato CientÃ­fico", 
         icon: "atom", 
-        text: "Para que la fusión nuclear sea verdaderamente útil en nuestro planeta, necesitamos mantener el plasma contenido durante mucho tiempo. El colosal reactor ITER, actualmente en construcción y pesando lo mismo que tres torres Eiffel juntas, está diseñado específicamente para lograr producir quinientos megavatios de potencia de salida a partir de tan solo cincuenta megavatios de energía de entrada. Esto demostrará al mundo que la fusión a gran escala es tecnológicamente viable y sentará las bases para futuras centrales eléctricas comerciales que iluminarán nuestras ciudades." 
+        text: "Para que la fusiÃ³n nuclear sea verdaderamente Ãºtil en nuestro planeta, necesitamos mantener el plasma contenido durante mucho tiempo. El colosal reactor ITER, actualmente en construcciÃ³n y pesando lo mismo que tres torres Eiffel juntas, estÃ¡ diseÃ±ado especÃ­ficamente para lograr producir quinientos megavatios de potencia de salida a partir de tan solo cincuenta megavatios de energÃ­a de entrada. Esto demostrarÃ¡ al mundo que la fusiÃ³n a gran escala es tecnolÃ³gicamente viable y sentarÃ¡ las bases para futuras centrales elÃ©ctricas comerciales que iluminarÃ¡n nuestras ciudades." 
       },
       {
-        label: "¿Sabías que...?",
+        label: "Â¿SabÃ­as que...?",
         icon: "sparkles",
-        text: "A diferencia de las peligrosas plantas nucleares tradicionales de fisión que dividen átomos pesados como el uranio y generan residuos tóxicos durante milenios, un reactor de fusión es inherentemente seguro. Si algo llega a fallar en la máquina o el campo magnético pierde estabilidad, el plasma simplemente se enfría y la reacción se apaga de inmediato en menos de un segundo, sin riesgo alguno de explosiones desastrosas o fugas radiactivas. Además, el combustible principal se puede extraer fácilmente del agua de mar común, garantizando reservas ilimitadas."
+        text: "A diferencia de las peligrosas plantas nucleares tradicionales de fisiÃ³n que dividen Ã¡tomos pesados como el uranio y generan residuos tÃ³xicos durante milenios, un reactor de fusiÃ³n es inherentemente seguro. Si algo llega a fallar en la mÃ¡quina o el campo magnÃ©tico pierde estabilidad, el plasma simplemente se enfrÃ­a y la reacciÃ³n se apaga de inmediato en menos de un segundo, sin riesgo alguno de explosiones desastrosas o fugas radiactivas. AdemÃ¡s, el combustible principal se puede extraer fÃ¡cilmente del agua de mar comÃºn, garantizando reservas ilimitadas."
       }
     ],
-    fact: "El deuterio, uno de los ingredientes fundamentales para encender la fusión nuclear, es un tipo pesado de hidrógeno que se encuentra de forma natural en nuestros vastos océanos. Hay suficiente deuterio mezclado en el agua de mar de nuestro planeta Tierra para satisfacer por completo y sin interrupciones todas las inmensas necesidades energéticas de la humanidad moderna durante miles de millones de años, ofreciendo una esperanza brillante para nuestro futuro."
+    fact: "El deuterio, uno de los ingredientes fundamentales para encender la fusiÃ³n nuclear, es un tipo pesado de hidrÃ³geno que se encuentra de forma natural en nuestros vastos ocÃ©anos. Hay suficiente deuterio mezclado en el agua de mar de nuestro planeta Tierra para satisfacer por completo y sin interrupciones todas las inmensas necesidades energÃ©ticas de la humanidad moderna durante miles de millones de aÃ±os, ofreciendo una esperanza brillante para nuestro futuro."
   },
   {
     id: "rayos-ionicos",
-    title: "Cañones de Iones y Propulsión",
+    title: "CaÃ±ones de Iones y PropulsiÃ³n",
     color: "#2979FF",
     btnImage: "/assets/starwars/infographic_plasmas/btn_rayos_ionicos.png",
     image: "/assets/starwars/infographic_plasmas/hero_rayos_ionicos.png",
     bannerImage: "/assets/starwars/infographic_plasmas/banner_rayos_ionicos.png",
-    bannerCaption: "Los motores iónicos aceleran gas xenón ionizado para generar empuje continuo, alcanzando velocidades de 90 km/s.",
+    bannerCaption: "Los motores iÃ³nicos aceleran gas xenÃ³n ionizado para generar empuje continuo, alcanzando velocidades de 90 km/s.",
     content: [
-      "Cuando pensamos en batallas espaciales, normalmente imaginamos explosiones deslumbrantes que destruyen naves enemigas con fuego brillante y chispas voladoras. Sin embargo, en el helado y remoto planeta Hoth, los valientes rebeldes utilizaron un tipo diferente de armamento: el famoso cañón de iones defensivo. En lugar de perforar el blindaje metálico de los temibles Destructores Estelares, este enorme dispositivo azul disparaba relámpagos concentrados diseñados para sobrecargar los delicados circuitos electrónicos y dejar las máquinas totalmente apagadas y flotando a la deriva.",
-      "En el mundo real de la ciencia contemporánea, los iones no se usan típicamente para crear cañones destructivos, sino para impulsar pacíficamente nuestras naves robóticas a través del silencioso vacío del sistema solar. La propulsión iónica funciona despojando a los átomos de un gas noble, como el xenón, de algunos de sus electrones. Al perder electrones, los átomos adquieren una carga eléctrica positiva y se convierten en iones puros. Luego, la nave espacial utiliza rejillas electrificadas muy potentes para repeler estos iones y dispararlos velozmente hacia atrás.",
-      "Imagina que estás sentado en una patineta y decides lanzar pesadas pelotas de baloncesto hacia atrás con toda tu fuerza; la ley de la física hará que tu cuerpo ruede lentamente hacia adelante. De manera muy similar, al expulsar el gas ionizado a velocidades vertiginosas de hasta ciento cuarenta mil kilómetros por hora, el motor espacial genera un empuje suave pero increíblemente constante. Aunque la fuerza inicial es tan leve como el peso de una simple hoja de papel sobre la palma de tu mano, en la ausencia de fricción del espacio, este empuje continuo te hará alcanzar velocidades récord a lo largo de varios meses.",
-      "La eficiencia asombrosa de estos sistemas modernos es lo que realmente fascina a los ingenieros espaciales. En la ingeniería de cohetes utilizamos un término llamado impulso específico para medir cuánto rendimiento obtenemos por cada gota de combustible. Mientras que los ruidosos cohetes químicos tradicionales alcanzan un impulso específico de trescientos a cuatrocientos cincuenta segundos, quemando toneladas de líquido en minutos, un silencioso motor iónico moderno puede lograr entre tres mil y doce mil segundos, permitiendo misiones interplanetarias muchísimo más largas y económicas.",
-      "Un ejemplo estelar de esta tecnología fue la legendaria misión Dawn de la NASA, que viajó valientemente por el cosmos desde el año dos mil siete hasta el dos mil dieciocho. Utilizando sus tres innovadores motores iónicos, esta pequeña sonda logró visitar, orbitar y estudiar detalladamente tanto al inmenso asteroide Vesta como al enigmático planeta enano Ceres. Además de viajar por el espacio, los humanos aceleramos iones terrestres en gigantescas máquinas subterráneas, como el Gran Colisionador de Hadrones del CERN, donde los protones alcanzan el noventa y nueve punto noventa y nueve por ciento de la increíble velocidad de la luz."
+      "Cuando pensamos en batallas espaciales, normalmente imaginamos explosiones deslumbrantes que destruyen naves enemigas con fuego brillante y chispas voladoras. Sin embargo, en el helado y remoto planeta Hoth, los valientes rebeldes utilizaron un tipo diferente de armamento: el famoso caÃ±Ã³n de iones defensivo. En lugar de perforar el blindaje metÃ¡lico de los temibles Destructores Estelares, este enorme dispositivo azul disparaba relÃ¡mpagos concentrados diseÃ±ados para sobrecargar los delicados circuitos electrÃ³nicos y dejar las mÃ¡quinas totalmente apagadas y flotando a la deriva.",
+      "En el mundo real de la ciencia contemporÃ¡nea, los iones no se usan tÃ­picamente para crear caÃ±ones destructivos, sino para impulsar pacÃ­ficamente nuestras naves robÃ³ticas a travÃ©s del silencioso vacÃ­o del sistema solar. La propulsiÃ³n iÃ³nica funciona despojando a los Ã¡tomos de un gas noble, como el xenÃ³n, de algunos de sus electrones. Al perder electrones, los Ã¡tomos adquieren una carga elÃ©ctrica positiva y se convierten en iones puros. Luego, la nave espacial utiliza rejillas electrificadas muy potentes para repeler estos iones y dispararlos velozmente hacia atrÃ¡s.",
+      "Imagina que estÃ¡s sentado en una patineta y decides lanzar pesadas pelotas de baloncesto hacia atrÃ¡s con toda tu fuerza; la ley de la fÃ­sica harÃ¡ que tu cuerpo ruede lentamente hacia adelante. De manera muy similar, al expulsar el gas ionizado a velocidades vertiginosas de hasta ciento cuarenta mil kilÃ³metros por hora, el motor espacial genera un empuje suave pero increÃ­blemente constante. Aunque la fuerza inicial es tan leve como el peso de una simple hoja de papel sobre la palma de tu mano, en la ausencia de fricciÃ³n del espacio, este empuje continuo te harÃ¡ alcanzar velocidades rÃ©cord a lo largo de varios meses.",
+      "La eficiencia asombrosa de estos sistemas modernos es lo que realmente fascina a los ingenieros espaciales. En la ingenierÃ­a de cohetes utilizamos un tÃ©rmino llamado impulso especÃ­fico para medir cuÃ¡nto rendimiento obtenemos por cada gota de combustible. Mientras que los ruidosos cohetes quÃ­micos tradicionales alcanzan un impulso especÃ­fico de trescientos a cuatrocientos cincuenta segundos, quemando toneladas de lÃ­quido en minutos, un silencioso motor iÃ³nico moderno puede lograr entre tres mil y doce mil segundos, permitiendo misiones interplanetarias muchÃ­simo mÃ¡s largas y econÃ³micas.",
+      "Un ejemplo estelar de esta tecnologÃ­a fue la legendaria misiÃ³n Dawn de la NASA, que viajÃ³ valientemente por el cosmos desde el aÃ±o dos mil siete hasta el dos mil dieciocho. Utilizando sus tres innovadores motores iÃ³nicos, esta pequeÃ±a sonda logrÃ³ visitar, orbitar y estudiar detalladamente tanto al inmenso asteroide Vesta como al enigmÃ¡tico planeta enano Ceres. AdemÃ¡s de viajar por el espacio, los humanos aceleramos iones terrestres en gigantescas mÃ¡quinas subterrÃ¡neas, como el Gran Colisionador de Hadrones del CERN, donde los protones alcanzan el noventa y nueve punto noventa y nueve por ciento de la increÃ­ble velocidad de la luz."
     ],
     expandables: [
       { 
-        label: "En la Película", 
+        label: "En la PelÃ­cula", 
         icon: "zap", 
-        text: "En el comienzo de la inolvidable cinta El Imperio Contraataca, vemos a las fuerzas de la Alianza Rebelde disparando ráfagas esféricas de plasma azul verdoso desde la fría superficie del planeta Hoth. Este disparo no pretendía destrozar al enemigo, sino que era una inteligente medida táctica. Al golpear la estructura del Destructor Estelar Imperial que bloqueaba su ruta de escape, la enorme oleada de partículas cargadas inutilizó temporalmente todos sus sistemas de navegación, computadoras y pantallas tácticas, permitiendo a los transportes escapar a salvo." 
+        text: "En el comienzo de la inolvidable cinta El Imperio Contraataca, vemos a las fuerzas de la Alianza Rebelde disparando rÃ¡fagas esfÃ©ricas de plasma azul verdoso desde la frÃ­a superficie del planeta Hoth. Este disparo no pretendÃ­a destrozar al enemigo, sino que era una inteligente medida tÃ¡ctica. Al golpear la estructura del Destructor Estelar Imperial que bloqueaba su ruta de escape, la enorme oleada de partÃ­culas cargadas inutilizÃ³ temporalmente todos sus sistemas de navegaciÃ³n, computadoras y pantallas tÃ¡cticas, permitiendo a los transportes escapar a salvo." 
       },
       { 
-        label: "Dato Científico", 
+        label: "Dato CientÃ­fico", 
         icon: "atom", 
-        text: "Aunque los cañones de iones reales no existen como armas antiaéreas, sí que construimos aceleradores de partículas extremadamente potentes para desentrañar los secretos del universo temprano. En la frontera entre Francia y Suiza, bajo tierra, se encuentra el Gran Colisionador de Hadrones. Esta colosal pista circular de veintisiete kilómetros de circunferencia emplea campos magnéticos de altísima intensidad para acelerar haces de protones a energías incomprensibles antes de estrellarlos entre sí, recreando condiciones que existieron apenas milisegundos después del Big Bang." 
+        text: "Aunque los caÃ±ones de iones reales no existen como armas antiaÃ©reas, sÃ­ que construimos aceleradores de partÃ­culas extremadamente potentes para desentraÃ±ar los secretos del universo temprano. En la frontera entre Francia y Suiza, bajo tierra, se encuentra el Gran Colisionador de Hadrones. Esta colosal pista circular de veintisiete kilÃ³metros de circunferencia emplea campos magnÃ©ticos de altÃ­sima intensidad para acelerar haces de protones a energÃ­as incomprensibles antes de estrellarlos entre sÃ­, recreando condiciones que existieron apenas milisegundos despuÃ©s del Big Bang." 
       },
       {
-        label: "¿Sabías que...?",
+        label: "Â¿SabÃ­as que...?",
         icon: "sparkles",
-        text: "El récord mundial continuo de funcionamiento de un motor espacial en la historia de la humanidad lo ostenta un avanzado propulsor de iones estadounidense llamado NEXT-C. Durante rigurosas pruebas de resistencia en un laboratorio especializado en nuestro planeta Tierra, este dispositivo electromagnético funcionó sin detenerse durante más de cincuenta mil horas seguidas, lo que equivale a casi seis largos años de encendido ininterrumpido. Este tipo de extrema durabilidad es exactamente lo que los humanos necesitamos para futuras misiones ambiciosas hacia el lejano planeta Marte."
+        text: "El rÃ©cord mundial continuo de funcionamiento de un motor espacial en la historia de la humanidad lo ostenta un avanzado propulsor de iones estadounidense llamado NEXT-C. Durante rigurosas pruebas de resistencia en un laboratorio especializado en nuestro planeta Tierra, este dispositivo electromagnÃ©tico funcionÃ³ sin detenerse durante mÃ¡s de cincuenta mil horas seguidas, lo que equivale a casi seis largos aÃ±os de encendido ininterrumpido. Este tipo de extrema durabilidad es exactamente lo que los humanos necesitamos para futuras misiones ambiciosas hacia el lejano planeta Marte."
       }
     ],
-    fact: "El brillante gas de xenón es el principal ingrediente preferido por los científicos para alimentar motores iónicos espaciales debido a que sus átomos son particularmente pesados en comparación con otros gases nobles. Al disparar partículas más pesadas por la parte trasera del motor, la nave obtiene un empujón mucho más fuerte hacia adelante por cada unidad de energía eléctrica consumida, maximizando el impulso específico."
+    fact: "El brillante gas de xenÃ³n es el principal ingrediente preferido por los cientÃ­ficos para alimentar motores iÃ³nicos espaciales debido a que sus Ã¡tomos son particularmente pesados en comparaciÃ³n con otros gases nobles. Al disparar partÃ­culas mÃ¡s pesadas por la parte trasera del motor, la nave obtiene un empujÃ³n mucho mÃ¡s fuerte hacia adelante por cada unidad de energÃ­a elÃ©ctrica consumida, maximizando el impulso especÃ­fico."
   },
   {
     id: "estrella-muerte",
-    title: "La Estrella de la Muerte: Superláseres",
+    title: "La Estrella de la Muerte: SuperlÃ¡seres",
     color: "#FF9100",
     btnImage: "/assets/starwars/infographic_plasmas/btn_estrella_muerte.png",
     image: "/assets/starwars/infographic_plasmas/hero_estrella_muerte.png",
     bannerImage: "/assets/starwars/infographic_plasmas/banner_estrella_muerte.png",
-    bannerCaption: "Los láseres de alta potencia concentran fotones coherentes mediante cristales amplificadores para transferir energía a largas distancias.",
+    bannerCaption: "Los lÃ¡seres de alta potencia concentran fotones coherentes mediante cristales amplificadores para transferir energÃ­a a largas distancias.",
     content: [
-      "La temible estación espacial esférica conocida como la Estrella de la Muerte se convirtió en el arma de terror definitiva del Imperio Galáctico. Su gigantesco cañón cóncavo podía disparar un haz de energía tan desmesuradamente poderoso que era capaz de aniquilar un planeta entero con un solo impacto, como tristemente lo demostró al pulverizar el pacífico mundo de Alderaan. Esta asombrosa demostración de fuerza letal en la gran pantalla ha inspirado a generaciones de ingenieros ópticos a estudiar meticulosamente hasta dónde pueden llegar realmente las capacidades técnicas de la luz pura.",
-      "Para comprender estos formidables rayos destructores, primero debemos explorar la verdadera ciencia que se esconde detrás del fascinante acrónimo LASER, que en inglés significa \"Amplificación de Luz por Emisión Estimulada de Radiación\". Fue inventado en el año mil novecientos sesenta por el brillante físico estadounidense Theodore Maiman. A diferencia de las bombillas comunes que emiten luz difusa en todas las direcciones de la habitación, un láser genera ondas de luz idénticas y perfectamente alineadas, permitiendo enfocar toda esa energía concentrada en un punto minúsculo a gran distancia sin perder potencia.",
-      "Hoy en día, las instalaciones de investigación láser más avanzadas del mundo pueden desatar fuerzas verdaderamente descomunales. El Laboratorio Nacional Lawrence Livermore en los Estados Unidos alberga una gigantesca instalación conocida como NIF, que maravilla a los expertos mundiales al disparar exactamente ciento noventa y dos láseres independientes simultáneamente. Todos estos haces se combinan magistralmente en una esfera dorada diminuta, concentrando una brutal energía lumínica sobre un objetivo que tiene el tamaño exacto de la pequeña goma de borrar en la punta de tu lápiz.",
-      "La potencia abrumadora de estas máquinas es difícil de asimilar. Cuando el inmenso sistema del NIF se dispara a máxima capacidad, entrega aproximadamente dos punto cero cinco megajulios de energía concentrada en apenas unas pocas milmillonésimas de segundo. Durante ese pestañeo imperceptible, el complejo científico genera más poder momentáneo que toda la red eléctrica completa de los Estados Unidos. Esta tremenda hazaña técnica se realiza para estudiar el candente corazón de las estrellas en miniatura y probar intrincadas teorías sobre materiales bajo presiones astronómicas extremas.",
-      "En el campo militar moderno, los láseres también están dando sus primeros y cautelosos pasos reales hacia la batalla. No destruyen planetas, pero sistemas defensivos contemporáneos como el cañón HELIOS de sesenta kilovatios de la Armada estadounidense, o el preciso interceptor táctico Dragonfire del Reino Unido, ya son una clara realidad técnica. Estas armas de precisión utilizan luz invisible e intensa que calienta silenciosamente la delgada cubierta de drones o pequeños botes a gran distancia hasta fundir sus metales, deteniendo las rápidas amenazas sin necesitar explosivos y sin hacer un ruido ensordecedor."
+      "La temible estaciÃ³n espacial esfÃ©rica conocida como la Estrella de la Muerte se convirtiÃ³ en el arma de terror definitiva del Imperio GalÃ¡ctico. Su gigantesco caÃ±Ã³n cÃ³ncavo podÃ­a disparar un haz de energÃ­a tan desmesuradamente poderoso que era capaz de aniquilar un planeta entero con un solo impacto, como tristemente lo demostrÃ³ al pulverizar el pacÃ­fico mundo de Alderaan. Esta asombrosa demostraciÃ³n de fuerza letal en la gran pantalla ha inspirado a generaciones de ingenieros Ã³pticos a estudiar meticulosamente hasta dÃ³nde pueden llegar realmente las capacidades tÃ©cnicas de la luz pura.",
+      "Para comprender estos formidables rayos destructores, primero debemos explorar la verdadera ciencia que se esconde detrÃ¡s del fascinante acrÃ³nimo LASER, que en inglÃ©s significa \"AmplificaciÃ³n de Luz por EmisiÃ³n Estimulada de RadiaciÃ³n\". Fue inventado en el aÃ±o mil novecientos sesenta por el brillante fÃ­sico estadounidense Theodore Maiman. A diferencia de las bombillas comunes que emiten luz difusa en todas las direcciones de la habitaciÃ³n, un lÃ¡ser genera ondas de luz idÃ©nticas y perfectamente alineadas, permitiendo enfocar toda esa energÃ­a concentrada en un punto minÃºsculo a gran distancia sin perder potencia.",
+      "Hoy en dÃ­a, las instalaciones de investigaciÃ³n lÃ¡ser mÃ¡s avanzadas del mundo pueden desatar fuerzas verdaderamente descomunales. El Laboratorio Nacional Lawrence Livermore en los Estados Unidos alberga una gigantesca instalaciÃ³n conocida como NIF, que maravilla a los expertos mundiales al disparar exactamente ciento noventa y dos lÃ¡seres independientes simultÃ¡neamente. Todos estos haces se combinan magistralmente en una esfera dorada diminuta, concentrando una brutal energÃ­a lumÃ­nica sobre un objetivo que tiene el tamaÃ±o exacto de la pequeÃ±a goma de borrar en la punta de tu lÃ¡piz.",
+      "La potencia abrumadora de estas mÃ¡quinas es difÃ­cil de asimilar. Cuando el inmenso sistema del NIF se dispara a mÃ¡xima capacidad, entrega aproximadamente dos punto cero cinco megajulios de energÃ­a concentrada en apenas unas pocas milmillonÃ©simas de segundo. Durante ese pestaÃ±eo imperceptible, el complejo cientÃ­fico genera mÃ¡s poder momentÃ¡neo que toda la red elÃ©ctrica completa de los Estados Unidos. Esta tremenda hazaÃ±a tÃ©cnica se realiza para estudiar el candente corazÃ³n de las estrellas en miniatura y probar intrincadas teorÃ­as sobre materiales bajo presiones astronÃ³micas extremas.",
+      "En el campo militar moderno, los lÃ¡seres tambiÃ©n estÃ¡n dando sus primeros y cautelosos pasos reales hacia la batalla. No destruyen planetas, pero sistemas defensivos contemporÃ¡neos como el caÃ±Ã³n HELIOS de sesenta kilovatios de la Armada estadounidense, o el preciso interceptor tÃ¡ctico Dragonfire del Reino Unido, ya son una clara realidad tÃ©cnica. Estas armas de precisiÃ³n utilizan luz invisible e intensa que calienta silenciosamente la delgada cubierta de drones o pequeÃ±os botes a gran distancia hasta fundir sus metales, deteniendo las rÃ¡pidas amenazas sin necesitar explosivos y sin hacer un ruido ensordecedor."
     ],
     expandables: [
       { 
-        label: "En la Película", 
+        label: "En la PelÃ­cula", 
         icon: "zap", 
-        text: "En el icónico Episodio Cuatro, los espectadores observan fascinados cómo ocho finos y vibrantes rayos luminosos verdes se encuentran en el centro geométrico del inmenso plato reflector de la estación espacial. Allí, misteriosamente se fusionan en un único superláser colosal y destructivo. La mitología nos relata que esta temible hazaña óptica se logra canalizando inmensas corrientes eléctricas a través de enormes y raros cristales Kyber, los mismos minerales místicos sintonizados con la Fuerza que los nobles Caballeros Jedi utilizan cuidadosamente para construir sus emblemáticos sables de luz." 
+        text: "En el icÃ³nico Episodio Cuatro, los espectadores observan fascinados cÃ³mo ocho finos y vibrantes rayos luminosos verdes se encuentran en el centro geomÃ©trico del inmenso plato reflector de la estaciÃ³n espacial. AllÃ­, misteriosamente se fusionan en un Ãºnico superlÃ¡ser colosal y destructivo. La mitologÃ­a nos relata que esta temible hazaÃ±a Ã³ptica se logra canalizando inmensas corrientes elÃ©ctricas a travÃ©s de enormes y raros cristales Kyber, los mismos minerales mÃ­sticos sintonizados con la Fuerza que los nobles Caballeros Jedi utilizan cuidadosamente para construir sus emblemÃ¡ticos sables de luz." 
       },
       { 
-        label: "Dato Científico", 
+        label: "Dato CientÃ­fico", 
         icon: "atom", 
-        text: "Curiosamente, la ficción cinematográfica anticipó una brillante técnica de la física óptica real conocida hoy como la combinación coherente de haces. Para construir sistemas extremadamente poderosos y evitar que los espejos frágiles se derritan por el calor acumulado, los ingenieros modernos dividen el láser en múltiples rayos independientes de baja intensidad. Justo antes de alcanzar su objetivo distante, estos haces separados convergen perfectamente sincronizados, multiplicando exponencialmente la fuerza total de su impacto sin destruir la delicada maquinaria de disparo interno." 
+        text: "Curiosamente, la ficciÃ³n cinematogrÃ¡fica anticipÃ³ una brillante tÃ©cnica de la fÃ­sica Ã³ptica real conocida hoy como la combinaciÃ³n coherente de haces. Para construir sistemas extremadamente poderosos y evitar que los espejos frÃ¡giles se derritan por el calor acumulado, los ingenieros modernos dividen el lÃ¡ser en mÃºltiples rayos independientes de baja intensidad. Justo antes de alcanzar su objetivo distante, estos haces separados convergen perfectamente sincronizados, multiplicando exponencialmente la fuerza total de su impacto sin destruir la delicada maquinaria de disparo interno." 
       },
       {
-        label: "¿Sabías que...?",
+        label: "Â¿SabÃ­as que...?",
         icon: "sparkles",
-        text: "A pesar del poder abrumador mostrado por la imponente Estrella de la Muerte en el cine, destruir físicamente un planeta sólido del tamaño exacto de nuestra Tierra requeriría aproximadamente dos por diez a la treinta y dos julios de energía bruta. Para poner este número ridículo en perspectiva mundana, necesitarías atrapar absolutamente toda la deslumbrante producción energética que emite nuestro Sol ininterrumpidamente durante una semana entera y soltarla instantáneamente en un solo destello cataclísmico para lograr un nivel tan extremo de devastación planetaria."
+        text: "A pesar del poder abrumador mostrado por la imponente Estrella de la Muerte en el cine, destruir fÃ­sicamente un planeta sÃ³lido del tamaÃ±o exacto de nuestra Tierra requerirÃ­a aproximadamente dos por diez a la treinta y dos julios de energÃ­a bruta. Para poner este nÃºmero ridÃ­culo en perspectiva mundana, necesitarÃ­as atrapar absolutamente toda la deslumbrante producciÃ³n energÃ©tica que emite nuestro Sol ininterrumpidamente durante una semana entera y soltarla instantÃ¡neamente en un solo destello cataclÃ­smico para lograr un nivel tan extremo de devastaciÃ³n planetaria."
       }
     ],
-    fact: "El primer prototipo de láser funcional en la historia de la ciencia fue exitosamente creado utilizando un cilindro sintético de rubí brillante que actuaba como núcleo central cristalino. El investigador iluminó intensamente este material rojizo utilizando una potente lámpara de destello en espiral muy parecida a los brillantes flashes que usaban las ruidosas cámaras fotográficas antiguas de la época."
+    fact: "El primer prototipo de lÃ¡ser funcional en la historia de la ciencia fue exitosamente creado utilizando un cilindro sintÃ©tico de rubÃ­ brillante que actuaba como nÃºcleo central cristalino. El investigador iluminÃ³ intensamente este material rojizo utilizando una potente lÃ¡mpara de destello en espiral muy parecida a los brillantes flashes que usaban las ruidosas cÃ¡maras fotogrÃ¡ficas antiguas de la Ã©poca."
   }
 ];
 
@@ -402,7 +402,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         textTransform: 'uppercase',
         textShadow: '0 2px 10px rgba(68, 138, 255, 0.4)'
       }}>
-        FÍSICA DE PLASMAS
+        FÃSICA DE PLASMAS
       </h1>
       <h2 style={{
         fontFamily: '"Lora", serif',
@@ -411,7 +411,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         margin: 0,
         letterSpacing: '1px'
       }}>
-        SABLES LÁSER &middot; BLASTERS &middot; FUSIÓN
+        SABLES LÃSER &middot; BLASTERS &middot; FUSIÃ“N
       </h2>
       
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
@@ -453,7 +453,7 @@ const NodeButton = ({ node, isVisited, onClick }) => {
         src={node.btnImage} 
         alt={node.title}
         style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: isComplete ? 1 : 0.6 }}
-      />
+       loading="lazy" />
       {isComplete && (
         <div style={{
           position: 'absolute',
@@ -549,7 +549,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem 2rem', background: `linear-gradient(90deg, #1A1C29 0%, ${node.color}22 100%)`, zIndex: 10, borderBottom: `1px solid ${node.color}33` }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <div style={{ width: 40, height: 40, borderRadius: '50%', background: node.color, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={node.btnImage} alt="icon" style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover' }} />
+            <img src={node.btnImage} alt="icon" style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover' }}  loading="lazy" />
           </div>
           <h2 style={{ margin: 0, fontFamily: '"Oswald", sans-serif', fontSize: '1.5rem', color: '#FFF' }}>{node.title}</h2>
         </div>
@@ -708,7 +708,7 @@ export default function InteractiveInfographic_SwSec6() {
 
         <div style={{ width: '100%', maxWidth: '600px', marginTop: '4rem', background: '#1A1C29', borderRadius: '12px', padding: '1rem', border: '1px solid #333' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontFamily: '"Oswald", sans-serif', color: '#90A4AE' }}>
-            <span>CONEXIÓN CON LA FUERZA</span>
+            <span>CONEXIÃ“N CON LA FUERZA</span>
             <span>{Math.round(progress)}%</span>
           </div>
           <div style={{ width: '100%', height: '8px', background: '#0B0D17', borderRadius: '4px', overflow: 'hidden' }}>
@@ -727,8 +727,8 @@ export default function InteractiveInfographic_SwSec6() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #FF5252, #2979FF)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(68, 138, 255, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_plasmas/badge_plasmas.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
-              ¡ANÁLISIS DE PLASMA COMPLETADO!
+              <img src="/assets/starwars/infographic_plasmas/badge_plasmas.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              Â¡ANÃLISIS DE PLASMA COMPLETADO!
               <Sparkles size={24} />
             </motion.div>
           )}
@@ -736,7 +736,7 @@ export default function InteractiveInfographic_SwSec6() {
 
 
         <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
-          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÓN (Bibliografía)</h3>
+          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÃ“N (BibliografÃ­a)</h3>
           <ul style={{ margin: 0, padding: '0 0 0 1rem', color: '#78909C', fontFamily: '"Lora", serif', fontSize: '0.9rem', lineHeight: 1.8 }}>
             {BIBLIOGRAPHY.map((item, idx) => (
               <li key={idx} style={{ marginBottom: '0.5rem' }}>{item}</li>
