@@ -70,12 +70,9 @@ function DecoThreeLevels({ size = 70, color = '#FFD54F', style = {} }) {
 }
 
 const DECO_MAP = {
-  'wakah-chan-arbol': [DecoCeibaTree, DecoMilkyWay, DecoThreeLevels],
-  'via-lactea-maya': [DecoMilkyWay, DecoCrocodile, DecoCanoe],
+  'wakah-chan-arbol': [DecoCeibaTree, DecoMilkyWay, DecoThreeLevels],'via-lactea-maya': [DecoMilkyWay, DecoCrocodile, DecoCanoe],
   'canoa-cosmica': [DecoCanoe, DecoMilkyWay, DecoCrocodile],
-  'ceiba-sagrada': [DecoCeibaTree, DecoThreeLevels, DecoMilkyWay],
-  'tres-niveles': [DecoThreeLevels, DecoCeibaTree, DecoMilkyWay],
-  'orientacion-nocturna': [DecoMilkyWay, DecoCeibaTree, DecoCanoe],
+  'ceiba-sagrada': [DecoCeibaTree, DecoThreeLevels, DecoMilkyWay],'tres-niveles': [DecoThreeLevels, DecoCeibaTree, DecoMilkyWay],'orientacion-nocturna': [DecoMilkyWay, DecoCeibaTree, DecoCanoe],
   'popol-vuh-cielo': [DecoCrocodile, DecoCanoe, DecoThreeLevels],
 };
 
@@ -142,7 +139,7 @@ const INFOGRAPHIC_NODES = [
       'Los remeros estelares de esta gran historia corresponden a estrellas reales o grupos de estrellas que los observadores antiguos podían ver brillar en el cielo nocturno. Una vez más, usaron su gran mapa galáctico para contar la historia más importante de su cultura. Ver la Canoa Cósmica por encima de sus cabezas les daba esperanza. Les decía que, aunque las plantas se marchitaran, el gran motor del cielo seguía girando y pronto traería nueva vida verde a sus campos secos.'
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los famosos huesos tallados de Tikal, que muestran la historia completa de la canoa cósmica remando hacia el inframundo, son increíblemente pequeños. Algunos miden menos de un palmo de largo. Los artistas mayas usaban herramientas afiladas hechas de piedra obsidiana, porque el metal aún no era común en su selva tropical húmeda.' },
+      { label: '¿Sabías que...?', icon: 'clock', text: 'Los famosos huesos tallados de Tikal, que muestran la historia completa de la canoa cósmica remando hacia el inframundo, son pequeños. Algunos miden menos de un palmo de largo. Los artistas mayas usaban herramientas afiladas hechas de piedra obsidiana, porque el metal aún no era común en su selva tropical húmeda.' },
       { label: 'Concepto Científico', icon: 'atom', text: 'La idea de un río brillante flotando en el cielo es una descripción bastante precisa de cómo se ve nuestro brazo en espiral de la galaxia desde la superficie de la tierra. Estamos mirando a través del plano galáctico, donde se concentra todo el polvo, el gas brillante y millones de estrellas jóvenes apretadas en una banda.' }
     ],
     fact: 'Algunos investigadores han notado que en ciertas épocas del año y bajo el cielo despejado de América Central, las estrellas brillantes que forman la constelación moderna de Orión están ubicadas justo donde estarían los Dioses Remeros en la Vía Láctea, dirigiendo la gran canoa brillante a lo largo de su viaje celestial.'
@@ -471,7 +468,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
           )}
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{

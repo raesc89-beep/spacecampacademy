@@ -114,7 +114,7 @@ const DECO_MAP = {
 // â”€â”€â”€ Bibliography â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const BIBLIOGRAPHY = [
   'Habachi, L. (1977). The Obelisks of Egypt, Charles Scribner\'s Sons',
-  'Curran, B. et al. (2009). Obelisk: A History, Burndy Library',
+  'Curran, B. Et al. (2009). Obelisk: A History, Burndy Library',
   'Arnold, D. (1991). Building in Egypt: Pharaonic Stone Masonry, Oxford University Press',
   'Isler, M. (2001). Sticks, Stones, and Shadows: Building the Egyptian Pyramids, University of Oklahoma Press',
 ];
@@ -143,13 +143,13 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_obeliscos/btn_piramidion.png',
     image: '/assets/egypt/infographic_obeliscos/hero_piramidion.png',
     content: [
-      '¡Imagina que cada mañana, antes de que salga el sol, la punta de un obelisco empieza a brillar como una estrella! Eso es exactamente lo que pasaba en el antiguo Egipto. La punta del obelisco, llamada "piramidión", estaba cubierta con una aleación de oro y plata llamada "electrum" que brillaba como un espejo dorado.',
+      '¡Imagina que cada mañana, antes de que salga el sol, la punta de un obelisco empieza a brillar como una estrella! Eso es exactamente lo que pasaba en el antiguo Egipto. La punta del obelisco, llamada "piramidión", estaba cubierta con una aleación de oro y plata llamada"electrum" que brillaba como un espejo dorado.',
       'Cuando los primeros rayos del amanecer tocaban la punta del obelisco â€”antes de que la luz llegara al sueloâ€” el piramidión resplandecía como un pequeño sol dorado en el cielo oscuro. Los egipcios creían que ese destello era el primer contacto del dios Ra (el Sol) con la Tierra cada mañana. ¡Era como si Ra tocara con su dedo la punta del obelisco para despertar al mundo!',
       'El electrum es una mezcla natural de 75% oro y 25% plata que los egipcios encontraban en los lechos de ríos. Es más duro que el oro puro y no se oxida ni se mancha, así que brillaba durante siglos sin necesitar mantenimiento. ¡Imagina un faro dorado de 3 metros de altura en la punta de una columna de 30 metros!',
       'Los piramidiones más famosos estaban en los obeliscos del Templo de Karnak en Luxor. La reina Hatshepsut mandó cubrir dos obeliscos enteros con electrum â€”no solo la punta, sino todo el obelisco. En sus inscripciones dice: "Los hice para mi padre Amón, recubiertos de electrum fino desde la punta hasta la base, tan brillantes que iluminan las Dos Tierras como el disco solar."',
       'Hoy no queda ningún piramidión de electrum original porque fueron robados o fundidos hace miles de años. Pero en 2018, arqueólogos encontraron un piramidión de granito del faraón Amenemhat III (1800 a.C.) con jeroglíficos que dicen: "Que el rostro del rey se abra para ver al Señor de la Luz cuando cruza el cielo." ¡Confirma que los obeliscos eran instrumentos astronómicos sagrados!',
     ],
-    fact: 'El Monumento a Washington en EE.UU. es un obelisco moderno de 169 metros de altura. Su punta de aluminio fue la pieza de aluminio más grande del mundo cuando se instaló en 1884. El aluminio era tan raro y caro en esa época que valía más que el oro â€”¡igual que el electrum de los obeliscos egipcios!',
+    fact: 'El Monumento a Washington en EE.UU. Es un obelisco moderno de 169 metros de altura. Su punta de aluminio fue la pieza de aluminio más grande del mundo cuando se instaló en 1884. El aluminio era tan raro y caro en esa época que valía más que el oro â€”¡igual que el electrum de los obeliscos egipcios!',
   },
   {
     id: 'cantera-asuan',
@@ -179,7 +179,7 @@ const INFOGRAPHIC_NODES = [
       'Los egipcios crearon un calendario de 365 días basado en estas observaciones: 12 meses de 30 días más 5 días extras al final. Es casi idéntico al nuestro. Solo les faltó el cuarto de día extra que nosotros corregimos con los años bisiestos. Después de 1,460 años, su calendario se desfasaba un año completo â€”y volvía a coincidir. ¡A este ciclo lo llamaban "Gran Año de Sothis"!',
       'El obelisco era tan preciso que los sacerdotes podían predecir las estaciones con semanas de anticipación. Imagina ser un niño egipcio y que tu maestro dijera: "¡En 40 días exactos vendrá la crecida del Nilo!" gracias a las marcas de la sombra del obelisco. Era como tener un calendario de Google hecho de piedra y sombras.',
     ],
-    fact: 'Nuestro calendario actual (gregoriano) tiene su origen en el calendario egipcio de 365 días. Julio César lo adoptó en el 46 a.C. tras visitar Egipto y conocer a Cleopatra. El Papa Gregorio XIII lo ajustó en 1582, añadiendo la regla de los años bisiestos. ¡Así que cada vez que miras un calendario, estás usando tecnología egipcia de 4,500 años!',
+    fact: 'Nuestro calendario actual (gregoriano) tiene su origen en el calendario egipcio de 365 días. Julio César lo adoptó en el 46 a.C. Tras visitar Egipto y conocer a Cleopatra. El Papa Gregorio XIII lo ajustó en 1582, añadiendo la regla de los años bisiestos. ¡Así que cada vez que miras un calendario, estás usando tecnología egipcia de 4,500 años!',
   },
   {
     id: 'roma-obeliscos',
@@ -191,7 +191,7 @@ const INFOGRAPHIC_NODES = [
       '¿Sabías que la ciudad con más obeliscos egipcios del mundo NO es El Cairo ni Luxor, sino Roma, en Italia? Hoy hay 13 obeliscos egipcios originales en Roma â€”¡más que en todo Egipto! Los emperadores romanos estaban tan fascinados con estas columnas que se las llevaron como trofeos de guerra y símbolos de poder.',
       'Todo empezó cuando el emperador Augusto conquistó Egipto en el año 30 a.C. Se llevó dos obeliscos a Roma: uno para el Circo Máximo y otro para el Campo de Marte, donde lo convirtió en un reloj solar gigante. ¡Imagina mover una columna de 300 toneladas en barco desde Egipto hasta Italia, cruzando todo el Mediterráneo!',
       'El obelisco más famoso de Roma está en el centro de la Plaza de San Pedro, en el Vaticano. Fue traído desde Heliópolis por el emperador Calígula en el año 37 d.C. Durante siglos estuvo junto al Circo de Nerón, donde presenciaron martirios de los primeros cristianos. En 1586, el papa Sixto V ordenó moverlo â€”una operación que requirió 900 hombres, 140 caballos y 47 grúas.',
-      'El Obelisco de Letrán es el más alto del mundo: 45.7 metros con su base. Fue mandado construir por Tutmosis III alrededor del 1400 a.C. y tardó más de un siglo en completarse. Llegó a Roma en el 357 d.C. Se cayó durante las invasiones bárbaras, fue redescubierto en tres fragmentos en el siglo XVI, y restaurado por Sixto V en 1588. ¡Tiene 3,400 años y sigue en pie!',
+      'El Obelisco de Letrán es el más alto del mundo: 45.7 metros con su base. Fue mandado construir por Tutmosis III alrededor del 1400 a.C. Y tardó más de un siglo en completarse. Llegó a Roma en el 357 d.C. Se cayó durante las invasiones bárbaras, fue redescubierto en tres fragmentos en el siglo XVI, y restaurado por Sixto V en 1588. ¡Tiene 3,400 años y sigue en pie!',
       'Los romanos no solo se llevaron obeliscos â€”también aprendieron a construir los suyos. Pero nunca lograron igualar la técnica egipcia de tallar monolitos de una sola pieza. Los obeliscos romanos son más pequeños y a veces están hechos de varias piezas ensambladas. ¡Como intentar copiar la tarea del mejor alumno, pero sin entender bien las instrucciones!',
     ],
     fact: 'Mover el obelisco de la Plaza de San Pedro en 1586 fue tan peligroso que el papa Sixto V prohibió a la multitud hacer ruido bajo pena de muerte. Cuando las cuerdas empezaron a calentarse por la fricción y estaban a punto de romperse, un marinero gritó: "¡Agua a las cuerdas!" Su grito salvó el obelisco y el papa le perdonó la vida. ¡Su familia recibió el privilegio de suministrar las palmas del Domingo de Ramos al Vaticano durante 400 años!',
@@ -205,7 +205,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       '¿Sabías que hay obeliscos egipcios en Nueva York, Londres y París? Se llaman "Agujas de Cleopatra", aunque la reina Cleopatra no tuvo nada que ver con ellos â€”¡fueron construidos 1,500 años antes de que ella naciera! El nombre se lo pusieron los europeos porque Cleopatra era la única egipcia que conocían.',
       'El obelisco de Nueva York está en Central Park. Tiene 3,500 años y fue tallado por orden del faraón Tutmosis III en Heliópolis. Egipto lo regaló a Estados Unidos en 1879 para celebrar la inauguración del Canal de Suez. Transportarlo desde Alejandría hasta Manhattan tomó 112 días â€”cruzó el Atlántico en un barco de vapor y rodó por las calles de Nueva York sobre rieles.',
-      'Debajo del obelisco de Nueva York, los ingenieros colocaron una cápsula del tiempo con objetos de la época: monedas americanas, un censo de los EE.UU., ejemplares del periódico New York Tribune, una foto del presidente Grant, y una guía turística de Egipto. ¡Es un cofre del tesoro moderno bajo un monumento de 3,500 años!',
+      'Debajo del obelisco de Nueva York, los ingenieros colocaron una cápsula del tiempo con objetos de la época: monedas americanas, un censo de los EE.UU. Ejemplares del periódico New York Tribune, una foto del presidente Grant, y una guía turística de Egipto. ¡Es un cofre del tesoro moderno bajo un monumento de 3,500 años!',
       'El obelisco de Londres está en el Embankment del Támesis. Su viaje en 1877 fue épico: la barcaza que lo transportaba casi se hunde en una tormenta en el Golfo de Vizcaya. Seis marineros murieron intentando rescatarla. El obelisco fue abandonado a la deriva durante días antes de ser recuperado. ¡Sobrevivió 3,500 años en Egipto y casi se pierde en el Atlántico!',
       'El obelisco de París, en la Plaza de la Concordia, es el que mejor se conserva. Fue un regalo del gobernante egipcio Mehmet Alí a Francia en 1829. Es uno de los dos obeliscos que estaban en la entrada del Templo de Luxor. El otro sigue en Egipto â€”Francia devolvió simbólicamente sus derechos sobre él en 1981. Hoy hay 25 obeliscos egipcios en pie en todo el mundo, pero ninguno de los grandes está en su ubicación original.',
     ],
@@ -249,12 +249,7 @@ function SandParticleField() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    const dpr = window.devicePixelRatio || 1;
-    const w = canvas.parentElement.offsetWidth;
-    const h = canvas.parentElement.offsetHeight;
-    canvas.width = w * dpr; canvas.height = h * dpr;
-    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+    const ctx = canvas.getContext('2d'); const dpr = window.devicePixelRatio || 1; const w = canvas.parentElement.offsetWidth; const h = canvas.parentElement.offsetHeight; canvas.width = w * dpr; canvas.height = h * dpr; canvas.style.width = w +'px'; canvas.style.height = h + 'px';
     ctx.scale(dpr, dpr);
     const stars = Array.from({ length: 60 }, () => ({
       x: Math.random() * w, y: Math.random() * h * 0.5,
@@ -455,8 +450,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.4rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.4rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -511,8 +505,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#1A0A00',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#1A0A00',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
                 }}>
@@ -544,8 +537,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

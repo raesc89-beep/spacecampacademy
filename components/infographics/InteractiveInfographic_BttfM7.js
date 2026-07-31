@@ -130,10 +130,7 @@ const DECO_MAP = {
   'biotecnologia': [DecoWormhole, DecoAtomSvg, DecoTimeline],
   'espacio-futuro': [DecoTimeline, DecoClockFace, DecoWormhole],
   'sostenibilidad': [DecoGear, DecoAtomSvg, DecoFluxCapacitor],
-};
-
-const BIBLIOGRAPHY = [
-  'Doudna, J.A. & Sternberg, S.H. (2017). A Crack in Creation: Gene Editing and the Power to Control Evolution, Houghton Mifflin',
+}; const BIBLIOGRAPHY = ['Doudna, J.A. & Sternberg, S.H. (2017). A Crack in Creation: Gene Editing and the Power to Control Evolution, Houghton Mifflin',
   'Tesla, N. (1905). "The Transmission of Electrical Energy Without Wires", Electrical World and Engineer',
   'Isaacson, W. (2011). Steve Jobs, Simon & Schuster',
   'Musk, E. & SpaceX Team (2017). "Making Humans a Multi-Planetary Species", New Space, 5(2)',
@@ -168,7 +165,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/bttf/infographic_biotecnologia/hero_electricidad.png',
     content: [
       'Los rayos han fascinado y aterrado a la humanidad desde el principio de los tiempos. Un rayo es básicamente una descarga gigantesca de electricidad estática. Durante una tormenta, las partículas de hielo en las nubes chocan entre sí, creando una carga eléctrica inmensa. Cuando esa carga se vuelve demasiado grande, busca el camino más rápido hacia el suelo, y se produce un relámpago que ilumina el cielo.',
-      'La energía que contiene un solo rayo es absolutamente descomunal. Un rayo típico transporta millones de voltios y puede alcanzar temperaturas de hasta 30,000 grados Celsius. ¡Eso es cinco veces más caliente que la superficie del Sol! Esta increíble temperatura calienta el aire circundante tan rápido que explota, creando el sonido estruendoso que conocemos como trueno. La energía es tan intensa que puede convertir la arena en cristal.',
+      'La energía que contiene un solo rayo es enorme. Un rayo típico transporta millones de voltios y puede alcanzar temperaturas de hasta 30,000 grados Celsius. ¡Eso es cinco veces más caliente que la superficie del Sol! Esta increíble temperatura calienta el aire circundante tan rápido que explota, creando el sonido estruendoso que conocemos como trueno. La energía es tan intensa que puede convertir la arena en cristal.',
       'Nuestra comprensión de la electricidad dio un salto gigante en 1752, cuando Benjamin Franklin realizó su famoso experimento con una cometa. Voló una cometa con una llave de metal durante una tormenta (¡un experimento muy peligroso que no debes intentar!). Las chispas que saltaron de la llave confirmaron que los rayos eran de la misma naturaleza que la electricidad estática, uniendo estos dos conceptos para siempre.',
       'Hoy en día, la electricidad alimenta nuestro mundo moderno, desde las luces de nuestra casa hasta las supercomputadoras. Sin embargo, aprovechar la energía cruda y caótica de un rayo natural sigue siendo casi imposible. Los rayos son demasiado rápidos y erráticos para que podamos capturar y almacenar toda esa energía de manera eficiente con nuestra tecnología actual. ¡La naturaleza todavía tiene el récord de poder bruto!'
     ],
@@ -205,11 +202,11 @@ const INFOGRAPHIC_NODES = [
     content: [
       'Si tuvieras que elegir el invento más importante del siglo XX, el transistor sería el ganador indiscutible. Inventado en 1947 en los Laboratorios Bell por Bardeen, Brattain y Shockley, este diminuto dispositivo cambió el mundo. Antes de los transistores, las computadoras usaban "tubos de vacío" gigantes, frágiles y que se calentaban muchísimo. El transistor hizo el mismo trabajo pero era minúsculo, frío y casi irrompible.',
       'Pero, ¿qué hace un transistor? Básicamente, es un interruptor microscópico. Permite que la electricidad pase (un "1") o la detiene (un "0"). Combinando millones de estos interruptores, puedes procesar información compleja, matemáticas y lógica. Están hechos de materiales semiconductores, principalmente silicio, que tienen la propiedad mágica de poder conducir la electricidad a veces y detenerla otras veces.',
-      'A medida que los ingenieros aprendieron a hacer transistores más pequeños, inventaron el "microchip" o circuito integrado. Al poner miles de transistores en un solo pedacito de silicio, los aparatos electrónicos se volvieron más rápidos, baratos y diminutos. Esto fue predicho por la "Ley de Moore" (formulada por Gordon Moore en 1965), que decía que la cantidad de transistores en un chip se duplicaría cada dos años.',
+      'A medida que los ingenieros aprendieron a hacer transistores más pequeños, inventaron el "microchip"o circuito integrado. Al poner miles de transistores en un solo pedacito de silicio, los aparatos electrónicos se volvieron más rápidos, baratos y diminutos. Esto fue predicho por la"Ley de Moore" (formulada por Gordon Moore en 1965), que decía que la cantidad de transistores en un chip se duplicaría cada dos años.',
       'Esta revolución permitió pasar de computadoras del tamaño de una habitación a smartphones que caben en tu bolsillo. Hoy en día, un procesador moderno contiene miles de millones de transistores, cada uno más pequeño que un virus. Sin los semiconductores, no tendríamos internet, videojuegos, ni, por supuesto, la tecnología necesaria para viajar al espacio.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cuando el Doc de 1955 ve la videocámara JVC portátil de Marty, se sorprende enormemente por su tamaño y capacidad. En 1955, el transistor apenas comenzaba a usarse, y las cámaras de televisión eran enormes equipos de estudio que dependían de pesados tubos de vacío. ¡La videocámara de Marty era verdadera magia del futuro!' },
+      { label: 'En la Película', icon: 'zap', text: 'Cuando el Doc de 1955 ve la videocámara JVC portátil de Marty, se sorprende por su tamaño y capacidad. En 1955, el transistor apenas comenzaba a usarse, y las cámaras de televisión eran enormes equipos de estudio que dependían de pesados tubos de vacío. ¡La videocámara de Marty era verdadera magia del futuro!' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los transistores modernos son tan pequeños que su tamaño se mide en nanómetros. Para que te hagas una idea, un cabello humano tiene un grosor de unos 80,000 nanómetros. Los transistores en los chips actuales pueden medir apenas 3 nanómetros de ancho. ¡Son casi a escala atómica!' }
     ],
     fact: 'El silicio es el material estrella para los semiconductores, ¡y es sorprendentemente común! Es el segundo elemento más abundante en la corteza terrestre, después del oxígeno. La arena normal de la playa está hecha principalmente de dióxido de silicio.'
@@ -239,7 +236,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_espacio.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_espacio.png',
     content: [
-      'Durante décadas, el sueño de viajar por el espacio parecía detenido. Pero hoy, estamos viviendo un nuevo renacimiento espacial. La gran innovación reciente han sido los cohetes reutilizables. Históricamente, un cohete volaba una vez y se descartaba en el océano, lo que hacía que ir al espacio fuera increíblemente caro. Hoy en día, gracias a empresas como SpaceX, los cohetes pueden aterrizar de pie y volar de nuevo.',
+      'Durante décadas, el sueño de viajar por el espacio parecía detenido. Pero hoy, estamos viviendo un nuevo renacimiento espacial. La gran innovación reciente han sido los cohetes reutilizables. Históricamente, un cohete volaba una vez y se descartaba en el océano, lo que hacía que ir al espacio fuera caro. Hoy en día, gracias a empresas como SpaceX, los cohetes pueden aterrizar de pie y volar de nuevo.',
       'Esta reducción de costos está acelerando nuestros planes. El programa Artemis de la NASA tiene como objetivo devolver a los humanos a la Luna. Pero esta vez no vamos de visita; ¡vamos para quedarnos! El plan incluye construir una estación espacial en órbita lunar (Gateway) y bases en la superficie, sirviendo como campo de entrenamiento para el próximo gran salto: Marte.',
       'Mientras planeamos viajar más lejos, nuestros "ojos" robóticos ya están explorando el cosmos. El Telescopio Espacial James Webb, lanzado en 2021, es una maravilla de la ingeniería. Es tan potente que puede ver las atmósferas de planetas que giran alrededor de otras estrellas y capturar la luz de las primeras galaxias que se formaron poco después del Big Bang, permitiéndonos literalmente mirar hacia el pasado.',
       'El futuro de la exploración espacial no será solo para astronautas del gobierno. El turismo espacial está comenzando a florecer, y pronto la minería de asteroides podría darnos acceso a metales preciosos sin dañar la Tierra. Convertirnos en una especie multiplanetaria no es solo una aventura; es un paso necesario para asegurar la supervivencia a largo plazo de la humanidad.'
@@ -416,9 +413,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -601,8 +596,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -641,10 +635,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -674,8 +665,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',

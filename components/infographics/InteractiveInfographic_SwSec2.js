@@ -104,7 +104,7 @@ const INFOGRAPHIC_NODES = [
       "¿Te imaginas caminar por la calle en un día soleado y tener no una, sino dos sombras detrás de ti? Así sería la vida en un mundo con dos soles. En 2011, los astrónomos descubrieron un planeta real que orbita alrededor de un par de estrellas, igual que el famoso hogar de Luke Skywalker. Este descubrimiento sacudió al mundo científico porque durante décadas se pensó que un planeta no podría mantener una órbita estable alrededor de dos estrellas sin ser expulsado al vacío del espacio.",
       "A estos mundos los llamamos 'planetas circumbinarios', una palabra elegante para decir que viajan en un gran círculo alrededor de dos estrellas que giran juntas en el centro. Las dos estrellas de Kepler-16 se emparejan bailando un vals cósmico, y el planeta las rodea a lo lejos observando el espectáculo. La estrella principal (Kepler-16A) es una enana naranja con un 69% de la masa de nuestro Sol, mientras que su compañera (Kepler-16B) es una enana roja mucho más pequeña, con solo un 20%.",
       "El planeta Kepler-16b es un gigante de gas frío, aproximadamente del tamaño de Saturno pero un poco más denso, lo que sugiere que tiene un núcleo rocoso más grande. Si pudieras flotar en su atmósfera mirando al cielo, verías dos soles diferentes cruzándose y separándose como bailarines en un escenario cósmico. Los científicos calcularon que la temperatura superficial ronda los -73°C, demasiado frío para agua líquida.",
-      "Los atardeceres allí serían absolutamente mágicos: los dos soles cruzarían el horizonte en momentos diferentes, creando un espectáculo de colores cambiantes que no existe en ningún otro lugar conocido. Las sombras de los objetos se dividirían en dos y cambiarían de posición a lo largo del año. Aunque este planeta en particular es demasiado frío y gaseoso para albergar vida, nos demuestra que el universo es más asombroso y parecido a la ciencia ficción de lo que imaginábamos.",
+      "Los atardeceres allí serían mágicos: los dos soles cruzarían el horizonte en momentos diferentes, creando un espectáculo de colores cambiantes que no existe en ningún otro lugar conocido. Las sombras de los objetos se dividirían en dos y cambiarían de posición a lo largo del año. Aunque este planeta en particular es demasiado frío y gaseoso para albergar vida, nos demuestra que el universo es más asombroso y parecido a la ciencia ficción de lo que imaginábamos.",
       "Desde el descubrimiento de Kepler-16b, los astrónomos han encontrado más de una docena de planetas circumbinarios confirmados, incluyendo Kepler-34b, Kepler-35b y TOI-1338b, este último descubierto en 2020 por un estudiante de 17 años durante sus prácticas de verano en la NASA. Estos hallazgos demuestran que los sistemas con dos soles no son una rareza cósmica, sino que podrían representar hasta el 10% de todos los sistemas planetarios de la Vía Láctea. La pregunta ya no es si existen los mundos con doble atardecer, sino cuántos de ellos podrían albergar condiciones para la vida."
     ],
     expandables: [
@@ -140,7 +140,7 @@ const INFOGRAPHIC_NODES = [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En Star Wars, los personajes viajan entre sistemas estelares con facilidad gracias al hiperimpulsor, pero en la realidad detectar planetas a esas distancias es increíblemente difícil. La Alianza Rebelde habría necesitado telescopios como Kepler o el James Webb para encontrar bases habitables ocultas en la galaxia, porque a simple vista las estrellas son solo puntos de luz sin planetas visibles.' 
+        text: 'En Star Wars, los personajes viajan entre sistemas estelares con facilidad gracias al hiperimpulsor, pero en la realidad detectar planetas a esas distancias es difícil. La Alianza Rebelde habría necesitado telescopios como Kepler o el James Webb para encontrar bases habitables ocultas en la galaxia, porque a simple vista las estrellas son solo puntos de luz sin planetas visibles.' 
       },
       { 
         label: '¿Sabías que...?', 
@@ -197,7 +197,7 @@ const INFOGRAPHIC_NODES = [
     ],
     content: [
       "Si viajaras en el tiempo unos 300 millones de años, aterrizarías en un planeta muy similar al pantanoso exilio de Yoda. La Tierra estaba en pleno período Carbonífero (359-299 millones de años atrás), un mundo cálido y húmedo cubierto por espesos bosques y pantanos impenetrables. No había flores, ni pájaros, ni mamíferos. Solo helechos gigantes, licópodos de 40 metros de alto y el sonido de insectos zumbando entre la niebla.",
-      "Durante este período, la atmósfera tenía mucho más oxígeno que hoy. Mientras que ahora respiramos un 21% de oxígeno, en aquel entonces los niveles alcanzaban el 35%, casi el doble. Los científicos descubrieron esto analizando burbujas de aire atrapadas en ámbar fósil. Este exceso de oxígeno provocó un fenómeno sorprendente que habría fascinado a cualquier biólogo: ¡los insectos crecieron a tamaños absolutamente monstruosos!",
+      "Durante este período, la atmósfera tenía mucho más oxígeno que hoy. Mientras que ahora respiramos un 21% de oxígeno, en aquel entonces los niveles alcanzaban el 35%, casi el doble. Los científicos descubrieron esto analizando burbujas de aire atrapadas en ámbar fósil. Este exceso de oxígeno provocó un fenómeno sorprendente que habría fascinado a cualquier biólogo: ¡los insectos crecieron a tamaños monstruosos!",
       "Imagina libélulas gigantes del género Meganeura con una envergadura de alas de 70 centímetros, volando como si fueran halcones entre los helechos arborescentes. Sus alas transparentes hacían un ruido ensordecedor al batirlas. En el suelo lodoso, arrastrándose entre las raíces sumergidas, había milpiés llamados Arthropleura del tamaño de un coche pequeño, alcanzando los 2.3 metros de largo y medio metro de ancho. Los insectos podían ser tan grandes porque respiraban a través de pequeños tubos (tráqueas), y con tanto oxígeno disponible, hasta los tubos más largos podían funcionar.",
       "Toda esa vegetación muerta se acumuló en los pantanos durante millones de años sin pudrirse del todo, porque las bacterias y hongos de la época aún no habían evolucionado la capacidad de descomponer la lignina, la sustancia dura que da rigidez a la madera. Con el peso y el calor de la Tierra, esa materia orgánica se comprimió hasta convertirse en el carbón mineral que alimentó la Revolución Industrial. ¡El combustible de los primeros trenes y fábricas del siglo XIX viene literalmente de un mundo parecido a Dagobah!",
       "El Carbonífero también nos dejó una lección sobre cómo la atmósfera controla la vida. Cuando el oxígeno subió al 35%, los insectos se hicieron gigantes, pero los incendios forestales se volvieron devastadores: con tanto combustible y tanto oxígeno, enormes regiones ardían durante semanas. Eventualmente, los niveles de oxígeno bajaron de nuevo, los insectos gigantes se extinguieron y los reptiles comenzaron a dominar la Tierra, preparando el escenario para los dinosaurios. Es un recordatorio fascinante de que la composición del aire que respiramos determina qué tipo de criaturas pueden existir en nuestro planeta."
@@ -206,7 +206,7 @@ const INFOGRAPHIC_NODES = [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'Dagobah aparece en El Imperio Contraataca (1980) como el planeta donde Yoda entrena a Luke Skywalker en los caminos de la Fuerza. Los densos pantanos se crearon con enormes decorados en los estudios Elstree en Borehamwood, Inglaterra. El puppeteer Frank Oz operaba a Yoda desde debajo del set, sumergido en agua cenagosa. Dagobah fue diseñado como un mundo lleno de vida exuberante y salvaje, pero completamente desprovisto de civilización.' 
+        text: 'Dagobah aparece en El Imperio Contraataca (1980) como el planeta donde Yoda entrena a Luke Skywalker en los caminos de la Fuerza. Los densos pantanos se crearon con enormes decorados en los estudios Elstree en Borehamwood, Inglaterra. El puppeteer Frank Oz operaba a Yoda desde debajo del set, sumergido en agua cenagosa. Dagobah fue diseñado como un mundo lleno de vida exuberante y salvaje, pero desprovisto de civilización.' 
       },
       { 
         label: '¿Sabías que...?', 
@@ -230,7 +230,7 @@ const INFOGRAPHIC_NODES = [
       { src: '/assets/starwars/infographic_mundos/extra_mustafar_sector.png', caption: 'Mustafar â€” Sector Atravis: el planeta volcánico más temido de la galaxia' }
     ],
     content: [
-      "Hay rincones del universo donde el infierno es un lugar real. Imagina un planeta rocoso que orbita tan cerca de su estrella que su superficie se derrite por completo, convirtiéndose en un océano hirviente de roca fundida color naranja brillante. 55 Cancri e, también conocido como Janssen, es uno de esos terroríficos 'mundos de lava'. Se encuentra a solo 40 años-luz de nosotros, en la constelación de Cáncer, y fue uno de los primeros 'supertierra' descubiertos.",
+      "Hay rincones del universo donde el infierno es un lugar real. Imagina un planeta rocoso que orbita tan cerca de su estrella que su superficie se derrite por completo, convirtiéndose en un océano hirviente de roca fundida color naranja brillante. 55 Cancri e, también conocido como Janssen, es uno de esos terroríficos 'mundos de lava'. Se encuentra a solo 40 años-luz de nosotros, en la constelación de Cáncer, y fue uno de los primeros'supertierra' descubiertos.",
       "Está tan cerca de su estrella madre que su año completo (una vuelta entera alrededor de la estrella) dura tan solo 18 horas. ¡Podrías celebrar tu cumpleaños todos los días! Pero haría demasiado calor para la fiesta: la temperatura en su cara diurna supera los 2,500°C, suficiente para derretir acero, titanio y prácticamente cualquier metal conocido. Además, siempre muestra la misma cara a su estrella, creando un hemisferio de día eterno y otro de noche perpetua.",
       "El clima en estos planetas es una pesadilla de ciencia ficción que supera cualquier imaginación. En un planeta llamado WASP-76b, situado a 640 años-luz, las nubes están hechas de vapor de hierro. En el lado más caliente (2,400°C), el hierro se evapora como agua en un horno. Cuando vientos huracanados de más de 18,000 km/h llevan ese vapor al lado oscuro y más frío, el hierro se condensa y llueve como gotas de metal líquido incandescente desde las nubes.",
       "Otro planeta aún más extremo, K2-141b, tiene un océano de magma de 100 kilómetros de profundidad y una atmósfera hecha de roca vaporizada. El 'ciclo del agua' en este mundo consiste en roca que se evapora, forma nubes de silicato y luego llueve como lava. Estos mundos ardientes nos dan una ventana al pasado de nuestra propia Tierra hace 4,500 millones de años, cuando nuestro planeta no era más que una enorme bola de fuego y roca recién nacida en el espacio, bombardeada por meteoritos.",
@@ -291,7 +291,7 @@ const INFOGRAPHIC_NODES = [
       "¿Cómo podemos saber si hay extraterrestres en un planeta a años-luz de distancia sin viajar hasta allá? La respuesta está en la atmósfera. Los telescopios más avanzados del mundo buscan 'biofirmas', que son combinaciones químicas que no deberían existir juntas a menos que algún ser vivo las esté produciendo activamente. Es el equivalente cósmico de buscar huellas en la arena: no necesitas ver al caminante para saber que alguien pasó por ahí.",
       "Es como oler el aroma a sopa de pollo desde el pasillo de un edificio: sabes que alguien está cocinando aunque no veas la cocina ni al cocinero. En la Tierra, la vida produce oxígeno (mediante la fotosíntesis de plantas y algas) y metano (mediante bacterias en los pantanos y en los estómagos de las vacas) constantemente. Si no hubiera seres vivos reponiendo estos gases, el oxígeno y el metano reaccionarían entre sí en unos pocos miles de años y desaparecerían. Su coexistencia es la prueba de que algo vivo los está fabricando.",
       "En septiembre de 2023, el Telescopio Espacial James Webb logró un hito histórico: detectó con éxito dióxido de carbono y metano en la atmósfera de un exoplaneta llamado K2-18b, situado a 124 años-luz de nosotros. Este mundo es un 'hicéano', una supertierra cubierta por un océano profundo con una gruesa atmósfera rica en hidrógeno. Se encuentra en la zona habitable de su estrella enana roja, lo que lo convierte en un candidato extraordinario para buscar química biológica.",
-      "¡Tú también puedes ser un descubridor de mundos! Plataformas de ciencia ciudadana como Zooniverse y Planet Hunters TESS permiten a personas de todo el mundo analizar datos reales de telescopios desde su computadora o teléfono móvil, y ya han contribuido al descubrimiento de exoplanetas reales. En el futuro cercano, gigantes como el ELT (Telescopio Extremadamente Grande) en Cerro Armazones, Chile, con su espejo segmentado de 39 metros de diámetro, podrían fotografiar directamente mundos alienígenas y analizar sus atmósferas molécula por molécula.",
+      "¡Tú también puedes ser un descubridor de mundos! Plataformas de ciencia ciudadana como Zooniverse y Planet Hunters TESS permiten a personas de todo el mundo analizar datos reales de telescopios desde su computadora o teléfono móvil, y ya han contribuido al descubrimiento de exoplanetas reales. En el futuro cercano, gigantes como el ELT (Telescopio muy Grande) en Cerro Armazones, Chile, con su espejo segmentado de 39 metros de diámetro, podrían fotografiar directamente mundos alienígenas y analizar sus atmósferas molécula por molécula.",
       "La carrera por encontrar vida más allá de la Tierra está acelerándose como nunca antes. Además del James Webb y el futuro ELT, nuevas misiones como HWO (Habitable Worlds Observatory) buscarán tomar las primeras fotografías directas de exoplanetas similares a la Tierra y analizar si sus atmósferas contienen las combinaciones químicas que delatan la presencia de biología. Algunos científicos calculan que, si la vida es común en el universo, podríamos tener evidencia firme antes de 2040. Si lo logramos, responderíamos a una pregunta que la humanidad se ha hecho desde que miró al cielo por primera vez: ¿estamos solos?"
     ],
     expandables: [
@@ -454,9 +454,7 @@ const NodeButton = ({ node, isVisited, onClick }) => {
         <div style={{
           position: 'absolute',
           top: '5px',
-          right: '5px',
-          background: node.color,
-          borderRadius: '50%',
+          right: '5px', background: node.color, borderRadius:'50%',
           padding: '2px'
         }}>
           <Sparkles size={12} color="#000" />
@@ -591,8 +589,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
                   position: 'relative',
                 }}>
                   <div style={{
-                    position: 'absolute', top: '-8px', left: '12px',
-                    background: node.color, color: '#0B0E2D',
+                    position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                     fontSize: '0.65rem', fontWeight: 800,
                     padding: '2px 8px', borderRadius: '8px',
                     letterSpacing: '1px',
@@ -639,7 +636,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
               <h4 style={{ fontFamily: '"Oswald", sans-serif', color: node.color, margin: '0 0 1rem 0', fontSize: '0.85rem', letterSpacing: '2px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Star size={14} /> GALERÍA DEL PLANETA
               </h4>
-              <div style={{ display: 'grid', gridTemplateColumns: node.extraImages.length === 1 ? '1fr' : '1fr 1fr', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: node.extraImages.length === 1 ?'1fr' : '1fr 1fr', gap: '1rem' }}>
                 {node.extraImages.map((img, idx) => (
                   <motion.div
                     key={idx}
@@ -673,9 +670,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
                         width: '100%',
                         textAlign: 'center',
                         fontSize: '0.75rem',
-                        color: 'rgba(255,255,255,0.8)',
-                        margin: 0,
-                        fontStyle: 'italic',
+                        color: 'rgba(255,255,255,0.8)', margin: 0, fontStyle:'italic',
                         padding: '0 0.5rem',
                         textShadow: '0 1px 3px rgba(0,0,0,0.9)',
                         pointerEvents: 'none',
@@ -718,9 +713,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
                   border: 'none',
                   padding: '0.75rem 1.5rem',
                   borderRadius: '24px',
-                  fontFamily: '"Oswald", sans-serif',
-                  fontWeight: 600,
-                  fontSize: '1rem',
+                  fontFamily: '"Oswald", sans-serif', fontWeight: 600, fontSize:'1rem',
                   cursor: 'pointer',
                   display: 'flex',
                   alignItems: 'center',
@@ -838,10 +831,7 @@ export default function InteractiveInfographic_SwSec2() {
                     position: 'absolute',
                     bottom: '-15px',
                     left: '50%',
-                    marginLeft: '-4px',
-                    width: 8,
-                    height: 8,
-                    borderRadius: '50%',
+                    marginLeft: '-4px', width: 8, height: 8, borderRadius:'50%',
                     background: node.color,
                     boxShadow: `0 0 10px ${node.color}`
                   }}

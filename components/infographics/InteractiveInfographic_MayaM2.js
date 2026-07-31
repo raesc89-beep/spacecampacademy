@@ -82,13 +82,8 @@ function DecoCalendarWheel({ size = 70, color = '#00C853', style = {} }) {
 
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
-  'piramide-castillo': [DecoStaircase, DecoTriangle, DecoCalendarWheel],
-  'equinoccio-serpiente': [DecoSerpentHead, DecoSunRays, DecoTriangle],
-  'geometria-solar': [DecoSunRays, DecoTriangle, DecoStaircase],
-  'calendario-piedra': [DecoCalendarWheel, DecoStaircase, DecoSunRays],
-  'acustica-quetzal': [DecoSerpentHead, DecoTriangle, DecoCalendarWheel],
-  'construccion-capas': [DecoStaircase, DecoTriangle, DecoSerpentHead],
-  'patrimonio-mundial': [DecoCalendarWheel, DecoSunRays, DecoStaircase],
+  'piramide-castillo': [DecoStaircase, DecoTriangle, DecoCalendarWheel],'equinoccio-serpiente': [DecoSerpentHead, DecoSunRays, DecoTriangle],'geometria-solar': [DecoSunRays, DecoTriangle, DecoStaircase],
+  'calendario-piedra': [DecoCalendarWheel, DecoStaircase, DecoSunRays],'acustica-quetzal': [DecoSerpentHead, DecoTriangle, DecoCalendarWheel],'construccion-capas': [DecoStaircase, DecoTriangle, DecoSerpentHead],'patrimonio-mundial': [DecoCalendarWheel, DecoSunRays, DecoStaircase],
 };
 
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -137,7 +132,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'Un Dios Viajero', icon: 'atom', text: 'Kukulcán es la versión maya del dios Quetzalcóatl de la cultura tolteca y azteca en el centro de México. Significa "Serpiente Emplumada", combinando al quetzal (el ave del cielo) y la serpiente (el animal de la tierra). Era un dios unificador en Mesoamérica.' },
       { label: 'Precisión Relojera', icon: 'clock', text: 'El evento no dura solo un día, sino que es visible durante varios días alrededor de las fechas de los equinoccios, pero alcanza su máxima perfección de 7 triángulos completos y perfectos exactamente en el día del equinoccio, dependiendo de las condiciones de las nubes.' },
     ],
-    fact: 'El diseño es tan meticuloso que un pequeño error en el ángulo de inclinación de los muros de la pirámide, o en la orientación de sus esquinas respecto a la posición del sol en el ecuador, habría arruinado completamente el efecto. Los arquitectos mayas no solo entendían astronomía, dominaban la geometría 3D.',
+    fact: 'El diseño es tan meticuloso que un pequeño error en el ángulo de inclinación de los muros de la pirámide, o en la orientación de sus esquinas respecto a la posición del sol en el ecuador, habría arruinado el efecto. Los arquitectos mayas no solo entendían astronomía, dominaban la geometría 3D.',
   },
   {
     id: 'geometria-solar',
@@ -187,7 +182,7 @@ const INFOGRAPHIC_NODES = [
       'Si alguna vez visitas El Castillo, probablemente verás a guías turísticos aplaudiendo frente a las grandes escalinatas. Esto no es solo para llamar la atención, es para demostrar uno de los efectos acústicos más extraordinarios del mundo antiguo. Al aplaudir frente a la pirámide, el edificio no te devuelve un simple eco de aplauso.',
       'El sonido que rebota desde los altos escalones de piedra se distorsiona de una forma muy peculiar. Escucharás un sonido agudo, metálico y reverberante que hace: "¡CHIRRP!". Este eco inusual suena idénticamente al canto del quetzal resplandeciente, el ave más sagrada del mundo maya y el símbolo alado del dios Kukulcán.',
       '¿Cómo es posible? Cuando las ondas de sonido del aplauso viajan hacia la pirámide, rebotan en los 91 escalones de piedra. Cada escalón está un poquito más lejos que el anterior. Esto significa que el sonido rebotado en los escalones más altos tarda un poco más en regresar a tus oídos que el sonido que rebota en los escalones bajos.',
-      'Ese pequeño retraso continuo entre los múltiples ecos crea un efecto de "chirrido acústico". En acústica moderna, esto se llama una señal de frecuencia modulada o "chirp". Los científicos acústicos han grabado el eco de la pirámide y el canto real del quetzal y, al analizarlos en un espectrograma, descubrieron que las frecuencias y el patrón de las ondas son increíblemente similares.',
+      'Ese pequeño retraso continuo entre los múltiples ecos crea un efecto de "chirrido acústico". En acústica moderna, esto se llama una señal de frecuencia modulada o"chirp". Los científicos acústicos han grabado el eco de la pirámide y el canto real del quetzal y, al analizarlos en un espectrograma, descubrieron que las frecuencias y el patrón de las ondas son increíblemente similares.',
       '¿Fue intencional? Muchos expertos creen que sí. Los mayas no construyeron escalones de tamaño aleatorio. La altura y profundidad precisas de los peldaños de la escalinata norte fueron diseñadas no solo para proyectar las sombras de la Serpiente de Luz, sino para hacer que el edificio "cantara" con la voz del ave sagrada. ¡Arquitectura audiovisual mil años antes del cine!',
     ],
     expandables: [
@@ -213,7 +208,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'Una Tercera Pirámide', icon: 'atom', text: '¡La historia no termina ahí! En 2015, utilizando tomografía eléctrica de resistividad 3D, ingenieros descubrieron que dentro de Kukulcán I hay AÚN OTRA pirámide más pequeña enterrada (Kukulcán 0). Es una muñeca rusa de tres capas que abarca la evolución completa de Chichén Itzá.' },
       { label: 'El Cenote Oculto', icon: 'atom', text: 'Ese mismo escaneo 3D reveló otro secreto profundo: toda la pirámide de El Castillo está construida directamente sobre un gran cenote oculto, un río o cueva subterránea llena de agua. Para los mayas, los cenotes eran las puertas principales al inframundo, haciendo del lugar el punto más sagrado posible.' },
     ],
-    fact: 'El color original de la pirámide exterior no era del tono gris piedra que vemos hoy en día. ¡Estaba completamente cubierta de estuco y pintada de rojo intenso, con detalles en azul brillante y verde! En los días soleados del apogeo maya, este edificio enorme brillaba deslumbrante a kilómetros de distancia.',
+    fact: 'El color original de la pirámide exterior no era del tono gris piedra que vemos hoy en día. ¡Estaba cubierta de estuco y pintada de rojo intenso, con detalles en azul brillante y verde! En los días soleados del apogeo maya, este edificio enorme brillaba deslumbrante a kilómetros de distancia.',
   },
   {
     id: 'patrimonio-mundial',
@@ -371,9 +366,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -556,8 +549,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -596,10 +588,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -629,8 +618,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -725,8 +713,7 @@ function ProgressBar({ nodes, exploredIds, onSelect }) {
             onClick={() => onSelect(n.id)}
             style={{
               width: '12px', height: '12px', borderRadius: '50%',
-              border: 'none', cursor: 'pointer',
-              background: exploredIds.has(n.id) ? n.color : 'rgba(255,255,255,0.2)',
+              border: 'none', cursor: 'pointer', background: exploredIds.has(n.id) ? n.color :'rgba(255,255,255,0.2)',
               boxShadow: exploredIds.has(n.id) ? `0 0 5px ${n.color}` : 'none',
               transition: 'all 0.3s',
             }}

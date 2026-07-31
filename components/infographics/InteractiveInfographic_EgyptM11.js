@@ -109,10 +109,7 @@ const DECO_MAP = {
   'viaje-faraon': [DecoScarab, DecoAnkh, DecoStarCluster],
   'navegantes': [DecoShip, DecoEye, DecoStarCluster],
   'galaxia-numeros': [DecoSpiral, DecoStarCluster, DecoPyramid],
-};
-
-const BIBLIOGRAPHY = [
-  'Allen, J.P. (2005). The Ancient Egyptian Pyramid Texts, SBL',
+}; const BIBLIOGRAPHY = ['Allen, J.P. (2005). The Ancient Egyptian Pyramid Texts, SBL',
   'Krupp, E.C. (1983). Echoes of the Ancient Skies: Astronomy of Lost Civilizations, Harper & Row',
   'Frankfort, H. (1948). Kingship and the Gods, University of Chicago Press',
   'Wells, R.A. (1996). Astronomy in Egypt, Astronomy Before the Telescope, British Museum Press'
@@ -133,7 +130,7 @@ const INFOGRAPHIC_NODES = [
       'El Libro de Nut, un texto astronómico egipcio del siglo XIII a.C., describe cómo las estrellas también eran tragadas por Nut al amanecer y renacían al anochecer. Los astrónomos egipcios llamaron "estrellas imperecederas" a las circumpolares (que nunca se ocultan) y "estrellas infatigables" a los planetas.',
       'Los techos de las tumbas reales en el Valle de los Reyes están decorados con el cuerpo azul de Nut cubierto de estrellas doradas. El sarcófago de Ramsés VI (KV9) tiene una de las representaciones más completas.',
       'Además, los arqueoastrónomos como J.P. Allen han estudiado a fondo los Textos de las Pirámides, donde Nut no es solo una figura poética, sino un mapa celeste codificado. Su cuerpo delimitaba las trayectorias de los astros que los sacerdotes egipcios observaban noche tras noche desde los techos de sus templos, utilizándola como la primera cuadrícula de coordenadas astronómicas de la historia.',
-      'En la fascinante cosmovisión egipcia, el cielo nocturno y el cuerpo de Nut eran uno solo. Según el investigador E.C. Krupp, los sacerdotes usaban instrumentos como el "merkhet" (una antigua herramienta de observación) para medir el tránsito de las estrellas a lo largo de la "espalda" de la diosa, permitiéndoles marcar con precisión las horas de la noche y planificar rituales importantes en completa sincronía con el cosmos.',
+      'En la fascinante cosmovisión egipcia, el cielo nocturno y el cuerpo de Nut eran uno solo. Según el investigador E.C. Krupp, los sacerdotes usaban instrumentos como el "merkhet"(una antigua herramienta de observación) para medir el tránsito de las estrellas a lo largo de la"espalda" de la diosa, permitiéndoles marcar con precisión las horas de la noche y planificar rituales importantes en completa sincronía con el cosmos.',
     ],
     fact: '¿Sabías que...? Los egipcios dividieron la noche en 12 horas usando 36 "decanes" â€” grupos de estrellas que se levantaban en el horizonte cada 10 días. Este sistema decanal es el origen de nuestra semana de 7 días.',
   },
@@ -152,7 +149,7 @@ const INFOGRAPHIC_NODES = [
       'Al observar este resplandeciente Nilo cósmico, los antiguos egipcios creían fervientemente que su Nilo terrenal nacía directamente de sus aguas estelares. Estudios arqueoastronómicos liderados por el Dr. R.A. Wells indican que la orientación de muchos canales de irrigación antiguos y monumentos menores seguía la inclinación de la Vía Láctea durante la temporada de siembra, buscando bendecir sus cultivos.',
       'Esta conexión era tan profunda que los faraones construían barcos solares, como el impresionante barco de Keops encontrado junto a la Gran Pirámide, diseñados específicamente para navegar por estas aguas celestiales después de la vida. Para la mentalidad de la época, el cielo no era un lugar vacío y abstracto, sino un paisaje físico, húmedo y navegable donde las estrellas eran islas de luz y la Vía Láctea la corriente principal.',
     ],
-    fact: 'Los astrónomos del antiguo Egipto crearon el primer calendario solar de 365 días basándose en el orto helíaco de Sirio. Julio César lo adoptó como base para el calendario juliano en el 46 a.C., ¡y es el ancestro de nuestro calendario actual!',
+    fact: 'Los astrónomos del antiguo Egipto crearon el primer calendario solar de 365 días basándose en el orto helíaco de Sirio. Julio César lo adoptó como base para el calendario juliano en el 46 a.C. ¡y es el ancestro de nuestro calendario actual!',
   },
   {
     id: 'arriba-abajo',
@@ -166,8 +163,8 @@ const INFOGRAPHIC_NODES = [
       'En la práctica, los egipcios construían templos alineados con precisión astronómica. El templo de Abu Simbel está diseñado para que los rayos del Sol penetren hasta el fondo solo dos veces al año: el 22 de febrero y el 22 de octubre.',
       'Los astrónomos modernos han confirmado con GPS y LiDAR que la alineación astronómica de los templos egipcios es extraordinariamente precisa â€” con errores de menos de 0.5 grados.',
       'En la ciencia moderna, este concepto tiene un eco sorprendente: los mismos elementos que forman nuestro cuerpo fueron forjados en el interior de estrellas hace miles de millones de años. Como dijo Carl Sagan: "Somos materia estelar."',
-      'Esta idea de reflejar el cielo en la Tierra no era solo poesía, ¡era alta ingeniería! El profesor H. Frankfort en su obra "Kingship and the Gods" explica cómo la fundación de cualquier templo egipcio comenzaba con el ritual de "tensar la cuerda". En esta ceremonia, el faraón, con la ayuda de la diosa del cielo estrellado Seshat, alineaba los cimientos del templo con estrellas específicas de la constelación de la Osa Mayor, a la que llamaban la "Pierna de Toro".',
-      'Esta búsqueda incansable por armonizar las construcciones humanas con el universo visible demuestra que los egipcios poseían conocimientos matemáticos y astronómicos sumamente avanzados. Hoy en día, la física cuántica y la astrofísica también nos enseñan que las leyes fundamentales que rigen el comportamiento de las partículas diminutas en nuestro cuerpo son exactamente las mismas que dictan la danza de las galaxias gigantescas en el universo.',
+      'Esta idea de reflejar el cielo en la Tierra no era solo poesía, ¡era alta ingeniería! El profesor H. Frankfort en su obra "Kingship and the Gods"explica cómo la fundación de cualquier templo egipcio comenzaba con el ritual de"tensar la cuerda". En esta ceremonia, el faraón, con la ayuda de la diosa del cielo estrellado Seshat, alineaba los cimientos del templo con estrellas específicas de la constelación de la Osa Mayor, a la que llamaban la"Pierna de Toro".',
+      'Esta búsqueda incansable por armonizar las construcciones humanas con el universo visible demuestra que los egipcios poseían conocimientos matemáticos y astronómicos avanzados. Hoy en día, la física cuántica y la astrofísica también nos enseñan que las leyes fundamentales que rigen el comportamiento de las partículas diminutas en nuestro cuerpo son exactamente las mismas que dictan la danza de las galaxias gigantescas en el universo.',
     ],
     fact: 'El Gran Templo de Abu Simbel ilumina las estatuas interiores (a 60m de profundidad) exactamente los días 22 de febrero y 22 de octubre. Cuando fue reubicado en 1968 por la presa de Asuán, los ingenieros lograron mantener esta alineación con solo un día de diferencia.',
   },
@@ -195,7 +192,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic/btn_blackhole.png',
     image: '/assets/egypt/infographic/sagittarius_blackhole.png',
     content: [
-      'En la dirección de la constelación de Sagitario se esconde algo verdaderamente monstruoso: un agujero negro supermasivo llamado Sagitario A* â€” con la masa de 4.15 millones de soles comprimida en un espacio más pequeño que la órbita de Mercurio.',
+      'En la dirección de la constelación de Sagitario se esconde algo monstruoso: un agujero negro supermasivo llamado Sagitario A* â€” con la masa de 4.15 millones de soles comprimida en un espacio más pequeño que la órbita de Mercurio.',
       'En 2020, Reinhard Genzel y Andrea Ghez ganaron el Premio Nobel de Física por demostrar su existencia. Durante más de 20 años, rastrearon la estrella S2, que orbita Sagitario A* a velocidades de hasta 25,000 km/s (¡8% de la velocidad de la luz!).',
       'En mayo de 2022, el proyecto Event Horizon Telescope reveló la primera imagen directa de Sagitario A*: un anillo de gas caliente brillante rodeando una sombra oscura. Se sincronizaron 8 radiotelescopios alrededor del mundo.',
       'Los egipcios no sabían de agujeros negros, pero su mitología contenía una metáfora increíble: Apofis, la serpiente del caos, habitaba en las tinieblas e intentaba devorar al Sol cada noche.',
@@ -235,7 +232,7 @@ const INFOGRAPHIC_NODES = [
       'En el desierto del Sahara, la Vía Láctea es tan brillante que proyecta una sombra tenue â€” con una iluminancia de 0.002 lux verificada por astrónomos modernos.',
       'Los mejores observatorios modernos (Paranal en Chile, Mauna Kea en Hawái) se eligen por condiciones similares al desierto egipcio: cielo oscuro, aire seco y altitud.',
       'La experiencia de navegar utilizando las estrellas forjó una conexión inquebrantable entre el cielo y los egipcios cotidianos, no solo los faraones. Investigaciones recientes han revelado que incluso en el puerto de Wadi al-Jarf, el puerto más antiguo conocido del mundo ubicado en el Mar Rojo, los barcos egipcios se alineaban cuidadosamente utilizando las posiciones de Canopus y Sirio para trazar rutas comerciales seguras hacia la legendaria tierra de Punt.',
-      'A pesar de que no poseían brújulas magnéticas ni astrolabios complejos, los astrónomos egipcios lograron medir la altitud de las estrellas usando plomadas y la apertura de una rama de palma. Esta instrumentación rudimentaria, pero extremadamente efectiva, fue el pilar fundamental que permitió a las expediciones cruzar el mar abierto en la oscuridad total. Fueron los pioneros absolutos de la navegación astronómica milenios antes de que los europeos cruzaran el Atlántico.',
+      'A pesar de que no poseían brújulas magnéticas ni astrolabios complejos, los astrónomos egipcios lograron medir la altitud de las estrellas usando plomadas y la apertura de una rama de palma. Esta instrumentación rudimentaria, pero muy efectiva, fue el pilar fundamental que permitió a las expediciones cruzar el mar abierto en la oscuridad total. Fueron los pioneros absolutos de la navegación astronómica milenios antes de que los europeos cruzaran el Atlántico.',
     ],
     fact: 'El "Papiro de Turín" (c. 1150 a.C.) contiene el primer mapa geológico conocido, y los relojes estelares de Senenmut son el atlas estelar más antiguo del mundo.',
   },
@@ -392,9 +389,7 @@ function NodeButton({ node, isActive, onClick, index }) {
       {/* Label */}
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -495,8 +490,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -536,10 +530,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -561,9 +552,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <div
                 key={i}
                 style={{
-                  gridColumn: isWide ? '1 / -1' : 'auto',
-                  background: `rgba(255,255,255,0.02)`,
-                  borderRadius: '12px',
+                  gridColumn: isWide ? '1 / -1' : 'auto', background: `rgba(255,255,255,0.02)`, borderRadius:'12px',
                   padding: '1.2rem',
                   borderLeft: `3px solid ${node.color}30`,
                   position: 'relative',
@@ -571,8 +560,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               >
                 {/* Paragraph number badge */}
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -615,8 +603,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

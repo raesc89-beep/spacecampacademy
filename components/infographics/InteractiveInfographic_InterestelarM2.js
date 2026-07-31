@@ -66,17 +66,11 @@ function DecoSpectrum({ size = 70, color = '#AB47BC', style = {} }) {
 }
 
 const DECO_MAP = {
-  'descubrimiento-2017': [DecoTelescope, DecoStarField, DecoOrbitPath],
-  'nombre-hawaiano': [DecoOumuamua, DecoStarField, DecoSpectrum],
+  'descubrimiento-2017': [DecoTelescope, DecoStarField, DecoOrbitPath],'nombre-hawaiano': [DecoOumuamua, DecoStarField, DecoSpectrum],
   'forma-enigmatica': [DecoOumuamua, DecoSpectrum, DecoOrbitPath],
-  'aceleracion-misteriosa': [DecoOrbitPath, DecoOumuamua, DecoStarField],
-  'hipotesis-cientificas': [DecoSpectrum, DecoTelescope, DecoOumuamua],
-  'composicion-superficie': [DecoSpectrum, DecoStarField, DecoOrbitPath],
-  'legado-cientifico': [DecoTelescope, DecoOrbitPath, DecoStarField],
-};
-
-const BIBLIOGRAPHY = [
-  'Meech, K. et al. (2017). "A brief visit from a red and extremely elongated interstellar asteroid", Nature, 552',
+  'aceleracion-misteriosa': [DecoOrbitPath, DecoOumuamua, DecoStarField],'hipotesis-cientificas': [DecoSpectrum, DecoTelescope, DecoOumuamua],
+  'composicion-superficie': [DecoSpectrum, DecoStarField, DecoOrbitPath],'legado-cientifico': [DecoTelescope, DecoOrbitPath, DecoStarField],
+}; const BIBLIOGRAPHY = ['Meech, K. et al. (2017). "A brief visit from a red and extremely elongated interstellar asteroid", Nature, 552',
   'Loeb, A. (2021). Extraterrestrial: The First Sign of Intelligent Life Beyond Earth, Houghton Mifflin',
   'Desch, S. & Jackson, A. (2021). "1I/\'Oumuamua as an N2 ice fragment", Journal of Geophysical Research: Planets, 126',
   'Bannister, M. et al. (2017). "Col-OSSOS: Colors of the Interstellar Planetesimal 1I/\'Oumuamua", The Astrophysical Journal Letters, 851',
@@ -111,16 +105,16 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/interestelar/infographic_m2/hero_nombre-hawaiano.jpg',
     content: [
       'Cuando descubres algo nuevo en el espacio, tienes el honor y la responsabilidad de ponerle un nombre. Al principio, los científicos estaban muy confundidos sobre cómo clasificar a este extraño visitante. Le pusieron la etiqueta temporal C/2017 U1 pensando que era un cometa, pero como no tenía cola de polvo ni gas, lo cambiaron rápidamente a A/2017 U1 para indicar que era un asteroide seco y rocoso. Sin embargo, ni siquiera eso era correcto.',
-      'Al darse cuenta de que este no era un asteroide normal de nuestro sistema solar, la Unión Astronómica Internacional (el grupo oficial que nombra las cosas en el espacio) tuvo que inventar una categoría completamente nueva. Crearon la designación "I" para "Interestelar". Así, el objeto fue nombrado oficialmente 1I/2017 U1. El "1I" significa que es el primer objeto interestelar jamás descubierto, marcando el inicio de una nueva lista en los libros de ciencia.',
-      'Pero los números y letras son aburridos, así que el equipo que lo descubrió en Hawái quería un nombre especial que reflejara su origen extraordinario. Consultaron con expertos en lengua y cultura hawaiana y eligieron la palabra "Oumuamua" (se pronuncia oh-moo-ah-moo-ah). Este hermoso nombre tiene un significado muy profundo: "Ou" significa "alcanzar" y "mua" significa "primero" o "por adelantado".',
+      'Al darse cuenta de que este no era un asteroide normal de nuestro sistema solar, la Unión Astronómica Internacional (el grupo oficial que nombra las cosas en el espacio) tuvo que inventar una categoría completamente nueva. Crearon la designación "I" para "Interestelar". Así, el objeto fue nombrado oficialmente 1I/2017 U1. El"1I" significa que es el primer objeto interestelar jamás descubierto, marcando el inicio de una nueva lista en los libros de ciencia.',
+      'Pero los números y letras son aburridos, así que el equipo que lo descubrió en Hawái quería un nombre especial que reflejara su origen extraordinario. Consultaron con expertos en lengua y cultura hawaiana y eligieron la palabra "Oumuamua"(se pronuncia oh-moo-ah-moo-ah). Este hermoso nombre tiene un significado muy profundo:"Ou" significa "alcanzar" y "mua" significa "primero" o "por adelantado".',
       'Juntos, se traduce libremente como "el primer mensajero que llega de lejos". Es una analogía poética y perfecta. Imagina a un explorador valiente que es enviado como avanzadilla por un ejército antiguo, corriendo por delante para entregar noticias importantes. Oumuamua es exactamente eso: un emisario silencioso enviado desde las profundidades inexploradas de la galaxia para saludarnos en nombre de un sistema estelar desconocido.',
       'El nombre también refleja el profundo respeto por la cultura hawaiana y la ubicación de los observatorios en montañas sagradas como Haleakala y Mauna Kea. Así como los antiguos navegantes polinesios leían las estrellas para cruzar el vasto Océano Pacífico, hoy los astrónomos en Hawái usan esas mismas montañas para navegar por el inmenso océano cósmico, conectando la antigua sabiduría con la astronomía moderna de manera poética.'
     ],
     expandables: [
-      { label: 'Un Nombre, Muchas Pronunciaciones', icon: 'zap', text: 'La pronunciación correcta de Oumuamua incluye algo llamado "okina", que es una parada glotal (como la pequeña pausa en la palabra "uh-oh" en inglés). Se escribe con un apóstrofe al principio: \'Oumuamua. Muchos presentadores de noticias alrededor del mundo sufrieron y se trabaron la lengua tratando de pronunciarlo correctamente en 2017.' },
+      { label: 'Un Nombre, Muchas Pronunciaciones', icon: 'zap', text: 'La pronunciación correcta de Oumuamua incluye algo llamado "okina", que es una parada glotal (como la pequeña pausa en la palabra"uh-oh" en inglés). Se escribe con un apóstrofe al principio: \'Oumuamua. Muchos presentadores de noticias alrededor del mundo sufrieron y se trabaron la lengua tratando de pronunciarlo correctamente en 2017.' },
       { label: 'La Nueva Regla de Nombres', icon: 'atom', text: 'Gracias a Oumuamua, ahora existe una regla oficial para nombrar objetos interestelares. El segundo objeto de este tipo jamás descubierto, un cometa interestelar hallado en 2019, recibió la designación 2I/Borisov (por su descubridor). Ahora estamos esperando ansiosamente encontrar el 3I, el 4I y muchos más en los próximos años.' }
     ],
-    fact: 'Antes de decidirse por el nombre hawaiano, el equipo de descubrimiento consideró llamar al objeto "Rama", en honor a una famosa novela de ciencia ficción del escritor Arthur C. Clarke llamada "Cita con Rama". En ese libro, un enorme objeto cilíndrico de origen alienígena entra en nuestro sistema solar. Al final, prefirieron un nombre que honrara a Hawái.'
+    fact: 'Antes de decidirse por el nombre hawaiano, el equipo de descubrimiento consideró llamar al objeto "Rama", en honor a una famosa novela de ciencia ficción del escritor Arthur C. Clarke llamada"Cita con Rama". En ese libro, un enorme objeto cilíndrico de origen alienígena entra en nuestro sistema solar. Al final, prefirieron un nombre que honrara a Hawái.'
   },
   {
     id: 'forma-enigmatica',
@@ -129,11 +123,11 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/interestelar/infographic_m2/btn_forma-enigmatica.jpg',
     image: '/assets/interestelar/infographic_m2/hero_forma-enigmatica.jpg',
     content: [
-      'Si le pides a un niño que dibuje un asteroide, probablemente dibujará una roca redonda y grumosa, como una patata gigante o un trozo de carbón deforme. Eso es porque casi todos los asteroides en nuestro sistema solar se ven más o menos así. Pero cuando los astrónomos midieron la luz que reflejaba Oumuamua mientras giraba en el espacio, descubrieron que este visitante tenía una forma verdaderamente alucinante y extraña.',
-      'Imagina tomar un faro de luz y apuntarlo a un objeto que da vueltas en la oscuridad. Si el objeto es redondo como una pelota, la cantidad de luz que refleja hacia ti se mantendrá más o menos constante. Pero la luz de Oumuamua parpadeaba dramáticamente, volviéndose 10 veces más brillante y luego muy tenue cada 7.3 horas. Esto solo podía significar una cosa: el objeto era extremadamente largo y delgado, girando de punta a punta como un bastón lanzado al aire.',
+      'Si le pides a un niño que dibuje un asteroide, probablemente dibujará una roca redonda y grumosa, como una patata gigante o un trozo de carbón deforme. Eso es porque casi todos los asteroides en nuestro sistema solar se ven más o menos así. Pero cuando los astrónomos midieron la luz que reflejaba Oumuamua mientras giraba en el espacio, descubrieron que este visitante tenía una forma alucinante y extraña.',
+      'Imagina tomar un faro de luz y apuntarlo a un objeto que da vueltas en la oscuridad. Si el objeto es redondo como una pelota, la cantidad de luz que refleja hacia ti se mantendrá más o menos constante. Pero la luz de Oumuamua parpadeaba dramáticamente, volviéndose 10 veces más brillante y luego muy tenue cada 7.3 horas. Esto solo podía significar una cosa: el objeto era muy largo y delgado, girando de punta a punta como un bastón lanzado al aire.',
       'Los cálculos sugieren que Oumuamua es hasta diez veces más largo que ancho. Piensa en las proporciones de un pepino gigante, o más bien, en un puro cósmico o un enorme rascacielos flotando en el espacio vacío. Se estima que mide unos 230 metros de largo pero solo unos 35 metros de ancho y grosor. Ningún asteroide o cometa conocido en nuestro propio sistema solar tiene una forma tan radical y estirada.',
       '¿Cómo se formó algo tan extraño? Los científicos creen que Oumuamua podría haber nacido en un evento de destrucción cataclísmica. Imagina dos planetas rocosos chocando violentamente, o un planeta pequeño pasando demasiado cerca de su estrella, donde la intensa gravedad lo estiró y lo partió en pedazos como si fuera plastilina. Los fragmentos resultantes serían lanzados al espacio profundo a velocidades asombrosas, congelándose en formas alargadas para siempre.',
-      'Otra teoría fascinante sugiere que Oumuamua no es como un cigarro, sino más bien como un panqueque cósmico o una moneda gigante. Los datos de luz también coinciden con un objeto muy plano y ovalado. Sea un cigarro o un panqueque, su forma extrema nos dice que las condiciones de su nacimiento en su sistema solar distante debieron ser increíblemente caóticas y violentas, muy diferentes a la forma tranquila en que se formaron nuestras rocas locales.'
+      'Otra teoría fascinante sugiere que Oumuamua no es como un cigarro, sino más bien como un panqueque cósmico o una moneda gigante. Los datos de luz también coinciden con un objeto muy plano y ovalado. Sea un cigarro o un panqueque, su forma extrema nos dice que las condiciones de su nacimiento en su sistema solar distante debieron ser caóticas y violentas, muy diferentes a la forma tranquila en que se formaron nuestras rocas locales.'
     ],
     expandables: [
       { label: 'Rotación Caótica', icon: 'zap', text: 'Oumuamua no gira suavemente como un trompo bien equilibrado. En lugar de eso, está "dando volteretas" o cayendo de manera caótica (lo que en física se llama rotación no principal). Imagina lanzar un martillo por el aire; no gira solo en un eje, sino que se tambalea de manera compleja. Esto sugiere que sufrió un fuerte golpe en el pasado.' },
@@ -151,8 +145,8 @@ const INFOGRAPHIC_NODES = [
       'Justo cuando los astrónomos pensaban que habían entendido a Oumuamua, el misterioso visitante lanzó la mayor sorpresa de todas. Imagina que lanzas una bola de boliche por el pasillo: la bola rodará y poco a poco irá frenando, siguiendo exactamente las leyes matemáticas del movimiento. Los planetas y asteroides hacen lo mismo en el espacio, moviéndose obedientemente según los tirones de la gravedad del Sol y los planetas.',
       'Pero Oumuamua no se comportó como una bola de boliche normal. Mientras se alejaba del Sol, los telescopios notaron que estaba acelerando, como si alguien hubiera pisado el acelerador en el espacio. No era un empujón enorme, sino una fuerza extra sutil y continua que empujaba al objeto, haciendo que se desviara ligeramente de la ruta que la gravedad dictaba. Este fenómeno se conoce como "aceleración no gravitacional".',
       'Normalmente, los cometas hacen esto todo el tiempo. Cuando un cometa se acerca al calor del Sol, el hielo en su interior se derrite y se convierte en gas. El gas sale disparado como el vapor de una tetera hirviendo, creando diminutos cohetes naturales que empujan al cometa y forman la hermosa cola brillante. A esto se le llama "desgasificación", y es la explicación estándar para las rocas espaciales que se desvían.',
-      '¡Pero aquí está el misterio! Oumuamua no tenía absolutamente ninguna cola. Telescopios muy potentes como el Spitzer miraron con cuidado buscando cualquier rastro de gas, polvo o agua saliendo del objeto, y no encontraron nada. Era completamente invisible e indetectable. ¿Cómo podía algo estar actuando como un cohete sin tener fuego ni humo visible en el escape? Esto dejó a la comunidad científica rascándose la cabeza con total asombro.',
-      'La misteriosa aceleración desató una tormenta de debates y teorías salvajes. Si no era un cometa normal soltando gas, ¿qué fuerza invisible lo estaba empujando hacia las estrellas? Las posibles respuestas iban desde efectos extraños de la radiación solar empujando contra su superficie inusual, hasta exóticos tipos de hielo que nuestros telescopios no pueden ver. ¡Fue este enigma el que hizo que Oumuamua fuera verdaderamente famoso mundialmente!'
+      '¡Pero aquí está el misterio! Oumuamua no tenía ninguna cola. Telescopios muy potentes como el Spitzer miraron con cuidado buscando cualquier rastro de gas, polvo o agua saliendo del objeto, y no encontraron nada. Era invisible e indetectable. ¿Cómo podía algo estar actuando como un cohete sin tener fuego ni humo visible en el escape? Esto dejó a la comunidad científica rascándose la cabeza con total asombro.',
+      'La misteriosa aceleración desató una tormenta de debates y teorías salvajes. Si no era un cometa normal soltando gas, ¿qué fuerza invisible lo estaba empujando hacia las estrellas? Las posibles respuestas iban desde efectos extraños de la radiación solar empujando contra su superficie inusual, hasta exóticos tipos de hielo que nuestros telescopios no pueden ver. ¡Fue este enigma el que hizo que Oumuamua fuera famoso mundialmente!'
     ],
     expandables: [
       { label: 'La Fuerza de la Luz', icon: 'zap', text: 'La luz del sol en realidad tiene fuerza física. Las partículas de luz (fotones) pueden empujar objetos como el viento empuja una cometa, un efecto llamado "presión de radiación". Algunos científicos sugirieron que Oumuamua era tan liviano y poroso (quizás como un copo de nieve gigante de polvo) que la simple luz solar era suficiente para empujarlo.' },
@@ -169,7 +163,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'La extraña forma, la ausencia de cola y la misteriosa aceleración de Oumuamua crearon el escenario perfecto para un intenso debate científico. Piensa en los científicos como en un grupo de detectives de la policía intentando resolver el misterio del robo perfecto, donde no hay huellas ni cámaras de seguridad. Cada detective comenzó a presentar su propia teoría para explicar cómo sucedieron las cosas con nuestro visitante interestelar.',
       'La hipótesis más famosa y controvertida vino de Avi Loeb, un destacado profesor de astronomía en la Universidad de Harvard. Loeb sugirió algo sacado directamente de la ciencia ficción: ¿qué tal si Oumuamua es una nave espacial artificial? Argumentó que su forma plana y brillante y su aceleración sin gas podrían explicarse si fuera una "vela solar" muy delgada, construida por una civilización alienígena avanzada para navegar por la galaxia usando la luz estelar.',
-      'Aunque la teoría alienígena cautivó al público y a los periódicos, la gran mayoría de la comunidad científica buscó respuestas naturales menos extremas. En 2021, los científicos Steven Desch y Alan Jackson propusieron una idea brillante: tal vez Oumuamua era un trozo de un planeta similar a Plutón en otro sistema estelar. Si el objeto estuviera hecho de nitrógeno sólido congelado, el calor del Sol derretiría el nitrógeno en un gas completamente transparente e invisible para los telescopios.',
+      'Aunque la teoría alienígena cautivó al público y a los periódicos, la gran mayoría de la comunidad científica buscó respuestas naturales menos extremas. En 2021, los científicos Steven Desch y Alan Jackson propusieron una idea brillante: tal vez Oumuamua era un trozo de un planeta similar a Plutón en otro sistema estelar. Si el objeto estuviera hecho de nitrógeno sólido congelado, el calor del Sol derretiría el nitrógeno en un gas transparente e invisible para los telescopios.',
       'Otra hipótesis popular sugiere que Oumuamua es un "iceberg de hidrógeno molecular". El hidrógeno puro y congelado solo existe en las regiones más frías y profundas de las nubes estelares en el espacio oscuro. Si un enorme bloque de hielo de hidrógeno fuera expulsado hacia nuestro sistema solar, también sublimaría gas invisible, dándole el empuje extra sin dejar rastro de polvo o agua. Sin embargo, algunos críticos dicen que un iceberg de hidrógeno se habría derretido mucho antes de llegar a nosotros.',
       'En 2023, otro equipo sugirió que Oumuamua era simplemente un cometa rico en agua, pero con un giro especial: los rayos cósmicos durante su largo viaje habían atrapado moléculas de gas hidrógeno dentro del hielo de agua. Al acercarse al Sol, este gas atrapado escaparía violentamente, dando el empuje mágico sin necesidad de vaporizar polvo visible. Como los grandes misterios, la ciencia avanza enfrentando estas diferentes hipótesis hasta encontrar la verdad.'
     ],
@@ -194,7 +188,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'Espectroscopía', icon: 'zap', text: 'Cada material en el universo tiene una "huella digital" de luz única. Por ejemplo, el hierro refleja ciertas longitudes de onda, y el hielo refleja otras. Al estudiar el arcoíris de luz reflejada (el espectro), los astrónomos pueden saber de qué está hecha una estrella o un asteroide sin tener que viajar millones de kilómetros para tocarlo.' },
-      { label: 'Un Viaje Violento', icon: 'clock', text: 'El color oscuro también indica que Oumuamua ha tenido un viaje extremadamente largo y duro. Se estima que ha estado viajando por la Vía Láctea, bañado en radiación cósmica letal, durante al menos decenas de millones de años, tal vez incluso miles de millones, sin ver de cerca una estrella caliente hasta que encontró nuestro Sol.' }
+      { label: 'Un Viaje Violento', icon: 'clock', text: 'El color oscuro también indica que Oumuamua ha tenido un viaje muy largo y duro. Se estima que ha estado viajando por la Vía Láctea, bañado en radiación cósmica letal, durante al menos decenas de millones de años, tal vez incluso miles de millones, sin ver de cerca una estrella caliente hasta que encontró nuestro Sol.' }
     ],
     fact: 'El albedo de Oumuamua (una medida de cuán brillante y reflectante es una superficie) es muy bajo. Refleja aproximadamente el mismo porcentaje de luz que un trozo de carbón muy oscuro recién extraído de la mina. Esto hizo que fuera aún más difícil de detectar contra la inmensa oscuridad del cielo nocturno, probando lo afortunados que fuimos de verlo.'
   },
@@ -215,7 +209,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Segundo Visitante', icon: 'zap', text: 'Solo dos años después de Oumuamua, en 2019, un astrónomo aficionado llamado Gennadiy Borisov descubrió un SEGUNDO visitante interestelar. Esta vez, era claramente un cometa con una gran cola de gas y polvo, y lo llamaron 2I/Borisov. Esto probó definitivamente que Oumuamua no fue solo un milagro único e irrepetible.' },
       { label: 'Misiones de Intercepción', icon: 'atom', text: 'La Agencia Espacial Europea (ESA) ha aprobado una misión llamada "Comet Interceptor". Esta sonda espacial será lanzada y se "estacionará" en el espacio, esperando pacientemente como una araña en su tela. Si los telescopios detectan un nuevo objeto interestelar o un cometa prístino acercándose a la Tierra, la sonda se despertará para ir a su encuentro y tomar las primeras fotografías de cerca.' }
     ],
-    fact: 'Se estima estadísticamente que en cualquier momento dado, hay alrededor de 10,000 objetos del tamaño de Oumuamua pasando invisiblemente dentro de la órbita del planeta Neptuno. Simplemente nunca los vemos porque son increíblemente oscuros, silenciosos y viajan a velocidades vertiginosamente rápidas a través de un espacio inmenso y vacío. El cielo está lleno de fantasmas estelares.'
+    fact: 'Se estima estadísticamente que en cualquier momento dado, hay alrededor de 10,000 objetos del tamaño de Oumuamua pasando invisiblemente dentro de la órbita del planeta Neptuno. Simplemente nunca los vemos porque son oscuros, silenciosos y viajan a velocidades vertiginosamente rápidas a través de un espacio inmenso y vacío. El cielo está lleno de fantasmas estelares.'
   }
 ];
 
@@ -354,9 +348,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -539,8 +531,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -579,10 +570,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -612,8 +600,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -662,7 +649,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           >
             <Star style={{ color: node.color, flexShrink: 0, marginTop: '2px' }} size={24} />
             <div>
-              <span style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: node.color, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.4rem' }}>
+              <span style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: node.color, textTransform:'uppercase', letterSpacing: '1px', marginBottom: '0.4rem' }}>
                 Dato Curioso
               </span>
               <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.6, color: 'rgba(255,255,255,0.9)', fontStyle: 'italic' }}>
@@ -700,8 +687,7 @@ function ProgressBar({ nodes, exploredIds, onNodeClick }) {
                 left: `${(i / (nodes.length - 1)) * 100}%`,
                 transform: 'translateX(-50%)',
                 width: '12px', height: '12px',
-                borderRadius: '50%',
-                background: isExplored ? node.color : 'rgba(255,255,255,0.2)',
+                borderRadius: '50%', background: isExplored ? node.color :'rgba(255,255,255,0.2)',
                 border: `2px solid ${isExplored ? '#0B0E2D' : 'transparent'}`,
                 boxShadow: isExplored ? `0 0 10px ${node.color}` : 'none',
                 cursor: 'pointer',

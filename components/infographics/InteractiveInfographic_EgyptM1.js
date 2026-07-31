@@ -114,14 +114,10 @@ function DecoSerpent({ size = 80, color = '#FF6B6B', style = {} }) {
 
 // Map node IDs to decorative SVGs for floating decorations
 const DECO_MAP = {
-  'observatorio': [DecoStoneCircle, DecoStarCluster, DecoPyramid],
-  'sahara-verde': [DecoSerpent, DecoAnkh, DecoSolstice],
-  'megalitos': [DecoStoneCircle, DecoPyramid, DecoStarCluster],
-  'solsticio': [DecoSolstice, DecoStarCluster, DecoEye],
-  'orion-map': [DecoStarCluster, DecoPyramid, DecoStoneCircle],
-  'tribus': [DecoAnkh, DecoScarab, DecoSerpent],
-  'stonehenge': [DecoStoneCircle, DecoSolstice, DecoPyramid],
-  'legado-nilo': [DecoAnkh, DecoStarCluster, DecoScarab],
+  'observatorio': [DecoStoneCircle, DecoStarCluster, DecoPyramid],'sahara-verde': [DecoSerpent, DecoAnkh, DecoSolstice],
+  'megalitos': [DecoStoneCircle, DecoPyramid, DecoStarCluster],'solsticio': [DecoSolstice, DecoStarCluster, DecoEye],
+  'orion-map': [DecoStarCluster, DecoPyramid, DecoStoneCircle],'tribus': [DecoAnkh, DecoScarab, DecoSerpent],
+  'stonehenge': [DecoStoneCircle, DecoSolstice, DecoPyramid],'legado-nilo': [DecoAnkh, DecoStarCluster, DecoScarab],
 };
 
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -158,7 +154,7 @@ const INFOGRAPHIC_NODES = [
       '¿Te imaginas el desierto del Sahara con ríos, lagos y bosques? Parece ciencia ficción, pero hace entre 11,000 y 5,000 años era exactamente así. Los científicos llaman a este periodo el "Sahara Verde" o "Periodo Húmedo Africano". La Tierra se inclinó ligeramente diferente hacia el Sol, y eso cambió los patrones de lluvia sobre todo el norte de África.',
       'En Nabta Playa, los arqueólogos encontraron huesos de peces de agua dulce, conchas de moluscos, y restos de plantas que solo crecen cerca del agua. Había una gran cuenca endorreica (un lago que no tiene salida al mar) donde las tribus se reunían durante la temporada de lluvias del monzón. Era como un oasis gigante en medio de lo que hoy es puro desierto.',
       'Las tribus que vivían aquí eran pastores seminómadas que criaban ganado vacuno. Seguían las lluvias estacionales: cuando llovía (verano), se reunían cerca del lago de Nabta Playa. Cuando llegaba la estación seca (invierno), se movían hacia el sur buscando pastos. Necesitaban saber exactamente cuándo iba a llover para sobrevivir, y por eso empezaron a estudiar las estrellas.',
-      'El cambio climático que convirtió el Sahara en un desierto fue gradual. Entre el 5500 y el 3500 a.C., las lluvias fueron disminuyendo poco a poco. Las tribus se vieron obligadas a migrar hacia la única fuente de agua permanente de la región: el río Nilo. Esta migración es una de las teorías más aceptadas sobre el origen de la civilización egipcia.',
+      'El cambio climático que convirtió el Sahara en un desierto fue gradual. Entre el 5500 y el 3500 a.C. Las lluvias fueron disminuyendo poco a poco. Las tribus se vieron obligadas a migrar hacia la única fuente de agua permanente de la región: el río Nilo. Esta migración es una de las teorías más aceptadas sobre el origen de la civilización egipcia.',
       'Los sedimentos del lago de Nabta Playa cuentan esta historia como capas de un pastel: las capas más profundas tienen arcilla húmeda y restos orgánicos (cuando había agua), y las capas superiores son arena seca (cuando el desierto tomó control). Es como leer un libro de historia escrito por la propia Tierra.',
     ],
     fact: 'El "Sahara Verde" fue tan húmedo que tenía ríos más grandes que el Mississippi. Los científicos han encontrado pinturas rupestres en el Sahara mostrando hipopótamos, cocodrilos y elefantes nadando. ¡Hoy esos mismos lugares tienen las temperaturas más altas del planeta!',
@@ -173,7 +169,7 @@ const INFOGRAPHIC_NODES = [
       'Las piedras de Nabta Playa no son piedras cualquiera: son megalitos, palabra que viene del griego "mega" (grande) y "lithos" (piedra). Algunas pesan varias toneladas y fueron traídas desde canteras a kilómetros de distancia. ¿Cómo las transportaron sin ruedas, sin animales de carga entrenados y sin herramientas de metal? ¡Solo con ingenio humano y trabajo en equipo!',
       'El círculo principal tiene un diámetro de aproximadamente 4 metros y está formado por 30 piedras relativamente pequeñas. Pero lo más interesante son las 6 piedras centrales: están colocadas en dos líneas de 3, y cada línea tiene una inclinación diferente. El astrofísico Thomas G. Brophy propuso que estas piedras representan estrellas específicas del cielo.',
       'Además del círculo, hay cinco alineamientos megalíticos que se extienden como los radios de una bicicleta desde un punto central. Cada alineamiento apunta hacia una dirección astronómicamente significativa. Es como si hubieran dibujado flechas gigantes en el suelo diciendo: "¡Mira hacia allá para ver algo importante en el cielo!"',
-      'Algunos de los megalitos enterrados son verdaderamente impresionantes. Los arqueólogos encontraron piedras esculpidas de hasta 2.5 metros de alto enterradas bajo la superficie, con formas que parecen representar figuras o símbolos. Uno de los hallazgos más sorprendentes fue una roca esculpida que algunos investigadores interpretan como un intento temprano de escultura monumental egipcia.',
+      'Algunos de los megalitos enterrados son impresionantes. Los arqueólogos encontraron piedras esculpidas de hasta 2.5 metros de alto enterradas bajo la superficie, con formas que parecen representar figuras o símbolos. Uno de los hallazgos más sorprendentes fue una roca esculpida que algunos investigadores interpretan como un intento temprano de escultura monumental egipcia.',
       'Las excavaciones también revelaron complejos subterráneos: cámaras de piedra con techos forrados de arcilla donde se realizaban ceremonias. En estas cámaras se encontraron esqueletos completos de ganado vacuno, cuidadosamente enterrados como ofrendas rituales. Cada piedra, cada alineamiento, cada cámara tenía un propósito preciso conectado con el cielo.',
     ],
     fact: 'Los constructores de Nabta Playa no tenían ninguna herramienta de metal. Todo lo hicieron con piedra contra piedra, cuerdas de fibra vegetal y palancas de madera. Mover una piedra de 2 toneladas requería al menos 20 personas tirando coordinadamente. ¡Era un proyecto comunitario de toda la tribu!',
@@ -201,7 +197,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/egypt/infographic_nabta/hero_orion.png',
     content: [
       '¿Conoces el cinturón de Orión? Son tres estrellas brillantes en línea recta (Alnitak, Alnilam y Mintaka) que puedes ver fácilmente en el cielo nocturno de invierno. Son tan reconocibles que casi todas las civilizaciones antiguas las identificaron. ¡Y las tribus de Nabta Playa las mapearon en piedra hace 7,000 años!',
-      'El astrofísico Thomas G. Brophy, en su libro "The Origin Map" (2002), propuso algo fascinante: las 6 piedras centrales del círculo representan estrellas de la constelación de Orión. Tres piedras corresponden al cinturón de Orión, y las otras tres al "hombro" de Orión (las estrellas Betelgeuse, Bellatrix y la estrella principal). Las piedras con mayor inclinación representan estrellas más lejanas.',
+      'El astrofísico Thomas G. Brophy, en su libro "The Origin Map"(2002), propuso algo fascinante: las 6 piedras centrales del círculo representan estrellas de la constelación de Orión. Tres piedras corresponden al cinturón de Orión, y las otras tres al"hombro" de Orión (las estrellas Betelgeuse, Bellatrix y la estrella principal). Las piedras con mayor inclinación representan estrellas más lejanas.',
       'Si Brophy tiene razón, Nabta Playa no era solo un calendario solar, sino también un mapa estelar tridimensional. Los constructores no solo señalaron dónde están las estrellas en el cielo (posición angular), sino que también codificaron su distancia relativa usando la inclinación de las piedras. ¡Eso sería extraordinariamente avanzado para su época!',
       'Esta teoría es debatida entre los científicos. Algunos arqueólogos como Mark Lehner reconocen la importancia del sitio pero son cautelosos sobre interpretaciones demasiado ambiciosas. Lo que sí es indiscutible es que los alineamientos megalíticos apuntan hacia estrellas importantes del cielo antiguo, incluyendo las del cinturón de Orión y Sirio, la estrella más brillante del cielo nocturno.',
       'La conexión Orión-Egipto es profundísima. Los antiguos egipcios llamaban al cinturón de Orión "Sah" y lo asociaban con Osiris, el dios del inframundo. Si Nabta Playa ya mapeaba a Orión miles de años antes de los faraones, significaría que la obsesión egipcia con esta constelación tiene raíces mucho más antiguas de lo que imaginamos.',
@@ -246,7 +242,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/egypt/infographic_nabta/hero_legado.png',
     content: [
       'Cuando el Sahara se secó, las tribus de Nabta Playa no desaparecieron: migraron hacia el este, hacia la única fuente de agua que nunca se secaba: el río Nilo. Se llevaron con ellas algo más valioso que cualquier tesoro material: miles de años de conocimiento astronómico guardado en sus mentes y en sus tradiciones orales.',
-      'Esta migración, que ocurrió entre el 3500 y el 3000 a.C., coincide exactamente con el periodo en que la civilización egipcia empezó a formarse a orillas del Nilo. Los primeros asentamientos predinásticos del Valle del Nilo muestran prácticas culturales sorprendentemente similares a las de Nabta Playa: culto al ganado, enterramientos rituales y orientación astronómica de estructuras.',
+      'Esta migración, que ocurrió entre el 3500 y el 3000 a.C. Coincide exactamente con el periodo en que la civilización egipcia empezó a formarse a orillas del Nilo. Los primeros asentamientos predinásticos del Valle del Nilo muestran prácticas culturales sorprendentemente similares a las de Nabta Playa: culto al ganado, enterramientos rituales y orientación astronómica de estructuras.',
       'El egiptólogo Mark Lehner, aunque cauteloso, admite: "Tiene sentido, pero no de un modo directo. No se puede ir directamente de estos megalitos a la pirámide de Dyeser." Es decir, Nabta Playa no inventó las pirámides, pero plantó las semillas del conocimiento que eventualmente floreció en la gran civilización egipcia.',
       'Las conexiones son fascinantes: el culto al ganado de Nabta Playa se transformó en el culto a Hathor (la diosa vaca). La obsesión con Orión se convirtió en el culto a Osiris-Sah. La orientación astronómica de las piedras se refinó hasta crear las pirámides alineadas con las estrellas. Es como una semilla que crece hasta convertirse en un árbol gigante.',
       'Hoy, la NASA y agencias espaciales de todo el mundo estudian Nabta Playa como ejemplo de cómo los humanos pueden usar la astronomía con tecnología mínima. Si algún día colonizamos Marte y perdemos la tecnología, necesitaremos saber hacer lo que hicieron las tribus de Nabta Playa: mirar el cielo con ojos inteligentes y construir herramientas con las piedras del suelo.',
@@ -399,9 +395,7 @@ function NodeButton({ node, isActive, onClick, index }) {
       {/* Label */}
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -500,8 +494,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -541,10 +534,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -566,17 +556,14 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <div
                 key={i}
                 style={{
-                  gridColumn: isWide ? '1 / -1' : 'auto',
-                  background: `rgba(255,255,255,0.02)`,
-                  borderRadius: '12px',
+                  gridColumn: isWide ? '1 / -1' : 'auto', background: `rgba(255,255,255,0.02)`, borderRadius:'12px',
                   padding: '1.2rem',
                   borderLeft: `3px solid ${node.color}30`,
                   position: 'relative',
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -619,8 +606,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

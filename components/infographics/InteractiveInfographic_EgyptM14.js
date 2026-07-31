@@ -213,8 +213,7 @@ const DECO_MAP = {
   'asteroide-2029': [DecoAsteroid, DecoEclipse, DecoSerpent],
   'peligro': [DecoAsteroid, DecoChicxulub, DecoSerpent],
   'ciclo-saros': [DecoSaros, DecoEclipse, DecoSolarBarge],
-  'dart': [DecoDARTMission, DecoAsteroid, DecoChicxulub],
-  'libro-muertos': [DecoSolarBarge, DecoSerpent, DecoEclipse],
+  'dart': [DecoDARTMission, DecoAsteroid, DecoChicxulub],'libro-muertos': [DecoSolarBarge, DecoSerpent, DecoEclipse],
   'legado-caos': [DecoChicxulub, DecoAsteroid, DecoDARTMission],
 };
 
@@ -222,7 +221,7 @@ const DECO_MAP = {
 const BIBLIOGRAPHY = [
   'Brozovic, M. et al. (2018). Goldstone and Arecibo radar observations of (99942) Apophis, Icarus, 300',
   'NASA/JPL (2021). Apophis: Planetary Defense Exercise, NASA Technical Report',
-  'Daly, R.T. et al. (2023). Successful kinetic impact into asteroid Dimorphos, Nature, 616',
+  'Daly, R.T. Et al. (2023). Successful kinetic impact into asteroid Dimorphos, Nature, 616',
   'Krupp, E.C. (1991). Beyond the Blue Horizon: Myths and Legends of the Sun, Moon, Stars, and Planets, HarperCollins',
 ];
 
@@ -240,7 +239,7 @@ const INFOGRAPHIC_NODES = [
       'Seth, que en otros mitos egipcios es el villano (el asesino de Osiris), aquí es el héroe. Cada noche viajaba en la barca de Ra y luchaba con su lanza contra Apofis. Era el único dios lo suficientemente feroz y caótico para combatir a la serpiente del caos. Fue la primera vez en la historia donde "controlar el caos con caos" fue una estrategia oficial de los dioses.',
       'Esta historia no era solo un cuento para niños. Los sacerdotes en los templos realizaban rituales cada noche para ayudar a Ra en su batalla. Leían en voz alta hechizos del "Libro de Apofis" (Libro para expulsar a Apep), que describían con detalle cómo cortar, atar, quemar, escupir y disolver a la serpiente. El ritual era tan importante que se hacía incluso cuando había sol: la batalla nunca paraba.',
     ],
-    fact: 'El nombre "Apofis" viene del griego, pero en egipcio antiguo se decía "Apep". En los textos más antiguos (Textos de los Ataúdes, ca. 2100 a.C.), se describen los rituales exactos para combatirlo. Un papiro del Museo Británico (Papiro Bremner-Rhind, ca. 300 a.C.) contiene el "Libro de Apep" con 75 hechizos específicos para derrotar a la serpiente, incluyendo instrucciones para escupirle, pisotearle la cabeza, y quemarlo a fuego lento. ¡Hasta hoy es uno de los rituales más elaborados conocidos de cualquier civilización antigua!',
+    fact: 'El nombre "Apofis"viene del griego, pero en egipcio antiguo se decía"Apep". En los textos más antiguos (Textos de los Ataúdes, ca. 2100 a.C.), se describen los rituales exactos para combatirlo. Un papiro del Museo Británico (Papiro Bremner-Rhind, ca. 300 a.C.) contiene el"Libro de Apep" con 75 hechizos específicos para derrotar a la serpiente, incluyendo instrucciones para escupirle, pisotearle la cabeza, y quemarlo a fuego lento. ¡Hasta hoy es uno de los rituales más elaborados conocidos de cualquier civilización antigua!',
   },
   {
     id: 'eclipses',
@@ -267,10 +266,10 @@ const INFOGRAPHIC_NODES = [
       'Ahora imagina que eres el sacerdote-astrónomo más inteligente de Egipto. Tienes acceso a 500 años de registros de eclipses escritos en papiro por tus predecesores. Un día, mientras estudias los registros, notas algo: los eclipses parecen repetirse en grupos. Después de exactamente 18 años, 11 días y 8 horas, aparece un eclipse muy similar al que ocurrió antes. ¡Acabas de descubrir el ciclo Saros sin que nadie te lo enseñara!',
       'El ciclo Saros es uno de los patrones astronómicos más elegantes de la naturaleza. Ocurre porque tres ciclos lunares diferentes "se sincronizan" perfectamente cada 18.03 años: el ciclo sinódico (lunación: 29.53 días), el ciclo dracónico (cuando la Luna cruza la eclíptica: 27.21 días) y el ciclo anomalístico (órbita completa de la Luna: 27.55 días). Cuando estos tres coinciden, los eclipses se repiten casi idénticamente.',
       'Los astrónomos babilonios y egipcios del primer milenio antes de Cristo usaban este ciclo para predecir eclipses con meses de anticipación. No necesitaban entender por qué funcionaba, solo necesitaban los registros históricos. Era como si tuvieras una caja de música muy larga: no necesitas saber cómo funciona mecánicamente para saber qué nota sonará la próxima. Con 18 años de registros, podías ver el patrón.',
-      'Cada familia de eclipses en el ciclo Saros se llama "serie Saros". Cada serie dura entre 1,200 y 1,500 años y produce entre 69 y 87 eclipses. En este momento, hay 40 series Saros activas para eclipses solares. Cada eclipse solar que ves pertenece a una familia específica con su propio "número Saros". El eclipse del 21 de agosto de 2017 (el "gran eclipse americano") fue el Saros 145, el mismo ciclo que el eclipse del 11 de agosto de 1999 sobre Europa.',
+      'Cada familia de eclipses en el ciclo Saros se llama "serie Saros". Cada serie dura entre 1,200 y 1,500 años y produce entre 69 y 87 eclipses. En este momento, hay 40 series Saros activas para eclipses solares. Cada eclipse solar que ves pertenece a una familia específica con su propio"número Saros". El eclipse del 21 de agosto de 2017 (el "gran eclipse americano") fue el Saros 145, el mismo ciclo que el eclipse del 11 de agosto de 1999 sobre Europa.',
       'Hoy usamos computadoras para calcular eclipses con precisión de milisegundos, miles de años en el futuro o el pasado. Pero el principio es el mismo que descubrieron los sacerdotes egipcios: la naturaleza tiene ritmos perfectamente periódicos. Y esos ritmos, una vez descubiertos, nos dan el poder de predecir el futuro. El conocimiento es la verdadera magia.',
     ],
-    fact: 'El Eclipse Total de 2099 (12 de septiembre) sobre México durará 6 minutos 22 segundos, uno de los más largos del siglo XXI en América. Ya puedes marcarlo en tu calendario, aunque sea muy lejos. Los astrónomos babilonios del siglo VII a.C. predecían eclipses con una exactitud de Â±3 días usando el ciclo Saros. La NASA hoy puede predecir eclipses con precisión de segundos para los próximos 5,000 años. ¡La diferencia es la potencia de cómputo, no el principio matemático!',
+    fact: 'El Eclipse Total de 2099 (12 de septiembre) sobre México durará 6 minutos 22 segundos, uno de los más largos del siglo XXI en América. Ya puedes marcarlo en tu calendario, aunque sea muy lejos. Los astrónomos babilonios del siglo VII a.C. Predecían eclipses con una exactitud de Â±3 días usando el ciclo Saros. La NASA hoy puede predecir eclipses con precisión de segundos para los próximos 5,000 años. ¡La diferencia es la potencia de cómputo, no el principio matemático!',
   },
   {
     id: 'asteroide-2029',
@@ -279,7 +278,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_apofis/btn_asteroid2029.png',
     image: '/assets/egypt/infographic_apofis/hero_asteroid2029.png',
     content: [
-      'El 19 de junio de 2004, los astrónomos Roy Tucker, David Tholen y Fabrizio Bernardi descubrieron un nuevo asteroide usando el telescopio de la Universidad de Arizona. Cuando calcularon su órbita, algo los dejó sin palabras: el asteroide se acercaba peligrosamente a la Tierra. Lo llamaron "Apophis" en honor a la serpiente del caos egipcia, porque â€”como la serpiente míticaâ€” este asteroide amenazaba con "destruir el mundo".',
+      'El 19 de junio de 2004, los astrónomos Roy Tucker, David Tholen y Fabrizio Bernardi descubrieron un nuevo asteroide usando el telescopio de la Universidad de Arizona. Cuando calcularon su órbita, algo los dejó sin palabras: el asteroide se acercaba peligrosamente a la Tierra. Lo llamaron "Apophis"en honor a la serpiente del caos egipcia, porque â€”como la serpiente míticaâ€” este asteroide amenazaba con"destruir el mundo".',
       'Apophis mide aproximadamente 370 metros de diámetro. Para que te imagines el tamaño: es más alto que el Empire State Building de Nueva York (443 metros de punta a punta). Si lo pusieras en una ciudad, abarcaría varias manzanas y sería más alto que cualquier edificio de México. No es del tamaño de los asteroides que matan dinosaurios, pero sería devastador si cayera en una ciudad o zona densamente poblada.',
       'En diciembre de 2004, los cálculos orbitales iniciales daban un 2.7% de probabilidad de impacto con la Tierra en 2029. Eso puede sonar pequeño, pero en el mundo de la defensa planetaria, el 2.7% es una alarma de nivel máximo. Para ponerlo en perspectiva: si un médico te dijera que tienes 2.7% de probabilidad de que algo grave pase durante una operación simple, sería suficiente para preocuparte seriamente.',
       'Con más observaciones durante los siguientes años, la probabilidad de impacto en 2029 fue descartada. Luego calcularon posible impacto en 2036 (también descartado). Luego en 2068 (también descartado en 2021). La NASA anunció en marzo de 2021 que Apophis NO impactará la Tierra en ninguna de esas fechas. Las órbitas del sistema solar son caóticas a largo plazo, pero tenemos suficientes datos para estar seguros por al menos los próximos 100 años.',
@@ -295,7 +294,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/egypt/infographic_apofis/hero_peligro.png',
     content: [
       'Los egipcios tenían razón en algo fundamental: los peligros del cielo son reales. Un asteroide del tamaño de Apophis (370 metros) que impactara la Tierra liberaría una energía de aproximadamente 1,200 megatones de TNT. Para que compares: la bomba atómica de Hiroshima liberó 0.015 megatones. El impacto de Apophis sería unas 80,000 veces más poderoso que Hiroshima.',
-      'Si Apophis cayera en tierra firme, crearía un cráter de varios kilómetros de diámetro y destruiría completamente un área del tamaño de un país europeo mediano â€”piensa en Bélgica o Costa Ricaâ€” con el impacto directo. La onda de choque podría destruir edificios en un radio mucho mayor. El polvo lanzado a la atmósfera podría reducir la luz solar globalmente durante meses, afectando cosechas en todo el mundo.',
+      'Si Apophis cayera en tierra firme, crearía un cráter de varios kilómetros de diámetro y destruiría un área del tamaño de un país europeo mediano â€”piensa en Bélgica o Costa Ricaâ€” con el impacto directo. La onda de choque podría destruir edificios en un radio mucho mayor. El polvo lanzado a la atmósfera podría reducir la luz solar globalmente durante meses, afectando cosechas en todo el mundo.',
       'Si cayera en el océano, sería potencialmente peor: generaría tsunamis masivos que podrían devastar costas en miles de kilómetros. El impacto del Tunguska en 1908 (Siberia) fue causado por un objeto de solo 50-80 metros â€”¡menor que Apophis!â€” y aplanó 2,150 kmÂ² de bosque siberiano, derribando 80 millones de árboles. Si hubiera ocurrido sobre una ciudad, habría sido una catástrofe histórica.',
       'El caso más extremo conocido es el impacto de Chicxulub hace 66 millones de años. Un asteroide de 10-15 km de diámetro impactó en lo que hoy es la Península de Yucatán, México. La energía liberada fue equivalente a miles de millones de bombas de Hiroshima. La nube de polvo y ceniza bloqueó el sol durante años, colapsando la cadena alimentaria. El resultado: la extinción del 75% de todas las especies, incluyendo los dinosaurios no aviares.',
       'La ironía más profunda: sin el impacto de Chicxulub, probablemente los dinosaurios seguirían dominando la Tierra y los mamíferos serían criaturas pequeñas y marginales. Sin ese impacto, no habrían evolucionado los primates, no habrían evolucionado los humanos, y no habría nadie leyendo esto ahora mismo. La serpiente del caos no solo destruye: a veces, también crea. La extinción de los dinosaurios fue nuestra oportunidad.',
@@ -324,11 +323,11 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_apofis/btn_libro.png',
     image: '/assets/egypt/infographic_apofis/hero_libro.png',
     content: [
-      'El "Libro de los Muertos" egipcio tiene un nombre incorrecto: su nombre real en egipcio antiguo es "Reu nu pert em hru", que se traduce como "Libro para Salir al Día". No era un libro para los muertos: era un manual de instrucciones para que el alma del difunto pudiera navegar con éxito por el inframundo, ayudar a Ra en su batalla nocturna, y salir triunfante al amanecer, exactamente como el Sol.',
-      'Dentro de este "manual", hay un capítulo especialmente importante: el Capítulo 39, "Hechizo para repeler a Apophis". En él, el difunto (que viajaba en la barca de Ra como pasajero) recitaba fórmulas específicas para debilitar a la serpiente. Incluía instrucciones detalladas: "Retrocede, Apep, enemigo de Ra. La llama de Ra te quema. Las palabras de Ra te atan. Retrocede al lago de fuego, al Nun del sur."',
+      'El "Libro de los Muertos"egipcio tiene un nombre incorrecto: su nombre real en egipcio antiguo es"Reu nu pert em hru", que se traduce como "Libro para Salir al Día". No era un libro para los muertos: era un manual de instrucciones para que el alma del difunto pudiera navegar con éxito por el inframundo, ayudar a Ra en su batalla nocturna, y salir triunfante al amanecer, exactamente como el Sol.',
+      'Dentro de este "manual", hay un capítulo especialmente importante: el Capítulo 39, "Hechizo para repeler a Apophis". En él, el difunto (que viajaba en la barca de Ra como pasajero) recitaba fórmulas específicas para debilitar a la serpiente. Incluía instrucciones detalladas:"Retrocede, Apep, enemigo de Ra. La llama de Ra te quema. Las palabras de Ra te atan. Retrocede al lago de fuego, al Nun del sur."',
       'Los rituales del templo contra Apofis eran elaboradísimos y se realizaban todos los días. Los sacerdotes hacían un muñeco de arcilla o cera con la forma de Apofis, le escribían encima el nombre de la serpiente con tinta verde, y luego lo escupían, pisoteaban, quemaban y disolvían en ácido (vinagre). Cada acción de destrucción del muñeco debilitaba mágicamente al Apofis real. Es el concepto de "magia simpática": lo que le haces a la representación le pasa al original.',
-      'El fascinante paralelo moderno: los físicos y astrónomas de defensa planetaria también hacen "modelos" de asteroides â€”representaciones computacionales en 3Dâ€” y los "atacan" virtualmente con diferentes métodos para ver cuál funciona mejor. Simulan impactos, explosiones nucleares en la superficie, y empujoncitos gravitacionales. Es magia simpática del siglo XXI: lo que le pasa al modelo virtual nos dice qué pasará con el original.',
-      'El concepto más profundo del "Libro para Salir al Día" es que el ser humano â€”incluso el alma de un difuntoâ€” no era un espectador pasivo del cosmos: era un participante activo en la lucha cósmica entre el orden y el caos. Esta idea de que los humanos tienen responsabilidad en mantener el cosmos funcionando es sorprendentemente moderna. Hoy la llamamos "defensa planetaria" y "responsabilidad de civilización".',
+      'El fascinante paralelo moderno: los físicos y astrónomas de defensa planetaria también hacen "modelos"de asteroides â€”representaciones computacionales en 3Dâ€” y los"atacan" virtualmente con diferentes métodos para ver cuál funciona mejor. Simulan impactos, explosiones nucleares en la superficie, y empujoncitos gravitacionales. Es magia simpática del siglo XXI: lo que le pasa al modelo virtual nos dice qué pasará con el original.',
+      'El concepto más profundo del "Libro para Salir al Día"es que el ser humano â€”incluso el alma de un difuntoâ€” no era un espectador pasivo del cosmos: era un participante activo en la lucha cósmica entre el orden y el caos. Esta idea de que los humanos tienen responsabilidad en mantener el cosmos funcionando es sorprendentemente moderna. Hoy la llamamos"defensa planetaria" y "responsabilidad de civilización".',
     ],
     fact: 'El Papiro de Ani, conservado en el Museo Británico, es el ejemplo más famoso y completo del "Libro para Salir al Día". Tiene 23.5 metros de largo y fue escrito alrededor del 1250 a.C. para un escriba llamado Ani y su esposa Tutu. Fue encontrado en Tebas en 1888 y vendido al Museo Británico. El papiro incluye ilustraciones de los rituales contra Apofis, el Juicio del Alma ante Osiris, y el Campo de las Cañas (el paraíso egipcio). Hoy puedes verlo digitalmente en la colección en línea del British Museum.',
   },
@@ -579,8 +578,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.4rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.4rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -632,8 +630,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 padding: '1.1rem 1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#1A0000',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#1A0000',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
                 }}>
@@ -664,7 +661,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <Sparkles size={18} style={{ color: node.color }} />
             </div>
             <div>
-              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase' }}>
                 Dato Científico
               </span>
               <p style={{ margin: '0.3rem 0 0', fontStyle: 'italic', color: 'rgba(255,255,255,0.9)', fontSize: '0.92rem', lineHeight: 1.72 }}>

@@ -72,15 +72,8 @@ function DecoGlyphColumn({ size = 70, color = '#5D4037', style = {} }) {
 const DECO_MAP = {
   'codice-descubrimiento': [DecoCodexFold, DecoQuill, DecoGlyphColumn],
   'estructura-fisica': [DecoCodexFold, DecoGlyphColumn, DecoQuill],
-  'tablas-venus': [DecoVenusTable, DecoGlyphColumn, DecoCodexFold],
-  'tablas-eclipses': [DecoEclipseRing, DecoVenusTable, DecoCodexFold],
-  'tablas-lluvia': [DecoQuill, DecoEclipseRing, DecoGlyphColumn],
-  'matematica-codice': [DecoGlyphColumn, DecoVenusTable, DecoCodexFold],
-  'supervivencia-codice': [DecoCodexFold, DecoQuill, DecoEclipseRing],
-};
-
-const BIBLIOGRAPHY = [
-  'Bricker, V.R. & Bricker, H.M. (2011). Astronomy in the Maya Codices, American Philosophical Society',
+  'tablas-venus': [DecoVenusTable, DecoGlyphColumn, DecoCodexFold],'tablas-eclipses': [DecoEclipseRing, DecoVenusTable, DecoCodexFold],'tablas-lluvia': [DecoQuill, DecoEclipseRing, DecoGlyphColumn],'matematica-codice': [DecoGlyphColumn, DecoVenusTable, DecoCodexFold],'supervivencia-codice': [DecoCodexFold, DecoQuill, DecoEclipseRing],
+}; const BIBLIOGRAPHY = ['Bricker, V.R. & Bricker, H.M. (2011). Astronomy in the Maya Codices, American Philosophical Society',
   'Coe, M.D. & Van Stone, M. (2005). Reading the Maya Glyphs, Thames & Hudson',
   'Thompson, J.E.S. (1972). A Commentary on the Dresden Codex, American Philosophical Society',
   'Aveni, A.F. (2001). Skywatchers of Ancient Mexico, University of Texas Press',
@@ -141,7 +134,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'Las Cuatro Fases', icon: 'atom', text: 'Los mayas dividieron el viaje de Venus en cuatro estaciones visuales: 236 días como estrella de la mañana, 90 días desaparecido detrás del Sol, 250 días como estrella de la tarde, y 8 días desaparecido frente al Sol. Esta observación detallada muestra una comprensión profunda de cómo los planetas orbitan alrededor de nuestra estrella central.' },
-      { label: 'Corrección del Calendario', icon: 'clock', text: 'En la página 24, el códice muestra múltiplos del ciclo de Venus y fechas específicas donde los sacerdotes debían saltarse días para corregir el calendario. Es un algoritmo de corrección astronómica increíblemente elegante. Cuando los europeos descubrieron esto, quedaron estupefactos ante la brillantez matemática maya.' }
+      { label: 'Corrección del Calendario', icon: 'clock', text: 'En la página 24, el códice muestra múltiplos del ciclo de Venus y fechas específicas donde los sacerdotes debían saltarse días para corregir el calendario. Es un algoritmo de corrección astronómica elegante. Cuando los europeos descubrieron esto, quedaron estupefactos ante la brillantez matemática maya.' }
     ],
     fact: 'La salida helíaca de Venus (cuando aparece en el cielo justo antes del amanecer después de días de estar oculto) era considerada un momento muy peligroso. Los mayas creían que la luz del planeta brillaba como rayos o lanzas que afectaban a los reyes y las cosechas, por lo que usaban el Códice de Dresde para saber exactamente cuándo debían prepararse para estos días críticos.'
   },
@@ -191,7 +184,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/maya/infographic_m15/hero_matematica-codice.jpg',
     content: [
       'Para entender el universo, primero debes dominar los números. El Códice de Dresde es un monumento brillante a la matemática maya. Ellos utilizaban un sistema vigesimal, lo que significa que en lugar de contar de 10 en 10 como hacemos nosotros, contaban de 20 en 20. Imagina contar usando no solo los diez dedos de tus manos, sino sumando también los diez dedos de tus pies. ¡Así pensaban los matemáticos mayas!',
-      'Su forma de escribir los números era increíblemente simple y poderosa: un punto representaba el uno, y una barra horizontal representaba el cinco. Para escribir el número 13, simplemente dibujabas dos barras (que suman 10) y tres puntos encima. Con solo estos dos símbolos básicos, podían construir números gigantescos apilándolos en columnas verticales ascendentes. Imagina usar bloques de construcción donde los puntos son bloques pequeños y las barras son bloques largos. Apilando estas simples piezas podían construir grandes torres que alcanzaban el vasto cielo.',
+      'Su forma de escribir los números era simple y poderosa: un punto representaba el uno, y una barra horizontal representaba el cinco. Para escribir el número 13, simplemente dibujabas dos barras (que suman 10) y tres puntos encima. Con solo estos dos símbolos básicos, podían construir números gigantescos apilándolos en columnas verticales ascendentes. Imagina usar bloques de construcción donde los puntos son bloques pequeños y las barras son bloques largos. Apilando estas simples piezas podían construir grandes torres que alcanzaban el vasto cielo.',
       'El mayor genio de su sistema fue la invención del cero matemático, que dibujaban con un símbolo en forma de concha de caracol. Muchas civilizaciones antiguas, como los romanos, no tenían el número cero, lo que hacía que sus cálculos grandes fueran una pesadilla. El cero maya permitía mantener la posición de grandes cantidades, revolucionando su capacidad para calcular eventos que sucederían miles de años en el futuro.',
       'El códice está lleno de largas columnas de números que, cuando se traducen, revelan "Fechas de Cuenta Larga". Este era un calendario continuo que marcaba los días transcurridos desde el día cero de la creación del mundo maya (que equivale a nuestro año 3114 a.C.). Las páginas muestran multiplicaciones masivas, con números que suman millones de días transcurridos con precisión absoluta. Funciona como el medidor de un auto nuevo que nunca se detiene. Seguía contando cada día como un viaje infinito por la gran autopista del tiempo.',
       'Lo más impresionante es cómo usaban la matemática para corregir sus propios errores. El códice incluye "algoritmos" antiguos — series de instrucciones matemáticas paso a paso. Si un ciclo cósmico no encajaba perfectamente, el documento enseñaba al sacerdote cómo sumar o restar ciertas cantidades matemáticas para recalibrar los relojes. Es verdadera programación de computadoras, hecha completamente a mano sobre corteza de árbol.'
@@ -217,7 +210,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'Los Cuatro Sobrevivientes', icon: 'atom', text: 'Los otros tres libros se nombran por las ciudades donde residen actualmente: el Códice de París (que trata sobre rituales), el Códice de Madrid (un manual astrológico para agricultores), y el Códice Maya de México (un fragmento enfocado solo en el planeta Venus, considerado el más antiguo de todos).' },
-      { label: 'La Ironía Histórica', icon: 'clock', text: 'Paradójicamente, el mismo obispo Diego de Landa que quemó los libros escribió después una crónica llamada "Relación de las cosas de Yucatán". En este libro documentó el alfabeto maya de manera imperfecta, pero sus notas fueron la clave fundamental (la "Piedra de Rosetta") que permitió a los expertos modernos descifrar la escritura y leer el Códice de Dresde.' }
+      { label: 'La Ironía Histórica', icon: 'clock', text: 'Paradójicamente, el mismo obispo Diego de Landa que quemó los libros escribió después una crónica llamada "Relación de las cosas de Yucatán". En este libro documentó el alfabeto maya de manera imperfecta, pero sus notas fueron la clave fundamental (la"Piedra de Rosetta") que permitió a los expertos modernos descifrar la escritura y leer el Códice de Dresde.' }
     ],
     fact: 'El conocimiento contenido en el Códice de Dresde era tan avanzado que cuando el astrónomo estadounidense John Teeple descifró las tablas de eclipses en la década de 1920, la comunidad científica internacional finalmente reconoció que los antiguos mayas tenían matemáticos brillantes que rivalizaban en conocimientos con los astrónomos de la antigua Grecia.'
   }
@@ -355,9 +348,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -536,8 +527,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -574,10 +564,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -607,8 +594,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#000',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#000',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -661,8 +647,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Sabiduría Códice
               </span>

@@ -147,11 +147,7 @@ function DecoEye({ size = 80, color = '#F0A500', style = {} }) {
 
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
-  'conductos': [DecoPyramidBeam, DecoStarShaft, DecoOrionBelt],
-  'estrellas-laser': [DecoStarShaft, DecoOrionBelt, DecoPyramidBeam],
-  'precision': [DecoCompass, DecoPyramidBeam, DecoStarShaft],
-  'orion-piramides': [DecoOrionBelt, DecoPyramidBeam, DecoCompass],
-  'constructores': [DecoStoneBlocks, DecoAnkh, DecoCompass],
+  'conductos': [DecoPyramidBeam, DecoStarShaft, DecoOrionBelt],'estrellas-laser': [DecoStarShaft, DecoOrionBelt, DecoPyramidBeam],'precision': [DecoCompass, DecoPyramidBeam, DecoStarShaft],'orion-piramides': [DecoOrionBelt, DecoPyramidBeam, DecoCompass],'constructores': [DecoStoneBlocks, DecoAnkh, DecoCompass],
   'scan-pyramids': [DecoMuon, DecoPyramidBeam, DecoStarShaft],
   'temperatura': [DecoPyramidBeam, DecoStoneBlocks, DecoEye],
   'legado-giza': [DecoOrionBelt, DecoAnkh, DecoCompass],
@@ -161,7 +157,7 @@ const DECO_MAP = {
 const BIBLIOGRAPHY = [
   'Lehner, M. (1997). The Complete Pyramids, Thames & Hudson',
   'Bauval, R. & Gilbert, A. (1994). The Orion Mystery, Crown',
-  'Morishima, K. et al. (2017). Discovery of a big void in Khufu\'s Pyramid by muon tomography, Nature, 552',
+  'Morishima, K. Et al. (2017). Discovery of a big void in Khufu\'s Pyramid by muon tomography, Nature, 552',
   'Dash, G. (2018). New angles on the Great Pyramid, AERA',
 ];
 
@@ -189,12 +185,12 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/egypt/infographic_giza/hero_laser.png',
     content: [
       '¿Hacia qué estrellas apuntaban estos "láseres de piedra"? Cada conducto tenía un destino celestial diferente, y cada uno contaba una historia sobre la vida después de la muerte del faraón. Para los egipcios, morir no era el final: era el comienzo de un viaje a las estrellas.',
-      'El conducto norte de la Cámara del Rey apuntaba hacia Thuban, que en el año 2450 a.C. era la Estrella Polar. Hoy esa posición la ocupa Polaris, pero hace 4,500 años, Thuban (en la constelación de Draco) era el punto fijo alrededor del cual giraba todo el cielo nocturno. Apuntar hacia ella significaba señalar el centro del universo.',
+      'El conducto norte de la Cámara del Rey apuntaba hacia Thuban, que en el año 2450 a.C. Era la Estrella Polar. Hoy esa posición la ocupa Polaris, pero hace 4,500 años, Thuban (en la constelación de Draco) era el punto fijo alrededor del cual giraba todo el cielo nocturno. Apuntar hacia ella significaba señalar el centro del universo.',
       'El conducto sur de la Cámara del Rey apuntaba hacia Alnitak (Zeta Orionis), la estrella más baja del Cinturón de Orión. Para los egipcios, Orión era la constelación sagrada de Osiris, el dios de la muerte y la resurrección. Este conducto era el camino por donde el alma del faraón viajaba para reunirse con Osiris en el cielo.',
       'El conducto sur de la Cámara de la Reina apuntaba directamente a Sirio, la estrella más brillante del cielo nocturno. Sirio era la estrella de la diosa Isis (esposa de Osiris), y su primera aparición cada año marcaba el comienzo de la inundación del Nilo y el Año Nuevo egipcio. ¡Una estrella que les avisaba de que el río iba a crecer!',
       'El conducto norte de la Cámara de la Reina apuntaba a Kochab, una estrella en la Osa Menor. La combinación de los cuatro conductos creaba un mapa cósmico completo: norte y sur, masculino y femenino, vida y muerte, Osiris e Isis. Era como tener cuatro flechas que apuntaban a los cuatro pilares del universo egipcio.',
     ],
-    fact: 'Thuban fue la estrella polar durante más de 2,000 años. Debido a un fenómeno llamado "precesión", el eje de la Tierra se mueve como un trompo lento, completando un giro cada 26,000 años. Esto significa que diferentes estrellas "toman el turno" de ser la estrella polar. ¡En el año 14,000 d.C., será Vega la estrella polar!',
+    fact: 'Thuban fue la estrella polar durante más de 2,000 años. Debido a un fenómeno llamado "precesión", el eje de la Tierra se mueve como un trompo lento, completando un giro cada 26,000 años. Esto significa que diferentes estrellas"toman el turno" de ser la estrella polar. ¡En el año 14,000 d.C., será Vega la estrella polar!',
   },
   {
     id: 'precision',
@@ -206,7 +202,7 @@ const INFOGRAPHIC_NODES = [
       'Aquí viene lo que deja a los científicos con la boca abierta: ¿cómo lograron semejante precisión sin computadoras, sin telescopios modernos y sin GPS? La respuesta es tan simple como genial: usaban dos estrellas y una cuerda con un peso.',
       'El método, reconstruido por la astrónoma Kate Spence de la Universidad de Cambridge, funcionaba así: los astrónomos egipcios observaban dos estrellas circumpolares específicas (Mizar y Kochab). En un momento preciso de cada noche, estas dos estrellas se alinean perfectamente en vertical. Cuando eso ocurría, ¡marcaban el Norte verdadero con error de solo 2 minutos de arco!',
       'Para que entiendas lo preciso que es: 2 minutos de arco es aproximadamente 1/15 del ancho de la Luna llena vista desde la Tierra. Los egipcios podían apuntar a una dirección del cielo con un error menor que una moneda vista desde 50 metros de distancia. Todo esto con un palo, una cuerda y sus propios ojos.',
-      'El instrumento se llamaba "merkhet" (que significa "instrumento de conocimiento"). Era simplemente una plomada: una cuerda con un peso que cuelga perfectamente vertical por la gravedad. Alineando dos merkhets con una estrella, determinaban el meridiano exacto (la línea norte-sur). Otro instrumento, el "bay" (una palma de palmera con una ranura en V), servía para apuntar.',
+      'El instrumento se llamaba "merkhet" (que significa "instrumento de conocimiento"). Era simplemente una plomada: una cuerda con un peso que cuelga perfectamente vertical por la gravedad. Alineando dos merkhets con una estrella, determinaban el meridiano exacto (la línea norte-sur). Otro instrumento, el"bay" (una palma de palmera con una ranura en V), servía para apuntar.',
       'La base de la Gran Pirámide mide 230.4 metros de lado, y la diferencia entre el lado más largo y el más corto es de solo 4.4 centímetros. Eso es un error de apenas 0.02%, menos que el grosor de tu dedo meñique. Para lograr esa precisión en un edificio de 147 metros de alto y 2.3 millones de bloques de piedra se necesita una maestría matemática que todavía asombra a los ingenieros modernos.',
     ],
     fact: 'Los cuatro lados de la Gran Pirámide están orientados casi perfectamente hacia los cuatro puntos cardinales, con un error de solo 3 minutos y 6 segundos de arco respecto al Norte verdadero. Cuando la pirámide se terminó de construir (ca. 2450 a.C.), ese error era probablemente de cero: la pequeña desviación se debe a la precesión terrestre acumulada durante 4,500 años.',
@@ -224,7 +220,7 @@ const INFOGRAPHIC_NODES = [
       'Esta teoría es debatida entre los científicos: algunos la apoyan con entusiasmo y otros señalan que la correlación no es perfecta si se analiza con detalle. Lo que sí es un hecho comprobado es que el conducto sur de la Cámara del Rey apunta directamente a Alnitak (la estrella inferior del Cinturón de Orión), lo cual confirma la importancia de Orión para los constructores.',
       'Ya sea que la correlación completa sea intencional o coincidencia, un hecho es innegable: los constructores de Guiza tenían un conocimiento astronómico profundo y lo integraron deliberadamente en la arquitectura de sus monumentos. Las pirámides no eran simples tumbas; eran máquinas cósmicas diseñadas para conectar la tierra con las estrellas.',
     ],
-    fact: 'El nombre egipcio de Orión era "Sah", y era considerado la manifestación celestial de Osiris. Cada año, cuando Orión "resucitaba" (aparecía por primera vez después de 70 días de invisibilidad), los sacerdotes celebraban el renacimiento de Osiris. Los 70 días de invisibilidad de Orión corresponden casi exactamente con los 70 días del proceso de momificación. ¡No es coincidencia!',
+    fact: 'El nombre egipcio de Orión era "Sah", y era considerado la manifestación celestial de Osiris. Cada año, cuando Orión"resucitaba" (aparecía por primera vez después de 70 días de invisibilidad), los sacerdotes celebraban el renacimiento de Osiris. Los 70 días de invisibilidad de Orión corresponden casi exactamente con los 70 días del proceso de momificación. ¡No es coincidencia!',
   },
   {
     id: 'constructores',
@@ -233,7 +229,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_giza/btn_constructores.png',
     image: '/assets/egypt/infographic_giza/hero_constructores.png',
     content: [
-      'Hay un mito que necesitamos destruir ahora mismo: ¡los constructores de las pirámides NO eran esclavos! Durante siglos se creyó la historia de que miles de esclavos fueron obligados a arrastrar piedras bajo el sol ardiente. Pero la evidencia arqueológica moderna cuenta una historia completamente diferente.',
+      'Hay un mito que necesitamos destruir ahora mismo: ¡los constructores de las pirámides NO eran esclavos! Durante siglos se creyó la historia de que miles de esclavos fueron obligados a arrastrar piedras bajo el sol ardiente. Pero la evidencia arqueológica moderna cuenta una historia diferente.',
       'Los papiros y las marcas en los bloques de piedra revelan que los constructores eran obreros asalariados, organizados en equipos con nombres geniales como "Los Amigos de Keops" o "Los Borrachos de Micerinos" (¡sí, de verdad se llamaban así!). Trabajaban por turnos, tenían días de descanso, buena alimentación y hasta seguro médico.',
       'Los esqueletos encontrados en el cementerio de los trabajadores cerca de las pirámides muestran huesos que se rompieron y sanaron correctamente gracias a cirugía. Los doctores egipcios les ponían férulas y los cuidaban hasta que se recuperaban. Un esclavo no recibiría esa atención. Estos trabajadores eran valorados y respetados.',
       'El arquitecto jefe fue muy probablemente Hemiunu, sobrino del faraón Keops. Su estatua, descubierta en Guiza, lo muestra como un hombre corpulento y seguro de sí mismo. Coordinaba miles de trabajadores, decenas de ingenieros y el suministro de materiales durante décadas. Era el equivalente antiguo al director de la NASA.',
@@ -278,7 +274,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_giza/btn_legado.png',
     image: '/assets/egypt/infographic_giza/hero_legado.png',
     content: [
-      'La Gran Pirámide fue el edificio más alto del mundo durante 3,871 años, desde que se terminó en el 2450 a.C. hasta que la catedral de Lincoln, en Inglaterra, la superó en 1311 d.C. ¡Ninguna otra estructura humana ha mantenido un récord durante tanto tiempo! Y todavía sigue siendo el edificio antiguo más grande del mundo.',
+      'La Gran Pirámide fue el edificio más alto del mundo durante 3,871 años, desde que se terminó en el 2450 a.C. Hasta que la catedral de Lincoln, en Inglaterra, la superó en 1311 d.C. ¡Ninguna otra estructura humana ha mantenido un récord durante tanto tiempo! Y todavía sigue siendo el edificio antiguo más grande del mundo.',
       'El legado de las alineaciones astronómicas de Guiza viajó por todo el mundo antiguo. Los comerciantes fenicios llevaron conocimientos egipcios al Mediterráneo. Los griegos como Tales, Pitágoras y Platón estudiaron en las escuelas sacerdotales de Egipto. Y cuando Alejandro Magno fundó Alejandría, la fusión de pensamiento egipcio, griego y babilónico creó la astronomía científica.',
       'Las catedrales góticas de la Europa medieval heredaron la tradición egipcia sin saberlo. Sus naves largas actúan como los corredores egipcios, dirigiendo la luz del sol hacia el altar en fechas específicas. Sus rosetones (ventanas circulares) están orientados astronómicamente. Los constructores medievales continuaron una tradición que comenzó en Guiza hace 4,500 años.',
       'Hoy, la Gran Pirámide es Patrimonio de la Humanidad y la última de las Siete Maravillas del Mundo Antiguo que sigue en pie. Las otras seis (los Jardines de Babilonia, el Coloso de Rodas, el Faro de Alejandría, el Templo de Artemisa, la Estatua de Zeus y el Mausoleo de Halicarnaso) desaparecieron hace siglos. Solo la pirámide resistió al tiempo.',
@@ -488,8 +484,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
           )}
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -539,8 +534,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 padding: '1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
                 }}>
@@ -575,8 +569,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

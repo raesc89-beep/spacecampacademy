@@ -54,8 +54,7 @@ const DECO_MAP = {
   'entrelazamiento-basico': [DecoEntanglementSpiral, DecoAtom],
   'epr-paradoja': [DecoAtom, DecoWaveFunction],
   'superposicion-cuantica': [DecoWaveFunction, DecoQubitOrbit],
-  'teleportacion-cuantica': [DecoEntanglementSpiral, DecoForceLightning],
-  'computacion-cuantica': [DecoQubitOrbit, DecoAtom],
+  'teleportacion-cuantica': [DecoEntanglementSpiral, DecoForceLightning],'computacion-cuantica': [DecoQubitOrbit, DecoAtom],
   'no-localidad': [DecoEntanglementSpiral, DecoWaveFunction],
   'fuerza-universo': [DecoForceLightning, DecoQubitOrbit],
 };
@@ -118,7 +117,7 @@ const INFOGRAPHIC_NODES = [
     bannerCaption: "Albert Einstein, Boris Podolsky y Nathan Rosen propusieron en 1935 la paradoja EPR, cuestionando la mecánica cuántica.",
     content: [
       "En 1935, Albert Einstein, Boris Podolsky y Nathan Rosen publicaron un documento que cuestionó los cimientos de la mecánica cuántica. Este artículo se conoce como la 'Paradoja EPR' por las iniciales de sus autores. Einstein estaba incómodo con la idea del entrelazamiento cuántico porque contradecía su Teoría de la Relatividad Especial, la cual establece que nada puede superar la velocidad de la luz.",
-      "Einstein argumentaba que si el entrelazamiento fuera real e instantáneo, requeriría una 'acción fantasmal a distancia'. Para él, el universo debía ser lógico y predecible. Creía que las partículas poseían información oculta desde su origen, un concepto que llamó 'variables ocultas', las cuales los científicos aún no podían detectar con las herramientas de la época.",
+      "Einstein argumentaba que si el entrelazamiento fuera real e instantáneo, requeriría una 'acción fantasmal a distancia'. Para él, el universo debía ser lógico y predecible. Creía que las partículas poseían información oculta desde su origen, un concepto que llamó'variables ocultas', las cuales los científicos aún no podían detectar con las herramientas de la época.",
       "Imagina a dos gemelos que se visten del mismo color todos los días sin consultarse. Einstein diría que no se comunican telepáticamente por la mañana; más bien, acordaron en secreto usar ropa roja antes de separarse. Según su perspectiva, las partículas tenían instrucciones pre-programadas que daban la ilusión de una conexión instantánea.",
       "En Star Wars, Han Solo dudaba del poder de la Fuerza, considerándola una serie de 'trucos baratos'. De manera similar, Einstein dudaba de la naturaleza aleatoria de la mecánica cuántica. Exigía que el universo funcionara como una máquina precisa, en lugar de depender de la probabilidad y la incertidumbre.",
       "Durante décadas, la paradoja EPR fue solo un debate filosófico. Parecía imposible probar en un laboratorio si Einstein tenía razón con sus variables ocultas o si la teoría cuántica era correcta sobre la conexión instantánea. Sin embargo, este desacuerdo histórico impulsó el desarrollo de experimentos precisos para medir la naturaleza fundamental de la realidad."
@@ -402,9 +401,7 @@ const NodeButton = ({ node, isVisited, onClick }) => {
         <div style={{
           position: 'absolute',
           top: '5px',
-          right: '5px',
-          background: node.color,
-          borderRadius: '50%',
+          right: '5px', background: node.color, borderRadius:'50%',
           padding: '2px'
         }}>
           <Sparkles size={12} color="#000" />

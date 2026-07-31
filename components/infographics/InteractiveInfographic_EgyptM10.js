@@ -120,7 +120,7 @@ const DECO_MAP = {
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const BIBLIOGRAPHY = [
   'Comelli, D. et al. (2016). The meteoritic origin of Tutankhamun\'s iron dagger blade, Meteoritics & Planetary Science, 51',
-  'Johnson, D. et al. (2013). Analysis of a prehistoric Egyptian iron bead, Meteoritics & Planetary Science, 48',
+  'Johnson, D. Et al. (2013). Analysis of a prehistoric Egyptian iron bead, Meteoritics & Planetary Science, 48',
   'Carter, H. & Mace, A.C. (1923). The Tomb of Tut-Ankh-Amen, Cassell & Co.',
   'Rehren, T. & Pusch, E. (2005). Late Bronze Age glass production at Qantir, Science, 308',
 ];
@@ -133,7 +133,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_daga/btn_metal.png',
     image: '/assets/egypt/infographic_daga/hero_metal.png',
     content: [
-      'Imagina que encuentras una piedra brillante y pesada en medio del desierto. No es como las demás piedras: es oscura, metálica y parece que alguien la dejó caer del cielo. Los antiguos egipcios encontraban piedras así y las llamaban \'ba en pet\', que significa \'¡el metal del cielo!\' Y resulta que tenían toda la razón: ese metal había caído literalmente del espacio exterior.',
+      'Imagina que encuentras una piedra brillante y pesada en medio del desierto. No es como las demás piedras: es oscura, metálica y parece que alguien la dejó caer del cielo. Los antiguos egipcios encontraban piedras así y las llamaban \'ba en pet\', que significa \'¡el metal del cielo!\'Y resulta que tenían toda la razón: ese metal había caído literalmente del espacio exterior.',
       'Hace 3,300 años, los egipcios no conocían el hierro. Sus espadas, herramientas y joyas eran de bronce (una mezcla de cobre y estaño). El hierro era tan raro que valía más que el oro. Solo podían obtenerlo de una fuente misteriosa: rocas oscuras y pesadas que a veces aparecían en el desierto del Sahara después de luces brillantes en el cielo nocturno.',
       'Hoy sabemos que esas rocas son meteoritos de hierro: fragmentos de asteroides que viajaron por el espacio durante millones de años antes de caer a la Tierra. Cuando un asteroide se forma en el sistema solar, su centro se llena de hierro mezclado con níquel (entre 5% y 35%) y un poquito de cobalto. Es como el relleno metálico de una pelota cósmica gigante.',
       'En 2016, científicos italianos y egipcios usaron una técnica llamada fluorescencia de rayos X (imagina una linterna especial que puede ver de qué está hecho algo por dentro sin romperlo) para analizar la daga de Tutankamón. Descubrieron que la hoja contiene 11% de níquel y 0.6% de cobalto â€” ¡exactamente la receta de un meteorito!',
@@ -199,7 +199,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'Tutankamón no fue el único que usó metal del espacio. ¡Los humanos de todo el mundo han recogido y usado meteoritos desde hace miles de años! Los inuit del Ártico (en Groenlandia y Canadá) forjaron cuchillos, arpones y puntas de lanza usando fragmentos de un meteorito gigante llamado "Cabo York" que cayó hace 10,000 años.',
       'El explorador Robert Peary encontró en 1894 tres enormes trozos del meteorito Cabo York entre los inuit. El más grande, llamado "Ahnighito" (La Tienda), pesa ¡31 toneladas! Los inuit lo habían usado durante generaciones golpeándolo con piedras para arrancar pedazos de hierro. Hoy está en el Museo de Historia Natural de Nueva York.',
-      'En la antigua Sumeria (actual Irak), los textos cuneiformes de hace 5,000 años mencionan el hierro como "AN.BAR" (fuego del cielo). Los hititas de Anatolia (actual Turquía) tenían tanto hierro meteorítico que lo usaban como regalo diplomático. ¡Una carta del rey hitita al faraón Ramsés II menciona el envío de una espada de "hierro del cielo"!',
+      'En la antigua Sumeria (actual Irak), los textos cuneiformes de hace 5,000 años mencionan el hierro como "AN.BAR"(fuego del cielo). Los hititas de Anatolia (actual Turquía) tenían tanto hierro meteorítico que lo usaban como regalo diplomático. ¡Una carta del rey hitita al faraón Ramsés II menciona el envío de una espada de"hierro del cielo"!',
       'El meteorito de Hoba, en Namibia (África del Sur), es el meteorito más grande conocido que sigue donde cayó: pesa ¡60 toneladas! Es tan grande que nadie ha podido moverlo. Los pueblos locales lo veneraban y las comunidades cercanas aún lo visitan como sitio sagrado.',
       'Cada año, unas 48,000 toneladas de material meteorítico caen a la Tierra, pero la mayoría son partículas microscópicas (polvo cósmico). Los meteoritos de hierro grandes (de varios kilos) solo caen unas 5-10 veces por año en todo el planeta. Encontrar uno y forjarlo como hicieron los egipcios era un logro extraordinario.',
       'Antes de aprender a extraer mineral de las minas, el cielo fue la única mina de hierro que la humanidad conoció para crear herramientas indestructibles.',
@@ -396,9 +396,7 @@ function NodeButton({ node, isActive, onClick, index }) {
       {/* Label */}
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -499,8 +497,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -540,10 +537,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -565,9 +559,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <div
                 key={i}
                 style={{
-                  gridColumn: isWide ? '1 / -1' : 'auto',
-                  background: `rgba(255,255,255,0.02)`,
-                  borderRadius: '12px',
+                  gridColumn: isWide ? '1 / -1' : 'auto', background: `rgba(255,255,255,0.02)`, borderRadius:'12px',
                   padding: '1.2rem',
                   borderLeft: `3px solid ${node.color}30`,
                   position: 'relative',
@@ -575,8 +567,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               >
                 {/* Paragraph number badge */}
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -619,8 +610,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

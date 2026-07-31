@@ -139,14 +139,10 @@ function DecoCelestialDisk({ size = 60, color = '#E8C96A', style = {} }) {
 
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
-  'disco-zodiacal': [DecoZodiacWheel, DecoCelestialDisk, DecoColumns],
-  'constelaciones': [DecoZodiacWheel, DecoCobra, DecoLotus],
+  'disco-zodiacal': [DecoZodiacWheel, DecoCelestialDisk, DecoColumns],'constelaciones': [DecoZodiacWheel, DecoCobra, DecoLotus],
   'templo-hathor': [DecoColumns, DecoHathor, DecoLotus],
-  'robo-louvre': [DecoColumns, DecoCelestialDisk, DecoZodiacWheel],
-  'datacion': [DecoCelestialDisk, DecoZodiacWheel, DecoColumns],
-  'criaturas': [DecoCrocodile, DecoHippo, DecoCobra],
-  'planetas': [DecoCelestialDisk, DecoZodiacWheel, DecoHathor],
-  'legado': [DecoZodiacWheel, DecoLotus, DecoCelestialDisk],
+  'robo-louvre': [DecoColumns, DecoCelestialDisk, DecoZodiacWheel],'datacion': [DecoCelestialDisk, DecoZodiacWheel, DecoColumns],'criaturas': [DecoCrocodile, DecoHippo, DecoCobra],
+  'planetas': [DecoCelestialDisk, DecoZodiacWheel, DecoHathor],'legado': [DecoZodiacWheel, DecoLotus, DecoCelestialDisk],
 };
 
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -220,7 +216,7 @@ const INFOGRAPHIC_NODES = [
       'La controversia del Zodiaco refleja un debate global sobre patrimonio cultural: ¿los grandes museos del mundo preservan objetos que de otro modo se perderían, o son cómplices de un saqueo colonial? El caso del Zodiaco de Dendera es especialmente doloroso porque el templo está perfectamente conservado y podría albergar el original con seguridad.',
       'Aunque el techo original descansa a miles de kilómetros de su santuario, sigue siendo un testimonio silencioso del valor incalculable del conocimiento antiguo.',
     ],
-    fact: 'Cuando Napoleón invadió Egipto en 1798, llevó consigo 167 científicos y artistas (la "Commission des Sciences et des Arts") además de sus soldados. Esta expedición produjo la monumental "Description de l\'Égypte" (23 volúmenes) pero también inició la era del saqueo arqueológico a escala industrial.',
+    fact: 'Cuando Napoleón invadió Egipto en 1798, llevó consigo 167 científicos y artistas (la "Commission des Sciences et des Arts") además de sus soldados. Esta expedición produjo la monumental"Description de l\'Égypte" (23 volúmenes) pero también inició la era del saqueo arqueológico a escala industrial.',
   },
   {
     id: 'datacion',
@@ -263,7 +259,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'Los egipcios llamaban a los planetas "estrellas que no descansan" o "estrellas infatigables" porque, a diferencia de las estrellas fijas, se movían lentamente entre las constelaciones. En el Zodiaco de Dendera, los cinco planetas visibles aparecen representados con iconografía que fusiona tradiciones egipcias y griegas.',
       'Saturno aparece como Horus-Toro (Hor-ka-pet): un hombre con cabeza de halcón de pie sobre una barca divina. Júpiter es Horus-el-Misterioso (Hor-pest-djeba): un águila sobre una serpiente. Marte es Horus-Rojo (Hor-Desher): un guerrero con cabeza de halcón sosteniendo un cetro was. Venus es la "Estrella de la Mañana" y Mercurio el "Planeta de Set".',
-      'La identificación de los planetas con Horus (el dios halcón) es exclusivamente egipcia. Los griegos los asociaron con Zeus, Ares, Afrodita, Hermes y Cronos. Los babilonios con Marduk, Nergal, Ishtar, Nabu y Ninurta. La misma observación â€” cinco luces que se mueven entre las estrellas fijas â€” produjo sistemas mitológicos completamente diferentes.',
+      'La identificación de los planetas con Horus (el dios halcón) es exclusivamente egipcia. Los griegos los asociaron con Zeus, Ares, Afrodita, Hermes y Cronos. Los babilonios con Marduk, Nergal, Ishtar, Nabu y Ninurta. La misma observación â€” cinco luces que se mueven entre las estrellas fijas â€” produjo sistemas mitológicos diferentes.',
       'Los astrónomos del templo de Dendera mantenían registros precisos de las posiciones planetarias. Estos registros eran esenciales para la astrología (que en Egipto estaba fusionada con la medicina) pero también produjeron datos astronómicos de valor incalculable. Las tablas planetarias egipcias ayudaron a los astrónomos modernos a reconstruir las órbitas planetarias con mayor precisión.',
       'La representación de Marte como "Horus Rojo" es especialmente reveladora: los egipcios observaron correctamente el color rojizo de Marte, que se debe al óxido de hierro en su superficie. Esta observación, hecha a simple vista hace más de 2,000 años, fue confirmada por las misiones robóticas de la NASA en el siglo XXI.',
       'Identificar el verdadero color de Marte y registrar meticulosamente sus órbitas demuestra que los sacerdotes eran tanto astrónomos observacionales como líderes religiosos.',
@@ -284,7 +280,7 @@ const INFOGRAPHIC_NODES = [
       'Hoy, cuando lees tu horóscopo en el periódico, estás viendo el último destello de este viaje de 5,000 años. Los 12 signos zodiacales son los mismos que aparecen en el Zodiaco de Dendera, que a su vez los heredó de Babilonia. La astronomía moderna nació de la astrología antigua, y la astrología antigua nació de la observación paciente de pastores mesopotámicos que miraban el cielo nocturno.',
       'Así, este disco de piedra se convierte en el puente definitivo que conecta las observaciones milenarias de los desiertos antiguos con los mapas celestes de hoy.',
     ],
-    fact: 'La palabra "zodiaco" viene del griego "zodiakos kyklos" (círculo de animales). Pero en realidad, solo 7 de los 12 signos son animales (Aries, Tauro, Cáncer, Leo, Escorpio, Capricornio, Piscis). Los otros cinco son humanos (Géminis, Virgo, Acuario, Sagitario) o un objeto (Libra). ¡El "círculo de animales" no es tan animal como su nombre sugiere!',
+    fact: 'La palabra "zodiaco" viene del griego "zodiakos kyklos"(círculo de animales). Pero en realidad, solo 7 de los 12 signos son animales (Aries, Tauro, Cáncer, Leo, Escorpio, Capricornio, Piscis). Los otros cinco son humanos (Géminis, Virgo, Acuario, Sagitario) o un objeto (Libra). ¡El"círculo de animales" no es tan animal como su nombre sugiere!',
   },
 ];
 
@@ -421,9 +417,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -519,8 +513,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -559,10 +552,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -592,8 +582,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -636,8 +625,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

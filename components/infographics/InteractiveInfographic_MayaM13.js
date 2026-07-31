@@ -75,16 +75,9 @@ function DecoCompass({ size = 70, color = '#039BE5', style = {} }) {
 
 const DECO_MAP = {
   'uaxactun-sitio': [DecoPyramid, DecoCompass, DecoEGroup],
-  'grupo-e-original': [DecoEGroup, DecoSunrise, DecoThreeTemples],
-  'tres-templos': [DecoThreeTemples, DecoSunrise, DecoPyramid],
-  'funcionamiento-solar': [DecoSunrise, DecoCompass, DecoEGroup],
-  'grupos-e-mundo-maya': [DecoCompass, DecoPyramid, DecoThreeTemples],
-  'ceibal-mas-antiguo': [DecoPyramid, DecoEGroup, DecoSunrise],
-  'legado-arquitectonico': [DecoThreeTemples, DecoCompass, DecoEGroup],
-};
-
-const BIBLIOGRAPHY = [
-  'Aveni, A.F. (2001). Skywatchers of Ancient Mexico, University of Texas Press',
+  'grupo-e-original': [DecoEGroup, DecoSunrise, DecoThreeTemples],'tres-templos': [DecoThreeTemples, DecoSunrise, DecoPyramid],'funcionamiento-solar': [DecoSunrise, DecoCompass, DecoEGroup],
+  'grupos-e-mundo-maya': [DecoCompass, DecoPyramid, DecoThreeTemples],'ceibal-mas-antiguo': [DecoPyramid, DecoEGroup, DecoSunrise],
+  'legado-arquitectonico': [DecoThreeTemples, DecoCompass, DecoEGroup], }; const BIBLIOGRAPHY = ['Aveni, A.F. (2001). Skywatchers of Ancient Mexico, University of Texas Press',
   'Chase, A.F. & Chase, D.Z. (1995). "External Impetus, Internal Synthesis, and Standardization: E Group Assemblages", Acta Mesoamericana, 8',
   'Inomata, T. et al. (2013). "Early Ceremonial Constructions at Ceibal, Guatemala", Science, 340',
   'Aimers, J.J. & Rice, P.M. (2006). "Astronomy, Ritual, and the Interpretation of Maya E-Group Architectural Assemblages", Ancient Mesoamerica, 17',
@@ -100,7 +93,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/maya/infographic_m13/hero_uaxactun-sitio.jpg',
     content: [
       'Imagina una ciudad antigua oculta bajo el espeso verde de la selva tropical. Uaxactún, ubicada en el norte del departamento de Petén en Guatemala, es uno de los asentamientos más venerables y antiguos de la civilización maya. Sus constructores comenzaron a levantar edificios impresionantes desde el período Preclásico (alrededor del año 900 antes de Cristo). Es como pensar en la fundación de una gran capital moderna, pero miles de años atrás, cuando los constructores usaban herramientas de piedra y una sabiduría increíble para diseñar su entorno.',
-      "El nombre de la ciudad tiene una historia fascinante que parece sacada de un cuento de aventuras arqueológicas. Fue bautizada en la década de 1920 por el famoso investigador Sylvanus Morley. Al encontrar una estela de piedra muy antigua que marcaba el ciclo de tiempo maya conocido como el 'Baktún 8', decidió combinar la palabra maya para el número ocho (Uaxac) con la palabra para piedra (Tún). Así nació el nombre 'Ocho Piedras'. Su nombre original antiguo podría haber sido Siaan K\'aan, que significa poéticamente 'Nacida del Cielo'.",
+      "El nombre de la ciudad tiene una historia fascinante que parece sacada de un cuento de aventuras arqueológicas. Fue bautizada en la década de 1920 por el famoso investigador Sylvanus Morley. Al encontrar una estela de piedra muy antigua que marcaba el ciclo de tiempo maya conocido como el 'Baktún 8', decidió combinar la palabra maya para el número ocho (Uaxac) con la palabra para piedra (Tún). Así nació el nombre'Ocho Piedras'. Su nombre original antiguo podría haber sido Siaan K\'aan, que significa poéticamente 'Nacida del Cielo'.",
       'Durante siglos, Uaxactún fue un reino poderoso que competía de igual a igual con su imponente y famoso vecino: la gran ciudad de Tikal, que está apenas a 23 kilómetros al sur (lo que sería un día de caminata por la selva). Imagina dos grandes equipos deportivos rivales de la misma región compitiendo por ser el mejor. En el siglo IV, esta rivalidad culminó en un conflicto histórico liderado por el gobernante de Tikal con ayuda externa, lo que marcó un antes y un después en la política maya de las tierras bajas.',
       'Sin embargo, Uaxactún no solo fue famosa por sus guerras o su poder político. Su mayor tesoro fue el conocimiento. Sus plazas y edificios no estaban puestos al azar. Al igual que nosotros organizamos nuestra habitación para que entre mejor la luz por la ventana o ponemos el escritorio donde no haya ruido, los arquitectos de Uaxactún acomodaron gigantescos monumentos de piedra para interactuar de forma perfecta con el sol, las estrellas y el paso de las estaciones. Eran maestros del espacio y el tiempo.',
       'El mayor orgullo de Uaxactún fue la creación de un tipo especial de conjunto de edificios que hoy asombra a científicos de todo el planeta. Un verdadero laboratorio astronómico hecho de estuco y piedra caliza. Este complejo permitía a los sacerdotes y sabios mirar al horizonte para saber con precisión milimétrica cuándo sembrar, cuándo cosechar y cuándo realizar grandes festivales. Un avance tecnológico monumental que se convertiría en un molde copiado por cientos de ciudades.',
@@ -117,7 +110,7 @@ const INFOGRAPHIC_NODES = [
         text: 'A diferencia de los observatorios modernos que tienen cúpulas y telescopios gigantes de metal y cristal apuntando al cielo nocturno, los observatorios mayas como los de Uaxactún miraban el horizonte al amanecer o al atardecer para medir los cambios de posición de los astros a simple vista a lo largo del año. ¡Pura geometría y paciencia!',
       },
     ],
-    fact: 'El asentamiento fue tan longevo y estable que las evidencias muestran ocupación continua desde el año 900 a.C. hasta cerca del 900 d.C. Es decir, casi 2000 años de existencia ininterrumpida. Si comparamos, muchas de las ciudades modernas o países de hoy apenas tienen unos cuantos cientos de años de haber sido fundados. ¡Uaxactún fue verdaderamente eterna!',
+    fact: 'El asentamiento fue tan longevo y estable que las evidencias muestran ocupación continua desde el año 900 a.C. Hasta cerca del 900 d.C. Es decir, casi 2000 años de existencia ininterrumpida. Si comparamos, muchas de las ciudades modernas o países de hoy apenas tienen unos cuantos cientos de años de haber sido fundados. ¡Uaxactún fue eterna!',
   },
   {
     id: 'grupo-e-original',
@@ -129,7 +122,7 @@ const INFOGRAPHIC_NODES = [
       'Todo comenzó con un mapa y una letra del alfabeto. En el año 1924, el explorador y arqueólogo danés Frans Blom, al servicio del Instituto Carnegie de Washington, estaba cartografiando las ruinas de Uaxactún. Para mantener el orden, decidió nombrar los distintos conjuntos de edificios con letras: Grupo A, Grupo B, Grupo C, y así sucesivamente. Al llegar a una plaza particular rodeada de cuatro estructuras principales, la bautizó sencillamente como el "Grupo E".',
       'Pero el Grupo E no era solo otro conjunto de piedras amontonadas por el tiempo. Al mirar con cuidado cómo estaban alineados estos edificios, Blom notó algo extraordinario. Había una pirámide grande del lado oeste (donde se pone el sol) y una plataforma alargada del lado este (por donde sale el sol) que sostenía tres templos más pequeños. Blom y otros científicos pronto se dieron cuenta de que las posiciones de los edificios marcaban exactamente los puntos de salida del sol en los solsticios y equinoccios.',
       'Imagina tener un gigantesco reloj solar del tamaño de varias canchas de fútbol. Así de asombroso es el Grupo E de Uaxactún. Para los mayas, no era necesario inventar un telescopio de lentes; su telescopio era la arquitectura misma. El diseño era tan ingenioso y perfecto que los arqueólogos modernos quedaron maravillados por la exactitud de los ángulos y la relación visual entre la pirámide de observación y los templos orientales.',
-      'El impacto de este descubrimiento fue tan masivo en el mundo científico que el nombre "Grupo E" pasó de ser una simple etiqueta en un mapa a convertirse en un término oficial en la arqueología mundial. Hoy en día, si un experto encuentra en cualquier lugar de Mesoamérica un arreglo arquitectónico similar con una pirámide al oeste y una plataforma alargada al este, lo clasifica automáticamente como un "Complejo Tipo Grupo E". ¡El original de Uaxactún le dio su nombre a todo un modelo científico!',
+      'El impacto de este descubrimiento fue tan masivo en el mundo científico que el nombre "Grupo E"pasó de ser una simple etiqueta en un mapa a convertirse en un término oficial en la arqueología mundial. Hoy en día, si un experto encuentra en cualquier lugar de Mesoamérica un arreglo arquitectónico similar con una pirámide al oeste y una plataforma alargada al este, lo clasifica automáticamente como un"Complejo Tipo Grupo E". ¡El original de Uaxactún le dio su nombre a todo un modelo científico!',
       'Esta revelación cambió para siempre nuestra percepción de los antiguos mayas. Antes se pensaba que sus ciudades crecían de forma desordenada, como un bosque salvaje. El Grupo E demostró que los centros urbanos estaban planificados matemáticamente y orientados cósmicamente desde las primeras piedras puestas en el suelo. Los mayas no solo construían edificios; construían gigantescos instrumentos astronómicos habitables.',
     ],
     expandables: [
@@ -180,7 +173,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/maya/infographic_m13/btn_funcionamiento-solar.jpg',
     image: '/assets/maya/infographic_m13/hero_funcionamiento-solar.jpg',
     content: [
-      'Para entender cómo funciona verdaderamente esta genialidad arquitectónica, ponte en los zapatos de un sacerdote o sabio maya hace dos mil años. Tu puesto de trabajo está en la Estructura E-VII-sub, una pirámide hermosamente decorada con mascarones de estuco, ubicada en el lado oeste de la plaza. Te levantas en la madrugada profunda y subes las escalinatas oscuras antes de que el sol acaricie el cielo.',
+      'Para entender cómo funciona esta genialidad arquitectónica, ponte en los zapatos de un sacerdote o sabio maya hace dos mil años. Tu puesto de trabajo está en la Estructura E-VII-sub, una pirámide hermosamente decorada con mascarones de estuco, ubicada en el lado oeste de la plaza. Te levantas en la madrugada profunda y subes las escalinatas oscuras antes de que el sol acaricie el cielo.',
       'Llegas al punto de observación superior y te volteas para mirar al este, justo hacia la plataforma alargada que sostiene los tres templos frontales. La plaza entre la pirámide y los templos está en penumbras. Y entonces ocurre la magia científica: empiezas a llevar un registro sistemático de exactamente en qué punto de los edificios amanece el sol cada día a lo largo de muchas semanas y meses. Eres un relojero del sol.',
       'A medida que pasa el año, el punto exacto de la salida del sol se desplaza por el horizonte, como si estuviera caminando por encima de la plataforma de los templos. En junio, el amanecer ocurre muy a la izquierda (templo norte). En los meses siguientes, cada mañana el sol amanece un poquito más a la derecha. En septiembre amanece detrás del templo del medio, y para diciembre, el amanecer llega hasta el extremo derecho (templo sur).',
       'Este viaje de ida y vuelta del sol por el horizonte marca lo que llamamos el ciclo tropical o año solar. Con las esquinas y los centros de los templos orientales, el Grupo E podía marcar fechas importantísimas para la agricultura. Imagínate este edificio como una gran alarma silenciosa que le decía al pueblo de Uaxactún: "¡Prepárense, las lluvias fuertes llegarán en 20 días, es hora de limpiar los campos y empezar a sembrar el maíz y el frijol!".',
@@ -225,7 +218,7 @@ const INFOGRAPHIC_NODES = [
         text: 'La estandarización en la arquitectura antigua no es común a menos que exista un fuerte sistema de creencias compartidas o un gobierno central que lo exija. El hecho de que cientos de reinos mayas independientes, que incluso se hacían la guerra entre ellos, acordaran construir los mismos complejos astronómicos es uno de los mayores misterios y maravillas de la arqueología.',
       },
     ],
-    fact: 'Algunos de los descubrimientos modernos más sorprendentes se han dado en un sitio monumental recién descubierto en Tabasco, México, llamado Aguada Fénix. Datando de antes del 1000 a.C., presenta una plataforma artificial masiva orientada en el típico patrón este-oeste que antecede a los Grupos E y demuestra que la obsesión con las alineaciones solares y los espacios rituales es todavía más antigua de lo que creíamos.',
+    fact: 'Algunos de los descubrimientos modernos más sorprendentes se han dado en un sitio monumental recién descubierto en Tabasco, México, llamado Aguada Fénix. Datando de antes del 1000 a.C. Presenta una plataforma artificial masiva orientada en el típico patrón este-oeste que antecede a los Grupos E y demuestra que la obsesión con las alineaciones solares y los espacios rituales es todavía más antigua de lo que creíamos.',
   },
   {
     id: 'ceibal-mas-antiguo',
@@ -417,9 +410,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -604,8 +595,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -644,10 +634,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -677,8 +664,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',

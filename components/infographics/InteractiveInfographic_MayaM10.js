@@ -77,17 +77,8 @@ function DecoFireCeremony({ size = 70, color = '#6D4C41', style = {} }) {
 }
 
 const DECO_MAP = {
-  'tzab-ek-nombre': [DecoPleiades, DecoRattlesnake, DecoCornField],
-  'paso-cenital': [DecoRainCloud, DecoPleiades, DecoRattlesnake],
-  'calendario-agricola': [DecoCornField, DecoRainCloud, DecoPleiades],
-  'nueva-cuenta-fuego': [DecoFireCeremony, DecoPleiades, DecoRattlesnake],
-  'astronomia-precisa': [DecoPleiades, DecoCornField, DecoRattlesnake],
-  'cascabel-cosmico': [DecoRattlesnake, DecoRainCloud, DecoPleiades],
-  'culturas-comparadas': [DecoCornField, DecoFireCeremony, DecoPleiades],
-};
-
-const BIBLIOGRAPHY = [
-  'Milbrath, S. (1999). Star Gods of the Maya, University of Texas Press',
+  'tzab-ek-nombre': [DecoPleiades, DecoRattlesnake, DecoCornField],'paso-cenital': [DecoRainCloud, DecoPleiades, DecoRattlesnake],'calendario-agricola': [DecoCornField, DecoRainCloud, DecoPleiades],'nueva-cuenta-fuego': [DecoFireCeremony, DecoPleiades, DecoRattlesnake],'astronomia-precisa': [DecoPleiades, DecoCornField, DecoRattlesnake],'cascabel-cosmico': [DecoRattlesnake, DecoRainCloud, DecoPleiades],'culturas-comparadas': [DecoCornField, DecoFireCeremony, DecoPleiades],
+}; const BIBLIOGRAPHY = ['Milbrath, S. (1999). Star Gods of the Maya, University of Texas Press',
   'Aveni, A.F. (2001). Skywatchers of Ancient Mexico, University of Texas Press',
   'Tedlock, D. (1996). Popol Vuh: The Definitive Edition of The Mayan Book of the Dawn of Life, Simon & Schuster',
   'MalmstrÃƒÂ¶m, V.H. (1997). Cycles of the Sun, Mysteries of the Moon, University of Texas Press',
@@ -128,7 +119,7 @@ const INFOGRAPHIC_NODES = [
       'Este alineamiento entre el cielo y la tierra demuestra que los mayas entendían la geometría del espacio muy bien. Ellos sabían que la Tierra es redonda y que la posición de las estrellas cambia dependiendo de dónde te encuentres en el planeta. Si viajas al norte, las Pléyades nunca pasarán justo arriba de tu cabeza. Este fenómeno solo se puede ver en la zona donde se desarrolló esta civilización antigua.'
     ],
     expandables: [
-      { label: 'La danza de las sombras', icon: 'clock', text: 'Durante un paso cenital solar, puedes pararte derecho al mediodía y ver cómo tu propia sombra desaparece debajo de tus zapatos. Los mayas medían estas sombras con estelas altas de piedra para calcular con gran exactitud la duración del año trópico. Es un método sumamente elegante de usar las herramientas de la naturaleza natural.' },
+      { label: 'La danza de las sombras', icon: 'clock', text: 'Durante un paso cenital solar, puedes pararte derecho al mediodía y ver cómo tu propia sombra desaparece debajo de tus zapatos. Los mayas medían estas sombras con estelas altas de piedra para calcular con gran exactitud la duración del año trópico. Es un método elegante de usar las herramientas de la naturaleza natural.' },
       { label: 'Medición del tiempo nocturno', icon: 'clock', text: 'Las estrellas sirven para medir el tiempo durante la noche al igual que el Sol lo hace durante el día. Observar a Tzab-ek cruzar el meridiano superior ayudaba a los sacerdotes a dividir la noche en horas exactas. El cielo era un reloj gigante lleno de puntos brillantes que giraban sobre un eje invisible y constante.' }
     ],
     fact: 'El paralelo de veinte grados pasa justo por encima de la península de Yucatán. Debido a la inclinación del eje del planeta Tierra, las estrellas que tienen una declinación cercana a los veinticuatro grados, como las Pléyades, logran alcanzar el punto cenital visible en esta región geográfica. Los cálculos para predecir esto requieren observaciones de muchas décadas continuas.'
@@ -179,7 +170,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/maya/infographic_m10/hero_astronomia-precisa.jpg',
     content: [
       'Si crees que para ser un buen astrónomo necesitas usar un telescopio moderno gigante, los mayas probarían que estás equivocado. Ellos lograron una precisión astronómica increíble usando solo sus ojos humanos y edificios de piedra muy largos. Imagina usar la pared de tu casa para ver por dónde sale el sol cada día y hacer marcas en el suelo a lo largo de los años. Así fue como empezaron a entender el ritmo del inmenso universo estrellado.',
-      'Los sabios mayas no solo anotaban la posición diaria de las cosas. Ellos descubrieron un movimiento de la Tierra increíblemente lento llamado la precesión de los equinoccios. Piensa en un trompo que está girando rápido pero también se tambalea muy lentamente de lado a lado. Nuestro planeta hace exactamente lo mismo. Este tambaleo hace que la posición aparente de las estrellas cambie un poquito cada siglo. ¡Es un ciclo que tarda veintiséis mil años en completarse!',
+      'Los sabios mayas no solo anotaban la posición diaria de las cosas. Ellos descubrieron un movimiento de la Tierra lento llamado la precesión de los equinoccios. Piensa en un trompo que está girando rápido pero también se tambalea muy lentamente de lado a lado. Nuestro planeta hace exactamente lo mismo. Este tambaleo hace que la posición aparente de las estrellas cambie un poquito cada siglo. ¡Es un ciclo que tarda veintiséis mil años en completarse!',
       'Detectar un cambio tan minúsculo requiere observaciones metódicas durante muchísimas generaciones humanas. Los abuelos pasaban sus libros de datos anotados a los nietos, siglo tras siglo sin interrupción. Notaron que el punto exacto por donde Tzab-ek salía en el horizonte este iba cambiando poco a poco con el paso de los años. Alinear un templo a una estrella requiere saber que ese alineamiento dejará de ser perfecto en el futuro.',
       'En muchas zonas arqueológicas famosas como Chichén Itzá o Uxmal, hay edificios que están deliberadamente orientados para apuntar hacia las Pléyades. Las calles antiguas y las plazas ceremoniales siguen líneas rectas que apuntan al horizonte por donde este cascabel cósmico subía al cielo. Usaron la arquitectura inmensa como un instrumento astronómico gigante que convertía su profundo conocimiento matemático en pura roca sólida.',
       'Esta precisión asombra a los científicos de hoy. Usando una matemática base veinte y símbolos escritos complejos, lograron calcular órbitas planetarias con un error de apenas unas fracciones de día. Conocer el movimiento exacto del universo les daba un poder político inmenso a los gobernantes, porque demostraba que estaban en sintonía perfecta con los dioses creadores. Eran los dueños del tiempo porque sabían medirlo de manera impecable.'
@@ -220,10 +211,10 @@ const INFOGRAPHIC_NODES = [
       'Piensa en el otro lado del gran océano pacífico. En Japón, a este mismo grupo de estrellas lo llaman Subaru. Significa literalmente unir fuerzas o agruparse juntos. Si alguna vez has visto el logotipo de los autos marca Subaru, notarás que es exactamente un grupo de seis estrellas conectadas entre sí. Ellos también usaban el cielo para saber cuándo plantar su arroz importante. Es una herramienta agrícola que traspasa fronteras enormes.',
       'Para los intrépidos navegantes del pueblo maorí en la lejana Nueva Zelanda, este conjunto de estrellas se llama Matariki. Su aparición lenta antes de que salga el sol frío del invierno marca el inicio de todo el año nuevo tradicional de su calendario milenario. Las familias se reúnen contentas para recordar a los familiares que murieron durante el año pasado y para celebrar unidos la promesa de una nueva cosecha futura.',
       'En el país inmenso de la India, el grupo se conoce como Krittika, y está fuertemente asociado con el fuego sagrado de la creación mística y con las seis madres maravillosas que cuidaron al dios guerrero llamado Kartikeya. Por otro lado, en la mitología clásica europea, son famosas como las Siete Hermanas asustadas que fueron convertidas rápidamente en pájaros blancos y luego en estrellas eternas para escapar de un cazador rudo.',
-      'Es un recordatorio poderoso de que todos los seres humanos compartimos exactamente el mismo cielo nocturno. Aunque los mayas imaginaron una cola de serpiente de cascabel ruidosa y los griegos vieron a siete hermanas bellas huyendo rápidamente, el propósito práctico y esencial era exactamente el mismo. Mirábamos unidos hacia arriba para poder entender cómo vivir mejor aquí abajo. El universo estrellado fue verdaderamente nuestro primer maestro global.'
+      'Es un recordatorio poderoso de que todos los seres humanos compartimos exactamente el mismo cielo nocturno. Aunque los mayas imaginaron una cola de serpiente de cascabel ruidosa y los griegos vieron a siete hermanas bellas huyendo rápidamente, el propósito práctico y esencial era exactamente el mismo. Mirábamos unidos hacia arriba para poder entender cómo vivir mejor aquí abajo. El universo estrellado fue nuestro primer maestro global.'
     ],
     expandables: [
-      { label: 'El mito perdido', icon: 'atom', text: 'Muchas culturas mundiales completamente separadas tienen mitos sobre por qué una de las siete estrellas principales se perdió y ahora solo se ven seis. Los científicos descubrieron que hace cien mil años, dos estrellas del grupo estaban mucho más separadas y eran visibles como dos diferentes. Luego se movieron muy juntas gradualmente.' },
+      { label: 'El mito perdido', icon: 'atom', text: 'Muchas culturas mundiales separadas tienen mitos sobre por qué una de las siete estrellas principales se perdió y ahora solo se ven seis. Los científicos descubrieron que hace cien mil años, dos estrellas del grupo estaban mucho más separadas y eran visibles como dos diferentes. Luego se movieron muy juntas gradualmente.' },
       { label: 'Herramienta universal', icon: 'clock', text: 'Sin importar si cultivaban el sagrado maíz verde en México, el arroz húmedo en Japón o las papas grandes en Nueva Zelanda, el movimiento anual regular y preciso de este cúmulo abierto en el cielo profundo servía para marcar fielmente los tiempos del delicado mundo natural. Era el mismo reloj para toda la humanidad antigua.' }
     ],
     fact: 'La mención escrita más antigua y verificada sobre las brillantes Pléyades se encuentra en los famosos textos chinos astronómicos que datan aproximadamente del año dos mil trescientos cincuenta antes de nuestra era común. También aparecen representadas visualmente en el enigmático Disco Celeste de Nebra, un artefacto de bronce europeo que tiene más de tres mil seiscientos años de antigüedad misteriosa e indiscutible.'
@@ -363,9 +354,7 @@ function NodeButton({ node, isActive, onClick, index }) {
       </div>
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -511,7 +500,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               {decoComponents[0]({ size: 50, color: node.color })}
             </div>
           )}
-          <h3 style={{ margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <h3 style={{ margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <span style={{ display: 'inline-flex', width: '40px', height: '40px', borderRadius: '50%', overflow: 'hidden', border: `2px solid ${node.color}40`, flexShrink: 0 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}  loading="lazy" />
@@ -559,7 +548,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <Sparkles size={18} style={{ color: node.color }} />
             </div>
             <div>
-              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase' }}>Dato Científico</span>
+              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase' }}>Dato Científico</span>
               <p style={{ margin: '0.3rem 0 0', fontStyle: 'italic', color: 'rgba(255,255,255,0.9)', fontSize: '0.92rem', lineHeight: 1.7 }}>{node.fact}</p>
             </div>
           </div>

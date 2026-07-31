@@ -104,12 +104,8 @@ function DecoDresdenGlyph({ size = 60, color = '#C62828', style = {} }) {
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
   'chiibal-kiin': [DecoJaguar, DecoEclipse, DecoMoonPhase],
-  'tabla-eclipses-dresde': [DecoDresdenGlyph, DecoSarosCycle, DecoEclipse],
-  'mecanismo-eclipses': [DecoSarosCycle, DecoMoonPhase, DecoEclipse],
-  'prediccion-precisa': [DecoDresdenGlyph, DecoSarosCycle, DecoJaguar],
-  'eclipse-lunar': [DecoMoonPhase, DecoEclipse, DecoJaguar],
-  'registro-historico': [DecoDresdenGlyph, DecoJaguar, DecoMoonPhase],
-  'ciencia-supersticion': [DecoEclipse, DecoJaguar, DecoSarosCycle],
+  'tabla-eclipses-dresde': [DecoDresdenGlyph, DecoSarosCycle, DecoEclipse],'mecanismo-eclipses': [DecoSarosCycle, DecoMoonPhase, DecoEclipse],'prediccion-precisa': [DecoDresdenGlyph, DecoSarosCycle, DecoJaguar],'eclipse-lunar': [DecoMoonPhase, DecoEclipse, DecoJaguar],
+  'registro-historico': [DecoDresdenGlyph, DecoJaguar, DecoMoonPhase],'ciencia-supersticion': [DecoEclipse, DecoJaguar, DecoSarosCycle],
 };
 
 // ─── Content Data ────────────────────────────────────────────────────────────
@@ -130,14 +126,14 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/maya/infographic_m8/hero_chiibal-kiin.jpg',
     content: [
       "Para los antiguos mayas, un eclipse solar no era un simple evento donde la Luna bloqueaba la luz. Lo llamaban 'Chiibal K\'iin', que significa literalmente 'el Sol devorado'. Imaginaban que criaturas gigantescas, como jaguares celestiales o serpientes estelares, daban mordiscos a nuestro astro rey en pleno día. Era un momento de mucho miedo porque el Sol era la fuente de toda la vida y el calor en su mundo.",
-      'Imagina que estás jugando en el patio y, de repente, sin nubes, el cielo comienza a oscurecerse en pleno mediodía. Los pájaros dejan de cantar y los perros aúllan. Para un niño maya hace mil años, esto significaba que el mundo podía terminar. Creían que si el Sol era completamente comido por el jaguar cósmico, la oscuridad sería eterna y los monstruos bajarían a la Tierra para comerse a las personas.',
+      'Imagina que estás jugando en el patio y, de repente, sin nubes, el cielo comienza a oscurecerse en pleno mediodía. Los pájaros dejan de cantar y los perros aúllan. Para un niño maya hace mil años, esto significaba que el mundo podía terminar. Creían que si el Sol era comido por el jaguar cósmico, la oscuridad sería eterna y los monstruos bajarían a la Tierra para comerse a las personas.',
       'Por esta razón, cuando ocurría un eclipse, las ciudades mayas estallaban en ruido. Las personas golpeaban tambores de madera, hacían sonar caparazones de tortuga y gritaban al cielo. El objetivo era hacer tanto ruido como fuera posible para asustar al jaguar celestial y obligarlo a escupir al Sol. Es como cuando golpeas ollas para asustar a un animal salvaje que entra a tu jardín, pero a escala cósmica.',
       'Aunque la historia del jaguar suena a cuento de magia, la respuesta de los sacerdotes mayas fue muy científica. Decidieron que la única forma de proteger al Sol era saber exactamente cuándo el jaguar intentaría atacar. Comenzaron a registrar meticulosamente el movimiento del Sol y la Luna. Anotaban cada día, cada fase lunar y cada eclipse que veían. A lo largo de muchos años, acumularon montones de datos.',
       'Al mirar estos registros durante cientos de años, descubrieron patrones matemáticos. Se dieron cuenta de que los ataques del jaguar no eran aleatorios, sino que seguían reglas matemáticas estrictas. Convertir el miedo en matemáticas fue uno de los logros más grandes de la humanidad. Pasaron de gritarle al cielo a calcular las órbitas con una precisión que sorprende a los astrónomos modernos.',
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La palabra maya "Chiibal" no solo se usaba para los eclipses. Es la misma raíz de la palabra usada cuando un perro o un jaguar muerde algo. Los mayas veían el cielo no como un espacio vacío, sino como una selva viva donde el Sol, la Luna y las estrellas eran animales poderosos que cazaban y eran cazados. Esta visión de un universo vivo y depredador era común en toda Mesoamérica.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Un eclipse solar ocurre porque la Luna, que es 400 veces más pequeña que el Sol, está exactamente 400 veces más cerca de la Tierra. Esto hace que, vistos desde nuestro planeta, ambos parezcan tener exactamente el mismo tamaño en el cielo. Esta increíble coincidencia geométrica es lo que permite que el pequeño disco de la Luna cubra completamente el enorme disco del Sol durante un eclipse total.' },
+      { label: 'Dato Científico', icon: 'atom', text: 'Un eclipse solar ocurre porque la Luna, que es 400 veces más pequeña que el Sol, está exactamente 400 veces más cerca de la Tierra. Esto hace que, vistos desde nuestro planeta, ambos parezcan tener exactamente el mismo tamaño en el cielo. Esta increíble coincidencia geométrica es lo que permite que el pequeño disco de la Luna cubra el enorme disco del Sol durante un eclipse total.' },
     ],
     fact: 'En el año 1991, hubo un eclipse solar total en México. Los arqueólogos notaron que algunas comunidades mayas modernas aún conservaban la tradición de hacer ruido golpeando metales y ollas para "ayudar" al Sol. Esto demuestra que la antigua memoria del Chiibal K\'iin ha sobrevivido durante más de mil años, transmitida de abuelos a nietos, manteniendo viva la historia del jaguar cósmico.',
   },
@@ -158,7 +154,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En el Códice', icon: 'clock', text: 'El Códice de Dresde recibe su nombre porque se conserva en la ciudad de Dresde, en Alemania. Nadie sabe exactamente cómo llegó a Europa desde México, pero probablemente fue enviado como un regalo curioso al emperador Carlos V en el siglo dieciséis. Durante la Segunda Guerra Mundial, el libro casi fue destruido por una bomba, pero afortunadamente sobrevivió con daños menores.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'En la tabla de eclipses del Códice, hay dibujos (glifos) colgando de "bandas celestiales". Estos dibujos muestran imágenes muy gráficas del Sol y la Luna siendo tragados, o a la diosa de la muerte. Estas imágenes eran advertencias visuales para los sacerdotes sobre el tipo de peligro y el tipo de ritual que debían realizar para proteger al mundo de la oscuridad.' },
     ],
-    fact: 'El sistema matemático maya usaba el concepto del cero cientos de años antes de que llegara a Europa. Usaban un dibujo de un caparazón de caracol para representar el cero. Además, su sistema era vigesimal (basado en veinte) en lugar de decimal (basado en diez) como el nuestro. Esto les permitía hacer cálculos gigantescos, como los 11,960 días de la tabla de eclipses, de manera muy compacta y eficiente.',
+    fact: 'El sistema matemático maya usaba el concepto del cero cientos de años antes de que llegara a Europa. Usaban un dibujo de un caparazón de caracol para representar el cero. Además, su sistema era vigesimal (basado en veinte) en lugar de decimal (basado en diez) como el nuestro. Esto les permitía hacer cálculos gigantescos, como los 11,960 días de la tabla de eclipses, de manera compacta y eficiente.',
   },
   {
     id: 'mecanismo-eclipses',
@@ -168,13 +164,13 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/maya/infographic_m8/hero_mecanismo-eclipses.jpg',
     content: [
       'Imagina dos aros de hula-hula. Uno es la pista de la Tierra alrededor del Sol, y el otro es la pista de la Luna alrededor de la Tierra. Si ambos aros estuvieran perfectamente planos sobre una mesa, tendríamos un eclipse solar cada mes cuando la Luna pasara por el medio. Pero el aro de la Luna está ligeramente inclinado. La mayoría de los meses, la Luna pasa un poco por arriba o por abajo del Sol.',
-      'Los puntos mágicos donde estos dos aros inclinados se cruzan se llaman "nodos". Para que ocurra un eclipse, la Luna debe estar cruzando uno de estos nodos exactamente al mismo tiempo que pasa entre la Tierra y el Sol. Esto es como intentar que dos trenes que viajan por vías diferentes lleguen a un cruce exactamente en el mismo segundo. Solo ocurre durante ciertas épocas del año llamadas "temporadas de eclipses".',
+      'Los puntos mágicos donde estos dos aros inclinados se cruzan se llaman "nodos". Para que ocurra un eclipse, la Luna debe estar cruzando uno de estos nodos exactamente al mismo tiempo que pasa entre la Tierra y el Sol. Esto es como intentar que dos trenes que viajan por vías diferentes lleguen a un cruce exactamente en el mismo segundo. Solo ocurre durante ciertas épocas del año llamadas"temporadas de eclipses".',
       'Aquí es donde entra el famoso Ciclo de Saros. Los astrónomos antiguos, tanto los babilonios como los mayas, descubrieron que la Tierra, la Luna y el Sol regresan casi exactamente a la misma posición geométrica cada 6,585.3 días (aproximadamente 18 años y 11 días). Después de este tiempo, el ciclo de eclipses se repite casi idéntico. Es como un bucle gigante en la coreografía de los astros.',
       'Lo asombroso de los mayas es que lograron calcular estas ventanas de peligro sin tener telescopios, sin saber que la Tierra era redonda, y sin entender que los planetas orbitan alrededor del Sol. Su método no era construir modelos físicos del sistema solar, sino encontrar los patrones matemáticos en el tiempo. Era pura ciencia de observación y aritmética, llevada a su nivel más alto posible.',
       'Piensa en ello como intentar entender las reglas de un videojuego súper complejo solo mirando la pantalla durante años, anotando cada vez que un enemigo aparece. Nunca ves el código de programación, pero descubres el patrón perfecto de cuándo atacar. Los mayas no conocían las leyes de la gravedad de Newton, pero sus números predecían el comportamiento de los planetas con precisión increíble.',
     ],
     expandables: [
-      { label: 'Dato Científico', icon: 'atom', text: 'El .3 en los 6,585.3 días del ciclo de Saros es crucial. Es aproximadamente un tercio de día (8 horas). Debido a estas 8 horas extra, la Tierra gira un tercio de vuelta adicional antes del siguiente eclipse del ciclo. Por lo tanto, el mismo eclipse se repetirá 18 años después, pero será visible en una parte diferente del mundo, desplazado unos 120 grados hacia el oeste.' },
+      { label: 'Dato Científico', icon: 'atom', text: 'El.3 en los 6,585.3 días del ciclo de Saros es crucial. Es aproximadamente un tercio de día (8 horas). Debido a estas 8 horas extra, la Tierra gira un tercio de vuelta adicional antes del siguiente eclipse del ciclo. Por lo tanto, el mismo eclipse se repetirá 18 años después, pero será visible en una parte diferente del mundo, desplazado unos 120 grados hacia el oeste.' },
       { label: 'La coincidencia', icon: 'atom', text: 'Los mayas fueron muy afortunados. En el pasado remoto, la Luna estaba mucho más cerca de la Tierra y los eclipses totales eran muy comunes. En el futuro lejano, la Luna estará tan lejos que nunca podrá cubrir el Sol. Los humanos (y los mayas) existen en el punto exacto de la historia de la Tierra donde ambos discos miden exactamente medio grado en el cielo.' },
     ],
     fact: 'Las órbitas no son círculos perfectos, sino óvalos (elipses). Cuando la Luna está en su punto más alejado de la Tierra (apogeo) y pasa frente al Sol, no logra cubrirlo por completo. Esto deja un anillo de fuego brillante alrededor de la sombra lunar, conocido como eclipse anular. Los mayas también registraron estos eventos en sus tablas matemáticas con gran cuidado y respeto.',
@@ -187,8 +183,8 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/maya/infographic_m8/hero_prediccion-precisa.jpg',
     content: [
       'Para entender cuán buenas eran las matemáticas mayas, los científicos modernos pusieron a prueba la Tabla de Eclipses del Códice de Dresde. Descubrieron que su ciclo de 11,960 días tiene un error de apenas una fracción de día a lo largo de treinta y tres años. ¡Es un nivel de precisión asombroso para personas que hacían todos sus cálculos observando a simple vista y escribiendo en corteza de árbol!',
-      'Al otro lado del mundo, en la antigua Mesopotamia, los astrónomos babilonios también descubrieron los ciclos de los eclipses. Usaban el Ciclo de Saros de 18 años. Los griegos antiguos aprendieron de los babilonios y construyeron la famosa Máquina de Anticitera, un ordenador de engranajes de bronce, para calcular los eclipses. Pero los mayas lograron algo similar estando completamente aislados.',
-      'La astronomía maya se desarrolló de manera completamente independiente. Nunca conocieron a los babilonios, griegos o chinos. Inventaron su propia forma de matemáticas, su propio sistema de escritura y su propio calendario complejo. Que dos culturas separadas por océanos gigantescos llegaran a conclusiones matemáticas similares demuestra que las leyes de la naturaleza son universales y medibles.',
+      'Al otro lado del mundo, en la antigua Mesopotamia, los astrónomos babilonios también descubrieron los ciclos de los eclipses. Usaban el Ciclo de Saros de 18 años. Los griegos antiguos aprendieron de los babilonios y construyeron la famosa Máquina de Anticitera, un ordenador de engranajes de bronce, para calcular los eclipses. Pero los mayas lograron algo similar estando aislados.',
+      'La astronomía maya se desarrolló de manera independiente. Nunca conocieron a los babilonios, griegos o chinos. Inventaron su propia forma de matemáticas, su propio sistema de escritura y su propio calendario complejo. Que dos culturas separadas por océanos gigantescos llegaran a conclusiones matemáticas similares demuestra que las leyes de la naturaleza son universales y medibles.',
       'Un detalle fascinante de las tablas mayas es que incluyen "factores de corrección". Es como cuando tu reloj se atrasa un minuto cada mes, y tú aprendes a sumar un minuto al leer la hora. Los astrónomos mayas sabían que su sistema de 11,960 días no era infinitamente perfecto y se desfasaría con los siglos. Así que escribieron instrucciones matemáticas para ajustar y corregir la tabla en el futuro.',
       'Esta capacidad de auto-corregir sus matemáticas muestra que la ciencia maya no era estática. No era solo una religión rígida, sino un sistema dinámico. Los sacerdotes astrónomos eran verdaderos científicos que revisaban sus teorías, comparaban sus datos antiguos con las nuevas observaciones y ajustaban sus modelos matemáticos para que fueran más precisos. Era ciencia en estado puro.',
     ],
@@ -215,7 +211,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'Dato Científico', icon: 'atom', text: 'El fenómeno que tiñe la Luna de rojo se llama dispersión de Rayleigh. Es el mismo efecto óptico que hace que nuestro cielo sea azul durante el día y rojo al atardecer. La atmósfera de la Tierra actúa como una lente gigante que dobla la luz del Sol, filtrando los colores azules y dejando pasar solo la luz roja para bañar la superficie lunar.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'La diosa maya de la Luna, Ixchel, era una de las figuras más poderosas de su religión. Se la asociaba con el agua, la fertilidad, los tejidos y los partos. Cuando ocurría un eclipse lunar, las mujeres embarazadas creían que el peligro cósmico podía causar malformaciones en sus bebés, por lo que usaban amuletos protectores de piedra roja.' },
     ],
-    fact: 'Un eclipse lunar máximo puede durar hasta una hora y cuarenta y siete minutos en su fase de totalidad (cuando está completamente rojo). Este largo tiempo les daba a los sacerdotes mayas la oportunidad perfecta para encender hogueras en las pirámides, tocar los tambores sagrados y realizar cantos complejos antes de que la luz blanca regresara al satélite.',
+    fact: 'Un eclipse lunar máximo puede durar hasta una hora y cuarenta y siete minutos en su fase de totalidad (cuando está rojo). Este largo tiempo les daba a los sacerdotes mayas la oportunidad perfecta para encender hogueras en las pirámides, tocar los tambores sagrados y realizar cantos complejos antes de que la luz blanca regresara al satélite.',
   },
   {
     id: 'registro-historico',
@@ -394,9 +390,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -579,8 +573,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -619,10 +612,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -652,8 +642,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -708,8 +697,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

@@ -169,8 +169,8 @@ const INFOGRAPHIC_NODES = [
     content: [
       '¿Alguna vez has pensado que algo ocurrió "al mismo tiempo"? Einstein demostró que eventos que parecen simultáneos para una persona pueden ocurrir en momentos distintos para otra. Esto se conoce como la Relatividad de la Simultaneidad, y es uno de los conceptos más sorprendentes de la física moderna.',
       'Para explicarlo, Einstein imaginó un tren en movimiento. Si dos rayos caen al mismo tiempo en los extremos del tren, alguien parado afuera lo verá suceder a la vez. Pero un pasajero dentro del tren, que se mueve hacia uno de los rayos, verá ese rayo caer primero, porque la luz llega a sus ojos un instante antes.',
-      '¿Quién de los dos tiene razón? ¡Ambos! No existe un punto de vista "correcto" en el universo. La simultaneidad depende totalmente de tu estado de movimiento. Esto destruye la idea de que podemos decir con certeza qué ocurrió "ahora mismo" en otra galaxia.',
-      'Esto tiene profundas consecuencias. Si el "ahora" de una persona es diferente al de otra, entonces el pasado, el presente y el futuro deben existir todos de alguna forma al mismo tiempo. Es lo que los científicos llaman el "Universo Bloque", donde todos los momentos están congelados en una estructura de cuatro dimensiones.'
+      '¿Quién de los dos tiene razón? ¡Ambos! No existe un punto de vista "correcto"en el universo. La simultaneidad depende de tu estado de movimiento. Esto destruye la idea de que podemos decir con certeza qué ocurrió"ahora mismo" en otra galaxia.',
+      'Esto tiene profundas consecuencias. Si el "ahora"de una persona es diferente al de otra, entonces el pasado, el presente y el futuro deben existir todos de alguna forma al mismo tiempo. Es lo que los científicos llaman el"Universo Bloque", donde todos los momentos están congelados en una estructura de cuatro dimensiones.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Hay momentos en la saga donde Marty y Doc experimentan los mismos eventos desde perspectivas de tiempo totalmente diferentes. En la primera película, el "presente" de Marty en 1985 ocurre simultáneamente con el "futuro" que el Doc original de 1955 está intentando cambiar. Sus líneas temporales personales se cruzan de forma fascinante.' },
@@ -245,7 +245,7 @@ const INFOGRAPHIC_NODES = [
       'Además, los satélites GPS que usamos para la navegación deben ajustar continuamente sus relojes internos. Debido a su velocidad y a estar más lejos de la gravedad terrestre, su tiempo no coincide con el nuestro. Sin las matemáticas del viaje al futuro de Einstein, el GPS fallaría en cuestión de horas.'
     ],
     expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al año 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad holográfica. Aunque la película sobreestimó algunas tecnologías, la idea de dar un "salto" y encontrar una sociedad transformada por la innovación tecnológica captura la esencia del viaje hacia el futuro.' },
+      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al año 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad holográfica. Aunque la película sobreestimó algunas tecnologías, la idea de dar un"salto" y encontrar una sociedad transformada por la innovación tecnológica captura la esencia del viaje hacia el futuro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Partículas subatómicas llamadas muones, que se crean cuando los rayos cósmicos chocan con la atmósfera, duran tan poco que deberían desintegrarse antes de llegar al suelo. Sin embargo, llegan a la superficie porque viajan casi a la velocidad de la luz, lo que "ralentiza" su reloj interno. ¡Ellos experimentan su propio viaje al futuro!' }
     ],
     fact: 'Si pudieras viajar en una nave al 99.99% de la velocidad de la luz durante lo que para ti sería 1 año, al volver a la Tierra descubrirías que han pasado casi 70 años. ¡Habrías saltado al futuro de la humanidad!'
@@ -416,9 +416,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -601,8 +599,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -641,10 +638,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -674,8 +668,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',

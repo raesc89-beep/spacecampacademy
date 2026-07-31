@@ -144,9 +144,9 @@ const DECO_MAP = {
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const BIBLIOGRAPHY = [
   'Bachelet, E. (1912). Levitating Transmitting Apparatus, US Patent 1,020,942',
-  'Earnshaw, S. (1842). On the nature of the molecular forces, Trans. Cambridge Phil. Soc., 7',
+  'Earnshaw, S. (1842). On the nature of the molecular forces, Trans. Cambridge Phil. Soc. 7',
   'Braunbeck, W. (1939). Freischwebende Korper im elektrischen und magnetischen Feld, Zeitschrift fur Physik, 112',
-  'Simon, M.D. et al. (1997). Spin stabilized magnetic levitation, American Journal of Physics, 65',
+  'Simon, M.D. Et al. (1997). Spin stabilized magnetic levitation, American Journal of Physics, 65',
 ];
 
 const INFOGRAPHIC_NODES = [
@@ -157,7 +157,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'En «Volver al Futuro Parte II» (1989), Marty McFly llega al año 2015 y descubre los aeropatines â€” ¡patinetas que flotan! La película muestra a chicos usándolos en la plaza de Hill Valley. El director Robert Zemeckis hizo una broma diciendo que los aeropatines eran reales pero que los grupos de padres no permitían venderlos. ¡Mucha gente le creyó!',
       '¿Cómo los filmaron? Los actores estaban parados en tablas reales sujetas con cables y arneses. El equipo usó tecnología de pantalla azul y plataformas mecánicas. Michael J. Fox tuvo que repetir muchas tomas porque el arnés era incómodo. ¡El aeropatín rosa de Mattel se convirtió en uno de los accesorios de película más icónicos de la historia!',
-      'La película predijo que 2015 tendría aeropatines, y cuando llegó el 2015 real, ¿todavía no los teníamos... o sí? ¡Compañías como Lexus y Hendo SÍ crearon aeropatines funcionales ese año, inspirados por la película! La ciencia ficción se convirtió en realidad científica, solo que no exactamente como la imaginaron.',
+      'La película predijo que 2015 tendría aeropatines, y cuando llegó el 2015 real, ¿todavía no los teníamos... O sí? ¡Compañías como Lexus y Hendo SÍ crearon aeropatines funcionales ese año, inspirados por la película! La ciencia ficción se convirtió en realidad científica, solo que no exactamente como la imaginaron.',
       'La física en la película: el aeropatín parece repeler la gravedad misma. En realidad, no puedes simplemente cancelar la gravedad â€” es una de las cuatro fuerzas fundamentales del universo. Pero SÍ puedes crear una fuerza hacia arriba lo suficientemente fuerte para contrarrestarla. ¡Eso es lo que hace la levitación magnética!',
       'Mattel sacó juguetes de aeropatín después de BTTF2. Eran solo tablas normales sin ruedas (no flotaban). La utilería original de la película se vendió en una subasta por $501,000 dólares en 2021. Solo existen un puñado de aeropatines usados en la filmación.',
     ],
@@ -170,9 +170,9 @@ const INFOGRAPHIC_NODES = [
     content: [
       '¡Los trenes de levitación magnética (maglev) son REALES y vuelan! No por el aire como aviones, sino que flotan sobre sus vías sin contacto alguno. Imagina un tren que nunca toca los rieles â€” sin fricción, sin ruedas, solo un colchón de fuerza magnética invisible. Es lo más cercano a un aeropatín real.',
       'El Maglev de Shanghái en China alcanza 431 km/h (268 mph) en servicio regular desde 2004. Usa suspensión electromagnética (EMS) donde electroimanes en el tren son atraídos hacia arriba por un riel de acero. ¡El espacio es de solo 10mm! Es como un abrazo magnético que levanta todo el tren.',
-      'El SCMaglev de Japón estableció el récord mundial de velocidad: 603 km/h (375 mph) en 2015. Usa imanes superconductores enfriados a -269°C con helio líquido. A esa temperatura, los imanes se vuelven increíblemente poderosos. El tren flota 10cm sobre la vía. ¡Un viaje de Tokio a Osaka que toma 2.5 horas en tren bala tomaría solo 40 minutos!',
+      'El SCMaglev de Japón estableció el récord mundial de velocidad: 603 km/h (375 mph) en 2015. Usa imanes superconductores enfriados a -269°C con helio líquido. A esa temperatura, los imanes se vuelven poderosos. El tren flota 10cm sobre la vía. ¡Un viaje de Tokio a Osaka que toma 2.5 horas en tren bala tomaría solo 40 minutos!',
       '¿Cómo funciona? Piensa en dos imanes: cuando empujas los mismos polos juntos (Norte-Norte o Sur-Sur), se repelen. Ahora imagina miles de imanes súper poderosos haciendo esto debajo de un tren. La fuerza de repulsión levanta todo el tren de la vía. Imanes guía a los lados lo mantienen centrado.',
-      'El efecto Meissner es el verdadero superpoder: cuando ciertos materiales se enfrían por debajo de una temperatura crítica, se convierten en superconductores y expulsan completamente los campos magnéticos. Esto significa que un imán colocado sobre un superconductor flotará â€” es empujado físicamente por el campo expulsado. Es real, se demuestra en laboratorios de todo el mundo, y es la base de los trenes más rápidos de la Tierra.',
+      'El efecto Meissner es el verdadero superpoder: cuando ciertos materiales se enfrían por debajo de una temperatura crítica, se convierten en superconductores y expulsan los campos magnéticos. Esto significa que un imán colocado sobre un superconductor flotará â€” es empujado físicamente por el campo expulsado. Es real, se demuestra en laboratorios de todo el mundo, y es la base de los trenes más rápidos de la Tierra.',
     ],
     fact: 'El Maglev de Shanghái acelera de 0 a 431 km/h en solo 2 minutos. El viaje del aeropuerto a la ciudad toma solo 7 minutos y 20 segundos. Durante el viaje, puedes sostener una moneda de canto sobre la bandeja ¡y no se cae! â€” no hay vibración porque el tren nunca toca la vía.',
   },
@@ -187,7 +187,7 @@ const INFOGRAPHIC_NODES = [
       'El nitrógeno líquido se acaba después de unos 10-20 minutos, así que la tabla gradualmente se hunde mientras los superconductores se calientan. Los pilotos tenían que rellenar el nitrógeno entre corridas. El skateboarder profesional Ross McGouran fue el primero en montarlo exitosamente. Le tomó semanas de práctica â€” ¡flotar en una superficie sin fricción NO es nada como patinar normalmente!',
       'Todo el proyecto fue una campaña publicitaria â€” Lexus gastó aproximadamente $10+ millones en el aeropatín para promover su marca. Pero la CIENCIA era 100% real. Sin trucos, sin cables, sin CGI. Pura física de superconductores. Demostró que flotar sobre campos magnéticos es posible, solo que no (todavía) práctico.',
     ],
-    fact: 'Cuando Ross McGouran intentó el aeropatín de Lexus por primera vez, ¡se cayó inmediatamente! No hay fricción contra qué empujar â€” girar, frenar y balancearte son completamente diferentes al skateboarding. Dijo que era como «intentar pararte sobre una bola de hielo». Le tomó 6 semanas de práctica dominar trucos básicos.',
+    fact: 'Cuando Ross McGouran intentó el aeropatín de Lexus por primera vez, ¡se cayó inmediatamente! No hay fricción contra qué empujar â€” girar, frenar y balancearte son diferentes al skateboarding. Dijo que era como «intentar pararte sobre una bola de hielo». Le tomó 6 semanas de práctica dominar trucos básicos.',
   },
   {
     id: 'hendo', title: 'El Hendo Hoverboard y Tony Hawk', color: '#FF6B00',
@@ -195,7 +195,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/bttf/infographic_aeropatines/hero_hendo.png',
     content: [
       'En 2014, un año antes del proyecto Lexus, una compañía llamada Arx Pax creó el Hendo Hoverboard. ¡El legendario skateboarder Tony Hawk fue uno de los primeros en montarlo! El video de Tony Hawk en un aeropatín real se hizo viral â€” fue como ver el futuro llegar.',
-      'El Hendo usa una tecnología completamente diferente a Lexus: la Ley de Lenz y corrientes de Foucault. Cuando un imán se mueve cerca de una superficie conductora (como cobre o aluminio), crea corrientes eléctricas arremolinadas en el metal. ¡Estas corrientes generan su propio campo magnético que empuja CONTRA el imán original! Mientras más rápido te muevas, ¡más fuerte la repulsión!',
+      'El Hendo usa una tecnología diferente a Lexus: la Ley de Lenz y corrientes de Foucault. Cuando un imán se mueve cerca de una superficie conductora (como cobre o aluminio), crea corrientes eléctricas arremolinadas en el metal. ¡Estas corrientes generan su propio campo magnético que empuja CONTRA el imán original! Mientras más rápido te muevas, ¡más fuerte la repulsión!',
       'Piénsalo así: deja caer un imán por un tubo de cobre. En vez de caer rápido, se desliza lentamente â€” casi flotando. El cobre no es magnético, pero el imán en movimiento crea corrientes eléctricas que luchan contra su movimiento. El Hendo escala esto con imanes giratorios que crean una fuerza de flotación constante.',
       'La limitación: el Hendo SOLO funciona sobre superficies metálicas conductoras â€” láminas de cobre o aluminio. Llévalo afuera al concreto o asfalto y no pasa nada. Los fundadores, Greg y Jill Henderson, crearon la tecnología de flotación para protección contra terremotos â€” ¡su verdadero objetivo era levitar edificios enteros durante sismos!',
       'El Hendo 2.0 (su versión mejorada) usó una campaña de Kickstarter y recaudó $510,590 dólares de 3,169 patrocinadores. El respaldo de Tony Hawk fue crucial. La tabla flota aproximadamente 2.5 cm sobre la superficie y puede soportar un jinete de hasta 136 kg. Suena como una aspiradora cuando funciona â€” ¡los imanes giratorios crean un zumbido fuerte!',
@@ -420,8 +420,8 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
     >
       {/* Retro CRT scanline overlay */}
       <div style={{
-        position: 'absolute', inset: 0, borderRadius: 6, zIndex: 2, pointerEvents: 'none',
-        background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.15) 2px, rgba(0,0,0,.15) 4px)',
+        position: 'absolute', inset: 0, borderRadius: 6, zIndex: 2, pointerEvents:'none',
+        background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0.15) 2px, rgba(0,0,0.15) 4px)',
         mixBlendMode: 'overlay',
       }} />
       {/* Chrome corner accents */}
@@ -435,8 +435,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
       {isExplored && (
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
           style={{
-            position: 'absolute', top: -6, right: -6, width: 22, height: 22, borderRadius: 4,
-            background: 'linear-gradient(135deg, #00E676, #00C853)', border: '2px solid #0a0a1a',
+            position: 'absolute', top: -6, right: -6, width: 22, height: 22, borderRadius: 4, background:'linear-gradient(135deg, #00E676, #00C853)', border: '2px solid #0a0a1a',
             display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 4,
             boxShadow: '0 0 8px #00E67688',
           }}>
@@ -446,8 +445,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
         </motion.div>
       )}
       <div style={{
-        position: 'absolute', bottom: -24, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap',
-        fontSize: 8, fontWeight: 800, color: node.color, letterSpacing: 1.5, textTransform: 'uppercase',
+        position: 'absolute', bottom: -24, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap', fontSize: 8, fontWeight: 800, color: node.color, letterSpacing: 1.5, textTransform:'uppercase',
         textShadow: `0 0 8px ${node.color}88, 0 1px 3px rgba(0,0,0,.9)`,
         fontFamily: "'Exo 2', 'Courier New', monospace",
       }}>
@@ -527,8 +525,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: -8, left: 12,
-                  background: node.color, color: '#0a0a1a',
+                  position: 'absolute', top: -8, left: 12, background: node.color, color:'#0a0a1a',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: 8, letterSpacing: 1,
                 }}>

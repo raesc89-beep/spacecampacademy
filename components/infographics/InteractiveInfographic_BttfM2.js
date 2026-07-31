@@ -135,12 +135,9 @@ function DecoFormula({ size = 70, color = '#FFAB91', style = {} }) {
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
   'relatividad-basico': [DecoClockwork, DecoFormula, DecoAtomSvg],
-  'delorean-velocidad': [DecoDeLoreanSvg, DecoLightning, DecoClockwork],
-  'paradoja-abuelo': [DecoTimeline, DecoWormhole, DecoClockwork],
-  'einstein-relatividad': [DecoFormula, DecoAtomSvg, DecoClockwork],
+  'delorean-velocidad': [DecoDeLoreanSvg, DecoLightning, DecoClockwork],'paradoja-abuelo': [DecoTimeline, DecoWormhole, DecoClockwork],'einstein-relatividad': [DecoFormula, DecoAtomSvg, DecoClockwork],
   'muchos-mundos': [DecoWormhole, DecoTimeline, DecoAtomSvg],
-  'predicciones-2015': [DecoDeLoreanSvg, DecoLightning, DecoFormula],
-  'ciencia-ficcion': [DecoWormhole, DecoFormula, DecoTimeline],
+  'predicciones-2015': [DecoDeLoreanSvg, DecoLightning, DecoFormula],'ciencia-ficcion': [DecoWormhole, DecoFormula, DecoTimeline],
 };
 
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -159,14 +156,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_relatividad.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_relatividad.png',
     content: [
-      'Imagina que tienes un reloj en tu muñeca y tu amigo tiene otro idéntico. Si tu amigo se sube a un cohete que viaja increíblemente rápido â€” digamos al 90% de la velocidad de la luz â€” y tú te quedas en la Tierra, algo asombroso pasaría: ¡su reloj se atrasaría! No es que esté roto, es que el tiempo realmente pasa más despacio para quien viaja rápido.',
+      'Imagina que tienes un reloj en tu muñeca y tu amigo tiene otro idéntico. Si tu amigo se sube a un cohete que viaja rápido â€” digamos al 90% de la velocidad de la luz â€” y tú te quedas en la Tierra, algo asombroso pasaría: ¡su reloj se atrasaría! No es que esté roto, es que el tiempo realmente pasa más despacio para quien viaja rápido.',
       'Esto no es ciencia ficción: Albert Einstein lo demostró en 1905 con su Teoría de la Relatividad Especial. Y lo hemos comprobado muchas veces. En 1971, los físicos Joseph Hafele y Richard Keating pusieron relojes atómicos ultra-precisos en aviones que volaron alrededor del mundo. Cuando los compararon con relojes idénticos que se quedaron en tierra, ¡los relojes del avión se habían atrasado 59 nanosegundos! Exactamente lo que Einstein predijo.',
       'El ejemplo más práctico está en tu bolsillo: los satélites GPS orbitan la Tierra a unos 14,000 km/h. A esa velocidad, sus relojes atómicos se atrasan 7 microsegundos al día por velocidad. Pero como están más lejos de la gravedad terrestre, ¡también se adelantan 45 microsegundos al día! Sin corregir esta diferencia, el GPS daría errores de ubicación de hasta 10 kilómetros cada día.',
-      'El tiempo también tiene una "dirección". Es como un río que solo fluye en un sentido: del pasado al futuro. Los físicos llaman a esto la "flecha del tiempo", y está conectada con algo llamado entropía â€” una medida del desorden. Un huevo roto nunca se rearma solo. Una taza de café caliente siempre se enfría, nunca se calienta sola. El tiempo avanza porque el desorden siempre aumenta.',
+      'El tiempo también tiene una "dirección". Es como un río que solo fluye en un sentido: del pasado al futuro. Los físicos llaman a esto la"flecha del tiempo", y está conectada con algo llamado entropía â€” una medida del desorden. Un huevo roto nunca se rearma solo. Una taza de café caliente siempre se enfría, nunca se calienta sola. El tiempo avanza porque el desorden siempre aumenta.',
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Si pudieras viajar al 99.9% de la velocidad de la luz, el tiempo pasaría para ti 22 veces más lento. Un viaje de 1 año para ti serían 22 años en la Tierra. ¡Volverías al futuro como Marty McFly!' },
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown dice que el tiempo es la "cuarta dimensión". ¡Esto es correcto! Einstein unificó las tres dimensiones del espacio con el tiempo en un concepto llamado "espacio-tiempo" de cuatro dimensiones.' },
+      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown dice que el tiempo es la "cuarta dimensión". ¡Esto es correcto! Einstein unificó las tres dimensiones del espacio con el tiempo en un concepto llamado"espacio-tiempo" de cuatro dimensiones.' },
     ],
     fact: 'Los muones â€” partículas diminutas creadas cuando los rayos cósmicos golpean la atmósfera â€” viajan al 99.94% de la velocidad de la luz. Deberían desintegrarse antes de llegar al suelo, pero gracias a la dilatación temporal, el tiempo pasa tan lento para ellos que SÍ llegan. ¡La relatividad ocurre sobre nuestras cabezas todos los días!',
   },
@@ -186,7 +183,7 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las zapatillas Nike Mag de "Regreso al Futuro II" se hicieron realidad. Nike presentó en 2016 las Nike HyperAdapt con sistema de ajuste automático real. Solo se fabricaron 89 pares de las Mag originales, subastadas por hasta $200,000 dólares cada par para caridad.' },
       { label: 'Dato Científico', icon: 'atom', text: '1.21 gigawatts no es una cifra descabellada. La estación espacial ISS usa solo 120 kilowatts de energía solar. Un rayo produce entre 1 y 5 gigawatts, pero solo durante 30 microsegundos. La fusión nuclear controlada (como en ITER, Francia) podría producir 500 megawatts â€” todavía menos que lo que necesita el DeLorean.' },
     ],
-    fact: 'El número "88 mph" fue elegido por los guionistas Bob Gale y Robert Zemeckis porque les gustó cómo se veía "88" en el velocímetro del DeLorean. No tiene ningún significado científico. Sin embargo, en el sistema métrico, 88 mph = 141.62 km/h, que casualmente es la velocidad máxima real que alcanzaba el DMC-12 original.',
+    fact: 'El número "88 mph"fue elegido por los guionistas Bob Gale y Robert Zemeckis porque les gustó cómo se veía"88" en el velocímetro del DeLorean. No tiene ningún significado científico. Sin embargo, en el sistema métrico, 88 mph = 141.62 km/h, que casualmente es la velocidad máxima real que alcanzaba el DMC-12 original.',
   },
   {
     id: 'paradoja-abuelo',
@@ -198,7 +195,7 @@ const INFOGRAPHIC_NODES = [
       'Imagina esto: viajas al pasado en una máquina del tiempo y evitas que tus abuelos se conozcan. Si nunca se conocieron, tus padres nunca nacieron. Y si tus padres nunca nacieron... ¡tú nunca naciste para hacer el viaje! Pero si nunca hiciste el viaje, tus abuelos sí se conocieron y tú sí naciste. Es un círculo imposible. Esto es la Paradoja del Abuelo.',
       'Es como intentar borrar la llave con la que abriste una puerta... ¡mientras estás dentro del cuarto! Si borras la llave, nunca pudiste abrir la puerta, así que nunca entraste al cuarto para borrar la llave. Es un verdadero rompecabezas lógico.',
       '"Regreso al Futuro" muestra esta paradoja de manera brillante: cuando Marty viaja a 1955 y accidentalmente impide que sus padres se conozcan, empieza a desvanecerse de una fotografía familiar. Si no logra que se enamoren, dejará de existir. La película convierte un concepto de física teórica en algo visual y emocionante.',
-      'Los físicos tienen dos soluciones principales para esta paradoja. La primera es la "Interpretación de los Muchos Mundos" propuesta por Hugh Everett III en 1957: al viajar al pasado, creas una rama paralela del universo. En tu universo original nada cambia; en el nuevo, las cosas son diferentes. La segunda es el "Principio de Autoconsistencia" de Igor Novikov (1980s): las leyes de la física solo permiten viajes al pasado que NO crean paradojas â€” como si el universo se protegiera a sí mismo.',
+      'Los físicos tienen dos soluciones principales para esta paradoja. La primera es la "Interpretación de los Muchos Mundos"propuesta por Hugh Everett III en 1957: al viajar al pasado, creas una rama paralela del universo. En tu universo original nada cambia; en el nuevo, las cosas son diferentes. La segunda es el"Principio de Autoconsistencia" de Igor Novikov (1980s): las leyes de la física solo permiten viajes al pasado que NO crean paradojas â€” como si el universo se protegiera a sí mismo.',
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Marty no es el único que casi causa una paradoja. En BTTF II, el viejo Biff roba el DeLorean y se da el almanaque deportivo a sí mismo en 1955, creando una línea temporal alternativa donde es millonario y Hill Valley es un desastre. Doc explica que el viaje creó una "tangente temporal" â€” una rama del tiempo.' },
@@ -231,7 +228,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_mundos.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_mundos.png',
     content: [
-      'En "Regreso al Futuro II", Doc Brown dibuja en una pizarra cómo el tiempo se bifurca cuando alguien cambia el pasado: la línea temporal original sigue existiendo, pero una nueva línea "alternativa" se crea. Esto no es solo película â€” es una idea real de la física llamada la "Interpretación de los Muchos Mundos".',
+      'En "Regreso al Futuro II", Doc Brown dibuja en una pizarra cómo el tiempo se bifurca cuando alguien cambia el pasado: la línea temporal original sigue existiendo, pero una nueva línea"alternativa"se crea. Esto no es solo película â€” es una idea real de la física llamada la"Interpretación de los Muchos Mundos".',
       'Hugh Everett III la propuso en 1957, cuando tenía solo 27 años. Su idea era revolucionaria: cada vez que ocurre un evento cuántico (como un electrón que puede girar a la izquierda o a la derecha), el universo se divide en dos ramas. En una rama gira a la izquierda, en la otra a la derecha. Las dos ramas coexisten pero no se comunican entre sí.',
       'Imagina un jardín de senderos que se bifurcan. Cada decisión, cada evento cuántico, crea un nuevo camino. Si esto es cierto, existen infinitos universos paralelos: uno donde los dinosaurios no se extinguieron, uno donde nunca aprendiste a leer, uno donde estás leyendo este mismo texto pero con un sombrero puesto.',
       'Werner Heisenberg descubrió en 1927 el Principio de Incertidumbre: es imposible conocer simultáneamente la posición exacta y la velocidad exacta de una partícula. No es un problema de instrumentos: es una propiedad fundamental de la realidad. Esto significa que el futuro no está determinado con precisión â€” hay probabilidades, no certezas. "Ver el futuro" es literalmente imposible porque el futuro aún no existe de manera fija.',
@@ -267,14 +264,14 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_cienciaficcion.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_cienciaficcion.png',
     content: [
-      'La ciencia ficción no solo predice el futuro â€” lo INSPIRA. Los comunicadores de "Star Trek" (1966) inspiraron a Martin Cooper para crear el primer teléfono celular en Motorola (1973). Los submarinos de Julio Verne (1870) precedieron a los submarinos reales. Las tabletas de "2001: Odisea del Espacio" (1968) anticiparon el iPad por 42 años.',
+      'La ciencia ficción no solo predice el futuro â€” lo INSPIRA. Los comunicadores de "Star Trek"(1966) inspiraron a Martin Cooper para crear el primer teléfono celular en Motorola (1973). Los submarinos de Julio Verne (1870) precedieron a los submarinos reales. Las tabletas de"2001: Odisea del Espacio" (1968) anticiparon el iPad por 42 años.',
       '"Regreso al Futuro" ha inspirado a generaciones de científicos. El físico Ronald Mallett (Universidad de Connecticut) ha dedicado su vida a diseñar una máquina del tiempo teórica usando láseres circulares, inspirado por la película y por el deseo de ver a su padre fallecido. Aunque su diseño es controvertido, su investigación sobre gravedad y luz es legítima.',
       'La causalidad â€” el principio de que la causa siempre precede al efecto â€” es uno de los pilares más fundamentales de la física. Es tan importante que Stephen Hawking propuso la "Conjetura de Protección de la Cronología": las leyes de la física SIEMPRE conspiran para impedir el viaje al pasado y proteger la causalidad.',
       'La ciencia ficción hace preguntas teóricas, y la ciencia busca respuestas comprobables. ¿Qué es el tiempo? ¿Puede tener dirección contraria? Estas interrogantes conceptuales son las que impulsan muchas ramas de la física moderna.',
     ],
     expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Stephen Hawking organizó una "Fiesta para Viajeros del Tiempo" el 28 de junio de 2009 en la Universidad de Cambridge. Preparó champán, globos y un cartel de bienvenida... pero envió las invitaciones DESPUÉS de la fiesta. Su lógica: si el viaje al pasado fuera posible, alguien del futuro habría recibido la invitación y asistido. Nadie vino. Hawking lo consideró "evidencia experimental" de que el viaje al pasado probablemente es imposible.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El físico Kip Thorne (Premio Nobel 2017) demostró en 1988 que los agujeros de gusano PODRÍAN permitir el viaje en el tiempo en teoría, pero requerirían "materia exótica" con energía negativa para mantenerlos abiertos. Aún no sabemos si la materia exótica existe. Thorne fue asesor científico de la película "Interstellar".' },
+      { label: '¿Sabías que...?', icon: 'clock', text: 'Stephen Hawking organizó una "Fiesta para Viajeros del Tiempo"el 28 de junio de 2009 en la Universidad de Cambridge. Preparó champán, globos y un cartel de bienvenida... Pero envió las invitaciones DESPUÉS de la fiesta. Su lógica: si el viaje al pasado fuera posible, alguien del futuro habría recibido la invitación y asistido. Nadie vino. Hawking lo consideró"evidencia experimental" de que el viaje al pasado probablemente es imposible.' },
+      { label: 'Dato Científico', icon: 'atom', text: 'El físico Kip Thorne (Premio Nobel 2017) demostró en 1988 que los agujeros de gusano PODRÍAN permitir el viaje en el tiempo en teoría, pero requerirían "materia exótica"con energía negativa para mantenerlos abiertos. Aún no sabemos si la materia exótica existe. Thorne fue asesor científico de la película"Interstellar".' },
     ],
     fact: 'Michael J. Fox (Marty McFly) fue diagnosticado con Parkinson a los 29 años. Creó la Fundación Michael J. Fox, que ha recaudado más de $1,500 millones de dólares para investigación del Parkinson â€” más que cualquier otra fundación privada de enfermedad neurológica. La ciencia ficción que interpretó ahora financia ciencia real.',
   },
@@ -417,9 +414,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -602,8 +597,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -642,10 +636,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -675,8 +666,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',
@@ -728,8 +718,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

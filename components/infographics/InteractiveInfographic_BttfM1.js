@@ -130,10 +130,7 @@ const DECO_MAP = {
   'paradoja-causal': [DecoWormhole, DecoTimeline, DecoClockFace],
   'condensador-flujo': [DecoFluxCapacitor, DecoBolt, DecoAtomSvg],
   'legado-cientifico': [DecoAtomSvg, DecoClockFace, DecoGear],
-};
-
-const BIBLIOGRAPHY = [
-  'Einstein, A. (1905). \'Zur Elektrodynamik bewegter Körper\', Annalen der Physik, 17',
+}; const BIBLIOGRAPHY = ['Einstein, A. (1905). \'Zur Elektrodynamik bewegter Körper\', Annalen der Physik, 17',
   'Faraday, M. (1832). \'Experimental Researches in Electricity\', Philosophical Transactions',
   'Everett, H. (1957). \'Relative State Formulation of Quantum Mechanics\', Reviews of Modern Physics, 29',
   'Novikov, I.D. (1989). \'An Analysis of the Operation of a Time Machine\', Soviet Physics JETP, 68',
@@ -168,8 +165,8 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/bttf/infographic_condensador/hero_newton.png',
     content: [
       'Imagina el universo como un enorme reloj de cuerda, preciso y exacto. Así es como el brillante científico Isaac Newton imaginaba el tiempo en el siglo XVII. Para él, el tiempo era absoluto y universal. Esto significaba que un segundo en la Tierra duraba exactamente lo mismo que un segundo en Marte, o en la galaxia más lejana. El tiempo simplemente avanzaba, sin que nada pudiera alterarlo.',
-      'Según esta visión clásica, el tiempo era como el escenario vacío donde ocurrían los eventos del universo, pero el escenario nunca cambiaba. Podías ir rápido o despacio, pero el reloj del universo seguía haciendo \'tic-tac\' al mismo ritmo para todos. Esta idea tenía mucho sentido común. Después de todo, es lo que experimentamos todos los días en nuestras vidas.',
-      'En el universo mecánico de Newton, si conocías la posición y la velocidad de todas las partículas del universo en este instante, podías calcular exactamente dónde estarían en el futuro y dónde estuvieron en el pasado. Era un universo predecible. Si esto fuera 100% cierto, el viaje en el tiempo sería absolutamente imposible, porque el tiempo sería una pista rígida de una sola dirección.',
+      'Según esta visión clásica, el tiempo era como el escenario vacío donde ocurrían los eventos del universo, pero el escenario nunca cambiaba. Podías ir rápido o despacio, pero el reloj del universo seguía haciendo \'tic-tac\'al mismo ritmo para todos. Esta idea tenía mucho sentido común. Después de todo, es lo que experimentamos todos los días en nuestras vidas.',
+      'En el universo mecánico de Newton, si conocías la posición y la velocidad de todas las partículas del universo en este instante, podías calcular exactamente dónde estarían en el futuro y dónde estuvieron en el pasado. Era un universo predecible. Si esto fuera 100% cierto, el viaje en el tiempo sería imposible, porque el tiempo sería una pista rígida de una sola dirección.',
       'Aunque la física de Newton nos permitió enviar cohetes a la Luna y construir los edificios en los que vivimos, resultó que no contaba toda la historia sobre el tiempo. A principios del siglo XX, un joven empleado de patentes llamado Albert Einstein replantearía esta visión universal, proponiendo que el tiempo es en realidad flexible y dependiente del observador.'
     ],
     expandables: [
@@ -206,13 +203,13 @@ const INFOGRAPHIC_NODES = [
       '¿Por qué puedes romper un huevo para hacer una tortilla, pero no puedes convertir una tortilla en un huevo entero? Esta pregunta aparentemente tonta esconde uno de los mayores secretos de la física: la \'Flecha del Tiempo\'. En nuestro universo, las cosas tienden a pasar del orden al desorden. A este desorden creciente los científicos lo llaman \'entropía\'.',
       'La Segunda Ley de la Termodinámica dice que la entropía (el desorden) del universo siempre aumenta. Piensa en tu habitación: si no la ordenas activamente, se vuelve más desordenada con el tiempo, nunca se ordena sola mágicamente. Esta ley es la razón por la que el tiempo parece tener una sola dirección. El futuro siempre será más desordenado que el pasado.',
       'Si pudieras ver una película de cristal rompiéndose, sabrías inmediatamente si la cinta está avanzando o retrocediendo. Pero curiosamente, a nivel de los átomos individuales, las leyes de la física funcionan igual hacia adelante que hacia atrás. Si ves chocar dos átomos de billar, no podrías decir si el video va hacia adelante o en reversa. La flecha del tiempo solo aparece cuando tenemos MUCHOS átomos juntos.',
-      'Viajar al pasado significa luchar contra esta flecha del tiempo. Significaría ir de un estado de mayor entropía a uno de menor entropía, obligando al universo a \'ordenarse\' de nuevo. Por eso a la naturaleza no le gusta el viaje al pasado. ¡Es como intentar que todo el humo de una fogata vuelva a entrar en un trozo de madera quemada!'
+      'Viajar al pasado significa luchar contra esta flecha del tiempo. Significaría ir de un estado de mayor entropía a uno de menor entropía, obligando al universo a \'ordenarse\'de nuevo. Por eso a la naturaleza no le gusta el viaje al pasado. ¡Es como intentar que todo el humo de una fogata vuelva a entrar en un trozo de madera quemada!'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Cuando Marty altera el pasado y evita que sus padres se enamoren, vemos que la fotografía de su familia comienza a borrarse lentamente. Sus hermanos desaparecen uno por uno. Esto ilustra la "entropía de la causalidad": al cambiar la causa en el pasado, el efecto futuro se desvanece.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Algunos físicos creen que la flecha del tiempo solo existe por las condiciones especiales del Big Bang. El universo comenzó en un estado de bajísima entropía (muy ordenado). Como si el universo fuera un reloj de cuerda que se tensó al máximo al principio y lleva 13,800 millones de años desenrollándose.' }
     ],
-    fact: 'El físico Arthur Eddington fue quien inventó el término "Flecha del Tiempo" en 1927. Se dio cuenta de que si las leyes matemáticas no distinguen entre el pasado y el futuro, tenía que haber una "flecha" termodinámica que nos dijera hacia dónde fluyen las cosas en la realidad.'
+    fact: 'El físico Arthur Eddington fue quien inventó el término "Flecha del Tiempo"en 1927. Se dio cuenta de que si las leyes matemáticas no distinguen entre el pasado y el futuro, tenía que haber una"flecha" termodinámica que nos dijera hacia dónde fluyen las cosas en la realidad.'
   },
   {
     id: 'paradoja-causal',
@@ -223,7 +220,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'El mayor dolor de cabeza del viaje temporal se llama la Paradoja del Abuelo. Funciona así: imagínate que viajas al pasado y, por accidente, impides que tus abuelos se conozcan. Si no se conocen, uno de tus padres nunca nace. Si tu padre no nace, ¡tú tampoco naces! Pero si tú no naciste, ¿quién viajó al pasado para impedir que se conocieran? Es un verdadero rompecabezas lógico.',
       'En física, esto se llama una violación de la causalidad. La causa (tú viajando al pasado) elimina el efecto (tú naciendo), lo cual elimina la causa. Es un bucle sin sentido. Algunos físicos creen que esto demuestra que viajar al pasado es imposible. Las leyes de la naturaleza simplemente impedirían que construyeras la máquina para evitar este lío matemático.',
-      'Pero hay otras dos soluciones teóricas posibles. La primera es la teoría de los \'Muchos Mundos\' o universos paralelos de Hugh Everett (1957). Si viajas al pasado y cambias algo, en realidad estás creando una nueva rama en la línea temporal. Tu universo original sigue existiendo sin ti, pero ahora tú estás en un universo paralelo donde la historia es diferente.',
+      'Pero hay otras dos soluciones teóricas posibles. La primera es la teoría de los \'Muchos Mundos\'o universos paralelos de Hugh Everett (1957). Si viajas al pasado y cambias algo, en realidad estás creando una nueva rama en la línea temporal. Tu universo original sigue existiendo sin ti, pero ahora tú estás en un universo paralelo donde la historia es diferente.',
       'La otra solución brillante es el Principio de Autoconsistencia de Igor Novikov (1989). Dice que si viajas al pasado, hagas lo que hagas, ya formaba parte de la historia. Si intentas impedir que tus abuelos se conozcan, te resbalarás, chocarás con ellos, ¡y resultarás ser la causa por la que se conocieron! El universo se auto-corrige para que la historia sea una historia coherente y sin paradojas.'
     ],
     expandables: [
@@ -239,16 +236,16 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_condensador.png',
     image: '/assets/bttf/infographic_condensador/hero_condensador.png',
     content: [
-      'Hablemos del componente central de la máquina: el Condensador de Flujo. Aunque fue inventado para la película, su nombre suena increíblemente científico. En el mundo real, un \'condensador\' es un componente electrónico que almacena energía, como una batería temporal rápida. Y el \'flujo\' se refiere a líneas de campo magnético o electromagnético cruzando un espacio. ¡Así que un condensador de flujo sonaría como algo que almacena energía magnética extrema!',
+      'Hablemos del componente central de la máquina: el Condensador de Flujo. Aunque fue inventado para la película, su nombre suena científico. En el mundo real, un \'condensador\'es un componente electrónico que almacena energía, como una batería temporal rápida. Y el \'flujo\'se refiere a líneas de campo magnético o electromagnético cruzando un espacio. ¡Así que un condensador de flujo sonaría como algo que almacena energía magnética extrema!',
       'En la ficción, este aparato necesita generar 1.21 Gigavatios de energía para crear una ruptura en el continuo espacio-tiempo. Esta es una cantidad colosal de poder. Un Gigavatio equivale a mil millones de vatios. Para que te hagas una idea, ¡un relámpago gigante o una gran central nuclear producen aproximadamente 1.2 Gigavatios! Doc Brown no exageraba cuando decía que necesitaba mucha energía.',
       'Si quisiéramos curvar el espacio-tiempo de verdad (como proponía Einstein para crear túneles o agujeros de gusano), necesitaríamos mucha más energía que un rayo. Necesitaríamos \'materia exótica\', un tipo teórico de materia que tiene masa negativa. Imagina una pelota de tenis que, si la empujas hacia la derecha, ¡acelera hacia la izquierda! Esta extraña materia podría mantener abierto un túnel en el tiempo.',
-      'El diseño en forma de \'Y\' del condensador de flujo, con sus luces parpadeantes y chispas, es el cerebro de la máquina del tiempo. Canaliza la inmensa energía del plutonio (o del rayo) y la enfoca para envolver al DeLorean en una burbuja de espacio-tiempo. Dentro de la burbuja, las reglas normales de Einstein se suspenden, permitiendo que el coche resbale hacia el pasado o el futuro.'
+      'El diseño en forma de \'Y\'del condensador de flujo, con sus luces parpadeantes y chispas, es el cerebro de la máquina del tiempo. Canaliza la inmensa energía del plutonio (o del rayo) y la enfoca para envolver al DeLorean en una burbuja de espacio-tiempo. Dentro de la burbuja, las reglas normales de Einstein se suspenden, permitiendo que el coche resbale hacia el pasado o el futuro.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'El 5 de noviembre de 1955, Doc Brown resbaló en su baño mientras colgaba un reloj, se golpeó la cabeza con el lavabo, y al despertar tuvo la visión de la forma en "Y". Así nació el condensador de flujo. ¡A veces los mayores descubrimientos empiezan con un buen chichón en la cabeza!' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando filmaron la película, el departamento de arte construyó el condensador de flujo usando partes de una caja de conexiones eléctricas, luces LED parpadeantes y tubos de vidrio. Fue tan icónico que hoy en día puedes comprar cargadores USB para el coche con su forma exacta.' }
     ],
-    fact: 'El término "1.21 Gigawatts" se hizo tan famoso que el Departamento de Energía de EE.UU. a veces usa la broma en sus informes. Curiosamente, Bob Gale y Robert Zemeckis pronunciaron mal la palabra "gigawatts" como "jigowatts" en la película, porque así se lo pronunció un asesor científico despistado.'
+    fact: 'El término "1.21 Gigawatts"se hizo tan famoso que el Departamento de Energía de EE.UU. A veces usa la broma en sus informes. Curiosamente, Bob Gale y Robert Zemeckis pronunciaron mal la palabra"gigawatts" como "jigowatts" en la película, porque así se lo pronunció un asesor científico despistado.'
   },
   {
     id: 'legado-cientifico',
@@ -258,8 +255,8 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/bttf/infographic_condensador/hero_legado.png',
     content: [
       '¿Puede una película divertida de Hollywood cambiar la ciencia real? ¡Absolutamente! Regreso al Futuro no solo rompió la taquilla en 1985; también encendió la imaginación de toda una generación de futuros científicos, físicos e ingenieros. Muchos investigadores cuánticos de hoy en día confiesan que su amor por el espacio-tiempo comenzó viendo un DeLorean acelerar a 88 millas por hora.',
-      'La película hizo que conceptos increíblemente complejos, como las paradojas causales, las líneas de tiempo alternativas y el continuo espacio-tiempo, fueran fáciles de entender para todo el mundo. Doc Brown usando una pizarra para explicar cómo se bifurca la historia en 1985 alternativo es quizás la mejor clase de física teórica que se ha dado en el cine.',
-      'Incluso hoy, los científicos que estudian la computación cuántica usan términos inspirados en el viaje en el tiempo. Las computadoras cuánticas usan \'qubits\' que pueden existir en múltiples estados a la vez, como si exploraran muchas líneas temporales alternativas para encontrar la respuesta correcta a un problema súper complejo al mismo tiempo.',
+      'La película hizo que conceptos complejos, como las paradojas causales, las líneas de tiempo alternativas y el continuo espacio-tiempo, fueran fáciles de entender para todo el mundo. Doc Brown usando una pizarra para explicar cómo se bifurca la historia en 1985 alternativo es quizás la mejor clase de física teórica que se ha dado en el cine.',
+      'Incluso hoy, los científicos que estudian la computación cuántica usan términos inspirados en el viaje en el tiempo. Las computadoras cuánticas usan \'qubits\'que pueden existir en múltiples estados a la vez, como si exploraran muchas líneas temporales alternativas para encontrar la respuesta correcta a un problema súper complejo al mismo tiempo.',
       'El mayor legado de la máquina del tiempo de Doc Brown no es si es posible construirla o no, sino su capacidad de motivar al público general a pensar en conceptos complejos de la física moderna.'
     ],
     expandables: [
@@ -416,9 +413,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -602,8 +597,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -642,10 +636,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -675,8 +666,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',

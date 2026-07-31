@@ -67,17 +67,9 @@ function DecoEqualSign({ size = 70, color = '#FF6B35', style = {} }) {
 }
 
 const DECO_MAP = {
-  'relojes-velocidad': [DecoOrbit, DecoSpacetimeGrid, DecoEqualSign],
-  'gemelos-einstein': [DecoWaveRipple, DecoSpacetimeGrid, DecoOrbit],
-  'dilatacion-gravitacional': [DecoBlackHole, DecoSpacetimeGrid, DecoEqualSign],
-  'gps-real': [DecoOrbit, DecoWaveRipple, DecoSpacetimeGrid],
-  'planeta-miller': [DecoBlackHole, DecoWaveRipple, DecoOrbit],
-  'paradoja-gemelos': [DecoSpacetimeGrid, DecoEqualSign, DecoWaveRipple],
-  'futuro-crononauta': [DecoOrbit, DecoBlackHole, DecoSpacetimeGrid],
-};
-
-const BIBLIOGRAPHY = [
-  'Thorne, K. (2014). The Science of Interstellar, W.W. Norton & Company',
+  'relojes-velocidad': [DecoOrbit, DecoSpacetimeGrid, DecoEqualSign],'gemelos-einstein': [DecoWaveRipple, DecoSpacetimeGrid, DecoOrbit],'dilatacion-gravitacional': [DecoBlackHole, DecoSpacetimeGrid, DecoEqualSign],'gps-real': [DecoOrbit, DecoWaveRipple, DecoSpacetimeGrid],'planeta-miller': [DecoBlackHole, DecoWaveRipple, DecoOrbit],
+  'paradoja-gemelos': [DecoSpacetimeGrid, DecoEqualSign, DecoWaveRipple],'futuro-crononauta': [DecoOrbit, DecoBlackHole, DecoSpacetimeGrid],
+}; const BIBLIOGRAPHY = ['Thorne, K. (2014). The Science of Interstellar, W.W. Norton & Company',
   'Einstein, A. (1905). "Zur Elektrodynamik bewegter Körper", Annalen der Physik, 17',
   'Hafele, J.C., Keating, R.E. (1972). "Around-the-World Atomic Clocks", Science, 177(4044)',
   'Pound, R.V., Rebka, G.A. (1959). "Gravitational Red-Shift in Nuclear Resonance", Physical Review Letters, 3(9)',
@@ -134,14 +126,14 @@ const INFOGRAPHIC_NODES = [
       'Además de la dilatación por velocidad lineal, Einstein postuló que los campos gravitacionales tienen un impacto cuantificable sobre el flujo cronológico de la realidad. Según la Relatividad General, la presencia de masa superdensa curva el tejido del espacio-tiempo universal, y esta deformación geométrica altera el ciclo de cualquier reloj material ubicado cerca. Cuanto mayor sea la densidad del objeto estelar y su atracción planetaria, más lento transcurrirá el tiempo biológico en su proximidad gravitatoria, estableciendo un desfase continuo en relación con el vacío interestelar lejano.',
       'Un campo gravitatorio intenso funciona como una fosa dentro de la topología del espacio exterior infinito. A medida que una sonda de investigación se sitúa en un punto de mayor profundidad gravitacional extrema, la desaceleración del tiempo local aumenta exponencialmente en relación con el exterior del sistema. Desde la perspectiva estricta de la mecánica cuántica moderna, operar dentro de este radio de gravedad masiva exige que las partículas elementales reduzcan su oscilación atómica normal. Esto genera un diferencial observable donde la vida biológica evoluciona de manera pausada y dispar.',
       'Para comprobar científicamente la alteración temporal por gravedad concentrada, los físicos R.V. Pound y G.A. Rebka estructuraron un experimento definitivo en la Universidad de Harvard durante 1959. Utilizaron una torre vertical de 22.5 metros de longitud total en el Laboratorio Jefferson para estudiar la radiación electromagnética de elementos inestables. El equipo disparó fotones de rayos gamma desde el techo superior hacia un detector de impacto situado en el nivel del sótano profundo, buscando medir la variación de frecuencia causada por la masa planetaria del globo terrestre subyacente.',
-      'Los datos experimentales recolectados demostraron que las ondas fotónicas modificaban su espectro al descender hacia el sótano inferior, evidenciando un cambio en el tiempo cronológico entre diferentes niveles del edificio universitario. Al analizar las colisiones a nivel atómico, confirmaron que los milisegundos en la base inferior transcurrían más lentamente en comparación con la azotea superior del recinto educativo humano. Esta modulación ondulatoria demostró exitosamente el postulado de la relatividad gravitacional aplicando detectores de frecuencia óptica sumamente sensibles.',
+      'Los datos experimentales recolectados demostraron que las ondas fotónicas modificaban su espectro al descender hacia el sótano inferior, evidenciando un cambio en el tiempo cronológico entre diferentes niveles del edificio universitario. Al analizar las colisiones a nivel atómico, confirmaron que los milisegundos en la base inferior transcurrían más lentamente en comparación con la azotea superior del recinto educativo humano. Esta modulación ondulatoria demostró exitosamente el postulado de la relatividad gravitacional aplicando detectores de frecuencia óptica sensibles.',
       'Esta comprobación instrumental implica que el relieve geográfico genera desajustes temporales a nivel planetario en nuestra propia civilización moderna. Un investigador que habite en la cumbre rocosa de una formación geológica gigante como el Everest experimentará un envejecimiento milimétricamente más veloz por su lejanía altitudinal del centro gravitatorio ardiente. Al estar situado a gran altitud atmosférica, la fuerza del núcleo geológico es menor estadísticamente, lo que disminuye el efecto de la compresión cronológica sobre los ritmos circadianos de las células en divisiones diarias continuas.',
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'La mecánica de la dilatación temporal forma el principal impedimento para la exploración interplanetaria ilustrada en la trama narrativa de Interstellar. El sistema orbital del agujero Gargantúa contiene un gradiente gravitacional extremo que corrompe la sincronía humana del tiempo estándar astronómico. Cualquier transporte que atraviese la órbita baja de este gigante cósmico sufre una ralentización exponencial del paso del tiempo orgánico celular vital. Este factor astrofísico convierte cada exploración planetaria en un riesgo de aislamiento intergeneracional severo y destructivo.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Como resultado de la diferencia gravitacional que opera entre diferentes zonas anatómicas del cuerpo humano bípedo, estamos bajo dilataciones biológicas asimétricas permanentes en nuestra edad fisiológica total. Ya que la interacción de la gravedad es ligeramente menor conforme aumenta el nivel altitudinal topográfico, el cerebro cognitivo humano envejece nanosegundos adicionales respecto a los miembros inferiores terrestres de apoyo constante. Aunque estas fluctuaciones somáticas son indetectables con los sentidos, los laboratorios aeroespaciales utilizan estos datos precisos y fiables para calibraciones de equipos satelitales.' },
     ],
-    fact: 'La ingeniería metrológica reciente permite estudiar la ralentización cuántica usando distancias sumamente reducidas a nivel de centímetros convencionales exactos. Si se sitúa un reloj cuántico hiperpreciso sobre un banco de pruebas básico, y su dispositivo gemelo idéntico en el piso inferior contiguo paralelo al suelo, una separación física de apenas cuarenta y cinco centímetros verticales arroja una asimetría medible del tiempo relativo transcurrido localmente. Este nivel de resolución experimental valida que el tejido espacial se deforma gravitacionalmente en entornos civiles reducidos comunes cotidianos.',
+    fact: 'La ingeniería metrológica reciente permite estudiar la ralentización cuántica usando distancias reducidas a nivel de centímetros convencionales exactos. Si se sitúa un reloj cuántico hiperpreciso sobre un banco de pruebas básico, y su dispositivo gemelo idéntico en el piso inferior contiguo paralelo al suelo, una separación física de apenas cuarenta y cinco centímetros verticales arroja una asimetría medible del tiempo relativo transcurrido localmente. Este nivel de resolución experimental valida que el tejido espacial se deforma gravitacionalmente en entornos civiles reducidos comunes cotidianos.',
   },
   {
     id: 'gps-real',
@@ -211,7 +203,7 @@ const INFOGRAPHIC_NODES = [
       'No lo harás metiéndote en un DeLorean ni en una cabina telefónica. El viaje temporal real está gobernado por las matemáticas de la relatividad: necesitas velocidad extrema o gravedad intensa. Cuanto más rápido te muevas o más cerca estés de un objeto masivo, más lento pasará el tiempo para ti comparado con quienes se quedaron atrás.',
       'El cosmonauta ruso Sergei Krikalev ostenta el récord como el mayor viajero del tiempo de la historia humana. Durante su carrera espacial, pasó un total de 803 días orbitando la Tierra a bordo de la estación Mir y la ISS, acumulando velocidades de 27,700 km/h durante meses consecutivos.',
       'Gracias a la dilatación temporal por velocidad, Krikalev se adelantó 0.02 segundos al futuro con respecto a todos los demás seres humanos en la Tierra. Puede parecer insignificante, pero demuestra un principio enorme: con la tecnología adecuada, podríamos saltar décadas o siglos enteros hacia adelante.',
-      'Si pudiéramos construir una nave que viajara al 99.995% de la velocidad de la luz, un viaje de 10 años para la tripulación equivaldría a 1,000 años en la Tierra. Los viajeros regresarían a un mundo completamente transformado. La física lo permite. Solo nos falta la ingeniería para lograrlo.',
+      'Si pudiéramos construir una nave que viajara al 99.995% de la velocidad de la luz, un viaje de 10 años para la tripulación equivaldría a 1,000 años en la Tierra. Los viajeros regresarían a un mundo transformado. La física lo permite. Solo nos falta la ingeniería para lograrlo.',
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'La esperanza en las capacidades del intelecto humano se resume en el epílogo de Interstellar: la humanidad logra sobrevivir construyendo estaciones espaciales gigantes que orbitan Saturno. Cooper despierta en la Estación Cooper, donde la gravedad ha sido dominada gracias a los datos que Murph descifró del reloj. La especie se adapta, abraza la física y conquista el espacio. Nolan muestra que la ciencia, no la magia, es lo que nos salvará.' },
@@ -323,9 +315,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -507,8 +497,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -546,10 +535,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -579,8 +565,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0a0c1e',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0a0c1e',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',

@@ -71,13 +71,8 @@ function DecoEqualSign({ size = 70, color = '#FF6B35', style = {} }) {
 
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
-  'puente-einstein-rosen': [DecoBlackHole, DecoSpacetimeGrid, DecoOrbit],
-  'hoja-doblada': [DecoSpacetimeGrid, DecoWaveRipple, DecoEqualSign],
-  'wormhole-saturno': [DecoOrbit, DecoBlackHole, DecoSpacetimeGrid],
-  'materia-exotica': [DecoWaveRipple, DecoSpacetimeGrid, DecoEqualSign],
-  'morris-thorne': [DecoEqualSign, DecoBlackHole, DecoOrbit],
-  'dimensiones-extra': [DecoSpacetimeGrid, DecoWaveRipple, DecoBlackHole],
-  'viaje-posible': [DecoOrbit, DecoEqualSign, DecoSpacetimeGrid],
+  'puente-einstein-rosen': [DecoBlackHole, DecoSpacetimeGrid, DecoOrbit],'hoja-doblada': [DecoSpacetimeGrid, DecoWaveRipple, DecoEqualSign],'wormhole-saturno': [DecoOrbit, DecoBlackHole, DecoSpacetimeGrid],'materia-exotica': [DecoWaveRipple, DecoSpacetimeGrid, DecoEqualSign],'morris-thorne': [DecoEqualSign, DecoBlackHole, DecoOrbit],
+  'dimensiones-extra': [DecoSpacetimeGrid, DecoWaveRipple, DecoBlackHole],'viaje-posible': [DecoOrbit, DecoEqualSign, DecoSpacetimeGrid],
 };
 
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -144,7 +139,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'La secuencia en la que la nave Endurance se aproxima al agujero de gusano cerca de Saturno tomó meses de renderizado computacional. Cada cuadro fotográfico requirió granjas de servidores para calcular cómo la luz de las estrellas se curvaría alrededor de la esfera anómala en el vacío. Este esfuerzo computacional sin precedentes generó datos valiosos sobre el comportamiento de la luz en campos gravitatorios extremos, fusionando cine y astrofísica computacional.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Kip Thorne estaba tan comprometido con asegurar la precisión científica en la representación de los agujeros negros y de gusano, que las ecuaciones de relatividad que derivó para los efectos visuales terminaron siendo publicadas en dos artículos de revistas científicas revisadas por pares. Estos documentos proporcionaron nuevas perspectivas matemáticas sobre la visualización de lentes gravitacionales cerca de horizontes de sucesos rotatorios.' }
     ],
-    fact: 'Desde una perspectiva matemática, si un viajero observara a través de un hipotético agujero de gusano esférico estabilizado, la imagen que vería en la superficie convexa sería una vista esférica comprimida de todo el cielo perteneciente al otro lado, distorsionada enormemente como en un espejo. Esta proyección visual obedece las estrictas reglas de la geometría no euclidiana que rigen la propagación de la luz en espacios curvos de alta curvatura escalar.'
+    fact: 'Desde una perspectiva matemática, si un viajero observara a través de un hipotético agujero de gusano esférico estabilizado, la imagen que vería en la superficie convexa sería una vista esférica comprimida de todo el cielo perteneciente al otro lado, distorsionada como en un espejo. Esta proyección visual obedece las estrictas reglas de la geometría no euclidiana que rigen la propagación de la luz en espacios curvos de alta curvatura escalar.'
   },
   {
     id: 'materia-exotica',
@@ -201,7 +196,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'El clímax emocional de Interstellar, cuando Cooper se adentra en el Teseracto (un cubo hiperdimensional), muestra cómo unos seres de cinco dimensiones han construido un espacio manipulable de incontables dimensiones extra en el interior del Bulk, para que el humano tridimensional pueda enviar señales físicas gravitatorias. La representación artística ilustra la intersección geométrica de un volumen hiperdimensional superior penetrando perpendicularmente nuestro espacio local convencional.' },
       { label: '¿Sabías que...?', icon: 'atom', text: 'Según las teorías actuales sobre las membranas espaciales y El Bulk, de las cuatro fuerzas fundamentales del universo que conocemos, solo la gravedad es plenamente capaz de escapar de nuestra membrana tridimensional y filtrarse hacia El Bulk o quinta dimensión oculta. Esta disipación gravitacional teórica hacia el espacio hiperdimensional podría explicar por qué la fuerza gravitatoria medida es exponencialmente más débil que el electromagnetismo a escalas subatómicas fundamentales.' }
     ],
-    fact: 'La teoría de Kaluza-Klein del año 1921, que proponía añadir matemáticas de una quinta dimensión extra, logró de manera asombrosa combinar las ecuaciones de campo de la relatividad general de Albert Einstein de la gravedad, con las ecuaciones del electromagnetismo de Maxwell de la luz, unificando todo de forma coherente. Este pionero trabajo estableció el paradigma metodológico moderno para intentar integrar todas las interacciones fundamentales utilizando geometrías multidimensionales complejas.'
+    fact: 'La teoría de Kaluza-Klein del año 1921, que proponía añadir matemáticas de una quinta dimensión extra, logró combinar las ecuaciones de campo de la relatividad general de Albert Einstein de la gravedad, con las ecuaciones del electromagnetismo de Maxwell de la luz, unificando todo de forma coherente. Este pionero trabajo estableció el paradigma metodológico moderno para intentar integrar todas las interacciones fundamentales utilizando geometrías multidimensionales complejas.'
   },
   {
     id: 'viaje-posible',
@@ -218,7 +213,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'El mensaje filosófico que domina la historia de Interstellar se basa en esta visión a largo plazo de la civilización: aunque el viaje cósmico y la manipulación de la gravedad están actualmente fuera de nuestras limitaciones científicas, en un futuro distante, la humanidad evolucionará hasta convertirse en los arquitectos cósmicos del espacio. La narrativa sugiere que el dominio completo de la física dimensional y temporal representará el próximo estadio evolutivo tecnológico humano.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La sigla teórica "ER=EPR" de la conjetura propuesta significa lo siguiente: ER representa directamente el artículo sobre el "Puente Einstein-Rosen" de 1935; y EPR es el acrónimo de "Einstein-Podolsky-Rosen", quienes en ese mismo año escribieron su artículo clave sobre el entrelazamiento cuántico a distancia.' }
+      { label: '¿Sabías que...?', icon: 'clock', text: 'La sigla teórica "ER=EPR"de la conjetura propuesta significa lo siguiente: ER representa directamente el artículo sobre el"Puente Einstein-Rosen" de 1935; y EPR es el acrónimo de "Einstein-Podolsky-Rosen", quienes en ese mismo año escribieron su artículo clave sobre el entrelazamiento cuántico a distancia.' }
     ],
     fact: 'El experimento de entrelazamiento publicado en la revista científica Nature en el año 2022 con la computadora cuántica superconductora de Google, causó debates sobre qué significa exactamente lograr verdaderamente que un "agujero de gusano cuántico" haya sido teletransportado en los circuitos del laboratorio. Aunque la métrica simulada operaba en un espacio abstracto bidimensional anti-de Sitter, la dinámica observada era matemáticamente indistinguible de la gravedad holográfica teórica.'
   }
@@ -330,9 +325,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -545,9 +538,7 @@ export default function InteractiveInfographic_InterstellarM4() {
 
                 <div style={{
                   color: 'rgba(255,255,255,0.85)',
-                  fontSize: '1.1rem',
-                  lineHeight: 1.8,
-                  marginBottom: '2rem',
+                  fontSize: '1.1rem', lineHeight: 1.8, marginBottom:'2rem',
                 }}>
                   {activeNode.content[0]}
                 </div>

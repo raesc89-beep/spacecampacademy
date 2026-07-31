@@ -182,8 +182,7 @@ function DecoNefertari({ size = 60, color = '#FF9A3C', style = {} }) {
 const DECO_MAP = {
   'fenomeno': [DecoSunRay, DecoCorridor, DecoTemple],
   'colosos': [DecoStatue, DecoTemple, DecoSunRay],
-  'ingenieria': [DecoCompassAngle, DecoCorridor, DecoSunRay],
-  'ramses': [DecoStatue, DecoCompassAngle, DecoTemple],
+  'ingenieria': [DecoCompassAngle, DecoCorridor, DecoSunRay],'ramses': [DecoStatue, DecoCompassAngle, DecoTemple],
   'arenisca': [DecoSandstone, DecoTemple, DecoSunRay],
   'rescate': [DecoUNESCO, DecoTemple, DecoCorridor],
   'nefertari': [DecoNefertari, DecoSunRay, DecoTemple],
@@ -207,7 +206,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/egypt/infographic_abusimbel/hero_fenomeno.png',
     content: [
       'Imagina que eres un faraón hace 3,200 años. Construyes un templo gigante dentro de una montaña y calculas que, exactamente dos días al año, los primeros rayos del sol de la mañana entrarán por la puerta y viajarán por un corredor oscuro de 65 metros â€”¡casi tan largo como una cancha de fútbol americano!â€” para iluminar tus estatuas en el fondo. Eso es exactamente lo que hizo Ramsés II con Abu Simbel.',
-      'Cada año, el 22 de febrero y el 22 de octubre, algo mágico sucede en el sur de Egipto. El sol sale por el horizonte y sus primeros rayos entran por la puerta del templo, viajan 65 metros por el corredor completamente oscuro, y al final iluminan cuatro estatuas de los dioses en el santuario. Es como si el sol fuera un faro gigante apuntando exactamente a un punto secreto dentro de una montaña.',
+      'Cada año, el 22 de febrero y el 22 de octubre, algo mágico sucede en el sur de Egipto. El sol sale por el horizonte y sus primeros rayos entran por la puerta del templo, viajan 65 metros por el corredor oscuro, y al final iluminan cuatro estatuas de los dioses en el santuario. Es como si el sol fuera un faro gigante apuntando exactamente a un punto secreto dentro de una montaña.',
       '¿Por qué esas dos fechas exactas? Los historiadores creen que el 22 de febrero era el cumpleaños de Ramsés II, y el 22 de octubre era el día de su coronación como faraón. Así, el sol â€”el dios más poderoso del cieloâ€” aparecía cada año para "felicitar" a Ramsés en sus días más importantes. Era su forma de demostrar que era un dios en la Tierra.',
       'De las cuatro estatuas que se iluminan, tres son dioses del sol: Ramsés II, Ra-Horajti (dios del horizonte solar) y Amón (rey de los dioses). Pero una estatua â€”la de Ptah, el dios de las tinieblas y la oscuridadâ€” siempre permanece en sombra. ¡Hasta en el diseño del templo los egipcios contaban una historia sobre la lucha entre la luz y la oscuridad!',
       'La precisión de este diseño es increíble. Los ingenieros egipcios calcularon el ángulo exacto al que sale el sol el 22 de febrero en esa latitud específica (22° Norte). Luego excavaron el corredor de 65 metros con exactamente ese ángulo. Si el ángulo fuera solo 1 grado diferente, el rayo de luz se desviaría varios metros y nunca llegaría a las estatuas. Es como apuntar un láser con una precisión perfecta durante 65 metros dentro de roca sólida.',
@@ -237,7 +236,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/egypt/infographic_abusimbel/hero_ingenieria.png',
     content: [
       '¿Cómo pudieron los egipcios calcular el ángulo exacto del sol sin Google Maps, sin calculadoras y sin telescopios? La respuesta es fascinante: usaban palos, sombras y mucha observación paciente. Durante años, los sacerdotes-astrónomos registraron exactamente en qué punto del horizonte salía el sol cada día del año. Con esos datos, construyeron un modelo mental perfectamente preciso del cielo.',
-      'El corredor de Abu Simbel mide 65 metros de largo â€”casi tan largo como dos albercas olímpicas una detrás de otraâ€” y fue excavado completamente a mano en roca de arenisca roja. La puerta de entrada tiene un área de solo unos cuantos metros cuadrados, y el corredor se va estrechando hacia adentro. Lograr que un rayo de luz entre por ese hueco pequeño y viaje 65 metros hasta exactamente el punto correcto requirió un cálculo preciso.',
+      'El corredor de Abu Simbel mide 65 metros de largo â€”casi tan largo como dos albercas olímpicas una detrás de otraâ€” y fue excavado a mano en roca de arenisca roja. La puerta de entrada tiene un área de solo unos cuantos metros cuadrados, y el corredor se va estrechando hacia adentro. Lograr que un rayo de luz entre por ese hueco pequeño y viaje 65 metros hasta exactamente el punto correcto requirió un cálculo preciso.',
       'El ángulo del corredor corresponde al ángulo solar del amanecer del 22 de febrero en la latitud 22° Norte. Para calcular este ángulo, los ingenieros egipcios usaron un sistema de medición angular basado en la Estrella Polar (Thuban, en esa época) y las sombras del mediodía solar. Midieron con varas graduadas y cuerdas tensadas durante varios años antes de excavar.',
       'La tolerancia de error en la construcción fue extraordinaria. Si el corredor se hubiera desviado solo 0.5 grados en cualquier dirección, el rayo de luz habría fallado el blanco por más de 50 centímetros. Pero no falló. Después de 3,200 años, el fenómeno sigue ocurriendo con precisión perfecta. Incluso cuando se trasladó el templo en los años 1960, los ingenieros modernos se aseguraron de replicar el mismo ángulo exacto.',
       'La precisión requerida equivale a apuntar un puntero láser desde 100 metros de distancia hacia un blanco del tamaño de una moneda. Los egipcios lo lograron sin tecnología moderna, solo con observación, matemáticas y paciencia. Es posiblemente el cálculo de ingeniería más asombroso de la antigüedad.',
@@ -251,7 +250,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_abusimbel/btn_ramses.png',
     image: '/assets/egypt/infographic_abusimbel/hero_ramses.png',
     content: [
-      'Ramsés II no solo construyó Abu Simbel; construyó más templos, colosales estatuas y monumentos que cualquier otro faraón en la historia de Egipto. Si todos los faraones egipcios fueran superhéroes, Ramsés II sería el que tiene el videojuego con más nivel de dificultad terminado, más trofeos, y encima de eso se auto-otorgó el título de "El Grande". Porque sí, Ramsés fue quien empezó a llamarse a sí mismo "El Grande".',
+      'Ramsés II no solo construyó Abu Simbel; construyó más templos, colosales estatuas y monumentos que cualquier otro faraón en la historia de Egipto. Si todos los faraones egipcios fueran superhéroes, Ramsés II sería el que tiene el videojuego con más nivel de dificultad terminado, más trofeos, y encima de eso se auto-otorgó el título de "El Grande". Porque sí, Ramsés fue quien empezó a llamarse a sí mismo"El Grande".',
       'Abu Simbel cuenta en sus paredes la historia de la Batalla de Qadesh (hacia 1274 a.C.), la batalla más grande de carros de guerra de la historia antigua. Ramsés II se enfrentó al rey hitita Muwatalli II con miles de soldados y carros de guerra. El resultado fue un empate: ninguno de los dos ganó claramente. Pero en las paredes de Abu Simbel, Ramsés lo pintó como una victoria aplastante donde él solo derrotó a miles de enemigos.',
       'Los muros del templo muestran a Ramsés en su carro de guerra, enorme, disparando flechas hacia los enemigos que caen en pánico a su alrededor. Hay una escena específica donde Ramsés aparece tan grande que ocupa la mitad del mural, mientras sus enemigos son diminutos. Era propaganda política en piedra: "Yo soy tan poderoso que soy básicamente un dios".',
       'La Batalla de Qadesh terminó con el primer tratado de paz internacional de la historia conocida, firmado entre Ramsés II y el rey hitita Muwatalli II. Este tratado, grabado tanto en jeroglíficos como en cuneiforme hitita, fue un acuerdo de no agresión y defensa mutua. Una copia está en el Museo Egipcio de El Cairo, y otra en la sede de las Naciones Unidas en Nueva York, como símbolo de la primera diplomacia de la historia.',
@@ -287,7 +286,7 @@ const INFOGRAPHIC_NODES = [
       'Los bloques fueron transportados colina arriba, 65 metros más alto y 200 metros más lejos del borde del lago. Ahí, los ingenieros construyeron una cúpula artificial de hormigón para reproducir exactamente la oscuridad interior del templo original. Después reensamblaron los 1,036 bloques como un gigantesco rompecabezas tridimensional, usando los números y las fotografías para asegurarse de que cada bloque estuviera exactamente en su lugar correcto.',
       'La parte más difícil fue mantener las mismas orientaciones astronómicas. Los ingenieros usaron computadoras (recién inventadas en esa época) para calcular el ángulo exacto del corredor que replicara el fenómeno solar del 22 de febrero. Lo lograron: cuando el templo fue reinaugurado en 1968, el fenómeno ocurrió exactamente igual que en el templo original. Un error de cálculo de varios días ocurrió por las diferencias de la nueva posición pero el fenómeno lumínico se replicó.',
     ],
-    fact: 'El traslado de Abu Simbel fue tan impresionante que inspiró directamente la Convención del Patrimonio Mundial de la UNESCO, firmada en 1972. Esta convención hoy protege 1,199 sitios culturales y naturales en 168 países, desde la Gran Muralla China hasta los Parques Nacionales de Argentina. Sin Abu Simbel, ese sistema de protección global quizás no existiría. ¡Un templo del año 1264 a.C. protege el patrimonio del siglo XXI!',
+    fact: 'El traslado de Abu Simbel fue tan impresionante que inspiró directamente la Convención del Patrimonio Mundial de la UNESCO, firmada en 1972. Esta convención hoy protege 1,199 sitios culturales y naturales en 168 países, desde la Gran Muralla China hasta los Parques Nacionales de Argentina. Sin Abu Simbel, ese sistema de protección global quizás no existiría. ¡Un templo del año 1264 a.C. Protege el patrimonio del siglo XXI!',
   },
   {
     id: 'nefertari',
@@ -573,8 +572,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.4rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.4rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -631,8 +629,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#1A0A00',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#1A0A00',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
                 }}>
@@ -665,8 +662,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

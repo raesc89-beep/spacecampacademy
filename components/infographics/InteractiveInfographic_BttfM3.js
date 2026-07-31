@@ -187,8 +187,8 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/bttf/infographic_paradojas/hero_bootstrap.png',
     content: [
       '¿Qué pasa cuando algo existe sin haber sido creado jamás? Eso es una paradoja bootstrap. Imagina que encuentras un libro con la fórmula de una máquina del tiempo, la construyes, viajas al pasado y dejas el libro para que tu yo más joven lo encuentre. ¿Quién escribió la fórmula? ¡Nadie! La información existe en un bucle sin principio ni final.',
-      'En «Volver al Futuro», esto sucede con «Johnny B. Goode». Marty toca la canción en el baile de 1955. El primo de Chuck Berry llama a Chuck y le dice: «¡Escucha este sonido nuevo!» Así que Chuck Berry aprende la canción... de Marty, quien la aprendió... de Chuck Berry. ¿Quién la compuso realmente? ¡Es un bucle perfecto sin origen!',
-      'Otro ejemplo clásico: imagina que viajas al pasado y le das a Beethoven las partituras de su Quinta Sinfonía antes de que la componga. Beethoven la copia y se hace famoso. Tú aprendiste la sinfonía de Beethoven, pero Beethoven la aprendió de ti. La música existe, se puede tocar, se puede escuchar... pero nunca fue compuesta por nadie.',
+      'En «Volver al Futuro», esto sucede con «Johnny B. Goode». Marty toca la canción en el baile de 1955. El primo de Chuck Berry llama a Chuck y le dice: «¡Escucha este sonido nuevo!» Así que Chuck Berry aprende la canción... De Marty, quien la aprendió... De Chuck Berry. ¿Quién la compuso realmente? ¡Es un bucle perfecto sin origen!',
+      'Otro ejemplo clásico: imagina que viajas al pasado y le das a Beethoven las partituras de su Quinta Sinfonía antes de que la componga. Beethoven la copia y se hace famoso. Tú aprendiste la sinfonía de Beethoven, pero Beethoven la aprendió de ti. La música existe, se puede tocar, se puede escuchar... Pero nunca fue compuesta por nadie.',
       'Desde el punto de vista científico, las paradojas bootstrap son peculiares. No violan la termodinámica â€” la entropía sigue aumentando normalmente. Pero sí violan la causalidad: todo efecto debería tener una causa, y aquí la causa y el efecto son la misma cosa. Algunos físicos argumentan que esto no es realmente un problema si las curvas temporales cerradas existen.',
       'El escritor Robert Heinlein llevó esto al extremo en su relato «All You Zombies» (1959). En esta historia, una persona viaja en el tiempo y resulta ser su propia madre, su propio padre y su propio/a hijo/a. Es la paradoja bootstrap definitiva: un ser humano completo que se crea a sí mismo. ¡El bucle más cerrado posible!',
     ],
@@ -205,7 +205,7 @@ const INFOGRAPHIC_NODES = [
       'Lo usamos TODOS LOS DÍAS. Los satélites GPS orbitan la Tierra a gran velocidad y en gravedad más débil. Sus relojes se desfasan 38 microsegundos por día comparados con los relojes terrestres. Sin la corrección de Einstein, el GPS acumularía un error de ¡10 kilómetros diarios! Tu teléfono usa la relatividad cada vez que abres Google Maps.',
       'El astronauta Scott Kelly pasó 340 días en la Estación Espacial Internacional (2015-2016). La ISS orbita a 7.66 km/s. Cuando regresó, era 5 milisegundos más joven que su hermano gemelo idéntico Mark Kelly. Cinco milisegundos de viaje real al futuro. Scott Kelly es, literalmente, un viajero del tiempo.',
     ],
-    fact: 'Scott Kelly es 5 milisegundos más joven que su gemelo idéntico Mark Kelly (ahora senador de EE.UU. por Arizona) porque pasó 520 días totales en el espacio. La ISS orbita a 7.66 km/s. Cada astronauta que regresa de la ISS ha viajado un poquito al futuro.',
+    fact: 'Scott Kelly es 5 milisegundos más joven que su gemelo idéntico Mark Kelly (ahora senador de EE.UU. Por Arizona) porque pasó 520 días totales en el espacio. La ISS orbita a 7.66 km/s. Cada astronauta que regresa de la ISS ha viajado un poquito al futuro.',
   },
   {
     id: 'novikov', title: 'El Principio de Autoconsistencia', color: '#7C4DFF',
@@ -226,7 +226,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/bttf/infographic_paradojas/hero_delorean.png',
     content: [
       '¿Por qué 88 millas por hora? Bob Gale, el guionista, confesó que eligió ese número porque se veía bien en el velocímetro. Pero hay física real sobre velocidad y tiempo: según Einstein, cuanto más rápido te mueves, más se distorsiona el tiempo. A 88 mph no pasa nada especial, pero ¡a velocidades cercanas a la luz sí!',
-      'El condensador de fluzo es ficción, pero el concepto de necesitar energía enorme es totalmente real. Para deformar el espacio-tiempo necesitarías «materia exótica» con energía negativa. Esto no es ciencia ficción barata: los físicos como Miguel Alcubierre han propuesto motores warp que necesitan exactamente este tipo de energía para funcionar.',
+      'El condensador de fluzo es ficción, pero el concepto de necesitar energía enorme es real. Para deformar el espacio-tiempo necesitarías «materia exótica» con energía negativa. Esto no es ciencia ficción barata: los físicos como Miguel Alcubierre han propuesto motores warp que necesitan exactamente este tipo de energía para funcionar.',
       '1.21 gigawatts: ¡es una unidad real de potencia! Un rayo descarga aproximadamente 1 terawatt (1,000 GW), pero solo durante microsegundos. Mantener 1.21 GW de forma sostenida equivale a la producción de un reactor nuclear completo. Doc Brown necesitaba la energía de una central nuclear o un rayo para alimentar el viaje temporal.',
       'Las estelas de fuego del DeLorean a 88 mph son icónicas pero no son física real. En la realidad, un objeto acercándose a la velocidad de la luz emitiría radiación de Cherenkov â€” un resplandor AZUL, no fuego naranja. Esta radiación ocurre cuando partículas viajan más rápido que la luz en un medio como el agua. ¡Se puede ver en reactores nucleares!',
       'El DeLorean DMC-12 real: solo se fabricaron 9,000 unidades entre 1981 y 1983. John DeLorean fue arrestado por tráfico de drogas intentando salvar su empresa, pero fue absuelto. El auto tenía puertas de ala de gaviota y carrocería de acero inoxidable. Su aspecto futurista fue la razón por la que Zemeckis y Gale lo eligieron para la película.',
@@ -424,8 +424,8 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
     >
       {/* Retro CRT scanline overlay */}
       <div style={{
-        position: 'absolute', inset: 0, borderRadius: 6, zIndex: 2, pointerEvents: 'none',
-        background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.15) 2px, rgba(0,0,0,.15) 4px)',
+        position: 'absolute', inset: 0, borderRadius: 6, zIndex: 2, pointerEvents:'none',
+        background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0.15) 2px, rgba(0,0,0.15) 4px)',
         mixBlendMode: 'overlay',
       }} />
       {/* Chrome corner accents */}
@@ -439,8 +439,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
       {isExplored && (
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
           style={{
-            position: 'absolute', top: -6, right: -6, width: 22, height: 22, borderRadius: 4,
-            background: 'linear-gradient(135deg, #00E676, #00C853)', border: '2px solid #0a0a1a',
+            position: 'absolute', top: -6, right: -6, width: 22, height: 22, borderRadius: 4, background:'linear-gradient(135deg, #00E676, #00C853)', border: '2px solid #0a0a1a',
             display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 4,
             boxShadow: '0 0 8px #00E67688',
           }}>
@@ -450,8 +449,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
         </motion.div>
       )}
       <div style={{
-        position: 'absolute', bottom: -24, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap',
-        fontSize: 8, fontWeight: 800, color: node.color, letterSpacing: 1.5, textTransform: 'uppercase',
+        position: 'absolute', bottom: -24, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap', fontSize: 8, fontWeight: 800, color: node.color, letterSpacing: 1.5, textTransform:'uppercase',
         textShadow: `0 0 8px ${node.color}88, 0 1px 3px rgba(0,0,0,.9)`,
         fontFamily: "'Exo 2', 'Courier New', monospace",
       }}>
@@ -531,8 +529,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: -8, left: 12,
-                  background: node.color, color: '#0a0a1a',
+                  position: 'absolute', top: -8, left: 12, background: node.color, color:'#0a0a1a',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: 8, letterSpacing: 1,
                 }}>

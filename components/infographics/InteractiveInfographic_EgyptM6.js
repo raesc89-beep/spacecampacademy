@@ -145,13 +145,8 @@ function DecoHieroglyphColumn({ size = 40, color = '#9B6BFF', style = {} }) {
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
   'senenmut': [DecoCelestialMap, DecoAnkh, DecoPyramid],
-  'techo-astronomico': [DecoCelestialMap, DecoStarCluster, DecoSolarBoat],
-  'planetas-barcas': [DecoSolarBoat, DecoCelestialMap, DecoStarCluster],
-  'constelaciones': [DecoStarCluster, DecoEye, DecoCelestialMap],
-  'decanos': [DecoStarCluster, DecoScarab, DecoAnkh],
-  'hatshepsut': [DecoAnkh, DecoPyramid, DecoHieroglyphColumn],
-  'ciencia-moderna': [DecoCelestialMap, DecoEye, DecoStarCluster],
-  'legado-cosmos': [DecoStarCluster, DecoAnkh, DecoCelestialMap],
+  'techo-astronomico': [DecoCelestialMap, DecoStarCluster, DecoSolarBoat],'planetas-barcas': [DecoSolarBoat, DecoCelestialMap, DecoStarCluster],'constelaciones': [DecoStarCluster, DecoEye, DecoCelestialMap],'decanos': [DecoStarCluster, DecoScarab, DecoAnkh],
+  'hatshepsut': [DecoAnkh, DecoPyramid, DecoHieroglyphColumn],'ciencia-moderna': [DecoCelestialMap, DecoEye, DecoStarCluster],'legado-cosmos': [DecoStarCluster, DecoAnkh, DecoCelestialMap],
 };
 
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -170,7 +165,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_senenmut.png',
     image: '/assets/egypt/infographic_senenmut/hero_senenmut.png',
     content: [
-      'Imagina que eres el hombre más inteligente de todo Egipto, el favorito de la reina más poderosa de la historia. Ese hombre se llamaba Senenmut, y vivió hace unos 3,500 años, durante la dinastía XVIII. No era faraón, ni príncipe, ni guerrero... era algo mucho más interesante: ¡un arquitecto-científico que sabía de todo!',
+      'Imagina que eres el hombre más inteligente de todo Egipto, el favorito de la reina más poderosa de la historia. Ese hombre se llamaba Senenmut, y vivió hace unos 3,500 años, durante la dinastía XVIII. No era faraón, ni príncipe, ni guerrero... Era algo mucho más interesante: ¡un arquitecto-científico que sabía de todo!',
       'Senenmut era el arquitecto personal de Hatshepsut, la única mujer que gobernó Egipto como faraón con poder completo. Él diseñó su obra maestra: el templo de Deir el-Bahari, un edificio tan hermoso que hoy sigue siendo considerado una de las maravillas de la arquitectura antigua. Pero su tumba escondía un secreto aún más impresionante que el templo.',
       'En las inscripciones de su tumba, Senenmut se describe como "maestro de todas las ciencias y artes conocidas". En el Antiguo Egipto no existía la separación entre disciplinas que tenemos hoy. El mismo hombre que diseñaba templos también calculaba posiciones de estrellas, supervisaba el tejido de telas de lino, coordinaba expediciones comerciales y escribía poesía. Era como mezclar a un ingeniero, un astrónomo, un artista y un empresario en una sola persona.',
       'Su relación con Hatshepsut es uno de los grandes misterios de la historia. Algunos historiadores creen que eran pareja; otros piensan que era una relación estrictamente profesional. Lo cierto es que Hatshepsut le dio un privilegio que ningún otro no-real había recibido en toda la historia egipcia: ¡el permiso de tener su tumba en el Valle de los Reyes, un lugar reservado exclusivamente para faraones!',
@@ -234,7 +229,7 @@ const INFOGRAPHIC_NODES = [
       'El sistema funcionaba así: los sacerdotes-astrónomos, llamados "Observadores de la Hora", se sentaban en los techos de los templos y miraban hacia el este. Cuando un grupo específico de estrellas (un Decano) aparecía sobre el horizonte, marcaba el inicio de una nueva hora. La noche se dividía en 12 horas, cada una señalada por la aparición de un Decano diferente.',
       'El techo de Senenmut muestra los 36 Decanos de forma clara y ordenada en la mitad sur del mapa. Cada Decano está representado por un símbolo específico que los astrónomos podían identificar rápidamente. Combinados con las 12 horas del día (medidas con relojes de sol), los Decanos creaban el día de 24 horas que seguimos usando hoy.',
       'Este es un dato que casi nadie sabe: ¡la razón por la que nuestro día tiene 24 horas viene directamente de los Decanos egipcios! Los griegos adoptaron el sistema de 12 horas nocturnas + 12 horas diurnas de los egipcios, los romanos lo heredaron de los griegos, y nosotros lo heredamos de los romanos. Cada vez que miras un reloj, estás usando un invento egipcio de hace 4,000 años.',
-      'Los Decanos también servían para el calendario. Como cada Decano "reinaba" durante 10 días (una "década" egipcia), 36 Decanos Ã— 10 días = 360 días. Los egipcios añadían 5 días extra al final del año (llamados "epagómenos" o días "sobre el año") para completar los 365 días del año solar. ¡Su calendario era tan preciso que solo se equivocaba un día cada cuatro años!',
+      'Los Decanos también servían para el calendario. Como cada Decano "reinaba" durante 10 días (una "década"egipcia), 36 Decanos Ã— 10 días = 360 días. Los egipcios añadían 5 días extra al final del año (llamados"epagómenos" o días "sobre el año") para completar los 365 días del año solar. ¡Su calendario era tan preciso que solo se equivocaba un día cada cuatro años!',
     ],
     fact: 'La estrella Sirio (llamada "Sopdet" por los egipcios) era el Decano más importante de todos. Su primera aparición en el horizonte después de 70 días de invisibilidad (el "orto helíaco") marcaba el inicio del año nuevo egipcio y coincidía casi exactamente con el inicio de la inundación anual del Nilo. ¡Una estrella les avisaba de que el río iba a crecer!',
   },
@@ -245,7 +240,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/egypt/infographic_senenmut/btn_hatshepsut.png',
     image: '/assets/egypt/infographic_senenmut/hero_hatshepsut.png',
     content: [
-      'Para entender la tumba de Senenmut, hay que conocer a la mujer que hizo posible todo: Hatshepsut, la reina que se convirtió en faraón. En el Antiguo Egipto, las mujeres tenían más derechos que en casi cualquier otra civilización antigua: podían heredar propiedades, divorciarse y hacer negocios. Pero gobernar como faraón... eso no se había visto nunca.',
+      'Para entender la tumba de Senenmut, hay que conocer a la mujer que hizo posible todo: Hatshepsut, la reina que se convirtió en faraón. En el Antiguo Egipto, las mujeres tenían más derechos que en casi cualquier otra civilización antigua: podían heredar propiedades, divorciarse y hacer negocios. Pero gobernar como faraón... Eso no se había visto nunca.',
       'Hatshepsut no era una guerrera; era una líder estratégica. En vez de conquistar territorios con ejércitos, expandió el comercio. Organizó la famosa expedición al País de Punt (probablemente la actual Somalia o Eritrea), donde trajo árboles de incienso, oro, marfil, pieles de leopardo y monos vivos. Fue una de las expediciones comerciales más ambiciosas de la antigüedad.',
       'Para legitimarse como faraón, Hatshepsut se hacía representar con barba postiza, el nemes (tocado real) y todos los símbolos del poder faraónico. No era que quisiera "hacerse pasar por hombre": era que el cargo de faraón estaba tan asociado con esos símbolos que necesitaba usarlos para que la gente la reconociera como gobernante legítima. Es como si un presidente moderno usara traje y corbata aunque no le gustaran.',
       'El templo de Deir el-Bahari, diseñado por Senenmut para Hatshepsut, es una obra maestra de tres terrazas escalonadas construidas contra el acantilado de la montaña. Sus proporciones matemáticas usan la proporción áurea (1.618...), el mismo número que aparece en los pétalos de las flores y en las espirales de los caracoles. Es uno de los edificios más elegantes jamás construidos.',
@@ -277,7 +272,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'El mapa de Senenmut no se quedó solo en una tumba. Su influencia se extendió como ondas en un lago. Los sacerdotes de las generaciones siguientes lo copiaron, lo mejoraron y lo expandieron en los techos de los templos y tumbas reales más importantes de Egipto. Es como una cadena de conocimiento que conecta el pasado con el presente.',
       'Los comerciantes fenicios llevaron conocimientos astronómicos egipcios por todo el Mediterráneo. Los filósofos griegos como Tales de Mileto, Pitágoras y Platón viajaron a Egipto y estudiaron en las escuelas sacerdotales. Cuando Alejandro Magno fundó Alejandría en 332 a.C., la fusión del pensamiento egipcio, griego y babilónico creó la astronomía científica que Ptolomeo sistematizó en su "Almagesto".',
-      'La idea de dividir la noche en 12 horas usando los Decanos viajó de Egipto a Grecia, de Grecia a Roma, y de Roma a todo el mundo occidental. El concepto de un calendario de 365 días con ajustes periódicos también es de origen egipcio. Julio César consultó al astrónomo egipcio Sosígenes para crear el calendario Juliano en el 46 a.C., que con ligeras modificaciones del papa Gregorio XIII se convirtió en el calendario que usamos hoy.',
+      'La idea de dividir la noche en 12 horas usando los Decanos viajó de Egipto a Grecia, de Grecia a Roma, y de Roma a todo el mundo occidental. El concepto de un calendario de 365 días con ajustes periódicos también es de origen egipcio. Julio César consultó al astrónomo egipcio Sosígenes para crear el calendario Juliano en el 46 a.C. Que con ligeras modificaciones del papa Gregorio XIII se convirtió en el calendario que usamos hoy.',
       'Piensa en esto: cada vez que miras un reloj de 24 horas, cada vez que consultas el calendario, cada vez que alguien dice "son las 3 de la mañana"... estás usando inventos que tienen raíces en las noches estrelladas del Antiguo Egipto. Los sacerdotes que observaban los Decanos desde los techos de los templos no podían imaginar que su sistema de medir el tiempo seguiría usándose 4,000 años después.',
       'El gran mensaje del mapa de Senenmut es que los humanos siempre hemos querido representar y entender el universo. Desde las pinturas en cuevas hasta los telescopios espaciales como el James Webb, pasando por los techos pintados de una tumba en Luxor, la curiosidad humana por el cosmos ha sido constante. Senenmut nos dejó un mensaje que sigue brillando: mira hacia arriba, aprende los patrones del cielo, y úsalos para vivir mejor.',
     ],
@@ -484,8 +479,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
           )}
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -535,8 +529,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 padding: '1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0B0E2D',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px',
                 }}>
@@ -571,8 +564,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
             <div>
               <span style={{
-                fontSize: '0.7rem', fontWeight: 800, color: node.color,
-                letterSpacing: '2px', textTransform: 'uppercase',
+                fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase',
               }}>
                 Dato Científico
               </span>

@@ -71,12 +71,7 @@ function DecoEqualSign({ size = 70, color = '#FF6B35', style = {} }) {
 
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
-  'gravedad-newton': [DecoOrbit, DecoSpacetimeGrid, DecoBlackHole],
-  'einstein-1915': [DecoEqualSign, DecoSpacetimeGrid, DecoOrbit],
-  'curvatura-espaciotiempo': [DecoSpacetimeGrid, DecoBlackHole, DecoWaveRipple],
-  'geodesicas': [DecoOrbit, DecoSpacetimeGrid, DecoWaveRipple],
-  'lentes-gravitacionales': [DecoBlackHole, DecoSpacetimeGrid, DecoEqualSign],
-  'ondas-gravitacionales': [DecoWaveRipple, DecoBlackHole, DecoOrbit],
+  'gravedad-newton': [DecoOrbit, DecoSpacetimeGrid, DecoBlackHole],'einstein-1915': [DecoEqualSign, DecoSpacetimeGrid, DecoOrbit],'curvatura-espaciotiempo': [DecoSpacetimeGrid, DecoBlackHole, DecoWaveRipple],'geodesicas': [DecoOrbit, DecoSpacetimeGrid, DecoWaveRipple],'lentes-gravitacionales': [DecoBlackHole, DecoSpacetimeGrid, DecoEqualSign],'ondas-gravitacionales': [DecoWaveRipple, DecoBlackHole, DecoOrbit],
   'gps-relatividad': [DecoOrbit, DecoWaveRipple, DecoEqualSign],
 };
 
@@ -84,7 +79,7 @@ const DECO_MAP = {
 const BIBLIOGRAPHY = [
   'Thorne, K. (2014). The Science of Interstellar, W.W. Norton & Company',
   'Einstein, A. (1915). Die Feldgleichungen der Gravitation, Sitzungsberichte der Preussischen Akademie der Wissenschaften',
-  'Misner, C., Thorne, K., Wheeler, J. (1973). Gravitation, W.H. Freeman',
+  'Misner, C. Thorne, K. Wheeler, J. (1973). Gravitation, W.H. Freeman',
   'Abbott, B.P. et al. (2016). "Observation of Gravitational Waves from a Binary Black Hole Merger", Physical Review Letters, 116(6)',
   'Will, C.M. (2014). "The Confrontation between General Relativity and Experiment", Living Reviews in Relativity, 17(1)',
 ];
@@ -331,9 +326,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -516,8 +509,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           )}
 
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -556,10 +548,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute',
-                ...pos,
-                zIndex: 1,
-                pointerEvents: 'none',
+                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -589,8 +578,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 }}
               >
                 <div style={{
-                  position: 'absolute', top: '-8px', left: '12px',
-                  background: node.color, color: '#0a0c1e',
+                  position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0a0c1e',
                   fontSize: '0.65rem', fontWeight: 800,
                   padding: '2px 8px', borderRadius: '8px',
                   letterSpacing: '1px',

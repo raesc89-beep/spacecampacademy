@@ -77,10 +77,7 @@ const DECO_MAP = {
   'julio-cesar': [DecoAnkh, DecoPyramid, DecoStarCluster],
   'gregorio-reforma': [DecoEye, DecoStarCluster, DecoAnkh],
   'haab-maya': [DecoScarab, DecoPyramid, DecoStarCluster],
-};
-
-const BIBLIOGRAPHY = [
-  'Parker, R. A. (1950). The Calendars of Ancient Egypt. Studies in Ancient Oriental Civilization, 26',
+}; const BIBLIOGRAPHY = ['Parker, R. A. (1950). The Calendars of Ancient Egypt. Studies in Ancient Oriental Civilization, 26',
   'Clagett, M. (1995). Ancient Egyptian Science, Vol. II: Calendars, Clocks, and Astronomy. American Philosophical Society',
   'Depuydt, L. (1997). Civil Calendar and Lunar Calendar in Ancient Egypt. Peeters Publishers',
   'Neugebauer, O. (1957). The Exact Sciences in Antiquity. Dover Publications',
@@ -96,13 +93,13 @@ const INFOGRAPHIC_NODES = [
     "btnImage": "/assets/egypt/infographic_calendario/btn_calendario-365.png",
     "image": "/assets/egypt/infographic_calendario/hero_calendario-365.png",
     "content": [
-      "El calendario que usas todos los días para saber cuándo es tu cumpleaños, tus vacaciones o el fin de semana, es un invento que tiene más de 5,000 años de historia. Nació en las orillas del río Nilo. Los antiguos egipcios fueron los primeros seres humanos en crear un calendario civil de exactamente 365 días, completamente independiente de las fases de la Luna, basándose exclusivamente en el movimiento del Sol y las estrellas.",
+      "El calendario que usas todos los días para saber cuándo es tu cumpleaños, tus vacaciones o el fin de semana, es un invento que tiene más de 5,000 años de historia. Nació en las orillas del río Nilo. Los antiguos egipcios fueron los primeros seres humanos en crear un calendario civil de exactamente 365 días, independiente de las fases de la Luna, basándose exclusivamente en el movimiento del Sol y las estrellas.",
       "A diferencia de otros pueblos antiguos, los egipcios resolvieron el rompecabezas del tiempo de una forma matemática. Observaron el cielo durante generaciones y descubrieron que el año solar exacto, el tiempo que tarda la Tierra en dar una vuelta completa al Sol, dura aproximadamente 365 días y un cuarto. A partir de este descubrimiento, crearon un calendario dividido en 12 meses idénticos, donde cada mes tenía exactamente 30 días, formando un bloque de 360 días que era fácil de calcular.",
       "Pero los matemáticos egipcios sabían que 360 días no eran suficientes para completar el viaje orbital de nuestro planeta alrededor del Sol. Si dejaban el calendario así, las estaciones del año se desfasarían. Para solucionar este problema, añadieron 5 días extra al final del año. Estos 5 días adicionales, conocidos como 'días epagómenos', eran un puente entre el año viejo y el nuevo, logrando alcanzar los 365 días necesarios para mantener su mundo sincronizado.",
       "Para los ciudadanos del antiguo Egipto, estos 5 días extra eran considerados días poderosos y mágicos. Creían que se encontraban fuera del tiempo normal, en una zona de transición donde se celebraban los cumpleaños de los dioses: Osiris, Horus, Seth, Isis y Neftis. Durante estos cinco días epagómenos, la vida cotidiana se detenía y los trabajos pesados se suspendían.",
       "La sincronización entre el tiempo humano y el tiempo astronómico era crucial para la supervivencia de su civilización. Este ingenioso sistema de 365 días fue tan exitoso y práctico que sentó las bases para todos los calendarios futuros de la humanidad. Cada vez que miras la fecha en la pantalla de tu teléfono, estás utilizando una versión moderna de aquel sistema egipcio."
     ],
-    "fact": "Los sacerdotes-astrónomos egipcios, conocidos como 'Khery-hebet', eran los guardianes del tiempo. Cada mes observaban el cielo nocturno con instrumentos de medición, como el 'merkhet', para confirmar que las estrellas estaban en sus posiciones correctas, garantizando que el imperio mantuviera una sincronización precisa.",
+    "fact": "Los sacerdotes-astrónomos egipcios, conocidos como 'Khery-hebet', eran los guardianes del tiempo. Cada mes observaban el cielo nocturno con instrumentos de medición, como el'merkhet', para confirmar que las estrellas estaban en sus posiciones correctas, garantizando que el imperio mantuviera una sincronización precisa.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
@@ -125,7 +122,7 @@ const INFOGRAPHIC_NODES = [
     "content": [
       "Antes de que la civilización egipcia revolucionara la forma de medir el tiempo, la mayoría de las civilizaciones antiguas utilizaban calendarios lunares, basados en observar las fases de la Luna en el cielo nocturno. Mirar cómo la Luna crece desde una fina cuña hasta un disco completo era un reloj evidente y accesible para cualquier persona que elevara la mirada hacia las estrellas.",
       "Sin embargo, este antiguo sistema lunar tenía un problema matemático que complicaba la vida. El mes lunar dura aproximadamente 29.5 días. Si sumamos 12 de estos meses, obtenemos 354 días en el año, lo cual es 11 días más corto que los 365 días que tarda la Tierra en orbitar el Sol.",
-      "Las consecuencias de este corto calendario lunar eran significativas. Al faltar 11 días cada año en relación con las estaciones climáticas impulsadas por el Sol, un mes de 'primavera' dentro de un calendario lunar terminaría desplazándose de forma continua a lo largo de un ciclo de 33 años. Eventualmente ese mismo mes de 'primavera' aterrizaría en pleno invierno.",
+      "Las consecuencias de este corto calendario lunar eran significativas. Al faltar 11 días cada año en relación con las estaciones climáticas impulsadas por el Sol, un mes de 'primavera'dentro de un calendario lunar terminaría desplazándose de forma continua a lo largo de un ciclo de 33 años. Eventualmente ese mismo mes de'primavera' aterrizaría en pleno invierno.",
       "Coordinar un calendario lunar con las estaciones climáticas que dictaban cuándo sembrar o cosechar resultaba un desafío inmanejable. Las civilizaciones agrarias, como el Antiguo Egipto, requerían un sistema predecible y fijo que no se desplazara a través de las diferentes épocas.",
       "Fue entonces que los egipcios comprendieron que la Luna simplemente no constituía un marcador de tiempo confiable a gran escala. Necesitaban anclar su civilización al ciclo del Sol y al movimiento de las estrellas fijas."
     ],
@@ -205,7 +202,7 @@ const INFOGRAPHIC_NODES = [
     "image": "/assets/egypt/infographic_calendario/hero_julio-cesar.png",
     "content": [
       "Si avanzamos en el tiempo unos cuantos miles de años desde Egipto hasta encontrarnos en la antigua Roma, descubriremos que el famoso líder y estratega Julio César modificó el calendario basándose en la ciencia egipcia.",
-      "Alrededor del año 46 a.C., la ciudad de Roma se hallaba estancada en un sistema caótico lunisolar. César se impresionó con el calendario civil matemático y exacto de los antiguos sabios egipcios.",
+      "Alrededor del año 46 a.C. La ciudad de Roma se hallaba estancada en un sistema caótico lunisolar. César se impresionó con el calendario civil matemático y exacto de los antiguos sabios egipcios.",
       "Para implementar esta enorme adaptación astronómica, trajo a Roma a un sabio erudito de la ciudad de Alejandría llamado Sosígenes. Juntos implementaron una reforma profunda al calendario romano.",
       "Sosígenes resolvió el complejo problema matemático de los 365 días y su cuarto de día. Propuso incluir un año bisiesto, añadiendo un día extra al mes de febrero cada cuatro años.",
       "Esta reforma produjo el célebre calendario juliano. Este fue el sistema de medir el tiempo que dominaría al mundo durante siglos, estabilizando finalmente las fechas y las estaciones."
@@ -259,7 +256,7 @@ const INFOGRAPHIC_NODES = [
     "image": "/assets/egypt/infographic_calendario/hero_haab-maya.png",
     "content": [
       "Mientras los astrónomos egipcios observaban el cielo a orillas del río Nilo, los sabios de civilizaciones al otro lado del océano también miraban el cielo estrellado con interés.",
-      "Miles de años después, en un mundo verde y húmedo de espesas selvas centroamericanas, los mayas desarrollaron el calendario Haab, de manera completamente independiente.",
+      "Miles de años después, en un mundo verde y húmedo de espesas selvas centroamericanas, los mayas desarrollaron el calendario Haab, de manera independiente.",
       "Resulta asombroso que los mayas descubrieron, al igual que los egipcios, la misma cantidad exacta de 365 días necesarios para completar un ciclo solar. Ambas culturas llegaron a la misma conclusión observando los mismos astros.",
       "Sin embargo, los mayas dividieron el año de una forma ligeramente diferente. Usaban 18 meses de exactamente 20 días cada uno, más cinco días extras al final.",
       "Estos cinco días adicionales eran llamados 'Wayeb'. Al igual que en el antiguo Egipto, estos días fuera del tiempo regular eran considerados de mala suerte. Esta convergencia demuestra que la observación atenta de la naturaleza produjo soluciones paralelas universales."
@@ -274,7 +271,7 @@ const INFOGRAPHIC_NODES = [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los sabios mayas calcularon la duración del año de forma espectacular y precisa, superando la exactitud del calendario juliano que se usaba en Europa en su época."
+        "text": "Los sabios mayas calcularon la duración del año y precisa, superando la exactitud del calendario juliano que se usaba en Europa en su época."
       }
     ]
   }
@@ -411,9 +408,7 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem',
-        fontWeight: 700,
-        letterSpacing: '0.3px',
+        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
@@ -542,8 +537,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
           )}
           <h3 style={{
-            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800,
-            color: node.color, letterSpacing: '-0.02em',
+            margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em',
             display: 'flex', alignItems: 'center', gap: '0.6rem',
           }}>
             <span style={{
@@ -584,7 +578,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             const isWide = i === node.content.slice(2).length - 1 && (node.content.slice(2).length % 2 !== 0);
             return (
               <div key={i} style={{
-                gridColumn: isWide ? '1 / -1' : 'auto', background: `rgba(255,255,255,0.02)`, borderRadius: '12px',
+                gridColumn: isWide ? '1 / -1' : 'auto', background: `rgba(255,255,255,0.02)`, borderRadius:'12px',
                 padding: '1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative'
               }}>
                 <div style={{
@@ -620,7 +614,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <Sparkles size={18} style={{ color: node.color }} />
             </div>
             <div>
-              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing:'2px', textTransform: 'uppercase' }}>
                 Dato Científico
               </span>
               <p style={{ margin: '0.3rem 0 0', fontStyle: 'italic', color: 'rgba(255,255,255,0.9)', fontSize: '0.92rem', lineHeight: 1.7 }}>
