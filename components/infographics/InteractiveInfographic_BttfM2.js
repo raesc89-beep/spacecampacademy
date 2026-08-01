@@ -156,10 +156,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_relatividad.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_relatividad.png',
     content: [
-      'Imagina que tienes un reloj en tu muñeca y tu amigo tiene otro idéntico. Si tu amigo se sube a un cohete que viaja rápido â€” digamos al 90% de la velocidad de la luz â€” y tú te quedas en la Tierra, algo asombroso pasaría: ¡su reloj se atrasaría! No es que esté roto, es que el tiempo realmente pasa más despacio para quien viaja rápido.',
-      'Esto no es ciencia ficción: Albert Einstein lo demostró en 1905 con su Teoría de la Relatividad Especial. Y lo hemos comprobado muchas veces. En 1971, los físicos Joseph Hafele y Richard Keating pusieron relojes atómicos ultra-precisos en aviones que volaron alrededor del mundo. Cuando los compararon con relojes idénticos que se quedaron en tierra, ¡los relojes del avión se habían atrasado 59 nanosegundos! Exactamente lo que Einstein predijo.',
-      'El ejemplo más práctico está en tu bolsillo: los satélites GPS orbitan la Tierra a unos 14,000 km/h. A esa velocidad, sus relojes atómicos se atrasan 7 microsegundos al día por velocidad. Pero como están más lejos de la gravedad terrestre, ¡también se adelantan 45 microsegundos al día! Sin corregir esta diferencia, el GPS daría errores de ubicación de hasta 10 kilómetros cada día.',
-      'El tiempo también tiene una "dirección". Es como un río que solo fluye en un sentido: del pasado al futuro. Los físicos llaman a esto la"flecha del tiempo", y está conectada con algo llamado entropía â€” una medida del desorden. Un huevo roto nunca se rearma solo. Una taza de café caliente siempre se enfría, nunca se calienta sola. El tiempo avanza porque el desorden siempre aumenta.',
+      'Si tienes un reloj y tu amigo tiene otro idéntico, y tu amigo viaja en un cohete al 90% de la velocidad de la luz, su reloj se atrasaría respecto al tuyo. El tiempo transcurre más despacio para objetos en movimiento rápido.',
+      'Esto fue demostrado por Albert Einstein en 1905 con la Teoría de la Relatividad Especial. En 1971, los físicos Joseph Hafele y Richard Keating lo comprobaron experimentalmente subiendo relojes atómicos a aviones. Tras dar la vuelta al mundo, estos relojes se atrasaron 59 nanosegundos respecto a los que se quedaron en tierra.',
+      'Los satélites GPS aplican este principio. Por su velocidad (14,000 km/h), sus relojes se atrasan 7 microsegundos al día. Sin embargo, por estar más lejos de la gravedad terrestre, se adelantan 45 microsegundos diarios. El sistema corrige esta diferencia para evitar errores de ubicación.',
+      'El tiempo posee una dirección. Los físicos lo denominan la "flecha del tiempo", relacionada con la entropía, que es la medida del desorden en un sistema. Los sistemas tienden a pasar de un estado ordenado a uno desordenado, marcando el avance temporal.'
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Si pudieras viajar al 99.9% de la velocidad de la luz, el tiempo pasaría para ti 22 veces más lento. Un viaje de 1 año para ti serían 22 años en la Tierra. ¡Volverías al futuro como Marty McFly!' },
@@ -174,10 +174,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_delorean.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_delorean.png',
     content: [
-      'En la película, el DeLorean necesita alcanzar 88 millas por hora (141 km/h) para activar el viaje en el tiempo. Suena impresionante cuando ves las llamas en el asfalto, ¿verdad? Pero pongámoslo en perspectiva: un avión comercial vuela a 900 km/h. ¡El DeLorean es más lento que el avión en el que tus papás viajan de vacaciones!',
-      'Para que la relatividad de Einstein haga efecto real sobre el tiempo, necesitarías viajar a velocidades cercanas a la de la luz: ¡1,079 MILLONES de km/h! Eso es 7.6 millones de veces más rápido que el DeLorean. A la velocidad de la luz, podrías dar 7.5 vueltas a la Tierra en UN SOLO SEGUNDO.',
-      'El DeLorean real (DMC-12) fue fabricado en Belfast, Irlanda del Norte, entre 1981 y 1983 por la DeLorean Motor Company. Solo se fabricaron unos 9,000 coches antes de que la empresa quebrara. Su carrocería de acero inoxidable sin pintar le daba un aspecto futurista único. Hoy, un DeLorean en buen estado vale entre $40,000 y $100,000 dólares.',
-      'La energía que necesita la máquina del tiempo según la película es de 1.21 gigawatts (¡"jigovatios" como dice Doc!). ¿Cuánto es eso? Aproximadamente la energía que produce una central nuclear completa, o la que descarga un rayo natural en una fracción de segundo. En la película, Doc originalmente usa plutonio robado, y después Mr. Fusion (un reactor de fusión casero alimentado con basura).',
+      'En la película, el DeLorean debe alcanzar 88 millas por hora (141 km/h) para viajar en el tiempo. Aunque se muestra como una velocidad alta, un avión comercial promedio viaja a unos 900 km/h.',
+      'Para que la dilatación temporal relativista sea notable, se requiere viajar a una fracción significativa de la velocidad de la luz (cerca de 1,079 millones de km/h). A la velocidad de la luz, se podrían dar 7.5 vueltas a la Tierra en un segundo.',
+      'El modelo DeLorean DMC-12 fue fabricado en Irlanda del Norte entre 1981 y 1983. Se produjeron unas 9,000 unidades antes del cierre de la compañía. Se caracterizaba por su carrocería de acero inoxidable sin pintar y puertas de ala de gaviota.',
+      'La película indica que la máquina del tiempo requiere 1.21 gigawatts de potencia, equivalente a la energía producida por un reactor nuclear o a la descarga de un rayo. En la ficción, esto se obtiene primero de plutonio y luego de un reactor de fusión.'
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las zapatillas Nike Mag de "Regreso al Futuro II" se hicieron realidad. Nike presentó en 2016 las Nike HyperAdapt con sistema de ajuste automático real. Solo se fabricaron 89 pares de las Mag originales, subastadas por hasta $200,000 dólares cada par para caridad.' },
@@ -192,10 +192,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_paradoja.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_paradoja.png',
     content: [
-      'Imagina esto: viajas al pasado en una máquina del tiempo y evitas que tus abuelos se conozcan. Si nunca se conocieron, tus padres nunca nacieron. Y si tus padres nunca nacieron... ¡tú nunca naciste para hacer el viaje! Pero si nunca hiciste el viaje, tus abuelos sí se conocieron y tú sí naciste. Es un círculo imposible. Esto es la Paradoja del Abuelo.',
-      'Es como intentar borrar la llave con la que abriste una puerta... ¡mientras estás dentro del cuarto! Si borras la llave, nunca pudiste abrir la puerta, así que nunca entraste al cuarto para borrar la llave. Es un verdadero rompecabezas lógico.',
-      '"Regreso al Futuro" muestra esta paradoja de manera brillante: cuando Marty viaja a 1955 y accidentalmente impide que sus padres se conozcan, empieza a desvanecerse de una fotografía familiar. Si no logra que se enamoren, dejará de existir. La película convierte un concepto de física teórica en algo visual y emocionante.',
-      'Los físicos tienen dos soluciones principales para esta paradoja. La primera es la "Interpretación de los Muchos Mundos"propuesta por Hugh Everett III en 1957: al viajar al pasado, creas una rama paralela del universo. En tu universo original nada cambia; en el nuevo, las cosas son diferentes. La segunda es el"Principio de Autoconsistencia" de Igor Novikov (1980s): las leyes de la física solo permiten viajes al pasado que NO crean paradojas â€” como si el universo se protegiera a sí mismo.',
+      'La Paradoja del Abuelo describe un problema de causalidad: si viajas al pasado y evitas que tus abuelos se conozcan, tus padres no nacerían y tú tampoco. Pero si tú no naces, no puedes viajar al pasado para alterar los eventos.',
+      'Esta paradoja plantea una contradicción lógica fundamental sobre el viaje temporal hacia el pasado, creando un bucle causal irresoluble.',
+      'La película ilustra este concepto de forma visual cuando Marty interfiere en el encuentro de sus padres en 1955 y comienza a desaparecer de una fotografía, indicando el riesgo de ser borrado de la existencia.',
+      'La física teórica propone posibles soluciones. La Interpretación de Muchos Mundos sugiere que alterar el pasado crea una línea temporal paralela. El Principio de Autoconsistencia de Novikov plantea que las leyes de la física impiden acciones que generen paradojas.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Marty no es el único que casi causa una paradoja. En BTTF II, el viejo Biff roba el DeLorean y se da el almanaque deportivo a sí mismo en 1955, creando una línea temporal alternativa donde es millonario y Hill Valley es un desastre. Doc explica que el viaje creó una "tangente temporal" â€” una rama del tiempo.' },
@@ -210,10 +210,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_einstein.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_einstein.png',
     content: [
-      'Albert Einstein era un joven empleado de la oficina de patentes en Berna, Suiza, cuando en 1905 publicó cuatro artículos que cambiaron la física para siempre. Uno de ellos contenía la Teoría de la Relatividad Especial, que demostró que el tiempo no es igual para todos â€” depende de tu velocidad.',
-      'Piensa en el tiempo como una goma elástica. Si te sientas quieto, la goma está en reposo. Pero si corres muy rápido, la goma se estira: el tiempo se dilata, pasa más despacio para ti. A velocidades cotidianas el efecto es microscópico, pero cerca de la velocidad de la luz se vuelve enorme.',
-      'La famosa "Paradoja de los Gemelos" lo explica así: si tienes un hermano gemelo y él viaja al 90% de la velocidad de la luz durante 5 años (según SU reloj), cuando regrese a la Tierra habrán pasado 11.5 años aquí. Tú serás 6.5 años más viejo que tu gemelo. No es magia: es física verificada experimentalmente.',
-      'En 1971, Hafele y Keating pusieron esto a prueba con relojes atómicos de cesio en aviones comerciales que volaron hacia el este y el oeste alrededor del mundo. Los resultados coincidieron con la predicción de Einstein: los relojes en movimiento se atrasaron. Este experimento se considera una de las pruebas más elegantes de la relatividad.',
+      'En 1905, Albert Einstein publicó la Teoría de la Relatividad Especial, la cual postula que la percepción del tiempo es relativa y depende de la velocidad del observador.',
+      'El modelo describe el tiempo como una dimensión elástica. A velocidades bajas el efecto de dilatación es imperceptible, pero se incrementa de forma significativa a medida que el objeto se acerca a la velocidad de la luz.',
+      'La Paradoja de los Gemelos es un ejemplo teórico: si un gemelo viaja al 90% de la velocidad de la luz durante 5 años, al regresar encontraría que en la Tierra han pasado 11.5 años. Este es un efecto físico comprobado.',
+      'El experimento de Hafele y Keating en 1971 demostró esta dilatación temporal utilizando relojes atómicos en vuelos comerciales, validando las predicciones matemáticas de Einstein.'
     ],
     expandables: [
       { label: 'Dato Científico', icon: 'atom', text: 'La ecuación más famosa del mundo, E=mcÂ², dice que la energía (E) es igual a la masa (m) multiplicada por la velocidad de la luz al cuadrado (cÂ²). Como c = 300,000 km/s, cÂ² es un número ENORME. Por eso una cantidad diminuta de masa contiene una cantidad colosal de energía. Una moneda de 1 centavo contiene suficiente energía (según E=mcÂ²) para abastecer a una ciudad pequeña durante varios días.' },
@@ -228,10 +228,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_mundos.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_mundos.png',
     content: [
-      'En "Regreso al Futuro II", Doc Brown dibuja en una pizarra cómo el tiempo se bifurca cuando alguien cambia el pasado: la línea temporal original sigue existiendo, pero una nueva línea"alternativa"se crea. Esto no es solo película â€” es una idea real de la física llamada la"Interpretación de los Muchos Mundos".',
-      'Hugh Everett III la propuso en 1957, cuando tenía solo 27 años. Su idea era revolucionaria: cada vez que ocurre un evento cuántico (como un electrón que puede girar a la izquierda o a la derecha), el universo se divide en dos ramas. En una rama gira a la izquierda, en la otra a la derecha. Las dos ramas coexisten pero no se comunican entre sí.',
-      'Imagina un jardín de senderos que se bifurcan. Cada decisión, cada evento cuántico, crea un nuevo camino. Si esto es cierto, existen infinitos universos paralelos: uno donde los dinosaurios no se extinguieron, uno donde nunca aprendiste a leer, uno donde estás leyendo este mismo texto pero con un sombrero puesto.',
-      'Werner Heisenberg descubrió en 1927 el Principio de Incertidumbre: es imposible conocer simultáneamente la posición exacta y la velocidad exacta de una partícula. No es un problema de instrumentos: es una propiedad fundamental de la realidad. Esto significa que el futuro no está determinado con precisión â€” hay probabilidades, no certezas. "Ver el futuro" es literalmente imposible porque el futuro aún no existe de manera fija.',
+      'En la película, Doc Brown ilustra la ramificación de líneas temporales. Este concepto se asemeja a la Interpretación de Muchos Mundos de la mecánica cuántica.',
+      'Propuesta por Hugh Everett III en 1957, esta teoría sugiere que cada evento cuántico provoca una ramificación del universo. Ambas posibilidades de un evento ocurren, pero en realidades separadas.',
+      'Bajo este modelo, existirían múltiples universos paralelos producto de cada variación histórica, aunque no habría interacción directa entre ellos.',
+      'El Principio de Incertidumbre de Heisenberg (1927) establece límites sobre la medición simultánea de la posición y velocidad de una partícula, lo que implica que ciertos eventos a nivel cuántico son probabilísticos, no deterministas.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Cuando Biff altera 1955 con el almanaque, Doc explica que creó una "tangente temporal" â€” una línea alternativa del tiempo. En esta versión, Hill Valley es un paraíso del crimen y Biff es dueño de un casino. Doc y Marty deben volver a 1955 para restaurar la línea original. ¡Puro Everett en acción!' },
@@ -246,10 +246,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_predicciones.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_predicciones.png',
     content: [
-      'En "Regreso al Futuro II" (1989), Doc y Marty viajan al 21 de octubre de 2015. La película imaginó cómo sería ese año, y algunas predicciones fueron asombrosamente acertadas: âœ… tabletas electrónicas y pantallas planas en todas partes, âœ… videollamadas (Marty habla con su jefe por videoconferencia), âœ… pago con huella dactilar y biometría, âœ… gafas inteligentes (antes de Google Glass).',
-      'Pero también fallaron espectacularmente: âŒ No hay coches voladores de uso cotidiano. âŒ Los fax NO son la tecnología de comunicación dominante (el internet los enterró). âŒ Los hoverboards magnéticos flotantes no existen para el público general. âŒ No usamos chaquetas autoajustables ni zapatos auto-atables como ropa estándar.',
-      'Predecir el futuro tecnológico es como intentar adivinar qué juguete inventarán el próximo año: es más fácil predecir que HABRÁ juguetes nuevos que predecir cuáles serán exactamente. Las predicciones que acertaron fueron sobre TENDENCIAS generales (pantallas, biometría, conectividad). Las que fallaron fueron sobre PRODUCTOS específicos (coches voladores, fax).',
-      'Sin embargo, una predicción alucinante casi se cumple: la película mostró que los Cubs de Chicago ganarían la Serie Mundial de béisbol en 2015. ¡Los Cubs realmente ganaron la Serie Mundial en 2016! Solo fallaron por un año, después de una sequía de 108 años sin campeonato. Fue tan improbable que muchos fans agradecieron a la película.',
+      'La secuela de la película imaginó el año 2015, anticipando tecnologías como las tabletas electrónicas, las pantallas planas, las videollamadas, el pago mediante biometría y las gafas inteligentes.',
+      'Sin embargo, otras proyecciones no se cumplieron, como el uso masivo de autos voladores, la prevalencia del fax, o el uso cotidiano de ropa autoajustable y aerodeslizadores.',
+      'Las predicciones suelen acertar en las tendencias generales de conectividad y miniaturización, pero divergen en el desarrollo de productos de consumo específicos.',
+      'La película mostró la victoria de los Cubs de Chicago en la Serie Mundial de 2015. En la realidad, el equipo ganó el campeonato en 2016 tras una larga sequía de victorias.'
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las zapatillas Nike Mag de la película se hicieron realidad con el sistema "E.A.R.L." (Electro Adaptive Reactive Lacing). Este mecanismo usaba un sensor en el talón que activaba un micromotor a batería, el cual tensaba los cordones automáticamente al detectar el peso del pie del usuario.' },
@@ -264,10 +264,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_cienciaficcion.png',
     image: '/assets/bttf/infographic_viajes_tiempo/hero_cienciaficcion.png',
     content: [
-      'La ciencia ficción no solo predice el futuro â€” lo INSPIRA. Los comunicadores de "Star Trek"(1966) inspiraron a Martin Cooper para crear el primer teléfono celular en Motorola (1973). Los submarinos de Julio Verne (1870) precedieron a los submarinos reales. Las tabletas de"2001: Odisea del Espacio" (1968) anticiparon el iPad por 42 años.',
-      '"Regreso al Futuro" ha inspirado a generaciones de científicos. El físico Ronald Mallett (Universidad de Connecticut) ha dedicado su vida a diseñar una máquina del tiempo teórica usando láseres circulares, inspirado por la película y por el deseo de ver a su padre fallecido. Aunque su diseño es controvertido, su investigación sobre gravedad y luz es legítima.',
-      'La causalidad â€” el principio de que la causa siempre precede al efecto â€” es uno de los pilares más fundamentales de la física. Es tan importante que Stephen Hawking propuso la "Conjetura de Protección de la Cronología": las leyes de la física SIEMPRE conspiran para impedir el viaje al pasado y proteger la causalidad.',
-      'La ciencia ficción hace preguntas teóricas, y la ciencia busca respuestas comprobables. ¿Qué es el tiempo? ¿Puede tener dirección contraria? Estas interrogantes conceptuales son las que impulsan muchas ramas de la física moderna.',
+      'La ciencia ficción frecuentemente precede a las innovaciones tecnológicas. Los comunicadores de series televisivas inspiraron la invención del teléfono móvil, mientras que la literatura anticipó los submarinos y las tabletas electrónicas.',
+      'El cine ha motivado a investigadores a explorar teorías sobre el tiempo y el espacio. Diversos físicos han analizado la viabilidad teórica de dispositivos de manipulación temporal basándose en principios gravitacionales.',
+      'La causalidad, donde una causa precede a su efecto, es un principio fundamental en física. Stephen Hawking propuso que las leyes del universo impiden la formación de curvas temporales cerradas para preservar esta causalidad.',
+      'La ciencia teórica aborda interrogantes sobre la naturaleza y dirección del tiempo, utilizando modelos matemáticos para establecer los límites físicos de los fenómenos descritos en la ficción.'
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Stephen Hawking organizó una "Fiesta para Viajeros del Tiempo"el 28 de junio de 2009 en la Universidad de Cambridge. Preparó champán, globos y un cartel de bienvenida... Pero envió las invitaciones DESPUÉS de la fiesta. Su lógica: si el viaje al pasado fuera posible, alguien del futuro habría recibido la invitación y asistido. Nadie vino. Hawking lo consideró"evidencia experimental" de que el viaje al pasado probablemente es imposible.' },
@@ -636,7 +636,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
+                position: 'absolute', ...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />

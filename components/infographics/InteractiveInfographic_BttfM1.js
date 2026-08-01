@@ -146,10 +146,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_maquina.png',
     image: '/assets/bttf/infographic_condensador/hero_maquina.png',
     content: [
-      '¡Imagina que pudieras construir una máquina para viajar al pasado y conocer a tus abuelos cuando eran niños! El viaje en el tiempo es un concepto que la física moderna estudia seriamente. En la película Regreso al Futuro (1985), esta idea cobra vida de una manera espectacular. En lugar de una caja aburrida, el inventor Doc Brown utiliza un coche deportivo DeLorean para saltar a través de las décadas.',
-      'Pero, ¿es posible construir una máquina así en la vida real? Desde hace siglos, los científicos se han hecho esa misma pregunta. Para nosotros, el tiempo parece avanzar siempre en una sola dirección, como un río que nunca fluye hacia atrás. Sin embargo, la física moderna nos dice que el tiempo es mucho más misterioso de lo que parece a simple vista.',
-      'Para entender cómo podría funcionar una máquina del tiempo, primero debemos entender qué es el tiempo en sí mismo. A lo largo de la historia, nuestra forma de ver el tiempo ha cambiado radicalmente. Pasamos de creer que era como un reloj gigante e inmutable, a descubrir que en realidad es flexible y se puede estirar. Cada nuevo descubrimiento nos acerca más a comprender si el viaje temporal es ciencia o solo ficción.',
-      'Aunque todavía no podemos ir a comprar plutonio a la tienda de la esquina ni viajar a 1955, los físicos teóricos estudian las matemáticas detrás del viaje en el tiempo. Usan ecuaciones complejas para ver si el universo permite, aunque sea en teoría, que algo viaje hacia el pasado. ¡Y los resultados son alucinantes! Prepárate para un viaje por la ciencia más asombrosa del universo.'
+      'El viaje en el tiempo es un concepto analizado seriamente por la física moderna. En la película Regreso al Futuro (1985), esta premisa se representa utilizando un coche DeLorean modificado como máquina del tiempo.',
+      'La posibilidad real de construir una máquina del tiempo es objeto de estudio científico. Aunque nuestra percepción sugiere que el tiempo avanza en una sola dirección, la física moderna revela que su naturaleza es compleja.',
+      'A lo largo de la historia, los modelos teóricos han cambiado. Se pasó de concebir el tiempo como un mecanismo inmutable a entenderlo como una dimensión flexible. Esta evolución conceptual ayuda a investigar la viabilidad del viaje temporal.',
+      'Actualmente, los físicos teóricos utilizan modelos matemáticos para determinar si las leyes del universo permiten el desplazamiento hacia el pasado.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown revela por primera vez su máquina del tiempo a Marty McFly en el aparcamiento del centro comercial Twin Pines Mall. En esta escena icónica, vemos al DeLorean salir marcha atrás del camión envuelto en humo. ¡Es el momento exacto en que la historia del cine cambió para siempre!' },
@@ -164,10 +164,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_newton.png',
     image: '/assets/bttf/infographic_condensador/hero_newton.png',
     content: [
-      'Imagina el universo como un enorme reloj de cuerda, preciso y exacto. Así es como el brillante científico Isaac Newton imaginaba el tiempo en el siglo XVII. Para él, el tiempo era absoluto y universal. Esto significaba que un segundo en la Tierra duraba exactamente lo mismo que un segundo en Marte, o en la galaxia más lejana. El tiempo simplemente avanzaba, sin que nada pudiera alterarlo.',
-      'Según esta visión clásica, el tiempo era como el escenario vacío donde ocurrían los eventos del universo, pero el escenario nunca cambiaba. Podías ir rápido o despacio, pero el reloj del universo seguía haciendo \'tic-tac\'al mismo ritmo para todos. Esta idea tenía mucho sentido común. Después de todo, es lo que experimentamos todos los días en nuestras vidas.',
-      'En el universo mecánico de Newton, si conocías la posición y la velocidad de todas las partículas del universo en este instante, podías calcular exactamente dónde estarían en el futuro y dónde estuvieron en el pasado. Era un universo predecible. Si esto fuera 100% cierto, el viaje en el tiempo sería imposible, porque el tiempo sería una pista rígida de una sola dirección.',
-      'Aunque la física de Newton nos permitió enviar cohetes a la Luna y construir los edificios en los que vivimos, resultó que no contaba toda la historia sobre el tiempo. A principios del siglo XX, un joven empleado de patentes llamado Albert Einstein replantearía esta visión universal, proponiendo que el tiempo es en realidad flexible y dependiente del observador.'
+      'En el siglo XVII, Isaac Newton propuso un modelo donde el universo funcionaba como un mecanismo preciso. Para Newton, el tiempo era absoluto y universal, transcurriendo al mismo ritmo en cualquier lugar del cosmos.',
+      'Según esta visión clásica, el tiempo era un fondo inalterable sobre el cual ocurrían los eventos. Independientemente de la velocidad de los objetos, el flujo temporal se mantenía constante.',
+      'En este universo mecánico, conocer el estado actual de todas las partículas permitiría calcular su pasado y futuro con exactitud. Bajo estas reglas estrictas, el viaje en el tiempo resultaba conceptualmente imposible.',
+      'La mecánica de Newton es útil para la ingeniería aeroespacial moderna. Sin embargo, a principios del siglo XX, Albert Einstein demostró que este modelo estaba incompleto y que el tiempo dependía de la velocidad del observador.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'El reloj de la torre del ayuntamiento de Hill Valley es un símbolo perfecto del tiempo newtoniano: firme, inamovible y marcando el ritmo de todo el pueblo. Cuando un rayo lo detiene en 1955, representa cómo un evento extraordinario puede congelar el flujo normal del tiempo.' },
@@ -182,10 +182,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_einstein.png',
     image: '/assets/bttf/infographic_condensador/hero_einstein.png',
     content: [
-      'En 1905, Albert Einstein revolucionó la ciencia al proponer que el tiempo no transcurre igual para todos. Descubrió que el tiempo es relativo, lo que significa que pasa a diferente velocidad dependiendo de lo rápido que te muevas. Imagina que el tiempo es como una goma elástica: si viajas muy rápido, la goma se estira y el tiempo pasa más despacio para ti que para alguien que está quieto.',
-      'Esto se llama \'dilatación temporal\'. Y no es solo una mera teoría, ¡se ha comprobado con relojes atómicos ultraprecisos! Si subes un reloj a un avión rápido y lo comparas con otro que se quedó en tierra, el reloj del avión marcará una hora ligeramente anterior. A velocidades normales no lo notamos, pero si viajaras al 99.9% de la velocidad de la luz, ¡el tiempo para ti pasaría 22 veces más lento!',
-      'Esto significa que el viaje al futuro es científicamente real. Si te subes a una nave espacial súper rápida, das una vuelta por el espacio durante lo que para ti es 1 año, y luego vuelves a la Tierra, podrías encontrar que aquí han pasado 20 años. Tú solo habrías envejecido un año, pero tus amigos serían dos décadas mayores. ¡Habrías viajado al futuro de la Tierra!',
-      'Einstein también descubrió que la gravedad afecta al tiempo. Cerca de un objeto muy masivo, como la Tierra o un agujero negro, el tiempo transcurre más lentamente que en el espacio profundo. Así que el espacio y el tiempo no están separados, sino entrelazados en algo que él llamó \'espacio-tiempo\'. ¡Es como un tejido cósmico que puede doblarse, estirarse y curvarse!'
+      'En 1905, Albert Einstein introdujo el concepto de que el tiempo es relativo a la velocidad del observador. Si un objeto viaja a gran velocidad, el tiempo transcurre más despacio para él en comparación con uno en reposo.',
+      'Este fenómeno, conocido como dilatación temporal, ha sido verificado experimentalmente. Relojes atómicos a bordo de aeronaves registran un ligero atraso respecto a los relojes en tierra. A velocidades cercanas a la de la luz, el efecto se vuelve significativo.',
+      'La dilatación temporal implica que el viaje al futuro es posible en términos físicos. Un astronauta viajando a velocidades extremas experimentaría menos tiempo que los habitantes de la Tierra, avanzando efectivamente hacia su futuro.',
+      'Einstein también determinó que la gravedad influye en el tiempo. Cerca de objetos masivos, el tiempo avanza más lento. Por lo tanto, el espacio y el tiempo conforman una estructura unificada conocida como espacio-tiempo.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown nombra a su perro Einstein en honor al famoso físico. Como primera prueba, Doc pone a Einstein en el DeLorean y lo envía un minuto hacia el futuro. El perro llega perfectamente a salvo, habiendo "saltado" un minuto del tiempo del aparcamiento.' },
@@ -200,10 +200,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_flecha.png',
     image: '/assets/bttf/infographic_condensador/hero_flecha.png',
     content: [
-      '¿Por qué puedes romper un huevo para hacer una tortilla, pero no puedes convertir una tortilla en un huevo entero? Esta pregunta aparentemente tonta esconde uno de los mayores secretos de la física: la \'Flecha del Tiempo\'. En nuestro universo, las cosas tienden a pasar del orden al desorden. A este desorden creciente los científicos lo llaman \'entropía\'.',
-      'La Segunda Ley de la Termodinámica dice que la entropía (el desorden) del universo siempre aumenta. Piensa en tu habitación: si no la ordenas activamente, se vuelve más desordenada con el tiempo, nunca se ordena sola mágicamente. Esta ley es la razón por la que el tiempo parece tener una sola dirección. El futuro siempre será más desordenado que el pasado.',
-      'Si pudieras ver una película de cristal rompiéndose, sabrías inmediatamente si la cinta está avanzando o retrocediendo. Pero curiosamente, a nivel de los átomos individuales, las leyes de la física funcionan igual hacia adelante que hacia atrás. Si ves chocar dos átomos de billar, no podrías decir si el video va hacia adelante o en reversa. La flecha del tiempo solo aparece cuando tenemos MUCHOS átomos juntos.',
-      'Viajar al pasado significa luchar contra esta flecha del tiempo. Significaría ir de un estado de mayor entropía a uno de menor entropía, obligando al universo a \'ordenarse\'de nuevo. Por eso a la naturaleza no le gusta el viaje al pasado. ¡Es como intentar que todo el humo de una fogata vuelva a entrar en un trozo de madera quemada!'
+      'La "Flecha del Tiempo"es un concepto que describe la tendencia de los sistemas a pasar del orden al desorden. En física, esta medida de desorden se denomina"entropía".',
+      'La Segunda Ley de la Termodinámica establece que la entropía del universo siempre aumenta. Esta ley es la razón por la que el tiempo parece tener una sola dirección, ya que los sistemas cerrados evolucionan hacia un estado de mayor desorden.',
+      'A nivel atómico individual, las interacciones son reversibles temporalmente, es decir, funcionan de manera idéntica hacia adelante o hacia atrás en el tiempo. La flecha del tiempo solo se manifiesta en sistemas macroscópicos.',
+      'Viajar al pasado requeriría revertir el incremento de entropía, transitando a un estado más ordenado, lo cual contradice la termodinámica estadística en sistemas a gran escala.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Cuando Marty altera el pasado y evita que sus padres se enamoren, vemos que la fotografía de su familia comienza a borrarse lentamente. Sus hermanos desaparecen uno por uno. Esto ilustra la "entropía de la causalidad": al cambiar la causa en el pasado, el efecto futuro se desvanece.' },
@@ -218,10 +218,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_paradoja.png',
     image: '/assets/bttf/infographic_condensador/hero_paradoja.png',
     content: [
-      'El mayor dolor de cabeza del viaje temporal se llama la Paradoja del Abuelo. Funciona así: imagínate que viajas al pasado y, por accidente, impides que tus abuelos se conozcan. Si no se conocen, uno de tus padres nunca nace. Si tu padre no nace, ¡tú tampoco naces! Pero si tú no naciste, ¿quién viajó al pasado para impedir que se conocieran? Es un verdadero rompecabezas lógico.',
-      'En física, esto se llama una violación de la causalidad. La causa (tú viajando al pasado) elimina el efecto (tú naciendo), lo cual elimina la causa. Es un bucle sin sentido. Algunos físicos creen que esto demuestra que viajar al pasado es imposible. Las leyes de la naturaleza simplemente impedirían que construyeras la máquina para evitar este lío matemático.',
-      'Pero hay otras dos soluciones teóricas posibles. La primera es la teoría de los \'Muchos Mundos\'o universos paralelos de Hugh Everett (1957). Si viajas al pasado y cambias algo, en realidad estás creando una nueva rama en la línea temporal. Tu universo original sigue existiendo sin ti, pero ahora tú estás en un universo paralelo donde la historia es diferente.',
-      'La otra solución brillante es el Principio de Autoconsistencia de Igor Novikov (1989). Dice que si viajas al pasado, hagas lo que hagas, ya formaba parte de la historia. Si intentas impedir que tus abuelos se conozcan, te resbalarás, chocarás con ellos, ¡y resultarás ser la causa por la que se conocieron! El universo se auto-corrige para que la historia sea una historia coherente y sin paradojas.'
+      'La Paradoja del Abuelo ilustra un conflicto causal: si viajas al pasado y evitas que tus abuelos se conozcan, uno de tus padres no nacería, lo que implicaría tu propia inexistencia. Esto impediría el viaje inicial.',
+      'Esta situación representa una violación de la causalidad, donde el efecto elimina su propia causa. Las leyes de la naturaleza podrían evitar tales bucles, haciendo el viaje al pasado impracticable.',
+      'Para resolver la paradoja, la teoría de los "Muchos Mundos" de Hugh Everett (1957) sugiere que modificar el pasado crearía una línea temporal divergente, o universo paralelo, dejando intacto el universo original.',
+      'Otra propuesta es el Principio de Autoconsistencia de Igor Novikov (1989), que sostiene que cualquier acción realizada por un viajero en el pasado ya formaba parte de la historia, haciendo imposible la alteración de eventos consolidados.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Marty se enfrenta directamente a la paradoja del abuelo (¡o de los padres!). Al empujar a su padre fuera del camino del coche del abuelo de Lorraine, él ocupa su lugar y su madre se enamora de él. Pasa el resto de la película intentando desesperadamente arreglar este error causal para asegurar su propia existencia.' },
@@ -236,10 +236,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_condensador.png',
     image: '/assets/bttf/infographic_condensador/hero_condensador.png',
     content: [
-      'Hablemos del componente central de la máquina: el Condensador de Flujo. Aunque fue inventado para la película, su nombre suena científico. En el mundo real, un \'condensador\'es un componente electrónico que almacena energía, como una batería temporal rápida. Y el \'flujo\'se refiere a líneas de campo magnético o electromagnético cruzando un espacio. ¡Así que un condensador de flujo sonaría como algo que almacena energía magnética extrema!',
-      'En la ficción, este aparato necesita generar 1.21 Gigavatios de energía para crear una ruptura en el continuo espacio-tiempo. Esta es una cantidad colosal de poder. Un Gigavatio equivale a mil millones de vatios. Para que te hagas una idea, ¡un relámpago gigante o una gran central nuclear producen aproximadamente 1.2 Gigavatios! Doc Brown no exageraba cuando decía que necesitaba mucha energía.',
-      'Si quisiéramos curvar el espacio-tiempo de verdad (como proponía Einstein para crear túneles o agujeros de gusano), necesitaríamos mucha más energía que un rayo. Necesitaríamos \'materia exótica\', un tipo teórico de materia que tiene masa negativa. Imagina una pelota de tenis que, si la empujas hacia la derecha, ¡acelera hacia la izquierda! Esta extraña materia podría mantener abierto un túnel en el tiempo.',
-      'El diseño en forma de \'Y\'del condensador de flujo, con sus luces parpadeantes y chispas, es el cerebro de la máquina del tiempo. Canaliza la inmensa energía del plutonio (o del rayo) y la enfoca para envolver al DeLorean en una burbuja de espacio-tiempo. Dentro de la burbuja, las reglas normales de Einstein se suspenden, permitiendo que el coche resbale hacia el pasado o el futuro.'
+      'En la ficción, la máquina requiere un "Condensador de Flujo". En electrónica, un condensador es un componente que almacena energía, mientras que el flujo suele referirse a campos magnéticos.',
+      'El dispositivo de la película requiere 1.21 Gigavatios (mil millones de vatios) para operar, una cantidad de energía comparable a la producida por un reactor nuclear o la descarga de un rayo.',
+      'Curvar el espacio-tiempo en la realidad, para crear agujeros de gusano, requeriría cantidades masivas de energía y el uso teórico de "materia exótica", la cual tendría densidad de energía negativa.',
+      'El diseño en forma de "Y" canaliza la energía generada para producir un campo que aísle al vehículo de las leyes convencionales del espacio-tiempo, permitiendo el desplazamiento temporal.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'El 5 de noviembre de 1955, Doc Brown resbaló en su baño mientras colgaba un reloj, se golpeó la cabeza con el lavabo, y al despertar tuvo la visión de la forma en "Y". Así nació el condensador de flujo. ¡A veces los mayores descubrimientos empiezan con un buen chichón en la cabeza!' },
@@ -254,10 +254,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_condensador/btn_legado.png',
     image: '/assets/bttf/infographic_condensador/hero_legado.png',
     content: [
-      '¿Puede una película divertida de Hollywood cambiar la ciencia real? ¡Absolutamente! Regreso al Futuro no solo rompió la taquilla en 1985; también encendió la imaginación de toda una generación de futuros científicos, físicos e ingenieros. Muchos investigadores cuánticos de hoy en día confiesan que su amor por el espacio-tiempo comenzó viendo un DeLorean acelerar a 88 millas por hora.',
-      'La película hizo que conceptos complejos, como las paradojas causales, las líneas de tiempo alternativas y el continuo espacio-tiempo, fueran fáciles de entender para todo el mundo. Doc Brown usando una pizarra para explicar cómo se bifurca la historia en 1985 alternativo es quizás la mejor clase de física teórica que se ha dado en el cine.',
-      'Incluso hoy, los científicos que estudian la computación cuántica usan términos inspirados en el viaje en el tiempo. Las computadoras cuánticas usan \'qubits\'que pueden existir en múltiples estados a la vez, como si exploraran muchas líneas temporales alternativas para encontrar la respuesta correcta a un problema súper complejo al mismo tiempo.',
-      'El mayor legado de la máquina del tiempo de Doc Brown no es si es posible construirla o no, sino su capacidad de motivar al público general a pensar en conceptos complejos de la física moderna.'
+      'Regreso al Futuro no solo fue un éxito cinematográfico, sino que fomentó el interés por la física y la ingeniería. Muchos investigadores atribuyen su interés en el espacio-tiempo a esta película.',
+      'La narrativa simplificó conceptos físicos abstractos, como las paradojas causales, las líneas temporales múltiples y el continuo espacio-tiempo, haciéndolos accesibles al público.',
+      'Algunos términos utilizados en computación cuántica comparten analogías con el viaje en el tiempo. Los "qubits" pueden existir en múltiples estados simultáneamente, similar a explorar líneas temporales alternativas.',
+      'El legado de la representación de Doc Brown reside en su capacidad para estimular el pensamiento sobre conceptos teóricos complejos.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Al final de la trilogía, Doc le da a Marty y Jennifer un consejo maravilloso: "Vuestro futuro no ha sido escrito todavía. El de nadie lo está. Vuestro futuro es el que vosotros os labréis, así que haceos uno bueno". Es el mensaje definitivo sobre la ciencia y el libre albedrío.' },
@@ -636,7 +636,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
+                position: 'absolute', ...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />

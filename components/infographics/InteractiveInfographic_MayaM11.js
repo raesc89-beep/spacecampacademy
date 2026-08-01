@@ -191,10 +191,8 @@ function DecoCeibaTree({ size = 70, color = "#1B5E20", style = {} }) {
 
 // Map node IDs to decorative SVGs
 const DECO_MAP = {
-  "palenque-ciudad": [DecoPalace, DecoCeibaTree, DecoGlyphPanel],
-  "pakal-tumba": [DecoJadeMask, DecoGlyphPanel, DecoPalace],
-  "tapa-sarcofago": [DecoCeibaTree, DecoJadeMask, DecoGlyphPanel],
-  "torre-observatorio": [DecoTower, DecoPalace, DecoCeibaTree],
+  "palenque-ciudad": [DecoPalace, DecoCeibaTree, DecoGlyphPanel],"pakal-tumba": [DecoJadeMask, DecoGlyphPanel, DecoPalace],
+  "tapa-sarcofago": [DecoCeibaTree, DecoJadeMask, DecoGlyphPanel],"torre-observatorio": [DecoTower, DecoPalace, DecoCeibaTree],
   "inscripciones-templo": [DecoGlyphPanel, DecoPalace, DecoTower],
   "alineacion-solsticio": [DecoTower, DecoPalace, DecoGlyphPanel],
   "legado-palenque": [DecoJadeMask, DecoCeibaTree, DecoPalace],
@@ -217,25 +215,25 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/maya/infographic_m11/btn_palenque-ciudad.jpg",
     image: "/assets/maya/infographic_m11/hero_palenque-ciudad.jpg",
     content: [
-      'Imagina una metrópolis brillante escondida bajo un inmenso techo verde de hojas gigantes y árboles milenarios. Así es Palenque hoy en día, ubicada en el majestuoso estado de Chiapas, México. Pero hace más de mil años, durante el Período Clásico (entre los años 226 y 799 después de Cristo), no estaba escondida. Era una ciudad viva, colorida y ruidosa, pintada de un rojo carmesí intenso que brillaba bajo el sol tropical. Los mayas la llamaban "Lakamha", que significa "El Lugar de las Grandes Aguas", por los abundantes arroyos y cascadas cristalinas que cruzaban su territorio, proporcionando vida y energía a sus habitantes.',
-      'Piensa en Palenque como si fuera el "Nueva York" de la selva maya antigua. No era la ciudad más grande en tamaño, pero era rica en arte, arquitectura y conocimiento. Sus reyes eran como celebridades intelectuales, rodeados de los mejores artistas, arquitectos y astrónomos de su época. A diferencia de otras ciudades mayas que construían pirámides enormes y pesadas, los arquitectos de Palenque inventaron una forma de construir edificios más elegantes y delicados. Crearon paredes más delgadas y habitaciones más amplias, decorando cada rincón con esculturas de estuco (una pasta de cal) tan detalladas que parecían fotografías de piedra de sus gobernantes.',
-      "Hoy en día, cuando visitas Palenque, te maravillas con sus impresionantes templos y palacios. Pero lo que ves es como mirar solo la punta de un iceberg colosal. Los arqueólogos calculan que solo hemos descubierto y limpiado el diez por ciento de la ciudad original. ¡El noventa por ciento restante sigue dormido bajo la espesa selva! Es como si tuvieras un rompecabezas de mil piezas y solo hubieras armado cien. Bajo la tierra y las raíces gigantes de los árboles de ceiba, descansan cientos de edificios, casas, plazas y monumentos esperando pacientemente ser descubiertos por futuros exploradores.",
-      "El entorno natural de Palenque es un ecosistema vibrante que envuelve las ruinas de piedra con una sinfonía de vida salvaje. Mientras caminas entre los templos antiguos, puedes escuchar los fuertes rugidos de los monos saraguatos que resuenan en el dosel forestal, anunciando su territorio. Monos araña ágiles saltan entre las ramas altas, mientras coloridos tucanes y guacamayas pintan el cielo con sus vuelos. Jaguares silenciosos aún patrullan la selva profunda por la noche. Esta fusión perfecta entre las asombrosas construcciones humanas y la fuerza imparable de la naturaleza tropical es una de las razones principales por las que la UNESCO declaró a Palenque como Patrimonio de la Humanidad en el año mil novecientos ochenta y siete.",
-      'El agua fue el elemento vital y el mayor desafío de ingeniería para los ingenieros mayas de Lakamha. Como construyeron la ciudad en la falda de una montaña muy lluviosa, el agua amenazaba con inundar sus palacios. Para resolver este problema colosal, los constructores mayas diseñaron una red subterránea de acueductos avanzada. Crearon canales de piedra techados que dirigían el agua de los ríos por debajo de las plazas principales, ¡como un sistema de tuberías moderno! Uno de estos canales incluso tiene una forma especial que reducía la presión del agua, funcionando como una válvula hidráulica sofisticada. Estos antiguos ingenieros dominaron la fuerza de las "Grandes Aguas" para construir su paraíso terrenal.',
+      'Imagina una metrópolis brillante escondida bajo un techo verde de hojas y árboles. Así es Palenque hoy en día, ubicada en el estado de Chiapas, México. Hace más de mil años, durante el Período Clásico, no estaba escondida. Era una ciudad viva, pintada de rojo intenso. Los mayas la llamaban Lakamha, el Lugar de las Grandes Aguas, por los arroyos y cascadas que cruzaban su territorio.',
+      'Piensa en Palenque como el centro intelectual de la selva maya. No era la ciudad más grande, pero era rica en arte y arquitectura. Sus reyes estaban rodeados de artistas, arquitectos y astrónomos. Los constructores inventaron una forma de construir edificios más elegantes. Crearon paredes delgadas y habitaciones amplias, decorando cada rincón con esculturas de estuco.',
+      'Hoy en día, al visitar Palenque, ves impresionantes templos y palacios. Pero lo que ves es una pequeña parte de la ciudad. Los arqueólogos calculan que solo se ha descubierto el diez por ciento. El noventa por ciento restante sigue bajo la selva. Bajo la tierra y las raíces de ceiba, descansan edificios y plazas.',
+      'El entorno de Palenque es un ecosistema vibrante que envuelve las ruinas. Mientras caminas entre los templos, puedes escuchar los rugidos de monos saraguatos en el dosel forestal. Monos araña saltan entre las ramas, mientras tucanes y guacamayas pintan el cielo. Jaguares silenciosos patrullan la selva por la noche. Esta fusión es la razón por la que fue declarada Patrimonio de la Humanidad.',
+      'El agua fue el elemento vital y el mayor desafío para los ingenieros. Construyeron la ciudad en la falda de una montaña lluviosa. Para evitar inundaciones, diseñaron una red subterránea de acueductos. Crearon canales de piedra techados que dirigían el agua debajo de las plazas principales. Uno de estos canales funcionaba como una válvula hidráulica que reducía la presión del agua.'
     ],
     expandables: [
       {
         label: "El Verdadero Nombre",
         icon: "zap",
-        text: 'El nombre "Palenque" en realidad es una palabra de origen español que significa "estacada" o "valla de madera". Se lo dieron los españoles cientos de años después del abandono de la ciudad, porque había un pequeño pueblo cercano rodeado de una valla. ¡Imagina que miles de años en el futuro llamaran a tu ciudad por el nombre de una cerca! Gracias al desciframiento de los jeroglíficos mayas en las últimas décadas, los arqueólogos finalmente descubrieron su verdadero y poético nombre original: Lakamha, "El Lugar de las Grandes Aguas".',
+        text: 'El nombre "Palenque"en realidad es una palabra de origen español que significa"estacada" o "valla de madera". Se lo dieron los españoles cientos de años después del abandono de la ciudad, porque había un pequeño pueblo cercano rodeado de una valla. ¡Imagina que miles de años en el futuro llamaran a tu ciudad por el nombre de una cerca! Gracias al desciframiento de los jeroglíficos mayas en las últimas décadas, los arqueólogos finalmente descubrieron su verdadero y poético nombre original: Lakamha,"El Lugar de las Grandes Aguas".',
       },
       {
         label: "Comparación Divertida",
         icon: "clock",
-        text: 'Imagina que intentas encontrar una ciudad del tamaño de un municipio moderno, pero alguien le echó encima una cobija gigante de plantas, árboles enormes de 40 metros de altura, enredaderas gruesas como brazos. Tierra húmeda durante más de mil años. ¡Ese es el desafío de los arqueólogos en Palenque! Tienen que usar tecnología láser montada en aviones (llamada LiDAR) para "ver" a través de la densa selva y descubrir la verdadera escala gigantesca de esta antigua metrópolis escondida.',
+        text: 'Imagina encontrar una ciudad bajo una cobija gigante de plantas y árboles enormes. Es el desafío de los arqueólogos en Palenque. Usan tecnología láser montada en aviones para ver a través de la selva y descubrir la escala de esta metrópolis escondida.',
       },
     ],
-    fact: "El acueducto del río Otulum en Palenque es una de las obras de ingeniería hidráulica más avanzadas del mundo antiguo en el continente americano. Los mayas no solo lo construyeron para evitar que la ciudad se inundara durante las torrenciales lluvias tropicales, sino que ingeniosamente estrecharon el canal en cierta sección para crear agua presurizada. Algunos científicos creen que esta presión era suficiente para alimentar una fuente de agua decorativa en la plaza, ¡creando un espectáculo visual increíble de agua saltarina hace más de mil doscientos años, mucho antes de que existieran las bombas eléctricas modernas!",
+    fact: "El acueducto del río Otulum en Palenque es una obra de ingeniería avanzada. Los mayas lo construyeron para evitar inundaciones. Ingeniosamente, estrecharon el canal para crear agua presurizada. Algunos científicos creen que esta presión alimentaba una fuente decorativa, creando un espectáculo visual hace mil años.",
   },
   {
     id: "pakal-tumba",
@@ -244,25 +242,25 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/maya/infographic_m11/btn_pakal-tumba.jpg",
     image: "/assets/maya/infographic_m11/hero_pakal-tumba.jpg",
     content: [
-      'Conoce al rey más famoso de toda la historia maya: Kinich Janaab Pakal, también conocido simplemente como "Pakal el Grande". Imagina a un gobernante que asume el trono siendo apenas un niño de doce años. En esa época (el año 615 d.C.), Palenque estaba casi destruida por guerras contra una ciudad rival muy poderosa. Pero este joven rey no se rindió. Pakal reconstruyó la ciudad, lideró a su pueblo hacia una era de paz y prosperidad sin precedentes, y gobernó durante increíbles sesenta y ocho años. ¡Eso es uno de los reinados más largos en la historia de la humanidad, superando incluso a la Reina Victoria de Inglaterra o a Ramsés II de Egipto!',
-      "Para honrar su grandeza eterna, antes de morir, Pakal ordenó la construcción de su propio lugar de descanso final: una pirámide inmensa llamada el Templo de las Inscripciones. Durante siglos, exploradores y aventureros caminaron sobre este templo sin tener la más mínima idea de que debajo de sus pies descansaba un rey legendario. Fue como si tuvieran una caja fuerte gigante frente a ellos pero no supieran que contenía el tesoro más grande del mundo maya. La tumba estaba perfectamente escondida, diseñada para proteger el cuerpo del rey por toda la eternidad, rodeada de trampas de piedra y pasillos sellados herméticamente.",
-      "Todo cambió en el año mil novecientos cincuenta y dos. Un arqueólogo mexicano muy observador llamado Alberto Ruz Lhuillier notó algo extraño en el suelo del templo en la cima de la pirámide: unas misteriosas losas de piedra que tenían agujeros circulares en los bordes. Como un verdadero detective del pasado, se dio cuenta de que esos agujeros servían para levantar las losas como si fueran las tapas de una alcantarilla secreta. Al levantarlas, descubrió un pasaje secreto lleno de rocas y tierra que descendía en zigzag hacia las profundidades de la pirámide. Le tomó cuatro largos años de trabajo agotador, limpiando piedra por piedra, hasta lograr llegar al fondo.",
-      'Al final del oscuro pasaje subterráneo, Ruz Lhuillier y su equipo encontraron una puerta triangular de piedra inmensa. Al abrirla, el espectáculo fue deslumbrante. Encontraron una enorme cámara secreta, intacta desde hacía más de mil doscientos años. Las paredes estaban decoradas con hermosas figuras de los "Nueve Señores de la Noche" esculpidas en estuco. En el centro exacto de la habitación, había un sarcófago gigante de piedra, tan grande y pesado como un camión pequeño. Adentro, descansaban los restos del gran rey Pakal, cubierto de joyas preciosas de un verde intenso, el color sagrado de la vida para los mayas.',
-      "El tesoro más espectacular sobre el cuerpo de Pakal era su inigualable máscara mortuoria. Estaba formada por cientos de pequeñas y delicadas piezas de jade, cuidadosamente talladas y unidas como un intrincado rompecabezas verde para recrear el rostro del rey. Sus ojos estaban hechos de concha blanca y obsidiana negra brillante, dándole una mirada penetrante y vívida, como si aún estuviera vivo observando desde el más allá. El jade era más valioso que el oro para los mayas; simbolizaba el agua fértil, el crecimiento de las plantas jóvenes y la vida eterna. Esta máscara aseguraba que Pakal sería reconocido y respetado por los dioses en su viaje por el inframundo.",
+      'Conoce al rey más famoso de la historia maya: Kinich Janaab Pakal, el Grande. Asumió el trono siendo un niño de doce años en el año 615 d.C. En esa época, Palenque estaba destruida por guerras contra una ciudad rival. El rey joven reconstruyó la ciudad y lideró a su pueblo hacia la paz y prosperidad. Gobernó durante sesenta y ocho años.',
+      'Antes de morir, Pakal ordenó la construcción de su lugar de descanso final: el Templo de las Inscripciones. Durante siglos, exploradores caminaron sobre este templo sin tener idea de que debajo descansaba un rey. La tumba estaba escondida, diseñada para proteger el cuerpo por toda la eternidad, rodeada de trampas de piedra y pasillos sellados.',
+      'Todo cambió en mil novecientos cincuenta y dos. El arqueólogo Alberto Ruz Lhuillier notó unas losas de piedra en el suelo del templo con agujeros circulares. Se dio cuenta de que servían para levantar las losas. Al hacerlo, descubrió un pasaje secreto lleno de rocas que descendía hacia las profundidades. Le tomó cuatro años llegar al fondo.',
+      'Al final del pasaje subterráneo, encontraron una puerta de piedra. Al abrirla, descubrieron una cámara secreta. Las paredes estaban decoradas con figuras de los Nueve Señores de la Noche. En el centro había un sarcófago gigante de piedra. Adentro descansaban los restos de Pakal, cubierto de joyas preciosas de jade verde.',
+      'El tesoro más espectacular era su máscara mortuoria. Estaba formada por cientos de piezas de jade, talladas para recrear el rostro del rey. Sus ojos estaban hechos de concha blanca y obsidiana brillante. El jade era muy valioso para los mayas; simbolizaba el agua y la vida eterna. Esta máscara aseguraba el reconocimiento de los dioses.'
     ],
     expandables: [
       {
         label: "Un Rey Insuperable",
         icon: "atom",
-        text: 'El reinado de Pakal duró 68 años (desde el 615 hasta el 683 d.C.). Para que te des una idea de cuánto tiempo es eso: un niño que nació el día que Pakal se convirtió en rey, ¡habría sido un abuelito muy anciano cuando el rey finalmente falleció a la edad de 80 años! Su gobierno fue un período de estabilidad y riqueza tan grande que impulsó un "renacimiento" del arte, la escritura y la arquitectura en la región, creando algunas de las obras más hermosas y refinadas de la América antigua.',
+        text: 'El reinado de Pakal duró 68 años. Un niño que nació el día que Pakal fue rey habría sido un abuelito cuando el monarca murió a los ochenta años. Su gobierno fue un período de estabilidad y riqueza que impulsó un renacimiento del arte y arquitectura.',
       },
       {
         label: "El Descubrimiento del Siglo",
         icon: "zap",
-        text: 'El arqueólogo Alberto Ruz Lhuillier describió el momento en que entró a la cámara funeraria de Pakal como si hubiera entrado a una "caverna mágica esculpida en hielo". Esto se debía a que, con el paso de los siglos, la humedad del ambiente tropical había hecho que el agua con minerales goteara del techo de piedra, formando estalactitas. Cubriendo las paredes con una fina y brillante capa de sales cristalizadas que destellaban con la luz de sus linternas, creando un escenario místico y asombroso.',
+        text: 'Alberto Ruz Lhuillier describió la cámara como una caverna mágica. La humedad tropical hizo que minerales gotearan del techo de piedra, formando estalactitas. Las paredes tenían una capa brillante de sales que destellaban con linternas, creando un escenario místico.',
       },
     ],
-    fact: "El sarcófago gigante de Pakal, incluyendo su pesada tapa bellamente tallada, pesa más de veinte toneladas. Es tan grande y pesado que era imposible introducirlo por el estrecho y sinuoso pasadizo secreto que bajaba por la pirámide. Los ingenieros mayas primero tuvieron que construir el sarcófago al nivel del suelo y, posteriormente, construyeron la enorme pirámide de nueve niveles y el templo superior ALREDEDOR y POR ENCIMA de la tumba. ¡La pirámide entera fue concebida y construida como un estuche de piedra monumental para guardar esta joya funeraria inamovible!",
+    fact: "El sarcófago gigante de Pakal, con su pesada tapa tallada, pesa más de veinte toneladas. Era imposible introducirlo por el sinuoso pasadizo. Los ingenieros mayas construyeron el sarcófago al suelo y después edificaron la pirámide de nueve niveles encima de la tumba. La pirámide entera fue un estuche monumental.",
   },
   {
     id: "tapa-sarcofago",
@@ -271,17 +269,17 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/maya/infographic_m11/btn_tapa-sarcofago.jpg",
     image: "/assets/maya/infographic_m11/hero_tapa-sarcofago.jpg",
     content: [
-      "Imagina la portada de un libro mágico que cuenta la historia del viaje del alma de un rey después de su muerte. Eso es exactamente la enorme y pesada tapa del sarcófago del rey Pakal. Es un gigantesco rectángulo de piedra, tallado con tanto detalle que parece un dibujo intrincado y lleno de simbolismos. En el centro de esta monumental obra de arte, vemos a Pakal en el momento exacto de su transición. No está muerto en un ataúd; está recostado, en una posición dinámica, atrapado justo en el instante mágico entre el mundo de los vivos y el misterioso mundo de los muertos.",
-      'La escena tallada muestra a Pakal cayendo o descendiendo. Su cuerpo baja hacia las enormes fauces abiertas de un monstruo aterrador hecho de huesos y oscuridad. Este monstruo representa a "Xibalbá", el inframundo maya, un lugar profundo y oscuro en el interior de la tierra donde habitan los dioses de la muerte. Es como si el rey estuviera siendo devorado por la misma tierra al ser sepultado. Pero no es un final triste; es un viaje necesario y sagrado, similar a cómo el sol desciende bajo el horizonte cada atardecer para viajar por la oscuridad y renacer brillante al día siguiente.',
-      "Justo detrás y encima de Pakal se levanta algo magnífico: un enorme árbol en forma de cruz. Este es el Wacah Chan, el ÃƒÂrbol Cósmico o ÃƒÂrbol de la Vida maya. Para ellos, el universo tenía la forma de un gigantesco árbol de ceiba. Sus raíces profundas llegaban hasta el oscuro inframundo de Xibalbá, su tronco fuerte y recto representaba nuestro mundo terrestre de los vivos, y sus altas ramas sostenían el cielo estrellado donde vivían los dioses celestiales. Pakal está en el centro, conectando estos tres mundos mágicos con su propio cuerpo real, actuando como el puente eterno entre lo humano y lo divino.",
-      "En las ramas superiores de este ÃƒÂrbol Cósmico descansa un pájaro majestuoso llamado Itzam-Ye, el Ave Celestial Principal, que observa desde las alturas celestiales. Todo alrededor de la escena principal, los bordes de la enorme tapa de piedra están decorados con una cinta continua que muestra símbolos astronómicos asombrosos: imágenes que representan el Sol brillando, la Luna menguante. Estrellas cintilantes de la Vía Láctea. Estas bandas celestiales nos dicen que el viaje del rey Pakal es un evento cósmico monumental, directamente conectado con el movimiento eterno y perfecto de los astros en el firmamento nocturno.",
-      "Durante los años sesenta y setenta, algunas personas con mucha imaginación miraron esta tapa y publicaron libros diciendo que Pakal era un astronauta antiguo. Decían que el ÃƒÂrbol Cósmico era un cohete espacial y que el rey estaba manejando controles de vuelo con fuego saliendo por detrás. ¡Pero eso es pura fantasía y un malentendido de la cultura maya! Hoy sabemos leer los jeroglíficos y entender su arte con precisión. La imagen no muestra tecnología extraterrestre de otro planeta, sino una explicación espiritual profunda, poética y hermosa sobre la muerte, la vida, la resurrección y el orden sagrado del universo maya.",
+      'Imagina un libro de piedra que cuenta el viaje del alma de un rey. Esa es la tapa del sarcófago de Pakal. Es un rectángulo de piedra, tallado con detalle. En el centro de esta obra, vemos a Pakal en su transición. Está recostado en una posición dinámica, atrapado entre el mundo de los vivos y el mundo de los muertos.',
+      'La escena muestra a Pakal descendiendo hacia las fauces de un monstruo de huesos. Este monstruo representa a Xibalbá, el inframundo maya. Es el lugar profundo donde habitan los dioses de la muerte. Es como si el rey estuviera siendo devorado por la tierra. Es un viaje necesario, similar al sol ocultándose en el atardecer.',
+      'Detrás de Pakal se levanta un árbol en forma de cruz. Este es el Wacah Chan, el Árbol Cósmico. Para los mayas, el universo tenía la forma de una ceiba. Sus raíces llegaban a Xibalbá, su tronco representaba la tierra y sus ramas sostenían el cielo. Pakal conecta estos tres mundos con su cuerpo.',
+      'En las ramas superiores descansa Itzam-Ye, el Ave Celestial, que observa desde las alturas. Los bordes de la tapa están decorados con una cinta que muestra símbolos astronómicos: el sol, la luna y las estrellas. Estas bandas nos dicen que el viaje de Pakal es un evento cósmico conectado con el movimiento de los astros.',
+      'En el pasado, algunas personas publicaron que Pakal era un astronauta antiguo. Decían que el Árbol Cósmico era un cohete espacial y que el rey manejaba controles de vuelo. Esto es pura fantasía. Hoy sabemos leer los jeroglíficos. La imagen muestra una explicación espiritual profunda sobre la vida, la muerte y el orden del universo maya.'
     ],
     expandables: [
       {
         label: "Un Malentendido Espacial",
         icon: "zap",
-        text: 'La teoría del "astronauta de Palenque" se hizo súper famosa en un libro de 1968. El autor argumentaba que Pakal estaba en una cápsula espacial con tubos de respiración y palancas de aceleración. Pero los arqueólogos y epigrafistas han demostrado, sin lugar a dudas, que las supuestas "llamas del cohete" son en realidad raíces del ÃƒÂrbol Cósmico sagrado o las fauces del Monstruo de la Tierra del inframundo. Las "palancas" y "controles" son simplemente gestos rituales que el rey hace con las manos, muy comunes en el arte maya, y representaciones de sangre sagrada y joyas de jade.',
+        text: 'La teoría del "astronauta de Palenque"se hizo súper famosa en un libro de 1968. El autor argumentaba que Pakal estaba en una cápsula espacial con tubos de respiración y palancas de aceleración. Pero los arqueólogos y epigrafistas han demostrado, que las supuestas"llamas del cohete"son en realidad raíces del ÃƒÂrbol Cósmico sagrado o las fauces del Monstruo de la Tierra del inframundo. Las"palancas" y "controles" son simplemente gestos rituales que el rey hace con las manos, muy comunes en el arte maya, y representaciones de sangre sagrada y joyas de jade.',
       },
       {
         label: "Símbolos Cósmicos Explicados",
@@ -298,11 +296,11 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/maya/infographic_m11/btn_torre-observatorio.jpg",
     image: "/assets/maya/infographic_m11/hero_torre-observatorio.jpg",
     content: [
-      "En el mismo centro del Gran Palacio de Palenque, se levanta una estructura única y sorprendente que no verás en ninguna otra ciudad maya clásica: una elegante torre cuadrada de cuatro pisos. Parece una torre de vigilancia de un castillo antiguo o un faro solitario perdido en medio del denso océano verde de la selva. Esta torre es el edificio más icónico del Palacio, un complejo laberíntico de patios, corredores subterráneos oscuros y habitaciones ricamente decoradas donde vivía, gobernaba y celebraba ceremonias la poderosa familia real de Palenque durante generaciones.",
-      'Imagina cómo se vería esta torre en sus días de gloria, hace más de mil años. Las escaleras interiores te permiten subir y subir, escalón por escalón. En la cima, un techo estilo "mansarda" cubría la estructura, adornado profusamente con estuco bellamente pintado con colores vivos: rojos, azules y amarillos brillantes. En una ciudad y una civilización donde todos los edificios importantes solían ser anchos, horizontales y parecidos a montañas artificiales (las pirámides), esta torre vertical y esbelta destacaba poderosamente en el horizonte, visible desde casi cualquier punto de la gran metrópolis de Lakamha.',
-      "Pero esta torre no era simplemente un lugar alto para disfrutar de la vista panorámica de la ciudad o sentir la brisa fresca que bajaba de las montañas. Los científicos y arqueólogos están convencidos de que tenía una función científica muy importante: era un observatorio astronómico. Los mayas eran astrónomos apasionados y dedicados. Seguían los complejos movimientos de las estrellas, registraban cuidadosamente los ciclos de la luna, y calculaban con asombrosa precisión las órbitas y apariciones de planetas como Venus y Marte. Para ellos, el cielo nocturno no era solo hermoso; era un gigantesco reloj cósmico, un calendario divino y una pantalla inmensa donde los dioses escribían sus mensajes para el mundo de los humanos.",
-      "Desde el último piso de esta torre alta, los sacerdotes-astrónomos mayas tenían una vista perfecta y despejada, sin árboles bloqueando el horizonte occidental. Podían observar con precisión metódica por dónde se ocultaba el sol cada atardecer a lo largo del año solar. Esto era fundamental, porque marcando estos puntos exactos en el horizonte, podían predecir con total exactitud cuándo llegarían las lluvias esenciales, cuándo debían preparar la tierra para sembrar el maíz vital. Cuándo era el momento correcto para cosechar, garantizando así la supervivencia y la riqueza de toda la ciudad de Palenque.",
-      "Existe un detalle arquitectónico que demuestra el profundo simbolismo astronómico de este lugar. Si estás parado en la torre. Observas cuidadosamente la puesta de sol durante el día del solsticio de invierno (el 21 de diciembre, el día más corto y oscuro del año), el sol poniente parece sumergirse exactamente detrás de un edificio muy importante: el Templo de las Inscripciones, que es la inmensa tumba piramidal del Gran Rey Pakal. ¡Este asombroso efecto visual no es una casualidad! Es una alineación intencional y brillante. Demuestra cómo los mayas lograron conectar sus precisos conocimientos de las estrellas y el sol, con su arquitectura monumental y la memoria sagrada de su rey más venerado.",
+      'En el centro del Gran Palacio de Palenque se levanta una estructura inusual: una torre cuadrada de cuatro pisos. Parece una torre de vigilancia perdida en la selva. Esta torre es el edificio más icónico del Palacio, un complejo de patios y habitaciones donde vivía la familia real de Palenque durante generaciones.',
+      'Imagina cómo se vería esta torre en sus días de gloria. Las escaleras interiores te permiten subir a la cima. Un techo cubría la estructura, adornado con estuco pintado con colores vivos. En una ciudad donde los edificios importantes eran horizontales, esta torre vertical destacaba en el horizonte.',
+      'Los arqueólogos están convencidos de que tenía una función científica: era un observatorio astronómico. Los mayas eran astrónomos apasionados. Registraban los ciclos de la luna y calculaban las órbitas de planetas. Para ellos, el cielo nocturno era un calendario divino y una pantalla inmensa donde los dioses escribían mensajes.',
+      'Desde el último piso, los sacerdotes tenían una vista despejada. Podían observar por dónde se ocultaba el sol en el atardecer a lo largo del año. Marcando estos puntos en el horizonte, predecían cuándo llegarían las lluvias esenciales y cuándo preparar la tierra para sembrar.',
+      'Un detalle arquitectónico demuestra el simbolismo de este lugar. Durante la puesta de sol en el solsticio de invierno, el sol parece sumergirse detrás del Templo de las Inscripciones, la tumba de Pakal. Esta alineación brillante conecta sus conocimientos de las estrellas con su arquitectura.'
     ],
     expandables: [
       {
@@ -325,11 +323,11 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/maya/infographic_m11/btn_inscripciones-templo.jpg",
     image: "/assets/maya/infographic_m11/hero_inscripciones-templo.jpg",
     content: [
-      "Ya sabemos que el majestuoso Templo de las Inscripciones guarda la impresionante tumba del Gran Rey Pakal en sus profundidades subterráneas. Pero este edificio piramidal de nueve niveles esconde mucho más que un sarcófago y joyas de jade. De hecho, recibe su famoso nombre por un tesoro invaluable que se encuentra arriba, a plena luz del día, en las paredes interiores del templo superior. Las paredes están cubiertas por tres gigantescos y magníficos paneles de piedra caliza densamente labrada. Estos paneles son como un inmenso libro de piedra abierto.",
-      "Si cuentas todos los intrincados dibujos cuadrados labrados en estos tres grandes paneles, ¡encontrarás 620 bloques de escritura jeroglífica maya! Es un número asombroso. De hecho, es el segundo texto jeroglífico más largo, continuo e importante que se ha encontrado jamás en toda el área maya antigua (solo superado por la famosa Escalinata de los Jeroglíficos en la ciudad de Copán). Es una verdadera obra maestra de la literatura antigua tallada con cincel y martillo. Imagina tratar de escribir un libro entero tallando cuidadosa y artísticamente pequeñas imágenes complejas en roca dura. ¡Tomaría años de trabajo experto!",
-      "Entonces, ¿qué historia cuenta este gigantesco libro de piedra antigua? Gracias a brillantes epigrafistas y arqueólogos que lograron descifrar el código maya durante el siglo veinte, hoy podemos leerlo. Es un registro histórico detallado que documenta cerca de doscientos años de la historia dinástica de la ciudad de Palenque. Funciona como un árbol genealógico colosal, pero también como un noticiero. Menciona con exactitud cuándo nació cada rey antiguo de la familia, las fechas exactas de su coronación, las guerras heroicas que ganaron, las alianzas políticas importantes. Los grandiosos rituales sagrados que realizaron para agradar a los dioses y mantener el orden del cosmos.",
-      "Sin embargo, este increíble documento de piedra no solo mira hacia el pasado remoto de sus ancestros; ¡también mira audazmente hacia el futuro lejano! Los hábiles escritores mayas calcularon fechas de eventos cósmicos y calendáricos tan lejanos que proyectaban fechas que, en nuestro calendario gregoriano actual, equivalen a miles de años en el futuro. Querían dejar claro, tallado en piedra permanente, que la gloriosa dinastía del Rey Pakal perduraría para siempre. Que las ceremonias sagradas y el poder divino de Palenque continuarían celebrándose en aniversarios que ocurrirían ¡en el año cuatro mil setecientos setenta y dos (4772) de nuestra era!",
-      "Para los reyes mayas, escribir su historia con tanto esfuerzo y detalle monumental no era simplemente un acto de ego o presunción vanidosa; era magia poderosa y palpable. Creían que al tallar una historia de eventos importantes en piedra dura, esos eventos se volvían permanentes, reales y vivos por toda la eternidad. El Templo de las Inscripciones es el intento supremo y grandioso del rey Pakal (y de su devoto hijo, que terminó la construcción) de asegurarse de que ni el implacable paso del tiempo, ni la profunda y devoradora selva chiapaneca, lograran jamás olvidar la grandeza de su amada ciudad y de su propio nombre imperial.",
+      'El Templo de las Inscripciones guarda la tumba de Pakal, pero esconde mucho más. Recibe su nombre por los gigantescos paneles de piedra caliza en las paredes interiores del templo superior. Estos paneles son un libro de piedra abierto.',
+      'Si cuentas los dibujos labrados, encontrarás más de seiscientos bloques de escritura jeroglífica maya. Es el segundo texto jeroglífico continuo más largo del área maya. Es una obra de la literatura antigua tallada con cincel y martillo. Escribir un libro tallando roca dura requería años de trabajo experto.',
+      '¿Qué historia cuenta este libro de piedra? Los arqueólogos lograron descifrar el código maya en el siglo veinte. Es un registro histórico que documenta doscientos años de la dinastía de Palenque. Funciona como un árbol genealógico y un noticiero. Menciona cuándo nació cada rey, sus guerras heroicas y los rituales sagrados.',
+      'Este documento de piedra no solo mira hacia el pasado, también mira hacia el futuro. Los escritores mayas calcularon fechas de eventos cósmicos que equivalen a miles de años en el futuro. Querían dejar claro que la dinastía de Pakal perduraría para siempre. Las ceremonias sagradas continuarían en aniversarios remotos.',
+      'Para los reyes mayas, escribir su historia en piedra no era un acto de ego, era magia. Creían que al tallar eventos, estos se volvían permanentes por la eternidad. El Templo es el intento de Pakal de asegurarse de que ni el paso del tiempo ni la selva borraran su grandeza.'
     ],
     expandables: [
       {
@@ -343,7 +341,7 @@ const INFOGRAPHIC_NODES = [
         text: 'Durante más de cien años, los arqueólogos modernos miraron estos paneles con admiración, pero considerándolos simplemente como misteriosos e incomprensibles dibujos artísticos o símbolos decorativos extraños. No fue hasta la década de los años setenta, gracias al brillante e innovador trabajo de pioneros como Linda Schele, David Stuart y Peter Mathews, que se dieron cuenta de que no eran solo dibujos. Eran palabras reales, nombres reales, verbos y fechas exactas. En Palenque, el silencio milenario de la selva finalmente se rompió y las piedras "hablaron" su propia historia por primera vez en siglos.',
       },
     ],
-    fact: 'El brillante matemático y arqueólogo aficionado Heinrich Berlin fue el primero en notar algo extraordinario en 1958: en muchos monumentos mayas había un jeroglífico específico que se repetía constantemente, pero que siempre cambiaba un poco dependiendo de la ciudad en la que se encontraba. Lo llamó "Glifo Emblema". Años más tarde, los expertos comprendieron que estos glifos funcionaban exactamente como las banderas modernas o los escudos de armas de los países europeos. Eran el nombre político oficial del reino. El de Palenque muestra una misteriosa "cabeza de hueso", y se lee "Lakamha", el venerado señorío de las Grandes Aguas.',
+    fact: 'El brillante matemático y arqueólogo aficionado Heinrich Berlin fue el primero en notar algo extraordinario en 1958: en muchos monumentos mayas había un jeroglífico específico que se repetía constantemente, pero que siempre cambiaba un poco dependiendo de la ciudad en la que se encontraba. Lo llamó "Glifo Emblema". Años más tarde, los expertos comprendieron que estos glifos funcionaban exactamente como las banderas modernas o los escudos de armas de los países europeos. Eran el nombre político oficial del reino. El de Palenque muestra una misteriosa"cabeza de hueso", y se lee "Lakamha", el venerado señorío de las Grandes Aguas.',
   },
   {
     id: "alineacion-solsticio",
@@ -352,11 +350,11 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/maya/infographic_m11/btn_alineacion-solsticio.jpg",
     image: "/assets/maya/infographic_m11/hero_alineacion-solsticio.jpg",
     content: [
-      "Ya sabemos que el Templo de las Inscripciones es asombroso por sus textos jeroglíficos detallados y la tumba real oculta de Pakal. Pero hay un secreto astronómico más, un truco de luz y sombra tan sofisticado que demuestra que los mayas eran auténticos genios de la observación del cielo y la planificación urbana. Todo ocurre un día específico del año: el 21 de diciembre, durante el solsticio de invierno. Este es el día preciso en el que el sol, en su viaje anual por el cielo, alcanza su punto más bajo en el horizonte, creando el día más corto. La noche más larga del año para todo el hemisferio norte.",
-      'Si viajas a Palenque en esa fecha especial y te colocas en la gran plaza al atardecer, observarás algo mágico y cuidadosamente coreografiado. El sol poniente rojo fuego comienza a descender lentamente por detrás del gran Templo de las Inscripciones. En el último momento brillante antes de desaparecer por completo, los últimos rayos fuertes de luz del sol logran entrar exactamente a través de la ancha puerta central superior del templo, iluminando brevemente las esculturas interiores. Luego, mientras el sol se pone, la sombra avanza cubriendo el edificio, pero la línea imaginaria de los últimos rayos parece "bajar" velozmente por las escaleras.',
-      'Esa línea de luz del ocaso invernal "apunta" directamente hacia abajo, siguiendo el mismo ángulo de la escalinata secreta, hasta llegar a la tumba oculta del rey Pakal en las oscuras profundidades de la pirámide. Para los ingenieros y sacerdotes mayas, este no era un truco visual aleatorio. Era una representación espectacular y visible del evento místico más importante: el rey y el sol eran uno solo. Así como el sol, agotado y viejo, "moría" y bajaba al inframundo en el día más corto y frío del año, también el Gran Pakal había descendido al oscuro mundo de Xibalbá.',
-      'Pero en la cosmovisión y religión maya, el descenso a la oscuridad profunda nunca era el final definitivo de la historia. Al día siguiente del solsticio, el sol siempre "renace" victorioso, iniciando su largo camino de regreso para calentar la tierra nuevamente, alargando los días y trayendo vida en primavera. La alineación mágica del edificio garantiza que Pakal, identificado y fusionado con el espíritu del sol invencible, también renacerá eternamente de la fría muerte cada año, garantizando con su ciclo inquebrantable que la vida, el poder y la fertilidad nunca abandonarán a la gran ciudad de Palenque.',
-      "Lograr esta sincronización perfecta requirió de matemáticas complejas, observaciones celestes sistemáticas durante décadas enteras y una precisión constructiva impecable por parte de los arquitectos. Tuvieron que observar las estrellas y la ruta exacta del sol durante años antes de colocar siquiera la primera piedra. Esto demuestra un nivel de sofisticación científica y simbólica que iguala, o incluso supera, al de los monumentos más famosos y admirados de la antigüedad europea o egipcia, consolidando a los mayas como maestros de la arquitectura sagrada.",
+      'El Templo de las Inscripciones tiene un secreto astronómico que demuestra que los mayas eran genios de la observación del cielo. Todo ocurre el día del solsticio de invierno, el 21 de diciembre. Este es el día en que el sol alcanza su punto más bajo en el horizonte.',
+      'Si visitas Palenque en esa fecha al atardecer, observarás algo mágico. El sol comienza a descender detrás del Templo. En el último momento, los rayos de luz entran por la puerta central superior. Mientras el sol se pone, la línea de los rayos baja velozmente por las escaleras.',
+      'Esa línea de luz del ocaso invernal apunta hacia abajo hasta llegar a la tumba de Pakal en las profundidades. Para los mayas, esto era una representación mística: el rey y el sol eran uno solo. Así como el sol moría en el día más corto, Pakal había descendido al inframundo.',
+      'En la religión maya, el descenso a la oscuridad no era el final. Al día siguiente del solsticio, el sol renace victorioso, calentando la tierra nuevamente. La alineación asegura que Pakal, fusionado con el sol, también renacerá eternamente de la muerte, garantizando la vida a Palenque.',
+      'Lograr esta sincronización requirió de matemáticas complejas y observaciones celestes. Tuvieron que observar las estrellas y la ruta del sol durante años antes de colocar la primera piedra. Esto demuestra un nivel de sofisticación científica que consolida a los mayas como maestros de la arquitectura sagrada.'
     ],
     expandables: [
       {
@@ -370,7 +368,7 @@ const INFOGRAPHIC_NODES = [
         text: "En la rica mitología sagrada de los mayas, recogida en su famoso libro el Popol Vuh, existía la profunda creencia de que el sol mismo era en realidad un joven héroe divino y muy valiente. Este héroe, que bajaba cada atardecer, tenía que superar increíbles pruebas de ingenio, sortear peligros mortales y derrotar a los monstruos tramposos en la oscuridad de Xibalbá para poder salir triunfante y brillar con fuerza nuevamente a la mañana siguiente. El rey Pakal, al asociarse íntimamente con el sol en el diseño de su tumba, se consideraba a sí mismo como este invencible dios triunfador sobre la muerte.",
       },
     ],
-    fact: 'Existen otras alineaciones asombrosas y menos conocidas en la ciudad. Por ejemplo, el magnífico "Templo de la Cruz", ubicado en un alto promontorio, fue diseñado de tal manera que, durante el equinoccio de primavera, una intensa franja de luz solar incide. Resalta de manera espectacular el panel principal con un brillante dios del maíz tallado en su santuario interior oscuro, simbolizando visualmente el renacimiento anual de las plantas, la agricultura y la llegada de las primeras lluvias dadoras de vida.',
+    fact: 'Existen otras alineaciones asombrosas en la ciudad. El "Templo de la Cruz" fue diseñado de tal manera que, durante el equinoccio de primavera, una franja de luz solar ilumina un dios del maíz tallado en su santuario interior. Esto simboliza el renacimiento de las plantas y la llegada de las lluvias.',
   },
   {
     id: "legado-palenque",
@@ -379,11 +377,11 @@ const INFOGRAPHIC_NODES = [
     btnImage: "/assets/maya/infographic_m11/btn_legado-palenque.jpg",
     image: "/assets/maya/infographic_m11/hero_legado-palenque.jpg",
     content: [
-      'Palenque no es solo un museo silencioso con viejas piedras abandonadas; es un lugar vibrante y de intensa actividad científica constante. Hoy en día, cientos de años después de su abandono, el misterio y la maravilla de esta capital continúan desarrollándose de forma sorprendente. Aunque la tumba de Pakal se descubrió en mil novecientos cincuenta y dos, los arqueólogos modernos no se detuvieron allí. En 1994, hicieron otro descubrimiento espectacular muy cerca, en un pequeño edificio vecino llamado misteriosamente "Templo XIII". Fue un hallazgo asombroso y macabro.',
-      'Oculta dentro de este edificio encontraron la tumba intacta de una misteriosa mujer. Todo a su alrededor, incluidos sus huesos milenarios, su sarcófago de piedra e incluso los preciosos tesoros de jade de su ajuar funerario, estaban cubiertos de un intenso y brillante polvo de color rojo. Este polvo era cinabrio (un mineral tóxico de mercurio) que los mayas utilizaban generosamente en rituales funerarios muy importantes. Por esto, la bautizaron como "La Reina Roja". Después de años de complejas investigaciones químicas y arqueológicas, hoy sabemos que fue Tzakbu Ajaw, la amada esposa de Pakal y madre poderosa de los dos reyes que gobernaron después de él.',
-      "El conocimiento profundo que hoy poseemos sobre los antiguos mayas le debe muchísimo a Palenque. En el año mil novecientos setenta y tres, ocurrió un evento extraordinario. Un grupo de brillantes estudiosos, arqueólogos y artistas de varias partes del mundo se reunieron en la zona arqueológica, sentados literalmente en una mesa redonda de madera bajo los calurosos techos de paja. Su objetivo único era algo que se consideraba casi imposible: intentar leer todos los jeroglíficos del Templo de las Inscripciones juntos y al mismo tiempo. Y milagrosamente, para asombro del mundo académico, lo lograron con gran éxito.",
-      'Esta reunión histórica, ahora mundialmente famosa como la "Primera Mesa Redonda de Palenque", fue un punto de quiebre trascendental. Allí se descubrió por primera vez que los misteriosos símbolos artísticos mayas eran, en efecto, un lenguaje fonético real completo (capaz de escribir sílabas y formar palabras completas), tal como el español o el inglés. No solo dibujos sueltos sobre ideas o calendarios. A partir de esa reunión legendaria, el lento y difícil proceso de desciframiento avanzó a una velocidad increíble. Gracias a este esfuerzo, la civilización maya se convirtió oficialmente en la primera cultura del continente americano con una historia escrita detallada que podemos leer con voz alta.',
-      "Hoy, la tecnología más avanzada se une a las antiguas tradiciones para desentrañar nuevos secretos en Palenque. Con el uso revolucionario de satélites espaciales, sistemas de radares láser (LiDAR) que pueden penetrar visualmente el dosel de la selva, y complejos análisis de ADN obtenidos de huesos antiguos, sabemos que los misterios de Lakamha están lejos de terminarse. Cada nueva pequeña excavación debajo de la espesa selva húmeda, cada nuevo texto apenas legible en una estela fracturada, ayuda a armar el maravilloso e interminable rompecabezas de una de las civilizaciones más fascinantes. Brillantes que hayan existido en la historia del planeta.",
+      'Palenque no es solo un museo silencioso; es un lugar de actividad científica. El misterio de esta capital continúa desarrollándose. Aunque la tumba de Pakal se descubrió en mil novecientos cincuenta y dos, los arqueólogos no se detuvieron allí. En 1994, hicieron otro descubrimiento en el Templo XIII.',
+      'Oculta dentro de este edificio encontraron la tumba intacta de una mujer. Sus huesos milenarios, su sarcófago de piedra y su ajuar funerario estaban cubiertos de polvo rojo. Este polvo era cinabrio que utilizaban en rituales funerarios. La bautizaron como la Reina Roja y hoy sabemos que fue la esposa de Pakal.',
+      'El conocimiento profundo que poseemos sobre los mayas le debe muchísimo a Palenque. En mil novecientos setenta y tres, ocurrió un evento extraordinario. Un grupo de arqueólogos se reunió en la zona arqueológica. Su objetivo era leer los jeroglíficos del Templo juntos. Lo lograron con gran éxito.',
+      'Esta reunión histórica fue un punto de quiebre. Se descubrió que los símbolos artísticos mayas eran un lenguaje fonético real completo. No eran dibujos sueltos. El proceso de desciframiento avanzó a gran velocidad. La civilización maya se convirtió en la primera cultura de América con una historia escrita detallada.',
+      'Hoy, la tecnología avanzada se une a las tradiciones para desentrañar secretos en Palenque. Con satélites espaciales y sistemas láser que penetran la selva, sabemos que los misterios están lejos de terminarse. Cada texto legible ayuda a armar el rompecabezas de una de las civilizaciones más fascinantes de la historia.'
     ],
     expandables: [
       {
@@ -452,10 +450,7 @@ function TemporalField() {
     <canvas
       ref={canvasRef}
       style={{
-        position: "absolute",
-        inset: 0,
-        zIndex: 0,
-        pointerEvents: "none",
+        position: "absolute", inset: 0, zIndex: 0, pointerEvents:"none",
       }}
     />
   );
@@ -637,12 +632,8 @@ function NodeButton({ node, isActive, onClick, index }) {
       <span
         style={{
           color: isActive ? node.color : "rgba(255,255,255,0.75)",
-          fontSize: "0.78rem",
-          fontWeight: 700,
-          letterSpacing: "0.3px",
-          textAlign: "center",
-          lineHeight: 1.2,
-          transition: "color 0.3s",
+          fontSize: "0.78rem", fontWeight: 700, letterSpacing:"0.3px",
+          textAlign: "center", lineHeight: 1.2, transition:"color 0.3s",
           maxWidth: "100px",
           textShadow: isActive ? `0 0 8px ${node.color}40` : "none",
         }}
@@ -729,10 +720,7 @@ function ExpandableSection({ item, color }) {
         </motion.div>
         <span
           style={{
-            fontSize: "0.85rem",
-            fontWeight: 700,
-            color,
-            letterSpacing: "0.5px",
+            fontSize: "0.85rem", fontWeight: 700, color, letterSpacing:"0.5px",
             flex: 1,
             textAlign: "left",
           }}
@@ -760,9 +748,7 @@ function ExpandableSection({ item, color }) {
             <p
               style={{
                 margin: 0,
-                fontSize: "0.9rem",
-                lineHeight: 1.75,
-                color: "rgba(255,255,255,0.85)",
+                fontSize: "0.9rem", lineHeight: 1.75, color:"rgba(255,255,255,0.85)",
                 borderLeft: `3px solid ${color}30`,
                 paddingLeft: "0.8rem",
               }}
@@ -818,9 +804,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          cursor: "pointer",
-          color: node.color,
-          transition: "all 0.2s",
+          cursor: "pointer", color: node.color, transition:"all 0.2s",
         }}
       >
         <X size={18} />
@@ -853,18 +837,12 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               width: "100%",
               height: "100%",
               objectFit: "cover",
-              cursor: "pointer",
-              opacity: 0.9,
-              minHeight: "280px",
+              cursor: "pointer", opacity: 0.9, minHeight:"280px",
             }}
           />
           <div
             style={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              right: 0,
-              height: "60px",
+              position: "absolute", bottom: 0, left: 0, right: 0, height:"60px",
               background: `linear-gradient(transparent, ${node.color}15)`,
             }}
           />
@@ -891,10 +869,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           <h3
             style={{
               margin: "0 0 0.8rem",
-              fontSize: "1.5rem",
-              fontWeight: 800,
-              color: node.color,
-              letterSpacing: "-0.02em",
+              fontSize: "1.5rem", fontWeight: 800, color: node.color, letterSpacing:"-0.02em",
               display: "flex",
               alignItems: "center",
               gap: "0.6rem",
@@ -926,9 +901,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               key={i}
               style={{
                 margin: "0 0 0.8rem",
-                fontSize: "0.95rem",
-                lineHeight: 1.75,
-                color: "rgba(255,255,255,0.85)",
+                fontSize: "0.95rem", lineHeight: 1.75, color:"rgba(255,255,255,0.85)",
               }}
             >
               {para}
@@ -963,10 +936,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 ease: "easeInOut",
               }}
               style={{
-                position: "absolute",
-                ...pos,
-                zIndex: 1,
-                pointerEvents: "none",
+                position: "absolute", ...pos, zIndex: 1, pointerEvents:"none",
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
@@ -1003,12 +973,8 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   style={{
                     position: "absolute",
                     top: "-8px",
-                    left: "12px",
-                    background: node.color,
-                    color: "#0B0E2D",
-                    fontSize: "0.65rem",
-                    fontWeight: 800,
-                    padding: "2px 8px",
+                    left: "12px", background: node.color, color:"#0B0E2D",
+                    fontSize: "0.65rem", fontWeight: 800, padding:"2px 8px",
                     borderRadius: "8px",
                     letterSpacing: "1px",
                   }}
@@ -1018,9 +984,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 <p
                   style={{
                     margin: 0,
-                    fontSize: "0.95rem",
-                    lineHeight: 1.75,
-                    color: "rgba(255,255,255,0.85)",
+                    fontSize: "0.95rem", lineHeight: 1.75, color:"rgba(255,255,255,0.85)",
                   }}
                 >
                   {para}
@@ -1035,9 +999,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           <div style={{ marginTop: "2rem", position: "relative", zIndex: 2 }}>
             <h4
               style={{
-                fontSize: "1.1rem",
-                color: node.color,
-                margin: "0 0 1rem",
+                fontSize: "1.1rem", color: node.color, margin:"0 0 1rem",
                 display: "flex",
                 alignItems: "center",
                 gap: "0.5rem",
@@ -1078,9 +1040,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             <div
               style={{
                 width: "36px",
-                height: "36px",
-                flexShrink: 0,
-                borderRadius: "50%",
+                height: "36px", flexShrink: 0, borderRadius:"50%",
                 background: `${node.color}20`,
                 display: "flex",
                 alignItems: "center",
@@ -1092,10 +1052,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             <div>
               <span
                 style={{
-                  fontSize: "0.7rem",
-                  fontWeight: 800,
-                  color: node.color,
-                  letterSpacing: "2px",
+                  fontSize: "0.7rem", fontWeight: 800, color: node.color, letterSpacing:"2px",
                   textTransform: "uppercase",
                 }}
               >

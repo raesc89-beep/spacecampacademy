@@ -612,7 +612,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
+                position: 'absolute', ...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />

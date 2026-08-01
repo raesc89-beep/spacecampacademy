@@ -95,31 +95,31 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_mundos/btn_tatooine.png',
     image: '/assets/starwars/infographic_mundos/hero_tatooine.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_tatooine.png',
-    bannerCaption: 'El doble atardecer de Tatooine â€” inspirado en el descubrimiento de Kepler-16b',
+    bannerCaption: 'El doble atardecer de Tatooine â€” inspirado en Kepler-16b',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_tatooine_atardecer.png', caption: 'Atardecer con dos soles sobre las chozas de Tatooine' },
-      { src: '/assets/starwars/infographic_mundos/extra_tatooine_pueblo.png', caption: 'El pueblo de Tatooine bajo los dos soles del desierto' }
+      { src: '/assets/starwars/infographic_mundos/extra_tatooine_atardecer.png', caption: 'Atardecer con dos soles sobre Tatooine' },
+      { src: '/assets/starwars/infographic_mundos/extra_tatooine_pueblo.png', caption: 'El pueblo de Tatooine bajo dos soles' }
     ],
     content: [
-      "¿Te imaginas caminar por la calle en un día soleado y tener no una, sino dos sombras detrás de ti? Así sería la vida en un mundo con dos soles. En 2011, los astrónomos descubrieron un planeta real que orbita alrededor de un par de estrellas, igual que el famoso hogar de Luke Skywalker. Este descubrimiento sacudió al mundo científico porque durante décadas se pensó que un planeta no podría mantener una órbita estable alrededor de dos estrellas sin ser expulsado al vacío del espacio.",
-      "A estos mundos los llamamos 'planetas circumbinarios', una palabra elegante para decir que viajan en un gran círculo alrededor de dos estrellas que giran juntas en el centro. Las dos estrellas de Kepler-16 se emparejan bailando un vals cósmico, y el planeta las rodea a lo lejos observando el espectáculo. La estrella principal (Kepler-16A) es una enana naranja con un 69% de la masa de nuestro Sol, mientras que su compañera (Kepler-16B) es una enana roja mucho más pequeña, con solo un 20%.",
-      "El planeta Kepler-16b es un gigante de gas frío, aproximadamente del tamaño de Saturno pero un poco más denso, lo que sugiere que tiene un núcleo rocoso más grande. Si pudieras flotar en su atmósfera mirando al cielo, verías dos soles diferentes cruzándose y separándose como bailarines en un escenario cósmico. Los científicos calcularon que la temperatura superficial ronda los -73°C, demasiado frío para agua líquida.",
-      "Los atardeceres allí serían mágicos: los dos soles cruzarían el horizonte en momentos diferentes, creando un espectáculo de colores cambiantes que no existe en ningún otro lugar conocido. Las sombras de los objetos se dividirían en dos y cambiarían de posición a lo largo del año. Aunque este planeta en particular es demasiado frío y gaseoso para albergar vida, nos demuestra que el universo es más asombroso y parecido a la ciencia ficción de lo que imaginábamos.",
-      "Desde el descubrimiento de Kepler-16b, los astrónomos han encontrado más de una docena de planetas circumbinarios confirmados, incluyendo Kepler-34b, Kepler-35b y TOI-1338b, este último descubierto en 2020 por un estudiante de 17 años durante sus prácticas de verano en la NASA. Estos hallazgos demuestran que los sistemas con dos soles no son una rareza cósmica, sino que podrían representar hasta el 10% de todos los sistemas planetarios de la Vía Láctea. La pregunta ya no es si existen los mundos con doble atardecer, sino cuántos de ellos podrían albergar condiciones para la vida."
+      "¿Te imaginas tener dos sombras detrás de ti? Así sería la vida en un mundo con dos soles. En 2011, los astrónomos descubrieron un planeta real que orbita un par de estrellas. Esto sacudió a la ciencia. Se pensaba que un planeta no podría mantener una órbita estable alrededor de dos estrellas sin ser expulsado.",
+      "A estos mundos los llamamos 'planetas circumbinarios'. Viajan en un gran círculo alrededor de dos estrellas que giran en el centro. Las estrellas de Kepler-16 giran juntas, y el planeta las rodea a lo lejos. La estrella principal es una enana naranja. Su compañera es una enana roja más pequeña.",
+      "El planeta Kepler-16b es un gigante de gas. Es del tamaño de Saturno pero más denso. Esto sugiere que tiene un núcleo rocoso. Si flotaras en su atmósfera, verías dos soles diferentes cruzándose. Los científicos calcularon que su temperatura superficial es de -73°C, demasiado frío para el agua líquida.",
+      "Los atardeceres allí serían distintos. Los soles cruzarían el horizonte en momentos diferentes. Las sombras se dividirían en dos y cambiarían de posición durante el año. Aunque este planeta es demasiado frío para la vida, demuestra que el universo es más asombroso de lo que imaginábamos.",
+      "Los astrónomos han encontrado más de una docena de planetas circumbinarios confirmados. Entre ellos están Kepler-34b y TOI-1338b. Este último fue descubierto en 2020 por un estudiante en la NASA. Estos sistemas no son raros. Podrían representar el 10% de los sistemas planetarios en la Vía Láctea."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'La escena de Luke Skywalker contemplando el doble atardecer en Tatooine en la película original de 1977 es uno de los momentos más icónicos del cine. Se filmó en Tozeur, Túnez, en el borde del desierto del Sahara, y George Lucas se inspiró en la cercana ciudad tunecina de Tataouine para darle nombre. La música de John Williams en esa escena se llama "Binary Sunset" y es una de las piezas más reconocibles de la historia del cine.' 
+        text: 'La escena de Luke Skywalker contemplando el doble atardecer en 1977 es un momento icónico. Se filmó en Túnez, cerca del desierto del Sahara. George Lucas se inspiró en la ciudad de Tataouine para darle nombre. La música de John Williams en esa escena se llama "Binary Sunset".' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'Kepler-16b fue descubierto en 2011 por la misión Kepler de la NASA mediante el método de tránsito, observando cómo la luz de ambas estrellas se atenuaba periódicamente. Los científicos lo apodaron oficialmente "Tatooine" en honor a Star Wars. Tarda 229 días en completar una órbita, y se encuentra a 0.7 unidades astronómicas de sus estrellas, casi a la misma distancia a la que Venus orbita nuestro Sol.' 
+        text: 'Kepler-16b fue descubierto en 2011 por la misión Kepler. Usaron el método de tránsito, observando cómo la luz se atenuaba periódicamente. Tarda 229 días en completar una órbita. Se encuentra a 0.7 unidades astronómicas de sus estrellas.' 
       }
     ],
-    fact: 'Kepler-16b fue el primer planeta confirmado orbitando dos estrellas, descubierto en 2011. Los científicos lo apodaron oficialmente "Tatooine" en honor a Star Wars. Desde entonces, se han encontrado más de una docena de planetas circumbinarios, demostrando que los mundos con doble sol no son raros en la galaxia.'
+    fact: 'Kepler-16b fue el primer planeta confirmado orbitando dos estrellas. Los científicos lo apodaron "Tatooine". Se han encontrado más planetas circumbinarios, demostrando que los mundos con doble sol son comunes.'
   },
   {
     id: 'metodo-eclipse',
@@ -128,27 +128,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_mundos/btn_eclipse.png',
     image: '/assets/starwars/infographic_mundos/hero_eclipse.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_eclipse.png',
-    bannerCaption: 'El telescopio Kepler observó más de 150,000 estrellas buscando mini-eclipses',
+    bannerCaption: 'El telescopio Kepler observó más de 150,000 estrellas.',
     content: [
-      "Si estuvieras a kilómetros de distancia mirando una farola gigante, ¿podrías notar si una pequeña hormiga camina frente a la bombilla? Esa es exactamente la difícil tarea que hacen los telescopios espaciales para encontrar exoplanetas. Utilizan algo llamado 'método del tránsito', que consiste en espiar la luz de las estrellas durante meses y meses, buscando parpadeos diminutos que revelen la presencia de un mundo oculto.",
-      "Cuando un planeta cruza por delante de su estrella (desde nuestro punto de vista en la Tierra), bloquea una cantidad pequeñísima de luz. ¡Estamos hablando de apenas un 0.01% del brillo total! El brillo de la estrella disminuye un poquito durante unas pocas horas, y luego vuelve a la normalidad. Si ese patrón se repite periódicamente, ¡tenemos un planeta! Es como detectar a alguien que pasa una y otra vez frente a la ventana de un vecino lejano.",
-      "El telescopio espacial Kepler fue el campeón indiscutible de esta técnica. Lanzado en 2009 desde Cabo Cañaveral, se quedó mirando fijamente una sola porción del cielo entre las constelaciones de Cisne y Lira, midiendo el brillo de 150,000 estrellas simultáneamente con una precisión asombrosa. Durante sus nueve años de servicio, encontró más de 2,600 exoplanetas confirmados antes de quedarse sin combustible en octubre de 2018.",
-      "Otra forma ingeniosa de cazar planetas es 'escuchando' si la estrella se tambalea. Se llama velocidad radial o efecto Doppler. La gravedad del planeta tira un poco de su estrella, haciéndola tambalearse como un trompo a punto de caer. Si la estrella se acerca ligeramente hacia nosotros, su luz se vuelve un poquito más azul; si se aleja, un poquito más roja. Este elegante método llevó al descubrimiento del primer exoplaneta alrededor de una estrella tipo Sol, 51 Pegasi b, en 1995, un hallazgo tan importante que les valió el Premio Nobel de Física.",
-      "Y la aventura no se detiene aquí. En diciembre de 2021, la NASA lanzó el Telescopio Espacial James Webb, el observatorio más poderoso jamás construido, con un espejo de oro de 6.5 metros de diámetro plegado como origami dentro de un cohete. El Webb puede analizar la luz que atraviesa las atmósferas de exoplanetas durante un tránsito, descomponiendo esa luz en un arcoíris químico que revela qué moléculas contiene: agua, metano, dióxido de carbono, e incluso posibles señales de vida. Es como leer la receta de un pastel con solo oler el horno desde la calle."
+      "¿Podrías notar a lo lejos si una hormiga camina frente a una farola? Esa es la tarea de los telescopios espaciales para encontrar exoplanetas. Utilizan el 'método del tránsito'. Consiste en observar la luz de las estrellas buscando parpadeos que revelen un planeta oculto.",
+      "Cuando un planeta cruza frente a su estrella, bloquea una cantidad de luz. Puede ser apenas un 0.01% del brillo total. El brillo disminuye un poco durante unas horas y luego vuelve a la normalidad. Si ese patrón se repite periódicamente, tenemos un planeta.",
+      "El telescopio Kepler fue el campeón de esta técnica. Fue lanzado en 2009. Se quedó mirando una porción del cielo, midiendo el brillo de 150,000 estrellas con gran precisión. Durante nueve años, encontró más de 2,600 exoplanetas confirmados antes de quedarse sin combustible.",
+      "Otra forma de cazar planetas es observar si la estrella se tambalea. Se llama velocidad radial. La gravedad del planeta tira de su estrella, haciéndola tambalear. Si la estrella se acerca, su luz se vuelve más azul. Si se aleja, se vuelve más roja. Este método permitió descubrir 51 Pegasi b en 1995.",
+      "La aventura continúa con el Telescopio Espacial James Webb, lanzado en 2021. Este observatorio puede analizar la luz que atraviesa las atmósferas de exoplanetas. Descompone la luz para revelar moléculas como agua, metano o dióxido de carbono. Es como leer los ingredientes de un alimento a distancia."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En Star Wars, los personajes viajan entre sistemas estelares con facilidad gracias al hiperimpulsor, pero en la realidad detectar planetas a esas distancias es difícil. La Alianza Rebelde habría necesitado telescopios como Kepler o el James Webb para encontrar bases habitables ocultas en la galaxia, porque a simple vista las estrellas son solo puntos de luz sin planetas visibles.' 
+        text: 'En Star Wars, los personajes viajan entre sistemas estelares con facilidad. En la realidad, detectar planetas a esas distancias es difícil. A simple vista, las estrellas son solo puntos de luz sin planetas visibles.' 
       },
       { 
         label: '¿Sabías que...?', 
         icon: 'clock', 
-        text: 'Michel Mayor y Didier Queloz, de la Universidad de Ginebra, ganaron el Premio Nobel de Física 2019 por descubrir 51 Pegasi b usando el método Doppler en el Observatorio de Haute-Provence, Francia, en 1995. Hoy en día, instrumentos de nueva generación como ESPRESSO, instalado en el Very Large Telescope en Paranal, Chile, pueden detectar bamboleos tan sutiles como los causados por planetas tan pequeños como la Tierra.' 
+        text: 'Michel Mayor y Didier Queloz ganaron el Premio Nobel de Física 2019. Descubrieron 51 Pegasi b usando el método Doppler. Hoy en día, instrumentos como ESPRESSO en Chile pueden detectar bamboleos causados por planetas pequeños.' 
       }
     ],
-    fact: 'El telescopio espacial Kepler descubrió más de 2,600 exoplanetas confirmados antes de que se agotara su combustible en octubre de 2018. Observó 150,000 estrellas simultáneamente durante nueve años. Su sucesor, TESS (lanzado en 2018), ahora observa el cielo entero buscando mundos aún más cercanos a nosotros.'
+    fact: 'El telescopio Kepler descubrió más de 2,600 exoplanetas confirmados. Observó 150,000 estrellas simultáneamente durante nueve años. Su sucesor, TESS, ahora observa el cielo entero.'
   },
   {
     id: 'hoth-hielo',
@@ -157,31 +157,31 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_mundos/btn_hoth.png',
     image: '/assets/starwars/infographic_mundos/hero_hoth.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_hoth.png',
-    bannerCaption: 'Europa, la luna helada de Júpiter, tiene un océano subterráneo que podría albergar vida',
+    bannerCaption: 'Europa tiene un océano subterráneo que podría albergar vida.',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_hoth_vader.png', caption: 'Vader patrullando las llanuras heladas de Hoth' },
-      { src: '/assets/starwars/infographic_mundos/extra_hoth_jinete.png', caption: 'Un jinete solitario sobre las colinas nevadas' }
+      { src: '/assets/starwars/infographic_mundos/extra_hoth_vader.png', caption: 'Vader en las llanuras heladas' },
+      { src: '/assets/starwars/infographic_mundos/extra_hoth_jinete.png', caption: 'Un jinete sobre las colinas nevadas' }
     ],
     content: [
-      "Imagina una pista de patinaje gigante del tamaño de una luna entera, llena de grietas kilométricas y crestas afiladas como cuchillos de hielo. En nuestro propio sistema solar tenemos mundos parecidos al congelado planeta Hoth. La luna Europa, de Júpiter, está cubierta por una corteza de hielo durísima, y su superficie se congela a -160°C. Si pudieras pararte en ella, verías un paisaje blanco y agrietado extendiéndose hasta el horizonte, con el gigantesco Júpiter dominando el cielo.",
-      "Pero la verdadera magia ocurre bajo ese hielo. La inmensa gravedad de Júpiter estira y aplasta a Europa como si fuera una pelota antiestrés cósmica. A este fenómeno los científicos lo llaman 'calentamiento mareal'. La fricción constante dentro de la luna genera suficiente calor para derretir el hielo por debajo, formando un gigantesco océano oscuro que contiene el doble de agua que todos los océanos de la Tierra combinados.",
-      "Europa no es la única luna con secretos líquidos. Encélado, una pequeña luna de Saturno de apenas 500 km de diámetro, esconde otro océano subterráneo e incluso dispara enormes géiseres de agua salada hacia el espacio a velocidades de 1,400 km/h. La sonda Cassini de la NASA atravesó esas columnas de vapor en 2015, detectando hidrógeno molecular y sílice, ingredientes que en la Tierra se asocian con fuentes hidrotermales donde prospera la vida.",
-      "¿Podría haber vida nadando en estos abismos oscuros y helados? Para averiguarlo, la NASA ha lanzado la sonda Europa Clipper en octubre de 2024, la misión más ambiciosa jamás enviada al sistema exterior. Realizará 49 sobrevuelos cercanos a Europa, analizando el grosor del hielo con radar y buscando zonas donde el océano se filtra hacia la superficie. ¡Quizás los verdaderos alienígenas del sistema solar no sean humanoides con espadas láser, sino microbios nadando en un océano que nunca ha visto la luz del sol!",
-      "En la Tierra, la vida prospera en condiciones parecidas a las de estos mundos helados. En las profundidades del océano, lejos de toda luz solar, existen las fuentes hidrotermales: chimeneas volcánicas submarinas que escupen agua hirviente rica en minerales. Alrededor de estas 'chimeneas negras' viven gusanos tubulares gigantes, bacterias extremófilas y cangrejos blancos ciegos que obtienen su energía de la química del agua, no del Sol. Si estos ecosistemas pueden prosperar en la oscuridad absoluta de nuestro propio planeta, ¿por qué no podrían existir en los océanos ocultos bajo el hielo de Europa o Encélado?"
+      "Imagina una pista de hielo gigante del tamaño de una luna. En nuestro sistema solar tenemos mundos parecidos a Hoth. La luna Europa de Júpiter está cubierta por una corteza de hielo. Su superficie se congela a -160°C. Presenta grietas kilométricas y crestas afiladas.",
+      "La magia ocurre bajo ese hielo. La gravedad de Júpiter estira y aplasta a Europa. Este calentamiento mareal genera fricción dentro de la luna. El calor derrite el hielo por debajo, formando un océano subterráneo. Contiene el doble de agua que todos los océanos de la Tierra.",
+      "Europa no es la única luna con agua líquida. Encélado, una luna de Saturno, esconde otro océano. Dispara enormes géiseres hacia el espacio a 1,400 km/h. La sonda Cassini de la NASA atravesó esas columnas de vapor en 2015. Detectó moléculas asociadas con fuentes hidrotermales.",
+      "Para buscar vida en estos abismos, la NASA lanzó la sonda Europa Clipper en 2024. Analizará el grosor del hielo con radar y buscará zonas donde el agua se filtra a la superficie. Los verdaderos alienígenas del sistema solar podrían ser microbios nadando en ese océano.",
+      "En la Tierra, la vida prospera en condiciones parecidas. Las fuentes hidrotermales en el fondo del océano albergan gusanos, bacterias y cangrejos ciegos. Obtienen energía de la química del agua, no del Sol. Estos ecosistemas demuestran que la vida podría existir en Europa o Encélado."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'Hoth es donde la Alianza Rebelde estableció la Base Eco en El Imperio Contraataca (1980). Las escenas exteriores se filmaron en Finse, Noruega, a 1,222 metros de altitud, donde la temperatura bajaba a -29°C durante el rodaje. En la ficción, la temperatura en Hoth llega a -60°C, ¡pero la luna Europa es aún más brutal con -160°C! Los Tauntauns, criaturas reptilianas adaptadas al frío, fueron creados con animatrónicos a tamaño real.' 
+        text: 'Hoth es donde la Alianza Rebelde estableció la Base Eco. Las escenas exteriores se filmaron en Noruega, a -29°C. En Hoth, la temperatura llega a -60°C. La luna Europa es aún más fría con -160°C.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'Europa tiene más agua líquida bajo su hielo que todos los océanos de la Tierra juntos: se estiman unos 3 Ã— 10Â¹â¸ metros cúbicos. Su corteza de hielo mide entre 15 y 25 km de grosor, y el océano debajo podría alcanzar hasta 150 km de profundidad. En la Tierra, la Fosa de las Marianas tiene apenas 11 km, así que el océano de Europa sería más de 13 veces más profundo.' 
+        text: 'Europa tiene más agua líquida que todos los océanos de la Tierra juntos. Su corteza de hielo mide entre 15 y 25 km de grosor. El océano debajo podría alcanzar 150 km de profundidad.' 
       }
     ],
-    fact: 'Europa tiene más agua líquida bajo su hielo que todos los océanos de la Tierra juntos, unos 3 Ã— 10Â¹â¸ metros cúbicos. Su océano podría tener 150 km de profundidad, más de 13 veces la Fosa de las Marianas. La sonda Europa Clipper, lanzada en 2024, realizará 49 sobrevuelos para buscar condiciones habitables bajo el hielo.'
+    fact: 'Europa tiene más agua líquida que la Tierra. Su océano podría tener 150 km de profundidad. La sonda Europa Clipper realizará 49 sobrevuelos para buscar condiciones habitables.'
   },
   {
     id: 'dagobah-pantano',
@@ -190,31 +190,31 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_mundos/btn_dagobah.png',
     image: '/assets/starwars/infographic_mundos/hero_dagobah.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_dagobah.png',
-    bannerCaption: 'En el periodo Carbonífero, hace 300 millones de años, la Tierra lucía como Dagobah',
+    bannerCaption: 'En el Carbonífero, la Tierra lucía como Dagobah.',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_dagobah_pantano.png', caption: 'El oscuro pantano de Dagobah bajo la lluvia' },
-      { src: '/assets/starwars/infographic_mundos/extra_dagobah_xwing.png', caption: 'El X-Wing de Luke hundido en el pantano de Dagobah' }
+      { src: '/assets/starwars/infographic_mundos/extra_dagobah_pantano.png', caption: 'El pantano oscuro bajo la lluvia' },
+      { src: '/assets/starwars/infographic_mundos/extra_dagobah_xwing.png', caption: 'El X-Wing hundido en el pantano' }
     ],
     content: [
-      "Si viajaras en el tiempo unos 300 millones de años, aterrizarías en un planeta muy similar al pantanoso exilio de Yoda. La Tierra estaba en pleno período Carbonífero (359-299 millones de años atrás), un mundo cálido y húmedo cubierto por espesos bosques y pantanos impenetrables. No había flores, ni pájaros, ni mamíferos. Solo helechos gigantes, licópodos de 40 metros de alto y el sonido de insectos zumbando entre la niebla.",
-      "Durante este período, la atmósfera tenía mucho más oxígeno que hoy. Mientras que ahora respiramos un 21% de oxígeno, en aquel entonces los niveles alcanzaban el 35%, casi el doble. Los científicos descubrieron esto analizando burbujas de aire atrapadas en ámbar fósil. Este exceso de oxígeno provocó un fenómeno sorprendente que habría fascinado a cualquier biólogo: ¡los insectos crecieron a tamaños monstruosos!",
-      "Imagina libélulas gigantes del género Meganeura con una envergadura de alas de 70 centímetros, volando como si fueran halcones entre los helechos arborescentes. Sus alas transparentes hacían un ruido ensordecedor al batirlas. En el suelo lodoso, arrastrándose entre las raíces sumergidas, había milpiés llamados Arthropleura del tamaño de un coche pequeño, alcanzando los 2.3 metros de largo y medio metro de ancho. Los insectos podían ser tan grandes porque respiraban a través de pequeños tubos (tráqueas), y con tanto oxígeno disponible, hasta los tubos más largos podían funcionar.",
-      "Toda esa vegetación muerta se acumuló en los pantanos durante millones de años sin pudrirse del todo, porque las bacterias y hongos de la época aún no habían evolucionado la capacidad de descomponer la lignina, la sustancia dura que da rigidez a la madera. Con el peso y el calor de la Tierra, esa materia orgánica se comprimió hasta convertirse en el carbón mineral que alimentó la Revolución Industrial. ¡El combustible de los primeros trenes y fábricas del siglo XIX viene literalmente de un mundo parecido a Dagobah!",
-      "El Carbonífero también nos dejó una lección sobre cómo la atmósfera controla la vida. Cuando el oxígeno subió al 35%, los insectos se hicieron gigantes, pero los incendios forestales se volvieron devastadores: con tanto combustible y tanto oxígeno, enormes regiones ardían durante semanas. Eventualmente, los niveles de oxígeno bajaron de nuevo, los insectos gigantes se extinguieron y los reptiles comenzaron a dominar la Tierra, preparando el escenario para los dinosaurios. Es un recordatorio fascinante de que la composición del aire que respiramos determina qué tipo de criaturas pueden existir en nuestro planeta."
+      "Hace 300 millones de años, la Tierra era similar al planeta pantanoso de Yoda. Estábamos en el período Carbonífero. Era un mundo cálido y húmedo cubierto por bosques y pantanos. No había flores ni mamíferos, solo helechos gigantes y grandes insectos.",
+      "Durante ese período, la atmósfera tenía un 35% de oxígeno, casi el doble que hoy. Los científicos descubrieron esto analizando burbujas de aire en ámbar fósil. Este exceso de oxígeno permitió que los insectos crecieran a tamaños enormes.",
+      "Las libélulas del género Meganeura tenían una envergadura de alas de 70 centímetros. En el suelo lodoso había milpiés del tamaño de un coche pequeño, alcanzando 2.3 metros de largo. Respiraban a través de tubos pequeños, un proceso facilitado por la abundancia de oxígeno.",
+      "La vegetación muerta se acumuló en los pantanos durante millones de años sin pudrirse del todo. Las bacterias y hongos aún no podían descomponer la madera rígida. Esa materia orgánica se comprimió hasta convertirse en el carbón mineral que alimentó la Revolución Industrial.",
+      "El Carbonífero muestra cómo la atmósfera controla la vida. Con mucho oxígeno, los insectos fueron gigantes, pero los incendios forestales fueron devastadores. Con el tiempo, los niveles de oxígeno bajaron. Los insectos gigantes se extinguieron y los reptiles comenzaron a dominar la Tierra."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'Dagobah aparece en El Imperio Contraataca (1980) como el planeta donde Yoda entrena a Luke Skywalker en los caminos de la Fuerza. Los densos pantanos se crearon con enormes decorados en los estudios Elstree en Borehamwood, Inglaterra. El puppeteer Frank Oz operaba a Yoda desde debajo del set, sumergido en agua cenagosa. Dagobah fue diseñado como un mundo lleno de vida exuberante y salvaje, pero desprovisto de civilización.' 
+        text: 'Dagobah es el planeta donde Yoda entrena a Luke Skywalker. Los pantanos se crearon con decorados en estudios de Inglaterra. Fue diseñado como un mundo salvaje y desprovisto de civilización.' 
       },
       { 
         label: '¿Sabías que...?', 
         icon: 'clock', 
-        text: 'En el Carbonífero, las libélulas gigantes Meganeura podían alcanzar 75 cm de envergadura y los enormes milpiés Arthropleura pesaban hasta 50 kg. El exceso de oxígeno en la atmósfera permitía a sus cuerpos respirar eficientemente a través de pequeños poros llamados espiráculos, permitiéndoles crecer a tamaños gigantescos. Los científicos han recreado estas condiciones en laboratorio, y efectivamente los insectos modernos crecen más en atmósferas enriquecidas con oxígeno.' 
+        text: 'En el Carbonífero, las libélulas gigantes alcanzaban 75 cm de envergadura. Los milpiés pesaban hasta 50 kg. El exceso de oxígeno atmosférico les permitía respirar eficientemente. En laboratorio, los insectos modernos también crecen más con oxígeno extra.' 
       }
     ],
-    fact: 'En el período Carbonífero (359-299 Ma), las libélulas Meganeura tenían 75 cm de envergadura y los milpiés Arthropleura medían 2.3 metros de largo. El oxígeno atmosférico del 35% (vs 21% actual) permitía a los insectos respirar eficientemente a tamaños gigantescos. La materia vegetal acumulada en estos pantanos se convirtió en los depósitos de carbón que alimentaron la Revolución Industrial.'
+    fact: 'En el período Carbonífero, las libélulas tenían 75 cm de envergadura y los milpiés medían 2.3 metros. El oxígeno del 35% permitía estos tamaños. La vegetación de esos pantanos se convirtió en carbón mineral.'
   },
   {
     id: 'mundos-lava',
@@ -223,32 +223,32 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_mundos/btn_lava.png',
     image: '/assets/starwars/infographic_mundos/hero_lava.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_lava.png',
-    bannerCaption: '55 Cancri e: un año dura solo 18 horas y su superficie supera los 2,000°C',
+    bannerCaption: '55 Cancri e: su superficie supera los 2,000°C.',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_1.png', caption: 'Duelo épico en Mustafar: siluetas bajo un sol abrasador de lava' },
-      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_2.png', caption: 'Anakin y Obi-Wan cruzan sables sobre ríos de magma ardiente' },
-      { src: '/assets/starwars/infographic_mundos/extra_mustafar_sector.png', caption: 'Mustafar â€” Sector Atravis: el planeta volcánico más temido de la galaxia' }
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_1.png', caption: 'Duelo épico en Mustafar' },
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_2.png', caption: 'Cruce de sables sobre magma ardiente' },
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_sector.png', caption: 'El planeta volcánico de la galaxia' }
     ],
     content: [
-      "Hay rincones del universo donde el infierno es un lugar real. Imagina un planeta rocoso que orbita tan cerca de su estrella que su superficie se derrite por completo, convirtiéndose en un océano hirviente de roca fundida color naranja brillante. 55 Cancri e, también conocido como Janssen, es uno de esos terroríficos 'mundos de lava'. Se encuentra a solo 40 años-luz de nosotros, en la constelación de Cáncer, y fue uno de los primeros'supertierra' descubiertos.",
-      "Está tan cerca de su estrella madre que su año completo (una vuelta entera alrededor de la estrella) dura tan solo 18 horas. ¡Podrías celebrar tu cumpleaños todos los días! Pero haría demasiado calor para la fiesta: la temperatura en su cara diurna supera los 2,500°C, suficiente para derretir acero, titanio y prácticamente cualquier metal conocido. Además, siempre muestra la misma cara a su estrella, creando un hemisferio de día eterno y otro de noche perpetua.",
-      "El clima en estos planetas es una pesadilla de ciencia ficción que supera cualquier imaginación. En un planeta llamado WASP-76b, situado a 640 años-luz, las nubes están hechas de vapor de hierro. En el lado más caliente (2,400°C), el hierro se evapora como agua en un horno. Cuando vientos huracanados de más de 18,000 km/h llevan ese vapor al lado oscuro y más frío, el hierro se condensa y llueve como gotas de metal líquido incandescente desde las nubes.",
-      "Otro planeta aún más extremo, K2-141b, tiene un océano de magma de 100 kilómetros de profundidad y una atmósfera hecha de roca vaporizada. El 'ciclo del agua' en este mundo consiste en roca que se evapora, forma nubes de silicato y luego llueve como lava. Estos mundos ardientes nos dan una ventana al pasado de nuestra propia Tierra hace 4,500 millones de años, cuando nuestro planeta no era más que una enorme bola de fuego y roca recién nacida en el espacio, bombardeada por meteoritos.",
-      "Lo más sorprendente es que estos planetas infernales también nos ayudan a entender cómo se forman los mundos habitables. Hace 4,500 millones de años, la Tierra primitiva era prácticamente idéntica a estos mundos de lava. La superficie era un océano de magma cubierto por una atmósfera tóxica de dióxido de carbono y vapor de roca. Fue la lluvia de meteoritos y la desgasificación volcánica las que, a lo largo de cientos de millones de años, crearon los océanos y la atmósfera que eventualmente permitieron la aparición de la vida. Estudiar planetas como 55 Cancri e es como mirar una foto de bebé de nuestro propio mundo."
+      "Imagina un planeta rocoso que orbita tan cerca de su estrella que su superficie se derrite por completo. 55 Cancri e es un mundo de lava a 40 años-luz de nosotros. Fue una de las primeras supertierras descubiertas.",
+      "Su año completo dura solo 18 horas porque orbita muy cerca de su estrella. La temperatura en su cara diurna supera los 2,500°C. Esto puede derretir metales como acero y titanio. Siempre muestra la misma cara a su estrella.",
+      "El clima en estos planetas es extremo. En WASP-76b, a 640 años-luz, las nubes son de vapor de hierro. El hierro se evapora en el lado caliente y viaja al lado frío. Allí se condensa y llueve como gotas de metal líquido.",
+      "Otro planeta, K2-141b, tiene un océano de magma de 100 kilómetros de profundidad. Su atmósfera es de roca vaporizada. La roca se evapora, forma nubes y luego llueve como lava. Estos mundos ardientes nos muestran cómo fue la Tierra hace 4,500 millones de años.",
+      "Estos planetas nos ayudan a entender la formación de los mundos habitables. La Tierra primitiva también fue un océano de magma con una atmósfera tóxica. La lluvia de meteoritos y los volcanes crearon los océanos que permitieron la vida."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'Mustafar es el planeta volcánico donde Anakin Skywalker y Obi-Wan Kenobi se enfrentan en su épico duelo final en La Venganza de los Sith (2005). Las escenas de lava combinaron efectos prácticos (filmados sobre el volcán Etna en Sicilia) con sofisticados efectos CGI de Industrial Light & Magic. En la realidad, mundos como 55 Cancri e son mucho peores que Mustafar: su superficie entera es un océano de lava sin ninguna isla sólida donde pisar.' 
+        text: 'Mustafar es el planeta volcánico donde Anakin y Obi-Wan se enfrentan. Las escenas combinaron efectos prácticos y digitales. En la realidad, mundos como 55 Cancri e son mucho más extremos, con océanos de lava globales.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'En WASP-76b se produce lluvia de hierro líquido, un fenómeno descubierto en marzo de 2020 por el equipo de David Ehrenreich usando el espectrógrafo ESPRESSO en el Very Large Telescope de ESO en Paranal, Chile. Observaron cómo el hierro neutro se detecta abundantemente en el terminador vespertino (frontera día-noche) pero desaparece en el terminador matutino, confirmando que el hierro se condensa y cae como lluvia metálica en el lado nocturno.' 
+        text: 'En WASP-76b llueve hierro líquido. Este fenómeno fue descubierto en 2020 por científicos usando el instrumento ESPRESSO en Chile. El hierro se evapora de día y se condensa en la zona nocturna más fría.' 
       }
     ],
-    fact: 'En WASP-76b llueve hierro líquido a temperaturas de más de 2,400°C. El hierro se evapora en el lado diurno permanente del planeta y cae como gotas de metal fundido en el lado nocturno oscuro. Este descubrimiento fue publicado en Nature en 2020 por el equipo de David Ehrenreich usando datos del espectrógrafo ESPRESSO en Chile.'
+    fact: 'En WASP-76b llueve hierro líquido a más de 2,400°C. Este descubrimiento se publicó en 2020 usando datos del espectrógrafo ESPRESSO en Chile.'
   },
   {
     id: 'trappist-sistema',
@@ -257,27 +257,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_mundos/btn_trappist.png',
     image: '/assets/starwars/infographic_mundos/hero_trappist.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_trappist.png',
-    bannerCaption: 'Los siete planetas de TRAPPIST-1 están tan cerca que podrías ver los vecinos en el cielo',
+    bannerCaption: 'Los planetas de TRAPPIST-1 están muy cerca unos de otros.',
     content: [
-      "¿Y si pudieras mirar al cielo nocturno y ver, en lugar de una luna solitaria, otros planetas del tamaño de la Tierra flotando enormes y cercanos entre las nubes? El sistema TRAPPIST-1, descubierto en febrero de 2017 a solo 40 años-luz de distancia en la constelación de Acuario, es como una pequeña familia de mundos unidos alrededor de una fogata estelar tenue pero acogedora. Cuando se anunció su descubrimiento, la noticia se convirtió en trending topic mundial.",
-      "La estrella TRAPPIST-1 es una 'enana roja ultrafría', mucho más pequeña, fría y tenue que nuestro Sol. Para hacerte una idea de su tamaño, apenas es un 12% más grande que Júpiter y brilla con solo un 0.05% de la luminosidad solar. Por eso, sus siete planetas rocosos orbitan muy cerquita de ella para mantenerse calientes, todos ellos dentro de una distancia menor que la órbita de Mercurio alrededor de nuestro Sol. Completan una vuelta en apenas 1.5 a 19 días.",
-      "Tres de estos siete planetas (llamados TRAPPIST-1e, f y g) se encuentran en la 'zona habitable', también conocida como la 'zona Ricitos de Oro'. Esto significa que no están ni demasiado cerca ni demasiado lejos del calor estelar, justo en el punto perfecto donde el agua líquida podría existir en su superficie, formándose charcos, lagos u océanos. TRAPPIST-1e es especialmente interesante porque tiene una densidad similar a la de la Tierra, sugiriendo que podría tener una composición rocosa con hierro.",
-      "Al estar todos tan apretados en un espacio tan pequeño, desde la superficie de uno verías pasar a sus hermanos mayores asomándose enormes entre las nubes, incluso más grandes que nuestra Luna vista desde la Tierra. Los planetas están en resonancia orbital: por cada 8 órbitas del más interno, los demás completan exactamente 5, 3, 2, 3/2, 1 y 3/4 órbitas. El Telescopio Espacial James Webb está actualmente dedicando cientos de horas de observación para 'olfatear' sus atmósferas, buscando señales de agua, dióxido de carbono, metano o cualquier indicio de química biológica.",
-      "Sin embargo, la vida en TRAPPIST-1 enfrentaría desafíos únicos. Debido a la cercanía a su estrella, todos los planetas probablemente están en 'acoplamiento de marea', lo que significa que siempre muestran la misma cara a su sol, como nuestra Luna con la Tierra. Esto crearía un hemisferio de día eterno abrasador y otro de noche perpetua congelada. La zona más habitable sería el terminador, la delgada franja entre luz y oscuridad donde las temperaturas podrían ser moderadas. Los científicos especulan que los vientos ecuatoriales podrían redistribuir el calor, creando patrones climáticos completamente alienígenas que no se parecen a nada en nuestro sistema solar."
+      "El sistema TRAPPIST-1 fue descubierto en 2017 a 40 años-luz de distancia. Es una familia de mundos unidos alrededor de una estrella tenue. El anuncio de su hallazgo captó la atención mundial en astronomía.",
+      "La estrella TRAPPIST-1 es una enana roja ultrafría. Es solo un 12% más grande que Júpiter y su brillo es mínimo. Sus siete planetas rocosos orbitan muy cerca para mantenerse cálidos. Completan una órbita en periodos de 1.5 a 19 días.",
+      "Tres de estos planetas están en la zona habitable. En esta zona, el agua líquida podría existir en la superficie. TRAPPIST-1e es de especial interés porque tiene una densidad similar a la Tierra, sugiriendo una composición rocosa.",
+      "Al estar tan cerca, desde la superficie de un planeta podrías ver a los otros. Aparecerían en el cielo más grandes que nuestra Luna. Los planetas están en resonancia orbital matemática. El telescopio James Webb está analizando sus atmósferas.",
+      "Sin embargo, los planetas enfrentan desafíos. Probablemente están en acoplamiento de marea, mostrando siempre la misma cara a su sol. Esto crea un lado diurno abrasador y uno nocturno helado. La zona más habitable sería la franja entre luz y oscuridad."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'Star Wars tiene cientos de mundos habitables distribuidos por toda la galaxia, desde el desértico Jakku hasta el boscoso Endor. El hallazgo real de siete planetas del tamaño de la Tierra en un solo sistema solar fue extraordinario. Si TRAPPIST-1 estuviera en la galaxia de Star Wars, un salto hiperespacial conectaría sus siete mundos en minutos; en la realidad, la luz tarda apenas 30 minutos en ir del planeta más cercano al más lejano del sistema.' 
+        text: 'Star Wars tiene cientos de mundos habitables. El hallazgo de siete planetas del tamaño de la Tierra en un solo sistema fue histórico. En Star Wars, un salto hiperespacial los conectaría en minutos.' 
       },
       { 
         label: '¿Sabías que...?', 
         icon: 'clock', 
-        text: 'El sistema fue descubierto inicialmente usando un pequeño telescopio robótico de 60 cm llamado TRAPPIST (TRAnsiting Planets and PlanetesImals Small Telescope) en el Observatorio de La Silla, Chile. Las estrellas enanas rojas, aunque parecen tranquilas, pueden ser temperamentales y lanzar fuertes erupciones de rayos X y ultravioleta (llamadas "flares") que podrían arrancar las atmósferas de sus planetas cercanos. Este es el mayor peligro para la habitabilidad del sistema.' 
+        text: 'El sistema fue descubierto usando un telescopio en Chile. Las estrellas enanas rojas pueden lanzar fuertes erupciones que afectarían a los planetas cercanos. Este es el principal desafío para la habitabilidad del sistema.' 
       }
     ],
-    fact: 'TRAPPIST-1 tiene 7 planetas rocosos del tamaño de la Tierra, el mayor número descubierto en un solo sistema. Tres podrían tener agua líquida (e, f, g). Están a solo 40 años-luz de nosotros, lo suficientemente cerca para que el James Webb pueda analizar sus atmósferas. Sus órbitas están en perfecta resonancia matemática, un fenómeno que fascina a los astrofísicos.'
+    fact: 'TRAPPIST-1 tiene 7 planetas rocosos del tamaño de la Tierra. Tres podrían tener agua líquida. Están a 40 años-luz de nosotros. Sus órbitas están en perfecta resonancia matemática.'
   },
   {
     id: 'busqueda-vida',
@@ -286,27 +286,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_mundos/btn_vida.png',
     image: '/assets/starwars/infographic_mundos/hero_vida.png',
     bannerImage: '/assets/starwars/infographic_mundos/banner_vida.png',
-    bannerCaption: 'El James Webb detectó COâ‚‚ y metano en K2-18b â€” ¿señales de vida?',
+    bannerCaption: 'El James Webb detectó COâ‚‚ y metano en K2-18b.',
     content: [
-      "¿Cómo podemos saber si hay extraterrestres en un planeta a años-luz de distancia sin viajar hasta allá? La respuesta está en la atmósfera. Los telescopios más avanzados del mundo buscan 'biofirmas', que son combinaciones químicas que no deberían existir juntas a menos que algún ser vivo las esté produciendo activamente. Es el equivalente cósmico de buscar huellas en la arena: no necesitas ver al caminante para saber que alguien pasó por ahí.",
-      "Es como oler el aroma a sopa de pollo desde el pasillo de un edificio: sabes que alguien está cocinando aunque no veas la cocina ni al cocinero. En la Tierra, la vida produce oxígeno (mediante la fotosíntesis de plantas y algas) y metano (mediante bacterias en los pantanos y en los estómagos de las vacas) constantemente. Si no hubiera seres vivos reponiendo estos gases, el oxígeno y el metano reaccionarían entre sí en unos pocos miles de años y desaparecerían. Su coexistencia es la prueba de que algo vivo los está fabricando.",
-      "En septiembre de 2023, el Telescopio Espacial James Webb logró un hito histórico: detectó con éxito dióxido de carbono y metano en la atmósfera de un exoplaneta llamado K2-18b, situado a 124 años-luz de nosotros. Este mundo es un 'hicéano', una supertierra cubierta por un océano profundo con una gruesa atmósfera rica en hidrógeno. Se encuentra en la zona habitable de su estrella enana roja, lo que lo convierte en un candidato extraordinario para buscar química biológica.",
-      "¡Tú también puedes ser un descubridor de mundos! Plataformas de ciencia ciudadana como Zooniverse y Planet Hunters TESS permiten a personas de todo el mundo analizar datos reales de telescopios desde su computadora o teléfono móvil, y ya han contribuido al descubrimiento de exoplanetas reales. En el futuro cercano, gigantes como el ELT (Telescopio muy Grande) en Cerro Armazones, Chile, con su espejo segmentado de 39 metros de diámetro, podrían fotografiar directamente mundos alienígenas y analizar sus atmósferas molécula por molécula.",
-      "La carrera por encontrar vida más allá de la Tierra está acelerándose como nunca antes. Además del James Webb y el futuro ELT, nuevas misiones como HWO (Habitable Worlds Observatory) buscarán tomar las primeras fotografías directas de exoplanetas similares a la Tierra y analizar si sus atmósferas contienen las combinaciones químicas que delatan la presencia de biología. Algunos científicos calculan que, si la vida es común en el universo, podríamos tener evidencia firme antes de 2040. Si lo logramos, responderíamos a una pregunta que la humanidad se ha hecho desde que miró al cielo por primera vez: ¿estamos solos?"
+      "Para buscar vida en planetas lejanos, los astrónomos analizan sus atmósferas. Buscan 'biofirmas', que son combinaciones químicas producidas por seres vivos. Es como buscar huellas en la arena sin ver a quien las dejó.",
+      "En la Tierra, la vida produce oxígeno y metano de forma continua. Si no hubiera seres vivos, estos gases desaparecerían al reaccionar entre sí. Su coexistencia prolongada sugiere actividad biológica en un ecosistema.",
+      "En 2023, el telescopio James Webb detectó dióxido de carbono y metano en el exoplaneta K2-18b. Este mundo oceánico está a 124 años-luz y se encuentra en la zona habitable. Es un objetivo principal para buscar signos biológicos.",
+      "Las plataformas de ciencia ciudadana permiten analizar datos telescópicos. En el futuro, el Telescopio muy Grande en Chile fotografiará directamente estos mundos. Los astrónomos podrán examinar las atmósferas con mayor detalle.",
+      "La carrera para hallar vida se acelera. Se diseñan observatorios como el HWO para fotografiar exoplanetas terrestres. Si la vida es común en el universo, podríamos encontrar evidencia firme antes del año 2040. Esto respondería la antigua pregunta de si estamos solos."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'Star Wars está repleto de vida alienígena inteligente: Wookiees, Ewoks, Twi\'leks, Hutts, y cientos de especies más pueblan la galaxia. En la realidad, aún no hemos encontrado ninguna evidencia confirmada de vida fuera de la Tierra. Sin embargo, si comprobamos la existencia de biología en mundos como K2-18b, ¡sería el descubrimiento más importante en la historia de la humanidad, mucho más grande que el alunizaje del Apollo 11!' 
+        text: 'Star Wars muestra cientos de especies alienígenas. En la realidad, aún no hemos encontrado vida extraterrestre. Hallar biología en mundos como K2-18b sería un descubrimiento histórico para la humanidad.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'El oxígeno y el metano reaccionan químicamente entre sí para formar agua y dióxido de carbono. En condiciones normales, sin seres vivos que los repongan, ambos gases desaparecerían de una atmósfera en unos pocos miles de años. Detectarlos simultáneamente en un exoplaneta sería una de las pruebas más fuertes de actividad biológica. Carl Sagan demostró este principio en 1990 cuando la sonda Galileo detectó vida en la Tierra desde el espacio usando exactamente este método.' 
+        text: 'El oxígeno y metano reaccionan para formar agua y CO2. Detectar ambos gases simultáneamente en un exoplaneta sugiere actividad biológica. Carl Sagan demostró este método al observar la Tierra desde la sonda Galileo.' 
       }
     ],
-    fact: 'En septiembre de 2023, el James Webb detectó dióxido de carbono y metano en K2-18b, un exoplaneta oceánico a 124 años-luz en la zona habitable. El equipo de Nikku Madhusudhan (Cambridge) también encontró indicios tentativos de dimetil sulfuro (DMS), una molécula que en la Tierra solo producen organismos marinos. Si se confirma, sería la primera evidencia indirecta de biología extraterrestre.'
+    fact: 'En 2023, el James Webb detectó CO2 y metano en K2-18b, un exoplaneta a 124 años-luz. También hallaron indicios de dimetil sulfuro, producido en la Tierra por organismos marinos. Si se confirma, sería evidencia biológica.'
   }
 ];
 

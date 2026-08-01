@@ -78,27 +78,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_cruceros/btn_iss-naves.png',
     image: '/assets/starwars/infographic_cruceros/hero_iss-naves.png',
     bannerImage: '/assets/starwars/infographic_cruceros/banner_iss-naves.png',
-    bannerCaption: 'La inmensidad del espacio requiere naves gigantescas para su exploración.',
+    bannerCaption: 'El espacio requiere naves gigantescas para su exploración.',
     content: [
-      "¿Te imaginas construir una ciudad flotante en la inmensidad del espacio exterior? En el asombroso universo de Star Wars, los majestuosos Destructores Estelares Imperiales miden aproximadamente 1,600 metros de largo, lo que equivale a más de 16 campos de fútbol completos unidos. Para lograr semejante hazaña de ingeniería, el Imperio Galáctico utiliza enormes y complejos astilleros orbitales donde miles de trabajadores y androides ensamblan estas naves directamente en el vacío del espacio, evitando el inmenso costo de levantar todo ese peso desde la superficie planetaria.",
-      "En nuestro mundo real, la Estación Espacial Internacional (ISS) es la estructura artificial más grande, compleja y costosa que los seres humanos hemos logrado construir y mantener en órbita. Mide alrededor de 109 metros de punta a punta, lo que la hace apenas del tamaño de un solo campo de fútbol. Aunque parezca diminuta al compararla con un imponente Destructor Estelar, la ISS es un absoluto milagro tecnológico y un triunfo de la ingeniería humana que ha estado continuamente habitada por astronautas desde noviembre del año 2000.",
-      "Imagina que la ISS es como un gigantesco y costoso set de piezas de LEGO que flota a 408 kilómetros sobre nuestras cabezas. Para construir este laboratorio espacial que pesa aproximadamente 420,000 kilogramos, se requirió el enorme esfuerzo de 15 países diferentes y se necesitaron lanzar más de 40 misiones espaciales separadas. Cada módulo presurizado, panel solar y brazo robótico tuvo que ser lanzado individualmente al espacio usando los poderosos Transbordadores Espaciales y cohetes rusos, para luego ser ensamblados cuidadosamente por astronautas en largas y peligrosas caminatas espaciales.",
-      "Viajar en el espacio no es como manejar un automóvil en la carretera; la ISS se mueve a la asombrosa velocidad de 27,600 kilómetros por hora. A este ritmo vertiginoso, la estación completa una órbita alrededor de toda la Tierra cada 90 minutos. Esto significa que los valientes astronautas que viven allí arriba son testigos de 16 amaneceres y 16 atardeceres cada día de 24 horas. Construir una nave del tamaño de un Destructor Estelar requeriría que nuestra civilización humana diera un salto tecnológico masivo hacia la industrialización y construcción orbital a gran escala.",
-      "El asombroso éxito sostenido de la ISS nos demuestra empíricamente que la colaboración internacional masiva puede lograr lo que parecía ciencia ficción hace apenas unas décadas. En el brillante futuro de la exploración espacial, la humanidad inevitablemente utilizará las valiosas lecciones aprendidas en la construcción y mantenimiento de la Estación Espacial Internacional para diseñar, ensamblar y pilotar auténticas y colosales naves interplanetarias que algún día nos llevarán sanos y salvos a las distantes estrellas y planetas inexplorados de nuestra Vía Láctea."
+      "¿Te imaginas construir una ciudad en el espacio? En Star Wars, los Destructores Estelares miden 1,600 metros de largo. Esto equivale a 16 campos de fútbol. Para lograr esta hazaña, el Imperio utiliza astilleros orbitales. Allí, miles de trabajadores y androides ensamblan naves en el vacío, evitando el costo de levantar su peso desde la superficie.",
+      "En nuestro mundo, la Estación Espacial Internacional (ISS) es la estructura artificial más grande que los humanos han construido en órbita. Mide unos 109 metros de punta a punta, el tamaño de un campo de fútbol. Aunque parezca pequeña, la ISS es un triunfo de la ingeniería que ha estado habitada por astronautas desde el año 2000.",
+      "Imagina que la ISS es como un set de piezas de LEGO que flota a 408 kilómetros sobre nosotros. Para construir este laboratorio de 420,000 kilogramos, se requirió el esfuerzo de 15 países. Se necesitaron más de 40 misiones espaciales. Cada módulo y panel solar fue lanzado individualmente y ensamblado por astronautas en caminatas espaciales.",
+      "La ISS se mueve a una velocidad de 27,600 kilómetros por hora. A este ritmo, la estación completa una órbita alrededor de la Tierra cada 90 minutos. Esto significa que los astronautas ven 16 amaneceres y 16 atardeceres al día. Construir una nave mayor requeriría un salto tecnológico hacia la construcción orbital a gran escala.",
+      "El éxito de la ISS demuestra que la colaboración internacional puede lograr lo que parecía ciencia ficción. En el futuro de la exploración espacial, la humanidad utilizará las lecciones aprendidas de la ISS. Así podremos diseñar, ensamblar y pilotar naves interplanetarias que algún día nos llevarán a las estrellas de nuestra Vía Láctea."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el Episodio IV: Una Nueva Esperanza, vemos por primera vez un colosal Destructor Estelar Imperial persiguiendo a la diminuta nave rebelde Tantive IV. Esta famosa toma inicial fue diseñada específicamente para mostrar el abrumador poder y el tamaño titánico del Imperio Galáctico, estableciendo visualmente que sus recursos industriales y capacidades de construcción en astilleros orbitales como los de Kuat superan por mucho a cualquier otra facción, permitiéndoles fabricar gigantescas flotas de guerra para controlar toda la galaxia.' 
+        text: 'En el Episodio IV, vemos un Destructor Estelar persiguiendo a la nave Tantive IV. Esta toma inicial fue diseñada para mostrar el poder del Imperio. Sus recursos industriales en astilleros orbitales como los de Kuat superan a cualquier otra facción, permitiendo fabricar flotas de guerra.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'La Estación Espacial Internacional (ISS) no está libre de la fuerza de gravedad; en realidad, se encuentra en un constante estado de caída libre perpetua alrededor del planeta Tierra. Debido a que se mueve hacia adelante a una increíble velocidad de 7.6 kilómetros por segundo, la curvatura de la Tierra cae por debajo de ella al mismo ritmo que la estación cae hacia el suelo, lo que crea el famoso efecto de ingravidez o microgravedad que experimentan diariamente los astronautas a bordo.' 
+        text: 'La ISS no está libre de la fuerza de gravedad. Se encuentra en un estado de caída libre perpetua alrededor de la Tierra. Como se mueve a 7.6 kilómetros por segundo, la curvatura de la Tierra cae bajo ella al mismo ritmo. Esto crea el efecto de microgravedad.' 
       }
     ],
-    fact: 'La Estación Espacial Internacional es el objeto artificial más caro jamás construido por el ser humano, con un costo total estimado en más de 150 mil millones de dólares. Flota a más de 400 kilómetros de altura y es visible desde la Tierra a simple vista como una estrella brillante que se mueve rápidamente cruzando el cielo nocturno.'
+    fact: 'La ISS es el objeto artificial más caro construido, con un costo de 150 mil millones de dólares. Flota a más de 400 kilómetros de altura y es visible desde la Tierra como una estrella brillante.'
   },
   {
     id: 'materiales',
@@ -107,27 +107,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_cruceros/btn_materiales.png',
     image: '/assets/starwars/infographic_cruceros/hero_materiales.png',
     bannerImage: '/assets/starwars/infographic_cruceros/banner_materiales.png',
-    bannerCaption: 'Nuevas aleaciones y aerogeles permitirán estructuras imposibles hoy.',
+    bannerCaption: 'Nuevas aleaciones permitirán estructuras imposibles hoy.',
     content: [
-      "Construir naves espaciales masivas requiere materiales extraordinarios que desafíen los límites de la física y la química conocidas. Si intentáramos construir un Destructor Estelar gigante usando el acero tradicional que utilizamos para los barcos en la Tierra, sería tan pesado e ineficiente que requeriría una cantidad absurda e imposible de combustible solo para moverlo un poco. Es por esto que los verdaderos ingenieros aeroespaciales buscan incesantemente crear o descubrir supermateriales que sean muy ligeros pero más resistentes que el diamante.",
-      "Uno de los campeones modernos de la ingeniería espacial es la fibra de carbono. Imagina un material que está tejido meticulosamente como si fuera tela o ropa de altísima calidad, pero que resulta ser cinco veces más fuerte que el acero endurecido y pesa una pequeña fracción del mismo. La fibra de carbono se fabrica entrelazando millones de hilos microscópicos de carbono puros y luego endureciéndolos con resinas especiales, lo que la hace perfecta para construir los fuselajes de naves de última generación y los gigantescos tanques de combustible de los cohetes modernos.",
-      "Para proteger a las naves del infierno ardiente que experimentan al reingresar a la atmósfera terrestre y de las temperaturas extremas del vacío espacial, la NASA utiliza las asombrosas aleaciones de titanio. El titanio es un metal fascinante que no se corroe con el tiempo y mantiene su increíble fuerza estructural incluso cuando está sometido a temperaturas donde otros metales comunes simplemente se derretirían como si fueran mantequilla caliente o se quebrarían como frágiles cristales helados en el profundo frío del espacio profundo.",
-      "Aún más sorprendentes son los modernos aerogeles, una clase asombrosa de materiales ultraligeros que los científicos suelen apodar con el poético nombre de 'humo congelado'. Un aerogel está compuesto por más de un 99% de aire puro atrapado en una red tridimensional microscópica de sílice. A pesar de ser tan ligero que casi flota y apenas se siente al tocarlo, es uno de los mejores aislantes térmicos jamás inventados en la historia de la humanidad, capaz de proteger fácilmente una delicada flor del intenso fuego directo de un soplete.",
-      "En las futuras décadas, el desarrollo de nanomateriales revolucionarios como el grafeno o los prometedores nanotubos de carbono, nos permitirá manufacturar y ensamblar componentes para naves espaciales colosales. Estos materiales hiperavanzados no solo reducirán dramáticamente el inmenso costo de los lanzamientos al espacio al ser mucho más ligeros, sino que poseerán la resistencia crítica necesaria para soportar los rigurosos impactos de micrometeoritos a altas velocidades y las tremendas fuerzas estructurales de un viaje interplanetario veloz y seguro."
+      "Construir naves espaciales requiere materiales que desafíen los límites de la física. Si usáramos el acero tradicional, sería tan pesado que requeriría una cantidad imposible de combustible para moverse. Por esto, los ingenieros aeroespaciales buscan crear supermateriales ligeros pero más resistentes que el diamante.",
+      "Uno de los campeones de la ingeniería espacial es la fibra de carbono. Este material resulta ser cinco veces más fuerte que el acero endurecido y mucho más ligero. Se fabrica entrelazando hilos de carbono y endureciéndolos con resinas. Es ideal para construir los fuselajes de naves modernas.",
+      "Para proteger a las naves del calor extremo al reingresar a la atmósfera, la NASA utiliza aleaciones de titanio. El titanio es un metal que no se corroe. Mantiene su fuerza estructural incluso a temperaturas donde otros metales se derretirían o se quebrarían por el frío del espacio.",
+      "Aún más sorprendentes son los aerogeles, materiales ultraligeros que los científicos llaman 'humo congelado'. Un aerogel está compuesto por un 99% de aire atrapado en una red de sílice. A pesar de ser muy ligero, es uno de los mejores aislantes térmicos jamás inventados. Puede proteger una flor del fuego de un soplete.",
+      "En las futuras décadas, el desarrollo de nanomateriales como el grafeno permitirá ensamblar componentes para naves colosales. Estos materiales reducirán el costo de los lanzamientos al ser más ligeros. Además, poseerán la resistencia necesaria para soportar impactos de micrometeoritos a altas velocidades."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el rico universo de Star Wars, los cascos y el fuerte blindaje de las naves espaciales, como las cazas estelares X-Wing y los imponentes Destructores, están forjados frecuentemente con aleaciones de supermateriales de ciencia ficción como el famoso \'Duracero\' o el impenetrable \'Mandaloriano\'(Beskar). Estos materiales ficticios combinan milagrosamente una extrema ligereza con la capacidad de absorber de manera impecable el impacto térmico directo de los potentes y letales disparos de armas bláster y turboláseres pesados.' 
+        text: 'En el universo de Star Wars, los cascos y el blindaje de las naves están forjados con aleaciones ficticias. Algunos ejemplos son el Duracero o el Beskar mandaloriano. Estos materiales combinan ligereza con la capacidad de absorber el impacto de los disparos bláster.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'El aerogel de sílice ostenta oficialmente el Récord Guinness Mundial como el material sólido más ligero jamás creado en la Tierra. A pesar de que su densidad visual se asemeja bastante a un fantasma o a una nube congelada, un bloque de aerogel del tamaño de un ser humano pesa menos de medio kilogramo, pero es tan resistente que puede soportar estoicamente hasta 4,000 veces su propio peso antes de colapsar bajo la presión mecánicamente aplicada.' 
+        text: 'El aerogel de sílice ostenta el Récord Guinness como el material sólido más ligero de la Tierra. Un bloque de aerogel del tamaño de un humano pesa menos de medio kilogramo. Sin embargo, puede soportar hasta 4,000 veces su propio peso antes de colapsar.' 
       }
     ],
-    fact: 'El grafeno, descubierto empíricamente en 2004, está formado por una sola capa atómica de carbono. Es 200 veces más fuerte que el acero estructural, altamente flexible y el mejor conductor eléctrico a temperatura ambiente, perfilándose como el material clave para los cascos de las naves espaciales interplanetarias.'
+    fact: 'El grafeno, descubierto en 2004, está formado por una sola capa atómica de carbono. Es 200 veces más fuerte que el acero, altamente flexible y un buen conductor eléctrico.'
   },
   {
     id: 'propulsion',
@@ -136,27 +136,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_cruceros/btn_propulsion.png',
     image: '/assets/starwars/infographic_cruceros/hero_propulsion.png',
     bannerImage: '/assets/starwars/infographic_cruceros/banner_propulsion.png',
-    bannerCaption: 'La velocidad de la luz aún está lejos, pero los motores iónicos ya son una realidad científica.',
+    bannerCaption: 'Los motores iónicos ya son una realidad científica.',
     content: [
-      "Para mover cualquier nave espacial, sin importar su tamaño, necesitas un avanzado y potente sistema de propulsión. Imagina que viajas patinando sobre hielo y llevas en tus brazos una pesada bola de boliche; si lanzas repentinamente la bola con fuerza hacia adelante, tu cuerpo se deslizará forzosamente hacia atrás debido a la física clásica. Así es exactamente como funciona el principio de acción y reacción en el espacio absoluto. Las naves tienen que arrojar masivamente gases u otras partículas a altísimas velocidades para poder avanzar hacia su lejano destino final.",
-      "La inmensa mayoría de los cohetes que usamos actualmente en la Tierra, como los poderosos cohetes Falcon 9 de la empresa SpaceX, utilizan motores de propulsión química. Estos potentes motores funcionan mezclando violentamente y quemando enormes cantidades de un combustible (como el hidrógeno líquido o el queroseno) con un potente oxidante (como el oxígeno puro) en una cámara de combustión. Esto crea una masiva explosión controlada dirigida hacia atrás. Son fabulosos y muy necesarios para escapar de la aplastante gravedad terrestre, pero consumen demasiado combustible muy rápidamente.",
-      "Para los larguísimos y lentos viajes interplanetarios de meses o años, los ingenieros de la NASA y otras agencias han desarrollado con éxito los llamados Motores Iónicos. En lugar de utilizar grandes llamaradas y violentas explosiones químicas, un motor iónico utiliza energía solar o generadores eléctricos para cargar eléctricamente y acelerar átomos pesados de un gas noble, usualmente Xenón. Estos átomos ionizados salen disparados del motor a velocidades increíbles, creando un empuje físico tenue pero muy constante y eficiente en el tiempo.",
-      "Si quisiéramos empujar naves del inmenso tamaño de una verdadera ciudad o de un Destructor Estelar a grandes fracciones de la velocidad de la luz, tal vez usaríamos las poéticas y hermosas Velas Solares o incluso la propulsión nuclear. Una vela solar no usa ningún combustible interno, sino que despliega espejos ultradelgados gigantescos para capturar literalmente la sutil presión física y el empuje de las partículas de luz (fotones) provenientes de una estrella cercana o de láseres gigantes apuntados desde la Tierra, empujando la nave sin fin.",
-      "El asombroso proyecto DRACO, que actualmente están desarrollando en colaboración la agencia NASA y DARPA, tiene como principal objetivo científico crear y probar un potente cohete de propulsión térmica nuclear operativa para finales de esta misma década. Este avanzado cohete utilizará un pequeño reactor de fisión nuclear para calentar eficientemente el hidrógeno líquido a temperaturas extremas, expandiéndolo y disparándolo a enorme velocidad. Este salto tecnológico crítico podría llevar exitosamente a los humanos al distante planeta Marte en apenas 45 días en lugar de esperar los 7 largos meses actuales."
+      "Para mover cualquier nave espacial, necesitas un sistema de propulsión. Imagina que viajas patinando sobre hielo y lanzas una bola de boliche hacia adelante. Tu cuerpo se deslizará hacia atrás debido a la física clásica. Las naves arrojan gases a altas velocidades para avanzar por el principio de acción y reacción.",
+      "La mayoría de los cohetes actuales, como los cohetes Falcon 9 de SpaceX, utilizan propulsión química. Estos motores mezclan un combustible con un oxidante en una cámara de combustión. Esto crea una explosión controlada dirigida hacia atrás. Son necesarios para escapar de la gravedad terrestre, pero consumen combustible rápidamente.",
+      "Para viajes interplanetarios de meses o años, los ingenieros han desarrollado los motores iónicos. En lugar de explosiones químicas, un motor iónico utiliza energía eléctrica para acelerar átomos de un gas noble como el Xenón. Estos átomos salen disparados, creando un empuje constante en el tiempo.",
+      "Si quisiéramos empujar naves del tamaño de un Destructor Estelar, usaríamos velas solares o propulsión nuclear. Una vela solar despliega espejos gigantescos para capturar la presión de los fotones provenientes de una estrella. Esto empujaría la nave sin usar combustible interno.",
+      "El proyecto DRACO de la NASA y DARPA busca crear un cohete de propulsión térmica nuclear. Este cohete usará un reactor de fisión nuclear para calentar hidrógeno líquido y dispararlo a gran velocidad. Este salto tecnológico podría llevar a los humanos a Marte en solo 45 días."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el universo cinematográfico de Star Wars, las pequeñas cazas estelares TIE Fighter utilizadas por el Imperio (las icónicas naves que tienen gigantescos paneles solares hexagonales a los lados) reciben exactamente su célebre nombre del acrónimo técnico en inglés "Twin Ion Engine" (Motor Iónico Gemelo), demostrando explícitamente cómo la verdadera física y propulsión científica inspiró el diseño original de estas naves icónicas de George Lucas.' 
+        text: 'Las cazas TIE del Imperio reciben su nombre del acrónimo en inglés "Twin Ion Engine". Esto demuestra cómo la física y propulsión científica real inspiró el diseño original de estas naves icónicas en Star Wars.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'La exitosa sonda espacial de la NASA llamada Dawn, impulsada exclusivamente por la revolucionaria propulsión iónica, logró el increíble hito histórico de ser la primera y única nave espacial robótica en orbitar dos cuerpos celestes distintos y distantes más allá del sistema Tierra-Luna: primero el gran asteroide Vesta, y posteriormente el planeta enano Ceres en el frío cinturón de asteroides principal.' 
+        text: 'La sonda espacial Dawn, impulsada por propulsión iónica, logró ser la primera nave en orbitar dos cuerpos celestes distintos. Primero visitó el asteroide Vesta y luego el planeta enano Ceres, ubicados en el cinturón de asteroides.' 
       }
     ],
-    fact: 'El empuje físico producido por los motores iónicos actuales es tan débil como el peso de un papel en tu mano (unos pocos milinewtons). Sin embargo, al operar continuamente durante meses en el vacío absoluto sin fricción, pueden acelerar naves a más de 320,000 kilómetros por hora, batiendo todos los récords.'
+    fact: 'El empuje producido por los motores iónicos actuales es tan débil como el peso de un papel. Sin embargo, al operar continuamente en el vacío, pueden acelerar naves a más de 320,000 kilómetros por hora.'
   },
   {
     id: 'megaestructuras',
@@ -165,27 +165,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_cruceros/btn_megaestructuras.png',
     image: '/assets/starwars/infographic_cruceros/hero_megaestructuras.png',
     bannerImage: '/assets/starwars/infographic_cruceros/banner_megaestructuras.png',
-    bannerCaption: 'Cilindros de O\'Neill y Esferas de Dyson: los sueños monumentales de los arquitectos del espacio.',
+    bannerCaption: 'Cilindros de O\'Neill y Esferas de Dyson: sueños de arquitectos del espacio.',
     content: [
-      "Más allá de las naves espaciales tradicionales, los científicos, ingenieros y físicos teóricos han soñado despiertos durante muchas décadas con la construcción de las llamadas Megaestructuras Espaciales. Estas son construcciones artificiales de un tamaño tan inmenso e incomprensible que podrían albergar a millones, o incluso a miles de millones, de seres humanos viviendo en confortables ciudades espaciales enteras, con montañas artificiales, lagos de agua dulce, sistemas climáticos propios controlados y ecosistemas completos funcionando en el oscuro y frío vacío sideral.",
-      "En el año 1974, el brillante físico de la Universidad de Princeton, Gerard O'Neill, propuso matemáticamente la construcción factible de los famosos'Cilindros de O'Neill'. Estos serían hábitats espaciales gigantescos formados por inmensos cilindros interconectados que medirían aproximadamente 8 kilómetros de ancho y más de 30 kilómetros de largo. Al hacer girar mecánicamente y de forma continua estos inmensos cilindros sobre su propio eje longitudinal, la constante fuerza centrífuga generada crearía instantáneamente la mágica ilusión física de una gravedad terrestre perfecta en las paredes internas curvadas.",
-      "Una idea incluso mucho más ambiciosa y alucinante que los cilindros espaciales es la legendaria 'Esfera de Dyson', imaginada detalladamente por el prestigioso físico cuántico Freeman Dyson en la década de 1960. Imagina una megaestructura esférica de tamaño planetario que rodea y envuelve completamente, o en gran parte, a una estrella anfitriona como nuestro Sol, con el asombroso y único objetivo de capturar eficientemente cada pequeño rayo de luz, calor y energía electromagnética que esta emita hacia el vasto universo que la rodea constantemente.",
-      "Si una civilización espacial muy avanzada lograra realmente construir una Esfera de Dyson completa alrededor del Sol, capturaría la asombrosa y gigantesca cantidad de casi 400 trillones de vatios de energía continua y limpia. Esto sería, literalmente, suficiente energía térmica y eléctrica disponible para alimentar cómodamente a una mega-civilización interestelar miles de millones de veces más grande y avanzada tecnológicamente que la nuestra. Ante este nivel casi divino de poder, incluso una colosal y letal Estrella de la Muerte parecería un simple juguete.",
-      "Aunque por el momento construir cualquiera de estas inmensas megaestructuras excede ampliamente nuestras actuales capacidades industriales, económicas y tecnológicas modernas, estudiar con profundo detalle estos conceptos futuristas empuja agresivamente los límites de nuestra creatividad técnica e ingenieril y nos prepara mentalmente. El propio visionario espacial moderno, Jeff Bezos, ha citado a menudo los cilindros de O'Neill como una inspiración directa y fundamental para el futuro a largo plazo de los asentamientos y colonias de la humanidad trabajando armónicamente en el sistema solar."
+      "Más allá de las naves tradicionales, los científicos han imaginado construir megaestructuras espaciales. Son construcciones de tamaño inmenso que podrían albergar a millones de personas. Contarían con ciudades espaciales, montañas artificiales y ecosistemas completos en el vacío sideral.",
+      "En 1974, el físico Gerard O'Neill propuso los 'Cilindros de O'Neill'. Estos serían hábitats formados por cilindros que medirían 8 kilómetros de ancho y 30 kilómetros de largo. Al hacer girar estos cilindros, la fuerza centrífuga crearía la ilusión de una gravedad terrestre en sus paredes internas.",
+      "Una idea más ambiciosa es la 'Esfera de Dyson', propuesta por el físico Freeman Dyson en la década de 1960. Se trata de una estructura esférica de tamaño planetario que rodea a una estrella. Su objetivo es capturar cada rayo de luz y energía que la estrella emita.",
+      "Si una civilización lograra construir una Esfera de Dyson alrededor del Sol, capturaría 400 trillones de vatios de energía. Esto sería suficiente para alimentar a una civilización interestelar. Ante este nivel de poder, incluso una Estrella de la Muerte parecería pequeña.",
+      "Aunque construir estas megaestructuras excede nuestras capacidades actuales, estudiar estos conceptos empuja los límites de la ingeniería. Visionarios modernos como Jeff Bezos han citado los cilindros de O'Neill como una inspiración para el futuro de las colonias humanas en el sistema solar."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el canon oficial de Star Wars, la inmensa, amenazante y aterradora Base Starkiller (vista en el Episodio VII: El Despertar de la Fuerza) es, en términos científicos y de ingeniería, una perversa y letal variación extrema de una megaestructura del tipo Esfera de Dyson. Absorbe de manera monstruosa y casi instantánea toda la energía vital y el plasma ardiente de una estrella local cercana para alimentar y potenciar de manera apocalíptica su superarma destructora de sistemas planetarios enteros.' 
+        text: 'En el canon de Star Wars, la Base Starkiller es una variación de una Esfera de Dyson. Absorbe de manera casi instantánea toda la energía de una estrella local para alimentar su superarma destructora de planetas.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'En el año científico 2015, los atónitos astrónomos detectaron fuertes, erráticas e inexplicables fluctuaciones y caídas masivas en el brillo luminoso de la lejana Estrella de Tabby (KIC 8462852). Durante meses, la comunidad astronómica debatió seriamente la exótica y emocionante posibilidad teórica de que una gigantesca megaestructura alienígena en plena construcción estuviera bloqueando la luz estelar. Estudios detallados posteriores apuntaron a densas nubes de polvo interestelar oscuro.' 
+        text: 'En 2015, los astrónomos detectaron fluctuaciones en el brillo de la Estrella de Tabby. Se debatió la posibilidad de que una megaestructura alienígena estuviera bloqueando la luz estelar. Estudios posteriores indicaron que eran nubes de polvo interestelar.' 
       }
     ],
-    fact: 'El principal obstáculo físico para construir una esfera de Dyson no es obtener la energía necesaria, sino encontrar y extraer la cantidad absurda de materia bruta y minerales de construcción que se requerirían, lo que obligaría a desmantelar planetas gaseosos o rocosos enteros como Júpiter y Mercurio.'
+    fact: 'El principal obstáculo para construir una Esfera de Dyson no es obtener la energía, sino encontrar la materia bruta necesaria. Esto obligaría a desmantelar planetas enteros como Júpiter y Mercurio.'
   },
   {
     id: 'mineria',
@@ -194,27 +194,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_cruceros/btn_mineria.png',
     image: '/assets/starwars/infographic_cruceros/hero_mineria.png',
     bannerImage: '/assets/starwars/infographic_cruceros/banner_mineria.png',
-    bannerCaption: 'Extraer recursos en el espacio evitará la enorme carga de lanzar materiales desde la Tierra.',
+    bannerCaption: 'Extraer recursos en el espacio evitará la carga de lanzar materiales desde la Tierra.',
     content: [
-      "Construir flotas de cruceros estelares gigantescos o inmensas colonias orbitales enfrentaría rápidamente un gravísimo problema logístico y financiero: escapar de la profunda y fuerte pozo gravitatorio de la Tierra. Hoy en día, lanzar incluso un solo kilogramo de metal pesado al espacio exterior cuesta miles de dólares en costoso combustible químico especializado y complejas operaciones de ingeniería. Imagina cuánto dinero y energía se requeriría para levantar las millones de toneladas necesarias para un colosal Destructor Estelar. Sería, en términos prácticos, algo económicamente inviable para nosotros.",
-      "La ingeniosa y audaz solución que los ingenieros visionarios tienen en mente para superar este pesado obstáculo terrestre se llama: Minería de Asteroides. En lugar de extraer los metales de las profundidades de nuestras montañas y enviarlos fatigosamente hacia arriba, la humanidad irá a buscar las inmensas riquezas minerales que están esperando intactas allá arriba, flotando pacíficamente y sin dueño, en forma de grandes asteroides y cometas primordiales ricos en elementos útiles orbitando silenciosamente entre los fríos mundos rocosos.",
-      "Para poner esto en perspectiva científica, imagina al extraordinario asteroide metálico llamado Psyche 16, una inmensa y oscura roca espacial metálica de casi 200 kilómetros de diámetro orbitando mas allá de Marte. La NASA lanzó una costosa sonda de exploración en 2023 exclusivamente para estudiarlo detalladamente porque, según estimaciones conservadoras, contiene suficientes cantidades de hierro puro, níquel y oro valioso como para ser valorado en la inimaginable e irreal cifra de aproximadamente 10,000 cuatrillones de dólares terrestres.",
-      "Además de proveernos de metales pesados útiles para la masiva y pesada construcción de infraestructuras orbitales duraderas, la minería espacial resolvería brillantemente el mayor problema crítico del viaje profundo e interplanetario: el preciado combustible líquido de propulsión. Muchos asteroides oscuros, de tipo C (carbonáceos), contienen abundante agua (H2O) congelada en su interior. Usando energía de paneles solares, esa agua pura puede ser separada químicamente en sus componentes básicos, creando el combustible para los cohetes espaciales.",
-      "En un futuro a largo plazo, las gigantescas naves espaciales industriales que funcionarán como avanzadas refinerías automatizadas voladoras, se acoplarán suavemente a oscuros asteroides a millones de kilómetros de la Tierra. Extraerán sus minerales preciosos usando enjambres robóticos e impresoras 3D masivas sin afectar en absoluto el delicado medioambiente terrestre, sentando así las robustas bases industriales inagotables para una expansión pacífica, sustentable y gran de la audaz civilización humana hacia el lejano sistema solar profundo y más allá."
+      "Construir cruceros estelares o colonias orbitales enfrentaría un grave problema logístico: escapar de la gravedad terrestre. Lanzar un kilogramo de metal al espacio cuesta miles de dólares en combustible. Levantar las toneladas necesarias para un Destructor Estelar sería económicamente inviable.",
+      "La solución audaz que los ingenieros tienen en mente es la minería de asteroides. En lugar de extraer metales en la Tierra y enviarlos hacia arriba, buscaremos riquezas minerales en el espacio. Hay asteroides ricos en elementos útiles orbitando entre los mundos rocosos.",
+      "Para poner esto en perspectiva, el asteroide metálico Psyche 16 tiene casi 200 kilómetros de diámetro. La NASA lanzó una sonda en 2023 para estudiarlo. Contiene grandes cantidades de hierro, níquel y oro, con un valor estimado de 10,000 cuatrillones de dólares.",
+      "Además de proveer metales, la minería espacial resolvería el problema del combustible. Muchos asteroides carbonáceos contienen agua congelada en su interior. Usando paneles solares, esa agua puede ser separada químicamente en oxígeno e hidrógeno, creando combustible para cohetes.",
+      "En el futuro, naves industriales automatizadas se acoplarán a asteroides lejanos. Extraerán sus minerales usando impresoras 3D y robots, sin afectar el medioambiente terrestre. Esto sentará las bases industriales para la expansión de la civilización humana hacia el sistema solar."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el emocionante e intenso Episodio V: El Imperio Contraataca, el piloto Han Solo navega con maestría casi suicida la famosa y destartalada nave Halcón Milenario directamente hacia un letal y turbulento campo de grandes asteroides caóticos para evadir eficazmente a sus enfurecidos perseguidores del Imperio. En nuestro verdadero sistema solar pacífico, los densos asteroides están, afortunadamente para las naves espaciales y los pilotos, separados generalmente por distancias inmensas de cientos de miles de kilómetros vacíos entre sí.' 
+        text: 'En el Episodio V, Han Solo navega el Halcón Milenario hacia un campo de asteroides caótico para evadir al Imperio. En nuestro sistema solar real, los asteroides están separados por distancias de cientos de miles de kilómetros.' 
       },
       { 
         label: '¿Sabías que...?', 
         icon: 'clock', 
-        text: 'Varios asteroides clasificados como Cercanos a la Tierra (NEAs por sus siglas en inglés astronómico) han sido minados en la historia real pero de forma microscópica. Las exitosas e increíbles misiones robóticas internacionales conocidas como Hayabusa2 de la agencia japonesa JAXA y OSIRIS-REx de la NASA estadounidense lograron aterrizar efímeramente y recuperar con éxito gramos de preciosas rocas prístinas y rico polvo primordial espacial de asteroides lejanos, y las trajeron a la Tierra ilesas para estudio científico minucioso.' 
+        text: 'Varios asteroides han sido minados a nivel microscópico. Misiones como Hayabusa2 de JAXA y OSIRIS-REx de la NASA lograron aterrizar y recuperar polvo espacial de asteroides lejanos. Las muestras fueron traídas a la Tierra para su estudio.' 
       }
     ],
-    fact: 'El Tratado del Espacio Exterior firmado por Naciones Unidas establece que ningún país puede reclamar la propiedad soberana de los cuerpos celestes. Sin embargo, naciones como Estados Unidos y Luxemburgo ya aprobaron polémicas leyes que legalmente permiten a empresas privadas ser dueñas, explotar y vender los recursos de los asteroides.'
+    fact: 'El Tratado del Espacio Exterior establece que ningún país puede reclamar la propiedad de los cuerpos celestes. Sin embargo, naciones como Estados Unidos han aprobado leyes que permiten a empresas privadas vender los recursos de los asteroides.'
   },
   {
     id: 'soporte-vital',
@@ -223,27 +223,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_cruceros/btn_soporte-vital.png',
     image: '/assets/starwars/infographic_cruceros/hero_soporte-vital.png',
     bannerImage: '/assets/starwars/infographic_cruceros/banner_soporte-vital.png',
-    bannerCaption: 'En el vacío del cosmos, el agua limpia y el oxígeno fresco son los tesoros más valiosos.',
+    bannerCaption: 'En el vacío, el agua y el oxígeno son tesoros valiosos.',
     content: [
-      "En las emocionantes películas y series de ciencia ficción solemos centrarnos totalmente en los poderosos motores brillantes y en los ruidosos disparos de láser verde oscuro, pero el sistema técnico más importante a bordo de absolutamente cualquier nave espacial tripulada por humanos no son sus temibles cañones, sino el sofisticado Sistema de Soporte Vital (ECLSS, por sus siglas en inglés). Sin este complejo equipo electromecánico crítico, los delicados astronautas a bordo no podrían sobrevivir ni siquiera unos pocos minutos en el letal e implacable vacío del despiadado espacio exterior.",
-      "El agua pura y limpia es extraordinariamente pesada y terriblemente costosa de transportar desde la Tierra en enormes cohetes, por lo que las verdaderas naves espaciales, como la moderna ISS, utilizan asombrosos sistemas de reciclaje extremo. En la actual Estación Espacial Internacional, el vital y valioso líquido se recicla casi a un increíble nivel del 93%. ¡Sí, leíste bien! Incluso el sudor recolectado y hasta la orina de los astronautas se filtra minuciosamente, se purifica químicamente a niveles extremos y se vuelve a convertir rápidamente en agua cristalina, limpia y potable.",
-      "¿Y cómo hacen exactamente para respirar los tripulantes sin asfixiarse allí arriba tan lejos de nuestro hogar azul? El complejo y costoso sistema de la ISS genera continuamente abundante oxígeno fresco y limpio que inunda los pasillos utilizando una reacción química controlada de laboratorio conocida como 'electrólisis'. Esta increíble tecnología utiliza potente y constante electricidad generada por los extensos y masivos paneles solares para romper violentamente las moléculas de agua purificada (H2O) en sus dos valiosos gases componentes originales y básicos: el oxígeno puro para la vital respiración y el volátil hidrógeno.",
-      "El otro gran problema ambiental interno e invisible en los lugares sellados como los módulos espaciales y submarinos es que, cada vez que exhalamos fuertemente el aire, producimos rápidamente el letal gas de dióxido de carbono (CO2). Si este insidioso y peligroso gas se acumulara sin interrupción, intoxicaría y mataría a toda la pobre tripulación de forma asfixiante. Para evitar activamente esta tragedia invisible, las naves emplean avanzadas 'máquinas fregadoras' o densos filtros químicos que capturan rápidamente y eliminan eficientemente todo ese CO2 mortífero del aire circulante.",
-      "Para una inmensa e intimidante nave interplanetaria militar del colosal tamaño de un Destructor Estelar, que alberga rutinariamente a más de 37,000 personas como su tripulación y tropas terrestres, necesitarías asombrosos sistemas de soporte vital gigantes que ocupen y consuman el volumen de ruidosas fábricas terrestres enteras y complejas plantas de tratamiento urbano, funcionando silenciosamente las incansables 24 horas continuas de todos los largos días en el lejano cosmos profundo, sin presentar ni una falla simple."
+      "En la ciencia ficción solemos centrarnos en los motores y disparos láser. Sin embargo, el sistema más importante en cualquier nave tripulada es el Sistema de Soporte Vital (ECLSS). Sin este equipo, los astronautas no podrían sobrevivir en el vacío del espacio.",
+      "El agua limpia es pesada y costosa de transportar desde la Tierra en cohetes. Por eso, naves como la ISS utilizan sistemas de reciclaje extremo. Allí, el líquido se recicla casi a un 93%. El sudor y la orina se purifican para convertirse en agua potable.",
+      "Para que los tripulantes respiren, el sistema de la ISS genera oxígeno fresco usando una reacción conocida como electrólisis. Esta tecnología utiliza electricidad de los paneles solares para romper las moléculas de agua en sus gases componentes: oxígeno e hidrógeno.",
+      "Otro problema ambiental en lugares sellados es la acumulación de dióxido de carbono (CO2) cuando exhalamos. Si este gas se acumulara, asfixiaría a la tripulación. Para evitarlo, las naves emplean máquinas fregadoras y filtros químicos que eliminan el CO2 del aire.",
+      "Para una nave del tamaño de un Destructor Estelar, que alberga a más de 37,000 personas, se necesitarían sistemas de soporte vital gigantes. Ocuparían el volumen de plantas de tratamiento terrestre, funcionando de manera continua en el cosmos sin presentar fallas."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el icónico y trágico principio original del famoso Episodio IV: Una Nueva Esperanza, el humilde joven granjero de humedad de arena y polvo estelar rubio, Luke Skywalker, reside monótonamente en una calurosa y rústica finca granja especializada en el inhóspito, calcinado y desértico planeta arenoso binario llamado Tatooine. Trabajan árduamente todo el largo día bajo los ardientes soles dobles para extraer escasa humedad del caluroso aire ambiental árido y rudo utilizando altos y anticuados vaporadores tecnológicos; esto es puramente tecnología realista parecida a recicladores.' 
+        text: 'En el Episodio IV, Luke Skywalker vive en Tatooine, un planeta desértico. En su granja extraen humedad del aire utilizando altos vaporadores. Esta es una tecnología realista parecida a los recicladores de las naves espaciales.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'Para resolver a largo plazo y de forma autosustentable el masivo problema de la constante purificación del pesado y enrarecido aire sucio viciado, la avanzada y optimista agencia europea ESA y la NASA de Estados Unidos están activamente probando con gran éxito cultivar cuidadosamente minúsculas, microscópicas e increíbles microalgas fotosintéticas eficientes y plantas verdes a bordo, para que ellas milagrosamente absorban el letal gas venenoso e inyecten abundante, nutritivo y rico oxígeno puro mediante biología natural.' 
+        text: 'Para resolver la purificación del aire a largo plazo, agencias como la ESA y la NASA están probando cultivar microalgas y plantas a bordo. Estas absorben el dióxido de carbono e inyectan oxígeno mediante la fotosíntesis natural.' 
       }
     ],
-    fact: 'A pesar del excelente sistema de reciclaje del 93%, los astronautas en la ISS aún requieren entregas periódicas de agua desde la Tierra. Sin embargo, para viajar a Marte o a lunas más lejanas, los ingenieros espaciales necesitarán desarrollar un sistema que recicle hasta un 98% de los fluidos biológicos y ambientales de la tripulación.'
+    fact: 'A pesar del reciclaje del 93%, la ISS aún requiere entregas de agua desde la Tierra. Para viajar a Marte, los ingenieros deberán desarrollar un sistema que recicle hasta un 98% de los fluidos de la tripulación.'
   },
   {
     id: 'gravedad',
@@ -252,27 +252,27 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/starwars/infographic_cruceros/btn_gravedad.png',
     image: '/assets/starwars/infographic_cruceros/hero_gravedad.png',
     bannerImage: '/assets/starwars/infographic_cruceros/banner_gravedad.png',
-    bannerCaption: 'La microgravedad prolongada debilita los huesos; la rotación podría ser nuestra única salvación biológica.',
+    bannerCaption: 'La microgravedad debilita los huesos; la rotación podría ser nuestra salvación.',
     content: [
-      "En las películas de ciencia ficción, las tripulaciones suelen caminar cómodamente por los pasillos de sus naves, como si estuvieran en la Tierra. Sin embargo, generar gravedad artificial es uno de los problemas médicos y físicos más complejos y menos resueltos en la exploración espacial real.",
-      "En la Estación Espacial Internacional (ISS), los astronautas viven en estado de microgravedad. Aunque flotar parece divertido, la falta de peso causa daños en la fisiología humana: produce pérdida de masa ósea, reduce el tejido muscular y altera el ritmo cardíaco. Los astronautas deben hacer ejercicio horas al día para mitigar estos efectos.",
-      "La solución teórica más viable basada en la física clásica es la rotación. Para un viaje interplanetario largo, podríamos construir enormes anillos o cilindros en la nave. Al hacer girar esta estructura de forma constante, la inercia empujaría a las personas hacia las paredes externas.",
-      "Esta técnica, basada en la fuerza centrífuga, obligaría a los ocupantes hacia el exterior de la curva. Esa presión simularía la gravedad terrestre, permitiendo a los astronautas caminar sobre las paredes internas y protegiendo su salud ósea y muscular durante meses de viaje.",
-      "Para generar una gravedad equivalente a la de la Tierra sin causar mareos por la fuerza de Coriolis, un anillo de 100 metros de radio tendría que girar a unas 3 revoluciones por minuto. Mantener ese movimiento requeriría un diseño mecánico preciso y energía constante."
+      "En las películas, las tripulaciones caminan cómodamente por los pasillos de sus naves. Sin embargo, generar gravedad artificial es uno de los problemas físicos más complejos en la exploración espacial real.",
+      "En la ISS, los astronautas viven en microgravedad. Aunque flotar parece divertido, la falta de peso causa daños en la fisiología humana. Produce pérdida de masa ósea, reduce el tejido muscular y altera el ritmo cardíaco. Los astronautas deben hacer ejercicio horas al día.",
+      "La solución teórica más viable es la rotación. Para un viaje largo, podríamos construir anillos o cilindros en la nave. Al hacer girar esta estructura de forma constante, la inercia empujaría a las personas hacia las paredes.",
+      "Esta técnica obligaría a los ocupantes hacia el exterior de la curva. Esa presión simularía la gravedad terrestre. Así, los astronautas caminarían sobre las paredes internas y protegerían su salud durante meses de viaje.",
+      "Para generar una gravedad equivalente a la Tierra sin causar mareos, un anillo de 100 metros de radio tendría que girar a 3 revoluciones por minuto. Mantener ese movimiento requeriría un diseño preciso y energía constante."
     ],
     expandables: [
       { 
         label: 'En la Película', 
         icon: 'zap', 
-        text: 'En el universo de Star Wars, las naves utilizan placas de gravedad artificial instaladas bajo el suelo para mantener a la tripulación firme, una tecnología que no existe en el mundo real. En cambio, películas como "2001: Odisea del Espacio" o "Interestelar" muestran anillos giratorios precisos que emplean la fuerza centrífuga real.' 
+        text: 'En Star Wars, las naves utilizan placas de gravedad instaladas bajo el suelo para mantener a la tripulación firme, una tecnología irreal. En cambio, películas como "2001: Odisea del Espacio" muestran anillos giratorios que emplean la fuerza centrífuga.' 
       },
       { 
         label: 'Dato Científico', 
         icon: 'atom', 
-        text: 'Sin la gravedad jalando hacia abajo, los fluidos corporales de los astronautas, como la sangre, se desplazan hacia la parte superior del cuerpo. Esto provoca que el rostro se hinche temporalmente y que las piernas pierdan volumen y se adelgacen, una condición que la NASA monitorea de cerca.' 
+        text: 'Sin la gravedad jalando hacia abajo, los fluidos corporales como la sangre se desplazan hacia la parte superior del cuerpo. Esto provoca que el rostro se hinche y que las piernas pierdan volumen, condición que la NASA monitorea.' 
       }
     ],
-    fact: 'La fuerza de Coriolis, un efecto físico en ambientes rotativos, causaría que los objetos lanzados al aire en una nave giratoria describan trayectorias curvas. Esto podría desorientar a la tripulación hasta que logren adaptarse neurológicamente a la gravedad artificial.'
+    fact: 'La fuerza de Coriolis en ambientes rotativos causaría que los objetos lanzados al aire describan trayectorias curvas. Esto podría desorientar a la tripulación hasta que logren adaptarse a la gravedad artificial.'
   }
 ];
 

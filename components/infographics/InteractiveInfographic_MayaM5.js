@@ -115,7 +115,7 @@ const INFOGRAPHIC_NODES = [
     image: '/assets/maya/infographic_m5/hero_fecha-completa.jpg',
     content: [
       'Cuando nosotros escribimos una fecha, usamos el día, el mes y el año, como "4 de julio de 2024". Para los mayas, una fecha completa incluía la posición del día en ambos calendarios al mismo tiempo. Es decir, incluía el número y el nombre del día en el Tzolkin, seguido por los del Haab.',
-      'Un ejemplo de fecha maya es "4 Ahau 8 Kumku". En esta fecha, "4 Ahau" pertenece al Tzolkin e indica el número 4 combinado con el día Ahau. "8 Kumku" pertenece al Haab y representa el octavo día del mes Kumku. Cuando los mayas tallaban estas fechas en estelas, dibujaban glifos para representar los números y nombres.',
+      'Un ejemplo de fecha maya es "4 Ahau 8 Kumku". En esta fecha, "4 Ahau"pertenece al Tzolkin e indica el número 4 combinado con el día Ahau."8 Kumku" pertenece al Haab y representa el octavo día del mes Kumku. Cuando los mayas tallaban estas fechas en estelas, dibujaban glifos para representar los números y nombres.',
       'En total, existen 18,980 combinaciones posibles de fechas entre estos dos calendarios. Es como tener una caja fuerte con dos diales giratorios que deben alinearse. Cada día, ambos diales avanzaban una posición. Por eso, cualquier fecha específica solo ocurría una vez cada 52 años solares.',
       'Aprender a leer y escribir estas fechas requería años de estudio bajo la guía de astrónomos. Quienes dominaban la cuenta del tiempo eran muy respetados. Se creía que las fechas ayudaban a predecir eventos, guiar las cosechas y conocer el destino de los recién nacidos.',
       'Cuando los arqueólogos descubren estelas mayas en la selva, estudian las fechas de la Rueda Calendárica. Al leer estos glifos, pueden determinar cuándo un gobernante subió al trono, cuándo ocurrió una batalla o cuándo se construyó un templo. Es una forma de reconstruir la historia de esta civilización.'
@@ -159,7 +159,7 @@ const INFOGRAPHIC_NODES = [
       'El final de un ciclo de 13 B\'ak\'tunes ocurrió el 21 de diciembre de 2012. Para los antiguos mayas, esto no significaba el fin del mundo. Era similar a pasar del 31 de diciembre al 1 de enero en nuestro calendario; simplemente iniciaba un nuevo ciclo.'
     ],
     expandables: [
-      { label: 'El Primer Día', icon: 'atom', text: 'El 11 de agosto de 3114 a.C. es una fecha anterior al desarrollo de la civilización maya. Los expertos creen que este Día Cero marcaba un evento mitológico en el que los dioses ordenaron el universo y colocaron las tres piedras fundamentales de la creación.' },
+      { label: 'El Primer Día', icon: 'atom', text: 'El 11 de agosto de 3114 a.C. Es una fecha anterior al desarrollo de la civilización maya. Los expertos creen que este Día Cero marcaba un evento mitológico en el que los dioses ordenaron el universo y colocaron las tres piedras fundamentales de la creación.' },
       { label: 'Tiempo Infinito', icon: 'clock', text: 'Los matemáticos mayas calculaban ciclos de tiempo aún mayores que el B\'ak\'tun. Utilizaban el Piktun (8,000 años), el Kalabtun (158,000 años) y el Kinchiltun (3 millones de años). Su concepción del tiempo abarcaba períodos muy extensos.' }
     ],
     fact: 'En la estela 1 de la ciudad de Cobá, hay inscripciones que mencionan fechas equivalentes a trillones de años en el pasado. Esto demuestra que los mayas podían conceptualizar escalas de tiempo enormes en sus cálculos.'
@@ -565,7 +565,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
+                position: 'absolute', ...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />

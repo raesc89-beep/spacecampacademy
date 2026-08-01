@@ -149,10 +149,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_naturaleza.png',
     image: '/assets/bttf/infographic_gigawatts/hero_naturaleza.png',
     content: [
-      '¿Qué es exactamente el tiempo? El filósofo San Agustín dijo una vez: "Si nadie me lo pregunta, lo sé; pero si trato de explicarlo, no lo sé." Durante mucho tiempo, la humanidad creyó que el tiempo era como un río gigante y constante. Pensábamos que fluía a la misma velocidad en todo el universo, sin importar dónde estuvieras.',
-      'Isaac Newton, el famoso científico de la gravedad, describió el tiempo como un reloj perfecto e inalterable. Según Newton, si tú y yo tenemos relojes sincronizados, siempre marcarán la misma hora, incluso si uno de nosotros viaja a otra estrella. Esta visión clásica hizo que entender el universo pareciera muy ordenado.',
-      'Sin embargo, Albert Einstein llegó para cambiarlo todo. Einstein descubrió que el tiempo NO es absoluto. De hecho, el tiempo es elástico: puede estirarse y comprimirse. A diferencia de un río uniforme, el tiempo es más como una cama elástica, que se dobla dependiendo de la masa de los objetos y la velocidad a la que te mueves.',
-      'Esto significa que no hay un solo "reloj" maestro para todo el universo. Cada persona, cada planeta y cada estrella tiene su propio ritmo de tiempo. Esta idea filosófica y científica es la base de todo lo que entendemos hoy sobre los viajes temporales y el espacio-tiempo.'
+      '¿Qué es el tiempo? San Agustín dijo: "Si nadie me lo pregunta, lo sé; pero si trato de explicarlo, no lo sé." Durante siglos se creyó que el tiempo era un flujo constante, avanzando a la misma velocidad en todo el universo.',
+      'Isaac Newton describió el tiempo como un reloj perfecto. En su modelo, relojes sincronizados siempre marcarían la misma hora, sin importar su ubicación. Esta visión clásica sugería un universo con reglas ordenadas.',
+      'Albert Einstein demostró que el tiempo no es absoluto, sino elástico. El tiempo se estira y comprime de manera similar a una malla flexible, alterándose según la masa de los objetos y la velocidad de movimiento.',
+      'No existe un "reloj" maestro en el universo. Cada objeto tiene su propio ritmo de tiempo. Este concepto científico fundamenta la física moderna y nuestra comprensión del espacio-tiempo.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Doc Brown utiliza una pizarra para explicar a Marty cómo sus acciones han alterado la naturaleza de su tiempo. Dibuja una línea de tiempo recta y luego muestra cómo se divide en un 1985 alternativo. Esta es una brillante visualización de la idea de que el tiempo puede tomar múltiples direcciones dependiendo de nuestras elecciones.' },
@@ -167,10 +167,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_simultaneidad.png',
     image: '/assets/bttf/infographic_gigawatts/hero_simultaneidad.png',
     content: [
-      '¿Alguna vez has pensado que algo ocurrió "al mismo tiempo"? Einstein demostró que eventos que parecen simultáneos para una persona pueden ocurrir en momentos distintos para otra. Esto se conoce como la Relatividad de la Simultaneidad, y es uno de los conceptos más sorprendentes de la física moderna.',
-      'Para explicarlo, Einstein imaginó un tren en movimiento. Si dos rayos caen al mismo tiempo en los extremos del tren, alguien parado afuera lo verá suceder a la vez. Pero un pasajero dentro del tren, que se mueve hacia uno de los rayos, verá ese rayo caer primero, porque la luz llega a sus ojos un instante antes.',
-      '¿Quién de los dos tiene razón? ¡Ambos! No existe un punto de vista "correcto"en el universo. La simultaneidad depende de tu estado de movimiento. Esto destruye la idea de que podemos decir con certeza qué ocurrió"ahora mismo" en otra galaxia.',
-      'Esto tiene profundas consecuencias. Si el "ahora"de una persona es diferente al de otra, entonces el pasado, el presente y el futuro deben existir todos de alguna forma al mismo tiempo. Es lo que los científicos llaman el"Universo Bloque", donde todos los momentos están congelados en una estructura de cuatro dimensiones.'
+      'Einstein demostró que eventos que parecen simultáneos para una persona pueden ocurrir en distintos momentos para otra. Este concepto, llamado Relatividad de la Simultaneidad, es central en la física moderna.',
+      'En un tren en movimiento, si dos rayos caen en los extremos al mismo tiempo, un observador exterior los verá simultáneos. Pero un pasajero moviéndose hacia uno de los rayos lo verá caer primero.',
+      'Ambos observadores tienen razón. La percepción de simultaneidad depende del estado de movimiento. Esto demuestra que es imposible establecer un momento "presente" absoluto que aplique a todo el universo.',
+      'Si el "ahora"varía entre observadores, el pasado, presente y futuro coexisten de alguna forma. A este modelo se le llama el"Universo Bloque", donde todos los momentos integran una estructura de cuatro dimensiones.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Hay momentos en la saga donde Marty y Doc experimentan los mismos eventos desde perspectivas de tiempo totalmente diferentes. En la primera película, el "presente" de Marty en 1985 ocurre simultáneamente con el "futuro" que el Doc original de 1955 está intentando cambiar. Sus líneas temporales personales se cruzan de forma fascinante.' },
@@ -185,10 +185,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_entropia.png',
     image: '/assets/bttf/infographic_gigawatts/hero_entropia.png',
     content: [
-      'Si rompes un huevo, no puedes volver a unirlo. Si mezclas café y leche, no puedes separarlos después. Esta tendencia de las cosas a ir del orden al desorden se llama entropía. Es la esencia de la Segunda Ley de la Termodinámica y es crucial para entender la energía.',
-      'La entropía es lo único en la física fundamental que nos da una dirección real para el tiempo. Las ecuaciones de movimiento funcionan igual hacia atrás que hacia adelante, pero el universo en su conjunto siempre se vuelve más desordenado. A esto lo llamamos la "flecha del tiempo", apuntando siempre hacia un mayor caos.',
-      'Para que la entropía aumente ahora, el universo tuvo que empezar en un estado de bajísima entropía, es decir, muy ordenado. Los científicos creen que el Big Bang fue este estado especial. Toda la historia del universo, desde las galaxias hasta la vida misma, es un proceso gradual de aumento de entropía.',
-      'Aprovechar la energía, como la de 1.21 gigawatts, siempre implica generar calor y aumentar la entropía global. Un DeLorean viajando en el tiempo requeriría manejar enormes cantidades de energía de forma concentrada, luchando temporalmente contra esta tendencia natural hacia el desorden.'
+      'La tendencia de los sistemas a pasar del orden al desorden se llama entropía. Es un principio de la Segunda Ley de la Termodinámica.',
+      'La entropía proporciona una dirección al tiempo. Aunque las ecuaciones de movimiento funcionan en ambas direcciones temporales, el universo se vuelve más desordenado. A esto se le llama la "flecha del tiempo".',
+      'Para que la entropía aumente hoy, el universo debió iniciar en un estado de baja entropía. El Big Bang representa ese estado ordenado. La historia del universo es un proceso de aumento de entropía.',
+      'Utilizar grandes cantidades de energía genera calor y aumenta la entropía global. Un viaje temporal requeriría manipular esa energía y contrarrestar la tendencia natural al desorden.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Cuando el viejo Biff le entrega el almanaque deportivo a su yo joven, desata una cascada de eventos que aumenta drásticamente el "desorden" (la entropía) de la línea temporal. El Hill Valley pacífico se convierte en un caos dominado por el crimen. Es una representación metafórica perfecta de cómo el caos tiende a dominar si se altera el orden inicial.' },
@@ -203,10 +203,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_memoria.png',
     image: '/assets/bttf/infographic_gigawatts/hero_memoria.png',
     content: [
-      '¿Por qué recordamos el pasado y no el futuro? Suena a una pregunta obvia, pero para la física es un misterio profundo. La memoria es, en esencia, la huella digital del tiempo impresa en nuestro cerebro, creada por los procesos de aumento de entropía que dejan marcas físicas.',
-      'Cuando experimentamos algo, las conexiones en nuestro cerebro (las sinapsis) cambian de forma física. Este proceso requiere energía y genera calor, dejando un rastro irreversible de información. Los recuerdos son como huellas en la arena: solo pueden formarse después de que alguien haya caminado por allí.',
-      'Algunos filósofos sugieren que nuestra percepción del tiempo que "fluye" se debe únicamente a la forma en que el cerebro procesa y almacena memorias secuencialmente. Sin esta capacidad de recordar el estado anterior y compararlo con el nuevo, no sentiríamos el paso del tiempo.',
-      'Si pudiéramos viajar al pasado, nos enfrentaríamos a problemas con nuestras propias memorias. Si un viajero del tiempo cambia su propio pasado de manera que nunca construyó la máquina, ¿de dónde provienen los recuerdos físicos almacenados en su cerebro? La memoria ancla nuestra identidad a nuestra línea temporal.'
+      'Recordar el pasado y no el futuro es un problema complejo en la física. La memoria es una huella física creada por el aumento de entropía en el cerebro.',
+      'Las experiencias modifican las sinapsis cerebrales. Este proceso consume energía, genera calor y crea un rastro de información irreversible.',
+      'Algunos modelos sugieren que la percepción del flujo del tiempo surge de cómo el cerebro procesa y almacena estas memorias de forma secuencial.',
+      'Viajar al pasado generaría conflictos en la formación de memorias. Si un viajero altera su historia para no construir la máquina, el origen de sus recuerdos físicos queda sin explicación.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Uno de los elementos visuales más icónicos de BTTF es la fotografía de la familia de Marty. A medida que él altera el pasado, sus hermanos (y eventualmente él mismo) comienzan a borrarse de la foto. Esto ilustra cómo las alteraciones temporales destruyen las pruebas físicas (como fotos o memorias) del pasado original.' },
@@ -221,10 +221,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_cuantica.png',
     image: '/assets/bttf/infographic_gigawatts/hero_cuantica.png',
     content: [
-      'A nivel microscópico, las reglas del universo se vuelven increíblemente extrañas. La mecánica cuántica nos dice que las partículas como electrones o fotones pueden estar en múltiples estados a la vez. Sin embargo, cuando las observamos, "colapsan" en un estado único y definido. Este momento de colapso define el antes y el después.',
-      'Para algunos físicos, el tiempo podría no ser una característica fundamental del universo, sino algo "emergente". Igual que la temperatura emerge de millones de moléculas chocando entre sí, el tiempo podría surgir del entrelazamiento cuántico entre incontables partículas en todo el cosmos.',
-      'La famosa ecuación de Wheeler-DeWitt, un intento de combinar la cuántica con la gravedad, no incluye la variable del tiempo. Según esta ecuación, el universo en su estado más puro y matemático está congelado y estático. Es nuestra perspectiva dentro del universo la que genera la ilusión del cambio.',
-      'Si alguna vez logramos viajar en el tiempo o generar energías tan precisas como 1.21 gigawatts, la solución probablemente estará en dominar la física cuántica. Los computadores cuánticos del futuro podrían simular o incluso manipular eventos a escalas subatómicas de formas que hoy parecen magia.'
+      'A nivel subatómico, las partículas pueden estar en múltiples estados a la vez en la mecánica cuántica. Al ser observadas, colapsan en un estado definido, marcando un antes y un después.',
+      'El tiempo podría ser una propiedad emergente. Así como la temperatura surge de moléculas en movimiento, el tiempo podría originarse por el entrelazamiento cuántico entre partículas.',
+      'La ecuación de Wheeler-DeWitt no incluye la variable del tiempo al intentar unificar la cuántica y la gravedad. Según este modelo, el estado fundamental del universo es estático.',
+      'Los futuros computadores cuánticos podrían simular o manipular eventos a escala subatómica para controlar la física requerida en un eventual viaje temporal.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'El momento exacto en que el rayo golpea la torre del reloj (a las 10:04 pm) requiere una transferencia precisa de energía cuántica. Doc Brown tiene que calcular el milisegundo exacto para que la energía canalice hacia el condensador de flujo. Es una metáfora de los eventos cuánticos precisos y repentinos que cambian el curso del universo.' },
@@ -239,10 +239,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_futuro.png',
     image: '/assets/bttf/infographic_gigawatts/hero_futuro.png',
     content: [
-      'Viajar al futuro no es ciencia ficción: ¡es un hecho comprobado! La teoría de la relatividad de Einstein demuestra que si te mueves a gran velocidad, el tiempo pasará más lento para ti en comparación con alguien que se queda quieto. Este fenómeno se llama "dilatación del tiempo".',
-      'Lo hemos comprobado en experimentos reales. Cuando volamos relojes atómicos muy precisos alrededor del mundo en aviones a reacción, regresan marcando fracciones de segundo menos que los relojes que se quedaron en la Tierra. Los viajeros han envejecido menos que nosotros.',
-      'Los astronautas en la Estación Espacial Internacional (ISS) viajan a más de 27,000 km/h. Tras pasar meses en el espacio, regresan a la Tierra habiendo viajado una pequeña fracción de segundo hacia el futuro. El astronauta Sergei Krikalev viajó aproximadamente 0.02 segundos al futuro tras pasar más de 800 días en órbita.',
-      'Además, los satélites GPS que usamos para la navegación deben ajustar continuamente sus relojes internos. Debido a su velocidad y a estar más lejos de la gravedad terrestre, su tiempo no coincide con el nuestro. Sin las matemáticas del viaje al futuro de Einstein, el GPS fallaría en cuestión de horas.'
+      'La relatividad demuestra que el tiempo pasa más lento a velocidades altas, fenómeno conocido como dilatación del tiempo.',
+      'Experimentos con relojes atómicos en aviones confirman esto: regresan marcando fracciones de segundo menos que los relojes estacionarios en la Tierra.',
+      'Los astronautas viajan a más de 27,000 km/h en órbita. Al regresar, han avanzado una fracción de segundo hacia el futuro en relación con la Tierra.',
+      'Los satélites GPS ajustan continuamente sus relojes para compensar los efectos de su velocidad y la menor gravedad terrestre. Sin estas correcciones relativistas, el sistema de navegación fallaría.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al año 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad holográfica. Aunque la película sobreestimó algunas tecnologías, la idea de dar un"salto" y encontrar una sociedad transformada por la innovación tecnológica captura la esencia del viaje hacia el futuro.' },
@@ -257,10 +257,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_gigawatts/btn_pasado.png',
     image: '/assets/bttf/infographic_gigawatts/hero_pasado.png',
     content: [
-      'Mientras viajar al futuro está comprobado, viajar al pasado es el verdadero desafío. Según las matemáticas de la relatividad general, el espacio-tiempo puede doblarse sobre sí mismo creando "Curvas Cerradas de Tiempo". En teoría, si siguieras una de estas curvas, volverías a un momento anterior en el tiempo.',
-      'El problema con el viaje al pasado son las violaciones de la causalidad, más conocidas como paradojas temporales. La "paradoja del abuelo" nos pregunta: ¿Qué pasa si viajas en el tiempo e impides que tus abuelos se conozcan? Si no naces, no puedes viajar en el tiempo, pero si no viajas, sí naces. Es una contradicción lógica.',
-      'Para evitar estos desafíos lógicos, Stephen Hawking propuso la "Conjetura de Protección de la Cronología". Según él, las leyes de la física evitarán siempre la creación de curvas cerradas de tiempo a nivel macroscópico. Si intentas crear una máquina del tiempo hacia el pasado, fluctuaciones cuánticas la destruirán antes de que funcione.',
-      'Otra posible solución a las paradojas son los universos paralelos. En esta interpretación, si cambias algo en el pasado, no alteras tu línea temporal original, sino que creas una nueva rama de la realidad. Cada decisión y viaje en el tiempo generaría un nuevo universo independiente.'
+      'La relatividad general indica que el espacio-tiempo puede doblarse y crear Curvas Cerradas de Tiempo. Seguir estas curvas permitiría regresar a un momento anterior.',
+      'El viaje al pasado genera paradojas temporales. La paradoja del abuelo plantea qué sucede si alguien impide que sus ancestros se conozcan, creando una contradicción sobre su propio nacimiento.',
+      'Stephen Hawking propuso la Conjetura de Protección de la Cronología. Este modelo sugiere que fluctuaciones físicas evitarán la formación macroscópica de curvas cerradas de tiempo.',
+      'La teoría de los universos paralelos ofrece una solución a las paradojas. Alterar el pasado no afectaría la línea original, sino que crearía una rama nueva y separada de la realidad.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'La trama de la primera película gira exactamente en torno al peligro del viaje al pasado. Al interactuar con sus padres adolescentes en 1955, Marty rompe la cadena causal que lleva a su propio nacimiento, corriendo el riesgo de ser borrado de la existencia. Él debe actuar como un "reparador" de la línea temporal para salvarse.' },
@@ -638,7 +638,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
+                position: 'absolute', ...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />

@@ -146,7 +146,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       'Nuestros meses actuales provienen de antiguos dioses o números romanos. Sin embargo, para la civilización maya, los nombres de sus dieciocho meses tenían un significado práctico. Estaban conectados con la naturaleza que los rodeaba en las selvas y montañas de Mesoamérica.',
       'Cada uno de los meses del Haab duraba veinte días. Tenían nombres como Pop, Wo, Sip, Sotz, Sek, Xul, Yaxkin, Mol, Chen, Yax, Sak, Keh, Mak, Kankin, Muwan, Pax, Kayab y Kumku. Estos nombres estaban vinculados a las actividades agrícolas, animales de la selva y ciclos de lluvias.',
-      'Por ejemplo, el mes "Sotz" significa "murciélago". Durante esta época del año, estos animales eran más activos y los mayas realizaban ceremonias para honrar su papel como polinizadores. El mes "Yaxkin", que se traduce como "primer sol", marcaba el inicio de la temporada seca tras las lluvias.',
+      'Por ejemplo, el mes "Sotz" significa "murciélago". Durante esta época del año, estos animales eran más activos y los mayas realizaban ceremonias para honrar su papel como polinizadores. El mes"Yaxkin", que se traduce como "primer sol", marcaba el inicio de la temporada seca tras las lluvias.',
       'Estos meses funcionaban como una guía de supervivencia y prosperidad comunitaria. Le decían a los agricultores y gobernantes cuándo la tierra estaría húmeda para sembrar, cuándo el sol secaría los campos, o cuándo los animales de caza estarían migrando por sus territorios.',
       'Su calendario era un manual de instrucciones de la naturaleza traducido por los astrónomos. Hoy consultamos aplicaciones meteorológicas para saber si va a llover, pero los mayas miraban su calendario Haab para comprender en qué momento del ciclo natural se encontraban.',
     ],
@@ -613,7 +613,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
+                position: 'absolute', ...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />

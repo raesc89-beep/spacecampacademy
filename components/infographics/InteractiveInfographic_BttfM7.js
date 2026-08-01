@@ -146,10 +146,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_metodo.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_metodo.png',
     content: [
-      '¿Alguna vez te has preguntado cómo los científicos descubren cosas nuevas? Todo empieza con la curiosidad, pero para convertir esa curiosidad en un descubrimiento real, utilizan una herramienta especial llamada el "Método Científico". Este es un proceso paso a paso que asegura que los resultados sean precisos y comprobables. Es como seguir una receta cuidadosamente, pero en lugar de hacer un pastel, estás descubriendo los secretos del universo.',
-      'El proceso comienza con una observación: notas algo interesante, como una manzana cayendo de un árbol. Luego, haces una pregunta y formas una "hipótesis", que es una suposición educada de por qué sucede eso. ¡Aquí es donde entra la parte divertida! Diseñas un experimento para probar si tu hipótesis es correcta. Durante el experimento, recopilas datos, mides, observas y anotas absolutamente todo lo que pasa.',
-      'Después de recolectar toda esa información, es hora de analizarla. Revisas los datos como un detective buscando pistas. ¿Los resultados apoyan tu hipótesis original o la contradicen? Con base en esto, sacas una conclusión. Si tu experimento demostró que estabas equivocado, ¡eso también es un descubrimiento importante! Los científicos aprenden tanto de los errores como de los aciertos, ajustando sus teorías y probando de nuevo.',
-      'El último paso es crucial: verificar y compartir. Un experimento debe poder ser repetido por otros científicos en diferentes partes del mundo para comprobar que los resultados son válidos. Así es como la ciencia avanza, construyendo sobre el conocimiento de los demás de manera colaborativa, asegurando que las "verdades" científicas sean sólidas y estén probadas más allá de toda duda razonable.'
+      'El Método Científico es un proceso sistemático para realizar descubrimientos. Es una serie de pasos que asegura que los resultados sean comprobables y precisos.',
+      'El proceso comienza con una observación y la formulación de una hipótesis (una posible explicación). Luego, se diseña un experimento para probar esta hipótesis, durante el cual se recopilan datos y medidas.',
+      'Después se analizan los datos recopilados para determinar si apoyan o contradicen la hipótesis original, permitiendo formular una conclusión. Los experimentos fallidos también aportan información útil para ajustar teorías.',
+      'El último paso es la verificación. Un experimento debe ser reproducible por otros investigadores para confirmar su validez. Así se construye el conocimiento científico.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown encarna el método científico a la perfección. Cuando prueba el DeLorean por primera vez en el centro comercial Twin Pines, graba todo el experimento, usa a Einstein (su perro) para la primera prueba con un reloj sincronizado, observa los resultados (el reloj de Einstein está atrasado 1 minuto), analiza los datos y concluye que el viaje en el tiempo es posible.' },
@@ -164,10 +164,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_electricidad.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_electricidad.png',
     content: [
-      'Los rayos han fascinado y aterrado a la humanidad desde el principio de los tiempos. Un rayo es básicamente una descarga gigantesca de electricidad estática. Durante una tormenta, las partículas de hielo en las nubes chocan entre sí, creando una carga eléctrica inmensa. Cuando esa carga se vuelve demasiado grande, busca el camino más rápido hacia el suelo, y se produce un relámpago que ilumina el cielo.',
-      'La energía que contiene un solo rayo es enorme. Un rayo típico transporta millones de voltios y puede alcanzar temperaturas de hasta 30,000 grados Celsius. ¡Eso es cinco veces más caliente que la superficie del Sol! Esta increíble temperatura calienta el aire circundante tan rápido que explota, creando el sonido estruendoso que conocemos como trueno. La energía es tan intensa que puede convertir la arena en cristal.',
-      'Nuestra comprensión de la electricidad dio un salto gigante en 1752, cuando Benjamin Franklin realizó su famoso experimento con una cometa. Voló una cometa con una llave de metal durante una tormenta (¡un experimento muy peligroso que no debes intentar!). Las chispas que saltaron de la llave confirmaron que los rayos eran de la misma naturaleza que la electricidad estática, uniendo estos dos conceptos para siempre.',
-      'Hoy en día, la electricidad alimenta nuestro mundo moderno, desde las luces de nuestra casa hasta las supercomputadoras. Sin embargo, aprovechar la energía cruda y caótica de un rayo natural sigue siendo casi imposible. Los rayos son demasiado rápidos y erráticos para que podamos capturar y almacenar toda esa energía de manera eficiente con nuestra tecnología actual. ¡La naturaleza todavía tiene el récord de poder bruto!'
+      'Un rayo es una descarga de electricidad estática. Durante una tormenta, las partículas en las nubes chocan, creando una carga eléctrica. Cuando la carga es suficiente, busca el camino más corto hacia el suelo.',
+      'La energía de un rayo transporta millones de voltios y alcanza temperaturas de hasta 30,000 grados Celsius. Este calor expande el aire de golpe, generando el sonido del trueno.',
+      'En 1752, el experimento de la cometa de Benjamin Franklin demostró que los rayos comparten la misma naturaleza que la electricidad estática.',
+      'Aunque la electricidad alimenta el mundo moderno, capturar la energía de un rayo natural sigue siendo ineficiente con la tecnología actual debido a su imprevisibilidad.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Para viajar en el tiempo, el condensador de flujo necesita 1.21 gigawatts de potencia. Al no poder conseguir plutonio en 1955, Doc Brown canaliza la energía del rayo que cae en la torre del reloj directamente al DeLorean. Esta es una representación brillante, aunque exagerada, de intentar aprovechar la inmensa energía de la naturaleza.' },
@@ -182,10 +182,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_corrientes.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_corrientes.png',
     content: [
-      'A finales del siglo XIX, dos mentes brillantes se enfrentaron en una batalla épica que definiría el futuro de la tecnología: Thomas Edison y Nikola Tesla. Este conflicto es conocido como la "Guerra de las Corrientes". El objetivo era decidir qué sistema de transmisión eléctrica iluminaría los hogares del mundo. Fue una lucha de ingenio, negocios y ciencia que cambió nuestra historia.',
-      'Thomas Edison, un inventor famoso e implacable hombre de negocios, defendía la Corriente Continua (DC). En este sistema, la electricidad fluye en una sola dirección. Era seguro pero tenía un problema grave: no podía transmitirse a largas distancias sin perder mucha energía. Edison habría necesitado construir una planta de energía en cada vecindario para mantener las luces encendidas en toda la ciudad.',
-      'Nikola Tesla, un genio excéntrico y visionario, apoyado por el empresario George Westinghouse, propuso la Corriente Alterna (AC). La corriente alterna invierte su dirección muchas veces por segundo. Su gran ventaja era que podía usar transformadores para elevar el voltaje, viajar cientos de kilómetros a través de cables delgados, y luego reducir el voltaje para usarlo de manera segura en los hogares.',
-      'Finalmente, la visión de Tesla triunfó. La Corriente Alterna demostró ser superior para iluminar el mundo moderno, comenzando con la iluminación de la Exposición Universal de Chicago en 1893 y la planta hidroeléctrica en las Cataratas del Niágara. Sin embargo, hoy en día usamos ambos sistemas: la red eléctrica usa AC, pero nuestros teléfonos, computadoras y autos eléctricos funcionan con DC.'
+      'A finales del siglo XIX, Thomas Edison y Nikola Tesla compitieron en la "Guerra de las Corrientes" para establecer el estándar del sistema de transmisión eléctrica comercial.',
+      'Thomas Edison defendía la Corriente Continua (DC), un sistema donde la electricidad fluye en una sola dirección. Su principal limitación era la pérdida de energía al transmitirse a largas distancias.',
+      'Nikola Tesla propuso la Corriente Alterna (AC), que invierte su dirección continuamente. Este sistema permitía usar transformadores para elevar el voltaje y transmitir la energía a grandes distancias con eficiencia.',
+      'El sistema de Corriente Alterna triunfó para la distribución eléctrica a gran escala. En la actualidad, usamos AC en la red eléctrica y DC en baterías y dispositivos electrónicos.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown tiene mucho en común con Nikola Tesla. Ambos son genios excéntricos, inventores solitarios y algo incomprendidos por la sociedad de su tiempo, obsesionados con controlar grandes cantidades de energía. El enorme amplificador de guitarra en la casa de Doc y sus experimentos salvajes recuerdan el famoso laboratorio de Tesla en Colorado Springs.' },
@@ -200,10 +200,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_semiconductores.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_semiconductores.png',
     content: [
-      'Si tuvieras que elegir el invento más importante del siglo XX, el transistor sería el ganador indiscutible. Inventado en 1947 en los Laboratorios Bell por Bardeen, Brattain y Shockley, este diminuto dispositivo cambió el mundo. Antes de los transistores, las computadoras usaban "tubos de vacío" gigantes, frágiles y que se calentaban muchísimo. El transistor hizo el mismo trabajo pero era minúsculo, frío y casi irrompible.',
-      'Pero, ¿qué hace un transistor? Básicamente, es un interruptor microscópico. Permite que la electricidad pase (un "1") o la detiene (un "0"). Combinando millones de estos interruptores, puedes procesar información compleja, matemáticas y lógica. Están hechos de materiales semiconductores, principalmente silicio, que tienen la propiedad mágica de poder conducir la electricidad a veces y detenerla otras veces.',
-      'A medida que los ingenieros aprendieron a hacer transistores más pequeños, inventaron el "microchip"o circuito integrado. Al poner miles de transistores en un solo pedacito de silicio, los aparatos electrónicos se volvieron más rápidos, baratos y diminutos. Esto fue predicho por la"Ley de Moore" (formulada por Gordon Moore en 1965), que decía que la cantidad de transistores en un chip se duplicaría cada dos años.',
-      'Esta revolución permitió pasar de computadoras del tamaño de una habitación a smartphones que caben en tu bolsillo. Hoy en día, un procesador moderno contiene miles de millones de transistores, cada uno más pequeño que un virus. Sin los semiconductores, no tendríamos internet, videojuegos, ni, por supuesto, la tecnología necesaria para viajar al espacio.'
+      'El transistor, inventado en 1947, reemplazó a los frágiles tubos de vacío en las computadoras. Cumplía la misma función siendo más pequeño y emitiendo menos calor.',
+      'Un transistor funciona como un interruptor que controla el flujo de electricidad (representando un "1" o un "0"). Están fabricados con materiales semiconductores como el silicio.',
+      'La integración de múltiples transistores en un solo bloque de silicio dio origen al microchip. La "Ley de Moore" predijo que la cantidad de transistores en un circuito integrado se duplicaría aproximadamente cada dos años.',
+      'Esta reducción de tamaño permitió el desarrollo de los dispositivos electrónicos modernos, desde computadoras personales hasta teléfonos móviles.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Cuando el Doc de 1955 ve la videocámara JVC portátil de Marty, se sorprende por su tamaño y capacidad. En 1955, el transistor apenas comenzaba a usarse, y las cámaras de televisión eran enormes equipos de estudio que dependían de pesados tubos de vacío. ¡La videocámara de Marty era verdadera magia del futuro!' },
@@ -218,10 +218,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_biotec.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_biotec.png',
     content: [
-      '¿Qué pasaría si pudieras editar tu código genético igual que editas un texto en la computadora? Eso es lo que hace la biotecnología moderna. En 2012, las científicas Jennifer Doudna y Emmanuelle Charpentier descubrieron una herramienta revolucionaria llamada CRISPR-Cas9. Esta herramienta funciona como unas "tijeras moleculares" ultraprecisas que pueden cortar el ADN en un lugar exacto.',
-      'El ADN es el manual de instrucciones de nuestro cuerpo. Cuando una parte del código está defectuosa, puede causar enfermedades. Antes de CRISPR, editar el ADN era un proceso lento, difícil y muy caro. Con esta nueva tecnología, los científicos pueden programar las tijeras para encontrar la mutación exacta, cortarla y reemplazarla con código sano. ¡Es un avance que cambió la medicina para siempre!',
-      'CRISPR no se inventó de la nada; en realidad, los científicos lo copiaron de la naturaleza. Resulta que las bacterias llevan millones de años usando un sistema similar para defenderse de los virus. Las bacterias guardan "recortes" del ADN del virus para recordarlo, y si el virus ataca de nuevo, usan la enzima Cas9 para cortarlo y destruirlo. Los científicos adaptaron este sistema natural para usarlo en cualquier célula.',
-      'Las posibilidades de la biotecnología son asombrosas. Además de curar enfermedades genéticas, podemos usarla para crear cultivos que resistan sequías (vital frente al cambio climático), desarrollar nuevos materiales ecológicos, o incluso combatir el envejecimiento celular. Sin embargo, este gran poder viene con la enorme responsabilidad ética de decidir qué cambios genéticos deberíamos y no deberíamos hacer.'
+      'En 2012, Jennifer Doudna y Emmanuelle Charpentier desarrollaron la herramienta CRISPR-Cas9, un método para editar secuencias de ADN de manera precisa.',
+      'Antes de CRISPR, la modificación genética era un proceso complejo. Esta tecnología permite identificar una secuencia específica de ADN, cortarla y reemplazarla, facilitando el tratamiento de enfermedades de origen genético.',
+      'El sistema CRISPR fue adaptado de un mecanismo de defensa bacteriano. Las bacterias utilizan fragmentos de ADN viral para reconocer y destruir virus recurrentes mediante la enzima Cas9.',
+      'La biotecnología tiene aplicaciones en la medicina y en la agricultura, permitiendo el desarrollo de cultivos resistentes. Su uso plantea debates éticos sobre los límites de la edición genética.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Cuando Doc viaja al futuro (año 2015), visita una clínica de rejuvenecimiento que le añade décadas a su vida. Le cambian la sangre, el bazo y el colon, y le reducen las arrugas. Hoy, la ciencia médica moderna con CRISPR y terapias génicas busca algo similar: entender y eventualmente ralentizar el envejecimiento celular real de nuestro cuerpo.' },
@@ -236,10 +236,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_espacio.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_espacio.png',
     content: [
-      'Durante décadas, el sueño de viajar por el espacio parecía detenido. Pero hoy, estamos viviendo un nuevo renacimiento espacial. La gran innovación reciente han sido los cohetes reutilizables. Históricamente, un cohete volaba una vez y se descartaba en el océano, lo que hacía que ir al espacio fuera caro. Hoy en día, gracias a empresas como SpaceX, los cohetes pueden aterrizar de pie y volar de nuevo.',
-      'Esta reducción de costos está acelerando nuestros planes. El programa Artemis de la NASA tiene como objetivo devolver a los humanos a la Luna. Pero esta vez no vamos de visita; ¡vamos para quedarnos! El plan incluye construir una estación espacial en órbita lunar (Gateway) y bases en la superficie, sirviendo como campo de entrenamiento para el próximo gran salto: Marte.',
-      'Mientras planeamos viajar más lejos, nuestros "ojos" robóticos ya están explorando el cosmos. El Telescopio Espacial James Webb, lanzado en 2021, es una maravilla de la ingeniería. Es tan potente que puede ver las atmósferas de planetas que giran alrededor de otras estrellas y capturar la luz de las primeras galaxias que se formaron poco después del Big Bang, permitiéndonos literalmente mirar hacia el pasado.',
-      'El futuro de la exploración espacial no será solo para astronautas del gobierno. El turismo espacial está comenzando a florecer, y pronto la minería de asteroides podría darnos acceso a metales preciosos sin dañar la Tierra. Convertirnos en una especie multiplanetaria no es solo una aventura; es un paso necesario para asegurar la supervivencia a largo plazo de la humanidad.'
+      'La industria espacial ha logrado avances mediante el desarrollo de cohetes reutilizables. Anteriormente, los cohetes se descartaban tras un solo uso. Ahora, algunas etapas pueden aterrizar y utilizarse nuevamente.',
+      'El programa Artemis de la NASA tiene como objetivo el retorno humano a la Luna, incluyendo la construcción de una estación en órbita lunar y bases de superficie como preparación para misiones a Marte.',
+      'El Telescopio Espacial James Webb permite analizar las atmósferas de exoplanetas y observar galaxias formadas en las etapas tempranas del universo.',
+      'El desarrollo tecnológico espacial también ha impulsado iniciativas comerciales y proyectos a largo plazo sobre el uso de recursos extraterrestres.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'En BTTF, el 2015 está lleno de autos voladores usando "aeroconversión". Aunque todavía no tenemos autos voladores diarios por razones de seguridad, las tecnologías de propulsión están avanzando. La visión de la película sobre la gravedad controlada y el transporte futurista se refleja hoy en los avances de la aeronáutica, cohetes de despegue vertical e investigaciones en levitación magnética.' },
@@ -254,10 +254,10 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/bttf/infographic_biotecnologia/btn_sostenible.png',
     image: '/assets/bttf/infographic_biotecnologia/hero_sostenible.png',
     content: [
-      'Si queremos un futuro en el que haya alguien a quien viajar en el tiempo, necesitamos proteger la Tierra hoy. La sostenibilidad significa vivir de manera que satisfagamos nuestras necesidades actuales sin robarle a las futuras generaciones la capacidad de satisfacer las suyas. El mayor desafío que enfrentamos en este siglo es el cambio climático provocado por la emisión excesiva de gases de efecto invernadero.',
-      'La solución requiere una transformación completa en cómo generamos energía. Estamos dejando atrás los combustibles fósiles para abrazar fuentes renovables: energía solar, turbinas eólicas y geotérmica. Estas fuentes aprovechan las fuerzas naturales e inagotables del planeta. Además, los científicos están investigando nuevas baterías y métodos para almacenar esa energía de forma limpia.',
-      'También debemos cambiar de una "economía lineal" (tomar, hacer, tirar) a una "economía circular". En una economía circular, los residuos no existen; todo está diseñado para ser reparado, reutilizado, reciclado o compostado. Es como imitar a la naturaleza, donde las hojas caídas de un árbol se convierten en abono para nuevas plantas. ¡La basura de hoy debe ser el recurso de mañana!',
-      'Este futuro sostenible está en manos de la próxima generación: jóvenes científicos, ingenieros, políticos y ciudadanos informados. Cada pequeño esfuerzo cuenta, desde desarrollar nuevos plásticos biodegradables con biotecnología hasta plantar árboles y conservar el agua. La ciencia nos da las herramientas y la tecnología, pero la responsabilidad de usarlas sabiamente es de todos nosotros.'
+      'La sostenibilidad busca satisfacer las necesidades actuales sin comprometer los recursos de las generaciones futuras. Un desafío principal es mitigar el cambio climático asociado a los gases de efecto invernadero.',
+      'La transición energética implica reducir la dependencia de los combustibles fósiles a favor de fuentes renovables como la energía solar, eólica y geotérmica, junto con métodos eficientes de almacenamiento.',
+      'El modelo de economía circular promueve la reducción de residuos mediante el diseño de productos orientados a la reutilización y el reciclaje.',
+      'La implementación de prácticas sostenibles depende de la adopción de tecnologías limpias y de políticas ambientales a largo plazo.'
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Al final de la película, el Doc de 2015 usa el "Mr. Fusion", un dispositivo en el DeLorean que convierte restos de basura (cáscaras de plátano, cerveza sobrante) en energía masiva y limpia. ¡Ese es el sueño absoluto de la sostenibilidad y la economía circular! Transformar los desechos directamente en energía usable sin contaminación.' },
@@ -635,7 +635,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               animate={{ y: [0, -8, 0], rotate: [pos.rotate || 0, (pos.rotate || 0) + 5, pos.rotate || 0] }}
               transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut' }}
               style={{
-                position: 'absolute'...pos, zIndex: 1, pointerEvents:'none',
+                position: 'absolute', ...pos, zIndex: 1, pointerEvents:'none',
               }}
             >
               <Deco size={55 + i * 10} color={node.color} />
