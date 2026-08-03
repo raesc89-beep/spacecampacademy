@@ -193,12 +193,28 @@ minHeight: '280px'
 ### 10.2 Estilo Artístico Obligatorio ("Nilo de Nut"):
 Todas las imágenes generadas para infografías (btn_*, hero_*, bg_*) DEBEN seguir este estilo:
 - **Tipo**: Ilustración digital estilizada / vector art con detalles — NO fotorrealista, NO flat cartoon.
-- **Paleta**: Tonos profundos de azul índigo + ámbar/dorado cálido. Cielos nocturnos con Vía Láctea, reflejos dorados.
+- **Paleta**: Se elige **una paleta al azar por infografía** (todas las imágenes de un mismo componente usan la misma paleta). Las paletas disponibles son:
+  1. `deep indigo blue and warm golden amber` (índigo + ámbar — la paleta clásica)
+  2. `muted teal and burnt sienna` (verde-azulado apagado + siena tostado)
+  3. `slate blue and soft copper` (azul pizarra + cobre suave)
+  4. `dark plum and antique gold` (ciruela oscuro + dorado antiguo)
+  5. `charcoal grey and dusty rose` (gris carbón + rosa empolvado)
+  6. `midnight navy and warm terracotta` (azul marino profundo + terracota cálido)
+  7. `deep forest green and pale amber` (verde bosque profundo + ámbar pálido)
+  8. `dark wine and bronze` (vino oscuro + bronce)
+  9. `obsidian black and silver moonlight` (negro obsidiana + luz de luna plateada)
+  10. `prussian blue and peach` (azul de Prusia + melocotón)
+  11. `dark olive and warm sand` (oliva oscuro + arena cálida)
+  12. `storm grey and marigold` (gris tormenta + caléndula)
+  - **Regla**: Todos los tonos deben ser **profundos, apagados o terrosos** — nunca neón, fluorescente ni saturación alta. El objetivo es un aspecto de concept art cinematográfico, no de ilustración infantil genérica.
+  - **Coherencia temática**: La paleta elegida debe **guardar relación con la temática del contenido** y respetar los **colores realistas de los elementos representados**. Por ejemplo: planetas rocosos combinan bien con terracota, siena y ámbar; exoplanetas y telescopios con azules profundos y cobres; asteroides con negros, grises y plata; Venus con vinos y bronces; Marte con teal y siena; habitabilidad con verdes y dorados. La paleta acentúa y complementa el sujeto — nunca lo contradice ni lo aleja de su apariencia natural.
+  - **Restricción de estilo**: Aunque se buscan colores realistas y temáticos, los tonos **nunca deben ser chillones, saturados en exceso ni dar aspecto infantil**. El equilibrio es: fidelidad cromática al sujeto + elegancia cinematográfica + cohesión dentro de todo el componente.
+  - **Asignación**: El agente elige una paleta al inicio de cada componente y la usa para todas las imágenes btn_*, hero_* y banner_* de ese componente. Cielos nocturnos con estrellas y profundidad atmosférica siguen siendo obligatorios.
 - **Texturas**: Colores limpios con gradientes sutiles. Agua con reflejos, piedra con vetas, cielos detallados con estrellas.
 - **Personajes**: Proporcionados semi-estilizados (como ilustración de libro infantil premium, NO chibi/cartoon).
 - **Composición**: Escenas narrativas cinematográficas con profundidad de campo, elementos superpuestos en capas.
 - **Ambiente**: Épico, aventurero, educativo. Similar a concept art de películas animadas de aventura.
-- **Prompt suffix obligatorio**: Toda generación de imagen DEBE terminar con: `"Illustrated digital art style, clean vector aesthetic with subtle gradients, deep indigo blue and warm golden amber palette, detailed night sky with stars, stylized semi-realistic proportions, educational adventure illustration for children ages 8-13, cinematic composition with depth. No text, no letters, no words."`
+- **Prompt suffix obligatorio**: Toda generación de imagen DEBE terminar con: `"Illustrated digital art style, clean vector aesthetic with subtle gradients, {PALETTE} palette, detailed night sky with stars, stylized semi-realistic proportions, educational adventure illustration for children ages 8-13, cinematic composition with depth. No text, no letters, no words."` donde `{PALETTE}` se sustituye por la paleta asignada al componente (ej. `muted teal and burnt sienna`).
 
 ### 10.3 Lo que NUNCA hacer:
 - ❌ NO usar `gridTemplateColumns: '280px 1fr'` — hace la imagen demasiado pequeña.
@@ -553,3 +569,27 @@ Se renderizan en una mini-galería al final del ContentPanel con grid responsive
 - ❌ NO usar `window.open()` ni navegación externa — siempre lightbox in-app
 - ❌ NO olvidar agregar el estado `lightboxSrc` al componente
 - ❌ NO colocar el `<ImageLightbox />` dentro de un loop — va una sola vez al final del JSX
+
+## 16. Optimización y Compresión de Archivos Pesados (Imágenes)
+
+> **REGLA DE RENDIMIENTO Y PESO**: Para evitar la sobrecarga de datos y mantener el sitio liviano tanto en el frontend como en el backend, es estrictamente obligatorio comprimir todas las imágenes y archivos pesados generados antes de realizar un push al repositorio.
+
+- Antes de finalizar la integración de cualquier imagen (`.png`, `.jpg`, etc.) de alta resolución (como las generadas por Vertex AI o descargadas en HD), DEBE ejecutarse un script de compresión (ej. usando Pillow en Python o sharp en Node).
+- **Límite sugerido**: Las imágenes para web no deberían exceder un ancho de 1200px ni pesar de forma individual más de ~250KB si es posible.
+- ❌ NO hacer `git commit` ni `git push` con imágenes crudas de >1MB que puedan saturar el ancho de banda del usuario.
+
+## 17. Cenefa (Banner) Obligatorio en Infografías Interactivas
+
+> **REGLA ESTRUCTURAL**: La imagen panorámica a modo de "cenefa" (banner) introducida previamente como opcional (antigua §12.7) pasa a ser un elemento estructural **OBLIGATORIO** en todas las infografías interactivas.
+
+- Cada nodo (o la infografía en su conjunto, dependiendo de su flujo) debe incorporar al menos una imagen de cenefa panorámica.
+- Esta cenefa separa las secciones colapsables o de contenido y mantiene un respiro visual clave para el diseño.
+- Debe mantener un formato horizontal apaisado (`maxHeight: '180px'` a `'220px'`, `objectFit: 'cover'`).
+
+## 18. Correlación Temática Estricta del Fondo (Background)
+
+> **REGLA DE CONTEXTO VISUAL**: En futuras iteraciones y diseños, la imagen de fondo de las infografías interactivas DEBERÁ ser siempre una imagen **intrínsecamente correlacionada con la temática general de la misión o temas abordados**.
+
+- ❌ NO usar cielos estrellados genéricos o colores sólidos por defecto si el tema trata sobre algo específico (ej. si trata de arqueología espacial, el fondo debería sugerir arena marciana o ruinas estilizadas; si trata sobre agujeros negros, el fondo debería tener discos de acreción sutiles).
+- El fondo interactúa con el estilo "Nilo de Nut" (los tonos del fondo deben combinar con la paleta de las imágenes hero).
+- El fondo debe tener una baja opacidad o estar fuertemente oscurecido para no interferir con la legibilidad del texto (ej. `opacity: 0.1` a `0.3`).

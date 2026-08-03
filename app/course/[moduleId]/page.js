@@ -66,6 +66,24 @@ const InteractiveInfographic_MayaM13 = lazy(() => import('@/components/infograph
 const InteractiveInfographic_MayaM14 = lazy(() => import('@/components/infographics/InteractiveInfographic_MayaM14'));
 const InteractiveInfographic_MayaM15 = lazy(() => import('@/components/infographics/InteractiveInfographic_MayaM15'));
 
+// --- ANIMALES DEL ESPACIO ---
+const InteractiveInfographic_AnimalesM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_AnimalesM1'));
+const InteractiveInfographic_AnimalesM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_AnimalesM2'));
+const InteractiveInfographic_AnimalesM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_AnimalesM3'));
+const InteractiveInfographic_AnimalesM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_AnimalesM4'));
+
+// --- PIONEROS DEL COSMOS ---
+const InteractiveInfographic_PionerosM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_PionerosM1'));
+const InteractiveInfographic_PionerosM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_PionerosM2'));
+const InteractiveInfographic_PionerosM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_PionerosM3'));
+const InteractiveInfographic_PionerosM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_PionerosM4'));
+const InteractiveInfographic_PionerosM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_PionerosM5'));
+const InteractiveInfographic_PionerosM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_PionerosM6'));
+const InteractiveInfographic_PionerosM7 = lazy(() => import('@/components/infographics/InteractiveInfographic_PionerosM7'));
+
+// --- PLANETAS GASEOSOS ---
+const InteractiveInfographic_GaseososM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_GaseososM1'));
+
 // --- PLANETAS ROCOSOS ---
 const InteractiveInfographic_RocososM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM1'));
 const InteractiveInfographic_RocososM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM2'));
@@ -591,8 +609,89 @@ export default function CourseModule() {
           {moduleData.id === 'maya_m15' && (
             <InteractiveInfographic_MayaM15 />
           )}
+          {moduleData.id === 'viaje-planetas-gaseosos' && (
+            <InteractiveInfographic_GaseososM1 />
+          )}
+          {moduleData.id === 'animales_intro' && (
+            <InteractiveInfographic_AnimalesM1 />
+          )}
+          {moduleData.id === 'animales_albert_ham' && (
+            <InteractiveInfographic_AnimalesM2 />
+          )}
+          {moduleData.id === 'animales_laika' && (
+            <InteractiveInfographic_AnimalesM3 />
+          )}
+          {moduleData.id === 'animales_gatos' && (
+            <InteractiveInfographic_AnimalesM4 />
+          )}
+          {moduleData.id === 'pioneros_yuri' && (
+            <InteractiveInfographic_PionerosM1 />
+          )}
+          {moduleData.id === 'pioneros_alan' && (
+            <InteractiveInfographic_PionerosM2 />
+          )}
+          {moduleData.id === 'pioneros_john' && (
+            <InteractiveInfographic_PionerosM3 />
+          )}
+          {moduleData.id === 'pioneros_valentina' && (
+            <InteractiveInfographic_PionerosM4 />
+          )}
+          {moduleData.id === 'pioneros_leonov' && (
+            <InteractiveInfographic_PionerosM5 />
+          )}
+          {moduleData.id === 'pioneros_svetlana' && (
+            <InteractiveInfographic_PionerosM6 />
+          )}
+          {moduleData.id === 'pioneros_sally' && (
+            <InteractiveInfographic_PionerosM7 />
+          )}
+          {moduleData.id === 'rocosos_m1' && (
+            <InteractiveInfographic_RocososM1 />
+          )}
+          {moduleData.id === 'rocosos_m2' && (
+            <InteractiveInfographic_RocososM2 />
+          )}
+          {moduleData.id === 'rocosos_m3' && (
+            <InteractiveInfographic_RocososM3 />
+          )}
+          {moduleData.id === 'rocosos_m4' && (
+            <InteractiveInfographic_RocososM4 />
+          )}
+          {moduleData.id === 'rocosos_m5' && (
+            <InteractiveInfographic_RocososM5 />
+          )}
+          {moduleData.id === 'rocosos_m6' && (
+            <InteractiveInfographic_RocososM6 />
+          )}
+          {moduleData.id === 'exoplanetas_m1' && (
+            <InteractiveInfographic_ExoplanetasM1 />
+          )}
+          {moduleData.id === 'exoplanetas_m2' && (
+            <InteractiveInfographic_ExoplanetasM2 />
+          )}
+          {moduleData.id === 'exoplanetas_m3' && (
+            <InteractiveInfographic_ExoplanetasM3 />
+          )}
+          {moduleData.id === 'exoplanetas_m4' && (
+            <InteractiveInfographic_ExoplanetasM4 />
+          )}
+          {moduleData.id === 'asteroides_intro' && (
+            <InteractiveInfographic_AsteroidesM1 />
+          )}
+          {moduleData.id === 'asteroides_meteoros' && (
+            <InteractiveInfographic_AsteroidesM2 />
+          )}
+          {moduleData.id === 'asteroides_cometas' && (
+            <InteractiveInfographic_AsteroidesM3 />
+          )}
+          {moduleData.id === 'asteroides_sondas' && (
+            <InteractiveInfographic_AsteroidesM4 />
+          )}
+          {moduleData.id === 'asteroides_apophis' && (
+            <InteractiveInfographic_AsteroidesM5 />
+          )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && !moduleData.id.startsWith('rocosos_') && !moduleData.id.startsWith('exoplanetas_') && !moduleData.id.startsWith('asteroides_') && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && moduleData.id !== 'viaje-planetas-gaseosos' && !moduleData.id.startsWith('rocosos_') && !moduleData.id.startsWith('exoplanetas_') && !moduleData.id.startsWith('asteroides_') && !moduleData.id.startsWith('animales_') && !moduleData.id.startsWith('pioneros_') && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (
