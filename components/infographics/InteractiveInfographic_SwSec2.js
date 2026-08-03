@@ -857,7 +857,7 @@ export default function InteractiveInfographic_SwSec2() {
             }}
           >
             <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#FFB74D', margin: '0 0 0.5rem 0', fontSize: '1.5rem' }}>
-              ¡MÃ“DULO COMPLETADO!
+              ¡MÓDULO COMPLETADO!
             </h3>
             <p style={{ color: '#E0E0E0', margin: 0 }}>Has explorado todos los mundos extremos. ¡La galaxia ya no tiene secretos para ti!</p>
           </motion.div>

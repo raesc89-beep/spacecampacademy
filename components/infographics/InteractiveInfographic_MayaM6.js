@@ -302,7 +302,7 @@ function MayaHeader() {
             <stop offset="100%" stopColor="rgba(255,196,0,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#FFC400" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">TEMPLO 7 MUÃ‘ECAS</text>
+        <text x="300" y="80" textAnchor="middle" fill="#FFC400" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">TEMPLO 7 MUÑECAS</text>
         <text x="300" y="100" textAnchor="middle" fill="rgba(255,196,0,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">EL RELOJ SOLAR DE DZIBILCHALTÚN</text>
       </svg>
     </div>

@@ -728,7 +728,7 @@ function ProgressBar({ total, exploredIds }) {
       textAlign: 'center', position: 'relative', zIndex: 2,
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.8rem', color: '#FFD600', fontWeight: 700 }}>
-        <span>PROGRESO DE EXPLORACIÃ“N</span>
+        <span>PROGRESO DE EXPLORACIÓN</span>
         <span>{exploredIds.length} / {total} Nodos</span>
       </div>
       <div style={{ height: '8px', background: 'rgba(255,255,255,0.1)', borderRadius: '4px', overflow: 'hidden' }}>

@@ -740,7 +740,7 @@ export default function InteractiveInfographic_SwSec1() {
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #FFB74D, #FF7043)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#000', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(255, 183, 77, 0.4)' }}
             >
               <Sparkles size={24} />
-              ¡DATOS DE NAVEGACIÃ“N DESCARGADOS CON ÉXITO!
+              ¡DATOS DE NAVEGACIÓN DESCARGADOS CON ÉXITO!
               <Sparkles size={24} />
             </motion.div>
           )}
@@ -749,7 +749,7 @@ export default function InteractiveInfographic_SwSec1() {
         {/* Galería del Halcón Milenario */}
         <div style={{ marginTop: '4rem', width: '100%', maxWidth: '800px' }}>
           <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#FFB74D', fontSize: '1.4rem', textAlign: 'center', marginBottom: '1.5rem', textShadow: '0 0 20px rgba(255,183,77,0.3)' }}>
-            ðŸš€ EL HALCÃ“N MILENARIO EN EL CORREDOR DE KESSEL
+            🚀 EL HALCÓN MILENARIO EN EL CORREDOR DE KESSEL
           </h3>
           <div style={{ 
             display: 'grid', 

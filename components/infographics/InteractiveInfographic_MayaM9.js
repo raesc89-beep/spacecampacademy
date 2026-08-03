@@ -297,7 +297,7 @@ function WakahChanHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#CFD8DC" fontSize="22" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="4">WAKAH CHAN</text>
-        <text x="300" y="105" textAnchor="middle" fill="rgba(255,213,79,0.9)" fontSize="12" fontFamily="monospace" letterSpacing="2">EL ÁRBOL CÃ“SMICO</text>
+        <text x="300" y="105" textAnchor="middle" fill="rgba(255,213,79,0.9)" fontSize="12" fontFamily="monospace" letterSpacing="2">EL ÁRBOL CÓSMICO</text>
       </svg>
     </div>
   );
@@ -544,7 +544,7 @@ function ProgressBar({ nodes, activeNodeId }) {
     <div style={{ margin: '2rem auto 0', maxWidth: '400px', width: '100%', position: 'relative', zIndex: 10 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
         <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', fontWeight: 'bold' }}>
-          MÃ“DULO 9
+          MÓDULO 9
         </span>
         <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', fontWeight: 'bold' }}>
           {activeIndex === -1 ? 0 : activeIndex + 1} / {nodes.length}

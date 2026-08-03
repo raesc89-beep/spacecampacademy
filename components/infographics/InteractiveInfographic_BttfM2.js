@@ -355,7 +355,7 @@ function TimeTravelHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#6EC6FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">VIAJES EN EL TIEMPO</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(110,198,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA DETRÁS DE LA FICCIÃ“N</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(110,198,255,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA CIENCIA DETRÁS DE LA FICCIÓN</text>
       </svg>
     </div>
   );

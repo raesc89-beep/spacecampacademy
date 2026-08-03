@@ -376,7 +376,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         margin: 0,
         letterSpacing: '1px'
       }}>
-        ASTILLEROS &middot; PROPULSIÃ“N &middot; MEGAESTRUCTURAS
+        ASTILLEROS &middot; PROPULSIÓN &middot; MEGAESTRUCTURAS
       </h2>
       
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
@@ -608,7 +608,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
                 boxShadow: `0 4px 15px ${node.color}66`
               }}
             >
-              {isLast ? 'COMPLETAR ENTRENAMIENTO' : 'SIGUIENTE LECCIÃ“N'}
+              {isLast ? 'COMPLETAR ENTRENAMIENTO' : 'SIGUIENTE LECCIÓN'}
               <ChevronRight size={20} />
             </button>
           </div>

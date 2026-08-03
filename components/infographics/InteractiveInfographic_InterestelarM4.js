@@ -338,7 +338,7 @@ function SurveillanceHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#F44336" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">ATLAS</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(244,67,54,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA RED DE VIGILANCIA CÃ“SMICA</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(244,67,54,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">LA RED DE VIGILANCIA CÓSMICA</text>
       </svg>
     </div>
   );
@@ -814,7 +814,7 @@ export default function InteractiveInfographic_InterestelarM4() {
         position: 'relative',
         zIndex: 2,
       }}>
-        <h5 style={{ margin: '0 0 1rem', color: 'rgba(255,255,255,0.7)' }}>REFERENCIAS CIENTÍFICAS (MÃ“DULO 4)</h5>
+        <h5 style={{ margin: '0 0 1rem', color: 'rgba(255,255,255,0.7)' }}>REFERENCIAS CIENTÍFICAS (MÓDULO 4)</h5>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
           {BIBLIOGRAPHY.map((ref, i) => (
             <li key={i}>{ref}</li>

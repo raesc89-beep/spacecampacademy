@@ -409,7 +409,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         margin: 0,
         letterSpacing: '1px'
       }}>
-        BIOLOGÍA EXTREMA &middot; MEGAFAUNA &middot; ADAPTACIÃ“N
+        BIOLOGÍA EXTREMA &middot; MEGAFAUNA &middot; ADAPTACIÓN
       </h2>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
         {nodes.map(n => (
@@ -582,7 +582,7 @@ export default function InteractiveInfographic_SwSec5() {
         </div>
         <div style={{ width: '100%', maxWidth: '600px', marginTop: '4rem', background: '#1A1C29', borderRadius: '12px', padding: '1rem', border: '1px solid #333' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontFamily: '"Oswald", sans-serif', color: '#90A4AE' }}>
-            <span>CONOCIMIENTO XENOBIOLÃ“GICO</span><span>{Math.round(progress)}%</span>
+            <span>CONOCIMIENTO XENOBIOLÓGICO</span><span>{Math.round(progress)}%</span>
           </div>
           <div style={{ width: '100%', height: '8px', background: '#0B0D17', borderRadius: '4px', overflow: 'hidden' }}>
             <motion.div initial={{ width: 0 }} animate={{ width: `${progress}%` }} style={{ height: '100%', background: 'linear-gradient(90deg, #AB47BC, #42A5F5)', boxShadow: '0 0 10px #42A5F5' }} />
@@ -592,13 +592,13 @@ export default function InteractiveInfographic_SwSec5() {
           {isAllComplete && (
             <motion.div initial={{ opacity: 0, scale: 0.9, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}>
               <img src="/assets/starwars/infographic_fauna/badge_fauna.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
-              ¡DATOS XENOBIOLÃ“GICOS COMPLETADOS!
+              ¡DATOS XENOBIOLÓGICOS COMPLETADOS!
               <Sparkles size={24} />
             </motion.div>
           )}
         </AnimatePresence>
         <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
-          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÃ“N (Bibliografía)</h3>
+          <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÓN (Bibliografía)</h3>
           <ul style={{ margin: 0, padding: '0 0 0 1rem', color: '#78909C', fontFamily: '"Lora", serif', fontSize: '0.9rem', lineHeight: 1.8 }}>
             {BIBLIOGRAPHY.map((item, idx) => <li key={idx} style={{ marginBottom: '0.5rem' }}>{item}</li>)}
           </ul>

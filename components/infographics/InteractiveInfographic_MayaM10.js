@@ -81,8 +81,8 @@ const DECO_MAP = {
 }; const BIBLIOGRAPHY = ['Milbrath, S. (1999). Star Gods of the Maya, University of Texas Press',
   'Aveni, A.F. (2001). Skywatchers of Ancient Mexico, University of Texas Press',
   'Tedlock, D. (1996). Popol Vuh: The Definitive Edition of The Mayan Book of the Dawn of Life, Simon & Schuster',
-  'MalmstrÃƒÂ¶m, V.H. (1997). Cycles of the Sun, Mysteries of the Moon, University of Texas Press',
-  'Ã…Â prajc, I. (2001). Orientaciones Astronómicas en la Arquitectura Prehispánica del Centro de México, INAH',
+  'Malmström, V.H. (1997). Cycles of the Sun, Mysteries of the Moon, University of Texas Press',
+  'Šprajc, I. (2001). Orientaciones Astronómicas en la Arquitectura Prehispánica del Centro de México, INAH',
 ];
 
 const INFOGRAPHIC_NODES = [

@@ -401,7 +401,7 @@ function InterestelarHeader() {
             <stop offset="100%" stopColor="rgba(0,229,255,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="75" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">NÃƒ"MADAS DEL COSMOS</text>
+        <text x="300" y="75" textAnchor="middle" fill="#00E5FF" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">NÓMADAS DEL COSMOS</text>
         <text x="300" y="95" textAnchor="middle" fill="rgba(0,229,255,0.7)" fontSize="11" fontFamily="monospace" letterSpacing="2">OBJETOS INTERESTELARES</text>
       </svg>
     </div>

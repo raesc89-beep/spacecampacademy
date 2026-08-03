@@ -417,7 +417,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         textTransform: 'uppercase',
         textShadow: '0 2px 10px rgba(211, 47, 47, 0.4)'
       }}>
-        BIOMEDICINA Y ROBÃ“TICA
+        BIOMEDICINA Y ROBÓTICA
       </h1>
       <h2 style={{
         fontFamily: '"Lora", serif',
@@ -721,7 +721,7 @@ export default function InteractiveInfographic_SwSec9() {
 
         <div style={{ width: '100%', maxWidth: '600px', marginTop: '4rem', background: '#1A1C29', borderRadius: '12px', padding: '1rem', border: '1px solid #333' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontFamily: '"Oswald", sans-serif', color: '#90A4AE' }}>
-            <span>INTEGRACIÃ“N CIBERNÉTICA</span>
+            <span>INTEGRACIÓN CIBERNÉTICA</span>
             <span>{Math.round(progress)}%</span>
           </div>
           <div style={{ width: '100%', height: '8px', background: '#0B0D17', borderRadius: '4px', overflow: 'hidden' }}>

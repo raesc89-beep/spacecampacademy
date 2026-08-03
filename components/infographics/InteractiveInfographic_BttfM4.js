@@ -133,7 +133,7 @@ const DECO_MAP = {
 };
 
 const BIBLIOGRAPHY = [
-  "Boltzmann, L. (1877). 'Ãœber die Beziehung zwischen dem zweiten Hauptsatze', Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften",
+  "Boltzmann, L. (1877). 'Über die Beziehung zwischen dem zweiten Hauptsatze', Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften",
   "Hawking, S. (1988). A Brief History of Time, Bantam Books",
   "Penrose, R. (2004). The Road to Reality, Jonathan Cape",
   "Carroll, S. (2010). From Eternity to Here: The Quest for the Ultimate Theory of Time, Dutton",

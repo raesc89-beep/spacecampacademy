@@ -324,7 +324,7 @@ function DaggerHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#B0C4DE" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">LA DAGA ESPACIAL</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(176,196,222,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">METAL DEL CIELO EN MANOS DEL FARAÃ“N</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(176,196,222,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">METAL DEL CIELO EN MANOS DEL FARAÓN</text>
       </svg>
     </div>
   );

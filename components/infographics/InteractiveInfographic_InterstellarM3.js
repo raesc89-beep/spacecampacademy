@@ -257,7 +257,7 @@ function InterstellarHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#FF6B35" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">EL TIEMPO ES ELÁSTICO</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(79,195,247,0.8)" fontSize="11" fontFamily="monospace" letterSpacing="2">DILATACIÃ“N TEMPORAL</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(79,195,247,0.8)" fontSize="11" fontFamily="monospace" letterSpacing="2">DILATACIÓN TEMPORAL</text>
       </svg>
     </div>
   );

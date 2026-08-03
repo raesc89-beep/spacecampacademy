@@ -147,7 +147,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       "Uno de los momentos más impactantes de la saga espacial es cuando Luke Skywalker pierde su mano derecha durante un feroz duelo de sables de luz. Recibe una prótesis cibernética asombrosa que se ve, se mueve e incluso siente exactamente como una mano biológica real humana. Durante muchas décadas, los admiradores de la película creyeron que esto solo existiría en la imaginación y la ficción. Pero la ciencia moderna, combinando la medicina, la robótica y la ingeniería, está haciendo que las prótesis biónicas reales sean igual de asombrosas que la tecnología médica del universo de Star Wars.",
       "La magia detrás de los brazos robóticos modernos se basa en algo llamado Electromiografía (o EMG). Cada vez que tú decides mover un dedo de la mano, tu cerebro envía un pequeñísimo y sutil impulso eléctrico a través de tus nervios hasta los músculos de tu antebrazo. Piensa en el sistema EMG como si tus propios músculos biológicos le estuvieran enviando discretos mensajes de texto con instrucciones directas a los motores de la mano protésica de plástico y metal. La computadora dentro del brazo biónico lee estas señales eléctricas y hace que la mano robótica cierre el puño, agarre un vaso o señale con un dedo.",
-      "Empresas tecnológicas vanguardistas como Ã–ssur y Open Bionics han creado manos robóticas increíbles donde cada uno de los dedos metálicos y plásticos tiene su propio y pequeño motor (un servo). Al tener motores individuales, los pacientes humanos pueden realizar agarres mucho más complejos y precisos, como sostener suavemente un delicado huevo de gallina sin romper su cáscara o utilizar un teclado de computadora. La gran meta no es simplemente reemplazar una extremidad ausente, sino lograr devolverle a las personas su total autonomía, independencia y dignidad en sus vidas diarias.",
+      "Empresas tecnológicas vanguardistas como Össur y Open Bionics han creado manos robóticas increíbles donde cada uno de los dedos metálicos y plásticos tiene su propio y pequeño motor (un servo). Al tener motores individuales, los pacientes humanos pueden realizar agarres mucho más complejos y precisos, como sostener suavemente un delicado huevo de gallina sin romper su cáscara o utilizar un teclado de computadora. La gran meta no es simplemente reemplazar una extremidad ausente, sino lograr devolverle a las personas su total autonomía, independencia y dignidad en sus vidas diarias.",
       "Pero, ¿cómo pueden sentir el tacto como la mano cibernética de Luke? Los ingenieros prodigiosos de la Universidad Johns Hopkins y otras instituciones prestigiosas han logrado desarrollar un proceso llamado 'Reinervación Muscular Dirigida'. Los cirujanos redirigen cuidadosamente los cables nerviosos de los brazos de los pacientes para conectarlos a complejos parches llenos de sensores especiales. Así, cuando los dedos robóticos tocan una superficie, envían de regreso una suave corriente eléctrica. El paciente puede entonces sentir si está tocando algo caliente, frío, duro o suave.",
       "El inmenso y emocionante futuro de estas maravillas tecnológicas nos llevará directamente a la ciencia de las interfaces cerebro-computadora. Con esto, algún día una persona podrá dirigir su extremidad robótica utilizando exclusiva e instantáneamente la fuerza de su propio pensamiento, exactamente igual que un brazo de nacimiento. Esta deslumbrante intersección entre la anatomía biológica humana y el diseño de la mecatrónica avanzada es la prueba perfecta de. Nuestra ciencia del mundo real está alcanzando rápidamente a las grandes maravillas que antes solo soñábamos ver en las pantallas de cine."
     ],
@@ -382,7 +382,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         textTransform: 'uppercase',
         textShadow: '0 2px 10px rgba(171, 71, 188, 0.4)'
       }}>
-        BIOMECATRÃ“NICA E IA
+        BIOMECATRÓNICA E IA
       </h1>
       <h2 style={{
         fontFamily: '"Lora", serif',
@@ -391,7 +391,7 @@ const GalacticHeader = ({ nodes, activeId }) => {
         margin: 0,
         letterSpacing: '1px'
       }}>
-        DROIDES &middot; ROVERS &middot; PRÃ“TESIS
+        DROIDES &middot; ROVERS &middot; PRÓTESIS
       </h2>
       
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
@@ -709,7 +709,7 @@ export default function InteractiveInfographic_SwSec3() {
 
         <div style={{ width: '100%', maxWidth: '600px', marginTop: '4rem', background: '#1A1C29', borderRadius: '12px', padding: '1rem', border: '1px solid #333' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontFamily: '"Oswald", sans-serif', color: '#90A4AE' }}>
-            <span>PROTOCOLO DE ACTIVACIÃ“N</span>
+            <span>PROTOCOLO DE ACTIVACIÓN</span>
             <span>{Math.round(progress)}%</span>
           </div>
           <div style={{ width: '100%', height: '8px', background: '#0B0D17', borderRadius: '4px', overflow: 'hidden' }}>

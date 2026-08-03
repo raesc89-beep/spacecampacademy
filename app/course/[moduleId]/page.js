@@ -66,6 +66,28 @@ const InteractiveInfographic_MayaM13 = lazy(() => import('@/components/infograph
 const InteractiveInfographic_MayaM14 = lazy(() => import('@/components/infographics/InteractiveInfographic_MayaM14'));
 const InteractiveInfographic_MayaM15 = lazy(() => import('@/components/infographics/InteractiveInfographic_MayaM15'));
 
+// --- PLANETAS ROCOSOS ---
+const InteractiveInfographic_RocososM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM1'));
+const InteractiveInfographic_RocososM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM2'));
+const InteractiveInfographic_RocososM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM3'));
+const InteractiveInfographic_RocososM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM4'));
+const InteractiveInfographic_RocososM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM5'));
+const InteractiveInfographic_RocososM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_RocososM6'));
+
+// --- LOS EXOPLANETAS ---
+const InteractiveInfographic_ExoplanetasM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_ExoplanetasM1'));
+const InteractiveInfographic_ExoplanetasM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_ExoplanetasM2'));
+const InteractiveInfographic_ExoplanetasM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_ExoplanetasM3'));
+const InteractiveInfographic_ExoplanetasM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_ExoplanetasM4'));
+
+// --- ASTEROIDES Y COMETAS ---
+const InteractiveInfographic_AsteroidesM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_AsteroidesM1'));
+const InteractiveInfographic_AsteroidesM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_AsteroidesM2'));
+const InteractiveInfographic_AsteroidesM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_AsteroidesM3'));
+const InteractiveInfographic_AsteroidesM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_AsteroidesM4'));
+const InteractiveInfographic_AsteroidesM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_AsteroidesM5'));
+
+
 
 import { useCourseData } from '@/hooks/useCourseData';
 
@@ -570,7 +592,7 @@ export default function CourseModule() {
             <InteractiveInfographic_MayaM15 />
           )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && (
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && !moduleData.id.startsWith('rocosos_') && !moduleData.id.startsWith('exoplanetas_') && !moduleData.id.startsWith('asteroides_') && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (

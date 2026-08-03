@@ -705,7 +705,7 @@ function ProgressBar({ nodes, exploredNodes, color = '#B3E5FC' }) {
   return (
     <div style={{ margin: '2rem auto 0', maxWidth: '300px', textAlign: 'center' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: '0.5rem', fontWeight: 600, letterSpacing: '1px' }}>
-        <span>PROGRESO DE MISIÃ“N</span>
+        <span>PROGRESO DE MISIÓN</span>
         <span>{exploredNodes.size} / {nodes.length} NUBES EXPLORADAS</span>
       </div>
       <div style={{ height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', overflow: 'hidden', position: 'relative' }}>
