@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Rocket, Star, Orbit, ChevronDown, ChevronUp, BookOpen, Award, Globe } from 'lucide-react';
@@ -86,7 +87,7 @@ export default function InteractiveInfographic_PionerosM6() {
 
       {/* Hero Section */}
       <div style={{ display: 'flex', flexDirection: 'row', gap: '2rem', marginBottom: '3rem', flexWrap: 'wrap' }}>
-        <div style={{ flex: '1 1 300px', borderRadius: '12px', overflow: 'hidden', border: \`4px solid \${COLORS.primary}\` }}>
+        <div style={{ flex: '1 1 300px', borderRadius: '12px', overflow: 'hidden', border: `4px solid ${COLORS.primary}` }}>
           <img 
             src="/assets/course/animales_pioneros/hero_svetlana.jpg" 
             alt="Svetlana Savitskaya Hero" 
@@ -105,7 +106,7 @@ export default function InteractiveInfographic_PionerosM6() {
             <img 
               src="/assets/course/animales_pioneros/btn_svetlana.jpg" 
               alt="Svetlana Button" 
-              style={{ width: '150px', borderRadius: '8px', border: \`2px solid \${COLORS.accent}\`, cursor: 'pointer' }}
+              style={{ width: '150px', borderRadius: '8px', border: `2px solid ${COLORS.accent}`, cursor: 'pointer' }}
             />
           </div>
         </div>
@@ -155,7 +156,7 @@ export default function InteractiveInfographic_PionerosM6() {
                   transition={{ duration: 0.4, ease: 'easeInOut' }}
                   style={{ overflow: 'hidden' }}
                 >
-                  <div style={{ padding: '2rem', borderTop: \`1px solid rgba(255,255,255,0.1)\` }}>
+                  <div style={{ padding: '2rem', borderTop: `1px solid rgba(255,255,255,0.1)` }}>
                     {section.content.map((paragraph, index) => (
                       <p 
                         key={index} 
@@ -182,7 +183,7 @@ export default function InteractiveInfographic_PionerosM6() {
         backgroundColor: 'rgba(0,0,0,0.2)', 
         padding: '2rem', 
         borderRadius: '8px', 
-        borderLeft: \`4px solid \${COLORS.accent}\` 
+        borderLeft: `4px solid ${COLORS.accent}` 
       }}>
         <h3 style={{ color: COLORS.accent, display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: 0 }}>
           <BookOpen size={24} />

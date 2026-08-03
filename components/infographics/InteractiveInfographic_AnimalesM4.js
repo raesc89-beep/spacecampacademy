@@ -205,7 +205,7 @@ function TemporalField() {
         
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = \`rgba(\${p.color}, \${Math.max(0, opacity)})\`;
+        ctx.fillStyle = `rgba(${p.color}, ${Math.max(0, opacity)})`;
         ctx.fill();
       });
       frame = requestAnimationFrame(draw);
@@ -224,13 +224,13 @@ function ExpandableSection({ item, color }) {
     <div style={{
       marginTop: '0.8rem',
       borderRadius: '14px',
-      border: \`1px solid \${color}25\`,
+      border: `1px solid ${color}25`,
       overflow: 'hidden',
-      background: \`linear-gradient(135deg, \${color}08, transparent)\`,
+      background: `linear-gradient(135deg, ${color}08, transparent)`,
     }}>
       <motion.button
         onClick={() => setOpen(!open)}
-        whileHover={{ backgroundColor: \`\${color}12\` }}
+        whileHover={{ backgroundColor: `${color}12` }}
         style={{
           width: '100%',
           display: 'flex',
@@ -248,7 +248,7 @@ function ExpandableSection({ item, color }) {
           transition={{ duration: 0.3 }}
           style={{
             width: '30px', height: '30px', borderRadius: '50%',
-            background: \`\${color}25\`, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            background: `${color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center',
             flexShrink: 0,
           }}
         >
@@ -275,7 +275,7 @@ function ExpandableSection({ item, color }) {
               <p key={idx} style={{
                 margin: '0 0 0.8rem', fontSize: '0.9rem', lineHeight: 1.75,
                 color: 'rgba(255,255,255,0.85)',
-                borderLeft: \`3px solid \${color}30\`,
+                borderLeft: `3px solid ${color}30`,
                 paddingLeft: '0.8rem',
               }}>
                 {para}
@@ -284,7 +284,7 @@ function ExpandableSection({ item, color }) {
               <p style={{
                 margin: 0, fontSize: '0.9rem', lineHeight: 1.75,
                 color: 'rgba(255,255,255,0.85)',
-                borderLeft: \`3px solid \${color}30\`,
+                borderLeft: `3px solid ${color}30`,
                 paddingLeft: '0.8rem',
               }}>
                 {item.text}
@@ -323,9 +323,9 @@ function NodeButton({ node, isActive, onClick, index }) {
         height: '90px',
         borderRadius: '50%',
         overflow: 'hidden',
-        border: \`3px solid \${isActive ? node.color : 'rgba(216,125,74,0.2)'}\`,
+        border: `3px solid ${isActive ? node.color : 'rgba(216,125,74,0.2)'}`,
         boxShadow: isActive
-          ? \`0 0 20px \${node.color}50, 0 0 40px \${node.color}20, inset 0 0 15px \${node.color}30\`
+          ? `0 0 20px ${node.color}50, 0 0 40px ${node.color}20, inset 0 0 15px ${node.color}30`
           : '0 4px 15px rgba(0,0,0,0.3)',
         transition: 'all 0.3s ease',
         position: 'relative',
@@ -335,7 +335,7 @@ function NodeButton({ node, isActive, onClick, index }) {
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            style={{ position: 'absolute', inset: '-4px', borderRadius: '50%', border: \`2px solid \${node.color}\`, pointerEvents: 'none' }}
+            style={{ position: 'absolute', inset: '-4px', borderRadius: '50%', border: `2px solid ${node.color}`, pointerEvents: 'none' }}
           />
         )}
       </div>
@@ -346,14 +346,14 @@ function NodeButton({ node, isActive, onClick, index }) {
         lineHeight: 1.2,
         transition: 'color 0.3s',
         maxWidth: '100px',
-        textShadow: isActive ? \`0 0 8px \${node.color}40\` : 'none',
+        textShadow: isActive ? `0 0 8px ${node.color}40` : 'none',
       }}>
         {node.title}
       </span>
       {isActive && (
         <motion.div
           layoutId="activeDotAnimalesM4"
-          style={{ width: '6px', height: '6px', borderRadius: '50%', background: node.color, boxShadow: \`0 0 8px \${node.color}\` }}
+          style={{ width: '6px', height: '6px', borderRadius: '50%', background: node.color, boxShadow: `0 0 8px ${node.color}` }}
         />
       )}
     </motion.button>
@@ -377,7 +377,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
       style={{
         background: 'rgba(10, 12, 30, 0.92)',
         backdropFilter: 'blur(24px)',
-        border: \`1px solid \${node.color}30\`,
+        border: `1px solid ${node.color}30`,
         borderRadius: '24px',
         position: 'relative',
         zIndex: 3,
@@ -387,7 +387,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
     >
       <button onClick={onClose} style={{
         position: 'absolute', top: '1rem', right: '1rem', zIndex: 10,
-        background: 'rgba(0,0,0,0.6)', border: \`1px solid \${node.color}40\`,
+        background: 'rgba(0,0,0,0.6)', border: `1px solid ${node.color}40`,
         borderRadius: '50%', width: '40px', height: '40px',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         cursor: 'pointer', color: node.color, transition: 'all 0.2s',
@@ -398,9 +398,9 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
       <div style={{
         display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', minHeight: '280px',
       }}>
-        <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: \`linear-gradient(135deg, \${node.color}15, rgba(0,0,0,0.4))\` }}>
+        <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: `linear-gradient(135deg, ${node.color}15, rgba(0,0,0,0.4))` }}>
           <img src={node.image} alt={node.title} onClick={() => setLightboxSrc(node.image)} style={{ width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer', opacity: 0.9, minHeight: '280px' }} />
-          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: \`linear-gradient(transparent, \${node.color}15)\`, pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: `linear-gradient(transparent, ${node.color}15)`, pointerEvents: 'none' }} />
         </div>
         <div style={{ padding: '2rem 2rem 1.5rem 1.5rem', position: 'relative' }}>
           {decoComponents[0] && (
@@ -409,7 +409,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
           )}
           <h3 style={{ margin: '0 0 0.8rem', fontSize: '1.5rem', fontWeight: 800, color: node.color, letterSpacing:'-0.02em', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-            <span style={{ display: 'inline-flex', width: '40px', height: '40px', borderRadius: '50%', overflow: 'hidden', border: \`2px solid \${node.color}40\`, flexShrink: 0 }}>
+            <span style={{ display: 'inline-flex', width: '40px', height: '40px', borderRadius: '50%', overflow: 'hidden', border: `2px solid ${node.color}40`, flexShrink: 0 }}>
               <img src={node.btnImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
             </span>
             {node.title}
@@ -435,7 +435,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           {node.content.slice(2).map((para, i) => {
             const isWide = i === node.content.slice(2).length - 1 && (node.content.slice(2).length % 2 !== 0);
             return (
-              <div key={i} style={{ gridColumn: isWide ? '1 / -1' : 'auto', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', padding: '1.2rem', borderLeft: \`3px solid \${node.color}30\`, position: 'relative' }}>
+              <div key={i} style={{ gridColumn: isWide ? '1 / -1' : 'auto', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', padding: '1.2rem', borderLeft: `3px solid ${node.color}30`, position: 'relative' }}>
                 <div style={{ position: 'absolute', top: '-8px', left: '12px', background: node.color, color:'#0B0E2D', fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '8px', letterSpacing: '1px' }}>
                   {i === 0 ? '◆' : '◇'}
                 </div>
@@ -451,7 +451,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
           </div>
         )}
-        <motion.div whileHover={{ scale: 1.01 }} style={{ marginTop: '1.5rem', padding: '1.2rem', background: \`linear-gradient(90deg, \${node.color}15, transparent)\`, borderLeft: \`4px solid \${node.color}\`, borderRadius: '0 12px 12px 0', display: 'flex', gap: '1rem', alignItems: 'flex-start', position: 'relative', zIndex: 2 }}>
+        <motion.div whileHover={{ scale: 1.01 }} style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderLeft: `4px solid ${node.color}`, borderRadius: '0 12px 12px 0', display: 'flex', gap: '1rem', alignItems: 'flex-start', position: 'relative', zIndex: 2 }}>
           <Sparkles size={24} color={node.color} style={{ flexShrink: 0, marginTop: '2px' }} />
           <p style={{ margin: 0, fontSize: '0.95rem', fontStyle: 'italic', color: 'rgba(255,255,255,0.9)', lineHeight: 1.6 }}>{node.fact}</p>
         </motion.div>
@@ -469,7 +469,7 @@ function ProgressBar({ visited, total }) {
         <span>{visited.length} / {total} Completado</span>
       </div>
       <div style={{ width: '100%', height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '3px', overflow: 'hidden' }}>
-        <motion.div initial={{ width: 0 }} animate={{ width: \`\${progress}%\` }} transition={{ duration: 0.8, ease: 'easeOut' }} style={{ height: '100%', background: 'linear-gradient(90deg, #D87D4A, #D4B872)', borderRadius: '3px' }} />
+        <motion.div initial={{ width: 0 }} animate={{ width: `${progress}%` }} transition={{ duration: 0.8, ease: 'easeOut' }} style={{ height: '100%', background: 'linear-gradient(90deg, #D87D4A, #D4B872)', borderRadius: '3px' }} />
       </div>
     </div>
   );

@@ -575,8 +575,10 @@ Se renderizan en una mini-galería al final del ContentPanel con grid responsive
 > **REGLA DE RENDIMIENTO Y PESO**: Para evitar la sobrecarga de datos y mantener el sitio liviano tanto en el frontend como en el backend, es estrictamente obligatorio comprimir todas las imágenes y archivos pesados generados antes de realizar un push al repositorio.
 
 - Antes de finalizar la integración de cualquier imagen (`.png`, `.jpg`, etc.) de alta resolución (como las generadas por Vertex AI o descargadas en HD), DEBE ejecutarse un script de compresión (ej. usando Pillow en Python o sharp en Node).
-- **Límite sugerido**: Las imágenes para web no deberían exceder un ancho de 1200px ni pesar de forma individual más de ~250KB si es posible.
+- **Preservación de calidad**: La compresión NUNCA debe degradar la calidad visual de forma perceptible. Usar JPEG `quality=85` como mínimo (nunca menor de 80). Para PNG, usar compresión lossless (`optimize=True`). Si una imagen se ve borrosa o con artefactos tras la compresión, regenerar con calidad más alta.
+- **Límite sugerido**: Las imágenes para web no deberían exceder un ancho de 1200px ni pesar de forma individual más de ~250KB si es posible. Pero si reducir el tamaño implica degradar la calidad visual, se permite hasta ~400KB.
 - ❌ NO hacer `git commit` ni `git push` con imágenes crudas de >1MB que puedan saturar el ancho de banda del usuario.
+- ❌ NO usar `quality` menor a 80 en JPEG. La calidad visual tiene prioridad sobre el ahorro de bytes.
 
 ## 17. Cenefa (Banner) Obligatorio en Infografías Interactivas
 
