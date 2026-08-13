@@ -96,8 +96,8 @@ const INFOGRAPHIC_NODES = [
     id: 'mision-vosjod',
     title: 'La Misión Vosjod 2',
     color: '#D87D4A',
-    btnImage: '/assets/course/animales_pioneros/btn_leonov.jpg',
-    image: '/assets/course/animales_pioneros/hero_leonov.jpg',
+    btnImage: '/assets/pioneros/infographic_m5/btn_mision-vosjod.jpg',
+    image: '/assets/pioneros/infographic_m5/hero_mision-vosjod.jpg',
     content: ['El 18 de marzo de 1965, la nave espacial Vosjod 2 despegó desde el cosmódromo de Baikonur rumbo a las estrellas.', 'A bordo iban dos valientes tripulantes: el comandante Pavel Belyayev y el piloto Alexei Leonov.', 'Su objetivo principal era realizar la primera caminata espacial en la historia de la humanidad, un paso gigante para la exploración.', 'La nave era una versión modificada del modelo Vostok, a la que le añadieron una esclusa de aire inflable llamada Volga.', 'Los ingenieros soviéticos trabajaron bajo mucha presión de tiempo para adelantarse al programa Gemini de la NASA.'],
     expandables: [
       { label: 'Análisis Detallado', icon: 'zap', text: ['La misión duró un total de 26 horas en órbita alrededor de la Tierra.', 'El diseño de la esclusa Volga permitía que Leonov saliera al espacio sin despresurizar la cabina principal donde estaba Belyayev.', 'Volga pesaba 250 kilogramos y se extendía 2.5 metros hacia afuera una vez inflada en el espacio.', 'La nave alcanzó una altitud máxima de 495 kilómetros, mucho más alto de lo planeado originalmente.', 'Durante el despegue, los cosmonautas experimentaron una fuerza de gravedad intensa que los pegó a sus asientos.'] },
@@ -109,8 +109,8 @@ const INFOGRAPHIC_NODES = [
     id: 'traje-berkut',
     title: 'El Traje Espacial Berkut',
     color: '#D4B872',
-    btnImage: '/assets/course/animales_pioneros/hero_traje_berkut.jpg',
-    image: '/assets/course/animales_pioneros/hero_traje_berkut.jpg',
+    btnImage: '/assets/pioneros/infographic_m5/btn_traje-berkut.jpg',
+    image: '/assets/pioneros/infographic_m5/hero_traje-berkut.jpg',
     content: ['El traje espacial Berkut, que significa "águila dorada", fue diseñado por la empresa rusa NPO Zvezda.', 'Pesaba 20 kilogramos en la Tierra e incluía una mochila especial con soporte vital para 45 minutos.', 'Tenía un torso rígido de aluminio, mientras que los brazos y piernas estaban hechos de capas flexibles de goma.', 'Su casco brillante contaba con un filtro dorado para proteger los ojos de Leonov de los fuertes rayos del Sol.', 'Para mantener la presión necesaria y permitir la respiración, el traje se inflaba como un globo gigante en el vacío.'],
     expandables: [
       { label: 'Análisis Detallado', icon: 'zap', text: ['El mayor problema del traje Berkut fue que se infló demasiado en el espacio, volviéndose duro como una tabla.', 'Las articulaciones se pusieron tan tensas que doblar un brazo o una pierna requería una fuerza física enorme.', 'La mochila, llamada KP-55, suministraba oxígeno puro y eliminaba el dióxido de carbono producido al respirar.', 'Para volver a entrar a la nave, Leonov tuvo que liberar aire del traje usando una válvula de emergencia.', 'Bajar la presión rápidamente era muy peligroso, ya que podía causarle la enfermedad por descompresión en la sangre.'] },
@@ -122,8 +122,8 @@ const INFOGRAPHIC_NODES = [
     id: 'caminata-historica',
     title: 'La Caminata Histórica',
     color: '#80DEEA',
-    btnImage: '/assets/course/animales_pioneros/btn_caminata_leonov.jpg',
-    image: '/assets/course/animales_pioneros/hero_caminata_leonov.jpg',
+    btnImage: '/assets/pioneros/infographic_m5/btn_caminata-historica.jpg',
+    image: '/assets/pioneros/infographic_m5/hero_caminata-historica.jpg',
     content: ['A las 11:34 de la mañana, Alexei Leonov abrió la escotilla y salió flotando hacia la inmensidad del cosmos.', 'Estuvo fuera de la nave durante 12 minutos y 9 segundos, conectado solo por un cordón de seguridad de 5.35 metros.', 'Desde allá arriba, Leonov pudo ver montañas, ríos y nubes moviéndose lentamente sobre la superficie terrestre.', 'Experimentó cambios de temperatura brutales: de -150°C en la sombra hasta +150°C bajo la luz directa del sol.', 'La caminata fue transmitida por televisión en vivo a toda Rusia, sorprendiendo a millones de espectadores.'],
     expandables: [
       { label: 'Análisis Detallado', icon: 'zap', text: ['El traje de Leonov se infló tanto que no podía doblar los dedos para usar la cámara fotográfica.', 'Al intentar regresar, descubrió que era demasiado ancho para pasar por la entrada de la esclusa Volga.', 'Tuvo que tomar la arriesgada decisión de desinflar su traje manualmente mientras seguía flotando en el espacio.', 'En lugar de entrar de cabeza como estaba planeado, tuvo que entrar de pies para poder cerrar la puerta.', 'El esfuerzo físico fue tan grande que Leonov sudó litros de agua, empañando por completo el visor de su casco.'] },
@@ -135,8 +135,8 @@ const INFOGRAPHIC_NODES = [
     id: 'regreso-peligroso',
     title: 'Un Regreso al Límite',
     color: '#3949AB',
-    btnImage: '/assets/course/animales_pioneros/btn_regreso_vosjod.jpg',
-    image: '/assets/course/animales_pioneros/hero_regreso_vosjod.jpg',
+    btnImage: '/assets/pioneros/infographic_m5/btn_regreso-peligroso.jpg',
+    image: '/assets/pioneros/infographic_m5/hero_regreso-peligroso.jpg',
     content: ['Después de la caminata, los problemas continuaron cuando el sistema de aterrizaje automático de la nave falló por completo.', 'El comandante Belyayev tuvo que tomar el control manual para encender los cohetes de frenado.', 'Debido a las dificultades, la cápsula aterrizó a 386 kilómetros de su objetivo original, en medio de la nieve.', 'Cayeron en lo profundo del bosque de taiga en los Montes Urales, rodeados de osos y lobos salvajes.', 'Pasaron dos noches soportando temperaturas de -30°C dentro de su cápsula atrapada entre grandes árboles.'],
     expandables: [
       { label: 'Análisis Detallado', icon: 'zap', text: ['Para poder orientar la nave correctamente, Belyayev tuvo que desabrocharse el cinturón y asomarse por la ventana.', 'El peso extra afectó el centro de gravedad, causando que la nave girara de manera brusca al entrar a la atmósfera.', 'La escotilla quedó bloqueada por un gran árbol, así que tuvieron que empujarla con todas sus fuerzas para poder salir.', 'El sistema eléctrico falló, por lo que los ventiladores dejaron de funcionar y la cabina se llenó de un frío intenso.', 'Los helicópteros de rescate los encontraron rápido, pero no podían aterrizar debido a lo espeso que era el bosque.'] },

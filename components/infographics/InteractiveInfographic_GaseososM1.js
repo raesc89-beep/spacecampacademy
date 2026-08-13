@@ -65,8 +65,8 @@ const INFOGRAPHIC_NODES = [
     id: 'jupiter-rey',
     title: 'Júpiter: El Rey',
     color: '#D87D4A',
-    btnImage: '/assets/course/viaje-planetas-gaseosos/btn_jupiter.jpg',
-    image: '/assets/course/viaje-planetas-gaseosos/hero_jupiter.jpg',
+    btnImage: '/assets/gaseosos/infographic_m1/btn_jupiter-rey.jpg',
+    image: '/assets/gaseosos/infographic_m1/hero_jupiter-rey.jpg',
     bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
     bannerCaption: 'Júpiter gobierna como el monarca absoluto de nuestro sistema estelar.',
     content: [
@@ -86,8 +86,8 @@ const INFOGRAPHIC_NODES = [
     id: 'saturno-anillos',
     title: 'Saturno: El Señor',
     color: '#D4B872',
-    btnImage: '/assets/course/viaje-planetas-gaseosos/btn_saturno.jpg',
-    image: '/assets/course/viaje-planetas-gaseosos/hero_saturno.jpg',
+    btnImage: '/assets/gaseosos/infographic_m1/btn_saturno-anillos.jpg',
+    image: '/assets/gaseosos/infographic_m1/hero_saturno-anillos.jpg',
     bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
     bannerCaption: 'Los espectaculares anillos de Saturno, formados por innumerables fragmentos helados.',
     content: [
@@ -107,8 +107,8 @@ const INFOGRAPHIC_NODES = [
     id: 'urano-inclinado',
     title: 'Urano: El Inclinado',
     color: '#80DEEA',
-    btnImage: '/assets/course/viaje-planetas-gaseosos/btn_urano.jpg',
-    image: '/assets/course/viaje-planetas-gaseosos/hero_urano.jpg',
+    btnImage: '/assets/gaseosos/infographic_m1/btn_urano-inclinado.jpg',
+    image: '/assets/gaseosos/infographic_m1/hero_urano-inclinado.jpg',
     bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
     bannerCaption: 'Urano es un mundo congelado e inclinado sobre su costado.',
     content: [
@@ -128,8 +128,8 @@ const INFOGRAPHIC_NODES = [
     id: 'neptuno-vientos',
     title: 'Neptuno: Supersónico',
     color: '#3949AB',
-    btnImage: '/assets/course/viaje-planetas-gaseosos/btn_neptuno.jpg',
-    image: '/assets/course/viaje-planetas-gaseosos/hero_neptuno.jpg',
+    btnImage: '/assets/gaseosos/infographic_m1/btn_neptuno-vientos.jpg',
+    image: '/assets/gaseosos/infographic_m1/hero_neptuno-vientos.jpg',
     bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
     bannerCaption: 'Neptuno, el distante gigante de hielo barrido por implacables tormentas.',
     content: [

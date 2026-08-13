@@ -99,8 +99,8 @@ const INFOGRAPHIC_NODES = [
     id: 'nucleo-gigante',
     title: 'El Núcleo Gigante',
     color: '#E63946',
-    btnImage: '/assets/mercury_orbital_resonance.png',
-    image: '/assets/mercury_orbital_resonance.png',
+    btnImage: '/assets/rocosos/infographic_m2/btn_nucleo-gigante.jpg',
+    image: '/assets/rocosos/infographic_m2/hero_nucleo-gigante.jpg',
     content: [
       'Mercurio es el planeta más pequeño del Sistema Solar, pero oculta un secreto descomunal bajo su superficie pedregosa. Si pudieras cortar a Mercurio por la mitad como un aguacate, descubrirías que la semilla o núcleo metálico ocupa casi todo el planeta. A diferencia de la Tierra, donde el núcleo es solo una fracción del interior, el núcleo de hierro de Mercurio abarca más del ochenta y cinco por ciento de su radio total.',
       'Imagínate un cañón de cañón pesado envuelto en una capa súper delgada de papel periódico. El manto rocoso exterior y la corteza de Mercurio son diminutos en comparación con su monstruoso corazón metálico. Este núcleo de hierro y níquel mide más de cuatro mil kilómetros de diámetro, dejando únicamente una cáscara rocosa de apenas cuatrocientos kilómetros de grosor en la parte exterior.',
@@ -118,8 +118,8 @@ const INFOGRAPHIC_NODES = [
     id: 'temperaturas-extremas',
     title: 'Contrastes Térmicos',
     color: '#FF9F1C',
-    btnImage: '/assets/mercury_extremes.png',
-    image: '/assets/mercury_extremes.png',
+    btnImage: '/assets/rocosos/infographic_m2/btn_temperaturas-extremas.jpg',
+    image: '/assets/rocosos/infographic_m2/hero_temperaturas-extremas.jpg',
     content: [
       'Mercurio es un mundo de extremos térmicos infernales y despiadados. Al estar tan cerca del Sol, a una distancia promedio de solo cincuenta y ocho millones de kilómetros, la cara iluminada del planeta se convierte en un horno abrasador donde las temperaturas alcanzan los cuatrocientos treinta grados Celsius, calor suficiente para derretir el plomo y el zinc en minutos.',
       'Sin embargo, en la cara nocturna ocurre lo opuesto. Como Mercurio carece de una atmósfera densa que retenga el calor como una manta, la superficie pierde toda su energía hacia el espacio helado en cuanto se pone el Sol. La temperatura en la sombra cae en picado hasta los ciento ochenta grados Celsius bajo cero, creando el contraste térmico más salvaje de todo el Sistema Solar.',
@@ -156,8 +156,8 @@ const INFOGRAPHIC_NODES = [
     id: 'crateres-y-hielo',
     title: 'Hielo Polar Sombrío',
     color: '#00B4D8',
-    btnImage: '/assets/crateres_hielo_mercurio.png',
-    image: '/assets/crateres_hielo_mercurio.png',
+    btnImage: '/assets/rocosos/infographic_m2/btn_crateres-y-hielo.jpg',
+    image: '/assets/rocosos/infographic_m2/hero_crateres-y-hielo.jpg',
     content: [
       'Hablar de agua congelada en Mercurio parece una locura absoluta. ¿Cómo podría existir hielo en el planeta más cercano al Sol abrasador? La respuesta está en la geometría perfecta de su eje de rotación y en las profundas sombras de sus cráteres polares.',
       'El eje de rotación de Mercurio está casi completamente recto, inclinado apenas 0.03 grados respecto a su órbita. Esto significa que en los polos del planeta, el Sol siempre se ve justo en el horizonte, sin subir jamás en el cielo. Por esta razón, el fondo de los cráteres profundos ubicados en los polos nunca, jamás recibe la luz del Sol.',
@@ -213,8 +213,8 @@ const INFOGRAPHIC_NODES = [
     id: 'exploracion-bepicolombo',
     title: 'MESSENGER y BepiColombo',
     color: '#00F5D4',
-    btnImage: '/assets/bepicolombo_probe.png',
-    image: '/assets/bepicolombo_probe.png',
+    btnImage: '/assets/rocosos/infographic_m2/btn_exploracion-bepicolombo.jpg',
+    image: '/assets/rocosos/infographic_m2/hero_exploracion-bepicolombo.jpg',
     content: [
       'Explorar Mercurio con naves espaciales es uno de los retos más difíciles de la ingeniería astronómica. Enviar una sonda hacia Mercurio es como tirar una pelota colina abajo hacia el Sol: la inmensa gravedad de nuestra estrella acelera la nave a velocidades tan altas que frenar para entrar en órbita requiere una cantidad gigantesca de combustible.',
       'La primera nave en volar cerca de Mercurio fue la estadounidense Mariner 10 entre 1974 y 1975, realizando tres pasadas veloces que fotografiaron por primera vez el 45 por ciento de su superficie craterizada. Tuvieron que pasar tres décadas para que la humanidad enviara otra misión a este mundo abrasador.',

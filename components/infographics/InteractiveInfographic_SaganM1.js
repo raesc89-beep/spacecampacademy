@@ -144,8 +144,8 @@ const INFOGRAPHIC_NODES = [
     id: 'brooklyn-1934',
     title: 'Brooklyn, 1934',
     color: '#5B8DB8',
-    btnImage: '/assets/carl_sagan/sagan_m1.png',
-    image: '/assets/carl_sagan/sagan_m1.png',
+    btnImage: '/assets/carl_sagan/infographic_m1/btn_brooklyn-1934.jpg',
+    image: '/assets/carl_sagan/infographic_m1/hero_brooklyn-1934.jpg',
     content: [
       'Carl Edward Sagan nació el 9 de noviembre de 1934 en el barrio de Brooklyn, Nueva York, en el seno de una familia de inmigrantes judíos procedentes del Imperio ruso. Su padre, Samuel Sagan, había nacido en Kamianets-Podilskyi, una ciudad de la actual Ucrania, y trabajaba en la industria textil como cortador de telas en una fábrica de ropa. Su madre, Rachel Molly Gruber, era nativa de Nueva York, hija también de inmigrantes de Europa del Este. La familia vivía en un apartamento modesto en Bensonhurst, un vecindario de clase trabajadora donde convivían comunidades de diversos orígenes culturales y lingüísticos.',
 
@@ -167,8 +167,8 @@ const INFOGRAPHIC_NODES = [
     id: 'nino-estrellas',
     title: 'El Niño de las Estrellas',
     color: '#E8A87C',
-    btnImage: '/assets/carl_sagan/sagan_m1.png',
-    image: '/assets/carl_sagan/sagan_m1.png',
+    btnImage: '/assets/carl_sagan/infographic_m1/btn_nino-estrellas.jpg',
+    image: '/assets/carl_sagan/infographic_m1/hero_nino-estrellas.jpg',
     content: [
       'Desde sus primeros años de vida, Carl Sagan manifestó una curiosidad constante por el cielo nocturno. A los cuatro o cinco años, observaba las estrellas desde la ventana de su apartamento en Brooklyn y preguntaba a sus padres qué eran aquellos puntos luminosos. Samuel Sagan le respondió con honestidad que eran soles muy lejanos, una explicación que dejó al pequeño Carl profundamente impactado. La idea de que cada estrella fuera un sol, y que algunos pudieran tener planetas propios, fue una revelación que definió el rumbo de toda su vida. No fue un maestro ni un libro: fue una conversación simple con su padre la que encendió la chispa de su vocación.',
 
@@ -190,8 +190,8 @@ const INFOGRAPHIC_NODES = [
     id: 'universidad-chicago',
     title: 'La Universidad de Chicago',
     color: '#7BAFD4',
-    btnImage: '/assets/carl_sagan/sagan_m1.png',
-    image: '/assets/carl_sagan/sagan_m1.png',
+    btnImage: '/assets/carl_sagan/infographic_m1/btn_universidad-chicago.jpg',
+    image: '/assets/carl_sagan/infographic_m1/hero_universidad-chicago.jpg',
     content: [
       'Carl Sagan ingresó a la Universidad de Chicago en 1951, a los 16 años, atraído por el programa de estudios generales diseñado por el presidente Robert Maynard Hutchins. Este programa, poco convencional para la época, exigía a los estudiantes una formación amplia en humanidades, ciencias sociales y ciencias naturales antes de especializarse. Para un joven curioso como Sagan, que se interesaba tanto por la astronomía como por la filosofía y la biología, Chicago era el lugar perfecto. Obtuvo su licenciatura en humanidades (Bachelor of Arts) en 1954 y su licenciatura en ciencias (Bachelor of Science) en 1955, ambas con calificaciones destacadas en su promoción.',
 
@@ -213,8 +213,8 @@ const INFOGRAPHIC_NODES = [
     id: 'misiones-espaciales',
     title: 'Las Misiones Espaciales',
     color: '#D49568',
-    btnImage: '/assets/carl_sagan/sagan_m1.png',
-    image: '/assets/carl_sagan/sagan_m1.png',
+    btnImage: '/assets/carl_sagan/infographic_m1/btn_misiones-espaciales.jpg',
+    image: '/assets/carl_sagan/infographic_m1/hero_misiones-espaciales.jpg',
     content: [
       'Carl Sagan desempeñó un papel central como consultor y asesor científico de la NASA desde principios de la década de 1960 hasta el final de su vida. Su primera contribución significativa fue al programa Mariner, una serie de sondas robóticas diseñadas para explorar los planetas interiores del Sistema Solar. Mariner 2, lanzada el 27 de agosto de 1962, se convirtió en la primera nave espacial en realizar un sobrevuelo exitoso de otro planeta al pasar a 34,773 kilómetros de Venus el 14 de diciembre de 1962. Los datos de Mariner 2 confirmaron las predicciones de Sagan sobre la temperatura extrema de Venus, validando su tesis doctoral sobre el efecto invernadero venusino.',
 
@@ -236,8 +236,8 @@ const INFOGRAPHIC_NODES = [
     id: 'comunicador-cientifico',
     title: 'El Comunicador Científico',
     color: '#4E8FAE',
-    btnImage: '/assets/carl_sagan/sagan_m1.png',
-    image: '/assets/carl_sagan/sagan_m1.png',
+    btnImage: '/assets/carl_sagan/infographic_m1/btn_comunicador-cientifico.jpg',
+    image: '/assets/carl_sagan/infographic_m1/hero_comunicador-cientifico.jpg',
     content: [
       'En 1980, Carl Sagan presentó «Cosmos: Un Viaje Personal», una serie documental de 13 episodios producida por la cadena PBS (Public Broadcasting Service) de Estados Unidos. El primer episodio, titulado «Las Costas del Océano Cósmico», se emitió el 28 de septiembre de 1980. La serie fue co-escrita por Sagan, la escritora Ann Druyan y el astrofísico Steven Soter. La producción corrió a cargo de KCET, la estación de PBS en Los Ángeles, y su costo total fue de aproximadamente 6.3 millones de dólares de la época, una cifra modesta considerando su alcance posterior. Cada episodio duraba aproximadamente una hora y abordaba un tema diferente relacionado con la ciencia y la humanidad.',
 
@@ -259,8 +259,8 @@ const INFOGRAPHIC_NODES = [
     id: 'palido-punto-azul',
     title: 'El Pálido Punto Azul',
     color: '#82C4E0',
-    btnImage: '/assets/carl_sagan/sagan_m1.png',
-    image: '/assets/carl_sagan/sagan_m1.png',
+    btnImage: '/assets/carl_sagan/infographic_m1/btn_palido-punto-azul.jpg',
+    image: '/assets/carl_sagan/infographic_m1/hero_palido-punto-azul.jpg',
     content: [
       'El 14 de febrero de 1990, la sonda Voyager 1 se encontraba a una distancia de 6,054 millones de kilómetros de la Tierra, más allá de la órbita de Plutón, cuando Carl Sagan convenció a la NASA de ejecutar una maniobra sin precedentes: girar la cámara de la nave hacia atrás para tomar una última fotografía de nuestro planeta. La idea no tenía valor científico directo, y varios ingenieros de la NASA argumentaron que apuntar la cámara hacia el Sol podría dañar los sensores. Pero Sagan insistió con un argumento filosófico: la humanidad necesitaba verse a sí misma desde la perspectiva del cosmos. El director del proyecto Voyager, Edward Stone, autorizó la maniobra.',
 
@@ -282,8 +282,8 @@ const INFOGRAPHIC_NODES = [
     id: 'legado-memoria',
     title: 'Legado y Memoria',
     color: '#C08254',
-    btnImage: '/assets/carl_sagan/sagan_m1.png',
-    image: '/assets/carl_sagan/sagan_m1.png',
+    btnImage: '/assets/carl_sagan/infographic_m1/btn_legado-memoria.jpg',
+    image: '/assets/carl_sagan/infographic_m1/hero_legado-memoria.jpg',
     content: [
       'Carl Sagan falleció el 20 de diciembre de 1996, a los 62 años, en el Centro Oncológico Fred Hutchinson de Seattle, Washington. La causa fue una neumonía, complicación de la mielodisplasia que le había sido diagnosticada en 1994, un trastorno en el que la médula ósea no produce suficientes células sanguíneas sanas. Sagan había recibido tres trasplantes de médula ósea, donada por su hermana Carol, pero la enfermedad no cedió. Su muerte fue llorada por la comunidad científica internacional y por millones de personas que habían crecido con sus libros y programas de televisión. Fue enterrado en el cementerio Lakeview de Ithaca, Nueva York, cerca del campus de Cornell.',
 

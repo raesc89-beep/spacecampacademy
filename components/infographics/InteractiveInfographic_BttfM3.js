@@ -157,8 +157,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'paradoja-abuelo', title: 'La Paradoja del Abuelo', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.png',
-    image: '/assets/bttf/infographic_paradojas/hero_abuelo.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_paradoja-abuelo.jpg',
+    image: '/assets/bttf/infographic_m3/hero_paradoja-abuelo.jpg',
     content: [
       'Una paradoja es una premisa sin solución lógica. Por ejemplo: «Esta oración es falsa». Si es falsa, dice la verdad, pero si dice la verdad, debería ser falsa. Las paradojas temporales operan de la misma manera, creando bucles lógicos.',
       'La paradoja del abuelo plantea que viajas al pasado e impides que tus abuelos se conozcan. Si no se conocen, tus padres no nacen, y tú tampoco. Pero si no naces, no puedes viajar al pasado.',
@@ -170,8 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'muchos-mundos', title: 'Universos Paralelos', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_mundos.png',
-    image: '/assets/bttf/infographic_paradojas/hero_mundos.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_muchos-mundos.jpg',
+    image: '/assets/bttf/infographic_m3/hero_muchos-mundos.jpg',
     content: [
       'En 1957, el físico Hugh Everett propuso que, en cada evento cuántico, el universo se divide. Si una partícula puede tomar dos caminos, el universo se separa en dos ramas distintas. En ambas, la realidad continúa.',
       'Esta teoría resuelve la paradoja del abuelo. Si viajas al pasado y modificas un evento, no cambias tu propia historia, sino que creas una línea temporal alterna. Tu universo original permanece intacto.',
@@ -183,8 +183,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'bootstrap', title: 'El Bucle Bootstrap', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_bootstrap.png',
-    image: '/assets/bttf/infographic_paradojas/hero_bootstrap.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_bootstrap.jpg',
+    image: '/assets/bttf/infographic_m3/hero_bootstrap.jpg',
     content: [
       'Una paradoja de bootstrap ocurre cuando un objeto o información existe sin haber sido creado. Si encuentras los planos de una máquina del tiempo, la construyes, viajas al pasado y dejas los planos para que los encuentres, la información existe en un bucle cerrado.',
       'En la película, esto ocurre con la canción «Johnny B. Goode». Marty la toca en 1955, Chuck Berry la escucha por teléfono y la aprende de Marty, quien originalmente la aprendió de Chuck. Nadie compuso la canción.',
@@ -196,8 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gemelos', title: 'La Paradoja de los Gemelos', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.png',
-    image: '/assets/bttf/infographic_paradojas/hero_gemelos.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_gemelos.jpg',
+    image: '/assets/bttf/infographic_m3/hero_gemelos.jpg',
     content: [
       'La paradoja de los gemelos se basa en principios físicos comprobados. La Teoría de la Relatividad Especial (1905) establece que el tiempo transcurre más lento a medida que aumenta la velocidad del observador.',
       'Si un gemelo viaja al espacio al 90% de la velocidad de la luz durante 5 años, al regresar a la Tierra habrán pasado 11.5 años para su hermano. La diferencia de edad es un efecto físico real.',
@@ -209,8 +209,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'novikov', title: 'El Principio de Autoconsistencia', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_novikov.png',
-    image: '/assets/bttf/infographic_paradojas/hero_novikov.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_novikov.jpg',
+    image: '/assets/bttf/infographic_m3/hero_novikov.jpg',
     content: [
       'El físico Igor Novikov propuso que el universo no permite paradojas temporales. Su Principio de Autoconsistencia establece que los eventos influenciados por un viajero en el tiempo deben ser consistentes con la historia previa.',
       'Según este principio, si intentas alterar el pasado, los factores externos lo impedirán. El universo forzará los eventos para mantener la línea temporal sin alteraciones contradictorias.',
@@ -222,8 +222,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'delorean', title: 'Ciencia Detrás del DeLorean', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_delorean.png',
-    image: '/assets/bttf/infographic_paradojas/hero_delorean.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_delorean.jpg',
+    image: '/assets/bttf/infographic_m3/hero_delorean.jpg',
     content: [
       'Según la relatividad, el tiempo se distorsiona conforme un objeto acelera. Alcanzar el límite de la velocidad de la luz produce efectos temporales marcados.',
       'Para deformar el espacio-tiempo se requiere materia exótica con energía negativa. Modelos teóricos como el motor warp de Alcubierre dependen de este tipo de energía para funcionar.',
@@ -235,8 +235,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cronologia', title: 'La Protección Cronológica', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_cronologia.png',
-    image: '/assets/bttf/infographic_paradojas/hero_cronologia.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_cronologia.jpg',
+    image: '/assets/bttf/infographic_m3/hero_cronologia.jpg',
     content: [
       'En 1992, Stephen Hawking propuso la Conjetura de Protección Cronológica, argumentando que las leyes de la física impiden la formación de curvas cerradas de tiempo para evitar el viaje al pasado.',
       'Hawking organizó una fiesta para viajeros del tiempo en 2009, enviando las invitaciones después del evento. Ningún viajero asistió a la celebración.',
@@ -248,8 +248,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-ciencia', title: 'El Futuro de la Ciencia del Tiempo', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_futuro.png',
-    image: '/assets/bttf/infographic_paradojas/hero_futuro.png',
+    btnImage: '/assets/bttf/infographic_m3/btn_futuro-ciencia.jpg',
+    image: '/assets/bttf/infographic_m3/hero_futuro-ciencia.jpg',
     content: [
       'El viaje al futuro es un fenómeno comprobado por la dilatación temporal de la relatividad. Efectos similares se miden en el GPS, los vuelos espaciales y los aceleradores de partículas.',
       'La viabilidad del viaje al pasado, la estabilización de agujeros de gusano y la Conjetura de Protección Cronológica son problemas pendientes en la investigación física actual.',

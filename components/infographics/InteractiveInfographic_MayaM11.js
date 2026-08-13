@@ -209,11 +209,11 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: "palenque-ciudad",
+    id: 'palenque-ciudad',
     title: "La Ciudad: Lakamha",
     color: "#1B5E20",
-    btnImage: "/assets/maya/infographic_m11/btn_palenque-ciudad.jpg",
-    image: "/assets/maya/infographic_m11/hero_palenque-ciudad.jpg",
+    btnImage: '/assets/maya/infographic_m11/btn_palenque-ciudad.jpg',
+    image: '/assets/maya/infographic_m11/hero_palenque-ciudad.jpg',
     content: [
       'Imagina una metrópolis brillante escondida bajo un techo verde de hojas y árboles. Así es Palenque hoy en día, ubicada en el estado de Chiapas, México. Hace más de mil años, durante el Período Clásico, no estaba escondida. Era una ciudad viva, pintada de rojo intenso. Los mayas la llamaban Lakamha, el Lugar de las Grandes Aguas, por los arroyos y cascadas que cruzaban su territorio.',
       'Piensa en Palenque como el centro intelectual de la selva maya. No era la ciudad más grande, pero era rica en arte y arquitectura. Sus reyes estaban rodeados de artistas, arquitectos y astrónomos. Los constructores inventaron una forma de construir edificios más elegantes. Crearon paredes delgadas y habitaciones amplias, decorando cada rincón con esculturas de estuco.',
@@ -236,11 +236,11 @@ const INFOGRAPHIC_NODES = [
     fact: "El acueducto del río Otulum en Palenque es una obra de ingeniería avanzada. Los mayas lo construyeron para evitar inundaciones. Ingeniosamente, estrecharon el canal para crear agua presurizada. Algunos científicos creen que esta presión alimentaba una fuente decorativa, creando un espectáculo visual hace mil años.",
   },
   {
-    id: "pakal-tumba",
+    id: 'pakal-tumba',
     title: "La Tumba de Pakal",
     color: "#009688",
-    btnImage: "/assets/maya/infographic_m11/btn_pakal-tumba.jpg",
-    image: "/assets/maya/infographic_m11/hero_pakal-tumba.jpg",
+    btnImage: '/assets/maya/infographic_m11/btn_pakal-tumba.jpg',
+    image: '/assets/maya/infographic_m11/hero_pakal-tumba.jpg',
     content: [
       'Conoce al rey más famoso de la historia maya: Kinich Janaab Pakal, el Grande. Asumió el trono siendo un niño de doce años en el año 615 d.C. En esa época, Palenque estaba destruida por guerras contra una ciudad rival. El rey joven reconstruyó la ciudad y lideró a su pueblo hacia la paz y prosperidad. Gobernó durante sesenta y ocho años.',
       'Antes de morir, Pakal ordenó la construcción de su lugar de descanso final: el Templo de las Inscripciones. Durante siglos, exploradores caminaron sobre este templo sin tener idea de que debajo descansaba un rey. La tumba estaba escondida, diseñada para proteger el cuerpo por toda la eternidad, rodeada de trampas de piedra y pasillos sellados.',
@@ -263,11 +263,11 @@ const INFOGRAPHIC_NODES = [
     fact: "El sarcófago gigante de Pakal, con su pesada tapa tallada, pesa más de veinte toneladas. Era imposible introducirlo por el sinuoso pasadizo. Los ingenieros mayas construyeron el sarcófago al suelo y después edificaron la pirámide de nueve niveles encima de la tumba. La pirámide entera fue un estuche monumental.",
   },
   {
-    id: "tapa-sarcofago",
+    id: 'tapa-sarcofago',
     title: "La Tapa del Sarcófago",
     color: "#BF360C",
-    btnImage: "/assets/maya/infographic_m11/btn_tapa-sarcofago.jpg",
-    image: "/assets/maya/infographic_m11/hero_tapa-sarcofago.jpg",
+    btnImage: '/assets/maya/infographic_m11/btn_tapa-sarcofago.jpg',
+    image: '/assets/maya/infographic_m11/hero_tapa-sarcofago.jpg',
     content: [
       'Imagina un libro de piedra que cuenta el viaje del alma de un rey. Esa es la tapa del sarcófago de Pakal. Es un rectángulo de piedra, tallado con detalle. En el centro de esta obra, vemos a Pakal en su transición. Está recostado en una posición dinámica, atrapado entre el mundo de los vivos y el mundo de los muertos.',
       'La escena muestra a Pakal descendiendo hacia las fauces de un monstruo de huesos. Este monstruo representa a Xibalbá, el inframundo maya. Es el lugar profundo donde habitan los dioses de la muerte. Es como si el rey estuviera siendo devorado por la tierra. Es un viaje necesario, similar al sol ocultándose en el atardecer.',
@@ -290,11 +290,11 @@ const INFOGRAPHIC_NODES = [
     fact: "Los bordes de la colosal tapa del sarcófago (que mide 3.8 metros de largo, 2.2 metros de ancho y pesa unas 5 toneladas) no son solo decorativos; actúan como un texto histórico preciso. Tienen inscripciones jeroglíficas labradas alrededor del perímetro que narran una lista dinástica muy exacta. Registran las fechas de nacimiento y fallecimiento de los seis gobernantes anteriores a Pakal, incluyendo a sus padres, creando así un árbol genealógico en piedra que validaba el derecho sagrado de Pakal al trono y conectaba su reinado con los venerados ancestros del pasado.",
   },
   {
-    id: "torre-observatorio",
+    id: 'torre-observatorio',
     title: "La Torre del Palacio",
     color: "#FFC107",
-    btnImage: "/assets/maya/infographic_m11/btn_torre-observatorio.jpg",
-    image: "/assets/maya/infographic_m11/hero_torre-observatorio.jpg",
+    btnImage: '/assets/maya/infographic_m11/btn_torre-observatorio.jpg',
+    image: '/assets/maya/infographic_m11/hero_torre-observatorio.jpg',
     content: [
       'En el centro del Gran Palacio de Palenque se levanta una estructura inusual: una torre cuadrada de cuatro pisos. Parece una torre de vigilancia perdida en la selva. Esta torre es el edificio más icónico del Palacio, un complejo de patios y habitaciones donde vivía la familia real de Palenque durante generaciones.',
       'Imagina cómo se vería esta torre en sus días de gloria. Las escaleras interiores te permiten subir a la cima. Un techo cubría la estructura, adornado con estuco pintado con colores vivos. En una ciudad donde los edificios importantes eran horizontales, esta torre vertical destacaba en el horizonte.',
@@ -317,10 +317,10 @@ const INFOGRAPHIC_NODES = [
     fact: "El Palacio de Palenque en sí mismo (donde se encuentra la torre) no fue construido de una sola vez por un solo rey. Fue creciendo poco a poco durante más de 400 años de forma continua. Cada nuevo gobernante de la dinastía maya añadía nuevos patios, corredores, habitaciones y edificios al complejo, como si estuvieran ampliando una gigantesca casa familiar generacional. La Torre, que es el punto más alto, fue una de las últimas y más atrevidas adiciones al conjunto, y muy probablemente fue construida por los descendientes directos del gran Pakal, en el siglo ocho de nuestra era.",
   },
   {
-    id: "inscripciones-templo",
+    id: 'inscripciones-templo',
     title: "El Templo de las Inscripciones",
     color: "#4A148C",
-    btnImage: "/assets/maya/infographic_m11/btn_inscripciones-templo.jpg",
+    btnImage: '/assets/maya/infographic_m11/btn_inscripciones-templo.jpg',
     image: "/assets/maya/infographic_m11/hero_inscripciones-templo.jpg",
     content: [
       'El Templo de las Inscripciones guarda la tumba de Pakal, pero esconde mucho más. Recibe su nombre por los gigantescos paneles de piedra caliza en las paredes interiores del templo superior. Estos paneles son un libro de piedra abierto.',
@@ -344,11 +344,11 @@ const INFOGRAPHIC_NODES = [
     fact: 'El brillante matemático y arqueólogo aficionado Heinrich Berlin fue el primero en notar algo extraordinario en 1958: en muchos monumentos mayas había un jeroglífico específico que se repetía constantemente, pero que siempre cambiaba un poco dependiendo de la ciudad en la que se encontraba. Lo llamó "Glifo Emblema". Años más tarde, los expertos comprendieron que estos glifos funcionaban exactamente como las banderas modernas o los escudos de armas de los países europeos. Eran el nombre político oficial del reino. El de Palenque muestra una misteriosa"cabeza de hueso", y se lee "Lakamha", el venerado señorío de las Grandes Aguas.',
   },
   {
-    id: "alineacion-solsticio",
+    id: 'alineacion-solsticio',
     title: "Alineación del Solsticio",
     color: "#0288D1",
-    btnImage: "/assets/maya/infographic_m11/btn_alineacion-solsticio.jpg",
-    image: "/assets/maya/infographic_m11/hero_alineacion-solsticio.jpg",
+    btnImage: '/assets/maya/infographic_m11/btn_alineacion-solsticio.jpg',
+    image: '/assets/maya/infographic_m11/hero_alineacion-solsticio.jpg',
     content: [
       'El Templo de las Inscripciones tiene un secreto astronómico que demuestra que los mayas eran genios de la observación del cielo. Todo ocurre el día del solsticio de invierno, el 21 de diciembre. Este es el día en que el sol alcanza su punto más bajo en el horizonte.',
       'Si visitas Palenque en esa fecha al atardecer, observarás algo mágico. El sol comienza a descender detrás del Templo. En el último momento, los rayos de luz entran por la puerta central superior. Mientras el sol se pone, la línea de los rayos baja velozmente por las escaleras.',
@@ -371,11 +371,11 @@ const INFOGRAPHIC_NODES = [
     fact: 'Existen otras alineaciones asombrosas en la ciudad. El "Templo de la Cruz" fue diseñado de tal manera que, durante el equinoccio de primavera, una franja de luz solar ilumina un dios del maíz tallado en su santuario interior. Esto simboliza el renacimiento de las plantas y la llegada de las lluvias.',
   },
   {
-    id: "legado-palenque",
+    id: 'legado-palenque',
     title: "El Legado Moderno",
     color: "#78909C",
-    btnImage: "/assets/maya/infographic_m11/btn_legado-palenque.jpg",
-    image: "/assets/maya/infographic_m11/hero_legado-palenque.jpg",
+    btnImage: '/assets/maya/infographic_m11/btn_legado-palenque.jpg',
+    image: '/assets/maya/infographic_m11/hero_legado-palenque.jpg',
     content: [
       'Palenque no es solo un museo silencioso; es un lugar de actividad científica. El misterio de esta capital continúa desarrollándose. Aunque la tumba de Pakal se descubrió en mil novecientos cincuenta y dos, los arqueólogos no se detuvieron allí. En 1994, hicieron otro descubrimiento en el Templo XIII.',
       'Oculta dentro de este edificio encontraron la tumba intacta de una mujer. Sus huesos milenarios, su sarcófago de piedra y su ajuar funerario estaban cubiertos de polvo rojo. Este polvo era cinabrio que utilizaban en rituales funerarios. La bautizaron como la Reina Roja y hoy sabemos que fue la esposa de Pakal.',

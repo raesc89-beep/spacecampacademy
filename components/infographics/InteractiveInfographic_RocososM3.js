@@ -94,8 +94,8 @@ const INFOGRAPHIC_NODES = [
     id: 'invernadero-desbocado',
     title: 'Invernadero Desbocado',
     color: '#FF595E',
-    btnImage: '/assets/venus_sulfuric_clouds_thick.png',
-    image: '/assets/venus_sulfuric_clouds_thick.png',
+    btnImage: '/assets/rocosos/infographic_m3/btn_invernadero-desbocado.jpg',
+    image: '/assets/rocosos/infographic_m3/hero_invernadero-desbocado.jpg',
     content: [
       'Venus es a menudo llamado el gemelo de la Tierra porque tiene casi el mismo tamaño, masa y composición rocosa que nuestro planeta. Sin embargo, su clima se desvió hacia una pesadilla aterradora. En lugar de océanos azules y brisas frescas, Venus sufre el efecto invernadero desbocado más extremo de todo el Sistema Solar, convirtiéndose en un infierno sin retorno.',
       'Imagínate dejar un automóvil cerrado con las ventanas subidas bajo el Sol ardiente durante el verano. El calor entra a través de los cristales pero no puede salir, atrapando la temperatura en el interior hasta volverlo insoportable. En Venus, la gruesa atmósfera de dióxido de carbono actúa como un cristal gigante insuperable que atrapa casi todo el calor recibido del Sol.',
@@ -113,8 +113,8 @@ const INFOGRAPHIC_NODES = [
     id: 'atmosfera-aplastante',
     title: 'Atmósfera Aplastante',
     color: '#FFCA3A',
-    btnImage: '/assets/planet_venus.png',
-    image: '/assets/planet_venus.png',
+    btnImage: '/assets/rocosos/infographic_m3/btn_atmosfera-aplastante.jpg',
+    image: '/assets/rocosos/infographic_m3/hero_atmosfera-aplastante.jpg',
     content: [
       'Caminar sobre la superficie de Venus sería imposible para un ser humano, no solo por el calor infernal, sino por la descomunal presión atmosférica. La capa de gases envuelta alrededor de Venus es tan gruesa y pesada que la presión en el suelo es noventa y dos veces mayor que la presión atmosférica de la Tierra al nivel del mar.',
       'Para imaginar esta presión aplastante, piensa en sumergirte casi un kilómetro bajo la superficie del océano terrestre. La columna de agua sobre ti ejercería la misma fuerza destructiva que la columna de aire comprimido en la superficie venusiana, capaz de aplastar el casco de un submarino común como si fuera una lata de refresco vacía.',
@@ -151,8 +151,8 @@ const INFOGRAPHIC_NODES = [
     id: 'vulcanismo-venusiano',
     title: 'Vulcanismo Global',
     color: '#E07A5F',
-    btnImage: '/assets/venus_volcanoes.png',
-    image: '/assets/venus_volcanoes.png',
+    btnImage: '/assets/rocosos/infographic_m3/btn_vulcanismo-venusiano.jpg',
+    image: '/assets/rocosos/infographic_m3/hero_vulcanismo-venusiano.jpg',
     content: [
       'La superficie de Venus es una vasta extensión de llanuras de basalto modeladas por el calor interno. Más del ochenta por ciento del suelo venusiano está cubierto por coladas de lava volcánica solidificada, salpicado por miles de volcanes gigantescos y estructuras geológicas únicas que no existen en ningún otro mundo.',
       'Entre estas formaciones destacan las coronas, estructuras circulares gigantescas de cientos de kilómetros de ancho rodeadas por fracturas radiales. Se forman cuando plumas de magma hirviente suben desde el manto profundo y empujan la corteza hacia arriba como un gran chichón antes de colapsar en el centro.',
@@ -208,8 +208,8 @@ const INFOGRAPHIC_NODES = [
     id: 'sondas-venera',
     title: 'Sondas Venera y VERITAS',
     color: '#F4A261',
-    btnImage: '/assets/venera_probe_venus.png',
-    image: '/assets/venera_probe_venus.png',
+    btnImage: '/assets/rocosos/infographic_m3/btn_sondas-venera.jpg',
+    image: '/assets/rocosos/infographic_m3/hero_sondas-venera.jpg',
     content: [
       'Explorar la superficie de Venus representa una verdadera hazaña para la ingeniería humana. En la década de 1970 y 1980, la Unión Soviética logró una proeza histórica al aterrizar con éxito una serie de sondas blindadas llamadas Venera en medio del infierno venusiano.',
       'Las sondas Venera estaban diseñadas como auténticos tanques de titanio herméticos preparados para soportar presiones y temperaturas brutales. Venera 9 transmitió en 1975 las primeras fotografías en blanco y negro de la historia desde la superficie de otro planeta, mostrando un suelo rocoso de placas basálticas oscuras.',

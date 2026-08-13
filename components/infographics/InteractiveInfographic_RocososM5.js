@@ -97,8 +97,8 @@ const INFOGRAPHIC_NODES = [
     id: 'polvo-de-oxido',
     title: 'El Polvo Oxidado',
     color: '#E63946',
-    btnImage: '/assets/planet_mars.png',
-    image: '/assets/planet_mars.png',
+    btnImage: '/assets/rocosos/infographic_m5/btn_polvo-de-oxido.jpg',
+    image: '/assets/rocosos/infographic_m5/hero_polvo-de-oxido.jpg',
     content: [
       'Marte es ampliamente conocido como el Planeta Rojo debido al característico tono rojizo anaranjado que brilla en el cielo nocturno de la Tierra. Sin embargo, si pudieras recoger un puñado de suelo marciano, descubrirías que el planeta no está hecho de fuego, sino literalmente cubierto por una fina capa de óxido de hierro, el mismo óxido rojizo que se forma en un clavo viejo olvidado bajo la lluvia.',
       'El suelo marciano está compuesto por un fino polvo de regolito extremadamente rico en minerales de hierro y silicato. Durante miles de millones de años, el escaso oxígeno y el vapor de agua presentes en la atmósfera marciana reaccionaron con el hierro de las rocas basálticas, "oxidando" la superficie de todo el planeta de forma homogénea.',
@@ -154,8 +154,8 @@ const INFOGRAPHIC_NODES = [
     id: 'agua-ancestral',
     title: 'El Pasado Acuático',
     color: '#48CAE4',
-    btnImage: '/assets/mars_ancient_oceans.png',
-    image: '/assets/mars_ancient_oceans.png',
+    btnImage: '/assets/rocosos/infographic_m5/btn_agua-ancestral.jpg',
+    image: '/assets/rocosos/infographic_m5/hero_agua-ancestral.jpg',
     content: [
       'Aunque Marte es hoy un desierto helado, seco y polvoriento, las imágenes tomadas por los satélites en órbita y los análisis químicos de los rovers en tierra demuestran que en el pasado tuvo un rostro completamente diferente. Hace cuatro mil millones de años, Marte fue un mundo azul cargado de agua líquida.',
       'La superficie marciana conserva miles de cauces secos de ríos antiguos, deltas de ríos fosilizados con formas de abanico, lechos de lagos profundos y marcas de erosión causadas por gigantescas inundaciones repentinas que arrastraron rocas del tamaño de casas.',
@@ -173,8 +173,8 @@ const INFOGRAPHIC_NODES = [
     id: 'colapso-atmosferico',
     title: 'Pérdida de la Magnetosfera',
     color: '#A8DADC',
-    btnImage: '/assets/mars_dust_storm.png',
-    image: '/assets/mars_dust_storm.png',
+    btnImage: '/assets/rocosos/infographic_m5/btn_colapso-atmosferico.jpg',
+    image: '/assets/rocosos/infographic_m5/hero_colapso-atmosferico.jpg',
     content: [
       '¿Cómo pasó Marte de ser un oasis cálido y acuático a convertirse en un desierto congelado e inerte? El culpable de esta trágica metamorfosis planetaria fue el pequeño tamaño de Marte y la muerte de su escudo magnético primigenio.',
       'Al ser un planeta más pequeño que la Tierra, con solo la mitad de su diámetro, Marte perdió su calor interno mucho más rápido. Hace aproximadamente cuatro mil millones de años, su núcleo de hierro líquido se enfrió y se solidificó, apagando para siempre la geodinamo interna que generaba su campo magnético.',
@@ -211,8 +211,8 @@ const INFOGRAPHIC_NODES = [
     id: 'caza-de-biofirmas',
     title: 'Caza de Biofirmas',
     color: '#FFB703',
-    btnImage: '/assets/mars_human_colony_dome.png',
-    image: '/assets/mars_human_colony_dome.png',
+    btnImage: '/assets/rocosos/infographic_m5/btn_caza-de-biofirmas.jpg',
+    image: '/assets/rocosos/infographic_m5/hero_caza-de-biofirmas.jpg',
     content: [
       'Marte es el objetivo número uno de la astrobiología en la búsqueda de vida fuera de la Tierra. Aunque la superficie actual es estéril debido a la intensa radiación ultravioleta y a la falta de agua líquida, la pregunta decisiva es: ¿albergó Marte microorganismos vivos en su pasado templado?',
       'Para resolver este gran misterio, la humanidad ha desplegado una flota de rovers robóticos ultraavanzados. Misiones pioneras como Viking, Spirit, Opportunity, Curiosity y Perseverance han transformado a Marte en el planeta mejor explorado por robots en la historia espacia.',

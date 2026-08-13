@@ -139,7 +139,7 @@ const INFOGRAPHIC_NODES = [
     id: 'catalogo-nomadas',
     title: 'El Catálogo de Nómadas',
     color: '#FF9100',
-    btnImage: '/assets/interestelar/infographic_m1/btn_historia-busqueda.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_catalogo-nomadas.jpg',
     image: '/assets/interestelar/infographic_m1/hero_catalogo-nomadas.jpg',
     content: [
       'A pesar de que el universo es inmenso y tiene miles de millones de años, nuestro catálogo de objetos interestelares es muy pequeño. Hasta el momento, los astrónomos solo tienen el registro de dos visitantes confirmados. El primero es \'Oumuamua, la roca interestelar que descubrimos en 2017. El segundo es 2I/Borisov, el cometa interestelar descubierto en 2019. Lograr encontrar estos objetos en la oscuridad del universo es una tarea difícil.',
@@ -158,7 +158,7 @@ const INFOGRAPHIC_NODES = [
     id: 'deteccion-pan-starrs',
     title: 'Pan-STARRS y Telescopios',
     color: '#448AFF',
-    btnImage: '/assets/interestelar/infographic_m1/btn_espacio-entre-estrellas.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_deteccion-pan-starrs.jpg',
     image: '/assets/interestelar/infographic_m1/hero_espacio-entre-estrellas.jpg',
     content: [
       'Cazar objetos interestelares veloces y oscuros es una tarea titánica. Es similar a intentar atrapar un insecto escurridizo volando en una habitación a oscuras. Para lograrlo, los telescopios, cámaras fotográficas y observatorios de hoy en día son muy potentes.',
@@ -177,8 +177,8 @@ const INFOGRAPHIC_NODES = [
     id: 'composicion-quimica',
     title: 'Composición Química',
     color: '#FF80AB',
-    btnImage: '/assets/interestelar/infographic_m1/btn_importancia-cientifica.jpg',
-    image: '/assets/interestelar/infographic_m1/hero_importancia-cientifica.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_composicion-quimica.jpg',
+    image: '/assets/interestelar/infographic_m1/hero_composicion-quimica.jpg',
     content: [
       'Saber de qué están hechos los objetos interestelares a distancia es todo un reto. Los astrónomos analizan qué metales, hielos o polvo antiguo están en el interior de estos asteroides lejanos. Es como intentar adivinar los ingredientes de una receta sin probarla.',
       'Cuando los científicos aplicaron la técnica de espectroscopia a \'Oumuamua, se llevaron sorpresas. Encontraron que la roca interestelar no expulsaba gases ni polvo como lo hacen los cometas en sus recorridos. Parece que los fuertes rayos cósmicos le dieron una superficie dura de color rojizo.',
@@ -196,8 +196,8 @@ const INFOGRAPHIC_NODES = [
     id: 'futuro-caza',
     title: 'El Futuro de la Caza',
     color: '#FFD740',
-    btnImage: '/assets/interestelar/infographic_m1/btn_velocidades-cosmicas.jpg',
-    image: '/assets/interestelar/infographic_m1/hero_velocidades-cosmicas.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_futuro-caza.jpg',
+    image: '/assets/interestelar/infographic_m1/hero_futuro-caza.jpg',
     content: [
       'Al considerar que los objetos interestelares son como botellas con mensajes, parece lógico intentar atraparlos. Los científicos sueñan con poder estudiar su composición directamente en el futuro.',
       'Como solución a este problema técnico, la Agencia Espacial Europea ha decidido construir la sonda Comet Interceptor. Su misión será esperar en el espacio y salir a cazar un cometa prístino o un visitante interestelar.',

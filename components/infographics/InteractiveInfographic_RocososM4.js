@@ -94,8 +94,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tectonica-de-placas',
     title: 'Tectónica de Placas',
     color: '#2A9D8F',
-    btnImage: '/assets/earth_tectonics.png',
-    image: '/assets/earth_tectonics.png',
+    btnImage: '/assets/rocosos/infographic_m4/btn_tectonica-de-placas.jpg',
+    image: '/assets/rocosos/infographic_m4/hero_tectonica-de-placas.jpg',
     content: [
       'La Tierra es el único planeta conocido en todo el universo que posee una tectónica de placas activa y continua. Su corteza exterior no es una cáscara rígida de una sola pieza como en Mercurio o Marte, sino un rompecabezas gigante compuesto por una docena de placas litosféricas rígidas que flotan y se deslizan lentamente sobre el manto caliente y viscoso.',
       'Imagínate las placas tectónicas como los bloques de hielo flotando en la superficie de un lago en deshielo. Donde dos placas se separan, el magma sube desde las profundidades para crear nueva corteza oceánica; donde dos placas chocan, una se hunde por debajo de la otra hacia el manto en un proceso llamado subducción, reciclando la rocas viejas.',
@@ -113,8 +113,8 @@ const INFOGRAPHIC_NODES = [
     id: 'escudo-magnetico',
     title: 'Escudo Magnético',
     color: '#48CAE4',
-    btnImage: '/assets/earth_auroras_space.png',
-    image: '/assets/earth_auroras_space.png',
+    btnImage: '/assets/rocosos/infographic_m4/btn_escudo-magnetico.jpg',
+    image: '/assets/rocosos/infographic_m4/hero_escudo-magnetico.jpg',
     content: [
       'En el corazón profundo de la Tierra gira un motor colosal e invisible llamado la geodinamo. Este motor se ubica en el núcleo externo, una capa de hierro y níquel líquidos de dos mil doscientos kilómetros de grosor que gira continuadamente debido a la rotación del planeta y al calor que asciende desde el centro sólido.',
       'El movimiento fluido del hierro metálico conductor genera corrientes eléctricas gigantescas que producen un potente campo magnético dipolar rodeando la Tierra. Este campo magnético se extiende decenas de miles de kilómetros hacia el espacio exterior, creando un escudo protector conocido como la magnetosfera.',
@@ -151,8 +151,8 @@ const INFOGRAPHIC_NODES = [
     id: 'oceanos-y-agua',
     title: 'Océanos Líquidos',
     color: '#0077B6',
-    btnImage: '/assets/earth_water_states.png',
-    image: '/assets/earth_water_states.png',
+    btnImage: '/assets/rocosos/infographic_m4/btn_oceanos-y-agua.jpg',
+    image: '/assets/rocosos/infographic_m4/hero_oceanos-y-agua.jpg',
     content: [
       'Visto desde el espacio profundo, nuestro hogar es un deslumbrante punto azul. La Tierra es el único planeta conocido del Sistema Solar donde el agua existe de forma estable en sus tres estados físicos simultáneamente: hielo sólido en los polos, vapor gaseoso en las nubes y agua líquida en los océanos.',
       'Los océanos cubren más del setenta y uno por ciento de la superficie terrestre y contienen más de mil trescientos cincuenta millones de kilómetros cúbicos de agua. Esta masa líquida actúa como un gigantesco acumulador térmico que absorbe el calor del Sol en el ecuador y lo distribuye hacia los polos mediante corrientes marinas.',
@@ -208,8 +208,8 @@ const INFOGRAPHIC_NODES = [
     id: 'oasis-habitabilidad',
     title: 'Ecuación de Habitabilidad',
     color: '#9B5DE5',
-    btnImage: '/assets/planet_earth.png',
-    image: '/assets/planet_earth.png',
+    btnImage: '/assets/rocosos/infographic_m4/btn_oasis-habitabilidad.jpg',
+    image: '/assets/rocosos/infographic_m4/hero_oasis-habitabilidad.jpg',
     content: [
       'La Tierra es el resultado final de una cadena de coincidencias cósmicas extraordinarias. No es solo la distancia al Sol lo que la hace habitable, sino la combinación perfecta de múltiples factores geológicos, astronómicos y biológicos operando en armonía.',
       'Tener el tamaño adecuado permitió a la Tierra retener una atmósfera densa sin atrapar demasiado calor como Venus ni perderla en el espacio como Marte. Su núcleo de hierro líquido generó un escudo magnético protector, mientras que la tectónica de placas mantuvo activo el reciclaje de carbono.',

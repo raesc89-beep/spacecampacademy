@@ -138,8 +138,8 @@ const INFOGRAPHIC_NODES = [
     id: 'fisica-naves',
     title: 'La Física de las Naves',
     color: '#8B9DAF',
-    btnImage: '/assets/arrival/arrival_m5.png',
-    image: '/assets/arrival/arrival_m5.png',
+    btnImage: '/assets/ciencia_arrival/infographic_m5/btn_fisica-naves.jpg',
+    image: '/assets/ciencia_arrival/infographic_m5/hero_fisica-naves.jpg',
     content: [
       'Las naves de Arrival, diseñadas por el equipo de producción liderado por Patrice Vermette, tienen una forma de concha o lente oblonga de aproximadamente 450 metros de altura. Su superficie lisa y oscura, sin juntas visibles ni aperturas convencionales, desafía toda noción de ingeniería aeronáutica humana. Esta forma no fue elegida al azar: el director Denis Villeneuve quería un objeto que pareciera completamente ajeno a cualquier concepto terrestre de nave espacial, evitando las siluetas de platillos o cohetes que dominan el género desde la década de 1950.',
 
@@ -161,8 +161,8 @@ const INFOGRAPHIC_NODES = [
     id: 'gravedad-artificial',
     title: 'Gravedad Artificial',
     color: '#7A8C9E',
-    btnImage: '/assets/arrival/arrival_m5.png',
-    image: '/assets/arrival/arrival_m5.png',
+    btnImage: '/assets/ciencia_arrival/infographic_m5/btn_gravedad-artificial.jpg',
+    image: '/assets/ciencia_arrival/infographic_m5/hero_gravedad-artificial.jpg',
     content: [
       'La gravedad artificial es un problema central en la exploración espacial prolongada. El cuerpo humano pierde masa ósea a razón de 1-2% mensual en microgravedad, según datos recopilados por la NASA durante misiones en la Estación Espacial Internacional (ISS). Los astronautas Scott Kelly y Mikhail Kornienko, tras 340 días en la ISS entre 2015 y 2016, experimentaron pérdida ósea, cambios en la visión por presión intracraneal, y atrofia muscular significativa a pesar de ejercitarse dos horas diarias.',
 
@@ -184,8 +184,8 @@ const INFOGRAPHIC_NODES = [
     id: 'atmosfera-alienigena',
     title: 'La Atmósfera Alienígena',
     color: '#6A7B8D',
-    btnImage: '/assets/arrival/arrival_m5.png',
-    image: '/assets/arrival/arrival_m5.png',
+    btnImage: '/assets/ciencia_arrival/infographic_m5/btn_atmosfera-alienigena.jpg',
+    image: '/assets/ciencia_arrival/infographic_m5/hero_atmosfera-alienigena.jpg',
     content: [
       'En Arrival, la cámara de comunicación dentro de la nave está dividida por una barrera transparente que separa la atmósfera respirable por los humanos de la atmósfera de los heptápodos. Este detalle de diseño refleja un problema real de la astrobiología: la composición atmosférica de un mundo habitado por vida no terrestre probablemente sería tóxica para los humanos. La atmósfera terrestre contiene 78% nitrógeno, 21% oxígeno y 1% de argón y otros gases, una mezcla que es resultado de miles de millones de años de actividad biológica y geológica.',
 
@@ -207,8 +207,8 @@ const INFOGRAPHIC_NODES = [
     id: 'armas-no-armas',
     title: 'Armas y No-Armas',
     color: '#4E4E4E',
-    btnImage: '/assets/arrival/arrival_m5.png',
-    image: '/assets/arrival/arrival_m5.png',
+    btnImage: '/assets/ciencia_arrival/infographic_m5/btn_armas-no-armas.jpg',
+    image: '/assets/ciencia_arrival/infographic_m5/hero_armas-no-armas.jpg',
     content: [
       'En Arrival, la palabra heptápoda que Louise traduce como "arma" genera una crisis diplomática global porque los militares interpretan el término como una amenaza. Sin embargo, Louise argumenta que la misma palabra podría significar "herramienta" o "instrumento", y que en el contexto heptápodo, el concepto de "arma" y "herramienta" podría ser indistinguible. Este dilema lingüístico refleja un problema real en la teoría de la traducción: la polisemia radical, donde una palabra en un idioma carece de equivalente directo en otro.',
 
@@ -230,8 +230,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tiempo-no-lineal',
     title: 'Tiempo No Lineal en la Física',
     color: '#3D3D3D',
-    btnImage: '/assets/arrival/arrival_m5.png',
-    image: '/assets/arrival/arrival_m5.png',
+    btnImage: '/assets/ciencia_arrival/infographic_m5/btn_tiempo-no-lineal.jpg',
+    image: '/assets/ciencia_arrival/infographic_m5/hero_tiempo-no-lineal.jpg',
     content: [
       'La concepción del tiempo como una dimensión en la que el pasado, presente y futuro coexisten simultáneamente se denomina "universo bloque" (block universe) o eternalismo. Esta interpretación deriva directamente de la Relatividad Especial de Einstein de 1905, donde la simultaneidad es relativa al observador. Dos eventos que son simultáneos para un observador pueden ocurrir en secuencias diferentes para otro que se mueve a velocidad diferente. Si no existe un "ahora" universal, entonces todos los momentos del tiempo tienen el mismo estatus ontológico: existen por igual.',
 
@@ -253,8 +253,8 @@ const INFOGRAPHIC_NODES = [
     id: 'paradoja-fermi-arrival',
     title: 'La Paradoja de Fermi en Arrival',
     color: '#2C2C2C',
-    btnImage: '/assets/arrival/arrival_m5.png',
-    image: '/assets/arrival/arrival_m5.png',
+    btnImage: '/assets/ciencia_arrival/infographic_m5/btn_paradoja-fermi-arrival.jpg',
+    image: '/assets/ciencia_arrival/infographic_m5/hero_paradoja-fermi-arrival.jpg',
     content: [
       'La paradoja de Fermi surge de la contradicción entre la alta probabilidad estadística de civilizaciones extraterrestres y la ausencia de evidencia de su existencia. El físico Enrico Fermi planteó la pregunta "¿Dónde están todos?" durante un almuerzo en el Laboratorio Nacional de Los Álamos en 1950. Los cálculos de Michael Hart de 1975 demostraron que una civilización con capacidad de viaje interestelar podría colonizar toda la Vía Láctea en 1 a 10 millones de años, un período breve comparado con los 13,600 millones de años de edad del universo.',
 
@@ -276,8 +276,8 @@ const INFOGRAPHIC_NODES = [
     id: 'ciencia-ficcion-dura',
     title: 'Ciencia Ficción Dura',
     color: '#1B1B1B',
-    btnImage: '/assets/arrival/arrival_m5.png',
-    image: '/assets/arrival/arrival_m5.png',
+    btnImage: '/assets/ciencia_arrival/infographic_m5/btn_ciencia-ficcion-dura.jpg',
+    image: '/assets/ciencia_arrival/infographic_m5/hero_ciencia-ficcion-dura.jpg',
     content: [
       'La ciencia ficción dura (hard science fiction) es un subgénero que prioriza la precisión científica y la consistencia interna de sus premisas especulativas. A diferencia de la ciencia ficción blanda o la fantasía, la hard sci-fi parte de principios científicos reales y extrapola sus consecuencias de forma rigurosa. Ted Chiang, autor de la novela corta "Story of Your Life" (1998) en la que se basa Arrival, es considerado uno de los practicantes más rigurosos de este género. Chiang estudió ciencias de la computación en la Universidad Brown y trabajó como redactor técnico.',
 
