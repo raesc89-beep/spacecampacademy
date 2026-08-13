@@ -1,0 +1,834 @@
+{
+  "results": [
+    {
+      "file": "InteractiveInfographic_DinosM1.js",
+      "course": "Dinosaurios",
+      "module": 1,
+      "passed": true,
+      "totalChars": 32096,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM2.js",
+      "course": "Dinosaurios",
+      "module": 2,
+      "passed": true,
+      "totalChars": 36357,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM3.js",
+      "course": "Dinosaurios",
+      "module": 3,
+      "passed": true,
+      "totalChars": 35061,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM4.js",
+      "course": "Dinosaurios",
+      "module": 4,
+      "passed": true,
+      "totalChars": 34561,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM5.js",
+      "course": "Dinosaurios",
+      "module": 5,
+      "passed": true,
+      "totalChars": 32606,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM6.js",
+      "course": "Dinosaurios",
+      "module": 6,
+      "passed": true,
+      "totalChars": 32603,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM7.js",
+      "course": "Dinosaurios",
+      "module": 7,
+      "passed": true,
+      "totalChars": 32999,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM8.js",
+      "course": "Dinosaurios",
+      "module": 8,
+      "passed": true,
+      "totalChars": 35189,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM9.js",
+      "course": "Dinosaurios",
+      "module": 9,
+      "passed": true,
+      "totalChars": 36824,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_DinosM10.js",
+      "course": "Dinosaurios",
+      "module": 10,
+      "passed": true,
+      "totalChars": 30678,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM1.js",
+      "course": "Reptiles Marinos",
+      "module": 1,
+      "passed": true,
+      "totalChars": 32798,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM2.js",
+      "course": "Reptiles Marinos",
+      "module": 2,
+      "passed": true,
+      "totalChars": 32342,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM3.js",
+      "course": "Reptiles Marinos",
+      "module": 3,
+      "passed": true,
+      "totalChars": 34830,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM4.js",
+      "course": "Reptiles Marinos",
+      "module": 4,
+      "passed": true,
+      "totalChars": 31605,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM5.js",
+      "course": "Reptiles Marinos",
+      "module": 5,
+      "passed": true,
+      "totalChars": 31598,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM6.js",
+      "course": "Reptiles Marinos",
+      "module": 6,
+      "passed": true,
+      "totalChars": 33060,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM7.js",
+      "course": "Reptiles Marinos",
+      "module": 7,
+      "passed": true,
+      "totalChars": 35589,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM8.js",
+      "course": "Reptiles Marinos",
+      "module": 8,
+      "passed": true,
+      "totalChars": 36494,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM9.js",
+      "course": "Reptiles Marinos",
+      "module": 9,
+      "passed": true,
+      "totalChars": 35080,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_MarinosM10.js",
+      "course": "Reptiles Marinos",
+      "module": 10,
+      "passed": true,
+      "totalChars": 34284,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM1.js",
+      "course": "Nikola Tesla",
+      "module": 1,
+      "passed": true,
+      "totalChars": 32861,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM2.js",
+      "course": "Nikola Tesla",
+      "module": 2,
+      "passed": true,
+      "totalChars": 34979,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM3.js",
+      "course": "Nikola Tesla",
+      "module": 3,
+      "passed": true,
+      "totalChars": 34739,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM4.js",
+      "course": "Nikola Tesla",
+      "module": 4,
+      "passed": true,
+      "totalChars": 33726,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM5.js",
+      "course": "Nikola Tesla",
+      "module": 5,
+      "passed": true,
+      "totalChars": 32216,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM6.js",
+      "course": "Nikola Tesla",
+      "module": 6,
+      "passed": true,
+      "totalChars": 34099,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM7.js",
+      "course": "Nikola Tesla",
+      "module": 7,
+      "passed": true,
+      "totalChars": 34398,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM8.js",
+      "course": "Nikola Tesla",
+      "module": 8,
+      "passed": true,
+      "totalChars": 36763,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM9.js",
+      "course": "Nikola Tesla",
+      "module": 9,
+      "passed": true,
+      "totalChars": 34836,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_TeslaM10.js",
+      "course": "Nikola Tesla",
+      "module": 10,
+      "passed": true,
+      "totalChars": 30119,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_EinsteinM1.js",
+      "course": "Albert Einstein",
+      "module": 1,
+      "passed": true,
+      "totalChars": 32418,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_EinsteinM2.js",
+      "course": "Albert Einstein",
+      "module": 2,
+      "passed": true,
+      "totalChars": 32715,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_EinsteinM3.js",
+      "course": "Albert Einstein",
+      "module": 3,
+      "passed": true,
+      "totalChars": 33625,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_EinsteinM4.js",
+      "course": "Albert Einstein",
+      "module": 4,
+      "passed": true,
+      "totalChars": 32118,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_EinsteinM5.js",
+      "course": "Albert Einstein",
+      "module": 5,
+      "passed": true,
+      "totalChars": 36152,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_EinsteinM6.js",
+      "course": "Albert Einstein",
+      "module": 6,
+      "passed": true,
+      "totalChars": 33509,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_SaganM1.js",
+      "course": "Carl Sagan",
+      "module": 1,
+      "passed": true,
+      "totalChars": 36238,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_SaganM2.js",
+      "course": "Carl Sagan",
+      "module": 2,
+      "passed": true,
+      "totalChars": 31574,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_SaganM3.js",
+      "course": "Carl Sagan",
+      "module": 3,
+      "passed": true,
+      "totalChars": 31874,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_SaganM4.js",
+      "course": "Carl Sagan",
+      "module": 4,
+      "passed": true,
+      "totalChars": 36299,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_SaganM5.js",
+      "course": "Carl Sagan",
+      "module": 5,
+      "passed": true,
+      "totalChars": 31743,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_SaganM6.js",
+      "course": "Carl Sagan",
+      "module": 6,
+      "passed": true,
+      "totalChars": 32507,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CurieM1.js",
+      "course": "Marie Curie",
+      "module": 1,
+      "passed": true,
+      "totalChars": 32326,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CurieM2.js",
+      "course": "Marie Curie",
+      "module": 2,
+      "passed": true,
+      "totalChars": 33074,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CurieM3.js",
+      "course": "Marie Curie",
+      "module": 3,
+      "passed": true,
+      "totalChars": 34273,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CurieM4.js",
+      "course": "Marie Curie",
+      "module": 4,
+      "passed": true,
+      "totalChars": 33279,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CurieM5.js",
+      "course": "Marie Curie",
+      "module": 5,
+      "passed": true,
+      "totalChars": 36108,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CurieM6.js",
+      "course": "Marie Curie",
+      "module": 6,
+      "passed": true,
+      "totalChars": 32919,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CeciliaM1.js",
+      "course": "Cecilia Payne",
+      "module": 1,
+      "passed": true,
+      "totalChars": 31565,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CeciliaM2.js",
+      "course": "Cecilia Payne",
+      "module": 2,
+      "passed": true,
+      "totalChars": 31165,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CeciliaM3.js",
+      "course": "Cecilia Payne",
+      "module": 3,
+      "passed": true,
+      "totalChars": 33352,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_CeciliaM4.js",
+      "course": "Cecilia Payne",
+      "module": 4,
+      "passed": true,
+      "totalChars": 32653,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_GriegosM1.js",
+      "course": "Los Griegos",
+      "module": 1,
+      "passed": true,
+      "totalChars": 36643,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_GriegosM2.js",
+      "course": "Los Griegos",
+      "module": 2,
+      "passed": true,
+      "totalChars": 35031,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_GriegosM3.js",
+      "course": "Los Griegos",
+      "module": 3,
+      "passed": true,
+      "totalChars": 32554,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_GriegosM4.js",
+      "course": "Los Griegos",
+      "module": 4,
+      "passed": true,
+      "totalChars": 34154,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_GriegosM5.js",
+      "course": "Los Griegos",
+      "module": 5,
+      "passed": true,
+      "totalChars": 31888,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_GriegosM6.js",
+      "course": "Los Griegos",
+      "module": 6,
+      "passed": true,
+      "totalChars": 30979,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_AstroTrainM1.js",
+      "course": "Entrenamiento Astronauta",
+      "module": 1,
+      "passed": true,
+      "totalChars": 36646,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_AstroTrainM2.js",
+      "course": "Entrenamiento Astronauta",
+      "module": 2,
+      "passed": true,
+      "totalChars": 34683,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_AstroTrainM3.js",
+      "course": "Entrenamiento Astronauta",
+      "module": 3,
+      "passed": true,
+      "totalChars": 38074,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_AstroTrainM4.js",
+      "course": "Entrenamiento Astronauta",
+      "module": 4,
+      "passed": true,
+      "totalChars": 34132,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_AstroTrainM5.js",
+      "course": "Entrenamiento Astronauta",
+      "module": 5,
+      "passed": true,
+      "totalChars": 37641,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_AstroTrainM6.js",
+      "course": "Entrenamiento Astronauta",
+      "module": 6,
+      "passed": true,
+      "totalChars": 35590,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_ArrivalM1.js",
+      "course": "La Ciencia de Arrival",
+      "module": 1,
+      "passed": true,
+      "totalChars": 36944,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_ArrivalM2.js",
+      "course": "La Ciencia de Arrival",
+      "module": 2,
+      "passed": true,
+      "totalChars": 43400,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_ArrivalM3.js",
+      "course": "La Ciencia de Arrival",
+      "module": 3,
+      "passed": true,
+      "totalChars": 31120,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_ArrivalM4.js",
+      "course": "La Ciencia de Arrival",
+      "module": 4,
+      "passed": true,
+      "totalChars": 35858,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_ArrivalM5.js",
+      "course": "La Ciencia de Arrival",
+      "module": 5,
+      "passed": true,
+      "totalChars": 31531,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    },
+    {
+      "file": "InteractiveInfographic_ArrivalM6.js",
+      "course": "La Ciencia de Arrival",
+      "module": 6,
+      "passed": true,
+      "totalChars": 31339,
+      "totalParagraphs": 35,
+      "nodeCount": 7,
+      "issues": [],
+      "wordSaladCount": 0
+    }
+  ],
+  "summary": {
+    "totalPassed": 70,
+    "totalFailed": 0,
+    "totalWS": 0,
+    "avgChars": 33929.75714285715,
+    "minChars": 30119,
+    "maxChars": 43400
+  },
+  "courseStats": {
+    "Dinosaurios": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "Reptiles Marinos": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "Nikola Tesla": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "Albert Einstein": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "Carl Sagan": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "Marie Curie": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "Cecilia Payne": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "Los Griegos": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "Entrenamiento Astronauta": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "La Ciencia de Arrival": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    }
+  }
+}

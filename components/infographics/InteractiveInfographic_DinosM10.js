@@ -136,7 +136,7 @@ const DECO_MAP = {
   'giganotosaurus-rival': [DecoSkull, DecoFootprint, DecoBone],
   'eoraptor-primeros': [DecoAmmonite, DecoFern, DecoStrata],
   'carnotaurus-toro': [DecoSkull, DecoBone, DecoFootprint],
-  'patagotitan-colosal': [DecoBone, DecoGondwana, DecoStrata],
+  'patagotitan-escala': [DecoBone, DecoGondwana, DecoStrata],
   'paleontologia-hoy': [DecoAmmonite, DecoSkull, DecoFern],
 };
 
@@ -247,8 +247,8 @@ const INFOGRAPHIC_NODES = [
     fact: 'Las impresiones de piel del Carnotaurus cubren un área total de más de 1,800 centímetros cuadrados del cuerpo original, convirtiéndolas en las muestras de piel de terópodo más extensas conocidas hasta la fecha de su publicación. En 2021, Christophe Hendrickx y colaboradores publicaron un estudio detallado en la revista Cretaceous Research donde documentaron más de 1,000 escamas individuales en diferentes regiones corporales, revelando un patrón de variación regional donde las escamas del cuello eran hasta un 65% más grandes que las del tronco.',
   },
   {
-    id: 'patagotitan-colosal',
-    title: 'Patagotitan: Redefiniendo lo Colosal',
+    id: 'patagotitan-escala',
+    title: 'Patagotitan: Redefiniendo la Escala',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/dinos_m10.png',
     image: '/assets/dinosaurios/dinos_m10.png',
