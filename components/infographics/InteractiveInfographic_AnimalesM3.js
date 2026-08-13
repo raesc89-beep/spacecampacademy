@@ -114,8 +114,8 @@ const INFOGRAPHIC_NODES = [
     id: 'fisiologia-entrenamiento',
     title: 'Fisiología Canina',
     color: '#D4B872',
-    btnImage: '/assets/course/animales_pioneros/btn_laika.jpg',
-    image: '/assets/course/animales_pioneros/hero_laika.jpg',
+    btnImage: '/assets/animales/ham_training.png',
+    image: '/assets/animales/mamiferos_rhesus.png',
     content: [
       "El riguroso proceso de selección y entrenamiento de los perros espaciales soviéticos, conocidos cariñosamente como 'astrodogos', representó un hito metodológico en la incipiente disciplina de la medicina espacial. Los científicos del Instituto de Medicina de Aviación de Moscú reclutaron deliberadamente hembras mestizas callejeras, presumiendo acertadamente que su lucha por la supervivencia en los crudos inviernos urbanos les confería una resistencia superior a las fluctuaciones extremas de temperatura y a las privaciones nutricionales. Además, las hembras fueron preferidas exclusivamente porque la anatomía de sus sistemas de recolección de desechos, diseñados específicamente para trajes presurizados, requería que permanecieran en una posición estática con las patas traseras extendidas durante largos períodos.",
       "El entrenamiento simulaba meticulosamente los estímulos sensoriales abrumadores y las fuerzas físicas extremas asociadas con el lanzamiento de un misil balístico intercontinental modificado. Los canes eran sometidos rutinariamente a sesiones extenuantes en centrifugadoras humanas de gran radio para familiarizarlos con las aceleraciones que superaban los diez 'G', monitoreando cuidadosamente sus respuestas cardiovasculares y respiratorias. Asimismo, se utilizaban cámaras de aislamiento acústico y plataformas vibratorias de alta frecuencia para replicar el rugido ensordecedor y las trepidaciones estructurales masivas generadas por los potentes motores de los cohetes de la serie R, evaluando su estabilidad psicológica y su capacidad para mantener la calma bajo niveles extremos de estrés ambiental.",
@@ -133,8 +133,8 @@ const INFOGRAPHIC_NODES = [
     id: 'belka-strelka',
     title: 'Belka y Strelka',
     color: '#80DEEA',
-    btnImage: '/assets/course/animales_pioneros/btn_laika.jpg',
-    image: '/assets/course/animales_pioneros/hero_laika.jpg',
+    btnImage: '/assets/animales/hub_laika.png',
+    image: '/assets/course/animales_pioneros/hero_belka_strelka.jpg',
     content: [
       "El triunfo monumental de la misión Korabl-Sputnik 2 en agosto de 1960, protagonizada por las célebres perras Belka y Strelka, representó un gigantesco salto cualitativo en la exploración biológica espacial y restauró el prestigio de la ciencia soviética tras varios fracasos trágicos. A diferencia de la infortunada misión unidireccional de Laika, esta sofisticada nave espacial estaba equipada con un masivo y complejo escudo térmico ablativo y un sistema de paracaídas de múltiples etapas, diseñados específicamente para garantizar una reentrada atmosférica segura y un aterrizaje suave. Este vuelo pionero no solo demostró la viabilidad técnica de recuperar organismos vivos intactos desde la órbita terrestre, sino que también allanó directamente el camino para la primera misión espacial tripulada por un ser humano.",
       "Belka, que significa 'Blanquita', y Strelka, 'Flechita', no viajaron solas en su épica travesía orbital; la espaciosa cápsula presurizada funcionaba como un verdadero arca de Noé tecnológica, albergando una asombrosa diversidad biológica. Junto a los canes, los científicos incluyeron un conejo gris, cuarenta ratones blancos, dos ratas de laboratorio, plantas experimentales, cepas bacterianas y un vasto surtido de cultivos celulares de drosophila y hongos. El objetivo científico primordial de esta multitudinaria tripulación biológica era evaluar de manera exhaustiva y holística los efectos de la microgravedad prolongada y la intensa radiación de los rayos cósmicos galácticos en múltiples niveles de complejidad biológica, desde simples microorganismos hasta mamíferos superiores.",
@@ -152,8 +152,8 @@ const INFOGRAPHIC_NODES = [
     id: 'telemetria-resultados',
     title: 'Telemetría y Datos',
     color: '#3949AB',
-    btnImage: '/assets/course/animales_pioneros/btn_laika.jpg',
-    image: '/assets/course/animales_pioneros/hero_laika.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_telemetria_canina.jpg',
+    image: '/assets/course/animales_pioneros/hero_telemetria_espacial.jpg',
     content: [
       "La sofisticada red de estaciones de telemetría terrestre, estratégicamente diseminadas a lo largo y ancho del vasto territorio de la Unión Soviética, constituyó la verdadera columna vertebral tecnológica invisible que posibilitó el resonante éxito del programa espacial biológico canino. Estas colosales instalaciones de radar y recepción de ondas de radio estaban equipadas con masivas antenas parabólicas orientables de ganancia ultra-alta y gigantescos conjuntos de ordenadores analógicos de primera generación que procesaban inmensos volúmenes de datos brutos. La capacidad ininterrumpida de recibir, decodificar en tiempo real y almacenar en cintas magnéticas la incesante lluvia de señales biométricas desde la órbita terrestre fue un logro monumental de la ingeniería de telecomunicaciones soviética.",
       "El análisis pormenorizado y exhaustivo de los electrocardiogramas transmitidos desde el espacio profundo reveló fenómenos fisiológicos fascinantes y completamente inesperados sobre el funcionamiento del músculo cardíaco mamífero en condiciones de caída libre sostenida. Los cardiólogos espaciales observaron fluctuaciones significativas en el intervalo Q-T y alteraciones menores pero persistentes en la repolarización ventricular que no estaban presentes durante las pruebas de control realizadas en laboratorios terrestres. Estos sutiles cambios electromecánicos sugirieron fuertemente que la ausencia de carga gravitatoria forzaba al sistema cardiovascular a reconfigurar sus mecanismos de regulación de la presión hidrostática, un descubrimiento pionero que alteró para siempre el campo de la cardiología.",
@@ -171,8 +171,8 @@ const INFOGRAPHIC_NODES = [
     id: 'legado-biologico',
     title: 'El Legado Espacial',
     color: '#2C3E50',
-    btnImage: '/assets/course/animales_pioneros/btn_laika.jpg',
-    image: '/assets/course/animales_pioneros/hero_laika.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_legado_canino.jpg',
+    image: '/assets/course/animales_pioneros/hero_legado_canino.jpg',
     content: [
       "El inmenso y duradero legado biológico y científico forjado por el intrépido escuadrón de perros espaciales soviéticos trasciende con creces los confines de la era de la Guerra Fría, sentando los cimientos irrefutables de la medicina aeroespacial moderna y la biología gravitacional contemporánea. Cada misión pionera canina, desde los vuelos suborbitales parabólicos en cohetes geofísicos hasta los extensos ensayos de viabilidad orbital de larga duración, actuó como un eslabón insustituible y crucial en la compleja cadena de pruebas que culminó en el histórico vuelo tripulado de Yuri Gagarin. Sin la inestimable y silenciosa contribución fisiológica y los enormes sacrificios involuntarios de estos caninos callejeros moscovitas, el cronograma de exploración tripulada del espacio profundo soviético se habría retrasado irremediablemente por décadas o quizás nunca se habría materializado.",
       "Las rigurosas autopsias post-mortem y los minuciosos análisis patológicos longitudinales practicados a los valientes perros veteranos que lograron regresar a salvo proporcionaron una mina de oro de conocimientos biológicos invaluables que no podrían haberse obtenido de ninguna otra fuente disponible en la Tierra. Los investigadores biomédicos descubrieron alteraciones bioquímicas previamente desconocidas en la regulación de la masa ósea y cambios atróficos microscópicos en las fibras musculares de contracción lenta causados por la prolongada ausencia de carga gravitacional, fenómenos que hoy conocemos clínicamente como osteopenia y atrofia muscular inducidas por el espacio. Estos descubrimientos tempranos impulsaron el diseño inmediato y el desarrollo acelerado de avanzados programas de ejercicios contramedida y suplementación nutricional intensiva que ahora son un pilar indispensable y rutinario para los astronautas contemporáneos en la Estación Espacial Internacional.",
@@ -662,6 +662,13 @@ export default function InteractiveInfographic_AnimalesM3() {
       padding: '2rem 1rem',
       overflow: 'hidden',
     }}>
+      {/* Contextual Background Image (§18) */}
+      <div style={{
+        position: 'absolute', inset: 0, zIndex: 0,
+        backgroundImage: `url('/assets/course/animales_pioneros/bg_animales.jpg')`,
+        backgroundSize: 'cover', backgroundPosition: 'center',
+        opacity: 0.15, pointerEvents: 'none',
+      }} />
       <div style={{
         position: 'absolute', inset: 0,
         background: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%)',

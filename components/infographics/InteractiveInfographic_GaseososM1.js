@@ -444,6 +444,13 @@ export default function InteractiveInfographic_GaseososM1() {
       position: 'relative', fontFamily: 'system-ui, -apple-system, sans-serif',
       padding: '2rem 1rem', overflow: 'hidden',
     }}>
+      {/* Contextual Background Image (§18) */}
+      <div style={{
+        position: 'absolute', inset: 0, zIndex: 0,
+        backgroundImage: `url('/assets/course/viaje-planetas-gaseosos/bg_gaseosos.jpg')`,
+        backgroundSize: 'cover', backgroundPosition: 'center',
+        opacity: 0.15, pointerEvents: 'none',
+      }} />
       <GasGiantField />
 
       <div style={{

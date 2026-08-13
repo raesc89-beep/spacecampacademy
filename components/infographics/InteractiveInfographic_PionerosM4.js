@@ -83,8 +83,8 @@ const INFOGRAPHIC_NODES = [
     id: 'nave-vostok',
     title: 'La Nave Vostok 6',
     color: '#80DEEA',
-    btnImage: '/assets/course/animales_pioneros/btn_valentina.jpg',
-    image: '/assets/course/animales_pioneros/hero_valentina.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_vostok6.jpg',
+    image: '/assets/course/animales_pioneros/hero_vostok6.jpg',
     content: [
       'La cápsula espacial Vostok 6, el vehículo que llevaría a Valentina Tereshkova a la historia, era una maravilla de la ingeniería soviética de la época, aunque espartana y peligrosa según los estándares modernos. Diseñada por la oficina de diseño OKB-1 bajo la dirección de Serguéi Koroliov, la nave constaba de un módulo de descenso esférico de aproximadamente 2.3 metros de diámetro y un módulo de equipamiento cónico que albergaba los motores de frenado y los sistemas de soporte vital periféricos. La forma esférica del módulo de descenso fue elegida por su simplicidad aerodinámica durante la reentrada, ya que no requería un sistema de control de actitud complejo para mantener una orientación específica al interactuar con las densas capas de la atmósfera terrestre.',
       'El interior de la Vostok 6 estaba dominado por un asiento eyectable masivo y altamente complejo, que ocupaba la mayor parte del volumen habitable. Este asiento no solo servía como puesto de pilotaje durante el vuelo, sino que era el componente crítico para la supervivencia de la cosmonauta durante la fase de aterrizaje. Debido al peso y al diseño del módulo de descenso, los paracaídas de la cápsula no podían ralentizarla lo suficiente para garantizar un impacto seguro con el suelo. Por lo tanto, a una altitud de aproximadamente 7 kilómetros, la escotilla se abría mediante cargas explosivas y Tereshkova debía ser eyectada de la nave, descendiendo el resto del trayecto con su propio paracaídas personal, un procedimiento altamente riesgoso.',
@@ -102,8 +102,8 @@ const INFOGRAPHIC_NODES = [
     id: 'orbita',
     title: 'El Vuelo y la Órbita',
     color: '#D4B872',
-    btnImage: '/assets/course/animales_pioneros/btn_valentina.jpg',
-    image: '/assets/course/animales_pioneros/hero_valentina.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_orbita_valentina.jpg',
+    image: '/assets/course/animales_pioneros/hero_orbita_valentina.jpg',
     content: [
       'El 16 de junio de 1963, el cosmódromo de Baikonur fue testigo del ensordecedor rugido del cohete R-7 Semyorka que impulsó a Valentina Tereshkova hacia la órbita terrestre, marcando un hito imborrable en la historia de la humanidad. Durante el lanzamiento, Tereshkova experimentó fuerzas gravitacionales masivas y una vibración intensa mientras el cohete atravesaba las capas más densas de la atmósfera. Al alcanzar la órbita y experimentar la ingravidez por primera vez, pronunció su famoso indicativo de llamada: «Aquí Chaika (Gaviota). Veo el horizonte, una banda azul claro... ¡La Tierra es hermosa!». Estas palabras, transmitidas a millones de personas a través de la radio soviética, se convirtieron instantáneamente en el símbolo del triunfo y la valentía de la primera mujer en el espacio.',
       'Durante sus 70.8 horas en órbita, Tereshkova completó 48 impresionantes vueltas alrededor del planeta Tierra, superando en un solo vuelo el tiempo total combinado de todos los astronautas estadounidenses del programa Mercury hasta la fecha. A lo largo de la misión, se encargó de realizar un extenso programa de experimentos biomédicos y observaciones científicas. Mantuvo registros detallados en un cuaderno de bitácora, tomó numerosas fotografías de la atmósfera terrestre, las formaciones nubosas y los continentes, y operó sistemas manuales de la nave. Sus observaciones fotográficas de las capas de aerosoles atmosféricos fueron particularmente valiosas para la comunidad científica y contribuyeron a la comprensión de la dinámica de la atmósfera superior.',
@@ -121,8 +121,8 @@ const INFOGRAPHIC_NODES = [
     id: 'regreso',
     title: 'El Descenso y Regreso',
     color: '#3949AB',
-    btnImage: '/assets/course/animales_pioneros/btn_valentina.jpg',
-    image: '/assets/course/animales_pioneros/hero_valentina.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_descenso_valentina.jpg',
+    image: '/assets/course/animales_pioneros/hero_descenso_valentina.jpg',
     content: [
       'La fase de descenso de la misión Vostok 6 fue el momento más crítico y peligroso de todo el vuelo espacial, requiriendo una precisión matemática absoluta y una sincronización impecable. Tras introducir manualmente los datos de navegación corregidos para evitar el error de programación que la habría enviado al espacio profundo, Tereshkova activó la secuencia de reentrada. El motor retrocohete principal TDU-1 se encendió con un rugido silencioso en el vacío, reduciendo la velocidad orbital de la cápsula y alterando su trayectoria para interceptar la atmósfera terrestre. Poco después, el módulo de equipamiento se separó del módulo de descenso esférico, aunque la separación fue inicialmente incompleta, causando que la nave girara violentamente hasta que el calor atmosférico quemó las correas umbilicales restantes.',
       'Al penetrar en las capas superiores de la atmósfera, la fricción hiperbólica transformó la cápsula Vostok 6 en un infierno envuelto en plasma ardiente. Las temperaturas en el exterior del escudo térmico superaron los miles de grados Celsius, mientras que las fuerzas de desaceleración gravitacional (fuerzas G) empujaban a Tereshkova brutalmente contra su asiento, dificultándole la respiración. A través de la escotilla carbonizada (el visor Vzor), la cosmonauta observó el espectáculo aterrador y hermoso del plasma ionizado de color rojo anaranjado lamiendo el exterior de la nave. Las comunicaciones por radio se cortaron temporalmente debido a la ionización del aire circundante, dejando a Tereshkova en un completo aislamiento durante los minutos más críticos del descenso balístico.',
@@ -140,8 +140,8 @@ const INFOGRAPHIC_NODES = [
     id: 'legado',
     title: 'El Legado de Valentina',
     color: '#2C3E50',
-    btnImage: '/assets/course/animales_pioneros/btn_valentina.jpg',
-    image: '/assets/course/animales_pioneros/hero_valentina.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_legado_valentina.jpg',
+    image: '/assets/course/animales_pioneros/hero_legado_valentina.jpg',
     content: [
       'El impacto inmediato del vuelo de Valentina Tereshkova resonó a nivel mundial, convirtiéndola en un icono instantáneo del siglo XX y en una poderosa herramienta diplomática durante la Guerra Fría. Fue proclamada Héroe de la Unión Soviética, el más alto honor del estado, y emprendió giras internacionales multitudinarias, donde fue recibida por jefes de estado y multitudes entusiastas. Su figura fue utilizada hábilmente por la propaganda soviética para proyectar una imagen de igualdad, modernidad y superioridad ideológica sobre Occidente, argumentando que bajo el socialismo, las mujeres podían alcanzar las mismas alturas cósmicas que los hombres. Esta narrativa desafiaba directamente las convenciones sociales de Estados Unidos, que aún tardaría dos décadas en enviar a su primera mujer, Sally Ride, al espacio.',
       'A pesar del triunfo propagandístico colosal que representó la misión Vostok 6, el programa espacial soviético cerró abruptamente las puertas a las mujeres cosmonautas poco después del vuelo de Tereshkova. El escuadrón original de mujeres cosmonautas fue disuelto en 1969, tras años de frustración y misiones canceladas. La cúpula conservadora militar e ingenieril, liderada por figuras que dudaban de la idoneidad física y psicológica de las mujeres para vuelos de larga duración, impuso un prolongado hiato. Tereshkova fue encumbrada en un pedestal simbólico, pero se le prohibió volver a volar, ya que las autoridades soviéticas consideraban que su vida era demasiado valiosa políticamente para arriesgarla en futuras misiones experimentales del programa Soyuz.',
@@ -649,6 +649,9 @@ export default function InteractiveInfographic_PionerosM4() {
       padding: '2rem 1rem',
       overflow: 'hidden',
     }}>
+      {/* Contextual Background Image (§18) */}
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0, backgroundImage: `url('/assets/course/animales_pioneros/bg_pioneros.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.15, pointerEvents: 'none' }} />
+
       <div style={{
         position: 'absolute', inset: 0,
         background: 'linear-gradient(180deg, rgba(10,12,18,0.85) 0%, rgba(15,18,25,0.9) 40%, rgba(10,12,18,0.95) 100%)',

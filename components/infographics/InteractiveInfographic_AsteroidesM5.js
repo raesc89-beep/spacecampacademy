@@ -165,8 +165,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tecnicas-defensa',
     title: 'Técnicas de Deflexión',
     color: '#D500F9',
-    btnImage: '/assets/asteroides/clean_apophis.png',
-    image: '/assets/asteroides/clean_apophis.png',
+    btnImage: '/assets/egypt/infographic_apofis/btn_dart.png',
+    image: '/assets/egypt/infographic_apofis/btn_dart.png',
     content: [
       '¿Qué haríamos si los telescopios descubrieran un asteroide peligroso con rumbo de colisión seguro hacia la Tierra dentro de 20 años? La ciencia espacial ha desarrollado y simulado diversos métodos de Deflexión Planetaria para desviar a la roca antes de que sea demasiado tarde.',
       'El primer método es el Impactador Cinético, probado con éxito por la misión DART. Consiste en estrellar una nave pesada a máxima velocidad contra el asteroide para transferirle momento y cambiar levemente su velocidad. Es ideal para rocas pequeñas y medias descubiertas con décadas de anticipación.',
@@ -184,8 +184,8 @@ const INFOGRAPHIC_NODES = [
     id: 'redes-vigilancia',
     title: 'Redes de Vigilancia',
     color: '#1DE9B6',
-    btnImage: '/assets/asteroides/hub_apophis.png',
-    image: '/assets/asteroides/hub_apophis.png',
+    btnImage: '/assets/egypt/infographic_apofis/hero_peligro.png',
+    image: '/assets/egypt/infographic_apofis/hero_peligro.png',
     content: [
       'Para desviar un asteroide peligroso, el requisito fundamental e indispensable es descubrirlo con la mayor antelación posible. Con este objetivo, la comunidad astronómica mundial ha construido una red de vigilancia cósmica permanente dedicada a rastrear el cielo nocturno.',
       'Los telescopios robóticos de rastreo automatizado como Pan-STARRS en Hawái y ATLAS (Sistema de Ultima Alerta de Impacto Terrestre) observan millones de estrellas cada noche. Utilizan algoritmos de inteligencia artificial para detectar cualquier punto de luz que cambie de posición entre varias tomas consecutivas.',
@@ -203,8 +203,8 @@ const INFOGRAPHIC_NODES = [
     id: 'protocolos-respuesta',
     title: 'Protocolos de Respuesta',
     color: '#FF3D00',
-    btnImage: '/assets/asteroides/hub_apophis_vector.png',
-    image: '/assets/asteroides/hub_apophis_vector.png',
+    btnImage: '/assets/egypt/infographic_apofis/hero_legado.png',
+    image: '/assets/egypt/infographic_apofis/hero_legado.png',
     content: [
       '¿Qué ocurre cuando un observatorio astronómico descubre un asteroide con probabilidad real de chocar contra la Tierra? La respuesta no se deja a la improvisación; existen protocolos de coordinación internacional avalados por la Organización de las Naciones Unidas (ONU).',
       'La primera entidad en actuar es la Red Internacional de Alerta de Asteroides (IAWN). Esta red mundial de astrónomos verifique de inmediato las observaciones telescópicas, recalcula la órbita con múltiples centros de datos independientes y confirma si el riesgo de impacto es auténtico.',

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
+import VideoPlayer from './VideoPlayer';
 
 // ─── SVG Decorative Elements (Asteroides M4 themed: DART, Hayabusa2 y OSIRIS-REx) ──
 function DecoProbe({ size = 70, color = '#FFD54F', style = {} }) {
@@ -113,8 +114,8 @@ const INFOGRAPHIC_NODES = [
     id: 'mision-dart',
     title: 'Misión DART de la NASA',
     color: '#FF5252',
-    btnImage: '/assets/asteroides/hub_sondas.png',
-    image: '/assets/asteroides/hub_sondas.png',
+    btnImage: '/assets/egypt/infographic_apofis/hero_dart.png',
+    image: '/assets/egypt/infographic_apofis/hero_dart.png',
     content: [
       'El 26 de septiembre de 2022 a las 23:14 UTC, la humanidad llevó a cabo su primer ensayo real de defensa planetaria activa en la historia. La nave DART (Prueba de Redirección de Asteroide Doble) de la NASA se estrelló intencionalmente contra el asteroide Dimorphos a 22,500 kilómetros por hora.',
       'El objetivo de la misión DART no era destruir el asteroide, sino demostrar la técnica de Impacto Cinético. Es la idea de golpear una roca peligrosa con una masa pesada a gran velocidad para alterar levemente su curso, desviándola de una hipotética trayectoria de colisión contra la Tierra.',
@@ -153,6 +154,7 @@ const INFOGRAPHIC_NODES = [
     color: '#64FFDA',
     btnImage: '/assets/asteroides/Osiris Rex 2.png',
     image: '/assets/asteroides/Osiris Rex 2.png',
+    video: { src: '/assets/asteroides/Video Osiris Rex.mp4', title: 'Misión OSIRIS-REx: Recolección de Muestras' },
     content: [
       'En diciembre de 2018, la sonda espacial OSIRIS-REx de la NASA llegó al asteroide cercano a la Tierra (101955) Bennu, una roca potencialmente peligrosa de 500 metros de ancho compuesta por materiales hidratados y cargada de compuestos de carbono de la infancia del Sistema Solar.',
       'Durante más de un año, la nave mapeó la superficie de Bennu con precisión milimétrica usando escáneres láser LIDAR. Los científicos se sorprendieron al descubrir que la superficie no tenía playas de arena suave como esperaban, sino que estaba repleta de rocas gigantescas y afiladas.',
@@ -189,8 +191,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tecnologia-navegacion',
     title: 'Navegación Cercana',
     color: '#18FFFF',
-    btnImage: '/assets/asteroides/hub_sondas.png',
-    image: '/assets/asteroides/hub_sondas.png',
+    btnImage: '/assets/asteroides/hub_intro.png',
+    image: '/assets/asteroides/hub_intro.png',
     content: [
       'Maniobrar una nave espacial robótica a cientos de millones de kilómetros de la Tierra alrededor de un asteroide de apenas unos cientos de metros es uno de los desafíos más complejos de la ingeniería aeroespacial moderna.',
       'La primera gran dificultad es el retraso en las comunicaciones radiotelegráficas. Como la señal tarda entre 10 y 30 minutos en ir y volver desde la Tierra hasta la sonda, es absolutamente imposible pilotar la nave en tiempo real usando un joystick desde el centro de control.',
@@ -208,8 +210,8 @@ const INFOGRAPHIC_NODES = [
     id: 'futuras-misiones',
     title: 'Misiones del Futuro',
     color: '#FF5252',
-    btnImage: '/assets/asteroides/hub_sondas_vector.png',
-    image: '/assets/asteroides/hub_sondas_vector.png',
+    btnImage: '/assets/asteroides/hub_apophis.png',
+    image: '/assets/asteroides/hub_apophis.png',
     content: [
       'El éxito rotundo de las misiones DART, Hayabusa2 y OSIRIS-REx ha marcado el comienzo de una audaz nueva era en la exploración robótica de los asteroides del Sistema Solar.',
       'En octubre de 2023, la NASA lanzó la misión Psyche rumbo al asteroide 16 Psyche en el Cinturón Principal. Llegará en 2029 para explorar por primera vez un mundo metálico hecho de hierro y níquel, ofreciendo una ventana directa para entender los núcleos ocultos de planetas como la Tierra.',
@@ -634,6 +636,29 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <div key={i} style={{ gridColumn: node.expandables.length === 1 ? '1 / -1' : 'auto' }}>
                 <ExpandableSection item={exp} color={node.color} />
               </div>
+            ))}
+          </div>
+        )}
+        {/* Video Section */}
+        {node.video && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEO EDUCATIVO
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+        {node.videos && node.videos.length > 0 && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEOS EDUCATIVOS
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            {node.videos.map((v, vi) => (
+              <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
           </div>
         )}

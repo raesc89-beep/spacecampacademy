@@ -107,6 +107,98 @@ const InteractiveInfographic_AsteroidesM5 = lazy(() => import('@/components/info
 
 
 
+
+
+// --- DINOSAURIOS ---
+const InteractiveInfographic_DinosM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM1'));
+const InteractiveInfographic_DinosM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM2'));
+const InteractiveInfographic_DinosM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM3'));
+const InteractiveInfographic_DinosM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM4'));
+const InteractiveInfographic_DinosM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM5'));
+const InteractiveInfographic_DinosM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM6'));
+const InteractiveInfographic_DinosM7 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM7'));
+const InteractiveInfographic_DinosM8 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM8'));
+const InteractiveInfographic_DinosM9 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM9'));
+const InteractiveInfographic_DinosM10 = lazy(() => import('@/components/infographics/InteractiveInfographic_DinosM10'));
+
+// --- REPTILES MARINOS ---
+const InteractiveInfographic_MarinosM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM1'));
+const InteractiveInfographic_MarinosM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM2'));
+const InteractiveInfographic_MarinosM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM3'));
+const InteractiveInfographic_MarinosM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM4'));
+const InteractiveInfographic_MarinosM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM5'));
+const InteractiveInfographic_MarinosM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM6'));
+const InteractiveInfographic_MarinosM7 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM7'));
+const InteractiveInfographic_MarinosM8 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM8'));
+const InteractiveInfographic_MarinosM9 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM9'));
+const InteractiveInfographic_MarinosM10 = lazy(() => import('@/components/infographics/InteractiveInfographic_MarinosM10'));
+
+// --- NIKOLA TESLA ---
+const InteractiveInfographic_TeslaM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM1'));
+const InteractiveInfographic_TeslaM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM2'));
+const InteractiveInfographic_TeslaM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM3'));
+const InteractiveInfographic_TeslaM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM4'));
+const InteractiveInfographic_TeslaM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM5'));
+const InteractiveInfographic_TeslaM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM6'));
+const InteractiveInfographic_TeslaM7 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM7'));
+const InteractiveInfographic_TeslaM8 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM8'));
+const InteractiveInfographic_TeslaM9 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM9'));
+const InteractiveInfographic_TeslaM10 = lazy(() => import('@/components/infographics/InteractiveInfographic_TeslaM10'));
+
+// --- ALBERT EINSTEIN ---
+const InteractiveInfographic_EinsteinM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_EinsteinM1'));
+const InteractiveInfographic_EinsteinM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_EinsteinM2'));
+const InteractiveInfographic_EinsteinM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_EinsteinM3'));
+const InteractiveInfographic_EinsteinM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_EinsteinM4'));
+const InteractiveInfographic_EinsteinM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_EinsteinM5'));
+const InteractiveInfographic_EinsteinM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_EinsteinM6'));
+
+// --- CARL SAGAN ---
+const InteractiveInfographic_SaganM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_SaganM1'));
+const InteractiveInfographic_SaganM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_SaganM2'));
+const InteractiveInfographic_SaganM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_SaganM3'));
+const InteractiveInfographic_SaganM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_SaganM4'));
+const InteractiveInfographic_SaganM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_SaganM5'));
+const InteractiveInfographic_SaganM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_SaganM6'));
+
+// --- MARIE CURIE ---
+const InteractiveInfographic_CurieM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_CurieM1'));
+const InteractiveInfographic_CurieM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_CurieM2'));
+const InteractiveInfographic_CurieM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_CurieM3'));
+const InteractiveInfographic_CurieM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_CurieM4'));
+const InteractiveInfographic_CurieM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_CurieM5'));
+const InteractiveInfographic_CurieM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_CurieM6'));
+
+// --- CECILIA PAYNE ---
+const InteractiveInfographic_CeciliaM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_CeciliaM1'));
+const InteractiveInfographic_CeciliaM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_CeciliaM2'));
+const InteractiveInfographic_CeciliaM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_CeciliaM3'));
+const InteractiveInfographic_CeciliaM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_CeciliaM4'));
+
+// --- GRIEGOS EN LA CIENCIA ---
+const InteractiveInfographic_GriegosM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_GriegosM1'));
+const InteractiveInfographic_GriegosM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_GriegosM2'));
+const InteractiveInfographic_GriegosM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_GriegosM3'));
+const InteractiveInfographic_GriegosM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_GriegosM4'));
+const InteractiveInfographic_GriegosM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_GriegosM5'));
+const InteractiveInfographic_GriegosM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_GriegosM6'));
+
+// --- ENTRENAMIENTO ASTRONAUTA ---
+const InteractiveInfographic_AstroTrainM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_AstroTrainM1'));
+const InteractiveInfographic_AstroTrainM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_AstroTrainM2'));
+const InteractiveInfographic_AstroTrainM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_AstroTrainM3'));
+const InteractiveInfographic_AstroTrainM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_AstroTrainM4'));
+const InteractiveInfographic_AstroTrainM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_AstroTrainM5'));
+const InteractiveInfographic_AstroTrainM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_AstroTrainM6'));
+
+// --- ARRIVAL ---
+const InteractiveInfographic_ArrivalM1 = lazy(() => import('@/components/infographics/InteractiveInfographic_ArrivalM1'));
+const InteractiveInfographic_ArrivalM2 = lazy(() => import('@/components/infographics/InteractiveInfographic_ArrivalM2'));
+const InteractiveInfographic_ArrivalM3 = lazy(() => import('@/components/infographics/InteractiveInfographic_ArrivalM3'));
+const InteractiveInfographic_ArrivalM4 = lazy(() => import('@/components/infographics/InteractiveInfographic_ArrivalM4'));
+const InteractiveInfographic_ArrivalM5 = lazy(() => import('@/components/infographics/InteractiveInfographic_ArrivalM5'));
+const InteractiveInfographic_ArrivalM6 = lazy(() => import('@/components/infographics/InteractiveInfographic_ArrivalM6'));
+
 import { useCourseData } from '@/hooks/useCourseData';
 
 
@@ -220,6 +312,9 @@ export default function CourseModule() {
           params.moduleId.startsWith('einstein_') ||
           params.moduleId.startsWith('griegos_') ||
           params.moduleId.startsWith('arrival_') ||
+                    params.moduleId.startsWith('dinos_') ||
+          params.moduleId.startsWith('marinos_') ||
+          params.moduleId.startsWith('tesla_') ||
           params.moduleId.startsWith('bttf_')
         );
 
@@ -691,7 +786,230 @@ export default function CourseModule() {
             <InteractiveInfographic_AsteroidesM5 />
           )}
 
-          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && moduleData.id !== 'viaje-planetas-gaseosos' && !moduleData.id.startsWith('rocosos_') && !moduleData.id.startsWith('exoplanetas_') && !moduleData.id.startsWith('asteroides_') && !moduleData.id.startsWith('animales_') && !moduleData.id.startsWith('pioneros_') && (
+          
+          {/* ── INTERACTIVE INFOGRAPHICS: 10 nuevos cursos (70 módulos) ── */}
+          {/* --- DINOSAURIOS --- */}
+          {moduleData.id === 'dinos_m1' && (
+            <InteractiveInfographic_DinosM1 />
+          )}
+          {moduleData.id === 'dinos_m2' && (
+            <InteractiveInfographic_DinosM2 />
+          )}
+          {moduleData.id === 'dinos_m3' && (
+            <InteractiveInfographic_DinosM3 />
+          )}
+          {moduleData.id === 'dinos_m4' && (
+            <InteractiveInfographic_DinosM4 />
+          )}
+          {moduleData.id === 'dinos_m5' && (
+            <InteractiveInfographic_DinosM5 />
+          )}
+          {moduleData.id === 'dinos_m6' && (
+            <InteractiveInfographic_DinosM6 />
+          )}
+          {moduleData.id === 'dinos_m7' && (
+            <InteractiveInfographic_DinosM7 />
+          )}
+          {moduleData.id === 'dinos_m8' && (
+            <InteractiveInfographic_DinosM8 />
+          )}
+          {moduleData.id === 'dinos_m9' && (
+            <InteractiveInfographic_DinosM9 />
+          )}
+          {moduleData.id === 'dinos_m10' && (
+            <InteractiveInfographic_DinosM10 />
+          )}
+          {/* --- REPTILES MARINOS --- */}
+          {moduleData.id === 'marinos_m1' && (
+            <InteractiveInfographic_MarinosM1 />
+          )}
+          {moduleData.id === 'marinos_m2' && (
+            <InteractiveInfographic_MarinosM2 />
+          )}
+          {moduleData.id === 'marinos_m3' && (
+            <InteractiveInfographic_MarinosM3 />
+          )}
+          {moduleData.id === 'marinos_m4' && (
+            <InteractiveInfographic_MarinosM4 />
+          )}
+          {moduleData.id === 'marinos_m5' && (
+            <InteractiveInfographic_MarinosM5 />
+          )}
+          {moduleData.id === 'marinos_m6' && (
+            <InteractiveInfographic_MarinosM6 />
+          )}
+          {moduleData.id === 'marinos_m7' && (
+            <InteractiveInfographic_MarinosM7 />
+          )}
+          {moduleData.id === 'marinos_m8' && (
+            <InteractiveInfographic_MarinosM8 />
+          )}
+          {moduleData.id === 'marinos_m9' && (
+            <InteractiveInfographic_MarinosM9 />
+          )}
+          {moduleData.id === 'marinos_m10' && (
+            <InteractiveInfographic_MarinosM10 />
+          )}
+          {/* --- NIKOLA TESLA --- */}
+          {moduleData.id === 'tesla_m1' && (
+            <InteractiveInfographic_TeslaM1 />
+          )}
+          {moduleData.id === 'tesla_m2' && (
+            <InteractiveInfographic_TeslaM2 />
+          )}
+          {moduleData.id === 'tesla_m3' && (
+            <InteractiveInfographic_TeslaM3 />
+          )}
+          {moduleData.id === 'tesla_m4' && (
+            <InteractiveInfographic_TeslaM4 />
+          )}
+          {moduleData.id === 'tesla_m5' && (
+            <InteractiveInfographic_TeslaM5 />
+          )}
+          {moduleData.id === 'tesla_m6' && (
+            <InteractiveInfographic_TeslaM6 />
+          )}
+          {moduleData.id === 'tesla_m7' && (
+            <InteractiveInfographic_TeslaM7 />
+          )}
+          {moduleData.id === 'tesla_m8' && (
+            <InteractiveInfographic_TeslaM8 />
+          )}
+          {moduleData.id === 'tesla_m9' && (
+            <InteractiveInfographic_TeslaM9 />
+          )}
+          {moduleData.id === 'tesla_m10' && (
+            <InteractiveInfographic_TeslaM10 />
+          )}
+          {/* --- ALBERT EINSTEIN --- */}
+          {moduleData.id === 'einstein_m1' && (
+            <InteractiveInfographic_EinsteinM1 />
+          )}
+          {moduleData.id === 'einstein_m2' && (
+            <InteractiveInfographic_EinsteinM2 />
+          )}
+          {moduleData.id === 'einstein_m3' && (
+            <InteractiveInfographic_EinsteinM3 />
+          )}
+          {moduleData.id === 'einstein_m4' && (
+            <InteractiveInfographic_EinsteinM4 />
+          )}
+          {moduleData.id === 'einstein_m5' && (
+            <InteractiveInfographic_EinsteinM5 />
+          )}
+          {moduleData.id === 'einstein_m6' && (
+            <InteractiveInfographic_EinsteinM6 />
+          )}
+          {/* --- CARL SAGAN --- */}
+          {moduleData.id === 'sagan_m1' && (
+            <InteractiveInfographic_SaganM1 />
+          )}
+          {moduleData.id === 'sagan_m2' && (
+            <InteractiveInfographic_SaganM2 />
+          )}
+          {moduleData.id === 'sagan_m3' && (
+            <InteractiveInfographic_SaganM3 />
+          )}
+          {moduleData.id === 'sagan_m4' && (
+            <InteractiveInfographic_SaganM4 />
+          )}
+          {moduleData.id === 'sagan_m5' && (
+            <InteractiveInfographic_SaganM5 />
+          )}
+          {moduleData.id === 'sagan_m6' && (
+            <InteractiveInfographic_SaganM6 />
+          )}
+          {/* --- MARIE CURIE --- */}
+          {moduleData.id === 'curie_m1' && (
+            <InteractiveInfographic_CurieM1 />
+          )}
+          {moduleData.id === 'curie_m2' && (
+            <InteractiveInfographic_CurieM2 />
+          )}
+          {moduleData.id === 'curie_m3' && (
+            <InteractiveInfographic_CurieM3 />
+          )}
+          {moduleData.id === 'curie_m4' && (
+            <InteractiveInfographic_CurieM4 />
+          )}
+          {moduleData.id === 'curie_m5' && (
+            <InteractiveInfographic_CurieM5 />
+          )}
+          {moduleData.id === 'curie_m6' && (
+            <InteractiveInfographic_CurieM6 />
+          )}
+          {/* --- CECILIA PAYNE --- */}
+          {moduleData.id === 'cecilia_m1' && (
+            <InteractiveInfographic_CeciliaM1 />
+          )}
+          {moduleData.id === 'cecilia_m2' && (
+            <InteractiveInfographic_CeciliaM2 />
+          )}
+          {moduleData.id === 'cecilia_m3' && (
+            <InteractiveInfographic_CeciliaM3 />
+          )}
+          {moduleData.id === 'cecilia_m4' && (
+            <InteractiveInfographic_CeciliaM4 />
+          )}
+          {/* --- GRIEGOS EN LA CIENCIA --- */}
+          {moduleData.id === 'griegos_m1' && (
+            <InteractiveInfographic_GriegosM1 />
+          )}
+          {moduleData.id === 'griegos_m2' && (
+            <InteractiveInfographic_GriegosM2 />
+          )}
+          {moduleData.id === 'griegos_m3' && (
+            <InteractiveInfographic_GriegosM3 />
+          )}
+          {moduleData.id === 'griegos_m4' && (
+            <InteractiveInfographic_GriegosM4 />
+          )}
+          {moduleData.id === 'griegos_m5' && (
+            <InteractiveInfographic_GriegosM5 />
+          )}
+          {moduleData.id === 'griegos_m6' && (
+            <InteractiveInfographic_GriegosM6 />
+          )}
+          {/* --- ENTRENAMIENTO ASTRONAUTA --- */}
+          {moduleData.id === 'astro_train_m1' && (
+            <InteractiveInfographic_AstroTrainM1 />
+          )}
+          {moduleData.id === 'astro_train_m2' && (
+            <InteractiveInfographic_AstroTrainM2 />
+          )}
+          {moduleData.id === 'astro_train_m3' && (
+            <InteractiveInfographic_AstroTrainM3 />
+          )}
+          {moduleData.id === 'astro_train_m4' && (
+            <InteractiveInfographic_AstroTrainM4 />
+          )}
+          {moduleData.id === 'astro_train_m5' && (
+            <InteractiveInfographic_AstroTrainM5 />
+          )}
+          {moduleData.id === 'astro_train_m6' && (
+            <InteractiveInfographic_AstroTrainM6 />
+          )}
+          {/* --- ARRIVAL --- */}
+          {moduleData.id === 'arrival_m1' && (
+            <InteractiveInfographic_ArrivalM1 />
+          )}
+          {moduleData.id === 'arrival_m2' && (
+            <InteractiveInfographic_ArrivalM2 />
+          )}
+          {moduleData.id === 'arrival_m3' && (
+            <InteractiveInfographic_ArrivalM3 />
+          )}
+          {moduleData.id === 'arrival_m4' && (
+            <InteractiveInfographic_ArrivalM4 />
+          )}
+          {moduleData.id === 'arrival_m5' && (
+            <InteractiveInfographic_ArrivalM5 />
+          )}
+          {moduleData.id === 'arrival_m6' && (
+            <InteractiveInfographic_ArrivalM6 />
+          )}
+
+          {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && moduleData.id !== 'viaje-planetas-gaseosos' && !moduleData.id.startsWith('rocosos_') && !moduleData.id.startsWith('exoplanetas_') && !moduleData.id.startsWith('asteroides_') && !moduleData.id.startsWith('animales_') && !moduleData.id.startsWith('dinos_') && !moduleData.id.startsWith('marinos_') && !moduleData.id.startsWith('tesla_') && !moduleData.id.startsWith('einstein_') && !moduleData.id.startsWith('sagan_') && !moduleData.id.startsWith('curie_') && !moduleData.id.startsWith('cecilia_') && !moduleData.id.startsWith('griegos_') && !moduleData.id.startsWith('astro_train_') && !moduleData.id.startsWith('arrival_') && !moduleData.id.startsWith('pioneros_') && (
             moduleData.contentEs?.sections ? (
             // NUEVO FORMATO 2.0 (Científico NASA)
             moduleData.contentEs.sections.map((section, idx) => (

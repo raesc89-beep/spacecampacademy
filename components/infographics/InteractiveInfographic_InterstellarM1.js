@@ -203,7 +203,7 @@ const INFOGRAPHIC_NODES = [
     id: 'gps-relatividad',
     title: 'Einstein en tu Bolsillo',
     color: '#26A69A',
-    btnImage: '/assets/interstellar/infographic_m1/btn_ondas.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_einstein_bolsillo.jpg',
     image: '/assets/interstellar/infographic_m1/hero_gps.jpg',
     content: [
       'El análisis de los tensores métricos y la deformación geométrica del vacío cósmico podría parecer una disciplina teórica sin aplicaciones prácticas en la ingeniería convencional. Los fenómenos de curvatura espacial provocados por objetos supermasivos o las anomalías temporales cerca del horizonte de sucesos sugieren escenarios que escapan a la experiencia cotidiana. No obstante, las predicciones derivadas de la mecánica relativista resultan esenciales para el diseño y funcionamiento operativo de diversas infraestructuras tecnológicas críticas en la sociedad contemporánea actual.',

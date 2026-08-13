@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
+import VideoPlayer from './VideoPlayer';
 
 // ─── SVG Decorative Elements (Asteroides M1 themed) ───────────────────────────
 function DecoAsteroidCore({ size = 70, color = '#FF6B6B', style = {} }) {
@@ -97,6 +98,7 @@ const INFOGRAPHIC_NODES = [
     color: '#FF6B6B',
     btnImage: '/assets/asteroides/clean_intro.png',
     image: '/assets/asteroides/clean_intro.png',
+    video: { src: '/assets/asteroides/Asteroides y Cometas.mp4', title: 'Introducción: Asteroides y Cometas' },
     content: [
       'Imagina que construyes una casa gigante de bloques de piedra. Al terminar tu trabajo, quedan decenas de pequeños fragmentos de rocas esparcidos por el suelo. Eso es exactamente lo que ocurrió cuando se formó nuestro Sistema Solar hace 4,600 millones de años. Los planetas grandes se armaron con la mayor parte del material. Los asteroides son aquellos ladrillos sobrantes que jamás lograron unirse para formar un planeta completo.',
       'A diferencia de las montañas de la Tierra que se erosionan con el viento y el agua, los asteroides han permanecido casi intactos. Son fósiles espaciales congelados en el tiempo. Guardan los secretos químicos de la nube primitiva de polvo y gas que dio origen al Sol. Al estudiar su composición interna, los científicos pueden reconstruir la receta original con la que se cocinó nuestro vecindario cósmico.',
@@ -152,8 +154,8 @@ const INFOGRAPHIC_NODES = [
     id: 'resonancias-kirkwood',
     title: 'Huecos de Kirkwood',
     color: '#6BCB77',
-    btnImage: '/assets/asteroides/clean_intro.png',
-    image: '/assets/asteroides/clean_intro.png',
+    btnImage: '/assets/asteroides/hub_meteoros_vector.png',
+    image: '/assets/asteroides/hub_meteoros_vector.png',
     content: [
       'En el año 1866, el astrónomo estadounidense Daniel Kirkwood realizó un mapa detallado sobre la distribución de las distancias entre los asteroides y el Sol. Esperaba encontrar una franja uniforme llena de rocas en todo el cinturón. Sin embargo, al analizar los datos descubrió algo desconcertante: existían regiones completamente vacías donde no orbitaba prácticamente ningún asteroide.',
       'Estas autopistas desiertas en medio del espacio se conocen hoy como los Huecos de Kirkwood. No son barreras físicas ni paredes invisibles. Son franjas donde las fuerzas gravitacionales de Júpiter impiden que cualquier cuerpo permanezca orbitando de forma estable a largo plazo. Si una roca espacial entra en una de estas zonas, es expulsada rápidamente.',
@@ -171,8 +173,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tipos-espectrales',
     title: 'Tipos C, S y M',
     color: '#9B51E0',
-    btnImage: '/assets/asteroides/hub_intro.png',
-    image: '/assets/asteroides/hub_intro.png',
+    btnImage: '/assets/asteroides/hub_meteoros.png',
+    image: '/assets/asteroides/hub_meteoros.png',
     content: [
       'Si observamos el Cinturón Principal con telescopios equipados con espectrómetros, descubriremos que los asteroides no son todos iguales. Se dividen en tres grandes familias según su color, su capacidad para reflejar la luz y su composición química. Estas clases principales se denominan tipo C, tipo S y tipo M.',
       'Los asteroides de tipo C son los más abundantes del Sistema Solar, representando más del 75% del total. Son extremadamente oscuros, como el carbón, porque contienen grandes cantidades de carbono primordial, silicatos hidratados y compuestos orgánicos. Se encuentran concentrados principalmente en la parte exterior del cinturón, lejos del calor intenso del Sol.',
@@ -190,8 +192,9 @@ const INFOGRAPHIC_NODES = [
     id: 'colisiones-familias',
     title: 'Colisiones y Familias',
     color: '#FF884B',
-    btnImage: '/assets/asteroides/hub_intro_vector.png',
-    image: '/assets/asteroides/hub_intro_vector.png',
+    btnImage: '/assets/asteroides/chicxulub_impact.png',
+    image: '/assets/asteroides/chicxulub_impact.png',
+    video: { src: '/assets/asteroides/Asteroides 2.mp4', title: 'Colisiones y Fragmentación de Asteroides' },
     content: [
       'El Cinturón de Asteroides no es un lugar tranquilo e inmóvil; es una pista de autos chocadores a escala cósmica. A lo largo de miles de millones de años, incontables rocas espaciales han colisionado violentamente a velocidades promedio de 18,000 kilómetros por hora. Estos choques destructivos despedazan a los cuerpos padres en miles de fragmentos menores.',
       'Cuando un gran asteroide es destruido por un impacto masivo, los escombros resultantes no se dispersan caóticamente por todo el universo. Debido a las leyes de la física orbital, todos los fragmentos continúan viajando juntos por el espacio. Mantienen órbitas muy similares a las del objeto original, formando lo que los astrónomos llaman una Familia de Asteroides.',
@@ -209,8 +212,9 @@ const INFOGRAPHIC_NODES = [
     id: 'futuro-cinturon',
     title: 'Evolución Futura',
     color: '#00E5FF',
-    btnImage: '/assets/asteroides/clean_intro.png',
-    image: '/assets/asteroides/clean_intro.png',
+    btnImage: '/assets/asteroides/hub_sondas.png',
+    image: '/assets/asteroides/hub_sondas.png',
+    video: { src: '/assets/asteroides/Mineria.mp4', title: 'Minería Espacial: El Futuro de los Asteroides' },
     content: [
       'A primera vista, el Cinturón de Asteroides parece un sistema estático que ha permanecido igual desde los tiempos pretéritos. Sin embargo, se encuentra en un estado de cambio continuo y gradual. Existen fuerzas sutiles pero imparables que modifican sin descanso las órbitas de estas rocas a lo largo del tiempo profundo.',
       'Una de las fuerzas más sorprendentes es el Efecto Yarkovsky. Ocurre cuando un asteroide absorbe la luz del Sol, se calienta y luego emite ese calor de vuelta al espacio mientras gira sobre su eje. Esta pequeña radiación térmica actúa como un diminuto motor de empuje fotónico. Lentamente mueve al asteroide hacia afuera o hacia adentro de su órbita.',
@@ -635,6 +639,29 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <div key={i} style={{ gridColumn: node.expandables.length === 1 ? '1 / -1' : 'auto' }}>
                 <ExpandableSection item={exp} color={node.color} />
               </div>
+            ))}
+          </div>
+        )}
+        {/* Video Section */}
+        {node.video && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEO EDUCATIVO
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+        {node.videos && node.videos.length > 0 && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEOS EDUCATIVOS
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            {node.videos.map((v, vi) => (
+              <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
           </div>
         )}

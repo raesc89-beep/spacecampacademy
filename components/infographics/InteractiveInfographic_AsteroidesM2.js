@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
+import VideoPlayer from './VideoPlayer';
 
 // ─── SVG Decorative Elements (Asteroides M2 themed: Meteoros y Cráteres) ───────
 function DecoMeteor({ size = 70, color = '#FF7043', style = {} }) {
@@ -129,8 +130,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tipos-meteoritos',
     title: 'Condritas y Acondritas',
     color: '#EC407A',
-    btnImage: '/assets/asteroides/clean_intro.png',
-    image: '/assets/asteroides/clean_intro.png',
+    btnImage: '/assets/asteroides/Ann hodges.png',
+    image: '/assets/asteroides/Ann hodges.png',
     content: [
       'Al estudiar los meteoritos recuperados en la Tierra, los científicos los dividen en tres grandes familias según su origen geológico: meteoritos rocosos, meteoritos metálicos y meteoritos mixtos. Dentro de los rocosos se encuentra la distinción más importante entre Condritas y Acondritas.',
       'Las Condritas son los meteoritos más primitivos e interesantes de todos, representando el 86% de los hallazgos terrestres. Se caracterizan por contener diminutas esferas de mineral petrificado llamadas cóndrulos. Estas esférulas se formaron por la fusión de polvo en la nebulosa solar primitiva antes de que existieran los planetas.',
@@ -148,8 +149,9 @@ const INFOGRAPHIC_NODES = [
     id: 'formacion-crateres',
     title: 'Física de los Cráteres',
     color: '#AB47BC',
-    btnImage: '/assets/asteroides/hub_meteoros.png',
-    image: '/assets/asteroides/hub_meteoros.png',
+    btnImage: '/assets/asteroides/real_chicxulub_impact.png',
+    image: '/assets/asteroides/real_chicxulub_impact.png',
+    video: { src: '/assets/asteroides/Caida Metorito.mp4', title: 'Caída de un Meteorito: Registro Visual' },
     content: [
       'Cuando un gran asteroide choca contra la superficie de un planeta rocoso a velocidad hiperveloz, no se limita a empujar la tierra a los lados como una pala. El impacto libera de golpe una cantidad astronómica de energía cinética que desencadena una explosión descomunal, formando una depresión circular llamada cráter de impacto.',
       'El proceso de formación de un cráter ocurre en tres etapas consecutivas ultrarrápidas. La primera etapa es la de Contacto y Compresión. Dura una fracción de segundo mientras el impactador penetra en el suelo. Genera ondas de choque con presiones de millones de atmósferas que vaporizan instantáneamente la roca del proyectil.',
@@ -186,8 +188,12 @@ const INFOGRAPHIC_NODES = [
     id: 'lluvias-estrellas',
     title: 'Lluvias de Meteoros',
     color: '#26A69A',
-    btnImage: '/assets/asteroides/hub_meteoros_vector.png',
-    image: '/assets/asteroides/hub_meteoros_vector.png',
+    btnImage: '/assets/asteroides/Isabel anderson.png',
+    image: '/assets/asteroides/Isabel anderson.png',
+    videos: [
+      { src: '/assets/asteroides/Geminid Meteor.mp4', title: 'Lluvia de Meteoros Gemínidas' },
+      { src: '/assets/asteroides/Perseid Meteor.mp4', title: 'Lluvia de Meteoros Perseidas' }
+    ],
     content: [
       'En ciertas épocas del año, si miras hacia el cielo nocturno despejado, puedes contemplar decenas de destellos luminosos cruzando el firmamento en pocas horas. Este espectáculo natural se conoce como Lluvia de Meteoros. Ocurre cuando la Tierra en su órbita atraviesa un río de escombros dejado atrás por un cometa o asteroide.',
       'A medida que los cometas se acercan al Sol, el calor sublima su hielo y libera millones de granos de polvo y roquitas. Estos fragmentos quedan flotando a lo largo del mismo camino orbital del cometa formando un enjambre continuo. Cada año, cuando la Tierra pasa por ese punto de intersección, los granitos entran a la atmósfera.',
@@ -631,6 +637,29 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <div key={i} style={{ gridColumn: node.expandables.length === 1 ? '1 / -1' : 'auto' }}>
                 <ExpandableSection item={exp} color={node.color} />
               </div>
+            ))}
+          </div>
+        )}
+        {/* Video Section */}
+        {node.video && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEO EDUCATIVO
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+        {node.videos && node.videos.length > 0 && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEOS EDUCATIVOS
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            {node.videos.map((v, vi) => (
+              <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
           </div>
         )}

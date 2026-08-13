@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, Sparkles, Star, ChevronDown, Zap, Clock, Atom } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
+import VideoPlayer from './VideoPlayer';
 
 // ─── SVG Decorative Elements (Asteroides M3 themed: Cometas y Hielo Profundo) ──
 function DecoCometTail({ size = 70, color = '#00E5FF', style = {} }) {
@@ -96,6 +97,7 @@ const INFOGRAPHIC_NODES = [
     color: '#00E5FF',
     btnImage: '/assets/asteroides/clean_cometas.png',
     image: '/assets/asteroides/clean_cometas.png',
+    video: { src: '/assets/asteroides/Rosseta 2 vid.mp4', title: 'La Misión Rosetta: Parte 2' },
     content: [
       'Imagina una bola de nieve gigante del tamaño de una ciudad completa, pero mezclada con tierra oscura, hollín de carbón y polvo de minerales antiguos. Así definió el astrofísico Fred Whipple a los cometas en 1950 en su famosa teoría de las "bolas de nieve sucias". Son los cuerpos más fríos y prístinos de todo nuestro Sistema Solar.',
       'El corazón de un cometa se llama Núcleo. Es un cuerpo sólido y poroso de unos pocos kilómetros de diámetro, compuesto por hielos de agua, dióxido de carbono, metano y amoníaco. La superficie del núcleo es extrañamente oscura, más negra que el carbón, porque está cubierta por una fina capa de materiales orgánicos complejos llamados tolinas.',
@@ -113,8 +115,9 @@ const INFOGRAPHIC_NODES = [
     id: 'origen-nube-oort',
     title: 'La Nube de Oort',
     color: '#B388FF',
-    btnImage: '/assets/asteroides/hub_cometas.png',
-    image: '/assets/asteroides/hub_cometas.png',
+    btnImage: '/assets/cometas/oort.png',
+    image: '/assets/cometas/oort.png',
+    video: { src: '/assets/asteroides/Rosseta 3vid.mp4', title: 'La Misión Rosetta: Parte 3' },
     content: [
       '¿De dónde vienen los cometas y dónde han estado guardados durante miles de millones de años? La respuesta nos lleva a los confines helados de nuestro Sistema Solar, a dos inmensos almacenes naturales de hielo: el Cinturón de Kuiper y la lejana Nube de Oort.',
       'El Cinturón de Kuiper es una estructura con forma de dona ubicada más allá de la órbita de Neptuno, entre 30 y 50 Unidades Astronómicas del Sol. Es el hogar de cometas de periodo corto como el cometa Halley y de planetas enanos como Plutón. Sus cuerpos orbitan de forma relativamente ordenada en el mismo plano que los demás planetas.',
@@ -132,8 +135,8 @@ const INFOGRAPHIC_NODES = [
     id: 'sublimacion-hielo',
     title: 'El Proceso de Sublimación',
     color: '#80DEEA',
-    btnImage: '/assets/asteroides/hub_cometas_vector.png',
-    image: '/assets/asteroides/hub_cometas_vector.png',
+    btnImage: '/assets/cometas/nucleo.png',
+    image: '/assets/cometas/nucleo.png',
     content: [
       'En la Tierra estamos acostumbrados a que el hielo se derrita convirtiéndose en agua líquida antes de hervir para formar vapor. Sin embargo, en el vacío del espacio interplanetario no existe presión atmosférica que permita la existencia de agua líquida en la superficie de un objeto exento de atmósfera.',
       'Por esta razón, cuando un cometa helado se aproxima al Sol y su temperatura aumenta, ocurre un cambio de fase físico directo denominado Sublimación. El hielo sólido de agua, dióxido de carbono y monóxido se transforma instantáneamente en gas sin pasar en ningún momento por el estado líquido.',
@@ -151,8 +154,8 @@ const INFOGRAPHIC_NODES = [
     id: 'viento-solar-colas',
     title: 'El Viento Solar y las Colas',
     color: '#FFD54F',
-    btnImage: '/assets/asteroides/clean_cometas.png',
-    image: '/assets/asteroides/clean_cometas.png',
+    btnImage: '/assets/cometas/cola.png',
+    image: '/assets/cometas/cola.png',
     content: [
       'Una de las características más desconcertantes de los cometas para los observadores antiguos era que sus colas no siempre siguen la trayectoria de la cabeza. Al alejarse del Sol, un cometa viaja con su cola por delante, como si fuera soplada por un vendaval invisible proveniente de nuestra estrella.',
       'El responsable de este comportamiento es el Viento Solar. El Sol emite continuamente hacia todas direcciones un flujo supersónico de plasma electrizado compuesto por protones y electrones a 400 kilómetros por segundo, acompañado de fotones de luz que ejercen una presión de radiación constante.',
@@ -170,8 +173,9 @@ const INFOGRAPHIC_NODES = [
     id: 'cometas-agua-tierra',
     title: '¿Trajeron el Agua?',
     color: '#81D4FA',
-    btnImage: '/assets/asteroides/hub_cometas.png',
-    image: '/assets/asteroides/hub_cometas.png',
+    btnImage: '/assets/cometas/kuiper.png',
+    image: '/assets/cometas/kuiper.png',
+    video: { src: '/assets/asteroides/Cometa Neowise.mp4', title: 'El Cometa NEOWISE (2020)' },
     content: [
       'La Tierra es un planeta azul cubierto de océanos, pero cuando se formó hace 4,500 millones de años cerca del Sol primordial, el calor extremo evaporó todo el agua del disco interior. ¿De dónde provino entonces toda el agua que hoy llena nuestros mares y permite la existencia de la vida?',
       'Durante décadas, la hipótesis principal sostenía que los cometas, al ser inmensas reservas heladas del espacio exterior, bombardearon masivamente la Tierra joven durante el periodo del Gran Bombardeo Tardío, sembrando nuestro planeta de agua dulce y moléculas orgánicas esenciales.',
@@ -191,6 +195,7 @@ const INFOGRAPHIC_NODES = [
     color: '#FF8A65',
     btnImage: '/assets/asteroides/Rosseta.png',
     image: '/assets/asteroides/Rosseta.png',
+    video: { src: '/assets/asteroides/Video Rosseta.mp4', title: 'La Misión Rosetta: Parte 1' },
     content: [
       'Estudiar los cometas con telescopios desde la Tierra no era suficiente para descifrar sus enigmas profundos. En las últimas décadas, las agencias espaciales han enviado audaces naves robóticas a toda velocidad para fotografiar, perforar e incluso aterrizar en estas bolas de hielo flotantes.',
       'La era dorada comenzó en 1986 con la "Armada del Halley". La sonda europea Giotto pasó a solo 600 kilómetros del núcleo del Cometa Halley, obteniendo las primeras imágenes históricas en detalle de un núcleo cometario negro expulsando chorros de polvo brillante.',
@@ -210,6 +215,7 @@ const INFOGRAPHIC_NODES = [
     color: '#00E5FF',
     btnImage: '/assets/asteroides/Rosseta2.png',
     image: '/assets/asteroides/Rosseta2.png',
+    video: { src: '/assets/asteroides/Rosset vid 3 parte 2.mp4', title: 'Rosetta: Aterrizaje de Philae' },
     content: [
       'Los cometas no son eternos. Cada vez que su órbita los lleva al perihelio cerca del calor del Sol, sufren una pérdida irreversible de masa. Con el paso del tiempo geológico, todos los cometas enfrentan un final definitivo por diversos caminos físicos.',
       'El destino más común para un cometa periódico es la Extinción Térmica. Tras cientos de pasadas solares, el cometa evapora todo su hielo superficial e interno. Pierde la capacidad de crear una coma y se transforma en una roca seca e inerte conocida como un Asteroide Extinto.',
@@ -634,6 +640,29 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               <div key={i} style={{ gridColumn: node.expandables.length === 1 ? '1 / -1' : 'auto' }}>
                 <ExpandableSection item={exp} color={node.color} />
               </div>
+            ))}
+          </div>
+        )}
+        {/* Video Section */}
+        {node.video && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEO EDUCATIVO
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+        {node.videos && node.videos.length > 0 && (
+          <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, color: node.color, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+              VIDEOS EDUCATIVOS
+              <span style={{ width: '20px', height: '2px', background: node.color, borderRadius: '1px' }} />
+            </div>
+            {node.videos.map((v, vi) => (
+              <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
           </div>
         )}

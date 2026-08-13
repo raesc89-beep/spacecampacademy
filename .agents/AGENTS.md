@@ -595,3 +595,131 @@ Se renderizan en una mini-galería al final del ContentPanel con grid responsive
 - ❌ NO usar cielos estrellados genéricos o colores sólidos por defecto si el tema trata sobre algo específico (ej. si trata de arqueología espacial, el fondo debería sugerir arena marciana o ruinas estilizadas; si trata sobre agujeros negros, el fondo debería tener discos de acreción sutiles).
 - El fondo interactúa con el estilo "Nilo de Nut" (los tonos del fondo deben combinar con la paleta de las imágenes hero).
 - El fondo debe tener una baja opacidad o estar fuertemente oscurecido para no interferir con la legibilidad del texto (ej. `opacity: 0.1` a `0.3`).
+
+## 19. Formato WebP/AVIF Obligatorio para Imágenes Futuras
+
+> **REGLA DE FORMATO**: Todas las imágenes nuevas generadas para el sitio DEBEN convertirse al formato **WebP** antes del commit. WebP ofrece una compresión superior (~30% más liviano que JPEG) sin pérdida perceptible de calidad.
+
+- Usar WebP como formato por defecto para hero images, btn images, banners y fondos.
+- Calidad WebP recomendada: `quality=85` (mínimo 80).
+- Si el navegador no soporta WebP (edge case), mantener un fallback JPEG.
+- Para imágenes con transparencia (logos, overlays), usar WebP lossless o PNG optimizado.
+- ❌ NO generar imágenes nuevas en formato JPEG o PNG crudo si WebP está disponible.
+
+## 20. Unicidad Estricta de Imágenes por Nodo
+
+> **REGLA DE IDENTIDAD VISUAL**: Cada nodo, módulo o misión DEBE tener imágenes **únicas y visualmente distinguibles**. Está estrictamente PROHIBIDO reutilizar la misma imagen (hero, btn o badge) en múltiples nodos.
+
+- Cada hero image debe representar el contenido específico de su nodo (ej. si el nodo habla de Laika, la hero debe mostrar a Laika o perros soviéticos, NO un búho astronauta genérico).
+- Cada btn image debe ser una miniatura visualmente diferenciada del resto de nodos.
+- Los badges de las misiones en el hub NO deben ser clones — cada uno debe tener una identidad visual propia.
+- ❌ NO clonar la misma imagen y asignarla a múltiples nodos.
+- ❌ NO usar imágenes de animales/personas que no correspondan con la temática del nodo.
+
+## 21. Coherencia Semántica Obligatoria: Contenido ↔ Imágenes ↔ Títulos
+
+> **REGLA DE COHERENCIA**: El contenido textual, las imágenes y los títulos de cada nodo de una infografía interactiva DEBEN tener **sentido lógico y correlación temática entre sí**. Es estrictamente PROHIBIDO que un nodo muestre una imagen que no corresponde con lo que el texto describe, o que el título no tenga relación con el contenido visual y textual.
+
+### 21.1 Principio de Triada Semántica:
+Cada nodo está compuesto por una **triada indivisible**:
+```
+TÍTULO ↔ CONTENIDO TEXTUAL ↔ IMÁGENES (hero, btn, banner)
+```
+Los tres elementos DEBEN contar una historia coherente sobre el MISMO tema específico.
+
+### 21.2 Reglas de Correlación:
+
+| Elemento | Debe correlacionar con... | Ejemplo correcto | Ejemplo incorrecto |
+|---|---|---|---|
+| `btnImage` | El tema específico del nodo | Nodo "Belka y Strelka" → btn muestra a Belka y Strelka | Nodo "Belka y Strelka" → btn muestra a Laika |
+| `image` (hero) | La narrativa principal del nodo | Nodo "El Traje Berkut" → hero muestra traje espacial | Nodo "El Traje Berkut" → hero muestra cohete genérico |
+| `bannerImage` | El contexto visual del tema | Nodo sobre reentrada → banner muestra cápsula en llamas | Nodo sobre reentrada → banner muestra galaxia genérica |
+| `content[]` | El título del nodo y las imágenes | Título "Fisiología Canina" → texto sobre entrenamiento de perros | Título "Fisiología Canina" → texto genérico de exploración |
+
+### 21.3 Antipatrones Prohibidos:
+- ❌ **Imagen genérica reciclada**: Usar la misma imagen de "perro astronauta" para nodos que tratan de Laika, Belka, Strelka, Félicette y tardígrados.
+- ❌ **Texto desconectado**: Contenido que habla de "la valentía inquebrantable de los cosmonautas" en un nodo sobre insectos en el espacio.
+- ❌ **Filler text / Word Salad**: Párrafos que suenan impresionantes pero no aportan información específica al tema del nodo — acumulación de adjetivos grandilocuentes sin datos concretos.
+- ❌ **Título decorativo**: Títulos vagos como "El Gran Descubrimiento" cuando el nodo habla de algo concreto como "La Misión Rosetta al Cometa 67P".
+- ❌ **Repetición inter-nodo**: Que dos o más nodos dentro del mismo componente compartan frases, párrafos o imágenes idénticas.
+
+### 21.4 Verificación Pre-Commit:
+Antes de hacer commit de cualquier infografía, verificar para CADA nodo:
+- [ ] La `btnImage` es **visualmente única** y **temáticamente relevante** al título del nodo
+- [ ] La `image` (hero) ilustra **el tema principal** descrito en `content[]`
+- [ ] Los párrafos de `content[]` contienen datos **específicos** del tema del título (no genéricos)
+- [ ] El `bannerImage` (si existe) está correlacionado con el contexto del nodo
+- [ ] No hay imágenes idénticas entre dos nodos del mismo componente
+- [ ] No hay párrafos o frases idénticas entre nodos del mismo componente
+
+## 22. Correcciones Post-Creación Basadas en el Catálogo de Reglas
+
+> **REGLA INELUDIBLE DE CORRECCIÓN**: Toda corrección, edición, refactorización, auditoría o mantenimiento posterior a la creación inicial de una infografía interactiva DEBE basarse **exclusivamente** en las reglas documentadas en este archivo (`AGENTS.md`). Ningún agente, subagente o proceso automatizado puede aplicar correcciones que contradigan, ignoren o no estén respaldadas por las reglas aquí definidas.
+
+### 22.1 Principio de Autoridad del Catálogo:
+Este archivo (`AGENTS.md`) es la **fuente única de verdad** para la calidad y estructura de las infografías interactivas. Cualquier operación que modifique un archivo `InteractiveInfographic_*.js` DEBE:
+
+1. **Leer este catálogo** antes de aplicar cambios
+2. **Verificar conformidad** con TODAS las reglas aplicables (§1–§21)
+3. **Reportar qué reglas se validaron** en el output al usuario
+
+### 22.2 Operaciones Cubiertas:
+Esta regla aplica a TODAS las siguientes operaciones post-creación:
+
+| Operación | Reglas a Verificar |
+|---|---|
+| Corrección de imágenes faltantes | §10, §20, §21 |
+| Eliminación de word salad / filler | §14.1 (Word Salad check), §4, §13 |
+| Refactorización de contenido | §1, §3, §4, §13, §14, §21 |
+| Remapeo de imágenes | §10, §20, §21 |
+| Adición de expandables/facts | §12, §13, §14 |
+| Adición de bibliografía | §11 |
+| Cambios de layout/CSS | §10, §12, §15 |
+| Compresión de imágenes | §16, §19 |
+| Integración de banners/cenefas | §17, §12.7 |
+| Auditorías automatizadas | §14 (ambas fases) |
+| Reescritura de contenido corrupto | §1, §3, §4, §6, §13, §14, §21 |
+
+### 22.3 Formato de Validación Obligatorio:
+Al completar cualquier corrección, el agente DEBE incluir en su respuesta un bloque de validación:
+
+```
+📋 VALIDACIÓN §22 — Corrección Post-Creación
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Archivo(s) modificado(s): [lista]
+Reglas consultadas: [§X, §Y, §Z]
+Reglas cumplidas: [lista con ✅]
+Reglas no aplicables: [lista con ➖]
+Reglas violadas: [lista con ❌ + plan de corrección]
+Resultado: ✅ CONFORME / ❌ REQUIERE REVISIÓN
+```
+
+### 22.4 Cadena de Responsabilidad:
+```
+Detección de problema
+       ↓
+Consultar AGENTS.md (este archivo)
+       ↓
+Identificar reglas aplicables
+       ↓
+Aplicar corrección conforme a reglas
+       ↓
+Ejecutar auditoría §14 (si aplica)
+       ↓
+Generar bloque de validación §22.3
+       ↓
+Reportar al usuario
+```
+
+### 22.5 Lo que NUNCA hacer:
+- ❌ NO aplicar correcciones "ad hoc" sin consultar las reglas de este catálogo
+- ❌ NO crear reglas improvisadas que contradigan las existentes
+- ❌ NO omitir el bloque de validación §22.3 al finalizar correcciones
+- ❌ NO modificar archivos de infografía sin verificar conformidad con §10 (layout), §13 (volumen), §14 (auditoría) y §21 (coherencia)
+- ❌ NO asumir que una corrección anterior fue completa sin re-verificar contra las reglas vigentes
+- ❌ NO ignorar reglas nuevas añadidas posteriormente a este catálogo
+
+### 22.6 Excepciones:
+- Correcciones de emergencia (errores de build que impiden compilación) pueden aplicarse sin validación completa, pero DEBEN re-auditarse con §14 en la siguiente iteración
+- Cambios cosméticos menores (typos, espaciado) no requieren el bloque completo de validación, pero SÍ deben respetar §4 (lenguaje)
+

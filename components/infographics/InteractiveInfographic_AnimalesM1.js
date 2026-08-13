@@ -82,7 +82,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Primeros Ensayos Biológicos en el Espacio',
     color: '#D87D4A',
     btnImage: '/assets/course/animales_pioneros/btn_animales_intro.jpg',
-    image: '/assets/course/animales_pioneros/hero_animales_intro.jpg',
+    image: '/assets/course/animales_pioneros/hero_ensayos_biologicos.jpg',
     content: [
       'La exploración espacial en sus etapas preliminares requirió la evaluación rigurosa de los efectos de la microgravedad y la radiación cósmica en organismos vivos antes de arriesgar vidas humanas. En las décadas de 1940 y 1950, los científicos lanzaron esporas de hongos y moscas de la fruta a bordo de cohetes V-2 capturados para comprender cómo la radiación a gran altitud afectaba la estructura celular y la genética básica. Estos ensayos iniciales sentaron las bases para protocolos de soporte vital más complejos, demostrando que la vida terrestre podía sobrevivir a la intensa aceleración del lanzamiento y a los peligrosos niveles de exposición a los rayos cósmicos fuera de la protección atmosférica.',
       'A medida que la carrera espacial se intensificaba, los parámetros de las misiones exigían modelos animales más complejos que pudieran proporcionar datos fisiológicos en tiempo real a los investigadores en tierra. Se desarrollaron cápsulas biológicas equipadas con biosensores rudimentarios pero efectivos, capaces de monitorizar el ritmo cardíaco, la frecuencia respiratoria y la presión arterial de los especímenes durante el ascenso, la ingravidez y el brutal descenso balístico. La telemetría obtenida de estos pioneros no humanos permitió a los ingenieros espaciales rediseñar los sistemas de control térmico y amortiguación, elementos absolutamente críticos para el diseño de las futuras cápsulas tripuladas de los programas Mercury y Vostok.',
@@ -100,8 +100,8 @@ const INFOGRAPHIC_NODES = [
     id: 'vuelo-primates',
     title: 'El Vuelo de los Primates y la Tolerancia G',
     color: '#D4B872',
-    btnImage: '/assets/course/animales_pioneros/btn_animales_intro.jpg',
-    image: '/assets/course/animales_pioneros/hero_animales_intro.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_albert_ham.jpg',
+    image: '/assets/course/animales_pioneros/hero_primates_espacio.jpg',
     content: [
       'La introducción de primates no humanos en los programas de investigación espacial marcó un hito crucial en la validación biomédica de las misiones tripuladas, dado su elevado grado de similitud fisiológica y anatómica con el Homo sapiens. Específicamente, los macacos rhesus y los chimpancés fueron seleccionados por su inteligencia, su capacidad para realizar tareas psicomotoras complejas bajo condiciones de estrés extremo y su arquitectura cardiovascular comparable. Entrenados mediante protocolos de condicionamiento operante, estos primates aprendieron a manipular palancas y paneles de control durante simulaciones de vuelo, lo que permitió a los científicos terrestres evaluar el impacto directo de la aceleración gravitacional y la microgravedad prolongada en el rendimiento cognitivo y la toma de decisiones.',
       'Durante la fase crítica del despegue, los primates experimentaron fuerzas G extremas que pusieron a prueba los límites de la tolerancia cardiovascular mamífera, requiriendo el desarrollo de sofisticados asientos moldeados a medida y trajes de compresión. Estos sistemas de soporte vital estaban diseñados para prevenir el estancamiento de la sangre en las extremidades inferiores y asegurar un flujo constante de oxígeno al cerebro, mitigando el riesgo de síncope y daño neurológico isquémico. Los datos telemétricos recopilados de electrocardiogramas y sensores de presión arterial demostraron que, si bien la frecuencia cardíaca experimentaba picos dramáticos durante la ignición de los motores, el sistema circulatorio del primate podía adaptarse y estabilizarse notablemente rápido una vez alcanzada la ingravidez orbital.',
@@ -119,8 +119,8 @@ const INFOGRAPHIC_NODES = [
     id: 'caninos-sovieticos',
     title: 'Los Caninos Soviéticos y el Aislamiento Orbital',
     color: '#80DEEA',
-    btnImage: '/assets/course/animales_pioneros/btn_animales_intro.jpg',
-    image: '/assets/course/animales_pioneros/hero_animales_intro.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_laika.jpg',
+    image: '/assets/course/animales_pioneros/hero_caninos_sovieticos.jpg',
     content: [
       'El programa espacial soviético adoptó un enfoque radicalmente distinto en sus ensayos biológicos al seleccionar perros callejeros de Moscú como los principales candidatos para sus misiones pioneras en órbita terrestre baja. La justificación de esta decisión se basó en la premisa de que los canes que sobrevivían a los duros inviernos urbanos y a las extremas condiciones de estrés ambiental poseían una resiliencia fisiológica superior e inherente. Estos especímenes caninos fueron sometidos a rigurosos regímenes de entrenamiento que incluían confinamiento prolongado en espacios diminutos, exposición a vibraciones acústicas ensordecedoras y simulaciones en centrífugas de alta aceleración para asegurar que pudieran soportar las brutales dinámicas de lanzamiento y las hostilidades del entorno orbital sin sucumbir al pánico paralizante.',
       'La histórica misión del satélite Sputnik 2, que llevó a la perra Laika al espacio en 1957, representó el hito de ser el primer vuelo orbital de un organismo multicelular complejo, inaugurando una nueva era de la biología espacial exoesférica. Aunque la tecnología de la época carecía de capacidades de reentrada atmosférica diseñadas para una recuperación segura, la telemetría continua enviada por los sensores implantados en Laika demostró concluyentemente que un mamífero avanzado podía sobrevivir a la brutal inserción orbital. Los electrocardiogramas y neumogramas transmitidos a la Tierra confirmaron que, a pesar del estrés fisiológico inmenso del lanzamiento, los signos vitales del can lograron una meseta de estabilización relativa una vez que experimentó los efectos estabilizadores de la ingravidez orbital y el silencio del vacío espacial.',
@@ -138,8 +138,8 @@ const INFOGRAPHIC_NODES = [
     id: 'ecosistemas-cerrados',
     title: 'Ecosistemas Cerrados y Microorganismos Extremófilos',
     color: '#3949AB',
-    btnImage: '/assets/course/animales_pioneros/btn_animales_intro.jpg',
-    image: '/assets/course/animales_pioneros/hero_animales_intro.jpg',
+    btnImage: '/assets/course/animales_pioneros/btn_gatos.jpg',
+    image: '/assets/course/animales_pioneros/hero_ecosistemas_extremofilos.jpg',
     content: [
       'Mientras que los mamíferos pioneros acaparaban la atención pública y mediática, la base verdaderamente revolucionaria de la astrobiología experimental se forjaba mediante el estudio meticuloso de invertebrados, plantas y microorganismos en entornos orbitales controlados. Estos diminutos pasajeros biológicos ofrecían ventajas incomparables debido a sus rápidos ciclos reproductivos y perfiles metabólicos altamente definidos, lo que permitía a los científicos documentar genéticamente múltiples generaciones bajo la influencia sostenida de la microgravedad y la radiación espacial cósmica. La experimentación con estas comunidades biológicas más simples sentó las bases ineludibles para la conceptualización de los modernos Sistemas de Soporte Vital Ecológico Cerrado (CELSS), componentes absolutamente críticos para sostener futuras colonias permanentes en Marte y más allá.',
       'Un descubrimiento asombroso en esta área de investigación microscópica espacial fue la observación empírica de que ciertos microorganismos patógenos experimentaban alteraciones radicales en su virulencia genotípica y fenotípica cuando se cultivaban en condiciones de gravedad cero prolongada. Específicamente, bacterias como Salmonella typhimurium mostraron un aumento estadísticamente significativo en su letalidad debido a modificaciones transcripcionales en las vías genéticas reguladas por la dinámica de fluidos de cizallamiento en microgravedad, lo que altera fundamentalmente cómo los microbios interactúan con las superficies celulares. Este comportamiento patológico divergente ha obligado a los farmacólogos y microbiólogos a rediseñar agresivamente los regímenes de antibióticos y las medidas estrictas de esterilización para salvaguardar la salud inmunocomprometida de las futuras tripulaciones en misiones de espacio profundo.',
@@ -651,6 +651,13 @@ export default function InteractiveInfographic_AnimalesM1() {
       padding: '2.5rem 1rem',
       overflow: 'hidden',
     }}>
+      {/* Contextual Background Image (§18) */}
+      <div style={{
+        position: 'absolute', inset: 0, zIndex: 0,
+        backgroundImage: `url('/assets/course/animales_pioneros/bg_animales.jpg')`,
+        backgroundSize: 'cover', backgroundPosition: 'center',
+        opacity: 0.15, pointerEvents: 'none',
+      }} />
       <div style={{
         position: 'absolute', inset: 0,
         background: 'linear-gradient(180deg, rgba(12,14,32,0.88) 0%, rgba(18,14,38,0.85) 45%, rgba(12,14,32,0.92) 100%)',
