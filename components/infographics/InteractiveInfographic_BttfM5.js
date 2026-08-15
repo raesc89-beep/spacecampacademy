@@ -152,8 +152,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'pelicula', title: 'El Aeropatín en la Película', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_m5/btn_pelicula.jpg',
-    image: '/assets/bttf/infographic_m5/hero_pelicula.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_pelicula.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_pelicula.png',
     content: [
       'En «Volver al Futuro Parte II» (1989), Marty McFly viaja al año 2015 y utiliza un aeropatín (una tabla flotante). La película muestra el uso de estos dispositivos en la ciudad. El director Robert Zemeckis bromeó afirmando que los aeropatines existían pero no se comercializaban por motivos de seguridad.',
       'Para filmar estas escenas, los actores utilizaron tablas sujetas con arneses y cables. La producción empleó pantallas azules y plataformas mecánicas. El accesorio original, un aeropatín rosa, se convirtió en un elemento representativo del cine de ciencia ficción.',
@@ -165,8 +165,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'maglev', title: 'Trenes Maglev: Levitación Real', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_m5/btn_maglev.jpg',
-    image: '/assets/bttf/infographic_m5/hero_maglev.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_maglev.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_maglev.png',
     content: [
       'Los trenes de levitación magnética (maglev) operan flotando sobre sus vías. Al carecer de contacto físico, se elimina la fricción mecánica, operando sobre un campo magnético.',
       'El sistema Maglev de Shanghái alcanza los 431 km/h. Utiliza un sistema de suspensión electromagnética (EMS) en el cual los electroimanes del vehículo son atraídos hacia un riel ferromagnético, manteniendo un espacio libre de 10 milímetros.',
@@ -178,8 +178,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lexus', title: 'El Hoverboard de Lexus (2015)', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_m5/btn_lexus.jpg',
-    image: '/assets/bttf/infographic_m5/hero_lexus.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_lexus.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_lexus.png',
     content: [
       'En 2015, la compañía automotriz Lexus presentó un prototipo funcional denominado "SLIDE", un aeropatín diseñado para levitar usando tecnología de superconductores.',
       'El dispositivo integra criostatos con superconductores enfriados a -197°C mediante nitrógeno líquido. Estos materiales aprovechan el efecto Meissner para levitar al repeler los campos magnéticos de una superficie inferior.',
@@ -191,8 +191,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'hendo', title: 'El Hendo Hoverboard y Tony Hawk', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_m5/btn_hendo.jpg',
-    image: '/assets/bttf/infographic_m5/hero_hendo.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_hendo.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_hendo.png',
     content: [
       'En 2014, Arx Pax desarrolló el aeropatín Hendo. El prototipo generó atención tras una demostración en la que participó el deportista Tony Hawk.',
       'El dispositivo utiliza la Ley de Lenz y corrientes de Foucault. El movimiento de un campo magnético sobre una superficie conductora genera corrientes eléctricas inducidas, las cuales crean un campo magnético que se opone al movimiento original.',
@@ -204,8 +204,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'newton', title: 'Las Leyes de Newton y la Gravedad', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_m5/btn_newton.jpg',
-    image: '/assets/bttf/infographic_m5/hero_newton.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_newton.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_newton.png',
     content: [
       'La ley de la gravitación universal de Isaac Newton (1687) establece que todo objeto con masa atrae a otros objetos. En la Tierra, esta aceleración es de 9.8 m/s².',
       'Cuando un objeto sostiene otro, ejerce una fuerza ascendente que iguala a la fuerza gravitacional descendente. Un sistema de levitación opera mediante un principio similar, aplicando una fuerza que contrarresta la gravedad.',
@@ -217,8 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'quantum', title: 'Levitación Cuántica: Flux Pinning', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_m5/btn_quantum.jpg',
-    image: '/assets/bttf/infographic_m5/hero_quantum.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_quantum.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_quantum.png',
     content: [
       'La levitación cuántica permite que un disco superconductor, enfriado a -196°C, quede fijo en el aire sobre una pista magnética. El disco mantiene su posición incluso si se altera la orientación de la pista.',
       'Este fenómeno se conoce como bloqueo cuántico o flux pinning. En los superconductores de Tipo II, las líneas de campo magnético quedan atrapadas en las imperfecciones del material, fijando al superconductor en su posición relativa al campo magnético.',
@@ -230,8 +230,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'electro', title: 'Suspensión EM en la Vida Real', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_m5/btn_electro.jpg',
-    image: '/assets/bttf/infographic_m5/hero_electro.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_electro.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_electro.png',
     content: [
       'La suspensión electromagnética se emplea en trenes maglev, rodamientos magnéticos para turbinas industriales y cabezales de discos duros, los cuales operan a nanómetros de la superficie del disco magnético.',
       'Existen dos variantes: la suspensión electromagnética (EMS), que utiliza atracción entre electroimanes y un riel ferromagnético superior, y la electrodinámica (EDS), basada en la repulsión magnética sobre una vía conductora, que requiere alta velocidad inicial.',
@@ -243,8 +243,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-antgrav', title: 'El Futuro de la Antigravedad', color: '#FF5252',
-    btnImage: '/assets/bttf/infographic_m5/btn_futuro-antgrav.jpg',
-    image: '/assets/bttf/infographic_m5/hero_futuro-antgrav.jpg',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_futuro.png',
+    image: '/assets/bttf/infographic_aeropatines/hero_futuro.png',
     content: [
       'Las tecnologías de levitación demostradas incluyen levitación magnética, bloqueo cuántico, suspensión electromagnética y levitación acústica.',
       'En física teórica, la posibilidad de anular el campo gravitacional mediante antigravedad permanece como una hipótesis no demostrada, ya que aún no se ha detectado experimentalmente el gravitón, la partícula mediadora de la gravedad.',
