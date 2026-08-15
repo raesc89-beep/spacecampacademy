@@ -723,3 +723,71 @@ Reportar al usuario
 - Correcciones de emergencia (errores de build que impiden compilación) pueden aplicarse sin validación completa, pero DEBEN re-auditarse con §14 en la siguiente iteración
 - Cambios cosméticos menores (typos, espaciado) no requieren el bloque completo de validación, pero SÍ deben respetar §4 (lenguaje)
 
+---
+
+## 23. Integridad de Assets Existentes (Regla Anti-Reprocesamiento)
+
+> **REGLA INELUDIBLE DE PROTECCIÓN**: Cualquier operación que modifique rutas de imagen, nombres de archivo, directorios de assets, o contenido de componentes `InteractiveInfographic_*.js` que ya funcionaban correctamente está estrictamente PROHIBIDA a menos que el usuario lo solicite explícitamente.
+
+### 23.1 Verificación Previa Obligatoria (Pre-Edit Checklist):
+Antes de modificar CUALQUIER ruta de imagen en un componente infográfico:
+
+```
+CHECKLIST §23 (ejecutar ANTES de editar):
+┌──────────────────────────────────────────────────────────────┐
+│ □ ¿La ruta actual EXISTE en /public/assets/?                 │
+│   → SI existe: NO cambiar la ruta. Dejar como está.          │
+│   → Si NO existe: entonces SÍ es válido corregirla.          │
+│                                                              │
+│ □ ¿Las imágenes del componente fueron generadas con Vertex AI│
+│   (créditos del usuario)? → JAMÁS eliminar, renombrar ni     │
+│   mover sin autorización explícita del usuario.               │
+│                                                              │
+│ □ ¿El commit que generó las imágenes está en git log?        │
+│   → Verificar que el asset existe ANTES de editar el JSX.    │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### 23.2 Protocolo de Verificación de Rutas:
+Antes de hacer commit de CUALQUIER cambio en paths de imágenes:
+
+```python
+# Script de verificación obligatorio
+import os
+PUBLIC = "public"
+for path in all_image_paths_in_component:
+    full = os.path.join(PUBLIC, path.lstrip("/"))
+    assert os.path.exists(full), f"RUTA ROTA: {path}"
+```
+
+### 23.3 Lo que NUNCA hacer:
+- ❌ NO cambiar rutas de imagen sin verificar que la nueva ruta existe en disco
+- ❌ NO renombrar directorios de assets sin actualizar TODOS los componentes que los referencian
+- ❌ NO eliminar o mover imágenes generadas con créditos Vertex AI sin autorización
+- ❌ NO hacer commits de "refactorización" de rutas sin ejecutar la verificación §23.2
+- ❌ NO asumir que una ruta "se ve bien" sin confirmarla en el filesystem
+- ❌ NO procesar/regenerar imágenes de componentes que ya están verificados y funcionando
+
+### 23.4 Regla de No-Reprocesamiento:
+Si un componente `InteractiveInfographic_*.js` ya tiene:
+- ✅ Todas sus rutas de imagen verificadas en disco
+- ✅ Build exitoso (sin errores de compilación)
+- ✅ Contenido aprobado por el usuario
+
+**→ NO TOCAR ese componente en iteraciones posteriores**, a menos que el usuario solicite explícitamente un cambio específico en él.
+
+### 23.5 Registro de Componentes Verificados:
+Al finalizar una sesión de trabajo, documentar en el commit message cuáles componentes fueron verificados como "PROTEGIDOS - NO REPROCESAR":
+
+```
+COMPONENTES PROTEGIDOS (verificados, no tocar):
+- InteractiveInfographic_MayaM1-M15: 210 imágenes OK
+- InteractiveInfographic_SwSec1-9: 9 carpetas OK
+- InteractiveInfographic_InterestelarM1-6: OK
+- InteractiveInfographic_InterstellarM1-5: OK (pendiente M1 nombre)
+- InteractiveInfographic_EgyptM1-M14: RESTAURADO, verificado
+- InteractiveInfographic_BttfM1-M7: RESTAURADO, verificado
+```
+
+### 23.6 Correlación con §22:
+Esta regla extiende §22 específicamente para la protección de assets. Las operaciones de §22 que involucren imágenes SIEMPRE deben ejecutar el checklist §23.1 primero.
