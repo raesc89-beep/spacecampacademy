@@ -175,7 +175,7 @@ const INFOGRAPHIC_NODES = [
       'Los constructores diseñaron cada conducto con un ángulo preciso. Desde la cámara interior, una persona podía ver una estrella específica a través del túnel.',
       'Las simulaciones astronómicas modernas confirman estas alineaciones. Los conductos servían como canales de comunicación entre el faraón en el interior y los dioses en las estrellas.',
     ],
-    fact: 'Los conductos miden 20 Ã— 20 cm y atraviesan más de 60 metros de piedra manteniendo un ángulo constante. Una desviación de 1 grado habría impedido apuntar a la estrella objetivo. Los ingenieros egipcios mantuvieron esta precisión durante la construcción.',
+    fact: 'Los conductos miden 20 × 20 cm y atraviesan más de 60 metros de piedra manteniendo un ángulo constante. Una desviación de 1 grado habría impedido apuntar a la estrella objetivo. Los ingenieros egipcios mantuvieron esta precisión durante la construcción.',
   },
   {
     id: 'estrellas-laser',
@@ -713,7 +713,7 @@ export default function InteractiveInfographic_EgyptM5() {
         </ul>
       </div>
 
-      {/* ImageLightbox Â§15 */}
+      {/* ImageLightbox §15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

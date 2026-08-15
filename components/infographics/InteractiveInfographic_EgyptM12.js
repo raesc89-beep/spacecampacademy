@@ -220,7 +220,7 @@ const INFOGRAPHIC_NODES = [
     content: [
       '¿Puedes medir el tamaño de la Tierra con un palo y una sombra? ¡Eratóstenes lo hizo hace 2,250 años! Este genio griego que vivía en Alejandría (Egipto) usó el mismo principio del obelisco â€”medir sombrasâ€” para calcular la circunferencia de nuestro planeta con una precisión asombrosa.',
       'Eratóstenes se enteró de que en la ciudad de Siena (hoy Asuán), al mediodía del solsticio de verano, el Sol estaba justo encima: un palo vertical no proyectaba sombra y la luz del sol llegaba hasta el fondo de un pozo profundo. Pero en Alejandría, a 800 km al norte, un palo SÍ proyectaba sombra al mediodía del mismo día. ¿Por qué la diferencia?',
-      'La respuesta era simple pero revolucionaria: ¡la Tierra es redonda! Si fuera plana, la sombra sería igual en ambas ciudades. Eratóstenes midió el ángulo de la sombra en Alejandría: 7.2 grados, que es 1/50 de un círculo completo (360°). Si Siena y Alejandría estaban separadas por 800 km, entonces la circunferencia total de la Tierra sería 800 Ã— 50 = 40,000 km.',
+      'La respuesta era simple pero revolucionaria: ¡la Tierra es redonda! Si fuera plana, la sombra sería igual en ambas ciudades. Eratóstenes midió el ángulo de la sombra en Alejandría: 7.2 grados, que es 1/50 de un círculo completo (360°). Si Siena y Alejandría estaban separadas por 800 km, entonces la circunferencia total de la Tierra sería 800 × 50 = 40,000 km.',
       '¿Y cuál es la circunferencia real de la Tierra? ¡40,075 km! Eratóstenes acertó con un error de menos del 1%. Usando solo un palo, una sombra y geometría básica, un hombre calculó el tamaño del planeta entero hace 2,250 años. ¡Ni siquiera necesitó una calculadora!',
       'Los egipcios le dieron a Eratóstenes las herramientas para su descubrimiento: el gnomon (una varilla vertical para medir sombras) era la versión portátil del obelisco. Los sacerdotes egipcios usaban gnomones desde hacía 2,000 años antes de Eratóstenes para calcular la latitud de diferentes ciudades midiendo la sombra del mediodía. ¡La ciencia egipcia del obelisco permitió medir la Tierra!',
     ],
@@ -693,7 +693,7 @@ export default function InteractiveInfographic_EgyptM12() {
         </ul>
       </div>
 
-      {/* ImageLightbox Â§15 */}
+      {/* ImageLightbox §15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

@@ -279,7 +279,7 @@ const INFOGRAPHIC_NODES = [
       {
         label: "Un Malentendido Espacial",
         icon: "zap",
-        text: 'La teoría del "astronauta de Palenque"se hizo súper famosa en un libro de 1968. El autor argumentaba que Pakal estaba en una cápsula espacial con tubos de respiración y palancas de aceleración. Pero los arqueólogos y epigrafistas han demostrado, que las supuestas"llamas del cohete"son en realidad raíces del ÃƒÂrbol Cósmico sagrado o las fauces del Monstruo de la Tierra del inframundo. Las"palancas" y "controles" son simplemente gestos rituales que el rey hace con las manos, muy comunes en el arte maya, y representaciones de sangre sagrada y joyas de jade.',
+        text: 'La teoría del "astronauta de Palenque"se hizo súper famosa en un libro de 1968. El autor argumentaba que Pakal estaba en una cápsula espacial con tubos de respiración y palancas de aceleración. Pero los arqueólogos y epigrafistas han demostrado, que las supuestas"llamas del cohete"son en realidad raíces del Ãrbol Cósmico sagrado o las fauces del Monstruo de la Tierra del inframundo. Las"palancas" y "controles" son simplemente gestos rituales que el rey hace con las manos, muy comunes en el arte maya, y representaciones de sangre sagrada y joyas de jade.',
       },
       {
         label: "Símbolos Cósmicos Explicados",
@@ -306,7 +306,7 @@ const INFOGRAPHIC_NODES = [
       {
         label: "Un Diseño ÃƒÅ¡nico",
         icon: "zap",
-        text: 'La Torre del Palacio en Palenque es un misterio arquitectónico. En casi todas las demás ciudades mayas de esa época, construían observatorios circulares especiales, como el famoso "Caracol" en Chichén Itzá, que se parecen asombrosamente a los observatorios astronómicos modernos con cúpulas redondas. Sin embargo, los arquitectos de Palenque decidieron romper las reglas tradicionales y crearon una estructura vertical cuadrada. Algunos expertos sugieren que tal vez fue construida con esta forma inusual para asemejarse visualmente a una gran ceiba, el ÃƒÂrbol Cósmico, elevándose firmemente desde el corazón terrenal del Palacio real hacia los reinos celestiales.',
+        text: 'La Torre del Palacio en Palenque es un misterio arquitectónico. En casi todas las demás ciudades mayas de esa época, construían observatorios circulares especiales, como el famoso "Caracol" en Chichén Itzá, que se parecen asombrosamente a los observatorios astronómicos modernos con cúpulas redondas. Sin embargo, los arquitectos de Palenque decidieron romper las reglas tradicionales y crearon una estructura vertical cuadrada. Algunos expertos sugieren que tal vez fue construida con esta forma inusual para asemejarse visualmente a una gran ceiba, el Ãrbol Cósmico, elevándose firmemente desde el corazón terrenal del Palacio real hacia los reinos celestiales.',
       },
       {
         label: "El Sofá de los Planetas",

@@ -295,7 +295,7 @@ function MayaHeader() {
             <stop offset="100%" stopColor="rgba(255,179,0,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#FFB300" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">LA RUEDA CALENDÃƒÂRICA</text>
+        <text x="300" y="80" textAnchor="middle" fill="#FFB300" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">LA RUEDA CALENDÃRICA</text>
         <text x="300" y="100" textAnchor="middle" fill="rgba(255,179,0,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">EL ENGRANAJE DE DOS CICLOS</text>
       </svg>
     </div>

@@ -445,7 +445,7 @@ export default function CourseModule() {
 
   const isCompleted = userData?.progress?.completedModules?.includes(moduleData.id);
   
-  const isAnomaly = moduleData.id.startsWith('stellar-');
+  const isAnomaly = moduleData.id.startsWith('stellar-') || ['black_hole','pulsar','quasar','white_dwarf','red_dwarf'].includes(moduleData.id);
   const isAnimal = moduleData.id.startsWith('animales_');
   const isAsteroide = moduleData.id.startsWith('asteroides_');
   const isPionero = moduleData.id.startsWith('pioneros_');
@@ -456,15 +456,21 @@ export default function CourseModule() {
   const isSun = moduleData.id === 'sun';
   const isBttf = moduleData.id.startsWith('bttf_');
   
-  const planetImageName = isEgypt ? (moduleData.contentEs?.sections?.[0]?.image?.replace('/assets/', '') || 'egypt_placeholder.png') :
-                          (isBttf ? `bttf/${moduleData.id}.png` :
-                          (isRobot ? `rovers/ai_${moduleData.id.replace('robots_', '')}.png` :
-                          (isPionero ? `pioneros/hub_${moduleData.id.replace('pioneros_', '')}.png` :
-                          (isAnimal ? `animales/hub_${moduleData.id.replace('animales_', '')}.png` : 
-                          (isAsteroide ? `asteroides/hub_${moduleData.id.replace('asteroides_', '')}.png` : 
-                          (isAnomaly ? `${moduleData.id}_icon.png` : 
-                          (isSun ? 'cartoon_sun.png' : 
-                          (isPluto ? 'planet_pluto.png' : `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`))))))));
+  const getSidebarImage = () => {
+    if (isEgypt) return moduleData.contentEs?.sections?.[0]?.image?.replace('/assets/', '') || 'egypt_placeholder.png';
+    if (isBttf) return `bttf/${moduleData.id}.png`;
+    if (isRobot) return `rovers/ai_${moduleData.id.replace('robots_', '')}.png`;
+    if (isPionero) return `pioneros/hub_${moduleData.id.replace('pioneros_', '')}.png`;
+    if (isAnimal) return `animales/hub_${moduleData.id.replace('animales_', '')}.png`;
+    if (isAsteroide) return `asteroides/hub_${moduleData.id.replace('asteroides_', '')}.png`;
+    if (isAnomaly) return `${moduleData.id}_icon.png`;
+    if (isSun) return 'cartoon_sun.png';
+    if (isPluto) return 'planet_pluto.png';
+    const fb = moduleData.badgeIcon || moduleData.icon || moduleData.contentEs?.sections?.[0]?.image;
+    if (fb) return fb.replace(/^\/assets\//, '');
+    return `cartoon_${moduleData.titleEn?.toLowerCase().replace(/\s+/g, '_')}.png`;
+  };
+  const planetImageName = getSidebarImage();
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>

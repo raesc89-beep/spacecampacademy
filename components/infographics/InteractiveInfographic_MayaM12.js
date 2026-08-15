@@ -305,7 +305,7 @@ function MayaHeader() {
             <stop offset="100%" stopColor="rgba(249,168,37,0.2)" />
           </linearGradient>
         </defs>
-        <text x="300" y="80" textAnchor="middle" fill="#F9A825" fontSize="22" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="4">COPÃƒÂN</text>
+        <text x="300" y="80" textAnchor="middle" fill="#F9A825" fontSize="22" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="4">COPÃN</text>
         <text x="300" y="100" textAnchor="middle" fill="rgba(249,168,37,0.7)" fontSize="12" fontFamily="monospace" letterSpacing="3">LAS ESTELAS SOLARES</text>
       </svg>
     </div>

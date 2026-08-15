@@ -261,7 +261,7 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown destruye el DeLorean al final de BTTF III porque comprende que la máquina del tiempo es demasiado peligrosa. Es una decisión de \'gobernanza temporal\'personal: elige que nadie más pueda viajar en el tiempo. Sin embargo, Doc construye un NUEVO vehículo temporal (la locomotora) â€” sugiriendo que la tentación del viaje temporal es irresistible, incluso para su inventor.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La humanidad consume actualmente unos 18 terawatts de energía total (toda la electricidad, transporte, industria del planeta). Una civilización Tipo I necesitaría 174 petawatts (10,000 veces más). Una Tipo II usaría la energía total del Sol: 3.8 Ã— 10Â²â¶ watts. Para tener perspectiva: la energía que produce el Sol en UN SEGUNDO bastaría para alimentar toda la civilización humana actual durante 500,000 años.' }
+      { label: '¿Sabías que...?', icon: 'clock', text: 'La humanidad consume actualmente unos 18 terawatts de energía total (toda la electricidad, transporte, industria del planeta). Una civilización Tipo I necesitaría 174 petawatts (10,000 veces más). Una Tipo II usaría la energía total del Sol: 3.8 × 10²â¶ watts. Para tener perspectiva: la energía que produce el Sol en UN SEGUNDO bastaría para alimentar toda la civilización humana actual durante 500,000 años.' }
     ],
     fact: 'En 2004, el astrofísico Richard Gott III calculó que la probabilidad de que nuestra civilización sobreviva lo suficiente para construir una máquina del tiempo es de menos del 5%, usando el \'Argumento del Juicio Final\'(Doomsday Argument). Su razonamiento estadístico sugiere que el hecho de que existamos tan temprano en la historia de la humanidad hace improbable que la humanidad dure millones de años más. ¡Demoledor pero fascinante!'
   }
@@ -873,7 +873,7 @@ export default function InteractiveInfographic_BttfM6() {
         </div>
       </div>
 
-      {/* ImageLightbox Â§15 */}
+      {/* ImageLightbox §15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );

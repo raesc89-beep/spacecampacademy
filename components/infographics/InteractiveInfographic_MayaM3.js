@@ -331,7 +331,7 @@ function TimeTravelHeader() {
           </linearGradient>
         </defs>
         <text x="300" y="80" textAnchor="middle" fill="#FDD835" fontSize="18" fontWeight="bold" fontFamily="Georgia, serif" letterSpacing="3">EL CALENDARIO HAAB</text>
-        <text x="300" y="100" textAnchor="middle" fill="rgba(253,216,53,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">EL CICLO SOLAR DE 365 DÃƒÂAS</text>
+        <text x="300" y="100" textAnchor="middle" fill="rgba(253,216,53,0.6)" fontSize="11" fontFamily="monospace" letterSpacing="2">EL CICLO SOLAR DE 365 DÃAS</text>
       </svg>
     </div>
   );
@@ -861,7 +861,7 @@ export default function InteractiveInfographic_MayaM3() {
         </ul>
       </div>
 
-      {/* ImageLightbox Ã‚Â§15 */}
+      {/* ImageLightbox Ã‚§15 */}
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
