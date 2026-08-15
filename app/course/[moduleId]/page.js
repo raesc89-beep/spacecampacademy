@@ -553,6 +553,7 @@ export default function CourseModule() {
             </h1>
           </div>
 
+          <Suspense fallback={<div style={{ textAlign: 'center', padding: '3rem', color: '#aaa' }}>⏳ Cargando infografía interactiva...</div>}>
           {/* ── INTERACTIVE INFOGRAPHICS: egypt modules ── */}
           {moduleData.id === 'egypt_m11' && (
             <InteractiveInfographic_EgyptM11 />
@@ -1014,6 +1015,7 @@ export default function CourseModule() {
           {moduleData.id === 'arrival_m6' && (
             <InteractiveInfographic_ArrivalM6 />
           )}
+          </Suspense>
 
           {moduleData.id !== 'egypt_m11' && moduleData.id !== 'egypt_m9' && moduleData.id !== 'egypt_m10' && moduleData.id !== 'egypt_m1' && moduleData.id !== 'egypt_m6' && moduleData.id !== 'egypt_m5' && moduleData.id !== 'egypt_m8' && moduleData.id !== 'egypt_m14' && moduleData.id !== 'egypt_m12' && moduleData.id !== 'egypt_m13' && moduleData.id !== 'bttf_m3' && moduleData.id !== 'bttf_m5' && moduleData.id !== 'bttf_m2' && moduleData.id !== 'bttf_m6' && moduleData.id !== 'bttf_m1' && moduleData.id !== 'bttf_m4' && moduleData.id !== 'bttf_m7' && moduleData.id !== 'starwars_sec_2' && moduleData.id !== 'starwars_sec_1' && moduleData.id !== 'starwars_sec_7' && moduleData.id !== 'starwars_sec_8' && moduleData.id !== 'starwars_sec_3' && moduleData.id !== 'starwars_sec_4' && moduleData.id !== 'starwars_sec_5' && moduleData.id !== 'starwars_sec_6' && moduleData.id !== 'starwars_sec_9' && moduleData.id !== 'interstellar_m1' && moduleData.id !== 'interstellar_m2' && moduleData.id !== 'interstellar_m3' && moduleData.id !== 'interstellar_m4' && moduleData.id !== 'interstellar_m5' && moduleData.id !== 'interestelar_m1' && moduleData.id !== 'interestelar_m2' && moduleData.id !== 'interestelar_m3' && moduleData.id !== 'interestelar_m4' && moduleData.id !== 'interestelar_m5' && moduleData.id !== 'interestelar_m6' && moduleData.id !== 'maya_m1' && moduleData.id !== 'maya_m2' && moduleData.id !== 'maya_m3' && moduleData.id !== 'maya_m4' && moduleData.id !== 'maya_m5' && moduleData.id !== 'maya_m6' && moduleData.id !== 'maya_m7' && moduleData.id !== 'maya_m8' && moduleData.id !== 'maya_m9' && moduleData.id !== 'maya_m10' && moduleData.id !== 'maya_m11' && moduleData.id !== 'maya_m12' && moduleData.id !== 'maya_m13' && moduleData.id !== 'maya_m14' && moduleData.id !== 'maya_m15' && moduleData.id !== 'viaje-planetas-gaseosos' && !moduleData.id.startsWith('rocosos_') && !moduleData.id.startsWith('exoplanetas_') && !moduleData.id.startsWith('asteroides_') && !moduleData.id.startsWith('animales_') && !moduleData.id.startsWith('dinos_') && !moduleData.id.startsWith('marinos_') && !moduleData.id.startsWith('tesla_') && !moduleData.id.startsWith('einstein_') && !moduleData.id.startsWith('sagan_') && !moduleData.id.startsWith('curie_') && !moduleData.id.startsWith('cecilia_') && !moduleData.id.startsWith('griegos_') && !moduleData.id.startsWith('astro_train_') && !moduleData.id.startsWith('arrival_') && !moduleData.id.startsWith('pioneros_') && (
             moduleData.contentEs?.sections ? (
