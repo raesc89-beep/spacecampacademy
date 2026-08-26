@@ -167,6 +167,9 @@ const INFOGRAPHIC_NODES = [
       'En 1949, el matemático Kurt Gödel encontró soluciones a las ecuaciones de la Relatividad que permiten «curvas temporales cerradas», es decir, trayectorias matemáticas hacia el pasado. Este hallazgo preocupó a Einstein porque su teoría permitía situaciones lógicamente inconsistentes.',
     ],
     fact: 'Kurt Gödel le regaló a Einstein un universo en rotación por su cumpleaños en 1949, demostrando que los viajes al pasado eran matemáticamente posibles según la propia teoría de Einstein. A Einstein le inquietó profundamente.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro» (1985), Marty McFly viaja accidentalmente a 1955 e impide que sus padres Lorraine y George se conozcan en el baile de graduación, provocando que su propia existencia empiece a desvanecerse. Su mano derecha desaparece mientras toca la guitarra. Doc Brown le explica que tiene exactamente una semana para reunir a sus padres o desaparecerá de la historia. La solución viene en el baile del "Encanto bajo el Mar" donde George golpea a Biff para defender a Lorraine, restaurando la línea temporal. La paradoja del abuelo es el motor dramático central de toda la película.' },
+    ],
   },
   {
     id: 'muchos-mundos', title: 'Universos Paralelos', color: '#00CCFF',
@@ -180,6 +183,9 @@ const INFOGRAPHIC_NODES = [
       'En una encuesta de 2013, aproximadamente el 18% de los físicos especialistas apoyaban la interpretación de Muchos Mundos. Es la segunda opción más aceptada después de la interpretación de Copenhague.',
     ],
     fact: 'Hugh Everett propuso los Muchos Mundos en su tesis doctoral de 1957. Su director John Wheeler la apoyó, pero Niels Bohr la rechazó. Everett abandonó la física y se convirtió en contratista militar. Murió a los 51 años sin saber que su teoría se volvería respetada.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro Parte II» (1989), Doc Brown usa un diagrama de papel para explicar a Marty y Jennifer cómo funciona la división de líneas temporales. Cuando Biff anciano roba el DeLorean en 2015 y lleva el almanaque deportivo a 1955, crea una bifurcación que genera el "1985-A": Hill Valley se convierte en una ciudad corrupta donde Biff Tannen es un multimillonario poderoso. Doc dice: "Estamos atrapados en una línea temporal alternativa." La segunda película es, esencialmente, una exploración visual de la interpretación de Muchos Mundos aplicada al viaje temporal.' },
+    ],
   },
   {
     id: 'bootstrap', title: 'El Bucle Bootstrap', color: '#E040FB',
@@ -193,6 +199,9 @@ const INFOGRAPHIC_NODES = [
       'El relato «All You Zombies» de Robert Heinlein explora este concepto: una persona viaja en el tiempo y resulta ser su propia madre y su propio padre. Es el ejemplo de un individuo creado en un bucle temporal sin origen externo.',
     ],
     fact: 'El nombre «paradoja bootstrap» viene del relato de Robert Heinlein «By His Bootstraps» (1941). La frase «levantarte tirando de tus propias botas» originalmente describía algo imposible â€” ¡no puedes levantarte tirando de tus propios zapatos!',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'La paradoja bootstrap más famosa de la trilogía ocurre con la canción "Johnny B. Goode". En el baile de 1955, Marty toca la canción al estilo de Chuck Berry, quien aún no la ha compuesto. El primo de Chuck Berry está presente y llama por teléfono para que Chuck escuche "su próximo gran éxito". Esto significa que Chuck Berry aprendió su propia canción de Marty, quien la aprendió de Chuck Berry. La canción no tiene creador original: existe en un bucle cerrado sin origen. Robert Zemeckis incluyó esta paradoja deliberadamente como un guiño inteligente a los viajes temporales.' },
+    ],
   },
   {
     id: 'gemelos', title: 'La Paradoja de los Gemelos', color: '#FF6B00',
@@ -206,6 +215,9 @@ const INFOGRAPHIC_NODES = [
       'El astronauta Scott Kelly pasó 340 días en la Estación Espacial Internacional. Al volver a la Tierra, resultó ser 5 milisegundos más joven que su hermano gemelo, convirtiéndose en un viajero hacia el futuro.',
     ],
     fact: 'Scott Kelly es 5 milisegundos más joven que su gemelo idéntico Mark Kelly (ahora senador de EE.UU. Por Arizona) porque pasó 520 días totales en el espacio. La ISS orbita a 7.66 km/s. Cada astronauta que regresa de la ISS ha viajado un poquito al futuro.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'La paradoja de los gemelos aparece de forma sutil en «BTTF Parte III» (1990). Doc Brown ha vivido en 1885 durante ocho meses antes de que Marty llegue. Cuando regresan a 1985, Doc ha envejecido biológicamente esos ocho meses. Al final, Doc aparece con Clara y sus dos hijos Jules y Verne en un tren de vapor convertido en máquina del tiempo, con la familia en diferentes "edades temporales" dependiendo de cuánto tiempo han pasado en diferentes épocas. La película ilustra que el envejecimiento biológico es absoluto e independiente de a qué fecha llegues: el tiempo propio siempre avanza.' },
+    ],
   },
   {
     id: 'novikov', title: 'El Principio de Autoconsistencia', color: '#7C4DFF',
@@ -219,6 +231,9 @@ const INFOGRAPHIC_NODES = [
       'En la película, la historia se reajusta tras los cambios provocados por Marty. Sus padres terminan juntos mediante eventos diferentes, manteniendo la consistencia de su propia existencia.',
     ],
     fact: 'Kip Thorne ganó el Nobel de Física 2017 por detectar ondas gravitacionales. También fue consultor científico de «Interstellar» (2014) y sus ecuaciones del agujero negro Gargantúa fueron tan precisas que generaron artículos científicos reales. Literalmente convirtió una película en investigación.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'El Principio de Autoconsistencia de Novikov se manifiesta en cómo la trilogía resuelve sus propias paradojas. En el primer film, cuando Marty regresa a 1985, descubre que su familia ha mejorado gracias a sus intervenciones en 1955: su padre George ahora es escritor exitoso y su familia es más próspera. Los eventos que Marty desencadenó inconscientemente crearon exactamente la realidad consistente que permite que él exista y viaje al pasado. Zemeckis y Gale construyeron toda la trilogía respetando implícitamente este principio: las alteraciones terminan siendo parte de la historia original.' },
+    ],
   },
   {
     id: 'delorean', title: 'Ciencia Detrás del DeLorean', color: '#FFA500',
@@ -232,6 +247,9 @@ const INFOGRAPHIC_NODES = [
       'El DeLorean DMC-12 fue seleccionado para la película por su carrocería de acero inoxidable y sus puertas de ala de gaviota. Se fabricaron aproximadamente 9,000 unidades en la década de 1980.',
     ],
     fact: 'El guion original tenía la máquina del tiempo como un refrigerador, no un auto. Steven Spielberg (productor ejecutivo) temía que los niños se encerraran en refrigeradores imitando la película, así que lo cambiaron a un auto. El DeLorean fue elegido porque su carrocería de acero y puertas de gaviota ya parecían una nave espacial.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'El DeLorean DMC-12 fue elegido porque sus puertas de ala de gaviota y carrocería de acero inoxidable ya parecían futuristas. En el guion original, la máquina del tiempo era un refrigerador transportado en una camioneta. Steven Spielberg lo cambió por temor a que niños imitaran encerrarse en refrigeradores. El DeLorean necesita alcanzar exactamente 88 mph (142 km/h) y generar 1.21 gigawatts mediante el condensador de fluzo (flux capacitor) para activar el viaje temporal. En la película, la energía proviene de un rayo canalizado desde el reloj del juzgado — una solución narrativa que hizo que el clímax fuera una carrera contrarreloj literal.' },
+    ],
   },
   {
     id: 'cronologia', title: 'La Protección Cronológica', color: '#00E676',
@@ -245,6 +263,9 @@ const INFOGRAPHIC_NODES = [
       'El viaje al pasado permanece en un estado teórico indefinido porque la Relatividad General y la Mecánica Cuántica no han sido unificadas. Una teoría de gravedad cuántica podría resolver definitivamente esta cuestión.',
     ],
     fact: 'La fiesta de Stephen Hawking para viajeros del tiempo fue el 28 de junio de 2009 en Cambridge. Las invitaciones se enviaron DESPUÉS, con coordenadas exactas: 52°12\'21"N, 0°7\'4.7"E. Nadie apareció. Hawking mantuvo el champán listo por si acaso y dijo: «Tengo evidencia experimental de que el viaje en el tiempo no es posible.»',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'La "Protección Cronológica" está implícita en toda la trilogía: cada vez que Marty altera el pasado, el universo encuentra una forma de mantener la coherencia. El ejemplo más claro ocurre en «BTTF II» cuando Marty intenta recuperar el almanaque deportivo del Biff de 1955. Aunque falla varias veces, los eventos conspiran para que el almanaque termine destruido en el incinerador. Doc Brown dice la frase clave: "El tiempo no permite contradicciones." Irónicamente, la trilogía termina con Doc abandonando el presente para vivir en el pasado con Clara, lo que podría verse como una violación deliberada de este principio — la "protección" no puede detener el amor.' },
+    ],
   },
   {
     id: 'futuro-ciencia', title: 'El Futuro de la Ciencia del Tiempo', color: '#FFD740',
@@ -258,6 +279,9 @@ const INFOGRAPHIC_NODES = [
       'Las paradojas temporales operan como herramientas para identificar fallos en los modelos actuales. Cuestionar la causalidad o la dirección del tiempo promueve el avance en nuestra comprensión del universo.',
     ],
     fact: 'En 2014, científicos de la Universidad de Queensland simularon un fotón viajando a través de curvas temporales cerradas e interactuando con su versión más joven. La simulación mostró que el fotón SIEMPRE encontraba un camino autoconsistente, apoyando los modelos teóricos de viaje temporal autoconsistente. Fue la primera simulación cuántica de este tipo, publicada en Nature Communications.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'Las predicciones de «BTTF Parte II» sobre el año 2015 se han analizado extensamente. Acertadas: videollamadas, televisión de pantalla plana con múltiples canales simultáneos, prendas que se ajustan solas, reconocimiento de huellas digitales, gafas de realidad aumentada. No realizadas en 2015: hoverboards reales (existen prototipos en superficies metálicas), automóviles voladores, deshidratación instantánea de pizza, zapatos que se atan solos (Nike los lanzó como edición especial en 2016). La película predijo que los Chicago Cubs ganarían la Serie Mundial en 2015 — los Cubs ganaron en 2016, un año tarde, en lo que muchos fans consideraron una victoria "inspirada por la película".' },
+    ],
   },
 ];
 

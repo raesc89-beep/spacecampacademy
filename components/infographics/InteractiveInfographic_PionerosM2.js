@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, BookOpen, Rocket, Star, Globe, Award, Info, Book } from 'lucide-react';
+import ImageLightbox from './ImageLightbox';
 
 const COLORS = {
   sand: '#D87D4A',
@@ -86,6 +87,7 @@ const CONTENT_NODES = [
 
 export default function InteractiveInfographic_PionerosM2() {
   const [expandedNode, setExpandedNode] = useState(null);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
 
   const handleToggle = (id) => {
     setExpandedNode(expandedNode === id ? null : id);
@@ -98,7 +100,9 @@ export default function InteractiveInfographic_PionerosM2() {
           src="/assets/course/animales_pioneros/banner_pioneros.jpg" 
           alt="Banner Pioneros" 
           style={{ width: '100%', maxHeight: '300px', objectFit: 'cover', borderRadius: '10px' }} 
-        />
+        
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/banner_pioneros.jpg')}
+            />
         <h1 style={{ color: COLORS.gold, marginTop: '2rem', fontSize: '2.5rem' }}>
           Alan Shepard y el Programa Mercury
         </h1>
@@ -112,13 +116,17 @@ export default function InteractiveInfographic_PionerosM2() {
           src="/assets/course/animales_pioneros/hero_alan.jpg" 
           alt="Alan Shepard Hero" 
           style={{ border: `4px solid ${COLORS.sand}`, borderRadius: '15px', width: '80%', maxWidth: '800px', boxShadow: '0 10px 25px rgba(0,0,0,0.5)' }} 
-        />
+        
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/hero_alan.jpg')}
+            />
         <div style={{ marginTop: '1rem' }}>
           <img 
             src="/assets/course/animales_pioneros/btn_alan.jpg" 
             alt="Boton Alan" 
             style={{ width: '150px', borderRadius: '50%', border: `2px solid ${COLORS.gold}` }} 
-          />
+          
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/btn_alan.jpg')}
+            />
         </div>
       </section>
 
@@ -174,6 +182,13 @@ export default function InteractiveInfographic_PionerosM2() {
           ))}
         </ul>
       </footer>
+      {lightboxSrc && (
+        <ImageLightbox
+          src={lightboxSrc}
+          alt="Imagen ampliada"
+          onClose={() => setLightboxSrc(null)}
+        />
+      )}
     </div>
   );
 }

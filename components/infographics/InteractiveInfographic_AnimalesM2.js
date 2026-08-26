@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Rocket, Star, Info, ChevronDown, ChevronUp, BookOpen, Clock, Activity, Cpu } from 'lucide-react';
+import ImageLightbox from './ImageLightbox';
 
 const BIBLIOGRAPHY = [
   {
@@ -77,6 +78,7 @@ const CONTENT_DATA = [
 
 export default function InteractiveInfographic_AnimalesM2() {
   const [activeSection, setActiveSection] = useState(null);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -129,7 +131,8 @@ export default function InteractiveInfographic_AnimalesM2() {
             <img 
               src="/assets/course/animales_pioneros/hero_albert_ham.jpg" 
               alt="Héroes Primates" 
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover cursor-zoom-in"
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/hero_albert_ham.jpg')}
             />
           </motion.div>
           <motion.div 
@@ -140,7 +143,8 @@ export default function InteractiveInfographic_AnimalesM2() {
             <img 
               src="/assets/course/animales_pioneros/btn_albert_ham.jpg" 
               alt="Detalle" 
-              className="w-full h-auto object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
+              className="w-full h-auto object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 cursor-zoom-in"
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/btn_albert_ham.jpg')}
             />
           </motion.div>
         </div>
@@ -224,6 +228,13 @@ export default function InteractiveInfographic_AnimalesM2() {
           </div>
         </div>
       </div>
+      {lightboxSrc && (
+        <ImageLightbox
+          src={lightboxSrc}
+          alt="Imagen ampliada"
+          onClose={() => setLightboxSrc(null)}
+        />
+      )}
     </div>
   );
 }

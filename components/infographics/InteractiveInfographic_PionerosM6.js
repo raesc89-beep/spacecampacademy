@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Rocket, Star, Orbit, ChevronDown, ChevronUp, BookOpen, Award, Globe } from 'lucide-react';
+import ImageLightbox from './ImageLightbox';
 
 const COLORS = {
   primary: '#D87D4A',
@@ -63,6 +64,7 @@ const BIBLIOGRAPHY = [
 
 export default function InteractiveInfographic_PionerosM6() {
   const [activeSection, setActiveSection] = useState(null);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
 
   const toggleSection = (id) => {
     setActiveSection(prev => (prev === id ? null : id));
@@ -77,7 +79,9 @@ export default function InteractiveInfographic_PionerosM6() {
           src="/assets/course/animales_pioneros/banner_pioneros.jpg" 
           alt="Pioneros Banner" 
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-        />
+        
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/banner_pioneros.jpg')}
+            />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(44, 62, 80, 0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <h1 style={{ color: COLORS.secondary, fontSize: '3rem', margin: 0, textShadow: '2px 2px 4px rgba(0,0,0,0.8)', textAlign: 'center' }}>
             Svetlana Savitskaya
@@ -92,7 +96,9 @@ export default function InteractiveInfographic_PionerosM6() {
             src="/assets/course/animales_pioneros/hero_svetlana.jpg" 
             alt="Svetlana Savitskaya Hero" 
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-          />
+          
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/hero_svetlana.jpg')}
+            />
         </div>
         <div style={{ flex: '2 1 400px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <h2 style={{ color: COLORS.primary, fontSize: '2rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -107,6 +113,8 @@ export default function InteractiveInfographic_PionerosM6() {
               src="/assets/course/animales_pioneros/btn_svetlana.jpg" 
               alt="Svetlana Button" 
               style={{ width: '150px', borderRadius: '8px', border: `2px solid ${COLORS.accent}`, cursor: 'pointer' }}
+            
+              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/btn_svetlana.jpg')}
             />
           </div>
         </div>
@@ -198,6 +206,13 @@ export default function InteractiveInfographic_PionerosM6() {
         </ul>
       </div>
 
+      {lightboxSrc && (
+        <ImageLightbox
+          src={lightboxSrc}
+          alt="Imagen ampliada"
+          onClose={() => setLightboxSrc(null)}
+        />
+      )}
     </div>
   );
 }
