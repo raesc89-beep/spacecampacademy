@@ -162,6 +162,9 @@ const INFOGRAPHIC_NODES = [
       'Posteriormente al estreno, se comercializaron réplicas que no flotaban. Un modelo original utilizado en la filmación fue subastado en 2021 por 501,000 dólares. Existen pocos ejemplares auténticos de esta utilería.'
     ],
     fact: 'El icónico aeropatín rosa de Mattel que usó Michael J. Fox no era más que una tabla de madera de un scooter modificada. Los utileros de la película le quitaron las ruedas, la repintaron con colores brillantes y le agregaron un parche de velcro para que los zapatos del actor se mantuvieran en su lugar.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'El hoverboard rosa de Mattel aparece en «Volver al Futuro Parte II» (1989) cuando Marty lo toma de una niña en Hill Valley 2015 para escapar de los Tannen. El hoverboard flota gracias a superconductores magnéticos que repelen el campo magnético del suelo, según la explicación implícita de la película. Cuando Marty intenta cruzar el lago Courthouse, el hoverboard deja de funcionar porque el agua interrumpe el efecto de levitación — un guiño científico a que los superconductores reales funcionan mejor sobre superficies conductoras. La escena fue tan impactante que Nike y Mattel recibieron miles de cartas preguntando cuándo estarían en venta.' },
+    ],
   },
   {
     id: 'maglev', title: 'Trenes Maglev: Levitación Real', color: '#00CCFF',
@@ -175,6 +178,9 @@ const INFOGRAPHIC_NODES = [
       'El efecto Meissner ocurre cuando ciertos materiales, al enfriarse por debajo de una temperatura crítica, se convierten en superconductores y expelen campos magnéticos. Esto genera una fuerza de levitación que mantiene al superconductor suspendido, principio físico aplicado en la tecnología maglev.'
     ],
     fact: 'El Maglev de Shanghái acelera de 0 a 431 km/h en solo 2 minutos. El viaje del aeropuerto a la ciudad toma solo 7 minutos y 20 segundos. Durante el viaje, puedes sostener una moneda de canto sobre la bandeja ¡y no se cae! â€” no hay vibración porque el tren nunca toca la vía.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'Los trenes de levitación magnética (Maglev) son la tecnología más cercana al hoverboard de la película. El tren Maglev japonez SCMaglev alcanzó en 2015 una velocidad récord de 603 km/h. En «BTTF II», Doc Brown llega en un tren de vapor convertido en máquina del tiempo al final de la película, pero en el 2015 ficticio se ven vehículos que levitan silenciosamente, consistentes con la tecnología Maglev escalada. La película imaginó que para 2015 la levitación magnética sería tan común como los coches actuales, lo que no ocurrió por el alto costo de infraestructura y la complejidad de los superconductores a temperatura ambiente.' },
+    ],
   },
   {
     id: 'lexus', title: 'El Hoverboard de Lexus (2015)', color: '#7C4DFF',
@@ -188,6 +194,9 @@ const INFOGRAPHIC_NODES = [
       'La iniciativa, aunque fue una campaña publicitaria, demostró la viabilidad técnica de la levitación mediante superconductores en vehículos personales ligeros.'
     ],
     fact: 'Cuando Ross McGouran intentó el aeropatín de Lexus por primera vez, ¡se cayó inmediatamente! No hay fricción contra qué empujar â€” girar, frenar y balancearte son diferentes al skateboarding. Dijo que era como «intentar pararte sobre una bola de hielo». Le tomó 6 semanas de práctica dominar trucos básicos.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'En 2015, año exacto al que viaja Marty en BTTF II, Lexus lanzó el hoverboard "SLIDE" como demostración tecnológica real. Usaba superconductores de nitrógeno líquido y requería una pista especial con imanes debajo de la superficie. Tony Hawk, el skatboarder más famoso del mundo, lo probó públicamente. El video viral generó 70 millones de vistas en una semana. El hoverboard de Lexus funcionaba exactamente como en la película: flotaba aproximadamente 1.5 cm sobre la pista magnética y producía una nube de vapor de nitrógeno. El costo de fabricación fue estimado en $750,000 USD, muy lejos de ser un producto de consumo masivo.' },
+    ],
   },
   {
     id: 'hendo', title: 'El Hendo Hoverboard y Tony Hawk', color: '#FF6B00',
@@ -201,6 +210,9 @@ const INFOGRAPHIC_NODES = [
       'El prototipo Hendo logró financiarse parcialmente a través de campañas de participación pública. El dispositivo flota a 2.5 centímetros de la superficie y emite un ruido característico debido al giro de los motores magnéticos.'
     ],
     fact: 'Para financiar su primer modelo de aeropatín, Hendo lanzó una campaña en Kickstarter en 2014 con una meta de $250,000 dólares. El proyecto fue un éxito masivo y recaudó más de $510,000. Los patrocinadores que aportaron $10,000 o más recibieron uno de los primeros diez aeropatines funcionales producidos.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'En octubre de 2014, un año antes del 2015 de BTTF II, la startup Hendo lanzó el primer hoverboard comercial real usando tecnología de campo de Halbach. Tony Hawk fue el primer famoso en montarlo. El dispositivo generaba un campo magnético rotante que inducía corrientes en el suelo de cobre debajo, creando repulsión. El "Hendo Hoverboard" flotaba 2.5 cm sobre superficies conductoras y consumía tanta energía como un secador de pelo industrial. Se vendieron 10 unidades a $10,000 USD cada una. La ironía es que Reggie Watts, en el video de lanzamiento, llevó el hoverboard al mismo lago del parking donde Marty lo usó en la película — y demostró que tampoco funciona sobre el agua.' },
+    ],
   },
   {
     id: 'newton', title: 'Las Leyes de Newton y la Gravedad', color: '#FFA500',
@@ -214,6 +226,9 @@ const INFOGRAPHIC_NODES = [
       'En ausencia de resistencia del aire (vacío), todos los objetos caen a la misma velocidad independientemente de su masa, ya que la gravedad los acelera por igual. Galileo propuso este principio en el siglo XVII.'
     ],
     fact: 'En 1971, el astronauta del Apollo 15 David Scott se paró en la Luna y soltó un martillo y una pluma al mismo tiempo en televisión en vivo. Golpearon la superficie lunar simultáneamente. Dijo «¡Qué tal! Esto demuestra que el Sr. Galileo tenía razón.» El video ha sido visto más de 20 millones de veces en YouTube.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'La película usa las Leyes de Newton de forma implícita en cada escena del hoverboard. Cuando Marty es empujado por Griff Tannen, conserva el momentum (Primera Ley). Cuando agarra el jeep de Griff, hay una clara transferencia de fuerza (Segunda Ley: F=ma). La persecución termina cuando el momentum lleva a Griff contra el juzgado (Tercera Ley: acción-reacción). En el 2015 real, los ingenieros de hoverboards lucharon exactamente con estas leyes: la Tercera Ley de Newton hace que cualquier movimiento lateral requiera superficies de repulsión perfectamente calibradas, de lo contrario el rider se cae hacia los lados.' },
+    ],
   },
   {
     id: 'quantum', title: 'Levitación Cuántica: Flux Pinning', color: '#00E676',
@@ -227,6 +242,9 @@ const INFOGRAPHIC_NODES = [
       'Actualmente, se investiga su aplicación en trenes maglev, rodamientos de precisión y almacenamiento de energía. El requisito de operar a temperaturas criogénicas representa su principal limitación técnica.'
     ],
     fact: 'En la Universidad de Tel Aviv, el Dr. Boaz Almog demostró un disco superconductor de solo 0.5 mm de espesor â€” más delgado que una tarjeta de crédito â€” flotando en una pista magnética cargando 70,000 veces su propio peso. Inclinó la pista a 90 grados y el disco se quedó bloqueado. La volteó de cabeza y el disco colgó sin caerse. La audiencia quedó boquiabierta.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'La levitación cuántica por "flux pinning" (anclaje de flujo) es la tecnología real más cercana a los hoverboards de la película. Se logra enfriando un superconductor con nitrógeno líquido (-196°C) sobre un imán. Los vórtices magnéticos quedan "anclados" en defectos del superconductor, creando una levitación estable. En «BTTF II», cuando el hoverboard flota con Marty encima sin moverse lateralmente hasta que él lo impulsa, esto recuerda exactamente al flux pinning real: el objeto queda "congelado" en el espacio magnético hasta que se aplica una fuerza. El experimento de levitación cuántica de la Universidad de Tel Aviv (2011) se hizo viral con 8 millones de vistas, citando BTTF directamente.' },
+    ],
   },
   {
     id: 'electro', title: 'Suspensión EM en la Vida Real', color: '#FFD740',
@@ -240,6 +258,9 @@ const INFOGRAPHIC_NODES = [
       'La levitación acústica utiliza la presión de radiación de las ondas sonoras para mantener pequeños objetos suspendidos en los nodos de una onda estacionaria, permitiendo la manipulación sin contacto físico.'
     ],
     fact: 'Dentro del disco duro de tu computadora, el cabezal de lectura-escritura «vuela» a solo 3-5 nanómetros sobre el disco giratorio — eso es aproximadamente 1/20,000 del ancho de un cabello humano. Si el cabezal fuera un Boeing 747, estaría volando a 800 km/h a solo 1 milímetro sobre el suelo. Cualquier partícula de polvo a esa escala sería como una montaña. Por eso los discos duros están sellados.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'La suspensión electromagnética activa (EMS) ya existe en los trenes Maglev alemanes Transrapid. En «BTTF II», los vehículos voladores de 2015 parecen usar un principio similar: flotan a alturas fijas sin requerir superficies especiales. Esto correspondería a la levitación EMS con control activo, donde sensores y electroimanes ajustan continuamente la separación para evitar el colapso. El automóvil de Doc Brown — una versión voladora del DeLorean — tiene ruedas que se pliegan hacia abajo al aterrizar, un diseño que los ingenieros modernos de vehículos eléctricos citan como inspiración para los conceptos de eVTOL (vehículos de despegue vertical eléctrico) que empresas como Joby Aviation están desarrollando actualmente.' },
+    ],
   },
   {
     id: 'futuro-antgrav', title: 'El Futuro de la Antigravedad', color: '#FF5252',
@@ -253,6 +274,9 @@ const INFOGRAPHIC_NODES = [
       'La innovación en transporte personal continúa. La investigación en superconductores a temperatura ambiente sigue su curso. Paralelamente, vehículos aéreos personales basados en propulsión de drones han demostrado vuelos funcionales, logrando hitos en la aviación experimental.'
     ],
     fact: 'En 2015, el inventor canadiense Catalin Alexandru Duru estableció el Récord Guinness para el vuelo más largo en aeropatín: 275.9 metros a una altura de 5 metros. Su tabla usaba hélices de dron, no imanes. En 2019, el inventor francés Franky Zapata cruzó el Canal de la Mancha en su Flyboard Air â€” 35 km en 22 minutos a velocidades de hasta 170 km/h y alturas de hasta 15 metros. Literalmente voló sobre el mar en un aeropatín.',
+    expandables: [
+      { label: 'En la Película', icon: 'zap', text: 'El final de «BTTF II» introduce el tren de vapor volador de Doc Brown, sugeriendo que para finales del siglo XX o principios del XXI la antigravedad sería convencional. En la realidad, el mayor obstáculo no es tecnológico sino energético: los superconductores a temperatura ambiente (que funcionarían sin nitrógeno líquido) seguían siendo un desafío en 2025. En 2023, el laboratorio coreano LK-99 anunció un superconductor a temperatura ambiente, generando enorme expectativa mundial — ningún laboratorio del mundo pudo replicar los resultados. La búsqueda continúa. Si algún día se logra, los hoverboards de Marty McFly pasarán de ser ciencia ficción a tecnología de consumo masivo, exactamente como la película predijo.' },
+    ],
   },
 ];
 
