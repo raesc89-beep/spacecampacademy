@@ -143,7 +143,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'Contexto Histórico', icon: 'clock', text: ['Los medios de comunicación soviéticos ocultaron el desvío y dijeron que los cosmonautas estaban descansando en el bosque.', 'Este aterrizaje de emergencia obligó a los ingenieros a mejorar los sistemas de navegación para futuras misiones.', 'El equipo de rescate tuvo que llegar esquiando, abriendo un claro en el bosque para que un helicóptero pudiera bajar.', 'Finalmente, los cosmonautas tuvieron que esquiar 9 kilómetros a través del espeso bosque para llegar a la nave de rescate.', 'A pesar de todos los contratiempos casi mortales, Leonov y Belyayev fueron recibidos como héroes nacionales en Moscú.'] }
     ],
     fact: 'Los cosmonautas llevaban una pistola especial de supervivencia en su equipo de emergencia para defenderse de los lobos hambrientos del bosque.'
-  ,
+  },
   {
     id: 'leonov-regreso-dificil',
     title: 'Los 12 Minutos que Casi Matan a Leonov',
@@ -201,7 +201,6 @@ const INFOGRAPHIC_NODES = [
     ],
     fact: 'Para apretar un perno en la ISS, el astronauta debe anclarse en dos puntos simultáneamente — sin ellos, el torque lo haría girar. Cada EVA es un problema de mecánica newtoniana tridimensional en tiempo real, con un traje de 12 millones de dólares y el vacío del espacio como margen de error.'
   }
-},
 ];
 
 // Temporal Particle Field
