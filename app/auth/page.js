@@ -8,6 +8,113 @@ import { Rocket, Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Suspense } from 'react';
 
+// ─── JWST Collage Background ─────────────────────────────────────────────────
+// Iconic James Webb Space Telescope images — NASA/ESA public domain
+const JWST_IMAGES = [
+  {
+    url: 'https://stsci-opo.org/STScI-01G8GZR8GCKZ0NZDKFG3FMF6P2.png',
+    label: 'Carina Nebula'
+  },
+  {
+    url: 'https://stsci-opo.org/STScI-01G8GZS1793JZDY97PSRF41WXN.png',
+    label: 'Southern Ring Nebula'
+  },
+  {
+    url: 'https://stsci-opo.org/STScI-01GSZSHVXQ4X8DKM1ZSFZPJ37Q.png',
+    label: "Pillars of Creation"
+  },
+  {
+    url: 'https://stsci-opo.org/STScI-01GS9RPCTMZR4MGDB17HGY0ERX.png',
+    label: 'Tarantula Nebula'
+  },
+  {
+    url: 'https://stsci-opo.org/STScI-01G8H1K2BCNATEZSKVRN9Z69SR.png',
+    label: "Stephan's Quintet"
+  },
+  {
+    url: 'https://stsci-opo.org/STScI-01G8GZQ8BKZMJ38PP0T7E03GJF.png',
+    label: 'SMACS Deep Field'
+  },
+];
+
+function JWSTBackground() {
+  return (
+    <div style={{
+      position: 'fixed', inset: 0, zIndex: -1,
+      overflow: 'hidden',
+      background: '#03050E',
+    }}>
+      {/* Collage grid */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gridTemplateRows: 'repeat(2, 1fr)',
+        gap: '4px',
+        opacity: 0.55,
+        transform: 'scale(1.08)',
+        transformOrigin: 'center',
+      }}>
+        {JWST_IMAGES.map((img, i) => (
+          <div key={i} style={{
+            overflow: 'hidden',
+            position: 'relative',
+          }}>
+            <img
+              src={img.url}
+              alt={img.label}
+              loading={i < 2 ? 'eager' : 'lazy'}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                display: 'block',
+                filter: 'saturate(1.3) brightness(0.85)',
+              }}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Dark gradient overlay for readability */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: 'linear-gradient(135deg, rgba(3,5,14,0.72) 0%, rgba(10,5,30,0.60) 40%, rgba(3,5,14,0.78) 100%)',
+      }} />
+
+      {/* Frosted glass blur band in the center (behind the card) */}
+      <div style={{
+        position: 'absolute',
+        top: '50%', left: '50%',
+        transform: 'translate(-50%,-50%)',
+        width: '520px', height: '680px',
+        borderRadius: '32px',
+        backdropFilter: 'blur(32px)',
+        WebkitBackdropFilter: 'blur(32px)',
+        background: 'rgba(3,5,14,0.25)',
+        pointerEvents: 'none',
+      }} />
+
+      {/* Subtle nebula glow accents */}
+      <div style={{
+        position: 'absolute', top: '15%', left: '10%',
+        width: '300px', height: '300px',
+        borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(90,46,152,0.18) 0%, transparent 70%)',
+        pointerEvents: 'none',
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '10%', right: '8%',
+        width: '250px', height: '250px',
+        borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(0,228,255,0.10) 0%, transparent 70%)',
+        pointerEvents: 'none',
+      }} />
+    </div>
+  );
+}
+
+
 function AuthContent() {
   const router = useRouter();  
   const searchParams = useSearchParams();
@@ -93,12 +200,21 @@ function AuthContent() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', position: 'relative' }}>
+      <JWSTBackground />
       <motion.div 
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         className="glass-card"
-        style={{ width: '100%', maxWidth: '450px', display: 'flex', flexDirection: 'column', gap: '2rem' }}
+        style={{
+          width: '100%', maxWidth: '450px',
+          display: 'flex', flexDirection: 'column', gap: '2rem',
+          backdropFilter: 'blur(24px)',
+          WebkitBackdropFilter: 'blur(24px)',
+          background: 'rgba(5, 7, 20, 0.72)',
+          border: '1px solid rgba(255,255,255,0.12)',
+          boxShadow: '0 8px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05)',
+        }}
       >
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', textAlign: 'center' }}>
           
@@ -225,6 +341,16 @@ function AuthContent() {
           </p>
         </div>
       </motion.div>
+      {/* JWST Photo Credit */}
+      <p style={{
+        marginTop: '1.5rem',
+        fontSize: '0.72rem',
+        color: 'rgba(255,255,255,0.35)',
+        textAlign: 'center',
+        letterSpacing: '0.03em',
+      }}>
+        🔭 Imágenes: James Webb Space Telescope · NASA, ESA, CSA, STScI · Dominio Público
+      </p>
     </div>
   );
 }
