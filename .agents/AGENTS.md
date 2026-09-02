@@ -791,3 +791,51 @@ COMPONENTES PROTEGIDOS (verificados, no tocar):
 
 ### 23.6 Correlación con §22:
 Esta regla extiende §22 específicamente para la protección de assets. Las operaciones de §22 que involucren imágenes SIEMPRE deben ejecutar el checklist §23.1 primero.
+
+---
+
+## 24. Regla de Imágenes Congeladas (Freeze on Generation)
+
+> **REGLA INELUDIBLE DE PROTECCIÓN DE ASSETS GENERADOS**: Toda imagen generada (con IDE `generate_image`, Vertex AI, o cualquier herramienta de generación) queda **congelada permanentemente** una vez guardada en disco dentro de `public/assets/`. Ningún agente, subagente, ni proceso automatizado puede mover, renombrar, borrar, comprimir, reemplazar ni regenerar una imagen ya existente en disco, **a menos que el usuario dé instrucción explícita y específica** ("mueve X a Y", "regenera la imagen de Z", "borra el banner de W").
+
+### 24.1 Estados de una imagen generada:
+
+| Estado | Descripción | ¿Se puede modificar? |
+|--------|-------------|----------------------|
+| **En artifacts** (solo en `brain/.../`) | Generada pero NO guardada en public/ todavía | ✅ Se puede guardar aún |
+| **En disco** (`public/assets/...`) | Guardada en el proyecto | ❌ CONGELADA — no tocar |
+| **Commiteada** (en git log) | Confirmada en el repo | ❌ DOBLEMENTE PROTEGIDA |
+
+### 24.2 Verificación Pre-Generación Obligatoria:
+Antes de cualquier llamada a `generate_image` o script de generación por API:
+
+```python
+# SIEMPRE verificar antes de generar
+from pathlib import Path
+
+dest = Path("public/assets/.../<nombre>.png")
+if dest.exists():
+    print(f"SKIP: imagen ya existe en disco — §24 CONGELADA. No regenerar.")
+    # Continuar con la siguiente imagen
+    # NUNCA sobrescribir
+else:
+    # Solo entonces proceder con la generación
+    generate_image(...)
+```
+
+### 24.3 Lo que NUNCA hacer:
+- ❌ NO mover imágenes de `public/assets/` a otro directorio sin instrucción explícita del usuario
+- ❌ NO renombrar archivos de imagen existentes en `public/assets/`
+- ❌ NO eliminar imágenes existentes, ni siquiera para "limpiar" o "reorganizar"
+- ❌ NO regenerar una imagen cuyo path de destino ya existe en disco (aunque el agente crea que la nueva sería "mejor")
+- ❌ NO comprimir o convertir de formato (PNG→WebP, etc.) sin instrucción explícita del usuario
+- ❌ NO mover imágenes desde el directorio de artifacts (`brain/.../`) a `public/assets/` de componentes que ya tienen esa ruta ocupada
+- ❌ NO asumir que la imagen en artifacts es "más nueva" que la ya en disco — la de disco siempre gana
+
+### 24.4 Excepciones (las ÚNICAS permitidas):
+1. **Instrucción explícita del usuario**: "regenera el banner de X", "mueve Y a Z", "borra la imagen W".
+2. **Corrección de ruta rota**: Si `public/assets/path.png` NO existe pero el JSX lo referencia, SÍ es válido generarla/copiarla.
+3. **Primera vez**: Si el path de destino no existe aún en disco, se puede generar y guardar normalmente.
+
+### 24.5 Correlación con §23:
+Esta regla es complementaria a §23. §23 protege contra el reprocesamiento de componentes JSX; §24 protege contra el reprocesamiento de los archivos de imagen físicos. Ambas reglas se aplican simultáneamente en toda operación que involucre assets visuales.
