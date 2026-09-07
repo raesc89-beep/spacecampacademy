@@ -49,6 +49,57 @@ export default function DashboardLanding() {
     return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020308', color: '#00E4FF' }}>Iniciando Sistemas de la Estación...</div>;
   }
 
+  // ── SECURITY GATE: isApproved check ──────────────────────────────────────────
+  // Admins always pass. All other users must have isApproved === true.
+  if (userData.role !== 'admin' && userData.isApproved !== true) {
+    return (
+      <div style={{
+        minHeight: '100vh', display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center', textAlign: 'center',
+        background: 'linear-gradient(135deg, #020308 0%, #07111A 100%)',
+        padding: '2rem', gap: '1.5rem',
+      }}>
+        <div style={{ fontSize: '4rem' }}>🛸</div>
+        <h1 style={{
+          fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, margin: 0,
+          background: 'linear-gradient(135deg, #FFFFFF, #00E4FF)',
+          WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+        }}>
+          Solicitud en Revisión
+        </h1>
+        <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '1.1rem', maxWidth: '500px', lineHeight: 1.7 }}>
+          Tu registro fue recibido correctamente. El Comandante de la Academia está
+          revisando tu solicitud de acceso. Recibirás confirmación pronto.
+        </p>
+        <div style={{
+          background: 'rgba(0,228,255,0.06)', border: '1px solid rgba(0,228,255,0.2)',
+          borderRadius: '16px', padding: '1.25rem 2rem', color: 'rgba(255,255,255,0.55)',
+          fontSize: '0.9rem', maxWidth: '420px',
+        }}>
+          📧 <strong style={{ color: 'white' }}>{user?.email}</strong>
+          <br />
+          <span style={{ fontSize: '0.82rem' }}>Registrado — pendiente de aprobación del administrador</span>
+        </div>
+        <button
+          onClick={async () => {
+            const { auth } = await import('@/lib/firebase');
+            const { signOut } = await import('firebase/auth');
+            await signOut(auth);
+            router.push('/auth');
+          }}
+          style={{
+            marginTop: '0.5rem', background: 'transparent',
+            border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.5)',
+            padding: '0.75rem 2rem', borderRadius: '30px', cursor: 'pointer',
+            fontSize: '0.9rem', fontFamily: 'inherit',
+          }}
+        >
+          Cerrar Sesión
+        </button>
+      </div>
+    );
+  }
+
   const userStars = userData?.progress?.stars || 0;
   const userAchievements = userData?.progress?.achievements || {};
   const unlockedCount = Object.keys(userAchievements).length;

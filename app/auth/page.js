@@ -152,6 +152,8 @@ function AuthContent() {
           },
           createdAt: new Date().toISOString()
         });
+        // Registration successful — user is created with isApproved: false.
+        // The dashboard's security gate will show the "pending approval" screen.
         router.push('/dashboard');
       } else {
         await signInWithEmailAndPassword(auth, email, password);
