@@ -270,6 +270,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Al final de la trilogía, en la parte III, Doc le da a Marty y Jennifer el mensaje más importante de toda la saga: Vuestro futuro no ha sido escrito todavía. El de nadie lo está. Vuestro futuro es el que vosotros os forjéis, así que haceos uno bueno. Esta frase sintetiza la filosofía implícita de toda la trilogía: el futuro no está determinado y nuestras decisiones en el presente tienen consecuencias reales. Es también el mejor resumen posible de por qué estudiar ciencia importa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En 2015, el año al que viajaba Marty en la segunda película, físicos de la Universidad de Bristol bautizaron su nuevo simulador cuántico con el nombre Condensador de Flujo, en homenaje a la película. Este simulador permite estudiar procesos cuánticos al revés para entender mejor la termodinámica y la flecha del tiempo. El guiño de los físicos demuestra cuánto influyó la película en la cultura científica real de generaciones de investigadores.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m1/banner_legado-cientifico.png',
+    bannerCaption: 'Legado Científico',
     fact: 'En 2015, científicos de la Universidad de Bristol nombraron Condensador de Flujo a su nuevo simulador cuántico capaz de revertir la evolución temporal de los fotones, en homenaje a la película. También ese año, físicos del MIT publicaron un artículo evaluando si las predicciones tecnológicas de Regreso al Futuro II se habían cumplido. La conclusión: pantallas planas y videollamadas sí, hoverboards y coches voladores todavía no. La física real avanzó rápido en comunicaciones pero más despacio en propulsión — al menos de momento.'
   }
 ];
