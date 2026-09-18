@@ -90,6 +90,8 @@ const INFOGRAPHIC_NODES = [
         ]
       }
     ],
+    bannerImage: '/assets/animales/infographic_m4/banner_felicette.png',
+    bannerCaption: 'Félicette: El Primer Felino Astronauta',
     fact: 'En 2019, tras una exitosa y multitudinaria campaña de micromecenazgo impulsada por entusiastas del espacio de todo el mundo, se inauguró por fin una hermosa estatua de bronce de cinco pies de altura en la Universidad Espacial Internacional en Estrasburgo, Francia, honrando de manera permanente la valiente contribución de Félicette a la ciencia, representando a la gata sentada con orgullo sobre un globo terráqueo y mirando hacia las estrellas que una vez visitó brevemente.'
   },
   {
@@ -129,6 +131,8 @@ const INFOGRAPHIC_NODES = [
         ]
       }
     ],
+    bannerImage: '/assets/animales/infographic_m4/banner_moscas.png',
+    bannerCaption: 'Moscas de la Fruta: Los Pioneros',
     fact: 'El código genético de la mosca de la fruta comparte aproximadamente un 60% de similitud de secuencia con el genoma del ser humano promedio, y lo que resulta aún más fascinante para la investigación biomédica, casi un asombroso 75% de los genes específicos que causan complejas enfermedades genéticas en las personas tienen un claro equivalente directo y funcional en el genoma de estas pequeñas moscas espaciales, convirtiéndolas en astronautas biomédicos inigualables.'
   },
   {
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
         ]
       }
     ],
+    bannerImage: '/assets/animales/infographic_m4/banner_invertebrados.png',
+    bannerCaption: 'Resistencia Extrema: Tardígrados',
     fact: 'El microscópico tardígrado, en estado de criptobiosis inducida, es capaz de sobrevivir sin protección y de forma completamente pasiva y natural a temperaturas tan increíblemente extremas e impensables como -272 grados Celsius (prácticamente el gélido cero absoluto interestelar sin calor alguno) o tan ardientes y abrazadoras como los destructivos y mortíferos 150 grados Celsius ardientes de calor letal abrasador destructor continuo que derretiría muchos plásticos densos resistentes de manera inmediata veloz; esta invulnerabilidad extrema y su espectacular y milagrosa asombrosa fortaleza aparente ha llevado a los ingenieros de la NASA y la ciencia aeroespacial profunda internacional a estudiarlo a fondo y obsesivamente rigurosamente con enorme devoción intensa.'
   },
   {
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Proteína Dsup', icon: 'Atom', text: 'La proteína Dsup de los tardígrados, cuando se transfiere a células humanas, reduce el daño al ADN por radiación UV en un 40%. Los investigadores la están estudiando para desarrollar fármacos que protejan a los astronautas de la radiación cósmica durante misiones a Marte.' },
       { label: 'Luna Contaminada', icon: 'Sparkles', text: 'La sonda Beresheet (Israel, 2019) se estrelló en la Luna llevando tardígrados deshidratados no autorizados. El debate científico que generó llevó a la COSPAR a revisar sus protocolos de protección planetaria para incluir extremófilos.' }
     ],
+    bannerImage: '/assets/animales/infographic_m4/banner_tardigrados-espacio.png',
+    bannerCaption: 'Tardígrados: Los Invencibles del Cosmos',
     fact: 'Los tardígrados fueron los primeros animales en sobrevivir al vacío del espacio exterior sin ninguna protección en el experimento FOTON-M3 (2007). Su proteína Dsup, que blinda el ADN de la radiación, podría ser el fármaco radioprotector que los astronautas en Marte necesitarán.'
   },
   {
@@ -206,6 +214,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Memoria Epigenética', icon: 'Activity', text: 'Las colonias de C. elegans del Columbia mostraron que la adaptación a la microgravedad se codifica en marcas epigenéticas hereditarias — descendientes que nunca estuvieron en el espacio "recordaban" molecularmente que sus ancestros sí lo estuvieron.' },
       { label: 'Fármaco SGK-1', icon: 'Microscope', text: 'El inhibidor PW1, descubierto gracias a experimentos con C. elegans en la ISS, preserva el 60% de la masa muscular en microgravedad simulada en ratones. Podría ser el primer fármaco antiatrofia diseñado para viajes a Marte.' }
     ],
+    bannerImage: '/assets/animales/infographic_m4/banner_elegans-columbia.png',
+    bannerCaption: 'C. elegans y el Columbia: Sobrevivientes del Desastre',
     fact: 'C. elegans sobrevivió la desintegración del Columbia a 1,500°C y fue recuperado vivo de los escombros en Texas. Ese mismo organismo ha permitido identificar un posible fármaco que podría prevenir la atrofia muscular en astronautas durante viajes a Marte.'
   },
   {
@@ -225,6 +235,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Otolitos Asimétricos', icon: 'Activity', text: 'El 23% de los peces cebra desarrollados en la ISS tuvieron otolitos mal formados, y el 35% nunca recuperó la orientación normal al volver a la Tierra. Exactamente el mismo mecanismo podría explicar el mareo espacial que afecta al 70% de los astronautas.' },
       { label: 'Peces Ciegos al Espacio', icon: 'Sparkles', text: 'Los medakas eclosionados en microgravedad en 1994 nadaban en círculos hacia la oscuridad en lugar de hacia la luz — sin gravedad, los peces pierden la referencia que les indica cuál es "arriba". Los humanos tenemos el mismo problema en los primeros días en órbita.' }
     ],
+    bannerImage: '/assets/animales/infographic_m4/banner_peces-zebrafish.png',
+    bannerCaption: 'Peces Cebra: Vertebrados en Microgravedad',
     fact: 'El pez cebra es el único vertebrado en haber completado su desarrollo completo en microgravedad. Sus anomalías otolíticas son el modelo más preciso disponible para estudiar por qué el 70% de los astronautas desarrollan problemas de visión permanentes en misiones largas.'
   },
   {
@@ -244,6 +256,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Esperma en Órbita', icon: 'Sparkles', text: 'Espermatozoides de ratón liofilizados permanecieron 288 días en la ISS, expuestos a niveles de radiación cósmica que habrían matado cualquier célula viva. Al ser fertilizados en tierra, produjeron crías completamente sanas — el ADN masculino es sorprendentemente resistente.' },
       { label: 'Ventana de 72h', icon: 'Clock', text: 'Los primeros 3 días de embarazo son críticos: los embriones de ratón expuestos a microgravedad durante ese período tienen un 34% de anomalías. Para colonias en Marte, esto significa que las gestantes necesitarían gravedad artificial durante el primer trimestre.' }
     ],
+    bannerImage: '/assets/animales/infographic_m4/banner_ratones-reproduccion.png',
+    bannerCaption: 'Mamíferos en Órbita: El Futuro de la Vida en el Espacio',
     fact: 'El proyecto Space Pup (2023) demostró que embriones de ratón pueden sobrevivir 288 días en la ISS y producir crías normales tras ser implantados en la Tierra. Pero los análisis epigenómicos muestran que el "recuerdo" espacial queda grabado en su ADN — con consecuencias que aún estamos descubriendo.'
   }
 

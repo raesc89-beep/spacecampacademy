@@ -94,6 +94,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Enfoque Biológico', icon: 'Microscope', text: 'Los primeros experimentos no buscaban enviar animales por espectáculo, sino comprender las mutaciones inducidas por la radiación cósmica en el ADN celular primitivo a gran altitud.' },
       { label: 'Dato Histórico', icon: 'Activity', text: 'Las esporas y semillas enviadas en 1946 marcaron la primera vez que material genético terrestre cruzó la Línea de Kármán, sobreviviendo con éxito a los rigores del espacio.' }
     ],
+    bannerImage: '/assets/animales/infographic_m1/banner_ensayos-biologicos.png',
+    bannerCaption: 'Primeros Ensayos Biológicos en el Espacio',
     fact: 'Aunque olvidados a menudo, los insectos y esporas fueron verdaderamente los primeros organismos terrestres en experimentar las extremas condiciones del vacío espacial.'
   },
   {
@@ -113,6 +115,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Entrenamiento Severo', icon: 'Rocket', text: 'Los macacos soportaban pruebas centrífugas que multiplicaban su peso por diez, imitando la aplastante aceleración balística de los cohetes primitivos de la Guerra Fría.' },
       { label: 'Resultados Vitales', icon: 'HeartPulse', text: 'La telemetría biomédica demostró que el ritmo cardíaco se duplicaba durante el despegue, pero se estabilizaba asombrosamente rápido una vez que se alcanzaba la microgravedad.' }
     ],
+    bannerImage: '/assets/animales/infographic_m1/banner_vuelo-primates.png',
+    bannerCaption: 'El Vuelo de los Primates y la Tolerancia G',
     fact: 'Ham, el chimpancé espacial, ejecutó sus tareas de activación de palancas con un margen de error menor a un segundo incluso bajo condiciones de ingravidez y estrés sónico extremo.'
   },
   {
@@ -132,6 +136,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Tolerancia Urbana', icon: 'PawPrint', text: 'La elección de perros callejeros moscovitas no fue accidental; su capacidad probada de supervivencia en inviernos gélidos se traducía en una mayor resistencia fisiológica al estrés del vuelo.' },
       { label: 'Legado de Laika', icon: 'Star', text: 'Aunque su sacrificio fue inmensamente polémico, los datos biométricos de Laika probaron sin lugar a dudas que un corazón mamífero avanzado continuaría latiendo en órbita.' }
     ],
+    bannerImage: '/assets/animales/infographic_m1/banner_caninos-sovieticos.png',
+    bannerCaption: 'Los Caninos Soviéticos y el Aislamiento Orbital',
     fact: 'El regreso seguro de las perras Belka y Strelka incluyó no solo su bienestar físico, sino que Strelka posteriormente tuvo una camada de cachorros perfectamente sanos, demostrando que la radiación espacial no causó daño reproductivo permanente.'
   },
   {
@@ -151,6 +157,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Resistencia Extrema', icon: 'Dna', text: 'Los tardígrados deshidratados pueden sobrevivir directamente expuestos al vacío espacial y a la brutal radiación ultravioleta del sol, reparando su ADN celular al rehidratarse en la Tierra.' },
       { label: 'Agricultura Espacial', icon: 'Microscope', text: 'Los sistemas CELSS dependen absolutamente del cultivo de plantas y microorganismos en ingravidez, cerrando el ciclo ecológico para proporcionar oxígeno y reciclar dióxido de carbono continuamente.' }
     ],
+    bannerImage: '/assets/animales/infographic_m1/banner_ecosistemas-cerrados.png',
+    bannerCaption: 'Ecosistemas Cerrados y Microorganismos Extremófilos',
     fact: 'Ciertas cepas de bacterias como Salmonella typhimurium se vuelven genéticamente más virulentas y letales cuando se exponen a la microgravedad prolongada, obligando a replantear la esterilización de las naves espaciales.'
   },
   {
@@ -170,6 +178,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Genoma Universal', icon: 'Dna', text: 'La mosca Drosophila comparte el 75% de los genes causantes de enfermedades humanas, convirtiéndola en un modelo de envejecimiento celular de precisión inusitada para la medicina espacial.' },
       { label: 'Mapa Neuronal Total', icon: 'Activity', text: 'El C. elegans tiene exactamente 302 neuronas completamente mapeadas — el único sistema nervioso animal totalmente cartografiado, ideal para estudiar los efectos del espacio neurona por neurona.' }
     ],
+    bannerImage: '/assets/animales/infographic_m1/banner_insectos-espacio.png',
+    bannerCaption: 'Insectos y Gusanos: Los Organismos Modelo del Cosmos',
     fact: 'Colonias de C. elegans sobrevivieron más de 4 meses en la ISS produciendo múltiples generaciones saludables, confirmando que el ciclo de vida completo de un animal puede cerrarse en microgravedad sin intervención humana directa.'
   },
   {
@@ -189,6 +199,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Looping Compulsivo', icon: 'Activity', text: 'El "looping" de los medakas en microgravedad — espirales circulares vertiginosas desde el primer minuto — es la respuesta neurológica al colapso total de la referencia gravitacional sobre el sistema vestibular.' },
       { label: 'Cebra Transparente', icon: 'Microscope', text: 'El pez cebra es completamente transparente de larva; científicos de la ISS filman sus neuronas fluorescentes en tiempo real mientras el pez se adapta a la ingravidez, mapeando el reclutamiento neural postura a postura.' }
     ],
+    bannerImage: '/assets/animales/infographic_m1/banner_peces-microgravedad.png',
+    bannerCaption: 'Peces en Gravedad Cero: El Laberinto de la Orientación',
     fact: 'Los peces cebra desarrollados completamente en microgravedad presentan malformaciones permanentes en los otolitos — los cristales de carbonato cálcico del oído interno — demostrando que la gravedad es una señal morfológica esencial durante el desarrollo embrionario.'
   },
   {
@@ -208,6 +220,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Electrodos en Órbita', icon: 'Activity', text: 'La misión OFO-A de 1970 implantó electrodos directamente en los nervios vestibulares de ranas en órbita — la primera grabación neurológica del cerebelo en tiempo real fuera de la Tierra.' },
       { label: 'CRISPR en el Espacio', icon: 'Dna', text: 'Hoy los investigadores aplican CRISPR-Cas9 a embriones de Xenopus en la ISS para identificar genes que necesitan gravedad para activarse correctamente durante el desarrollo embrionario.' }
     ],
+    bannerImage: '/assets/animales/infographic_m1/banner_ranas-otolitos.png',
+    bannerCaption: 'Ranas en Órbita: El Sistema Vestibular al Desnudo',
     fact: 'La misión Orbiting Frog Otolith de 1970 fue la primera misión espacial diseñada exclusivamente para neurología: sus electrodos otolíticos en ranas vivas en órbita redefinieron nuestra comprensión de cómo el cerebro humano pierde y recupera el sentido del equilibrio.'
   }
 
