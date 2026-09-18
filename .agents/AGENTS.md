@@ -193,7 +193,7 @@ minHeight: '280px'
 ### 10.2 Estilo Artístico Obligatorio ("Nilo de Nut"):
 Todas las imágenes generadas para infografías (btn_*, hero_*, bg_*) DEBEN seguir este estilo:
 - **Tipo**: Ilustración digital estilizada / vector art con detalles — NO fotorrealista, NO flat cartoon.
-- **Paleta**: Se elige **una paleta al azar por infografía** (todas las imágenes de un mismo componente usan la misma paleta). Las paletas disponibles son:
+- **Paleta**: Se define una paleta cromática armónica y elegante adaptada a cada infografía o nodo. Las 12 combinaciones de referencia sirven como arquetipos de calidad, pero **NO limitan de forma cerrada** las opciones: se permite y alienta generar paletas personalizadas acordes a la temática científica e histórica específica de cada módulo, siempre conservando el estilo y la elegancia visual:
   1. `deep indigo blue and warm golden amber` (índigo + ámbar — la paleta clásica)
   2. `muted teal and burnt sienna` (verde-azulado apagado + siena tostado)
   3. `slate blue and soft copper` (azul pizarra + cobre suave)
@@ -206,15 +206,16 @@ Todas las imágenes generadas para infografías (btn_*, hero_*, bg_*) DEBEN segu
   10. `prussian blue and peach` (azul de Prusia + melocotón)
   11. `dark olive and warm sand` (oliva oscuro + arena cálida)
   12. `storm grey and marigold` (gris tormenta + caléndula)
-  - **Regla**: Todos los tonos deben ser **profundos, apagados o terrosos** — nunca neón, fluorescente ni saturación alta. El objetivo es un aspecto de concept art cinematográfico, no de ilustración infantil genérica.
-  - **Coherencia temática**: La paleta elegida debe **guardar relación con la temática del contenido** y respetar los **colores realistas de los elementos representados**. Por ejemplo: planetas rocosos combinan bien con terracota, siena y ámbar; exoplanetas y telescopios con azules profundos y cobres; asteroides con negros, grises y plata; Venus con vinos y bronces; Marte con teal y siena; habitabilidad con verdes y dorados. La paleta acentúa y complementa el sujeto — nunca lo contradice ni lo aleja de su apariencia natural.
+  - **Variación y flexibilidad temática**: El agente o creador puede derivar y aplicar paletas específicas para el tema en cuestión (ej. biología cósmica, vulcanología espacial, bioastronáutica, astrofísica estelar, arqueología, etc.), seleccionando tonos primarios y acentos lumínicos que reflejen fielmente el tema tratado.
+  - **Regla**: Todos los tonos deben ser **profundos, apagados, orgánicos o terrosos con acentos sutiles de luz** — nunca neón, fluorescente ni saturación alta infantil. El objetivo es un aspecto de concept art cinematográfico, editorial y de alta divulgación.
+  - **Coherencia temática**: La paleta elegida debe **guardar relación con la temática del contenido** y respetar los **colores realistas y narrativos de los elementos representados** (ej: Marte con teal/óxido/siena; océanos de Europa o Encélado con azul abisal y plata gélida; auroras y magnetosferas con verde esmeralda profundo y violeta cósmico; trajes espaciales históricos con blanco vintage y tonos dorados; habitabilidad y botánica espacial con verde bosque y ámbar cálido).
   - **Restricción de estilo**: Aunque se buscan colores realistas y temáticos, los tonos **nunca deben ser chillones, saturados en exceso ni dar aspecto infantil**. El equilibrio es: fidelidad cromática al sujeto + elegancia cinematográfica + cohesión dentro de todo el componente.
-  - **Asignación**: El agente elige una paleta al inicio de cada componente y la usa para todas las imágenes btn_*, hero_* y banner_* de ese componente. Cielos nocturnos con estrellas y profundidad atmosférica siguen siendo obligatorios.
+  - **Asignación**: Se define la paleta coherente para las imágenes btn_*, hero_* y banner_* del componente o nodo. Cielos nocturnos, texturas ricas y profundidad atmosférica siguen siendo señas de identidad.
 - **Texturas**: Colores limpios con gradientes sutiles. Agua con reflejos, piedra con vetas, cielos detallados con estrellas.
 - **Personajes**: Proporcionados semi-estilizados (como ilustración de libro infantil premium, NO chibi/cartoon).
 - **Composición**: Escenas narrativas cinematográficas con profundidad de campo, elementos superpuestos en capas.
 - **Ambiente**: Épico, aventurero, educativo. Similar a concept art de películas animadas de aventura.
-- **Prompt suffix obligatorio**: Toda generación de imagen DEBE terminar con: `"Illustrated digital art style, clean vector aesthetic with subtle gradients, {PALETTE} palette, detailed night sky with stars, stylized semi-realistic proportions, educational adventure illustration for children ages 8-13, cinematic composition with depth. No text, no letters, no words."` donde `{PALETTE}` se sustituye por la paleta asignada al componente (ej. `muted teal and burnt sienna`).
+- **Prompt suffix obligatorio**: Toda generación de imagen DEBE terminar con: `"Illustrated digital art style, clean vector aesthetic with subtle gradients, {PALETTE} palette, detailed night sky with stars, stylized semi-realistic proportions, educational adventure illustration for children ages 8-13, cinematic composition with depth. No text, no letters, no words."` donde `{PALETTE}` se sustituye por la paleta temática asignada (ej. `deep forest green and pale amber`, `muted teal and burnt sienna`, o la paleta temática específica).
 
 ### 10.3 Lo que NUNCA hacer:
 - ❌ NO usar `gridTemplateColumns: '280px 1fr'` — hace la imagen demasiado pequeña.
