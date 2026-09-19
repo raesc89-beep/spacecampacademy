@@ -152,6 +152,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Henri Becquerel pertenecía a una familia de físicos distinguidos. Su abuelo Antoine César Becquerel y su padre Alexandre-Edmond Becquerel también fueron físicos que estudiaron la fosforescencia y la luminiscencia. Los tres ocuparon la misma cátedra de física en el Museo Nacional de Historia Natural de París, una tradición familiar de investigación científica que abarcó tres generaciones consecutivas durante todo el siglo XIX.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El sulfato doble de uranio y potasio que Becquerel utilizó tiene la fórmula química K₂(UO₂)(SO₄)₂·2H₂O. La radiación que emitía provenía principalmente de la desintegración alfa del uranio-238, que tiene un período de semidesintegración de 4.468 millones de años. Esto significa que una muestra de uranio-238 tarda 4.468 millones de años en reducir su radiactividad a la mitad, un tiempo similar a la edad de la Tierra.' },
     ],
+    bannerImage: '/assets/curie/infographic_m2/banner_becquerel-rayos-uranicos.png',
+    bannerCaption: 'Becquerel y los rayos uránicos: el accidental descubrimiento de la radiactividad en 1896',
     fact: 'Becquerel llevaba frecuentemente un tubo de ensayo con sales de radio en el bolsillo del chaleco para hacer demostraciones. El 3 de abril de 1901, presentó ante la Sociedad de Física de Francia una quemadura en forma de óvalo que las sales le habían producido en la piel del abdomen a través de la tela del chaleco. La quemadura tardó varias semanas en curarse. Este fue uno de los primeros casos documentados de daño biológico causado por la exposición a materiales radiactivos.',
   },
   {
@@ -171,6 +173,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El electrómetro piezoeléctrico de los hermanos Curie era tan sensible que Marie debía esperar a que los tranvías dejaran de pasar por la calle para tomar sus mediciones, ya que las vibraciones del tráfico afectaban las lecturas. Pierre diseñó una balanza de cuarzo piezoeléctrico que funcionaba como contrapeso eléctrico: Marie equilibraba la corriente producida por la muestra radiactiva con la corriente generada al aplicar pesos conocidos sobre el cristal de cuarzo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La decisión de Marie de medir la radiación por su efecto ionizante fue clave. La radiación ioniza el aire al arrancar electrones de las moléculas de nitrógeno y oxígeno, creando iones con carga eléctrica. Al aplicar un voltaje entre dos placas metálicas en la cámara de ionización, los iones se mueven y generan una corriente eléctrica proporcional a la intensidad de la radiación. Este principio de medición sigue utilizándose hoy en los contadores Geiger modernos.' },
     ],
+    bannerImage: '/assets/curie/infographic_m2/banner_eleccion-tema-tesis.png',
+    bannerCaption: 'La audaz elección: Marie decide investigar la radioactividad para su tesis doctoral',
     fact: 'Marie Curie fue la primera persona en la historia en obtener un doctorado en Física en Francia. Su comité examinador, compuesto por los profesores Gabriel Lippmann (futuro Premio Nobel), Edmond Bouty y Henri Moissan (futuro Premio Nobel), declaró que su tesis constituía «la mayor contribución científica jamás realizada en una tesis doctoral». La defensa tuvo lugar el 25 de junio de 1903 en la Sorbona, con Pierre Curie, Henri Becquerel y Paul Langevin entre el público asistente.',
   },
   {
@@ -190,6 +194,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La mención de Polonia en el artículo científico fue un acto de protesta política calculado. En 1898, la palabra «Polonia» estaba prohibida en documentos oficiales del Imperio Ruso, que controlaba Varsovia y la mayor parte del territorio polaco. Al insertar el nombre de su país en una publicación de la Academia de Ciencias de Francia, Marie usó la ciencia como tribuna política. El artículo fue discutido en periódicos de toda Europa, difundiendo la causa polaca en círculos intelectuales.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El polonio-210 es un emisor alfa puro, lo que significa que emite partículas alfa (núcleos de helio-4) durante su desintegración radiactiva. Cada partícula alfa tiene una energía de 5.3 MeV. Aunque las partículas alfa no pueden atravesar una hoja de papel, cuando el polonio-210 se ingiere o inhala, su radiación alfa destruye las células desde el interior del cuerpo. Un solo microgramo de polonio-210 es letal si se ingiere, lo que lo convierte en una de las sustancias más tóxicas conocidas.' },
     ],
+    bannerImage: '/assets/curie/infographic_m2/banner_polonio-por-polonia.png',
+    bannerCaption: 'Polonio: Marie nombra el elemento descubierto en honor a su Polonia ocupada',
     fact: 'La pechblenda que Marie y Pierre analizaron provenía de las minas de Joachimsthal (hoy Jáchymov), en la región de Bohemia del Imperio Austrohúngaro (actual República Checa). Estas minas habían sido explotadas desde el siglo XVI para extraer plata, y la pechblenda se consideraba un residuo sin valor. Irónicamente, el mineral «inútil» que los mineros descartaban contenía dos elementos nuevos — el polonio y el radio — que transformarían la medicina y la física del siglo XX.',
   },
   {
@@ -209,6 +215,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marie escribió en sus memorias que algunas noches ella y Pierre regresaban al laboratorio solo para contemplar los frascos que brillaban en la oscuridad con una luz azulada fantasmagórica. «Nuestros preciosos productos, para los cuales no teníamos refugio, estaban depositados sobre mesas y estantes. De todos lados podíamos ver sus siluetas luminosas, y el espectáculo era un encanto renovado para nosotros cada vez», escribió Marie en su biografía de Pierre Curie publicada en 1923.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El radio-226 tiene un período de semidesintegración de 1600 años. Al desintegrarse, emite una partícula alfa y se transforma en radón-222, un gas noble radiactivo. El radón-222 tiene un período de semidesintegración de solo 3.82 días y se desintegra a su vez en una cadena de elementos radiactivos. La luminiscencia azul del radio no proviene directamente de la desintegración nuclear, sino de la ionización del nitrógeno atmosférico por las partículas alfa y los rayos beta que emite durante su cadena de desintegración.' },
     ],
+    bannerImage: '/assets/curie/infographic_m2/banner_radio-elemento-brilla.png',
+    bannerCaption: 'El radio brilla en la oscuridad: un elemento hermoso y mortal descubierto en 1898',
     fact: 'Pierre Curie demostró los efectos biológicos del radio con un autoexperimento registrado el 13 de abril de 1901. Se ató un pequeño recipiente con sales de radio al antebrazo durante diez horas. La piel se enrojeció al día siguiente, formó una ampolla a los pocos días y desarrolló una llaga que tardó 52 días en curarse, dejando una cicatriz grisácea permanente. Pierre comunicó estos resultados junto con Becquerel, abriendo el camino a la radioterapia cuando los médicos propusieron usar el radio para destruir células tumorales.',
   },
   {
@@ -228,6 +236,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El cobertizo de la Rue Lhomond fue demolido en la década de 1930 durante una renovación del campus. Hoy, una placa conmemorativa en el Instituto Curie de París marca el lugar donde Marie y Pierre trabajaron. La ironía es que uno de los peores laboratorios de la historia de la ciencia produjo dos de los descubrimientos más transformadores del siglo XX: el polonio y el radio. El lugar donde se hizo grande ciencia no tenía ni agua corriente ni suelo nivelado.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los cuadernos de Marie Curie emiten una radiación de aproximadamente 0.5 milisieverts por hora debido a la contaminación con radio-226 y sus productos de desintegración. Para contextualizar, la dosis natural de radiación que recibe una persona promedio es de unos 2.4 milisieverts al año. Una hora sosteniendo los cuadernos de Marie equivale a más de un mes de radiación natural. Los cuadernos se conservan en la Biblioteca Nacional de Francia en cajas forradas con hojas de plomo de 2 milímetros de espesor.' },
     ],
+    bannerImage: '/assets/curie/infographic_m2/banner_cobertizo-rue-lhomond.png',
+    bannerCaption: 'El cobertizo de la Rue Lhomond: procesaron toneladas de pechblenda para obtener 0.1g de radio',
     fact: 'Marie Curie procesó un total de aproximadamente ocho toneladas de residuos de pechblenda durante los cuatro años de trabajo en el cobertizo. Los residuos llegaban en sacos desde las minas de Joachimsthal en tren, y Marie los recibía personalmente en la estación. Cada tonelada de pechblenda contenía apenas una diezmilésima de gramo de radio. Para obtener 0.1 gramos de cloruro de radio puro, Marie realizó más de 6.000 cristalizaciones fraccionadas, un procedimiento que requería paciencia extrema y precisión química que pocos científicos de su época habrían tolerado.',
   },
   {
@@ -247,6 +257,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La exclusión inicial de Marie de la nominación al Nobel no fue un caso aislado. En 1902, Charles Lippmann nominó solo a Pierre y Becquerel. El acta del comité Nobel de 1903 revela que algunos miembros consideraban que Marie «solo» había confirmado los resultados de su esposo. Fue Pierre quien insistió en que Marie era la autora intelectual del concepto de radiactividad como propiedad atómica, la descubridora del polonio y el radio, y que sin ella el campo no existiría como tal.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Marie Curie es la única persona en la historia que ha ganado Premios Nobel en dos ciencias diferentes. Recibió el Nobel de Física en 1903 (compartido con Becquerel y Pierre) y el Nobel de Química en 1911 (en solitario) por el aislamiento del radio metálico puro y la determinación de sus propiedades químicas. Solo cuatro personas han ganado dos Premios Nobel: Marie Curie, Linus Pauling (Química 1954 y Paz 1962), John Bardeen (Física 1956 y 1972) y Frederick Sanger (Química 1958 y 1980).' },
     ],
+    bannerImage: '/assets/curie/infographic_m2/banner_nobel-fisica-1903.png',
+    bannerCaption: 'Nobel de Física 1903: Marie Curie, la primera mujer en recibir el Premio Nobel',
     fact: 'Pierre Curie pronunció la conferencia Nobel en junio de 1905, más de un año después de la ceremonia. En ella hizo una reflexión que resultó profética: «Se puede concebir que en manos criminales el radio podría resultar muy peligroso, y cabe preguntarse si la humanidad se beneficia al conocer los secretos de la naturaleza, si está preparada para sacar provecho de ellos o si este conocimiento no le será perjudicial». Fue una de las primeras advertencias públicas sobre los peligros potenciales de la energía nuclear, formulada 40 años antes de Hiroshima.',
   },
   {
@@ -266,6 +278,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Irène Joliot-Curie, la hija de Marie y Pierre, continuó el legado familiar. Junto con su esposo Frédéric Joliot, descubrieron la radiactividad artificial en 1934: la capacidad de crear elementos radiactivos bombardeando elementos estables con partículas alfa. Recibieron el Premio Nobel de Química en 1935 por este descubrimiento. Los Curie-Joliot son la familia con más Premios Nobel de la historia, con un total de cinco premios entre Marie, Pierre, Irène y Frédéric.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La radiactividad tiene aplicaciones que van mucho más allá de la física y la medicina. La datación por carbono-14 (con un período de semidesintegración de 5.730 años) permite determinar la edad de restos orgánicos de hasta 50.000 años de antigüedad. Los detectores de humo domésticos contienen americio-241, un emisor alfa con un período de 432 años. Los marcapasos cardíacos usaban baterías de plutonio-238 hasta la década de 1970. Y las sondas espaciales Voyager 1 y 2, lanzadas en 1977, siguen funcionando gracias a generadores termoeléctricos de plutonio-238.' },
     ],
+    bannerImage: '/assets/curie/infographic_m2/banner_ciencia-radiactividad.png',
+    bannerCaption: 'La ciencia de la radioactividad: radiación alfa, beta y gamma desde el núcleo atómico',
     fact: 'Marie Curie murió el 4 de julio de 1934 en el sanatorio de Sancellemoz, en Passy, Francia, a los 66 años. La causa de muerte fue anemia aplásica, una enfermedad de la médula ósea causada por la exposición prolongada a radiación ionizante durante décadas de trabajo sin protección. En 1995, los restos de Marie y Pierre Curie fueron trasladados al Panteón de París por orden del presidente François Mitterrand. Marie Curie fue la primera mujer enterrada en el Panteón por méritos propios. Sus restos fueron colocados en un ataúd de plomo debido a la radiactividad residual de su cuerpo.',
   },
 ];
@@ -684,6 +698,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (

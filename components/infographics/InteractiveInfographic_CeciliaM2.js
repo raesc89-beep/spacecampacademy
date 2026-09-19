@@ -157,6 +157,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La estrella más cercana al Sol es Próxima Centauri, ubicada a 4.24 años luz de distancia. Esto significa que la luz que vemos de ella esta noche partió hace 4 años y 3 meses. La luz de la estrella Betelgeuse, visible en la constelación de Orión, partió hace unos 700 años, cuando en la Tierra se construían catedrales góticas. Y la luz de la galaxia de Andrómeda viajó durante 2.5 millones de años para llegar a nuestros ojos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La velocidad de la luz en el vacío es exactamente 299,792,458 metros por segundo. Albert Einstein demostró en 1905 que esta velocidad es una constante universal: nada puede superar la velocidad de la luz. Cuando un espectrómetro descompone la luz estelar, cada fotón individual lleva consigo una frecuencia específica que actúa como una "huella dactilar" del átomo que lo emitió o absorbió hace miles de años.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m2/banner_luz-estrellas.png',
+    bannerCaption: 'La luz de las estrellas: el mensajero que revela su composición química',
     fact: 'En 1802, el óptico inglés William Hyde Wollaston observó líneas oscuras en el espectro solar al pasar la luz por una rendija estrecha antes del prisma. Wollaston creyó erróneamente que eran los límites naturales entre los colores del arco iris. No se dio cuenta de que había descubierto las líneas de absorción, uno de los hallazgos más importantes de la astrofísica. Tuvieron que pasar 12 años antes de que otro científico entendiera su verdadero significado.',
   },
   {
@@ -176,6 +178,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Robert Bunsen es más conocido hoy por el mechero Bunsen que por sus contribuciones a la espectroscopía, pero su trabajo con Kirchhoff fue mucho más significativo para la ciencia. Juntos descubrieron dos elementos nuevos usando la espectroscopía: el cesio (1860) y el rubidio (1861). Los nombres provienen de los colores de sus líneas espectrales: caesius significa "azul cielo" en latín, y rubidus significa "rojo intenso".' },
       { label: 'Dato Científico', icon: 'atom', text: 'El átomo de hidrógeno, el más simple del universo (un protón y un electrón), produce cuatro líneas visibles llamadas la serie de Balmer: Hα (656 nm, roja), Hβ (486 nm, azul-verde), Hγ (434 nm, violeta) y Hδ (410 nm, violeta profundo). Johann Balmer descubrió en 1885 la fórmula matemática que predice exactamente la posición de cada línea. Esta fórmula fue uno de los primeros indicios de que los átomos tienen estructura interna cuantizada.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m2/banner_espectros-absorcion.png',
+    bannerCaption: 'Espectros de absorción: las líneas oscuras que revelan los elementos en las estrellas',
     fact: 'Joseph von Fraunhofer fue un huérfano que quedó atrapado bajo los escombros de un edificio derrumbado en Múnich cuando tenía 11 años. Su rescate fue noticia nacional y llamó la atención del príncipe elector Maximiliano IV, quien le concedió dinero y la oportunidad de aprender el oficio de óptico. Sin ese accidente, Fraunhofer probablemente habría sido un aprendiz de cristalero anónimo. En lugar de eso, fabricó las lentes y prismas más precisos de su época y descubrió las 574 líneas oscuras del espectro solar que llevan su nombre.',
   },
   {
@@ -195,6 +199,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Annie Jump Cannon perdió gran parte de su audición durante la infancia debido a la escarlatina. Trabajaba en un silencio casi completo en la sala de placas del observatorio, concentrándose exclusivamente en las imágenes espectrales frente a ella. Cannon fue la primera mujer en recibir un doctorado honorario de la Universidad de Oxford (1925) y la primera mujer elegida como oficial de la Sociedad Astronómica Americana. Un cráter lunar lleva su nombre desde 1964.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Sol es una estrella tipo G2V en la clasificación de Harvard. La letra G indica su clase espectral (temperatura superficial de 5,200-6,000 K), el número 2 es una subdivisión de temperatura (0 es más caliente, 9 más fría dentro de la clase), y la V indica que es una estrella de secuencia principal (enana). El catálogo Henry Draper asignó al Sol la designación formal, aunque técnicamente es la estrella más estudiada y mejor comprendida del universo.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m2/banner_clasificacion-harvard.png',
+    bannerCaption: 'La clasificación espectral de Harvard: de las estrellas O azules a las M rojas',
     fact: 'Las "Computadoras de Harvard" incluyeron a Henrietta Swan Leavitt, quien descubrió en 1912 la relación período-luminosidad de las estrellas variables Cefeidas. Este descubrimiento permitió medir distancias cósmicas por primera vez y fue utilizado por Edwin Hubble en 1929 para demostrar que el universo se está expandiendo. Leavitt recibía un salario de 30 centavos por hora y nunca fue nombrada profesora. El astrónomo sueco Gösta Mittag-Leffler intentó nominarla al Premio Nobel en 1924, pero descubrió que había muerto de cáncer tres años antes.',
   },
   {
@@ -214,6 +220,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Meghnad Saha fue nominado al Premio Nobel de Física en varias ocasiones pero nunca lo recibió. Su ecuación de ionización es considerada una de las contribuciones más importantes de la física india al conocimiento universal. Saha también fue un activista social y político: fue elegido miembro del Parlamento indio en 1952 y trabajó para modernizar el sistema de calendarios de la India. El cráter Saha en la Luna fue nombrado en su honor en 1979.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ecuación de Saha se expresa como: (n_{i+1} · nₑ) / n_i = (2 / λ³) · (g_{i+1} / g_i) · exp(-χ / kT), donde n_i es la densidad del estado de ionización i, nₑ es la densidad electrónica, λ es la longitud de onda térmica de De Broglie, g son las funciones de partición estadística, χ es el potencial de ionización, k es la constante de Boltzmann y T es la temperatura. Esta ecuación predice con precisión qué fracción de átomos de cada elemento estará ionizada a cada temperatura.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m2/banner_ecuacion-saha.png',
+    bannerCaption: 'La ecuación de Saha: la clave para interpretar qué temperatura ioniza cada elemento estelar',
     fact: 'La ecuación de Saha resolvió un problema que parecía trivial pero era profundo: ¿por qué las estrellas tipo B muestran líneas de helio pero no las tipo G? La respuesta no es que las estrellas tipo G carezcan de helio, sino que a 5,800 K (temperatura del Sol), el helio necesita 24.6 electronvoltios para excitar su primer nivel de absorción visible, una energía que los fotones solares rara vez proporcionan. A 25,000 K (estrellas tipo B), los fotones tienen energía suficiente. La misma cantidad de helio produce resultados espectrales opuestos según la temperatura.',
   },
   {
@@ -233,6 +241,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cecilia Payne completó su tesis doctoral en menos de dos años, un tiempo notablemente breve para un trabajo de esa magnitud y profundidad. Harlow Shapley, su director de tesis, quedó tan impresionado que hizo que la tesis se publicara como el primer volumen de una nueva serie de monografías del Observatorio de Harvard. Aunque Payne no podía recibir oficialmente un doctorado de Harvard (solo de Radcliffe College), su tesis estableció el estándar de calidad para la astrofísica cuantitativa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Payne analizó espectros de estrellas de diferentes tipos espectrales (O, B, A, F, G, K, M) y demostró que las variaciones en la intensidad de las líneas NO reflejaban diferencias de composición, sino diferencias de temperatura. Una estrella tipo A y una tipo K tienen prácticamente la misma composición química, pero la diferencia de temperatura hace que sus espectros se vean completamente distintos. Esta revelación unificó la secuencia espectral de Harvard como una secuencia de temperatura, no de composición.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m2/banner_clave-cecilia.png',
+    bannerCaption: 'El momento eureka de Cecilia: aplicar la ecuación de Saha a los espectros estelares',
     fact: 'Henry Norris Russell escribió a Payne en enero de 1925: "Es claramente imposible que el hidrógeno sea un millón de veces más abundante que los metales". Russell basaba su objeción en la suposición de que las estrellas debían tener una composición similar a los meteoritos terrestres. Sin embargo, Payne tenía razón y Russell estaba equivocado. Cuando Russell publicó su propio artículo confirmando la dominancia del hidrógeno en 1929, citó a Payne en una nota al pie, pero la comunidad científica atribuyó el descubrimiento a Russell durante más de tres décadas.',
   },
   {
@@ -252,6 +262,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La nucleosíntesis primordial del Big Bang duró solo 17 minutos, desde el minuto 3 hasta el minuto 20 después del origen del universo. Después de eso, la temperatura descendió demasiado para sostener reacciones de fusión nuclear. En esos 17 minutos se formó todo el hidrógeno y helio que constituyen el 98% de la materia bariónica del universo actual. Tuvieron que pasar otros 200 millones de años hasta que las primeras estrellas se encendieron y comenzaron a fabricar los elementos más pesados.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Sol convierte 600 millones de toneladas de hidrógeno en helio cada segundo en su núcleo. En este proceso, 4.26 millones de toneladas de masa se convierten en energía pura según E=mc². Esa energía es la que hace brillar al Sol. A pesar de esta tasa de consumo, el Sol tiene hidrógeno suficiente para continuar brillando otros 5,000 millones de años. Cuando agote su hidrógeno central, se expandirá como gigante roja y eventualmente expulsará sus capas externas como nebulosa planetaria.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m2/banner_composicion-estelar.png',
+    bannerCaption: 'Composición estelar: las estrellas son 73% hidrógeno, 25% helio y solo 2% metales',
     fact: 'En 2017, los detectores LIGO y Virgo registraron ondas gravitacionales del evento GW170817, la fusión de dos estrellas de neutrones a 130 millones de años luz de distancia. Los telescopios ópticos observaron una kilonova, una explosión que produjo elementos pesados mediante captura rápida de neutrones. Los astrónomos estimaron que esta sola colisión generó aproximadamente 10 masas terrestres de oro y 50 masas terrestres de platino. Todo el oro de la Tierra, unas 171,300 toneladas, probablemente se originó en colisiones similares hace más de 4,600 millones de años.',
   },
   {
@@ -271,6 +283,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El JWST detectó en 2023 la galaxia más lejana confirmada espectroscópicamente: JADES-GS-z14-0, con un corrimiento al rojo de z=14.32. La luz de esta galaxia fue emitida cuando el universo tenía apenas 290 millones de años, solo el 2% de su edad actual. Los espectrómetros del JWST midieron líneas de emisión que confirmaron la presencia de oxígeno en esa galaxia primitiva, lo que indica que ya existían estrellas masivas que habían producido y dispersado elementos pesados.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La técnica de velocidad radial, basada en el efecto Doppler espectroscópico, ha permitido descubrir más de 1,000 exoplanetas. Michel Mayor y Didier Queloz usaron esta técnica en 1995 para detectar 51 Pegasi b, el primer exoplaneta confirmado alrededor de una estrella similar al Sol. Midieron oscilaciones de velocidad radial de la estrella de apenas 59 metros por segundo, causadas por el tirón gravitacional del planeta. Esta hazaña les valió el Premio Nobel de Física en 2019.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m2/banner_espectroscopia-moderna.png',
+    bannerCaption: 'Espectroscopía moderna: JWST analizando atmósferas de exoplanetas como Cecilia analizó estrellas',
     fact: 'En 1998, dos equipos independientes (el Supernova Cosmology Project de Saul Perlmutter y el High-z Supernova Search Team de Brian Schmidt y Adam Riess) usaron espectroscopía de supernovas tipo Ia para medir corrimientos al rojo a distancias cósmicas. Descubrieron que las supernovas lejanas eran más tenues de lo esperado, lo que significaba que el universo no solo se expande, sino que la expansión se está acelerando. Este descubrimiento reveló la existencia de la energía oscura, que constituye el 68% del contenido energético del universo. Los tres recibieron el Premio Nobel de Física en 2011.',
   },
 ];
@@ -691,6 +705,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* ——— Video Player (conditional) ——— */}
         {node.video && (

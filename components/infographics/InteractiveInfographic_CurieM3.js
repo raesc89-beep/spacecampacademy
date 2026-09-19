@@ -141,6 +141,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El diario íntimo que Marie comenzó a escribir tras la muerte de Pierre se conserva hoy en la Biblioteca Nacional de Francia en París. Está guardado dentro de una caja forrada de plomo, porque sus páginas aún emiten radiación medible. Cualquier investigador que desee consultarlo debe firmar un formulario de exención de responsabilidad y usar equipo de protección. Las últimas entradas del diario datan de 1907, un año después de la muerte de Pierre, cuando Marie escribió que finalmente podía volver a concentrarse en su trabajo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Pierre Curie realizó contribuciones fundamentales a la física antes de trabajar con Marie. Junto a su hermano Jacques, inventó el electrómetro piezoeléctrico en 1880, un instrumento que genera una carga eléctrica bajo presión mecánica. Este dispositivo fue la herramienta clave que Marie utilizó para medir la radioactividad de los minerales. Pierre también descubrió la temperatura de Curie (punto de Curie): la temperatura a la cual un material ferromagnético pierde sus propiedades magnéticas, fijada en 770°C para el hierro puro.' },
     ],
+    bannerImage: '/assets/curie/infographic_m3/banner_tragedia-pierre.png',
+    bannerCaption: 'La tragedia de Pierre: Marie pierde a su compañero científico y esposo en 1906',
     fact: 'El lugar exacto donde Pierre Curie murió en la Rue Dauphine, número 6 del sexto distrito de París, fue marcado con una placa conmemorativa en 1908. La calle, que conecta el Boulevard Saint-Germain con el Pont Neuf, era una de las vías más transitadas de la Rive Gauche en 1906. El carro que causó el accidente pertenecía al regimiento de transporte militar basado en el cuartel de Reuilly. Louis Manin, el conductor, declaró ante la policía que no vio al peatón debido a la intensidad de la lluvia y que los caballos no pudieron detenerse a tiempo.',
   },
   {
@@ -160,6 +162,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marie Curie fue rechazada por la Académie des Sciences de Francia en enero de 1911, perdiendo la votación por dos votos (28 contra 30) frente al físico Édouard Branly. La Academia no admitió a una mujer como miembro hasta 1979, cuando la física Yvonne Choquet-Bruhat fue elegida. Marie ya tenía un Nobel de Física cuando fue rechazada, y recibiría el Nobel de Química ese mismo año. La ironía es que Branly, quien la derrotó, nunca recibió un Nobel.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La cátedra que Marie Curie ocupó en la Sorbona se llamaba oficialmente «Cátedra de Física General». Pierre la había obtenido en 1904, un año después del Nobel, cuando la universidad finalmente le ofreció un puesto permanente. Antes de eso, Pierre trabajaba en la ESPCI sin estabilidad laboral. Marie mantuvo la cátedra desde 1906 hasta 1934, el año de su muerte, formando a una generación de físicos nucleares que incluyó a su propia hija Irène y a su yerno Frédéric Joliot-Curie, ambos ganadores del Nobel de Química en 1935.' },
     ],
+    bannerImage: '/assets/curie/infographic_m3/banner_sola-contra-mundo.png',
+    bannerCaption: 'Primera profesora de la Sorbona: Marie toma la cátedra de Pierre tras su muerte',
     fact: 'La «cooperativa escolar» que Marie organizó para Irène y otros niños en 1907 incluía clases en los laboratorios reales de la Sorbona. Los niños, de entre 6 y 12 años, aprendían a usar balanzas analíticas, termómetros de mercurio y electroscopios. Jean Perrin, que ganaría el Nobel de Física en 1926 por demostrar la existencia del átomo, les enseñaba a hacer cristalizaciones y reacciones químicas con colores. Paul Langevin, futuro pionero del sonar, les daba clases de matemáticas con juegos de lógica. Era una escuela donde los profesores eran los mejores científicos de Francia.',
   },
   {
@@ -179,6 +183,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Paul Langevin (1872-1946) siguió una carrera científica notable. En 1917, durante la Primera Guerra Mundial, inventó el primer sistema de sonar práctico utilizando cristales piezoeléctricos — la misma tecnología que Pierre Curie había investigado décadas antes. Langevin también fue uno de los primeros físicos en apoyar la teoría de la relatividad de Einstein. Durante la Segunda Guerra Mundial, fue arrestado por la Gestapo por sus actividades antifascistas y enviado a un campo de internamiento. Su nieta Hélène Langevin-Joliot se casó con el nieto de Marie Curie, Michel Langevin, uniendo las dos familias.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El duelo entre Gustave Téry y Paul Langevin del 25 de noviembre de 1911 se celebró en el Velódromo du Parc des Princes de París, con pistolas semiautomáticas a 25 pasos de distancia. Los padrinos de Langevin fueron los matemáticos Paul Painlevé y Émile Borel; los de Téry fueron periodistas. Cuando el juez dio la orden de disparar, Langevin levantó su pistola pero no apretó el gatillo. Téry tampoco disparó. Los testigos reportaron que Langevin declaró: «No soy un asesino», bajó el arma y se marchó. Los duelos eran legales en Francia hasta 1967.' },
     ],
+    bannerImage: '/assets/curie/infographic_m3/banner_escandalo-langevin.png',
+    bannerCaption: 'El escándalo Langevin: la prensa intentó destruir a la primera científica del mundo',
     fact: 'Las cartas entre Marie Curie y Paul Langevin que Jeanne Desfosses entregó a la prensa nunca fueron publicadas completas. Los fragmentos que aparecieron en L\'Œuvre y Le Journal mostraban una relación sentimental, pero también discusiones sobre física teórica, sobre los experimentos de Marie con radio metálico puro y sobre las ecuaciones de Langevin para el movimiento browniano. La correspondencia completa fue sellada por orden judicial en 1911 y depositada en los archivos de la Bibliothèque nationale de France, donde permaneció inaccesible durante un siglo. Los historiadores que han podido consultarla confirman que las cartas revelan a dos científicos profundamente comprometidos tanto con su trabajo como con su relación personal.',
   },
   {
@@ -198,6 +204,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marie Curie viajó a Estocolmo acompañada de su hija Irène (entonces de 14 años) y de su hermana mayor Bronisława (Bronia). Irène asistió a la ceremonia de entrega y al banquete del Nobel, donde se sentó en la mesa de honor junto a los demás laureados. Treinta y cuatro años después, en 1935, Irène Joliot-Curie recibiría su propio Nobel de Química junto con su esposo Frédéric, por el descubrimiento de la radioactividad artificial. Los Curie son la familia con más Premios Nobel de la historia: cinco en total si contamos a Henry Labouisse, esposo de Ève Curie, que recibió el Nobel de la Paz en nombre de UNICEF en 1965.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El proceso de electrólisis que Marie y Debierne utilizaron para aislar radio metálico requería condiciones extremadamente controladas. El cloruro de radio se disolvía en ácido clorhídrico concentrado, y la electrólisis se realizaba con un cátodo de mercurio y un ánodo de platino-iridio. La corriente eléctrica aplicada era de 10 amperios. El radio se depositaba en el mercurio formando una amalgama, que luego se calentaba en un tubo de cuarzo lleno de hidrógeno puro. A 700°C, el mercurio se evaporaba y quedaba un residuo metálico blanco que pesaba apenas unos miligramos: radio puro con un punto de fusión de 700°C.' },
     ],
+    bannerImage: '/assets/curie/infographic_m3/banner_nobel-quimica-1911.png',
+    bannerCaption: 'Nobel de Química 1911: única persona en ganar el Nobel en dos ciencias distintas',
     fact: 'El estándar internacional de radioactividad que Marie Curie preparó en 1910 — un tubo de vidrio conteniendo 21,99 mg de cloruro de radio puro — todavía existe. Se conserva en la Oficina Internacional de Pesos y Medidas en Sèvres, Francia, dentro de un contenedor blindado de plomo. Fue utilizado como referencia mundial hasta 1975, cuando la Conferencia General de Pesos y Medidas reemplazó el curio por el becquerel (Bq) como unidad oficial de actividad radiactiva en el Sistema Internacional. Un becquerel equivale a una desintegración por segundo, mientras que un curio equivale a 37.000 millones de desintegraciones por segundo.',
   },
   {
@@ -217,6 +225,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marie Curie realizó dos viajes a Estados Unidos — en 1921 y 1929 — para recaudar fondos para su Instituto del Radio. En el primero, la periodista Missy Meloney organizó una campaña nacional que recaudó 100.000 dólares (equivalentes a unos 1,7 millones de dólares actuales) para comprar un gramo de radio. El presidente Warren G. Harding le entregó el radio en una ceremonia en la Casa Blanca el 20 de mayo de 1921. Marie también visitó fábricas, universidades y laboratorios, y recibió doctorados honorarios de varias universidades americanas, incluidas Yale y Columbia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Marguerite Perey, asistente de laboratorio de Marie Curie desde 1929, descubrió el francio (elemento 87) en 1939 analizando productos de desintegración del actinio-227 en muestras del Instituto del Radio. Perey identificó una radiación beta con una energía de 1,2 MeV que no correspondía a ningún isótopo conocido. Determinó que provenía de un nuevo elemento alcalino con número atómico 87, al que nombró francio en honor a Francia. Perey se convirtió en la primera mujer elegida miembro de la Académie des Sciences de Francia en 1962, un honor que Marie Curie nunca obtuvo.' },
     ],
+    bannerImage: '/assets/curie/infographic_m3/banner_instituto-radio.png',
+    bannerCaption: 'El Instituto del Radio: el legado institucional de Marie Curie en París',
     fact: 'Los cuadernos de laboratorio de Marie Curie, almacenados en el Musée Curie de París, siguen siendo radiactivos más de 100 años después de ser escritos. Están contaminados principalmente con radio-226, cuya vida media es de 1.600 años, lo que significa que dentro de 1.600 años aún conservarán la mitad de su radiactividad actual. Los visitantes del museo pueden ver los cuadernos a través de una vitrina de vidrio plomado, pero no pueden tocarlos. Los investigadores que necesitan consultar las páginas deben usar guantes de plomo y dosímetros personales para controlar su exposición a la radiación durante la consulta.',
   },
   {
@@ -236,6 +246,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marie Curie nunca recibió reconocimiento oficial del gobierno francés por su servicio durante la Primera Guerra Mundial. No fue condecorada con la Legión de Honor ni con ninguna medalla militar. Cuando se le ofreció la Legión de Honor en 1910 (antes de la guerra), la rechazó diciendo que no necesitaba decoraciones. El gobierno francés tampoco reconoció formalmente la contribución de las 150 mujeres que Marie entrenó como técnicas radiológicas. Solo en 1995, cuando sus restos fueron trasladados al Panteón de París, Francia reconoció oficialmente su contribución a la defensa nacional.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los equipos de rayos X de las «petites Curies» utilizaban tubos Coolidge de tungsteno, que producían rayos X al acelerar electrones contra un ánodo metálico. La tensión eléctrica necesaria era de 100.000 voltios, generados por un transformador de alta tensión alimentado por un dinamo conectado al motor del vehículo. Cada radiografía requería una exposición de entre 30 segundos y 5 minutos, dependiendo de la parte del cuerpo. Marie y sus técnicas trabajaban sin delantales de plomo ni pantallas protectoras: los efectos acumulativos de esta exposición contribuyeron al deterioro progresivo de la salud de Marie.' },
     ],
+    bannerImage: '/assets/curie/infographic_m3/banner_petites-curies.png',
+    bannerCaption: 'Las Petites Curies: unidades móviles de rayos X que salvaron vidas en la Primera Guerra Mundial',
     fact: 'El manual de Marie Curie «La Radiologie et la Guerre», publicado por Félix Alcan en París en 1921, tiene 180 páginas e incluye 32 fotografías de radiografías tomadas en los hospitales de campaña. En él, Marie describe en detalle técnico cómo localizar fragmentos de obús en el tórax, el abdomen y las extremidades. También incluye un capítulo sobre protección radiológica — paradójico, dado que Marie nunca usó protección para sí misma. El libro fue traducido al inglés y adoptado como manual de instrucción por el Servicio de Sanidad Militar de Estados Unidos, el Royal Army Medical Corps británico y los servicios médicos militares de nueve países más.',
   },
   {
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los rovers marcianos Spirit y Opportunity (NASA, 2004) y Curiosity (2012) llevan espectrómetros de partículas alfa alimentados por curio-244, el elemento nombrado en honor a Marie Curie. Estos instrumentos, llamados APXS (Alpha Particle X-ray Spectrometer), utilizan la radiación alfa emitida por el curio para analizar la composición química de las rocas marcianas. Es una ironía poética que el legado de Marie Curie esté literalmente explorando otro planeta: cada vez que Curiosity analiza una roca en Marte, está utilizando la radioactividad que Marie dedicó su vida a comprender.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La braquiterapia (curieterapia) moderna utiliza fuentes de iridio-192, cesio-137 o cobalto-60 en lugar del radio-226 original que Marie proporcionaba. El principio sigue siendo el mismo que Marie y Pierre descubrieron: colocar una fuente radiactiva directamente junto al tumor para destruir las células cancerosas con mínimo daño al tejido sano. La diferencia es que hoy las fuentes se colocan con guía por imagen (TAC o resonancia magnética) y robots de carga diferida (afterloading), eliminando la exposición del personal médico. En 2024, más de 500.000 pacientes al año reciben braquiterapia en todo el mundo.' },
     ],
+    bannerImage: '/assets/curie/infographic_m3/banner_legado-cientifico.png',
+    bannerCaption: 'El legado científico de Marie Curie: radioactividad que transformó la medicina y la energía',
     fact: 'Cuando los restos de Marie Curie fueron exhumados en 1995 para su traslado al Panteón, un equipo de la OPRI (Oficina de Protección contra Radiaciones Ionizantes) analizó su cuerpo con espectrometría gamma. Descubrieron que la contaminación radiactiva de sus restos era significativamente menor de lo esperado: la mayor parte del radio-226 y el polonio-210 se habían desintegrado o migrado al suelo durante los 61 años de entierro. Sin embargo, el ataúd original de madera y el suelo circundante presentaban niveles elevados de contaminación. El nuevo ataúd de plomo tiene un espesor de 2,5 milímetros, suficiente para absorber la radiación residual y proteger a los visitantes del Panteón.',
   },
 ];
@@ -674,6 +688,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (

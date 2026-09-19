@@ -169,6 +169,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando Marie Curie llegó a París en 1891, la Sorbona tenía 9.000 estudiantes, de los cuales solo 210 eran mujeres, un 2,3%. Marie fue una de solo dos mujeres en la facultad de ciencias. Hoy, en Francia, las mujeres representan el 55% de los estudiantes universitarios, pero solo el 28% en carreras de ingeniería y el 30% en informática, lo que muestra que las barreras han cambiado de forma pero no han desaparecido por completo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un estudio publicado en 2012 por la revista Proceedings of the National Academy of Sciences demostró que, cuando se presentaban solicitudes de trabajo idénticas para un puesto de laboratorio con un nombre femenino o masculino, los profesores de ambos sexos calificaban al candidato masculino como más competente y le ofrecían un salario inicial un 12% más alto. Este fenómeno se conoce como sesgo implícito de género y persiste en muchas instituciones científicas actuales.' },
     ],
+    bannerImage: '/assets/curie/infographic_m4/banner_barreras-historicas.png',
+    bannerCaption: 'Las barreras históricas: universidades, academias y laboratorios cerrados para las mujeres',
     fact: 'La filósofa Hipatia de Alejandría (c. 355–415 d.C.) fue directora de la escuela neoplatónica de esa ciudad y realizó contribuciones en matemáticas, astronomía e ingeniería hidráulica. Fue asesinada por una turba en el año 415. Desde su muerte hasta que Laura Bassi obtuvo su cátedra en Bolonia en 1732, transcurrieron más de 1.300 años en los que prácticamente ninguna mujer ocupó un puesto académico oficial en Europa occidental.',
   },
   {
@@ -188,6 +190,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Irène y Frédéric estuvieron a punto de descubrir el neutrón en 1932 pero interpretaron incorrectamente sus resultados experimentales. Observaron que la radiación emitida al bombardear berilio con partículas alfa arrancaba protones de la parafina, pero concluyeron que se trataba de rayos gamma de alta energía. James Chadwick, en Cambridge, leyó su artículo, repitió el experimento y demostró que las partículas eran neutrones, ganando el Nobel de Física en 1935, el mismo año que los Joliot-Curie ganaron el de Química.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La radioactividad artificial descubierta por los Joliot-Curie es la base de la medicina nuclear moderna. Hoy se producen más de 40 millones de procedimientos de medicina nuclear al año en todo el mundo, utilizando isótopos radiactivos artificiales como el tecnecio-99m para diagnóstico por imagen, el yodo-131 para tratar el cáncer de tiroides, y el flúor-18 para tomografías PET que detectan tumores. Cada uno de estos procedimientos existe gracias a aquel experimento de 1934 con aluminio y partículas alfa.' },
     ],
+    bannerImage: '/assets/curie/infographic_m4/banner_irene-joliot-curie.png',
+    bannerCaption: 'Irene Joliot-Curie: la hija que siguió los pasos de Marie y ganó su propio Nobel',
     fact: 'Los cuadernos de laboratorio de Marie Curie, heredados por Irène, siguen siendo altamente radioactivos más de 90 años después de ser escritos. Se conservan en cajas forradas de plomo en la Biblioteca Nacional de Francia en París. Cualquier persona que desee consultarlos debe firmar una exención de responsabilidad y usar equipo de protección, incluyendo guantes y bata. Las páginas están contaminadas con radio-226, que tiene una vida media de 1.600 años, por lo que seguirán siendo peligrosas durante miles de años más.',
   },
   {
@@ -207,6 +211,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Meitner rechazó participar en el Proyecto Manhattan a pesar de ser invitada. Cuando le propusieron colaborar en la construcción de la bomba atómica, respondió: "No tendré nada que ver con una bomba". Después de Hiroshima, un periodista la llamó "la madre de la bomba atómica", un título que Meitner rechazó con indignación, señalando que ella se había opuesto al uso militar de la fisión nuclear desde el principio.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En 1997, el elemento 109 de la tabla periódica fue nombrado meitnerio (Mt) en honor a Lise Meitner, convirtiéndola en la segunda mujer, después de Marie Curie (curio, Cm), en tener un elemento químico con su nombre. El meitnerio es un elemento superpesado sintético producido por primera vez en 1982 en el laboratorio GSI de Darmstadt, Alemania, mediante la fusión de átomos de bismuto con iones de hierro acelerados a velocidades cercanas al 10% de la velocidad de la luz.' },
     ],
+    bannerImage: '/assets/curie/infographic_m4/banner_lise-meitner.png',
+    bannerCaption: 'Lise Meitner: descubrió la fisión nuclear pero le fue negado el Nobel por ser mujer y judía',
     fact: 'Lise Meitner fue nominada al Premio Nobel de Física 48 veces entre 1924 y 1965 sin recibirlo nunca. Los archivos del Comité Nobel, abiertos al público 50 años después de cada decisión, revelan que en 1944 varios evaluadores recomendaron incluir a Meitner en el premio otorgado a Hahn, pero la mayoría del comité consideró que su contribución era "meramente teórica". Esta interpretación contradice el consenso histórico actual de que la explicación teórica de Meitner fue tan importante como los datos experimentales de Hahn.',
   },
   {
@@ -226,6 +232,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Después de dejar el King College en 1953, Franklin realizó un trabajo pionero sobre la estructura del virus del mosaico del tabaco (TMV) y del virus de la polio en el Birkbeck College de Londres. Demostró que el ARN del TMV está enrollado en una hélice dentro de una cubierta proteica hueca, trabajo que fue fundamental para la virología estructural. Aaron Klug, su colaborador más cercano, continuó su investigación y recibió el Nobel de Química en 1982, dedicando parte de su discurso a reconocer las contribuciones de Franklin.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Fotografía 51 tardó 62 horas de exposición continua a los rayos X para ser capturada. Franklin utilizó una fibra de ADN de solo 0,1 milímetros de diámetro, montada en un cabello humano, y la mantuvo en una atmósfera controlada al 92% de humedad relativa para estabilizar la forma B del ADN. La imagen resultante reveló que el ADN tiene un diámetro de 20 ángströms, un paso de hélice de 34 ángströms y 10 pares de bases por vuelta, datos cuantitativos que Watson y Crick necesitaban para construir su modelo tridimensional.' },
     ],
+    bannerImage: '/assets/curie/infographic_m4/banner_rosalind-franklin.png',
+    bannerCaption: 'Rosalind Franklin: la Foto 51 que reveló la estructura del ADN sin crédito para ella',
     fact: 'En 2023, un análisis publicado en la revista Nature reveló que las libretas de laboratorio de Franklin demuestran que ella había determinado independientemente que el ADN tenía una estructura de doble hélice con las bases nitrogenadas orientadas hacia el interior antes de que Watson y Crick publicaran su modelo. Sus notas de febrero de 1953 contienen cálculos que indican dos cadenas antiparalelas con las fosfatas en el exterior, la misma conclusión que Watson y Crick presentaron dos meses después como su propia idea original.',
   },
   {
@@ -245,6 +253,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Wu fue tan rigurosa en sus experimentos que otros físicos acuñaron la expresión "si Wu lo dice, es correcto" para referirse a resultados experimentales de confiabilidad indiscutible. Cuando Enrico Fermi, uno de los físicos más importantes del siglo XX, encontraba discrepancias entre sus predicciones teóricas y los resultados experimentales de otros laboratorios, decía: "pregúntenle a la señorita Wu". Su reputación de precisión era tan sólida que sus resultados rara vez eran cuestionados.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La violación de la paridad descubierta por el experimento de Wu tiene consecuencias directas para explicar por qué existe el universo tal como lo conocemos. Si todas las simetrías fueran perfectas, la materia y la antimateria se habrían aniquilado mutuamente después del Big Bang, dejando un universo vacío. La asimetría en las interacciones débiles, demostrada por Wu, es uno de los mecanismos que permitieron que sobreviviera un ligero exceso de materia sobre antimateria, dando origen a las estrellas, los planetas y la vida.' },
     ],
+    bannerImage: '/assets/curie/infographic_m4/banner_chien-shiung-wu.png',
+    bannerCaption: 'Chien-Shiung Wu: demostró la violación de paridad, uno de los experimentos más importantes del siglo XX',
     fact: 'En 1963, Wu realizó una verificación experimental del teorema de conservación del vector corriente (CVC) en la desintegración beta, confirmando una predicción teórica de Richard Feynman y Murray Gell-Mann. Este resultado, junto con su experimento de paridad, consolidó el modelo teórico de las interacciones débiles que posteriormente se unificó con el electromagnetismo en la teoría electrodébil de Weinberg, Salam y Glashow, premiada con el Nobel de Física en 1979. Los tres laureados reconocieron explícitamente que el trabajo experimental de Wu había sido esencial para validar la teoría.',
   },
   {
@@ -264,6 +274,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Emmanuelle Charpentier y Jennifer Doudna ganaron el Nobel de Química en 2020 por desarrollar CRISPR-Cas9, una herramienta de edición genética que funciona como unas "tijeras moleculares" capaces de cortar y modificar el ADN con precisión. Desde la publicación de su trabajo en 2012, CRISPR ha sido utilizada en más de 10.000 laboratorios en todo el mundo y ha generado ensayos clínicos para tratar enfermedades genéticas como la anemia falciforme, ciertos tipos de cáncer y la distrofia muscular.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Maria Goeppert Mayer desarrolló el modelo de capas nucleares que explica por qué ciertos números de protones o neutrones (2, 8, 20, 28, 50, 82, 126), llamados "números mágicos", hacen que los núcleos atómicos sean particularmente estables. Su modelo predijo correctamente las propiedades de cientos de isótopos. A pesar de su trabajo pionero, Goeppert Mayer no recibió un puesto remunerado en una universidad estadounidense durante la mayor parte de su carrera; trabajó como "voluntaria asociada" sin salario en la Universidad de Chicago durante más de una década.' },
     ],
+    bannerImage: '/assets/curie/infographic_m4/banner_mujeres-nobel-ciencias.png',
+    bannerCaption: 'Mujeres Nobel en ciencias: de Marie Curie a las laureadas del siglo XXI',
     fact: 'Si se suman todos los años de carrera científica de las 25 mujeres Nobel en ciencias, el promedio entre el inicio de su investigación doctoral y la recepción del premio es de 32 años, comparado con un promedio de 24 años para los laureados masculinos. Este dato sugiere que las mujeres necesitan acumular significativamente más evidencia y reconocimiento antes de ser consideradas para el máximo galardón científico, un fenómeno documentado por la socióloga de la ciencia Harriet Zuckerman en su estudio de 1977 sobre la élite científica.',
   },
   {
@@ -283,6 +295,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El "efecto modelo a seguir" tiene base neurológica documentada. Un estudio de neuroimagen de 2020 publicado en Social Cognitive and Affective Neuroscience mostró que cuando niñas de 10 a 14 años leían biografías de mujeres científicas reales, se activaban las áreas cerebrales asociadas con la autoimagen futura y la motivación intrínseca (corteza prefrontal medial y estriado ventral) en mayor medida que cuando leían las mismas biografías con nombres masculinos. El efecto era más pronunciado en niñas que previamente declaraban poco interés en ciencias.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un meta-análisis de 2021 publicado en Psychological Bulletin, que reunió datos de 1,6 millones de estudiantes en 70 países, encontró que la brecha de género en rendimiento matemático y científico varía entre el 0% y el 5% según el país, pero la brecha en confianza y autoeficacia en ciencias alcanza el 15-20% en detrimento de las niñas incluso en países donde el rendimiento es igual. Esto indica que el problema no es de capacidad sino de percepción, y que la visibilidad de modelos femeninos en ciencia tiene un efecto directo en reducir esa brecha de confianza.' },
     ],
+    bannerImage: '/assets/curie/infographic_m4/banner_efecto-marie-curie.png',
+    bannerCaption: 'El efecto Marie Curie: su inspiración llega a generaciones de científicas en todo el mundo',
     fact: 'Marie Curie sigue siendo, más de 90 años después de su muerte en 1934, la científica más reconocida del mundo según encuestas internacionales. Un sondeo de 2019 realizado por la empresa 3M en 14 países encontró que el 85% de los encuestados podían nombrar a Marie Curie como científica, frente al 62% que podía nombrar a Albert Einstein y el 50% que reconocía a Stephen Hawking. En Francia, su imagen figuró en los billetes de 500 francos entre 1994 y 2002, y en 1995 se convirtió en la primera mujer enterrada por sus propios méritos en el Panteón de París.',
   },
 ];
@@ -702,6 +716,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* ——— Conditional Video Player ——— */}
         {node.video && (

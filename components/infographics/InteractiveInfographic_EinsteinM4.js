@@ -153,6 +153,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Lord Kelvin (William Thomson), quien predijo que la física estaba casi completa en 1900, también calculó que la Tierra tenía entre 20 y 400 millones de años, un error porque desconocía la radiactividad como fuente de calor interno. La edad real de la Tierra es de 4,540 millones de años. Las dos "pequeñas nubes" que mencionó resultaron ser las semillas de las dos mayores revoluciones científicas del siglo XX: la mecánica cuántica y la teoría de la relatividad de Einstein.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La constante de Planck h = 6.62607015 × 10⁻³⁴ J·s es tan fundamental que desde mayo de 2019 se usa para definir el kilogramo. El Sistema Internacional de Unidades (SI) redefinió el kilogramo en términos de h, la velocidad de la luz y la frecuencia del cesio-133. Antes, el kilogramo se definía por un cilindro de platino-iridio guardado en París desde 1889, que perdía masa lentamente por contaminación superficial, lo cual hacía que la unidad cambiara con el tiempo.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m4/banner_crisis-fisica-clasica.png',
+    bannerCaption: 'La crisis de la física clásica: Newton y Maxwell no podían explicar la radiación del cuerpo negro',
     fact: 'Max Planck sufrió tragedias personales durante su vida: su primer hijo Karl murió en la Primera Guerra Mundial en 1916, su hijo Erwin fue ejecutado por los nazis en 1945 por participar en el complot para asesinar a Hitler, y su casa en Berlín fue destruida por bombardeos aliados en 1944, junto con todos sus documentos científicos originales. A pesar de todo, Planck nunca abandonó Alemania y recibió el Premio Nobel de Física en 1918 por su descubrimiento de los cuantos de energía.',
   },
   {
@@ -172,6 +174,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein tenía solo 26 años en 1905, y era un empleado de nivel III en la Oficina de Patentes de Berna, Suiza. Ese año, conocido como su "Annus Mirabilis" (año milagroso), publicó cuatro artículos que cambiaron la física: el efecto fotoeléctrico, el movimiento browniano, la relatividad especial y la equivalencia masa-energía (E=mc²). Ningún científico, ni antes ni después, ha producido una cantidad semejante de descubrimientos fundamentales en un solo año.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Robert Millikan dedicó diez años (1905-1915) a intentar refutar la ecuación del efecto fotoeléctrico de Einstein. Realizó cientos de experimentos con distintos metales y frecuencias de luz, pero cada resultado confirmaba la predicción de Einstein con precisión. Millikan escribió en su artículo de 1916 que la ecuación de Einstein era "exacta" pero que la teoría del fotón era "insostenible". Irónicamente, Millikan recibió el Nobel en 1923 en parte por confirmar la misma teoría que intentaba destruir.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m4/banner_fotones-luz-particulas.png',
+    bannerCaption: 'Fotones: Einstein descubrió que la luz viaja en paquetes discretos de energía',
     fact: 'El nombre "fotón" no fue inventado por Einstein. Lo propuso el químico estadounidense Gilbert N. Lewis en una carta a la revista Nature publicada el 18 de diciembre de 1926. Lewis usó la palabra para describir algo diferente a lo que hoy entendemos por fotón: él imaginaba los fotones como entidades que se conservaban en número, lo cual es incorrecto. Sin embargo, el término era tan elegante y útil que la comunidad científica lo adoptó de inmediato con el significado de Einstein — un cuanto de radiación electromagnética — y se convirtió en una de las palabras más usadas en toda la física.',
   },
   {
@@ -191,6 +195,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Philipp Lenard, quien realizó los primeros estudios detallados del efecto fotoeléctrico, recibió el Premio Nobel de Física en 1905. Sin embargo, se convirtió en un ferviente nazi y antisemita en la década de 1920. Lenard atacó públicamente a Einstein y promovió la "física aria" (Deutsche Physik), intentando eliminar las contribuciones de científicos judíos de la ciencia alemana. Su amargura personal se debía en parte a que Einstein había explicado teóricamente el fenómeno que Lenard había descubierto experimentalmente.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La función de trabajo φ varía entre metales. Para el cesio es 2.1 electronvoltios (eV), para el zinc es 4.3 eV, y para el platino es 5.6 eV. Esto significa que la luz visible (con fotones de 1.7 a 3.1 eV) puede arrancar electrones del cesio pero no del platino, que requiere luz ultravioleta. Los detectores de humo fotoeléctricos aprovechan este principio: un haz de luz incide sobre un sensor fotoeléctrico, y cuando el humo dispersa la luz y cambia la señal, se activa la alarma.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m4/banner_efecto-fotoelectrico.png',
+    bannerCaption: 'Efecto fotoeléctrico: el descubrimiento que le dio a Einstein el Nobel y creó las celdas solares',
     fact: 'Heinrich Hertz, quien descubrió el efecto fotoeléctrico en 1887, murió en 1894 a los 36 años de granulomatosis con poliangitis. Nunca supo que su descubrimiento accidental conduciría a una revolución en la física. Cuando le preguntaron sobre las aplicaciones prácticas de las ondas electromagnéticas que él demostró, Hertz respondió: "No tiene ninguna utilidad práctica". Hoy, las ondas de radio, la televisión, el WiFi, los teléfonos celulares y Bluetooth funcionan con ondas electromagnéticas — exactamente las que Hertz consideró inútiles.',
   },
   {
@@ -210,6 +216,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Louis de Broglie era un príncipe francés (7.° Duque de Broglie). Originalmente estudió historia medieval antes de cambiar a la física, inspirado por las discusiones con su hermano mayor Maurice, que trabajaba en física experimental de rayos X. Su tesis doctoral de 1924 tenía solo unas 70 páginas, breves para los estándares académicos, pero cada página contenía ideas que transformaron la física. Einstein comentó que "una idea tan bella merece ser verdadera".' },
       { label: 'Dato Científico', icon: 'atom', text: 'La longitud de onda de de Broglie de un electrón moviéndose a 6 millones de metros por segundo es aproximadamente 0.12 nanómetros, comparable al tamaño de un átomo. Esta es la base del microscopio electrónico de transmisión (TEM), inventado en 1931 por Ernst Ruska. Al usar electrones en vez de luz visible, el TEM puede "ver" objetos miles de veces más pequeños que un microscopio óptico. Los microscopios electrónicos modernos alcanzan resoluciones de 0.05 nanómetros, permitiendo fotografiar átomos individuales.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m4/banner_dualidad-onda-particula.png',
+    bannerCaption: 'Dualidad onda-partícula: la luz y los electrones son ondas y partículas a la vez',
     fact: 'J.J. Thomson descubrió el electrón como partícula en 1897 y recibió el Premio Nobel de Física en 1906. Su hijo George Paget Thomson demostró que el electrón se comporta como onda en 1927 y recibió el Premio Nobel de Física en 1937. Son la única pareja padre-hijo en ganar el Nobel de Física por descubrimientos sobre la misma entidad (el electrón) pero con conclusiones aparentemente opuestas. Ambos tenían razón: el electrón es simultáneamente partícula y onda, dependiendo de cómo se observe.',
   },
   {
@@ -229,6 +237,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Niels Bohr respondió a la frase de Einstein sobre los dados con una réplica igual de memorable: "Einstein, deja de decirle a Dios lo que debe hacer." A pesar de sus profundos desacuerdos científicos, Einstein y Bohr mantenían un enorme respeto mutuo. Einstein escribió que Bohr era "una de las mentes científicas más grandes de nuestro tiempo" y Bohr dijo que las objeciones de Einstein habían sido "un estímulo para la clarificación de los fundamentos de la mecánica cuántica".' },
       { label: 'Dato Científico', icon: 'atom', text: 'El principio de incertidumbre de Werner Heisenberg, formulado en 1927, establece que es físicamente imposible conocer simultáneamente con precisión exacta la posición y el momento de una partícula. La relación matemática es Δx · Δp ≥ ħ/2, donde ħ = h/(2π). Esto no se debe a limitaciones instrumentales: es una propiedad intrínseca de la naturaleza. En la práctica, si determines la posición de un electrón con una precisión de 0.01 nanómetros, su velocidad queda indeterminada en al menos 7.3 millones de metros por segundo.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m4/banner_einstein-vs-bohr.png',
+    bannerCaption: 'Einstein vs Bohr: el debate más épico de la física sobre si Dios juega a los dados',
     fact: 'Cuando Niels Bohr murió el 18 de noviembre de 1962, los físicos que entraron a su despacho encontraron la pizarra con un dibujo del experimento mental de la "caja de fotones" de Einstein, el mismo argumento que Einstein había presentado en el Congreso Solvay de 1930. Más de treinta años después, Bohr seguía reflexionando sobre las objeciones de su rival. Este detalle revela la profundidad del debate: no era una simple discusión académica, sino una confrontación sobre la naturaleza misma de la realidad física.',
   },
   {
@@ -248,6 +258,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'John Bell era un físico de origen humilde de Belfast, Irlanda del Norte. Trabajaba en el CERN como diseñador de aceleradores de partículas y desarrolló su teorema sobre el entrelazamiento durante un año sabático en 1964. Bell creía personalmente que Einstein podría tener razón y esperaba que los experimentos confirmaran las variables ocultas. Cuando los experimentos demostraron lo contrario, Bell aceptó los resultados con elegancia y dedicó el resto de su carrera a comprender las implicaciones filosóficas. Murió en 1990 a los 62 años, sin recibir el Nobel que muchos consideran merecido.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La teletransportación cuántica no transmite materia ni energía más rápido que la luz. Lo que se transfiere es información cuántica — el estado de una partícula — usando un par entrelazado y un canal de comunicación clásico (que viaja a la velocidad de la luz o menor). El estado original se destruye en el proceso, cumpliendo con el teorema de no-clonación cuántica. El satélite Micius, lanzado por China en 2016, logró teletransportar estados cuánticos entre Pekín y Viena (7,600 km) en 2018, estableciendo un récord de distancia para comunicación cuántica segura.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m4/banner_entrelazamiento-cuantico.png',
+    bannerCaption: 'Entrelazamiento cuántico: la acción fantasmal a distancia que Einstein nunca aceptó',
     fact: 'Anton Zeilinger, co-ganador del Nobel 2022, realizó un experimento en 2012 usando luz de cuásares distantes (quásares) para determinar aleatoriamente las configuraciones de sus detectores. La luz de estos cuásares fue emitida hace 600 años, antes de que naciera cualquier humano involucrado en el experimento. Esto cerró la "laguna de libertad de elección" — la posibilidad de que algún factor oculto hubiera predeterminado tanto los ajustes de los detectores como los resultados. El universo mismo sirvió como generador de números aleatorios.',
   },
   {
@@ -267,6 +279,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La primera célula solar fue inventada en 1883 por Charles Fritts, quien recubrió selenio con una fina capa de oro. Tenía una eficiencia de solo el 1%. Albert Einstein proporcionó la explicación teórica del efecto fotoeléctrico en 1905. En 1954, Gerald Pearson, Calvin Fuller y Daryl Chapin de los Laboratorios Bell crearon la primera célula solar de silicio con un 6% de eficiencia. Hoy, células solares experimentales de múltiples uniones (perovskita sobre silicio) han superado el 33% de eficiencia, y la energía solar ya es más barata que el carbón en la mayoría de los países.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un qubit (bit cuántico) puede existir en una superposición de estados 0 y 1 simultáneamente, a diferencia de un bit clásico que solo puede ser 0 o 1. Con n qubits, un computador cuántico puede procesar 2ⁿ estados a la vez. Un procesador de 300 qubits podría, en principio, representar más estados simultáneos que el número de átomos en el universo observable (estimado en 10⁸⁰). Sin embargo, los qubits son extremadamente frágiles: los procesadores de Google e IBM operan a temperaturas de 15 milikelvin (-273.135 °C), más frío que el espacio exterior.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m4/banner_tecnologia-cuantica-hoy.png',
+    bannerCaption: 'Tecnología cuántica hoy: computación cuántica, MRI, láseres y chips nacidos de Einstein',
     fact: 'En 2022, la energía solar representó el 4.5% de la generación eléctrica mundial, pero es la fuente de energía de más rápido crecimiento en la historia. La Agencia Internacional de Energía (AIE) proyecta que para 2030, la capacidad solar instalada podría triplicarse. Todo esto se debe al efecto fotoeléctrico explicado por Einstein en 1905. Un solo descubrimiento teórico de un empleado de oficina de patentes de 26 años generó una industria global que en 2023 superó los 380 mil millones de dólares anuales y emplea a más de 4.3 millones de personas en todo el mundo.',
   },
 ];
@@ -685,6 +699,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (

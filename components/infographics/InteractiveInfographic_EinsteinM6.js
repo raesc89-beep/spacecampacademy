@@ -149,6 +149,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La constante cosmológica tiene un valor medido de aproximadamente 1.1056 × 10⁻⁵² m⁻², un número tan pequeño que resulta casi nulo a escalas humanas o incluso del sistema solar. Sin embargo, a distancias de miles de millones de años luz, su efecto acumulativo domina sobre la gravedad y empuja al cosmos a expandirse cada vez más rápido. Si fuera apenas diez veces mayor, las estrellas y galaxias nunca se habrían formado.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El problema de la constante cosmológica es considerado uno de los mayores enigmas de la física moderna. La mecánica cuántica predice que el vacío debería tener una densidad de energía 10¹²⁰ veces mayor que el valor observado de la constante cosmológica. Esta discrepancia de 120 órdenes de magnitud es la predicción más errónea en la historia de la física teórica, y aún no tiene explicación satisfactoria. Steven Weinberg propuso en 1987 un argumento antrópico para explicarla.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m6/banner_constante-cosmologica.png',
+    bannerCaption: 'La constante cosmológica: el mayor error de Einstein que resultó ser correcto sobre la energía oscura',
     fact: 'Einstein escribió en una carta de 1947 al físico Georges Lemaître que la introducción de la constante cosmológica había sido su "mayor equivocación". Sin embargo, el propio Lemaître respondió que la constante cosmológica era necesaria y que Einstein no debería avergonzarse de haberla propuesto. En 2019, el Telescopio Espacial Hubble midió la tasa de expansión del universo en 74.03 ± 1.42 km/s/Mpc, confirmando que la energía oscura asociada a Λ es real y domina la dinámica cósmica actual.',
   },
   {
@@ -681,6 +683,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (

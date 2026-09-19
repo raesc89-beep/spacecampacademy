@@ -156,6 +156,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los cuadernos de laboratorio de Marie Curie, conservados en la Biblioteca Nacional de Francia en París, siguen siendo radiactivos más de 90 años después de su muerte. Cualquier investigador que desee consultarlos debe firmar un formulario de exención de responsabilidad y usar guantes y ropa protectora especial. Los niveles de contaminación medidos en las páginas provienen principalmente de radio-226, un isótopo con una vida media de 1,600 años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La radiación ionizante daña el ADN de las células del cuerpo humano. Cuando las células de la médula ósea acumulan suficiente daño, pierden la capacidad de producir células sanguíneas normales. Este mecanismo, descubierto décadas después de la muerte de Marie, explica por qué desarrolló anemia aplásica. La dosis de radiación acumulada por Marie durante sus décadas de trabajo se estima en varios sieverts, muy por encima del límite anual de 20 milisieverts establecido hoy para trabajadores de la industria nuclear.' }
     ],
+    bannerImage: '/assets/curie/infographic_m6/banner_ultimos-anios.png',
+    bannerCaption: 'Los últimos años: Marie siguió investigando aunque la radiación dañó irreversiblemente su salud',
     fact: 'Marie Curie solía llevar frascos con isótopos radiactivos en los bolsillos de su bata y guardaba tubos de ensayo con sales de radio en el cajón de su escritorio. Describió en su diario personal cómo las sustancias radiactivas producían un resplandor azul verdoso en la oscuridad que ella encontraba "hermoso". Este fenómeno, conocido como luminiscencia por radiación, se debe a que las partículas alfa y beta emitidas por el radio excitan las moléculas del aire circundante, haciéndolas emitir fotones visibles.'
   },
   {
@@ -175,6 +177,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Ève Curie, la hija menor de Marie, fue la única miembro de la familia que no se dedicó a la ciencia. Se convirtió en periodista, pianista y escritora, y publicó en 1937 "Madame Curie", una biografía de su madre que se tradujo a 25 idiomas y se convirtió en un referente mundial. Ève también trabajó como corresponsal de guerra durante la Segunda Guerra Mundial y fue embajadora ante la OTAN. Se casó con Henry Labouisse, director ejecutivo de UNICEF, quien recibió el Nobel de la Paz en 1965, sumando así otro Nobel más a la historia familiar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La anemia aplásica inducida por radiación ocurre cuando las células madre hematopoyéticas de la médula ósea sufren daño irreparable en su ADN. Estas células madre son particularmente vulnerables a la radiación porque se dividen con frecuencia. Cuando mueren o dejan de funcionar, el cuerpo pierde progresivamente la capacidad de renovar su sangre. Los síntomas incluyen fatiga severa, susceptibilidad a infecciones y hemorragias, todos documentados en los registros médicos de Marie Curie durante sus últimos años de vida.' }
     ],
+    bannerImage: '/assets/curie/infographic_m6/banner_muerte-legado.png',
+    bannerCaption: 'Muerte y legado: sus cuadernos de laboratorio siguen siendo radioactivos 90 años después',
     fact: 'El radio-226 que contaminaba el cuerpo y los objetos personales de Marie Curie tiene una vida media de 1,600 años, lo que significa que la mitad de los átomos radiactivos presentes en 1934 todavía estarán emitiendo radiación en el año 3534. Sus pertenencias personales — incluyendo su libro de cocina, sus muebles y su ropa — están almacenadas en la Biblioteca Nacional de Francia dentro de contenedores sellados forrados de plomo, y no estarán seguras para manipulación sin protección durante varios milenios.'
   },
   {
@@ -194,6 +198,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Panteón de París fue construido originalmente entre 1758 y 1790 como la Iglesia de Sainte-Geneviève, diseñada por el arquitecto Jacques-Germain Soufflot por encargo del rey Luis XV. Durante la Revolución Francesa fue transformado en un mausoleo civil para los "Grandes Hombres" de la nación. Su fachada neoclásica tiene 22 columnas corintias y la inscripción "AUX GRANDS HOMMES LA PATRIE RECONNAISSANTE" (A los grandes hombres, la patria agradecida). La ironía de esta inscripción masculina no pasó desapercibida cuando Marie Curie fue la primera mujer en ser honrada allí por méritos propios.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El péndulo de Foucault que cuelga dentro del Panteón fue instalado originalmente por el físico Léon Foucault en 1851 para demostrar visualmente la rotación de la Tierra. El péndulo, una esfera de latón de 28 kilogramos suspendida de un cable de 67 metros, oscila en un plano fijo mientras el edificio rota debajo de él. En la latitud de París (48.8°N), el plano de oscilación completa un giro aparente de 360 grados cada 31 horas y 50 minutos. Marie Curie habría apreciado esta demostración de física fundamental en el mismo edificio donde ahora reposa.' }
     ],
+    bannerImage: '/assets/curie/infographic_m6/banner_el-pantheon.png',
+    bannerCaption: 'El Panteón: primera mujer en ser enterrada en el Panteón de París por sus propios méritos',
     fact: 'Cuando el presidente Mitterrand anunció el traslado de Marie Curie al Panteón en 1995, la nieta de Marie, Hélène Langevin-Joliot — física nuclear y directora de investigación en el CNRS — participó en la ceremonia como representante de la familia. Hélène, hija de Irène y Frédéric Joliot-Curie, continuó la tradición científica familiar investigando la estructura del núcleo atómico. En su discurso, recordó que su abuela Marie siempre insistió en que "en la ciencia, debemos interesarnos en las cosas, no en las personas", una frase que la propia Marie escribió en una carta fechada en 1903.'
   },
   {
@@ -213,6 +219,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La educación de Irène fue poco convencional. Marie Curie, junto con otros científicos destacados como Paul Langevin y Jean Perrin, creó una "cooperativa escolar" informal donde cada padre enseñaba su especialidad a los hijos del grupo. Marie enseñaba física, Langevin daba matemáticas, y Perrin explicaba química. Esta educación alternativa se realizó entre 1907 y 1909, y varios de los niños del grupo se convirtieron después en científicos profesionales. Marie consideraba que la educación convencional era demasiado rígida y no fomentaba la curiosidad natural.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La radioactividad artificial descubierta por Irène y Frédéric Joliot-Curie en 1934 permite crear isótopos radiactivos que no existen en la naturaleza. Hoy, estos isótopos se usan en más de 40 millones de procedimientos médicos anuales en todo el mundo. El tecnecio-99m, producido artificialmente, se emplea en el 80% de los estudios de medicina nuclear. El yodo-131 trata enfermedades tiroideas. El flúor-18 se usa en tomografías PET para detectar tumores. Todo esto tiene su origen directo en el trabajo de la segunda generación de la familia Curie.' }
     ],
+    bannerImage: '/assets/curie/infographic_m6/banner_familia-curie.png',
+    bannerCaption: 'La familia Curie: cuatro Premios Nobel en dos generaciones de una familia de científicos',
     fact: 'La familia Curie acumula un total de cinco Premios Nobel: Marie recibió dos (Física 1903, Química 1911), Irène y Frédéric compartieron uno (Química 1935) y Henry Labouisse recibió el de la Paz (1965) como director de UNICEF. Ninguna otra familia en la historia ha igualado esta cifra. Además, si contamos a Pierre Curie (quien compartió el Nobel con Marie en 1903) como miembro familiar, son cuatro personas biológicamente conectadas con premios Nobel en ciencias exactas, una concentración de talento científico sin paralelo documentado en la historia de la humanidad.'
   },
   {
@@ -232,6 +240,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Google le dedicó a Marie Curie un Doodle interactivo el 7 de noviembre de 2011 — el 144° aniversario de su nacimiento — que fue visto por más de mil millones de personas en todo el mundo. El Doodle mostraba a Marie en su laboratorio rodeada de instrumentos científicos brillantes. Además, el cráter Curie en la Luna (diámetro de 151 km) y el cráter Curie en Marte (diámetro de 98 km) llevan su nombre, al igual que el asteroide 7000 Curie, descubierto en 1939 por el astrónomo Fernand Rigaux en el Real Observatorio de Bélgica.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El elemento 96 de la tabla periódica, el Curio (Cm), fue nombrado en honor de Marie y Pierre Curie en 1944 por Glenn Seaborg, Ralph James y Albert Ghiorso en el Laboratorio Metalúrgico de la Universidad de Chicago. El Curio es un actínido sintético altamente radiactivo con un número atómico de 96 y una masa atómica de 247. Su isótopo más estable, el curio-247, tiene una vida media de 15.6 millones de años. Se utiliza como fuente de partículas alfa en generadores termoeléctricos de radioisótopos para misiones espaciales, incluyendo los rovers Curiosity y Perseverance de la NASA en Marte.' }
     ],
+    bannerImage: '/assets/curie/infographic_m6/banner_curie-cultura.png',
+    bannerCaption: 'Curie en la cultura: de los billetes de banco a los museos, un icono cultural global',
     fact: 'La unidad de medida de la radioactividad "curie" (Ci) fue definida en 1910 por el Congreso Internacional de Radiología y Electricidad como la cantidad de radiación emitida por un gramo de radio-226 puro. Esta unidad equivale a exactamente 3.7 × 10^10 desintegraciones por segundo (37 gigabecquereles). Aunque el sistema internacional adoptó el becquerel (Bq) como unidad oficial en 1975, el curie sigue siendo ampliamente utilizado en medicina nuclear y en la industria en Estados Unidos. El nombre honra tanto a Marie como a Pierre Curie por su trabajo conjunto en el estudio de la radioactividad.'
   },
   {
@@ -251,6 +261,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Instituto Curie conserva una tradición iniciada por la propia Marie: cada año, el 7 de noviembre — aniversario del nacimiento de Marie Curie — se celebra una ceremonia interna donde investigadores jóvenes presentan sus descubrimientos más recientes ante toda la comunidad del instituto. Esta tradición, llamada "Journée Marie Curie", conecta simbólicamente a las nuevas generaciones de científicos con la fundadora. Además, el edificio original donde Marie tenía su laboratorio personal ahora funciona como el Museo Curie, abierto al público gratuitamente.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La protonterapia utiliza haces de protones acelerados a velocidades de hasta 180,000 km/s (60% de la velocidad de la luz) para destruir células tumorales. A diferencia de los rayos X convencionales que depositan energía a lo largo de todo su recorrido, los protones depositan la mayor parte de su energía en un punto preciso llamado "pico de Bragg", descubierto por William Henry Bragg en 1903. Esto permite irradiar el tumor con dosis altas mientras se protege el tejido sano circundante, reduciendo los efectos secundarios hasta en un 60% comparado con la radioterapia convencional.' }
     ],
+    bannerImage: '/assets/curie/infographic_m6/banner_instituto-curie.png',
+    bannerCaption: 'El Instituto Curie hoy: centro líder mundial en investigación y tratamiento del cáncer',
     fact: 'El Instituto Curie ha contribuido directamente a tres Premios Nobel además de los de Marie: Pierre-Gilles de Gennes recibió el Nobel de Física en 1991 por su trabajo sobre cristales líquidos y polímeros realizado parcialmente en los laboratorios del instituto. En total, investigadores asociados al Instituto Curie han publicado más de 25,000 artículos científicos desde su fundación en 1914, y las técnicas de radioterapia desarrolladas a partir de los principios descubiertos por Marie han contribuido al tratamiento exitoso de más de 15 millones de pacientes de cáncer en todo el mundo durante el último siglo.'
   },
   {
@@ -270,6 +282,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marie Curie nunca patentó sus descubrimientos. Cuando ella y Pierre desarrollaron el proceso para aislar el radio de la pechblenda, decidieron conscientemente publicar todos los detalles del método sin solicitar patentes. Pierre argumentó que "sería contrario al espíritu científico" restringir el acceso al conocimiento. Esta decisión les costó una fortuna: el radio se convirtió en un material con un valor de mercado de 100,000 dólares por gramo en la década de 1920, y los laboratorios de todo el mundo usaron el método Curie para producirlo comercialmente sin pagar regalías a la familia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El programa "Marie Skłodowska-Curie Actions" (MSCA) de la Unión Europea es el mayor programa de movilidad científica del mundo. Entre 2014 y 2020, bajo el programa Horizonte 2020, financió a 65,000 investigadores con un presupuesto de 6,162 millones de euros. El programa actual, Horizonte Europa (2021-2027), tiene un presupuesto de 6,600 millones de euros. Los investigadores financiados por MSCA han producido más de 200,000 publicaciones científicas y registrado más de 2,000 patentes. El programa lleva el nombre completo de Marie, incluyendo su apellido polaco Skłodowska, como reconocimiento a sus raíces.' }
     ],
+    bannerImage: '/assets/curie/infographic_m6/banner_inspiracion-eterna.png',
+    bannerCaption: 'Inspiración eterna: Marie Curie motiva a generaciones de niñas a convertirse en científicas',
     fact: 'Marie Curie es la única persona en la historia que ha recibido Premios Nobel en dos disciplinas científicas diferentes: Física (1903) y Química (1911). Solo otra persona ha recibido dos Premios Nobel en ciencias: Linus Pauling, quien ganó el de Química (1954) y el de la Paz (1962), pero uno de ellos no fue en ciencias. Frederick Sanger ganó dos Nobel de Química (1958 y 1980), pero ambos fueron en la misma disciplina. El logro de Marie — dominar y revolucionar dos campos científicos distintos — permanece sin paralelo 113 años después de su segundo Nobel.'
   },
 ];
@@ -688,6 +702,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* ─── Conditional Video Render ─── */}
         {node.video && (

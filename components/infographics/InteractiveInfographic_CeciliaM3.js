@@ -150,6 +150,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Gran Refractor de Harvard, instalado en 1847, tenía un objetivo de 38 centímetros de diámetro y pesaba más de 900 kilogramos con su montura. William Bond y su hijo George lo utilizaron en 1850 para obtener la primera fotografía exitosa de una estrella, Vega, usando un proceso de daguerrotipo con una exposición de 100 segundos. Este logro demostró que la fotografía astronómica era viable y abrió el camino para todo el trabajo posterior con placas de vidrio en Harvard.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las 500,000 placas de vidrio almacenadas en Harvard representan un registro continuo del cielo que abarca desde 1885 hasta 1992. Cada placa pesa entre 100 y 300 gramos. Apiladas, las placas formarían una torre de más de 2.5 kilómetros de altura. La colección completa ocupa más de 600 metros lineales de estanterías en el edificio de placas del Centro de Astrofísica Harvard-Smithsonian, y su contenido está siendo digitalizado por el programa DASCH (Digital Access to a Sky Century at Harvard).' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m3/banner_observatorio-harvard.png',
+    bannerCaption: 'El Observatorio Harvard a finales del siglo XIX: centro mundial de la astronomía',
     fact: 'Edward Pickering estableció la estación de Arequipa, Perú, a 2,300 metros sobre el nivel del mar, específicamente para fotografiar el cielo del hemisferio sur, que no era visible desde Cambridge. Su hermano, William Henry Pickering, dirigió la estación durante varios años. Desde Arequipa se descubrieron las Nubes de Magallanes en detalle fotográfico por primera vez, y fue allí donde Henrietta Swan Leavitt estudió las estrellas variables Cefeidas que transformarían la astronomía.',
   },
   {
@@ -169,6 +171,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El apodo despectivo "el harén de Pickering" apareció por primera vez en publicaciones astronómicas de la década de 1890. Las propias mujeres lo detestaban. En cartas personales, Williamina Fleming escribió en 1900 que se sentía "humillada" por el término y señaló que ningún hombre que realizara el mismo trabajo recibiría un apodo semejante. El término persistió en la literatura astronómica hasta mediados del siglo XX, cuando historiadoras de la ciencia comenzaron a reivindicar su legado con el nombre de "Las Computadoras de Harvard".' },
       { label: 'Dato Científico', icon: 'atom', text: 'El salario de 25 centavos por hora que recibían las computadoras de Harvard en 1890 equivalía a aproximadamente 7.50 dólares actuales ajustados por inflación. Un profesor asistente de Harvard ganaba el equivalente a 35,000 dólares anuales, mientras que una computadora recibía entre 1,000 y 1,500 dólares al año, menos de la mitad. A pesar de esta disparidad, el costo total del programa de computadoras le permitió a Harvard clasificar más estrellas que todos los demás observatorios del mundo combinados durante tres décadas.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m3/banner_computadoras-humanas.png',
+    bannerCaption: 'Las Computadoras de Harvard: mujeres que catalogaron 500,000 estrellas a mano',
     fact: 'Entre 1881 y 1919, las computadoras de Harvard clasificaron y catalogaron más de 225,000 estrellas en el Henry Draper Catalogue, identificaron más de 10,000 estrellas variables, descubrieron 59 nebulosas gaseosas, establecieron el sistema moderno de clasificación estelar OBAFGKM que se usa hasta hoy, y sentaron las bases de la relación período-luminosidad que permitió medir distancias cósmicas. Todo esto lo lograron sin poder usar los telescopios, sin títulos doctorales, y ganando la mitad que sus colegas masculinos.',
   },
   {
@@ -188,6 +192,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Nebulosa Cabeza de Caballo descubierta por Fleming se encuentra a unos 1,375 años luz de la Tierra, en el cinturón de Orión. Mide aproximadamente 3.5 años luz de ancho, lo que equivale a unas 33 billones de kilómetros. Es una nebulosa oscura compuesta principalmente de hidrógeno molecular denso y polvo cósmico que bloquea la luz de la nebulosa brillante que tiene detrás. En 2023, el telescopio James Webb la fotografió en infrarrojo, revelando detalles de su estructura interna nunca antes vistos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El sistema de clasificación espectral de Fleming usaba las letras A a Q según la intensidad de las líneas de hidrógeno en el espectro de cada estrella. Las estrellas tipo A mostraban las líneas de hidrógeno más fuertes, mientras que las tipo Q eran las más débiles. Este sistema fue refinado primero por Antonia Maury, quien añadió subdivisiones basadas en el ancho de las líneas, y luego por Annie Jump Cannon, quien lo reorganizó en la secuencia OBAFGKM basada en temperatura. El trabajo de Fleming fue la piedra angular sobre la que se construyó todo el edificio de la clasificación estelar moderna.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m3/banner_williamina-fleming.png',
+    bannerCaption: 'Williamina Fleming: de empleada doméstica a descubridora de la Nebulosa Cabeza de Caballo',
     fact: 'En su diario personal, fechado el 12 de marzo de 1900, Williamina Fleming escribió: "Si pudiera recibir un sueldo acorde a lo que un hombre ganaría por el mismo trabajo, me sentiría satisfecha. Pero es desalentador que mi esfuerzo, que requiere las mismas horas y la misma dedicación, sea valorado en la mitad." Este documento, preservado en los archivos de Harvard, es uno de los registros más tempranos y directos de la brecha salarial de género en una institución científica estadounidense.',
   },
   {
@@ -207,6 +213,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Annie Jump Cannon clasificó estrellas con tanta rapidez que sus colegas la apodaron "el censo del cielo". Su registro de 350,000 estrellas clasificadas a mano no ha sido superado por ningún individuo en la historia. Para poner este número en perspectiva: si clasificaras una estrella cada 20 segundos sin descanso, necesitarías más de 81 días continuos, sin dormir ni comer, para igualar su trabajo. Y cada clasificación requería el análisis visual detallado de las líneas espectrales en una diminuta imagen sobre vidrio.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La secuencia OBAFGKM de Cannon ordena las estrellas por temperatura superficial decreciente. Las estrellas O alcanzan temperaturas de 50,000 K o más y emiten principalmente luz ultravioleta. Las B llegan a 30,000 K, las A a 10,000 K, las F a 7,500 K, las G (como nuestro Sol) a 6,000 K, las K a 4,500 K, y las M a 3,000 K. Cannon también introdujo subdivisiones numéricas del 0 al 9 dentro de cada tipo: el Sol es G2, lo que significa que está en el segundo subtipo de las estrellas G, ligeramente más caliente que un G5 pero más frío que un G0.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m3/banner_annie-jump-cannon.png',
+    bannerCaption: 'Annie Jump Cannon: clasificó más de 500,000 estrellas y creó el sistema OBAFGKM',
     fact: 'La sordera casi total de Annie Jump Cannon, lejos de ser una limitación, pudo haber contribuido a su concentración durante el trabajo de clasificación espectral. Ella misma señaló que su condición la aislaba de las distracciones del entorno, permitiéndole enfocarse durante horas en el examen detallado de las placas fotográficas. Trabajó en Harvard desde 1896 hasta su muerte en 1941, un total de 45 años, y su sistema de clasificación sigue siendo la base de la astrofísica estelar después de más de un siglo.',
   },
   {
@@ -226,6 +234,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las estrellas Cefeidas reciben su nombre de Delta Cephei, una estrella en la constelación de Cefeo que fue identificada como variable por John Goodricke en 1784. Delta Cephei varía su brillo entre magnitud 3.5 y 4.4 en un período de 5 días, 8 horas y 48 minutos. Goodricke, quien era sordo desde la infancia, descubrió la variabilidad de varias estrellas antes de morir a los 21 años. Es una coincidencia notable que el trabajo sobre Cefeidas que transformó la astronomía fuera iniciado por un científico sordo y completado por una científica que también había perdido la audición.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ley período-luminosidad de Leavitt establece que el logaritmo del período de una Cefeida es proporcional a su magnitud absoluta. En términos prácticos, una Cefeida con un período de 3 días tiene una luminosidad de unas 800 veces la del Sol, mientras que una con un período de 30 días brilla unas 10,000 veces más que el Sol. Esta relación funciona porque las Cefeidas pulsan por inestabilidad en su capa de helio ionizado: cuanto más masiva y luminosa es la estrella, más lento es el mecanismo de pulsación, produciendo períodos más largos.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m3/banner_henrietta-swan-leavitt.png',
+    bannerCaption: 'Henrietta Swan Leavitt: la relación período-luminosidad que midió el universo',
     fact: 'El descubrimiento de Leavitt creó lo que los astrónomos llaman el "primer peldaño de la escalera de distancias cósmicas". Sin su relación período-luminosidad, Edwin Hubble no habría podido medir la distancia a Andrómeda, no se habría descubierto la expansión del universo, y la teoría del Big Bang habría tardado décadas más en formularse. Harlow Shapley, director de Harvard, dijo que el trabajo de Leavitt merecía el Premio Nobel. El cráter Leavitt en la Luna y el asteroide 5383 Leavitt llevan su nombre en reconocimiento a un descubrimiento que literalmente expandió nuestro concepto del cosmos.',
   },
   {
@@ -245,6 +255,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El diagrama Hertzsprung-Russell, una de las herramientas más importantes de la astrofísica, fue posible en gran parte gracias al trabajo de Antonia Maury. Ejnar Hertzsprung usó su clasificación "c" para identificar las estrellas supergigantes y separarlas de las enanas del mismo tipo espectral. Sin esta distinción, la relación entre temperatura y luminosidad que el diagrama muestra habría sido confusa e inutilizable. Hertzsprung le escribió a Pickering en 1908 diciendo: "Lamento que el trabajo de la señorita Maury no haya sido debidamente apreciado."' },
       { label: 'Dato Científico', icon: 'atom', text: 'El ancho de las líneas espectrales que Maury observó se debe al efecto de presión o efecto Stark. En una estrella enana como el Sol, la alta densidad atmosférica genera campos eléctricos que ensanchan las líneas de absorción. En una supergigante como Betelgeuse, cuya atmósfera es miles de veces menos densa, las líneas permanecen estrechas. Esta diferencia permite a los astrónomos modernos determinar si una estrella es gigante o enana solo observando la anchura de sus líneas espectrales, exactamente lo que Maury propuso en la década de 1890.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m3/banner_antonia-maury.png',
+    bannerCaption: 'Antonia Maury: clasificación espectral refinada que reveló las clases de luminosidad estelar',
     fact: 'La historia de Antonia Maury ilustra un patrón recurrente en la ciencia: un descubrimiento rechazado por ser "demasiado complicado" o "adelantado a su tiempo" resulta ser correcto y fundamental. Pickering descartó la distinción de anchura de líneas de Maury en favor de la simplicidad. Pero Hertzsprung, trabajando de forma independiente en Dinamarca, reconoció que esa "complicación" contenía información física real sobre el tamaño y la luminosidad de las estrellas. El error de Pickering retrasó al menos una década la comprensión de la evolución estelar.',
   },
   {
@@ -264,6 +276,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El proyecto DASCH utiliza un escáner robótico que procesa cada placa de vidrio en aproximadamente 90 segundos, generando una imagen digital de 500 megapíxeles por placa. El software DASCH-pipeline identifica automáticamente las estrellas en cada imagen y mide su brillo, comparándolo con catálogos modernos. Este proceso ha revelado más de 100,000 curvas de luz históricas de estrellas variables, proporcionando datos que abarcan más de un siglo y que ningún telescopio moderno puede replicar, porque simplemente no existían hace 130 años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La constante de Hubble, cuyo valor depende de calibraciones con Cefeidas descubiertas gracias al trabajo de Leavitt, es actualmente objeto de una de las controversias más activas de la cosmología. Las mediciones usando Cefeidas dan un valor de ~73 km/s/Mpc, pero las mediciones del fondo cósmico de microondas del satélite Planck dan ~67.4 km/s/Mpc. Esta diferencia del 9%, conocida como la "tensión de Hubble", podría indicar que hay física nueva que no entendemos, o que necesitamos calibrar mejor las Cefeidas que Leavitt descubrió hace más de un siglo.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m3/banner_legado-computadoras.png',
+    bannerCaption: 'El legado de las Computadoras de Harvard: de las placas de vidrio al Telescopio James Webb',
     fact: 'En 2019, el asteroide 2019 GH2 fue reclasificado y nombrado oficialmente como (515718) Harvard Computers por la Unión Astronómica Internacional, en honor colectivo a las computadoras de Harvard. En la ceremonia de nombramiento, la astrónoma Lisa Kaltenegger declaró que estas mujeres "clasificaron el universo con sus manos y sus mentes en una época en que no se les permitía votar." Hoy, el observatorio que las empleó por centavos exhibe sus retratos y sus herramientas de trabajo como patrimonio histórico de la ciencia.',
   },
 ];
@@ -684,6 +698,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* ——— Video Player (conditional) ——— */}
         {node.video && (

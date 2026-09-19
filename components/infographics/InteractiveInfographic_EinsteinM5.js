@@ -157,6 +157,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'A los doce años, Albert Einstein recibió un libro de geometría euclidiana que él llamó "el librito sagrado de geometría". Lo leyó completo durante un verano y demostró por su cuenta el teorema de Pitágoras usando un método original diferente al que aparecía en el libro. Su tutor de matemáticas, Max Talmud, quedó tan sorprendido que dejó de darle clases porque el estudiante ya sabía más que el profesor en esa materia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La brújula que cautivó a Einstein funciona gracias al campo magnético terrestre, generado por corrientes de convección en el núcleo externo líquido de hierro y níquel de nuestro planeta, a unos 2,900 kilómetros de profundidad. Este efecto, llamado geodínamo, produce un campo magnético dipolar cuyo polo norte magnético se desplaza aproximadamente 55 kilómetros al año y actualmente se encuentra en el Ártico canadiense, moviéndose hacia Siberia.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m5/banner_infancia-munich.png',
+    bannerCaption: 'La infancia en Múnich: la brújula que el padre le regaló despertó su pasión por la física',
     fact: 'La casa donde nació Einstein en la Bahnhofstraße 135 de Ulm fue destruida durante un bombardeo aliado el 17 de diciembre de 1944, durante la Segunda Guerra Mundial. Hoy, en el sitio donde se encontraba la casa natal, hay un monumento conmemorativo y una placa que indica: "En esta casa nació Albert Einstein el 14 de marzo de 1879". La calle fue renombrada en su honor. Cada 14 de marzo se celebra también el Día de Pi (π = 3.14), una coincidencia matemática con su fecha de nacimiento.',
   },
   {
@@ -176,6 +178,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein y Mileva Marić tuvieron una hija antes de casarse, nacida en enero de 1902 en Novi Sad, Serbia. La niña fue llamada Lieserl, pero su destino sigue siendo un misterio histórico. Las cartas entre Albert y Mileva mencionan a Lieserl varias veces, pero después de septiembre de 1903 su nombre desaparece de toda la correspondencia. Los historiadores creen que fue dada en adopción o que falleció de escarlatina siendo bebé, pero nunca se ha encontrado documentación definitiva sobre su destino.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El "experimento mental" de cabalgar un rayo de luz planteaba una contradicción con las ecuaciones de Maxwell del electromagnetismo, publicadas en 1865. Según Maxwell, las ondas electromagnéticas (incluida la luz) siempre viajan a 299,792 kilómetros por segundo en el vacío, independientemente del movimiento del observador. Si alguien viajara a la velocidad de la luz junto a un rayo, debería ver una onda estacionaria, pero las ecuaciones de Maxwell no permiten esa solución. Esta paradoja fue la base intelectual de la relatividad.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m5/banner_estudiante-rebelde.png',
+    bannerCaption: 'El estudiante rebelde: Einstein faltaba a clases para estudiar física por su cuenta',
     fact: 'Marcel Grossmann, el compañero de clase que salvó la carrera académica de Einstein prestándole sus apuntes y consiguiéndole empleo, también fue esencial para la relatividad general. En 1912, cuando Einstein necesitaba herramientas matemáticas avanzadas para describir la curvatura del espacio-tiempo, Grossmann le introdujo la geometría diferencial de Riemann y el cálculo tensorial. Sin la amistad y los conocimientos de Grossmann, la Teoría de la Relatividad General habría tardado años más en formularse. Einstein le dedicó su artículo de 1913 como coautor.',
   },
   {
@@ -195,6 +199,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El apartamento donde vivió Einstein en Berna, en la Kramgasse 49 (segundo piso), es hoy un museo abierto al público llamado Einstein Haus. Conserva el mobiliario de época y reproducciones de los manuscritos de 1905. La Kramgasse es una calle medieval del casco antiguo de Berna, declarada Patrimonio de la Humanidad por la UNESCO en 1983. Einstein pagaba un alquiler de 55 francos mensuales por el apartamento donde redactó los artículos que cambiaron la comprensión del universo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ecuación E=mc² establece que la energía contenida en cualquier objeto es igual a su masa multiplicada por la velocidad de la luz al cuadrado (c = 299,792,458 metros por segundo). Dado que c² es un número de magnitud astronómica (aproximadamente 9 × 10^16 m²/s²), incluso una masa minúscula contiene una cantidad enorme de energía. Un kilogramo de materia convertido totalmente en energía liberaría 9 × 10^16 julios, equivalente a la energía de 21.5 megatones de TNT, es decir, unas 1,500 veces la bomba de Hiroshima.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m5/banner_oficina-patentes.png',
+    bannerCaption: 'La oficina de patentes de Berna: siete años donde Einstein concibió sus grandes teorías',
     fact: 'La Academia Olimpia, aquel modesto grupo de estudio de tres amigos en Berna, tuvo una influencia profunda en la formación intelectual de Einstein. El libro "La Ciencia y la Hipótesis" de Henri Poincaré, discutido extensamente en las reuniones del grupo, contenía ideas sobre la relatividad del tiempo y el espacio que Einstein reconoció como antecedentes de su propia teoría. Einstein mantuvo correspondencia con Maurice Solovine durante más de cincuenta años, hasta su muerte en 1955, y en una carta de 1953 escribió que las veladas de la Academia Olimpia fueron "menos infantiles de lo que aquellas divertidas veladas puedan sugerir".',
   },
   {
@@ -214,6 +220,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando Einstein llegó al IAS de Princeton, el director Abraham Flexner le preguntó qué salario necesitaba. Einstein pidió 3,000 dólares anuales, una cifra modesta incluso para 1933. Flexner, alarmado de que un salario tan bajo desprestigiara al instituto, insistió en pagarle 15,000 dólares (equivalentes a unos 350,000 dólares actuales). Elsa Einstein negoció el aumento final. Einstein nunca mostró interés por el dinero y a menudo utilizaba los cheques como marcapáginas sin cobrarlos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El eclipse de 1919 midió la desviación de la luz estelar al pasar cerca del Sol. Einstein predijo una desviación de 1.75 segundos de arco (la mitad de la predicción newtoniana era 0.87 segundos). Las mediciones de Eddington en la isla de Príncipe dieron 1.61 ± 0.30 segundos de arco, y las de Sobral (Brasil) dieron 1.98 ± 0.12 segundos de arco, ambas consistentes con la predicción relativista. Mediciones modernas con radiotelescopios han confirmado el valor de Einstein con una precisión superior al 0.01%.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m5/banner_fama-exilio.png',
+    bannerCaption: 'Fama y exilio: la ascensión a la fama mundial y la huida de la Alemania Nazi',
     fact: 'El violín que Einstein llamaba "Lina" lo acompañó toda su vida, incluido su exilio a Princeton. Tocaba regularmente música de cámara con amigos y colegas. En 1934, dio un concierto benéfico de violín en el hotel Waldorf-Astoria de Nueva York para ayudar a científicos refugiados de la Alemania nazi. Las entradas se agotaron en horas. Años después, un violín que perteneció a Einstein fue subastado en la casa Bonhams de Nueva York en 2018 por 516,500 dólares, convirtiéndose en uno de los violines más costosos vendidos en subasta pública por su valor histórico.',
   },
   {
@@ -233,6 +241,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando Kurt Gödel se preparaba para su examen de ciudadanía estadounidense en 1947, estudió la Constitución de los Estados Unidos con tal rigor lógico que descubrió lo que él consideraba una contradicción que permitiría que Estados Unidos se convirtiera legalmente en una dictadura. Einstein y el economista Oskar Morgenstern lo llevaron al examen y le rogaron que no mencionara su descubrimiento ante el juez. Gödel casi lo hizo, pero Einstein logró cambiar el tema a tiempo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Teoría del Campo Unificado que Einstein persiguió durante décadas buscaba combinar la gravedad y el electromagnetismo en una sola estructura matemática. Aunque Einstein no logró este objetivo, su intuición resultó profética. En la década de 1960, los físicos Sheldon Glashow, Abdus Salam y Steven Weinberg unificaron con éxito el electromagnetismo y la fuerza nuclear débil en la "teoría electrodébil", recibiendo el Nobel en 1979. La unificación completa sigue siendo uno de los problemas abiertos más grandes de la física actual.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m5/banner_princeton-ultimos.png',
+    bannerCaption: 'Princeton: los últimos 22 años buscando la teoría unificada de todas las fuerzas',
     fact: 'La casa de Einstein en el 112 de Mercer Street, Princeton, sigue siendo una residencia privada y no está abierta al público. Después de la muerte de Einstein, Helen Dukas y Margot Einstein continuaron viviendo allí hasta sus respectivos fallecimientos. La propiedad fue designada como Hito Histórico Nacional de Estados Unidos en 1976. Aunque no se puede visitar, los turistas se detienen regularmente frente a la modesta casa blanca para fotografiarla, y es una de las paradas informales más populares del recorrido histórico de Princeton, junto con el campus de la universidad fundada en 1746.',
   },
   {
@@ -252,6 +262,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El FBI, bajo la dirección de J. Edgar Hoover, mantuvo un archivo de vigilancia sobre Einstein de 1,427 páginas. Los agentes monitorizaban su correspondencia, sus llamadas telefónicas y sus asociaciones políticas. Hoover intentó en varias ocasiones que Einstein fuera deportado de Estados Unidos, acusándolo de simpatías comunistas. El archivo fue desclasificado parcialmente tras la Ley de Libertad de Información y revela la profundidad de la vigilancia gubernamental sobre un ciudadano que simplemente defendía la paz y los derechos civiles.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ecuación E=mc² no fue concebida para crear armas, sino para explicar una propiedad fundamental de la naturaleza. La fisión nuclear — el proceso que libera energía en una bomba atómica — convierte aproximadamente un 0.1% de la masa del uranio-235 en energía. La bomba de Hiroshima ("Little Boy") contenía 64 kilogramos de uranio-235, pero solo 0.7 gramos de materia se convirtieron en la energía equivalente a 15,000 toneladas de TNT. Esos 0.7 gramos destruyeron una ciudad entera, demostrando el poder de la equivalencia masa-energía.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m5/banner_einstein-humanista.png',
+    bannerCaption: 'Einstein humanista: defensor de los derechos civiles y activista por la paz nuclear',
     fact: 'En 1952, tras la muerte del presidente Chaim Weizmann, el gobierno de Israel ofreció a Einstein la presidencia del Estado de Israel. Einstein declinó respetuosamente, explicando en una carta al embajador israelí Abba Eban: "Toda mi vida he tratado con cosas objetivas. Por lo tanto, carezco de la aptitud natural y de la experiencia para tratar con personas y desempeñar funciones oficiales". Tenía 73 años y consideraba que no tenía las habilidades diplomáticas necesarias para un cargo político. Esta oferta convirtió a Einstein en la única persona a quien se le ha ofrecido la presidencia de un país moderno basándose exclusivamente en su reputación intelectual.',
   },
   {
@@ -271,6 +283,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El cerebro de Einstein tuvo un viaje singular después de ser extraído. Thomas Harvey lo guardó durante décadas en frascos dentro de una caja de sidra en su consultorio, y más tarde en el maletero de su automóvil. En 1997, el periodista Michael Paterniti acompañó a Harvey en un viaje por carretera a través de Estados Unidos con el cerebro en el asiento trasero del auto, experiencia que narró en el libro "Driving Mr. Albert" (2000). Las porciones restantes del cerebro fueron finalmente devueltas al Hospital de Princeton en 1998 y al Museo Nacional de Salud y Medicina en 2010.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las ondas gravitacionales detectadas por LIGO el 14 de septiembre de 2015 (evento GW150914) fueron producidas por la fusión de dos agujeros negros de 36 y 29 masas solares a 1,300 millones de años-luz de distancia. La colisión liberó más energía que toda la luz emitida por todas las estrellas del universo observable en ese mismo instante. Sin embargo, cuando las ondas llegaron a la Tierra, la distorsión del espacio que midieron los detectores LIGO fue de apenas 10^-21 metros, equivalente a una milésima parte del diámetro de un protón. Einstein predijo estas ondas en 1916 pero creía que serían demasiado débiles para detectarse.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m5/banner_legado-personal.png',
+    bannerCaption: 'El legado personal: Einstein como símbolo universal de la curiosidad y el genio',
     fact: 'El cuerpo de Einstein fue cremado el mismo día de su muerte, el 18 de abril de 1955, en el crematorio de Ewing, Nueva Jersey, y sus cenizas fueron esparcidas en un lugar no revelado, siguiendo su deseo expreso de que no se creara ningún santuario ni lugar de peregrinación en su honor. Einstein quería que la gente recordara sus ideas, no su persona física. A pesar de este deseo, su imagen se ha convertido en el símbolo universal de la inteligencia humana, reproducida en camisetas, pósters, sellos postales y hasta en un emoji. La revista Time lo nombró "Persona del Siglo XX" en su edición del 31 de diciembre de 1999.',
   },
 ];
@@ -690,6 +704,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (

@@ -152,6 +152,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tras la insurrección de enero de 1863, el gobierno zarista ejecutó a más de 400 rebeldes polacos y deportó a unos 20,000 a Siberia. Las propiedades de los participantes fueron confiscadas. El abuelo paterno de Maria, Józef Skłodowski, perdió parte de sus bienes durante estas represalias, lo que empujó a la familia hacia una situación económica difícil que Maria experimentaría durante toda su juventud.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La rusificación de Polonia tuvo un efecto paradójico en la ciencia: al prohibir la educación en polaco, obligó a los intelectuales polacos a dominar varios idiomas desde jóvenes. Maria Skłodowska hablaba con fluidez polaco, ruso, francés y alemán antes de cumplir 18 años. Esta habilidad lingüística le permitió leer publicaciones científicas en sus idiomas originales cuando llegó a París, dándole una ventaja sobre muchos de sus compañeros franceses que solo leían en su propio idioma.' },
     ],
+    bannerImage: '/assets/curie/infographic_m1/banner_polonia-imperio-ruso.png',
+    bannerCaption: 'Polonia bajo el Imperio Ruso: la patria oprimida que forjó el carácter de Marie Curie',
     fact: 'Polonia desapareció de los mapas oficiales de Europa durante exactamente 123 años, desde la tercera partición de 1795 hasta la restauración de la independencia el 11 de noviembre de 1918, al final de la Primera Guerra Mundial. Durante ese período, más de 10 millones de polacos vivieron como súbditos de imperios extranjeros. Maria Skłodowska nació en 1867, exactamente a la mitad de ese período de ocupación, y no viviría para ver a su patria libre hasta que ya tenía 51 años de edad.',
   },
   {
@@ -171,6 +173,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La calle Freta 16, donde nació Maria Skłodowska, es hoy el Museo de Marie Curie en Varsovia. El edificio fue restaurado después de los daños sufridos durante la Segunda Guerra Mundial y abrió como museo en 1967, en el centenario del nacimiento de Maria. Conserva documentos originales, fotografías familiares y reproducciones de los instrumentos científicos que su padre guardaba en el armario de cristal que tanto la cautivaba de niña.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La tuberculosis que mató a la madre de Maria era causada por la bacteria Mycobacterium tuberculosis, identificada por Robert Koch en 1882, cuatro años después de la muerte de Bronisława. En la década de 1870, no existía ni vacuna ni antibiótico contra la enfermedad. El bacilo se transmitía por el aire, lo que explica por qué la madre mantenía distancia de sus hijos. La vacuna BCG no se aplicó por primera vez en humanos hasta 1921, y la estreptomicina, primer antibiótico eficaz contra la tuberculosis, no se descubrió hasta 1943.' },
     ],
+    bannerImage: '/assets/curie/infographic_m1/banner_maria-sklodowska.png',
+    bannerCaption: 'Maria Sklodowska: la niña más brillante de Varsovia en la Polonia bajo ocupación rusa',
     fact: 'Władysław Skłodowski perdió su puesto como subdirector del Liceo en 1873, cuando Maria tenía seis años, porque las autoridades rusas descubrieron que mantenía sentimientos patrióticos polacos. La pérdida del cargo significó también la pérdida del apartamento vinculado al puesto. Para compensar la reducción de ingresos, Władysław empezó a aceptar alumnos internos en su propia casa, llegando a alojar hasta diez estudiantes. Fue probablemente uno de estos estudiantes internos quien trajo el tifus que mató a Zofia en 1876.',
   },
   {
@@ -190,6 +194,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Antes del puesto en Szczuki, Maria trabajó brevemente como institutriz para una familia de abogados en Varsovia. La experiencia fue negativa: la familia la trataba con condescendencia y le prohibía usar la biblioteca de la casa. Maria renunció tras unos meses. En una carta a su prima Henriette, escribió que prefería "servir en una casa donde al menos pudiera estudiar en paz" antes que soportar la humillación de ser tratada como inferior sin compensación intelectual alguna.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los libros que Władysław enviaba a Maria incluían obras fundamentales de la física del siglo XIX. El tratado de Adolphe Ganot, "Traité élémentaire de physique" (1851), cubría mecánica, acústica, óptica, electricidad y magnetismo en más de 1,100 páginas. El texto de Paul Émile Daniel incluía problemas de cálculo diferencial. Esta formación autodidacta le dio a Maria una base sólida que le permitió, al llegar a la Sorbona, dominar materias que muchos estudiantes franceses encontraban difíciles.' },
     ],
+    bannerImage: '/assets/curie/infographic_m1/banner_la-institutriz.png',
+    bannerCaption: 'La institutriz: Maria financiaba los estudios de su hermana mientras soñaba con París',
     fact: 'Kazimierz Żorawski, el joven que no pudo casarse con Maria por la oposición de su familia, se convirtió en un matemático distinguido especializado en geometría diferencial. Fue profesor en la Universidad de Cracovia y presidente de la Sociedad Matemática de Varsovia. Según testimonios recogidos por Robert Reid en su biografía de 1974, en sus últimos años Kazimierz solía sentarse durante largo rato frente a la estatua de Marie Curie que se erigió ante el Instituto del Radio en Varsovia, contemplándola en silencio.',
   },
   {
@@ -209,6 +215,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Ojrana, la policía secreta del zar, empleaba una red de informantes infiltrados en los movimientos estudiantiles polacos. Se estima que uno de cada diez participantes en organizaciones clandestinas podía ser un informante. Los organizadores de la Universidad Volante desarrollaron un sistema de células independientes: cada grupo de 8-10 estudiantes conocía solo a su profesor y al coordinador de su célula, pero no a los miembros de otros grupos. Este sistema de compartimentación, similar al usado por organizaciones de resistencia del siglo XX, protegía al conjunto si un grupo era descubierto.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En la Universidad Volante, Maria tuvo su primer contacto con el positivismo de Auguste Comte (1798-1857), la filosofía que sostenía que el conocimiento válido solo proviene de la observación empírica y el método científico. Comte clasificó las ciencias en una jerarquía que iba de las matemáticas (la más abstracta) a la sociología (la más compleja). Esta base filosófica influyó en el enfoque experimental que Maria aplicaría después en sus investigaciones sobre la radiactividad, privilegiando siempre la medición y la evidencia por encima de la especulación teórica.' },
     ],
+    bannerImage: '/assets/curie/infographic_m1/banner_universidad-volante.png',
+    bannerCaption: 'La Universidad Volante: clases secretas en pisos privados desafiando la censura rusa',
     fact: 'La Universidad Volante no fue la única institución clandestina de educación en la Polonia ocupada. En la región de Galicia (bajo control austríaco), las restricciones eran menos severas, y las mujeres podían asistir a conferencias universitarias como oyentes desde 1878. Esto creó una paradoja geográfica: las mujeres polacas tenían derechos educativos diferentes según qué imperio las gobernara. Maria consideró brevemente estudiar en Cracovia (territorio austríaco), pero la distancia, el costo y la preferencia de Bronia por París determinaron la elección final de la Sorbona como destino.',
   },
   {
@@ -228,6 +236,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El tren de cuarta clase que Marie tomó desde Varsovia no tenía asientos tapizados, solo bancos de madera. Los pasajeros viajaban hacinados y debían llevar su propia comida para los tres días de trayecto. Marie llevó un taburete plegable porque a veces no había espacio en los bancos. Años después, en sus notas autobiográficas de 1923, recordó el viaje como un momento de transición simbólica: dejaba atrás la opresión del imperio ruso y entraba en un país donde el conocimiento no tenía restricciones de género.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Sorbona de 1891 era uno de los centros científicos más avanzados del mundo. Su Facultad de Ciencias contaba con laboratorios de física equipados con instrumentos de precisión fabricados por las casas Ruhmkorff y Breguet. El departamento de física estaba dirigido por Gabriel Lippmann (Premio Nobel de Física en 1908 por la fotografía en color), quien sería el director de tesis de Marie. Los laboratorios disponían de galvanómetros, electrómetros de Thomson y cámaras de ionización, instrumentos que Marie aprendería a dominar con destreza.' },
     ],
+    bannerImage: '/assets/curie/infographic_m1/banner_sueno-paris.png',
+    bannerCaption: 'El sueño de París: Maria llega a la Sorbona en 1891 para cumplir su destino científico',
     fact: 'La matrícula de Marie en la Sorbona se conserva en los archivos de la Universidad de París. Está registrada como "Sklodowska, Marie", con la fecha de inscripción del 3 de noviembre de 1891, número de matrícula 17943. Fue la 1,826ª persona inscrita en la Facultad de Ciencias ese año académico. Estos documentos originales sobrevivieron a las dos guerras mundiales y están ahora digitalizados como parte del patrimonio histórico de la universidad. La firma de Marie en el registro muestra una caligrafía firme y clara, con trazos que revelan la práctica meticulosa de una autodidacta acostumbrada a tomar notas.',
   },
   {
@@ -247,6 +257,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Sociedad para el Fomento de la Industria Nacional fue fundada en 1801 por Napoleón Bonaparte. Cuando Marie recibió su encargo en 1894, la sociedad llevaba casi un siglo promoviendo la investigación aplicada en Francia. El estudio sobre las propiedades magnéticas del acero que le encargaron tenía aplicaciones directas en la industria metalúrgica francesa, que necesitaba datos precisos sobre la permeabilidad magnética de diferentes aleaciones para mejorar la fabricación de transformadores eléctricos y motores.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El electrómetro que Marie aprendió a usar en el laboratorio de Lippmann era un instrumento capaz de medir corrientes eléctricas del orden de picoamperios (10⁻¹² amperios). El modelo más avanzado disponible era el electrómetro de cuadrantes de Thomson (Lord Kelvin), que utilizaba una aguja suspendida por un hilo de cuarzo dentro de cuatro sectores metálicos. La desviación de la aguja, observada mediante un microscopio, indicaba la carga eléctrica. Marie dominó este instrumento con tal habilidad que Pierre Curie quedaría después impactado por la precisión de sus mediciones.' },
     ],
+    bannerImage: '/assets/curie/infographic_m1/banner_primeros-estudios.png',
+    bannerCaption: 'Los primeros estudios en París: pobreza extrema y primera de su promoción en física',
     fact: 'Marie no solo devolvió la beca Alexandrovitch: la devolvió con intereses, a pesar de que no se le exigía hacerlo. En una carta al comité de la beca fechada en 1897, escribió que consideraba el dinero como un préstamo de honor de la comunidad polaca, no como un regalo. El comité quedó sorprendido porque ningún beneficiario anterior había devuelto el monto. Este episodio se cita en la biografía de Susan Quinn (1995) como ejemplo del código ético riguroso que Marie Curie mantuvo durante toda su vida profesional.',
   },
   {
@@ -266,6 +278,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Pierre Curie descubrió en 1895 que los materiales ferromagnéticos pierden sus propiedades magnéticas al calentarse por encima de una temperatura específica, hoy conocida como "temperatura de Curie" o "punto de Curie". Para el hierro, esta temperatura es de 770°C. Este descubrimiento fue parte de su tesis doctoral, titulada "Propriétés magnétiques des corps à diverses températures" (Propiedades magnéticas de los cuerpos a diversas temperaturas), que defendió el 6 de marzo de 1895, cuatro meses antes de su boda con Marie.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La piezoelectricidad descubierta por los hermanos Curie en 1880 es hoy una tecnología presente en la vida cotidiana. Los encendedores de cocina usan un cristal piezoeléctrico que genera una chispa al ser golpeado. Los relojes de cuarzo funcionan porque un cristal de cuarzo vibra a una frecuencia precisa de 32,768 Hz cuando se le aplica una corriente eléctrica. Los micrófonos de contacto, los sensores de presión, las ecografías médicas y los inyectores de combustible de automóviles modernos utilizan todos el principio descubierto por Pierre y Jacques Curie hace más de 140 años.' },
     ],
+    bannerImage: '/assets/curie/infographic_m1/banner_encuentro-pierre.png',
+    bannerCaption: 'El encuentro con Pierre Curie: nace la mayor asociación científica y romántica de la historia',
     fact: 'El ayuntamiento de Sceaux donde se casaron Marie y Pierre Curie el 26 de julio de 1895 conserva el acta de matrimonio original. El documento registra a la novia como "Marie Sklodowska, sin profesión, nacida en Varsovia el 7 de noviembre de 1867" y al novio como "Pierre Curie, profesor de física, nacido en París el 15 de mayo de 1859". Los testigos fueron el padre de Pierre, Eugène Curie, y un colega científico. No había ningún familiar polaco de Marie presente en la ceremonia, ya que los costos del viaje desde Varsovia eran prohibitivos para la familia Skłodowski.',
   },
 ];
@@ -685,6 +699,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* ——— Video Section (conditional) ——— */}
         {node.video && (

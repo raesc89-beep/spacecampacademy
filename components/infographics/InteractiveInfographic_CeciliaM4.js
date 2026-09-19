@@ -168,6 +168,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Nebulosa del Águila, famosa por la imagen de los "Pilares de la Creación" tomada por el telescopio Hubble en 1995, contiene columnas de gas y polvo que miden hasta 4 años luz de longitud. Dentro de estas columnas se están formando nuevas estrellas en este momento. La imagen fue retomada por el James Webb en 2022 en infrarrojo, revelando estrellas recién nacidas que eran invisibles en luz visible porque el polvo las ocultaba por completo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La nube molecular gigante de Orión contiene aproximadamente 2,000 veces la masa del Sol distribuida en una región de unos 240 años luz de diámetro. Los astrónomos han identificado en ella más de 2,500 estrellas jóvenes con menos de 2 millones de años de edad. La densidad del gas en las regiones más densas alcanza 10⁶ moléculas por centímetro cúbico, un millón de veces más densa que el medio interestelar promedio, pero aún un vacío mejor que cualquiera que podamos producir en un laboratorio terrestre.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m4/banner_nubes-gas-polvo.png',
+    bannerCaption: 'Las nebulosas: nubes de gas y polvo interestelar donde nacen las estrellas',
     fact: 'Cecilia Payne demostró en 1925 que el hidrógeno es el elemento más abundante en las estrellas. Las nubes moleculares confirman esta composición: están formadas por un 73% de hidrógeno, un 25% de helio y apenas un 2% de elementos más pesados. Todo el oxígeno, carbono, hierro y otros elementos que componen nuestros cuerpos fueron fabricados dentro de estrellas que existieron antes que el Sol y fueron dispersados al espacio por explosiones de supernovas, para luego incorporarse a una nueva nube molecular que colapsó hace 4,600 millones de años y formó nuestro sistema solar.',
   },
   {
@@ -187,6 +189,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las protoestrellas más masivas se forman tan rápido que encienden la fusión nuclear mientras todavía están acumulando material de la nube circundante. Una protoestrella de 10 masas solares alcanza la secuencia principal en solo 100,000 años, mientras que una de 0.1 masas solares puede tardar 1,000 millones de años en completar su contracción. La velocidad de formación es proporcional a la masa: las estrellas grandes nacen deprisa y mueren jóvenes, mientras que las pequeñas nacen con lentitud y viven eternidades cósmicas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Durante la fase T Tauri, las estrellas jóvenes expulsan material a velocidades de hasta 200 km/s en forma de chorros bipolares (jets) que se extienden a lo largo de varios años luz. Estos jets son visibles como objetos Herbig-Haro, nombrados en honor a George Herbig y Guillermo Haro, quienes los catalogaron en la década de 1950. Se han identificado más de 1,000 objetos Herbig-Haro en nuestra galaxia. Los jets transportan momento angular, permitiendo que la protoestrella siga contrayéndose sin girar demasiado rápido.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m4/banner_nacimiento-estrella.png',
+    bannerCaption: 'El nacimiento de una estrella: de nube molecular a ignición nuclear',
     fact: 'Nuestro propio Sol nació hace 4,600 millones de años a partir del colapso de una nube molecular. La evidencia proviene de meteoritos primitivos llamados condritas carbonáceas, que contienen granos presolares — diminutos cristales que se formaron en las atmósferas de estrellas anteriores al Sol. El meteorito Murchison, caído en Australia en 1969, contiene granos de carburo de silicio con edades de hasta 7,000 millones de años, más antiguos que el propio Sistema Solar, demostrando que nuestro vecindario cósmico fue construido con material reciclado de generaciones anteriores de estrellas.',
   },
   {
@@ -206,6 +210,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El diagrama H-R permite predecir el futuro de cualquier estrella si conocemos su masa. Una estrella de 1 masa solar (como el Sol) permanecerá en la secuencia principal durante unos 10,000 millones de años, luego se convertirá en gigante roja durante 1,000 millones de años, y finalmente terminará como enana blanca. Una estrella de 20 masas solares vivirá solo 10 millones de años en la secuencia principal y terminará su vida en una explosión de supernova. La masa es el destino de cada estrella.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las clases espectrales de las estrellas se clasifican con las letras O, B, A, F, G, K, M, ordenadas de mayor a menor temperatura. La nemotecnia clásica en inglés es "Oh Be A Fine Girl/Guy Kiss Me". Las estrellas O son las más calientes (30,000-50,000 K) y azules, mientras que las M son las más frías (2,400-3,700 K) y rojas. El Sol es tipo G2, con temperatura superficial de 5,778 K. Las estrellas M son las más comunes: representan el 76% de todas las estrellas de la Vía Láctea.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m4/banner_diagrama-hr.png',
+    bannerCaption: 'El diagrama HR: el mapa de la vida y muerte de las estrellas',
     fact: 'Henry Norris Russell, quien inicialmente rechazó el hallazgo de Cecilia Payne sobre la abundancia de hidrógeno en las estrellas, terminó llegando a la misma conclusión cuatro años después en 1929 y recibió el crédito por el descubrimiento durante décadas. El diagrama que lleva su nombre se convirtió en una de las herramientas centrales de la astronomía, y es irónico que su correcta interpretación depende del hallazgo que él mismo desestimó. En 1976, la Sociedad Astronómica Americana otorgó a Payne el Premio Henry Norris Russell, reconociendo finalmente su contribución pionera.',
   },
   {
@@ -225,6 +231,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Un fotón generado en el centro del Sol tarda un promedio de 170,000 años en llegar a la superficie. No viaja en línea recta, sino que es absorbido y reemitido trillones de veces por los átomos del interior solar en un proceso llamado caminata aleatoria (random walk). Cuando finalmente emerge de la superficie, ese mismo fotón llega a la Tierra en solo 8 minutos y 20 segundos viajando a la velocidad de la luz. La luz del Sol que ves hoy fue generada cuando los Neandertales aún caminaban por Europa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El núcleo del Sol tiene una temperatura de 15.7 millones de Kelvin y una densidad de 150 gramos por centímetro cúbico — unas 13 veces más denso que el plomo. A pesar de estas condiciones, la tasa de generación de energía por unidad de masa es sorprendentemente baja: solo 276 microwatts por kilogramo, menos que el calor metabólico producido por el cuerpo humano en reposo. El Sol genera su enorme luminosidad no por la eficiencia de la reacción, sino por su volumen descomunal: 1.3 millones de Tierras cabrían dentro de él.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m4/banner_secuencia-principal.png',
+    bannerCaption: 'La secuencia principal: estrellas fusionando hidrógeno en helio durante millones de años',
     fact: 'Hans Bethe publicó su artículo sobre la producción de energía en las estrellas en la revista Physical Review en marzo de 1939, demostrando que el ciclo CNO era responsable de la energía de las estrellas masivas. Este trabajo se apoyó directamente en el descubrimiento de Cecilia Payne de que las estrellas son principalmente hidrógeno: sin saber que el combustible estelar era hidrógeno, no habría sido posible identificar la cadena de reacciones nucleares correcta. Bethe calculó que el Sol convierte 3.6 × 10³⁸ protones en helio cada segundo, un número que los astrofísicos modernos han confirmado con una precisión de menos del 1%.',
   },
   {
@@ -244,6 +252,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Sol se convertirá en una gigante roja dentro de unos 5,000 millones de años. Cuando eso ocurra, su radio se expandirá hasta engullir las órbitas de Mercurio y Venus, y posiblemente la de la Tierra. La temperatura superficial terrestre superará los 1,500 °C, los océanos se evaporarán completamente y la atmósfera será arrancada por el viento estelar. Eventualmente, el Sol expulsará sus capas externas formando una nebulosa planetaria y su núcleo quedará como una enana blanca del tamaño de la Tierra que se enfriará lentamente durante billones de años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Subrahmanyan Chandrasekhar tenía solo 19 años cuando calculó el límite que lleva su nombre durante un viaje en barco desde India a Inglaterra en 1930. Su resultado fue ridiculizado públicamente por Arthur Eddington, el astrofísico más prestigioso de la época, quien se negó a aceptar que las estrellas pudieran colapsar indefinidamente. Chandrasekhar tuvo que esperar 53 años hasta que le otorgaron el Premio Nobel de Física en 1983. El telescopio de rayos X Chandra de la NASA, lanzado en 1999, lleva su nombre.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m4/banner_gigantes-enanas.png',
+    bannerCaption: 'De gigante roja a enana blanca: el ciclo de vida del Sol',
     fact: 'Fred Hoyle predijo que el proceso triple-alfa solo podía funcionar si el carbono-12 tenía un estado energético excitado específico (un nivel de resonancia) a 7.65 MeV por encima del estado fundamental. Sin este nivel, la probabilidad de que tres núcleos de helio se combinaran sería demasiado baja para producir carbono en cantidades significativas. El nivel fue confirmado experimentalmente por William Fowler en 1953 en Caltech, exactamente donde Hoyle había predicho. Esta predicción es considerada uno de los triunfos más notables de la astrofísica nuclear y le valió a Fowler el Nobel de Física en 1983.',
   },
   {
@@ -263,6 +273,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El púlsar del Cangrejo (PSR B0531+21), ubicado en la Nebulosa del Cangrejo, gira 30 veces por segundo y es el remanente de una supernova observada por astrónomos chinos y árabes en el año 1054 d.C. Fue tan brillante que era visible a plena luz del día durante 23 días. Los registros chinos la describen como una "estrella invitada" (客星, kèxīng). La Nebulosa del Cangrejo se expande actualmente a 1,500 km/s y su diámetro actual es de 11 años luz, alimentada por la energía rotacional del púlsar central.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El descubrimiento de Jocelyn Bell Burnell del primer púlsar generó una de las injusticias más conocidas de la ciencia moderna. El Premio Nobel de Física de 1974 fue otorgado a su supervisor Antony Hewish y a Martin Ryle, pero no a Bell Burnell, quien realizó la observación y la identificación del fenómeno. Bell Burnell ha dicho que no guarda resentimiento, señalando que en aquella época se consideraba que los estudiantes de doctorado trabajaban bajo la dirección de sus supervisores. La situación tiene un paralelo directo con la experiencia de Cecilia Payne.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m4/banner_supernovas-neutrones.png',
+    bannerCaption: 'Supernovas y estrellas de neutrones: la muerte explosiva de las estrellas masivas',
     fact: 'Todas las supernovas de tipo II producen elementos más pesados que el hierro mediante un proceso llamado captura rápida de neutrones (proceso r), que ocurre en los pocos segundos de la explosión. Este proceso es responsable de la creación de aproximadamente la mitad de todos los elementos más pesados que el hierro, incluyendo oro, platino y uranio. Cada anillo de oro que existe en la Tierra fue forjado en los últimos instantes de vida de una estrella masiva que explotó como supernova hace más de 4,600 millones de años. El astrónomo Carl Sagan lo expresó con precisión: "Somos materia estelar que se contempla a sí misma."',
   },
   {
@@ -282,6 +294,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Stephen Hawking apostó con Kip Thorne en 1974 sobre si Cygnus X-1 era un agujero negro. Hawking apostó en contra, argumentando que si los agujeros negros no existían, al menos tendría el consuelo de ganar la apuesta. En 1990, Hawking concedió la apuesta cuando la evidencia se volvió abrumadora. El premio para Thorne fue una suscripción de un año a la revista Penthouse. Hawking firmó la concesión con su huella digital, ya que su enfermedad le impedía escribir.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las ondas gravitacionales detectadas en el evento GW150914 produjeron un desplazamiento en los brazos de 4 km de los detectores LIGO de apenas 10⁻¹⁸ metros — una milésima del diámetro de un protón. Para alcanzar esta sensibilidad, los láseres de LIGO recorren los brazos 280 veces (recorrido efectivo de 1,120 km) y el sistema está aislado de vibraciones sísmicas, térmicas y acústicas con una precisión que lo convierte en el instrumento de medición más sensible jamás construido por la humanidad.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m4/banner_agujeros-negros-estelares.png',
+    bannerCaption: 'Agujeros negros estelares: el destino final de las estrellas más masivas',
     fact: 'La conexión entre Cecilia Payne y los agujeros negros es profunda: todo el ciclo de evolución estelar — desde la fusión de hidrógeno que ella identificó como combustible fundamental, pasando por la creación de elementos pesados, hasta el colapso final en agujeros negros — depende de la composición química que Payne determinó en 1925. Sin saber que las estrellas son 73% hidrógeno, los modelos de estructura y evolución estelar no habrían podido predecir correctamente la formación de agujeros negros ni la producción de los elementos que componen planetas rocosos y seres vivos. El legado de Cecilia Payne sustenta toda la astrofísica moderna.',
   },
 ];
@@ -705,6 +719,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* ——— Video Player (conditional) ——— */}
         {node.video && (

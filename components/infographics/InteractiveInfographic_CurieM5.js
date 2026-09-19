@@ -180,6 +180,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Si pudieras eliminar todo el espacio vacío de los átomos que componen el cuerpo humano, toda la humanidad (unos 8.000 millones de personas) cabría en un volumen del tamaño de un terrón de azúcar. Esto se debe a que más del 99.9999999999996% del volumen de un átomo es espacio vacío entre el núcleo y los electrones. La materia que tocamos y que nos parece sólida es, en realidad, casi puro vacío sostenido por fuerzas electromagnéticas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El protón tiene una masa de 1.67262 × 10⁻²⁷ kilogramos, unas 1,836 veces mayor que la masa del electrón. Los quarks, las partículas que componen los protones y neutrones, fueron propuestos de forma independiente por Murray Gell-Mann y George Zweig en 1964. Cada protón contiene dos quarks \"up\" y un quark \"down\", unidos por la fuerza fuerte mediada por gluones. Este modelo fue confirmado en experimentos de dispersión profunda inelástica realizados en el acelerador SLAC de Stanford entre 1967 y 1973.' },
     ],
+    bannerImage: '/assets/curie/infographic_m5/banner_atomo-por-dentro.png',
+    bannerCaption: 'El átomo por dentro: núcleo de protones y neutrones rodeado de nube electrónica',
     fact: 'El experimento de Rutherford de 1911 reveló que solo 1 de cada 8.000 partículas alfa rebotaba al impactar la lámina de oro, demostrando que el núcleo ocupa una fracción diminuta del volumen atómico. Rutherford describió su sorpresa diciendo: «Fue como si dispararas un proyectil de 15 pulgadas contra una hoja de papel de seda y este rebotara hacia ti». Hans Geiger y Ernest Marsden, sus colaboradores, contaron más de un millón de destellos de centelleo a mano durante meses para obtener estos datos estadísticos.',
   },
   {
@@ -199,6 +201,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marie Curie nunca supo exactamente qué tipo de radiación emitía cada elemento que descubrió, porque en su época (1898-1902) los conceptos de alfa, beta y gamma apenas se estaban definiendo. Lo que sí midió con precisión fue la intensidad de la radiación usando un electrómetro piezoeléctrico diseñado por Pierre Curie y su hermano Jacques. Este dispositivo, con sensibilidad de 10⁻¹¹ amperios, le permitió demostrar que la radiactividad era proporcional a la cantidad de uranio presente, independientemente de su estado químico.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La energía de los rayos gamma emitidos por núcleos radiactivos varía según el isótopo. El cobalto-60 emite dos fotones gamma con energías de 1.17 MeV y 1.33 MeV. El cesio-137 emite un fotón gamma de 0.662 MeV. Para comparar, la luz visible tiene una energía de apenas 1.6 a 3.4 electronvoltios (eV), es decir, los rayos gamma son entre 200,000 y un millón de veces más energéticos que la luz que perciben nuestros ojos, lo que explica su capacidad para penetrar la materia y dañar el ADN celular.' },
     ],
+    bannerImage: '/assets/curie/infographic_m5/banner_tipos-radiacion.png',
+    bannerCaption: 'Tipos de radiación: alfa, beta y gamma — distintos poderes de penetración y peligro',
     fact: 'En 1903, Rutherford y Soddy publicaron la teoría de la desintegración radiactiva, proponiendo que los átomos de un elemento pueden transformarse espontáneamente en átomos de otro elemento mediante la emisión de partículas alfa o beta. Esta idea fue tan revolucionaria que muchos científicos la rechazaron inicialmente, porque parecía una forma de alquimia: la transmutación de los elementos. Rutherford recibió el Premio Nobel de Química en 1908 por este trabajo, y comentó con ironía que él había observado muchas transformaciones en la radiactividad, pero ninguna tan rápida como su propia transformación de físico a químico.',
   },
   {
@@ -218,6 +222,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La datación por carbono-14 permitió datar el Sudario de Turín. En 1988, tres laboratorios independientes (Oxford, Zúrich y la Universidad de Arizona) analizaron muestras del tejido y determinaron que el lino databa de entre 1260 y 1390 d.C., consistente con una fabricación medieval. La precisión de la datación se basa en la vida media del C-14 (5,730 años) y en el hecho de que los organismos vivos absorben C-14 del CO₂ atmosférico mientras están vivos, pero dejan de hacerlo al morir.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El radón-222, un gas noble radiactivo con vida media de 3.82 días, es la segunda causa de cáncer de pulmón en el mundo después del tabaco. Se genera naturalmente en el suelo por la desintegración del radio-226 (parte de la cadena del uranio-238) y puede acumularse en sótanos y plantas bajas de edificios. La Organización Mundial de la Salud estima que causa entre el 3% y el 14% de todos los cánceres de pulmón dependiendo del país, y la EPA de Estados Unidos establece un nivel de acción de 148 Bq/m³ para viviendas.' },
     ],
+    bannerImage: '/assets/curie/infographic_m5/banner_desintegracion-radiactiva.png',
+    bannerCaption: 'Desintegración radiactiva: cadena de decaimiento del uranio hasta el plomo estable',
     fact: 'En 1903, Pierre Curie y Albert Laborde midieron que un gramo de radio emitía continuamente 100 calorías por hora (418 julios/hora), suficiente para derretir su propio peso en hielo en aproximadamente una hora. Esta observación planteó una paradoja para la física de la época: según las leyes de la termodinámica conocidas, no existía ninguna fuente de energía química capaz de sostener esa producción durante siglos. El radio parecía violar la conservación de la energía. Solo con la relatividad de Einstein (E=mc²) y la comprensión de la energía de enlace nuclear se resolvió el misterio: la masa perdida durante la desintegración se convierte directamente en energía cinética de las partículas emitidas.',
   },
   {
@@ -237,6 +243,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Lise Meitner, la física que proporcionó la interpretación teórica correcta de la fisión nuclear en 1939, fue excluida del Premio Nobel de Química de 1944, que se otorgó solo a Otto Hahn. Meitner había huido de la Alemania nazi en julio de 1938 por su ascendencia judía y realizó los cálculos clave de la fisión desde Suecia. Fue nominada al Nobel en 48 ocasiones entre 1937 y 1965 sin recibirlo jamás. El elemento 109, el meitnerio (Mt), fue nombrado en su honor en 1997, un reconocimiento que llegó 29 años después de su muerte.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La energía de enlace nuclear por nucleón alcanza su máximo en el hierro-56 (8.79 MeV por nucleón), lo que explica por qué tanto la fisión de núcleos pesados como la fusión de núcleos ligeros liberan energía: ambos procesos producen núcleos más cercanos al hierro en la curva de energía de enlace. Los elementos más pesados que el hierro se formaron en explosiones de supernovas y colisiones de estrellas de neutrones, como la observada por LIGO y Virgo el 17 de agosto de 2017 (GW170817), que produjo entre 3 y 13 masas terrestres de oro.' },
     ],
+    bannerImage: '/assets/curie/infographic_m5/banner_fision-fusion-nuclear.png',
+    bannerCaption: 'Fisión vs fusión nuclear: la diferencia entre las bombas, los reactores y las estrellas',
     fact: 'El reactor Chicago Pile-1, donde Fermi logró la primera reacción en cadena controlada, estaba construido con 385 toneladas de grafito, 40 toneladas de óxido de uranio y 6 toneladas de uranio metálico, apilados en una estructura de 7.5 metros de ancho y 6 metros de alto bajo las gradas de un estadio de squash. No tenía blindaje contra la radiación ni sistema de enfriamiento de emergencia. Fermi controló la reacción con barras de cadmio que absorben neutrones, insertadas y extraídas manualmente. El experimento duró 28 minutos y generó solo 0.5 vatios de potencia, pero demostró que la energía nuclear podía ser controlada por el ser humano.',
   },
   {
@@ -256,6 +264,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El primer tratamiento exitoso de un cáncer con radiación se realizó en 1896, apenas un año después de que Röntgen descubriera los rayos X. Emil Grubbe, un estudiante de medicina de Chicago, irradió a una paciente con cáncer de mama usando un tubo de Crookes. Aunque la paciente murió posteriormente, el tumor se redujo. Grubbe mismo sufrió graves quemaduras por radiación y terminó perdiendo dedos, una mano y parte de su rostro a lo largo de su vida, convirtiéndose trágicamente en ejemplo de los riesgos de la radiación no controlada.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La protonterapia, una forma avanzada de radioterapia, utiliza haces de protones en lugar de rayos X para destruir tumores. Los protones depositan la mayor parte de su energía en una profundidad específica del tejido (el pico de Bragg), lo que permite irradiar tumores profundos sin dañar los tejidos sanos circundantes. Robert R. Wilson propuso esta aplicación en 1946, y el primer paciente fue tratado en 1954 en el Laboratorio Lawrence Berkeley. En 2024, existen más de 100 centros de protonterapia operativos en el mundo, con especial efectividad en tumores pediátricos y tumores cercanos a órganos críticos como el cerebro y los ojos.' },
     ],
+    bannerImage: '/assets/curie/infographic_m5/banner_medicina-nuclear.png',
+    bannerCaption: 'Medicina nuclear: radioactividad que salva vidas en diagnóstico y tratamiento del cáncer',
     fact: 'Irène Joliot-Curie, hija de Marie Curie, y su esposo Frédéric Joliot-Curie recibieron el Premio Nobel de Química en 1935 por descubrir la radiactividad artificial: demostraron que al bombardear aluminio-27 con partículas alfa, se producía fósforo-30, un isótopo radiactivo que no existe en la naturaleza. Este descubrimiento hizo posible la producción industrial de isótopos radiactivos para uso médico, sin depender de elementos radiactivos naturales escasos como el radio. Hoy, la producción de radiofármacos es una industria que genera más de 6,000 millones de dólares anuales y es la base de la medicina nuclear moderna.',
   },
   {
@@ -275,6 +285,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Zona de Exclusión de Chernóbil se ha convertido inesperadamente en un refugio para la vida silvestre. Desde la evacuación humana en 1986, la población de lobos, alces, ciervos, jabalíes y caballos de Przewalski ha crecido de manera notable. Un estudio de 2015 publicado en Current Biology por Jim Smith del equipo del proyecto TREE encontró que la abundancia de mamíferos en la zona era comparable a la de reservas naturales no contaminadas. Incluso se han avistado osos pardos y bisontes europeos, especies que no se veían en la región desde hacía décadas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los residuos nucleares de alta actividad, principalmente el combustible gastado, contienen isótopos como el plutonio-239 (vida media: 24,110 años) y el americio-241 (vida media: 432 años). Finlandia está construyendo Onkalo, el primer depósito geológico profundo del mundo para almacenar residuos nucleares a 450 metros bajo tierra en roca granítica de 1,800 millones de años de antigüedad. Diseñado para mantener los residuos aislados durante al menos 100,000 años, Onkalo planea comenzar operaciones en 2025 y sellarse definitivamente alrededor de 2120.' },
     ],
+    bannerImage: '/assets/curie/infographic_m5/banner_energia-nuclear.png',
+    bannerCaption: 'Energía nuclear: el átomo pacífico generando electricidad sin emisiones de carbono',
     fact: 'La primera central nuclear comercial del mundo fue Calder Hall, en Sellafield (Inglaterra), que comenzó a generar electricidad el 27 de agosto de 1956 con una potencia de 50 MW. Su reactor Magnox usaba uranio natural como combustible, grafito como moderador y CO₂ como refrigerante. Operó durante 47 años antes de cerrar en 2003. En contraste, la central nuclear Beznau-1 en Suiza, conectada a la red en 1969, sigue operativa en 2024 con 55 años de servicio, siendo el reactor nuclear comercial más antiguo del mundo aún en funcionamiento.',
   },
   {
@@ -294,6 +306,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Un plátano contiene aproximadamente 15 becquerelios de potasio-40 (⁴⁰K), un isótopo radiactivo natural con una vida media de 1,250 millones de años. Comer un plátano produce una dosis de radiación de unos 0.1 microsieverts, lo que ha dado lugar a la «dosis equivalente de plátano» (BED), una unidad informal usada para comunicar dosis radiológicas al público. Para comparar: una radiografía de tórax equivale a unas 200 dosis de plátano, una tomografía computarizada a unas 70,000, y la dosis anual máxima permitida para un trabajador nuclear equivale a unos 200 millones de plátanos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El becquerel (Bq), la unidad SI de actividad radiactiva, equivale a una desintegración nuclear por segundo. Fue nombrado en honor a Henri Becquerel, quien descubrió la radiactividad natural en 1896 al observar que sales de uranio velaban placas fotográficas protegidas de la luz. La antigua unidad, el curio (Ci), fue nombrada en honor de Marie y Pierre Curie: 1 Ci = 3.7 × 10¹⁰ Bq, que corresponde a la actividad de un gramo de radio-226. El cuerpo humano adulto tiene una actividad de aproximadamente 7,000 Bq, principalmente por los 140 gramos de potasio natural que contiene, del cual el 0.012% es potasio-40 radiactivo.' },
     ],
+    bannerImage: '/assets/curie/infographic_m5/banner_seguridad-radiologica.png',
+    bannerCaption: 'Seguridad radiológica: protocolos para trabajar con radiación de forma segura',
     fact: 'El accidente del Demonio Nuclear (Demon Core) ilustra los riesgos de la criticidad nuclear. El 21 de agosto de 1945, Harry Daghlian sufrió una dosis letal de radiación al dejar caer un bloque de carburo de tungsteno sobre una esfera subcrítica de plutonio-239 de 6.2 kg en Los Álamos, muriendo 25 días después. El 21 de mayo de 1946, Louis Slotin recibió una dosis mortal al separar dos semiesferas de berilio alrededor de la misma esfera de plutonio usando solo un destornillador, que se deslizó y permitió que la masa se volviera brevemente supercrítica. Slotin murió 9 días después. Estos accidentes impulsaron el desarrollo de protocolos estrictos de seguridad en el manejo de material fisil.',
   },
 ];
@@ -713,6 +727,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* ─── Conditional Video Render ─── */}
         {node.video && (

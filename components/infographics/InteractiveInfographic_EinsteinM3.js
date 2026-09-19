@@ -158,6 +158,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los astronautas a bordo de la Estación Espacial Internacional experimentan lo que Einstein imaginó en 1907: están en caída libre continua alrededor de la Tierra. No flotan porque estén "lejos de la gravedad" (a 400 km de altitud, la gravedad es todavía el 89% de la que sentimos en la superficie). Flotan porque están cayendo permanentemente, pero su velocidad lateral de 27,600 km/h hace que "fallen alrededor" de la Tierra sin chocar con ella. Es exactamente el pensamiento de Einstein hecho realidad a escala orbital.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El satélite MICROSCOPE de la ESA verificó el Principio de Equivalencia con una precisión de 10⁻¹⁵ entre 2016 y 2018, midiendo si dos cilindros de materiales diferentes (titanio y platino-rodio) caían a la misma velocidad en órbita. La diferencia medida fue compatible con cero. Esto confirma que la masa inercial y la masa gravitatoria son idénticas con una precisión quince veces superior a cualquier experimento terrestre anterior, como los de Eötvös realizados en Budapest en 1922.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m3/banner_pensamiento-feliz.png',
+    bannerCaption: 'El pensamiento más feliz: la equivalencia entre gravedad y aceleración que inspiró la RG',
     fact: 'Galileo Galilei realizó experimentos sobre caída libre en la Torre de Pisa hacia 1589, demostrando que objetos de diferente peso caen a la misma velocidad en ausencia de resistencia del aire. En 1971, el astronauta David Scott repitió este experimento en la Luna durante la misión Apollo 15, soltando simultáneamente un martillo de 1.32 kg y una pluma de halcón de 0.03 kg. Sin atmósfera lunar, ambos llegaron al suelo al mismo tiempo, confirmando ante las cámaras de televisión el principio que conecta a Galileo con Einstein a través de cuatro siglos de física.',
   },
   {
@@ -177,6 +179,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El efecto de lente gravitacional no solo distorsiona imágenes: también amplifica la luz de objetos lejanos, funcionando como un telescopio natural. En 2018, el Hubble observó la estrella individual más lejana jamás vista, llamada Icarus (MACS J1149 Lensed Star 1), a 9,000 millones de años luz de distancia, solo visible porque una galaxia intermedia amplificó su brillo unas 2,000 veces. Sin la lente gravitacional predicha por la relatividad general, esta estrella habría sido invisible para cualquier telescopio existente.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La geometría del espacio-tiempo se describe mediante el tensor de Riemann, un objeto matemático con 20 componentes independientes en cuatro dimensiones. Este tensor captura toda la información sobre la curvatura intrínseca del espacio-tiempo en cada punto. Cuando el tensor de Riemann es cero en todas sus componentes, el espacio-tiempo es plano (sin gravedad). La contracción del tensor de Riemann produce el tensor de Ricci, que aparece directamente en las ecuaciones de campo de Einstein y conecta la geometría con la distribución de materia y energía.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m3/banner_gravedad-geometria.png',
+    bannerCaption: 'Gravedad como geometría: las masas curvan el espacio-tiempo y crean la gravedad',
     fact: 'En 1859, el astrónomo Urbain Le Verrier descubrió que la órbita de Mercurio rotaba 43 segundos de arco por siglo más de lo que las leyes de Newton podían explicar. Los astrónomos propusieron la existencia de un planeta oculto llamado Vulcano entre Mercurio y el Sol. Se organizaron expediciones durante eclipses solares para encontrarlo, sin éxito. En noviembre de 1915, Einstein aplicó sus nuevas ecuaciones de campo al problema y calculó una precesión adicional de exactamente 43 segundos de arco por siglo, eliminando la necesidad de Vulcano. Einstein reportó haber tenido palpitaciones al obtener este resultado.',
   },
   {
@@ -196,6 +200,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Karl Schwarzschild resolvió las ecuaciones de Einstein en condiciones difíciles de imaginar. En diciembre de 1915, estaba en el frente ruso de la Primera Guerra Mundial, calculando trayectorias de proyectiles de artillería para el ejército alemán, cuando leyó el artículo de Einstein. En pocas semanas, encontró la primera solución exacta, que describe el espacio-tiempo alrededor de una masa esférica no rotante. Esta solución predice un radio crítico (el radio de Schwarzschild) dentro del cual nada puede escapar, anticipando el concepto de agujero negro medio siglo antes de que se acuñara el término.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las ecuaciones de campo contienen la constante gravitacional de Newton G = 6.674 × 10⁻¹¹ N·m²/kg² y la velocidad de la luz c = 299,792,458 m/s. El factor 8πG/c⁴ que aparece en las ecuaciones tiene un valor de aproximadamente 2.077 × 10⁻⁴³ s²/(kg·m), un número diminuto que explica por qué necesitas masas enormes (estrellas, planetas) para producir curvatura detectable en el espacio-tiempo. La masa de una persona curva el espacio-tiempo de forma técnicamente real pero tan pequeña que ningún instrumento actual puede medirla.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m3/banner_ecuaciones-campo.png',
+    bannerCaption: 'Las ecuaciones de campo: las diez ecuaciones más bellas y complejas de la física',
     fact: 'El manuscrito original de la relatividad general de 1915 fue subastado por Sotheby\'s en 1987 y permaneció en manos privadas durante años. En 2021, un manuscrito de trabajo de 54 páginas escrito a mano por Einstein y Grossmann entre 1913 y 1914, que contiene cálculos preparatorios para las ecuaciones de campo, fue subastado por Christie\'s en París por 11.6 millones de euros, convirtiéndose en el manuscrito científico más caro jamás vendido. El documento muestra tachones, errores corregidos y notas marginales que revelan el proceso mental de Einstein durante los años más difíciles del desarrollo de la teoría.',
   },
   {
@@ -215,6 +221,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La organización del eclipse de 1919 fue notable porque ocurrió justo después de la Primera Guerra Mundial, en la que Gran Bretaña y Alemania habían sido enemigos. Eddington, un cuáquero pacifista británico, arriesgó su carrera para verificar la teoría de un físico alemán en un momento de profundo sentimiento anti-alemán. El Astrónomo Real Frank Dyson ayudó a Eddington a evitar el servicio militar obligatorio argumentando que su trabajo científico era de importancia nacional. La confirmación fue vista como un símbolo de reconciliación internacional a través de la ciencia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La desviación gravitacional de la luz ha sido medida con precisión creciente desde 1919. En 1995, el satélite Hipparcos de la ESA midió la deflexión de la luz estelar por el Sol y confirmó la predicción de Einstein con un error menor al 0.1%. La misión Cassini de la NASA, en su camino a Saturno en 2003, midió el retardo temporal de señales de radio pasando cerca del Sol (efecto Shapiro) y verificó la relatividad general con una precisión del 0.002%. Cada nueva medición confirma las ecuaciones de Einstein con mayor exactitud.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m3/banner_eclipse-1919.png',
+    bannerCaption: 'El eclipse de 1919: la luz se dobla al pasar cerca del Sol, confirmando la Relatividad General',
     fact: 'Cuando le preguntaron a Einstein qué habría sentido si las observaciones del eclipse hubieran contradicho su teoría, respondió: "Entonces habría sentido lástima por el buen Dios. La teoría es correcta." Esta respuesta refleja la profunda confianza que Einstein tenía en la consistencia lógica y la belleza matemática de la relatividad general. El telegrama que Einstein recibió de Hendrik Lorentz el 22 de septiembre de 1919, informándole de los resultados preliminares favorables, lo compartió con su madre Pauline, quien estaba gravemente enferma. Pauline Einstein falleció en febrero de 1920, habiendo sabido que la teoría de su hijo había sido confirmada.',
   },
   {
@@ -234,6 +242,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La señal GW150914 duró apenas 0.2 segundos en el rango audible de LIGO y fue detectada primero por un algoritmo automático, pero también fue visible a simple vista en los datos en bruto. Marco Drago, un postdoctorado italiano trabajando en Alemania, fue la primera persona en ver la señal en su pantalla a las 11:50 de la mañana (hora de Europa). Al principio pensó que era una inyección de prueba (señales falsas que los ingenieros insertan para calibrar el sistema), pero confirmó que no había ninguna prueba programada. La señal era real.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La potencia emitida durante los últimos instantes de la fusión GW150914 fue de aproximadamente 3.6 × 10⁴⁹ watts, equivalente a 50 veces la potencia luminosa combinada de todas las estrellas del universo observable. A pesar de esta potencia, la señal que llegó a la Tierra estiró los brazos del detector LIGO en apenas 4 × 10⁻¹⁸ metros, menos de la milésima parte del diámetro de un protón. Para lograr esta sensibilidad, los espejos de LIGO pesan 40 kg cada uno, están suspendidos por fibras de vidrio de 0.4 mm de diámetro, y el láser tiene una potencia efectiva de 750 kilowatts dentro de la cavidad óptica.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m3/banner_ondas-gravitacionales.png',
+    bannerCaption: 'Ondas gravitacionales: LIGO detecta en 2015 lo que Einstein predijo en 1916',
     fact: 'Russell Hulse y Joseph Taylor descubrieron en 1974 el púlsar binario PSR B1913+16, un sistema de dos estrellas de neutrones orbitando una alrededor de la otra. Durante las tres décadas siguientes, midieron cómo la órbita se acortaba gradualmente: las estrellas se acercan 3.5 metros por año porque pierden energía emitiendo ondas gravitacionales. La tasa de decaimiento orbital coincide con la predicción de la relatividad general con una precisión del 0.2%. Hulse y Taylor recibieron el Premio Nobel de Física en 1993 por esta primera evidencia indirecta de las ondas gravitacionales, veintidós años antes de la detección directa de LIGO.',
   },
   {
@@ -253,6 +263,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Stephen Hawking demostró en 1974 que los agujeros negros no son completamente negros. Debido a efectos cuánticos cerca del horizonte de eventos, emiten una radiación térmica muy tenue, conocida como radiación de Hawking. Para un agujero negro de masa estelar, esta radiación es miles de millones de veces más fría que la radiación cósmica de fondo (2.7 kelvin), haciéndola prácticamente indetectable. Sin embargo, agujeros negros muy pequeños emitirían radiación intensa y eventualmente se evaporarían. Ningún agujero negro observable se evaporará antes de que el universo tenga una edad de 10⁶⁷ años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La imagen del EHT del agujero negro de M87 requirió procesar 5 petabytes de datos (5 millones de gigabytes), almacenados en 1,024 discos duros que fueron enviados físicamente por correo aéreo porque transmitirlos por internet habría tardado meses. La resolución angular alcanzada fue de 20 microsegundos de arco, equivalente a leer un periódico en Nueva York desde un café en París. Katie Bouman, una científica informática del MIT de 29 años, desarrolló uno de los algoritmos clave (CHIRP) para reconstruir la imagen a partir de los datos dispersos de los ocho telescopios.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m3/banner_agujeros-negros.png',
+    bannerCaption: 'Agujeros negros: la predicción más extrema de la Relatividad General, confirmada en 2019',
     fact: 'Si pudieras acercarte al horizonte de eventos de un agujero negro, experimentarías un fenómeno llamado "espaguetificación": la diferencia de gravedad entre tus pies (más cerca del agujero negro) y tu cabeza (más lejos) sería tan grande que te estiraría como un espagueti. Para un agujero negro de masa estelar, esto ocurriría antes de cruzar el horizonte. Sin embargo, para un agujero negro supermasivo como el de M87, con 6,500 millones de masas solares, las fuerzas de marea en el horizonte serían sorprendentemente suaves porque el horizonte está a 19,000 millones de kilómetros del centro. Un astronauta podría cruzar el horizonte de eventos sin notar nada inusual, aunque jamás podría regresar para contarlo.',
   },
   {
@@ -272,6 +284,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El sistema GPS fue desarrollado por el Departamento de Defensa de Estados Unidos a partir de 1973 y alcanzó plena capacidad operacional el 17 de julio de 1995 con 24 satélites. Originalmente, la señal civil tenía una degradación intencional llamada "Disponibilidad Selectiva" que limitaba la precisión a 100 metros. El presidente Bill Clinton ordenó desactivarla el 1 de mayo de 2000, mejorando la precisión civil a 10-15 metros. Los sistemas modernos con correcciones diferenciales alcanzan precisiones de centímetros, esenciales para la agricultura de precisión, los vehículos autónomos y la topografía.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En 1976, la NASA lanzó el cohete Gravity Probe A con un reloj de hidrógeno atómico a 10,000 km de altitud. El reloj del cohete se adelantó 4.5 partes en 10¹⁰ respecto a un reloj idéntico en tierra, exactamente como predecía la relatividad general, con una precisión del 0.007%. Fue la primera verificación directa de la dilatación temporal gravitatoria en el espacio. La misión duró solo 1 hora y 55 minutos (era un vuelo suborbital), pero sus datos confirmaron que Einstein tenía razón sobre cómo la gravedad afecta al flujo del tiempo.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m3/banner_gps-vida-cotidiana.png',
+    bannerCaption: 'GPS y vida cotidiana: sin las correcciones relativistas de Einstein tu GPS erraría 10km al día',
     fact: 'Neil Ashby, físico de la Universidad de Colorado, calculó en 2003 que si los ingenieros del GPS hubieran ignorado la relatividad general y solo considerado la mecánica newtoniana, el sistema habría sido inutilizable en menos de dos minutos después de la activación, porque los errores se acumulan cuadráticamente. En un día, la posición indicada diferiría de la real en más de 10 kilómetros, y en una semana, en más de 70 kilómetros. Cada vez que usas Google Maps, pides un taxi por aplicación o sigues la ruta de un paquete de envío, estás dependiendo de una corrección basada en las ecuaciones que Einstein escribió a mano en Berlín hace más de un siglo.',
   },
 ];
@@ -693,6 +707,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (

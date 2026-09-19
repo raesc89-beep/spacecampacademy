@@ -154,6 +154,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El hospital donde nació Einstein en Ulm fue destruido durante un bombardeo aliado en diciembre de 1944, durante la Segunda Guerra Mundial. Hoy, una placa conmemorativa en la Bahnhofstraße 20 marca el lugar aproximado donde estaba la casa natal de Einstein. La ciudad de Ulm celebra su conexión con Einstein cada 14 de marzo, que también es el Día Internacional de las Matemáticas (anteriormente Día de Pi, pues π ≈ 3.14).' },
       { label: 'Dato Científico', icon: 'atom', text: 'La empresa eléctrica de Hermann y Jakob Einstein fue una de las primeras en llevar iluminación eléctrica a Múnich. En 1885 iluminaron la Oktoberfest con sus equipos, compitiendo directamente con grandes compañías como Siemens & Halske. Aunque la empresa tuvo contratos importantes al principio, eventualmente perdió ante competidores más grandes que contaban con mayor capital y capacidad de producción industrial a escala.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m1/banner_ulm-1879.png',
+    bannerCaption: 'Ulm 1879: la ciudad medieval alemana donde nació Albert Einstein el 14 de marzo',
     fact: 'El 14 de marzo de 1879, fecha de nacimiento de Einstein, coincide con el Día de Pi (3/14 en formato de fecha estadounidense). El Congreso de los Estados Unidos declaró oficialmente el 14 de marzo como Día de Pi en 2009, mediante la resolución H.RES.224. Además, Stephen Hawking falleció exactamente el 14 de marzo de 2018, a los 76 años, cerrando un ciclo simbólico entre dos de las mentes más reconocidas de la física moderna. Einstein también compartía año de nacimiento con Max von Laue (1879), futuro ganador del Nobel de Física en 1914 por la difracción de rayos X en cristales.',
   },
   {
@@ -173,6 +175,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Existe un mito popular que dice que Einstein «reprobaba matemáticas en la escuela». Esto es falso. En el sistema de calificaciones suizo, donde 6 es la nota máxima, Einstein obtenía regularmente 5 y 6 en matemáticas y física. La confusión surgió porque en el sistema alemán, 1 es la mejor nota, y algunos biógrafos interpretaron sus calificaciones al revés. Sus notas del examen de ingreso a la ETH Zürich en 1895 muestran calificaciones de 6/6 en álgebra y geometría.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La brújula que tanto cautivó a Einstein funciona gracias al campo magnético terrestre. La Tierra actúa como un gigantesco imán dipolar, con líneas de campo magnético que van del polo sur magnético al polo norte magnético. La intensidad de este campo es de aproximadamente 25 a 65 microteslas en la superficie terrestre. El polo norte magnético se desplaza unos 55 kilómetros por año y en 2025 se encuentra en el Ártico canadiense, a unos 86.5° de latitud norte.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m1/banner_alumno-rebelde.png',
+    bannerCaption: 'El alumno rebelde: Einstein odiaba la memorización mecánica y cuestionaba todo',
     fact: 'Max Talmud, el estudiante de medicina que le regalaba libros a Einstein, tenía 21 años cuando comenzó a visitar a la familia Einstein en 1889. Albert tenía solo diez años. Talmud le llevó los trece volúmenes de los Libros Populares de Ciencias Naturales de Aaron Bernstein, una enciclopedia científica ilustrada que incluía descripciones de experimentos sobre electricidad, luz y óptica. Talmud recordó años después que tras leer la Crítica de la razón pura de Kant, Albert «abandonó su breve fase religiosa y nunca volvió a ella», adoptando una postura escéptica hacia los dogmas que mantendría el resto de su vida.',
   },
   {
@@ -192,6 +196,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El ensayo que Einstein escribió a los dieciséis años, «Über die Untersuchung des Ätherzustandes im magnetischen Felde» (Sobre la investigación del estado del éter en el campo magnético), fue su primer intento de trabajo científico formal. Aunque contenía errores y no fue publicado, ya mostraba su interés por los campos electromagnéticos y la naturaleza de la luz. El manuscrito original se conservó gracias a que su tío Caesar Koch lo guardó y fue publicado póstumamente en las obras completas de Einstein editadas por Princeton.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El servicio militar en el Imperio Alemán a finales del siglo XIX era obligatorio para todos los varones entre 17 y 45 años, con un período activo de dos a tres años seguido de años en la reserva. Al renunciar a su ciudadanía alemana, Einstein también renunció a la protección consular alemana. La ciudadanía suiza, que obtuvo en 1901, le concedió estabilidad legal y un pasaporte con el que viajó por Europa durante los años siguientes. Suiza le exigió un examen médico militar, donde fue declarado no apto para el servicio por tener pies planos y varices.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m1/banner_italia-libertad.png',
+    bannerCaption: 'Italia y la libertad: Einstein abandona Múnich para encontrar su camino intelectual',
     fact: 'El ensayo de Einstein sobre el éter, escrito en Italia a los dieciséis años, ya contenía la semilla de una idea que desafiaría a toda la física: la relación entre campos eléctricos y magnéticos no requería un medio material (el éter) para propagarse. En aquella época, la mayoría de los físicos creían que la luz necesitaba un medio llamado «éter luminífero» para viajar, del mismo modo que el sonido necesita aire. El experimento de Michelson y Morley de 1887 ya había fallado en detectar el éter, pero pocos científicos cuestionaban su existencia. Einstein sería el primero en declarar, en 1905, que el éter simplemente no existía.',
   },
   {
@@ -211,6 +217,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El profesor Heinrich Weber, titular de la cátedra de física en la ETH, le dijo a Einstein una de las frases más irónicas de la historia académica: «Eres un chico muy inteligente, Einstein, pero tienes un gran defecto: no dejas que nadie te enseñe nada». Weber enseñaba física clásica pero se negaba a incluir las ecuaciones de Maxwell en sus clases, algo que frustró profundamente a Einstein. Cuando Albert se graduó en 1900, Weber se negó a recomendarlo para un puesto de asistente, cortando su camino académico convencional.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ETH Zürich (Eidgenössische Technische Hochschule) fue fundada en 1855 por el gobierno federal suizo. Para el año 2025, ha producido 22 ganadores del Premio Nobel, incluyendo a Albert Einstein (1921), Wolfgang Pauli (1945), Richard Ernst (1991) y Kurt Wüthrich (2002). El campus principal se sitúa en la colina de Rämistrasse, en el centro de Zúrich, y el edificio histórico fue diseñado por el arquitecto Gottfried Semper. En el año académico 1896-1900, la matrícula anual era de 100 francos suizos.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m1/banner_politecnica-zurich.png',
+    bannerCaption: 'La Politécnica de Zúrich: donde Einstein estudió física y conoció a Mileva Maric',
     fact: 'Mileva Marić fue una de las primeras mujeres en Europa en estudiar física a nivel universitario. Nació el 19 de diciembre de 1875 en Titel, Serbia (entonces parte del Imperio Austrohúngaro). A pesar de su talento, se enfrentó a barreras constantes: en la ETH, fue la quinta mujer en ser admitida en toda la historia de la institución. Aprobó los exámenes intermedios con un promedio de 4.0, pero no logró superar los exámenes finales de 1900 ni los de 1901, en parte debido a las dificultades de un embarazo no planificado. La hija de Albert y Mileva, llamada Lieserl, nació en enero de 1902 en Novi Sad, y su destino sigue siendo un misterio histórico sin resolver.',
   },
   {
@@ -230,6 +238,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marcel Grossmann, el amigo que consiguió el trabajo en la oficina de patentes para Einstein, también fue crucial en su vida científica. Grossmann era un matemático talentoso que tomaba apuntes meticulosos de todas las clases en la ETH, y Einstein usaba sus notas para preparar los exámenes. Años después, en 1912, Grossmann enseñó a Einstein la geometría diferencial de Riemann y el cálculo tensorial, herramientas matemáticas sin las cuales la teoría de la relatividad general de 1915 habría sido imposible de formular.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Oficina Federal de la Propiedad Intelectual de Berna fue creada en 1888 y sigue existiendo en la actualidad. Cuando Einstein trabajó allí, la oficina ocupaba un edificio en la Speichergasse, en el centro histórico de Berna. En 1905, el año en que publicó sus artículos revolucionarios, la oficina procesaba unas 900 solicitudes de patentes al año. Einstein evaluaba en promedio entre 6 y 8 solicitudes por semana, lo cual le dejaba tiempo suficiente para su investigación personal en las horas muertas del trabajo.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m1/banner_oficina-patentes.png',
+    bannerCaption: 'La oficina de patentes de Berna: donde Einstein preparaba su revolución científica',
     fact: 'La tesis doctoral de Einstein, titulada «Una nueva determinación de las dimensiones moleculares» (Eine neue Bestimmung der Moleküldimensionen), fue presentada en la Universidad de Zúrich el 30 de abril de 1905 y aceptada el 15 de enero de 1906. Su director de tesis fue Alfred Kleiner, profesor de física experimental. La tesis calculaba el radio molecular del azúcar disuelto en agua, obteniendo un valor de aproximadamente 6.2 × 10⁻⁸ centímetros por molécula. Este trabajo, menos conocido que sus otros artículos de 1905, es paradójicamente el más citado de toda su producción científica, con miles de citas en campos como la química coloidal y la biofísica.',
   },
   {
@@ -249,6 +259,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El apartamento de la Kramgasse 49, donde se reunía la Academia Olympia, es hoy el Museo Casa Einstein (Einsteinhaus Bern), abierto al público desde 1979. Conserva muebles de la época y reproducciones de los documentos que Einstein escribió durante sus años en Berna. La Kramgasse es una calle medieval con arcadas del siglo XV en el casco antiguo de Berna, declarado Patrimonio de la Humanidad por la UNESCO en 1983. El museo recibe aproximadamente 30,000 visitantes al año.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ciencia y la hipótesis de Henri Poincaré, publicada en 1902, es uno de los textos que más impacto tuvo en Einstein. En el capítulo sobre la medición del tiempo, Poincaré analizó cómo los observadores en diferentes ubicaciones coordinan sus relojes usando señales luminosas y planteó que la simultaneidad de eventos distantes es una convención, no un hecho absoluto. Einstein leyó este libro en la Academia Olympia en 1903, dos años antes de publicar su artículo sobre la relatividad especial, donde desarrolló estas ideas hasta sus consecuencias más radicales.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m1/banner_amigos-olympia.png',
+    bannerCaption: 'La Academia Olympia: el club de amigos donde Einstein afiló su pensamiento revolucionario',
     fact: 'Conrad Habicht fue el destinatario de una de las cartas más citadas de la historia de la ciencia. En mayo de 1905, Einstein le escribió anunciando sus trabajos del Annus Mirabilis: «Te prometo cuatro artículos... el primero trata sobre la radiación y las propiedades energéticas de la luz, y es muy revolucionario». Esta carta, conservada en los archivos de la ETH Zürich, es el único documento donde Einstein describe simultáneamente los cuatro artículos de 1905 antes de su publicación. Habicht nunca llegó a ser un académico reconocido, pero su contribución a la historia fue guardar esa carta durante más de cincuenta años.',
   },
   {
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Michele Besso es la única persona mencionada por nombre en el artículo original de la relatividad especial de 1905. En el último párrafo, Einstein escribió: «En conclusión, permítaseme señalar que mi amigo y colega M. Besso me proporcionó con constancia una ayuda valiosa y que le debo varias sugerencias estimulantes». Besso nunca reclamó crédito por la relatividad y siguió trabajando toda su vida en la oficina de patentes de Berna, donde permaneció hasta su jubilación en 1938.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El experimento de Michelson y Morley, realizado en Cleveland, Ohio, en 1887, intentó medir la velocidad de la Tierra a través del éter luminífero usando un interferómetro óptico. Si el éter existiera, la velocidad de la luz mediría ligeramente diferente en la dirección del movimiento terrestre que en la dirección perpendicular. El experimento no encontró ninguna diferencia, con una precisión de 8 kilómetros por segundo. Este resultado nulo fue uno de los mayores enigmas de la física del siglo XIX y una de las bases experimentales que Einstein utilizó para formular la relatividad especial.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m1/banner_visperas-revolucion.png',
+    bannerCaption: 'Las vísperas de la revolución: Einstein a punto de cambiar la física en 1905',
     fact: 'Albert Einstein y Michele Besso fueron amigos durante 52 años, desde que se conocieron en un concierto en Zúrich en 1896 hasta la muerte de Besso el 15 de marzo de 1955. Einstein escribió una carta de condolencia a la familia de Besso que contiene una de sus frases más citadas: «Michele se ha adelantado a mí dejando este mundo. Es algo sin importancia. Para nosotros, los físicos convencidos, la distinción entre pasado, presente y futuro es solo una ilusión obstinada, por persistente que sea». Einstein falleció apenas un mes después, el 18 de abril de 1955, a los 76 años, en el Hospital de Princeton, Nueva Jersey.',
   },
 ];
@@ -687,6 +701,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (

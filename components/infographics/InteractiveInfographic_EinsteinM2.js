@@ -144,6 +144,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein envió su tesis doctoral a la Universidad de Zúrich el mismo año que publicó los cuatro artículos. Su tesis trataba sobre un método para determinar el tamaño de las moléculas midiendo la viscosidad de soluciones de azúcar. Fue rechazada inicialmente por ser "demasiado corta". Einstein añadió una sola oración y fue aceptada. Esa tesis se convirtió en su trabajo más citado durante décadas, superando incluso a la relatividad en número de referencias académicas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los cuatro artículos de 1905 abordaron campos diferentes de la física: la teoría cuántica (efecto fotoeléctrico), la mecánica estadística (movimiento browniano), la cinemática (relatividad especial) y la equivalencia masa-energía (E=mc²). La revista Annalen der Physik era editada por Max Planck, quien reconoció la importancia del trabajo de Einstein antes que la mayoría de la comunidad científica. Planck envió a su asistente Max von Laue a investigar quién era ese desconocido autor.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m2/banner_annus-mirabilis.png',
+    bannerCaption: 'El año milagroso 1905: cuatro artículos que revolucionaron la física en un solo año',
     fact: 'Einstein escribió el artículo sobre la relatividad especial en solo cinco semanas, entre finales de mayo y junio de 1905. Lo completó durante sus horas libres mientras trabajaba evaluando patentes de 8:00 a 18:00 horas, seis días a la semana. Según su correspondencia con su amigo Conrad Habicht, fechada el 18 de mayo de 1905, describió el artículo como un trabajo que modificaría "la teoría del espacio y el tiempo". En ese momento, su salario anual era de 3,500 francos suizos.',
   },
   {
@@ -163,6 +165,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein no fue el primero en formular las ecuaciones de la relatividad. Hendrik Lorentz publicó las transformaciones matemáticas en 1904, y Henri Poincaré usó el término "principio de relatividad" en 1905, pocas semanas antes que Einstein. Sin embargo, ambos interpretaron las ecuaciones como efectos dinámicos sobre la materia, mientras que Einstein reinterpretó el espacio y el tiempo mismos. Por eso la teoría lleva el nombre de Einstein y no de Lorentz o Poincaré. La diferencia no fue matemática sino conceptual.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La velocidad de la luz en el vacío (299,792,458 m/s) es tan fundamental que desde 1983 el metro se define en función de ella: un metro es la distancia que la luz recorre en el vacío en exactamente 1/299,792,458 de segundo. Esto significa que la velocidad de la luz es exacta por definición, no por medición. El experimento de Michelson y Morley en 1887 demostró que la velocidad de la luz es constante en todas las direcciones, descartando la existencia del "éter luminífero" que los físicos del siglo XIX consideraban necesario.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m2/banner_postulados-relatividad.png',
+    bannerCaption: 'Los dos postulados de la relatividad especial: la revolución del espacio y el tiempo',
     fact: 'El artículo original de Einstein sobre la relatividad especial no contiene ni una sola referencia bibliográfica a otros artículos científicos, algo extremadamente inusual incluso en 1905. Einstein solo mencionó a Newton y Maxwell en el texto. Según el historiador de la ciencia John Stachel, esto se debió en parte a que Einstein trabajaba aislado de la comunidad académica en su oficina de patentes y no tenía acceso regular a las publicaciones más recientes de Lorentz y Poincaré.',
   },
   {
@@ -182,6 +186,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El astronauta Serguéi Krikaliov acumula el récord de dilatación temporal humana. Pasó 803 días en órbita a bordo de la Estación Espacial Internacional y la estación Mir, viajando a unos 27,600 km/h. Según los cálculos de la relatividad especial, Krikaliov es aproximadamente 0.02 segundos más joven que si hubiera permanecido en la Tierra durante ese mismo período. Viajó literalmente una fracción de segundo al futuro respecto a las personas en la superficie terrestre.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En el acelerador de partículas del CERN en Ginebra, los protones circulan al 99.999999% de la velocidad de la luz. A esa velocidad, el factor de Lorentz γ es aproximadamente 7,454, lo que significa que un segundo para el protón equivale a más de dos horas en el laboratorio. Estas partículas recorren el anillo de 27 kilómetros del Gran Colisionador de Hadrones (LHC) unas 11,245 veces por segundo, y los físicos deben calcular los efectos relativistas con extrema precisión para interpretar correctamente los resultados de las colisiones.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m2/banner_dilatacion-temporal.png',
+    bannerCaption: 'Dilatación temporal: el tiempo corre más lento para objetos que se mueven rápido',
     fact: 'En 2010, investigadores del Instituto Nacional de Estándares y Tecnología (NIST) de Estados Unidos demostraron la dilatación temporal con relojes ópticos de aluminio separados por una diferencia de altitud de solo 33 centímetros. El reloj ubicado más abajo (más cerca del centro de la Tierra y por tanto en un campo gravitatorio más intenso) marchaba más lentamente que el reloj superior, con una diferencia de 4 partes en 10^17 por cada metro de altitud. Este resultado confirmó que la dilatación del tiempo no requiere velocidades cósmicas: ocurre en tu propia habitación.',
   },
   {
@@ -201,6 +207,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En el Gran Colisionador de Hadrones del CERN, los núcleos de plomo se aceleran hasta el 99.9999991% de la velocidad de la luz. A esa velocidad, un núcleo de plomo, que normalmente es esférico con un diámetro de 14 femtómetros, se contrae hasta parecer un disco plano de solo 0.0003 femtómetros de grosor en la dirección del movimiento. Los físicos deben tener en cuenta esta geometría extrema al calcular las colisiones entre los núcleos acelerados en direcciones opuestas dentro del acelerador.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La contracción de la longitud genera lo que los físicos llaman "la paradoja del granero y la escalera". Si una escalera de 10 metros se mueve al 87% de la velocidad de la luz, un observador en un granero de 5 metros la vería contraída a 5 metros, cabiendo dentro. Pero desde la perspectiva de la escalera, el granero está contraído a 2.5 metros y la escalera no cabe. La resolución radica en la relatividad de la simultaneidad: los observadores no coinciden sobre qué eventos ocurren "al mismo tiempo", y ambas descripciones son consistentes.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m2/banner_contraccion-longitud.png',
+    bannerCaption: 'Contracción de longitud: los objetos se acortan en la dirección de movimiento al acercarse a c',
     fact: 'La contracción de la longitud tiene una consecuencia interesante para los viajes interestelares. Si una nave viajara al 99.99% de la velocidad de la luz hacia Alfa Centauri (a 4.37 años luz de distancia), sus tripulantes medirían la distancia como solo 0.062 años luz, aproximadamente 586 mil millones de metros en lugar de los 41.3 billones de metros reales. El viaje, que desde la Tierra dura 4.37 años, para los tripulantes duraría solo 22.5 días. Sin embargo, cuando llegaran, habrían pasado 4.37 años en la Tierra.',
   },
   {
@@ -220,6 +228,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein no escribió originalmente E=mc². En su artículo de 1905, expresó la relación como L = mv², donde L era la energía cinética perdida y v la velocidad de la luz (usaba v en lugar de c). La notación moderna E=mc² fue popularizada por otros físicos en las décadas siguientes. Además, la ecuación completa para objetos en movimiento es E² = (mc²)² + (pc)², donde p es el momento lineal. La versión E=mc² aplica solo a objetos en reposo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La bomba atómica lanzada sobre Hiroshima el 6 de agosto de 1945 contenía 64 kilogramos de uranio-235, pero solo unos 700 miligramos de masa (menos de un gramo) se convirtieron en energía. Esa fracción liberó una explosión equivalente a 15,000 toneladas de TNT. Einstein no participó en la construcción de la bomba, pero en 1939 firmó una carta al presidente Roosevelt advirtiendo sobre la posibilidad de que Alemania desarrollara armas nucleares, lo que impulsó el Proyecto Manhattan.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m2/banner_equivalencia-masa-energia.png',
+    bannerCaption: 'E=mc²: la equivalencia masa-energía, la ecuación más famosa de la historia',
     fact: 'En la vida cotidiana, E=mc² opera de formas sutiles pero reales. Cuando un resorte se comprime, su masa aumenta en una cantidad minúscula porque la energía potencial elástica almacenada tiene masa equivalente. Cuando calientas un kilogramo de agua de 20°C a 100°C, su masa aumenta en aproximadamente 3.7 × 10^-12 kilogramos (3.7 picogramos). Cuando una batería de teléfono está cargada, pesa más que cuando está descargada, aunque la diferencia es de solo 10^-11 gramos, indetectable con cualquier balanza existente.',
   },
   {
@@ -239,6 +249,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El experimento de Hafele-Keating costó solo 8,000 dólares en boletos de avión, un presupuesto ridículo para un experimento que confirmó una teoría fundamental de la física. Hafele y Keating compraron asientos de primera clase para los relojes atómicos y los acompañaron en los vuelos. Las aerolíneas Pan Am y TWA colaboraron proporcionando los asientos. El artículo, publicado en la revista Science en julio de 1972, se convirtió en uno de los trabajos más citados de la física experimental.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La aniquilación de materia y antimateria es la confirmación más pura de E=mc². Cuando un electrón colisiona con su antipartícula (un positrón), ambas partículas se aniquilan por completo y toda su masa se convierte en energía en forma de dos fotones gamma. La masa combinada del par electrón-positrón es de 1.82 × 10^-30 kg, y la energía resultante es exactamente 1.022 MeV, el valor predicho por E=mc². Este proceso se utiliza en la tomografía por emisión de positrones (PET) para diagnóstico médico.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m2/banner_evidencia-experimental.png',
+    bannerCaption: 'Evidencia experimental: múltiples experimentos confirman la relatividad especial',
     fact: 'En 2011, la colaboración OPERA del laboratorio Gran Sasso en Italia anunció que había detectado neutrinos viajando más rápido que la luz, lo que habría refutado la relatividad especial. La noticia generó una conmoción mundial. Después de meses de revisiones, se descubrió que un cable de fibra óptica mal conectado en el sistema de cronometraje causaba un error de 73 nanosegundos. Una vez corregido el cable, los neutrinos viajaban exactamente a la velocidad esperada. La relatividad especial sobrevivió intacta a su prueba más mediática.',
   },
   {
@@ -258,6 +270,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los ingenieros del sistema GPS debatieron durante los años 1970 si incluir las correcciones relativistas en los relojes de los satélites. Algunos argumentaban que los efectos serían demasiado pequeños para importar. Se decidió incluir un mecanismo de corrección pero dejarlo desactivado al principio para probar. Cuando se activó el primer satélite sin corrección, el error de posición creció a razón de 10 km por día. Las correcciones relativistas se activaron de inmediato y han funcionado continuamente desde entonces en todos los satélites GPS.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La energía nuclear de fisión es aproximadamente un millón de veces más densa que la energía química. Un kilogramo de uranio-235 completamente fisionado libera 8.2 × 10^13 julios, mientras que un kilogramo de gasolina produce solo 4.6 × 10^7 julios. La diferencia se debe a que las reacciones nucleares convierten una fracción de la masa en energía (según E=mc²), mientras que las reacciones químicas solo reorganizan electrones sin cambiar la masa de los núcleos atómicos. El proyecto ITER, en Cadarache, Francia, busca lograr la fusión nuclear controlada para 2035.' },
     ],
+    bannerImage: '/assets/einstein/infographic_m2/banner_relatividad-cotidiana.png',
+    bannerCaption: 'Relatividad en lo cotidiano: GPS, medicina nuclear y energía atómica dependen de Einstein',
     fact: 'La relatividad especial tiene un impacto directo en la seguridad de la aviación moderna. Los sistemas de navegación por satélite utilizados por todos los aviones comerciales dependen de correcciones relativistas para funcionar con precisión. El estándar WAAS (Wide Area Augmentation System) de la FAA corrige tanto los efectos de la relatividad especial como los de la general para garantizar una precisión de posicionamiento de 1 a 2 metros. Sin estas correcciones, basadas en las ecuaciones de Einstein de 1905, los aviones no podrían realizar aterrizajes instrumentales con la seguridad requerida.',
   },
 ];
@@ -674,6 +688,23 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+
 
         {/* Video Player */}
         {node.video && (
