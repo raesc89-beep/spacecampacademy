@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -156,6 +156,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cecilia Payne tenía una memoria casi fotográfica. Después de asistir a una conferencia del físico Ernest Rutherford en Cambridge, pudo recitar el contenido de la charla palabra por palabra. Esta capacidad no era simple memorización: Cecilia comprendía profundamente lo que escuchaba, lo que le permitía establecer conexiones entre disciplinas que otros científicos no percibían. Su profesor Eddington la describió como una de las mentes más agudas que había encontrado en su carrera.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Wendover, el pueblo natal de Cecilia, se encuentra a unos 60 kilómetros al noroeste de Londres, en los Chiltern Hills. A principios del siglo XX, la contaminación lumínica era mínima en esta zona rural, lo que permitía observaciones del cielo nocturno con una claridad que hoy resulta difícil de imaginar en el sur de Inglaterra. Las condiciones de oscuridad natural de Wendover probablemente contribuyeron a la temprana fascinación de Cecilia con las estrellas y los fenómenos celestes.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m1/banner_infancia-wendover.png',
+    bannerCaption: 'La infancia de Cecilia Payne en Wendover: curiosidad astronómica desde niña',
     fact: 'Elena Cornaro Piscopia se convirtió en la primera mujer en obtener un doctorado universitario en 1678, en la Universidad de Padua, Italia. Después de ella, transcurrieron casi 200 años antes de que otra mujer alcanzara ese mismo logro académico. Cuando Cecilia Payne nació en 1900, la educación superior para mujeres seguía siendo una excepción en Europa. En el Reino Unido, el primer doctorado otorgado a una mujer fue el de Eliza Archard en 1882 en la Universidad de Londres, pero Cambridge, donde Cecilia estudiaría, no concedió títulos completos a mujeres hasta 1948.',
   },
   {
@@ -175,6 +177,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La expedición de Eddington al eclipse de 1919 casi fracasa. El día del eclipse, 29 de mayo, amaneció nublado en la isla de Príncipe. Las nubes se abrieron parcialmente durante los cinco minutos de totalidad, permitiendo tomar fotografías que confirmaron la predicción de Einstein. Si las nubes no se hubieran despejado, la verificación de la relatividad general se habría retrasado años, y quizás Cecilia nunca habría asistido a la conferencia que cambió su vida.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La deflexión de la luz estelar medida por Eddington fue de aproximadamente 1.75 segundos de arco, exactamente la cantidad predicha por la relatividad general de Einstein. La mecánica newtoniana predecía la mitad de ese valor (0.87 segundos de arco). La diferencia, aunque minúscula para el ojo humano, estableció que la gravedad no es una fuerza sino una curvatura del espacio-tiempo causada por la masa, una revolución conceptual que transformó toda la física del siglo XX.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m1/banner_cambridge-eddington.png',
+    bannerCaption: 'Cecilia en Cambridge escucha la conferencia de Eddington que cambia su destino',
     fact: 'El Newnham College de Cambridge fue fundado en 1871 por Henry Sidgwick y Anne Jemima Clough. En sus primeros años, tenía solo cinco estudiantes. Cuando Cecilia llegó en 1919, el college contaba con unos 200 miembros, pero las mujeres seguían sin poder obtener títulos de la Universidad de Cambridge. Esta política discriminatoria se mantuvo hasta 1948, un cuarto de siglo después de que Cecilia completara sus estudios allí. Las primeras mujeres en recibir títulos completos de Cambridge lo hicieron en una ceremonia especial celebrada el 21 de enero de 1948.',
   },
   {
@@ -194,6 +198,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Annie Jump Cannon, a quien Cecilia conoció en Harvard, clasificó más de 350,000 estrellas durante su carrera, creando el sistema de clasificación espectral O-B-A-F-G-K-M que los astrónomos siguen usando hoy. Los estudiantes de astronomía memorizan esta secuencia con la frase mnemotécnica en inglés: "Oh, Be A Fine Girl/Guy, Kiss Me." Cannon podía clasificar hasta tres estrellas por minuto examinando sus espectros fotográficos, un récord que ningún ser humano ha superado.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La colección de placas fotográficas de Harvard, acumulada entre 1885 y 1993, contiene aproximadamente 525,000 placas de vidrio que registran más de un siglo de observaciones celestes. Cada placa mide entre 20 y 35 centímetros y captura miles de estrellas en una sola exposición. Esta colección ha sido digitalizada por el programa DASCH (Digital Access to a Sky Century at Harvard) desde 2005, permitiendo a los astrónomos modernos estudiar cómo han cambiado las estrellas a lo largo de más de cien años.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m1/banner_viaje-harvard.png',
+    bannerCaption: 'El viaje de Cecilia Payne de Cambridge a Harvard en 1923',
     fact: 'Henrietta Swan Leavitt, una de las "calculadoras de Harvard" que precedió a Cecilia, descubrió en 1912 la relación período-luminosidad de las estrellas Cefeidas variables: cuanto más lento pulsa una Cefeida, más luminosa es en realidad. Esta relación permitió por primera vez medir distancias a galaxias lejanas. Edwin Hubble utilizó el descubrimiento de Leavitt en 1924 para demostrar que la galaxia de Andrómeda está fuera de la Vía Láctea, probando que el universo es mucho más grande de lo que nadie imaginaba. Leavitt nunca recibió reconocimiento proporcional a la importancia de su hallazgo.',
   },
   {
@@ -213,6 +219,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La espectroscopía, la técnica que Cecilia dominó, se basa en un principio descubierto en 1814 por Joseph von Fraunhofer, quien observó 574 líneas oscuras en el espectro solar. En 1859, Gustav Kirchhoff y Robert Bunsen demostraron que cada elemento químico produce un patrón único de líneas espectrales. El helio fue descubierto primero en el sol (1868) por Pierre Janssen y Norman Lockyer antes de ser encontrado en la Tierra (1895). Su nombre proviene de "helios," la palabra griega para sol.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ecuación de ionización de Saha (1920) establece que la proporción de átomos ionizados respecto a los neutros en un gas depende exponencialmente de la temperatura y de la energía de ionización del elemento. Para el hidrógeno, la energía de ionización es 13.6 electronvoltios (eV). A la temperatura superficial del sol (5,778 Kelvin), la mayoría del hidrógeno está neutro, produciendo líneas de la serie de Balmer. Pero en estrellas más calientes (tipo O, sobre 30,000 K), el hidrógeno está totalmente ionizado y sus líneas desaparecen.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m1/banner_tesis-astronomia.png',
+    bannerCaption: 'La tesis doctoral de Cecilia: el Sol está hecho principalmente de hidrógeno y helio',
     fact: 'Si pudieras tomar toda la masa del sol (1.989 × 10³⁰ kilogramos) y separar sus componentes, obtendrías aproximadamente 1.47 × 10³⁰ kg de hidrógeno, 4.89 × 10²⁹ kg de helio y apenas 2.69 × 10²⁸ kg de todos los demás elementos combinados. Expresado de otra forma: por cada átomo de hierro en el sol hay aproximadamente 31,600 átomos de hidrógeno. Cecilia Payne fue la primera persona en establecer estas proporciones con evidencia cuantitativa en 1925, cambiando para siempre nuestra comprensión de la composición del universo.',
   },
   {
@@ -232,6 +240,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El diagrama Hertzsprung-Russell, desarrollado independientemente por Ejnar Hertzsprung (1911) y Henry Norris Russell (1913), clasifica las estrellas según su luminosidad (brillo real) y su temperatura superficial (determinada por el color). La mayoría de las estrellas caen en una banda diagonal llamada "secuencia principal." El sol se ubica aproximadamente en el medio de esta secuencia. Este diagrama solo adquirió sentido completo cuando el descubrimiento de Cecilia reveló que todas las estrellas de la secuencia principal comparten la misma composición básica.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El efecto Matilda tiene ejemplos documentados en múltiples campos científicos. Jocelyn Bell Burnell descubrió los púlsares en 1967 como estudiante doctoral en Cambridge, pero el Premio Nobel de Física de 1974 fue otorgado a su supervisor Antony Hewish y a Martin Ryle. Rosalind Franklin produjo la "Fotografía 51" de difracción de rayos X del ADN en 1952, crucial para que Watson y Crick dedujeran la estructura de doble hélice, pero el Nobel de 1962 fue para Watson, Crick y Wilkins. Franklin había fallecido en 1958.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m1/banner_rechazo-russell.png',
+    bannerCaption: 'Russell rechazó el descubrimiento de Cecilia, pero años después confirmó su veracidad',
     fact: 'Cuando Russell publicó su artículo de 1929 confirmando que las estrellas son predominantemente hidrógeno, incluyó una nota a pie de página reconociendo el trabajo previo de Cecilia Payne. La nota decía textualmente que los resultados de Payne habían "anticipado" la misma conclusión. Sin embargo, esta nota era insuficiente para equilibrar el peso de una publicación firmada por el astrónomo más influyente de la época. Los libros de texto de astronomía de las décadas de 1930 a 1960 citaban a Russell como la fuente primaria del descubrimiento, y la contribución de Cecilia fue progresivamente recuperada solo a partir de los años 1970.',
   },
   {
@@ -251,6 +261,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cecilia enseñó astronomía en Harvard durante décadas sin aparecer en el catálogo oficial. Los estudiantes que tomaban sus cursos sabían que estaban aprendiendo de una de las mentes más brillantes de la disciplina, pero administrativamente, esos cursos no existían como suyos. Uno de sus estudiantes, Jesse Greenstein, quien más tarde se convertiría en un astrónomo distinguido en Caltech, describió sus clases como "las más estimulantes y rigurosas que recibí en mi formación," a pesar de su estatus informal.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las estrellas variables, el campo de investigación principal de Cecilia después de su tesis, son estrellas cuyo brillo cambia periódicamente. Existen varios tipos: las Cefeidas pulsan con períodos de días a semanas, las RR Lyrae con períodos de horas, y las Mira con períodos de meses a años. Las variables cataclísmicas, como las novas, aumentan su brillo miles de veces en erupciones violentas. Cecilia y Sergei catalogaron más de tres millones de observaciones de brillo de estas estrellas durante su carrera conjunta.' },
     ],
+    bannerImage: '/assets/cecilia/infographic_m1/banner_carrera-harvard.png',
+    bannerCaption: 'Cecilia Payne se convierte en la primera mujer catedrática de Harvard en 1956',
     fact: 'Harvard no admitió formalmente a mujeres como estudiantes de grado hasta 1943 (durante la Segunda Guerra Mundial) y no las integró completamente con los estudiantes masculinos hasta 1977. El Radcliffe College, la institución asociada para mujeres, funcionó como una entidad separada hasta su fusión completa con Harvard en 1999. Cuando Cecilia obtuvo su doctorado en 1925, su título técnicamente provenía de Radcliffe, no de Harvard, aunque toda su investigación se realizó en instalaciones de Harvard y bajo la supervisión de profesores de Harvard.',
   },
   {
@@ -687,6 +699,22 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
 
         {/* ——— Video Section (conditional) ——— */}
         {node.video && (

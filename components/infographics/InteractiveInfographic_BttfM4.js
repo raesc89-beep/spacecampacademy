@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -158,6 +158,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Doc Brown utiliza una pizarra para explicar a Marty cómo sus acciones han alterado la naturaleza de su tiempo. Dibuja una línea de tiempo recta y luego muestra cómo se divide en un 1985 alternativo. Esta es una brillante visualización de la idea de que el tiempo puede tomar múltiples direcciones dependiendo de nuestras elecciones.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'A nivel fundamental de la física cuántica, muchas ecuaciones funcionan igual de bien hacia adelante o hacia atrás en el tiempo. La dirección del tiempo no está codificada en las leyes más básicas del universo, lo que ha llevado a algunos físicos a sugerir que el flujo del tiempo podría ser una ilusión.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m4/banner_naturaleza-tiempo.png',
+    bannerCaption: 'La naturaleza filosófica y física del tiempo como dimensión fundamental',
     fact: 'San Agustín, en el siglo IV, propuso que el pasado y el futuro no existen realmente; solo existe un "presente continuo" en la mente humana. Esta antigua idea sigue debatiéndose entre los físicos teóricos de hoy en día.'
   },
   {
@@ -176,6 +178,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Hay momentos en la saga donde Marty y Doc experimentan los mismos eventos desde perspectivas de tiempo totalmente diferentes. En la primera película, el "presente" de Marty en 1985 ocurre simultáneamente con el "futuro" que el Doc original de 1955 está intentando cambiar. Sus líneas temporales personales se cruzan de forma fascinante.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Debido a la velocidad a la que la luz viaja desde las estrellas, siempre estamos viendo el pasado. Si la estrella Betelgeuse explotara hoy mismo, los humanos no se enterarían hasta dentro de unos 600 años. Por lo tanto, el concepto de "simultaneidad" a escalas cósmicas pierde su significado habitual.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m4/banner_simultaneidad.png',
+    bannerCaption: 'Simultaneidad relativa: dos observadores ven los mismos eventos en diferente orden',
     fact: 'Si te estás moviendo rápidamente respecto a una persona en la otra punta del universo, tu "ahora" podría incluir eventos que para ellos ocurrieron en el siglo XIX, o eventos que sucederán en el siglo XXII.'
   },
   {
@@ -194,6 +198,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Cuando el viejo Biff le entrega el almanaque deportivo a su yo joven, desata una cascada de eventos que aumenta drásticamente el "desorden" (la entropía) de la línea temporal. El Hill Valley pacífico se convierte en un caos dominado por el crimen. Es una representación metafórica perfecta de cómo el caos tiende a dominar si se altera el orden inicial.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Ludwig Boltzmann, quien formuló las ecuaciones de la entropía, sugirió que tal vez vivimos en una rara burbuja de baja entropía dentro de un multiverso inmenso. Esta idea ayudó a sentar las bases de la cosmología moderna.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m4/banner_entropia.png',
+    bannerCaption: 'La entropía define la flecha del tiempo hacia mayor desorden',
     fact: 'El hielo derritiéndose en un vaso de agua es un ejemplo perfecto del aumento de entropía. El calor se distribuye y las moléculas de agua se vuelven más caóticas. ¡El flujo del tiempo se puede medir con un cubo de hielo!'
   },
   {
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Uno de los elementos visuales más icónicos de BTTF es la fotografía de la familia de Marty. A medida que él altera el pasado, sus hermanos (y eventualmente él mismo) comienzan a borrarse de la foto. Esto ilustra cómo las alteraciones temporales destruyen las pruebas físicas (como fotos o memorias) del pasado original.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los ordenadores también tienen una flecha del tiempo ligada a la memoria. El Principio de Landauer establece que borrar un solo bit de información en un ordenador siempre liberará una pequeña cantidad de calor. La memoria y la entropía térmica están unidas.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m4/banner_memoria-tiempo.png',
+    bannerCaption: 'La memoria y la percepción psicológica del tiempo en el cerebro humano',
     fact: 'El "presente" que percibes tiene en realidad unos 80 milisegundos de retraso. El cerebro tarda ese tiempo en juntar la información de la vista, el oído y el tacto, para crear un momento coherente. ¡Siempre vives en el pasado reciente!'
   },
   {
@@ -230,6 +238,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'El momento exacto en que el rayo golpea la torre del reloj (a las 10:04 pm) requiere una transferencia precisa de energía cuántica. Doc Brown tiene que calcular el milisegundo exacto para que la energía canalice hacia el condensador de flujo. Es una metáfora de los eventos cuánticos precisos y repentinos que cambian el curso del universo.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Un experimento famoso conocido como el "Borrador Cuántico de Elección Retardada" sugiere que, a escala subatómica, una medición en el presente puede aparentemente influir en el estado de un fotón en el pasado. ¡El tiempo a nivel cuántico es verdaderamente extraño!' }
     ],
+    bannerImage: '/assets/bttf/infographic_m4/banner_cuantica-tiempo.png',
+    bannerCaption: 'El tiempo en la mecánica cuántica: discreto, continuo y bidireccional',
     fact: 'Las partículas cuánticas pueden entrar en un estado de superposición donde están, de alguna forma, "fuera" del flujo normal del tiempo. Solo interactúan con la historia cuando se enredan con el mundo macroscópico.'
   },
   {
@@ -248,6 +258,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al año 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad holográfica. Aunque la película sobreestimó algunas tecnologías, la idea de dar un"salto" y encontrar una sociedad transformada por la innovación tecnológica captura la esencia del viaje hacia el futuro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Partículas subatómicas llamadas muones, que se crean cuando los rayos cósmicos chocan con la atmósfera, duran tan poco que deberían desintegrarse antes de llegar al suelo. Sin embargo, llegan a la superficie porque viajan casi a la velocidad de la luz, lo que "ralentiza" su reloj interno. ¡Ellos experimentan su propio viaje al futuro!' }
     ],
+    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-futuro.png',
+    bannerCaption: 'El viaje al futuro ya es posible: dilatación del tiempo en cohetes y satélites',
     fact: 'Si pudieras viajar en una nave al 99.99% de la velocidad de la luz durante lo que para ti sería 1 año, al volver a la Tierra descubrirías que han pasado casi 70 años. ¡Habrías saltado al futuro de la humanidad!'
   },
   {
@@ -266,6 +278,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'La trama de la primera película gira exactamente en torno al peligro del viaje al pasado. Al interactuar con sus padres adolescentes en 1955, Marty rompe la cadena causal que lleva a su propio nacimiento, corriendo el riesgo de ser borrado de la existencia. Él debe actuar como un "reparador" de la línea temporal para salvarse.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Kip Thorne descubrió matemáticamente que podrías, en teoría, convertir un agujero de gusano en una máquina para viajar al pasado moviendo uno de sus extremos a casi la velocidad de la luz y luego trayéndolo de vuelta.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-pasado.png',
+    bannerCaption: 'Los obstáculos físicos que impiden el viaje al pasado',
     fact: 'A nivel de las matemáticas puras de Einstein, viajar al pasado está permitido. Son las complicaciones y paradojas lógicas posteriores las que hacen que los físicos sospechen que el universo debe tener un mecanismo oculto para prohibirlo.'
   }
 ];
@@ -696,6 +710,22 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             </div>
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
 
         {/* â”€â”€â”€ Fact Box â”€â”€â”€ */}
         <motion.div

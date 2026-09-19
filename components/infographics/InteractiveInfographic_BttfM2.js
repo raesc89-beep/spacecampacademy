@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -165,6 +165,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Si pudieras viajar al 99.9% de la velocidad de la luz, el tiempo pasaría para ti 22 veces más lento. Un viaje de 1 año para ti serían 22 años en la Tierra. ¡Volverías al futuro como Marty McFly!' },
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown dice que el tiempo es la "cuarta dimensión". ¡Esto es correcto! Einstein unificó las tres dimensiones del espacio con el tiempo en un concepto llamado"espacio-tiempo" de cuatro dimensiones.' },
     ],
+    bannerImage: '/assets/bttf/infographic_m2/banner_relatividad-basico.png',
+    bannerCaption: 'Las bases de la relatividad especial de Einstein y la dilatación del tiempo',
     fact: 'Los muones â€” partículas diminutas creadas cuando los rayos cósmicos golpean la atmósfera â€” viajan al 99.94% de la velocidad de la luz. Deberían desintegrarse antes de llegar al suelo, pero gracias a la dilatación temporal, el tiempo pasa tan lento para ellos que SÍ llegan. ¡La relatividad ocurre sobre nuestras cabezas todos los días!',
   },
   {
@@ -183,6 +185,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las zapatillas Nike Mag de "Regreso al Futuro II" se hicieron realidad. Nike presentó en 2016 las Nike HyperAdapt con sistema de ajuste automático real. Solo se fabricaron 89 pares de las Mag originales, subastadas por hasta $200,000 dólares cada par para caridad.' },
       { label: 'Dato Científico', icon: 'atom', text: '1.21 gigawatts no es una cifra descabellada. La estación espacial ISS usa solo 120 kilowatts de energía solar. Un rayo produce entre 1 y 5 gigawatts, pero solo durante 30 microsegundos. La fusión nuclear controlada (como en ITER, Francia) podría producir 500 megawatts â€” todavía menos que lo que necesita el DeLorean.' },
     ],
+    bannerImage: '/assets/bttf/infographic_m2/banner_delorean-velocidad.png',
+    bannerCaption: 'El DeLorean alcanza las 88 mph y activa el desplazamiento temporal',
     fact: 'El número "88 mph"fue elegido por los guionistas Bob Gale y Robert Zemeckis porque les gustó cómo se veía"88" en el velocímetro del DeLorean. No tiene ningún significado científico. Sin embargo, en el sistema métrico, 88 mph = 141.62 km/h, que casualmente es la velocidad máxima real que alcanzaba el DMC-12 original.',
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro» (1985), la escena más icónica del DeLorean muestra el indicador de velocidad llegando exactamente a 88 mph mientras Marty viaja por Courthouse Square en la lluvia de 1955. Las ruedas traseras echan chispas al rebasar esa velocidad umbral y el auto desaparece dejando marcas de fuego en el asfalto. Doc Brown explica que 88 mph fue el valor elegido porque en 1985 era una velocidad "suficientemente alta para ser dramática pero alcanzable en una calle recta". La cifra se convirtió en referencia cultural: cuando en 2011 la empresa Tesla presentó un auto eléctrico de alto rendimiento, los fans calcularon inmediatamente cuánto tardaba en alcanzar las 88 mph (2.9 segundos).' },
@@ -204,6 +208,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Marty no es el único que casi causa una paradoja. En BTTF II, el viejo Biff roba el DeLorean y se da el almanaque deportivo a sí mismo en 1955, creando una línea temporal alternativa donde es millonario y Hill Valley es un desastre. Doc explica que el viaje creó una "tangente temporal" â€” una rama del tiempo.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El filósofo David Lewis argumentó en 1976 que no hay paradoja real: si viajaras al pasado para "matar a tu abuelo", algo SIEMPRE lo impediría â€” te resbalarias, fallarías el tiro, cambiarías de opinión. El universo conspiraría para mantener la consistencia. ¡Es como si la realidad tuviera un sistema inmunológico!' },
     ],
+    bannerImage: '/assets/bttf/infographic_m2/banner_paradoja-abuelo.png',
+    bannerCaption: 'La paradoja del abuelo: el dilema lógico del viaje al pasado',
     fact: 'En la física real, el concepto más cercano a una "paradoja temporal" ocurre a nivel cuántico. Las partículas de antimateria (como el positrón) se comportan matemáticamente como si fueran partículas normales viajando hacia atrás en el tiempo. El físico Richard Feynman propuso esta interpretación en 1949, ¡y las matemáticas funcionan perfectamente!',
   },
   {
@@ -222,6 +228,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Dato Científico', icon: 'atom', text: 'La ecuación más famosa del mundo, E=mcÂ², dice que la energía (E) es igual a la masa (m) multiplicada por la velocidad de la luz al cuadrado (cÂ²). Como c = 300,000 km/s, cÂ² es un número ENORME. Por eso una cantidad diminuta de masa contiene una cantidad colosal de energía. Una moneda de 1 centavo contiene suficiente energía (según E=mcÂ²) para abastecer a una ciudad pequeña durante varios días.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein no ganó el Nobel por la relatividad sino por explicar el efecto fotoeléctrico (cómo la luz arranca electrones de los metales). El comité Nobel consideró la relatividad "demasiado teórica" en 1921. Hoy usamos el efecto fotoeléctrico en paneles solares y cámaras digitales.' },
     ],
+    bannerImage: '/assets/bttf/infographic_m2/banner_einstein-relatividad.png',
+    bannerCaption: 'Einstein y su teoría de la relatividad que redefinió el tiempo y el espacio',
     fact: 'El astronauta Scott Kelly pasó 340 días en la Estación Espacial Internacional (que orbita a 27,600 km/h). Cuando regresó, era 8.6 milisegundos más joven que su hermano gemelo Mark Kelly (también astronauta). ¡La paradoja de los gemelos ocurrió literalmente! Scott viajó una fracción infinitesimal al futuro.',
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'La película introduce la dilatación temporal de Einstein de forma accesible: cuando Doc le explica a Marty que el DeLorean viaja en el tiempo, muestra su propia demostración con Einstein el perro, el primer pasajero de la máquina. Doc envía a Einstein 1 minuto al futuro y el perro regresa sin haber envejecido subjetivamente ese minuto. Este momento es una demostración cinematográfica de la relatividad especial: el tiempo del pasajero (Einstein-perro) transcurre más lento respecto al observador externo (Doc). El nombre del perro fue elegido deliberadamente como homenaje a Albert Einstein, cuya teoría fundamenta todo el concepto de la película.' },
@@ -243,6 +251,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Cuando Biff altera 1955 con el almanaque, Doc explica que creó una "tangente temporal" â€” una línea alternativa del tiempo. En esta versión, Hill Valley es un paraíso del crimen y Biff es dueño de un casino. Doc y Marty deben volver a 1955 para restaurar la línea original. ¡Puro Everett en acción!' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Hugh Everett abandonó la física en 1960 porque nadie tomaba en serio su teoría. Se dedicó a trabajar para el Pentágono en análisis matemático militar. Murió en 1982 sin saber que su idea se convertiría en una de las interpretaciones más estudiadas y debatidas de la mecánica cuántica. Su hijo Mark Oliver Everett es el cantante de la banda de rock Eels.' },
     ],
+    bannerImage: '/assets/bttf/infographic_m2/banner_muchos-mundos.png',
+    bannerCaption: 'La teoría cuántica de los muchos mundos y las líneas temporales paralelas',
     fact: 'Si la interpretación de Muchos Mundos es correcta, desde el Big Bang se han creado un número inimaginable de universos paralelos. El físico Max Tegmark calculó que la copia más cercana de ti â€” idéntica átomo por átomo â€” estaría a 10^(10^29) metros de distancia. Eso es un 1 seguido de 100,000,000,000,000,000,000,000,000,000 ceros de metros. ¡Lejos pero existente!',
   },
   {
@@ -261,6 +271,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las zapatillas Nike Mag de la película se hicieron realidad con el sistema "E.A.R.L." (Electro Adaptive Reactive Lacing). Este mecanismo usaba un sensor en el talón que activaba un micromotor a batería, el cual tensaba los cordones automáticamente al detectar el peso del pie del usuario.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El progreso tecnológico avanza más rápido en información que en transporte. En 1969 fuimos a la Luna; en 2026, el cohete más rápido viaja a velocidades similares. Pero la capacidad de computación se ha multiplicado por más de mil millones desde entonces. Por eso tenemos smartphones pero no coches voladores.' },
     ],
+    bannerImage: '/assets/bttf/infographic_m2/banner_predicciones-2015.png',
+    bannerCaption: 'Las predicciones de BTTF para el año 2015: ¿cuáles se hicieron realidad?',
     fact: 'La predicción más profunda de BTTF no fue un gadget sino un concepto social: la película mostró un mundo donde la tecnología está integrada naturalmente en la vida cotidiana, donde las personas interactúan con dispositivos constantemente y la información es ubicua e inmediata. Esto describe perfectamente la realidad de 2015 y más allá. Los guionistas entendieron el ESPÍRITU del futuro, aunque no los detalles.',
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro Parte II» (1989), Marty y Doc viajan al 26 de octubre de 2015. Las predicciones más precisas de la película fueron: videollamadas de alta calidad (FaceTime existe desde 2010), televisores de pantalla plana con múltiples ventanas simultáneas (Smart TVs actuales), tablets y dispositivos portátiles, reconocimiento de huellas digitales para pagos, gafas de realidad aumentada similares a Google Glass, y drones de videocámaras. Entre las predicciones fallidas: hoverboards masivos (solo existen prototipos caros), autos voladores, deshidratador de pizza en 3 segundos y el famoso juicio de O.J. Simpson que la película imaginó resuelto en segundos. Los Chicago Cubs sí ganaron, pero en 2016, no 2015.' },
@@ -282,6 +294,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Stephen Hawking organizó una "Fiesta para Viajeros del Tiempo"el 28 de junio de 2009 en la Universidad de Cambridge. Preparó champán, globos y un cartel de bienvenida... Pero envió las invitaciones DESPUÉS de la fiesta. Su lógica: si el viaje al pasado fuera posible, alguien del futuro habría recibido la invitación y asistido. Nadie vino. Hawking lo consideró"evidencia experimental" de que el viaje al pasado probablemente es imposible.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El físico Kip Thorne (Premio Nobel 2017) demostró en 1988 que los agujeros de gusano PODRÍAN permitir el viaje en el tiempo en teoría, pero requerirían "materia exótica"con energía negativa para mantenerlos abiertos. Aún no sabemos si la materia exótica existe. Thorne fue asesor científico de la película"Interstellar".' },
     ],
+    bannerImage: '/assets/bttf/infographic_m2/banner_ciencia-ficcion.png',
+    bannerCaption: 'La ciencia ficción como catalizadora de la investigación científica real',
     fact: 'Michael J. Fox (Marty McFly) fue diagnosticado con Parkinson a los 29 años. Creó la Fundación Michael J. Fox, que ha recaudado más de $1,500 millones de dólares para investigación del Parkinson â€” más que cualquier otra fundación privada de enfermedad neurológica. La ciencia ficción que interpretó ahora financia ciencia real.',
     expandables: [
       { label: 'En la Película', icon: 'zap', text: 'La trilogía Volver al Futuro estableció el estándar moderno de la ciencia ficción rigurosa en cine. Los escritores Bob Gale y Robert Zemeckis consultaron física real antes de escribir el guion. El condensador de fluzo (flux capacitor) fue diseñado deliberadamente como un dispositivo imposible pero visualmente coherente: tres tubos en Y que generan el "flujo" necesario para el viaje temporal. La película convenció al público de que el tiempo es la "cuarta dimensión" navegable, popularizando conceptos de la relatividad que solo existían en textos académicos. Décadas después, físicos como Kip Thorne (Nobel 2017) citan BTTF como inspiración que despertó su interés por los agujeros de gusano y la causalidad temporal.' },
@@ -704,6 +718,22 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+              {/* Banner image */}
+              {node.bannerImage && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
+                  <img
+                    src={node.bannerImage}
+                    alt={node.bannerCaption || node.title}
+                    className="w-full object-cover"
+                    style={{ maxHeight: '220px' }}
+                  />
+                  {node.bannerCaption && (
+                    <p className="text-xs text-center text-white/50 py-1 px-2 bg-black/20">
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
 
         {/* Fact Box */}
         {node.fact && (
