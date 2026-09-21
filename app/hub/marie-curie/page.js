@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
@@ -15,7 +15,7 @@ const CURIE_MODULES = [
     color: '#00FF88',
     glowColor: 'rgba(0,255,136,0.5)',
     link: '/course/curie_m1',
-    icon: '/assets/marie_curie/curie_m1.png',
+    icon: '/assets/curie/curie_m1.png',
     coords: { left: '15%', top: '55%' },
     symbol: '🇵🇱',
   },
@@ -26,7 +26,7 @@ const CURIE_MODULES = [
     color: '#2ECC71',
     glowColor: 'rgba(46,204,113,0.5)',
     link: '/course/curie_m2',
-    icon: '/assets/marie_curie/curie_m2.png',
+    icon: '/assets/curie/curie_m2.png',
     coords: { left: '35%', top: '30%' },
     symbol: '🗼',
   },
@@ -37,7 +37,7 @@ const CURIE_MODULES = [
     color: '#E8D44D',
     glowColor: 'rgba(232,212,77,0.5)',
     link: '/course/curie_m3',
-    icon: '/assets/marie_curie/curie_m3.png',
+    icon: '/assets/curie/curie_m3.png',
     coords: { left: '55%', top: '58%' },
     symbol: '☢️',
   },
@@ -48,7 +48,7 @@ const CURIE_MODULES = [
     color: '#FFD700',
     glowColor: 'rgba(255,215,0,0.5)',
     link: '/course/curie_m4',
-    icon: '/assets/marie_curie/curie_m4.png',
+    icon: '/assets/curie/curie_m4.png',
     coords: { left: '72%', top: '25%' },
     symbol: '🏅',
   },
@@ -59,7 +59,7 @@ const CURIE_MODULES = [
     color: '#E74C3C',
     glowColor: 'rgba(231,76,60,0.5)',
     link: '/course/curie_m5',
-    icon: '/assets/marie_curie/curie_m5.png',
+    icon: '/assets/curie/curie_m5.png',
     coords: { left: '85%', top: '52%' },
     symbol: '🚑',
   },
@@ -70,7 +70,7 @@ const CURIE_MODULES = [
     color: '#9B59B6',
     glowColor: 'rgba(155,89,182,0.5)',
     link: '/course/curie_m6',
-    icon: '/assets/marie_curie/curie_m6.png',
+    icon: '/assets/curie/curie_m6.png',
     coords: { left: '65%', top: '72%' },
     symbol: '🔬',
   },
@@ -295,7 +295,7 @@ export default function MarieCurieHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#080D08',
-        backgroundImage: "url('/assets/marie_curie/curie_cover.png')",
+        backgroundImage: "url('/assets/curie/curie_cover.png')",
         backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat',
       }}>
         {/* Vignette overlay */}
@@ -393,3 +393,4 @@ export default function MarieCurieHub() {
     </div>
   );
 }
+

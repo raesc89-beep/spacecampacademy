@@ -98,7 +98,7 @@ const INFOGRAPHIC_NODES = [
     color: '#FF6B6B',
     btnImage: '/assets/asteroides/infographic_m1/btn_que-es-asteroide.jpg',
     image: '/assets/asteroides/infographic_m1/hero_que-es-asteroide.jpg',
-    video: { src: '/assets/asteroides/Asteroides y Cometas.mp4', title: 'Introducción: Asteroides y Cometas' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1CxnhsejhTecAqbY0ltW5juW8-w3l61Ur&export=download&authuser=0', title: 'Introducción: Asteroides y Cometas' },
     content: [
       'Imagina que construyes una casa gigante de bloques de piedra. Al terminar tu trabajo, quedan decenas de pequeños fragmentos de rocas esparcidos por el suelo. Eso es exactamente lo que ocurrió cuando se formó nuestro Sistema Solar hace 4,600 millones de años. Los planetas grandes se armaron con la mayor parte del material. Los asteroides son aquellos ladrillos sobrantes que jamás lograron unirse para formar un planeta completo.',
       'A diferencia de las montañas de la Tierra que se erosionan con el viento y el agua, los asteroides han permanecido casi intactos. Son fósiles espaciales congelados en el tiempo. Guardan los secretos químicos de la nube primitiva de polvo y gas que dio origen al Sol. Al estudiar su composición interna, los científicos pueden reconstruir la receta original con la que se cocinó nuestro vecindario cósmico.',
@@ -196,7 +196,7 @@ const INFOGRAPHIC_NODES = [
     color: '#FF884B',
     btnImage: '/assets/asteroides/infographic_m1/btn_colisiones-familias.jpg',
     image: '/assets/asteroides/infographic_m1/hero_colisiones-familias.jpg',
-    video: { src: '/assets/asteroides/Asteroides 2.mp4', title: 'Colisiones y Fragmentación de Asteroides' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1SrIDEDDr11SPgXMcwPm9c0_HfzqJCm-_&export=download&authuser=0', title: 'Colisiones y Fragmentación de Asteroides' },
     content: [
       'El Cinturón de Asteroides no es un lugar tranquilo e inmóvil; es una pista de autos chocadores a escala cósmica. A lo largo de miles de millones de años, incontables rocas espaciales han colisionado violentamente a velocidades promedio de 18,000 kilómetros por hora. Estos choques destructivos despedazan a los cuerpos padres en miles de fragmentos menores.',
       'Cuando un gran asteroide es destruido por un impacto masivo, los escombros resultantes no se dispersan caóticamente por todo el universo. Debido a las leyes de la física orbital, todos los fragmentos continúan viajando juntos por el espacio. Mantienen órbitas muy similares a las del objeto original, formando lo que los astrónomos llaman una Familia de Asteroides.',
@@ -216,7 +216,7 @@ const INFOGRAPHIC_NODES = [
     color: '#00E5FF',
     btnImage: '/assets/asteroides/infographic_m1/btn_futuro-cinturon.jpg',
     image: '/assets/asteroides/infographic_m1/hero_futuro-cinturon.jpg',
-    video: { src: '/assets/asteroides/Mineria.mp4', title: 'Minería Espacial: El Futuro de los Asteroides' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1lgiy04EUOmIvasX3Ty625ujVMkOd1v3k&export=download&authuser=0', title: 'Minería Espacial: El Futuro de los Asteroides' },
     content: [
       'A primera vista, el Cinturón de Asteroides parece un sistema estático que ha permanecido igual desde los tiempos pretéritos. Sin embargo, se encuentra en un estado de cambio continuo y gradual. Existen fuerzas sutiles pero imparables que modifican sin descanso las órbitas de estas rocas a lo largo del tiempo profundo.',
       'Una de las fuerzas más sorprendentes es el Efecto Yarkovsky. Ocurre cuando un asteroide absorbe la luz del Sol, se calienta y luego emite ese calor de vuelta al espacio mientras gira sobre su eje. Esta pequeña radiación térmica actúa como un diminuto motor de empuje fotónico. Lentamente mueve al asteroide hacia afuera o hacia adentro de su órbita.',

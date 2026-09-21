@@ -153,7 +153,7 @@ export default function AgujerosGusanoHub() {
           opacity: 0.8
         }}
       >
-        <source src="/assets/dashboard/wormhole_video.mp4" type="video/mp4" />
+        <source src="https://drive.usercontent.google.com/download?id=1KWAx2g5BejbCnGkjqclWQAHQczo3zwAX&export=download&authuser=0" type="video/mp4" />
       </video>
       <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 10%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', zIndex: 1 }} />
 

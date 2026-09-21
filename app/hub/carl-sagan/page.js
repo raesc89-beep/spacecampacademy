@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
@@ -15,7 +15,7 @@ const SAGAN_MODULES = [
     color: '#1E90FF',
     glowColor: 'rgba(30,144,255,0.5)',
     link: '/course/sagan_m1',
-    icon: '/assets/carl_sagan/sagan_m1.png',
+    icon: '/assets/sagan/sagan_m1.png',
     coords: { left: '14%', top: '60%' },
     symbol: '🌟',
   },
@@ -26,7 +26,7 @@ const SAGAN_MODULES = [
     color: '#4169E1',
     glowColor: 'rgba(65,105,225,0.5)',
     link: '/course/sagan_m2',
-    icon: '/assets/carl_sagan/sagan_m2.png',
+    icon: '/assets/sagan/sagan_m2.png',
     coords: { left: '32%', top: '32%' },
     symbol: '📺',
   },
@@ -37,7 +37,7 @@ const SAGAN_MODULES = [
     color: '#00CED1',
     glowColor: 'rgba(0,206,209,0.5)',
     link: '/course/sagan_m3',
-    icon: '/assets/carl_sagan/sagan_m3.png',
+    icon: '/assets/sagan/sagan_m3.png',
     coords: { left: '52%', top: '55%' },
     symbol: '🔵',
   },
@@ -48,7 +48,7 @@ const SAGAN_MODULES = [
     color: '#32CD32',
     glowColor: 'rgba(50,205,50,0.5)',
     link: '/course/sagan_m4',
-    icon: '/assets/carl_sagan/sagan_m4.png',
+    icon: '/assets/sagan/sagan_m4.png',
     coords: { left: '72%', top: '28%' },
     symbol: '📡',
   },
@@ -59,7 +59,7 @@ const SAGAN_MODULES = [
     color: '#FFD700',
     glowColor: 'rgba(255,215,0,0.5)',
     link: '/course/sagan_m5',
-    icon: '/assets/carl_sagan/sagan_m5.png',
+    icon: '/assets/sagan/sagan_m5.png',
     coords: { left: '86%', top: '50%' },
     symbol: '📅',
   },
@@ -70,7 +70,7 @@ const SAGAN_MODULES = [
     color: '#9B59B6',
     glowColor: 'rgba(155,89,182,0.5)',
     link: '/course/sagan_m6',
-    icon: '/assets/carl_sagan/sagan_m6.png',
+    icon: '/assets/sagan/sagan_m6.png',
     coords: { left: '68%', top: '72%' },
     symbol: '🚀',
   },
@@ -321,7 +321,7 @@ export default function CarlSaganHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#020818',
-        backgroundImage: "url('/assets/carl_sagan/sagan_cover.png')",
+        backgroundImage: "url('/assets/sagan/sagan_cover.png')",
         backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat',
       }}>
         {/* Vignette overlay */}
@@ -420,3 +420,4 @@ export default function CarlSaganHub() {
     </div>
   );
 }
+

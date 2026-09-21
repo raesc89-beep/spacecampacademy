@@ -413,7 +413,7 @@ export default function InterstellarHub() {
             filter: 'contrast(1.1) brightness(0.8)'
           }}
         >
-          <source src="/assets/interstellar/blackhole.mp4" type="video/mp4" />
+          <source src="https://drive.usercontent.google.com/download?id=1mor0WdE_0ycWM6X54VHqc9A8I2_J_GH6&export=download&authuser=0" type="video/mp4" />
         </video>
 
         {/* Capas de oscurecimiento y niebla para mejorar lectura de botones */}

@@ -97,7 +97,7 @@ const INFOGRAPHIC_NODES = [
     color: '#00E5FF',
     btnImage: '/assets/asteroides/infographic_m3/btn_anatomia-cometa.jpg',
     image: '/assets/asteroides/infographic_m3/hero_anatomia-cometa.jpg',
-    video: { src: '/assets/asteroides/Rosseta 2 vid.mp4', title: 'La Misión Rosetta: Parte 2' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1Hly3vM3ng7sPjqq_THTTPmwtsG8WL8e-&export=download&authuser=0', title: 'La Misión Rosetta: Parte 2' },
     content: [
       'Imagina una bola de nieve gigante del tamaño de una ciudad completa, pero mezclada con tierra oscura, hollín de carbón y polvo de minerales antiguos. Así definió el astrofísico Fred Whipple a los cometas en 1950 en su famosa teoría de las "bolas de nieve sucias". Son los cuerpos más fríos y prístinos de todo nuestro Sistema Solar.',
       'El corazón de un cometa se llama Núcleo. Es un cuerpo sólido y poroso de unos pocos kilómetros de diámetro, compuesto por hielos de agua, dióxido de carbono, metano y amoníaco. La superficie del núcleo es extrañamente oscura, más negra que el carbón, porque está cubierta por una fina capa de materiales orgánicos complejos llamados tolinas.',
@@ -117,7 +117,7 @@ const INFOGRAPHIC_NODES = [
     color: '#B388FF',
     btnImage: '/assets/asteroides/infographic_m3/btn_origen-nube-oort.jpg',
     image: '/assets/asteroides/infographic_m3/hero_origen-nube-oort.jpg',
-    video: { src: '/assets/asteroides/Rosseta 3vid.mp4', title: 'La Misión Rosetta: Parte 3' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1Css1f5dtfwn_cwRaExkuMrwdkxfexQww&export=download&authuser=0', title: 'La Misión Rosetta: Parte 3' },
     content: [
       '¿De dónde vienen los cometas y dónde han estado guardados durante miles de millones de años? La respuesta nos lleva a los confines helados de nuestro Sistema Solar, a dos inmensos almacenes naturales de hielo: el Cinturón de Kuiper y la lejana Nube de Oort.',
       'El Cinturón de Kuiper es una estructura con forma de dona ubicada más allá de la órbita de Neptuno, entre 30 y 50 Unidades Astronómicas del Sol. Es el hogar de cometas de periodo corto como el cometa Halley y de planetas enanos como Plutón. Sus cuerpos orbitan de forma relativamente ordenada en el mismo plano que los demás planetas.',
@@ -175,7 +175,7 @@ const INFOGRAPHIC_NODES = [
     color: '#81D4FA',
     btnImage: '/assets/asteroides/infographic_m3/btn_cometas-agua-tierra.jpg',
     image: '/assets/asteroides/infographic_m3/hero_cometas-agua-tierra.jpg',
-    video: { src: '/assets/asteroides/Cometa Neowise.mp4', title: 'El Cometa NEOWISE (2020)' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=12HWsSGEbggS3BX_fHxt2rfVPvF1f3N3s&export=download&authuser=0', title: 'El Cometa NEOWISE (2020)' },
     content: [
       'La Tierra es un planeta azul cubierto de océanos, pero cuando se formó hace 4,500 millones de años cerca del Sol primordial, el calor extremo evaporó todo el agua del disco interior. ¿De dónde provino entonces toda el agua que hoy llena nuestros mares y permite la existencia de la vida?',
       'Durante décadas, la hipótesis principal sostenía que los cometas, al ser inmensas reservas heladas del espacio exterior, bombardearon masivamente la Tierra joven durante el periodo del Gran Bombardeo Tardío, sembrando nuestro planeta de agua dulce y moléculas orgánicas esenciales.',
@@ -195,7 +195,7 @@ const INFOGRAPHIC_NODES = [
     color: '#FF8A65',
     btnImage: '/assets/asteroides/infographic_m3/btn_misiones-cometarias.jpg',
     image: '/assets/asteroides/infographic_m3/hero_misiones-cometarias.jpg',
-    video: { src: '/assets/asteroides/Video Rosseta.mp4', title: 'La Misión Rosetta: Parte 1' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1nuNxH5x6fqCyR4ErllY2dq3Ua2EBMYAC&export=download&authuser=0', title: 'La Misión Rosetta: Parte 1' },
     content: [
       'Estudiar los cometas con telescopios desde la Tierra no era suficiente para descifrar sus enigmas profundos. En las últimas décadas, las agencias espaciales han enviado audaces naves robóticas a toda velocidad para fotografiar, perforar e incluso aterrizar en estas bolas de hielo flotantes.',
       'La era dorada comenzó en 1986 con la "Armada del Halley". La sonda europea Giotto pasó a solo 600 kilómetros del núcleo del Cometa Halley, obteniendo las primeras imágenes históricas en detalle de un núcleo cometario negro expulsando chorros de polvo brillante.',
@@ -215,7 +215,7 @@ const INFOGRAPHIC_NODES = [
     color: '#00E5FF',
     btnImage: '/assets/asteroides/infographic_m3/btn_destino-cometas.jpg',
     image: '/assets/asteroides/infographic_m3/hero_destino-cometas.jpg',
-    video: { src: '/assets/asteroides/Rosset vid 3 parte 2.mp4', title: 'Rosetta: Aterrizaje de Philae' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1K2dtSvtbwTnz-vYxlZUKJYrIw19PG_DD&export=download&authuser=0', title: 'Rosetta: Aterrizaje de Philae' },
     content: [
       'Los cometas no son eternos. Cada vez que su órbita los lleva al perihelio cerca del calor del Sol, sufren una pérdida irreversible de masa. Con el paso del tiempo geológico, todos los cometas enfrentan un final definitivo por diversos caminos físicos.',
       'El destino más común para un cometa periódico es la Extinción Térmica. Tras cientos de pasadas solares, el cometa evapora todo su hielo superficial e interno. Pierde la capacidad de crear una coma y se transforma en una roca seca e inerte conocida como un Asteroide Extinto.',

@@ -151,7 +151,7 @@ const INFOGRAPHIC_NODES = [
     color: '#AB47BC',
     btnImage: '/assets/asteroides/infographic_m2/btn_formacion-crateres.jpg',
     image: '/assets/asteroides/infographic_m2/hero_formacion-crateres.jpg',
-    video: { src: '/assets/asteroides/Caida Metorito.mp4', title: 'Caída de un Meteorito: Registro Visual' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1siPSV9fxR1hwNvbBOnaJ5HXYsRSQlp6O&export=download&authuser=0', title: 'Caída de un Meteorito: Registro Visual' },
     content: [
       'Cuando un gran asteroide choca contra la superficie de un planeta rocoso a velocidad hiperveloz, no se limita a empujar la tierra a los lados como una pala. El impacto libera de golpe una cantidad astronómica de energía cinética que desencadena una explosión descomunal, formando una depresión circular llamada cráter de impacto.',
       'El proceso de formación de un cráter ocurre en tres etapas consecutivas ultrarrápidas. La primera etapa es la de Contacto y Compresión. Dura una fracción de segundo mientras el impactador penetra en el suelo. Genera ondas de choque con presiones de millones de atmósferas que vaporizan instantáneamente la roca del proyectil.',
@@ -191,8 +191,8 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/asteroides/infographic_m2/btn_lluvias-estrellas.jpg',
     image: '/assets/asteroides/infographic_m2/hero_lluvias-estrellas.jpg',
     videos: [
-      { src: '/assets/asteroides/Geminid Meteor.mp4', title: 'Lluvia de Meteoros Gemínidas' },
-      { src: '/assets/asteroides/Perseid Meteor.mp4', title: 'Lluvia de Meteoros Perseidas' }
+      { src: 'https://drive.usercontent.google.com/download?id=1qHO6b2gW9iNX9Zmw9K-L6LGqdvoAs6Xs&export=download&authuser=0', title: 'Lluvia de Meteoros Gemínidas' },
+      { src: 'https://drive.usercontent.google.com/download?id=15Wj866MeoUyWiR-55j83WkN2nPgrm9rd&export=download&authuser=0', title: 'Lluvia de Meteoros Perseidas' }
     ],
     content: [
       'En ciertas épocas del año, si miras hacia el cielo nocturno despejado, puedes contemplar decenas de destellos luminosos cruzando el firmamento en pocas horas. Este espectáculo natural se conoce como Lluvia de Meteoros. Ocurre cuando la Tierra en su órbita atraviesa un río de escombros dejado atrás por un cometa o asteroide.',

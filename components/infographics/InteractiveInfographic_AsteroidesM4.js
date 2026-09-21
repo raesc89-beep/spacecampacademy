@@ -154,7 +154,7 @@ const INFOGRAPHIC_NODES = [
     color: '#64FFDA',
     btnImage: '/assets/asteroides/infographic_m4/btn_mision-osiris-rex.jpg',
     image: '/assets/asteroides/infographic_m4/hero_mision-osiris-rex.jpg',
-    video: { src: '/assets/asteroides/Video Osiris Rex.mp4', title: 'Misión OSIRIS-REx: Recolección de Muestras' },
+    video: { src: 'https://drive.usercontent.google.com/download?id=1C0woncTecwyof5XFGtNnNdehaF7bDbo0&export=download&authuser=0', title: 'Misión OSIRIS-REx: Recolección de Muestras' },
     content: [
       'En diciembre de 2018, la sonda espacial OSIRIS-REx de la NASA llegó al asteroide cercano a la Tierra (101955) Bennu, una roca potencialmente peligrosa de 500 metros de ancho compuesta por materiales hidratados y cargada de compuestos de carbono de la infancia del Sistema Solar.',
       'Durante más de un año, la nave mapeó la superficie de Bennu con precisión milimétrica usando escáneres láser LIDAR. Los científicos se sorprendieron al descubrir que la superficie no tenía playas de arena suave como esperaban, sino que estaba repleta de rocas gigantescas y afiladas.',

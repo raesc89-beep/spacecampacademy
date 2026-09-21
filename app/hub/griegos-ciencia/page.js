@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
@@ -15,7 +15,7 @@ const GRIEGOS_MODULES = [
     color: '#D4A017',
     glowColor: 'rgba(212,160,23,0.5)',
     link: '/course/griegos_m1',
-    icon: '/assets/griegos_ciencia/griegos_m1.png',
+    icon: '/assets/griegos/griegos_m1.png',
     coords: { left: '12%', top: '55%' },
     symbol: '💧',
   },
@@ -26,7 +26,7 @@ const GRIEGOS_MODULES = [
     color: '#E74C3C',
     glowColor: 'rgba(231,76,60,0.5)',
     link: '/course/griegos_m2',
-    icon: '/assets/griegos_ciencia/griegos_m2.png',
+    icon: '/assets/griegos/griegos_m2.png',
     coords: { left: '30%', top: '30%' },
     symbol: '📐',
   },
@@ -37,7 +37,7 @@ const GRIEGOS_MODULES = [
     color: '#3498DB',
     glowColor: 'rgba(52,152,219,0.5)',
     link: '/course/griegos_m3',
-    icon: '/assets/griegos_ciencia/griegos_m3.png',
+    icon: '/assets/griegos/griegos_m3.png',
     coords: { left: '50%', top: '58%' },
     symbol: '📚',
   },
@@ -48,7 +48,7 @@ const GRIEGOS_MODULES = [
     color: '#FFD700',
     glowColor: 'rgba(255,215,0,0.5)',
     link: '/course/griegos_m4',
-    icon: '/assets/griegos_ciencia/griegos_m4.png',
+    icon: '/assets/griegos/griegos_m4.png',
     coords: { left: '68%', top: '28%' },
     symbol: '⚙️',
   },
@@ -59,7 +59,7 @@ const GRIEGOS_MODULES = [
     color: '#2ECC71',
     glowColor: 'rgba(46,204,113,0.5)',
     link: '/course/griegos_m5',
-    icon: '/assets/griegos_ciencia/griegos_m5.png',
+    icon: '/assets/griegos/griegos_m5.png',
     coords: { left: '85%', top: '52%' },
     symbol: '🌍',
   },
@@ -70,7 +70,7 @@ const GRIEGOS_MODULES = [
     color: '#9B59B6',
     glowColor: 'rgba(155,89,182,0.5)',
     link: '/course/griegos_m6',
-    icon: '/assets/griegos_ciencia/griegos_m6.png',
+    icon: '/assets/griegos/griegos_m6.png',
     coords: { left: '70%', top: '72%' },
     symbol: '✨',
   },
@@ -316,7 +316,7 @@ export default function GriegosCienciaHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#0A0808',
-        backgroundImage: "url('/assets/griegos_ciencia/griegos_cover.png')",
+        backgroundImage: "url('/assets/griegos/griegos_cover.png')",
         backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat',
       }}>
         {/* Vignette overlay */}
@@ -414,3 +414,4 @@ export default function GriegosCienciaHub() {
     </div>
   );
 }
+

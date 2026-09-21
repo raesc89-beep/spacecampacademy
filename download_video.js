@@ -46,7 +46,7 @@ function downloadFile(url, dest) {
 
 const id = '11IeUL-IU3FUtnab7TqgHz88BtlD_aLzP';
 const url = `https://drive.google.com/uc?export=download&id=${id}`;
-const dest = 'public/assets/dashboard/wormhole_video.mp4';
+const dest = 'publichttps://drive.usercontent.google.com/download?id=1KWAx2g5BejbCnGkjqclWQAHQczo3zwAX&export=download&authuser=0';
 
 downloadFile(url, dest)
   .then(() => console.log('Download complete'))

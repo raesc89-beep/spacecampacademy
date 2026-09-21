@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
@@ -15,7 +15,7 @@ const EINSTEIN_MODULES = [
     color: '#FF4500',
     glowColor: 'rgba(255,69,0,0.5)',
     link: '/course/einstein_m1',
-    icon: '/assets/albert_einstein/einstein_m1.png',
+    icon: '/assets/einstein/einstein_m1.png',
     coords: { left: '14%', top: '58%' },
     symbol: '👦',
   },
@@ -26,7 +26,7 @@ const EINSTEIN_MODULES = [
     color: '#E74C3C',
     glowColor: 'rgba(231,76,60,0.5)',
     link: '/course/einstein_m2',
-    icon: '/assets/albert_einstein/einstein_m2.png',
+    icon: '/assets/einstein/einstein_m2.png',
     coords: { left: '32%', top: '30%' },
     symbol: '📜',
   },
@@ -37,7 +37,7 @@ const EINSTEIN_MODULES = [
     color: '#FFD700',
     glowColor: 'rgba(255,215,0,0.5)',
     link: '/course/einstein_m3',
-    icon: '/assets/albert_einstein/einstein_m3.png',
+    icon: '/assets/einstein/einstein_m3.png',
     coords: { left: '52%', top: '55%' },
     symbol: '⚡',
   },
@@ -48,7 +48,7 @@ const EINSTEIN_MODULES = [
     color: '#9B59B6',
     glowColor: 'rgba(155,89,182,0.5)',
     link: '/course/einstein_m4',
-    icon: '/assets/albert_einstein/einstein_m4.png',
+    icon: '/assets/einstein/einstein_m4.png',
     coords: { left: '70%', top: '28%' },
     symbol: '🌀',
   },
@@ -59,7 +59,7 @@ const EINSTEIN_MODULES = [
     color: '#3498DB',
     glowColor: 'rgba(52,152,219,0.5)',
     link: '/course/einstein_m5',
-    icon: '/assets/albert_einstein/einstein_m5.png',
+    icon: '/assets/einstein/einstein_m5.png',
     coords: { left: '86%', top: '52%' },
     symbol: '🌑',
   },
@@ -70,7 +70,7 @@ const EINSTEIN_MODULES = [
     color: '#2ECC71',
     glowColor: 'rgba(46,204,113,0.5)',
     link: '/course/einstein_m6',
-    icon: '/assets/albert_einstein/einstein_m6.png',
+    icon: '/assets/einstein/einstein_m6.png',
     coords: { left: '68%', top: '72%' },
     symbol: '🏛️',
   },
@@ -307,7 +307,7 @@ export default function AlbertEinsteinHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#0A0515',
-        backgroundImage: "url('/assets/albert_einstein/einstein_cover.png')",
+        backgroundImage: "url('/assets/einstein/einstein_cover.png')",
         backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat',
       }}>
         {/* Vignette overlay */}
@@ -405,3 +405,4 @@ export default function AlbertEinsteinHub() {
     </div>
   );
 }
+

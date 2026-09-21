@@ -15,8 +15,6 @@ export const viewport = {
   userScalable: false,
 }
 
-import AstroDWrapper from '@/components/AstroDWrapper'
-
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
@@ -24,7 +22,6 @@ export default function RootLayout({ children }) {
         {/* Starfield background container injected directly in root to persist across navigations */}
         <div id="starfield" style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1, pointerEvents: 'none' }}></div>
         {children}
-        <AstroDWrapper />
       </body>
     </html>
   )

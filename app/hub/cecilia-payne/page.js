@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
@@ -15,7 +15,7 @@ const CECILIA_MODULES = [
     color: '#9B59B6',
     glowColor: 'rgba(155,89,182,0.5)',
     link: '/course/cecilia_m1',
-    icon: '/assets/cecilia_payne/cecilia_m1.png',
+    icon: '/assets/cecilia/cecilia_m1.png',
     coords: { left: '12%', top: '55%' },
     symbol: '♀',
   },
@@ -26,7 +26,7 @@ const CECILIA_MODULES = [
     color: '#8E44AD',
     glowColor: 'rgba(142,68,173,0.5)',
     link: '/course/cecilia_m2',
-    icon: '/assets/cecilia_payne/cecilia_m2.png',
+    icon: '/assets/cecilia/cecilia_m2.png',
     coords: { left: '34%', top: '28%' },
     symbol: '🔭',
   },
@@ -37,7 +37,7 @@ const CECILIA_MODULES = [
     color: '#D4A017',
     glowColor: 'rgba(212,160,23,0.5)',
     link: '/course/cecilia_m3',
-    icon: '/assets/cecilia_payne/cecilia_m3.png',
+    icon: '/assets/cecilia/cecilia_m3.png',
     coords: { left: '62%', top: '45%' },
     symbol: 'H',
   },
@@ -48,7 +48,7 @@ const CECILIA_MODULES = [
     color: '#00CED1',
     glowColor: 'rgba(0,206,209,0.5)',
     link: '/course/cecilia_m4',
-    icon: '/assets/cecilia_payne/cecilia_m4.png',
+    icon: '/assets/cecilia/cecilia_m4.png',
     coords: { left: '84%', top: '62%' },
     symbol: '✨',
   },
@@ -449,3 +449,4 @@ export default function CeciliaPayneHub() {
     </div>
   );
 }
+

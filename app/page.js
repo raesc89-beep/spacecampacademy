@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import Link from "next/link";
 import { ArrowRight, UserPlus, Rocket, Brain, Trophy, Gamepad2, Smartphone, Star, ChevronRight } from 'lucide-react';
 import AnimatedMainLogo from '@/components/AnimatedMainLogo';
@@ -57,7 +57,7 @@ const COURSES = [
     items: [
       { name: "Astronomia Egipcia", desc: "Piramides, constelaciones y la ciencia del antiguo Egipto", img: "/assets/egypt/module_1.png", href: "/hub/egypt-astro", modules: 14 },
       { name: "Astronomia Maya", desc: "El calendario mas preciso del mundo antiguo — 365.25 dias exactos", img: "/assets/maya/module_1.png", href: "/hub/maya-astro", modules: 15 },
-      { name: "Griegos y la Ciencia", desc: "Eratostenes, Aristarco y los primeros modelos del universo", img: "/assets/griegos_ciencia/module_1.png", href: "/hub/griegos-ciencia", modules: 6 },
+      { name: "Griegos y la Ciencia", desc: "Eratostenes, Aristarco y los primeros modelos del universo", img: "/assets/griegos/module_1.png", href: "/hub/griegos-ciencia", modules: 6 },
       { name: "Dinosaurios", desc: "El impacto de Chicxulub y la extincion que cambio la Tierra", img: "/assets/dinosaurios/module_1.png", href: "/hub/dinosaurios", modules: 8 },
     ],
   },
@@ -460,3 +460,4 @@ export default function Home() {
     </div>
   );
 }
+

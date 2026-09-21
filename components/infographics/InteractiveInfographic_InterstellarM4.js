@@ -226,7 +226,7 @@ function InterstellarBackground() {
       <video autoPlay muted loop playsInline
         poster="/assets/interstellar/gargantua_bg.jpg"
         style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
-        <source src="/assets/interstellar/blackhole.mp4" type="video/mp4" />
+        <source src="https://drive.usercontent.google.com/download?id=1mor0WdE_0ycWM6X54VHqc9A8I2_J_GH6&export=download&authuser=0" type="video/mp4" />
       </video>
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.6)' }} />
     </div>

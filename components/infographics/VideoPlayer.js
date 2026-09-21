@@ -8,7 +8,7 @@ import { Play, Pause, Volume2, VolumeX, Maximize, Minimize, RotateCcw } from 'lu
  * VideoPlayer — Reproductor de video temático para infografías interactivas de Space Camp Academy.
  * 
  * Props:
- *   src      — (string) Ruta al archivo de video (ej. '/assets/asteroides/Video Rosseta.mp4')
+ *   src      — (string) Ruta al archivo de video (ej. 'https://drive.usercontent.google.com/download?id=1nuNxH5x6fqCyR4ErllY2dq3Ua2EBMYAC&export=download&authuser=0')
  *   title    — (string) Título descriptivo del video
  *   color    — (string) Color temático del nodo (hex, ej. '#FF6B6B')
  *   poster   — (string, opcional) Imagen de preview/poster
