@@ -142,6 +142,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Eventos Transitorios', icon: 'clock', text: 'ATLAS también detecta otros eventos celestes. Identifica supernovas, estrellas variables y destellos de colisiones estelares. Funciona como un sistema de vigilancia para diversos fenómenos astronómicos.' },
       { label: 'Ingeniería Óptica', icon: 'zap', text: 'Cada telescopio ATLAS tiene un espejo primario de 50 centímetros. Aunque es pequeño para los estándares actuales, su diseño óptico y sensores le permiten escanear grandes áreas del cielo con gran eficiencia.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m4/banner_sistema-atlas.webp',
+    bannerCaption: 'Sistema ATLAS: cubre el cielo completo dos veces por noche buscando objetos de movimiento rápido',
     fact: 'ATLAS descubrió el cometa C/2019 Y4 y ha detectado asteroides pequeños horas antes de que ingresaran a la atmósfera terrestre. Su eficacia para identificar objetos rápidos está comprobada.'
   },
   {
@@ -161,6 +163,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Desafío de los Satélites', icon: 'zap', text: 'Las constelaciones de satélites dejan trazos brillantes que afectan las imágenes. Los sistemas como ATLAS actualizan sus algoritmos para reconocer y eliminar estos rastros de sus datos científicos.' },
       { label: 'Detección de Trazos', icon: 'atom', text: 'Los objetos muy rápidos cruzan el campo de visión durante la exposición de la cámara, creando una línea. Los algoritmos de Streak Detection buscan estos trazos para identificar cuerpos veloces o cercanos.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m4/banner_deteccion-automatica.webp',
+    bannerCaption: 'Detección automática: IA clasifica millones de detecciones nocturnas para encontrar objetos inusuales',
     fact: 'En 1930, Clyde Tombaugh pasó un año buscando Plutón en placas fotográficas. Hoy, los algoritmos de ATLAS procesan una cantidad equivalente de datos en solo cinco minutos.'
   },
   {
@@ -180,6 +184,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Falsas Alarmas', icon: 'clock', text: 'Algunos candidatos iniciales, como A/2017 U7, parecían tener órbitas hiperbólicas. Observaciones posteriores demostraron que pertenecían a la Nube de Oort y tenían órbitas elípticas extremas.' },
       { label: 'Aceleración por Gases', icon: 'atom', text: 'La sublimación del hielo crea chorros de gas que alteran la órbita de un cometa. Los astrónomos deben distinguir esta aceleración no gravitacional de una verdadera trayectoria interestelar.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m4/banner_candidatos-interestelares.webp',
+    bannerCaption: 'Candidatos interestelares: distinguir verdaderos visitantes de objetos del sistema solar perturbados',
     fact: 'El cometa 2I/Borisov tuvo una excentricidad confirmada de 3.3. Esta cifra tan alta demostró matemáticamente que no pertenecía al sistema solar, a diferencia de los candidatos que se corrigen a valores menores a 1.'
   },
   {
@@ -199,6 +205,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Asistencia Gravitacional', icon: 'zap', text: 'Las misiones espaciales usan la gravedad de Júpiter para acelerar sondas. Este mismo efecto natural expulsa cometas de la Nube de Oort hacia el espacio interestelar.' },
       { label: 'Simulación Orbital', icon: 'clock', text: 'Los astrónomos usan integradores numéricos para simular el pasado de un objeto. Determinar la órbita requiere observaciones precisas para evitar errores en las simulaciones a largo plazo.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m4/banner_falsos-positivos.webp',
+    bannerCaption: 'Falsos positivos: el desgasamiento cometario puede simular órbitas hiperbólicas engañando a los detectores',
     fact: 'El cometa C/1980 E1 tiene una trayectoria de escape hiperbólica. Las simulaciones revelaron que pasó cerca de Júpiter en 1980, lo que cambió su órbita y lo expulsó del sistema solar.'
   },
   {
@@ -218,6 +226,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Caso Oumuamua', icon: 'clock', text: 'Oumuamua fue descubierto después de pasar su punto más cercano al Sol. Los astrónomos tuvieron menos de tres semanas para estudiarlo antes de que su brillo fuera indetectable.' },
       { label: 'Análisis de Luz', icon: 'atom', text: 'La espectroscopía descompone la luz en diferentes colores. Las líneas resultantes revelan los componentes químicos del objeto. Este análisis requiere mucha luz y proximidad.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m4/banner_velocidad-deteccion.webp',
+    bannerCaption: 'El desafío de la velocidad: los visitantes huyen antes de que los detectemos, tenemos horas para reaccionar',
     fact: 'La Agencia Espacial Europea diseña la misión Comet Interceptor. El objetivo es lanzar una sonda y mantenerla en órbita para interceptar un objeto interestelar poco después de su descubrimiento.'
   },
   {
@@ -237,6 +247,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Diseño del Espejo', icon: 'zap', text: 'Los espejos primario y terciario del telescopio están tallados en la misma pieza de vidrio. Este diseño compacto permite que el telescopio se mueva rápidamente para tomar múltiples fotografías.' },
       { label: 'Procesamiento de Datos', icon: 'atom', text: 'El observatorio enviará datos a través de fibra óptica a centros de supercomputación. Las alertas rápidas permitirán que telescopios automatizados observen fenómenos transitorios casi de inmediato.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m4/banner_lsst-vera-rubin.webp',
+    bannerCaption: 'Vera Rubin LSST: el telescopio que detectará un objeto interestelar por año desde 2025',
     fact: 'El observatorio honra a Vera C. Rubin, quien aportó evidencia sobre la materia oscura. El telescopio también mapeará la distribución de materia oscura en el universo.'
   },
   {
@@ -256,6 +268,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Procesamiento con IA', icon: 'zap', text: 'El MPC usa algoritmos para filtrar observaciones ruidosas. Enlazan datos de diferentes telescopios para calcular órbitas precisas. Este proceso es fundamental para la confirmación de nuevos objetos.' },
       { label: 'Acceso Público', icon: 'clock', text: 'Cualquier persona puede acceder a las predicciones orbitales del MPC. Muchas instituciones educativas usan estos datos para enseñar matemáticas y mecánica celeste a los estudiantes.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m4/banner_red-global-vigilancia.webp',
+    bannerCaption: 'Red global de vigilancia: telescopios en todo el mundo comparten datos en tiempo real para no perder visitantes',
     fact: 'El cometa 2I/Borisov fue descubierto por un astrónomo aficionado que construyó su propio telescopio. Su hallazgo resalta la importancia de la observación astronómica más allá de los grandes observatorios profesionales.'
   }
 ];
@@ -684,6 +698,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Block */}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}

@@ -94,6 +94,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Telescopio Pan-STARRS', icon: 'zap', text: 'El telescopio Pan-STARRS1 en Hawái tiene una cámara de 1.400 megapíxeles. Está diseñado para detectar objetos pequeños y rápidos que se mueven por el cielo nocturno.' },
       { label: 'Velocidad Increíble', icon: 'clock', text: 'Oumuamua pasó por el Sol a casi 315.000 kilómetros por hora. A esa velocidad, el viaje de la Tierra a la Luna tomaría poco más de una hora.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m2/banner_descubrimiento-2017.webp',
+    bannerCaption: 'Descubrimiento 2017: Robert Weryk en Pan-STARRS detectó el primer visitante interestelar confirmado',
     fact: 'Oumuamua fue descubierto 40 días después de su máxima aproximación al Sol. Los astrónomos tuvieron solo unas semanas para observarlo antes de que se volviera demasiado tenue.'
   },
   {
@@ -112,6 +114,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Pronunciación', icon: 'zap', text: 'El nombre incluye una pausa glotal llamada okina, escrita como \'Oumuamua. Muchos medios de comunicación tuvieron dificultades para pronunciarlo correctamente.' },
       { label: 'La Nueva Categoría', icon: 'atom', text: 'Ahora existe una regla para nombrar estos objetos. El segundo cuerpo interestelar descubierto en 2019 se designó 2I/Borisov, honrando a su descubridor.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m2/banner_nombre-hawaiano.webp',
+    bannerCaption: 'El nombre hawaiano: Oumuamua significa mensajero llegado desde lejos, el primer emisario interestelar',
     fact: 'El equipo consideró llamarlo "Rama" por la novela de Arthur C. Clarke. Finalmente optaron por un nombre que honrara a Hawái y su tradición astronómica.'
   },
   {
@@ -130,6 +134,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Rotación Caótica', icon: 'zap', text: 'Oumuamua no gira sobre un solo eje, sino que experimenta una rotación no principal. Este movimiento de volteretas caóticas sugiere que sufrió impactos en su pasado.' },
       { label: 'El Desafío Visual', icon: 'clock', text: 'Ningún telescopio pudo fotografiar la forma real de Oumuamua. Solo aparecía como un punto de luz. Su forma alargada se dedujo matemáticamente a partir de sus variaciones de brillo.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m2/banner_forma-enigmatica.webp',
+    bannerCaption: 'Forma enigmática: relación 10:1 de elongación, como una lenteja plana girando nunca vista antes',
     fact: 'Su forma extrema exige una alta cohesión estructural para evitar romperse al girar. Los científicos creen que su interior es denso y metálico, no un aglomerado de polvo.'
   },
   {
@@ -148,6 +154,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Presión de Radiación', icon: 'zap', text: 'Los fotones de la luz solar pueden empujar objetos en el espacio. Algunos sugirieron que Oumuamua era un cuerpo poroso de baja densidad que aceleraba por la presión de radiación.' },
       { label: 'El Telescopio Spitzer', icon: 'atom', text: 'El telescopio espacial Spitzer observa el universo en luz infrarroja. Su incapacidad para detectar polvo o gas alrededor de Oumuamua demostró que no era un cometa típico.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m2/banner_aceleracion-misteriosa.webp',
+    bannerCaption: 'Aceleración misteriosa: Oumuamua aceleró sin eyección de gas visible, el mayor misterio de su visita',
     fact: 'La aceleración fue de pocas milésimas de milímetro por segundo al cuadrado. Aunque pequeña, fue suficiente para desviar al objeto miles de kilómetros de la trayectoria calculada.'
   },
   {
@@ -166,6 +174,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'La Navaja de Ockham', icon: 'zap', text: 'La ciencia prefiere explicaciones basadas en leyes físicas conocidas. Las teorías sobre hielo de nitrógeno o hidrógeno son más aceptadas que la hipótesis alienígena.' },
       { label: 'Efecto Yarkovsky', icon: 'atom', text: 'Los asteroides experimentan pequeñas aceleraciones al irradiar calor solar. Los cálculos demostraron que este efecto térmico era insuficiente para explicar la aceleración de Oumuamua.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m2/banner_hipotesis-cientificas.webp',
+    bannerCaption: 'Hipótesis científicas: iceberg de nitrógeno, cometa de hidrógeno o... la hipótesis alienígena de Loeb',
     fact: 'El profesor Avi Loeb fundó el "Proyecto Galileo" para buscar otros artefactos de tecnología interestelar utilizando IA y redes de telescopios.'
   },
   {
@@ -184,6 +194,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Espectroscopía', icon: 'zap', text: 'La espectroscopía identifica los materiales por cómo reflejan y absorben la luz. Permite conocer la composición de objetos distantes a partir de su firma luminosa.' },
       { label: 'El Escudo Protector', icon: 'clock', text: 'La gruesa capa de tolinas se forma tras millones de años de exposición a la radiación cósmica. Indica que Oumuamua tuvo un viaje muy largo por el medio interestelar.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m2/banner_composicion-superficie.webp',
+    bannerCaption: 'Composición superficial: costra orgánica roja formada por millones de años de radiación cósmica interestelar',
     fact: 'Oumuamua tiene un albedo muy bajo, similar al del carbón. Al reflejar muy poca luz, fue muy difícil detectarlo contra el fondo oscuro del espacio.'
   },
   {
@@ -202,6 +214,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Segundo Visitante', icon: 'zap', text: 'En 2019 se descubrió 2I/Borisov, el segundo cuerpo interestelar. A diferencia de Oumuamua, Borisov se comportó como un cometa típico, validando que el espacio está lleno de estos objetos.' },
       { label: 'Misiones de Intercepción', icon: 'atom', text: 'La Agencia Espacial Europea planea la misión "Comet Interceptor". Lanzará una sonda que esperará en el espacio para interceptar a un nuevo visitante interestelar.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m2/banner_legado-cientifico.webp',
+    bannerCaption: 'El legado científico: Oumuamua creó un campo científico nuevo y cambió la forma de estudiar el cosmos',
     fact: 'Las estimaciones estadísticas sugieren que miles de objetos del tamaño de Oumuamua orbitan dentro de nuestro sistema solar en cualquier momento. La mayoría permanecen indetectados por su baja luminosidad y alta velocidad.'
   }
 ];
@@ -626,6 +640,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* â”€â”€â”€ Fun Fact â”€â”€â”€ */}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}

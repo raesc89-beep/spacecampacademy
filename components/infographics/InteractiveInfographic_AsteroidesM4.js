@@ -108,6 +108,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La sonda Galileo descubrió la primera luna asteroidal conocida, Dactyl, orbitando alrededor del asteroide 243 Ida. Mide apenas 1.4 kilómetros de ancho y demostró que los asteroides pequeños también pueden tener satélites.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La misión Dawn utilizó motores de propulsión iónica alimentados por gas xenón y paneles solares. Esta tecnología le permitió maniobrar eficientemente en el espacio profundo para cambiar de órbita entre Vesta y Ceres.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m4/banner_era-exploracion.webp',
+    bannerCaption: 'Era de exploración asteroidal: de NEAR Shoemaker a Dawn, la humanidad visita los residuos del sistema solar',
     fact: 'El asteroide 433 Eros fue el primer asteroide donde aterrizó una nave espacial humana. La sonda NEAR Shoemaker transmitió datos científicos durante dos semanas desde la superficie antes de apagarse.',
   },
   {
@@ -127,6 +129,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Un pequeño satélite italiano llamado LICIACube viajó adosado a la nave DART. Se desprendió diez días antes del choque para tomar fotos cercanas de la colisión y de la nube de escombros expulsada.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El éxito de la deflexión por impacto cinético se multiplicó gracias al impulso de reacción generado por las toneladas de materia expulsada (recuperación de momento), actuando como un cohete natural.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-dart.webp',
+    bannerCaption: 'Misión DART 2022: primer test exitoso de deflexión asteroidal, cambiamos la órbita de Dimorphos',
     fact: 'La nave DART utilizó un sistema autónomo de navegación óptica llamado SMARTNav en tiempo real durante sus últimas cuatro horas de vuelo para fijar blanco en la luna Dimorphos sin intervención humana.',
   },
   {
@@ -146,6 +150,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los diminutos rovers MINERVA-II no usaban ruedas para desplazarse porque la gravedad en Ryugu es tan débil que una rueda patinaría. En su lugar, usaban motores internos que los hacían dar saltos flotantes sobre las rocas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La masa de Ryugu es tan baja y su porosidad tan alta (más del 50%) que los astrónomos lo clasifican como un "cúmulo de escombros", un montón de rocas unidas débilmente por su propia gravedad.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-hayabusa2.webp',
+    bannerCaption: 'Hayabusa2: la misión japonesa que disparó un proyectil a Ryugu y trajo muestras del cráter artificial',
     fact: 'El nombre "Ryugu" proviene de una leyenda del folclore japonés y significa "El Palacio del Dragón", un palacio mágico bajo el mar de donde un pescador trajo una caja misteriosa con secretos.',
   },
   {
@@ -166,6 +172,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tras entregar con éxito su cápsula de muestras en la Tierra, la nave espacial nodriza no se apagó. Fue rebautizada como OSIRIS-APEX y se envió en una nueva misión para estudiar al asteroide Apophis en 2029.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El asteroide Bennu es considerado una roca activa. OSIRIS-REx fotografió pequeños eventos de eyección de partículas donde el asteroide lanza continuamente piedras del tamaño de canicas al espacio.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-osiris-rex.webp',
+    bannerCaption: 'OSIRIS-REx: trajo 60 gramos de Bennu a la Tierra, el mayor fragmento asteroidal jamás recolectado',
     fact: 'El análisis inicial de las muestras de Bennu reveló la presencia de abundantes minerales de fosfato de sodio hidratado, sugiriendo que el asteroide proviene de un antiguo cuerpo padre helado con agua líquida.',
   },
   {
@@ -185,6 +193,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las muestras de los asteroides Ryugu y Bennu se conservan en salas limpias especiales en Japón y Estados Unidos. Partes de las muestras se guardan congeladas bajo nitrógeno para ser analizadas por futuros científicos dentro de 50 años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los análisis de isótopos de cromo y titanio en los granos de Ryugu demostraron una afinidad química perfecta con las condritas carbonáceas de tipo CI, las rocas más primitivas conocidas en la ciencia planetaria.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m4/banner_analisis-laboratorio.webp',
+    bannerCaption: 'Análisis en laboratorio: muestras de asteroides revelan aminoácidos y agua de los albores del sistema solar',
     fact: 'En las muestras del asteroide Ryugu se identificó agua líquida atrapada en forma de inclusiones microscópicas dentro de cristales de carbonato, revelando la composición del agua primordial del disco solar.',
   },
   {
@@ -204,6 +214,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La atracción gravitatoria en la superficie del asteroide Bennu es tan diminuta que si saltaras con tus piernas a velocidad normal saldrías disparado hacia el espacio profundo sin poder regresar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Para simular la gravedad débil de los asteroides antes del lanzamiento, los ingenieros espaciales prueban las maniobras de brazo robótico en torres de caída libre al vacío y en aviones de vuelos parabólicos de gravedad cero.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m4/banner_tecnologia-navegacion.webp',
+    bannerCaption: 'Tecnología de navegación: propulsión iónica y navegación óptica autónoma para orbitar cuerpos irregulares',
     fact: 'El mapa topográfico 3D generado por el instrumento OLA de la NASA a bordo de OSIRIS-REx es el modelo numérico de elevación más detallado jamás construido para cualquier cuerpo celestiales del Sistema Solar.',
   },
   {
@@ -223,6 +235,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El asteroide Kamoʻoalewa, objetivo de la misión Tianwen-2, tiene una composición mineral idéntica a las rocas lunares recopiladas por las misiones Apolo, sugiriendo que es un fragmento expulsado de la Luna por un impacto gigante.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Convertir el agua de hielo de un asteroide en combustible espacial requiere un proceso químico de electrólisis solar que separa las moléculas de H2O en gases de hidrógeno (H2) y oxígeno (O2) líquidos.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m4/banner_futuras-misiones.webp',
+    bannerCaption: 'Futuras misiones: Psyche al núcleo metálico, Lucy a los troyanos y minería asteroidal en el horizonte',
     fact: 'La misión Hera lleva a bordo dos micro-satélites de formato CubeSat llamados Juventas y Milani. Juventas utilizará por primera vez un radar de baja frecuencia para examinar la estructura interna oculta de Dimorphos.',
   },
 ];
@@ -662,6 +676,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

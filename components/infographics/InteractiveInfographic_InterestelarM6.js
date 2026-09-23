@@ -109,6 +109,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El programa original del Gran Tour fue cancelado por ser muy caro, siendo reemplazado por la misión "Mariner Jupiter-Saturn". Los ingenieros diseñaron en secreto las naves para que pudieran sobrevivir el viaje completo hasta Urano y Neptuno. Gracias a esa previsión, logramos visitar los cuatro gigantes gaseosos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Para escapar de la gravedad terrestre, el cohete Titán-Centaur les dio a las Voyager una velocidad de escape de 14 kilómetros por segundo. A esa velocidad, podrías viajar de Nueva York a Los Ángeles en menos de cinco minutos.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m6/banner_lanzamiento-1977.webp',
+    bannerCaption: 'Lanzamiento 1977: Voyager 1 y 2 despegaron con pocas semanas de diferencia iniciando la gran gira planetaria',
     fact: 'Las Voyager utilizan computadoras con apenas 69 kilobytes de memoria. Aún con esa memoria limitada, las naves son capaces de ejecutar maniobras complejas, recopilar datos valiosos y transmitirlos a la Tierra a miles de millones de kilómetros.',
   },
   {
@@ -128,6 +130,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La asistencia gravitatoria en Júpiter le dio a las Voyager un aumento de velocidad de más de 35,000 kilómetros por hora. Al robar esta energía orbital a Júpiter, el planeta se ralentizó en su órbita por una cantidad minúscula e imperceptible.' },
       { label: 'En la Misión', icon: 'zap', text: 'Durante el encuentro de la Voyager 2 con Neptuno, la luz del sol era muy débil, lo que exigía exposiciones largas para tomar fotos. Para evitar que las imágenes salieran borrosas debido a la velocidad, los ingenieros programaron los propulsores para girar la nave espacial y compensar el movimiento.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m6/banner_gran-tour-planetario.webp',
+    bannerCaption: 'La Gran Gira Planetaria: alineación de 175 años que permitió visitar Júpiter, Saturno, Urano y Neptuno',
     fact: 'Gracias a las asistencias gravitatorias, las naves Voyager redujeron el tiempo de viaje a Neptuno de 30 años a solo 12 años.',
   },
   {
@@ -147,6 +151,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La grabación incluyó las ondas cerebrales de Ann Druyan, quien trabajaba en el proyecto y se había comprometido con Carl Sagan pocos días antes. De esta manera, el sonido del amor humano viaja actualmente hacia las estrellas.' },
       { label: 'En la Cultura Pop', icon: 'zap', text: 'En una broma de Saturday Night Live en 1978, Steve Martin anunció que los alienígenas habían respondido al Disco de Oro. El supuesto mensaje extraterrestre decía: "Envíen más Chuck Berry".' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m6/banner_disco-de-oro.webp',
+    bannerCaption: 'El Disco de Oro: 116 imágenes y sonidos de la Tierra enviados al cosmos como mensaje de la humanidad',
     fact: 'El disco está fabricado con protección de aluminio y se espera que dure mil millones de años en el vacío del espacio sin degradarse significativamente. El Disco de Oro podría sobrevivir a la especie humana.',
   },
   {
@@ -166,6 +172,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La heliosfera tiene forma de cometa. Mientras el sistema solar viaja a través de la galaxia a 720,000 kilómetros por hora, la heliosfera choca contra el medio interestelar, creando una curva por delante y dejando una cola magnética por detrás.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Aunque las naves Voyager han cruzado la heliopausa, todavía no han salido del sistema solar. Los astrónomos definen el límite real del sistema solar como el borde exterior de la Nube de Oort. Las Voyager tardarán unos 30,000 años más en alcanzar y cruzar ese límite.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m6/banner_heliopausa-cruce.webp',
+    bannerCaption: 'Cruce de la heliopausa: Voyager 1 entró al espacio interestelar en agosto 2012, primera vez en la historia',
     fact: 'El instrumento de ondas de plasma de la Voyager funciona escuchando fluctuaciones electromagnéticas. Cuando estas frecuencias se traducen a sonido, el cruce de la heliopausa suena como un zumbido cósmico agudo.',
   },
   {
@@ -185,6 +193,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La señal de radio de las Voyager, transmitida con la energía equivalente a una pequeña bombilla de 22 vatios, tarda casi 23 horas viajando a la velocidad de la luz para llegar a las antenas de la Red del Espacio Profundo en la Tierra.' },
       { label: 'En la Misión', icon: 'zap', text: 'Para captar las débiles señales de las naves Voyager, la NASA usa antenas colosales de 70 metros de diámetro. Deben enfriar los componentes electrónicos a temperaturas cercanas al cero absoluto para reducir el ruido térmico.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m6/banner_espacio-interestelar.webp',
+    bannerCaption: 'En el espacio interestelar: Voyager mide en tiempo real el medio interestelar a más de 163 UA del Sol',
     fact: 'El medio interestelar donde se encuentran las sondas Voyager no está oscuro. Está lleno del brillo ultravioleta emitido por estrellas jóvenes cercanas en nuestra galaxia Vía Láctea.',
   },
   {
@@ -204,6 +214,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La situación es tan crítica con la energía que los ingenieros de la NASA apagaron los calefactores de los instrumentos para ahorrar vatios. Algunos componentes han seguido funcionando bien incluso en el frío extremo del espacio interestelar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El plutonio-238 usado en estas misiones no es el isótopo utilizado para fabricar armas nucleares (Plutonio-239). El Pu-238 es valorado por la comunidad científica por emitir calor constante sin radiaciones penetrantes dañinas para los instrumentos.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m6/banner_energia-plutonio.webp',
+    bannerCaption: 'Energía de plutonio: los RTG de Voyager convierten el calor del Pu-238 en electricidad, ahora con menos de 40W',
     fact: 'El diseño de los generadores RTGs en las sondas Voyager no tiene ninguna pieza móvil. Por esta razón de ingeniería, estos aparatos jamás sufren del típico desgaste mecánico por fricción que destruiría un motor en menos de una década.',
   },
   {
@@ -223,6 +235,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La famosa e icónica fotografía conocida como el "Punto Azul Pálido" fue tomada por la Voyager 1 a sugerencia directa del astrónomo Carl Sagan.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las naves Voyager nunca, bajo ninguna circunstancia, regresarán a la Tierra. Continuarán su viaje a través del cosmos de forma permanente.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m6/banner_legado-humanidad.webp',
+    bannerCaption: 'El legado de Voyager: símbolo de la curiosidad humana que sigue hablando con la Tierra desde 23,000 millones de km',
     fact: 'Las famosas sondas espaciales Voyager llevan un mensaje pacífico que afirma: "Este es un presente de un pequeño y distante mundo".',
   },
 ];
@@ -643,6 +657,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 <ExpandableSection key={idx} item={item} color={node.color} />
               ))}
             </div>
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

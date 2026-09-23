@@ -105,6 +105,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La mayoría de los meteoros que brillan intensamente en el cielo nocturno son causados por fragmentos de polvo diminutos del tamaño de un grano de arena. Se evaporan por completo a más de 80 kilómetros de altura sobre nuestras cabezas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El estampido sónico que se escucha tras el paso de un gran meteoro es una onda de choque originada por la velocidad supersónica. Tarda varios minutos en viajar desde la alta atmósfera hasta el suelo donde se encuentran los observadores.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m2/banner_viaje-atmosferico.webp',
+    bannerCaption: 'El viaje atmosférico: el meteoroide entra a 70 km/s y el roce con el aire lo convierte en bola de fuego',
     fact: 'Durante la ablación atmosférica, la superficie del meteoroide se derrite formando una fina corteza de fusión negra y brillante. Esta capa vítrea de menos de un milímetro de grosor es la principal seña de identidad para reconocer un meteorito auténtico.',
   },
   {
@@ -124,6 +126,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cada día caen sobre la Tierra más de 100 toneladas de materia extraterrestre. La inmensa mayoría llega en forma de micrometeoritos microscópicos que se posan suavemente sobre los tejados de nuestras casas sin que lo notemos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los bólidos son meteoros excepcionalmente brillantes que superan el resplandor del planeta Venus en el cielo nocturno. A menudo explotan en múltiples fragmentos produciendo destellos verdes o azulados debido al hierro y magnesio fundidos.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m2/banner_diferencia-terminos.webp',
+    bannerCaption: 'Meteoroide, meteoro, meteorito: tres nombres para el mismo objeto en diferentes etapas de su viaje',
     fact: 'Existen meteoritos de origen lunar y marciano. Fueron arrancados de la Luna o de Marte por impactos de asteroides gigantes y viajaron por el espacio durante millones de años antes de caer en la Tierra.',
   },
   {
@@ -143,6 +147,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La estructura de Widmanstätten que presentan los meteoritos metálicos no se puede fabricar en ningún laboratorio terrestre. Requiere que la aleación de hierro y níquel se enfríe en el espacio a un ritmo increíblemente lento de un grado cada millón de años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las condritas carbonáceas como el meteorito Allende contienen granos presolares. Son diminutos cristales de diamante y grafito que se sintetizaron en la atmósfera de estrellas moribundas antes del nacimiento de nuestro propio Sol.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m2/banner_tipos-meteoritos.webp',
+    bannerCaption: 'Tipos de meteoritos: condritos pétreos (85%), meteoritos de hierro y palasitas de hierro-olivino',
     fact: 'El meteorito Hoba, hallado en Namibia en 1920, es el meteorito metálico más grande y pesado encontrado intacto en la Tierra. Pesa más de 60 toneladas y jamás ha sido movido de su lugar de impacto original.',
   },
   {
@@ -163,6 +169,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El volumen del cráter final excavado por un asteroide hiperveloz suele ser entre 15 y 20 veces mayor que el propio diámetro de la roca impactante. Una piedra de 100 metros puede excavar un foso de casi dos kilómetros.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La enorme presión de un impacto altera la estructura cristalina del cuarzo en el suelo, produciendo un mineral raro llamado cuarzo chocado. Su presencia en las capas geológicas es la prueba irrefutable de un impacto asteroide antiguo.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m2/banner_formacion-crateres.webp',
+    bannerCaption: 'Formación de cráteres: contacto, excavación y colapso, las tres etapas del impacto cósmico',
     fact: 'El Cráter Meteor de Arizona (Barringer) es el cráter de impacto mejor conservado de la Tierra. Se formó hace 50,000 años por una roca de hierro de 50 metros y mide 1.2 kilómetros de diámetro por 170 metros de profundidad.',
   },
   {
@@ -182,6 +190,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los geólogos descubrieron el impacto de Chicxulub buscando una fina capa de arcilla enriquecida con iridio que existe en todo el mundo. El iridio es un metal rarísimo en la corteza terrestre pero abundantísimo en los asteroides.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los famosos cenotes de la península de Yucatán están distribuidos en un semicírculo perfecto. Siguen el anillo de falla exterior del cráter de Chicxulub donde la roca fracturada facilitó la disolución del suelo calcáreo.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m2/banner_impacto-chicxulub.webp',
+    bannerCaption: 'Impacto de Chicxulub: el asteroide de 10km que acabó con los dinosaurios hace 66 millones de años',
     fact: 'El asteroide de Chicxulub tardó apenas dos segundos en cruzar toda la atmósfera terrestre desde el espacio hasta chocar contra el mar somero de Yucatán, dejando un túnel de vacío momentáneo tras de sí.',
   },
   {
@@ -205,6 +215,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En ocasiones excepcionales ocurren Tormentas de Meteoros. Suceden cuando la Tierra cruza un enjambre de polvo muy joven y denso, pudiendo observarse miles de meteoros por hora, como ocurrió en las Leónidas de 1833 y 1966.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La velocidad a la que entran los granos de polvo de una lluvia de meteoros oscila entre 11 y 72 kilómetros por segundo. Las Leónidas son las más rápidas, incinerándose a altitudes elevadas con destellos verdosos.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m2/banner_lluvias-estrellas.webp',
+    bannerCaption: 'Lluvias de estrellas: cuando la Tierra cruza los restos de un cometa vemos decenas de meteoros por hora',
     fact: 'El cuerpo progenitor de las Gemínidas, el asteroide Phaethon, se comporta como un "cometa rocoso". Al acercarse intensamente al Sol, su superficie alcanza 750°C y se agrieta liberando nubes de polvo mineral.',
   },
   {
@@ -224,6 +236,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En el año 1908 ocurrió el Evento de Tunguska en Siberia. Un asteroide de 50 metros explotó en el aire a 8 kilómetros de altura, aplanando 80 millones de árboles en una superficie de 2,000 kilómetros cuadrados.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El estudio del meteorito Allende permitió determinar con una precisión extrema la edad exacta del Sistema Solar en 4,567.3 millones de años, al analizar la desintegración isotópica de uranio en sus minerales.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m2/banner_meteoritos-famosos.webp',
+    bannerCaption: 'Meteoritos famosos: ALH84001 de Marte, Allende con aminoácidos y Hoba el mayor del mundo',
     fact: 'El meteorito Murchison, caído en Australia en 1969, contenía más de 70 tipos de aminoácidos diferentes y bases nitrogenadas complejas, demostrando que los componentes de la vida se sintetizan naturalmente en el espacio.',
   },
 ];
@@ -663,6 +677,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

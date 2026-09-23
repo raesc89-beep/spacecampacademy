@@ -113,6 +113,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Kepler estaba equipado con un espejo primario de 1.4 metros de diámetro y la cámara digital más grande jamás enviada al espacio en su época, compuesta por una matriz de 42 sensores CCD de altísima sensibilidad calibrados para detectar variaciones de luz del cero punto cero dos por ciento.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El exoplaneta Kepler-186f fue el primer planeta confirmado de tamaño casi idéntico a la Tierra (1.17 radios terrestres) que orbitaba en la zona habitable de su estrella. Su descubrimiento en 2014 probó que existen verdaderos análogos terrestres rocosos capaces de sostener agua líquida.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_mision-kepler.webp',
+    bannerCaption: 'Misión Kepler: 9 años mirando el cielo y más de 2,600 exoplanetas confirmados',
     fact: 'Durante sus nueve años y medio de operaciones en órbita heliocéntrica, el telescopio Kepler observó más de 530,000 estrellas y registró más de 678 gigabytes de datos astronómicos puros que continúan siendo analizados hoy por inteligencia artificial.'
   },
   {
@@ -132,6 +134,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La precisión fotométrica del telescopio espacial Kepler era tan asombrosa que equivalía a detectar el parpadeo de la mosca pasando por delante del faro de un automóvil a una distancia de varios kilómetros de separación en la oscuridad total.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La fotometría espacial también impulsó el desarrollo de la astroseismología. Al medir las micro-pulsaciones de luz causadas por ondas sonoras que rebotan en el interior de una estrella, los científicos pueden deducir la masa, el radio y la edad exacta de la estrella hospedera con precisión sin precedentes.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_fotometria-espacial.webp',
+    bannerCaption: 'Fotometría espacial: medir el brillo estelar con precisión de partes por millón desde el espacio',
     fact: 'El satélite fotométrico CoRoT, lanzado por la Agencia Espacial Europea y Francia en 2006, fue el pionero absoluto en fotometría espacial de tránsitos, descubriendo CoRoT-7b, el primer exoplaneta rocoso confirmado de la historia con densidad medida.'
   },
   {
@@ -151,6 +155,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El acrónimo TOI que utiliza TESS significa "TESS Object of Interest" (Objeto de Interés de TESS). Cada vez que los algoritmos de TESS detectan un parpadeo de tránsito prometedor en una estrella cercana, la asignan como TOI para que la comunidad astronómica mundial inicie observaciones de seguimiento.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La órbita de TESS es única en la ingeniería aeroespacial. Se llama órbita de resonancia con la Luna P/2 y no requiere casi ningún impulso de combustible para mantener la estabilidad a largo plazo, garantizando que el satélite funcione operativamente durante décadas sin desviarse de su curso.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_mision-tess.webp',
+    bannerCaption: 'Misión TESS: cubriendo el 85% del cielo para encontrar planetas alrededor de estrellas cercanas',
     fact: 'TESS observa simultáneamente más de 200,000 estrellas seleccionadas prioritariamente con cadencia rápida de dos minutos, además de capturar imágenes de cuadro completo de todo el sector cada 200 segundos para la investigación astrofísica abierta.'
   },
   {
@@ -170,6 +176,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El parasol del JWST está fabricado con Kapton y revestido de aluminio y silicio. Mientras la cara expuesta al Sol alcanza temperaturas abrasadoras de 110 grados Celsius, la cara posterior donde se ubican los espejos y detectores se mantiene congelada a menos 235 grados Celsius.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El berilio fue elegido para construir los espejos del JWST porque es un metal sumamente ligero y con una estabilidad térmica excepcional. Los 18 segmentos dorados se alinean en el espacio con motores piezoeléctricos capaces de ajustar su posición con precisión de nanómetros.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_telescopio-jwst.webp',
+    bannerCaption: 'JWST: el espejo dorado de 6.5m que analiza atmósferas de exoplanetas a luz infrarroja',
     fact: 'El JWST detectó por primera vez dióxido de azufre (SO2) en la atmósfera del exoplaneta WASP-39b, revelando que la fotoquímica impulsada por la luz ultravioleta de la estrella crea reacciones químicas activas en atmósferas alienígenas.'
   },
   {
@@ -189,6 +197,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La capa atmosférica que atraviesa la luz durante un tránsito representa menos del uno por ciento del radio total del planeta. Medir la señal de transmisión en una Supertierra es equivalente a medir el grosor del pelo de un gato colocado sobre el borde de una moneda a kilómetros de distancia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La escala de altura atmosférica (H) determina qué tan fácil es observar un espectro de transmisión. Las atmósferas calientes compuestas por gases ligeros como hidrógeno se extienden a gran altura, produciendo señales espectrales amplias y fáciles de detectar por espectrógrafos infrarrojos.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_espectroscopia-transmision.webp',
+    bannerCaption: 'Espectroscopía de transmisión: las moléculas de la atmósfera del planeta dejan huella en la luz estelar',
     fact: 'El telescopio Hubble realizó la primera detección de una atmósfera exoplanetaria mediante espectroscopía de transmisión en 2001, identificando átomos de sodio gaseoso en la envoltura superior del planeta gigante HD 209458 b.'
   },
   {
@@ -208,6 +218,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Mediante el eclipse secundario y las curvas de fase, el telescopio Spitzer logró crear el primer mapa de temperaturas atmosféricas de un exoplaneta en 2007. Mapeó el planeta HD 189733 b, revelando que el punto más caliente no estaba en el centro del mediodía sino desplazado por vientos ecuatoriales violentos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El eclipse secundario permite medir la excentricidad orbital con precisión matemática. Si el eclipse secundario no ocurre exactamente en la mitad del tiempo entre dos tránsitos principales, significa que la órbita del exoplaneta no es circular sino una elipse elongada.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_fotometria-eclipse-secundario.webp',
+    bannerCaption: 'Eclipse secundario: cuando el planeta se esconde detrás de la estrella revelamos su propio calor',
     fact: 'El instrumento MIRI del JWST midió la emisión térmica en eclipse secundario de TRAPPIST-1 b, revelando una temperatura de 230°C y sugiriendo que este planeta rocoso carece de una atmósfera densa de dióxido de carbono.'
   },
   {
@@ -227,6 +239,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Telescopio Extremadamente Grande (ELT) de la ESO en el desierto de Atacama será el ojo óptico más grande del mundo dirigiendo la mirada hacia el cielo. Recogerá cien millones de veces más luz que el ojo humano y corregirá la turbulencia de la atmósfera terrestre mediante óptica adaptativa dinámica.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La técnica de coronografía utilizada por el telescopio Nancy Grace Roman utiliza una máscara física interna que tapa el resplandor de la estrella en un factor de mil millones. Esto permite revelar directamente los diminutos puntos de luz planetarios que orbitan a su alrededor.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_futuro-observatorios.webp',
+    bannerCaption: 'Observatorios del futuro: el ELT de 39m y el HWO buscarán gemelas de la Tierra directamente',
     fact: 'El concepto de misión Habitable Worlds Observatory (HWO) de la NASA planea lanzarse en la década de 2030 con un espejo de 6 metros optimizado para analizar atmósferas de al menos 25 planetas rocosos potencialmente habitables en busca de biofirmas.'
   }
 ];
@@ -669,6 +683,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 <ExpandableSection item={exp} color={node.color} />
               </div>
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

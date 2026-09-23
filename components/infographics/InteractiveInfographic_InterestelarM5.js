@@ -115,6 +115,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Astrónomo Jan Oort', icon: 'atom', text: 'Jan Oort fue uno de los astrónomos más famosos del siglo veinte. Además de proponer la Nube de Oort, calculó la distancia desde el Sol hasta el centro galáctico y demostró que la Vía Láctea está rotando. Sus estudios establecieron bases sólidas. Deducir la existencia de una nube invisible analizando las órbitas de los cometas fue un salto intelectual extraordinario.' },
       { label: 'Forma Tridimensional', icon: 'zap', text: 'A diferencia del cinturón de Kuiper que es como un disco plano de objetos helados, la Nube de Oort exterior es una esfera completa. Imagina una burbuja enorme que encierra a nuestro sistema planetario. Esta geometría ocurre porque los tirones gravitacionales de las estrellas han alterado las órbitas planas, dispersando los objetos en direcciones tridimensionales.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m5/banner_que-es-oort.webp',
+    bannerCaption: 'La Nube de Oort: billones de cuerpos helados envuelven el sistema solar hasta casi la mitad de la estrella más próxima',
     fact: 'Se calcula que la Nube de Oort contiene al menos varios billones de objetos helados que superan el kilómetro de diámetro. A pesar de este número asombroso, su masa total combinada se estima entre cinco y cien veces la masa de la Tierra. Están hechos principalmente de hielo ligero y polvo, ocupando un volumen espacial inmenso.',
   },
   {
@@ -134,6 +136,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Unidad Astronómica (UA)', icon: 'clock', text: 'La Unidad Astronómica es la regla de medir indispensable para nuestro sistema solar. Equivale a la distancia media exacta entre la Tierra y el Sol: 149.5 millones de kilómetros. Cuando decimos que la Nube de Oort se extiende cien mil unidades astronómicas, significa que su borde lejano está cien mil veces más lejos del Sol que nuestro planeta.' },
       { label: 'Esfera de Hill', icon: 'zap', text: 'La frontera invisible donde la Nube de Oort exterior termina marca el borde de la esfera de Hill del Sol. Esta esfera define el volumen donde la gravedad solar domina sobre la atracción de la galaxia y las estrellas vecinas. Si un cometa supera ese límite, vagará por el espacio interestelar.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m5/banner_escala-distancia.webp',
+    bannerCaption: 'La escala imposible: la Nube de Oort está a casi 2 años luz y Voyager tardará 300 años en alcanzarla',
     fact: 'El borde exterior de la Nube de Oort se ubica a un tercio del camino hacia Próxima Centauri, la estrella más cercana al Sol. Las distancias cósmicas son tan inmensas que las nubes de Oort de las estrellas cercanas podrían estar interactuando, compartiendo material antiguo.',
   },
   {
@@ -153,6 +157,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Modelo Niza', icon: 'atom', text: 'El modelo Niza, nombrado por la ciudad francesa donde se desarrolló en 2005, propone que los planetas gigantes del sistema solar joven migraron de sus posiciones originales. Esta migración planetaria causó inestabilidades orbitales, dispersando objetos helados pequeños hacia el cinturón de Kuiper y la Nube de Oort, explicando la arquitectura actual.' },
       { label: 'Captura Estelar', icon: 'zap', text: 'La hipótesis de que el Sol robó cometas es fascinante. En su cúmulo natal, las estrellas pasaban muy cerca unas de otras. Durante estos encuentros, la gravedad solar podría haber arrancado cometas de la periferia de estrellas hermanas, incorporándolos a nuestra propia Nube de Oort y enriqueciendo nuestra diversidad química.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m5/banner_origen-formacion.webp',
+    bannerCaption: 'Formación hace 4,600 millones de años: planetesimales expulsados por los gigantes gaseosos al frío extremo',
     fact: 'Si la Tierra entera se redujera al tamaño de un grano de sal, y la distancia desde el Sol al borde lejano de la Nube de Oort se dibujara a esa escala, la nube se extendería por más de 32 kilómetros. Esta metáfora revela la vastedad del espacio dominado por la gravedad de nuestro Sol.',
   },
   {
@@ -172,6 +178,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Cometa Hale-Bopp', icon: 'atom', text: 'El cometa Hale-Bopp, descubierto en 1995, es uno de los cometas de largo período más observados en la historia. Su núcleo medía unos 40 kilómetros de diámetro, lo cual es inusualmente grande. Su brillo en el cielo nocturno fue visible a simple vista durante un récord de 18 meses continuos.' },
       { label: 'Dos Colas Distintas', icon: 'zap', text: 'Los cometas de Oort desarrollan dos colas cuando se acercan al Sol. La cola de polvo está formada por partículas rocosas y se curva hacia atrás a lo largo de la órbita. La segunda cola, de gas ionizado brillante, apunta en dirección opuesta al Sol debido a la presión del viento solar.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m5/banner_cometas-largo-periodo.webp',
+    bannerCaption: 'Cometas de largo periodo: Hale-Bopp visita cada 2,520 años, llegan desde todas las direcciones del cielo',
     fact: 'El cometa C/2014 UN271, descubierto por los astrónomos Pedro Bernardinelli y Gary Bernstein, es un objeto gigantesco proveniente de la Nube de Oort. Su núcleo masivo mide más de 130 kilómetros de ancho. Nunca se acercará a la Tierra; su aproximación más cercana en 2031 lo dejará más allá de la órbita de Saturno.',
   },
   {
@@ -191,6 +199,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Heliopausa vs Oort', icon: 'zap', text: 'La heliopausa es la frontera donde el viento solar choca con la radiación cósmica galáctica, a 120 unidades astronómicas. La sonda Voyager 1 cruzó la heliopausa en 2012, entrando al medio interestelar. Sin embargo, no dejará el campo gravitacional del Sol hasta que cruce la Nube de Oort en 30,000 años.' },
       { label: 'El Cero Absoluto', icon: 'atom', text: 'La temperatura típica en las profundidades de la Nube de Oort oscila entre tres y diez grados Kelvin (-265 grados Celsius). En este frío tan profundo, gases comunes como el metano y el monóxido de carbono se congelan como rocas duras, preservando química inalterada.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m5/banner_limite-solar-interestelar.webp',
+    bannerCaption: 'El límite solar-interestelar: donde la gravedad del Sol apenas retiene los objetos de la Nube de Oort',
     fact: 'El concepto de la marea galáctica es parecido a cómo la Luna causa mareas en nuestros océanos terrestres. La masa combinada de las estrellas y el gas interestelar en la Vía Láctea ejerce una fuerza gravitacional continua que moldea la forma de la Nube de Oort.',
   },
   {
@@ -210,6 +220,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'La Estrella Gliese 710', icon: 'atom', text: 'Gliese 710 es una enana naranja, con la mitad de la masa del Sol. Actualmente se encuentra inofensivamente a unos 62 años luz de distancia. Cuando llegue a su máxima aproximación crítica en 1.3 millones de años, podría brillar intensamente en nuestros cielos oscuros, rivalizando con Júpiter en brillo planetario.' },
       { label: 'La Estrella de Scholz', icon: 'zap', text: 'Descubierta en 2013 por el astrónomo Ralf-Dieter Scholz, es un sistema binario peculiar compuesto por una enana roja muy pequeña y una enana marrón tenue. Cuando atravesó nuestra Nube de Oort en el pasado, estaba demasiado oscura para ser vista a simple vista por nuestros antepasados primitivos.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m5/banner_perturbaciones-estelares.webp',
+    bannerCaption: 'Perturbaciones estelares: estrellas que pasan y la marea galáctica envían cometas hacia el interior solar',
     fact: 'El satélite Gaia de la Agencia Espacial Europea ha rastreado el movimiento exacto de millones de estrellas. Sus datos revelan que aproximadamente una docena de estrellas vagabundas han pasado a menos de unos pocos años luz de nuestro Sol durante el último millón de años, agitando continuamente los cometas remotos.',
   },
   {
@@ -229,6 +241,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Propulsión Nuclear', icon: 'zap', text: 'La propulsión nuclear térmica audaz usa un reactor de fisión potente para calentar un gas expansivo ligero y expulsarlo por una boquilla de cohete brillante. Podría teóricamente duplicar la eficiencia de empuje y acortar los tiempos de vuelo hacia los rincones más profundos del espacio oscuro.' },
       { label: 'Proyecto Breakthrough Starshot', icon: 'atom', text: 'El proyecto Breakthrough Starshot propone usar lásers de potencia gigavatio basados en tierra para impulsar naves espaciales diminutas acopladas a velas reflectantes delgadas. Las acelerarían a un 20% de la velocidad de la luz. A esa velocidad, cruzarían la Nube de Oort en pocos años.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m5/banner_exploracion-futura.webp',
+    bannerCaption: 'Exploración futura: sondas de propulsión nuclear o láser podrían alcanzar la Nube de Oort en décadas',
     fact: 'El concepto de la lente gravitacional solar natural masiva no es ciencia ficción. La NASA y el JPL están estudiando metódicamente conceptos de misiones y sondas ligeras para llevar telescopios de vanguardia a 550 UA para visualizar otros mundos.',
   },
 ];
@@ -670,6 +684,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* â”€â”€â”€ Fact Highlight â”€â”€â”€ */}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <div style={{
             marginTop: '1.5rem',

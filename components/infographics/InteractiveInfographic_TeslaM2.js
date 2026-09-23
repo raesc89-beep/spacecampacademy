@@ -164,6 +164,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La estación de Pearl Street de Edison sufría averías constantes. El 2 de enero de 1890, un cortocircuito provocó un incendio que destruyó la central por completo. Los cables subterráneos de DC se sobrecalentaban con frecuencia y causaban incendios en los sótanos de los edificios conectados. En los primeros años del sistema, los bomberos de Nueva York respondían regularmente a emergencias causadas por la infraestructura eléctrica de Edison, lo que generaba desconfianza pública hacia la nueva tecnología.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La pérdida de potencia en un cable eléctrico se calcula con la fórmula P = I² × R, donde P es la potencia perdida, I es la corriente y R es la resistencia del cable. Esta ecuación muestra que las pérdidas aumentan con el cuadrado de la corriente. Si se duplica el voltaje, la corriente se reduce a la mitad para la misma potencia, pero las pérdidas se reducen a una cuarta parte. Por eso transmitir a alto voltaje (posible con AC, no con DC) reduce drásticamente las pérdidas energéticas en líneas de transmisión de larga distancia.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m2/banner_problema-electricidad-1880.webp',
+    bannerCaption: 'El problema de 1880: la corriente continua de Edison perdía potencia a cada kilómetro dejando el mundo en oscuridad',
     fact: 'En 1882, Edison necesitó instalar 23 kilómetros de cables de cobre subterráneos solo para alimentar a sus primeros 85 clientes en un área de menos de 2.6 kilómetros cuadrados. El cobre representaba el 62% del costo total de la instalación. A ese ritmo, electrificar todo Manhattan habría requerido más de 1,200 kilómetros de cable de cobre grueso, con un costo estimado de 25 millones de dólares de la época, equivalente a más de 700 millones de dólares actuales, una cifra que hacía el proyecto económicamente inviable con tecnología DC.',
   },
   {
@@ -183,6 +185,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla tenía una memoria eidética y hablaba ocho idiomas: serbocroata, checo, inglés, francés, alemán, húngaro, italiano y latín. Podía memorizar libros completos y recitar páginas enteras de memoria. En sus años de estudio en la Universidad Politécnica de Graz (Austria), sus profesores sospecharon que hacía trampa porque resolvía integrales de cálculo mentalmente, sin escribir los pasos intermedios. El decano escribió a su padre sugiriendo que Nikola estaba enfermo por exceso de trabajo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El campo magnético rotatorio de Tesla se basa en las ecuaciones de Maxwell publicadas en 1865. Cuando dos corrientes alternas desfasadas 90 grados alimentan dos pares de bobinas perpendiculares, el campo magnético resultante rota a la frecuencia de la corriente aplicada. En un sistema trifásico (tres corrientes desfasadas 120 grados), el campo rotatorio es más uniforme y potente. La velocidad de rotación del campo se calcula como N = 120f/p, donde f es la frecuencia en hertzios y p es el número de polos magnéticos del motor.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m2/banner_vision-de-tesla.webp',
+    bannerCaption: 'La visión de Tesla: en un parque de Budapest en 1882 vio en su mente el motor de corriente alterna completo',
     fact: 'El parque Városliget de Budapest, donde Tesla tuvo su revelación sobre el campo magnético rotatorio en 1882, existe todavía hoy y alberga una estatua de Tesla inaugurada en 2006 en el 150 aniversario de su nacimiento. La estatua fue diseñada por los escultores croatas Leo Mol y Frano Kršinić, y muestra a Tesla de pie sosteniendo una esfera que representa el campo magnético rotatorio. La inscripción dice en húngaro y serbio: "Aquí, en febrero de 1882, Nikola Tesla concibió el campo magnético rotatorio que cambió el curso de la civilización."',
   },
   {
@@ -202,6 +206,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los motores de inducción de Tesla representan hoy más del 45% del consumo eléctrico mundial. Están presentes en ventiladores, compresores de refrigeradores, bombas de agua, sistemas de aire acondicionado, elevadores, trenes, y miles de aplicaciones industriales. Un automóvil eléctrico Tesla Model S utiliza un motor de inducción AC trifásico que produce 362 caballos de fuerza. La empresa Tesla Motors eligió su nombre precisamente en honor a Nikola Tesla y a su invención del motor de inducción de corriente alterna.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La eficiencia de un motor de inducción moderno puede alcanzar el 96-97% en tamaños industriales grandes, lo que significa que solo el 3-4% de la energía eléctrica se pierde como calor. En comparación, un motor DC típico tiene una eficiencia del 75-85%. El deslizamiento típico de un motor de inducción es del 2-5%, lo que significa que si el campo magnético gira a 1800 RPM (en un motor de 4 polos a 60 Hz), el rotor gira a aproximadamente 1728-1764 RPM. Esta pequeña diferencia de velocidad es lo que permite la inducción de corrientes en el rotor.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m2/banner_motor-de-induccion.webp',
+    bannerCaption: 'Motor de inducción: campo magnético rotante mueve el rotor sin contacto físico, simple y sin mantenimiento',
     fact: 'Tesla recibió la patente estadounidense número 381,968 el 1 de mayo de 1888 por su "Motor Electromagnético", y en total registró más de 40 patentes relacionadas con su sistema polifásico de corriente alterna entre 1887 y 1891. Cuando falleció el 7 de enero de 1943 en Nueva York, poseía aproximadamente 300 patentes en 26 países. El tribunal supremo de Estados Unidos confirmó ese mismo año la prioridad de Tesla sobre Marconi en la invención de la radio, reconociendo la patente de Tesla de 1897 como anterior a la de Marconi.',
   },
   {
@@ -221,6 +227,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Edison acuñó el verbo "westinghoused" (ser "westinghoused") como sinónimo de electrocución, intentando asociar el nombre de su rival con la muerte. También financió cortometrajes donde se electrocutaban animales con corriente alterna. La ironía es que la compañía de Edison, General Electric, terminó adoptando la corriente alterna apenas unos años después de perder la guerra de las corrientes. Para 1896, GE vendía sus propios equipos de AC, efectivamente reconociendo la superioridad de la tecnología que Edison había intentado destruir.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La corriente necesaria para causar fibrilación cardíaca es de aproximadamente 75-100 miliamperios tanto para AC como para DC. Sin embargo, la corriente alterna a 60 Hz es particularmente peligrosa porque esta frecuencia coincide cercanamente con la frecuencia natural de las contracciones del corazón humano (1-2 Hz para el pulso, pero el tejido cardíaco responde a frecuencias mucho más altas). A frecuencias superiores a 1,000 Hz, la corriente alterna se vuelve progresivamente menos peligrosa porque tiende a fluir por la superficie de la piel en lugar de penetrar al interior del cuerpo, un fenómeno conocido como efecto piel.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m2/banner_guerra-de-corrientes.webp',
+    bannerCaption: 'La Guerra de las Corrientes: Edison vs Westinghouse-Tesla en la batalla por electrificar América',
     fact: 'La Exposición Universal de Chicago de 1893, iluminada por corriente alterna de Westinghouse y Tesla, fue apodada "La Ciudad Blanca" por sus miles de luces eléctricas. Fue la primera vez que millones de personas vieron iluminación eléctrica a gran escala. La exposición consumía tres veces más electricidad que toda la ciudad de Chicago en ese momento. La famosa noria original (Ferris wheel), construida para la exposición, también funcionaba con motores de corriente alterna. Esta demostración masiva convenció al público estadounidense de que la electricidad AC era el futuro, y la guerra de las corrientes quedó efectivamente decidida.',
   },
   {
@@ -240,6 +248,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Nikola Tesla visitó las cataratas del Niágara por primera vez en 1896, después de que su tecnología ya las hubiera transformado. Al ver los generadores funcionando, Tesla dijo a los periodistas que había soñado con aprovechar la energía del Niágara desde que era niño en Croacia, cuando vio una imagen de las cataratas en un libro escolar. Había pasado más de 30 años entre ese sueño infantil y su realización. Hoy existe una estatua de bronce de Tesla en el lado canadiense de las cataratas, donada por el gobierno de Serbia y ubicada en Queen Victoria Park.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La energía hidroeléctrica aprovecha la energía potencial gravitatoria del agua. La potencia disponible se calcula como P = ρ × g × h × Q, donde ρ es la densidad del agua (1,000 kg/m³), g es la aceleración gravitatoria (9.81 m/s²), h es la altura de caída (51 metros en el Niágara) y Q es el caudal volumétrico. Con el caudal promedio del Niágara, la potencia teórica total es de aproximadamente 4,400 megavatios, suficiente para abastecer a más de 3.8 millones de hogares. Actualmente, las centrales hidroeléctricas del Niágara en ambos países generan unos 4,400 MW combinados.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m2/banner_central-niagara-falls.webp',
+    bannerCaption: 'Niágara 1895: la primera planta hidroeléctrica de AC transmitió electricidad 40 km a Buffalo, AC ganó la guerra',
     fact: 'Edward Dean Adams, presidente de la Niagara Falls Power Company, estaba tan convencido de la importancia del proyecto que encargó una monografía de dos volúmenes titulada "Niagara Power: History of the Niagara Falls Power Company, 1886-1918", publicada en 1927, que documenta cada aspecto técnico de la construcción. La planta original Adams fue demolida en 1961, pero una réplica del generador número 1 de Tesla se exhibe en el Museo Smithsoniano de Historia Americana en Washington D.C., catalogada con el número de objeto 1987.0914.01.',
   },
   {
@@ -259,6 +269,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'William Stanley Jr., un ingeniero de Westinghouse, realizó la primera demostración práctica de un sistema de distribución AC con transformadores en Great Barrington, Massachusetts, en marzo de 1886. Instaló un generador en una antigua fábrica de goma, elevó el voltaje a 3,000 V para transmitirlo por cables aéreos a lo largo de 1.2 kilómetros del pueblo, y luego lo redujo a 500 V para alimentar 23 comercios con luces incandescentes. Este experimento a pequeña escala demostró por primera vez que el concepto de transformación de voltaje funcionaba en la práctica y fue clave para que Westinghouse apostara por la tecnología AC.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La eficiencia de un transformador eléctrico moderno puede superar el 99.7% en grandes unidades de potencia, lo que significa que menos del 0.3% de la energía se pierde como calor. Las pérdidas se dividen en dos tipos: pérdidas en el cobre (por la resistencia de los devanados, proporcionales al cuadrado de la corriente) y pérdidas en el hierro del núcleo (por histéresis magnética y corrientes de Foucault, constantes independientemente de la carga). Un transformador grande de subestación de 500 MVA puede pesar más de 400 toneladas y contener 80,000 litros de aceite mineral para aislamiento y refrigeración.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m2/banner_transformador-transmision.webp',
+    bannerCaption: 'El transformador: sube el voltaje para transmitir lejos y lo baja para usar en casa, imposible con DC',
     fact: 'La línea de transmisión de más alto voltaje en operación actualmente es la línea Changji-Guquan UHVDC en China, que opera a 1,100,000 voltios (1.1 millones de voltios) de corriente continua y se extiende 3,324 kilómetros desde la provincia de Xinjiang hasta la provincia de Anhui. Transmite 12,000 megavatios de potencia, suficiente para abastecer a 50 millones de personas. Paradójicamente, aunque usa DC para la transmisión, la electricidad se genera como AC, se convierte a DC para el viaje y se reconvierte a AC en destino, demostrando que el sistema AC de Tesla sigue siendo la base de incluso los sistemas más avanzados del siglo XXI.',
   },
   {
@@ -278,6 +290,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Japón es el único país del mundo que utiliza dos frecuencias diferentes de corriente alterna dentro de sus fronteras. La mitad oriental del país (incluyendo Tokio) usa 50 Hz, mientras que la mitad occidental (incluyendo Osaka) usa 60 Hz. Esto se debe a que en la década de 1890, las compañías eléctricas de Tokio compraron generadores alemanes de 50 Hz, mientras que las de Osaka compraron generadores estadounidenses de 60 Hz. La diferencia persiste hasta hoy y requiere estaciones de conversión de frecuencia en la frontera entre ambas zonas, lo que limita la transferencia de energía entre las dos mitades del país.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un hogar promedio en Estados Unidos consume aproximadamente 10,500 kilovatios-hora (kWh) de electricidad al año, lo que equivale a una potencia media continua de 1.2 kilovatios. La electricidad recorre un camino complejo desde la central generadora: sale a 13,000-25,000 V del generador, se eleva a 115,000-765,000 V para transmisión interurbana, se reduce a 4,000-34,500 V en subestaciones de distribución, y finalmente llega a 120/240 V al transformador del poste frente a tu casa. Cada etapa de transformación ocurre gracias al principio que Tesla integró en su sistema.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m2/banner_ac-vida-diaria.webp',
+    bannerCaption: 'AC en la vida diaria: neveras, lavadoras, trenes y toda la red eléctrica mundial usan el sistema de Tesla',
     fact: 'Tesla murió solo en la habitación 3327 del Hotel New Yorker en Nueva York el 7 de enero de 1943, a los 86 años de edad. Había vivido en hoteles durante los últimos 30 años de su vida, frecuentemente sin poder pagar la cuenta completa. A pesar de haber inventado el sistema eléctrico que genera más de 20 billones de dólares anuales en la economía mundial, Tesla falleció prácticamente sin dinero. Su funeral se celebró el 12 de enero de 1943 en la Catedral de San Juan el Divino en Manhattan, con más de 2,000 asistentes, incluyendo tres premios Nobel. Su legado fue resumido por el alcalde de Nueva York, Fiorello La Guardia, quien leyó un panegírico por radio a toda la nación.',
   },
 ];
@@ -699,6 +713,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

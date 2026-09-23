@@ -95,6 +95,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'Los astrofísicos calculan que hay al menos diez mil objetos interestelares del tamaño de Oumuamua cruzando la órbita de Neptuno en cualquier momento dado. Cada estrella de la Vía Láctea expulsa billones de pequeños cuerpos durante la formación de sus sistemas planetarios — cuando planetas gigantes como Júpiter migran de posición, patean asteroides y cometas hacia el espacio interestelar como bolas de billar. La Vía Láctea entera está llena de estos nómadas cósmicos viajando eternamente entre las estrellas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La velocidad de los objetos interestelares es alta. Oumuamua entró al Sistema Solar a más de 90,000 kilómetros por hora relativo al Sol. Al pasar cerca de nuestra estrella, la gravedad solar lo aceleró en su encuentro más cercano y alcanzó una velocidad máxima de aproximadamente 315,000 kilómetros por hora — suficiente para cruzar el diámetro completo de la Tierra en menos de un minuto. El cometa Borisov viajaba a unos 150,000 kilómetros por hora en su punto de mayor aproximación al Sol.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m1/banner_que-es-interestelar.webp',
+    bannerCaption: 'Objetos interestelares: visitantes de otros sistemas estelares que cruzan el solar en trayectorias hiperbólicas',
     fact: 'El nombre técnico de \'Oumuamua es 1I/2017 U1. La "I" representa la palabra "Interestelar". Fue la primera vez que la Unión Astronómica Internacional creó una categoría nueva para un objeto. Antes, solo existían las letras"A" para Asteroides y "C" para Cometas. Este asteroide revolucionó las nomenclaturas.',
   },
   {
@@ -114,6 +116,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'Incluso los agujeros negros tienen una velocidad de escape, pero es mayor que la velocidad de la luz. La región donde la velocidad de escape iguala exactamente la velocidad de la luz se llama el horizonte de eventos. Más allá de ese límite, absolutamente nada — ni materia, ni luz, ni información — puede escapar. Por eso los agujeros negros son negros: no emiten ni reflejan ningún tipo de radiación que pueda llegar hasta nosotros. Solo sabemos que existen por los efectos gravitacionales que producen sobre los objetos cercanos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las sondas Voyager 1 y 2 son los objetos humanos más alejados y veloces en el espacio. La Voyager 1 viaja a unos 17 kilómetros por segundo y cruzó la heliopausa — el límite del Sistema Solar — en 2012, después de 35 años de viaje. La Voyager 2 la cruzó en 2018. Ambas llevan un disco de oro con grabaciones de sonidos y imágenes de la Tierra, por si alguna civilización inteligente las encuentra en su eterno viaje interestelar. Con sus velocidades actuales, tardarían aproximadamente 40,000 años en alcanzar la estrella más cercana a nuestro Sol.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m1/banner_velocidad-escape.webp',
+    bannerCaption: 'Velocidad de escape: un objeto más rápido de 42 km/s en la Tierra no puede ser capturado por el Sol',
     fact: 'Para calcular la velocidad de escape de un planeta o estrella, los físicos usan la fórmula derivada por Newton en el siglo XVII: la velocidad de escape es igual a la raíz cuadrada de dos veces la constante gravitacional universal G, multiplicada por la masa M del astro, dividida por su radio R. Esta fórmula elegante, publicada en los Principia Mathematica en 1687, sigue siendo la herramienta básica que los ingenieros de la NASA y de todas las agencias espaciales del mundo usan para planear misiones al Sistema Solar.',
   },
   {
@@ -133,6 +137,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'Además de las órbitas elípticas cerradas y las hiperbólicas abiertas, existe un caso límite: la órbita parabólica, con excentricidad exactamente igual a 1.0. Un objeto en órbita parabólica tiene justo la energía mínima para escapar de la gravedad del Sol, pero se aleja infinitamente lento. En la práctica, muchos cometas provenientes de la Nube de Oort, el reservorio de cometas primordiales en el borde exterior del Sistema Solar, viajan con trayectorias casi parabólicas cuando se aproximan por primera vez al Sol. Algunos quedan atrapados en órbitas elípticas largas, y otros escapan al espacio interestelar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La sonda robótica New Horizons, que fotografió Plutón en 2015, viaja en una órbita hiperbólica. Fue lanzada con suficiente velocidad para escapar del Sistema Solar, y un empujón gravitacional de Júpiter en 2007 la aceleró adicionalmente. Su excentricidad orbital es aproximadamente 1.01 — apenas por encima del umbral hiperbólico. Esto significa que New Horizons no volverá jamás: continuará viajando hacia el espacio interestelar hasta que alguna fuerza gravitacional de otra estrella la perturbe, dentro de millones de años.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m1/banner_orbita-hiperbolica.webp',
+    bannerCaption: 'Órbita hiperbólica: la firma matemática que delata el origen interestelar de un objeto',
     fact: 'La matemática necesaria para calcular y comprender las órbitas de planetas, cometas y objetos interestelares fue descrita por Isaac Newton en su libro Philosophiae Naturalis Principia Mathematica, publicado en 1687. Newton dedujo que todas las trayectorias posibles bajo la fuerza gravitacional de un cuerpo puntual son cónicas: círculos, elipses, parábolas e hipérbolas. Esta clasificación, que Newton derivó a partir de solo tres leyes del movimiento y una ley de la gravedad, describe perfectamente el comportamiento de todos los objetos del universo observable, desde satélites artificiales hasta visitantes interestelares que llegaron de otras estrellas.',
   },
   {
@@ -152,6 +158,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'El descubridor del cometa 2I/Borisov no era un investigador de una universidad ni trabajaba para una agencia espacial. Gennadiy Borisov es un astrónomo aficionado ucraniano que construyó sus propios telescopios en su observatorio privado en Crimea. Observó el objeto el 30 de agosto de 2019 y lo reportó al Centro de Planetas Menores de la IAU. Cuando los astrónomos profesionales de todo el mundo confirmaron su naturaleza interestelar, la IAU lo nombró en su honor: Borisov fue el primer astrónomo aficionado en descubrir un objeto interestelar confirmado.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El nombre completo de Oumuamua es 1I/2017 U1, donde 1I indica que es el primer objeto Interestelar catalogado, y 2017 U1 indica el año y la secuencia de descubrimiento. El nombre hawaiano "Oumuamua" fue seleccionado por el equipo que lo descubrió en honor al observatorio Pan-STARRS en Haleakala, Hawái. En hawaiano, "Oumuamua" significa literalmente "explorador que llega de lejos primero" o "primer mensajero", una elección poética perfectamente adecuada para el primer visitante de las estrellas que la humanidad registró.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m1/banner_catalogo-nomadas.webp',
+    bannerCaption: 'Catálogo de nómadas: solo dos confirmados hasta hoy, pero el LSST descubrirá uno por año desde 2025',
     fact: 'Muchos astrobiólogos y astrofísicos especulan sobre la teoría de la panspermia, que propone que la vida microscópica básica podría haber viajado entre planetas — y quizás entre sistemas estelares — incrustada en pedazos de roca cósmica, meteoritos o incluso objetos interestelares como Oumuamua. La panspermia no requiere que la vida sobreviva el viaje interestelar completo, sino solo que organismos extremófilos puedan resistir las condiciones del espacio durante miles o millones de años en el interior de una roca protectora. Experimentos con bacterias en órbita terrestre han demostrado que algunos microorganismos pueden sobrevivir el ambiente espacial durante años.',
   },
   {
@@ -171,6 +179,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'La cámara LSST construida para el Observatorio Vera C. Rubin es el instrumento científico más grande del mundo por número de píxeles: 3,200 megapíxeles, el equivalente a 3,200 fotografías de alta resolución de 1 megapíxel cada una combinadas en una sola imagen. Para procesar todas las imágenes que el telescopio generará cada noche — aproximadamente 20 terabytes de datos — se necesita un supercomputador dedicado permanentemente a clasificar y comparar millones de objetos automáticamente. El lente frontal del telescopio mide 1.57 metros de diámetro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El telescopio espacial James Webb, lanzado el 25 de diciembre de 2021 y operativo desde 2022, es la herramienta más poderosa para estudiar la composición química de objetos cósmicos mediante espectroscopia infrarroja. Si un futuro objeto interestelar pasa suficientemente cerca del Sol, el James Webb podría analizar los gases que emite y determinar exactamente de qué átomos y moléculas está hecho, aportando información directa sobre la química de un sistema estelar desconocido. Su espejo de 6.5 metros le da una sensibilidad 100 veces mayor que la del telescopio Hubble.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m1/banner_deteccion-pan-starrs.webp',
+    bannerCaption: 'Detección Pan-STARRS: el telescopio hawaiano capturó a Oumuamua 40 días después de su acercamiento',
     fact: 'El telescopio espacial James Webb, con su espejo de 6.5 metros optimizado para el infrarrojo, ha transformado la astronomía desde su puesta en operación en 2022. Aunque fue diseñado principalmente para estudiar las primeras galaxias del universo y los exoplanetas, también es una herramienta extraordinaria para analizar la composición química de cometas y asteroides mediante espectroscopia: al descomponer la luz reflejada o emitida por un objeto en sus colores individuales, los astrónomos pueden identificar qué moléculas están presentes. Si en el futuro un objeto interestelar pasa suficientemente cerca del Sol y comienza a sublimar hielos, el James Webb podría leer su receta química en tiempo real.',
   },
   {
@@ -190,6 +200,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'El astrofísico Avi Loeb de la Universidad de Harvard publicó en 2021 el libro "Extraterrestre: La primera señal de vida inteligente más allá de la Tierra", en el que argumentaba que la aceleración anómala de Oumuamua y su forma inusual son mejor explicadas por una vela solar artificial de tecnología alienígena que por cualquier fenómeno natural conocido. Aunque la mayoría de los astrónomos considera esta hipótesis improbable, Loeb fundó el Proyecto Galileo en 2021, dedicado a buscar artefactos tecnológicos de civilizaciones extraterrestres usando métodos científicos rigurosos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las tolinas son compuestos orgánicos de color rojizo que se forman cuando mezclas de metano, etano, nitrógeno y agua son irradiadas por luz ultravioleta o rayos cósmicos durante períodos prolongados. Su nombre fue acuñado por el astrofísico Carl Sagan en 1979. Las tolinas dan el color oscuro rojizo característico a muchos objetos del Sistema Solar exterior, incluyendo Plutón, Tritón (luna de Neptuno) y los asteroides tipo D. El color rojizo de Oumuamua es consistente con una superficie recubierta de tolinas acumuladas durante millones de años de exposición a los rayos cósmicos del espacio interestelar.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m1/banner_composicion-quimica.webp',
+    bannerCaption: 'Composición química: su color rojizo por radiación cósmica revela la química de otro sistema estelar',
     fact: 'Gran parte del universo visible está compuesto de los mismos elementos básicos: hidrógeno, helio, carbono, oxígeno, nitrógeno, silicio y hierro. Estos elementos se sintetizaron en el interior de estrellas masivas durante miles de millones de años mediante reacciones de fusión nuclear, y se dispersaron por el espacio cuando esas estrellas explotaron como supernovas. Los planetas, asteroides, cometas y objetos interestelares están todos construidos con los mismos bloques fundamentales forjados en las estrellas. Cuando los astrónomos analizan la composición de Oumuamua o Borisov, están leyendo la historia nuclear de una estrella lejana que murió para dar vida a los materiales que viajan entre las galaxias.',
   },
   {
@@ -209,6 +221,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'La sonda Comet Interceptor de la ESA estará pre-posicionada en el punto Lagrange L2, un punto de equilibrio gravitacional a 1.5 millones de kilómetros de la Tierra, en la dirección opuesta al Sol. En este punto, las fuerzas gravitacionales de la Tierra y el Sol se equilibran de tal manera que un objeto pequeño permanece estable con un mínimo de combustible. El telescopio espacial James Webb también orbita el punto L2. Desde allí, Comet Interceptor puede salir rápidamente hacia su objetivo sin necesitar superar la gravedad terrestre desde cero.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Para viajar muy rápido en el espacio profundo con poco combustible, los ingenieros usan propulsores iónicos: dispositivos que aceleran átomos de xenón mediante campos eléctricos a velocidades de 30-90 km/s y los expulsan hacia atrás para generar empuje. El empuje de un propulsor iónico es minúsculo comparado con un cohete convencional, pero funciona continuamente durante meses o años, acumulando una velocidad final mucho mayor. La sonda Dawn de la NASA, que estudió Vesta y Ceres, usó propulsores iónicos para cambiar de órbita entre dos cuerpos del cinturón de asteroides — algo imposible con propulsión química convencional.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m1/banner_futuro-caza.webp',
+    bannerCaption: 'La caza futura: el LSST y misiones de respuesta rápida para interceptar el próximo visitante interestelar',
     fact: 'Los humanos ya hemos lanzado objetos que viajan por el espacio interestelar. Las sondas Voyager 1 y 2, lanzadas en 1977, cruzaron la heliopausa — el límite donde el viento solar cede al medio interestelar — en 2012 y 2018 respectivamente. Ahora son embajadores nómadas de la humanidad en el espacio entre las estrellas. La Voyager 1 lleva un disco de oro con grabaciones de sonidos y música de la Tierra, instrucciones para reproducirlo y coordenadas de nuestro Sistema Solar, en caso de que alguna civilización inteligente la encuentre en los millones de años que tardaría en acercarse a cualquier otra estrella.',
   },
 ];
@@ -625,6 +639,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

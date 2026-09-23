@@ -109,6 +109,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'A pesar de que la coma y la cola de un cometa pueden ser más grandes que el propio Sol, su densidad es tan extremadamente baja que los astrónomos las definen como "un nada visible". Podrías comprimir toda una cola cometaria dentro de una maleta de mano.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El color azul intenso de la cola de iones de los cometas se debe a la fluorescencia de los cationes de monóxido de carbono (CO+) cuando son excitados por la luz ultravioleta emitida por el Sol.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m3/banner_anatomia-cometa.webp',
+    bannerCaption: 'Anatomía de un cometa: núcleo helado, coma gaseosa y dos colas que siempre huyen del Sol',
     fact: 'El Cometa de Halley orbita alrededor del Sol cada 76 años. Fue el primer cometa reconocido como periódico por Edmond Halley en 1705, y su último paso cercano a la Tierra fue en 1986. Regresará a nuestro cielo en el año 2061.',
   },
   {
@@ -129,6 +131,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La distancia a la frontera exterior de la Nube de Oort es casi de un año luz. La sonda Voyager 1 tardará aproximadamente 300 años en alcanzar su borde interior y unos 30,000 años en atravesarla por completo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Jan Oort dedujo la existencia de esta reserva esférica en 1950 al notar que las órbitas de los cometas de periodo largo venían desde todas las direcciones del espacio tridimensional y no solo del plano orbital de los planetas.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m3/banner_origen-nube-oort.webp',
+    bannerCaption: 'La Nube de Oort: billones de núcleos helados en la frontera del sistema solar origen de los cometas',
     fact: 'Se calcula que la Nube de Oort contiene entre uno y cinco billones de objetos helados con un diámetro superior a un kilómetro, acumulando una masa total equivalente a varias veces la masa de la Tierra.',
   },
   {
@@ -148,6 +152,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los chorros de sublimación en los cometas pueden lanzar rocas del tamaño de casas al espacio. Las naves espaciales que visitan cometas deben llevar escudos metálicos especiales para no ser perforadas por este polvo hiperveloz.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El vapor de agua expulsado por sublimación se disocia rápidamente por fotólisis ultravioleta solar en radicales de hidroxilo (OH) y átomos de hidrógeno, creando una inmensa nube invisible de hidrógeno alrededor del cometa.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m3/banner_sublimacion-hielo.webp',
+    bannerCaption: 'Sublimación del hielo: al acercarse al Sol, el hielo del cometa pasa directo a gas formando chorros',
     fact: 'El cometa Hale-Bopp en 1997 expulsaba más de 250 toneladas de vapor de agua y 300 toneladas de polvo por segundo durante su perihelio, produciendo un resplandor visible a simple vista durante 18 meses consecutivos.',
   },
   {
@@ -167,6 +173,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El descubrimiento del viento solar se debió en gran medida al astrónomo Ludwig Biermann en 1951, quien dedujo su existencia al notar que la cola de iones de los cometas siempre apuntaba lejos del Sol sin importar su dirección de movimiento.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La presión de radiación que empuja a la cola de polvo es causada por los fotones solares que transfieren su momento lineal a las diminutas motas de polvo mineral que miden menos de una micra.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m3/banner_viento-solar-colas.webp',
+    bannerCaption: 'El viento solar crea las dos colas: la de plasma apunta directo al Sol, la de polvo sigue la órbita',
     fact: 'En mayo del año 2000, la sonda Ulysses cruzó por casualidad la cola del cometa C/1996 B2 Hyakutake a una distancia récord de 500 millones de kilómetros del núcleo, detectando sus iones característicos.',
   },
   {
@@ -187,6 +195,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La sonda Rosetta descubrió en el cometa 67P el aminoácido Glicina, uno de los bloques fundamentales con los que las células vivas construyen las proteínas en los organismos de la Tierra.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El deuterio es un átomo de hidrógeno que contiene un neutrón extra en su núcleo. La proporción Deuterio/Hidrógeno actúa como la huella dactilar isotópica indiscutible para rastrear el origen geográfico del agua en el cosmos.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m3/banner_cometas-agua-tierra.webp',
+    bannerCaption: 'Cometas y el agua de la Tierra: el bombardeo tardío pudo traer el agua de nuestros océanos',
     fact: 'El cometa 103P/Hartley 2 es uno de los poquísimos cometas analizados cuya relación D/H coincide exactamente con la cifra de los océanos de la Tierra, demostrando la enorme diversidad compositiva de los cuerpos helados.',
   },
   {
@@ -207,6 +217,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El aerogel de la misión Stardust se conoce como "humo congelado" por ser un material sintético compuesto por 99.8% de aire. Logró frenar las motas de polvo cometario que viajaban a 20,000 km/h sin derretirlas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El núcleo del cometa 67P tiene una forma bilobulada que recuerda a un patito de goma. Se formó por la colisión suave a baja velocidad de dos cometas independientes en los primeros tiempos del Sistema Solar.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m3/banner_misiones-cometarias.webp',
+    bannerCaption: 'Misiones cometarias: Rosetta aterrizó en un cometa, Deep Impact lo bombardeó para analizar su interior',
     fact: 'Al finalizar su misión exitosa en septiembre de 2016, los controladores enviaron a la sonda Rosetta a un impacto controlado contra la superficie del cometa 67P, donde descansa para siempre junto al módulo Philae.',
   },
   {
@@ -227,6 +239,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Se calcula que cerca del 10% de los asteroides cercanos a la Tierra que catalogamos hoy como rocosos son en realidad cometas extintos que agotaron todos sus hielos y quedaron cubiertos por una capa de polvo oscuro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El telescopio espacial SOHO de la NASA y la ESA ha descubierto más de 4,000 cometas rozadores del Sol analizando las imágenes de su coronógrafo solar desde su lanzamiento en 1995.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m3/banner_destino-cometas.webp',
+    bannerCaption: 'El destino de los cometas: pierden masa en cada vuelta hasta desintegrarse o quedar dormidos',
     fact: 'El cometa Biela fue presenciado fragmentándose en dos piezas en 1846. En su siguiente retorno en 1852 las dos piezas continuaron separándose, para luego desaparecer por completo y dar origen a la intensa lluvia de meteoros de las Andrómedidas.',
   },
 ];
@@ -666,6 +680,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

@@ -117,6 +117,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El concepto moderno de zona habitable astrofísica fue calculado matemáticamente por el científico James Kasting en 1993. Kasting estableció las ecuaciones basadas en el comportamiento del agua y del dióxido de carbono bajo el efecto invernadero para determinar los límites de habitabilidad estelar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El límite interior de la zona habitable terrestre está fijado por la pérdida de agua por desbocamiento térmico (aproximadamente a 0.95 Unidades Astronómicas del Sol). El límite exterior lo establece el máximo efecto invernadero por CO2 (aproximadamente a 1.67 Unidades Astronómicas del Sol).' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_concepto-zona-habitable.webp',
+    bannerCaption: 'Zona habitable: la franja dorada alrededor de cada estrella donde el agua líquida puede existir',
     fact: 'La Tierra gira cerca del borde interior de la zona habitable de nuestro Sol. A medida que el Sol envejezca y aumente su luminosidad en un 10% durante los próximos mil millones de años, la zona habitable se desplazará hacia afuera y los océanos terrestres se evaporarán de manera natural.'
   },
   {
@@ -136,6 +138,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Marte perdió su habitabilidad primitiva hace unos cuatro mil millones de años cuando su núcleo de hierro se enfrió y su campo magnético colapsó. Sin la protección magnética, el viento solar barrió casi toda su atmósfera original, transformándolo en un desierto helado y seco.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El número de Dynamo mide la capacidad del núcleo metálico de un planeta para generar un campo magnético magnético mediante convección térmica y rotación. Una rotación demasiado lenta puede impedir que se genere una magnetósfera protectora incluso en planetas rocosos grandes.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_factores-habitabilidad.webp',
+    bannerCaption: 'Factores de habitabilidad: campo magnético, tectónica, luna estabilizadora y atmósfera son clave',
     fact: 'El concepto de "Planeta Superhabitable", propuesto por el astrofísico René Heller, sugiere que exoplanetas ligeramente más grandes y masivos que la Tierra, orbitando estrellas enanas de tipo K con mayor vida media, podrían ser incluso más idóneos para la vida que nuestro propio planeta.'
   },
   {
@@ -155,6 +159,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los siete planetas de TRAPPIST-1 forman una cadena de resonancia orbital armónica casi perfecta. Por cada 8 órbitas que completa el planeta b, el planeta c da 5 vueltas, el d da 3 y el e da 2. Esta sincronía exacta ha mantenido al sistema estable durante más de siete mil millones de años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El planeta TRAPPIST-1 e es considerado por los astrofísicos el mejor candidato de masa terrestre conocido. Posee un radio de 0.92 radios terrestres, una masa de 0.69 masas terrestres y una densidad de 5.6 g/cm³, lo que sugiere una estructura interna con un gran núcleo de hierro similar a la Tierra.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_sistema-trappist-1.webp',
+    bannerCaption: 'TRAPPIST-1: 7 planetas del tamaño de la Tierra a solo 40 años luz, 3 en zona habitable',
     fact: 'Si juntáramos los siete planetas del sistema TRAPPIST-1, cabrían holgadamente dentro de la distancia que separa al Sol del planeta Mercurio, convirtiéndolo en el laboratorio planetario rocoso más compacto y extraordinario jamás descubierto.'
   },
   {
@@ -174,6 +180,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Antes de la aparición de la fotosíntesis oxigénica hace unos 2.4 mil millones de años (Gran Evento de Oxidación), la Tierra primitiva era un mundo dominado por bacterias anaeróbicas que producían grandes cantidades de metano, dándole a nuestro planeta una atmósfera anaranjada similar a la de Titán.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La línea de absorción del ozono a 9.6 micrómetros en el espectro infrarrojo lejano es una de las biofirmas más fáciles de detectar por telescopios espaciales. El ozono se forma a partir del oxígeno O2 por radiación ultravioleta y sirve como un excelente indicador indirecto de fotosíntesis planetaria.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_biofirmas-atmosfericas.webp',
+    bannerCaption: 'Biofirmas atmosféricas: oxígeno + metano en desequilibrio químico sería señal inequívoca de vida',
     fact: 'En 2023, observaciones del exoplaneta K2-18b con el JWST detectaron moléculas de carbono como metano y dióxido de carbono junto con posibles indicios tentativos de dimetilsulfuro (DMS), desatando un amplio debate científico sobre este mundo "Hicéano" (océano bajo atmósfera de hidrógeno).'
   },
   {
@@ -193,6 +201,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los gases tetrafluorometano (CF4) y hexafluoroetano (C6F6) son gases de efecto invernadero industriales que duran hasta 50,000 años en la atmósfera sin descomponerse. Si una civilización alienígena intentara terraformar un planeta congelado, estos gases serían la tecnofirma perfecta visible por telescopios.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El concepto de la Esfera de Dyson fue propuesto por el físico Freeman Dyson en 1960. Sugirió que civilizaciones avanzadas de Tipo II en la escala de Kardashev construirían enjambres de colectores solares rodeando a su estrella para atrapar el cien por ciento de su emisión energética.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_tecnofirmas-espaciales.webp',
+    bannerCaption: 'Tecnofirmas: contaminación industrial, megaestructuras o comunicaciones señalarían civilizaciones',
     fact: 'El proyecto Breakthrough Listen es la iniciativa de búsqueda de tecnofirmas radioastronómicas más financiada de la historia, utilizando los radiotelescopios de Green Bank y Parkes para escanear millones de estrellas cercanas en busca de señales tecnológicas artificiales.'
   },
   {
@@ -212,6 +222,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Durante los primeros dos mil millones de años de historia de la Tierra, nuestro planeta estuvo habitado por una biosfera microbiana inmensa pero su atmósfera casi no tenía oxígeno libre. Si un astrónomo alienígena hubiera observado la Tierra en esa época, habría obtenido un falso negativo si solo buscaba oxígeno.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La detección simultánea de monóxido de carbono (CO) sirve para descartar falsos positivos de metano biótico. Las bacterias metanogénicas consumen activamente monóxido de carbono; si hay abundantes cantidades de CO en el aire junto con metano, la fuente es casi seguro geológica inerte.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_falsos-positivos-biofirmas.webp',
+    bannerCaption: 'Falsos positivos: el oxígeno abiótico y los volcanes pueden imitar señales de vida',
     fact: 'La NASA estableció la Escala CoLD (Confidence of Life Detection), un marco riguroso de 7 niveles que exige verificar la señal, descartar contaminación, modelar falsos positivos y confirmar el contexto biológico antes de declarar el descubrimiento de vida extraterrestre.'
   },
   {
@@ -231,6 +243,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El "Borde Rojo de la Clorofila" (Vegetation Red Edge) es una firma espectral característica de las plantas terrestres. Las plantas absorben la luz azul y roja para la fotosíntesis pero reflejan intensamente la luz infrarroja cercana para evitar sobrecalentarse, creando un salto brusco de reflectancia a 700 nanómetros.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La interferometría nula destruye por interferencia destructiva la luz brillante de la estrella central al desfasar las ondas de luz medio ciclo en los telescopios combinados. Esto permite que la débil luz infrarroja del exoplaneta emerja de la oscuridad sin ser cegada por el resplandor estelar.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_busqueda-vida-futuro.webp',
+    bannerCaption: 'La búsqueda de vida en el futuro: analizar cientos de atmósferas para responder si estamos solos',
     fact: 'El astrónomo Carl Sagan demostró la técnica de detección de biofirmas en 1993 utilizando la sonda Galileo durante su sobrevuelo cercano a la Tierra. La sonda detectó abundancia de oxígeno, ozono, metano y el borde rojo vegetativo, confirmando científicamente que la Tierra está habitada.'
   }
 ];
@@ -673,6 +687,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 <ExpandableSection item={exp} color={node.color} />
               </div>
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

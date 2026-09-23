@@ -155,6 +155,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Smiljan tenía apenas 400 habitantes cuando Tesla nació en 1856. La casa de la familia Tesla fue destruida durante la Segunda Guerra Mundial y reconstruida en 2006 por el gobierno croata como parte del Memorial Center Nikola Tesla. El centro incluye la casa reconstruida, la iglesia ortodoxa original y una réplica funcional de la bobina Tesla que lanza descargas eléctricas reales para los visitantes. El pueblo fue declarado zona de patrimonio cultural protegido en 2008 por el Ministerio de Cultura de Croacia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La tormenta eléctrica durante el nacimiento de Tesla no fue una coincidencia: la región de Lika, situada entre los Alpes Dináricos, experimenta un promedio de 40 a 50 días con tormentas eléctricas al año, especialmente durante los meses de verano. Los rayos se producen cuando las cargas eléctricas positivas y negativas se separan dentro de las nubes cumulonimbus. Un rayo típico transporta una corriente de 30,000 amperios y alcanza una temperatura de 30,000 Kelvin, cinco veces más caliente que la superficie del Sol.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m1/banner_smiljan-1856.webp',
+    bannerCaption: 'Smiljan 1856: el pueblo serbio donde nació Nikola Tesla el 10 de julio en el seno de una familia ortodoxa',
     fact: 'El registro original del nacimiento de Tesla se conserva en los archivos de la Iglesia Ortodoxa Serbia en Smiljan. El documento, escrito en cirílico serbio, registra su nombre como «Nikola», su fecha de nacimiento como el 10 de julio de 1856 según el calendario gregoriano (28 de junio según el calendario juliano entonces usado por la iglesia), y a sus padres como Milutin Tesla y Đuka Mandić. Este registro se ha verificado por múltiples historiadores, incluyendo W. Bernard Carlson en su biografía de 2013 publicada por Princeton University Press.',
   },
   {
@@ -174,6 +176,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El motor de escarabajos de junio de Tesla no era un juguete cualquiera: anticipaba el concepto moderno de bio-mimetismo, donde los ingenieros estudian mecanismos biológicos para crear tecnología. El vuelo de los escarabajos de junio genera una fuerza de sustentación de aproximadamente 0.5 gramos por insecto. Con cuatro escarabajos, el pequeño motor de Tesla producía cerca de 2 gramos de empuje, suficiente para hacer girar una rueda liviana. Hoy, investigadores del MIT estudian el vuelo de insectos para diseñar micro-drones.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La memoria eidética, que Tesla describía como la capacidad de «fotografiar» mentalmente páginas enteras de texto y objetos tridimensionales, es un fenómeno neurológico documentado pero poco común. Los estudios de neurociencia indican que menos del 5% de los niños y menos del 1% de los adultos poseen alguna forma de memoria eidética. El fenómeno está asociado con una activación intensificada de la corteza visual primaria (área V1) del cerebro, que mantiene la información visual activa por períodos prolongados.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m1/banner_pequeno-inventor.webp',
+    bannerCaption: 'El pequeño inventor: de niño Tesla construía turbinas de agua y diseñaba máquinas en su mente con precisión total',
     fact: 'Tesla describió en "My Inventions" (1919) que su capacidad de visualización era tan intensa que a veces sufría «destellos de luz» que interferían con su visión normal. Los neurocientíficos modernos han identificado este fenómeno como «fotismo», una forma de sinestesia donde la estimulación mental produce percepciones visuales involuntarias. Investigadores de la Universidad de Sussex publicaron en 2018 que estas experiencias están correlacionadas con conexiones neuronales reforzadas entre la corteza prefrontal y las áreas visuales del cerebro, lo que podría explicar la creatividad técnica de Tesla.',
   },
   {
@@ -193,6 +197,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla nunca superó del todo la muerte de su hermano Dane. En su autobiografía de 1919, escrita más de 50 años después del accidente, Tesla dedicó varios párrafos a recordar los talentos de Dane y a expresar que nada de lo que él logró pudo igualar lo que su hermano habría conseguido. Esta comparación constante con un hermano idealizado es un patrón psicológico que los terapeutas modernos denominan «duelo complicado por idealización del fallecido». La presión que Tesla se impuso moldeó su ética de trabajo durante toda su vida.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El cólera que casi mató a Tesla a los 17 años es causado por la bacteria Vibrio cholerae. La enfermedad se transmite a través de agua contaminada y provoca diarrea severa que puede causar deshidratación mortal en horas. En el siglo XIX, las epidemias de cólera mataban a entre el 40% y el 60% de los infectados. En 1854, el médico John Snow demostró en Londres que el cólera se transmitía por el agua, no por el aire, al rastrear casos hasta una bomba de agua contaminada en Broad Street, estableciendo las bases de la epidemiología moderna.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m1/banner_tragedia-dane.webp',
+    bannerCaption: 'La tragedia de Dane: la muerte de su hermano mayor dejó una sombra sobre la infancia de Nikola',
     fact: 'La familia Tesla se mudó de Smiljan a Gospić tras la muerte de Dane, y Nikola asistió al Real Gymnasium de Gospić entre 1870 y 1873. Los registros escolares, conservados en los archivos de la ciudad, muestran que Tesla completó el programa de cuatro años en solo tres, destacando en matemáticas y física. Su profesor de física, Martin Sekulić, realizaba demostraciones experimentales que cautivaban al joven Tesla, incluyendo el uso de una botella de Leyden (un condensador primitivo inventado en 1745 en la Universidad de Leyden) para almacenar y descargar electricidad estática.',
   },
   {
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El verso del «Fausto» de Goethe que Tesla recitaba cuando concibió el motor de corriente alterna era: «El resplandor se retira, el día ya vivido queda atrás. Se apresura hacia allí, promoviendo nueva vida. Ah, que ninguna ala me eleve de la tierra para seguirlo siempre, siempre». Tesla consideraba este momento como el más importante de su vida. El Parque de la Ciudad de Budapest todavía existe y se ha colocado un banco conmemorativo cerca del lugar donde Tesla habría tenido esta revelación, identificado gracias a sus descripciones autobiográficas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El motor de inducción polifásico de Tesla funciona gracias al principio del campo magnético giratorio. Dos o más corrientes alternas desfasadas entre sí (típicamente 120° en un sistema trifásico) alimentan bobinas distribuidas simétricamente. El resultado es un campo magnético que rota a una velocidad sincronizada con la frecuencia de la corriente (por ejemplo, 3,600 RPM a 60 Hz con dos polos). Este campo induce corrientes en el rotor por la ley de Faraday, generando un par motor sin contacto físico. El 90% de los motores eléctricos del mundo actual usan este principio.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m1/banner_anos-estudio.webp',
+    bannerCaption: 'Años de estudio: en Graz y Praga Tesla calculaba en su mente más rápido que sus profesores de física',
     fact: 'La Escuela Politécnica de Graz conserva los registros de calificaciones de Tesla de su primer año (1875-1876). Estos documentos muestran que obtuvo la nota máxima en todas las materias: física, matemáticas, mecánica analítica y geometría descriptiva. Sin embargo, no existen registros de que Tesla completara su programa. El profesor Jakob Pöschl, quien ridiculizó la idea de Tesla sobre la corriente alterna, murió en 1884 sin saber que su antiguo alumno había resuelto el problema exacto que él declaró irresoluble. El motor de inducción de Tesla fue patentado en 1888 (patente US 381,968).',
   },
   {
@@ -231,6 +239,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los «cuatro centavos» con los que Tesla llegó a Nueva York son parte del mito fundacional del inventor inmigrante. Sin embargo, el historiador W. Bernard Carlson señala que Tesla probablemente tenía algo más de dinero del que declaró. Lo verificable es que Tesla llegó sin reserva de hotel, sin contactos personales en la ciudad y con una carta de presentación como su principal activo. El vapor Saturnia partió del puerto de Trieste (entonces territorio austrohúngaro) y tardó aproximadamente dos semanas en cruzar el Atlántico hasta el puerto de Nueva York.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El contrato de Westinghouse con Tesla en 1888 incluía regalías de 2.50 dólares por cada caballo de fuerza (HP) de capacidad eléctrica instalada usando las patentes de Tesla. Un caballo de fuerza equivale a 746 watts. Si este contrato se hubiera mantenido intacto, Tesla habría recibido miles de millones de dólares durante el siglo XX, dado que su sistema de corriente alterna alimenta la totalidad de la red eléctrica mundial. Tesla renunció voluntariamente a estas regalías en 1897 para salvar a la Westinghouse Electric Company de la bancarrota.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m1/banner_viaje-america.webp',
+    bannerCaption: 'Viaje a América 1884: llegó a Nueva York con 4 centavos y una carta para Edison que cambiaría el mundo',
     fact: 'El laboratorio de Tesla en la calle Liberty, 89, en Manhattan, fue donde construyó los primeros motores de inducción polifásicos funcionales entre 1887 y 1888. Las patentes resultantes (US 381,968 a US 382,282, concedidas el 1 de mayo de 1888) describen el sistema completo de generación, transmisión y uso de corriente alterna polifásica. Estas siete patentes fundamentales son consideradas por los historiadores de la tecnología como el grupo de patentes más importante en la historia de la ingeniería eléctrica, comparable en impacto a la patente del teléfono de Bell (1876).',
   },
   {
@@ -250,6 +260,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla tenía rituales y hábitos específicos que la psicología moderna asociaría con trastorno obsesivo-compulsivo (TOC). Requería que el número de su habitación de hotel fuera divisible por tres. Usaba exactamente 18 servilletas (divisible por 3) para limpiar sus cubiertos antes de cada comida. Caminaba alrededor de un edificio tres veces antes de entrar. Estos comportamientos, lejos de ser caprichos, parecen haber sido mecanismos de control que le permitían gestionar su hipersensibilidad sensorial y mantener la concentración en su trabajo inventivo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La hiperestesia sensorial que Tesla experimentaba está documentada en la literatura médica como un aumento patológico de la sensibilidad a estímulos sensoriales. Puede manifestarse en cualquier sentido: táctil (hiperestesia táctil), auditivo (hiperacusia) o visual (fotofobia). Los estudios neurocientíficos publicados en el Journal of Neuroscience (2015) indican que la hiperestesia está asociada con una reducción del filtrado inhibitorio en el tálamo, la estructura cerebral que actúa como «puerta» reguladora de la información sensorial que llega a la corteza cerebral.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m1/banner_mente-tesla.webp',
+    bannerCaption: 'La mente de Tesla: memoria eidética total, diseñaba máquinas en 3D en su mente sin usar papel',
     fact: 'El método de «visualización mental completa» de Tesla fue documentado no solo por él mismo sino por colegas que presenciaron sus resultados. El ingeniero Arthur Kennelly, que trabajó con Tesla en la Westinghouse, reportó en 1893 que Tesla podía dictar las dimensiones exactas de cada pieza de una máquina nueva sin consultar ningún plano. Cuando se construía el dispositivo según estas especificaciones verbales, funcionaba correctamente en el primer intento. Este método contrasta con el de Edison, quien registró más de 1,000 patentes pero empleaba un sistema de prueba y error masivo que él mismo describió como «99% transpiración y 1% inspiración».',
   },
   {
@@ -269,6 +281,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla murió solo en la habitación 3327 del Hotel New Yorker en Manhattan el 7 de enero de 1943, a los 86 años. La habitación era la número 3327 porque 3+3+2+7=15, y 1+5=6, que es divisible por 3. Tras su muerte, el FBI confiscó dos camiones llenos de sus documentos, notas y prototipos. Estos materiales fueron clasificados como secretos por el gobierno estadounidense durante décadas. En 1952, el sobrino de Tesla, Sava Kosanović, logró que los documentos fueran enviados al Museo Nikola Tesla en Belgrado, donde se conservan más de 160,000 páginas de sus notas originales.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La bobina Tesla, inventada en 1891, es un transformador resonante de alta frecuencia que puede producir voltajes de millones de voltios. Funciona mediante la oscilación resonante entre un circuito primario y uno secundario acoplados magnéticamente. La frecuencia de resonancia se calcula con la fórmula f = 1/(2π√LC), donde L es la inductancia y C la capacitancia del circuito. Las bobinas Tesla modernas se usan en aplicaciones industriales para pruebas de aislamiento eléctrico y en investigación de física de plasmas.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m1/banner_legado-infancia.webp',
+    bannerCaption: 'El legado de la infancia: la cultura serbia, su madre y la tragedia de Dane formaron al futuro genio',
     fact: 'La Corte Suprema de Estados Unidos resolvió en 1943 (caso Marconi Wireless Telegraph Co. v. United States, 320 U.S. 1) que las patentes de Tesla sobre transmisión de radio (US 645,576 y US 649,621, concedidas en 1897 y 1900) tenían prioridad sobre la patente de Guglielmo Marconi de 1904. Esto confirmó que Tesla había inventado los principios fundamentales de la radio antes que Marconi. La decisión llegó meses después de la muerte de Tesla y no recibió la atención pública que merecía porque la Segunda Guerra Mundial dominaba las noticias del momento.',
   },
 ];
@@ -690,6 +704,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

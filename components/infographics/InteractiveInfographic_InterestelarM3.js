@@ -101,6 +101,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Astrónomo y su Máquina', icon: 'zap', text: 'Gennady Borisov es un ingeniero y fabricante de telescopios. Construyó el instrumento MARGO para tener un campo de visión amplio y detectar cometas. Su éxito demuestra que la innovación individual puede competir con los presupuestos de las grandes agencias espaciales.' },
       { label: '¿Cómo se nombran los cometas?', icon: 'clock', text: 'Los cometas suelen llevar el nombre de sus descubridores. La Unión Astronómica Internacional rompió sus reglas y bautizó a este objeto como 2I/Borisov. El "2I" significa que es el segundo objeto interestelar confirmado (después de 1I/Oumuamua).' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m3/banner_descubrimiento-borisov.webp',
+    bannerCaption: 'Borisov 2019: el astrónomo amateur Gennady Borisov descubrió el segundo objeto interestelar con su telescopio casero',
     fact: 'El cometa se descubrió a unas 3 unidades astronómicas del Sol, más allá de Marte. Aunque la temperatura era baja, fue suficiente para que los hielos de su superficie comenzaran a sublimarse. Esto formó la coma brillante que permitió a Borisov detectarlo.'
   },
   {
@@ -120,6 +122,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Matemáticas del Infinito', icon: 'atom', text: 'Un círculo perfecto tiene excentricidad 0, y la Tierra tiene 0.016. Los cometas locales típicos tienen entre 0.9 y 0.99. Una excentricidad de 3.36 significa que la energía cinética del cometa era superior a la energía potencial gravitatoria del Sol.' },
       { label: 'La Velocidad de Escape', icon: 'zap', text: 'Para capturar un objeto, este debe moverse por debajo de la velocidad de escape, que es unos 24 km/s. Borisov viajaba a más de 30 km/s. Ningún cuerpo del sistema solar podía frenarlo lo suficiente para retenerlo.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m3/banner_confirmacion-interestelar.webp',
+    bannerCaption: 'Confirmación interestelar: excentricidad de 3.36, muy por encima del 1.0 necesario para ser interestelar',
     fact: 'El Telescopio Espacial Hubble capturó imágenes de 2I/Borisov a 300 millones de kilómetros de la Tierra. Fue la primera vez que se observó en detalle el núcleo brillante y la atmósfera de un cometa de otro sistema planetario.'
   },
   {
@@ -139,6 +143,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Verdadero Oumuamua', icon: 'zap', text: 'Oumuamua se comportó como un asteroide seco, lo que indica que los sistemas estelares expulsan diversos escombros. Pueden ser rocosos o helados, dependiendo de la región de origen. Borisov representa a los objetos helados de los confines de su sistema.' },
       { label: 'La Coma y el Viento Solar', icon: 'atom', text: 'La coma puede ser más grande que Júpiter, aunque el núcleo mida pocos kilómetros. La cola apunta lejos del Sol debido a que el viento solar y la presión de radiación empujan el gas y el polvo hacia atrás.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m3/banner_primer-cometa-alien.webp',
+    bannerCaption: 'El primer cometa alienígena: Borisov tiene coma, colas y desgasifica como un cometa normal pero de otra estrella',
     fact: 'Las observaciones del Hubble indicaron que el tamaño de la coma era enorme. Las partículas de polvo tenían propiedades de dispersión de luz casi idénticas a las del cometa Hale-Bopp, lo que sugiere procesos de formación similares.'
   },
   {
@@ -158,6 +164,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Observatorio ALMA', icon: 'zap', text: 'El Atacama Large Millimeter/submillimeter Array (ALMA) es un conjunto de antenas de radio en Chile. Fue clave para detectar CO en Borisov porque este gas emite ondas de radio específicas al rotar en el frío del espacio, imposibles de ver con telescopios ópticos.' },
       { label: 'Veneno Interestelar', icon: 'atom', text: 'El monóxido de carbono y el cianuro de hidrógeno son comunes en las frías nubes moleculares del espacio interestelar. Aunque son tóxicos en la Tierra, en la astroquímica su presencia indica condiciones de baja temperatura de formación.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m3/banner_composicion-molecular.webp',
+    bannerCaption: 'Composición molecular: agua y monóxido de carbono en alta proporción, formado muy lejos de su estrella natal',
     fact: 'Borisov expulsaba varios kilogramos de monóxido de carbono por segundo. Emitía tanto gas como varios automóviles acelerando al máximo, proveniente de un núcleo de hielo de menos de un kilómetro de diámetro calentándose.'
   },
   {
@@ -177,6 +185,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Efecto Cohete', icon: 'zap', text: 'Los chorros de gas de los cometas actúan como diminutos motores. Empujan físicamente al núcleo y causan aceleración no gravitacional. Esto altera ligeramente la trayectoria del cometa y es un factor que los astrónomos consideran al calcular órbitas.' },
       { label: 'Como un Azucarillo', icon: 'atom', text: 'Se estima que la densidad típica del núcleo de un cometa es menor a 0.5 g/cm³. Si hubiera un océano lo suficientemente grande, flotarían. Son muy porosos, a diferencia de las rocas sólidas de los asteroides.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m3/banner_nucleo-fragmentacion.webp',
+    bannerCaption: 'Fragmentación del núcleo: en abril 2020 el Hubble observó a Borisov partiéndose en dos pedazos',
     fact: 'El evento de fragmentación en marzo de 2020 aumentó el brillo del cometa. El nuevo material helado en las fracturas del núcleo se sublimó furiosamente, arrojando nubes de polvo reflectante que fueron observadas desde la Tierra.'
   },
   {
@@ -196,6 +206,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'La Misión Gaia', icon: 'zap', text: 'El satélite Gaia mide la posición y el movimiento de más de mil millones de estrellas con extrema precisión. Sin este mapa tridimensional, sería imposible rastrear el origen de Borisov, ya que desconoceríamos las posiciones estelares del pasado.' },
       { label: 'El Tirachinas Gravitacional', icon: 'clock', text: 'Los planetas gigantes expulsan material cósmico durante la formación planetaria. En nuestro sistema solar, Júpiter y Neptuno arrojaron billones de rocas y cometas al espacio profundo. Probablemente, otros sistemas planetarios dispersen objetos de manera similar.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m3/banner_sistema-origen.webp',
+    bannerCaption: 'Sistema de origen: el trayecto de Borisov apunta a Krueger 60, sistema binario de enanas rojas en Cefeo',
     fact: 'La probabilidad de que un cometa interestelar choque con la Tierra es cercana a cero. No obstante, los astrónomos calculan que miles de estos objetos viajan silenciosamente por los límites de nuestro sistema solar en un momento dado.'
   },
   {
@@ -215,6 +227,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'El Misterio de la Forma', icon: 'zap', text: 'Las fluctuaciones de brillo de Oumuamua sugerían una forma alargada y giros caóticos. Borisov no mostró estas variaciones drásticas, indicando un núcleo más redondo y simétrico, similar a cometas conocidos como Halley.' },
       { label: 'El Telescopio Vera Rubin', icon: 'atom', text: 'El Observatorio Vera C. Rubin tiene una cámara de 3200 megapíxeles. Fotografiará el cielo visible repetidamente y detectará objetos de movimiento rápido en órbitas inusuales. Avisará a los astrónomos con meses de antelación.' }
     ],
+    bannerImage: '/assets/interestelar/infographic_m3/banner_comparacion-oumuamua.webp',
+    bannerCaption: 'Oumuamua vs Borisov: dos visitantes totalmente distintos que muestran la diversidad del cosmos interestelar',
     fact: 'Oumuamua y Borisov ya han cruzado la órbita de Júpiter y se adentran en el espacio profundo. Viajan a tal velocidad que nuestras sondas espaciales actuales no pueden alcanzarlos. Continuarán su viaje por la Vía Láctea para siempre.'
   }
 ];
@@ -635,6 +649,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.expandables.map((exp, i) => (
               <ExpandableSection key={i} item={exp} color={node.color} />
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

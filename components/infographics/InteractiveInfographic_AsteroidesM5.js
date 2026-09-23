@@ -102,6 +102,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Escala de Torino mide el riesgo de impacto de los asteroides del 0 al 10. El nivel 0 significa ningún riesgo, mientras que el nivel 10 indica una colisión segura capaz de causar una catástrofe climática global.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Apophis pertenece al grupo de asteroides Atón, cuyas órbitas cruzan la trayectoria de la Tierra pero pasan la mayor parte de su periodo orbital dentro del espacio interior de la órbita terrestre.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m5/banner_descubrimiento-apophis.webp',
+    bannerCaption: 'Descubrimiento de Apophis 2004: probabilidad de impacto del 2.7% para 2029 disparó alarmas mundiales',
     fact: 'El asteroide 99942 Apophis tarda 323 días en completar una órbita alrededor del Sol. Su velocidad orbital promedio es de 30.7 kilómetros por segundo.',
   },
   {
@@ -121,6 +123,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Rocas de 300 metros como Apophis pasan tan cerca de la Tierra solo una vez cada 1,000 años. El evento de 2029 será la primera vez en la historia humana moderna en que se pueda ver un sobrevuelo tan cercano a simple vista.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La nave espacial OSIRIS-APEX de la NASA interceptará a Apophis justo después de su sobrevuelo de la Tierra en 2029. Se acoplará a su órbita durante 18 meses para filmar los cambios geológicos sufridos por las mareas terrestres.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m5/banner_encuentro-2029.webp',
+    bannerCaption: 'Encuentro 2029: Apophis pasará a 32,000 km de la Tierra, más cerca que los satélites geoestacionarios',
     fact: 'Durante su punto máximo de acercamiento el 13 de abril de 2029, Apophis cruzará el cielo europeo de este a oeste en cuestión de pocas horas, desplazándose a un ancho equivalente al de la Luna llena cada minuto.',
   },
   {
@@ -140,6 +144,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El concepto de cerradura gravitacional fue descubierto por el astrónomo Andrea Milani. Demostró que los sobrevuelos cercanos actúan como lentes gravitacionales que amplifican las pequeñas incertidumbres orbitales.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ventana espacial de la cerradura de Apophis para el impacto de 2036 medía solo 600 metros de diámetro. Encontrar un objeto tan pequeño a 30,000 km de distancia equivale a encestar un grano de arroz desde varios kilómetros.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m5/banner_cerradura-gravitacional.webp',
+    bannerCaption: 'Cerradura gravitacional: zona de 600m en el espacio que si Apophis cruza en 2029 impactaría en 2036',
     fact: 'Las observaciones de radar de 2021 permitieron eliminar formalmente a Apophis de la Lista de Riesgo de Impacto de la ESA y de la NASA durante más de un siglo entero.',
   },
   {
@@ -159,6 +165,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El ingeniero ruso Ivan Yarkovsky formuló esta teoría en el año 1900 en un folleto científico escrito en sus tiempos libres. Su trabajo permaneció olvidado hasta que Ernst Öpik lo rescató 50 años después.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La fuerza de empuje fotónico del efecto Yarkovsky sobre Apophis es minúscula, equivalente al peso de una moneda de un centavo sobre la palma de una mano. Pero actuando durante 30 años desplaza al asteroide más de 5 kilómetros.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m5/banner_efecto-yarkovsky.webp',
+    bannerCaption: 'Efecto Yarkovsky: la radiación térmica del sol empuja gradualmente a Apophis cambiando su órbita',
     fact: 'El asteroide Bennu sufre una deriva por Efecto Yarkovsky de casi 280 metros por año debido a su superficie oscura y alta porosidad térmica, siendo el asteroide donde mejor se ha medido esta fuerza.',
   },
   {
@@ -178,6 +186,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las películas de Hollywood suelen mostrar bombas nucleares colocadas dentro del asteroide para volar la roca en pedazos. En la realidad científica esto es peligroso porque crearía miles de fragmentos radiactivos cayendo sobre la Tierra.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La clave de la defensa planetaria no es la fuerza bruta, sino el tiempo. Desviar un asteroide 10 años antes del impacto requiere apenas un empuje de un milímetro por segundo en su velocidad orbital.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m5/banner_tecnicas-defensa.webp',
+    bannerCaption: 'Técnicas de defensa: impactador cinético, tractor gravitacional o detonación nuclear según el plazo',
     fact: 'Un cambio de velocidad de apenas 1 centímetro por segundo en la trayectoria de un asteroide peligroso, aplicado 20 años antes de la colisión planeada, desplaza a la roca espacial más de 6,000 kilómetros al momento de cruzar la Tierra, evitando el impacto por completo.',
   },
   {
@@ -197,6 +207,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El sistema ATLAS es capaz de dar una alerta de impacto con una semana de anticipación para un asteroide pequeño de 20 metros, y de tres semanas para un cuerpo medio de 100 metros.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La NASA tiene el mandato del Congreso de EE.UU. de descubrir y catalogar al menos el 90% de todos los Objetos Cercanos a la Tierra mayores a 140 metros de diámetro, considerados capaces de devastar una región continental.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m5/banner_redes-vigilancia.webp',
+    bannerCaption: 'Redes de vigilancia: Catalina, ATLAS y el futuro NEOSM vigilan el cielo 24/7 para detectar amenazas',
     fact: 'Hasta la fecha se han descubierto y catalogado más de 34,000 Asteroides Cercanos a la Tierra (NEOs), de los cuales más de 2,300 están clasificados formalmente como Asteroides Potencialmente Peligrosos (PHAs).',
   },
   {
@@ -216,6 +228,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cada dos años, los expertos mundiales en defensa planetaria celebran la Conferencia de Defensa Planetaria, donde simulan un ejercicio ficticio de impacto de un asteroide desconocido para poner a prueba los protocolos de toma de decisiones de los gobiernos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Oficina de Coordinación de Defensa Planetaria (PDCO) de la NASA fue creada formalmente en 2016 para liderar la respuesta nacional de EE.UU. e interconectar a la agencias de emergencia como FEMA.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m5/banner_protocolos-respuesta.webp',
+    bannerCaption: 'Protocolos de respuesta: la ONU coordina la respuesta global mediante IAWN y SMPAG',
     fact: 'El asteroide 2024 BX1 fue descubierto apenas tres horas antes de chocar contra la atmósfera sobre Berlín, Alemania, en enero de 2024, permitiendo a los científicos avisar con precisión el área de caída para recuperar sus meteoritos.',
   },
 ];
@@ -632,6 +646,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
