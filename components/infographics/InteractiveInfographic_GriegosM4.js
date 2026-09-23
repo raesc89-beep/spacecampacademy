@@ -159,6 +159,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El nombre real de Platón era Aristocles, hijo de Aristón. El apodo "Platón" aparece documentado por primera vez en fuentes del siglo III d.C. por Diógenes Laercio en sus Vidas de los filósofos eminentes. Algunos historiadores modernos cuestionan esta etimología y sugieren que "Platón" podría haber sido simplemente un nombre común en la Atenas del siglo V a.C., ya que aparece en inscripciones de la época sin relación con el filósofo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La cronología de la vida de Platón se establece a partir de fuentes indirectas. La fecha de nacimiento más aceptada, 428/427 a.C., proviene de Apolodoro de Atenas (siglo II a.C.), quien calculó que Platón tenía 28 años cuando murió Sócrates en el 399 a.C. La fecha de su muerte, 348/347 a.C., sitúa su vida en un periodo de aproximadamente 80 años, coincidiendo con el periodo de la Guerra del Peloponeso y la posterior decadencia del poder ateniense.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m4/banner_discipulo-socrates.webp',
+    bannerCaption: 'El discípulo de Sócrates: el joven Platón aristócrata transformado por la filosofía de su maestro',
     fact: 'Platón era, según fuentes antiguas, un atleta consumado. Diógenes Laercio reporta que participó como luchador en los Juegos Ístmicos, celebrados cada dos años cerca de Corinto en honor a Poseidón. La formación atlética era parte integral de la educación aristocrática en Atenas, y Platón incluyó la gimnasia como componente esencial de la educación en su obra La República, argumentando que el cuerpo y el alma debían entrenarse conjuntamente para alcanzar la excelencia (areté).',
   },
   {
@@ -178,6 +180,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Academia de Platón funcionó durante aproximadamente 916 años consecutivos, desde su fundación hacia el 387 a.C. hasta su cierre por el emperador Justiniano I en el 529 d.C. Ninguna otra institución educativa en la historia de Occidente ha operado durante un periodo tan extenso. La palabra "academia" en español, inglés, francés, italiano y muchas otras lenguas modernas deriva directamente de esta escuela ateniense, cuyo nombre proviene del héroe mítico Academo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Eudoxo de Cnido, miembro de la Academia platónica, calculó que el año solar tenía una duración de 365 días y 6 horas, un cálculo con un error de apenas 11 minutos respecto al valor actual de 365 días, 5 horas y 48 minutos. Además, su modelo astronómico de 27 esferas homocéntricas fue el primer intento sistemático de explicar matemáticamente el movimiento aparente de los planetas, anticipando el trabajo posterior de Aristóteles y Ptolomeo.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m4/banner_la-academia.webp',
+    bannerCaption: 'La Academia: fundada por Platón en 387 a.C., la primera universidad de la historia occidental',
     fact: 'El sitio arqueológico de la Academia de Platón fue identificado en 1929 por el arqueólogo griego Phokion Negris y excavado sistemáticamente entre 1929 y 1940 por Panagiotis Aristophron. Los hallazgos incluyen los restos de un peristilo (patio porticado) y un gimnasio del siglo IV a.C. Hoy, el Parque Arqueológico de la Academia de Platón en Atenas (barrio de Akadimia Platonos) ocupa 4.2 hectáreas y conserva los cimientos de las estructuras que Platón y sus discípulos utilizaron durante más de tres siglos.',
   },
   {
@@ -197,6 +201,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En el diálogo Menón (80d-86c), Sócrates llama a un joven esclavo y, sin enseñarle nada directamente, le hace una serie de preguntas sobre geometría hasta que el muchacho logra determinar por sí mismo cómo construir un cuadrado de área doble. Platón utiliza esta escena para argumentar que el alma posee conocimientos innatos que preceden al nacimiento, un concepto que influyó en filósofos posteriores como Leibniz y que fue debatido por John Locke en su Ensayo sobre el entendimiento humano de 1690.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En el diálogo Timeo (53c-55c), Platón asoció los cuatro elementos clásicos con cuatro de los cinco sólidos regulares: el fuego con el tetraedro (4 caras), el aire con el octaedro (8 caras), el agua con el icosaedro (20 caras) y la tierra con el cubo (6 caras). El quinto sólido, el dodecaedro (12 caras pentagonales), lo asoció con el cosmos mismo. Euclides demostró en el Libro XIII de sus Elementos (c. 300 a.C.) que solo existen estos cinco sólidos regulares, conocidos desde entonces como "sólidos platónicos".' },
     ],
+    bannerImage: '/assets/griegos/infographic_m4/banner_teoria-ideas.webp',
+    bannerCaption: 'La Teoría de las Ideas: el mundo de Formas perfectas e inmutables más allá del mundo material',
     fact: 'Los cinco sólidos platónicos — tetraedro, cubo, octaedro, dodecaedro e icosaedro — son los únicos poliedros regulares convexos posibles en el espacio tridimensional. Este hecho fue demostrado rigurosamente por Euclides en la Proposición 18 del Libro XIII de sus Elementos, alrededor del año 300 a.C. En 1596, el astrónomo Johannes Kepler intentó explicar las distancias entre los seis planetas conocidos mediante estos cinco sólidos anidados, un modelo geométrico que publicó en su obra Mysterium Cosmographicum.',
   },
   {
@@ -216,6 +222,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Alegoría de la Caverna ha sido reinterpretada en numerosas obras contemporáneas. La película The Truman Show (1998) presenta a un hombre que vive toda su vida dentro de un set de televisión sin saberlo, como los prisioneros de la caverna. El físico Nick Bostrom, de la Universidad de Oxford, publicó en 2003 su "argumento de la simulación", planteando la posibilidad estadística de que nuestra realidad sea una simulación computacional, una versión tecnológica de la caverna platónica.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En la neurociencia contemporánea, el concepto de que el cerebro construye una "representación" de la realidad — y que no percibimos el mundo "directamente" — guarda paralelismos con la alegoría platónica. El neurocientífico Anil Seth, de la Universidad de Sussex, describe la percepción como una "alucinación controlada": el cerebro genera modelos predictivos del mundo exterior y los ajusta con la información sensorial entrante. Lo que experimentamos como "realidad" es, en cierto sentido, una proyección interna, como las sombras en la pared de la caverna.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m4/banner_alegoria-caverna.webp',
+    bannerCaption: 'La Alegoría de la Caverna: la más poderosa metáfora del conocimiento y la ignorancia humana',
     fact: 'En 1940, el filósofo Martin Heidegger impartió una serie de conferencias en la Universidad de Friburgo tituladas "La doctrina de Platón sobre la verdad" (Platons Lehre von der Wahrheit), donde argumentó que la Alegoría de la Caverna marca un giro decisivo en la historia de la filosofía occidental: el paso de la concepción griega original de la verdad como aletheia (desocultamiento, revelación) a la concepción de la verdad como "corrección" (orthotes) de una representación. Según Heidegger, este giro platónico determinó toda la metafísica occidental posterior durante más de 2.000 años.',
   },
   {
@@ -235,6 +243,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Platón propuso en La República (Libro V, 451d-457b) que las mujeres debían recibir la misma educación que los hombres, incluida la formación militar y filosófica, y que podían llegar a ser gobernantas-filósofas. Esta posición era radical en la Atenas del siglo IV a.C., donde las mujeres no tenían derechos políticos ni acceso a la educación formal. Platón argumentó que la diferencia de sexo no implica diferencia de capacidad para gobernar, así como el hecho de que un hombre sea calvo y otro tenga pelo no afecta su aptitud para la zapatería.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En La República (Libro VII, 525a-531c), Platón establece un currículo matemático de cinco disciplinas preparatorias para la filosofía: aritmética, geometría plana, geometría sólida (estereometría), astronomía y armonía musical. Este programa fue la base del quadrivium medieval (aritmética, geometría, astronomía y música), que junto con el trivium (gramática, retórica y dialéctica) formó las siete artes liberales que estructuraron la educación universitaria europea desde el siglo XII hasta el Renacimiento.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m4/banner_la-republica.webp',
+    bannerCaption: 'La República: la ciudad ideal de Platón gobernada por filósofos-reyes sabios y justos',
     fact: 'Karl Popper, en su obra La sociedad abierta y sus enemigos (1945), criticó duramente La República de Platón, argumentando que el proyecto de ciudad ideal platónico constituye un modelo totalitario que sacrifica la libertad individual en nombre de una élite gobernante que posee la verdad. Popper situó a Platón como el primer teórico del autoritarismo en la tradición occidental. Esta interpretación, aunque influyente, ha sido cuestionada por platónicos como Cornford y Annas, quienes argumentan que La República es un experimento mental sobre la justicia, no un programa político literal.',
   },
   {
@@ -254,6 +264,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En el Banquete, el dramaturgo Aristófanes presenta un mito sobre el origen del amor: originalmente, los seres humanos eran criaturas dobles con cuatro brazos, cuatro piernas y dos caras. Zeus los partió por la mitad como castigo, y desde entonces cada mitad busca desesperadamente a su otra mitad. Este mito es el origen de la expresión "media naranja" y de la idea cultural de que cada persona tiene una "pareja perfecta" predestinada, un concepto que ha permeado la literatura romántica occidental durante más de dos milenios.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El análisis estilométrico computacional moderno ha confirmado la cronología tradicional de los diálogos de Platón. En 1867, Lewis Campbell realizó el primer estudio estadístico del vocabulario platónico, identificando patrones estilísticos que permitían agrupar los diálogos por periodos. Estudios posteriores con herramientas informáticas, como los de Gerard Ledger (1989) y David Wishart (1990), han utilizado análisis multivariante de más de 400 variables lingüísticas para confirmar que Leyes fue la última obra de Platón y que los diálogos siguen un orden de composición coherente.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m4/banner_los-dialogos.webp',
+    bannerCaption: 'Los Diálogos: las obras de Platón como dramas filosóficos que preservaron el pensamiento de Sócrates',
     fact: 'Alfred North Whitehead, matemático y filósofo británico, coautor con Bertrand Russell de los Principia Mathematica (1910-1913), escribió en 1929 en su obra Process and Reality: "La caracterización general más segura de la tradición filosófica europea es que consiste en una serie de notas a pie de página a Platón." Esta afirmación, una de las más citadas en la historia de la filosofía, sugiere que los problemas filosóficos fundamentales planteados por Platón — la naturaleza de la realidad, el conocimiento, la justicia, la belleza y el bien — siguen siendo los problemas centrales de la filosofía occidental 2.400 años después.',
   },
   {
@@ -273,6 +285,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 1509, el pintor Rafael Sanzio completó el fresco La Escuela de Atenas en las Estancias del Vaticano, en Roma. En el centro de la composición aparecen Platón y Aristóteles caminando juntos: Platón (con los rasgos de Leonardo da Vinci) señala hacia el cielo, simbolizando su mundo de las Ideas, mientras Aristóteles extiende la mano hacia la tierra, representando su enfoque empirista. Este fresco, de 5 metros de alto por 7.7 metros de ancho, se ha convertido en la representación visual más reconocida de la filosofía occidental.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El físico Roger Penrose, Premio Nobel de Física 2020, ha defendido una posición abiertamente platónica sobre las matemáticas. En su obra The Road to Reality (2004), Penrose argumenta que los objetos matemáticos (números, triángulos, grupos) existen en un "mundo platónico" independiente de la mente humana y del mundo físico. Los matemáticos, según Penrose, no inventan sino que descubren verdades que existen con independencia de cualquier observador, una posición conocida como "realismo matemático" o "platonismo matemático".' },
     ],
+    bannerImage: '/assets/griegos/infographic_m4/banner_legado-platon.webp',
+    bannerCaption: 'El legado de Platón: toda la filosofía occidental es una serie de notas al pie de Platón',
     fact: 'La UNESCO declaró 2016 como Año Internacional de la Filosofía, y la figura de Platón fue central en las celebraciones. En la actualidad, los textos de Platón se enseñan en universidades de más de 120 países. El Proyecto Perseus de la Universidad de Tufts (EE.UU.) ha digitalizado la totalidad de las obras de Platón en griego antiguo con traducción al inglés, haciendo accesible gratuitamente a millones de estudiantes los mismos diálogos que se discutían en la Academia ateniense hace 2.400 años. La distancia temporal no ha reducido la vigencia de las preguntas que Platón formuló.',
   },
 ];
@@ -713,6 +727,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

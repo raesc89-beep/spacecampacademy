@@ -106,6 +106,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El primer exoplaneta confirmado alrededor de una estrella similar a nuestro Sol se descubrió en 1995 y se llama 51 Pegasi b. Se trata de un gigante gaseoso que tarda solo cuatro días en completar una vuelta entera alrededor de su estrella. Su descubrimiento fue tan revolucionario que le otorgó el Premio Nobel de Física a sus descubridores en el año 2019.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La palabra "exoplaneta" proviene del griego "exo" que significa "fuera de". La distancia promedio al exoplaneta confirmado más cercano, Proxima Centauri b, es de 4.24 años luz. Eso equivale a casi 40 billones de kilómetros. Si viajáramos en el cohete químico más rápido jamás construido por el ser humano, tardaríamos más de 70,000 años en llegar hasta allí.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_que-es-un-exoplaneta.webp',
+    bannerCaption: '¿Qué es un exoplaneta? Mundos orbitando otras estrellas: Júpiteres calientes, super-Tierras y más',
     fact: 'Hasta la fecha, la NASA ha confirmado la existencia de más de 5,500 exoplanetas en nuestra galaxia, y hay miles de candidatos adicionales esperando verificación. Los modelos astronómicos sugieren que estadísticamente existen más planetas que estrellas en la Vía Láctea, sumando más de 100,000 millones de mundos exóticos.'
   },
   {
@@ -125,6 +127,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Telescopios espaciales legendarios como Kepler y TESS han descubierto miles de exoplanetas utilizando únicamente el método del tránsito. Kepler observó fijamente una región fija del cielo durante años, fotografiando simultáneamente más de 150,000 estrellas para detectar estos parpadeos estelares microscópicos con fotómetros de alta definición.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La profundidad del tránsito depende de la relación entre el área del planeta y el área de la estrella. La fórmula matemática establece que la caída de brillo es igual al cuadrado del radio del planeta dividido entre el cuadrado del radio estelar. Esta relación geométrica simple permite determinar el volumen planetario con altísima precisión instrumental.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_metodo-del-transito.webp',
+    bannerCaption: 'El método del tránsito: medir el oscurecimiento de la estrella cuando un planeta la cruza',
     fact: 'El primer tránsito de un exoplaneta observado en directo ocurrió en 1999 sobre la estrella HD 209458. Los astrónomos midieron una caída de brillo del 1.7% durante tres horas consecutivas, confirmando que el planeta HD 209458 b era un gigante gaseoso con un radio 1.35 veces mayor que el de Júpiter.'
   },
   {
@@ -144,6 +148,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El efecto Doppler de la luz fue predicho originalmente por el físico austríaco Christian Doppler en 1842. En la actualidad, este concepto no solo sirve para descubrir exoplanetas lejanos, sino también para calcular la velocidad a la que se expande todo nuestro universo y para los radares de tráfico en las autopistas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La velocidad con la que Júpiter hace bambolear al Sol es de aproximadamente 12 metros por segundo, equivalente a la velocidad de un atleta corriendo. Sin embargo, la Tierra solo provoca que el Sol se mueva a unos 9 centímetros por segundo. Detectar esa variación requiere espectrógrafos ultrasensibles estabilizados al vacío.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_velocidad-radial-doppler.webp',
+    bannerCaption: 'Velocidad radial y Doppler: detectar el bamboleo de la estrella causado por la gravedad del planeta',
     fact: 'El espectrógrafo HARPS instalado en el observatorio de La Silla en Chile puede medir variaciones en la velocidad de una estrella de tan solo 30 centímetros por segundo, lo que equivale a la velocidad a la que camina una tortuga terrestre de tamaño mediano.'
   },
   {
@@ -163,6 +169,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Analizar la curva de luz cuando el planeta pasa por detrás de su estrella (evento llamado eclipse secundario) permite medir la temperatura de la cara diurna del exoplaneta. Al quedar oculto el planeta, la cantidad total de luz infrarroja disminuye, revelando cuánto calor emitía el planeta por sí mismo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las curvas de luz ultrasensibles obtenidas por telescopios modernos pueden detectar anillos planetarios y sistemas de lunas extrasolares (exolunas). Un planeta con anillos produce una caída de luz asimétrica y escalonada antes de que el cuerpo sólido principal ingrese al disco estelar.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_curva-de-luz.webp',
+    bannerCaption: 'Análisis de curvas de luz: la forma del oscurecimiento revela el tamaño y periodo orbital del planeta',
     fact: 'Gracias al análisis avanzado de curvas de luz con el telescopio Kepler, en 2015 se descubrió la estrella de Tabby (KIC 8462852), la cual mostraba caídas de brillo irregulares de hasta el 22%, provocando intensos debates científicos sobre enjambres de cometas o polvo circunestelar.'
   },
   {
@@ -182,6 +190,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los primeros espectrógrafos astronómicos del siglo XIX apenas podían medir desplazamientos correspondientes a decenas de kilómetros por segundo. En la actualidad, los espectrógrafos de ultra alta precisión han mejorado esa capacidad en un factor de cien mil, midiendo cambios en la velocidad de la luz equivalentes a la velocidad de gateo de un bebé.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un peine de frecuencias láser emite miles de líneas espectrales equiespaciadas con una precisión de reloj atómico. Sirve como la regla de medir más exacta del universo, garantizando que el espectrógrafo no sufra desviaciones físicas ni térmicas durante décadas de observaciones continuas.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_espectroscopia-doppler.webp',
+    bannerCaption: 'Espectroscopía de precisión: medir el movimiento de la estrella con exactitud de 1 metro por segundo',
     fact: 'El instrumento ESPRESSO en el Observatorio Paranal alcanzó una precisión instrumental sin precedentes inferior a 10 centímetros por segundo en sus pruebas de campo, abriendo la era de la detección directa de análogos terrestres por velocidad radial.'
   },
   {
@@ -201,6 +211,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Debido a los sesgos de detección, durante los primeros diez años de la búsqueda exoplanetaria los astrónomos creyeron erróneamente que casi todos los sistemas planetarios del universo eran caóticos y tenían planetas gigantes hirviendo pegados a sus estrellas. Apenas mejoró la tecnología se descubrió que los mundos pequeños son mucho más comunes.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La velocidad radial únicamente mide la masa mínima del exoplaneta multiplicada por el seno del ángulo de inclinación orbital (m sin i). Si no conocemos la inclinación mediante un tránsito visible, la masa real del planeta podría ser sustancialmente mayor que la medida originalmente por el espectrógrafo.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_limitaciones-y-sesgos.webp',
+    bannerCaption: 'Limitaciones y sesgos: los métodos actuales favorecen detectar planetas grandes y cercanos a su estrella',
     fact: 'La probabilidad geométrica de que un planeta idéntico a la Tierra orbite a 1 Unidad Astronómica de una estrella idéntica al Sol y produzca un tránsito alineado con nuestro punto de vista es de apenas un 0.47%, o una posibilidad entre doscientas doce.'
   },
   {
@@ -220,6 +232,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El planeta GJ 1214 b fue uno de los primeros exoplanetas caracterizados combinando tránsito y velocidad radial. Posee un radio 2.7 veces mayor que la Tierra y una densidad baja, lo que llevó a los astrofísicos a teorizar que se trata de un "mundo océano" rodeado por un denso manto de vapor de agua a alta presión.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Al conocer la densidad planetaria y la distancia a su estrella, los físicos pueden calcular la gravedad en la superficie del exoplaneta. Un astronauta que pisara una Supertierra densa experimentaría una gravedad hasta tres veces mayor que la terrestre, haciendo que su propio cuerpo se sintiera extraordinariamente pesado.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_complementariedad-metodos.webp',
+    bannerCaption: 'Combinación de métodos: tránsito + velocidad radial = radio + masa = densidad y composición',
     fact: 'El estudio combinado de densidad demonstrated que el exoplaneta WASP-17b es uno de los planetas más "esponjosos" e hinchados jamás descubiertos: tiene la mitad de la masa de Júpiter pero casi el doble de su tamaño, dándole una densidad similar a la del corcho de una botella.'
   }
 ];
@@ -662,6 +676,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 <ExpandableSection item={exp} color={node.color} />
               </div>
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

@@ -168,6 +168,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La cámara de Voyager 1 fue apagada permanentemente justo después de tomar la fotografía del Pale Blue Dot. Los ingenieros del JPL desactivaron el sistema de imagen para conservar energía y redirigirla a los instrumentos de detección de partículas y campos magnéticos, que serían necesarios para estudiar los límites del sistema solar. La última orden enviada a la cámara fue el comando de apagado, el 14 de febrero de 1990, exactamente el Día de San Valentín.' },
       { label: 'Dato Científico', icon: 'atom', text: 'A la distancia de 6,054 millones de kilómetros, la Tierra tiene un brillo aparente de magnitud 0.7, comparable al de la estrella Altair vista desde la superficie terrestre. Sin embargo, el campo de visión de la cámara del Voyager es tan estrecho (0.48 grados) que nuestro planeta ocupa solo 0.12 píxeles. Para comparar: la Luna llena vista desde la Tierra ocupa aproximadamente 0.5 grados, lo que significa que desde Voyager 1, la Tierra es más de 4,000 veces más pequeña que la Luna en nuestro cielo nocturno.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m3/banner_foto-lejana.webp',
+    bannerCaption: 'La foto más lejana de la Tierra: Voyager 1 mira atrás desde más allá de Plutón en 1990',
     fact: 'En 2020, la NASA publicó una versión reprocesada de la fotografía del Pale Blue Dot con tecnología moderna de procesamiento de imágenes. El equipo del JPL utilizó software actualizado para equilibrar los colores y reducir el ruido digital, manteniendo la integridad científica de los datos originales. La nueva versión muestra con mayor claridad el punto azul y distingue mejor los rayos de luz dispersa. El anuncio se realizó el 12 de febrero de 2020, dos días antes del trigésimo aniversario de la imagen original.',
   },
   {
@@ -187,6 +189,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Carl Sagan escribió el borrador inicial de la reflexión sobre el Pale Blue Dot en un solo día, en su oficina del Space Sciences Building de Cornell. Según Ann Druyan, su esposa y colaboradora, Sagan trabajó durante horas sin pausa después de recibir las imágenes procesadas del JPL. Druyan relató que cuando terminó de escribir, tenía lágrimas en los ojos. El texto sufrió pocas modificaciones antes de su publicación final en el libro de 1994.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Universidad de Cornell creó en 2015 el "Carl Sagan Institute" (Instituto Carl Sagan), dedicado a la búsqueda de signos de vida en planetas habitables fuera del sistema solar. Dirigido por la astrónoma Lisa Kaltenegger, el instituto utiliza datos del telescopio espacial James Webb y de observatorios terrestres para analizar las atmósferas de exoplanetas en busca de biofirmas como oxígeno, metano y ozono, continuando el legado directo de la visión de Sagan.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m3/banner_el-discurso.webp',
+    bannerCaption: 'El discurso del Pálido Punto Azul: las palabras más profundas pronunciadas sobre la Tierra',
     fact: 'El libro "Pale Blue Dot" fue publicado el 1 de noviembre de 1994 y vendió más de 500,000 copias en su primera edición en inglés. Ha sido traducido a más de 20 idiomas. Carl Sagan dedicó el libro a Ann Druyan con las palabras: "En la vastedad del espacio y la inmensidad del tiempo, es un placer compartir un planeta y una época contigo." Sagan falleció el 20 de diciembre de 1996, a los 62 años, de mielodisplasia, una enfermedad de la sangre, en el Centro Médico Fred Hutchinson de Seattle.',
   },
   {
@@ -206,6 +210,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las computadoras de las sondas Voyager tienen menos memoria que una calculadora moderna. El sistema de comando utiliza tres computadoras redundantes con un total de 69.63 kilobytes de memoria, equivalente a menos de una fotografía de baja resolución en un teléfono actual. Sin embargo, este hardware ha funcionado sin interrupciones durante más de 47 años en las condiciones más hostiles del espacio profundo, un testimonio de la ingeniería robusta del JPL en la década de 1970.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las señales de radio transmitidas por Voyager 1 tienen una potencia de apenas 23 watts, comparable a la de una bombilla de refrigerador. Estas señales tardan más de 22 horas en llegar a la Tierra, viajando a la velocidad de la luz. Para captarlas, la NASA utiliza la Red de Espacio Profundo (DSN), compuesta por tres estaciones con antenas de 70 metros de diámetro ubicadas en Goldstone (California), Madrid (España) y Canberra (Australia), espaciadas 120 grados alrededor del globo.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m3/banner_voyager-1-y-2.webp',
+    bannerCaption: 'Voyager 1 y 2: las sondas más lejanas de la humanidad ahora en el espacio interestelar',
     fact: 'Voyager 2 sigue siendo la única nave espacial que ha visitado los planetas Urano y Neptuno. No existe ninguna misión aprobada para regresar a estos mundos antes de la década de 2040. Los datos recopilados por Voyager 2 durante sus breves sobrevuelos — apenas 6 horas cerca de cada planeta — constituyen más del 95% de todo el conocimiento científico directo que la humanidad posee sobre estos dos gigantes de hielo, un hecho que subraya lo limitada que es aún nuestra exploración del sistema solar exterior.',
   },
   {
@@ -225,6 +231,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Ann Druyan y Carl Sagan se enamoraron durante una llamada telefónica el 1 de junio de 1977, mientras discutían la selección musical para el Disco de Oro. Dos días después, el 3 de junio, Druyan grabó sus ondas cerebrales sabiendo que sus pensamientos de amor hacia Sagan viajarían literalmente hacia las estrellas. Se casaron en 1981 y permanecieron juntos hasta la muerte de Sagan en 1996. Druyan describió el disco como "una historia de amor enviada al cosmos".' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Disco de Oro está fabricado de cobre chapado en oro, un material elegido por su resistencia a la corrosión en el vacío espacial. Los ingenieros del JPL estimaron que el disco permanecerá reproducible durante al menos mil millones de años, siempre que no colisione con un objeto sólido. En comparación, un CD comercial se degrada en 25-100 años y un disco duro moderno falla en 3-5 años. El Disco de Oro es probablemente el medio de almacenamiento más duradero jamás creado por la humanidad.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m3/banner_disco-de-oro.webp',
+    bannerCaption: 'El Disco de Oro: la carta de amor de la humanidad enviada al cosmos en Voyager',
     fact: 'El Disco de Oro no incluye ninguna imagen de guerra, enfermedad, pobreza o contaminación. El comité de Sagan debatió extensamente si debían mostrar los aspectos negativos de la humanidad, pero decidieron que el disco debía ser un mensaje de bienvenida, no un informe completo. Sagan argumentó que una civilización capaz de interceptar el Voyager ya conocería los conflictos inherentes a las sociedades tecnológicas. Se incluyó, sin embargo, el sonido de un beso, el llanto de un recién nacido y el latido de un corazón humano, sonidos que Sagan consideraba "universales".',
   },
   {
@@ -244,6 +252,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El astronauta Ron Garan, que pasó 178 días en la Estación Espacial Internacional entre 2008 y 2011, acuñó la expresión "orbital perspective" para describir la transformación emocional que sufrió al observar la Tierra 16 veces al día desde 400 kilómetros de altura. Garan fundó una organización sin fines de lucro dedicada a aplicar esta perspectiva a problemas globales como la pobreza y el cambio climático. Afirmó que desde el espacio, la atmósfera terrestre parece "tan fina como una cáscara de cebolla".' },
       { label: 'Dato Científico', icon: 'atom', text: 'La atmósfera terrestre, que protege toda la vida conocida, tiene un grosor funcional de apenas 100 kilómetros (la línea de Kármán). Si la Tierra fuera una esfera del tamaño de un balón de baloncesto (24 cm de diámetro), la atmósfera sería una capa de menos de 0.2 milímetros de espesor, más delgada que una capa de barniz. Sagan usaba esta comparación para ilustrar lo vulnerable que es nuestro sistema de soporte vital y por qué las emisiones de gases de efecto invernadero representan una amenaza cuantificable.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m3/banner_perspectiva-cosmica.webp',
+    bannerCaption: 'La perspectiva cósmica: desde un ser humano hasta los confines del universo observable',
     fact: 'Carl Sagan testificó ante el Congreso de los Estados Unidos el 10 de diciembre de 1985 sobre los peligros del invierno nuclear, presentando modelos computacionales que él y sus colegas Richard Turco, Owen Toon, Thomas Ackerman y James Pollack (grupo conocido como TTAPS) habían publicado en la revista Science en 1983. El modelo TTAPS predecía que un intercambio nuclear a gran escala inyectaría suficiente hollín en la estratosfera para bloquear la luz solar durante meses, reduciendo las temperaturas globales entre 15 y 25 grados Celsius y destruyendo la agricultura mundial.',
   },
   {
@@ -263,6 +273,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En diciembre de 2023, la NASA resolvió un problema técnico que había dejado a Voyager 1 enviando datos ininteligibles durante varios meses. Un chip de memoria defectuoso en el subsistema de datos de vuelo (FDS) corrompía la telemetría antes de transmitirla. El equipo del JPL envió un comando de reparación que tardó 22.5 horas en llegar a la sonda y otras 22.5 horas en recibir la confirmación. Fue como reparar un ordenador de 1977 a 24,000 millones de kilómetros de distancia, utilizando documentación técnica original en papel.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El espacio interestelar no está vacío: contiene aproximadamente una partícula por centímetro cúbico, principalmente átomos de hidrógeno neutro. También está permeado por rayos cósmicos galácticos — protones y núcleos atómicos acelerados a velocidades cercanas a la de la luz por supernovas y otros eventos energéticos — y por un campo magnético galáctico de unos 0.5 nanoteslas. Los datos de Voyager revelaron que este campo magnético interestelar local tiene una orientación diferente a la esperada, lo que sugiere que la estructura magnética de nuestra vecindad galáctica es más compleja de lo previsto.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m3/banner_espacio-interestelar.webp',
+    bannerCaption: 'El espacio interestelar: Voyager 1 cruzó la heliopausa en 2012',
     fact: 'Voyager 1 viaja actualmente a 17.05 kilómetros por segundo (61,380 km/h) respecto al Sol y se encuentra a más de 163 unidades astronómicas de la Tierra (datos de 2025). La comunicación con la sonda se realiza mediante señales de radio en banda S y banda X. La potencia de la señal que llega a la Tierra es de aproximadamente 10^(-16) watts, una cantidad de energía tan minúscula que es 20,000 millones de veces más débil que la potencia necesaria para encender un reloj digital. Las antenas de 70 metros de la Red de Espacio Profundo pueden detectar esta señal gracias a receptores criogénicos enfriados a -269°C.',
   },
   {
@@ -282,6 +294,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El 13 de septiembre de 2013, la Unión Astronómica Internacional nombró oficialmente el punto exacto donde fue tomada la fotografía del Pale Blue Dot como un hito en la historia de la exploración espacial. En 2014, Bill Nye (presidente de la Planetary Society, organización cofundada por Sagan en 1980) propuso que el 14 de febrero fuera declarado "Día del Pale Blue Dot", una celebración anual de la perspectiva cósmica. Varias universidades y museos de ciencia alrededor del mundo observan esta fecha con eventos educativos y lecturas del texto de Sagan.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Cada átomo de tu cuerpo fue creado en el interior de una estrella que explotó hace miles de millones de años. El carbono de tus músculos, el calcio de tus huesos, el hierro de tu sangre y el oxígeno que respiras fueron forjados por fusión nuclear en estrellas masivas y dispersados por el cosmos cuando esas estrellas murieron como supernovas. Sagan expresó esta idea en su serie "Cosmos" (1980) con la frase: "Somos materia estelar que piensa sobre las estrellas." Este es un hecho verificable de nucleosíntesis estelar, confirmado por espectroscopia de abundancias elementales.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m3/banner_lugar-en-cosmos.webp',
+    bannerCaption: 'Nuestro lugar en el cosmos: el Sol en el Brazo de Orión de la Vía Láctea',
     fact: 'La Planetary Society, cofundada por Carl Sagan, Bruce Murray y Louis Friedman en 1980, es la organización espacial sin fines de lucro más grande del mundo, con más de 100,000 miembros en 100 países. En 2019, la sociedad lanzó exitosamente LightSail 2, una nave impulsada por la presión de la luz solar sobre una vela de 32 metros cuadrados de Mylar reflectante, demostrando que la propulsión fotónica es viable para misiones interplanetarias. Carl Sagan había promovido la idea de las velas solares desde la década de 1970, y LightSail 2 fue dedicada a su memoria.',
   },
 ];
@@ -705,6 +719,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

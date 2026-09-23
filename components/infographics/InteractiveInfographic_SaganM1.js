@@ -161,6 +161,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Feria Mundial de Nueva York de 1939 recibió más de 44 millones de visitantes durante sus dos temporadas de apertura (1939 y 1940). Entre sus exhibiciones más recordadas estaba el Futurama de General Motors, diseñado por Norman Bel Geddes, que mostraba una ciudad del futuro con autopistas de alta velocidad. La cápsula del tiempo, creada por la empresa Westinghouse, contenía 35 objetos cotidianos, desde un reloj de cuerda hasta un paquete de semillas, destinados a ser descubiertos 5,000 años después. El joven Carl visitó la feria en múltiples ocasiones durante la temporada.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Brooklyn está ubicada en el extremo occidental de Long Island, con coordenadas aproximadas de 40.65°N, 73.95°O. En la década de 1930, la contaminación lumínica era significativamente menor que en la actualidad, lo que permitía observar estrellas de hasta magnitud 4 o 5 desde zonas urbanas. Hoy, desde el mismo lugar, apenas se logran ver estrellas de magnitud 2 o 3. La magnitud aparente mide el brillo de un objeto celeste: cuanto menor es el número, más brillante es el objeto. Sirio, la estrella más brillante del cielo nocturno, tiene magnitud -1.46.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m1/banner_brooklyn-1934.webp',
+    bannerCaption: 'Brooklyn 1934: el niño Carl Sagan que miraba las estrellas desde los tejados de Nueva York',
     fact: 'Samuel Sagan inmigró a Estados Unidos desde Kamianets-Podilskyi, una ciudad que en 1934 pertenecía a la Unión Soviética y hoy forma parte de Ucrania. La familia extendida de los Sagan, como millones de judíos de Europa del Este, emigró buscando escapar de la pobreza y las persecuciones antisemitas. En el censo de 1940, la dirección registrada de la familia era el 576 de Flatbush Avenue, Brooklyn, y Samuel declaró ingresos anuales de aproximadamente 3,800 dólares, equivalentes a unos 82,000 dólares actuales ajustados por inflación.',
   },
   {
@@ -184,6 +186,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Carl Sagan fue un ávido lector de ciencia ficción durante toda su infancia y adolescencia. Entre sus autores favoritos estaban Edgar Rice Burroughs, autor de las novelas de John Carter en Marte, y H.G. Wells, creador de La Guerra de los Mundos. Sagan dijo en múltiples entrevistas que la ciencia ficción le enseñó a pensar en términos cósmicos, a imaginar mundos diferentes y a preguntarse qué sería posible. De adulto, escribiría su propia novela de ciencia ficción, Contact, publicada en 1985, que se convirtió en un éxito de ventas y luego en una película protagonizada por Jodie Foster en 1997.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Sol, la estrella que cautivó al joven Carl, es una estrella de secuencia principal de tipo espectral G2V con una masa de 1.989 × 10³⁰ kilogramos y un diámetro de 1.392 millones de kilómetros. Su temperatura superficial es de aproximadamente 5,778 kelvin, y en su núcleo alcanza 15 millones de kelvin, donde la fusión nuclear convierte hidrógeno en helio a razón de 600 millones de toneladas por segundo. La luz solar tarda 8 minutos y 20 segundos en llegar a la Tierra, recorriendo 149.6 millones de kilómetros, una distancia conocida como unidad astronómica.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m1/banner_nino-estrellas.webp',
+    bannerCaption: 'El niño de las estrellas: Carl descubre la astronomía en la biblioteca pública de Brooklyn',
     fact: 'La biblioteca pública de Brooklyn, fundada en 1897, era uno de los sistemas bibliotecarios más grandes de Estados Unidos en la década de 1940, con más de 60 sucursales repartidas por todo el condado. Carl Sagan visitaba con frecuencia la sucursal de su barrio en Bensonhurst. En 1944, el sistema bibliotecario de Brooklyn contenía más de 3.5 millones de volúmenes. Sagan recordaba que la bibliotecaria, al verlo regresar semana tras semana por libros de astronomía, comenzó a reservarle las nuevas adquisiciones del tema antes de colocarlas en los estantes generales.',
   },
   {
@@ -207,6 +211,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Gerard Kuiper descubrió en 1944 que Titán, la luna más grande de Saturno, posee una atmósfera densa compuesta principalmente de nitrógeno y metano. En 1951, descubrió Miranda, una de las lunas de Urano. El Cinturón de Kuiper, una región del Sistema Solar más allá de la órbita de Neptuno que contiene millones de cuerpos helados, fue nombrado en su honor. Plutón, reclasificado como planeta enano en 2006, es el objeto más conocido de esta región. Kuiper murió en 1973 en Ciudad de México durante un viaje de investigación.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El experimento de Miller-Urey de 1953 produjo más de 20 aminoácidos diferentes a partir de gases simples y descargas eléctricas. En 2008, investigadores de la Universidad de California en San Diego reexaminaron las muestras originales selladas de Miller utilizando técnicas modernas de cromatografía y espectrometría de masas, y descubrieron que el experimento había generado en realidad más de 40 aminoácidos y varios compuestos orgánicos complejos, más del doble de lo reportado originalmente. Este hallazgo reforzó la hipótesis de que la química prebiótica es más productiva de lo que se pensaba inicialmente.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m1/banner_universidad-chicago.webp',
+    bannerCaption: 'La Universidad de Chicago: donde Sagan unió la astronomía con la biología y el origen de la vida',
     fact: 'La Universidad de Chicago, fundada en 1890 por John D. Rockefeller, ha producido hasta la fecha 100 premios Nobel afiliados a la institución, incluyendo a Enrico Fermi, quien construyó el primer reactor nuclear del mundo bajo las gradas del estadio de fútbol americano de la universidad el 2 de diciembre de 1942. Cuando Sagan llegó a Chicago en 1951, el legado de la física nuclear aún era palpable en el campus. La universidad tenía un entorno intelectual que valoraba el pensamiento interdisciplinario, una filosofía que moldearía profundamente el enfoque de Sagan hacia la ciencia durante el resto de su vida.',
   },
   {
@@ -230,6 +236,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Disco de Oro de las Voyager incluye la pieza «Dark Was the Night, Cold Was the Ground» del músico de blues Blind Willie Johnson, grabada en 1927. Ann Druyan, quien co-dirigió el proyecto del disco con Sagan, describió esta canción como una representación de la soledad humana en el cosmos. También incluyó «Johnny B. Goode» de Chuck Berry. Cuando un cómico del Saturday Night Live bromeó diciendo que los extraterrestres responderían «Envíen más Chuck Berry», Sagan tomó el chiste con humor y reconoció que era difícil seleccionar solo 27 piezas para representar a toda la humanidad.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las sondas Voyager viajan actualmente a velocidades de aproximadamente 17 km/s (Voyager 1) y 15 km/s (Voyager 2). A esas velocidades, necesitarían unos 73,000 años para alcanzar Próxima Centauri, la estrella más cercana al Sol, ubicada a 4.24 años luz. Voyager 1 se encuentra a más de 24,000 millones de kilómetros de la Tierra y cruzó la heliopausa —el límite del viento solar— en agosto de 2012, convirtiéndose en el primer objeto humano en el espacio interestelar. Ambas naves funcionan con generadores termoeléctricos de radioisótopos (RTG) alimentados por plutonio-238.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m1/banner_misiones-espaciales.webp',
+    bannerCaption: 'Las misiones espaciales: Sagan asesoró la NASA en Voyager, Viking, Mariner y Pioneer',
     fact: 'Las placas de Pioneer fueron objeto de controversia cultural cuando se publicaron en 1972. Algunos críticos cuestionaron la inclusión de figuras humanas desnudas, argumentando que era inapropiado. Otros señalaron que las figuras representaban un sesgo cultural al mostrar rasgos caucásicos. Sagan defendió las placas argumentando que debían ser lo más universales posible. Pioneer 10 envió su última señal débil a la Tierra el 23 de enero de 2003, desde una distancia de 12,000 millones de kilómetros. Actualmente se dirige hacia la estrella Aldebarán, en la constelación de Tauro, y llegará a sus proximidades en aproximadamente 2 millones de años.',
   },
   {
@@ -253,6 +261,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 2014, se produjo una secuela titulada «Cosmos: Una Odisea del Espacio-Tiempo», presentada por el astrofísico Neil deGrasse Tyson. Tyson, nacido en 1958 en Manhattan, había conocido a Sagan a los 17 años cuando este lo invitó personalmente a visitar la Universidad de Cornell en 1975. Sagan pasó un sábado entero con el joven Tyson, le mostró su laboratorio y le regaló un libro firmado. Tyson ha declarado que ese encuentro definió su carrera y que aspira a inspirar a otros como Sagan lo inspiró a él. La nueva serie fue producida por Ann Druyan y emitida por Fox y National Geographic.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La nucleosíntesis estelar, el proceso que Sagan describía con la frase «somos polvo de estrellas», ocurre en varias etapas. Las estrellas de secuencia principal fusionan hidrógeno en helio. Las estrellas más masivas continúan fusionando helio en carbono, carbono en neón, neón en oxígeno, y oxígeno en silicio, hasta llegar al hierro. Más allá del hierro, la fusión no libera energía, por lo que elementos como el oro, el platino y el uranio se forman durante explosiones de supernova mediante el proceso r (captura rápida de neutrones). Tu cuerpo contiene átomos forjados en al menos dos o tres estrellas diferentes que explotaron hace miles de millones de años.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m1/banner_comunicador-cientifico.webp',
+    bannerCaption: 'El comunicador científico: Sagan hizo que millones amaran la ciencia a través de la televisión',
     fact: 'Carl Sagan fue rechazado para membresía en la Academia Nacional de Ciencias de Estados Unidos en 1992, en parte porque algunos miembros lo consideraban más divulgador que investigador. Sin embargo, Sagan tenía más de 600 publicaciones científicas y fue autor o coautor de artículos en revistas como Nature, Science e Icarus, de la cual fue editor durante 12 años. Su contribución al entendimiento de la atmósfera de Venus, la estacionalidad de las tormentas de polvo en Marte y la naturaleza de Titán fue reconocida con la Medalla de la NASA al Mérito Científico Distinguido y el Premio Pulitzer de Literatura General en 1978 por su libro «Los Dragones del Edén».',
   },
   {
@@ -276,6 +286,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La idea de fotografiar la Tierra desde las afueras del Sistema Solar no fue espontánea. Sagan la propuso por primera vez a la NASA en 1981, pero fue rechazada repetidamente durante nueve años. Los ingenieros temían que la luz solar dañara los detectores CCD de la cámara, y los administradores no veían valor científico en la imagen. Sagan persistió, escribiendo cartas y reuniéndose con directivos de la NASA hasta que finalmente el administrador adjunto Lennard Fisk autorizó la toma en febrero de 1990, justo antes de que se apagaran definitivamente las cámaras de Voyager 1.' },
       { label: 'Dato Científico', icon: 'atom', text: 'A la distancia desde la que se tomó la foto del Pálido Punto Azul (6,054 millones de kilómetros), la Tierra subtendía un ángulo de apenas 0.12 segundos de arco, menos de un píxel en el sensor de la cámara de Voyager 1. Para comparar, la Luna llena vista desde la Tierra subtende unos 1,800 segundos de arco (medio grado), es decir, la Tierra vista desde Voyager 1 era 15,000 veces más pequeña que la Luna vista desde tu jardín. La señal de radio que transmitió la imagen tardó 5 horas y 36 minutos en recorrer la distancia entre la sonda y las antenas de la Red del Espacio Profundo.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m1/banner_palido-punto-azul.webp',
+    bannerCaption: 'El Pálido Punto Azul: la Tierra desde 6,000 millones de km, la foto más profunda de Sagan',
     fact: 'La fecha de la toma de la fotografía, 14 de febrero de 1990, coincidió con el Día de San Valentín. Ann Druyan, la tercera esposa de Sagan y co-creadora del Disco de Oro, ha señalado que esta coincidencia no fue planificada pero resultó simbólica: una carta de amor a la Tierra desde los confines del Sistema Solar. Voyager 1 tomó en realidad 60 fotografías ese día, apuntando a diferentes partes del Sistema Solar, creando lo que la NASA denominó «Retrato de Familia del Sistema Solar». La Tierra fue el último objetivo fotografiado, y el punto de luz más tenue de toda la serie de imágenes capturadas.',
   },
   {
@@ -299,6 +311,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Después de la muerte de Sagan, Ann Druyan continuó su legado como productora de las nuevas temporadas de Cosmos. También supervisó la publicación de varios libros póstumos de Sagan, incluyendo «The Varieties of Scientific Experience» (2006), basado en sus Conferencias Gifford de 1985 sobre teología natural. Druyan y Sagan se enamoraron durante la producción del Disco de Oro de las Voyager en 1977 y se casaron en 1981. Ella ha descrito el momento de su enamoramiento como el instante más transformador de su vida, ocurrido durante una llamada telefónica sobre la selección de música china para el disco.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El cráter Sagan en Marte tiene un diámetro de 94.2 kilómetros y está ubicado en la región de Sinus Sabaeus. Para comparar, el cráter Chicxulub en la península de Yucatán, México, que provocó la extinción de los dinosaurios hace 66 millones de años, tiene un diámetro de 180 kilómetros. La Carl Sagan Memorial Station (Mars Pathfinder) aterrizó en Ares Vallis, un canal de desagüe antiguo en Marte, y operó durante 83 días transmitiendo 16,500 imágenes desde la superficie. Su pequeño rover, Sojourner, de 10.6 kilogramos, fue el primer vehículo robótico en operar en la superficie de otro planeta.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m1/banner_legado-memoria.webp',
+    bannerCaption: 'Legado y memoria: Sagan nos recordó que somos polvo de estrellas que se conoce a sí mismo',
     fact: 'Carl Sagan publicó más de 600 artículos científicos y fue autor, coautor o editor de más de 20 libros durante su carrera. Fue galardonado con la Medalla de la NASA al Mérito Científico Distinguido en dos ocasiones, recibió el Premio Pulitzer en 1978 por «Los Dragones del Edén», y fue distinguido con la Medalla de Bienestar Público de la Academia Nacional de Ciencias, el honor más alto que otorga la Academia a un ciudadano. En 2014, la Unión Astronómica Internacional nombró la unidad «sagan» como medida informal para cuantificar la cantidad de estrellas en el universo observable, estimada en al menos 200,000 millones.',
   },
 ];
@@ -716,10 +730,50 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {/* Video Player */}
+        
+          {/* Video Player */}
         {node.video && (
           <div style={{ marginTop: '1.5rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

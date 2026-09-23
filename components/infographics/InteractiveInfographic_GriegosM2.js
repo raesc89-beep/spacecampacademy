@@ -165,6 +165,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las leyendas antiguas atribuían a Pitágoras poderes sobrenaturales. Según Aristóteles, los habitantes de Crotona lo llamaban "Apolo Hiperbóreo". Jámblico escribió que Pitágoras podía hablar con animales, que tenía un muslo de oro, y que fue visto en dos ciudades al mismo tiempo. Estas historias muestran cómo sus seguidores lo elevaron a una categoría casi divina, convirtiendo al filósofo histórico en una figura semimítica cuyas enseñanzas tenían autoridad sagrada.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El sistema numérico sexagesimal babilónico, que Pitágoras probablemente estudió en Mesopotamia, es la razón por la cual dividimos la hora en 60 minutos y el minuto en 60 segundos. Los babilonios usaban la base 60 porque es divisible por 1, 2, 3, 4, 5, 6, 10, 12, 15, 20 y 30, lo que facilita las fracciones. La tablilla Plimpton 322, datada hacia 1800 a.C. y conservada en la Universidad de Columbia, contiene una lista de ternas pitagóricas que demuestra que los babilonios conocían estas relaciones mil años antes de Pitágoras.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m2/banner_el-hombre-y-la-leyenda.webp',
+    bannerCaption: 'El hombre y la leyenda: Pitágoras de Samos, entre el filósofo histórico y el místico matemático',
     fact: 'La isla de Samos, donde nació Pitágoras, también fue el lugar de nacimiento de otros logros notables de la antigüedad. El arquitecto Eupalinos construyó allí el Túnel de Eupalinos hacia el 530 a.C., un acueducto subterráneo de 1.036 metros excavado simultáneamente desde ambos extremos de una montaña. Los dos equipos se encontraron en el centro con un error de solo unos pocos metros, un logro de ingeniería que requirió conocimientos geométricos avanzados que Pitágoras pudo haber conocido de primera mano.',
   },
   {
@@ -184,6 +186,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El lema secreto de los pitagóricos era la tetractys, una disposición triangular de diez puntos en cuatro filas (1+2+3+4=10). Los pitagóricos juraban por ella como si fuera sagrada: "Por aquel que nos dio la tetractys, fuente y raíz de la naturaleza eterna." Este triángulo numérico contenía las proporciones musicales fundamentales (4:3, 3:2, 2:1) y representaba la conexión entre los números y la armonía del universo. La suma de los cuatro primeros números daba 10, que para ellos simbolizaba la perfección.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La separación entre acusmáticos y matemáticos refleja una distinción que todavía existe en la educación moderna: la diferencia entre conocer hechos y comprender procesos. Los acusmáticos recibían afirmaciones como "no comas habas" sin explicación, mientras que los matemáticos aprendían las demostraciones detrás de cada teorema. La matemática moderna se basa en este principio pitagórico de que no basta con saber que algo es verdad — hay que demostrar por qué lo es mediante una cadena lógica de razonamientos verificables.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m2/banner_la-escuela-pitagorica.webp',
+    bannerCaption: 'La escuela pitagórica: una comunidad filosófico-matemática con hombres y mujeres por igual',
     fact: 'Teano de Crotona escribió tratados sobre matemáticas, física y medicina, según testimonios antiguos preservados por Diógenes Laercio y Estobeo. Se le atribuyen obras sobre la proporción áurea y sobre los poliedros regulares. Después de la muerte de Pitágoras, Teano asumió la dirección de la escuela y continuó enseñando la filosofía pitagórica. Otras mujeres pitagóricas documentadas incluyen a Myia y Damo (posibles hijas de Pitágoras), Melissa y Tymicha, esta última famosa por haberse mordido la lengua antes que revelar los secretos de la orden bajo tortura.',
   },
   {
@@ -203,6 +207,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las "ternas pitagóricas" son conjuntos de tres números enteros que satisfacen a² + b² = c². Las más conocidas son (3,4,5), (5,12,13), (8,15,17) y (7,24,25). Existe una fórmula para generarlas usando dos números enteros m y n donde m > n > 0: a = m² - n², b = 2mn, c = m² + n². Con m=2 y n=1 se obtiene (3,4,5). Con m=3 y n=2 se obtiene (5,12,13). Hay infinitas ternas pitagóricas, lo que fue demostrado por Euclides en el libro X de sus Elementos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En 2015, el matemático australiano Norman Wildberger y su estudiante Daniel Mansfield reexaminaron la tablilla babilónica Plimpton 322 y propusieron que no era simplemente una tabla de ternas pitagóricas sino una sofisticada tabla trigonométrica, la más antigua del mundo, que usaba razones de lados en lugar de ángulos. Esta tablilla, de apenas 13 por 9 centímetros, contiene 15 filas de números en escritura cuneiforme que representan triángulos rectángulos con ángulos entre 45 y 60 grados, organizados con una precisión que supera a las tablas trigonométricas griegas posteriores.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m2/banner_el-teorema-de-pitagoras.webp',
+    bannerCaption: 'El Teorema de Pitágoras: a²+b²=c², la relación matemática más famosa de la historia',
     fact: 'El matemático Andrew Wiles demostró en 1995 el Último Teorema de Fermat, que afirma que no existen soluciones enteras positivas para la ecuación aⁿ + bⁿ = cⁿ cuando n es mayor que 2. Pierre de Fermat había escrito esta conjetura en el margen de su copia de la "Arithmetica" de Diofanto hacia 1637, añadiendo que tenía una prueba "que este margen es demasiado estrecho para contener." La demostración de Wiles ocupó 129 páginas y requirió herramientas matemáticas que no existían en tiempos de Fermat, conectando el teorema de Pitágoras con la frontera más avanzada de las matemáticas modernas.',
   },
   {
@@ -222,6 +228,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Johannes Kepler, el astrónomo que descubrió las tres leyes del movimiento planetario entre 1609 y 1619, tituló su obra maestra "Harmonices Mundi" ("La Armonía del Mundo"), directamente inspirado por la idea pitagórica de la música de las esferas. Kepler asignó melodías a cada planeta según sus velocidades orbitales. La Tierra, según Kepler, canta las notas mi-fa-mi, que en latín suenan como "miseria-fames-miseria" (miseria-hambre-miseria), un comentario pesimista sobre la condición humana.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La NASA ha detectado "sonido" en el espacio, aunque no es audible directamente. En 2003, el Observatorio de Rayos X Chandra descubrió ondas de presión emitidas por el agujero negro del cúmulo de galaxias de Perseo. La nota es un si bemol, 57 octavas por debajo del do central del piano, con una frecuencia de un ciclo cada 10 millones de años. Es la nota más grave jamás detectada en el universo. Pitágoras habría apreciado que el cosmos produce sonidos reales, aunque sean inaudibles para el oído humano.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m2/banner_musica-y-matematicas.webp',
+    bannerCaption: 'Música y matemáticas: Pitágoras descubrió que los intervalos musicales son razones numéricas simples',
     fact: 'El monocordio pitagórico es el ancestro directo de los instrumentos de cuerda temperados modernos. Los trastes de una guitarra están colocados según relaciones matemáticas precisas: cada traste divide la longitud vibrante de la cuerda en una razón de ¹²√2 ≈ 1.05946 respecto al traste anterior. En el traste 12, la cuerda se divide exactamente a la mitad, produciendo la octava, exactamente como Pitágoras descubrió hace 2.500 años. Los fabricantes de guitarras modernos usan la "regla del 17.817" (dividir la longitud de la cuerda entre 17.817) para calcular la posición de cada traste.',
   },
   {
@@ -241,6 +249,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La palabra "irracional" en matemáticas no significa "sin razón" en el sentido cotidiano, sino "que no puede expresarse como razón (ratio) de dos enteros." Los griegos usaban el término alogos (sin logos, sin proporción) o arrhetos (inexpresable). La confusión lingüística ha persistido durante siglos y ha dado lugar a la idea errónea de que estos números son de alguna manera "locos" o defectuosos, cuando en realidad son la mayoría de los números que existen en la recta numérica.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El número áureo φ (phi), igual a (1+√5)/2 ≈ 1.6180339..., es otro número irracional conectado con los pitagóricos. Los pitagóricos usaban el pentagrama (estrella de cinco puntas dentro de un pentágono regular) como símbolo secreto de su hermandad, y cada intersección de las líneas del pentagrama divide los segmentos en la proporción áurea. El número φ tiene la propiedad única de que φ² = φ + 1, y su inverso 1/φ = φ - 1. Aparece en la secuencia de Fibonacci, en la filotaxis de las plantas y en la geometría de los cuasicristales descubiertos por Dan Shechtman en 1984.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m2/banner_numeros-irracionales.webp',
+    bannerCaption: 'Los números irracionales: la crisis que sacudió la escuela pitagórica cuando √2 resultó ser irracional',
     fact: 'En 2022, un equipo de Google Cloud liderado por Emma Haruka Iwao calculó 100 billones (10¹⁴) de dígitos de π, un récord mundial que requirió 157 días de cómputo usando la fórmula de Chudnovsky y 82,000 terabytes de almacenamiento. A pesar de tener tantos dígitos calculados, solo se necesitan 39 dígitos de π para calcular la circunferencia del universo observable con una precisión del tamaño de un átomo de hidrógeno. El descubrimiento pitagórico de la irracionalidad inició un camino que, 2.500 años después, sigue generando preguntas sobre la naturaleza de los números y los límites de la computación.',
   },
   {
@@ -260,6 +270,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los pitagóricos clasificaban los números en "amigos" o "amigables." Dos números son amigables si cada uno es la suma de los divisores propios del otro. El par más pequeño es (220, 284): los divisores de 220 suman 284, y los divisores de 284 suman 220. Los pitagóricos conocían este par y lo consideraban un símbolo de amistad. El siguiente par amigable, (1184, 1210), no fue descubierto hasta 1866 por el joven italiano Niccolò Paganini (no el violinista), quien tenía solo 16 años cuando lo encontró.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los primos de Mersenne, nombrados en honor al monje francés Marin Mersenne (1588-1648), son números de la forma 2ⁿ - 1 que resultan ser primos. Su búsqueda se realiza mediante el proyecto distribuido GIMPS (Great Internet Mersenne Prime Search), que usa computadoras voluntarias de todo el mundo. El primo de Mersenne más grande conocido, 2¹³⁶²⁷⁹⁸⁴¹ - 1, fue encontrado en octubre de 2024 por Luke Durant usando computación en la nube con GPUs. Tiene 41.024.320 dígitos y es también el número primo más grande conocido.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m2/banner_los-numeros-perfectos.webp',
+    bannerCaption: 'Los números perfectos: para Pitágoras los números tenían propiedades místicas y sagradas',
     fact: 'Los pitagóricos descubrieron los sólidos platónicos — los cinco poliedros regulares convexos — aunque se les llama "platónicos" porque Platón los describió en el "Timeo." El tetraedro (4 caras triangulares), el cubo (6 caras cuadradas), el octaedro (8 caras triangulares), el dodecaedro (12 caras pentagonales) y el icosaedro (20 caras triangulares) son los únicos poliedros regulares posibles en tres dimensiones. Los pitagóricos asociaron cada uno con un elemento: tierra (cubo), fuego (tetraedro), aire (octaedro) y agua (icosaedro). El dodecaedro, con sus caras pentagonales llenas de proporciones áureas, representaba el cosmos entero.',
   },
   {
@@ -279,6 +291,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Voyager 1, lanzada por la NASA en 1977 y actualmente el objeto fabricado por humanos más lejano de la Tierra (a más de 24.000 millones de km), lleva un disco de oro con sonidos e imágenes de la Tierra. Entre las grabaciones musicales se incluyen piezas que usan los intervalos armónicos descubiertos por Pitágoras: la quinta justa (razón 3:2) y la octava (razón 2:1) aparecen en prácticamente todas las tradiciones musicales del disco, desde Bach hasta música de gamelán balinés.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En 1960, el físico Eugene Wigner publicó un artículo titulado "La irrazonable eficacia de las matemáticas en las ciencias naturales," donde argumentaba que la capacidad de las matemáticas para describir el mundo físico es un misterio que no tiene explicación conocida. ¿Por qué ecuaciones inventadas por la mente humana describen con precisión el comportamiento de partículas subatómicas, galaxias y agujeros negros? Wigner consideraba esto un "regalo" que no entendemos. Es la versión moderna de la pregunta que Pitágoras planteó por primera vez: ¿por qué el universo obedece a los números?' },
     ],
+    bannerImage: '/assets/griegos/infographic_m2/banner_legado-matematico.webp',
+    bannerCaption: 'El legado matemático: el Teorema de Pitágoras en la arquitectura, navegación y computación moderna',
     fact: 'El cráter Pitágoras en la Luna, de 130 kilómetros de diámetro, está ubicado en el limbo noroeste del lado visible lunar (coordenadas 63.5°N, 63.0°W). Fue nombrado por la Unión Astronómica Internacional en honor al filósofo de Samos. El asteroide 6143 Pythagoras, descubierto en 1971, también lleva su nombre. Adicionalmente, la razón entre la distancia media Tierra-Luna y el radio de la Tierra es aproximadamente 60.27, un número que se aproxima al cuadrado de una relación pitagórica. La presencia de su nombre en el cielo habría complacido al filósofo que enseñó que los números gobiernan el cosmos.',
   },
 ];
@@ -718,6 +732,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

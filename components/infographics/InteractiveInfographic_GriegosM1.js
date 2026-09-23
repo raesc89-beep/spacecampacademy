@@ -141,6 +141,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Mileto alcanzó tal relevancia que el historiador Heródoto de Halicarnaso (484–425 a.C.) la describió como "el ornamento de Jonia". La ciudad fue destruida por los persas en el año 494 a.C. tras una rebelión jónica, pero para entonces ya había producido tres de los filósofos más importantes de la historia: Tales, Anaximandro y Anaxímenes. Las ruinas de Mileto pueden visitarse hoy cerca del pueblo de Balat, en la provincia turca de Aydın, donde se conservan restos del teatro, el ágora y el puerto.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las excavaciones arqueológicas dirigidas por Theodor Wiegand entre 1899 y 1914, y continuadas por el Instituto Arqueológico Alemán, revelaron que Mileto tenía un sistema de planificación urbana en cuadrícula (más tarde atribuido a Hipódamo de Mileto, nacido alrededor de 498 a.C.) que incluía canales de drenaje, cisternas de agua y edificios públicos. Este diseño urbano racional refleja la misma mentalidad ordenada y sistemática que produjo la filosofía natural milesia.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m1/banner_mileto-cuna-filosofia.webp',
+    bannerCaption: 'Mileto en el siglo VI a.C.: la ciudad jónica donde nació la filosofía occidental',
     fact: 'El río Meandro, junto al cual se fundó Mileto, dio su nombre a la palabra "meandro" en español y en otros idiomas, que describe las curvas sinuosas de un río. Los griegos representaban estas curvas como un patrón geométrico decorativo conocido como "greca" o "meandro griego", que aparece en cerámica, arquitectura y textiles desde el siglo VIII a.C. Este patrón, con sus líneas rectas que forman ángulos de 90 grados imitando las curvas del río, es uno de los motivos decorativos más antiguos y reconocibles de la civilización occidental.',
   },
   {
@@ -160,6 +162,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Una historia narrada por Aristóteles en su Política (1259a) cuenta que Tales, cansado de que la gente le reprochara que la filosofía no servía para ganar dinero, usó sus conocimientos astronómicos para predecir una gran cosecha de aceitunas en Mileto. Alquiló por adelantado todas las prensas de aceite de la región a bajo precio, y cuando la cosecha llegó y todos necesitaban las prensas, las subalquiló obteniendo una ganancia considerable. Tales demostró así que los filósofos podían enriquecerse si quisieran, pero que preferían dedicar su tiempo a otras cosas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ciencia moderna ha revelado que el agua (H₂O) es una molécula con propiedades físico-químicas excepcionales que la hacen necesaria para toda la vida conocida. Su capacidad calorífica específica (4.186 J/g·°C) es la más alta de cualquier líquido común, lo que permite regular la temperatura de los organismos y del planeta. Su densidad máxima ocurre a 4°C (no a 0°C), lo que hace que el hielo flote y proteja la vida acuática en invierno. Estas propiedades, desconocidas para Tales, validan en parte su intuición de que el agua era una sustancia especial y fundamental.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m1/banner_tales-y-el-agua.webp',
+    bannerCaption: 'Tales y el agua: el primer filósofo que explicó el cosmos sin dioses, solo con razón natural',
     fact: 'Tales también investigó las propiedades del ámbar (élektron en griego) y la magnetita (piedra de Magnesia). Observó que el ámbar, al ser frotado con lana, atraía partículas pequeñas como plumas y trocitos de paja, y que la magnetita atraía fragmentos de hierro sin contacto directo. Aunque Tales interpretó estos fenómenos como evidencia de que estas sustancias poseían "alma" (psyché), estaba documentando las primeras observaciones sistemáticas de la electricidad estática y el magnetismo. La palabra "electricidad" deriva directamente del griego élektron (ámbar), y "magnetismo" de Magnesia, la región de Tesalia donde se encontraba la magnetita.',
   },
   {
@@ -179,6 +183,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La batalla detenida por el eclipse de 585 a.C. se conoce como la "Batalla del Eclipse" o "Batalla del Halys", ya que se libró cerca del río Halys (hoy Kızılırmak, en Turquía). El tratado de paz resultante fue mediado por dos intermediarios: Siénesis de Cilicia y Labineto de Babilonia. Como parte del acuerdo, la princesa lidia Aryenis se casó con el príncipe medo Astiages, sellando la alianza entre ambos reinos. Esta paz perduró hasta que Ciro el Grande de Persia conquistó el reino lidio en el año 547 a.C.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un eclipse solar total ocurre cuando la Luna, con un diámetro de 3.474 km, se interpone entre la Tierra y el Sol, cuyo diámetro es de 1.392.700 km (unas 400 veces mayor). La coincidencia de que el Sol esté también unas 400 veces más lejos que la Luna (149,6 millones de km vs. 384.400 km) hace que ambos cuerpos tengan un tamaño angular casi idéntico visto desde la Tierra (aproximadamente 0,5 grados). Esta coincidencia no es permanente: la Luna se aleja de la Tierra 3,8 cm por año, y dentro de unos 600 millones de años los eclipses totales ya no serán posibles.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m1/banner_eclipse-predicho.webp',
+    bannerCaption: 'El eclipse predicho: Tales predijo el eclipse solar del 585 a.C., deteniendo una guerra',
     fact: 'El ciclo Saros, que posiblemente permitió a Tales su predicción, fue documentado por los astrónomos babilónicos en tablillas cuneiformes que se conservan en el Museo Británico. La serie de tablillas conocida como "Canon de Eclipses" (catalogada como BM 32234 y BM 34684) registra observaciones de eclipses lunares y solares que se remontan al siglo VIII a.C. Un Saros completo dura exactamente 6.585,32 días (18 años, 11 días y 8 horas), lo que refleja la resonancia entre tres ciclos orbitales de la Luna: el mes sinódico, el mes draconítico y el mes anomalístico.',
   },
   {
@@ -198,6 +204,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Según Diógenes Laercio, cuando Tales midió la altura de la Gran Pirámide de Guiza usando sombras, el faraón Amasis II (570–526 a.C.) quedó tan sorprendido que invitó a Tales a su corte. La Gran Pirámide, construida alrededor del 2560 a.C. para el faraón Keops, mide 146,6 metros de altura original (138,5 metros hoy, por la erosión). Cuando Tales realizó su medición, la pirámide ya tenía más de 2.000 años de antigüedad, y los propios egipcios habían perdido el registro exacto de sus dimensiones originales.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Teorema de Tales sobre proporcionalidad (que si rectas paralelas cortan dos secantes, los segmentos determinados sobre una son proporcionales a los correspondientes de la otra) se distingue del teorema del ángulo inscrito, aunque ambos llevan su nombre. El teorema de proporcionalidad es la base matemática de la trigonometría, la cartografía y la topografía modernas. Los ingenieros civiles lo utilizan en la actualidad para calcular distancias inaccesibles, y los programadores de gráficos por computadora lo aplican en algoritmos de renderizado 3D y transformaciones de perspectiva.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m1/banner_geometria-matematicas.webp',
+    bannerCaption: 'Geometría y matemáticas: Tales midió la altura de las pirámides con sombras y triángulos similares',
     fact: 'La medición de la pirámide por Tales se basaba en un principio que hoy llamamos "semejanza de triángulos", que establece que dos triángulos con los mismos ángulos tienen lados proporcionales sin importar su tamaño. Este principio fue formalizado por Euclides en la Proposición 2 del Libro VI de sus Elementos (c. 300 a.C.), pero la intuición geométrica de Tales lo precedió en unos 250 años. El mismo principio permite hoy a los astrónomos medir distancias a estrellas mediante el método de paralaje, donde la "vara" es la órbita de la Tierra y la "sombra" es el desplazamiento angular aparente de la estrella contra el fondo de estrellas más lejanas.',
   },
   {
@@ -217,6 +225,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El concepto de ápeiron de Anaximandro tiene paralelos sorprendentes con conceptos de la física moderna. El campo cuántico de vacío, del cual emergen y al cual retornan partículas subatómicas, comparte características con el ápeiron: es ilimitado, eterno en el marco de la física, y genera pares de partículas con propiedades opuestas (materia y antimateria) que se aniquilan mutuamente. El físico Werner Heisenberg señaló esta similitud en su libro Física y Filosofía (1958), describiendo la intuición de Anaximandro como "una anticipación notable del pensamiento científico moderno".' },
       { label: 'Dato Científico', icon: 'atom', text: 'La idea de Anaximandro de que la Tierra flota sin soporte en el espacio, mantenida en posición por simetría, fue un salto conceptual que anticipó el principio de inercia formulado por Newton más de dos mil años después. La primera ley de Newton establece que un cuerpo permanece en reposo o en movimiento uniforme a menos que una fuerza actúe sobre él. La Tierra en la cosmología de Anaximandro no caía porque ninguna dirección era preferente, lo que es funcionalmente equivalente a decir que no había fuerza neta que la desplazara en ninguna dirección particular.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m1/banner_anaximandro-discipulo.webp',
+    bannerCaption: 'Anaximandro: trazó el primer mapa del mundo y propuso que la Tierra flota en el espacio',
     fact: 'El fragmento sobreviviente de Anaximandro — "De donde las cosas tienen su origen, allí también se encaminan hacia su destrucción, según la necesidad" — fue transmitido por Simplicio de Cilicia en su Comentario a la Física de Aristóteles (siglo VI d.C.), quien a su vez lo citaba de Teofrasto, discípulo directo de Aristóteles. Esta cadena de transmisión abarca más de mil años. El filósofo Martin Heidegger dedicó un ensayo completo a interpretar este único fragmento en 1946, y el físico Carlo Rovelli lo analizó en su libro Anaximandro y el nacimiento de la ciencia (2023), argumentando que Anaximandro, no Tales, merece el título de primer científico de la historia.',
   },
   {
@@ -236,6 +246,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Anaxímenes identificó el aire con el alma (psyché) y con el principio vital del cosmos: "Así como nuestra alma, siendo aire, nos mantiene unidos, así el soplo y el aire circundan todo el cosmos". Esta analogía entre el microcosmos (el ser humano) y el macrocosmos (el universo) fue extremadamente influyente en la filosofía griega posterior y se mantuvo durante toda la Edad Media. Los estoicos, filósofos que vivieron siglos después, adoptaron una idea similar con su concepto de pneuma, un soplo vital que permeaba todo el universo y le daba coherencia y vida.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El concepto de cambios de estado mediante condensación y rarefacción que propuso Anaxímenes tiene un paralelo directo en la termodinámica moderna. La transición de fase del agua (hielo → agua → vapor) se produce por cambios en la energía cinética de las moléculas: a mayor temperatura, las moléculas vibran más rápido y la sustancia se enrarece (se vuelve menos densa). La densidad del agua líquida es 1.000 kg/m³, la del vapor a 100°C es solo 0,598 kg/m³ (unas 1.673 veces menor), y la del hielo es 917 kg/m³. Anaxímenes estaba en lo correcto al conectar la densidad con la identidad de la sustancia.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m1/banner_anaximenes-tercer-milesio.webp',
+    bannerCaption: 'Anaxímenes: propuso el aire como sustancia primordial que todo lo crea por condensación y rarefacción',
     fact: 'La Escuela de Mileto terminó abruptamente en el año 494 a.C., cuando los persas del rey Darío I destruyeron la ciudad como represalia por la participación de Mileto en la Rebelión Jónica (499–493 a.C.). Heródoto describe cómo los persas mataron a la mayoría de los hombres, esclavizaron a las mujeres y los niños, y deportaron a los supervivientes a la desembocadura del río Tigris. Los atenienses, aliados de Mileto, quedaron tan conmovidos por la noticia que cuando el dramaturgo Frínico presentó una obra teatral titulada La Toma de Mileto, el público lloró en el teatro, y las autoridades multaron al autor con 1.000 dracmas por haber recordado "sus propias desgracias" y prohibieron que la obra se representara de nuevo.',
   },
   {
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La palabra "filosofía" (philosophía) proviene del griego philos (amante) y sophía (sabiduría), y su invención se atribuye tradicionalmente a Pitágoras de Samos (c. 570–495 a.C.), quien según Diógenes Laercio se negó a ser llamado "sabio" (sophos) y prefirió ser llamado "amante de la sabiduría" (philósophos). Sin embargo, el contenido de la filosofía como búsqueda racional de explicaciones naturales fue inaugurado por Tales de Mileto al menos una generación antes. La escuela filosófica que Tales fundó en Mileto es la más antigua del mundo occidental documentada por fuentes históricas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La hipótesis atómica de Demócrito (c. 460–370 a.C.), heredera directa de la tradición milesia, fue confirmada experimentalmente en 1905 cuando Albert Einstein explicó el movimiento browniano (el movimiento errático de partículas de polen en el agua, observado por Robert Brown en 1827) como el resultado de colisiones con moléculas invisibles. Jean Perrin verificó experimentalmente las predicciones de Einstein en 1908, ganando el Premio Nobel de Física en 1926. Desde Tales hasta Perrin, la pregunta "¿de qué está hecho todo?" tardó unos 2.500 años en ser respondida con evidencia experimental directa.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m1/banner_nacimiento-pensamiento-racional.webp',
+    bannerCaption: 'El nacimiento del pensamiento racional: de los mitos a los dioses a las causas naturales',
     fact: 'Aristóteles, en el Libro I de su Metafísica (983b6), presenta a Tales como el fundador de la investigación sobre los principios naturales (arché) y lo sitúa como el inicio de una tradición que culmina en su propia filosofía. La obra de Aristóteles se convirtió en el texto filosófico y científico más influyente de la historia occidental, siendo la base del currículo universitario europeo desde el siglo XIII hasta el XVII. Cuando los científicos de la Revolución Científica (Galileo, Newton, Kepler) cuestionaron a Aristóteles, estaban ejerciendo exactamente la misma tradición crítica que Anaximandro ejerció al cuestionar a Tales: la disposición a examinar las ideas recibidas a la luz de nuevas evidencias y argumentos.',
   },
 ];
@@ -697,6 +711,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

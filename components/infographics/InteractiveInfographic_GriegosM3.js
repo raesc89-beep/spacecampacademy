@@ -164,6 +164,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Partenón, construido entre 447 y 432 a.C., utilizó aproximadamente 13,400 bloques de mármol pentélico, extraído de canteras a 16 kilómetros de distancia. Sus columnas tienen una ligera curvatura llamada éntasis, diseñada para corregir ilusiones ópticas: si fueran perfectamente rectas, parecerían cóncavas al ojo humano. El arquitecto Ictino calculó estas correcciones con precisión milimétrica hace más de 2,400 años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La democracia ateniense utilizaba un dispositivo mecánico llamado kleroterion para asignar jurados por sorteo. Era una placa de piedra con ranuras donde se insertaban placas de identificación de los ciudadanos, y bolas blancas y negras caían por un tubo lateral para determinar quién servía ese día. Arqueólogos han encontrado fragmentos de estos dispositivos en el ágora de Atenas, confirmando las descripciones de Aristóteles en su obra "Constitución de los Atenienses".' },
     ],
+    bannerImage: '/assets/griegos/infographic_m3/banner_atenas-siglo-v.webp',
+    bannerCaption: 'Atenas en el siglo V a.C.: la ciudad dorada donde Sócrates caminó y enseñó en el ágora',
     fact: 'El teatro de Dioniso en Atenas, construido en el siglo V a.C., tenía capacidad para 17,000 espectadores. Aquí se estrenaron las obras de Esquilo, Sófocles y Eurípides. Las representaciones duraban todo el día y los ciudadanos recibían un subsidio estatal llamado theorikon para poder asistir sin perder su jornal. Sócrates aparece como personaje en la comedia "Las Nubes" de Aristófanes, estrenada en el año 423 a.C., donde se le retrata de forma satírica como un sofista que enseña a engañar con palabras.',
   },
   {
@@ -183,6 +185,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El equipamiento de un hoplita griego pesaba entre 25 y 30 kilogramos, incluyendo un escudo circular de bronce (aspis) de aproximadamente 9 kg, una coraza de bronce, grebas para las piernas, un casco corintio, una lanza de 2.5 metros y una espada corta (xiphos). Sócrates combatió con este equipo en tres campañas entre 432 y 422 a.C., lo que demuestra que poseía una fortaleza física considerable a pesar de su vida de filósofo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El oráculo de Delfos funcionaba en el templo de Apolo, construido sobre una falla geológica. Estudios geológicos publicados en 2001 por el equipo de Jelle de Boer (Universidad Wesleyana) y John Hale (Universidad de Louisville) demostraron que gases como el etileno emergían de las grietas en la roca caliza bajo el templo. La Pitia se sentaba sobre un trípode encima de estas emanaciones, y la inhalación de etileno puede producir estados de trance y euforia, lo que explicaría científicamente el mecanismo detrás de las profecías.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m3/banner_socrates-el-hombre.webp',
+    bannerCaption: 'Sócrates el hombre: filósofo descalzo que interrogaba a todos en el ágora de Atenas',
     fact: 'Sócrates no escribió ningún texto. Todo lo que sabemos sobre él proviene de cuatro fuentes principales: los diálogos de Platón, las obras de Jenofonte, las comedias de Aristófanes y las menciones de Aristóteles. Este hecho crea lo que los filósofos llaman el "problema socrático": la dificultad de separar las ideas del Sócrates histórico de las ideas que Platón puso en su boca como personaje literario. El filósofo Gregory Vlastos argumentó en 1991 que los diálogos tempranos de Platón (Apología, Critón, Eutifrón) son más fieles al Sócrates real que los tardíos.',
   },
   {
@@ -202,6 +206,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Sócrates comparaba su labor con la de un tábano (múops en griego) que picaba a un caballo grande y perezoso para mantenerlo despierto. En la Apología, dice textualmente: "Yo soy el tábano que el dios ha puesto sobre la ciudad, que es como un caballo grande y noble pero algo lento por su tamaño y que necesita ser estimulado." Esta metáfora le valió el apodo de "el Tábano de Atenas", y resume su misión: incomodar a los ciudadanos para que no cayeran en la complacencia intelectual.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La neurociencia moderna ha estudiado por qué el método socrático funciona mejor que la instrucción directa. Investigaciones publicadas en la revista Science (2011) por Louis Deslauriers de la Universidad de British Columbia demostraron que el aprendizaje activo basado en preguntas incrementa la retención de información en un 50% comparado con las clases magistrales. Las resonancias magnéticas funcionales muestran que cuando una persona formula una respuesta propia, se activan simultáneamente el hipocampo (memoria) y la corteza prefrontal (razonamiento), creando conexiones neuronales más duraderas.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m3/banner_metodo-socratico.webp',
+    bannerCaption: 'El método socrático: preguntar hasta que el interlocutor descubre sus propias contradicciones',
     fact: 'El "dilema de Eutifrón" planteado por Sócrates hace 2,400 años sigue sin resolverse y aparece en cursos de filosofía moral en universidades de todo el mundo. La pregunta "¿Es algo bueno porque Dios lo ordena, o Dios lo ordena porque es bueno?" fue reformulada por Leibniz en el siglo XVII y por filósofos contemporáneos como Robert Adams y Philip Quinn. Si lo bueno depende de la voluntad divina, entonces Dios podría hacer que la crueldad fuera buena; si Dios obedece un estándar independiente, entonces existe algo superior a la divinidad.',
   },
   {
@@ -221,6 +227,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La inscripción "Conócete a ti mismo" (Gnôthi seautón) estaba grabada en el pronaos del templo de Apolo en Delfos, junto con otra máxima: "Nada en exceso" (Medèn ágan). Aunque estas frases no son de Sócrates (se atribuyeron a varios de los Siete Sabios de Grecia), Sócrates las adoptó como principios centrales de su filosofía. Pausanias, viajero griego del siglo II d.C., confirmó haber visto las inscripciones durante su visita al templo, proporcionando evidencia arqueológica de su existencia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un metaanálisis publicado en el Journal of Consulting and Clinical Psychology (2012) evaluó 269 estudios sobre la eficacia de la terapia cognitivo-conductual, que está basada en el cuestionamiento socrático de creencias irracionales. Los resultados mostraron que la TCC es más efectiva que los medicamentos para trastornos de ansiedad y tan efectiva como los antidepresivos para la depresión moderada, con menores tasas de recaída. El método socrático de examinar las propias creencias tiene, literalmente, aplicaciones médicas verificables 2,400 años después de su invención.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m3/banner_vida-examinada.webp',
+    bannerCaption: "La vida examinada: ‘Una vida sin examen no merece ser vivida’ — la ética de Sócrates",
     fact: 'La frase "una vida sin examen no merece ser vivida" es la declaración filosófica más citada en la historia académica occidental, según un análisis bibliométrico de la Universidad de Indiana (2018) que revisó más de 4 millones de artículos académicos. Aparece en textos de filosofía, psicología, medicina, educación, derecho, ciencias políticas e ingeniería. Sócrates la pronunció como justificación de su negativa a abandonar Atenas o a dejar de filosofar: prefería la muerte antes que una vida sin reflexión crítica.',
   },
   {
@@ -240,6 +248,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La ejecución de Sócrates se retrasó un mes porque el barco sagrado que Atenas enviaba cada año a la isla de Delos en honor a Teseo acababa de zarpar. La ley ateniense prohibía ejecutar a ningún condenado mientras el barco estuviera en viaje, para mantener la pureza religiosa de la ciudad. Este retraso dio tiempo a los amigos de Sócrates para organizar un plan de escape, que Sócrates rechazó por razones filosóficas expuestas en el diálogo "Critón" de Platón.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La pena de 30 minas de plata ofrecida por Sócrates equivalía a aproximadamente 12.9 kilogramos de plata, o el salario de un trabajador cualificado durante unos 8 años. Una mina ática pesaba 431 gramos. Los amigos de Sócrates, incluyendo a Platón, Critón, Critóbulo y Apolodoro, se ofrecieron como garantes del pago. Que Sócrates ofreciera esta suma y no una mayor sugiere que consideraba injusta cualquier pena, o que deliberadamente evitó una propuesta que el jurado pudiera aceptar.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m3/banner_el-juicio.webp',
+    bannerCaption: 'El juicio de Sócrates: 501 ciudadanos atenienses votaron su condena a muerte en 399 a.C.',
     fact: 'I.F. Stone, periodista investigativo estadounidense, publicó en 1988 "El juicio de Sócrates" tras aprender griego antiguo a los 70 años para leer las fuentes primarias. Stone argumentó que Sócrates fue condenado no por sus ideas filosóficas sino por sus conexiones políticas: dos de sus alumnos más cercanos, Alcibíades y Critias, habían causado daños graves a Atenas. Alcibíades desertó a Esparta durante la guerra, y Critias lideró la tiranía de los Treinta que ejecutó a aproximadamente 1,500 ciudadanos entre 404 y 403 a.C.',
   },
   {
@@ -259,6 +269,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El cuadro "La muerte de Sócrates" de Jacques-Louis David (1787) contiene deliberadas inexactitudes históricas. David pintó a Sócrates joven y musculoso, cuando tenía 70 años; incluyó a Platón sentado al pie de la cama, aunque Platón mismo escribió en el Fedón que estaba enfermo y no asistió; y mostró 12 personas presentes cuando el Fedón menciona 15 nombres. David eligió el dramatismo sobre la precisión para crear una obra sobre el sacrificio por los principios, justo dos años antes de la Revolución Francesa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un estudio toxicológico publicado por Enid Bloch en la revista Trends in Pharmacological Sciences (2001) analizó la descripción de Platón de los síntomas de Sócrates y concluyó que la parálisis ascendente descrita es consistente con el envenenamiento por coniína, el alcaloide principal de la cicuta (Conium maculatum). La dosis letal de coniína en humanos se estima entre 150 y 300 miligramos. La muerte ocurre por parálisis del diafragma, generalmente entre 2 y 3 horas después de la ingestión, lo que coincide con el relato de Platón.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m3/banner_muerte-de-socrates.webp',
+    bannerCaption: 'La muerte de Sócrates: bebió la cicuta con serenidad rodeado de sus discípulos en llanto',
     fact: 'La celda donde Sócrates fue encarcelado ha sido identificada tentativamente por arqueólogos en la ladera suroccidental de la colina de las Musas (Filopappos), a unos 900 metros al suroeste de la Acrópolis de Atenas. Las excavaciones revelaron una estructura tallada en la roca con tres cámaras separadas por paredes, consistente con descripciones antiguas de la prisión del Estado ateniense (desmoterion). Sin embargo, la identificación no es unánime entre los arqueólogos, y algunos proponen ubicaciones alternativas cerca del ágora.',
   },
   {
@@ -278,6 +290,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Academia de Platón, inspirada directamente por Sócrates, funcionó como centro educativo durante unos 900 años (ca. 387 a.C. - 529 d.C.), lo que la convierte en la institución educativa de mayor duración conocida en la historia occidental. El sitio arqueológico de la Academia fue excavado por Panagiotis Aristofrón en 1929 y se encuentra en el barrio de Akadimia Platonos en Atenas, a unos 2.5 km al noroeste de la Acrópolis. Hoy es un parque público donde se pueden ver los restos del gimnasio original.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El método socrático de cuestionamiento tiene aplicaciones verificables en inteligencia artificial. El sistema de tutoría inteligente AutoTutor, desarrollado por Arthur Graesser en la Universidad de Memphis, utiliza preguntas socráticas para guiar el aprendizaje. Estudios publicados en Cognitive Science (2004) demostraron que los estudiantes que interactuaron con AutoTutor obtuvieron resultados equivalentes a 0.8 desviaciones estándar por encima de los que estudiaron solos, lo que equivale a pasar del percentil 50 al percentil 79 en rendimiento académico.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m3/banner_legado-socratico.webp',
+    bannerCaption: 'El legado socrático: Sócrates → Platón → Aristóteles → la filosofía occidental completa',
     fact: 'Según un estudio del filósofo Bryan Magee publicado en "The Story of Philosophy" (1998), Sócrates es una de las cinco personas más influyentes en la historia del pensamiento occidental, junto con Platón, Aristóteles, Descartes y Kant. Su influencia es única porque no escribió ni una sola palabra: toda su filosofía se transmitió oralmente y fue preservada por sus discípulos. La UNESCO declaró la filosofía como patrimonio cultural inmaterial, y el método socrático se enseña en más de 3,000 universidades en todo el mundo como herramienta pedagógica fundamental.',
   },
 ];
@@ -721,6 +735,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

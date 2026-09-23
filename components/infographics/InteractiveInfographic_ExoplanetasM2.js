@@ -109,6 +109,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El exoplaneta WASP-76b es un Júpiter caliente extremo donde la temperatura diurna supera los dos mil cuatrocientos grados Celsius. A esa temperatura extrema, las rocas y los metales se evaporan por completo en la cara iluminada y soplan hacia la cara nocturna más fría, donde se condensan y caen en forma de lluvia de hierro líquido.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El primer exoplaneta descubierto alrededor de una estrella similar al Sol, 51 Pegasi b, pertenece a la categoría de Júpiteres Calientes. Posee una masa mínima equivalente a la mitad de Júpiter y orbita a tan solo 7.8 millones de kilómetros de su estrella, completando un año en solo 4.2 días terrestres.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_jupiteres-calientes.webp',
+    bannerCaption: 'Júpiteres calientes: gigantes gaseosos orbitando a días de su estrella con temperaturas de 1000°C',
     fact: 'El exoplaneta KELT-9b es el Júpiter caliente más ardiente jamás descubierto, con una temperatura diurna de 4,300 grados Celsius. Es más caliente que la mayoría de las estrellas enanas rojas del universo, lo que provoca que las moléculas de su atmósfera se descompongan continuamente en sus átomos individuales.'
   },
   {
@@ -128,6 +130,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En nuestro propio Sistema Solar existió un evento de migración planetaria conocido como la Gran Tacha o el Modelo de Niza. Júpiter migró hacia el interior del sistema hasta llegar a la posición actual de Marte, pero la atracción gravitacional de Saturno lo frenó y lo volvió a tirar hacia afuera, salvando a la Tierra de ser tragada por el Sol.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La interacción de marea entre el planeta migratorio y la estrella hospedera finalmente detiene la migración cuando el planeta llega muy cerca de la estrella. Sin embargo, si la migración no se frena a tiempo, el planeta cruzará el límite de Roche y será despedazado por las fuerzas de marea estelares.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_migracion-planetaria.webp',
+    bannerCaption: 'Migración planetaria: los gigantes gaseosos se forman lejos y migran hacia su estrella destruyendo planetas',
     fact: 'La teoría de la migración planetaria Tipo II predice que por cada Júpiter caliente que logra frenar exitosamente cerca de su estrella, varios planetas más pequeños fueron empujados e incinerados dentro de la estrella durante la fase caótica de formación del disco.'
   },
   {
@@ -147,6 +151,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El exoplaneta 55 Cancri e es una Supertierra rocosa extrema con el doble del tamaño de la Tierra y ocho veces su masa. Orbita tan pegado a su estrella que su superficie está compuesta por un océano de lava derretida a más de dos mil grados Celsius, e investigaciones sugieren que su manto interno podría ser rico en diamante puro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La brecha de radio de Fulton demuestra la evaporación fotoquímica. Los planetas que nacieron con masa intermedia cerca de su estrella perdieron por completo su capa de gas debido al viento estelar violento, quedando reducidos a núcleos rocosos desnudos (Supertierras), mientras que los más alejados conservaron su gas (Subneptunos).' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_supertierras.webp',
+    bannerCaption: 'Supertierras y Subneptunos: los planetas más abundantes de la galaxia, con masas entre 2 y 10 Tierras',
     fact: 'El exoplaneta GJ 1214 b es el Subneptuno prototípico más estudiado por los científicos. Con 2.7 radios terrestres, las observaciones espectroscópicas con el James Webb sugieren que posee una atmósfera espesa rica en agua en forma de vapor súper denso o brumas compuestas de aerosol orgánico.'
   },
   {
@@ -665,6 +671,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 <ExpandableSection item={exp} color={node.color} />
               </div>
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

@@ -155,6 +155,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Carl Sagan recibió más de 10,000 cartas de personas que afirmaban haber sido abducidas por extraterrestres, haber visto ovnis o poseer poderes psíquicos. En lugar de ignorarlas o ridiculizar a sus autores, Sagan respondía muchas de ellas con respeto, explicando los principios del pensamiento crítico y ofreciendo explicaciones alternativas. Esta actitud definió su filosofía: ser escéptico no significa ser arrogante, sino ser curioso y cuidadoso con la evidencia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Navaja de Occam no es un "invento" moderno. Fue formulada por Guillermo de Occam alrededor de 1320 con la frase latina "Entia non sunt multiplicanda praeter necessitatem" (las entidades no deben multiplicarse sin necesidad). En la práctica científica actual, este principio se aplica constantemente: los modelos estadísticos penalizan la complejidad innecesaria mediante criterios como el AIC (Criterio de Información de Akaike, 1973) y el BIC (Criterio Bayesiano de Schwarz, 1978).' },
     ],
+    bannerImage: '/assets/sagan/infographic_m5/banner_kit-deteccion.webp',
+    bannerCaption: 'El Kit de Detección de Tonterías: las herramientas de Sagan para distinguir ciencia de pseudociencia',
     fact: 'En 1996, el físico Alan Sokal publicó un artículo intencionalmente absurdo titulado "Transgrediendo los límites: hacia una hermenéutica transformativa de la gravedad cuántica" en la revista Social Text. El artículo era una mezcla de jerga sin sentido diseñada para probar que la revista publicaría cualquier cosa que sonara sofisticada. Fue aceptado y publicado. Sokal reveló el engaño inmediatamente después, demostrando la necesidad de herramientas como el kit de Sagan para evaluar afirmaciones.',
   },
   {
@@ -174,6 +176,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Ignaz Semmelweis, un médico húngaro, descubrió en 1847 que lavarse las manos con solución de cloro antes de atender partos reducía la mortalidad materna de un 18% a menos del 2%. A pesar de sus datos sólidos, la comunidad médica lo rechazó porque la idea de que los propios doctores transmitían enfermedades resultaba ofensiva para el establishment. Semmelweis murió en un asilo en 1865 sin ver su descubrimiento aceptado. Hoy es considerado el "salvador de las madres".' },
       { label: 'Dato Científico', icon: 'atom', text: 'El efecto placebo es un fenómeno medible por el cual pacientes mejoran simplemente al creer que están recibiendo tratamiento, incluso cuando reciben una pastilla de azúcar. Estudios publicados en The Lancet (2010) demuestran que el placebo puede reducir el dolor percibido hasta en un 30%. El cerebro libera endorfinas y dopamina reales en respuesta a la expectativa de mejoría. Por esto, los ensayos clínicos necesitan grupos de control con placebo para separar el efecto real del fármaco del efecto de la creencia.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m5/banner_metodo-cientifico.webp',
+    bannerCaption: 'El método científico: el proceso autocorrectivo que distingue a la ciencia de otras formas de conocimiento',
     fact: 'Barry Marshall, médico australiano, estaba tan convencido de que la bacteria Helicobacter pylori causaba úlceras estomacales (contra la teoría dominante del estrés) que en 1984 bebió un cultivo vivo de la bacteria para demostrarlo. Desarrolló gastritis severa en días, la confirmó por biopsia y se curó con antibióticos. Su autoexperimento, aunque éticamente cuestionable, cambió la medicina. Recibió el Premio Nobel de Medicina en 2005 junto con Robin Warren por este descubrimiento.',
   },
   {
@@ -193,6 +197,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El libro "Cómo Mentir con Estadísticas" de Darrell Huff, publicado en 1954, es uno de los textos más vendidos sobre pensamiento crítico aplicado a los números. Con apenas 142 páginas, explica cómo gráficos engañosos, promedios manipulados y muestras sesgadas se usan para distorsionar la realidad. Bill Gates lo ha citado como uno de sus libros favoritos. A pesar de tener 70 años, sus lecciones son más relevantes hoy que cuando se escribió, en una era donde nos bombardean con datos y gráficos a diario.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El sesgo de confirmación, documentado extensamente por el psicólogo Peter Wason en 1960, es la tendencia humana a buscar, interpretar y recordar información de manera que confirme nuestras creencias previas. En el experimento clásico de Wason, los participantes debían descubrir una regla numérica y mostraron consistentemente preferencia por probar ejemplos que confirmaban su hipótesis, ignorando los que la refutarían. Estudios de neuroimagen realizados en la Universidad de Emory en 2006 demuestran que confirmar nuestras creencias activa los centros de recompensa del cerebro.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m5/banner_falacias-logicas.webp',
+    bannerCaption: 'Falacias lógicas comunes: los errores de razonamiento que Sagan nos enseñó a identificar',
     fact: 'En un estudio publicado en 2012 por los investigadores Craig Anderson y Brad Bushman en la revista Psychological Science, se demostró que las personas que reciben entrenamiento formal en reconocimiento de falacias lógicas mejoran su capacidad de evaluar argumentos en un 42% comparado con el grupo de control. El estudio midió la capacidad de 340 participantes para identificar razonamientos falaces en textos sobre temas controvertidos como el cambio climático, la pena de muerte y la política económica.',
   },
   {
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'James Randi, mago profesional y escéptico, ofreció un premio de un millón de dólares a cualquier persona que demostrara poderes sobrenaturales o paranormales bajo condiciones de prueba controladas. El desafío estuvo vigente desde 1964 hasta 2015 — más de 50 años. Se presentaron más de 1,000 candidatos, incluyendo videntes, telépatas, curanderos y radiestesistas. Ninguno superó las pruebas preliminares. Randi colaboró estrechamente con Carl Sagan en la promoción del escepticismo científico.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El efecto Barnum, descrito por el psicólogo Bertram Forer en 1948, explica por qué la gente cree en los horóscopos. Forer dio a sus estudiantes un supuesto "análisis personalizado" de su personalidad, pero en realidad todos recibieron el mismo texto genérico. Los estudiantes calificaron la precisión del análisis con 4.26 sobre 5. El texto contenía frases vagas como "tienes una gran necesidad de que otros te acepten" y "a veces te preguntas si tomaste la decisión correcta". Estas descripciones aplican a casi cualquier persona.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m5/banner_pseudociencia-ciencia.webp',
+    bannerCaption: 'Pseudociencia vs ciencia: cómo distinguir el conocimiento real de la ilusión de conocimiento',
     fact: 'En 2016, la Administración Federal de Comercio de Estados Unidos (FTC) ordenó a la empresa Homeopathy Inc. incluir en el empaque de sus productos que "no existe evidencia científica confiable de que el producto funcione" y que las afirmaciones del producto "se basan únicamente en teorías homeopáticas del siglo XVIII que no son aceptadas por la mayoría de los expertos médicos modernos". Esta regulación afectó a una industria que solo en Estados Unidos genera ingresos anuales estimados en 3,000 millones de dólares.',
   },
   {
@@ -231,6 +239,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 1988, el investigador francés Jacques Benveniste publicó un artículo en Nature afirmando que el agua podía "recordar" sustancias que habían estado disueltas en ella, aunque ya no quedara ninguna molécula de la sustancia. La revista publicó el artículo con la condición de que un equipo independiente, que incluyó al mago James Randi, supervisara la replicación. Cuando los experimentos se repitieron bajo condiciones controladas doble ciego, el efecto desapareció. Es uno de los casos más famosos donde la revisión por pares corrigió un error.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La falsabilidad no es solo un principio filosófico: tiene aplicaciones prácticas en la ciencia contemporánea. La teoría de cuerdas, una de las candidatas para unificar la física cuántica con la gravedad, ha sido criticada por algunos físicos (como Lee Smolin en su libro de 2006 "The Trouble with Physics") precisamente porque sus predicciones requieren energías tan altas que ningún acelerador de partículas actual puede verificarlas. Este debate muestra que los científicos toman la falsabilidad en serio como criterio de calidad.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m5/banner_dragon-garaje.webp',
+    bannerCaption: 'El dragón en mi garaje: la parábola de Sagan sobre afirmaciones infalsificables',
     fact: 'La analogía del dragón tiene raíces en un problema lógico estudiado desde la Edad Media. El filósofo medieval Guillermo de Occam argumentaba que no se deben postular entidades innecesarias para explicar fenómenos. Si puedes explicar las sombras en tu garaje sin necesidad de un dragón invisible, la explicación más simple (no hay dragón) es preferible. En la ciencia moderna, este principio se cuantifica: el "Factor de Bayes", introducido por Harold Jeffreys en 1935, compara matemáticamente la probabilidad de dos hipótesis alternativas dada la evidencia disponible.',
   },
   {
@@ -250,6 +260,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 1938, la transmisión radiofónica de Orson Welles de "La Guerra de los Mundos" provocó pánico en miles de oyentes que creyeron que los marcianos estaban invadiendo Nueva Jersey. Aunque el alcance del pánico ha sido debatido por historiadores, el evento demostró la vulnerabilidad humana ante información presentada con formato de autoridad. Carl Sagan mencionaba este incidente como ejemplo de lo que puede ocurrir cuando una sociedad no está preparada para evaluar críticamente lo que escucha y lee.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El sesgo de disponibilidad, identificado por los psicólogos Daniel Kahneman y Amos Tversky en 1973, hace que la gente estime la probabilidad de un evento basándose en la facilidad con que puede recordar ejemplos similares. Esto explica por qué la gente teme más a los ataques de tiburones que a las caídas por escaleras, aunque estas últimas causan 40 veces más muertes al año. En la era digital, este sesgo se amplifica porque las noticias virales priorizan lo impactante sobre lo estadísticamente relevante.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m5/banner_pensamiento-digital.webp',
+    bannerCaption: 'Pensamiento crítico en la era digital: las herramientas de Sagan contra la desinformación online',
     fact: 'Según el Informe Global de Desinformación de la Universidad de Oxford publicado en 2021, campañas organizadas de desinformación operan en al menos 81 países del mundo, un aumento desde los 28 países identificados en 2017. El informe documentó que gobiernos, partidos políticos y empresas privadas emplean equipos dedicados a la creación y difusión de contenido falso o engañoso en redes sociales. En promedio, una persona encuentra 1.8 piezas de desinformación al día en sus redes sociales, según datos de la Fundación Reuters de 2022.',
   },
   {
@@ -269,6 +281,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El "Pale Blue Dot" (Punto Azul Pálido), una fotografía de la Tierra tomada por la sonda Voyager 1 el 14 de febrero de 1990 desde una distancia de 6,000 millones de kilómetros, fue idea de Carl Sagan. En la imagen, la Tierra aparece como un punto de menos de un píxel de tamaño. Sagan usó esta imagen para promover la humildad intelectual: "Mira de nuevo ese punto. Eso es aquí. Eso es casa. Eso somos nosotros." La foto fue tomada cuando la Voyager ya había completado su misión planetaria principal.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un estudio de 2019 publicado en el Journal of Research in Personality por Stephanie Anglin demostró que las personas con mayor capacidad de pensamiento analítico (medida por el Cognitive Reflection Test de Shane Frederick, 2005) son significativamente menos susceptibles a las noticias falsas, a las teorías conspirativas y a las ilusiones cognitivas. El estudio encontró que esta relación se mantenía incluso después de controlar por nivel educativo, edad e ideología política, lo que sugiere que el pensamiento crítico es una habilidad cognitiva independiente y entrenable.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m5/banner_escepticismo-virtud.webp',
+    bannerCaption: 'El escepticismo como virtud: la mente abierta con rigor crítico, el equilibrio perfecto de Sagan',
     fact: 'Carl Sagan murió el 20 de diciembre de 1996 a los 62 años debido a complicaciones de mielodisplasia, un trastorno de la médula ósea. En sus últimos años, a pesar de su enfermedad, completó "El Mundo y sus Demonios" y "Miles de Millones", publicado póstumamente. En este último libro escribió: "Prefiero la dura verdad a la tranquilizadora fantasía. Y en lo que se refiere al final de toda vida, la dura verdad es esta: soy mortal." Incluso ante la muerte, Sagan se negó a aceptar consuelos sin evidencia y mantuvo la coherencia intelectual que predicó durante toda su vida.',
   },
 ];
@@ -708,6 +722,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

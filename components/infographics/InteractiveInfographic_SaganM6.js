@@ -157,6 +157,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La cápsula del tiempo enterrada en la Feria Mundial de 1939 que tanto cautivó al joven Sagan fue diseñada por la Westinghouse Electric Corporation. Contenía 75 objetos cotidianos, desde un sombrero de mujer hasta semillas de trigo, además de microfilms con libros y noticias. Fue sellada con instrucciones para ser abierta en el año 6939, exactamente 5,000 años después. Esta idea de comunicarse con el futuro dejó una huella profunda en Sagan, quien décadas más tarde diseñaría mensajes para civilizaciones extraterrestres.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Biblioteca Pública de Nueva York, donde el joven Carl descubrió su pasión por las estrellas, fue fundada en 1895 mediante la fusión de las bibliotecas Astor y Lenox con el fideicomiso Tilden. Para la década de 1940, su sistema de sucursales contaba con más de 80 ubicaciones en Manhattan, el Bronx y Staten Island, proporcionando acceso gratuito al conocimiento a millones de neoyorquinos de todas las clases sociales. Este acceso democrático al saber influyó directamente en la filosofía de Sagan sobre la divulgación científica universal.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m6/banner_vida-dedicada-estrellas.webp',
+    bannerCaption: 'Una vida dedicada a las estrellas: el viaje de Carl Sagan del Brooklyn humilde al cosmos',
     fact: 'La Feria Mundial de Nueva York de 1939 recibió a más de 44 millones de visitantes durante sus dos temporadas (1939-1940). Su lema era "El Mundo del Mañana" y presentó innovaciones como la televisión (RCA exhibió las primeras transmisiones públicas), el aire acondicionado doméstico y la autopista de General Motors "Futurama", que mostraba una visión de Estados Unidos en 1960 con autopistas de alta velocidad. Carl Sagan tenía exactamente 4 años y 3 meses cuando visitó la feria con sus padres el verano de 1939, y describió esa experiencia como el origen de su vocación científica.',
   },
   {
@@ -176,6 +178,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La fotografía "Pale Blue Dot" tomada por la Voyager 1 el 14 de febrero de 1990 muestra la Tierra como un punto de apenas 0.12 píxeles de diámetro, suspendido en un rayo de luz solar dispersa. La imagen fue capturada desde una distancia de 6,054 millones de kilómetros. Sagan tuvo que convencer a varios directivos de la NASA para que aprobaran girar la cámara, pues temían que apuntar al Sol pudiera dañar los sensores. La imagen se convirtió en uno de los retratos más influyentes de la Tierra jamás tomados.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La temperatura superficial de Venus es de 462 °C en promedio, suficiente para fundir plomo (punto de fusión: 327 °C) y zinc (419 °C). Su atmósfera, compuesta en un 96.5% de dióxido de carbono, ejerce una presión superficial 92 veces mayor que la de la Tierra, equivalente a la presión que se experimenta a 900 metros de profundidad en los océanos terrestres. Las sondas Venera soviéticas que confirmaron las predicciones de Sagan solo sobrevivieron entre 23 minutos y 2 horas en la superficie antes de ser destruidas por las condiciones.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m6/banner_el-cientifico.webp',
+    bannerCaption: 'El científico: Sagan fue también un riguroso investigador de atmósferas planetarias y exobiología',
     fact: 'Las sondas Voyager 1 y Voyager 2, en cuyo equipo científico participó Sagan, son actualmente los objetos fabricados por humanos más distantes de la Tierra. En agosto de 2012, Voyager 1 cruzó la heliopausa y se convirtió en el primer objeto humano en alcanzar el espacio interestelar, a 18,200 millones de kilómetros del Sol. Ambas sondas llevan consigo el Disco de Oro diseñado por un comité presidido por Sagan, que contiene sonidos e imágenes seleccionados para representar la diversidad de vida y cultura en la Tierra, destinados a cualquier civilización extraterrestre que pudiera encontrarlos.',
   },
   {
@@ -195,6 +199,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La serie original de Cosmos de 1980 costó aproximadamente 3.5 millones de dólares por episodio, una cifra alta para la televisión pública de aquella época. La producción utilizó efectos especiales innovadores creados por la compañía de Robert Abel, incluyendo la icónica secuencia de la "Nave de la Imaginación". Cada episodio requirió un promedio de seis semanas de filmación en locaciones de todo el mundo, desde Egipto hasta Japón. Sagan insistió en que la serie no simplificara la ciencia, sino que la presentara con toda su complejidad de manera visual y narrativa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La consulta de Sagan con Kip Thorne para la novela Contact produjo resultados científicos reales. Thorne, junto con sus estudiantes Michael Morris y Ulvi Yurtsever, publicó en 1988 el artículo "Wormholes, Time Machines, and the Weak Energy Condition" en Physical Review Letters (Vol. 61, pp. 1446-1449). Este trabajo demostró que un agujero de gusano traversable requeriría materia con densidad de energía negativa para mantenerse abierto. Thorne recibió el Premio Nobel de Física en 2017 por la detección de ondas gravitacionales.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m6/banner_el-comunicador.webp',
+    bannerCaption: 'El comunicador: Sagan y su capacidad única de traducir la ciencia al lenguaje de todos',
     fact: 'Johnny Carson presentó "The Tonight Show" durante 30 años (1962-1992) con una audiencia promedio de 15 millones de espectadores por noche. Las 26 apariciones de Carl Sagan en el programa entre 1972 y 1989 expusieron conceptos de astronomía y ciencia planetaria a una audiencia acumulada estimada de más de 390 millones de espectadores. Carson parodiaba cariñosamente a Sagan con imitaciones que se volvieron parte de la cultura popular, pero siempre trataba al científico con respeto genuino y le permitía explicaciones extensas que no concedía a otros invitados.',
   },
   {
@@ -214,6 +220,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El artículo TTAPS de 1983 utilizó modelos computacionales unidimensionales que fueron criticados inicialmente por algunos científicos como simplificaciones excesivas. Sin embargo, estudios posteriores con modelos tridimensionales más sofisticados, publicados por Alan Robock y Owen Toon en 2007 en la revista Atmospheric Chemistry and Physics, confirmaron los hallazgos fundamentales del TTAPS. Estos modelos actualizados mostraron que incluso un conflicto nuclear regional entre India y Pakistán podría producir un enfriamiento global de 1.25 °C durante una década.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En el apogeo de la Guerra Fría, hacia 1986, el arsenal nuclear mundial alcanzó un máximo de aproximadamente 70,300 ojivas nucleares, con Estados Unidos poseyendo unas 23,300 y la Unión Soviética cerca de 45,000. La potencia combinada de estas armas equivalía a más de un millón de veces la bomba de Hiroshima (15 kilotones). Los cálculos de Sagan y el equipo TTAPS demostraron que la detonación de apenas el 1% de este arsenal sobre ciudades sería suficiente para desencadenar un invierno nuclear capaz de colapsar la agricultura global.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m6/banner_activismo-politica.webp',
+    bannerCaption: 'Activismo y política: Sagan advirtió del invierno nuclear y abogó por el desarme atómico',
     fact: 'Carl Sagan testificó ante comités del Congreso de Estados Unidos en múltiples ocasiones durante las décadas de 1970 y 1980 sobre temas que iban desde la exploración de Marte hasta el invierno nuclear y el cambio climático. Su testimonio del 10 de diciembre de 1985 ante el Subcomité de Ciencia, Tecnología y Espacio del Senado incluyó datos sobre el incremento de CO₂ atmosférico desde 280 partes por millón (nivel preindustrial) hasta 345 ppm en 1985. En 2024, esa concentración superó las 424 ppm, validando la tendencia que Sagan identificó casi cuatro décadas antes.',
   },
   {
@@ -233,6 +241,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Disco de Oro de la Voyager incluye la canción "Johnny B. Goode" de Chuck Berry, grabada en 1958. Cuando se debatió si incluirla, algunos miembros del comité argumentaron que el rock and roll era demasiado "juvenil" para representar a la humanidad ante civilizaciones extraterrestres. Sagan respondió: "Hay muchos de nosotros que creemos que el rock and roll está en sus mejores momentos". La grabación seleccionada fue la versión original de estudio de Berry, publicada por Chess Records. La canción viaja ahora a más de 17 kilómetros por segundo rumbo al espacio interestelar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las ondas cerebrales de Ann Druyan grabadas para el Disco de Oro consistieron en señales de electroencefalograma (EEG) capturadas durante una hora mediante electrodos colocados en su cuero cabelludo. Las ondas cerebrales humanas oscilan entre 1 y 100 Hz, generando patrones alfa (8-13 Hz en reposo), beta (13-30 Hz en concentración activa) y theta (4-8 Hz en meditación profunda). La señal fue comprimida y convertida a formato de audio. Si una civilización extraterrestre pudiera decodificar estas ondas, potencialmente recuperaría patrones asociados a estados emocionales y cognitivos humanos.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m6/banner_ann-druyan-companera.webp',
+    bannerCaption: 'Ann Druyan: compañera cósmica cuyas ondas cerebrales viajan en el Disco de Oro de Voyager',
     fact: 'Los dos Discos de Oro de la Voyager están fabricados con cobre recubierto de una capa de oro de 0.0003 centímetros de grosor y protegidos por una funda de aluminio electrochapada en uranio-238, cuya tasa de desintegración radiactiva permite calcular el tiempo transcurrido desde su fabricación. La NASA estima que los discos permanecerán legibles durante al menos mil millones de años en el vacío del espacio interestelar. La Voyager 1 alcanzará la proximidad de la estrella Gliese 445 en la constelación de la Jirafa dentro de aproximadamente 40,000 años, llevando consigo las ondas cerebrales de Ann Druyan.',
   },
   {
@@ -252,6 +262,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Durante su tratamiento en el Fred Hutchinson Cancer Research Center, Sagan mantuvo correspondencia con cientos de personas, incluyendo niños que le escribían preguntándole sobre el espacio. En una carta de diciembre de 1995, respondió a una niña de nueve años que le preguntó si existían extraterrestres: "Nadie lo sabe con certeza, pero las posibilidades son emocionantes. Hay miles de millones de estrellas en nuestra galaxia, y probablemente la mayoría tiene planetas. Parece poco probable que la Tierra sea el único lugar con vida. Sigue mirando las estrellas y haciéndote preguntas".' },
       { label: 'Dato Científico', icon: 'atom', text: 'La mielodisplasia (síndrome mielodisplásico o SMD) es un grupo de trastornos causados por células sanguíneas mal formadas o disfuncionales producidas por la médula ósea. Afecta principalmente a personas mayores de 60 años. El trasplante alogénico de médula ósea (de un donante compatible) es el único tratamiento potencialmente curativo. En la década de 1990, la tasa de supervivencia a 5 años para trasplantes de médula en pacientes con SMD era del 30-40%. La compatibilidad HLA entre Sagan y su hermana Cari fue un factor determinante en la decisión de proceder con los trasplantes.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m6/banner_ultimos-anios.webp',
+    bannerCaption: 'Los últimos años: Sagan escribió sobre ciencia y maravilla hasta el final de su vida en 1996',
     fact: 'El cementerio Lakeview de Ithaca, Nueva York, donde descansan los restos de Carl Sagan, se encuentra a solo 3.2 kilómetros del edificio de Ciencias Espaciales de la Universidad de Cornell donde Sagan tuvo su oficina durante 28 años. La lápida de Sagan es deliberadamente sencilla, sin epitafio elaborado, reflejando su filosofía personal. Sin embargo, visitantes de todo el mundo dejan regularmente piedras, flores y notas en su tumba. La tradición de dejar piedras proviene de la costumbre judía de honrar a los difuntos, recordando las raíces culturales de la familia Sagan en Ucrania.',
   },
   {
@@ -271,6 +283,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El proyecto LightSail 2 de la Sociedad Planetaria fue lanzado el 25 de junio de 2019 a bordo de un cohete Falcon Heavy de SpaceX. La nave, del tamaño de un pan de molde, desplegó una vela solar de 32 metros cuadrados fabricada con Mylar de apenas 4.5 micrómetros de grosor (más delgada que un cabello humano). Durante los siguientes meses, demostró que los fotones del Sol ejercían presión suficiente para elevar su órbita, validando un medio de propulsión que no requiere combustible. Carl Sagan había aparecido en The Tonight Show en 1976 mostrando un modelo de vela solar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La frase "somos polvo de estrellas" de Sagan tiene fundamento en la nucleosíntesis estelar. Los elementos más pesados que el hidrógeno y el helio fueron creados mediante fusión nuclear en el interior de estrellas masivas. Cuando estas estrellas explotan como supernovas, dispersan estos elementos al espacio. El calcio de nuestros huesos se formó en supernovas de tipo Ia. El hierro de nuestra sangre se forjó en estrellas de al menos 8 masas solares. El oxígeno que respiramos fue producido por estrellas de más de 10 masas solares. Cada átomo pesado de nuestro cuerpo viajó por el espacio durante miles de millones de años antes de formar parte de la Tierra y de nosotros.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m6/banner_legado-eterno.webp',
+    bannerCaption: 'El legado eterno: somos polvo de estrellas que contempla el cosmos — Sagan vive en cada científico',
     fact: 'El asteroide 2709 Sagan, descubierto el 4 de junio de 1982 por el astrónomo Edwin Bowell en la Estación Anderson Mesa del Observatorio Lowell en Arizona, fue nombrado en honor a Carl Sagan por la Unión Astronómica Internacional. Tiene un diámetro estimado de 15.4 kilómetros y orbita el Sol en el cinturón de asteroides entre Marte y Júpiter con un período orbital de 4.41 años. Además, el lugar de aterrizaje de la sonda Mars Pathfinder en Marte fue renombrado "Carl Sagan Memorial Station" el 5 de julio de 1997, convirtiendo a Sagan en el primer divulgador científico con un monumento en otro planeta.',
   },
 ];
@@ -709,6 +723,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

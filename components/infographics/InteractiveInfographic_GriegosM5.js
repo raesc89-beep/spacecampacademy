@@ -154,6 +154,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El nombre "Aristóteles" significa "el mejor propósito" en griego antiguo, derivado de "aristos" (mejor) y "telos" (fin, propósito). Curiosamente, el concepto de "telos" o finalidad se convertiría en una de las ideas centrales de su filosofía. Para Aristóteles, todo en la naturaleza tiene un propósito inherente: la bellota tiene como telos convertirse en roble, y el ser humano tiene como telos alcanzar la felicidad plena a través de la virtud y la razón.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Aristóteles describió con precisión el sistema digestivo de los rumiantes, la placenta de los tiburones y el proceso de desarrollo embrionario del pollo dentro del huevo, abriendo la cáscara en distintos días para observar cada etapa. Sus descripciones de la anatomía del pulpo fueron tan detalladas que los biólogos marinos del siglo XIX confirmaron su exactitud. Identificó correctamente que los delfines son mamíferos, no peces, una clasificación que la ciencia occidental tardaría más de mil años en redescubrir.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m5/banner_discipulo-platon.webp',
+    bannerCaption: 'El discípulo de Platón: Aristóteles estudió 20 años en la Academia antes de superar a su maestro',
     fact: 'Aristóteles fue el primer naturalista conocido que registró que los delfines respiran aire, amamantan a sus crías y, por lo tanto, son mamíferos y no peces. Documentó esta observación en su obra "Historia de los Animales" alrededor del 340 a.C. La comunidad científica europea no aceptó esta clasificación de forma generalizada hasta el trabajo del naturalista sueco Carlos Linneo en 1758, más de dos mil años después de la observación original de Aristóteles.',
   },
   {
@@ -173,6 +175,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La palabra "liceo" se convirtió en sinónimo de escuela de enseñanza secundaria en varios idiomas europeos: "lycée" en francés, "liceo" en italiano y español. En Francia, Napoleón Bonaparte creó en 1802 el sistema de lycées como centros de educación pública avanzada, eligiendo el nombre deliberadamente en honor a la escuela de Aristóteles. Hoy existen más de 2.600 lycées en Francia, todos herederos nominales de aquella escuela ateniense fundada hace 2.360 años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las ruinas del Liceo descubiertas en 2014 se encontraron a 1,5 metros bajo el nivel de la calle moderna, en el barrio de Rizari, cerca del Jardín Nacional de Atenas. Los arqueólogos identificaron los restos de una palestra (zona de ejercicio), un patio rectangular y canales de drenaje que coinciden con las descripciones del geógrafo romano Pausanias, escritas en el siglo II d.C. El sitio está ahora abierto al público como parque arqueológico, a solo 700 metros del Parlamento griego.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m5/banner_el-liceo.webp',
+    bannerCaption: 'El Liceo: la escuela de Aristóteles donde enseñaba paseando junto a sus estudiantes',
     fact: 'El Liceo de Aristóteles operó un programa de investigación colaborativa que produjo las primeras constituciones comparadas de la historia. Aristóteles y sus estudiantes recopilaron y analizaron las constituciones de 158 ciudades-estado griegas, examinando sus formas de gobierno, leyes y estructuras sociales. De este trabajo monumental solo sobrevive la "Constitución de Atenas", descubierta en un papiro egipcio en 1879 por un equipo del Museo Británico, más de dos mil años después de su redacción original.',
   },
   {
@@ -192,6 +196,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El filósofo alemán Immanuel Kant escribió en 1787 que la lógica de Aristóteles estaba tan perfeccionada que "desde Aristóteles no ha tenido que dar un solo paso hacia atrás" y que "tampoco ha podido dar un solo paso hacia adelante". Esta evaluación, aunque exagerada a la luz de la lógica moderna, refleja el dominio absoluto que el sistema aristotélico ejerció durante 2.200 años sobre el razonamiento formal en toda la tradición intelectual europea y del mundo islámico.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La lógica de predicados moderna, desarrollada por Gottlob Frege en 1879 en su obra "Begriffsschrift" (Escritura Conceptual), amplió la lógica aristotélica al permitir analizar la estructura interna de las proposiciones. Mientras Aristóteles trataba "Todos los humanos son mortales" como una unidad, Frege podía descomponerla en funciones y variables: para todo x, si x es humano entonces x es mortal. Esta formalización fue necesaria para los fundamentos de las matemáticas y la informática teórica.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m5/banner_logica-silogismos.webp',
+    bannerCaption: 'Lógica y silogismos: Aristóteles inventó la lógica formal con sus célebres silogismos',
     fact: 'El término "Organon" (instrumento) que designa las obras lógicas de Aristóteles no fue elegido por el propio filósofo, sino por Andrónico de Rodas, quien organizó los manuscritos aristotélicos en el siglo I a.C. El nombre refleja la idea de que la lógica no es una ciencia en sí misma, sino una herramienta necesaria para todas las demás ciencias. Los filósofos estoicos, rivales de los aristotélicos, rechazaron esta clasificación y consideraron la lógica como una parte integral de la filosofía, no como un mero instrumento.',
   },
   {
@@ -211,6 +217,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El naturalista Charles Darwin escribió en una carta de 1882 a William Ogle: "Linneo y Cuvier han sido mis dos dioses, aunque de maneras muy diferentes; pero ambos eran meros colegiales comparados con el viejo Aristóteles". Darwin admiraba especialmente las observaciones biológicas de Aristóteles sobre los organismos marinos del Egeo, muchas de las cuales fueron confirmadas por la biología moderna solo en los siglos XIX y XX, más de dos mil años después de ser registradas por primera vez.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Aristóteles clasificó correctamente a las ballenas y los delfines como mamíferos, no como peces, basándose en tres observaciones: respiran aire mediante pulmones, dan a luz crías vivas y las amamantan. Esta clasificación fue ignorada por los naturalistas europeos durante la Edad Media y el Renacimiento, quienes volvieron a considerar a los cetáceos como peces. La taxonomía moderna confirmó definitivamente la clasificación aristotélica con el sistema de Linneo en 1758, veintiún siglos después de la observación original.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m5/banner_filosofia-natural.webp',
+    bannerCaption: 'Filosofía natural: Aristóteles clasificó más de 500 especies animales e inventó la biología',
     fact: 'Aristóteles describió con precisión el brazo hectocótilo del pulpo macho, una estructura reproductiva especializada que se desprende durante el apareamiento. El zoólogo francés Georges Cuvier redescubrió esta estructura en 1829, y al principio la comunidad científica creyó que era un parásito del pulpo. No fue hasta mediados del siglo XIX que los biólogos confirmaron la función reproductiva exacta que Aristóteles había documentado en el siglo IV a.C., validando una observación que había permanecido olvidada durante más de dos milenios.',
   },
   {
@@ -230,6 +238,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Alejandro fundó al menos veinte ciudades que llevaron su nombre durante sus campañas. La más conocida, Alejandría de Egipto, fue fundada en el 331 a.C. y se convirtió en la capital intelectual del mundo antiguo. Su biblioteca, inspirada indirectamente por la tradición de colección bibliográfica que Aristóteles inició en el Liceo, llegó a contener entre 400.000 y 700.000 rollos de papiro, constituyendo el mayor repositorio de conocimiento del mundo antiguo durante más de tres siglos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los naturalistas que acompañaban a Alejandro recopilaron información sobre animales y plantas desconocidos para los griegos, incluyendo el algodón de la India, el banano, los elefantes de guerra y el arroz cultivado. Aristóteles incorporó muchos de estos datos en sus obras zoológicas y botánicas. El historiador romano Plinio el Viejo afirmó en su "Historia Natural" (siglo I d.C.) que Alejandro puso a disposición de Aristóteles a miles de cazadores, pescadores y cuidadores de animales para que le proporcionaran especímenes de estudio.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m5/banner_tutor-alejandro.webp',
+    bannerCaption: 'El tutor de Alejandro: Aristóteles enseñó a Alejandro Magno por tres años en el jardín de Mieza',
     fact: 'El Ninfeo de Mieza, donde Aristóteles educó a Alejandro, fue identificado arqueológicamente en 1965 cerca de la actual ciudad de Naoussa, en el norte de Grecia. Las excavaciones revelaron un complejo de cuevas naturales con columnas talladas, nichos para estatuas y un sistema de irrigación que alimentaba fuentes y jardines. El sitio coincide con la descripción del historiador Plutarco, quien lo describió como un lugar con "paseos sombreados y asientos de piedra" donde maestro y alumno conversaban sobre filosofía y ciencia.',
   },
   {
@@ -249,6 +259,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Aristóteles defendió posiciones que hoy consideramos profundamente erróneas. Justificó la esclavitud como "natural" para ciertos seres humanos, y consideró a las mujeres como seres inferiores a los hombres en capacidad racional. Estas ideas fueron criticadas ya en la Antigüedad por los filósofos estoicos, quienes defendieron la igualdad natural de todos los seres humanos. El estudio de Aristóteles nos enseña que incluso los grandes pensadores pueden estar limitados por los prejuicios de su época y su contexto social.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El concepto aristotélico de eudaimonía ha sido incorporado a la psicología científica moderna. El psicólogo Martin Seligman, fundador de la psicología positiva, distingue entre "felicidad hedónica" (placer momentáneo) y "bienestar eudaimónico" (sentido de propósito y realización), un marco directamente inspirado en Aristóteles. Estudios publicados en el Journal of Personality and Social Psychology (2008) demostraron que el bienestar eudaimónico se correlaciona con mejor salud inmunológica que el hedónico.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m5/banner_etica-politica.webp',
+    bannerCaption: 'Ética y política: la eudaimonia de Aristóteles y el ser humano como animal político',
     fact: 'La "Constitución de Atenas", obra atribuida a Aristóteles y su escuela, fue redescubierta en 1879 cuando el Museo Británico adquirió cuatro rollos de papiro procedentes de Egipto. El texto, escrito en el reverso de las cuentas de un granjero egipcio del siglo II d.C., contenía un análisis detallado de la historia constitucional ateniense y sus reformas políticas desde Dracón hasta el siglo IV a.C. El papiro fue publicado en 1891 por Frederic G. Kenyon y transformó la comprensión moderna de la democracia ateniense.',
   },
   {
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El poeta italiano Dante Alighieri llamó a Aristóteles "el maestro de los que saben" (il maestro di color che sanno) en el Canto IV de la Divina Comedia, escrita entre 1308 y 1321. En el Limbo de Dante, Aristóteles aparece rodeado por los grandes filósofos de la Antigüedad, quienes le muestran reverencia. Este título refleja la posición suprema que Aristóteles ocupaba en el pensamiento medieval europeo, donde su autoridad intelectual era comparable solo a la de las Escrituras sagradas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Escuela de Traductores de Toledo fue el principal canal de transmisión del conocimiento aristotélico al mundo latino. Entre 1130 y 1187, Gerardo de Cremona tradujo al latín más de 70 obras del árabe, incluyendo la Física, la Meteorología y el De Caelo de Aristóteles. El arzobispo Raimundo de Toledo organizó equipos de traductores que trabajaban en cadena: un erudito judío o mozárabe traducía del árabe al castellano, y un clérigo latino traducía del castellano al latín, preservando así el conocimiento antiguo para la Europa cristiana.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m5/banner_legado-aristotelico.webp',
+    bannerCaption: 'El legado aristotélico: preservado por los árabes, base de la teología medieval y la biología moderna',
     fact: 'La "Poética" de Aristóteles, escrita alrededor del 335 a.C., sobrevivió parcialmente: solo conservamos la sección sobre la tragedia, mientras que la segunda parte sobre la comedia se perdió. El novelista Umberto Eco utilizó esta pérdida como premisa central de su novela "El Nombre de la Rosa" (1980), donde un monje asesina para proteger la última copia del segundo libro de la Poética. El manuscrito más antiguo que conservamos de la Poética es un texto árabe del siglo X d.C., traducido por Abu Bishr Matta ibn Yunus en Bagdad alrededor del año 935.',
   },
 ];
@@ -710,6 +724,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

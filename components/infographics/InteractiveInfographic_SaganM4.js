@@ -144,6 +144,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Frank Drake realizó el primer experimento SETI de la historia en 1960, un año antes de formular su ecuación. El Proyecto Ozma (nombrado por la princesa de los libros de Oz) usó el radiotelescopio de Green Bank de 26 metros para escuchar dos estrellas cercanas similares al Sol: Tau Ceti y Epsilon Eridani. Drake escuchó durante 150 horas sin detectar señales artificiales, pero el proyecto demostró que la búsqueda era técnicamente posible con la tecnología disponible en esa época.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Si usamos las estimaciones más optimistas actuales para la Ecuación de Drake (R*=3, fp=1, ne=0.4, fl=0.3, fi=0.1, fc=0.5, L=10,000 años), obtenemos N≈18 civilizaciones comunicativas en la Vía Láctea en cualquier momento dado. Si usamos estimaciones pesimistas (con L=100 años), N se reduce a menos de 1, lo que explicaría nuestro silencio observacional. La variable L domina el resultado final de forma determinante.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m4/banner_ecuacion-drake.webp',
+    bannerCaption: 'La Ecuación de Drake: la fórmula que estima el número de civilizaciones con las que podemos comunicarnos',
     fact: 'El 15 de agosto de 1977, el astrónomo Jerry Ehman detectó una señal de radio inusual con el radiotelescopio Big Ear de la Universidad Estatal de Ohio. La señal duró exactamente 72 segundos, coincidía con la frecuencia del hidrógeno (1420 MHz, la frecuencia que Drake y Sagan consideraban más lógica para una comunicación interestelar), y era 30 veces más potente que el ruido de fondo. Ehman escribió "Wow!" junto a los datos impresos, dándole nombre a la señal más prometedora jamás detectada por SETI. A pesar de décadas de intentos, la señal nunca se repitió.',
   },
   {
@@ -163,6 +165,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El 16 de noviembre de 1974, el radiotelescopio de Arecibo transmitió un mensaje codificado hacia el cúmulo estelar M13, ubicado a 25,000 años luz. El mensaje, diseñado por Frank Drake con ayuda de Carl Sagan, era un código binario de 1,679 bits (producto de los primos 73 × 23) que, organizados en cuadrícula, formaban una imagen con los números del 1 al 10, los elementos del ADN, una figura humana, el Sistema Solar y el telescopio. Si alguien responde, la respuesta llegará en 50,000 años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La frecuencia de 1420 MHz elegida por SETI corresponde a la transición hiperfina del hidrógeno neutro, donde el espín del electrón cambia de paralelo a antiparalelo respecto al protón. Esta transición emite un fotón con longitud de onda de 21 centímetros. Los astrónomos la consideran una "frecuencia universal" porque el hidrógeno constituye el 75% de la materia bariónica del universo, y cualquier civilización con radiotelescopios la detectaría inevitablemente.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m4/banner_seti-escuchando.webp',
+    bannerCaption: 'SETI: escuchando al cosmos con el radiotelescopio Arecibo en busca de señales extraterrestres',
     fact: 'El radiotelescopio de Arecibo operó durante 57 años (1963-2020) y fue el telescopio de un solo plato más grande del mundo hasta que China completó FAST (Five-hundred-meter Aperture Spherical Telescope) en 2016, con 500 metros de diámetro. Arecibo colapsó el 1 de diciembre de 2020 tras fallos en los cables de soporte. Durante su vida útil, descubrió el primer exoplaneta confirmado (alrededor del púlsar PSR B1257+12 en 1992), cartografió la superficie de Venus con radar, y detectó el primer púlsar binario (Hulse-Taylor, 1974), cuyo estudio proporcionó la primera evidencia indirecta de ondas gravitacionales, lo que contribuyó al Premio Nobel de Física de 1993.',
   },
   {
@@ -182,6 +186,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Enrico Fermi era conocido por su capacidad para hacer estimaciones rápidas y precisas con información limitada (llamadas "problemas de Fermi"). Durante la primera prueba nuclear Trinity en 1945, dejó caer trocitos de papel al sentir la onda expansiva y calculó que la explosión había liberado energía equivalente a 10 kilotones de TNT. La medición oficial posterior fue 21 kilotones, lo que demuestra la notable precisión de su método aproximativo con datos mínimos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El astrofísico Frank Tipler calculó en 1980 que una civilización que enviara sondas autorreplicantes (similares a las sondas Von Neumann del matemático John von Neumann) podría explorar toda la Vía Láctea en aproximadamente 300 millones de años, incluso viajando a solo el 10% de la velocidad de la luz. Dado que la galaxia tiene 13,000 millones de años, ha habido tiempo suficiente para que esto ocurriera más de 40 veces, reforzando la pregunta de Fermi.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m4/banner_paradoja-fermi.webp',
+    bannerCaption: 'La Paradoja de Fermi: si hay tantas civilizaciones posibles, ¿por qué el cosmos está en silencio?',
     fact: 'En 2020, los astrónomos del proyecto Breakthrough Listen detectaron una señal de radio a 982 MHz proveniente de la dirección de Próxima Centauri, la estrella más cercana al Sol a 4.24 años luz. Denominada BLC1 (Breakthrough Listen Candidate 1), la señal mostraba un desplazamiento de frecuencia consistente con una fuente no terrestre y no fue asociada a ninguna interferencia conocida. Tras meses de análisis, los investigadores concluyeron en 2021 que probablemente era una interferencia terrestre compleja, pero BLC1 demostró que los algoritmos actuales pueden detectar señales candidatas con sensibilidad sin precedentes.',
   },
   {
@@ -201,6 +207,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'A fecha de 2024, la NASA ha confirmado más de 5,600 exoplanetas en más de 4,100 sistemas planetarios diferentes. Los tipos más comunes son los "mini-Neptunos" (planetas entre el tamaño de la Tierra y Neptuno), que no tienen equivalente en nuestro Sistema Solar. El exoplaneta confirmado más cercano es Próxima Centauri b, un planeta rocoso en la zona habitable de Próxima Centauri, a solo 4.24 años luz de la Tierra, descubierto en 2016 por el equipo del astrónomo Guillem Anglada-Escudé.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El método de tránsito detecta exoplanetas midiendo la disminución del brillo de una estrella cuando un planeta pasa frente a ella. Un planeta del tamaño de la Tierra causa una disminución de brillo de apenas el 0.008% (84 partes por millón) en una estrella como el Sol. Para detectar esto, Kepler medía variaciones de brillo con una precisión de 20 partes por millón, equivalente a detectar una pulga pasando frente a un faro a 10 kilómetros de distancia. El método de velocidad radial, usado para 51 Pegasi b, detecta el bamboleo gravitacional de la estrella causado por el planeta.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m4/banner_exoplanetas.webp',
+    bannerCaption: 'Exoplanetas: la predicción de Sagan sobre otros mundos confirmada con miles de planetas descubiertos',
     fact: 'Carl Sagan predijo la abundancia de exoplanetas décadas antes de que fueran descubiertos. En su serie Cosmos (1980), declaró que la mayoría de las estrellas probablemente tenían familias de planetas, una afirmación basada en modelos teóricos de formación estelar que entonces carecían de confirmación observacional. Cuando Sagan murió en diciembre de 1996, solo se habían confirmado 6 exoplanetas. Hoy, con más de 5,600 descubiertos, los datos han validado sus estimaciones. El catálogo de exoplanetas de la NASA lleva su espíritu: cada nuevo mundo descubierto acerca a la humanidad a responder la pregunta que Sagan consideraba la más importante de todas.',
   },
   {
@@ -220,6 +228,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Carl Sagan se interesó por Titán décadas antes de que ninguna sonda lo visitara. En su tesis doctoral de 1960 en la Universidad de Chicago, Sagan estudió la atmósfera de Venus y propuso que las moléculas orgánicas en la atmósfera de Titán podrían formar compuestos prebióticos. Cuando la Voyager 1 fotografió Titán en 1980 y confirmó su densa atmósfera de nitrógeno, Sagan abogó por enviar una sonda de aterrizaje, un sueño que se cumplió 25 años después con la misión Huygens de la ESA.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las fuentes hidrotermales en el fondo oceánico de la Tierra, descubiertas en 1977 cerca de las Islas Galápagos, albergan ecosistemas completos que no dependen de la luz solar. Bacterias quimiosintéticas convierten sulfuro de hidrógeno y otros compuestos químicos en energía, alimentando gusanos tubícolas, cangrejos y camarones. Si existen fuentes hidrotermales similares en Europa o Encélado, estas podrían sostener ecosistemas análogos sin necesidad de fotosíntesis.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m4/banner_vida-sistema-solar.webp',
+    bannerCaption: 'Vida en el Sistema Solar: Europa, Encélado, Marte y Titán como candidatos a albergar vida',
     fact: 'La misión Dragonfly de la NASA, programada para lanzarse en 2028 y llegar a Titán en 2034, será un dron-helicóptero de ocho rotores que volará por la densa atmósfera de Titán (1.5 veces más densa que la terrestre pero con gravedad 7 veces menor), recorriendo cientos de kilómetros entre diferentes sitios de aterrizaje. Dragonfly llevará un espectrómetro de masas para analizar la composición química de la superficie y buscar indicios de química prebiótica o biología exótica basada en solventes distintos al agua, algo que Carl Sagan habría considerado una de las misiones más relevantes en la historia de la exploración espacial.',
   },
   {
@@ -239,6 +249,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El tardígrado (conocido coloquialmente como "oso de agua") es quizás el animal más resistente de la Tierra. Estos invertebrados microscópicos de 0.5 mm sobreviven temperaturas desde -272°C hasta 150°C, presiones 6 veces superiores a las del fondo oceánico más profundo, el vacío del espacio, y dosis de radiación cientos de veces letales para humanos. En 2019, la nave israelí Beresheet se estrelló en la Luna llevando tardígrados deshidratados. Los científicos creen que podrían haber sobrevivido al impacto, convirtiéndolos potencialmente en los primeros habitantes lunares.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En 1990, la sonda Galileo de la NASA realizó un sobrevuelo de la Tierra camino a Júpiter. Carl Sagan propuso usar este sobrevuelo como un "experimento de control" para buscar señales de vida desde el espacio. Galileo detectó oxígeno y metano en la atmósfera (una combinación termodinámicamente inestable que requiere reposición biológica constante), luz reflejada por clorofila, y emisiones de radio moduladas. Sagan publicó estos resultados en Nature en 1993, estableciendo el protocolo para buscar biofirmas en exoplanetas.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m4/banner_astrobiologia.webp',
+    bannerCaption: 'Astrobiología: cómo los extremófilos terrestres nos enseñan dónde buscar vida en el cosmos',
     fact: 'El meteorito ALH84001, encontrado en la Antártida en 1984 y originario de Marte, generó una controversia científica global en 1996 cuando el equipo de David McKay del Centro Espacial Johnson de la NASA anunció que contenía posibles fósiles de bacterias marcianas. Las estructuras microscópicas encontradas median entre 20 y 100 nanómetros, más pequeñas que cualquier bacteria terrestre conocida. El presidente Bill Clinton hizo una declaración pública sobre el hallazgo. Aunque la mayoría de los científicos concluyeron posteriormente que las estructuras podían explicarse por procesos no biológicos, ALH84001 demostró que la pregunta sobre vida en Marte puede responderse con muestras físicas, motivando las misiones de retorno de muestras actualmente en planificación.',
   },
   {
@@ -258,6 +270,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Jodie Foster se preparó para el papel de Ellie Arroway visitando el Instituto SETI y pasando tiempo con Jill Tarter, observando cómo los científicos reales monitoreaban señales de radio. Foster también aprendió a operar los controles del radiotelescopio del VLA en Nuevo México. La actriz ha declarado en entrevistas que el papel de Arroway fue uno de los más significativos de su carrera porque le permitió representar a una científica sin estereotipos ni simplificaciones, algo poco común en Hollywood durante los años noventa.' },
       { label: 'En la Película', icon: 'zap', text: 'Contact incluye una escena donde la señal extraterrestre contiene un video de la primera transmisión televisiva de alta potencia de la Tierra: las ceremonias de apertura de los Juegos Olímpicos de Berlín de 1936, con Adolf Hitler. Sagan usó este detalle para ilustrar un concepto real: las transmisiones de radio y televisión terrestres se propagan al espacio a la velocidad de la luz. Vega está a 26 años luz, por lo que en 1985 (año de la novela), la señal de 1936 habría tenido tiempo de llegar a Vega y regresar, haciendo la cronología científicamente coherente.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m4/banner_contact-ciencia-ficcion.webp',
+    bannerCaption: 'Contact: la novela de Sagan que imagina el primer contacto entre la humanidad y una civilización alienígena',
     fact: 'Carl Sagan murió el 20 de diciembre de 1996 a los 62 años de neumonía, complicación de mielodisplasia, en el Centro de Investigación del Cáncer Fred Hutchinson en Seattle. Había recibido un trasplante de médula ósea de su hermana Cari dos años antes. Sagan publicó más de 600 artículos científicos, fue autor o coautor de más de 20 libros, y su serie Cosmos de 1980 fue vista por más de 500 millones de personas en 60 países, convirtiéndola en la serie de televisión pública más vista de la historia estadounidense hasta ese momento. En 2023, la NASA le homenajeó nombrando oficialmente el lugar de aterrizaje de la sonda Mars Pathfinder como "Carl Sagan Memorial Station".',
   },
 ];
@@ -681,6 +695,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} poster={node.video.poster} />
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

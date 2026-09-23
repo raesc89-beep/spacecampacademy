@@ -151,6 +151,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El barco Siracusia, diseñado bajo la supervisión de Arquímedes alrededor del 240 a.C., fue uno de los navíos más grandes de la antigüedad. Según Ateneo de Naucratis, podía transportar 1,940 toneladas de carga, tenía 20 filas de remeros, un sistema de bombeo de agua inventado por Arquímedes (el tornillo de Arquímedes) para achicar la sentina, y mosaicos decorativos en sus suelos. Hierón II lo regaló a Ptolomeo III de Egipto porque era demasiado grande para atracar en la mayoría de los puertos de Sicilia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El tornillo de Arquímedes, inventado durante la construcción del Siracusia, consiste en un cilindro hueco con una hélice interior que, al girarse, eleva el agua desde un nivel inferior a uno superior. Este diseño sigue utilizándose hoy en plantas de tratamiento de aguas residuales, centrales hidroeléctricas de baja presión y sistemas de riego en los Países Bajos. Ingenieros modernos han calculado que un tornillo de Arquímedes bien diseñado tiene una eficiencia de bombeo del 60-80%, comparable a bombas eléctricas modernas.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m6/banner_siracusa-ciudad-genio.webp',
+    bannerCaption: 'Siracusa: la ciudad siciliana más poderosa del Mediterráneo occidental, cuna de Arquímedes',
     fact: 'Siracusa acuñaba su propia moneda con la imagen de la diosa Atenea y un carro de guerra tirado por cuatro caballos (cuadriga). Estas monedas, llamadas decadracmas siracusanas, pesaban aproximadamente 43 gramos de plata pura y son consideradas por los numismáticos como las monedas más artísticas de toda la antigüedad clásica. El Metropolitan Museum de Nueva York conserva varios ejemplares que muestran la técnica de acuñación griega, superior en detalle a cualquier moneda romana contemporánea.',
   },
   {
@@ -170,6 +172,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La palabra "eureka" se convirtió en una expresión universal para describir un momento de descubrimiento repentino. El estado de California adoptó "Eureka" como su lema oficial en 1849, durante la Fiebre del Oro, cuando los mineros gritaban la misma palabra al encontrar pepitas de oro. La ciudad de Eureka, California, fundada en 1850, lleva este nombre en honor a Arquímedes. El lema aparece en el sello oficial del estado hasta el día de hoy.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La densidad del oro puro es de 19,320 kg/m³, mientras que la plata tiene una densidad de 10,490 kg/m³. Una corona de 1 kilogramo de oro puro tendría un volumen de 51.76 cm³. Si el orfebre hubiera reemplazado el 30% del oro con plata, el volumen total de la corona aumentaría a 63.97 cm³, una diferencia de 12.21 cm³ que desplazaría esa cantidad adicional de agua. Esta diferencia, equivalente a unas 2.5 cucharaditas, era detectable con los instrumentos de medición de la época.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m6/banner_eureka-corona.webp',
+    bannerCaption: '¡Eureka!: Arquímedes descubrió el principio del empuje en un baño público de Siracusa',
     fact: 'En 2003, los investigadores Chris Rorres de la Universidad de Drexel y Harry Harris realizaron una réplica experimental del test de la corona de Arquímedes, utilizando coronas fabricadas con aleaciones conocidas de oro y plata. Confirmaron que el método de la balanza hidrostática (pesar en aire y en agua) permite detectar adulteraciones de tan solo un 5-10% de plata en oro, con los instrumentos disponibles en el siglo III a.C. El estudio fue publicado en la revista The Mathematical Intelligencer.',
   },
   {
@@ -189,6 +193,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Mar Muerto, situado entre Israel y Jordania, tiene una salinidad del 34.2% (diez veces más salada que el océano promedio), lo que eleva su densidad a 1,240 kg/m³. Debido al principio de Arquímedes, una persona flota en el Mar Muerto sin esfuerzo alguno, ya que el cuerpo humano (densidad promedio de 985 kg/m³) es significativamente menos denso que esa agua hipersalina. Es prácticamente difícil hundirse, incluso intentándolo de forma deliberada.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El tratado "Sobre los cuerpos flotantes" de Arquímedes se perdió en Occidente durante la Edad Media y fue redescubierto en 1269 por el traductor flamenco Willem van Moerbeke, quien tradujo al latín una copia griega que luego también desapareció. La única versión griega superviviente se encontró en el Palimpsesto de Arquímedes, un manuscrito del siglo X sobreescrito con oraciones en el siglo XIII. Fue descubierto en Estambul en 1906 por el filólogo Johan Ludvig Heiberg y subastado por Christie\'s en 1998 por 2 millones de dólares.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m6/banner_principio-arquimedes.webp',
+    bannerCaption: 'El Principio de Arquímedes: un cuerpo sumergido experimenta un empuje igual al peso del fluido desplazado',
     fact: 'El principio de Arquímedes se utiliza en medicina forense para determinar si los pulmones de un recién nacido fallecido contenían aire al momento de la muerte (prueba docimástica pulmonar hidrostática). Si los pulmones flotan en agua, el bebé respiró al menos una vez; si se hunden, no llegó a respirar. Esta prueba, documentada por primera vez por Jan Swammerdam en 1667, se basa directamente en el principio que Arquímedes formuló en Siracusa 19 siglos antes y sigue utilizándose en patología forense contemporánea.',
   },
   {
@@ -208,6 +214,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los constructores de las pirámides de Egipto ya usaban palancas y planos inclinados alrededor del 2560 a.C., más de 2,000 años antes de Arquímedes. Sin embargo, los egipcios utilizaban estas máquinas de forma empírica, sin comprender la teoría matemática detrás de su funcionamiento. La contribución de Arquímedes fue demostrar por qué funcionan, expresando las relaciones de fuerza y distancia con ecuaciones exactas que permiten predecir con precisión el resultado antes de construir la máquina.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Para "mover la Tierra" con una palanca, como propuso Arquímedes, se necesitarían números de magnitud astronómica. La masa de la Tierra es de 5.972 × 10²⁴ kilogramos. Si una persona pudiera ejercer una fuerza constante de 60 kilogramos (su propio peso) y quisiera mover la Tierra solo 1 centímetro, el brazo de palanca debería tener una longitud de aproximadamente 10²² metros (unos 1,000 años luz). Además, empujar la palanca esa distancia llevaría billones de años. La física de Arquímedes es correcta, pero las escalas lo hacen imposible en la práctica.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m6/banner_palanca-maquinas.webp',
+    bannerCaption: "La palanca y las máquinas: ‘Dadme un punto de apoyo y moveré el mundo’ — Arquímedes",
     fact: 'En 2017, ingenieros de la Universidad de Cambridge reconstruyeron un polispasto (sistema de poleas compuestas) basado en las descripciones de Arquímedes. Con un sistema de seis poleas y una cuerda de 50 metros, una sola persona de 70 kilogramos logró levantar un bloque de piedra caliza de 2,500 kilogramos, demostrando una ventaja mecánica de 36:1. El experimento validó los cálculos teóricos de Arquímedes con un margen de error inferior al 8%, atribuible a la fricción en las poleas modernas.',
   },
   {
@@ -227,6 +235,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Palimpsesto de Arquímedes es un manuscrito del siglo X que contiene siete tratados de Arquímedes copiados por un escriba bizantino. En el siglo XIII, un monje raspó el texto, giró las páginas 90 grados y escribió oraciones encima. En 1998, un comprador anónimo adquirió el manuscrito por 2 millones de dólares en una subasta de Christie\'s. Científicos del Walters Art Museum de Baltimore usaron rayos X de sincrotrón del Stanford Linear Accelerator para leer el texto borrado, revelando dos tratados perdidos de Arquímedes.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El método de exhaución de Arquímedes para calcular π con polígonos de 96 lados requirió extraer raíces cuadradas de números de hasta cuatro cifras y realizar más de 30 operaciones aritméticas complejas sin notación decimal. Matemáticos modernos han verificado que todos sus cálculos intermedios son correctos. El récord actual de dígitos de π es de 105 billones de dígitos, calculado en 2024 por el equipo de StorageReview usando un servidor con 1.5 terabytes de RAM durante 75 días de computación continua.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m6/banner_geometria-arquimedes.webp',
+    bannerCaption: 'La geometría de Arquímedes: calculó π y el volumen de la esfera anticipando el cálculo integral',
     fact: 'El general romano Cicerón relata en sus "Tusculanas" (45 a.C.) que durante su mandato como cuestor en Sicilia en el 75 a.C., buscó y encontró la tumba de Arquímedes, abandonada y cubierta de maleza, cerca de la puerta Agrigentina de Siracusa. Identificó la tumba por la esfera inscrita en un cilindro grabada en la lápida, tal como Arquímedes había solicitado. Cicerón ordenó limpiar el monumento, pero desde entonces la tumba se ha perdido nuevamente y su ubicación exacta sigue siendo desconocida.',
   },
   {
@@ -246,6 +256,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 2005, el programa televisivo "MythBusters" (Cazadores de Mitos) intentó replicar el "rayo de calor" de Arquímedes con 500 espejos planos apuntados a un barco de pesca a 30 metros. El barco se calentó pero no se incendió. Sin embargo, en 2009, un grupo de 500 alumnos del MIT repitió el experimento con mejores condiciones de alineación y logró encender una réplica de vela de barco romano en menos de 10 minutos. La conclusión científica actual es que el efecto térmico era posible pero difícil de sostener durante un combate naval activo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La fuerza de levantamiento de la Garra de Arquímedes ha sido analizada por ingenieros modernos. Un estudio publicado en la revista Technology and Culture estimó que un brazo de palanca de 8-10 metros de longitud, operado por un sistema de poleas con 15-20 hombres, podía generar una fuerza de levantamiento de entre 3,000 y 5,000 kilogramos-fuerza, suficiente para levantar la proa de un quinquerremo romano (peso total estimado de 40-50 toneladas) e inclinarlo lo suficiente para volcarlo o provocar una vía de agua catastrófica.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m6/banner_maquinas-guerra.webp',
+    bannerCaption: 'Las máquinas de guerra: Arquímedes mantuvo a raya a Roma durante 3 años con sus inventos',
     fact: 'El general Marcelo admiraba profundamente a Arquímedes a pesar de ser su enemigo. Plutarco relata que Marcelo se refería a Arquímedes como un "geómetra divino" y que sus soldados llamaban al científico siracusano "Briareo" (un gigante mitológico de cien brazos) porque sus máquinas parecían atacar desde todas direcciones simultáneamente. Cuando finalmente tomó Siracusa en el 212 a.C., Marcelo dio orden explícita de capturar a Arquímedes con vida y tratarlo con respeto, una orden que trágicamente no fue obedecida.',
   },
   {
@@ -265,6 +277,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La frase "Noli turbare circulos meos" ("No toques mis círculos") se ha convertido en un lema de la dedicación absoluta al conocimiento. Universidades como la Universidad de Basilea y la Sociedad Matemática Americana han utilizado variaciones de esta frase en sus emblemas y publicaciones. La Medalla Fields, considerada el "Nobel de las Matemáticas" y otorgada cada cuatro años desde 1936, lleva grabado el perfil de Arquímedes junto con una esfera inscrita en un cilindro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El "Stomachion" encontrado en el Palimpsesto reveló que Arquímedes investigaba lo que hoy llamamos combinatoria. El rompecabezas consiste en 14 piezas que forman un cuadrado, y Arquímedes se preguntaba de cuántas maneras diferentes se pueden reordenar para formar el cuadrado original. En 2003, el matemático Bill Cutler usó un programa informático para determinar que existen exactamente 17,152 combinaciones posibles (o 536 si se eliminan las rotaciones y reflexiones). Esto convierte al Stomachion en el primer problema combinatorio documentado en la historia.' },
     ],
+    bannerImage: '/assets/griegos/infographic_m6/banner_muerte-legado.webp',
+    bannerCaption: 'Muerte y legado: Arquímedes murió resolviendo un problema geométrico durante el saqueo romano',
     fact: 'Un cráter lunar de 82 kilómetros de diámetro, ubicado en las coordenadas 29.7°S 4.0°O de la superficie de la Luna, lleva el nombre de Arquímedes desde 1651, cuando el astrónomo Giovanni Riccioli lo designó así. El asteroide 3600 Archimedes, descubierto en 1978, también honra su memoria. En 2014, la Unión Astronómica Internacional nombró oficialmente "Colles Archimedes" a un conjunto de colinas en el planeta Marte. Pocos científicos de la antigüedad tienen su nombre grabado en tres cuerpos celestes diferentes del sistema solar.',
   },
 ];
@@ -704,6 +718,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

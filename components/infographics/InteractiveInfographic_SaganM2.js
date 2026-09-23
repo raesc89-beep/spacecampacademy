@@ -144,6 +144,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Antes de Cosmos, Carl Sagan ya era conocido en círculos científicos por su trabajo en el programa Mariner y su participación en las misiones Viking a Marte. Pero fue la serie de televisión la que lo convirtió en una figura pública global. Tras su emisión, Sagan recibía más de 10,000 cartas al año de espectadores de todo el mundo, muchos de ellos niños y jóvenes que decían que Cosmos había despertado su interés por la ciencia y la exploración espacial.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La nucleosíntesis estelar es el proceso por el cual los elementos más pesados que el hidrógeno se forman en el interior de las estrellas. Las estrellas como nuestro Sol fusionan hidrógeno en helio. Las estrellas más masivas, con masas superiores a 8 veces la del Sol, continúan fusionando elementos hasta llegar al hierro (elemento 26). Los elementos más pesados que el hierro — como el oro, el uranio y el platino — se forman durante las explosiones de supernovas, donde las temperaturas y presiones son tan extremas que permiten la captura rápida de neutrones.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m2/banner_nave-imaginacion.webp',
+    bannerCaption: 'La Nave de la Imaginación: el vehículo que llevó a millones a explorar el cosmos con Sagan',
     fact: 'El concepto de "Nave de la Imaginación" fue idea conjunta de Carl Sagan y Ann Druyan. Según las notas de producción archivadas en la Biblioteca del Congreso de Estados Unidos, se evaluaron más de 15 diseños diferentes para la nave antes de seleccionar el diseño final con forma de semilla de diente de león. Sagan insistió en que la nave no tuviera un aspecto militar o industrial, sino orgánico y contemplativo, porque quería que simbolizara la curiosidad humana, no la conquista tecnológica.',
   },
   {
@@ -163,6 +165,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Para filmar las recreaciones históricas de Cosmos, el equipo de producción viajó a 40 locaciones en 12 países diferentes durante 3 años de producción. La recreación de la antigua Biblioteca de Alejandría costó más de $1 millón de dólares de 1979 — equivalente a aproximadamente $4.2 millones actuales ajustados por inflación. Sagan insistió en la precisión histórica de cada detalle, consultando con historiadores especializados de la Universidad de Harvard y el Instituto Smithsoniano.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La ecuación de Drake, presentada en el episodio "Enciclopedia Galáctica", multiplica siete factores para estimar el número de civilizaciones comunicativas en la Vía Láctea: la tasa de formación estelar (estimada hoy en unas 1.5-3 estrellas por año), la fracción de estrellas con planetas (ahora sabemos que es cercana al 100%), el número de planetas habitables por sistema, la fracción que desarrolla vida, la fracción con vida inteligente, la fracción que desarrolla tecnología de comunicación, y la duración promedio de esas civilizaciones. Los valores actualizados sugieren entre 1,000 y 100 millones de civilizaciones posibles.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m2/banner_trece-episodios.webp',
+    bannerCaption: 'Los 13 episodios de Cosmos: un viaje desde el átomo hasta los confines del universo',
     fact: 'La secuencia de apertura de "Las Costas del Océano Cósmico" fue recreada utilizando una combinación de fotografías reales del telescopio Hale de 200 pulgadas del Observatorio Palomar, modelos a escala construidos por la empresa Magicam, y pinturas al óleo del artista espacial Jon Lomberg, quien fue el director artístico oficial de la serie. Lomberg produjo más de 40 ilustraciones originales para Cosmos, cada una revisada científicamente por Sagan para garantizar su precisión astronómica.',
   },
   {
@@ -182,6 +186,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Vangelis compuso la pieza "Alpha" específicamente para la serie Cosmos, aunque nunca visitó el set de producción en Los Ángeles. Trabajaba desde su estudio Nemo en Londres, donde tenía un sistema de sintetizadores analógicos que incluía un Yamaha CS-80, un ARP 2600 y un Sequential Circuits Prophet-5. La pieza fue grabada en una sola sesión de improvisación de 45 minutos, y Vangelis seleccionó los mejores fragmentos para la versión final. El álbum resultante vendió más de 2 millones de copias a nivel mundial.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las técnicas de composición óptica utilizadas en Cosmos requerían filmar cada elemento de la escena por separado — la nave, el fondo espacial, las estrellas, los planetas — y luego combinarlos fotograma a fotograma en una impresora óptica. Una sola secuencia de 10 segundos podía requerir hasta 240 fotogramas individuales procesados manualmente. Este proceso era tan laborioso que el equipo de efectos especiales trabajaba en turnos de 16 horas para cumplir con los plazos de producción, completando un promedio de solo 3 segundos de animación finalizada por día.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m2/banner_produccion-cosmos.webp',
+    bannerCaption: 'La producción de Cosmos: años de trabajo para recrear el universo en televisión',
     fact: 'Adolf Schaller, el artista principal de efectos visuales de Cosmos, pintó a mano más de 60 fondos espaciales para la serie utilizando técnicas de aerógrafo sobre cartulinas negras de 1.5 × 2 metros. Cada fondo representaba una vista astronómica específica — una nebulosa, un cúmulo de galaxias, la superficie de un planeta — y debía ser validado científicamente por Sagan antes de ser filmado. Schaller utilizaba datos de observatorios reales, incluyendo fotografías del Observatorio Palomar y del telescopio espacial OAO-2, para asegurar la fidelidad de los colores y las proporciones estelares.',
   },
   {
@@ -201,6 +207,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Carl Sagan no inventó el concepto de comprimir la historia del universo en una escala temporal humana — versiones similares habían sido publicadas por otros divulgadores antes de 1980 — pero fue él quien lo perfeccionó, lo bautizó como "Calendario Cósmico" y lo hizo globalmente reconocido a través de Cosmos. Su presentación en el episodio 1 fue filmada en un set especial que recreaba un salón circular con las páginas del calendario proyectadas en paneles de 360 grados. La secuencia requirió 3 días completos de filmación para lograr las transiciones que Sagan deseaba.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La edad del universo — 13,800 millones de años con un margen de error de ±21 millones de años — fue determinada con alta precisión por el satélite Planck de la Agencia Espacial Europea, cuyos resultados se publicaron en 2013 y 2018. Planck midió las fluctuaciones de temperatura del fondo cósmico de microondas (CMB), la radiación residual del Big Bang, con una sensibilidad de una millonésima de grado. Estos datos confirman la escala temporal que Sagan presentaba en el Calendario Cósmico de 1980 con una precisión notable para la tecnología disponible en aquella época.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m2/banner_calendario-cosmico.webp',
+    bannerCaption: 'El Calendario Cósmico: toda la historia humana cabe en los últimos 10 segundos del año cósmico',
     fact: 'En la escala del Calendario Cósmico, la vida media de un ser humano — unos 80 años — equivale a apenas 0.18 segundos. La totalidad de la era espacial humana, desde el lanzamiento del Sputnik 1 el 4 de octubre de 1957 hasta hoy, equivale a aproximadamente 0.15 segundos. El viaje más lejano de la humanidad — la misión Apolo 13 que alcanzó 400,171 km de la Tierra el 15 de abril de 1970 — ocurrió en una fracción tan diminuta de ese calendario que es imposible de representar gráficamente. Esto ilustra la escala temporal y espacial del universo que Sagan buscaba comunicar.',
   },
   {
@@ -220,6 +228,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El artículo científico sobre el invierno nuclear, conocido como "TTAPS" por las iniciales de sus cinco autores (R.P. Turco, O.B. Toon, T.P. Ackerman, J.B. Pollack y Carl Sagan), fue publicado en la revista Science en diciembre de 1983. El estudio modeló los efectos climáticos de una guerra nuclear a gran escala y concluyó que incluso un intercambio limitado de 100 cabezas nucleares podría reducir las temperaturas globales en 1-2°C durante años. Este trabajo influyó directamente en las negociaciones de desarme entre Reagan y Gorbachov que condujeron al Tratado INF de 1987.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La comparación de Sagan entre Venus y la Tierra fue profética. Venus tiene una masa del 81.5% de la Tierra y un radio del 94.9%, pero su atmósfera de CO₂ ha creado un efecto invernadero que eleva su temperatura superficial a 462°C — más caliente que Mercurio, que está mucho más cerca del Sol. Las sondas soviéticas Venera 7 (1970) a Venera 14 (1981) confirmaron estas condiciones. La presión atmosférica en la superficie de Venus es de 92 atmósferas, equivalente a estar a 900 metros de profundidad bajo el océano terrestre.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m2/banner_mensajes-cientificos.webp',
+    bannerCaption: 'Los mensajes científicos de Cosmos: evolución, átomos estelares y el lugar de la humanidad',
     fact: 'En 1985, cinco años después de Cosmos, Sagan testificó ante el Congreso de Estados Unidos sobre el efecto invernadero y el calentamiento global. Su testimonio, junto con el del climatólogo James Hansen del Instituto Goddard de la NASA, es considerado uno de los primeros llamados formales ante un cuerpo legislativo sobre la amenaza del cambio climático antropogénico. Los datos que Sagan presentó en 1985 proyectaban un aumento de temperatura de 1.5-4.5°C para finales del siglo XXI — un rango que coincide con las proyecciones actuales del Panel Intergubernamental sobre Cambio Climático (IPCC) publicadas en su Sexto Informe de 2021.',
   },
   {
@@ -239,6 +249,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando Neil deGrasse Tyson visitó a Sagan en Cornell a los 17 años, nevó tanto esa tarde que Sagan le ofreció pasar la noche en su casa. Tyson ha contado esta anécdota en decenas de conferencias como ejemplo de lo que significa ser un científico generoso: "Sagan era la persona más famosa que yo conocía, y me trató como si yo fuera la persona más importante del mundo." Tyson fue admitido en Cornell pero eligió estudiar en Harvard; años después regresó a Cornell como profesor visitante, ocupando el mismo edificio donde Sagan tenía su oficina.' },
       { label: 'Dato Científico', icon: 'atom', text: 'LightSail 2, financiada parcialmente por la Sociedad Planetaria fundada por Sagan, fue lanzada el 25 de junio de 2019 a bordo de un cohete Falcon Heavy de SpaceX. La nave desplegó una vela solar de 32 metros cuadrados hecha de Mylar metalizado de solo 4.5 micrómetros de espesor — más delgada que un cabello humano. Durante sus 3 años de operación, LightSail 2 demostró que la presión de los fotones solares podía elevar la órbita de una nave, confirmando un principio físico que Sagan había promovido décadas antes como método viable de propulsión interplanetaria.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m2/banner_legado-serie.webp',
+    bannerCaption: 'El legado de Cosmos: 500 millones de espectadores en 60 países inspirados a amar la ciencia',
     fact: 'Carl Sagan murió el 20 de diciembre de 1996, a los 62 años, debido a mielodisplasia, una enfermedad de la médula ósea. Había recibido tres trasplantes de médula ósea en los dos años anteriores, donados por su hermana Carol. En sus últimas semanas de vida, Sagan continuó trabajando en el guion de la película "Contact" (1997), basada en su novela de 1985, y revisó las pruebas finales de su libro "Miles de Millones" (Billions and Billions), que se publicó póstumamente en 1997 con un epílogo escrito por Ann Druyan sobre los últimos días de su vida.',
   },
   {
@@ -258,6 +270,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Ann Druyan, viuda de Sagan y productora de las tres temporadas de Cosmos, ha dedicado más de cuatro décadas de su vida a mantener vivo el legado de la serie. Para la producción de "Cosmos: Mundos Posibles" (2020), Druyan trabajó durante cinco años en la escritura y producción, consultando con más de 50 científicos activos en campos que van desde la astrofísica hasta la biología sintética. En una entrevista de 2020, Druyan afirmó: "Carl y yo soñamos Cosmos como un proyecto de toda la vida, no como una serie de televisión con fecha de caducidad."' },
       { label: 'Dato Científico', icon: 'atom', text: 'El telescopio espacial James Webb, con un espejo primario de 6.5 metros de diámetro compuesto por 18 segmentos hexagonales de berilio recubiertos de oro, puede detectar la luz infrarroja de galaxias que se formaron hace 13,500 millones de años — apenas 300 millones de años después del Big Bang. En septiembre de 2022, el JWST identificó la galaxia JADES-GS-z13-0, la más lejana confirmada hasta la fecha, cuya luz tardó 13,400 millones de años en llegar hasta nosotros. Estos descubrimientos confirman las preguntas que Sagan planteaba en Cosmos sobre los orígenes del universo observable.' },
     ],
+    bannerImage: '/assets/sagan/infographic_m2/banner_cosmos-siglo-xxi.webp',
+    bannerCaption: 'Cosmos en el siglo XXI: Neil deGrasse Tyson continúa la misión de Sagan con nueva ciencia',
     fact: 'En 2024, la Unión Astronómica Internacional (IAU) propuso nombrar un asteroide en honor a Carl Sagan: el asteroide 2709 Sagan, descubierto el 6 de marzo de 1982 por el astrónomo E. Bowell en la estación Anderson Mesa de Flagstaff, Arizona. El asteroide tiene un diámetro estimado de 20 kilómetros y orbita el Sol en el cinturón principal de asteroides entre Marte y Júpiter, con un período orbital de 3.97 años. La designación oficial fue aprobada por el Comité de Nomenclatura de Cuerpos Menores de la IAU, que consideró la contribución de Sagan a la ciencia planetaria y la divulgación como motivo suficiente para la distinción.',
   },
 ];
@@ -699,6 +713,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+                {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '12px'
+              }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{
+                fontSize: '0.78rem',
+                color: '#aaa',
+                textAlign: 'center',
+                marginTop: '0.4rem',
+                marginBottom: '0',
+                fontStyle: 'italic',
+                padding: '0 0.5rem'
+              }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 
