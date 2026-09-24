@@ -123,6 +123,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'reloj-solar',
+              bannerImage: '/assets/egypt/infographic_m12/banner_abu-simbel.webp',
     title: 'El Reloj del Faraón',
     color: '#E8C96A',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_reloj.png',
@@ -138,6 +139,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'piramidion',
+              bannerImage: '/assets/egypt/infographic_m12/banner_dendera-zodiaco.webp',
     title: 'La Punta de Oro',
     color: '#FFD700',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_piramidion.png',
@@ -153,6 +155,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cantera-asuan',
+              bannerImage: '/assets/egypt/infographic_m12/banner_hatshepsut-templo.webp',
     title: 'Gigantes de Granito',
     color: '#C4846C',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_cantera.png',
@@ -168,6 +171,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'calendario-piedra',
+              bannerImage: '/assets/egypt/infographic_m12/banner_karnak-templo.webp',
     title: 'Calendario de Piedra',
     color: '#7EC8E3',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_calendario.png',
@@ -183,6 +187,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'roma-obeliscos',
+              bannerImage: '/assets/egypt/infographic_m12/banner_luxor-temple.webp',
     title: 'Roma: Ciudad de Obeliscos',
     color: '#D4674A',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_roma.png',
@@ -198,6 +203,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'aguja-cleopatra',
+              bannerImage: '/assets/egypt/infographic_m12/banner_obelisco-origen.webp',
     title: 'La Aguja de Cleopatra',
     color: '#9B59B6',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_aguja.png',
@@ -213,6 +219,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eratostenes',
+              bannerImage: '/assets/egypt/infographic_m12/banner_tutankhamun-tumba.webp',
     title: 'Midiendo la Tierra',
     color: '#1ABC9C',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_eratostenes.png',
@@ -228,6 +235,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-tiempo',
+              bannerImage: '/assets/egypt/infographic_m12/banner_valley-kings.webp',
     title: 'Del Obelisco al Reloj Atómico',
     color: '#E67E22',
     btnImage: '/assets/egypt/infographic_obeliscos/btn_legado.png',
@@ -519,7 +527,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

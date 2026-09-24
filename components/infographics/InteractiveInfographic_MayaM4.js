@@ -81,6 +81,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'tzolkin-estructura',
+              bannerImage: '/assets/maya/infographic_m4/banner_constelaciones-mayas.webp',
     title: 'Estructura',
     color: '#7B1FA2',
     btnImage: '/assets/maya/infographic_m4/btn_tzolkin-estructura.jpg',
@@ -100,6 +101,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'veinte-dias',
+              bannerImage: '/assets/maya/infographic_m4/banner_copa-observacion.webp',
     title: 'Los 20 Días',
     color: '#FFC107',
     btnImage: '/assets/maya/infographic_m4/btn_veinte-dias.jpg',
@@ -119,6 +121,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'trece-numeros',
+              bannerImage: '/assets/maya/infographic_m4/banner_eclipse-maya.webp',
     title: 'Los 13 Números',
     color: '#C62828',
     btnImage: '/assets/maya/infographic_m4/btn_trece-numeros.jpg',
@@ -138,6 +141,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'destino-nacimiento',
+              bannerImage: '/assets/maya/infographic_m4/banner_milky-way-maya.webp',
     title: 'Destino al Nacer',
     color: '#00838F',
     btnImage: '/assets/maya/infographic_m4/btn_destino-nacimiento.jpg',
@@ -157,6 +161,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciclo-agricola-ritual',
+              bannerImage: '/assets/maya/infographic_m4/banner_observatorio-caracol.webp',
     title: 'Ciclo Ritual',
     color: '#2E7D32',
     btnImage: '/assets/maya/infographic_m4/btn_ciclo-agricola-ritual.jpg',
@@ -176,6 +181,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sacerdotes-contadores',
+              bannerImage: '/assets/maya/infographic_m4/banner_pleiades-mayas.webp',
     title: 'Los Sacerdotes Contadores',
     color: '#263238',
     btnImage: '/assets/maya/infographic_m4/btn_sacerdotes-contadores.jpg',
@@ -195,6 +201,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mesoamerica-universal',
+              bannerImage: '/assets/maya/infographic_m4/banner_venus-maya.webp',
     title: 'Calendario Universal',
     color: '#FF5722',
     btnImage: '/assets/maya/infographic_m4/btn_mesoamerica-universal.jpg',
@@ -574,7 +581,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem', padding: '1.2rem', borderRadius: '12px',
             background: `linear-gradient(90deg, ${node.color}15, transparent)`,

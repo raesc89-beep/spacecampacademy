@@ -98,6 +98,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'piramide-castillo',
+              bannerImage: '/assets/maya/infographic_m2/banner_cacao-fermentacion.webp',
     title: 'El Castillo',
     color: '#FF6D00',
     btnImage: '/assets/maya/infographic_m2/btn_piramide-castillo.jpg',
@@ -117,6 +118,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'equinoccio-serpiente',
+              bannerImage: '/assets/maya/infographic_m2/banner_cacao-moneda.webp',
     title: 'La Serpiente de Luz',
     color: '#8D6E63',
     btnImage: '/assets/maya/infographic_m2/btn_equinoccio-serpiente.jpg',
@@ -136,6 +138,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'geometria-solar',
+              bannerImage: '/assets/maya/infographic_m2/banner_cacao-origen.webp',
     title: 'Geometría Solar',
     color: '#FFD600',
     btnImage: '/assets/maya/infographic_m2/btn_geometria-solar.jpg',
@@ -155,6 +158,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'calendario-piedra',
+              bannerImage: '/assets/maya/infographic_m2/banner_cacao-salud.webp',
     title: 'Calendario en Piedra',
     color: '#29B6F6',
     btnImage: '/assets/maya/infographic_m2/btn_calendario-piedra.jpg',
@@ -174,6 +178,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'acustica-quetzal',
+              bannerImage: '/assets/maya/infographic_m2/banner_chocolate-europeo.webp',
     title: 'Acústica del Quetzal',
     color: '#00C853',
     btnImage: '/assets/maya/infographic_m2/btn_acustica-quetzal.jpg',
@@ -193,6 +198,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'construccion-capas',
+              bannerImage: '/assets/maya/infographic_m2/banner_industria-chocolate.webp',
     title: 'Construcción en Capas',
     color: '#D50000',
     btnImage: '/assets/maya/infographic_m2/btn_construccion-capas.jpg',
@@ -212,6 +218,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'patrimonio-mundial',
+              bannerImage: '/assets/maya/infographic_m2/banner_xocolatl-bebida.webp',
     title: 'Patrimonio Mundial',
     color: '#D7CCC8',
     btnImage: '/assets/maya/infographic_m2/btn_patrimonio-mundial.jpg',
@@ -654,7 +661,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* â”€â”€â”€ Fun Fact Footer â”€â”€â”€ */}
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '2rem',
             padding: '1.5rem',

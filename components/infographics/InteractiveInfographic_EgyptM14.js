@@ -228,6 +228,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'serpiente',
+              bannerImage: '/assets/egypt/infographic_m14/banner_astronomia-egipcia.webp',
     title: 'La Serpiente del Caos',
     color: '#FF5252',
     btnImage: '/assets/egypt/infographic_apofis/btn_serpiente.png',
@@ -243,6 +244,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eclipses',
+              bannerImage: '/assets/egypt/infographic_m14/banner_astronomia-medica.webp',
     title: 'Los Eclipses: Apofis Gana',
     color: '#D32F2F',
     btnImage: '/assets/egypt/infographic_apofis/btn_eclipses.png',
@@ -258,6 +260,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciclo-saros',
+              bannerImage: '/assets/egypt/infographic_m14/banner_decanos-estelares.webp',
     title: 'El Ciclo Saros',
     color: '#E53935',
     btnImage: '/assets/egypt/infographic_apofis/btn_saros.png',
@@ -273,6 +276,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'asteroide-2029',
+              bannerImage: '/assets/egypt/infographic_m14/banner_dendera-planetas.webp',
     title: 'Apophis: El Asteroide Real',
     color: '#C62828',
     btnImage: '/assets/egypt/infographic_apofis/btn_asteroid2029.png',
@@ -288,6 +292,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'peligro',
+              bannerImage: '/assets/egypt/infographic_m14/banner_eclipse-prediccion.webp',
     title: 'La Amenaza Real',
     color: '#B71C1C',
     btnImage: '/assets/egypt/infographic_apofis/btn_peligro.png',
@@ -303,6 +308,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dart',
+              bannerImage: '/assets/egypt/infographic_m14/banner_legado-astronomia.webp',
     title: 'DART: Vencer a Apofis',
     color: '#E53935',
     btnImage: '/assets/egypt/infographic_apofis/btn_dart.png',
@@ -318,6 +324,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'libro-muertos',
+              bannerImage: '/assets/egypt/infographic_m14/banner_merkhet.webp',
     title: 'El Libro para Vencer a Apofis',
     color: '#FF5252',
     btnImage: '/assets/egypt/infographic_apofis/btn_libro.png',
@@ -333,6 +340,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-caos',
+              bannerImage: '/assets/egypt/infographic_m14/banner_nut-cosmologia.webp',
     title: 'El Caos que nos Creó',
     color: '#FF1744',
     btnImage: '/assets/egypt/infographic_apofis/btn_legado.png',
@@ -645,7 +653,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* Fact box */}
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}10, ${node.color}04)`,

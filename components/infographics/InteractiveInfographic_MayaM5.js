@@ -90,6 +90,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'rueda-mecanismo',
+              bannerImage: '/assets/maya/infographic_m5/banner_calendario-comparado.webp',
     title: 'El Mecanismo',
     color: '#1565C0',
     btnImage: '/assets/maya/infographic_m5/btn_rueda-mecanismo.jpg',
@@ -109,6 +110,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fecha-completa',
+              bannerImage: '/assets/maya/infographic_m5/banner_daykeepers.webp',
     title: 'Una Fecha Completa',
     color: '#FFB300',
     btnImage: '/assets/maya/infographic_m5/btn_fecha-completa.jpg',
@@ -128,6 +130,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciclo-52-anos',
+              bannerImage: '/assets/maya/infographic_m5/banner_fin-baktun.webp',
     title: 'El Ciclo de 52 Años',
     color: '#00897B',
     btnImage: '/assets/maya/infographic_m5/btn_ciclo-52-anos.jpg',
@@ -147,6 +150,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cuenta-larga',
+              bannerImage: '/assets/maya/infographic_m5/banner_haab-solar.webp',
     title: 'La Cuenta Larga',
     color: '#BF360C',
     btnImage: '/assets/maya/infographic_m5/btn_cuenta-larga.jpg',
@@ -166,6 +170,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'matematica-base-20',
+              bannerImage: '/assets/maya/infographic_m5/banner_long-count.webp',
     title: 'Matemáticas Base 20',
     color: '#6A1B9A',
     btnImage: '/assets/maya/infographic_m5/btn_matematica-base-20.jpg',
@@ -185,6 +190,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'engranajes-cosmicos',
+              bannerImage: '/assets/maya/infographic_m5/banner_rueda-calendrica.webp',
     title: 'Engranajes Cósmicos',
     color: '#FF6F00',
     btnImage: '/assets/maya/infographic_m5/btn_engranajes-cosmicos.jpg',
@@ -204,6 +210,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'precision-astronomica',
+              bannerImage: '/assets/maya/infographic_m5/banner_tzolkin-calendario.webp',
     title: 'Precisión Astronómica',
     color: '#A1887F',
     btnImage: '/assets/maya/infographic_m5/btn_precision-astronomica.jpg',
@@ -621,7 +628,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

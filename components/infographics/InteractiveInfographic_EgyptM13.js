@@ -88,6 +88,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "calendario-365",
+              "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-365.webp",
     "title": "El Primer Calendario de 365 Días",
     "color": "#80D080",
     "btnImage": "/assets/egypt/infographic_calendario/btn_calendario-365.png",
@@ -115,6 +116,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "calendario-lunar",
+              "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-lunar.webp",
     "title": "El Problema del Calendario Lunar",
     "color": "#7EC8E3",
     "btnImage": "/assets/egypt/infographic_calendario/btn_calendario-lunar.png",
@@ -142,6 +144,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tres-estaciones",
+              "bannerImage": "/assets/egypt/infographic_m13/banner_gregorio-reforma.webp",
     "title": "Akhet, Peret y Shemu",
     "color": "#E8C96A",
     "btnImage": "/assets/egypt/infographic_calendario/btn_tres-estaciones.png",
@@ -169,6 +172,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sirio-sopdet",
+              "bannerImage": "/assets/egypt/infographic_m13/banner_haab-maya.webp",
     "title": "Sirio y el Orto Heliaco",
     "color": "#B388FF",
     "btnImage": "/assets/egypt/infographic_calendario/btn_sirio-sopdet.png",
@@ -196,6 +200,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "julio-cesar",
+              "bannerImage": "/assets/egypt/infographic_m13/banner_julio-cesar.webp",
     "title": "De Egipto a Roma: El Calendario Juliano",
     "color": "#FF8A65",
     "btnImage": "/assets/egypt/infographic_calendario/btn_julio-cesar.png",
@@ -223,6 +228,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gregorio-reforma",
+              "bannerImage": "/assets/egypt/infographic_m13/banner_sirio-sopdet.webp",
     "title": "La Reforma Gregoriana de 1582",
     "color": "#4FC3F7",
     "btnImage": "/assets/egypt/infographic_calendario/btn_gregorio-reforma.png",
@@ -250,6 +256,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "haab-maya",
+              "bannerImage": "/assets/egypt/infographic_m13/banner_tres-estaciones.webp",
     "title": "Los Mayas: Otro 365",
     "color": "#A5D6A7",
     "btnImage": "/assets/egypt/infographic_calendario/btn_haab-maya.png",
@@ -601,7 +608,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           ))}
         </div>
 
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem', background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,
             border: `1px solid ${node.color}25`, borderRadius: '16px', padding: '1.2rem 1.5rem',

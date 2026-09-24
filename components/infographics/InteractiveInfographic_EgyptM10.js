@@ -128,6 +128,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'metal-cielo',
+              bannerImage: '/assets/egypt/infographic_m10/banner_alineacion-astronomica.webp',
     title: 'El Metal del Cielo',
     color: '#B0C4DE',
     btnImage: '/assets/egypt/infographic_daga/btn_metal.png',
@@ -144,6 +145,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'daga-forja',
+              bannerImage: '/assets/egypt/infographic_m10/banner_esfinge-giza.webp',
     title: 'Forjando Estrellas',
     color: '#FF8C42',
     btnImage: '/assets/egypt/infographic_daga/btn_forja.png',
@@ -160,6 +162,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tumba-tut',
+              bannerImage: '/assets/egypt/infographic_m10/banner_kheops-construction.webp',
     title: 'La Tumba del Faraón Niño',
     color: '#FFD700',
     btnImage: '/assets/egypt/infographic_daga/btn_tumba.png',
@@ -176,6 +179,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rayos-x',
+              bannerImage: '/assets/egypt/infographic_m10/banner_legado-piramidal.webp',
     title: 'Detectives con Rayos X',
     color: '#00CED1',
     btnImage: '/assets/egypt/infographic_daga/btn_rayosx.png',
@@ -192,6 +196,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'meteoritos-mundo',
+              bannerImage: '/assets/egypt/infographic_m10/banner_materiales-piramide.webp',
     title: 'Meteoritos del Mundo',
     color: '#9B59B6',
     btnImage: '/assets/egypt/infographic_daga/btn_meteoritos.png',
@@ -208,6 +213,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'supernova-origen',
+              bannerImage: '/assets/egypt/infographic_m10/banner_piramide-interior.webp',
     title: 'Nacidos de Supernovas',
     color: '#E74C3C',
     btnImage: '/assets/egypt/infographic_daga/btn_supernova.png',
@@ -224,6 +230,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tesoro-museo',
+              bannerImage: '/assets/egypt/infographic_m10/banner_piramides-menores.webp',
     title: 'El Tesoro del Museo',
     color: '#F39C12',
     btnImage: '/assets/egypt/infographic_daga/btn_museo.png',
@@ -240,6 +247,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-cosmico',
+              bannerImage: '/assets/egypt/infographic_m10/banner_trabajadores-piramide.webp',
     title: 'Legado Cósmico',
     color: '#1ABC9C',
     btnImage: '/assets/egypt/infographic_daga/btn_legado.png',
@@ -586,7 +594,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* â”€â”€â”€ Fact Box (styled as pull-quote) â”€â”€â”€ */}
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

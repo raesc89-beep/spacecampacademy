@@ -119,6 +119,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'nut',
+              bannerImage: '/assets/egypt/infographic_m11/banner_anubis-juicio.webp',
     title: '¿Quién es Nut?',
     color: '#C4A7E7',
     btnImage: '/assets/egypt/infographic/btn_nut.png',
@@ -136,6 +137,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nilo-cielo',
+              bannerImage: '/assets/egypt/infographic_m11/banner_ennead-dioses.webp',
     title: 'El Nilo del Cielo',
     color: '#7EC8E3',
     btnImage: '/assets/egypt/infographic/btn_nile.png',
@@ -153,6 +155,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'arriba-abajo',
+              bannerImage: '/assets/egypt/infographic_m11/banner_horus-halcon.webp',
     title: 'Como es Arriba, es Abajo',
     color: '#FFD700',
     btnImage: '/assets/egypt/infographic/btn_above.png',
@@ -170,6 +173,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orion-piramides',
+              bannerImage: '/assets/egypt/infographic_m11/banner_isis-alas.webp',
     title: 'Orión y las Pirámides',
     color: '#E8C96A',
     btnImage: '/assets/egypt/infographic/btn_pyramids.png',
@@ -187,6 +191,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sagitario',
+              bannerImage: '/assets/egypt/infographic_m11/banner_osiris-mito.webp',
     title: 'El Monstruo del Centro',
     color: '#FF6B6B',
     btnImage: '/assets/egypt/infographic/btn_blackhole.png',
@@ -204,6 +209,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'viaje-faraon',
+              bannerImage: '/assets/egypt/infographic_m11/banner_ra-solar.webp',
     title: 'El Viaje del Faraón',
     color: '#F5A623',
     btnImage: '/assets/egypt/infographic/btn_pharaoh.png',
@@ -221,6 +227,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'navegantes',
+              bannerImage: '/assets/egypt/infographic_m11/banner_sincretismo-religioso.webp',
     title: '¡Navegantes del Nilo Cósmico!',
     color: '#4ECDC4',
     btnImage: '/assets/egypt/infographic/btn_ship.png',
@@ -238,6 +245,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'galaxia-numeros',
+              bannerImage: '/assets/egypt/infographic_m11/banner_thoth-escriba.webp',
     title: 'Nuestra Galaxia en Números',
     color: '#00E4FF',
     btnImage: '/assets/egypt/infographic/btn_galaxy.png',
@@ -579,7 +587,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* â”€â”€â”€ Fact Box (styled as pull-quote) â”€â”€â”€ */}
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

@@ -156,6 +156,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'disco-zodiacal',
+              bannerImage: '/assets/egypt/infographic_m9/banner_djer-primera-dinastia.webp',
     title: 'El Disco del Cielo',
     color: '#D46A6A',
     btnImage: '/assets/egypt/infographic_dendera/btn_disco.png',
@@ -172,6 +173,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'constelaciones',
+              bannerImage: '/assets/egypt/infographic_m9/banner_fin-egipto.webp',
     title: 'Las 12 + las Egipcias',
     color: '#7EB8C9',
     btnImage: '/assets/egypt/infographic_dendera/btn_constelaciones.png',
@@ -188,6 +190,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'templo-hathor',
+              bannerImage: '/assets/egypt/infographic_m9/banner_menes-narmer.webp',
     title: 'El Templo de Hathor',
     color: '#C9A96E',
     btnImage: '/assets/egypt/infographic_dendera/btn_templo.png',
@@ -204,6 +207,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'robo-louvre',
+              bannerImage: '/assets/egypt/infographic_m9/banner_periodo-tardio.webp',
     title: 'El Robo del Zodiaco',
     color: '#8B6B8B',
     btnImage: '/assets/egypt/infographic_dendera/btn_louvre.png',
@@ -220,6 +224,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'datacion',
+              bannerImage: '/assets/egypt/infographic_m9/banner_ramseses-ii.webp',
     title: 'Fotografía del Cielo del 50 a.C.',
     color: '#E8C96A',
     btnImage: '/assets/egypt/infographic_dendera/btn_datacion.png',
@@ -236,6 +241,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'criaturas',
+              bannerImage: '/assets/egypt/infographic_m9/banner_reino-antiguo.webp',
     title: 'Criaturas del Cielo Egipcio',
     color: '#6B8E6B',
     btnImage: '/assets/egypt/infographic_dendera/btn_criaturas.png',
@@ -252,6 +258,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'planetas',
+              bannerImage: '/assets/egypt/infographic_m9/banner_reino-medio.webp',
     title: 'Los Dioses Errantes',
     color: '#E8A87C',
     btnImage: '/assets/egypt/infographic_dendera/btn_planetas.png',
@@ -268,6 +275,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado',
+              bannerImage: '/assets/egypt/infographic_m9/banner_reino-nuevo.webp',
     title: 'El Viaje de 5,000 Años',
     color: '#9B8EC7',
     btnImage: '/assets/egypt/infographic_dendera/btn_legado.png',
@@ -600,7 +608,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* Fact Box */}
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {/* Fact Box */}
         {node.fact && (
           <div style={{
             marginTop: '1.5rem',

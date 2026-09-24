@@ -164,6 +164,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'conductos',
+              bannerImage: '/assets/egypt/infographic_m5/banner_biblioteca-alejandria.webp',
     title: 'Los Conductos Secretos',
     color: '#F0A500',
     btnImage: '/assets/egypt/infographic_giza/btn_conductos.png',
@@ -183,6 +184,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'estrellas-laser',
+              bannerImage: '/assets/egypt/infographic_m5/banner_champollion.webp',
     title: 'El Láser Estelar',
     color: '#FFD700',
     btnImage: '/assets/egypt/infographic_giza/btn_laser.png',
@@ -202,6 +204,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'precision',
+              bannerImage: '/assets/egypt/infographic_m5/banner_escriptor-real.webp',
     title: 'Precisión Imposible',
     color: '#4CAF50',
     btnImage: '/assets/egypt/infographic_giza/btn_precision.png',
@@ -221,6 +224,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orion-piramides',
+              bannerImage: '/assets/egypt/infographic_m5/banner_escritura-jeroglificos.webp',
     title: 'Orión en la Tierra',
     color: '#9B6BFF',
     btnImage: '/assets/egypt/infographic_giza/btn_orion.png',
@@ -240,6 +244,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'constructores',
+              bannerImage: '/assets/egypt/infographic_m5/banner_fabricacion-papiro.webp',
     title: 'Los Constructores',
     color: '#FF7043',
     btnImage: '/assets/egypt/infographic_giza/btn_constructores.png',
@@ -259,6 +264,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'scan-pyramids',
+              bannerImage: '/assets/egypt/infographic_m5/banner_legado-escritura.webp',
     title: 'Muones Cósmicos',
     color: '#4FC3F7',
     btnImage: '/assets/egypt/infographic_giza/btn_muones.png',
@@ -278,6 +284,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'temperatura',
+              bannerImage: '/assets/egypt/infographic_m5/banner_papiro-planta.webp',
     title: 'La Pirámide Termo',
     color: '#E57373',
     btnImage: '/assets/egypt/infographic_giza/btn_temperatura.png',
@@ -297,6 +304,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-giza',
+              bannerImage: '/assets/egypt/infographic_m5/banner_rosetta-stone.webp',
     title: 'El Legado Eterno',
     color: '#AB47BC',
     btnImage: '/assets/egypt/infographic_giza/btn_legado.png',
@@ -583,7 +591,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* Fact Box */}
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {/* Fact Box */}
         {node.fact && (
           <div style={{
             marginTop: '1.5rem',

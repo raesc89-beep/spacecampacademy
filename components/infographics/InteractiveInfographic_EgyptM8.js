@@ -200,6 +200,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'fenomeno',
+              bannerImage: '/assets/egypt/infographic_m8/banner_agricultura-egipcia.webp',
     title: 'El Fenómeno Solar',
     color: '#FF9A3C',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_fenomeno.png',
@@ -215,6 +216,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'colosos',
+              bannerImage: '/assets/egypt/infographic_m8/banner_calendario-agricola.webp',
     title: 'Los Cuatro Colosos',
     color: '#FF8C00',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_colosos.png',
@@ -230,6 +232,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ingenieria',
+              bannerImage: '/assets/egypt/infographic_m8/banner_geometria-catastro.webp',
     title: 'Ingeniería Faraónica',
     color: '#E8851A',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_ingenieria.png',
@@ -245,6 +248,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ramses',
+              bannerImage: '/assets/egypt/infographic_m8/banner_impuestos-grano.webp',
     title: 'Ramsés el Grande',
     color: '#FF7043',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_ramses.png',
@@ -260,6 +264,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'arenisca',
+              bannerImage: '/assets/egypt/infographic_m8/banner_legado-hidraulica.webp',
     title: 'La Arenisca Dorada',
     color: '#D4870A',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_arenisca.png',
@@ -275,6 +280,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rescate',
+              bannerImage: '/assets/egypt/infographic_m8/banner_nilo-crecida.webp',
     title: 'El Gran Rescate',
     color: '#FF6B2B',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_rescate.png',
@@ -290,6 +296,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nefertari',
+              bannerImage: '/assets/egypt/infographic_m8/banner_nilometro.webp',
     title: 'El Templo de Nefertari',
     color: '#FF8C5A',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_nefertari.png',
@@ -305,6 +312,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado',
+              bannerImage: '/assets/egypt/infographic_m8/banner_shaduf-riego.webp',
     title: 'Legado Universal',
     color: '#FF9A3C',
     btnImage: '/assets/egypt/infographic_abusimbel/btn_legado.png',
@@ -644,7 +652,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* Fact box */}
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

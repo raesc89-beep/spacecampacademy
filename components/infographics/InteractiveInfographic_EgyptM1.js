@@ -131,6 +131,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'observatorio',
+              bannerImage: '/assets/egypt/infographic_m1/banner_circulo-piedras.webp',
     title: 'El Primer Observatorio',
     color: '#D4A843',
     btnImage: '/assets/egypt/infographic_nabta/btn_observatorio.png',
@@ -152,6 +153,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sahara-verde',
+              bannerImage: '/assets/egypt/infographic_m1/banner_sahara-verde.webp',
     title: 'El Sahara Verde',
     color: '#4CAF50',
     btnImage: '/assets/egypt/infographic_nabta/btn_sahara.png',
@@ -173,6 +175,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'megalitos',
+              bannerImage: '/assets/egypt/infographic_m1/banner_nabta-playa.webp',
     title: 'Las Piedras Gigantes',
     color: '#A0522D',
     btnImage: '/assets/egypt/infographic_nabta/btn_megalitos.png',
@@ -194,6 +197,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'solsticio',
+              bannerImage: '/assets/egypt/infographic_m1/banner_nilo-migracion.webp',
+              bannerImage: '/assets/egypt/infographic_m1/banner_solsticio.webp',
     title: 'El Reloj del Solsticio',
     color: '#FFB347',
     btnImage: '/assets/egypt/infographic_nabta/btn_solsticio.png',
@@ -215,6 +220,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orion-map',
+              bannerImage: '/assets/egypt/infographic_m1/banner_orion-constelacion.webp',
     title: 'El Mapa de Orión',
     color: '#7EC8E3',
     btnImage: '/assets/egypt/infographic_nabta/btn_orion.png',
@@ -278,6 +284,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-nilo',
+              bannerImage: '/assets/egypt/infographic_m1/banner_wendorf-schild.webp',
+              bannerImage: '/assets/egypt/infographic_m1/banner_legado-nilo.webp',
     title: 'El Camino al Nilo',
     color: '#1ABC9C',
     btnImage: '/assets/egypt/infographic_nabta/btn_legado.png',
@@ -630,7 +638,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* â”€â”€â”€ Fact Box â”€â”€â”€ */}
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

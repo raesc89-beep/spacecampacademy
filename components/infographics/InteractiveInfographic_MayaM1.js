@@ -87,6 +87,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'caracol-estructura',
+              bannerImage: '/assets/maya/infographic_m1/banner_ciudades-estado.webp',
     title: 'La Estructura',
     color: '#4CAF50',
     btnImage: '/assets/maya/infographic_m1/btn_caracol-estructura.jpg',
@@ -106,6 +107,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ventanas-astronomicas',
+              bannerImage: '/assets/maya/infographic_m1/banner_colapso-maya.webp',
     title: 'Las Ventanas',
     color: '#FFD54F',
     btnImage: '/assets/maya/infographic_m1/btn_ventanas-astronomicas.jpg',
@@ -125,6 +127,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'venus-ciclo',
+              bannerImage: '/assets/maya/infographic_m1/banner_herencia-maya.webp',
     title: 'El Ciclo de Venus',
     color: '#37474F',
     btnImage: '/assets/maya/infographic_m1/btn_venus-ciclo.jpg',
@@ -144,6 +147,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'precision-matematica',
+              bannerImage: '/assets/maya/infographic_m1/banner_mayas-actuales.webp',
     title: 'Precisión Matemática',
     color: '#26C6DA',
     btnImage: '/assets/maya/infographic_m1/btn_precision-matematica.jpg',
@@ -163,6 +167,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'astronomos-mayas',
+              bannerImage: '/assets/maya/infographic_m1/banner_origenes-mayas.webp',
     title: 'Los Astrónomos',
     color: '#FF7043',
     btnImage: '/assets/maya/infographic_m1/btn_astronomos-mayas.jpg',
@@ -182,6 +187,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orientacion-cardinal',
+              bannerImage: '/assets/maya/infographic_m1/banner_palenque-arte.webp',
     title: 'Orientación',
     color: '#3F51B5',
     btnImage: '/assets/maya/infographic_m1/btn_orientacion-cardinal.jpg',
@@ -201,6 +207,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-observatorio',
+              bannerImage: '/assets/maya/infographic_m1/banner_tikal-metropolis.webp',
     title: 'El Legado',
     color: '#FFC107',
     btnImage: '/assets/maya/infographic_m1/btn_legado-observatorio.jpg',
@@ -664,6 +671,20 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           <div>
             <h4 style={{ margin: '0 0 0.5rem', color: node.color, fontSize: '1rem', fontWeight: 700 }}>El Dato Extraordinario</h4>
             <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                            {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
               {node.fact}
             </p>
           </div>

@@ -120,6 +120,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'haab-estructura',
+              bannerImage: '/assets/maya/infographic_m3/banner_calendarios-calculo.webp',
     title: 'Estructura del Haab',
     color: '#FDD835',
     btnImage: '/assets/maya/infographic_m3/btn_haab-estructura.jpg',
@@ -139,6 +140,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dieciocho-meses',
+              bannerImage: '/assets/maya/infographic_m3/banner_legado-matematico.webp',
     title: 'Los 18 Meses',
     color: '#795548',
     btnImage: '/assets/maya/infographic_m3/btn_dieciocho-meses.jpg',
@@ -158,6 +160,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'wayeb-peligroso',
+              bannerImage: '/assets/maya/infographic_m3/banner_matematica-maya.webp',
     title: 'Los 5 Días Wayeb',
     color: '#D84315',
     btnImage: '/assets/maya/infographic_m3/btn_wayeb-peligroso.jpg',
@@ -177,6 +180,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'agricola-estacional',
+              bannerImage: '/assets/maya/infographic_m3/banner_numeros-gigantes.webp',
     title: 'Calendario Agrícola',
     color: '#66BB6A',
     btnImage: '/assets/maya/infographic_m3/btn_agricola-estacional.jpg',
@@ -196,6 +200,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'comparacion-gregoriano',
+              bannerImage: '/assets/maya/infographic_m3/banner_paralelo-india.webp',
     title: 'Comparación con el Gregoriano',
     color: '#42A5F5',
     btnImage: '/assets/maya/infographic_m3/btn_comparacion-gregoriano.jpg',
@@ -215,6 +220,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'glifos-meses',
+              bannerImage: '/assets/maya/infographic_m3/banner_sistema-cero.webp',
     title: 'Los Glifos',
     color: '#009688',
     btnImage: '/assets/maya/infographic_m3/btn_glifos-meses.jpg',
@@ -234,6 +240,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'uso-cotidiano',
+              bannerImage: '/assets/maya/infographic_m3/banner_vigesimal.webp',
     title: 'Uso Cotidiano',
     color: '#FF8F00',
     btnImage: '/assets/maya/infographic_m3/btn_uso-cotidiano.jpg',
@@ -670,7 +677,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {/* Fact Box */}
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {/* Fact Box */}
         {node.fact && (
           <div style={{
             marginTop: '1.5rem',

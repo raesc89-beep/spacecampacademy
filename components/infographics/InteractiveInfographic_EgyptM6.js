@@ -160,6 +160,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'senenmut',
+              bannerImage: '/assets/egypt/infographic_m6/banner_canopes.webp',
     title: 'Senenmut: El Genio',
     color: '#9B6BFF',
     btnImage: '/assets/egypt/infographic_senenmut/btn_senenmut.png',
@@ -175,6 +176,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'techo-astronomico',
+              bannerImage: '/assets/egypt/infographic_m6/banner_cerebro-extraccion.webp',
     title: 'El Techo del Cielo',
     color: '#4A90D9',
     btnImage: '/assets/egypt/infographic_senenmut/btn_techo.png',
@@ -190,6 +192,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'planetas-barcas',
+              bannerImage: '/assets/egypt/infographic_m6/banner_conocimiento-medico.webp',
     title: 'Planetas en Barcas',
     color: '#FFB347',
     btnImage: '/assets/egypt/infographic_senenmut/btn_planetas.png',
@@ -205,6 +208,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'constelaciones',
+              bannerImage: '/assets/egypt/infographic_m6/banner_momificacion-proceso.webp',
     title: 'Monstruos del Cielo',
     color: '#4CAF50',
     btnImage: '/assets/egypt/infographic_senenmut/btn_constelaciones.png',
@@ -220,6 +224,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'decanos',
+              bannerImage: '/assets/egypt/infographic_m6/banner_natron-sal.webp',
     title: 'El Reloj de Estrellas',
     color: '#E57373',
     btnImage: '/assets/egypt/infographic_senenmut/btn_decanos.png',
@@ -235,6 +240,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'hatshepsut',
+              bannerImage: '/assets/egypt/infographic_m6/banner_tomografia-momia.webp',
     title: 'La Reina Faraón',
     color: '#E91E63',
     btnImage: '/assets/egypt/infographic_senenmut/btn_hatshepsut.png',
@@ -250,6 +256,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciencia-moderna',
+              bannerImage: '/assets/egypt/infographic_m6/banner_vendaje-momia.webp',
     title: 'Descifrando el Mapa',
     color: '#00BCD4',
     btnImage: '/assets/egypt/infographic_senenmut/btn_ciencia.png',
@@ -265,6 +272,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-cosmos',
+              bannerImage: '/assets/egypt/infographic_m6/banner_vida-eterna.webp',
     title: 'El Legado Cósmico',
     color: '#AB47BC',
     btnImage: '/assets/egypt/infographic_senenmut/btn_legado.png',
@@ -546,7 +554,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* Fact Box */}
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {/* Fact Box */}
         {node.fact && (
           <div style={{
             marginTop: '1.5rem',

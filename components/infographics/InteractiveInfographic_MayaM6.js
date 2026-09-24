@@ -90,6 +90,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'dzibilchaltun-sitio',
+              bannerImage: '/assets/maya/infographic_m6/banner_codices-mayas.webp',
     title: 'El Sitio: Dzibilchaltún',
     color: '#ECEFF1',
     btnImage: '/assets/maya/infographic_m6/btn_dzibilchaltun-sitio.jpg',
@@ -109,6 +110,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'templo-munecos',
+              bannerImage: '/assets/maya/infographic_m6/banner_desciframiento-maya.webp',
     title: 'El Templo de las 7 Muñecas',
     color: '#BF360C',
     btnImage: '/assets/maya/infographic_m6/btn_templo-munecos.jpg',
@@ -128,6 +130,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'equinoccio-solar',
+              bannerImage: '/assets/maya/infographic_m6/banner_escritura-jeroglificos-maya.webp',
     title: 'El Fenómeno del Equinoccio',
     color: '#FFC400',
     btnImage: '/assets/maya/infographic_m6/btn_equinoccio-solar.jpg',
@@ -147,6 +150,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'solsticio-alineacion',
+              bannerImage: '/assets/maya/infographic_m6/banner_glifos-modernos.webp',
     title: 'Los Solsticios: Las Otras Fechas',
     color: '#00B8D4',
     btnImage: '/assets/maya/infographic_m6/btn_solsticio-alineacion.jpg',
@@ -166,6 +170,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sacbe-procesional',
+              bannerImage: '/assets/maya/infographic_m6/banner_inscripciones-palenque.webp',
     title: 'El Sacbé: El Camino Blanco',
     color: '#FFE0B2',
     btnImage: '/assets/maya/infographic_m6/btn_sacbe-procesional.jpg',
@@ -185,6 +190,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cenote-xlakah',
+              bannerImage: '/assets/maya/infographic_m6/banner_landa-destruccion.webp',
     title: 'Cenote Xlakah: El Portal de Agua',
     color: '#0097A7',
     btnImage: '/assets/maya/infographic_m6/btn_cenote-xlakah.jpg',
@@ -204,6 +210,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'restauracion-moderna',
+              bannerImage: '/assets/maya/infographic_m6/banner_legado-escritura-maya.webp',
     title: 'La Restauración Moderna',
     color: '#2E7D32',
     btnImage: '/assets/maya/infographic_m6/btn_restauracion-moderna.jpg',
@@ -651,7 +658,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* â”€â”€â”€ Highlight Fact â”€â”€â”€ */}
-        {node.fact && (
+                      {node.bannerImage && (
+                <div className="relative w-full rounded-xl overflow-hidden mb-6" style={{aspectRatio:'16/5'}}>
+                  <img
+                    src={node.bannerImage}
+                    alt={node.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <p className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium leading-tight">
+                    {node.caption}
+                  </p>
+                </div>
+              )}
+              {node.fact && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
