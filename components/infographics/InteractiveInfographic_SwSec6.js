@@ -102,6 +102,8 @@ const INFOGRAPHIC_NODES = [
         text: 'Los antiguos e icónicos televisores de pantalla plana que pesaban muchísimo y. se volvieron populares a principios de los años 2000 eran conocidos popularmente como "televisores de plasma" justamente porque en su interior tenían millones de minúsculas celdas o burbujas microscópicas atrapadas entre dos gruesos paneles de cristal, las cuales se llenaban de verdaderos gases ionizados que brillaban intensamente para crear la imagen.'
       }
     ],
+    bannerImage: '/assets/starwars/infographic_sec6/banner_plasma-estado.webp',
+    bannerCaption: 'El plasma: el cuarto estado de la materia, más común en el universo que el sólido líquido y gas juntos',
     fact: 'El plasma es científicamente el cuarto estado fundamental de la materia. Se forma cuando un gas se calienta a temperaturas tan extremas que sus átomos se ionizan por completo, liberando sus electrones y transformándose en una mezcla gaseosa pero altamente conductora de electricidad y sensible al magnetismo.'
   },
   {
@@ -136,6 +138,8 @@ const INFOGRAPHIC_NODES = [
         text: 'Un extraordinario grupo de intrépidos físicos en la respetada Universidad de Harvard ha logrado un tremendo hito científico al hacer. puros fotones de luz (que normalmente jamás tienen masa propia) logren interactuar, chocar y rebotar unos con otros, uniéndose y formando un tipo de "molécula de luz". A esta nueva forma exótica y extraña de materia luminosa la llamaron, en tono de broma seria, materia"sable de luz".'
       }
     ],
+    bannerImage: '/assets/starwars/infographic_sec6/banner_sable-laser.webp',
+    bannerCaption: 'Por qué es imposible un sable de luz real: el plasma necesita confinamiento magnético o se dispersa instantáneamente',
     fact: 'Físicamente, un sable láser real no podría estar compuesto únicamente por luz, ya que los fotones no pueden detenerse a una distancia predeterminada. El modelo teórico más acertado propone un poderoso cañón que emite plasma confinado herméticamente en una robusta botella electromagnética invisible.'
   },
   {
@@ -170,6 +174,8 @@ const INFOGRAPHIC_NODES = [
         text: 'Para crear el famoso sonido "pew-pew" de los blasters en la película de 1977, el diseñador de sonido Ben Burtt golpeó los cables tensores de una torre de radio con una llave metálica.'
       }
     ],
+    bannerImage: '/assets/starwars/infographic_sec6/banner_blasters-energia.webp',
+    bannerCaption: 'Los blasters de Star Wars: en la realidad los láseres viajan a velocidad de luz, no en cámara lenta como en la película',
     fact: 'Los blasters de la ciencia ficción se comportan como disparadores de grupos de partículas de plasma confinado, en lugar de verdaderos láseres, ya que viajan mucho más lento que la velocidad de la luz.'
   },
   {
@@ -204,6 +210,8 @@ const INFOGRAPHIC_NODES = [
         text: 'Existen "ventanas de plasma" en laboratorios de física de partículas. Utilizan un campo magnético para contener una fina capa de plasma que separa el vacío del aire normal sin necesidad de usar un cristal sólido.'
       }
     ],
+    bannerImage: '/assets/starwars/infographic_sec6/banner_escudos-deflectores.webp',
+    bannerCaption: 'Escudos deflectores: la magnetosfera terrestre es un escudo real, investigadores diseñan versiones para naves espaciales',
     fact: 'Los ingenieros investigan generadores de campos electromagnéticos que usan plasma ionizado para interceptar y dispersar ondas expansivas antes de que alcancen a los vehículos.'
   },
   {
@@ -325,6 +333,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En Star Wars', icon: 'Zap', text: 'El rayo superlaser de la Estrella de la Muerte sería físicamente un plasma de alta energía confinado por campos magnéticos. La física real del ITER muestra que el confinamiento de plasma a esas energías requeriría electroimanes superconductores del tamaño de una luna — literalmente.' },
       { label: 'Sol en Botella', icon: 'Atom', text: 'El plasma del ITER se calienta a 150 millones de grados — 10 veces más caliente que el núcleo solar — porque a mayor temperatura, los núcleos de hidrógeno se fusionan con más energía. La paradoja: necesitamos crear algo más caliente que el Sol para aprovechar la energía del Sol.' }
     ],
+    bannerImage: '/assets/starwars/infographic_sec6/banner_fusion-tokamak.webp',
+    bannerCaption: 'El tokamak ITER: plasma a 150 millones de grados confinado por imanes superconductores — la energía del futuro',
     fact: 'ITER confina plasma a 150 millones de grados — 10 veces más caliente que el núcleo del Sol — usando campos magnéticos de electroimanes enfriados a -269°C. Estamos creando simultáneamente el objeto más frío y el más caliente del sistema solar en el mismo edificio.'
   },
   {
@@ -344,6 +354,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En Star Wars', icon: 'Zap', text: 'Los camarones pistola generan plasma a 8,000 K cerrando sus pinzas — la misma temperatura que necesitarían los blasters de Star Wars para ionizar el aire y crear un proyectil de plasma. La evolución biológica ya inventó el "blaster" 100 millones de años antes que George Lucas.' },
       { label: 'Fusión en Probeta', icon: 'Microscope', text: 'En 2002, un físico afirmó haber logrado fusión nuclear con ultrasonidos y sonoluminiscencia. La comunidad científica pasó 3 años intentando reproducirlo, falló, y el autor fue sancionado por mala conducta. Este es el caso de estudio perfecto de cómo funciona la verificación científica.' }
     ],
+    bannerImage: '/assets/starwars/infographic_sec6/banner_sonoluminiscencia.webp',
+    bannerCaption: 'Sonoluminiscencia: una burbuja que colapsa por ultrasonido crea plasma a millones de grados por nanosegundos',
     fact: 'El camarón pistola genera plasma a 8,000 K —más caliente que la superficie del Sol— simplemente cerrando su pinza. Este es el único organismo biológico conocido que produce plasma de forma natural y controlada, haciendo de la evolución la primera ingeniería de armas de plasma de la historia.'
   },
   {
@@ -363,6 +375,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En Star Wars', icon: 'Zap', text: 'El rayo de la Estrella de la Muerte destruye planetas en segundos; el magnetar SGR 1806-20 perturbó la ionosfera de la Tierra desde 50,000 años luz con solo 0.2 segundos de actividad. Si estuviera a la distancia Luna-Tierra, destruiría la Tierra sin dispararle nada.' },
       { label: 'Strangelet Peligro', icon: 'Atom', text: 'Antes del arranque del LHC en 2008, el CERN publicó 86 páginas probando que no podría crear "materia extraña" de magnetar que catalíticamente convertiría la Tierra en plasma. Es el análisis de seguridad más elaborado de la historia para refutar una hipótesis de ciencia ficción real.' }
     ],
+    bannerImage: '/assets/starwars/infographic_sec6/banner_magnetares-plasma.webp',
+    bannerCaption: 'Magnetares: estrellas de neutrones con campos magnéticos un billón de veces más fuertes que el de la Tierra',
     fact: 'El campo magnético de un magnetar borraría las tarjetas de crédito magnéticas de toda la Tierra si estuviera a la distancia del Sol. El magnetar SGR 1806-20 ya perturbó la ionosfera terrestre desde 50,000 años luz con una explosión de 0.2 segundos — más energía que el Sol en 100,000 años.'
   }
 

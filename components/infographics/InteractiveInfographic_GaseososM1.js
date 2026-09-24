@@ -80,6 +80,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Júpiter rota sobre su propio eje a una velocidad vertiginosa, mucho más rápido que cualquier otro planeta de nuestro sistema solar. ¡Logra completar un día entero en menos de 10 horas terrestres! Esta asombrosa y frenética rotación centrífuga causa que el gigantesco planeta sea notablemente achatado en los fríos polos y muy abultado en el ecuador, un fascinante fenómeno físico fácilmente observable por astrónomos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La radiación ionizante atrapada en la colosal magnetósfera de Júpiter es aproximadamente mil veces superior a la dosis letal para cualquier ser humano. Precisamente por esta peligrosa razón, sondas como la Galileo y Juno tuvieron que resguardar sus sensibles ordenadores centrales dentro de pesadas bóvedas acorazadas de titanio para evitar la total destrucción de los circuitos integrados.' }
     ],
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_jupiter-rey.webp',
+    bannerCaption: 'Júpiter el rey: la Gran Mancha Roja es una tormenta mayor que la Tierra que lleva 350 años sin detenerse',
     fact: 'Si Júpiter hubiera logrado reunir y asimilar apenas unas 80 veces más masa estelar durante su violenta formación inicial, la inmensa presión gravitatoria y la extrema temperatura en su núcleo habrían sido más que suficientes para encender la fusión nuclear. ¡Júpiter se habría convertido oficialmente en una estrella enana roja!'
   },
   {
@@ -101,6 +103,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'A pesar de poseer un tamaño cien veces mayor que el nuestro, la extraña densidad volumétrica promedio de Saturno es sorprendentemente inferior a la del agua líquida (menos de 1 gramo por centímetro cúbico). Es el único mundo planetario conocido en todo el majestuoso sistema solar con esta fascinante característica física, provocada por su inmensa composición aeriforme carente de rocas densas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El grosor promedio físico de los principales anillos espectaculares de Saturno es sorprendentemente de unos escasos 10 a 20 metros de altitud, a pesar de abarcar y prolongarse horizontalmente a través de distancias inconcebibles de casi 300,000 kilómetros totales. ¡Son estructuras astronómicamente afiladas y más delgadas proporcionalmente que el filo de la cuchilla de afeitar más cortante jamás fabricada por la humanidad!' }
     ],
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_saturno-anillos.webp',
+    bannerCaption: 'Saturno y sus anillos: 282,000 km de diámetro pero solo 20 metros de grosor, hielo y roca en órbita perfecta',
     fact: 'La impresionante y misteriosa tormenta hexagonal que gira eternamente sobre el frío polo norte de Saturno cambia periódicamente de color brillante. Pasa de un tono azulado profundo invernal a un tono dorado amarillento en el cálido verano debido a los incesantes cambios fotoquímicos y la luz solar que interactúa con las partículas estratosféricas durante sus largas estaciones planetarias que duran siete años terrestres.'
   },
   {
@@ -122,6 +126,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Sorprendentemente, Urano fue históricamente el primer y revolucionario cuerpo celeste planetario en ser oficialmente descubierto en la ciencia contemporánea utilizando la valiosa e ingeniosa tecnología del telescopio óptico de espejos. Fue inesperadamente localizado en el negro firmamento nocturno en el año de 1781 por el curioso y diligente astrónomo anglo-alemán William Herschel, quien inocentemente pensó primero que había tropezado accidentalmente por suerte astronómica con un sencillo e inofensivo cometa pasajero.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El gigante de hielo Urano irradia hacia la negrura del espacio sorprendentemente muchísima menos calor energético térmico de la que debería tener considerando sus proporciones y volumen colosales. A diferencia clara de los fogosos Júpiter y Saturno, el núcleo profundo del gélido Urano está misteriosamente inactivo térmicamente o congelado, lo cual le confiere el título oficial de poseer incontestablemente la atmósfera más asombrosamente fría en general de nuestro majestuoso sistema.' }
     ],
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_urano-inclinado.webp',
+    bannerCaption: 'Urano el inclinado: rueda de lado alrededor del Sol con una inclinación de 98 grados — un polo tiene 42 años de día',
     fact: 'El complejo sistema orbital de Urano no solo posee numerosas lunas y pequeños satélites helados con irregulares formas curiosas orbitando, sino que también alberga su propio sistema tenue, frágil e invisible de unos trece oscuros anillos de polvo espacial que, por supuesto debido a su inclinación volcadora axial de locos, ¡giran de manera absurda verticalmente como una colosal e infinita rueda de la fortuna celestial de feria galáctica en vez de horizontalmente!'
   },
   {
@@ -143,6 +149,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Curiosamente e inesperadamente, en las lejanísimas, enigmáticas y presurizadas profundidades opresivas del oscuro océano oceánico líquido interno sub-superficial de Neptuno, las abrumadoras e inhumanas condiciones ambientales químicas son posiblemente tan brutalmente extremas que los poderosos científicos e investigadores planetarios modernos ciertamente sospechan y deducen formalmente que verdaderamente llueven duros y preciosos diamantes sólidos de puro y compacto cristal de carbono precipitándose masivamente hacia el oscuro fondo del asfixiante núcleo gigante.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Inesperadamente la extraña y particular luna capturada más masiva, redonda y fría de este gigante de hielo conocida míticamente como Tritón es astronómicamente el único y singular satélite grandioso notable que audazmente orbita incansablemente y gira veloz de forma retrógrada anómala (se mueve descaradamente al glorioso revés con rebeldía caprichosa) del sentido habitual normal de giro de todo el enorme planeta gaseoso, lo cual afirma indudablemente que definitivamente Tritón fue alguna vez en su historia arcaica helada violentamente acorralado y apresado furtivamente de repente por la gigantesca garra gravitatoria invisible de Neptuno hace mucho.' }
     ],
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_neptuno-vientos.webp',
+    bannerCaption: 'Neptuno el ventoso: los vientos más rápidos del sistema solar alcanzan 2,100 km/h en el planeta más lejano',
     fact: 'Tan extremadamente lento e imperceptible es verdaderamente su amplio e inmenso viaje orbital elíptico en la distante y fría oscuridad galáctica transneptuniana a través de las silenciosas estrellas lejanísimas que, sorprendentemente e increíblemente, nuestro brillante vecino lejano azul marino Neptuno acaba de completar de cumplir y celebrar apenas un solo año nuevo solitario y lejano neptuniano desde que su enorme cuerpo azul fue divisado y descubierto asombrosamente por primera vez en el victoriano e ilustre y remoto año de 1846 en Europa central.'
   },
   {
@@ -162,6 +170,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Encélado y la Vida', icon: 'Sparkles', text: 'Encélado tiene un océano con los mismos ingredientes que los respiraderos hidrotermales terrestres donde existe vida sin luz solar. Sus géiseres lanzan material de ese océano directamente al espacio — la misión más fácil para buscar vida extraterrestre sería simplemente volar a través de esos géiseres.' },
       { label: 'Ío y el Plasma', icon: 'Atom', text: 'Ío libera 1 tonelada de dióxido de azufre ionizado por segundo hacia Júpiter, creando un "toro de plasma" que envuelve todo el sistema joviano. Las misiones a Júpiter tienen que navegar a través de este plasma radioactivo — es tan peligroso que destruyó parcialmente los instrumentos de la sonda Galileo.' }
     ],
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_lunas-gaseosos.webp',
+    bannerCaption: 'Lunas de los gigantes: Europa tiene un océano oculto bajo el hielo, Encélado lanza géiseres y Titán tiene lluvia de metano',
     fact: 'Europa tiene más agua que todos los océanos de la Tierra combinados — bajo una capa de hielo de 20 km. Encélado tiene géiseres de ese mismo tipo de agua que saltan al espacio. En nuestro propio sistema solar ya tenemos dos océanos extraterrestres donde la vida podría existir hoy mismo.'
   },
   {
@@ -181,6 +191,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Solo 100 Millones de Años', icon: 'Clock', text: 'Los anillos de Saturno tienen la edad de los dinosaurios — en términos geológicos, son "nuevos". Cuando evolucionaron los primeros animales complejos en la Tierra hace 600 millones de años, Saturno era un planeta sin anillos. Llegarán a desaparecer en 300 millones de años más.' },
       { label: 'Lluvia de Anillos', icon: 'Sparkles', text: 'Los anillos pierden 10,000-100,000 kg de material por segundo — ionizado por la radiación solar y precipitado sobre el planeta. A este ritmo, en 300 millones de años Saturno habrá "engullido" sus propios anillos.' }
     ],
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_anillos-saturno.webp',
+    bannerCaption: 'Los anillos de Saturno desaparecerán en 300 millones de años: partículas de hielo cayendo hacia el planeta',
     fact: 'Los anillos de Saturno tienen el mismo grosor relativo que una hoja de papel en escala planetaria, pero se extienden por 282,000 km — casi la distancia a la Luna. Tienen solo 100 millones de años y desaparecerán en otros 300 millones. Estamos en el momento exacto de la historia del sistema solar en que podemos verlos.'
   },
   {
@@ -200,6 +212,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'Gran Tour 176 años', icon: 'Star', text: 'La alineación planetaria que permitió el Gran Tour de los Voyager ocurre cada 176 años. La próxima vez que cuatro planetas exteriores estén así alineados, los seres humanos de 2153 tendrán una segunda oportunidad de repetir la hazaña de 1977 — si la tecnología de entonces lo permite.' },
       { label: 'Cassini se Sacrificó', icon: 'Rocket', text: 'Cassini se precipitó deliberadamente en Saturno para no contaminar las lunas potencialmente habitables. Tuvo suficiente hidrazina para volar décadas más, pero la NASA eligió destruirla antes de que una avería la estrellara accidentalmente en Europa o Encélado. El código de ética espacial ya protege mundos que nunca hemos visitado.' }
     ],
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_exploracion-gaseosos.webp',
+    bannerCaption: 'Exploración de los gigantes: de las sondas Pioneer a la Juno orbitando Júpiter hoy y la futura Europa Clipper',
     fact: 'Cassini transmitió datos científicos hasta el último milisegundo antes de desintegrarse en la atmósfera de Saturno el 15 de septiembre de 2017. Se sacrificó para proteger las lunas habitables del planeta. Es la única nave espacial que "eligió" morir para proteger una posible vida que ni siquiera sabemos si existe.'
   }
 

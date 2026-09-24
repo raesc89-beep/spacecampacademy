@@ -172,6 +172,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los planetas oceánicos probablemente nacieron como cuerpos helados muy lejos de su estrella, más allá de la "línea de nieve" del sistema protoplanetario. Posteriormente, migraron hacia el interior del sistema donde el calor estelar derritió los hielos de la superficie, transformándolos en mundos totalmente líquidos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Hielo VII es una forma cristalina de agua sólida que se forma únicamente a presiones superiores a tres Gigapascales (unas treinta mil veces la presión atmosférica terrestre). Es tan estable y denso que su estructura cristalina cúbica se mantiene sólida a temperaturas superiores a los trescientos grados Celsius.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_planetas-oceano.webp',
+    bannerCaption: 'Planetas océano: mundos cubiertos de agua hasta cientos de km de profundidad sin un solo continente',
     fact: 'Descubrimientos recientes con el telescopio espacial JWST sugieren que el exoplaneta TOI-1452 b, ubicado a 100 años luz de la Tierra, es uno de los mejores candidatos a planeta océano conocidos, con un radio 1.67 veces el de la Tierra y una densidad consistente con un inmenso mar global.'
   },
   {
@@ -191,6 +193,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Nuestra estrella vecina más cercana, Proxima Centauri, es una enana roja ubicada a 4.24 años luz. Posee al menos un planeta confirmado de masa terrestre, Proxima Centauri b, que orbita dentro de su zona habitable cada 11.2 días, convirtiéndolo en el candidato exoplanetario más cercano a la humanidad.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las enanas rojas consumen su combustible de hidrógeno tan lentamente que se calcula que su esperanza de vida abarca entre cien mil millones y varios billones de años. Esto significa que ninguna enana roja nacida desde el Big Bang ha muerto jamás, otorgando a sus planetas tiempo casi infinito para el desarrollo biológico.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_enanos-rojos.webp',
+    bannerCaption: 'Enanas rojas: estrellas pequeñas y frías con planetas tan cercanos que están fijos con un lado siempre de día',
     fact: 'El modelo climático denominado "Planeta Ojo de Buey" (Eyeball Earth) sugiere que una Supertierra en acoplamiento de marea alrededor de una enana roja tendría toda su cara nocturna congelada en hielo sólido y su cara diurna central con un gran océano líquido circular abierto como una pupila.'
   },
   {
@@ -210,6 +214,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El planeta TOI-849b es uno de los objetos más extraños del universo: tiene el radio de Neptuno pero una masa equivalente a 40 veces la de la Tierra. Su densidad es idéntica a la del hierro puro. Los astrofísicos creen que es el núcleo desnudado de un gigante gaseoso que perdió todo su gas hidrógeno por evaporación o colisión masiva.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los planetas ultra densos que orbitan a corta distancia de sus estrellas experimentan campos magnéticos inducidos extremos. La interacción entre el núcleo de hierro conductor y el plasma del viento estelar puede generar corrientes eléctricas de billones de amperios atravesando la estructura planetaria.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_planetas-ultra-densos.webp',
+    bannerCaption: 'Planetas ultra-densos: mundos casi completamente de hierro formados cuando las capas rocosas son vaporizadas',
     fact: 'El estudio del exoplaneta TOI-733 b sugiere que se encuentra justo en la frontera de la pérdida atmosférica total, representando una transición viva donde un Subneptuno gaseoso se está evaporando para convertirse en un núcleo rocoso metálico desnudado.'
   },
   {
@@ -229,6 +235,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Existen planetas circumbinarios que orbitan alrededor de dos estrellas al mismo tiempo, exactamente como el planeta ficticio Tatooine de la saga Star Wars. El primer planeta circumbinario confirmado por el telescopio espacial Kepler fue Kepler-16b, un mundo donde cada tarde se observan dos puestas de sol diferentes en el horizonte.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las resonancias orbitales armónicas ocurren cuando los periodos orbitales de varios planetas forman proporciones de números enteros simples como 2:1, 3:2 o 4:3. En el sistema HD 110067, seis exoplanetas dan vueltas alrededor de su estrella en una danza gravitacional sincronizada que no se ha interrumpido en cuatro mil millones de años.' }
     ],
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_diversidad-zooloogica.webp',
+    bannerCaption: 'El zoo exoplanetario: calientes, helados, rocosos, oceánicos o vagabundos — cada tipo imaginable existe ahí fuera',
     fact: 'El proyecto Microlensing Observations in Astrophysics (MOA) estima que existen estadísticamente más planetas flotantes nómadas sin estrella fija en la Vía Láctea que la cantidad total de estrellas individuales que componen nuestra galaxia.'
   }
 ];
