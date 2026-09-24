@@ -156,6 +156,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown revela su máquina del tiempo a Marty McFly en el aparcamiento del Twin Pines Mall a las 1:17 AM del 26 de octubre de 1985. El DeLorean sale marcha atrás del remolque entre nubes de vapor de nitrógeno líquido, y Doc explica que necesita 1.21 gigawatts y alcanzar 88 millas por hora (141 km/h). El número 88 mph fue elegido por Zemeckis porque sonaba convincente, no por ningún cálculo científico real. La película fue rechazada por casi todos los estudios de Hollywood antes de que Universal la aceptara.' },
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'La idea original de Regreso al Futuro surgió cuando el guionista Bob Gale encontró el anuario de instituto de su padre y vio que había sido el presidente de la asociación de alumnos. Se preguntó: si hubiera ido al instituto con mi padre cuando era joven, ¿habríamos sido amigos? Esta pregunta filosófica sobre el pasado y las relaciones entre generaciones fue el germen de toda la historia. El guión tardó cuatro años en encontrar productor.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m1/banner_maquina-tiempo.webp',
+    bannerCaption: 'El DeLorean: la máquina del tiempo más icónica del cine, necesitaba alcanzar 88 mph y 1.21 gigavatios',
     fact: 'Aunque el viaje al pasado sigue siendo ciencia ficción, el viaje al futuro ya ha ocurrido en pequeña escala. Los astronautas en la Estación Espacial Internacional viajan al futuro durante su misión: a 27,600 km/h, el tiempo pasa ligeramente más despacio para ellos. Sergei Krikalev, el humano que más tiempo ha pasado en el espacio (803 días), es aproximadamente 0.02 segundos más joven que si hubiera permanecido en la Tierra — viajó 0.02 segundos hacia su propio futuro gracias a la dilatación temporal de Einstein.'
   },
   {
@@ -175,6 +177,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'El reloj de la torre del ayuntamiento de Hill Valley es el símbolo más potente del tiempo newtoniano en la película: una estructura imponente e inamovible que marca el ritmo de todo el pueblo desde hace décadas. La foto del reloj parado en 10:04 captura la idea de que un evento extraordinario, el rayo de 1955, puede congelar el tiempo en un instante. Hill Valley organizó su identidad durante 30 años en torno a ese único momento — una ilustración del tiempo como algo fijo e inmutable, tal como Newton lo concebía.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las ecuaciones de Newton funcionan tan bien que la NASA las usa hoy para calcular trayectorias de sondas espaciales. La Voyager 1, lanzada en 1977 y actualmente a más de 23,000 millones de kilómetros de la Tierra, navega por el espacio interestelar siguiendo trayectorias calculadas con física newtoniana. Solo se necesitan correcciones relativistas cuando las sondas pasan cerca de planetas gigantes como Júpiter o Saturno, donde la gravedad es suficientemente intensa para que el tiempo se distorsione de forma medible.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m1/banner_tiempo-newton.webp',
+    bannerCaption: 'El tiempo newtoniano: un reloj universal que ticta igual para todos en el cosmos, absoluto e inmutable',
     fact: 'Isaac Newton nunca se sintió completamente satisfecho con su concepto de tiempo absoluto porque no podía explicar qué lo causaba ni dónde residía en el universo. Lo aceptó y lo publicó porque hacía que sus ecuaciones de la gravedad funcionaran perfectamente para describir el movimiento de los planetas. Este es uno de los casos más famosos en la historia de la ciencia donde un científico adoptó una hipótesis por su utilidad práctica, aunque no pudiera fundamentarla filosóficamente. Habría que esperar 218 años para que Einstein explicara la naturaleza real del tiempo.'
   },
   {
@@ -194,6 +198,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown nombra a su perro Einstein en honor al físico alemán, con lógica narrativa: Einstein el perro es el primer ser en viajar en el tiempo en la película. Doc lo coloca en el DeLorean y lo envía exactamente un minuto hacia el futuro. Cuando el coche regresa al presente, Einstein llega sano desde el futuro, con su reloj mostrando un minuto de retraso respecto al reloj de Doc. Es la primera demostración de que la máquina funciona — y un homenaje al padre de la relatividad.' },
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'El sistema GPS es el caso más cotidiano de relatividad de Einstein en acción. Los 24 satélites GPS orbitan a 20,200 km de altura y a 14,000 km/h. Por su velocidad, sus relojes avanzan 7 microsegundos más despacio por día (relatividad especial). Pero al estar más lejos de la gravedad terrestre, avanzan 45 microsegundos más rápido por día (relatividad general). La corrección neta es de 38 microsegundos diarios. Sin ella, el GPS acumularía un error de 11 kilómetros por día, haciendo inútil cualquier navegación.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m1/banner_einstein-relativo.webp',
+    bannerCaption: 'El tiempo de Einstein: los relojes del GPS se corrigen por relatividad o darían posiciones erróneas en kilómetros',
     fact: 'El astronauta ruso Sergei Krikalev ostenta el récord del mayor viaje temporal humano. Pasó 803 días en el espacio — en la estación Mir y en la ISS — viajando a unos 27,600 km/h. Por la dilatación temporal, su reloj biológico avanzó unos 0.02 segundos menos que si hubiera permanecido en la Tierra. Krikalev es 0.02 segundos más joven de lo que sería si nunca hubiera ido al espacio — un viaje real, físico y verificado hacia su propio futuro, aunque de escala minúscula.'
   },
   {
@@ -213,6 +219,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Cuando Marty altera el pasado en 1955 y evita que sus padres se enamoren, la fotografía que lleva de su familia comienza a borrarse lentamente. Sus hermanos desaparecen uno por uno hasta que la foto queda casi en blanco. Esta escena ilustra el problema de la causalidad alterada: al cambiar la causa en el pasado, el efecto futuro se desvanece gradualmente. La película usa esta metáfora visual para hacer tangible lo que los físicos llaman bucle causal — cuando una causa elimina su propio efecto.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El físico Arthur Eddington, quien acuñó el término flecha del tiempo en 1927, propuso que la dirección del tiempo está gobernada por la entropía. Algunos físicos modernos, como Sean Carroll del Caltech, argumentan que la flecha del tiempo solo existe porque el Big Bang fue extraordinariamente ordenado. Si el universo hubiera comenzado en un estado de alta entropía, el tiempo no tendría dirección preferida. Vivimos en un universo con flecha del tiempo simplemente porque nacimos después del Big Bang.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m1/banner_flecha-tiempo.webp',
+    bannerCaption: 'La flecha del tiempo: la entropía siempre aumenta por eso un huevo roto no se vuelve a juntar solo',
     fact: 'El físico Arthur Eddington acuñó el término Flecha del Tiempo en 1927, en su libro La naturaleza del mundo físico. Eddington se preguntó: si las leyes matemáticas de la física no distinguen entre el pasado y el futuro, de dónde viene nuestra percepción de que el tiempo fluye en una sola dirección. Su respuesta: de la Segunda Ley de la Termodinámica. Esta flecha termodinámica es lo que nos permite recordar el pasado pero no el futuro, y envejecer hacia adelante, nunca hacia atrás.'
   },
   {
@@ -232,6 +240,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Marty McFly se enfrenta directamente a una versión de la paradoja del abuelo. Al empujar a su padre fuera del camino del coche de su abuelo, ocupa su lugar y su madre Lorraine se enamora de él en lugar de su padre George. El resto de la película es la carrera de Marty para que sus padres se enamoren antes de que su existencia quede borrada. La fotografía de familia borrándose es la metáfora visual de cómo una causa eliminada en el pasado deshace sus efectos futuros.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Principio de Protección de la Cronología de Stephen Hawking (1992) propone que las leyes de la física impiden la formación de bucles causales cerrados — situaciones donde el efecto podría viajar al pasado y eliminar su causa. Hawking argumentó que, aunque la Relatividad General matemáticamente permite algunos tipos de máquinas del tiempo, efectos cuánticos siempre se amplifican justo en el momento crítico para destruir la máquina antes de que pueda usarse. Llamó a esto un mecanismo de autocensura del universo.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m1/banner_paradoja-causal.webp',
+    bannerCaption: 'La paradoja del abuelo: si viajas al pasado y evitas tu propio nacimiento, cómo viajaste al pasado?',
     fact: 'Stephen Hawking era tan escéptico del viaje al pasado que en 2009 organizó una fiesta de bienvenida para viajeros temporales, pero solo anunció la invitación después de que terminó. Razonó: si el viaje temporal al pasado fuera posible, algún viajero del futuro habría aparecido en la fiesta. Nadie llegó. Hawking consideró esto evidencia experimental informal de que nadie nunca inventará una máquina del tiempo funcional que permita regresar al año 2009.'
   },
   {
@@ -251,6 +261,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown tuvo la visión del condensador de flujo el 5 de noviembre de 1955, mientras colgaba un reloj en su baño y resbaló golpeándose la cabeza con el lavabo. La forma en Y del dispositivo le reveló el principio del viaje temporal. Este momento aparece como un flashback en la primera película y es considerado uno de los mejores momentos de revelación científica del cine. La fecha, 5 de noviembre de 1955, se convirtió en fecha icónica de la cultura popular internacional.' },
       { label: '¿Sabías que...?', icon: 'sparkles', text: 'El departamento de arte de la película construyó el condensador de flujo original usando partes de una caja de conexiones eléctricas, luces LED parpadeantes y tubos de vidrio. El resultado fue tan icónico que hoy existen réplicas oficiales, coleccionables y hasta cargadores USB para coche con su forma exacta en Y. Bob Gale, el guionista, pronunció gigawatts como jigawatts en la película porque así se lo dijo un asesor científico — y la pronunciación incorrecta se volvió parte de la cultura popular.' }
     ],
+    bannerImage: '/assets/bttf/infographic_m1/banner_condensador-flujo.webp',
+    bannerCaption: 'El condensador de flujo: la pieza ficticia que inspiró debates reales de física sobre manipulación del espacio-tiempo',
     fact: 'El término 1.21 gigawatts se hizo tan famoso que el Departamento de Energía de Estados Unidos lo ha usado en comunicados oficiales como referencia cultural. En el mundo real, 1.21 gigawatts equivale aproximadamente a la potencia de un reactor nuclear pequeño, o a la energía liberada por la combustión de 400 toneladas de gasolina en un segundo. La descarga de un rayo real libera entre 1 y 5 gigawatts, pero solo durante 30 microsegundos — no el tiempo suficiente para cargar ningún condensador de flujo.'
   },
   {
@@ -270,8 +282,8 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Al final de la trilogía, en la parte III, Doc le da a Marty y Jennifer el mensaje más importante de toda la saga: Vuestro futuro no ha sido escrito todavía. El de nadie lo está. Vuestro futuro es el que vosotros os forjéis, así que haceos uno bueno. Esta frase sintetiza la filosofía implícita de toda la trilogía: el futuro no está determinado y nuestras decisiones en el presente tienen consecuencias reales. Es también el mejor resumen posible de por qué estudiar ciencia importa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'En 2015, el año al que viajaba Marty en la segunda película, físicos de la Universidad de Bristol bautizaron su nuevo simulador cuántico con el nombre Condensador de Flujo, en homenaje a la película. Este simulador permite estudiar procesos cuánticos al revés para entender mejor la termodinámica y la flecha del tiempo. El guiño de los físicos demuestra cuánto influyó la película en la cultura científica real de generaciones de investigadores.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m1/banner_legado-cientifico.png',
-    bannerCaption: 'Legado Científico',
+    bannerImage: '/assets/bttf/infographic_m1/banner_legado-cientifico.webp',
+    bannerCaption: 'El legado científico de BttF: inspiró a una generación de físicos y aparece en papers académicos sobre causalidad',
     fact: 'En 2015, científicos de la Universidad de Bristol nombraron Condensador de Flujo a su nuevo simulador cuántico capaz de revertir la evolución temporal de los fotones, en homenaje a la película. También ese año, físicos del MIT publicaron un artículo evaluando si las predicciones tecnológicas de Regreso al Futuro II se habían cumplido. La conclusión: pantallas planas y videollamadas sí, hoverboards y coches voladores todavía no. La física real avanzó rápido en comunicaciones pero más despacio en propulsión — al menos de momento.'
   }
 ];
@@ -704,6 +716,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
         {/* â”€â”€â”€ Fact Box â”€â”€â”€ */}
         <motion.div
           whileHover={{ scale: 1.01 }}

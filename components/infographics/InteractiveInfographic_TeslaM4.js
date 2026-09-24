@@ -163,6 +163,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En Colorado Springs, Tesla registró en su diario el 3 de julio de 1899 que había detectado señales eléctricas regulares que, según él, provenían de otro planeta. Aunque la comunidad científica lo ridiculizó, investigaciones posteriores sugieren que Tesla pudo haber captado emisiones de radio naturales de Júpiter o señales de rayos atmosféricos lejanos. Los radioastrónomos Karl Jansky y Grote Reber confirmarían décadas después que los planetas sí emiten señales de radio detectables desde la Tierra.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La resonancia Schumann que Tesla intentó aprovechar es un fenómeno real y mensurable. La cavidad electromagnética entre la superficie terrestre y la ionosfera vibra a frecuencias específicas: 7.83 Hz (fundamental), 14.3 Hz, 20.8 Hz, 27.3 Hz y 33.8 Hz. Estas frecuencias fueron predichas matemáticamente por W.O. Schumann en 1952 y confirmadas experimentalmente por Schumann y Herbert König en 1954. Tesla las detectó empíricamente medio siglo antes, en 1899.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m4/banner_plan-ambicioso.webp',
+    bannerCaption: 'El plan ambicioso: una red mundial de torres que transmitiría electricidad gratis a todo el planeta',
     fact: 'El artículo de Tesla "The Problem of Increasing Human Energy" publicado en junio de 1900 en Century Magazine contenía una ecuación que relacionaba el progreso humano con la energía disponible: E = ½MV², donde M representaba la masa humana total y V la velocidad del progreso. Tesla argumentó que aumentar la energía disponible por persona era equivalente a aumentar la "velocidad" de la civilización. Este marco conceptual anticipó por más de un siglo los índices modernos de desarrollo humano que correlacionan consumo energético per cápita con indicadores de bienestar social.',
   },
   {
@@ -182,6 +184,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Stanford White cobró exactamente cero dólares por diseñar el laboratorio de Wardenclyffe. Cuando Tesla le explicó su visión de energía global gratuita, White quedó tan impresionado que donó su tiempo profesional. El laboratorio que diseñó medía 28 por 28 metros y contenía un taller mecánico con tornos y fresadoras, un laboratorio eléctrico con generadores de alta frecuencia, y un taller de vidrio donde Tesla fabricaba sus propios tubos de vacío experimentales. El edificio de ladrillo original todavía existe en 2024.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las 16 tuberías de hierro subterráneas de Wardenclyffe formaban un sistema de puesta a tierra con una resistencia eléctrica calculada por Tesla en menos de 5 ohmios. Para comparación, el estándar moderno de puesta a tierra eléctrica industrial requiere menos de 25 ohmios. Tesla logró una conductividad cinco veces superior al estándar actual utilizando tecnología de 1901. Los ingenieros que excavaron el sitio en estudios posteriores confirmaron la presencia de las tuberías exactamente como Tesla las describió en sus planos originales.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m4/banner_torre-wardenclyffe.webp',
+    bannerCaption: 'La Torre Wardenclyffe: 57 metros de altura con cúpula de cobre y raíces de 36m bajo tierra en Long Island',
     fact: 'El peso de la cúpula metálica de Wardenclyffe (55 toneladas de cobre y acero a 57 metros de altura) presentó un problema de ingeniería estructural que Tesla resolvió con un diseño de torre octagonal progresivamente estrechada. Cada sección de la torre se construyó con vigas de madera de pino amarillo del sur reforzadas con pernos de acero, distribuyendo la carga de forma que la presión en la base no superara los 2,000 libras por pie cuadrado. Este diseño anticipó principios de ingeniería de torres de telecomunicaciones que no se estandarizarían hasta la década de 1920.',
   },
   {
@@ -201,6 +205,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'J.P. Morgan controlaba en 1901 el equivalente a más del 3% del producto interno bruto de Estados Unidos a través de sus inversiones en acero (U.S. Steel), ferrocarriles (Northern Securities), electricidad (General Electric) y banca. Su fortuna personal era tan grande que en 1907 rescató al sistema financiero estadounidense de un colapso bancario usando sus propios fondos, una función que después asumiría la Reserva Federal, creada en 1913 parcialmente como respuesta a la crisis que Morgan resolvió.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los $150,000 que Morgan invirtió en Wardenclyffe habrían permitido comprar en 1901 aproximadamente 7,500 onzas de oro a $20.67 la onza (precio fijado por el Gold Standard Act de 1900). Esa misma cantidad de oro valdría hoy más de $15 millones de dólares. Sin embargo, el valor de las patentes de Tesla que Morgan adquirió al 51% sería incalculable: la patente US787412 de transmisión inalámbrica de energía y las patentes relacionadas son precursoras directas de la tecnología de carga inalámbrica, un mercado valorado en $13,500 millones de dólares en 2023.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m4/banner_jp-morgan-financiero.webp',
+    bannerCaption: 'JP Morgan financió y luego retiró el dinero: sin medidores no había forma de cobrar la electricidad gratis',
     fact: 'Las cartas entre Tesla y Morgan se conservan en la Biblioteca del Congreso de Estados Unidos (Tesla Papers, Manuscript Division) y en los archivos de la Pierpont Morgan Library en Nueva York. En total existen 58 cartas de Tesla a Morgan y 12 respuestas de Morgan a Tesla, escritas entre 1900 y 1905. Las cartas revelan que Tesla ofreció repetidamente a Morgan participación en patentes futuras, derechos sobre tecnologías aún no inventadas, e incluso control sobre su propio salario, todo a cambio de financiamiento adicional que Morgan rechazó sistemáticamente.',
   },
   {
@@ -220,6 +226,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El efecto piel (skin effect) que Tesla utilizó en el diseño de la cúpula de Wardenclyffe es un fenómeno por el cual la corriente alterna de alta frecuencia tiende a circular por la superficie exterior de un conductor, no por su interior. A frecuencias de 100 kHz, la profundidad de penetración en cobre es de solo 0.21 milímetros. Esto significaba que Tesla podía usar láminas relativamente delgadas de cobre y aun así transmitir corrientes enormes, ya que solo la superficie exterior de la cúpula participaba en la transmisión.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los 100 millones de voltios que Tesla afirmó poder generar en Wardenclyffe habrían requerido un campo eléctrico de aproximadamente 30 kV/cm para evitar la ruptura dieléctrica del aire seco a nivel del mar. Tesla planeaba operar la torre en condiciones donde la geometría de la cúpula distribuiría el campo eléctrico uniformemente, reduciendo la concentración de carga en puntos específicos. Los ingenieros modernos de transmisión de alta tensión utilizan principios idénticos en el diseño de anillos corona para líneas de transmisión de ultra alto voltaje de 1,000 kV.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m4/banner_construccion-torre.webp',
+    bannerCaption: 'Construcción 1901-1902: obreros excavando túneles de cobre a 36m de profundidad bajo la torre',
     fact: 'Los planos originales de Wardenclyffe preservados en el Museo Nikola Tesla de Belgrado incluyen un dibujo fechado el 14 de junio de 1901 que muestra el sistema completo de tuberías subterráneas con anotaciones manuscritas de Tesla especificando la composición del suelo a diferentes profundidades. Tesla anotó "arena gruesa con grava" a 10 metros, "arcilla azul compacta" a 20 metros y "sustrato acuífero principal" a 30 metros. Estudios geológicos del Servicio Geológico de Estados Unidos (USGS) realizados en la zona de Shoreham en 1988 confirmaron que estas descripciones son geológicamente precisas.',
   },
   {
@@ -239,6 +247,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La transmisión transatlántica de Marconi en diciembre de 1901 utilizó una antena de 122 metros de altura sostenida por un cable atado a una cometa en el lado receptor. Varios ingenieros, incluyendo al inventor estadounidense Lee de Forest, cuestionaron públicamente si Marconi realmente había recibido la señal o si había interpretado descargas atmosféricas como la letra S. El debate no se resolvió definitivamente hasta 1902, cuando Marconi repitió el experimento con equipos más sensibles a bordo del transatlántico SS Philadelphia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El pánico bursátil de 1901 fue causado por una "esquina de mercado" (corner) sobre las acciones del Northern Pacific Railway. El precio por acción subió de $114 a $1,000 en un solo día (9 de mayo de 1901) mientras los vendedores en corto intentaban cubrir sus posiciones. Los corredores que habían vendido acciones que no poseían enfrentaron pérdidas catastróficas. Este evento llevó a la primera regulación seria del mercado de valores estadounidense y demostró la vulnerabilidad del sistema financiero que Tesla necesitaba para su proyecto.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m4/banner_colapso-financiero.webp',
+    bannerCaption: 'El colapso: Marconi ganó la carrera de la radio, Morgan retiró el dinero y la torre quedó abandonada',
     fact: 'Las patentes de radio de Tesla (US645576 y US649621, ambas de 1900) fueron originalmente reconocidas por la Oficina de Patentes de Estados Unidos como prioritarias sobre las de Marconi. En 1904, la Oficina revirtió inexplicablemente su decisión y otorgó prioridad a Marconi, posiblemente influenciada por los poderosos inversores de Marconi, que incluían a Andrew Carnegie y a Thomas Edison. No fue hasta el 21 de junio de 1943, seis meses después de la muerte de Tesla, que la Corte Suprema de Estados Unidos (caso Marconi Wireless Telegraph Co. v. United States, 320 U.S. 1) restauró la prioridad de Tesla, invalidando las patentes fundamentales de Marconi.',
   },
   {
@@ -258,6 +268,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La Smiley Steel Company cobró aproximadamente $1,750 por la demolición de la torre, una suma que se pagó con el producto de la venta de los materiales de desecho. El cobre de la cúpula se vendió a un precio de mercado de aproximadamente 27 centavos por libra (precio promedio del cobre en 1917 según el Bureau of Mines). Las vigas de acero se vendieron como chatarra férrica a aproximadamente $30 por tonelada. El valor total de los materiales recuperados fue inferior a $5,000, una fracción del costo original de construcción.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El radar de penetración terrestre (GPR) utilizado para estudiar los restos subterráneos de Wardenclyffe en 2012 opera emitiendo pulsos electromagnéticos de alta frecuencia (entre 100 MHz y 1 GHz) hacia el suelo y registrando las reflexiones producidas por cambios en la conductividad eléctrica del subsuelo. Las tuberías de hierro de Tesla producen reflexiones muy nítidas debido al alto contraste de impedancia electromagnética entre el hierro y la arena circundante, con un coeficiente de reflexión superior al 80%.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m4/banner_demolicion-torre.webp',
+    bannerCaption: 'Demolición 1917: el gobierno temió espías alemanes y dinamitó la torre, destruyendo el sueño de Tesla',
     fact: 'La dinamita utilizada para demoler la Torre Wardenclyffe fue inventada por Alfred Nobel en 1867, exactamente 50 años antes de la demolición. Nobel patentó la dinamita como una forma estable de nitroglicerina absorbida en tierra de diatomeas (kieselguhr). La ironía histórica es notable: los premios Nobel, financiados con la fortuna que Nobel acumuló vendiendo dinamita, nunca fueron otorgados a Tesla. A pesar de ser nominado para el Premio Nobel de Física en 1937 por el físico Felix Ehrenhaft, Tesla nunca recibió el galardón. El comité Nobel citó la falta de "contribuciones recientes" como razón, ignorando que las patentes de Tesla constituían la base técnica de toda la industria eléctrica mundial.',
   },
   {
@@ -277,6 +289,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Matthew Inman, el creador de The Oatmeal, no tenía formación científica ni conexión previa con Tesla cuando lanzó la campaña. Inman es un diseñador web y humorista gráfico de Seattle que se interesó en Tesla tras leer la biografía de W. Bernard Carlson. Su artículo web, ilustrado con su estilo característico de humor visual, fue compartido más de 2 millones de veces en redes sociales y fue citado por medios como The New York Times, BBC, CNN y The Guardian como ejemplo del poder del activismo digital para la preservación del patrimonio histórico.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La descontaminación del sitio de Wardenclyffe requirió técnicas de biorremediación y excavación selectiva. El tetracloroetileno (C₂Cl₄), un compuesto organoclorado utilizado como solvente de limpieza en seco, tiene una densidad de 1.62 g/cm³ (más denso que el agua), lo que hace que se hunda en el acuífero subterráneo formando charcos de fase densa no acuosa (DNAPL). La remediación requirió la instalación de pozos de extracción y sistemas de tratamiento con carbón activado para filtrar el contaminante del agua subterránea, un proceso que tomó más de 5 años.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m4/banner_wardenclyffe-hoy.webp',
+    bannerCaption: 'Wardenclyffe hoy: el laboratorio original fue rescatado y es ahora un museo dedicado al legado de Tesla',
     fact: 'El edificio del laboratorio de Wardenclyffe diseñado por Stanford White fue incluido en el Registro Nacional de Lugares Históricos de Estados Unidos el 3 de octubre de 2018, con el número de referencia 18000873. La nominación fue preparada por el historiador arquitectónico John Tauranac y documenta que el edificio es el único laboratorio de Tesla que sobrevive en su ubicación original. Todos los demás laboratorios de Tesla, incluyendo los de la Calle Houston en Manhattan (destruido por incendio en 1895) y el de Colorado Springs (demolido en 1904), fueron destruidos durante la vida del inventor o poco después.',
   },
 ];
@@ -702,6 +716,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

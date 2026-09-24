@@ -161,6 +161,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las fotografías de Tesla en Colorado Springs, tomadas en 1899, donde aparece leyendo tranquilamente mientras enormes descargas eléctricas cruzan el laboratorio, son en realidad dobles exposiciones fotográficas. Primero se fotografiaron los arcos eléctricos con la bobina encendida (sin Tesla presente por seguridad), y luego se expuso la misma placa con Tesla sentado y la bobina apagada. El fotógrafo Dickenson Alley documentó este proceso. Estas imágenes se publicaron en el Century Magazine en junio de 1900 y se convirtieron en las fotos más reproducidas de Tesla en la historia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La bobina de Tesla original de 1891 es un transformador resonante que produce corriente alterna de alto voltaje y baja corriente a frecuencias entre 50 kHz y varios MHz. Funciona mediante acoplamiento inductivo entre un circuito primario de baja impedancia y un circuito secundario de alta impedancia, ambos sintonizados a la misma frecuencia de resonancia. Las descargas visibles se producen cuando el voltaje en el terminal superior supera la rigidez dieléctrica del aire circundante (aproximadamente 30 kV por centímetro a presión atmosférica estándar).' },
     ],
+    bannerImage: '/assets/tesla/infographic_m9/banner_cientifico-ciencia-ficcion.webp',
+    bannerCaption: 'El arquétipo del científico loco: Tesla inspiró a cada inventor excéntrico de la ficción desde Frankenstein hasta Iron Man',
     fact: 'Kenneth Strickfaden, el diseñador de efectos especiales de la película «Frankenstein» de Universal Studios (1931), construyó sus generadores eléctricos basándose directamente en diseños de bobinas de Tesla. Este equipo, que incluía generadores Van de Graaff modificados y bobinas de Tesla de alta frecuencia, fue almacenado por Strickfaden durante décadas y reutilizado en «La Novia de Frankenstein» (1935), «El Hijo de Frankenstein» (1939), y en la parodia «El Jovencito Frankenstein» de Mel Brooks (1974). Las máquinas originales de Strickfaden fueron donadas al museo de la feria estatal de California tras su muerte en 1984.',
   },
   {
@@ -180,6 +182,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'David Bowie aceptó el papel de Tesla en «The Prestige» porque había admirado a Tesla desde la década de 1970. Nolan relató que Bowie fue su primera y única opción para el papel. El equipo de producción recreó el laboratorio de Colorado Springs usando planos originales del archivo de Tesla en Belgrado, y las bobinas de Tesla usadas en el rodaje eran funcionales: producían descargas reales de hasta 6 metros de longitud bajo supervisión de ingenieros eléctricos especializados en efectos prácticos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La bobina amplificadora (magnifying transmitter) que Tesla construyó en Colorado Springs en 1899 operaba a una frecuencia de resonancia de aproximadamente 150 kHz y alcanzaba voltajes de salida estimados en 12 millones de voltios. Tesla registró en sus notas (publicadas póstumamente como «Colorado Springs Notes, 1899-1900» en 1978 por el Museo Tesla de Belgrado) que las descargas producidas por esta bobina podían escucharse como truenos a una distancia de 24 kilómetros y causaron un apagón en el generador de la compañía eléctrica local El Paso Electric Company.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m9/banner_tesla-en-el-cine.webp',
+    bannerCaption: 'Tesla en el cine: David Bowie lo interpretó en El Truco Final 2006, capturando su misterio y genialidad',
     fact: 'La escena de «The Prestige» donde Tesla demuestra su máquina fue filmada en el Mount Wilson Observatory en Pasadena, California, no en Colorado. Christopher Nolan eligió esta locación porque su arquitectura de principios del siglo XX evocaba la estética de la época de Tesla. La producción contrató al especialista en efectos prácticos John Richardson, quien construyó bobinas de Tesla funcionales para el rodaje. Las chispas y arcos eléctricos visibles en la película son en su mayoría reales, no generados por computadora, lo que requirió protocolos de seguridad similares a los utilizados en laboratorios de investigación de alto voltaje.',
   },
   {
@@ -199,6 +203,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En «Command & Conquer: Red Alert» (1996), la bobina de Tesla fue diseñada como la contrapartida soviética del «Obelisk of Light» de la facción GDI. El diseñador del juego, Brett Sperry, eligió la bobina de Tesla como arma soviética porque encajaba con la estética tecnológica soviética de la Guerra Fría y porque las imágenes reales de bobinas de Tesla descargando electricidad eran visualmente más impactantes que cualquier arma ficticia que pudieran inventar. La torre se convirtió en el edificio más popular de la saga según encuestas a jugadores realizadas por Westwood Studios en 1997.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La transmisión inalámbrica de energía que Tesla propuso en 1901 con la torre Wardenclyffe se basa en el principio de resonancia electromagnética acoplada. Tesla pretendía transmitir energía a través de la tierra y la ionosfera usando ondas estacionarias a la frecuencia de resonancia de Schumann (aproximadamente 7.83 Hz para el modo fundamental). Los cálculos modernos demuestran que la eficiencia de este sistema habría sido extremadamente baja (menos del 1%) para la transmisión de energía a grandes distancias, aunque el principio básico funciona a distancias cortas y se usa hoy en cargadores inalámbricos de teléfonos que operan mediante inducción resonante a 6.78 MHz.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m9/banner_tesla-en-videojuegos.webp',
+    bannerCaption: 'Tesla en videojuegos: el inventor aparece como héroe con poderes eléctricos en docenas de juegos steampunk',
     fact: 'La primera aparición de una «bobina de Tesla» como arma en un videojuego no fue en «Command & Conquer» sino en «Tesla: The Weather Man» (1992), un juego de DOS poco conocido desarrollado por Safari Software. En este juego, Tesla usaba su «rayo de la muerte» para destruir tornados y tormentas. Sin embargo, fue «Command & Conquer: Red Alert» (1996) el que popularizó el concepto y lo convirtió en un tropo recurrente del medio. Desde entonces, la bobina de Tesla ha aparecido como arma o dispositivo en juegos como «Fallout» (1997), «Wolfenstein» (2009), «Tomb Raider» (2013), y «Destiny 2» (2017), entre otros.',
   },
   {
@@ -218,6 +224,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La campaña de The Oatmeal para comprar Wardenclyffe en 2012 recibió un impulso inesperado cuando el sitio web de la campaña se cayó por exceso de tráfico en las primeras 24 horas. Matthew Inman publicó un cómic adicional pidiendo a la gente que volviera cuando el servidor se recuperara. La campaña original tenía una meta de 850,000 dólares para igualar una oferta del estado de Nueva York; la superaron en menos de una semana. Entre los donantes estaban notables como Elon Musk, el astronauta Buzz Aldrin, y los cofundadores de Google, Larry Page y Sergey Brin.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La torre Wardenclyffe, diseñada por Stanford White y construida entre 1901 y 1902, consistía en un edificio de laboratorio de ladrillo de 28 por 28 metros y una torre de transmisión de madera de 57 metros de altura coronada por una cúpula hemisférica de cobre de 20 metros de diámetro. Bajo la torre, Tesla excavó un sistema de túneles y pozos que descendían 36 metros hasta alcanzar el nivel freático, parte de su plan para transmitir energía eléctrica a través de la corteza terrestre. La torre fue demolida en 1917 para pagar las deudas de Tesla, pero el edificio del laboratorio sobrevive y es un Monumento Histórico Nacional desde 2018.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m9/banner_tesla-en-comics-libros.webp',
+    bannerCaption: 'Tesla en cómics y libros: docenas de biografías y novelas gráficas rescatan al genio olvidado como héroe moderno',
     fact: 'Mark Twain y Tesla mantuvieron una amistad documentada desde 1893 hasta la muerte de Twain en 1910. Tesla recibió a Twain en su laboratorio de la calle Houston al menos cuatro veces entre 1894 y 1895. En una visita, Tesla sometió a Twain a su «oscilador mecánico», una máquina que producía vibraciones de alta frecuencia. Según el relato de Tesla publicado en su autobiografía «My Inventions» (1919), Twain disfrutó la sensación vibratoria durante varios minutos hasta que suplicó que la apagaran por un efecto laxante inesperado. Esta anécdota ha sido reproducida en múltiples biografías, aunque algunos historiadores cuestionan los detalles exactos.',
   },
   {
@@ -237,6 +245,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El primer vehículo de Tesla Motors, el Tesla Roadster (2008-2012), usaba un motor de inducción trifásico de corriente alterna que producía 248 caballos de fuerza y aceleraba de 0 a 100 km/h en 3.7 segundos. El motor pesaba solo 52 kilogramos y giraba a un máximo de 14,000 RPM. Se construyeron 2,450 unidades del Roadster original. En contraste, el motor de inducción original de Tesla, construido en 1887, pesaba varios cientos de kilogramos y producía aproximadamente 0.5 caballos de fuerza, pero demostró por primera vez que la corriente alterna polifásica podía producir rotación mecánica eficiente.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La unidad tesla (T) mide la densidad de flujo magnético (también llamada inducción magnética). Un tesla equivale a un weber por metro cuadrado (1 Wb/m²). Para referencia: el campo magnético de la Tierra en la superficie varía entre 25 y 65 microteslas (μT). Una máquina de resonancia magnética (MRI) hospitalaria opera típicamente entre 1.5 y 3 teslas. El imán superconductor más potente del laboratorio nacional de campos magnéticos altos (NHMFL) en Tallahassee, Florida, ha alcanzado 45.5 teslas. La unidad fue adoptada oficialmente por la CGPM en la 11ª conferencia celebrada en París en 1960.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m9/banner_la-marca-tesla.webp',
+    bannerCaption: 'La marca Tesla: Elon Musk eligió ese nombre para honrar al inventor del motor AC que usa cada coche eléctrico',
     fact: 'Elon Musk no es el fundador de Tesla, Inc., sino su mayor inversor inicial y actual CEO. Los fundadores originales, Martin Eberhard y Marc Tarpenning, fueron ingenieros que habían trabajado previamente en la empresa de lectores de libros electrónicos NuvoMedia (creadora del Rocket eBook en 1998). Eberhard fue destituido como CEO en 2007 y demandó a Musk y a Tesla en 2009, alegando calumnias y fraude. El caso se resolvió extrajudicialmente en 2009, y un acuerdo legal permite que cinco personas —Eberhard, Tarpenning, Musk, J.B. Straubel, e Ian Wright— se denominen «cofundadores» de Tesla.',
   },
   {
@@ -256,6 +266,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'John G. Trump, el ingeniero del MIT que revisó los documentos de Tesla en 1943, fue un científico de alto nivel que dirigió la investigación del MIT sobre generadores de Van de Graaff de alta energía para el tratamiento del cáncer mediante radioterapia. Trump recibió la Medalla Nacional de Ciencia de Estados Unidos en 1983, otorgada por el presidente Reagan. Su evaluación de los papeles de Tesla como «no conteniendo principios nuevos significativos» es consistente con el período tardío de Tesla, cuando el inventor se enfocaba más en ideas teóricas especulativas que en investigación experimental rigurosa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La «energía libre» que los conspiracionistas atribuyen a Tesla viola la Primera Ley de la Termodinámica (conservación de la energía) y la Segunda Ley (la entropía de un sistema aislado siempre aumenta o permanece constante). No existe ningún dispositivo que pueda extraer energía útil de la «nada» o del «vacío cuántico» en cantidades macroscópicas utilizables. La energía del punto cero del vacío cuántico es real, pero los cálculos de la física cuántica de campos demuestran que extraerla en cantidades significativas requeriría densidades de energía comparables a las de un agujero negro, algo técnicamente inviable con cualquier tecnología concebible.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m9/banner_teorias-conspirativas.webp',
+    bannerCaption: 'Las conspiraciones sobre Tesla: la verdad es que sus inventos reales son tan extraordinarios que no necesitan mitos',
     fact: 'Los documentos confiscados de Tesla por el FBI en 1943 fueron desclasificados en varias etapas entre 2016 y 2022. El archivo completo, disponible a través del portal FOIA del FBI (vault.fbi.gov), consiste en aproximadamente 300 páginas de correspondencia, notas técnicas, y recortes de periódico. El contenido incluye cartas de Tesla a múltiples gobiernos ofreciendo su «rayo de la muerte» como arma defensiva, notas sobre un motor de turbina sin palas (patentado en 1913), y correspondencia personal con familiares en Serbia. Ningún documento contiene planos para dispositivos de «energía libre» o tecnología revolucionaria suprimida.',
   },
   {
@@ -275,6 +287,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla fue nominado para el Premio Nobel de Física en 1937, según documentos del Archivo Nobel desclasificados en 1987. La nominación fue presentada por el físico sueco Gustaf Dalén. Sin embargo, el premio de ese año fue otorgado a Clinton Davisson y George Paget Thomson por la difracción de electrones. La historia de que Tesla rechazó el Nobel para no compartirlo con Edison en 1915 no tiene sustento documental: la correspondencia del comité Nobel de ese año muestra que ni Tesla ni Edison fueron finalistas serios, y el premio fue otorgado a William Henry Bragg y William Lawrence Bragg por la difracción de rayos X.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El motor de inducción polifásico de Tesla, patentado en 1888, funciona mediante el principio del campo magnético giratorio. Tres bobinas de estátor, alimentadas con corrientes alternas desfasadas 120 grados entre sí, generan un campo magnético que rota a una velocidad determinada por la frecuencia de la corriente (velocidad síncrona). Este campo induce corrientes en el rotor (por la Ley de Faraday), que a su vez generan un campo magnético que interactúa con el campo del estátor, produciendo torque y rotación. El rotor siempre gira ligeramente más lento que el campo (deslizamiento), típicamente entre 1% y 5% en motores modernos de inducción.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m9/banner_rescatando-tesla-real.webp',
+    bannerCaption: 'El Tesla real: más allá del mito, un ser humano complejo con TOC, genio genuino y tragedia real',
     fact: 'El Museo Nikola Tesla en Belgrado, Serbia, fundado en 1952, alberga la colección más completa de objetos personales, documentos originales y modelos de inventos de Tesla. La colección incluye más de 160,000 documentos, 1,200 dispositivos y aparatos, y aproximadamente 1,500 fotografías. En 2003, la colección completa fue inscrita en el Registro de la Memoria del Mundo de la UNESCO, reconociéndola como patrimonio documental de la humanidad. El museo recibe aproximadamente 120,000 visitantes al año y ha digitalizado más del 60% de su archivo, haciendo accesibles en línea cartas, diagramas técnicos y cuadernos de laboratorio del inventor.',
   },
 ];
@@ -714,6 +728,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

@@ -110,6 +110,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El primer asteroide fue descubierto en la primera noche del siglo XIX, el 1 de enero de 1801, por el astrónomo italiano Giuseppe Piazzi. Lo bautizó con el nombre de Ceres en honor a la diosa romana de la agricultura. Durante varios años se le consideró el octavo planeta del Sistema Solar.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La palabra "asteroide" proviene del griego antiguo y significa "con forma de estrella". Fue acuñada por el astrónomo William Herschel porque al observarlos a través de los telescopios de la época, estos cuerpos se veían como simples puntos luminosos idénticos a las estrellas lejanas.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m1/banner_que-es-asteroide.webp',
+    bannerCaption: 'Qué es un asteroide: cuerpos rocosos que orbitan el Sol desde guijarros hasta Ceres de 940 km de diámetro',
     fact: 'El asteroide Ceres representa por sí solo un tercio de toda la masa acumulada en el Cinturón Principal. Posee una capa de hielo bajo su corteza rocosa que contiene más agua dulce que todos los ríos y lagos de la Tierra juntos.',
   },
   {
@@ -129,6 +131,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Si Júpiter no se hubiera formado tan rápido, el material del Cinturón Principal habría acumulado suficiente masa para crear un planeta rocoso del tamaño de la Tierra o Marte en esa misma órbita intermedia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los modelos numéricos avanzados muestran que la línea de nieve del Sistema Solar primordial cruzaba justo por el Cinturón Principal. Por esta razón, los asteroides internos son secos y rocosos, mientras que los externos contienen abundantes hielos y compuestos orgánicos.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m1/banner_origen-cinturon.webp',
+    bannerCaption: 'Origen del cinturón: la gravedad de Júpiter impidió que este material formara un planeta hace 4,600 millones de años',
     fact: 'El modelo de Niza sugiere que los planetas gigantes sufrieron una migración en sus órbitas primordiales. Este movimiento agitó el Cinturón Principal como un bote de pintura, mezclando objetos nacidos en diferentes regiones del Sistema Solar.',
   },
   {
@@ -148,6 +152,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Júpiter no solo agita el cinturón principal, sino que también atrapa asteroides en su propia órbita. Estos grupos de rocas se llaman Asteroides Troyanos y viajan en dos grandes caravanas 60 grados por delante y por detrás del planeta.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La masa de Júpiter es 318 veces mayor que la de la Tierra. Su campo gravitatorio es tan potente que influye dinámicamente en la trayectoria de cualquier cuerpo menor que se acerque a menos de 500 millones de kilómetros de distancia.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m1/banner_efecto-jupiter.webp',
+    bannerCaption: 'El efecto Júpiter: el gigante actúa como aspiradora cósmica que desvía asteroides y también protege la Tierra',
     fact: 'En el año 1994, el cometa Shoemaker-Levy 9 fue despedazado por las fuerzas de marea gravitacional de Júpiter. Los fragmentos chocaron contra la atmósfera del gigante dejando cicatrices oscuras visibles durante meses.',
   },
   {
@@ -167,6 +173,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Daniel Kirkwood no usó supercomputadoras para su hallazgo. Realizó cálculos a mano analizando apenas el centenar de asteroides conocidos en su época. Su agudeza matemática demostró el poder de la ley de gravedad de Newton.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El tiempo promedio que le toma a una roca espacial ser expulsada del Cinturón Principal tras caer en la resonancia 3:1 de Kirkwood es de aproximadamente un millón de años. Un suspiro en la escala de tiempo astronómica.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m1/banner_resonancias-kirkwood.webp',
+    bannerCaption: 'Lagunas de Kirkwood: zonas vacías donde Júpiter expulsa a los asteroides mediante resonancias orbitales',
     fact: 'Existen también zonas de acumulación llamadas "familias dinámicas". Son agrupaciones de asteroides que comparten órbitas estables fuera de las resonancias destructivas de Kirkwood.',
   },
   {
@@ -188,6 +196,8 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.png',
     bannerCaption: 'Tipos C, S y M',
+    bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.webp',
+    bannerCaption: 'Tipos espectrales: C carbonáceos (75%), S silíceos rocosos y M metálicos con hierro y níquel',
     fact: 'La espectroscopia astronómica permite identificar la huella dactilar de los minerales midiendo qué longitudes de onda de la luz solar son absorbidas por la superficie de la roca espacial.',
   },
   {
@@ -208,6 +218,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En la superficie del asteroide Vesta existe un cráter gigante llamado Rheasilvia. Mide 505 kilómetros de diámetro y su montaña central es dos veces más alta que el Monte Everest en la Tierra.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Se han catalogado más de 100 familias de asteroides distintas en el Cinturón Principal. Algunas tienen menos de diez millones de años de antigüedad, lo que representa eventos muy recientes en la escala del universo.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m1/banner_colisiones-familias.webp',
+    bannerCaption: 'Familias de asteroides: colisiones entre cuerpos grandes generan grupos de fragmentos con órbitas similares',
     fact: 'El impacto que destruyó al asteroide padre de la familia Koronis produjo más de 300 fragmentos conocidos que superan los 20 kilómetros de diámetro cada uno, viajando en perfecta formación orbital.',
   },
   {
@@ -228,6 +240,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Efecto YORP es una variante del efecto Yarkovsky que no cambia la órbita de la roca, sino su velocidad de rotación. Puede hacer que un asteroide gire tan rápido que termine despedazándose por fuerza centrífuga.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La fuerza del empuje fotónico del Efecto Yarkovsky es minúscula, equivalente al peso de una hoja de papel sobre la palma de tu mano. Pero aplicada de forma ininterrumpida durante millones de años, puede desplazar a un asteroide miles de kilómetros.' }
     ],
+    bannerImage: '/assets/asteroides/infographic_m1/banner_futuro-cinturon.webp',
+    bannerCaption: 'El futuro del cinturón: minería asteroidal, un solo asteroide metálico contiene más hierro que toda la economía mundial',
     fact: 'El Cinturón de Asteroides pierde masa de forma constante. Se estima que en un milagro de tiempo de varios billones de años, la franja quedará casi vacía por la evaporación y expulsión de sus cuerpos rocosos.',
   },
 ];
@@ -667,6 +681,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

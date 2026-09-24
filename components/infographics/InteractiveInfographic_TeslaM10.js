@@ -155,6 +155,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Nikola Tesla presentó su patente estadounidense número 454,622 el 20 de mayo de 1891 bajo el título "Sistema de Iluminación Eléctrica". En su demostración ante el Instituto Americano de Ingenieros Eléctricos (AIEE) en la Universidad de Columbia en Nueva York, encendió tubos de vacío sin cables usando únicamente campos electromagnéticos de alta frecuencia generados por su bobina resonante, más de un siglo antes de que la carga inalámbrica se incorporara en teléfonos inteligentes.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La mayor bobina de Tesla del mundo se encuentra en el Laboratorio de Investigación Electrum, en Auckland, Nueva Zealand. Construida entre 1997 y 2003 por Greg Leyh, mide 12 metros de altura y genera arcos eléctricos de más de 4 metros de longitud. Funciona a una frecuencia de resonancia cercana a 50 kHz y puede producir voltajes superiores a 3 millones de voltios. Se utiliza con fines educativos y de investigación sobre descargas atmosféricas a escala.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m10/banner_entendiendo-bobina.webp',
+    bannerCaption: 'Entendiendo la bobina: cómo un circuito LC resonante eleva 12V de entrada a miles de voltios en la cima',
     fact: 'En 1899, Tesla construyó un laboratorio experimental en Colorado Springs, Colorado, donde instaló una bobina de Tesla de dimensiones sin precedentes: el "Transmisor Amplificador". Esta bobina generaba voltajes estimados en 12 millones de voltios y producía arcos eléctricos artificiales de más de 40 metros de longitud, visibles y audibles a más de 15 kilómetros de distancia. Durante sus experimentos, la descarga de energía fue tan potente que quemó el generador de la compañía eléctrica local de Colorado Springs, dejando a toda la ciudad sin electricidad.',
   },
   {
@@ -174,6 +176,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La "jaula de Faraday" es un concepto clave en seguridad eléctrica, descubierto por Michael Faraday en 1836. Una estructura conductora cerrada bloquea los campos eléctricos externos, protegiendo todo lo que esté en su interior. Los coches, los aviones y los trajes de malla metálica que usan los operadores profesionales de bobinas de Tesla funcionan bajo este principio: la corriente fluye por la superficie exterior sin penetrar al interior.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El efecto piel (skin effect) explica por qué las descargas de alta frecuencia de una bobina de Tesla tienden a fluir por la superficie del cuerpo en lugar de penetrar hacia los órganos internos. A frecuencias superiores a 100 kHz, la corriente eléctrica se concentra en las capas más externas de cualquier conductor, incluida la piel humana. Sin embargo, este efecto NO hace que las bobinas de Tesla sean seguras para el contacto: quemaduras de radiofrecuencia, parada cardíaca por el circuito primario y daño auditivo permanente siguen siendo riesgos reales y documentados.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m10/banner_seguridad-primero.webp',
+    bannerCaption: 'Seguridad primero: guantes aislantes, gafas de protección y supervisión adulta son obligatorios siempre',
     fact: 'En febrero de 2014, un estudiante de 18 años en Cameron, Missouri (Estados Unidos), sufrió quemaduras de tercer grado en ambas manos al intentar construir una bobina de Tesla sin supervisión adulta, utilizando un condensador de microondas reciclado sin descarga previa. El incidente fue documentado por el Departamento de Bomberos local y se convirtió en un caso de estudio para la Asociación Nacional de Protección contra Incendios (NFPA). La regla más importante en cualquier proyecto eléctrico es simple y no negociable: siempre trabaja con un adulto capacitado presente.',
   },
   {
@@ -193,6 +197,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El alambre magneto recibe su nombre porque fue desarrollado originalmente para enrollar electroimanes en el siglo XIX. El esmalte de poliuretano que recubre cada hilo tiene un espesor de solo 0.025 milímetros (25 micrómetros), pero puede soportar entre 1,000 y 5,000 voltios dependiendo de su clasificación. Si las espiras de la bobina secundaria no están perfectamente alineadas y uniformes, pueden crearse puntos de alto estrés eléctrico donde el esmalte se perfora, causando cortocircuitos internos que arruinan la bobina.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El PVC (policloruro de vinilo) se utiliza como forma de la bobina porque tiene una rigidez dieléctrica de aproximadamente 40 megavoltios por metro (MV/m), lo que significa que puede soportar 40 millones de voltios por cada metro de espesor antes de que la electricidad lo atraviese. Su constante dieléctrica es de 3.4, relativamente baja, lo cual minimiza las pérdidas de energía por calentamiento dieléctrico a las frecuencias de operación típicas de una bobina de Tesla (100 kHz a 500 kHz).' },
     ],
+    bannerImage: '/assets/tesla/infographic_m10/banner_materiales-necesarios.webp',
+    bannerCaption: 'Materiales necesarios: tubo PVC, alambre de cobre, transistores y una pila de 9V para tu primera bobina Tesla',
     fact: 'El tungsteno, utilizado en los electrodos del entrehierro, es el elemento con el punto de fusión más alto de toda la tabla periódica: 3,422 grados Celsius (6,192 grados Fahrenheit). Fue aislado por primera vez en 1783 por los hermanos españoles Juan José y Fausto Elhuyar en el Real Seminario de Vergara, en el País Vasco. Su nombre proviene del sueco "tung sten", que significa "piedra pesada". Un centímetro cúbico de tungsteno pesa 19.3 gramos, casi idéntico a la densidad del oro (19.32 g/cm³).',
   },
   {
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El factor de acoplamiento entre las bobinas primaria y secundaria de una bobina de Tesla típica es de solo 0.10 a 0.20 (10% a 20%). En un transformador convencional, el acoplamiento es cercano a 1.0 (100%). Este acoplamiento deliberadamente débil permite que el circuito secundario oscile libremente a su frecuencia natural de resonancia, acumulando energía con cada pulso del primario, similar a como empujar un columpio suavemente y en el momento justo lo hace subir cada vez más alto.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La longitud de onda de la señal de radiofrecuencia producida por una bobina de Tesla educativa típica (frecuencia de 200 kHz) es de aproximadamente 1,500 metros, calculada como c/f donde c es la velocidad de la luz (300,000 km/s). El secundario de 50 cm funciona como un resonador de cuarto de onda, lo que significa que su longitud eléctrica equivale a un cuarto de la longitud de onda. Esto es análogo a un tubo de órgano que resuena a una frecuencia determinada por su longitud.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m10/banner_construccion-paso-a-paso.webp',
+    bannerCaption: 'Construcción paso a paso: enrollar el alambre con precisión es el secreto de una bobina que funciona bien',
     fact: 'Nikola Tesla describió en sus cuadernos de laboratorio de Colorado Springs (1899-1900) que enrollaba las bobinas secundarias a mano, espira por espira. Cada bobina requería varios días de trabajo manual continuo. Utilizaba seda aceitada como aislante entre capas, un material que proporcionaba una rigidez dieléctrica de aproximadamente 20 MV/m. Sus cuadernos, publicados en 1978 por el Museo Nikola Tesla de Belgrado, contienen más de 500 páginas de diagramas, cálculos y observaciones experimentales detalladas sobre resonancia y transferencia de energía inalámbrica.',
   },
   {
@@ -231,6 +239,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El sonido característico del entrehierro de una bobina de Tesla ("crack" repetitivo) se produce porque cada descarga en el entrehierro calienta el aire a temperaturas superiores a 20,000 grados Celsius en menos de un microsegundo. Esta expansión térmica explosiva crea una onda de choque acústica, exactamente el mismo fenómeno que produce los truenos durante una tormenta eléctrica, pero a escala reducida y con una frecuencia de repetición controlada.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La rigidez dieléctrica del aire a presión atmosférica estándar (101.325 kPa) y temperatura ambiente es de aproximadamente 30 kV/cm (30,000 voltios por centímetro). Este valor fue medido con precisión por Friedrich Paschen en 1889, quien formuló la ley que lleva su nombre. Sin embargo, en una bobina de Tesla, las descargas ocurren a voltajes menores que lo predicho por la ley de Paschen porque la radiación ultravioleta y el ozono generados por descargas previas preionización el aire circundante, reduciendo su resistencia eléctrica.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m10/banner_tu-primera-chispa.webp',
+    bannerCaption: 'Tu primera chispa: el momento en que tu bobina casera genera su primer rayo en miniatura es magia real',
     fact: 'El ozono (O₃) que se percibe como un olor metálico distintivo cerca de una bobina de Tesla en funcionamiento fue descubierto por Christian Friedrich Schönbein en 1840 en la Universidad de Basilea, Suiza. Lo identificó por su olor particular durante experimentos de electrólisis del agua. Su concentración alrededor de una bobina de Tesla puede alcanzar 0.1 a 0.5 partes por millón (ppm). La Organización Mundial de la Salud establece un límite de exposición de 0.05 ppm durante un promedio de 8 horas, por lo que las sesiones de operación de bobinas deben ser breves y en áreas bien ventiladas.',
   },
   {
@@ -250,6 +260,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En la Exposición Universal de Chicago de 1893, conocida como la "Feria Mundial Colombina", Nikola Tesla realizó una demostración que dejó perplejos a los 27 millones de visitantes. Sostuvo tubos de vacío que brillaban en sus manos sin conexión visible a ninguna fuente de energía, iluminados por los campos de alta frecuencia de sus bobinas. Thomas Edison había declarado que la corriente alterna era peligrosa; Tesla respondió literalmente haciéndola pasar por su propio cuerpo sin sufrir daño aparente.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La bobina de Tesla musical más grande del mundo fue construida por el grupo ArcAttack en Austin, Texas. Sus dos bobinas DRSSTC de 3.5 metros de altura pueden producir arcos de más de 3 metros mientras "tocan" música a volúmenes superiores a 110 decibelios. Cada arco alcanza temperaturas de más de 30,000 grados Kelvin en su canal central, cinco veces más caliente que la superficie del Sol (5,778 K). La música se controla mediante señales MIDI enviadas a controladores FPGA que modulan los pulsos del inversor a frecuencias de audio.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m10/banner_experimentos-divertidos.webp',
+    bannerCaption: 'Experimentos divertidos: enciende un tubo fluorescente sin tocarlo, crea plasma y detecta ondas de radio',
     fact: 'Tesla demostró el primer dispositivo de control remoto del mundo en una exhibición en el Madison Square Garden de Nueva York en 1898. Su "teleautomaton" era un barco de 1.2 metros de longitud controlado por ondas de radio, que podía avanzar, retroceder, girar y encender luces a distancia. La patente US 613,809, otorgada el 8 de noviembre de 1898, describe no solo el control remoto sino también los fundamentos lógicos de lo que hoy llamamos robótica. Los asistentes pensaron que era magia o un truco; algunos sugirieron que un mono pequeño estaba escondido dentro del barco.',
   },
   {
@@ -269,6 +281,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Heinrich Hertz demostró experimentalmente la existencia de las ondas electromagnéticas predichas por Maxwell en 1887, en la Universidad de Karlsruhe, Alemania. Su aparato era esencialmente un circuito LC con un entrehierro (un transmisor rudimentario) y un aro de alambre con otro entrehierro (un receptor rudimentario). Cuando activaba el transmisor, aparecían chispas minúsculas en el receptor ubicado al otro lado de la habitación, probando que la energía viajaba a través del espacio como ondas invisibles.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El factor de calidad Q de un circuito resonante mide qué tan "selectivo" es en su frecuencia de resonancia. Una bobina de Tesla secundaria bien construida puede alcanzar un factor Q de 200 a 400, significando que almacena entre 200 y 400 veces más energía de la que pierde en cada ciclo de oscilación. En comparación, un receptor de radio FM típico tiene un Q de 50-100, y un cristal de cuarzo de reloj tiene un Q de 10,000 a 100,000. Un factor Q alto permite acumular más energía y producir voltajes más altos.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m10/banner_fisica-detras-magia.webp',
+    bannerCaption: 'La física detrás de la magia: resonancia, factor Q y efecto corona — la ciencia que explica cada chispa',
     fact: 'Las ecuaciones de Maxwell, publicadas en 1865, consisten en cuatro ecuaciones que unifican la electricidad, el magnetismo y la óptica en un solo marco teórico. Predijeron que la luz es una onda electromagnética que viaja a 299,792,458 metros por segundo, un valor que fue confirmado experimentalmente por Albert Michelson en 1879 con un error menor al 0.06%. Estas mismas ecuaciones predicen que toda la radiación electromagnética (ondas de radio, microondas, infrarrojo, luz visible, ultravioleta, rayos X y rayos gamma) son manifestaciones del mismo fenómeno, diferenciándose únicamente en su frecuencia y longitud de onda.',
   },
 ];
@@ -693,6 +707,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video} color={node.color} />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

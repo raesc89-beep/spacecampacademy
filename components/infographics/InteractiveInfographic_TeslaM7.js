@@ -150,6 +150,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La torre Wardenclyffe medía 57 metros de altura y estaba coronada por una cúpula semiesférica de cobre de 20 metros de diámetro. Tesla la diseñó para transmitir electricidad a través de la ionosfera terrestre, usando la Tierra misma como conductor. Cuando fue demolida en 1917 para pagar deudas, el acero de la estructura se vendió como chatarra por apenas unos pocos miles de dólares. En 2013, un crowdfunding recaudó 1.37 millones de dólares para comprar el terreno y convertirlo en un museo dedicado a Tesla.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El concepto de Tesla sobre la transmisión inalámbrica de energía no era pura fantasía. En 2020, investigadores de la Universidad de Hiroshima lograron transmitir 1.8 kilovatios de energía a través de microondas a una distancia de 55 metros con una eficiencia del 42%. Empresas como Powercast y Ossia desarrollan tecnología de carga inalámbrica basada en principios similares a los que Tesla propuso en 1901, aunque a escalas mucho menores que las que él imaginó para su sistema global.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m7/banner_genio-olvidado.webp',
+    bannerCaption: 'El genio olvidado: mientras honraban a Marconi por la radio, Tesla vivía solo y sin fondos en Nueva York',
     fact: 'Cuando Tesla rompió su contrato de regalías con Westinghouse en 1897, renunció a ingresos estimados en 12 millones de dólares de la época, equivalentes a más de 400 millones de dólares actuales. Si hubiera mantenido ese acuerdo, habría sido uno de los hombres más ricos de Estados Unidos. Tesla tomó esa decisión en 15 minutos, rompiendo el contrato frente a George Westinghouse con las palabras: "Usted ha creído en mí cuando nadie más lo hizo. Usted me respaldó cuando los demás se burlaban. El beneficio que llegará a la humanidad de mi sistema de corriente alterna es más importante que el dinero."',
   },
   {
@@ -169,6 +171,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El Hotel New Yorker tenía su propia planta generadora de electricidad, la más grande de cualquier edificio privado en su época, capaz de producir suficiente energía para una ciudad de 35,000 habitantes. Funcionaba con corriente alterna, el sistema inventado por Tesla. Había una simetría poética en el hecho de que Tesla viviera sus últimos años en un edificio alimentado por su propia creación. Hoy, una placa conmemorativa en el lobby del hotel marca la habitación 3327 como el último hogar del inventor.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El trastorno obsesivo-compulsivo (TOC) que Tesla aparentemente padecía afecta al 2-3% de la población mundial. Los estudios neurocientíficos modernos han identificado que el TOC está relacionado con una hiperactividad en el circuito córtico-estriado-talámico-cortical del cerebro. Investigadores de la Universidad de Cambridge publicaron en 2019 que personas con TOC muestran mayor actividad en la corteza orbitofrontal, lo cual podría estar relacionado con una mayor capacidad de detección de patrones, una habilidad que Tesla poseía en grado superlativo.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m7/banner_hotel-new-yorker.webp',
+    bannerCaption: 'Hotel New Yorker: Tesla vivió sus últimos 10 años en la habitación 3327, pagada por respeto por Westinghouse',
     fact: 'La habitación 3327 del Hotel New Yorker no fue elegida al azar. Tesla exigía que todos los números en su vida fueran divisibles por tres: la habitación 3327 (3+3+2+7=15, divisible por 3), su hora de cena (20:10, 2+0+1+0=3), sus 18 servilletas (divisible por 3). Esta fijación numérica llevó a Tesla a declarar públicamente en 1934: "Si supieras la magnificencia de los números 3, 6 y 9, tendrías la clave del universo." Esta frase se ha convertido en una de las citas más reproducidas en la cultura popular, aunque los matemáticos señalan que no tiene fundamento científico formal.',
   },
   {
@@ -188,6 +192,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las palomas de roca (Columba livia), la especie que Tesla alimentaba en Nueva York, son capaces de reconocer rostros humanos individuales. Un estudio de 2011 publicado en la revista Avian Biology Research por investigadores de la Universidad de París demostró que las palomas entrenadas podían distinguir entre dos personas diferentes basándose únicamente en sus rasgos faciales, incluso cuando cambiaban de ropa. Es científicamente plausible que la paloma blanca de Tesla lo reconociera individualmente entre las miles de personas que pasaban por Bryant Park cada día.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las palomas poseen un sistema de navegación biológica que incluye cristales de magnetita en sus picos, que funcionan como una brújula magnética interna. Además, investigaciones de la Universidad de Oxford publicadas en 2004 demostraron que las palomas pueden detectar infrasonidos por debajo de 0.1 Hz y utilizar mapas olfativos para orientarse. Su capacidad visual incluye la percepción de luz ultravioleta y polarizada, lo cual les permite detectar patrones en el cielo invisibles para el ojo humano. Tesla, que estudiaba el electromagnetismo, posiblemente intuía esta conexión magnética con las aves.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m7/banner_palomas-tesla.webp',
+    bannerCaption: 'Las palomas de Tesla: el inventor caminaba cada día por Bryant Park alimentando cientos de palomas que eran su familia',
     fact: 'Las palomas que Tesla alimentaba en Nueva York eran descendientes de las palomas de roca europeas traídas a América del Norte en el siglo XVII. Estas aves tienen una capacidad demostrada para volar a velocidades de hasta 148 km/h y recorrer distancias de más de 1,800 kilómetros para regresar a su hogar. Durante la Primera Guerra Mundial, una paloma mensajera llamada Cher Ami salvó a 194 soldados estadounidenses del Batallón Perdido en octubre de 1918, volando 40 kilómetros con un mensaje a pesar de haber sido herida por disparos. Tesla conocía estas capacidades y las consideraba una demostración de la conexión entre los organismos vivos y los campos electromagnéticos terrestres.',
   },
   {
@@ -207,6 +213,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La carta que Einstein envió a Tesla en 1931 decía, en parte: "Me complace saber que usted está celebrando su 75 cumpleaños y que, como un pionero productivo en el campo de las corrientes de alta frecuencia, ha experimentado el notable desarrollo de esta área de la tecnología." Aunque respetuosa, la carta era notablemente breve comparada con las que Einstein enviaba a colegas con quienes mantenía debates activos. Algunos historiadores interpretan esto como evidencia de que Einstein respetaba los logros de ingeniería de Tesla pero no lo consideraba un físico teórico de su mismo nivel.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Tesla afirmaba en su conferencia de 1931 que estaba trabajando en un motor que extraería energía del "medio ambiente". Aunque sus contemporáneos lo consideraron imposible, la física moderna ha confirmado que el vacío cuántico contiene energía (la energía del punto cero o zero-point energy). En 1948, Hendrik Casimir predijo que dos placas metálicas cercanas experimentarían una fuerza atractiva debido a fluctuaciones del vacío cuántico. Este efecto Casimir fue medido experimentalmente en 1997 por Steve Lamoreaux en Los Álamos, confirmando que el "espacio vacío" contiene energía medible.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m7/banner_celebridad-soledad.webp',
+    bannerCaption: 'Celebridad y soledad: portada del Time a sus 75 años pero completamente solo, solo sus palomas lo acompañaban',
     fact: 'La nominación de Tesla al Premio Nobel de Física en 1937 fue presentada por Felix Ehrenfeld, un físico de Graz, Austria, la misma ciudad donde Tesla estudió ingeniería eléctrica en 1875. El comité Nobel nunca concedió el premio a Tesla. Según los archivos del Nobel, abiertos al público 50 años después de cada nominación, Tesla fue nominado en total en pocas ocasiones, mientras que científicos como Marie Curie recibieron decenas de nominaciones antes de ganar. La leyenda urbana de que Tesla rechazó el Nobel en 1915 para no compartirlo con Edison carece de respaldo documental en los archivos oficiales de la Fundación Nobel.',
   },
   {
@@ -226,6 +234,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla escribió un documento técnico detallado sobre el Teleforce titulado "New Art of Projecting Concentrated Non-Dispersive Energy Through Natural Media", fechado el 16 de mayo de 1935. Este documento, de aproximadamente 20 páginas, describía con precisión matemática los cuatro componentes del arma. Una copia fue encontrada en su habitación del Hotel New Yorker después de su muerte. El documento fue clasificado inmediatamente por la Oficina de Propiedad Alienígena del gobierno estadounidense y no fue desclasificado parcialmente hasta 1981, casi cuatro décadas después de la muerte de Tesla.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los aceleradores de partículas modernos utilizan principios que Tesla describió en 1934. El Gran Colisionador de Hadrones (LHC) del CERN, con 27 kilómetros de circunferencia, acelera protones usando campos electromagnéticos de radiofrecuencia, alcanzando energías de 6.5 TeV por haz. Sin embargo, estos haces funcionan en ultra-alto vacío (10^-10 mbar) y se dispersarían en microsegundos si se expusieran a la atmósfera. El desafío técnico que Tesla no pudo resolver — mantener un haz coherente en aire abierto — sigue sin solución práctica a escala militar en el año 2024.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m7/banner_rayo-muerte-redux.webp',
+    bannerCaption: 'El rayo de la muerte revisitado: en 1937 anunció su arma definitiva, el FBI conficó todos sus papeles al morir',
     fact: 'El pago de 25,000 dólares que la Unión Soviética realizó a Tesla en 1937 por su estudio del Teleforce equivale a aproximadamente 530,000 dólares actuales. Este pago fue confirmado por documentos desclasificados del FBI y del Departamento de Estado estadounidense. La transacción fue legal en su momento, ya que Estados Unidos y la URSS no eran enemigos oficiales en 1937. Sin embargo, después de la muerte de Tesla en 1943, el miedo a que los soviéticos tuvieran acceso a tecnología avanzada de Tesla fue una de las razones por las que el gobierno estadounidense confiscó inmediatamente todos sus papeles y pertenencias del Hotel New Yorker.',
   },
   {
@@ -245,6 +255,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Alice Monaghan, la camarera que descubrió el cuerpo de Tesla, trabajó en el Hotel New Yorker durante más de 20 años. En una entrevista de 1955, recordó que Tesla siempre la trataba con cortesía y le dejaba propinas modestas pero regulares. Monaghan notó que Tesla había dejado una ventana ligeramente abierta, probablemente para que sus palomas pudieran entrar como hacían habitualmente. Junto a su cama había una libreta con anotaciones matemáticas recientes, indicando que había estado trabajando en cálculos hasta poco antes de su muerte a los 86 años de edad.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La trombosis coronaria que mató a Tesla es causada por un coágulo sanguíneo que bloquea una arteria coronaria, interrumpiendo el flujo de sangre al músculo cardíaco. En 1943, no existían tratamientos efectivos para esta condición. Hoy, la angioplastia con stent puede resolver la obstrucción en menos de 90 minutos, y medicamentos trombolíticos como la alteplasa pueden disolver el coágulo si se administran dentro de las primeras 3-4.5 horas. La mortalidad por infarto agudo de miocardio ha disminuido del 30% en los años 1940 a menos del 5% en hospitales modernos con unidades de cuidados coronarios especializadas.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m7/banner_ultimo-dia.webp',
+    bannerCaption: 'El último día: Tesla fue encontrado solo en su habitación el 7 de enero de 1943, 2,000 personas lo despidieron',
     fact: 'Después de la muerte de Tesla, la Oficina de Propiedad Alienígena confiscó aproximadamente 80 baúles con sus documentos personales, prototipos, cuadernos de notas y correspondencia. El Dr. John G. Trump, un profesor de ingeniería eléctrica del MIT y tío del expresidente Donald Trump, fue designado por la OAP para revisar los papeles de Tesla y evaluar si contenían información de valor militar. Trump concluyó en su informe de enero de 1943 que los documentos contenían principalmente "notas especulativas y filosóficas" y que no representaban un peligro para la seguridad nacional. Los baúles fueron finalmente entregados al sobrino de Tesla, Sava Kosanovic, en 1952 y enviados a Belgrado.',
   },
   {
@@ -264,6 +276,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 2012, el dibujante web Matthew Inman de The Oatmeal lanzó una campaña en la plataforma Indiegogo para recaudar fondos y comprar el antiguo laboratorio de Tesla en Wardenclyffe, Long Island. La campaña recaudó 1.37 millones de dólares de más de 33,000 donantes en solo 9 días. Elon Musk contribuyó personalmente con 1 millón de dólares adicionales para la restauración. El Tesla Science Center en Wardenclyffe fue establecido como museo y centro educativo, preservando el único laboratorio de Tesla que sobrevive, aunque la torre original fue demolida en 1917 y solo queda la base del edificio principal.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El motor de inducción de Tesla, patentado en 1888, convierte energía eléctrica en energía mecánica sin necesidad de contacto físico entre el rotor y las bobinas del estátor. Este principio se basa en la Ley de Faraday (1831) y la Ley de Lenz (1834), que describen cómo un campo magnético variable induce corrientes en un conductor. Los motores de inducción modernos alcanzan eficiencias del 95-97%, lo que significa que casi toda la energía eléctrica se convierte en movimiento útil. Más de 45% de toda la electricidad generada en el mundo es consumida por motores eléctricos industriales, la mayoría basados en el diseño original de Tesla.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m7/banner_legado-inmortal.webp',
+    bannerCaption: 'Legado inmortal: todo lo que nos conecta y nos da luz eléctrica en el mundo moderno lleva el sello de Tesla',
     fact: 'La empresa Tesla, Inc. alcanzó una capitalización de mercado de más de 1 billón de dólares en octubre de 2021, convirtiéndose en la sexta empresa más valiosa del mundo. Nikola Tesla, cuyo nombre lleva la compañía, murió con deudas pendientes en su cuenta del Hotel New Yorker y fue enterrado con una ceremonia financiada parcialmente por contribuciones del gobierno yugoslavo. Sus 300 patentes, que abarcaban desde motores eléctricos hasta sistemas de iluminación y transmisión inalámbrica, habían expirado décadas antes de que su nombre se convirtiera en sinónimo de innovación tecnológica del siglo XXI. La ironía es que Tesla nunca recibió beneficios financieros proporcionales al valor que sus inventos crearon para la civilización.',
   },
 ];
@@ -703,6 +717,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

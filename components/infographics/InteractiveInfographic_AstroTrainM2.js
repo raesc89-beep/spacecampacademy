@@ -163,6 +163,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El astronauta Scott Kelly regresó a la Tierra en marzo de 2016 tras pasar 340 días consecutivos en la ISS. Al aterrizar, era 8.6 milisegundos más joven que su hermano gemelo Mark Kelly, debido a la dilatación temporal relativista. Su cuerpo tardó meses en readaptarse: experimentó dolor articular, piel hipersensible, piernas hinchadas y dificultad para caminar durante las primeras semanas. Los datos médicos comparativos entre ambos gemelos constituyeron el NASA Twins Study, publicado en Science en 2019.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La microgravedad no es gravedad cero. A 420 km de altitud, la aceleración gravitatoria es de 8.67 m/s², comparada con 9.81 m/s² en la superficie. La diferencia entre la gravedad real y la percibida se debe a que la estación cae libremente alrededor de la Tierra a una velocidad orbital de 7.66 km/s. Las vibraciones de los equipos y los movimientos de la tripulación generan micro-perturbaciones de aproximadamente 10⁻⁶ G, por lo que técnicamente se denomina "microgravedad" y no "gravedad cero".' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m2/banner_microgravedad.webp',
+    bannerCaption: 'Microgravedad: los astronautas no están sin gravedad sino en caída libre continua alrededor de la Tierra',
     fact: 'En 2003, el físico italiano Pietro Calogero de la Universidad de Nápoles calculó que un astronauta que pasa 6 meses a bordo de la ISS orbita la Tierra aproximadamente 2,880 veces, recorriendo una distancia total de 121 millones de kilómetros, equivalente a un 80% de la distancia entre la Tierra y el Sol. A pesar de esta distancia recorrida, el astronauta nunca se aleja más de 420 km del punto más cercano de la superficie terrestre.',
   },
   {
@@ -182,6 +184,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La ISS se puede ver a simple vista desde la Tierra. Aparece como un punto brillante que se desplaza por el cielo nocturno, más luminoso que la mayoría de las estrellas. Su magnitud aparente puede alcanzar -5.9, lo que la convierte en el tercer objeto más brillante del cielo nocturno después de la Luna y Venus. La NASA ofrece el servicio "Spot the Station" que envía alertas por correo electrónico o mensaje de texto indicando cuándo y hacia dónde mirar para observarla.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El costo total de la ISS se estima en más de 150,000 millones de dólares, lo que la convierte en el objeto más costoso jamás construido. Su construcción involucró a más de 100,000 personas en 16 países durante más de una década. La estación ha sido habitada de forma continua desde el 2 de noviembre del año 2000, acumulando más de 23 años de presencia humana permanente en el espacio. Más de 270 personas de 21 países diferentes han visitado la estación desde su inauguración.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m2/banner_estacion-espacial.webp',
+    bannerCaption: 'La Estación Espacial Internacional: 109m de paneles solares, 16 países y hogar de humanos desde el año 2000',
     fact: 'La ISS viaja a tal velocidad que si pudieras disparar una bala desde la estación, esta orbita la Tierra más rápido que el proyectil. A 27,600 km/h, la estación recorre una distancia equivalente a un viaje de ida y vuelta a la Luna cada día. En los más de 23 años que lleva habitada de forma continua, ha completado más de 135,000 órbitas alrededor de la Tierra, acumulando una distancia recorrida superior a los 5,600 millones de kilómetros, suficiente para realizar un viaje de ida y vuelta a Neptuno.',
   },
   {
@@ -201,6 +205,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 2015, los astronautas de la Expedición 44 comieron las primeras lechugas cultivadas en el espacio como parte del experimento Veggie. Las plantas crecieron en almohadas de arcilla expandida con nutrientes, bajo luces LED rojas, azules y verdes. Scott Kelly describió el sabor como "similar a la rúcula". Desde entonces, la ISS ha cultivado rábanos, chiles y flores de zinnia, avanzando hacia la autosuficiencia alimentaria para futuras misiones a Marte.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La comida espacial debe cumplir requisitos estrictos de seguridad. No puede producir migas (riesgo de obstrucción de filtros), no puede ser excesivamente líquida (el líquido forma esferas flotantes), no puede contener alcohol (prohibido oficialmente por NASA, aunque la estación rusa ha tenido excepciones históricas), y debe tener una vida útil mínima de 18 meses sin refrigeración. El sistema de calentamiento de alimentos de la ISS opera a 77°C y tarda entre 20 y 30 minutos en calentar una porción desde temperatura ambiente.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m2/banner_comer-en-el-espacio.webp',
+    bannerCaption: 'Comer en el espacio: tortillas en lugar de pan para evitar migas, sal en gel y comida empaquetada especialmente',
     fact: 'En 1965, el astronauta John Young sacó de contrabando un sándwich de carne en conserva (corned beef) durante la misión Gemini 3, escondiéndolo en el bolsillo de su traje espacial. Cuando lo sacó en órbita, las migas comenzaron a flotar por la cápsula, creando un riesgo potencial para los instrumentos electrónicos. El incidente provocó una reprimenda del Congreso de Estados Unidos y llevó a la NASA a establecer reglas estrictas sobre los alimentos permitidos en las naves espaciales, reglas que se mantienen más de 60 años después.',
   },
   {
@@ -220,6 +226,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El astronauta japonés Soichi Noguchi reveló que algunos tripulantes prefieren dormir en cualquier lugar de la estación que no sea su cabina asignada, simplemente flotando en un módulo con su saco de dormir sujeto a la pared con velcro. La astronauta Peggy Whitson dormía frecuentemente en el módulo Cupola para poder ver la Tierra y las estrellas al despertar. Cada astronauta desarrolla sus propias rutinas y preferencias de sueño durante las primeras semanas en órbita.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un estudio publicado en 2019 en la revista JAMA Network Open analizó datos de sueño de 21 astronautas durante misiones en la ISS. Los resultados mostraron que el uso de la pastilla zolpidem (Ambien) para conciliar el sueño era frecuente: aproximadamente el 75% de los astronautas lo utilizaron al menos una vez durante su misión. La melatonina también se administra como ayuda para sincronizar el ritmo circadiano. La NASA considera la privación crónica de sueño como uno de los cinco riesgos principales para la salud en vuelos espaciales prolongados.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m2/banner_dormir-en-orbita.webp',
+    bannerCaption: 'Dormir en órbita: 16 amaneceres al día, bolsa de dormir anclada a la pared y brazos flotando solos',
     fact: 'En la estación espacial rusa Mir, que operó entre 1986 y 2001, los cosmonautas no tenían cabinas individuales de sueño como en la ISS. Dormían en sacos de dormir atados a las paredes del módulo principal, a menudo con otros tripulantes durmiendo a pocos centímetros. El cosmonauta Valeri Polyakov estableció el récord de permanencia continua en el espacio al vivir 437 días a bordo de la Mir entre enero de 1994 y marzo de 1995, adaptándose a dormir en estas condiciones durante más de 14 meses consecutivos.',
   },
   {
@@ -239,6 +247,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El primer inodoro instalado en el transbordador espacial costó 50,000 dólares en 1980. El sistema actual UWMS de la ISS costó 23 millones. La diferencia refleja décadas de mejoras en confiabilidad y comodidad. Los astronautas del programa Apollo usaban bolsas adhesivas que se pegaban al cuerpo, un proceso que cada tripulante describió como extremadamente incómodo. Buzz Aldrin comentó que el aspecto menos glamuroso de caminar en la Luna fue lidiar con el sistema de recolección de desechos dentro de su traje.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El Water Recovery System de la ISS alcanza una tasa de recuperación del 93.5% del agua total a bordo. Esto incluye el agua extraída de la orina (mediante destilación al vacío a 44°C para reducir el consumo energético), el condensado atmosférico del sistema de control ambiental y el agua producida por el sistema Sabatier. Para una tripulación de seis personas, el WRS reduce la necesidad de reabastecimiento de agua en aproximadamente 2,700 kilogramos al año, un ahorro que se traduce en decenas de millones de dólares en costos de lanzamiento.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m2/banner_higiene-espacial.webp',
+    bannerCaption: 'Higiene espacial: champú sin agua, pasta de dientes para tragar y baño con succión de vacío',
     fact: 'En la estación espacial soviética Salyut 6 (1977-1982), los cosmonautas disponían de una ducha espacial experimental que consistía en una bolsa de plástico cilíndrica que rodeaba el cuerpo del cosmonauta mientras un aspersor liberaba agua nebulizada. El proceso completo de ducharse, recoger el agua flotante con aspiradoras portátiles y secar el interior de la bolsa tomaba más de 45 minutos, comparado con los 5-10 minutos de una ducha terrestre. El sistema se abandonó por su complejidad y porque las toallas húmedas resultaron ser más prácticas y eficientes.',
   },
   {
@@ -258,6 +268,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La astronauta Sunita Williams completó el Maratón de Boston de 2007 mientras corría en la caminadora T2 a bordo de la ISS. Registró un tiempo de 4 horas, 23 minutos y 10 segundos mientras orbitaba la Tierra a 27,600 km/h. Fue inscrita oficialmente en la carrera con el dorsal número 14,000. Williams describió la experiencia como desafiante porque las correas del arnés generaban fricción e irritación en los hombros durante una carrera tan prolongada.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un estudio publicado en el Journal of Bone and Mineral Research en 2012 comparó la pérdida ósea entre astronautas que usaron el iRED (dispositivo antiguo con carga máxima de 136 kg) y aquellos que usaron el ARED (carga máxima de 272 kg). Los usuarios del ARED mostraron una reducción del 50% en la pérdida de densidad mineral ósea en la cadera y una preservación casi total de la masa ósea vertebral, demostrando que las cargas de ejercicio de alta intensidad son el factor clave para la protección ósea en microgravedad.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m2/banner_ejercicio-obligatorio.webp',
+    bannerCaption: 'Ejercicio obligatorio: 2.5 horas diarias para evitar perder el 1% de masa ósea por mes en microgravedad',
     fact: 'El equipamiento de ejercicio de la ISS pesa más de 900 kilogramos en total y ocupa un espacio considerable en el Nodo 3 (Tranquility). El ARED por sí solo pesa 408 kilogramos y mide 1.8 metros de alto. A un costo de transporte de aproximadamente 20,000 dólares por kilogramo a la órbita baja, el envío de estos equipos al espacio costó más de 18 millones de dólares solo en transporte, sin contar el desarrollo y fabricación. Sin embargo, esta inversión se justifica: sin el programa de ejercicio, los astronautas regresarían a la Tierra con discapacidades físicas que podrían tardar años en revertirse.',
   },
   {
@@ -277,6 +289,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El astronauta canadiense Chris Hadfield se convirtió en un fenómeno cultural en 2013 al grabar una versión de la canción "Space Oddity" de David Bowie a bordo de la ISS, tocando la guitarra mientras flotaba en microgravedad. El video acumuló más de 50 millones de vistas en YouTube. Hadfield también publicaba fotografías diarias de la Tierra y respondía preguntas de estudiantes de todo el mundo a través de redes sociales, redefiniendo la comunicación entre astronautas y el público general.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un estudio de Jack Stuster publicado por la NASA en 2010 ("Behavioral Issues Associated with Long-Duration Space Expeditions") analizó diarios personales de astronautas y cosmonautas durante misiones de larga duración. Los factores de estrés más frecuentes fueron: la separación de la familia, la monotonía de las tareas repetitivas, la falta de privacidad, y los conflictos sobre limpieza y ruido. Stuster encontró que el tercer cuarto de la misión es típicamente el período de mayor tensión psicológica, un fenómeno observado también en expediciones polares y submarinas.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m2/banner_vida-social-orbita.webp',
+    bannerCaption: 'Vida social en órbita: tripulaciones multinacionales comparten comidas, películas y apoyo psicológico en el espacio',
     fact: 'La primera boda espacial ocurrió el 10 de agosto de 2003, cuando el cosmonauta ruso Yuri Malenchenko se casó con Ekaterina Dmitrieva mediante una ceremonia por videoconferencia mientras él orbitaba la Tierra a bordo de la ISS y ella se encontraba en Houston, Texas. Un sustituto ocupó su lugar físico en la ceremonia terrestre. La boda causó controversia porque la agencia espacial rusa no la aprobó oficialmente, pero fue legal bajo las leyes del estado de Texas. Malenchenko no enfrentó consecuencias profesionales y voló en misiones posteriores.',
   },
 ];
@@ -708,6 +722,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               color={node.color}
               poster={node.video.poster}
             />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

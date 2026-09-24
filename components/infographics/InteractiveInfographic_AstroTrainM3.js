@@ -153,6 +153,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Alexei Leonov era un talentoso artista que dibujó y pintó lo que vio durante su caminata espacial. Sus bocetos del amanecer orbital y la curvatura terrestre, realizados con lápices de colores que llevó a bordo, se convirtieron en las primeras obras de arte creadas en el espacio. Después de su retiro, Leonov produjo más de 200 pinturas espaciales que han sido exhibidas en museos de Moscú y Washington D.C. El cráter Leonov en la cara oculta de la Luna fue nombrado en su honor por la Unión Astronómica Internacional en 1970.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El traje Berkut que usó Leonov pesaba 20 kilogramos y tenía un sistema de soporte vital autónomo para solo 45 minutos. La presión interna operaba a 0.4 atmósferas de oxígeno puro, en contraste con la presión atmosférica terrestre de 1 atmósfera con 21% de oxígeno. Esta diferencia de presión fue precisamente lo que causó la inflación del traje en el vacío. Los trajes modernos como el EMU operan a 0.29 atmósferas (4.3 psi), un equilibrio entre movilidad y protección que tomó décadas de ingeniería para perfeccionar.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m3/banner_primer-paseo-espacial.webp',
+    bannerCaption: 'El primer paseo espacial: Alexei Leonov flotó 12 minutos fuera de la cápsula en 1965 con el traje casi explotando',
     fact: 'Desde la caminata de Leonov en 1965 hasta julio de 2024, se han realizado más de 270 caminatas espaciales desde la Estación Espacial Internacional solamente. El récord de mayor número de EVAs lo tiene el astronauta Michael López-Alegría con 10 caminatas que suman 67 horas y 40 minutos fuera de la estación. La caminata espacial más larga de la historia duró 8 horas y 56 minutos, realizada por Susan Helms y Jim Voss el 11 de marzo de 2001 durante la misión STS-102, mientras instalaban equipo en la ISS.',
   },
   {
@@ -172,6 +174,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El traje EMU tiene un sistema de hidratación integrado llamado "In-suit Drink Bag" que contiene 0.95 litros de agua potable dentro del casco. El astronauta bebe a través de una pajilla flexible que puede alcanzar con la boca sin usar las manos. También incluye una barra de comida de cereales adherida dentro del casco como alimento de emergencia. Si un astronauta necesita rascarse la nariz, puede frotar su cara contra un trozo de Velcro colocado específicamente dentro del casco para ese propósito, una solución sencilla para un problema que se descubrió muy temprano en el programa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La presión interna del EMU de 4.3 psi (29.6 kPa) es solo el 30% de la presión atmosférica terrestre al nivel del mar (14.7 psi / 101.3 kPa). Este valor no fue elegido al azar: es el resultado de décadas de investigación para encontrar el equilibrio entre la movilidad del astronauta (menor presión = articulaciones más flexibles) y la seguridad fisiológica (suficiente presión parcial de oxígeno para mantener la oxigenación sanguínea). Con oxígeno al 100% a 4.3 psi, la presión parcial de O₂ es 222 mmHg, superior a los 160 mmHg del aire terrestre al nivel del mar.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m3/banner_traje-emu.webp',
+    bannerCaption: 'Traje EMU: 14 capas de materiales incluyendo Kevlar, 8.5h de oxígeno y enfriamiento por agua, pesa 150 kg',
     fact: 'Los trajes EMU actualmente en uso en la ISS fueron diseñados originalmente para el programa del Transbordador Espacial en 1981 y tienen una vida útil de diseño de 15 años. Varios de estos trajes han estado en servicio durante más de 40 años, sometidos a reparaciones y actualizaciones constantes. En 2013, el astronauta italiano Luca Parmitano sufrió una fuga de agua dentro de su casco durante la EVA-23, acumulándose aproximadamente 1.5 litros de agua alrededor de su cara, ojos, nariz y oídos. Parmitano no podía ver ni oír, y casi se ahogó dentro de su traje en el espacio. Este incidente llevó a la NASA a instalar almohadillas absorbentes de emergencia y un tubo de respiración dentro de todos los cascos EMU.',
   },
   {
@@ -191,6 +195,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El protocolo de campout (acampar) es una de las técnicas más ingeniosas para reducir el tiempo de pre-respiración. La noche antes de una EVA, los dos astronautas que realizarán la caminata duermen dentro de la esclusa Quest con la presión reducida a 10.2 psi. Esto equivale a pasar la noche a una altitud de aproximadamente 3,000 metros sobre el nivel del mar. Durante este "campamento" nocturno, el nitrógeno comienza a salir de sus tejidos gradualmente, reduciendo el tiempo de pre-respiración con mascarilla de oxígeno puro de 4 horas a solo 50 minutos la mañana siguiente.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La enfermedad por descompresión ocurre cuando la presión ambiente disminuye lo suficiente para que el nitrógeno disuelto en los tejidos corporales forme burbujas de gas. A presión normal, el cuerpo humano contiene aproximadamente 1 litro de nitrógeno disuelto. Las burbujas pueden bloquear vasos sanguíneos y causar dolor articular, parálisis, e incluso la muerte. La Ley de Henry establece que la solubilidad de un gas en un líquido es directamente proporcional a la presión parcial de ese gas. La NASA utiliza modelos matemáticos basados en esta ley para calcular los tiempos exactos de pre-respiración necesarios.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m3/banner_preparacion-eva.webp',
+    bannerCaption: 'Preparación EVA: 4 horas respirando oxígeno puro para prevenir la enfermedad de descompresión antes de salir',
     fact: 'En toda la historia del programa espacial, ningún astronauta ha desarrollado enfermedad por descompresión severa durante una EVA, gracias a la efectividad de los protocolos de pre-respiración. Sin embargo, en pruebas en cámara de altitud en tierra, se han documentado casos de dolor articular leve (conocido como "bends tipo I") en condiciones simuladas de EVA. El protocolo ISLE (In-Suit Light Exercise) actual requiere que los astronautas realicen 50 minutos de ejercicio ligero en bicicleta mientras respiran oxígeno puro a través de una mascarilla, acelerando la eliminación de nitrógeno un 40% comparado con estar en reposo.',
   },
   {
@@ -210,6 +216,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 2008, la astronauta Heidemarie Stefanyshyn-Piper perdió accidentalmente una bolsa de herramientas valorada en aproximadamente 100,000 dólares durante la EVA de la misión STS-126. La bolsa se alejó flotando mientras ella limpiaba una articulación con grasa. La bolsa de herramientas fue rastreada desde la Tierra como un objeto orbital más, con designación oficial 1998-067BL, y fue visible a simple vista durante varias semanas antes de reentrar en la atmósfera y desintegrarse en agosto de 2009. Este incidente resaltó la necesidad de mejorar los protocolos de sujeción de equipo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El dispositivo SAFER contiene 1.36 kilogramos de nitrógeno gaseoso comprimido a 22.7 MPa (3,300 psi) que alimenta 24 toberas de propulsión distribuidas alrededor de la mochila. Puede generar un cambio de velocidad (delta-v) de hasta 3 metros por segundo, suficiente para que un astronauta recorra la distancia desde el extremo de los paneles solares hasta la escotilla de la estación. El sistema se controla con un joystick manual que el astronauta acciona con la mano izquierda. SAFER nunca se ha utilizado en una emergencia real, pero se prueba regularmente al final de algunas EVAs.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m3/banner_herramientas-vacio.webp',
+    bannerCaption: 'Herramientas del vacío: todo tiene correa para no soltarse, pues una llave flotando se convierte en basura espacial',
     fact: 'Todos los pernos exteriores de la Estación Espacial Internacional son de tamaño 7/16 de pulgada (11.1 mm), una decisión de diseño tomada en la década de 1990 para simplificar las caminatas espaciales. Esto significa que los astronautas solo necesitan un tipo de punta para su Pistol Grip Tool, eliminando la necesidad de cambiar entre diferentes tamaños durante operaciones complejas en el vacío. Esta estandarización ha ahorrado cientos de horas de trabajo en más de 270 caminatas espaciales realizadas desde la ISS, y se ha convertido en una referencia de diseño para futuras estaciones espaciales y hábitats lunares.',
   },
   {
@@ -229,6 +237,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Durante la misión de servicio SM4 al Hubble en 2009, el astronauta Mike Massimino no podía retirar un pasamanos que bloqueaba el acceso a un instrumento. Después de intentar con la herramienta correcta sin éxito, el control de misión le autorizó a arrancar el pasamanos con la mano, algo nunca antes hecho en una EVA. Massimino tiró con toda su fuerza, el pasamanos se soltó, y la reparación pudo continuar. Este momento fue descrito por los ingenieros en tierra como uno de los más tensos en la historia del programa de servicio del Hubble.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El amoníaco utilizado como refrigerante en la ISS circula por los radiadores externos a temperaturas entre -34°C y +46°C, disipando hasta 70 kilovatios de calor generado por los equipos electrónicos de la estación. El sistema tiene dos bucles independientes (A y B) para redundancia. Si un astronauta entra en contacto con amoníaco durante una EVA, el protocolo exige que permanezca en la esclusa durante un período de descontaminación de una hora, porque el amoníaco puede causar quemaduras químicas en piel, ojos y pulmones si entra en la estación.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m3/banner_reparaciones-orbita.webp',
+    bannerCaption: 'Reparaciones en órbita: instalar paneles solares o reparar el Hubble con guantes gruesos a 420 km de altura',
     fact: 'La reparación del Telescopio Hubble en 1993 es considerada una de las 10 misiones espaciales más importantes de la historia. Antes de la corrección óptica, el espejo del Hubble tenía una aberración esférica de 2.2 micrómetros que producía imágenes borrosas. El sistema corrector COSTAR (Corrective Optics Space Telescope Axial Replacement) funcionó como un par de lentes correctivos, similar a unas gafas. Después de la reparación, la resolución del Hubble alcanzó 0.05 segundos de arco, permitiéndole distinguir objetos separados por una distancia equivalente a identificar dos luciérnagas a 3 metros de separación vistas desde Tokio estando tú en Washington D.C.',
   },
   {
@@ -248,6 +258,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En febrero de 2024, la ISS realizó una maniobra de evasión de emergencia para evitar un fragmento de un viejo satélite ruso que pasó a solo 1 kilómetro de la estación. Los astronautas fueron alertados con solo horas de anticipación y tuvieron que cerrar las escotillas entre módulos y prepararse para una posible evacuación en las cápsulas Crew Dragon y Soyuz. La estación debe realizar maniobras de evasión de basura espacial varias veces al año, y desde 1999 ha ejecutado más de 30 maniobras de este tipo para esquivar objetos potencialmente peligrosos.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La radiación cósmica galáctica (GCR) está compuesta principalmente por protones (87%), partículas alfa (12%) y iones pesados como hierro (1%). Los iones pesados, conocidos como partículas HZE (High-Z and Energy), son particularmente dañinos porque pueden atravesar el blindaje del traje y la estación, rompiendo cadenas de ADN en las células. Un solo ion de hierro viajando casi a la velocidad de la luz puede depositar tanta energía en una célula como 600 protones. La NASA limita la exposición de por vida de un astronauta para mantener el riesgo de cáncer inducido por radiación por debajo del 3% adicional.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m3/banner_peligros-espacio.webp',
+    bannerCaption: 'Peligros del espacio: meteoritos a 28,000 km/h, temperatura de -157C a +121C y riesgo de inundación en el casco',
     fact: 'El Síndrome de Kessler, propuesto por el científico de la NASA Donald Kessler en 1978, describe un escenario donde la densidad de basura espacial en órbita terrestre baja se vuelve tan alta que las colisiones entre objetos generan más fragmentos, creando una reacción en cascada que haría ciertas órbitas inutilizables durante generaciones. En 2007, China destruyó su propio satélite Fengyun-1C en una prueba antisatélite, generando más de 3,500 fragmentos rastreables y más de 150,000 fragmentos menores de 1 centímetro. Este único evento aumentó la cantidad de basura espacial catalogada en un 25% y sigue representando un riesgo para la ISS y las caminatas espaciales.',
   },
   {
@@ -267,6 +279,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El contrato de Axiom Space para desarrollar los trajes del programa Artemis incluye un requisito inusual: los trajes deben poder ser utilizados por al menos el 99% de la población adulta de astronautas, incluyendo personas de entre 1.49 metros y 1.95 metros de altura. Este es un cambio significativo respecto a los trajes EMU actuales, que solo vienen en tres tallas de torso (mediano, grande y extra grande) y históricamente han limitado qué astronautas podían realizar caminatas espaciales. La primera mujer en caminar sobre la Luna usará un traje AxEMU durante la misión Artemis III.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El concepto de traje de presión mecánica (MCP) se basa en que el cuerpo humano necesita una presión externa mínima de aproximadamente 3.5 psi (24 kPa) para funcionar correctamente. En un traje convencional, esta presión la proporciona un gas (oxígeno). En un traje MCP, la presión la aplica directamente el tejido elástico contra la piel. La ventaja clave es que cualquier perforación en un traje MCP afectaría solo el área local (como un rasguño), mientras que una perforación en un traje presurizado con gas causaría la pérdida de toda la atmósfera del traje. La investigación de la profesora Newman en el MIT ha demostrado que las fibras de nitinol pueden generar la presión necesaria cuando se activan con una corriente eléctrica.' },
     ],
+    bannerImage: '/assets/astrotrain/infographic_m3/banner_futuro-paseos-espaciales.webp',
+    bannerCaption: 'El futuro de los paseos espaciales: trajes xEMU lunares y robots autónomos para las reparaciones más peligrosas',
     fact: 'La primera caminata espacial comercial fue realizada el 12 de septiembre de 2024 durante la misión Polaris Dawn de SpaceX. Los tripulantes Jared Isaacman y Sarah Gillis utilizaron los nuevos trajes IVA/EVA de SpaceX, diseñados internamente por la compañía, para realizar una breve EVA desde la cápsula Crew Dragon a una altitud de 700 kilómetros, la mayor altitud alcanzada por humanos desde el programa Apollo. A diferencia de las EVAs tradicionales con esclusa, toda la cápsula se despresurizó, exponiendo a los cuatro tripulantes al vacío. Los trajes de SpaceX pesan solo 25 kilogramos, una fracción del peso del EMU de 127 kilogramos, aunque tienen una autonomía mucho menor.',
   },
 ];
@@ -695,6 +709,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               color={node.color}
               poster={node.video.poster}
             />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

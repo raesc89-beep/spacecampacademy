@@ -159,6 +159,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La bobina más grande que Tesla construyó en Colorado Springs generó un voltaje estimado de 12 millones de voltios. Durante uno de sus experimentos en junio de 1899, la descarga eléctrica fue tan potente que fundió el generador de la compañía eléctrica local, El Paso Electric Company, dejando a toda la ciudad de Colorado Springs sin electricidad. Tesla tuvo que pagar por las reparaciones y prometer que no volvería a hacer pruebas sin aviso previo a la compañía.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las descargas de una bobina de Tesla no electrocutan a las personas debido al efecto piel (skin effect). Las corrientes de alta frecuencia (superiores a 100 kHz) tienden a fluir por la superficie de los conductores en lugar de penetrar hacia el interior. En el cuerpo humano, esto significa que la corriente circula por la capa externa de la piel sin atravesar los órganos internos ni el sistema nervioso. Este principio físico, descrito por Lord Kelvin en 1887, es lo que permite a los operadores de bobinas de Tesla dirigir arcos eléctricos con sus manos sin sufrir daño.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m5/banner_bobina-tesla.webp',
+    bannerCaption: 'La bobina Tesla: transformador resonante que genera alta frecuencia, base de la radio y espectáculos eléctricos',
     fact: 'En septiembre de 1899, Tesla registró en su diario de Colorado Springs que había detectado señales eléctricas periódicas que, según él, provenían de otro planeta. Anotó: "Tengo un sentimiento profundo de haber sido el primero en escuchar el saludo de un planeta a otro." La comunidad científica moderna ha determinado que lo que Tesla probablemente detectó fueron emisiones naturales de radio del planeta Júpiter, cuyas tormentas electromagnéticas producen señales periódicas detectables con equipos sensibles. Tesla fue, sin saberlo, uno de los primeros radioastrónomos de la historia.',
   },
   {
@@ -178,6 +180,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando el Titanic se hundió el 15 de abril de 1912, los operadores de radio Jack Phillips y Harold Bride utilizaron equipos Marconi para enviar señales de socorro. Las señales SOS fueron captadas por el barco Carpathia, que rescató a 710 supervivientes. Sin embargo, la tecnología de sintonización que permitía distinguir las señales de socorro de otras transmisiones provenía directamente de las patentes de Tesla. Los circuitos LC (inductancia-capacitancia) que Tesla diseñó en la década de 1890 son la base de toda la sintonización de radio hasta el día de hoy.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Tesla comprendió que las ondas electromagnéticas viajan a la velocidad de la luz (299,792,458 metros por segundo en el vacío) y que diferentes frecuencias podían coexistir sin interferencia si se utilizaban circuitos sintonizados. Este principio, conocido como multiplexación por división de frecuencia (FDM), es la base de toda la telecomunicación moderna: radio FM, televisión, telefonía celular, Wi-Fi y satélites. Cada dispositivo inalámbrico que utilizamos hoy emplea circuitos sintonizados derivados del diseño original de Tesla.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m5/banner_radio-tesla-marconi.webp',
+    bannerCaption: 'Tesla vs Marconi: la Corte Suprema reconoció en 1943 que Tesla inventó la radio, un año después de su muerte',
     fact: 'El Nobel de Física de 1909 fue otorgado a Guglielmo Marconi y Karl Ferdinand Braun "por sus contribuciones al desarrollo de la telegrafía inalámbrica." Tesla, quien esperaba compartir el premio, no fue mencionado. Según el biógrafo W. Bernard Carlson, Tesla rechazó una oferta previa para compartir un Nobel con Edison en 1915, declarando que Edison era "meramente un inventor" mientras que él era "un descubridor de principios nuevos." El comité Nobel nunca confirmó oficialmente que tal oferta existiera, y ninguno de los dos recibió el premio ese año.',
   },
   {
@@ -197,6 +201,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando Tesla ofreció su teleautómaton al gobierno de Estados Unidos, intentó convencer a los militares de que la guerra podía librarse sin soldados en el campo de batalla. Escribió en 1900: "La guerra cesará de existir cuando todos los hombres combatientes sean reemplazados por máquinas." Esta predicción describe con precisión el debate actual sobre armas autónomas y drones militares. El Pentágono gastó más de 9,000 millones de dólares en sistemas no tripulados solo en el año fiscal 2023, según el informe del Departamento de Defensa.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El circuito lógico del teleautómaton de Tesla utilizaba compuertas AND implementadas con relés electromecánicos. Una compuerta AND solo produce una salida cuando todas sus entradas están activas simultáneamente. Tesla necesitaba que el bote respondiera únicamente a combinaciones específicas de frecuencias para evitar interferencias accidentales. Este concepto — la lógica booleana implementada en hardware — es el mismo principio que utilizan los procesadores modernos, que contienen miles de millones de compuertas lógicas en un chip de silicio del tamaño de una uña.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m5/banner_control-remoto.webp',
+    bannerCaption: 'Control remoto 1898: Tesla demostró un barco teledirigido por radio en el Madison Square Garden, inventando el drone',
     fact: 'La patente US613,809, titulada "Method of and Apparatus for Controlling Mechanism of Moving Vessels or Vehicles," fue concedida el 8 de noviembre de 1898 y contiene 18 reivindicaciones que cubren el control remoto de cualquier vehículo mediante ondas electromagnéticas. El documento incluye diagramas detallados del circuito receptor con compuertas lógicas, convirtiéndolo en uno de los primeros diseños documentados de un sistema digital de control. La Sociedad de Ingenieros Eléctricos e Informáticos del IEEE reconoció en 2015 al teleautómaton como un hito en la historia de la ingeniería eléctrica.',
   },
   {
@@ -216,6 +222,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Mark Twain y Nikola Tesla mantuvieron una amistad cercana durante más de una década. Twain visitaba con frecuencia el laboratorio de Tesla y participaba voluntariamente como sujeto de experimentación. En una ocasión, Tesla convenció a Twain de que se parara sobre una plataforma vibratoria que oscilaba a frecuencias específicas. Twain describió la experiencia como "profundamente vigorizante" durante los primeros minutos, pero después de aproximadamente 90 segundos, el efecto laxante de la vibración lo obligó a abandonar la plataforma a toda velocidad rumbo al baño más cercano.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los rayos X son radiación electromagnética con longitudes de onda entre 0.01 y 10 nanómetros, mucho más cortas que la luz visible (400-700 nanómetros). Esta longitud de onda corta les permite penetrar tejidos blandos pero ser absorbidos por materiales densos como el hueso y el metal. La energía de un fotón de rayos X típico en diagnóstico médico es de aproximadamente 60 keV (kiloelectronvoltios), unas 30,000 veces más energético que un fotón de luz visible. Tesla fue de los primeros en correlacionar la energía de esta radiación con sus efectos biológicos dañinos.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m5/banner_rayos-x-tesla.webp',
+    bannerCaption: 'Rayos X antes de Röntgen: Tesla obtuvo radiografías de su propia mano pero sus experimentos fueron destruidos en el incendio',
     fact: 'Tesla envió varias de sus "fotografías de sombra" a Röntgen en 1895, quien respondió con una carta de agradecimiento elogiando la calidad de las imágenes. En su respuesta, Röntgen escribió: "Las fotografías son muy interesantes. ¿Tendría la amabilidad de indicarme cómo las ha obtenido?" Esta correspondencia se conserva en el Museo Tesla de Belgrado, Serbia. Irónicamente, Tesla nunca publicó formalmente sus resultados en una revista científica con revisión por pares, que era el estándar para establecer prioridad científica. Röntgen sí lo hizo, enviando su artículo a la Sociedad Física-Médica de Würzburg el 28 de diciembre de 1895.',
   },
   {
@@ -235,6 +243,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla describió su turbina sin álabes como "mi invento más valioso." En una carta de 1911 dirigida a su amigo Robert Underwood Johnson, editor de la revista Century, Tesla escribió que la turbina haría obsoletos todos los motores de combustión interna existentes. Aunque esta predicción no se cumplió en su época, los principios de la turbina de Tesla se aplican hoy en bombas de sangre para pacientes con insuficiencia cardíaca. El flujo laminar que producen los discos lisos causa menos daño a los glóbulos rojos que las bombas centrífugas convencionales con aspas.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El número de Reynolds (Re) determina si un fluido se comporta de manera laminar (ordenada) o turbulenta (caótica). La turbina de Tesla funciona óptimamente en el rango de Reynolds entre 10 y 1,000, donde el flujo es laminar y la transferencia de energía por viscosidad es máxima. A números de Reynolds más altos, el flujo se vuelve turbulento y la eficiencia disminuye. Esta es la razón por la que la turbina de Tesla es más eficiente que las turbinas convencionales en aplicaciones de pequeña escala y con fluidos viscosos, pero menos eficiente en turbinas industriales de gran tamaño.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m5/banner_turbina-tesla.webp',
+    bannerCaption: 'Turbina sin paletas 1913: discos lisos que giran por adhesión del fluido, redescubierta hoy en microfluídica biomédica',
     fact: 'La turbina sin álabes de Tesla tiene una ventaja única en aplicaciones biomédicas: al carecer de aspas cortantes, puede bombear fluidos biológicos sin dañar células ni proteínas. En 2012, investigadores del Hospital Universitario de Aquisgrán, Alemania, publicaron en la revista Artificial Organs un estudio que demostró que una bomba basada en el diseño de Tesla destruía un 70% menos de glóbulos rojos que las bombas centrífugas convencionales utilizadas en máquinas de circulación extracorpórea durante cirugías cardíacas. Este hallazgo ha impulsado el desarrollo de dispositivos de asistencia ventricular de nueva generación.',
   },
   {
@@ -254,6 +264,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Durante la Guerra Fría, tanto Estados Unidos como la Unión Soviética desarrollaron programas de armas de energía dirigida parcialmente inspirados en los conceptos de Tesla. El programa estadounidense SDI (Strategic Defense Initiative), apodado "Star Wars" por los medios en 1983, incluía propuestas de satélites armados con láseres y aceleradores de partículas para destruir misiles balísticos soviéticos en vuelo. Aunque el programa nunca se implementó completamente, produjo avances en tecnología láser que se utilizan hoy en sistemas como el AN/SEQ-3 de la Armada de Estados Unidos, un láser de estado sólido de 150 kilovatios instalado en el destructor USS Portland.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un acelerador de partículas como el LHC del CERN acelera protones a 6.5 TeV (teraelectronvoltios), alcanzando el 99.9999991% de la velocidad de la luz. A esta velocidad, un protón completa el circuito de 27 kilómetros del LHC 11,245 veces por segundo. Sin embargo, la energía total de un haz del LHC es de aproximadamente 362 megajulios, equivalente a la energía cinética de un tren de 400 toneladas viajando a 150 km/h. Tesla imaginó un sistema similar pero transportable, algo que sigue siendo técnicamente inviable con la tecnología actual debido al tamaño y la potencia requeridos.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m5/banner_rayo-de-la-muerte.webp',
+    bannerCaption: 'El rayo de la muerte: en 1934 Tesla propuso un arma de partículas capaz de derribar 10,000 aviones a 400 km',
     fact: 'Los documentos confiscados a Tesla tras su muerte sumaban aproximadamente 80 baúles con notas, diagramas y correspondencia. Después de la evaluación de John G. Trump, el gobierno entregó los documentos al Museo Tesla en Belgrado, Serbia, en 1952, tras la intervención del sobrino de Tesla, Sava Kosanović, entonces embajador de Yugoslavia en Estados Unidos. Sin embargo, investigadores han documentado que al menos un cuaderno de notas y varios sobres sellados no fueron devueltos y permanecen clasificados. La solicitud de desclasificación bajo la Ley de Libertad de Información (FOIA) presentada en 2018 reveló que el FBI mantiene un archivo de Tesla de 361 páginas, de las cuales 64 permanecen total o parcialmente censuradas por razones de seguridad nacional.',
   },
   {
@@ -273,6 +285,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla murió en la pobreza el 7 de enero de 1943, en la habitación 3327 del Hotel New Yorker de Manhattan, a la edad de 86 años. A pesar de haber generado tecnologías con un valor acumulado de billones de dólares, sus últimos años los pasó alimentando palomas en el parque Bryant y en la catedral de San Patricio. Tesla tenía un vínculo particular con una paloma blanca a la que describió como "la razón de mi vida." Cuando la paloma murió, Tesla declaró: "Algo salió de mis ojos. Una luz, una luz real y poderosa." Nunca se recuperó de la pérdida.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El motor de inducción de Tesla opera mediante un campo magnético rotativo generado por desfases en corrientes alternas polifásicas. En un motor trifásico, tres bobinas separadas 120 grados generan campos magnéticos que rotan a la frecuencia de la línea (50 Hz en Europa, 60 Hz en América). El rotor, que no tiene conexión eléctrica externa, se magnetiza por inducción y gira siguiendo al campo rotativo, siempre a una velocidad ligeramente menor (denominada deslizamiento). Esta diferencia de velocidad, típicamente del 2-5%, es necesaria para mantener la inducción. El diseño es tan robusto que motores industriales basados en este principio pueden operar continuamente durante 20-30 años sin mantenimiento.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m5/banner_patentes-legado.webp',
+    bannerCaption: '300 patentes: cada toma de corriente y cada teléfono inalámbrico del mundo usa inventos de Nikola Tesla',
     fact: 'El 10 de julio, fecha del nacimiento de Nikola Tesla en 1856 en Smiljan, Croacia (entonces Imperio Austríaco), ha sido declarado Día de Nikola Tesla en varios países y estados. En 2003, Elon Musk cofundó Tesla Motors (ahora Tesla, Inc.) en homenaje al inventor. La empresa, valorada en más de 800,000 millones de dólares en 2024, utiliza motores de inducción de corriente alterna directamente derivados de las patentes de Tesla de 1888 en varios de sus modelos de vehículos eléctricos. La historia completa ha cerrado un círculo: la tecnología que Tesla inventó hace más de 135 años impulsa hoy la revolución del transporte eléctrico.',
   },
 ];
@@ -711,6 +725,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

@@ -154,6 +154,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tesla hablaba ocho idiomas con fluidez: serbocroata, checo, inglés, francés, alemán, húngaro, italiano y latín. Además, poseía una memoria eidética que le permitía memorizar libros enteros después de leerlos una sola vez. Edison, por su parte, tenía una pérdida auditiva significativa desde la infancia que él mismo atribuyó a un episodio en un tren cuando tenía 12 años, aunque los médicos señalaban una mastoiditis mal tratada como causa más probable.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La corriente continua (DC) mantiene un flujo constante de electrones en una sola dirección, como el agua que fluye por una tubería recta. La corriente alterna (AC) invierte la dirección del flujo de electrones periódicamente, a una frecuencia de 60 Hz en América (60 cambios de dirección por segundo) y 50 Hz en Europa. Esta alternancia permite usar transformadores electromagnéticos para elevar el voltaje a miles de voltios para la transmisión y reducirlo para el uso doméstico, algo físicamente imposible con corriente continua.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m6/banner_dos-genios-dos-visiones.webp',
+    bannerCaption: 'Edison el empirista práctico versus Tesla el teórico visionario: dos filosofías de ciencia en conflicto',
     fact: 'Edison estableció su laboratorio de Menlo Park en 1876 con una inversión inicial de $2,500 dólares (equivalentes a unos $70,000 actuales). En los primeros seis años produjo más de 400 patentes, incluyendo el fonógrafo en 1877 y la bombilla práctica en 1879. Tesla, por contraste, llegó a Estados Unidos en 1884 con solo 4 centavos en el bolsillo, una carta de recomendación y los diseños de su motor de corriente alterna completamente desarrollados en su mente, sin un solo dibujo en papel.',
   },
   {
@@ -173,6 +175,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando Tesla llegó a Nueva York en 1884, la ciudad tenía apenas dos años de electricidad comercial. La central de Pearl Street, inaugurada por Edison el 4 de septiembre de 1882, alimentaba solo 85 clientes y 400 bombillas en un radio de 1.5 kilómetros en el bajo Manhattan. La mayor parte de la ciudad todavía se iluminaba con gas. Para llegar a la oficina de Edison en la Quinta Avenida, Tesla caminó desde el muelle de inmigración porque le habían robado el equipaje durante el viaje en barco desde Francia.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los generadores de corriente continua de Edison producían electricidad a 110 voltios. A este voltaje, la pérdida de energía por resistencia en los cables de cobre era tan alta que después de 1.5 kilómetros de distancia, la señal eléctrica era demasiado débil para encender una bombilla. La Ley de Ohm (V=IR) explica este fenómeno: a mayor distancia, mayor resistencia (R), y mayor caída de voltaje (V). La corriente alterna evita este problema porque los transformadores pueden elevar el voltaje a 100,000 voltios o más para la transmisión, reduciendo las pérdidas a menos del 3%.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m6/banner_encuentro-nueva-york.webp',
+    bannerCaption: 'El encuentro 1884: Tesla trabajó 18 horas al día durante meses para Edison que luego no le pagó lo prometido',
     fact: 'La carta de recomendación de Charles Batchelor que Tesla llevó a Edison ha sido debatida por historiadores. El biógrafo W. Bernard Carlson (Princeton, 2013) señala que no existe evidencia documental directa de la famosa frase "conozco a dos grandes hombres". Sin embargo, los registros de la Edison Machine Works confirman que Tesla fue contratado el 8 de junio de 1884 con un salario de $18 dólares semanales (equivalente a unos $550 actuales), una cifra modesta incluso para la época, que refleja su estatus de inmigrante recién llegado.',
   },
   {
@@ -192,6 +196,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El salario de $2 diarios que Tesla ganaba cavando zanjas en 1885 equivale a aproximadamente $60 dólares actuales ajustados por inflación. Para poner esto en perspectiva, un ingeniero eléctrico cualificado en Nueva York ganaba entre $15 y $25 semanales en esa época. Tesla pasó de diseñar generadores que alimentaban la red eléctrica de Manhattan a cavar las zanjas donde se enterraban los cables. El capataz de la cuadrilla no tenía idea de que uno de sus trabajadores era un ingeniero politécnico europeo con conocimientos que cambiarían el mundo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El motor de inducción de corriente alterna que Tesla diseñó durante este período utiliza un principio llamado "campo magnético rotativo". Cuando se aplican corrientes alternas desfasadas a bobinas dispuestas en un patrón circular dentro del motor, se crea un campo magnético que gira a velocidad constante. Este campo arrastra al rotor (la parte giratoria) mediante inducción electromagnética, sin necesidad de escobillas ni conmutadores mecánicos. Este diseño es tan eficiente que el 90% de los motores eléctricos del mundo actual siguen usando exactamente el mismo principio que Tesla patentó en 1888.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m6/banner_la-ruptura.webp',
+    bannerCaption: 'La ruptura: Edison llamó broma al pago prometido y Tesla renunció, comenzando la Guerra de las Corrientes',
     fact: 'La conferencia de Tesla del 16 de mayo de 1888 ante el American Institute of Electrical Engineers incluyó demostraciones prácticas de su motor de inducción funcionando con corriente alterna bifásica. El ingeniero George Westinghouse envió representantes a la conferencia y, pocas semanas después, viajó personalmente a Nueva York para reunirse con Tesla. El resultado fue uno de los contratos más importantes de la historia de la tecnología: Westinghouse adquirió las patentes de Tesla por $60,000 dólares en efectivo más $2.50 por cada caballo de fuerza de capacidad eléctrica vendida usando su sistema.',
   },
   {
@@ -211,6 +217,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Si Tesla hubiera mantenido el contrato de regalías de $2.50 por caballo de fuerza, los cálculos del historiador Marc Seifer estiman que habría acumulado más de $300 millones de dólares durante su vida (equivalentes a unos $12,000 millones actuales). Esto lo habría convertido en una de las personas más ricas de la historia. En cambio, Tesla murió en 1943 en una habitación del Hotel New Yorker de Manhattan, prácticamente sin dinero, mientras Westinghouse Electric se había convertido en una de las corporaciones más grandes del mundo.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La frecuencia de 60 Hz que Tesla recomendaba para la corriente alterna fue finalmente adoptada como estándar en Norteamérica y parte de Latinoamérica. Europa adoptó 50 Hz como su estándar. La diferencia se debe a que los sistemas europeos se desarrollaron independientemente usando generadores con diferentes números de polos magnéticos. A 60 Hz, un motor de dos polos gira a 3,600 revoluciones por minuto; a 50 Hz gira a 3,000 RPM. Ambas frecuencias funcionan bien para la mayoría de aplicaciones, pero los equipos diseñados para una frecuencia no funcionan correctamente con la otra.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m6/banner_westinghouse-entra.webp',
+    bannerCaption: 'Westinghouse compró las patentes AC de Tesla en 1888 y construyó la infraestructura para desafiar a Edison',
     fact: 'El freno neumático de Westinghouse, patentado en 1869, fue una innovación que salvó miles de vidas en la industria ferroviaria al permitir que el maquinista frenara todos los vagones simultáneamente mediante aire comprimido, en lugar de depender de frenadores manuales en cada vagón. Westinghouse tenía 161 patentes propias cuando conoció a Tesla, lo que lo convertía en uno de los pocos industriales que podía comprender genuinamente la genialidad técnica de las invenciones de Tesla. Esta comprensión mutua entre inventor y empresario fue fundamental para el triunfo de la corriente alterna.',
   },
   {
@@ -230,6 +238,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Harold P. Brown, el ingeniero que realizó las demostraciones públicas de electrocución de animales con corriente alterna, se presentaba como un "investigador independiente" preocupado por la seguridad pública. Sin embargo, documentos descubiertos en 1889 por el New York Sun revelaron que Brown había sido financiado secretamente por Edison y la Edison General Electric Company. Los documentos mostraban pagos directos de Edison a Brown y correspondencia donde coordinaban las demostraciones y la campaña contra Westinghouse.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La peligrosidad de la electricidad depende del amperaje (la cantidad de corriente que fluye por el cuerpo), no del tipo de corriente (AC vs DC). Una corriente de tan solo 0.1 amperios puede causar fibrilación cardíaca letal en un ser humano, ya sea AC o DC. La corriente alterna es ligeramente más peligrosa al tacto porque a 60 Hz produce contracciones musculares tetánicas que impiden que la víctima suelte el conductor. Sin embargo, a voltajes iguales, la corriente continua produce quemaduras térmicas más graves por su flujo constante. Ambos tipos de corriente son letales bajo condiciones similares.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m6/banner_batalla-opinion-publica.webp',
+    bannerCaption: 'La batalla de opinión: Edison electrocutó a Topsy el elefante con AC, Tesla pasó corriente por su propio cuerpo',
     fact: 'La primera silla eléctrica fue diseñada por Arthur Kennelly, un ingeniero de Edison, y Harold P. Brown. El estado de Nueva York aprobó la electrocución como método de ejecución en 1888 con la Electrical Execution Act, reemplazando al ahorcamiento. Westinghouse contrató al mejor abogado de Nueva York para intentar bloquear el uso de sus generadores en la silla eléctrica, argumentando que constituía "castigo cruel e inusual". El caso llegó a la Corte Suprema de Estados Unidos (In re Kemmler, 1890), que dictaminó que la electrocución era constitucional.',
   },
   {
@@ -249,6 +259,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El "Huevo de Colón" de Tesla fue uno de los inventos más populares de la feria de Chicago. Consistía en una mesa con bobinas electromagnéticas escondidas debajo que generaban un campo magnético rotativo. Cuando se colocaba un huevo de cobre sobre la mesa, el campo inducía corrientes en el metal que hacían girar al huevo cada vez más rápido hasta que se ponía de pie sobre su extremo, desafiando la gravedad. Tesla lo llamó así en referencia a la leyenda de Colón y el huevo, demostrando que su solución al problema del motor eléctrico era tan elegante como la de Colón.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las 92,620 lámparas de la feria de Chicago consumían aproximadamente 12,000 caballos de fuerza de electricidad (unos 9 megavatios). Los 12 generadores de Westinghouse producían corriente alterna bifásica a 60 Hz, que se elevaba a 2,300 voltios para la distribución dentro de la feria. En comparación, una central de corriente continua de Edison habría necesitado cables de cobre 20 veces más gruesos para transmitir la misma cantidad de energía a la misma distancia, haciendo el proyecto económicamente inviable con tecnología DC.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m6/banner_chicago-1893-ac-gana.webp',
+    bannerCaption: 'Chicago 1893: 100,000 bombillas AC iluminaron la Exposición Universal ante 27 millones de visitantes, AC ganó',
     fact: 'La Exposición de Chicago de 1893 también fue donde se introdujeron al público la rueda de la fortuna (diseñada por George Ferris como respuesta a la Torre Eiffel de la Exposición de París de 1889), la cremallera, el jugo de naranja Tropicana, los Cracker Jacks, y la primera serie de postales ilustradas de Estados Unidos. Sin embargo, ninguna de estas innovaciones tuvo tanto impacto a largo plazo como la demostración de que la corriente alterna podía iluminar una ciudad entera de forma segura, eficiente y económica.',
   },
   {
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 1915, Reuters informó que Tesla y Edison compartirían el Premio Nobel de Física. Sin embargo, ninguno de los dos recibió el premio, que fue otorgado ese año a William Henry Bragg y William Lawrence Bragg por sus trabajos en cristalografía de rayos X. Existen múltiples teorías sobre lo que ocurrió: algunos historiadores sugieren que Tesla rechazó compartir el premio con Edison; otros señalan que el comité Nobel simplemente cambió de opinión. Los archivos del comité Nobel permanecen sellados durante 50 años, y los de 1915 no contienen evidencia de una nominación formal conjunta.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Hoy la corriente continua (DC) ha resurgido en aplicaciones específicas. Los paneles solares generan DC. Las baterías almacenan y descargan DC. Los cables submarinos de alta tensión en corriente continua (HVDC) transmiten electricidad entre países con pérdidas menores que los cables AC en distancias superiores a 600 kilómetros. Los centros de datos de Google, Amazon y Microsoft usan distribución interna en DC a 48 voltios para mayor eficiencia energética. La red eléctrica moderna es un sistema híbrido AC/DC que vindica tanto a Tesla como a Edison simultáneamente.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m6/banner_veredicto-historia.webp',
+    bannerCaption: 'El veredicto de la historia: la red eléctrica mundial es de Tesla y hasta el coche eléctrico lleva su nombre',
     fact: 'Nikola Tesla murió el 7 de enero de 1943 en la habitación 3327 del Hotel New Yorker en Manhattan, a los 86 años. Sus últimos años los pasó alimentando palomas en los parques de Nueva York. Edison había muerto el 18 de octubre de 1931, a los 84 años, en su mansión de West Orange, Nueva Jersey. En su funeral, el presidente Herbert Hoover pidió a los estadounidenses que apagaran las luces durante un minuto en honor al hombre que había hecho tanto por la iluminación eléctrica. Hoy, ambos inventores son recordados en el Salón de la Fama de los Inventores Nacionales de Estados Unidos, donde sus contribuciones complementarias son reconocidas como pilares de la civilización eléctrica moderna.',
   },
 ];
@@ -706,6 +720,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.videos.map((v, vi) => (
               <VideoPlayer key={vi} src={v.src} title={v.title} color={node.color} />
             ))}
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

@@ -150,6 +150,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'John Jacob Astor IV, el financiador de los experimentos de Tesla en Colorado Springs, era también un inventor aficionado y escritor de ciencia ficción. Publicó en 1894 la novela "A Journey in Other Worlds", que describía viajes al espacio y a otros planetas. Astor murió el 15 de abril de 1912 en el hundimiento del Titanic, donde era el pasajero más rico a bordo, con una fortuna estimada en 87 millones de dólares de la época.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La altitud de Colorado Springs (1,839 m) reduce la presión atmosférica a aproximadamente 81 kilopascales, frente a los 101.3 kilopascales al nivel del mar. Esta diferencia del 20% significa que la rigidez dieléctrica del aire disminuye proporcionalmente: un voltaje dado puede producir una chispa más larga en Colorado Springs que en Nueva York. Para Tesla, esto significaba que sus bobinas podían generar descargas más extensas con la misma potencia de entrada.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m3/banner_mision-colorado.webp',
+    bannerCaption: 'Misión Colorado 1899: Tesla eligió la altitud para experimentos de transmisión inalámbrica a gran escala',
     fact: 'Tesla registró meticulosamente cada gasto de su expedición a Colorado Springs. Sus cuentas muestran pagos de $2.50 diarios por su habitación en el hotel, $100 mensuales por el alquiler del terreno del laboratorio, y compras detalladas de materiales como 500 metros de cable de cobre calibre 8, transformadores especiales encargados a la Westinghouse Electric Company, y un mástil de madera de 60 metros fabricado por una empresa local de postes telefónicos. El costo total del proyecto superó los $100,000 dólares de 1899.',
   },
   {
@@ -169,6 +171,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Kolman Czito, el asistente principal de Tesla en Colorado Springs, era un ingeniero mecánico de origen serbio que trabajó con Tesla durante más de una década. Czito construyó gran parte del equipo del laboratorio con sus propias manos, siguiendo las instrucciones verbales de Tesla, quien rara vez dibujaba planos formales. Czito describió más tarde que Tesla tenía la capacidad de visualizar máquinas completas en su mente con tal detalle que podía indicar las dimensiones exactas de cada pieza de memoria.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El transmisor amplificador de Tesla operaba a una frecuencia de resonancia de aproximadamente 150 kilohercios. A esta frecuencia, la longitud de onda electromagnética es de unos 2,000 metros. La bobina secundaria de Tesla estaba diseñada para que su longitud eléctrica coincidiera con un cuarto de esta longitud de onda, lo que maximizaba la transferencia de energía por resonancia. Este mismo principio de resonancia de cuarto de onda se utiliza hoy en antenas de radio y telecomunicaciones modernas.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m3/banner_laboratorio-loco.webp',
+    bannerCaption: 'El laboratorio loco: una torre de 18m con esfera de cobre generando 12 millones de voltios',
     fact: 'El laboratorio de Tesla en Colorado Springs fue demolido en 1904 después de que Tesla no pudiera pagar las deudas acumuladas con los proveedores locales. La madera, los cables de cobre y los componentes fueron vendidos o desechados. El terreno donde se ubicaba el laboratorio (en la intersección actual de Foote Avenue y Kiowa Street) está hoy marcado con una placa conmemorativa instalada en 2014, pero no queda ningún resto físico de la estructura original. Fotografías del laboratorio, tomadas por el fotógrafo Dickenson Alley en 1899, son las únicas evidencias visuales de su existencia.',
   },
   {
@@ -188,6 +192,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las descargas eléctricas de Tesla en Colorado Springs causaron efectos curiosos en los alrededores del laboratorio. Según testimonios recogidos por el periódico local, los caballos en establos cercanos recibían pequeñas descargas a través de sus herraduras metálicas y se negaban a acercarse al laboratorio. Las personas que caminaban cerca reportaban que podían sentir hormigueo en los pies y ver chispas saltando entre sus zapatos y el suelo. Las mariposas que volaban cerca del mástil quedaban rodeadas de un resplandor azulado, un efecto corona visible a simple vista.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El efecto piel (skin effect) que Tesla observó en Colorado Springs describe cómo las corrientes alternas de alta frecuencia tienden a fluir por la superficie exterior de un conductor, no por su interior. A una frecuencia de 150 kHz (la frecuencia de operación de Tesla), la profundidad de penetración en cobre es de solo 0.17 milímetros. Esto explica por qué Tesla usaba tubos huecos de cobre en lugar de cables sólidos para sus bobinas de alta frecuencia, ahorrando material sin perder conductividad efectiva.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m3/banner_rayos-artificiales.webp',
+    bannerCaption: 'Rayos artificiales de 40 metros: los truenos se escuchaban a 25 km con Tesla sentado tranquilo en el centro',
     fact: 'La longitud de 40 metros de las descargas de Tesla permanece como un récord para descargas eléctricas generadas por una bobina de Tesla. Las bobinas de Tesla modernas más grandes, como las construidas por Greg Leyh del grupo Lightning on Demand, producen descargas de hasta 10 metros. Incluso las máquinas de Marx usadas en laboratorios de alto voltaje para simular rayos (como las del Instituto de Investigación de Alta Tensión de Istra, Rusia) generan descargas de unos 150 metros, pero son máquinas industriales del tamaño de un edificio, no bobinas de resonancia.',
   },
   {
@@ -207,6 +213,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La resonancia de Schumann a 7.83 Hz ha sido objeto de numerosas afirmaciones pseudocientíficas que la relacionan con la salud humana, la meditación y la "frecuencia de la Tierra". No existe evidencia científica revisada por pares que apoye estas afirmaciones. La resonancia de Schumann es un fenómeno electromagnético causado por los rayos que golpean la Tierra (unas 50 veces por segundo a nivel global), que generan ondas ELF que resuenan en la cavidad Tierra-ionosfera. Su frecuencia varía ligeramente con la actividad solar y las estaciones.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La cavidad Tierra-ionosfera actúa como una guía de ondas esférica con múltiples frecuencias de resonancia: 7.83, 14.3, 20.8, 27.3 y 33.8 Hz (los primeros cinco modos). Estas frecuencias dependen del radio de la Tierra (6,371 km) y la altura de la ionosfera (60-80 km). La señal más fuerte es la fundamental a 7.83 Hz, con una longitud de onda igual a la circunferencia terrestre (40,075 km). Los instrumentos modernos detectan estas resonancias con una amplitud de apenas 0.3 picoteslas.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m3/banner_ondas-estacionarias.webp',
+    bannerCaption: 'Ondas estacionarias terrestres: Tesla demostró que la Tierra entera resuena como una campana eléctrica',
     fact: 'El sistema de comunicaciones ELF de la Marina de EE.UU. en Clam Lake, Wisconsin, operaba a 76 Hz y usaba antenas de 22.5 kilómetros de largo tendidas sobre el suelo. A esta frecuencia, las ondas podían penetrar hasta 120 metros de profundidad en el agua de mar, permitiendo comunicaciones unidireccionales con submarinos nucleares sumergidos. El sistema operó desde 1989 hasta 2004, cuando fue reemplazado por tecnologías satelitales. Su velocidad de transmisión era extrema: apenas 3 caracteres por minuto, suficiente solo para enviar códigos breves de emergencia.',
   },
   {
@@ -226,6 +234,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El estándar Qi de carga inalámbrica, presente en miles de millones de teléfonos y dispositivos, fue establecido en 2008 por el Wireless Power Consortium. El nombre "Qi" proviene del concepto chino de "energía vital que fluye". La tecnología usa exactamente el mismo principio de acoplamiento inductivo resonante que Tesla investigó en 1899, pero a una escala miniaturizada: donde Tesla usaba bobinas de 15 metros, un cargador Qi usa bobinas de apenas 3-4 centímetros de diámetro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La eficiencia de la transmisión inalámbrica de energía por acoplamiento inductivo decae según la fórmula η ∝ (r/d)⁶ para campo cercano, donde r es el radio de la bobina y d es la distancia. Para campo lejano (ondas de radio), la potencia decae según la ley del inverso del cuadrado: P ∝ 1/d². A una distancia de 40 km con una antena omnidireccional, la densidad de potencia de un transmisor de 300 kW sería de apenas 1.5 microwatios por metro cuadrado, insuficiente para encender una lámpara convencional.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m3/banner_transmision-inalambrica.webp',
+    bannerCaption: 'Transmisión inalámbrica: encendió 200 bombillas a 40 km de distancia usando la Tierra como conductor',
     fact: 'En 2020, la empresa neozelandesa Emrod demostró la transmisión inalámbrica de energía a larga distancia usando haces enfocados de microondas a 5.8 GHz. Su sistema transmite potencia del orden de kilovatios a distancias de hasta 200 metros con una eficiencia declarada del 70%. La compañía eléctrica Powerco de Nueva Zelanda comenzó pruebas piloto con esta tecnología en 2021 para suministrar electricidad a zonas rurales donde el tendido de cables es difícil. Es la primera aplicación comercial seria de transmisión inalámbrica de energía, 122 años después de los experimentos de Tesla en Colorado Springs.',
   },
   {
@@ -245,6 +255,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Las "señales de otro mundo" que Tesla reportó haber detectado en Colorado Springs en 1899 generaron titulares en periódicos de todo el mundo. Tesla describió haber recibido "impulsos numéricos regulares" — secuencias de uno, dos y tres pulsos — que no podía atribuir a fuentes terrestres. Los astrónomos modernos creen que Tesla detectó emisiones de radio decamétricas de Júpiter, causadas por la interacción del campo magnético del planeta con su luna Io. Si esta interpretación es correcta, Tesla fue la primera persona en detectar ondas de radio de origen extraterrestre.' },
       { label: 'Dato Científico', icon: 'atom', text: 'John G. Trump, el profesor del MIT que examinó los papeles de Tesla en 1943, era un experto en generadores de Van de Graaff y física de alto voltaje. Su informe oficial al FBI declaró que los documentos contenían "pensamientos y esfuerzos especulativos, filosóficos y algo promocionales" pero nada de valor militar inmediato. Trump desarrolló más tarde aplicaciones médicas de radiación de alto voltaje para el tratamiento del cáncer, un campo donde los principios de alta frecuencia de Tesla encontraron aplicación práctica décadas después.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m3/banner_cuadernos-colorado.webp',
+    bannerCaption: 'Los cuadernos de Colorado: 6 meses de experimentos documentados, fuente primaria de sus mayores descubrimientos',
     fact: 'El Museo Nikola Tesla en Belgrado, Serbia, que custodia los cuadernos originales de Colorado Springs junto con otros 160,000 documentos de Tesla, fue designado en 2003 como parte del programa Memoria del Mundo de la UNESCO. Los cuadernos originales están escritos en tinta negra sobre papel cuadriculado de tamaño carta, en una caligrafía pulcra y consistente que refleja la disciplina metódica de Tesla. Cada entrada está fechada y numerada secuencialmente, y Tesla raramente tachaba o corregía: si cometía un error, simplemente añadía una nota al margen con la corrección.',
   },
   {
@@ -264,6 +276,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La empresa Tesla, Inc. no fue fundada por Elon Musk. Fue fundada en julio de 2003 por Martin Eberhard y Marc Tarpenning, ingenieros de Silicon Valley que eligieron el nombre como homenaje a Nikola Tesla. Musk se unió como inversor principal en febrero de 2004, aportando 6.5 millones de dólares en la Serie A de financiamiento, y fue nombrado presidente de la junta directiva. Musk asumió el rol de CEO en 2008. El primer modelo de Tesla Motors, el Roadster de 2008, usaba un motor de corriente alterna trifásico, heredero directo de la tecnología que Tesla patentó en 1888.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La unidad tesla (T) de densidad de flujo magnético fue adoptada oficialmente por la Conferencia General de Pesas y Medidas (CGPM) en 1960, durante la undécima reunión celebrada en París. Un tesla se define como el campo magnético que ejerce una fuerza de un newton sobre un conductor de un metro de longitud que transporta una corriente de un amperio perpendicular al campo. Los detectores de ondas gravitacionales como LIGO requieren aislar sus espejos de campos magnéticos por debajo de 10⁻¹⁴ tesla, una millonésima parte del campo magnético terrestre.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m3/banner_legado-cientifico.webp',
+    bannerCaption: 'El legado científico: la resonancia de Schumann y la carga inalámbrica moderna validan los experimentos de 1899',
     fact: 'En 2018, un equipo de la Universidad de Stanford liderado por Shanhui Fan demostró la transmisión inalámbrica de energía a un objeto en movimiento, algo que Tesla propuso conceptualmente pero nunca logró. El sistema de Stanford transfiere 10 vatios de potencia a un receptor que se mueve a velocidades variables, ajustando automáticamente la frecuencia de resonancia para mantener la eficiencia. Esta tecnología tiene aplicaciones directas en la carga de vehículos eléctricos en movimiento y en la alimentación de implantes médicos dentro del cuerpo humano, dos áreas donde el sueño inalámbrico de Tesla se acerca más que nunca a la realidad práctica.',
   },
 ];
@@ -686,6 +700,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video.src} title={node.video.title} color={node.color} poster={node.video.poster} />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 

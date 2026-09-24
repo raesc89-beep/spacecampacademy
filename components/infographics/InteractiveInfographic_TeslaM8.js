@@ -155,6 +155,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Tales de Mileto, filósofo griego del siglo VI a.C., fue la primera persona que documentó un fenómeno eléctrico. Observó que al frotar ámbar (en griego "elektron") con piel de animal, el ámbar atraía objetos pequeños como plumas y paja. De esa palabra griega, "elektron", deriva el término "electricidad" que usamos hoy. Tuvieron que pasar más de 2,000 años hasta que científicos como William Gilbert, en 1600, retomaran el estudio sistemático de estos fenómenos y acuñaran el término "electricus" en latín.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Un solo coulomb de carga equivale a la carga de 6.242 × 10¹⁸ electrones. Para poner esto en perspectiva, si pudieras contar un electrón por segundo, tardarías más de 198 mil millones de años en contar todos los electrones de un coulomb, una cifra que supera ampliamente la edad del universo (13,800 millones de años). A pesar de contener tantos electrones, un coulomb es una unidad relativamente pequeña en ingeniería: una bombilla doméstica de 100 vatios a 120 voltios consume aproximadamente 0.83 coulombs por segundo.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m8/banner_electricidad-basico.webp',
+    bannerCaption: 'Electricidad básica: el flujo de electrones que permite desde un rayo hasta la pantalla de tu teléfono',
     fact: 'El cuerpo humano genera electricidad constantemente. Las neuronas transmiten señales eléctricas a velocidades de hasta 120 metros por segundo, y el corazón produce impulsos eléctricos que se detectan con un electrocardiograma (ECG). El potencial eléctrico de una neurona en reposo es de aproximadamente -70 milivoltios, y durante un impulso nervioso cambia a +30 milivoltios en menos de un milisegundo. El cerebro humano contiene unos 86,000 millones de neuronas, cada una formando hasta 10,000 conexiones sinápticas, creando una red eléctrica de una complejidad que supera a cualquier circuito artificial construido hasta la fecha.',
   },
   {
@@ -174,6 +176,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La pila de Volta de 1800 fue el primer dispositivo capaz de producir un flujo constante de electricidad. Antes de ella, solo se disponía de descargas estáticas momentáneas. Napoleón Bonaparte quedó tan impresionado con la demostración de Volta que lo nombró conde y le otorgó una pensión vitalicia. La pila de Volta permitió a Humphry Davy descomponer compuestos químicos mediante electrólisis, descubriendo seis elementos nuevos (sodio, potasio, calcio, bario, estroncio y magnesio) entre 1807 y 1808.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La velocidad de la señal eléctrica en un cable de cobre es cercana a la velocidad de la luz (aproximadamente 200,000 km/s, o dos tercios de c). Sin embargo, los electrones individuales se mueven a una velocidad promedio de solo 0.25 milímetros por segundo en un cable doméstico típico, lo que se conoce como velocidad de deriva. Lo que viaja rápido no son los electrones mismos, sino la onda electromagnética que los empuja. Es como una fila de bolas de billar: cuando golpeas la primera, la última se mueve casi instantáneamente, aunque cada bola individual se desplaza muy poco.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m8/banner_voltaje-corriente-resistencia.webp',
+    bannerCaption: 'Ley de Ohm: V=IR — la presión del agua es al voltaje lo que el flujo es a la corriente eléctrica',
     fact: 'La anguila eléctrica (Electrophorus electricus), descubierta científicamente por el naturalista Carl Linnaeus en 1766, puede generar descargas de hasta 860 voltios y 1 amperio, lo que equivale a 860 vatios de potencia instantánea. Posee tres órganos eléctricos que ocupan el 80% de su cuerpo de hasta 2.5 metros de longitud. Cada órgano contiene miles de células llamadas electrocitos, que funcionan como baterías biológicas conectadas en serie. En 2019, investigadores de la Universidad de Nagoya en Japón descubrieron que las descargas de la anguila pueden transferir ADN a las células de organismos cercanos, actuando como una forma natural de electroporación, una técnica que se usa en laboratorios de genética.',
   },
   {
@@ -193,6 +197,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El circuito integrado (microchip) fue inventado de forma independiente por Jack Kilby (Texas Instruments) y Robert Noyce (Fairchild Semiconductor) en 1958-1959. El primer chip de Kilby contenía un solo transistor, una resistencia y un condensador. Hoy, el procesador Apple M2 Ultra contiene 134,000 millones de transistores en una pieza de silicio del tamaño de una moneda. Este avance sigue la Ley de Moore, formulada por Gordon Moore en 1965, que predijo correctamente que el número de transistores en un chip se duplicaría cada dos años.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La resistencia del cuerpo humano varía drásticamente según las condiciones. Con la piel seca, la resistencia entre las manos es de aproximadamente 100,000 ohmios. Con la piel mojada, puede bajar a 1,000 ohmios. A 120 voltios con piel seca, la corriente sería de 1.2 miliamperios (apenas perceptible). Con piel mojada, la corriente alcanzaría 120 miliamperios, suficiente para causar fibrilación ventricular y potencialmente la muerte. Por eso los interruptores diferenciales en baños y cocinas actúan con corrientes de solo 5 miliamperios.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m8/banner_circuitos-electricos.webp',
+    bannerCaption: 'Circuitos en serie vs paralelo: por qué al fundir una bombilla del árbol de navidad se apagan todas las demás',
     fact: 'La red eléctrica de un país es el circuito más grande jamás construido por la humanidad. La red eléctrica de Estados Unidos comprende más de 11,000 centrales generadoras, 600,000 kilómetros de líneas de transmisión de alto voltaje y 9,200 subestaciones eléctricas. La red sincroniza la frecuencia de todos sus generadores a exactamente 60.000 Hz con una precisión de ±0.02 Hz. Si la frecuencia cae por debajo de 59.95 Hz, se activan protocolos de emergencia para evitar un apagón en cascada. El gran apagón del noreste de 2003 dejó sin electricidad a 55 millones de personas en Estados Unidos y Canadá porque una alarma de software falló en la sala de control de FirstEnergy en Ohio.',
   },
   {
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Faraday fue un comunicador científico notable. En 1825 inició las "Christmas Lectures" (Conferencias de Navidad) en la Royal Institution de Londres, una serie de charlas científicas para público joven que continúa hasta hoy, casi 200 años después. Faraday impartió 19 series de estas conferencias personalmente. En su conferencia más famosa, "La historia química de una vela" (1860), demostró principios de combustión, química y física usando solo una vela como herramienta. Esta tradición de hacer accesible la ciencia al público inspiró a divulgadores posteriores como Carl Sagan y Neil deGrasse Tyson.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las ecuaciones de Maxwell predicen que cualquier carga eléctrica acelerada emite radiación electromagnética. Esta predicción tiene consecuencias prácticas directas: una antena de radio funciona acelerando electrones de ida y vuelta en un conductor metálico, generando ondas electromagnéticas que se propagan a la velocidad de la luz. Tu teléfono móvil emite ondas de entre 700 MHz y 2.7 GHz. Los hornos microondas utilizan ondas de 2.45 GHz que hacen vibrar las moléculas de agua en los alimentos, calentándolos desde el interior.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m8/banner_magnetismo-electromagnetismo.webp',
+    bannerCaption: 'Electromagnetismo: la corriente eléctrica crea campo magnético y el campo magnético crea corriente — son lo mismo',
     fact: 'Algunas bacterias, como Magnetospirillum magnetotacticum, descubierta por Richard Blakemore en 1975, contienen cadenas de cristales de magnetita (Fe₃O₄) de tamaño nanométrico dentro de orgánulos llamados magnetosomas. Estas cadenas actúan como agujas de brújula microscópicas, permitiendo que las bacterias se orienten según el campo magnético terrestre para navegar hacia zonas con la concentración óptima de oxígeno. Cada bacteria contiene entre 15 y 20 cristales de magnetita alineados en una cadena, cada cristal de unos 50 nanómetros de diámetro. Este fenómeno, llamado magnetotaxis, es uno de los ejemplos más notables de nanotecnología biológica natural.',
   },
   {
@@ -231,6 +239,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El frenado regenerativo en vehículos eléctricos es una aplicación directa de la ley de Lenz. Cuando un auto eléctrico desacelera, los motores se convierten en generadores: las ruedas hacen girar los rotores, induciendo corriente que recarga la batería. La resistencia magnética que crea esta corriente (según Lenz) actúa como freno. Los trenes de levitación magnética (maglev) también usan este principio: el tren Shanghai Transrapid alcanza 431 km/h flotando sobre rieles electromagnéticos sin fricción mecánica, usando inducción para propulsión y frenado.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Las cocinas de inducción calientan ollas mediante corrientes de Foucault (eddy currents) inducidas en el metal del recipiente. Una bobina bajo la superficie de vitrocerámica genera un campo magnético alterno a entre 20,000 y 100,000 Hz. Este campo induce corrientes circulares en el fondo metálico de la olla, calentándola por efecto Joule. La superficie de la cocina permanece relativamente fría porque la vitrocerámica no es conductora. Las cocinas de inducción tienen una eficiencia del 85-90%, frente al 40% de las cocinas de gas, y pueden hervir un litro de agua en menos de dos minutos.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m8/banner_induccion-electromagnetica.webp',
+    bannerCaption: 'Inducción electromagnética: mover un imán dentro de una bobina genera electricidad, base de todos los generadores',
     fact: 'Las tarjetas de crédito con banda magnética almacenan datos mediante la inducción electromagnética. La banda contiene partículas de óxido de hierro organizadas en patrones magnéticos que representan el número de cuenta y otros datos. Al deslizar la tarjeta, las partículas magnetizadas pasan frente a un cabezal lector que induce señales eléctricas interpretables. La banda magnética fue inventada por el ingeniero de IBM Forrest Parry en 1960, quien inicialmente no lograba adherir la banda al plástico. Su esposa sugirió usar la plancha de ropa para pegarla con calor, y funcionó. IBM suministró esta tecnología al gobierno de Estados Unidos para tarjetas de identificación antes de que los bancos la adoptaran en la década de 1970.',
   },
   {
@@ -250,6 +260,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'La primera central eléctrica comercial del mundo, la Pearl Street Station de Thomas Edison, comenzó a operar el 4 de septiembre de 1882 en el bajo Manhattan, alimentando 400 lámparas incandescentes en 85 edificios en un radio de 1.6 kilómetros. La planta generaba corriente continua a 110 voltios. Edison personalmente supervisó cada detalle, desde los generadores hasta el aislamiento de los cables subterráneos. Pese a su éxito inicial, el sistema DC de Edison quedó obsoleto en una década ante el sistema AC de Tesla y Westinghouse, que podía transmitir electricidad a distancias mucho mayores.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La Estación Espacial Internacional (ISS) genera toda su electricidad mediante paneles solares que producen entre 84 y 120 kilovatios de potencia. Los paneles cubren un área total de 2,500 metros cuadrados y pesan 73,000 kilogramos. Durante los 45 minutos de cada órbita en que la ISS pasa por la sombra de la Tierra, la estación se alimenta de baterías de iones de litio que se recargan durante los 45 minutos de luz solar. La eficiencia de los paneles solares de la ISS es del 14%, inferior al 22-24% de los paneles terrestres modernos, debido a la degradación por radiación cósmica.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m8/banner_potencia-electrica.webp',
+    bannerCaption: 'Potencia eléctrica en watts: P=VI — por qué cambiar a LED reduce tu factura eléctrica en un 80%',
     fact: 'El consumo eléctrico global de los centros de datos (que alimentan Internet, la nube y la inteligencia artificial) alcanzó los 460 teravatios-hora en 2022, representando cerca del 2% del consumo eléctrico mundial, comparable al consumo total de un país como Francia. Se proyecta que para 2026 este consumo podría duplicarse, impulsado por la demanda de procesamiento de modelos de inteligencia artificial. Un solo entrenamiento del modelo GPT-4 consumió aproximadamente 50 gigavatios-hora de energía, equivalente al consumo anual de 4,600 hogares estadounidenses. Google, Microsoft y Amazon han comenzado a invertir en reactores nucleares pequeños (SMR) para alimentar sus centros de datos con energía de baja emisión de carbono.',
   },
   {
@@ -269,6 +281,8 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El país con mayor porcentaje de electricidad renovable en 2023 fue Islandia, con casi el 100% de su generación proveniente de fuentes geotérmicas (73%) e hidroeléctricas (27%). Costa Rica generó más del 98% de su electricidad con fuentes renovables durante varios años consecutivos. Noruega produce el 98% de su electricidad con hidroeléctricas. Dinamarca produjo un 55% de su electricidad con energía eólica en 2023, y en algunos días ventosos, sus turbinas generaron más del 140% de la demanda nacional, exportando el excedente a Alemania y Noruega.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La fusión nuclear, la misma reacción que alimenta al Sol, podría proporcionar energía prácticamente ilimitada. El proyecto ITER en Cadarache, Francia, es un reactor de fusión experimental que costará más de 22,000 millones de euros y se espera que produzca su primer plasma de deuterio-tritio en 2035. ITER busca demostrar que es posible obtener 10 veces más energía de la que se inyecta para mantener la reacción (Q=10). En diciembre de 2022, el National Ignition Facility (NIF) en California logró por primera vez la "ignición" por fusión: produjo 3.15 megajulios de energía a partir de 2.05 megajulios de energía láser.' },
     ],
+    bannerImage: '/assets/tesla/infographic_m8/banner_electricidad-siglo-xxi.webp',
+    bannerCaption: 'Electricidad en el siglo XXI: redes inteligentes, vehículos eléctricos y renovables — todo sobre los cimientos de Tesla',
     fact: 'En 2016, el vuelo del Solar Impulse 2, pilotado por Bertrand Piccard y André Borschberg, demostró que un avión propulsado exclusivamente por energía solar podía dar la vuelta al mundo. El avión, con una envergadura de 72 metros (mayor que un Boeing 747) y un peso de solo 2,300 kg, completó 40,000 kilómetros en 17 etapas entre marzo de 2015 y julio de 2016. Sus 17,248 células solares alimentaban cuatro motores eléctricos de 17.4 caballos cada uno y cargaban baterías de litio de 633 kg que permitían volar de noche. El tramo más largo, de Nagoya (Japón) a Hawái, duró 117 horas y 52 minutos de vuelo continuo, estableciendo un récord mundial de vuelo solar.',
   },
 ];
@@ -690,6 +704,32 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         {node.video && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <VideoPlayer src={node.video} color={node.color} />
+          </div>
+        )}
+
+        {/* --- Banner Image --- */}
+        {node.bannerImage && (
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
+            {node.bannerCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
+                {node.bannerCaption}
+              </p>
+            )}
           </div>
         )}
 
