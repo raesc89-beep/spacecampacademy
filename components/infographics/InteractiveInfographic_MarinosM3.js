@@ -146,6 +146,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'misterio-cuello-largo',
+              bannerImage: '/assets/marinos/infographic_m3/banner_misterio-cuello-largo.webp',
     title: 'El Misterio del Cuello Largo',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m3/btn_misterio-cuello-largo.jpg',
@@ -165,6 +166,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'elasmosaurus-72-vertebras',
+              bannerImage: '/assets/marinos/infographic_m3/banner_elasmosaurus-72-vertebras.webp',
     title: 'Elasmosaurus: 72 Vértebras',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m3/btn_elasmosaurus-72-vertebras.jpg',
@@ -184,6 +186,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pliosaurs-depredadores',
+              bannerImage: '/assets/marinos/infographic_m3/banner_pliosaurs-depredadores.webp',
     title: 'Pliosaurs: Los Depredadores Supremos',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m3/btn_pliosaurs-depredadores.jpg',
@@ -203,6 +206,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'como-nadaban',
+              bannerImage: '/assets/marinos/infographic_m3/banner_como-nadaban.webp',
     title: 'Cómo Nadaban',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m3/btn_como-nadaban.jpg',
@@ -222,6 +226,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dieta-estrategias-caza',
+              bannerImage: '/assets/marinos/infographic_m3/banner_dieta-estrategias-caza.webp',
     title: 'Dieta y Estrategias de Caza',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m3/btn_dieta-estrategias-caza.jpg',
@@ -241,6 +246,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'monstruo-lago-ness',
+              bannerImage: '/assets/marinos/infographic_m3/banner_monstruo-lago-ness.webp',
     title: 'El Monstruo del Lago Ness... ¿y la Ciencia?',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m3/btn_monstruo-lago-ness.jpg',
@@ -260,6 +266,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'extincion-legado',
+              bannerImage: '/assets/marinos/infographic_m3/banner_extincion-legado.webp',
     title: 'Extinción y Legado',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m3/btn_extincion-legado.jpg',
@@ -703,7 +710,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

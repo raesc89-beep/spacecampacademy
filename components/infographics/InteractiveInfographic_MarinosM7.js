@@ -142,6 +142,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'oceano-ecosistema',
+              bannerImage: '/assets/marinos/infographic_m7/banner_oceano-ecosistema.webp',
     title: 'El Océano como Ecosistema',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_oceano-ecosistema.jpg',
@@ -161,6 +162,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'productores-primarios',
+              bannerImage: '/assets/marinos/infographic_m7/banner_productores-primarios.webp',
     title: 'Productores Primarios',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_productores-primarios.jpg',
@@ -180,6 +182,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'invertebrados-mesozoicos',
+              bannerImage: '/assets/marinos/infographic_m7/banner_invertebrados-mesozoicos.webp',
     title: 'Los Invertebrados Mesozoicos',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_invertebrados-mesozoicos.jpg',
@@ -199,6 +202,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'peces-mesozoico',
+              bannerImage: '/assets/marinos/infographic_m7/banner_peces-mesozoico.webp',
     title: 'Peces del Mesozoico',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_peces-mesozoico.jpg',
@@ -218,6 +222,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'depredadores-medios',
+              bannerImage: '/assets/marinos/infographic_m7/banner_depredadores-medios.webp',
     title: 'Los Depredadores Medios',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_depredadores-medios.jpg',
@@ -237,6 +242,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'superdepredadores-marinos',
+              bannerImage: '/assets/marinos/infographic_m7/banner_superdepredadores-marinos.webp',
     title: 'Superdepredadores Marinos',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_superdepredadores-marinos.jpg',
@@ -256,6 +262,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'colapso-renovacion',
+              bannerImage: '/assets/marinos/infographic_m7/banner_colapso-renovacion.webp',
     title: 'Colapso y Renovación',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_colapso-renovacion.jpg',
@@ -698,7 +705,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

@@ -139,6 +139,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'origenes-varanidos',
+              bannerImage: '/assets/marinos/infographic_m4/banner_origenes-varanidos.webp',
     title: 'Los Lagartos que Conquistaron el Océano',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m4/btn_origenes-varanidos.jpg',
@@ -158,6 +159,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tylosaurus-apex',
+              bannerImage: '/assets/marinos/infographic_m4/banner_tylosaurus-apex.webp',
     title: 'Tylosaurus: El Depredador Apex',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m4/btn_tylosaurus-apex.jpg',
@@ -177,6 +179,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mosasaurus-rey',
+              bannerImage: '/assets/marinos/infographic_m4/banner_mosasaurus-rey.webp',
     title: 'Mosasaurus: El Rey del Cretácico',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m4/btn_mosasaurus-rey.jpg',
@@ -196,6 +199,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'anatomia-monstruo',
+              bannerImage: '/assets/marinos/infographic_m4/banner_anatomia-monstruo.webp',
     title: 'Anatomía de un Monstruo Marino',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m4/btn_anatomia-monstruo.jpg',
@@ -215,6 +219,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'diversidad-global',
+              bannerImage: '/assets/marinos/infographic_m4/banner_diversidad-global.webp',
     title: 'Diversidad Global',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m4/btn_diversidad-global.jpg',
@@ -234,6 +239,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mosasaurios-cine',
+              bannerImage: '/assets/marinos/infographic_m4/banner_mosasaurios-cine.webp',
     title: 'Los Mosasaurios y el Cine',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m4/btn_mosasaurios-cine.jpg',
@@ -253,6 +259,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'apogeo-extincion',
+              bannerImage: '/assets/marinos/infographic_m4/banner_apogeo-extincion.webp',
     title: 'Apogeo y Extinción',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m4/btn_apogeo-extincion.jpg',
@@ -696,7 +703,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

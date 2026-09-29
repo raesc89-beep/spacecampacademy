@@ -136,6 +136,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'fisica-naves',
+              bannerImage: '/assets/arrival/infographic_m5/banner_fisica-naves.webp',
     title: 'La Física de las Naves',
     color: '#8B9DAF',
     btnImage: '/assets/ciencia_arrival/infographic_m5/btn_fisica-naves.jpg',
@@ -159,6 +160,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gravedad-artificial',
+              bannerImage: '/assets/arrival/infographic_m5/banner_gravedad-artificial.webp',
     title: 'Gravedad Artificial',
     color: '#7A8C9E',
     btnImage: '/assets/ciencia_arrival/infographic_m5/btn_gravedad-artificial.jpg',
@@ -182,6 +184,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'atmosfera-alienigena',
+              bannerImage: '/assets/arrival/infographic_m5/banner_atmosfera-alienigena.webp',
     title: 'La Atmósfera Alienígena',
     color: '#6A7B8D',
     btnImage: '/assets/ciencia_arrival/infographic_m5/btn_atmosfera-alienigena.jpg',
@@ -208,6 +211,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'armas-no-armas',
+              bannerImage: '/assets/arrival/infographic_m5/banner_armas-no-armas.webp',
     title: 'Armas y No-Armas',
     color: '#4E4E4E',
     btnImage: '/assets/ciencia_arrival/infographic_m5/btn_armas-no-armas.jpg',
@@ -231,6 +235,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tiempo-no-lineal',
+              bannerImage: '/assets/arrival/infographic_m5/banner_tiempo-no-lineal.webp',
     title: 'Tiempo No Lineal en la Física',
     color: '#3D3D3D',
     btnImage: '/assets/ciencia_arrival/infographic_m5/btn_tiempo-no-lineal.jpg',
@@ -254,6 +259,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paradoja-fermi-arrival',
+              bannerImage: '/assets/arrival/infographic_m5/banner_paradoja-fermi-arrival.webp',
     title: 'La Paradoja de Fermi en Arrival',
     color: '#2C2C2C',
     btnImage: '/assets/ciencia_arrival/infographic_m5/btn_paradoja-fermi-arrival.jpg',
@@ -277,6 +283,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciencia-ficcion-dura',
+              bannerImage: '/assets/arrival/infographic_m5/banner_ciencia-ficcion-dura.webp',
     title: 'Ciencia Ficción Dura',
     color: '#1B1B1B',
     btnImage: '/assets/ciencia_arrival/infographic_m5/btn_ciencia-ficcion-dura.jpg',
@@ -726,7 +733,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

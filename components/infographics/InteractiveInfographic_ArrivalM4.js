@@ -139,6 +139,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'lenguaje-animal',
+              bannerImage: '/assets/arrival/infographic_m4/banner_lenguaje-animal.webp',
     title: 'Lenguaje Animal',
     color: '#8B9DAF',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_lenguaje-animal.jpg',
@@ -158,6 +159,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'grandes-simios',
+              bannerImage: '/assets/arrival/infographic_m4/banner_grandes-simios.webp',
     title: 'Grandes Simios y el Lenguaje',
     color: '#7A8C9E',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_grandes-simios.jpg',
@@ -180,6 +182,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'delfines-cetaceos',
+              bannerImage: '/assets/arrival/infographic_m4/banner_delfines-cetaceos.webp',
     title: 'Delfines y Cetáceos',
     color: '#6A7B8D',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_delfines-cetaceos.jpg',
@@ -199,6 +202,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ia-lenguaje',
+              bannerImage: '/assets/arrival/infographic_m4/banner_ia-lenguaje.webp',
     title: 'Inteligencia Artificial y Lenguaje',
     color: '#4E4E4E',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_ia-lenguaje.jpg',
@@ -218,6 +222,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'seti-mensajes',
+              bannerImage: '/assets/arrival/infographic_m4/banner_seti-mensajes.webp',
     title: 'SETI y Mensajes Interestelares',
     color: '#3D3D3D',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_seti-mensajes.jpg',
@@ -240,6 +245,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'xenolinguistica',
+              bannerImage: '/assets/arrival/infographic_m4/banner_xenolinguistica.webp',
     title: 'Xenolingüística',
     color: '#2C2C2C',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_xenolinguistica.jpg',
@@ -262,6 +268,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pelicula-arrival',
+              bannerImage: '/assets/arrival/infographic_m4/banner_pelicula-arrival.webp',
     title: 'La Película Arrival',
     color: '#1B1B1B',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_pelicula-arrival.jpg',
@@ -704,7 +711,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

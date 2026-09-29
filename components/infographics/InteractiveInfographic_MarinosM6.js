@@ -141,6 +141,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'thalattosuchia-intro',
+              bannerImage: '/assets/marinos/infographic_m6/banner_thalattosuchia-intro.webp',
     title: 'Cocodrilos: Los Otros Reptiles Marinos',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_thalattosuchia-intro.jpg',
@@ -160,6 +161,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'metriorhynchus-aletas',
+              bannerImage: '/assets/marinos/infographic_m6/banner_metriorhynchus-aletas.webp',
     title: 'Metriorhynchus: Aletas en Vez de Patas',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_metriorhynchus-aletas.jpg',
@@ -179,6 +181,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dakosaurus-apex',
+              bannerImage: '/assets/marinos/infographic_m6/banner_dakosaurus-apex.webp',
     title: 'Dakosaurus: El Cocodrilo T-Rex',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_dakosaurus-apex.jpg',
@@ -198,6 +201,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'steneosaurus-primitivos',
+              bannerImage: '/assets/marinos/infographic_m6/banner_steneosaurus-primitivos.webp',
     title: 'Steneosaurus y los Primitivos',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_steneosaurus-primitivos.jpg',
@@ -217,6 +221,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'adaptaciones-oceano',
+              bannerImage: '/assets/marinos/infographic_m6/banner_adaptaciones-oceano.webp',
     title: 'Adaptaciones al Océano',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_adaptaciones-oceano.jpg',
@@ -236,6 +241,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'machimosaurus-gigante',
+              bannerImage: '/assets/marinos/infographic_m6/banner_machimosaurus-gigante.webp',
     title: 'Machimosaurus: El Gigante',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_machimosaurus-gigante.jpg',
@@ -255,6 +261,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'herencia-moderna',
+              bannerImage: '/assets/marinos/infographic_m6/banner_herencia-moderna.webp',
     title: 'La Herencia Moderna',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_herencia-moderna.jpg',
@@ -696,7 +703,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

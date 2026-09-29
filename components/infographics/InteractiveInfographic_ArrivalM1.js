@@ -130,6 +130,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'que-nos-hace-humanos',
+              bannerImage: '/assets/arrival/infographic_m1/banner_que-nos-hace-humanos.webp',
     title: '¿Qué Nos Hace Humanos?',
     color: '#8B9DAF',
     btnImage: '/assets/ciencia_arrival/infographic_m1/btn_que-nos-hace-humanos.jpg',
@@ -149,6 +150,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'componentes-lenguaje',
+              bannerImage: '/assets/arrival/infographic_m1/banner_componentes-lenguaje.webp',
     title: 'Los Componentes del Lenguaje',
     color: '#A0B4C8',
     btnImage: '/assets/ciencia_arrival/infographic_m1/btn_componentes-lenguaje.jpg',
@@ -168,6 +170,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lenguas-del-mundo',
+              bannerImage: '/assets/arrival/infographic_m1/banner_lenguas-del-mundo.webp',
     title: 'Lenguas del Mundo',
     color: '#6A7B8D',
     btnImage: '/assets/ciencia_arrival/infographic_m1/btn_lenguas-del-mundo.jpg',
@@ -190,6 +193,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'adquisicion-lenguaje',
+              bannerImage: '/assets/arrival/infographic_m1/banner_adquisicion-lenguaje.webp',
     title: 'La Adquisición del Lenguaje',
     color: '#B0C4D8',
     btnImage: '/assets/ciencia_arrival/infographic_m1/btn_adquisicion-lenguaje.jpg',
@@ -209,6 +213,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lenguaje-y-pensamiento',
+              bannerImage: '/assets/arrival/infographic_m1/banner_lenguaje-y-pensamiento.webp',
     title: 'Lenguaje y Pensamiento',
     color: '#7A8C9E',
     btnImage: '/assets/ciencia_arrival/infographic_m1/btn_lenguaje-y-pensamiento.jpg',
@@ -228,6 +233,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'escritura-habla-texto',
+              bannerImage: '/assets/arrival/infographic_m1/banner_escritura-habla-texto.webp',
     title: 'Escritura: Del Habla al Texto',
     color: '#9AAABB',
     btnImage: '/assets/ciencia_arrival/infographic_m1/btn_escritura-habla-texto.jpg',
@@ -250,6 +256,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'comunicacion-no-verbal',
+              bannerImage: '/assets/arrival/infographic_m1/banner_comunicacion-no-verbal.webp',
     title: 'Comunicación No Verbal',
     color: '#5A6B7D',
     btnImage: '/assets/ciencia_arrival/infographic_m1/btn_comunicacion-no-verbal.jpg',
@@ -692,7 +699,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

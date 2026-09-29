@@ -158,6 +158,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'piedra-rosetta',
+              bannerImage: '/assets/arrival/infographic_m2/banner_piedra-rosetta.webp',
     title: 'La Piedra de Rosetta',
     color: '#8B9DAF',
     btnImage: '/assets/ciencia_arrival/infographic_m2/btn_piedra-rosetta.jpg',
@@ -177,6 +178,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'escrituras-perdidas',
+              bannerImage: '/assets/arrival/infographic_m2/banner_escrituras-perdidas.webp',
     title: 'Descifrar Escrituras Perdidas',
     color: '#7A8C9E',
     btnImage: '/assets/ciencia_arrival/infographic_m2/btn_escrituras-perdidas.jpg',
@@ -199,6 +201,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'traduccion-arte',
+              bannerImage: '/assets/arrival/infographic_m2/banner_traduccion-arte.webp',
     title: 'La Traducción como Arte',
     color: '#6A7B8D',
     btnImage: '/assets/ciencia_arrival/infographic_m2/btn_traduccion-arte.jpg',
@@ -218,6 +221,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'maquinas-traducen',
+              bannerImage: '/assets/arrival/infographic_m2/banner_maquinas-traducen.webp',
     title: 'Máquinas que Traducen',
     color: '#4E4E4E',
     btnImage: '/assets/ciencia_arrival/infographic_m2/btn_maquinas-traducen.jpg',
@@ -240,6 +244,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lenguas-contacto',
+              bannerImage: '/assets/arrival/infographic_m2/banner_lenguas-contacto.webp',
     title: 'Lenguas de Contacto',
     color: '#3D3D3D',
     btnImage: '/assets/ciencia_arrival/infographic_m2/btn_lenguas-contacto.jpg',
@@ -259,6 +264,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lenguas-inventadas',
+              bannerImage: '/assets/arrival/infographic_m2/banner_lenguas-inventadas.webp',
     title: 'Lenguas Inventadas',
     color: '#2C2C2C',
     btnImage: '/assets/ciencia_arrival/infographic_m2/btn_lenguas-inventadas.jpg',
@@ -281,6 +287,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'primer-contacto',
+              bannerImage: '/assets/arrival/infographic_m2/banner_primer-contacto.webp',
     title: 'Primer Contacto Lingüístico',
     color: '#1B1B1B',
     btnImage: '/assets/ciencia_arrival/infographic_m2/btn_primer-contacto.jpg',
@@ -724,7 +731,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

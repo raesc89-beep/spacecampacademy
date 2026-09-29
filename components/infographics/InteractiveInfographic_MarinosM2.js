@@ -162,6 +162,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'primeros-ictiosaurios',
+              bannerImage: '/assets/marinos/infographic_m2/banner_primeros-ictiosaurios.webp',
     title: 'Los Primeros Ictiosaurios',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m2/btn_primeros-ictiosaurios.jpg',
@@ -181,6 +182,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'anatomia-nadador',
+              bannerImage: '/assets/marinos/infographic_m2/banner_anatomia-nadador.webp',
     title: 'Anatomía de un Nadador Perfecto',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m2/btn_anatomia-nadador.jpg',
@@ -200,6 +202,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ophthalmosaurus-ojo',
+              bannerImage: '/assets/marinos/infographic_m2/banner_ophthalmosaurus-ojo.webp',
     title: 'Ophthalmosaurus: El Ojo Gigante',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m2/btn_ophthalmosaurus-ojo.jpg',
@@ -219,6 +222,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'shonisaurus-gigante',
+              bannerImage: '/assets/marinos/infographic_m2/banner_shonisaurus-gigante.webp',
     title: 'Shonisaurus: El Gigante del Triásico',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m2/btn_shonisaurus-gigante.jpg',
@@ -238,6 +242,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nacimiento-mar',
+              bannerImage: '/assets/marinos/infographic_m2/banner_nacimiento-mar.webp',
     title: 'Nacimiento en el Mar',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m2/btn_nacimiento-mar.jpg',
@@ -257,6 +262,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dieta-caza',
+              bannerImage: '/assets/marinos/infographic_m2/banner_dieta-caza.webp',
     title: 'Dieta y Caza',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m2/btn_dieta-caza.jpg',
@@ -276,6 +282,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'desaparicion-temprana',
+              bannerImage: '/assets/marinos/infographic_m2/banner_desaparicion-temprana.webp',
     title: 'La Desaparición Temprana',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m2/btn_desaparicion-temprana.jpg',
@@ -719,7 +726,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

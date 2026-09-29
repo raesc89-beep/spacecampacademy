@@ -134,6 +134,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'oceano-panthalassa',
+              bannerImage: '/assets/marinos/infographic_m1/banner_oceano-panthalassa.webp',
     title: 'El Océano Panthalassa',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m1/btn_oceano-panthalassa.jpg',
@@ -153,6 +154,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'primeros-reptiles-marinos',
+              bannerImage: '/assets/marinos/infographic_m1/banner_primeros-reptiles-marinos.webp',
     title: 'Los Primeros Reptiles Marinos',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m1/btn_primeros-reptiles-marinos.jpg',
@@ -172,6 +174,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nothosaurus-dos-mundos',
+              bannerImage: '/assets/marinos/infographic_m1/banner_nothosaurus-dos-mundos.webp',
     title: 'Nothosaurus: Entre Dos Mundos',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m1/btn_nothosaurus-dos-mundos.jpg',
@@ -191,6 +194,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'evolucion-natacion',
+              bannerImage: '/assets/marinos/infographic_m1/banner_evolucion-natacion.webp',
     title: 'La Evolución de la Natación',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m1/btn_evolucion-natacion.jpg',
@@ -210,6 +214,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cadenas-alimentarias',
+              bannerImage: '/assets/marinos/infographic_m1/banner_cadenas-alimentarias.webp',
     title: 'Cadenas Alimentarias Antiguas',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m1/btn_cadenas-alimentarias.jpg',
@@ -229,6 +234,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fosiles-bajo-mar',
+              bannerImage: '/assets/marinos/infographic_m1/banner_fosiles-bajo-mar.webp',
     title: 'Fósiles Bajo el Mar',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m1/btn_fosiles-bajo-mar.jpg',
@@ -248,6 +254,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'oceanos-mesozoico',
+              bannerImage: '/assets/marinos/infographic_m1/banner_oceanos-mesozoico.webp',
     title: 'Los Océanos del Mesozoico',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m1/btn_oceanos-mesozoico.jpg',
@@ -689,7 +696,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

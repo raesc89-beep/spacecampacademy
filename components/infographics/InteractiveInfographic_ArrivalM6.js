@@ -128,6 +128,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'denis-villeneuve',
+              bannerImage: '/assets/arrival/infographic_m6/banner_denis-villeneuve.webp',
     title: 'Denis Villeneuve',
     color: '#8B9DAF',
     btnImage: '/assets/ciencia_arrival/infographic_m6/btn_denis-villeneuve.jpg',
@@ -147,6 +148,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'amy-adams-louise',
+              bannerImage: '/assets/arrival/infographic_m6/banner_amy-adams-louise.webp',
     title: 'Amy Adams como Louise Banks',
     color: '#7A8C9E',
     btnImage: '/assets/ciencia_arrival/infographic_m6/btn_amy-adams-louise.jpg',
@@ -166,6 +168,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'impacto-cultural',
+              bannerImage: '/assets/arrival/infographic_m6/banner_impacto-cultural.webp',
     title: 'El Impacto Cultural',
     color: '#4E4E4E',
     btnImage: '/assets/ciencia_arrival/infographic_m6/btn_impacto-cultural.jpg',
@@ -185,6 +188,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ted-chiang-autor',
+              bannerImage: '/assets/arrival/infographic_m6/banner_ted-chiang-autor.webp',
     title: 'Ted Chiang: El Autor',
     color: '#6A7B8D',
     btnImage: '/assets/ciencia_arrival/infographic_m6/btn_ted-chiang-autor.jpg',
@@ -207,6 +211,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'linguistica-despues',
+              bannerImage: '/assets/arrival/infographic_m6/banner_linguistica-despues.webp',
     title: 'Lingüística Después de Arrival',
     color: '#3D3D3D',
     btnImage: '/assets/ciencia_arrival/infographic_m6/btn_linguistica-despues.jpg',
@@ -229,6 +234,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciencia-ficcion-intelectual',
+              bannerImage: '/assets/arrival/infographic_m6/banner_ciencia-ficcion-intelectual.webp',
     title: 'Ciencia Ficción Intelectual',
     color: '#2C2C2C',
     btnImage: '/assets/ciencia_arrival/infographic_m6/btn_ciencia-ficcion-intelectual.jpg',
@@ -248,6 +254,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mensaje-final',
+              bannerImage: '/assets/arrival/infographic_m6/banner_mensaje-final.webp',
     title: 'El Mensaje Final',
     color: '#1B1B1B',
     btnImage: '/assets/ciencia_arrival/infographic_m6/btn_mensaje-final.jpg',
@@ -690,7 +697,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,
