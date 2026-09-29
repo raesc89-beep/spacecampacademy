@@ -618,7 +618,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {node.bannerImage && (
-                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
                   <img src={node.bannerImage} alt={node.bannerCaption || ''}
                        style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
