@@ -95,6 +95,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'polvo-de-oxido',
+              bannerImage: '/assets/rocosos/infographic_m5/banner_polvo-de-oxido.webp',
     title: 'El Polvo Oxidado',
     color: '#E63946',
     btnImage: '/assets/rocosos/infographic_m5/btn_polvo-de-oxido.jpg',
@@ -114,6 +115,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'volcanes-gigantes',
+              bannerImage: '/assets/rocosos/infographic_m5/banner_volcanes-gigantes.webp',
     title: 'Monte Olimpo',
     color: '#F4A261',
     btnImage: '/assets/rocosos/infographic_m5/btn_volcanes-gigantes.jpg',
@@ -133,6 +135,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'valles-marineris',
+              bannerImage: '/assets/rocosos/infographic_m5/banner_valles-marineris.webp',
     title: 'Valles Marineris',
     color: '#D62828',
     btnImage: '/assets/rocosos/infographic_m5/btn_valles-marineris.jpg',
@@ -152,6 +155,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'agua-ancestral',
+              bannerImage: '/assets/rocosos/infographic_m5/banner_agua-ancestral.webp',
     title: 'El Pasado Acuático',
     color: '#48CAE4',
     btnImage: '/assets/rocosos/infographic_m5/btn_agua-ancestral.jpg',
@@ -171,6 +175,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'colapso-atmosferico',
+              bannerImage: '/assets/rocosos/infographic_m5/banner_colapso-atmosferico.webp',
     title: 'Pérdida de la Magnetosfera',
     color: '#A8DADC',
     btnImage: '/assets/rocosos/infographic_m5/btn_colapso-atmosferico.jpg',
@@ -190,6 +195,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'casquetes-polares',
+              bannerImage: '/assets/rocosos/infographic_m5/banner_casquetes-polares.webp',
     title: 'Casquetes Polares',
     color: '#F1FAEE',
     btnImage: '/assets/rocosos/infographic_m5/btn_casquetes-polares.jpg',
@@ -209,6 +215,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'caza-de-biofirmas',
+              bannerImage: '/assets/rocosos/infographic_m5/banner_caza-de-biofirmas.webp',
     title: 'Caza de Biofirmas',
     color: '#FFB703',
     btnImage: '/assets/rocosos/infographic_m5/btn_caza-de-biofirmas.jpg',
@@ -638,7 +645,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Sparkles size={18} style={{ color: node.color }} />

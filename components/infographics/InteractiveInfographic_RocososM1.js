@@ -96,6 +96,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'disco-protoplanetario',
+              bannerImage: '/assets/rocosos/infographic_m1/banner_disco-protoplanetario.webp',
     title: 'El Disco Protoplanetario',
     color: '#FF6B35',
     btnImage: '/assets/rocosos/infographic_m1/btn_disco-protoplanetario.jpg',
@@ -115,6 +116,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'condensacion-silicatos',
+              bannerImage: '/assets/rocosos/infographic_m1/banner_condensacion-silicatos.webp',
     title: 'Condensación de Silicatos',
     color: '#F7C59F',
     btnImage: '/assets/rocosos/infographic_m1/btn_condensacion-silicatos.jpg',
@@ -134,6 +136,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'acrecion-planetesimales',
+              bannerImage: '/assets/rocosos/infographic_m1/banner_acrecion-planetesimales.webp',
     title: 'Acreción de Planetesimales',
     color: '#EFE9F4',
     btnImage: '/assets/rocosos/infographic_m1/btn_acrecion-planetesimales.jpg',
@@ -153,6 +156,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'diferenciacion-planetaria',
+              bannerImage: '/assets/rocosos/infographic_m1/banner_diferenciacion-planetaria.webp',
     title: 'Diferenciación Química',
     color: '#FFD166',
     btnImage: '/assets/rocosos/infographic_m1/btn_diferenciacion-planetaria.jpg',
@@ -172,6 +176,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'linea-de-nieve',
+              bannerImage: '/assets/rocosos/infographic_m1/banner_linea-de-nieve.webp',
     title: 'La Línea de Nieve',
     color: '#4ECDC4',
     btnImage: '/assets/rocosos/infographic_m1/btn_linea-de-nieve.jpg',
@@ -191,6 +196,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'bombardeo-intenso',
+              bannerImage: '/assets/rocosos/infographic_m1/banner_bombardeo-intenso.webp',
     title: 'Gran Bombardeo Intenso',
     color: '#FF007F',
     btnImage: '/assets/rocosos/infographic_m1/btn_bombardeo-intenso.jpg',
@@ -210,6 +216,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'magma-y-corteza',
+              bannerImage: '/assets/rocosos/infographic_m1/banner_magma-y-corteza.webp',
     title: 'Océanos de Magma',
     color: '#E71D36',
     btnImage: '/assets/rocosos/infographic_m1/btn_magma-y-corteza.jpg',
@@ -639,7 +646,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Sparkles size={18} style={{ color: node.color }} />

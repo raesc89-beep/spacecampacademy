@@ -94,6 +94,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'mision-vosjod',
+              bannerImage: '/assets/pioneros/infographic_m5/banner_mision-vosjod.webp',
     title: 'La Misión Vosjod 2',
     color: '#D87D4A',
     btnImage: '/assets/pioneros/infographic_m5/btn_mision-vosjod.jpg',
@@ -107,6 +108,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'traje-berkut',
+              bannerImage: '/assets/pioneros/infographic_m5/banner_traje-berkut.webp',
     title: 'El Traje Espacial Berkut',
     color: '#D4B872',
     btnImage: '/assets/pioneros/infographic_m5/btn_traje-berkut.jpg',
@@ -120,6 +122,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'caminata-historica',
+              bannerImage: '/assets/pioneros/infographic_m5/banner_caminata-historica.webp',
     title: 'La Caminata Histórica',
     color: '#80DEEA',
     btnImage: '/assets/pioneros/infographic_m5/btn_caminata-historica.jpg',
@@ -133,6 +136,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'regreso-peligroso',
+              bannerImage: '/assets/pioneros/infographic_m5/banner_regreso-peligroso.webp',
     title: 'Un Regreso al Límite',
     color: '#3949AB',
     btnImage: '/assets/pioneros/infographic_m5/btn_regreso-peligroso.jpg',
@@ -146,6 +150,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'leonov-regreso-dificil',
+              bannerImage: '/assets/pioneros/infographic_m5/banner_leonov-regreso-dificil.webp',
     title: 'Los 12 Minutos que Casi Matan a Leonov',
     color: '#EF5350',
     btnImage: '/assets/pioneros/infographic_m5/btn_leonov-regreso.jpg',
@@ -165,6 +170,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'berkut-ingenieria',
+              bannerImage: '/assets/pioneros/infographic_m5/banner_berkut-ingenieria.webp',
     title: 'El Traje Berkut: Ingeniería del Primer Paso al Vacío',
     color: '#66BB6A',
     btnImage: '/assets/pioneros/infographic_m5/btn_berkut-ingenieria.jpg',
@@ -184,6 +190,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fisica-eva',
+              bannerImage: '/assets/pioneros/infographic_m5/banner_fisica-eva.webp',
     title: 'La Física de Caminar en el Vacío',
     color: '#9C27B0',
     btnImage: '/assets/pioneros/infographic_m5/btn_fisica-eva.jpg',
@@ -584,7 +591,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {node.expandables && node.expandables.length > 0 && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {node.expandables.map((item, i) => (

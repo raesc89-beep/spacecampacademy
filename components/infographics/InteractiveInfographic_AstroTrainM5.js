@@ -150,6 +150,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'efectos-microgravedad',
+              bannerImage: '/assets/astro_train/infographic_m5/banner_efectos-microgravedad.webp',
     title: 'Efectos de la Microgravedad',
     color: '#C44B4B',
     btnImage: '/assets/astrotrain/infographic_m5/btn_efectos-microgravedad.jpg',
@@ -169,6 +170,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'radiacion-cosmica',
+              bannerImage: '/assets/astro_train/infographic_m5/banner_radiacion-cosmica.webp',
     title: 'Radiación Cósmica',
     color: '#A8B5C0',
     btnImage: '/assets/astrotrain/infographic_m5/btn_radiacion-cosmica.jpg',
@@ -188,6 +190,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sistema-cardiovascular',
+              bannerImage: '/assets/astro_train/infographic_m5/banner_sistema-cardiovascular.webp',
     title: 'El Sistema Cardiovascular',
     color: '#D45A5A',
     btnImage: '/assets/astrotrain/infographic_m5/btn_sistema-cardiovascular.jpg',
@@ -207,6 +210,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'vision-en-el-espacio',
+              bannerImage: '/assets/astro_train/infographic_m5/banner_vision-en-el-espacio.webp',
     title: 'Visión en el Espacio',
     color: '#96A3AE',
     btnImage: '/assets/astrotrain/infographic_m5/btn_vision-en-el-espacio.jpg',
@@ -226,6 +230,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'psicologia-aislamiento',
+              bannerImage: '/assets/astro_train/infographic_m5/banner_psicologia-aislamiento.webp',
     title: 'Psicología del Aislamiento',
     color: '#B43A3A',
     btnImage: '/assets/astrotrain/infographic_m5/btn_psicologia-aislamiento.jpg',
@@ -245,6 +250,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'medicina-emergencia',
+              bannerImage: '/assets/astro_train/infographic_m5/banner_medicina-emergencia.webp',
     title: 'Medicina de Emergencia',
     color: '#8491A0',
     btnImage: '/assets/astrotrain/infographic_m5/btn_medicina-emergencia.jpg',
@@ -264,6 +270,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'investigacion-medica-iss',
+              bannerImage: '/assets/astro_train/infographic_m5/banner_investigacion-medica-iss.webp',
     title: 'Investigación Médica en la ISS',
     color: '#E46A6A',
     btnImage: '/assets/astrotrain/infographic_m5/btn_investigacion-medica-iss.jpg',
@@ -706,7 +713,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

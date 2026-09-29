@@ -62,6 +62,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'seleccion',
+              bannerImage: '/assets/pioneros/infographic_m4/banner_seleccion.webp',
     title: 'La Selección y Preparación',
     color: '#D87D4A',
     btnImage: '/assets/pioneros/infographic_m4/btn_seleccion.jpg',
@@ -81,6 +82,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nave-vostok',
+              bannerImage: '/assets/pioneros/infographic_m4/banner_nave-vostok.webp',
     title: 'La Nave Vostok 6',
     color: '#80DEEA',
     btnImage: '/assets/pioneros/infographic_m4/btn_nave-vostok.jpg',
@@ -100,6 +102,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orbita',
+              bannerImage: '/assets/pioneros/infographic_m4/banner_orbita.webp',
     title: 'El Vuelo y la Órbita',
     color: '#D4B872',
     btnImage: '/assets/pioneros/infographic_m4/btn_orbita.jpg',
@@ -119,6 +122,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'regreso',
+              bannerImage: '/assets/pioneros/infographic_m4/banner_regreso.webp',
     title: 'El Descenso y Regreso',
     color: '#3949AB',
     btnImage: '/assets/pioneros/infographic_m4/btn_regreso.jpg',
@@ -138,6 +142,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado',
+              bannerImage: '/assets/pioneros/infographic_m4/banner_legado.webp',
     title: 'El Legado de Valentina',
     color: '#2C3E50',
     btnImage: '/assets/pioneros/infographic_m4/btn_legado.jpg',
@@ -157,6 +162,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tereshkova-post-vuelo',
+              bannerImage: '/assets/pioneros/infographic_m4/banner_tereshkova-post-vuelo.webp',
     title: 'Valentina Después del Espacio: Política y Legado',
     color: '#EC407A',
     btnImage: '/assets/pioneros/infographic_m4/btn_tereshkova-post.jpg',
@@ -176,6 +182,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mujeres-programa-sovietico',
+              bannerImage: '/assets/pioneros/infographic_m4/banner_mujeres-programa-sovietico.webp',
     title: 'Las Cinco: Las Otras Candidatas que la Historia Olvidó',
     color: '#AB47BC',
     btnImage: '/assets/pioneros/infographic_m4/btn_mujeres-sovietico.jpg',
@@ -610,7 +617,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {node.expandables && node.expandables.length > 0 && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {node.expandables.map((item, i) => (

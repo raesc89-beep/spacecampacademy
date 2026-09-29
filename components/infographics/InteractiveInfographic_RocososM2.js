@@ -97,6 +97,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'nucleo-gigante',
+              bannerImage: '/assets/rocosos/infographic_m2/banner_nucleo-gigante.webp',
     title: 'El Núcleo Gigante',
     color: '#E63946',
     btnImage: '/assets/rocosos/infographic_m2/btn_nucleo-gigante.jpg',
@@ -116,6 +117,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'temperaturas-extremas',
+              bannerImage: '/assets/rocosos/infographic_m2/banner_temperaturas-extremas.webp',
     title: 'Contrastes Térmicos',
     color: '#FF9F1C',
     btnImage: '/assets/rocosos/infographic_m2/btn_temperaturas-extremas.jpg',
@@ -135,6 +137,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'escarpas-tectonicas',
+              bannerImage: '/assets/rocosos/infographic_m2/banner_escarpas-tectonicas.webp',
     title: 'Escarpas de Contracción',
     color: '#CB997E',
     btnImage: '/assets/rocosos/infographic_m2/btn_escarpas-tectonicas.jpg',
@@ -154,6 +157,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'crateres-y-hielo',
+              bannerImage: '/assets/rocosos/infographic_m2/banner_crateres-y-hielo.webp',
     title: 'Hielo Polar Sombrío',
     color: '#00B4D8',
     btnImage: '/assets/rocosos/infographic_m2/btn_crateres-y-hielo.jpg',
@@ -173,6 +177,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'campo-magnetico',
+              bannerImage: '/assets/rocosos/infographic_m2/banner_campo-magnetico.webp',
     title: 'El Campo Magnético',
     color: '#9D4EDD',
     btnImage: '/assets/rocosos/infographic_m2/btn_campo-magnetico.jpg',
@@ -192,6 +197,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gran-impacto',
+              bannerImage: '/assets/rocosos/infographic_m2/banner_gran-impacto.webp',
     title: 'La Colisión Despojadora',
     color: '#F15BB5',
     btnImage: '/assets/rocosos/infographic_m2/btn_gran-impacto.jpg',
@@ -211,6 +217,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'exploracion-bepicolombo',
+              bannerImage: '/assets/rocosos/infographic_m2/banner_exploracion-bepicolombo.webp',
     title: 'MESSENGER y BepiColombo',
     color: '#00F5D4',
     btnImage: '/assets/rocosos/infographic_m2/btn_exploracion-bepicolombo.jpg',
@@ -640,7 +647,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Sparkles size={18} style={{ color: node.color }} />

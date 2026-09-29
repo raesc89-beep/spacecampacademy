@@ -94,6 +94,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'gigante-roja',
+              bannerImage: '/assets/rocosos/infographic_m6/banner_gigante-roja.webp',
     title: 'El Sol Gigante Roja',
     color: '#FF0054',
     btnImage: '/assets/rocosos/infographic_m6/btn_gigante-roja.jpg',
@@ -113,6 +114,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'evaporacion-oceanos',
+              bannerImage: '/assets/rocosos/infographic_m6/banner_evaporacion-oceanos.webp',
     title: 'Evaporación de Océanos',
     color: '#FFBD00',
     btnImage: '/assets/rocosos/infographic_m6/btn_evaporacion-oceanos.jpg',
@@ -132,6 +134,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'descomposicion-venus',
+              bannerImage: '/assets/rocosos/infographic_m6/banner_descomposicion-venus.webp',
     title: 'Transformación de Venus',
     color: '#FF5400',
     btnImage: '/assets/rocosos/infographic_m6/btn_descomposicion-venus.jpg',
@@ -151,6 +154,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'marte-segundo-hogar',
+              bannerImage: '/assets/rocosos/infographic_m6/banner_marte-segundo-hogar.webp',
     title: 'Marte y Terraformación',
     color: '#3A86FF',
     btnImage: '/assets/rocosos/infographic_m6/btn_marte-segundo-hogar.jpg',
@@ -170,6 +174,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'exoplanetas-rocosos',
+              bannerImage: '/assets/rocosos/infographic_m6/banner_exoplanetas-rocosos.webp',
     title: 'Super-Tierras y TRAPPIST-1',
     color: '#8338EC',
     btnImage: '/assets/rocosos/infographic_m6/btn_exoplanetas-rocosos.jpg',
@@ -189,6 +194,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'recursos-planetarios',
+              bannerImage: '/assets/rocosos/infographic_m6/banner_recursos-planetarios.webp',
     title: 'Minería Espacial',
     color: '#00F5D4',
     btnImage: '/assets/rocosos/infographic_m6/btn_recursos-planetarios.jpg',
@@ -208,6 +214,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'destino-final-rocas',
+              bannerImage: '/assets/rocosos/infographic_m6/banner_destino-final-rocas.webp',
     title: 'El Destino Final',
     color: '#7000FF',
     btnImage: '/assets/rocosos/infographic_m6/btn_destino-final-rocas.jpg',
@@ -637,7 +644,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Sparkles size={18} style={{ color: node.color }} />

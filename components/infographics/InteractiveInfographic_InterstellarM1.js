@@ -87,6 +87,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'gravedad-newton',
+              bannerImage: '/assets/interstellar/infographic_m1/banner_gravedad-newton.webp',
     title: 'La Gravedad de Newton',
     color: '#F4A261',
     btnImage: '/assets/interstellar/infographic_m1/btn_gravedad-newton.jpg',
@@ -106,6 +107,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'einstein-1915',
+              bannerImage: '/assets/interstellar/infographic_m1/banner_einstein-1915.webp',
     title: 'Einstein Cambia Todo',
     color: '#4FC3F7',
     btnImage: '/assets/interstellar/infographic_m1/btn_einstein-1915.jpg',
@@ -125,6 +127,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'curvatura-espaciotiempo',
+              bannerImage: '/assets/interstellar/infographic_m1/banner_curvatura-espaciotiempo.webp',
     title: 'El Espacio se Curva',
     color: '#7C4DFF',
     btnImage: '/assets/interstellar/infographic_m1/btn_curvatura-espaciotiempo.jpg',
@@ -144,6 +147,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'geodesicas',
+              bannerImage: '/assets/interstellar/infographic_m1/banner_geodesicas.webp',
     title: 'Líneas Rectas Curvas',
     color: '#FF6B35',
     btnImage: '/assets/interstellar/infographic_m1/btn_geodesicas.jpg',
@@ -163,6 +167,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lentes-gravitacionales',
+              bannerImage: '/assets/interstellar/infographic_m1/banner_lentes-gravitacionales.webp',
     title: 'El Universo como Lupa',
     color: '#00BCD4',
     btnImage: '/assets/interstellar/infographic_m1/btn_lentes-gravitacionales.jpg',
@@ -182,6 +187,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ondas-gravitacionales',
+              bannerImage: '/assets/interstellar/infographic_m1/banner_ondas-gravitacionales.webp',
     title: 'Olas en el Espacio',
     color: '#AB47BC',
     btnImage: '/assets/interstellar/infographic_m1/btn_ondas-gravitacionales.jpg',
@@ -201,6 +207,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gps-relatividad',
+              bannerImage: '/assets/interstellar/infographic_m1/banner_gps-relatividad.webp',
     title: 'Einstein en tu Bolsillo',
     color: '#26A69A',
     btnImage: '/assets/interstellar/infographic_m1/btn_gps-relatividad.jpg',
@@ -614,7 +621,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* â”€â”€â”€ Fast Fact â”€â”€â”€ */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '2rem', padding: '1.2rem',
             background: `linear-gradient(90deg, ${node.color}15, transparent)`,

@@ -146,6 +146,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'tercera-ley-newton',
+              bannerImage: '/assets/astro_train/infographic_m4/banner_tercera-ley-newton.webp',
     title: 'La Tercera Ley de Newton',
     color: '#C44B4B',
     btnImage: '/assets/astrotrain/infographic_m4/btn_tercera-ley-newton.jpg',
@@ -165,6 +166,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'historia-coheteria',
+              bannerImage: '/assets/astro_train/infographic_m4/banner_historia-coheteria.webp',
     title: 'Historia de la Cohetería',
     color: '#A8B5C0',
     btnImage: '/assets/astrotrain/infographic_m4/btn_historia-coheteria.jpg',
@@ -184,6 +186,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'combustibles-oxidantes',
+              bannerImage: '/assets/astro_train/infographic_m4/banner_combustibles-oxidantes.webp',
     title: 'Combustibles y Oxidantes',
     color: '#D45A5A',
     btnImage: '/assets/astrotrain/infographic_m4/btn_combustibles-oxidantes.jpg',
@@ -203,6 +206,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'etapas-cohete',
+              bannerImage: '/assets/astro_train/infographic_m4/banner_etapas-cohete.webp',
     title: 'Etapas del Cohete',
     color: '#96A3AE',
     btnImage: '/assets/astrotrain/infographic_m4/btn_etapas-cohete.jpg',
@@ -222,6 +226,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'el-lanzamiento',
+              bannerImage: '/assets/astro_train/infographic_m4/banner_el-lanzamiento.webp',
     title: 'El Lanzamiento',
     color: '#B43A3A',
     btnImage: '/assets/astrotrain/infographic_m4/btn_el-lanzamiento.jpg',
@@ -241,6 +246,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cohetes-reutilizables',
+              bannerImage: '/assets/astro_train/infographic_m4/banner_cohetes-reutilizables.webp',
     title: 'Cohetes Reutilizables',
     color: '#8491A0',
     btnImage: '/assets/astrotrain/infographic_m4/btn_cohetes-reutilizables.jpg',
@@ -260,6 +266,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'propulsion-futuro',
+              bannerImage: '/assets/astro_train/infographic_m4/banner_propulsion-futuro.webp',
     title: 'Propulsión del Futuro',
     color: '#E46A6A',
     btnImage: '/assets/astrotrain/infographic_m4/btn_propulsion-futuro.jpg',
@@ -706,7 +713,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

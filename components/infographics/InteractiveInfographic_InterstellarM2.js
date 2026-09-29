@@ -83,6 +83,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'anatomia-agujero-negro',
+              bannerImage: '/assets/interstellar/infographic_m2/banner_anatomia-agujero-negro.webp',
     title: 'Anatomía de un Agujero Negro',
     color: '#FF6B35',
     btnImage: '/assets/interstellar/infographic_m2/btn_anatomia-agujero-negro.jpg',
@@ -102,6 +103,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'horizonte-sucesos',
+              bannerImage: '/assets/interstellar/infographic_m2/banner_horizonte-sucesos.webp',
     title: 'El Punto de No Retorno',
     color: '#F44336',
     btnImage: '/assets/interstellar/infographic_m2/btn_horizonte-sucesos.jpg',
@@ -121,6 +123,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'agujero-negro-kerr',
+              bannerImage: '/assets/interstellar/infographic_m2/banner_agujero-negro-kerr.webp',
     title: 'El Agujero Negro que Gira',
     color: '#AB47BC',
     btnImage: '/assets/interstellar/infographic_m2/btn_agujero-negro-kerr.jpg',
@@ -140,6 +143,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'frame-dragging',
+              bannerImage: '/assets/interstellar/infographic_m2/banner_frame-dragging.webp',
     title: 'Cuando el Espacio Gira Contigo',
     color: '#4FC3F7',
     btnImage: '/assets/interstellar/infographic_m2/btn_frame-dragging.jpg',
@@ -159,6 +163,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'disco-acrecion',
+              bannerImage: '/assets/interstellar/infographic_m2/banner_disco-acrecion.webp',
     title: 'El Anillo de Fuego',
     color: '#FF9800',
     btnImage: '/assets/interstellar/infographic_m2/btn_disco-acrecion.jpg',
@@ -178,6 +183,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'simulacion-gargantua',
+              bannerImage: '/assets/interstellar/infographic_m2/banner_simulacion-gargantua.webp',
     title: 'Gargantúa en la Computadora',
     color: '#7C4DFF',
     btnImage: '/assets/interstellar/infographic_m2/btn_simulacion-gargantua.jpg',
@@ -197,6 +203,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'singularidad',
+              bannerImage: '/assets/interstellar/infographic_m2/banner_singularidad.webp',
     title: 'El Centro del Misterio',
     color: '#00BCD4',
     btnImage: '/assets/interstellar/infographic_m2/btn_singularidad.jpg',
@@ -610,7 +617,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* â”€â”€â”€ Fast Fact â”€â”€â”€ */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '2rem', padding: '1.2rem',
             background: `linear-gradient(90deg, ${node.color}15, transparent)`,

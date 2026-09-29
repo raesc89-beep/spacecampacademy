@@ -80,6 +80,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'relojes-velocidad',
+              bannerImage: '/assets/interstellar/infographic_m3/banner_relojes-velocidad.webp',
     title: 'Relojes que se Atrasan',
     color: '#4FC3F7',
     btnImage: '/assets/interstellar/infographic_m3/btn_relojes-velocidad.jpg',
@@ -99,6 +100,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gemelos-einstein',
+              bannerImage: '/assets/interstellar/infographic_m3/banner_gemelos-einstein.webp',
     title: 'La Paradoja de los Gemelos',
     color: '#AB47BC',
     btnImage: '/assets/interstellar/infographic_m3/btn_gemelos-einstein.jpg',
@@ -118,6 +120,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dilatacion-gravitacional',
+              bannerImage: '/assets/interstellar/infographic_m3/banner_dilatacion-gravitacional.webp',
     title: 'La Gravedad Frena el Tiempo',
     color: '#FF6B35',
     btnImage: '/assets/interstellar/infographic_m3/btn_dilatacion-gravitacional.jpg',
@@ -137,6 +140,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gps-real',
+              bannerImage: '/assets/interstellar/infographic_m3/banner_gps-real.webp',
     title: 'Tu Celular Necesita a Einstein',
     color: '#26A69A',
     btnImage: '/assets/interstellar/infographic_m3/btn_gps-real.jpg',
@@ -156,6 +160,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'planeta-miller',
+              bannerImage: '/assets/interstellar/infographic_m3/banner_planeta-miller.webp',
     title: 'Una Hora = Siete Años',
     color: '#F44336',
     btnImage: '/assets/interstellar/infographic_m3/btn_planeta-miller.jpg',
@@ -175,6 +180,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paradoja-gemelos',
+              bannerImage: '/assets/interstellar/infographic_m3/banner_paradoja-gemelos.webp',
     title: '¿Quién Envejece Más?',
     color: '#7C4DFF',
     btnImage: '/assets/interstellar/infographic_m3/btn_paradoja-gemelos.jpg',
@@ -194,6 +200,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-crononauta',
+              bannerImage: '/assets/interstellar/infographic_m3/banner_futuro-crononauta.webp',
     title: 'Viajeros del Tiempo Reales',
     color: '#FF9800',
     btnImage: '/assets/interstellar/infographic_m3/btn_futuro-crononauta.jpg',
@@ -601,7 +608,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* â”€â”€â”€ Fast Fact â”€â”€â”€ */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '2rem', padding: '1.2rem',
             background: `linear-gradient(90deg, ${node.color}15, transparent)`,

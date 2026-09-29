@@ -137,6 +137,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'proyecto-mercury',
+              bannerImage: '/assets/pioneros/infographic_m3/banner_proyecto-mercury.webp',
     title: 'Proyecto Mercury',
     color: '#D87D4A',
     btnImage: '/assets/pioneros/infographic_m3/btn_proyecto-mercury.jpg',
@@ -164,6 +165,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'friendship-7',
+              bannerImage: '/assets/pioneros/infographic_m3/banner_friendship-7.webp',
     title: 'Friendship 7',
     color: '#D4B872',
     btnImage: '/assets/pioneros/infographic_m3/btn_friendship-7.jpg',
@@ -191,6 +193,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'vuelo-orbital',
+              bannerImage: '/assets/pioneros/infographic_m3/banner_vuelo-orbital.webp',
     title: 'El Vuelo Orbital',
     color: '#80DEEA',
     btnImage: '/assets/pioneros/infographic_m3/btn_vuelo-orbital.jpg',
@@ -218,6 +221,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'reentrada-critica',
+              bannerImage: '/assets/pioneros/infographic_m3/banner_reentrada-critica.webp',
     title: 'Reentrada Crítica',
     color: '#3949AB',
     btnImage: '/assets/pioneros/infographic_m3/btn_reentrada-critica.jpg',
@@ -245,6 +249,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-glenn',
+              bannerImage: '/assets/pioneros/infographic_m3/banner_legado-glenn.webp',
     title: 'Legado de Glenn',
     color: '#2C3E50',
     btnImage: '/assets/pioneros/infographic_m3/btn_legado-glenn.jpg',
@@ -272,6 +277,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'glenn-1998',
+              bannerImage: '/assets/pioneros/infographic_m3/banner_glenn-1998.webp',
     title: 'Glenn Regresa: 77 Años en Órbita',
     color: '#42A5F5',
     btnImage: '/assets/pioneros/infographic_m3/btn_glenn-1998.jpg',
@@ -291,6 +297,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'geopolitica-mercury',
+              bannerImage: '/assets/pioneros/infographic_m3/banner_geopolitica-mercury.webp',
     title: 'Mercury y la Guerra Fría: La Carrera Espacial como Arma',
     color: '#EF5350',
     btnImage: '/assets/pioneros/infographic_m3/btn_geopolitica-mercury.jpg',
@@ -717,7 +724,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {node.expandables && node.expandables.length > 0 && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '1.2rem', position: 'relative', zIndex: 2 }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {node.expandables.map((item, i) => (

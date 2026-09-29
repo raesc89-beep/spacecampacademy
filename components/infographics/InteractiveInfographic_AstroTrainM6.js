@@ -137,6 +137,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'artemis-regreso-luna',
+              bannerImage: '/assets/astro_train/infographic_m6/banner_artemis-regreso-luna.webp',
     title: 'Artemis: Regreso a la Luna',
     color: '#C44B4B',
     btnImage: '/assets/astrotrain/infographic_m6/btn_artemis-regreso-luna.jpg',
@@ -156,6 +157,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'marte-proximo-paso',
+              bannerImage: '/assets/astro_train/infographic_m6/banner_marte-proximo-paso.webp',
     title: 'Marte: El Próximo Paso',
     color: '#D45A5A',
     btnImage: '/assets/astrotrain/infographic_m6/btn_marte-proximo-paso.jpg',
@@ -175,6 +177,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'starship-revolucion',
+              bannerImage: '/assets/astro_train/infographic_m6/banner_starship-revolucion.webp',
     title: 'Starship y la Revolución',
     color: '#A8B5C0',
     btnImage: '/assets/astrotrain/infographic_m6/btn_starship-revolucion.jpg',
@@ -194,6 +197,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'estaciones-comerciales',
+              bannerImage: '/assets/astro_train/infographic_m6/banner_estaciones-comerciales.webp',
     title: 'Estaciones Espaciales Comerciales',
     color: '#96A3AE',
     btnImage: '/assets/astrotrain/infographic_m6/btn_estaciones-comerciales.jpg',
@@ -213,6 +217,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'turismo-espacial',
+              bannerImage: '/assets/astro_train/infographic_m6/banner_turismo-espacial.webp',
     title: 'Turismo Espacial',
     color: '#B43A3A',
     btnImage: '/assets/astrotrain/infographic_m6/btn_turismo-espacial.jpg',
@@ -232,6 +237,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mineria-asteroides',
+              bannerImage: '/assets/astro_train/infographic_m6/banner_mineria-asteroides.webp',
     title: 'Minería de Asteroides',
     color: '#8491A0',
     btnImage: '/assets/astrotrain/infographic_m6/btn_mineria-asteroides.jpg',
@@ -251,6 +257,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'colonias-espaciales',
+              bannerImage: '/assets/astro_train/infographic_m6/banner_colonias-espaciales.webp',
     title: 'Colonias Espaciales',
     color: '#E46A6A',
     btnImage: '/assets/astrotrain/infographic_m6/btn_colonias-espaciales.jpg',
@@ -697,7 +704,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

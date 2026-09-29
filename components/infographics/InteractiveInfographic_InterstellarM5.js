@@ -88,6 +88,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'dimensiones-geometria',
+              bannerImage: '/assets/interstellar/infographic_m5/banner_dimensiones-geometria.webp',
     title: 'De Punto a Hipercubo',
     color: '#7C4DFF',
     btnImage: '/assets/interstellar/infographic_m5/btn_dimensiones-geometria.jpg',
@@ -107,6 +108,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'quinta-dimension',
+              bannerImage: '/assets/interstellar/infographic_m5/banner_quinta-dimension.webp',
     title: 'La Quinta Dimensión',
     color: '#4FC3F7',
     btnImage: '/assets/interstellar/infographic_m5/btn_quinta-dimension.jpg',
@@ -126,6 +128,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'teoria-cuerdas',
+              bannerImage: '/assets/interstellar/infographic_m5/banner_teoria-cuerdas.webp',
     title: 'Cuerdas Vibrantes',
     color: '#FF6B35',
     btnImage: '/assets/interstellar/infographic_m5/btn_teoria-cuerdas.jpg',
@@ -145,6 +148,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'branas-universo',
+              bannerImage: '/assets/interstellar/infographic_m5/banner_branas-universo.webp',
     title: 'Universos en Rebanadas',
     color: '#AB47BC',
     btnImage: '/assets/interstellar/infographic_m5/btn_branas-universo.jpg',
@@ -164,6 +168,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gravedad-transdimensional',
+              bannerImage: '/assets/interstellar/infographic_m5/banner_gravedad-transdimensional.webp',
     title: 'La Gravedad Cruza Dimensiones',
     color: '#FF9800',
     btnImage: '/assets/interstellar/infographic_m5/btn_gravedad-transdimensional.jpg',
@@ -183,6 +188,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'teseracto-cooper',
+              bannerImage: '/assets/interstellar/infographic_m5/banner_teseracto-cooper.webp',
     title: 'El Teseracto de Cooper',
     color: '#F44336',
     btnImage: '/assets/interstellar/infographic_m5/btn_teseracto-cooper.jpg',
@@ -202,6 +208,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mensaje-tiempo',
+              bannerImage: '/assets/interstellar/infographic_m5/banner_mensaje-tiempo.webp',
     title: 'Un Mensaje a Través del Tiempo',
     color: '#26A69A',
     btnImage: '/assets/interstellar/infographic_m5/btn_mensaje-tiempo.jpg',
@@ -639,7 +646,21 @@ export default function InteractiveInfographic_InterstellarM5() {
                     ))}
                   </div>
 
-                  {/* Fact Box */}
+                  {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {/* Fact Box */}
                   <div style={{
                     marginTop: '2rem',
                     padding: '1.5rem',

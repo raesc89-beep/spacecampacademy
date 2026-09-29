@@ -92,6 +92,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'tectonica-de-placas',
+              bannerImage: '/assets/rocosos/infographic_m4/banner_tectonica-de-placas.webp',
     title: 'Tectónica de Placas',
     color: '#2A9D8F',
     btnImage: '/assets/rocosos/infographic_m4/btn_tectonica-de-placas.jpg',
@@ -111,6 +112,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'escudo-magnetico',
+              bannerImage: '/assets/rocosos/infographic_m4/banner_escudo-magnetico.webp',
     title: 'Escudo Magnético',
     color: '#48CAE4',
     btnImage: '/assets/rocosos/infographic_m4/btn_escudo-magnetico.jpg',
@@ -130,6 +132,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'termostato-carbono',
+              bannerImage: '/assets/rocosos/infographic_m4/banner_termostato-carbono.webp',
     title: 'Termostato Global',
     color: '#52B788',
     btnImage: '/assets/rocosos/infographic_m4/btn_termostato-carbono.jpg',
@@ -149,6 +152,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'oceanos-y-agua',
+              bannerImage: '/assets/rocosos/infographic_m4/banner_oceanos-y-agua.webp',
     title: 'Océanos Líquidos',
     color: '#0077B6',
     btnImage: '/assets/rocosos/infographic_m4/btn_oceanos-y-agua.jpg',
@@ -168,6 +172,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'la-luna-estabilizadora',
+              bannerImage: '/assets/rocosos/infographic_m4/banner_la-luna-estabilizadora.webp',
     title: 'La Luna Estabilizadora',
     color: '#E9C46A',
     btnImage: '/assets/rocosos/infographic_m4/btn_la-luna-estabilizadora.jpg',
@@ -187,6 +192,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'oxigenacion-biosfera',
+              bannerImage: '/assets/rocosos/infographic_m4/banner_oxigenacion-biosfera.webp',
     title: 'La Gran Oxidación',
     color: '#70E000',
     btnImage: '/assets/rocosos/infographic_m4/btn_oxigenacion-biosfera.jpg',
@@ -206,6 +212,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'oasis-habitabilidad',
+              bannerImage: '/assets/rocosos/infographic_m4/banner_oasis-habitabilidad.webp',
     title: 'Ecuación de Habitabilidad',
     color: '#9B5DE5',
     btnImage: '/assets/rocosos/infographic_m4/btn_oasis-habitabilidad.jpg',
@@ -635,7 +642,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Sparkles size={18} style={{ color: node.color }} />

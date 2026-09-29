@@ -92,6 +92,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'invernadero-desbocado',
+              bannerImage: '/assets/rocosos/infographic_m3/banner_invernadero-desbocado.webp',
     title: 'Invernadero Desbocado',
     color: '#FF595E',
     btnImage: '/assets/rocosos/infographic_m3/btn_invernadero-desbocado.jpg',
@@ -111,6 +112,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'atmosfera-aplastante',
+              bannerImage: '/assets/rocosos/infographic_m3/banner_atmosfera-aplastante.webp',
     title: 'Atmósfera Aplastante',
     color: '#FFCA3A',
     btnImage: '/assets/rocosos/infographic_m3/btn_atmosfera-aplastante.jpg',
@@ -130,6 +132,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nubes-acido',
+              bannerImage: '/assets/rocosos/infographic_m3/banner_nubes-acido.webp',
     title: 'Nubes de Ácido Sulfúrico',
     color: '#8AC926',
     btnImage: '/assets/rocosos/infographic_m3/btn_nubes-acido.jpg',
@@ -149,6 +152,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'vulcanismo-venusiano',
+              bannerImage: '/assets/rocosos/infographic_m3/banner_vulcanismo-venusiano.webp',
     title: 'Vulcanismo Global',
     color: '#E07A5F',
     btnImage: '/assets/rocosos/infographic_m3/btn_vulcanismo-venusiano.jpg',
@@ -168,6 +172,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rotacion-retrograda',
+              bannerImage: '/assets/rocosos/infographic_m3/banner_rotacion-retrograda.webp',
     title: 'Rotación Retrógrada',
     color: '#1982C4',
     btnImage: '/assets/rocosos/infographic_m3/btn_rotacion-retrograda.jpg',
@@ -187,6 +192,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'agua-evaporada',
+              bannerImage: '/assets/rocosos/infographic_m3/banner_agua-evaporada.webp',
     title: 'El Agua Evaporada',
     color: '#6A4C93',
     btnImage: '/assets/rocosos/infographic_m3/btn_agua-evaporada.jpg',
@@ -206,6 +212,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sondas-venera',
+              bannerImage: '/assets/rocosos/infographic_m3/banner_sondas-venera.webp',
     title: 'Sondas Venera y VERITAS',
     color: '#F4A261',
     btnImage: '/assets/rocosos/infographic_m3/btn_sondas-venera.jpg',
@@ -635,7 +642,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{ marginTop: '1.5rem', padding: '1.2rem', background: `linear-gradient(90deg, ${node.color}15, transparent)`, borderRadius: '16px', border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Sparkles size={18} style={{ color: node.color }} />
