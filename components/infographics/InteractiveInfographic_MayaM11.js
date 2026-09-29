@@ -210,6 +210,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'palenque-ciudad',
+              bannerImage: '/assets/maya/infographic_m11/banner_palenque-ciudad.webp',
     title: "La Ciudad: Lakamha",
     color: "#1B5E20",
     btnImage: '/assets/maya/infographic_m11/btn_palenque-ciudad.jpg',
@@ -237,6 +238,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pakal-tumba',
+              bannerImage: '/assets/maya/infographic_m11/banner_pakal-tumba.webp',
     title: "La Tumba de Pakal",
     color: "#009688",
     btnImage: '/assets/maya/infographic_m11/btn_pakal-tumba.jpg',
@@ -264,6 +266,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tapa-sarcofago',
+              bannerImage: '/assets/maya/infographic_m11/banner_tapa-sarcofago.webp',
     title: "La Tapa del Sarcófago",
     color: "#BF360C",
     btnImage: '/assets/maya/infographic_m11/btn_tapa-sarcofago.jpg',
@@ -291,6 +294,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'torre-observatorio',
+              bannerImage: '/assets/maya/infographic_m11/banner_torre-observatorio.webp',
     title: "La Torre del Palacio",
     color: "#FFC107",
     btnImage: '/assets/maya/infographic_m11/btn_torre-observatorio.jpg',
@@ -318,6 +322,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'inscripciones-templo',
+              bannerImage: '/assets/maya/infographic_m11/banner_inscripciones-templo.webp',
     title: "El Templo de las Inscripciones",
     color: "#4A148C",
     btnImage: '/assets/maya/infographic_m11/btn_inscripciones-templo.jpg',
@@ -345,6 +350,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'alineacion-solsticio',
+              bannerImage: '/assets/maya/infographic_m11/banner_alineacion-solsticio.webp',
     title: "Alineación del Solsticio",
     color: "#0288D1",
     btnImage: '/assets/maya/infographic_m11/btn_alineacion-solsticio.jpg',
@@ -372,6 +378,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-palenque',
+              bannerImage: '/assets/maya/infographic_m11/banner_legado-palenque.webp',
     title: "El Legado Moderno",
     color: "#78909C",
     btnImage: '/assets/maya/infographic_m11/btn_legado-palenque.jpg',
@@ -1022,7 +1029,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* ─── Fun Fact ─── */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div
             style={{
               marginTop: "2rem",
