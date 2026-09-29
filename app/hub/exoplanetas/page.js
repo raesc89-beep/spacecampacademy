@@ -6,10 +6,10 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const EXO_MODULES = [
-  { id: 'exoplanetas_m1', titleEs: 'Fundamentos y Tránsito', color: '#9370DB', link: '/course/exoplanetas_m1', icon: '/assets/badges/exoplanetas_badge.png', coords: { left: '20%', top: '30%' } },
-  { id: 'exoplanetas_m2', titleEs: 'Tipos de Mundos', color: '#ffcc00', link: '/course/exoplanetas_m2', icon: '/assets/badges/exoplanetas_badge.png', coords: { left: '40%', top: '60%' } },
-  { id: 'exoplanetas_m3', titleEs: 'Búsqueda y Telescopios', color: '#00ffcc', link: '/course/exoplanetas_m3', icon: '/assets/badges/exoplanetas_badge.png', coords: { left: '60%', top: '30%' } },
-  { id: 'exoplanetas_m4', titleEs: 'Atmósferas y Biofirmas', color: '#ff00ff', link: '/course/exoplanetas_m4', icon: '/assets/badges/exoplanetas_badge.png', coords: { left: '80%', top: '60%' } },
+  { id: 'exoplanetas_m1', titleEs: 'Fundamentos y Tránsito', color: '#9370DB', link: '/course/exoplanetas_m1', icon: '/assets/badges/exoplanetas_badge.webp', coords: { left: '20%', top: '30%' } },
+  { id: 'exoplanetas_m2', titleEs: 'Tipos de Mundos', color: '#ffcc00', link: '/course/exoplanetas_m2', icon: '/assets/badges/exoplanetas_badge.webp', coords: { left: '40%', top: '60%' } },
+  { id: 'exoplanetas_m3', titleEs: 'Búsqueda y Telescopios', color: '#00ffcc', link: '/course/exoplanetas_m3', icon: '/assets/badges/exoplanetas_badge.webp', coords: { left: '60%', top: '30%' } },
+  { id: 'exoplanetas_m4', titleEs: 'Atmósferas y Biofirmas', color: '#ff00ff', link: '/course/exoplanetas_m4', icon: '/assets/badges/exoplanetas_badge.webp', coords: { left: '80%', top: '60%' } },
 ];
 
 function ExoNode({ mod, idx, isCompleted, isPlayable }) {

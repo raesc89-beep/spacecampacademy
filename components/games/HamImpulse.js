@@ -389,7 +389,7 @@ export default function HamImpulse({ onComplete }) {
           }}
           style={{ zIndex: 10, position: 'relative' }}
         >
-          <img src="/assets/animales/ham_ship_3d.png" alt="Ham Ship" style={{
+          <img src="/assets/animales/ham_ship_3d.webp" alt="Ham Ship" style={{
             width: '110px',
             height: 'auto',
             filter: successCount > 0 ? 'drop-shadow(0 0 12px rgba(0,228,255,0.5))' : 'none',

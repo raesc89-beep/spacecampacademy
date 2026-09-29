@@ -81,7 +81,7 @@ export default function Apollo8Hub() {
       {/* Dynamic Background */}
       <div style={{
         position: 'absolute', inset: 0,
-        background: `url('/assets/apollo11/vab_cape_canaveral_empty.png') center/cover no-repeat`,
+        background: `url('/assets/apollo11/vab_cape_canaveral_empty.webp') center/cover no-repeat`,
         opacity: 0.6, zIndex: 0, filter: 'hue-rotate(180deg)' // To differentiate from Apollo 11
       }} />
 

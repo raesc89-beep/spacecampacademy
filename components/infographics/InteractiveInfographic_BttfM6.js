@@ -143,8 +143,8 @@ const INFOGRAPHIC_NODES = [
     id: 'hg-wells',
     title: 'La Primera Máquina del Tiempo',
     color: '#FF6B35',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_wells.png',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_wells.png',
+    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_wells.webp',
+    image: '/assets/bttf/infographic_maquina_tiempo/hero_wells.webp',
     content: [
       'En 1895, el escritor inglés H.G. Wells publicó \'La Máquina del Tiempo\', cambiando la concepción del viaje temporal. Wells imaginó un dispositivo mecánico capaz de avanzar y retroceder en el tiempo de forma controlada.',
       'Wells escribió esta obra diez años antes de que Einstein publicara su teoría de la relatividad. En ese momento, la ciencia consideraba que el tiempo era absoluto. Wells anticipó la idea de que el tiempo podía ser flexible.',
@@ -155,7 +155,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En \'Regreso al Futuro\', Doc Brown es un inventor excéntrico que crea una máquina del tiempo en su garaje. Esto es un homenaje directo a H.G. Wells: un genio solitario que construye algo imposible. La diferencia es que Doc usa un DeLorean y Wells imaginó una silla con palancas de cristal. ¡Pero la idea fundamental es idéntica!' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'H.G. Wells predijo los tanques de guerra (en \'La Guerra de los Mundos\', 1898), los bombardeos aéreos (en \'La Guerra en el Aire\', 1908) y la energía nuclear (en \'The World Set Free\', 1914, ¡30 años antes de Hiroshima!). Winston Churchill lo consultaba sobre el futuro de la tecnología militar.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_hg-wells.png',
+    bannerImage: '/assets/bttf/infographic_m6/banner_hg-wells.webp',
     bannerCaption: 'H.G. Wells y su Máquina del Tiempo: el origen literario del viaje temporal',
     fact: 'La novela \'La Máquina del Tiempo\'de Wells se ha adaptado al cine dos veces (1960 y 2002), pero ninguna captura la verdadera intención de Wells: era una crítica social sobre la desigualdad de clases en la Inglaterra victoriana. Los Eloi representaban a la aristocracia ociosa y los Morlocks a la clase trabajadora. ¡La ciencia ficción como espejo de la sociedad!'
   },
@@ -163,8 +163,8 @@ const INFOGRAPHIC_NODES = [
     id: 'agujeros-gusano',
     title: 'Agujeros de Gusano',
     color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gusano.png',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_gusano.png',
+    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gusano.webp',
+    image: '/assets/bttf/infographic_maquina_tiempo/hero_gusano.webp',
     content: [
       'Un agujero de gusano es un atajo teórico a través del espacio-tiempo, que conectaría dos puntos distantes uniendo áreas curvadas del tejido espacial.',
       'En 1935, Einstein y Nathan Rosen propusieron esta teoría, conocida como \'puentes Einstein-Rosen\'. Postularon que la curvatura extrema del espacio-tiempo podría crear un túnel entre dos regiones separadas.',
@@ -175,7 +175,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En BTTF, el condensador de flujo crea una \'ruptura\'en el espacio-tiempo que el DeLorean atraviesa a 88 mph. Aunque la película no usa la palabra \'agujero de gusano\', la idea de un puente que conecta dos puntos distantes en el tiempo se basa en este mismo principio teórico.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Kip Thorne escribió el primer artículo científico serio sobre agujeros de gusano como máquinas del tiempo en 1988... ¡inspirado por una pregunta de Carl Sagan! Sagan estaba escribiendo su novela \'Contact\'y necesitaba un método científicamente plausible para viajar instantáneamente. Le pidió ayuda a Thorne, y de esa consulta entre amigos salió un artículo que cambió la física teórica.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_agujeros-gusano.png',
+    bannerImage: '/assets/bttf/infographic_m6/banner_agujeros-gusano.webp',
     bannerCaption: 'Agujeros de gusano traversables: túneles teóricos a través del espacio-tiempo',
     fact: 'En 2019, los físicos Juan Maldacena y Alexei Milekhin propusieron un agujero de gusano \'humanamente atravesable\'que NO requeriría materia exótica, solo geometría del espacio-tiempo muy específica. El viaje tomaría menos de un segundo para el viajero, pero miles de años pasarían en el exterior. ¡Es un viaje al futuro, no al pasado!'
   },
@@ -183,8 +183,8 @@ const INFOGRAPHIC_NODES = [
     id: 'motor-alcubierre',
     title: 'El Motor Warp',
     color: '#00E5FF',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_warp.png',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_warp.png',
+    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_warp.webp',
+    image: '/assets/bttf/infographic_maquina_tiempo/hero_warp.webp',
     content: [
       'En 1994, el físico Miguel Alcubierre propuso un modelo matemático que permitiría viajar a velocidades superiores a la de la luz sin violar la teoría de la relatividad general de Einstein.',
       'El motor de curvatura funcionaría expandiendo el espacio detrás de una nave y contrayéndolo por delante. La nave permanecería inmóvil dentro de una burbuja espaciotemporal, mientras que el espacio a su alrededor se desplazaría.',
@@ -195,7 +195,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'El DeLorean no usa un motor warp, pero la idea de necesitar una velocidad específica (88 mph) para \'activar\'el viaje en el tiempo tiene una analogía real: en el motor Alcubierre, la burbuja necesita alcanzar una configuración energética precisa para formarse. Es como si hubiera un \'umbral\'que debes cruzar â€” ¡exactamente como las 88 millas por hora!' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Miguel Alcubierre, el físico mexicano que propuso el motor warp, se inspiró DIRECTAMENTE en Star Trek. Era fan de la serie cuando era niño en la Ciudad de México. Años después, como estudiante de doctorado en Gales, se preguntó: \'¿Podría la relatividad general permitir algo así?\'La respuesta fue sí. ¡De niño fan a físico que cambió el campo!' }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_motor-alcubierre.png',
+    bannerImage: '/assets/bttf/infographic_m6/banner_motor-alcubierre.webp',
     bannerCaption: 'El motor Alcubierre: viaje superlumínico comprimiendo el espacio-tiempo',
     fact: 'En 2021, el físico Erik Lentz publicó un artículo proponiendo una burbuja warp que NO necesitaría materia exótica, solo energía positiva organizada de una manera específica. Aunque necesitaría la energía equivalente a cientos de masas solares, es la primera vez que se elimina el requisito de materia exótica. La comunidad científica lo debate activamente.'
   },
@@ -203,8 +203,8 @@ const INFOGRAPHIC_NODES = [
     id: 'delorean-ingenieria',
     title: 'Ingeniería del DeLorean',
     color: '#FFA726',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_delorean.png',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_delorean.png',
+    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_delorean.webp',
+    image: '/assets/bttf/infographic_maquina_tiempo/hero_delorean.webp',
     content: [
       'El DeLorean DMC-12 fue desarrollado por John DeLorean, quien estableció su fábrica en Irlanda del Norte con apoyo del gobierno británico.',
       'Su carrocería está fabricada en acero inoxidable sin pintar. Este material contiene cromo, el cual forma una capa de óxido que previene la corrosión.',
@@ -215,7 +215,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'El guion original de BTTF tenía la máquina del tiempo como un REFRIGERADOR, no un coche. Steven Spielberg (productor ejecutivo) temió que los niños se encerraran en refrigeradores imitando a Marty, así que los guionistas lo cambiaron a un coche. Eligieron el DeLorean porque su carrocería de acero y puertas de gaviota ya parecían una nave espacial.' },
       { label: 'Dato Científico', icon: 'atom', text: 'A 88 mph (141 km/h), el DeLorean enfrenta una fuerza de arrastre aerodinámico de aproximadamente 450 Newtons. Su coeficiente aerodinámico (Cd) es de 0.35 â€” no es terrible, pero tampoco elegante. Para comparar: un Tesla Model S tiene 0.208. El motor V6 PRV de 2.8 litros del DeLorean producía solo 130 HP, lo justo para alcanzar 88 mph... ¡pero sin sobrar potencia!' }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_delorean-ingenieria.png',
+    bannerImage: '/assets/bttf/infographic_m6/banner_delorean-ingenieria.webp',
     bannerCaption: 'La ingeniería real del DeLorean DMC-12: el auto que inspiro a la máquina del tiempo',
     fact: 'En la vida real, el DeLorean era un coche bastante lento. Su motor V6 de 130 caballos (originalmente iba a ser un Wankel rotativo) lo aceleraba de 0 a 100 km/h en 10.5 segundos â€” más lento que un Honda Civic actual. La ironía es que la máquina del tiempo más famosa del cine necesita velocidad para funcionar, ¡pero el coche real era notoriamente lento!'
   },
@@ -223,8 +223,8 @@ const INFOGRAPHIC_NODES = [
     id: 'condensador-flujo',
     title: 'El Condensador de Flujo',
     color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_condensador.png',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_condensador.png',
+    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_condensador.webp',
+    image: '/assets/bttf/infographic_maquina_tiempo/hero_condensador.webp',
     content: [
       'En la ficción, el condensador de flujo permite el viaje en el tiempo. Según la historia, Doc Brown ideó su diseño en forma de "Y" invertida tras un accidente doméstico en 1955.',
       'En la física, el flujo electromagnético es una magnitud real que cuantifica el campo magnético a través de una superficie. Sus variaciones pueden inducir corriente eléctrica, principio base de los generadores.',
@@ -235,7 +235,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En los primeros borradores del guion de "Regreso al Futuro", la máquina del tiempo era un refrigerador forrado de plomo. Para obtener la energía inmensa necesaria para el viaje temporal, Marty debía llevar el refrigerador al centro de una prueba de explosión nuclear en Nevada.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'En 2014, científicos de la Universidad de Queensland, Australia, crearon un dispositivo real que llamaron \'capacitor de flujo cuántico\'(quantum flux capacitor). No viaja en el tiempo, pero puede hacer que la información cuántica circule en dos direcciones simultáneamente â€” algo que las computadoras cuánticas necesitan. Los científicos reconocieron que el nombre fue un homenaje deliberado a BTTF.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_condensador-flujo.png',
+    bannerImage: '/assets/bttf/infographic_m6/banner_condensador-flujo.webp',
     bannerCaption: 'El condensador de flujo: la pieza que hace posible el viaje en el tiempo',
     fact: 'El diseño en \'Y\'del condensador de flujo fue dibujado por el diseñador de producción Lawrence G. Paull. La forma tiene tres \'brazos\'que convergen en un centro brillante. Curiosamente, algunos chips de computadora modernos tienen una topología similar para distribuir energía. El condensador de flujo ficción inspiró investigación real en distribución de flujo energético.'
   },
@@ -243,8 +243,8 @@ const INFOGRAPHIC_NODES = [
     id: 'turistas-futuro',
     title: '¿Dónde Están los Turistas?',
     color: '#66BB6A',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_turistas.png',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_turistas.png',
+    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_turistas.webp',
+    image: '/assets/bttf/infographic_maquina_tiempo/hero_turistas.webp',
     content: [
       'La paradoja sobre la ausencia de turistas temporales sugiere que, si el viaje al pasado fuera posible, deberíamos haber recibido visitantes del futuro.',
       'En 2009, el físico Stephen Hawking organizó una recepción para viajeros en el tiempo, enviando las invitaciones después del evento. Ningún invitado asistió, lo que ilustró esta paradoja.',
@@ -255,7 +255,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En BTTF, la máquina del tiempo SOLO transporta a quien está dentro del DeLorean. No hay \'turistas\'aleatorios apareciendo del futuro porque solo existe UNA máquina (la de Doc). Cuando Biff roba el DeLorean en BTTF II, es la primera vez que alguien más la usa â€” y crea un desastre temporal. La película ilustra perfectamente por qué controlar el acceso a una máquina del tiempo es crucial.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La paradoja del turista tiene una solución matemática elegante llamada \'Principio de Autoconsistencia de Novikov\'(1980s): las leyes de la física solo permitirían viajes al pasado que NO crean paradojas. No podrías matar a tu abuelo ni crear contradicciones. El universo te \'forzaría\'a actuar de manera consistente. Es como si la realidad tuviera un auto-corrector.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_turistas-futuro.png',
+    bannerImage: '/assets/bttf/infographic_m6/banner_turistas-futuro.webp',
     bannerCaption: 'El turismo temporal del futuro: visitar la historia sin cambiarla',
     fact: 'Hawking consideró su fiesta vacía como \'evidencia experimental\'(con humor) contra el viaje al pasado. Pero hay un detalle delicioso: un viajero del futuro inteligente SABRÍA que ir a la fiesta de Hawking confirmaría públicamente el viaje temporal, con consecuencias impredecibles. ¡Quizás la razón de no ir a la fiesta es que sería la peor decisión posible para un viajero del tiempo!'
   },
@@ -263,8 +263,8 @@ const INFOGRAPHIC_NODES = [
     id: 'gobernanza-temporal',
     title: 'Gobernanza del Tiempo',
     color: '#FF7043',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gobernanza.png',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_gobernanza.png',
+    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gobernanza.webp',
+    image: '/assets/bttf/infographic_maquina_tiempo/hero_gobernanza.webp',
     content: [
       'Si se desarrollara tecnología para viajar en el tiempo, surgirían importantes cuestiones sobre su control y acceso, planteando desafíos éticos complejos.',
       'La escala de Kardashev clasifica a las civilizaciones según su uso de energía. Construir una máquina del tiempo requeriría un control energético muy superior al nivel actual de la humanidad.',
@@ -275,7 +275,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown destruye el DeLorean al final de BTTF III porque comprende que la máquina del tiempo es demasiado peligrosa. Es una decisión de \'gobernanza temporal\'personal: elige que nadie más pueda viajar en el tiempo. Sin embargo, Doc construye un NUEVO vehículo temporal (la locomotora) â€” sugiriendo que la tentación del viaje temporal es irresistible, incluso para su inventor.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'La humanidad consume actualmente unos 18 terawatts de energía total (toda la electricidad, transporte, industria del planeta). Una civilización Tipo I necesitaría 174 petawatts (10,000 veces más). Una Tipo II usaría la energía total del Sol: 3.8 × 10²â¶ watts. Para tener perspectiva: la energía que produce el Sol en UN SEGUNDO bastaría para alimentar toda la civilización humana actual durante 500,000 años.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_gobernanza-temporal.png',
+    bannerImage: '/assets/bttf/infographic_m6/banner_gobernanza-temporal.webp',
     bannerCaption: 'La gobernanza ética del viaje temporal: leyes y organismos del futuro',
     fact: 'En 2004, el astrofísico Richard Gott III calculó que la probabilidad de que nuestra civilización sobreviva lo suficiente para construir una máquina del tiempo es de menos del 5%, usando el \'Argumento del Juicio Final\'(Doomsday Argument). Su razonamiento estadístico sugiere que el hecho de que existamos tan temprano en la historia de la humanidad hace improbable que la humanidad dure millones de años más. ¡Demoledor pero fascinante!'
   }

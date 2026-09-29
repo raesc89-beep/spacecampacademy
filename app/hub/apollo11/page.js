@@ -12,32 +12,32 @@ const APOLLO_MODULES = [
   {
     id: 'apollo11_m1', titleEs: 'El Cohete Saturn V', link: '/course/apollo11_m1',
     color: '#FF6B35', coords: { left: '20%', top: '80%' },
-    icon: '/assets/apollo11/m1_launch.png',
+    icon: '/assets/apollo11/m1_launch.webp',
   },
   {
     id: 'apollo11_m2', titleEs: 'Rumbo a la Luna', link: '/course/apollo11_m2',
     color: '#00C2FF', coords: { left: '25%', top: '55%' },
-    icon: '/assets/apollo11/m2_trajectory.png',
+    icon: '/assets/apollo11/m2_trajectory.webp',
   },
   {
     id: 'apollo11_m3', titleEs: 'Descenso del Águila', link: '/course/apollo11_m3',
     color: '#C0E8FF', coords: { left: '40%', top: '35%' },
-    icon: '/assets/apollo11/m3_eagle.png',
+    icon: '/assets/apollo11/m3_eagle.webp',
   },
   {
     id: 'apollo11_m4', titleEs: 'El Primer Paso', link: '/course/apollo11_m4',
     color: '#F5D020', coords: { left: '60%', top: '35%' },
-    icon: '/assets/apollo11/m4_moonwalk.png',
+    icon: '/assets/apollo11/m4_moonwalk.webp',
   },
   {
     id: 'apollo11_m5', titleEs: 'Regreso a Órbita', link: '/course/apollo11_m5',
     color: '#A8FF78', coords: { left: '75%', top: '55%' },
-    icon: '/assets/apollo11/m5_ascent.png',
+    icon: '/assets/apollo11/m5_ascent.webp',
   },
   {
     id: 'apollo11_m6', titleEs: 'Amerizaje y Triunfo', link: '/course/apollo11_m6',
     color: '#38B6FF', coords: { left: '80%', top: '80%' },
-    icon: '/assets/apollo11/m6_splashdown.png',
+    icon: '/assets/apollo11/m6_splashdown.webp',
   },
 ];
 
@@ -237,7 +237,7 @@ export default function Apollo11Hub() {
       {/* Canvas Principal */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        background: `url('/assets/apollo11/vab_cape_canaveral_empty.png') center/cover no-repeat`,
+        background: `url('/assets/apollo11/vab_cape_canaveral_empty.webp') center/cover no-repeat`,
       }}>
         {/* Vignette */}
         <div style={{

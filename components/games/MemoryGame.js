@@ -5,12 +5,12 @@ import { Star, RotateCcw } from 'lucide-react';
 
 // Generamos las cartas a partir de las imágenes reales de planetas de Space Camp
 const cardTypes = [
-  { id: 'earth', img: '/assets/cartoon_earth.png', bg: '#2A82D7' },
-  { id: 'mars', img: '/assets/cartoon_mars.png', bg: '#E25A3D' },
-  { id: 'jupiter', img: '/assets/cartoon_jupiter.png', bg: '#D29A6A' },
-  { id: 'saturn', img: '/assets/cartoon_saturn.png', bg: '#E8D08D' },
-  { id: 'pluto', img: '/assets/cartoon_pluto.png', bg: '#D1A3B4' },
-  { id: 'sun', img: '/assets/cartoon_sun.png', bg: '#FFB800' },
+  { id: 'earth', img: '/assets/cartoon_earth.webp', bg: '#2A82D7' },
+  { id: 'mars', img: '/assets/cartoon_mars.webp', bg: '#E25A3D' },
+  { id: 'jupiter', img: '/assets/cartoon_jupiter.webp', bg: '#D29A6A' },
+  { id: 'saturn', img: '/assets/cartoon_saturn.webp', bg: '#E8D08D' },
+  { id: 'pluto', img: '/assets/cartoon_pluto.webp', bg: '#D1A3B4' },
+  { id: 'sun', img: '/assets/cartoon_sun.webp', bg: '#FFB800' },
 ];
 
 export default function MemoryGame({ onComplete }) {

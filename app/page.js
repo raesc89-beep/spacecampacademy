@@ -20,8 +20,8 @@ const COURSES = [
     glow: "rgba(0,228,255,0.25)",
     items: [
       { name: "Sistema Solar", desc: "Viaja a cada planeta del sistema solar con datos reales de la NASA", img: "/assets/rocosos/module_1.png", href: "/hub/solar-system", modules: 9 },
-      { name: "Pioneros del Cosmos", desc: "Gagarin, Glenn, Tereshkova — los heroes que abrieron el camino", img: "/assets/pioneros/hub_alan.png", href: "/hub/pioneros", modules: 7 },
-      { name: "Animales en el Espacio", desc: "Ham, Laika y los animales que fueron primero que nosotros", img: "/assets/animales/ham_ship_3d.png", href: "/hub/animales", modules: 4 },
+      { name: "Pioneros del Cosmos", desc: "Gagarin, Glenn, Tereshkova — los heroes que abrieron el camino", img: "/assets/pioneros/hub_alan.webp", href: "/hub/pioneros", modules: 7 },
+      { name: "Animales en el Espacio", desc: "Ham, Laika y los animales que fueron primero que nosotros", img: "/assets/animales/ham_ship_3d.webp", href: "/hub/animales", modules: 4 },
       { name: "Robots en el Espacio", desc: "Rovers, sondas y satelites — la exploracion sin humanos", img: "/assets/robots/module_1.png", href: "/hub/robots-espacio", modules: 6 },
     ],
   },
@@ -31,7 +31,7 @@ const COURSES = [
     color: "#FFD700",
     glow: "rgba(255,215,0,0.25)",
     items: [
-      { name: "Interstellar", desc: "Agujeros negros, relatividad y viaje interestelar — la ciencia real detras", img: "/assets/interstellar/gargantua_bg.png", href: "/hub/interstellar", modules: 5 },
+      { name: "Interstellar", desc: "Agujeros negros, relatividad y viaje interestelar — la ciencia real detras", img: "/assets/interstellar/gargantua_bg.webp", href: "/hub/interstellar", modules: 5 },
       { name: "Star Wars", desc: "Fisica de hyperspace, planetas reales y tecnologia espacial", img: "/assets/starwars/banner_tatooine.png", href: "/hub/star-wars", modules: 9 },
       { name: "Arrival — La Llegada", desc: "Xenolinguistica, primer contacto y fisica del tiempo", img: "/assets/ciencia_arrival/infographic_m1/banner_xenolinguistica.png", href: "/hub/arrival-ciencia", modules: 6 },
       { name: "Volver al Futuro", desc: "Maquinas del tiempo, paradojas y ciencia cuantica", img: "/assets/bttf/module_1.png", href: "/hub/bttf", modules: 7 },
@@ -43,7 +43,7 @@ const COURSES = [
     color: "#C52A85",
     glow: "rgba(197,42,133,0.25)",
     items: [
-      { name: "Agujeros de Gusano", desc: "Wormholes, geometria del espacio-tiempo y viaje instantaneo", img: "/assets/interstellar/gargantua_bg.png", href: "/hub/agujeros-gusano", modules: 5 },
+      { name: "Agujeros de Gusano", desc: "Wormholes, geometria del espacio-tiempo y viaje instantaneo", img: "/assets/interstellar/gargantua_bg.webp", href: "/hub/agujeros-gusano", modules: 5 },
       { name: "Exoplanetas", desc: "Mundos mas alla del sistema solar — candidatos a tener vida", img: "/assets/exoplanetas/module_1.png", href: "/hub/exoplanetas", modules: 6 },
       { name: "Area 51 & OVNIS", desc: "Historia real, proyectos secretos y el fenomeno OVNI", img: "/assets/area51/module_1.png", href: "/hub/area51", modules: 5 },
       { name: "Objetos Interestelares", desc: "Oumuamua, Borisov y los visitantes del espacio profundo", img: "/assets/interestelar/module_1.png", href: "/hub/objetos-interestelares", modules: 5 },

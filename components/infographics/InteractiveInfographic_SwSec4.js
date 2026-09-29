@@ -77,9 +77,9 @@ const INFOGRAPHIC_NODES = [
     id: 'entrelazamiento-basico',
     title: 'La Fuerza que Conecta Todo',
     color: '#B388FF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_entrelazamiento-basico.png',
-    image: '/assets/starwars/infographic_fuerza/hero_entrelazamiento-basico.png',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_entrelazamiento-basico.png',
+    btnImage: '/assets/starwars/infographic_fuerza/btn_entrelazamiento-basico.webp',
+    image: '/assets/starwars/infographic_fuerza/hero_entrelazamiento-basico.webp',
+    bannerImage: '/assets/starwars/infographic_fuerza/banner_entrelazamiento-basico.webp',
     bannerCaption: "Representación del entrelazamiento cuántico: dos partículas comparten estado instantáneamente sin importar la distancia.",
     content: [
       "¿Alguna vez has sentido una conexión invisible con un amigo, sabiendo qué piensa sin hablar? En la física, existe un fenómeno real llamado 'entrelazamiento cuántico'. Ocurre cuando dos partículas subatómicas interactúan y sus estados quedan vinculados. Lo que le sucede a una partícula afecta a la otra al instante, incluso si están separadas por años luz en extremos opuestos del universo.",
@@ -111,9 +111,9 @@ const INFOGRAPHIC_NODES = [
     id: 'epr-paradoja',
     title: 'La Paradoja EPR',
     color: '#00BCD4',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_epr-paradoja.png',
-    image: '/assets/starwars/infographic_fuerza/hero_epr-paradoja.png',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_epr-paradoja.png',
+    btnImage: '/assets/starwars/infographic_fuerza/btn_epr-paradoja.webp',
+    image: '/assets/starwars/infographic_fuerza/hero_epr-paradoja.webp',
+    bannerImage: '/assets/starwars/infographic_fuerza/banner_epr-paradoja.webp',
     bannerCaption: "Albert Einstein, Boris Podolsky y Nathan Rosen propusieron en 1935 la paradoja EPR, cuestionando la mecánica cuántica.",
     content: [
       "En 1935, Albert Einstein, Boris Podolsky y Nathan Rosen publicaron un documento que cuestionó los cimientos de la mecánica cuántica. Este artículo se conoce como la 'Paradoja EPR' por las iniciales de sus autores. Einstein estaba incómodo con la idea del entrelazamiento cuántico porque contradecía su Teoría de la Relatividad Especial, la cual establece que nada puede superar la velocidad de la luz.",
@@ -145,9 +145,9 @@ const INFOGRAPHIC_NODES = [
     id: 'superposicion-cuantica',
     title: 'Superposición: Ser Todo a la Vez',
     color: '#7C4DFF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_superposicion-cuantica.png',
-    image: '/assets/starwars/infographic_fuerza/hero_superposicion-cuantica.png',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_superposicion-cuantica.png',
+    btnImage: '/assets/starwars/infographic_fuerza/btn_superposicion-cuantica.webp',
+    image: '/assets/starwars/infographic_fuerza/hero_superposicion-cuantica.webp',
+    bannerImage: '/assets/starwars/infographic_fuerza/banner_superposicion-cuantica.webp',
     bannerCaption: "En mecánica cuántica, una partícula puede existir en múltiples estados simultáneamente hasta que es observada.",
     content: [
       "En el juego del escondite, no sabes si tu amigo está detrás de la puerta o debajo de la cama hasta que lo encuentras. En el mundo microscópico, las partículas pueden estar en ambos lugares a la vez. A esto se le llama 'Superposición Cuántica'. Un electrón puede existir simultáneamente en estados contradictorios, como girar hacia arriba y hacia abajo, hasta el instante en que es medido.",
@@ -179,9 +179,9 @@ const INFOGRAPHIC_NODES = [
     id: 'teleportacion-cuantica',
     title: 'Teletransportación Cuántica',
     color: '#18FFFF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_teleportacion-cuantica.png',
-    image: '/assets/starwars/infographic_fuerza/hero_teleportacion-cuantica.png',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_teleportacion-cuantica.png',
+    btnImage: '/assets/starwars/infographic_fuerza/btn_teleportacion-cuantica.webp',
+    image: '/assets/starwars/infographic_fuerza/hero_teleportacion-cuantica.webp',
+    bannerImage: '/assets/starwars/infographic_fuerza/banner_teleportacion-cuantica.webp',
     bannerCaption: "La teleportación cuántica transfiere estados cuánticos entre partículas distantes usando entrelazamiento.",
     content: [
       "La teletransportación cuántica no mueve objetos físicos de un lugar a otro como ocurre en la ciencia ficción. En los laboratorios reales, los científicos teletransportan información cuántica, que es el conjunto de datos sobre cómo está estructurada una partícula. Usan el entrelazamiento cuántico para transferir el estado de un fotón de origen a otro en el destino.",
@@ -213,9 +213,9 @@ const INFOGRAPHIC_NODES = [
     id: 'computacion-cuantica',
     title: 'Computadoras del Futuro',
     color: '#E040FB',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_computacion-cuantica.png',
-    image: '/assets/starwars/infographic_fuerza/hero_computacion-cuantica.png',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_computacion-cuantica.png',
+    btnImage: '/assets/starwars/infographic_fuerza/btn_computacion-cuantica.webp',
+    image: '/assets/starwars/infographic_fuerza/hero_computacion-cuantica.webp',
+    bannerImage: '/assets/starwars/infographic_fuerza/banner_computacion-cuantica.webp',
     bannerCaption: "Los computadores cuánticos utilizan qubits que procesan información exponencialmente más rápido que los bits clásicos.",
     content: [
       "Las computadoras y los teléfonos móviles utilizan un lenguaje binario basado en ceros y unos, conocidos como 'bits'. En este sistema clásico, un interruptor electrónico puede estar apagado (0) o encendido (1), pero nunca ambas opciones al mismo tiempo.",
@@ -247,9 +247,9 @@ const INFOGRAPHIC_NODES = [
     id: 'no-localidad',
     title: 'Conexión Instantánea: No-Localidad',
     color: '#64FFDA',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_no-localidad.png',
-    image: '/assets/starwars/infographic_fuerza/hero_no-localidad.png',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_no-localidad.png',
+    btnImage: '/assets/starwars/infographic_fuerza/btn_no-localidad.webp',
+    image: '/assets/starwars/infographic_fuerza/hero_no-localidad.webp',
+    bannerImage: '/assets/starwars/infographic_fuerza/banner_no-localidad.webp',
     bannerCaption: "La no-localidad cuántica permite que partículas entrelazadas se influyan mutuamente a cualquier distancia, demostrado por John Bell en 1964.",
     content: [
       "En el mundo cuántico, la distancia no limita la conexión entre partículas. La 'no-localidad' es un principio comprobado que indica que eventos separados espacialmente pueden estar vinculados. Partículas entrelazadas se afectan mutuamente de inmediato sin que una señal física viaje entre ellas.",
@@ -281,9 +281,9 @@ const INFOGRAPHIC_NODES = [
     id: 'fuerza-universo',
     title: 'La Fuerza del Universo Real',
     color: '#AA00FF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_fuerza-universo.png',
-    image: '/assets/starwars/infographic_fuerza/hero_fuerza-universo.png',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_fuerza-universo.png',
+    btnImage: '/assets/starwars/infographic_fuerza/btn_fuerza-universo.webp',
+    image: '/assets/starwars/infographic_fuerza/hero_fuerza-universo.webp',
+    bannerImage: '/assets/starwars/infographic_fuerza/banner_fuerza-universo.webp',
     bannerCaption: "Las fuerzas fundamentales del universo â€” gravedad, electromagnetismo, nuclear fuerte y débil â€” gobiernan toda la materia.",
     content: [
       "El espacio que existe entre las estrellas no es un vacío inerte. Según la física moderna, lo que consideramos espacio vacío está lleno de 'Campos Cuánticos'. Estos son mares invisibles de energía que vibran de manera continua en todo el universo.",
@@ -667,7 +667,7 @@ export default function InteractiveInfographic_SwSec4() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #7C4DFF, #18FFFF)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(124, 77, 255, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_fuerza/badge_quantum.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              <img src="/assets/starwars/infographic_fuerza/badge_quantum.webp" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
               ¡ENTRENAMIENTO CUÁNTICO COMPLETADO!
               <Sparkles size={24} />
             </motion.div>

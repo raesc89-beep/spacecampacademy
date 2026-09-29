@@ -111,7 +111,7 @@ export default function SpaceBingo({ onComplete }) {
       {/* Competitor HUD */}
       <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '15px', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: winner === 'bot1' ? 'var(--success)' : 'gray', filter: gameOver && winner !== 'bot1' ? 'grayscale(100%)' : 'none' }}>
-           <img src="/assets/bingo_android_x.png" alt="Androide X" style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: `3px solid ${winner === 'bot1' ? 'var(--success)' : 'orange'}` }} />
+           <img src="/assets/bingo_android_x.webp" alt="Androide X" style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: `3px solid ${winner === 'bot1' ? 'var(--success)' : 'orange'}` }} />
            <div>
              <div style={{ fontSize: '1.2rem', textTransform: 'uppercase', color: 'orange', fontWeight: 'bold' }}>Androide X-1</div>
              <div style={{ fontSize: '1.5rem', fontWeight: '900', color: 'white' }}>{bot1Score} <span style={{ fontSize:'0.9rem', color: 'gray' }}>/9</span></div>
@@ -131,7 +131,7 @@ export default function SpaceBingo({ onComplete }) {
              <div style={{ fontSize: '1.2rem', textTransform: 'uppercase', color: 'cyan', fontWeight: 'bold' }}>Androide Y-2</div>
              <div style={{ fontSize: '1.5rem', fontWeight: '900', color: 'white' }}>{bot2Score} <span style={{ fontSize:'0.9rem', color: 'gray' }}>/9</span></div>
            </div>
-           <img src="/assets/bingo_android_y.png" alt="Androide Y" style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: `3px solid ${winner === 'bot2' ? 'var(--success)' : 'cyan'}` }} />
+           <img src="/assets/bingo_android_y.webp" alt="Androide Y" style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: `3px solid ${winner === 'bot2' ? 'var(--success)' : 'cyan'}` }} />
          </div>
       </div>
 

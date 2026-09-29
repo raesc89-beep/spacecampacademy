@@ -84,9 +84,9 @@ const INFOGRAPHIC_NODES = [
     id: 'extremofilos',
     title: 'Vida en lo Imposible: Extremófilos',
     color: '#66BB6A',
-    btnImage: '/assets/starwars/infographic_fauna/btn_extremofilos.png',
-    image: '/assets/starwars/infographic_fauna/hero_extremofilos.png',
-    bannerImage: '/assets/starwars/infographic_fauna/banner_extremofilos.png',
+    btnImage: '/assets/starwars/infographic_fauna/btn_extremofilos.webp',
+    image: '/assets/starwars/infographic_fauna/hero_extremofilos.webp',
+    bannerImage: '/assets/starwars/infographic_fauna/banner_extremofilos.webp',
     bannerCaption: "Los tardígrados sobreviven condiciones extremas: vacío espacial, radiación y temperaturas de âˆ’272°C a 150°C.",
     content: [
       "¿Alguna vez te has preguntado cómo sería vivir en un volcán en erupción, en el fondo del océano o flotando en el espacio? Para los humanos, esto es imposible. Sin embargo, en la Tierra existen pequeños organismos biológicos que consideran estos ambientes extremos como su hogar. Los científicos los llaman 'extremófilos', que significa amantes de lo extremo.",
@@ -118,9 +118,9 @@ const INFOGRAPHIC_NODES = [
     id: 'sarlacc-digestivo',
     title: 'El Sarlacc: Digestión de 1000 Años',
     color: '#FFB74D',
-    btnImage: '/assets/starwars/infographic_fauna/btn_sarlacc_digestivo.png',
-    image: '/assets/starwars/infographic_fauna/hero_sarlacc_digestivo.png',
-    bannerImage: '/assets/starwars/infographic_fauna/banner_sarlacc_digestivo.png',
+    btnImage: '/assets/starwars/infographic_fauna/btn_sarlacc_digestivo.webp',
+    image: '/assets/starwars/infographic_fauna/hero_sarlacc_digestivo.webp',
+    bannerImage: '/assets/starwars/infographic_fauna/banner_sarlacc_digestivo.webp',
     bannerCaption: "Los depredadores emboscadores, como las arañas trampilla, emplean estrategias pasivas para capturar presas sin persecución.",
     content: [
       "Imagina caer en un foso profundo y resbaladizo cuyas paredes están vivas y llenas de dientes. Así funciona el Sarlacc en Tatooine, un gigantesco depredador pasivo. Aunque parezca de otro mundo, en la Tierra existen criaturas asombrosas que también esperan pacientemente a que sus presas caigan directamente en sus bocas.",
@@ -152,9 +152,9 @@ const INFOGRAPHIC_NODES = [
     id: 'rancor-megafauna',
     title: 'El Rancor: Megafauna Prehistórica',
     color: '#26A69A',
-    btnImage: '/assets/starwars/infographic_fauna/btn_rancor_megafauna.png',
-    image: '/assets/starwars/infographic_fauna/hero_rancor_megafauna.png',
-    bannerImage: '/assets/starwars/infographic_fauna/banner_rancor_megafauna.png',
+    btnImage: '/assets/starwars/infographic_fauna/btn_rancor_megafauna.webp',
+    image: '/assets/starwars/infographic_fauna/hero_rancor_megafauna.webp',
+    bannerImage: '/assets/starwars/infographic_fauna/banner_rancor_megafauna.webp',
     bannerCaption: "La megafauna terrestre, como el Paraceratherium de 20 toneladas, requería estructuras óseas reforzadas por la ley del cuadrado-cubo.",
     content: [
       "Cuando la puerta del calabozo de Jabba se levanta, emerge una de las criaturas carnívoras más aterradoras de la galaxia: el Rancor. Este monstruo bípedo con garras gigantes y piel blindada parece una pesadilla imparable. Pero diseñar biológicamente a un gigante así requiere algo más que imaginación.",
@@ -186,9 +186,9 @@ const INFOGRAPHIC_NODES = [
     id: 'tauntaun-adaptacion',
     title: 'Tauntauns: Adaptación al Frío Extremo',
     color: '#AED581',
-    btnImage: '/assets/starwars/infographic_fauna/btn_tauntaun_adaptacion.png',
-    image: '/assets/starwars/infographic_fauna/hero_tauntaun_adaptacion.png',
-    bannerImage: '/assets/starwars/infographic_fauna/banner_tauntaun_adaptacion.png',
+    btnImage: '/assets/starwars/infographic_fauna/btn_tauntaun_adaptacion.webp',
+    image: '/assets/starwars/infographic_fauna/hero_tauntaun_adaptacion.webp',
+    bannerImage: '/assets/starwars/infographic_fauna/banner_tauntaun_adaptacion.webp',
     bannerCaption: "Los mamíferos árticos desarrollan grasa subcutánea, contracorriente vascular y pelaje multicapa para sobrevivir a âˆ’50°C.",
     content: [
       "Imaginen que están caminando en un lugar tan frío que incluso el aliento se congela en el aire antes de tocar el suelo. Así es el planeta helado de Hoth, un mundo implacable con temperaturas mortales. Para sobrevivir en ambientes tan extremos, los animales no pueden simplemente ponerse un abrigo de invierno. Deben poseer adaptaciones biológicas fascinantes que funcionan como una armadura invisible contra la temperatura. La naturaleza, en su infinita sabiduría, ha desarrollado ingeniosas estrategias para mantener el calor corporal, desde alteraciones en la circulación sanguínea hasta la creación de anticongelantes biológicos internos.",
@@ -220,9 +220,9 @@ const INFOGRAPHIC_NODES = [
     id: 'purrgil-migracion',
     title: 'Los Purrgil: Migración Espacial',
     color: '#FF7043',
-    btnImage: '/assets/starwars/infographic_fauna/btn_purrgil_migracion.png',
-    image: '/assets/starwars/infographic_fauna/hero_purrgil_migracion.png',
-    bannerImage: '/assets/starwars/infographic_fauna/banner_purrgil_migracion.png',
+    btnImage: '/assets/starwars/infographic_fauna/btn_purrgil_migracion.webp',
+    image: '/assets/starwars/infographic_fauna/hero_purrgil_migracion.webp',
+    bannerImage: '/assets/starwars/infographic_fauna/banner_purrgil_migracion.webp',
     bannerCaption: "Las ballenas jorobadas migran 8,000 km guiándose por el campo magnético terrestre, fenómeno llamado magnetorrecepción.",
     content: [
       "El reino animal está lleno de viajeros incansables que emprenden trayectos épicos a través del mundo entero sin el uso de mapas o sistemas de posicionamiento satelital. Esta capacidad para la migración es uno de los mayores misterios biológicos de la naturaleza. Organismos de diversas especies cruzan océanos y continentes enteros guiados por señales invisibles del entorno, superando obstáculos notables y condiciones climáticas extremas para llegar con una precisión impecable a sus destinos de reproducción o alimentación.",
@@ -254,9 +254,9 @@ const INFOGRAPHIC_NODES = [
     id: 'bioluminiscencia',
     title: 'Criaturas Brillantes del Espacio',
     color: '#4DB6AC',
-    btnImage: '/assets/starwars/infographic_fauna/btn_bioluminiscencia.png',
-    image: '/assets/starwars/infographic_fauna/hero_bioluminiscencia.png',
-    bannerImage: '/assets/starwars/infographic_fauna/banner_bioluminiscencia.png',
+    btnImage: '/assets/starwars/infographic_fauna/btn_bioluminiscencia.webp',
+    image: '/assets/starwars/infographic_fauna/hero_bioluminiscencia.webp',
+    bannerImage: '/assets/starwars/infographic_fauna/banner_bioluminiscencia.webp',
     bannerCaption: "La bioluminiscencia es una reacción química entre luciferina y luciferasa que produce luz sin calor en organismos marinos.",
     content: [
       "Cuando exploramos las partes más recónditas de la naturaleza, especialmente los inmensos abismos marinos donde la luz solar jamás logra penetrar, encontramos un espectáculo brillante casi mágico. La bioluminiscencia es la capacidad espectacular de un organismo vivo para producir y emitir su propia luz. Este fenómeno, en lugar de ser una simple fantasía visual, es el resultado directo de una reacción química fría y eficiente que ha evolucionado de forma independiente en decenas de grupos animales diferentes a lo largo del tiempo biológico.",
@@ -288,9 +288,9 @@ const INFOGRAPHIC_NODES = [
     id: 'exobiologia-futuro',
     title: 'Buscando Vida Extraterrestre',
     color: '#8BC34A',
-    btnImage: '/assets/starwars/infographic_fauna/btn_exobiologia_futuro.png',
-    image: '/assets/starwars/infographic_fauna/hero_exobiologia_futuro.png',
-    bannerImage: '/assets/starwars/infographic_fauna/banner_exobiologia_futuro.png',
+    btnImage: '/assets/starwars/infographic_fauna/btn_exobiologia_futuro.webp',
+    image: '/assets/starwars/infographic_fauna/hero_exobiologia_futuro.webp',
+    bannerImage: '/assets/starwars/infographic_fauna/banner_exobiologia_futuro.webp',
     bannerCaption: "El telescopio James Webb analiza las atmósferas de exoplanetas buscando biofirmas como oxígeno, metano y vapor de agua.",
     content: [
       "Desde los albores de la civilización, el ser humano ha contemplado la inmensidad del firmamento nocturno preguntándose si estamos solos en el vasto cosmos. Esta profunda interrogante filosófica ha dado origen a la astrobiología, una disciplina científica moderna que combina la astronomía, la biología molecular. La geología planetaria para rastrear la presencia de ecosistemas orgánicos más allá de nuestro planeta natal, utilizando la rigurosa metodología empírica para descifrar los misterios de la evolución estelar.",
@@ -591,7 +591,7 @@ export default function InteractiveInfographic_SwSec5() {
         <AnimatePresence>
           {isAllComplete && (
             <motion.div initial={{ opacity: 0, scale: 0.9, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}>
-              <img src="/assets/starwars/infographic_fauna/badge_fauna.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              <img src="/assets/starwars/infographic_fauna/badge_fauna.webp" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
               ¡DATOS XENOBIOLÓGICOS COMPLETADOS!
               <Sparkles size={24} />
             </motion.div>

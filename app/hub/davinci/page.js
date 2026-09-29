@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const DAVINCI_MODULES = [
-  { id: 'davinci_m1', title: 'Máquinas Voladoras', color: '#D4A843', link: '/course/davinci_m1', icon: '/assets/davinci/davinci_m1.png', coords: { left: '13%', top: '48%' } },
-  { id: 'davinci_m2', title: 'Anatomía del Universo', color: '#FF9FFF', link: '/course/davinci_m2', icon: '/assets/davinci/davinci_m2.png', coords: { left: '33%', top: '26%' } },
-  { id: 'davinci_m3', title: 'Ingeniería del Renacimiento', color: '#00E4FF', link: '/course/davinci_m3', icon: '/assets/davinci/davinci_m3.png', coords: { left: '55%', top: '46%' } },
-  { id: 'davinci_m4', title: 'Arte y Ciencia Unidos', color: '#A8FF78', link: '/course/davinci_m4', icon: '/assets/davinci/davinci_m4.png', coords: { left: '75%', top: '26%' } },
-  { id: 'davinci_m5', title: 'El Genio Eterno', color: '#FFD700', link: '/course/davinci_m5', icon: '/assets/davinci/davinci_m5.png', coords: { left: '87%', top: '62%' } },
+  { id: 'davinci_m1', title: 'Máquinas Voladoras', color: '#D4A843', link: '/course/davinci_m1', icon: '/assets/davinci/davinci_m1.webp', coords: { left: '13%', top: '48%' } },
+  { id: 'davinci_m2', title: 'Anatomía del Universo', color: '#FF9FFF', link: '/course/davinci_m2', icon: '/assets/davinci/davinci_m2.webp', coords: { left: '33%', top: '26%' } },
+  { id: 'davinci_m3', title: 'Ingeniería del Renacimiento', color: '#00E4FF', link: '/course/davinci_m3', icon: '/assets/davinci/davinci_m3.webp', coords: { left: '55%', top: '46%' } },
+  { id: 'davinci_m4', title: 'Arte y Ciencia Unidos', color: '#A8FF78', link: '/course/davinci_m4', icon: '/assets/davinci/davinci_m4.webp', coords: { left: '75%', top: '26%' } },
+  { id: 'davinci_m5', title: 'El Genio Eterno', color: '#FFD700', link: '/course/davinci_m5', icon: '/assets/davinci/davinci_m5.webp', coords: { left: '87%', top: '62%' } },
 ];
 
 // ─── Constelación de Nodos ──────────────────────────────────────────────────
@@ -199,7 +199,7 @@ export default function DaVinciHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#000000',
-        backgroundImage: "url('/assets/davinci/davinci_cover.png')",
+        backgroundImage: "url('/assets/davinci/davinci_cover.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',

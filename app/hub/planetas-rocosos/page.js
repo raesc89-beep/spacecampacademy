@@ -26,12 +26,12 @@ export default function PlanetasRocososHub() {
 
   // Coordenadas orgánicas distribuidas a lo largo del Canvas
   const orbitalData = {
-    'rocosos_m1': { left: '20%', top: '65%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/dashboard/rocosos_cover.png' },
-    'rocosos_m2': { left: '33%', top: '45%', size: 'clamp(60px, 8vw, 100px)', imgUrl: '/assets/cartoon_mercury.png' },
-    'rocosos_m3': { left: '46%', top: '25%', size: 'clamp(70px, 9vw, 110px)', imgUrl: '/assets/cartoon_venus.png' },
-    'rocosos_m4': { left: '59%', top: '45%', size: 'clamp(75px, 9.5vw, 120px)', imgUrl: '/assets/cartoon_earth.png' },
-    'rocosos_m5': { left: '72%', top: '65%', size: 'clamp(65px, 8.5vw, 105px)', imgUrl: '/assets/cartoon_mars.png' },
-    'rocosos_m6': { left: '85%', top: '45%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/cartoon_rocky_planets_journey.png' }
+    'rocosos_m1': { left: '20%', top: '65%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/dashboard/rocosos_cover.webp' },
+    'rocosos_m2': { left: '33%', top: '45%', size: 'clamp(60px, 8vw, 100px)', imgUrl: '/assets/cartoon_mercury.webp' },
+    'rocosos_m3': { left: '46%', top: '25%', size: 'clamp(70px, 9vw, 110px)', imgUrl: '/assets/cartoon_venus.webp' },
+    'rocosos_m4': { left: '59%', top: '45%', size: 'clamp(75px, 9.5vw, 120px)', imgUrl: '/assets/cartoon_earth.webp' },
+    'rocosos_m5': { left: '72%', top: '65%', size: 'clamp(65px, 8.5vw, 105px)', imgUrl: '/assets/cartoon_mars.webp' },
+    'rocosos_m6': { left: '85%', top: '45%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/cartoon_rocky_planets_journey.webp' }
   };
 
   // Determinar Índice de Progreso
@@ -81,7 +81,7 @@ export default function PlanetasRocososHub() {
       
       {/* Vehículos Espaciales de Fondo */}
       <motion.img 
-        src="/assets/shuttle_user.png" 
+        src="/assets/shuttle_user.webp" 
         alt="Shuttle"
         animate={{ x: ['-20vw', '120vw'], y: ['0vh', '15vh', '-5vh', '10vh'] }}
         transition={{ repeat: Infinity, duration: 45, ease: "linear" }}
@@ -89,7 +89,7 @@ export default function PlanetasRocososHub() {
       />
       
       <motion.img 
-        src="/assets/ufo_user.png" 
+        src="/assets/ufo_user.webp" 
         alt="UFO"
         animate={{ x: ['120vw', '-20vw'], y: ['0vh', '-20vh', '15vh', '5vh'] }}
         transition={{ repeat: Infinity, duration: 65, ease: "linear" }}

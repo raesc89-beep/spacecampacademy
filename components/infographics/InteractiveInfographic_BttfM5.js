@@ -152,8 +152,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'pelicula', title: 'El Aeropatín en la Película', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_pelicula.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_pelicula.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_pelicula.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_pelicula.webp',
     content: [
       'En «Volver al Futuro Parte II» (1989), Marty McFly viaja al año 2015 y utiliza un aeropatín (una tabla flotante). La película muestra el uso de estos dispositivos en la ciudad. El director Robert Zemeckis bromeó afirmando que los aeropatines existían pero no se comercializaban por motivos de seguridad.',
       'Para filmar estas escenas, los actores utilizaron tablas sujetas con arneses y cables. La producción empleó pantallas azules y plataformas mecánicas. El accesorio original, un aeropatín rosa, se convirtió en un elemento representativo del cine de ciencia ficción.',
@@ -161,7 +161,7 @@ const INFOGRAPHIC_NODES = [
       'En la ficción, el aeropatín parece anular la gravedad, una de las fuerzas fundamentales del universo. En la realidad, esto se logra generando una fuerza de repulsión ascendente mediante levitación magnética.',
       'Posteriormente al estreno, se comercializaron réplicas que no flotaban. Un modelo original utilizado en la filmación fue subastado en 2021 por 501,000 dólares. Existen pocos ejemplares auténticos de esta utilería.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_pelicula.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_pelicula.webp',
     bannerCaption: 'El icónico aeropatín de BTTF2 flotando sobre las calles de Hill Valley 2015',
     fact: 'El icónico aeropatín rosa de Mattel que usó Michael J. Fox no era más que una tabla de madera de un scooter modificada. Los utileros de la película le quitaron las ruedas, la repintaron con colores brillantes y le agregaron un parche de velcro para que los zapatos del actor se mantuvieran en su lugar.',
     expandables: [
@@ -170,8 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'maglev', title: 'Trenes Maglev: Levitación Real', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_maglev.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_maglev.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_maglev.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_maglev.webp',
     content: [
       'Los trenes de levitación magnética (maglev) operan flotando sobre sus vías. Al carecer de contacto físico, se elimina la fricción mecánica, operando sobre un campo magnético.',
       'El sistema Maglev de Shanghái alcanza los 431 km/h. Utiliza un sistema de suspensión electromagnética (EMS) en el cual los electroimanes del vehículo son atraídos hacia un riel ferromagnético, manteniendo un espacio libre de 10 milímetros.',
@@ -179,7 +179,7 @@ const INFOGRAPHIC_NODES = [
       'El principio básico es la repulsión magnética entre polos iguales. Este sistema se amplifica utilizando electroimanes potentes en la base del vehículo, mientras que imanes laterales aseguran su alineación en la vía.',
       'El efecto Meissner ocurre cuando ciertos materiales, al enfriarse por debajo de una temperatura crítica, se convierten en superconductores y expelen campos magnéticos. Esto genera una fuerza de levitación que mantiene al superconductor suspendido, principio físico aplicado en la tecnología maglev.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_maglev.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_maglev.webp',
     bannerCaption: 'Trenes Maglev reales: levitación magnética a más de 600 km/h',
     fact: 'El Maglev de Shanghái acelera de 0 a 431 km/h en solo 2 minutos. El viaje del aeropuerto a la ciudad toma solo 7 minutos y 20 segundos. Durante el viaje, puedes sostener una moneda de canto sobre la bandeja ¡y no se cae! â€” no hay vibración porque el tren nunca toca la vía.',
     expandables: [
@@ -188,8 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lexus', title: 'El Hoverboard de Lexus (2015)', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_lexus.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_lexus.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_lexus.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_lexus.webp',
     content: [
       'En 2015, la compañía automotriz Lexus presentó un prototipo funcional denominado "SLIDE", un aeropatín diseñado para levitar usando tecnología de superconductores.',
       'El dispositivo integra criostatos con superconductores enfriados a -197°C mediante nitrógeno líquido. Estos materiales aprovechan el efecto Meissner para levitar al repeler los campos magnéticos de una superficie inferior.',
@@ -197,7 +197,7 @@ const INFOGRAPHIC_NODES = [
       'Debido a que el nitrógeno líquido se evapora en aproximadamente 20 minutos, los criostatos requieren recargas frecuentes. Operar el dispositivo requiere habilidad, ya que la ausencia de fricción cambia por completo la dinámica de movimiento.',
       'La iniciativa, aunque fue una campaña publicitaria, demostró la viabilidad técnica de la levitación mediante superconductores en vehículos personales ligeros.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_lexus.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_lexus.webp',
     bannerCaption: 'El Lexus Slide: un hoverboard real que usa superconductores y nitrógeno líquido',
     fact: 'Cuando Ross McGouran intentó el aeropatín de Lexus por primera vez, ¡se cayó inmediatamente! No hay fricción contra qué empujar â€” girar, frenar y balancearte son diferentes al skateboarding. Dijo que era como «intentar pararte sobre una bola de hielo». Le tomó 6 semanas de práctica dominar trucos básicos.',
     expandables: [
@@ -206,8 +206,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'hendo', title: 'El Hendo Hoverboard y Tony Hawk', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_hendo.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_hendo.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_hendo.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_hendo.webp',
     content: [
       'En 2014, Arx Pax desarrolló el aeropatín Hendo. El prototipo generó atención tras una demostración en la que participó el deportista Tony Hawk.',
       'El dispositivo utiliza la Ley de Lenz y corrientes de Foucault. El movimiento de un campo magnético sobre una superficie conductora genera corrientes eléctricas inducidas, las cuales crean un campo magnético que se opone al movimiento original.',
@@ -215,7 +215,7 @@ const INFOGRAPHIC_NODES = [
       'Esta tecnología requiere superficies conductoras, como paneles de cobre o aluminio, por lo que no opera sobre asfalto o concreto. Su objetivo original era desarrollar sistemas de levitación arquitectónica para mitigar daños sísmicos.',
       'El prototipo Hendo logró financiarse parcialmente a través de campañas de participación pública. El dispositivo flota a 2.5 centímetros de la superficie y emite un ruido característico debido al giro de los motores magnéticos.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_hendo.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_hendo.webp',
     bannerCaption: 'El Hendo Hoverboard: inducción electromagnética sobre superficie de cobre',
     fact: 'Para financiar su primer modelo de aeropatín, Hendo lanzó una campaña en Kickstarter en 2014 con una meta de $250,000 dólares. El proyecto fue un éxito masivo y recaudó más de $510,000. Los patrocinadores que aportaron $10,000 o más recibieron uno de los primeros diez aeropatines funcionales producidos.',
     expandables: [
@@ -224,8 +224,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'newton', title: 'Las Leyes de Newton y la Gravedad', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_newton.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_newton.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_newton.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_newton.webp',
     content: [
       'La ley de la gravitación universal de Isaac Newton (1687) establece que todo objeto con masa atrae a otros objetos. En la Tierra, esta aceleración es de 9.8 m/s².',
       'Cuando un objeto sostiene otro, ejerce una fuerza ascendente que iguala a la fuerza gravitacional descendente. Un sistema de levitación opera mediante un principio similar, aplicando una fuerza que contrarresta la gravedad.',
@@ -233,7 +233,7 @@ const INFOGRAPHIC_NODES = [
       'La Tercera Ley de Newton, que postula que toda acción tiene una reacción igual y opuesta, es fundamental. Los imanes ejercen una fuerza hacia abajo sobre la superficie conductora, la cual reacciona empujando el dispositivo hacia arriba.',
       'En ausencia de resistencia del aire (vacío), todos los objetos caen a la misma velocidad independientemente de su masa, ya que la gravedad los acelera por igual. Galileo propuso este principio en el siglo XVII.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_newton.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_newton.webp',
     bannerCaption: 'Las leyes de Newton y la gravedad: el obstáculo a superar para levitar',
     fact: 'En 1971, el astronauta del Apollo 15 David Scott se paró en la Luna y soltó un martillo y una pluma al mismo tiempo en televisión en vivo. Golpearon la superficie lunar simultáneamente. Dijo «¡Qué tal! Esto demuestra que el Sr. Galileo tenía razón.» El video ha sido visto más de 20 millones de veces en YouTube.',
     expandables: [
@@ -242,8 +242,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'quantum', title: 'Levitación Cuántica: Flux Pinning', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_quantum.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_quantum.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_quantum.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_quantum.webp',
     content: [
       'La levitación cuántica permite que un disco superconductor, enfriado a -196°C, quede fijo en el aire sobre una pista magnética. El disco mantiene su posición incluso si se altera la orientación de la pista.',
       'Este fenómeno se conoce como bloqueo cuántico o flux pinning. En los superconductores de Tipo II, las líneas de campo magnético quedan atrapadas en las imperfecciones del material, fijando al superconductor en su posición relativa al campo magnético.',
@@ -251,7 +251,7 @@ const INFOGRAPHIC_NODES = [
       'La superconductividad es un fenómeno cuántico macroscópico. A bajas temperaturas, los electrones forman pares de Cooper que se desplazan sin resistencia eléctrica, permitiendo el flujo de corriente sin pérdida de energía.',
       'Actualmente, se investiga su aplicación en trenes maglev, rodamientos de precisión y almacenamiento de energía. El requisito de operar a temperaturas criogénicas representa su principal limitación técnica.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_quantum.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_quantum.webp',
     bannerCaption: 'Quantum flux pinning: superconductores que se anclan en el aire',
     fact: 'En la Universidad de Tel Aviv, el Dr. Boaz Almog demostró un disco superconductor de solo 0.5 mm de espesor â€” más delgado que una tarjeta de crédito â€” flotando en una pista magnética cargando 70,000 veces su propio peso. Inclinó la pista a 90 grados y el disco se quedó bloqueado. La volteó de cabeza y el disco colgó sin caerse. La audiencia quedó boquiabierta.',
     expandables: [
@@ -260,8 +260,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'electro', title: 'Suspensión EM en la Vida Real', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_electro.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_electro.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_electro.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_electro.webp',
     content: [
       'La suspensión electromagnética se emplea en trenes maglev, rodamientos magnéticos para turbinas industriales y cabezales de discos duros, los cuales operan a nanómetros de la superficie del disco magnético.',
       'Existen dos variantes: la suspensión electromagnética (EMS), que utiliza atracción entre electroimanes y un riel ferromagnético superior, y la electrodinámica (EDS), basada en la repulsión magnética sobre una vía conductora, que requiere alta velocidad inicial.',
@@ -269,7 +269,7 @@ const INFOGRAPHIC_NODES = [
       'Las turbinas eólicas con eje de levitación magnética reducen la fricción mecánica, incrementando su eficiencia energética y disminuyendo el desgaste operativo. Estas turbinas pueden generar energía con vientos de menor intensidad.',
       'La levitación acústica utiliza la presión de radiación de las ondas sonoras para mantener pequeños objetos suspendidos en los nodos de una onda estacionaria, permitiendo la manipulación sin contacto físico.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_electro.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_electro.webp',
     bannerCaption: 'Suspensión electromagnética real: ingeniería de feedback activo',
     fact: 'Dentro del disco duro de tu computadora, el cabezal de lectura-escritura «vuela» a solo 3-5 nanómetros sobre el disco giratorio — eso es aproximadamente 1/20,000 del ancho de un cabello humano. Si el cabezal fuera un Boeing 747, estaría volando a 800 km/h a solo 1 milímetro sobre el suelo. Cualquier partícula de polvo a esa escala sería como una montaña. Por eso los discos duros están sellados.',
     expandables: [
@@ -278,8 +278,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-antgrav', title: 'El Futuro de la Antigravedad', color: '#FF5252',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_futuro.png',
-    image: '/assets/bttf/infographic_aeropatines/hero_futuro.png',
+    btnImage: '/assets/bttf/infographic_aeropatines/btn_futuro.webp',
+    image: '/assets/bttf/infographic_aeropatines/hero_futuro.webp',
     content: [
       'Las tecnologías de levitación demostradas incluyen levitación magnética, bloqueo cuántico, suspensión electromagnética y levitación acústica.',
       'En física teórica, la posibilidad de anular el campo gravitacional mediante antigravedad permanece como una hipótesis no demostrada, ya que aún no se ha detectado experimentalmente el gravitón, la partícula mediadora de la gravedad.',
@@ -287,7 +287,7 @@ const INFOGRAPHIC_NODES = [
       'El desarrollo de metamateriales (estructuras a escala sub-longitud de onda) ha permitido desviar ondas electromagnéticas, como la luz. Teóricamente, estructuras análogas podrían interactuar con ondas gravitacionales, aunque esto es especulativo.',
       'La innovación en transporte personal continúa. La investigación en superconductores a temperatura ambiente sigue su curso. Paralelamente, vehículos aéreos personales basados en propulsión de drones han demostrado vuelos funcionales, logrando hitos en la aviación experimental.'
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_futuro-antgrav.png',
+    bannerImage: '/assets/bttf/infographic_m5/banner_futuro-antgrav.webp',
     bannerCaption: 'El futuro de la antigravedad: ciudades flotantes con superconductores de temperatura ambiente',
     fact: 'En 2015, el inventor canadiense Catalin Alexandru Duru estableció el Récord Guinness para el vuelo más largo en aeropatín: 275.9 metros a una altura de 5 metros. Su tabla usaba hélices de dron, no imanes. En 2019, el inventor francés Franky Zapata cruzó el Canal de la Mancha en su Flyboard Air â€” 35 km en 22 minutos a velocidades de hasta 170 km/h y alturas de hasta 15 metros. Literalmente voló sobre el mar en un aeropatín.',
     expandables: [

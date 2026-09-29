@@ -92,13 +92,13 @@ const INFOGRAPHIC_NODES = [
     id: 'tatooine-soles',
     title: 'Tatooine: Los Dos Soles',
     color: '#FFB74D',
-    btnImage: '/assets/starwars/infographic_mundos/btn_tatooine.png',
-    image: '/assets/starwars/infographic_mundos/hero_tatooine.png',
-    bannerImage: '/assets/starwars/infographic_mundos/banner_tatooine.png',
+    btnImage: '/assets/starwars/infographic_mundos/btn_tatooine.webp',
+    image: '/assets/starwars/infographic_mundos/hero_tatooine.webp',
+    bannerImage: '/assets/starwars/infographic_mundos/banner_tatooine.webp',
     bannerCaption: 'El doble atardecer de Tatooine â€” inspirado en Kepler-16b',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_tatooine_atardecer.png', caption: 'Atardecer con dos soles sobre Tatooine' },
-      { src: '/assets/starwars/infographic_mundos/extra_tatooine_pueblo.png', caption: 'El pueblo de Tatooine bajo dos soles' }
+      { src: '/assets/starwars/infographic_mundos/extra_tatooine_atardecer.webp', caption: 'Atardecer con dos soles sobre Tatooine' },
+      { src: '/assets/starwars/infographic_mundos/extra_tatooine_pueblo.webp', caption: 'El pueblo de Tatooine bajo dos soles' }
     ],
     content: [
       "¿Te imaginas tener dos sombras detrás de ti? Así sería la vida en un mundo con dos soles. En 2011, los astrónomos descubrieron un planeta real que orbita un par de estrellas. Esto sacudió a la ciencia. Se pensaba que un planeta no podría mantener una órbita estable alrededor de dos estrellas sin ser expulsado.",
@@ -125,9 +125,9 @@ const INFOGRAPHIC_NODES = [
     id: 'metodo-eclipse',
     title: 'El Método del Eclipse',
     color: '#64B5F6',
-    btnImage: '/assets/starwars/infographic_mundos/btn_eclipse.png',
-    image: '/assets/starwars/infographic_mundos/hero_eclipse.png',
-    bannerImage: '/assets/starwars/infographic_mundos/banner_eclipse.png',
+    btnImage: '/assets/starwars/infographic_mundos/btn_eclipse.webp',
+    image: '/assets/starwars/infographic_mundos/hero_eclipse.webp',
+    bannerImage: '/assets/starwars/infographic_mundos/banner_eclipse.webp',
     bannerCaption: 'El telescopio Kepler observó más de 150,000 estrellas.',
     content: [
       "¿Podrías notar a lo lejos si una hormiga camina frente a una farola? Esa es la tarea de los telescopios espaciales para encontrar exoplanetas. Utilizan el 'método del tránsito'. Consiste en observar la luz de las estrellas buscando parpadeos que revelen un planeta oculto.",
@@ -154,13 +154,13 @@ const INFOGRAPHIC_NODES = [
     id: 'hoth-hielo',
     title: 'Hoth: Mundos de Hielo',
     color: '#B3E5FC',
-    btnImage: '/assets/starwars/infographic_mundos/btn_hoth.png',
-    image: '/assets/starwars/infographic_mundos/hero_hoth.png',
-    bannerImage: '/assets/starwars/infographic_mundos/banner_hoth.png',
+    btnImage: '/assets/starwars/infographic_mundos/btn_hoth.webp',
+    image: '/assets/starwars/infographic_mundos/hero_hoth.webp',
+    bannerImage: '/assets/starwars/infographic_mundos/banner_hoth.webp',
     bannerCaption: 'Europa tiene un océano subterráneo que podría albergar vida.',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_hoth_vader.png', caption: 'Vader en las llanuras heladas' },
-      { src: '/assets/starwars/infographic_mundos/extra_hoth_jinete.png', caption: 'Un jinete sobre las colinas nevadas' }
+      { src: '/assets/starwars/infographic_mundos/extra_hoth_vader.webp', caption: 'Vader en las llanuras heladas' },
+      { src: '/assets/starwars/infographic_mundos/extra_hoth_jinete.webp', caption: 'Un jinete sobre las colinas nevadas' }
     ],
     content: [
       "Imagina una pista de hielo gigante del tamaño de una luna. En nuestro sistema solar tenemos mundos parecidos a Hoth. La luna Europa de Júpiter está cubierta por una corteza de hielo. Su superficie se congela a -160°C. Presenta grietas kilométricas y crestas afiladas.",
@@ -187,13 +187,13 @@ const INFOGRAPHIC_NODES = [
     id: 'dagobah-pantano',
     title: 'Dagobah: Pantanos Prehistóricos',
     color: '#81C784',
-    btnImage: '/assets/starwars/infographic_mundos/btn_dagobah.png',
-    image: '/assets/starwars/infographic_mundos/hero_dagobah.png',
-    bannerImage: '/assets/starwars/infographic_mundos/banner_dagobah.png',
+    btnImage: '/assets/starwars/infographic_mundos/btn_dagobah.webp',
+    image: '/assets/starwars/infographic_mundos/hero_dagobah.webp',
+    bannerImage: '/assets/starwars/infographic_mundos/banner_dagobah.webp',
     bannerCaption: 'En el Carbonífero, la Tierra lucía como Dagobah.',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_dagobah_pantano.png', caption: 'El pantano oscuro bajo la lluvia' },
-      { src: '/assets/starwars/infographic_mundos/extra_dagobah_xwing.png', caption: 'El X-Wing hundido en el pantano' }
+      { src: '/assets/starwars/infographic_mundos/extra_dagobah_pantano.webp', caption: 'El pantano oscuro bajo la lluvia' },
+      { src: '/assets/starwars/infographic_mundos/extra_dagobah_xwing.webp', caption: 'El X-Wing hundido en el pantano' }
     ],
     content: [
       "Hace 300 millones de años, la Tierra era similar al planeta pantanoso de Yoda. Estábamos en el período Carbonífero. Era un mundo cálido y húmedo cubierto por bosques y pantanos. No había flores ni mamíferos, solo helechos gigantes y grandes insectos.",
@@ -220,14 +220,14 @@ const INFOGRAPHIC_NODES = [
     id: 'mundos-lava',
     title: 'Mundos de Fuego y Lava',
     color: '#FF7043',
-    btnImage: '/assets/starwars/infographic_mundos/btn_lava.png',
-    image: '/assets/starwars/infographic_mundos/hero_lava.png',
-    bannerImage: '/assets/starwars/infographic_mundos/banner_lava.png',
+    btnImage: '/assets/starwars/infographic_mundos/btn_lava.webp',
+    image: '/assets/starwars/infographic_mundos/hero_lava.webp',
+    bannerImage: '/assets/starwars/infographic_mundos/banner_lava.webp',
     bannerCaption: '55 Cancri e: su superficie supera los 2,000°C.',
     extraImages: [
-      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_1.png', caption: 'Duelo épico en Mustafar' },
-      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_2.png', caption: 'Cruce de sables sobre magma ardiente' },
-      { src: '/assets/starwars/infographic_mundos/extra_mustafar_sector.png', caption: 'El planeta volcánico de la galaxia' }
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_1.webp', caption: 'Duelo épico en Mustafar' },
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_duel_2.webp', caption: 'Cruce de sables sobre magma ardiente' },
+      { src: '/assets/starwars/infographic_mundos/extra_mustafar_sector.webp', caption: 'El planeta volcánico de la galaxia' }
     ],
     content: [
       "Imagina un planeta rocoso que orbita tan cerca de su estrella que su superficie se derrite por completo. 55 Cancri e es un mundo de lava a 40 años-luz de nosotros. Fue una de las primeras supertierras descubiertas.",
@@ -254,9 +254,9 @@ const INFOGRAPHIC_NODES = [
     id: 'trappist-sistema',
     title: 'TRAPPIST-1: Siete Mundos',
     color: '#CE93D8',
-    btnImage: '/assets/starwars/infographic_mundos/btn_trappist.png',
-    image: '/assets/starwars/infographic_mundos/hero_trappist.png',
-    bannerImage: '/assets/starwars/infographic_mundos/banner_trappist.png',
+    btnImage: '/assets/starwars/infographic_mundos/btn_trappist.webp',
+    image: '/assets/starwars/infographic_mundos/hero_trappist.webp',
+    bannerImage: '/assets/starwars/infographic_mundos/banner_trappist.webp',
     bannerCaption: 'Los planetas de TRAPPIST-1 están muy cerca unos de otros.',
     content: [
       "El sistema TRAPPIST-1 fue descubierto en 2017 a 40 años-luz de distancia. Es una familia de mundos unidos alrededor de una estrella tenue. El anuncio de su hallazgo captó la atención mundial en astronomía.",
@@ -283,9 +283,9 @@ const INFOGRAPHIC_NODES = [
     id: 'busqueda-vida',
     title: 'La Búsqueda de Vida',
     color: '#4FC3F7',
-    btnImage: '/assets/starwars/infographic_mundos/btn_vida.png',
-    image: '/assets/starwars/infographic_mundos/hero_vida.png',
-    bannerImage: '/assets/starwars/infographic_mundos/banner_vida.png',
+    btnImage: '/assets/starwars/infographic_mundos/btn_vida.webp',
+    image: '/assets/starwars/infographic_mundos/hero_vida.webp',
+    bannerImage: '/assets/starwars/infographic_mundos/banner_vida.webp',
     bannerCaption: 'El James Webb detectó COâ‚‚ y metano en K2-18b.',
     content: [
       "Para buscar vida en planetas lejanos, los astrónomos analizan sus atmósferas. Buscan 'biofirmas', que son combinaciones químicas producidas por seres vivos. Es como buscar huellas en la arena sin ver a quien las dejó.",

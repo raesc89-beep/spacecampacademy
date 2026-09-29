@@ -13,7 +13,7 @@ const BTTF_MODULES = [
     title: 'El Condensador de Flujo',
     color: '#00FFFF', // Cyan glow
     link: '/course/bttf_m1',
-    icon: '/assets/bttf/bttf_m1.png',
+    icon: '/assets/bttf/bttf_m1.webp',
     coords: { left: '15%', top: '35%' },
   },
   {
@@ -21,7 +21,7 @@ const BTTF_MODULES = [
     title: 'Viajes en el Tiempo',
     color: '#FF00FF', // Magenta glow
     link: '/course/bttf_m2',
-    icon: '/assets/bttf/bttf_m2.png',
+    icon: '/assets/bttf/bttf_m2.webp',
     coords: { left: '40%', top: '25%' },
   },
   {
@@ -29,7 +29,7 @@ const BTTF_MODULES = [
     title: 'Paradojas Temporales',
     color: '#FFA500', // Orange glow
     link: '/course/bttf_m3',
-    icon: '/assets/bttf/bttf_m3.png',
+    icon: '/assets/bttf/bttf_m3.webp',
     coords: { left: '65%', top: '35%' },
   },
   {
@@ -37,7 +37,7 @@ const BTTF_MODULES = [
     title: 'Energía a 1.21 Gigawatts',
     color: '#FFFF00', // Yellow lightning
     link: '/course/bttf_m4',
-    icon: '/assets/bttf/bttf_m4.png',
+    icon: '/assets/bttf/bttf_m4.webp',
     coords: { left: '25%', top: '55%' },
   },
   {
@@ -45,7 +45,7 @@ const BTTF_MODULES = [
     title: 'Aeropatines y Antigravedad',
     color: '#00FF00', // Green hoverboard
     link: '/course/bttf_m5',
-    icon: '/assets/bttf/bttf_m5.png',
+    icon: '/assets/bttf/bttf_m5.webp',
     coords: { left: '50%', top: '50%' },
   },
   {
@@ -53,7 +53,7 @@ const BTTF_MODULES = [
     title: 'La Máquina del Tiempo',
     color: '#FF4500', // Fire trails
     link: '/course/bttf_m6',
-    icon: '/assets/bttf/bttf_m6.png',
+    icon: '/assets/bttf/bttf_m6.webp',
     coords: { left: '75%', top: '60%' },
   },
   {
@@ -61,7 +61,7 @@ const BTTF_MODULES = [
     title: 'Biotecnología del Futuro',
     color: '#8A2BE2', // Neon purple
     link: '/course/bttf_m7',
-    icon: '/assets/bttf/bttf_m7.png',
+    icon: '/assets/bttf/bttf_m7.webp',
     coords: { left: '40%', top: '75%' },
   },
 ];
@@ -123,7 +123,7 @@ function SmokeEffect() {
       maskImage: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
     }}>
       <img
-        src="/assets/bttf/smoke_effect.png"
+        src="/assets/bttf/smoke_effect.webp"
         alt="Smoke"
         style={{
           width: '100%',

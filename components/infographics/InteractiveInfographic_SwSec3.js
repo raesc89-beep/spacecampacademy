@@ -76,9 +76,9 @@ const INFOGRAPHIC_NODES = [
     id: 'lenguaje-ia',
     title: 'C-3PO: El Lenguaje de las Máquinas',
     color: '#FFD54F',
-    btnImage: '/assets/starwars/infographic_droides/btn_lenguaje_ia.png',
-    image: '/assets/starwars/infographic_droides/hero_lenguaje_ia.png',
-    bannerImage: '/assets/starwars/infographic_droides/banner_lenguaje_ia.png',
+    btnImage: '/assets/starwars/infographic_droides/btn_lenguaje_ia.webp',
+    image: '/assets/starwars/infographic_droides/hero_lenguaje_ia.webp',
+    bannerImage: '/assets/starwars/infographic_droides/banner_lenguaje_ia.webp',
     bannerCaption: 'De los jeroglíficos a los Transformers: la evolución del lenguaje artificial',
     content: [
       "Si has visto las películas de Star Wars, seguro recuerdas a C-3PO, ese droide dorado y brillante que siempre está presumiendo. Él se enorgullece constantemente de dominar a la perfección más de seis millones de formas distintas de comunicación. Aunque parece magia de una galaxia lejana, hoy en día nuestros propios programas de Inteligencia Artificial han logrado hazañas lingüísticas sorprendentes. Gracias a una rama de la informática llamada Procesamiento de Lenguaje Natural (PLN), las computadoras modernas ahora pueden entender, traducir y generar lenguaje humano a niveles que hubieran parecido imposibles hace apenas un par de décadas.",
@@ -101,16 +101,16 @@ const INFOGRAPHIC_NODES = [
     ],
     fact: 'En 2017, un equipo de genios investigadores de Google publicó un artículo titulado "Attention Is All You Need". Este documento ha sido citado más de 100,000 veces en investigaciones posteriores, convirtiéndolo en uno de los artículos científicos más influyentes en toda la historia de la informática. Gracias a ese texto, hoy existen todos los chatbots modernos.',
     extraImages: [
-      { src: '/assets/starwars/infographic_droides/extras/c3po_r2d2_tatooine.png', caption: 'C-3PO y R2-D2 en Tatooine â€” los droides más icónicos de Star Wars' }
+      { src: '/assets/starwars/infographic_droides/extras/c3po_r2d2_tatooine.webp', caption: 'C-3PO y R2-D2 en Tatooine â€” los droides más icónicos de Star Wars' }
     ]
   },
   {
     id: 'rovers-autonomos',
     title: 'R2-D2 en Marte: Perseverance e Ingenuity',
     color: '#FF7043',
-    btnImage: '/assets/starwars/infographic_droides/btn_rovers_autonomos.png',
-    image: '/assets/starwars/infographic_droides/hero_rovers_autonomos.png',
-    bannerImage: '/assets/starwars/infographic_droides/banner_rovers_autonomos.png',
+    btnImage: '/assets/starwars/infographic_droides/btn_rovers_autonomos.webp',
+    image: '/assets/starwars/infographic_droides/hero_rovers_autonomos.webp',
+    bannerImage: '/assets/starwars/infographic_droides/banner_rovers_autonomos.webp',
     bannerCaption: 'Perseverance recorre Marte de forma autónoma usando IA para evitar obstáculos',
     content: [
       "Todos sabemos que el heroico e inseparable droide astromecánico R2-D2 es el verdadero salvador en innumerables ocasiones durante la saga de Star Wars. Con su cuerpo en forma de barril blanco y azul, R2 repara naves dañadas en pleno vuelo espacial, hackea rápidamente enormes computadoras imperiales enemigas y guarda datos vitales para la Alianza Rebelde. Hoy, en nuestro propio sistema solar, la agencia espacial NASA tiene sus propias versiones reales de astromecánicos valientes, pero no exploran la Estrella de la Muerte, sino la superficie polvorienta y desolada del planeta Marte.",
@@ -133,16 +133,16 @@ const INFOGRAPHIC_NODES = [
     ],
     fact: 'El sofisticado sistema de inteligencia artificial AutoNav que utiliza el rover Perseverance funciona combinando múltiples cámaras estéreo con una red neuronal profunda. Esto le permite crear detallados mapas 3D del terreno marciano en tiempo real mientras se mueve, logrando conducirse autónomamente a una velocidad de 120 metros por hora, cuatro veces más rápido que Curiosity.',
     extraImages: [
-      { src: '/assets/starwars/infographic_droides/extras/c3po_r2d2_poster.png', caption: 'C-3PO y R2-D2 â€” arte conceptual inspirado en la trilogía original' }
+      { src: '/assets/starwars/infographic_droides/extras/c3po_r2d2_poster.webp', caption: 'C-3PO y R2-D2 â€” arte conceptual inspirado en la trilogía original' }
     ]
   },
   {
     id: 'protesis-bionicas',
     title: 'La Mano de Luke: Prótesis Biónicas',
     color: '#42A5F5',
-    btnImage: '/assets/starwars/infographic_droides/btn_protesis_bionicas.png',
-    image: '/assets/starwars/infographic_droides/hero_protesis_bionicas.png',
-    bannerImage: '/assets/starwars/infographic_droides/banner_protesis_bionicas.png',
+    btnImage: '/assets/starwars/infographic_droides/btn_protesis_bionicas.webp',
+    image: '/assets/starwars/infographic_droides/hero_protesis_bionicas.webp',
+    bannerImage: '/assets/starwars/infographic_droides/banner_protesis_bionicas.webp',
     bannerCaption: 'Las prótesis modernas pueden sentir presión y temperatura gracias a interfaces neuronales',
     content: [
       "Uno de los momentos más impactantes de la saga espacial es cuando Luke Skywalker pierde su mano derecha durante un feroz duelo de sables de luz. Recibe una prótesis cibernética asombrosa que se ve, se mueve e incluso siente exactamente como una mano biológica real humana. Durante muchas décadas, los admiradores de la película creyeron que esto solo existiría en la imaginación y la ficción. Pero la ciencia moderna, combinando la medicina, la robótica y la ingeniería, está haciendo que las prótesis biónicas reales sean igual de asombrosas que la tecnología médica del universo de Star Wars.",
@@ -169,9 +169,9 @@ const INFOGRAPHIC_NODES = [
     id: 'robots-cirujanos',
     title: 'Droides Médicos: El Sistema Da Vinci',
     color: '#66BB6A',
-    btnImage: '/assets/starwars/infographic_droides/btn_robots_cirujanos.png',
-    image: '/assets/starwars/infographic_droides/hero_robots_cirujanos.png',
-    bannerImage: '/assets/starwars/infographic_droides/banner_robots_cirujanos.png',
+    btnImage: '/assets/starwars/infographic_droides/btn_robots_cirujanos.webp',
+    image: '/assets/starwars/infographic_droides/hero_robots_cirujanos.webp',
+    bannerImage: '/assets/starwars/infographic_droides/banner_robots_cirujanos.webp',
     bannerCaption: 'El sistema Da Vinci ha realizado más de 12 millones de cirugías desde el año 2000',
     content: [
       "En el extenso universo de Star Wars, los droides médicos como el modelo 2-1B son robots confiables y precisos que se encargan de sanar todas las peores heridas de batalla de los valientes miembros de la Alianza Rebelde. Hoy en día, nuestros propios hospitales modernos del mundo real cuentan con una tecnología robótica médica espectacular. vanguardista, destacando entre todos el mundialmente famoso 'Sistema Quirúrgico Da Vinci', desarrollado por la compañía Intuitive Surgical, una maravilla aprobada por la FDA desde el lejano año 2000.",
@@ -198,9 +198,9 @@ const INFOGRAPHIC_NODES = [
     id: 'atlas-spot',
     title: 'Boston Dynamics: Atlas y Spot',
     color: '#AB47BC',
-    btnImage: '/assets/starwars/infographic_droides/btn_atlas_spot.png',
-    image: '/assets/starwars/infographic_droides/hero_atlas_spot.png',
-    bannerImage: '/assets/starwars/infographic_droides/banner_atlas_spot.png',
+    btnImage: '/assets/starwars/infographic_droides/btn_atlas_spot.webp',
+    image: '/assets/starwars/infographic_droides/hero_atlas_spot.webp',
+    bannerImage: '/assets/starwars/infographic_droides/banner_atlas_spot.webp',
     bannerCaption: 'Atlas puede correr, saltar y hacer parkour â€” Spot inspecciona fábricas y obras',
     content: [
       "Aunque no tenemos droides de batalla B1 marchando en masivos y amenazantes ejércitos en el planeta Tierra, sí contamos con robots ágiles y asombrosos que son una maravilla mecánica de última generación. La empresa estadounidense llamada Boston Dynamics ha construido durante los últimos años algunos de los robots bípedos y cuadrúpedos más avanzados. mundialmente reconocidos de toda la historia, como su robot humanoide estrella, el poderoso 'Atlas', y el ágil robot con apariencia de perro amarillo conocido popularmente como'Spot'.",
@@ -223,16 +223,16 @@ const INFOGRAPHIC_NODES = [
     ],
     fact: 'En 2024, Boston Dynamics reveló un rediseño de su robot Atlas, cambiando la tecnología hidráulica por maquinaria eléctrica. El nuevo Atlas eléctrico puede rotar sus articulaciones 360 grados, un movimiento biomecánicamente imposible para un humano, y puede levantarse desde el suelo usando maniobras innovadoras en robótica.',
     extraImages: [
-      { src: '/assets/starwars/infographic_droides/extras/grievous_battle.png', caption: 'General Grievous â€” el temible cyborg con cuatro lightsabers' }
+      { src: '/assets/starwars/infographic_droides/extras/grievous_battle.webp', caption: 'General Grievous â€” el temible cyborg con cuatro lightsabers' }
     ]
   },
   {
     id: 'ia-cientifica',
     title: 'AlphaFold: IA que Salva Vidas',
     color: '#4FC3F7',
-    btnImage: '/assets/starwars/infographic_droides/btn_ia_cientifica.png',
-    image: '/assets/starwars/infographic_droides/hero_ia_cientifica.png',
-    bannerImage: '/assets/starwars/infographic_droides/banner_ia_cientifica.png',
+    btnImage: '/assets/starwars/infographic_droides/btn_ia_cientifica.webp',
+    image: '/assets/starwars/infographic_droides/hero_ia_cientifica.webp',
+    bannerImage: '/assets/starwars/infographic_droides/banner_ia_cientifica.webp',
     bannerCaption: 'AlphaFold predijo la estructura de 200 millones de proteínas â€” Nobel de Química 2024',
     content: [
       "Mientras que muchos de los droides de las emocionantes películas de Star Wars son fabricados para ayudar en épicas batallas espaciales o arreglar viejas naves, la verdadera Inteligencia Artificial del mundo humano tiene metas aún más grandiosas e inspiradoras: ayudar silenciosamente a salvar incontables. valiosas vidas. El ejemplo más brillante y espectacular de todos se llama 'AlphaFold', que es un programa de computadora increíble creado por la y revolucionaria compañía británica DeepMind, experta mundial indiscutible en redes neuronales e inteligencia artificial.",
@@ -259,9 +259,9 @@ const INFOGRAPHIC_NODES = [
     id: 'futuro-droides',
     title: 'Construye tu Propio Droide',
     color: '#CE93D8',
-    btnImage: '/assets/starwars/infographic_droides/btn_futuro_droides.png',
-    image: '/assets/starwars/infographic_droides/hero_futuro_droides.png',
-    bannerImage: '/assets/starwars/infographic_droides/banner_futuro_droides.png',
+    btnImage: '/assets/starwars/infographic_droides/btn_futuro_droides.webp',
+    image: '/assets/starwars/infographic_droides/hero_futuro_droides.webp',
+    bannerImage: '/assets/starwars/infographic_droides/banner_futuro_droides.webp',
     bannerCaption: 'Arduino, LEGO y FIRST Robotics: la robótica está al alcance de todos',
     content: [
       "Si toda esta sorprendente tecnología, inteligencias artificiales, helicópteros marcianos y brazos biónicos súper precisos han logrado encender la curiosidad de tu imaginación por completo, ¡tenemos grandes noticias para ti! nunca en toda la historia de la humanidad había resultado tan sencillo e barato lograr adentrarse en este apasionante y creativo mundo. Las herramientas perfectas e ideales para aprender y empezar ya existen en todas las escuelas y hogares, abriendo un abanico de posibilidades ilimitadas para que des tus primeros pasos en la robótica.",
@@ -284,8 +284,8 @@ const INFOGRAPHIC_NODES = [
     ],
     fact: 'El escritor Isaac Asimov postuló sus "Tres Leyes" de la Robótica en 1942: Primera: Un robot no debe dañar a un humano ni permitir que sufra daño por inacción. Segunda: Debe cumplir órdenes dadas a menos que violen la primera ley. Tercera: Un robot debe proteger su propia existencia, siempre y cuando no viole la primera o segunda ley. Es interesante notar que estas reglas nacidas de la ficción han inspirado debates éticos y regulaciones en inteligencia artificial en la vida real.',
     extraImages: [
-      { src: '/assets/starwars/infographic_droides/extras/bb8_cartoon.png', caption: 'BB-8 â€” el adorable droide esférico de la nueva trilogía' },
-      { src: '/assets/starwars/infographic_droides/extras/bb8_vector.png', caption: 'BB-8 â€” diseño vectorial del droide astromecánico' }
+      { src: '/assets/starwars/infographic_droides/extras/bb8_cartoon.webp', caption: 'BB-8 â€” el adorable droide esférico de la nueva trilogía' },
+      { src: '/assets/starwars/infographic_droides/extras/bb8_vector.webp', caption: 'BB-8 â€” diseño vectorial del droide astromecánico' }
     ]
   }
 ];
@@ -728,7 +728,7 @@ export default function InteractiveInfographic_SwSec3() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_droides/sw_badge_3.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              <img src="/assets/starwars/infographic_droides/sw_badge_3.webp" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
               ¡SISTEMAS INICIALIZADOS!
               <Sparkles size={24} />
             </motion.div>

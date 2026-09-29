@@ -32,10 +32,10 @@ export default function AnimalesHub() {
 
   // Coordenadas orgánicas distribuidas 
   const orbitalData = {
-    animales_intro: { left: '20%', top: '50%', size: 'clamp(80px, 9vw, 120px)', img: '/assets/animales/hub_intro.png' },
-    animales_albert_ham: { left: '55%', top: '70%', size: 'clamp(100px, 11vw, 150px)', img: '/assets/animales/hub_albert_ham.png' },
-    animales_laika: { left: '75%', top: '25%', size: 'clamp(110px, 12vw, 160px)', img: '/assets/animales/hub_laika.png' },
-    animales_gatos: { left: '90%', top: '60%', size: 'clamp(80px, 9vw, 130px)', img: '/assets/animales/nuevo_hub_gatos.png' }
+    animales_intro: { left: '20%', top: '50%', size: 'clamp(80px, 9vw, 120px)', img: '/assets/animales/hub_intro.webp' },
+    animales_albert_ham: { left: '55%', top: '70%', size: 'clamp(100px, 11vw, 150px)', img: '/assets/animales/hub_albert_ham.webp' },
+    animales_laika: { left: '75%', top: '25%', size: 'clamp(110px, 12vw, 160px)', img: '/assets/animales/hub_laika.webp' },
+    animales_gatos: { left: '90%', top: '60%', size: 'clamp(80px, 9vw, 130px)', img: '/assets/animales/nuevo_hub_gatos.webp' }
   };
 
   // Determinar Índice de Progreso

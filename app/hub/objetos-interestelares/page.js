@@ -26,12 +26,12 @@ export default function ObjetosInterestelaresHub() {
 
   // Coordenadas orgánicas distribuidas a lo largo del Canvas
   const orbitalData = {
-    'interestelar_m1': { left: '20%', top: '45%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/interestelar/obj1.png' },
-    'interestelar_m2': { left: '33%', top: '65%', size: 'clamp(60px, 8vw, 100px)', imgUrl: '/assets/interestelar/oumuamua.png' },
-    'interestelar_m3': { left: '46%', top: '45%', size: 'clamp(70px, 9vw, 110px)', imgUrl: '/assets/interestelar/borisov.png' },
-    'interestelar_m4': { left: '59%', top: '25%', size: 'clamp(75px, 9.5vw, 120px)', imgUrl: '/assets/interestelar/atlas.png' },
-    'interestelar_m5': { left: '72%', top: '45%', size: 'clamp(65px, 8.5vw, 105px)', imgUrl: '/assets/interestelar/oort.png' },
-    'interestelar_m6': { left: '85%', top: '65%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/interestelar/voyager.png' }
+    'interestelar_m1': { left: '20%', top: '45%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/interestelar/obj1.webp' },
+    'interestelar_m2': { left: '33%', top: '65%', size: 'clamp(60px, 8vw, 100px)', imgUrl: '/assets/interestelar/oumuamua.webp' },
+    'interestelar_m3': { left: '46%', top: '45%', size: 'clamp(70px, 9vw, 110px)', imgUrl: '/assets/interestelar/borisov.webp' },
+    'interestelar_m4': { left: '59%', top: '25%', size: 'clamp(75px, 9.5vw, 120px)', imgUrl: '/assets/interestelar/atlas.webp' },
+    'interestelar_m5': { left: '72%', top: '45%', size: 'clamp(65px, 8.5vw, 105px)', imgUrl: '/assets/interestelar/oort.webp' },
+    'interestelar_m6': { left: '85%', top: '65%', size: 'clamp(70px, 9vw, 120px)', imgUrl: '/assets/interestelar/voyager.webp' }
   };
 
   // Determinar Índice de Progreso
@@ -81,7 +81,7 @@ export default function ObjetosInterestelaresHub() {
       
       {/* Asteroide 1 cruzando el espacio — izq→der, parte superior, con rotación */}
       <motion.img 
-        src="/assets/interestelar/asteroid_cross.png" 
+        src="/assets/interestelar/asteroid_cross.webp" 
         alt="Asteroide"
         animate={{ 
           x: ['-15vw', '30vw', '60vw', '90vw', '125vw'], 
@@ -94,7 +94,7 @@ export default function ObjetosInterestelaresHub() {
       />
       {/* Asteroide 2 — der→izq, parte media-alta, rotación inversa */}
       <motion.img 
-        src="/assets/interestelar/asteroid_cross.png" 
+        src="/assets/interestelar/asteroid_cross.webp" 
         alt="Asteroide 2"
         animate={{ 
           x: ['130vw', '90vw', '50vw', '15vw', '-20vw'], 
@@ -107,7 +107,7 @@ export default function ObjetosInterestelaresHub() {
       />
       {/* Oumuamua — lento, der→izq, parte inferior, más grande */}
       <motion.img 
-        src="/assets/interestelar/oumuamua_cross.png" 
+        src="/assets/interestelar/oumuamua_cross.webp" 
         alt="Objeto Interestelar tipo Oumuamua"
         animate={{ 
           x: ['125vw', '80vw', '45vw', '10vw', '-20vw'], 
@@ -147,7 +147,7 @@ export default function ObjetosInterestelaresHub() {
             maskImage: 'radial-gradient(circle at center, black 45%, transparent 68%)',
         }}>
           <motion.img
-            src="/assets/interestelar/galaxy_spin.png"
+            src="/assets/interestelar/galaxy_spin.webp"
             alt="Spinning Galaxy"
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 150, ease: "linear" }}

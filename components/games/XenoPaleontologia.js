@@ -10,7 +10,7 @@ import { Clock, Star, Trophy, ChevronRight, ChevronLeft, Pickaxe } from 'lucide-
 const FOSSILS = [
   {
     name: 'Amonita Alienígena',
-    imagePath: '/assets/fossils/fossil_amonita.png',
+    imagePath: '/assets/fossils/fossil_amonita.webp',
     color: '#8B4513', glow: '#D4692A',
     hint: 'Cefalópodo espiral con caparazón bio-luminiscente que emitía luz en océanos de amoníaco.',
     pts: 350,
@@ -21,7 +21,7 @@ const FOSSILS = [
   },
   {
     name: 'Esqueleto del Visitante',
-    imagePath: '/assets/fossils/fossil_esqueleto.png',
+    imagePath: '/assets/fossils/fossil_esqueleto.webp',
     color: '#C8C8C8', glow: '#00FFFF',
     hint: 'Restos óseos de un humanoide de cráneo grande, adaptado a gravedad cero y telepatía.',
     pts: 500,
@@ -32,7 +32,7 @@ const FOSSILS = [
   },
   {
     name: 'Leviatán del Vacío',
-    imagePath: '/assets/fossils/fossil_ballena.png',
+    imagePath: '/assets/fossils/fossil_ballena.webp',
     color: '#1A4A6B', glow: '#00DDFF',
     hint: 'Gigantesca criatura que filtraba polvo estelar para alimentarse en nebulosas frías.',
     pts: 600,
@@ -43,7 +43,7 @@ const FOSSILS = [
   },
   {
     name: 'Hongo de Esporas Cuánticas',
-    imagePath: '/assets/fossils/fossil_hongo.png',
+    imagePath: '/assets/fossils/fossil_hongo.webp',
     color: '#4a2a6a', glow: '#aa44ff',
     hint: 'Fósil de flora fúngica capaz de interconectar biomas enteros a través de micelio cuántico.',
     pts: 300,
@@ -54,7 +54,7 @@ const FOSSILS = [
   },
   {
     name: 'Artrópodo Magmático',
-    imagePath: '/assets/fossils/fossil_escorpion.png',
+    imagePath: '/assets/fossils/fossil_escorpion.webp',
     color: '#5a2a0a', glow: '#ff6622',
     hint: 'Depredador blindado que nadaba en ríos de lava, con una cola de aguijón termo-tóxico.',
     pts: 450,
@@ -65,7 +65,7 @@ const FOSSILS = [
   },
   {
     name: 'Gusano Devorador de Rocas',
-    imagePath: '/assets/fossils/fossil_gusano.png',
+    imagePath: '/assets/fossils/fossil_gusano.webp',
     color: '#2a4a2a', glow: '#44ee44',
     hint: 'Colosal anélido subterráneo con fauces circulares dentadas para triturar cuarzo alienígena.',
     pts: 550,
@@ -76,7 +76,7 @@ const FOSSILS = [
   },
   {
     name: 'Cazador Atmosférico',
-    imagePath: '/assets/fossils/fossil_pterodactilo.png',
+    imagePath: '/assets/fossils/fossil_pterodactilo.webp',
     color: '#3a3a6a', glow: '#8888ff',
     hint: 'Reptil volador fosilizado con alas cristalinas para surcar tormentas de gas tóxico.',
     pts: 480,
@@ -87,7 +87,7 @@ const FOSSILS = [
   },
   {
     name: 'Cefalópodo del Cristal',
-    imagePath: '/assets/fossils/fossil_pulpo.png',
+    imagePath: '/assets/fossils/fossil_pulpo.webp',
     color: '#3a1a5a', glow: '#cc44ff',
     hint: 'Entidad cefalópoda con tentáculos cristalinos que manipulaba las ondas gravitacionales.',
     pts: 520,

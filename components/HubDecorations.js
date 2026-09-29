@@ -24,7 +24,7 @@ export default function HubDecorations() {
         }}
       >
          <img 
-            src="/assets/amde_logo.png"
+            src="/assets/amde_logo.webp"
             alt="Space Camp Logo"
             style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'normal' }} 
          />
@@ -47,7 +47,7 @@ export default function HubDecorations() {
           style={{ offsetPath: "path('M -10,80 Q 30,20 60,70 T 110,40')", offsetRotate: "auto" }}
         >
           {/* Premium Vector Spaceship */}
-          <img src="/assets/shuttle_vector.png" alt="Travel Shuttle" style={{ width: '40px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(0,228,255,0.5))' }} />
+          <img src="/assets/shuttle_vector.webp" alt="Travel Shuttle" style={{ width: '40px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(0,228,255,0.5))' }} />
         </motion.g>
       </motion.svg>
 
@@ -62,7 +62,7 @@ export default function HubDecorations() {
           style={{ offsetPath: "path('M 110,10 Q 50,50 80,90 T -10,50')", offsetRotate: "auto" }}
         >
           {/* Premium Vector UFO */}
-          <img src="/assets/ufo_vector.png" alt="Alien UFO" style={{ width: '50px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(0,255,136,0.6))' }} />
+          <img src="/assets/ufo_vector.webp" alt="Alien UFO" style={{ width: '50px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(0,255,136,0.6))' }} />
         </motion.g>
       </motion.svg>
     </>

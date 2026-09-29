@@ -6,7 +6,7 @@ import { Search, CheckCircle, AlertCircle, Radar, Crosshair, Clock, Timer } from
 const CHALLENGES = [
   {
     riddle: "CALLES DE MOSCÚ: Haz clic sobre Laika (el perro callejero), el satélite Sputnik en el techo, y la huella gigante en la nieve.",
-    imageUrl: "/assets/animales/laika_challenge_1_1779733797282.png",
+    imageUrl: "/assets/animales/laika_challenge_1_1779733797282.webp",
     targets: [
       { id: 'laika', name: 'Laika', x: 75, y: 87, radius: 12, found: false },
       { id: 'modulo', name: 'Satélite Sputnik', x: 30, y: 24, radius: 12, found: false },
@@ -15,7 +15,7 @@ const CHALLENGES = [
   },
   {
     riddle: "ÓRBITA TERRESTRE: Encuentra al perro astronauta flotando en el espacio, una cápsula espacial cónica, y la tarjeta con huella de perro.",
-    imageUrl: "/assets/animales/laika_challenge_2_1779733816425.png",
+    imageUrl: "/assets/animales/laika_challenge_2_1779733816425.webp",
     targets: [
       { id: 'laika', name: 'Perro Astronauta', x: 22, y: 50, radius: 12, found: false },
       { id: 'modulo', name: 'Cápsula Espacial', x: 72, y: 72, radius: 12, found: false },
@@ -24,7 +24,7 @@ const CHALLENGES = [
   },
   {
     riddle: "COMANDO SOVIÉTICO: Localiza a Laika con su casco espacial, el módulo miniatura en los planos, y la huella de perro en los esquemas.",
-    imageUrl: "/assets/animales/laika_challenge_3_1779733835882.png",
+    imageUrl: "/assets/animales/laika_challenge_3_1779733835882.webp",
     targets: [
       { id: 'laika', name: 'Laika con Casco', x: 12, y: 48, radius: 12, found: false },
       { id: 'modulo', name: 'Módulo en los Planos', x: 35, y: 58, radius: 12, found: false },
@@ -33,7 +33,7 @@ const CHALLENGES = [
   },
   {
     riddle: "BOSQUE SIBERIANO: Entre los pinos nevados halla al astronauta, la cápsula estrellada marcada LUNAR, y la huella gigante en la nieve.",
-    imageUrl: "/assets/animales/laika_challenge_4_1779733853895.png",
+    imageUrl: "/assets/animales/laika_challenge_4_1779733853895.webp",
     targets: [
       { id: 'laika', name: 'Astronauta en el Bosque', x: 38, y: 50, radius: 12, found: false },
       { id: 'modulo', name: 'Cápsula LUNAR', x: 73, y: 70, radius: 12, found: false },
@@ -42,7 +42,7 @@ const CHALLENGES = [
   },
   {
     riddle: "PLAZA ROJA: Durante el desfile épico ubica a Laika astronauta con su letrero, el módulo sobre un tanque, y la huella roja pintada.",
-    imageUrl: "/assets/animales/laika_challenge_5_1779733871604.png",
+    imageUrl: "/assets/animales/laika_challenge_5_1779733871604.webp",
     targets: [
       { id: 'laika', name: 'Laika Astronauta', x: 20, y: 85, radius: 12, found: false },
       { id: 'modulo', name: 'Módulo en Tanque', x: 55, y: 60, radius: 12, found: false },

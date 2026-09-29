@@ -17,7 +17,7 @@ const HANGAR_MODULES = [
     subtitle: "Construye y mejora tu vehículo espacial con tecnología de punta.",
     link: "/hangar/nave",
     icon: <Rocket size={48} color="#00E4FF" />,
-    bgSrc: "/assets/dashboard/interestelar_cover.png", // Or similar space ship background
+    bgSrc: "/assets/dashboard/interestelar_cover.webp", // Or similar space ship background
     borderColor: "rgba(0, 228, 255, 0.5)",
     glowColor: "rgba(0, 228, 255, 0.2)",
     features: ["Propulsores", "Escudos", "Pintura"]
@@ -28,7 +28,7 @@ const HANGAR_MODULES = [
     subtitle: "Personaliza tu traje espacial, casco e insignias de la misión.",
     link: "/hangar/avatar",
     icon: <User size={48} color="#FFD700" />,
-    bgSrc: "/assets/dashboard/pioneros_cover.png", // Or avatar background
+    bgSrc: "/assets/dashboard/pioneros_cover.webp", // Or avatar background
     borderColor: "rgba(255, 215, 0, 0.5)",
     glowColor: "rgba(255, 215, 0, 0.2)",
     features: ["Traje", "Parches", "Especialidad"]
@@ -39,7 +39,7 @@ const HANGAR_MODULES = [
     subtitle: "Diseña tu propia estación orbital. [Desarrollo Clasificado]",
     link: "/hangar/base",
     icon: <Building size={48} color="#9933FF" />,
-    bgSrc: "/assets/dashboard/agujeros_gusano_cover.png", // Or base background
+    bgSrc: "/assets/dashboard/agujeros_gusano_cover.webp", // Or base background
     borderColor: "rgba(153, 51, 255, 0.5)",
     glowColor: "rgba(153, 51, 255, 0.2)",
     features: ["Módulos", "Defensa", "Hábitat"],

@@ -71,7 +71,7 @@ export default function SolarSystemMap() {
       
       {/* Vehículos Espaciales de Fondo */}
       <motion.img 
-        src="/assets/shuttle_user.png" 
+        src="/assets/shuttle_user.webp" 
         alt="Shuttle"
         animate={{ x: ['-20vw', '120vw'], y: ['0vh', '15vh', '-5vh', '10vh'] }}
         transition={{ repeat: Infinity, duration: 45, ease: "linear" }}
@@ -79,7 +79,7 @@ export default function SolarSystemMap() {
       />
       
       <motion.img 
-        src="/assets/ufo_user.png" 
+        src="/assets/ufo_user.webp" 
         alt="UFO"
         animate={{ x: ['120vw', '-20vw'], y: ['0vh', '-20vh', '15vh', '5vh'] }}
         transition={{ repeat: Infinity, duration: 65, ease: "linear" }}

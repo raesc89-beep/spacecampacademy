@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 
 // Image Assets
-const SHIP_IMG_SRC = '/assets/arcade/ship.png';
+const SHIP_IMG_SRC = '/assets/arcade/ship.webp';
 const OBSTACLES = [
-  '/assets/arcade/obstacle_asteroid_1779748374804.png',
-  '/assets/arcade/obstacle_debris_1779748391625.png',
-  '/assets/arcade/obstacle_alien_1779748408664.png'
+  '/assets/arcade/obstacle_asteroid_1779748374804.webp',
+  '/assets/arcade/obstacle_debris_1779748391625.webp',
+  '/assets/arcade/obstacle_alien_1779748408664.webp'
 ];
 
 // Game has no fixed duration — survive as long as possible

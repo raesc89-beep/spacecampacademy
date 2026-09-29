@@ -89,9 +89,9 @@ const INFOGRAPHIC_NODES = [
     id: 'protesis-bionicas',
     title: 'Prótesis Biónicas: El Brazo de Luke',
     color: '#D32F2F',
-    btnImage: '/assets/starwars/infographic_vader/btn_protesis_bionicas.png',
-    image: '/assets/starwars/infographic_vader/hero_protesis_bionicas.png',
-    bannerImage: '/assets/starwars/infographic_vader/banner_protesis_bionicas.png',
+    btnImage: '/assets/starwars/infographic_vader/btn_protesis_bionicas.webp',
+    image: '/assets/starwars/infographic_vader/hero_protesis_bionicas.webp',
+    bannerImage: '/assets/starwars/infographic_vader/banner_protesis_bionicas.webp',
     bannerCaption: "Las prótesis biónicas modernas usan sensores mioeléctricos que traducen señales musculares en movimientos precisos.",
     content: [
       "Imagina perder una extremidad y poder reemplazarla con un brazo robótico funcional que responde directamente a tus pensamientos. En el mundo de la medicina moderna y la ingeniería biomédica, las prótesis biónicas han dejado de ser ciencia ficción para convertirse en una realidad transformadora. Utilizando materiales ligeros como la fibra de carbono y el titanio, junto con motores miniaturizados y sensores de alta precisión, los ingenieros han logrado crear extremidades artificiales. Imitan de manera sorprendente el movimiento fluido y natural del cuerpo humano, devolviendo la independencia y mejorando drásticamente la calidad de vida de miles de pacientes amputados alrededor del mundo.",
@@ -123,9 +123,9 @@ const INFOGRAPHIC_NODES = [
     id: 'soporte-vital',
     title: 'El Traje: Sistema de Soporte Vital',
     color: '#607D8B',
-    btnImage: '/assets/starwars/infographic_vader/btn_soporte_vital.png',
-    image: '/assets/starwars/infographic_vader/hero_soporte_vital.png',
-    bannerImage: '/assets/starwars/infographic_vader/banner_soporte_vital.png',
+    btnImage: '/assets/starwars/infographic_vader/btn_soporte_vital.webp',
+    image: '/assets/starwars/infographic_vader/hero_soporte_vital.webp',
+    bannerImage: '/assets/starwars/infographic_vader/banner_soporte_vital.webp',
     bannerCaption: "Los sistemas de soporte vital regulan presión, oxígeno y temperatura para sustituir funciones orgánicas comprometidas.",
     content: [
       "Cuando el entorno que nos rodea es absoluta y letal para la frágil biología humana, la ingeniería de soporte vital se convierte en nuestro único y más resistente escudo protector. Un sistema de soporte vital (Life Support System) es una compleja e intrincada red tecnológica diseñada específicamente para proporcionar los elementos básicos e indispensables. Un organismo humano necesita biológicamente para sobrevivir: oxígeno puro, presión atmosférica estable, eliminación eficiente del dióxido de carbono tóxico, agua potable limpia y una regulación estricta y constante de la temperatura corporal central.",
@@ -157,9 +157,9 @@ const INFOGRAPHIC_NODES = [
     id: 'exoesqueletos',
     title: 'Exoesqueletos: Armaduras del Futuro',
     color: '#B71C1C',
-    btnImage: '/assets/starwars/infographic_vader/btn_exoesqueletos.png',
-    image: '/assets/starwars/infographic_vader/hero_exoesqueletos.png',
-    bannerImage: '/assets/starwars/infographic_vader/banner_exoesqueletos.png',
+    btnImage: '/assets/starwars/infographic_vader/btn_exoesqueletos.webp',
+    image: '/assets/starwars/infographic_vader/hero_exoesqueletos.webp',
+    bannerImage: '/assets/starwars/infographic_vader/banner_exoesqueletos.webp',
     bannerCaption: "Los exoesqueletos robóticos asisten la movilidad multiplicando la fuerza humana mediante actuadores hidráulicos y eléctricos.",
     content: [
       "Un exoesqueleto biomédico es una armadura mecanizada diseñada para acoplarse al cuerpo y multiplicar la fuerza humana o asistir la movilidad. Esta tecnología permite desde levantar pesadas cargas industriales hasta ayudar a una persona con parálisis a caminar nuevamente.",
@@ -191,9 +191,9 @@ const INFOGRAPHIC_NODES = [
     id: 'interfaz-cerebro',
     title: 'Interfaces Cerebro-Máquina',
     color: '#90A4AE',
-    btnImage: '/assets/starwars/infographic_vader/btn_interfaz_cerebro.png',
-    image: '/assets/starwars/infographic_vader/hero_interfaz_cerebro.png',
-    bannerImage: '/assets/starwars/infographic_vader/banner_interfaz_cerebro.png',
+    btnImage: '/assets/starwars/infographic_vader/btn_interfaz_cerebro.webp',
+    image: '/assets/starwars/infographic_vader/hero_interfaz_cerebro.webp',
+    bannerImage: '/assets/starwars/infographic_vader/banner_interfaz_cerebro.webp',
     bannerCaption: "Las interfaces cerebro-computadora (BCI) decodifican señales neuronales corticales para controlar dispositivos externos.",
     content: [
       "Imagina poder mover un brazo robótico, escribir un mensaje o pilotar un dron con solo pensarlo, sin mover un solo músculo de tu cuerpo. Eso es exactamente lo que logran las Interfaces Cerebro-Computadora, conocidas como BCI por sus siglas en inglés (Brain-Computer Interface). Esta tecnología crea un puente directo entre tu cerebro y una máquina externa, traduciendo las señales eléctricas de tus neuronas en comandos digitales que un ordenador puede interpretar y ejecutar. Es como si tu cerebro tuviera un cable USB invisible conectado directamente al mundo digital, permitiéndote interactuar con la tecnología usando únicamente el poder de tus pensamientos.",
@@ -225,9 +225,9 @@ const INFOGRAPHIC_NODES = [
     id: 'regeneracion-tejidos',
     title: 'Tanques de Bacta: Regeneración Celular',
     color: '#C62828',
-    btnImage: '/assets/starwars/infographic_vader/btn_regeneracion_tejidos.png',
-    image: '/assets/starwars/infographic_vader/hero_regeneracion_tejidos.png',
-    bannerImage: '/assets/starwars/infographic_vader/banner_regeneracion_tejidos.png',
+    btnImage: '/assets/starwars/infographic_vader/btn_regeneracion_tejidos.webp',
+    image: '/assets/starwars/infographic_vader/hero_regeneracion_tejidos.webp',
+    bannerImage: '/assets/starwars/infographic_vader/banner_regeneracion_tejidos.webp',
     bannerCaption: "La medicina regenerativa emplea células madre y bioandamios para reconstruir tejidos dañados como cartílago y piel.",
     content: [
       "En el universo de Star Wars, cuando un personaje resulta gravemente herido, quemado por lava o mutilado en combate, la solución médica galáctica es sumergirlo durante horas en un enorme tanque vertical lleno de un misterioso líquido azulado llamado Bacta. Este gel biológico ficticio acelera la regeneración de tejidos dañados, cierra heridas y repara quemaduras a una velocidad que haría llorar de envidia a cualquier cirujano terrestre. Aunque parezca pura fantasía, la ciencia real de la medicina regenerativa está trabajando para crear algo parecido: terapias que estimulen al cuerpo humano para repararse a sí mismo de maneras que antes se consideraban imposibles.",
@@ -259,9 +259,9 @@ const INFOGRAPHIC_NODES = [
     id: 'respiracion-asistida',
     title: 'La Respiración de Vader',
     color: '#78909C',
-    btnImage: '/assets/starwars/infographic_vader/btn_respiracion_asistida.png',
-    image: '/assets/starwars/infographic_vader/hero_respiracion_asistida.png',
-    bannerImage: '/assets/starwars/infographic_vader/banner_respiracion_asistida.png',
+    btnImage: '/assets/starwars/infographic_vader/btn_respiracion_asistida.webp',
+    image: '/assets/starwars/infographic_vader/hero_respiracion_asistida.webp',
+    bannerImage: '/assets/starwars/infographic_vader/banner_respiracion_asistida.webp',
     bannerCaption: "Los ventiladores mecánicos administran ciclos de presión positiva para asistir o reemplazar la respiración pulmonar.",
     content: [
       "Ese sonido rítmico, profundo y aterrador que escuchas cada vez que Darth Vader aparece en pantalla es probablemente el efecto sonoro más reconocible de toda la historia del cine. Pero detrás de ese inquietante silbido mecánico hay una realidad médica concreta: lo que estás escuchando es esencialmente un ventilador mecánico. El traje negro de Vader funciona como un sistema de soporte vital portátil que fuerza aire presurizado y enriquecido con oxígeno hacia el interior de sus pulmones severamente dañados por las quemaduras. Sufrió en Mustafar, exactamente igual que las máquinas de ventilación asistida que salvan miles de vidas cada día en los hospitales de todo el mundo.",
@@ -293,9 +293,9 @@ const INFOGRAPHIC_NODES = [
     id: 'cyborgs-futuro',
     title: 'Cyborgs: El Futuro de la Humanidad',
     color: '#E53935',
-    btnImage: '/assets/starwars/infographic_vader/btn_cyborgs_futuro.png',
-    image: '/assets/starwars/infographic_vader/hero_cyborgs_futuro.png',
-    bannerImage: '/assets/starwars/infographic_vader/banner_cyborgs_futuro.png',
+    btnImage: '/assets/starwars/infographic_vader/btn_cyborgs_futuro.webp',
+    image: '/assets/starwars/infographic_vader/hero_cyborgs_futuro.webp',
+    bannerImage: '/assets/starwars/infographic_vader/banner_cyborgs_futuro.webp',
     bannerCaption: "El concepto de cyborg, acuñado en 1960 por Clynes y Kline, explora la integración de tecnología con biología humana.",
     content: [
       "Darth Vader plantea una de las preguntas filosóficas más profundas de toda la saga: cuando reemplazas tus brazos, tus piernas, tus pulmones. Casi todo tu cuerpo por máquinas, en qué momento dejas de ser humano y te conviertes en algo diferente. La palabra cyborg (organismo cibernético) fue inventada en 1960 por los científicos Manfred Clynes. Nathan Kline en un artículo para la NASA, donde proponían modificar el cuerpo humano con tecnología para que pudiera sobrevivir en el espacio sin necesidad de trajes espaciales. La idea era simple pero revolucionaria: en lugar de cambiar el ambiente para adaptarlo al humano, cambiar al humano para adaptarlo al ambiente.",
@@ -740,7 +740,7 @@ export default function InteractiveInfographic_SwSec9() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #D32F2F, #B71C1C)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(211, 47, 47, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_vader/badge_vader.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              <img src="/assets/starwars/infographic_vader/badge_vader.webp" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
               ¡ANÁLISIS BIOMÉDICO COMPLETADO!
               <Sparkles size={24} />
             </motion.div>

@@ -123,7 +123,7 @@ export default function Navbar() {
         {/* Left: Logo + Back */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', overflow: 'hidden', flex: 1, minWidth: 0 }}>
           <Link href="/dashboard" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
-            <img src="/assets/amde_logo.png" alt="AMDE Logo" style={{ height: '38px', width: 'auto', objectFit: 'contain' }} />
+            <img src="/assets/amde_logo.webp" alt="AMDE Logo" style={{ height: '38px', width: 'auto', objectFit: 'contain' }} />
           </Link>
           {pathname !== '/dashboard' && (
             <Link href={backHref} style={{
@@ -212,7 +212,7 @@ export default function Navbar() {
           >
             <X size={22} />
           </button>
-          <img src="/assets/amde_logo.png" alt="AMDE" style={{ height: '48px', objectFit: 'contain', marginBottom: '0.5rem' }} />
+          <img src="/assets/amde_logo.webp" alt="AMDE" style={{ height: '48px', objectFit: 'contain', marginBottom: '0.5rem' }} />
           <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', textAlign: 'center', marginBottom: '0.5rem' }}>
             {userData?.name || user.email}
           </div>

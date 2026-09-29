@@ -9,20 +9,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const EGYPT_MODULES = [
   // Top row (Sky)
-  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.png',  coords: { left: '20%', top: '22%' } },
-  { id: 'egypt_m6',  titleEs: 'Mapa del Universo', color: '#9B6BFF', link: '/course/egypt_m6',  icon: '/assets/egypt/m6_senenmut.png',     coords: { left: '50%', top: '20%' } },
-  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.png',      coords: { left: '80%', top: '22%' } },
+  { id: 'egypt_m11', titleEs: 'Nilo de Nut',       color: '#9DD4F0', link: '/course/egypt_m11', icon: '/assets/egypt/m11_via_lactea.webp',  coords: { left: '20%', top: '22%' } },
+  { id: 'egypt_m6',  titleEs: 'Mapa del Universo', color: '#9B6BFF', link: '/course/egypt_m6',  icon: '/assets/egypt/m6_senenmut.webp',     coords: { left: '50%', top: '20%' } },
+  { id: 'egypt_m14', titleEs: 'Apofis',            color: '#FF5252', link: '/course/egypt_m14', icon: '/assets/egypt/m14_apofis.webp',      coords: { left: '80%', top: '22%' } },
 
   // Middle row (Horizon)
-  { id: 'egypt_m9',  titleEs: 'Zodiaco Dendera',   color: '#D46A6A', link: '/course/egypt_m9',  icon: '/assets/egypt/m9_dendera.png',      coords: { left: '15%', top: '42%' } },
-  { id: 'egypt_m10', titleEs: 'Daga Espacial',     color: '#B0C4DE', link: '/course/egypt_m10', icon: '/assets/egypt/m10_daga.png',        coords: { left: '40%', top: '45%' } },
-  { id: 'egypt_m13', titleEs: '365 Días',          color: '#80D080', link: '/course/egypt_m13', icon: '/assets/egypt/m13_calendario.png',  coords: { left: '62%', top: '42%' } },
-  { id: 'egypt_m8',  titleEs: 'Abu Simbel',        color: '#FF9A3C', link: '/course/egypt_m8',  icon: '/assets/egypt/m8_abu_simbel.png',   coords: { left: '85%', top: '46%' } },
+  { id: 'egypt_m9',  titleEs: 'Zodiaco Dendera',   color: '#D46A6A', link: '/course/egypt_m9',  icon: '/assets/egypt/m9_dendera.webp',      coords: { left: '15%', top: '42%' } },
+  { id: 'egypt_m10', titleEs: 'Daga Espacial',     color: '#B0C4DE', link: '/course/egypt_m10', icon: '/assets/egypt/m10_daga.webp',        coords: { left: '40%', top: '45%' } },
+  { id: 'egypt_m13', titleEs: '365 Días',          color: '#80D080', link: '/course/egypt_m13', icon: '/assets/egypt/m13_calendario.webp',  coords: { left: '62%', top: '42%' } },
+  { id: 'egypt_m8',  titleEs: 'Abu Simbel',        color: '#FF9A3C', link: '/course/egypt_m8',  icon: '/assets/egypt/m8_abu_simbel.webp',   coords: { left: '85%', top: '46%' } },
 
   // Bottom row (Desert foreground)
-  { id: 'egypt_m1',  titleEs: 'Nabta Playa',       color: '#D4A843', link: '/course/egypt_m1',  icon: '/assets/egypt/m1_nabta_playa.png',  coords: { left: '20%', top: '75%' } },
-  { id: 'egypt_m5',  titleEs: 'Láser de Giza',     color: '#F0A500', link: '/course/egypt_m5',  icon: '/assets/egypt/m5_giza.png',         coords: { left: '50%', top: '78%' } },
-  { id: 'egypt_m12', titleEs: 'Obeliscos',         color: '#E8C96A', link: '/course/egypt_m12', icon: '/assets/egypt/m12_obelisco.png',    coords: { left: '80%', top: '75%' } },
+  { id: 'egypt_m1',  titleEs: 'Nabta Playa',       color: '#D4A843', link: '/course/egypt_m1',  icon: '/assets/egypt/m1_nabta_playa.webp',  coords: { left: '20%', top: '75%' } },
+  { id: 'egypt_m5',  titleEs: 'Láser de Giza',     color: '#F0A500', link: '/course/egypt_m5',  icon: '/assets/egypt/m5_giza.webp',         coords: { left: '50%', top: '78%' } },
+  { id: 'egypt_m12', titleEs: 'Obeliscos',         color: '#E8C96A', link: '/course/egypt_m12', icon: '/assets/egypt/m12_obelisco.webp',    coords: { left: '80%', top: '75%' } },
 ];
 
 // ─── Estrellas de fondo animadas ─────────────────────────────────────────
@@ -312,7 +312,7 @@ export default function EgyptAstroHub() {
       {/* ── Canvas Principal (Fondo Panorámico) ── */}
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
-        background: `url('/assets/egypt/hub_background.png') center/cover no-repeat`,
+        background: `url('/assets/egypt/hub_background.webp') center/cover no-repeat`,
       }}>
         {/* Filtro Oscuro Dinámico (Vignette) */}
         <div style={{

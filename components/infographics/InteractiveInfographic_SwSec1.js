@@ -103,11 +103,11 @@ const BIBLIOGRAPHY = [
 ];
 
 const FALCON_GALLERY = [
-  { src: '/assets/starwars/infographic_kessel/falcon_poster_art.png', caption: 'Carguero corelliano YT-1300, la nave más rápida de la galaxia según Han Solo' },
+  { src: '/assets/starwars/infographic_kessel/falcon_poster_art.webp', caption: 'Carguero corelliano YT-1300, la nave más rápida de la galaxia según Han Solo' },
   { src: '/assets/starwars/infographic_kessel/falcon_blueprint.jpg', caption: 'Planos técnicos del YT-1300: vista superior, lateral y frontal con anotaciones en Aurebesh' },
-  { src: '/assets/starwars/infographic_kessel/falcon_tie_chase.png', caption: 'El Halcón Milenario evadiendo cazas TIE sobre Jakku en El Despertar de la Fuerza (2015)' },
+  { src: '/assets/starwars/infographic_kessel/falcon_tie_chase.webp', caption: 'El Halcón Milenario evadiendo cazas TIE sobre Jakku en El Despertar de la Fuerza (2015)' },
   { src: '/assets/starwars/infographic_kessel/falcon_hyperspace.jpg', caption: 'Representación del salto al hiperespacio: las estrellas se alargan por la dilatación relativista' },
-  { src: '/assets/starwars/infographic_kessel/falcon_topdown.png', caption: 'Vista cenital del Halcón Milenario mostrando su icónico diseño de disco asimétrico' },
+  { src: '/assets/starwars/infographic_kessel/falcon_topdown.webp', caption: 'Vista cenital del Halcón Milenario mostrando su icónico diseño de disco asimétrico' },
 ];
 
 const INFOGRAPHIC_NODES = [
@@ -115,9 +115,9 @@ const INFOGRAPHIC_NODES = [
     id: 'parsec-definicion',
     title: '¿Qué es un Parsec?',
     color: '#00CFFF',
-    btnImage: '/assets/starwars/infographic_kessel/btn_parsec.png',
-    image: '/assets/starwars/infographic_kessel/hero_parsec.png',
-    bannerImage: '/assets/starwars/infographic_kessel/banner_parsec.png',
+    btnImage: '/assets/starwars/infographic_kessel/btn_parsec.webp',
+    image: '/assets/starwars/infographic_kessel/hero_parsec.webp',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_parsec.webp',
     bannerCaption: 'El Halcón Milenario navegando el temible Corredor de Kessel acortando distancias.',
     content: [
       "¿Te imaginas presumir de ser el corredor más rápido en una pista, pero en lugar de decir que terminaste en diez segundos, dices que la corriste en cien metros? Esto es exactamente lo que hace Han Solo en la primera película de Star Wars cuando afirma que su nave, el Halcón Milenario, completó el famoso Corredor de Kessel en menos de doce parsecs. Durante mucho tiempo los fans pensaron que era un error garrafal, porque un parsec es una unidad de distancia astronómica, no de tiempo. Es como si dijeras que llegaste a tu escuela en cinco kilómetros en lugar de decir que llegaste en quince minutos. ¡Pero en el espacio profundo, medir distancias es la clave!",
@@ -144,9 +144,9 @@ const INFOGRAPHIC_NODES = [
     id: 'paralaje-estelar',
     title: 'El Truco del Paralaje',
     color: '#FFD54F',
-    btnImage: '/assets/starwars/infographic_kessel/btn_paralaje.png',
-    image: '/assets/starwars/infographic_kessel/hero_paralaje.png',
-    bannerImage: '/assets/starwars/infographic_kessel/banner_paralaje.png',
+    btnImage: '/assets/starwars/infographic_kessel/btn_paralaje.webp',
+    image: '/assets/starwars/infographic_kessel/hero_paralaje.webp',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_paralaje.webp',
     bannerCaption: 'La Tierra en su órbita ofrece dos perspectivas distintas para medir distancias.',
     content: [
       "Si alguna vez quieres sentirte como un verdadero astrónomo desde el sofá de tu casa, intenta este sencillo experimento: levanta un dedo frente a tu cara y cierra un ojo, luego ábrelo y cierra el otro. Notarás que tu dedo parece saltar de un lado a otro en relación con el fondo de la habitación. Este efecto óptico fascinante se conoce como 'paralaje'. Tu cerebro utiliza constantemente esta ligera diferencia de perspectiva entre tus dos ojos para calcular a qué distancia se encuentran las cosas y darte la percepción de profundidad tridimensional en tu vida diaria.",
@@ -173,9 +173,9 @@ const INFOGRAPHIC_NODES = [
     id: 'escalera-distancias',
     title: 'La Escalera Cósmica',
     color: '#AB47BC',
-    btnImage: '/assets/starwars/infographic_kessel/btn_escalera.png',
-    image: '/assets/starwars/infographic_kessel/hero_escalera.png',
-    bannerImage: '/assets/starwars/infographic_kessel/banner_escalera.png',
+    btnImage: '/assets/starwars/infographic_kessel/btn_escalera.webp',
+    image: '/assets/starwars/infographic_kessel/hero_escalera.webp',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_escalera.webp',
     bannerCaption: 'Cada peldaño de la escalera cósmica nos permite medir distancias cada vez más inmensas.',
     content: [
       "¿Cómo medirías la distancia a una ciudad lejana si no tuvieras un mapa ni un odómetro en tu auto? En la Tierra es relativamente fácil usar reglas o lásers, pero en el espacio profundo, los astrónomos no tienen una cinta métrica infinita. Una vez que las estrellas están lejos, el truco del paralaje estelar deja de funcionar porque el salto visual es tan microscópico que nuestros instrumentos no pueden detectarlo. Es aquí donde la ingeniosidad humana tuvo que construir lo que hoy conocemos cariñosamente como la 'Escalera de Distancias Cósmicas', un método paso a paso para medir el inabarcable universo.",
@@ -202,9 +202,9 @@ const INFOGRAPHIC_NODES = [
     id: 'velocidad-luz',
     title: 'Nada Supera a la Luz',
     color: '#FF7043',
-    btnImage: '/assets/starwars/infographic_kessel/btn_velocidad.png',
-    image: '/assets/starwars/infographic_kessel/hero_velocidad.png',
-    bannerImage: '/assets/starwars/infographic_kessel/banner_velocidad.png',
+    btnImage: '/assets/starwars/infographic_kessel/btn_velocidad.webp',
+    image: '/assets/starwars/infographic_kessel/hero_velocidad.webp',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_velocidad.webp',
     bannerCaption: 'La luz viaja a 300,000 km/s â€” el límite absoluto del cosmos.',
     content: [
       "Si existiera una policía de tránsito en el cosmos, tendría un trabajo sencillo, porque en nuestro universo solo existe un único y estricto límite de velocidad que nadie puede romper: la velocidad de la luz. Conocida por la letra 'c', la luz viaja en el vacío a la asombrosa e incomprensible rapidez de casi 300,000 kilómetros por cada segundo que pasa. A esta vertiginosa velocidad, un rayo de luz podría dar la vuelta a la Tierra entera siete veces. media en un solo segundo, o viajar desde la superficie de nuestra Luna hasta nuestros ojos en poco más de un segundo.",
@@ -231,9 +231,9 @@ const INFOGRAPHIC_NODES = [
     id: 'warp-drive',
     title: 'El Motor de Curvatura',
     color: '#66BB6A',
-    btnImage: '/assets/starwars/infographic_kessel/btn_warp.png',
-    image: '/assets/starwars/infographic_kessel/hero_warp.png',
-    bannerImage: '/assets/starwars/infographic_kessel/banner_warp.png',
+    btnImage: '/assets/starwars/infographic_kessel/btn_warp.webp',
+    image: '/assets/starwars/infographic_kessel/hero_warp.webp',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_warp.webp',
     bannerCaption: 'Del concepto de Alcubierre a los solitones de Lentz: la evolución del motor de curvatura.',
     content: [
       "¿Es imposible viajar más rápido que la luz sin romper las leyes estrictas de la física fundamental? Sorprendentemente, un brillante y atrevido físico teórico mexicano llamado Miguel Alcubierre propuso una idea revolucionaria en el año 1994 que dejó boquiabiertos a muchos científicos. Inspirado por la icónica ciencia ficción de Star Trek, desarrolló una asombrosa solución matemática basada en las mismísimas ecuaciones de la relatividad de Einstein, un concepto teórico. hoy en día todo el mundo conoce como el famoso e intrigante 'Motor de Curvatura' o 'Warp Drive'.",
@@ -260,9 +260,9 @@ const INFOGRAPHIC_NODES = [
     id: 'agujeros-negros',
     title: 'El Sumidero de Kessel',
     color: '#EF5350',
-    btnImage: '/assets/starwars/infographic_kessel/btn_agujeros.png',
-    image: '/assets/starwars/infographic_kessel/hero_agujeros.png',
-    bannerImage: '/assets/starwars/infographic_kessel/banner_agujeros.png',
+    btnImage: '/assets/starwars/infographic_kessel/btn_agujeros.webp',
+    image: '/assets/starwars/infographic_kessel/hero_agujeros.webp',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_agujeros.webp',
     bannerCaption: 'Los agujeros negros retuercen tanto la gravedad que ni siquiera la luz puede escapar de su interior.',
     content: [
       "En la historia del Corredor de Kessel, la zona más conocida es 'Las Fauces', un cúmulo poblado por agujeros negros. Estos pozos gravitatorios no son solo ciencia ficción. En el universo real, los agujeros negros son objetos fascinantes y misteriosos del cosmos inexplorado.",
@@ -289,9 +289,9 @@ const INFOGRAPHIC_NODES = [
     id: 'navegacion-estelar',
     title: 'GPS del Espacio Profundo',
     color: '#42A5F5',
-    btnImage: '/assets/starwars/infographic_kessel/btn_navegacion.png',
-    image: '/assets/starwars/infographic_kessel/hero_navegacion.png',
-    bannerImage: '/assets/starwars/infographic_kessel/banner_navegacion.png',
+    btnImage: '/assets/starwars/infographic_kessel/btn_navegacion.webp',
+    image: '/assets/starwars/infographic_kessel/hero_navegacion.webp',
+    bannerImage: '/assets/starwars/infographic_kessel/banner_navegacion.webp',
     bannerCaption: 'La Red del Espacio Profundo mantiene contacto con nuestras sondas más lejanas.',
     content: [
       "Navegar por nuestro Sistema Solar, y más aún por el espacio interestelar, es un gran desafío técnico. ¿Cómo sabe una sonda espacial como la Voyager 1 en qué lugar se encuentra cuando viaja a miles de millones de kilómetros de la Tierra?",

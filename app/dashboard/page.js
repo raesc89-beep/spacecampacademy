@@ -120,7 +120,7 @@ export default function DashboardLanding() {
 
           {/* Vehículos Espaciales de Fondo */}
           <motion.img 
-            src="/assets/shuttle_user.png" 
+            src="/assets/shuttle_user.webp" 
             alt="Shuttle"
             className="motion-vehicle"
             animate={{ x: ['-20vw', '120vw'], y: ['0vh', '15vh', '-5vh', '10vh'] }}
@@ -129,7 +129,7 @@ export default function DashboardLanding() {
           />
           
           <motion.img 
-            src="/assets/ufo_user.png" 
+            src="/assets/ufo_user.webp" 
             alt="UFO"
             className="motion-vehicle"
             animate={{ x: ['120vw', '-20vw'], y: ['0vh', '-20vh', '15vh', '5vh'] }}
@@ -299,7 +299,7 @@ export default function DashboardLanding() {
                  animate={{ rotate: 360 }}
                  transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
               >
-                 <Image src="/assets/amde_logo.png" alt="AMDE" width={60} height={60} style={{ filter: 'drop-shadow(0 0 10px #00E4FF)', objectFit: 'contain' }} />
+                 <Image src="/assets/amde_logo.webp" alt="AMDE" width={60} height={60} style={{ filter: 'drop-shadow(0 0 10px #00E4FF)', objectFit: 'contain' }} />
               </motion.div>
               <h1 style={{ 
                 fontSize: 'clamp(1.8rem, 5vw, 4.5rem)', 

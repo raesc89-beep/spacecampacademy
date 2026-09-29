@@ -19,7 +19,7 @@ const DASHBOARD_MISSIONS = [
     title: "Arqueoastronomía Egipcia",
     subtitle: "Explora los secretos estelares y el cielo cósmico de los antiguos faraones.",
     link: "/hub/egypt-astro",
-    bgSrc: "/assets/egypt/dashboard_cover.png",
+    bgSrc: "/assets/egypt/dashboard_cover.webp",
     badgeColor: "#D4A843",
     badgeText: "Arqueoastronomía",
     borderColor: "rgba(212, 168, 67, 0.4)"
@@ -29,7 +29,7 @@ const DASHBOARD_MISSIONS = [
     title: "La Ciencia de Volver al Futuro",
     subtitle: "Cronodinámica, gravitación y energía de fusión a través del DeLorean.",
     link: "/hub/bttf",
-    bgSrc: "/assets/bttf/bttf_cover.png",
+    bgSrc: "/assets/bttf/bttf_cover.webp",
     badgeColor: "#FF4500",
     badgeText: "Física Cuántica",
     borderColor: "rgba(255, 69, 0, 0.4)"
@@ -49,7 +49,7 @@ const DASHBOARD_MISSIONS = [
     title: "La Ciencia de Interstellar",
     subtitle: "Agujeros negros, gravedad y dilatación temporal. ¿Podemos sobrevivir a Gargantúa?",
     link: "/hub/interstellar",
-    bgSrc: "/assets/interstellar/interstellar_card_bg.png",
+    bgSrc: "/assets/interstellar/interstellar_card_bg.webp",
     badgeColor: "#00E4FF",
     badgeText: "Astrofísica Teórica",
     borderColor: "rgba(0, 228, 255, 0.4)"
@@ -59,7 +59,7 @@ const DASHBOARD_MISSIONS = [
     title: "Arqueoastronomía Maya",
     subtitle: "Descubre cómo los antiguos sabios decodificaron la danza de las estrellas.",
     link: "/hub/maya-astro",
-    bgSrc: "/assets/maya/maya_course_cover.png",
+    bgSrc: "/assets/maya/maya_course_cover.webp",
     badgeColor: "#00FF00",
     badgeText: "Arqueoastronomía",
     borderColor: "rgba(0, 255, 0, 0.4)"
@@ -69,7 +69,7 @@ const DASHBOARD_MISSIONS = [
     title: "Objetos Interestelares",
     subtitle: "Viajeros de otros sistemas estelares cruzando nuestro vecindario.",
     link: "/hub/objetos-interestelares",
-    bgSrc: "/assets/dashboard/interestelar_cover.png",
+    bgSrc: "/assets/dashboard/interestelar_cover.webp",
     badgeColor: "#00E4FF",
     badgeText: "Exploración Galáctica",
     borderColor: "rgba(0, 228, 255, 0.4)"
@@ -79,7 +79,7 @@ const DASHBOARD_MISSIONS = [
     title: "Planetas Rocosos",
     subtitle: "Explora la geología extrema de Mercurio, Venus, Tierra y Marte.",
     link: "/hub/planetas-rocosos",
-    bgSrc: "/assets/dashboard/rocosos_cover.png",
+    bgSrc: "/assets/dashboard/rocosos_cover.webp",
     badgeColor: "#D2691E",
     badgeText: "Geología Estelar",
     borderColor: "rgba(210, 105, 30, 0.4)"
@@ -89,7 +89,7 @@ const DASHBOARD_MISSIONS = [
     title: "Los Exoplanetas",
     subtitle: "Cazando mundos lejanos más allá de nuestro sol.",
     link: "/hub/exoplanetas",
-    bgSrc: "/assets/dashboard/exoplanetas_cover.png",
+    bgSrc: "/assets/dashboard/exoplanetas_cover.webp",
     badgeColor: "#9370DB",
     badgeText: "Exploración Profunda",
     borderColor: "rgba(147, 112, 219, 0.4)"
@@ -99,7 +99,7 @@ const DASHBOARD_MISSIONS = [
     title: "Asteroides y Cometas",
     subtitle: "Rocas y hielos milenarios del espacio profundo.",
     link: "/hub/asteroides-cometas",
-    bgSrc: "/assets/asteroides/Rosseta.png",
+    bgSrc: "/assets/asteroides/Rosseta.webp",
     badgeColor: "#EF4444",
     badgeText: "Vuelo Rocoso",
     borderColor: "rgba(239, 68, 68, 0.4)"
@@ -109,7 +109,7 @@ const DASHBOARD_MISSIONS = [
     title: "Planetas Gaseosos",
     subtitle: "Nubes colosales, vientos sónicos y lunas heladas.",
     link: "/course/viaje-planetas-gaseosos",
-    bgSrc: "/assets/dashboard/planetas_gaseosos_cover.png",
+    bgSrc: "/assets/dashboard/planetas_gaseosos_cover.webp",
     badgeColor: "#8A2BE2",
     badgeText: "Vuelo Atmosférico",
     borderColor: "rgba(138, 43, 226, 0.4)"
@@ -119,7 +119,7 @@ const DASHBOARD_MISSIONS = [
     title: "Animales en el Espacio",
     subtitle: "Pioneros peludos hacia las estrellas.",
     link: "/hub/animales",
-    bgSrc: "/assets/animales/portada_curso.png",
+    bgSrc: "/assets/animales/portada_curso.webp",
     badgeColor: "var(--gold-star)",
     badgeText: "Vuelo Biológico",
     borderColor: "rgba(255, 184, 0, 0.4)"
@@ -129,7 +129,7 @@ const DASHBOARD_MISSIONS = [
     title: "Primeros en el Espacio",
     subtitle: "Conoce a los valientes astronautas que abrieron el camino.",
     link: "/hub/pioneros",
-    bgSrc: "/assets/dashboard/pioneros_cover.png",
+    bgSrc: "/assets/dashboard/pioneros_cover.webp",
     badgeColor: "#00BFFF",
     badgeText: "Vuelo Histórico",
     borderColor: "rgba(0, 191, 255, 0.4)"
@@ -139,7 +139,7 @@ const DASHBOARD_MISSIONS = [
     title: "Anomalías Cósmicas",
     subtitle: "Agujeros negros, Cuásares y Púlsares.",
     link: "/hub/stellar-objects",
-    bgSrc: "/assets/black_hole_icon.png",
+    bgSrc: "/assets/black_hole_icon.webp",
     badgeColor: "var(--electric-blue)",
     badgeText: "Astrofísica",
     borderColor: "rgba(0, 228, 255, 0.4)"
@@ -149,7 +149,7 @@ const DASHBOARD_MISSIONS = [
     title: "Colisiones Estelares",
     subtitle: "El majestuoso y destructivo choque de galaxias gigantes.",
     link: "/course/colisiones_estelares",
-    bgSrc: "/assets/course_colisiones.png",
+    bgSrc: "/assets/course_colisiones.webp",
     badgeColor: "#9933ff",
     badgeText: "Evento Cósmico",
     borderColor: "rgba(153, 51, 255, 0.4)"
@@ -159,7 +159,7 @@ const DASHBOARD_MISSIONS = [
     title: "Robots en el Espacio",
     subtitle: "Conoce a los exploradores mecánicos que recorren Marte.",
     link: "/hub/robots-espacio",
-    bgSrc: "/assets/robots_espacio_cover.png",
+    bgSrc: "/assets/robots_espacio_cover.webp",
     badgeColor: "#FF6347",
     badgeText: "Astroingeniería",
     borderColor: "rgba(255, 99, 71, 0.4)"
@@ -169,7 +169,7 @@ const DASHBOARD_MISSIONS = [
     title: "Agujeros de Gusano Einstein-Rosen",
     subtitle: "Atajos espaciotemporales, materia exótica y la visión de Contacto.",
     link: "/hub/agujeros-gusano",
-    bgSrc: "/assets/dashboard/agujeros_gusano_cover.png",
+    bgSrc: "/assets/dashboard/agujeros_gusano_cover.webp",
     badgeColor: "#00FFCC",
     badgeText: "Teoría Astrofísica",
     borderColor: "rgba(0, 255, 204, 0.4)"
@@ -179,7 +179,7 @@ const DASHBOARD_MISSIONS = [
     title: "Misión Apollo 11",
     subtitle: "El viaje más audaz de la humanidad: del Kennedy Space Center a la Luna.",
     link: "/hub/apollo11",
-    bgSrc: "/assets/apollo11/course_card.png",
+    bgSrc: "/assets/apollo11/course_card.webp",
     badgeColor: "#FF6B35",
     badgeText: "Misión Lunar",
     borderColor: "rgba(255, 107, 53, 0.4)"
@@ -189,7 +189,7 @@ const DASHBOARD_MISSIONS = [
     title: "Misión Apollo 8",
     subtitle: "El primer viaje tripulado alrededor de la Luna y el amanecer terrestre.",
     link: "/hub/apollo8",
-    bgSrc: "/assets/dashboard/apollo8_cover.png",
+    bgSrc: "/assets/dashboard/apollo8_cover.webp",
     badgeColor: "#4169E1",
     badgeText: "Misión Lunar",
     borderColor: "rgba(65, 105, 225, 0.4)"
@@ -199,7 +199,7 @@ const DASHBOARD_MISSIONS = [
     title: "Misión Apollo 10",
     subtitle: "El ensayo general que allanó el camino hacia la superficie lunar.",
     link: "/hub/apollo10",
-    bgSrc: "/assets/dashboard/apollo10_cover.png",
+    bgSrc: "/assets/dashboard/apollo10_cover.webp",
     badgeColor: "#32CD32",
     badgeText: "Misión Lunar",
     borderColor: "rgba(50, 205, 50, 0.4)"
@@ -209,7 +209,7 @@ const DASHBOARD_MISSIONS = [
     title: "Copérnico: Sus aportes a la ciencia",
     subtitle: "El revolucionario astrónomo que detuvo el Sol y movió la Tierra.",
     link: "/hub/copernico",
-    bgSrc: "/assets/copernico/copernico_cover.png",
+    bgSrc: "/assets/copernico/copernico_cover.webp",
     badgeColor: "#FFD700",
     badgeText: "Revolución Científica",
     borderColor: "rgba(255, 215, 0, 0.4)"
@@ -219,7 +219,7 @@ const DASHBOARD_MISSIONS = [
     title: "El Área 51 y la Ciencia detrás del Mito",
     subtitle: "Descubre la verdadera historia aeroespacial detrás de la base militar más secreta del mundo.",
     link: "/hub/area51",
-    bgSrc: "/assets/dashboard/area51_dashboard.png",
+    bgSrc: "/assets/dashboard/area51_dashboard.webp",
     badgeColor: "#00FF00",
     badgeText: "Desclasificación",
     borderColor: "rgba(0, 255, 0, 0.4)"
@@ -229,7 +229,7 @@ const DASHBOARD_MISSIONS = [
     title: "Galileo Galilei",
     subtitle: "El padre de la astronomía moderna: telescopio, lunas de Júpiter y la física del movimiento.",
     link: "/hub/galileo",
-    bgSrc: "/assets/galileo/galileo_cover.png",
+    bgSrc: "/assets/galileo/galileo_cover.webp",
     badgeColor: "#FFD700",
     badgeText: "Revolución Científica",
     borderColor: "rgba(255, 215, 0, 0.4)"
@@ -239,7 +239,7 @@ const DASHBOARD_MISSIONS = [
     title: "Michael Faraday",
     subtitle: "El genio autodidacta que domesticó la electricidad y cambió el mundo para siempre.",
     link: "/hub/faraday",
-    bgSrc: "/assets/faraday/faraday_cover.png",
+    bgSrc: "/assets/faraday/faraday_cover.webp",
     badgeColor: "#00E4FF",
     badgeText: "Física Eléctrica",
     borderColor: "rgba(0, 228, 255, 0.4)"
@@ -249,7 +249,7 @@ const DASHBOARD_MISSIONS = [
     title: "Leonardo Da Vinci",
     subtitle: "El genio universal del Renacimiento: arte, anatomía, ingeniería y vuelo en un solo hombre.",
     link: "/hub/davinci",
-    bgSrc: "/assets/davinci/davinci_cover.png",
+    bgSrc: "/assets/davinci/davinci_cover.webp",
     badgeColor: "#D4A843",
     badgeText: "Revolución Científica",
     borderColor: "rgba(212, 168, 67, 0.4)"
@@ -259,7 +259,7 @@ const DASHBOARD_MISSIONS = [
     title: "Cecilia Payne-Gaposchkin",
     subtitle: "La astrónoma londinense que descubrió que las estrellas son principalmente hidrógeno — el mayor hallazgo de la astrofísica del siglo XX.",
     link: "/hub/cecilia-payne",
-    bgSrc: "/assets/cecilia_payne_cover.png",
+    bgSrc: "/assets/cecilia_payne_cover.webp",
     badgeColor: "#9B59B6",
     badgeText: "Astrofísica Pionera",
     borderColor: "rgba(155, 89, 182, 0.4)"
@@ -269,7 +269,7 @@ const DASHBOARD_MISSIONS = [
     title: "Los Dinosaurios: La Era de los Titanes",
     subtitle: "Viaja al Mesozoico y descubre a las criaturas más gigantescas que jamás pisaron la Tierra.",
     link: "/hub/dinosaurios",
-    bgSrc: "/assets/dinosaurios/dinosaurios_cover.png",
+    bgSrc: "/assets/dinosaurios/dinosaurios_cover.webp",
     badgeColor: "#8B4513",
     badgeText: "Paleontología",
     borderColor: "rgba(139, 69, 19, 0.4)"
@@ -279,7 +279,7 @@ const DASHBOARD_MISSIONS = [
     title: "Reptiles Marinos Prehistóricos",
     subtitle: "Sumérgete en los océanos del Mesozoico y conoce a los leviatanes que dominaron las profundidades.",
     link: "/hub/reptiles-marinos",
-    bgSrc: "/assets/reptiles_marinos/reptiles_marinos_cover.png",
+    bgSrc: "/assets/reptiles_marinos/reptiles_marinos_cover.webp",
     badgeColor: "#006994",
     badgeText: "Paleontología",
     borderColor: "rgba(0, 105, 148, 0.4)"
@@ -289,7 +289,7 @@ const DASHBOARD_MISSIONS = [
     title: "Nikola Tesla: El Mago de la Electricidad",
     subtitle: "Descubre al genio que domesticó el rayo, soñó con energía libre y cambió el mundo para siempre.",
     link: "/hub/tesla",
-    bgSrc: "/assets/tesla/tesla_cover.png",
+    bgSrc: "/assets/tesla/tesla_cover.webp",
     badgeColor: "#7B68EE",
     badgeText: "Revolución Científica",
     borderColor: "rgba(123, 104, 238, 0.4)"
@@ -299,7 +299,7 @@ const DASHBOARD_MISSIONS = [
     title: "Carl Sagan: Su Visión del Cosmos",
     subtitle: "El astrónomo que nos enseñó a soñar con las estrellas. Voyager, Cosmos, el Pálido Punto Azul y SETI.",
     link: "/hub/carl-sagan",
-    bgSrc: "/assets/sagan/sagan_cover.png",
+    bgSrc: "/assets/sagan/sagan_cover.webp",
     badgeColor: "#1E90FF",
     badgeText: "Exploración Galáctica",
     borderColor: "rgba(30, 144, 255, 0.4)"
@@ -309,7 +309,7 @@ const DASHBOARD_MISSIONS = [
     title: "Marie Curie: Pionera de la Radiactividad",
     subtitle: "De Varsovia a dos Premios Nobel. La científica que descubrió el Polonio y el Radio y cambió la medicina para siempre.",
     link: "/hub/marie-curie",
-    bgSrc: "/assets/curie/curie_cover.png",
+    bgSrc: "/assets/curie/curie_cover.webp",
     badgeColor: "#00FF88",
     badgeText: "Revolución Científica",
     borderColor: "rgba(0, 255, 136, 0.4)"
@@ -319,7 +319,7 @@ const DASHBOARD_MISSIONS = [
     title: "¿Cómo Entrenan los Astronautas?",
     subtitle: "Piscinas gigantes, centrífugas, supervivencia extrema y simuladores. Los pasos para llegar al espacio.",
     link: "/hub/astronauts-training",
-    bgSrc: "/assets/astronaut_training/astro_train_cover.png",
+    bgSrc: "/assets/astronaut_training/astro_train_cover.webp",
     badgeColor: "#FF6B35",
     badgeText: "Exploración Galáctica",
     borderColor: "rgba(255, 107, 53, 0.4)"
@@ -329,7 +329,7 @@ const DASHBOARD_MISSIONS = [
     title: "Albert Einstein: El Genio del Siglo XX",
     subtitle: "E=mc², la Relatividad General, el eclipse de 1919 y su legado pacifista. La mente que reescribió la física.",
     link: "/hub/albert-einstein",
-    bgSrc: "/assets/einstein/einstein_cover.png",
+    bgSrc: "/assets/einstein/einstein_cover.webp",
     badgeColor: "#FF4500",
     badgeText: "Física y Astrofísica",
     borderColor: "rgba(255, 69, 0, 0.4)"
@@ -339,7 +339,7 @@ const DASHBOARD_MISSIONS = [
     title: "Los Griegos: Padres de la Ciencia",
     subtitle: "De Tales a Hipatia. Los genios de la antigüedad que inventaron la ciencia, las matemáticas y la filosofía natural.",
     link: "/hub/griegos-ciencia",
-    bgSrc: "/assets/griegos/griegos_cover.png",
+    bgSrc: "/assets/griegos/griegos_cover.webp",
     badgeColor: "#D4A017",
     badgeText: "Revolución Científica",
     borderColor: "rgba(212, 160, 23, 0.4)"
@@ -349,7 +349,7 @@ const DASHBOARD_MISSIONS = [
     title: "La Ciencia de Arrival",
     subtitle: "Lingüística, xenolingüística, tiempo no lineal y SETI. La ciencia real detrás de la película de Denis Villeneuve.",
     link: "/hub/arrival-ciencia",
-    bgSrc: "/assets/ciencia_arrival/arrival_cover.png",
+    bgSrc: "/assets/ciencia_arrival/arrival_cover.webp",
     badgeColor: "#708090",
     badgeText: "Ciencia en el Cine",
     borderColor: "rgba(112, 128, 144, 0.4)"
@@ -451,7 +451,7 @@ export default function CourseHub() {
         {/* Featured Mission - Sistema Solar */}
         <section>
           <div style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', padding: '3rem 4rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '350px', border: '1px solid rgba(0,228,255,0.3)', boxShadow: '0 10px 40px rgba(0,0,0,0.5), inset 0 0 40px rgba(0,228,255,0.1)' }}>
-            <Image src="/assets/solar_system_cover.png" alt="Solar System" fill style={{ objectFit: 'cover', zIndex: -1, opacity: 0.6 }} quality={85} priority />
+            <Image src="/assets/solar_system_cover.webp" alt="Solar System" fill style={{ objectFit: 'cover', zIndex: -1, opacity: 0.6 }} quality={85} priority />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(2,3,8,0.9) 0%, rgba(2,3,8,0.4) 60%, transparent 100%)', zIndex: 0 }}></div>
             
             <div style={{ position: 'relative', zIndex: 1, maxWidth: '600px' }}>

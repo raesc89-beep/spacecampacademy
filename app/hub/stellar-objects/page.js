@@ -67,7 +67,7 @@ export default function StellarObjectsMap() {
       
       {/* Vehículos Espaciales de Fondo */}
       <motion.img 
-        src="/assets/shuttle_vector.png" 
+        src="/assets/shuttle_vector.webp" 
         alt="Heavy Cruiser"
         animate={{ x: ['-20vw', '120vw'], y: ['10vh', '-10vh', '5vh', '-5vh'] }}
         transition={{ repeat: Infinity, duration: 75, ease: "linear" }}
@@ -75,7 +75,7 @@ export default function StellarObjectsMap() {
       />
       
       <motion.img 
-        src="/assets/ufo_vector.png" 
+        src="/assets/ufo_vector.webp" 
         alt="Alien Ship"
         animate={{ x: ['120vw', '-20vw'], y: ['-10vh', '30vh', '-20vh', '10vh'] }}
         transition={{ repeat: Infinity, duration: 55, ease: "linear" }}

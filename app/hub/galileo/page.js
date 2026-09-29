@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const GALILEO_MODULES = [
-  { id: 'galileo_m1', title: 'El Telescopio Revolucionario', color: '#FFD700', link: '/course/galileo_m1', icon: '/assets/galileo/galileo_m1.png', coords: { left: '12%', top: '50%' } },
-  { id: 'galileo_m2', title: 'Las Lunas de Júpiter', color: '#00E4FF', link: '/course/galileo_m2', icon: '/assets/galileo/galileo_m2.png', coords: { left: '32%', top: '28%' } },
-  { id: 'galileo_m3', title: 'El Péndulo y el Tiempo', color: '#FF6B35', link: '/course/galileo_m3', icon: '/assets/galileo/galileo_m3.png', coords: { left: '54%', top: '48%' } },
-  { id: 'galileo_m4', title: 'Física del Movimiento', color: '#A8FF78', link: '/course/galileo_m4', icon: '/assets/galileo/galileo_m4.png', coords: { left: '74%', top: '28%' } },
-  { id: 'galileo_m5', title: 'El Legado de Galileo', color: '#FF9FFF', link: '/course/galileo_m5', icon: '/assets/galileo/galileo_m5.png', coords: { left: '87%', top: '60%' } },
+  { id: 'galileo_m1', title: 'El Telescopio Revolucionario', color: '#FFD700', link: '/course/galileo_m1', icon: '/assets/galileo/galileo_m1.webp', coords: { left: '12%', top: '50%' } },
+  { id: 'galileo_m2', title: 'Las Lunas de Júpiter', color: '#00E4FF', link: '/course/galileo_m2', icon: '/assets/galileo/galileo_m2.webp', coords: { left: '32%', top: '28%' } },
+  { id: 'galileo_m3', title: 'El Péndulo y el Tiempo', color: '#FF6B35', link: '/course/galileo_m3', icon: '/assets/galileo/galileo_m3.webp', coords: { left: '54%', top: '48%' } },
+  { id: 'galileo_m4', title: 'Física del Movimiento', color: '#A8FF78', link: '/course/galileo_m4', icon: '/assets/galileo/galileo_m4.webp', coords: { left: '74%', top: '28%' } },
+  { id: 'galileo_m5', title: 'El Legado de Galileo', color: '#FF9FFF', link: '/course/galileo_m5', icon: '/assets/galileo/galileo_m5.webp', coords: { left: '87%', top: '60%' } },
 ];
 
 // ─── Constelación de Nodos ──────────────────────────────────────────────────
@@ -199,7 +199,7 @@ export default function GalileoHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#000000',
-        backgroundImage: "url('/assets/galileo/galileo_cover.png')",
+        backgroundImage: "url('/assets/galileo/galileo_cover.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',

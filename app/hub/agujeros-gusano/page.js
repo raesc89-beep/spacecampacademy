@@ -8,24 +8,24 @@ import { motion } from 'framer-motion';
 
 // ─── Módulos del curso Agujeros de Gusano ─────────────────────────────────────
 const WORMHOLE_MODULES = [
-  { id: 'wormhole_m1', titleEs: 'Puente ER I', color: '#00FFCC', link: '/course/wormhole_m1', icon: '/assets/badges/gusano_badge.png', coords: { left: '15%', top: '20%' } },
-  { id: 'wormhole_m2', titleEs: 'Puente ER II', color: '#00FFCC', link: '/course/wormhole_m2', icon: '/assets/badges/gusano_badge.png', coords: { left: '30%', top: '15%' } },
-  { id: 'wormhole_m3', titleEs: 'Historia I', color: '#00FFCC', link: '/course/wormhole_m3', icon: '/assets/badges/gusano_badge.png', coords: { left: '50%', top: '12%' } },
-  { id: 'wormhole_m4', titleEs: 'Historia II', color: '#00FFCC', link: '/course/wormhole_m4', icon: '/assets/badges/gusano_badge.png', coords: { left: '70%', top: '15%' } },
-  { id: 'wormhole_m5', titleEs: 'Propiedades I', color: '#00FFCC', link: '/course/wormhole_m5', icon: '/assets/badges/gusano_badge.png', coords: { left: '85%', top: '25%' } },
+  { id: 'wormhole_m1', titleEs: 'Puente ER I', color: '#00FFCC', link: '/course/wormhole_m1', icon: '/assets/badges/gusano_badge.webp', coords: { left: '15%', top: '20%' } },
+  { id: 'wormhole_m2', titleEs: 'Puente ER II', color: '#00FFCC', link: '/course/wormhole_m2', icon: '/assets/badges/gusano_badge.webp', coords: { left: '30%', top: '15%' } },
+  { id: 'wormhole_m3', titleEs: 'Historia I', color: '#00FFCC', link: '/course/wormhole_m3', icon: '/assets/badges/gusano_badge.webp', coords: { left: '50%', top: '12%' } },
+  { id: 'wormhole_m4', titleEs: 'Historia II', color: '#00FFCC', link: '/course/wormhole_m4', icon: '/assets/badges/gusano_badge.webp', coords: { left: '70%', top: '15%' } },
+  { id: 'wormhole_m5', titleEs: 'Propiedades I', color: '#00FFCC', link: '/course/wormhole_m5', icon: '/assets/badges/gusano_badge.webp', coords: { left: '85%', top: '25%' } },
   
-  { id: 'wormhole_m6', titleEs: 'Propiedades II', color: '#00E4FF', link: '/course/wormhole_m6', icon: '/assets/badges/gusano_badge.png', coords: { left: '20%', top: '40%' } },
-  { id: 'wormhole_m7', titleEs: '¿Cómo funciona? I', color: '#00E4FF', link: '/course/wormhole_m7', icon: '/assets/badges/gusano_badge.png', coords: { left: '40%', top: '35%' } },
-  { id: 'wormhole_m8', titleEs: '¿Cómo funciona? II', color: '#00E4FF', link: '/course/wormhole_m8', icon: '/assets/badges/gusano_badge.png', coords: { left: '60%', top: '35%' } },
-  { id: 'wormhole_m9', titleEs: '¿Qué pasa si caigo? I', color: '#00E4FF', link: '/course/wormhole_m9', icon: '/assets/badges/gusano_badge.png', coords: { left: '80%', top: '45%' } },
+  { id: 'wormhole_m6', titleEs: 'Propiedades II', color: '#00E4FF', link: '/course/wormhole_m6', icon: '/assets/badges/gusano_badge.webp', coords: { left: '20%', top: '40%' } },
+  { id: 'wormhole_m7', titleEs: '¿Cómo funciona? I', color: '#00E4FF', link: '/course/wormhole_m7', icon: '/assets/badges/gusano_badge.webp', coords: { left: '40%', top: '35%' } },
+  { id: 'wormhole_m8', titleEs: '¿Cómo funciona? II', color: '#00E4FF', link: '/course/wormhole_m8', icon: '/assets/badges/gusano_badge.webp', coords: { left: '60%', top: '35%' } },
+  { id: 'wormhole_m9', titleEs: '¿Qué pasa si caigo? I', color: '#00E4FF', link: '/course/wormhole_m9', icon: '/assets/badges/gusano_badge.webp', coords: { left: '80%', top: '45%' } },
 
-  { id: 'wormhole_m10', titleEs: '¿Qué pasa si caigo? II', color: '#9933FF', link: '/course/wormhole_m10', icon: '/assets/badges/gusano_badge.png', coords: { left: '15%', top: '65%' } },
-  { id: 'wormhole_m11', titleEs: 'Teorías Modernas I', color: '#9933FF', link: '/course/wormhole_m11', icon: '/assets/badges/gusano_badge.png', coords: { left: '35%', top: '60%' } },
-  { id: 'wormhole_m12', titleEs: 'Teorías Modernas II', color: '#9933FF', link: '/course/wormhole_m12', icon: '/assets/badges/gusano_badge.png', coords: { left: '55%', top: '60%' } },
-  { id: 'wormhole_m13', titleEs: 'Paradoja Temporal', color: '#9933FF', link: '/course/wormhole_m13', icon: '/assets/badges/gusano_badge.png', coords: { left: '75%', top: '70%' } },
+  { id: 'wormhole_m10', titleEs: '¿Qué pasa si caigo? II', color: '#9933FF', link: '/course/wormhole_m10', icon: '/assets/badges/gusano_badge.webp', coords: { left: '15%', top: '65%' } },
+  { id: 'wormhole_m11', titleEs: 'Teorías Modernas I', color: '#9933FF', link: '/course/wormhole_m11', icon: '/assets/badges/gusano_badge.webp', coords: { left: '35%', top: '60%' } },
+  { id: 'wormhole_m12', titleEs: 'Teorías Modernas II', color: '#9933FF', link: '/course/wormhole_m12', icon: '/assets/badges/gusano_badge.webp', coords: { left: '55%', top: '60%' } },
+  { id: 'wormhole_m13', titleEs: 'Paradoja Temporal', color: '#9933FF', link: '/course/wormhole_m13', icon: '/assets/badges/gusano_badge.webp', coords: { left: '75%', top: '70%' } },
   
-  { id: 'wormhole_m14', titleEs: 'Contacto I', color: '#FF00FF', link: '/course/wormhole_m14', icon: '/assets/badges/gusano_badge.png', coords: { left: '40%', top: '85%' } },
-  { id: 'wormhole_m15', titleEs: 'Contacto II', color: '#FF00FF', link: '/course/wormhole_m15', icon: '/assets/badges/gusano_badge.png', coords: { left: '60%', top: '85%' } },
+  { id: 'wormhole_m14', titleEs: 'Contacto I', color: '#FF00FF', link: '/course/wormhole_m14', icon: '/assets/badges/gusano_badge.webp', coords: { left: '40%', top: '85%' } },
+  { id: 'wormhole_m15', titleEs: 'Contacto II', color: '#FF00FF', link: '/course/wormhole_m15', icon: '/assets/badges/gusano_badge.webp', coords: { left: '60%', top: '85%' } },
 ];
 
 function WormholeNode({ mod, idx, isCompleted, isPlayable }) {

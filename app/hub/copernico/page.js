@@ -13,7 +13,7 @@ const COPERNICO_MODULES = [
     title: 'El Universo Antes de Copérnico',
     color: '#D4A843', 
     link: '/course/copernico_m1',
-    icon: '/assets/copernico/copernico_m1.png',
+    icon: '/assets/copernico/copernico_m1.webp',
     coords: { left: '15%', top: '45%' },
   },
   {
@@ -21,7 +21,7 @@ const COPERNICO_MODULES = [
     title: 'La Revolución Heliocéntrica',
     color: '#FFD700',
     link: '/course/copernico_m2',
-    icon: '/assets/copernico/copernico_m2.png',
+    icon: '/assets/copernico/copernico_m2.webp',
     coords: { left: '35%', top: '25%' },
   },
   {
@@ -29,7 +29,7 @@ const COPERNICO_MODULES = [
     title: 'De Revolutionibus',
     color: '#FF6B35',
     link: '/course/copernico_m3',
-    icon: '/assets/copernico/copernico_m3.png',
+    icon: '/assets/copernico/copernico_m3.webp',
     coords: { left: '55%', top: '45%' },
   },
   {
@@ -37,7 +37,7 @@ const COPERNICO_MODULES = [
     title: 'Matemáticas y Observación',
     color: '#00E4FF',
     link: '/course/copernico_m4',
-    icon: '/assets/copernico/copernico_m4.png',
+    icon: '/assets/copernico/copernico_m4.webp',
     coords: { left: '75%', top: '25%' },
   },
   {
@@ -45,7 +45,7 @@ const COPERNICO_MODULES = [
     title: 'El Legado de Copérnico',
     color: '#A8FF78',
     link: '/course/copernico_m5',
-    icon: '/assets/copernico/copernico_m5.png',
+    icon: '/assets/copernico/copernico_m5.webp',
     coords: { left: '85%', top: '65%' },
   }
 ];
@@ -310,7 +310,7 @@ export default function CopernicoHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#000000',
-        backgroundImage: "url('/assets/copernico/copernico_cover.png')",
+        backgroundImage: "url('/assets/copernico/copernico_cover.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',

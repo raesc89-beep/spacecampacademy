@@ -32,13 +32,13 @@ export default function PionerosHub() {
 
   // Coordenadas orgánicas distribuidas 
   const orbitalData = {
-    pioneros_yuri: { left: '15%', top: '40%', size: 'clamp(90px, 10vw, 130px)', img: '/assets/pioneros/hub_yuri.png' },
-    pioneros_alan: { left: '30%', top: '65%', size: 'clamp(85px, 9.5vw, 120px)', img: '/assets/pioneros/hub_alan.png' },
-    pioneros_john: { left: '45%', top: '30%', size: 'clamp(90px, 10vw, 130px)', img: '/assets/pioneros/hub_john.png' },
-    pioneros_valentina: { left: '60%', top: '55%', size: 'clamp(95px, 10.5vw, 140px)', img: '/assets/pioneros/hub_valentina.png' },
-    pioneros_leonov: { left: '75%', top: '25%', size: 'clamp(100px, 11vw, 150px)', img: '/assets/pioneros/hub_leonov.png' },
-    pioneros_svetlana: { left: '85%', top: '65%', size: 'clamp(90px, 10vw, 130px)', img: '/assets/pioneros/hub_svetlana.png' },
-    pioneros_sally: { left: '92%', top: '40%', size: 'clamp(85px, 9.5vw, 120px)', img: '/assets/pioneros/hub_sally.png' }
+    pioneros_yuri: { left: '15%', top: '40%', size: 'clamp(90px, 10vw, 130px)', img: '/assets/pioneros/hub_yuri.webp' },
+    pioneros_alan: { left: '30%', top: '65%', size: 'clamp(85px, 9.5vw, 120px)', img: '/assets/pioneros/hub_alan.webp' },
+    pioneros_john: { left: '45%', top: '30%', size: 'clamp(90px, 10vw, 130px)', img: '/assets/pioneros/hub_john.webp' },
+    pioneros_valentina: { left: '60%', top: '55%', size: 'clamp(95px, 10.5vw, 140px)', img: '/assets/pioneros/hub_valentina.webp' },
+    pioneros_leonov: { left: '75%', top: '25%', size: 'clamp(100px, 11vw, 150px)', img: '/assets/pioneros/hub_leonov.webp' },
+    pioneros_svetlana: { left: '85%', top: '65%', size: 'clamp(90px, 10vw, 130px)', img: '/assets/pioneros/hub_svetlana.webp' },
+    pioneros_sally: { left: '92%', top: '40%', size: 'clamp(85px, 9.5vw, 120px)', img: '/assets/pioneros/hub_sally.webp' }
   };
 
   // Determinar Índice de Progreso

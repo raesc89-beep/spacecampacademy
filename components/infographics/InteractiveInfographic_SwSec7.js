@@ -76,9 +76,9 @@ const INFOGRAPHIC_NODES = [
     id: 'amigdala-meditacion',
     title: 'La Amígdala: Tu Alarma Interna',
     color: '#7B68EE',
-    btnImage: '/assets/starwars/infographic_jedi/btn_amigdala_meditacion.png',
-    image: '/assets/starwars/infographic_jedi/hero_amigdala_meditacion.png',
-    bannerImage: '/assets/starwars/infographic_jedi/banner_amigdala_meditacion.png',
+    btnImage: '/assets/starwars/infographic_jedi/btn_amigdala_meditacion.webp',
+    image: '/assets/starwars/infographic_jedi/hero_amigdala_meditacion.webp',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_amigdala_meditacion.webp',
     bannerCaption: 'Un Padawan aprendiendo a calmar su mente en los silenciosos salones del Templo Jedi.',
     content: [
       "Imagina que dentro de tu cabeza, justo en el centro de tu cerebro, tienes un pequeño pero poderoso botón de alarma del tamaño de una almendra. Esta pequeña estructura se llama 'amígdala', y su trabajo principal es mantenerte a salvo de los peligros. Cuando nuestros ancestros vivían en cavernas y veían un tigre dientes de sable, la amígdala encendía la alarma roja, preparando el cuerpo para correr rápido o pelear con todas sus fuerzas. ¡Era como una sirena de emergencia súper ruidosa!",
@@ -105,9 +105,9 @@ const INFOGRAPHIC_NODES = [
     id: 'mindfulness-jedi',
     title: 'Meditación Jedi: La Ciencia del Mindfulness',
     color: '#00CED1',
-    btnImage: '/assets/starwars/infographic_jedi/btn_mindfulness_jedi.png',
-    image: '/assets/starwars/infographic_jedi/hero_mindfulness_jedi.png',
-    bannerImage: '/assets/starwars/infographic_jedi/banner_mindfulness_jedi.png',
+    btnImage: '/assets/starwars/infographic_jedi/btn_mindfulness_jedi.webp',
+    image: '/assets/starwars/infographic_jedi/hero_mindfulness_jedi.webp',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_mindfulness_jedi.webp',
     bannerCaption: 'La profunda conexión con la Fuerza comienza silenciando el ruido del universo exterior.',
     content: [
       "¿Has intentado alguna vez sentarte quieto y no pensar en nada? Si lo has intentado, seguro te diste cuenta de que es casi imposible. Tu mente parece un monito saltando de rama en rama: piensas en tu tarea, en lo que vas a cenar, en un recuerdo gracioso. A esto los budistas lo llaman 'la mente de mono'. El 'Mindfulness' o atención plena es una técnica antigua que no busca callar al monito por la fuerza, sino enseñarle a sentarse pacíficamente a observar.",
@@ -134,9 +134,9 @@ const INFOGRAPHIC_NODES = [
     id: 'neuroplasticidad',
     title: 'El Cerebro que se Entrena: Neuroplasticidad',
     color: '#FFB74D',
-    btnImage: '/assets/starwars/infographic_jedi/btn_neuroplasticidad.png',
-    image: '/assets/starwars/infographic_jedi/hero_neuroplasticidad.png',
-    bannerImage: '/assets/starwars/infographic_jedi/banner_neuroplasticidad.png',
+    btnImage: '/assets/starwars/infographic_jedi/btn_neuroplasticidad.webp',
+    image: '/assets/starwars/infographic_jedi/hero_neuroplasticidad.webp',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_neuroplasticidad.webp',
     bannerCaption: 'Las vías neuronales se fortalecen con la repetición, igual que el dominio del sable de luz.',
     content: [
       "Hace muchos años, los científicos creían que nuestro cerebro era como una computadora de fábrica: nacías con ciertos cables conectados y, una vez que llegabas a ser adulto, esos cables no se podían cambiar nunca más. Si no eras bueno en matemáticas o en música, pensaban que estabas atrapado así para siempre. ¡Pero estaban equivocados! Descubrieron algo llamado 'Neuroplasticidad', que es la maravillosa habilidad de tu cerebro para cambiar de forma física y crear nuevas conexiones.",
@@ -163,9 +163,9 @@ const INFOGRAPHIC_NODES = [
     id: 'respiracion-kenobi',
     title: 'Respira como Obi-Wan: Técnica 4-7-8',
     color: '#66BB6A',
-    btnImage: '/assets/starwars/infographic_jedi/btn_respiracion_kenobi.png',
-    image: '/assets/starwars/infographic_jedi/hero_respiracion_kenobi.png',
-    bannerImage: '/assets/starwars/infographic_jedi/banner_respiracion_kenobi.png',
+    btnImage: '/assets/starwars/infographic_jedi/btn_respiracion_kenobi.webp',
+    image: '/assets/starwars/infographic_jedi/hero_respiracion_kenobi.webp',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_respiracion_kenobi.webp',
     bannerCaption: 'El control del aire es el control de la mente, un puente directo hacia el sistema nervioso.',
     content: [
       "¿Sabías que tienes un 'freno de mano' secreto en tu cuerpo que puede detener el estrés casi al instante? La magia está escondida en algo tan simple y aburrido que hacemos miles de veces al día sin siquiera darnos cuenta: respirar. Normalmente, la respiración es automática, pero es la única función automática de nuestro cuerpo que también podemos controlar a voluntad. Al cambiar la forma en que respiramos, podemos hackear nuestro sistema nervioso.",
@@ -192,9 +192,9 @@ const INFOGRAPHIC_NODES = [
     id: 'inteligencia-emocional',
     title: 'El Poder de la Empatía Jedi',
     color: '#42A5F5',
-    btnImage: '/assets/starwars/infographic_jedi/btn_inteligencia_emocional.png',
-    image: '/assets/starwars/infographic_jedi/hero_inteligencia_emocional.png',
-    bannerImage: '/assets/starwars/infographic_jedi/banner_inteligencia_emocional.png',
+    btnImage: '/assets/starwars/infographic_jedi/btn_inteligencia_emocional.webp',
+    image: '/assets/starwars/infographic_jedi/hero_inteligencia_emocional.webp',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_inteligencia_emocional.webp',
     bannerCaption: 'Sentir las emociones de otros en la galaxia: la ciencia de las neuronas espejo.',
     content: [
       "Ser inteligente no solo significa saber multiplicar números grandes o recordar muchos datos de historia. En el año 1995, un psicólogo famoso llamado Daniel Goleman le dijo al mundo que existe algo igual de importante: la 'Inteligencia Emocional'. Esta es la maravillosa capacidad de entender lo que tú mismo sientes, controlar esos sentimientos, y lo que es más increíble, entender y sentir genuinamente las emociones de las demás personas a tu alrededor.",
@@ -221,9 +221,9 @@ const INFOGRAPHIC_NODES = [
     id: 'lado-oscuro-cortisol',
     title: 'El Lado Oscuro: Estrés y Cortisol',
     color: '#EF5350',
-    btnImage: '/assets/starwars/infographic_jedi/btn_lado_oscuro_cortisol.png',
-    image: '/assets/starwars/infographic_jedi/hero_lado_oscuro_cortisol.png',
-    bannerImage: '/assets/starwars/infographic_jedi/banner_lado_oscuro_cortisol.png',
+    btnImage: '/assets/starwars/infographic_jedi/btn_lado_oscuro_cortisol.webp',
+    image: '/assets/starwars/infographic_jedi/hero_lado_oscuro_cortisol.webp',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_lado_oscuro_cortisol.webp',
     bannerCaption: 'El miedo lleva a la ira, la ira al odio... Y el estrés crónico daña el cerebro.',
     content: [
       "El sabio Maestro Yoda dijo una vez la frase más de la psicología galáctica: 'El miedo es el camino hacia el Lado Oscuro. El miedo lleva a la ira, la ira lleva al odio, el odio lleva al sufrimiento'. Aunque suena a misticismo espacial, estas sabias palabras describen perfectamente lo que ocurre químicamente en nuestro propio cuerpo cuando nos dejamos consumir por el estrés negativo, la ansiedad y el pánico constante.",
@@ -250,9 +250,9 @@ const INFOGRAPHIC_NODES = [
     id: 'sueno-jedi',
     title: 'Sueño REM: El Entrenamiento Nocturno',
     color: '#AB47BC',
-    btnImage: '/assets/starwars/infographic_jedi/btn_sueno_jedi.png',
-    image: '/assets/starwars/infographic_jedi/hero_sueno_jedi.png',
-    bannerImage: '/assets/starwars/infographic_jedi/banner_sueno_jedi.png',
+    btnImage: '/assets/starwars/infographic_jedi/btn_sueno_jedi.webp',
+    image: '/assets/starwars/infographic_jedi/hero_sueno_jedi.webp',
+    bannerImage: '/assets/starwars/infographic_jedi/banner_sueno_jedi.webp',
     bannerCaption: 'Incluso los Maestros más poderosos necesitan que su cerebro se repare en la noche.',
     content: [
       "Podrías pensar que cuando duermes por la noche, tu cerebro simplemente se apaga como si fuera el interruptor de una computadora. ¡Nada más lejos de la realidad! Mientras tú estás dormido y roncando, tu cerebro está trabajando a toda máquina, más activo que nunca. Dormir bien es el superpoder menos valorado y más increíble que tenemos, y es necesario para mantener la cordura y aprender cosas nuevas.",
@@ -691,7 +691,7 @@ export default function InteractiveInfographic_SwSec7() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #00CED1, #7B68EE)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(123, 104, 238, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_jedi/sw_badge_7.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              <img src="/assets/starwars/infographic_jedi/sw_badge_7.webp" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
               ¡ENTRENAMIENTO JEDI COMPLETADO!
               <Sparkles size={24} />
             </motion.div>

@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Módulos del curso ─────────────────────────────────────────────────────
 const FARADAY_MODULES = [
-  { id: 'faraday_m1', title: 'Electromagnetismo', color: '#00E4FF', link: '/course/faraday_m1', icon: '/assets/faraday/faraday_m1.png', coords: { left: '10%', top: '55%' } },
-  { id: 'faraday_m2', title: 'La Jaula de Faraday', color: '#FFD700', link: '/course/faraday_m2', icon: '/assets/faraday/faraday_m2.png', coords: { left: '30%', top: '30%' } },
-  { id: 'faraday_m3', title: 'El Motor Eléctrico', color: '#FF6B35', link: '/course/faraday_m3', icon: '/assets/faraday/faraday_m3.png', coords: { left: '52%', top: '50%' } },
-  { id: 'faraday_m4', title: 'La Química del Benceno', color: '#A8FF78', link: '/course/faraday_m4', icon: '/assets/faraday/faraday_m4.png', coords: { left: '72%', top: '30%' } },
-  { id: 'faraday_m5', title: 'Legado Electromagnético', color: '#FF9FFF', link: '/course/faraday_m5', icon: '/assets/faraday/faraday_m5.png', coords: { left: '88%', top: '58%' } },
+  { id: 'faraday_m1', title: 'Electromagnetismo', color: '#00E4FF', link: '/course/faraday_m1', icon: '/assets/faraday/faraday_m1.webp', coords: { left: '10%', top: '55%' } },
+  { id: 'faraday_m2', title: 'La Jaula de Faraday', color: '#FFD700', link: '/course/faraday_m2', icon: '/assets/faraday/faraday_m2.webp', coords: { left: '30%', top: '30%' } },
+  { id: 'faraday_m3', title: 'El Motor Eléctrico', color: '#FF6B35', link: '/course/faraday_m3', icon: '/assets/faraday/faraday_m3.webp', coords: { left: '52%', top: '50%' } },
+  { id: 'faraday_m4', title: 'La Química del Benceno', color: '#A8FF78', link: '/course/faraday_m4', icon: '/assets/faraday/faraday_m4.webp', coords: { left: '72%', top: '30%' } },
+  { id: 'faraday_m5', title: 'Legado Electromagnético', color: '#FF9FFF', link: '/course/faraday_m5', icon: '/assets/faraday/faraday_m5.webp', coords: { left: '88%', top: '58%' } },
 ];
 
 // ─── Constelación de Nodos ──────────────────────────────────────────────────
@@ -199,7 +199,7 @@ export default function FaradayHub() {
       <main style={{
         flex: 1, position: 'relative', width: '100vw', height: '100vh',
         backgroundColor: '#000000',
-        backgroundImage: "url('/assets/faraday/faraday_cover.png')",
+        backgroundImage: "url('/assets/faraday/faraday_cover.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',

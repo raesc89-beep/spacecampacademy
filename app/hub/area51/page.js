@@ -247,7 +247,7 @@ export default function Area51Hub() {
       {/* Base Image */}
       <div style={{
         position: 'absolute', inset: 0, zIndex: 0,
-        backgroundImage: 'url("/assets/area51/area51_hub_bg.png")',
+        backgroundImage: 'url("/assets/area51/area51_hub_bg.webp")',
         backgroundSize: '110% auto',
         backgroundPosition: 'center',
         animation: 'panBg 40s ease-in-out infinite',

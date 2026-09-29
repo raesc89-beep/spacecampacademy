@@ -12,18 +12,18 @@ export default function Spaceship({
 }) {
   
   // Mapeo Dinámico de Chasis a Ilustraciones Premium
-  let shipImage = '/assets/shuttle_vector.png'; // Fallback Base
-  if (hull === 'heavy') shipImage = '/assets/heavy_cruiser_vector.png';
-  if (hull === 'sharp') shipImage = '/assets/shuttle_vector.png'; // Reutilizamos pero con filtro
-  if (hull === 'alien') shipImage = '/assets/alien_ship_vector.png';
+  let shipImage = '/assets/shuttle_vector.webp'; // Fallback Base
+  if (hull === 'heavy') shipImage = '/assets/heavy_cruiser_vector.webp';
+  if (hull === 'sharp') shipImage = '/assets/shuttle_vector.webp'; // Reutilizamos pero con filtro
+  if (hull === 'alien') shipImage = '/assets/alien_ship_vector.webp';
 
   const renderLogo = () => {
     if (logo === 'nasa') {
-      return <img src="/assets/logo_nasa_auth.png" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '25%', filter: 'drop-shadow(0 0 5px rgba(255,255,255,0.5))', zIndex: 10 }} />;
+      return <img src="/assets/logo_nasa_auth.webp" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '25%', filter: 'drop-shadow(0 0 5px rgba(255,255,255,0.5))', zIndex: 10 }} />;
     }
     if (logo === 'spacecamp') {
       // Sello con rellenado blanco puro (El pinche badge que mandaste)
-      return <img src="/assets/amde_logo.png" alt="Space Camp Logo Original" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '38%', zIndex: 10, filter: 'drop-shadow(0 0 10px rgba(0, 228, 255, 0.5))' }} />;
+      return <img src="/assets/amde_logo.webp" alt="Space Camp Logo Original" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '38%', zIndex: 10, filter: 'drop-shadow(0 0 10px rgba(0, 228, 255, 0.5))' }} />;
     }
     if (logo === 'lockheed') {
        return <img src="/assets/lockheed_logo.png" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '35%', zIndex: 10 }} />;

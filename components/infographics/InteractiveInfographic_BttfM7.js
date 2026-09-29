@@ -143,8 +143,8 @@ const INFOGRAPHIC_NODES = [
     id: 'metodo-cientifico',
     title: 'El Método Científico',
     color: '#6EC6FF',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_metodo.png',
-    image: '/assets/bttf/infographic_biotecnologia/hero_metodo.png',
+    btnImage: '/assets/bttf/infographic_biotecnologia/btn_metodo.webp',
+    image: '/assets/bttf/infographic_biotecnologia/hero_metodo.webp',
     content: [
       'El Método Científico es un proceso sistemático para realizar descubrimientos. Es una serie de pasos que asegura que los resultados sean comprobables y precisos.',
       'El proceso comienza con una observación y la formulación de una hipótesis (una posible explicación). Luego, se diseña un experimento para probar esta hipótesis, durante el cual se recopilan datos y medidas.',
@@ -155,7 +155,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown encarna el método científico a la perfección. Cuando prueba el DeLorean por primera vez en el centro comercial Twin Pines, graba todo el experimento, usa a Einstein (su perro) para la primera prueba con un reloj sincronizado, observa los resultados (el reloj de Einstein está atrasado 1 minuto), analiza los datos y concluye que el viaje en el tiempo es posible.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El filósofo y científico Alhacén (Ibn al-Haytham), en el siglo XI, fue uno de los primeros en usar un método experimental para comprobar teorías. Usó experimentos controlados para demostrar que la luz viaja en línea recta y entra a nuestros ojos, cambiando para siempre la forma en que entendemos la óptica.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_metodo-cientifico.png',
+    bannerImage: '/assets/bttf/infographic_m7/banner_metodo-cientifico.webp',
     bannerCaption: 'El método científico: el motor del progreso y del pensamiento crítico',
     fact: 'El método científico no es solo para laboratorios; ¡lo usas todos los días! Cuando intentas encender una lámpara y no funciona (observación), piensas que el foco está fundido (hipótesis), cambias el foco por uno nuevo (experimento), y si la luz enciende, tu conclusión es que tenías razón.'
   },
@@ -163,8 +163,8 @@ const INFOGRAPHIC_NODES = [
     id: 'electricidad',
     title: 'Electricidad y Rayos',
     color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_electricidad.png',
-    image: '/assets/bttf/infographic_biotecnologia/hero_electricidad.png',
+    btnImage: '/assets/bttf/infographic_biotecnologia/btn_electricidad.webp',
+    image: '/assets/bttf/infographic_biotecnologia/hero_electricidad.webp',
     content: [
       'Un rayo es una descarga de electricidad estática. Durante una tormenta, las partículas en las nubes chocan, creando una carga eléctrica. Cuando la carga es suficiente, busca el camino más corto hacia el suelo.',
       'La energía de un rayo transporta millones de voltios y alcanza temperaturas de hasta 30,000 grados Celsius. Este calor expande el aire de golpe, generando el sonido del trueno.',
@@ -175,7 +175,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Para viajar en el tiempo, el condensador de flujo necesita 1.21 gigawatts de potencia. Al no poder conseguir plutonio en 1955, Doc Brown canaliza la energía del rayo que cae en la torre del reloj directamente al DeLorean. Esta es una representación brillante, aunque exagerada, de intentar aprovechar la inmensa energía de la naturaleza.' },
       { label: 'Dato Científico', icon: 'atom', text: '1.21 Gigawatts es una cantidad colosal de energía. Para generar tanta electricidad de forma continua, necesitarías aproximadamente 3.1 millones de paneles solares funcionando a pleno rendimiento, o la producción combinada de varios reactores nucleares comerciales. ¡Y un solo relámpago lo hace en fracciones de segundo!' }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_electricidad.png',
+    bannerImage: '/assets/bttf/infographic_m7/banner_electricidad.webp',
     bannerCaption: 'La revolución eléctrica: de la vela al LED y la transmisión inalámbrica',
     fact: 'Existen relámpagos que no van hacia el suelo, sino hacia arriba. Conocidos como "Duendes Rojos" (Red Sprites) y "Chorros Azules" (Blue Jets), estas misteriosas descargas eléctricas ocurren muy por encima de las nubes de tormenta, alcanzando hasta el borde del espacio.'
   },
@@ -183,8 +183,8 @@ const INFOGRAPHIC_NODES = [
     id: 'guerra-corrientes',
     title: 'La Guerra de Corrientes',
     color: '#FF8A80',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_corrientes.png',
-    image: '/assets/bttf/infographic_biotecnologia/hero_corrientes.png',
+    btnImage: '/assets/bttf/infographic_biotecnologia/btn_corrientes.webp',
+    image: '/assets/bttf/infographic_biotecnologia/hero_corrientes.webp',
     content: [
       'A finales del siglo XIX, Thomas Edison y Nikola Tesla compitieron en la "Guerra de las Corrientes" para establecer el estándar del sistema de transmisión eléctrica comercial.',
       'Thomas Edison defendía la Corriente Continua (DC), un sistema donde la electricidad fluye en una sola dirección. Su principal limitación era la pérdida de energía al transmitirse a largas distancias.',
@@ -195,7 +195,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Doc Brown tiene mucho en común con Nikola Tesla. Ambos son genios excéntricos, inventores solitarios y algo incomprendidos por la sociedad de su tiempo, obsesionados con controlar grandes cantidades de energía. El enorme amplificador de guitarra en la casa de Doc y sus experimentos salvajes recuerdan el famoso laboratorio de Tesla en Colorado Springs.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Durante la Guerra de las Corrientes, Edison organizó demostraciones públicas donde electrocutaba animales usando corriente alterna para intentar asustar a la gente y convencerlos de que el sistema de Tesla era peligroso. A pesar de estas tácticas sucias, la eficiencia matemática y física del sistema de Tesla finalmente prevaleció.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_guerra-corrientes.png',
+    bannerImage: '/assets/bttf/infographic_m7/banner_guerra-corrientes.webp',
     bannerCaption: 'La guerra de las corrientes: Tesla vs Edison y la batalla del AC vs DC',
     fact: 'Nikola Tesla soñaba con transmitir electricidad de forma inalámbrica a todo el planeta a través del aire y la tierra. Construyó la enorme Torre Wardenclyffe en Nueva York para probar esto, pero el proyecto se quedó sin fondos antes de completarse.'
   },
@@ -203,8 +203,8 @@ const INFOGRAPHIC_NODES = [
     id: 'semiconductores',
     title: 'Revolución Digital',
     color: '#B388FF',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_semiconductores.png',
-    image: '/assets/bttf/infographic_biotecnologia/hero_semiconductores.png',
+    btnImage: '/assets/bttf/infographic_biotecnologia/btn_semiconductores.webp',
+    image: '/assets/bttf/infographic_biotecnologia/hero_semiconductores.webp',
     content: [
       'El transistor, inventado en 1947, reemplazó a los frágiles tubos de vacío en las computadoras. Cumplía la misma función siendo más pequeño y emitiendo menos calor.',
       'Un transistor funciona como un interruptor que controla el flujo de electricidad (representando un "1" o un "0"). Están fabricados con materiales semiconductores como el silicio.',
@@ -215,7 +215,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Cuando el Doc de 1955 ve la videocámara JVC portátil de Marty, se sorprende por su tamaño y capacidad. En 1955, el transistor apenas comenzaba a usarse, y las cámaras de televisión eran enormes equipos de estudio que dependían de pesados tubos de vacío. ¡La videocámara de Marty era verdadera magia del futuro!' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los transistores modernos son tan pequeños que su tamaño se mide en nanómetros. Para que te hagas una idea, un cabello humano tiene un grosor de unos 80,000 nanómetros. Los transistores en los chips actuales pueden medir apenas 3 nanómetros de ancho. ¡Son casi a escala atómica!' }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_semiconductores.png',
+    bannerImage: '/assets/bttf/infographic_m7/banner_semiconductores.webp',
     bannerCaption: 'La era de los semiconductores: del transistor al nanochip moderno',
     fact: 'El silicio es el material estrella para los semiconductores, ¡y es sorprendentemente común! Es el segundo elemento más abundante en la corteza terrestre, después del oxígeno. La arena normal de la playa está hecha principalmente de dióxido de silicio.'
   },
@@ -223,8 +223,8 @@ const INFOGRAPHIC_NODES = [
     id: 'biotecnologia',
     title: 'CRISPR y Biotecnología',
     color: '#00E5FF',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_biotec.png',
-    image: '/assets/bttf/infographic_biotecnologia/hero_biotec.png',
+    btnImage: '/assets/bttf/infographic_biotecnologia/btn_biotec.webp',
+    image: '/assets/bttf/infographic_biotecnologia/hero_biotec.webp',
     content: [
       'En 2012, Jennifer Doudna y Emmanuelle Charpentier desarrollaron la herramienta CRISPR-Cas9, un método para editar secuencias de ADN de manera precisa.',
       'Antes de CRISPR, la modificación genética era un proceso complejo. Esta tecnología permite identificar una secuencia específica de ADN, cortarla y reemplazarla, facilitando el tratamiento de enfermedades de origen genético.',
@@ -235,7 +235,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Cuando Doc viaja al futuro (año 2015), visita una clínica de rejuvenecimiento que le añade décadas a su vida. Le cambian la sangre, el bazo y el colon, y le reducen las arrugas. Hoy, la ciencia médica moderna con CRISPR y terapias génicas busca algo similar: entender y eventualmente ralentizar el envejecimiento celular real de nuestro cuerpo.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Por su desarrollo de CRISPR-Cas9, Emmanuelle Charpentier y Jennifer Doudna ganaron el Premio Nobel de Química en 2020. Fue la primera vez en la historia que un Premio Nobel de ciencias fue otorgado a dos mujeres, marcando un hito inspirador para la ciencia y la igualdad.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_biotecnologia.png',
+    bannerImage: '/assets/bttf/infographic_m7/banner_biotecnologia.webp',
     bannerCaption: 'Biotecnología del futuro: edición genética, órganos artificiales y medicina personalizada',
     fact: 'La biotecnología no solo se aplica a humanos. Se está utilizando tecnología genética para intentar "resucitar" o proteger especies en peligro. Existen proyectos en marcha que buscan traer de vuelta al mamut lanudo alterando genéticamente el ADN de sus parientes vivos más cercanos, los elefantes asiáticos.'
   },
@@ -243,8 +243,8 @@ const INFOGRAPHIC_NODES = [
     id: 'espacio-futuro',
     title: 'Exploración Espacial',
     color: '#CE93D8',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_espacio.png',
-    image: '/assets/bttf/infographic_biotecnologia/hero_espacio.png',
+    btnImage: '/assets/bttf/infographic_biotecnologia/btn_espacio.webp',
+    image: '/assets/bttf/infographic_biotecnologia/hero_espacio.webp',
     content: [
       'La industria espacial ha logrado avances mediante el desarrollo de cohetes reutilizables. Anteriormente, los cohetes se descartaban tras un solo uso. Ahora, algunas etapas pueden aterrizar y utilizarse nuevamente.',
       'El programa Artemis de la NASA tiene como objetivo el retorno humano a la Luna, incluyendo la construcción de una estación en órbita lunar y bases de superficie como preparación para misiones a Marte.',
@@ -255,7 +255,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En BTTF, el 2015 está lleno de autos voladores usando "aeroconversión". Aunque todavía no tenemos autos voladores diarios por razones de seguridad, las tecnologías de propulsión están avanzando. La visión de la película sobre la gravedad controlada y el transporte futurista se refleja hoy en los avances de la aeronáutica, cohetes de despegue vertical e investigaciones en levitación magnética.' },
       { label: 'Dato Científico', icon: 'atom', text: 'El viaje a Marte toma alrededor de 7 a 9 meses usando la tecnología de propulsión química actual, y las oportunidades de lanzamiento ocurren solo cada 26 meses cuando la Tierra y Marte están alineados. ¡Es un viaje largo y sin paradas de descanso!' }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_espacio-futuro.png',
+    bannerImage: '/assets/bttf/infographic_m7/banner_espacio-futuro.webp',
     bannerCaption: 'El espacio como frontera final: colonias, minería y naves generacionales',
     fact: 'El Telescopio Espacial James Webb usa un espejo recubierto de oro. La capa de oro es tan fina que, a pesar de que el espejo mide 6.5 metros de ancho, ¡solo se usaron aproximadamente 48 gramos de oro para cubrirlo todo (el tamaño de una pelota de golf)!'
   },
@@ -263,8 +263,8 @@ const INFOGRAPHIC_NODES = [
     id: 'sostenibilidad',
     title: 'Futuro Sostenible',
     color: '#66BB6A',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_sostenible.png',
-    image: '/assets/bttf/infographic_biotecnologia/hero_sostenible.png',
+    btnImage: '/assets/bttf/infographic_biotecnologia/btn_sostenible.webp',
+    image: '/assets/bttf/infographic_biotecnologia/hero_sostenible.webp',
     content: [
       'La sostenibilidad busca satisfacer las necesidades actuales sin comprometer los recursos de las generaciones futuras. Un desafío principal es mitigar el cambio climático asociado a los gases de efecto invernadero.',
       'La transición energética implica reducir la dependencia de los combustibles fósiles a favor de fuentes renovables como la energía solar, eólica y geotérmica, junto con métodos eficientes de almacenamiento.',
@@ -275,7 +275,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Al final de la película, el Doc de 2015 usa el "Mr. Fusion", un dispositivo en el DeLorean que convierte restos de basura (cáscaras de plátano, cerveza sobrante) en energía masiva y limpia. ¡Ese es el sueño absoluto de la sostenibilidad y la economía circular! Transformar los desechos directamente en energía usable sin contaminación.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El 100% de la energía que usa el país de Islandia proviene de fuentes renovables. Debido a su geografía volcánica única, utilizan casi exclusivamente energía geotérmica e hidroeléctrica, demostrando que es posible operar una sociedad moderna completa sin depender de combustibles fósiles.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_sostenibilidad.png',
+    bannerImage: '/assets/bttf/infographic_m7/banner_sostenibilidad.webp',
     bannerCaption: 'Tecnología para la sostenibilidad: energía limpia, captura de carbono y ciudades verdes',
     fact: 'Existen bacterias descubiertas recientemente, como la "Ideonella sakaiensis", que han evolucionado naturalmente para alimentarse de plástico PET. Los científicos están usando biotecnología para estudiar sus enzimas e intentar crear súper-bacterias que nos ayuden a reciclar las montañas de plástico que hemos creado.'
   }

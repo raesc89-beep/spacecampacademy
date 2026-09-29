@@ -15,7 +15,7 @@ const SW_MODULES = [
     subtitle: 'Astrofísica & Relatividad',
     color: '#00CFFF',
     link: '/course/starwars_sec_1',
-    icon: '/assets/starwars/module_1.png',
+    icon: '/assets/starwars/module_1.webp',
   },
   {
     id: 'starwars_sec_2',
@@ -24,7 +24,7 @@ const SW_MODULES = [
     subtitle: 'Exoplanetas & Climas Extremos',
     color: '#FF8C00',
     link: '/course/starwars_sec_2',
-    icon: '/assets/starwars/module_2.png',
+    icon: '/assets/starwars/module_2.webp',
   },
   {
     id: 'starwars_sec_3',
@@ -33,7 +33,7 @@ const SW_MODULES = [
     subtitle: 'Biomecatrónica e IA',
     color: '#7B68EE',
     link: '/course/starwars_sec_3',
-    icon: '/assets/starwars/module_3.png',
+    icon: '/assets/starwars/module_3.webp',
   },
   {
     id: 'starwars_sec_4',
@@ -42,7 +42,7 @@ const SW_MODULES = [
     subtitle: 'Física Cuántica',
     color: '#FFE81F',
     link: '/course/starwars_sec_4',
-    icon: '/assets/starwars/module_4.png',
+    icon: '/assets/starwars/module_4.webp',
   },
   {
     id: 'starwars_sec_5',
@@ -51,7 +51,7 @@ const SW_MODULES = [
     subtitle: 'Biología Alienígena',
     color: '#00FF88',
     link: '/course/starwars_sec_5',
-    icon: '/assets/starwars/module_5.png',
+    icon: '/assets/starwars/module_5.webp',
   },
   {
     id: 'starwars_sec_6',
@@ -60,7 +60,7 @@ const SW_MODULES = [
     subtitle: 'Sables de Luz & Energía',
     color: '#FF3333',
     link: '/course/starwars_sec_6',
-    icon: '/assets/starwars/module_6.png',
+    icon: '/assets/starwars/module_6.webp',
   },
   {
     id: 'starwars_sec_7',
@@ -69,7 +69,7 @@ const SW_MODULES = [
     subtitle: 'Filosofía & Ética',
     color: '#00FFCC',
     link: '/course/starwars_sec_7',
-    icon: '/assets/starwars/module_7.png',
+    icon: '/assets/starwars/module_7.webp',
   },
   {
     id: 'starwars_sec_8',
@@ -78,7 +78,7 @@ const SW_MODULES = [
     subtitle: 'Ingeniería Aeroespacial',
     color: '#A0A0A0',
     link: '/course/starwars_sec_8',
-    icon: '/assets/starwars/module_8.png',
+    icon: '/assets/starwars/module_8.webp',
   },
   {
     id: 'starwars_sec_9',
@@ -87,7 +87,7 @@ const SW_MODULES = [
     subtitle: 'Tecnología Biomédica',
     color: '#FF0055',
     link: '/course/starwars_sec_9',
-    icon: '/assets/starwars/module_9.png',
+    icon: '/assets/starwars/module_9.webp',
   },
 ];
 
@@ -142,14 +142,14 @@ function StarshipsAnim() {
         style={{ position: 'absolute', top: 0, left: 0, zIndex: 5 }}
       >
         <img 
-          src="/assets/starwars/ship1.png" 
+          src="/assets/starwars/ship1.webp" 
           alt="Snowspeeder"
           style={{ width: '80px', transform: 'scaleX(-1)', filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.2))' }}
         />
       </motion.div>
       {/* Nave 2: X-Wing (Persecución: el X-Wing huye) */}
       <motion.img 
-        src="/assets/starwars/ship2.png" 
+        src="/assets/starwars/ship2.webp" 
         alt="X-Wing"
         animate={{ x: ['-30vw', '130vw'], y: ['70vh', '10vh'], rotate: [-10, -25] }}
         transition={{ repeat: Infinity, duration: 25, repeatDelay: 20, ease: "linear", delay: 5 }}
@@ -157,7 +157,7 @@ function StarshipsAnim() {
       />
       {/* Nave 3: TIE Fighter (Persecución: persigue al X-wing de cerca) */}
       <motion.img 
-        src="/assets/starwars/ship3.png" 
+        src="/assets/starwars/ship3.webp" 
         alt="TIE Fighter"
         animate={{ x: ['-20vw', '120vw'], y: ['75vh', '15vh'], rotate: [-5, -15] }}
         transition={{ repeat: Infinity, duration: 24, repeatDelay: 21, ease: "linear", delay: 7 }}
@@ -177,7 +177,7 @@ function FogEffect() {
       maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
     }}>
       <motion.img 
-        src="/assets/bttf/smoke_effect.png" 
+        src="/assets/bttf/smoke_effect.webp" 
         alt="Fog"
         animate={{ x: ['-5%', '5%'] }}
         transition={{ repeat: Infinity, duration: 25, ease: "easeInOut", repeatType: 'reverse' }}

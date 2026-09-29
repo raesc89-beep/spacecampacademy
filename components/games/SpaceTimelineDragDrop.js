@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, CheckCircle, Crosshair } from 'lucide-react';
 
 const MILESTONES = [
-  { id: 'm1', year: "1957", title: "Sputnik 1", desc: "Primer satélite artificial.", img: '/assets/bepicolombo_probe.png' },
-  { id: 'm2', year: "1961", title: "Yuri Gagarin", desc: "Primer humano orbitando.", img: '/assets/planet_earth.png' },
-  { id: 'm3', year: "1969", title: "Apollo 11", desc: "El humano pisa la Luna.", img: '/assets/shuttle_vector.png' },
-  { id: 'm4', year: "1977", title: "Voyager 1", desc: "Viaje interestelar.", img: '/assets/bepicolombo_probe.png' },
-  { id: 'm5', year: "1981", title: "Transbordador", desc: "Primer vuelo reutilizable.", img: '/assets/shuttle_vector.png' },
-  { id: 'm6', year: "1990", title: "Telescopio Hubble", desc: "Famoso observatorio orbital.", img: '/assets/herschel_telescope_space.png' },
-  { id: 'm7', year: "1998", title: "Estación (ISS)", desc: "Construcción en órbita.", img: '/assets/shuttle_vector.png' },
-  { id: 'm8', year: "2004", title: "Rovers Gemelos", desc: "Rovers aterrizan en Marte.", img: '/assets/mars_human_colony_dome.png' },
-  { id: 'm9', year: "2012", title: "Rover Curiosity", desc: "Laboratorio móvil marciano.", img: '/assets/mars_dust_storm.png' },
-  { id: 'm10', year: "2021", title: "James Webb", desc: "Telescopio más potente.", img: '/assets/herschel_telescope_space.png' }
+  { id: 'm1', year: "1957", title: "Sputnik 1", desc: "Primer satélite artificial.", img: '/assets/bepicolombo_probe.webp' },
+  { id: 'm2', year: "1961", title: "Yuri Gagarin", desc: "Primer humano orbitando.", img: '/assets/planet_earth.webp' },
+  { id: 'm3', year: "1969", title: "Apollo 11", desc: "El humano pisa la Luna.", img: '/assets/shuttle_vector.webp' },
+  { id: 'm4', year: "1977", title: "Voyager 1", desc: "Viaje interestelar.", img: '/assets/bepicolombo_probe.webp' },
+  { id: 'm5', year: "1981", title: "Transbordador", desc: "Primer vuelo reutilizable.", img: '/assets/shuttle_vector.webp' },
+  { id: 'm6', year: "1990", title: "Telescopio Hubble", desc: "Famoso observatorio orbital.", img: '/assets/herschel_telescope_space.webp' },
+  { id: 'm7', year: "1998", title: "Estación (ISS)", desc: "Construcción en órbita.", img: '/assets/shuttle_vector.webp' },
+  { id: 'm8', year: "2004", title: "Rovers Gemelos", desc: "Rovers aterrizan en Marte.", img: '/assets/mars_human_colony_dome.webp' },
+  { id: 'm9', year: "2012", title: "Rover Curiosity", desc: "Laboratorio móvil marciano.", img: '/assets/mars_dust_storm.webp' },
+  { id: 'm10', year: "2021", title: "James Webb", desc: "Telescopio más potente.", img: '/assets/herschel_telescope_space.webp' }
 ];
 
 export default function SpaceTimelineDragDrop({ onComplete }) {

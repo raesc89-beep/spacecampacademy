@@ -75,9 +75,9 @@ const INFOGRAPHIC_NODES = [
     id: 'iss-naves',
     title: 'De la ISS a los Destructores Estelares',
     color: '#90CAF9',
-    btnImage: '/assets/starwars/infographic_cruceros/btn_iss-naves.png',
-    image: '/assets/starwars/infographic_cruceros/hero_iss-naves.png',
-    bannerImage: '/assets/starwars/infographic_cruceros/banner_iss-naves.png',
+    btnImage: '/assets/starwars/infographic_cruceros/btn_iss-naves.webp',
+    image: '/assets/starwars/infographic_cruceros/hero_iss-naves.webp',
+    bannerImage: '/assets/starwars/infographic_cruceros/banner_iss-naves.webp',
     bannerCaption: 'El espacio requiere naves gigantescas para su exploración.',
     content: [
       "¿Te imaginas construir una ciudad en el espacio? En Star Wars, los Destructores Estelares miden 1,600 metros de largo. Esto equivale a 16 campos de fútbol. Para lograr esta hazaña, el Imperio utiliza astilleros orbitales. Allí, miles de trabajadores y androides ensamblan naves en el vacío, evitando el costo de levantar su peso desde la superficie.",
@@ -104,9 +104,9 @@ const INFOGRAPHIC_NODES = [
     id: 'materiales',
     title: 'Supermateriales del Futuro',
     color: '#B0BEC5',
-    btnImage: '/assets/starwars/infographic_cruceros/btn_materiales.png',
-    image: '/assets/starwars/infographic_cruceros/hero_materiales.png',
-    bannerImage: '/assets/starwars/infographic_cruceros/banner_materiales.png',
+    btnImage: '/assets/starwars/infographic_cruceros/btn_materiales.webp',
+    image: '/assets/starwars/infographic_cruceros/hero_materiales.webp',
+    bannerImage: '/assets/starwars/infographic_cruceros/banner_materiales.webp',
     bannerCaption: 'Nuevas aleaciones permitirán estructuras imposibles hoy.',
     content: [
       "Construir naves espaciales requiere materiales que desafíen los límites de la física. Si usáramos el acero tradicional, sería tan pesado que requeriría una cantidad imposible de combustible para moverse. Por esto, los ingenieros aeroespaciales buscan crear supermateriales ligeros pero más resistentes que el diamante.",
@@ -133,9 +133,9 @@ const INFOGRAPHIC_NODES = [
     id: 'propulsion',
     title: 'Motores Estelares: Química a Iones',
     color: '#FFB74D',
-    btnImage: '/assets/starwars/infographic_cruceros/btn_propulsion.png',
-    image: '/assets/starwars/infographic_cruceros/hero_propulsion.png',
-    bannerImage: '/assets/starwars/infographic_cruceros/banner_propulsion.png',
+    btnImage: '/assets/starwars/infographic_cruceros/btn_propulsion.webp',
+    image: '/assets/starwars/infographic_cruceros/hero_propulsion.webp',
+    bannerImage: '/assets/starwars/infographic_cruceros/banner_propulsion.webp',
     bannerCaption: 'Los motores iónicos ya son una realidad científica.',
     content: [
       "Para mover cualquier nave espacial, necesitas un sistema de propulsión. Imagina que viajas patinando sobre hielo y lanzas una bola de boliche hacia adelante. Tu cuerpo se deslizará hacia atrás debido a la física clásica. Las naves arrojan gases a altas velocidades para avanzar por el principio de acción y reacción.",
@@ -162,9 +162,9 @@ const INFOGRAPHIC_NODES = [
     id: 'megaestructuras',
     title: 'Megaestructuras de Ingeniería',
     color: '#CE93D8',
-    btnImage: '/assets/starwars/infographic_cruceros/btn_megaestructuras.png',
-    image: '/assets/starwars/infographic_cruceros/hero_megaestructuras.png',
-    bannerImage: '/assets/starwars/infographic_cruceros/banner_megaestructuras.png',
+    btnImage: '/assets/starwars/infographic_cruceros/btn_megaestructuras.webp',
+    image: '/assets/starwars/infographic_cruceros/hero_megaestructuras.webp',
+    bannerImage: '/assets/starwars/infographic_cruceros/banner_megaestructuras.webp',
     bannerCaption: 'Cilindros de O\'Neill y Esferas de Dyson: sueños de arquitectos del espacio.',
     content: [
       "Más allá de las naves tradicionales, los científicos han imaginado construir megaestructuras espaciales. Son construcciones de tamaño inmenso que podrían albergar a millones de personas. Contarían con ciudades espaciales, montañas artificiales y ecosistemas completos en el vacío sideral.",
@@ -191,9 +191,9 @@ const INFOGRAPHIC_NODES = [
     id: 'mineria',
     title: 'Minería de Asteroides',
     color: '#FFD54F',
-    btnImage: '/assets/starwars/infographic_cruceros/btn_mineria.png',
-    image: '/assets/starwars/infographic_cruceros/hero_mineria.png',
-    bannerImage: '/assets/starwars/infographic_cruceros/banner_mineria.png',
+    btnImage: '/assets/starwars/infographic_cruceros/btn_mineria.webp',
+    image: '/assets/starwars/infographic_cruceros/hero_mineria.webp',
+    bannerImage: '/assets/starwars/infographic_cruceros/banner_mineria.webp',
     bannerCaption: 'Extraer recursos en el espacio evitará la carga de lanzar materiales desde la Tierra.',
     content: [
       "Construir cruceros estelares o colonias orbitales enfrentaría un grave problema logístico: escapar de la gravedad terrestre. Lanzar un kilogramo de metal al espacio cuesta miles de dólares en combustible. Levantar las toneladas necesarias para un Destructor Estelar sería económicamente inviable.",
@@ -220,9 +220,9 @@ const INFOGRAPHIC_NODES = [
     id: 'soporte-vital',
     title: 'Reciclar para Sobrevivir',
     color: '#81C784',
-    btnImage: '/assets/starwars/infographic_cruceros/btn_soporte-vital.png',
-    image: '/assets/starwars/infographic_cruceros/hero_soporte-vital.png',
-    bannerImage: '/assets/starwars/infographic_cruceros/banner_soporte-vital.png',
+    btnImage: '/assets/starwars/infographic_cruceros/btn_soporte-vital.webp',
+    image: '/assets/starwars/infographic_cruceros/hero_soporte-vital.webp',
+    bannerImage: '/assets/starwars/infographic_cruceros/banner_soporte-vital.webp',
     bannerCaption: 'En el vacío, el agua y el oxígeno son tesoros valiosos.',
     content: [
       "En la ciencia ficción solemos centrarnos en los motores y disparos láser. Sin embargo, el sistema más importante en cualquier nave tripulada es el Sistema de Soporte Vital (ECLSS). Sin este equipo, los astronautas no podrían sobrevivir en el vacío del espacio.",
@@ -249,9 +249,9 @@ const INFOGRAPHIC_NODES = [
     id: 'gravedad',
     title: 'Creando Gravedad Artificial',
     color: '#64B5F6',
-    btnImage: '/assets/starwars/infographic_cruceros/btn_gravedad.png',
-    image: '/assets/starwars/infographic_cruceros/hero_gravedad.png',
-    bannerImage: '/assets/starwars/infographic_cruceros/banner_gravedad.png',
+    btnImage: '/assets/starwars/infographic_cruceros/btn_gravedad.webp',
+    image: '/assets/starwars/infographic_cruceros/hero_gravedad.webp',
+    bannerImage: '/assets/starwars/infographic_cruceros/banner_gravedad.webp',
     bannerCaption: 'La microgravedad debilita los huesos; la rotación podría ser nuestra salvación.',
     content: [
       "En las películas, las tripulaciones caminan cómodamente por los pasillos de sus naves. Sin embargo, generar gravedad artificial es uno de los problemas físicos más complejos en la exploración espacial real.",
@@ -643,7 +643,7 @@ export default function InteractiveInfographic_SwSec8() {
   const activeNode = INFOGRAPHIC_NODES.find(n => n.id === activeNodeId);
   
   return (
-    <div style={{ position: 'relative', width: '100%', minHeight: '600px', background: '#0B0D17', borderRadius: '16px', overflow: 'hidden', padding: '2rem', backgroundImage: "url('/assets/starwars/infographic_cruceros/bg_cruceros.png')", backgroundSize: 'cover', backgroundPosition: 'center', color: '#FFF', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+    <div style={{ position: 'relative', width: '100%', minHeight: '600px', background: '#0B0D17', borderRadius: '16px', overflow: 'hidden', padding: '2rem', backgroundImage: "url('/assets/starwars/infographic_cruceros/bg_cruceros.webp')", backgroundSize: 'cover', backgroundPosition: 'center', color: '#FFF', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
       <StarField />
       
       <div style={{ position: 'relative', zIndex: 1, height: '100%', display: 'flex', flexDirection: 'column' }}>

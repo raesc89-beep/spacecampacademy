@@ -146,8 +146,8 @@ const INFOGRAPHIC_NODES = [
     id: 'naturaleza-tiempo',
     title: 'La Naturaleza del Tiempo',
     color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_naturaleza.png',
-    image: '/assets/bttf/infographic_gigawatts/hero_naturaleza.png',
+    btnImage: '/assets/bttf/infographic_gigawatts/btn_naturaleza.webp',
+    image: '/assets/bttf/infographic_gigawatts/hero_naturaleza.webp',
     content: [
       '¿Qué es el tiempo? San Agustín dijo: "Si nadie me lo pregunta, lo sé; pero si trato de explicarlo, no lo sé." Durante siglos se creyó que el tiempo era un flujo constante, avanzando a la misma velocidad en todo el universo.',
       'Isaac Newton describió el tiempo como un reloj perfecto. En su modelo, relojes sincronizados siempre marcarían la misma hora, sin importar su ubicación. Esta visión clásica sugería un universo con reglas ordenadas.',
@@ -158,7 +158,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Doc Brown utiliza una pizarra para explicar a Marty cómo sus acciones han alterado la naturaleza de su tiempo. Dibuja una línea de tiempo recta y luego muestra cómo se divide en un 1985 alternativo. Esta es una brillante visualización de la idea de que el tiempo puede tomar múltiples direcciones dependiendo de nuestras elecciones.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'A nivel fundamental de la física cuántica, muchas ecuaciones funcionan igual de bien hacia adelante o hacia atrás en el tiempo. La dirección del tiempo no está codificada en las leyes más básicas del universo, lo que ha llevado a algunos físicos a sugerir que el flujo del tiempo podría ser una ilusión.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_naturaleza-tiempo.png',
+    bannerImage: '/assets/bttf/infographic_m4/banner_naturaleza-tiempo.webp',
     bannerCaption: 'La naturaleza filosófica y física del tiempo como dimensión fundamental',
     fact: 'San Agustín, en el siglo IV, propuso que el pasado y el futuro no existen realmente; solo existe un "presente continuo" en la mente humana. Esta antigua idea sigue debatiéndose entre los físicos teóricos de hoy en día.'
   },
@@ -166,8 +166,8 @@ const INFOGRAPHIC_NODES = [
     id: 'simultaneidad',
     title: 'La Simultaneidad',
     color: '#FF6B35',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_simultaneidad.png',
-    image: '/assets/bttf/infographic_gigawatts/hero_simultaneidad.png',
+    btnImage: '/assets/bttf/infographic_gigawatts/btn_simultaneidad.webp',
+    image: '/assets/bttf/infographic_gigawatts/hero_simultaneidad.webp',
     content: [
       'Einstein demostró que eventos que parecen simultáneos para una persona pueden ocurrir en distintos momentos para otra. Este concepto, llamado Relatividad de la Simultaneidad, es central en la física moderna.',
       'En un tren en movimiento, si dos rayos caen en los extremos al mismo tiempo, un observador exterior los verá simultáneos. Pero un pasajero moviéndose hacia uno de los rayos lo verá caer primero.',
@@ -178,7 +178,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Hay momentos en la saga donde Marty y Doc experimentan los mismos eventos desde perspectivas de tiempo totalmente diferentes. En la primera película, el "presente" de Marty en 1985 ocurre simultáneamente con el "futuro" que el Doc original de 1955 está intentando cambiar. Sus líneas temporales personales se cruzan de forma fascinante.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Debido a la velocidad a la que la luz viaja desde las estrellas, siempre estamos viendo el pasado. Si la estrella Betelgeuse explotara hoy mismo, los humanos no se enterarían hasta dentro de unos 600 años. Por lo tanto, el concepto de "simultaneidad" a escalas cósmicas pierde su significado habitual.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_simultaneidad.png',
+    bannerImage: '/assets/bttf/infographic_m4/banner_simultaneidad.webp',
     bannerCaption: 'Simultaneidad relativa: dos observadores ven los mismos eventos en diferente orden',
     fact: 'Si te estás moviendo rápidamente respecto a una persona en la otra punta del universo, tu "ahora" podría incluir eventos que para ellos ocurrieron en el siglo XIX, o eventos que sucederán en el siglo XXII.'
   },
@@ -186,8 +186,8 @@ const INFOGRAPHIC_NODES = [
     id: 'entropia',
     title: 'Entropía y Desorden',
     color: '#00E5FF',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_entropia.png',
-    image: '/assets/bttf/infographic_gigawatts/hero_entropia.png',
+    btnImage: '/assets/bttf/infographic_gigawatts/btn_entropia.webp',
+    image: '/assets/bttf/infographic_gigawatts/hero_entropia.webp',
     content: [
       'La tendencia de los sistemas a pasar del orden al desorden se llama entropía. Es un principio de la Segunda Ley de la Termodinámica.',
       'La entropía proporciona una dirección al tiempo. Aunque las ecuaciones de movimiento funcionan en ambas direcciones temporales, el universo se vuelve más desordenado. A esto se le llama la "flecha del tiempo".',
@@ -198,7 +198,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Cuando el viejo Biff le entrega el almanaque deportivo a su yo joven, desata una cascada de eventos que aumenta drásticamente el "desorden" (la entropía) de la línea temporal. El Hill Valley pacífico se convierte en un caos dominado por el crimen. Es una representación metafórica perfecta de cómo el caos tiende a dominar si se altera el orden inicial.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Ludwig Boltzmann, quien formuló las ecuaciones de la entropía, sugirió que tal vez vivimos en una rara burbuja de baja entropía dentro de un multiverso inmenso. Esta idea ayudó a sentar las bases de la cosmología moderna.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_entropia.png',
+    bannerImage: '/assets/bttf/infographic_m4/banner_entropia.webp',
     bannerCaption: 'La entropía define la flecha del tiempo hacia mayor desorden',
     fact: 'El hielo derritiéndose en un vaso de agua es un ejemplo perfecto del aumento de entropía. El calor se distribuye y las moléculas de agua se vuelven más caóticas. ¡El flujo del tiempo se puede medir con un cubo de hielo!'
   },
@@ -206,8 +206,8 @@ const INFOGRAPHIC_NODES = [
     id: 'memoria-tiempo',
     title: 'Memoria y el Tiempo',
     color: '#FFA726',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_memoria.png',
-    image: '/assets/bttf/infographic_gigawatts/hero_memoria.png',
+    btnImage: '/assets/bttf/infographic_gigawatts/btn_memoria.webp',
+    image: '/assets/bttf/infographic_gigawatts/hero_memoria.webp',
     content: [
       'Recordar el pasado y no el futuro es un problema complejo en la física. La memoria es una huella física creada por el aumento de entropía en el cerebro.',
       'Las experiencias modifican las sinapsis cerebrales. Este proceso consume energía, genera calor y crea un rastro de información irreversible.',
@@ -218,7 +218,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'Uno de los elementos visuales más icónicos de BTTF es la fotografía de la familia de Marty. A medida que él altera el pasado, sus hermanos (y eventualmente él mismo) comienzan a borrarse de la foto. Esto ilustra cómo las alteraciones temporales destruyen las pruebas físicas (como fotos o memorias) del pasado original.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Los ordenadores también tienen una flecha del tiempo ligada a la memoria. El Principio de Landauer establece que borrar un solo bit de información en un ordenador siempre liberará una pequeña cantidad de calor. La memoria y la entropía térmica están unidas.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_memoria-tiempo.png',
+    bannerImage: '/assets/bttf/infographic_m4/banner_memoria-tiempo.webp',
     bannerCaption: 'La memoria y la percepción psicológica del tiempo en el cerebro humano',
     fact: 'El "presente" que percibes tiene en realidad unos 80 milisegundos de retraso. El cerebro tarda ese tiempo en juntar la información de la vista, el oído y el tacto, para crear un momento coherente. ¡Siempre vives en el pasado reciente!'
   },
@@ -226,8 +226,8 @@ const INFOGRAPHIC_NODES = [
     id: 'cuantica-tiempo',
     title: 'Mecánica Cuántica',
     color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_cuantica.png',
-    image: '/assets/bttf/infographic_gigawatts/hero_cuantica.png',
+    btnImage: '/assets/bttf/infographic_gigawatts/btn_cuantica.webp',
+    image: '/assets/bttf/infographic_gigawatts/hero_cuantica.webp',
     content: [
       'A nivel subatómico, las partículas pueden estar en múltiples estados a la vez en la mecánica cuántica. Al ser observadas, colapsan en un estado definido, marcando un antes y un después.',
       'El tiempo podría ser una propiedad emergente. Así como la temperatura surge de moléculas en movimiento, el tiempo podría originarse por el entrelazamiento cuántico entre partículas.',
@@ -238,7 +238,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'El momento exacto en que el rayo golpea la torre del reloj (a las 10:04 pm) requiere una transferencia precisa de energía cuántica. Doc Brown tiene que calcular el milisegundo exacto para que la energía canalice hacia el condensador de flujo. Es una metáfora de los eventos cuánticos precisos y repentinos que cambian el curso del universo.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'Un experimento famoso conocido como el "Borrador Cuántico de Elección Retardada" sugiere que, a escala subatómica, una medición en el presente puede aparentemente influir en el estado de un fotón en el pasado. ¡El tiempo a nivel cuántico es verdaderamente extraño!' }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_cuantica-tiempo.png',
+    bannerImage: '/assets/bttf/infographic_m4/banner_cuantica-tiempo.webp',
     bannerCaption: 'El tiempo en la mecánica cuántica: discreto, continuo y bidireccional',
     fact: 'Las partículas cuánticas pueden entrar en un estado de superposición donde están, de alguna forma, "fuera" del flujo normal del tiempo. Solo interactúan con la historia cuando se enredan con el mundo macroscópico.'
   },
@@ -246,8 +246,8 @@ const INFOGRAPHIC_NODES = [
     id: 'viaje-futuro',
     title: 'Viaje al Futuro',
     color: '#66BB6A',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_futuro.png',
-    image: '/assets/bttf/infographic_gigawatts/hero_futuro.png',
+    btnImage: '/assets/bttf/infographic_gigawatts/btn_futuro.webp',
+    image: '/assets/bttf/infographic_gigawatts/hero_futuro.webp',
     content: [
       'La relatividad demuestra que el tiempo pasa más lento a velocidades altas, fenómeno conocido como dilatación del tiempo.',
       'Experimentos con relojes atómicos en aviones confirman esto: regresan marcando fracciones de segundo menos que los relojes estacionarios en la Tierra.',
@@ -258,7 +258,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al año 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad holográfica. Aunque la película sobreestimó algunas tecnologías, la idea de dar un"salto" y encontrar una sociedad transformada por la innovación tecnológica captura la esencia del viaje hacia el futuro.' },
       { label: 'Dato Científico', icon: 'atom', text: 'Partículas subatómicas llamadas muones, que se crean cuando los rayos cósmicos chocan con la atmósfera, duran tan poco que deberían desintegrarse antes de llegar al suelo. Sin embargo, llegan a la superficie porque viajan casi a la velocidad de la luz, lo que "ralentiza" su reloj interno. ¡Ellos experimentan su propio viaje al futuro!' }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-futuro.png',
+    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-futuro.webp',
     bannerCaption: 'El viaje al futuro ya es posible: dilatación del tiempo en cohetes y satélites',
     fact: 'Si pudieras viajar en una nave al 99.99% de la velocidad de la luz durante lo que para ti sería 1 año, al volver a la Tierra descubrirías que han pasado casi 70 años. ¡Habrías saltado al futuro de la humanidad!'
   },
@@ -266,8 +266,8 @@ const INFOGRAPHIC_NODES = [
     id: 'viaje-pasado',
     title: 'Viaje al Pasado',
     color: '#FF7043',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_pasado.png',
-    image: '/assets/bttf/infographic_gigawatts/hero_pasado.png',
+    btnImage: '/assets/bttf/infographic_gigawatts/btn_pasado.webp',
+    image: '/assets/bttf/infographic_gigawatts/hero_pasado.webp',
     content: [
       'La relatividad general indica que el espacio-tiempo puede doblarse y crear Curvas Cerradas de Tiempo. Seguir estas curvas permitiría regresar a un momento anterior.',
       'El viaje al pasado genera paradojas temporales. La paradoja del abuelo plantea qué sucede si alguien impide que sus ancestros se conozcan, creando una contradicción sobre su propio nacimiento.',
@@ -278,7 +278,7 @@ const INFOGRAPHIC_NODES = [
       { label: 'En la Película', icon: 'zap', text: 'La trama de la primera película gira exactamente en torno al peligro del viaje al pasado. Al interactuar con sus padres adolescentes en 1955, Marty rompe la cadena causal que lleva a su propio nacimiento, corriendo el riesgo de ser borrado de la existencia. Él debe actuar como un "reparador" de la línea temporal para salvarse.' },
       { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Kip Thorne descubrió matemáticamente que podrías, en teoría, convertir un agujero de gusano en una máquina para viajar al pasado moviendo uno de sus extremos a casi la velocidad de la luz y luego trayéndolo de vuelta.' }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-pasado.png',
+    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-pasado.webp',
     bannerCaption: 'Los obstáculos físicos que impiden el viaje al pasado',
     fact: 'A nivel de las matemáticas puras de Einstein, viajar al pasado está permitido. Son las complicaciones y paradojas lógicas posteriores las que hacen que los físicos sospechen que el universo debe tener un mecanismo oculto para prohibirlo.'
   }

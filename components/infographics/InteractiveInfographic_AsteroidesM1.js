@@ -194,7 +194,7 @@ const INFOGRAPHIC_NODES = [
       { label: '¿Sabías que...?', icon: 'clock', text: 'El asteroide 16 Psyche es el cuerpo de tipo M más grande conocido. Mide unos 220 kilómetros de ancho y su valor económico estimado en metales industriales supera los 10,000 cuatrillones de dólares.' },
       { label: 'Dato Científico', icon: 'atom', text: 'La reflectividad de un asteroide se mide con una escala llamada albedo. Un asteroide tipo C refleja apenas el 3% de la luz solar que recibe, mientras que un asteroide tipo S refleja hasta el 20% de la luz incidente.' }
     ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.png',
+    bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.webp',
     bannerCaption: 'Tipos C, S y M',
     bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.webp',
     bannerCaption: 'Tipos espectrales: C carbonáceos (75%), S silíceos rocosos y M metálicos con hierro y níquel',

@@ -74,9 +74,9 @@ const INFOGRAPHIC_NODES = [
     id: 'plasma-estado',
     title: 'El Cuarto Estado de la Materia',
     color: '#FF5252',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_plasma_estado.png',
-    image: '/assets/starwars/infographic_plasmas/hero_plasma_estado.png',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_plasma_estado.png',
+    btnImage: '/assets/starwars/infographic_plasmas/btn_plasma_estado.webp',
+    image: '/assets/starwars/infographic_plasmas/hero_plasma_estado.webp',
+    bannerImage: '/assets/starwars/infographic_plasmas/banner_plasma_estado.webp',
     bannerCaption: "El plasma es el cuarto estado de la materia y constituye más del 99% de la materia visible del universo.",
     content: [
       "Desde que somos pequeños en la escuela, nos enseñan que la materia existe en tres estados comunes: sólido (como el hielo), líquido (como el agua que bebemos) y gas (como el vapor de una olla). Pero estos tres estados son una rareza en el universo. El universo está dominado por un cuarto estado de la materia, menos conocido pero mucho más abundante.",
@@ -110,9 +110,9 @@ const INFOGRAPHIC_NODES = [
     id: 'sable-laser',
     title: '¿Podremos Construir un Sable Láser?',
     color: '#448AFF',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_sable_laser.png',
-    image: '/assets/starwars/infographic_plasmas/hero_sable_laser.png',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_sable_laser.png',
+    btnImage: '/assets/starwars/infographic_plasmas/btn_sable_laser.webp',
+    image: '/assets/starwars/infographic_plasmas/hero_sable_laser.webp',
+    bannerImage: '/assets/starwars/infographic_plasmas/banner_sable_laser.webp',
     bannerCaption: "La contención magnética permite confinar plasma a millones de grados dentro de campos electromagnéticos toroidales.",
     content: [
       "El arma más icónica de un Jedi es el sable de luz. Durante décadas, científicos y aficionados han debatido si es posible construir uno real. El problema físico es que la luz no se detiene a un metro de distancia: si enciendes un láser apuntando al cielo abierto, el rayo viaja infinitamente hacia el espacio.",
@@ -146,9 +146,9 @@ const INFOGRAPHIC_NODES = [
     id: 'blasters-energia',
     title: 'Blasters: Armas de Energía Dirigida',
     color: '#FF6E40',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_blasters_energia.png',
-    image: '/assets/starwars/infographic_plasmas/hero_blasters_energia.png',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_blasters_energia.png',
+    btnImage: '/assets/starwars/infographic_plasmas/btn_blasters_energia.webp',
+    image: '/assets/starwars/infographic_plasmas/hero_blasters_energia.webp',
+    bannerImage: '/assets/starwars/infographic_plasmas/banner_blasters_energia.webp',
     bannerCaption: "Los aceleradores de partículas impulsan iones a velocidades cercanas a la de la luz usando campos electromagnéticos.",
     content: [
       "En el universo galáctico, los soldados de asalto y los contrabandistas como Han Solo no utilizan armas que disparan balas de metal convencionales. En su lugar, utilizan blasters. Cuando se dispara un blaster, lo que sale volando por el aire no es un pedazo sólido de plomo, sino un proyectil brillante de color rojo, verde o azul compuesto de energía.",
@@ -182,9 +182,9 @@ const INFOGRAPHIC_NODES = [
     id: 'escudos-deflectores',
     title: 'Escudos Deflectores: ¿Son Posibles?',
     color: '#40C4FF',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_escudos_deflectores.png',
-    image: '/assets/starwars/infographic_plasmas/hero_escudos_deflectores.png',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_escudos_deflectores.png',
+    btnImage: '/assets/starwars/infographic_plasmas/btn_escudos_deflectores.webp',
+    image: '/assets/starwars/infographic_plasmas/hero_escudos_deflectores.webp',
+    bannerImage: '/assets/starwars/infographic_plasmas/banner_escudos_deflectores.webp',
     bannerCaption: "Los escudos electromagnéticos deflectan partículas cargadas, similar a cómo la magnetosfera terrestre protege del viento solar.",
     content: [
       "Cuando el Halcón Milenario huye de destructores imperiales o atraviesa un campo de asteroides, los pilotos ordenan activar los escudos deflectores. En cuestión de segundos, una cúpula de energía invisible recubre y protege la nave.",
@@ -218,9 +218,9 @@ const INFOGRAPHIC_NODES = [
     id: "fusion-nuclear",
     title: "Fusión Nuclear: La Energía de las Estrellas",
     color: "#FF1744",
-    btnImage: "/assets/starwars/infographic_plasmas/btn_fusion_nuclear.png",
-    image: "/assets/starwars/infographic_plasmas/hero_fusion_nuclear.png",
-    bannerImage: "/assets/starwars/infographic_plasmas/banner_fusion_nuclear.png",
+    btnImage: "/assets/starwars/infographic_plasmas/btn_fusion_nuclear.webp",
+    image: "/assets/starwars/infographic_plasmas/hero_fusion_nuclear.webp",
+    bannerImage: "/assets/starwars/infographic_plasmas/banner_fusion_nuclear.webp",
     bannerCaption: "Los reactores tokamak confinan plasma a 150 millones de grados en forma toroidal para lograr la fusión nuclear controlada.",
     content: [
       "Para que el Imperio Galáctico mueva sus Destructores Estelares a través del hiperespacio, se necesita una cantidad de energía que ningún combustible convencional puede proveer. La respuesta a este desafío tecnológico está en dominar la fusión nuclear, el proceso que enciende a nuestro Sol y a todas las estrellas del firmamento.",
@@ -252,9 +252,9 @@ const INFOGRAPHIC_NODES = [
     id: "rayos-ionicos",
     title: "Cañones de Iones y Propulsión",
     color: "#2979FF",
-    btnImage: "/assets/starwars/infographic_plasmas/btn_rayos_ionicos.png",
-    image: "/assets/starwars/infographic_plasmas/hero_rayos_ionicos.png",
-    bannerImage: "/assets/starwars/infographic_plasmas/banner_rayos_ionicos.png",
+    btnImage: "/assets/starwars/infographic_plasmas/btn_rayos_ionicos.webp",
+    image: "/assets/starwars/infographic_plasmas/hero_rayos_ionicos.webp",
+    bannerImage: "/assets/starwars/infographic_plasmas/banner_rayos_ionicos.webp",
     bannerCaption: "Los motores iónicos aceleran gas xenón ionizado para generar empuje continuo, alcanzando velocidades de 90 km/s.",
     content: [
       "Cuando pensamos en batallas espaciales, normalmente imaginamos explosiones deslumbrantes que destruyen naves enemigas con fuego brillante y chispas voladoras. Sin embargo, en el helado y remoto planeta Hoth, los valientes rebeldes utilizaron un tipo diferente de armamento: el famoso cañón de iones defensivo. En lugar de perforar el blindaje metálico de los temibles Destructores Estelares, este enorme dispositivo azul disparaba relámpagos concentrados diseñados para sobrecargar los delicados circuitos electrónicos y dejar las máquinas apagadas y flotando a la deriva.",
@@ -286,9 +286,9 @@ const INFOGRAPHIC_NODES = [
     id: "estrella-muerte",
     title: "La Estrella de la Muerte: Superláseres",
     color: "#FF9100",
-    btnImage: "/assets/starwars/infographic_plasmas/btn_estrella_muerte.png",
-    image: "/assets/starwars/infographic_plasmas/hero_estrella_muerte.png",
-    bannerImage: "/assets/starwars/infographic_plasmas/banner_estrella_muerte.png",
+    btnImage: "/assets/starwars/infographic_plasmas/btn_estrella_muerte.webp",
+    image: "/assets/starwars/infographic_plasmas/hero_estrella_muerte.webp",
+    bannerImage: "/assets/starwars/infographic_plasmas/banner_estrella_muerte.webp",
     bannerCaption: "Los láseres de alta potencia concentran fotones coherentes mediante cristales amplificadores para transferir energía a largas distancias.",
     content: [
       "La temible estación espacial esférica conocida como la Estrella de la Muerte se convirtió en el arma de terror definitiva del Imperio Galáctico. Su gigantesco cañón cóncavo podía disparar un haz de energía tan desmesuradamente poderoso que era capaz de aniquilar un planeta entero con un solo impacto, como tristemente lo demostró al pulverizar el pacífico mundo de Alderaan. Esta asombrosa demostración de fuerza letal en la gran pantalla ha inspirado a generaciones de ingenieros ópticos a estudiar meticulosamente hasta dónde pueden llegar las capacidades técnicas de la luz pura.",
@@ -797,7 +797,7 @@ export default function InteractiveInfographic_SwSec6() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               style={{ marginTop: '2rem', background: 'linear-gradient(45deg, #FF5252, #2979FF)', padding: '1.5rem 3rem', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '1rem', color: '#FFF', fontWeight: 'bold', fontFamily: '"Oswald", sans-serif', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(68, 138, 255, 0.4)' }}
             >
-              <img src="/assets/starwars/infographic_plasmas/badge_plasmas.png" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
+              <img src="/assets/starwars/infographic_plasmas/badge_plasmas.webp" alt="Badge" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  loading="lazy" />
               ¡ANÁLISIS DE PLASMA COMPLETADO!
               <Sparkles size={24} />
             </motion.div>

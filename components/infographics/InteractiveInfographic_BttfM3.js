@@ -157,8 +157,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'paradoja-abuelo', title: 'La Paradoja del Abuelo', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.png',
-    image: '/assets/bttf/infographic_paradojas/hero_abuelo.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_abuelo.webp',
     content: [
       'Una paradoja es una premisa sin solución lógica. Por ejemplo: «Esta oración es falsa». Si es falsa, dice la verdad, pero si dice la verdad, debería ser falsa. Las paradojas temporales operan de la misma manera, creando bucles lógicos.',
       'La paradoja del abuelo plantea que viajas al pasado e impides que tus abuelos se conozcan. Si no se conocen, tus padres no nacen, y tú tampoco. Pero si no naces, no puedes viajar al pasado.',
@@ -166,7 +166,7 @@ const INFOGRAPHIC_NODES = [
       'En «Volver al Futuro», esta paradoja ocurre cuando Marty impide que sus padres se conozcan. Su mano comienza a desvanecerse, ilustrando cómo alterar el pasado elimina la propia existencia del viajero.',
       'En 1949, el matemático Kurt Gödel encontró soluciones a las ecuaciones de la Relatividad que permiten «curvas temporales cerradas», es decir, trayectorias matemáticas hacia el pasado. Este hallazgo preocupó a Einstein porque su teoría permitía situaciones lógicamente inconsistentes.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_paradoja-abuelo.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_paradoja-abuelo.webp',
     bannerCaption: 'El análisis profundo de la paradoja del abuelo y sus implicaciones lógicas',
     fact: 'Kurt Gödel le regaló a Einstein un universo en rotación por su cumpleaños en 1949, demostrando que los viajes al pasado eran matemáticamente posibles según la propia teoría de Einstein. A Einstein le inquietó profundamente.',
     expandables: [
@@ -175,8 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'muchos-mundos', title: 'Universos Paralelos', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_mundos.png',
-    image: '/assets/bttf/infographic_paradojas/hero_mundos.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_mundos.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_mundos.webp',
     content: [
       'En 1957, el físico Hugh Everett propuso que, en cada evento cuántico, el universo se divide. Si una partícula puede tomar dos caminos, el universo se separa en dos ramas distintas. En ambas, la realidad continúa.',
       'Esta teoría resuelve la paradoja del abuelo. Si viajas al pasado y modificas un evento, no cambias tu propia historia, sino que creas una línea temporal alterna. Tu universo original permanece intacto.',
@@ -184,7 +184,7 @@ const INFOGRAPHIC_NODES = [
       'Este concepto se relaciona con la «decoherencia cuántica». En el experimento del gato de Schrödinger, el animal está en una superposición de estados. En la interpretación de Muchos Mundos, ambas opciones ocurren en ramas diferentes de la realidad.',
       'En una encuesta de 2013, aproximadamente el 18% de los físicos especialistas apoyaban la interpretación de Muchos Mundos. Es la segunda opción más aceptada después de la interpretación de Copenhague.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_muchos-mundos.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_muchos-mundos.webp',
     bannerCaption: 'Universos paralelos y ramas de realidad según la interpretación de muchos mundos',
     fact: 'Hugh Everett propuso los Muchos Mundos en su tesis doctoral de 1957. Su director John Wheeler la apoyó, pero Niels Bohr la rechazó. Everett abandonó la física y se convirtió en contratista militar. Murió a los 51 años sin saber que su teoría se volvería respetada.',
     expandables: [
@@ -193,8 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'bootstrap', title: 'El Bucle Bootstrap', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_bootstrap.png',
-    image: '/assets/bttf/infographic_paradojas/hero_bootstrap.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_bootstrap.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_bootstrap.webp',
     content: [
       'Una paradoja de bootstrap ocurre cuando un objeto o información existe sin haber sido creado. Si encuentras los planos de una máquina del tiempo, la construyes, viajas al pasado y dejas los planos para que los encuentres, la información existe en un bucle cerrado.',
       'En la película, esto ocurre con la canción «Johnny B. Goode». Marty la toca en 1955, Chuck Berry la escucha por teléfono y la aprende de Marty, quien originalmente la aprendió de Chuck. Nadie compuso la canción.',
@@ -202,7 +202,7 @@ const INFOGRAPHIC_NODES = [
       'Las paradojas de bootstrap no violan la termodinámica, ya que la entropía sigue aumentando. Sin embargo, violan el principio de causalidad, porque la causa y el efecto se vuelven indistinguibles.',
       'El relato «All You Zombies» de Robert Heinlein explora este concepto: una persona viaja en el tiempo y resulta ser su propia madre y su propio padre. Es el ejemplo de un individuo creado en un bucle temporal sin origen externo.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_bootstrap.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_bootstrap.webp',
     bannerCaption: 'El bucle bootstrap: paradoja de información sin origen causal',
     fact: 'El nombre «paradoja bootstrap» viene del relato de Robert Heinlein «By His Bootstraps» (1941). La frase «levantarte tirando de tus propias botas» originalmente describía algo imposible â€” ¡no puedes levantarte tirando de tus propios zapatos!',
     expandables: [
@@ -211,8 +211,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gemelos', title: 'La Paradoja de los Gemelos', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.png',
-    image: '/assets/bttf/infographic_paradojas/hero_gemelos.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_gemelos.webp',
     content: [
       'La paradoja de los gemelos se basa en principios físicos comprobados. La Teoría de la Relatividad Especial (1905) establece que el tiempo transcurre más lento a medida que aumenta la velocidad del observador.',
       'Si un gemelo viaja al espacio al 90% de la velocidad de la luz durante 5 años, al regresar a la Tierra habrán pasado 11.5 años para su hermano. La diferencia de edad es un efecto físico real.',
@@ -220,7 +220,7 @@ const INFOGRAPHIC_NODES = [
       'Los satélites GPS aplican estos ajustes a diario. Por orbitar a gran velocidad y menor gravedad terrestre, sus relojes se desfasan 38 microsegundos por día. Sin compensación relativista, el sistema acumularía grandes errores de posición.',
       'El astronauta Scott Kelly pasó 340 días en la Estación Espacial Internacional. Al volver a la Tierra, resultó ser 5 milisegundos más joven que su hermano gemelo, convirtiéndose en un viajero hacia el futuro.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_gemelos.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_gemelos.webp',
     bannerCaption: 'La paradoja de los gemelos: dilatación del tiempo en viaje relativista',
     fact: 'Scott Kelly es 5 milisegundos más joven que su gemelo idéntico Mark Kelly (ahora senador de EE.UU. Por Arizona) porque pasó 520 días totales en el espacio. La ISS orbita a 7.66 km/s. Cada astronauta que regresa de la ISS ha viajado un poquito al futuro.',
     expandables: [
@@ -229,8 +229,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'novikov', title: 'El Principio de Autoconsistencia', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_novikov.png',
-    image: '/assets/bttf/infographic_paradojas/hero_novikov.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_novikov.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_novikov.webp',
     content: [
       'El físico Igor Novikov propuso que el universo no permite paradojas temporales. Su Principio de Autoconsistencia establece que los eventos influenciados por un viajero en el tiempo deben ser consistentes con la historia previa.',
       'Según este principio, si intentas alterar el pasado, los factores externos lo impedirán. El universo forzará los eventos para mantener la línea temporal sin alteraciones contradictorias.',
@@ -238,7 +238,7 @@ const INFOGRAPHIC_NODES = [
       'Thorne analizó un experimento donde una bola de billar viaja al pasado por un agujero de gusano e impacta contra su versión anterior. Demostró matemáticamente que el choque desvía la bola de una manera que previene paradojas.',
       'En la película, la historia se reajusta tras los cambios provocados por Marty. Sus padres terminan juntos mediante eventos diferentes, manteniendo la consistencia de su propia existencia.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_novikov.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_novikov.webp',
     bannerCaption: 'El principio de autoconsistencia de Novikov: el pasado no puede cambiarse',
     fact: 'Kip Thorne ganó el Nobel de Física 2017 por detectar ondas gravitacionales. También fue consultor científico de «Interstellar» (2014) y sus ecuaciones del agujero negro Gargantúa fueron tan precisas que generaron artículos científicos reales. Literalmente convirtió una película en investigación.',
     expandables: [
@@ -247,8 +247,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'delorean', title: 'Ciencia Detrás del DeLorean', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_delorean.png',
-    image: '/assets/bttf/infographic_paradojas/hero_delorean.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_delorean.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_delorean.webp',
     content: [
       'Según la relatividad, el tiempo se distorsiona conforme un objeto acelera. Alcanzar el límite de la velocidad de la luz produce efectos temporales marcados.',
       'Para deformar el espacio-tiempo se requiere materia exótica con energía negativa. Modelos teóricos como el motor warp de Alcubierre dependen de este tipo de energía para funcionar.',
@@ -256,7 +256,7 @@ const INFOGRAPHIC_NODES = [
       'A velocidades cercanas a la de la luz, un objeto emitiría radiación de Cherenkov en un espectro azul, distinta a las llamas naranjas presentadas en la película.',
       'El DeLorean DMC-12 fue seleccionado para la película por su carrocería de acero inoxidable y sus puertas de ala de gaviota. Se fabricaron aproximadamente 9,000 unidades en la década de 1980.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_delorean.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_delorean.webp',
     bannerCaption: 'La ciencia real detrás del diseño del DeLorean máquina del tiempo',
     fact: 'El guion original tenía la máquina del tiempo como un refrigerador, no un auto. Steven Spielberg (productor ejecutivo) temía que los niños se encerraran en refrigeradores imitando la película, así que lo cambiaron a un auto. El DeLorean fue elegido porque su carrocería de acero y puertas de gaviota ya parecían una nave espacial.',
     expandables: [
@@ -265,8 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cronologia', title: 'La Protección Cronológica', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_cronologia.png',
-    image: '/assets/bttf/infographic_paradojas/hero_cronologia.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_cronologia.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_cronologia.webp',
     content: [
       'En 1992, Stephen Hawking propuso la Conjetura de Protección Cronológica, argumentando que las leyes de la física impiden la formación de curvas cerradas de tiempo para evitar el viaje al pasado.',
       'Hawking organizó una fiesta para viajeros del tiempo en 2009, enviando las invitaciones después del evento. Ningún viajero asistió a la celebración.',
@@ -274,7 +274,7 @@ const INFOGRAPHIC_NODES = [
       'El concepto de «censura cósmica» sugiere que el universo oculta singularidades, del mismo modo que los agujeros negros se ocultan tras sus horizontes de eventos. Esta protección mantendría la coherencia causal.',
       'El viaje al pasado permanece en un estado teórico indefinido porque la Relatividad General y la Mecánica Cuántica no han sido unificadas. Una teoría de gravedad cuántica podría resolver definitivamente esta cuestión.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_cronologia.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_cronologia.webp',
     bannerCaption: 'La conjetura de protección cronológica de Hawking',
     fact: 'La fiesta de Stephen Hawking para viajeros del tiempo fue el 28 de junio de 2009 en Cambridge. Las invitaciones se enviaron DESPUÉS, con coordenadas exactas: 52°12\'21"N, 0°7\'4.7"E. Nadie apareció. Hawking mantuvo el champán listo por si acaso y dijo: «Tengo evidencia experimental de que el viaje en el tiempo no es posible.»',
     expandables: [
@@ -283,8 +283,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-ciencia', title: 'El Futuro de la Ciencia del Tiempo', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_futuro.png',
-    image: '/assets/bttf/infographic_paradojas/hero_futuro.png',
+    btnImage: '/assets/bttf/infographic_paradojas/btn_futuro.webp',
+    image: '/assets/bttf/infographic_paradojas/hero_futuro.webp',
     content: [
       'El viaje al futuro es un fenómeno comprobado por la dilatación temporal de la relatividad. Efectos similares se miden en el GPS, los vuelos espaciales y los aceleradores de partículas.',
       'La viabilidad del viaje al pasado, la estabilización de agujeros de gusano y la Conjetura de Protección Cronológica son problemas pendientes en la investigación física actual.',
@@ -292,7 +292,7 @@ const INFOGRAPHIC_NODES = [
       'Las representaciones del viaje temporal en la ciencia ficción han estimulado la formulación de hipótesis matemáticas e impulsan la exploración de la física teórica.',
       'Las paradojas temporales operan como herramientas para identificar fallos en los modelos actuales. Cuestionar la causalidad o la dirección del tiempo promueve el avance en nuestra comprensión del universo.',
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_futuro-ciencia.png',
+    bannerImage: '/assets/bttf/infographic_m3/banner_futuro-ciencia.webp',
     bannerCaption: 'El futuro de la ciencia del tiempo: de la teoría a la posibilidad',
     fact: 'En 2014, científicos de la Universidad de Queensland simularon un fotón viajando a través de curvas temporales cerradas e interactuando con su versión más joven. La simulación mostró que el fotón SIEMPRE encontraba un camino autoconsistente, apoyando los modelos teóricos de viaje temporal autoconsistente. Fue la primera simulación cuántica de este tipo, publicada en Nature Communications.',
     expandables: [
