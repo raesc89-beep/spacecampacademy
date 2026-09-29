@@ -135,6 +135,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'huellas-historias',
+              bannerImage: '/assets/dinos/infographic_m6/banner_huellas-historias.webp',
     title: 'Huellas que Cuentan Historias',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m6/btn_huellas-historias.jpg',
@@ -154,6 +155,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'vida-en-manada',
+              bannerImage: '/assets/dinos/infographic_m6/banner_vida-en-manada.webp',
     title: 'Vida en Manada',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m6/btn_vida-en-manada.jpg',
@@ -173,6 +175,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nidos-cuidado-parental',
+              bannerImage: '/assets/dinos/infographic_m6/banner_nidos-cuidado-parental.webp',
     title: 'Nidos y Cuidado Parental',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m6/btn_nidos-cuidado-parental.jpg',
@@ -192,6 +195,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'comunicacion-dinosaurios',
+              bannerImage: '/assets/dinos/infographic_m6/banner_comunicacion-dinosaurios.webp',
     title: 'Comunicación entre Dinosaurios',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m6/btn_comunicacion-dinosaurios.jpg',
@@ -211,6 +215,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'migracion-territorio',
+              bannerImage: '/assets/dinos/infographic_m6/banner_migracion-territorio.webp',
     title: 'Migración y Territorio',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m6/btn_migracion-territorio.jpg',
@@ -230,6 +235,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dinosaurios-nocturnos',
+              bannerImage: '/assets/dinos/infographic_m6/banner_dinosaurios-nocturnos.webp',
     title: 'Dinosaurios Nocturnos',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m6/btn_dinosaurios-nocturnos.jpg',
@@ -249,6 +255,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'etologia-comparada',
+              bannerImage: '/assets/dinos/infographic_m6/banner_etologia-comparada.webp',
     title: 'Etología Comparada',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m6/btn_etologia-comparada.jpg',
@@ -692,7 +699,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

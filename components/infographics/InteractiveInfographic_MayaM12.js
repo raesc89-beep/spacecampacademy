@@ -92,6 +92,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'copan-ciudad',
+              bannerImage: '/assets/maya/infographic_m12/banner_copan-ciudad.webp',
     title: 'La Ciudad: Copán',
     color: '#D7CCC8',
     btnImage: '/assets/maya/infographic_m12/btn_copan-ciudad.jpg',
@@ -111,6 +112,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'estelas-astronomicas',
+              bannerImage: '/assets/maya/infographic_m12/banner_estelas-astronomicas.webp',
     title: 'Las Estelas Solares',
     color: '#F9A825',
     btnImage: '/assets/maya/infographic_m12/btn_estelas-astronomicas.jpg',
@@ -130,6 +132,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'congreso-astronomico',
+              bannerImage: '/assets/maya/infographic_m12/banner_congreso-astronomico.webp',
     title: 'El Gran Congreso del 763',
     color: '#6A1B9A',
     btnImage: '/assets/maya/infographic_m12/btn_congreso-astronomico.jpg',
@@ -149,6 +152,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'altar-q',
+              bannerImage: '/assets/maya/infographic_m12/banner_altar-q.webp',
     title: 'El Misterioso Altar Q',
     color: '#D84315',
     btnImage: '/assets/maya/infographic_m12/btn_altar-q.jpg',
@@ -168,6 +172,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'escalinata-jeroglificos',
+              bannerImage: '/assets/maya/infographic_m12/banner_escalinata-jeroglificos.webp',
     title: 'La Escalinata de los Jeroglíficos',
     color: '#0277BD',
     btnImage: '/assets/maya/infographic_m12/btn_escalinata-jeroglificos.jpg',
@@ -187,6 +192,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cancha-pelota',
+              bannerImage: '/assets/maya/infographic_m12/banner_cancha-pelota.webp',
     title: 'La Cancha de Pelota Cósmica',
     color: '#558B2F',
     btnImage: '/assets/maya/infographic_m12/btn_cancha-pelota.jpg',
@@ -206,6 +212,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'observatorio-copan',
+              bannerImage: '/assets/maya/infographic_m12/banner_observatorio-copan.webp',
     title: 'El Observatorio de las Colinas',
     color: '#004D40',
     btnImage: '/assets/maya/infographic_m12/btn_observatorio-copan.jpg',
@@ -499,7 +506,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem', background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,
             border: `1px solid ${node.color}25`, borderRadius: '16px', padding: '1.2rem 1.5rem',

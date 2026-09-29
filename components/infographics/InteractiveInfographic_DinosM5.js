@@ -141,6 +141,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'amos-cielo-mesozoico',
+              bannerImage: '/assets/dinos/infographic_m5/banner_amos-cielo-mesozoico.webp',
     title: 'Los Amos del Cielo Mesozoico',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_amos-cielo-mesozoico.jpg',
@@ -160,6 +161,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pteranodon-planeador',
+              bannerImage: '/assets/dinos/infographic_m5/banner_pteranodon-planeador.webp',
     title: 'Pteranodon: El Planeador',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_pteranodon-planeador.jpg',
@@ -179,6 +181,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'quetzalcoatlus-gigante',
+              bannerImage: '/assets/dinos/infographic_m5/banner_quetzalcoatlus-gigante.webp',
     title: 'Quetzalcoatlus: El Gigante Volador',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_quetzalcoatlus-gigante.jpg',
@@ -198,6 +201,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rhamphorhynchus-primitivos',
+              bannerImage: '/assets/dinos/infographic_m5/banner_rhamphorhynchus-primitivos.webp',
     title: 'Rhamphorhynchus y los Primitivos',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_rhamphorhynchus-primitivos.jpg',
@@ -217,6 +221,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mecanica-vuelo',
+              bannerImage: '/assets/dinos/infographic_m5/banner_mecanica-vuelo.webp',
     title: 'La Mecánica del Vuelo',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_mecanica-vuelo.jpg',
@@ -236,6 +241,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'huevos-crias-social',
+              bannerImage: '/assets/dinos/infographic_m5/banner_huevos-crias-social.webp',
     title: 'Huevos, Crías y Vida Social',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_huevos-crias-social.jpg',
@@ -255,6 +261,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fin-dinastia',
+              bannerImage: '/assets/dinos/infographic_m5/banner_fin-dinastia.webp',
     title: 'El Fin de una Dinastía',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_fin-dinastia.jpg',
@@ -696,7 +703,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

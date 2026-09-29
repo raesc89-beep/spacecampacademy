@@ -152,6 +152,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'sinosauropteryx-descubrimiento',
+              bannerImage: '/assets/dinos/infographic_m8/banner_sinosauropteryx-descubrimiento.webp',
     title: 'El Descubrimiento que Cambió Todo',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m8/btn_sinosauropteryx-descubrimiento.jpg',
@@ -171,6 +172,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'archaeopteryx-eslabon',
+              bannerImage: '/assets/dinos/infographic_m8/banner_archaeopteryx-eslabon.webp',
     title: 'Archaeopteryx: El Eslabón',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m8/btn_archaeopteryx-eslabon.jpg',
@@ -190,6 +192,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'plumas-funciones',
+              bannerImage: '/assets/dinos/infographic_m8/banner_plumas-funciones.webp',
     title: 'Plumas: No Solo para Volar',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m8/btn_plumas-funciones.jpg',
@@ -209,6 +212,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dromeosaurios-emplumados',
+              bannerImage: '/assets/dinos/infographic_m8/banner_dromeosaurios-emplumados.webp',
     title: 'Los Dromeosaurios Emplumados',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m8/btn_dromeosaurios-emplumados.jpg',
@@ -228,6 +232,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'origen-vuelo',
+              bannerImage: '/assets/dinos/infographic_m8/banner_origen-vuelo.webp',
     title: 'Cómo Aprendieron a Volar',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m8/btn_origen-vuelo.jpg',
@@ -247,6 +252,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'colores-prehistoricos',
+              bannerImage: '/assets/dinos/infographic_m8/banner_colores-prehistoricos.webp',
     title: 'Colores Prehistóricos',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m8/btn_colores-prehistoricos.jpg',
@@ -266,6 +272,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'aves-dinosaurios-vivos',
+              bannerImage: '/assets/dinos/infographic_m8/banner_aves-dinosaurios-vivos.webp',
     title: 'Aves: Dinosaurios Vivos',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m8/btn_aves-dinosaurios-vivos.jpg',
@@ -724,7 +731,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

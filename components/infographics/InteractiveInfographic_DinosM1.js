@@ -143,6 +143,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'gran-mortandad',
+              bannerImage: '/assets/dinos/infographic_m1/banner_gran-mortandad.webp',
     title: 'La Gran Mortandad',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_gran-mortandad.jpg',
@@ -162,6 +163,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pangea-un-solo-mundo',
+              bannerImage: '/assets/dinos/infographic_m1/banner_pangea-un-solo-mundo.webp',
     title: 'Pangea: Un Solo Mundo',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_pangea-un-solo-mundo.jpg',
@@ -181,6 +183,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'arcosaurios-herederos',
+              bannerImage: '/assets/dinos/infographic_m1/banner_arcosaurios-herederos.webp',
     title: 'Los Arcosaurios Herederos',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_arcosaurios-herederos.jpg',
@@ -200,6 +203,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eoraptor-primer-dinosaurio',
+              bannerImage: '/assets/dinos/infographic_m1/banner_eoraptor-primer-dinosaurio.webp',
     title: 'Eoraptor: El Primer Dinosaurio',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_eoraptor-primer-dinosaurio.jpg',
@@ -219,6 +223,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'herrerasaurus-cazador',
+              bannerImage: '/assets/dinos/infographic_m1/banner_herrerasaurus-cazador.webp',
     title: 'Herrerasaurus: El Cazador',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_herrerasaurus-cazador.jpg',
@@ -238,6 +243,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rivales-triasico',
+              bannerImage: '/assets/dinos/infographic_m1/banner_rivales-triasico.webp',
     title: 'Rivales del Triásico',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_rivales-triasico.jpg',
@@ -257,6 +263,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'triunfo-dinosaurios',
+              bannerImage: '/assets/dinos/infographic_m1/banner_triunfo-dinosaurios.webp',
     title: 'El Triunfo de los Dinosaurios',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_triunfo-dinosaurios.jpg',
@@ -701,7 +708,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

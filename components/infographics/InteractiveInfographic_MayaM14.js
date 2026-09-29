@@ -109,6 +109,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'edzna-ciudad',
+              bannerImage: '/assets/maya/infographic_m14/banner_edzna-ciudad.webp',
     title: 'La Ciudad',
     color: '#8D6E63',
     btnImage: '/assets/maya/infographic_m14/btn_edzna-ciudad.jpg',
@@ -128,6 +129,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paso-cenital',
+              bannerImage: '/assets/maya/infographic_m14/banner_paso-cenital.webp',
     title: 'El Paso Cenital',
     color: '#FFD600',
     btnImage: '/assets/maya/infographic_m14/btn_paso-cenital.jpg',
@@ -147,6 +149,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gnomon-vertical',
+              bannerImage: '/assets/maya/infographic_m14/banner_gnomon-vertical.webp',
     title: 'El Gnomón',
     color: '#212121',
     btnImage: '/assets/maya/infographic_m14/btn_gnomon-vertical.jpg',
@@ -166,6 +169,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'edificio-cinco-pisos',
+              bannerImage: '/assets/maya/infographic_m14/banner_edificio-cinco-pisos.webp',
     title: 'Edificio de Cinco Pisos',
     color: '#8D6E63',
     btnImage: '/assets/maya/infographic_m14/btn_edificio-cinco-pisos.jpg',
@@ -185,6 +189,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sistema-hidraulico',
+              bannerImage: '/assets/maya/infographic_m14/banner_sistema-hidraulico.webp',
     title: 'Sistema Hidráulico',
     color: '#0288D1',
     btnImage: '/assets/maya/infographic_m14/btn_sistema-hidraulico.jpg',
@@ -204,6 +209,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'latitud-tropical',
+              bannerImage: '/assets/maya/infographic_m14/banner_latitud-tropical.webp',
     title: 'Latitud Tropical',
     color: '#4FC3F7',
     btnImage: '/assets/maya/infographic_m14/btn_latitud-tropical.jpg',
@@ -223,6 +229,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'medicion-tiempo',
+              bannerImage: '/assets/maya/infographic_m14/banner_medicion-tiempo.webp',
     title: 'Medición del Tiempo',
     color: '#E65100',
     btnImage: '/assets/maya/infographic_m14/btn_medicion-tiempo.jpg',
@@ -653,7 +660,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* â”€â”€â”€ Expandable Interactive Sections â”€â”€â”€ */}
-        {node.expandables && node.expandables.length > 0 && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '2rem', position: 'relative', zIndex: 2 }}>
             <div style={{
               display: 'flex', alignItems: 'center', gap: '1rem',

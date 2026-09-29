@@ -144,6 +144,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'jurasico-era-dorada',
+              bannerImage: '/assets/dinos/infographic_m2/banner_jurasico-era-dorada.webp',
     title: 'El Jurásico: La Era Dorada',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m2/btn_jurasico-era-dorada.jpg',
@@ -163,6 +164,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sauropodos-colosos',
+              bannerImage: '/assets/dinos/infographic_m2/banner_sauropodos-colosos.webp',
     title: 'Saurópodos: Los Colosos',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m2/btn_sauropodos-colosos.jpg',
@@ -182,6 +184,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'allosaurus-depredador',
+              bannerImage: '/assets/dinos/infographic_m2/banner_allosaurus-depredador.webp',
     title: 'Allosaurus: El Gran Depredador',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m2/btn_allosaurus-depredador.jpg',
@@ -201,6 +204,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'stegosaurus-placas',
+              bannerImage: '/assets/dinos/infographic_m2/banner_stegosaurus-placas.webp',
     title: 'Stegosaurus: Placas y Púas',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m2/btn_stegosaurus-placas.jpg',
@@ -220,6 +224,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'primeros-pajaros',
+              bannerImage: '/assets/dinos/infographic_m2/banner_primeros-pajaros.webp',
     title: 'Los Primeros Pájaros',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m2/btn_primeros-pajaros.jpg',
@@ -239,6 +244,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ecosistemas-jurasicos',
+              bannerImage: '/assets/dinos/infographic_m2/banner_ecosistemas-jurasicos.webp',
     title: 'Ecosistemas Jurásicos',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m2/btn_ecosistemas-jurasicos.jpg',
@@ -258,6 +264,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'herencia-jurasico',
+              bannerImage: '/assets/dinos/infographic_m2/banner_herencia-jurasico.webp',
     title: 'La Herencia del Jurásico',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m2/btn_herencia-jurasico.jpg',
@@ -701,7 +708,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

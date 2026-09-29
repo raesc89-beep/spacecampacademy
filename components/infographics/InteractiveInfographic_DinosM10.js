@@ -153,6 +153,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'tesoro-paleontologico',
+              bannerImage: '/assets/dinos/infographic_m10/banner_tesoro-paleontologico.webp',
     title: 'El Tesoro Paleontológico de Sudamérica',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_tesoro-paleontologico.jpg',
@@ -172,6 +173,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'argentinosaurus-grande',
+              bannerImage: '/assets/dinos/infographic_m10/banner_argentinosaurus-grande.webp',
     title: 'Argentinosaurus: El Más Grande',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_argentinosaurus-grande.jpg',
@@ -191,6 +193,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'giganotosaurus-rival',
+              bannerImage: '/assets/dinos/infographic_m10/banner_giganotosaurus-rival.webp',
     title: 'Giganotosaurus: El Rival del Rex',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_giganotosaurus-rival.jpg',
@@ -210,6 +213,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eoraptor-primeros',
+              bannerImage: '/assets/dinos/infographic_m10/banner_eoraptor-primeros.webp',
     title: 'Eoraptor y los Primeros',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_eoraptor-primeros.jpg',
@@ -229,6 +233,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'carnotaurus-toro',
+              bannerImage: '/assets/dinos/infographic_m10/banner_carnotaurus-toro.webp',
     title: 'Carnotaurus: El Toro Carnívoro',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_carnotaurus-toro.jpg',
@@ -248,6 +253,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'patagotitan-escala',
+              bannerImage: '/assets/dinos/infographic_m10/banner_patagotitan-escala.webp',
     title: 'Patagotitan: Redefiniendo la Escala',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_patagotitan-escala.jpg',
@@ -267,6 +273,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paleontologia-hoy',
+              bannerImage: '/assets/dinos/infographic_m10/banner_paleontologia-hoy.webp',
     title: 'Paleontología Latinoamericana Hoy',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_paleontologia-hoy.jpg',
@@ -727,7 +734,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

@@ -83,6 +83,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'codice-descubrimiento',
+              bannerImage: '/assets/maya/infographic_m15/banner_codice-descubrimiento.webp',
     title: 'El Descubrimiento',
     color: '#C62828',
     btnImage: '/assets/maya/infographic_m15/btn_codice-descubrimiento.jpg',
@@ -102,6 +103,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'estructura-fisica',
+              bannerImage: '/assets/maya/infographic_m15/banner_estructura-fisica.webp',
     title: 'Estructura Física',
     color: '#5D4037',
     btnImage: '/assets/maya/infographic_m15/btn_estructura-fisica.jpg',
@@ -121,6 +123,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tablas-venus',
+              bannerImage: '/assets/maya/infographic_m15/banner_tablas-venus.webp',
     title: 'Tablas de Venus',
     color: '#1565C0',
     btnImage: '/assets/maya/infographic_m15/btn_tablas-venus.jpg',
@@ -140,6 +143,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tablas-eclipses',
+              bannerImage: '/assets/maya/infographic_m15/banner_tablas-eclipses.webp',
     title: 'Tablas de Eclipses',
     color: '#212121',
     btnImage: '/assets/maya/infographic_m15/btn_tablas-eclipses.jpg',
@@ -159,6 +163,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tablas-lluvia',
+              bannerImage: '/assets/maya/infographic_m15/banner_tablas-lluvia.webp',
     title: 'Tablas de Lluvia y Marte',
     color: '#00695C',
     btnImage: '/assets/maya/infographic_m15/btn_tablas-lluvia.jpg',
@@ -178,6 +183,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'matematica-codice',
+              bannerImage: '/assets/maya/infographic_m15/banner_matematica-codice.webp',
     title: 'La Matemática',
     color: '#F9A825',
     btnImage: '/assets/maya/infographic_m15/btn_matematica-codice.jpg',
@@ -197,6 +203,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'supervivencia-codice',
+              bannerImage: '/assets/maya/infographic_m15/banner_supervivencia-codice.webp',
     title: 'Supervivencia',
     color: '#FFF8E1',
     btnImage: '/assets/maya/infographic_m15/btn_supervivencia-codice.jpg',
@@ -628,7 +635,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           </div>
         )}
 
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '2rem', padding: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}15, transparent)`,

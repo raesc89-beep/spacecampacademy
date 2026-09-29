@@ -133,6 +133,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'que-es-un-fosil',
+              bannerImage: '/assets/dinos/infographic_m9/banner_que-es-un-fosil.webp',
     title: '¿Qué es un Fósil?',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m9/btn_que-es-un-fosil.jpg',
@@ -152,6 +153,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'proceso-fosilizacion',
+              bannerImage: '/assets/dinos/infographic_m9/banner_proceso-fosilizacion.webp',
     title: 'El Proceso de Fosilización',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m9/btn_proceso-fosilizacion.jpg',
@@ -171,6 +173,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'herramientas-paleontologo',
+              bannerImage: '/assets/dinos/infographic_m9/banner_herramientas-paleontologo.webp',
     title: 'Herramientas del Paleontólogo',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m9/btn_herramientas-paleontologo.jpg',
@@ -190,6 +193,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'excavaciones-famosas',
+              bannerImage: '/assets/dinos/infographic_m9/banner_excavaciones-famosas.webp',
     title: 'Excavaciones Famosas',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m9/btn_excavaciones-famosas.jpg',
@@ -209,6 +213,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'campo-al-laboratorio',
+              bannerImage: '/assets/dinos/infographic_m9/banner_campo-al-laboratorio.webp',
     title: 'Del Campo al Laboratorio',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m9/btn_campo-al-laboratorio.jpg',
@@ -228,6 +233,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'datacion-edad',
+              bannerImage: '/assets/dinos/infographic_m9/banner_datacion-edad.webp',
     title: 'Datación: ¿Cuántos Años Tiene?',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m9/btn_datacion-edad.jpg',
@@ -247,6 +253,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fosiles-cambiaron-historia',
+              bannerImage: '/assets/dinos/infographic_m9/banner_fosiles-cambiaron-historia.webp',
     title: 'Fósiles que Cambiaron la Historia',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m9/btn_fosiles-cambiaron-historia.jpg',
@@ -690,7 +697,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

@@ -87,6 +87,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'uaxactun-sitio',
+              bannerImage: '/assets/maya/infographic_m13/banner_uaxactun-sitio.webp',
     title: 'El Sitio: Uaxactún',
     color: '#A1887F',
     btnImage: '/assets/maya/infographic_m13/btn_uaxactun-sitio.jpg',
@@ -114,6 +115,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'grupo-e-original',
+              bannerImage: '/assets/maya/infographic_m13/banner_grupo-e-original.webp',
     title: 'El Grupo E Original',
     color: '#2E7D32',
     btnImage: '/assets/maya/infographic_m13/btn_grupo-e-original.jpg',
@@ -141,6 +143,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tres-templos',
+              bannerImage: '/assets/maya/infographic_m13/banner_tres-templos.webp',
     title: 'Los Tres Templos',
     color: '#F8BBD0',
     btnImage: '/assets/maya/infographic_m13/btn_tres-templos.jpg',
@@ -168,6 +171,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'funcionamiento-solar',
+              bannerImage: '/assets/maya/infographic_m13/banner_funcionamiento-solar.webp',
     title: 'Cómo Funciona',
     color: '#FF8F00',
     btnImage: '/assets/maya/infographic_m13/btn_funcionamiento-solar.jpg',
@@ -195,6 +199,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'grupos-e-mundo-maya',
+              bannerImage: '/assets/maya/infographic_m13/banner_grupos-e-mundo-maya.webp',
     title: 'Grupos E en el Mundo Maya',
     color: '#039BE5',
     btnImage: '/assets/maya/infographic_m13/btn_grupos-e-mundo-maya.jpg',
@@ -222,6 +227,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ceibal-mas-antiguo',
+              bannerImage: '/assets/maya/infographic_m13/banner_ceibal-mas-antiguo.webp',
     title: 'Ceibal: El Más Antiguo',
     color: '#5D4037',
     btnImage: '/assets/maya/infographic_m13/btn_ceibal-mas-antiguo.jpg',
@@ -249,6 +255,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-arquitectonico',
+              bannerImage: '/assets/maya/infographic_m13/banner_legado-arquitectonico.webp',
     title: 'El Legado de los Grupos E',
     color: '#283593',
     btnImage: '/assets/maya/infographic_m13/btn_legado-arquitectonico.jpg',
@@ -683,7 +690,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* â”€â”€â”€ Expandable Interactive Sections â”€â”€â”€ */}
-        {node.expandables && node.expandables.length > 0 && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '2rem', position: 'relative', zIndex: 2 }}>
             <h4 style={{
               margin: '0 0 1rem', fontSize: '1.1rem', color: node.color,

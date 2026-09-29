@@ -120,6 +120,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'chiibal-kiin',
+              bannerImage: '/assets/maya/infographic_m8/banner_chiibal-kiin.webp',
     title: 'Chiibal K\'iin: El Sol Devorado',
     color: '#FFD54F',
     btnImage: '/assets/maya/infographic_m8/btn_chiibal-kiin.jpg',
@@ -139,6 +140,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tabla-eclipses-dresde',
+              bannerImage: '/assets/maya/infographic_m8/banner_tabla-eclipses-dresde.webp',
     title: 'El Códice de Dresde',
     color: '#C62828',
     btnImage: '/assets/maya/infographic_m8/btn_tabla-eclipses-dresde.jpg',
@@ -158,6 +160,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mecanismo-eclipses',
+              bannerImage: '/assets/maya/infographic_m8/banner_mecanismo-eclipses.webp',
     title: 'La Mecánica Oculta',
     color: '#0D47A1',
     btnImage: '/assets/maya/infographic_m8/btn_mecanismo-eclipses.jpg',
@@ -177,6 +180,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'prediccion-precisa',
+              bannerImage: '/assets/maya/infographic_m8/banner_prediccion-precisa.webp',
     title: 'Matemáticas Mayas vs El Mundo',
     color: '#311B92',
     btnImage: '/assets/maya/infographic_m8/btn_prediccion-precisa.jpg',
@@ -196,6 +200,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eclipse-lunar',
+              bannerImage: '/assets/maya/infographic_m8/banner_eclipse-lunar.webp',
     title: 'Chiibal Uh: La Luna de Sangre',
     color: '#B0BEC5',
     btnImage: '/assets/maya/infographic_m8/btn_eclipse-lunar.jpg',
@@ -215,6 +220,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'registro-historico',
+              bannerImage: '/assets/maya/infographic_m8/banner_registro-historico.webp',
     title: 'Piedras que Hablan del Cielo',
     color: '#FF8F00',
     btnImage: '/assets/maya/infographic_m8/btn_registro-historico.jpg',
@@ -234,6 +240,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciencia-supersticion',
+              bannerImage: '/assets/maya/infographic_m8/banner_ciencia-supersticion.webp',
     title: 'La Dualidad del Sabio Maya',
     color: '#212121',
     btnImage: '/assets/maya/infographic_m8/btn_ciencia-supersticion.jpg',
@@ -678,7 +685,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* ─── Fact Highlight ─── */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '2rem',
             padding: '1.5rem',

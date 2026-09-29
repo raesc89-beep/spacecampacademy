@@ -88,6 +88,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'tzab-ek-nombre',
+              bannerImage: '/assets/maya/infographic_m10/banner_tzab-ek-nombre.webp',
     title: 'Tzab-ek: La Serpiente',
     color: '#E8EAF6',
     btnImage: '/assets/maya/infographic_m10/btn_tzab-ek-nombre.jpg',
@@ -107,6 +108,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paso-cenital',
+              bannerImage: '/assets/maya/infographic_m10/banner_paso-cenital.webp',
     title: 'El Paso Cenital',
     color: '#1565C0',
     btnImage: '/assets/maya/infographic_m10/btn_paso-cenital.jpg',
@@ -126,6 +128,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'calendario-agricola',
+              bannerImage: '/assets/maya/infographic_m10/banner_calendario-agricola.webp',
     title: 'Calendario Agrícola',
     color: '#F9A825',
     btnImage: '/assets/maya/infographic_m10/btn_calendario-agricola.jpg',
@@ -145,6 +148,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nueva-cuenta-fuego',
+              bannerImage: '/assets/maya/infographic_m10/banner_nueva-cuenta-fuego.webp',
     title: 'Cuenta del Fuego',
     color: '#6D4C41',
     btnImage: '/assets/maya/infographic_m10/btn_nueva-cuenta-fuego.jpg',
@@ -164,6 +168,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'astronomia-precisa',
+              bannerImage: '/assets/maya/infographic_m10/banner_astronomia-precisa.webp',
     title: 'Astronomía Precisa',
     color: '#2E7D32',
     btnImage: '/assets/maya/infographic_m10/btn_astronomia-precisa.jpg',
@@ -183,6 +188,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cascabel-cosmico',
+              bannerImage: '/assets/maya/infographic_m10/banner_cascabel-cosmico.webp',
     title: 'Cascabel Cósmico',
     color: '#311B92',
     btnImage: '/assets/maya/infographic_m10/btn_cascabel-cosmico.jpg',
@@ -202,6 +208,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'culturas-comparadas',
+              bannerImage: '/assets/maya/infographic_m10/banner_culturas-comparadas.webp',
     title: 'Culturas Comparadas',
     color: '#FFEE58',
     btnImage: '/assets/maya/infographic_m10/btn_culturas-comparadas.jpg',
@@ -542,7 +549,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             ))}
           </div>
         )}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{ marginTop: '2rem', padding: '1.5rem', borderRadius: '16px', background: `linear-gradient(45deg, ${node.color}15, transparent)`, border: `1px solid ${node.color}30`, display: 'flex', gap: '1rem', alignItems: 'flex-start', position: 'relative', zIndex: 2 }}>
             <div style={{ width: '40px', height: '40px', flexShrink: 0, borderRadius: '50%', background: `${node.color}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Sparkles size={18} style={{ color: node.color }} />

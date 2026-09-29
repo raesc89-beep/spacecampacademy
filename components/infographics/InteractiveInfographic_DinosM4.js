@@ -141,6 +141,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'estrategia-defensa',
+              bannerImage: '/assets/dinos/infographic_m4/banner_estrategia-defensa.webp',
     title: 'La Estrategia de la Defensa',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_estrategia-defensa.jpg',
@@ -160,6 +161,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ankylosaurus-fortaleza',
+              bannerImage: '/assets/dinos/infographic_m4/banner_ankylosaurus-fortaleza.webp',
     title: 'Ankylosaurus: La Fortaleza Viviente',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_ankylosaurus-fortaleza.jpg',
@@ -179,6 +181,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'triceratops-defensor',
+              bannerImage: '/assets/dinos/infographic_m4/banner_triceratops-defensor.webp',
     title: 'Triceratops: El Defensor con Cuernos',
     color: '#6B8E96',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_triceratops-defensor.jpg',
@@ -198,6 +201,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pachycephalosaurus-cabezas',
+              bannerImage: '/assets/dinos/infographic_m4/banner_pachycephalosaurus-cabezas.webp',
     title: 'Pachycephalosaurus: Cabezas Duras',
     color: '#8B5E3C',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_pachycephalosaurus-cabezas.jpg',
@@ -217,6 +221,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'hadrosaurios-pico',
+              bannerImage: '/assets/dinos/infographic_m4/banner_hadrosaurios-pico.webp',
     title: 'Los Hadrosaurios: Pico de Pato',
     color: '#A67B3D',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_hadrosaurios-pico.jpg',
@@ -236,6 +241,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'plantas-herbivoros',
+              bannerImage: '/assets/dinos/infographic_m4/banner_plantas-herbivoros.webp',
     title: 'Plantas y Herbívoros',
     color: '#7D6B99',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_plantas-herbivoros.jpg',
@@ -255,6 +261,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'defensas-mundo-actual',
+              bannerImage: '/assets/dinos/infographic_m4/banner_defensas-mundo-actual.webp',
     title: 'Defensas en el Mundo Actual',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_defensas-mundo-actual.jpg',
@@ -696,7 +703,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

@@ -88,6 +88,7 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'noh-ek',
+              bannerImage: '/assets/maya/infographic_m7/banner_noh-ek.webp',
     title: 'Noh Ek: La Gran Estrella',
     color: '#E0E0E0',
     btnImage: '/assets/maya/infographic_m7/btn_noh-ek.jpg',
@@ -107,6 +108,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciclo-sinodico',
+              bannerImage: '/assets/maya/infographic_m7/banner_ciclo-sinodico.webp',
     title: 'Ciclo Sinódico: La Danza Cósmica',
     color: '#FFD600',
     btnImage: '/assets/maya/infographic_m7/btn_ciclo-sinodico.jpg',
@@ -126,6 +128,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tabla-dresde',
+              bannerImage: '/assets/maya/infographic_m7/banner_tabla-dresde.webp',
     title: 'Las Tablas de Venus: El Códice de Dresde',
     color: '#0288D1',
     btnImage: '/assets/maya/infographic_m7/btn_tabla-dresde.jpg',
@@ -145,6 +148,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'guerra-estelar',
+              bannerImage: '/assets/maya/infographic_m7/banner_guerra-estelar.webp',
     title: 'Guerra Estelar: Batallas Celestiales',
     color: '#B71C1C',
     btnImage: '/assets/maya/infographic_m7/btn_guerra-estelar.jpg',
@@ -164,6 +168,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'kukulkan-venus',
+              bannerImage: '/assets/maya/infographic_m7/banner_kukulkan-venus.webp',
     title: 'Kukulcán: La Serpiente y Venus',
     color: '#1B5E20',
     btnImage: '/assets/maya/infographic_m7/btn_kukulkan-venus.jpg',
@@ -183,6 +188,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'observacion-tecnicas',
+              bannerImage: '/assets/maya/infographic_m7/banner_observacion-tecnicas.webp',
     title: 'Técnicas Sin Telescopios',
     color: '#F48FB1',
     btnImage: '/assets/maya/infographic_m7/btn_observacion-tecnicas.jpg',
@@ -202,6 +208,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-venusino',
+              bannerImage: '/assets/maya/infographic_m7/banner_legado-venusino.webp',
     title: 'El Legado: Maya vs. Europa',
     color: '#0288D1',
     btnImage: '/assets/maya/infographic_m7/btn_legado-venusino.jpg',
@@ -626,7 +633,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         </div>
 
         {/* â”€â”€â”€ Expandable Interactive Sections â”€â”€â”€ */}
-        {node.expandables && node.expandables.length > 0 && (
+        {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+              {node.expandables && node.expandables.length > 0 && (
           <div style={{ marginTop: '2rem', position: 'relative', zIndex: 2 }}>
             <h4 style={{ color: node.color, fontSize: '1rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Star size={16} /> Para Exploradores Avanzados

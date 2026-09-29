@@ -89,6 +89,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'wakah-chan-arbol',
+              bannerImage: '/assets/maya/infographic_m9/banner_wakah-chan-arbol.webp',
     title: 'Wakah Chan: El Árbol Cósmico',
     color: '#CFD8DC',
     btnImage: '/assets/maya/infographic_m9/btn_wakah-chan-arbol.jpg',
@@ -108,6 +109,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'via-lactea-maya',
+              bannerImage: '/assets/maya/infographic_m9/banner_via-lactea-maya.webp',
     title: 'La Vía Láctea Maya',
     color: '#4A148C',
     btnImage: '/assets/maya/infographic_m9/btn_via-lactea-maya.jpg',
@@ -127,6 +129,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'canoa-cosmica',
+              bannerImage: '/assets/maya/infographic_m9/banner_canoa-cosmica.webp',
     title: 'La Canoa Cósmica',
     color: '#0277BD',
     btnImage: '/assets/maya/infographic_m9/btn_canoa-cosmica.jpg',
@@ -146,6 +149,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ceiba-sagrada',
+              bannerImage: '/assets/maya/infographic_m9/banner_ceiba-sagrada.webp',
     title: 'La Ceiba Sagrada',
     color: '#1B5E20',
     btnImage: '/assets/maya/infographic_m9/btn_ceiba-sagrada.jpg',
@@ -165,6 +169,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tres-niveles',
+              bannerImage: '/assets/maya/infographic_m9/banner_tres-niveles.webp',
     title: 'Los Tres Niveles del Cosmos',
     color: '#FFD54F',
     btnImage: '/assets/maya/infographic_m9/btn_tres-niveles.jpg',
@@ -184,6 +189,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orientacion-nocturna',
+              bannerImage: '/assets/maya/infographic_m9/banner_orientacion-nocturna.webp',
     title: 'Orientación Nocturna',
     color: '#4E342E',
     btnImage: '/assets/maya/infographic_m9/btn_orientacion-nocturna.jpg',
@@ -203,6 +209,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'popol-vuh-cielo',
+              bannerImage: '/assets/maya/infographic_m9/banner_popol-vuh-cielo.webp',
     title: 'El Popol Vuh y el Cielo',
     color: '#212121',
     btnImage: '/assets/maya/infographic_m9/btn_popol-vuh-cielo.jpg',
@@ -514,6 +521,20 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
+              {node.bannerImage && (
+                <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
+                  <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                       style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                  {node.bannerCaption && (
+                    <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                                fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                                textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                      {node.bannerCaption}
+                    </p>
+                  )}
+                </div>
+              )}
         <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
           {node.expandables.map((exp, i) => (
             <ExpandableSection key={i} item={exp} color={node.color} />
