@@ -135,6 +135,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'fosiles-mary-anning',
+              bannerImage: '/assets/marinos/infographic_m9/banner_fosiles-mary-anning.webp',
     title: 'Los Fósiles que Reescribieron la Historia',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_fosiles-mary-anning.jpg',
@@ -154,6 +155,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ictiosaurio-holzmaden',
+              bannerImage: '/assets/marinos/infographic_m9/banner_ictiosaurio-holzmaden.webp',
     title: 'El Ictiosaurio de Holzmaden',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_ictiosaurio-holzmaden.jpg',
@@ -173,6 +175,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mosasaurio-maastricht',
+              bannerImage: '/assets/marinos/infographic_m9/banner_mosasaurio-maastricht.webp',
     title: 'El Mosasaurio de Maastricht',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_mosasaurio-maastricht.jpg',
@@ -192,6 +195,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'western-interior-seaway',
+              bannerImage: '/assets/marinos/infographic_m9/banner_western-interior-seaway.webp',
     title: 'Fósiles del Western Interior Seaway',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_western-interior-seaway.jpg',
@@ -211,6 +215,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'descubrimientos-sudamerica',
+              bannerImage: '/assets/marinos/infographic_m9/banner_descubrimientos-sudamerica.webp',
     title: 'Descubrimientos en Sudamérica',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_descubrimientos-sudamerica.jpg',
@@ -230,6 +235,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tecnicas-modernas',
+              bannerImage: '/assets/marinos/infographic_m9/banner_tecnicas-modernas.webp',
     title: 'Técnicas Modernas de Estudio',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_tecnicas-modernas.jpg',
@@ -249,6 +255,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fosiles-visitar',
+              bannerImage: '/assets/marinos/infographic_m9/banner_fosiles-visitar.webp',
     title: 'Fósiles Marinos que Puedes Visitar',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_fosiles-visitar.jpg',
@@ -691,7 +698,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+              <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
+                <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                     style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                {node.bannerCaption && (
+                  <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                              fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                              textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                    {node.bannerCaption}
+                  </p>
+                )}
+              </div>
+            )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

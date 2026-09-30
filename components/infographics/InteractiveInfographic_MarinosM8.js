@@ -130,6 +130,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'de-la-tierra-al-agua',
+              bannerImage: '/assets/marinos/infographic_m8/banner_de-la-tierra-al-agua.webp',
     title: 'De la Tierra al Agua',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m8/btn_de-la-tierra-al-agua.jpg',
@@ -149,6 +150,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'respiracion-reto-aire',
+              bannerImage: '/assets/marinos/infographic_m8/banner_respiracion-reto-aire.webp',
     title: 'Respiración: El Reto del Aire',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m8/btn_respiracion-reto-aire.jpg',
@@ -168,6 +170,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'termorregulacion-mar',
+              bannerImage: '/assets/marinos/infographic_m8/banner_termorregulacion-mar.webp',
     title: 'Termorregulación en el Mar',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m8/btn_termorregulacion-mar.jpg',
@@ -187,6 +190,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ojos-oidos-sentidos',
+              bannerImage: '/assets/marinos/infographic_m8/banner_ojos-oidos-sentidos.webp',
     title: 'Ojos, Oídos y Sentidos',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m8/btn_ojos-oidos-sentidos.jpg',
@@ -206,6 +210,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'locomocion-submarina',
+              bannerImage: '/assets/marinos/infographic_m8/banner_locomocion-submarina.webp',
     title: 'Locomoción Submarina',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m8/btn_locomocion-submarina.jpg',
@@ -225,6 +230,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'reproduccion-sin-tierra',
+              bannerImage: '/assets/marinos/infographic_m8/banner_reproduccion-sin-tierra.webp',
     title: 'Reproducción sin Tierra',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m8/btn_reproduccion-sin-tierra.jpg',
@@ -244,6 +250,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'convergencia-mamiferos',
+              bannerImage: '/assets/marinos/infographic_m8/banner_convergencia-mamiferos.webp',
     title: 'Convergencia con Mamíferos Marinos',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m8/btn_convergencia-mamiferos.jpg',
@@ -685,7 +692,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+              <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
+                <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                     style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                {node.bannerCaption && (
+                  <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                              fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                              textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                    {node.bannerCaption}
+                  </p>
+                )}
+              </div>
+            )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

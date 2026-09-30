@@ -149,6 +149,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'lecciones-del-pasado',
+              bannerImage: '/assets/marinos/infographic_m10/banner_lecciones-del-pasado.webp',
     title: 'Lecciones del Pasado',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m10/btn_lecciones-del-pasado.jpg',
@@ -168,6 +169,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'los-oceanos-hoy',
+              bannerImage: '/assets/marinos/infographic_m10/banner_los-oceanos-hoy.webp',
     title: 'Los Océanos Hoy',
     color: '#B87D5E',
     btnImage: '/assets/reptiles_marinos/infographic_m10/btn_los-oceanos-hoy.jpg',
@@ -187,6 +189,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'calentamiento-acidificacion',
+              bannerImage: '/assets/marinos/infographic_m10/banner_calentamiento-acidificacion.webp',
     title: 'Calentamiento y Acidificación',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m10/btn_calentamiento-acidificacion.jpg',
@@ -206,6 +209,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'especies-en-peligro',
+              bannerImage: '/assets/marinos/infographic_m10/banner_especies-en-peligro.webp',
     title: 'Especies en Peligro',
     color: '#8B6B4A',
     btnImage: '/assets/reptiles_marinos/infographic_m10/btn_especies-en-peligro.jpg',
@@ -225,6 +229,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'biomimetica-marina',
+              bannerImage: '/assets/marinos/infographic_m10/banner_biomimetica-marina.webp',
     title: 'Biomimética Marina',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m10/btn_biomimetica-marina.jpg',
@@ -244,6 +249,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paleoceanografia',
+              bannerImage: '/assets/marinos/infographic_m10/banner_paleoceanografia.webp',
     title: 'Paleoceanografía',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m10/btn_paleoceanografia.jpg',
@@ -263,6 +269,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'conservar-para-el-futuro',
+              bannerImage: '/assets/marinos/infographic_m10/banner_conservar-para-el-futuro.webp',
     title: 'Conservar para el Futuro',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m10/btn_conservar-para-el-futuro.jpg',
@@ -704,7 +711,21 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
         )}
 
         {/* Fact Box */}
-        {node.fact && (
+        {node.bannerImage && (
+              <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
+                <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                     style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+                {node.bannerCaption && (
+                  <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',
+                              fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic',
+                              textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+                    {node.bannerCaption}
+                  </p>
+                )}
+              </div>
+            )}
+              {node.fact && (
           <div style={{
             marginTop: '1.5rem',
             background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,
