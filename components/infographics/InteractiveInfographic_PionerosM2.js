@@ -25,6 +25,7 @@ const BIBLIOGRAPHY = [
 const CONTENT_NODES = [
   {
     id: 'node1',
+    bannerImage: '/assets/pioneros/infographic_m2/banner_node1.webp',
     title: 'El Proyecto Mercury y los Siete Originales',
     icon: <Rocket size={24} color={COLORS.gold} />,
     paragraphs: [
@@ -37,6 +38,7 @@ const CONTENT_NODES = [
   },
   {
     id: 'node2',
+    bannerImage: '/assets/pioneros/infographic_m2/banner_node2.webp',
     title: 'Ingeniería Aeroespacial: Redstone y Freedom 7',
     icon: <Info size={24} color={COLORS.paleBlue} />,
     paragraphs: [
@@ -49,6 +51,7 @@ const CONTENT_NODES = [
   },
   {
     id: 'node3',
+    bannerImage: '/assets/pioneros/infographic_m2/banner_node3.webp',
     title: 'Física y Balística de la Misión MR-3',
     icon: <Globe size={24} color={COLORS.sand} />,
     paragraphs: [
@@ -61,6 +64,7 @@ const CONTENT_NODES = [
   },
   {
     id: 'node4',
+    bannerImage: '/assets/pioneros/infographic_m2/banner_node4.webp',
     title: 'Impacto Fisiológico y Psicológico del Vuelo Espacial',
     icon: <BookOpen size={24} color={COLORS.deepBlue} />,
     paragraphs: [
@@ -73,6 +77,7 @@ const CONTENT_NODES = [
   },
   {
     id: 'node5',
+    bannerImage: '/assets/pioneros/infographic_m2/banner_node5.webp',
     title: 'Legado, Apolo 14 y Exploración Lunar',
     icon: <Award size={24} color={COLORS.gold} />,
     paragraphs: [
@@ -156,7 +161,14 @@ export default function InteractiveInfographic_PionerosM2() {
                   transition={{ duration: 0.4 }}
                   style={{ padding: '0 2rem 2rem 2rem' }}
                 >
-                  {node.paragraphs.map((p, idx) => (
+                  {node.bannerImage && (
+              <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
+                <img src={node.bannerImage} alt={node.bannerCaption || ''}
+                     style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+              </div>
+            )}
+            {node.paragraphs.map((p, idx) => (
                     <p key={idx} style={{ lineHeight: '1.8', textAlign: 'justify', marginBottom: '1.5rem' }}>
                       {p}
                     </p>

@@ -17,6 +17,7 @@ const COLORS = {
 const INFOGRAPHIC_DATA = [
   {
     id: 'early_life',
+    bannerImage: '/assets/pioneros/infographic_m6/banner_early_life.webp',
     title: 'Early Life and Aviation Triumphs',
     icon: <Globe size={24} color={COLORS.accent} />,
     content: [
@@ -29,6 +30,7 @@ const INFOGRAPHIC_DATA = [
   },
   {
     id: 'soyuz_t7',
+    bannerImage: '/assets/pioneros/infographic_m6/banner_soyuz_t7.webp',
     title: 'Soyuz T-7: The Second Woman in Space',
     icon: <Rocket size={24} color={COLORS.accent} />,
     content: [
@@ -41,6 +43,7 @@ const INFOGRAPHIC_DATA = [
   },
   {
     id: 'spacewalk',
+    bannerImage: '/assets/pioneros/infographic_m6/banner_spacewalk.webp',
     title: 'Soyuz T-12 and the First Female Spacewalk',
     icon: <Orbit size={24} color={COLORS.accent} />,
     content: [
@@ -165,7 +168,14 @@ export default function InteractiveInfographic_PionerosM6() {
                   style={{ overflow: 'hidden' }}
                 >
                   <div style={{ padding: '2rem', borderTop: `1px solid rgba(255,255,255,0.1)` }}>
-                    {section.content.map((paragraph, index) => (
+                    {section.bannerImage && (
+              <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
+                <img src={section.bannerImage} alt={section.bannerCaption || ''}
+                     style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+              </div>
+            )}
+            {section.content.map((paragraph, index) => (
                       <p 
                         key={index} 
                         style={{ 

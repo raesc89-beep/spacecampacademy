@@ -86,6 +86,7 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'puente-einstein-rosen',
+    bannerImage: '/assets/interstellar/infographic_m4/banner_puente-einstein-rosen.webp',
     title: 'El Puente de Einstein y Rosen',
     color: '#4FC3F7',
     btnImage: '/assets/interstellar/infographic_m4/btn_puente-einstein-rosen.jpg',
@@ -105,6 +106,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'hoja-doblada',
+    bannerImage: '/assets/interstellar/infographic_m4/banner_hoja-doblada.webp',
     title: 'Doblar el Universo',
     color: '#FF6B35',
     btnImage: '/assets/interstellar/infographic_m4/btn_hoja-doblada.jpg',
@@ -124,6 +126,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'wormhole-saturno',
+    bannerImage: '/assets/interstellar/infographic_m4/banner_wormhole-saturno.webp',
     title: 'El Agujero de Gusano de Saturno',
     color: '#7C4DFF',
     btnImage: '/assets/interstellar/infographic_m4/btn_wormhole-saturno.jpg',
@@ -143,6 +146,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'materia-exotica',
+    bannerImage: '/assets/interstellar/infographic_m4/banner_materia-exotica.webp',
     title: 'La Materia Imposible',
     color: '#F44336',
     btnImage: '/assets/interstellar/infographic_m4/btn_materia-exotica.jpg',
@@ -162,6 +166,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'morris-thorne',
+    bannerImage: '/assets/interstellar/infographic_m4/banner_morris-thorne.webp',
     title: 'El Wormhole que Puedes Cruzar',
     color: '#26A69A',
     btnImage: '/assets/interstellar/infographic_m4/btn_morris-thorne.jpg',
@@ -181,6 +186,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dimensiones-extra',
+    bannerImage: '/assets/interstellar/infographic_m4/banner_dimensiones-extra.webp',
     title: 'Más Allá de Tres Dimensiones',
     color: '#AB47BC',
     btnImage: '/assets/interstellar/infographic_m4/btn_dimensiones-extra.jpg',
@@ -200,6 +206,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'viaje-posible',
+    bannerImage: '/assets/interstellar/infographic_m4/banner_viaje-posible.webp',
     title: '¿Podremos Cruzar Algún Día?',
     color: '#FF9800',
     btnImage: '/assets/interstellar/infographic_m4/btn_viaje-posible.jpg',
@@ -574,7 +581,14 @@ export default function InteractiveInfographic_InterstellarM4() {
                 gap: '2.5rem', marginTop: '2rem'
               }}>
                 <div>
-                  {activeNode.content.slice(1).map((paragraph, idx) => (
+                  {activeNode.bannerImage && (
+              <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
+                <img src={activeNode.bannerImage} alt={activeNode.bannerCaption || ''}
+                     style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+              </div>
+            )}
+            {activeNode.content.slice(1).map((paragraph, idx) => (
                     <p key={idx} style={{
                       color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.5rem',
                       textAlign: 'justify'

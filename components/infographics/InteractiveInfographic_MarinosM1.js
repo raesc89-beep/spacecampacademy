@@ -137,8 +137,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m1/banner_oceano-panthalassa.webp',
     title: 'El Océano Panthalassa',
     color: '#5B7B9A',
-    btnImage: '/assets/reptiles_marinos/infographic_m1/btn_oceano-panthalassa.jpg',
-    image: '/assets/reptiles_marinos/infographic_m1/hero_oceano-panthalassa.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m1/btn_oceano-panthalassa.webp',
+    image: '/assets/reptiles_marinos/infographic_m1/hero_oceano-panthalassa.webp',
     content: [
       'Hace 252 millones de años, al final del período Pérmico, la Tierra tenía un aspecto muy distinto al actual. Todos los continentes estaban unidos formando un supercontinente llamado Pangea, rodeado por un único y vasto océano conocido como Panthalassa. Este océano cubría aproximadamente el 70% de la superficie terrestre, una proporción similar a la que cubren los océanos modernos, pero concentrada en una sola masa de agua sin divisiones continentales. El nombre Panthalassa proviene del griego «pan» (todo) y «thalassa» (mar), reflejando su dominio sobre el planeta.',
       'Las condiciones en Panthalassa eran diferentes a las de los océanos actuales. La temperatura media del agua superficial se estima entre 25 y 35 grados Celsius, significativamente más cálida que los océanos modernos, cuya temperatura media superficial ronda los 17 grados. Esta diferencia de temperatura se debía a concentraciones de dióxido de carbono atmosférico que superaban las actuales en al menos cuatro veces. La salinidad también variaba: en las zonas ecuatoriales, la evaporación intensa generaba aguas con salinidad superior a 40 partes por mil, mientras que los océanos actuales promedian 35 partes por mil.',
