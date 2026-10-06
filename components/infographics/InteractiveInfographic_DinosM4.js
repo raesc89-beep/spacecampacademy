@@ -144,8 +144,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m4/banner_estrategia-defensa.webp',
     title: 'La Estrategia de la Defensa',
     color: '#5D8A68',
-    btnImage: '/assets/dinosaurios/infographic_m4/btn_estrategia-defensa.jpg',
-    image: '/assets/dinosaurios/infographic_m4/hero_estrategia-defensa.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m4/btn_estrategia-defensa.webp',
+    image: '/assets/dinosaurios/infographic_m4/hero_estrategia-defensa.webp',
     content: [
       'Durante el Mesozoico, los dinosaurios herbívoros enfrentaron una presión constante por parte de depredadores cada vez más grandes y eficientes. Los terópodos como el Allosaurus en el Jurásico y el Tyrannosaurus rex en el Cretácico desarrollaron mandíbulas con fuerzas de mordida de hasta 57,000 newtons, dientes aserrados y velocidades estimadas de 20 a 30 km/h. Ante esta amenaza persistente, los herbívoros no permanecieron pasivos: a lo largo de millones de años, la selección natural favoreció el desarrollo de estructuras defensivas cada vez más sofisticadas, desde placas óseas y cuernos hasta colas convertidas en armas contundentes.',
       'La carrera armamentística entre depredadores y presas es un principio fundamental de la biología evolutiva conocido como coevolución antagónica. Cuando un depredador desarrolla una ventaja, como mandíbulas más fuertes, las presas que poseen alguna defensa contra esa ventaja sobreviven y se reproducen con mayor frecuencia. Con el tiempo, esto genera poblaciones enteras de herbívoros con armaduras más gruesas, cuernos más largos o comportamientos defensivos más complejos. Este proceso, descrito formalmente por Leigh Van Valen en 1973 como la hipótesis de la Reina Roja, explica por qué ambos grupos parecen evolucionar sin detenerse nunca.',
@@ -164,7 +164,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m4/banner_ankylosaurus-fortaleza.webp',
     title: 'Ankylosaurus: La Fortaleza Viviente',
     color: '#C17829',
-    btnImage: '/assets/dinosaurios/infographic_m4/btn_ankylosaurus-fortaleza.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m4/btn_ankylosaurus-fortaleza.webp',
     image: '/assets/dinosaurios/infographic_m4/hero_ankylosaurus-fortaleza.jpg',
     content: [
       'El Ankylosaurus magniventris fue el tanque definitivo del Cretácico tardío. Descubierto por Barnum Brown en la Formación Hell Creek de Montana en 1908, este dinosaurio medía entre 6 y 8 metros de largo, alcanzaba 1.7 metros de alto y pesaba entre 4,800 y 8,000 kilogramos según las estimaciones más recientes. Su cuerpo entero, desde la parte superior de la cabeza hasta la punta de la cola, estaba cubierto por hileras de osteodermos: placas óseas de diversos tamaños incrustadas directamente en la piel que formaban un mosaico protector continuo. Incluso sus párpados tenían placas óseas, proporcionando protección ocular durante los ataques.',

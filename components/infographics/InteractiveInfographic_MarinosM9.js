@@ -239,7 +239,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Técnicas Modernas de Estudio',
     color: '#9E7B5C',
     btnImage: '/assets/reptiles_marinos/infographic_m9/btn_tecnicas-modernas.webp',
-    image: '/assets/reptiles_marinos/infographic_m9/hero_tecnicas-modernas.jpg',
+    image: '/assets/reptiles_marinos/infographic_m9/hero_tecnicas-modernas.webp',
     content: [
       'La tomografía computarizada (CT) ha transformado la paleontología de reptiles marinos al permitir visualizar estructuras internas de los fósiles sin necesidad de destruir la roca que los rodea. Los escáneres médicos estándar generan imágenes con resolución de 0.5 milímetros, suficiente para estudiar la anatomía craneal de mosasaurios y plesiosaurios. En 2010, investigadores de la Universidad de Utrecht utilizaron CT para reconstruir el cerebro de un mosasaurio Prognathodon y descubrieron que poseía bulbos olfatorios grandes (para detectar olores en el agua), lóbulos ópticos bien desarrollados (visión aguda) y un cerebelo proporcionalmente similar al de los tiburones actuales, lo que sugiere capacidades de natación coordinada y ágil.',
       'Los sincrotrones, aceleradores de partículas que generan rayos X de alta energía, permiten obtener imágenes de fósiles con resolución micrométrica (hasta 0.001 milímetros). El European Synchrotron Radiation Facility (ESRF) en Grenoble, Francia, ha escaneado dientes de ictiosaurios revelando líneas de crecimiento diario similares a los anillos de los árboles. Estos datos permitieron al equipo de Motani (2014) determinar que los dientes de Ichthyosaurus crecían a una tasa de 45 micrómetros por día y se reemplazaban cada 60-80 días, un ciclo de reemplazo dental más rápido que el de los cocodrilos actuales (90-120 días) y similar al de los tiburones.',
@@ -258,8 +258,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m9/banner_fosiles-visitar.webp',
     title: 'Fósiles Marinos que Puedes Visitar',
     color: '#4A6F8C',
-    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_fosiles-visitar.jpg',
-    image: '/assets/reptiles_marinos/infographic_m9/hero_fosiles-visitar.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_fosiles-visitar.webp',
+    image: '/assets/reptiles_marinos/infographic_m9/hero_fosiles-visitar.webp',
     content: [
       'El Museo de Historia Natural de Londres (Natural History Museum) alberga los especímenes originales de Mary Anning, incluyendo el ictiosaurio descubierto en 1811 y el plesiosaurio de 1823. La Galería de Reptiles Marinos del museo exhibe más de 30 esqueletos montados de ictiosaurios, plesiosaurios y mosasaurios, organizados cronológicamente desde el Triásico hasta el Cretácico. El espécimen más visitado es un Rhomaleosaurus cramptoni de 7 metros de longitud, un pliosaurio jurásico que cuelga del techo de la galería y cuyo cráneo de 1.5 metros contiene 200 dientes interconectados. La entrada al museo es gratuita y recibe aproximadamente 5.4 millones de visitantes al año.',
       'El Smithsonian National Museum of Natural History en Washington D.C. posee una de las colecciones más completas de fósiles marinos del Western Interior Seaway. La Deep Time Exhibition, inaugurada en junio de 2019 tras una renovación de 110 millones de dólares, exhibe esqueletos de Tylosaurus proriger de 10 metros y un Xiphactinus audax completo. El museo también presenta reconstrucciones digitales interactivas que permiten a los visitantes explorar el ecosistema del mar cretácico de Kansas con visualizaciones de realidad aumentada. La colección de investigación del Smithsonian contiene más de 40 millones de especímenes, siendo la mayor colección de historia natural del mundo.',
@@ -798,7 +798,7 @@ export default function InteractiveInfographic_MarinosM9() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/reptiles_marinos/marinos_m9_bg.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/reptiles_marinos/marinos_m9_bg.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',

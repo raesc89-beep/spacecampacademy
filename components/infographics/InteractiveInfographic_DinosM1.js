@@ -146,8 +146,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m1/banner_gran-mortandad.webp',
     title: 'La Gran Mortandad',
     color: '#C17829',
-    btnImage: '/assets/dinosaurios/infographic_m1/btn_gran-mortandad.jpg',
-    image: '/assets/dinosaurios/infographic_m1/hero_gran-mortandad.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m1/btn_gran-mortandad.webp',
+    image: '/assets/dinosaurios/infographic_m1/hero_gran-mortandad.webp',
     content: [
       'Hace 252 millones de años, la Tierra sufrió la peor catástrofe biológica de toda su historia: la extinción masiva del Pérmico-Triásico. Este evento eliminó aproximadamente el 96% de todas las especies marinas y cerca del 70% de los vertebrados terrestres. Los paleontólogos la denominan "La Gran Mortandad" porque ningún otro evento de extinción ha alcanzado esa magnitud. Para ponerlo en perspectiva, la extinción que acabó con los dinosaurios no avianos hace 66 millones de años eliminó un 76% de las especies, una cifra grave pero menor en comparación.',
       'La causa principal fue una serie de erupciones volcánicas colosales en la región que hoy conocemos como Siberia, Rusia. Estas erupciones formaron los "Traps Siberianos", una provincia volcánica que cubre más de 2 millones de kilómetros cuadrados con capas de lava basáltica de hasta 3 kilómetros de espesor. Las erupciones duraron aproximadamente un millón de años y liberaron cantidades masivas de dióxido de carbono y dióxido de azufre a la atmósfera, provocando un efecto invernadero descontrolado y lluvia ácida que devastó los ecosistemas marinos y terrestres por igual.',
@@ -166,8 +166,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m1/banner_pangea-un-solo-mundo.webp',
     title: 'Pangea: Un Solo Mundo',
     color: '#8B5E3C',
-    btnImage: '/assets/dinosaurios/infographic_m1/btn_pangea-un-solo-mundo.jpg',
-    image: '/assets/dinosaurios/infographic_m1/hero_pangea-un-solo-mundo.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m1/btn_pangea-un-solo-mundo.webp',
+    image: '/assets/dinosaurios/infographic_m1/hero_pangea-un-solo-mundo.webp',
     content: [
       'Durante el Triásico, toda la masa terrestre del planeta estaba unida en un solo supercontinente llamado Pangea, que en griego significa "toda la tierra". Alfred Wegener propuso la idea de la deriva continental en 1912, pero no fue hasta la década de 1960 cuando la teoría de la tectónica de placas explicó el mecanismo. Pangea se extendía desde el polo norte hasta el polo sur, rodeada por un único océano global llamado Panthalassa, que cubría más del 70% de la superficie del planeta. Un mar interior llamado Tetis (Tethys) se abría como una cuña en el lado oriental del supercontinente.',
       'El interior de Pangea era un lugar muy hostil. Al estar tan lejos del océano, las regiones centrales recibían poca humedad y estaban dominadas por desiertos inmensos con temperaturas que podían superar los 50°C durante el día. Los modelos climáticos del paleoclimatólogo Paul Olsen, de la Universidad de Columbia, indican que la diferencia de temperatura entre el interior y la costa podía alcanzar los 30°C. Las lluvias monzónicas estacionales eran intensas pero breves, creando ciclos de inundación y sequía extremos que definían los ecosistemas.',
@@ -186,8 +186,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m1/banner_arcosaurios-herederos.webp',
     title: 'Los Arcosaurios Herederos',
     color: '#6B8E96',
-    btnImage: '/assets/dinosaurios/infographic_m1/btn_arcosaurios-herederos.jpg',
-    image: '/assets/dinosaurios/infographic_m1/hero_arcosaurios-herederos.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m1/btn_arcosaurios-herederos.webp',
+    image: '/assets/dinosaurios/infographic_m1/hero_arcosaurios-herederos.webp',
     content: [
       'Los arcosaurios ("reptiles dominantes") fueron el grupo de vertebrados que heredó la Tierra después de la Gran Mortandad. Se distinguen de otros reptiles por una característica anatómica específica: la fenestra anteorbital, una abertura en el cráneo situada entre el ojo y la fosa nasal. Esta apertura reducía el peso del cráneo y proporcionaba espacio para músculos mandibulares más potentes. Todos los dinosaurios, pterosaurios, cocodrilos y aves actuales pertenecen al clado Archosauria y comparten este rasgo ancestral.',
       'Los arcosaurios se dividieron en dos grandes linajes durante el Triásico temprano, hace unos 247 millones de años. El primer linaje, Pseudosuchia ("falsos cocodrilos"), incluye a los ancestros de los cocodrilos modernos y a grupos extintos como los rauisuquios y los aetosaurios. El segundo linaje, Avemetatarsalia ("metatarsos de ave"), incluye a los dinosaurios y a los pterosaurios. La división se basa en diferencias en la articulación del tobillo: los pseudosuchios tienen un tobillo tipo "cocodrilo" con rotación entre el astrágalo y el calcáneo, mientras que los avemetatarsalios tienen un tobillo tipo "bisagra" más simple.',
@@ -206,7 +206,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m1/banner_eoraptor-primer-dinosaurio.webp',
     title: 'Eoraptor: El Primer Dinosaurio',
     color: '#5D8A68',
-    btnImage: '/assets/dinosaurios/infographic_m1/btn_eoraptor-primer-dinosaurio.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m1/btn_eoraptor-primer-dinosaurio.webp',
     image: '/assets/dinosaurios/infographic_m1/hero_eoraptor-primer-dinosaurio.jpg',
     content: [
       'En 1991, el estudiante de paleontología Ricardo Martínez descubrió un pequeño esqueleto casi completo en el Valle de la Luna, en la provincia de San Juan, Argentina. El fósil fue descrito formalmente en 1993 por Paul Sereno, de la Universidad de Chicago, junto con colaboradores argentinos, y recibió el nombre de Eoraptor lunensis: "ladrón del amanecer del Valle de la Luna". Con una antigüedad estimada de 231 millones de años, Eoraptor fue durante décadas considerado uno de los dinosaurios más antiguos conocidos y una ventana directa al origen del grupo.',
