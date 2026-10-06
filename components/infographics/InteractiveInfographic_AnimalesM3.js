@@ -95,8 +95,8 @@ const INFOGRAPHIC_NODES = [
     id: 'laika-preparativos',
     title: 'Laika y Sputnik 2',
     color: '#D87D4A',
-    btnImage: '/assets/animales/infographic_m3/btn_laika-preparativos.jpg',
-    image: '/assets/animales/infographic_m3/hero_laika-preparativos.jpg',
+    btnImage: '/assets/animales/infographic_m3/btn_laika-preparativos.webp',
+    image: '/assets/animales/infographic_m3/hero_laika-preparativos.webp',
     content: [
       "El histórico vuelo del Sputnik 2, lanzado en noviembre de 1957, marcó un hito sin precedentes en la historia de la exploración espacial al llevar a bordo al primer ser vivo en orbitar nuestro planeta, una perra mestiza de las calles de Moscú llamada Laika. Este hito no solo demostró la capacidad de la ingeniería soviética para colocar una carga útil biológica en órbita terrestre baja, sino que también inauguró una era de investigaciones fisiológicas fundamentales sobre los efectos de la microgravedad y la radiación cósmica en organismos complejos. Laika fue seleccionada por su temperamento dócil y su resistencia natural, cualidades esenciales para soportar las extremas condiciones de aceleración, ruido ensordecedor y confinamiento estricto dentro de la diminuta cápsula presurizada.",
       "La cápsula del Sputnik 2 fue un prodigio de la ingeniería de la época, diseñada apresuradamente pero con sistemas pioneros de soporte vital que incluían regeneradores de oxígeno, absorbentes de dióxido de carbono y un rudimentario sistema de control térmico. A pesar de estas innovaciones técnicas, las limitaciones logísticas y la premura política por conmemorar el aniversario de la Revolución de Octubre dictaron que el satélite no tuviera un mecanismo de reentrada seguro. En consecuencia, el destino de Laika estaba sellado desde el momento del lanzamiento, un sacrificio que proporcionó los primeros datos telemétricos vitales sobre la frecuencia cardíaca, el ritmo respiratorio y la presión arterial de un mamífero durante las fases críticas del ascenso orbital y la ingravidez sostenida.",
@@ -116,8 +116,8 @@ const INFOGRAPHIC_NODES = [
     id: 'fisiologia-entrenamiento',
     title: 'Fisiología Canina',
     color: '#D4B872',
-    btnImage: '/assets/animales/infographic_m3/btn_fisiologia-entrenamiento.jpg',
-    image: '/assets/animales/infographic_m3/hero_fisiologia-entrenamiento.jpg',
+    btnImage: '/assets/animales/infographic_m3/btn_fisiologia-entrenamiento.webp',
+    image: '/assets/animales/infographic_m3/hero_fisiologia-entrenamiento.webp',
     content: [
       "El riguroso proceso de selección y entrenamiento de los perros espaciales soviéticos, conocidos cariñosamente como 'astrodogos', representó un hito metodológico en la incipiente disciplina de la medicina espacial. Los científicos del Instituto de Medicina de Aviación de Moscú reclutaron deliberadamente hembras mestizas callejeras, presumiendo acertadamente que su lucha por la supervivencia en los crudos inviernos urbanos les confería una resistencia superior a las fluctuaciones extremas de temperatura y a las privaciones nutricionales. Además, las hembras fueron preferidas exclusivamente porque la anatomía de sus sistemas de recolección de desechos, diseñados específicamente para trajes presurizados, requería que permanecieran en una posición estática con las patas traseras extendidas durante largos períodos.",
       "El entrenamiento simulaba meticulosamente los estímulos sensoriales abrumadores y las fuerzas físicas extremas asociadas con el lanzamiento de un misil balístico intercontinental modificado. Los canes eran sometidos rutinariamente a sesiones extenuantes en centrifugadoras humanas de gran radio para familiarizarlos con las aceleraciones que superaban los diez 'G', monitoreando cuidadosamente sus respuestas cardiovasculares y respiratorias. Asimismo, se utilizaban cámaras de aislamiento acústico y plataformas vibratorias de alta frecuencia para replicar el rugido ensordecedor y las trepidaciones estructurales masivas generadas por los potentes motores de los cohetes de la serie R, evaluando su estabilidad psicológica y su capacidad para mantener la calma bajo niveles extremos de estrés ambiental.",

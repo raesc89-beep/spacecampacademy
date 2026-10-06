@@ -81,7 +81,7 @@ const INFOGRAPHIC_NODES = [
     id: 'ensayos-biologicos',
     title: 'Primeros Ensayos Biológicos en el Espacio',
     color: '#D87D4A',
-    btnImage: '/assets/animales/infographic_m1/btn_ensayos-biologicos.jpg',
+    btnImage: '/assets/animales/infographic_m1/btn_ensayos-biologicos.webp',
     image: '/assets/course/animales_pioneros/hero_ensayos_biologicos.jpg',
     content: [
       'La exploración espacial en sus etapas preliminares requirió la evaluación rigurosa de los efectos de la microgravedad y la radiación cósmica en organismos vivos antes de arriesgar vidas humanas. En las décadas de 1940 y 1950, los científicos lanzaron esporas de hongos y moscas de la fruta a bordo de cohetes V-2 capturados para comprender cómo la radiación a gran altitud afectaba la estructura celular y la genética básica. Estos ensayos iniciales sentaron las bases para protocolos de soporte vital más complejos, demostrando que la vida terrestre podía sobrevivir a la intensa aceleración del lanzamiento y a los peligrosos niveles de exposición a los rayos cósmicos fuera de la protección atmosférica.',
@@ -102,7 +102,7 @@ const INFOGRAPHIC_NODES = [
     id: 'vuelo-primates',
     title: 'El Vuelo de los Primates y la Tolerancia G',
     color: '#D4B872',
-    btnImage: '/assets/animales/infographic_m1/btn_vuelo-primates.jpg',
+    btnImage: '/assets/animales/infographic_m1/btn_vuelo-primates.webp',
     image: '/assets/course/animales_pioneros/hero_primates_espacio.jpg',
     content: [
       'La introducción de primates no humanos en los programas de investigación espacial marcó un hito crucial en la validación biomédica de las misiones tripuladas, dado su elevado grado de similitud fisiológica y anatómica con el Homo sapiens. Específicamente, los macacos rhesus y los chimpancés fueron seleccionados por su inteligencia, su capacidad para realizar tareas psicomotoras complejas bajo condiciones de estrés extremo y su arquitectura cardiovascular comparable. Entrenados mediante protocolos de condicionamiento operante, estos primates aprendieron a manipular palancas y paneles de control durante simulaciones de vuelo, lo que permitió a los científicos terrestres evaluar el impacto directo de la aceleración gravitacional y la microgravedad prolongada en el rendimiento cognitivo y la toma de decisiones.',
@@ -123,7 +123,7 @@ const INFOGRAPHIC_NODES = [
     id: 'caninos-sovieticos',
     title: 'Los Caninos Soviéticos y el Aislamiento Orbital',
     color: '#80DEEA',
-    btnImage: '/assets/animales/infographic_m1/btn_caninos-sovieticos.jpg',
+    btnImage: '/assets/animales/infographic_m1/btn_caninos-sovieticos.webp',
     image: '/assets/course/animales_pioneros/hero_caninos_sovieticos.jpg',
     content: [
       'El programa espacial soviético adoptó un enfoque radicalmente distinto en sus ensayos biológicos al seleccionar perros callejeros de Moscú como los principales candidatos para sus misiones pioneras en órbita terrestre baja. La justificación de esta decisión se basó en la premisa de que los canes que sobrevivían a los duros inviernos urbanos y a las extremas condiciones de estrés ambiental poseían una resiliencia fisiológica superior e inherente. Estos especímenes caninos fueron sometidos a rigurosos regímenes de entrenamiento que incluían confinamiento prolongado en espacios diminutos, exposición a vibraciones acústicas ensordecedoras y simulaciones en centrífugas de alta aceleración para asegurar que pudieran soportar las brutales dinámicas de lanzamiento y las hostilidades del entorno orbital sin sucumbir al pánico paralizante.',
@@ -144,7 +144,7 @@ const INFOGRAPHIC_NODES = [
     id: 'ecosistemas-cerrados',
     title: 'Ecosistemas Cerrados y Microorganismos Extremófilos',
     color: '#3949AB',
-    btnImage: '/assets/animales/infographic_m1/btn_ecosistemas-cerrados.jpg',
+    btnImage: '/assets/animales/infographic_m1/btn_ecosistemas-cerrados.webp',
     image: '/assets/course/animales_pioneros/hero_ecosistemas_extremofilos.jpg',
     content: [
       'Mientras que los mamíferos pioneros acaparaban la atención pública y mediática, la base verdaderamente revolucionaria de la astrobiología experimental se forjaba mediante el estudio meticuloso de invertebrados, plantas y microorganismos en entornos orbitales controlados. Estos diminutos pasajeros biológicos ofrecían ventajas incomparables debido a sus rápidos ciclos reproductivos y perfiles metabólicos altamente definidos, lo que permitía a los científicos documentar genéticamente múltiples generaciones bajo la influencia sostenida de la microgravedad y la radiación espacial cósmica. La experimentación con estas comunidades biológicas más simples sentó las bases ineludibles para la conceptualización de los modernos Sistemas de Soporte Vital Ecológico Cerrado (CELSS), componentes absolutamente críticos para sostener futuras colonias permanentes en Marte y más allá.',
@@ -165,8 +165,8 @@ const INFOGRAPHIC_NODES = [
     id: 'insectos-espacio',
     title: 'Insectos y Gusanos: Los Organismos Modelo del Cosmos',
     color: '#6EC6FF',
-    btnImage: '/assets/animales/infographic_m1/btn_insectos-espacio.jpg',
-    image: '/assets/course/animales_pioneros/hero_insectos_espacio.jpg',
+    btnImage: '/assets/animales/infographic_m1/btn_insectos-espacio.webp',
+    image: '/assets/course/animales_pioneros/hero_insectos_espacio.webp',
     content: [
       'La Drosophila melanogaster, la ubicua mosca de la fruta, se convirtió en uno de los organismos modelo más poderosos de la biología espacial por razones que van mucho más allá de su tamaño compacto y sus ciclos reproductivos vertiginosos de apenas dos semanas. Su genoma, sorprendentemente, comparte aproximadamente el 75% de sus genes causantes de enfermedad con el ser humano, lo que la convierte en un sistema proxy de extraordinaria relevancia médica para estudiar el envejecimiento celular, la respuesta inmunológica y la reparación del ADN en entornos de microgravedad y alta radiación. En los primeros experimentos realizados en el transbordador espacial durante la década de 1980, las poblaciones de Drosophila completaron múltiples ciclos reproductivos completos en órbita, produciendo larvas y adultos que mostraban patrones de vuelo y comportamiento reproductivo notablemente similares a los de sus contrapartes terrestres, lo que indicaba una adaptación fisiológica más rápida y eficiente de lo anticipado.',
       'El nematodo Caenorhabditis elegans emergió como otro protagonista fundamental de la biología espacial debido a su sistema nervioso completamente cartografiado de exactamente 302 neuronas y su cuerpo transparente que permite la observación directa de los procesos celulares internos sin necesidad de disección invasiva. Experimentos a bordo de la Estación Espacial Internacional demostraron que poblaciones de C. elegans mantenidas en microgravedad durante períodos superiores a cuatro meses no solo sobrevivieron, sino que exhibieron alteraciones específicas en la expresión génica relacionadas con el músculo, el estrés oxidativo y el metabolismo lipídico. Crucialmente, se identificaron genes específicos cuya activación se modificaba en microgravedad de manera idéntica a como lo hacen en gusanos terrestres de avanzada edad, estableciendo un fascinante vínculo molecular directo entre la exposición al espacio y los procesos del envejecimiento acelerado que afectan a los astronautas en misiones de larga duración.',
@@ -186,8 +186,8 @@ const INFOGRAPHIC_NODES = [
     id: 'peces-microgravedad',
     title: 'Peces en Gravedad Cero: El Laberinto de la Orientación',
     color: '#D87D4A',
-    btnImage: '/assets/animales/infographic_m1/btn_peces-microgravedad.jpg',
-    image: '/assets/course/animales_pioneros/hero_peces_espacio.jpg',
+    btnImage: '/assets/animales/infographic_m1/btn_peces-microgravedad.webp',
+    image: '/assets/course/animales_pioneros/hero_peces_espacio.webp',
     content: [
       'Los experimentos con peces en microgravedad han producido algunos de los fenómenos de comportamiento más visualmente impactantes y científicamente desconcertantes de toda la biología espacial. Cuando los medakas japoneses (Oryzias latipes) fueron introducidos en acuarios orbitales a bordo del transbordador espacial Columbia, adoptaron de inmediato una conducta conocida como "looping" o "barreling" — nado en espirales circulares compulsivas de alta velocidad desde los primeros minutos de exposición a la microgravedad. Este comportamiento estereotipado, que puede durar desde horas hasta varios días dependiendo de la especie, resulta del colapso total de la referencia gravitacional sobre la que el sistema vestibular del pez ha dependido evolutivamente durante 500 millones de años para definir cuál es la dirección "hacia arriba".',
       'El sistema de equilibrio de los peces óseos depende críticamente de dos estructuras sensoriales especializadas: el laberinto membranoso del oído interno, que incluye los canales semicirculares sensibles a la rotación, y los otolitos, pequeñas concreciones de carbonato cálcico densas que se desplazan bajo la acción de la gravedad indicando la orientación vertical. En microgravedad, los otolitos pierden completamente su función orientadora al no existir gradiente gravitacional que los desplace diferencialmente dentro del fluido endolinfático circundante, enviando señales ambiguas o contradictorias al cerebelo donde se integra la información postural. Este conflicto sensorial masivo entre las señales visuales (que continúan funcionando normalmente), los receptores de presión laterales y los otolitos disfuncionales genera el caótico comportamiento de desorientación que los investigadores observaron meticulosamente en los primeros experimentos de acuario orbital.',
@@ -207,8 +207,8 @@ const INFOGRAPHIC_NODES = [
     id: 'ranas-otolitos',
     title: 'Ranas en Órbita: El Sistema Vestibular al Desnudo',
     color: '#3DC9A0',
-    btnImage: '/assets/animales/infographic_m1/btn_ranas-otolitos.jpg',
-    image: '/assets/course/animales_pioneros/hero_ranas_espacio.jpg',
+    btnImage: '/assets/animales/infographic_m1/btn_ranas-otolitos.webp',
+    image: '/assets/course/animales_pioneros/hero_ranas_espacio.webp',
     content: [
       'Las ranas representaron un sujeto de estudio de valor científico singular para la fisiología vestibular espacial debido a que su sistema de equilibrio, basado en otolitos claramente diferenciados y canales semicirculares de acceso quirúrgico relativamente sencillo, servía como modelo directo del laberinto del oído interno humano. En 1970, la NASA lanzó la misión Orbiting Frog Otolith (OFO-A), el primer experimento espacial dedicado exclusivamente a la neurología del equilibrio, enviando dos ranas leopardo (Rana pipiens) en una cápsula instrumentada con electrodos implantados directamente en sus nervios vestibulares para registrar la actividad neuronal en tiempo real durante la ingravidez. Los datos obtenidos durante esas 6 días de órbita revelaron que los nervios otolíticos de las ranas dejaban de disparar señales postulares coherentes dentro de las primeras horas de microgravedad pero comenzaban a generar nuevos patrones de actividad espontánea en las 48 horas siguientes, indicando que el sistema nervioso central iniciaba un proceso activo de recalibración.',
       'La misión OFO-A demostró con electrodes implantados in vivo algo que ningún experimento terrestre había podido probar de forma inequívoca: que el sistema vestibular de un vertebrado en desarrollo durante exposición a microgravedad no simplemente "se apaga", sino que entra en un estado dinámico de reorganización funcional activa. Los científicos observaron que las ranas adultas eventualmente adoptaron posturas de reposo estables, orientándose por señales visuales después de un período de desorientación inicial de 12 a 36 horas, mientras que sus nervios otolíticos se silenciaban en períodos de quietud y volvían a activarse durante el movimiento activo. Este descubrimiento fue fundamental para establecer que el sistema vestibular de los vertebrados tiene una plasticidad adaptativa específicamente diseñada para funcionar en ambientes gravitacionales alterados, un hallazgo de relevancia directa para la comprensión de los mecanismos de recuperación del mareo espacial humano.',
