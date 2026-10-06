@@ -155,8 +155,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m8/banner_sinosauropteryx-descubrimiento.webp',
     title: 'El Descubrimiento que Cambió Todo',
     color: '#5D8A68',
-    btnImage: '/assets/dinosaurios/infographic_m8/btn_sinosauropteryx-descubrimiento.jpg',
-    image: '/assets/dinosaurios/infographic_m8/hero_sinosauropteryx-descubrimiento.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m8/btn_sinosauropteryx-descubrimiento.webp',
+    image: '/assets/dinosaurios/infographic_m8/hero_sinosauropteryx-descubrimiento.webp',
     content: [
       'En 1996, el paleontólogo Ji Qiang presentó al mundo un fósil hallado en la Formación Yixian de Liaoning, China, que transformó para siempre nuestra comprensión de los dinosaurios. El espécimen, bautizado como Sinosauropteryx prima, conservaba a lo largo de su cuerpo estructuras filamentosas que no podían interpretarse como otra cosa que plumas primitivas. Estas fibras, de entre 13 y 35 milímetros de longitud, cubrían el cuello, la espalda y la cola del animal, formando un patrón que recordaba al plumón de los polluelos actuales. El hallazgo fue publicado oficialmente por Ji y Ji en la revista Nature en 1996.',
       'Sinosauropteryx era un terópodo pequeño, de aproximadamente un metro de longitud total y unos 2.5 kilogramos de peso estimado. Pertenecía al grupo de los compsognátidos, carnívoros bípedos ágiles que cazaban insectos y lagartos. El fósil preservaba incluso el contenido de su estómago, donde se identificó un lagarto parcialmente digerido, lo que proporcionó datos directos sobre su dieta. Las condiciones excepcionales de fosilización en Liaoning, donde ceniza volcánica cubrió rápidamente los organismos, permitieron la conservación de tejidos blandos que normalmente se pierden durante el proceso de fosilización.',
@@ -175,7 +175,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m8/banner_archaeopteryx-eslabon.webp',
     title: 'Archaeopteryx: El Eslabón',
     color: '#C17829',
-    btnImage: '/assets/dinosaurios/infographic_m8/btn_archaeopteryx-eslabon.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m8/btn_archaeopteryx-eslabon.webp',
     image: '/assets/dinosaurios/infographic_m8/hero_archaeopteryx-eslabon.jpg',
     content: [
       'En 1861, apenas dos años después de que Charles Darwin publicara "El Origen de las Especies", apareció en las canteras de caliza de Solnhofen, en Baviera (Alemania), uno de los fósiles más importantes de la historia de la paleontología. Archaeopteryx lithographica combinaba rasgos de reptil y de ave en un mismo organismo: tenía dientes en las mandíbulas, garras en los dedos de las alas y una cola ósea larga como un dinosaurio, pero también poseía plumas asimétricas con la estructura necesaria para el vuelo activo. El momento de su descubrimiento fue relevante porque proporcionó la primera evidencia fósil de una forma de transición entre dos grupos de vertebrados.',

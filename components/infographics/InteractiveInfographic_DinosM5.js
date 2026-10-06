@@ -204,8 +204,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m5/banner_rhamphorhynchus-primitivos.webp',
     title: 'Rhamphorhynchus y los Primitivos',
     color: '#8B5E3C',
-    btnImage: '/assets/dinosaurios/infographic_m5/btn_rhamphorhynchus-primitivos.jpg',
-    image: '/assets/dinosaurios/infographic_m5/hero_rhamphorhynchus-primitivos.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m5/btn_rhamphorhynchus-primitivos.webp',
+    image: '/assets/dinosaurios/infographic_m5/hero_rhamphorhynchus-primitivos.webp',
     content: [
       'Los pterosaurios del Jurásico representan la primera gran radiación evolutiva del grupo, y entre ellos destaca Rhamphorhynchus muensteri, uno de los pterosaurios mejor conservados gracias a las excepcionales calizas litográficas de Solnhofen, Alemania. Estos sedimentos de grano fino, depositados en lagunas tropicales poco profundas hace 150 millones de años, preservaron no solo los huesos sino también las membranas alares, los picnofibras (filamentos similares a pelo que cubrían el cuerpo) e incluso contenidos estomacales de estos animales con una resolución que permite ver estructuras de menos de un milímetro.',
       'Rhamphorhynchus tenía una envergadura de hasta 1.81 metros y se distinguía por su cola larga y rígida que terminaba en una estructura con forma de diamante o vela. Esta "vela caudal" estaba formada por tejido blando sostenido por tendones osificados, y probablemente funcionaba como estabilizador durante el vuelo, similar al empenaje de cola de un avión. Los estudios de Wellnhofer (1975) y posteriormente de Frey et al. (2003) demostraron que esta estructura reducía el cabeceo y la guiñada durante el planeo, proporcionando estabilidad direccional a velocidades bajas.',
@@ -224,8 +224,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m5/banner_mecanica-vuelo.webp',
     title: 'La Mecánica del Vuelo',
     color: '#A67B3D',
-    btnImage: '/assets/dinosaurios/infographic_m5/btn_mecanica-vuelo.jpg',
-    image: '/assets/dinosaurios/infographic_m5/hero_mecanica-vuelo.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m5/btn_mecanica-vuelo.webp',
+    image: '/assets/dinosaurios/infographic_m5/hero_mecanica-vuelo.webp',
     content: [
       'La estructura alar de los pterosaurios era radicalmente distinta a la de las aves y los murciélagos. La membrana de vuelo, llamada patagio, se extendía desde el cuarto dedo enormemente elongado de la mano hasta el tobillo o la rodilla, dependiendo de la especie. Esta membrana estaba compuesta por múltiples capas de tejido: una epidermis externa, una red de fibras musculares llamadas actinofibrilas que daban rigidez estructural, vasos sanguíneos para termorregulación y una epidermis interna. Las actinofibrilas, con diámetros de 0.05 a 0.1 milímetros, estaban organizadas en patrones radiantes que permitían controlar la tensión y la curvatura del ala durante el vuelo.',
       'Un elemento anatómico exclusivo de los pterosaurios era el hueso pteroide, una estructura ósea única en el reino animal que se articulaba con la muñeca y se extendía hacia adelante, sosteniendo una membrana anterior llamada propatagio. Wilkinson et al. (2006) realizaron pruebas en túnel de viento con modelos a escala y demostraron que el propatagio actuaba como un flap de borde de ataque, aumentando la sustentación en un 30% a velocidades bajas y permitiendo ángulos de ataque más pronunciados sin entrar en pérdida aerodinámica, de manera análoga a los dispositivos hipersustentadores de los aviones modernos.',
@@ -244,8 +244,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m5/banner_huevos-crias-social.webp',
     title: 'Huevos, Crías y Vida Social',
     color: '#7D6B99',
-    btnImage: '/assets/dinosaurios/infographic_m5/btn_huevos-crias-social.jpg',
-    image: '/assets/dinosaurios/infographic_m5/hero_huevos-crias-social.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m5/btn_huevos-crias-social.webp',
+    image: '/assets/dinosaurios/infographic_m5/hero_huevos-crias-social.webp',
     content: [
       'Los huevos de pterosaurio eran fundamentalmente distintos a los de los dinosaurios y las aves. Wang et al. (2004) describieron los primeros huevos de pterosaurio conocidos de la especie Pterodaustro guinazui en Argentina, y Wang et al. (2014) publicaron el descubrimiento más significativo en la revista Current Biology: un yacimiento en Hami, Xinjiang, China, que contenía cientos de huevos tridimensionalmente preservados del pterosaurio Hamipterus tianshanensis junto con embriones en distintas etapas de desarrollo y restos de adultos. Los huevos tenían cáscaras blandas y flexibles, similares a las de los reptiles modernos, no rígidas como las de las aves.',
       'Los embriones de Hamipterus revelaron que las crías de pterosaurio nacían con los huesos de las alas poco desarrollados, lo que indica que probablemente no podían volar inmediatamente después de la eclosión. Este hallazgo contradijo la hipótesis predominante de que las crías de pterosaurio eran "flaplings" — capaces de volar poco después de nacer. Wang et al. (2014) sugirieron que los juveniles requerían un período de cuidado parental, lo que implica un comportamiento social más complejo de lo que se asumía previamente para estos reptiles voladores.',
@@ -264,8 +264,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m5/banner_fin-dinastia.webp',
     title: 'El Fin de una Dinastía',
     color: '#3E7C8B',
-    btnImage: '/assets/dinosaurios/infographic_m5/btn_fin-dinastia.jpg',
-    image: '/assets/dinosaurios/infographic_m5/hero_fin-dinastia.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m5/btn_fin-dinastia.webp',
+    image: '/assets/dinosaurios/infographic_m5/hero_fin-dinastia.webp',
     content: [
       'La extinción de los pterosaurios coincidió con el evento de extinción masiva del Cretácico-Paleógeno (K-Pg) hace 66 millones de años, el mismo evento que acabó con los dinosaurios no avianos, los mosasaurios, los plesiosaurios y aproximadamente el 76% de todas las especies del planeta. El impacto del asteroide Chicxulub, un cuerpo de 10 a 12 kilómetros de diámetro que golpeó lo que hoy es la península de Yucatán, México, desencadenó una cadena de catástrofes: tsunamis de cientos de metros, incendios forestales globales, un "invierno de impacto" que bloqueó la luz solar durante meses y una caída drástica de las temperaturas.',
       'Sin embargo, la diversidad de los pterosaurios ya había declinado significativamente antes del impacto. Estudios de Longrich, Martill y Andres (2018), publicados en PLOS Biology, identificaron que durante los últimos 15 millones de años del Cretácico solo sobrevivían unas pocas familias de pterosaurios, principalmente los azhdárquidos de gran tamaño como Quetzalcoatlus, Hatzegopteryx y Arambourgiania. Los pterosaurios de tamaño pequeño y mediano habían desaparecido progresivamente, posiblemente desplazados por la creciente radiación de las aves del grupo Enantiornithes y Ornithuromorpha.',
