@@ -152,8 +152,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m10/banner_lecciones-del-pasado.webp',
     title: 'Lecciones del Pasado',
     color: '#5B7B9A',
-    btnImage: '/assets/reptiles_marinos/infographic_m10/btn_lecciones-del-pasado.jpg',
-    image: '/assets/reptiles_marinos/infographic_m10/hero_lecciones-del-pasado.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m10/btn_lecciones-del-pasado.webp',
+    image: '/assets/reptiles_marinos/infographic_m10/hero_lecciones-del-pasado.webp',
     content: [
       'Hace 252 millones de años, la extinción masiva del Pérmico-Triásico eliminó el 96% de todas las especies marinas del planeta. Este evento, conocido como la "Gran Mortandad", fue provocado por erupciones volcánicas masivas en Siberia que liberaron cantidades enormes de dióxido de carbono y metano a la atmósfera. Los océanos se calentaron entre 8 y 10 grados centígrados, perdieron oxígeno disuelto y se acidificaron hasta niveles letales para la mayoría de los organismos con conchas o esqueletos de carbonato de calcio. Esta catástrofe tardó entre 5 y 10 millones de años en revertirse por completo.',
       'Los ictiosaurios, plesiosaurios y mosasaurios dominaron los mares durante más de 150 millones de años, ocupando nichos ecológicos similares a los que hoy ocupan delfines, focas y orcas. Su desaparición al final del Cretácico, hace 66 millones de años, fue causada por el impacto del asteroide Chicxulub en la península de Yucatán. Este impacto generó tsunamis de más de 100 metros de altura, bloqueó la luz solar durante meses y provocó un enfriamiento global que colapsó las cadenas alimenticias oceánicas desde la base del fitoplancton.',
@@ -172,8 +172,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m10/banner_los-oceanos-hoy.webp',
     title: 'Los Océanos Hoy',
     color: '#B87D5E',
-    btnImage: '/assets/reptiles_marinos/infographic_m10/btn_los-oceanos-hoy.jpg',
-    image: '/assets/reptiles_marinos/infographic_m10/hero_los-oceanos-hoy.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m10/btn_los-oceanos-hoy.webp',
+    image: '/assets/reptiles_marinos/infographic_m10/hero_los-oceanos-hoy.webp',
     content: [
       'Los océanos cubren el 71% de la superficie terrestre y contienen el 97% del agua del planeta. Albergan aproximadamente 230,000 especies conocidas, aunque estimaciones recientes sugieren que podrían existir entre 700,000 y 1 millón de especies marinas aún sin describir. Los arrecifes de coral, que ocupan menos del 0.1% del fondo oceánico, sostienen al 25% de todas las especies marinas conocidas. Estos ecosistemas producen entre el 50% y el 80% del oxígeno que respiramos a través del fitoplancton, organismos microscópicos que realizan fotosíntesis en la capa superficial del mar.',
       'La sobrepesca es una de las amenazas más directas a la biodiversidad marina. Según la Organización de las Naciones Unidas para la Alimentación (FAO), el 35.4% de las poblaciones de peces evaluadas en 2019 estaban sobreexplotadas, frente al 10% registrado en 1974. Las redes de arrastre de fondo destruyen hábitats bentónicos que tardan décadas en recuperarse, incluyendo esponjas, corales de aguas profundas y praderas de fanerógamas marinas. La pesca incidental captura cada año aproximadamente 300,000 cetáceos, 250,000 tortugas marinas y millones de tiburones, según datos de la Unión Internacional para la Conservación de la Naturaleza.',
