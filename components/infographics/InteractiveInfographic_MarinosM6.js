@@ -144,7 +144,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m6/banner_thalattosuchia-intro.webp',
     title: 'Cocodrilos: Los Otros Reptiles Marinos',
     color: '#5B7B9A',
-    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_thalattosuchia-intro.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_thalattosuchia-intro.webp',
     image: '/assets/reptiles_marinos/infographic_m6/hero_thalattosuchia-intro.jpg',
     content: [
       'Cuando pensamos en reptiles marinos prehistóricos, los plesiosaurios e ictiosaurios suelen acaparar la atención. Sin embargo, existió un grupo de cocodrilianos que abandonó la vida terrestre y se adaptó por completo al océano abierto: los talatosuquios (Thalattosuchia). Este superorden apareció durante el Jurásico Temprano, hace aproximadamente 200 millones de años, y prosperó durante más de 100 millones de años en los mares del Mesozoico. Su nombre proviene del griego "thalatto" (mar) y "souchos" (cocodrilo), y describe con precisión a estos cocodrilianos que intercambiaron las orillas de los ríos por las corrientes oceánicas profundas.',
@@ -164,8 +164,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m6/banner_metriorhynchus-aletas.webp',
     title: 'Metriorhynchus: Aletas en Vez de Patas',
     color: '#B87D5E',
-    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_metriorhynchus-aletas.jpg',
-    image: '/assets/reptiles_marinos/infographic_m6/hero_metriorhynchus-aletas.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_metriorhynchus-aletas.webp',
+    image: '/assets/reptiles_marinos/infographic_m6/hero_metriorhynchus-aletas.webp',
     content: [
       'Metriorhynchus es el género que define al clado Metriorhynchidae, la familia de cocodrilos más adaptada al medio marino que jamás haya existido. Descubierto y descrito por el paleontólogo alemán Christian Erich Hermann von Meyer en 1830, este animal vivió durante el Jurásico Medio y Superior (hace entre 166 y 155 millones de años) en los mares que cubrían lo que hoy es Europa occidental. Con un tamaño de 2.5 a 3 metros de longitud, Metriorhynchus era un depredador ágil que cazaba peces, cefalópodos y otros animales marinos en aguas abiertas.',
       'La característica más notable de Metriorhynchus fue la transformación completa de sus extremidades. Las patas delanteras y traseras se modificaron en estructuras aplanadas similares a remos o paletas, con los huesos de los dedos acortados y ensanchados para funcionar como aletas. Esta modificación fue tan radical que Metriorhynchus habría sido incapaz de caminar en tierra firme. A diferencia de las focas, que conservan cierta capacidad de locomoción terrestre, los metriorrínquidos estaban atrapados en el océano de por vida, una condición que los paleontólogos denominan "pelágica obligada".',
@@ -184,7 +184,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m6/banner_dakosaurus-apex.webp',
     title: 'Dakosaurus: El Cocodrilo T-Rex',
     color: '#6E8FA8',
-    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_dakosaurus-apex.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_dakosaurus-apex.webp',
     image: '/assets/reptiles_marinos/infographic_m6/hero_dakosaurus-apex.jpg',
     content: [
       'Dakosaurus fue el depredador supremo entre los cocodrilos marinos del Jurásico Superior. Con una longitud estimada de 4 a 5 metros, este metriorrínquido se distinguía de todos sus parientes por poseer un cráneo masivo, corto y alto, con dientes grandes, comprimidos lateralmente y con bordes serrados, similares a los de los dinosaurios terópodos carnívoros. Esta combinación de rasgos le valió el apodo informal de "Godzilla" cuando el paleontólogo argentino Diego Pol y su equipo describieron la especie sudamericana D. andiniensis en 2005.',
@@ -204,8 +204,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m6/banner_steneosaurus-primitivos.webp',
     title: 'Steneosaurus y los Primitivos',
     color: '#8B6B4A',
-    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_steneosaurus-primitivos.jpg',
-    image: '/assets/reptiles_marinos/infographic_m6/hero_steneosaurus-primitivos.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_steneosaurus-primitivos.webp',
+    image: '/assets/reptiles_marinos/infographic_m6/hero_steneosaurus-primitivos.webp',
     content: [
       'Steneosaurus representa uno de los primeros y más exitosos linajes de cocodrilos marinos. Descrito por Geoffroy Saint-Hilaire en 1825, este teleosáurido vivió desde el Jurásico Inferior hasta el Jurásico Superior (hace entre 183 y 152 millones de años), abarcando un rango temporal de más de 30 millones de años. Con longitudes que variaban entre 2.5 y 5 metros según la especie, Steneosaurus fue un depredador costero semi-acuático que habitó las aguas someras de los mares epicontinentales europeos, donde cazaba peces y cefalópodos con su característico hocico largo y estrecho.',
       'El rasgo más distintivo de Steneosaurus era su cráneo longirostro, que podía alcanzar hasta un tercio de la longitud corporal total. Este hocico alargado estaba equipado con numerosos dientes cónicos interconectados que formaban una trampa eficiente para atrapar peces resbaladizos. Los análisis funcionales de Pierce et al. (2009) demostraron que los cráneos longirostros generan menor resistencia al agua durante los movimientos laterales rápidos de la cabeza, una técnica de captura similar a la que emplean los gaviales actuales (Gavialis gangeticus) en los ríos del subcontinente indio.',
@@ -225,7 +225,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Adaptaciones al Océano',
     color: '#7C93A8',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_adaptaciones-oceano.jpg',
-    image: '/assets/reptiles_marinos/infographic_m6/hero_adaptaciones-oceano.jpg',
+    image: '/assets/reptiles_marinos/infographic_m6/hero_adaptaciones-oceano.webp',
     content: [
       'La conquista del océano por parte de los talatosuquios requirió una serie de adaptaciones fisiológicas y anatómicas que transformaron un plan corporal terrestre en una máquina de supervivencia marina. La más crítica fue el desarrollo de glándulas de sal especializadas. Los cocodrilos marinos, al igual que las tortugas marinas e iguanas marinas actuales, enfrentaban el problema constante de la acumulación de sal por la ingestión de agua marina. En los metriorrínquidos, las glándulas de sal estaban ubicadas en depresiones óseas especializadas en la región frontal del cráneo, denominadas fosas nasales preorbitales, y excretaban soluciones salinas concentradas para mantener el equilibrio osmótico.',
       'La forma del cuerpo experimentó una remodelación completa hacia la hidrodinámica. Los metriorrínquidos desarrollaron un perfil fusiforme (forma de torpedo) con la cabeza alineada con el cuerpo, eliminando la angulación típica del cráneo de los cocodrilos terrestres. La cola se alargó y comprimió lateralmente, culminando en la aleta caudal hipocercal que proporcionaba propulsión mediante ondulaciones verticales. Los modelos computacionales de Hua (1994) estimaron que un metriorrínquido de 3 metros podía alcanzar velocidades de crucero de 4 a 6 km/h y velocidades de persecución cortas de hasta 15 km/h.',
@@ -244,8 +244,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m6/banner_machimosaurus-gigante.webp',
     title: 'Machimosaurus: El Gigante',
     color: '#9E7B5C',
-    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_machimosaurus-gigante.jpg',
-    image: '/assets/reptiles_marinos/infographic_m6/hero_machimosaurus-gigante.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_machimosaurus-gigante.webp',
+    image: '/assets/reptiles_marinos/infographic_m6/hero_machimosaurus-gigante.webp',
     content: [
       'Machimosaurus rex es el talatosuquio más grande que se haya descubierto, con una longitud estimada de 7.15 metros y un peso de más de una tonelada. Descrito en 2016 por Federico Fanti, Andrea Cau, Mohsen Hassine y Michela Contessi en la revista Cretaceous Research, este teleosáurido gigante fue encontrado en la formación Douiret del sur de Túnez, en sedimentos del Valanginiense (Cretácico Inferior, hace aproximadamente 130 millones de años). El hallazgo fue significativo porque demostró que los talatosuquios sobrevivieron al límite Jurásico-Cretácico, un período de recambio faunístico que se creía les había sido fatal.',
       'El cráneo de Machimosaurus rex medía más de 155 centímetros de longitud, el más grande conocido para cualquier talatosuquio. A diferencia de Dakosaurus con sus dientes serrados para cortar, Machimosaurus tenía dientes romos, bulbosos y redondeados en la parte posterior de la mandíbula, diseñados para triturar en lugar de cortar. Esta dentición durófaga indica que Machimosaurus se alimentaba de presas con caparazones o conchas duras: tortugas marinas, amonites de concha gruesa y crustáceos de gran tamaño. La parte frontal del hocico tenía dientes más cónicos y afilados para capturar y sujetar las presas antes de transportarlas a los dientes trituradores posteriores.',
@@ -264,7 +264,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m6/banner_herencia-moderna.webp',
     title: 'La Herencia Moderna',
     color: '#4A6F8C',
-    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_herencia-moderna.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_herencia-moderna.webp',
     image: '/assets/reptiles_marinos/infographic_m6/hero_herencia-moderna.jpg',
     content: [
       'Aunque los talatosuquios se extinguieron durante el Cretácico Inferior (hace unos 130 millones de años), su legado ecológico pervive en un reptil moderno que demuestra que los cocodrilos nunca abandonaron del todo el mar: Crocodylus porosus, el cocodrilo de agua salada o cocodrilo marino. Con una distribución que abarca desde la India oriental hasta el norte de Australia, pasando por el Sudeste Asiático y las islas del Pacífico occidental, C. porosus es el reptil vivo más grande del planeta, con machos que alcanzan rutinariamente los 5 metros y registros excepcionales que superan los 6 metros de longitud.',

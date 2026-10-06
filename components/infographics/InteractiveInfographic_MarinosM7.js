@@ -145,7 +145,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m7/banner_oceano-ecosistema.webp',
     title: 'El Océano como Ecosistema',
     color: '#5B7B9A',
-    btnImage: '/assets/reptiles_marinos/infographic_m7/btn_oceano-ecosistema.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m7/btn_oceano-ecosistema.webp',
     image: '/assets/reptiles_marinos/infographic_m7/hero_oceano-ecosistema.jpg',
     content: [
       'Durante el Mesozoico (252–66 millones de años atrás), los océanos cubrían aproximadamente el 80% de la superficie terrestre, una proporción mayor que el 71% actual. Las temperaturas del agua eran entre 10 y 15 grados Celsius más cálidas que hoy, lo cual permitía que la vida marina se distribuyera desde los trópicos hasta las regiones polares sin las barreras de frío que existen en la actualidad. El nivel del mar era considerablemente más alto, y vastos mares epicontinentales como el Mar Interior Occidental de Norteamérica inundaban grandes extensiones de los continentes, creando hábitats costeros de poca profundidad donde se concentraba una biodiversidad marina notable.',

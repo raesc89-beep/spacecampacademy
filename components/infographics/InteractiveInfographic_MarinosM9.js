@@ -138,8 +138,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m9/banner_fosiles-mary-anning.webp',
     title: 'Los Fósiles que Reescribieron la Historia',
     color: '#5B7B9A',
-    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_fosiles-mary-anning.jpg',
-    image: '/assets/reptiles_marinos/infographic_m9/hero_fosiles-mary-anning.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_fosiles-mary-anning.webp',
+    image: '/assets/reptiles_marinos/infographic_m9/hero_fosiles-mary-anning.webp',
     content: [
       'En 1811, en los acantilados de Lyme Regis, una localidad costera en el condado de Dorset, al sur de Inglaterra, una niña de 12 años llamada Mary Anning y su hermano Joseph descubrieron un cráneo de un metro de largo incrustado en la piedra caliza jurásica. Meses después, Mary excavó el esqueleto completo de lo que resultó ser un ictiosaurio, un reptil marino de 5.2 metros de longitud que había vivido hace aproximadamente 200 millones de años. Este hallazgo sacudió los cimientos de la historia natural británica y desafió las ideas religiosas predominantes sobre la creación y la extinción de las especies en la Inglaterra del siglo XIX.',
       'En 1823, Mary Anning realizó otro descubrimiento que transformó la paleontología: el primer esqueleto casi completo de un plesiosaurio, un reptil marino con un cuello de longitud notable y cuatro aletas en forma de remo. El espécimen, ahora clasificado como Plesiosaurus dolichodeirus, medía 3.5 metros y presentaba 35 vértebras cervicales. Georges Cuvier, el célebre anatomista francés, dudó inicialmente de la autenticidad del fósil porque la anatomía era diferente a cualquier animal conocido hasta entonces, pero tras examinar los datos aceptó que el hallazgo era genuino y representaba una forma de vida sin precedentes.',
@@ -158,8 +158,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m9/banner_ictiosaurio-holzmaden.webp',
     title: 'El Ictiosaurio de Holzmaden',
     color: '#B87D5E',
-    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_ictiosaurio-holzmaden.jpg',
-    image: '/assets/reptiles_marinos/infographic_m9/hero_ictiosaurio-holzmaden.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_ictiosaurio-holzmaden.webp',
+    image: '/assets/reptiles_marinos/infographic_m9/hero_ictiosaurio-holzmaden.webp',
     content: [
       'En las canteras de pizarra bituminosa de Holzmaden, en el suroeste de Alemania, estado de Baden-Wurtemberg, se han recuperado cientos de esqueletos de ictiosaurios del Jurásico inferior (183 millones de años). El descubrimiento más notable entre ellos es un espécimen de Stenopterygius quadriscissus que conserva embriones en su interior, lo que demuestra que estos reptiles marinos eran vivíparos: daban a luz crías vivas en el mar, en lugar de poner huevos en tierra como otros reptiles. Este hallazgo, realizado en la década de 1890 por el coleccionista Bernhard Hauff, transformó la comprensión de la biología reproductiva de los reptiles mesozoicos.',
       'La Formación Posidonia Shale (Posidonienschiefer), donde se encuentran estos fósiles, se depositó en un mar epicontinental del Toarciano que cubría gran parte de Europa central. Las aguas del fondo marino contenían concentraciones de oxígeno extremadamente bajas, un fenómeno llamado anoxia, que impedía la vida de organismos carroñeros y bacterias aeróbicas. Esta condición geoquímica permitió que los cadáveres de ictiosaurios se hundieran al fondo y quedaran cubiertos por sedimentos finos de arcilla sin ser perturbados, preservando no solo huesos sino también tejidos blandos como piel, aletas y contenidos gástricos.',
@@ -178,8 +178,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m9/banner_mosasaurio-maastricht.webp',
     title: 'El Mosasaurio de Maastricht',
     color: '#6E8FA8',
-    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_mosasaurio-maastricht.jpg',
-    image: '/assets/reptiles_marinos/infographic_m9/hero_mosasaurio-maastricht.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_mosasaurio-maastricht.webp',
+    image: '/assets/reptiles_marinos/infographic_m9/hero_mosasaurio-maastricht.webp',
     content: [
       'En 1764, trabajadores de una cantera de caliza en la colina de San Pedro (Sint Pietersberg), cerca de la ciudad de Maastricht en los Países Bajos, desenterraron un cráneo de 1.2 metros de largo con mandíbulas repletas de dientes cónicos y afilados. El cirujano militar Johann Leonard Hoffmann adquirió el espécimen y lo estudió durante años. El canónigo Theodorus Joannes Godding, propietario del terreno, reclamó legalmente el fósil. Este conflicto de propiedad se convirtió en uno de los primeros litigios legales documentados sobre derechos de posesión de fósiles en la historia de la ciencia europea.',
       'En 1795, durante la invasión francesa de los Países Bajos, las tropas de Napoleón Bonaparte confiscaron el cráneo de Maastricht como botín de guerra. Según los relatos históricos, el comandante francés ofreció 600 botellas de vino como recompensa a los soldados que localizaran y aseguraran el fósil, que el canónigo Godding había escondido en una cueva. Las tropas lo encontraron y lo trasladaron a París, donde fue depositado en el Museo Nacional de Historia Natural de Francia. El espécimen permanece allí hasta la actualidad, catalogado como MNHN AC 9648, y nunca ha sido devuelto a los Países Bajos.',
@@ -198,8 +198,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m9/banner_western-interior-seaway.webp',
     title: 'Fósiles del Western Interior Seaway',
     color: '#8B6B4A',
-    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_western-interior-seaway.jpg',
-    image: '/assets/reptiles_marinos/infographic_m9/hero_western-interior-seaway.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_western-interior-seaway.webp',
+    image: '/assets/reptiles_marinos/infographic_m9/hero_western-interior-seaway.webp',
     content: [
       'Durante el Cretácico superior (100-66 millones de años), un mar interior poco profundo dividía Norteamérica en dos masas de tierra, extendiéndose desde el Golfo de México hasta el Océano Ártico. Este mar, denominado Western Interior Seaway (Vía Marítima Interior Occidental), alcanzaba 1,000 kilómetros de ancho y una profundidad máxima de 250 metros. Sus aguas cálidas y ricas en nutrientes sostenían un ecosistema diverso con mosasaurios, plesiosaurios, tortugas marinas gigantes del género Archelon (con una envergadura de aleta a aleta de 4.6 metros), tiburones y peces óseos de gran tamaño que no tienen equivalente en los océanos modernos.',
       'Los depósitos de creta (chalk) de Kansas occidental, específicamente la Formación Niobrara (87-82 Ma), constituyen uno de los yacimientos de vertebrados marinos fósiles más productivos del mundo. Estas rocas se formaron a partir de la acumulación de billones de caparazones microscópicos de cocolitofóridos, algas unicelulares que flotaban en la superficie del mar. La familia Sternberg, una dinastía de coleccionistas de fósiles que trabajó en Kansas durante cuatro generaciones entre 1876 y 1990, recolectó más de 700 especímenes de vertebrados marinos que hoy se exhiben en museos de todo el mundo.',
@@ -218,8 +218,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m9/banner_descubrimientos-sudamerica.webp',
     title: 'Descubrimientos en Sudamérica',
     color: '#7C93A8',
-    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_descubrimientos-sudamerica.jpg',
-    image: '/assets/reptiles_marinos/infographic_m9/hero_descubrimientos-sudamerica.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_descubrimientos-sudamerica.webp',
+    image: '/assets/reptiles_marinos/infographic_m9/hero_descubrimientos-sudamerica.webp',
     content: [
       'La Formación Vaca Muerta, en la provincia de Neuquén, Argentina, es uno de los depósitos de reptiles marinos jurásicos más ricos del hemisferio sur. Estas rocas, depositadas entre 150 y 135 millones de años (Tithoniano-Valanginiano) en un mar que cubría el oeste de Argentina, han producido esqueletos de pliosaurios, ictiosaurios y cocodrilos marinos. En 2004, el paleontólogo Zulma Gasparini y su equipo describieron un pliosaurio de 7 metros de longitud cuyos dientes medían 15 centímetros, comparable en tamaño a Pliosaurus del Jurásico europeo. La formación debe su nombre al color negro de la roca, producto de la alta concentración de materia orgánica que hoy la convierte en una de las reservas de petróleo no convencional más importantes del mundo.',
       'En Colombia, la Formación Paja del departamento de Boyacá ha producido fósiles de reptiles marinos del Cretácico inferior (130-115 Ma) que incluyen plesiosaurios, ictiosaurios y el kronosaurio colombiano. En 2015, Edwin Cadena y sus colegas publicaron en la revista PeerJ la descripción de una tortuga marina sandownida del Cretácico inferior de Colombia, la primera de su tipo encontrada en Sudamérica. En 2019, investigadores de la Universidad Nacional de Colombia anunciaron el descubrimiento de un kronosaurio de 10 metros de longitud cuyos restos fueron encontrados por campesinos en Villa de Leyva. El espécimen conserva el cráneo de 2.4 metros y gran parte del esqueleto postcraneal.',
@@ -238,7 +238,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m9/banner_tecnicas-modernas.webp',
     title: 'Técnicas Modernas de Estudio',
     color: '#9E7B5C',
-    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_tecnicas-modernas.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m9/btn_tecnicas-modernas.webp',
     image: '/assets/reptiles_marinos/infographic_m9/hero_tecnicas-modernas.jpg',
     content: [
       'La tomografía computarizada (CT) ha transformado la paleontología de reptiles marinos al permitir visualizar estructuras internas de los fósiles sin necesidad de destruir la roca que los rodea. Los escáneres médicos estándar generan imágenes con resolución de 0.5 milímetros, suficiente para estudiar la anatomía craneal de mosasaurios y plesiosaurios. En 2010, investigadores de la Universidad de Utrecht utilizaron CT para reconstruir el cerebro de un mosasaurio Prognathodon y descubrieron que poseía bulbos olfatorios grandes (para detectar olores en el agua), lóbulos ópticos bien desarrollados (visión aguda) y un cerebelo proporcionalmente similar al de los tiburones actuales, lo que sugiere capacidades de natación coordinada y ágil.',
