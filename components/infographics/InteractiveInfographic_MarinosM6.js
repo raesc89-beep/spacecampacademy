@@ -145,7 +145,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Cocodrilos: Los Otros Reptiles Marinos',
     color: '#5B7B9A',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_thalattosuchia-intro.webp',
-    image: '/assets/reptiles_marinos/infographic_m6/hero_thalattosuchia-intro.jpg',
+    image: '/assets/reptiles_marinos/infographic_m6/hero_thalattosuchia-intro.webp',
     content: [
       'Cuando pensamos en reptiles marinos prehistóricos, los plesiosaurios e ictiosaurios suelen acaparar la atención. Sin embargo, existió un grupo de cocodrilianos que abandonó la vida terrestre y se adaptó por completo al océano abierto: los talatosuquios (Thalattosuchia). Este superorden apareció durante el Jurásico Temprano, hace aproximadamente 200 millones de años, y prosperó durante más de 100 millones de años en los mares del Mesozoico. Su nombre proviene del griego "thalatto" (mar) y "souchos" (cocodrilo), y describe con precisión a estos cocodrilianos que intercambiaron las orillas de los ríos por las corrientes oceánicas profundas.',
       'Los talatosuquios se dividieron en dos grandes clados con estrategias de vida distintas. Los teleosáuridos mantuvieron un estilo de vida semi-acuático costero, conservando patas funcionales y armadura ósea, similar a los cocodrilos actuales pero con hocicos más alargados. Los metriorrínquidos, en cambio, tomaron un camino evolutivo radical: desarrollaron aletas en lugar de patas, una aleta caudal en la cola y perdieron completamente su armadura dérmica de osteodermos. Esta transformación representa una de las adaptaciones más completas al medio marino entre todos los arcosaurios.',
@@ -185,7 +185,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Dakosaurus: El Cocodrilo T-Rex',
     color: '#6E8FA8',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_dakosaurus-apex.webp',
-    image: '/assets/reptiles_marinos/infographic_m6/hero_dakosaurus-apex.jpg',
+    image: '/assets/reptiles_marinos/infographic_m6/hero_dakosaurus-apex.webp',
     content: [
       'Dakosaurus fue el depredador supremo entre los cocodrilos marinos del Jurásico Superior. Con una longitud estimada de 4 a 5 metros, este metriorrínquido se distinguía de todos sus parientes por poseer un cráneo masivo, corto y alto, con dientes grandes, comprimidos lateralmente y con bordes serrados, similares a los de los dinosaurios terópodos carnívoros. Esta combinación de rasgos le valió el apodo informal de "Godzilla" cuando el paleontólogo argentino Diego Pol y su equipo describieron la especie sudamericana D. andiniensis en 2005.',
       'El género fue descrito originalmente por Friedrich August von Quenstedt en 1856 a partir de dientes aislados encontrados en el Jurásico Superior de Alemania. El nombre Dakosaurus proviene del griego "dakos" (mordedor) y "sauros" (lagarto), una referencia directa a sus poderosos dientes. La especie tipo, D. maximus, vivió en los mares europeos entre el Kimmeridgiense y el Tithoniense (hace 157 a 145 millones de años), mientras que D. andiniensis habitó en el Pacífico sudamericano durante el mismo período, indicando una distribución global.',
@@ -224,7 +224,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m6/banner_adaptaciones-oceano.webp',
     title: 'Adaptaciones al Océano',
     color: '#7C93A8',
-    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_adaptaciones-oceano.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m6/btn_adaptaciones-oceano.webp',
     image: '/assets/reptiles_marinos/infographic_m6/hero_adaptaciones-oceano.webp',
     content: [
       'La conquista del océano por parte de los talatosuquios requirió una serie de adaptaciones fisiológicas y anatómicas que transformaron un plan corporal terrestre en una máquina de supervivencia marina. La más crítica fue el desarrollo de glándulas de sal especializadas. Los cocodrilos marinos, al igual que las tortugas marinas e iguanas marinas actuales, enfrentaban el problema constante de la acumulación de sal por la ingestión de agua marina. En los metriorrínquidos, las glándulas de sal estaban ubicadas en depresiones óseas especializadas en la región frontal del cráneo, denominadas fosas nasales preorbitales, y excretaban soluciones salinas concentradas para mantener el equilibrio osmótico.',
@@ -265,7 +265,7 @@ const INFOGRAPHIC_NODES = [
     title: 'La Herencia Moderna',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m6/btn_herencia-moderna.webp',
-    image: '/assets/reptiles_marinos/infographic_m6/hero_herencia-moderna.jpg',
+    image: '/assets/reptiles_marinos/infographic_m6/hero_herencia-moderna.webp',
     content: [
       'Aunque los talatosuquios se extinguieron durante el Cretácico Inferior (hace unos 130 millones de años), su legado ecológico pervive en un reptil moderno que demuestra que los cocodrilos nunca abandonaron del todo el mar: Crocodylus porosus, el cocodrilo de agua salada o cocodrilo marino. Con una distribución que abarca desde la India oriental hasta el norte de Australia, pasando por el Sudeste Asiático y las islas del Pacífico occidental, C. porosus es el reptil vivo más grande del planeta, con machos que alcanzan rutinariamente los 5 metros y registros excepcionales que superan los 6 metros de longitud.',
       'Crocodylus porosus posee glándulas de sal funcionales en la lengua que le permiten excretar el exceso de sodio y vivir indefinidamente en agua marina. Estudios de telemetría satelital realizados por Campbell et al. (2010) demostraron que estos animales realizan travesías oceánicas de hasta 590 kilómetros, aprovechando las corrientes marinas superficiales para conservar energía. Un individuo marcado con transmisor satelital recorrió 411 kilómetros en 25 días a través del mar abierto entre Australia y Papúa Nueva Guinea, manteniéndose en la corriente ecuatorial del Pacífico.',

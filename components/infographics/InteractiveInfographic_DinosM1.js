@@ -207,7 +207,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Eoraptor: El Primer Dinosaurio',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m1/btn_eoraptor-primer-dinosaurio.webp',
-    image: '/assets/dinosaurios/infographic_m1/hero_eoraptor-primer-dinosaurio.jpg',
+    image: '/assets/dinosaurios/infographic_m1/hero_eoraptor-primer-dinosaurio.webp',
     content: [
       'En 1991, el estudiante de paleontología Ricardo Martínez descubrió un pequeño esqueleto casi completo en el Valle de la Luna, en la provincia de San Juan, Argentina. El fósil fue descrito formalmente en 1993 por Paul Sereno, de la Universidad de Chicago, junto con colaboradores argentinos, y recibió el nombre de Eoraptor lunensis: "ladrón del amanecer del Valle de la Luna". Con una antigüedad estimada de 231 millones de años, Eoraptor fue durante décadas considerado uno de los dinosaurios más antiguos conocidos y una ventana directa al origen del grupo.',
       'Eoraptor medía aproximadamente un metro de largo desde la punta del hocico hasta el final de la cola, y pesaba entre 5 y 10 kilogramos, similar a un zorro pequeño. Era bípedo, con patas traseras largas y fuertes adaptadas para la carrera, y brazos cortos con manos de cinco dedos, de los cuales los tres centrales tenían garras curvas útiles para sujetar presas. Su cráneo era ligero, con dientes heterodónticos: los dientes delanteros eran curvos y puntiagudos como los de un carnívoro, mientras que los posteriores tenían forma de hoja, similares a los de un herbívoro.',
@@ -226,8 +226,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m1/banner_herrerasaurus-cazador.webp',
     title: 'Herrerasaurus: El Cazador',
     color: '#A67B3D',
-    btnImage: '/assets/dinosaurios/infographic_m1/btn_herrerasaurus-cazador.jpg',
-    image: '/assets/dinosaurios/infographic_m1/hero_herrerasaurus-cazador.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m1/btn_herrerasaurus-cazador.webp',
+    image: '/assets/dinosaurios/infographic_m1/hero_herrerasaurus-cazador.webp',
     content: [
       'En 1958, el arriero y campesino Victorino Herrera encontró huesos fosilizados en las rocas rojizas de la Formación Ischigualasto, en la provincia de San Juan, Argentina. El paleontólogo Osvaldo Reig describió formalmente estos fósiles en 1963, nombrando al animal Herrerasaurus ischigualastensis en honor a su descubridor. Con una antigüedad de aproximadamente 231 millones de años, Herrerasaurus es uno de los dinosaurios carnívoros más antiguos y uno de los depredadores más grandes de su ecosistema, aunque su posición exacta en el árbol evolutivo de los dinosaurios ha sido debatida durante décadas.',
       'Herrerasaurus medía entre 3 y 6 metros de largo dependiendo de la estimación, con un peso aproximado de 210 a 350 kilogramos. Era un depredador bípedo con un cráneo robusto de unos 56 centímetros de longitud, equipado con dientes curvos y serrados diseñados para desgarrar carne. Su mandíbula inferior poseía una articulación intramandibular flexible que le permitía ajustar el agarre sobre presas que se debatían, un rasgo convergente con algunos lagartos monitores actuales pero desarrollado de forma independiente.',
@@ -246,8 +246,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m1/banner_rivales-triasico.webp',
     title: 'Rivales del Triásico',
     color: '#7D6B99',
-    btnImage: '/assets/dinosaurios/infographic_m1/btn_rivales-triasico.jpg',
-    image: '/assets/dinosaurios/infographic_m1/hero_rivales-triasico.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m1/btn_rivales-triasico.webp',
+    image: '/assets/dinosaurios/infographic_m1/hero_rivales-triasico.webp',
     content: [
       'Durante el Triásico tardío, los dinosaurios no eran los animales dominantes sino una minoría dentro de ecosistemas controlados por otros grupos de reptiles. Los rauisuquios (Rauisuchia) eran los superpredadores del Triásico: reptiles cuadrúpedos con posturas erguidas que podían alcanzar 7 metros de longitud. Saurosuchus galilei, descubierto en la Formación Ischigualasto de Argentina, medía entre 6 y 7 metros de largo y pesaba unos 400 kilogramos. Su cráneo de 60 centímetros estaba equipado con dientes lateralmente comprimidos y serrados, optimizados para cortar carne.',
       'Los aetosaurios (Aetosauria) representaban otro grupo exitoso. Eran reptiles herbívoros blindados con una armadura de placas óseas llamadas osteodermos que cubrían su espalda, flancos y vientre. Aetosauroides scagliai, encontrado en Argentina y Brasil, medía unos 2 metros de largo. Desarmosaurus, otro aetosaurio, tenía espinas laterales prominentes como defensa contra depredadores. Estos animales ocupaban el nicho ecológico que luego heredarían los dinosaurios blindados como Ankylosaurus en el Cretácico, más de 100 millones de años después.',
@@ -266,8 +266,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m1/banner_triunfo-dinosaurios.webp',
     title: 'El Triunfo de los Dinosaurios',
     color: '#3E7C8B',
-    btnImage: '/assets/dinosaurios/infographic_m1/btn_triunfo-dinosaurios.jpg',
-    image: '/assets/dinosaurios/infographic_m1/hero_triunfo-dinosaurios.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m1/btn_triunfo-dinosaurios.webp',
+    image: '/assets/dinosaurios/infographic_m1/hero_triunfo-dinosaurios.webp',
     content: [
       'Hace 201.3 millones de años, al final del período Triásico, una nueva extinción masiva sacudió el planeta. Este evento, conocido como la extinción del Triásico-Jurásico, eliminó aproximadamente al 76% de todas las especies, incluyendo a la mayoría de los competidores de los dinosaurios. Los rauisuquios, los aetosaurios, los fitosaurios y la mayor parte de los grandes arcosaurios no dinosaurianos desaparecieron. Los dinosaurios, que habían sido actores secundarios durante 30 millones de años, heredaron un mundo vacío y comenzaron su período de dominio que duraría 135 millones de años.',
       'La causa principal de la extinción del Triásico-Jurásico fue la actividad volcánica de la Provincia Magmática del Atlántico Central (CAMP), la mayor provincia volcánica del Fanerozoico. Las erupciones de CAMP cubrieron más de 11 millones de kilómetros cuadrados con lava basáltica, produciendo un volumen estimado de 2-3 millones de kilómetros cúbicos de magma. Los basaltos de CAMP se encuentran hoy en cuatro continentes: Norteamérica oriental, Europa occidental, África noroccidental y el norte de Sudamérica, reflejando las tierras que rodeaban la fractura incipiente del Atlántico.',

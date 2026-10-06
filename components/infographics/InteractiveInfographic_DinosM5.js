@@ -144,7 +144,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m5/banner_amos-cielo-mesozoico.webp',
     title: 'Los Amos del Cielo Mesozoico',
     color: '#5D8A68',
-    btnImage: '/assets/dinosaurios/infographic_m5/btn_amos-cielo-mesozoico.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m5/btn_amos-cielo-mesozoico.webp',
     image: '/assets/dinosaurios/infographic_m5/hero_amos-cielo-mesozoico.jpg',
     content: [
       'Los pterosaurios fueron los primeros vertebrados en desarrollar vuelo activo motorizado, un logro que alcanzaron al menos 70 millones de años antes de que las aves levantaran el vuelo. Aparecieron durante el Triásico Tardío, hace aproximadamente 228 millones de años, y prosperaron hasta el final del Cretácico hace 66 millones de años, abarcando un reinado aéreo de más de 160 millones de años. Pertenecen al clado Archosauria, el mismo grupo que incluye a los dinosaurios y los cocodrilos, pero no son dinosaurios: constituyen su propio orden, Pterosauria, descrito formalmente en 1834 por el naturalista Johann Jakob Kaup.',

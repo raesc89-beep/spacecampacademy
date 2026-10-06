@@ -266,7 +266,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Colapso y Renovación',
     color: '#4A6F8C',
     btnImage: '/assets/reptiles_marinos/infographic_m7/btn_colapso-renovacion.webp',
-    image: '/assets/reptiles_marinos/infographic_m7/hero_colapso-renovacion.jpg',
+    image: '/assets/reptiles_marinos/infographic_m7/hero_colapso-renovacion.webp',
     content: [
       'La extinción del Cretácico-Paleógeno (K-Pg), provocada por el impacto del asteroide Chicxulub hace 66.043 ± 0.011 millones de años, devastó las cadenas alimentarias marinas con una severidad sin precedentes en los últimos 250 millones de años. El asteroide, de aproximadamente 12 kilómetros de diámetro, impactó en lo que hoy es la península de Yucatán, México, generando un cráter de 180 kilómetros de diámetro. El impacto liberó una energía equivalente a 10 mil millones de bombas nucleares de Hiroshima, vaporizando roca y lanzando miles de millones de toneladas de polvo y aerosoles de ácido sulfúrico a la atmósfera.',
       'El colapso de la cadena alimentaria marina comenzó desde su base. La nube de polvo y aerosoles bloqueó entre el 80% y el 100% de la luz solar durante meses, imposibilitando la fotosíntesis. Los cocolitóforos, que habían dominado el fitoplancton durante 80 millones de años, perdieron más del 90% de sus especies. Las diatomeas y los dinoflagelados sufrieron extinciones del 75% y 60% respectivamente. Sin productores primarios, toda la cadena trófica colapsó de abajo hacia arriba: los consumidores primarios murieron por falta de alimento, seguidos por los depredadores de cada nivel sucesivo. Este proceso de extinción en cascada tomó entre meses y pocos años.',

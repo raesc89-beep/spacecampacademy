@@ -157,7 +157,7 @@ const INFOGRAPHIC_NODES = [
     title: 'El Tesoro Paleontológico de Sudamérica',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m10/btn_tesoro-paleontologico.webp',
-    image: '/assets/dinosaurios/infographic_m10/hero_tesoro-paleontologico.jpg',
+    image: '/assets/dinosaurios/infographic_m10/hero_tesoro-paleontologico.webp',
     content: [
       'Argentina es uno de los países con mayor riqueza de fósiles de dinosaurios en el mundo. Su territorio contiene rocas sedimentarias del período Triásico (252-201 millones de años), Jurásico (201-145 millones de años) y Cretácico (145-66 millones de años), lo que permite estudiar la historia completa de los dinosaurios desde sus orígenes hasta su extinción. Más de 80 especies de dinosaurios han sido descritas a partir de fósiles encontrados en territorio argentino, una cifra que sitúa al país entre los tres más productivos del mundo junto con Estados Unidos y China.',
       'La razón geológica de esta riqueza radica en el supercontinente Gondwana. Durante la era Mesozoica, Sudamérica, África, la Antártida, Australia e India formaban una masa de tierra continua. Gondwana comenzó a fragmentarse hace unos 180 millones de años, y la separación entre Sudamérica y África se completó hace aproximadamente 130 millones de años. Este aislamiento geográfico produjo una evolución única de los dinosaurios sudamericanos, diferente de la que ocurría en Laurasia (los actuales continentes del norte).',
