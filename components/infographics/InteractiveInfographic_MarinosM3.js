@@ -269,8 +269,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/marinos/infographic_m3/banner_extincion-legado.webp',
     title: 'Extinción y Legado',
     color: '#4A6F8C',
-    btnImage: '/assets/reptiles_marinos/infographic_m3/btn_extincion-legado.jpg',
-    image: '/assets/reptiles_marinos/infographic_m3/hero_extincion-legado.jpg',
+    btnImage: '/assets/reptiles_marinos/infographic_m3/btn_extincion-legado.webp',
+    image: '/assets/reptiles_marinos/infographic_m3/hero_extincion-legado.webp',
     content: [
       'Los plesiosaurios se extinguieron hace 66 millones de años durante el evento de extinción masiva del Cretácico-Paleógeno (K-Pg), causado por el impacto de un asteroide de aproximadamente 10 kilómetros de diámetro en lo que hoy es la Península de Yucatán, México. El cráter de Chicxulub, de 180 kilómetros de diámetro, ha sido confirmado mediante estudios geológicos y perforaciones del fondo marino. El impacto liberó una energía equivalente a 10 mil millones de bombas nucleares, generando tsunamis de más de 300 metros de altura, incendios globales y una capa de polvo que bloqueó la luz solar durante meses.',
       'Sin embargo, la extinción de los plesiosaurios no fue un evento repentino. Los registros fósiles analizados por Benson y Druckenmiller en 2014 muestran que la diversidad de los elasmosáuridos había comenzado a declinar durante los últimos 10 millones de años del Cretácico. Mientras que en el Cretácico Medio había al menos 15 géneros de elasmosáuridos distribuidos globalmente, para el Maastrichtiense (la última etapa del Cretácico, entre 72 y 66 millones de años) solo quedaban entre 5 y 7 géneros. Esta reducción progresiva sugiere que factores ecológicos previos al impacto ya estaban presionando a estas poblaciones.',
@@ -919,4 +919,4 @@ export default function InteractiveInfographic_MarinosM3() {
       <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </div>
   );
-}
+}
