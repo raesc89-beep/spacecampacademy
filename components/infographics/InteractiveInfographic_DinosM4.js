@@ -165,7 +165,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Ankylosaurus: La Fortaleza Viviente',
     color: '#C17829',
     btnImage: '/assets/dinosaurios/infographic_m4/btn_ankylosaurus-fortaleza.webp',
-    image: '/assets/dinosaurios/infographic_m4/hero_ankylosaurus-fortaleza.jpg',
+    image: '/assets/dinosaurios/infographic_m4/hero_ankylosaurus-fortaleza.webp',
     content: [
       'El Ankylosaurus magniventris fue el tanque definitivo del Cretácico tardío. Descubierto por Barnum Brown en la Formación Hell Creek de Montana en 1908, este dinosaurio medía entre 6 y 8 metros de largo, alcanzaba 1.7 metros de alto y pesaba entre 4,800 y 8,000 kilogramos según las estimaciones más recientes. Su cuerpo entero, desde la parte superior de la cabeza hasta la punta de la cola, estaba cubierto por hileras de osteodermos: placas óseas de diversos tamaños incrustadas directamente en la piel que formaban un mosaico protector continuo. Incluso sus párpados tenían placas óseas, proporcionando protección ocular durante los ataques.',
       'La característica más distintiva del Ankylosaurus era su maza caudal: una estructura formada por las últimas vértebras de la cola fusionadas en un mango rígido que sostenía dos grandes osteodermos laterales soldados entre sí. Victoria Arbour y Philip Currie, de la Universidad de Alberta, publicaron en 2016 un estudio detallado de la biomecánica de esta arma. La maza medía aproximadamente 60 centímetros de ancho y pesaba alrededor de 15 kilogramos. Los músculos caudofemorales que movían la cola podían generar una fuerza de impacto estimada en 362 kilogramos-fuerza, suficiente para fracturar huesos de un depredador tan robusto como un tiranosaurio.',

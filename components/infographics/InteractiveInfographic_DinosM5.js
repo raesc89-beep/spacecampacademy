@@ -145,7 +145,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Los Amos del Cielo Mesozoico',
     color: '#5D8A68',
     btnImage: '/assets/dinosaurios/infographic_m5/btn_amos-cielo-mesozoico.webp',
-    image: '/assets/dinosaurios/infographic_m5/hero_amos-cielo-mesozoico.jpg',
+    image: '/assets/dinosaurios/infographic_m5/hero_amos-cielo-mesozoico.webp',
     content: [
       'Los pterosaurios fueron los primeros vertebrados en desarrollar vuelo activo motorizado, un logro que alcanzaron al menos 70 millones de años antes de que las aves levantaran el vuelo. Aparecieron durante el Triásico Tardío, hace aproximadamente 228 millones de años, y prosperaron hasta el final del Cretácico hace 66 millones de años, abarcando un reinado aéreo de más de 160 millones de años. Pertenecen al clado Archosauria, el mismo grupo que incluye a los dinosaurios y los cocodrilos, pero no son dinosaurios: constituyen su propio orden, Pterosauria, descrito formalmente en 1834 por el naturalista Johann Jakob Kaup.',
       'A pesar de la confusión popular, los pterosaurios no comparten linaje directo con las aves. Las aves descienden de dinosaurios terópodos del grupo Maniraptora, mientras que los pterosaurios representan una rama del todo independiente del árbol evolutivo de los arcosaurios. Esta separación se produjo durante el Triásico Medio, hace unos 245 millones de años. Los pterosaurios desarrollaron sus propias soluciones anatómicas para el vuelo: una membrana de piel sostenida por un cuarto dedo hiperextendido, en contraste con las plumas y la estructura del ala de las aves, que dependen de los dedos segundo y tercero fusionados.',
@@ -164,8 +164,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m5/banner_pteranodon-planeador.webp',
     title: 'Pteranodon: El Planeador',
     color: '#C17829',
-    btnImage: '/assets/dinosaurios/infographic_m5/btn_pteranodon-planeador.jpg',
-    image: '/assets/dinosaurios/infographic_m5/hero_pteranodon-planeador.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m5/btn_pteranodon-planeador.webp',
+    image: '/assets/dinosaurios/infographic_m5/hero_pteranodon-planeador.webp',
     content: [
       'Pteranodon longiceps es uno de los pterosaurios más conocidos y mejor estudiados. Vivió durante el Cretácico Tardío, hace entre 86 y 84.5 millones de años, en lo que hoy es el centro de América del Norte. Con una envergadura promedio de 5.6 metros en machos y hasta 7.25 metros en los ejemplares más grandes, Pteranodon fue uno de los mayores animales voladores de su era. Su nombre significa "ala sin dientes", en referencia a la ausencia total de dentición, un rasgo que lo diferencia de muchos pterosaurios anteriores que poseían mandíbulas repletas de dientes.',
       'Los fósiles de Pteranodon fueron descubiertos por primera vez en 1870 por Othniel Charles Marsh en las formaciones de creta de Niobrara, Kansas, durante las famosas "Guerras de los Huesos" entre Marsh y Edward Drinker Cope. Hasta la fecha se han catalogado más de 1,100 especímenes, convirtiéndolo en el pterosaurio con el registro fósil más completo que existe. Las rocas donde se encuentran estos fósiles corresponden al Western Interior Seaway, un mar interior que dividía América del Norte en dos durante el Cretácico, lo que indica que Pteranodon era un animal primariamente marino.',
@@ -184,8 +184,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/dinos/infographic_m5/banner_quetzalcoatlus-gigante.webp',
     title: 'Quetzalcoatlus: El Gigante Volador',
     color: '#6B8E96',
-    btnImage: '/assets/dinosaurios/infographic_m5/btn_quetzalcoatlus-gigante.jpg',
-    image: '/assets/dinosaurios/infographic_m5/hero_quetzalcoatlus-gigante.jpg',
+    btnImage: '/assets/dinosaurios/infographic_m5/btn_quetzalcoatlus-gigante.webp',
+    image: '/assets/dinosaurios/infographic_m5/hero_quetzalcoatlus-gigante.webp',
     content: [
       'Quetzalcoatlus northropi ostenta el título del animal volador más grande que ha existido sobre la Tierra. Descubierto en 1971 por Douglas Lawson, entonces estudiante de geología en la Universidad de Texas, en el Parque Nacional Big Bend, Texas, sus restos fueron publicados en la revista Science en 1975. Su envergadura se estima entre 10 y 11 metros, comparable a la de una avioneta Cessna 172 Skyhawk. De pie sobre sus cuatro extremidades, alcanzaba una altura de 4.5 a 5 metros, similar a la de una jirafa adulta. Su nombre honra al dios mesoamericano Quetzalcóatl, la serpiente emplumada.',
       'La masa corporal de Quetzalcoatlus ha sido objeto de intenso debate científico. Las primeras estimaciones de Lawson (1975) sugerían entre 80 y 100 kilogramos, mientras que estudios posteriores de Witton y Habib (2010) recalcularon el peso entre 200 y 260 kilogramos, basándose en modelos volumétricos tridimensionales. Incluso con estas masas revisadas, Quetzalcoatlus era notablemente ligero para su tamaño gracias a huesos neumáticos con paredes de menos de 2 milímetros y un cráneo de más de 2 metros de largo que pesaba apenas unos pocos kilogramos gracias a amplias fenestras craneales.',

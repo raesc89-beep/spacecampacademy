@@ -260,7 +260,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Depredadores Modernos',
     color: '#3E7C8B',
     btnImage: '/assets/dinosaurios/infographic_m3/btn_depredadores-modernos.webp',
-    image: '/assets/dinosaurios/infographic_m3/hero_depredadores-modernos.jpg',
+    image: '/assets/dinosaurios/infographic_m3/hero_depredadores-modernos.webp',
     content: [
       'Las aves son dinosaurios terópodos. Esta afirmación no es una metáfora ni una simplificación; es una clasificación taxonómica aceptada universalmente por la comunidad paleontológica desde la década de 1990. El vínculo fue propuesto por primera vez por Thomas Henry Huxley en 1868, pero no fue ampliamente aceptado hasta que John Ostrom revivió la hipótesis en 1969 tras su estudio del Deinonychus. Desde entonces, más de 50 especies de dinosaurios emplumados han sido descubiertas en formaciones geológicas de China, confirmando una transición gradual entre los terópodos no avianos y las aves. El Archaeopteryx lithographica, descubierto en 1861 en Baviera, Alemania, sigue siendo el punto de referencia: poseía dientes, garras en las alas y una cola ósea larga como un dinosaurio, pero también plumas asimétricas aptas para el vuelo.',
       'La evolución convergente ha producido similitudes notables entre los terópodos extintos y los depredadores mamíferos modernos. El T. rex ocupaba un nicho ecológico comparable al del león africano actual: depredador ápice de gran tamaño que caza presas grandes y también consume carroña cuando está disponible. Los dromeosáuridos pequeños como el Velociraptor eran funcionalmente análogos a los lobos o los perros salvajes africanos: depredadores ágiles de tamaño medio con alta inteligencia relativa. Los ornitomímidos ("imitadores de aves"), con sus cuerpos esbeltos y patas largas, convergieron con los avestruces actuales tanto en forma corporal como en velocidad estimada de hasta 70 km/h.',
@@ -799,7 +799,7 @@ export default function InteractiveInfographic_DinosM3() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/dinosaurios/dinos_m3_bg.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/dinosaurios/dinos_m3_bg.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
