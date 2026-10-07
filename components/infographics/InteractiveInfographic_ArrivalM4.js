@@ -142,8 +142,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/arrival/infographic_m4/banner_lenguaje-animal.webp',
     title: 'Lenguaje Animal',
     color: '#8B9DAF',
-    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_lenguaje-animal.jpg',
-    image: '/assets/ciencia_arrival/infographic_m4/hero_lenguaje-animal.jpg',
+    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_lenguaje-animal.webp',
+    image: '/assets/ciencia_arrival/infographic_m4/hero_lenguaje-animal.webp',
     content: [
       'Los animales no hablan como los humanos, pero poseen sistemas de comunicación sofisticados que los científicos han estudiado durante décadas. El etólogo austriaco Karl von Frisch dedicó más de 40 años a descifrar la danza de las abejas y recibió el Premio Nobel de Fisiología o Medicina en 1973 por este trabajo. Von Frisch demostró que las abejas Apis mellifera realizan una "danza del meneo" (waggle dance) dentro de la colmena para comunicar la dirección, distancia y calidad de una fuente de néctar. El ángulo de la danza respecto a la vertical indica la dirección relativa al sol, y la duración del meneo señala la distancia: aproximadamente un segundo de meneo equivale a un kilómetro de vuelo.',
       'Las ballenas jorobadas (Megaptera novaeangliae) producen secuencias vocales complejas conocidas como "cantos" que pueden durar entre 10 y 20 minutos y repetirse durante horas. El biólogo Roger Payne documentó estos cantos por primera vez en 1967 y publicó un álbum de grabaciones en 1970 que vendió más de 100,000 copias. Los cantos son exclusivos de los machos durante la temporada de apareamiento y cambian progresivamente cada año, con todas las ballenas de una misma población adoptando las modificaciones de manera sincronizada, como si siguieran una tendencia cultural compartida.',
@@ -162,8 +162,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/arrival/infographic_m4/banner_grandes-simios.webp',
     title: 'Grandes Simios y el Lenguaje',
     color: '#7A8C9E',
-    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_grandes-simios.jpg',
-    image: '/assets/ciencia_arrival/infographic_m4/hero_grandes-simios.jpg',
+    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_grandes-simios.webp',
+    image: '/assets/ciencia_arrival/infographic_m4/hero_grandes-simios.webp',
     content: [
       'En 1966, los psicólogos Allen y Beatrix Gardner iniciaron un proyecto en la Universidad de Nevada que transformaría nuestra comprensión de la comunicación animal. Adoptaron a una chimpancé hembra de aproximadamente 10 meses llamada Washoe y le enseñaron el Lenguaje de Señas Americano (ASL). El proyecto partía de una observación simple pero profunda: los intentos previos de enseñar lenguaje oral a chimpancés habían fracasado porque su anatomía vocal no permite producir sonidos del habla humana, pero sus manos poseen la destreza motora necesaria para articular señas. Washoe aprendió su primera seña ("más") a los 14 meses de entrenamiento.',
       'Washoe llegó a dominar aproximadamente 350 señas de ASL y las combinaba en frases cortas como "dame dulce" o "abre puerta prisa". El hallazgo más notable ocurrió cuando Washoe, sin instrucción previa, combinó las señas de "agua" y "pájaro" para describir un cisne que vio en un lago — creando una combinación nueva que ningún humano le había enseñado. Cuando adoptó un chimpancé joven llamado Loulis en 1979, Washoe le enseñó señas de ASL sin intervención humana, lo cual sugería transmisión cultural de un sistema simbólico. Loulis aprendió más de 50 señas directamente de Washoe y otros chimpancés del grupo.',
@@ -185,8 +185,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/arrival/infographic_m4/banner_delfines-cetaceos.webp',
     title: 'Delfines y Cetáceos',
     color: '#6A7B8D',
-    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_delfines-cetaceos.jpg',
-    image: '/assets/ciencia_arrival/infographic_m4/hero_delfines-cetaceos.jpg',
+    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_delfines-cetaceos.webp',
+    image: '/assets/ciencia_arrival/infographic_m4/hero_delfines-cetaceos.webp',
     content: [
       'Los delfines nariz de botella (Tursiops truncatus) poseen cerebros que, en proporción a su tamaño corporal, son los segundos más grandes del reino animal después del ser humano. Su neocórtex — la capa exterior del cerebro responsable del pensamiento complejo — tiene más pliegues y circunvoluciones que el cerebro humano, lo que indica una enorme superficie de procesamiento neuronal. El neurocientífico Lori Marino, de la Universidad Emory, publicó en 2002 un análisis comparativo que demostró que el cociente de encefalización (EQ) de los delfines nariz de botella es de 4.14, superado únicamente por el EQ humano de 7.44, y muy por encima de los grandes simios, que promedian un EQ de 2.48.',
       'Cada delfín nariz de botella desarrolla un "silbido firma" (signature whistle) único durante sus primeros meses de vida, que funciona como un nombre propio. La bióloga marina Stephanie King, de la Universidad de St. Andrews, demostró en 2013 en la revista Proceedings of the National Academy of Sciences que los delfines reconocen y responden selectivamente a los silbidos firma de sus compañeros, incluso después de separaciones de más de 20 años. Los delfines también pueden imitar los silbidos firma de otros individuos, lo cual equivale a "llamar por su nombre" a un compañero — un comportamiento que, fuera de los humanos, solo se ha documentado en delfines.',
@@ -205,8 +205,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/arrival/infographic_m4/banner_ia-lenguaje.webp',
     title: 'Inteligencia Artificial y Lenguaje',
     color: '#4E4E4E',
-    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_ia-lenguaje.jpg',
-    image: '/assets/ciencia_arrival/infographic_m4/hero_ia-lenguaje.jpg',
+    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_ia-lenguaje.webp',
+    image: '/assets/ciencia_arrival/infographic_m4/hero_ia-lenguaje.webp',
     content: [
       'El procesamiento del lenguaje natural (PLN o NLP por sus siglas en inglés, Natural Language Processing) es la rama de la inteligencia artificial dedicada a la interacción entre computadoras y lenguaje humano. Sus orígenes se remontan a 1950, cuando el matemático británico Alan Turing publicó su artículo "Computing Machinery and Intelligence" en la revista Mind, proponiendo lo que hoy se conoce como el Test de Turing: si una máquina puede mantener una conversación escrita de manera que un evaluador humano no pueda distinguirla de una persona real, entonces esa máquina puede considerarse "inteligente". Turing predijo que para el año 2000, las máquinas engañarían al 30% de los evaluadores en conversaciones de cinco minutos.',
       'El primer chatbot de la historia fue ELIZA, creado por el científico informático Joseph Weizenbaum en el MIT entre 1964 y 1966. ELIZA simulaba ser un terapeuta rogeriano reformulando las frases del usuario como preguntas. Si escribías "Me siento triste", ELIZA respondía "¿Por qué te sientes triste?". Weizenbaum quedó perturbado al descubrir que muchos usuarios desarrollaban conexiones emocionales con el programa, incluyendo su propia secretaria, que le pidió privacidad durante sus "sesiones". Esto lo llevó a advertir sobre los peligros de atribuir comprensión a máquinas que simplemente manipulan símbolos sin entender su significado.',
@@ -225,7 +225,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/arrival/infographic_m4/banner_seti-mensajes.webp',
     title: 'SETI y Mensajes Interestelares',
     color: '#3D3D3D',
-    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_seti-mensajes.jpg',
+    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_seti-mensajes.webp',
     image: '/assets/ciencia_arrival/infographic_m4/hero_seti-mensajes.jpg',
     content: [
       'El 16 de noviembre de 1974, el radiotelescopio de Arecibo en Puerto Rico transmitió un mensaje de 1,679 bits hacia el cúmulo globular M13, ubicado a 25,000 años luz de la Tierra. El mensaje fue diseñado por el astrónomo Frank Drake y el astrofísico Carl Sagan. El número 1,679 fue elegido por ser el producto de dos números primos (23 × 73), lo cual proporcionaría a un receptor inteligente la pista para organizar los bits en una cuadrícula de 23 columnas y 73 filas. Cuando se decodifica visualmente, el mensaje muestra los números del 1 al 10 en binario, los números atómicos del hidrógeno, carbono, nitrógeno, oxígeno y fósforo, la estructura del ADN, una figura humana, el sistema solar y una representación del propio telescopio de Arecibo.',

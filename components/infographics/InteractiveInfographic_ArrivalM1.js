@@ -799,7 +799,7 @@ export default function InteractiveInfographic_ArrivalM1() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,10,15,0.9) 0%, rgba(15,15,25,0.85) 40%, rgba(10,10,15,0.92) 100%), url(/assets/arrival/arrival_m1.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,10,15,0.9) 0%, rgba(15,15,25,0.85) 40%, rgba(10,10,15,0.92) 100%), url(/assets/arrival/arrival_m1.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
