@@ -92,8 +92,8 @@ const INFOGRAPHIC_NODES = [
     id: 'viaje-atmosferico',
     title: 'La Entrada Atmosférica',
     color: '#FF7043',
-    btnImage: '/assets/asteroides/infographic_m2/btn_viaje-atmosferico.jpg',
-    image: '/assets/asteroides/infographic_m2/hero_viaje-atmosferico.jpg',
+    btnImage: '/assets/asteroides/infographic_m2/btn_viaje-atmosferico.webp',
+    image: '/assets/asteroides/infographic_m2/hero_viaje-atmosferico.webp',
     content: [
       'Imagina correr en una piscina con el agua hasta la cintura; sientes una resistencia enorme que te frena. Ahora imagina entrar a la atmósfera de la Tierra a una velocidad de más de 60,000 kilómetros por hora. A esa velocidad extrema, el aire frente a la roca no alcanza a hacerse a un lado. Se comprime tan rápido que alcanza temperaturas superiores a los 2,000 grados Celsius.',
       'Existe la creencia popular de que el fuego de un meteoro se produce por el roce de la piedra contra el aire. Sin embargo, la causa real es la compresión adiabática. La roca actúa como el pistón de una bomba de bicicleta gigante, apretando el aire atmosférico con tanta violencia que lo convierte en un plasma incandescente extremadamente caliente.',
@@ -113,8 +113,8 @@ const INFOGRAPHIC_NODES = [
     id: 'diferencia-terminos',
     title: 'Meteoroide, Meteoro y Meteorito',
     color: '#29B6F6',
-    btnImage: '/assets/asteroides/infographic_m2/btn_diferencia-terminos.jpg',
-    image: '/assets/asteroides/infographic_m2/hero_diferencia-terminos.jpg',
+    btnImage: '/assets/asteroides/infographic_m2/btn_diferencia-terminos.webp',
+    image: '/assets/asteroides/infographic_m2/hero_diferencia-terminos.webp',
     content: [
       'En el lenguaje cotidiano es común usar las palabras meteoro, meteorito y asteroide como si fueran sinónimos. Sin embargo, en la astronomía profesional cada término describe una etapa completamente diferente en la vida de una roca espacial. Conocer estas distinciones nos ayuda a entender mejor el ciclo de viaje de los cuerpos menores.',
       'Un Meteoroide es el objeto físico mientras aún se encuentra viajando por el vacío del espacio interplanetario. Su tamaño va desde una diminuta mota de polvo hasta pequeñas rocas de menos de un metro de diámetro. Si supera ese tamaño, deja de ser un meteoroide para clasificarse formalmente como un asteroide.',
@@ -134,8 +134,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tipos-meteoritos',
     title: 'Condritas y Acondritas',
     color: '#EC407A',
-    btnImage: '/assets/asteroides/infographic_m2/btn_tipos-meteoritos.jpg',
-    image: '/assets/asteroides/infographic_m2/hero_tipos-meteoritos.jpg',
+    btnImage: '/assets/asteroides/infographic_m2/btn_tipos-meteoritos.webp',
+    image: '/assets/asteroides/infographic_m2/hero_tipos-meteoritos.webp',
     content: [
       'Al estudiar los meteoritos recuperados en la Tierra, los científicos los dividen en tres grandes familias según su origen geológico: meteoritos rocosos, meteoritos metálicos y meteoritos mixtos. Dentro de los rocosos se encuentra la distinción más importante entre Condritas y Acondritas.',
       'Las Condritas son los meteoritos más primitivos e interesantes de todos, representando el 86% de los hallazgos terrestres. Se caracterizan por contener diminutas esferas de mineral petrificado llamadas cóndrulos. Estas esférulas se formaron por la fusión de polvo en la nebulosa solar primitiva antes de que existieran los planetas.',
@@ -155,8 +155,8 @@ const INFOGRAPHIC_NODES = [
     id: 'formacion-crateres',
     title: 'Física de los Cráteres',
     color: '#AB47BC',
-    btnImage: '/assets/asteroides/infographic_m2/btn_formacion-crateres.jpg',
-    image: '/assets/asteroides/infographic_m2/hero_formacion-crateres.jpg',
+    btnImage: '/assets/asteroides/infographic_m2/btn_formacion-crateres.webp',
+    image: '/assets/asteroides/infographic_m2/hero_formacion-crateres.webp',
     video: { src: 'https://drive.usercontent.google.com/download?id=1siPSV9fxR1hwNvbBOnaJ5HXYsRSQlp6O&export=download&authuser=0', title: 'Caída de un Meteorito: Registro Visual' },
     content: [
       'Cuando un gran asteroide choca contra la superficie de un planeta rocoso a velocidad hiperveloz, no se limita a empujar la tierra a los lados como una pala. El impacto libera de golpe una cantidad astronómica de energía cinética que desencadena una explosión descomunal, formando una depresión circular llamada cráter de impacto.',
@@ -177,8 +177,8 @@ const INFOGRAPHIC_NODES = [
     id: 'impacto-chicxulub',
     title: 'El Cataclisma de Chicxulub',
     color: '#FFD54F',
-    btnImage: '/assets/asteroides/infographic_m2/btn_impacto-chicxulub.jpg',
-    image: '/assets/asteroides/infographic_m2/hero_impacto-chicxulub.jpg',
+    btnImage: '/assets/asteroides/infographic_m2/btn_impacto-chicxulub.webp',
+    image: '/assets/asteroides/infographic_m2/hero_impacto-chicxulub.webp',
     content: [
       'Hace 66 millones de años, al final del periodo Cretácico, un asteroide gigante de 10 kilómetros de diámetro viajaba a 70,000 kilómetros por hora directo hacia la Tierra. Impactó en la zona que hoy ocupa la península de Yucatán en México, desencadenando la quinta extinción masiva más devastadora en la historia de nuestro planeta.',
       'El impacto liberó una energía equivalente a más de mil millones de bombas atómicas juntas. Excavó en cuestión de segundos un cráter de 180 kilómetros de ancho y 20 kilómetros de profundidad conocido como la estructura de Chicxulub. La explosión vaporizó al instante miles de kilómetros cúbicos de rocas ricas en azufre y carbonatos.',
@@ -198,8 +198,8 @@ const INFOGRAPHIC_NODES = [
     id: 'lluvias-estrellas',
     title: 'Lluvias de Meteoros',
     color: '#26A69A',
-    btnImage: '/assets/asteroides/infographic_m2/btn_lluvias-estrellas.jpg',
-    image: '/assets/asteroides/infographic_m2/hero_lluvias-estrellas.jpg',
+    btnImage: '/assets/asteroides/infographic_m2/btn_lluvias-estrellas.webp',
+    image: '/assets/asteroides/infographic_m2/hero_lluvias-estrellas.webp',
     videos: [
       { src: 'https://drive.usercontent.google.com/download?id=1qHO6b2gW9iNX9Zmw9K-L6LGqdvoAs6Xs&export=download&authuser=0', title: 'Lluvia de Meteoros Gemínidas' },
       { src: 'https://drive.usercontent.google.com/download?id=15Wj866MeoUyWiR-55j83WkN2nPgrm9rd&export=download&authuser=0', title: 'Lluvia de Meteoros Perseidas' }
@@ -223,8 +223,8 @@ const INFOGRAPHIC_NODES = [
     id: 'meteoritos-famosos',
     title: 'Caídas Históricas',
     color: '#FF7043',
-    btnImage: '/assets/asteroides/infographic_m2/btn_meteoritos-famosos.jpg',
-    image: '/assets/asteroides/infographic_m2/hero_meteoritos-famosos.jpg',
+    btnImage: '/assets/asteroides/infographic_m2/btn_meteoritos-famosos.webp',
+    image: '/assets/asteroides/infographic_m2/hero_meteoritos-famosos.webp',
     content: [
       'A lo largo de la historia de la humanidad han ocurrido eventos extraordinarios donde rocas espaciales han sido presenciadas cayendo del cielo. Estos acontecimientos han cambiado la ciencia moderna y dejado anécdotas sorprendentes grabadas en los registros históricos.',
       'Un hito fundamental ocurrió en febrero de 2013 sobre la ciudad de Cheliábinsk en Rusia. Un asteroide de 20 metros explotó a 30 kilómetros de altura liberando la energía de 30 bombas atómicas. La onda sónica rompió miles de ventanas e hirió a más de 1,500 personas, siendo grabado por cientos de cámaras de autos.',

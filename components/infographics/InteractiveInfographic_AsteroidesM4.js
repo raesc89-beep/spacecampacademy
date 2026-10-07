@@ -95,8 +95,8 @@ const INFOGRAPHIC_NODES = [
     id: 'era-exploracion',
     title: 'La Era de las Misiones',
     color: '#FFD54F',
-    btnImage: '/assets/asteroides/infographic_m4/btn_era-exploracion.jpg',
-    image: '/assets/asteroides/infographic_m4/hero_era-exploracion.jpg',
+    btnImage: '/assets/asteroides/infographic_m4/btn_era-exploracion.webp',
+    image: '/assets/asteroides/infographic_m4/hero_era-exploracion.webp',
     content: [
       'Durante siglos, los astrónomos observaron los asteroides como simples puntos de luz que se movían lentamente contra el fondo de estrellas fijas. No fue sino hasta finales del siglo XX cuando la humanidad adquirió la capacidad de enviar naves espaciales robóticas para ver la verdadera cara de estos fósiles planetarios.',
       'Las primeras exploraciones consistieron en sobrevuelos veloces. En 1991, la sonda Galileo de la NASA pasó cerca del asteroide Gaspra, obteniendo las primeras fotografías en alta resolución de la superficie llena de cráteres de un asteroide. Más tarde visitó a Ida y descubrió su diminuta luna Dactyl.',
