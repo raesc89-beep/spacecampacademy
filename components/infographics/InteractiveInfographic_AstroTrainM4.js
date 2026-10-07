@@ -149,7 +149,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m4/banner_tercera-ley-newton.webp',
     title: 'La Tercera Ley de Newton',
     color: '#C44B4B',
-    btnImage: '/assets/astrotrain/infographic_m4/btn_tercera-ley-newton.jpg',
+    btnImage: '/assets/astrotrain/infographic_m4/btn_tercera-ley-newton.webp',
     image: '/assets/astrotrain/infographic_m4/hero_tercera-ley-newton.jpg',
     content: [
       'La base de toda la cohetería se encuentra en un principio formulado por Isaac Newton en 1687, dentro de su obra Philosophiæ Naturalis Principia Mathematica. La Tercera Ley de Newton establece que a cada acción le corresponde una reacción de igual magnitud pero en sentido opuesto. Cuando un cohete expulsa gases calientes hacia abajo a velocidades superiores a 3,000 metros por segundo, esos gases ejercen una fuerza sobre el cohete que lo empuja hacia arriba. No se trata de que los gases "empujen contra el suelo" — el cohete funciona en el vacío del espacio precisamente porque la fuerza es una interacción directa entre el motor y el gas expulsado.',

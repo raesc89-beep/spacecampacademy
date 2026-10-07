@@ -835,7 +835,7 @@ export default function InteractiveInfographic_AstroTrainM1() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(25,10,15,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/astrotrain/astrotrain_m1.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(25,10,15,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/astrotrain/astrotrain_m1.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
