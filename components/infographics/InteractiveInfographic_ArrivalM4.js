@@ -226,7 +226,7 @@ const INFOGRAPHIC_NODES = [
     title: 'SETI y Mensajes Interestelares',
     color: '#3D3D3D',
     btnImage: '/assets/ciencia_arrival/infographic_m4/btn_seti-mensajes.webp',
-    image: '/assets/ciencia_arrival/infographic_m4/hero_seti-mensajes.jpg',
+    image: '/assets/ciencia_arrival/infographic_m4/hero_seti-mensajes.webp',
     content: [
       'El 16 de noviembre de 1974, el radiotelescopio de Arecibo en Puerto Rico transmitió un mensaje de 1,679 bits hacia el cúmulo globular M13, ubicado a 25,000 años luz de la Tierra. El mensaje fue diseñado por el astrónomo Frank Drake y el astrofísico Carl Sagan. El número 1,679 fue elegido por ser el producto de dos números primos (23 × 73), lo cual proporcionaría a un receptor inteligente la pista para organizar los bits en una cuadrícula de 23 columnas y 73 filas. Cuando se decodifica visualmente, el mensaje muestra los números del 1 al 10 en binario, los números atómicos del hidrógeno, carbono, nitrógeno, oxígeno y fósforo, la estructura del ADN, una figura humana, el sistema solar y una representación del propio telescopio de Arecibo.',
       'Las placas Pioneer fueron los primeros mensajes físicos enviados más allá del sistema solar. Diseñadas por Carl Sagan y Frank Drake y dibujadas por la artista Linda Salzman Sagan (esposa de Carl), estas placas de aluminio anodizado con oro fueron instaladas en las sondas Pioneer 10 (lanzada el 2 de marzo de 1972) y Pioneer 11 (lanzada el 5 de abril de 1973). Cada placa mide 23 × 15 centímetros y muestra figuras de un hombre y una mujer desnudos, la posición del Sol respecto a 14 púlsares, una representación del sistema solar y un diagrama de la transición del átomo de hidrógeno, la unidad de longitud y tiempo usada en toda la placa.',
@@ -248,8 +248,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/arrival/infographic_m4/banner_xenolinguistica.webp',
     title: 'Xenolingüística',
     color: '#2C2C2C',
-    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_xenolinguistica.jpg',
-    image: '/assets/ciencia_arrival/infographic_m4/hero_xenolinguistica.jpg',
+    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_xenolinguistica.webp',
+    image: '/assets/ciencia_arrival/infographic_m4/hero_xenolinguistica.webp',
     content: [
       'La xenolingüística es la disciplina teórica que estudia los problemas de comunicación con inteligencias no humanas, particularmente extraterrestres. Aunque todavía no existe como campo aplicado (porque no hemos contactado con ninguna inteligencia extraterrestre), sus fundamentos teóricos combinan lingüística, semiótica, teoría de la información, biología y filosofía de la mente. El término fue popularizado en la ciencia ficción, pero académicos como el lingüista Gonzalo Rubio de la Universidad Penn State y la astrobióloga Sheri Wells-Jensen de la Universidad Bowling Green han publicado trabajos serios sobre los desafíos lingüísticos del primer contacto.',
       'Uno de los problemas centrales de la xenolingüística es el de los "universales cognitivos": ¿existen conceptos que cualquier inteligencia necesariamente debe poseer? Los matemáticos y filósofos han propuesto que las matemáticas podrían ser un lenguaje universal, ya que las relaciones numéricas (como que 2+3=5 o que pi es la razón entre la circunferencia y el diámetro de un círculo) son verdades independientes de la biología o la cultura. En 1960, el matemático y filósofo holandés Hans Freudenthal publicó "Lincos: Design of a Language for Cosmic Intercourse", un lenguaje artificial diseñado para comunicarse con extraterrestres, basado enteramente en lógica matemática y construido paso a paso desde conceptos aritméticos básicos.',
@@ -271,8 +271,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/arrival/infographic_m4/banner_pelicula-arrival.webp',
     title: 'La Película Arrival',
     color: '#1B1B1B',
-    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_pelicula-arrival.jpg',
-    image: '/assets/ciencia_arrival/infographic_m4/hero_pelicula-arrival.jpg',
+    btnImage: '/assets/ciencia_arrival/infographic_m4/btn_pelicula-arrival.webp',
+    image: '/assets/ciencia_arrival/infographic_m4/hero_pelicula-arrival.webp',
     content: [
       'Arrival (2016), dirigida por el cineasta canadiense Denis Villeneuve y basada en el relato "Story of Your Life" (1998) de Ted Chiang, es una de las pocas películas de ciencia ficción que coloca la lingüística — no la acción ni la tecnología — en el centro de la narrativa. La protagonista, la Dra. Louise Banks (interpretada por Amy Adams), es una lingüista de campo contratada por el ejército de Estados Unidos cuando doce naves extraterrestres aparecen en distintos puntos del planeta. La película fue producida por FilmNation Entertainment y 21 Laps Entertainment con un presupuesto de 47 millones de dólares, y recaudó más de 203 millones de dólares en taquilla mundial.',
       'Los heptápodos — llamados así porque poseen siete extremidades — se comunican mediante dos sistemas distintos que Louise denomina Heptapod A (vocal) y Heptapod B (escrito). El Heptapod A consiste en sonidos guturales complejos que los humanos apenas pueden distinguir. El Heptapod B consiste en logogramas circulares que los heptápodos producen expulsando una sustancia similar a tinta desde sus extremidades. El punto central de la película es que estos dos sistemas no son versiones oral y escrita del mismo lenguaje (como lo son el español hablado y escrito), sino dos lenguajes fundamentalmente diferentes. El Heptapod B es semasiográfico: transmite significado sin codificar sonidos.',
@@ -811,7 +811,7 @@ export default function InteractiveInfographic_ArrivalM4() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,10,15,0.9) 0%, rgba(15,15,20,0.85) 40%, rgba(10,10,15,0.92) 100%), url(/assets/arrival/arrival_m4.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,10,15,0.9) 0%, rgba(15,15,20,0.85) 40%, rgba(10,10,15,0.92) 100%), url(/assets/arrival/arrival_m4.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',

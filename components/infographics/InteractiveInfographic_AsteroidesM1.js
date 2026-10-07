@@ -96,8 +96,8 @@ const INFOGRAPHIC_NODES = [
     id: 'que-es-asteroide',
     title: '¿Qué es un Asteroide?',
     color: '#FF6B6B',
-    btnImage: '/assets/asteroides/infographic_m1/btn_que-es-asteroide.jpg',
-    image: '/assets/asteroides/infographic_m1/hero_que-es-asteroide.jpg',
+    btnImage: '/assets/asteroides/infographic_m1/btn_que-es-asteroide.webp',
+    image: '/assets/asteroides/infographic_m1/hero_que-es-asteroide.webp',
     video: { src: 'https://drive.usercontent.google.com/download?id=1CxnhsejhTecAqbY0ltW5juW8-w3l61Ur&export=download&authuser=0', title: 'Introducción: Asteroides y Cometas' },
     content: [
       'Imagina que construyes una casa gigante de bloques de piedra. Al terminar tu trabajo, quedan decenas de pequeños fragmentos de rocas esparcidos por el suelo. Eso es exactamente lo que ocurrió cuando se formó nuestro Sistema Solar hace 4,600 millones de años. Los planetas grandes se armaron con la mayor parte del material. Los asteroides son aquellos ladrillos sobrantes que jamás lograron unirse para formar un planeta completo.',
@@ -118,8 +118,8 @@ const INFOGRAPHIC_NODES = [
     id: 'origen-cinturon',
     title: 'Nacimiento del Cinturón',
     color: '#4D96FF',
-    btnImage: '/assets/asteroides/infographic_m1/btn_origen-cinturon.jpg',
-    image: '/assets/asteroides/infographic_m1/hero_origen-cinturon.jpg',
+    btnImage: '/assets/asteroides/infographic_m1/btn_origen-cinturon.webp',
+    image: '/assets/asteroides/infographic_m1/hero_origen-cinturon.webp',
     content: [
       'En los primeros millones de años del Sistema Solar, una inmensa nube en espiral giraba alrededor del joven Sol. En ese disco protoplanetario, microscópicos granos de polvo comenzaron a chocar y pegarse entre sí por atracción electrostática. Con el paso del tiempo, estos grumos crecieron hasta convertirse en rocas de varios kilómetros llamadas planetesimales, los embriones de los futuros planetas.',
       'En las regiones cercanas a la Tierra y Marte, millones de estos planetesimales colisionaron pacíficamente a bajas velocidades. Se fusionaron progresivamente formando mundos gigantescos. Sin embargo, en la zona ubicada entre Marte y Júpiter el proceso de ensamblaje se interrumpió de manera drástica. Los fragmentos que giraban en esa franja jamás pudieron consolidar un planeta único.',
