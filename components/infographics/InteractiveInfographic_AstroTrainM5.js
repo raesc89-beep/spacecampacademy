@@ -153,8 +153,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m5/banner_efectos-microgravedad.webp',
     title: 'Efectos de la Microgravedad',
     color: '#C44B4B',
-    btnImage: '/assets/astrotrain/infographic_m5/btn_efectos-microgravedad.jpg',
-    image: '/assets/astrotrain/infographic_m5/hero_efectos-microgravedad.jpg',
+    btnImage: '/assets/astrotrain/infographic_m5/btn_efectos-microgravedad.webp',
+    image: '/assets/astrotrain/infographic_m5/hero_efectos-microgravedad.webp',
     content: [
       'Cuando un astronauta llega a la Estación Espacial Internacional, su cuerpo comienza a experimentar cambios fisiológicos significativos en las primeras 24 a 72 horas. El fenómeno más inmediato es el desplazamiento de fluidos corporales hacia la cabeza, conocido como "fluid shift". En la Tierra, la gravedad mantiene aproximadamente 2 litros de sangre y líquidos en las piernas. Sin gravedad, esos líquidos se redistribuyen hacia el torso y la cabeza, provocando lo que los astronautas llaman "cara de luna llena": el rostro se hincha visiblemente, las venas del cuello se dilatan y la presión dentro del cráneo se incrementa entre un 10% y un 20% respecto a los valores normales en la Tierra.',
       'La pérdida de masa ósea es uno de los efectos más preocupantes de la estancia prolongada en el espacio. Los estudios realizados por la NASA entre 2001 y 2015 demuestran que los astronautas pierden entre un 1% y un 2% de densidad ósea por cada mes en microgravedad, particularmente en los huesos que soportan peso como el fémur, la pelvis y las vértebras lumbares. Este ritmo de pérdida es aproximadamente 10 veces más rápido que el de la osteoporosis terrestre en personas mayores. El mecanismo se relaciona con la falta de carga mecánica: sin gravedad, los osteoclastos (células que destruyen hueso) se activan más que los osteoblastos (células que construyen hueso), rompiendo el equilibrio normal.',
@@ -173,7 +173,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m5/banner_radiacion-cosmica.webp',
     title: 'Radiación Cósmica',
     color: '#A8B5C0',
-    btnImage: '/assets/astrotrain/infographic_m5/btn_radiacion-cosmica.jpg',
+    btnImage: '/assets/astrotrain/infographic_m5/btn_radiacion-cosmica.webp',
     image: '/assets/astrotrain/infographic_m5/hero_radiacion-cosmica.jpg',
     content: [
       'El espacio exterior es un entorno de radiación constante. Los astronautas están expuestos a dos fuentes principales de radiación ionizante: los rayos cósmicos galácticos (GCR) y los eventos de partículas solares (SPE). Los GCR son núcleos atómicos de alta energía —principalmente protones, pero también iones de helio, carbono, hierro y otros elementos pesados— que viajan a velocidades cercanas a la de la luz. Se originan fuera del sistema solar, probablemente en supernovas y otros eventos cósmicos violentos. Su energía puede superar los 10^20 electronvoltios, lo que les permite atravesar varios centímetros de aluminio, el material principal del casco de la ISS.',
