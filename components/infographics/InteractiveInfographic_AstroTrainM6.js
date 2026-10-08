@@ -201,7 +201,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Estaciones Espaciales Comerciales',
     color: '#96A3AE',
     btnImage: '/assets/astrotrain/infographic_m6/btn_estaciones-comerciales.webp',
-    image: '/assets/astrotrain/infographic_m6/hero_estaciones-comerciales.jpg',
+    image: '/assets/astrotrain/infographic_m6/hero_estaciones-comerciales.webp',
     content: [
       'La Estación Espacial Internacional (ISS) ha operado de manera continua desde el 2 de noviembre de 2000, cuando la tripulación Expedition 1 (William Shepherd, Yuri Gidzenko y Sergei Krikalev) abordó la estación. Con un costo total estimado en más de 150,000 millones de dólares y contribuciones de 15 naciones, la ISS es la estructura más costosa construida por la humanidad. Sin embargo, sus módulos principales fueron diseñados para una vida útil de 15 años, y aunque la NASA ha extendido las operaciones hasta 2030, la estación no puede funcionar indefinidamente. La fatiga de materiales, las microfisuras y el impacto acumulado de micrometeoritos hacen necesario un sucesor.',
       'Axiom Space, una empresa fundada en 2016 por el exgerente de la ISS Michael Suffredini, lidera la transición. Su plan consiste en acoplar módulos comerciales a la ISS a partir de 2026-2027, empezando con el módulo habitable Axiom Hab 1. Gradualmente, Axiom añadirá un módulo de investigación, un observatorio panorámico y una instalación de manufactura espacial. Cuando la ISS sea retirada de servicio (desorbitada controladamente hacia el Punto Nemo del Pacífico Sur), los módulos de Axiom se separarán y formarán una estación independiente que continuará operando como la primera estación espacial comercial completa.',
@@ -220,8 +220,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m6/banner_turismo-espacial.webp',
     title: 'Turismo Espacial',
     color: '#B43A3A',
-    btnImage: '/assets/astrotrain/infographic_m6/btn_turismo-espacial.jpg',
-    image: '/assets/astrotrain/infographic_m6/hero_turismo-espacial.jpg',
+    btnImage: '/assets/astrotrain/infographic_m6/btn_turismo-espacial.webp',
+    image: '/assets/astrotrain/infographic_m6/hero_turismo-espacial.webp',
     content: [
       'El turismo espacial dejó de ser ciencia ficción el 20 de julio de 2021, cuando Jeff Bezos voló a bordo del New Shepard de Blue Origin junto con su hermano Mark, la aviadora pionera Wally Funk (82 años, la persona de mayor edad en el espacio) y Oliver Daemen (18 años, la persona más joven). El vuelo suborbital duró 10 minutos y 10 segundos, alcanzando una altitud de 107 km, justo por encima de la línea de Kármán que marca el límite del espacio a 100 km. Nueve días antes, el 11 de julio, Richard Branson había volado en el SpaceShipTwo de Virgin Galactic, alcanzando 86 km de altitud, por encima del límite de 80 km reconocido por EE.UU. pero por debajo de la línea de Kármán internacional.',
       'La misión Inspiration4 de SpaceX, lanzada el 15 de septiembre de 2021, llevó el turismo espacial a otro nivel. Cuatro civiles —el empresario Jared Isaacman, la asistente médica Hayley Arceneaux (sobreviviente de cáncer óseo infantil con una prótesis de titanio en la pierna), el ingeniero aeronáutico Chris Sembroski y la geóloga y piloto Sian Proctor— orbitaron la Tierra durante tres días a una altitud de 585 km, más alto que la ISS (408 km) y el Telescopio Espacial Hubble (547 km). Fue la primera misión orbital compuesta exclusivamente por civiles sin ningún astronauta profesional a bordo.',
@@ -240,8 +240,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m6/banner_mineria-asteroides.webp',
     title: 'Minería de Asteroides',
     color: '#8491A0',
-    btnImage: '/assets/astrotrain/infographic_m6/btn_mineria-asteroides.jpg',
-    image: '/assets/astrotrain/infographic_m6/hero_mineria-asteroides.jpg',
+    btnImage: '/assets/astrotrain/infographic_m6/btn_mineria-asteroides.webp',
+    image: '/assets/astrotrain/infographic_m6/hero_mineria-asteroides.webp',
     content: [
       'Los asteroides son cuerpos rocosos y metálicos remanentes de la formación del Sistema Solar hace 4,600 millones de años. Muchos de ellos contienen concentraciones de metales del grupo del platino (platino, paladio, rodio, iridio, osmio y rutenio) que son extremadamente raros en la corteza terrestre pero se estiman abundantes en ciertos asteroides de tipo M (metálicos). El asteroide 16 Psyche, que orbita entre Marte y Júpiter, está compuesto principalmente de hierro y níquel, con un valor estimado de sus metales (si pudieran extraerse y transportarse a la Tierra) de 10,000 cuatrillones de dólares, una cifra que supera el PIB mundial acumulado de toda la historia humana.',
       'La misión OSIRIS-REx de la NASA demostró que la recolección de material asteroidal es técnicamente posible. Lanzada en septiembre de 2016, la sonda llegó al asteroide Bennu (un cuerpo de 490 metros de diámetro clasificado como "potencialmente peligroso" por su órbita cercana a la Tierra) en diciembre de 2018. El 20 de octubre de 2020, OSIRIS-REx ejecutó una maniobra de "Touch-and-Go" (TAG), tocando la superficie de Bennu durante 6 segundos y recolectando 121.6 gramos de material. La cápsula con las muestras regresó a la Tierra el 24 de septiembre de 2023, aterrizando en el desierto de Utah. Los análisis preliminares revelaron aminoácidos y minerales hidratados.',
@@ -260,8 +260,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m6/banner_colonias-espaciales.webp',
     title: 'Colonias Espaciales',
     color: '#E46A6A',
-    btnImage: '/assets/astrotrain/infographic_m6/btn_colonias-espaciales.jpg',
-    image: '/assets/astrotrain/infographic_m6/hero_colonias-espaciales.jpg',
+    btnImage: '/assets/astrotrain/infographic_m6/btn_colonias-espaciales.webp',
+    image: '/assets/astrotrain/infographic_m6/hero_colonias-espaciales.webp',
     content: [
       'El concepto de colonias espaciales fue desarrollado formalmente por el físico Gerard K. O\'Neill de la Universidad de Princeton en la década de 1970. En su libro "The High Frontier" (1977), O\'Neill propuso enormes estructuras cilíndricas rotatorias, conocidas como "cilindros de O\'Neill", que generarían gravedad artificial mediante fuerza centrífuga. El diseño más grande tendría 32 km de largo y 6.4 km de diámetro, con una superficie habitable interna de 650 km², suficiente para albergar a varios millones de personas. La rotación a una velocidad de 0.53 rpm (una vuelta cada 114 segundos) simularía una gravedad equivalente a la terrestre en la superficie interior del cilindro.',
       'El Torus de Stanford, diseñado durante un estudio de verano de la NASA en 1975 dirigido por O\'Neill, es una estructura con forma de anillo (donut) de 1.8 km de diámetro que giraría una vez por minuto para generar gravedad terrestre en su perímetro interior. Diseñado para 10,000 a 140,000 habitantes, el torus tendría un espejo central que reflejaría la luz solar hacia espejos secundarios que la distribuirían uniformemente por el interior del anillo, creando un ciclo de día y noche artificial. La agricultura se realizaría en módulos externos no rotatorios, y el blindaje contra radiación cósmica consistiría en escoria lunar procesada de varios metros de espesor.',
@@ -804,7 +804,7 @@ export default function InteractiveInfographic_AstroTrainM6() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/astrotrain/astrotrain_m6.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/astrotrain/astrotrain_m6.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
