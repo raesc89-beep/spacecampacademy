@@ -90,8 +90,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m1/banner_gravedad-newton.webp',
     title: 'La Gravedad de Newton',
     color: '#F4A261',
-    btnImage: '/assets/interstellar/infographic_m1/btn_gravedad-newton.jpg',
-    image: '/assets/interstellar/infographic_m1/hero_gravedad-newton.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_newton.webp',
+    image: '/assets/interstellar/infographic_m1/hero_newton.webp',
     content: [
       'En 1666, Isaac Newton se encontraba en su granja familiar mientras se refugiaba de la plaga de Londres. Al observar la caída de una manzana, formuló una hipótesis fundamental para la historia de la ciencia. Dedujo que la fuerza que atraía la fruta hacia el suelo era idéntica a la interacción que mantenía a la Luna en su órbita alrededor de la Tierra. Esta observación le permitió concluir que el movimiento de los cuerpos celestes y el de los objetos terrestres estaban regidos por el mismo principio físico, sentando las bases de la mecánica clásica.',
       'Newton denominó a esta interacción "gravedad" y postuló que todos los objetos del universo se atraen mutuamente en proporción a su masa. Según este modelo matemático, cada cuerpo celeste ejerce una fuerza sobre los demás objetos a su alrededor. Cuanto mayor es la masa del objeto, más intensa es su atracción gravitacional. Por este motivo, el Sol puede mantener a los planetas del sistema solar en sus órbitas elípticas. Esta descripción permitió entender la dinámica orbital mediante ecuaciones matemáticas sin depender de explicaciones sobrenaturales.',
@@ -110,8 +110,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m1/banner_einstein-1915.webp',
     title: 'Einstein Cambia Todo',
     color: '#4FC3F7',
-    btnImage: '/assets/interstellar/infographic_m1/btn_einstein-1915.jpg',
-    image: '/assets/interstellar/infographic_m1/hero_einstein-1915.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_einstein.webp',
+    image: '/assets/interstellar/infographic_m1/hero_einstein.webp',
     content: [
       'El 25 de noviembre de 1915, Albert Einstein presentó ante la Academia Prusiana de las Ciencias su Teoría de la Relatividad General. Este marco teórico transformó la concepción física del universo al descartar el modelo newtoniano de una fuerza de atracción instantánea. Einstein demostró que la gravitación no es una interacción a distancia a través del vacío, sino una manifestación de la geometría del universo. Su formulación matemática requirió una década de desarrollo analítico para establecer las ecuaciones que describen la dinámica del cosmos.',
       'Einstein postuló que el universo está constituido por un continuo tetradimensional denominado espacio-tiempo. Este modelo geométrico establece que la presencia de materia y energía deforma la estructura espacial circundante. Cualquier objeto con masa, como una estrella o un planeta, altera la métrica del espacio-tiempo en su vecindad. Esta curvatura determina las trayectorias que siguen los cuerpos celestes al desplazarse, sustituyendo la noción de atracción gravitacional por un desplazamiento inercial a través de una geometría espacial deformada.',
@@ -130,8 +130,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m1/banner_curvatura-espaciotiempo.webp',
     title: 'El Espacio se Curva',
     color: '#7C4DFF',
-    btnImage: '/assets/interstellar/infographic_m1/btn_curvatura-espaciotiempo.jpg',
-    image: '/assets/interstellar/infographic_m1/hero_curvatura-espaciotiempo.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_curvatura.webp',
+    image: '/assets/interstellar/infographic_m1/hero_curvatura.webp',
     content: [
       'Para comprender la mecánica de la relatividad general, es necesario conceptualizar el espacio y el tiempo como una entidad dinámica y unificada. A diferencia del modelo clásico que postula un escenario tridimensional rígido, el espacio-tiempo se comporta como un medio elástico que interactúa con la materia. Esta estructura dimensional responde a la presencia de energía deformando su métrica local. Las alteraciones en la geometría espacial dictan cómo se propagan la luz y los cuerpos físicos a lo largo del cosmos, estableciendo una relación bidireccional.',
       'Una analogía física útil consiste en visualizar una superficie elástica bidimensional sobre la cual se deposita un objeto de gran masa. La presencia de este cuerpo genera una depresión en la estructura del material, alterando la geometría de su entorno inmediato. En el contexto astrofísico, estrellas y planetas ejercen un efecto análogo sobre el continuo espacio-temporal. La concentración de masa curva el espacio a su alrededor, creando gradientes métricos que determinan las trayectorias de otros objetos que ingresan a su zona de influencia gravitacional.',
@@ -170,8 +170,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m1/banner_lentes-gravitacionales.webp',
     title: 'El Universo como Lupa',
     color: '#00BCD4',
-    btnImage: '/assets/interstellar/infographic_m1/btn_lentes-gravitacionales.jpg',
-    image: '/assets/interstellar/infographic_m1/hero_lentes-gravitacionales.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_lentes.webp',
+    image: '/assets/interstellar/infographic_m1/hero_lentes.webp',
     content: [
       'Las ecuaciones de la relatividad general determinaron que la concentración de masa provoca una deformación sustancial en el continuo espacio-temporal. Esta modificación de la geometría métrica no solo rige la cinemática de los planetas, sino que afecta a cualquier entidad física que atraviese la región curvada. A partir de este modelo matemático, Albert Einstein dedujo una consecuencia astrofísica sin precedentes empíricos: la trayectoria de propagación de la radiación electromagnética también se ve alterada por la presencia de campos gravitatorios intensos.',
       'El modelo teórico propuso que la magnitud de la curvatura generada por concentraciones masivas de materia afectaría el recorrido de los fotones. Einstein demostró analíticamente que la luz proveniente de galaxias distantes, al aproximarse a una fuente gravitacional intermedia, sufriría una deflexión medible en su trayectoria original. Esta predicción desafiaba los principios de la óptica clásica, estableciendo que el vacío cósmico deformado actúa sobre la propagación rectilínea de la luz, alterando la posición aparente de los cuerpos celestes de fondo.',
@@ -190,8 +190,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m1/banner_ondas-gravitacionales.webp',
     title: 'Olas en el Espacio',
     color: '#AB47BC',
-    btnImage: '/assets/interstellar/infographic_m1/btn_ondas-gravitacionales.jpg',
-    image: '/assets/interstellar/infographic_m1/hero_ondas-gravitacionales.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_ondas.webp',
+    image: '/assets/interstellar/infographic_m1/hero_ondas.webp',
     content: [
       'Para comprender la propagación de perturbaciones en el espacio-tiempo, podemos observar la dinámica de ondas mecánicas en medios fluidos. Al aplicar una fuerza repentina sobre la superficie de un estanque en reposo, se genera una transferencia de energía cinética que altera la estructura del medio líquido. Esta disipación energética se manifiesta como patrones ondulatorios concéntricos que viajan a través del volumen de agua. El modelo hidrodinámico proporciona una base analógica para interpretar el transporte de energía mecánica a grandes distancias mediante vibraciones.',
       'En 1916, utilizando las ecuaciones del tensor métrico, Albert Einstein formuló una hipótesis que expandió las implicaciones de su modelo gravitacional. Demostró analíticamente que las variaciones aceleradas en campos gravitatorios asimétricos debían propagarse por el vacío cósmico a la velocidad de la luz. Esta solución matemática indicó que el continuo espacio-temporal poseía propiedades dinámicas similares a un medio elástico, capaz de sustentar vibraciones transversales y transmitir energía orbital lejos de los sistemas astrofísicos que experimentaban aceleración.',
@@ -211,7 +211,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Einstein en tu Bolsillo',
     color: '#26A69A',
     btnImage: '/assets/interstellar/infographic_m1/btn_gps-relatividad.jpg',
-    image: '/assets/interstellar/infographic_m1/hero_gps-relatividad.jpg',
+    image: '/assets/interstellar/infographic_m1/hero_gps.webp',
     content: [
       'El análisis de los tensores métricos y la deformación geométrica del vacío cósmico podría parecer una disciplina teórica sin aplicaciones prácticas en la ingeniería convencional. Los fenómenos de curvatura espacial provocados por objetos supermasivos o las anomalías temporales cerca del horizonte de sucesos sugieren escenarios que escapan a la experiencia cotidiana. No obstante, las predicciones derivadas de la mecánica relativista resultan esenciales para el diseño y funcionamiento operativo de diversas infraestructuras tecnológicas críticas en la sociedad contemporánea actual.',
       'Lejos de constituir abstracciones matemáticas, las correcciones dictadas por la relatividad general y especial se aplican de forma sistemática en sistemas de navegación digital terrestre. Los circuitos de sincronización integrados en los dispositivos de comunicación móvil dependen directamente de estas ecuaciones para estabilizar las señales de temporización. La precisión del posicionamiento geográfico que utilizamos habitualmente para calcular rutas de desplazamiento requiere algoritmos que compensan continuamente los gradientes gravitatorios y la dilatación temporal cinemática.',

@@ -83,8 +83,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m3/banner_relojes-velocidad.webp',
     title: 'Relojes que se Atrasan',
     color: '#4FC3F7',
-    btnImage: '/assets/interstellar/infographic_m3/btn_relojes-velocidad.jpg',
-    image: '/assets/interstellar/infographic_m3/hero_relojes-velocidad.jpg',
+    btnImage: '/assets/interstellar/infographic_m3/btn_relojes.webp',
+    image: '/assets/interstellar/infographic_m3/hero_relojes.webp',
     content: [
       'Albert Einstein demostró con su Teoría de la Relatividad Especial que el tiempo no fluye de manera idéntica para todos los observadores del universo. La velocidad a la que viaja un objeto influye en cómo transcurre el tiempo para dicho objeto. Puedes imaginar que el espacio y el tiempo forman una estructura continua; a medida que te desplazas más rápido por el espacio, avanzas con mayor lentitud a través del tiempo. Esta relación matemática implica que, al viajar a velocidades cercanas a la de la luz, cada segundo que experimentas tiene una mayor duración temporal en comparación con el reloj de un observador estacionario. Este descubrimiento transformó nuestra comprensión astrofísica del cosmos.',
       'La relación entre velocidad y tiempo se describe mediante el Factor de Lorentz. Esta ecuación se calcula como uno dividido por la raíz cuadrada de uno menos la velocidad del vehículo al cuadrado sobre la velocidad de la luz al cuadrado. El resultado matemático indica que si logras acelerar una nave espacial hasta alcanzar el 90% de la velocidad límite, tu tiempo interno transcurrirá 2.3 veces más lento. Esto significa que experimentarás una fracción del tiempo que registra una persona que permanece en la Tierra. Este cálculo es la base para diseñar trayectorias interestelares hacia regiones distantes.',
@@ -103,8 +103,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m3/banner_gemelos-einstein.webp',
     title: 'La Paradoja de los Gemelos',
     color: '#AB47BC',
-    btnImage: '/assets/interstellar/infographic_m3/btn_gemelos-einstein.jpg',
-    image: '/assets/interstellar/infographic_m3/hero_gemelos-einstein.jpg',
+    btnImage: '/assets/interstellar/infographic_m3/btn_gemelos.webp',
+    image: '/assets/interstellar/infographic_m3/hero_gemelos.webp',
     content: [
       'Uno de los ejercicios teóricos más analizados en la física moderna se denomina la Paradoja de los Gemelos. Este escenario espacial, derivado de la relatividad especial, involucra a dos hermanos monocigóticos. Un sujeto aborda una nave que acelera hacia el espacio profundo alcanzando una fracción significativa de la velocidad de la luz, mientras que el individuo de control permanece en la Tierra. Este experimento mental permite examinar cómo el movimiento prolongado a altas velocidades impacta el envejecimiento celular diferencial entre dos humanos genéticamente idénticos.',
       'Si el viajero espacial se desplazara al 86% de la velocidad de la luz durante una década según la computadora de su nave, regresaría para enfrentar una diferencia temporal abismal. Al descender del cohete, descubriría que han transcurrido aproximadamente veinte años en la superficie del planeta. El gemelo que permaneció estático habría envejecido dos décadas completas, mientras que el piloto solo habría experimentado diez años biológicos de deterioro celular. Este resultado matemático demuestra que el tiempo carece de una referencia universal absoluta para todos.',
@@ -143,8 +143,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m3/banner_gps-real.webp',
     title: 'Tu Celular Necesita a Einstein',
     color: '#26A69A',
-    btnImage: '/assets/interstellar/infographic_m3/btn_gps-real.jpg',
-    image: '/assets/interstellar/infographic_m3/hero_gps-real.jpg',
+    btnImage: '/assets/interstellar/infographic_m3/btn_gps.webp',
+    image: '/assets/interstellar/infographic_m3/hero_gps.webp',
     content: [
       'A pesar de que las consecuencias extremas de la relatividad general de Einstein parecen exclusivas de sistemas astrofísicos distantes en el vacío, este marco matemático resulta vital para nuestra infraestructura de tecnología civil terrestre satelital hoy en día. La fluctuación del tiempo dicta los ritmos algorítmicos en redes de telemática globales y métodos de navegación automática espacial. Las ecuaciones relativistas representan una directriz práctica para garantizar la precisión de cada triangulación en el transporte internacional aéreo de manera ininterrumpida.',
       'El proceso informático de las interfaces de navegación depende funcionalmente de integrar correcciones relativistas complejas procedentes de estudios espaciales avanzados y comprobados teóricamente de forma estricta. Para que una terminal de geolocalización sitúe un automóvil civil sobre el sistema vial urbano, su procesador informático rastrea señales satelitales constantemente emitidas sin descanso operativo continuo y automático. Estas recepciones procesan variables físicas para ajustar alteraciones temporales orbitales, eludiendo fallos de cálculo durante tu transporte rutinario terrestre motorizado.',
@@ -203,8 +203,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m3/banner_futuro-crononauta.webp',
     title: 'Viajeros del Tiempo Reales',
     color: '#FF9800',
-    btnImage: '/assets/interstellar/infographic_m3/btn_futuro-crononauta.jpg',
-    image: '/assets/interstellar/infographic_m3/hero_futuro-crononauta.jpg',
+    btnImage: '/assets/interstellar/infographic_m3/btn_futuro.webp',
+    image: '/assets/interstellar/infographic_m3/hero_futuro.webp',
     content: [
       'La conclusión de todo lo que hemos explorado es sencilla y deslumbrante: el viaje en el tiempo hacia el futuro es posible. No es ciencia ficción ni especulación: es física verificada experimentalmente una y otra vez desde que Einstein publicó sus ecuaciones en 1905 y 1915.',
       'No lo harás metiéndote en un DeLorean ni en una cabina telefónica. El viaje temporal real está gobernado por las matemáticas de la relatividad: necesitas velocidad extrema o gravedad intensa. Cuanto más rápido te muevas o más cerca estés de un objeto masivo, más lento pasará el tiempo para ti comparado con quienes se quedaron atrás.',

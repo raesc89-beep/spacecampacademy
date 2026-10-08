@@ -178,8 +178,8 @@ const INFOGRAPHIC_NODES = [
     id: 'anillos-saturno',
     title: 'Los Anillos de Saturno: Origen, Estructura y Destino',
     color: '#A5D6A7',
-    btnImage: '/assets/course/viaje-planetas-gaseosos/btn_anillos-saturno.jpg',
-    image: '/assets/course/viaje-planetas-gaseosos/hero_anillos_saturno.jpg',
+    btnImage: '/assets/course/viaje-planetas-gaseosos/btn_saturno.webp',
+    image: '/assets/course/viaje-planetas-gaseosos/hero_saturno.webp',
     content: [
       'Los anillos de Saturno, visibles desde la Tierra con un telescopio básico de 50mm, son una de las estructuras más complejas del sistema solar: siete anillos principales compuestos mayoritariamente de partículas de hielo de agua (95%) con cantidades menores de polvo y roca, que van desde granos de arena hasta bloques del tamaño de una casa. Su extensión radial total, desde el anillo D interior hasta el anillo E exterior, es de 282,000 km —casi el 74% de la distancia Tierra-Luna— pero tienen un grosor de solo 10-100 metros en la mayoría de su extensión, haciendo que la relación diámetro/grosor sea comparable a una hoja de papel escala planetaria.',
       'La edad de los anillos de Saturno fue objeto de intenso debate durante décadas, pero los datos finales de la misión Cassini antes de su desintegración controlada en 2017 permitieron calcular que los anillos principales son geológicamente jóvenes: tienen entre 10 y 100 millones de años de antigüedad, formados probablemente por la desintegración de una luna helada o por la captura gravitacional de un cometa en la misma época en que los dinosaurios no aviares dominaban la Tierra. Esta edad joven fue sorprendente porque implica que Saturno existió durante la mayor parte de su historia (4,500 millones de años) sin sus icónicos anillos, y que cuando los primeros organismos multicelulares evolucionaban en la Tierra hace 600 millones de años, Saturno era un planeta sin anillos reconocible.',

@@ -207,7 +207,7 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "soyuz-t7-salyut-7",
-    bannerImage: '/assets/pioneros/infographic_m6/banner_soyuz-t7-salyut-7.webp',
+    bannerImage: '/assets/pioneros/infographic_m6/banner_soyuz_t7.webp',
     bannerCaption: "El 19 de agosto de 1982 la Soyuz T-7 despegó con Popov, Serebrov y Savitskaya rumbo a la estación espacial Salyut 7.",
     title: "Soyuz T-7: la segunda mujer en el espacio",
     color: '#5E7A8A',
