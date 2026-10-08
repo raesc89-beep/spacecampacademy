@@ -140,8 +140,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m6/banner_artemis-regreso-luna.webp',
     title: 'Artemis: Regreso a la Luna',
     color: '#C44B4B',
-    btnImage: '/assets/astrotrain/infographic_m6/btn_artemis-regreso-luna.jpg',
-    image: '/assets/astrotrain/infographic_m6/hero_artemis-regreso-luna.jpg',
+    btnImage: '/assets/astrotrain/infographic_m6/btn_artemis-regreso-luna.webp',
+    image: '/assets/astrotrain/infographic_m6/hero_artemis-regreso-luna.webp',
     content: [
       'El programa Artemis de la NASA, bautizado en honor a la diosa griega hermana gemela de Apolo, marca el regreso de la humanidad a la Luna después de más de medio siglo sin pisar su superficie. La última misión tripulada a la Luna fue Apollo 17, en diciembre de 1972, cuando los astronautas Eugene Cernan y Harrison Schmitt pasaron tres días explorando el valle de Taurus-Littrow. Desde entonces, la exploración lunar se limitó a sondas robóticas. Artemis no busca repetir lo que hizo Apollo, sino establecer una presencia permanente y sostenible en nuestro satélite natural, con tecnología del siglo XXI y tripulaciones diversas que representen a toda la humanidad.',
       'El cohete Space Launch System (SLS) es el vehículo de lanzamiento más potente construido por la NASA. Mide 98 metros de altura y genera 39.1 meganewtons de empuje al despegar, un 15% más que el Saturn V que llevó a los astronautas del programa Apollo a la Luna. La cápsula Orión, diseñada para viajes de larga duración en el espacio profundo, puede albergar hasta cuatro tripulantes y resistir velocidades de reentrada de 40,000 km/h al regresar de la Luna. Artemis I, lanzada el 16 de noviembre de 2022, fue una misión no tripulada que envió la cápsula Orión alrededor de la Luna durante 25 días, recorriendo 2.25 millones de kilómetros y validando los sistemas de la nave.',
@@ -160,8 +160,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m6/banner_marte-proximo-paso.webp',
     title: 'Marte: El Próximo Paso',
     color: '#D45A5A',
-    btnImage: '/assets/astrotrain/infographic_m6/btn_marte-proximo-paso.jpg',
-    image: '/assets/astrotrain/infographic_m6/hero_marte-proximo-paso.jpg',
+    btnImage: '/assets/astrotrain/infographic_m6/btn_marte-proximo-paso.webp',
+    image: '/assets/astrotrain/infographic_m6/hero_marte-proximo-paso.webp',
     content: [
       'Marte se encuentra a una distancia promedio de 225 millones de kilómetros de la Tierra, y un viaje tripulado tomaría entre 6 y 9 meses solo de ida, dependiendo de la alineación orbital de ambos planetas. Esta ventana de lanzamiento favorable ocurre aproximadamente cada 26 meses, cuando la Tierra y Marte se encuentran en posiciones relativas óptimas (una configuración llamada oposición). Los astronautas deberían permanecer en Marte alrededor de 500 días esperando la siguiente ventana de retorno, lo que hace que una misión completa a Marte dure aproximadamente 3 años. La NASA estudia también trayectorias de sobrevuelo rápido que reducirían el tiempo en tránsito pero aumentarían la velocidad necesaria.',
       'La comunicación con Marte presenta un desafío sin precedentes. Una señal de radio entre la Tierra y Marte tarda entre 4 y 24 minutos en llegar, dependiendo de las posiciones orbitales. Esto significa que una conversación tendría un retraso de ida y vuelta de hasta 48 minutos: no es posible guiar operaciones en tiempo real desde Houston. Los astronautas marcianos deberán actuar con autonomía total, tomando decisiones médicas, técnicas y de supervivencia sin consultar a control de misión. El experimento Mars-500, realizado en Moscú entre 2010 y 2011, encerró a seis voluntarios durante 520 días simulando un viaje completo a Marte, revelando los desafíos de monotonía, conflictos y deterioro emocional que enfrentarán los futuros tripulantes.',
@@ -180,8 +180,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m6/banner_starship-revolucion.webp',
     title: 'Starship y la Revolución',
     color: '#A8B5C0',
-    btnImage: '/assets/astrotrain/infographic_m6/btn_starship-revolucion.jpg',
-    image: '/assets/astrotrain/infographic_m6/hero_starship-revolucion.jpg',
+    btnImage: '/assets/astrotrain/infographic_m6/btn_starship-revolucion.webp',
+    image: '/assets/astrotrain/infographic_m6/hero_starship-revolucion.webp',
     content: [
       'Starship, diseñada por SpaceX, es la nave espacial más grande y potente en desarrollo. Con una altura total de 121 metros (incluyendo el cohete propulsor Super Heavy), supera al Saturn V (111 m) y al SLS (98 m). Super Heavy utiliza 33 motores Raptor que generan aproximadamente 74 meganewtons de empuje al despegar, casi el doble que el SLS. A diferencia de todos los cohetes anteriores, tanto la etapa superior (Starship) como el propulsor (Super Heavy) están diseñados para ser completamente reutilizables. El 13 de octubre de 2024, SpaceX logró capturar el propulsor Super Heavy con los brazos mecánicos "Mechazilla" de la torre de lanzamiento, demostrando por primera vez la recuperación sin patas de aterrizaje.',
       'Los motores Raptor son los primeros motores de ciclo completo de combustión escalonada de metano y oxígeno líquido (methalox) en volar al espacio. Operan a una presión de cámara de 300 bares, una de las más altas logradas en cualquier motor de cohete. La elección de metano como combustible no es casual: el metano puede fabricarse en Marte usando la reacción de Sabatier, combinando el CO₂ de la atmósfera marciana con hidrógeno. Esto significa que Starship podría repostarse en Marte para el viaje de regreso sin necesidad de transportar combustible desde la Tierra, una pieza clave de la arquitectura de colonización marciana propuesta por SpaceX.',
@@ -200,7 +200,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/astro_train/infographic_m6/banner_estaciones-comerciales.webp',
     title: 'Estaciones Espaciales Comerciales',
     color: '#96A3AE',
-    btnImage: '/assets/astrotrain/infographic_m6/btn_estaciones-comerciales.jpg',
+    btnImage: '/assets/astrotrain/infographic_m6/btn_estaciones-comerciales.webp',
     image: '/assets/astrotrain/infographic_m6/hero_estaciones-comerciales.jpg',
     content: [
       'La Estación Espacial Internacional (ISS) ha operado de manera continua desde el 2 de noviembre de 2000, cuando la tripulación Expedition 1 (William Shepherd, Yuri Gidzenko y Sergei Krikalev) abordó la estación. Con un costo total estimado en más de 150,000 millones de dólares y contribuciones de 15 naciones, la ISS es la estructura más costosa construida por la humanidad. Sin embargo, sus módulos principales fueron diseñados para una vida útil de 15 años, y aunque la NASA ha extendido las operaciones hasta 2030, la estación no puede funcionar indefinidamente. La fatiga de materiales, las microfisuras y el impacto acumulado de micrometeoritos hacen necesario un sucesor.',
