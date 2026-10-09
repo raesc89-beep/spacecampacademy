@@ -265,8 +265,8 @@ const INFOGRAPHIC_NODES = [
     id: 'encuentro-pierre',
     title: 'El Encuentro con Pierre',
     color: '#388E3C',
-    btnImage: '/assets/curie/infographic_m1/btn_encuentro-pierre.jpg',
-    image: '/assets/curie/infographic_m1/hero_encuentro-pierre.jpg',
+    btnImage: '/assets/curie/infographic_m1/btn_encuentro-pierre.webp',
+    image: '/assets/curie/infographic_m1/hero_encuentro-pierre.webp',
     content: [
       'Pierre Curie nació el 15 de mayo de 1859 en París, hijo de Eugène Curie, un médico con intereses científicos. Pierre y su hermano Jacques fueron educados en casa por su padre, quien consideraba que el sistema escolar francés sofocaba la creatividad. Pierre obtuvo su licenciatura en física a los 16 años y su maestría a los 18. Para 1894, cuando conoció a Marie, ya era jefe de laboratorio en la Escuela Municipal de Física y Química Industrial de París (ESPCI) y había publicado trabajos relevantes sobre la simetría de los cristales y las propiedades del magnetismo.',
       'El descubrimiento más importante de Pierre antes de conocer a Marie fue la piezoelectricidad, realizado junto con su hermano Jacques en 1880. Descubrieron que ciertos cristales, como el cuarzo y la turmalina, generan una carga eléctrica cuando se los comprime mecánicamente. También demostraron el efecto inverso: al aplicar un campo eléctrico, el cristal se deforma. Los hermanos Curie diseñaron un electrómetro piezoeléctrico de cuarzo que permitía medir cargas eléctricas con una precisión sin precedentes. Este instrumento sería la herramienta clave que Marie utilizaría después para medir la radiactividad.',

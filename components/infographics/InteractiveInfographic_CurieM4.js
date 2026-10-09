@@ -156,8 +156,8 @@ const INFOGRAPHIC_NODES = [
     id: 'barreras-historicas',
     title: 'Barreras Históricas',
     color: '#4CAF50',
-    btnImage: '/assets/curie/infographic_m4/btn_barreras-historicas.jpg',
-    image: '/assets/curie/infographic_m4/hero_barreras-historicas.jpg',
+    btnImage: '/assets/curie/infographic_m4/btn_barreras-historicas.webp',
+    image: '/assets/curie/infographic_m4/hero_barreras-historicas.webp',
     content: [
       'Durante la mayor parte de la historia occidental, las mujeres fueron excluidas de las universidades, las academias científicas y los laboratorios profesionales. En 1732, la física italiana Laura Bassi se convirtió en la segunda mujer en el mundo en obtener un doctorado universitario y la primera en conseguir un puesto como profesora de física en la Universidad de Bolonia, pero su caso fue una rarísima excepción que no se repetiría durante más de un siglo. Las universidades de Oxford y Cambridge no otorgaron títulos completos a mujeres hasta 1920 y 1948 respectivamente, y la École Polytechnique de París no admitió alumnas hasta 1972.',
       'La Real Sociedad de Londres, fundada en 1660 como una de las instituciones científicas más antiguas del mundo, no admitió mujeres hasta 1945, casi tres siglos después de su fundación. La Academia Francesa de Ciencias rechazó la candidatura de Marie Curie en 1911 por dos votos, a pesar de que ya había ganado dos Premios Nobel, eligiendo en su lugar al físico Édouard Branly. La Academia no admitiría a su primera mujer miembro, la física Yvonne Choquet-Bruhat, hasta 1979, sesenta y ocho años después del rechazo de Curie.',
@@ -177,8 +177,8 @@ const INFOGRAPHIC_NODES = [
     id: 'irene-joliot-curie',
     title: 'Irène Joliot-Curie',
     color: '#6A1B9A',
-    btnImage: '/assets/curie/infographic_m4/btn_irene-joliot-curie.jpg',
-    image: '/assets/curie/infographic_m4/hero_irene-joliot-curie.jpg',
+    btnImage: '/assets/curie/infographic_m4/btn_irene-joliot-curie.webp',
+    image: '/assets/curie/infographic_m4/hero_irene-joliot-curie.webp',
     content: [
       'Irène Curie nació el 12 de septiembre de 1897 en París, hija de Marie y Pierre Curie. Creció rodeada de ciencia: su abuelo paterno, Eugène Curie, médico comprometido que vivía con la familia, fue quien se encargó de su educación temprana mientras sus padres trabajaban en el laboratorio. Marie diseñó para Irène y otros hijos de colegas científicos una escuela cooperativa donde Paul Langevin enseñaba matemáticas, Jean Perrin daba clases de química y la propia Marie impartía física. Este modelo educativo único expuso a Irène desde los diez años a algunos de los mejores científicos de Francia.',
       'Durante la Primera Guerra Mundial, con solo diecisiete años, Irène acompañó a su madre al frente de batalla para operar equipos de radiografía portátil, las llamadas "Petites Curies". Entre 1914 y 1918, madre e hija trabajaron juntas realizando radiografías a soldados heridos para localizar balas y fragmentos de metralla antes de las cirugías. Irène operó equipos de rayos X de forma independiente en varios hospitales de campaña cerca del frente, exponiéndose a dosis significativas de radiación que probablemente contribuyeron a su muerte posterior por leucemia.',
@@ -198,8 +198,8 @@ const INFOGRAPHIC_NODES = [
     id: 'lise-meitner',
     title: 'Lise Meitner',
     color: '#66BB6A',
-    btnImage: '/assets/curie/infographic_m4/btn_lise-meitner.jpg',
-    image: '/assets/curie/infographic_m4/hero_lise-meitner.jpg',
+    btnImage: '/assets/curie/infographic_m4/btn_lise-meitner.webp',
+    image: '/assets/curie/infographic_m4/hero_lise-meitner.webp',
     content: [
       'Lise Meitner nació el 7 de noviembre de 1878 en Viena, Austria, en una familia judía de clase media. Austria no permitía a las mujeres asistir a instituciones de educación superior, por lo que Meitner tuvo que prepararse de forma privada para los exámenes de ingreso a la Universidad de Viena, donde fue admitida en 1901 como una de las pocas mujeres de la facultad de ciencias. Estudió física bajo la tutela de Ludwig Boltzmann, uno de los fundadores de la mecánica estadística, quien la inspiró con su rigor matemático. En 1906, obtuvo su doctorado en física, siendo apenas la segunda mujer en lograrlo en la Universidad de Viena.',
       'En 1907, Meitner se trasladó a Berlín para estudiar con Max Planck, el padre de la teoría cuántica. Allí conoció al químico Otto Hahn, con quien inició una colaboración científica que duraría treinta años. Sin embargo, las condiciones eran humillantes: el director del Instituto de Química, Emil Fischer, prohibía la presencia de mujeres en el edificio, por lo que Meitner tuvo que instalar su laboratorio en un sótano con acceso separado y sin permiso para usar los baños del piso principal. Durante sus primeros años, trabajó sin salario oficial, manteniéndose con una pequeña asignación de su padre en Viena.',
@@ -219,8 +219,8 @@ const INFOGRAPHIC_NODES = [
     id: 'rosalind-franklin',
     title: 'Rosalind Franklin',
     color: '#7B1FA2',
-    btnImage: '/assets/curie/infographic_m4/btn_rosalind-franklin.jpg',
-    image: '/assets/curie/infographic_m4/hero_rosalind-franklin.jpg',
+    btnImage: '/assets/curie/infographic_m4/btn_rosalind-franklin.webp',
+    image: '/assets/curie/infographic_m4/hero_rosalind-franklin.webp',
     content: [
       'Rosalind Elsie Franklin nació el 25 de julio de 1920 en Notting Hill, Londres, en una familia judía acomodada. Desde muy joven mostró una aptitud para las ciencias y las matemáticas. Estudió química en el Newnham College de Cambridge, donde se graduó en 1941. Durante la Segunda Guerra Mundial, trabajó en la British Coal Utilisation Research Association estudiando la microestructura del carbón y el grafito, investigación que resultó en cinco publicaciones científicas y una tesis doctoral que completó en Cambridge en 1945. Su trabajo sobre la porosidad del carbón contribuyó al desarrollo de filtros para máscaras de gas más efectivos.',
       'Entre 1947 y 1950, Franklin perfeccionó sus habilidades en cristalografía de rayos X en el Laboratoire Central des Services Chimiques en París, donde aprendió técnicas avanzadas de difracción que serían cruciales para su trabajo posterior. En enero de 1951, se incorporó al King College de Londres para trabajar en la estructura del ADN utilizando difracción de rayos X. Junto con su estudiante de doctorado Raymond Gosling, produjo imágenes de difracción de una calidad sin precedentes, diferenciando por primera vez las formas A y B del ADN, un avance técnico que nadie más había logrado.',
@@ -240,7 +240,7 @@ const INFOGRAPHIC_NODES = [
     id: 'chien-shiung-wu',
     title: 'Chien-Shiung Wu',
     color: '#81C784',
-    btnImage: '/assets/curie/infographic_m4/btn_chien-shiung-wu.jpg',
+    btnImage: '/assets/curie/infographic_m4/btn_chien-shiung-wu.webp',
     image: '/assets/curie/infographic_m4/hero_chien-shiung-wu.jpg',
     content: [
       'Chien-Shiung Wu nació el 31 de mayo de 1912 en Liuhe, una pequeña ciudad cerca de Shanghái, China. Su padre, Wu Zhongyi, era un educador progresista que fundó la primera escuela para niñas en la región, desafiando la tradición confuciana de que las mujeres no necesitaban educación formal. Su nombre, Chien-Shiung, significa "héroe fuerte", una elección que reflejaba las convicciones de su padre sobre la igualdad de género. Estudió física en la Universidad Nacional Central de Nankín y, en 1936, viajó a Estados Unidos para realizar estudios de posgrado en la Universidad de California, Berkeley, donde se doctoró bajo la dirección de Ernest Lawrence, inventor del ciclotrón.',
