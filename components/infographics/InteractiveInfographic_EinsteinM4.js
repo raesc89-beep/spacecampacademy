@@ -140,8 +140,8 @@ const INFOGRAPHIC_NODES = [
     id: 'crisis-fisica-clasica',
     title: 'La Crisis de la Física Clásica',
     color: '#2C3E6B',
-    btnImage: '/assets/einstein/infographic_m4/btn_crisis-fisica-clasica.jpg',
-    image: '/assets/einstein/infographic_m4/hero_crisis-fisica-clasica.jpg',
+    btnImage: '/assets/einstein/infographic_m4/btn_crisis-fisica-clasica.webp',
+    image: '/assets/einstein/infographic_m4/hero_crisis-fisica-clasica.webp',
     content: [
       'A finales del siglo XIX, los físicos creían que su disciplina estaba casi completa. Lord Kelvin declaró en 1900 que la física se encontraba resuelta salvo por "dos pequeñas nubes" en el horizonte. Esas dos nubes — el problema del cuerpo negro y el experimento de Michelson-Morley — terminarían demoliendo los cimientos de la física clásica. La primera nube conduciría directamente al nacimiento de la mecánica cuántica, una revolución que cambió para siempre nuestra comprensión de la materia, la energía y la luz.',
       'El problema del cuerpo negro era una cuestión concreta: cuando calientas un objeto hasta que brilla (como un trozo de metal al rojo vivo), ¿cómo se distribuye la energía de la luz que emite entre las distintas longitudes de onda? La física clásica, usando las leyes de la termodinámica y el electromagnetismo de Maxwell, predecía que un cuerpo negro emitiría cantidades infinitas de energía en las longitudes de onda más cortas (ultravioleta y más allá). Este resultado, conocido como la "catástrofe ultravioleta", era evidentemente absurdo: ningún objeto emite energía infinita.',

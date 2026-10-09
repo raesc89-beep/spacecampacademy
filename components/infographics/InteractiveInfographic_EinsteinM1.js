@@ -205,7 +205,7 @@ const INFOGRAPHIC_NODES = [
     title: 'La Politécnica de Zúrich',
     color: '#C49225',
     btnImage: '/assets/einstein/infographic_m1/btn_politecnica-zurich.webp',
-    image: '/assets/einstein/infographic_m1/hero_politecnica-zurich.jpg',
+    image: '/assets/einstein/infographic_m1/hero_politecnica-zurich.webp',
     content: [
       'En octubre de 1895, Albert Einstein se presentó al examen de ingreso de la Escuela Politécnica Federal de Zúrich (Eidgenössische Polytechnische Schule, hoy ETH Zürich), la institución científica más prestigiosa de Suiza. Tenía dieciséis años, dos menos que la edad mínima habitual de admisión. Le permitieron presentarse por sus resultados sobresalientes en matemáticas. En el examen, obtuvo las calificaciones máximas en álgebra, geometría y física, pero reprobó las secciones de francés, química, botánica y zoología. El director, Albin Herzog, le recomendó completar el bachillerato en la escuela cantonal de Aarau.',
       'La escuela de Aarau, en el cantón de Argovia, resultó ser una experiencia transformadora. Este centro seguía los principios pedagógicos de Johann Heinrich Pestalozzi, el reformador educativo suizo del siglo XVIII que defendía el aprendizaje a través de la observación directa, la experimentación y el pensamiento independiente. En Aarau, Albert encontró por primera vez un sistema educativo compatible con su forma de aprender. Los profesores fomentaban la discusión, permitían que los alumnos diseñaran sus propios experimentos y valoraban la originalidad por encima de la memorización.',
@@ -225,8 +225,8 @@ const INFOGRAPHIC_NODES = [
     id: 'oficina-patentes',
     title: 'La Oficina de Patentes',
     color: '#4A5F8D',
-    btnImage: '/assets/einstein/infographic_m1/btn_oficina-patentes.jpg',
-    image: '/assets/einstein/infographic_m1/hero_oficina-patentes.jpg',
+    btnImage: '/assets/einstein/infographic_m1/btn_oficina-patentes.webp',
+    image: '/assets/einstein/infographic_m1/hero_oficina-patentes.webp',
     content: [
       'Tras graduarse de la ETH en julio de 1900, Einstein se encontró en una situación difícil: no pudo obtener ningún puesto académico. Envió solicitudes a universidades de toda Europa y fue rechazado sistemáticamente. Su antiguo profesor Heinrich Weber se negó a recomendarlo, y otros docentes lo consideraban un estudiante brillante pero indisciplinado. Durante casi dos años, Einstein sobrevivió dando clases particulares de matemáticas y física, y trabajando brevemente como profesor sustituto en escuelas técnicas de Winterthur y Schaffhausen, en Suiza.',
       'La situación cambió el 23 de junio de 1902, cuando Einstein comenzó a trabajar como «Experto Técnico de Tercera Clase» en la Oficina Federal de la Propiedad Intelectual (Eidgenössisches Amt für Geistiges Eigentum) en Berna. El puesto fue posible gracias a la intervención de Marcel Grossmann, su compañero de clase en la ETH, cuyo padre conocía al director de la oficina, Friedrich Haller. Einstein recibió un salario anual de 3,500 francos suizos, suficiente para vivir modestamente pero con estabilidad por primera vez en años.',
@@ -246,8 +246,8 @@ const INFOGRAPHIC_NODES = [
     id: 'amigos-olympia',
     title: 'Los Amigos de Olympia',
     color: '#B88420',
-    btnImage: '/assets/einstein/infographic_m1/btn_amigos-olympia.jpg',
-    image: '/assets/einstein/infographic_m1/hero_amigos-olympia.jpg',
+    btnImage: '/assets/einstein/infographic_m1/btn_amigos-olympia.webp',
+    image: '/assets/einstein/infographic_m1/hero_amigos-olympia.webp',
     content: [
       'En 1902, poco después de establecerse en Berna, Einstein fundó un grupo de lectura y debate filosófico-científico junto a dos amigos: Maurice Solovine, un estudiante rumano de filosofía nacido en 1875, y Conrad Habicht, un matemático suizo nacido en 1876. Los tres se reunían regularmente en el apartamento de Einstein en la Kramgasse 49, en el centro histórico de Berna. Aunque comenzaron como sesiones informales de estudio, las reuniones pronto adquirieron una intensidad intelectual notable. Habicht bautizó al grupo con un nombre irónico y grandilocuente: la «Academia Olympia».',
       'Las reuniones de la Academia Olympia seguían un formato consistente: uno de los tres miembros leía en voz alta un capítulo o artículo, y luego los otros dos lo analizaban, cuestionaban y debatían hasta agotar el tema. Las discusiones podían prolongarse durante horas, acompañadas de cenas sencillas de salchichas, queso Gruyère, fruta y té. Entre los textos que leyeron figuraban la Ética de Baruch Spinoza, el Análisis de las sensaciones de Ernst Mach, el Tratado de la naturaleza humana de David Hume, y La ciencia y la hipótesis de Henri Poincaré.',
@@ -267,8 +267,8 @@ const INFOGRAPHIC_NODES = [
     id: 'visperas-revolucion',
     title: 'En Vísperas de la Revolución',
     color: '#1E2D5A',
-    btnImage: '/assets/einstein/infographic_m1/btn_visperas-revolucion.jpg',
-    image: '/assets/einstein/infographic_m1/hero_visperas-revolucion.jpg',
+    btnImage: '/assets/einstein/infographic_m1/btn_visperas-revolucion.webp',
+    image: '/assets/einstein/infographic_m1/hero_visperas-revolucion.webp',
     content: [
       'Para 1904, la vida de Albert Einstein había adquirido una cierta estabilidad por primera vez. Se había casado con Mileva Marić el 6 de enero de 1903 en una ceremonia civil en Berna, sin la presencia de sus padres, quienes se oponían a la relación. Los testigos fueron Maurice Solovine y Conrad Habicht, sus compañeros de la Academia Olympia. La pareja se instaló en un pequeño apartamento en la Kramgasse, donde Einstein continuaba su trabajo en la oficina de patentes durante el día y sus investigaciones de física por las noches y los fines de semana.',
       'El 14 de mayo de 1904 nació Hans Albert Einstein, el primer hijo reconocido de Albert y Mileva. Einstein se dedicó activamente a la crianza de su hijo, bañándolo, paseándolo y meciéndolo mientras, según sus propias palabras, «pensaba en sus problemas de física». En cartas a sus amigos, describía cómo Hans Albert gritaba «con todas sus fuerzas» y cómo eso no le impedía concentrarse en ecuaciones. Hans Albert se convertiría años después en un reconocido ingeniero hidráulico, profesor en la Universidad de California en Berkeley, especialista en transporte de sedimentos.',
@@ -813,7 +813,7 @@ export default function InteractiveInfographic_EinsteinM1() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/einstein/bg_einstein_m1.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/einstein/bg_einstein_m1.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
