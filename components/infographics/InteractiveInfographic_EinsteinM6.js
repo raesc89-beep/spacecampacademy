@@ -263,7 +263,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Einstein Tenía Razón',
     color: '#1E2D52',
     btnImage: '/assets/einstein/infographic_m6/btn_einstein-tenia-razon.webp',
-    image: '/assets/einstein/infographic_m6/hero_einstein-tenia-razon.jpg',
+    image: '/assets/einstein/infographic_m6/hero_einstein-tenia-razon.webp',
     content: [
       'Cada predicción cuantitativa de la relatividad general de Einstein ha sido confirmada experimentalmente con precisión creciente durante más de un siglo. La primera prueba llegó el 29 de mayo de 1919, cuando las expediciones de Arthur Eddington a la isla de Príncipe (frente a África occidental) y Andrew Crommelin a Sobral (Brasil) fotografiaron estrellas durante un eclipse total de sol. La desviación medida fue de 1.98 ± 0.16 segundos de arco, consistente con la predicción de Einstein de 1.75 segundos de arco y descartando la predicción newtoniana de 0.87 segundos de arco. El resultado fue anunciado el 6 de noviembre de 1919 en la Royal Society de Londres.',
       'Las ondas gravitacionales, predichas por Einstein en 1916 como ondulaciones en el espacio-tiempo producidas por masas aceleradas, fueron detectadas directamente por primera vez el 14 de septiembre de 2015 por los detectores LIGO (Laser Interferometer Gravitational-Wave Observatory) en Hanford, Washington, y Livingston, Luisiana. La señal GW150914 correspondía a la fusión de dos agujeros negros de 36 y 29 masas solares a 1,300 millones de años luz de distancia. El evento liberó más energía que todas las estrellas del universo observable combinadas durante una fracción de segundo. Rainer Weiss, Barry Barish y Kip Thorne recibieron el Nobel de Física en 2017.',
@@ -807,7 +807,7 @@ export default function InteractiveInfographic_EinsteinM6() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/einstein/einstein_m6_bg.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/einstein/einstein_m6_bg.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
