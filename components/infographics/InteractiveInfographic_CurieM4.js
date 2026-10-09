@@ -241,7 +241,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Chien-Shiung Wu',
     color: '#81C784',
     btnImage: '/assets/curie/infographic_m4/btn_chien-shiung-wu.webp',
-    image: '/assets/curie/infographic_m4/hero_chien-shiung-wu.jpg',
+    image: '/assets/curie/infographic_m4/hero_chien-shiung-wu.webp',
     content: [
       'Chien-Shiung Wu nació el 31 de mayo de 1912 en Liuhe, una pequeña ciudad cerca de Shanghái, China. Su padre, Wu Zhongyi, era un educador progresista que fundó la primera escuela para niñas en la región, desafiando la tradición confuciana de que las mujeres no necesitaban educación formal. Su nombre, Chien-Shiung, significa "héroe fuerte", una elección que reflejaba las convicciones de su padre sobre la igualdad de género. Estudió física en la Universidad Nacional Central de Nankín y, en 1936, viajó a Estados Unidos para realizar estudios de posgrado en la Universidad de California, Berkeley, donde se doctoró bajo la dirección de Ernest Lawrence, inventor del ciclotrón.',
       'Durante la Segunda Guerra Mundial, Wu trabajó en el Proyecto Manhattan en la División de Ingeniería Atómica de la Universidad de Columbia, investigando el proceso de enriquecimiento de uranio por difusión gaseosa, un componente esencial para la construcción de la bomba atómica. Resolvió un problema técnico que había paralizado el reactor nuclear de Hanford: identificó que el xenón-135, un producto de fisión, estaba absorbiendo neutrones y envenenando la reacción en cadena. Su solución permitió que el reactor funcionara correctamente. A pesar de esta contribución, su papel permaneció clasificado y no recibió reconocimiento público durante décadas.',
@@ -261,8 +261,8 @@ const INFOGRAPHIC_NODES = [
     id: 'mujeres-nobel-ciencias',
     title: 'Mujeres Nobel en Ciencias',
     color: '#8E24AA',
-    btnImage: '/assets/curie/infographic_m4/btn_mujeres-nobel-ciencias.jpg',
-    image: '/assets/curie/infographic_m4/hero_mujeres-nobel-ciencias.jpg',
+    btnImage: '/assets/curie/infographic_m4/btn_mujeres-nobel-ciencias.webp',
+    image: '/assets/curie/infographic_m4/hero_mujeres-nobel-ciencias.webp',
     content: [
       'Desde que Marie Curie recibió el Nobel de Física en 1903, solo 25 mujeres han ganado Premios Nobel en las categorías científicas (Física, Química y Fisiología o Medicina) hasta 2024, de un total de más de 640 laureados. En Física, apenas cinco mujeres lo han recibido: Marie Curie (1903), Maria Goeppert Mayer por su modelo de capas nucleares (1963), Donna Strickland por amplificación de pulsos láser chirped (2018), Andrea Ghez por el descubrimiento del agujero negro supermasivo en el centro de la Vía Láctea (2020), y Anne L\'Huillier por métodos de generación de pulsos de luz de attosegundos (2023).',
       'En Química, la lista incluye a Marie Curie nuevamente (1911), Irène Joliot-Curie por la radioactividad artificial (1935), Dorothy Crowfoot Hodgkin por determinar las estructuras tridimensionales de la penicilina y la vitamina B12 mediante cristalografía de rayos X (1964), Ada Yonath por la estructura del ribosoma (2009), Frances Arnold por la evolución dirigida de enzimas (2018), Emmanuelle Charpentier y Jennifer Doudna por el desarrollo de CRISPR-Cas9 como herramienta de edición genética (2020), y Carolyn Bertozzi por la química bioortogonal (2022).',
@@ -282,8 +282,8 @@ const INFOGRAPHIC_NODES = [
     id: 'efecto-marie-curie',
     title: 'El Efecto Marie Curie',
     color: '#388E3C',
-    btnImage: '/assets/curie/infographic_m4/btn_efecto-marie-curie.jpg',
-    image: '/assets/curie/infographic_m4/hero_efecto-marie-curie.jpg',
+    btnImage: '/assets/curie/infographic_m4/btn_efecto-marie-curie.webp',
+    image: '/assets/curie/infographic_m4/hero_efecto-marie-curie.webp',
     content: [
       'El "efecto Marie Curie" describe el impacto que el ejemplo de una mujer científica visible puede tener en las aspiraciones profesionales de niñas y jóvenes mujeres. Un estudio de 2019 publicado en la revista Science of Education analizó datos de 67 países y encontró que en las naciones donde las contribuciones de mujeres científicas reciben más cobertura mediática y educativa, las niñas muestran un 18% más de interés en carreras STEM (ciencia, tecnología, ingeniería y matemáticas) comparado con países donde esa cobertura es menor. El nombre y la historia de Marie Curie se citan consistentemente como la referencia más reconocida entre estudiantes de ambos sexos al preguntar por una mujer científica.',
       'La UNESCO, a través de su programa L\'Oréal-UNESCO "Para las Mujeres en la Ciencia" creado en 1998, ha premiado y otorgado becas a más de 4.100 científicas de 110 países en 25 años. El programa reconoce anualmente a cinco científicas establecidas, una por continente, y otorga quince becas internacionales de investigación a jóvenes científicas. La Unión Europea mantiene las Acciones Marie Skłodowska-Curie (MSCA), con un presupuesto de 6.600 millones de euros entre 2021 y 2027, que financia la movilidad y formación de investigadores de todas las disciplinas, con el nombre de Curie como símbolo de excelencia científica sin barreras de género.',

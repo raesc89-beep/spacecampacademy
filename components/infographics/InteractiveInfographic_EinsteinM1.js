@@ -141,8 +141,8 @@ const INFOGRAPHIC_NODES = [
     id: 'ulm-1879',
     title: 'Ulm, 1879',
     color: '#2C3E6B',
-    btnImage: '/assets/einstein/infographic_m1/btn_ulm-1879.jpg',
-    image: '/assets/einstein/infographic_m1/hero_ulm-1879.jpg',
+    btnImage: '/assets/einstein/infographic_m1/btn_ulm-1879.webp',
+    image: '/assets/einstein/infographic_m1/hero_ulm-1879.webp',
     content: [
       'Albert Einstein nació el 14 de marzo de 1879 en la ciudad de Ulm, en el Reino de Wurtemberg, al sur de Alemania. Su familia era de origen judío y pertenecía a la clase media. Su padre, Hermann Einstein, era ingeniero eléctrico y empresario; su madre, Pauline Koch, provenía de una familia acomodada de Stuttgart y tenía una marcada pasión por la música, especialmente por el piano. Ulm era entonces una ciudad de unos 36,000 habitantes, conocida por tener la catedral con la torre de iglesia más alta del mundo, con 161.53 metros de altura, completada en 1890.',
       'La familia Einstein residió en Ulm solo durante el primer año de vida de Albert. En 1880, Hermann y su hermano Jakob decidieron trasladarse a Múnich para fundar una empresa de equipamiento eléctrico llamada Elektrotechnische Fabrik J. Einstein & Cie. La compañía fabricaba dínamos, medidores eléctricos y sistemas de iluminación. Fue en Múnich donde nació la hermana menor de Albert, Maria (conocida como Maja), el 18 de noviembre de 1881. Albert y Maja mantuvieron una relación muy estrecha durante toda su vida.',
@@ -162,8 +162,8 @@ const INFOGRAPHIC_NODES = [
     id: 'alumno-rebelde',
     title: 'El Alumno Rebelde',
     color: '#D4A535',
-    btnImage: '/assets/einstein/infographic_m1/btn_alumno-rebelde.jpg',
-    image: '/assets/einstein/infographic_m1/hero_alumno-rebelde.jpg',
+    btnImage: '/assets/einstein/infographic_m1/btn_alumno-rebelde.webp',
+    image: '/assets/einstein/infographic_m1/hero_alumno-rebelde.webp',
     content: [
       'La relación de Albert Einstein con la educación formal fue conflictiva desde los primeros años. En el Luitpold Gymnasium de Múnich, donde ingresó a los diez años, el sistema educativo seguía el modelo prusiano, basado en la memorización mecánica y la disciplina rígida. Los estudiantes debían repetir datos de memoria, obedecer sin cuestionar y seguir un orden estricto que dejaba poco espacio para la curiosidad individual. Para un niño como Albert, que necesitaba comprender el «por qué» de cada fenómeno, este enfoque resultaba sofocante y contraproducente.',
       'Varios profesores del Gymnasium tuvieron opiniones negativas sobre Einstein. Su profesor de griego le dijo que «nunca llegaría a nada» porque hacía demasiadas preguntas y no respetaba la autoridad. Otro docente lo describió como «un alumno que sonríe de forma desdeñosa mientras le hablas». Sin embargo, estas evaluaciones reflejaban más las limitaciones del sistema que las capacidades reales del joven. Einstein no era un mal estudiante en el sentido académico: obtenía notas altas en matemáticas y ciencias, pero su actitud desafiante irritaba a los profesores acostumbrados a la obediencia sin cuestionamiento.',
@@ -183,8 +183,8 @@ const INFOGRAPHIC_NODES = [
     id: 'italia-libertad',
     title: 'Italia y la Libertad',
     color: '#3A4F7D',
-    btnImage: '/assets/einstein/infographic_m1/btn_italia-libertad.jpg',
-    image: '/assets/einstein/infographic_m1/hero_italia-libertad.jpg',
+    btnImage: '/assets/einstein/infographic_m1/btn_italia-libertad.webp',
+    image: '/assets/einstein/infographic_m1/hero_italia-libertad.webp',
     content: [
       'En 1894, la empresa eléctrica de Hermann y Jakob Einstein perdió un contrato crucial para iluminar la ciudad de Múnich y se vio obligada a cerrar. La familia decidió emigrar a Italia en busca de nuevas oportunidades comerciales, estableciéndose primero en Milán y luego en Pavía, donde Hermann abrió una nueva fábrica de equipos eléctricos. Sin embargo, Albert, de quince años, fue dejado solo en Múnich para completar sus estudios en el Luitpold Gymnasium, una decisión que resultó ser un punto de inflexión decisivo en su vida.',
       'La soledad en Múnich fue difícil de soportar para el joven Albert. Sin el apoyo emocional de su familia y atrapado en un sistema educativo que consideraba opresivo, su situación se deterioró rápidamente. Consiguió un certificado médico firmado por un doctor que declaraba que sufría de agotamiento nervioso y necesitaba reunirse con su familia. También obtuvo una carta de su profesor de matemáticas reconociendo su nivel avanzado en la materia. Con estos documentos en mano, Einstein abandonó el Gymnasium sin graduarse a los dieciséis años, en diciembre de 1894.',
@@ -204,7 +204,7 @@ const INFOGRAPHIC_NODES = [
     id: 'politecnica-zurich',
     title: 'La Politécnica de Zúrich',
     color: '#C49225',
-    btnImage: '/assets/einstein/infographic_m1/btn_politecnica-zurich.jpg',
+    btnImage: '/assets/einstein/infographic_m1/btn_politecnica-zurich.webp',
     image: '/assets/einstein/infographic_m1/hero_politecnica-zurich.jpg',
     content: [
       'En octubre de 1895, Albert Einstein se presentó al examen de ingreso de la Escuela Politécnica Federal de Zúrich (Eidgenössische Polytechnische Schule, hoy ETH Zürich), la institución científica más prestigiosa de Suiza. Tenía dieciséis años, dos menos que la edad mínima habitual de admisión. Le permitieron presentarse por sus resultados sobresalientes en matemáticas. En el examen, obtuvo las calificaciones máximas en álgebra, geometría y física, pero reprobó las secciones de francés, química, botánica y zoología. El director, Albin Herzog, le recomendó completar el bachillerato en la escuela cantonal de Aarau.',
