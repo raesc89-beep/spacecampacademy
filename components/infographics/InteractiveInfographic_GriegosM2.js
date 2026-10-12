@@ -152,8 +152,8 @@ const INFOGRAPHIC_NODES = [
     id: 'el-hombre-y-la-leyenda',
     title: 'El Hombre y la Leyenda',
     color: '#E8E0D4',
-    btnImage: '/assets/los_griegos/infographic_m2/btn_el-hombre-y-la-leyenda.jpg',
-    image: '/assets/los_griegos/infographic_m2/hero_el-hombre-y-la-leyenda.jpg',
+    btnImage: '/assets/los_griegos/infographic_m2/btn_el-hombre-y-la-leyenda.webp',
+    image: '/assets/los_griegos/infographic_m2/hero_el-hombre-y-la-leyenda.webp',
     content: [
       'Pitágoras nació alrededor del año 570 a.C. en la isla de Samos, situada en el mar Egeo frente a las costas de la actual Turquía. Samos era una isla próspera y bien conectada con las rutas comerciales del Mediterráneo oriental. Su padre, Mnesarco, era un grabador de anillos o un comerciante de Tiro, según las distintas fuentes antiguas. Desde joven, Pitágoras mostró una curiosidad particular por entender cómo funcionaban las cosas del mundo natural. Los historiadores Diógenes Laercio y Porfirio, que escribieron sobre su vida siglos después, coinciden en que recibió una educación cuidadosa y amplia para los estándares de su época, estudiando con varios maestros en Samos y posiblemente con el filósofo Ferécides de Siros.',
       'Los relatos antiguos indican que Pitágoras emprendió largos viajes de estudio que le tomaron varios años. Según Isócrates y otros autores, viajó a Egipto donde estudió con los sacerdotes de los templos, aprendiendo geometría y las prácticas rituales egipcias. Se cree que permaneció en Egipto durante un período estimado de hasta veintidós años antes de que la invasión persa de Cambises II en el año 525 a.C. lo llevara como prisionero a Babilonia. En Mesopotamia habría estudiado aritmética y astronomía con los sacerdotes caldeos, aprendiendo sobre los ciclos planetarios y los sistemas numéricos sexagesimales que los babilonios habían desarrollado durante siglos de observación celeste.',
