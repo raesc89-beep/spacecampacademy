@@ -142,8 +142,8 @@ const INFOGRAPHIC_NODES = [
     id: 'kit-deteccion',
     title: 'El Kit de Detección de Tonterías',
     color: '#5B3D8F',
-    btnImage: '/assets/sagan/infographic_m5/btn_kit-deteccion.jpg',
-    image: '/assets/sagan/infographic_m5/hero_kit-deteccion.jpg',
+    btnImage: '/assets/sagan/infographic_m5/btn_kit-deteccion.webp',
+    image: '/assets/sagan/infographic_m5/hero_kit-deteccion.webp',
     content: [
       'En su libro "El Mundo y sus Demonios" (The Demon-Haunted World), publicado en 1995, Carl Sagan presentó una herramienta que llamó "The Baloney Detection Kit" — el Kit de Detección de Tonterías. Se trata de un conjunto de reglas prácticas para evaluar afirmaciones y distinguir entre argumentos sólidos y razonamientos defectuosos. Sagan lo diseñó no como un manual para expertos, sino como una guía accesible para cualquier persona que desee pensar con mayor claridad en su vida cotidiana, desde evaluar noticias hasta analizar promesas publicitarias.',
       'El kit incluye herramientas como la confirmación independiente de los datos, el análisis de hipótesis múltiples, la cuantificación siempre que sea posible, la verificación de si una cadena de argumentos funciona en cada eslabón, y la aplicación de la Navaja de Occam. Este último principio, formulado por el fraile franciscano Guillermo de Occam en el siglo XIV, establece que, entre dos explicaciones igualmente válidas, la más sencilla suele ser la correcta. Sagan insistía en que estas herramientas no requieren un doctorado: cualquier estudiante puede aprenderlas y aplicarlas.',
@@ -163,8 +163,8 @@ const INFOGRAPHIC_NODES = [
     id: 'metodo-cientifico',
     title: 'El Método Científico',
     color: '#D4A535',
-    btnImage: '/assets/sagan/infographic_m5/btn_metodo-cientifico.jpg',
-    image: '/assets/sagan/infographic_m5/hero_metodo-cientifico.jpg',
+    btnImage: '/assets/sagan/infographic_m5/btn_metodo-cientifico.webp',
+    image: '/assets/sagan/infographic_m5/hero_metodo-cientifico.webp',
     content: [
       'El método científico es un proceso sistemático para investigar el mundo natural que se ha desarrollado a lo largo de siglos. Sus raíces se remontan a pensadores como Ibn al-Haytham (Alhazen), quien en el siglo XI realizó experimentos ópticos controlados en El Cairo, y a Francis Bacon, quien en 1620 publicó el "Novum Organum", proponiendo un sistema basado en la observación y la experimentación. No es un conjunto rígido de pasos, sino un ciclo flexible de observación, formulación de hipótesis, experimentación, análisis de datos y revisión de conclusiones.',
       'El primer paso consiste en observar un fenómeno y formular una pregunta. De esa pregunta nace una hipótesis: una explicación provisional que puede ser puesta a prueba. Una buena hipótesis debe ser específica, medible y, sobre todo, falsable, es decir, debe existir algún resultado posible del experimento que pueda demostrar que la hipótesis es incorrecta. Si no existe ningún resultado que pueda refutarla, la hipótesis no es científica. Este criterio fue establecido por Karl Popper en su obra "La lógica de la investigación científica" de 1934.',
@@ -184,8 +184,8 @@ const INFOGRAPHIC_NODES = [
     id: 'falacias-logicas',
     title: 'Falacias Lógicas Comunes',
     color: '#7A5BAF',
-    btnImage: '/assets/sagan/infographic_m5/btn_falacias-logicas.jpg',
-    image: '/assets/sagan/infographic_m5/hero_falacias-logicas.jpg',
+    btnImage: '/assets/sagan/infographic_m5/btn_falacias-logicas.webp',
+    image: '/assets/sagan/infographic_m5/hero_falacias-logicas.webp',
     content: [
       'Las falacias lógicas son errores en el razonamiento que hacen que un argumento parezca válido cuando no lo es. Aristóteles fue el primero en catalogar falacias de manera sistemática en su obra "Refutaciones Sofísticas" alrededor del año 350 a.C., donde identificó trece tipos distintos de argumentos engañosos. Sagan dedicó varias páginas de "El Mundo y sus Demonios" a explicar las falacias más comunes porque las consideraba las trampas más peligrosas para el pensamiento claro. Aprender a reconocerlas es como aprender a ver los trucos de un mago.',
       'El argumento ad hominem ("contra la persona") consiste en atacar a quien presenta un argumento en lugar de responder al argumento mismo. Si un científico presenta datos sobre el cambio climático y alguien responde diciendo "no le crean porque es vegetariano", eso es un ad hominem. La validez de un argumento no depende de quién lo presenta, sino de la evidencia y la lógica que lo sostienen. Otra falacia relacionada es el argumento de autoridad, donde se acepta algo como verdadero solo porque lo dice alguien famoso o con título, sin examinar la evidencia presentada.',
@@ -205,8 +205,8 @@ const INFOGRAPHIC_NODES = [
     id: 'pseudociencia-ciencia',
     title: 'Pseudociencia vs Ciencia',
     color: '#C49225',
-    btnImage: '/assets/sagan/infographic_m5/btn_pseudociencia-ciencia.jpg',
-    image: '/assets/sagan/infographic_m5/hero_pseudociencia-ciencia.jpg',
+    btnImage: '/assets/sagan/infographic_m5/btn_pseudociencia-ciencia.webp',
+    image: '/assets/sagan/infographic_m5/hero_pseudociencia-ciencia.webp',
     content: [
       'La pseudociencia se disfraza de ciencia pero no sigue sus reglas. Utiliza vocabulario técnico, cita "estudios" vagos y a veces presenta credenciales impresionantes, pero carece de los elementos fundamentales que definen la ciencia real: hipótesis falsables, experimentación controlada, revisión por pares y reproducibilidad. Carl Sagan advertía que la pseudociencia es más peligrosa que la ignorancia simple porque da la ilusión de conocimiento. Quien cree saber algo que en realidad no sabe deja de buscar la verdad y puede tomar decisiones dañinas basadas en información falsa.',
       'La astrología es uno de los ejemplos más antiguos y extendidos de pseudociencia. Afirma que la posición de estrellas y planetas en el momento del nacimiento determina la personalidad y el destino de una persona. En 1985, el físico Shawn Carlson publicó en la revista Nature un estudio doble ciego donde 28 astrólogos profesionales intentaron emparejar cartas natales con perfiles psicológicos reales. Los astrólogos no pudieron hacerlo mejor que el azar puro (33% de aciertos esperado, 34% obtenido). Sagan señalaba que las estrellas que forman una constelación están a distancias radicalmente diferentes de la Tierra.',
@@ -226,8 +226,8 @@ const INFOGRAPHIC_NODES = [
     id: 'dragon-garaje',
     title: 'El Dragón en Mi Garaje',
     color: '#9370C4',
-    btnImage: '/assets/sagan/infographic_m5/btn_dragon-garaje.jpg',
-    image: '/assets/sagan/infographic_m5/hero_dragon-garaje.jpg',
+    btnImage: '/assets/sagan/infographic_m5/btn_dragon-garaje.webp',
+    image: '/assets/sagan/infographic_m5/hero_dragon-garaje.webp',
     content: [
       'En "El Mundo y sus Demonios", Sagan presenta una de las analogías más claras del pensamiento escéptico: "Tengo un dragón que escupe fuego en mi garaje". Cuando le pides verlo, te dice que es invisible. Cuando propones cubrir el suelo de harina para ver sus huellas, te dice que flota en el aire. Cuando sugieres usar un sensor infrarrojo para detectar el fuego, te dice que su fuego no produce calor. Cada prueba propuesta es bloqueada con una nueva excusa. La pregunta de Sagan es directa: ¿qué diferencia hay entre un dragón invisible que no deja rastro y ningún dragón?',
       'Esta analogía ilustra el concepto de falsabilidad propuesto por Karl Popper en 1934. Una afirmación científica debe poder ser refutada mediante alguna observación o experimento posible. Si una afirmación está construida de manera que ningún resultado pueda demostrar que es falsa, entonces no proporciona información real sobre el mundo. El dragón de Sagan es el ejemplo perfecto de una afirmación infalsable: se modifica constantemente para evitar cualquier prueba. Las hipótesis científicas legítimas, en cambio, hacen predicciones específicas que pueden resultar incorrectas.',
@@ -247,7 +247,7 @@ const INFOGRAPHIC_NODES = [
     id: 'pensamiento-digital',
     title: 'Pensamiento Crítico en la Era Digital',
     color: '#B88420',
-    btnImage: '/assets/sagan/infographic_m5/btn_pensamiento-digital.jpg',
+    btnImage: '/assets/sagan/infographic_m5/btn_pensamiento-digital.webp',
     image: '/assets/sagan/infographic_m5/hero_pensamiento-digital.jpg',
     content: [
       'Carl Sagan no vivió para ver las redes sociales — murió el 20 de diciembre de 1996 — pero sus advertencias sobre la desinformación resultan proféticas. En "El Mundo y sus Demonios" escribió: "Hemos diseñado una civilización global en la que los elementos más críticos dependen profundamente de la ciencia y la tecnología. También hemos organizado las cosas de tal manera que casi nadie entiende la ciencia y la tecnología. Esto constituye una receta para el desastre." Treinta años después, la proliferación de noticias falsas, deepfakes y teorías conspirativas confirma esta preocupación.',

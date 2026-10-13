@@ -258,7 +258,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Cosmos en el Siglo XXI',
     color: '#4A2D6F',
     btnImage: '/assets/sagan/infographic_m2/btn_cosmos-siglo-xxi.webp',
-    image: '/assets/sagan/infographic_m2/hero_cosmos-siglo-xxi.jpg',
+    image: '/assets/sagan/infographic_m2/hero_cosmos-siglo-xxi.webp',
     content: [
       'En 2020, National Geographic estrenó "Cosmos: Mundos Posibles" (Cosmos: Possible Worlds), la tercera temporada de la franquicia, nuevamente presentada por Neil deGrasse Tyson y producida por Ann Druyan. Esta temporada, también de 13 episodios, se centró en el futuro de la humanidad: la terraformación de Marte, la búsqueda de vida en las lunas Europa y Encélado, y las posibilidades de civilizaciones futuras capaces de colonizar otros sistemas estelares. Druyan también publicó un libro del mismo nombre en 2020 a través de National Geographic Books.',
       'El impacto cultural de Cosmos se ha amplificado en la era digital. En plataformas como YouTube, los fragmentos de la serie original de 1980 acumulan cientos de millones de reproducciones. El discurso "Pale Blue Dot" de Sagan — basado en su reflexión sobre la fotografía de la Tierra tomada por la Voyager 1 en 1990 — se ha convertido en uno de los videos más compartidos en internet, con versiones animadas, musicalizadas y traducidas a más de 30 idiomas. La cuenta oficial de Carl Sagan en redes sociales, gestionada por la Fundación Sagan, tiene millones de seguidores.',
