@@ -123,8 +123,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m3/banner_dilatacion-gravitacional.webp',
     title: 'La Gravedad Frena el Tiempo',
     color: '#FF6B35',
-    btnImage: '/assets/interstellar/infographic_m3/btn_dilatacion-gravitacional.jpg',
-    image: '/assets/interstellar/infographic_m3/hero_dilatacion-gravitacional.jpg',
+    btnImage: '/assets/interstellar/infographic_m3/btn_dilatacion-gravitacional.webp',
+    image: '/assets/interstellar/infographic_m3/hero_dilatacion-gravitacional.webp',
     content: [
       'Además de la dilatación por velocidad lineal, Einstein postuló que los campos gravitacionales tienen un impacto cuantificable sobre el flujo cronológico de la realidad. Según la Relatividad General, la presencia de masa superdensa curva el tejido del espacio-tiempo universal, y esta deformación geométrica altera el ciclo de cualquier reloj material ubicado cerca. Cuanto mayor sea la densidad del objeto estelar y su atracción planetaria, más lento transcurrirá el tiempo biológico en su proximidad gravitatoria, estableciendo un desfase continuo en relación con el vacío interestelar lejano.',
       'Un campo gravitatorio intenso funciona como una fosa dentro de la topología del espacio exterior infinito. A medida que una sonda de investigación se sitúa en un punto de mayor profundidad gravitacional extrema, la desaceleración del tiempo local aumenta exponencialmente en relación con el exterior del sistema. Desde la perspectiva estricta de la mecánica cuántica moderna, operar dentro de este radio de gravedad masiva exige que las partículas elementales reduzcan su oscilación atómica normal. Esto genera un diferencial observable donde la vida biológica evoluciona de manera pausada y dispar.',

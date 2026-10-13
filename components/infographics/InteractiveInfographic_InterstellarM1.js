@@ -150,8 +150,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m1/banner_geodesicas.webp',
     title: 'Líneas Rectas Curvas',
     color: '#FF6B35',
-    btnImage: '/assets/interstellar/infographic_m1/btn_geodesicas.jpg',
-    image: '/assets/interstellar/infographic_m1/hero_geodesicas.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_geodesicas.webp',
+    image: '/assets/interstellar/infographic_m1/hero_geodesicas.webp',
     content: [
       'En la geometría euclidiana tradicional, la distancia más corta entre dos puntos se define invariablemente mediante una línea recta. Este axioma matemático es aplicable en superficies planas, pero pierde validez al analizar la topología del universo a escala macroscópica. El continuo espacio-temporal presenta una curvatura inherente generada por la distribución de masa y energía. Debido a esta geometría no euclidiana, las trayectorias de desplazamiento en el cosmos requieren de un marco analítico distinto para calcular las rutas óptimas entre diferentes coordenadas.',
       'En el ámbito de la física diferencial, las trayectorias óptimas a través de un espacio curvo reciben el nombre de líneas geodésicas. Una geodésica representa la generalización del concepto de línea recta aplicado a geometrías deformadas. Para comprender este principio, es útil observar las rutas de navegación aérea intercontinental sobre la superficie terrestre. Los aviones no siguen trayectorias rectilíneas en proyecciones cartográficas bidimensionales, sino que trazan curvas ortodrómicas que minimizan la distancia real de vuelo sobre la esfera planetaria.',
@@ -210,7 +210,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m1/banner_gps-relatividad.webp',
     title: 'Einstein en tu Bolsillo',
     color: '#26A69A',
-    btnImage: '/assets/interstellar/infographic_m1/btn_gps-relatividad.jpg',
+    btnImage: '/assets/interstellar/infographic_m1/btn_gps-relatividad.webp',
     image: '/assets/interstellar/infographic_m1/hero_gps.webp',
     content: [
       'El análisis de los tensores métricos y la deformación geométrica del vacío cósmico podría parecer una disciplina teórica sin aplicaciones prácticas en la ingeniería convencional. Los fenómenos de curvatura espacial provocados por objetos supermasivos o las anomalías temporales cerca del horizonte de sucesos sugieren escenarios que escapan a la experiencia cotidiana. No obstante, las predicciones derivadas de la mecánica relativista resultan esenciales para el diseño y funcionamiento operativo de diversas infraestructuras tecnológicas críticas en la sociedad contemporánea actual.',

@@ -146,8 +146,8 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/interstellar/infographic_m2/banner_frame-dragging.webp',
     title: 'Cuando el Espacio Gira Contigo',
     color: '#4FC3F7',
-    btnImage: '/assets/interstellar/infographic_m2/btn_frame-dragging.jpg',
-    image: '/assets/interstellar/infographic_m2/hero_frame-dragging.jpg',
+    btnImage: '/assets/interstellar/infographic_m2/btn_frame-dragging.webp',
+    image: '/assets/interstellar/infographic_m2/hero_frame-dragging.webp',
     content: [
       'El arrastre de marco, predicho por Lense y Thirring, establece que cualquier objeto giratorio arrastra el tejido cósmico. Imagina sumergir una cuchara en miel y dar giros rápidos. La miel gira junto a ella. Así, el espacio acompaña la danza de los astros, creando un vórtice gravitacional.',
       'En 2011, la misión Gravity Probe B confirmó este efecto alrededor de la Tierra. Un giroscopio flotando en el espacio detectó la torcedura del vacío. Esta sonda demostró que la materia en rotación altera mecánicamente las coordenadas. Así comprobó una predicción sutil de la relatividad general.',

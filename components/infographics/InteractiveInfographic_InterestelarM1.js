@@ -145,7 +145,7 @@ const INFOGRAPHIC_NODES = [
     id: 'catalogo-nomadas',
     title: 'El Catálogo de Nómadas',
     color: '#FF9100',
-    btnImage: '/assets/interestelar/infographic_m1/btn_catalogo-nomadas.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_catalogo-nomadas.webp',
     image: '/assets/interestelar/infographic_m1/hero_catalogo-nomadas.jpg',
     content: [
       'A pesar de que el universo tiene más de 13,800 millones de años y nuestra Vía Láctea contiene más de 200,000 millones de estrellas, nuestro catálogo de objetos interestelares confirmados es sorprendentemente pequeño: solo dos. El primer visitante confirmado es Oumuamua, descubierto en 2017. El segundo es 2I/Borisov, el cometa interestelar descubierto en 2019. Esta escasez de registros no refleja la abundancia real de estos objetos — refleja las limitaciones de nuestros instrumentos de observación.',
@@ -166,7 +166,7 @@ const INFOGRAPHIC_NODES = [
     id: 'deteccion-pan-starrs',
     title: 'Pan-STARRS y Telescopios',
     color: '#448AFF',
-    btnImage: '/assets/interestelar/infographic_m1/btn_deteccion-pan-starrs.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_deteccion-pan-starrs.webp',
     image: '/assets/interestelar/infographic_m1/hero_espacio-entre-estrellas.jpg',
     content: [
       'Detectar objetos interestelares en el espacio profundo es una tarea de precisión extraordinaria. Un objeto interestelar típico, del tamaño de Oumuamua (400 metros de largo), refleja tan poca luz a distancias interplanetarias que aparece como un punto difuso prácticamente indistinguible de millones de otras fuentes de luz débil en el cielo nocturno. El truco para encontrarlo es comparar muchas fotografías del mismo campo de visión tomadas con días de diferencia: los objetos en movimiento se desplazan contra el fondo estático de estrellas lejanas.',
@@ -187,8 +187,8 @@ const INFOGRAPHIC_NODES = [
     id: 'composicion-quimica',
     title: 'Composición Química',
     color: '#FF80AB',
-    btnImage: '/assets/interestelar/infographic_m1/btn_composicion-quimica.jpg',
-    image: '/assets/interestelar/infographic_m1/hero_composicion-quimica.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_composicion-quimica.webp',
+    image: '/assets/interestelar/infographic_m1/hero_composicion-quimica.webp',
     content: [
       'Determinar de qué está hecho un objeto a distancias de millones de kilómetros, sin poder recoger muestras directas, es uno de los mayores desafíos de la astronomía moderna. La técnica principal que usan los astrónomos se llama espectroscopia: al descomponer la luz reflejada o emitida por un objeto en sus longitudes de onda individuales (los colores del espectro), se pueden identificar los "huellas dactilares" de átomos y moléculas específicos. Cada elemento y compuesto químico absorbe y emite luz en longitudes de onda características y únicas.',
       'Cuando los científicos aplicaron espectroscopia a Oumuamua usando los telescopios más potentes del mundo, se llevaron una sorpresa desconcertante. A diferencia de los cometas normales de nuestro Sistema Solar, que al acercarse al Sol emiten jets de gas y polvo visibles en el espectro, Oumuamua no mostraba ninguna emisión gaseosa detectable. Su superficie parecía inerte — seca, dura y de color rojizo. El color rojizo es consistente con la presencia de tolinas: compuestos orgánicos complejos que se forman cuando moléculas de carbono, nitrógeno y oxígeno son irradiadas por rayos cósmicos durante millones de años en el espacio interestelar.',
@@ -208,8 +208,8 @@ const INFOGRAPHIC_NODES = [
     id: 'futuro-caza',
     title: 'El Futuro de la Caza',
     color: '#FFD740',
-    btnImage: '/assets/interestelar/infographic_m1/btn_futuro-caza.jpg',
-    image: '/assets/interestelar/infographic_m1/hero_futuro-caza.jpg',
+    btnImage: '/assets/interestelar/infographic_m1/btn_futuro-caza.webp',
+    image: '/assets/interestelar/infographic_m1/hero_futuro-caza.webp',
     content: [
       'Al considerar que los objetos interestelares son como botellas con mensajes de estrellas lejanas, surge una pregunta natural: ¿podemos alcanzarlos para estudiarlos de cerca? Un objeto interestelar que pase por nuestro Sistema Solar lo hace a velocidades de decenas de kilómetros por segundo — demasiado rápido para que ninguna nave espacial construida hasta ahora pudiera alcanzarlo en el tiempo disponible desde su descubrimiento hasta su alejamiento definitivo. Pero la ingeniería espacial moderna está trabajando en soluciones a este problema.',
       'La respuesta más prometedora a corto plazo es la sonda Comet Interceptor, un proyecto de la Agencia Espacial Europea (ESA) con lanzamiento previsto para 2029. En lugar de construir una nave ultrarrápida capaz de perseguir un cometa, Comet Interceptor estará pre-posicionada en el punto Lagrange L2, a 1.5 millones de kilómetros de la Tierra en la dirección opuesta al Sol. Desde allí, la sonda podrá salir a interceptar cualquier cometa prístino o visitante interestelar descubierto con suficiente antelación, antes de que llegue al punto de máxima proximidad al Sol.',

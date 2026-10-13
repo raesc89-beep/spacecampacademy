@@ -268,7 +268,7 @@ const INFOGRAPHIC_NODES = [
     title: 'El Legado Aristotélico',
     color: '#F0EAE0',
     btnImage: '/assets/los_griegos/infographic_m5/btn_legado-aristotelico.webp',
-    image: '/assets/los_griegos/infographic_m5/hero_legado-aristotelico.jpg',
+    image: '/assets/los_griegos/infographic_m5/hero_legado-aristotelico.webp',
     content: [
       'Después de la muerte de Alejandro Magno en el 323 a.C., un nuevo brote de sentimiento anti-macedónico recorrió Atenas. Aristóteles, consciente del peligro, abandonó la ciudad declarando que no permitiría que los atenienses "pecaran dos veces contra la filosofía", en referencia a la condena y ejecución de Sócrates setenta y seis años antes. Se retiró a Calcis, en la isla de Eubea, donde murió al año siguiente, en el 322 a.C., a la edad de sesenta y dos años. Según algunas fuentes antiguas, la causa fue una enfermedad estomacal crónica que lo afligía desde hacía tiempo.',
       'Los manuscritos de Aristóteles tuvieron una historia azarosa tras su muerte. Su sucesor Teofrasto los heredó, y después pasaron a manos de Neleo de Escepsis, quien los almacenó en un sótano húmedo de Asia Menor donde sufrieron daños considerables. En el siglo I a.C., el filósofo Andrónico de Rodas obtuvo los textos, los restauró y los organizó en el orden que conocemos hoy. Los tratados que Andrónico colocó "después de la Física" (meta ta physika) recibieron el nombre de "Metafísica", un título accidental que se convirtió en el nombre de toda una rama fundamental de la filosofía.',
@@ -853,7 +853,7 @@ export default function InteractiveInfographic_GriegosM5() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/griegos/griegos_m5_bg.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/griegos/griegos_m5_bg.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
