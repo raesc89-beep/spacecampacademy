@@ -97,7 +97,7 @@ const INFOGRAPHIC_NODES = [
               bannerImage: '/assets/rocosos/infographic_m6/banner_gigante-roja.webp',
     title: 'El Sol Gigante Roja',
     color: '#FF0054',
-    btnImage: '/assets/rocosos/infographic_m6/btn_gigante-roja.jpg',
+    btnImage: '/assets/rocosos/infographic_m6/btn_gigante-roja.webp',
     image: '/assets/rocosos/infographic_m6/hero_gigante-roja.jpg',
     content: [
       'Los planetas rocosos no son estructuras eternas e inmutables. Su destino final está ligado de forma indisoluble a la evolución de nuestra estrella central, el Sol. Actualmente, el Sol se encuentra a la mitad de su vida útil de diez mil millones de años, quemando hidrógeno de forma estable en su núcleo.',
