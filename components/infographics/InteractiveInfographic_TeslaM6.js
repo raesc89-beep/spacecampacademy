@@ -205,7 +205,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Westinghouse Entra en Escena',
     color: '#C49225',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_westinghouse-entra.webp',
-    image: '/assets/nikola_tesla/infographic_m6/hero_westinghouse-entra.jpg',
+    image: '/assets/nikola_tesla/infographic_m6/hero_westinghouse-entra.webp',
     content: [
       'George Westinghouse era un inventor e industrial de Pittsburgh, Pensilvania, que ya había hecho fortuna con el freno neumático para trenes, patentado en 1869 cuando tenía solo 22 años. Westinghouse comprendía tanto la ingeniería como los negocios, y en 1886 había fundado la Westinghouse Electric Company para competir directamente con Edison en el mercado de la electricidad. A diferencia de Edison, Westinghouse reconoció desde el principio las ventajas técnicas de la corriente alterna y había adquirido previamente las patentes del transformador de corriente alterna de los inventores húngaros Ganz & Co. y del sistema de distribución AC de Lucien Gaulard y John Dixon Gibbs.',
       'En julio de 1888, Westinghouse visitó el laboratorio de Tesla en Liberty Street, Manhattan, y negoció la adquisición de sus patentes de corriente alterna. El acuerdo final incluía $60,000 dólares en efectivo (equivalentes a unos $1.8 millones actuales), acciones de Westinghouse Electric, y regalías de $2.50 por cada caballo de fuerza de capacidad eléctrica vendida bajo las patentes de Tesla. Tesla también aceptó trabajar como consultor para Westinghouse en Pittsburgh durante un año, con un salario mensual de $2,000 dólares, para ayudar a adaptar sus diseños teóricos a la producción industrial.',
@@ -225,8 +225,8 @@ const INFOGRAPHIC_NODES = [
     id: 'batalla-opinion-publica',
     title: 'La Batalla de la Opinión Pública',
     color: '#8A9AA6',
-    btnImage: '/assets/nikola_tesla/infographic_m6/btn_batalla-opinion-publica.jpg',
-    image: '/assets/nikola_tesla/infographic_m6/hero_batalla-opinion-publica.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m6/btn_batalla-opinion-publica.webp',
+    image: '/assets/nikola_tesla/infographic_m6/hero_batalla-opinion-publica.webp',
     content: [
       'Cuando Edison comprendió que la corriente alterna de Tesla-Westinghouse representaba una amenaza seria para su imperio de corriente continua, lanzó una campaña de desprestigio que los historiadores han denominado la "Guerra de las Corrientes". A partir de 1887, Edison y su asociado Harold P. Brown organizaron demostraciones públicas en las que electrocutaban perros y gatos callejeros con corriente alterna para demostrar que era letal. Estas demostraciones se realizaron en el laboratorio de Edison en West Orange, Nueva Jersey, ante periodistas y funcionarios públicos, con el objetivo de asociar la corriente alterna con la muerte.',
       'El episodio más controvertido de la campaña de Edison involucró la ejecución de William Kemmler, un vendedor de verduras condenado a muerte por asesinar a su pareja con un hacha en Buffalo, Nueva York, en 1889. Edison y Brown colaboraron con el estado de Nueva York para diseñar la primera silla eléctrica, que funcionaba con corriente alterna de Westinghouse. La ejecución se llevó a cabo el 6 de agosto de 1890 en la prisión de Auburn y fue un fracaso técnico: la primera descarga de 1,000 voltios durante 17 segundos no mató a Kemmler, quien continuó respirando. Se requirió una segunda descarga de 2,000 voltios que duró varios minutos, produciendo quemaduras en el cuerpo.',
@@ -246,8 +246,8 @@ const INFOGRAPHIC_NODES = [
     id: 'chicago-1893-ac-gana',
     title: 'Chicago 1893: AC Gana',
     color: '#B88420',
-    btnImage: '/assets/nikola_tesla/infographic_m6/btn_chicago-1893-ac-gana.jpg',
-    image: '/assets/nikola_tesla/infographic_m6/hero_chicago-1893-ac-gana.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m6/btn_chicago-1893-ac-gana.webp',
+    image: '/assets/nikola_tesla/infographic_m6/hero_chicago-1893-ac-gana.webp',
     content: [
       'La Exposición Universal de Chicago de 1893, oficialmente llamada World\'s Columbian Exposition, fue el escenario donde la corriente alterna de Tesla y Westinghouse demostró su superioridad de forma definitiva ante el mundo. La feria, que celebraba el cuarto centenario del viaje de Colón a América, ocupaba 2.4 kilómetros cuadrados junto al lago Míchigan y atrajo a 27.3 millones de visitantes durante sus seis meses de operación, del 1 de mayo al 30 de octubre de 1893. La iluminación de la feria se convirtió en la demostración tecnológica más visible de la década.',
       'Edison General Electric (que en 1892 se había fusionado para formar General Electric) presentó una oferta de $1.8 millones de dólares para iluminar la feria con corriente continua. Westinghouse presentó una contraoferta de $399,000 dólares usando corriente alterna, menos de la cuarta parte del precio de Edison. Los organizadores seleccionaron a Westinghouse. Para cumplir el contrato, Westinghouse fabricó en sus talleres de Pittsburgh 12 generadores de corriente alterna de 1,000 caballos de fuerza cada uno, alimentados por máquinas de vapor, y 92,620 lámparas incandescentes. Sin poder usar las bombillas patentadas por Edison, Westinghouse desarrolló un diseño alternativo de bombilla con filamento sellado al vacío en dos piezas.',
@@ -267,8 +267,8 @@ const INFOGRAPHIC_NODES = [
     id: 'veredicto-historia',
     title: 'El Veredicto de la Historia',
     color: '#5A6B7A',
-    btnImage: '/assets/nikola_tesla/infographic_m6/btn_veredicto-historia.jpg',
-    image: '/assets/nikola_tesla/infographic_m6/hero_veredicto-historia.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m6/btn_veredicto-historia.webp',
+    image: '/assets/nikola_tesla/infographic_m6/hero_veredicto-historia.webp',
     content: [
       'La Guerra de las Corrientes concluyó formalmente en 1896 cuando la Central Hidroeléctrica de las Cataratas del Niágara, diseñada con la tecnología de corriente alterna de Tesla y construida por Westinghouse, comenzó a transmitir electricidad a Buffalo, Nueva York, a 32 kilómetros de distancia. Este logro demostró de manera concluyente que la corriente alterna podía generar, transmitir y distribuir energía eléctrica a escala industrial. En 1896, la propia General Electric (sucesora de Edison General Electric) comenzó a fabricar equipos de corriente alterna, reconociendo tácitamente la derrota tecnológica de la corriente continua para la distribución eléctrica.',
       'Sin embargo, reducir la historia a "Tesla ganó y Edison perdió" es una simplificación excesiva. Edison contribuyó de forma determinante a la electrificación del mundo. Su central de Pearl Street de 1882 estableció el concepto de distribución eléctrica centralizada. Su sistema de medición eléctrica permitió facturar el consumo de cada cliente. Sus mejoras a la bombilla incandescente hicieron la iluminación eléctrica práctica. Y su modelo de "laboratorio de inventos" en Menlo Park fue el precursor de los modernos centros de investigación y desarrollo corporativo. General Electric, la empresa que creció de su trabajo, sigue siendo una de las mayores corporaciones industriales del mundo.',
@@ -836,7 +836,7 @@ export default function InteractiveInfographic_TeslaM6() {
 
   return (
     <div style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/tesla/infographic_tesla_edison/bg_tesla_edison.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(10,12,30,0.85) 0%, rgba(15,10,35,0.8) 40%, rgba(10,12,30,0.88) 100%), url(/assets/tesla/infographic_tesla_edison/bg_tesla_edison.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',

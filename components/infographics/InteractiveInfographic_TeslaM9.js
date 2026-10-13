@@ -148,8 +148,8 @@ const INFOGRAPHIC_NODES = [
     id: 'cientifico-ciencia-ficcion',
     title: 'El Científico de Ciencia Ficción',
     color: '#6B7B8A',
-    btnImage: '/assets/nikola_tesla/infographic_m9/btn_cientifico-ciencia-ficcion.jpg',
-    image: '/assets/nikola_tesla/infographic_m9/hero_cientifico-ciencia-ficcion.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m9/btn_cientifico-ciencia-ficcion.webp',
+    image: '/assets/nikola_tesla/infographic_m9/hero_cientifico-ciencia-ficcion.webp',
     content: [
       'Nikola Tesla se convirtió en el modelo del «científico loco» de la cultura popular durante su propia vida. En la década de 1890, Tesla realizaba demostraciones públicas en su laboratorio de Nueva York donde sostenía tubos de descarga de gas que se iluminaban en sus manos gracias a campos eléctricos de alta frecuencia y alto voltaje. Los periodistas de la época, como los del New York Times y el New York Herald, describían estas presentaciones como actos de magia, y las fotografías de Tesla rodeado de rayos artificiales —tomadas con doble exposición por el fotógrafo Dickenson Alley en Colorado Springs en 1899— se difundieron por todo el mundo, consolidando su imagen como figura sobrenatural.',
       'La imagen del inventor solitario trabajando con electricidad peligrosa en un laboratorio oscuro influenció directamente la construcción del arquetipo del «científico loco» en el cine y la literatura del siglo XX. El laboratorio del Dr. Frankenstein en las películas de Universal Studios (1931), diseñado por Kenneth Strickfaden, usaba bobinas de Tesla reales para producir los arcos eléctricos que «daban vida» al monstruo. Este equipo fue reutilizado en docenas de películas de ciencia ficción posteriores, convirtiendo la electricidad de Tesla en sinónimo visual de ciencia peligrosa y fronteriza.',
@@ -169,8 +169,8 @@ const INFOGRAPHIC_NODES = [
     id: 'tesla-en-el-cine',
     title: 'Tesla en el Cine',
     color: '#D4A535',
-    btnImage: '/assets/nikola_tesla/infographic_m9/btn_tesla-en-el-cine.jpg',
-    image: '/assets/nikola_tesla/infographic_m9/hero_tesla-en-el-cine.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m9/btn_tesla-en-el-cine.webp',
+    image: '/assets/nikola_tesla/infographic_m9/hero_tesla-en-el-cine.webp',
     content: [
       'La representación cinematográfica más conocida de Nikola Tesla es la interpretación de David Bowie en la película «The Prestige» (El Truco Final) dirigida por Christopher Nolan en 2006. En la película, basada en la novela de Christopher Priest de 1995, Tesla aparece como un inventor que construye una máquina de teletransportación en Colorado Springs. Aunque la máquina es ficción, Nolan recreó con precisión el laboratorio real de Tesla en Colorado Springs (1899-1900) y la bobina amplificadora que Tesla construyó allí, cuya antena medía 43 metros de altura y generó rayos artificiales de hasta 41 metros de longitud.',
       'Antes de «The Prestige», Tesla apareció en diversas producciones cinematográficas con diferentes grados de precisión histórica. En la película yugoslava «Tajna Nikole Tesle» (El Secreto de Nikola Tesla, 1980), dirigida por Krsto Papić, el actor Petar Božović interpretó a Tesla con asesoramiento de ingenieros eléctricos serbios, logrando una de las representaciones más técnicamente precisas de sus experimentos. La película incluyó recreaciones de la demostración del motor de inducción polifásico ante la Sociedad Americana de Ingenieros Eléctricos en mayo de 1888.',
