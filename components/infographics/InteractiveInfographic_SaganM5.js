@@ -248,7 +248,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Pensamiento Crítico en la Era Digital',
     color: '#B88420',
     btnImage: '/assets/sagan/infographic_m5/btn_pensamiento-digital.webp',
-    image: '/assets/sagan/infographic_m5/hero_pensamiento-digital.jpg',
+    image: '/assets/sagan/infographic_m5/hero_pensamiento-digital.webp',
     content: [
       'Carl Sagan no vivió para ver las redes sociales — murió el 20 de diciembre de 1996 — pero sus advertencias sobre la desinformación resultan proféticas. En "El Mundo y sus Demonios" escribió: "Hemos diseñado una civilización global en la que los elementos más críticos dependen profundamente de la ciencia y la tecnología. También hemos organizado las cosas de tal manera que casi nadie entiende la ciencia y la tecnología. Esto constituye una receta para el desastre." Treinta años después, la proliferación de noticias falsas, deepfakes y teorías conspirativas confirma esta preocupación.',
       'Un estudio publicado en Science en 2018 por Soroush Vosoughi, Deb Roy y Sinan Aral del MIT analizó 126,000 historias compartidas en Twitter entre 2006 y 2017 por aproximadamente 3 millones de personas. Los resultados demostraron que las noticias falsas se propagan un 70% más rápido que las verdaderas y alcanzan entre 1,000 y 100,000 personas, mientras que las noticias verdaderas rara vez alcanzan más de 1,000 personas. Los investigadores atribuyeron esto al factor de "novedad": las historias falsas suelen ser más sorprendentes y provocar reacciones emocionales más intensas.',
@@ -268,8 +268,8 @@ const INFOGRAPHIC_NODES = [
     id: 'escepticismo-virtud',
     title: 'El Escepticismo como Virtud',
     color: '#4A2D6F',
-    btnImage: '/assets/sagan/infographic_m5/btn_escepticismo-virtud.jpg',
-    image: '/assets/sagan/infographic_m5/hero_escepticismo-virtud.jpg',
+    btnImage: '/assets/sagan/infographic_m5/btn_escepticismo-virtud.webp',
+    image: '/assets/sagan/infographic_m5/hero_escepticismo-virtud.webp',
     content: [
       'Carl Sagan definió el escepticismo no como cinismo ni como negación, sino como una postura equilibrada entre la apertura mental y el rigor intelectual. "Me parece que lo que se necesita es un equilibrio exquisito entre dos necesidades conflictivas: el examen más escéptico de todas las hipótesis que nos presentan y, al mismo tiempo, una gran apertura a las ideas nuevas", escribió en "El Mundo y sus Demonios". Esta visión del escepticismo como virtud intelectual — no como obstinación — es su legado más duradero en el campo del pensamiento crítico.',
       'La frase más citada de Sagan sobre escepticismo es: "Afirmaciones extraordinarias requieren evidencia excepcional." Esta idea, que él mismo atribuyó al sociólogo Marcello Truzzi y al astrónomo Pierre-Simon Laplace (quien la formuló originalmente en el siglo XVIII), establece un principio de proporcionalidad: cuanto más se desvía una afirmación del conocimiento establecido, más sólida debe ser la evidencia que la respalde. Afirmar que llovió ayer requiere poca prueba. Afirmar que llovieron diamantes requiere evidencia de un tipo completamente diferente.',

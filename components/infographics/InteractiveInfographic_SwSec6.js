@@ -320,8 +320,8 @@ const INFOGRAPHIC_NODES = [
     id: 'fusion-tokamak',
     title: 'Plasma en Fusión Nuclear: El Sol en una Botella',
     color: '#FF7043',
-    btnImage: '/assets/starwars/swsec6/btn_fusion-tokamak.jpg',
-    image: '/assets/starwars/swsec6/hero_fusion_tokamak.jpg',
+    btnImage: '/assets/starwars/swsec6/btn_fusion-tokamak.webp',
+    image: '/assets/starwars/swsec6/hero_fusion_tokamak.webp',
     content: [
       'El plasma de hidrógeno en el interior del Sol existe a una temperatura de 15 millones de grados Celsius y una densidad 150 veces mayor que el agua. En la Tierra, los reactores de fusión nuclear tipo tokamak intentan recrear estas condiciones extremas para generar la misma fuente de energía que alimenta las estrellas. El ITER (International Thermonuclear Experimental Reactor), que se construye en Francia con la participación de 35 países, usará plasma de deuterio y tritio confinado magnéticamente a 150 millones de grados —10 veces más caliente que el núcleo solar— porque a mayor temperatura, más energética es la colisión entre núcleos que produce la fusión. La clave del tokamak es que el plasma a esas temperaturas no puede tocar ninguna pared del reactor sin destruirla, por lo que se confina con campos magnéticos de 5 teslas creados por electroimanes superconductores enfriados a -269°C.',
       'La ironía fundamental de la fusión nuclear es que el plasma que la alimenta es tan energético que destruiría cualquier material conocido al contacto. La solución —confinarlo con campos magnéticos como una "botella magnética"— fue propuesta simultáneamente por los físicos soviéticos Igor Tamm y Andrei Sakharov en 1950 y por el británico Peter Thonemann, sin que ninguno supiera del trabajo del otro, lo que sugiere que era una solución inevitablemente "obvia" una vez que se comprendía la física del plasma. En la Estrella de la Muerte de Star Wars, el rayo superlaser que destruye planetas sería físicamente un plasma de alta energía en estado de confinamiento controlado — aunque la física real requeriría una "botella magnética" del tamaño de una luna para contenerlo.',
@@ -341,8 +341,8 @@ const INFOGRAPHIC_NODES = [
     id: 'sonoluminiscencia',
     title: 'Sonoluminiscencia: Luz del Sonido, Misterio del Plasma',
     color: '#7E57C2',
-    btnImage: '/assets/starwars/swsec6/btn_sonoluminiscencia.jpg',
-    image: '/assets/starwars/swsec6/hero_sonoluminiscencia.jpg',
+    btnImage: '/assets/starwars/swsec6/btn_sonoluminiscencia.webp',
+    image: '/assets/starwars/swsec6/hero_sonoluminiscencia.webp',
     content: [
       'La sonoluminiscencia es uno de los fenómenos más misteriosos de la física experimental: cuando una burbuja de gas en agua es sometida a ondas de sonido intensas a la frecuencia correcta, la burbuja colapsa en un lapso de nanosegundos y emite un destello de luz visible durante aproximadamente 100 picosegundos (0.1 billonésimas de segundo). El interior de la burbuja durante el colapso alcanza temperaturas estimadas entre 10,000 y 20,000 K —más caliente que la superficie del Sol— y presiones de miles de atmósferas. En ese instante, el gas dentro de la burbuja se convierte en un estado de plasma transitorio que emite radiación de cuerpo negro en el rango del ultravioleta visible.',
       'La sonoluminiscencia fue descubierta accidentalmente en 1934 por los físicos alemanes H. Frenzel y H. Schultes mientras estudiaban el envejecimiento de fotografías en soluciones de revelado usando ultrasonidos. Los destellos, aunque visibles a simple vista en oscuridad total, son tan breves —100 picosegundos— que la energía emitida por cada destello es de solo 10 millones de fotones, equivalente a la luz de una vela a 10 metros de distancia. Sin embargo, la sorpresa no es la cantidad de luz sino que exista luz en absoluto: la teoría clásica predecía que el colapso de burbujas en agua simplemente generaría calor sin emisión óptica, y la explicación física completa del fenómeno sigue siendo un área activa de investigación.',
@@ -362,8 +362,8 @@ const INFOGRAPHIC_NODES = [
     id: 'magnetares-plasma',
     title: 'Magnetares: El Plasma más Extremo del Universo',
     color: '#26A69A',
-    btnImage: '/assets/starwars/swsec6/btn_magnetares-plasma.jpg',
-    image: '/assets/starwars/swsec6/hero_magnetar.jpg',
+    btnImage: '/assets/starwars/swsec6/btn_magnetares-plasma.webp',
+    image: '/assets/starwars/swsec6/hero_magnetar.webp',
     content: [
       'Los magnetares son estrellas de neutrones con campos magnéticos de 10^15 gauss —un millón de billones de veces más intenso que el campo magnético terrestre— que representan el plasma en su estado más extremo conocido en el universo. Su interior está compuesto de plasma de quarks y gluones, el mismo estado de la materia que existió en los primeros microsegundos del Big Bang, a temperaturas de 10^12 Kelvin. La corteza de un magnetar, con una densidad de 400 millones de toneladas por centímetro cúbico, es el material sólido más denso del universo conocido, y las tensiones magnéticas que actúan sobre ella generan "terremotos estelares" que liberan en 0.2 segundos más energía que el Sol emitirá en 100,000 años.',
       'El campo magnético de un magnetar es tan intenso que distorsiona los orbitales de los átomos de hidrógeno —alargándolos en la dirección del campo en factores de hasta 200— y desintegra el enlace de las moléculas de ADN a una distancia de 1,000 kilómetros. A 1 AU (la distancia Tierra-Sol), el campo de un magnetar borraría las tarjetas de crédito magnéticas a nivel planetario. El magnetar más cercano conocido, SGR 1806-20 a 50,000 años luz, emitió en diciembre de 2004 un destello de rayos gamma que ionizó temporalmente la ionosfera terrestre, haciendo que los instrumentos de detección de ondas de radio registraran una perturbación equivalente a la de un rayo en la atmósfera — desde 50,000 años luz de distancia.',
