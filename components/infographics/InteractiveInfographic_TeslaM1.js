@@ -248,7 +248,7 @@ const INFOGRAPHIC_NODES = [
     title: 'La Mente de Tesla',
     color: '#B88420',
     btnImage: '/assets/nikola_tesla/infographic_m1/btn_mente-tesla.webp',
-    image: '/assets/nikola_tesla/infographic_m1/hero_mente-tesla.jpg',
+    image: '/assets/nikola_tesla/infographic_m1/hero_mente-tesla.webp',
     content: [
       'La memoria eidética de Tesla es uno de los fenómenos cognitivos más documentados en la historia de la ciencia. En su autobiografía de 1919, Tesla describe cómo podía memorizar libros enteros después de una sola lectura. No se trataba de una habilidad parcial: Tesla podía recitar páginas específicas, recordar la posición de cada párrafo en la hoja y reproducir diagramas técnicos con precisión milimétrica. Hablaba ocho idiomas con fluidez: serbocroata, checo, alemán, francés, húngaro, italiano, inglés y latín. Aprendió cada idioma mediante la lectura de textos técnicos y literarios en el idioma original.',
       'La capacidad de visualización tridimensional de Tesla iba más allá de la memoria eidética convencional. Tesla podía construir una máquina completa en su mente, hacerla funcionar mentalmente, identificar puntos de desgaste y realizar modificaciones sin dibujar un solo plano. Según sus propias palabras en "My Inventions": «Cuando tengo una idea, la construyo inmediatamente en mi imaginación. Cambio la construcción, hago mejoras y opero el dispositivo en mi mente. Me es absolutamente indiferente si hago funcionar mi turbina en el pensamiento o la pruebo en mi taller. Hasta noto si hay un desequilibrio».',
@@ -268,8 +268,8 @@ const INFOGRAPHIC_NODES = [
     id: 'legado-infancia',
     title: 'El Legado de una Infancia',
     color: '#5A6B7A',
-    btnImage: '/assets/nikola_tesla/infographic_m1/btn_legado-infancia.jpg',
-    image: '/assets/nikola_tesla/infographic_m1/hero_legado-infancia.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m1/btn_legado-infancia.webp',
+    image: '/assets/nikola_tesla/infographic_m1/hero_legado-infancia.webp',
     content: [
       'La infancia de Tesla en Smiljan y Gospić formó los cimientos de cada uno de sus inventos posteriores. Las turbinas de agua que construyó en los arroyos de Lika prefiguraron su turbina sin paletas (patente US 1,061,206 de 1913). El motor de escarabajos de junio anticipó su interés en convertir energía natural en movimiento mecánico. Su observación de las tormentas eléctricas sobre los Alpes Dináricos inspiró directamente sus experimentos con corrientes de alta frecuencia y alto voltaje en Colorado Springs en 1899, donde generó rayos artificiales de hasta 40 metros de longitud.',
       'La unidad de medida Tesla (T), adoptada por la Conferencia General de Pesos y Medidas en 1960, mide la densidad de flujo magnético (también llamada inducción magnética). Un tesla equivale a un weber por metro cuadrado, o equivalentemente, a un voltio-segundo por metro cuadrado. Para contexto: el campo magnético terrestre tiene una intensidad de aproximadamente 25 a 65 microteslas, un imán de refrigerador produce unos 5 militeslas, y las máquinas de resonancia magnética (MRI) en hospitales operan entre 1.5 y 3 teslas.',
