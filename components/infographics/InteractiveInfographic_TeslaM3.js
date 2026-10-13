@@ -222,7 +222,7 @@ const INFOGRAPHIC_NODES = [
     title: 'Transmisión Inalámbrica de Energía',
     color: '#8A9AA6',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_transmision-inalambrica.webp',
-    image: '/assets/nikola_tesla/infographic_m3/hero_transmision-inalambrica.jpg',
+    image: '/assets/nikola_tesla/infographic_m3/hero_transmision-inalambrica.webp',
     content: [
       'El objetivo central de los experimentos de Tesla en Colorado Springs no era generar rayos artificiales ni estudiar tormentas: era demostrar la viabilidad de transmitir energía eléctrica sin cables a cualquier punto del planeta. Tesla denominó a su sistema de transmisión "World Wireless System" y lo consideraba su contribución más importante a la civilización, superior incluso a su sistema de corriente alterna. El concepto se basaba en usar la Tierra como conductor y la atmósfera como medio de retorno, creando un circuito eléctrico global que permitiría distribuir energía a través de ondas electromagnéticas de baja frecuencia.',
       'El dispositivo central de este sistema era el transmisor amplificador (magnifying transmitter), una evolución de la bobina de Tesla convencional que incluía un tercer circuito resonante adicional. Mientras que una bobina de Tesla estándar tiene dos circuitos acoplados (primario y secundario), el transmisor amplificador añadía un circuito extra conectado a una terminal elevada (el mástil con la esfera de cobre) y a una conexión a tierra profunda. Tesla afirmó que este tercer circuito permitía inyectar corriente directamente en la Tierra a la frecuencia de resonancia del planeta, amplificando la señal de manera progresiva con cada viaje alrededor del globo.',
@@ -242,8 +242,8 @@ const INFOGRAPHIC_NODES = [
     id: 'cuadernos-colorado',
     title: 'Los Cuadernos de Colorado',
     color: '#B88420',
-    btnImage: '/assets/nikola_tesla/infographic_m3/btn_cuadernos-colorado.jpg',
-    image: '/assets/nikola_tesla/infographic_m3/hero_cuadernos-colorado.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m3/btn_cuadernos-colorado.webp',
+    image: '/assets/nikola_tesla/infographic_m3/hero_cuadernos-colorado.webp',
     content: [
       'Durante sus ocho meses en Colorado Springs, Tesla mantuvo un registro detallado y meticuloso de todos sus experimentos, observaciones y cálculos en lo que hoy se conoce como los "Cuadernos de Colorado Springs" (Colorado Springs Notes). Este documento, que comprende más de 500 páginas manuscritas, es uno de los registros científicos más completos que se conservan de un inventor del siglo XIX. Las páginas contienen esquemas de circuitos, cálculos matemáticos, observaciones meteorológicas, mediciones de señales eléctricas, y descripciones narrativas de los experimentos realizados día a día, desde junio de 1899 hasta enero de 1900.',
       'Los cuadernos no fueron publicados durante la vida de Tesla. Después de su muerte en enero de 1943, el gobierno de Estados Unidos confiscó temporalmente sus papeles personales y documentos técnicos a través del FBI, en un operativo ordenado por la Oficina de Propiedad Extranjera (por el estatus de ciudadanía de Tesla como inmigrante serbio). Los documentos fueron examinados por John G. Trump, profesor de ingeniería eléctrica del MIT y tío del futuro presidente Donald Trump. El profesor Trump concluyó en su informe que los papeles de Tesla no contenían información aplicable a armas o tecnología militar, y los documentos fueron liberados y enviados al Museo Tesla en Belgrado, Yugoslavia.',
@@ -263,8 +263,8 @@ const INFOGRAPHIC_NODES = [
     id: 'legado-cientifico',
     title: 'El Legado Científico',
     color: '#5A6B7A',
-    btnImage: '/assets/nikola_tesla/infographic_m3/btn_legado-cientifico.jpg',
-    image: '/assets/nikola_tesla/infographic_m3/hero_legado-cientifico.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m3/btn_legado-cientifico.webp',
+    image: '/assets/nikola_tesla/infographic_m3/hero_legado-cientifico.webp',
     content: [
       'Evaluar el legado científico de los experimentos de Colorado Springs requiere separar cuidadosamente los logros verificables de las afirmaciones no comprobadas. Entre los logros verificables se encuentran: la generación de los rayos artificiales más largos producidos por una bobina resonante (40 metros), la demostración práctica de la resonancia electromagnética a escala industrial, la detección de fenómenos que anticiparon la resonancia de Schumann, y el perfeccionamiento de técnicas de alta frecuencia que encontrarían aplicación en radio, radar y telecomunicaciones. Estos logros están documentados en los cuadernos de Colorado Springs y han sido confirmados por análisis posteriores de físicos e ingenieros.',
       'Entre las afirmaciones no verificadas o exageradas se encuentran: la transmisión exitosa de energía a 40 kilómetros de distancia, la recepción de señales extraterrestres inteligentes, y la posibilidad práctica de distribuir energía eléctrica globalmente a través de la Tierra. La biografía de W. Bernard Carlson (2013) analiza estas afirmaciones con rigor documental y concluye que Tesla tendía a presentar sus resultados experimentales preliminares como logros consolidados, lo que dañó su credibilidad científica a largo plazo y contribuyó a la dificultad de obtener financiamiento para proyectos posteriores como la torre Wardenclyffe.',

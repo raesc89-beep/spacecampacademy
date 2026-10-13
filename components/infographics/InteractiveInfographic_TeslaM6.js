@@ -141,8 +141,8 @@ const INFOGRAPHIC_NODES = [
     id: 'dos-genios-dos-visiones',
     title: 'Dos Genios, Dos Visiones',
     color: '#6B7B8A',
-    btnImage: '/assets/nikola_tesla/infographic_m6/btn_dos-genios-dos-visiones.jpg',
-    image: '/assets/nikola_tesla/infographic_m6/hero_dos-genios-dos-visiones.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m6/btn_dos-genios-dos-visiones.webp',
+    image: '/assets/nikola_tesla/infographic_m6/hero_dos-genios-dos-visiones.webp',
     content: [
       'Nikola Tesla nació el 10 de julio de 1856 en Smiljan, un pueblo del Imperio Austrohúngaro que hoy forma parte de Croacia. Hijo de un sacerdote ortodoxo serbio y una madre inventora de utensilios domésticos, Tesla mostró desde niño una capacidad para la visualización mental que le permitía diseñar máquinas completas sin dibujar un solo plano. Estudió ingeniería en la Escuela Politécnica de Graz, Austria, donde aprendió sobre motores de corriente continua y comenzó a cuestionar su diseño, convencido de que existía una forma más eficiente de generar y distribuir electricidad usando corrientes alternas rotativas.',
       'Thomas Alva Edison nació el 11 de febrero de 1847 en Milan, Ohio, Estados Unidos. Fue un inventor prolífico y autodidacta que acumuló 1,093 patentes a lo largo de su vida, más que cualquier otro inventor estadounidense de su época. Edison perfeccionó la bombilla incandescente en 1879 tras probar más de 3,000 materiales para el filamento, y construyó la primera central eléctrica comercial del mundo en Pearl Street, Manhattan, en 1882. Su método era empírico: probaba miles de variaciones hasta encontrar la que funcionaba, en contraste directo con el enfoque teórico-matemático de Tesla.',
@@ -162,8 +162,8 @@ const INFOGRAPHIC_NODES = [
     id: 'encuentro-nueva-york',
     title: 'El Encuentro en Nueva York',
     color: '#D4A535',
-    btnImage: '/assets/nikola_tesla/infographic_m6/btn_encuentro-nueva-york.jpg',
-    image: '/assets/nikola_tesla/infographic_m6/hero_encuentro-nueva-york.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m6/btn_encuentro-nueva-york.webp',
+    image: '/assets/nikola_tesla/infographic_m6/hero_encuentro-nueva-york.webp',
     content: [
       'En junio de 1884, Nikola Tesla llegó a Nueva York con una carta de recomendación escrita por Charles Batchelor, uno de los principales colaboradores de Edison en Europa. La carta, según la biografía de Tesla, decía: "Conozco a dos grandes hombres, y usted es uno de ellos; el otro es este joven". Tesla había trabajado previamente para la Continental Edison Company en París, donde reparaba y mejoraba los generadores de corriente continua que Edison vendía en Europa, demostrando una habilidad técnica que impresionó a sus superiores.',
       'Edison contrató a Tesla de inmediato y le asignó tareas de reparación y mejora de los dínamos de corriente continua que alimentaban su red eléctrica en Manhattan. Tesla propuso rediseñar los generadores para hacerlos más eficientes, y según su propio relato, Edison le ofreció una bonificación de $50,000 dólares si lograba completar las mejoras. Tesla trabajó durante varios meses, a menudo más de 18 horas diarias, rediseñando 24 tipos diferentes de dínamos para la Edison Machine Works, introduciendo mejoras significativas en el diseño de los reguladores automáticos y los conmutadores.',
@@ -183,8 +183,8 @@ const INFOGRAPHIC_NODES = [
     id: 'la-ruptura',
     title: 'La Ruptura',
     color: '#7A8B96',
-    btnImage: '/assets/nikola_tesla/infographic_m6/btn_la-ruptura.jpg',
-    image: '/assets/nikola_tesla/infographic_m6/hero_la-ruptura.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m6/btn_la-ruptura.webp',
+    image: '/assets/nikola_tesla/infographic_m6/hero_la-ruptura.webp',
     content: [
       'La ruptura entre Tesla y Edison se produjo a principios de 1885, cuando Tesla reclamó la bonificación de $50,000 dólares que Edison supuestamente le había prometido por mejorar los generadores de corriente continua. Según el relato de Tesla, Edison respondió: "Tesla, usted no entiende el humor americano". Edison le ofreció en cambio un aumento de $10 semanales sobre su salario de $18. Tesla rechazó la oferta y renunció de inmediato. Este incidente, documentado en la autobiografía de Tesla "My Inventions" publicada en 1919, se ha convertido en uno de los momentos más citados de la historia de la tecnología.',
       'Los historiadores debaten la veracidad exacta del episodio de los $50,000. El biógrafo Paul Israel (Edison: A Life of Invention, 1998) señala que Edison rara vez hacía promesas financieras de ese calibre a empleados individuales y que la cifra representaba casi la mitad de las ganancias anuales de la Edison Machine Works. Sin embargo, el patrón de Edison de no cumplir acuerdos verbales con inventores y empleados está bien documentado en múltiples fuentes contemporáneas, lo que da credibilidad general al relato de Tesla sobre el incumplimiento.',
@@ -204,7 +204,7 @@ const INFOGRAPHIC_NODES = [
     id: 'westinghouse-entra',
     title: 'Westinghouse Entra en Escena',
     color: '#C49225',
-    btnImage: '/assets/nikola_tesla/infographic_m6/btn_westinghouse-entra.jpg',
+    btnImage: '/assets/nikola_tesla/infographic_m6/btn_westinghouse-entra.webp',
     image: '/assets/nikola_tesla/infographic_m6/hero_westinghouse-entra.jpg',
     content: [
       'George Westinghouse era un inventor e industrial de Pittsburgh, Pensilvania, que ya había hecho fortuna con el freno neumático para trenes, patentado en 1869 cuando tenía solo 22 años. Westinghouse comprendía tanto la ingeniería como los negocios, y en 1886 había fundado la Westinghouse Electric Company para competir directamente con Edison en el mercado de la electricidad. A diferencia de Edison, Westinghouse reconoció desde el principio las ventajas técnicas de la corriente alterna y había adquirido previamente las patentes del transformador de corriente alterna de los inventores húngaros Ganz & Co. y del sistema de distribución AC de Lucien Gaulard y John Dixon Gibbs.',
