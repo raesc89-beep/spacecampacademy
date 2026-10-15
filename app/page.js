@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import Link from "next/link";
 import { ArrowRight, UserPlus, Rocket, Brain, Trophy, Gamepad2, Smartphone, Star, ChevronRight } from 'lucide-react';
 import AnimatedMainLogo from '@/components/AnimatedMainLogo';
@@ -19,10 +19,10 @@ const COURSES = [
     color: "#00E4FF",
     glow: "rgba(0,228,255,0.25)",
     items: [
-      { name: "Sistema Solar", desc: "Viaja a cada planeta del sistema solar con datos reales de la NASA", img: "/assets/rocosos/module_1.png", href: "/hub/solar-system", modules: 9 },
+      { name: "Sistema Solar", desc: "Viaja a cada planeta del sistema solar con datos reales de la NASA", img: "/assets/rocosos/infographic_m1/banner_disco-protoplanetario.webp", href: "/hub/solar-system", modules: 9 },
       { name: "Pioneros del Cosmos", desc: "Gagarin, Glenn, Tereshkova — los heroes que abrieron el camino", img: "/assets/pioneros/hub_alan.webp", href: "/hub/pioneros", modules: 7 },
       { name: "Animales en el Espacio", desc: "Ham, Laika y los animales que fueron primero que nosotros", img: "/assets/animales/ham_ship_3d.webp", href: "/hub/animales", modules: 4 },
-      { name: "Robots en el Espacio", desc: "Rovers, sondas y satelites — la exploracion sin humanos", img: "/assets/robots/module_1.png", href: "/hub/robots-espacio", modules: 6 },
+      { name: "Robots en el Espacio", desc: "Rovers, sondas y satelites — la exploracion sin humanos", img: "/assets/robots/dust_devil.webp", href: "/hub/robots-espacio", modules: 6 },
     ],
   },
   {
@@ -32,9 +32,9 @@ const COURSES = [
     glow: "rgba(255,215,0,0.25)",
     items: [
       { name: "Interstellar", desc: "Agujeros negros, relatividad y viaje interestelar — la ciencia real detras", img: "/assets/interstellar/gargantua_bg.webp", href: "/hub/interstellar", modules: 5 },
-      { name: "Star Wars", desc: "Fisica de hyperspace, planetas reales y tecnologia espacial", img: "/assets/starwars/banner_tatooine.png", href: "/hub/star-wars", modules: 9 },
-      { name: "Arrival — La Llegada", desc: "Xenolinguistica, primer contacto y fisica del tiempo", img: "/assets/ciencia_arrival/infographic_m1/banner_xenolinguistica.png", href: "/hub/arrival-ciencia", modules: 6 },
-      { name: "Volver al Futuro", desc: "Maquinas del tiempo, paradojas y ciencia cuantica", img: "/assets/bttf/module_1.png", href: "/hub/bttf", modules: 7 },
+      { name: "Star Wars", desc: "Fisica de hyperspace, planetas reales y tecnologia espacial", img: "/assets/starwars/infographic_mundos/banner_tatooine.webp", href: "/hub/star-wars", modules: 9 },
+      { name: "Arrival — La Llegada", desc: "Xenolinguistica, primer contacto y fisica del tiempo", img: "/assets/ciencia_arrival/infographic_m4/banner_xenolinguistica.webp", href: "/hub/arrival-ciencia", modules: 6 },
+      { name: "Volver al Futuro", desc: "Maquinas del tiempo, paradojas y ciencia cuantica", img: "/assets/bttf/infographic_m3/banner_bootstrap.webp", href: "/hub/bttf", modules: 7 },
     ],
   },
   {
@@ -44,9 +44,9 @@ const COURSES = [
     glow: "rgba(197,42,133,0.25)",
     items: [
       { name: "Agujeros de Gusano", desc: "Wormholes, geometria del espacio-tiempo y viaje instantaneo", img: "/assets/interstellar/gargantua_bg.webp", href: "/hub/agujeros-gusano", modules: 5 },
-      { name: "Exoplanetas", desc: "Mundos mas alla del sistema solar — candidatos a tener vida", img: "/assets/exoplanetas/module_1.png", href: "/hub/exoplanetas", modules: 6 },
-      { name: "Area 51 & OVNIS", desc: "Historia real, proyectos secretos y el fenomeno OVNI", img: "/assets/area51/module_1.png", href: "/hub/area51", modules: 5 },
-      { name: "Objetos Interestelares", desc: "Oumuamua, Borisov y los visitantes del espacio profundo", img: "/assets/interestelar/module_1.png", href: "/hub/objetos-interestelares", modules: 5 },
+      { name: "Exoplanetas", desc: "Mundos mas alla del sistema solar — candidatos a tener vida", img: "/assets/exoplanetas/infographic_m1/banner_que-es-un-exoplaneta.webp", href: "/hub/exoplanetas", modules: 6 },
+      { name: "Area 51 & OVNIS", desc: "Historia real, proyectos secretos y el fenomeno OVNI", img: "/assets/area51/infographic_m1/banner_a51m1-punto-secreto-en-el-mapa.webp", href: "/hub/area51", modules: 5 },
+      { name: "Objetos Interestelares", desc: "Oumuamua, Borisov y los visitantes del espacio profundo", img: "/assets/interestelar/infographic_m1/banner_que-es-interestelar.webp", href: "/hub/objetos-interestelares", modules: 5 },
     ],
   },
   {
@@ -55,10 +55,10 @@ const COURSES = [
     color: "#E8C07A",
     glow: "rgba(232,192,122,0.25)",
     items: [
-      { name: "Astronomia Egipcia", desc: "Piramides, constelaciones y la ciencia del antiguo Egipto", img: "/assets/egypt/module_1.png", href: "/hub/egypt-astro", modules: 14 },
-      { name: "Astronomia Maya", desc: "El calendario mas preciso del mundo antiguo — 365.25 dias exactos", img: "/assets/maya/module_1.png", href: "/hub/maya-astro", modules: 15 },
-      { name: "Griegos y la Ciencia", desc: "Eratostenes, Aristarco y los primeros modelos del universo", img: "/assets/griegos/module_1.png", href: "/hub/griegos-ciencia", modules: 6 },
-      { name: "Dinosaurios", desc: "El impacto de Chicxulub y la extincion que cambio la Tierra", img: "/assets/dinosaurios/module_1.png", href: "/hub/dinosaurios", modules: 8 },
+      { name: "Astronomia Egipcia", desc: "Piramides, constelaciones y la ciencia del antiguo Egipto", img: "/assets/egypt/infographic_m1/banner_nabta-playa.webp", href: "/hub/egypt-astro", modules: 14 },
+      { name: "Astronomia Maya", desc: "El calendario mas preciso del mundo antiguo — 365.25 dias exactos", img: "/assets/maya/infographic_m1/banner_origenes-mayas.webp", href: "/hub/maya-astro", modules: 15 },
+      { name: "Griegos y la Ciencia", desc: "Eratostenes, Aristarco y los primeros modelos del universo", img: "/assets/griegos/infographic_m1/banner_mileto-cuna-filosofia.webp", href: "/hub/griegos-ciencia", modules: 6 },
+      { name: "Dinosaurios", desc: "El impacto de Chicxulub y la extincion que cambio la Tierra", img: "/assets/dinos/infographic_m1/banner_gran-mortandad.webp", href: "/hub/dinosaurios", modules: 8 },
     ],
   },
 ];
