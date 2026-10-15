@@ -1,240 +1,639 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Rocket, Star, Info, ChevronDown, ChevronUp, BookOpen, Clock, Activity, Cpu } from 'lucide-react';
+import { X, ChevronRight, Sparkles, Star, ChevronDown, Atom, BookOpen } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
 
 const BIBLIOGRAPHY = [
-  {
-    title: "Animals in Space: From Research Rockets to the Space Shuttle",
-    author: "Colin Burgess and Chris Dubbs",
-    year: "2007",
-    publisher: "Springer Praxis Books",
-    description: "Una revisión exhaustiva de las misiones pioneras que involucraron animales, con un análisis detallado de los vuelos de los monos Albert y el entrenamiento de los chimpancés del Proyecto Mercury."
-  },
-  {
-    title: "Mercury-Redstone 2: The Flight of Ham",
-    author: "NASA Historical Data Book",
-    year: "1961",
-    publisher: "NASA History Office",
-    description: "Documentación técnica y biomédica oficial de la agencia espacial estadounidense sobre la trayectoria, la telemetría y las respuestas conductuales del chimpancé Ham."
-  },
-  {
-    title: "Aeromedical Reviews: The V-2 Monkey Flights",
-    author: "James P. Henry",
-    year: "1952",
-    publisher: "Holloman Air Development Center",
-    description: "Informes desclasificados sobre las primeras incursiones biológicas en cohetes capturados, detallando los desafíos de ingeniería de soporte vital y la telemetría de los monos Albert."
-  },
-  {
-    title: "Primates in Space Exploration: A Bioethical History",
-    author: "Robert L. Jones",
-    year: "2015",
-    publisher: "Journal of Space History",
-    description: "Análisis crítico de los protocolos de experimentación animal en la era espacial temprana y sus implicaciones éticas y científicas en la astronáutica moderna."
-  },
-  {
-    title: "Survival in Space: The Medical Foundations",
-    author: "Richard S. Johnston",
-    year: "1975",
-    publisher: "Aviation, Space, and Environmental Medicine",
-    description: "Estudio profundo sobre cómo los fracasos y aciertos de las misiones suborbitales caninas y de primates sentaron las bases para los sistemas de soporte vital humanos."
-  },
-  {
-    title: "Chimpanzee Behavior Under Stress in Spaceflight",
-    author: "Joseph V. Brady",
-    year: "1962",
-    publisher: "Psychological Monographs",
-    description: "Análisis conductual meticuloso del desempeño psicomotor de Ham bajo estrés térmico y gravitacional durante la misión suborbital MR-2."
-  }
+  "Burgess, C., & Dubbs, C. (2007). Animals in Space: From Research Rockets to the Space Shuttle. Springer Praxis Books.",
+  "Henry, J. P. (1952). Aeromedical Reviews: The V-2 Monkey Flights. Holloman Air Development Center Technical Report.",
+  "NASA History Division (1961). Mercury-Redstone 2: The Flight of Ham the Chimpanzee. NASA Historical Data Book.",
+  "Gray, T. (1998). A Brief History of Animals in Space. NASA History Office.",
+  "Beischer, D. E., & Fregly, A. R. (1962). Animals and Man in Space: A Chronology and Annotated Bibliography Through the Year 1960. ONR Report."
 ];
 
-const CONTENT_DATA = [
+const INFOGRAPHIC_NODES = [
   {
-    id: "albert",
-    title: "Los Monos Albert: Los Primeros Pioneros (Albert I y II)",
-    icon: <Activity className="w-6 h-6" />,
-    paragraphs: [
-      "El programa espacial de los Estados Unidos comenzó su incursión en la exploración biológica a través de los vuelos suborbitales de los cohetes V-2 capturados a Alemania después de la Segunda Guerra Mundial. En este contexto nacieron las misiones de los monos Albert, cuyo propósito fundamental era probar la viabilidad del soporte vital básico, monitorizar la respuesta cardiovascular y respiratoria bajo aceleraciones extremas, y evaluar los efectos de la microgravedad transitoria en mamíferos. La primera misión, protagonizada por Albert I el 11 de junio de 1948, fue un intento audaz pero plagado de deficiencias tecnológicas que resultaron en la muerte del macaco rhesus por asfixia debido a las reducidas dimensiones de la cápsula y la falta de oxigenación adecuada durante el ascenso a sesenta y tres kilómetros de altitud, demostrando que la ingeniería de habitáculos biológicos aún estaba en su infancia y requería rediseños exhaustivos.",
-      "Un año más tarde, el 14 de junio de 1949, Albert II se convirtió en el primer primate en alcanzar verdaderamente el espacio exterior, superando la línea de Kármán al alcanzar una altitud de ciento treinta y cuatro kilómetros. Durante el trayecto ascendente y los instantes de ingravidez, los sofisticados sensores telemétricos acoplados al cuerpo del animal registraron datos fisiológicos invaluables, demostrando que un organismo complejo podía sobrevivir a la brutal aceleración de varios G y a las hostiles condiciones espaciales. Sin embargo, la misión concluyó en tragedia cuando el paracaídas principal de la cápsula falló durante la reentrada atmosférica, provocando un impacto catastrófico contra el suelo del desierto de Nuevo México; a pesar del desenlace letal, los registros electrocardiográficos recuperados validaron el diseño del sistema de telemetría médica que posteriormente protegería a los astronautas humanos.",
-      "El análisis detallado de la misión de Albert II proporcionó a los ingenieros biomédicos de la base de Holloman y de la Fuerza Aérea información crítica sobre el diseño de las cápsulas de soporte vital, obligando a reevaluar los sistemas de recuperación de los cohetes V-2. Se determinó que las fuerzas de impacto requerían de mecanismos de amortiguación mucho más robustos y de paracaídas redundantes, elementos que se implementarían en misiones sucesivas. Este sacrificio temprano sentó las bases para los rigurosos protocolos de pruebas aeromédicas, estableciendo un precedente metodológico en el que cada error de ingeniería se traducía en una mejora progresiva de la seguridad, transformando los fracasos iniciales en escalones indispensables hacia la viabilidad de los futuros vuelos tripulados por seres humanos en los programas Mercury y Apollo.",
-      "Los sucesores directos, como Albert III y Albert IV, continuaron esta peligrosa tradición de vuelos suborbitales, enfrentándose a explosiones catastróficas y fallos en los sistemas de paracaídas que, aunque resultaron mortales, continuaron refinando la comprensión de la aerodinámica y la supervivencia biomédica. El vuelo de Albert IV, realizado el doce de diciembre de mil novecientos cuarenta y nueve, fue particularmente significativo porque se probaron nuevos instrumentos de monitoreo continuo que lograron transmitir lecturas vitales estables hasta el momento preciso del impacto, evidenciando que el estrés fisiológico extremo del lanzamiento podía ser tolerado por el sistema circulatorio del macaco sin inducir un fallo cardíaco inmediato, desafiando las teorías pesimistas de la época que predecían el colapso vascular instantáneo en condiciones de microgravedad.",
-      "Finalmente, el legado de la serie de los monos Albert culminó con el vuelo de Albert VI (también conocido como Yorick) y sus compañeros ratones en mil novecientos cincuenta y uno, quienes lograron sobrevivir al impacto gracias a mejoras revolucionarias en los sistemas de paracaídas, aunque el macaco pereció poco después por estrés térmico. Esta odisea pionera, a menudo oscurecida por los éxitos posteriores de chimpancés y humanos, constituye el pilar fundamental de la medicina espacial moderna, ya que demostró empíricamente la viabilidad de la vida en el espacio exterior y forjó los estándares de ingeniería biomédica, los protocolos de telemetría de soporte vital y la ética de la experimentación biológica que guiaron irremediablemente el transcurso de la era espacial temprana y permitieron la conquista definitiva del cosmos."
+    "id": "albert-1-v2",
+    "title": "Albert I: El Primer Ensayo en Cohete V-2",
+    "color": "#4FA3B5",
+    "btnImage": "/assets/animales/mamiferos_rhesus.webp",
+    "image": "/assets/animales/hub_albert_ham.webp",
+    "bannerImage": "/assets/animales/infographic_m1/banner_vuelo-primates.webp",
+    "content": [
+      "El 11 de junio de 1948, el desierto de White Sands en Nuevo México fue testigo de una de las misiones aeromédicas más trascendentales de la historia de la ciencia. La Fuerza Aérea de los Estados Unidos y la Escuela de Medicina de Aviación prepararon un cohete V-2 capturado tras la Segunda Guerra Mundial para transportar en su ojiva a Albert I, un macaco rhesus anestesiado. El propósito fundamental era determinar si un mamífero con fisiología cardiovascular y pulmonar similar a la de un ser humano podía sobrevivir a la tremenda aceleración vertical de un despegue supersónico y a la rápida transición hacia la microgravedad.",
+      "La cápsula que albergaba a Albert I era un compartimento de acero sumamente angosto y rudimentario, diseñado con escasos conocimientos sobre soporte vital en grandes altitudes. Dentro del habitáculo presurizado, los científicos instalaron sensores galvánicos para registrar la frecuencia respiratoria y electrodos torácicos con el fin de obtener un electrocardiograma continuo durante la trayectoria balística. No existían en ese momento trajes espaciales miniaturizados ni sistemas de reciclaje térmico, por lo que el animal dependía enteramente de botellas de oxígeno a presión fijas.",
+      "Durante el ascenso, el cohete V-2 alcanzó una altitud de sesenta y tres kilómetros, atravesando la estratosfera e ingresando en la mesosfera a una velocidad superior a los cuatro mil kilómetros por hora. Aunque la telemetría biológica indicó que los registros vitales de Albert I cesaron poco antes de alcanzar el apogeo debido a fallos en el suministro de oxígeno de la cápsula presurizada, los sensores mecánicos demostraron que la estructura biológica soportó sin fracturas ni hemorragias internas masivas las brutales fuerzas de inercia y vibración del motor del cohete.",
+      "El descenso de la ojiva culminó en un impacto catastrófico en el terreno desértico debido a que el sistema de expulsión de paracaídas sufrió una rotura mecánica por la extrema resistencia aerodinámica. El equipo de recuperación aeromédica liderado por el doctor James P. Henry tuvo que lidiar con la pérdida del sujeto, pero las cintas de telemetría de radio recuperadas de la estación terrestre aportaron la primera confirmación empírica de que los impulsos nerviosos y el sistema circulatorio básico de un primate pueden continuar operando a decenas de miles de metros de altitud.",
+      "La misión de Albert I dejó lecciones de ingeniería indispensables para el diseño de habitáculos espaciales. Demostró con crudeza que los contenedores estáticos no eran suficientes y que se requerían cápsulas con amortiguación biomecánica activa, redundancia múltiple en el flujo de oxígeno y paracaídas con desaceleración en varias fases. Aquel trágico primer paso marcó el nacimiento formal de la medicina aeroespacial moderna y colocó el soporte vital de mamíferos como la máxima prioridad de la ingeniería de vuelo."
+    ],
+    "fact": "La cápsula de Albert I en el cohete V-2 de White Sands fue el primer habitáculo biológico en la historia humana equipado con telemetría telemétrica en tiempo real para transmitir datos respiratorios y cardíacos desde la alta atmósfera hacia antenas receptoras terrestres.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los análisis aeromédicos de 1948 evidenciaron que la desaceleración del flujo de oxígeno a presiones atmosféricas inferiores a cincuenta milibares requiere sistemas presurizados automáticos con válvulas antirretorno para impedir la anoxia anóxica cerebral súbita en primates."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El doctor James Henry bautizó informalmente al macaco como Albert en homenaje a Albert Einstein, inaugurando la histórica serie de experimentos biológicos suborbitales que llevaría el mismo nombre a lo largo de toda la década de 1950 en Estados Unidos."
+      }
     ]
   },
   {
-    id: "ham",
-    title: "El Chimpancé Ham: Un Salto Hacia el Proyecto Mercury",
-    icon: <Cpu className="w-6 h-6" />,
-    paragraphs: [
-      "A finales de los años cincuenta, con el establecimiento de la Administración Nacional de Aeronáutica y del Espacio (NASA), el enfoque de la experimentación animal se desplazó desde los macacos de la Fuerza Aérea hacia los chimpancés, considerados fisiológicamente y neurológicamente más afines a los seres humanos. En este contexto surge Ham, un chimpancé originario del Camerún francés, quien fue seleccionado entre docenas de candidatos en el Centro de Medicina Aeroespacial Holloman para participar en el Proyecto Mercury. A diferencia de los monos Albert, que eran esencialmente pasajeros pasivos en sus vuelos, Ham fue sometido a un riguroso régimen de entrenamiento operante diseñado por neurobiólogos y psicólogos del comportamiento, el cual consistía en enseñarle a accionar palancas específicas en respuesta a señales luminosas y sonoras, recibiendo recompensas de puré de plátano por sus aciertos y leves descargas eléctricas en las plantas de los pies ante los errores.",
-      "El 31 de enero de mil novecientos sesenta y uno, el chimpancé Ham fue acoplado al cohete Redstone en el vuelo Mercury-Redstone 2 (MR-2), una misión suborbital crucial cuyo éxito era indispensable antes de arriesgar la vida del astronauta Alan Shepard. Durante la fase de lanzamiento, una anomalía en el regulador de presión del cohete provocó una combustión acelerada del propelente, lo que sometió a Ham a fuerzas extremas de hasta catorce G y propulsó la cápsula a una altitud de doscientos cincuenta y tres kilómetros, superando ampliamente los parámetros originales de la trayectoria suborbital planeada. A pesar de estas condiciones imprevistas y de una pérdida parcial de la presión en la cabina (mitigada por el traje espacial presurizado que llevaba puesto), los registros telemétricos demostraron que Ham continuó ejecutando las tareas psicomotoras que había aprendido con un margen de error menor a una fracción de segundo en comparación con su rendimiento en los simuladores terrestres.",
-      "La capacidad de Ham para interactuar cognitivamente con los paneles de control en un entorno de ingravidez, estrés térmico y aceleración brutal desmintió categóricamente el temor profundamente arraigado entre los fisiólogos de la época de que la exposición al entorno espacial incapacitaría mental y físicamente a los astronautas. Los datos recopilados confirmaron que la percepción sensorial, los tiempos de reacción motora y las funciones ejecutivas primarias no sufrían deterioros catastróficos en microgravedad temporal, brindando a la NASA la validación biomédica y psicológica necesaria para proceder con los vuelos tripulados humanos. Esta demostración de competencia cognitiva bajo estrés espacial extremo representó un salto cualitativo en la medicina aeroespacial, pasando de la mera supervivencia biológica al mantenimiento de la funcionalidad operativa plena.",
-      "El descenso y recuperación de la cápsula de Ham también estuvieron marcados por la adversidad, puesto que el ángulo de reentrada más pronunciado de lo previsto resultó en un amerizaje a más de doscientos kilómetros del navío de recuperación asignado en el Océano Atlántico. La cápsula comenzó a hacer agua debido a la rotura del escudo térmico y la presión hidrostática sobre los sellos de la escotilla, obligando a los helicópteros de rescate a intervenir apresuradamente para izar el vehículo antes de que se hundiera en las profundidades oceánicas con el chimpancé en su interior. Cuando Ham fue extraído de la cápsula, aparentemente ileso, exhausto pero receptivo, la fotografía del primate esbozando lo que parecía una sonrisa (aunque para los primatólogos es una expresión de terror extremo) se convirtió en un símbolo global de la proeza técnica estadounidense y un testimonio incontrovertible de que el soporte vital del Proyecto Mercury era funcional y resistente.",
-      "El legado de Ham trascendió el ámbito meramente técnico para instalarse en la conciencia pública como el héroe anónimo que desbrozó el camino para los exploradores espaciales norteamericanos, asegurando que el vuelo de Alan Shepard tres meses después se desarrollara con un alto grado de confianza institucional. Tras su histórico vuelo, Ham fue retirado del programa espacial y trasladado al Parque Zoológico Nacional de Washington D.C., donde vivió durante diecisiete años antes de ser transferido a un santuario en Carolina del Norte. Su esqueleto fue finalmente conservado por el Instituto de Patología de las Fuerzas Armadas, mientras que sus restos restantes fueron enterrados frente al Salón de la Fama del Espacio en Alamogordo, Nuevo México, perpetuando su memoria como una figura central y fundacional en la historia de la astronáutica internacional y la bioingeniería aeroespacial moderna."
+    "id": "albert-2-karman",
+    "title": "Albert II: Cruce Histórico de la Línea de Kármán",
+    "color": "#D4A843",
+    "btnImage": "/assets/animales/mamiferos_rhesus.webp",
+    "image": "/assets/animales/hub_albert_ham.webp",
+    "bannerImage": "/assets/animales/infographic_m1/banner_vuelo-primates.webp",
+    "content": [
+      "Un año después del primer intento, el 14 de junio de 1949, la Fuerza Aérea norteamericana lanzó el cohete V-2 número 47 llevando a bordo a Albert II, un macaco rhesus anestesiado con pentobarbital sódico. En esta ocasión, los ingenieros habían rediseñado completamente el sistema de sellado hermético y la cápsula respiratoria para evitar los fallos de oxigenación previos. El objetivo era superar los cien kilómetros de altitud sobre la superficie terrestre, penetrando por primera vez en el verdadero espacio exterior.",
+      "El lanzamiento se desarrolló de manera impecable y el cohete trepó en trayectoria casi vertical hasta alcanzar un apogeo de ciento treinta y cuatro kilómetros sobre el desierto de White Sands. Al superar los cien kilómetros de cota, Albert II se transformó formalmente en el primer mamífero y primer primate de la historia en cruzar la frontera del espacio exterior, conocida internacionalmente como la línea de Kármán, entrando en una región donde la atmósfera terrestre es prácticamente inexistente.",
+      "Durante los minutos de ingravidez en el cenit de la parábola balística, la telemetría biomédica continuó transmitiendo datos estables hacia los receptores en tierra. Los registros electrocardiográficos revelaron que el ritmo cardíaco del primate se mantuvo dentro de rangos fisiológicos seguros y la presión arterial periférica no experimentó los colapsos hidrostáticos catastróficos que muchos científicos teóricos de la época habían augurado para un corazón operando sin la atracción gravitatoria.",
+      "Desafortunadamente, durante el reingreso a la atmósfera densa a más de cinco veces la velocidad del sonido, el sistema de paracaídas volvió a fallar por un desgarro en las cuerdas de suspensión provocado por la violencia del choque con las capas de aire. La cápsula se estrelló a alta velocidad en el desierto, acabando instantáneamente con la vida del primate. A pesar del fatídico desenlace, la instrumentación de registro fue recuperada casi intacta dentro de su caja de acero endurecido.",
+      "El sacrificio de Albert II proporcionó la prueba científica definitiva de que un mamífero complejo puede sobrevivir a las brutales aceleraciones del despegue y a la ingravidez orbital sin sufrir paros cardiorrespiratorios ni daños cerebrales. Este hito demostró empíricamente a la comunidad médica internacional que el ser humano poseía la capacidad biológica para viajar al espacio, transformando la exploración espacial de una fantasía teórica en una meta de ingeniería viable."
+    ],
+    "fact": "Albert II fue el primer mamífero de la historia en rebasar los 100 kilómetros de altitud, registrando datos biomédicos activos a 134 kilómetros sobre la superficie de la Tierra y demostrando que la microgravedad no paraliza el corazón de los primates.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los electrocardiogramas de Albert II transmitidos a 134 km de altitud demostraron que el sistema cardiovascular de los mamíferos mantiene la perfusión cerebral y el gasto cardíaco sin depender exclusivamente del gradiente de gravedad terrestre convencional."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los técnicos de White Sands apodaban al cohete V-2 que transportó a Albert II 'La Flecha Sagrada' debido a la extraordinaria estabilidad aerodinámica que mantuvo durante los primeros noventa segundos de vuelo en su rumbo al espacio exterior."
+      }
+    ]
+  },
+  {
+    "id": "albert-3-4-redstone",
+    "title": "Albert III, IV y Yorick: Telemetría Continua",
+    "color": "#8FAF7A",
+    "btnImage": "/assets/animales/mamiferos_rhesus.webp",
+    "image": "/assets/animales/hub_albert_ham.webp",
+    "bannerImage": "/assets/animales/infographic_m1/banner_ensayos-biologicos.webp",
+    "content": [
+      "Entre finales de 1949 y 1951, el programa biomédico de Holloman continuó con los vuelos de Albert III, Albert IV y Albert VI (rebautizado como Yorick). Cada una de estas misiones introdujo sensores más refinados, electroencefalogramas de superficie y sistemas de amortiguación hidráulica en las literas de sujeción. La meta prioritaria de la Escuela de Medicina Aeroespacial era resolver el problema recurrente de la recuperación en paracaídas para conseguir que un mamífero regresara vivo del espacio.",
+      "El vuelo de Albert III en noviembre de 1949 terminó en una explosión del cohete a diez kilómetros de altura debido a un fallo en la cámara de combustión del motor V-2. Sin embargo, el vuelo de Albert IV en diciembre de ese mismo año logró llegar a ciento treinta kilómetros de altura, transmitiendo telemetría continua de once canales que documentó la resistencia neuromuscular ante fuerzas de aceleración de hasta quince veces la gravedad terrestre sin rotura de vasos sanguíneos mayores.",
+      "En septiembre de 1951, la misión de Albert VI (Yorick), acompañado por once ratones de laboratorio dentro de un cohete Aerobee, logró un avance histórico. La cápsula alcanzó setenta y dos kilómetros de altura y, gracias a un nuevo sistema de desaceleración balística con paracaídas de apertura retardada y cápsula amortiguada con espuma de poliuretano, el habitáculo tocó tierra sin destruirse. Yorick y sus compañeros ratones se convirtieron en los primeros mamíferos en sobrevivir al impacto de regreso de un vuelo en cohete espacial.",
+      "A pesar de haber superado el impacto del aterrizaje con signos vitales estables, Yorick falleció un par de horas más tarde debido al sobrecalentamiento térmico acumulado dentro de la cápsula mientras esperaba al equipo de rescate bajo el abrasador sol del desierto de White Sands. Los once ratones, por su parte, sobrevivieron sin secuelas a largo plazo y fueron estudiados durante meses en los laboratorios de Wright-Patterson para evaluar la posible degradación tisular celular.",
+      "La serie de misiones de Holloman transformó radicalmente la bioingeniería aeroespacial estadounidense. Se descubrió la necesidad crítica de dotar a las cápsulas espaciales de sistemas de control ambiental y refrigeración activa posaterrizaje, sellados herméticos con aislamiento térmico multicapa y transmisores de localización por radiobaliza, tecnologías que serían adoptadas directamente por el naciente Proyecto Mercury para proteger a los futuros astronautas."
+    ],
+    "fact": "El macaco Yorick (Albert VI) y sus once compañeros roedores en el cohete Aerobee de 1951 fueron los primeros mamíferos en sobrevivir físicamente al aterrizaje de una cápsula tras un vuelo a la alta atmósfera, validando los paracaídas de frenado progresivo.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La recuperación de los ratones de Yorick en 1951 permitió realizar los primeros estudios histológicos y cromosómicos de mamíferos expuestos al bombardeo de radiación cósmica primaria sin el escudo de la atmósfera inferior densa."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Yorick fue inmortalizado con una réplica de su litera de amortiguación en el Museo Nacional del Aire y el Espacio del Smithsonian en Washington, reconociendo su papel indispensable en el desarrollo del soporte vital de la NASA."
+      }
+    ]
+  },
+  {
+    "id": "ham-chimpance-mr2",
+    "title": "Ham el Chimpancé: El Vuelo Suborbital Mercury-Redstone 2",
+    "color": "#FF9FFF",
+    "btnImage": "/assets/animales/ham_training.webp",
+    "image": "/assets/animales/ham_ship_3d.webp",
+    "bannerImage": "/assets/animales/infographic_m1/banner_vuelo-primates.webp",
+    "content": [
+      "Para la misión Mercury-Redstone 2 (MR-2) del 31 de enero de 1961, la NASA seleccionó a un chimpancé de tres años llamado Ham, entrenado exhaustivamente en la Base Holloman de la Fuerza Aérea. A diferencia de los experimentos de la década anterior, Ham no fue un mero sujeto pasivo: fue entrenado mediante condicionamiento operante para manipular palancas mecánicas en respuesta a luces intermitentes de colores, evaluando si el cerebro de un primate podía ejecutar tareas cognitivas complejas en medio del estrés del despegue y la microgravedad.",
+      "Durante el lanzamiento en Cabo Cañaveral, una falla en la válvula reguladora del cohete Redstone provocó una combustión acelerada del combustible de alcohol y oxígeno líquido. Esto impulsó a la nave a una velocidad imprevista de ocho mil quinientos kilómetros por hora y sometió a Ham a una tremenda aceleración de catorce punto siete G durante el ascenso, elevando la cápsula hasta los doscientos cincuenta y tres kilómetros de altitud, muy por encima de la trayectoria prevista.",
+      "A pesar de las violentas fuerzas de inercia y de una repentina pérdida de presión en la cabina (que fue contenida por su traje espacial presurizado biológico), los registros de telemetría confirmaron que Ham continuó operando sus palancas con asombrosa precisión milimétrica. Su velocidad de respuesta fue apenas una fracción de segundo menor a la que registraba en los laboratorios de entrenamiento en tierra, demostrando que el raciocinio y la coordinación motora fina no se degradaban en el espacio.",
+      "La cápsula amerizó en el Océano Atlántico a casi doscientos kilómetros de distancia del buque de rescate USS Donner debido a la trayectoria más alta de lo planificado. Para complicar las cosas, la cápsula comenzó a inundarse con agua marina por una válvula abierta. Afortunadamente, un helicóptero de rescate izó la nave a tiempo y extrajo a Ham sano y salvo. Al salir, Ham estrechó la mano del médico del barco y comió con entusiasmo una manzana y media naranja.",
+      "El éxito indiscutible del vuelo de Ham demostró al mundo y a la dirección de la NASA que la cápsula espacial Mercury era segura, presurizable y funcional para un ser vivo. Con los datos médicos y de desempeño cognitivo de Ham en la mano, el director médico de la misión dio luz verde definitiva para que el astronauta Alan Shepard realizara el primer vuelo espacial tripulado por un estadounidense en mayo de ese mismo año."
+    ],
+    "fact": "El chimpancé Ham ejecutó pruebas psicomotoras accionando palancas bajo 14.7 G de aceleración y 6.6 minutos de microgravedad en el vuelo MR-2 de 1961, demostrando que un ser vivo puede operar controles de una nave espacial en órbita.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los sensores instalados en el traje de Ham registraron un pulso basal de setenta latidos por minuto que subió a ciento setenta durante el empuje de catorce G, estabilizándose de inmediato al ingresar en microgravedad orbital sin arritmias."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El nombre 'HAM' es un acrónimo de Holloman Aerospace Medical Center; la NASA mantuvo en secreto su nombre antes del vuelo para evitar críticas públicas si la misión suborbital sufría un accidente catastrófico."
+      }
+    ]
+  },
+  {
+    "id": "enos-orbita-mercury",
+    "title": "Enos: El Primer Primate Estadounidense en Órbita",
+    "color": "#00E4FF",
+    "btnImage": "/assets/animales/ham_training.webp",
+    "image": "/assets/animales/ham_ship_3d.webp",
+    "bannerImage": "/assets/animales/infographic_m1/banner_vuelo-primates.webp",
+    "content": [
+      "Tras el salto suborbital de Ham y los vuelos de Shepard y Grissom, la NASA enfrentaba el desafío supremo: colocar una nave en órbita completa alrededor de la Tierra impulsada por el potente cohete Atlas. Para validar que el sistema de soporte vital funcionaba durante horas consecutivas en el vacío espacial antes de comprometer la vida de John Glenn, se preparó la misión Mercury-Atlas 5 con el chimpancé Enos a bordo el 29 de noviembre de 1961.",
+      "Enos había recibido más de mil doscientas horas de entrenamiento psicomotor avanzado en simuladores centrífugos, cámaras de aislamiento sensorial y cabinas térmicas en la Base Holloman. Durante su vuelo orbital, el chimpancé debía resolver secuencias lógicas accionando interruptores y respondiendo a patrones visuales para recibir pequeñas recompensas líquidas, soportando largas horas de ingravidez continua a veintiocho mil kilómetros por hora.",
+      "Durante la segunda órbita, ocurrió un grave fallo electromecánico en el panel de condicionamiento: el circuito eléctrico comenzó a administrarle descargas en los pies incluso cuando Enos accionaba la palanca correcta. A pesar de la injusta penalización eléctrica y del dolor resultante, Enos demostró una tenacidad cognitiva extraordinaria: siguió analizando las luces y pulsando los comandos correctos sin entrar en pánico ni abandonar la tarea operativa.",
+      "Simultáneamente, los sensores térmicos de la nave detectaron un sobrecalentamiento en la cabina y una avería en los propulsores de actitud de gas helio, lo que causaba un balanceo descontrolado. El director de vuelo Christopher Kraft tomó la prudente decisión de cancelar la tercera órbita y ordenar el reingreso inmediato tras completar dos vueltas al planeta. Enos amerizó en el mar de Puerto Rico y fue recuperado en excelente estado de salud física y mental.",
+      "La misión orbital de Enos fue la prueba de fuego definitiva para el hardware del Proyecto Mercury. Demostró que el cohete Atlas era confiable para transportar vidas, que el traje espacial protegía del calor excesivo y que un piloto primate podía mantener la serenidad y la precisión mental bajo estrés técnico severo. El vuelo allanó el camino directo para que John Glenn se convirtiera en el primer estadounidense en orbitar la Tierra tres meses después."
+    ],
+    "fact": "Enos completó dos órbitas completas alrededor del planeta Tierra a 28,000 km/h en la misión Mercury-Atlas 5 de 1961, resistiendo fallos de propulsión y problemas de sobrecalentamiento de la nave con disciplina operativa.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La telemetría de Enos permitió monitorear durante más de tres horas y quince minutos la hidratación, excreción y respuesta neuromuscular en ingravidez continua, refutando los mitos de atrofia neuromuscular súbita en el espacio."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cuando los rescatistas abrieron la escotilla en el USS Stormes, Enos saltó con energía alrededor de la cubierta y abrazó afectuosamente a sus entrenadores, mostrando un estado físico impecable tras su hazaña orbital."
+      }
+    ]
+  },
+  {
+    "id": "baker-able-jupiter",
+    "title": "Able y Baker: Supervivencia Heroica en el Cohete Júpiter",
+    "color": "#FFD700",
+    "btnImage": "/assets/animales/mamiferos_rhesus.webp",
+    "image": "/assets/animales/hub_albert_ham.webp",
+    "bannerImage": "/assets/animales/infographic_m1/banner_ensayos-biologicos.webp",
+    "content": [
+      "El 28 de mayo de 1959, dos monas llamadas Able (una macaco rhesus nacida en Kansas) y Baker (una pequeña mona ardilla de Perú) abordaron la ojiva del misil balístico Júpiter AM-18 en Cabo Cañaveral. Diseñada por el equipo de ingenieros de Wernher von Braun y la Marina estadounidense, esta misión fue concebida como la primera prueba biológica integral con escudo térmico ablativo de reingreso militar de alta velocidad.",
+      "El cohete alcanzó una altitud de quinientos catorce kilómetros y recorrió dos mil setecientos kilómetros de distancia horizontal sobre el Atlántico, alcanzando una velocidad de dieciséis mil kilómetros por hora y sometiendo a las tripulantes a fuerzas de frenado aerodinámico de hasta treinta y ocho G durante la violenta caída balística. Ambas contaban con sistemas de telemetría independientes acoplados a sus diminutas literas de fibra de vidrio.",
+      "Las monas pasaron nueve minutos completos en estado de ingravidez pura mientras surcaban la ionosfera. Los electrodos registraron que, tras la conmoción inicial del empuje del despegue, los ritmos respiratorios y la actividad cardíaca de Able y Baker retornaron a niveles basales estables durante el vuelo orbital, confirmando la resiliencia innata del sistema nervioso central de los primates ante la pérdida de peso aparente.",
+      "El escudo ablativo resistió de manera impecable los más de mil seiscientos grados centígrados de fricción atmosférica y los paracaídas se desplegaron a la perfección. La ojiva amerizó cerca de la isla de Antigua y el buque USS Kiowa rescató a ambas monas completamente vivas y activas. Fue la primera vez en la historia de los Estados Unidos que mamíferos regresaban con vida e ilesos de un viaje espacial balístico a gran escala.",
+      "La mona Baker se convirtió en una celebridad mundial y un símbolo del avance biomédico espacial. Fue condecorada con medallas de mérito civil y vivió durante veinticinco años en el Centro Espacial y de Cohetes de Alabama en Huntsville, donde falleció pacíficamente de vejez en 1984 a los veintisiete años de edad, habiendo inspirado a millones de estudiantes y futuros ingenieros espaciales en todo el planeta."
+    ],
+    "fact": "Able y Baker sobrevivieron a un reingreso a 16,000 km/h y 38 G de desaceleración en el misil Júpiter en 1959, convirtiéndose en los primeros mamíferos de EE. UU. en regresar con vida de un vuelo a más de 500 km de altitud.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La litera de Baker incluía un electroencefalograma de cuatro canales acoplado a un transmisor FM de estado sólido, siendo uno de los primeros circuitos electrónicos miniaturizados aplicados con éxito a la medicina de vuelo."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La tumba de la mona Baker en Huntsville, Alabama, es un sitio histórico muy visitado donde niños y visitantes de todo el mundo acostumbran dejar plátanos y nueces sobre su lápida como homenaje a su contribución espacial."
+      }
+    ]
+  },
+  {
+    "id": "legado-biomedico-espacial",
+    "title": "El Legado Biomédico: El Camino Hacia el Ser Humano",
+    "color": "#A8FF78",
+    "btnImage": "/assets/animales/mamiferos_rhesus.webp",
+    "image": "/assets/animales/hub_albert_ham.webp",
+    "bannerImage": "/assets/animales/infographic_m1/banner_vuelo-primates.webp",
+    "content": [
+      "Las misiones de primates entre 1948 y 1961 no solo fueron proezas de audacia técnica, sino que constituyeron el cimiento experimental insustituible sobre el cual se construyó la totalidad de la medicina espacial moderna. Antes de estos vuelos, eminentes teóricos médicos pronosticaban que el corazón humano no podría bombear sangre hacia el cerebro en ingravidez, que los ojos perderían el enfoque retiniano y que la digestión se detendría por completo.",
+      "Cada registro electrocardiográfico, cada lectura respiratoria y cada palanca accionada por Albert, Ham y Enos aportó datos biomédicos cuantitativos que demolieron los mitos del colapso fisiológico. Gracias a sus mediciones, los ingenieros de la NASA y de las agencias espaciales del mundo aprendieron a diseñar trajes espaciales presurizados con regulación térmica activa, mezclas gaseosas respirables de oxígeno y nitrógeno, y literas de sustentación anatómica.",
+      "Asimismo, las tecnologías pioneras desarrolladas para monitorear a los primates en vuelo balístico dieron origen a aplicaciones de uso civil directo en la medicina hospitalaria terrestre. Los pequeños sensores de frecuencia cardíaca telemétrica, los electrodos adheribles de monitorización intensiva y los sistemas inalámbricos de reanimación médica que hoy salvan vidas en unidades de cuidados intensivos y ambulancias nacieron en los laboratorios de Holloman y White Sands.",
+      "El sacrificio y desempeño de estos animales también impulsó una profunda evolución bioética en la comunidad científica internacional. Las dificultades enfrentadas durante las primeras misiones de los cohetes V-2 obligaron a formular normativas internacionales estrictas sobre bienestar animal, protocolos no invasivos de contención y sistemas de respaldo de emergencia que hoy regulan cualquier investigación biológica en órbita terrestre y en la Estación Espacial Internacional.",
+      "Al conmemorar los grandes hitos de astronautas legendarios como Yuri Gagarin, Alan Shepard o John Glenn, la historia aeroespacial reconoce que ninguno de sus logros habría sido posible sin el camino trazado por estos pioneros biológicos. Sus viajes a través de la atmósfera y el espacio exterior demostraron de forma concluyente que la vida de nuestro planeta puede aventurarse más allá de los confines de la Tierra y conquistar el cosmos."
+    ],
+    "fact": "Los sistemas de telemetría cardiovascular y electrodos miniaturizados diseñados para los primates en Holloman fueron transferidos directamente a la medicina hospitalaria para crear las primeras unidades de terapia intensiva y monitoreo cardíaco en tierra.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los protocolos de aceleración controlada en centrífugas probados en primates determinaron los límites humanos de tolerancia a fuerzas G vectoriales (Gx y Gz), estableciendo la orientación supina de las butacas de los astronautas del Proyecto Mercury."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el Centro de Vuelo Espacial Goddard de la NASA existe una placa conmemorativa dedicada a los primates y animales pioneros que brindaron los datos médicos necesarios para que la humanidad pudiera alcanzar la Luna con seguridad."
+      }
     ]
   }
 ];
 
 export default function InteractiveInfographic_AnimalesM2() {
-  const [activeSection, setActiveSection] = useState(null);
+  const [selectedNode, setSelectedNode] = useState(0);
+  const [expandedSections, setExpandedSections] = useState({});
   const [lightboxSrc, setLightboxSrc] = useState(null);
-  const [isMounted, setIsMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [showBiblio, setShowBiblio] = useState(false);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    setIsMounted(true);
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const toggleSection = (id) => {
-    setActiveSection(prev => (prev === id ? null : id));
+  const toggleExpandable = (nodeId, index) => {
+    const key = `${nodeId}-${index}`;
+    setExpandedSections(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
-  if (!isMounted) return null;
+  const node = INFOGRAPHIC_NODES[selectedNode];
 
   return (
-    <div className="w-full max-w-5xl mx-auto bg-[#1A1F2B] text-white rounded-xl shadow-2xl overflow-hidden font-sans border border-[#3949AB]/30">
-      {/* Hero Banner */}
-      <div className="relative h-72 md:h-96 w-full overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('/assets/course/animales_pioneros/banner_animales.jpg')` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1A1F2B] via-[#1A1F2B]/60 to-transparent" />
-        <div className="absolute bottom-0 left-0 p-8 w-full">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="flex items-center gap-3 mb-2">
-              <Rocket className="text-[#80DEEA] w-8 h-8" />
-              <h2 className="text-[#80DEEA] text-lg font-bold tracking-widest uppercase">Módulo: animales_albert_ham</h2>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-[#D4B872] drop-shadow-lg mb-4">
-              Primates en el Espacio
-            </h1>
-            <p className="text-[#D87D4A] text-xl font-light italic max-w-3xl">
-              Monos Albert y el chimpancé Ham: El sacrificio y la audacia biológica que prepararon el terreno para la conquista espacial humana.
-            </p>
-          </motion.div>
-        </div>
+    <div ref={containerRef} style={{
+      background: 'radial-gradient(ellipse at 50% 20%, #1a1a2e 0%, #0d0d15 60%, #050508 100%)',
+      minHeight: '100vh',
+      color: '#e2e8f0',
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      position: 'relative',
+      overflow: 'hidden',
+      padding: isMobile ? '16px 8px' : '32px 16px',
+    }}>
+      {/* Header */}
+      <header style={{ textAlign: 'center', marginBottom: isMobile ? 24 : 40 }}>
+        <span style={{
+          fontSize: isMobile ? '0.75rem' : '0.875rem',
+          fontWeight: 700,
+          color: '#4FA3B5',
+          letterSpacing: '0.15em',
+          textTransform: 'uppercase',
+          display: 'block',
+          marginBottom: 8,
+        }}>
+          MÓDULO: ANIMALES_ALBERT_HAM
+        </span>
+        <h1 style={{
+          fontSize: isMobile ? '1.75rem' : '2.5rem',
+          fontWeight: 800,
+          color: '#ffffff',
+          letterSpacing: '-0.02em',
+          margin: 0,
+          textShadow: '0 2px 20px rgba(0,0,0,0.5)',
+        }}>
+          Primates en el Espacio: De los Monos Albert a Ham y Enos
+        </h1>
+      </header>
+
+      {/* Selector de Nodos Circulares */}
+      <div style={{
+        display: 'flex',
+        justifyContent: isMobile ? 'flex-start' : 'center',
+        gap: isMobile ? 12 : 20,
+        overflowX: isMobile ? 'auto' : 'visible',
+        paddingBottom: isMobile ? 16 : 32,
+        paddingLeft: isMobile ? 8 : 0,
+        paddingRight: isMobile ? 8 : 0,
+        scrollbarWidth: 'none',
+      }}>
+        {INFOGRAPHIC_NODES.map((n, idx) => {
+          const isSelected = idx === selectedNode;
+          return (
+            <button
+              key={n.id}
+              onClick={() => setSelectedNode(idx)}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
+                flexShrink: 0,
+                outline: 'none',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <div style={{
+                width: isMobile ? 54 : 70,
+                height: isMobile ? 54 : 70,
+                borderRadius: '50%',
+                padding: 3,
+                background: isSelected
+                  ? `linear-gradient(135deg, ${n.color}, #ffffff)`
+                  : 'rgba(255,255,255,0.1)',
+                boxShadow: isSelected
+                  ? `0 0 20px ${n.color}80`
+                  : 'none',
+                transform: isSelected ? 'scale(1.1)' : 'scale(1)',
+                transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+              }}>
+                <div style={{
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  background: '#0a0a14',
+                }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={n.btnImage}
+                    alt={n.title}
+                    loading="lazy"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                </div>
+              </div>
+              <span style={{
+                fontSize: isMobile ? '0.7rem' : '0.8rem',
+                fontWeight: isSelected ? 700 : 500,
+                color: isSelected ? n.color : '#94a3b8',
+                marginTop: 8,
+                maxWidth: isMobile ? 70 : 90,
+                textAlign: 'center',
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+              }}>
+                {n.title.split(':')[0]}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
-      <div className="p-8">
-        {/* Main Content Images */}
-        <div className="flex flex-col md:flex-row gap-6 mb-12">
-          <motion.div 
-            className="flex-1 rounded-lg overflow-hidden border border-[#D4B872]/30 shadow-lg shadow-[#D87D4A]/10"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-          >
-            <img 
-              src="/assets/course/animales_pioneros/hero_albert_ham.jpg" 
-              alt="Héroes Primates" 
-              className="w-full h-auto object-cover cursor-zoom-in"
-              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/hero_albert_ham.jpg')}
-            />
-          </motion.div>
-          <motion.div 
-            className="w-full md:w-1/3 rounded-lg overflow-hidden border border-[#3949AB]/30 shadow-lg shadow-[#80DEEA]/10 flex items-center justify-center bg-[#2C3E50]"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-          >
-            <img 
-              src="/assets/course/animales_pioneros/btn_albert_ham.jpg" 
-              alt="Detalle" 
-              className="w-full h-auto object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 cursor-zoom-in"
-              onClick={() => setLightboxSrc('/assets/course/animales_pioneros/btn_albert_ham.jpg')}
-            />
-          </motion.div>
-        </div>
+      {/* Content Panel */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={node.id}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.35 }}
+          style={{
+            maxWidth: 1100,
+            margin: '0 auto',
+            background: 'rgba(15, 23, 42, 0.75)',
+            border: `1px solid ${node.color}30`,
+            borderRadius: 24,
+            padding: isMobile ? 20 : 36,
+            backdropFilter: 'blur(16px)',
+            boxShadow: `0 20px 50px rgba(0,0,0,0.5), 0 0 30px ${node.color}15`,
+          }}
+        >
+          {/* Banner Panoramico si existe */}
+          {node.bannerImage && (
+            <div style={{
+              width: '100%',
+              height: isMobile ? 180 : 280,
+              borderRadius: 16,
+              overflow: 'hidden',
+              marginBottom: 28,
+              position: 'relative',
+              cursor: 'zoom-in',
+            }} onClick={() => setLightboxSrc(node.bannerImage)} >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={node.bannerImage}
+                alt={node.title}
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+              <div style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(to top, rgba(15,23,42,0.9) 0%, transparent 60%)',
+              }} />
+            </div>
+          )}
 
-        {/* Accordion Sections */}
-        <div className="space-y-6">
-          {CONTENT_DATA.map((section, index) => (
-            <motion.div 
-              key={section.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="border border-[#2C3E50] rounded-lg overflow-hidden bg-[#1A1F2B]/50"
-            >
-              <button
-                onClick={() => toggleSection(section.id)}
-                className="w-full p-6 flex items-center justify-between bg-gradient-to-r from-[#2C3E50]/40 to-transparent hover:bg-[#3949AB]/20 transition-colors duration-300"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-[#D87D4A]/10 rounded-full text-[#D4B872]">
-                    {section.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold text-[#E0E0E0]">
-                    {section.title}
-                  </h3>
-                </div>
-                {activeSection === section.id ? (
-                  <ChevronUp className="w-6 h-6 text-[#80DEEA]" />
-                ) : (
-                  <ChevronDown className="w-6 h-6 text-[#80DEEA]" />
-                )}
-              </button>
-              
-              <AnimatePresence>
-                {activeSection === section.id && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.4, ease: "easeInOut" }}
-                  >
-                    <div className="p-6 md:p-8 space-y-6 text-gray-300 leading-relaxed text-justify bg-[#151923]">
-                      {section.paragraphs.map((para, i) => (
-                        <p key={i} className="text-lg relative pl-4 border-l-2 border-[#D87D4A]/30">
-                          {para}
-                        </p>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Bibliography Section */}
-        <div className="mt-16 border-t border-[#3949AB]/40 pt-10">
-          <div className="flex items-center gap-3 mb-8">
-            <BookOpen className="text-[#D4B872] w-7 h-7" />
-            <h3 className="text-2xl font-bold text-[#D4B872]">Bibliografía Científica</h3>
+          {/* Titulo con Mini-Avatar Circular */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 24 }}>
+            <span style={{
+              display: 'inline-block',
+              width: 36,
+              height: 36,
+              borderRadius: '50%',
+              overflow: 'hidden',
+              border: `2px solid ${node.color}`,
+              flexShrink: 0,
+            }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={node.btnImage}
+                alt=""
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </span>
+            <h2 style={{
+              fontSize: isMobile ? '1.4rem' : '1.85rem',
+              fontWeight: 800,
+              color: node.color,
+              margin: 0,
+              lineHeight: 1.25,
+            }}>
+              {node.title}
+            </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {BIBLIOGRAPHY.map((item, idx) => (
-              <div 
-                key={idx} 
-                className="p-5 rounded-lg bg-[#2C3E50]/30 border border-[#80DEEA]/20 hover:border-[#80DEEA]/50 transition-colors"
-              >
-                <h4 className="text-xl font-semibold text-[#80DEEA] mb-2">{item.title}</h4>
-                <div className="flex items-center gap-2 text-sm text-[#D87D4A] mb-3">
-                  <span className="font-medium">{item.author}</span>
-                  <span>•</span>
-                  <span>{item.year}</span>
-                  <span>•</span>
-                  <span className="italic">{item.publisher}</span>
-                </div>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  {item.description}
+
+          {/* Layout 1fr 1fr con Hero Image y Texto */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr',
+            gap: isMobile ? 24 : 36,
+            alignItems: 'start',
+            marginBottom: 28,
+          }}>
+            {/* Hero Image */}
+            <div
+              style={{
+                borderRadius: 16,
+                overflow: 'hidden',
+                border: `1px solid ${node.color}40`,
+                boxShadow: '0 10px 30px rgba(0,0,0,0.6)',
+                cursor: 'zoom-in',
+                position: 'relative',
+                maxHeight: 400,
+              }}
+              onClick={() => setLightboxSrc(node.image)}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={node.image}
+                alt={node.title}
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
+
+            {/* Primeros 2 Parrafos */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              {node.content.slice(0, 2).map((para, i) => (
+                <p key={i} style={{
+                  fontSize: isMobile ? '0.92rem' : '1rem',
+                  lineHeight: 1.75,
+                  color: '#cbd5e1',
+                  margin: 0,
+                  textAlign: 'justify',
+                }}>
+                  {para}
                 </p>
-              </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Parrafos restantes (3, 4, 5) */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 28 }}>
+            {node.content.slice(2).map((para, i) => (
+              <p key={i + 2} style={{
+                fontSize: isMobile ? '0.92rem' : '1rem',
+                lineHeight: 1.75,
+                color: '#cbd5e1',
+                margin: 0,
+                textAlign: 'justify',
+              }}>
+                {para}
+              </p>
             ))}
           </div>
-        </div>
+
+          {/* Fact Destacado */}
+          {node.fact && (
+            <div style={{
+              background: `linear-gradient(135deg, ${node.color}15, transparent)`,
+              borderLeft: `4px solid ${node.color}`,
+              borderRadius: '0 16px 16px 0',
+              padding: '16px 20px',
+              marginBottom: 24,
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <Sparkles size={18} color={node.color} />
+                <span style={{ fontSize: '0.85rem', fontWeight: 700, color: node.color, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Hecho Histórico Clave
+                </span>
+              </div>
+              <p style={{ fontSize: isMobile ? '0.9rem' : '0.95rem', lineHeight: 1.65, color: '#f1f5f9', margin: 0, fontStyle: 'italic' }}>
+                {node.fact}
+              </p>
+            </div>
+          )}
+
+          {/* Expandables */}
+          {node.expandables && node.expandables.length > 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 20 }}>
+              {node.expandables.map((exp, idx) => {
+                const isExpanded = !!expandedSections[`${node.id}-${idx}`];
+                return (
+                  <div
+                    key={idx}
+                    style={{
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      borderRadius: 14,
+                      background: 'rgba(255,255,255,0.03)',
+                      overflow: 'hidden',
+                      transition: 'all 0.2s ease',
+                    }}
+                  >
+                    <button
+                      onClick={() => toggleExpandable(node.id, idx)}
+                      style={{
+                        width: '100%',
+                        padding: '14px 18px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        background: 'transparent',
+                        border: 'none',
+                        color: '#f8fafc',
+                        cursor: 'pointer',
+                        textAlign: 'left',
+                        fontWeight: 600,
+                        fontSize: '0.95rem',
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                        {exp.icon === 'atom' ? (
+                          <Atom size={18} color={node.color} />
+                        ) : (
+                          <Sparkles size={18} color={node.color} />
+                        )}
+                        <span>{exp.label}</span>
+                      </div>
+                      <ChevronDown
+                        size={18}
+                        style={{
+                          transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.2s ease',
+                          color: '#94a3b8',
+                        }}
+                      />
+                    </button>
+                    <AnimatePresence>
+                      {isExpanded && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.25 }}
+                          style={{ padding: '0 18px 16px 18px' }}
+                        >
+                          <p style={{
+                            fontSize: '0.9rem',
+                            lineHeight: 1.7,
+                            color: '#94a3b8',
+                            margin: 0,
+                            paddingTop: 8,
+                            borderTop: '1px solid rgba(255,255,255,0.05)',
+                          }}>
+                            {exp.text}
+                          </p>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Bibliografia Colapsable */}
+      <div style={{ maxWidth: 1100, margin: '36px auto 0', padding: '0 16px' }}>
+        <button
+          onClick={() => setShowBiblio(!showBiblio)}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 10,
+            background: 'rgba(255,255,255,0.04)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            borderRadius: 12,
+            padding: '10px 18px',
+            color: '#94a3b8',
+            fontSize: '0.85rem',
+            cursor: 'pointer',
+            margin: '0 auto',
+            transition: 'all 0.2s',
+          }}
+        >
+          <BookOpen size={16} />
+          <span>{showBiblio ? 'Ocultar Referencias Bibliográficas' : 'Ver Referencias Bibliográficas'}</span>
+          <ChevronDown
+            size={16}
+            style={{
+              transform: showBiblio ? 'rotate(180deg)' : 'rotate(0deg)',
+              transition: 'transform 0.2s ease',
+            }}
+          />
+        </button>
+        {showBiblio && (
+          <div style={{
+            marginTop: 16,
+            padding: 20,
+            background: 'rgba(0,0,0,0.3)',
+            borderRadius: 16,
+            border: '1px solid rgba(255,255,255,0.05)',
+          }}>
+            <ul style={{ margin: 0, paddingLeft: 20, color: '#94a3b8', fontSize: '0.85rem', lineHeight: 1.8 }}>
+              {BIBLIOGRAPHY.map((b, i) => (
+                <li key={i} style={{ marginBottom: 6 }}>{b}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
-      {lightboxSrc && (
-        <ImageLightbox
-          src={lightboxSrc}
-          alt="Imagen ampliada"
-          onClose={() => setLightboxSrc(null)}
-        />
-      )}
+
+      {/* Lightbox Modal */}
+      <ImageLightbox
+        src={lightboxSrc}
+        onClose={() => setLightboxSrc(null)}
+      />
     </div>
   );
 }
