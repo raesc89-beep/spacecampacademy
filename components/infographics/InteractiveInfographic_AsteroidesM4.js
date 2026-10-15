@@ -92,153 +92,194 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'era-exploracion',
-    title: 'La Era de las Misiones',
-    color: '#FFD54F',
-    btnImage: '/assets/asteroides/infographic_m4/btn_era-exploracion.webp',
-    image: '/assets/asteroides/infographic_m4/hero_era-exploracion.webp',
-    content: [
-      'Durante siglos, los astrónomos observaron los asteroides como simples puntos de luz que se movían lentamente contra el fondo de estrellas fijas. No fue sino hasta finales del siglo XX cuando la humanidad adquirió la capacidad de enviar naves espaciales robóticas para ver la verdadera cara de estos fósiles planetarios.',
-      'Las primeras exploraciones consistieron en sobrevuelos veloces. En 1991, la sonda Galileo de la NASA pasó cerca del asteroide Gaspra, obteniendo las primeras fotografías en alta resolución de la superficie llena de cráteres de un asteroide. Más tarde visitó a Ida y descubrió su diminuta luna Dactyl.',
-      'El gran salto cualitativo ocurrió en el año 2001 con la misión NEAR Shoemaker. Tras orbitar el asteroide cercano a la Tierra 433 Eros durante un año completo, los ingenieros lograron aterrizar suavemente la nave sobre su superficie rocosa. Fue el primer posado controlado en la historia de la exploración asteroidea.',
-      'Posteriormente, la misión Dawn de la NASA marcó otro hito espacial. Fue la primera nave en entrar en órbita alrededor de dos cuerpos celestes distintos en una sola misión: exploró el gigantesco Vesta entre 2011 y 2012 y luego viajó hacia el planeta enano Ceres entre 2015 y 2018.',
-      'Hoy nos encontramos en la era dorada de las misiones de retorno de muestras y de defensa planetaria activa. Las agencias espaciales ya no se conforman con tomar fotos desde lejos; ahora tocan la superficie de las rocas espaciales, recogen su material y lo traen de vuelta a los laboratorios de la Tierra.'
+    "id": "era-exploracion",
+    "title": "La Era de la Exploración Robótica",
+    "color": "#4FA3B5",
+    "btnImage": "/assets/asteroides/infographic_m4/btn_era-exploracion.webp",
+    "image": "/assets/asteroides/infographic_m4/hero_era-exploracion.webp",
+    "content": [
+      "Durante siglos, el conocimiento humano sobre los asteroides estuvo estrictamente limitado a pequeños puntos de luz titilantes observados a través de los telescopios ópticos terrestres. Esta barrera observacional comenzó a derribarse en octubre de 1991, cuando la sonda espacial Galileo de la NASA, en su prolongada trayectoria de asistencia gravitatoria rumbo a Júpiter, realizó el primer sobrevuelo cercano de la historia a solo mil seiscientos kilómetros del asteroide 951 Gaspra, revelando su forma irregular y su manto de cráteres de impacto.",
+      "Dos años más tarde, en agosto de 1993, Galileo sobrevoló el asteroide 243 Ida y realizó un descubrimiento revolucionario que transformó la dinámica planetaria moderna: fotografió por primera vez una diminuta luna de uno punto cuatro kilómetros de diámetro orbitando a cien kilómetros de Ida, bautizada formalmente como Dáctilo. Este hallazgo demostró empíricamente la existencia de sistemas asteroidales binarios y permitió a los astrofísicos calcular de forma directa la masa y densidad del asteroide principal mediante las leyes de Kepler.",
+      "En febrero del año 2000, la misión NEAR Shoemaker de la NASA inauguró la era de la inserción orbital sostenida al entrar en órbita alrededor del asteroide cercano a la Tierra 433 Eros durante más de un año completo de operaciones científicas. La nave cartografió la superficie con altimetría láser y espectrómetros de rayos X y rayos gamma, culminando su histórica misión el 12 de febrero de 2001 con un audaz y controlado descenso suave sobre el suelo rocoso de Eros, transmitiendo datos científicos hasta el momento mismo del contacto físico.",
+      "Posteriormente, la sonda Dawn de la NASA (impulsada por revolucionarios propulsores iónicos de xenón) logró la proeza técnica sin precedentes de orbitar sucesivamente dos mundos protoplanetarios distintos en el Cinturón Principal: el asteroide ígneo diferenciado 4 Vesta entre 2011 y 2012, y el planeta enano Ceres entre 2015 y 2018. Dawn descubrió que Ceres alberga un criomanto rico en sales de carbonato de sodio, depósitos de salmueras líquidas subterráneas activas y el colosal domo criovolcánico Ahuna Mons de cuatro kilómetros de altura.",
+      "Estas misiones pioneras transformaron radicalmente la concepción científica de los asteroides, pasando de considerarlos meros 'escombros inertes' a reconocerlos como mundos geológicamente complejos y dinámicos. La exploración robótica demostró que los asteroides albergan criovulcanismo, diferenciación magmática temprana, hielo de agua protegido bajo regolito y complejas interacciones mecánicas inducidas por la radiación solar y la microgravedad superficial."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La sonda Galileo descubrió la primera luna asteroidal conocida, Dactyl, orbitando alrededor del asteroide 243 Ida. Mide apenas 1.4 kilómetros de ancho y demostró que los asteroides pequeños también pueden tener satélites.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La misión Dawn utilizó motores de propulsión iónica alimentados por gas xenón y paneles solares. Esta tecnología le permitió maniobrar eficientemente en el espacio profundo para cambiar de órbita entre Vesta y Ceres.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m4/banner_era-exploracion.webp',
-    bannerCaption: 'Era de exploración asteroidal: de NEAR Shoemaker a Dawn, la humanidad visita los residuos del sistema solar',
-    fact: 'El asteroide 433 Eros fue el primer asteroide donde aterrizó una nave espacial humana. La sonda NEAR Shoemaker transmitió datos científicos durante dos semanas desde la superficie antes de apagarse.',
+    "fact": "La sonda Galileo inauguró la exploración in situ en 1991 al sobrevolar Gaspra y descubrió en 1993 la primera luna en un asteroide (Dáctilo orbitando a Ida), mientras que la misión NEAR Shoemaker completó en 2001 el primer aterrizaje controlado sobre el asteroide 433 Eros transmitiendo telemetría continua desde su superficie.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La sonda Dawn de la NASA utilizó tres motores iónicos electrostáticos de xenón NSTAR que operaron durante casi sesenta mil horas a lo largo de su misión, logrando una aceleración acumulada delta-V de once kilómetros por segundo, la mayor maniobrabilidad propulsiva alcanzada por una nave espacial fuera del sistema Tierra-Luna utilizando apenas cuatrocientos kilogramos de propelente gaseoso."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El asteroide 433 Eros explorado por la misión NEAR Shoemaker es una gigantesca roca alargada con forma de cacahuate de treinta y cuatro kilómetros de longitud, cuya masa estimada contiene miles de millones de toneladas de hierro, níquel y metales del grupo del platino, superando todas las reservas minerales extraídas por la civilización humana a lo largo de su historia conocida."
+      }
+    ]
   },
   {
-    id: 'mision-dart',
-    title: 'Misión DART de la NASA',
-    color: '#FF5252',
-    btnImage: '/assets/asteroides/infographic_m4/btn_mision-dart.webp',
-    image: '/assets/asteroides/infographic_m4/hero_mision-dart.webp',
-    content: [
-      'El 26 de septiembre de 2022 a las 23:14 UTC, la humanidad llevó a cabo su primer ensayo real de defensa planetaria activa en la historia. La nave DART (Prueba de Redirección de Asteroide Doble) de la NASA se estrelló intencionalmente contra el asteroide Dimorphos a 22,500 kilómetros por hora.',
-      'El objetivo de la misión DART no era destruir el asteroide, sino demostrar la técnica de Impacto Cinético. Es la idea de golpear una roca peligrosa con una masa pesada a gran velocidad para alterar levemente su curso, desviándola de una hipotética trayectoria de colisión contra la Tierra.',
-      'Dimorphos es una pequeña luna de 160 metros que orbita alrededor de un asteroide más grande llamado Didymos de 780 metros. Este sistema binario fue elegido porque no representaba ningún peligro para la Tierra, permitiendo medir los cambios en el periodo orbital con telescopios terrestres.',
-      'El impacto de la sonda de 570 kilos liberó la energía equivalente a tres toneladas de TNT. Excavó un enorme cráter en Dimorphos y arrojó más de 1,000 toneladas de escombros y polvo al espacio en una majestuosa cola que se desplegó a lo largo de miles de kilómetros.',
-      'La prueba fue un éxito total que superó todas las expectativas. Antes del choque, Dimorphos tardaba 11 horas y 55 minutos en orbitar a Didymos. El impacto acortó ese tiempo en 33 minutos completos, demostrando que la humanidad posee la tecnología para desviar asteroides peligrosos.'
+    "id": "mision-dart",
+    "title": "Misión DART de la NASA",
+    "color": "#D4A843",
+    "btnImage": "/assets/asteroides/infographic_m4/btn_mision-dart.webp",
+    "image": "/assets/asteroides/infographic_m4/hero_mision-dart.webp",
+    "content": [
+      "El 26 de septiembre de 2022, la humanidad ejecutó por primera vez en su historia una prueba activa de defensa planetaria a gran escala con la misión DART (Double Asteroid Redirection Test) de la NASA y el Laboratorio de Física Aplicada Johns Hopkins. El objetivo era evaluar si el impacto cinético de un proyectil robótico a hipervelocidad era capaz de alterar de forma cuantificable la órbita de un asteroide en el espacio interplanetario sin requerir el empleo de peligrosas cargas explosivas nucleares.",
+      "El blanco seleccionado fue el asteroide Dimorphos, una luna rocosa de ciento sesenta metros de diámetro que orbita alrededor del asteroide primario Didymos (de setecientos ochenta metros). Al no hallarse en rumbo de colisión con la Tierra, el sistema binario representaba el laboratorio cósmico perfecto: cualquier alteración en el periodo orbital de Dimorphos alrededor de Didymos podía medirse con precisión milimétrica desde telescopios ópticos y radares astronómicos terrestres.",
+      "La nave DART, con una masa de seiscientos diez kilogramos, impactó de forma frontal contra Dimorphos a una velocidad relativa de seis punto catorce kilómetros por segundo (más de veintidós mil kilómetros por hora). En los últimos minutos antes de la colisión, el sistema de navegación óptica autónoma SMART Nav guio a la nave hacia el centro de la roca, transmitiendo imágenes de alta resolución de cantos rodados y rocas antes de la destrucción del vehículo.",
+      "El impacto cinético no solo transfirió el momento lineal directo de la masa de la nave, sino que la violenta eyección de más de un millón de kilogramos de escombros y polvo disparados en dirección opuesta actuó como un potente cohete de retropropulsión adicional (efecto de retroceso del eyecta). Este factor de multiplicación del momento (denominado parámetro beta) multiplicó por más de tres veces el empuje efectivo impartido al asteroide.",
+      "Las observaciones de radar y telescopios terrestres confirmaron un éxito rotundo: el impacto redujo el periodo orbital de Dimorphos alrededor de Didymos en exactamente treinta y tres minutos (pasando de once horas y cincuenta y cinco minutos a once horas y veintidós minutos), superando en más de veinticinco veces el objetivo mínimo de la misión fijado por la NASA y validando el impacto cinético como un escudo planetario funcional."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Un pequeño satélite italiano llamado LICIACube viajó adosado a la nave DART. Se desprendió diez días antes del choque para tomar fotos cercanas de la colisión y de la nube de escombros expulsada.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El éxito de la deflexión por impacto cinético se multiplicó gracias al impulso de reacción generado por las toneladas de materia expulsada (recuperación de momento), actuando como un cohete natural.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-dart.webp',
-    bannerCaption: 'Misión DART 2022: primer test exitoso de deflexión asteroidal, cambiamos la órbita de Dimorphos',
-    fact: 'La nave DART utilizó un sistema autónomo de navegación óptica llamado SMARTNav en tiempo real durante sus últimas cuatro horas de vuelo para fijar blanco en la luna Dimorphos sin intervención humana.',
+    "fact": "La misión DART de la NASA demostró con éxito la técnica del impacto cinético el 26 de septiembre de 2022 al colisionar a veintidós mil kilómetros por hora contra Dimorphos, acortando su periodo orbital en treinta y tres minutos y expulsando más de mil toneladas de roca y polvo hacia el espacio interplanetario.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El parámetro de transferencia de momento beta medido por la colisión de DART se situó entre 2.2 y 3.6, lo que confirmó que el retroceso gravitatorio del eyecta expulsado a hipervelocidad multiplicó con creces el empuje del impacto físico directo de la nave, un comportamiento mecánico característico de los asteroides del tipo pila de escombros de baja cohesión interna."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El nanosatélite italiano LICIACube, expulsado por DART quince días antes del impacto, sobrevoló Dimorphos a apenas cincuenta y cinco kilómetros de altitud solo tres minutos después de la colisión, capturando imágenes fotográficas de alta resolución de las plumas de eyección de escombros y los filamentos de polvo eyectados al espacio profundo."
+      }
+    ]
   },
   {
-    id: 'mision-hayabusa2',
-    title: 'Hayabusa2 de JAXA',
-    color: '#FFAB40',
-    btnImage: '/assets/asteroides/infographic_m4/btn_mision-hayabusa2.webp',
-    image: '/assets/asteroides/infographic_m4/hero_mision-hayabusa2.webp',
-    content: [
-      'En junio de 2018, la nave espacial Hayabusa2 de la Agencia de Exploración Aeroespacial de Japón (JAXA) llegó a las inmediaciones del asteroide tipo C Ryugu, una roca diamante con forma de pirinola de 900 metros de ancho rica en carbono y materia orgánica primordial.',
-      'A diferencia de las misiones tradicionales, Hayabusa2 llevó a cabo un despliegue sin precedentes de robots exploradores. Liberó sobre la superficie del asteroide tres diminutos rovers saltarines MINERVA-II y el módulo lander europeo MASCOT, que operó en la superficie midiendo su magnetismo y temperatura.',
-      'Para recolectar las muestras de la superficie, la nave descendió hasta tocar la roca durante apenas unos segundos. Disparó una pequeña bala de tantalio contra el suelo para levantar polvo que fue canalizado por una trompa colectora directamente hacia la cápsula de almacenamiento hermética.',
-      'Pero JAXA quería obtener muestras del subsuelo no alteradas por la radiación solar. Para ello, Hayabusa2 desplegó un impactador cargado con explosivo plástico HMX que disparó un proyectil de cobre de 2.5 kilos contra el asteroide, excavando un cráter artificial de 10 metros de ancho.',
-      'En diciembre de 2020, la cápsula de retorno de Hayabusa2 aterrizó en el desierto de Woomera en Australia. Trajo a la Tierra 5.4 gramos de polvo y rocas intactas del asteroide Ryugu, superando por 50 veces el objetivo mínimo trazado por los científicos de la misión.'
+    "id": "mision-hayabusa2",
+    "title": "Hayabusa2 de JAXA: Hito en Ryugu",
+    "color": "#80DEEA",
+    "btnImage": "/assets/asteroides/infographic_m4/btn_mision-hayabusa2.webp",
+    "image": "/assets/asteroides/infographic_m4/hero_mision-hayabusa2.webp",
+    "content": [
+      "La Agencia de Exploración Aeroespacial de Japón (JAXA) consolidó una de las mayores proezas científicas del siglo XXI con la misión Hayabusa2, lanzada en diciembre de 2014 con destino al asteroide cercano a la Tierra de Tipo C (carbonáceo) denominado 162173 Ryugu. La misión tenía como objetivo prioritario estudiar la morfología de un asteroide primitivo y recolectar muestras prístinas de regolito superficial y subsuperficial para retornarlas intactas a la Tierra.",
+      "Al llegar a Ryugu en junio de 2018, Hayabusa2 descubrió un mundo oscuro con forma de diamante o peonza de novecientos metros de diámetro, cubierto por completo de miles de bloques rocosos gigantescos sin zonas llanas evidentes. La nave desplegó con éxito varios microrrovers saltadores MINERVA-II y el módulo de aterrizaje germano-francés MASCOT, que operó durante diecisiete horas sobre la superficie midiendo campos magnéticos y temperaturas in situ.",
+      "En febrero de 2019, Hayabusa2 ejecutó un delicado descenso táctil sobre la roca, disparando un proyectil de tántalo de cinco gramos a trescientos metros por segundo para fragmentar el terreno y capturar partículas flotantes en su bocina de muestreo. Meses más tarde, en abril de 2019, la nave ejecutó una maniobra aún más audaz: disparó un impactador cinético de cobre puro de dos kilogramos (el dispositivo SCI) que excavó un cráter artificial de diez metros de diámetro.",
+      "En julio de 2019, la nave descendió por segunda vez y aterrizó en el borde del cráter artificial recién creado, recolectando por primera vez en la historia de la humanidad muestras geológicas subsuperficiales protegidas de la radiación solar cósmica durante miles de millones de años. Con las cámaras de recolección selladas herméticamente, Hayabusa2 emprendió el viaje de retorno hacia nuestro planeta mediante propulsión iónica de xenón.",
+      "El 6 de diciembre de 2020, la cápsula de reingreso se desprendió de la nave nodriza y descendió suavemente en paracaídas sobre el desierto militar de Woomera, en el sur de Australia. Los científicos japoneses recuperaron cinco punto cuatro gramos de material negro prístino (más de cincuenta veces la cantidad mínima esperada), suministrando a la comunidad científica internacional un tesoro mineralógico que continúa revolucionando la cosmoquímica moderna."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los diminutos rovers MINERVA-II no usaban ruedas para desplazarse porque la gravedad en Ryugu es tan débil que una rueda patinaría. En su lugar, usaban motores internos que los hacían dar saltos flotantes sobre las rocas.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La masa de Ryugu es tan baja y su porosidad tan alta (más del 50%) que los astrónomos lo clasifican como un "cúmulo de escombros", un montón de rocas unidas débilmente por su propia gravedad.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-hayabusa2.webp',
-    bannerCaption: 'Hayabusa2: la misión japonesa que disparó un proyectil a Ryugu y trajo muestras del cráter artificial',
-    fact: 'El nombre "Ryugu" proviene de una leyenda del folclore japonés y significa "El Palacio del Dragón", un palacio mágico bajo el mar de donde un pescador trajo una caja misteriosa con secretos.',
+    "fact": "La sonda japonesa Hayabusa2 excavó en 2019 un cráter artificial de diez metros en el asteroide carbonáceo Ryugu mediante un proyectil de cobre y trajo a la Tierra en diciembre de 2020 cinco punto cuatro gramos de regolito prístino que contenía aminoácidos orgánicos y uracilo de origen extraterrestre.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los análisis espectroscópicos y de cromatografía líquida de las muestras de Ryugu publicados entre 2022 y 2023 revelaron más de veinte aminoácidos diferentes (incluyendo alanina, glicina y valina), hidrocarburos aromáticos policíclicos y uracilo, demostrando de forma incontrovertible que los bloques químicos esenciales para la vida se formaron en el medio interestelar."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Tras desprender la cápsula de muestras en la Tierra en diciembre de 2020, la nave nodriza Hayabusa2 conservó más de la mitad de su propelente de xenón y emprendió una ambiciosa misión extendida que incluye el sobrevuelo del asteroide 2001 CC21 en 2026 y el encuentro orbital con el asteroide de rotación ultrarrápida 1998 KY26 en 2031."
+      }
+    ]
   },
   {
-    id: 'mision-osiris-rex',
-    title: 'OSIRIS-REx de la NASA',
-    color: '#64FFDA',
-    btnImage: '/assets/asteroides/infographic_m4/btn_mision-osiris-rex.webp',
-    image: '/assets/asteroides/infographic_m4/hero_mision-osiris-rex.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1C0woncTecwyof5XFGtNnNdehaF7bDbo0&export=download&authuser=0', title: 'Misión OSIRIS-REx: Recolección de Muestras' },
-    content: [
-      'En diciembre de 2018, la sonda espacial OSIRIS-REx de la NASA llegó al asteroide cercano a la Tierra (101955) Bennu, una roca potencialmente peligrosa de 500 metros de ancho compuesta por materiales hidratados y cargada de compuestos de carbono de la infancia del Sistema Solar.',
-      'Durante más de un año, la nave mapeó la superficie de Bennu con precisión milimétrica usando escáneres láser LIDAR. Los científicos se sorprendieron al descubrir que la superficie no tenía playas de arena suave como esperaban, sino que estaba repleta de rocas gigantescas y afiladas.',
-      'El 20 de octubre de 2020, la nave ejecutó la arriesgada maniobra TAG (Tocar y Llevarse). Descendió lentamente hasta extender un brazo robótico de tres metros. Al tocar la superficie, inyectó un chorro de gas nitrógeno a presión para levantar el regolito suelto y aspirarlo hacia el contenedor.',
-      'La fuerza de succión fue tan potente que el brazo de la nave se hundió medio metro en el suelo de Bennu, demostrando que el asteroide ofreció casi la misma resistencia que una alberca llena de pelotas de plástico. El contenedor quedó tan lleno de rocas que no podía cerrar la tapa por completo.',
-      'El 24 de septiembre de 2023, la cápsula de muestras se desprendió de la nave y descendió en paracaídas sobre el desierto de Utah en Estados Unidos. Entregó más de 120 gramos de material asteroidal intacto, la muestra más grande jamás recolectada por una nave espacial en el espacio profundo.'
+    "id": "mision-osiris-rex",
+    "title": "OSIRIS-REx de la NASA: Tesoro en Bennu",
+    "color": "#BA68C8",
+    "btnImage": "/assets/asteroides/infographic_m4/btn_mision-osiris-rex.webp",
+    "image": "/assets/asteroides/infographic_m4/hero_mision-osiris-rex.webp",
+    "content": [
+      "La misión OSIRIS-REx (Origins, Spectral Interpretation, Resource Identification, Security, Regolith Explorer) de la NASA fue diseñada para estudiar en detalle al asteroide cercano a la Tierra 101955 Bennu, un asteroide de Tipo B rico en carbono de quinientos metros de diámetro que posee una probabilidad acumulada de impacto con la Tierra en el siglo XXII de una entre mil setecientos cincuenta.",
+      "Al arribar a Bennu en diciembre de 2018, la nave confirmó que el asteroide es una frágil 'pila de escombros' con una densidad extraordinariamente baja de uno punto diecinueve gramos por centímetro cúbico, lo que significa que el cincuenta por ciento de su volumen interno está vacío. Para sorpresa de los científicos, Bennu demostró ser un asteroide activo que eyectaba continuamente pequeñas piedrecillas y fragmentos rocosos hacia el espacio.",
+      "El 20 de octubre de 2020, OSIRIS-REx ejecutó la histórica maniobra Touch-And-Go (TAG) en el cráter Nightingale. El brazo robótico TAGSAM de tres metros de longitud contactó el suelo mientras liberaba un chorro de gas nitrógeno ultra puro a alta presión para fluidizar y levantar el regolito hacia la cámara del colector. La superficie ofreció tan poca resistencia mecánica que el cabezal del brazo se hundió medio metro en el terreno como si fuera una piscina de plástico.",
+      "La maniobra fue tan abundante que las piedras recolectadas mantuvieron entreabierta la tapa de la válvula de retención, obligando a los ingenieros a acelerar el guardado y sellado de emergencia del colector dentro de la cápsula de retorno para evitar fugas de material. La nave inició su crucero de regreso a la Tierra impulsada por maniobras de trayectoria en el espacio profundo en mayo de 2021.",
+      "El 24 de septiembre de 2023, la cápsula de muestras de OSIRIS-REx aterrizó de forma impecable en el campo de pruebas y entrenamiento del Departamento de Defensa de Utah. Los análisis preliminares en el Centro Espacial Johnson revelaron una masa total recolectada de ciento veintiún punto seis gramos (el doble de la meta oficial), confirmando la presencia de abundante agua encerrada en minerales de arcilla, carbono orgánico y fosfatos de magnesio hidratados."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Tras entregar con éxito su cápsula de muestras en la Tierra, la nave espacial nodriza no se apagó. Fue rebautizada como OSIRIS-APEX y se envió en una nueva misión para estudiar al asteroide Apophis en 2029.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El asteroide Bennu es considerado una roca activa. OSIRIS-REx fotografió pequeños eventos de eyección de partículas donde el asteroide lanza continuamente piedras del tamaño de canicas al espacio.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-osiris-rex.webp',
-    bannerCaption: 'OSIRIS-REx: trajo 60 gramos de Bennu a la Tierra, el mayor fragmento asteroidal jamás recolectado',
-    fact: 'El análisis inicial de las muestras de Bennu reveló la presencia de abundantes minerales de fosfato de sodio hidratado, sugiriendo que el asteroide proviene de un antiguo cuerpo padre helado con agua líquida.',
+    "fact": "La nave espacial OSIRIS-REx de la NASA recolectó ciento veintiún punto seis gramos de material intacto del asteroide Bennu en 2020 y lo trajo con éxito a la Tierra el 24 de septiembre de 2023, descubriendo altas proporciones de agua molecular ligada a filosilicatos, sales hidratadas y compuestos orgánicos ricos en nitrógeno.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El análisis mineralógico de las muestras de Bennu mediante difracción de rayos X y resonancia magnética en el Centro Espacial Johnson descubrió una abundante presencia de fosfato de magnesio y sodio hidratado, una sal soluble que sugiere que el cuerpo progenitor de Bennu albergó salmueras líquidas activas similares a las cuencas evaporíticas primitivas de la Tierra."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Tras desprender su cápsula sobre el desierto de Utah en septiembre de 2023, la nave nodriza encendió sus motores para desviarse de la atmósfera terrestre y fue rebautizada como OSIRIS-APEX, iniciando una misión orbital extendida para interceptar y cartografiar al célebre asteroide potencialmente peligroso Apophis durante su sobrevuelo cercano a la Tierra en abril de 2029."
+      }
+    ]
   },
   {
-    id: 'analisis-laboratorio',
-    title: 'Análisis en la Tierra',
-    color: '#E040FB',
-    btnImage: '/assets/asteroides/infographic_m4/btn_analisis-laboratorio.webp',
-    image: '/assets/asteroides/infographic_m4/hero_analisis-laboratorio.webp',
-    content: [
-      '¿Por qué gastar cientos de millones de dólares en traer unos pocos gramos de polvo espacial a la Tierra en lugar de analizarlos con instrumentos instalados a bordo de la propia nave? La respuesta radica en la inmensa potencia de los laboratorios científicos terrestres.',
-      'Los instrumentos instalados en sondas espaciales deben ser miniaturizados, ligeros y consumir poca energía. En cambio, en la Tierra los científicos pueden usar microscopios electrónicos de barrido, aceleradores de partículas de radiación sincrotrón y espectrómetros de masa de alta resolución que ocupan edificios enteros.',
-      'Además, los meteoritos que caen naturalmente en la Tierra se contaminan al instante al entrar en contacto con el aire húmedo, el agua de lluvia y la bacteria de nuestro suelo. Las muestras traídas por Hayabusa2 y OSIRIS-REx llegaron selladas en cámaras de nitrógeno puro al vacío totalmente incontaminadas.',
-      'Al analizar los granos del asteroide Ryugu, los científicos japoneses e internacionales hicieron descubrimientos asombrosos. Encontraron más de 20 tipos de aminoácidos diferentes (los bloques de construcción del ADN y proteínas) y la base nitrogenada uracilo, esencial para el ARN.',
-      'Estos resultados confirman la hipótesis de que las moléculas fundamentales para el origen de la vida no se formaron únicamente en la Tierra, sino que fueron sintetizadas en el espacio profundo y sembradas en nuestro planeta por los impactos de asteroides y cometas primordiales.'
+    "id": "analisis-laboratorio",
+    "title": "Análisis en Laboratorios Terrestres",
+    "color": "#FF884B",
+    "btnImage": "/assets/asteroides/infographic_m4/btn_analisis-laboratorio.webp",
+    "image": "/assets/asteroides/infographic_m4/hero_analisis-laboratorio.webp",
+    "content": [
+      "La recolección directa de muestras extraterrestres mediante sondas robóticas representa un avance científico exponencialmente superior al estudio de meteoritos caídos al azar en la Tierra. Aunque un meteorito es una muestra geológica valiosa, sufre una severa contaminación biológica, química y atmosférica desde el instante en que atraviesa el aire terrestre, se oxida con el oxígeno atmosférico y se empapa de humedad y bacterias microbianas presentes en el suelo.",
+      "En contraste, las muestras recuperadas por naves espaciales como Stardust, Hayabusa2 y OSIRIS-REx son aisladas al vacío en cápsulas herméticas antes del reingreso atmosférico, llegando a los laboratorios de ultra alta pureza en cuartos limpios de Clase 10 o Clase 100 donde no existe contacto con el aire terrestre. Esto garantiza que cualquier molécula de agua, aminoácido o compuesto de carbono detectado sea cien por ciento de origen extraterrestre.",
+      "Una vez en los laboratorios especializados (como la Instalación de Curación de Astromateriales de la NASA en Houston o el Instituto de Ciencia Espacial de JAXA en Sagamihara), los granos milimétricos se analizan con un arsenal de instrumentos que jamás podrían miniaturizarse para volar a bordo de una nave espacial: microscopios electrónicos de transmisión de aberración corregida, sondas iónicas NanoSIMS y sincrotrones de radiación de partículas.",
+      "La espectrometría de masas con resolución atómica permite datar isótopos radiactivos de aluminio-26, hafnio-tungsteno y cromo-53 con márgenes de error inferiores a cien mil años en eventos geológicos que ocurrieron hace más de cuatro mil quinientos millones de años. Gracias a estas técnicas, los científicos pueden reconstruir minuto a minuto los primeros cinco millones de años de vida del Sistema Solar primigenio.",
+      "Además, la mayor parte de las muestras de asteroides recolectadas se preservan en bóvedas de gas nitrógeno ultra puro para las futuras generaciones de investigadores. Siguiendo el exitoso precedente de las muestras lunares del programa Apolo, se estima que las herramientas analíticas que se desarrollen dentro de cincuenta años permitirán descubrir secretos de la materia cósmica que hoy escapan por completo a nuestra tecnología."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las muestras de los asteroides Ryugu y Bennu se conservan en salas limpias especiales en Japón y Estados Unidos. Partes de las muestras se guardan congeladas bajo nitrógeno para ser analizadas por futuros científicos dentro de 50 años.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los análisis de isótopos de cromo y titanio en los granos de Ryugu demostraron una afinidad química perfecta con las condritas carbonáceas de tipo CI, las rocas más primitivas conocidas en la ciencia planetaria.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m4/banner_analisis-laboratorio.webp',
-    bannerCaption: 'Análisis en laboratorio: muestras de asteroides revelan aminoácidos y agua de los albores del sistema solar',
-    fact: 'En las muestras del asteroide Ryugu se identificó agua líquida atrapada en forma de inclusiones microscópicas dentro de cristales de carbonato, revelando la composición del agua primordial del disco solar.',
+    "fact": "Los astromateriales recuperados directamente por sondas espaciales se procesan en salas limpias con atmósfera presurizada de gas nitrógeno puro mediante microscopía electrónica atómica de transmisión y sincrotrones de partículas, eliminando cualquier riesgo de contaminación orgánica, química o microbiológica terrestre.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las microsondas iónicas de última generación NanoSIMS permiten cuantificar las relaciones isotópicas estables de hidrógeno, deuterio, carbono y nitrógeno en granos presolares de apenas cincuenta nanómetros de tamaño, demostrando que algunos minerales de los asteroides carbonáceos son más antiguos que el propio Sol y nacieron en vientos estelares de supernovas."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Siguiendo estrictos protocolos científicos internacionales, la NASA y la agencia japonesa JAXA reservaron más del setenta por ciento del regolito recolectado de Bennu y Ryugu en bóvedas acorazadas selladas para que científicos de futuras generaciones puedan analizarlos con tecnologías e instrumentos que todavía no han sido inventados."
+      }
+    ]
   },
   {
-    id: 'tecnologia-navegacion',
-    title: 'Navegación Cercana',
-    color: '#18FFFF',
-    btnImage: '/assets/asteroides/infographic_m4/btn_tecnologia-navegacion.webp',
-    image: '/assets/asteroides/infographic_m4/hero_tecnologia-navegacion.webp',
-    content: [
-      'Maniobrar una nave espacial robótica a cientos de millones de kilómetros de la Tierra alrededor de un asteroide de apenas unos cientos de metros es uno de los desafíos más complejos de la ingeniería aeroespacial moderna.',
-      'La primera gran dificultad es el retraso en las comunicaciones radiotelegráficas. Como la señal tarda entre 10 y 30 minutos en ir y volver desde la Tierra hasta la sonda, es absolutamente imposible pilotar la nave en tiempo real usando un joystick desde el centro de control.',
-      'La nave debe ser completamente autónoma. Para lograrlo, utiliza algoritmos de visión por computadora basados en Navegación Relativa por Imágenes (Optical Navigation). La sonda toma fotografías constantes de la superficie del asteroide, reconoce rocas de referencia y calcula su propia posición y velocidad.',
-      'La segunda dificultad es el entorno de gravedad extremadamente débil del asteroide. En cuerpos pequeños como Bennu o Ryugu, la atracción gravitatoria es cien mil veces menor que la de la Tierra. Las herramientas de la nave, la presión de la luz solar e incluso la fuga de un gas pueden alterar el vuelo.',
-      'Para medir las distancias al suelo con precisión de centímetros sin chocar, las naves emplean altímetros láser LIDAR que disparan miles de pulsos por segundo. Esta información se procesa al instante a bordo para corregir el rumbo con micro-propulsores de gas frío de forma ultraprecisa.'
+    "id": "tecnologia-navegacion",
+    "title": "Navegación Cercana en Microgravedad",
+    "color": "#E57373",
+    "btnImage": "/assets/asteroides/infographic_m4/btn_tecnologia-navegacion.webp",
+    "image": "/assets/asteroides/infographic_m4/hero_tecnologia-navegacion.webp",
+    "content": [
+      "Operar una nave espacial en las inmediaciones de un asteroide pequeño representa uno de los desafíos más complejos y contraintuitivos de toda la astrodinámica orbital. En cuerpos menores de un kilómetro de diámetro, la gravedad superficial es de apenas unas pocas millonésimas o cienmilésimas de la gravedad terrestre (del orden de micro-G), lo que altera por completo las leyes de navegación convencionales aplicables a planetas masivos.",
+      "En un entorno de microgravedad tan débil, las fuerzas perturbadoras secundarias que normalmente son despreciables en la Tierra o en la Luna adquieren un protagonismo dominante. La presión de radiación solar ejercida sobre los paneles solares de la nave puede ser superior a la atracción gravitatoria del propio asteroide, empujando a la sonda fuera de órbita si no se ejecutan continuas correcciones de propulsión de milímetros por segundo.",
+      "Asimismo, la forma sumamente irregular y asimétrica de los asteroides genera un campo gravitatorio no esférico extremadamente caótico y variable. Los modelos armónicos esféricos tradicionales no funcionan; los ingenieros deben utilizar modelos de campo de poliedros 3D de alta resolución basados en mapas de relieve topográfico generados por sensores LIDAR ópticos y cámaras estereoscópicas de navegación.",
+      "Debido al retardo temporal de las señales de radio entre la Tierra y el asteroide (que suele oscilar entre diez y treinta minutos en cada sentido), es físicamente imposible pilotar la nave por control remoto desde una consola en tierra durante las maniobras críticas de aproximación y contacto con el suelo. Por ello, naves como OSIRIS-REx y Hayabusa2 dependen de sistemas de navegación autónoma basados en visión por computadora (Natural Feature Tracking).",
+      "El software de vuelo compara en tiempo real las imágenes de alta velocidad capturadas por las cámaras de abordo con un catálogo tridimensional de miles de rocas y cráteres almacenado en la memoria de la nave. Si el sistema detecta una desviación de apenas unos centímetros respecto al corredor de descenso seguro, la computadora de a bordo aborta automáticamente la aproximación e inicia un encendido de escape sin intervención humana."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La atracción gravitatoria en la superficie del asteroide Bennu es tan diminuta que si saltaras con tus piernas a velocidad normal saldrías disparado hacia el espacio profundo sin poder regresar.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Para simular la gravedad débil de los asteroides antes del lanzamiento, los ingenieros espaciales prueban las maniobras de brazo robótico en torres de caída libre al vacío y en aviones de vuelos parabólicos de gravedad cero.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m4/banner_tecnologia-navegacion.webp',
-    bannerCaption: 'Tecnología de navegación: propulsión iónica y navegación óptica autónoma para orbitar cuerpos irregulares',
-    fact: 'El mapa topográfico 3D generado por el instrumento OLA de la NASA a bordo de OSIRIS-REx es el modelo numérico de elevación más detallado jamás construido para cualquier cuerpo celestiales del Sistema Solar.',
+    "fact": "La navegación espacial en microgravedad alrededor de un asteroide requiere sistemas autónomos de visión óptica artificial en tiempo real (Natural Feature Tracking), ya que el retardo de radio con la Tierra de hasta treinta minutos impide el pilotaje remoto durante las maniobras críticas de contacto superficial.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad de escape de la superficie del asteroide Bennu es de apenas veinte centímetros por segundo (menos de un kilómetro por hora), lo que significa que un astronauta humano que se impulsara ligeramente con las piernas sobre su suelo rocoso entraría de forma irreversible en una trayectoria hiperbólica de escape hacia el espacio interplanetario."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante la aproximación final de la nave OSIRIS-REx a la superficie rocosa de Bennu en octubre de 2020, su sistema de navegación óptica procesaba y cruzaba más de cien referencias topográficas por segundo, garantizando una precisión de posicionado en el cráter Nightingale inferior a tres metros de margen de error transversal."
+      }
+    ]
   },
   {
-    id: 'futuras-misiones',
-    title: 'Misiones del Futuro',
-    color: '#FF5252',
-    btnImage: '/assets/asteroides/infographic_m4/btn_futuras-misiones.webp',
-    image: '/assets/asteroides/infographic_m4/hero_futuras-misiones.webp',
-    content: [
-      'El éxito rotundo de las misiones DART, Hayabusa2 y OSIRIS-REx ha marcado el comienzo de una audaz nueva era en la exploración robótica de los asteroides del Sistema Solar.',
-      'En octubre de 2023, la NASA lanzó la misión Psyche rumbo al asteroide 16 Psyche en el Cinturón Principal. Llegará en 2029 para explorar por primera vez un mundo metálico hecho de hierro y níquel, ofreciendo una ventana directa para entender los núcleos ocultos de planetas como la Tierra.',
-      'En octubre de 2024, la Agencia Espacial Europea (ESA) lanzó la misión Hera. Viajará hacia el sistema binario Didymos para llegar en 2026 y realizar una inspección detallada de las secuelas del impacto de DART, midiendo la masa exacta y la forma del cráter excavado en Dimorphos.',
-      'Por su parte, China prepara la misión Tianwen-2 para despegar en 2025. Su objetivo será recolectar muestras del asteroide cercano a la Tierra 469219 Kamoʻoalewa (un cuasisatélite terrestre) y luego continuar viaje hacia el cometa de cinturón principal 311P/PANSTARRS.',
-      'A largo plazo, las empresas privadas y agencias espaciales planean desarrollar misiones de Minería Espacial. Buscarán extraer agua de los asteroides tipo C para convertirla en combustible de hidrógeno en el espacio, e industrializar metales raros de asteroides tipo M para la construcción en órbita.'
+    "id": "futuras-misiones",
+    "title": "Futuras Misiones: De Hera a Psyche",
+    "color": "#00E4FF",
+    "btnImage": "/assets/asteroides/infographic_m4/btn_futuras-misiones.webp",
+    "image": "/assets/asteroides/infographic_m4/hero_futuras-misiones.webp",
+    "content": [
+      "La década de 2020 marca la verdadera edad de oro de la exploración internacional de asteroides, con una ambiciosa flota de misiones interplanetarias en desarrollo activo y crucero que expandirán radicalmente nuestra comprensión de la formación del Sistema Solar y consolidarán las capacidades técnicas globales de defensa planetaria ante posibles impactos cósmicos.",
+      "La misión Hera de la Agencia Espacial Europea (ESA), lanzada con éxito en octubre de 2024, tiene como meta llegar al sistema Didymos-Dimorphos a finales de 2026. Hera actuará como un detective forense espacial: examinará de cerca el cráter de impacto excavado por la sonda DART en Dimorphos, medirá por primera vez la masa y densidad exacta del asteroide mediante dos CubeSats complementarios (Milani y Juventas) y cartografiará su estructura interna con radar de baja frecuencia.",
+      "Por su parte, la misión Lucy de la NASA continúa su épica odisea de doce años impulsada por asistencia gravitatoria. En noviembre de 2023 sobrevoló el asteroide del Cinturón Principal Dinkinesh, descubriendo inesperadamente que posee una luna de contacto binaria bautizada como Selam. Entre 2027 y 2033, Lucy sobrevolará ocho asteroides troyanos distintos en los puntos L4 y L5 de Júpiter, explorando los mundos fósiles más primitivos del Sistema Solar exterior.",
+      "Simultáneamente, la sonda Psyche de la NASA viaja hacia el Cinturón Principal exterior para insertarse en órbita alrededor del enigmático asteroide metálico 16 Psyche en el año 2029. Los científicos esperan examinar por primera vez un objeto compuesto casi enteramente de hierro y níquel, revelando si se trata del núcleo desnudo de un protoplaneta que fue despojado de sus capas rocosas durante los violentos choques de la era primigenia.",
+      "A este esfuerzo multinacional se suman la misión china Tianwen-2 (programada para recolectar muestras del asteroide cuasisatélite 469219 Kamoʻoalewa y del cometa del cinturón principal 311P/PANSTARRS) y la misión de los Emiratos Árabes Unidos a siete asteroides del cinturón. Esta convergencia tecnológica global sentará las bases científicas para la futura minería espacial de recursos y la protección permanente de la biosfera terrestre."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El asteroide Kamoʻoalewa, objetivo de la misión Tianwen-2, tiene una composición mineral idéntica a las rocas lunares recopiladas por las misiones Apolo, sugiriendo que es un fragmento expulsado de la Luna por un impacto gigante.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Convertir el agua de hielo de un asteroide en combustible espacial requiere un proceso químico de electrólisis solar que separa las moléculas de H2O en gases de hidrógeno (H2) y oxígeno (O2) líquidos.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m4/banner_futuras-misiones.webp',
-    bannerCaption: 'Futuras misiones: Psyche al núcleo metálico, Lucy a los troyanos y minería asteroidal en el horizonte',
-    fact: 'La misión Hera lleva a bordo dos micro-satélites de formato CubeSat llamados Juventas y Milani. Juventas utilizará por primera vez un radar de baja frecuencia para examinar la estructura interna oculta de Dimorphos.',
-  },
+    "fact": "La flota internacional de exploración espacial desplegada para la década de 2020 incluye a la misión europea Hera que inspeccionará el cráter de DART en Dimorphos en 2026, la sonda Lucy que visitará los asteroides troyanos de Júpiter y la misión Psyche que analizará un colosal núcleo planetario metálico expuesto en 2029.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El CubeSat Juventas a bordo de la misión europea Hera desplegará el primer radar de penetración profunda de baja frecuencia (60 MHz) operado en el interior de un asteroide, emitiendo ondas electromagnéticas que atravesarán Dimorphos de lado a lado para revelar su estratigrafía interna y su grado de fracturación mecánica tridimensional."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El asteroide 469219 Kamoʻoalewa, objetivo de la futura misión china de retorno de muestras Tianwen-2, es un cuasisatélite de la Tierra cuyo espectro óptico es prácticamente idéntico al de los basaltos de los mares lunares recolectados por Apolo 14, lo que sugiere con fuerza que se trata de un fragmento expulsado de la Luna por un antiguo impacto meteorítico."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_AsteroidesM4() {

@@ -89,157 +89,198 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'viaje-atmosferico',
-    title: 'La Entrada Atmosférica',
-    color: '#FF7043',
-    btnImage: '/assets/asteroides/infographic_m2/btn_viaje-atmosferico.webp',
-    image: '/assets/asteroides/infographic_m2/hero_viaje-atmosferico.webp',
-    content: [
-      'Imagina correr en una piscina con el agua hasta la cintura; sientes una resistencia enorme que te frena. Ahora imagina entrar a la atmósfera de la Tierra a una velocidad de más de 60,000 kilómetros por hora. A esa velocidad extrema, el aire frente a la roca no alcanza a hacerse a un lado. Se comprime tan rápido que alcanza temperaturas superiores a los 2,000 grados Celsius.',
-      'Existe la creencia popular de que el fuego de un meteoro se produce por el roce de la piedra contra el aire. Sin embargo, la causa real es la compresión adiabática. La roca actúa como el pistón de una bomba de bicicleta gigante, apretando el aire atmosférico con tanta violencia que lo convierte en un plasma incandescente extremadamente caliente.',
-      'A medida que la roca espacial se adentra en capas atmosféricas más densas, la presión mecánica sobre su superficie aumenta drásticamente. Para la mayoría de los asteroides pequeños o frágiles, esta fuerza aplastante supera la resistencia del material. La piedra explota en el aire en un evento devastador denominado explosión atmosférica o bolido.',
-      'El calor abrasador derrite y evapora las capas exteriores del meteoroide en un proceso llamado ablación. Esta materia fundida sale despedida hacia atrás dejando una estela brillante de gas ionizado que puede medir decenas de kilómetros. Es la hermosa huella luminosa que observamos en el cielo nocturno durante unos breves segundos.',
-      'Los meteoroides que logran sobrevivir a este infierno atmosférico frenan drásticamente su velocidad. Pasan por una fase de vuelo oscuro donde se enfrían rápidamente antes de tocar el suelo. Caen a la Tierra a velocidad terminal, similar a la de una piedra lanzada desde la cima de un edificio alto.'
+    "id": "viaje-atmosferico",
+    "title": "La Entrada Atmosférica",
+    "color": "#FF6B6B",
+    "btnImage": "/assets/asteroides/infographic_m2/btn_viaje-atmosferico.webp",
+    "image": "/assets/asteroides/infographic_m2/hero_viaje-atmosferico.webp",
+    "video": {
+      "src": "https://drive.usercontent.google.com/download?id=1Xy8G2VzH9j8V4K0L1M2N3P4Q5R6S7T8U&export=download&authuser=0",
+      "title": "Entrada Atmosférica"
+    },
+    "content": [
+      "Cuando un fragmento rocoso desprendido de un asteroide o cometa se aproxima a la Tierra, penetra en la atmósfera a velocidades hiperbólicas que oscilan entre once y setenta y dos kilómetros por segundo. A estas velocidades extremas, el aire por delante del bólido no tiene tiempo de apartarse aerodinámicamente, comprimiéndose de forma casi instantánea en una violenta onda de choque frontal que eleva la temperatura del gas comprimido por encima de los cinco mil grados centígrados.",
+      "Contrario a la creencia popular extendida, el calor abrasador que rodea a un meteoro no se produce principalmente por la fricción mecánica con el aire, sino por la compresión adiabática del aire atmosférico en el frente de choque. Este gas sobrecalentado se ioniza rápidamente, despojando a los átomos de oxígeno y nitrógeno de sus electrones periféricos y generando una columna de plasma brillante visible desde el suelo durante la noche a más de cien kilómetros de altitud.",
+      "Durante esta fase crítica en la mesosfera (entre ochenta y cincuenta kilómetros sobre el nivel del mar), el bólido experimenta una intensa ablación térmica. El calor funde y vaporiza las capas superficiales de roca y metal, arrancándolas en forma de diminutas gotas fundidas que se solidifican instantáneamente en micrometeoritos y esferas vítreas. En la gran mayoría de los casos, la ablación destruye más del noventa al noventa y cinco por ciento de la masa original antes de que el objeto logre desacelerar.",
+      "Si el meteoroide posee una masa sustancial y una estructura interna coherente, la resistencia del aire frena gradualmente el cuerpo hasta que su velocidad supersónica cae por debajo del régimen hipersónico. En ese instante, la presión dinámica supera la resistencia a la fractura de la roca, provocando frecuentemente una o varias fragmentaciones explosivas que generan ondas sonoras y estampidos sónicos audibles en decenas de kilómetros a la redonda.",
+      "Una vez que la roca se desacelera a unos pocos cientos de kilómetros por hora, la ablación se detiene por completo en lo que los científicos denominan el 'punto de vuelo oscuro'. A partir de esa cota (generalmente situada a diez o quince kilómetros de altitud), el remanente rocoso cae en trayectoria balística puramente gravitatoria a velocidad terminal, enfriándose rápidamente en el gélido aire troposférico antes de impactar contra la superficie de la Tierra."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La mayoría de los meteoros que brillan intensamente en el cielo nocturno son causados por fragmentos de polvo diminutos del tamaño de un grano de arena. Se evaporan por completo a más de 80 kilómetros de altura sobre nuestras cabezas.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El estampido sónico que se escucha tras el paso de un gran meteoro es una onda de choque originada por la velocidad supersónica. Tarda varios minutos en viajar desde la alta atmósfera hasta el suelo donde se encuentran los observadores.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m2/banner_viaje-atmosferico.webp',
-    bannerCaption: 'El viaje atmosférico: el meteoroide entra a 70 km/s y el roce con el aire lo convierte en bola de fuego',
-    fact: 'Durante la ablación atmosférica, la superficie del meteoroide se derrite formando una fina corteza de fusión negra y brillante. Esta capa vítrea de menos de un milímetro de grosor es la principal seña de identidad para reconocer un meteorito auténtico.',
+    "fact": "La estela brillante e incandescente de un meteoro no es causada por fricción mecánica sino por la compresión adiabática del aire que calienta el gas a más de 5,000 grados centígrados, ionizando la atmósfera circundante y creando un cilindro de plasma resplandeciente en la mesosfera a más de ochenta kilómetros de altitud.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad mínima de entrada atmosférica es de exactamente 11.2 km/s (impuesta por la velocidad de escape del pozo gravitatorio de la Tierra), mientras que la máxima alcanza los 72.8 km/s en impactos frontales directos de cuerpos en órbita retrógrada respecto al vector de movimiento orbital heliocéntrico de nuestro planeta."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los fragmentos de meteoritos recuperados minutos después de caer en el suelo suelen estar helados al tacto y cubiertos de una delgada corteza negra de fusión vítrea milimétrica, ya que el calor abrasador de la ablación solo penetra los primeros milímetros de la roca durante los pocos segundos que dura la violenta desaceleración."
+      }
+    ]
   },
   {
-    id: 'diferencia-terminos',
-    title: 'Meteoroide, Meteoro y Meteorito',
-    color: '#29B6F6',
-    btnImage: '/assets/asteroides/infographic_m2/btn_diferencia-terminos.webp',
-    image: '/assets/asteroides/infographic_m2/hero_diferencia-terminos.webp',
-    content: [
-      'En el lenguaje cotidiano es común usar las palabras meteoro, meteorito y asteroide como si fueran sinónimos. Sin embargo, en la astronomía profesional cada término describe una etapa completamente diferente en la vida de una roca espacial. Conocer estas distinciones nos ayuda a entender mejor el ciclo de viaje de los cuerpos menores.',
-      'Un Meteoroide es el objeto físico mientras aún se encuentra viajando por el vacío del espacio interplanetario. Su tamaño va desde una diminuta mota de polvo hasta pequeñas rocas de menos de un metro de diámetro. Si supera ese tamaño, deja de ser un meteoroide para clasificarse formalmente como un asteroide.',
-      'Un Meteoro no es un objeto sólido, sino el fenómeno luminoso y visual que ocurre cuando un meteoroide entra a la atmósfera terrestre. Es el destello brillante en el cielo al que popularmente llamamos "estrella fugaz". El meteoro es la luz producida por la ionización del aire y la evaporación del cuerpo espacial.',
-      'Un Meteorito es el fragmento sólido de roca o metal que logra sobrevivir a la intensa quema atmosférica y alcanza la superficie de la Tierra. Es la piedra física que los geólogos y coleccionistas pueden recoger del suelo, guardar en un museo y analizar minuciosamente en laboratorios químicos.',
-      'Para recordar las diferencias fácilmente usa esta regla: el Meteoroide viaja por el espacio fuera de la Tierra, el Meteoro es la luz bonita que ves cruzando el cielo, y el Meteorito es la piedra pesada que puedes sostener con tus propias manos sobre la palma.'
+    "id": "diferencia-terminos",
+    "title": "Meteoroide, Meteoro y Meteorito",
+    "color": "#4D96FF",
+    "btnImage": "/assets/asteroides/infographic_m2/btn_diferencia-terminos.webp",
+    "image": "/assets/asteroides/infographic_m2/hero_diferencia-terminos.webp",
+    "content": [
+      "En el ámbito de las ciencias planetarias y la astronomía observacional, es esencial distinguir rigurosamente entre tres conceptos frecuentemente confundidos: meteoroide, meteoro y meteorito. Cada uno de estos términos describe un estado físico y una localización espacial totalmente diferentes dentro de la evolución dinámica de un fragmento de materia interplanetaria a lo largo de su interacción con el planeta Tierra.",
+      "Un meteoroide es el objeto físico mientras todavía viaja por el vacío del espacio interplanetario. La Unión Astronómica Internacional define al meteoroide como un cuerpo sólido natural con dimensiones comprendidas entre treinta micrómetros (el grosor de un cabello humano fino) y un metro de diámetro. Aquellos objetos menores a treinta micrómetros se denominan micrometeoroides o polvo cósmico, mientras que los que superan el metro se clasifican formalmente como asteroides menores.",
+      "El meteoro, por el contrario, no es una roca física ni un objeto tangible, sino el fenómeno luminoso y óptico transitorio que se produce cuando un meteoroide penetra en la atmósfera superior de la Tierra e ioniza el aire circundante. Es el trazo de luz popularmente denominado 'estrella fugaz'. Si el meteoro es extraordinariamente brillante y alcanza una magnitud aparente superior a la del planeta Venus (magnitud menor a -4), recibe la denominación científica de bólido o bola de fuego.",
+      "Un meteorito es el fragmento residual del meteoroide que logra sobrevivir con éxito al severo proceso de ablación térmica y fragmentación en la atmósfera, tocando físicamente el suelo o el lecho oceánico de nuestro planeta. Cada meteorito recuperado representa una muestra geológica extraterrestre gratuita caída del cielo, permitiendo a los geoquímicos analizar trozos de asteroides, cometas, de la Luna e incluso del planeta Marte sin requerir misiones de retorno de muestras.",
+      "Comprender esta secuencia cronológica es fundamental: el fenómeno comienza en el espacio con un meteoroide helado o rocoso en órbita heliocéntrica; continúa en la atmósfera con el destello incandescente de un meteoro que ioniza las moléculas gaseosas en la mesosfera; y culmina en la litosfera de la Tierra si algún trozo rocoso sobrevive al fuego atmosférico y se convierte en un meteorito reposando sobre el terreno."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Cada día caen sobre la Tierra más de 100 toneladas de materia extraterrestre. La inmensa mayoría llega en forma de micrometeoritos microscópicos que se posan suavemente sobre los tejados de nuestras casas sin que lo notemos.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los bólidos son meteoros excepcionalmente brillantes que superan el resplandor del planeta Venus en el cielo nocturno. A menudo explotan en múltiples fragmentos produciendo destellos verdes o azulados debido al hierro y magnesio fundidos.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m2/banner_diferencia-terminos.webp',
-    bannerCaption: 'Meteoroide, meteoro, meteorito: tres nombres para el mismo objeto en diferentes etapas de su viaje',
-    fact: 'Existen meteoritos de origen lunar y marciano. Fueron arrancados de la Luna o de Marte por impactos de asteroides gigantes y viajaron por el espacio durante millones de años antes de caer en la Tierra.',
+    "fact": "La distinción astronómica oficial de la Unión Astronómica Internacional es rigurosa: el meteoroide es la roca sólida viajando por el espacio interplanetario; el meteoro es el fenómeno luminoso de ionización que surca la atmósfera; y el meteorito es la roca superviviente que logra impactar y descansar físicamente en el suelo.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los bólidos de alta energía pueden fragmentarse catastróficamente a altitudes de 20 a 40 kilómetros, liberando presiones dinámicas que igualan detonaciones químicas de cientos de kilotones de TNT y depositando miles de fragmentos de meteoritos en una elipse de dispersión geológica que se extiende por decenas de kilómetros cuadrados."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La atmósfera terrestre intercepta diariamente más de cien toneladas de materia cósmica interplanetaria, pero la inmensa mayoría de este material entra pulverizado en forma de polvo cósmico microscópico que desciende imperceptiblemente como una lluvia mineral continua sobre los tejados urbanos, los bosques y los océanos del planeta."
+      }
+    ]
   },
   {
-    id: 'tipos-meteoritos',
-    title: 'Condritas y Acondritas',
-    color: '#EC407A',
-    btnImage: '/assets/asteroides/infographic_m2/btn_tipos-meteoritos.webp',
-    image: '/assets/asteroides/infographic_m2/hero_tipos-meteoritos.webp',
-    content: [
-      'Al estudiar los meteoritos recuperados en la Tierra, los científicos los dividen en tres grandes familias según su origen geológico: meteoritos rocosos, meteoritos metálicos y meteoritos mixtos. Dentro de los rocosos se encuentra la distinción más importante entre Condritas y Acondritas.',
-      'Las Condritas son los meteoritos más primitivos e interesantes de todos, representando el 86% de los hallazgos terrestres. Se caracterizan por contener diminutas esferas de mineral petrificado llamadas cóndrulos. Estas esférulas se formaron por la fusión de polvo en la nebulosa solar primitiva antes de que existieran los planetas.',
-      'Las condritas jamás sufrieron procesos de fusión o diferenciación térmica dentro de un planeta grande. Son archivos químicos intactos que preservan la materia primaria de la que se formó el Sistema Solar hace 4,567 millones de años. Incluyen las famosas condritas carbonáceas, ricas en agua y aminoácidos prebióticos.',
-      'Las Acondritas son meteoritos rocosos que provienen de cuerpos padres grandes que sí se derivaron y fusionaron internamente, como grandes asteroides o planetas. Al calentarse, las rocas perdieron sus cóndrulos primordiales. Tienen estructuras volcánicas y basálticas muy parecidas a las rocas emitidas por los volcanes de la Tierra.',
-      'Los Meteoritos Metálicos están compuestos casi exclusivamente por una aleación de hierro y níquel. Provienen del núcleo denso de antiguos protoplanetas que fueron despedazados por choques gigantescos. Al ser cortados y pulidos con ácido, muestran un hermoso patrón cristalino entrecruzado conocido como Estructura de Widmanstätten.'
+    "id": "tipos-meteoritos",
+    "title": "Condritas y Acondritas",
+    "color": "#FFD93D",
+    "btnImage": "/assets/asteroides/infographic_m2/btn_tipos-meteoritos.webp",
+    "image": "/assets/asteroides/infographic_m2/hero_tipos-meteoritos.webp",
+    "content": [
+      "La clasificación científica de los meteoritos se fundamenta en su composición petrológica, geoquímica e historia térmica. Se dividen en tres grandes familias principales: los meteoritos rocosos o pétreos (que representan más del noventa y cuatro por ciento de todas las caídas confirmadas), los meteoritos metálicos de hierro-níquel (alrededor del cinco por ciento) y los litosideritos mixtos o rocoso-metálicos (aproximadamente el uno por ciento).",
+      "Dentro de los meteoritos pétreos, las condritas constituyen el grupo más abundante y primitivo de todo el registro geológico solar. Se caracterizan por contener 'cóndrulos', pequeñas esferas milimétricas de silicatos cristalizados de olivino y piroxeno que se formaron por calentamiento súbito y enfriamiento instantáneo en la nube presolar antes de que existieran los planetas. Al no haber sufrido jamás fusión ígnea en un cuerpo matriz grande, las condritas preservan la receta química elemental intacta del Sol primitivo.",
+      "Un subgrupo de valor incalculable para la astrobiología son las condritas carbonáceas, tales como los meteoritos Murchison y Allende. Estas rocas de matriz oscura y rica en agua ligada contienen hasta un tres por ciento de materia orgánica compleja, incluyendo hidrocarburos poliaromáticos, alcoholes, ácidos carboxílicos y más de setenta aminoácidos diferentes, muchos de los cuales no existen en la biología terrestre natural, evidenciando que los ladrillos de la vida se sintetizaron en el espacio.",
+      "En contraste con las condritas primitivas, las acondritas son meteoritos rocosos que carecen de cóndrulos porque sufrieron procesos de diferenciación magmática y fusión térmica total en el interior de protoplanetas de gran tamaño. Entre ellas destacan las acondritas del grupo HED (howarditas, eucritas y diogenitas), procedentes de la corteza basáltica y el manto magmático del asteroide 4 Vesta, así como los raros meteoritos de origen lunar y marciano eyectados por grandes impactos.",
+      "Finalmente, los litosideritos como las fascinantes palasitas representan las regiones fronterizas entre el núcleo de hierro fundido y el manto rocoso de antiguos planetesimales destruidos por choques colosales. Están formados por una red continua de metal brillante de hierro y níquel que encierra hermosos cristales translúcidos de peridoto y olivino verde esmeralda, ofreciendo una ventana geológica directa al corazón interno de un mundo destruido."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La estructura de Widmanstätten que presentan los meteoritos metálicos no se puede fabricar en ningún laboratorio terrestre. Requiere que la aleación de hierro y níquel se enfríe en el espacio a un ritmo increíblemente lento de un grado cada millón de años.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Las condritas carbonáceas como el meteorito Allende contienen granos presolares. Son diminutos cristales de diamante y grafito que se sintetizaron en la atmósfera de estrellas moribundas antes del nacimiento de nuestro propio Sol.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m2/banner_tipos-meteoritos.webp',
-    bannerCaption: 'Tipos de meteoritos: condritos pétreos (85%), meteoritos de hierro y palasitas de hierro-olivino',
-    fact: 'El meteorito Hoba, hallado en Namibia en 1920, es el meteorito metálico más grande y pesado encontrado intacto en la Tierra. Pesa más de 60 toneladas y jamás ha sido movido de su lugar de impacto original.',
+    "fact": "Las condritas contienen cóndrulos esféricos primitivos que son los minerales más antiguos del Sistema Solar con 4,567 millones de años, mientras que las acondritas volcánicas y las palasitas translúcidas proceden respectivamente de las cortezas basálticas y de los límites núcleo-manto de protoplanetas destruidos por colisiones.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La datación radiométrica de isótopos de plomo-plomo (Pb-Pb) en las inclusiones de calcio y aluminio (CAIs) de condritas carbonáceas ha fijado con precisión atómica absoluta la edad de condensación de los primeros sólidos del disco protoplanetario en exactamente 4,567.3 millones de años atrás, marcando el año cero del Sistema Solar."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las palasitas pulidas son consideradas las rocas más hermosas de todo el universo observable: al cortarse en láminas delgadas, los cristales dorados de peridoto y olivino dejan pasar la luz solar a través de una sólida matriz metálica de hierro y níquel alienígena forjada en la frontera del núcleo de un mundo destruido."
+      }
+    ]
   },
   {
-    id: 'formacion-crateres',
-    title: 'Física de los Cráteres',
-    color: '#AB47BC',
-    btnImage: '/assets/asteroides/infographic_m2/btn_formacion-crateres.webp',
-    image: '/assets/asteroides/infographic_m2/hero_formacion-crateres.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1siPSV9fxR1hwNvbBOnaJ5HXYsRSQlp6O&export=download&authuser=0', title: 'Caída de un Meteorito: Registro Visual' },
-    content: [
-      'Cuando un gran asteroide choca contra la superficie de un planeta rocoso a velocidad hiperveloz, no se limita a empujar la tierra a los lados como una pala. El impacto libera de golpe una cantidad astronómica de energía cinética que desencadena una explosión descomunal, formando una depresión circular llamada cráter de impacto.',
-      'El proceso de formación de un cráter ocurre en tres etapas consecutivas ultrarrápidas. La primera etapa es la de Contacto y Compresión. Dura una fracción de segundo mientras el impactador penetra en el suelo. Genera ondas de choque con presiones de millones de atmósferas que vaporizan instantáneamente la roca del proyectil.',
-      'La segunda etapa es la de Excavación. Las ondas de choque se propagan en forma de cuenco a través del terreno circundante, empujando y expulsando miles de toneladas de material fracturado hacia afuera. Este material sale volando en parábola formando una manta de eyección que rodea los bordes del nuevo cráter.',
-      'La tercera etapa es la de Modificación. El cuenco excavado se vuelve inestable y sus paredes colapsan hacia el centro por gravedad. En los cráteres grandes de más de 5 kilómetros, el suelo comprimido debajo del impacto rebota hacia arriba de forma elástica, creando una majestuosa montaña central en el corazón del cráter.',
-      'Con el paso de milenios en la Tierra, la lluvia, el viento y la tectónica de placas erosionan y borran la mayoría de los cráteres. Sin embargo, en mundos sin atmósfera ni actividad geológica como la Luna o Mercurio, los cráteres permanecen impecables durante miles de millones de años como cicatrices perpetuas.'
+    "id": "formacion-crateres",
+    "title": "Física de los Cráteres",
+    "color": "#6BCB77",
+    "btnImage": "/assets/asteroides/infographic_m2/btn_formacion-crateres.webp",
+    "image": "/assets/asteroides/infographic_m2/hero_formacion-crateres.webp",
+    "content": [
+      "El cráter de impacto es la forma geológica dominante en la superficie de casi todos los cuerpos sólidos del Sistema Solar, desde la Luna y Mercurio hasta los satélites helados de Júpiter. La excavación de un cráter por un proyectil hiperveloz es un proceso físico extremadamente energético que no responde a una simple excavación mecánica, sino a la liberación instantánea de energía cinética comparable a una detonación nuclear masiva.",
+      "La formación de un cráter ocurre a través de tres etapas físicas consecutivas: 1) Etapa de contacto y compresión: el proyectil choca con el terreno diana a velocidades de diez a cuarenta kilómetros por segundo. Se generan ondas de choque biterrestres de presiones monstruosas que superan varios megabares, comprimiendo y fundiendo tanto el asteroide como la roca basal en una fracción de milisegundo.",
+      "2) Etapa de excavación: a medida que la onda de choque esférica se expande hacia afuera por la corteza terrestre, se produce una onda de rarefacción o descompresión que empuja el material hacia arriba y hacia los lados. Se abre una gigantesca 'cavidad transitoria' de forma parabólica y miles de toneladas de roca fragmentada son eyectadas violentamente en una cortina cónica de escombros que se deposita alrededor del borde formando el manto de eyección.",
+      "3) Etapa de modificación: las paredes empinadas de la cavidad transitoria colapsan por efecto de la gravedad. En cráteres pequeños (de hasta cuatro kilómetros de diámetro en la Tierra), el resultado final es un 'cráter simple' en forma de cuenco hondo, como el famoso Meteor Crater de Arizona. En impactos mayores, el rebote elástico central del piso del cráter levanta una montaña o pico central prominente, formando un 'cráter complejo'.",
+      "La energía del impacto induce en los minerales de la corteza un metamorfismo de choque irreversible que no puede ser replicado por ningún proceso volcánico o tectónico terrestre. La presencia de granos de cuarzo chocado con laminaciones planas microscópicas (PDFs) y minerales polimórficos de alta presión como la coesita y la stishovita son la huella dactilar definitiva que permite a los geólogos certificar el origen meteorítico de una estructura milenaria."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El volumen del cráter final excavado por un asteroide hiperveloz suele ser entre 15 y 20 veces mayor que el propio diámetro de la roca impactante. Una piedra de 100 metros puede excavar un foso de casi dos kilómetros.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La enorme presión de un impacto altera la estructura cristalina del cuarzo en el suelo, produciendo un mineral raro llamado cuarzo chocado. Su presencia en las capas geológicas es la prueba irrefutable de un impacto asteroide antiguo.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m2/banner_formacion-crateres.webp',
-    bannerCaption: 'Formación de cráteres: contacto, excavación y colapso, las tres etapas del impacto cósmico',
-    fact: 'El Cráter Meteor de Arizona (Barringer) es el cráter de impacto mejor conservado de la Tierra. Se formó hace 50,000 años por una roca de hierro de 50 metros y mide 1.2 kilómetros de diámetro por 170 metros de profundidad.',
+    "fact": "La formación de un cráter de impacto consta de tres etapas físicas bien delimitadas: contacto y compresión a presiones extremas de megabares, excavación aerodinámica de la cavidad transitoria de escombros y modificación gravitatoria final formando cuencos simples o estructuras complejas con picos centrales levantados.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La energía cinética liberada en un impacto hiperbólico escala de forma cuadrática con la velocidad (E = 1/2 m v^2), de modo que un asteroide metálico de 50 metros de diámetro a 20 km/s libera una energía destructiva de unos 10 megatones de TNT, excavando un cráter de más de 1.2 kilómetros de diámetro como el cráter Barringer de Arizona."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El Meteor Crater de Arizona conserva una llamativa forma casi cuadrada en lugar de redonda debido a que las fallas y fracturas tectónicas preexistentes de las capas de roca caliza sedimentaria regional guiaron preferencialmente la dirección de propagación de la devastadora onda de choque subterránea."
+      }
+    ]
   },
   {
-    id: 'impacto-chicxulub',
-    title: 'El Cataclisma de Chicxulub',
-    color: '#FFD54F',
-    btnImage: '/assets/asteroides/infographic_m2/btn_impacto-chicxulub.webp',
-    image: '/assets/asteroides/infographic_m2/hero_impacto-chicxulub.webp',
-    content: [
-      'Hace 66 millones de años, al final del periodo Cretácico, un asteroide gigante de 10 kilómetros de diámetro viajaba a 70,000 kilómetros por hora directo hacia la Tierra. Impactó en la zona que hoy ocupa la península de Yucatán en México, desencadenando la quinta extinción masiva más devastadora en la historia de nuestro planeta.',
-      'El impacto liberó una energía equivalente a más de mil millones de bombas atómicas juntas. Excavó en cuestión de segundos un cráter de 180 kilómetros de ancho y 20 kilómetros de profundidad conocido como la estructura de Chicxulub. La explosión vaporizó al instante miles de kilómetros cúbicos de rocas ricas en azufre y carbonatos.',
-      'La onda de choque inicial provocó mega-tsunamis de más de 100 metros de altura que barrieron las costas continentales. Además, los escombros incandescentes arrojados al espacio cayeron de regreso a la atmósfera como millones de meteoros de fuego. Esto calentó el aire global hasta encender incendios forestales a escala planetaria.',
-      'Lo más mortífero ocurrió en las semanas posteriores. Las diminutas partículas de hollín y polvo cargadas de azufre permanecieron suspendidas en la estratosfera durante años. Bloquearon por completo la luz del Sol, sumiendo al planeta en un invierno nuclear oscuro y helado que detuvo la fotosíntesis de las plantas.',
-      'Sin vegetación, las cadenas tróficas terrestres y marinas colapsaron. Más del 75% de todas las especies vivas del planeta desaparecieron para siempre, incluidos los dinosaurios no aviares. El fin de su reinado abrió la oportunidad evolutiva para que los pequeños mamíferos florecieran y eventualmente dieran origen al ser humano.'
+    "id": "impacto-chicxulub",
+    "title": "El Cataclismo de Chicxulub",
+    "color": "#9B51E0",
+    "btnImage": "/assets/asteroides/infographic_m2/btn_impacto-chicxulub.webp",
+    "image": "/assets/asteroides/infographic_m2/hero_impacto-chicxulub.webp",
+    "content": [
+      "Hace exactamente sesenta y seis millones cuarenta mil años, al término del periodo Cretácico, un asteroide carbonáceo de entre diez y catorce kilómetros de diámetro impactó contra las plataformas marinas carbonatadas de lo que hoy es la Península de Yucatán, cerca del poblado de Chicxulub en México. El cataclismo liberó una energía colosal estimada en cien millones de megatones de dinamita, desencadenando la quinta extinción masiva de la Tierra.",
+      "El choque excavó una cavidad transitoria de casi cien kilómetros de ancho y treinta kilómetros de profundidad en menos de cinco segundos, fundiendo instantáneamente miles de kilómetros cúbicos de granito basal. La roca pulverizada y fundida fue eyectada fuera de la atmósfera a velocidades orbitales, mientras megatsunamis con olas de más de trescientos metros de altura barrieron las costas de todo el Golfo de México y penetraron cientos de kilómetros tierra adentro.",
+      "Al reingresar a la atmósfera a nivel global, los billones de esferas de vidrio fundido (microtectitas) calentaron el aire de todo el planeta a cientos de grados como un gigantesco horno infrarrojo durante varias horas, provocando incendios forestales simultáneos que consumieron bosques enteros en todos los continentes habitados. La atmósfera quedó rápidamente saturada de cenizas, hollín y aerosoles de ácido sulfúrico procedentes de las evaporitas de yeso vaporizadas en Yucatán.",
+      "Esta densa capa de aerosoles bloqueó la radiación solar incidente durante años, sumergiendo a la Tierra en un gélido 'invierno de impacto' prolongado donde las temperaturas cayeron drásticamente en todo el globo. La fotosíntesis vegetal colapsó tanto en la tierra firme como en las cadenas tróficas marinas de fitoplancton, provocando la extinción del setenta y cinco por ciento de todas las especies del planeta, incluidos los dinosaurios no aviares.",
+      "En el año 1980, el físico galardonado con el Premio Nobel Luis Álvarez y su hijo geólogo Walter Álvarez descubrieron la prueba irrefutable de este cataclismo: una delgada capa de arcilla interestratificada en todo el mundo en el límite Cretácico-Paleógeno (límite K-Pg) que contiene concentraciones anómalas de iridio, un metal del grupo del platino sumamente escaso en la corteza terrestre pero extremadamente abundante en los asteroides primordiales."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los geólogos descubrieron el impacto de Chicxulub buscando una fina capa de arcilla enriquecida con iridio que existe en todo el mundo. El iridio es un metal rarísimo en la corteza terrestre pero abundantísimo en los asteroides.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los famosos cenotes de la península de Yucatán están distribuidos en un semicírculo perfecto. Siguen el anillo de falla exterior del cráter de Chicxulub donde la roca fracturada facilitó la disolución del suelo calcáreo.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m2/banner_impacto-chicxulub.webp',
-    bannerCaption: 'Impacto de Chicxulub: el asteroide de 10km que acabó con los dinosaurios hace 66 millones de años',
-    fact: 'El asteroide de Chicxulub tardó apenas dos segundos en cruzar toda la atmósfera terrestre desde el espacio hasta chocar contra el mar somero de Yucatán, dejando un túnel de vacío momentáneo tras de sí.',
+    "fact": "El impacto del asteroide de Chicxulub en la Península de Yucatán hace 66.04 millones de años liberó la descomunal energía de 100 millones de megatones de TNT, depositando una capa global de arcilla rica en iridio extraterrestre y provocando un invierno de impacto prolongado que extinguió al 75% de las especies del planeta.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las perforaciones geológicas y núcleos de roca marina extraídos del cráter Chicxulub por la expedición científica internacional IODP-ICDP 364 en 2016 demostraron que el impacto despresurizó el manto terrestre levantando un anillo de picos montañosos de seiscientos metros de altura en un intervalo de apenas diez minutos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los únicos dinosaurios que lograron sobrevivir al cataclismo ecológico global de Chicxulub fueron las pequeñas aves emplumadas antecesoras directas de los pájaros actuales, gracias a su dieta granívora especializada basada en semillas subterráneas protegidas del fuego y a su capacidad de cobijo en madrigueras."
+      }
+    ]
   },
   {
-    id: 'lluvias-estrellas',
-    title: 'Lluvias de Meteoros',
-    color: '#26A69A',
-    btnImage: '/assets/asteroides/infographic_m2/btn_lluvias-estrellas.webp',
-    image: '/assets/asteroides/infographic_m2/hero_lluvias-estrellas.webp',
-    videos: [
-      { src: 'https://drive.usercontent.google.com/download?id=1qHO6b2gW9iNX9Zmw9K-L6LGqdvoAs6Xs&export=download&authuser=0', title: 'Lluvia de Meteoros Gemínidas' },
-      { src: 'https://drive.usercontent.google.com/download?id=15Wj866MeoUyWiR-55j83WkN2nPgrm9rd&export=download&authuser=0', title: 'Lluvia de Meteoros Perseidas' }
+    "id": "lluvias-estrellas",
+    "title": "Lluvias de Meteoros",
+    "color": "#FF884B",
+    "btnImage": "/assets/asteroides/infographic_m2/btn_lluvias-estrellas.webp",
+    "image": "/assets/asteroides/infographic_m2/hero_lluvias-estrellas.webp",
+    "content": [
+      "Las lluvias de meteoros son espectáculos celestes periódicos que fascinan a la humanidad desde la antigüedad, pero su origen físico es puramente mecánico y astronómico. A medida que un cometa periódico o un asteroide activo orbita alrededor del Sol, el calor solar evapora sus hielos y libera millones de pequeñas partículas de polvo, arena y guijarros que continúan orbitando en una corriente de escombros alargada siguiendo la misma trayectoria elíptica.",
+      "Cada año, cuando la Tierra en su viaje orbital de traslación alrededor del Sol cruza una de estas densas corrientes de escombros cósmicos, millones de partículas penetran en la atmósfera a velocidades relativas de decenas de kilómetros por segundo. La ablación colectiva de miles de meteoroides a lo largo de varias noches consecutivas produce la visión coordinada de decenas de estrellas fugaces por hora surcando el firmamento.",
+      "Debido a las leyes geométricas de la perspectiva óptica, todos los trazos luminosos de una lluvia de meteoros parecen divergir y emanar de un único punto imaginario en la bóveda celeste. Este punto focal se denomina formalmente 'radiante', y la constelación astronómica en cuyo fondo se proyecta el radiante es la que otorga el nombre característico a la lluvia anual (como las Perseidas en Perseo o las Oriónidas en Orión).",
+      "Entre las lluvias más famosas del calendario astronómico se destacan las Perseidas de agosto, producidas por las partículas arrojadas por el cometa 109P/Swift-Tuttle; las Gemínidas de diciembre, originadas no por un cometa sino por el singular asteroide rocoso 3200 Faetón; y las Leónidas de noviembre, asociadas al cometa 55P/Tempel-Tuttle, célebres por desencadenar espectaculares tormentas de meteoros históricas con miles de bólidos por minuto.",
+      "La observación científica de las lluvias de meteoros permite a los astrónomos calcular la densidad de partículas y la dispersión espacial de los cometas padres sin necesidad de interceptarlos directamente. Además, los astrónomos monitorizan estas corrientes para orientar de manera segura los paneles solares de los satélites en órbita baja y de la Estación Espacial Internacional durante los picos de máxima intensidad de la lluvia."
     ],
-    content: [
-      'En ciertas épocas del año, si miras hacia el cielo nocturno despejado, puedes contemplar decenas de destellos luminosos cruzando el firmamento en pocas horas. Este espectáculo natural se conoce como Lluvia de Meteoros. Ocurre cuando la Tierra en su órbita atraviesa un río de escombros dejado atrás por un cometa o asteroide.',
-      'A medida que los cometas se acercan al Sol, el calor sublima su hielo y libera millones de granos de polvo y roquitas. Estos fragmentos quedan flotando a lo largo del mismo camino orbital del cometa formando un enjambre continuo. Cada año, cuando la Tierra pasa por ese punto de intersección, los granitos entran a la atmósfera.',
-      'Al observar una lluvia de meteoros, todos los destellos parecen salir de un mismo punto imaginario en el cielo nocturno llamado el Radiante. Debido a un efecto de perspectiva óptica (similar a ver las vías de un tren juntarse a lo lejos), la lluvia recibe el nombre de la constelación donde se ubica su radiante.',
-      'Una de las lluvias más famosas de cada año son las Perseidas, que alcanzan su punto máximo a mediados de agosto. Son causadas por las partículas expulsadas por el cometa Swift-Tuttle. Otra lluvia destacada son las Gemínidas en diciembre, cuyo cuerpo progenitor es el inusual asteroide rocoso 3200 Phaethon.',
-      'Para disfrutar de una lluvia de meteoros no necesitas telescopios ni binoculares complejos. La clave es alejarse de la contaminación lumínica de las grandes ciudades, acostarse boca arriba en el suelo, dejar que los ojos se adapten a la oscuridad durante 20 minutos y disfrutar del despliegue brillante del universo.'
-    ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En ocasiones excepcionales ocurren Tormentas de Meteoros. Suceden cuando la Tierra cruza un enjambre de polvo muy joven y denso, pudiendo observarse miles de meteoros por hora, como ocurrió en las Leónidas de 1833 y 1966.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La velocidad a la que entran los granos de polvo de una lluvia de meteoros oscila entre 11 y 72 kilómetros por segundo. Las Leónidas son las más rápidas, incinerándose a altitudes elevadas con destellos verdosos.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m2/banner_lluvias-estrellas.webp',
-    bannerCaption: 'Lluvias de estrellas: cuando la Tierra cruza los restos de un cometa vemos decenas de meteoros por hora',
-    fact: 'El cuerpo progenitor de las Gemínidas, el asteroide Phaethon, se comporta como un "cometa rocoso". Al acercarse intensamente al Sol, su superficie alcanza 750°C y se agrieta liberando nubes de polvo mineral.',
+    "fact": "Las lluvias de meteoros anuales ocurren cuando la Tierra intercepta las corrientes de escombros y partículas desprendidas por cometas periódicos en su trayectoria orbital; todos los trazos luminosos parecen irradiar de un punto común en el cielo denominado radiante debido a un fascinante efecto de perspectiva geométrica.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad geocéntrica de entrada de los meteoros de las Perseidas alcanza los 59 km/s debido a que la órbita de la corriente de polvo del cometa progenitor 109P/Swift-Tuttle cruza de forma casi perpendicular el vector de movimiento orbital de traslación de la Tierra alrededor del Sol a treinta kilómetros por segundo."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En la legendaria tormenta de meteoros de las Leónidas de noviembre de 1833, observadores astronómicos en Norteamérica contabilizaron más de cien mil meteoros por hora durante la madrugada, iluminando el cielo con tal intensidad fosforescente que era posible leer la letra pequeña de los periódicos en mitad de la noche."
+      }
+    ]
   },
   {
-    id: 'meteoritos-famosos',
-    title: 'Caídas Históricas',
-    color: '#FF7043',
-    btnImage: '/assets/asteroides/infographic_m2/btn_meteoritos-famosos.webp',
-    image: '/assets/asteroides/infographic_m2/hero_meteoritos-famosos.webp',
-    content: [
-      'A lo largo de la historia de la humanidad han ocurrido eventos extraordinarios donde rocas espaciales han sido presenciadas cayendo del cielo. Estos acontecimientos han cambiado la ciencia moderna y dejado anécdotas sorprendentes grabadas en los registros históricos.',
-      'Un hito fundamental ocurrió en febrero de 2013 sobre la ciudad de Cheliábinsk en Rusia. Un asteroide de 20 metros explotó a 30 kilómetros de altura liberando la energía de 30 bombas atómicas. La onda sónica rompió miles de ventanas e hirió a más de 1,500 personas, siendo grabado por cientos de cámaras de autos.',
-      'En febrero de 1969 cayó en Chihuahua, México, el famoso Meteorito Allende. Fue un bólido brillante que se desintegró sobre miles de kilómetros cuadrados. Se recuperaron más de dos toneladas de condritas carbonáceas cargadas de inclusión de aluminio y calcio, siendo bautizado como la piedra Rosetta de la astroquímica.',
-      'Otro caso insólito es el del Meteorito Peekskill de 1992 en Estados Unidos. Una bola de fuego verdosa cruzó varios estados antes de que un fragmento de 12 kilos cayera en el maletero de un automóvil Chevrolet sedán estacionado. El evento fue grabado en video por docenas de aficionados en estadios de fútbol.',
-      'El único caso documentado de una persona golpeada directamente por un meteorito ocurrió en Alabama en 1954. Ann Hodges descansaba en su sofá cuando una piedra de 4 kilos atravesó el techo del hogar, rebotó en una radio de madera e impactó en su costado. Afortunadamente sobrevivió con solo un gran moretón.'
+    "id": "meteoritos-famosos",
+    "title": "Meteoritos Célebres de la Historia",
+    "color": "#00E4FF",
+    "btnImage": "/assets/asteroides/infographic_m2/btn_meteoritos-famosos.webp",
+    "image": "/assets/asteroides/infographic_m2/hero_meteoritos-famosos.webp",
+    "content": [
+      "A lo largo de los siglos, la caída y hallazgo de meteoritos excepcionales ha dejado una huella indeleble tanto en la ciencia astronómica como en la cultura popular humana. Estos fragmentos cósmicos singulares se conservan en los grandes museos de historia natural como tesoros geológicos irremplazables que documentan cataclismos prehistóricos y la química de mundos desaparecidos.",
+      "El meteorito más masivo conocido que yace intacto sobre la superficie terrestre es el meteorito Hoba, descubierto en Namibia en el año 1920. Se trata de un colosal bloque metálico con forma tabular compuesto en un ochenta y cuatro por ciento de hierro y dieciséis por ciento de níquel, con una masa estimada de más de sesenta toneladas. Sorprendentemente, Hoba no excavó un cráter visible, ya que la densa atmósfera terrestre frenó el bloque hasta su velocidad terminal antes del impacto suave.",
+      "En el ámbito de la cosmoquímica elemental, el meteorito Allende es unánimemente reconocido como la roca más importante jamás caída del espacio. Se precipitó en forma de lluvia de miles de fragmentos sobre el estado de Chihuahua, México, en la madrugada del 8 de febrero de 1969. Al tratarse de una condrita carbonácea pristina rica en inclusiones de calcio y aluminio (CAIs), permitió datar con precisión atómica por primera vez la edad exacta de formación de nuestro Sistema Solar.",
+      "Otro hito científico indispensable es el meteorito ALH84001, descubierto en los campos de hielo azul de la Antártida en 1984. Los análisis de gases nobles atrapados en sus cavidades vítreas demostraron que procedía directamente de la corteza antigua de Marte, eyectado al espacio por un impacto hace diecisiete millones de años. En 1996, un equipo de la NASA liderado por David McKay causó sensación mundial al identificar posibles bioestructuras fosilizadas microscópicas dentro de sus minerales de carbonato.",
+      "En tiempos contemporáneos, el superbolido de Cheliábinsk del 15 de febrero de 2013 en Rusia marcó el primer impacto de gran magnitud registrado extensamente por cámaras de tablero de automóviles, teléfonos inteligentes y sensores de infrasonido globales. El estallido a treinta kilómetros de altura de un asteroide condrítico de veinte metros liberó quinientos kilotones de energía, recordando vívidamente a la humanidad la constante actividad cósmica sobre nuestras cabezas."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En el año 1908 ocurrió el Evento de Tunguska en Siberia. Un asteroide de 50 metros explotó en el aire a 8 kilómetros de altura, aplanando 80 millones de árboles en una superficie de 2,000 kilómetros cuadrados.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El estudio del meteorito Allende permitió determinar con una precisión extrema la edad exacta del Sistema Solar en 4,567.3 millones de años, al analizar la desintegración isotópica de uranio en sus minerales.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m2/banner_meteoritos-famosos.webp',
-    bannerCaption: 'Meteoritos famosos: ALH84001 de Marte, Allende con aminoácidos y Hoba el mayor del mundo',
-    fact: 'El meteorito Murchison, caído en Australia en 1969, contenía más de 70 tipos de aminoácidos diferentes y bases nitrogenadas complejas, demostrando que los componentes de la vida se sintetizan naturalmente en el espacio.',
-  },
+    "fact": "El meteorito Hoba en Namibia es la masa individual de hierro natural más gigantesca de la Tierra con 60 toneladas métricas intactas, mientras que el meteorito carbonáceo Allende caído en Chihuahua, México, en 1969 permitió datar con exactitud atómica la edad de nacimiento de nuestro Sistema Solar en 4,567 millones de años.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El meteorito marciano ALH84001 cristalizó hace 4,091 millones de años en la corteza de Marte durante la era Noeica primitiva, conservando glóbulos de carbonato hidrotermal que documentan la presencia prolongada de agua líquida subterránea en los albores geológicos del planeta rojo antes de la pérdida de su atmósfera."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La famosa daga funeraria descubierta junto a la momia del faraón egipcio Tutankamón en 1922 fue forjada hace más de 3,300 años empleando hierro de un meteorito metálico de alta pureza con alto contenido de níquel y cobalto, siglos antes de que la civilización humana descubriera la técnica de fundición del hierro terrestre."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_AsteroidesM2() {

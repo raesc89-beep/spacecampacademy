@@ -92,157 +92,194 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'anatomia-cometa',
-    title: 'Anatomía de un Cometa',
-    color: '#00E5FF',
-    btnImage: '/assets/asteroides/infographic_m3/btn_anatomia-cometa.webp',
-    image: '/assets/asteroides/infographic_m3/hero_anatomia-cometa.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1Hly3vM3ng7sPjqq_THTTPmwtsG8WL8e-&export=download&authuser=0', title: 'La Misión Rosetta: Parte 2' },
-    content: [
-      'Imagina una bola de nieve gigante del tamaño de una ciudad completa, pero mezclada con tierra oscura, hollín de carbón y polvo de minerales antiguos. Así definió el astrofísico Fred Whipple a los cometas en 1950 en su famosa teoría de las "bolas de nieve sucias". Son los cuerpos más fríos y prístinos de todo nuestro Sistema Solar.',
-      'El corazón de un cometa se llama Núcleo. Es un cuerpo sólido y poroso de unos pocos kilómetros de diámetro, compuesto por hielos de agua, dióxido de carbono, metano y amoníaco. La superficie del núcleo es extrañamente oscura, más negra que el carbón, porque está cubierta por una fina capa de materiales orgánicos complejos llamados tolinas.',
-      'Cuando un cometa se acerca al Sol, el calor solar evapora los hielos de su superficie. Los gases en expansión arrastran consigo millones de diminutas partículas de polvo, creando una inmensa atmósfera temporal brillante alrededor del núcleo llamada Coma. La coma de un cometa puede expandirse hasta medir más de 100,000 kilómetros de ancho.',
-      'A medida que el cometa continúa su viaje hacia el Sol, la radiación y el viento solar empujan la materia de la coma hacia atrás, formando las espectaculares Colas Cometarias. Estas colas no siguen la dirección del movimiento del cometa como el humo de un auto, sino que siempre apuntan en dirección opuesta al Sol.',
-      'Todo cometa activo posee dos colas distintas: una Cola de Iones azulada y recta, formada por gases electrizados empujados por el viento solar, y una Cola de Polvo blanca y curvada, formada por granos de silicato empujados por la presión de la luz solar. Estas colas pueden desplegarse a lo largo de más de 100 millones de kilómetros.'
+    "id": "anatomia-cometa",
+    "title": "Anatomía de un Cometa",
+    "color": "#4FA3B5",
+    "btnImage": "/assets/asteroides/infographic_m3/btn_anatomia-cometa.webp",
+    "image": "/assets/asteroides/infographic_m3/hero_anatomia-cometa.webp",
+    "content": [
+      "Los cometas son algunos de los cuerpos celestes más espectaculares y primitivos del Sistema Solar. En el año 1950, el astrónomo estadounidense Fred Whipple formuló el célebre modelo de la 'bola de nieve sucia', describiendo el núcleo cometario como un conglomerado poroso de hielos volátiles (principalmente agua, monóxido de carbono, dióxido de carbono y metano) íntimamente mezclados con polvo de silicatos, sulfuros y compuestos orgánicos refractarios de carbono complejo.",
+      "El núcleo sólido es un objeto relativamente pequeño, con diámetros típicos que varían entre uno y cincuenta kilómetros. A pesar de contener enormes cantidades de hielo puro en su interior, la superficie exterior de un cometa es sorprendentemente negra y oscura, con un albedo reflectivo de apenas un dos a cuatro por ciento. Esta corteza externa está formada por una costra desvolatilizada de alquitranes de carbono y polvo que aísla térmicamente el interior helado del calor del espacio.",
+      "Cuando el cometa en su órbita elíptica se aproxima al Sol y cruza la órbita de Marte (alrededor de tres Unidades Astronómicas de distancia heliocéntrica), la radiación solar calienta la corteza. Los hielos subsuperficiales comienzan a sublimarse a través de grietas y fracturas, expandiéndose violentamente hacia el vacío para formar una inmensa envoltura esférica y difusa de gas y polvo que los astrónomos denominan la 'coma' o cabellera cometaria.",
+      "La coma puede alcanzar dimensiones astronómicas verdaderamente monumentales, llegando a medir cientos de miles de kilómetros de diámetro, superando con holgura el tamaño del planeta Júpiter. Rodeando a la coma visible, existe una gigantesca envoltura invisible de átomos de hidrógeno neutro producida por la disociación ultravioleta de las moléculas de vapor de agua, la cual puede extenderse a lo largo de varios millones de kilómetros en el espacio interplanetario.",
+      "La gravedad del diminuto núcleo sólido es sumamente débil, apenas una diezmilésima parte de la gravedad de la Tierra. Debido a este débil pozo gravitacional, el cometa es incapaz de retener su atmósfera temporalmente generada, permitiendo que el viento solar y la presión de radiación solar barran continuamente el gas y el polvo de la coma hacia el espacio exterior, moldeando las colas luminosas que se extienden a lo largo de cientos de millones de kilómetros."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'A pesar de que la coma y la cola de un cometa pueden ser más grandes que el propio Sol, su densidad es tan extremadamente baja que los astrónomos las definen como "un nada visible". Podrías comprimir toda una cola cometaria dentro de una maleta de mano.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El color azul intenso de la cola de iones de los cometas se debe a la fluorescencia de los cationes de monóxido de carbono (CO+) cuando son excitados por la luz ultravioleta emitida por el Sol.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m3/banner_anatomia-cometa.webp',
-    bannerCaption: 'Anatomía de un cometa: núcleo helado, coma gaseosa y dos colas que siempre huyen del Sol',
-    fact: 'El Cometa de Halley orbita alrededor del Sol cada 76 años. Fue el primer cometa reconocido como periódico por Edmond Halley en 1705, y su último paso cercano a la Tierra fue en 1986. Regresará a nuestro cielo en el año 2061.',
+    "fact": "El núcleo de un cometa es un fósil helado ultranegro y poroso que refleja menos luz que el carbón vegetal terrestre; al aproximarse al Sol a menos de tres Unidades Astronómicas, sus hielos subsuperficiales subliman violentamente formando una coma brillante que puede superar en diámetro al gigantesco planeta Júpiter.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La densidad media medida por la sonda Rosetta en el núcleo del cometa 67P es de tan solo 0.533 gramos por centímetro cúbico, lo que confirma de manera irrefutable que se trata de un cuerpo extraordinariamente poroso con una fracción de huecos y cavidades internas superior al setenta y cinco por ciento de su volumen total."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los instrumentos espectrométricos de la sonda europea Giotto detectaron en 1986 que el núcleo del legendario cometa 1P/Halley eyectaba más de treinta toneladas métricas de vapor de agua por segundo durante su aproximación al perihelio, formando géiseres de gas y polvo que desestabilizaban de forma continua su rotación."
+      }
+    ]
   },
   {
-    id: 'origen-nube-oort',
-    title: 'La Nube de Oort',
-    color: '#B388FF',
-    btnImage: '/assets/asteroides/infographic_m3/btn_origen-nube-oort.webp',
-    image: '/assets/asteroides/infographic_m3/hero_origen-nube-oort.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1Css1f5dtfwn_cwRaExkuMrwdkxfexQww&export=download&authuser=0', title: 'La Misión Rosetta: Parte 3' },
-    content: [
-      '¿De dónde vienen los cometas y dónde han estado guardados durante miles de millones de años? La respuesta nos lleva a los confines helados de nuestro Sistema Solar, a dos inmensos almacenes naturales de hielo: el Cinturón de Kuiper y la lejana Nube de Oort.',
-      'El Cinturón de Kuiper es una estructura con forma de dona ubicada más allá de la órbita de Neptuno, entre 30 y 50 Unidades Astronómicas del Sol. Es el hogar de cometas de periodo corto como el cometa Halley y de planetas enanos como Plutón. Sus cuerpos orbitan de forma relativamente ordenada en el mismo plano que los demás planetas.',
-      'Por otro lado, la Nube de Oort es una gigantesca cubierta esférica de billones de cuerpos helados que envuelve a todo el Sistema Solar por completo. Se extiende desde las 2,000 hasta las 100,000 Unidades Astronómicas del Sol, casi a mitad de camino de la estrella más cercana, Próxima Centauri.',
-      'Los cometas almacenados en la Nube de Oort permanecieron allí desde la formación planetaria. Fueron expulsados hacia la periferia por los tirones gravitacionales de los planetas gigantes Júpiter y Saturno durante la infancia convulsa de nuestro vecindario estelar.',
-      'De vez en cuando, el paso cercano de una estrella vecina o la fuerza de marea de la galaxia Vía Láctea empuja levemente a una de estas rocas heladas de la Nube de Oort. La saca de su reposo helado y la envía en una caída libre de millones de años hacia el Sol como un cometa de periodo largo.'
+    "id": "origen-nube-oort",
+    "title": "La Nube de Oort y el Cinturón de Kuiper",
+    "color": "#80DEEA",
+    "btnImage": "/assets/asteroides/infographic_m3/btn_origen-nube-oort.webp",
+    "image": "/assets/asteroides/infographic_m3/hero_origen-nube-oort.webp",
+    "content": [
+      "Los cometas que visitan el Sistema Solar interior provienen de dos inmensos reservorios helados situados en los confines más remotos de nuestro sistema planetario: el Cinturón de Kuiper y la hipotética pero matemáticamente fundamentada Nube de Oort. La distinción entre ambas regiones define la periodicidad, las inclinaciones orbitales y la procedencia dinámica de cada objeto que surca el firmamento.",
+      "El Cinturón de Kuiper es una estructura toroidal aplanada en el plano de la eclíptica que se extiende entre treinta y cincuenta y cinco Unidades Astronómicas del Sol, inmediatamente más allá de la órbita de Neptuno. Es el hogar de los cometas de periodo corto (que tardan menos de doscientos años en completar una órbita heliocéntrica), como el célebre cometa Halley. Estos mundos helados conservan órbitas con inclinaciones bajas similares a las de los planetas mayores.",
+      "En marcado contraste, los cometas de periodo largo (cuyas órbitas elípticas u oscilantes abarcan miles o incluso millones de años) proceden de la Nube de Oort, una colosal envoltura esférica postulada por el astrónomo holandés Jan Oort en el año 1950. Esta estructura envuelve por completo al Sistema Solar y se extiende desde unas dos mil Unidades Astronómicas hasta más de cien mil UA, rozando la mitad de la distancia hacia la estrella más cercana, Próxima Centauri.",
+      "La Nube de Oort se originó durante la infancia violenta del Sistema Solar, cuando las intensas interacciones gravitacionales con los recién formados planetas gigantes gaseosos (Júpiter, Saturno, Urano y Neptuno) dispersaron miles de millones de planetesimales helados hacia órbitas sumamente lejanas. Una vez allí, las fuerzas de marea de la Vía Láctea y los tirones gravitatorios de estrellas cercanas circularizaron e isotropizaron sus órbitas en una esfera perfecta.",
+      "De manera ocasional, el paso cercano de una estrella errante, una nube molecular gigante o las fluctuaciones de las mareas galácticas perturban gravitatoriamente el delicado equilibrio de la Nube de Oort. Estas sutiles perturbaciones empujan a billones de cometas durmientes hacia el pozo de gravedad del Sol, iniciando una lenta caída balística que tardará millones de años en conducirlos hacia el Sistema Solar interior."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La distancia a la frontera exterior de la Nube de Oort es casi de un año luz. La sonda Voyager 1 tardará aproximadamente 300 años en alcanzar su borde interior y unos 30,000 años en atravesarla por completo.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Jan Oort dedujo la existencia de esta reserva esférica en 1950 al notar que las órbitas de los cometas de periodo largo venían desde todas las direcciones del espacio tridimensional y no solo del plano orbital de los planetas.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m3/banner_origen-nube-oort.webp',
-    bannerCaption: 'La Nube de Oort: billones de núcleos helados en la frontera del sistema solar origen de los cometas',
-    fact: 'Se calcula que la Nube de Oort contiene entre uno y cinco billones de objetos helados con un diámetro superior a un kilómetro, acumulando una masa total equivalente a varias veces la masa de la Tierra.',
+    "fact": "La Nube de Oort es una gigantesca e invisible burbuja esférica que envuelve por completo al Sistema Solar y alberga billones de cometas primordiales congelados, extendiéndose hasta cien mil Unidades Astronómicas de distancia heliocéntrica, casi a mitad de camino hacia el sistema estelar vecino de Próxima Centauri.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La masa total combinada de la Nube de Oort se estima en aproximadamente cinco a treinta masas terrestres completas de hielos volátiles primordiales, albergando en su seno más de un billón de cuerpos cometarios con diámetros superiores a un kilómetro esperando perturbaciones estelares de marea para precipitar al interior."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El cometa C/2013 A1 (Siding Spring), procedente directamente de la Nube de Oort, realizó en octubre de 2014 un vuelo rasante histórico a solo 139,500 kilómetros del planeta Marte (un tercio de la distancia Tierra-Luna), inundando la atmósfera marciana con toneladas de iones de magnesio y hierro cometarios."
+      }
+    ]
   },
   {
-    id: 'sublimacion-hielo',
-    title: 'El Proceso de Sublimación',
-    color: '#80DEEA',
-    btnImage: '/assets/asteroides/infographic_m3/btn_sublimacion-hielo.webp',
-    image: '/assets/asteroides/infographic_m3/hero_sublimacion-hielo.webp',
-    content: [
-      'En la Tierra estamos acostumbrados a que el hielo se derrita convirtiéndose en agua líquida antes de hervir para formar vapor. Sin embargo, en el vacío del espacio interplanetario no existe presión atmosférica que permita la existencia de agua líquida en la superficie de un objeto exento de atmósfera.',
-      'Por esta razón, cuando un cometa helado se aproxima al Sol y su temperatura aumenta, ocurre un cambio de fase físico directo denominado Sublimación. El hielo sólido de agua, dióxido de carbono y monóxido se transforma instantáneamente en gas sin pasar en ningún momento por el estado líquido.',
-      'La sublimación comienza a activarse cuando el cometa cruza la línea de hielo del Sistema Solar, ubicada aproximadamente a la distancia de la órbita de Júpiter. A medida que el calor solar penetra la costra rocosa, la presión de los gases atrapados bajo la superficie aumenta dramáticamente.',
-      'Llega un punto en que los gases rompen la corteza frágil en violentos géiseres y chorros supersónicos de vapor. Estos chorros actúan como diminutos propulsores de cohete naturales. Al expulsar material de forma asimétrica, alteran el giro del núcleo y modifican ligeramente la órbita del cometa.',
-      'Este proceso de sublimación es autodestructivo. Cada vez que un cometa pasa cerca del Sol pierde una capa de varios metros de grosor de hielos de su superficie. Tras unos cientos de órbitas, el cometa agota todos sus volatiles y se apaga para siempre.'
+    "id": "sublimacion-hielo",
+    "title": "El Proceso de Sublimación",
+    "color": "#E57373",
+    "btnImage": "/assets/asteroides/infographic_m3/btn_sublimacion-hielo.webp",
+    "image": "/assets/asteroides/infographic_m3/hero_sublimacion-hielo.webp",
+    "content": [
+      "En las condiciones de vacío absoluto del espacio interplanetario, el agua líquida no puede existir de forma termodinámicamente estable sobre la superficie de un cuerpo celeste debido a que la presión ambiental es nula, muy por debajo del punto triple del agua (seis punto once milibares). Por lo tanto, cuando un cometa se calienta por la radiación solar, experimenta el fenómeno físico de la sublimación: el paso directo de hielo sólido a vapor gaseoso.",
+      "La tasa de sublimación de los diferentes hielos varía en función de su temperatura de equilibrio volátil. Los hielos súper volátiles como el nitrógeno molecular, el monóxido de carbono y el metano comienzan a sublimarse a temperaturas sumamente bajas (menos de setenta Kelvin), liberando tenues penachos de gas a distancias heliocéntricas superiores a cinco UA, mucho antes de que el hielo de agua convencional despierte.",
+      "Cuando el cometa penetra la línea de sublimación del agua alrededor de dos punto ocho a tres UA del Sol, la energía térmica recibida por metro cuadrado es suficiente para fundir los enlaces intermoleculares de los cristales de hielo de agua. La presión de vapor acumulada bajo la corteza orgánica deshidratada genera microestallidos y fracturas mecánicas, eyectando potentes chorros o géiseres colimados de gas y partículas de polvo mineral hacia el espacio.",
+      "Estos chorros de sublimación actúan físicamente como diminutos motores cohete naturales no controlados adosados al núcleo. Al expulsar gas a velocidades de varios cientos de metros por segundo, ejercen fuerzas no gravitacionales que modifican continuamente el periodo de rotación, la orientación del eje de giro e incluso el semieje mayor de la elipse orbital del cometa, un factor crítico que los astrónomos deben modelar para predecir efemérides exactas.",
+      "Durante cada paso por el perihelio, un cometa típico pierde decenas de millones de toneladas de materia volátil y polvo. A medida que los hielos superficiales se agotan, la capa residual de polvo refractario se engrosa, reduciendo gradualmente la eficiencia de la sublimación térmica y preparando al cuerpo para su eventual letargo como un cometa inactivo o remanente rocoso."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los chorros de sublimación en los cometas pueden lanzar rocas del tamaño de casas al espacio. Las naves espaciales que visitan cometas deben llevar escudos metálicos especiales para no ser perforadas por este polvo hiperveloz.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El vapor de agua expulsado por sublimación se disocia rápidamente por fotólisis ultravioleta solar en radicales de hidroxilo (OH) y átomos de hidrógeno, creando una inmensa nube invisible de hidrógeno alrededor del cometa.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m3/banner_sublimacion-hielo.webp',
-    bannerCaption: 'Sublimación del hielo: al acercarse al Sol, el hielo del cometa pasa directo a gas formando chorros',
-    fact: 'El cometa Hale-Bopp en 1997 expulsaba más de 250 toneladas de vapor de agua y 300 toneladas de polvo por segundo durante su perihelio, produciendo un resplandor visible a simple vista durante 18 meses consecutivos.',
+    "fact": "En el vacío del espacio interplanetario el hielo nunca se funde en agua líquida sino que se sublima directamente en vapor gaseoso; estos potentes chorros de gas a presión actúan mecánicamente como motores de cohete naturales no tripulados que desvían de forma continua la trayectoria y rotación orbital del cometa.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad de expansión del vapor de agua sublimado en la coma cometaria es de aproximadamente 0.6 a 0.8 kilómetros por segundo a una Unidad Astronómica del Sol, empujando y arrastrando partículas minerales de silicatos de hasta varios centímetros de diámetro hacia el vacío circundante mediante arrastre viscoso."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La cámara de alta resolución OSIRIS de la sonda Rosetta fotografió cientos de derrumbes de acantilados en el cometa 67P provocados por la sobrepresión de gases sublimados bajo la superficie rocosa, demostrando que los cometas cambian de topografía activa en cada perihelio remodelando sus escarpadas paredes."
+      }
+    ]
   },
   {
-    id: 'viento-solar-colas',
-    title: 'El Viento Solar y las Colas',
-    color: '#FFD54F',
-    btnImage: '/assets/asteroides/infographic_m3/btn_viento-solar-colas.webp',
-    image: '/assets/asteroides/infographic_m3/hero_viento-solar-colas.webp',
-    content: [
-      'Una de las características más desconcertantes de los cometas para los observadores antiguos era que sus colas no siempre siguen la trayectoria de la cabeza. Al alejarse del Sol, un cometa viaja con su cola por delante, como si fuera soplada por un vendaval invisible proveniente de nuestra estrella.',
-      'El responsable de este comportamiento es el Viento Solar. El Sol emite continuamente hacia todas direcciones un flujo supersónico de plasma electrizado compuesto por protones y electrones a 400 kilómetros por segundo, acompañado de fotones de luz que ejercen una presión de radiación constante.',
-      'La cola de iones o cola gaseosa se forma cuando las moléculas de monóxido de carbono y nitrógeno de la coma son ionizadas por la radiación ultravioleta. Al adquirir carga eléctrica, los iones quedan atrapados en el campo magnético del viento solar y son arrastrados en línea recta perfecta en dirección opuesta al Sol.',
-      'La cola de polvo está formada por pequeños granos de silicatos y hollín. Como estos granos son neutros y tienen más masa, el viento solar no los arrastra tan rápido. En su lugar, la presión de la radiación solar los empuja suavemente mientras el cometa sigue moviéndose, curvando la cola a lo largo de su órbita.',
-      'Cuando un cometa cruza una inversión de polaridad en el campo magnético solar, la cola de iones puede desprenderse por completo en un evento llamado Desconexión de Cola. El cometa pierde su cola azulada y vuelve a desarrollar una nueva en cuestión de pocas horas.'
+    "id": "viento-solar-colas",
+    "title": "El Viento Solar y las Colas",
+    "color": "#FFD54F",
+    "btnImage": "/assets/asteroides/infographic_m3/btn_viento-solar-colas.webp",
+    "image": "/assets/asteroides/infographic_m3/hero_viento-solar-colas.webp",
+    "content": [
+      "Uno de los rasgos más distintivos y emblemáticos de un cometa activo es el desarrollo de sus dos colas claramente diferenciadas: la cola de gas ionizado (o cola de plasma) y la cola de polvo. Aunque a simple vista ambas parecen extenderse juntas detrás del núcleo, están gobernadas por fuerzas físicas completamente independientes y presentan morfologías, composiciones y colores marcadamente distintos.",
+      "La cola de polvo está formada por los diminutos granos microscópicos de silicatos y carbono arrastrados por los chorros de gas de la coma. Sobre estas partículas de polvo actúa la presión de radiación solar, es decir, el empuje mecánico ejercido por los fotones de luz solar al rebotar y ser absorbidos por el grano. Como el polvo viaja a velocidades orbitales, la cola de polvo adopta una forma curvada y ancha, brillando con un color blanquecino o amarillento al reflejar la luz solar directa.",
+      "En contraste, la cola de gas ionizado o cola de plasma está constituida por moléculas gaseosas (tales como monóxido de carbono ionizado CO+, vapor de agua H2O+ y cianógeno CN) que han sido ionizadas por los fotones ultravioleta del Sol. Estos iones cargados eléctricamente quedan atrapados en las líneas del campo magnético interplanetario transportado por el viento solar, una corriente constante de protones y electrones que fluye desde la corona solar a velocidades de cuatrocientos a ochocientos kilómetros por segundo.",
+      "Debido a la formidable velocidad del viento solar, la cola de iones es barrida casi instantáneamente en línea recta diametralmente opuesta al Sol, sin importar en qué dirección se esté desplazando el cometa en su órbita. Por esta razón, cuando un cometa se aleja del perihelio hacia el Sistema Solar exterior, viaja con sus colas apuntando por delante de él en su trayectoria, siendo empujado desde atrás por el flujo solar.",
+      "La cola de iones brilla con una característica luz azulada debida a la emisión por fluorescencia del catión monóxido de carbono (CO+). Cuando el cometa cruza una región donde el campo magnético del viento solar invierte su polaridad (la llamada lámina de corriente heliosférica), la cola de iones puede sufrir un espectacular fenómeno de reconexión magnética conocido como 'evento de desconexión', desprendiéndose por completo y regenerándose en pocas horas."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El descubrimiento del viento solar se debió en gran medida al astrónomo Ludwig Biermann en 1951, quien dedujo su existencia al notar que la cola de iones de los cometas siempre apuntaba lejos del Sol sin importar su dirección de movimiento.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La presión de radiación que empuja a la cola de polvo es causada por los fotones solares que transfieren su momento lineal a las diminutas motas de polvo mineral que miden menos de una micra.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m3/banner_viento-solar-colas.webp',
-    bannerCaption: 'El viento solar crea las dos colas: la de plasma apunta directo al Sol, la de polvo sigue la órbita',
-    fact: 'En mayo del año 2000, la sonda Ulysses cruzó por casualidad la cola del cometa C/1996 B2 Hyakutake a una distancia récord de 500 millones de kilómetros del núcleo, detectando sus iones característicos.',
+    "fact": "Un cometa desarrolla siempre dos colas distintas: una cola de polvo amarillenta curvada empujada por la presión de radiación de la luz solar, y una cola recta de gas ionizado de color azul resplandeciente empujada por el viento solar a 800 km/s, la cual apunta invariablemente en dirección diametralmente opuesta al Sol.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La existencia del viento solar interplanetario fue deducida teóricamente en 1951 por el astrofísico alemán Ludwig Biermann precisamente al observar que las colas de iones de los cometas apuntaban siempre en dirección exactamente opuesta al Sol a velocidades hipersónicas incompatibles con la simple presión fotónica."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La cola del Gran Cometa de 1843 alcanzó una longitud récord medida de más de trescientos treinta millones de kilómetros en el espacio, superando holgadamente la distancia completa que separa a la Tierra del Sol (que es de ciento cincuenta millones de kilómetros) y desplegando un abanico fosforescente en el cielo nocturno."
+      }
+    ]
   },
   {
-    id: 'cometas-agua-tierra',
-    title: '¿Trajeron el Agua?',
-    color: '#81D4FA',
-    btnImage: '/assets/asteroides/infographic_m3/btn_cometas-agua-tierra.webp',
-    image: '/assets/asteroides/infographic_m3/hero_cometas-agua-tierra.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=12HWsSGEbggS3BX_fHxt2rfVPvF1f3N3s&export=download&authuser=0', title: 'El Cometa NEOWISE (2020)' },
-    content: [
-      'La Tierra es un planeta azul cubierto de océanos, pero cuando se formó hace 4,500 millones de años cerca del Sol primordial, el calor extremo evaporó todo el agua del disco interior. ¿De dónde provino entonces toda el agua que hoy llena nuestros mares y permite la existencia de la vida?',
-      'Durante décadas, la hipótesis principal sostenía que los cometas, al ser inmensas reservas heladas del espacio exterior, bombardearon masivamente la Tierra joven durante el periodo del Gran Bombardeo Tardío, sembrando nuestro planeta de agua dulce y moléculas orgánicas esenciales.',
-      'Para comprobar esta teoría fascinante, los científicos miden la relación entre el Hidrógeno y el Deuterio (el isótopo pesado del hidrógeno) en el agua de los cometas. Si los cometas trajeron el agua a la Tierra, la proporción D/H en su hielo debe ser idéntica a la cifra exacta que encontramos en los océanos terrestres.',
-      'Sin embargo, las mediciones realizadas por sondas espaciales en cometas de la Nube de Oort y del Cinturón de Kuiper revelaron un resultado insospechado: la mayoría de los cometas tienen un nivel de deuterio hasta tres veces mayor que el agua del mar de la Tierra.',
-      'Este hallazgo cambió el paradigma astrobiológico. Hoy se cree que la mayor parte del agua de la Tierra provino de asteroides húmedos tipo C del Cinturón Principal, mientras que los cometas aportaron un porcentaje menor pero fundamental de compuestos orgánicos complejos como aminoácidos.'
+    "id": "cometas-agua-tierra",
+    "title": "¿Trajeron los Cometas el Agua?",
+    "color": "#BA68C8",
+    "btnImage": "/assets/asteroides/infographic_m3/btn_cometas-agua-tierra.webp",
+    "image": "/assets/asteroides/infographic_m3/hero_cometas-agua-tierra.webp",
+    "content": [
+      "Uno de los misterios más profundos y debatidos de las ciencias de la Tierra y la astrobiología es el origen de los vastos océanos que cubren el setenta y un por ciento de nuestro planeta. Dado que la Tierra se formó en la región interna y cálida del disco protoplanetario (muy dentro de la línea de congelamiento), las altas temperaturas debieron evaporar la mayor parte del agua original, lo que sugiere que los océanos fueron entregados posteriormente por impactos cósmicos.",
+      "Durante décadas, la hipótesis dominante sostuvo que los cometas, al ser ricos en agua congelada (hasta un cincuenta por ciento de su masa total), bombardearon la Tierra durante el Bombardeo Intenso Tardío hace tres mil novecientos millones de años, llenando las cuencas oceánicas y aportando moléculas orgánicas precursoras para la abiogénesis y el surgimiento de la vida celular.",
+      "Para someter a prueba rigurosa esta teoría, los cosmoquímicos analizan la 'firma isotópica' del agua, específicamente la relación entre el deuterio (un isótopo pesado del hidrógeno que posee un protón y un neutrón en su núcleo) y el hidrógeno ordinario (relación D/H). El agua de los océanos terrestres posee una relación D/H muy bien calibrada conocida como VSMOW (Vienna Standard Mean Ocean Water), fijada en ciento cincuenta y seis partes por millón.",
+      "Sin embargo, las mediciones espectrométricas in situ realizadas por la sonda espacial europea Rosetta en el cometa 67P/Churyumov-Gerasimenko en 2014 revolucionaron este paradigma científico: la relación D/H del agua cometaria de 67P resultó ser más de tres veces superior a la de los océanos de la Tierra, descartando que cometas de la familia de Júpiter fueran la fuente principal del agua terrestre.",
+      "En la actualidad, el consenso geoquímico dominante se inclina hacia los asteroides carbonáceos del Cinturón Principal exterior como los verdaderos abastecedores de agua de nuestro planeta. Las muestras recuperadas por las misiones Hayabusa2 (de Ryugu) y OSIRIS-REx (de Bennu) revelan relaciones isotópicas D/H y de cromo que coinciden de forma asombrosamente precisa con la composición exacta de los océanos terrestres."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La sonda Rosetta descubrió en el cometa 67P el aminoácido Glicina, uno de los bloques fundamentales con los que las células vivas construyen las proteínas en los organismos de la Tierra.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El deuterio es un átomo de hidrógeno que contiene un neutrón extra en su núcleo. La proporción Deuterio/Hidrógeno actúa como la huella dactilar isotópica indiscutible para rastrear el origen geográfico del agua en el cosmos.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m3/banner_cometas-agua-tierra.webp',
-    bannerCaption: 'Cometas y el agua de la Tierra: el bombardeo tardío pudo traer el agua de nuestros océanos',
-    fact: 'El cometa 103P/Hartley 2 es uno de los poquísimos cometas analizados cuya relación D/H coincide exactamente con la cifra de los océanos de la Tierra, demostrando la enorme diversidad compositiva de los cuerpos helados.',
+    "fact": "El espectrómetro ROSINA de la sonda espacial europea Rosetta demostró de forma concluyente en 2014 que el agua del cometa 67P tiene una huella isotópica de deuterio tres veces superior a la de los océanos terrestres, revelando que el agua de nuestros mares fue suministrada primordialmente por asteroides carbonáceos primitivos.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El espectrómetro de masas ROSINA a bordo de Rosetta midió una relación D/H de (5.3 ± 0.7) x 10^-4 en el vapor de agua del cometa 67P, uno de los valores más elevados jamás registrados en el Sistema Solar, lo que demuestra un enriquecimiento químico en frío en la nebulosa presolar antes de la acreción cometaria."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Aunque los cometas no hayan aportado la mayoría del agua, la sonda Rosetta descubrió en la coma de 67P glicina (un aminoácido fundamental para las proteínas celulares) y fósforo, confirmando que los cometas sembraron la Tierra primordial de los bloques químicos orgánicos esenciales para el origen de la vida biológica."
+      }
+    ]
   },
   {
-    id: 'misiones-cometarias',
-    title: 'Misiones Cometarias',
-    color: '#FF8A65',
-    btnImage: '/assets/asteroides/infographic_m3/btn_misiones-cometarias.webp',
-    image: '/assets/asteroides/infographic_m3/hero_misiones-cometarias.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1nuNxH5x6fqCyR4ErllY2dq3Ua2EBMYAC&export=download&authuser=0', title: 'La Misión Rosetta: Parte 1' },
-    content: [
-      'Estudiar los cometas con telescopios desde la Tierra no era suficiente para descifrar sus enigmas profundos. En las últimas décadas, las agencias espaciales han enviado audaces naves robóticas a toda velocidad para fotografiar, perforar e incluso aterrizar en estas bolas de hielo flotantes.',
-      'La era dorada comenzó en 1986 con la "Armada del Halley". La sonda europea Giotto pasó a solo 600 kilómetros del núcleo del Cometa Halley, obteniendo las primeras imágenes históricas en detalle de un núcleo cometario negro expulsando chorros de polvo brillante.',
-      'En 2004, la misión Stardust de la NASA voló a través de la coma del cometa Wild 2. Utilizó un gel sintético ultraligero llamado aerogel para atrapar miles de granos de polvo cometario y traerlos intactos de regreso a la Tierra en una cápsula con paracaídas.',
-      'En 2005, la sonda Deep Impact disparó un proyectil de cobre de 370 kilos contra el núcleo del cometa Tempel 1. El impacto excavó un cráter y expulsó hielo del interior profundo, permitiendo a los espectrómetros analizar los ingredientes ocultos bajo la costra erosionada.',
-      'El mayor hito fue la misión Rosetta de la ESA en 2014. Fue la primera nave en entrar en órbita alrededor de un cometa (el 67P/Churyumov-Gerasimenko) y liberar el pequeño módulo Philae sobre su superficie rocosa, escoltando al cometa durante más de dos años en su viaje hacia el Sol.'
+    "id": "misiones-cometarias",
+    "title": "Misiones Históricas: De Giotto a Rosetta",
+    "color": "#FFB74D",
+    "btnImage": "/assets/asteroides/infographic_m3/btn_misiones-cometarias.webp",
+    "image": "/assets/asteroides/infographic_m3/hero_misiones-cometarias.webp",
+    "content": [
+      "La exploración espacial de los cometas representa una de las mayores hazañas tecnológicas de la ingeniería interplanetaria, ya que interceptar un proyectil que se desplaza a decenas de kilómetros por segundo rodeado de una atmósfera cegadora de gas abrasador y polvo afilado desafía los límites de los sistemas de navegación autónoma y blindaje de naves.",
+      "La era de la exploración in situ comenzó formalmente en marzo de 1986 con la célebre 'Armada a Halley', una flota coordinada de sondas internacionales enviadas por Europa, la Unión Soviética y Japón para estudiar al cometa 1P/Halley. La sonda Giotto de la Agencia Espacial Europea (ESA) realizó una audaz aproximación a tan solo quinientos noventa y seis kilómetros del núcleo activo, capturando las primeras imágenes cercanas de la historia que confirmaron el modelo de Whipple.",
+      "En el siglo XXI, las misiones adquirieron una ambición sin precedentes. En 2004, la sonda Stardust de la NASA atravesó la coma del cometa 81P/Wild 2 a seis kilómetros por segundo utilizando bloques de aerogel de silicio (el sólido menos denso del mundo) para capturar granos de polvo cósmico intactos sin fundirlos, devolviendo exitosamente las muestras a la Tierra en paracaídas en 2006.",
+      "Al año siguiente, en julio de 2005, la misión Deep Impact de la NASA disparó un proyectil de cobre puro de trescientos setenta kilogramos contra el núcleo del cometa 9P/Tempel 1 a diez kilómetros por segundo. La colisión hiperveloz excavó un cráter de impacto artificial y eyectó miles de toneladas de material prístino del interior subsuperficial, permitiendo analizar por primera vez la química de las capas interiores protegidas de la radiación.",
+      "La cumbre de la exploración cometaria se alcanzó entre 2014 y 2016 con la monumental misión Rosetta de la ESA. Rosetta no se limitó a un sobrevuelo fugaz: orbitó al cometa 67P durante más de dos años acompañándolo en su viaje a través del perihelio, y el 12 de noviembre de 2014 liberó al módulo Philae, logrando el primer aterrizaje suave de la historia de la humanidad sobre la superficie rocosa de un cometa."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El aerogel de la misión Stardust se conoce como "humo congelado" por ser un material sintético compuesto por 99.8% de aire. Logró frenar las motas de polvo cometario que viajaban a 20,000 km/h sin derretirlas.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El núcleo del cometa 67P tiene una forma bilobulada que recuerda a un patito de goma. Se formó por la colisión suave a baja velocidad de dos cometas independientes en los primeros tiempos del Sistema Solar.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m3/banner_misiones-cometarias.webp',
-    bannerCaption: 'Misiones cometarias: Rosetta aterrizó en un cometa, Deep Impact lo bombardeó para analizar su interior',
-    fact: 'Al finalizar su misión exitosa en septiembre de 2016, los controladores enviaron a la sonda Rosetta a un impacto controlado contra la superficie del cometa 67P, donde descansa para siempre junto al módulo Philae.',
+    "fact": "La histórica misión Rosetta de la Agencia Espacial Europea orbitó durante más de dos años al cometa 67P/Churyumov-Gerasimenko y logró el 12 de noviembre de 2014 el primer aterrizaje suave de la humanidad sobre un cometa con el módulo robótico Philae, transmitiendo fotografías e información química sin precedentes desde su superficie.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El módulo de aterrizaje Philae rebotó dos veces sobre la superficie de 67P debido a que los arpones de sujeción pirotécnicos no dispararon en la microgravedad, elevándose a un kilómetro de altura durante casi dos horas antes de descansar bajo una sombra rocosa en la escarpada región denominada Abydos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La monumental misión Rosetta concluyó formalmente el 30 de septiembre de 2016 con un impacto controlado deliberado contra la región Ma'at del cometa 67P, transmitiendo datos científicos de altísima resolución, temperaturas superficiales y primeros planos de pozos activos hasta el último segundo de contacto mecánico con el suelo del núcleo."
+      }
+    ]
   },
   {
-    id: 'destino-cometas',
-    title: 'El Destino de los Cometas',
-    color: '#00E5FF',
-    btnImage: '/assets/asteroides/infographic_m3/btn_destino-cometas.webp',
-    image: '/assets/asteroides/infographic_m3/hero_destino-cometas.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1K2dtSvtbwTnz-vYxlZUKJYrIw19PG_DD&export=download&authuser=0', title: 'Rosetta: Aterrizaje de Philae' },
-    content: [
-      'Los cometas no son eternos. Cada vez que su órbita los lleva al perihelio cerca del calor del Sol, sufren una pérdida irreversible de masa. Con el paso del tiempo geológico, todos los cometas enfrentan un final definitivo por diversos caminos físicos.',
-      'El destino más común para un cometa periódico es la Extinción Térmica. Tras cientos de pasadas solares, el cometa evapora todo su hielo superficial e interno. Pierde la capacidad de crear una coma y se transforma en una roca seca e inerte conocida como un Asteroide Extinto.',
-      'Otro final dramático son los Cometas Kamikaze o Rozadores del Sol (Sungrazers). Pertenecen a familias como el grupo Kreutz, con órbitas que los llevan a pasar a pocos miles de kilómetros de la superficie solar. La intensa radiación y las fuerzas de marea gravitacional los evaporan o despedazan en vivo.',
-      'Las fuerzas de marea no solo actúan cerca del Sol. Cuando el cometa Shoemaker-Levy 9 pasó demasiado cerca de Júpiter en 1992, la gravedad del gigante gaseoso lo descuartizó en 21 fragmentos. Dos años después, en 1994, la cadena de fragmentos chocó contra la atmósfera de Júpiter en impactos colosales.',
-      'Finalmente, los empujones gravitacionales de los planetas gigantes pueden acelerar a un cometa por encima de la velocidad de escape del Sistema Solar. En ese caso, la roca helada es arrojada para siempre al abismo helado interorbital, convirtiéndose en un cometa nómada interestelar.'
+    "id": "destino-cometas",
+    "title": "El Destino Final de los Cometas",
+    "color": "#00E4FF",
+    "btnImage": "/assets/asteroides/infographic_m3/btn_destino-cometas.webp",
+    "image": "/assets/asteroides/infographic_m3/hero_destino-cometas.webp",
+    "content": [
+      "La vida activa de un cometa en el Sistema Solar interior es un episodio geológicamente efímero que no puede prolongarse indefinidamente. En cada aproximación al perihelio, la intensa radiación solar y la pérdida de masa volátil erosionan físicamente el núcleo rocoso-helado, empujándolo inexorablemente hacia uno de varios desenlaces catastróficos o degenerativos definitivos.",
+      "El primer destino es la extinción o agotamiento volátil. Con el paso de cientos o miles de órbitas, los hielos accesibles en las capas superiores se subliman por completo, dejando tras de sí una corteza gruesa y continua de escombros de silicatos y alquitranes orgánicos pesados que sella herméticamente cualquier hielo interior residual. El cuerpo cesa de emitir una coma y se convierte en un 'cometa extinto' o 'asteroide durmiente', indistinguible de un asteroide común de Tipo C o D.",
+      "El segundo destino es la fragmentación catastrófica por fuerzas de marea gravitacional. Cuando un cometa de baja resistencia estructural interna pasa excesivamente cerca de un planeta masivo como Júpiter o del propio Sol, cruzando el denominado límite de Roche, las fuerzas de marea diferencial desgarran la frágil estructura porosa del cometa en una procesión de fragmentos individuales alineados.",
+      "El ejemplo histórico más emblemático ocurrió en julio de 1994 con el cometa Shoemaker-Levy 9, el cual fue desintegrado por la gravedad de Júpiter en una veintena de fragmentos en hilera que impactaron consecutivamente contra la atmósfera del gigante gaseoso a sesenta kilómetros por segundo. Los impactos generaron gigantescas bolas de fuego de miles de kilómetros y dejaron cicatrices oscuras en las nubes de Júpiter más grandes que el diámetro completo del planeta Tierra.",
+      "Finalmente, muchos cometas sufren un destino fatal al precipitarse directamente contra la fotosfera del Sol. Estos cuerpos se conocen astronómicamente como cometas rasantes o 'sungrazers', destacando la familia Kreutz de cometas rasantes. El observatorio espacial solar SOHO de la NASA y la ESA ha descubierto más de cuatro mil quinientos de estos pequeños cometas kamikazes evaporándose por completo en el abrasador horno de la corona solar."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Se calcula que cerca del 10% de los asteroides cercanos a la Tierra que catalogamos hoy como rocosos son en realidad cometas extintos que agotaron todos sus hielos y quedaron cubiertos por una capa de polvo oscuro.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El telescopio espacial SOHO de la NASA y la ESA ha descubierto más de 4,000 cometas rozadores del Sol analizando las imágenes de su coronógrafo solar desde su lanzamiento en 1995.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m3/banner_destino-cometas.webp',
-    bannerCaption: 'El destino de los cometas: pierden masa en cada vuelta hasta desintegrarse o quedar dormidos',
-    fact: 'El cometa Biela fue presenciado fragmentándose en dos piezas en 1846. En su siguiente retorno en 1852 las dos piezas continuaron separándose, para luego desaparecer por completo y dar origen a la intensa lluvia de meteoros de las Andrómedidas.',
-  },
+    "fact": "Todos los cometas enfrentan destinos finales irreversibles: agotar gradualmente sus volátiles hasta transformarse en asteroides durmientes petrificados, desintegrarse catastróficamente por mareas gravitacionales como el cometa Shoemaker-Levy 9 en Júpiter en 1994, o vaporizarse en la fotosfera del Sol como cometas rasantes suicidas.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El impacto del fragmento G de Shoemaker-Levy 9 en Júpiter el 18 de julio de 1994 liberó una energía explosiva estimada en seis millones de megatones de TNT (seiscientas veces todo el arsenal nuclear de la Tierra), elevando una pluma de plasma incandescente a más de tres mil kilómetros sobre las nubes jovianas."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El telescopio espacial solar SOHO, diseñado originalmente para estudiar el interior del Sol, se ha convertido accidentalmente en el mayor cazador de cometas de la historia humana, descubriendo más de 5,000 cometas rasantes suicidas en sus casi treinta años ininterrumpidos de operación orbital continua."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_AsteroidesM3() {

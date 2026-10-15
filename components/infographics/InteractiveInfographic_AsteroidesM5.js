@@ -86,152 +86,194 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'descubrimiento-apophis',
-    title: 'Descubrimiento de Apophis',
-    color: '#FF3D00',
-    btnImage: '/assets/asteroides/infographic_m5/btn_descubrimiento-apophis.webp',
-    image: '/assets/asteroides/infographic_m5/hero_descubrimiento-apophis.webp',
-    content: [
-      'El 19 de junio de 2004, los astrónomos Roy Tucker, David Tholen y Fabrizio Bernardi descubrieron un nuevo asteroide cercano a la Tierra desde el Observatorio Nacional de Kitt Peak en Arizona. Recibió la designación provisional 2004 MN4 y más tarde el nombre definitivo de 99942 Apophis, el dios egipcio del caos y la oscuridad.',
-      'Apophis es un asteroide tipo S de unos 340 metros de ancho, con una forma de cacahuate alargado y una masa estimada en 61 millones de toneladas. En diciembre de 2004, los primeros cálculos orbitales preliminares desataron una alarma científica sin precedentes en la historia de la astronomía moderna.',
-      'Las computadoras indicaron que el asteroide tenía una probabilidad del 2.7% de impactar directamente contra la Tierra el viernes 13 de abril de 2029. Esta cifra aterradora hizo que Apophis alcanzara el nivel 4 en la Escala de Torino de riesgo de impacto, el nivel más alto jamás registrado desde que existen los sistemas de vigilancia espacial.',
-      'Un impacto de una roca de 340 metros liberaría una energía equivalente a 1,200 megatones de TNT, miles de veces más potente que las bombas nucleares de la Segunda Guerra Mundial. Devastaría miles de kilómetros cuadrados y causaría mega-tsunamis si cayera en el océano.',
-      'Afortunadamente, observaciones de seguimiento con radar telescópico permitieron precisar la órbita de Apophis y descartar por completo cualquier posibilidad de impacto para el año 2029 y durante al menos los próximos 100 años.'
+    "id": "descubrimiento-apophis",
+    "title": "Descubrimiento de Apophis",
+    "color": "#FF3D00",
+    "btnImage": "/assets/asteroides/infographic_m5/btn_descubrimiento-apophis.webp",
+    "image": "/assets/asteroides/infographic_m5/hero_descubrimiento-apophis.webp",
+    "content": [
+      "El 19 de junio de 2004, los astrónomos Roy Tucker, David Tholen y Fabrizio Bernardi descubrieron un nuevo asteroide potencialmente peligroso desde el Observatorio Nacional de Kitt Peak en Arizona, empleando el telescopio Bok de dos punto tres metros. El objeto recibió la designación astronómica provisional 2004 MN4 y, tras confirmarse su órbita periódica alrededor del Sol, fue nombrado formalmente como 99942 Apophis, en honor a la deidad egipcia del caos, la oscuridad y la destrucción.",
+      "Apophis es un asteroide rocoso clasificado espectralmente dentro del Tipo Sq (rico en silicatos, piroxenos y olivino), con una morfología alargada y asimétrica con forma de cacahuate o peonza. Posee un diámetro medio equivalente de trescientos cuarenta metros, un volumen aproximado de dos punto dos millones de metros cúbicos y una masa estimada en sesenta y un millones de toneladas métricas, con una densidad media de tres punto dos gramos por centímetro cúbico.",
+      "En diciembre del año 2004, los primeros cálculos orbitales refinados desataron una alarma científica sin precedentes en la historia de la astrofísica planetaria. Los modelos matemáticos del sistema automatizado Sentry del Laboratorio de Propulsión a Chorro (JPL) indicaron que Apophis poseía una aterradora probabilidad de impacto del dos punto siete por ciento (una posibilidad entre treinta y siete) contra la Tierra el viernes 13 de abril de 2029.",
+      "Esta probabilidad estadística inédita provocó que Apophis fuera el primer objeto astronómico de la historia en alcanzar el Nivel 4 en la Escala de Torino de riesgo de impacto planetario. Un hipotético impacto directo de una roca de trescientos cuarenta metros liberaría una energía cinética instantánea superior a mil doscientos megatones de TNT (unas cien mil veces la energía de la bomba de Hiroshima), desatando una devastación regional total sobre decenas de miles de kilómetros cuadrados.",
+      "Afortunadamente, intensas campañas de observación óptica retrospectiva y mediciones astrométricas de seguimiento permitieron reconstruir el arco orbital histórico de Apophis con precisión milimétrica. Apenas unos meses después de la alarma inicial, las nuevas observaciones refinadas descartaron de manera definitiva la posibilidad de un impacto catastrófico para la fecha del encuentro cercano de abril de 2029, transformando el pánico en una oportunidad científica sin parangón."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La Escala de Torino mide el riesgo de impacto de los asteroides del 0 al 10. El nivel 0 significa ningún riesgo, mientras que el nivel 10 indica una colisión segura capaz de causar una catástrofe climática global.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Apophis pertenece al grupo de asteroides Atón, cuyas órbitas cruzan la trayectoria de la Tierra pero pasan la mayor parte de su periodo orbital dentro del espacio interior de la órbita terrestre.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m5/banner_descubrimiento-apophis.webp',
-    bannerCaption: 'Descubrimiento de Apophis 2004: probabilidad de impacto del 2.7% para 2029 disparó alarmas mundiales',
-    fact: 'El asteroide 99942 Apophis tarda 323 días en completar una órbita alrededor del Sol. Su velocidad orbital promedio es de 30.7 kilómetros por segundo.',
+    "fact": "El asteroide 99942 Apophis, descubierto en junio de 2004, alcanzó en diciembre de ese mismo año el histórico Nivel 4 en la Escala de Torino al calcularse una probabilidad de impacto del dos punto siete por ciento para el año 2029, un récord de alerta orbital jamás repetido por ningún otro objeto celeste en la historia astronómica.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La energía de impacto liberada por un cuerpo con las dimensiones de Apophis (340 metros y 61 millones de toneladas métricas a una velocidad de entrada de doce punto seis kilómetros por segundo) excavaría un cráter de cinco kilómetros de diámetro y cuatrocientos metros de profundidad, generando ondas de choque supersónicas en la atmósfera."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El nombre del asteroide fue propuesto por David Tholen y Tucker en homenaje al dios egipcio Apep o Apophis, pero también inspirados en el villano extraterrestre de la serie de ciencia ficción Stargate SG-1, del cual los científicos descubridores eran apasionados seguidores durante las largas noches de guardia telescópica."
+      }
+    ]
   },
   {
-    id: 'encuentro-2029',
-    title: 'El Cercano Encuentro de 2029',
-    color: '#FFEA00',
-    btnImage: '/assets/asteroides/infographic_m5/btn_encuentro-2029.webp',
-    image: '/assets/asteroides/infographic_m5/hero_encuentro-2029.webp',
-    content: [
-      'Aunque sabemos que Apophis no chocará contra la Tierra en 2029, su aproximación será uno de los eventos astronómicos más espectaculares e históricos presenciados por la humanidad. El viernes 13 de abril de 2029, Apophis pasará a solo 31,600 kilómetros de la superficie de nuestro planeta.',
-      'Para dimensionar esta cercanía increíble: Apophis volará más cerca de la Tierra que los satélites geoestacionarios de televisión y meteorología que orbitan a 35,786 kilómetros de altura. Pasará diez veces más cerca de nosotros que la propia Luna.',
-      'Durante el punto de máxima aproximación sobre el Océano Atlántico y Europa, Apophis será visible a simple vista sin necesidad de telescopios ni binoculares. Se verá como un punto de luz de tercera magnitud que cruzará el cielo nocturno rápidamente a 42,000 kilómetros por hora.',
-      'Este encuentro histórico representa una oportunidad científica irrepetible. La intensa fuerza de gravedad de la Tierra tirará de Apophis de forma tan violenta durante su sobrevuelo que alterará drásticamente la velocidad de rotación de la roca y provocará derrumbes y terremotos en su superficie.',
-      'Además, la gravedad terrestre cambiará la órbita de Apophis para siempre. Dejará de pertenecer al grupo de asteroides Atón y se transformará en un asteroide del grupo Apolo, aumentando su periodo orbital alrededor del Sol de 323 a 440 días.'
+    "id": "encuentro-2029",
+    "title": "El Encuentro Cercano de 2029",
+    "color": "#D4A843",
+    "btnImage": "/assets/asteroides/infographic_m5/btn_encuentro-2029.webp",
+    "image": "/assets/asteroides/infographic_m5/hero_encuentro-2029.webp",
+    "content": [
+      "El viernes 13 de abril de 2029, la humanidad será testigo de uno de los fenómenos astrodinámicos más extraordinarios y cercanos jamás registrados en los anales de la ciencia planetaria. El asteroide 99942 Apophis cruzará el espacio próximo a la Tierra a una velocidad relativa de siete punto cuatro kilómetros por segundo, rozando nuestro planeta a una distancia mínima de tan solo treinta y un mil seiscientos kilómetros sobre la superficie terrestre.",
+      "Esta distancia es astronómicamente ínfima: el asteroide pasará por debajo del cinturón orbital de los satélites geoestacionarios de telecomunicaciones y meteorología (situados a treinta y cinco mil setecientos ochenta y seis kilómetros de altitud) y a apenas una décima parte de la distancia media entre la Tierra y la Luna. Estadísticamente, un encuentro tan cercano de un objeto rocoso de más de trescientos metros ocurre en promedio una vez cada cinco mil años.",
+      "Durante el pico de máxima aproximación, Apophis será plenamente visible a simple vista sin necesidad de telescopios ni prismáticos ópticos para más de dos mil millones de habitantes en Europa, África y el oeste de Asia. El asteroide brillará en el firmamento nocturno como una estrella móvil de magnitud aparente 3.1, cruzando la constelación de Cáncer a una velocidad angular de cuarenta y dos grados por hora a través del cielo.",
+      "El inmenso campo gravitatorio terrestre ejercerá un efecto de marea diferencial colosal sobre el cuerpo de Apophis al atravesar su punto de perihelio geocéntrico. Las tensiones de marea deformarán mecánicamente la débil estructura rocosa del asteroide, provocando corrimientos de tierra superficiales, avalanchas de cantos rodados, fisuras en el regolito y una alteración drástica en su estado de rotación compleja o 'tumbling', cuyo periodo actual es de treinta punto seis horas.",
+      "Para aprovechar esta oportunidad irrepetible, la NASA ya ha redirigido la sonda espacial OSIRIS-APEX (anteriormente OSIRIS-REx) para interceptar a Apophis inmediatamente después de su sobrevuelo terrestre. La nave entrará en órbita alrededor de la roca cósmica durante dieciocho meses ininterrumpidos, disparando sus propulsores de gas para erosionar el regolito y observar cómo la gravedad de la Tierra desnudó las capas subsuperficiales vírgenes del asteroide."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Rocas de 300 metros como Apophis pasan tan cerca de la Tierra solo una vez cada 1,000 años. El evento de 2029 será la primera vez en la historia humana moderna en que se pueda ver un sobrevuelo tan cercano a simple vista.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La nave espacial OSIRIS-APEX de la NASA interceptará a Apophis justo después de su sobrevuelo de la Tierra en 2029. Se acoplará a su órbita durante 18 meses para filmar los cambios geológicos sufridos por las mareas terrestres.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m5/banner_encuentro-2029.webp',
-    bannerCaption: 'Encuentro 2029: Apophis pasará a 32,000 km de la Tierra, más cerca que los satélites geoestacionarios',
-    fact: 'Durante su punto máximo de acercamiento el 13 de abril de 2029, Apophis cruzará el cielo europeo de este a oeste en cuestión de pocas horas, desplazándose a un ancho equivalente al de la Luna llena cada minuto.',
+    "fact": "El 13 de abril de 2029 el asteroide Apophis pasará a solo treinta y un mil seiscientos kilómetros de la Tierra, más cerca que los satélites geoestacionarios, siendo visible a simple vista para dos mil millones de personas y permitiendo que la gravedad terrestre altere su rotación y remueva su regolito.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los modelos de simulación geofísica revelan que las fuerzas de marea gravitatoria de la Tierra desatarán micro-seísmos en Apophis durante el sobrevuelo de 2029, removiendo la capa superior de regolito oscurecida por el viento solar y exponiendo silicatos prístinos que modificarán de forma mensurable su curva de luz y su espectro térmico."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "A pesar de pasar por debajo de la órbita de los satélites geoestacionarios, la probabilidad de que Apophis colisione con algún satélite artificial activo o pieza de basura espacial es infinitesimal, calculada en menos de una entre diez millones debido a la inmensa amplitud del volumen orbital tridimensional."
+      }
+    ]
   },
   {
-    id: 'cerradura-gravitacional',
-    title: 'La Cerradura Gravitacional',
-    color: '#00E676',
-    btnImage: '/assets/asteroides/infographic_m5/btn_cerradura-gravitacional.webp',
-    image: '/assets/asteroides/infographic_m5/hero_cerradura-gravitacional.webp',
-    content: [
-      'Durante los primeros años tras el descubrimiento de Apophis, los astrónomos estaban preocupados por un concepto matemático de la mecánica celeste conocido como la Cerradura Gravitacional (Gravitational Keyhole).',
-      'Una cerradura gravitacional es una región diminuta del espacio de apenas unos cientos de metros de ancho cerca de la Tierra. Si un asteroide pasa exactamente por el centro de ese pequeño corredor durante un encuentro cercano, la gravedad terrestre desvía su órbita con la precisión exacta para hacer que choque contra la Tierra en su siguiente retorno.',
-      'En el caso de Apophis, los modelos iniciales calculaban que si el asteroide pasaba por una cerradura gravitacional de 800 metros de ancho en abril de 2029, la Tierra lo desviaría de tal forma que impactaría de lleno contra nuestro planeta siete años después, el 13 de abril de 2036.',
-      'Determinar si un asteroide pasará o no por una cerradura requiere medir su posición espacial con una precisión absoluta de metros. Una incertidumbre minúscula en las observaciones astronómicas puede marcar la diferencia entre pasar por la cerradura o esquivarla por miles de kilómetros.',
-      'Gracias a las mediciones con el telescopio radar de Goldstone en marzo de 2021, los científicos lograron afinar la trayectoria de Apophis con un margen de error menor a unos pocos metros, confirmando que esquivará la cerradura gravitacional de 2029 por una distancia muy segura.'
+    "id": "cerradura-gravitacional",
+    "title": "Cerraduras Gravitacionales",
+    "color": "#80DEEA",
+    "btnImage": "/assets/asteroides/infographic_m5/btn_cerradura-gravitacional.webp",
+    "image": "/assets/asteroides/infographic_m5/hero_cerradura-gravitacional.webp",
+    "content": [
+      "En mecánica celeste y dinámica de defensa planetaria, una 'cerradura gravitacional' (en inglés, gravitational keyhole) representa una región espacial de precisión geométrica crítica, a menudo de apenas unos pocos cientos de metros a escasos kilómetros de ancho, a través de la cual el paso de un asteroide puede sellar su destino fatal con nuestro planeta en un retorno futuro.",
+      "Cuando un objeto cercano a la Tierra realiza un sobrevuelo a escasa altitud, el pozo gravitatorio de nuestro planeta deforma drásticamente su trayectoria hiperbólica, modificando de forma irreversible su semieje mayor, excentricidad e inclinación orbital. Si el asteroide cruza exactamente a través de una de estas cerraduras microscópicas en el espacio, la desviación angular precisa ajustará su periodo orbital en una resonancia exacta con la órbita terrestre.",
+      "En el caso histórico de Apophis, los astrónomos identificaron una cerradura gravitacional crítica de aproximadamente seiscientos metros de anchura durante el sobrevuelo de 2029. Si el centro de masa del asteroide cruzaba esa diminuta ventana espacial de seiscientos metros, la Tierra habría alterado su periodo orbital para sincronizarlo exactamente en una resonancia de siete octavos, provocando una colisión directa e inevitable siete años más tarde, el 13 de abril de 2036.",
+      "La determinación precisa de si un asteroide cruzará o evitará una cerradura gravitacional exige un nivel de exactitud milimétrica en la astrometría orbital que las observaciones ópticas convencionales difícilmente pueden alcanzar debido a la refracción atmosférica terrestre y la dispersión angular de las cámaras de los telescopios de rastreo en superficie.",
+      "En marzo de 2021, una histórica campaña de radar bistático entre la antena de radar de setenta metros de la Red de Espacio Profundo de la NASA en Goldstone (California) y el radiotelescopio Green Bank (Virginia Occidental) midió la distancia a Apophis con un margen de incertidumbre inferior a ciento cincuenta metros, confirmando que el asteroide pasará a miles de kilómetros de cualquier cerradura y descartando impactos durante los próximos cien años."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El concepto de cerradura gravitacional fue descubierto por el astrónomo Andrea Milani. Demostró que los sobrevuelos cercanos actúan como lentes gravitacionales que amplifican las pequeñas incertidumbres orbitales.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La ventana espacial de la cerradura de Apophis para el impacto de 2036 medía solo 600 metros de diámetro. Encontrar un objeto tan pequeño a 30,000 km de distancia equivale a encestar un grano de arroz desde varios kilómetros.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m5/banner_cerradura-gravitacional.webp',
-    bannerCaption: 'Cerradura gravitacional: zona de 600m en el espacio que si Apophis cruza en 2029 impactaría en 2036',
-    fact: 'Las observaciones de radar de 2021 permitieron eliminar formalmente a Apophis de la Lista de Riesgo de Impacto de la ESA y de la NASA durante más de un siglo entero.',
+    "fact": "Una cerradura gravitacional es un estrecho corredor espacial donde la gravedad terrestre desvía un asteroide hacia una resonancia orbital que garantiza un impacto futuro; en 2021 observaciones de radar demostraron que Apophis esquivará por completo todas las cerraduras resonantes en su sobrevuelo de 2029.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El radiotelescopio de Goldstone emitió pulsos de microondas de alta potencia en banda X (8.56 GHz) hacia Apophis en marzo de 2021 a diecisiete millones de kilómetros de distancia, permitiendo al telescopio Green Bank captar ecos débiles que redujeron la incertidumbre de la posición orbital de decenas de kilómetros a solo ciento cincuenta metros."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El concepto teórico de la cerradura gravitacional fue formalizado matemáticamente por los investigadores Steven Chesley y Paul Chodas del Laboratorio de Propulsión a Chorro (JPL) de la NASA a principios de la década de 2000, revolucionando la manera en que los científicos evalúan las trayectorias de riesgo de impacto planetario."
+      }
+    ]
   },
   {
-    id: 'efecto-yarkovsky',
-    title: 'Efecto Yarkovsky en Apophis',
-    color: '#00B0FF',
-    btnImage: '/assets/asteroides/infographic_m5/btn_efecto-yarkovsky.webp',
-    image: '/assets/asteroides/infographic_m5/hero_efecto-yarkovsky.webp',
-    content: [
-      'Al calcular la trayectoria futura de un asteroide peligroso a lo largo de décadas, la gravedad de los planetas y del Sol no es la única fuerza en juego. Existe un fenómeno térmico sutil pero acumulativo llamado Efecto Yarkovsky que puede alterar el destino de una roca espacial.',
-      'El Efecto Yarkovsky ocurre cuando el asteroide gira sobre su eje mientras es calentado por la luz del Sol. El lado diurno se calienta y al rotar hacia el lado nocturno emite esa radiación en forma de calor infrarrojo. Esta emisión de calor genera una diminuta fuerza de empuje como el escape de un pequeño motor.',
-      'Dependiendo de si el asteroide gira en el mismo sentido de su órbita (progrado) o en sentido contrario (retrógrado), el Efecto Yarkovsky acelera o frena a la roca de forma ininterrumpida. Esto hace que su órbita se expanda o se contraiga lentamente varios metros cada año.',
-      'En el caso de Apophis, las observaciones ópticas de alta precisión mostraron que el Efecto Yarkovsky lo desplaza de su trayectoria puramente gravitacional unos 170 metros por año. Aunque parece una distancia pequeña, acumulada durante décadas es suficiente para modificar si el asteroide toca o no una cerradura gravitacional.',
-      'Medir la aceleración Yarkovsky en Apophis requirió combinar observaciones telescópicas extremadamente precisas con modelos térmicos 3D de la forma del asteroide. Esto demostró que la física de la radiación térmica es crucial para la defensa planetaria del siglo XXI.'
+    "id": "efecto-yarkovsky",
+    "title": "El Efecto Yarkovsky y la Órbita",
+    "color": "#BA68C8",
+    "btnImage": "/assets/asteroides/infographic_m5/btn_efecto-yarkovsky.webp",
+    "image": "/assets/asteroides/infographic_m5/hero_efecto-yarkovsky.webp",
+    "content": [
+      "Durante más de una década posterior a su descubrimiento, el cálculo orbital definitivo de Apophis se enfrentó a una sutil pero crucial fuerza no gravitatoria que amenazaba con alterar las predicciones matemáticas a largo plazo: el Efecto Yarkovsky. Esta sutil aceleración física térmica actúa de forma silenciosa e ininterrumpida sobre todos los asteroides de tamaño pequeño y mediano que orbitan en el Sistema Solar interior.",
+      "Postulado teóricamente en 1901 por el ingeniero civil polaco-ruso Ivan Osipovich Yarkovsky, el efecto surge de la absorción y reemisión anisotrópica de la radiación electromagnética solar. A medida que un asteroide gira sobre su eje de rotación, la superficie expuesta al Sol absorbe fotones y eleva su temperatura, pero debido a la inercia térmica de los minerales rocosos, el punto de máxima emisión infrarroja se desplaza hacia la tarde local del asteroide.",
+      "Esta reemisión asimétrica de fotones térmicos ejerce una diminuta fuerza de reacción por presión de radiación, análoga al empuje de un microcohete de escape ininterrumpido. Si el asteroide posee rotación retrógrada (en sentido opuesto a su movimiento orbital), el empuje térmico frena su velocidad lineal y provoca que la órbita decaiga en espiral hacia el Sol; si su rotación es prograda, el asteroide se acelera y se aleja lentamente del astro rey.",
+      "En el caso de Apophis, los astrofísicos Davide Farnocchia y David Tholen detectaron en 2020 mediante observaciones ópticas de ultra precisión con el telescopio Subaru en Hawái que el asteroide experimenta una deriva orbital constante por Efecto Yarkovsky de aproximadamente ciento setenta metros por año, suficiente para desplazar su trayectoria miles de kilómetros a lo largo de décadas.",
+      "Esta aceleración térmica representaba la última gran incógnita que impedía a la comunidad científica descartar por completo un posible impacto catastrófico en el lejano retorno orbital del año 2068. Al integrar con exactitud el vector de empuje Yarkovsky con las mediciones de radar de 2021, los astrónomos pudieron certificar que Apophis no impactará contra la Tierra ni en 2068 ni en ningún momento durante el próximo siglo."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El ingeniero ruso Ivan Yarkovsky formuló esta teoría en el año 1900 en un folleto científico escrito en sus tiempos libres. Su trabajo permaneció olvidado hasta que Ernst Öpik lo rescató 50 años después.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La fuerza de empuje fotónico del efecto Yarkovsky sobre Apophis es minúscula, equivalente al peso de una moneda de un centavo sobre la palma de una mano. Pero actuando durante 30 años desplaza al asteroide más de 5 kilómetros.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m5/banner_efecto-yarkovsky.webp',
-    bannerCaption: 'Efecto Yarkovsky: la radiación térmica del sol empuja gradualmente a Apophis cambiando su órbita',
-    fact: 'El asteroide Bennu sufre una deriva por Efecto Yarkovsky de casi 280 metros por año debido a su superficie oscura y alta porosidad térmica, siendo el asteroide donde mejor se ha medido esta fuerza.',
+    "fact": "El Efecto Yarkovsky es una sutil fuerza térmica generada por la reemisión asimétrica de luz solar infrarroja que empuja a Apophis ciento setenta metros por año fuera de su órbita gravitatoria pura, habiendo sido el factor decisivo para calcular con certeza su trayectoria de seguridad hasta el siglo XXII.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La fuerza total que el Efecto Yarkovsky ejerce sobre las sesenta y un millones de toneladas métricas de Apophis equivale a apenas medio newton de empuje continuo (aproximadamente el peso de una pequeña manzana en la Tierra), pero sostenida a lo largo de décadas acumula miles de kilómetros de desviación posicional orbital."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Ivan Yarkovsky publicó su teoría en un modesto panfleto científico en San Petersburgo alrededor del año 1901 sin recibir apenas reconocimiento en vida, y tuvieron que pasar más de cien años hasta que la NASA confirmó experimentalmente su efecto midiendo con radar la órbita del asteroide 6489 Golevka en 2003."
+      }
+    ]
   },
   {
-    id: 'tecnicas-defensa',
-    title: 'Técnicas de Deflexión',
-    color: '#D500F9',
-    btnImage: '/assets/asteroides/infographic_m5/btn_tecnicas-defensa.webp',
-    image: '/assets/asteroides/infographic_m5/hero_tecnicas-defensa.webp',
-    content: [
-      '¿Qué haríamos si los telescopios descubrieran un asteroide peligroso con rumbo de colisión seguro hacia la Tierra dentro de 20 años? La ciencia espacial ha desarrollado y simulado diversos métodos de Deflexión Planetaria para desviar a la roca antes de que sea demasiado tarde.',
-      'El primer método es el Impactador Cinético, probado con éxito por la misión DART. Consiste en estrellar una nave pesada a máxima velocidad contra el asteroide para transferirle momento y cambiar levemente su velocidad. Es ideal para rocas pequeñas y medias descubiertas con décadas de anticipación.',
-      'El segundo método es el Tractor Gravitacional. Consiste en enviar una nave masiva para colocarse a volar al lado del asteroide durante meses o años sin tocarlo. La diminuta atracción gravitatoria entre la nave y la roca actúa como un remolcador invisible que tira suavemente del asteroide desviando su rumbo.',
-      'El tercer método es la Ablación Láser o Tren Solar. Involucra una flota de naves equipadas con potentes láseres solares que concentran su luz en un punto de la superficie del asteroide. El calor extremo vaporiza la roca creando chorros de gas que actúan como propulsores naturales para empujar al asteroide.',
-      'Como último recurso ante asteroides gigantes de más de un kilómetro o con poco tiempo de aviso (menos de 5 años), se considera la Deflexión Nuclear Preventiva. Consiste en hacer detonar una cabeza nuclear en el espacio cerca de la superficie para que la radiación desprenda la capa externa y empuje a la roca por reacción.'
+    "id": "tecnicas-defensa",
+    "title": "Técnicas de Defensa Planetaria",
+    "color": "#FF884B",
+    "btnImage": "/assets/asteroides/infographic_m5/btn_tecnicas-defensa.webp",
+    "image": "/assets/asteroides/infographic_m5/hero_tecnicas-defensa.webp",
+    "content": [
+      "La defensa planetaria constituye la única rama de la ciencia aplicada donde la humanidad posee la capacidad técnica potencial de prevenir por completo un desastre natural de magnitudes globales. Frente a terremotos, huracanes o erupciones volcánicas donde solo cabe la evacuación y la resiliencia pasiva, los impactos de asteroides pueden anticiparse y neutralizarse con décadas de antelación en el espacio.",
+      "La técnica de mitigación más madura y probada empíricamente es el impacto cinético a hipervelocidad, validado con éxito absoluto por la misión DART de la NASA en 2022. Esta técnica consiste en estrellar una o varias naves robóticas masivas a velocidades de entre seis y diez kilómetros por segundo contra el asteroide; aunque la nave apenas altera la velocidad del objetivo en milímetros por segundo, con suficiente tiempo de preaviso esa minúscula variación angular desvía la trayectoria miles de kilómetros.",
+      "Para situaciones donde se requiere una precisión quirúrgica extrema sin riesgo de fragmentar el asteroide, los astronautas Edward Lu y Stanley Love concibieron en 2005 la técnica del 'Tractor Gravitacional'. Consiste en estacionar una nave espacial pesada (de una a dos toneladas) a escasas decenas de metros del cuerpo cósmico mediante propulsión iónica continua, empleando la atracción gravitatoria mutua entre la sonda y la roca como un invisible cable de remolque para alterar su órbita.",
+      "En escenarios de emergencia crítica donde el tiempo de advertencia sea inferior a una década o el asteroide supere el kilómetro de diámetro, la opción más viable es la detonación nuclear a distancia ('nuclear standoff detonation'). Detonar un dispositivo termonuclear a cien metros de la superficie sin impactar directamente evita la fragmentación incontrolada; los intensos pulsos de rayos X y neutrones vaporizan una delgada capa rocosa superficial, cuyo retroceso por ablación empuja al asteroide.",
+      "Otras alternativas teóricas en estudio incluyen la ablación superficial sostenida mediante láseres espaciales montados en constelaciones satelitales, el uso de cohetes de plasma fijados a la superficie y la modificación del albedo del asteroide cubriéndolo de polvo reflectante de dióxido de titanio para maximizar el Efecto Yarkovsky y desviar su rumbo a lo largo de décadas."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las películas de Hollywood suelen mostrar bombas nucleares colocadas dentro del asteroide para volar la roca en pedazos. En la realidad científica esto es peligroso porque crearía miles de fragmentos radiactivos cayendo sobre la Tierra.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La clave de la defensa planetaria no es la fuerza bruta, sino el tiempo. Desviar un asteroide 10 años antes del impacto requiere apenas un empuje de un milímetro por segundo en su velocidad orbital.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m5/banner_tecnicas-defensa.webp',
-    bannerCaption: 'Técnicas de defensa: impactador cinético, tractor gravitacional o detonación nuclear según el plazo',
-    fact: 'Un cambio de velocidad de apenas 1 centímetro por segundo en la trayectoria de un asteroide peligroso, aplicado 20 años antes de la colisión planeada, desplaza a la roca espacial más de 6,000 kilómetros al momento de cruzar la Tierra, evitando el impacto por completo.',
+    "fact": "Las técnicas de defensa planetaria incluyen el impacto cinético a hipervelocidad validado por DART, el tractor gravitacional para remolque sin contacto mediante atracción gravitatoria mutua, y la detonación nuclear a distancia para vaporizar una capa rocosa superficial y desviar asteroides masivos de gran tamaño.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Para evitar que un asteroide de cien metros colisione contra la Tierra con un preaviso de diez años de anticipación, solo se necesita impartir una alteración de velocidad (delta-V) de apenas uno punto tres centímetros por segundo en el momento oportuno, suficiente para que la roca pase de largo por el diámetro de la Tierra."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La famosa técnica de aterrizar en un asteroide para perforar su interior y detonar una bomba nuclear como en la película Armageddon de 1998 es rechazada por los expertos en defensa planetaria, ya que fracturaría el asteroide en decenas de fragmentos radiactivos gigantescos igualmente letales para nuestro planeta."
+      }
+    ]
   },
   {
-    id: 'redes-vigilancia',
-    title: 'Redes de Vigilancia',
-    color: '#1DE9B6',
-    btnImage: '/assets/asteroides/infographic_m5/btn_redes-vigilancia.webp',
-    image: '/assets/asteroides/infographic_m5/hero_redes-vigilancia.webp',
-    content: [
-      'Para desviar un asteroide peligroso, el requisito fundamental e indispensable es descubrirlo con la mayor antelación posible. Con este objetivo, la comunidad astronómica mundial ha construido una red de vigilancia cósmica permanente dedicada a rastrear el cielo nocturno.',
-      'Los telescopios robóticos de rastreo automatizado como Pan-STARRS en Hawái y ATLAS (Sistema de Ultima Alerta de Impacto Terrestre) observan millones de estrellas cada noche. Utilizan algoritmos de inteligencia artificial para detectar cualquier punto de luz que cambie de posición entre varias tomas consecutivas.',
-      'En Chile, el nuevo Observatorio Vera C. Rubin promete revolucionar la detección de Objetos Cercanos a la Tierra (NEOs). Con su cámara de 3,200 megapíxeles, cartografiará todo el cielo del hemisferio sur cada tres noches, catalogando miles de asteroides desconocidos.',
-      'Además de los telescopios ópticos, las estaciones de radar astronómico como Goldstone en California envían potentes señales de microondas hacia los asteroides que pasan cerca de la Tierra. El eco de radar recibido permite reconstruir la forma en 3D, el tamaño y la velocidad del asteroide con precisión de metros.',
-      'En el espacio, el telescopio espacial infrarrojo NEOWISE de la NASA ha detectado miles de rocas oscuras midiendo el calor que emiten. En los próximos años se lanzará el telescopio NEO Surveyor, diseñado específicamente para descubrir el 90% de los asteroides peligrosos mayores a 140 metros.'
+    "id": "redes-vigilancia",
+    "title": "Redes de Vigilancia y Detección",
+    "color": "#E57373",
+    "btnImage": "/assets/asteroides/infographic_m5/btn_redes-vigilancia.webp",
+    "image": "/assets/asteroides/infographic_m5/hero_redes-vigilancia.webp",
+    "content": [
+      "Cualquier estrategia de defensa planetaria o desvío espacial resulta completamente estéril sin un sistema previo de alerta temprana capaz de descubrir y rastrear objetos peligrosos con años o décadas de anticipación. Por ello, las principales agencias espaciales han estructurado una densa red de vigilancia astronómica óptica, infrarroja y de radar que barre el firmamento los trescientos sesenta y cinco días del año.",
+      "El pilar de esta vigilancia recae en los sondeos terrestres automatizados de gran campo visual, como el Catalina Sky Survey en Arizona, el telescopio Pan-STARRS en la cumbre del Haleakala en Hawái y el sistema ATLAS (Asteroid Terrestrial-impact Last Alert System), que opera cuatro telescopios robotizados en Hawái, Chile y Sudáfrica capaces de escanear la totalidad del cielo nocturno accesible cada veinticuatro horas en busca de bólidos de aproximación rápida.",
+      "A este esfuerzo se incorpora el Observatorio Vera C. Rubin en el Cerro Pachón de Chile con su colosal telescopio de ocho punto cuatro metros y la cámara digital más potente del mundo (de tres mil doscientos megapíxeles). Su sondeo sistemático LSST (Legacy Survey of Space and Time) descubrirá decenas de miles de nuevos asteroides cercanos a la Tierra cada año, ampliando drásticamente el censo de objetos potencialmente peligrosos en el Sistema Solar interior.",
+      "Sin embargo, los telescopios terrestres tienen un punto ciego insalvable: no pueden observar en dirección al Sol durante el día, dejando un cono de sombra por donde los asteroides pueden acercarse sin ser detectados, tal como ocurrió trágicamente con el meteoro de Cheliábinsk en febrero de 2013, que hirió a más de mil quinientas personas tras estallar a treinta kilómetros de altura sobre Rusia.",
+      "Para eliminar este punto ciego solar, la NASA lanzará la misión espacial NEO Surveyor a finales de esta década. Consiste en un telescopio espacial de cincuenta centímetros optimizado en el espectro infrarrojo térmico situado en el punto de Lagrange L1 Sol-Tierra; desde allí, NEO Surveyor podrá detectar el calor residual emitido por los asteroides más oscuros y cumplir el mandato del Congreso de catalogar el noventa por ciento de los asteroides mayores de ciento cuarenta metros."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El sistema ATLAS es capaz de dar una alerta de impacto con una semana de anticipación para un asteroide pequeño de 20 metros, y de tres semanas para un cuerpo medio de 100 metros.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La NASA tiene el mandato del Congreso de EE.UU. de descubrir y catalogar al menos el 90% de todos los Objetos Cercanos a la Tierra mayores a 140 metros de diámetro, considerados capaces de devastar una región continental.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m5/banner_redes-vigilancia.webp',
-    bannerCaption: 'Redes de vigilancia: Catalina, ATLAS y el futuro NEOSM vigilan el cielo 24/7 para detectar amenazas',
-    fact: 'Hasta la fecha se han descubierto y catalogado más de 34,000 Asteroides Cercanos a la Tierra (NEOs), de los cuales más de 2,300 están clasificados formalmente como Asteroides Potencialmente Peligrosos (PHAs).',
+    "fact": "La vigilancia global de asteroides combina sondeos ópticos robotizados terrestres como Pan-STARRS, ATLAS y el Observatorio Vera C. Rubin con el telescopio espacial infrarrojo NEO Surveyor de la NASA, concebido específicamente para cartografiar asteroides oscuros y bólidos ocultos en el resplandor diurno del Sol.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El censo actual de la NASA ha identificado con éxito a más del noventa y cinco por ciento de todos los asteroides cercanos a la Tierra mayores a un kilómetro de diámetro (capaces de causar una extinción global), confirmando que ninguno de ellos colisionará con nuestro planeta durante al menos los próximos doscientos años."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El sistema automatizado Scout del Laboratorio de Propulsión a Chorro procesa continuamente las nuevas detecciones de asteroides en cuestión de diez minutos tras su publicación por el Minor Planet Center, calculando de inmediato si existe alguna posibilidad de impacto atmosférico inminente en las siguientes horas."
+      }
+    ]
   },
   {
-    id: 'protocolos-respuesta',
-    title: 'Protocolos de Respuesta',
-    color: '#FF3D00',
-    btnImage: '/assets/asteroides/infographic_m5/btn_protocolos-respuesta.webp',
-    image: '/assets/asteroides/infographic_m5/hero_protocolos-respuesta.webp',
-    content: [
-      '¿Qué ocurre cuando un observatorio astronómico descubre un asteroide con probabilidad real de chocar contra la Tierra? La respuesta no se deja a la improvisación; existen protocolos de coordinación internacional avalados por la Organización de las Naciones Unidas (ONU).',
-      'La primera entidad en actuar es la Red Internacional de Alerta de Asteroides (IAWN). Esta red mundial de astrónomos verifique de inmediato las observaciones telescópicas, recalcula la órbita con múltiples centros de datos independientes y confirma si el riesgo de impacto es auténtico.',
-      'Si se confirma que la probabilidad de impacto supera el 1% para un asteroide mayor a 50 metros, IAWN emite una alerta oficial a los gobiernos del mundo y a la Oficina de Asuntos del Espacio Exterior de la ONU (UNOOSA) para iniciar los preparativos de seguridad.',
-      'En paralelo se activa el Grupo Asesor de Planificación de Misiones Espaciales (SMPAG). Este grupo está integrado por representantes de las principales agencias espaciales (NASA, ESA, JAXA, CNSA) para evaluar qué tecnología de deflexión es la más adecuada y coordinar el lanzamiento de la nave de intercepción.',
-      'La defensa planetaria demuestra que, a diferencia de los dinosaurios que no tenían ciencia ni telescopios, la especie humana posee el conocimiento y la capacidad tecnológica para prevenir una extinción masiva y proteger la vida en la Tierra.'
+    "id": "protocolos-respuesta",
+    "title": "Protocolos Globales de Respuesta",
+    "color": "#00E4FF",
+    "btnImage": "/assets/asteroides/infographic_m5/btn_protocolos-respuesta.webp",
+    "image": "/assets/asteroides/infographic_m5/hero_protocolos-respuesta.webp",
+    "content": [
+      "El descubrimiento de un asteroide en rumbo inequívoco de colisión contra la Tierra desencadenaría un desafío geopolítico, científico y humanitario sin precedentes históricos. Para evitar la improvisación, el pánico social o conflictos internacionales sobre el uso de tecnologías de desvío, la comunidad internacional ha establecido estrictos protocolos estandarizados de notificación, toma de decisiones y acción coordinada.",
+      "Bajo los auspicios de la Oficina de Asuntos del Espacio Ultraterrestre de las Naciones Unidas (UNOOSA) y el Comité COPUOS, se crearon en 2014 dos entidades técnicas globales independientes: la Red Internacional de Alerta de Asteroides (IAWN) y el Grupo Asesor de Planificación de Misiones Espaciales (SMPAG), que agrupan a agencias como la NASA, ESA, JAXA, Roscosmos, CNSA y docenas de institutos de investigación.",
+      "La IAWN se encarga de recopilar, certificar y verificar toda la información astrométrica de potenciales objetos de impacto mediante el Minor Planet Center. Si los modelos confirman que la probabilidad de impacto de un asteroide superior a cincuenta metros de diámetro supera el uno por ciento en un horizonte de cincuenta años, IAWN emite una alerta oficial prioritaria a las Naciones Unidas y a los gobiernos de las naciones potencialmente afectadas.",
+      "De forma complementaria, el grupo SMPAG (presidido por agencias con capacidad de lanzamiento interplanetario) asume la responsabilidad operativa de diseñar las misiones espaciales de reconocimiento, caracterización in situ y deflexión activa, estableciendo qué combinación de impactos cinéticos, tractores gravitatorios o cabezas explosivas debe desplegarse y bajo qué marcos de financiamiento internacional multilateral.",
+      "Asimismo, la NASA y la Agencia Federal para el Manejo de Emergencias de Estados Unidos (FEMA) organizan ejercicios periódicos de simulación de impacto en las Conferencias de Defensa Planetaria. Estos simulacros evalúan la coordinación civil, los planes de evacuación masiva, el manejo de la desinformación en redes de comunicación y la toma de decisiones críticas bajo escenarios simulados de amenaza cósmica inminente."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Cada dos años, los expertos mundiales en defensa planetaria celebran la Conferencia de Defensa Planetaria, donde simulan un ejercicio ficticio de impacto de un asteroide desconocido para poner a prueba los protocolos de toma de decisiones de los gobiernos.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La Oficina de Coordinación de Defensa Planetaria (PDCO) de la NASA fue creada formalmente en 2016 para liderar la respuesta nacional de EE.UU. e interconectar a la agencias de emergencia como FEMA.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m5/banner_protocolos-respuesta.webp',
-    bannerCaption: 'Protocolos de respuesta: la ONU coordina la respuesta global mediante IAWN y SMPAG',
-    fact: 'El asteroide 2024 BX1 fue descubierto apenas tres horas antes de chocar contra la atmósfera sobre Berlín, Alemania, en enero de 2024, permitiendo a los científicos avisar con precisión el área de caída para recuperar sus meteoritos.',
-  },
+    "fact": "La respuesta internacional ante impactos de asteroides está coordinada por las Naciones Unidas mediante la Red Internacional de Alerta de Asteroides (IAWN) para certificación astrométrica y el Grupo Asesor SMPAG para el diseño multilateral de misiones espaciales de deflexión activa y protocolos de protección civil.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La Escala de Impacto Técnico de Palermo utiliza una función logarítmica para comparar el riesgo potencial de un asteroide específico con el fondo natural de impacto aleatorio promedio del Sistema Solar, permitiendo a los científicos priorizar los recursos de observación telescópica hacia los objetos verdaderamente preocupantes."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En los ejercicios de mesa bianuales organizados por NASA y FEMA, diplomáticos y científicos simulan escenarios donde desviar un asteroide podría inadvertidamente desplazar el corredor de impacto de un país a otro, debatiendo complejos dilemas de responsabilidad legal y soberanía territorial bajo el Tratado del Espacio Ultraterrestre de 1967."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_AsteroidesM5() {

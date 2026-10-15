@@ -93,157 +93,198 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'que-es-asteroide',
-    title: '¿Qué es un Asteroide?',
-    color: '#FF6B6B',
-    btnImage: '/assets/asteroides/infographic_m1/btn_que-es-asteroide.webp',
-    image: '/assets/asteroides/infographic_m1/hero_que-es-asteroide.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1CxnhsejhTecAqbY0ltW5juW8-w3l61Ur&export=download&authuser=0', title: 'Introducción: Asteroides y Cometas' },
-    content: [
-      'Imagina que construyes una casa gigante de bloques de piedra. Al terminar tu trabajo, quedan decenas de pequeños fragmentos de rocas esparcidos por el suelo. Eso es exactamente lo que ocurrió cuando se formó nuestro Sistema Solar hace 4,600 millones de años. Los planetas grandes se armaron con la mayor parte del material. Los asteroides son aquellos ladrillos sobrantes que jamás lograron unirse para formar un planeta completo.',
-      'A diferencia de las montañas de la Tierra que se erosionan con el viento y el agua, los asteroides han permanecido casi intactos. Son fósiles espaciales congelados en el tiempo. Guardan los secretos químicos de la nube primitiva de polvo y gas que dio origen al Sol. Al estudiar su composición interna, los científicos pueden reconstruir la receta original con la que se cocinó nuestro vecindario cósmico.',
-      'La mayoría de estas rocas primordiales se encuentran orbitando entre las trayectorias de Marte y Júpiter. Esta región se conoce como el Cinturón Principal de Asteroides. Aunque en las películas de ciencia ficción vemos campos densos donde las naves deben esquivar piedras a cada segundo, en la realidad el espacio es enorme. La distancia promedio entre dos asteroides grandes es de más de un millón de kilómetros.',
-      'El tamaño de los asteroides varía de manera gigantesca. Existen pequeños guijarros del tamaño de un autobús escolar y cuerpos masivos como el planeta enano Ceres, que mide casi mil kilómetros de diámetro. A pesar de su enorme número, si juntáramos todos los asteroides del cinturón principal en una sola esfera, su masa total sería menor que la de nuestra Luna.',
-      'Comprender la naturaleza de los asteroides nos permite entender cómo evolucionaron los mundos rocosos como Mercurio, Venus, la Tierra y Marte. Además, estas rocas contienen minerales valiosos, metales puros y agua congelada. Esto convierte a los asteroides en las futuras estaciones de reabastecimiento para los astronautas que exploren el espacio profundo en los próximos siglos.'
+    "id": "que-es-asteroide",
+    "title": "¿Qué es un Asteroide?",
+    "color": "#FF6B6B",
+    "btnImage": "/assets/asteroides/infographic_m1/btn_que-es-asteroide.webp",
+    "image": "/assets/asteroides/infographic_m1/hero_que-es-asteroide.webp",
+    "video": {
+      "src": "https://drive.usercontent.google.com/download?id=1CxnhsejhTecAqbY0ltW5juW8-w3l61Ur&export=download&authuser=0",
+      "title": "Introducción: Asteroides y Cometas"
+    },
+    "content": [
+      "De acuerdo con la definición oficial de la Unión Astronómica Internacional (IAU), los asteroides son cuerpos menores del Sistema Solar compuestos predominantemente de roca y metal que orbitan alrededor del Sol. A diferencia de los cometas, no poseen una cabellera gaseosa apreciable ni una cola luminosa al aproximarse al perihelio. Se formaron hace cuatro mil seiscientos millones de años durante las fases tempranas de la nebulosa protoplanetaria, constituyendo restos fósiles de los primeros bloques de construcción mineral.",
+      "La mayoría de los asteroides conocidos se encuentran confinados en el denominado Cinturón Principal, una extensa región toroidal comprendida entre las órbitas de Marte y Júpiter, aproximadamente entre dos punto una y tres punto tres Unidades Astronómicas de distancia del Sol. Aunque las obras de ciencia ficción suelen retratar campos densos de rocas flotantes donde las colisiones son continuas, la distancia media real entre dos cuerpos asteroidales de gran tamaño supera habitualmente el millón de kilómetros de espacio vacío.",
+      "La distribución de masa entre los asteroides es extremadamente asimétrica. El planeta enano Ceres, que posee un diámetro ecuatorial aproximado de novecientos cuarenta kilómetros, concentra por sí solo más del treinta por ciento de toda la masa del Cinturón Principal. Otros cuerpos masivos como Vesta, Pallas e Higía completan más del cincuenta por ciento de la masa total, mientras que los millones de fragmentos restantes consisten en pequeños bloques rocosos, escombros porosos y partículas de polvo interplanetario.",
+      "A pesar de su abundancia numérica en los catálogos astronómicos, la masa combinada de todos los asteroides del Cinturón Principal equivale a solo un cuatro por ciento de la masa de la Luna terrestre, o aproximadamente un milésimo de la masa total de la Tierra. Esta escasez de materia es la prueba directa de que las perturbaciones gravitacionales ejercidas por el gigante gaseoso Júpiter impidieron que estos fragmentos primordiales se unieran mediante acreción suave para constituir un quinto planeta rocoso.",
+      "El estudio de los asteroides es crucial para las ciencias planetarias porque conservan las firmas químicas, isotópicas y mineralógicas de la nube molecular precursora del Sol sin haber sufrido el metamorfismo, vulcanismo o tectónica de placas que borraron el registro geológico primigenio de mundos como la Tierra o Venus. Al analizarlos con telescopios terrestres y naves interplanetarias, los astrónomos descifran las condiciones termodinámicas originales del Sistema Solar."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El primer asteroide fue descubierto en la primera noche del siglo XIX, el 1 de enero de 1801, por el astrónomo italiano Giuseppe Piazzi. Lo bautizó con el nombre de Ceres en honor a la diosa romana de la agricultura. Durante varios años se le consideró el octavo planeta del Sistema Solar.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La palabra "asteroide" proviene del griego antiguo y significa "con forma de estrella". Fue acuñada por el astrónomo William Herschel porque al observarlos a través de los telescopios de la época, estos cuerpos se veían como simples puntos luminosos idénticos a las estrellas lejanas.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_que-es-asteroide.webp',
-    bannerCaption: 'Qué es un asteroide: cuerpos rocosos que orbitan el Sol desde guijarros hasta Ceres de 940 km de diámetro',
-    fact: 'El asteroide Ceres representa por sí solo un tercio de toda la masa acumulada en el Cinturón Principal. Posee una capa de hielo bajo su corteza rocosa que contiene más agua dulce que todos los ríos y lagos de la Tierra juntos.',
+    "fact": "Ceres fue el primer asteroide descubierto en la historia de la astronomía moderna, avistado en la noche del 1 de enero de 1801 por el monje y matemático Giuseppe Piazzi desde el Observatorio de Palermo; en 2006 la Unión Astronómica Internacional lo reclasificó formalmente como planeta enano debido a su esfericidad en equilibrio hidrostático y su diferenciación geológica interna.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La masa estimada del Cinturón Principal de Asteroides es de aproximadamente 2.4 x 10^21 kilogramos, lo que representa una densidad de materia espacial sumamente dispersa donde las naves robóticas interplanetarias como Voyager, Pioneer o New Horizons atravesaron el cinturón sin requerir desvíos de trayectoria para evitar choques fortuitos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante más de medio siglo posterior a su descubrimiento en 1801, Ceres, Pallas, Juno y Vesta figuraron catalogados formalmente como planetas de pleno derecho en los libros de texto de astronomía, hasta que la avalancha de descubrimientos de rocas similares llevó a los científicos a acuñar el término asteroide para agruparlos."
+      }
+    ]
   },
   {
-    id: 'origen-cinturon',
-    title: 'Nacimiento del Cinturón',
-    color: '#4D96FF',
-    btnImage: '/assets/asteroides/infographic_m1/btn_origen-cinturon.webp',
-    image: '/assets/asteroides/infographic_m1/hero_origen-cinturon.webp',
-    content: [
-      'En los primeros millones de años del Sistema Solar, una inmensa nube en espiral giraba alrededor del joven Sol. En ese disco protoplanetario, microscópicos granos de polvo comenzaron a chocar y pegarse entre sí por atracción electrostática. Con el paso del tiempo, estos grumos crecieron hasta convertirse en rocas de varios kilómetros llamadas planetesimales, los embriones de los futuros planetas.',
-      'En las regiones cercanas a la Tierra y Marte, millones de estos planetesimales colisionaron pacíficamente a bajas velocidades. Se fusionaron progresivamente formando mundos gigantescos. Sin embargo, en la zona ubicada entre Marte y Júpiter el proceso de ensamblaje se interrumpió de manera drástica. Los fragmentos que giraban en esa franja jamás pudieron consolidar un planeta único.',
-      'La razón de esta interrupción fue la rápida formación del gigante Júpiter. Al ser el primer planeta en crecer y acumular una masa colosal, Júpiter comenzó a ejercer una fuerza de gravedad monstruosa en todo su entorno. Su presencia perturbó el ritmo constante del disco de polvo y alteró para siempre la historia de esa región espacial.',
-      'En lugar de chocar suavemente para unirse, los planetesimales del cinturón comenzaron a ser acelerados por los tirones gravitacionales de Júpiter. Sus velocidades aumentaron drásticamente, haciendo que los impactos entre ellos fueran destructivos. En vez de pegarse como plastilina, las rocas se rompían en mil pedazos al chocar, como dos autos a máxima velocidad.',
-      'Así fue como la zona del Cinturón Principal quedó convertida en una enorme zona de escombros espaciales. La masa original que existía en esa región se dispersó casi por completo. Se calcula que el 99.9% del material primitivo fue arrojado fuera del Sistema Solar o devorado por el Sol y los planetas gigantes.'
+    "id": "origen-cinturon",
+    "title": "Nacimiento del Cinturón",
+    "color": "#4D96FF",
+    "btnImage": "/assets/asteroides/infographic_m1/btn_origen-cinturon.webp",
+    "image": "/assets/asteroides/infographic_m1/hero_origen-cinturon.webp",
+    "content": [
+      "En las etapas iniciales de la formación del Sistema Solar, hace aproximadamente cuatro mil seiscientos millones de años, el disco protoplanetario de gas y polvo circunestelar comenzó a enfriarse gradualmente. A través de fuerzas electrostáticas y colisiones a velocidades relativas muy bajas de pocos centímetros por segundo, los granos microscópicos de minerales refractarios se adhirieron mutuamente hasta formar agregados milimétricos y posteriormente planetesimales de varios kilómetros.",
+      "En la zona interior del disco, la temperatura solar permitía únicamente la condensación de silicatos de alta densidad y metales pesados como hierro y níquel, mientras que más allá de la llamada 'línea de hielo' o línea de congelamiento (situada cerca de dos punto siete Unidades Astronómicas), las bajas temperaturas posibilitaron la condensación masiva de hielo de agua, monóxido de carbono y metano, sentando las bases de una marcada dicotomía composicional.",
+      "Los modelos astrofísicos modernos sugieren que en la región donde hoy se ubica el cinturón existía originalmente suficiente material condensable para ensamblar entre dos y tres planetas del tamaño de la Tierra. La acreción desbocada permitió el surgimiento de decenas de embriones planetarios con dimensiones comparables a las de la Luna o Marte, los cuales comenzaron a diferenciarse internamente en núcleos de hierro fundido y mantos de silicatos ultrabásicos.",
+      "Sin embargo, el vertiginoso crecimiento del planeta Júpiter, que acumuló más de trescientas veces la masa terrestre al capturar grandes cantidades de gas hidrógeno y helio antes de que se disipara la nebulosa, alteró drásticamente el equilibrio dinámico. La formidable atracción gravitacional del planeta gigante desestabilizó las órbitas coplanares circulares de los planetesimales vecinos, incrementando sus excentricidades e inclinaciones orbitales de forma caótica.",
+      "Al aumentar las velocidades orbitales relativas de choque a más de cinco kilómetros por segundo, las colisiones entre los cuerpos dejaron de ser acumulativas y se convirtieron en eventos hipercatastróficos de pulverización mecánica. Más del noventa y nueve por ciento de la masa primordial fue expulsada hacia los confines del espacio exterior mediante eyección hiperbólica o precipitó hacia el Sol interior, dejando únicamente un residuo disperso de fragmentos sobrevivientes."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Si Júpiter no se hubiera formado tan rápido, el material del Cinturón Principal habría acumulado suficiente masa para crear un planeta rocoso del tamaño de la Tierra o Marte en esa misma órbita intermedia.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los modelos numéricos avanzados muestran que la línea de nieve del Sistema Solar primordial cruzaba justo por el Cinturón Principal. Por esta razón, los asteroides internos son secos y rocosos, mientras que los externos contienen abundantes hielos y compuestos orgánicos.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_origen-cinturon.webp',
-    bannerCaption: 'Origen del cinturón: la gravedad de Júpiter impidió que este material formara un planeta hace 4,600 millones de años',
-    fact: 'El modelo de Niza sugiere que los planetas gigantes sufrieron una migración en sus órbitas primordiales. Este movimiento agitó el Cinturón Principal como un bote de pintura, mezclando objetos nacidos en diferentes regiones del Sistema Solar.',
+    "fact": "La formación del cinturón de asteroides quedó truncada cuando Júpiter alcanzó su masa crítica antes que los demás planetas, convirtiendo los choques suaves de acreción constructiva en impactos catastróficos a velocidades hiperbólicas que destrozaron los embriones planetarios en formación hace 4,600 millones de años.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El modelo del 'Gran Viraje' (Grand Tack) postula que una temprana migración radial de Júpiter hacia el interior del Sistema Solar hasta 1.5 UA, seguida por su retroceso forzado por la formación de Saturno, barrió y despojó al cinturón de asteroides de más del 99.9% de su masa original debido a perturbaciones resonantes extremas."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los meteoritos condríticos primitivos recolectados en las capas de hielo de la Antártida contienen diminutos granos presolares de carburo de silicio y diamante más antiguos que el propio Sol, forjados en las atmósferas de estrellas gigantes rojas y explosiones de supernovas que precedieron a la formación de nuestra nebulosa planetaria."
+      }
+    ]
   },
   {
-    id: 'efecto-jupiter',
-    title: 'La Gravedad de Júpiter',
-    color: '#FFD93D',
-    btnImage: '/assets/asteroides/infographic_m1/btn_efecto-jupiter.webp',
-    image: '/assets/asteroides/infographic_m1/hero_efecto-jupiter.webp',
-    content: [
-      'Imagina que estás en un parque jugando a empujar a un niño en un columpio. Si lo empujas exactamente en el momento justo de cada ida y vuelta, la amplitud del balanceo aumentará cada vez más. Eso es precisamente lo que hace Júpiter con la gravedad sobre miles de asteroides del cinturón. Este fenómeno físico de sincronización se conoce como resonancia gravitacional.',
-      'Júpiter tarda casi 12 años terrestres en dar una vuelta completa alrededor del Sol. Si un asteroide orbita en una zona donde tarda exactamente 6 años (la mitad del tiempo de Júpiter), cada dos vueltas del asteroide coincidirán con una vuelta del gigante. En ese punto exacto, Júpiter le da un tirón gravitacional extra siempre en la misma dirección.',
-      'Estos empujones periódicos y constantes deforman la órbita circular del asteroide. La convierten en una elipse muy alargada y excéntrica. Con el tiempo, el asteroide comienza a cruzar las trayectorias de otros planetas internos como Marte y la Tierra. Esto rompe el equilibrio y expulsa a la roca de su lugar seguro en el cinturón.',
-      'Gracias a este mecanismo de bomba gravitacional impulsado por Júpiter, muchos asteroides abandonan el Cinturón Principal. Inician viajes peligrosos hacia el interior del Sistema Solar. Estos objetos son los que eventualmente pueden transformarse en asteroides cercanos a la Tierra y representar un riesgo de impacto con nuestro planeta.',
-      'Además de expulsar rocas, la gravedad de Júpiter actúa como un escudo cósmico para la Tierra. Su enorme pozo gravitatorio desvía o destruye a miles de cometas y asteroides que de otro modo viajarían directamente hacia los planetas interiores. Es un freno dinámico permanente que moldea todo nuestro vecindario espacial.'
+    "id": "efecto-jupiter",
+    "title": "La Gravedad de Júpiter",
+    "color": "#FFD93D",
+    "btnImage": "/assets/asteroides/infographic_m1/btn_efecto-jupiter.webp",
+    "image": "/assets/asteroides/infographic_m1/hero_efecto-jupiter.webp",
+    "content": [
+      "Júpiter es el objeto dominante del Sistema Solar después del Sol, albergando más de dos veces y media la masa combinada de todos los demás planetas, satélites y asteroides juntos. Su potente pozo gravitatorio ejerce una influencia dominante sobre la dinámica orbital de cualquier cuerpo que se desplace en sus inmediaciones, funcionando como un colosal escultor celeste que define la arquitectura y estabilidad del Cinturón Principal.",
+      "A medida que los asteroides giran alrededor del Sol con periodos orbitales que van de tres a seis años terrestres, experimentan tirones gravitacionales periódicos cada vez que alcanzan su máxima aproximación con Júpiter. Cuando la relación entre el periodo de traslación del asteroide y el del planeta gigante corresponde a una fracción exacta de números enteros pequeños, se produce un fenómeno dinámico conocido como resonancia orbital de movimiento medio.",
+      "En estas configuraciones resonantes, las perturbaciones gravitacionales no se compensan ni se promedian en el tiempo, sino que se acumulan de manera coherente en el mismo punto de la elipse orbital en cada ciclo. Esta acumulación rítmica de energía cinética incrementa exponencialmente la excentricidad orbital del asteroide, transformando órbitas casi circulares en trayectorias alargadas y cruzadoras de planetas.",
+      "La gravedad de Júpiter también es responsable de confinar poblaciones asteroidales singulares en regiones de equilibrio dinámico estable. En los puntos lagrangianos L4 y L5 de la órbita de Júpiter, situados sesenta grados por delante y por detrás del gigante en su trayectoria heliocéntrica, residen miles de asteroides capturados conocidos como 'Troyanos de Júpiter', divididos en los campamentos de Grecia y Troya.",
+      "Asimismo, la interacción gravitacional entre Júpiter y Saturno durante la infancia del sistema planetario produjo resonancias seculares que barrieron grandes extensiones del cinturón, eyectando asteroides masivos y desencadenando el denominado Bombardeo Intenso Tardío hace tres mil novecientos millones de años, un cataclismo que cubrió de gigantescos cráteres de impacto la corteza de la Luna, Mercurio y Marte."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Júpiter no solo agita el cinturón principal, sino que también atrapa asteroides en su propia órbita. Estos grupos de rocas se llaman Asteroides Troyanos y viajan en dos grandes caravanas 60 grados por delante y por detrás del planeta.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La masa de Júpiter es 318 veces mayor que la de la Tierra. Su campo gravitatorio es tan potente que influye dinámicamente en la trayectoria de cualquier cuerpo menor que se acerque a menos de 500 millones de kilómetros de distancia.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_efecto-jupiter.webp',
-    bannerCaption: 'El efecto Júpiter: el gigante actúa como aspiradora cósmica que desvía asteroides y también protege la Tierra',
-    fact: 'En el año 1994, el cometa Shoemaker-Levy 9 fue despedazado por las fuerzas de marea gravitacional de Júpiter. Los fragmentos chocaron contra la atmósfera del gigante dejando cicatrices oscuras visibles durante meses.',
+    "fact": "Júpiter posee más de dos veces y media la masa de todos los demás planetas del Sistema Solar combinados, ejerciendo una atracción gravitatoria implacable que controla de forma permanente el destino orbital, las inclinaciones y las colisiones mutuas de cada asteroide que orbita en el Cinturón Principal.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los asteroides Troyanos en los puntos de equilibrio de Lagrange L4 y L5 se mantienen en órbitas sumamente estables debido a que la combinación vectorial de la fuerza gravitatoria del Sol y de Júpiter con la fuerza centrífuga genera un pozo de potencial gravitatorio efectivo cerrado donde los objetos quedan atrapados durante eones."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La misión espacial Lucy de la NASA, lanzada en octubre de 2021, está programada para sobrevolar ocho asteroides troyanos distintos entre 2027 y 2033, estudiando por primera vez de cerca estos fósiles helados congelados desde la infancia planetaria para revelar la historia de las migraciones de los gigantes gaseosos."
+      }
+    ]
   },
   {
-    id: 'resonancias-kirkwood',
-    title: 'Huecos de Kirkwood',
-    color: '#6BCB77',
-    btnImage: '/assets/asteroides/infographic_m1/btn_resonancias-kirkwood.webp',
-    image: '/assets/asteroides/infographic_m1/hero_resonancias-kirkwood.webp',
-    content: [
-      'En el año 1866, el astrónomo estadounidense Daniel Kirkwood realizó un mapa detallado sobre la distribución de las distancias entre los asteroides y el Sol. Esperaba encontrar una franja uniforme llena de rocas en todo el cinturón. Sin embargo, al analizar los datos descubrió algo desconcertante: existían regiones completamente vacías donde no orbitaba prácticamente ningún asteroide.',
-      'Estas autopistas desiertas en medio del espacio se conocen hoy como los Huecos de Kirkwood. No son barreras físicas ni paredes invisibles. Son franjas donde las fuerzas gravitacionales de Júpiter impiden que cualquier cuerpo permanezca orbitando de forma estable a largo plazo. Si una roca espacial entra en una de estas zonas, es expulsada rápidamente.',
-      'Los huecos coinciden exactamente con proporciones matemáticas simples del periodo orbital de Júpiter. Por ejemplo, en la resonancia 3:1, un asteroide da tres vueltas al Sol por cada una de Júpiter. En la resonancia 5:2, da cinco vueltas por cada dos del gigante. En esas distancias precisas, el tirón gravitacional constante limpia la franja por completo.',
-      'Es fácil visualizarlo como un disco de vinilo en movimiento al que le han borrado varios surcos concentricos. Cualquier asteroide que caiga en un surco desierto por colisión o deriva térmica es eyectado en pocos millones de años. Su trayectoria se vuelve caótica y es enviado hacia las órbitas de Marte o la Tierra.',
-      'Los Huecos de Kirkwood son las principales tuberías de escape del Cinturón Principal. Gracias a estos canales dinámicos descubiertos por Kirkwood, recibimos en la Tierra un flujo constante de meteoritos que caen sobre nuestra atmósfera y aportan información valiosa a los geólogos.'
+    "id": "resonancias-kirkwood",
+    "title": "Huecos de Kirkwood",
+    "color": "#6BCB77",
+    "btnImage": "/assets/asteroides/infographic_m1/btn_resonancias-kirkwood.webp",
+    "image": "/assets/asteroides/infographic_m1/hero_resonancias-kirkwood.webp",
+    "content": [
+      "En el año 1866, el astrónomo y matemático estadounidense Daniel Kirkwood presentó un análisis estadístico pionero de las distancias medias al Sol de todos los asteroides catalogados hasta esa época. Al graficar el número de asteroides en función de su semieje mayor, descubrió notables valles y zonas casi desprovistas de cuerpos rocosos, interrupciones bruscas que hoy se conocen internacionalmente como los 'Huecos de Kirkwood'.",
+      "Kirkwood demostró que estos huecos coinciden de forma matemáticamente exacta con ubicaciones orbitales donde el periodo de revolución del asteroide es una fracción simple del periodo orbital de Júpiter (que dura once punto ochenta y seis años terrestres). Las resonancias más prominentes se encuentran en las proporciones 3:1 (a dos punto cincuenta UA), 5:2 (a dos punto ochenta y dos UA), 7:3 (a dos punto noventa y cinco UA) y 2:1 (a tres punto veintisiete UA).",
+      "Un asteroide situado en la resonancia 3:1 completa exactamente tres vueltas alrededor del Sol por cada una que efectúa Júpiter. En consecuencia, cada tres órbitas el asteroide se alinea en conjunción directa con Júpiter en el mismo punto del espacio, recibiendo un impulso gravitatorio idéntico y acumulativo que deforma progresivamente su trayectoria elíptica en una escala de cientos de miles de años.",
+      "Este incremento forzado de la excentricidad estira la órbita del cuerpo hasta que su perihelio penetra en el Sistema Solar interior, intersectando las trayectorias de Marte, la Tierra e incluso Venus. Cuando el asteroide experimenta un encuentro cercano con alguno de estos mundos rocosos, el tirón gravitacional del planeta lo extrae definitivamente de la resonancia, eyectándolo fuera del hueco.",
+      "Por esta razón, los Huecos de Kirkwood no representan barreras físicas impenetrables, sino dinámicas compuertas de escape cósmicas. Funcionan como los principales canales de transporte que canalizan fragmentos y rocas del Cinturón Principal hacia las órbitas de los asteroides cercanos a la Tierra (NEAs), suministrando de manera ininterrumpida la gran mayoría de los meteoritos que impactan en nuestro planeta."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Daniel Kirkwood no usó supercomputadoras para su hallazgo. Realizó cálculos a mano analizando apenas el centenar de asteroides conocidos en su época. Su agudeza matemática demostró el poder de la ley de gravedad de Newton.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El tiempo promedio que le toma a una roca espacial ser expulsada del Cinturón Principal tras caer en la resonancia 3:1 de Kirkwood es de aproximadamente un millón de años. Un suspiro en la escala de tiempo astronómica.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_resonancias-kirkwood.webp',
-    bannerCaption: 'Lagunas de Kirkwood: zonas vacías donde Júpiter expulsa a los asteroides mediante resonancias orbitales',
-    fact: 'Existen también zonas de acumulación llamadas "familias dinámicas". Son agrupaciones de asteroides que comparten órbitas estables fuera de las resonancias destructivas de Kirkwood.',
+    "fact": "Los Huecos de Kirkwood son zonas vacías y despobladas del Cinturón Principal provocadas por intensas resonancias gravitacionales periódicas de movimiento medio con Júpiter, descubiertas empíricamente en 1866 por el matemático Daniel Kirkwood y responsables directas de desviar meteoritos y asteroides fragmentados en órbitas caóticas de colisión hacia la Tierra.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La resonancia orbital de movimiento medio 3:1 situada a exactamente 2.50 UA de distancia heliocéntrica eleva la excentricidad orbital de un asteroide desde 0.1 hasta más de 0.6 en menos de un millón de años debido a la acción del caos hamiltoniano, forzándolo a cruzar inevitablemente la órbita de Marte y la Tierra."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "A diferencia de los huecos vacíos despoblados por resonancias destructivas, la resonancia orbital 3:2 situada a 3.97 UA alberga una densa y estable concentración de asteroides conocida como la familia Hilda, cuyas órbitas elípticas sincronizadas evitan sistemáticamente los encuentros cercanos destructivos con Júpiter."
+      }
+    ]
   },
   {
-    id: 'tipos-espectrales',
-    title: 'Tipos C, S y M',
-    color: '#9B51E0',
-    btnImage: '/assets/asteroides/infographic_m1/btn_tipos-espectrales.webp',
-    image: '/assets/asteroides/infographic_m1/hero_tipos-espectrales.webp',
-    content: [
-      'Si observamos el Cinturón Principal con telescopios equipados con espectrómetros, descubriremos que los asteroides no son todos iguales. Se dividen en tres grandes familias según su color, su capacidad para reflejar la luz y su composición química. Estas clases principales se denominan tipo C, tipo S y tipo M.',
-      'Los asteroides de tipo C son los más abundantes del Sistema Solar, representando más del 75% del total. Son extremadamente oscuros, como el carbón, porque contienen grandes cantidades de carbono primordial, silicatos hidratados y compuestos orgánicos. Se encuentran concentrados principalmente en la parte exterior del cinturón, lejos del calor intenso del Sol.',
-      'Los asteroides de tipo S son rocosos y brillantes, representando el 17% de la población. Están compuestos por silicatos de hierro y magnesio, junto con minerales como el olivino y el piroxeno. Ocupan la zona interior del cinturón, más cercana a Marte. Han sufrido procesos de calentamiento térmico que alteraron su estructura mineralógica original.',
-      'Los asteroides de tipo M son los más raros y fascinantes. Son cuerpos casi totalmente metálicos hechos de una aleación pura de hierro y níquel, acompañados de metales preciosos como platino, oro y cobalto. Se cree que son los núcleos expuestos de antiguos protoplanetas que fueron destruidos por colisiones catastróficas en los inicios del cosmos.',
-      'Esta clasificación tridimensional revela la historia térmica del disco solar primitivo. Cerca del Sol el calor evaporó los hielos y volatiles dejando metales y silicatos duros. En las zonas exteriores los compuestos carbónicos y el agua congelada lograron sobrevivir retenidos dentro de las rocas.'
+    "id": "tipos-espectrales",
+    "title": "Tipos C, S y M",
+    "color": "#9B51E0",
+    "btnImage": "/assets/asteroides/infographic_m1/btn_tipos-espectrales.webp",
+    "image": "/assets/asteroides/infographic_m1/hero_tipos-espectrales.webp",
+    "content": [
+      "La composición mineralógica de los asteroides no es homogénea, sino que refleja las condiciones térmicas y químicas de las zonas del disco protosolar donde se originaron. Para clasificarlos, los astrónomos utilizan la espectroscopía de reflectancia óptica e infrarroja, una técnica que analiza las firmas de absorción de la luz solar reflejada por la superficie de la roca, clasificándolos en los sistemas taxonómicos de Tholen y Bus-DeMeo.",
+      "Los asteroides de Tipo C (carbonáceos) son los más abundantes, representando más del setenta y cinco por ciento de todos los cuerpos del Cinturón Principal. Se caracterizan por un albedo extremadamente oscuro, reflejando menos del cinco por ciento de la luz incidente. Su composición incluye grandes concentraciones de compuestos de carbono amorfo, filosilicatos hidratados y minerales de arcilla, predominando en las regiones exteriores del cinturón más allá de dos punto siete UA.",
+      "Los asteroides de Tipo S (silicáceos o rocosos) constituyen aproximadamente el diecisiete por ciento de la población y predominan en la zona interior del cinturón, más cercana a Marte. Poseen un albedo intermedio entre cero punto diez y cero punto veinticinco y sus espectros revelan la presencia predominante de silicatos ricos en magnesio y hierro, tales como el piroxeno y el olivino, similares a los meteoritos pétreos comunes.",
+      "Los asteroides de Tipo M (metálicos) son menos frecuentes pero de extraordinario interés geofísico y económico. Están compuestos casi en su totalidad por aleaciones metálicas de hierro y níquel de alta pureza, acompañadas de trazas de metales del grupo del platino como rodio, rutenio y osmio. Presentan un albedo reflectivo moderado y espectros planos sin las bandas de absorción típicas de los silicatos hidratados.",
+      "La existencia de asteroides puramente metálicos como el gigante 16 Psyche (de doscientos veinte kilómetros de diámetro) demuestra que en los primeros diez millones de años del Sistema Solar se formaron protoplanetas de gran envergadura que llegaron a fundirse y desarrollar un núcleo metálico denso, el cual quedó expuesto al vacío tras ser violentamente despojado de su corteza rocosa por impactos devastadores."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El asteroide 16 Psyche es el cuerpo de tipo M más grande conocido. Mide unos 220 kilómetros de ancho y su valor económico estimado en metales industriales supera los 10,000 cuatrillones de dólares.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La reflectividad de un asteroide se mide con una escala llamada albedo. Un asteroide tipo C refleja apenas el 3% de la luz solar que recibe, mientras que un asteroide tipo S refleja hasta el 20% de la luz incidente.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.webp',
-    bannerCaption: 'Tipos C, S y M',
-    bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.webp',
-    bannerCaption: 'Tipos espectrales: C carbonáceos (75%), S silíceos rocosos y M metálicos con hierro y níquel',
-    fact: 'La espectroscopia astronómica permite identificar la huella dactilar de los minerales midiendo qué longitudes de onda de la luz solar son absorbidas por la superficie de la roca espacial.',
+    "fact": "Los asteroides se dividen taxonómicamente en tipos C (carbonáceos oscuros ricos en minerales hidratados y carbono orgánico), S (silicatos rocosos compuestos de olivino y piroxeno) y M (núcleos metálicos masivos expuestos de hierro y níquel de alta pureza), reflejando la compleja gradación térmica y química que imperaba en el disco circunestelar del Sistema Solar primitivo.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La misión Psyche de la NASA, lanzada en octubre de 2023 impulsada por propulsores iónicos Hall, viaja hacia el asteroide metálico 16 Psyche para examinar in situ el primer núcleo protoplanetario metálico accesible a la instrumentación científica humana, evaluando su magnetometría y topografía de cráteres de impacto."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El asteroide carbonáceo Ryugu, explorado y muestreado por la sonda japonesa Hayabusa2, es un cuerpo tipo 'pila de escombros' tan oscuro y poroso que refleja menos del cuatro por ciento de la luz solar incidente, absorbiendo radiación casi con la misma eficiencia que el carbón vegetal puro flotando en el espacio."
+      }
+    ]
   },
   {
-    id: 'colisiones-familias',
-    title: 'Colisiones y Familias',
-    color: '#FF884B',
-    btnImage: '/assets/asteroides/infographic_m1/btn_colisiones-familias.webp',
-    image: '/assets/asteroides/infographic_m1/hero_colisiones-familias.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1SrIDEDDr11SPgXMcwPm9c0_HfzqJCm-_&export=download&authuser=0', title: 'Colisiones y Fragmentación de Asteroides' },
-    content: [
-      'El Cinturón de Asteroides no es un lugar tranquilo e inmóvil; es una pista de autos chocadores a escala cósmica. A lo largo de miles de millones de años, incontables rocas espaciales han colisionado violentamente a velocidades promedio de 18,000 kilómetros por hora. Estos choques destructivos despedazan a los cuerpos padres en miles de fragmentos menores.',
-      'Cuando un gran asteroide es destruido por un impacto masivo, los escombros resultantes no se dispersan caóticamente por todo el universo. Debido a las leyes de la física orbital, todos los fragmentos continúan viajando juntos por el espacio. Mantienen órbitas muy similares a las del objeto original, formando lo que los astrónomos llaman una Familia de Asteroides.',
-      'Los miembros de una misma familia comparten características químicas identicas porque provienen del mismo cuerpo progenitor. Tienen el mismo color, albedo y composición mineral. Es como encontrar las piezas de un jarrón roto esparcidas a lo largo de un camino: sabes que todas pertenecían al mismo objeto.',
-      'Una de las familias más famosas es la Familia Vesta. Consta de cientos de pequeños asteroides que fueron arrancados de la superficie del asteroide masivo Vesta tras un impacto gigante hace mil millones de años. Los fragmentos de esta familia terminaron cayendo en la Tierra como meteoritos acondritos basálticos.',
-      'Estudiar las familias de asteroides nos permite calcular la edad exacta en que ocurrieron los grandes choques del pasado. Funciona como una ciencia forense espacial donde los astrónomos rebobinan las órbitas de miles de rocas para descubrir el punto exacto donde ocurrió la explosión inicial.'
+    "id": "colisiones-familias",
+    "title": "Colisiones y Familias",
+    "color": "#FF884B",
+    "btnImage": "/assets/asteroides/infographic_m1/btn_colisiones-familias.webp",
+    "image": "/assets/asteroides/infographic_m1/hero_colisiones-familias.webp",
+    "content": [
+      "A lo largo de los cuatro mil seiscientos millones de años de historia del Cinturón Principal, las colisiones mutuas a velocidades hiperbólicas han remodelado continuamente la población de asteroides. En el año 1918, el astrónomo japonés Kiyotsugu Hirayama descubrió que numerosos asteroides que orbitan a distancias aparentemente no relacionadas comparten parámetros orbitales fundamentales idénticos: el semieje mayor, la excentricidad y la inclinación orbital propia.",
+      "Hirayama propuso la brillante hipótesis de que estos grupos dinámicos, bautizados formalmente como 'Familias de Hirayama' o familias asteroidales colisionales, son los fragmentos dispersos resultantes de la fragmentación catastrófica de un único cuerpo progenitor de gran tamaño. Cuando dos asteroides chocan a varios kilómetros por segundo, la energía cinética pulveriza el objeto menor y desintegra al mayor en miles de piezas que heredan la velocidad orbital orbital del progenitor.",
+      "Entre las familias más destacadas identificadas por la astronomía contemporánea se encuentran la familia Koronis, la familia Eos y la familia Themis. En particular, la familia Themis es objeto de intensa investigación porque sus miembros conservan agua congelada en forma de escarcha en sus superficies y minerales hidratados, lo que demuestra que los impactos progenitores no siempre evaporaron los volátiles en las regiones exteriores.",
+      "Otra familia de gran relevancia es la familia de Vesta, originada hace unos mil millones de años tras un gigantesco impacto que excavó la colosal cuenca Rheasilvia de quinientos kilómetros de diámetro en el polo sur del protoplaneta Vesta. Los fragmentos eyectados, conocidos como 'vestoides', comparten la misma firma espectral de basaltos ígneos y son la fuente confirmada de los meteoritos terrestres del grupo HED (howarditas, eucritas y diogenitas).",
+      "La continua trituración mecánica entre miembros de familias asteroidales produce millones de toneladas de micrometeoroides y polvo cósmico cada siglo. Esta nube de partículas microscópicas se esparce gradualmente por el plano de la eclíptica hacia el interior del Sistema Solar, creando el resplandor difuso nocturno observable en cielos prístinos que los astrónomos conocen como la Luz Zodiacal."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En la superficie del asteroide Vesta existe un cráter gigante llamado Rheasilvia. Mide 505 kilómetros de diámetro y su montaña central es dos veces más alta que el Monte Everest en la Tierra.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Se han catalogado más de 100 familias de asteroides distintas en el Cinturón Principal. Algunas tienen menos de diez millones de años de antigüedad, lo que representa eventos muy recientes en la escala del universo.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_colisiones-familias.webp',
-    bannerCaption: 'Familias de asteroides: colisiones entre cuerpos grandes generan grupos de fragmentos con órbitas similares',
-    fact: 'El impacto que destruyó al asteroide padre de la familia Koronis produjo más de 300 fragmentos conocidos que superan los 20 kilómetros de diámetro cada uno, viajando en perfecta formación orbital.',
+    "fact": "Las familias de asteroides fueron identificadas formalmente en 1918 por el astrónomo japonés Kiyotsugu Hirayama al descubrir cúmulos de rocas que comparten la misma inclinación, excentricidad y semieje orbital heliocéntrico, procedentes de la destrucción catastrófica por impacto violento de un gran cuerpo progenitor común hace decenas o cientos de millones de años.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La cuenca de impacto Rheasilvia en el polo sur del protoplaneta Vesta tiene un diámetro de quinientos cinco kilómetros y una montaña central que se eleva más de veintidós kilómetros sobre el fondo del cráter, habiendo eyectado el uno por ciento de la masa total de Vesta al espacio en forma de fragmentos vestoides."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Más de mil doscientos meteoritos catalogados en museos de geología de todo el mundo provienen químicamente del mismo asteroide Vesta (el grupo HED: howarditas, eucritas y diogenitas), habiendo viajado millones de años por el espacio interplanetario antes de precipitar finalmente sobre la superficie de la Tierra."
+      }
+    ]
   },
   {
-    id: 'futuro-cinturon',
-    title: 'Evolución Futura',
-    color: '#00E5FF',
-    btnImage: '/assets/asteroides/infographic_m1/btn_futuro-cinturon.webp',
-    image: '/assets/asteroides/infographic_m1/hero_futuro-cinturon.webp',
-    video: { src: 'https://drive.usercontent.google.com/download?id=1lgiy04EUOmIvasX3Ty625ujVMkOd1v3k&export=download&authuser=0', title: 'Minería Espacial: El Futuro de los Asteroides' },
-    content: [
-      'A primera vista, el Cinturón de Asteroides parece un sistema estático que ha permanecido igual desde los tiempos pretéritos. Sin embargo, se encuentra en un estado de cambio continuo y gradual. Existen fuerzas sutiles pero imparables que modifican sin descanso las órbitas de estas rocas a lo largo del tiempo profundo.',
-      'Una de las fuerzas más sorprendentes es el Efecto Yarkovsky. Ocurre cuando un asteroide absorbe la luz del Sol, se calienta y luego emite ese calor de vuelta al espacio mientras gira sobre su eje. Esta pequeña radiación térmica actúa como un diminuto motor de empuje fotónico. Lentamente mueve al asteroide hacia afuera o hacia adentro de su órbita.',
-      'A lo largo de millones de años, el Efecto Yarkovsky empuja pacientemente a los asteroides pequeños hacia las zonas de resonancia de Kirkwood. Una vez que una roca llega a esa posición crítica, la fuerza gravitatoria de Júpiter toma el control y la dispara fuera del cinturón principal. Es una cinta transportadora cósmica hacia el espacio interior.',
-      'En el futuro lejano, dentro de unos 5,000 millones de años, el Sol agotará su combustible nuclear de hidrógeno. Se expandirá hasta convertirse en una estrella gigante roja. Devorará a Mercurio, Venus y probablemente a la Tierra. Su pérdida de masa alterará drásticamente la atracción gravitatoria de todo el Sistema Solar.',
-      'Durante esa fase tardía, el Cinturón de Asteroides sufrirá una perturbación masiva. Muchas rocas serán evaporadas por la radiación extrema del Sol moribundo. Las supervivientes serán arrojadas hacia el espacio interestelar, convirtiéndose en asteroides nómadas que vagarán para siempre entre las estrellas de la Vía Láctea.'
+    "id": "futuro-cinturon",
+    "title": "Evolución y Efecto Yarkovsky",
+    "color": "#00E4FF",
+    "btnImage": "/assets/asteroides/infographic_m1/btn_futuro-cinturon.webp",
+    "image": "/assets/asteroides/infographic_m1/hero_futuro-cinturon.webp",
+    "content": [
+      "Lejos de ser un entorno estático y petrificado, el Cinturón de Asteroides experimenta una sutil pero continua evolución física y orbital impulsada por la interacción de la materia con la radiación del Sol. Durante décadas, los astrónomos no podían explicar por qué ciertos asteroides de tamaño intermedio abandonaban sus órbitas estables más rápido de lo que predecía la mecánica newtoniana gravitatoria estándar.",
+      "La respuesta reside en el Efecto Yarkovsky, un mecanismo térmico propuesto por el ingeniero civil ruso Ivan Yarkovsky en 1900 y confirmado empíricamente por telescopios espaciales en 2003. Cuando un asteroide en rotación absorbe la radiación solar en su hemisferio diurno, su superficie rocosa se calienta. Al girar, ese calor no se irradia inmediatamente, sino que es reemitido en el espectro infrarrojo con cierto retardo durante el hemisferio nocturno del cuerpo.",
+      "La emisión asimétrica de fotones térmicos actúa como un diminuto motor de empuje fotónico continuo. Debido al principio de acción y reacción, los fotones infrarrojos expulsados transmiten un momento lineal infinitesimal a la roca. En asteroides con rotación prograda (en el mismo sentido que su órbita), este empuje acelera el asteroide y expande lentamente su órbita hacia afuera; en rotación retrógrada, frena al cuerpo y reduce su semieje orbital.",
+      "Complementariamente, el Efecto YORP (Yarkovsky-O'Keefe-Radzievskii-Paddack) modifica la velocidad de giro y la inclinación del eje de rotación de asteroides con formas asimétricas e irregulares debido a la presión de radiación solar. Con el transcurso de los millones de años, el efecto YORP puede acelerar la rotación de un asteroide hasta superar su límite de cohesión estructural centrífuga, provocando su fractura en dos o más componentes y creando asteroides binarios.",
+      "En el futuro lejano, dentro de unos cinco mil millones de años, la evolución estelar del Sol alterará drásticamente el cinturón. Cuando el Sol se transforme en una gigante roja y posteriormente colapse en una enana blanca tras expulsar sus capas exteriores, la intensa pérdida de masa estelar expandirá las órbitas de los asteroides sobrevivientes, reconfigurando por completo el paisaje rocoso de nuestro vecindario cósmico."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El Efecto YORP es una variante del efecto Yarkovsky que no cambia la órbita de la roca, sino su velocidad de rotación. Puede hacer que un asteroide gire tan rápido que termine despedazándose por fuerza centrífuga.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La fuerza del empuje fotónico del Efecto Yarkovsky es minúscula, equivalente al peso de una hoja de papel sobre la palma de tu mano. Pero aplicada de forma ininterrumpida durante millones de años, puede desplazar a un asteroide miles de kilómetros.' }
-    ],
-    bannerImage: '/assets/asteroides/infographic_m1/banner_futuro-cinturon.webp',
-    bannerCaption: 'El futuro del cinturón: minería asteroidal, un solo asteroide metálico contiene más hierro que toda la economía mundial',
-    fact: 'El Cinturón de Asteroides pierde masa de forma constante. Se estima que en un milagro de tiempo de varios billones de años, la franja quedará casi vacía por la evaporación y expulsión de sus cuerpos rocosos.',
-  },
+    "fact": "El Efecto Yarkovsky es una fuerza térmica no gravitacional provocada por la absorción diurna y la reemisión asimétrica de radiación infrarroja en el hemisferio nocturno de asteroides en rotación continua, empujando lentamente sus trayectorias orbitales a lo largo de millones de años hacia zonas de resonancia caóticas que los arrojan hacia los planetas interiores.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El empuje térmico del efecto Yarkovsky sobre un asteroide de quinientos metros de diámetro equivale a una fuerza infinitesimal comparable al peso de una moneda sobre la palma de una mano, pero al actuar de forma continua durante decenas de millones de años es capaz de desplazar su órbita en cientos de miles de kilómetros."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El radar planetario de alta resolución de los radiotelescopios de Arecibo y Goldstone confirmó de manera directa y observacional el efecto YORP en 2007 al medir con precisión nanométrica una aceleración continua en la velocidad de rotación del asteroide cercano a la Tierra catalogado oficialmente como (54509) YORP."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_AsteroidesM1() {
