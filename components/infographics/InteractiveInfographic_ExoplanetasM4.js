@@ -101,151 +101,207 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'concepto-zona-habitable',
-    title: 'La Zona Habitable',
-    color: '#64FFDA',
-    btnImage: '/assets/exoplanetas/infographic_m4/btn_concepto-zona-habitable.jpg',
-    image: '/assets/exoplanetas/infographic_m4/hero_concepto-zona-habitable.jpg',
-    content: [
-      'La zona habitable, conocida popularmente en la ciencia como la "Zona Ricitos de Oro", es la región anular alrededor de una estrella donde las temperaturas permiten que el agua exista en estado líquido sobre la superficie de un planeta rocoso. Imagina estar sentado frente a una fogata en una noche fría: si te sientas demasiado cerca te quemarás, y si te sientas demasiado lejos te congelarás. Debes buscar la distancia justa.',
-      'En la astrofísica moderna, la zona habitable no depende únicamente del brillo directo de la estrella, sino de la cantidad de flujo estelar incidente que recibe la superficie planetaria. Si un planeta orbita demasiado cerca del límite interior de la zona habitable, la energía térmica provocará un efecto invernadero desbocado: los océanos se evaporarán por completo y el agua de la atmósfera se disociará en el espacio.',
-      'Por el contrario, si el exoplaneta se encuentra más allá del límite exterior de la zona habitable, el dióxido de carbono de la atmósfera comenzará a congelarse en la superficie en forma de hielo seco. Sin suficientes gases invernadero para atrapar el calor, el planeta sufrirá una glaciación global ininterrumpida y permanente, convirtiéndose en un bola de nieve helada incapaz de sostener mares abiertos.',
-      'El tamaño y la posición exacta de la zona habitable varían radicalmente según el tipo espectral de la estrella hospedera. Alrededor de estrellas calientes de tipo F o G como el Sol, la zona habitable se sitúa a grandes distancias. Sin embargo, alrededor de estrellas enanas rojas frías de tipo M, la zona habitable se encuentra apretada extremadamente cerca de la estrella, a solo una fracción de la distancia entre Mercurio y el Sol.',
-      'Es importante comprender que pertenecer a la zona habitable es una condición necesaria pero no suficiente para que un planeta albergue vida. Marte se encuentra técnicamente en el borde exterior de la zona habitable del Sol, pero su baja masa y su falta de atmósfera impiden la existencia de agua líquida estable. La habitabilidad requiere una combinación perfecta de distancia orbital y geofísica planetaria.'
+    "id": "concepto-zona-habitable",
+    "title": "La Zona Habitable",
+    "color": "#64FFDA",
+    "btnImage": "/assets/exoplanetas/infographic_m4/btn_concepto-zona-habitable.jpg",
+    "image": "/assets/exoplanetas/infographic_m4/hero_concepto-zona-habitable.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_concepto-zona-habitable.webp",
+    "bannerCaption": "Zona habitable: la franja dorada alrededor de cada estrella donde el agua líquida puede existir",
+    "content": [
+      "La zona habitable circunestelar (denominada en la divulgacion cientifica como zona Ricitos de Oro) se define en astrofisica teorica como la region anular alrededor de una estrella donde los niveles de flujo radiativo incidente permiten que un planeta de masa rocosa y atmosfera adecuada sostenga agua pura en estado liquido sobre su superficie de forma termodinamicamente estable durante eones geologicos continuados.",
+      "Los limites fisicos precisos de esta zona fueron modelados cuantitativamente mediante balances radiativo-convectivos unidimensionales por el geofisico James Kasting en 1993 y perfeccionados por Ravi Kopparapu en 2013. El limite interior conservador viene determinado por el umbral del invernadero humedo (moist greenhouse) y el efecto invernadero desbocado (runaway greenhouse), donde la insolacion excesiva provoca que la columna de vapor de agua se vuelva opticamente densa, desatando la ebullicion de los oceanos.",
+      "Por su parte, el limite exterior de la zona habitable esta impuesto termodinamicamente por la cota del maximo efecto invernadero ejercido por el dioxido de carbono (maximum greenhouse limit): mas alla de esta distancia orbital, la adicion de CO2 ya no puede compensar la caida en la temperatura superficial porque la condensacion del gas en nubes de hielo seco y la dispersion de Rayleigh incrementan radicalmente el albedo planetario, precipitando una glaciacion global irreversible.",
+      "La extension geometrica y distancia radial de la zona habitable dependen directamente de la temperatura efectiva y de la luminosidad bolometrica de la estrella central. Alrededor de estrellas calientes de secuencia principal de tipo F o G, la franja se desplaza hacia distancias orbitales superiores a una o dos unidades astronomicas; en cambio, alrededor de enanas rojas ultrafrías de tipo M, la zona habitable se encuentra comprimida a escasas centesimas de unidad astronomica de la fotosfera estelar.",
+      "Pertenecer a la zona habitable constituye un requisito astronomico fundamental pero de ningun modo garantiza por si solo la habitabilidad biologica efectiva. En nuestro propio Sistema Solar, mundos como la Luna y Marte orbitan dentro o en las inmediaciones de la zona habitable del Sol, pero su reducida masa superficial impidio retener campos magneticos y atmosferas densas, lo que evidencia que la habitabilidad requiere la convergencia critica entre coordenadas orbitales y propiedades geofisicas endogenas."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El concepto moderno de zona habitable astrofísica fue calculado matemáticamente por el científico James Kasting en 1993. Kasting estableció las ecuaciones basadas en el comportamiento del agua y del dióxido de carbono bajo el efecto invernadero para determinar los límites de habitabilidad estelar.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El límite interior de la zona habitable terrestre está fijado por la pérdida de agua por desbocamiento térmico (aproximadamente a 0.95 Unidades Astronómicas del Sol). El límite exterior lo establece el máximo efecto invernadero por CO2 (aproximadamente a 1.67 Unidades Astronómicas del Sol).' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m4/banner_concepto-zona-habitable.webp',
-    bannerCaption: 'Zona habitable: la franja dorada alrededor de cada estrella donde el agua líquida puede existir',
-    fact: 'La Tierra gira cerca del borde interior de la zona habitable de nuestro Sol. A medida que el Sol envejezca y aumente su luminosidad en un 10% durante los próximos mil millones de años, la zona habitable se desplazará hacia afuera y los océanos terrestres se evaporarán de manera natural.'
+    "fact": "La zona habitable circunestelar delimita la franja orbital donde un planeta rocoso puede sostener agua liquida superficial en equilibrio termodinamico; sus fronteras fisicas estan impuestas por el desbocamiento del efecto invernadero en el borde interior (0.95 UA en el Sol) y por la condensacion del dioxido de carbono en el exterior (1.67 UA).",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los modelos climaticos actualizados de Kopparapu demuestran que la zona habitable no es estatica: a medida que una estrella de la secuencia principal fusiona hidrogeno en su nucleo, su luminosidad aumenta un diez por ciento cada mil millones de anos, desplazando continuamente la zona habitable hacia el exterior de forma secular."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El concepto de zona habitable continua (CHZ) define la franja orbital mas estrecha que permanece ininterrumpidamente habitable a lo largo de toda la evolucion de una estrella; para nuestro Sistema Solar, esta zona continua apenas abarca una estrecha banda comprendida entre 0.95 y 1.15 unidades astronomicas."
+      }
+    ]
   },
   {
-    id: 'factores-habitabilidad',
-    title: 'Factores de Habitabilidad',
-    color: '#00E5FF',
-    btnImage: '/assets/exoplanetas/infographic_m4/btn_factores-habitabilidad.jpg',
-    image: '/assets/exoplanetas/infographic_m4/hero_factores-habitabilidad.jpg',
-    content: [
-      'Para que un mundo sea habitable no basta con estar a la distancia correcta de su estrella; requiere una compleja sinfonía de factores geofísicos e interacciones atmosféricas. Imagina construir una casa perfecta: no solo necesitas terreno en un buen clima, sino también cimientos sólidos, paredes aislantes, techo protector y un sistema que recicle el aire limpio.',
-      'El primer factor crucial es la masa y el tamaño del planeta. Si un exoplaneta es demasiado pequeño como Marte o la Luna, su gravedad será insuficiente para retener una atmósfera espesa a lo largo de miles de millones de años. Los gases de la atmósfera escaparán lentamente hacia el espacio por erosión del viento estelar. Un exoplaneta habitable debe tener masa suficiente para mantener aire denso.',
-      'El segundo factor indispensable es la presencia de un escudo magnético o magnetósfera planetaria generado por un núcleo de hierro líquido en convección. El campo magnético actúa como un escudo invisible que desvía el plasma del viento estelar y las partículas cargadas de alta energía. Sin un campo magnético potente, las radiaciones estelares destruirán la capa de ozono y esterilizarán la superficie.',
-      'El tercer pilar es la tectónica de placas y el ciclo del carbono-silicato. En la Tierra, el movimiento de los continentes y las zonas de subducción reciclan continuamente el dióxido de carbono entre el manto rocoso y la atmósfera. Este termostato geológico natural regula la temperatura del planeta a escalas de millones de años, evitando que el clima se vuelva demasiado cálido o demasiado frío.',
-      'Por último, la composición química de la atmósfera y la presencia de un efecto invernadero moderado son esenciales. Sin gases de efecto invernadero como el dióxido de carbono y el vapor de agua, la temperatura media de la Tierra sería de 18 grados Celsius bajo cero, congelando todos los océanos. El equilibrio perfecto entre estos cuatro factores define la habitabilidad real.'
+    "id": "factores-habitabilidad",
+    "title": "Factores de Habitabilidad",
+    "color": "#00E5FF",
+    "btnImage": "/assets/exoplanetas/infographic_m4/btn_factores-habitabilidad.jpg",
+    "image": "/assets/exoplanetas/infographic_m4/hero_factores-habitabilidad.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_factores-habitabilidad.webp",
+    "bannerCaption": "Factores de habitabilidad: campo magnético, tectónica, luna estabilizadora y atmósfera son clave",
+    "content": [
+      "La emergencia y perpetuacion de una biosfera planetaria exige una compleja red de factores endogenos y dinamicos que trascienden con creces la simple ubicacion orbital. Un planeta rocoso potencialmente habitable debe funcionar como un motor geofisico acoplado donde la litosfera, el nucleo metalico profundo, la columna atmosferica y la hidrosfera interactuen mediante ciclos biogeoquimicos autorregulados capaces de amortiguar perturbaciones cosmicas catastroficas.",
+      "El factor determinante primario es la masa planetaria critica, la cual debe situarse idealmente entre 0.5 y 5 masas terrestres. Planetas con masa deficiente sufren una rapida disipacion del calor radiogenico primordial y carecen del potencial gravitatorio necesario para evitar el escape hidrodinamico de gases ligeros hacia el espacio; por el contrario, mundos excesivamente masivos pueden atrapar envelopes de hidrogeno primordial convirtiendose en sub-Neptunos inhabitables.",
+      "El segundo requisito geofisico indispensable es la existencia de una geodinamo activa en el nucleo exterior liquido que genere una magnetosfera dipolar planetaria robusta. Este escudo magnetico desvia el flujo continuo de iones energeticos del viento estelar y las eyecciones de masa coronal, blindando la atmosfera frente al decapado erosivo por pulverizacion ionica (sputtering) y protegiendo a los polimeros prebioticos superficiales de la radiacion ionizante destructiva.",
+      "Asimismo, la tectonica de placas opera como el termostato climatico maestro a traves del ciclo silicato-carbonato: el dioxido de carbono atmosferico es capturado por meteorizacion quimica fluvial de silicatos, transportado al lecho oceanico como carbonato de calcio, subducido hacia el manto superior y reinyectado gradualmente a la atmosfera mediante vulcanismo de arco a escalas temporales de cientos de miles de anos, estabilizando la temperatura global.",
+      "Finalmente, la presencia de un satelite masivo estabilizador (como la Luna terrestre) amortigua las oscilaciones caoticas de la oblicuidad del eje de rotacion planetario causadas por resonancias de marea con planetas gigantes vecinos. Esta estabilidad axial impide que los polos geograficos apunten directamente hacia la estrella anfitriona, evitando transiciones climaticas extremas que podrian desatar congelaciones globales o colapsos barometricos."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Marte perdió su habitabilidad primitiva hace unos cuatro mil millones de años cuando su núcleo de hierro se enfrió y su campo magnético colapsó. Sin la protección magnética, el viento solar barrió casi toda su atmósfera original, transformándolo en un desierto helado y seco.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El número de Dynamo mide la capacidad del núcleo metálico de un planeta para generar un campo magnético magnético mediante convección térmica y rotación. Una rotación demasiado lenta puede impedir que se genere una magnetósfera protectora incluso en planetas rocosos grandes.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m4/banner_factores-habitabilidad.webp',
-    bannerCaption: 'Factores de habitabilidad: campo magnético, tectónica, luna estabilizadora y atmósfera son clave',
-    fact: 'El concepto de "Planeta Superhabitable", propuesto por el astrofísico René Heller, sugiere que exoplanetas ligeramente más grandes y masivos que la Tierra, orbitando estrellas enanas de tipo K con mayor vida media, podrían ser incluso más idóneos para la vida que nuestro propio planeta.'
+    "fact": "La habitabilidad planetaria requiere un delicado equilibrio multifactorial: masa suficiente para retener atmosfera, geodinamo activa para generar un escudo magnetosferico protector, tectonica de placas para regular el ciclo silicato-carbonato y estabilidad en la oblicuidad orbital para preservar climas benignos.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El astrofisico Rene Heller acuno el concepto de Planeta Superhabitable para describir mundos con una masa aproximada de 1.2 a 1.5 masas terrestres orbitando estrellas enanas naranjas de tipo K: estos planetas retendrian una tectonica mas longeva, mayor biodiversidad potencial y gozarian de estabilidades estelares de hasta treinta mil millones de anos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Sin el ciclo geologico silicato-carbonato regulado por la tectonica de placas terrestres, el enfriamiento conductivo del manto habria provocado que el dioxido de carbono se acumulase de forma incontrolada en la atmosfera o quedase totalmente sepultado en rocas calizas, extinguiendo la vida compleja en pocos millones de anos."
+      }
+    ]
   },
   {
-    id: 'sistema-trappist-1',
-    title: 'El Sistema TRAPPIST-1',
-    color: '#FF5252',
-    btnImage: '/assets/exoplanetas/infographic_m4/btn_sistema-trappist-1.jpg',
-    image: '/assets/exoplanetas/infographic_m4/hero_sistema-trappist-1.jpg',
-    content: [
-      'Ubicado a 39.6 años luz de la Tierra en la constelación de Acuario, el sistema TRAPPIST-1 representa el tesoro más fascinante para la astrobiología moderna. Descubierto por un equipo internacional liderado por el astrónomo Michaël Gillon en 2017, este sistema alberga a siete exoplanetas de tamaño casi idéntico a la Tierra orbitando alrededor de una estrella enana ultrafría.',
-      'La estrella TRAPPIST-1 es una diminuta enana roja que apenas tiene el tamaño del planeta Júpiter y posee una masa equivalente al ocho por ciento de nuestro Sol. Como la estrella es tan pequeña y emite muy poco calor, toda la familia de siete planetas orbita extremadamente pegada a su superficie, apretados dentro de una distancia que es diez veces menor que la órbita de Mercurio alrededor del Sol.',
-      'Lo más extraordinario de este sistema es que tres de los planetas (TRAPPIST-1 e, f y g) se encuentran orbitando justo dentro de la zona habitable conservadora del sistema. Estos tres mundos rocosos reciben niveles de radiación estelar muy parecidos a los que reciben la Tierra y Marte del Sol, ofreciendo la oportunidad ideal para buscar agua líquida y atmósferas sustentables.',
-      'Debido a la cercanía física entre las órbitas de los planetas, si estuvieras de pie en la superficie de TRAPPIST-1 e verías a tus planetas vecinos pasar por el cielo con un tamaño aparente mayor que el de la Luna llena terrestre. Podrías distinguir los mares, continentes o patrones de nubes de los mundos hermanos a simple vista en el firmamento rojo.',
-      'El telescopio espacial James Webb está dedicando cientos de horas de observación prioritaria para caracterizar espectroscópicamente cada uno de los mundos de TRAPPIST-1. Las observaciones iniciales ya están determinando cuáles planetas retuvieron sus atmósferas tras miles de millones de años de radiación estelar y cuáles son rocas desnudas.'
+    "id": "sistema-trappist-1",
+    "title": "El Sistema TRAPPIST-1",
+    "color": "#FF5252",
+    "btnImage": "/assets/exoplanetas/infographic_m4/btn_sistema-trappist-1.jpg",
+    "image": "/assets/exoplanetas/infographic_m4/hero_sistema-trappist-1.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_sistema-trappist-1.webp",
+    "bannerCaption": "TRAPPIST-1: 7 planetas del tamaño de la Tierra a solo 40 años luz, 3 en zona habitable",
+    "content": [
+      "Localizado a escasos 39.6 anos luz de distancia en la constelacion austral de Acuario, el sistema planetario TRAPPIST-1 se erige como el laboratorio astrofisico y astrobiologico mas prometedor de la galaxia para estudiar mundos rocosos templados. Descubierto en 2017 por un consorcio internacional encabezado por Michael Gillon, este singular enclave estelar alberga una prolifica familia de siete exoplanetas de dimensiones y composiciones homologas a la Tierra y Venus.",
+      "La estrella anfitriona TRAPPIST-1 es una enana roja ultrafría de tipo espectral M8V con una masa equivalente al nueve por ciento de la masa solar y un diametro apenas ligeramente superior al del planeta Jupiter. Dado que la luminosidad bolometrica de esta diminuta estrella es casi dos mil veces inferior a la del Sol, la totalidad de su cohorte planetaria orbita a distancias increiblemente compactas, confinada dentro de un radio menor a una quinta parte de la distancia entre Mercurio y el Sol.",
+      "La singularidad astrobiologica del sistema radica en que tres de sus integrantes (los exoplanetas TRAPPIST-1 e, f y g) orbitan de forma simultanea dentro de la zona de habitabilidad conservadora calculada para enanas M. En particular, TRAPPIST-1 e exhibe un radio de 0.92 radios terrestres, una masa del sesenta y nueve por ciento de la terrestre y una densidad de 5.6 gramos por centimetro cubico, valores que certifican una fraccion de nucleo metalico de hierro analoga a la estructura geofisica de la Tierra.",
+      "Las interacciones gravitatorias seculares entre los siete planetas configuran una intrincada y elegante cadena de resonancias de Laplace tridimensionales casi perfectas: por cada ocho orbitas que completa el planeta b, el planeta c ejecuta cinco, el d describe tres y el e realiza exactamente dos. Esta arquitectura dinamica autoestabilizada ha garantizado la pervivencia secular del sistema sin colisiones orbitales a lo largo de sus mas de siete mil millones de anos de historia evolutiva.",
+      "El Telescopio Espacial James Webb dedica amplios programas de observacion prioritaria mediante sus instrumentos MIRI y NIRSpec para escudrinar la presencia de atmosferas en estos mundos. Mientras que las mediciones iniciales de emision termica en TRAPPIST-1 b y c han descartado envolturas gaseosas densas de CO2 puro debido a la intensa actividad eruptiva de la estrella en sus etapas juveniles, TRAPPIST-1 e y f representan los objetivos supremos para buscar indicios de agua y biosignaturas quimicas."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los siete planetas de TRAPPIST-1 forman una cadena de resonancia orbital armónica casi perfecta. Por cada 8 órbitas que completa el planeta b, el planeta c da 5 vueltas, el d da 3 y el e da 2. Esta sincronía exacta ha mantenido al sistema estable durante más de siete mil millones de años.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El planeta TRAPPIST-1 e es considerado por los astrofísicos el mejor candidato de masa terrestre conocido. Posee un radio de 0.92 radios terrestres, una masa de 0.69 masas terrestres y una densidad de 5.6 g/cm³, lo que sugiere una estructura interna con un gran núcleo de hierro similar a la Tierra.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m4/banner_sistema-trappist-1.webp',
-    bannerCaption: 'TRAPPIST-1: 7 planetas del tamaño de la Tierra a solo 40 años luz, 3 en zona habitable',
-    fact: 'Si juntáramos los siete planetas del sistema TRAPPIST-1, cabrían holgadamente dentro de la distancia que separa al Sol del planeta Mercurio, convirtiéndolo en el laboratorio planetario rocoso más compacto y extraordinario jamás descubierto.'
+    "fact": "El sistema TRAPPIST-1 alberga siete planetas de tamano terrestre orbitando en resonancia armonica alrededor de una enana roja ultrafría a 40 anos luz; tres de ellos (e, f y g) residen en la zona de habitabilidad, constituyendo el laboratorio astrobiologico mas extraordinario para la espectroscopia del telescopio James Webb.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los analisis de variacion de tiempo de transito (TTV) permitieron determinar las masas de los siete planetas de TRAPPIST-1 con un margen de error inferior al tres por ciento, confirmando que todos estan compuestos principalmente por silicatos y hierro, aunque algunos miembros exteriores podrian albergar capas volátiles de agua de hasta el cinco por ciento en masa."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Debido a la extrema cercania mutua entre las orbitas del sistema TRAPPIST-1, los planetas vecinos se observarian desde la superficie de TRAPPIST-1 e con un tamano angular hasta tres veces mayor que la Luna llena en nuestro cielo, permitiendo contemplar continentes y patrones meteorologicos a simple vista."
+      }
+    ]
   },
   {
-    id: 'biofirmas-atmosfericas',
-    title: 'Biofirmas Atmosféricas',
-    color: '#FF80AB',
-    btnImage: '/assets/exoplanetas/infographic_m4/btn_biofirmas-atmosfericas.jpg',
-    image: '/assets/exoplanetas/infographic_m4/hero_biofirmas-atmosfericas.jpg',
-    content: [
-      'Una biofirma atmosférica es una sustancia química gaseosa o un patrón espectral cuya presencia en la atmósfera de un exoplaneta únicamente puede ser explicada razonablemente por la actividad biológica de seres vivos. Imagina buscar las huellas de pisadas de un animal en la arena: la forma y la profundidad del rastro revelan qué tipo de criatura estuvo allí.',
-      'En la atmósfera terrestre, la biofirma más evidente y colosal es la presencia simultánea de dióxido de carbono, oxígeno molecular (O2) y su derivado el ozono (O3). El oxígeno es un gas sumamente reactivo que se combina rápidamente con las rocas y los metales. Si no existiera la fotosíntesis continua realizada por plantas y cianobacterias, todo el oxígeno de nuestro aire desaparecería en pocos miles de años.',
-      'Otra biofirma fundamental es la detección conjunta de parejas de gases que se encuentran en desequilibrio termodinámico. El metano (CH4) y el oxígeno reaccionan químicamente entre sí para formar dióxido de carbono y agua. Si un telescopio espacial detecta concentraciones elevadas de metano y oxígeno al mismo tiempo en el aire de un exoplaneta, significa que alguna fuente viva debe estar inyectando ambos gases continuamente.',
-      'También se investigan biofirmas secundarias como el dimetilsulfuro (DMS), un compuesto orgánico sulfurado producido en la Tierra exclusivamente por el fitoplancton marino en los océanos. La detección de DMS junto con vapor de agua en la atmósfera de una Supertierra sería una evidencia circunstancial extraordinaria de vida fotosintética marina.',
-      'El análisis de biofirmas requiere descartar primero cualquier proceso químico inorgánico. Los científicos deben verificar que la estrella no esté produciendo gases por fotólisis del agua o que los volcanes no estén expulsando metano geológico. Buscar biofirmas es un trabajo riguroso de descarte estadístico antes de proclamar un hallazgo astrobiológico.'
+    "id": "biofirmas-atmosfericas",
+    "title": "Biofirmas Atmosféricas",
+    "color": "#FF80AB",
+    "btnImage": "/assets/exoplanetas/infographic_m4/btn_biofirmas-atmosfericas.jpg",
+    "image": "/assets/exoplanetas/infographic_m4/hero_biofirmas-atmosfericas.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_biofirmas-atmosfericas.webp",
+    "bannerCaption": "Biofirmas atmosféricas: oxígeno + metano en desequilibrio químico sería señal inequívoca de vida",
+    "content": [
+      "En la vanguardia de la astrobiologia contemporanea, una biofirma atmosferica remota se define como la deteccion espectroscopica inequivoca de una especie gaseosa, conjunto de moleculas o patron temporal reflectivo cuya abundancia y persistencia en la columna atmosferica exoplanetaria no puede ser reconciliada con ningun mecanismo fisico abiotico conocido, demandando la intervencion sostenida de actividad metabolica biologica.",
+      "El estandar de oro de las biofirmas gaseosas reside en la deteccion de especies quimicas en profundo desequilibrio termodinamico redox simultaneo, tipificado en la Tierra por la coexistencia anomala de dioxido de carbono, oxigeno molecular (O2) y metano (CH4). En terminos de cinetica quimica, el metano y el oxigeno reaccionan de manera espontanea en presencia de fotones solares para formar agua y dioxido de carbono; por lo tanto, su coexistencia continuada en concentraciones significativas solo es factible si una biosfera activa repone ambos gases a tasas colosales.",
+      "El oxigeno biogenico producido por fototrofos oxigenicos genera asimismo una capa secundaria estratosferica de ozono (O3) mediante el ciclo fotoquimico de Chapman. La banda de absorcion vibracional del ozono a 9.6 micrometros en el infrarrojo termico es sumamente profunda y no lineal: pequenas concentraciones de oxigeno molecular residual en la atmosfera bastan para generar una prominente huella espectral de ozono, facilitando enormemente su deteccion remota con observatorios criogenicos espaciales.",
+      "Ademas de los gases respiratorios primarios, los investigadores rastrean metabolitos secundarios especializados como el dimetilsulfuro (DMS, (CH3)2S) y el disulfuro de dimetilo. En nuestro planeta, el DMS es sintetizado de forma casi exclusiva por microorganismos marinos fotosinteticos pertenecientes al fitoplancton oceanico a partir del DMSP; la identificacion conjunta de DMS, vapor de agua y metano en mundos con oceanos templados constituiria una prueba astrobiologica de primer orden.",
+      "Asimismo, se investigan biofirmas de superficie basadas en propiedades opticas de pigmentos fotosinteticos, como el Borde Rojo de la Clorofila (Vegetation Red Edge): un pronunciado incremento escalonado en la reflectancia espectral de la luz estelar a longitudes de onda superiores a setecientos nanometros, mecanismo biofisico adaptativo mediante el cual la vegetacion terrestre previene el estres termico celular reflejando la radiacion infrarroja cercana no fotosintetica."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Antes de la aparición de la fotosíntesis oxigénica hace unos 2.4 mil millones de años (Gran Evento de Oxidación), la Tierra primitiva era un mundo dominado por bacterias anaeróbicas que producían grandes cantidades de metano, dándole a nuestro planeta una atmósfera anaranjada similar a la de Titán.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La línea de absorción del ozono a 9.6 micrómetros en el espectro infrarrojo lejano es una de las biofirmas más fáciles de detectar por telescopios espaciales. El ozono se forma a partir del oxígeno O2 por radiación ultravioleta y sirve como un excelente indicador indirecto de fotosíntesis planetaria.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m4/banner_biofirmas-atmosfericas.webp',
-    bannerCaption: 'Biofirmas atmosféricas: oxígeno + metano en desequilibrio químico sería señal inequívoca de vida',
-    fact: 'En 2023, observaciones del exoplaneta K2-18b con el JWST detectaron moléculas de carbono como metano y dióxido de carbono junto con posibles indicios tentativos de dimetilsulfuro (DMS), desatando un amplio debate científico sobre este mundo "Hicéano" (océano bajo atmósfera de hidrógeno).'
+    "fact": "Las biofirmas atmosfericas mas concluyentes exigen detectar desequilibrios redox termodinamicos, como la coexistencia simultanea de oxigeno molecular (O2), ozono (O3 a 9.6 um) y metano (CH4), asi como compuestos metabolicos oceanicos como el dimetilsulfuro (DMS) y la firma de reflectancia del borde rojo de la vegetacion.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La atmosfera de la Tierra primordial antes de la Gran Oxidacion hace 2,400 millones de anos albergaba una biosfera floreciente de arqueas metanogenas que inyectaban tanto metano en el aire que generaban una niebla organica fotoquimica anaranjada rica en hidrocarburos, similar a la atmosfera actual de Titan pero de origen netamente biologico."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La deteccion de indicios tentativos de dimetilsulfuro (DMS), dioxido de carbono y metano en el exoplaneta templado K2-18b por el espectrografo NIRISS del James Webb en 2023 desato un profundo debate cientifico internacional, estimulando nuevas campanas observacionales independientes para descartar interferencias moleculares abioticas y evaluar si se trata de un mundo oceanico."
+      }
+    ]
   },
   {
-    id: 'tecnofirmas-espaciales',
-    title: 'Tecnofirmas Espaciales',
-    color: '#B388FF',
-    btnImage: '/assets/exoplanetas/infographic_m4/btn_tecnofirmas-espaciales.jpg',
-    image: '/assets/exoplanetas/infographic_m4/hero_tecnofirmas-espaciales.jpg',
-    content: [
-      'Una tecnofirma es cualquier evidencia física, química o electromagnética observable a la distancia que demuestre el uso de tecnología avanzada por parte de una civilización extraterrestre. Mientras que las biofirmas buscan la huella de bacterias o plantas, las tecnofirmas buscan la presencia de construcciones de ingeniería, contaminantes sintéticos o emisiones energéticas deliberadas.',
-      'Una de las tecnofirmas atmosféricas más prometedoras es la detección de gases contaminantes artificiales que no existen de forma natural en la geología. Los clorofluorocarbonos (CFC) son compuestos químicos industriales inventados por el ser humano para refrigeración que destruyen el ozono. Si detectáramos CFCs en la atmósfera de un exoplaneta rocoso, tendríamos la prueba directa de una sociedad industrial.',
-      'Otra tecnofirma astronómica fascinante es la búsqueda de iluminación artificial nocturna en la cara no iluminada de un planeta rocoso acoplado por marea. Si una civilización inteligente habita el hemisferio nocturno helado de una enana roja, necesitaría mega-ciudades iluminadas. Los telescopios futuros podrían detectar la emisión de luz LED artificial durante eclipses o tránsitos.',
-      'A escalas de ingeniería aún mayores, los científicos buscan megaestructuras espaciales como las Esferas de Dyson o enjambres de satélites solares gigantes. Una gran estructura artificial construida en órbita estelar bloquearía la luz de la estrella de forma asimétrica e irregular en la curva de luz, y al mismo tiempo emitiría un exceso de calor en el infrarrojo medio.',
-      'Por último, la búsqueda de inteligencia extraterrestre (SETI) rastrea emisiones de radio de banda estrecha o pulsos de láser óptico dirigidos. Estas señales de comunicación cruzando el espacio interestelar destacarían claramente contra el ruido de fondo natural del universo, revelando la presencia de transmisores tecnológicos.'
+    "id": "tecnofirmas-espaciales",
+    "title": "Tecnofirmas Espaciales",
+    "color": "#B388FF",
+    "btnImage": "/assets/exoplanetas/infographic_m4/btn_tecnofirmas-espaciales.jpg",
+    "image": "/assets/exoplanetas/infographic_m4/hero_tecnofirmas-espaciales.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_tecnofirmas-espaciales.webp",
+    "bannerCaption": "Tecnofirmas: contaminación industrial, megaestructuras o comunicaciones señalarían civilizaciones",
+    "content": [
+      "El dominio cientifico de las tecnofirmas (tecnosignatures) abarca la busqueda astronomica de cualquier manifestacion energetica, modificacion artificial de la composicion quimica ambiental o megaestructura orbital que evidencie el uso deliberado de tecnologia avanzada por parte de una civilizacion no humana. A diferencia de las biofirmas que buscan vestigios de vida microbiana o vegetal, las tecnofirmas exploran la firma material de inteligencias tecnologicas activas.",
+      "Entre las tecnofirmas atmosfericas mas diagnosticas sobresale la deteccion de moleculas gaseosas puramente sinteticas y recalcitrantes que no poseen rutas de sintesis geoquimica o fotoquimica en la naturaleza inorganica. Los clorofluorocarbonos (como el CFC-11 y CFC-12) y los perfluorocarbonos (CF4 y C2F6) representan compuestos manufacturados industrialmente por la humanidad para propelentes y refrigeracion que poseen vidas medias atmosfericas que superan los cincuenta mil anos de persistencia quimica.",
+      "Si una civilizacion extraterrestre avanzada hubiese industrializado su planeta o iniciado la terraformacion de un mundo helado vecino mediante la inyeccion intencionada de supergases de efecto invernadero para espesar su atmosfera, observatorios espectroscopicos infrarrojos de proxima generacion podrian detectar las estrechas y caracteristicas bandas de absorcion de estos gases fluorados antropogenicos en la ventana termica de ocho a catorce micrometros.",
+      "En el ambito de la macroingenieria estelar, los astronomos buscan anomalias fotometricas e infrarrojas consistentes con enjambres de Dyson o colectores orbitales gigantescos propuestos por Freeman Dyson en 1960. Una megaestructura artificial en orbita estelar interceptaria la radiacion optica visible de la estrella, reemitiendo la energia residual disipada en forma de un marcado exceso de flujo en el infrarrojo medio y lejano no explicable por discos de escombros de polvo circunstelar.",
+      "De manera complementaria, los programas modernos de busqueda de inteligencia extraterrestre (SETI, como la multimillonaria iniciativa Breakthrough Listen) utilizan los radiotelescopios mas sensibles del planeta para rastrear emisiones de radio artificiales de banda ultraestrecha (inferiores a cinco hertzios, caracteristica exclusiva de transmisores no naturales) o pulsos de laser optico ultracortos de potencia teravatio disenados para comunicaciones o propulsion fotonica."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los gases tetrafluorometano (CF4) y hexafluoroetano (C6F6) son gases de efecto invernadero industriales que duran hasta 50,000 años en la atmósfera sin descomponerse. Si una civilización alienígena intentara terraformar un planeta congelado, estos gases serían la tecnofirma perfecta visible por telescopios.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El concepto de la Esfera de Dyson fue propuesto por el físico Freeman Dyson en 1960. Sugirió que civilizaciones avanzadas de Tipo II en la escala de Kardashev construirían enjambres de colectores solares rodeando a su estrella para atrapar el cien por ciento de su emisión energética.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m4/banner_tecnofirmas-espaciales.webp',
-    bannerCaption: 'Tecnofirmas: contaminación industrial, megaestructuras o comunicaciones señalarían civilizaciones',
-    fact: 'El proyecto Breakthrough Listen es la iniciativa de búsqueda de tecnofirmas radioastronómicas más financiada de la historia, utilizando los radiotelescopios de Green Bank y Parkes para escanear millones de estrellas cercanas en busca de señales tecnológicas artificiales.'
+    "fact": "Las tecnofirmas abarcan evidencias remotas de ingenieria tecnologica extraterrestre, desde contaminantes industriales artificiales de larguisima duracion como clorofluorocarburos (CFCs) hasta enjambres de Dyson detectables por exceso infrarrojo medio o transmisiones opticas de laser pulsado coherente.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La escala de Kardashev clasifica las civilizaciones segun su consumo energetico: Tipo I aprovecha toda la energia disponible en su planeta (10^16 W), Tipo II domina la potencia total emitida por su estrella (10^26 W) mediante enjambres estelares, y Tipo III canaliza la energia a escala de toda su galaxia (10^36 W)."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La busqueda de iluminacion artificial nocturna en exoplanetas habitables en rotacion sincronizada alrededor de enanas rojas podria ser factible con el futuro Habitable Worlds Observatory: megalopolis alienigenas iluminadas por LED emitirian firmas espectrales de emision en frecuencias monocromaticas inusuales."
+      }
+    ]
   },
   {
-    id: 'falsos-positivos-biofirmas',
-    title: 'Falsos Positivos y Falsos Negativos',
-    color: '#FFD740',
-    btnImage: '/assets/exoplanetas/infographic_m4/btn_falsos-positivos-biofirmas.jpg',
-    image: '/assets/exoplanetas/infographic_m4/hero_falsos-positivos-biofirmas.jpg',
-    content: [
-      'En la búsqueda de vida en el universo, el mayor peligro para la ciencia es caer en el error de un falso positivo. Un falso positivo ocurre cuando los astrónomos detectan una molécula sospechosa como el oxígeno o el metano y concluyen apresuradamente que proviene de seres vivos, cuando en realidad fue producida por un proceso abiótico inerte como la geología o la química estelar.',
-      'Por ejemplo, el oxígeno molecular (O2) puede ser producido en enormes cantidades sin necesidad de vida mediante la fotólisis del agua. Si un exoplaneta sufre una radiación ultravioleta violenta de su estrella, los fotones de luz solar romperán las moléculas de H2O de la atmósfera superior. El gas hidrógeno ligero escapará rápidamente al espacio exterior mientras que el pesado oxígeno quedará atrapado en el aire.',
-      'De manera similar, el metano puede ser generado abióticamente mediante un proceso geológico llamado serpentinización. Cuando el agua de mar se filtra en las rocas del manto ricas en olivino bajo alta presión y temperatura, ocurren reacciones químicas inorgánicas que liberan grandes volúmenes de gas metano y nitrógeno sin intervención de organismos biológicos.',
-      'Para evitar falsos positivos, la astrobiología ha desarrollado el concepto de contexto ambiental integrativo. Una molécula aislada no prueba la existencia de vida; debe evaluarse en conjunto con la edad de la estrella, la radiación ultravioleta incidente, la presencia de agua, la densidad del planeta y la abundancia de gases como el dióxido de carbono y el nitrógeno.',
-      'Por otro lado, un falso negativo ocurre cuando un planeta alberga vida pero sus organismos producen sustancias químicas que no dejan una firma observable desde la distancia o cuyos gases son destruidos por la química atmosférica local. Comprender estos límites exige cautela experimental antes de anunciar la confirmación definitiva de vida extraterrestre.'
+    "id": "falsos-positivos-biofirmas",
+    "title": "Falsos Positivos y Falsos Negativos",
+    "color": "#FFD740",
+    "btnImage": "/assets/exoplanetas/infographic_m4/btn_falsos-positivos-biofirmas.jpg",
+    "image": "/assets/exoplanetas/infographic_m4/hero_falsos-positivos-biofirmas.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_falsos-positivos-biofirmas.webp",
+    "bannerCaption": "Falsos positivos: el oxígeno abiótico y los volcanes pueden imitar señales de vida",
+    "content": [
+      "En la prospeccion astrobiologica contemporanea, el mayor desafio epistemologico y metodologico radica en identificar y refutar rigurosamente los falsos positivos y falsos negativos de biofirmas. Un falso positivo se produce cuando un mecanismo astrofisico o geofisico completamente inorganico genera una acumulacion atmosferica masiva de un gas supuestamente diagnostico de vida (como el oxigeno o el metano), induciendo a conclusiones erroneas.",
+      "El ejemplo mas critico de falso positivo es la genesis abiotica de oxigeno molecular (O2). En planetas que orbitan estrellas con intensa emision de radiacion ultravioleta lejana (FUV) y deficiencia de hidrogeno o trampas frias ineficientes, la fotolisis masiva de moleculas de vapor de agua (H2O) en la estratosfera superior libera atomos de hidrogeno que escapan al espacio debido a su baja masa molecular, dejando tras de si una acumulacion residual de decenas de bares de oxigeno molecular libre sin presencia biologica.",
+      "De manera analoga, el metano puede sintetizarse abioticamente en enormes volumenes mediante el proceso geologico de serpentinizacion hidrotermal acoplada a la reaccion de Fischer-Tropsch: cuando minerales del manto primitivo ricos en olivino ferroso reaccionan con agua de mar a presiones elevadas y temperaturas de doscientos a cuatrocientos grados Celsius, se genera hidrogeno molecular que reduce el CO2 inorganico en gas metano anhidro.",
+      "Para blindar las observaciones ante falsos positivos, la comunidad astrobiologica internacional ha instaurado el principio de evaluacion del contexto ambiental holistico. Ninguna molecula puede considerarse biofirma en solitario: debe evaluarse la relacion isotopica C/O, la metalicidad estelar, la presencia de monoxido de carbono (CO, cuya presencia masiva descarta metanogenos biologicos que lo consumirian vorazmente) y la actividad eruptiva de la estrella anfitriona.",
+      "En paralelo, la NASA promulgo en 2021 la Escala CoLD (Confidence of Life Detection), un protocolo escalonado de siete niveles que demanda la confirmacion instrumental independiente de la senal, la caracterizacion rigurosa del entorno geoquimico circundante, el descarte exhaustivo de hipotesis abioticas alternativas y la validacion de hipotesis predictivas antes de autenticar cualquier hallazgo historico de vida fuera de la Tierra."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Durante los primeros dos mil millones de años de historia de la Tierra, nuestro planeta estuvo habitado por una biosfera microbiana inmensa pero su atmósfera casi no tenía oxígeno libre. Si un astrónomo alienígena hubiera observado la Tierra en esa época, habría obtenido un falso negativo si solo buscaba oxígeno.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La detección simultánea de monóxido de carbono (CO) sirve para descartar falsos positivos de metano biótico. Las bacterias metanogénicas consumen activamente monóxido de carbono; si hay abundantes cantidades de CO en el aire junto con metano, la fuente es casi seguro geológica inerte.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m4/banner_falsos-positivos-biofirmas.webp',
-    bannerCaption: 'Falsos positivos: el oxígeno abiótico y los volcanes pueden imitar señales de vida',
-    fact: 'La NASA estableció la Escala CoLD (Confidence of Life Detection), un marco riguroso de 7 niveles que exige verificar la señal, descartar contaminación, modelar falsos positivos y confirmar el contexto biológico antes de declarar el descubrimiento de vida extraterrestre.'
+    "fact": "Los falsos positivos de biofirmas (como la acumulacion masiva de oxigeno molecular por fotolisis de agua y escape de hidrogeno, o metano geologico por serpentinizacion hidrotermal) exigen aplicar la Escala CoLD de 7 niveles de la NASA para contrastar el contexto quimico antes de proclamar vida extraterrestre.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La deteccion de dioxigeno tetraatomico (O4, moleculas transitorias O2-O2 colisionales) en el espectro infrarrojo a 1.06 y 1.27 micrometros es un biomarcador de falso positivo: revela una atmosfera con presiones de oxigeno anormalmente gigantescas producidas por desecacion fotoquimica oceanica masiva abiotica."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Un falso negativo historico ocurrio en la propia Tierra: durante el eon Arqueano (hace tres mil millones de anos), la biosfera bacteriana marina era inmensa pero el oxigeno que liberaba era capturado inmediatamente por el hierro disuelto en los oceanos, manteniendo una atmosfera superficial con cero oxigeno aparente."
+      }
+    ]
   },
   {
-    id: 'busqueda-vida-futuro',
-    title: 'El Futuro de la Astrobiología',
-    color: '#FF9100',
-    btnImage: '/assets/exoplanetas/infographic_m4/btn_busqueda-vida-futuro.jpg',
-    image: '/assets/exoplanetas/infographic_m4/hero_busqueda-vida-futuro.jpg',
-    content: [
-      'La búsqueda de vida en el universo se prepara para una década de descubrimientos sin precedentes históricos. La combinación de observatorios espaciales súper potentes, telescopios gigantes terrestres y algoritmos de inteligencia artificial nos está acercando al momento en que responderemos si estamos solos en el cosmos.',
-      'El proyecto insignia de la NASA para la década de 2030 es el Habitable Worlds Observatory (HWO). Este observatorio espacial óptico e ultravioleta de seis metros de diámetro estará equipado con un coronógrafo de ultra alta precisión capaz de suprimir el resplandor estelar en un factor de diez mil millones, permitiendo fotografiar directamente a 25 planetas rocosos habitables.',
-      'Al fotografiar directamente a estos análogos terrestres como diminutos puntos de luz azulada (Direct Imaging), el HWO podrá analizar sus atmósferas mediante espectroscopía de reflectancia. Esto medirá directamente el color de las superficies planetarias, detectando la presencia de océanos de agua, cobertura vegetal mediante el "Borde Rojo de la Clorofila" y variaciones estacionales.',
-      'Paralelamente, misiones de interferometría espacial nula como el proyecto LIFE (Large Interferometer for Exoplanets) impulsado por la Agencia Espacial Europea planean combinar la luz de cuatro telescopios espaciales independientes volando en formación para obtener espectros infrarrojos térmicos directos de docenas de mundos terrestres.',
-      'Estamos a las puertas de una revolución filosófica y científica sin igual. En los próximos veinte años, la humanidad dispondrá de la tecnología física necesaria para leer los códigos de barras químicos de docenas de tierras alienígenas. El descubrimiento de la primera biofirma confirmada transformará para siempre nuestra visión de la vida y de nuestra propia existencia en el universo.'
+    "id": "busqueda-vida-futuro",
+    "title": "El Futuro de la Astrobiología",
+    "color": "#FF9100",
+    "btnImage": "/assets/exoplanetas/infographic_m4/btn_busqueda-vida-futuro.jpg",
+    "image": "/assets/exoplanetas/infographic_m4/hero_busqueda-vida-futuro.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_busqueda-vida-futuro.webp",
+    "bannerCaption": "La búsqueda de vida en el futuro: analizar cientos de atmósferas para responder si estamos solos",
+    "content": [
+      "La exploracion astrobiologica entra de lleno en una transicion paradigmatica donde la inferencia estadistica indirecta cedera el paso a la resolucion optica y espectroscopica directa de planetas rocosos templados. Durante las proximas dos decadas, una alianza sinergica entre colosales infraestructuras astronomicas terrestres e innovadores observatorios espaciales coronograficos abordara de forma definitiva la cuestion de la vida cosmica.",
+      "El proyecto insignia supremo planificado por la NASA para la decada de 2030 es el Habitable Worlds Observatory (HWO), un telescopio espacial optico, ultravioleta e infrarrojo cercano provisto de un espejo segmentado de seis metros. Su mision fundamental sera implementar coronografia de contraste extremo (10^-10), capaz de suprimir el deslumbramiento estelar en un factor de diez mil millones para fotografiar de forma directa la luz reflejada por al menos veinticinco análogos terrestres.",
+      "Esta capacidad de obtencion de imagen directa permitira aislar el punto de luz planetario respecto a su estrella anfitriona, abriendo la via a la espectroscopia de reflectancia de alta resolucion para medir directamente el espectro superficial del planeta. Esto hara posible cuantificar la fraccion de cobertura oceanica, la dinamica estacional de masas nubosas y verificar la presencia de pigmentos biologicos fotosinteticos mediante el Borde Rojo de la Clorofila en longitud de onda de 700 nm.",
+      "En el plano de las misiones espaciales europeas, el proyecto LIFE (Large Interferometer for Exoplanets) propone una constelacion de cuatro o cinco satelites volando en formacion milimetrica de precision en el punto L2, operando como un interferometro nulo en el infrarrojo medio (4 a 20 micrometros). Al anular destructivamente la luz estelar central mediante desfasaje de ondas opticas, LIFE recolectara directamente la emision termica de exoplanetas rocosos buscando CO2, H2O, CH4 y O3.",
+      "Complementariamente en tierra firme, telescopios de apertura extrema como el Extremely Large Telescope (ELT de 39 metros) de la ESO en Chile, equipados con instrumentos como ANDES y PCS respaldados por optica adaptativa de orden extremo, comenzaran a sondear las atmosferas de los exoplanetas habitables mas proximos a la Tierra (como Proxima Centauri b), culminando una busqueda cientifica y ontologica milenaria."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El "Borde Rojo de la Clorofila" (Vegetation Red Edge) es una firma espectral característica de las plantas terrestres. Las plantas absorben la luz azul y roja para la fotosíntesis pero reflejan intensamente la luz infrarroja cercana para evitar sobrecalentarse, creando un salto brusco de reflectancia a 700 nanómetros.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La interferometría nula destruye por interferencia destructiva la luz brillante de la estrella central al desfasar las ondas de luz medio ciclo en los telescopios combinados. Esto permite que la débil luz infrarroja del exoplaneta emerja de la oscuridad sin ser cegada por el resplandor estelar.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m4/banner_busqueda-vida-futuro.webp',
-    bannerCaption: 'La búsqueda de vida en el futuro: analizar cientos de atmósferas para responder si estamos solos',
-    fact: 'El astrónomo Carl Sagan demostró la técnica de detección de biofirmas en 1993 utilizando la sonda Galileo durante su sobrevuelo cercano a la Tierra. La sonda detectó abundancia de oxígeno, ozono, metano y el borde rojo vegetativo, confirmando científicamente que la Tierra está habitada.'
+    "fact": "La busqueda de vida extraterrestre en las proximas dos decadas se cimentara en la obtencion de imagenes directas mediante el Habitable Worlds Observatory (HWO) de la NASA, la interferometria nula espacial del proyecto LIFE de la ESA y el telescopio gigante ELT de 39 metros en el desierto de Atacama.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En 1993, el celebre astronomo Carl Sagan utilizo los instrumentos de la sonda interplanetaria Galileo durante su sobrevuelo de asistencia gravitatoria de la Tierra como experimento de control ciego, demostrando que la combinacion de oxigeno molecular masivo, metano fuera de equilibrio y el borde rojo vegetal acreditaba que nuestro planeta alberga vida."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El Habitable Worlds Observatory utilizara un sistema optico de control de frente de onda activo con miles de micro-actuadores piezoelasticos capaces de corregir desviaciones en la superficie del espejo del orden de picometros (billonésimas de metro), la precision mecanica mas extrema alcanzada en la historia espacial."
+      }
+    ]
   }
 ];
 

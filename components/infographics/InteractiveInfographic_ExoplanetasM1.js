@@ -129,7 +129,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m1/banner_metodo-del-transito.webp',
     bannerCaption: 'El método del tránsito: medir el oscurecimiento de la estrella cuando un planeta la cruza',
-    fact: 'El primer tránsito de un exoplaneta observado en directo ocurrió en 1999 sobre la estrella HD 209458. Los astrónomos midieron una caída de brillo del 1.7% durante tres horas consecutivas, confirmando que el planeta HD 209458 b era un gigante gaseoso con un radio 1.35 veces mayor que el de Júpiter.'
+    fact: 'El primer tránsito de un exoplaneta observado en directo ocurrió en 1999 sobre la estrella HD 209458; los astrónomos midieron una caída fotométrica de brillo del 1.7% durante tres horas consecutivas, confirmando que HD 209458 b era un gigante gaseoso hinchado con un radio 1.35 veces mayor que el de Júpiter y validando el método del tránsito como técnica de detección.'
   },
   {
     id: 'velocidad-radial-doppler',
@@ -150,7 +150,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m1/banner_velocidad-radial-doppler.webp',
     bannerCaption: 'Velocidad radial y Doppler: detectar el bamboleo de la estrella causado por la gravedad del planeta',
-    fact: 'El espectrógrafo HARPS instalado en el observatorio de La Silla en Chile puede medir variaciones en la velocidad de una estrella de tan solo 30 centímetros por segundo, lo que equivale a la velocidad a la que camina una tortuga terrestre de tamaño mediano.'
+    fact: 'El espectrógrafo de alta resolución HARPS, instalado en el telescopio de 3.6 metros de La Silla en Chile, alcanza una precisión instrumental capaz de medir variaciones en la velocidad radial estelar de tan solo treinta centímetros por segundo, una sensibilidad extraordinaria comparable a la velocidad con la que camina una tortuga terrestre de tamaño mediano.'
   },
   {
     id: 'curva-de-luz',
@@ -167,11 +167,11 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Analizar la curva de luz cuando el planeta pasa por detrás de su estrella (evento llamado eclipse secundario) permite medir la temperatura de la cara diurna del exoplaneta. Al quedar oculto el planeta, la cantidad total de luz infrarroja disminuye, revelando cuánto calor emitía el planeta por sí mismo.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Las curvas de luz ultrasensibles obtenidas por telescopios modernos pueden detectar anillos planetarios y sistemas de lunas extrasolares (exolunas). Un planeta con anillos produce una caída de luz asimétrica y escalonada antes de que el cuerpo sólido principal ingrese al disco estelar.' }
+      { label: 'Dato Científico', icon: 'atom', text: 'Las curvas de luz ultrasensibles obtenidas por telescopios espaciales modernos como Kepler y TESS pueden detectar anillos planetarios masivos y exolunas en tránsito: un planeta con un sistema de anillos produce una caída de flujo luminoso asimétrica y escalonada característica mucho antes de que el limbo del disco planetario sólido cruce el borde de la fotosfera estelar.' }
     ],
     bannerImage: '/assets/exoplanetas/infographic_m1/banner_curva-de-luz.webp',
     bannerCaption: 'Análisis de curvas de luz: la forma del oscurecimiento revela el tamaño y periodo orbital del planeta',
-    fact: 'Gracias al análisis avanzado de curvas de luz con el telescopio Kepler, en 2015 se descubrió la estrella de Tabby (KIC 8462852), la cual mostraba caídas de brillo irregulares de hasta el 22%, provocando intensos debates científicos sobre enjambres de cometas o polvo circunestelar.'
+    fact: 'Gracias al análisis temporal de curvas de luz del telescopio espacial Kepler, en 2015 se descubrió la estrella KIC 8462852 (Estrella de Tabby), la cual mostraba caídas asimétricas y aperiódicas de brillo de hasta el 22%, provocando intensos debates astrofísicos que finalmente se explicaron por la fragmentación de enjambres de cometas y polvo circunestelar.'
   },
   {
     id: 'espectroscopia-doppler',
@@ -188,11 +188,11 @@ const INFOGRAPHIC_NODES = [
     ],
     expandables: [
       { label: '¿Sabías que...?', icon: 'clock', text: 'Los primeros espectrógrafos astronómicos del siglo XIX apenas podían medir desplazamientos correspondientes a decenas de kilómetros por segundo. En la actualidad, los espectrógrafos de ultra alta precisión han mejorado esa capacidad en un factor de cien mil, midiendo cambios en la velocidad de la luz equivalentes a la velocidad de gateo de un bebé.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Un peine de frecuencias láser emite miles de líneas espectrales equiespaciadas con una precisión de reloj atómico. Sirve como la regla de medir más exacta del universo, garantizando que el espectrógrafo no sufra desviaciones físicas ni térmicas durante décadas de observaciones continuas.' }
+      { label: 'Dato Científico', icon: 'atom', text: 'Un peine de frecuencias ópticas láser emite cientos de miles de líneas espectrales de referencia equiespaciadas con la precisión extrema de un reloj atómico de cesio; este patrón actúa como la regla de medir métrica más exacta de la astrofísica moderna, garantizando que el espectrógrafo no sufra derivas térmicas, mecánicas ni instrumentales durante décadas de observación.' }
     ],
     bannerImage: '/assets/exoplanetas/infographic_m1/banner_espectroscopia-doppler.webp',
     bannerCaption: 'Espectroscopía de precisión: medir el movimiento de la estrella con exactitud de 1 metro por segundo',
-    fact: 'El instrumento ESPRESSO en el Observatorio Paranal alcanzó una precisión instrumental sin precedentes inferior a 10 centímetros por segundo en sus pruebas de campo, abriendo la era de la detección directa de análogos terrestres por velocidad radial.'
+    fact: 'El instrumento ESPRESSO, instalado en el Very Large Telescope (VLT) del Observatorio Paranal en Chile, alcanzó una estabilidad instrumental sin precedentes inferior a diez centímetros por segundo en pruebas de calibración al vacío, inaugurando la era de la detección directa de planetas rocosos de masa terrestre en la zona habitable de estrellas similares al Sol.'
   },
   {
     id: 'limitaciones-y-sesgos',
@@ -213,7 +213,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m1/banner_limitaciones-y-sesgos.webp',
     bannerCaption: 'Limitaciones y sesgos: los métodos actuales favorecen detectar planetas grandes y cercanos a su estrella',
-    fact: 'La probabilidad geométrica de que un planeta idéntico a la Tierra orbite a 1 Unidad Astronómica de una estrella idéntica al Sol y produzca un tránsito alineado con nuestro punto de vista es de apenas un 0.47%, o una posibilidad entre doscientas doce.'
+    fact: 'La probabilidad geométrica a priori de que un planeta idéntico a la Tierra situado a una Unidad Astronómica de una estrella de tipo solar presente una alineación orbital perfecta con nuestra línea visual terrestre es de apenas el 0.47% (una posibilidad entre doscientas doce), lo que obliga a los observatorios espaciales a monitorizar cientos de miles de estrellas simultáneamente.'
   },
   {
     id: 'complementariedad-metodos',
@@ -234,7 +234,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m1/banner_complementariedad-metodos.webp',
     bannerCaption: 'Combinación de métodos: tránsito + velocidad radial = radio + masa = densidad y composición',
-    fact: 'El estudio combinado de densidad demonstrated que el exoplaneta WASP-17b es uno de los planetas más "esponjosos" e hinchados jamás descubiertos: tiene la mitad de la masa de Júpiter pero casi el doble de su tamaño, dándole una densidad similar a la del corcho de una botella.'
+    fact: 'El estudio combinado de tránsito y velocidad radial demostró que el exoplaneta WASP-17b es uno de los mundos más hinchados y menos densos jamás descubiertos: con la mitad de la masa de Júpiter pero casi el doble de su volumen radial, su densidad media de apenas 0.13 gramos por centímetro cúbico es comparable a la ligereza del corcho o la espuma de poliestireno.'
   }
 ];
 

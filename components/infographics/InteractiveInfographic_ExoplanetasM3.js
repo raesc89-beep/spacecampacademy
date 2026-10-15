@@ -97,151 +97,207 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'mision-kepler',
-    title: 'El Telescopio Kepler',
-    color: '#FFD740',
-    btnImage: '/assets/exoplanetas/infographic_m3/btn_mision-kepler.jpg',
-    image: '/assets/exoplanetas/infographic_m3/hero_mision-kepler.jpg',
-    content: [
-      'Lanzado por la NASA en el año 2009, el telescopio espacial Kepler representa el instrumento más revolucionario en la historia de la búsqueda de nuevos mundos. Antes de Kepler, la humanidad apenas conocía unos pocos cientos de exoplanetas, casi todos gigantes de gas hirviendo. Kepler fue diseñado con un objetivo ambicioso: determinar cuántos planetas parecidos a la Tierra existen en nuestra galaxia Vía Láctea.',
-      'Para lograr esta hazaña histórica, Kepler utilizó una cámara fotométrica de 95 megapíxeles que apuntaba continuamente a una sola región fija del cielo ubicada entre las constelaciones del Cisne y la Lira. Durante cuatro años ininterrumpidos, el telescopio fotografió simultáneamente a más de 150,000 estrellas cada 30 minutos, registrando cualquier parpadeo diminuto provocado por la sombra de un planeta en tránsito.',
-      'La misión Kepler demostró experimentalmente que los planetas rocosos de tamaño moderado son sustancialmente más abundantes en el universo que los gigantes gaseosos. Descubrió más de 2,600 exoplanetas confirmados y miles de candidatos adicionales, incluyendo los primeros mundos pequeños que orbitan dentro de las zonas habitables de estrellas similares al Sol, como Kepler-186f y Kepler-452b.',
-      'Incluso cuando dos de sus ruedas de reacción de giroscopio fallaron en 2013 impidiendo mantener la estabilidad original, los ingenieros espaciales reinventaron la misión bajo el nombre K2. Utilizaron la presión de la radiación solar para estabilizar el telescopio, permitiéndole escanear nuevas regiones del plano eclíptico durante cinco años adicionales antes de agotar su combustible de maniobra en 2018.',
-      'El legado científico del telescopio espacial Kepler cambió para siempre nuestra perspectiva del cosmos. Gracias a sus datos estadísticos, hoy sabemos con certeza matemática que en la galaxia existen más planetas que estrellas. Kepler desmanteló la idea de que la Tierra era un caso aislado en el universo, regalándonos el primer censo planetario de la historia humana.'
+    "id": "mision-kepler",
+    "title": "El Telescopio Kepler",
+    "color": "#FFD740",
+    "btnImage": "/assets/exoplanetas/infographic_m3/btn_mision-kepler.jpg",
+    "image": "/assets/exoplanetas/infographic_m3/hero_mision-kepler.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_mision-kepler.webp",
+    "bannerCaption": "Misión Kepler: 9 años mirando el cielo y más de 2,600 exoplanetas confirmados",
+    "content": [
+      "Lanzado por la NASA en marzo de 2009 hacia una orbita heliocentrica de seguimiento terrestre, el telescopio espacial Kepler transformo de raiz la astronomia observacional al convertirse en el primer instrumento disenado especificamente para determinar la frecuencia estadistica de planetas terrestres en nuestra galaxia. Antes de su despliegue orbital, la humanidad apenas conocia unos pocos cientos de mundos extrasolares masivos; Kepler demostro con rigor empírico que los planetas rocosos son la norma cosmica y no una excepcion biologica.",
+      "Para cumplir este colosal reto tecnologico, Kepler monto un fotometro Schmidt de 0.95 metros de apertura con un espejo primario de 1.4 metros y un plano focal gigantesco integrado por cuarenta y dos sensores CCD cientificos que totalizaban noventa y cinco megapixeles. El telescopio apunto de forma ininterrumpida durante cuatro anos hacia un campo visual fijo de ciento quince grados cuadrados ubicado entre las constelaciones de Cygnus y Lyra, monitorizando simultaneamente el brillo de mas de ciento cincuenta mil estrellas cada treinta minutos.",
+      "La precision fotometrica de Kepler fue capaz de detectar variaciones infinitesimales en el flujo de luz estelar de apenas veinte partes por millon (0.002%), la sensibilidad exacta requerida para registrar el paso de un planeta del tamano de la Tierra frente a una estrella analoga al Sol. Entre sus descubrimientos mas emblematicos destacan Kepler-186f, el primer mundo de radio casi identico al terrestre validado en la zona habitable de una enana M, y Kepler-452b, un candidato rocoso orbitando una estrella de tipo solar en trescientos ochenta y cinco dias.",
+      "En 2013, el fallo mecanico sucesivo de dos de sus cuatro ruedas de reaccion inerciales impidio mantener el apuntamiento tridimensional estable original; sin embargo, el equipo de ingenieros de la NASA rediseno brillantemente el control de actitud en la mision extendida K2. Utilizando la presion de radiacion de los fotones solares sobre los paneles fotovoltaicos como un timon equilibrador pasivo, K2 opero durante cinco anos adicionales explorando nuevos campos en el plano de la ecliptica.",
+      "Al agotarse definitivamente su combustible de hidrazina en octubre de 2018, Kepler habia confirmado dos mil seiscientos sesenta y dos exoplanetas validados y catalogado miles de candidatos adicionales que continúan siendo confirmados por telescopios terrestres. Su censo demografico revolucionario demostro que existen estadisticamente mas planetas que estrellas en la Via Lactea, confirmando que practicamente cada estrella del firmamento nocturno alberga su propio sistema de mundos en orbita."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Kepler estaba equipado con un espejo primario de 1.4 metros de diámetro y la cámara digital más grande jamás enviada al espacio en su época, compuesta por una matriz de 42 sensores CCD de altísima sensibilidad calibrados para detectar variaciones de luz del cero punto cero dos por ciento.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El exoplaneta Kepler-186f fue el primer planeta confirmado de tamaño casi idéntico a la Tierra (1.17 radios terrestres) que orbitaba en la zona habitable de su estrella. Su descubrimiento en 2014 probó que existen verdaderos análogos terrestres rocosos capaces de sostener agua líquida.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m3/banner_mision-kepler.webp',
-    bannerCaption: 'Misión Kepler: 9 años mirando el cielo y más de 2,600 exoplanetas confirmados',
-    fact: 'Durante sus nueve años y medio de operaciones en órbita heliocéntrica, el telescopio Kepler observó más de 530,000 estrellas y registró más de 678 gigabytes de datos astronómicos puros que continúan siendo analizados hoy por inteligencia artificial.'
+    "fact": "Durante sus nueve anos y medio de operaciones en el espacio profundo, el telescopio Kepler monitorizo mas de medio millon de estrellas y confirmo mas de 2,600 exoplanetas; sus datos estadisticos demostraron que los planetas pequenos de tipo rocoso son sustancialmente mas numerosos en la galaxia que los gigantes gaseosos.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El fotometro de Kepler operaba con una relacion senal-ruido tan rigurosa que podia detectar la disminucion de brillo provocada por un mosquito pasando a traves del haz de un faro de automovil a cientos de kilometros de distancia en la oscuridad, alcanzando una cota fotometrica diferencial de diez millonésimas de magnitud."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La mision K2 demostro el ingenio de la astrodinamica moderna: al orientar el telescopio de modo que la presion ejercida por el viento solar equilibrara simetricamente los pares de torsion de la nave, los ingenieros lograron una estabilidad sub-arcosegundo sin utilizar ruedas giroscopicas activas durante anos."
+      }
+    ]
   },
   {
-    id: 'fotometria-espacial',
-    title: 'Fotometría de Alta Precisión',
-    color: '#64FFDA',
-    btnImage: '/assets/exoplanetas/infographic_m3/btn_fotometria-espacial.jpg',
-    image: '/assets/exoplanetas/infographic_m3/hero_fotometria-espacial.jpg',
-    content: [
-      'La fotometría de precisión es la ciencia técnica de medir la cantidad exacta de luz que emite un objeto celeste en función del tiempo. Cuando observamos las estrellas desde telescopios instalados en la superficie de la Tierra, nos enfrentamos a un obstáculo permanente: la atmósfera terrestre. Las corrientes de aire caliente y frío provocan la turbulencia atmosférica que hace que las estrellas parpadeen de forma caótica en la noche.',
-      'Ese parpadeo atmosférico natural oculta por completo las diminutas sombras de los exoplanetas pequeños. Para medir una caída de brillo del cero punto cero uno por ciento provocada por una Supertierra, la ciencia tuvo que colocar telescopios por encima de la atmósfera de la Tierra. En el vacío impoluto del espacio exterior, las estrellas brillan con una estabilidad perfecta, permitiendo una fotometría ultrasensible.',
-      'Los fotómetros espaciales utilizan sensores CCD y CMOS diseñados con ruido térmico extremadamente bajo. El instrumento mide continuamente cuántos fotones de luz estelar impactan contra cada píxel durante un intervalo de integración fijo. Al sumar miles de lecturas individuales, las computadoras generan curvas de luz de una limpieza matemática impresionante donde el tránsito planetario destaca de forma innegable.',
-      'Además, la fotometría de ultra precisión requiere corregir los artefactos provocados por el propio detector espacial. Pequeños movimientos del telescopio, cambios de temperatura en los paneles solares y rayos cósmicos impactando contra la cámara deben ser filtrados mediante complejos algoritmos estadísticos antes de confirmar una señal planetaria.',
-      'Gracias a la fotometría espacial moderna, los astrónomos no solo descubren tránsitos principales, sino que también pueden medir la luz reflejada por las fases del planeta (equivalente a las fases de la Luna) y los efectos de deformación elipsoidal que sufre la estrella por el tirón gravitacional del exoplaneta en su órbita.'
+    "id": "fotometria-espacial",
+    "title": "Fotometría de Alta Precisión",
+    "color": "#64FFDA",
+    "btnImage": "/assets/exoplanetas/infographic_m3/btn_fotometria-espacial.jpg",
+    "image": "/assets/exoplanetas/infographic_m3/hero_fotometria-espacial.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_fotometria-espacial.webp",
+    "bannerCaption": "Fotometría espacial: medir el brillo estelar con precisión de partes por millón desde el espacio",
+    "content": [
+      "La fotometria diferencial de ultra alta precision constituye el pilar fundamental que posibilita la deteccion de mundos extrasolares mediante el metodo del transito. Desde la superficie de la Tierra, las turbulencias termicas y los gradientes de densidad en las capas troposfericas causan la centelleo o parpadeo atmosferico de las estrellas; estas fluctuaciones opticas introducen un ruido estocastico de varios milimagnitudes que enmascara por completo las diminutas senales de transito generadas por planetas terrestres.",
+      "Al situar los detectores fotometricos en plataformas orbitales fuera de la envoltura gaseosa de la Tierra, las estrellas brillan con una constancia fotonica impoluta que solo esta limitada por el ruido de disparo cuantico de Poisson intrinseco de los propios fotones y las pulsaciones estelares naturales. En el vacio espacial, los sensores opticos pueden cuantificar caidas en la emision de luz de apenas diez a cincuenta partes por millon con una estabilidad temporal que abarca meses de observacion continua.",
+      "Los instrumentos fotometricos modernos emplean matrices de detectores CCD y sensores CMOS cientificos refrigerados pasiva o activamente a temperaturas criogenicas para suprimir la corriente oscura y el ruido de lectura electronico. La medicion consiste en contabilizar de forma continua el numero de fotoelectrones generados en pozos de potencial de silicio durante intervalos de exposicion precisos, generando curvas de luz estelares que registran la evolucion temporal del flujo con precision milimetrica.",
+      "Para extraer la senal genuina del transito planetario de estas series temporales complejas, los astrofisicos aplican algoritmos de reduccion y filtrado matematico como el analisis de componentes principales y modelos de procesos gaussianos. Estas tecnicas corrigen derivas termicas instrumentales, variaciones de apuntamiento del chasis espacial (jitter de apuntamiento) y senales astrofisicas de fondo como las manchas solares y las llamaradas cromosfericas estelares activas.",
+      "Asimismo, la fotometria espacial de precision ha permitido el nacimiento de la astrosismologia moderna: al medir las oscilaciones armonicas de brillo causadas por ondas acusticas que reverberan en el interior estelar, los cientificos pueden determinar el radio, la masa y la edad evolutiva de la estrella hospedera con precisiones del uno al dos por ciento, parametros indispensables para cuantificar con exactitud el tamano real del planeta en transito."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La precisión fotométrica del telescopio espacial Kepler era tan asombrosa que equivalía a detectar el parpadeo de la mosca pasando por delante del faro de un automóvil a una distancia de varios kilómetros de separación en la oscuridad total.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La fotometría espacial también impulsó el desarrollo de la astroseismología. Al medir las micro-pulsaciones de luz causadas por ondas sonoras que rebotan en el interior de una estrella, los científicos pueden deducir la masa, el radio y la edad exacta de la estrella hospedera con precisión sin precedentes.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m3/banner_fotometria-espacial.webp',
-    bannerCaption: 'Fotometría espacial: medir el brillo estelar con precisión de partes por millón desde el espacio',
-    fact: 'El satélite fotométrico CoRoT, lanzado por la Agencia Espacial Europea y Francia en 2006, fue el pionero absoluto en fotometría espacial de tránsitos, descubriendo CoRoT-7b, el primer exoplaneta rocoso confirmado de la historia con densidad medida.'
+    "fact": "La fotometria espacial elimina el parpadeo atmosferico terrestre y alcanza sensibilidades de partes por millon; esto permite no solo registrar transitos de mundos de radio terrestre, sino tambien medir las oscilaciones sismicas internas de las estrellas para datar con extrema precision su edad y masa fisica.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La mision pionera franco-europea CoRoT (Convection, Rotation and Planetary Transits), lanzada a orbita polar en 2006, fue el primer observatorio espacial en demostrar la viabilidad tecnica de la fotometria de alta precision para cazar exoplanetas, descubriendo CoRoT-7b, el primer mundo rocoso confirmado de la historia con densidad calculada."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Un detector fotometrico en el espacio cuenta paquetes de fotones con tal sensibilidad que si una estrella sufre una mancha solar microscopica que cubra el 0.01% de su disco, la camara registra inmediatamente la anomalia en la curva de luz permitiendo cartografiar el clima magnetico de estrellas distantes."
+      }
+    ]
   },
   {
-    id: 'mision-tess',
-    title: 'Misión TESS de la NASA',
-    color: '#00E5FF',
-    btnImage: '/assets/exoplanetas/infographic_m3/btn_mision-tess.jpg',
-    image: '/assets/exoplanetas/infographic_m3/hero_mision-tess.jpg',
-    content: [
-      'Lanzado en el año 2018 como sucesor directo de la misión Kepler, el Satélite de Sondeo de Exoplanetas en Tránsito (TESS) adopta una estrategia de observación completamente diferente. Mientras que Kepler observó una sola parche pequeño y distante del cielo durante años, TESS está diseñado para realizar un escaneo fotométrico del ochenta y cinco por ciento de toda la esfera celeste.',
-      'La misión principal de TESS consiste en encontrar exoplanetas pequeños que orbitan alrededor de las estrellas más brillantes y cercanas a nuestro Sistema Solar. Como estas estrellas objetivo están situadas a solo decenas de años luz de la Tierra, sus planetas descubiertos son perfectos para ser estudiados posteriormente en detalle por grandes observatorios terrestres y por el telescopio James Webb.',
-      'TESS utiliza un conjunto de cuatro cámaras ópticas gran angular equipadas con lentes de alta definición de 16.8 megapíxeles cada una. Cada mes de observación, TESS escanea una franja vertical del cielo llamada sector de observación que mide 24 por 96 grados. Tras permanecer 27 días observando un sector, el satélite gira para escanear el siguiente sector contiguo.',
-      'Para transmitir su volumen colosal de datos fotométricos hacia la Tierra sin gastar combustible excesivo, TESS orbita nuestro planeta en una órbita elíptica altamente estable en resonancia 2:1 con la Luna. Cada 13.7 días, cuando TESS pasa por el punto más cercano a la Tierra (perigeo), descarga gigabytes de imágenes a las antenas de la Red del Espacio Profundo de la NASA.',
-      'Hasta la fecha, la misión TESS ha identificado más de 7,000 candidatos exoplanetarios y ha confirmado cientos de nuevos mundos. Entre sus hallazgos más destacados figura el sistema TOI-700, que alberga un exoplaneta de tamaño terrestre llamado TOI-700 d orbitando placenteramente en la zona habitable de su estrella enana roja.'
+    "id": "mision-tess",
+    "title": "Misión TESS de la NASA",
+    "color": "#00E5FF",
+    "btnImage": "/assets/exoplanetas/infographic_m3/btn_mision-tess.jpg",
+    "image": "/assets/exoplanetas/infographic_m3/hero_mision-tess.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_mision-tess.webp",
+    "bannerCaption": "Misión TESS: cubriendo el 85% del cielo para encontrar planetas alrededor de estrellas cercanas",
+    "content": [
+      "Puesto en orbita en abril de 2018 como sucesor tecnologico de la mision Kepler, el Satelite de Sondeo de Exoplanetas en Transito (TESS, Transiting Exoplanet Survey Satellite) de la NASA ejecuto un cambio estrategico radical en la exploracion espacial. Mientras que Kepler concentro su mirada en un cono profundo pero estrecho del cielo lejano, TESS fue disenado como un explorador omnidireccional concebido para cartografiar el ochenta y cinco por ciento de la boveda celeste visible.",
+      "El objetivo prioritario de TESS es localizar exoplanetas orbitando las estrellas mas brillantes, templadas y proximas a nuestro Sistema Solar (situadas habitualmente a distancias de entre treinta y trescientos anos luz). Al orbitar estrellas comparativamente cercanas y luminosas, estos mundos recien descubiertos se convierten en los candidatos perfectos para que los grandes observatorios terrestres y el James Webb puedan analizar con exito sus masas y atmosferas.",
+      "Para llevar a cabo su sondeo global sistematico, TESS esta equipado con cuatro camaras opticas gran angular identicas construidas por el MIT, cada una provista de lentes de siete elementos con apertura de diez centimetros y matrices de dieciseis megapixeles de bajo ruido. En conjunto, las cuatro camaras abarcan una franja de observacion vertical continua de veinticuatro por noventa y seis grados de extension, monitorizando un sector celeste fijo durante veintisiete dias seguidos antes de reorientarse al siguiente.",
+      "La arquitectura de navegacion espacial de TESS es una proeza de la mecanica celeste contemporanea: opera en una orbita de alta excentricidad denominada orbita de resonancia lunar P/2 (con un periodo orbital exacto de 13.7 dias). Esta trayectoria eliptica sincronizada gravitatoriamente con la Luna proporciona una estabilidad pasiva libre de friccion atmosferica y perturbaciones de radiacion termica, evitando el uso continuado de propelente quimico a bordo.",
+      "Hasta el presente, TESS ha catalogado mas de siete mil Objetos de Interes (TOIs) y ha certificado cientos de planetas plenamente confirmados, abarcando desde calientes enanos de gas hasta fascinantes sistemas multiplanetarios rocosos en zonas templadas como TOI-700 d y TOI-715 b; asimismo, sus imagenes de cuadro completo capturadas con cadencias ultrarrapidas proveen un archivo cientifico invaluable para la investigacion de supernovas y asteroides."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El acrónimo TOI que utiliza TESS significa "TESS Object of Interest" (Objeto de Interés de TESS). Cada vez que los algoritmos de TESS detectan un parpadeo de tránsito prometedor en una estrella cercana, la asignan como TOI para que la comunidad astronómica mundial inicie observaciones de seguimiento.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La órbita de TESS es única en la ingeniería aeroespacial. Se llama órbita de resonancia con la Luna P/2 y no requiere casi ningún impulso de combustible para mantener la estabilidad a largo plazo, garantizando que el satélite funcione operativamente durante décadas sin desviarse de su curso.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m3/banner_mision-tess.webp',
-    bannerCaption: 'Misión TESS: cubriendo el 85% del cielo para encontrar planetas alrededor de estrellas cercanas',
-    fact: 'TESS observa simultáneamente más de 200,000 estrellas seleccionadas prioritariamente con cadencia rápida de dos minutos, además de capturar imágenes de cuadro completo de todo el sector cada 200 segundos para la investigación astrofísica abierta.'
+    "fact": "TESS monitoriza el 85% del cielo nocturno mediante cuatro camaras gran angular montadas en una innovadora orbita de resonancia lunar P/2 de 13.7 dias; su mision localiza exoplanetas en estrellas brillantes cercanas a la Tierra, proporcionando los objetivos estelares prioritarios para la espectroscopia del James Webb.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La orbita P/2 de TESS alcanza un apogeo a casi cuatrocientos mil kilometros de distancia y un perigeo a cien mil kilometros; durante el paso por el perigeo, la antena de alta ganancia transmite a tierra cientos de gigabits de datos fotometricos brutos en una ventana de enlace de apenas dieciseis horas."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las camaras de TESS observan de forma ininterrumpida mas de doscientas mil estrellas brillantes preseleccionadas con una cadencia fotometrica ultrarrapida de dos minutos y veinte segundos, permitiendo a los astrofisicos registrar con extraordinaria definicion temporal la curva de entrada y salida de transitos planetarios de apenas unos minutos de duracion."
+      }
+    ]
   },
   {
-    id: 'telescopio-jwst',
-    title: 'Telescopio Espacial JWST',
-    color: '#FF9100',
-    btnImage: '/assets/exoplanetas/infographic_m3/btn_telescopio-jwst.jpg',
-    image: '/assets/exoplanetas/infographic_m3/hero_telescopio-jwst.jpg',
-    content: [
-      'Lanzado el 25 de diciembre de 2021, el Telescopio Espacial James Webb (JWST) representa la cumbre de la ingeniería científica moderna. A diferencia de Kepler y TESS, que fueron diseñados principalmente para descubrir exoplanetas mediante fotometría visible, el JWST fue construido para caracterizar las atmósferas y superficies de exoplanetas mediante espectroscopía infrarroja de alta resolución.',
-      'El JWST cuenta con un espejo primario gigantesco de 6.5 metros de diámetro, compuesto por 18 segmentos hexagonales de berilio chapados en una capa microscópica de oro puro. El oro es el mejor reflector natural para la luz infrarroja. Para proteger sus instrumentos ultrasensibles del calor abrasador del Sol y la Tierra, el telescopio utiliza un parasol de cinco capas de Kapton del tamaño de una cancha de tenis.',
-      'Ubicado en el punto de Lagrange L2 a 1.5 millones de kilómetros de la Tierra, el JWST opera a temperaturas criogénicas heladas de casi 230 grados Celsius bajo cero. Esta congelación instrumental es indispensable porque los propios objetos calientes emiten luz infrarroja. Si el telescopio se calentara, su propia emisión cegaría los detectores infrarrojos impidiendo ver los exoplanetas.',
-      'Los instrumentos científicos del JWST, como NIRSpec, MIRI y NIRISS, permiten desglosar la luz de las atmósferas exoplanetarias en miles de componentes espectrales infrarrojos. En esta banda de longitud de onda se encuentran las huellas dactilares moleculares más importantes de los gases biológicos e industriales, como el vapor de agua, el dióxido de carbono, el metano y el dióxido de azufre.',
-      'En sus primeros años de operaciones científicas, el JWST ya ha logrado hitos históricos: capturó la primera prueba irrefutable de dióxido de carbono en la atmósfera del exoplaneta WASP-39b y midió la temperatura térmica directa de la cara diurna de los planetas rocosos del famoso sistema TRAPPIST-1.'
+    "id": "telescopio-jwst",
+    "title": "Telescopio Espacial JWST",
+    "color": "#FF9100",
+    "btnImage": "/assets/exoplanetas/infographic_m3/btn_telescopio-jwst.jpg",
+    "image": "/assets/exoplanetas/infographic_m3/hero_telescopio-jwst.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_telescopio-jwst.webp",
+    "bannerCaption": "JWST: el espejo dorado de 6.5m que analiza atmósferas de exoplanetas a luz infrarroja",
+    "content": [
+      "Puesto en orbita el 25 de diciembre de 2021 mediante un lanzador Ariane 5, el Telescopio Espacial James Webb (JWST, fruto de la cooperacion entre NASA, ESA y CSA) marco el inicio de una revolucion cientifica sin parangon en la caracterizacion directa de exoplanetas. Si Kepler y TESS consiguieron censar y cuantificar la existencia geometrica de mundos distantes, el JWST fue disenado para descifrar de que estan compuestas quimicamente sus atmosferas y superficies.",
+      "El componente optico principal del observatorio es un colosal espejo segmentado de seis metros y medio de diametro efectivo, integrado por dieciocho paneles hexagonales fabricados en berilio ultraligero y recubiertos por una pelicula de vapor de oro puro de cien nanometros de espesor. El oro exhibe una reflectividad optica superior al noventa y ocho por ciento en el espectro infrarrojo cercano y medio, la region electromagnetica donde se localizan las bandas de absorcion molecular diagnosticas de volatiles planetarios.",
+      "Ubicado en el punto de libracion gravitatoria Lagrange L2, a un millon y medio de kilometros de la Tierra en direccion opuesta al Sol, el telescopio opera blindado por un descomunal parasol de cinco laminas de Kapton del tamano de una cancha de tenis. Esta pantalla aisla los instrumentos opticos del flujo termico del Sol, la Tierra y la Luna, permitiendo que los detectores NIRSpec, MIRI y NIRCam se enfrien pasivamente por debajo de los cincuenta kelvins (-223 °C) y activamente a siete kelvins mediante un criocooler de helio.",
+      "Las capacidades espectroscopicas de alta resolucion del JWST permiten descomponer la luz infrarroja filtrada por la atmosfera de un exoplaneta en miles de canales espectrales estrechos con relaciones de senal-ruido extraordinarias. Esto permite identificar trazas gaseosas en concentraciones de partes por millon, revelando compuestos quimicos fundamentales para la astrobiologia como agua gaseosa, dioxido de carbono, monoxido de carbono, metano y dioxido de azufre fotoquimico.",
+      "Entre sus hitos historicos mas relevantes figura la deteccion definitiva de dioxido de carbono en la atmosfera del gigante WASP-39b, el hallazgo de nubes de arena de silicato en VHS 1256 b y la medicion pionera de la temperatura de brillo termica superficial en los mundos rocosos de masa terrestre TRAPPIST-1b y 1c, sentando las bases operativas para la futura busqueda de desequilibrios quimicos biologicos en exoplanetas habitables."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El parasol del JWST está fabricado con Kapton y revestido de aluminio y silicio. Mientras la cara expuesta al Sol alcanza temperaturas abrasadoras de 110 grados Celsius, la cara posterior donde se ubican los espejos y detectores se mantiene congelada a menos 235 grados Celsius.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El berilio fue elegido para construir los espejos del JWST porque es un metal sumamente ligero y con una estabilidad térmica excepcional. Los 18 segmentos dorados se alinean en el espacio con motores piezoeléctricos capaces de ajustar su posición con precisión de nanómetros.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m3/banner_telescopio-jwst.webp',
-    bannerCaption: 'JWST: el espejo dorado de 6.5m que analiza atmósferas de exoplanetas a luz infrarroja',
-    fact: 'El JWST detectó por primera vez dióxido de azufre (SO2) en la atmósfera del exoplaneta WASP-39b, revelando que la fotoquímica impulsada por la luz ultravioleta de la estrella crea reacciones químicas activas en atmósferas alienígenas.'
+    "fact": "El telescopio James Webb, emplazado en el punto L2 con un espejo de berilio y oro de 6.5 metros protegido a temperaturas criogenicas extremas, revoluciono la ciencia exoplanetaria al lograr la deteccion quimica definitiva de vapor de agua, CO2 y moleculas fotoquimicas en atmosferas de mundos extrasolares.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Cada uno de los dieciocho segmentos hexagonales del espejo primario del JWST esta controlado por seis actuadores mecanicos piezoelasticos capaces de ajustar la posicion y curvatura del espejo en incrementos microscopicos de apenas siete nanometros, una fraccion diminuta de la longitud de onda de la luz visible."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El parasol de cinco laminas de Kapton del JWST disipa de forma tan colosal la radiacion solar que produce una diferencia de temperatura superior a los trescientos grados Celsius entre la cara frontal expuesta directamente al Sol (que se calienta hasta los 85 °C) y la cara posterior refrigerada donde operan los detectores opticos criogenicos (que permanece congelada a -233 °C)."
+      }
+    ]
   },
   {
-    id: 'espectroscopia-transmision',
-    title: 'Espectroscopía Transmisión',
-    color: '#00E5FF',
-    btnImage: '/assets/exoplanetas/infographic_m3/btn_espectroscopia-transmision.jpg',
-    image: '/assets/exoplanetas/infographic_m3/hero_espectroscopia-transmision.jpg',
-    content: [
-      'La espectroscopía de transmisión es una técnica astrofísica brillante que permite leer la composición química de la atmósfera de un exoplaneta a billones de kilómetros de distancia. Imagina que colocas una manzana transparente frente a una linterna potente: la luz que atraviesa la pulpa de la manzana cambiará de color según la composición interna de la fruta.',
-      'Cuando un exoplaneta pasa justo por enfrente de su estrella hospedera durante un tránsito, la mayor parte del cuerpo sólido bloquea la luz por completo. Sin embargo, un pequeño porcentaje de la luz de la estrella atraviesa la delgada capa de gas que rodea la atmósfera del planeta. Al pasar a través de este aire alienígena, los gases presentes en la atmósfera filtran y absorben colores específicos de la luz estelar.',
-      'Cada tipo de molécula de gas posee un código de barras de absorción único e inconfundible. Las moléculas de vapor de agua absorben ciertas longitudes de onda en el infrarrojo, mientras que el metano o el dióxido de carbono absorben otras frecuencias distintas. Al comparar el espectro de la estrella sola con el espectro obtenido durante el tránsito, los astrónomos restan ambas mediciones para obtener el espectro puro de transmisión planetaria.',
-      'Si una atmósfera es rica en agua, el exoplaneta parecerá ligeramente más grande y más oscuro cuando sea observado en las longitudes de onda donde el agua absorbe luz. En cambio, en las frecuencias donde la atmósfera es transparente, el planeta parecerá tener un radio más pequeño. Midiendo este cambio aparente de tamaño a través del espectro electromagnético, se reconstruye el perfil atmosférico.',
-      'Esta técnica de transmisión ha permitido detectar vapor de agua, sodio, potasio, monóxido de carbono y nubes de silicatos en decenas de exoplanetas. Con el JWST y futuros observatorios, los científicos están aplicando la espectroscopía de transmisión a planetas rocosos pequeños para buscar gases de origen biológico como el oxígeno y el ozono.'
+    "id": "espectroscopia-transmision",
+    "title": "Espectroscopía Transmisión",
+    "color": "#00E5FF",
+    "btnImage": "/assets/exoplanetas/infographic_m3/btn_espectroscopia-transmision.jpg",
+    "image": "/assets/exoplanetas/infographic_m3/hero_espectroscopia-transmision.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_espectroscopia-transmision.webp",
+    "bannerCaption": "Espectroscopía de transmisión: las moléculas de la atmósfera del planeta dejan huella en la luz estelar",
+    "content": [
+      "La espectroscopia de transmision atmosferica es una de las tecnicas astrofisicas mas elegantes y cuantitativas desarrolladas en la ciencia contemporanea para investigar la composicion quimica de planetas distantes. Durante el transito de un exoplaneta por delante del disco de su estrella anfitriona, el cuerpo planetario solido bloquea opacamente la luz estelar central, pero el anillo exterior correspondiente a su envoltura gaseosa atmosferica permanece semitransparente a los fotones.",
+      "A medida que los rayos de luz estelar rasantes atraviesan esta delgada corona atmosferica en su trayectoria hacia los telescopios terrestres o espaciales, las especies atomicas y moleculares suspendidas en el gas absorben y dispersan fotones en longitudes de onda cuantizadas muy especificas, correspondientes a las transiciones electronicas, vibracionales y rotacionales unicas de cada elemento quimico presente en el aire exoplanetario.",
+      "Como consecuencia directa de esta absorcion selectiva por resonancia cuantica, el radio aparente efectivo del planeta parece variar ligeramente segun la longitud de onda en la que se efectue la observacion: en las bandas donde un gas especifico como el vapor de agua o el metano es fuertemente opaco, la atmosfera bloquea mas luz y el planeta parece mayor; en las regiones transparentes del espectro, el planeta aparenta ser mas pequeno y la luz estelar pasa sin atenuacion.",
+      "La magnitud de esta firma espectral diferencial esta gobernada por la escala de altura atmosferica H (definida por el producto de la constante de Boltzmann y la temperatura, dividido entre el peso molecular medio y la aceleracion gravitatoria local). Por ello, los mundos calientes dotados de atmosferas ricas en hidrogeno ligero exhiben escalas de altura hinchadas de cientos de kilometros, facilitando la deteccion de sus componentes quimicos espectroscopicos.",
+      "Mediante la aplicacion rigurosa de esta tecnica, los astronomos han medido con precision la metalicidad atmosferica, la proporcion carbono-oxigeno (relacion C/O, un marcador diagnostico crucial del lugar de nacimiento del planeta en el disco protoplanetario primitivo) y han detectado la presencia de aerosoles minerales de alta temperatura y nubes condensadas de corindon y silicatos suspendidas en atmosferas de Jupíteres calientes."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La capa atmosférica que atraviesa la luz durante un tránsito representa menos del uno por ciento del radio total del planeta. Medir la señal de transmisión en una Supertierra es equivalente a medir el grosor del pelo de un gato colocado sobre el borde de una moneda a kilómetros de distancia.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La escala de altura atmosférica (H) determina qué tan fácil es observar un espectro de transmisión. Las atmósferas calientes compuestas por gases ligeros como hidrógeno se extienden a gran altura, produciendo señales espectrales amplias y fáciles de detectar por espectrógrafos infrarrojos.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m3/banner_espectroscopia-transmision.webp',
-    bannerCaption: 'Espectroscopía de transmisión: las moléculas de la atmósfera del planeta dejan huella en la luz estelar',
-    fact: 'El telescopio Hubble realizó la primera detección de una atmósfera exoplanetaria mediante espectroscopía de transmisión en 2001, identificando átomos de sodio gaseoso en la envoltura superior del planeta gigante HD 209458 b.'
+    "fact": "La espectroscopia de transmision analiza la luz estelar que se filtra a traves del anillo atmosferico durante un transito; dado que cada molecula de gas absorbe frecuencias infrarrojas diagnosticas especificas, la variacion del radio aparente del planeta revela de manera inequivoca la quimica de su atmosfera.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La relacion entre la concentracion de carbono y oxigeno (C/O) determinada mediante espectros de transmision permite a los astrofisicos deducir si un exoplaneta gigante nacio mas alla de la linea de nieve de agua o del monoxido de carbono en su disco primordial, revelando su ruta historica de migracion orbital."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El espesor efectivo de la atmosfera medido durante un transito representa con frecuencia menos del 0.1% del radio total del planeta: registrar su espectro en una Supertierra equivale a medir la atenuacion optica producida por la capa de pintura de una bola de billar a miles de kilometros de separacion."
+      }
+    ]
   },
   {
-    id: 'fotometria-eclipse-secundario',
-    title: 'Eclipse Secundario y Emisión',
-    color: '#FF80AB',
-    btnImage: '/assets/exoplanetas/infographic_m3/btn_fotometria-eclipse-secundario.jpg',
-    image: '/assets/exoplanetas/infographic_m3/hero_fotometria-eclipse-secundario.jpg',
-    content: [
-      'Un tránsito ocurre cuando el exoplaneta pasa por delante de su estrella, pero medio año planetario después ocurre el evento simétrico opuesto: el eclipse secundario. Durante el eclipse secundario, el planeta se desplaza justo por detrás del disco estelar desde nuestra línea de visión en la Tierra, quedando completamente oculto a la vista de los telescopios.',
-      'Justo antes de ingresar detrás de la estrella, los telescopios reciben la luz combinada de dos fuentes: la estrella más la luz emitida y reflejada por la cara diurna del planeta. Cuando el planeta se oculta detrás de la estrella, la cantidad total de luz medida disminuye ligeramente. La diferencia exacta entre ambas lecturas entrega la señal pura producida exclusivamente por el planeta.',
-      'La espectroscopía de emisión registrada durante el eclipse secundario en frecuencias infrarrojas permite medir directamente la temperatura térmica real de la cara diurna del exoplaneta. Cuanto más caliente esté el planeta, mayor será la caída de radiación infrarroja cuando quede oculto detrás del disco de su estrella hospedera.',
-      'Además, la fotometría de eclipse secundario permite calcular el albedo planetario, que es la medida de qué tan reflectante es su superficie o su capa de nubes. Si el planeta refleja mucha luz visible antes de ocultarse, significa que posee nubes brillantes de silicatos o agua. Si el planeta es oscuro y absorbe toda la luz, significa que su superficie está cubierta de rocas compuestas de basalto o carbono.',
-      'Analizando la forma en que varía la luz del planeta durante toda su órbita mediante curvas de fase completas, los astrofísicos pueden trazar mapas térmicos globales de dos dimensiones. Esto permite descubrir dónde se ubican los puntos más calientes de la atmósfera alienígena y cómo los vientos globales redistribuyen la energía térmica desde el día hacia la noche.'
+    "id": "fotometria-eclipse-secundario",
+    "title": "Eclipse Secundario y Emisión",
+    "color": "#FF80AB",
+    "btnImage": "/assets/exoplanetas/infographic_m3/btn_fotometria-eclipse-secundario.jpg",
+    "image": "/assets/exoplanetas/infographic_m3/hero_fotometria-eclipse-secundario.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_fotometria-eclipse-secundario.webp",
+    "bannerCaption": "Eclipse secundario: cuando el planeta se esconde detrás de la estrella revelamos su propio calor",
+    "content": [
+      "Mientras que el transito primario tiene lugar cuando el planeta cruza por delante de la estrella, exactamente media orbita despues se produce el evento astrofisico complementario: la ocultacion o eclipse secundario. En esta fase geometrica, el exoplaneta se desplaza directamente por detras del disco estelar desde la perspectiva visual terrestre, quedando completamente eclipsado y fuera de la vista de los instrumentos opticos.",
+      "Inmediatamente antes de que comience el eclipse secundario, el telescopio recolecta el flujo fotometrico total combinado de ambos cuerpos celestes: la radiacion emitida por la estrella mas la luz termica emitida directamente y la luz estelar reflejada por el hemisferio diurno del exoplaneta. En el momento en que el planeta queda ocultado tras el limbo estelar, el brillo del sistema cae abruptamente; la diferencia exacta entre ambas mediciones corresponde a la senal pura del planeta.",
+      "Esta tecnica de espectroscopia y fotometria de emision infrarroja directa permite medir de forma cuantitativa la temperatura de brillo superficial del lado iluminado del exoplaneta sin necesidad de resolver espacialmente la imagen de la estrella. Cuanto mayor sea la energia termica acumulada en la superficie o atmosfera planetaria, mas profunda y pronunciada sera la caida de flujo registrada durante la ocultacion secundaria.",
+      "Asimismo, la combinacion del eclipse secundario con la observacion continua de la curva de fase completa a lo largo de toda la orbita permite trazar mapas termicos bidimensionales de la superficie o de la circulacion de vientos en la atmosfera. Mediante estas curvas de fase termicas, los cientificos han demostrado que en muchos mundos con acoplamiento de marea sincrono, los vientos zonales hiperventilados desplazan el punto termico mas caliente decenas de grados al este del punto subestelar.",
+      "La fotometria de eclipse secundario tambien suministra mediciones exactas del albedo geometrico del planeta en bandas visibles e infrarrojas, y permite determinar de manera inequivoca la excentricidad orbital del sistema: si la ocultacion no ocurre con simetria exacta a medio camino temporal entre dos transitos consecutivos, la orbita planetaria es obligatoriamente una elipse elongada regulada por perturbaciones gravitatorias seculares."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Mediante el eclipse secundario y las curvas de fase, el telescopio Spitzer logró crear el primer mapa de temperaturas atmosféricas de un exoplaneta en 2007. Mapeó el planeta HD 189733 b, revelando que el punto más caliente no estaba en el centro del mediodía sino desplazado por vientos ecuatoriales violentos.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El eclipse secundario permite medir la excentricidad orbital con precisión matemática. Si el eclipse secundario no ocurre exactamente en la mitad del tiempo entre dos tránsitos principales, significa que la órbita del exoplaneta no es circular sino una elipse elongada.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m3/banner_fotometria-eclipse-secundario.webp',
-    bannerCaption: 'Eclipse secundario: cuando el planeta se esconde detrás de la estrella revelamos su propio calor',
-    fact: 'El instrumento MIRI del JWST midió la emisión térmica en eclipse secundario de TRAPPIST-1 b, revelando una temperatura de 230°C y sugiriendo que este planeta rocoso carece de una atmósfera densa de dióxido de carbono.'
+    "fact": "El eclipse secundario mide la disminucion de brillo cuando el planeta se oculta detras de la estrella, aislando la emision termica directa de su cara diurna; esta tecnica permite calcular la temperatura superficial, deducir la presencia o ausencia de atmosfera y cartografiar vientos ecuatoriales globales.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El instrumento MIRI del telescopio James Webb utilizo la fotometria de eclipse secundario en quince micrometros para medir la emision termica de TRAPPIST-1 b, demostrando que su cara diurna alcanza los 230 °C, una temperatura consistente con una roca basáltica desnuda carente de redistribucion de calor por una atmosfera espesa."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las curvas de fase orbital completa registradas por el telescopio espacial Spitzer revelaron vientos jet ecuatoriales de mas de siete mil kilometros por hora en Jupíteres calientes, los cuales arrastran el calor del mediodía perpetuo hacia el hemisferio nocturno en tormentas globales supersónicas continuas."
+      }
+    ]
   },
   {
-    id: 'futuro-observatorios',
-    title: 'Futuros Cazadores Espaciales',
-    color: '#B388FF',
-    btnImage: '/assets/exoplanetas/infographic_m3/btn_futuro-observatorios.jpg',
-    image: '/assets/exoplanetas/infographic_m3/hero_futuro-observatorios.jpg',
-    content: [
-      'La exploración astronómica de los exoplanetas está entrando en su época dorada con el desarrollo de observatorios de nueva generación. Misiones espaciales avanzadas y telescopios terrestres gigantescos están siendo construidos en laboratorios para llevar nuestras capacidades de caracterización atmosférica hasta límites insospechados.',
-      'La Agencia Espacial Europea lidera la misión PLATO (Planetary Transits and Oscillations of stars), cuyo lanzamiento está programado para 2026. PLATO utilizará una matriz de 26 telescopios individuales integrados en una sola plataforma espacial para buscar planetas rocosos en zonas habitables alrededor de estrellas brillantes similares al Sol, midiendo sus edades mediante astroseismología.',
-      'En 2029 se sumará la misión ARIEL de la ESA, un telescopio espacial dedicado exclusivamente a realizar el primer censo químico sistemático de las atmósferas de unos mil exoplanetas conocidos. ARIEL analizará la diversidad química y las estructuras térmicas de gigantes de gas, Neptunos y Supertierras para entender la evolución de los sistemas planetarios.',
-      'Por su parte, la NASA prepara el Telescopio Espacial Nancy Grace Roman, equipado con un avanzado instrumento de coronografía capaz de bloquear la luz directa de una estrella para fotografiar directamente exoplanetas gigantes en órbitas amplias. Roman también utilizará microlentes gravitacionales para encontrar mundos helados y planetas errantes nómadas.',
-      'En la Tierra, telescopios extremadamente gigantes como el ELT (Extremely Large Telescope) en Chile, con su espejo de 39 metros de diámetro, permitirán tomar las primeras imágenes directas y espectros de alta resolución de planetas rocosos similares a la Tierra orbitando las estrellas más cercanas a nuestro hogar.'
+    "id": "futuro-observatorios",
+    "title": "Futuros Cazadores Espaciales",
+    "color": "#B388FF",
+    "btnImage": "/assets/exoplanetas/infographic_m3/btn_futuro-observatorios.jpg",
+    "image": "/assets/exoplanetas/infographic_m3/hero_futuro-observatorios.jpg",
+    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_futuro-observatorios.webp",
+    "bannerCaption": "Observatorios del futuro: el ELT de 39m y el HWO buscarán gemelas de la Tierra directamente",
+    "content": [
+      "La caracterizacion fisica y astrobiologica de los exoplanetas se encuentra en los albores de una era dorada sin precedentes, impulsada por el desarrollo simultaneo de colosales telescopios opticos terrestres y sofisticadas flotas de observatorios espaciales especificamente optimizados para el aislamiento optico de gemelos terrestres y el analisis sistematico de biofirmas gaseosas en la Via Lactea.",
+      "En el ambito de la exploracion espacial europea, la Agencia Espacial Europea avanza en la construccion de la mision PLATO (Planetary Transits and Oscillations of stars), cuyo lanzamiento esta previsto para 2026. PLATO desplegara una plataforma con veintiseis camaras opticas simultaneas para detectar y caracterizar exoplanetas rocosos en orbitas de largo periodo en zonas habitables alrededor de estrellas de tipo solar, determinando sus radios y edades evolutivas con precision sismica.",
+      "A esta iniciativa se sumara en 2029 el telescopio espacial ARIEL de la ESA, el primer observatorio orbital dedicado en exclusiva al estudio comparativo de la quimica atmosferica de una muestra estadistica de mas de mil exoplanetas en transito. ARIEL analizara sistematicamente la correlacion entre la metalicidad estelar, los procesos de formacion planetaria y la composicion molecular de mundos gaseosos y rocosos templados.",
+      "Por su parte, la NASA prepara el lanzamiento a finales de la decada del Telescopio Espacial Nancy Grace Roman, provisto de una camara infrarroja de gran campo y un instrumento de coronografia avanzada con espejos deformables activos, capaz de suprimir la luz estelar en un factor de mil millones para fotografiar de manera directa exoplanetas gigantes frios en orbitas comparables a la de Jupiter.",
+      "Finalmente, en la decada de 2030, la confluencia entre los telescopios extremadamente grandes en tierra (como el Extremely Large Telescope de 39 metros de la ESO en el desierto de Atacama) y el futuro Habitable Worlds Observatory (HWO) de la NASA con espejo coronografico ultracongelado de seis metros hara posible la meta definitiva: fotografiar directamente planetas de masa terrestre y analizar sus atmosferas en busca de oxigeno, vapor de agua y vegetacion."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El Telescopio Extremadamente Grande (ELT) de la ESO en el desierto de Atacama será el ojo óptico más grande del mundo dirigiendo la mirada hacia el cielo. Recogerá cien millones de veces más luz que el ojo humano y corregirá la turbulencia de la atmósfera terrestre mediante óptica adaptativa dinámica.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La técnica de coronografía utilizada por el telescopio Nancy Grace Roman utiliza una máscara física interna que tapa el resplandor de la estrella en un factor de mil millones. Esto permite revelar directamente los diminutos puntos de luz planetarios que orbitan a su alrededor.' }
-    ],
-    bannerImage: '/assets/exoplanetas/infographic_m3/banner_futuro-observatorios.webp',
-    bannerCaption: 'Observatorios del futuro: el ELT de 39m y el HWO buscarán gemelas de la Tierra directamente',
-    fact: 'El concepto de misión Habitable Worlds Observatory (HWO) de la NASA planea lanzarse en la década de 2030 con un espejo de 6 metros optimizado para analizar atmósferas de al menos 25 planetas rocosos potencialmente habitables en busca de biofirmas.'
+    "fact": "La proxima generacion de telescopios espaciales y terrestres, incluyendo PLATO, ARIEL, Nancy Grace Roman, el telescopio ELT de 39 metros y el futuro Habitable Worlds Observatory (HWO), permitira el salto historico desde la simple deteccion indirecta hacia la obtencion de imagenes directas y biofirmas de mundos habitables.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El futuro telescopio terrestre ELT en cerro Armazones recolectara cien millones de veces mas luz que el ojo humano y utilizara sistemas de optica adaptativa extrema con seis mil actuadores por espejo para compensar la turbulencia atmosferica en tiempo real, permitiendo aislar espectros de planetas cercanos como Proxima b."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El concepto de coronografo estelar avanzado desarrollado para el telescopio Nancy Grace Roman utiliza tecnicas de supresion optica mediante mascaras de fase de mascara vectorial de vortice que logran oscurecer el deslumbramiento estelar en un factor de mil millones sin reducir la debil luz emitida por el planeta."
+      }
+    ]
   }
 ];
 

@@ -172,7 +172,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/gaseosos/infographic_m1/banner_lunas-gaseosos.webp',
     bannerCaption: 'Lunas de los gigantes: Europa tiene un océano oculto bajo el hielo, Encélado lanza géiseres y Titán tiene lluvia de metano',
-    fact: 'Europa tiene más agua que todos los océanos de la Tierra combinados — bajo una capa de hielo de 20 km. Encélado tiene géiseres de ese mismo tipo de agua que saltan al espacio. En nuestro propio sistema solar ya tenemos dos océanos extraterrestres donde la vida podría existir hoy mismo.'
+    fact: 'Bajo una corteza de hielo cristalino de quince a veinticinco kilómetros de espesor, la luna Europa alberga un océano salino global con un volumen de agua líquida que supera el doble de todos los océanos de la Tierra combinados; junto con los géiseres activos de Encélado, estos mundos helados demuestran que las zonas habitables del Sistema Solar se extienden mucho más allá de la órbita terrestre gracias a la fricción de marea gravitatoria.'
   },
   {
     id: 'anillos-saturno',
@@ -188,8 +188,8 @@ const INFOGRAPHIC_NODES = [
       'Los anillos de Saturno son uno de los mejores laboratorios naturales para estudiar la formación de discos protoplanetarios — los discos de gas y polvo que rodean las estrellas jóvenes y dan origen a los planetas. Los mecanismos físicos que estructuran los anillos de Saturno (resonancias de Lindblad, ondas de densidad, inestabilidades gravitacionales de Jeans, fricción de polvo) son los mismos que determinaron cómo los planetas del sistema solar se formaron hace 4,500 millones de años a partir de un disco similar. Estudiar los anillos de Saturno en tiempo real con la sonda Cassini fue, en cierta medida, como observar en alta resolución un disco protoplanetario en miniatura.'
     ],
     expandables: [
-      { label: 'Solo 100 Millones de Años', icon: 'Clock', text: 'Los anillos de Saturno tienen la edad de los dinosaurios — en términos geológicos, son "nuevos". Cuando evolucionaron los primeros animales complejos en la Tierra hace 600 millones de años, Saturno era un planeta sin anillos. Llegarán a desaparecer en 300 millones de años más.' },
-      { label: 'Lluvia de Anillos', icon: 'Sparkles', text: 'Los anillos pierden 10,000-100,000 kg de material por segundo — ionizado por la radiación solar y precipitado sobre el planeta. A este ritmo, en 300 millones de años Saturno habrá "engullido" sus propios anillos.' }
+      { label: 'Solo 100 Millones de Años', icon: 'Clock', text: 'Los datos gravimétricos y de masa obtenidos por la sonda Cassini en su Gran Final en 2017 confirmaron que los anillos principales de Saturno son geológicamente jóvenes: su edad oscila entre diez y cien millones de años, lo que indica que se formaron por la disrupción de un cometa o satélite helado mientras los dinosaurios dominaban la Tierra, y que Saturno careció de anillos durante la mayor parte de su historia.' },
+      { label: 'Lluvia de Anillos', icon: 'Sparkles', text: 'Las observaciones de la sonda Cassini y del telescopio Keck determinaron que el fenómeno de lluvia de anillos drena entre diez mil y cien mil kilogramos de hielo ionizado por segundo hacia la atmósfera ecuatorial de Saturno a través de líneas del campo magnético planetario, un ritmo de desmantelamiento continuo que provocará la extinción total de los majestuosos anillos en menos de trescientos millones de años.' }
     ],
     bannerImage: '/assets/gaseosos/infographic_m1/banner_anillos-saturno.webp',
     bannerCaption: 'Los anillos de Saturno desaparecerán en 300 millones de años: partículas de hielo cayendo hacia el planeta',
@@ -209,7 +209,7 @@ const INFOGRAPHIC_NODES = [
       'Las próximas grandes misiones a los gigantes gaseosos incluyen la Europa Clipper de la NASA (lanzada en 2024, llegará a Júpiter en 2030), la misión JUICE de la ESA (llegará al sistema joviano en 2031) y Dragonfly (llegará a Titán en 2034). Europa Clipper realizará 49 sobrevuelos de Europa midiendo el grosor del hielo superficial, la salinidad del océano subsuperficial y buscando compuestos orgánicos en el material eyectado por posibles géiseres. La posibilidad de detectar biosignaturas químicas en el material que Europa "exhala" al espacio podría hacer de este sobrevuelo la primera evidencia indirecta de vida extraterrestre en la historia de la exploración espacial.'
     ],
     expandables: [
-      { label: 'Gran Tour 176 años', icon: 'Star', text: 'La alineación planetaria que permitió el Gran Tour de los Voyager ocurre cada 176 años. La próxima vez que cuatro planetas exteriores estén así alineados, los seres humanos de 2153 tendrán una segunda oportunidad de repetir la hazaña de 1977 — si la tecnología de entonces lo permite.' },
+      { label: 'Gran Tour de 176 años', icon: 'Star', text: 'La alineación geométrica cuádruple de los planetas exteriores que hizo posible la histórica trayectoria del Gran Tour de las sondas Voyager 1 y 2 es un evento de mecánica orbital que se repite únicamente una vez cada ciento setenta y seis años; la próxima oportunidad astrodinámica similar para recorrer Júpiter, Saturno, Urano y Neptuno con maniobras de asistencia gravitatoria encadenadas no tendrá lugar hasta el año 2153.' },
       { label: 'Cassini se Sacrificó', icon: 'Rocket', text: 'Cassini se precipitó deliberadamente en Saturno para no contaminar las lunas potencialmente habitables. Tuvo suficiente hidrazina para volar décadas más, pero la NASA eligió destruirla antes de que una avería la estrellara accidentalmente en Europa o Encélado. El código de ética espacial ya protege mundos que nunca hemos visitado.' }
     ],
     bannerImage: '/assets/gaseosos/infographic_m1/banner_exploracion-gaseosos.webp',

@@ -132,7 +132,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m2/banner_migracion-planetaria.webp',
     bannerCaption: 'Migración planetaria: los gigantes gaseosos se forman lejos y migran hacia su estrella destruyendo planetas',
-    fact: 'La teoría de la migración planetaria Tipo II predice que por cada Júpiter caliente que logra frenar exitosamente cerca de su estrella, varios planetas más pequeños fueron empujados e incinerados dentro de la estrella durante la fase caótica de formación del disco.'
+    fact: 'La teoría de la migración planetaria Tipo II predice que por cada Júpiter caliente que logra estabilizar su órbita cerca de su estrella tras abrir una brecha en el disco protoplanetario, múltiples planetas rocosos interiores y embriones planetarios fueron empujados gravitatoriamente hacia la fotosfera estelar, siendo consumidos durante la violenta fase inicial del disco.'
   },
   {
     id: 'supertierras',
@@ -153,7 +153,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m2/banner_supertierras.webp',
     bannerCaption: 'Supertierras y Subneptunos: los planetas más abundantes de la galaxia, con masas entre 2 y 10 Tierras',
-    fact: 'El exoplaneta GJ 1214 b es el Subneptuno prototípico más estudiado por los científicos. Con 2.7 radios terrestres, las observaciones espectroscópicas con el James Webb sugieren que posee una atmósfera espesa rica en agua en forma de vapor súper denso o brumas compuestas de aerosol orgánico.'
+    fact: 'El exoplaneta GJ 1214 b es el Subneptuno prototípico más estudiado en la astrofísica observacional; con un radio de 2.7 radios terrestres y una masa de 8.2 masas terrestres, las observaciones del telescopio James Webb confirman una atmósfera espesa rica en vapor de agua sobrecalentado o aerosoles orgánicos fotoquímicos que desafían las clasificaciones tradicionales.'
   },
   {
     id: 'planetas-oceano',
@@ -174,7 +174,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m2/banner_planetas-oceano.webp',
     bannerCaption: 'Planetas océano: mundos cubiertos de agua hasta cientos de km de profundidad sin un solo continente',
-    fact: 'Descubrimientos recientes con el telescopio espacial JWST sugieren que el exoplaneta TOI-1452 b, ubicado a 100 años luz de la Tierra, es uno de los mejores candidatos a planeta océano conocidos, con un radio 1.67 veces el de la Tierra y una densidad consistente con un inmenso mar global.'
+    fact: 'Descubrimientos espectroscópicos y de tránsito sitúan al exoplaneta TOI-1452 b (a 100 años luz en la constelación de Draco) como uno de los candidatos a planeta océano más sólidos: con un radio 1.67 veces el terrestre y una masa 4.8 veces mayor, su densidad global sugiere que el agua líquida y fases densas de alta presión podrían constituir hasta el 22% de su masa total.'
   },
   {
     id: 'enanos-rojos',
@@ -195,7 +195,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m2/banner_enanos-rojos.webp',
     bannerCaption: 'Enanas rojas: estrellas pequeñas y frías con planetas tan cercanos que están fijos con un lado siempre de día',
-    fact: 'El modelo climático denominado "Planeta Ojo de Buey" (Eyeball Earth) sugiere que una Supertierra en acoplamiento de marea alrededor de una enana roja tendría toda su cara nocturna congelada en hielo sólido y su cara diurna central con un gran océano líquido circular abierto como una pupila.'
+    fact: 'El modelo climático de "Planeta Ojo de Buey" (Eyeball Earth) describe mundos rocosos en acoplamiento de marea sincrónico alrededor de enanas rojas M: mientras la cara nocturna perpetua acumula glaciares colosales de hielo de agua y dióxido de carbono congelado, la cara diurna subestelar concentra un mar líquido templado circular rodeado de vientos huracanados convectivos.'
   },
   {
     id: 'planetas-ultra-densos',
@@ -216,7 +216,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m2/banner_planetas-ultra-densos.webp',
     bannerCaption: 'Planetas ultra-densos: mundos casi completamente de hierro formados cuando las capas rocosas son vaporizadas',
-    fact: 'El estudio del exoplaneta TOI-733 b sugiere que se encuentra justo en la frontera de la pérdida atmosférica total, representando una transición viva donde un Subneptuno gaseoso se está evaporando para convertirse en un núcleo rocoso metálico desnudado.'
+    fact: 'El estudio astrofísico del exoplaneta TOI-733 b demuestra que se ubica en el límite crítico de la fotoevaporación atmosférica masiva: con 1.99 radios terrestres y 5.7 masas terrestres, representa un laboratorio en tiempo real donde la irradiación estelar ultravioleta de alta energía despoja la envoltura volátil de un Subneptuno para transformar su estructura en un núcleo rocoso denso.'
   },
   {
     id: 'diversidad-zooloogica',
@@ -237,7 +237,7 @@ const INFOGRAPHIC_NODES = [
     ],
     bannerImage: '/assets/exoplanetas/infographic_m2/banner_diversidad-zooloogica.webp',
     bannerCaption: 'El zoo exoplanetario: calientes, helados, rocosos, oceánicos o vagabundos — cada tipo imaginable existe ahí fuera',
-    fact: 'El proyecto Microlensing Observations in Astrophysics (MOA) estima que existen estadísticamente más planetas flotantes nómadas sin estrella fija en la Vía Láctea que la cantidad total de estrellas individuales que componen nuestra galaxia.'
+    fact: 'Los sondeos de microlentes gravitacionales de proyectos como MOA y OGLE estiman que existen cientos de miles de millones de planetas errantes o huérfanos (rogue planets) vagando por el medio interestelar de la Vía Láctea desprovistos de estrella anfitriona; su abundancia estadística supera con creces el número de estrellas individuales que pueblan nuestra galaxia entera.'
   }
 ];
 
