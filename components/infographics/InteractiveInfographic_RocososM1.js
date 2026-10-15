@@ -95,145 +95,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'disco-protoplanetario',
-              bannerImage: '/assets/rocosos/infographic_m1/banner_disco-protoplanetario.webp',
-    title: 'El Disco Protoplanetario',
-    color: '#FF6B35',
-    btnImage: '/assets/rocosos/infographic_m1/btn_disco-protoplanetario.jpg',
-    image: '/assets/rocosos/infographic_m1/hero_disco-protoplanetario.jpg',
-    content: [
-      'Hace unos cuatro mil seiscientos millones de años, nuestro Sistema Solar era simplemente una gigante nube giratoria de gas y polvo cósmico flotando en la galaxia. Piensa en esta nube como una enorme masa de masa para pizza que un cocinero espacial empieza a hacer girar en el aire. A medida que la masa gira más y más rápido, se va aplastando hasta convertirse en un disco plano con un centro muy denso y brillante.',
-      'En el centro exacto de este plato giratorio, la gravedad amontonó la mayor parte de la materia hasta encender el Sol primordial. Todo el material sobrante que no cayó en la estrella quedó atrapado en una rosquilla gigante de gas hidrógeno, helio y diminutos granos de polvo microscópico. Este halo giratorio es lo que los astrofísicos llaman el disco protoplanetario, la cuna dorada donde nacieron la Tierra y sus hermanos.',
-      'Imagina que cada grano de polvo en este disco era más pequeño que un grano de sal marina o una mota de hollín en una chimenea. Sin embargo, estos granos contenían los ingredientes fundamentales para construir montañas, océanos y continentes enteros. La temperatura en el disco variaba de forma extrema: cerca del joven Sol hacía un calor abrasador, mientras que en los bordes exteriores reinaba un frío congelante.',
-      'El viento solar soplaba con fuerza constante desde la joven estrella recién nacida, empujando los gases ligeros hacia las regiones lejanas del disco. Por esta razón, el anillo interior del Sistema Solar quedó limpio de grandes acumulaciones de gas, dejando únicamente materiales pesados, resistentes y rocosos capaces de soportar el calor intenso sin evaporarse en el espacio.',
-      'Durante los primeros cientos de miles de años, el disco giró en perfecta armonía física, sirviendo como una pista de baile donde billones de partículas chocaban suavemente entre sí. Este baile cósmico inicial sentó las bases mecánicas para que la gravedad comenzara a construir estructuras cada vez más grandes, transformando el polvo fino en la sólida roca de los futuros planetas.'
+    "id": "disco-protoplanetario",
+    "bannerImage": "/assets/rocosos/infographic_m1/banner_disco-protoplanetario.webp",
+    "title": "El Disco Protoplanetario",
+    "color": "#FF6B35",
+    "btnImage": "/assets/rocosos/infographic_m1/btn_disco-protoplanetario.jpg",
+    "image": "/assets/rocosos/infographic_m1/hero_disco-protoplanetario.jpg",
+    "content": [
+      "Hace aproximadamente cuatro mil quinientos sesenta y siete millones de años, nuestro Sistema Solar se originó a partir del colapso gravitatorio de una densa nube molecular interestelar compuesta principalmente por hidrógeno, helio y diminutas motas de polvo presolar. La perturbación inicial, probablemente desatada por las ondas de choque supersónicas de una supernova cercana, provocó que el núcleo de la nube comenzara a contraerse bajo su propia masa gravitacional, iniciando el nacimiento de nuestra estrella.",
+      "Debido a la ley física de conservación del momento angular, a medida que la nube colapsaba y reducía su radio, su velocidad de rotación se aceleró exponencialmente, adoptando la morfología de un disco circunestelar aplanado y giratorio perpendicular a su eje de rotación. En el centro geométrico de máxima densidad se acumuló más del noventa y nueve punto ocho por ciento de la masa de la nebulosa, encendiendo el colosal horno de fusión nuclear de nuestra protoestrella solar.",
+      "La materia remanente que orbitaba alrededor del joven Sol primitivo constituyó lo que la astrofísica moderna define como la nebulosa solar o disco protoplanetario. En este entorno, el gas y las partículas sólidas experimentaron un gradiente térmico extremo: en la zona interna cercana al centro estelar las temperaturas superaban con creces los dos mil kelvin, mientras que en los bordes periféricos distantes caían por debajo de los cincuenta kelvin en el vacío helado.",
+      "La presión de radiación solar y los potentes vientos estelares emitidos por el Sol en su fase T Tauri temprana barrieron de forma continua los gases volátiles más ligeros como el hidrógeno atómico y el helio hacia las regiones exteriores del sistema. Como resultado termodinámico directo, el disco interior quedó fuertemente enriquecido en fracciones de elementos refractarios pesados de elevado punto de ebullición, tales como silicatos de magnesio, hierro, níquel y óxidos metálicos.",
+      "Las observaciones astronómicas contemporáneas realizadas por observatorios interferométricos de vanguardia como el complejo ALMA en el desierto chileno de Atacama han confirmado que estos discos protoplanetarios son comunes en estrellas jóvenes. Las imágenes revelan surcos oscuros concéntricos donde protoplanetas en crecimiento barren activamente el gas y el polvo circumestelar a lo largo de sus órbitas, reproduciendo con asombrosa fidelidad las fases iniciales de nuestro propio hogar cósmico."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los discos protoplanetarios no son solo teorías del pasado; telescopios modernos como ALMA en el desierto de Atacama han fotografiado discos reales alrededor de estrellas jóvenes en la constelación de Orión. Estas imágenes muestran anillos oscuros exactos donde planetas bebés están limpiando sus órbitas al absorber el polvo circundante en este preciso instante.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La masa total del disco protoplanetario original equivalía a solo un tres por ciento de la masa del Sol. Sin embargo, ese pequeño porcentaje contenía suficiente materia para fabricar todos los planetas, lunas, asteroides y cometas que conocemos hoy en día en nuestro vecindario cósmico.' }
-    ],
-    fact: 'El término "protoplanetario" proviene del griego "protos", que significa "primero". Indica que este disco de material primigenio precedió directamente a la existencia de cualquier planeta sólido en el universo.',
+    "fact": "La nebulosa solar primordial colapsó hace 4,567 millones de años conservando rigurosamente el momento angular, lo que achatró la materia en un disco protoplanetario giratorio donde el 99.8% de la masa total encendió el Sol y apenas el 0.2% restante condensó a todos los planetas, asteroides y lunas del Sistema Solar.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La masa mínima de la nebulosa solar requerida para condensar todos los cuerpos sólidos y gaseosos del Sistema Solar actual se estima entre cero punto cero una y cero punto cero cinco masas solares, suficiente materia prima para construir decenas de mundos si no se hubiera disipado gran parte del gas por fotoevaporación ultravioleta."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El radiotelescopio ALMA ha capturado discos protoplanetarios en alta resolución como el de la joven estrella HL Tauri, ubicada a cuatrocientos cincuenta años luz en la constelación de Tauro, mostrando una serie de anillos y brechas vacías que evidencian la formación in situ de embriones planetarios en tiempo real."
+      }
+    ]
   },
   {
-    id: 'condensacion-silicatos',
-              bannerImage: '/assets/rocosos/infographic_m1/banner_condensacion-silicatos.webp',
-    title: 'Condensación de Silicatos',
-    color: '#F7C59F',
-    btnImage: '/assets/rocosos/infographic_m1/btn_condensacion-silicatos.jpg',
-    image: '/assets/rocosos/infographic_m1/hero_condensacion-silicatos.jpg',
-    content: [
-      'A medida que la nube caliente del disco protoplanetario comenzó a enfriarse de forma gradual, ocurrió un fenómeno químico semejante a la condensación del vapor en el espejo de un baño. Cuando el vapor de agua toca el vidrio frío, se transforma en gotas líquidas. En el espacio primordial, los vapores de hierro, níquel y silicatos se enfriaron y solidificaron en diminutos cristales minerales flotantes.',
-      'No todos los materiales se solidifican a la misma temperatura. Cerca del Sol, donde el calor superaba los mil quinientos grados Celsius, únicamente los metales pesados y los silicatos de alta densidad podían pasar de estado gaseoso a sólido. Es por esto que los materiales metálicos formaron los cimientos sólidos de la zona interior del Sistema Solar, creando la receta química de los planetas rocosos.',
-      'Imagina estos primeros cristales de silicato como copos de nieve hechos de piedra y hierro en lugar de agua congelada. Volaban a miles de kilómetros por hora dentro de las corrientes de gas del disco, rozándose continuamente. Debido a la electricidad estática acumulada por el roce constante, las motas minerales comenzaron a atraerse y pegarse entre sí como pequeñas pelusas de polvo bajo una cama.',
-      'La química mineral de esta época estuvo dominada por compuestos de titanio, aluminio, calcio y magnesio unidos con silicio y oxígeno. Estos elementos primordiales crearon los primeros granos de olivino y piroxeno, los mismos minerales oscuros y resistentes que hoy encontramos en el manto profundo de la Tierra y en las rocas basálticas de la Luna.',
-      'Este proceso de condensación termodinámica seleccionó carefully qué elementos formarían cada planeta según su distancia al centro estelar. Los elementos ligeros como el helio y el hidrógeno permanecieron gaseosos en la zona interior, mientras que los silicatos pesados se amontonaron para dar origen a los futuros mundos rocosos de superficie sólida.'
+    "id": "condensacion-silicatos",
+    "bannerImage": "/assets/rocosos/infographic_m1/banner_condensacion-silicatos.webp",
+    "title": "Condensación de Silicatos",
+    "color": "#F7C59F",
+    "btnImage": "/assets/rocosos/infographic_m1/btn_condensacion-silicatos.jpg",
+    "image": "/assets/rocosos/infographic_m1/hero_condensacion-silicatos.jpg",
+    "content": [
+      "A medida que la masa gaseosa supercaliente del disco protoplanetario se expandía y radiaba gradualmente su energía térmica hacia el espacio interestelar, la temperatura descendió por debajo del punto de sublimación de los elementos químicos más refractarios. Este enfriamiento progresivo gobernó la condensación química termodinámica descrita matemáticamente por la célebre secuencia de condensación de Lawrence Grossman y John Wood en la década de 1970.",
+      "A temperaturas superiores a los mil seiscientos kelvin, los primeros minerales sólidos en precipitar directamente desde el vapor gaseoso primigenio fueron los óxidos de calcio, titanio y aluminio, dando origen a la corindón, la perovskita y la melilita. Estas fases ultrarrefractarias se agruparon en nódulos milimétricos blanquecinos que los petrólogos denominan Inclusiones Ricas en Calcio y Aluminio (CAIs), los objetos sólidos más antiguos jamás datados en el Sistema Solar.",
+      "Posteriormente, cuando la temperatura del gas ambiente cayó en el rango de los mil cuatrocientos a mil doscientos kelvin, se condensaron las aleaciones metálicas de hierro y níquel junto con los silicatos de magnesio fundamentales. La forsterita (el extremo rico en magnesio del olivino) y la enstatita (el piroxeno rico en magnesio) cristalizaron de forma masiva, constituyendo la base mineralógica fundamental que edificaría los mantos de los planetas terrestres.",
+      "Debido a la ausencia inicial de campos gravitatorios significativos a escala microscópica, estos diminutos cristales minerales flotaban en el flujo turbulento de gas chocando a velocidades de unos pocos centímetros por segundo. Las fuerzas electrostáticas superficiales y las interacciones moleculares de Van der Waals permitieron que los cristales se aglutinaran en cúmulos porosos y esponjosos de textura algodonosa, superando la primera fase del ensamblaje rocoso.",
+      "La datación radiométrica de alta precisión de los isótopos de plomo-plomo (207Pb-206Pb) en las inclusiones CAIs de meteoritos carbonáceos como Allende fija la edad de este proceso de condensación mineral en exactamente cuatro mil quinientos sesenta y siete punto tres millones de años, estableciendo el cronómetro absoluto cero a partir del cual se mide toda la historia geológica planetaria."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los meteoritos más antiguos caídos en la Tierra, conocidos como condritas carbonáceas, contienen pequeños granos de silicatos e inclusiones ricas en aluminio y calcio que son literalmente las primeras materias sólidas que se condensaron en la historia del Sistema Solar hace más de 4,567 millones de años.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La fuerza electrostática, la misma energía que hace que un globo frotado en el cabello atraiga pequeños papeles, fue el mecanismo físico principal que permitió a los granos de polvo microscópicos unirse cuando la fuerza de gravedad aún era demasiado débil para atraerlos.' }
-    ],
-    fact: 'Los silicatos son el grupo mineral más abundante en la corteza terrestre. Representan más del noventa por ciento de las rocas de nuestro planeta y están formados por átomos de silicio y oxígeno organizados en estructuras tetraédricas extremadamente estables.',
+    "fact": "Las inclusiones ricas en calcio y aluminio (CAIs) y los silicatos de magnesio como el olivino y la enstatita fueron los primeros compuestos sólidos en condensar a más de mil cuatrocientos kelvin a partir del gas de la nebulosa solar, marcando el punto cronológico cero absoluto de la historia geológica del Sistema Solar.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La datación isotópica de circón y CAIs mediante espectrometría de masas demuestra que la condensación de los silicatos refractarios primordiales ocurrió en un intervalo temporal asombrosamente breve de apenas cien a trescientos mil años, un parpadeo geológico comparado con los millones de años requeridos para formar los planetas."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El meteorito Allende, que cayó como una espectacular bola de fuego sobre el estado de Chihuahua en México en febrero de 1969, contenía toneladas de inclusiones CAIs vírgenes que proporcionaron a los cosmoquímicos de todo el mundo la primera muestra física real del material inicial con que se construyeron los planetas rocosos."
+      }
+    ]
   },
   {
-    id: 'acrecion-planetesimales',
-              bannerImage: '/assets/rocosos/infographic_m1/banner_acrecion-planetesimales.webp',
-    title: 'Acreción de Planetesimales',
-    color: '#EFE9F4',
-    btnImage: '/assets/rocosos/infographic_m1/btn_acrecion-planetesimales.jpg',
-    image: '/assets/rocosos/infographic_m1/hero_acrecion-planetesimales.jpg',
-    content: [
-      'Una vez que los granos de polvo formaron pelotitas del tamaño de canicas y guijarros, la física del juego cambió por completo. Las fuerzas eléctricas ya no eran suficientes para mantener unidas estructuras más grandes. Entró en acción la gravedad, la fuerza invisible pero implacable que atrae las masas entre sí. Este proceso de crecimiento por acumulación continua se denomina acreción planetaria.',
-      'Los guijarros chocaron a velocidades moderadas, fusionándose gradualmente en rocas del tamaño de casas, luego de montañas y finalmente en cuerpos de varios kilómetros de diámetro llamados planetesimales. Imagina una batalla masiva de bolas de nieve donde los impactos suaves hacen que las bolas se vuelvan cada vez más pesadas, mientras que los choques demasiado violentos rompen la estructura en pedazos.',
-      'Los planetesimales actuaban como gigantescos aspiradores cósmicos recorriendo sus órbitas. Su atracción gravitatoria crecía exponencialmente a medida que sumaban masa, permitiéndoles atraer rocas vecinas desde distancias cada vez mayores. En tan solo unos pocos millones de años, millones de pequeños planetesimales se consolidaron en unas docenas de embriones planetarios del tamaño de la Luna o Marte.',
-      'Este periodo fue caótico y turbulento en extremo. Las órbitas de los embriones planetarios se cruzaban con frecuencia, provocando colisiones cataclísmicas entre mundos en crecimiento. Algunos choques destruían por completo los embriones, esparciendo fragmentos que luego volvían a reunirse en un ciclo interminable de destrucción y reconstrucción geológica.',
-      'Gracias a la acreción desbocada, los embriones más grandes dominaron rápidamente sus zonas orbitales. Estos gigantes sobrevivientes continuaron devorando todo el material rocoso disponible a su paso, preparándose para el capítulo final de su transformación en los cuatro planetas interiores que conocemos en la actualidad.'
+    "id": "acrecion-planetesimales",
+    "bannerImage": "/assets/rocosos/infographic_m1/banner_acrecion-planetesimales.webp",
+    "title": "Acreción de Planetesimales",
+    "color": "#EFE9F4",
+    "btnImage": "/assets/rocosos/infographic_m1/btn_acrecion-planetesimales.jpg",
+    "image": "/assets/rocosos/infographic_m1/hero_acrecion-planetesimales.jpg",
+    "content": [
+      "El paso físico desde partículas microscópicas de polvo aglomeradas por fuerzas electrostáticas hasta bloques macroscópicos de tamaño kilométrico representó uno de los enigmas más desafiantes de la astrofísica planetaria. Cuando los agregados minerales alcanzaban tamaños de entre un centímetro y un metro, las colisiones mutuas a velocidades superiores a un metro por segundo dejaban de provocar adhesión y causaban la fragmentación destructiva o el rebote elástico de los granos.",
+      "Asimismo, los objetos de un metro de diámetro experimentaban una intensa fuerza de arrastre aerodinámico con el gas del disco en rotación subkepleriana, perdiendo momento angular de forma catastrófica y precipitándose en espiral hacia el Sol en menos de cien años (la conocida 'barrera del metro'). Para eludir esta barrera destructiva, la naturaleza recurrió a procesos hidrodinámicos colectivos conocidos en la actualidad como inestabilidad de flujo (streaming instability).",
+      "La inestabilidad de flujo provoca que miríadas de guijarros milimétricos se concentren de forma espontánea en filamentos y vórtices turbulentos de altísima densidad dentro del plano medio del disco protoplanetario. Cuando la densidad local de partículas sólidas en estos cúmulos superó la densidad crítica de Roche, las concentraciones de guijarros colapsaron repentinamente bajo su propia auto-gravedad mutua, originando directamente planetesimales sólidos de entre diez y cien kilómetros de diámetro.",
+      "Una vez formados estos planetesimales masivos, la dinámica de colisión pasó a ser gobernada por la atracción gravitatoria newtoniana. En esta etapa comenzó la fase de crecimiento acelerado desbocado (runaway growth): el planetesimal más grande de una zona orbital incrementaba su sección eficaz de captura gravitatoria de forma desproporcionada, devorando a sus vecinos a un ritmo astronómico muy superior al de los cuerpos menores circundantes.",
+      "En el transcurso de solo unos pocos cientos de miles de años, el crecimiento desbocado dio paso al crecimiento oligárquico, en el cual unas pocas docenas de grandes embriones planetarios o protoplanetas (con masas comparables a la de la Luna o Marte) barrieron por completo sus zonas de alimentación orbital, quedando aislados en órbitas casi circulares a la espera de las colisiones gigantescas finales."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El cinturón de asteroides situado entre Marte y Júpiter es en realidad un fósil viviente de esta época de acreción. La gigantesca gravedad de Júpiter agitó tanto esa región que impidió que los planetesimales allí reunidos pudieran unirse para formar un planeta completo.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La velocidad de escape de un planetesimal de diez kilómetros de diámetro es de solo unos pocos metros por segundo. Esto significa que un astronauta podría saltar de su superficie hacia el espacio profundo usando únicamente la fuerza de sus piernas.' }
-    ],
-    fact: 'El término acreción proviene del latín "accretio", que significa aumento o crecimiento. En astrofísica describe el proceso acumulativo por el cual la materia atraída gravitacionalmente forma cuerpos astronómicos masivos.',
+    "fact": "La formación de planetesimales superó la barrera destructiva del metro gracias a la inestabilidad de flujo, un mecanismo hidrodinámico por el cual densos cúmulos de guijarros colapsaron por gravedad propia, originando directamente cuerpos de decenas de kilómetros que luego crecieron por acreción gravitatoria.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La teoría de acreción por arrastre de guijarros (pebble accretion) formulada por Anders Johansen demuestra que los embriones protoplanetarios capturan guijarros con una eficiencia aerodinámica cientos de veces mayor que la colisión directa entre grandes rocas, permitiendo que embriones de tamaño lunar crecieran en apenas un millón de años."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El objeto transneptuniano Arrokoth, fotografiado de cerca en 2019 por la sonda New Horizons de la NASA en el Cinturón de Kuiper, es un cuerpo binario de contacto con dos lóbulos aplanados unidos suavemente a baja velocidad, confirmando de forma visual directa que los planetesimales se formaron por colapso gravitatorio suave de nubes locales."
+      }
+    ]
   },
   {
-    id: 'diferenciacion-planetaria',
-              bannerImage: '/assets/rocosos/infographic_m1/banner_diferenciacion-planetaria.webp',
-    title: 'Diferenciación Química',
-    color: '#FFD166',
-    btnImage: '/assets/rocosos/infographic_m1/btn_diferenciacion-planetaria.jpg',
-    image: '/assets/rocosos/infographic_m1/hero_diferenciacion-planetaria.jpg',
-    content: [
-      'Durante la fase de intensa acreción, la enorme energía de las colisiones constantes y la descomposición de elementos radiactivos generaron un calor descomunal. Los jóvenes protoplanetas se calentaron tanto que sus estructuras se derritieron por completo, convirtiéndose en esferas de magma ardiente flotando en la oscuridad. Este estado líquido permitió que ocurriera la diferenciación química.',
-      'Imagínate un frasco con una mezcla de agua, aceite y arena bien agitada. Si dejas reposar el frasco, los componentes se separan según su densidad: la arena pesada se hunde al fondo, el agua se queda en el medio y el aceite ligero flota en la superficie. Eso mismo le sucedió a los protoplanetas rocosos en escala astronómica mientras estaban fundidos.',
-      'Los elementos más densos y pesados, principalmente el hierro y el níquel fundidos, se hundieron inexorablemente hacia el centro mismo del planeta debido a la atracción gravitatoria. Esta impresionante migración de metal líquido hacia el interior profundo formó un núcleo metálico masivo, el motor magnético y el corazón denso de cada planeta rocoso.',
-      'Al mismo tiempo, los silicatos y minerales más ligeros, ricos en aluminio, sodio y silicio, flotaron hacia la superficie como la espuma en una sopa hirviendo. Al enfriarse al contacto con el frío espacio externo, esta capa flotante se solidificó para formar el manto y la delgada corteza exterior que pisamos en los mundos sólidos.',
-      'La diferenciación química cambió para siempre el destino de los planetas interiores. Gracias a la creación de núcleos metálicos densos envueltos en mantos de silicato, estos mundos adquirieron la estructura interna en capas que les permitiría en el futuro generar campos magnéticos, tectónica de placas y una rica actividad volcánica.'
+    "id": "diferenciacion-planetaria",
+    "bannerImage": "/assets/rocosos/infographic_m1/banner_diferenciacion-planetaria.webp",
+    "title": "Diferenciación Química",
+    "color": "#FFD166",
+    "btnImage": "/assets/rocosos/infographic_m1/btn_diferenciacion-planetaria.jpg",
+    "image": "/assets/rocosos/infographic_m1/hero_diferenciacion-planetaria.jpg",
+    "content": [
+      "A medida que los embriones protoplanetarios superaban los quinientos kilómetros de diámetro, sus interiores experimentaron un drástico incremento de temperatura inducido por tres fuentes termodinámicas masivas: la conversión de energía cinética en calor durante las violentas colisiones de acreción, la compresión adiabática gravitacional interna de los materiales rocosos y, primordialmente, el decaimiento radiactivo de radioisótopos de vida corta.",
+      "Entre estos radionucleidos extintos, el aluminio-26 (con una vida media de apenas setecientos diecisiete mil años) y el hierro-60 liberaron colosales cantidades de energía térmica en los primeros dos millones de años del Sistema Solar. Esta potencia térmica superó el punto de fusión de los metales y silicatos, derritiendo total o parcialmente los cuerpos protoplanetarios y transformándolos en esferas de magma fluido sujetas a separación gravitacional por densidades.",
+      "En este estado fundido se desencadenó el evento geofísico conocido como la catástrofe del hierro: las gotas densas de hierro y níquel metálicos líquidos, al ser significativamente más pesadas que la matriz silicatada circundante, migraron hacia el centro de gravedad del protoplaneta a través de percolación intergranular y diapirismo diapírico masivo, segregando un núcleo metálico central compacto de altísima densidad.",
+      "Al hundirse, el hierro arrastró consigo a los elementos químicos altamente siderófilos (afines al hierro según la clasificación geoquímica de Goldschmidt), entre ellos el platino, el oro, el iridio, el osmio, el paladio y el níquel, despojando a las capas exteriores de estos metales preciosos. Simultáneamente, los silicatos ligeros de magnesio, calcio, sodio y aluminio ascendieron flotando hacia la superficie para formar un manto peridotítico y una protocorteza.",
+      "La diferenciación geoquímica es el prerrequisito geodinámico indispensable que definió la anatomía de los cuatro planetas terrestres: dotó a Mercurio, Venus, la Tierra y Marte de núcleos metálicos conductores capaces de generar dínamo magnética, mantos convectivos capaces de sostener vulcanismo y tectonismo, y cortezas exteriores ricas en elementos litófilos sobre las cuales pudieron asentarse atmósferas e hidrosferas estables."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El calor liberado por la caída del hierro hacia el centro de la Tierra durante la diferenciación fue tan inmenso que liberó suficiente energía para derretir el planeta entero varias veces consecutivas, acelerando la separación química de todos los elementos conocidos.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los elementos llamados "siderófilos" o afines al hierro, como el oro, el platino y el níquel, se hundieron casi por completo en el núcleo terrestre durante este periodo. El oro que minamos hoy en la corteza llegó mucho después mediante impactos de meteoritos tardíos.' }
-    ],
-    fact: 'La densidad media de la corteza terrestre es de solo 2.7 gramos por centímetro cúbico, mientras que la densidad del núcleo metálico supera los 12 gramos por centímetro cúbico, demostrando la separación perfecta producida por la diferenciación.',
+    "fact": "La diferenciación planetaria segregó a los protoplanetas fundidos en capas concéntricas de densidad: el decaimiento radiactivo del aluminio-26 fundió la roca, provocando que el hierro y níquel densos migraran al núcleo profundo mientras los silicatos ligeros flotaron formando el manto y la corteza superficial exterior.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La energía potencial gravitatoria liberada exclusivamente por la caída del hierro hacia el núcleo de la Tierra liberó aproximadamente 1.6 x 10^31 julios de calor, suficiente energía para elevar la temperatura de todo el planeta en más de mil grados Celsius y mantener el manto superior completamente fundido durante decenas de millones de años."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Todo el oro y platino que se extrae actualmente en las minas terrestres llegó mucho después de la diferenciación a través del 'barniz tardío' (late veneer): una lluvia de asteroides que impactó la Tierra una vez que la corteza ya se había solidificado, impidiendo que estos metales se hundieran para siempre en el inaccesible núcleo."
+      }
+    ]
   },
   {
-    id: 'linea-de-nieve',
-              bannerImage: '/assets/rocosos/infographic_m1/banner_linea-de-nieve.webp',
-    title: 'La Línea de Nieve',
-    color: '#4ECDC4',
-    btnImage: '/assets/rocosos/infographic_m1/btn_linea-de-nieve.jpg',
-    image: '/assets/rocosos/infographic_m1/hero_linea-de-nieve.jpg',
-    content: [
-      'En el disco protoplanetario existía una frontera invisible pero fundamental para el mapa del Sistema Solar llamada la línea de nieve o línea de hielo. Esta frontera marcaba la distancia exacta desde el Sol donde la temperatura descendía lo suficiente como para que el agua, el metano y el amoníaco pudieran congelarse en granos de hielo sólido en lugar de permanecer como gases.',
-      'Piensa en la línea de nieve como la línea de congelación de una gran montaña. En la base de la montaña hace calor y la lluvia cae como agua líquida; pero a partir de cierta altitud hace tanto frío que el agua se transforma en nieve permanente. En nuestro Sistema Solar, esta frontera se ubicaba a unas tres unidades astronómicas del Sol, cerca de la órbita actual de Júpiter.',
-      'Por dentro de la línea de nieve, el calor solar evaporaba todos los hielos y gases volátiles. Los embriones planetarios en esta zona interior solo disponían de silicatos y metales sólidos para crecer. Dado que las rocas representan una fracción muy pequeña del material del disco, los planetas interiores como Mercurio, Venus, la Tierra y Marte nacieron pequeños y densos.',
-      'Por fuera de la línea de nieve, el hielo de agua era abundantísimo, superando con creces la cantidad de roca disponible. Los núcleos planetarios en esta región lejana pudieron acumular montañas gigantescas de hielo rápidamente hasta volverse tan masivos que su gravedad atrapó enormes atmósferas de gas, creando a los colosos Júpiter y Saturno.',
-      'La línea de nieve actuó como un arquitecto espacial definiendo la naturaleza dual de nuestro sistema. Dividió los mundos en dos familias distintas: los mundos rocosos interiores, compactos y calientes, y los gigantes gaseosos y helados exteriores, gigantescos y envueltos en congeladas atmósferas turbulentas.'
+    "id": "linea-de-nieve",
+    "bannerImage": "/assets/rocosos/infographic_m1/banner_linea-de-nieve.webp",
+    "title": "La Línea de Nieve",
+    "color": "#4ECDC4",
+    "btnImage": "/assets/rocosos/infographic_m1/btn_linea-de-nieve.jpg",
+    "image": "/assets/rocosos/infographic_m1/hero_linea-de-nieve.jpg",
+    "content": [
+      "En la arquitectura física del disco protoplanetario existía un límite termodinámico fundamental conocido en astrofísica como la línea de congelación o línea de nieve del agua. Esta demarcación radial invisible señalaba la distancia heliocéntrica a partir de la cual la temperatura del gas caía por debajo de aproximadamente ciento cincuenta a ciento setenta kelvin a las presiones de la nebulosa, permitiendo que las moléculas de agua pasaran directamente de vapor a cristales de hielo sólido.",
+      "En las fases formativas iniciales del Sistema Solar, esta frontera de condensación de volátiles se localizaba a una distancia aproximada de entre dos punto siete y tres punto dos unidades astronómicas del Sol, situándose en la región que actualmente ocupa la porción exterior del Cinturón Principal de Asteroides. Su posición no fue estática, sino que migró dinámicamente hacia el interior a medida que el disco se enfriaba y reducía su tasa de acreción estelar.",
+      "Por dentro de la línea de nieve, la intensa radiación solar impedía la condensación de compuestos volátiles como agua, metano, monóxido de carbono y amoníaco en fases sólidas. En consecuencia, los embriones planetarios en la zona interior solo contaron con silicatos minerales y granos metálicos para ensamblarse, los cuales representaban conjuntamente menos del cero punto seis por ciento de la masa total de la nebulosa circundante.",
+      "Por fuera de la línea de nieve, la condensación masiva del hielo de agua multiplicó por cuatro o cinco la densidad superficial de materia sólida disponible por unidad de superficie en el disco. Esta colosal abundancia de hielos permitió que los núcleos planetarios exteriores crecieran a velocidades astronómicamente vertiginosas, alcanzando la masa crítica de diez masas terrestres requerida para desencadenar el colapso gravitatorio de gas circundante y engendrar a Júpiter.",
+      "La línea de nieve funcionó así como la gran frontera demográfica del Sistema Solar, imponiendo la dicotomía planetaria definitiva: al interior, cuatro mundos rocosos de pequeño diámetro y alta densidad media que nacieron secos y desprovistos de cubiertas volátiles masivas; al exterior, gigantes gaseosos y mundos helados provistos de colosales envolturas de hidrógeno y mantos de criohielo."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La posición de la línea de nieve no fue fija; se movió hacia adentro y hacia afuera a medida que el Sol joven variaba su brillo y el disco protoplanetario se volvía más delgado con el paso de los millones de años.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'En otros sistemas planetarios lejanos, la línea de nieve se encuentra a distancias diferentes dependiendo de la masa y luminosidad de la estrella central. Las estrellas enanas rojas frías tienen sus líneas de nieve extremadamente cerca de su superficie.' }
-    ],
-    fact: 'El término técnico preciso es "línea de congelación del agua", aunque también existen líneas de nieve secundarias para el monóxido de carbono y el nitrógeno ubicadas mucho más lejos en el espacio profundo.',
+    "fact": "La línea de nieve del agua, situada aproximadamente a tres unidades astronómicas en la nebulosa primitiva, separó los mundos rocosos interiores desprovistos de hielo de los gigantes exteriores enriquecidos por una masa de volátiles cinco veces más abundante, definiendo la arquitectura orbital dual del Sistema Solar.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Además de la línea de nieve del agua (a ~170 K), existen líneas de condensación secuenciales para otros gases volátiles: la línea de congelación del dióxido de carbono (~70 K), la del metano (~30 K) y la del monóxido de carbono y nitrógeno (~20 K), cada una situada a distancias sucesivamente mayores del Sol en el Cinturón de Kuiper."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El asteroide enano Ceres se encuentra justo en el borde histórico de la línea de nieve; por esta razón, a diferencia del rocoso asteroide Vesta, Ceres alberga un manto exterior compuesto hasta en un veinticinco por ciento de hielo de agua, sales hidratadas y actividad criovolcánica confirmada por la sonda espacial Dawn."
+      }
+    ]
   },
   {
-    id: 'bombardeo-intenso',
-              bannerImage: '/assets/rocosos/infographic_m1/banner_bombardeo-intenso.webp',
-    title: 'Gran Bombardeo Intenso',
-    color: '#FF007F',
-    btnImage: '/assets/rocosos/infographic_m1/btn_bombardeo-intenso.jpg',
-    image: '/assets/rocosos/infographic_m1/hero_bombardeo-intenso.jpg',
-    content: [
-      'Mucho después de que los planetas rocosos principales hubieran terminado su formación inicial, ocurrió un evento de violencia cósmica sin precedentes conocido como el Gran Bombardeo Intenso Tardío. Hace aproximadamente tres mil ochocientos millones de años, una lluvia torrencial de rocas y cometas gigantescos azotó de forma implacable la superficie de todos los mundos interiores.',
-      'Los científicos creen que este cataclismo fue desencadenado por la migración orbital de los planetas gigantes Júpiter y Saturno. Al moverse de lugar, sus inmensas fuerzas gravitatorias desestabilizaron el cinturón de asteroides primitivo y la Nube de Oort, lanzando billones de cometas y asteroides hacia el Sistema Solar interior como proyectiles en un campo de tiro.',
-      'Imagina el cielo nocturno de la joven Tierra iluminándose continuamente por el impacto rasante de meteoros del tamaño de ciudades enteras. Cada colisión abría cráteres de cientos de kilómetros de ancho, derretía la corteza recién formada y llenaba la atmósfera de vapor de roca ardiente y ceniza tóxica en un espectáculo apocalíptico.',
-      'Las huellas imborrables de esta época de fuego y destrucción aún son visibles hoy en la cara de la Luna y Mercurio. Como estos cuerpos carecen de atmósfera densa o erosión por agua, sus tierras altas están completamente cubiertas de cráteres superpuestos que conservan las cicatrices fosilizadas de aquel tremendo castigo espacial.',
-      'A pesar de su extrema violencia, el Gran Bombardeo trajo consigo un regalo incalculable para la Tierra. Los cometas y asteroides helados procedentes del Sistema Solar exterior que impactaron contra nuestro planeta transportaban gigantescas cantidades de agua y moléculas orgánicas complejas, sembrando los océanos y los bloques fundamentales para la vida.'
+    "id": "bombardeo-intenso",
+    "bannerImage": "/assets/rocosos/infographic_m1/banner_bombardeo-intenso.webp",
+    "title": "Gran Bombardeo Intenso",
+    "color": "#FF007F",
+    "btnImage": "/assets/rocosos/infographic_m1/btn_bombardeo-intenso.jpg",
+    "image": "/assets/rocosos/infographic_m1/hero_bombardeo-intenso.jpg",
+    "content": [
+      "Entre cuatro mil cien y tres mil ochocientos millones de años atrás, varios cientos de millones de años después de completada la fase principal de ensamblaje de los planetas rocosos, el Sistema Solar interior experimentó una cataclísmica reactivación de colisiones a hipervelocidad conocida en la geología planetaria como el Gran Bombardeo Intenso Tardío (Late Heavy Bombardment o LHB).",
+      "La explicación dinámica más respaldada por la comunidad astronómica internacional es el célebre Modelo de Niza, desarrollado en el Observatorio de la Costa Azul en 2005. Este modelo astrodinámico postula que la interacción gravitatoria entre los planetas gigantes gaseosos y un denso disco primordial de planetesimales transneptunianos provocó una lenta migración orbital de Júpiter hacia adentro y de Saturno, Urano y Neptuno hacia afuera.",
+      "Cuando Júpiter y Saturno cruzaron su resonancia orbital mutua de uno a dos (por cada órbita completa de Saturno, Júpiter realizaba exactamente dos), sus perturbaciones gravitacionales combinadas desestabilizaron de forma catastrófica todo el Sistema Solar. Las órbitas de Urano y Neptuno se volvieron caóticas, invadiendo el cinturón exterior y dispersando miles de millones de asteroides y cometas hacia el espacio planetario interior como una letal metralla cósmica.",
+      "Durante esta fase destructiva, la Luna, la Tierra, Mercurio, Venus y Marte fueron acribillados de forma despiadada por proyectiles rocosos de hasta cien kilómetros de diámetro a velocidades superiores a los veinte kilómetros por segundo. Cada impacto excavó gigantescas cuencas multianulares de más de mil kilómetros de diámetro (como Imbrium y Serenitatis en la Luna, o Caloris en Mercurio), fracturando la litosfera de los planetas hasta el manto superior.",
+      "En la Tierra primitiva, este continuo castigo térmico evaporó los océanos primordiales en múltiples ocasiones y reinició repetidamente la protocorteza. Sin embargo, este flujo de impactos transportó también una bendición geoquímica fundamental: los asteroides carbonáceos y cometas desestabilizados depositaron inmensas cantidades de agua, compuestos nitrogenados, aminoácidos y volátiles que reabastecieron la hidrosfera y enriquecieron el caldo primordial previo al surgimiento de la vida."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las muestras de rocas traídas de la Luna por las misiones Apolo permitieron fechar las cuencas de impacto gigantescas como el Mare Imbrium, revelando que casi todos los grandes cráteres lunares se formaron durante un estrecho margen de tiempo de cien millones de años.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La energía liberada por el impacto de un asteroide de diez kilómetros durante el Gran Bombardeo equivalía a la detonación simultánea de millones de bombas de hidrógeno, capaz de hervir capas enteras de los océanos primitivos.' }
-    ],
-    fact: 'El modelo informático más aceptado para explicar la migración planetaria que causó esta lluvia de asteroides se conoce como el Modelo de Niza, desarrollado por investigadores en la ciudad francesa de Niza en 2005.',
+    "fact": "El Gran Bombardeo Intenso Tardío (hace 3,900 millones de años) fue desencadenado por la migración orbital y resonancia gravitatoria de Júpiter y Saturno según el Modelo de Niza, sembrando en la Tierra y planetas rocosos miles de millones de toneladas de agua, carbono y moléculas orgánicas esenciales.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La datación radiométrica de las muestras lunares traídas por los astronautas de las misiones Apolo mediante el método argón-argón (40Ar-39Ar) reveló una concentración anómala de edades de enfriamiento por impacto situadas casi todas entre 3.8 y 3.9 mil millones de años, proporcionando la evidencia empírica directa del LHB."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Si una cuenca de impacto como Imbrium (de mil ciento cuarenta y cinco kilómetros de diámetro) se hubiera formado en la Tierra moderna, la energía liberada habría pulverizado un continente entero, arrojando billones de toneladas de roca fundida en órbita y oscureciendo el cielo global durante décadas enteras."
+      }
+    ]
   },
   {
-    id: 'magma-y-corteza',
-              bannerImage: '/assets/rocosos/infographic_m1/banner_magma-y-corteza.webp',
-    title: 'Océanos de Magma',
-    color: '#E71D36',
-    btnImage: '/assets/rocosos/infographic_m1/btn_magma-y-corteza.jpg',
-    image: '/assets/rocosos/infographic_m1/hero_magma-y-corteza.jpg',
-    content: [
-      'En las etapas finales de su formación, los planetas rocosos estaban cubiertos por verdaderos océanos de magma de cientos de kilómetros de profundidad. La superficie no era suelo firme, sino un mar brillante de lava hirviente a más de dos mil grados Celsius que emitía un resplandor anaranjado hacia la oscuridad del espacio primordial.',
-      'Imagínate un planeta entero cubierto por un lago continuo de lava volcánica similar al del volcán Kilauea en Hawái, pero extendiéndose de polo a polo. La atmósfera sobre este océano ardiente era densa y pesada, compuesta principalmente de vapor de agua, dióxido de carbono y gases de azufre liberados por la roca derretida.',
-      'Con el paso de decenas de millones de años, a medida que el número de impactos gigantes disminuyó y el planeta radió su calor hacia el espacio, el océano de magma comenzó a enfriarse de afuera hacia adentro. Una fina película de roca sólida comenzó a flotar sobre la lava, formando las primeras placas de corteza primigenia.',
-      'Los minerales de alta densidad como la olivina se cristalizaron primero y se hundieron hacia el fondo del manto, mientras que los minerales más ligeros como la plagioclasa flotaron hacia la superficie. Esta cristalización fraccionada creó la corteza basal rica en basalto y anortosita que aún hoy forma el suelo de los mares lunares y la corteza oceánica terrestre.',
-      'El enfriamiento final de estos océanos de magma marcó la transición decisiva de protoplanetas incandescentes a planetas sólidos hechos y derechos. La corteza recién consolidada actuó como una manta protectora aislante, reteniendo el calor interno del planeta y permitiendo que, con el tiempo, la superficie fuera lo bastante estable como para albergar agua y atmósferas duraderas.'
+    "id": "magma-y-corteza",
+    "bannerImage": "/assets/rocosos/infographic_m1/banner_magma-y-corteza.webp",
+    "title": "Océanos de Magma",
+    "color": "#E71D36",
+    "btnImage": "/assets/rocosos/infographic_m1/btn_magma-y-corteza.jpg",
+    "image": "/assets/rocosos/infographic_m1/hero_magma-y-corteza.jpg",
+    "content": [
+      "Durante los estadios postreros de la acreción planetaria, la energía liberada por los gigantescos choques entre protoplanetas —culminando en el caso de la Tierra con el impacto cataclísmico rasante del protoplaneta Tea hace cuatro mil quinientos diez millones de años— suministró suficiente calor cinético como para fundir la totalidad de la envoltura silicatada exterior, originando océanos de magma globales de más de mil kilómetros de profundidad.",
+      "Bajo estas condiciones extremas, la superficie planetaria no poseía solidez mecánica alguna, sino que consistía en un turbulento mar de roca fundida en régimen de convección vigorosa a temperaturas superiores a los dos mil doscientos kelvin. Sobre este océano ardiente pesaba una atmósfera densa y asfixiante de vapor de agua supercrítico, monóxido de carbono, metano y sílice gaseosa a presiones de varios cientos de atmósferas terrestres.",
+      "A medida que la tasa de impactos gigantes decayó y el calor primordial comenzó a radiarse al espacio exterior a través de la atmósfera opaca, el océano de magma experimentó una cristalización fraccionada sujeta a las leyes de equilibrio de fases de la termodinámica de silicatos. En las profundidades basales del manto, la alta presión forzó la solidificación inicial de la bridgmanita y el olivino rico en magnesio, los cuales se hundieron al fondo mantélico.",
+      "En cuerpos planetarios de menor gravedad superficial como la Luna primitiva, la cristalización fraccionada dio lugar a un fenómeno geológico único: los cristales de plagioclasa anortosítica, al ser químicamente menos densos que el líquido magmático residual enriquecido en hierro, flotaron hacia la superficie del océano de magma como cubos de hielo en un vaso de agua, amalgamándose para edificar la corteza primaria anortosítica de las tierras altas lunares.",
+      "En la Tierra, el enfriamiento y la desgasificación masiva de volátiles desde el océano de magma concluyeron en un plazo de diez a cien millones de años. La condensación catastrófica del vapor de agua atmosférico desató lluvias torrenciales incesantes que duraron miles de años, enfriando la corteza basáltica primordial y llenando las depresiones tectónicas para dar nacimiento a los primeros océanos de agua líquida sobre nuestro planeta."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La Luna posee vastas regiones de color claro llamadas tierras altas lunares que están hechas casi enteramente de una roca llamada anortosita. Esta roca es la prueba directa de que la Luna estuvo cubierta por un océano de magma donde estos cristales ligeros flotaron hacia la superficie.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El calor atrapado en el interior profundo de la Tierra desde la época de los océanos de magma primordiales, sumado a la descomposición de elementos radiactivos, es la fuente de energía que mantiene hoy activo el volcán de Hawái y el movimiento de los continentes.' }
-    ],
-    fact: 'Un océano de magma puede tardar entre diez y cien millones de años en solidificarse por completo dependiendo del grosor de la atmósfera que retenga el calor radiado por el planeta.',
-  },
+    "fact": "Los océanos de magma globales cubrieron la Tierra y la Luna tras los impactos gigantes de acreción; su cristalización fraccionada permitió que los minerales densos como el olivino formaran el manto mientras los silicatos ligeros ascendieron formando la corteza primitiva y liberando vapor de agua para los océanos.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los circones detríticos de Jack Hills en Australia Occidental, datados en hasta cuatro mil cuatrocientos cuatro millones de años, poseen firmas isotópicas de oxígeno-18 que demuestran que la corteza continental y el agua líquida ya existían sobre la Tierra apenas ciento sesenta millones de años después de la solidificación del océano de magma."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las brillantes zonas blanquecinas que se aprecian a simple vista en la Luna llena son precisamente los restos intactos de aquella corteza anortosítica flotante original de hace 4,400 millones de años, conservada prácticamente inalterada gracias a la ausencia de erosión atmosférica y placas tectónicas en el satélite."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_RocososM1() {

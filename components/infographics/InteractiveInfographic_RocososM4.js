@@ -91,145 +91,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'tectonica-de-placas',
-              bannerImage: '/assets/rocosos/infographic_m4/banner_tectonica-de-placas.webp',
-    title: 'Tectónica de Placas',
-    color: '#2A9D8F',
-    btnImage: '/assets/rocosos/infographic_m4/btn_tectonica-de-placas.webp',
-    image: '/assets/rocosos/infographic_m4/hero_tectonica-de-placas.webp',
-    content: [
-      'La Tierra es el único planeta conocido en todo el universo que posee una tectónica de placas activa y continua. Su corteza exterior no es una cáscara rígida de una sola pieza como en Mercurio o Marte, sino un rompecabezas gigante compuesto por una docena de placas litosféricas rígidas que flotan y se deslizan lentamente sobre el manto caliente y viscoso.',
-      'Imagínate las placas tectónicas como los bloques de hielo flotando en la superficie de un lago en deshielo. Donde dos placas se separan, el magma sube desde las profundidades para crear nueva corteza oceánica; donde dos placas chocan, una se hunde por debajo de la otra hacia el manto en un proceso llamado subducción, reciclando la rocas viejas.',
-      'Este reciclaje continuo de corteza es vital para la salud del planeta. Actúa como una cinta transportadora gigante que arrastra minerales, agua y compuestos de carbono desde la superficie hacia el interior de la Tierra, devolviéndolos más tarde a través de erupciones volcánicas controladas.',
-      'Gracias a la tectónica de placas, la Tierra ha construido continentes elevados, profundas fosas marinas y majestuosas cadenas montañosas como los Himalayas y los Andes. El movimiento constante de las placas renueva continuamente los nutrientes minerales en el suelo, permitiendo la fertilidad de los ecosistemas.',
-      'Sin tectónica de placas, la Tierra habría quedado congelada geológicamente hace miles de millones de años, convirtiéndose en un mundo plano y estéril sin montañas, sin ciclo de nutrientes y sin la capacidad de regular su clima a largo plazo.'
+    "id": "tectonica-de-placas",
+    "bannerImage": "/assets/rocosos/infographic_m4/banner_tectonica-de-placas.webp",
+    "title": "Tectónica de Placas",
+    "color": "#2A9D8F",
+    "btnImage": "/assets/rocosos/infographic_m4/btn_tectonica-de-placas.webp",
+    "image": "/assets/rocosos/infographic_m4/hero_tectonica-de-placas.webp",
+    "content": [
+      "La Tierra es el único cuerpo planetario conocido en todo el Sistema Solar que posee un régimen geodinámico de tectónica de placas activo y continuo. A diferencia de las litosferas de placa única rígida e inmóvil que recubren a Mercurio, Marte o la Luna, la litosfera terrestre se encuentra fragmentada en más de una docena de placas tectónicas rígidas mayores y menores que flotan, colisionan y se deslizan sobre la astenosfera viscosa subyacente.",
+      "El motor termodinámico primordial que impulsa este movimiento es la convección térmica del manto terrestre combinada con la fuerza dominante de tirón de placa (slab pull): cuando una placa oceánica fría y densa envejece, se hidrata y se metamorfosea en eclogita densa, hundiéndose gravitatoriamente en las zonas de subducción hacia las profundidades del manto, arrastrando tras de sí al resto del lecho oceánico con una fuerza colosal.",
+      "En las dorsales centro-oceánicas divergentes, la descompresión adiabática del manto ascendente funde la peridotita y genera basalto magmático nuevo, creando lecho marino continuo a un ritmo de dos a diez centímetros por año. En los bordes convergentes destructivos, la placa subducente recicla agua, sedimentos ricos en carbono y minerales hidratados hacia el interior profundo, reinyectándolos gradualmente a través de arcos volcánicos.",
+      "Este incesante reciclaje litosférico renueva por completo toda la corteza oceánica del planeta cada doscientos millones de años, impidiendo que el lecho marino conserve cicatrices de impacto antiguas. En contraste, la corteza continental es químicamente félsica, ligera y boyante (compuesta mayoritariamente por granitos y andesitas de densidad inferior a dos punto ocho gramos por centímetro cúbico), lo que evita su subducción y preserva cratones de hasta cuatro mil millones de años.",
+      "La presencia de agua líquida en superficie es el catalizador reológico indispensable que hace posible la tectónica de placas terrestre: el agua percola en las fallas, hidrata los minerales silicatados del manto como la serpentina y reduce drásticamente la viscosidad y fricción en la base litosférica, impidiendo que la corteza se suelde rígidamente en un casquete inerte como sucedió en el reseco y ardiente Venus."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las placas tectónicas de la Tierra se mueven a una velocidad media de entre dos y diez centímetros por año, exactamente la misma velocidad a la que crecen las uñas de tus manos.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La presencia de agua líquida en los minerales del manto actúa como un lubricante esencial que permite que las placas se deslicen suavemente sobre el astenosfera sin atancarse permanentemente.' }
-    ],
-    fact: 'Toda la corteza oceánica de la Tierra es extremadamente joven en términos geológicos; se renueva por completo cada 200 millones de años gracias al proceso de subducción.',
+    "fact": "La Tierra es el único planeta con tectónica de placas activa, impulsada por la convección del manto y el tirón gravitatorio de placas frías en subducción; este proceso renueva la corteza oceánica cada doscientos millones de años y requiere la lubricación del agua líquida para evitar que la litosfera se vuelva rígida.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad media del desplazamiento relativo de las placas tectónicas terrestres oscila entre uno y quince centímetros anuales (la placa de Nazca es una de las más rápidas a casi diez centímetros por año), un ritmo idéntico a la tasa biológica de crecimiento de las uñas humanas a lo largo de una vida."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los minerales del manto terrestre en la zona de transición a más de cuatrocientos kilómetros de profundidad (como la ringwoodita y wadsleyita) contienen atrapada en sus estructuras cristalinas hidratadas tanta agua ligada químicamente como la suma total de todos los océanos superficiales combinados."
+      }
+    ]
   },
   {
-    id: 'escudo-magnetico',
-              bannerImage: '/assets/rocosos/infographic_m4/banner_escudo-magnetico.webp',
-    title: 'Escudo Magnético',
-    color: '#48CAE4',
-    btnImage: '/assets/rocosos/infographic_m4/btn_escudo-magnetico.webp',
-    image: '/assets/rocosos/infographic_m4/hero_escudo-magnetico.webp',
-    content: [
-      'En el corazón profundo de la Tierra gira un motor colosal e invisible llamado la geodinamo. Este motor se ubica en el núcleo externo, una capa de hierro y níquel líquidos de dos mil doscientos kilómetros de grosor que gira continuadamente debido a la rotación del planeta y al calor que asciende desde el centro sólido.',
-      'El movimiento fluido del hierro metálico conductor genera corrientes eléctricas gigantescas que producen un potente campo magnético dipolar rodeando la Tierra. Este campo magnético se extiende decenas de miles de kilómetros hacia el espacio exterior, creando un escudo protector conocido como la magnetosfera.',
-      'Imagina la magnetosfera como un campo de fuerza invisible rodeando una nave espacial. Su función principal es desviar el viento solar, un flujo constante de partículas subatómicas de alta energía expulsadas por el Sol a más de un millón de kilómetros por hora que arrasaría cualquier atmósfera indefensa.',
-      'Sin nuestro escudo magnético, el viento solar habría arrancado la atmósfera terrestre poco a poco, exactamente igual a como le sucedió a Marte en el pasado. El agua de los océanos se habría evaporado y la superficie estaría expuesta a una radiación cósmica letal para la vida.',
-      'A veces, las partículas solares atrapadas en los bordes del campo magnético son canalizadas hacia los polos magnéticos del planeta. Al chocar contra los gases de la alta atmósfera, estas partículas emiten luces brillantes y coloridas de tonos verdes, violetas y azules conocidas como las hermosas auroras boreales y australes.'
+    "id": "escudo-magnetico",
+    "bannerImage": "/assets/rocosos/infographic_m4/banner_escudo-magnetico.webp",
+    "title": "Escudo Magnético",
+    "color": "#48CAE4",
+    "btnImage": "/assets/rocosos/infographic_m4/btn_escudo-magnetico.webp",
+    "image": "/assets/rocosos/infographic_m4/hero_escudo-magnetico.webp",
+    "content": [
+      "A dos mil novecientos kilómetros de profundidad bajo la superficie terrestre, en la frontera entre el manto silicatado y el núcleo, opera el generador electromagnético más poderoso de los mundos terrestres: la geodinamo. Este mecanismo físico se aloja en el núcleo externo, una colosal capa de dos mil doscientos sesenta kilómetros de espesor compuesta por una aleación líquida supercaliente de hierro y níquel enriquecida con elementos ligeros como silicio y azufre.",
+      "La combinación de la convección térmica vigorosa provocada por el enfriamiento del planeta y la rápida rotación de la Tierra sobre su eje (fuerza de Coriolis) organiza el flujo del hierro metálico fundido en columnas cilíndricas helicoidales paralelas al eje de rotación. Al ser el hierro un fluido conductor de electricidad, este movimiento turbulento genera gigantescas corrientes eléctricas que autoinducen y sostienen un potente campo magnético dipolar.",
+      "El campo magnético emerge desde el interior y se proyecta decenas de miles de kilómetros hacia el vacío interplanetario, estructurando una cavidad defensiva invisible denominada magnetosfera. En el punto subsolar diurno expuesto directamente al Sol, la presión del viento solar comprime la magnetopausa hasta unas diez a doce veces el radio terrestre (unos sesenta y cinco mil kilómetros), mientras que en el lado nocturno el campo se extiende en una cola magnética de más de seiscientos mil kilómetros.",
+      "Esta armadura electromagnética desvía el viento solar cargado de protones y electrones de alta energía que viajan a más de cuatrocientos kilómetros por segundo, así como los rayos cósmicos galácticos más destructivos. Sin este escudo protector, la radiación ionizante habría erosionado de forma progresiva la atmósfera terrestre mediante decapado de iones (ion stripping), disipando el vapor de agua y esterilizando la superficie tal como ocurrió en Marte.",
+      "Parte de las partículas energéticas del viento solar quedan temporalmente atrapadas en dos regiones toroidales concéntricas denominadas los Cinturones de Radiación de Van Allen. Durante intensas tormentas geomagnéticas, estas partículas son canalizadas por las líneas de campo hacia las regiones polares, excitando átomos de oxígeno y nitrógeno en la ionosfera para desencadenar el brillante espectáculo visual de las auroras boreales y australes."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El campo magnético de la Tierra no es fijo; invierte su polaridad magnética cada pocos cientos de miles de años, haciendo que el polo norte magnético pase a estar en el sur y viceversa.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Muchos animales migratorios como las aves, las tortugas marinas y las ballenas poseen diminutos cristales de magnetita en sus cerebros que les permiten navegar guiándose por las líneas invisibles del campo magnético terrestre.' }
-    ],
-    fact: 'El campo magnético de la Tierra se extiende hasta unos 65,000 kilómetros en la cara diurna encarada al Sol y más de 600,000 kilómetros en la cola nocturna.',
+    "fact": "La geodinamo en el núcleo externo de hierro líquido de la Tierra genera un campo magnético dipolar que estructura la magnetosfera; este escudo desvía el viento solar y la radiación cósmica hasta más de sesenta y cinco mil kilómetros de altitud, evitando la pérdida de la atmósfera y el agua tal como ocurrió en Marte.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El campo magnético terrestre experimenta inversiones geomagnéticas completas de polaridad a intervalos estadísticos irregulares (en promedio cada trescientos a setecientos mil años), donde el polo norte magnético pasa a ser polo sur; la última inversión completa, el evento Brunhes-Matuyama, ocurrió hace setecientos ochenta mil años."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Numerosas especies biológicas como las palomas mensajeras, las tortugas marinas laúd, las ballenas jorobadas e incluso ciertas bacterias microscópicas contienen biomateriales con nanocristales de magnetita (Fe3O4) en sus tejidos, permitiéndoles orientarse y navegar a escala global mediante magnetorrecepción cuántica."
+      }
+    ]
   },
   {
-    id: 'termostato-carbono',
-              bannerImage: '/assets/rocosos/infographic_m4/banner_termostato-carbono.webp',
-    title: 'Termostato Global',
-    color: '#52B788',
-    btnImage: '/assets/rocosos/infographic_m4/btn_termostato-carbono.jpg',
-    image: '/assets/rocosos/infographic_m4/hero_termostato-carbono.jpg',
-    content: [
-      '¿Cómo ha logrado la Tierra mantener una temperatura habitable y océanos líquidos durante más de cuatro mil millones de años a pesar de que el Sol se ha vuelto un treinta por ciento más brillante desde su nacimiento? La respuesta radica en el ciclo del carbono-silicato, el termostato natural del planeta.',
-      'Este termostato funciona mediante un bucle de retroalimentación negativa perfecto. Cuando el planeta se calienta demasiado, la evaporación del agua aumenta y se producen más lluvias. El agua de lluvia disuelve el dióxido de carbono del aire, formando un ácido débil que desgasta las rocas de silicato en los continentes.',
-      'Los ríos transportan los minerales disueltos y el carbono atrapado hacia los océanos, donde los organismos marinos los utilizan para construir conchas de carbonato de calcio. Al morir estos organismos, sus conchas se acumulan en el fondo del mar, convirtiéndose en rocas calizas y atrapando el carbono de forma permanente.',
-      'Por el contrario, si el planeta se enfría demasiado, la lluvia disminuye y el desgaste de las rocas se frena. Sin embargo, los volcanes continúan expulsando dióxido de carbono a la atmósfera de forma constante. La acumulación gradual del gas aumenta el efecto invernadero, calentando nuevamente el planeta.',
-      'Este mecanismo autorregulador ha salvado a la Tierra de congelaciones eternas y de incendios globales insostenibles, manteniendo la temperatura media del planeta en unos confortables quince grados Celsius aptos para la prosperidad de la vida.'
+    "id": "termostato-carbono",
+    "bannerImage": "/assets/rocosos/infographic_m4/banner_termostato-carbono.webp",
+    "title": "Termostato Global",
+    "color": "#52B788",
+    "btnImage": "/assets/rocosos/infographic_m4/btn_termostato-carbono.jpg",
+    "image": "/assets/rocosos/infographic_m4/hero_termostato-carbono.jpg",
+    "content": [
+      "Uno de los misterios más profundos de la astrofísica planetaria es cómo la Tierra ha logrado conservar océanos de agua líquida y temperaturas habitables casi ininterrumpidas a lo largo de cuatro mil millones de años, a pesar de que el Sol primitivo era entre un veinticinco y un treinta por ciento menos luminoso en el Arcaico (la paradoja del Sol joven y débil). La clave de esta asombrosa estabilidad climática reside en el ciclo geoquímico silicato-carbonato.",
+      "Formalizado en 1981 por los geocientíficos James Walker, Paul Hays y James Kasting, este ciclo biogeoquímico funciona como un termostato de retroalimentación negativa autorregulador a escala planetaria. El dióxido de carbono presente en el aire se disuelve en las gotas de lluvia formando ácido carbónico diluido; este ácido ataca químicamente las rocas continentales de silicato (meteorización química), liberando iones de calcio y bicarbonato solubles.",
+      "Los ríos transportan estos iones disueltos hacia los océanos globales, donde organismos marinos planctónicos y corales los combinan metabólicamente para construir conchas y exoesqueletos de carbonato de calcio. Cuando estos seres mueren, sus caparazones precipitan en el lecho abisal formando extensas plataformas de roca caliza sedimentaria, sepultando de forma permanente el carbono atmosférico en la corteza terrestre.",
+      "Posteriormente, la cinta transportadora de la tectónica de placas subduce estas rocas calizas hacia el manto caliente; a presiones y temperaturas metamórficas elevadas, el carbonato de calcio reacciona con el cuarzo (descarbonatación térmica), liberando nuevamente dióxido de carbono gaseoso que asciende a través de plumas volcánicas para ser devuelto a la atmósfera, completando un ciclo que tarda unos quinientos mil años por vuelta.",
+      "Si la Tierra se calienta excesivamente, la evaporación oceánica y las lluvias aumentan, acelerando la meteorización de silicatos y capturando más dióxido de carbono de la atmósfera para enfriar el planeta. Si el planeta se congela, las lluvias y la meteorización se detienen por completo mientras los volcanes continúan emitiendo gas sin tregua, acumulando efecto invernadero hasta derretir el hielo en un equilibrio perfecto."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El ciclo del carbono a largo plazo tarda unos 500,000 años en completar una vuelta entera, moviendo miles de billones de toneladas de carbono entre la atmósfera, las rocas y los océanos.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Las rocas calizas y sedimentarias de la corteza terrestre contienen atrapado más del 99.9% de todo el carbono de la Tierra, evitando que pase a la atmósfera en forma de gas invernadero.' }
-    ],
-    fact: 'El ciclo del carbono-silicato fue propuesto en 1981 por los científicos James Kasting, James Walker y Paul Hays como el mecanismo clave de autorregulación climática terrestre.',
+    "fact": "El ciclo geoquímico silicato-carbonato actúa como el termostato natural autorregulador de la Tierra: la lluvia y meteorización de silicatos retiran dióxido de carbono del aire para enterrarlo como roca caliza oceánica, mientras los volcanes lo reinyectan, manteniendo temperaturas estables a lo largo de eones.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Más del noventa y nueve punto nueve por ciento de todo el inventario de carbono de la Tierra (más de cien millones de gigatoneladas) se encuentra atrapado de forma segura en las rocas sedimentarias de caliza y lutitas de la corteza, evitando que una masa letal de gas cree un efecto invernadero desbocado semejante al de Venus."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante las glaciaciones globales del Neoproterozoico (hace unos setecientos millones de años), cuando la Tierra se convirtió en una bola de nieve helada de polo a polo, el termostato de carbono salvó al planeta: al frenarse la lluvia, el dióxido de carbono volcánico se acumuló durante millones de años hasta derretir el hielo."
+      }
+    ]
   },
   {
-    id: 'oceanos-y-agua',
-              bannerImage: '/assets/rocosos/infographic_m4/banner_oceanos-y-agua.webp',
-    title: 'Océanos Líquidos',
-    color: '#0077B6',
-    btnImage: '/assets/rocosos/infographic_m4/btn_oceanos-y-agua.webp',
-    image: '/assets/rocosos/infographic_m4/hero_oceanos-y-agua.webp',
-    content: [
-      'Visto desde el espacio profundo, nuestro hogar es un deslumbrante punto azul. La Tierra es el único planeta conocido del Sistema Solar donde el agua existe de forma estable en sus tres estados físicos simultáneamente: hielo sólido en los polos, vapor gaseoso en las nubes y agua líquida en los océanos.',
-      'Los océanos cubren más del setenta y uno por ciento de la superficie terrestre y contienen más de mil trescientos cincuenta millones de kilómetros cúbicos de agua. Esta masa líquida actúa como un gigantesco acumulador térmico que absorbe el calor del Sol en el ecuador y lo distribuye hacia los polos mediante corrientes marinas.',
-      'El agua líquida posee propiedades químicas extraordinarias que la convierten en el solvente universal perfecto para la biología. Permite que las moléculas orgánicas se disuelvan, reaccionen entre sí y formen las estructuras complejas necesarias para la vida celular.',
-      'La posición orbital de la Tierra, ubicada en el centro exacto de la zona de habitabilidad estelar del Sol, junto con la presión atmosférica adecuada al nivel del mar, permite que el agua permanezca en su punto triple perfecto sin hervir como en Venus ni congelarse eternamente como en Marte.',
-      'Además de sustentar la biosfera, los océanos participan activamente en la regulación del clima global y en la meteorología continental, generando el ciclo hidrológico de lluvias que alimenta los ríos y lagos de todos los continentes.'
+    "id": "oceanos-y-agua",
+    "bannerImage": "/assets/rocosos/infographic_m4/banner_oceanos-y-agua.webp",
+    "title": "Océanos Líquidos",
+    "color": "#0077B6",
+    "btnImage": "/assets/rocosos/infographic_m4/btn_oceanos-y-agua.webp",
+    "image": "/assets/rocosos/infographic_m4/hero_oceanos-y-agua.webp",
+    "content": [
+      "Observada desde los confines del espacio interplanetario, la Tierra se distingue como un fascinante 'punto azul pálido'. Es el único mundo del Sistema Solar donde el agua no solo existe en abundancia, sino que coexiste de manera termodinámicamente estable en sus tres estados de agregación fundamentales: hielo sólido en las banquisas y glaciares, vapor gaseoso en la atmósfera y agua líquida en la colosal hidrosfera oceánica.",
+      "Los océanos cubren aproximadamente el setenta punto ocho por ciento de la superficie del globo terrestre (más de trescientos sesenta y un millones de kilómetros cuadrados) y albergan un volumen líquido colosal de mil trescientos treinta y dos millones de kilómetros cúbicos de agua. Su profundidad media se sitúa en tres mil seiscientos ochenta y dos metros, alcanzando su abismo máximo en la fosa de las Marianas a casi once mil metros.",
+      "Esta masa líquida omnipresente actúa como un amortiguador térmico planetario indispensable. Gracias al extraordinariamente elevado calor específico del agua (cuatro mil ciento ochenta y cuatro julios por kilogramo kelvin), los océanos absorben ingentes cantidades de calor solar en las franjas ecuatoriales y tropicales sin experimentar cambios bruscos de temperatura, redistribuyéndolo hacia las latitudes polares mediante la circulación termohalina global.",
+      "Asimismo, la condición líquida del agua la consagra como el disolvente universal supremo para los procesos bioquímicos. Al ser una molécula polar provista de enlaces de puente de hidrógeno, el agua líquida facilita la solubilidad de sales minerales, la estabilización de cadenas de nucleótidos y proteínas, y el transporte metabólico de nutrientes y desechos indispensables para la edificación de las estructuras celulares vivas.",
+      "Las investigaciones cosmoquímicas sobre la firma isotópica de deuterio a hidrógeno (D/H) en las aguas oceánicas terrestres demuestran que gran parte de esta inmensa masa líquida no procedió de cometas de la nube exterior, sino de asteroides hidratados de tipo condrita carbonácea procedentes del Cinturón Principal exterior que bombardearon la Tierra durante su acreción tardía hace más de cuatro mil millones de años."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Si la superficie de la Tierra fuera perfectamente lisa sin montañas ni fosas oceánicas, los océanos cubrirían todo el planeta entero con una capa de agua de 2.7 kilómetros de profundidad.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El agua marina posee un calor específico excepcionalmente alto, lo que significa que requiere enormes cantidades de energía para cambiar de temperatura, estabilizando el clima del planeta.' }
-    ],
-    fact: 'Gran parte del agua de los océanos terrestres llegó durante la infancia del planeta mediante el impacto de condritas carbonáceas procedente del cinturón de asteroides exterior.',
+    "fact": "Los océanos cubren el 70.8% de la superficie terrestre con 1,332 millones de km³ de agua; su alto calor específico y la circulación termohalina amortiguan el clima global, mientras sus propiedades de solvente polar permitieron el surgimiento de la bioquímica viva a partir de agua suministrada por condritas carbonáceas.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La relación isotópica de deuterio a hidrógeno (D/H) del agua oceánica de la Tierra es de aproximadamente 1.56 x 10^-4 según el estándar de referencia VSMOW, una firma cosmoquímica que coincide con asombrosa precisión con la composición medida en los filosilicatos y arcillas minerales de meteoritos carbonáceos de tipo CI y CM."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Si se allanara topográficamente todo el relieve de la corteza de la Tierra eliminando cordilleras continentales y fosas abisales, el volumen total de agua oceánica inundaría la totalidad del planeta bajo un océano uniforme continuo de dos mil setecientos metros de profundidad en todos los puntos del globo."
+      }
+    ]
   },
   {
-    id: 'la-luna-estabilizadora',
-              bannerImage: '/assets/rocosos/infographic_m4/banner_la-luna-estabilizadora.webp',
-    title: 'La Luna Estabilizadora',
-    color: '#E9C46A',
-    btnImage: '/assets/rocosos/infographic_m4/btn_la-luna-estabilizadora.jpg',
-    image: '/assets/rocosos/infographic_m4/hero_la-luna-estabilizadora.jpg',
-    content: [
-      'La Tierra posee una compañera espacial extraordinariamente grande para ser un planeta rocoso. Nuestra Luna tiene más de un cuarto del diámetro terrestre, una proporción de tamaño entre satélite y planeta mayor que la de cualquier otro sistema conocido en el Sistema Solar.',
-      'Esta gran masa lunar no es solo un adorno en el cielo nocturno; actúa como un ancla gravitatoria esencial para la estabilidad climática de la Tierra. La atracción gravitatoria de la Luna evita que el eje de rotación de nuestro planeta tambalee de forma caótica a lo largo del tiempo.',
-      'Actualmente, el eje de la Tierra está inclinado veintitrés grados y medio respecto a su órbita, lo que produce la sucesión suave de las cuatro estaciones del año. Gracias a la presencia amortiguadora de la Luna, esta inclinación se mantiene estable variando apenas un grado durante cientos de miles de años.',
-      'En cambio, planetas sin una luna grande como Marte sufren variaciones brutales en su inclinación axial, pasando de cero a más de sesenta grados. Estas oscilaciones caóticas provocan cambios climáticos catastróficos que congelan y descongelan los polos de forma destructiva.',
-      'Adicionalmente, la atracción gravitatoria lunar produce las mareas oceánicas diarias, que mezclan los nutrientes en las zonas costeras y ayudaron en el pasado a que los primeros organismos marinos colonizaran el suelo firme.'
+    "id": "la-luna-estabilizadora",
+    "bannerImage": "/assets/rocosos/infographic_m4/banner_la-luna-estabilizadora.webp",
+    "title": "La Luna Estabilizadora",
+    "color": "#E9C46A",
+    "btnImage": "/assets/rocosos/infographic_m4/btn_la-luna-estabilizadora.jpg",
+    "image": "/assets/rocosos/infographic_m4/hero_la-luna-estabilizadora.jpg",
+    "content": [
+      "La Tierra cuenta con una compañera orbital anómalamente gigantesca en relación con el tamaño de los planetas rocosos del Sistema Solar. Con un diámetro ecuatorial de tres mil cuatrocientos setenta y cuatro kilómetros (más del veintisiete por ciento del diámetro terrestre) y una relación de masas de uno a ochenta y uno punto tres, el sistema Tierra-Luna se comporta gravitatoriamente como un planeta doble coordinado.",
+      "Originada hace cuatro mil quinientos diez millones de años tras el impacto cataclísmico rasante de un protoplaneta del tamaño de Marte bautizado como Tea contra la proto-Tierra en consolidación, la Luna ha desempeñado un papel geofísico insustituible: actúa como un ancla gravitatoria estabilizadora que frena la oscilación caótica del eje de rotación de nuestro planeta a lo largo de escalas temporales de millones de años.",
+      "En la actualidad, la oblicuidad axial de la Tierra respecto al plano de su órbita eclíptica se sitúa en veintitrés punto cuarenta y cuatro grados, variando de forma rítmica y suave entre veintidós punto uno y veinticuatro punto cinco grados cada cuarenta y un mil años. Esta oscilación sumamente estrecha garantiza la alternancia regular de las cuatro estaciones climáticas y evita colapsos meteorológicos extremos en el planeta.",
+      "Los modelos dinámicos de Jacques Laskar en el Observatorio de París demostraron que, en ausencia de la gigantesca atracción lunar, las perturbaciones gravitacionales combinadas de Júpiter y Saturno provocarían que la inclinación axial de la Tierra oscilara caóticamente entre cero y ochenta y cinco grados (como sucede en Marte), desatando glaciaciones ecuatoriales y la ebullición estacional de los casquetes polares.",
+      "Simultáneamente, la fricción de las mareas gravitacionales ejercidas por la Luna sobre los océanos terrestres disipa energía cinética y transfiere momento angular desde el giro del planeta hacia la órbita lunar. Este frenado secular alarga la duración del día terrestre en aproximadamente dos punto tres milisegundos por siglo, forzando a la Luna a alejarse en espiral a una tasa medida de tres punto ochenta y dos centímetros por año."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La Luna se formó hace 4,500 millones de años cuando un protoplaneta del tamaño de Marte llamado Theia chocó de lado contra la joven Tierra, lanzando escombros que se unieron en órbita.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La fricción de las mareas generadas por la Luna frena gradualmente la rotación de la Tierra, haciendo que nuestros días sean unos milisegundos más largos cada siglo.' }
-    ],
-    fact: 'La Luna se está alejando lentamente de la Tierra a una velocidad de 3.8 centímetros por año debido a la transferencia de momento angular por las mareas.',
+    "fact": "La Luna estabiliza gravitatoriamente la oblicuidad del eje terrestre en 23.5 grados, evitando oscilaciones caóticas de hasta 85 grados que habrían destruido la estabilidad climática; además, la fricción de marea oceánica alarga el día en 2.3 milisegundos por siglo y aleja a la Luna 3.8 cm anualmente.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los reflectores retro-láser instalados en el suelo lunar por los astronautas de las misiones Apolo 11, 14 y 15 y los rovers soviéticos Lunojod permiten a los científicos medir la distancia Tierra-Luna con pulsos láser de picosegundos, confirmando la tasa exacta de alejamiento orbital de treinta y ocho punto dos milímetros por año."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Hace cuatro mil millones de años, la Luna orbitaba mucho más cerca de la Tierra (a solo veinticinco mil kilómetros frente a los trescientos ochenta y cuatro mil kilómetros actuales), lo que hacía que el día terrestre durara apenas seis horas y desataba mareas oceánicas colosales de cientos de metros de altura dos veces al día."
+      }
+    ]
   },
   {
-    id: 'oxigenacion-biosfera',
-              bannerImage: '/assets/rocosos/infographic_m4/banner_oxigenacion-biosfera.webp',
-    title: 'La Gran Oxidación',
-    color: '#70E000',
-    btnImage: '/assets/rocosos/infographic_m4/btn_oxigenacion-biosfera.jpg',
-    image: '/assets/rocosos/infographic_m4/hero_oxigenacion-biosfera.jpg',
-    content: [
-      'En sus primeros mil quinientos millones de años, la Tierra era un mundo sin oxígeno libre en el aire. La atmósfera primitiva estaba compuesta de nitrógeno, dióxido de carbono, metano y vapor de agua, y los océanos estaban poblados únicamente por bacterias anaeróbicas primitivas.',
-      'Todo cambió hace unos dos mil cuatrocientos millones de años con la aparición de las cianobacterias, diminutos microorganismos fotosintéticos que aprendieron a utilizar la luz del Sol y el agua para producir energía, liberando oxígeno molecular como residuo metabólico.',
-      'Este evento revolucionario se conoce como la Gran Oxidación. Al principio, el oxígeno producido reaccionó con el hierro disuelto en los océanos, formando gigantescos depósitos de óxido de hierro que hoy minamos como vetas de mineral. Una vez oxidados los mares, el gas comenzó a acumularse masivamente en la atmósfera.',
-      'La acumulación de oxígeno cambió la química planetaria por completo. Formó la capa de ozono en la estratosfera, un escudo ultravioleta esencial que protegió la superficie del planeta contra la radiación solar dañina, permitiendo que la vida saliera del mar a la tierra firme.',
-      'La biosfera terrestre transformó la composición misma de la atmósfera y la geología del planeta, demostrando que la vida no es solo una pasajera en la Tierra, sino una fuerza geofísica capaz de moldear el destino de un mundo rocoso.'
+    "id": "oxigenacion-biosfera",
+    "bannerImage": "/assets/rocosos/infographic_m4/banner_oxigenacion-biosfera.webp",
+    "title": "La Gran Oxidación",
+    "color": "#70E000",
+    "btnImage": "/assets/rocosos/infographic_m4/btn_oxigenacion-biosfera.jpg",
+    "image": "/assets/rocosos/infographic_m4/hero_oxigenacion-biosfera.jpg",
+    "content": [
+      "Durante la primera mitad de la historia geológica de la Tierra, durante los eones Hádico y Arcaico, la atmósfera terrestre carecía casi por completo de oxígeno diatómico libre (su concentración era inferior al cero punto cero cero uno por ciento del nivel actual). El aire primordial estaba dominado por nitrógeno molecular, dióxido de carbono, metano volcánico y vapor de agua en equilibrio reductor anóxico.",
+      "Esta química atmosférica reductora experimentó una revolución radical hace aproximadamente dos mil cuatrocientos millones de años durante el Paleoproterozoico, como resultado directo de una innovación biológica sin parangón: el surgimiento de la fotosíntesis oxigénica en las cianobacterias primitivas, las cuales comenzaron a utilizar la luz solar para disociar moléculas de agua y liberar oxígeno molecular gaseoso como subproducto metabólico.",
+      "Este evento trascendental se conoce como la Gran Oxidación (Great Oxidation Event o GOE). Inicialmente, todo el oxígeno liberado fue absorbido por gigantescos sumideros geoquímicos: reaccionó con el hierro ferroso disuelto en los océanos arcaicos, precipitándolo como óxido férrico insoluble y depositando las colosales Formaciones de Hierro Bandeado (BIFs) que hoy constituyen las mayores reservas minerales de hierro explotadas por la humanidad.",
+      "Una vez saturados y oxidados los océanos y los minerales superficiales, el oxígeno comenzó a fugarse e invadir de forma masiva la troposfera. Al ascender hacia la estratosfera alta, la fotodisociación solar del oxígeno molecular por radiación ultravioleta de longitud de onda corta engendró la capa de ozono (O3), levantando un filtro fotoprotector insustituible que bloqueó los letales rayos ultravioleta UV-B y UV-C.",
+      "La formación del escudo de ozono posibilitó que la vida abandonara los refugios acuáticos profundos y colonizara las superficies continentales secas. La biosfera demostró de este modo ser una fuerza geofísica de primer orden, capaz de remodelar la corteza mineral del planeta y alterar para siempre la composición atmosférica y el balance radiativo de un mundo rocoso."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La Gran Oxidación causó la primera gran extinción masiva de la historia, ya que el oxígeno resultante era tóxico para la mayoría de las bacterias anaeróbicas primitivas de la época.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Las formaciones de hierro bandeado que se encuentran en Australia y Canadá son capas de roca sedimentaria creadas durante la Gran Oxidación al precipitar el hierro de los océanos antiguos.' }
-    ],
-    fact: 'El oxígeno representa el 21% del volumen de la atmósfera terrestre actual, un nivel sostenido activamente por la fotosíntesis de bosques y fitoplancton marino.',
+    "fact": "La Gran Oxidación (hace 2,400 millones de años), impulsada por la fotosíntesis oxigénica de las cianobacterias primitivas, precipitó el hierro disuelto en los mares formando colosales rocas bandeado de hierro e inyectó oxígeno molecular en la atmósfera, originando la capa de ozono que permitió la colonización de la tierra firme.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La inyección masiva de oxígeno durante la Gran Oxidación oxidó el abundante metano atmosférico transformándolo en dióxido de carbono y agua; dado que el metano es un gas de efecto invernadero veinticinco veces más potente, su eliminación precipitó a la Tierra en la severa glaciación global Huroniana de trescientos millones de años."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Antes de la Gran Oxidación existían unos mil quinientos minerales diferentes en la corteza terrestre; la presencia del oxígeno molecular reactivo interactuando con los elementos de la corteza generó más de dos tercios de las cinco mil ochocientas especies minerales que hoy clasifica la mineralogía moderna."
+      }
+    ]
   },
   {
-    id: 'oasis-habitabilidad',
-              bannerImage: '/assets/rocosos/infographic_m4/banner_oasis-habitabilidad.webp',
-    title: 'Ecuación de Habitabilidad',
-    color: '#9B5DE5',
-    btnImage: '/assets/rocosos/infographic_m4/btn_oasis-habitabilidad.webp',
-    image: '/assets/rocosos/infographic_m4/hero_oasis-habitabilidad.webp',
-    content: [
-      'La Tierra es el resultado final de una cadena de coincidencias cósmicas extraordinarias. No es solo la distancia al Sol lo que la hace habitable, sino la combinación perfecta de múltiples factores geológicos, astronómicos y biológicos operando en armonía.',
-      'Tener el tamaño adecuado permitió a la Tierra retener una atmósfera densa sin atrapar demasiado calor como Venus ni perderla en el espacio como Marte. Su núcleo de hierro líquido generó un escudo magnético protector, mientras que la tectónica de placas mantuvo activo el reciclaje de carbono.',
-      'La presencia de una luna grande estabilizó la inclinación de su eje, garantizando estaciones climáticas predecibles, y la Gran Oxidación impulsada por la biosfera creó una capa de ozono protectora y un aire rico en oxígeno para organismos complejos.',
-      'Todos estos elementos interconectados convierten a la Tierra en un oasis de vida flotando en la inmensidad del espacio profundo. Es un sistema autorregulado complejo donde la geología, el clima y la biología se alimentan mutuamente en equilibrio dinámico.',
-      'Comprender la ecuación perfecta de la habitabilidad terrestre es la clave para que los astrónomos busquen exoplanetas rocosos habitables alrededor de otras estrellas en la galaxia, buscando pistas de mundos que hayan logrado este mismo milagro geológico.'
+    "id": "oasis-habitabilidad",
+    "bannerImage": "/assets/rocosos/infographic_m4/banner_oasis-habitabilidad.webp",
+    "title": "Ecuación de Habitabilidad",
+    "color": "#9B5DE5",
+    "btnImage": "/assets/rocosos/infographic_m4/btn_oasis-habitabilidad.webp",
+    "image": "/assets/rocosos/infographic_m4/hero_oasis-habitabilidad.webp",
+    "content": [
+      "La habitabilidad de la Tierra no es el fruto de una única cualidad fortuita, sino el resultado armónico y sinérgico de una intrincada constelación de factores astronómicos, geofísicos y biogeoquímicos operando simultáneamente a lo largo de escalas temporales de miles de millones de años. La ciencia planetaria contemporánea define este equilibrio multivariable como la arquitectura holística de la habitabilidad.",
+      "En el plano astronómico, la Tierra orbita dentro de la Zona de Habitabilidad Circunestelar Continua de una estrella enana amarilla de tipo espectral G2V, cuya vida en la secuencia principal de diez mil millones de años suministra estabilidad fotométrica y radiativa prolongada. Asimismo, la masa planetaria de una masa terrestre exacta proporciona la gravedad superficial necesaria para retener una atmósfera sin atrapar un sofocante manto de hidrógeno.",
+      "En el plano geofísico, el calor remanente y el decaimiento radiactivo sostienen la geodinamo en el núcleo externo y la tectónica de placas en la litosfera, garantizando el reciclaje continuo de nutrientes y el blindaje frente al viento solar. La Luna masiva actúa como balancín orbital manteniendo la oblicuidad climática, mientras la hidrosfera modera las fluctuaciones de temperatura y sustenta la biosfera.",
+      "La vida no es un mero inquilino pasivo, sino un engranaje activo y coconstructor de la habitabilidad planetaria. Al alterar la atmósfera con oxígeno molecular, acelerar la meteorización continental mediante el suelo orgánico y modular el ciclo del carbono, la biosfera terrestre ajusta activamente las condiciones físico-químicas del planeta, asegurando su propia continuidad evolutiva.",
+      "Este conocimiento fundamenta la astrobiología moderna: al buscar vida en exoplanetas rocosos con observatorios como el telescopio espacial James Webb y los futuros telescopios terrestres gigantes de treinta metros, los astrónomos no solo buscan agua líquida, sino biosignaturas combinadas de desequilibrio químico atmosférico (como la coexistencia de metano y oxígeno/ozono) que revelen el latido biogeoquímico de una nueva Tierra."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La hipótesis Gaia, propuesta por James Lovelock en la década de 1970, sugiere que la Tierra funciona como un único sistema vivo autorregulado que ajusta activamente su clima y química para favorecer la vida.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El Índice de Similitud con la Tierra (ESI) es una escala utilizada por los astrofísicos para comparar exoplanetas con la Tierra en función de su radio, densidad, velocidad de escape y temperatura de superficie.' }
-    ],
-    fact: 'La Tierra es el único cuerpo planetario conocido en el universo donde está confirmada científicamente la existencia de vida en cualquiera de sus formas.',
-  },
+    "fact": "La habitabilidad de la Tierra es un equilibrio armónico entre su posición en la zona habitable, la geodinamo protectora, la tectónica de placas recicladora, la estabilidad orbital inducida por la Luna y la biosfera activa, sirviendo como el patrón científico primordial para buscar exoplanetas habitables en la galaxia.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El Índice de Similitud con la Tierra (Earth Similarity Index o ESI) es una escala normalizada entre cero y uno formulada por el Laboratorio de Habitabilidad Planetaria de Arecibo que cuantifica el grado de analogía física de un exoplaneta evaluando cuatro parámetros geométricos: radio medio, densidad aparente, velocidad de escape y temperatura de equilibrio."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La coexistencia simultánea de cantidades mensurables de oxígeno molecular libre (veintiún por ciento) y metano (una punto ocho partes por millón) en la atmósfera terrestre es una anomalía termodinámica imposible sin la presencia activa de la vida, constituyendo la principal 'biofirma en desequilibrio' buscada por los astrónomos en exoplanetas."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_RocososM4() {

@@ -94,145 +94,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'polvo-de-oxido',
-              bannerImage: '/assets/rocosos/infographic_m5/banner_polvo-de-oxido.webp',
-    title: 'El Polvo Oxidado',
-    color: '#E63946',
-    btnImage: '/assets/rocosos/infographic_m5/btn_polvo-de-oxido.webp',
-    image: '/assets/rocosos/infographic_m5/hero_polvo-de-oxido.webp',
-    content: [
-      'Marte es ampliamente conocido como el Planeta Rojo debido al característico tono rojizo anaranjado que brilla en el cielo nocturno de la Tierra. Sin embargo, si pudieras recoger un puñado de suelo marciano, descubrirías que el planeta no está hecho de fuego, sino literalmente cubierto por una fina capa de óxido de hierro, el mismo óxido rojizo que se forma en un clavo viejo olvidado bajo la lluvia.',
-      'El suelo marciano está compuesto por un fino polvo de regolito extremadamente rico en minerales de hierro y silicato. Durante miles de millones de años, el escaso oxígeno y el vapor de agua presentes en la atmósfera marciana reaccionaron con el hierro de las rocas basálticas, "oxidando" la superficie de todo el planeta de forma homogénea.',
-      'Imagina un mundo entero donde las rocas y la arena se han convertido en polvo de herrumbre. Las continuas tormentas de polvo que azotan el planeta levantan estas partículas microscópicas hacia la tenue atmósfera, tiñendo el cielo marciano de un peculiar color rosa salmón durante el día.',
-      'El polvo marciano es tan fino como el talco para bebés o el humo de una chimenea. Se cuela en cada pequeña grieta y representa uno de los mayores desafíos técnicos para las misiones espaciales humanas, ya que puede bloquear los paneles solares y desgastar los trajes espaciales de los futuros astronautas.',
-      'Debajo de esta delgada película de polvo rojo de apenas unos metros de grosor, las rocas marcianas profundas son en realidad de tonos grises y oscuros, revelando su verdadero origen volcánico hecho de basalto rico en olivino y piroxeno.'
+    "id": "polvo-de-oxido",
+    "bannerImage": "/assets/rocosos/infographic_m5/banner_polvo-de-oxido.webp",
+    "title": "El Polvo Oxidado",
+    "color": "#E63946",
+    "btnImage": "/assets/rocosos/infographic_m5/btn_polvo-de-oxido.webp",
+    "image": "/assets/rocosos/infographic_m5/hero_polvo-de-oxido.webp",
+    "content": [
+      "El caracteristico tono rojizo que confiere a Marte el sobrenombre de Planeta Rojo no procede de rocas incandescentes ni de pigmentos biologicos, sino de una fina pelicula de regolito superficial profundamente oxidado. Esta capa, cuyo espesor oscila entre escasos milimetros y unos pocos metros segun la region topografica, esta compuesta mayoritariamente por nanominerales de oxido de hierro, destacando la hematita cristalina (Fe2O3), la maghemita ferromagnetica y fases amorfas de ferrihidrita dispersas de forma omnipresente.",
+      "El origen petrologico de esta herrumbre global radica en la meteorizacion quimica de las rocas igneas primigenias del planeta, compuestas predominantemente por basaltos toleiticos ricos en olivino y piroxeno ferromagnesianos. Durante eones, trazas ancestrales de vapor de agua y moleculas de dioxido de carbono, fotoionizadas por la implacable radiacion ultravioleta solar en una atmosfera desprovista de capa de ozono, oxidaron sistematicamente el hierro bivalente ferroso (Fe2+) de los silicatos primitivos a hierro trivalente ferrico (Fe3+).",
+      "La granulometria media de este polvo marciano es extraordinariamente reducida, con diametros efectivos de particula comprendidos entre uno y tres micrometros, una finura mecanica comparable al talco sintetico o a las particulas del humo de combustion. Esta extrema ligereza permite que los vientos termicos estacionales levanten gigantescas columnas de polvo que se coalescen periodicamente en tormentas globales circunplanetarias, capaces de envolver el globo entero durante meses y alterar el albedo de todo el planeta.",
+      "Desde la perspectiva de la exploracion humana e ingenieril, este regolito pulverulento representa una de las amenazas tecnicas mas complejas de gestionar. La sequedad extrema y la radiacion ionizante inducen una elevada carga electrostatica en los granos minerales, facilitando que se adhieran tenazmente a los trajes de actividad extravehicular, sellos hermeticos mecánicos y sensores opticos, actuando como un microabrasivo corrosivo capaz de degradar rodamientos y juntas de teflon en pocas semanas.",
+      "Asimismo, los analisis quimicos de superficie realizados por las sondas lander Phoenix y el laboratorio rodante Curiosity han evidenciado concentraciones significativas de sales de perclorato (ClO4-) en el suelo marciano, en proporciones que oscilan entre el 0.5% y el 1.0% en masa. Estas sales actuan como oxidantes altamente toxicos para la biologia celular humana y tiroidea, aunque paradogicamente poseen un punto eutectico que permite a ciertas salmueras acuosas permanecer liquidas a temperaturas de hasta setenta grados Celsius bajo cero."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las tormentas de polvo en Marte pueden volverse tan gigantescas que cubren el planeta entero durante meses consecutivos, ocultando la superficie completa de la vista de los telescopios terrestres.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El compuesto químico responsable del color rojo de Marte es principalmente la hematita (Fe2O3), un mineral de óxido de hierro magnético muy abundante en el regolito.' }
-    ],
-    fact: 'El polvo de óxido de hierro en Marte es tan fino que sus partículas miden solo unos 3 micrómetros de diámetro, 20 veces más delgadas que un cabello humano.',
+    "fact": "El color rojizo de Marte procede de una delgada capa de herrumbre ferrica (Fe2O3) de apenas unos micrometros de tamano de grano, originada por la fotooxidacion ultravioleta de basaltos volcanicos antiguos; el suelo contiene ademas percloratos toxicos que imponen desafios biometricos severos para la futura exploracion tripulada.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los espectrometros de emision termica (TES) y Mossbauer a bordo de los orbitadores y rovers de la NASA demostraron que bajo la pelicula milimetrica de polvo oxidado rojo, la corteza profunda de Marte esta compuesta por rocas volcanicas basalticas inalteradas de color gris pizarra oscuro, dominadas por plagioclasas calcicas y piroxenos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Debido al tamano microscopico de las particulas de hematita suspendidas en el aire marciano, el cielo diurno adquiere un tono amarillento o salmon claro por dispersion de Mie, mientras que las puestas de sol en Marte son de un azul frio espectral porque el polvo dispersa la luz azul hacia adelante con mayor eficiencia que la roja."
+      }
+    ]
   },
   {
-    id: 'volcanes-gigantes',
-              bannerImage: '/assets/rocosos/infographic_m5/banner_volcanes-gigantes.webp',
-    title: 'Monte Olimpo',
-    color: '#F4A261',
-    btnImage: '/assets/rocosos/infographic_m5/btn_volcanes-gigantes.jpg',
-    image: '/assets/rocosos/infographic_m5/hero_volcanes-gigantes.jpg',
-    content: [
-      'Marte alberga las estructuras volcánicas más monumentales y gigantescas de todo el Sistema Solar. El rey indiscutible de estos gigantes es el Monte Olimpo (Olympus Mons), un volcán en escudo tan colosal que supera todas las escalas geológicas conocidas en la Tierra.',
-      'El Monte Olimpo se eleva a una impresionante altura de veinticinco kilómetros sobre las llanuras circundantes, lo que lo convierte en un gigante casi tres veces más alto que el Monte Everest en la Tierra. Su base es tan gigantesca que cubriría la superficie entera del Reino Unido o del estado de Arizona.',
-      '¿Cómo pudo Marte construir un volcán tan gigantesco? La clave está en la ausencia de tectónica de placas. En la Tierra, las placas tectónicas se mueven continuamente sobre los puntos calientes de magma, creando cadenas de volcanes más pequeños como las islas de Hawái. En Marte, la corteza permaneció fija en un solo lugar durante miles de millones de años.',
-      'Debido a esta corteza inmóvil, una pluma de magma subterránea continuó expulsando lava exactamente en el mismo punto de la superficie durante cientos de millones de años consecutivos, acumulando capa sobre capa de basalto fino hasta construir una montaña volcánica colosal.',
-      'El Monte Olimpo forma parte de la protuberancia de Tharsis, un abultamiento volcánico gigante que alberga otros tres colosos volcánicos: Ascraeus Mons, Pavonis Mons y Arsia Mons, demostrando la intensa actividad magmática que dominó el pasado marciano.'
+    "id": "volcanes-gigantes",
+    "bannerImage": "/assets/rocosos/infographic_m5/banner_volcanes-gigantes.webp",
+    "title": "Monte Olimpo",
+    "color": "#F4A261",
+    "btnImage": "/assets/rocosos/infographic_m5/btn_volcanes-gigantes.jpg",
+    "image": "/assets/rocosos/infographic_m5/hero_volcanes-gigantes.jpg",
+    "content": [
+      "Marte ostenta el edificio volcanico mas colosal y masivo de todo el Sistema Solar: el Monte Olimpo (Olympus Mons). Emplazado en el borde noroccidental del gigantesco abultamiento volcano-tectonico de Tarsis, este titan en escudo se eleva veintiun kilometros y novecientos metros sobre el datum altimetrico de referencia global, superando con holgura el doble y medio de la altitud del Monte Everest y triplicando la altura del Mauna Kea medido desde su fosa oceanica abisal.",
+      "La planta basal del Monte Olimpo abarca un diametro medio superior a los seiscientos kilometros, una huella superficial comparable a la superficie territorial total de paises enteros como Polonia o el estado de Arizona. El perimetro exterior del volcan no desciende suavemente hacia el terreno colindante, sino que esta delimitado abruptamente por un imponente escarpe o acantilado basal continuo que en varios sectores alcanza desniveles verticales de seis a ocho kilometros de caida libre.",
+      "La razon geofisica fundamental por la cual Marte desarrollo estructuras volcanicas tan descomunales radica en la ausencia total de un ciclo de tectonica de placas litosfericas. Mientras que en la Tierra las placas litosfericas se desplazan continuamente sobre plumas mantelicas profundas creando cadenas de volcanes menores y aislados (como el archipielago hawaiano), en Marte la litosfera rigida permanecio estacionaria durante cientos de millones de anos exactamente sobre la misma fuente termica magmatica.",
+      "Como consecuencia de esta estabilidad litosferica, innumerables episodios efusivos de lavas basalticas fluidas de bajisima viscosidad se sobreimpusieron capa sobre capa en el mismo punto geografico durante la epoca Hesperiana y Amazonica. Asimismo, la aceleracion de la gravedad marciana en superficie (3.72 metros por segundo al cuadrado, equivalente a un 38% de la terrestre) permitio a la corteza soportar cargas de masa litostatica tres veces mayores antes de experimentar una subsidencia elastica catastrofica.",
+      "La cumbre del Monte Olimpo esta coronada por un complejo calderico de ochenta kilometros de longitud por sesenta de anchura y hasta tres kilometros de profundidad, integrado por al menos seis calderas de colapso superpuestas generadas por el vaciado intermitente de las camaras magmaticas subyacentes. El volcan forma parte del cinturon de colosos de Tarsis, junto con Ascraeus Mons (18 km), Pavonis Mons (14 km) y Arsia Mons (16 km), que alteraron decisivamente el momento de inercia planetario."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La pendiente del Monte Olimpo es tan suave (solo 5 grados de inclinación) que si estuvieras parado en su cima no te darías cuenta de estar en una montaña; el borde del volcán estaría más allá del horizonte debido a la curvatura del planeta.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La gigantesca caldera en la cima del Monte Olimpo mide 80 kilómetros de largo por 60 kilómetros de ancho y está formada por seis cráteres de colapso superpuestos.' }
-    ],
-    fact: 'El Monte Olimpo es tan alto que su cima atraviesa casi toda la atmósfera marciana, sobresaliendo por encima del 90% de los gases del planeta.',
+    "fact": "El Monte Olimpo alcanza una altitud de 21.9 kilometros y 600 kilometros de diametro basal; su colosal envergadura fue posible gracias a la quietud litosferica marciana, que mantuvo la corteza fija sobre una pluma mantelica estacionaria durante mas de cien millones de anos bajo un regimen gravitatorio de solo 0.38 g.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La cumbre del Monte Olimpo sobrepasa con creces la troposfera densa marciana, elevandose por encima del noventa por ciento de la masa de la tenue atmosfera; la presion de gas en su caldera apenas roza los 0.5 milibares, lo que aproxima el ambiente de su cima a las condiciones de vacio orbital interplanetario."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "A pesar de su altitud hiperbolica, la pendiente media de las laderas del Monte Olimpo es de apenas cinco grados: si un astronauta caminase por sus flancos no percibiria sensacion de acantilado abrupto, pues el horizonte planetario quedaria oculto bajo la curvatura de la propia montana antes de divisar la base."
+      }
+    ]
   },
   {
-    id: 'valles-marineris',
-              bannerImage: '/assets/rocosos/infographic_m5/banner_valles-marineris.webp',
-    title: 'Valles Marineris',
-    color: '#D62828',
-    btnImage: '/assets/rocosos/infographic_m5/btn_valles-marineris.jpg',
-    image: '/assets/rocosos/infographic_m5/hero_valles-marineris.jpg',
-    content: [
-      'Si el Monte Olimpo es la montaña más alta del Sistema Solar, el abismo de Valles Marineris es sin duda la grieta más impresionante de la corteza planetaria. Este gigantesco sistema de cañones se extiende como una cicatriz imborrable a lo largo del ecuador de Marte.',
-      'Valles Marineris mide más de cuatro mil kilómetros de longitud, supera los doscientos kilómetros de ancho y alcanza profundidades abismales de hasta once kilómetros. Si colocáramos este cañón sobre el mapa de los Estados Unidos, se extendería desde la costa del Océano Atlántico en Nueva York hasta la costa del Océano Pacífico en San Francisco.',
-      'Para comparar, el famoso Gran Cañón del Colorado en la Tierra parecería una pequeña zanja al lado de Valles Marineris: el cañón marciano es cuatro veces más profundo y casi diez veces más largo que su contraparte terrestre.',
-      'A diferencia del Gran Cañón terrestre, que fue excavado principalmente por la erosión del agua del río Colorado, Valles Marineris nació por un proceso tectónico violento. Cuando la gigante protuberancia volcánica de Tharsis se elevó por la acumulación de magma, la corteza marciana no aguantó la tensión y se desgarró por completo.',
-      'Con el paso del tiempo, viejos ríos de agua, glaciares subterráneos y desprendimientos gigantescos de rocas ensancharon y moldearon las paredes del cañón, creando un paisaje geológico sobrecogedor que conserva el archivo histórico del planeta.'
+    "id": "valles-marineris",
+    "bannerImage": "/assets/rocosos/infographic_m5/banner_valles-marineris.webp",
+    "title": "Valles Marineris",
+    "color": "#D62828",
+    "btnImage": "/assets/rocosos/infographic_m5/btn_valles-marineris.jpg",
+    "image": "/assets/rocosos/infographic_m5/hero_valles-marineris.jpg",
+    "content": [
+      "Extendiendose a lo largo de mas de cuatro mil kilometros en sentido este-oeste sobre la banda ecuatorial de Marte, el colosal sistema de fracturas de Valles Marineris constituye el canion tectonico mas extenso y profundo del Sistema Solar interior. Su longitud longitudinal cubre practicamente una cuarta parte de la circunferencia entera del planeta, con anchuras que superan los doscientos kilometros en sus fosas centrales y abismos que descienden verticalmente hasta diez u once kilometros de profundidad.",
+      "A diferencia del celebre Gran Canion del rio Colorado en la Tierra, cuya genesis responde preponderantemente a la abrasion fluvial continua del agua a traves de estratos horizontales, Valles Marineris es un megasistema de fisuras de origen primordialmente tectonico y estructural. Corresponde a una descomunal fosa tectonica de tipo rift continental generada por los esfuerzos de extension y cizalla que desgarraron la corteza marciana durante el levantamiento del domo magmatico de Tarsis hace tres mil quinientos millones de anos.",
+      "A medida que la masa volcanica de Tarsis abombo la litosfera circundante, las tensiones litostaticas provocaron la rotura fragil de la corteza superior en un sistema masivo de fallas normales escalonadas. El sector occidental del complejo se ramifica en una intrincada red ortogonal de fracturas intersectadas denominada Noctis Labyrinthus, la cual transiciona hacia el este en imponentes fosas paralelas conocidas como Ius Chasma, Tithonium Chasma, Melas Chasma, Candor Chasma y Coprates Chasma.",
+      "Tras el colapso tectonico original, la geomorfologia de los caniones fue remodelada intensamente por megadeslizamientos de tierras de proporciones planetarias, donde inmensos bloques liticos de varios kilometros colapsaron hacia el fondo del valle moviendose a gran velocidad sobre colchones de polvo y permafrost. Asimismo, en los sectores centrales existen espesas formaciones de depositos estratificados interiores (ILDS) ricos en sulfatos polihidratados como kieserita y yeso sedimentados en antiguos lagos estacionales.",
+      "En el extremo oriental, Valles Marineris enlaza con gigantescos canales de desbordamiento catastrofico (outflow channels) como Eos Chasma y Capri Chasma, que desembocan en las tierras bajas de Chryse Planitia. Estos canales de escape muestran evidencias inconfundibles de que colosales reservas de agua y salmueras subcorticales, liberadas termicamente por calor hidrotermal o colapso elastico del permafrost, drenaron abruptamente tallando cañones hidraulicos con caudales de millones de metros cubicos por segundo."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Valles Marineris rinde homenaje a la sonda espacial Mariner 9 de la NASA, que descubrió este gigantesco sistema de cañones desde la órbita marciana en 1971 durante una tormenta de polvo global.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Imágenes satelitales recientes han detectado nieblas matutinas de hielo de agua y posibles flujos de salmuera estacionales (RSL) en las sombras profundas de las paredes de Valles Marineris.' }
-    ],
-    fact: 'Valles Marineris abarca casi una cuarta parte de toda la circunferencia ecuatorial del planeta Marte.',
+    "fact": "Con mas de 4,000 kilometros de longitud, 200 de anchura y hasta 11 kilometros de profundidad vertical, Valles Marineris es diez veces mas largo y cuatro veces mas profundo que el Gran Canion de Norteamerica; nacio como un rift tectonico provocado por el abombamiento magmatico de la contigua provincia de Tarsis.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los datos del espectrometro orbital CRISM han detectado en los estratos basales de Melas Chasma y Candor Chasma gruesas secuencias de minerales sulfatados y filosilicatos hidratados, demostrando que los caniones albergaron cuencas lacustres cerradas de aguas mineralizadas acidas durante la transicion Noequiano-Hesperiana."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El sistema recibio su nombre formal en honor a la nave automatica de la NASA Mariner 9, que en 1971 logro ser la primera sonda orbital terrestre en cartografiar Marte; al disiparse una colosal tormenta global de polvo, la camara revelo por vez primera esta descomunal cicatriz en la corteza ecuatorial marciana."
+      }
+    ]
   },
   {
-    id: 'agua-ancestral',
-              bannerImage: '/assets/rocosos/infographic_m5/banner_agua-ancestral.webp',
-    title: 'El Pasado Acuático',
-    color: '#48CAE4',
-    btnImage: '/assets/rocosos/infographic_m5/btn_agua-ancestral.webp',
-    image: '/assets/rocosos/infographic_m5/hero_agua-ancestral.webp',
-    content: [
-      'Aunque Marte es hoy un desierto helado, seco y polvoriento, las imágenes tomadas por los satélites en órbita y los análisis químicos de los rovers en tierra demuestran que en el pasado tuvo un rostro completamente diferente. Hace cuatro mil millones de años, Marte fue un mundo azul cargado de agua líquida.',
-      'La superficie marciana conserva miles de cauces secos de ríos antiguos, deltas de ríos fosilizados con formas de abanico, lechos de lagos profundos y marcas de erosión causadas por gigantescas inundaciones repentinas que arrastraron rocas del tamaño de casas.',
-      'En la hemisferio norte del planeta existió un océano primigenio llamado Oceanus Borealis que cubría un tercio de la superficie marciana con profundidades de cientos de metros. Mientras tanto, en los cráteres del sur como Gale y Jezero se formaron lagos de agua dulce duraderos.',
-      'Los rovers Curiosity y Perseverance de la NASA han hallado minerales de arcilla, vetas de yeso y cantos rodados perfectamente redondeados por la corriente del agua en lechos de lagos antiguos, confirmando que el agua marciana era químicamente neutra, potable y apta para la vida.',
-      'Durante cientos de millones de años durante la época Noequiana, Marte disfrutó de un clima cálido y húmedo protegido por una atmósfera más densa, convirtiéndose en el primer mundo del Sistema Solar que ofreció condiciones habitables para la biología.'
+    "id": "agua-ancestral",
+    "bannerImage": "/assets/rocosos/infographic_m5/banner_agua-ancestral.webp",
+    "title": "El Pasado Acuático",
+    "color": "#48CAE4",
+    "btnImage": "/assets/rocosos/infographic_m5/btn_agua-ancestral.webp",
+    "image": "/assets/rocosos/infographic_m5/hero_agua-ancestral.webp",
+    "content": [
+      "A pesar de que Marte se manifiesta en la actualidad como un hiperarido desierto helado dominado por una atmosfera hipertenue, las evidencias geologicas, mineralogicas y geomorfologicas acumuladas confirman sin ambiguedades que el planeta albergo ingentes volumenes de agua liquida estable en su superficie durante la epoca Noequiana temprana, comprendida entre 4.1 y 3.7 miles de millones de anos atras, en una fase climatica templada diametralmente opuesta a la actual.",
+      "A lo largo de las antiguas tierras altas del hemisferio sur marciano se conservan miles de redes dendriticas de valles fluviales ramificados, cuya jerarquia de orden hidrologico y patrones de meandros solo pueden ser modelados mediante la precipitacion sostenida de lluvia o nieve y escorrentia superficial duradera. Multiples modelos paleoclimaticos sugieren que las planicies del norte alojaron un oceano primordial circumpolar (Oceanus Borealis) que llego a cubrir un tercio del area planetaria.",
+      "Las misiones in situ de los rovers Curiosity y Perseverance han aportado pruebas concluyentes de este pasado hidrologico. En la bahia de Yellowknife dentro del crater Gale, Curiosity descubrio lutitas lacustres de grano fino depositadas en el fondo de un lago de agua dulce de pH practicamente neutro, baja salinidad y con todos los bioelementos clave (carbono, hidrogeno, oxigeno, nitrogeno, fosforo y azufre), confirmando un entorno rigurosamente habitable para organismos microbianos.",
+      "Por su parte, en el crater Jezero, el rover Perseverance aterrizó en 2021 sobre un abanico deltaico fosilizado de sobresaliente preservacion estratigrafica. Alli ha documentado cantos rodados redondeados de basalto y cuarcita arrastrados por corrientes fluviales energeticas a lo largo del rio Neretva Vallis, intercalados con estratos de lodolitas y carbonatos precipitados en aguas tranquilas que retuvieron particulas en suspension durante cientos de miles de anos.",
+      "El archivo mineralogico analizado por sensores orbitales de infrarrojo cercano como OMEGA y CRISM ratifica esta historia: los terrenos noequianos mas antiguos estan dominados por esmectitas y filosilicatos ricos en hierro y magnesio formados en regimenes de meteorizacion hidrotermal neutra y abundante agua, mientras que las epocas posteriores viraron hacia sulfatos acidos (Hesperiano) y finalmente hacia oxidos ferricos anhidros (Amazonico) conforme el agua libre desaparecia."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El rover Curiosity descubrió en el cráter Gale capas de rocas sedimentarias de 3,700 millones de años formadas por lodos depositados en el fondo de un antiguo lago de agua dulce que perduró millones de años.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La cantidad total de agua que fluyó por los valles marcianos primordiales equivale a cientos de veces el caudal combinado de todos los ríos de la Tierra actual.' }
-    ],
-    fact: 'El cráter Jezero, explorado por el rover Perseverance, fue seleccionado cuidadosamente porque contiene un delta de río fosilizado perfectamente conservado, ideal para buscar biofirmas antiguas.',
+    "fact": "Marte disfruto hace unos 4,000 millones de anos de una hidrosfera activa caracterizada por redes fluviales dendriticas, deltas fosilizados y cuencas lacustres de agua dulce con pH neutro, como las confirmadas en los crateres Gale y Jezero, antes de sufrir una desecacion progresiva que concluyo en su esteril fisonomia actual.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los analisis isotopicos de la relacion deuterio-hidrogeno (D/H) en la atmosfera y arcillas marcianas muestran un enriquecimiento en deuterio de cinco a siete veces superior al estandar oceanico terrestre (VSMOW), demostrando que Marte perdio al espacio el equivalente a una capa global de agua de cientos de metros de espesor."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Si se condensase y derritiese de forma instantanea todo el hielo de agua detectado en los casquetes polares y en los depositos glaciares subcorticales enterrados en las latitudes medias, habria volumen hidrico suficiente para inundar la totalidad de la superficie de Marte bajo una capa liquida de mas de treinta metros de profundidad."
+      }
+    ]
   },
   {
-    id: 'colapso-atmosferico',
-              bannerImage: '/assets/rocosos/infographic_m5/banner_colapso-atmosferico.webp',
-    title: 'Pérdida de la Magnetosfera',
-    color: '#A8DADC',
-    btnImage: '/assets/rocosos/infographic_m5/btn_colapso-atmosferico.webp',
-    image: '/assets/rocosos/infographic_m5/hero_colapso-atmosferico.webp',
-    content: [
-      '¿Cómo pasó Marte de ser un oasis cálido y acuático a convertirse en un desierto congelado e inerte? El culpable de esta trágica metamorfosis planetaria fue el pequeño tamaño de Marte y la muerte de su escudo magnético primigenio.',
-      'Al ser un planeta más pequeño que la Tierra, con solo la mitad de su diámetro, Marte perdió su calor interno mucho más rápido. Hace aproximadamente cuatro mil millones de años, su núcleo de hierro líquido se enfrió y se solidificó, apagando para siempre la geodinamo interna que generaba su campo magnético.',
-      'Sin un campo magnético protector, la magnetosfera marciana colapsó. El feroz viento solar procedente del Sol comenzó a bombardear directamente la alta atmósfera del planeta indefenso, actuando como un cepillo espacial que erosionó y arrancó los gases hacia el espacio profundo.',
-      'A medida que la atmósfera perdía espesor, la presión atmosférica cayó en picado hasta alcanzar solo el uno por ciento de la presión terrestre. Sin presión suficiente y sin efecto invernadero, el agua líquida de la superficie no pudo sostenerse: una parte se evaporó al espacio y la otra se congeló bajo el suelo.',
-      'La misión MAVEN de la NASA midió en 2015 la velocidad a la que el viento solar continúa robando gases en la actualidad, confirmando que Marte perdió más del noventa por ciento de su atmósfera primordial debido a la extinción de su corazón magnético.'
+    "id": "colapso-atmosferico",
+    "bannerImage": "/assets/rocosos/infographic_m5/banner_colapso-atmosferico.webp",
+    "title": "Pérdida de la Magnetosfera",
+    "color": "#A8DADC",
+    "btnImage": "/assets/rocosos/infographic_m5/btn_colapso-atmosferico.webp",
+    "image": "/assets/rocosos/infographic_m5/hero_colapso-atmosferico.webp",
+    "content": [
+      "El colapso ambiental que transformo a Marte de un planeta templado con rios superficiales en un desierto gelido e inhospito fue desencadenado primordialmente por el cese definitivo de su geodinamo interna. Al poseer un radio de tan solo tres mil trescientos noventa kilometros y una masa equivalente al 10.7% de la terrestre, Marte presento una relacion area-volumen significativamente mayor que la de la Tierra, acelerando la perdida radiativa de su calor termodinamico primordial.",
+      "Aproximadamente hace cuatro mil millones de anos (casi coincidiendo con la transicion entre el Noequiano y el Hesperiano temprano), la conveccion en el nucleo exterior metalico de hierro y azufre se debilito por enfriamiento conductivo o estratificacion quimica, colapsando irreversiblemente el dipolo magnetico global que hasta entonces blindaba al planeta frente al plasma interplanetario. Desde ese instante, la alta atmosfera marciana quedo expuesta de lleno al impacto sin frenos del viento solar.",
+      "Las mediciones directas y continuadas del orbitador MAVEN (Mars Atmosphere and Volatile EvolutioN) de la NASA, complementadas por las sondas Mars Express y Hope, han desvelado con precision cuantitativa los mecanismos fisicos del despojo atmosferico. El viento solar magnetizado arrastra el gas ionizado mediante procesos de pulverizacion ionica (sputtering), escape fotoquimico exobasico de atomos neutros termicos y arrastre por ondas de choque magnetohidrodinamicas en la magnetopausa inducida.",
+      "Durante las eyecciones de masa coronal y tormentas solares severas, la tasa de decapado atmosferico se incrementa en mas de un orden de magnitud, arrancando kilogramos de iones de dioxido de carbono, oxigeno y atomos de hidrogeno cada segundo hacia el espacio interplanetario. Este implacable bombardeo continuo provoco la fuga irreversible de mas del noventa por ciento de la masa de la protoatmosfera marciana a lo largo de eones de historia geologica.",
+      "Como resultado de esta erosion hidrodinamica sostenida, la presion atmosferica media en la superficie marciana cayo hasta los 6.1 milibares actuales (alrededor de 0.006 atmosferas terrestres), un valor que coincide criticamente con el punto triple termodinamico del agua (6.11 milibares a 0.01 °C). En este regimen de bajisima densidad barometrica, el agua pura no puede persistir en estado liquido: o bien se sublima instantaneamente en vapor o se congela en hielo cristalino."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'A pesar de no tener un campo magnético global, Marte conserva "parches" de magnetismo fosilizado atrapados en las rocas antiguas de su corteza austral como recuerdos de su extinto escudo magnético.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La presión atmosférica actual en la superficie de Marte es de solo 6 milibares (en la Tierra es de 1,013 milibares), tan baja que el agua herviría al instante a temperatura ambiente debido a la falta de presión.' }
-    ],
-    fact: 'La nave espacial MAVEN demostró que las tormentas solares intensas aumentan más de diez veces la velocidad a la que Marte pierde gases hacia el espacio interplanetario.',
+    "fact": "La extincion temprana de la geodinamo marciana hace unos 4,000 millones de anos dejo la atmosfera desprotegida ante el viento solar; la mision MAVEN demostro que este arrastre continuo despojo mas del 90% de la densidad atmosferica original, desplomando la presion en superficie hasta apenas 6.1 milibares.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El espectrometro de masas NGIMS de MAVEN confirmo un pronunciado fraccionamiento de isotopos nobles estables de argon (38Ar/36Ar) y carbono (13C/12C) en la exobase marciana: el viento solar expulsa preferentemente los isotopos ligeros, dejando un registro geofisico inequivoco del volumen de gas fugado."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Aunque Marte carece hoy de dipolo magnetico global, conserva intensas anomalias magneticas corticales fosilizadas en las rocas basalticas de su hemisferio sur: mini-escudos magneticos locales en forma de arcos con intensidades superiores a los 1,500 nanoteslas, testigos mudos del antiguo campo planetario extinto."
+      }
+    ]
   },
   {
-    id: 'casquetes-polares',
-              bannerImage: '/assets/rocosos/infographic_m5/banner_casquetes-polares.webp',
-    title: 'Casquetes Polares',
-    color: '#F1FAEE',
-    btnImage: '/assets/rocosos/infographic_m5/btn_casquetes-polares.jpg',
-    image: '/assets/rocosos/infographic_m5/hero_casquetes-polares.jpg',
-    content: [
-      'Al igual que la Tierra, Marte posee dos brillantes casquetes polares de color blanco deslumbrante ubicados en su polo norte y polo sur. Sin embargo, los casquetes marcianos tienen una composición dual fascinante formada por una mezcla de hielo de agua y hielo seco de dióxido de carbono.',
-      'El casquete polar norte se compone principalmente de una gigantesca capa de hielo de agua pura de tres kilómetros de grosor y mil kilómetros de ancho. Contiene suficiente agua congelada como para cubrir la superficie entera del planeta con una capa de agua de once metros de profundidad si se derritiera.',
-      'En cambio, los casquetes polares sufren transformaciones drásticas con las estaciones marcianas. Durante el gélido invierno polar, cuando las temperaturas caen por debajo de los ciento veinticinco grados Celsius bajo cero, el dióxido de carbono de la atmósfera se congela directamente sobre el suelo, formando una capa de "nieve carbónica" de un metro de espesor.',
-      'En la primavera, al volver la luz solar, este hielo seco pasa de sólido a gas de forma violenta sin volverse líquido en un proceso llamado sublimación. Esta evaporación explosiva crea géiseres gigantes de gas carbónico que expulsan polvo oscuro hacia el cielo, creando manchas con forma de abanico sobre la nieve blanca.',
-      'Además de los polos, misiones recientes equipadas con radares penetrantes como SHARAD han descubierto gigantescos glaciares de agua pura enterrados bajo capas protectoras de polvo en las latitudes medias del planeta, conservando agua vital para futuras colonias humanas.'
+    "id": "casquetes-polares",
+    "bannerImage": "/assets/rocosos/infographic_m5/banner_casquetes-polares.webp",
+    "title": "Casquetes Polares",
+    "color": "#F1FAEE",
+    "btnImage": "/assets/rocosos/infographic_m5/btn_casquetes-polares.jpg",
+    "image": "/assets/rocosos/infographic_m5/hero_casquetes-polares.jpg",
+    "content": [
+      "En las regiones boreales y australes de Marte se asientan dos espectaculares formaciones glaciares permanentes: Planum Boreum en el polo norte y Planum Australe en el polo sur. A diferencia de las masas de hielo de la Tierra compuestas exclusivamente por agua mineralizada, los casquetes marcianos presentan una singular arquitectura hibrida de dos componentes termodinamicos: un nucleo perenne de hielo de agua (H2O) cubierto estacionalmente por un estrato dinamico de dioxido de carbono congelado (CO2) o hielo seco.",
+      "El casquete boreal permanente es la reserva mas voluminosa de agua superficial del planeta: se extiende sobre un diametro circular de mil kilometros con espesores centrales que superan los tres kilometros, albergando aproximadamente 1.6 millones de kilometros cubicos de hielo de agua cristalina de alta pureza. En cambio, el polo sur exhibe un casquete residual permanente mucho menor, pero recubierto de forma continua por una capa de hielo seco de dioxido de carbono de varios metros de grosor que nunca llega a sublimar del todo.",
+      "Durante los rigorosos inviernos polares marcianos, cuando la insolacion solar se anula y las temperaturas descienden por debajo de los ciento veinticinco grados Celsius bajo cero (-125 °C), el dioxido de carbono de la atmosfera se condensa de manera directa sobre la superficie en un manto estacional de nieve carbonica de uno a dos metros de espesor. Este ciclo anual es tan descomunal que hasta un tercio de la masa total de la atmosfera del planeta se congela y deposita en los polos, provocando fluctuaciones ciclicas de la presion atmosferica global.",
+      "Al advenir la primavera polar, la radiacion solar penetra las placas semitranslucidas de hielo seco estacional, calentando el regolito oscuro subyacente. Esto provoca una sublimacion basal explosiva a alta presion: el gas de dioxido de carbono confinado revienta las losas de hielo superiores liberando violentos geiseres hidrocarburicos que expulsan arena oscura a gran altitud, esculpiendo en la superficie fascinantes estructuras radiales conocidas como terrenos aracnidos o araneiformes.",
+      "Mediante el radar de apertura sintetica SHARAD a bordo del Mars Reconnaissance Orbiter, los cientificos han cartografiado el interior profundo de los polos, descubriendo cientos de estratos finos alternados de hielo y polvo volcanico (Planum Boreum Layered Deposits). Estas capas laminadas constituyen el registro paleoclimatico mas detallado de Marte, documentando con precision milimetrica las oscilaciones ciclicas de la oblicuidad y excentricidad orbital del planeta a lo largo de los ultimos cinco millones de anos."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En la primavera del polo sur de Marte, la sublimación del hielo seco atrapado bajo el suelo crea chorros de gas a alta presión que forman estructuras oscuras parecidas a arañas gigantes llamadas terreno arácnido.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Durante el invierno marciano, hasta una cuarta parte de todo el dióxido de carbono de la atmósfera entera del planeta se congela temporalmente sobre los polos, haciendo fluctuar la presión atmosférica global.' }
-    ],
-    fact: 'El radar orbital SHARAD reveló que los casquetes polares de Marte están formados por cientos de capas alternas de hielo y polvo que registran el clima marciano de los últimos millones de años.',
+    "fact": "Los casquetes polares de Marte combinan nucleos permanentes de hielo de agua de hasta 3 kilometros de grosor con cubiertas estacionales de hielo seco (CO2); en cada invierno polar, un tercio de la masa atmosferica total del planeta se congela directamente sobre ellos, regulando los patrones barometricos marcianos.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El radar de penetracion SHARAD y sondas orbitales han localizado extensos glaciares de agua pura amortiguados bajo mantos de regolito de escombros (lobate debris aprons) en latitudes medias templadas de Marte, protegiendo depositos glaciares milenarios de la sublimacion directa en la tenue atmosfera actual."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el casquete polar norte, una descomunal sima espiralada denominada Chasma Boreale de quinientos kilometros de longitud penetra hasta la base del hielo; se cree que fue excavada por vientos catabaticos huracanados modulados por el efecto Coriolis combinados con antiguos drenajes subglaciares hidrotermales."
+      }
+    ]
   },
   {
-    id: 'caza-de-biofirmas',
-              bannerImage: '/assets/rocosos/infographic_m5/banner_caza-de-biofirmas.webp',
-    title: 'Caza de Biofirmas',
-    color: '#FFB703',
-    btnImage: '/assets/rocosos/infographic_m5/btn_caza-de-biofirmas.webp',
-    image: '/assets/rocosos/infographic_m5/hero_caza-de-biofirmas.webp',
-    content: [
-      'Marte es el objetivo número uno de la astrobiología en la búsqueda de vida fuera de la Tierra. Aunque la superficie actual es estéril debido a la intensa radiación ultravioleta y a la falta de agua líquida, la pregunta decisiva es: ¿albergó Marte microorganismos vivos en su pasado templado?',
-      'Para resolver este gran misterio, la humanidad ha desplegado una flota de rovers robóticos ultraavanzados. Misiones pioneras como Viking, Spirit, Opportunity, Curiosity y Perseverance han transformado a Marte en el planeta mejor explorado por robots en la historia espacia.',
-      'El rover Perseverance de la NASA, que aterrizó en el cráter Jezero en 2021, cuenta con un laboratorio geológico equipado con la última tecnología. Su objetivo principal es buscar biofirmas, que son fósiles químicos, estructuras microscópicas o patrones minerales dejados por bacterias marcianas antiguas hace miles de millones de años.',
-      'Perseverance utiliza un taladro especial para extraer núcleos de roca intactos del lecho del antiguo lago, sellándolos dentro de tubos de titanio ultra limpios. Estos tubos están siendo depositados en la superficie marciana a la espera de la futura misión Mars Sample Return, que viajará a Marte para traer las muestras de vuelta a la Tierra.',
-      'El análisis de estas rocas marcianas en los laboratorios más avanzados de la Tierra permitirá responder a la pregunta más trascendental de la ciencia: si la vida surgió de forma independiente en dos planetas vecinos del mismo Sistema Solar.'
+    "id": "caza-de-biofirmas",
+    "bannerImage": "/assets/rocosos/infographic_m5/banner_caza-de-biofirmas.webp",
+    "title": "Caza de Biofirmas",
+    "color": "#FFB703",
+    "btnImage": "/assets/rocosos/infographic_m5/btn_caza-de-biofirmas.webp",
+    "image": "/assets/rocosos/infographic_m5/hero_caza-de-biofirmas.webp",
+    "content": [
+      "La busqueda de biofirmas (evidencias quimicas, texturales, mineralogicas o isotopicas de vida microbiana preterita) constituye la piedra angular de la exploracion contemporanea de Marte. Aunque la superficie presente es esteril e inhospita debido a la combinacion letal de radiacion cosmica galactica, flujo ultravioleta y la accion lixiviante de sales percloradas oxidantes, las rocas sedimentarias de cuatro mil millones de anos preservan entornos donde la quimica prebiotica pudo evolucionar.",
+      "La investigacion comenzo historicamente en 1976 con los experimentos metabolicos de biologia a bordo de las sondas Viking 1 y 2 (Liberacion Etiquetada, Liberacion Pirolitica e Intercambio de Gases). Aunque se registraron reacciones cineticas positivas inmediatas, el consenso cientifico moderno determino que los resultados fueron producto de la extrema reactividad quimica abiotica de los peroxidos y percloratos del regolito catalizados por radiacion UV, y no de metabolismo celular.",
+      "El cambio de paradigma moderno se materializo con el rover Curiosity en el crater Gale mediante el conjunto instrumental SAM (Sample Analysis at Mars). Utilizando pirolisis y cromatografia de gases acoplada a espectrometria de masas, Curiosity extrajo de lutitas de 3.5 miles de millones de anos una variada gama de moleculas organicas complejas, incluyendo tiofenos, benceno, tolueno y cadenas alifaticas de hidrocarburos, demostrando que la materia organica carbonacea logra sobrevivir eones encapsulada en minerales de azufre.",
+      "Desde su amerizaje en 2021 en el delta del crater Jezero, el rover Perseverance de la NASA lidera la prospeccion astrobiologica mas sofisticada jamas concebida. Sus instrumentos de microespectroscopia SHERLOC (Raman y fluorescencia UV profunda) y PIXL (fluorescencia de rayos X a escala microscopica) permiten cartografiar la correlacion espacial exacta entre compuestos aromaticos carbonaceos y minerales alterados hidrotermalmente en vetas de silice y carbonatos.",
+      "Perseverance ha perforado decenas de testigos liticos cilindricos milimetricamente sellados en tubos hermeticos de titanio ultralimpio, depositandolos estrategicamente en depositos de superficie y en su chasis. Estos tubos constituyen el cargamento central de la ambiciosa campana multinacional Mars Sample Return (NASA/ESA), concebida para trasladar estas muestras virgenes a laboratorios terrestres ultraseguros a fin de evaluar relaciones isotopicas 12C/13C, quiralidad molecular y posibles microfosiles."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El helicóptero Ingenuity de la NASA, que viajó adjunto a Perseverance, realizó más de 72 vuelos históricos en Marte, demostrando que es posible el vuelo controlado con hélices en la tenue atmósfera marciana.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Curiosity detectó fluctuaciones estacionales de gas metano en el cráter Gale. Como el metano en la Tierra es producido mayoritariamente por seres vivos, su origen marciano sigue siendo un enigma fascinante.' }
-    ],
-    fact: 'La misión Mars Sample Return es un ambicioso esfuerzo conjunto entre la NASA y la ESA para traer a la Tierra las primeras muestras de roca marciana recogidas directamente por un rover en los años 2030.',
-  },
+    "fact": "La busqueda de biofirmas en Marte, liderada por el rover Perseverance en el crater Jezero, recolecta testigos de rocas lacustres en tubos hermeticos de titanio para la mision Mars Sample Return, buscando firmas isotopicas de carbono y microestructuras fosiles que revelen si la vida llego a emerger en el pasado acuatico marciano.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las detecciones recurrentes de plumas estacionales de gas metano (CH4) en concentraciones de partes por billon, detectadas in situ por Curiosity y respaldadas por la sonda Trace Gas Orbiter (TGO), siguen en intenso debate: podrian derivar de serpentinizacion abiotica subterranea de olivino o de microorganismos metanogenos del subsuelo profundo."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los tubos de titanio donde Perseverance almacena los testigos de roca marciana son los objetos mas limpios jamas fabricados por la humanidad: fueron horneados y purgados en salas esteriles con niveles de contaminacion biologica terrestre practicamente nulos para evitar cualquier resultado falso positivo al analizarlos en la Tierra."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_RocososM5() {

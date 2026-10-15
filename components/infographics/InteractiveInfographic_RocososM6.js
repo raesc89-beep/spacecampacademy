@@ -93,145 +93,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'gigante-roja',
-              bannerImage: '/assets/rocosos/infographic_m6/banner_gigante-roja.webp',
-    title: 'El Sol Gigante Roja',
-    color: '#FF0054',
-    btnImage: '/assets/rocosos/infographic_m6/btn_gigante-roja.webp',
-    image: '/assets/rocosos/infographic_m6/hero_gigante-roja.webp',
-    content: [
-      'Los planetas rocosos no son estructuras eternas e inmutables. Su destino final está ligado de forma indisoluble a la evolución de nuestra estrella central, el Sol. Actualmente, el Sol se encuentra a la mitad de su vida útil de diez mil millones de años, quemando hidrógeno de forma estable en su núcleo.',
-      'Sin embargo, dentro de unos cinco mil millones de años, el Sol agotará todo el hidrógeno de su corazón. Al quedarse sin combustible nuclear, el núcleo se contraerá bajo su propio peso, aumentando su temperatura hasta comenzar a fusionar helio. Esta inmensa energía hará que las capas exteriores del Sol se expandan monstruosamente hacia afuera.',
-      'Al expandirse, nuestra estrella se transformará en una estrella gigante roja. Su diámetro crecerá más de doscientas veces su tamaño actual, hinchándose hasta tragar y engullir completamente a los planetas interiores Mercurio y Venus dentro de su atmósfera estelar ardiente.',
-      'El cielo de la Tierra se volverá de un color rojo brillante a medida que el disco solar ocupe casi todo el horizonte. La radiación extrema evaporará la atmósfera terrestre y derretirá la superficie del planeta en un nuevo océano de magma hirviente.',
-      'Esta fase de gigante roja durará unos mil millones de años, marcando el capítulo final para los mundos rocosos interiores que nacieron juntos en la infancia del Sistema Solar.'
+    "id": "gigante-roja",
+    "bannerImage": "/assets/rocosos/infographic_m6/banner_gigante-roja.webp",
+    "title": "El Sol Gigante Roja",
+    "color": "#FF0054",
+    "btnImage": "/assets/rocosos/infographic_m6/btn_gigante-roja.webp",
+    "image": "/assets/rocosos/infographic_m6/hero_gigante-roja.webp",
+    "content": [
+      "Los planetas rocosos no son entidades estables e imperecederas; su ciclo existencial y destino termodinamico estan subordinados de manera ineludible a las fases de evolucion estelar del Sol. Nuestra estrella central es una enana amarilla de la secuencia principal (clasificacion espectral G2V) que funde hidrogeno en helio dentro de su nucleo termonuclear a un ritmo constante, encontrandose actualmente en la mitad de su vida activa de aproximadamente diez mil millones de anos.",
+      "Dentro de unos cinco mil millones de anos (5 Ga), el hidrogeno nuclear del nucleo solar se agotara por completo, provocando la perdida del equilibrio hidrostatico interno. Al cesar las reacciones de fusion central, el nucleo de cenizas de helio colapsara bajo su propio peso gravitatorio, elevando su temperatura hasta encender la fusion de hidrogeno en una capa delgada periférica; este incremento radical de la presion de radiacion empujara las capas convectivas exteriores del Sol en una expansion monstruosa hacia el espacio interplanetario.",
+      "En esta fase de gigante roja, el radio fotosferico del Sol crecera entre ciento cincuenta y mas de doscientas veces su tamano actual, alcanzando dimensiones comprendidas entre 1.0 y 1.2 unidades astronomicas (mas de ciento cincuenta millones de kilometros de radio). Su temperatura efectiva superficial caera desde los actuales cinco mil setecientos kelvins hasta unos tres mil kelvins adquiriendo un brillo rojizo profundo, pero su luminosidad bolometrica total aumentara mas de dos mil veces respecto a los valores actuales.",
+      "Durante esta colosal hinchazon estelar, los mundos rocosos interiores sufriran una transformacion radical. Mercurio y Venus seran inexorablemente engullidos por las capas fotosfericas solares, desintegrandose por friccion de plasma denso. En el caso de la Tierra, aunque el Sol perdera aproximadamente un treinta por ciento de su masa total debido a potentes vientos estelares supermasivos (lo cual expandira ligeramente el semieje mayor de las orbitas planetarias), la interaccion de marea gravitatoria sellara el destino terrestre.",
+      "Segun los modelos fisicos mas rigurosos de evolucion estelar y mecanica orbital (como los calculos de Schroder y Smith), las fuerzas de friccion hidrodinámica con la tenue corona solar extendida y la disipacion de mareas frenaran la velocidad orbital de la Tierra. Esto provocara que el planeta espiralice hacia el interior del astro en expansion, siendo engullido y vaporizado completamente justo antes de que el Sol alcance la punta de la rama de gigantes rojas (tip of the red-giant branch)."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Cuando el Sol se convierta en una gigante roja, la zona de habitabilidad del Sistema Solar se desplazará hacia afuera, convirtiendo a las lunas heladas de Júpiter y Saturno como Europa y Titán en mundos templados con océanos superficiales.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Durante su fase de gigante roja, el Sol perderá aproximadamente un 30% de su masa total debido a vientos estelares intensos, haciendo que las órbitas de los planetas sobrevivientes se expandan ligeramente hacia afuera.' }
-    ],
-    fact: 'El radio del Sol como gigante roja alcanzará más de 150 millones de kilómetros, rozando la órbita actual de la Tierra.',
+    "fact": "Dentro de 5,000 millones de anos el Sol agotara su hidrogeno y se expandira como gigante roja, multiplicando su radio mas de 200 veces y su luminosidad 2,000 veces; la perdida de masa estelar expandira las orbitas, pero la friccion con el plasma y la disipacion de marea devoraran a Mercurio, Venus y finalmente a la Tierra.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Durante la fase maxima de gigante roja, la zona de habitabilidad circunestelar se desplazara desde la franja actual de 1 UA hacia las 40 a 70 UA, transformando temporalmente los satelites helados Europa, Ganimedes y especialmente Titan en mundos con oceanos templados superficiales durante unos cien millones de anos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El Sol culminara su fase de gigante roja con el encendido explosivo y casi instantaneo de la fusion del helio en su nucleo degenerado, un fenomeno astrofisico denominado flash del helio, en el cual se libera en pocos minutos una energia termica colosal antes de que la estrella recupere una configuracion estable en la rama horizontal."
+      }
+    ]
   },
   {
-    id: 'evaporacion-oceanos',
-              bannerImage: '/assets/rocosos/infographic_m6/banner_evaporacion-oceanos.webp',
-    title: 'Evaporación de Océanos',
-    color: '#FFBD00',
-    btnImage: '/assets/rocosos/infographic_m6/btn_evaporacion-oceanos.webp',
-    image: '/assets/rocosos/infographic_m6/hero_evaporacion-oceanos.webp',
-    content: [
-      'Mucho antes de que el Sol se expanda hasta convertirse en una gigante roja, la Tierra sufrirá un cambio climático inevitable. A medida que el Sol quema hidrógeno en su núcleo, se vuelve gradualmente un diez por ciento más brillante y caliente cada mil millones de años.',
-      'Dentro de aproximadamente mil millones de años, este aumento progresivo del brillo solar sobrecalentará la superficie de la Tierra. La temperatura media global superará los sesenta grados Celsius, desencadenando una evaporación masiva y acelerada de todos los océanos del planeta.',
-      'El vapor de agua resultante llenará la atmósfera, actuando como un potente gas de efecto invernadero que atrapará aún más calor. En las capas altas del aire, la radiación ultravioleta del Sol romperá las moléculas de agua, haciendo que el hidrógeno escape para siempre hacia el espacio profundo.',
-      'En unos mil quinientos millones de años, la Tierra habrá perdido hasta la última gota de sus océanos azules, transformándose en un desierto estéril y polvoriento sin agua líquida, similar a la superficie abrasadora de Venus hoy en día.',
-      'Este destino marca el límite temporal para la biosfera terrestre. La vida compleja sobre los continentes desaparecerá, dejando únicamente a microorganismos extremófilos subterráneos como los últimos sobrevivientes del planeta azul.'
+    "id": "evaporacion-oceanos",
+    "bannerImage": "/assets/rocosos/infographic_m6/banner_evaporacion-oceanos.webp",
+    "title": "Evaporación de Océanos",
+    "color": "#FFBD00",
+    "btnImage": "/assets/rocosos/infographic_m6/btn_evaporacion-oceanos.webp",
+    "image": "/assets/rocosos/infographic_m6/hero_evaporacion-oceanos.webp",
+    "content": [
+      "La habitabilidad superficial de la Tierra posee una fecha de caducidad geofisica mucho mas proxima en el tiempo que la invasion fisica de la gigante roja. Debido a la fisica de los reactores de fusion estelar, a medida que el Sol transforma nucleos de hidrogeno en helio dentro de su corazon termonuclear, el peso molecular medio del plasma central aumenta; esto obliga al nucleo a contraerse lentamente y a elevar su temperatura, provocando que la luminosidad del Sol aumente de forma inexorable a un ritmo de aproximadamente un diez por ciento cada mil cien millones de anos.",
+      "Dentro de aproximadamente mil millones de anos (1.0 a 1.1 Ga en el futuro), la irradiacion solar que incide sobre la parte superior de la atmosfera terrestre se habra incrementado lo suficiente para alterar de forma catastrofica el ciclo geoquimico del carbono y el clima planetario. Las temperaturas medias globales sobrepasaran los sesenta y setenta grados Celsius, provocando una tasa masiva y acelerada de evaporacion de los oceanos mundiales que saturara por completo la columna troposferica de vapor de agua.",
+      "El vapor de agua (H2O) gaseoso es un gas de efecto invernadero infrarrojo extraordinariamente eficiente, muy superior al dioxido de carbono. Al acumularse masivamente en el aire, atrapara el calor emitido por la superficie terrestre desatando una retroalimentacion climatica positiva irreversible conocida en planetologia como efecto invernadero humedo (moist greenhouse) y, finalmente, un regimen termodinamico de invernadero desbocado (runaway greenhouse) similar al que asolo a Venus primitivo.",
+      "En este estado supercaliente, las moleculas de agua ascenderan libremente hacia la estratosfera y mesosfera terrestre, regiones que actualmente actuan como una trampa fria seca. Alli, la despiadada radiacion ultravioleta solar fotodisociara los enlaces moleculares liberando atomos de oxigeno e hidrogeno; los atomos de hidrogeno, al ser los elementos quimicos mas ligeros del universo, alcanzaran velocidades termicas que exceden la velocidad de escape terrestre, fugandose hacia el espacio interplanetario mediante escape hidrodinamico.",
+      "En un lapso estimado de mil quinientos a dos mil millones de anos a partir del presente, la Tierra habra perdido al espacio exterior hasta la ultima gota de sus 1.38 miles de millones de kilometros cubicos de agua oceanica. Desprovisto de agua, el manto superior se secara por completo, deteniendo para siempre la lubricacion de las fallas y poniendo fin al ciclo de tectonica de placas; la biosfera compleja se extinguira por completo, dejando tras de si una litosfera esteril, cuarteada y cubierta por llanuras salinas abrasadoras."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La pérdida de los océanos detendrá por completo la tectónica de placas en la Tierra, ya que se requiere agua en los minerales del manto para lubricar el movimiento de los continentes.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El escape hidrodinámico de hidrógeno provocado por la radiación solar extrema reducirá la masa de la atmósfera terrestre de forma continua a lo largo de los próximos 2,000 millones de años.' }
-    ],
-    fact: 'La ventana de tiempo restante para la existencia de vida compleja en la Tierra es de aproximadamente 1,000 millones de años debido al aumento natural del brillo solar.',
+    "fact": "El aumento gradual del 10% en el brillo solar cada 1,100 millones de anos hara que en unos 1,000 millones de anos los oceanos terrestres entren en ebullicion e invernadero humedo; el vapor de agua sera disociado por radiacion UV y el hidrogeno escapara al espacio, desecando totalmente la Tierra y extinguiendo la vida compleja.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Mucho antes de la evaporacion total del agua (en unos 600 a 800 millones de anos), el aumento de la meteorizacion quimica de silicatos consumira casi todo el CO2 atmosferico, reduciendolo por debajo de 10 partes por millon, un nivel letal que impedira la fotosintesis C3 y C4, provocando la extincion masiva de la vida vegetal."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los ultimos seres vivos que sobreviviran en la Tierra calcinada dentro de 1,500 millones de anos seran comunidades microbianas extremófilas quimiolitotrofas refugiadas en cavidades profundas de la corteza continental y acuiferos salinos subcorticales, replicando las mismas condiciones en las que emergio la vida primigenia."
+      }
+    ]
   },
   {
-    id: 'descomposicion-venus',
-              bannerImage: '/assets/rocosos/infographic_m6/banner_descomposicion-venus.webp',
-    title: 'Transformación de Venus',
-    color: '#FF5400',
-    btnImage: '/assets/rocosos/infographic_m6/btn_descomposicion-venus.webp',
-    image: '/assets/rocosos/infographic_m6/hero_descomposicion-venus.webp',
-    content: [
-      'A medida que el Sol evolucione hacia su fase final, Venus sufrirá una transformación física radical. Al estar ubicado más cerca del Sol que la Tierra, Venus absorberá una cantidad descomunal de radiación solar durante la expansión estelar.',
-      'Las temperaturas en la superficie de Venus subirán por encima de los dos mil grados Celsius. Este calor formidable derretirá por completo las rocas de basalto y los silicatos de la corteza, convirtiendo al planeta entero en una esfera brillante de lava líquida desprovista de suelo firme.',
-      'La densa atmósfera de dióxido de carbono que caracteriza a Venus en la actualidad será arrancada y dispersada hacia el espacio interplanetario por las ráfagas violentas de los vientos estelares de la gigante roja.',
-      'Finalmente, cuando el radio del Sol gigante alcance la posición orbital de Venus, el planeta será tragado entero por la atmósfera solar exterior. La inmensa fricción con el gas estelar frenará la órbita de Venus, haciendo que el planeta se espiralice hacia el centro del Sol donde será evaporado y desintegrado por completo.',
-      'Los átomos que alguna vez formaron los volcanes, las llanuras de basalto y la atmósfera ácida de Venus se mezclarán con el plasma solar, destruyendo la identidad del planeta después de cinco mil millones de años de existencia.'
+    "id": "descomposicion-venus",
+    "bannerImage": "/assets/rocosos/infographic_m6/banner_descomposicion-venus.webp",
+    "title": "Transformación de Venus",
+    "color": "#FF5400",
+    "btnImage": "/assets/rocosos/infographic_m6/btn_descomposicion-venus.webp",
+    "image": "/assets/rocosos/infographic_m6/hero_descomposicion-venus.webp",
+    "content": [
+      "Ubicado a tan solo 0.72 unidades astronomicas del Sol, el planeta Venus sera el primer cuerpo planetario de masa terrestre en experimentar de lleno la devastacion termica y estructural provocada por la agonia estelar. Mucho antes de que el Sol alcance su diametro de gigante roja maximo, el incremento sustancial en el flujo radiativo estelar calentara la ya abrasadora superficie venusiana (actualmente a cuatrocientos sesenta y cinco grados Celsius) hasta extremos termodinamicos inauditos.",
+      "Cuando la insolacion solar sobrepase con holgura los cinco mil vatios por metro cuadrado, las temperaturas superficiales en Venus ascenderan por encima de los mil quinientos y dos mil grados Celsius (1,800 a 2,300 K). A estas temperaturas infernales, el punto de fusion de los silicatos y basaltos comunes sera rebasado con holgura: la totalidad de la corteza solida y las altiplanicies volcanicas de Ishtar y Aphrodite Terra colapsaran, convirtiendo al planeta entero en un reluciente oceano global de magma incandescente.",
+      "Al mismo tiempo, la densa atmosfera de noventa y dos bares de dioxido de carbono experimentara una expansion hidrotermica catastrofica. El viento estelar y la radiacion ultravioleta extrema arrancaran la envoltura gaseosa mediante fotoevaporacion energetica, dispersando miles de millones de toneladas de carbono, oxigeno y derivados de azufre en una densa cola cometaria ionizada que cruzara el Sistema Solar interior.",
+      "Cuando el borde fotosferico del Sol gigante finalmente alcance la posicion orbital de Venus (a ciento ocho millones de kilometros del centro estelar), el planeta no colisionara como una roca contra una pared solida, sino que penetrara en las capas de plasma ionizado exterior del astro. El inmenso arrastre aerodinámico y la friccion magnetohidrodinamica disiparan el momento angular orbital del planeta, forzandolo a describir una espiral descendente suicida hacia el interior del Sol.",
+      "Al cruzar el limite de marea de Roche fluido, las descomunales fuerzas diferenciales de la gravedad solar desgarraran la esfera magmatica de Venus en jirones de roca fundida y particulas de polvo refractario. Los atomos de hierro, niquel, silicio y magnesio que constituyeron el planeta durante cuatro mil quinientos millones de anos se disolveran y mezclaran intimamente en la masa convectiva del Sol, alterando la composicion quimica y la metalicidad superficial de la estrella."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La destrucción de Venus dentro del Sol liberará suficiente energía en la atmósfera estelar para causar un breve destello brillante visible desde las estrellas cercanas.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La evaporación de un planeta rocoso dentro de una gigante roja altera la abundancia química de la estrella, aumentando la presencia de elementos pesados en su espectro luminoso.' }
-    ],
-    fact: 'Mercurio y Venus están destinados a ser absorbidos y destruidos totalmente por el Sol durante su fase de gigante roja.',
+    "fact": "Al estar a 0.72 UA del Sol, Venus sera transformado en un oceano de magma incandescente a mas de 1,800 °C mucho antes del engullimiento final; al penetrar en la atmosfera de plasma de la gigante roja, el frenado orbital forzara su caida en espiral hasta ser destrozado por fuerzas de marea y disuelto en el interior solar.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los astronomos han detectado huellas inequivocas de 'canibalismo planetario' en estrellas gigantes rojas reales de la Via Lactea, evidenciadas por picos anómalos de elementos liticos refractarios como el litio-7 y aumentos transitorios en la velocidad de rotacion estelar causados por la absorcion del momento angular de exoplanetas."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La completa disolucion de la masa de Venus (casi 5 cuatrillones de kilogramos) dentro de la envoltura solar liberara una cantidad descomunal de energia de enlace gravitatoria, generando un resplandor transitorio que seria visible como una llamarada brillante para observadores situados en sistemas estelares vecinos."
+      }
+    ]
   },
   {
-    id: 'marte-segundo-hogar',
-              bannerImage: '/assets/rocosos/infographic_m6/banner_marte-segundo-hogar.webp',
-    title: 'Marte y Terraformación',
-    color: '#3A86FF',
-    btnImage: '/assets/rocosos/infographic_m6/btn_marte-segundo-hogar.webp',
-    image: '/assets/rocosos/infographic_m6/hero_marte-segundo-hogar.webp',
-    content: [
-      'A medida que la Tierra se vuelva inhabitable en los próximos siglos y milenios, el planeta Marte se presenta como el destino más prometedor para la expansión de la civilización humana y la preservación del conocimiento científico.',
-      'Aunque Marte es hoy un mundo helado, contiene gigantescas reservas de hielo de agua subterráneo y dióxido de carbono congelado en sus casquetes polares que podrían utilizarse para transformar el planeta mediante la ingeniería planetaria o terraformación.',
-      'El concepto de terraformación busca alterar deliberadamente el clima marciano. Liberando gases de efecto invernadero para espesar la atmósfera, se podría elevar la temperatura global hasta derretir el hielo subterráneo y crear de nuevo océanos y ríos de agua líquida en la superficie.',
-      'Con una atmósfera más densa y agua corriendo por las llanuras de Jezero y Gale, los humanos podrían introducir plantas genéticamente modificadas para iniciar la fotosíntesis masiva, produciendo oxígeno respirable a lo largo de siglos de trabajo sostenido.',
-      'Marte podría convertirse en nuestro segundo hogar en el cosmos, sirviendo como un refugio de la humanidad y un puente para la exploración de los exoplanetas rocosos que orbitan alrededor de otras estrellas de la galaxia.'
+    "id": "marte-segundo-hogar",
+    "bannerImage": "/assets/rocosos/infographic_m6/banner_marte-segundo-hogar.webp",
+    "title": "Marte y Terraformación",
+    "color": "#3A86FF",
+    "btnImage": "/assets/rocosos/infographic_m6/btn_marte-segundo-hogar.webp",
+    "image": "/assets/rocosos/infographic_m6/hero_marte-segundo-hogar.webp",
+    "content": [
+      "A medida que la irradiacion solar incremente sus valores y convierta progresivamente a la Tierra en un desierto estéril a lo largo de los proximos dos mil millones de anos, la zona de habitabilidad del Sistema Solar se desplazara hacia el exterior, intersecando de lleno la orbita del planeta Marte (situada a una distancia media de 1.52 unidades astronomicas). Este desplazamiento astrofisico confiere al Planeta Rojo un papel estrategico en la supervivencia a largo plazo de la civilizacion biologica y tecnologica.",
+      "En el plano teorico e ingenieril de la planetologia, el concepto de terraformacion persigue transformar deliberadamente el ambiente hiperarido, gelido e hipobarico de Marte en una biosfera abierta con presion atmosferica respirable, temperatura clemente y ciclos hidrologicos superficiales estables. No obstante, los inventarios cuantitativos de volatiles realizados por misiones orbitales modernas han impuesto severas restricciones fisicas a este sueno exploratorio.",
+      "Un estudio exhaustivo publicado por Bruce Jakosky y Christopher Edwards en 2018 demostro que si se sublimasen la totalidad de las reservas de dioxido de carbono accesibles en los casquetes polares, regolito adsorbente y minerales carbonatados marcianos, la presion atmosferica superficial apenas aumentaria de 6 a unos 20 o 30 milibares, un valor absolutamente insuficiente para impedir la ebullicion del agua o evitar el colapso pulmonar (se requieren un minimo de trescientos milibares para la supervivencia basica con mascara de oxigeno).",
+      "Por consiguiente, una terraformacion efectiva requeriria macroproyectos de astroingenieria radical: la desviacion deliberada de decenas de asteroides y cometas ricos en amoniaco y agua procedentes del cinturon de Kuiper para inyectar nitrogeno molecular (el gas amortiguador indispensable para evitar la hiperoxia inflamable), y la sintesis industrial masiva de supergases de efecto invernadero fluorados artificiales (como clorofluorocarburos, SF6 o octafluoropropano), cuyo potencial de calentamiento radiativo supera diez mil veces al CO2.",
+      "Asimismo, para impedir que el viento solar vuelva a despojar los nuevos gases atmosfericos generados artificialmente en un mundo sin geodinamo, los fisicos han propuesto situar una estacion de generacion de campo magnetico dipolar artificial de uno o dos teslas en el punto de libracion gravitatoria de Lagrange L1 entre Marte y el Sol. Esta configuracion crearia una magnetopausa deflector artificial que protegeria la atmosfera restaurada permitiendo que oceanos y bosques prosperen durante siglos."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La baja gravedad de Marte (un 38% de la terrestre) permitiría a los humanos construir estructuras gigantescas y ciudades bajo domos transparentes con materiales mucho más ligeros que en la Tierra.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Para proteger a Marte terraformado de la radiación solar sin un campo magnético propio, los científicos proponen colocar un escudo magnético artificial en el punto de Lagrange L1 entre Marte y el Sol.' }
-    ],
-    fact: 'Se estima que un proceso completo de terraformación marciana requeriría entre varios siglos y mil años de desarrollo tecnológico continuo.',
+    "fact": "La terraformacion de Marte demandaria macroingenieria a escala planetaria: los volatiles marcianos actuales solo alcanzarian unos 20-30 milibares de presion, por lo que se requeriria bombardeo cometario para aportar nitrogeno, produccion industrial de gases fluorados y un escudo dipolar magnetico artificial en el punto L1 Sol-Marte.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La baja gravedad de Marte (0.38 g) implica que para lograr una presion atmosferica equivalente a la terrestre en superficie (1,013 mbar), la masa total de la columna de aire marciana deberia ser 2.6 veces mayor por metro cuadrado que la de la Tierra, lo que exigiría manufacturar billones de toneladas de gases atmosfericos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Incluso sin terraformacion completa, la utilizacion de recursos in situ (ISRU), como demostro el instrumento MOXIE de Perseverance al fabricar oxigeno respirable directamente del CO2 marciano mediante electrolisis de oxido solido, hara posible sostener colonias permanentes bajo biodomos presurizados en tubos de lava naturales."
+      }
+    ]
   },
   {
-    id: 'exoplanetas-rocosos',
-              bannerImage: '/assets/rocosos/infographic_m6/banner_exoplanetas-rocosos.webp',
-    title: 'Super-Tierras y TRAPPIST-1',
-    color: '#8338EC',
-    btnImage: '/assets/rocosos/infographic_m6/btn_exoplanetas-rocosos.webp',
-    image: '/assets/rocosos/infographic_m6/hero_exoplanetas-rocosos.webp',
-    content: [
-      'La búsqueda de planetas rocosos ya no se limita a nuestro Sistema Solar. Gracias a observatorios espaciales avanzados como Kepler, TESS y el Telescopio Espacial James Webb, los astrónomos han descubierto miles de exoplanetas rocosos orbitando otras estrellas en la Vía Láctea.',
-      'Entre los hallazgos más extraordinarios destacan las Super-Tierras, mundos rocosos con una masa entre dos y diez veces superior a la de la Tierra. Estos planetas poseen campos gravitatorios potentes y atmósferas densas capaces de albergar enormes océanos globales sin continentes.',
-      'Uno de los sistemas más fascinantes es TRAPPIST-1, una estrella enana roja ultrafría situada a cuarenta años luz de la Tierra que alberga siete planetas rocosos de tamaño similar al nuestro. Tres de estos planetas orbitan dentro de la zona de habitabilidad donde el agua líquida puede existir.',
-      'Estudiar la atmósfera de estos exoplanetas rocosos mediante espectroscopia permite a los astrofísicos buscar biofirmas como oxígeno, ozono, metano y vapor de agua, tratando de descubrir si la vida ha florecido en otros rincones de la galaxia.',
-      'Los planetas rocosos enanos alrededor de estrellas enanas rojas pueden mantener condiciones habitables durante billones de años, ofreciendo un refugio para la vida mucho más duradero que la vida de nuestro propio Sol.'
+    "id": "exoplanetas-rocosos",
+    "bannerImage": "/assets/rocosos/infographic_m6/banner_exoplanetas-rocosos.webp",
+    "title": "Super-Tierras y TRAPPIST-1",
+    "color": "#8338EC",
+    "btnImage": "/assets/rocosos/infographic_m6/btn_exoplanetas-rocosos.webp",
+    "image": "/assets/rocosos/infographic_m6/hero_exoplanetas-rocosos.webp",
+    "content": [
+      "La frontera del conocimiento geologico y astrobiologico de los mundos rocosos ha trascendido definitivamente los confines del Sistema Solar. A traves de las observaciones fotometricas de precision de los telescopios espaciales Kepler, TESS y CHEOPS, y la caracterizacion espectroscopica pionera del Telescopio Espacial James Webb (JWST), los astronomos han confirmado la existencia de miles de exoplanetas de naturaleza solida y litosferica en la Via Lactea.",
+      "Entre estos hallazgos destaca la ubicua clase de las Super-Tierras: exoplanetas terrestres con masas comprendidas entre una y diez veces la masa terrestre y radios de hasta 1.5 o 1.7 radios terrestres. Las mediciones espectroscopicas de alta resolucion han permitido identificar el denominado valle del radio de Fulton, una profunda division observacional a 1.8 radios terrestres que separa mundos puramente rocosos con nucleos metalicos de sub-Neptunos gaseosos envueltos en densos mantos de hidrogeno primordial.",
+      "El laboratorio cosmico mas extraordinario para la investigacion de planetas rocosos compactos es el sistema TRAPPIST-1, una estrella enana roja ultrafría de tipo espectral M8V situada a casi cuarenta anos luz de la Tierra en la constelacion de Acuario. Este astro alberga una familia de siete exoplanetas de tamano y composicion sorprendentemente similares a la Tierra y Venus (TRAPPIST-1b hasta 1h), organizados en una apretada cadena de resonancias orbitales casi matematicamente perfectas.",
+      "Tres de estos mundos (TRAPPIST-1e, f y g) orbitan comodamente dentro de la zona de habitabilidad templada de la estrella, donde el agua liquida podria sostenerse sobre sus lechos rocosos. No obstante, al encontrarse muy proximos a su diminuta estrella central, estos planetas sufren un intenso acoplamiento de marea que los fuerza a una rotacion sincronizada, exhibiendo perpetuamente un hemisferio abrasador iluminado y un hemisferio nocturno congelado en tinieblas.",
+      "Asimismo, los analisis de transmision infrarroja realizados por los instrumentos MIRI y NIRSpec del JWST estan investigando si estos mundos han logrado retener sus atmosferas ante el persistente bombardeo de fulguraciones ultravioleta extremo y viento estelar de las enanas M; dado que las enanas rojas pueden quemar combustible de hidrogeno de forma estable durante billones de anos (un lapso miles de veces mayor que la vida del Sol), sus planetas rocosos representan los habitats mas longevos del cosmos."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los siete planetas del sistema TRAPPIST-1 están tan cerca entre sí que si estuvieras en la superficie de uno de ellos, verías a los planetas vecinos en el cielo más grandes que la Luna llena vista desde la Tierra.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El telescopio espacial James Webb analiza la luz de la estrella TRAPPIST-1 al pasar a través de las atmósferas de sus planetas para determinar su composición química mediante espectroscopia de transmisión.' }
-    ],
-    fact: 'Las estrellas enanas rojas viven hasta billones de años, ofreciendo a sus exoplanetas rocosos una estabilidad climática miles de veces mayor que la del Sol.',
+    "fact": "El sistema TRAPPIST-1 alberga siete exoplanetas rocosos de tamano terrestre orbitando una enana roja ultrafría a 40 anos luz; tres de ellos yacen en la zona de habitabilidad; con estrellas enanas que viven billones de anos, estos mundos rocosos sincronizados por marea representan los refugios mas longevos para la vida en la galaxia.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las observaciones termicas de emision en el canal de 15 micrometros del JWST/MIRI sobre TRAPPIST-1b y 1c han descartado atmosferas densas de CO2 o vapor de agua similares a la de Venus, sugiriendo que la intensa actividad de llamaradas tempranas de la enana roja despojo las envolturas gaseosas de los planetas interiores."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La proximidad fisica mutua entre los planetas del sistema TRAPPIST-1 es tan asombrosa que un hipotetico observador en la superficie de TRAPPIST-1e contemplaria los discos de los planetas vecinos en su cielo con un tamano angular dos o tres veces mayor que el disco de la Luna llena visto desde la Tierra."
+      }
+    ]
   },
   {
-    id: 'recursos-planetarios',
-              bannerImage: '/assets/rocosos/infographic_m6/banner_recursos-planetarios.webp',
-    title: 'Minería Espacial',
-    color: '#00F5D4',
-    btnImage: '/assets/rocosos/infographic_m6/btn_recursos-planetarios.webp',
-    image: '/assets/rocosos/infographic_m6/hero_recursos-planetarios.webp',
-    content: [
-      'El futuro de los planetas rocosos y pequeños asteroides está estrechamente ligado al desarrollo de la economía espacial humana. Los cuerpos rocosos de nuestro sistema albergan reservas inestimables de metales raros, minerales industriales y recursos energéticos fundamentales.',
-      'Asteroides rocosos del tipo M y planetesimales metálicos contienen concentraciones gigantescas de hierro, níquel, cobalto, oro y metales del grupo del platino que superan por completo todas las reservas mineras conocidas en la corteza terrestre.',
-      'La minería de asteroides y la extracción de recursos en la Luna o Marte permitirán construir estructuras gigantescas en el espacio, como astilleros orbitales, paneles solares espaciales y hábitats cósmicos sin tener que transportar los materiales pesados desde la Tierra.',
-      'Además de metales, el hielo de agua atrapado en los polos de la Luna y Marte puede descomponerse mediante electrólisis en hidrógeno y oxígeno líquidos, produciendo combustible para cohetes y agua potable para las estaciones espaciales del futuro.',
-      'Esta era de minería geológica interplanetaria transformará la relación de la humanidad con los cuerpos rocosos, convirtiendo los asteroides y lunas en los cimientos industriales para la exploración de todo el Sistema Solar.'
+    "id": "recursos-planetarios",
+    "bannerImage": "/assets/rocosos/infographic_m6/banner_recursos-planetarios.webp",
+    "title": "Minería Espacial",
+    "color": "#00F5D4",
+    "btnImage": "/assets/rocosos/infographic_m6/btn_recursos-planetarios.webp",
+    "image": "/assets/rocosos/infographic_m6/hero_recursos-planetarios.webp",
+    "content": [
+      "El devenir evolutivo de la civilizacion industrial humana esta indisolublemente ligado a la explotacion geologica y quimica de los cuerpos rocosos y metalicos menores del Sistema Solar. Los recursos minerales accesibles en la corteza terrestre sufren un continuo agotamiento energetico y ecologico debido a milenios de extraccion minera intensiva; en contraposicion, los asteroides cercanos a la Tierra (NEAs) y el cinturon principal conservan una cornucopia mineral intacta desde la nebulosa protoplanetaria.",
+      "Desde la optica de la geoquimica cosmica, los cuerpos rocosos diferenciados del cinturon de asteroides experimentaron procesos de segregacion gravitatoria similares a los planetas terrestres mayores. Los asteroides de tipo espectral M, cuyo maximo exponente es el titan 16 Psyche (un asteroide de mas de doscientos kilometros de diametro que constituye el nucleo metalico expuesto de un protoplaneta destrozado por colisiones catastroficas), estan formados casi integramente por aleaciones puras de hierro, niquel y cobalto nativos.",
+      "De manera aun mas prometedora para la alta tecnologia, estos fragmentos de nucleos asteroides albergan concentraciones descomunales de metales del grupo del platino (PGMs: platino, rutenio, rodio, paladio, osmio e iridio), elementos que en la Tierra se hundieron gravitatoriamente hacia el nucleo inaccessible durante la catastrofe del hierro, existiendo en la corteza superficial solo en fracciones de partes por millon; un solo asteroide metalico de quinientos metros puede contener mas reservas de platino que toda la historia minera humana.",
+      "Sin embargo, el recurso economico mas valioso en la etapa inicial de expansion orbital no son los metales preciosos, sino el agua ligada quimicamente en los asteroides primitivos de tipo C (condritas carbonaceas como Bennu y Ryugu). Estos cuerpos contienen entre un diez y un quince por ciento de su peso en agua atrapada en filosilicatos y arcillas; su extraccion mediante desgasificacion termica solar directa permite obtener hielo purificado para soporte biologico vital y producir propulsores criogenicos liquidos (hidrogeno y oxigeno liquidificados).",
+      "La disponibilidad de propelentes manufacturados in situ en el espacio deep space elimina la abrumadora penalizacion gravitatoria del cohete terrestre (escapar del pozo gravitatorio de la Tierra demanda un cambio de velocidad Delta-v de nueve punto cuatro kilometros por segundo). La mineria de asteroides se erige asi como la columna vertebral de la infraestructura industrial orbital futura, posibilitando la manufactura de gigantescas estaciones espaciales, centrales solares fotovoltaicas orbitales y escudos radiativos de regolito denso."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El asteroide metálico 16 Psyche, ubicado en el cinturón de asteroides, contiene suficiente hierro y níquel como para superar el valor económico de toda la economía global de la Tierra multiplicada por miles de veces.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La extracción de recursos in situ (ISRU) es la tecnología desarrollada por la NASA para producir oxígeno y agua directamente a partir del regolito marciano y lunar durante misiones de larga duración.' }
-    ],
-    fact: 'Un solo asteroide rocoso de 500 metros rico en platino puede contener más metales del grupo del platino que todos los extraídos en la historia de la humanidad.',
+    "fact": "La mineria de asteroides ofrece acceso a concentraciones intactas de metales siderofilos y del grupo del platino concentrados en asteroides tipo M como 16 Psyche, asi como a ingentes volumenes de agua en condritas carbonaceas tipo C; el agua procesada in situ como propelente rompera la tirania del pozo gravitatorio terrestre.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los analisis de las muestras pristine recolectadas y retornadas a la Tierra por la mision OSIRIS-REx de la NASA desde el asteroide carbonaceo Bennu revelaron abundante materia organica prebiotica rica en carbono, nitrogeno y fosfatos solubles en agua, confirmando el potencial quimico de estos reservorios espaciales."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Se estima que el valor teorico de los minerales industriales y metales tecnologicos contenidos en el asteroide 16 Psyche supera con creces los diez trillones de dolares en la economia terrestre, una cifra que multiplica por miles el producto interno bruto consolidado de todas las naciones del mundo juntas."
+      }
+    ]
   },
   {
-    id: 'destino-final-rocas',
-              bannerImage: '/assets/rocosos/infographic_m6/banner_destino-final-rocas.webp',
-    title: 'El Destino Final',
-    color: '#7000FF',
-    btnImage: '/assets/rocosos/infographic_m6/btn_destino-final-rocas.webp',
-    image: '/assets/rocosos/infographic_m6/hero_destino-final-rocas.webp',
-    content: [
-      '¿Cuál es el destino final de todas las rocas y planetas del universo a escalas de tiempo cosmológicas? Después de que el Sol expulse sus capas exteriores como una gigante roja, dejará tras de sí un remanente estelar pequeño, denso y caliente llamado enana blanca.',
-      'Los planetas sobrevivientes que no fueron devorados, como Marte, Júpiter y Saturno, continuarán orbitando alrededor de la fría enana blanca durante miles de millones de años en la oscuridad del espacio en enfriamiento.',
-      'Con el paso de billones de años, las interacciones gravitatorias entre los planetas restantes y las estrellas que pasen cerca desestabilizarán lentamente sus órbitas. Algunos planetas rocosos serán expulsados hacia el vacío del espacio interplanetario como mundos vagabundos.',
-      'Otros planetas rocosos serán arrastrados por la gravedad hacia la enana blanca central, donde las fuerzas de marea destruirán el planeta en un anillo de polvo rocoso que terminará cayendo sobre la estrella muerta.',
-      'En escalas de tiempo casi infinitas de miles de billones de años, toda la materia sólida de los planetas rocosos se desintegrará gradualmente por la desintegración de los protones, completando el ciclo cósmico de la materia que comenzó en la nebulosa solar primigenia.'
+    "id": "destino-final-rocas",
+    "bannerImage": "/assets/rocosos/infographic_m6/banner_destino-final-rocas.webp",
+    "title": "El Destino Final",
+    "color": "#7000FF",
+    "btnImage": "/assets/rocosos/infographic_m6/btn_destino-final-rocas.webp",
+    "image": "/assets/rocosos/infographic_m6/hero_destino-final-rocas.webp",
+    "content": [
+      "A escalas de tiempo cosmológicas que superan miles de millones y billones de anos, ¿cual es el destino ultimo que aguarda a toda la materia rocosa del cosmos? Tras concluir su convulsa fase de gigante roja y expeler sus capas fotosfericas externas en una efimera nebulosa planetaria enriquecida de carbono, el Sol colapsara en un nucleo remanente estelar ultra-denso e inerte: una enana blanca de carbono y oxigeno con una masa del cincuenta y cinco por ciento de la solar comprimida en el volumen de la Tierra.",
+      "Los planetas y cuerpos rocosos que logren sobrevivir a la era de gigante roja solar (como Marte, los asteroides mayores y las lunas litoesfericas exteriores) continuaran orbitando alrededor de esta estrella enana blanca en enfriamiento durante cientos de miles de millones de anos en la oscuridad perpetua de un universo en expansion termica acelerada. En este gelido escenario, las interacciones gravitatorias seculares entre los cuerpos remanentes alteraran progresivamente las excentricidades e inclinaciones orbitales.",
+      "Muchos asteroides y planetesimales seran perturbados hacia trayectorias suicidas que cruzaran el radio de destruccion por marea de Roche de la enana blanca (situado a aproximadamente un millon de kilometros de su superficie). Alli, el inmenso gradiente de gravedad desintegrara las rocas en un anillo circunestelar de polvo caliente que precipitara gradualmente sobre la fotosfera; observaciones telescopicas del Hubble y Gaia han detectado numerosas enanas blancas contaminadas cuyos espectros revelan la digestion activa de corteza y mantos de exoplanetas rocosos.",
+      "En la denominada Era Degenerada de la cosmologia (entre diez a la catorce y diez a la cuarenta anos en el futuro: 10^14 a 10^40 anos), las continuas interacciones dinamicas de n-cuerpos con estrellas errantes que atraviesen el halo galactico expulsaran al noventa y nueve por ciento de los planetas rocosos supervivientes hacia el abismo intergalactico como mundos vagabundos huerfanos y gelidos, mientras que la fraccion restante colapsara por emision de ondas gravitacionales hacia la estrella central.",
+      "Finalmente, si se verifica la prediccion de las teorias de gran unificacion fisica sobre la desintegracion espontanea de los bariones (decaimiento del proton con una vida media estimada en diez a la treinta y cuatro anos), toda la estructura atomica de las rocas, silicatos y redes metalicas de los planetas se desintegrara gradualmente desde el interior de sus nucleos cristalinos; cada atomo de hierro y silicio decaera en positrones, neutrinos y radiacion de fotones, disolviendo toda huella de materia solida en el cosmos eterno."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los astrónomos han descubierto muchas enanas blancas "contaminadas" cuyos espectros muestran rastros de hierro, magnesio y silicio procedentes de planetas rocosos que fueron destruidos y devorados por la estrella.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Una enana blanca tiene la masa del Sol apretada en el volumen de la Tierra, generando un campo gravitatorio superficial 100,000 veces más fuerte que el terrestre.' }
-    ],
-    fact: 'Toda la materia de los planetas rocosos está compuesta por átomos sintetizados en el corazón de antiguas estrellas que murieron antes del nacimiento del Sol.',
-  },
+    "fact": "En escalas cosmológicas extremas, el Sol terminara como enana blanca enfriandose eternamente; los planetas sobrevivientes seran perturbados, canibalizados o eyectados hacia el vacio como mundos errantes, hasta que la eventual desintegracion de los protones disuelva toda la materia bariónica de los planetas rocosos.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las enanas blancas poseen gravedades superficiales cien mil veces superiores a la terrestre: los elementos pesados como hierro y silicio deberian hundirse en segundos bajo el hidrogeno puro; ver estos minerales en su espectro demuestra que estan engullendo activamente restos de planetas rocosos triturados recientemente."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cada atomo de hierro, calcio y oxigeno que compone hoy las rocas, montanas y nuestros propios esqueletos fue forjado en nucleos estelares primigenios y dispersado por supernovas ancestrales, completando un ciclo cosmico que regresara inexorablemente a la dispersion energetica total en el ocaso del universo."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_RocososM6() {

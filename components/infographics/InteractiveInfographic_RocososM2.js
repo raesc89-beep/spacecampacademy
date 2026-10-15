@@ -96,145 +96,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'nucleo-gigante',
-              bannerImage: '/assets/rocosos/infographic_m2/banner_nucleo-gigante.webp',
-    title: 'El Núcleo Gigante',
-    color: '#E63946',
-    btnImage: '/assets/rocosos/infographic_m2/btn_nucleo-gigante.webp',
-    image: '/assets/rocosos/infographic_m2/hero_nucleo-gigante.webp',
-    content: [
-      'Mercurio es el planeta más pequeño del Sistema Solar, pero oculta un secreto descomunal bajo su superficie pedregosa. Si pudieras cortar a Mercurio por la mitad como un aguacate, descubrirías que la semilla o núcleo metálico ocupa casi todo el planeta. A diferencia de la Tierra, donde el núcleo es solo una fracción del interior, el núcleo de hierro de Mercurio abarca más del ochenta y cinco por ciento de su radio total.',
-      'Imagínate un cañón de cañón pesado envuelto en una capa súper delgada de papel periódico. El manto rocoso exterior y la corteza de Mercurio son diminutos en comparación con su monstruoso corazón metálico. Este núcleo de hierro y níquel mide más de cuatro mil kilómetros de diámetro, dejando únicamente una cáscara rocosa de apenas cuatrocientos kilómetros de grosor en la parte exterior.',
-      'Debido a esta gigantesca masa metálica concentrada en su interior, Mercurio es el segundo planeta más denso de todo el Sistema Solar, ubicado justo detrás de la Tierra. Si Mercurio fuera del mismo tamaño que la Luna, pesaría más del doble que ella debido al enorme peso específico del hierro puro apretado en su centro por la gravedad.',
-      'Los científicos han descubierto que el núcleo no está completamente sólido. Posee una capa exterior de hierro fundido que continúa fluctuando lentamente. La presencia de elementos ligeros como el azufre en el interior ayudó a rebajar el punto de fusión del hierro, impidiendo que el núcleo se congelara por completo durante los cuatro mil quinientos millones de años de historia planetaria.',
-      'La desproporción única del núcleo de Mercurio convierte a este pequeño mundo en un auténtico laboratorio geológico. Su estructura desafía los modelos tradicionales de formación planetaria, obligando a los astrofísicos a replantearse cómo se condensaron los metales pesados en las zonas más calientes cercanas al Sol primordial.'
+    "id": "nucleo-gigante",
+    "bannerImage": "/assets/rocosos/infographic_m2/banner_nucleo-gigante.webp",
+    "title": "El Núcleo Gigante",
+    "color": "#E63946",
+    "btnImage": "/assets/rocosos/infographic_m2/btn_nucleo-gigante.webp",
+    "image": "/assets/rocosos/infographic_m2/hero_nucleo-gigante.webp",
+    "content": [
+      "Mercurio es el planeta más pequeño del Sistema Solar, con un radio ecuatorial de dos mil cuatrocientos treinta y nueve kilómetros, pero oculta una anomalía geofísica sin parangón en su interior. Mientras que en la Tierra el núcleo metálico representa apenas el diecisiete por ciento del volumen global, en Mercurio el núcleo de hierro y níquel abarca más del ochenta y cinco por ciento de su radio y un impresionante cincuenta y siete por ciento de todo su volumen volumétrico total.",
+      "Esta extraordinaria desproporción anatómica significa que el manto rocoso de silicatos y la corteza superficial exterior constituyen una delgadísima cáscara envolvente de apenas cuatrocientos kilómetros de espesor total. En términos mecánicos y gravitatorios, Mercurio se comporta prácticamente como una gigantesca bola metálica de aleación de hierro y níquel apenas recubierta por un fino barniz de roca basáltica oscura y pulverizada.",
+      "Debido a esta gigantesca concentración metálica central, Mercurio ostenta una densidad media de cinco mil cuatrocientos veintisiete kilogramos por metro cúbico, la segunda más alta del Sistema Solar después de la Tierra. Sin embargo, dado que la masa de la Tierra es dieciocho veces superior y su densidad está fuertemente incrementada por auto-compresión gravitacional interna, la densidad descomprimida de Mercurio (cinco punto tres gramos por centímetro cúbico) es indiscutiblemente la mayor de todos los planetas.",
+      "Las mediciones geofísicas de precisión orbital efectuadas por la sonda MESSENGER de la NASA entre 2011 y 2015 confirmaron que este corazón metálico no se encuentra enteramente congelado. El análisis de las libraciones longitudinales forzadas en la rotación planetaria y los armónicos del campo de gravedad demostraron que Mercurio alberga una capa externa de núcleo líquido fundido enriquecida en azufre y silicio que mantiene temperaturas de fusión reducidas.",
+      "La existencia de este colosal núcleo ferroso desafía directamente los modelos convencionales de acreción nebular solar. Para explicar cómo un cuerpo tan pequeño retuvo semejante fracción de hierro en relación con su cubierta de silicatos, los astrofísicos han formulado complejos modelos de diferenciación magmática a bajas fugacidades de oxígeno y colisiones cataclísmicas despojadoras en los albores del Sistema Solar."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El volumen del núcleo metálico de Mercurio representa el 57% del volumen total del planeta, mientras que el núcleo de la Tierra representa solo el 17%. Esta diferencia convierte a Mercurio en el planeta proporcionalmente más metálico conocido.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Las mediciones del campo gravitatorio realizadas por la sonda MESSENGER confirmaron que Mercurio tiene un núcleo líquido parcialmente fundido mediante el análisis fino de las oscilaciones y libraciones de su rotación.' }
-    ],
-    fact: 'La alta densidad de Mercurio (5.43 gramos por centímetro cúbico) implica que contiene más hierro proporcionalmente que cualquier otro objeto grande de nuestro sistema estelar.',
+    "fact": "El núcleo metálico de Mercurio abarca el 85% de su radio y el 57% de su volumen planetario total, confiriéndole la densidad descomprimida más elevada del Sistema Solar (5.3 g/cm³) y manteniendo una capa externa de hierro líquido fundido confirmada por las mediciones gravitatorias de la sonda MESSENGER.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El momento de inercia normalizado de Mercurio (C/MR² = 0.346) medido por la nave espacial MESSENGER demostró de forma concluyente que el núcleo metálico mide aproximadamente cuatro mil cuarenta kilómetros de diámetro, dejando una envoltura de manto y corteza de silicatos de poco más de cuatrocientos kilómetros de espesor."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Si Mercurio tuviera exactamente el mismo diámetro físico que la Luna de la Tierra, pesaría más del doble que nuestro satélite natural debido a la extraordinaria densidad y peso específico del hierro y níquel metálicos que saturan casi las tres cuartas partes de toda la masa sólida de su interior planetario profundo."
+      }
+    ]
   },
   {
-    id: 'temperaturas-extremas',
-              bannerImage: '/assets/rocosos/infographic_m2/banner_temperaturas-extremas.webp',
-    title: 'Contrastes Térmicos',
-    color: '#FF9F1C',
-    btnImage: '/assets/rocosos/infographic_m2/btn_temperaturas-extremas.webp',
-    image: '/assets/rocosos/infographic_m2/hero_temperaturas-extremas.webp',
-    content: [
-      'Mercurio es un mundo de extremos térmicos infernales y despiadados. Al estar tan cerca del Sol, a una distancia promedio de solo cincuenta y ocho millones de kilómetros, la cara iluminada del planeta se convierte en un horno abrasador donde las temperaturas alcanzan los cuatrocientos treinta grados Celsius, calor suficiente para derretir el plomo y el zinc en minutos.',
-      'Sin embargo, en la cara nocturna ocurre lo opuesto. Como Mercurio carece de una atmósfera densa que retenga el calor como una manta, la superficie pierde toda su energía hacia el espacio helado en cuanto se pone el Sol. La temperatura en la sombra cae en picado hasta los ciento ochenta grados Celsius bajo cero, creando el contraste térmico más salvaje de todo el Sistema Solar.',
-      'Piensa en estar parado en Mercurio con un pastel de helado en una mano y una sartén en la otra. El lado de tu cuerpo mirando al Sol se cocinaría al instante, mientras que el lado en la sombra se congelaría como un cubo de hielo en segundos. Esta diferencia de más de seiscientos grados entre el día y la noche no ocurre en ningún otro planeta conocido.',
-      'La causa principal de este comportamiento es la ausencia de aire. En la Tierra, la atmósfera actúa como un aire acondicionado y calefacción natural que distribuye el calor por todo el globo mediante vientos. En Mercurio, al no haber gases que atrapen ni muevan el calor, el suelo pasa de horno crematorio a congelador abisal de forma instantánea.',
-      'Adicionalmente, Mercurio gira muy despacio sobre su propio eje. Un solo día solar en Mercurio, medido desde un amanecer hasta el siguiente, dura exactamente ciento setenta y seis días terrestres. Esto significa que cada región del planeta pasa meses continuos bajo el castigo directo del Sol seguidos de meses seguidos en la noche negra.'
+    "id": "temperaturas-extremas",
+    "bannerImage": "/assets/rocosos/infographic_m2/banner_temperaturas-extremas.webp",
+    "title": "Contrastes Térmicos",
+    "color": "#FF9F1C",
+    "btnImage": "/assets/rocosos/infographic_m2/btn_temperaturas-extremas.webp",
+    "image": "/assets/rocosos/infographic_m2/hero_temperaturas-extremas.webp",
+    "content": [
+      "Mercurio presenta la oscilación térmica diurna más extrema y violenta de todo el Sistema Solar. Al orbitar a una distancia heliocéntrica promedio de solo cincuenta y siete punto nueve millones de kilómetros (alcanzando cuarenta y seis millones de kilómetros en su perihelio), la cara iluminada por el Sol recibe una irradiancia solar descomunal de hasta catorce mil cuatrocientos noventa vatios por metro cuadrado, diez veces superior a la que alcanza la órbita de la Tierra.",
+      "Bajo este bombardeo incesante de fotones y radiación térmica, la temperatura del suelo rocoso en el punto subsolar diurno se eleva hasta los setecientos kelvin (aproximadamente cuatrocientos veintisiete grados Celsius). Este calor infernal es suficiente para fundir metales como el plomo, el estaño y el zinc en cuestión de minutos, transformando la superficie rocosa expuesta en un páramo abrasador de radiación infrarroja incandescente.",
+      "Sin embargo, debido a la ausencia casi absoluta de una atmósfera densa que actúe como colchón térmico regulador o manta de retención, el calor acumulado en la superficie se irradia instantáneamente hacia la negrura gélida del espacio exterior en cuanto el terreno entra en el cono de sombra nocturno. En la cara oculta, la temperatura cae en picado hasta los cien kelvin (ciento setenta y tres grados Celsius bajo cero).",
+      "Esta variación térmica de seiscientos grados Celsius entre el día y la noche se ve exacerbada por la singular dinámica orbital del planeta. Mercurio está atrapado en una resonancia espín-órbita de tres a dos: gira exactamente tres veces sobre su propio eje de rotación sideral por cada dos revoluciones completas que efectúa alrededor del Sol, lo que genera un día solar (el intervalo entre dos mediodías consecutivos) de ciento setenta y seis días terrestres.",
+      "Debido a esta lentitud extrema y a la alta excentricidad orbital (e = 0.2056), un astronauta situado en ciertas longitudes de Mercurio presenciaría un fenómeno óptico insólito: el Sol saldría en el este, se detendría en el firmamento al coincidir la velocidad angular orbital con la rotación, retrocedería brevemente hacia el horizonte durante varios días y luego reanudaría su avance hacia el oeste, prolongando el calentamiento focalizado."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Debido a su órbita elíptica y su lenta rotación, si te pararas en ciertos lugares de Mercurio verías al Sol salir, detenerse en el cielo, retroceder un poco, volver a avanzar y finalmente ponerse. Es el único planeta con amaneceres dobles.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La radiación solar recibida en la superficie de Mercurio es hasta once veces más intensa que la que llega a la Tierra, lo que requiere escudos térmicos de cerámica avanzada para las sondas espaciales que lo visitan.' }
-    ],
-    fact: 'A pesar de estar más cerca del Sol que ningún otro planeta, Mercurio no es el más caliente. Venus ostenta el récord absoluto de temperatura debido al feroz efecto invernadero de su densa atmósfera de dióxido de carbono.',
+    "fact": "Mercurio experimenta la mayor oscilación térmica diurna del Sistema Solar, variando desde 427 °C en el mediodía subsolar hasta -173 °C en la noche profunda; esta diferencia de 600 grados se debe a la ausencia de atmósfera y a su resonancia espín-órbita de 3:2, donde un solo día solar dura 176 días terrestres.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La tenue envoltura gaseosa de Mercurio posee una presión en superficie inferior a diez elevado a la menos catorce bares, catalogándose técnicamente como una exosfera de colisión nula donde los átomos de sodio, potasio, calcio y helio rebotan libremente sobre las rocas impulsados por el viento solar y la fotodesorción."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "A pesar de orbitar más próximo al Sol que ningún otro mundo, Mercurio no es el planeta más caliente del Sistema Solar; ese récord térmico absoluto pertenece a Venus, cuya densa atmósfera de dióxido de carbono atrapa la radiación infrarroja mediante un feroz efecto invernadero global que mantiene 465 °C día y noche de forma constante."
+      }
+    ]
   },
   {
-    id: 'escarpas-tectonicas',
-              bannerImage: '/assets/rocosos/infographic_m2/banner_escarpas-tectonicas.webp',
-    title: 'Escarpas de Contracción',
-    color: '#CB997E',
-    btnImage: '/assets/rocosos/infographic_m2/btn_escarpas-tectonicas.jpg',
-    image: '/assets/rocosos/infographic_m2/hero_escarpas-tectonicas.jpg',
-    content: [
-      'Cuando un objeto muy caliente se enfría, suele encogerse y arrugarse. Piensa en una manzana fresca que se deja al aire durante semanas: a medida que pierde agua y se enfría, la piel suave de la manzana se arruga y crea pliegues marcados. Algo muy semejante le ocurrió a Mercurio a medida que su gigantesco núcleo de hierro se enfriaba lentamente tras su formación.',
-      'Hace miles de millones de años, al enfriarse el interior metálico del planeta, Mercurio perdió volumen y se encogió. Como la corteza rocosa exterior ya estaba sólida y no podía encogerse fácilmente, la superficie tuvo que romperse y fracturarse, empujando enormes bloques de roca unos sobre otros para acomodar el menor tamaño del planeta.',
-      'Este fenómeno creó gigantescos acantilados y arrugas tectónicas llamadas escarpas de contracción o rupes. Estas estructuras son impresionantes murallas de roca que se elevan hasta tres kilómetros de altura y se extienden por cientos de kilómetros a través del terreno craterizado de Mercurio como cicatrices arrugadas gigantes.',
-      'Los geólogos planetarios calculan que Mercurio se redujo entre cinco y catorce kilómetros de diámetro total durante este proceso de enfriamiento global. Es como si el planeta entero se hubiera apretado la cintura varios talles a lo largo de su historia geológica.',
-      'A diferencia de la Tierra, que tiene placas tectónicas que chocan y se mueven continuamente de lado a lado, Mercurio es un planeta de una sola placa rígida. Toda su actividad tectónica pasada ha sido causada exclusivamente por la contracción vertical a medida que el corazón del planeta perdía su calor primigenio.'
+    "id": "escarpas-tectonicas",
+    "bannerImage": "/assets/rocosos/infographic_m2/banner_escarpas-tectonicas.webp",
+    "title": "Escarpas de Contracción",
+    "color": "#CB997E",
+    "btnImage": "/assets/rocosos/infographic_m2/btn_escarpas-tectonicas.jpg",
+    "image": "/assets/rocosos/infographic_m2/hero_escarpas-tectonicas.jpg",
+    "content": [
+      "A diferencia de la Tierra, cuya dinámica superficial está regida por la tectónica de placas con bordes divergentes, convergentes y transformantes, Mercurio es un planeta geológicamente de una sola placa litosférica rígida global. Sin embargo, su relieve exhibe impresionantes deformaciones tectónicas compresivas que recorren miles de kilómetros en forma de acantilados lobulados denominados escarpas de contracción o rupes.",
+      "Estas majestuosas estructuras geológicas surgieron como consecuencia directa del enfriamiento secular y la cristalización progresiva de su gigantesco núcleo metálico de hierro a lo largo de los últimos cuatro mil millones de años. Al perder calor interno hacia el espacio, el núcleo metálico redujo su volumen físico; al contraerse el corazón del planeta, la corteza rocosa sólida exterior fue sometida a enormes esfuerzos compresivos horizontales.",
+      "Incapaz de encogerse plásticamente al mismo ritmo, la litosfera rocosa se fracturó a lo largo de fallas inversas de ángulo bajo, empujando colosales bloques de corteza sobre las placas adyacentes. Este proceso esculpió murallas escarpadas que alcanzan hasta tres mil metros de altura vertical y se extienden linealmente a través de cuencas y cráteres por más de mil kilómetros de longitud, deformando la fisonomía del planeta entero.",
+      "Los modelos geofísicos basados en el mapeo fotogramétrico tridimensional y la altimetría láser de la sonda MESSENGER estiman que la contracción térmica global redujo el radio de Mercurio entre cinco y siete kilómetros (lo que equivale a una contracción en su circunferencia de más de treinta y cinco kilómetros), una disminución dimensional significativamente superior a la estimada en décadas pasadas.",
+      "Además, las imágenes de ultra alta resolución captadas por MESSENGER revelaron la presencia de pequeñas escarpas tectónicas muy jóvenes y frescas que cortan cráteres de impacto de apenas cincuenta millones de años de antigüedad. Este hallazgo fundamental demuestra que Mercurio no es un cadáver geológico inerte, sino un mundo dinámico que continúa enfriándose, contrayéndose y experimentando sismos tectónicos en la actualidad."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Muchas de las escarpas más famosas de Mercurio llevan nombres de barcos de exploración históricos como Discovery, Endeavour y Beagle, rindiendo homenaje a los viajes marinos de la humanidad.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Imágenes de alta resolución capturadas por la sonda MESSENGER mostraron pequeñas escarpas muy frescas que cortan cráteres jóvenes, sugiriendo que Mercurio podría seguir encogiéndose y teniendo sismos hoy en día.' }
-    ],
-    fact: 'La escarpa más larga de Mercurio se llama Enterprise Rupes. Mide más de 1,000 kilómetros de longitud y supera los 3,000 metros de altura vertical en sus tramos más pronunciados.',
+    "fact": "Al enfriarse secularmente su descomunal núcleo metálico, Mercurio se contrajo entre 5 y 7 kilómetros de radio a lo largo de su evolución geológica, fracturando su corteza rígida mediante fallas inversas de empuje que crearon majestuosas escarpas lobuladas de hasta tres mil metros de altura vertical como Enterprise Rupes y Discovery Rupes.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La escarpa más colosal de Mercurio, Enterprise Rupes, posee una longitud superior a los mil kilómetros y supera los tres mil metros de desnivel vertical; los análisis geomorfológicos revelan que se formó mediante cabalgamientos tectónicos profundos que penetraron varias decenas de kilómetros en la litosfera planetaria."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Siguiendo la convención de la Unión Astronómica Internacional, las escarpas de contracción de Mercurio llevan los nombres de célebres barcos de exploración histórica de la humanidad, tales como el HMS Beagle de Charles Darwin, el HMS Discovery del capitán Cook y el histórico navío Victoria de la expedición de Magallanes."
+      }
+    ]
   },
   {
-    id: 'crateres-y-hielo',
-              bannerImage: '/assets/rocosos/infographic_m2/banner_crateres-y-hielo.webp',
-    title: 'Hielo Polar Sombrío',
-    color: '#00B4D8',
-    btnImage: '/assets/rocosos/infographic_m2/btn_crateres-y-hielo.webp',
-    image: '/assets/rocosos/infographic_m2/hero_crateres-y-hielo.webp',
-    content: [
-      'Hablar de agua congelada en Mercurio parece una locura absoluta. ¿Cómo podría existir hielo en el planeta más cercano al Sol abrasador? La respuesta está en la geometría perfecta de su eje de rotación y en las profundas sombras de sus cráteres polares.',
-      'El eje de rotación de Mercurio está casi completamente recto, inclinado apenas 0.03 grados respecto a su órbita. Esto significa que en los polos del planeta, el Sol siempre se ve justo en el horizonte, sin subir jamás en el cielo. Por esta razón, el fondo de los cráteres profundos ubicados en los polos nunca, jamás recibe la luz del Sol.',
-      'Estas regiones son conocidas como zonas de sombra permanente. Dentro de estos pozos oscuros en los polos de Mercurio, la temperatura se mantiene congelada de forma eterna en más de ciento setenta grados Celsius bajo cero. Son verdaderas trampas de frío que no han visto una sola gota de luz solar en miles de millones de años.',
-      'Cuando cometas y asteroides ricos en hielo chocaron contra Mercurio a lo largo del tiempo, el agua evaporada por el impacto viajó por el espacio hasta caer dentro de estas trampas frías. Al tocar el suelo supercongelado de los cráteres oscuros, el vapor se congeló al instante, acumulando gruesas capas de hielo puro cubiertas por polvo fino.',
-      'En el año 2012, el espectrómetro de neutrones de la sonda espacial MESSENGER confirmó de forma definitiva la presencia de miles de millones de toneladas de hielo de agua en los polos de Mercurio. Es una de las sorpresas científicas más fascinantes del Sistema Solar: hielo eterno guardado en las sombras del infierno.'
+    "id": "crateres-y-hielo",
+    "bannerImage": "/assets/rocosos/infographic_m2/banner_crateres-y-hielo.webp",
+    "title": "Hielo Polar Sombrío",
+    "color": "#00B4D8",
+    "btnImage": "/assets/rocosos/infographic_m2/btn_crateres-y-hielo.webp",
+    "image": "/assets/rocosos/infographic_m2/hero_crateres-y-hielo.webp",
+    "content": [
+      "La coexistencia de hielo de agua estable en el planeta más cercano al ardiente horno solar representa uno de los hallazgos más asombrosos y paradójicos de toda la planetología moderna. Este fenómeno es físicamente posible gracias a una particularidad geométrica crítica: la oblicuidad axial de Mercurio respecto al plano de su órbita es de apenas cero punto cero tres grados (prácticamente perpendicular).",
+      "Debido a esta inclinación axial casi nula, Mercurio carece de estaciones térmicas y el Sol se desplaza eternamente rozando el horizonte en los polos norte y sur. En consecuencia, el interior de los cráteres de impacto profundos situados en latitudes polares elevadas (como Prokofiev, Kandinsky, Tolkien y Chesterton) jamás recibe la luz directa del disco solar, permaneciendo en un régimen de oscuridad absoluta perpetua.",
+      "En estas Regiones en Sombra Permanente (PSRs), la ausencia de atmósfera impide la transferencia de calor por convección, manteniendo las temperaturas de equilibrio térmico congeladas de forma estable por debajo de los cien kelvin (ciento setenta y tres grados Celsius bajo cero). Estas cuencas actúan como criotrampas termodinámicas infranqueables donde cualquier molécula volátil queda atrapada indefinidamente.",
+      "A lo largo de miles de millones de años, el continuo impacto de cometas helados y asteroides carbonáceos desgasificó enormes cantidades de agua hacia la tenue exosfera mercuriana. Mientras que las moléculas de agua expuestas al Sol fueron rápidamente fotodisociadas por los rayos ultravioleta, aquellas que migraron por saltos balísticos hasta caer en los cráteres oscuros se congelaron instantáneamente sobre el regolito.",
+      "En 2012, el Espectrómetro de Neutrones y el Altímetro Láser (MLA) de la sonda MESSENGER confirmaron la presencia de depósitos de hielo de agua casi pura con espesores de varios metros, cubiertos por una delgada capa de material oscuro rico en compuestos orgánicos de carbono refractario entregados por los mismos cometas, sumando reservas estimadas en hasta un billón de toneladas de hielo."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Antes de que las sondas espaciales lo visitaran, los astrónomos en la Tierra detectaron por primera vez la presencia de hielo en Mercurio en 1991 usando el gigantesco radiotelescopio de Arecibo en Puerto Rico, al hacer rebotar ondas de radar muy potentes en los polos del planeta.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El hielo en los polos de Mercurio está protegido por una capa superior de material orgánico oscuro de diez centímetros de grosor formado por compuestos de carbono traídos por los mismos cometas que entregaron el agua.' }
-    ],
-    fact: 'Se estima que los polos de Mercurio albergan entre 100 mil millones y 1 billón de toneladas de hielo de agua pura, cantidad suficiente para llenar miles de embalses terrestres.',
+    "fact": "Debido a una inclinación axial casi perpendicular de apenas 0.03 grados, los cráteres polares profundos de Mercurio albergan zonas de sombra perpetua a menos de cien kelvin donde la sonda MESSENGER confirmó de forma concluyente la existencia de hasta un billón de toneladas de hielo de agua protegidas bajo un manto orgánico oscuro.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los ecos de radar astronómico captados por el radiotelescopio de Arecibo y Goldstone en 1991 exhibieron coeficientes de retrodispersión y polarización circular anómalos (mu_c > 1) característicos del hielo de agua dieléctrico transparente, coincidiendo exactamente con la ubicación de los cráteres polares catalogados por MESSENGER."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El volumen de hielo de agua atrapado en las sombras eternas de Mercurio es tan colosal que superaría todas las reservas de hielo glaciar existentes en los Alpes europeos combinados, ofreciendo un recurso hídrico incalculable para el futuro suministro de misiones de exploración interplanetaria tripulada."
+      }
+    ]
   },
   {
-    id: 'campo-magnetico',
-              bannerImage: '/assets/rocosos/infographic_m2/banner_campo-magnetico.webp',
-    title: 'El Campo Magnético',
-    color: '#9D4EDD',
-    btnImage: '/assets/rocosos/infographic_m2/btn_campo-magnetico.jpg',
-    image: '/assets/rocosos/infographic_m2/hero_campo-magnetico.jpg',
-    content: [
-      'Durante mucho tiempo, los astrofísicos creyeron que Mercurio no podía tener un campo magnético propio. Según las teorías científicas, los planetas necesitan dos cosas para generar un escudo magnético mediante el efecto geodinamo: girar rápido sobre su eje y tener un núcleo metálico líquido en movimiento agitado. Como Mercurio gira muy despacio y es pequeño, se pensaba que su núcleo estaba congelado.',
-      'Sin embargo, en 1974, la sonda Mariner 10 pasó cerca de Mercurio y detectó algo sorprendente: el pequeño planeta posee un campo magnético global activo. Aunque es débil en comparación con el de la Tierra, alcanzando apenas el uno por ciento de nuestra intensidad magnética, su sola existencia dejó perplejos a los científicos de todo el mundo.',
-      'El campo magnético de Mercurio funciona como una burbuja protectora o magnetosfera rodeando el planeta. Esta burbuja desvía el viento solar cargado de partículas eléctricas de alta energía que brota continuamente del Sol cercano, evitando que bombardeen directamente toda la superficie.',
-      'La presencia de este campo magnético demuestra de forma incontestable que el núcleo de hierro de Mercurio sigue estando parcialmente líquido y en movimiento convectivo. Las corrientes de metal fundido circulando lentamente en las profundidades generan corrientes eléctricas que mantienen vivo este escudo magnético estelar.',
-      'No obstante, la magnetosfera de Mercurio es muy dinámica y sufre continuas brechas. Debido a la extrema cercanía del Sol, las ráfagas del viento solar con frecuencia aplastan el escudo magnético del planeta, permitiendo que las partículas solares choquen contra el suelo y levanten una tenue capa de átomos flotantes llamada exosfera.'
+    "id": "campo-magnetico",
+    "bannerImage": "/assets/rocosos/infographic_m2/banner_campo-magnetico.webp",
+    "title": "El Campo Magnético",
+    "color": "#9D4EDD",
+    "btnImage": "/assets/rocosos/infographic_m2/btn_campo-magnetico.jpg",
+    "image": "/assets/rocosos/infographic_m2/hero_campo-magnetico.jpg",
+    "content": [
+      "Antes de la era de la exploración interplanetaria in situ, los modelos geofísicos clásicos predecían que Mercurio carecía de campo magnético global. La teoría de la geodínamo estipulaba que para generar un escudo dipolar activo un planeta requería un núcleo metálico fluido con vigorosa convección térmica y una rápida rotación sobre su eje; al ser Mercurio un cuerpo pequeño de rotación lenta, se asumía que su interior estaba rígidamente enfriado.",
+      "Para asombro de la comunidad científica mundial, en marzo de 1974 la sonda Mariner 10 de la NASA detectó un campo magnético intrínseco activo durante su primer sobrevuelo rasante. Aunque su intensidad ecuatorial en superficie es modesta (aproximadamente trescientos nanoteslas, equivalente al uno punto uno por ciento del campo magnético terrestre), demostró de manera incontrovertible que el corazón de Mercurio alberga una dínamo magnetohidrodinámica activa.",
+      "Los instrumentos magnetométricos de la sonda MESSENGER desvelaron una configuración geométrica desconcertante: el eje dipolar magnético está prácticamente alineado con el eje de rotación del planeta (con una inclinación inferior a tres grados), pero se encuentra desplazado hacia el norte geográfico en unos cuatrocientos ochenta y cuatro kilómetros, equivalente al veinte por ciento de todo el radio planetario.",
+      "Esta asimetría dipolar norte-sur provoca que las líneas del campo magnético en el hemisferio sur emerjan con una configuración mucho más abierta y vulnerable, permitiendo que el viento solar bombardee la superficie austral con una intensidad significativamente superior a la del polo norte. Esta radiación ionizante erosiona el regolito y arranca iones mediante bombardeo catódico (sputtering), alimentando la exosfera circumplanetaria.",
+      "A pesar de su debilidad intrínseca, la magnetosfera de Mercurio forma una cavidad protectora dinámica frente al viento solar. En este entorno se desencadenan violentos eventos de reconexión magnética (eventos de transferencia de flujo o FTEs) a una tasa diez veces más rápida que en la Tierra, canalizando plasma solar directamente hacia la superficie a través de torbellinos magnéticos gigantescos."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El campo magnético de Mercurio está descentrado: su centro magnético se ubica unos 500 kilómetros al norte del centro geográfico del planeta. Esto significa que el polo sur de Mercurio está mucho más expuesto a la radiación solar agresiva que el polo norte.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El choque del viento solar contra la magnetosfera de Mercurio genera tornados magnéticos gigantescos llamados eventos de transferencia de flujo que canalizan plasma caliente directamente hacia la superficie del planeta.' }
-    ],
-    fact: 'Mercurio y la Tierra son los únicos dos planetas rocosos del Sistema Solar que poseen un campo magnético dipolar generado internamente por un dínamo activo en su núcleo.',
+    "fact": "Mercurio y la Tierra son los únicos planetas rocosos del Sistema Solar con campos magnéticos dipolares intrínsecos activos generados por dínamo nuclear; el campo de Mercurio está desplazado 484 kilómetros al norte de su centro geográfico, exponiendo su hemisferio sur al bombardeo directo del viento solar.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La dínamo de Mercurio opera mediante un régimen de flotabilidad inducido por la precipitación de 'nieve de hierro' en el núcleo externo fluido, donde los cristales de hierro sólido precipitan hacia el núcleo interno mientras el líquido residual rico en azufre y silicio asciende convectivamente generando corrientes eléctricas."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Debido a la cercanía del Sol, las erupciones solares y las eyecciones de masa coronal comprimen con frecuencia la magnetosfera de Mercurio hasta colapsar su escudo magnético contra el suelo, provocando que las partículas energéticas del plasma solar impacten sin amortiguación sobre la superficie sólida del planeta."
+      }
+    ]
   },
   {
-    id: 'gran-impacto',
-              bannerImage: '/assets/rocosos/infographic_m2/banner_gran-impacto.webp',
-    title: 'La Colisión Despojadora',
-    color: '#F15BB5',
-    btnImage: '/assets/rocosos/infographic_m2/btn_gran-impacto.jpg',
-    image: '/assets/rocosos/infographic_m2/hero_gran-impacto.jpg',
-    content: [
-      '¿Por qué Mercurio tiene un núcleo de hierro tan exageradamente gigante y una corteza rocosa tan delgada? La hipótesis más aceptada entre los astrofísicos para resolver este gran enigma es la Teoría del Gran Impacto Despojador, un evento cataclísmico que ocurrió en la infancia del Sistema Solar.',
-      'Hace más de cuatro mil cuatrocientos millones de años, el Mercurio primordial era un protoplaneta mucho más grande, con una masa equivalente al doble de la actual y una proporción normal de roca y metal similar a la de la Tierra o Marte. Estaba rodeado por un grueso manto de silicatos sobre su núcleo de hierro.',
-      'Sin embargo, durante la fase caótica de acreción, un embrión planetario gigantesco del tamaño de Marte chocó de lado contra el joven Mercurio a una velocidad espantosa de decenas de kilómetros por segundo. La energía colosal del choque pulverizó y arrancó casi todo el manto rocoso exterior del planeta, lanzándolo al espacio en una inmensa nube de escombros vaporizados.',
-      'La mayor parte de los fragmentos rocosos ligeros salieron despedidos hacia el espacio o fueron absorbidos por el Sol cercano debido a la intensa gravedad estelar. El denso núcleo de hierro de Mercurio, al ser más pesado y resistente, sobrevivió casi intacto a la colisión y volvió a juntarse con una pequeña fracción de la roca derretida.',
-      'Como resultado de esta dramática embestida cósmica, Mercurio quedó despojado de la mayoría de sus capas rocosas externas. Nació así el planeta actual: un corazón metálico pesado envuelto en la delgada cicatriz de lo que alguna vez fue un manto rocoso completo.'
+    "id": "gran-impacto",
+    "bannerImage": "/assets/rocosos/infographic_m2/banner_gran-impacto.webp",
+    "title": "La Colisión Despojadora",
+    "color": "#F15BB5",
+    "btnImage": "/assets/rocosos/infographic_m2/btn_gran-impacto.jpg",
+    "image": "/assets/rocosos/infographic_m2/hero_gran-impacto.jpg",
+    "content": [
+      "El enigma fundamental de por qué Mercurio posee un núcleo metálico tan desproporcionadamente masivo en relación con su escaso manto de silicatos ha sido objeto de intensos debates en la cosmogeoquímica planetaria. La explicación más sólida y ampliamente modelada numéricamente es la Teoría del Gran Impacto Despojador (Giant Impact Hypothesis), un evento cataclísmico acontecido durante la fase terminal de acreción planetaria.",
+      "Hace aproximadamente cuatro mil cuatrocientos millones de años, el proto-Mercurio era un embrión planetario con una masa equivalente al doble de la actual y una proporción roca-metal similar a la de la Tierra primitiva o Marte. Sin embargo, en medio del caos gravitacional primigenio, un protoplaneta intruso del tamaño aproximado de Marte impactó de forma oblicua y rasante contra Mercurio a una velocidad de colisión de veinte a treinta kilómetros por segundo.",
+      "La tremenda energía cinética liberada en la colisión pulverizó e hidrodinámicamente vaporizó la mayor parte del manto exterior silicatado de proto-Mercurio, expulsándolo en forma de un colosal disco circunestelar de escombros de roca fundida. Mientras tanto, el denso núcleo metálico de hierro del proyectil y el de Mercurio se fusionaron casi intactos debido a su inmensa inercia y viscosidad interna, preservando el metal pesado.",
+      "La mayor parte de los escombros rocosos silicatados eyectados al espacio interplanetario fueron rápidamente dispersados por la presión de radiación solar y la intensa fuerza gravitatoria del joven Sol, o barrieron órbitas excéntricas hasta perderse en el espacio exterior. Solo una pequeña fracción del material silicatado volvió a caer sobre el núcleo metálico sobreviviente, solidificándose en el delgado manto actual.",
+      "No obstante, los datos geoquímicos recopilados por la sonda MESSENGER introdujeron una fascinante complejidad al detectar concentraciones relativamente elevadas de elementos moderadamente volátiles como sodio, potasio y azufre (hasta un cuatro por ciento de azufre en superficie). Esto sugiere que el impacto debió ser un choque rasante de tipo 'golpe y fuga' (hit-and-run) que preservó volátiles o que Mercurio condensó en condiciones de reducción química extrema."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Simulaciones por computadora muestran que si el impacto hubiera sido directo en el centro en lugar de un choque rasante oblicuo, Mercurio habría sido destruido por completo en billones de pedazos sin dejar ningún planeta detrás.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Otra teoría alternativa propone que el intenso calor del joven Sol evaporó de forma natural las capas rocosas exteriores de Mercurio antes de que se enfriaran, aunque los datos de la sonda MESSENGER favorecen el escenario del gran impacto.' }
-    ],
-    fact: 'El cráter de impacto más grande de Mercurio es la Cuenca de Caloris. Mide 1,550 kilómetros de diámetro y el impacto que la creó fue tan fuerte que envió ondas de choque a través de todo el planeta, arrugando el terreno exactamente en el lado opuesto.',
+    "fact": "La Teoría del Gran Impacto postula que un colosal choque rasante hace 4,400 millones de años arrancó la mayor parte del manto rocoso primitivo de Mercurio y dispersó los silicatos al espacio, dejando un núcleo de hierro casi intacto recubierto por una delgada corteza que aún conserva volátiles según MESSENGER.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las simulaciones hidrodinámicas de partículas suavizadas (SPH) desarrolladas por Willy Benz y Erik Asphaug demuestran que un choque de tipo 'hit-and-run' a veinticinco kilómetros por segundo permite despojar el sesenta por ciento del manto sin volatilizar enteramente el inventario de elementos moderadamente volátiles como el potasio."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La colosal Cuenca de Caloris, de mil quinientos cincuenta kilómetros de diámetro, es la mayor cicatriz de impacto de Mercurio; la onda de choque atravesó el planeta entero y focalizó su energía sísmica en las antípodas exactas, creando un caótico laberinto de colinas fracturadas conocido como el 'terreno extraño'."
+      }
+    ]
   },
   {
-    id: 'exploracion-bepicolombo',
-              bannerImage: '/assets/rocosos/infographic_m2/banner_exploracion-bepicolombo.webp',
-    title: 'MESSENGER y BepiColombo',
-    color: '#00F5D4',
-    btnImage: '/assets/rocosos/infographic_m2/btn_exploracion-bepicolombo.webp',
-    image: '/assets/rocosos/infographic_m2/hero_exploracion-bepicolombo.webp',
-    content: [
-      'Explorar Mercurio con naves espaciales es uno de los retos más difíciles de la ingeniería astronómica. Enviar una sonda hacia Mercurio es como tirar una pelota colina abajo hacia el Sol: la inmensa gravedad de nuestra estrella acelera la nave a velocidades tan altas que frenar para entrar en órbita requiere una cantidad gigantesca de combustible.',
-      'La primera nave en volar cerca de Mercurio fue la estadounidense Mariner 10 entre 1974 y 1975, realizando tres pasadas veloces que fotografiaron por primera vez el 45 por ciento de su superficie craterizada. Tuvieron que pasar tres décadas para que la humanidad enviara otra misión a este mundo abrasador.',
-      'En 2004, la NASA lanzó la histórica misión MESSENGER. Tras un complejo viaje de siete años usando sobrevuelos gravitacionales alrededor de la Tierra, Venus y el propio Mercurio para frenar, MESSENGER se convirtió en 2011 en la primera nave espacial en orbitar Mercurio, fotografiando el planeta completo y descubriendo su hielo polar.',
-      'Actualmente, la exploración de Mercurio vive su momento más ambicioso con la misión conjunta BepiColombo, desarrollada por la Agencia Espacial Europea (ESA) y la agencia japonesa (JAXA). Lanzada en 2018, BepiColombo transporta dos sondas científicas altamente especializadas que llegarán juntas a la órbita de Mercurio.',
-      'Las dos sondas de BepiColombo estudiarán simultáneamente la estructura interna, el campo magnético, la exosfera y la composición química de Mercurio con una precisión nunca antes vista, desvelando los últimos secretos del mundo más misterioso y denso del Sistema Solar interior.'
+    "id": "exploracion-bepicolombo",
+    "bannerImage": "/assets/rocosos/infographic_m2/banner_exploracion-bepicolombo.webp",
+    "title": "MESSENGER y BepiColombo",
+    "color": "#00F5D4",
+    "btnImage": "/assets/rocosos/infographic_m2/btn_exploracion-bepicolombo.webp",
+    "image": "/assets/rocosos/infographic_m2/hero_exploracion-bepicolombo.webp",
+    "content": [
+      "Enviar una nave espacial a Mercurio constituye una de las mayores hazañas y proezas de la ingeniería astronáutica. Debido a la colosal atracción gravitacional del Sol, cualquier sonda que viaje hacia el interior del Sistema Solar acelera vertiginosamente, requiriendo un cambio acumulado de velocidad (delta-V) mayor incluso que el necesario para enviar una misión interplanetaria hacia Plutón en los confines exteriores.",
+      "La era de la exploración in situ fue inaugurada por la misión Mariner 10 de la NASA, que entre 1974 y 1975 realizó tres sobrevuelos rasantes gracias a la asistencia gravitatoria de Venus calculada por el matemático italiano Giuseppe 'Bepi' Colombo, cartografiando por primera vez el cuarenta y cinco por ciento de su superficie craterizada y descubriendo su insospechado campo magnético intrínseco.",
+      "Tres décadas después, la NASA lanzó la misión MESSENGER (MErcury Surface, Space ENvironment, GEochemistry, and Ranging). Tras una compleja trayectoria orbital de seis punto seis años que requirió seis asistencias gravitatorias intermedias, MESSENGER se convirtió en marzo de 2011 en la primera nave espacial en entrar en órbita de Mercurio, operando durante cuatro años y cartografiando el cien por ciento del planeta con resolución métrica.",
+      "MESSENGER desveló la presencia de hielo polar en sombra permanente, identificó actividad piroclástica volcánica explosiva en la cuenca Caloris, descubrió misteriosas depresiones brillantes sin impacto llamadas 'huecos' (hollows) donde minerales volátiles se sublimaron al espacio, y midió con altimetría láser las escarpas de contracción que testimonian el enfriamiento global.",
+      "El relevo científico internacional está liderado por la misión conjunta BepiColombo de la Agencia Espacial Europea (ESA) y la Agencia de Exploración Aeroespacial de Japón (JAXA), lanzada en octubre de 2018. BepiColombo transporta dos orbitadores avanzados complementarios (el MPO europeo para teledetección superficial y el MMO/Mio japonés para magnetosfera) que operarán simultáneamente para desentrañar los enigmas definitivos de este mundo extremo."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La misión BepiColombo rinde homenaje al matemático e ingeniero italiano Giuseppe "Bepi" Colombo, quien calculó la maniobra precisa de asistencia gravitatoria que permitió a la sonda Mariner 10 visitar Mercurio tres veces en la década de 1970.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Para resistir temperaturas de más de 350°C, la nave BepiColombo utiliza mantas aislantes compuestas por múltiples capas de titanio y cerámica blanca, además de radiadores especiales para expulsar el calor interno hacia el espacio.' }
-    ],
-    fact: 'Al final de su exitosa misión en 2015, la sonda MESSENGER se estrelló de forma controlada contra la superficie de Mercurio a 14,000 km/h, creando un nuevo cráter de 16 metros de ancho en el planeta.',
-  },
+    "fact": "La exploración de Mercurio comprende a la pionera Mariner 10 (1974), a la sonda orbital MESSENGER de la NASA (2011-2015) que cartografió el planeta y confirmó el hielo polar y los enigmáticos hollows, y a la misión BepiColombo de ESA/JAXA provista de dos orbitadores para desvelar su estructura interna y magnetosfera.",
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Para sobrevivir a temperaturas de más de trescientos cincuenta grados Celsius y flujos solares de diez soles combinados, la nave BepiColombo incorpora pantallas térmicas cerámicas de múltiples capas (MLI), células solares con espejos ópticos intercalados al 75% y radiadores térmicos con aletas reflectoras de titanio."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Al agotar todo su combustible de control orbital en abril de 2015 tras completar cuatro mil ciento cuatro órbitas científicas exitosas, la sonda MESSENGER concluyó su histórica misión estrellándose deliberadamente contra la superficie de Mercurio a catorce mil kilómetros por hora, excavando un nuevo cráter de dieciséis metros."
+      }
+    ]
+  }
 ];
 
 export default function InteractiveInfographic_RocososM2() {
