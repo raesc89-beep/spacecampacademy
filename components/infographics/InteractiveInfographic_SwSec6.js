@@ -71,315 +71,295 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'plasma-estado',
-    title: 'El Cuarto Estado de la Materia',
-    color: '#FF5252',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_plasma_estado.webp',
-    image: '/assets/starwars/infographic_plasmas/hero_plasma_estado.webp',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_plasma_estado.webp',
-    bannerCaption: "El plasma es el cuarto estado de la materia y constituye más del 99% de la materia visible del universo.",
-    content: [
-      "Desde que somos pequeños en la escuela, nos enseñan que la materia existe en tres estados comunes: sólido (como el hielo), líquido (como el agua que bebemos) y gas (como el vapor de una olla). Pero estos tres estados son una rareza en el universo. El universo está dominado por un cuarto estado de la materia, menos conocido pero mucho más abundante.",
-      "Este cuarto estado es lo que los científicos llaman 'plasma'. Para crearlo, basta con calentar un gas a temperaturas tan extremas que los átomos se rompen: los electrones escapan de sus núcleos, formando una mezcla hirviente de partículas con carga eléctrica. No es un gas ordinario, ni un líquido, ni un sólido — es algo completamente distinto.",
-      "Lo que hace al plasma especial es que, al estar cargado eléctricamente, responde a los campos magnéticos y eléctricos. Si acercas un imán a un gas normal, no ocurre nada. Pero si lo acercas a una nube de plasma, puedes moldearlo y atraparlo como si fuera una escultura de fuego invisible.",
-      "El plasma no es ciencia ficción: lo vemos todos los días. El Sol y todas las estrellas del cielo son grandes esferas de plasma supercaliente. Más del 99% de toda la materia visible del universo existe en este estado. El plasma no es la excepción — es la regla del cosmos.",
-      "En el universo de Star Wars, los ingenieros galácticos dominaron la física del plasma hace milenios. Las armas más icónicas de la saga y los motores de las grandes naves capitales funcionan todos bajo los mismos principios que rigen el plasma real: temperatura extrema, confinamiento magnético y energía controlada."
+    "id": "plasma-estado",
+    "title": "El Cuarto Estado de la Materia",
+    "color": "#FF5252",
+    "btnImage": "/assets/starwars/infographic_plasmas/btn_plasma_estado.webp",
+    "image": "/assets/starwars/infographic_plasmas/hero_plasma_estado.webp",
+    "bannerImage": "/assets/starwars/infographic_sec6/banner_plasma-estado.webp",
+    "bannerCaption": "El plasma: el cuarto estado de la materia, más común en el universo que el sólido líquido y gas juntos",
+    "content": [
+      "El plasma es formalmente considerado el cuarto estado fundamental de la materia, situado más allá de los sólidos, los líquidos y los gases. Cuando a un gas neutro se le suministra una cantidad colosal de energía térmica o se le somete a diferencias de potencial electrostático descomunales, las violentas colisiones cinéticas arrancan los electrones de sus órbitas atómicas. El resultado es un fluido energizado compuesto por una mezcla dinámica de iones cargados positivamente y electrones libres deslocalizados.",
+      "A pesar de que el plasma está repleto de cargas eléctricas libres en constante movimiento caótico, exhibe una propiedad matemática fundamental denominada cuasineutralidad. A distancias superiores a la longitud de apantallamiento de Debye, el número total de cargas positivas y negativas se cancela con exactitud. Sin embargo, a escalas espaciales microscópicas, las fluctuaciones de carga desencadenan oscilaciones de plasma colectivas de altísima frecuencia conocidas como ondas de Langmuir.",
+      "El comportamiento colectivo distingue al plasma de cualquier gas ordinario de moléculas neutras. Mientras que en un gas neutro las partículas únicamente interactúan cuando chocan mecánicamente entre sí como bolas de billar, las partículas cargadas de un plasma generan intensos campos eléctricos y magnéticos de largo alcance. Esta respuesta electromagnética coordinada confiere al plasma una conductividad térmica y eléctrica descomunal, superando con creces la conductividad del cobre metálico sólido.",
+      "Aunque en la superficie templada de nuestro planeta el plasma es una rareza confinada a relámpagos de tormenta, arcos eléctricos de soldadura y auroras boreales en los polos, en el cosmos visible representa más del noventa y nueve por ciento de toda la materia bariónica observable. El Sol, las gigantescas estrellas luminosas, el medio interestelar difuso y los filamentos cósmicos calientes que unen cúmulos de galaxias se encuentran íntegramente en estado de plasma.",
+      "En la ingeniería moderna de vanguardia, el control del plasma hace posible la tecnología más avanzada del siglo XXI. Se utiliza para el grabado atómico por litografía ultravioleta extrema en la manufactura de microprocesadores de silicio, en reactores de esterilización médica hospitalaria y como propulsor en motores iónicos que impulsan satélites espaciales a través del sistema solar con una eficiencia de combustible inigualable."
     ],
-    expandables: [
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En toda la épica y larguísima saga de películas de Star Wars, desde las precuelas hasta las secuelas, siempre vemos gigantescas y majestuosas instalaciones industriales galácticas, como las refinerías de Naboo o la cámara de congelación en Bespin. Están dedicadas a extraer, purificar y procesar plasma de los profundos núcleos planetarios para usarlo como la fuente de combustible primordial de naves espaciales y ciudades.' 
-      },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'En nuestro propio y hermoso planeta Tierra, el plasma natural es raro de observar directamente a nivel del suelo, pero sí existe. Destructiva: el núcleo central de un relámpago brillante durante una fuerte tormenta eléctrica es plasma puro alcanzando temperaturas asombrosamente altas, al igual que las mágicas, danzantes y coloridas luces de las hermosas auroras boreales en los polos.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En Star Wars, el plasma es la savia energética de la galaxia: impulsa los reactores de las naves, alimenta los blasters, estabiliza los sables de luz y hace funcionar los droides. La saga acierta al mostrar el plasma como un fluido brillante de alta energía, aunque en el cine se comporta más como luz compacta que como gas ionizado."
       },
       {
-        label: '¿Sabías que...?',
-        icon: 'sparkles',
-        text: 'Los antiguos e icónicos televisores de pantalla plana que pesaban muchísimo y. se volvieron populares a principios de los años 2000 eran conocidos popularmente como "televisores de plasma" justamente porque en su interior tenían millones de minúsculas celdas o burbujas microscópicas atrapadas entre dos gruesos paneles de cristal, las cuales se llenaban de verdaderos gases ionizados que brillaban intensamente para crear la imagen.'
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Irving Langmuir acuñó el término «plasma» en 1928 porque le recordó al plasma sanguíneo por su capacidad de transportar iones y electrones libres de manera fluida y autorregulada, fundando una nueva rama de la física fundamental que revolucionaría la astrofísica y la ingeniería nuclear, permitiendo modelar desde auroras polares hasta los reactores de fusión más avanzados del planeta."
       }
     ],
-    bannerImage: '/assets/starwars/infographic_sec6/banner_plasma-estado.webp',
-    bannerCaption: 'El plasma: el cuarto estado de la materia, más común en el universo que el sólido líquido y gas juntos',
-    fact: 'El plasma es científicamente el cuarto estado fundamental de la materia. Se forma cuando un gas se calienta a temperaturas tan extremas que sus átomos se ionizan por completo, liberando sus electrones y transformándose en una mezcla gaseosa pero altamente conductora de electricidad y sensible al magnetismo.'
+    "fact": "Más del 99 por ciento de la materia bariónica visible en el universo observable se encuentra en estado de plasma; las estrellas, los discos de acreción de agujeros negros, las nebulosas de emisión y el medio intergaláctico son plasmas calientes regidos por las leyes de la magnetohidrodinámica, constituyendo el sustrato material dominante del cosmos profundo."
   },
   {
-    id: 'sable-laser',
-    title: '¿Podremos Construir un Sable Láser?',
-    color: '#448AFF',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_sable_laser.webp',
-    image: '/assets/starwars/infographic_plasmas/hero_sable_laser.webp',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_sable_laser.webp',
-    bannerCaption: "La contención magnética permite confinar plasma a millones de grados dentro de campos electromagnéticos toroidales.",
-    content: [
-      "El arma más icónica de un Jedi es el sable de luz. Durante décadas, científicos y aficionados han debatido si es posible construir uno real. El problema físico es que la luz no se detiene a un metro de distancia: si enciendes un láser apuntando al cielo abierto, el rayo viaja infinitamente hacia el espacio.",
-      "Además, la luz no choca contra otra luz. Si cruzas los haces de dos linternas en la oscuridad, los rayos pasan uno a través del otro sin interactuar. Para que un sable de luz funcione, su hoja no podría estar hecha de fotones ordinarios.",
-      "Aquí entra la física del plasma. Los científicos teóricos proponen que, si algún día construimos un sable de luz funcional, su hoja estaría formada por un chorro denso de plasma supercaliente, capaz de derretir puertas de metal blindado en fracciones de segundo.",
-      "¿Cómo evitar que ese plasma te queme las manos? La respuesta está en la contención magnética. Dado que el plasma reacciona a los campos magnéticos, la empuñadura del sable proyectaría un campo con forma de tubo delgado que mantendría el plasma confinado en exactamente un metro de largo.",
-      "Cuando dos de estos hipotéticos sables de plasma chocaran en un duelo, las fuerzas magnéticas de cada uno se repelerían entre sí, creando ese característico choque que vemos en la pantalla. No magia — física de plasmas aplicada a alta velocidad."
+    "id": "sable-laser",
+    "title": "¿Podremos Construir un Sable Láser?",
+    "color": "#448AFF",
+    "btnImage": "/assets/starwars/infographic_plasmas/btn_sable_laser.webp",
+    "image": "/assets/starwars/infographic_plasmas/hero_sable_laser.webp",
+    "bannerImage": "/assets/starwars/infographic_sec6/banner_sable-laser.webp",
+    "bannerCaption": "Por qué es imposible un sable de luz real: el plasma necesita confinamiento magnético o se dispersa instantáneamente",
+    "content": [
+      "El sable de luz empuñado por los Caballeros Jedi es uno de los artefactos más fascinantes de la cultura popular mundial, pero su diseño plantea interrogantes físicos insalvables para la óptica tradicional. Un haz láser de fotones ordinario no puede detenerse abruptamente en el aire a un metro de longitud sin un espejo reflector terminal, ni emite zumbidos sonoros en el vacío, ni puede entrechocar con otro haz de luz produciendo resistencia mecánica sólida.",
+      "La hipótesis científica más plausible para construir un dispositivo semejante descarta los láseres ópticos puros en favor de una hoja de plasma térmico confinada magnéticamente. Si un gas inerte a alta presión es sobrecalentado a decenas de miles de grados Celsius dentro de la empuñadura, se convierte en un chorro incandescente de plasma brillante. Este plasma puede fundir aleaciones metálicas estructurales en milisegundos mediante transferencia térmica directa por convección y conducción.",
+      "El obstáculo técnico formidable reside en el confinamiento magnético de la hoja incandescente al aire libre. Contener un filamento de plasma a diez mil grados exige generar una botella magnética con campos de varios teslas mediante bobinas superconductoras ultracompactas integradas en la empuñadura. En la atmósfera abierta, las turbulencias fluidodinámicas y las inestabilidades magnetohidrodinámicas de tipo salchicha dispersarían la columna de plasma en una fracción de milisegundo.",
+      "La demanda energética para sostener una hoja de plasma térmico continuo es astronómica. Cortar una compuerta blindada de acero o blast-door en segundos exige una potencia constante calculada entre dos y cinco megavatios térmicos. Empaquetar semejante capacidad de generación energética en un cilindro portátil de veinticinco centímetros requeriría densidades energéticas que superan a las mejores baterías de ion de litio en más de diez mil veces, exigiendo fuentes de antimateria en miniatura.",
+      "Ingenieros y físicos experimentales contemporáneos han construido prototipos funcionales que se aproximan asombrosamente al aspecto visual cinematográfico utilizando antorchas laminares de plasma de gas licuado de petróleo y oxígeno enriquecido. Con boquillas de microflujo cerámico, estos prototipos generan llamas laminares de plasma azul de cuatro mil grados capaces de cortar placas de titanio, constituyendo el tributo técnico más cercano al arma de los Jedi."
     ],
-    expandables: [
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En Episodio I: La Amenaza Fantasma, vemos al maestro Qui-Gon Jinn hundir su sable de luz verde en las puertas blindadas de metal de la nave de la Federación de Comercio. El metal comienza a brillar en naranja, burbujea y se derrite — una demostración de las temperaturas extremas que alcanzaría un plasma confinado magnéticamente.' 
-      },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'En fábricas industriales modernas, ya usamos cortadoras de arco de plasma reales. Estas máquinas comprimen aire o gases especiales a alta velocidad a través de un arco eléctrico intenso, transformándolos en un rayo de plasma que puede alcanzar los 30,000 grados Celsius — suficiente para cortar acero de varios centímetros de espesor de forma limpia y precisa.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El sable láser es el arma icónica de los Caballeros Jedi y los Señores Sith, energizada por un cristal Kyber sensible a la Fuerza que enfoca la energía del prisma en una hoja luminosa de color azul, verde o rojo que emite un zumbido electromagnético inconfundible al hendir el aire, capaz de cortar blindajes de acero y desviar disparos de plasma térmico concentrado."
       },
       {
-        label: '¿Sabías que...?',
-        icon: 'sparkles',
-        text: 'Un extraordinario grupo de intrépidos físicos en la respetada Universidad de Harvard ha logrado un tremendo hito científico al hacer. puros fotones de luz (que normalmente jamás tienen masa propia) logren interactuar, chocar y rebotar unos con otros, uniéndose y formando un tipo de "molécula de luz". A esta nueva forma exótica y extraña de materia luminosa la llamaron, en tono de broma seria, materia"sable de luz".'
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Si dos haces de luz láser real se cruzan en el aire o en el vacío, los fotones simplemente se superponen y se atraviesan sin experimentar ningún rozamiento mecánico, choque elástico ni resistencia sólida, haciendo físicamente imposible un duelo de esgrima con rayos ópticos puros, debido a que los bosones electromagnéticos no interactúan directamente entre sí a bajas energías."
       }
     ],
-    bannerImage: '/assets/starwars/infographic_sec6/banner_sable-laser.webp',
-    bannerCaption: 'Por qué es imposible un sable de luz real: el plasma necesita confinamiento magnético o se dispersa instantáneamente',
-    fact: 'Físicamente, un sable láser real no podría estar compuesto únicamente por luz, ya que los fotones no pueden detenerse a una distancia predeterminada. El modelo teórico más acertado propone un poderoso cañón que emite plasma confinado herméticamente en una robusta botella electromagnética invisible.'
+    "fact": "Una antorcha de corte por plasma industrial opera ionizando nitrógeno o argón a temperaturas de entre 10,000 y 28,000 grados Celsius mediante un arco voltaico continuo; a esa temperatura, la materia ionizada funde cualquier aleación metálica estructural instantáneamente al soplar el metal líquido expulsado."
   },
   {
-    id: 'blasters-energia',
-    title: 'Blasters: Armas de Energía Dirigida',
-    color: '#FF6E40',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_blasters_energia.webp',
-    image: '/assets/starwars/infographic_plasmas/hero_blasters_energia.webp',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_blasters_energia.webp',
-    bannerCaption: "Los aceleradores de partículas impulsan iones a velocidades cercanas a la de la luz usando campos electromagnéticos.",
-    content: [
-      "En el universo galáctico, los soldados de asalto y los contrabandistas como Han Solo no utilizan armas que disparan balas de metal convencionales. En su lugar, utilizan blasters. Cuando se dispara un blaster, lo que sale volando por el aire no es un pedazo sólido de plomo, sino un proyectil brillante de color rojo, verde o azul compuesto de energía.",
-      "Aunque a menudo se les llama armas láser, si observas cuidadosamente las escenas de acción, notarás que los disparos del blaster viajan como rayos cortos. Se mueven lo suficientemente lento como para que el ojo humano pueda verlos cruzar la habitación. ¡Un Jedi entrenado en la Fuerza puede incluso esquivarlos!",
-      "La ciencia moderna nos indica que los blasters no pueden disparar láseres reales de luz pura. La luz viaja a 300,000 kilómetros por segundo y es invisible en el vacío. En realidad, los científicos sugieren que estas armas disparan grupos concentrados de plasma a alta temperatura, lo que explica su velocidad y visibilidad.",
-      "Un blaster funcionaría ionizando un gas almacenado en su cargador con una fuerte descarga electromagnética y luego disparándolo a través de un acelerador de partículas en miniatura. El problema físico en el mundo real es que estos cúmulos de plasma, sin un contenedor que los mantenga unidos, se disiparían y enfriarían rápidamente en el aire.",
-      "En la Tierra, ya se están desarrollando Armas de Energía Dirigida (DEW). Sistemas grandes como el láser ATHENA se prueban montados en vehículos pesados para interceptar pequeños drones a distancia. Sin embargo, la tecnología actual aún no puede miniaturizar y comprimir toda esa energía en una pistola portátil como las que vemos en el cine."
+    "id": "blasters-energia",
+    "title": "Blasters: Armas de Energía Dirigida",
+    "color": "#FF6E40",
+    "btnImage": "/assets/starwars/infographic_plasmas/btn_blasters_energia.webp",
+    "image": "/assets/starwars/infographic_plasmas/hero_blasters_energia.webp",
+    "bannerImage": "/assets/starwars/infographic_sec6/banner_blasters-energia.webp",
+    "bannerCaption": "Los blasters de Star Wars: en la realidad los láseres viajan a velocidad de luz, no en cámara lenta como en la película",
+    "content": [
+      "En el universo de Star Wars, las pistolas y rifles bláster son las armas de fuego reglamentarias de ejércitos galácticos y mercenarios espaciales. Según la mitología técnica oficial de la saga, estas armas no disparan fotones láser puros, sino paquetes discretos de gas tibanna ionizado sobrecalentado y acelerado magnéticamente, lo que explica por qué los proyectiles luminosos viajan a velocidades observables y dejan cicatrices de impacto fundidas.",
+      "En el mundo real, los desarrollos balísticos más cercanos corresponden a las armas de energía dirigida militares contemporáneas (conocidas por la sigla DEW). Los laboratorios de defensa investigan dos vertientes tecnológicas complementarias: los láseres de fibra óptica de estado sólido en estado continuo de alta potencia para derribar drones y proyectiles balísticos, y los cañones de pulsos de microondas de alta potencia para inutilizar electrónica enemiga.",
+      "Uno de los desafíos atmosféricos más severos que enfrenta cualquier haz energético enfocado es el fenómeno del «blooming térmico». Cuando un rayo láser de decenas de kilovatios atraviesa el aire libre, ioniza y calienta el gas a lo largo de su trayectoria óptica. El aire sobrecalentado se expande violentamente hacia afuera, reduciendo su densidad e índice de refracción, lo que actúa como una lente óptica divergente que dispersa el haz antes de dar en el blanco.",
+      "Para proyectar paquetes de plasma compacto similares a los disparos de bláster, los físicos de aceleradores estudian cañones de plasma coaxial basados en la fuerza electromagnética de Lorentz. Al descargar bancos de condensadores de alta tensión a través de un gas inerte inyectado entre dos electrodos cilíndricos, el plasma resultante es acelerado a velocidades hipersónicas de cientos de kilómetros por segundo formando un toroide magnético autosostenido llamado esferomac.",
+      "Sin embargo, el empleo militar portátil de estas armas enfrenta un obstáculo térmico casi insalvable: la degradación del cañón. La descarga continua de plasma a temperaturas de decenas de miles de grados desgasta y evapora los materiales cerámicos y metálicos por erosión térmica y choque dieléctrico, requiriendo circuitos de enfriamiento por criogenia continua imposibles de sostener en un arma de mano en un campo de batalla terrestre."
     ],
-    expandables: [
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En el Episodio IV: Una Nueva Esperanza, durante las batallas en los pasillos, los disparos de blaster rebotan contra las paredes y dejan marcas de quemaduras y metal derretido. Esto evidencia que el daño es térmico, producido por calor extremo, y no un impacto mecánico tradicional.' 
-      },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'La Marina de los Estados Unidos ya ha instalado el Sistema de Armas Láser (LaWS) en algunos buques. A diferencia del blaster cinematográfico de colores brillantes, el LaWS dispara un rayo infrarrojo invisible al ojo humano y es silencioso.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El contrabandista Han Solo confía ciegamente en su famosa pistola bláster pesada DL-44 («Las religiones arcaicas y las armas antiguas no son rivales para un buen bláster en tu mano, chico»). Los proyectiles rojos viajan a unos sesenta metros por segundo, mucho más lentos que una bala de fusil terrestre convencional (900 m/s)."
       },
       {
-        label: '¿Sabías que...?',
-        icon: 'sparkles',
-        text: 'Para crear el famoso sonido "pew-pew" de los blasters en la película de 1977, el diseñador de sonido Ben Burtt golpeó los cables tensores de una torre de radio con una llave metálica.'
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad real de un rayo láser militar es exactamente la velocidad de la luz: trescientos mil kilómetros por segundo. Un disparo de láser defensivo impacta a un objetivo situado a diez kilómetros de distancia en apenas treinta y tres microsegundos, haciendo imposible esquivarlo visualmente, requiriendo sistemas computacionales ultra-rápidos de puntería automatizada por radar y sensores ópticos."
       }
     ],
-    bannerImage: '/assets/starwars/infographic_sec6/banner_blasters-energia.webp',
-    bannerCaption: 'Los blasters de Star Wars: en la realidad los láseres viajan a velocidad de luz, no en cámara lenta como en la película',
-    fact: 'Los blasters de la ciencia ficción se comportan como disparadores de grupos de partículas de plasma confinado, en lugar de verdaderos láseres, ya que viajan mucho más lento que la velocidad de la luz.'
+    "fact": "Los cañones de riel electromagnéticos de la armada naval utilizan fuerzas de Lorentz para acelerar proyectiles hipersónicos de tres kilogramos a velocidades superiores a Mach 6 (más de dos mil metros por segundo) sin usar pólvora química, transformando treinta megavatios de pulso eléctrico en pura energía cinética."
   },
   {
-    id: 'escudos-deflectores',
-    title: 'Escudos Deflectores: ¿Son Posibles?',
-    color: '#40C4FF',
-    btnImage: '/assets/starwars/infographic_plasmas/btn_escudos_deflectores.webp',
-    image: '/assets/starwars/infographic_plasmas/hero_escudos_deflectores.webp',
-    bannerImage: '/assets/starwars/infographic_plasmas/banner_escudos_deflectores.webp',
-    bannerCaption: "Los escudos electromagnéticos deflectan partículas cargadas, similar a cómo la magnetosfera terrestre protege del viento solar.",
-    content: [
-      "Cuando el Halcón Milenario huye de destructores imperiales o atraviesa un campo de asteroides, los pilotos ordenan activar los escudos deflectores. En cuestión de segundos, una cúpula de energía invisible recubre y protege la nave.",
-      "Estos campos de fuerza tienen el poder de detener impactos directos de armas y el choque de rocas espaciales a alta velocidad. Los escudos absorben toda la energía cinética entrante, protegiendo el casco metálico de la nave sin sufrir abolladuras.",
-      "Crear un escudo invisible que actúe como un muro de ladrillos contra objetos sólidos es casi imposible con nuestra física actual. Sin embargo, los ingenieros aeronáuticos están investigando conceptos que se acercan a esta tecnología de ciencia ficción.",
-      "La propuesta científica más realista se basa en la física de los plasmas y el electromagnetismo. Un sistema de protección real implicaría proyectar una capa de plasma denso alrededor de un vehículo en fracciones de segundo.",
-      "Cuando una onda de choque explosiva se acerca, este muro de gas sobrecalentado e ionizado podría absorber y dispersar gran parte de la energía mediante interacción electromagnética, mitigando el impacto de forma similar a los escudos galácticos."
+    "id": "escudos-deflectores",
+    "title": "Escudos Deflectores: ¿Son Posibles?",
+    "color": "#40C4FF",
+    "btnImage": "/assets/starwars/infographic_plasmas/btn_escudos_deflectores.webp",
+    "image": "/assets/starwars/infographic_plasmas/hero_escudos_deflectores.webp",
+    "bannerImage": "/assets/starwars/infographic_sec6/banner_escudos-deflectores.webp",
+    "bannerCaption": "Escudos deflectores: la magnetosfera terrestre es un escudo real, investigadores diseñan versiones para naves espaciales",
+    "content": [
+      "Los escudos deflectores son el baluarte defensivo indispensable en los combates espaciales de ciencia ficción, cubriendo cazas estelares y acorazados con burbujas de energía transparentes que evaporan torpedos de protones y absorben disparos de bláster. En la física espacial aplicada contemporánea, el análogo más directo y funcional son los escudos magnéticos de plasma activo concebidos para proteger naves tripuladas.",
+      "La física fundamental que sustenta una pantalla defensiva magnética es la fuerza de Lorentz, expresada como F igual al producto de la carga por la suma del campo eléctrico más el vector velocidad multiplicado vectorialmente por el campo magnético. Cuando partículas ionizadas de alta energía inciden contra una nave protegida por un dipolo magnético intenso, la fuerza transversal curva sus trayectorias parabólicamente, desviándolas lejos del casco habitable.",
+      "El mayor ejemplo operativo de un escudo deflector a escala planetaria es la propia magnetosfera de la Tierra. Generada por el efecto dinamo del hierro y níquel líquidos en rotación dentro de nuestro núcleo externo, esta jaula magnética desvía el bombardeo continuo del viento solar supersónico hacia los cinturones de Van Allen, protegiendo la tenue atmósfera terrestre y el ADN de toda la biosfera de la esterilización por radiación cósmica.",
+      "No obstante, un escudo magnético convencional presenta una vulnerabilidad crítica ante amenazas neutras. Debido a que la fuerza de Lorentz exige que los proyectiles posean carga eléctrica neta, un campo magnético es enteramente incapaz de frenar o desviar asteroides rocosos neutros, fragmentos metálicos de metralla balística o fotones de alta energía procedentes de láseres militares, que atravesarían las líneas de campo sin desviarse.",
+      "Para solucionar esta limitación, investigadores de instituciones como el MIT exploran conceptos avanzados de apantallamiento basados en plasma magnetizado. Al inyectar una nube de gas noble ionizado dentro de las líneas de campo magnético que rodean la nave, el plasma atrapado puede absorber o dispersar la radiación electromagnética hostil y disipar ondas de choque térmicas, funcionando como un auténtico blindaje deflector bifásico."
     ],
-    expandables: [
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En el Episodio VI: El Retorno del Jedi, la segunda Estrella de la Muerte está protegida por un campo deflector masivo. Este escudo es proyectado desde un generador instalado en la superficie de la luna de Endor.' 
-      },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'En 2015, la compañía aeroespacial Boeing patentó un "Método y sistema para la atenuación de ondas de choque mediante un arco electromagnético". Es un paso teórico hacia los escudos de fuerza reales.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En la batalla de Endor en El Retorno del Jedi, la segunda Estrella de la Muerte está protegida por un gigantesco generador de escudo deflector instalado en la superficie de la luna boscosa de Endor, haciendo que la flota rebelde no pueda atacar la superestructura hasta que el comando destruya la base terrena."
       },
       {
-        label: '¿Sabías que...?',
-        icon: 'sparkles',
-        text: 'Existen "ventanas de plasma" en laboratorios de física de partículas. Utilizan un campo magnético para contener una fina capa de plasma que separa el vacío del aire normal sin necesidad de usar un cristal sólido.'
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Para proteger a los astronautas en futuras misiones tripuladas a Marte contra la radiación cósmica galáctica, la NASA investiga escudos magnéticos superconductores de alta temperatura (HTS) capaces de generar una burbuja deflectora de tres teslas con una masa de bobinas inferior a diez toneladas, desviando protones solares de alta energía de manera análoga a la magnetosfera protectora de la Tierra."
       }
     ],
-    bannerImage: '/assets/starwars/infographic_sec6/banner_escudos-deflectores.webp',
-    bannerCaption: 'Escudos deflectores: la magnetosfera terrestre es un escudo real, investigadores diseñan versiones para naves espaciales',
-    fact: 'Los ingenieros investigan generadores de campos electromagnéticos que usan plasma ionizado para interceptar y dispersar ondas expansivas antes de que alcancen a los vehículos.'
+    "fact": "Los cinturones de radiación de Van Allen que rodean la Tierra desvían partículas cósmicas con energías superiores a decenas de megaelectronvoltios; sin este escudo magnetosférico natural de 0.5 gauss, el flujo de partículas solares habría erosionado el agua y la capa de ozono de nuestro planeta hace miles de millones de años."
   },
   {
-    id: "fusion-nuclear",
-    title: "Fusión Nuclear: La Energía de las Estrellas",
-    color: "#FF1744",
-    btnImage: "/assets/starwars/infographic_plasmas/btn_fusion_nuclear.webp",
-    image: "/assets/starwars/infographic_plasmas/hero_fusion_nuclear.webp",
-    bannerImage: "/assets/starwars/infographic_plasmas/banner_fusion_nuclear.webp",
-    bannerCaption: "Los reactores tokamak confinan plasma a 150 millones de grados en forma toroidal para lograr la fusión nuclear controlada.",
-    content: [
-      "Para que el Imperio Galáctico mueva sus Destructores Estelares a través del hiperespacio, se necesita una cantidad de energía que ningún combustible convencional puede proveer. La respuesta a este desafío tecnológico está en dominar la fusión nuclear, el proceso que enciende a nuestro Sol y a todas las estrellas del firmamento.",
-      "Imagina que tienes piezas de Lego y decides unirlas con fuerza para crear algo nuevo. En el corazón del Sol, a 15 millones de grados Celsius y bajo una presión de 250,000 millones de atmósferas, la gravedad une átomos de hidrógeno. Dos tipos especiales — deuterio y tritio — se fusionan para formar helio y liberar energía pura en el proceso.",
-      "La meta de nuestra era es construir un 'sol embotellado' aquí en la Tierra. En Cadarache, Francia, 35 países colaboran en el Reactor Termonuclear Experimental Internacional (ITER). Este proyecto de 22,000 millones de dólares usa una máquina de 23,000 toneladas cuyo núcleo es un Tokamak — un dispositivo con forma de rosquilla metálica diseñado para contener plasma a temperaturas estelares.",
-      "Dentro del Tokamak, el gas se calienta hasta convertirse en plasma hirviente. Como ningún material puede tocar algo tan caliente sin derretirse, los ingenieros usan imanes superconductores enfriados a temperaturas extremas para crear un campo magnético en forma de anillo. Este campo invisible mantiene el plasma flotando sin tocar las paredes.",
-      "El 5 de diciembre de 2022, los científicos del National Ignition Facility (NIF) en el Laboratorio Lawrence Livermore alcanzaron un hito histórico. Usando 192 láseres simultáneos, lograron la 'ignición' de la fusión: introdujeron 2.05 megajulios y obtuvieron 3.15 megajulios. Por primera vez, produjeron más energía de la que usaron — un paso real hacia la electricidad de fusión ilimitada."
+    "id": "fusion-nuclear",
+    "title": "Fusión Nuclear: La Energía de las Estrellas",
+    "color": "#FF1744",
+    "btnImage": "/assets/starwars/infographic_plasmas/btn_fusion_nuclear.webp",
+    "image": "/assets/starwars/infographic_plasmas/hero_fusion_nuclear.webp",
+    "bannerImage": "/assets/starwars/infographic_plasmas/banner_fusion_nuclear.webp",
+    "bannerCaption": "Los reactores tokamak confinan plasma a 150 millones de grados en forma toroidal para lograr la fusión nuclear controlada.",
+    "content": [
+      "La fusión nuclear es el proceso termodinámico más potente y virtuoso del universo, responsable de encender el núcleo del Sol y mantener el resplandor de todas las estrellas durante miles de millones de años. Consiste en la unión forzada de dos núcleos atómicos ligeros (primordialmente isótopos de hidrógeno como el deuterio y el tritio) para engendrar un núcleo de helio más estable, liberando una fracción colosal de masa en forma de energía pura según la ecuación E igual a m por c al cuadrado.",
+      "Para fusionar dos núcleos atómicos cargados positivamente, es indispensable superar la colosal repulsión electrostática mutua descrita por la ley de Coulomb. La única forma de aproximar los núcleos a la distancia de un femtómetro (diez a la menos quince metros), donde la fuerza nuclear fuerte atractiva supera a la repulsión eléctrica, es calentar el combustible hasta formar un plasma a más de ciento cincuenta millones de grados Celsius.",
+      "En 1957, el físico británico John Lawson formuló el célebre criterio matemático que lleva su nombre para definir las condiciones necesarias de ignición termonuclear. El producto de la densidad iónica del plasma, la temperatura del núcleo y el tiempo de confinamiento de energía debe superar un umbral crítico. Si se alcanza este triple producto, la energía liberada por las partículas alfa de helio mantiene el plasma caliente sin requerir calefacción externa.",
+      "Existen dos vías tecnológicas principales para dominar este proceso: el confinamiento inercial y el confinamiento magnético. En el confinamiento inercial, casi doscientos rayos láser ultravioleta de alta potencia comprimen una microcápsula esférica de combustible helado en milmillonésimas de segundo; en diciembre de 2022, la National Ignition Facility de Estados Unidos logró por primera vez en la historia humana una ganancia neta positiva de energía por fusión.",
+      "La fusión nuclear ofrece una solución energética limpia y casi ilimitada para la civilización. A diferencia de las centrales nucleares de fisión actuales basadas en uranio, los reactores de fusión no conllevan riesgo alguno de accidentes descontrolados por reacción en cadena, ya que si el confinamiento falla el plasma se enfría en microsegundos, y su combustible de deuterio se extrae de manera abundante e inagotable del agua marina."
     ],
-    expandables: [
-      { 
-        label: "En la Película", 
-        icon: "zap", 
-        text: "En el universo de Star Wars, los Destructores Estelares y las estaciones de batalla obtienen su energía de reactores de hipermateria. Esta tecnología de ciencia ficción se basa conceptualmente en la fusión nuclear: grandes cámaras de confinamiento magnético comprimen plasma para liberar la energía equivalente a la de una estrella atrapada en la sala de máquinas." 
-      },
-      { 
-        label: "Dato Científico", 
-        icon: "atom", 
-        text: "El reactor ITER, en construcción en Francia y con una masa equivalente a tres Torres Eiffel, está diseñado para producir 500 megavatios de potencia a partir de solo 50 megavatios de entrada — un factor Q de 10. Esto demostraría que la fusión a escala industrial es viable y sentaría las bases para futuras centrales eléctricas de fusión comerciales." 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Los generadores hiperespaciales y reactores principales de los cazas TIE y destructores estelares imperiales funcionan con núcleos de fusión masivos que generan la potencia necesaria para saltar al hiperespacio. En la física real, dominar la fusión limpia es el pasaporte indispensable para convertirnos en una especie espacial interplanetaria."
       },
       {
-        label: "¿Sabías que...?",
-        icon: "sparkles",
-        text: "A diferencia de las plantas de fisión que usan uranio y generan residuos radiactivos durante milenios, un reactor de fusión es inherentemente seguro. Si algo falla, el plasma simplemente se enfría y la reacción se apaga en menos de un segundo — sin riesgo de explosión ni fuga. Y el combustible principal, el deuterio, se extrae del agua de mar, con reservas para miles de millones de años."
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Un solo gramo de combustible de deuterio-tritio fusionado por completo produce la misma cantidad neta de energía térmica que la combustión química de ocho toneladas de petróleo crudo o once toneladas de carbón mineral fósil, sin emitir un solo gramo de dióxido de carbono a la atmósfera, liberando helio inerte como único residuo atómico de la reacción termonuclear."
       }
     ],
-    fact: "El deuterio es un tipo pesado de hidrógeno que se encuentra de forma natural en el agua de mar. Existe en concentración de aproximadamente 33 gramos por tonelada de agua. Con la energía que produce la fusión de un litro de agua de mar, podrías abastecer el consumo eléctrico de una casa durante tres días — sin combustibles fósiles y sin residuos radiactivos de larga vida."
+    "fact": "En diciembre de 2022, la Instalación Nacional de Ignición (NIF) en el Laboratorio Nacional Lawrence Livermore concentró 2.05 megajulios de energía láser ultravioleta sobre un blanco diminuto, logrando liberar 3.15 megajulios de energía por fusión nuclear neta, superando el umbral de ignición por primera vez con Q=1.54."
   },
   {
-    id: "rayos-ionicos",
-    title: "Cañones de Iones y Propulsión",
-    color: "#2979FF",
-    btnImage: "/assets/starwars/infographic_plasmas/btn_rayos_ionicos.webp",
-    image: "/assets/starwars/infographic_plasmas/hero_rayos_ionicos.webp",
-    bannerImage: "/assets/starwars/infographic_plasmas/banner_rayos_ionicos.webp",
-    bannerCaption: "Los motores iónicos aceleran gas xenón ionizado para generar empuje continuo, alcanzando velocidades de 90 km/s.",
-    content: [
-      "Cuando pensamos en batallas espaciales, normalmente imaginamos explosiones deslumbrantes que destruyen naves enemigas con fuego brillante y chispas voladoras. Sin embargo, en el helado y remoto planeta Hoth, los valientes rebeldes utilizaron un tipo diferente de armamento: el famoso cañón de iones defensivo. En lugar de perforar el blindaje metálico de los temibles Destructores Estelares, este enorme dispositivo azul disparaba relámpagos concentrados diseñados para sobrecargar los delicados circuitos electrónicos y dejar las máquinas apagadas y flotando a la deriva.",
-      "En el mundo real de la ciencia contemporánea, los iones no se usan típicamente para crear cañones destructivos, sino para impulsar pacíficamente nuestras naves robóticas a través del silencioso vacío del sistema solar. La propulsión iónica funciona despojando a los átomos de un gas noble, como el xenón, de algunos de sus electrones. Al perder electrones, los átomos adquieren una carga eléctrica positiva y se convierten en iones puros. Luego, la nave espacial utiliza rejillas electrificadas potentes para repeler estos iones y dispararlos velozmente hacia atrás.",
-      "Imagina que estás sentado en una patineta y decides lanzar pesadas pelotas de baloncesto hacia atrás con toda tu fuerza; la ley de la física hará que tu cuerpo ruede lentamente hacia adelante. De manera similar, al expulsar el gas ionizado a velocidades vertiginosas de hasta ciento cuarenta mil kilómetros por hora, el motor espacial genera un empuje suave pero constante. Aunque la fuerza inicial es tan leve como el peso de una simple hoja de papel sobre la palma de tu mano, en la ausencia de fricción del espacio, este empuje continuo te hará alcanzar velocidades récord a lo largo de varios meses.",
-      "La eficiencia de estos sistemas es lo que fascina a los ingenieros espaciales. En cohetería usamos el 'impulso específico' para medir cuánto rendimiento obtenemos por cada gramo de combustible. Los cohetes químicos tradicionales alcanzan entre 300 y 450 segundos de impulso específico, quemando toneladas de propelente en minutos. Un motor iónico silencioso puede lograr entre 3,000 y 12,000 segundos, permitiendo misiones interplanetarias mucho más largas y económicas.",
-      "Un ejemplo de esta tecnología fue la misión Dawn de la NASA, que viajó por el sistema solar entre 2007 y 2018. Usando tres motores iónicos, esta sonda visitó y orbitó el asteroide Vesta y el planeta enano Ceres. En la Tierra, también aceleramos iones en máquinas como el Gran Colisionador de Hadrones del CERN, donde los protones alcanzan el 99.9999% de la velocidad de la luz."
+    "id": "rayos-ionicos",
+    "title": "Cañones de Iones y Propulsión",
+    "color": "#2979FF",
+    "btnImage": "/assets/starwars/infographic_plasmas/btn_rayos_ionicos.webp",
+    "image": "/assets/starwars/infographic_plasmas/hero_rayos_ionicos.webp",
+    "bannerImage": "/assets/starwars/infographic_plasmas/banner_rayos_ionicos.webp",
+    "bannerCaption": "Los motores iónicos aceleran gas xenón ionizado para generar empuje continuo, alcanzando velocidades de 90 km/s.",
+    "content": [
+      "En la ficción cinematográfica de Star Wars, los cañones de iones constituyen armas especializadas de neutralización táctica. Sus disparos luminosos azulados no fracturan mecánicamente los blindajes de las naves enemigas, sino que sobrecargan de inmediato sus redes eléctricas y circuitos de computación, dejando a acorazados estelares enteros flotando a la deriva como cáscaras inertes en medio del combate espacial.",
+      "En la ingeniería aeroespacial del mundo real, los iones no se emplean primordialmente como armas de bombardeo, sino como el medio de propulsión más eficiente jamás inventado para navegar por el espacio profundo: la propulsión iónica electrostática y los propulsores de efecto Hall. Agencias espaciales como la NASA y la ESA han impulsado misiones científicas legendarias, tales como Deep Space 1, Dawn y BepiColombo, mediante estos motores.",
+      "El principio de funcionamiento de un motor de iones consiste en ionizar un gas inerte pesado, típicamente xenón o kriptón, bombardeándolo con electrones energéticos para crear un plasma. A continuación, un par de rejillas de molibdeno sometidas a una diferencia de potencial eléctrico de miles de voltios aceleran los iones positivos hacia el exterior a velocidades supersónicas de entre treinta y cincuenta kilómetros por segundo.",
+      "La ventaja competitiva de la propulsión iónica radica en su elevadísimo impulso específico, que supera los tres mil a cuatro mil segundos, en comparación con los escasos cuatrocientos cincuenta segundos de los cohetes químicos convencionales. Aunque el empuje generado en cada instante es sumamente suave (comparable a la presión que ejerce una hoja de papel sobre la palma de una mano), puede funcionar de forma ininterrumpida durante años en el vacío.",
+      "Por otra parte, los efectos de sobrecarga electrónica que Star Wars atribuye a los cañones de iones se manifiestan en la realidad mediante el pulso electromagnético (EMP). Generado por detonaciones nucleares exoatmosféricas o cañones de microondas de alta potencia en laboratorio, un pulso electromagnético induce voltajes letales en las pistas microscópicas de los semiconductores, fundiendo los transistores por choque térmico."
     ],
-    expandables: [
-      { 
-        label: "En la Película", 
-        icon: "zap", 
-        text: "En el comienzo de la inolvidable cinta El Imperio Contraataca, vemos a las fuerzas de la Alianza Rebelde disparando ráfagas esféricas de plasma azul verdoso desde la fría superficie del planeta Hoth. Este disparo no pretendía destrozar al enemigo, sino que era una inteligente medida táctica. Al golpear la estructura del Destructor Estelar Imperial que bloqueaba su ruta de escape, la enorme oleada de partículas cargadas inutilizó temporalmente todos sus sistemas de navegación, computadoras y pantallas tácticas, permitiendo a los transportes escapar a salvo." 
-      },
-      { 
-        label: "Dato Científico", 
-        icon: "atom", 
-        text: "Aunque los cañones de iones reales no existen como armas antiaéreas, sí que construimos aceleradores de partículas potentes para desentrañar los secretos del universo temprano. En la frontera entre Francia y Suiza, bajo tierra, se encuentra el Gran Colisionador de Hadrones. Esta colosal pista circular de veintisiete kilómetros de circunferencia emplea campos magnéticos de altísima intensidad para acelerar haces de protones a energías incomprensibles antes de estrellarlos entre sí, recreando condiciones que existieron apenas milisegundos después del Big Bang." 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Durante la evacuación rebelde de Hoth en El Imperio Contraataca, un enorme cañón de iones de superficie dispara descargas azules hacia el espacio exterior, incapacitando un destructor estelar imperial y permitiendo que los transportes de tropas de la Alianza escapen ilesos hacia el hiperespacio, ilustrando cinematográficamente los efectos disruptivos de pulsos electromagnéticos masivos en sistemas electrónicos."
       },
       {
-        label: "¿Sabías que...?",
-        icon: "sparkles",
-        text: "El récord mundial continuo de funcionamiento de un motor espacial en la historia de la humanidad lo ostenta un avanzado propulsor de iones estadounidense llamado NEXT-C. Durante rigurosas pruebas de resistencia en un laboratorio especializado en nuestro planeta Tierra, este dispositivo electromagnético funcionó sin detenerse durante más de cincuenta mil horas seguidas, lo que equivale a casi seis largos años de encendido ininterrumpido. Este tipo de extrema durabilidad es exactamente lo que los humanos necesitamos para futuras misiones ambiciosas hacia el lejano planeta Marte."
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La sonda espacial Dawn de la NASA utilizó tres propulsores de iones electrostáticos NSTAR alimentados por paneles solares para viajar a través del cinturón de asteroides durante más de una década, operando durante más de cincuenta mil horas de empuje continuo acumulado con solo cuatrocientos veinticinco kilogramos de xenón."
       }
     ],
-    fact: "El brillante gas de xenón es el principal ingrediente preferido por los científicos para alimentar motores iónicos espaciales debido a que sus átomos son particularmente pesados en comparación con otros gases nobles. Al disparar partículas más pesadas por la parte trasera del motor, la nave obtiene un empujón mucho más fuerte hacia adelante por cada unidad de energía eléctrica consumida, maximizando el impulso específico."
+    "fact": "Los propulsores de efecto Hall expulsan iones de xenón a velocidades de escape superiores a 65,000 km/h (18 km/s), logrando una eficiencia de combustible diez veces superior a la de los mejores motores de combustible líquido criogénico de cohetes químicos convencionales como el RS-25 del transbordador espacial."
   },
   {
-    id: "estrella-muerte",
-    title: "La Estrella de la Muerte: Superláseres",
-    color: "#FF9100",
-    btnImage: "/assets/starwars/infographic_plasmas/btn_estrella_muerte.webp",
-    image: "/assets/starwars/infographic_plasmas/hero_estrella_muerte.webp",
-    bannerImage: "/assets/starwars/infographic_plasmas/banner_estrella_muerte.webp",
-    bannerCaption: "Los láseres de alta potencia concentran fotones coherentes mediante cristales amplificadores para transferir energía a largas distancias.",
-    content: [
-      "La temible estación espacial esférica conocida como la Estrella de la Muerte se convirtió en el arma de terror definitiva del Imperio Galáctico. Su gigantesco cañón cóncavo podía disparar un haz de energía tan desmesuradamente poderoso que era capaz de aniquilar un planeta entero con un solo impacto, como tristemente lo demostró al pulverizar el pacífico mundo de Alderaan. Esta asombrosa demostración de fuerza letal en la gran pantalla ha inspirado a generaciones de ingenieros ópticos a estudiar meticulosamente hasta dónde pueden llegar las capacidades técnicas de la luz pura.",
-      "Para comprender estos notables rayos destructores, primero debemos explorar la verdadera ciencia que se esconde detrás del fascinante acrónimo LASER, que en inglés significa \"Amplificación de Luz por Emisión Estimulada de Radiación\". Fue inventado en el año mil novecientos sesenta por el brillante físico estadounidense Theodore Maiman. A diferencia de las bombillas comunes que emiten luz difusa en todas las direcciones de la habitación, un láser genera ondas de luz idénticas. Perfectamente alineadas, permitiendo enfocar toda esa energía concentrada en un punto minúsculo a gran distancia sin perder potencia.",
-      "Hoy en día, las instalaciones de investigación láser más avanzadas del mundo pueden desatar fuerzas enormees. El Laboratorio Nacional Lawrence Livermore en los Estados Unidos alberga una gigantesca instalación conocida como NIF, que maravilla a los expertos mundiales al disparar exactamente ciento noventa y dos láseres independientes simultáneamente. Todos estos haces se combinan magistralmente en una esfera dorada diminuta, concentrando una brutal energía lumínica sobre un objetivo que tiene el tamaño exacto de la pequeña goma de borrar en la punta de tu lápiz.",
-      "La potencia abrumadora de estas máquinas es difícil de asimilar. Cuando el inmenso sistema del NIF se dispara a máxima capacidad, entrega aproximadamente dos punto cero cinco megajulios de energía concentrada en apenas unas pocas milmillonésimas de segundo. Durante ese pestañeo imperceptible, el complejo científico genera más poder momentáneo que toda la red eléctrica completa de los Estados Unidos. Esta tremenda hazaña técnica se realiza para estudiar el candente corazón de las estrellas en miniatura y probar intrincadas teorías sobre materiales bajo presiones astronómicas extremas.",
-      "En el campo militar moderno, los láseres también están dando sus primeros y cautelosos pasos reales hacia la batalla. No destruyen planetas, pero sistemas defensivos contemporáneos como el cañón HELIOS de sesenta kilovatios de la Armada estadounidense, o el preciso interceptor táctico Dragonfire del Reino Unido, ya son una clara realidad técnica. Estas armas de precisión utilizan luz invisible e intensa que calienta silenciosamente la delgada cubierta de drones o pequeños botes a gran distancia hasta fundir sus metales, deteniendo las rápidas amenazas sin necesitar explosivos y sin hacer un ruido ensordecedor."
+    "id": "estrella-muerte",
+    "title": "La Estrella de la Muerte: Superláseres",
+    "color": "#FF9100",
+    "btnImage": "/assets/starwars/infographic_plasmas/btn_estrella_muerte.webp",
+    "image": "/assets/starwars/infographic_plasmas/hero_estrella_muerte.webp",
+    "bannerImage": "/assets/starwars/infographic_plasmas/banner_estrella_muerte.webp",
+    "bannerCaption": "Los láseres de alta potencia concentran fotones coherentes mediante cristales amplificadores para transferir energía a largas distancias.",
+    "content": [
+      "La Estrella de la Muerte es el epítome de la destrucción masiva en la historia del cine: una megaestructura artificial con el volumen de una luna rocosa armada con un superláser colosal capaz de vaporizar planetas enteros de un solo disparo, como el desafortunado Alderaan. Analizar los requerimientos energéticos de semejante hazaña armamentista revela las proporciones titánicas impuestas por la astrofísica real.",
+      "Para desintegrar un planeta rocoso como la Tierra de manera que sus escombros no vuelvan a colapsar sobre sí mismos debido a su propia gravedad, el haz de energía debe superar la llamada energía de enlace gravitacional del planeta. Calculada con la fórmula de tres quintos de la constante de gravitación universal multiplicada por la masa al cuadrado dividida por el radio planetario, esta magnitud define la cohesión intrínseca del cuerpo cósmico.",
+      "Para nuestro planeta Tierra, este cálculo físico arroja una cifra verdaderamente descomunal: dos coma veinticuatro por diez elevado a treinta y dos julios de energía. Suministrar semejante cantidad de energía en una fracción de segundo requeriría consumir en un instante el equivalente a toda la radiación luminosa generada por nuestro Sol a lo largo de una semana entera, una magnitud que excede a todas las fuentes terrestres combinadas.",
+      "Desde la perspectiva de la óptica física, el superláser cinematográfico muestra un fenómeno físicamente imposible en el vacío del espacio interestelar. En la película, ocho haces independientes de color verde convergen en un único foco geométrico sin lentes ni espejos y repentinamente se transforman en un único rayo unificado. En la realidad cuántica, los fotones no interactúan entre sí mecánicamente y continuarían en línea recta cruzándose sin fundirse.",
+      "En la física experimental contemporánea, los científicos investigan la materia bajo condiciones extremas utilizando los láseres más potentes del planeta, como el sistema ELI de Europa y el láser Apollon de diez petavatios en Francia. Aunque operan en escalas temporales de femtosegundos y no destruyen planetas, estos pulsos ultraconcentrados permiten simular el nacimiento de estrellas de neutrones y probar los límites cuánticos del espacio-tiempo."
     ],
-    expandables: [
-      { 
-        label: "En la Película", 
-        icon: "zap", 
-        text: "En Episodio IV, ocho rayos luminosos verdes convergen en el centro del plato reflector de la Estrella de la Muerte y se fusionan en un único superláser. Según la mitología de Star Wars, esta hazaña óptica se logra canalizando corrientes eléctricas a través de cristales Kyber — los mismos minerales que los Jedi usan para construir sus sables de luz." 
-      },
-      { 
-        label: "Dato Científico", 
-        icon: "atom", 
-        text: "La ficción cinematográfica anticipó una técnica óptica real: la combinación coherente de haces. Para construir sistemas de alta potencia sin fundir los espejos, los ingenieros dividen el láser en múltiples rayos de baja intensidad. Justo antes del objetivo, estos haces convergen sincronizados, multiplicando la fuerza total del impacto sin dañar la maquinaria de disparo." 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La orden del Gran Moff Tarkin «Pueden disparar cuando estén listos» condena al idílico planeta Alderaan a una aniquilación instantánea que deja solo un campo de asteroides. En la astrofísica real, destruir un planeta requeriría consumir toda la masa de una luna mediana convertida íntegramente en energía pura mediante aniquilación de antimateria."
       },
       {
-        label: "¿Sabías que...?",
-        icon: "sparkles",
-        text: "Destruir un planeta del tamaño de la Tierra requeriría aproximadamente 2×10³² julios de energía — la producción energética total del Sol durante 30 años, liberada en un instante. Esta cifra, calculada por astrofísicos reales, ayuda a entender por qué la Estrella de la Muerte solo podría existir en la ciencia ficción: ningún proceso conocido puede almacenar esa cantidad de energía en un dispositivo artificial."
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Para disipar el calor residual generado al disparar una energía de diez a la treinta y dos julios con un noventa y nueve por ciento de eficiencia, la estación espacial sufriría una vaporización térmica interna inmediata si no contara con radiadores de emisión radiativa del tamaño de continentes enteros."
       }
     ],
-    fact: "El primer láser funcional de la historia fue creado en 1960 por Theodore Maiman, usando un cilindro de rubí sintético como medio amplificador y una lámpara de destello en espiral para excitar los átomos. Este dispositivo de apenas 30 cm de largo abrió el camino a décadas de aplicaciones: desde códigos de barras hasta cirugía ocular, comunicaciones por fibra óptica y experimentos de física fundamental."
+    "fact": "La energía de enlace gravitatoria de la Tierra es de 2.24 x 10^32 julios; suministrar esa energía en un segundo exigiría una potencia de 2.24 x 10^32 vatios, superando en un factor de seiscientos mil millones la potencia eléctrica combinada que produce toda la civilización humana global durante un año entero."
   },
   {
-    id: 'fusion-tokamak',
-    title: 'Plasma en Fusión Nuclear: El Sol en una Botella',
-    color: '#FF7043',
-    btnImage: '/assets/starwars/swsec6/btn_fusion-tokamak.webp',
-    image: '/assets/starwars/swsec6/hero_fusion_tokamak.webp',
-    content: [
-      'El plasma de hidrógeno en el interior del Sol existe a una temperatura de 15 millones de grados Celsius y una densidad 150 veces mayor que el agua. En la Tierra, los reactores de fusión nuclear tipo tokamak intentan recrear estas condiciones extremas para generar la misma fuente de energía que alimenta las estrellas. El ITER (International Thermonuclear Experimental Reactor), que se construye en Francia con la participación de 35 países, usará plasma de deuterio y tritio confinado magnéticamente a 150 millones de grados —10 veces más caliente que el núcleo solar— porque a mayor temperatura, más energética es la colisión entre núcleos que produce la fusión. La clave del tokamak es que el plasma a esas temperaturas no puede tocar ninguna pared del reactor sin destruirla, por lo que se confina con campos magnéticos de 5 teslas creados por electroimanes superconductores enfriados a -269°C.',
-      'La ironía fundamental de la fusión nuclear es que el plasma que la alimenta es tan energético que destruiría cualquier material conocido al contacto. La solución —confinarlo con campos magnéticos como una "botella magnética"— fue propuesta simultáneamente por los físicos soviéticos Igor Tamm y Andrei Sakharov en 1950 y por el británico Peter Thonemann, sin que ninguno supiera del trabajo del otro, lo que sugiere que era una solución inevitablemente "obvia" una vez que se comprendía la física del plasma. En la Estrella de la Muerte de Star Wars, el rayo superlaser que destruye planetas sería físicamente un plasma de alta energía en estado de confinamiento controlado — aunque la física real requeriría una "botella magnética" del tamaño de una luna para contenerlo.',
-      'El plasma en los reactores de fusión exhibe un fenómeno llamado turbulencia de plasma que es uno de los problemas más difíciles de la física contemporánea. Las fluctuaciones en la densidad y temperatura del plasma crean vórtices microscópicos —similares a los remolinos en fluidos— que transportan calor desde el interior caliente hacia las paredes frías, reduciendo la eficiencia de confinamiento. El experimento DIII-D en California utilizó inteligencia artificial en 2022 para predecir y prevenir en tiempo real las disrupciones de plasma —eventos en los que el plasma pierde su confinamiento en microsegundos— incrementando el tiempo de confinamiento en un 300%. Este es el mismo tipo de control de plasma que haría posible, en teoría, el sable de luz o los escudos deflectores de Star Wars.',
-      'El plasma de fusión emite neutrones de alta energía que transforman los materiales del reactor en elementos radiactivos a través de activación neutrónica. El acero del primer muro de un reactor de fusión se convierte en una mezcla de hierro-55, cobalto-57 y manganeso-54 — isótopos radioactivos con vidas medias de entre 77 días y 2.7 años. Este proceso de transmutación, análogo a la alquimia medieval pero completamente físico, es el mismo que convierte el hidrógeno en helio en el interior de las estrellas y que creó todos los elementos más pesados que el hierro a través de supernovas. El plasma de fusión es, en el sentido más literal, el mismo proceso cósmico que creó los átomos de tu cuerpo hace miles de millones de años.',
-      'La energía de fusión que ITER pretende demostrar en la década de 2030 —500 MW de potencia de fusión a partir de 50 MW de energía de calentamiento, un "gain factor" Q=10— representaría el primer experimento en la historia humana donde se produce más energía de fusión de la que se inyecta. Si se escala a reactores comerciales con Q=25-30, la fusión podría proporcionar energía base ilimitada con las reservas de deuterio del agua de mar —que durarían miles de millones de años— y con litio continental como fuente de tritio. El plasma de fusión, el mismo estado de la materia que da calor al universo desde los primeros segundos del Big Bang, podría ser la solución energética definitiva para la civilización terrestre y las futuras colonias espaciales.'
+    "id": "fusion-tokamak",
+    "title": "Plasma en Fusión Nuclear: El Sol en una Botella",
+    "color": "#FF7043",
+    "btnImage": "/assets/starwars/swsec6/btn_fusion-tokamak.webp",
+    "image": "/assets/starwars/swsec6/hero_fusion_tokamak.webp",
+    "content": [
+      "El reactor de fusión tipo Tokamak representa el esfuerzo de ingeniería más audaz y sofisticado jamás emprendido por la humanidad para crear un sol artificial dentro de una botella magnética terrestre. Inventado originalmente en la Unión Soviética por Igor Tamm y Andréi Sájarov en la década de 1950, su arquitectura toroidal resuelve el problema fundamental de evitar que el plasma caliente entre en contacto con paredes materiales sólidas.",
+      "En un Tokamak, el combustible de gas ionizado de deuterio y tritio se mantiene levitando en el vacío dentro de una cámara anular en forma de rosquilla. Para evitar que las partículas se desvíen por las curvaturas del campo toroidal, un transformador central induce una corriente eléctrica masiva de millones de amperios dentro del propio plasma, generando un campo poloidal que retuerce las líneas magnéticas en una hélice cerrada de estabilidad milimétrica.",
+      "El corazón de la vanguardia mundial es el proyecto ITER, construido por un consorcio de treinta y cinco naciones en Cadarache, en el sur de Francia. Con una cámara de vacío de ochocientos cuarenta metros cúbicos y un peso superior a veintitrés mil toneladas, el reactor albergará un plasma termonuclear mantenido a ciento cincuenta millones de grados Celsius, diez veces más caliente que el núcleo de nuestro propio Sol.",
+      "El objetivo histórico de diseño de ITER es lograr un factor de amplificación energética Q igual a diez. Esto significa que inyectando cincuenta megavatios de potencia térmica auxiliar mediante microondas y haces neutros acelerados, el reactor generará quinientos megavatios de potencia neta por fusión durante pulsos sostenidos de varios minutos, demostrando la viabilidad comercial y tecnológica de la energía estelar en la Tierra.",
+      "Uno de los desafíos de ingeniería más extremos se ubica en el fondo de la vasija: el divertor. Este componente absorbe el calor residual y extrae las cenizas de helio del plasma, soportando cargas térmicas constantes de hasta veinte megavatios por metro cuadrado sobre bloques de tungsteno macizo refrigerados por agua supercrítica, en un entorno sometido a un flujo incesante de neutrones energéticos de catorce megaelectronvoltios."
     ],
-    expandables: [
-      { label: 'En Star Wars', icon: 'Zap', text: 'El rayo superlaser de la Estrella de la Muerte sería físicamente un plasma de alta energía confinado por campos magnéticos. La física real del ITER muestra que el confinamiento de plasma a esas energías requeriría electroimanes superconductores del tamaño de una luna — literalmente.' },
-      { label: 'Sol en Botella', icon: 'Atom', text: 'El plasma del ITER se calienta a 150 millones de grados — 10 veces más caliente que el núcleo solar — porque a mayor temperatura, los núcleos de hidrógeno se fusionan con más energía. La paradoja: necesitamos crear algo más caliente que el Sol para aprovechar la energía del Sol.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Las ciudades flotantes como Cloud City en Bespin extraen y refinan gas tibanna mediante gigantescos reactores electromagnéticos suspendidos en las capas gaseosas atmosféricas. En la realidad, las plantas de energía del siglo XXI dependerán de tokamaks como ITER para alimentar ciudades enteras sin quemar hidrocarburos ni emitir hollín."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los imanes de campo toroidal de ITER están fabricados con aleaciones superconductoras de niobio-estaño (Nb3Sn) y niobio-titanio enfriadas con helio supercrítico a cuatro coma cinco Kelvin (-269 °C), almacenando una energía magnética total de cuarenta y un gigajulios, capaz de frenar un tren de alta velocidad en marcha."
+      }
     ],
-    bannerImage: '/assets/starwars/infographic_sec6/banner_fusion-tokamak.webp',
-    bannerCaption: 'El tokamak ITER: plasma a 150 millones de grados confinado por imanes superconductores — la energía del futuro',
-    fact: 'ITER confina plasma a 150 millones de grados — 10 veces más caliente que el núcleo del Sol — usando campos magnéticos de electroimanes enfriados a -269°C. Estamos creando simultáneamente el objeto más frío y el más caliente del sistema solar en el mismo edificio.'
+    "bannerImage": "/assets/starwars/infographic_sec6/banner_fusion-tokamak.webp",
+    "bannerCaption": "El tokamak ITER: plasma a 150 millones de grados confinado por imanes superconductores — la energía del futuro",
+    "fact": "El plasma en el interior de ITER alcanzará ciento cincuenta millones de grados Celsius (diez veces la temperatura del núcleo solar de 15 millones de grados), suspendido en el vacío a escasos metros de bobinas magnéticas superconductoras mantenidas a cuatro Kelvin (-269 °C), el mayor gradiente térmico del universo conocido."
   },
   {
-    id: 'sonoluminiscencia',
-    title: 'Sonoluminiscencia: Luz del Sonido, Misterio del Plasma',
-    color: '#7E57C2',
-    btnImage: '/assets/starwars/swsec6/btn_sonoluminiscencia.webp',
-    image: '/assets/starwars/swsec6/hero_sonoluminiscencia.webp',
-    content: [
-      'La sonoluminiscencia es uno de los fenómenos más misteriosos de la física experimental: cuando una burbuja de gas en agua es sometida a ondas de sonido intensas a la frecuencia correcta, la burbuja colapsa en un lapso de nanosegundos y emite un destello de luz visible durante aproximadamente 100 picosegundos (0.1 billonésimas de segundo). El interior de la burbuja durante el colapso alcanza temperaturas estimadas entre 10,000 y 20,000 K —más caliente que la superficie del Sol— y presiones de miles de atmósferas. En ese instante, el gas dentro de la burbuja se convierte en un estado de plasma transitorio que emite radiación de cuerpo negro en el rango del ultravioleta visible.',
-      'La sonoluminiscencia fue descubierta accidentalmente en 1934 por los físicos alemanes H. Frenzel y H. Schultes mientras estudiaban el envejecimiento de fotografías en soluciones de revelado usando ultrasonidos. Los destellos, aunque visibles a simple vista en oscuridad total, son tan breves —100 picosegundos— que la energía emitida por cada destello es de solo 10 millones de fotones, equivalente a la luz de una vela a 10 metros de distancia. Sin embargo, la sorpresa no es la cantidad de luz sino que exista luz en absoluto: la teoría clásica predecía que el colapso de burbujas en agua simplemente generaría calor sin emisión óptica, y la explicación física completa del fenómeno sigue siendo un área activa de investigación.',
-      'La hipótesis más aceptada —aunque aún debatida— es que el colapso de la burbuja es tan rápido y adiabático que el gas no tiene tiempo de disipar calor a su entorno, acumulando toda la energía del colapso en un volumen microscópico que se plasma iza brevemente. La conexión con Star Wars es directa: las burbujas de cavitación que causan sonoluminiscencia en el agua son el mismo fenómeno que erosiona las hélices de los barcos (cavitación hidrodinámica) y que se estudia para diseñar los escudos de energía de naves espaciales, que deberían manejar el plasma generado por impactos de partículas de alta velocidad.',
-      'En 2002, Rusi Taleyarkhan del Laboratorio Nacional Oak Ridge publicó un artículo en Science afirmando que la sonoluminiscencia en deuterio líquido producía neutrones —la firma inequívoca de reacciones de fusión nuclear. Si era cierto, significaba que había alcanzado fusión termonuclear en una probeta de laboratorio usando solo ultrasonidos, lo que habría sido el avance energético más importante del siglo XX. La controversia que siguió fue uno de los mayores escándalos de la física reciente: tres equipos independientes no pudieron reproducir los resultados, la investigación fue cuestionada y eventualmente Taleyarkhan fue sancionado por mala conducta científica. El episodio es un caso de estudio sobre la importancia de la reproducibilidad en ciencia.',
-      'La versión natural de la sonoluminiscencia ocurre en los camarones pistola (Alpheus heterochaelis), que cierran sus pinzas especializadas con tanta velocidad —26 m/s en 1 milisegundo— que generan una cavidad de baja presión que colapsa produciendo sonoluminiscencia y temperaturas de hasta 8,000 K. El chasquido resultante —160-218 dB— es suficientemente poderoso para matar presas a distancia. Los camarones pistola producen el plasma de temperatura más alta de cualquier organismo biológico conocido, convirtiéndolos en la versión evolutiva de los blasters de Star Wars: armas de energía dirigida operadas con el mismo mecanismo que los reactores de plasma experimentales.'
+    "id": "sonoluminiscencia",
+    "title": "Sonoluminiscencia: Luz del Sonido, Misterio del Plasma",
+    "color": "#7E57C2",
+    "btnImage": "/assets/starwars/swsec6/btn_sonoluminiscencia.webp",
+    "image": "/assets/starwars/swsec6/hero_sonoluminiscencia.webp",
+    "content": [
+      "La sonoluminiscencia es uno de los fenómenos físicos más desconcertantes y bellos de la física moderna: la conversión directa de energía acústica en destellos luminosos ultracortos. Descubierta accidentalmente en 1934 en la Universidad de Colonia, ocurre cuando ondas de ultrasonido de alta frecuencia concentradas en un líquido provocan que microburbujas de gas suspendidas colapsen con una violencia extrema emitiendo luz visible y ultravioleta.",
+      "La hidrodinámica del colapso está descrita rigurosamente por la ecuación de Rayleigh-Plesset. Durante la fase de baja presión del ciclo acústico, la burbuja se expande hasta decenas de veces su tamaño inicial; cuando la onda ultrasónica pasa a la fase de compresión brusca, la masa del agua circundante aplasta la burbuja a velocidades hipersónicas, concentrando la energía dispersa en un volumen de fracciones de micrómetro.",
+      "En el epicentro del colapso de la burbuja, las temperaturas estimadas por espectroscopía óptica oscilan entre diez mil y cientos de miles de grados Celsius en una fracción infinitesimal de segundo. A estas temperaturas colosales, los átomos de gas noble atrapados en la cavidad se ionizan de forma repentina, transformando el interior de la burbuja en un microplasma caliente transitorio que emite radiación de cuerpo negro y bremsstrahlung térmico.",
+      "La duración de cada destello luminoso emitido en la sonoluminiscencia de burbuja única es extraordinariamente breve, rondando entre treinta y trescientos picosegundos (diez a la menos diez segundos). Esta concentración de potencia en tiempos tan microscópicos llevó a prestigiosos grupos científicos a investigar la hipotética fusión inducida por cavitación acústica («fusión por burbujas»), un campo polémico que refinó el entendimiento de la física de cavitación.",
+      "Hoy en día, los conocimientos derivados del estudio de estos microplasmas acústicos alimentan aplicaciones de vanguardia en la ingeniería biomédica contemporánea. La cavitación ultrasónica focalizada permite abrir selectivamente la barrera hematoencefálica para administrar quimioterapia en tumores cerebrales sin cirugía, además de utilizarse en la sonofitoquímica para neutralizar contaminantes orgánicos persistentes en aguas residuales industriales."
     ],
-    expandables: [
-      { label: 'En Star Wars', icon: 'Zap', text: 'Los camarones pistola generan plasma a 8,000 K cerrando sus pinzas — la misma temperatura que necesitarían los blasters de Star Wars para ionizar el aire y crear un proyectil de plasma. La evolución biológica ya inventó el "blaster" 100 millones de años antes que George Lucas.' },
-      { label: 'Fusión en Probeta', icon: 'Microscope', text: 'En 2002, un físico afirmó haber logrado fusión nuclear con ultrasonidos y sonoluminiscencia. La comunidad científica pasó 3 años intentando reproducirlo, falló, y el autor fue sancionado por mala conducta. Este es el caso de estudio perfecto de cómo funciona la verificación científica.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En el Episodio II: El Ataque de los Clones, el cazarrecompensas Jango Fett persigue a Obi-Wan a través de los anillos del planeta Geonosis arrojando cargas sísmicas que detonan en un sobrecogedor silencio cósmico inicial antes de liberar un pulso acústico devastador que pulveriza asteroides, mostrando el poder destructivo de las ondas de choque extremas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La duración del pulso de luz emitido en la sonoluminiscencia de burbuja única es tan asombrosamente breve que ronda entre treinta y trescientos picosegundos, con una potencia instantánea de radiación térmica emitida similar a la superficie del Sol pero concentrada en un radio menor a una micra, desconcertando a los físicos sobre los límites extremos de la compresión acústica y la ionización molecular rápida."
+      }
     ],
-    bannerImage: '/assets/starwars/infographic_sec6/banner_sonoluminiscencia.webp',
-    bannerCaption: 'Sonoluminiscencia: una burbuja que colapsa por ultrasonido crea plasma a millones de grados por nanosegundos',
-    fact: 'El camarón pistola genera plasma a 8,000 K —más caliente que la superficie del Sol— simplemente cerrando su pinza. Este es el único organismo biológico conocido que produce plasma de forma natural y controlada, haciendo de la evolución la primera ingeniería de armas de plasma de la historia.'
+    "bannerImage": "/assets/starwars/infographic_sec6/banner_sonoluminiscencia.webp",
+    "bannerCaption": "Sonoluminiscencia: una burbuja que colapsa por ultrasonido crea plasma a millones de grados por nanosegundos",
+    "fact": "En el colapso de sonoluminiscencia, la concentración de energía mecánica acústica en energía lumínica representa un factor de amplificación de densidad energética de doce órdenes de magnitud (un billón de veces), transformando ondas sonoras audibles en fotones ultravioletas y estados ionizados de plasma a decenas de miles de grados."
   },
   {
-    id: 'magnetares-plasma',
-    title: 'Magnetares: El Plasma más Extremo del Universo',
-    color: '#26A69A',
-    btnImage: '/assets/starwars/swsec6/btn_magnetares-plasma.webp',
-    image: '/assets/starwars/swsec6/hero_magnetar.webp',
-    content: [
-      'Los magnetares son estrellas de neutrones con campos magnéticos de 10^15 gauss —un millón de billones de veces más intenso que el campo magnético terrestre— que representan el plasma en su estado más extremo conocido en el universo. Su interior está compuesto de plasma de quarks y gluones, el mismo estado de la materia que existió en los primeros microsegundos del Big Bang, a temperaturas de 10^12 Kelvin. La corteza de un magnetar, con una densidad de 400 millones de toneladas por centímetro cúbico, es el material sólido más denso del universo conocido, y las tensiones magnéticas que actúan sobre ella generan "terremotos estelares" que liberan en 0.2 segundos más energía que el Sol emitirá en 100,000 años.',
-      'El campo magnético de un magnetar es tan intenso que distorsiona los orbitales de los átomos de hidrógeno —alargándolos en la dirección del campo en factores de hasta 200— y desintegra el enlace de las moléculas de ADN a una distancia de 1,000 kilómetros. A 1 AU (la distancia Tierra-Sol), el campo de un magnetar borraría las tarjetas de crédito magnéticas a nivel planetario. El magnetar más cercano conocido, SGR 1806-20 a 50,000 años luz, emitió en diciembre de 2004 un destello de rayos gamma que ionizó temporalmente la ionosfera terrestre, haciendo que los instrumentos de detección de ondas de radio registraran una perturbación equivalente a la de un rayo en la atmósfera — desde 50,000 años luz de distancia.',
-      'El plasma en los magnetares existe en un estado denominado "fase de quarks extraños" donde los protones y neutrones del núcleo se disuelven en un mar de quarks up, down y strange libres. Teóricamente, si este plasma de quarks straños —llamado materia extraña o strangelet— entrara en contacto con materia ordinaria, podría convertirla catalíticamente en materia extraña también, propagándose como una reacción en cadena que destruiría cualquier planeta. Esta hipótesis, conocida como la "catástrofe de strangelet", fue uno de los argumentos que llevó a grupos antinucleares a demandar al CERN antes del inicio del LHC en 2008, temiendo que se produjera materia extraña en las colisiones. El CERN respondió publicando un análisis de seguridad de 86 páginas demostrando matemáticamente que el escenario es imposible en condiciones del LHC.',
-      'Los oscilaciones del campo magnético de un magnetar generan ondas de plasma magnetohidrodinámicas (MHD) que viajan a través de la corteza del astro a velocidades de entre 10% y 30% de la velocidad de la luz. Estas ondas, análogas a los terremotos en la Tierra pero de energía incomparablemente mayor, se manifiestan como ráfagas repetidas de rayos X y rayos gamma. El magnetar SGR 1935+2154 emitió en 2020 una ráfaga de radio visible desde la Tierra que fue detectada como una Ráfaga Rápida de Radio (FRB) por primera vez desde un origen conocido, resolviendo parcialmente uno de los misterios astronómicos más debatidos de la última década: el origen de las FRBs que los radiotelescopios detectaban regularmente sin poder identificar su fuente.',
-      'La corona de plasma de los magnetares —la capa externa de plasma caliente que rodea la estrella de neutrones— es análoga a la corona solar pero a temperaturas 1,000 veces mayores y con densidades de plasma 10^20 veces mayores. El estudio de cómo se forma y se energiza esta corona extrema ha proporcionado modelos que se aplican directamente a la física de la corona solar, cuyo mecanismo de calentamiento a 1-3 millones de grados —siendo la superficie solar solo 5,778 K— fue un misterio durante 80 años. Los modelos de ondas de Alfvén desarrollados para explicar el calentamiento de las coronas de magnetares predijeron con éxito el mecanismo de calentamiento coronal solar, confirmado observacionalmente por la sonda Parker Solar Probe en 2021.'
+    "id": "magnetares-plasma",
+    "title": "Magnetares: El Plasma más Extremo del Universo",
+    "color": "#26A69A",
+    "btnImage": "/assets/starwars/swsec6/btn_magnetares-plasma.webp",
+    "image": "/assets/starwars/swsec6/hero_magnetar.webp",
+    "content": [
+      "Los magnetares son las centrales electromagnéticas más violentas y aterradoras de todo el cosmos observable. Nacidos tras la muerte cataclísmica de estrellas hipermasivas en explosiones de supernova, estos remanentes estelares comprimen una masa equivalente a una estrella y media similar a nuestro Sol en una esfera sólida de neutrones y plasma de tan solo veinte kilómetros de diámetro que gira vertiginosamente.",
+      "La característica definitoria de un magnetar es su campo magnético descomunal, que alcanza intensidades de entre diez a la diez y diez a la once teslas (hasta diez a la quince gauss). En comparación, el campo magnético que orienta las brújulas en la Tierra ronda apenas el medio gauss, y los mejores imanes de laboratorio humano alcanzan con gran esfuerzo cuarenta teslas, haciendo a los magnetares trillones de veces más potentes.",
+      "Bajo estas condiciones descomunales, se rebasa el llamado campo cuántico crítico de Schwinger de cuarenta y cuatro mil millones de gauss. A este nivel, las reglas de la física ordinaria se quiebran: el vacío del espacio deja de ser neutro y se vuelve birrefringente a la luz dividiendo los haces luminosos, los átomos de materia se comprimen en filamentos microscópicos alargados y los fotones de rayos gamma se desintegran espontáneamente en pares electrón-positrón.",
+      "Las tensiones magnéticas monstruosas deforman periódicamente la corteza rígida de hierro y neutrones del magnetar, provocando sismos estelares o «starquakes». Una fractura de apenas un micrómetro en la corteza sólida libera una energía magnética acumulada inmensa, proyectando una bola de fuego de plasma relativista de electrones y positrones al espacio a velocidades cercanas a la de la luz en forma de erupción gigantesca de rayos gamma.",
+      "El mayor cataclismo astrofísico de este tipo jamás registrado por la humanidad ocurrió el 27 de diciembre de 2004, cuando el magnetar SGR 1806-20 emitió una llamarada gigante. A pesar de encontrarse a cincuenta mil años luz de distancia en el extremo opuesto de la Vía Láctea, el pulso de energía ionizó la atmósfera superior de la Tierra a medianoche y saturó los detectores de satélites espaciales científicos en órbita."
     ],
-    expandables: [
-      { label: 'En Star Wars', icon: 'Zap', text: 'El rayo de la Estrella de la Muerte destruye planetas en segundos; el magnetar SGR 1806-20 perturbó la ionosfera de la Tierra desde 50,000 años luz con solo 0.2 segundos de actividad. Si estuviera a la distancia Luna-Tierra, destruiría la Tierra sin dispararle nada.' },
-      { label: 'Strangelet Peligro', icon: 'Atom', text: 'Antes del arranque del LHC en 2008, el CERN publicó 86 páginas probando que no podría crear "materia extraña" de magnetar que catalíticamente convertiría la Tierra en plasma. Es el análisis de seguridad más elaborado de la historia para refutar una hipótesis de ciencia ficción real.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Ni siquiera la Estrella de la Muerte o los destructores estelares clase Ejecutor podrían acercarse a un magnetar real. A mil kilómetros de distancia de su superficie, el gradiente magnético es tan inimaginablemente brutal que rasgaría las nubes electrónicas de los átomos de tu cuerpo, disolviendo toda estructura biológica en milisegundos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El límite de campo cuántico de Schwinger ($4.4 \\times 10^9$ teslas) es el umbral teórico donde la energía magnética interactúa directamente con la energía de masa en reposo del electrón, provocando fenómenos de polarización del vacío y desintegración fotónica predichos por la electrodinámica cuántica no lineal."
+      }
     ],
-    bannerImage: '/assets/starwars/infographic_sec6/banner_magnetares-plasma.webp',
-    bannerCaption: 'Magnetares: estrellas de neutrones con campos magnéticos un billón de veces más fuertes que el de la Tierra',
-    fact: 'El campo magnético de un magnetar borraría las tarjetas de crédito magnéticas de toda la Tierra si estuviera a la distancia del Sol. El magnetar SGR 1806-20 ya perturbó la ionosfera terrestre desde 50,000 años luz con una explosión de 0.2 segundos — más energía que el Sol en 100,000 años.'
+    "bannerImage": "/assets/starwars/infographic_sec6/banner_magnetares-plasma.webp",
+    "bannerCaption": "Magnetares: estrellas de neutrones con campos magnéticos un billón de veces más fuertes que el de la Tierra",
+    "fact": "El destello del magnetar SGR 1806-20 registrado en diciembre de 2004 emitió diez elevado a treinta y nueve julios en dos décimas de segundo; a pesar de encontrarse a 50,000 años luz de distancia en el lado opuesto de la Vía Láctea, la llamarada de rayos gamma ionizó la atmósfera superior de la Tierra y cegó satélites de la NASA."
   }
-
 ];
 
 const DIRECTIONS = ['up', 'down', 'left', 'right'];

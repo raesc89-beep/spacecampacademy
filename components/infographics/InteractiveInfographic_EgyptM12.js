@@ -122,133 +122,229 @@ const BIBLIOGRAPHY = [
 // â”€â”€â”€ Content Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const INFOGRAPHIC_NODES = [
   {
-    id: 'reloj-solar',
-              bannerImage: '/assets/egypt/infographic_m12/banner_abu-simbel.webp',
-    title: 'El Reloj del Faraón',
-    color: '#E8C96A',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_reloj.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_reloj.webp',
-    content: [
-      '¿Alguna vez has visto tu sombra cambiar de tamaño durante el día? Cuando sales a jugar por la mañana, tu sombra es larguísima â€”¡pareces un gigante! Al mediodía, se encoge tanto que casi desaparece bajo tus pies. Y por la tarde, vuelve a estirarse, pero ahora apunta hacia el otro lado. Los egipcios descubrieron algo genial: ¡podían usar esta sombra para saber la hora!',
-      'Hace 4,000 años, los sacerdotes egipcios construyeron columnas de piedra altísimas llamadas obeliscos â€”como lápices de piedra gigantes apuntando al cielo. No eran decoración: eran relojes enormes. La sombra que proyectaban sobre el suelo giraba como la manecilla de un reloj, y los sacerdotes marcaban en el piso las posiciones de la sombra a cada hora del día.',
-      'Cuando el Sol sale por el este, la sombra del obelisco apunta hacia el oeste y es muy larga. Conforme el Sol sube, la sombra se acorta y gira. Al mediodía solar exacto, la sombra apunta al Norte verdadero y es la más corta del día. ¡Es como un reloj gigante donde la sombra es la manecilla y el sol es el motor!',
-      'Los sacerdotes también marcaban la sombra en días especiales: en el solsticio de verano (21 de junio), la sombra del mediodía es la más corta del año. En el solsticio de invierno (21 de diciembre), es la más larga. En los equinoccios (marzo y septiembre), la sombra tiene exactamente la misma longitud. ¡El obelisco era también un calendario perpetuo grabado en piedra!',
-      'La precisión era impresionante: los egipcios dividieron el día en 12 horas de luz y 12 horas de oscuridad. En verano, las horas diurnas eran más largas que las nocturnas, y en invierno al revés. ¡Su "hora" no duraba siempre lo mismo! Es como si un recreo durara más en verano que en invierno.',
+    "id": "reloj-solar",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_abu-simbel.webp",
+    "title": "El Reloj del Faraón",
+    "color": "#E8C96A",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_reloj.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_reloj.webp",
+    "content": [
+      "En la arquitectura sagrada del Antiguo Egipto, el obelisco —denominado en lengua jeroglífica «tekhen»— no era un simple monumento conmemorativo o un pilar decorativo, sino un prodigio tecnológico de piedra diseñado para interactuar con la luz del Sol. Considerado la materialización pétrea de un rayo solar petrificado que descendía directamente del disco de Ra, el obelisco funcionaba como un gigantesco gnomon para medir el avance del tiempo diurno.",
+      "Al elevarse verticalmente hacia el cielo despejado, el fuste monolítico proyectaba una sombra nítida y alargada sobre las explanadas pavimentadas de los templos de Karnak, Heliópolis o Luxor. Los sacerdotes astrónomos trazaban en el suelo líneas de graduación angular concéntricas y marcas radiales que permitían subdividir las horas de luz en diez partes diurnas, más dos horas adicionales asignadas a los crepúsculos matutino y vespertino.",
+      "El movimiento de la sombra proyectada por el obelisco variaba de manera continua a lo largo del año debido a la declinación solar inducida por la inclinación axial de la Tierra. Durante el solsticio de verano, cuando el Sol alcanzaba su cénit más elevado sobre el horizonte del Alto Egipto, la sombra al mediodía se reducía a su mínima longitud anual; en el solsticio de invierno, por el contrario, la sombra meridiana se estiraba alcanzando su máxima extensión.",
+      "Junto a los grandes obeliscos monumentales, los escribas egipcios desarrollaron relojes solares portátiles de madera y piedra caliza conocidos como «sechat». Estos dispositivos constaban de una regla horizontal graduada con cinco marcas de hora y un travesaño vertical en forma de «T» que proyectaba la sombra. Al amanecer se orientaba el travesaño hacia el este, y al mediodía exacto se invertía el instrumento hacia el oeste para medir la tarde.",
+      "La integración del obelisco como cronómetro monumental garantizaba que todas las liturgias del templo se ejecutaran en el instante astronómico preciso establecido por los cánones sagrados. El cambio de guardia sacerdotal, las libaciones matutinas de vino y leche, la quema de incienso de kyphi al mediodía y las ofrendas vespertinas estaban rigurosamente pautadas por el paso silencioso de la sombra de granito sobre las losas tebanas."
     ],
-    fact: '¿Sabías que la palabra "reloj" viene del latín "horologium", que significa "el que mide las horas"? Y el primer horologium de Roma fue un obelisco egipcio que el emperador Augusto trajo de Heliópolis en el año 10 a.C. Lo convirtió en un reloj solar monumental en el Campo de Marte.',
+    "fact": "Los relojes solares portátiles «sechat» de la Dinastía XVIII dividían el día en doce partes mediante una regla de treinta centímetros y una mira transversal de diez centímetros, constituyendo los cronómetros de bolsillo más antiguos del registro arqueológico mundial, utilizados por sacerdotes y escribas para coordinar las ofrendas litúrgicas en los templos del Imperio Nuevo.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los textos del papiro de Carlsberg revelan que los astrónomos egipcios disponían de tablas matemáticas de conversión de sombras que indicaban cuántos pies o codos debía medir la sombra de un obelisco en cada mes del año para determinar el momento exacto del rezo de mediodía, calculando la variación estacional de la altura del Sol con tablas trigonométricas empíricas de notable exactitud."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El principio óptico del gnomon se basa en la proyección geométrica cónica de los rayos solares paralelos que inciden sobre un obstáculo vertical rígido. El ángulo cenital solar se obtiene mediante la función trigonométrica del arco tangente de la longitud de la sombra dividida entre la altura exacta del monolito."
+      }
+    ]
   },
   {
-    id: 'piramidion',
-              bannerImage: '/assets/egypt/infographic_m12/banner_dendera-zodiaco.webp',
-    title: 'La Punta de Oro',
-    color: '#FFD700',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_piramidion.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_piramidion.webp',
-    content: [
-      '¡Imagina que cada mañana, antes de que salga el sol, la punta de un obelisco empieza a brillar como una estrella! Eso es exactamente lo que pasaba en el antiguo Egipto. La punta del obelisco, llamada "piramidión", estaba cubierta con una aleación de oro y plata llamada"electrum" que brillaba como un espejo dorado.',
-      'Cuando los primeros rayos del amanecer tocaban la punta del obelisco â€”antes de que la luz llegara al sueloâ€” el piramidión resplandecía como un pequeño sol dorado en el cielo oscuro. Los egipcios creían que ese destello era el primer contacto del dios Ra (el Sol) con la Tierra cada mañana. ¡Era como si Ra tocara con su dedo la punta del obelisco para despertar al mundo!',
-      'El electrum es una mezcla natural de 75% oro y 25% plata que los egipcios encontraban en los lechos de ríos. Es más duro que el oro puro y no se oxida ni se mancha, así que brillaba durante siglos sin necesitar mantenimiento. ¡Imagina un faro dorado de 3 metros de altura en la punta de una columna de 30 metros!',
-      'Los piramidiones más famosos estaban en los obeliscos del Templo de Karnak en Luxor. La reina Hatshepsut mandó cubrir dos obeliscos enteros con electrum â€”no solo la punta, sino todo el obelisco. En sus inscripciones dice: "Los hice para mi padre Amón, recubiertos de electrum fino desde la punta hasta la base, tan brillantes que iluminan las Dos Tierras como el disco solar."',
-      'Hoy no queda ningún piramidión de electrum original porque fueron robados o fundidos hace miles de años. Pero en 2018, arqueólogos encontraron un piramidión de granito del faraón Amenemhat III (1800 a.C.) con jeroglíficos que dicen: "Que el rostro del rey se abra para ver al Señor de la Luz cuando cruza el cielo." ¡Confirma que los obeliscos eran instrumentos astronómicos sagrados!',
+    "id": "piramidion",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_dendera-zodiaco.webp",
+    "title": "La Punta de Oro",
+    "color": "#FFD700",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_piramidion.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_piramidion.webp",
+    "content": [
+      "El elemento culminante y más sagrado de todo obelisco egipcio es el piramidión, conocido en lengua faraónica como «benbenet». Esta pequeña pirámide cuadrangular que remata la cúspide del monumento reproducía a escala reducida la mítica colina primordial o «benben», la primera porción de tierra emergida de las aguas oscuras del Nun en el instante fundacional de la Creación, sobre la cual se posó el dios solar Ra para derramar la luz sobre el universo.",
+      "Para potenciar su simbolismo solar y su visibilidad a kilómetros de distancia, los piramidiones eran cuidadosamente revestidos con gruesas láminas batidas de electro («djam»), una aleación metálica natural o artificial compuesta típicamente por un setenta y cinco por ciento de oro, un veinte por ciento de plata y un cinco por ciento de cobre. El electro ofrecía un brillo blanquecino y reflectante muy superior al del oro puro, emitiendo destellos cegadores bajo el sol del desierto.",
+      "Cuando el valle del Nilo se encontraba todavía sumido en las sombras crepusculares previas al amanecer terrenal, la gran altura del obelisco permitía que su cúspide dorada interceptara los primeros rayos solares por encima del horizonte curvo de la Tierra. Durante varios minutos, el piramidión resplandecía en lo alto como una estrella solitaria suspendida en la penumbra, anunciando a los campesinos y sacerdotes la victoria inminente de la luz matutina.",
+      "Del mismo modo, al caer la tarde, cuando el suelo del templo y los patios hipóstilos quedaban ya cubiertos por la sombra crepuscular, la punta dorada continuaba brillando intensamente en el cielo tebano, capturando el último suspiro del Sol poniente antes de su inmersión en el inframundo de la Duat. Este fenómeno óptico diario convertía al obelisco en un faro eterno de continuidad y esperanza para la sociedad egipcia.",
+      "Muchos piramidiones estaban decorados con delicados bajorrelieves jeroglíficos que mostraban al faraón reinante arrodillado ofreciendo incienso o copas de vino directamente al dios Ra-Horakhty o al dios solar Amun. Uno de los ejemplares mejor conservados es el piramidión de basalto negro del faraón Amenemhat III de la Dinastía XII, hallado en Dahshur y conservado en el Museo de El Cairo, cuyas inscripciones invocan la apertura celestial de los ojos del rey."
     ],
-    fact: 'El Monumento a Washington en EE.UU. Es un obelisco moderno de 169 metros de altura. Su punta de aluminio fue la pieza de aluminio más grande del mundo cuando se instaló en 1884. El aluminio era tan raro y caro en esa época que valía más que el oro â€”¡igual que el electrum de los obeliscos egipcios!',
+    "fact": "El piramidión de piedra caliza y granito de un obelisco monumental de treinta metros pesaba entre cinco y diez toneladas, estando recubierto por planchas de electro de dos a tres milímetros de espesor fijadas mediante clavos de bronce y engastes de cola animal, reflejando los primeros rayos del amanecer como un faro dorado visible a decenas de kilómetros de distancia.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las láminas de electro que cubrían las puntas de los obeliscos eran tan codiciadas que durante las invasiones asirias del 664 a.C., las tropas del rey Asurbanipal saquearon dos obeliscos enteros en Tebas, arrancando más de dos mil quinientos kilogramos de metal precioso de sus piramidiones para llevarlo a Nínive."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La aleación de electro posee una reflectividad óptica especular superior al noventa por ciento en el espectro visible (400-700 nanómetros). La presencia de plata incrementa la reflectancia en las longitudes de onda azules y violetas, otorgándole ese resplandor blanco incandescente tan característico."
+      }
+    ]
   },
   {
-    id: 'cantera-asuan',
-              bannerImage: '/assets/egypt/infographic_m12/banner_hatshepsut-templo.webp',
-    title: 'Gigantes de Granito',
-    color: '#C4846C',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_cantera.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_cantera.webp',
-    content: [
-      '¿Cómo tallar una aguja de piedra de 30 metros que pesa más que 40 elefantes? ¡Sin máquinas, sin electricidad, solo con herramientas de piedra! Los egipcios lo hicieron decenas de veces en las canteras de Asuán, al sur de Egipto, donde encontraron la piedra perfecta: granito rosado, una de las rocas más duras del planeta.',
-      'El granito tiene una dureza de 7 en la escala de Mohs (el diamante, lo más duro que existe, es 10). Para tallarlo, los egipcios usaban bolas de dolerita â€”una piedra aún más dura que el granitoâ€” y las golpeaban una y otra vez contra la roca. Es como intentar rayar un vidrio con otro vidrio más duro. ¡Un solo obelisco grande tardaba varios años en tallarse!',
-      'Los artesanos cavaban una trinchera alrededor del bloque de granito y debajo de él, dejando el obelisco conectado a la roca madre solo por la base. Luego hacían agujeros en la base, insertaban cuñas de madera y las mojaban con agua. La madera se expandía al absorber el agua y la roca se fracturaba; el obelisco se separaba limpiamente de la cantera.',
-      'En Asuán todavía puedes ver el Obelisco Inacabado, el obelisco más grande jamás intentado: 42 metros de largo y 1,200 toneladas de peso. Los artesanos descubrieron una grieta enorme en la roca cuando ya llevaban años trabajando y tuvieron que abandonarlo. ¡Es como armar un rompecabezas gigante y descubrir que falta una pieza importante!',
-      'Una vez tallado, el obelisco se transportaba por el río Nilo en una barcaza gigante hasta su destino final, a veces a 200 kilómetros de distancia. ¿Cómo levantaban una columna de 300 toneladas sin grúas? Los arqueólogos creen que usaban una rampa de arena: arrastraban el obelisco hasta la cima, lo inclinaban sobre el borde, y luego sacaban la arena poco a poco para que bajara lentamente hasta quedar vertical. ¡Ingeniería pura sin un solo motor!',
+    "id": "cantera-asuan",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_hatshepsut-templo.webp",
+    "title": "Gigantes de Granito",
+    "color": "#C4846C",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_cantera.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_cantera.webp",
+    "content": [
+      "Todos los grandes obeliscos monolíticos erigidos en los templos del Imperio Antiguo, Medio y Nuevo proceden de un único enclave geológico excepcional: las canteras de granito rosa situadas en la Primera Catarata del Nilo, en la actual ciudad de Asuán, a unos ochocientos kilómetros al sur de El Cairo. Esta formación plutónica precámbrica proporciona un granito feldespático de extraordinaria densidad, caracterizado por sus grandes cristales rosados de microclina y motas de biotita negra.",
+      "La evidencia más colosal del esfuerzo y las limitaciones de la ingeniería cantera egipcia es el célebre Obelisco Inacabado de Asuán, atribuido al reinado de la reina Hatshepsut o de Tutmosis III en la Dinastía XVIII. Este gigante pétreo, que todavía permanece yacente adherido a la roca madre del lecho de la cantera, habría alcanzado una longitud de cuarenta y dos metros y una masa descomunal estimada en casi mil doscientas toneladas, superando a cualquier otro monolito jamás erigido.",
+      "Para tallar semejante mole sin herramientas de hierro endurecido ni explosivos, los canteros emplearon bolas esferoidales de dolerita traídas de los lechos volcánicos del desierto oriental. Con un peso de cuatro a seis kilogramos cada una, estas piedras basálticas de dureza extrema eran golpeadas rítmicamente contra el granito por cuadrillas de canteros, pulverizando la roca a un ritmo lentísimo de apenas unos centímetros cúbicos por hora de fatiga extrema.",
+      "Los trabajadores excavaban trincheras perimetrales de apenas setenta centímetros de anchura a ambos lados del fuste, trabajando en cuclillas en condiciones de calor sofocante y polvo de sílice. Para acelerar el debilitamiento de la roca, encendían hogueras sobre la superficie del granito y arrojaban inmediatamente agua fría del Nilo: el violento choque térmico provocaba tensiones de dilatación diferencial que agrietaban la capa externa de cuarzo y feldespato.",
+      "El destino trágico del Obelisco Inacabado se selló cuando los canteros estaban a punto de desprender su base inferior de la roca madre. Una falla geológica interna provocó una grieta longitudinal profunda e irreparable que cruzó todo el corazón del monolito. La obra fue abandonada de inmediato, pero dejó para la historia un libro abierto donde los arqueólogos contemporáneos pueden estudiar cada etapa de la cantería monumental faraónica."
     ],
-    fact: 'Si el Obelisco Inacabado de Asuán se hubiera completado, habría sido un tercio más alto que cualquier obelisco existente. Con sus 42 metros, habría sido casi tan alto como la Estatua de la Libertad sin su pedestal (46 metros). ¡Los egipcios pensaban en grande!',
+    "fact": "El Obelisco Inacabado de Asuán mide cuarenta y un coma setenta y cinco metros de longitud con una sección de cuatro coma dos metros en la base y un peso calculado de mil ciento sesenta y ocho toneladas métricas, el mayor bloque monolítico de granito del mundo antiguo, abandonado en su lecho de roca debido a una fisura estructural imprevista que frustró su extracción.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En las trincheras del Obelisco Inacabado de Asuán, los arqueólogos han hallado miles de percutores de dolerita con sus superficies desgastadas y facetadas por millones de impactos repetitivos, testimoniando el esfuerzo sobrehumano de cientos de obreros que trabajaron durante meses continuos, golpeando rítmicamente el granito a una cadencia calculada de cuarenta a cincuenta impactos por minuto."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El granito rosa de Asuán tiene una resistencia a la compresión de ciento setenta megapascales y un módulo de Young de cincuenta gigapascales. La técnica de choque térmico provocaba gradientes de temperatura superiores a cuatrocientos grados, superando el límite de fractura térmica del cuarzo (573 °C)."
+      }
+    ]
   },
   {
-    id: 'calendario-piedra',
-              bannerImage: '/assets/egypt/infographic_m12/banner_karnak-templo.webp',
-    title: 'Calendario de Piedra',
-    color: '#7EC8E3',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_calendario.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_calendario.webp',
-    content: [
-      '¿Sabías que los obeliscos no solo medían las horas del día, sino también los meses del año? Los sacerdotes egipcios descubrieron algo fascinante: la longitud de la sombra del mediodía cambia cada día del año. En verano es corta (porque el Sol está alto), y en invierno es larga (porque el Sol está bajo). ¡Es como si la sombra creciera y encogiera con las estaciones!',
-      'Los sacerdotes marcaron en el suelo alrededor del obelisco las posiciones de la sombra del mediodía en cada estación. El solsticio de verano (cuando la sombra es más corta) marcaba el inicio de la temporada de cosecha. El solsticio de invierno (sombra más larga) anunciaba la época de siembra. Los equinoccios indicaban la crecida del Nilo â€”¡el evento más importante del año!',
-      'La crecida del Nilo traía agua y limo fértil que hacía crecer los cultivos. Si los sacerdotes calculaban mal la fecha, las cosechas podían arruinarse. El obelisco les daba una precisión de pocos días â€”suficiente para planificar todo el ciclo agrícola. ¡Un error de cálculo podía significar hambruna para millones de personas!',
-      'Los egipcios crearon un calendario de 365 días basado en estas observaciones: 12 meses de 30 días más 5 días extras al final. Es casi idéntico al nuestro. Solo les faltó el cuarto de día extra que nosotros corregimos con los años bisiestos. Después de 1,460 años, su calendario se desfasaba un año completo â€”y volvía a coincidir. ¡A este ciclo lo llamaban "Gran Año de Sothis"!',
-      'El obelisco era tan preciso que los sacerdotes podían predecir las estaciones con semanas de anticipación. Imagina ser un niño egipcio y que tu maestro dijera: "¡En 40 días exactos vendrá la crecida del Nilo!" gracias a las marcas de la sombra del obelisco. Era como tener un calendario de Google hecho de piedra y sombras.',
+    "id": "calendario-piedra",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_karnak-templo.webp",
+    "title": "Calendario de Piedra",
+    "color": "#7EC8E3",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_calendario.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_calendario.webp",
+    "content": [
+      "Más allá de medir las horas del día a través de su sombra giratoria, los obeliscos y los grandes templos a los que estaban asociados funcionaban como gigantescos calendarios estacionales esculpidos en piedra. Los astrónomos reales conocían perfectamente que la trayectoria aparente del Sol a lo largo del año trópico describe un ciclo inmutable de trescientos sesenta y cinco días y cuarto, determinando los ciclos de siembra, crecida del río y cosecha.",
+      "En los patios de templos solares como el de Niuserre en Abu Gurab (Dinastía V) o el Ramesseum de Ramsés II en Tebas, los obeliscos y las columnas centrales se situaban en relación directa con estelas conmemorativas y altares de alabastro alineados con los puntos cardinales. El día del equinoccio de primavera y de otoño, la sombra del obelisco al amanecer y al atardecer trazaba una línea recta perfecta sobre el pavimento de este a oeste.",
+      "Por el contrario, en los solsticios de verano y de invierno, la sombra proyectada al mediodía alcanzaba marcas grabadas en el suelo que delimitaban los extremos angulares de la oscilación solar anual. Estas marcas no eran simples curiosidades visuales: servían como referencias empíricas absolutas para que los sacerdotes verificaran si el calendario civil oficial de trescientos sesenta y cinco días se estaba desfasando con respecto a las estaciones naturales agrícolas.",
+      "Dado que el calendario civil egipcio carecía de años bisiestos y acumulaba un retraso de veinticuatro horas cada cuatro años solares, la observación periódica de las sombras del obelisco permitía a los escribas registrar el desplazamiento secular del ciclo de las estaciones, conocido como el año vago. Gracias a estas mediciones pétreas, los gobernantes sabían con exactitud matemática cuántos días de anticipación o retraso llevaba la crecida anual del Nilo.",
+      "La precisión arquitectónica requerida para transformar una explanada en un calendario geodésico implicaba nivelar el suelo mediante canales de agua perimetrales con tolerancias menores a un centímetro a lo largo de cientos de metros cuadrados. El obelisco se convertía así en el corazón de un observatorio astronómico al aire libre donde la geometría, la religión y la agricultura se fundían en una síntesis perfecta."
     ],
-    fact: 'Nuestro calendario actual (gregoriano) tiene su origen en el calendario egipcio de 365 días. Julio César lo adoptó en el 46 a.C. Tras visitar Egipto y conocer a Cleopatra. El Papa Gregorio XIII lo ajustó en 1582, añadiendo la regla de los años bisiestos. ¡Así que cada vez que miras un calendario, estás usando tecnología egipcia de 4,500 años!',
+    "fact": "La explanada del templo solar de Niuserre en Abu Gurab cubría más de ocho mil metros cuadrados nivelados con agua sobre el desierto, centrados en un obelisco monumental de treinta y seis metros de altura que registraba los equinoccios con un error inferior a medio grado de arco, constituyendo uno de los centros de observación y culto heliopolitano más avanzados de la época de las pirámides.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los templos solares de la Dinastía V no tenían santuarios techados oscuros como los templos tebanos posteriores; estaban presididos por un colosal obelisco truncado de piedra caliza y granito erigido sobre una base troncocónica abierta al cielo, bañado enteramente por la luz solar directa, permitiendo que la radiación heliaca bendijera de forma ininterrumpida los altares de ofrendas de alabastro."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad angular aparente del Sol a lo largo del horizonte durante los equinoccios es de cero coma veinticinco grados por minuto de tiempo. En un obelisco de treinta metros, el extremo de la sombra se desplaza a más de trece centímetros por minuto sobre el suelo, permitiendo lecturas temporales de gran precisión."
+      }
+    ]
   },
   {
-    id: 'roma-obeliscos',
-              bannerImage: '/assets/egypt/infographic_m12/banner_luxor-temple.webp',
-    title: 'Roma: Ciudad de Obeliscos',
-    color: '#D4674A',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_roma.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_roma.webp',
-    content: [
-      '¿Sabías que la ciudad con más obeliscos egipcios del mundo NO es El Cairo ni Luxor, sino Roma, en Italia? Hoy hay 13 obeliscos egipcios originales en Roma â€”¡más que en todo Egipto! Los emperadores romanos estaban tan fascinados con estas columnas que se las llevaron como trofeos de guerra y símbolos de poder.',
-      'Todo empezó cuando el emperador Augusto conquistó Egipto en el año 30 a.C. Se llevó dos obeliscos a Roma: uno para el Circo Máximo y otro para el Campo de Marte, donde lo convirtió en un reloj solar gigante. ¡Imagina mover una columna de 300 toneladas en barco desde Egipto hasta Italia, cruzando todo el Mediterráneo!',
-      'El obelisco más famoso de Roma está en el centro de la Plaza de San Pedro, en el Vaticano. Fue traído desde Heliópolis por el emperador Calígula en el año 37 d.C. Durante siglos estuvo junto al Circo de Nerón, donde presenciaron martirios de los primeros cristianos. En 1586, el papa Sixto V ordenó moverlo â€”una operación que requirió 900 hombres, 140 caballos y 47 grúas.',
-      'El Obelisco de Letrán es el más alto del mundo: 45.7 metros con su base. Fue mandado construir por Tutmosis III alrededor del 1400 a.C. Y tardó más de un siglo en completarse. Llegó a Roma en el 357 d.C. Se cayó durante las invasiones bárbaras, fue redescubierto en tres fragmentos en el siglo XVI, y restaurado por Sixto V en 1588. ¡Tiene 3,400 años y sigue en pie!',
-      'Los romanos no solo se llevaron obeliscos â€”también aprendieron a construir los suyos. Pero nunca lograron igualar la técnica egipcia de tallar monolitos de una sola pieza. Los obeliscos romanos son más pequeños y a veces están hechos de varias piezas ensambladas. ¡Como intentar copiar la tarea del mejor alumno, pero sin entender bien las instrucciones!',
+    "id": "roma-obeliscos",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_luxor-temple.webp",
+    "title": "Roma: Ciudad de Obeliscos",
+    "color": "#D4674A",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_roma.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_roma.webp",
+    "content": [
+      "Tras la derrota militar de Cleopatra VII y Marco Antonio en la batalla de Actium en el año treinta y uno antes de Cristo y la posterior anexión de Egipto como provincia imperial romana, los emperadores de Roma quedaron profundamente deslumbrados por la majestad y la tecnología astronómica de los obeliscos faraónicos. Estos gigantes de granito encarnaban el poder absoluto, la antigüedad milenaria y el dominio sobre el tiempo.",
+      "El primer emperador, César Augusto, inauguró la moda imperial en el año diez antes de nuestra era ordenando el traslado marítimo de dos gigantescos obeliscos desde Heliópolis hasta Roma. Uno de ellos fue erigido en la espina central del Circo Máximo (hoy obelisco Flaminio en la Piazza del Popolo), mientras que el segundo fue levantado en el Campo de Marte para servir como el gigantesco gnomon del célebre «Horologium Augusti».",
+      "El Horologium Augusti, diseñado por el matemático Facundus Novus, utilizaba el obelisco de granito de treinta metros como puntero solar central de una inmensa plaza circular pavimentada con travertino e incrustaciones de bronce dorado. Sobre este cuadrante geodésico, la sombra del obelisco señalaba no solo las horas del día, sino también el signo zodiacal del mes, la duración de las estaciones y el avance exacto del año juliano recién reformado.",
+      "Para transportar estos colosos a través del mar Mediterráneo, los ingenieros navales romanos construyeron barcos de carga monstruosos impulsados por cientos de remeros, con cascos reforzados de roble y miles de ánforas de grano usadas como lastre estabilizador. Posteriormente, emperadores como Calígula, Nerón, Domiciano y Constantino continuaron transportando obeliscos para embellecer los foros, circos y templos de Isis en la capital imperial.",
+      "En una paradoja histórica fascinante, hoy en día la ciudad de Roma posee más obeliscos egipcios antiguos en pie que ninguna otra urbe del planeta, incluido el propio Egipto. Un total de trece obeliscos históricos coronan las plazas más emblemáticas de la Ciudad Eterna, como San Pedro en el Vaticano, San Juan de Letrán y la Piazza Navona, funcionando como testigos eternos del intercambio cultural y científico entre el Nilo y el Tíber."
     ],
-    fact: 'Mover el obelisco de la Plaza de San Pedro en 1586 fue tan peligroso que el papa Sixto V prohibió a la multitud hacer ruido bajo pena de muerte. Cuando las cuerdas empezaron a calentarse por la fricción y estaban a punto de romperse, un marinero gritó: "¡Agua a las cuerdas!" Su grito salvó el obelisco y el papa le perdonó la vida. ¡Su familia recibió el privilegio de suministrar las palmas del Domingo de Ramos al Vaticano durante 400 años!',
+    "fact": "La ciudad de Roma alberga trece obeliscos egipcios antiguos monumentales; entre ellos destaca el de San Juan de Letrán, erigido originalmente por Tutmosis III en Karnak, con una altura de treinta y dos metros y ciento ocho centímetros y un peso de cuatrocientas cincuenta y cinco toneladas, siendo el mayor obelisco erigido en pie que sobrevive del mundo faraónico.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El obelisco de San Pedro en el Vaticano, traído de Alejandría por Calígula en el año 37 d.C., es el único de Roma que nunca llegó a desplomarse durante la Edad Media; en 1586, el papa Sixto V encomendó al arquitecto Domenico Fontana su traslado de doscientos metros mediante novecientos hombres y ciento cuarenta caballos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las excavaciones arqueológicas de 1979 en el Campo de Marte desenterraron una sección intacta de la cuadrícula de bronce del Horologium Augusti. El bronce original contiene letras griegas que indican los vientos estacionales y marcas astronómicas calibradas para la latitud de Roma (41° 53' N), confirmando el sofisticado empleo urbanístico y propagandístico del obelisco egipcio importado por Augusto."
+      }
+    ]
   },
   {
-    id: 'aguja-cleopatra',
-              bannerImage: '/assets/egypt/infographic_m12/banner_obelisco-origen.webp',
-    title: 'La Aguja de Cleopatra',
-    color: '#9B59B6',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_aguja.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_aguja.webp',
-    content: [
-      '¿Sabías que hay obeliscos egipcios en Nueva York, Londres y París? Se llaman "Agujas de Cleopatra", aunque la reina Cleopatra no tuvo nada que ver con ellos â€”¡fueron construidos 1,500 años antes de que ella naciera! El nombre se lo pusieron los europeos porque Cleopatra era la única egipcia que conocían.',
-      'El obelisco de Nueva York está en Central Park. Tiene 3,500 años y fue tallado por orden del faraón Tutmosis III en Heliópolis. Egipto lo regaló a Estados Unidos en 1879 para celebrar la inauguración del Canal de Suez. Transportarlo desde Alejandría hasta Manhattan tomó 112 días â€”cruzó el Atlántico en un barco de vapor y rodó por las calles de Nueva York sobre rieles.',
-      'Debajo del obelisco de Nueva York, los ingenieros colocaron una cápsula del tiempo con objetos de la época: monedas americanas, un censo de los EE.UU. Ejemplares del periódico New York Tribune, una foto del presidente Grant, y una guía turística de Egipto. ¡Es un cofre del tesoro moderno bajo un monumento de 3,500 años!',
-      'El obelisco de Londres está en el Embankment del Támesis. Su viaje en 1877 fue épico: la barcaza que lo transportaba casi se hunde en una tormenta en el Golfo de Vizcaya. Seis marineros murieron intentando rescatarla. El obelisco fue abandonado a la deriva durante días antes de ser recuperado. ¡Sobrevivió 3,500 años en Egipto y casi se pierde en el Atlántico!',
-      'El obelisco de París, en la Plaza de la Concordia, es el que mejor se conserva. Fue un regalo del gobernante egipcio Mehmet Alí a Francia en 1829. Es uno de los dos obeliscos que estaban en la entrada del Templo de Luxor. El otro sigue en Egipto â€”Francia devolvió simbólicamente sus derechos sobre él en 1981. Hoy hay 25 obeliscos egipcios en pie en todo el mundo, pero ninguno de los grandes está en su ubicación original.',
+    "id": "aguja-cleopatra",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_obelisco-origen.webp",
+    "title": "La Aguja de Cleopatra",
+    "color": "#9B59B6",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_aguja.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_aguja.webp",
+    "content": [
+      "Bajo la célebre denominación popular de «Agujas de Cleopatra» se conocen tres espectaculares obeliscos egipcios gemelos que hoy se alzan en tres de las metrópolis más influyentes del mundo occidental: Londres, París y Nueva York. A pesar de su nombre romántico decimonónico, estas tres agujas de granito rojo no fueron talladas durante el reinado de la última reina ptolemaica, sino forjadas más de mil cuatrocientos años antes por los reyes guerreros de la Dinastía XVIII.",
+      "Los obeliscos de Londres y Nueva York formaban originalmente una pareja simétrica erigida hacia el año 1450 antes de Cristo por orden del faraón Tutmosis III ante el gran templo solar de Ra en Heliópolis, la legendaria Ciudad del Sol. Dos siglos más tarde, Ramsés II añadió inscripciones jeroglíficas en las columnas laterales para conmemorar sus victorias militares. En el año doce antes de Cristo, el emperador Augusto los trasladó al Cesáreo de Alejandría.",
+      "A finales del siglo diecinueve, el virrey de Egipto Mehmet Alí y sus sucesores donaron estos monumentos a los gobiernos de Gran Bretaña y Estados Unidos como agradecimiento por relaciones comerciales y diplomáticas. La travesía náutica del obelisco de Londres en 1877 fue dramática: fue transportado dentro de un buque de hierro flotante cilíndrico bautizado como Cleopatra, que casi zozobró en una tormenta en el golfo de Vizcaya antes de ser erigido en el Victoria Embankment junto al Támesis.",
+      "El obelisco gemelo de Nueva York fue transportado en 1880 a bordo del vapor Dessoug por el ingeniero naval Henry Gorringe. Tras cruzar el Atlántico, el coloso de doscientas veinte toneladas fue arrastrado mediante rodillos y cabrestantes a vapor a través de las calles de Manhattan durante cuatro meses agonizantes hasta su emplazamiento definitivo en una colina de Central Park, justo detrás del Museo Metropolitano de Arte.",
+      "Por su parte, el obelisco de París que preside la emblemática Place de la Concorde procede de la entrada monumental del templo de Luxor, donado a Francia en 1830. Estas tres agujas milenarias actúan hoy como embajadores eternos de la civilización faraónica en el corazón del mundo contemporáneo, proyectando sus sombras solares sobre millones de transeúntes del siglo veintiuno tal como lo hacían en las orillas del Nilo."
     ],
-    fact: 'El clima de Nueva York ha dañado más la Aguja de Cleopatra en 140 años que 3,500 años de desierto egipcio. La lluvia ácida, la contaminación y los ciclos de hielo-deshielo han borrado casi todos los jeroglíficos del lado oeste. En Egipto, el aire seco y caliente conservaba la piedra perfectamente. ¡La contaminación moderna es peor enemiga de la piedra que 35 siglos de arena del Sahara!',
+    "fact": "La Aguja de Cleopatra en Central Park de Nueva York mide veintiún metros y veintiún centímetros de altura con un peso de doscientas veinticuatro toneladas, tallada en granito sienita rosa de Asuán y fechada arqueológicamente en el reinado de Tutmosis III hacia el 1460 a.C., habiendo superado con éxito una compleja travesía trasatlántica a vapor en 1880.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Bajo la base de granito del obelisco de Londres, los ingenieros victorianos enterraron en 1878 una cápsula del tiempo de plomo que contenía un juego completo de monedas británicas, una biblia en varios idiomas, fotografías de las doce mujeres inglesas más bellas de la época y un retrato de la reina Victoria."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La atmósfera industrial y el hielo de Nueva York erosionaron más la superficie de granito de la aguja de Central Park en sus primeros cincuenta años de estancia americana que tres mil años de intemperie en el desierto egipcio, obligando a los conservadores a aplicar consolidantes poliméricos de resina sintética."
+      }
+    ]
   },
   {
-    id: 'eratostenes',
-              bannerImage: '/assets/egypt/infographic_m12/banner_tutankhamun-tumba.webp',
-    title: 'Midiendo la Tierra',
-    color: '#1ABC9C',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_eratostenes.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_eratostenes.webp',
-    content: [
-      '¿Puedes medir el tamaño de la Tierra con un palo y una sombra? ¡Eratóstenes lo hizo hace 2,250 años! Este genio griego que vivía en Alejandría (Egipto) usó el mismo principio del obelisco â€”medir sombrasâ€” para calcular la circunferencia de nuestro planeta con una precisión asombrosa.',
-      'Eratóstenes se enteró de que en la ciudad de Siena (hoy Asuán), al mediodía del solsticio de verano, el Sol estaba justo encima: un palo vertical no proyectaba sombra y la luz del sol llegaba hasta el fondo de un pozo profundo. Pero en Alejandría, a 800 km al norte, un palo SÍ proyectaba sombra al mediodía del mismo día. ¿Por qué la diferencia?',
-      'La respuesta era simple pero revolucionaria: ¡la Tierra es redonda! Si fuera plana, la sombra sería igual en ambas ciudades. Eratóstenes midió el ángulo de la sombra en Alejandría: 7.2 grados, que es 1/50 de un círculo completo (360°). Si Siena y Alejandría estaban separadas por 800 km, entonces la circunferencia total de la Tierra sería 800 × 50 = 40,000 km.',
-      '¿Y cuál es la circunferencia real de la Tierra? ¡40,075 km! Eratóstenes acertó con un error de menos del 1%. Usando solo un palo, una sombra y geometría básica, un hombre calculó el tamaño del planeta entero hace 2,250 años. ¡Ni siquiera necesitó una calculadora!',
-      'Los egipcios le dieron a Eratóstenes las herramientas para su descubrimiento: el gnomon (una varilla vertical para medir sombras) era la versión portátil del obelisco. Los sacerdotes egipcios usaban gnomones desde hacía 2,000 años antes de Eratóstenes para calcular la latitud de diferentes ciudades midiendo la sombra del mediodía. ¡La ciencia egipcia del obelisco permitió medir la Tierra!',
+    "id": "eratostenes",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_tutankhamun-tumba.webp",
+    "title": "Midiendo la Tierra",
+    "color": "#1ABC9C",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_eratostenes.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_eratostenes.webp",
+    "content": [
+      "El uso de los obeliscos y los pilares gnomónicos como instrumentos geodésicos de precisión alcanzó su cumbre intelectual en el siglo tercero antes de nuestra era gracias al genio matemático y geográfico de Eratóstenes de Cirene. Como tercer director de la célebre Biblioteca de Alejandría, Eratóstenes combinó la observación astronómica empírica con la geometría euclidiana pura para lograr una hazaña asombrosa: calcular el tamaño del planeta Tierra.",
+      "Eratóstenes leyó en un manuscrito de la biblioteca que en la ciudad de Siene (la actual Asuán), situada junto a la Primera Catarata del Nilo, ocurría un fenómeno extraordinario al mediodía del solsticio de verano (veintiuno de junio). En ese instante exacto, los pilares verticales y las columnas de los templos no proyectaban sombra alguna sobre el suelo, y la luz solar descendía en línea vertical hasta el fondo de los pozos de agua más profundos.",
+      "Comprendiendo que en Siene el Sol se encontraba exactamente en el cénit celeste (a noventa grados sobre el horizonte), Eratóstenes midió al mediodía del mismo día del solsticio de verano la sombra proyectada por un gnomon vertical u obelisco en la ciudad de Alejandría, situada al norte de Siene sobre el mismo meridiano. Comprobó que en Alejandría el gnomon proyectaba una sombra cuyo ángulo respecto a la vertical era de siete coma dos grados.",
+      "Aplicando el teorema geométrico de los ángulos alternos internos formados por una línea secante que cruza dos líneas paralelas (los rayos del Sol), Eratóstenes dedujo que el ángulo de siete coma dos grados en la cúspide del obelisco era exactamente igual al ángulo subtendido en el centro de la Tierra entre las ciudades de Siene y Alejandría. Dado que una circunferencia completa tiene trescientos sesenta grados, siete coma dos grados representa una cincuentava parte del total (360 / 7,2 = 50).",
+      "Bastaba multiplicar la distancia terrestre entre ambas ciudades por cincuenta para obtener la circunferencia planetaria. Mediante las mediciones profesionales de los «bematistas» reales (agrimensores que contaban pasos calibrados), Eratóstenes estimó la distancia en cinco mil estadios egipcios. Su cálculo final arrojó una circunferencia de doscientos cincuenta mil estadios, equivalente a unos treinta y nueve mil trescientos setenta y cinco kilómetros modernos: un error menor al dos por ciento."
     ],
-    fact: 'Eratóstenes también inventó un método para encontrar números primos llamado "la criba de Eratóstenes" que todavía se enseña en las escuelas. Era bibliotecario de la Biblioteca de Alejandría, la más grande del mundo antiguo. ¡Un solo hombre midió la Tierra, organizó todo el conocimiento humano, y creó un método matemático que usamos 2,250 años después!',
+    "fact": "En el año 240 a.C., Eratóstenes de Cirene calculó la circunferencia terrestre utilizando la sombra de un gnomon de siete coma dos grados (1/50 de circunferencia) y la distancia de cinco mil estadios entre Alejandría y Asuán, logrando una precisión superior al 98 %, sentando las bases fundacionales de la geodesia y la cartografía matemática de la historia humana.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los bematistas del Egipto ptolemaico eran agrimensores del Estado altamente entrenados para medir distancias kilométricas con pasos idénticos y cuerdas de agrimensura calibradas tratadas con cera para evitar que la humedad variara la longitud de las fibras de lino durante el censo fiscal, permitiendo un trazado catastral de tierras de cultivo de una precisión geométrica sin precedentes en el Nilo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La circunferencia polar de la Tierra medida por satélites geodésicos modernos es de cuarenta mil ocho kilómetros. El cálculo de Eratóstenes (equivalente a 39.375 km si se usa el estadio egipcio estándar de 157,5 metros) constituye una de las mayores hazañas científicas de la historia de la humanidad sin tecnología óptica."
+      }
+    ]
   },
   {
-    id: 'legado-tiempo',
-              bannerImage: '/assets/egypt/infographic_m12/banner_valley-kings.webp',
-    title: 'Del Obelisco al Reloj Atómico',
-    color: '#E67E22',
-    btnImage: '/assets/egypt/infographic_obeliscos/btn_legado.webp',
-    image: '/assets/egypt/infographic_obeliscos/hero_legado.webp',
-    content: [
-      'El obelisco fue el primer eslabón de una cadena increíble que conecta la antigüedad con tu teléfono celular. Cada vez que miras la hora en tu celular, estás usando tecnología que comenzó con una sombra de piedra en el desierto hace 4,000 años. ¡Veamos cómo el obelisco se convirtió en el reloj atómico!',
-      'Los egipcios midieron el tiempo con sombras â†’ los griegos mejoraron los relojes solares con matemáticas â†’ los romanos construyeron relojes de agua (clepsidras) para medir el tiempo de noche â†’ los monjes medievales inventaron los relojes mecánicos con engranajes para saber cuándo rezar â†’ los holandeses inventaron el reloj de péndulo (1656) â†’ los suizos perfeccionaron los relojes de bolsillo.',
-      'En 1927, Warren Marrison inventó el reloj de cuarzo: un cristal que vibra exactamente 32,768 veces por segundo cuando le aplicas electricidad. Esas vibraciones son tan constantes que el reloj solo se desfasa 1 segundo cada 10 años. ¡Tu reloj de pulsera digital usa esta misma tecnología!',
-      'En 1955, Louis Essen inventó el reloj atómico de cesio: los átomos de cesio vibran exactamente 9,192,631,770 veces por segundo. Es tan preciso que se desfasa solo 1 segundo cada 300 millones de años. Los satélites GPS usan relojes atómicos â€”si fueran menos precisos, tu ubicación en Google Maps se desviaría 10 km cada día.',
-      'Piénsalo: los sacerdotes egipcios necesitaban saber la hora para coordinar rituales, predecir la crecida del Nilo y plantar cultivos. Esa necesidad impulsó la invención de instrumentos cada vez más precisos durante 4,000 años. El obelisco que medía la sombra del sol es el tatara-tatara-tatara-abuelo del reloj atómico de tu celular. ¡La próxima vez que mires la hora, agradécele a un sacerdote egipcio!',
+    "id": "legado-tiempo",
+    "bannerImage": "/assets/egypt/infographic_m12/banner_valley-kings.webp",
+    "title": "Del Obelisco al Reloj Atómico",
+    "color": "#E67E22",
+    "btnImage": "/assets/egypt/infographic_obeliscos/btn_legado.webp",
+    "image": "/assets/egypt/infographic_obeliscos/hero_legado.webp",
+    "content": [
+      "La búsqueda de la medición exacta del tiempo iniciada hace más de cuatro mil años frente a los obeliscos de granito de Tebas y Heliópolis constituye uno de los hilos conductores más fascinantes de la historia de la tecnología universal. La necesidad de regular las liturgias sagradas, organizar la irrigación de los campos y predecir los ciclos celestes impulsó a la mente humana a buscar patrones periódicos cada vez más fiables y estables en la naturaleza.",
+      "Desde aquellos primeros gnomones solares de piedra que dependían inevitablemente de la presencia de un cielo despejado, la civilización egipcia dio el siguiente salto tecnológico creando la clepsidra o reloj de agua. Halladas en Karnak en el siglo catorce antes de Cristo, estas vasijas cónicas de alabastro graduadas permitían medir las horas de la noche cronometrando el goteo constante de agua líquida a través de un orificio de bronce perforado en su base.",
+      "Siglos más tarde, en la Europa medieval y renacentista, los principios geométricos de los gnomones egipcios se combinaron con la mecánica de precisión mediante la invención del escape mecánico, los engranajes dentados y el péndulo oscilante de Galileo Galilei y Christiaan Huygens. La medición del tiempo se independizó definitivamente de la astronomía directa, trasladándose del patio del templo al interior de los campanarios de las catedrales.",
+      "En el siglo veinte, la revolución tecnológica de la electrónica sustituyó los péndulos mecánicos por las vibraciones piezoeléctricas ultrarrápidas de pequeños cristales de cuarzo mineral, capaces de oscilar con frecuencias regulares de treinta y dos mil setecientos sesenta y ocho ciclos por segundo. El tiempo pasó a medirse no en horas solares variables, sino en fracciones de segundo inmutables en chips de silicio.",
+      "Hoy en día, la cúspide de la cronometría reside en los relojes atómicos de cesio-133 y en las fuentes atómicas ópticas de estroncio, que definen el segundo internacional mediante la frecuencia de transición hiperfina del átomo (nueve mil ciento noventa y dos millones seiscientos treinta y un mil setecientos setenta hercios). Aunque la precisión actual mide la milmillonésima de segundo, el impulso intelectual sigue siendo idéntico al de aquel sacerdote de Ra que observaba la sombra del obelisco."
     ],
-    fact: 'El reloj atómico más preciso del mundo (el reloj óptico de iterbio del NIST) se desfasaría menos de 1 segundo en 15 mil millones de años â€”¡más que la edad del universo! Los egipcios empezaron esta carrera de precisión hace 4,000 años con un bloque de granito y una sombra.',
-  },
+    "fact": "La evolución cronométrica humana abarca desde el gnomon de granito de Heliópolis con un margen de error de diez minutos, pasando por la clepsidra de Karnak del 1380 a.C. con margen de dos minutos, hasta los relojes atómicos modernos con error menor a un nanosegundo cada mil años, demostrando la incesante búsqueda humana por medir con exactitud los latidos del cosmos.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La clepsidra de alabastro más antigua conocida fue descubierta en el templo de Amun en Karnak y data del reinado de Amenhotep III (c. 1380 a.C.); cuenta con doce columnas de puntos en su interior para medir las diferentes longitudes de las doce horas nocturnas a lo largo de los doce meses del año, resolviendo con genialidad hidrodinámica el problema de la duración variable de las horas estacionales en Egipto."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El reloj atómico de fuente de cesio NIST-F2 del Instituto Nacional de Estándares de Estados Unidos tiene una incertidumbre de frecuencia de un segundo cada trescientos millones de años, enfriando los átomos de cesio hasta casi el cero absoluto (-273,15 °C) mediante rayos láser cruzados, marcando la cúspide tecnológica de la precisión horaria desarrollada por la humanidad desde la antigüedad egipcia."
+      }
+    ]
+  }
 ];
 
 // â”€â”€â”€ Sand Particle Field â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

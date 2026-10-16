@@ -140,144 +140,207 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'metodo-cientifico',
-    title: 'El Método Científico',
-    color: '#6EC6FF',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_metodo.webp',
-    image: '/assets/bttf/infographic_biotecnologia/hero_metodo.webp',
-    content: [
-      'El Método Científico es un proceso sistemático para realizar descubrimientos. Es una serie de pasos que asegura que los resultados sean comprobables y precisos.',
-      'El proceso comienza con una observación y la formulación de una hipótesis (una posible explicación). Luego, se diseña un experimento para probar esta hipótesis, durante el cual se recopilan datos y medidas.',
-      'Después se analizan los datos recopilados para determinar si apoyan o contradicen la hipótesis original, permitiendo formular una conclusión. Los experimentos fallidos también aportan información útil para ajustar teorías.',
-      'El último paso es la verificación. Un experimento debe ser reproducible por otros investigadores para confirmar su validez. Así se construye el conocimiento científico.'
+    "id": "metodo-cientifico",
+    "title": "El Método Científico",
+    "color": "#6EC6FF",
+    "btnImage": "/assets/bttf/infographic_biotecnologia/btn_metodo.webp",
+    "image": "/assets/bttf/infographic_biotecnologia/hero_metodo.webp",
+    "content": [
+      "En la cinematografía de Hollywood, los descubrimientos científicos trascendentales suelen representarse como momentos mágicos de iluminación repentina: el doctor Emmett Brown resbala en el baño, se golpea la cabeza contra el inodoro y al despertar tiene la revelación instantánea del condensador de flujo dibujada en su mente. Esta divertida convención narrativa simplifica el proceso creador. En la ciencia real, sin embargo, el progreso no nace de accidentes cómicos, sino de la disciplina rigurosa del método científico.",
+      "El método científico moderno, consolidado a partir del siglo XVII por figuras monumentales como Francis Bacon, Galileo Galilei y René Descartes, es un sistema estructurado de indagación empírica basado en la observación sistemática, la medición cuantitativa, la formulación de hipótesis contrastables, la experimentación rigurosa y la revisión continua por pares independientes de la comunidad internacional.",
+      "La verdadera genialidad del Doc Brown no reside en su excentricidad visual ni en sus cabellos desordenados, sino en su adhesión apasionada a los principios experimentales. Cuando un experimento falla —como cuando el transformador eléctrico estalla en su garaje o el plutonio se agota en el aparcamiento—, el científico no se rinde ni recurre al pensamiento mágico: analiza minuciosamente los datos empíricos de los instrumentos, recalibra sus aparatos y rediseña sus modelos matemáticos.",
+      "Uno de los pilares más cruciales del método científico es el principio de falsabilidad, establecido por el filósofo de la ciencia Karl Popper en el siglo XX. Una afirmación solo puede considerarse genuinamente científica si es susceptible de ser puesta a prueba mediante observaciones o experimentos que puedan demostrar potencialmente su falsedad. Si una teoría no puede ser contrastada o refutada mediante datos medibles en laboratorio, pertenece al campo de la creencia o la pseudociencia.",
+      "La ciencia avanza cuestionando sin descanso los dogmas establecidos y reconociendo abiertamente los propios errores ante la evidencia factual. Para los jóvenes estudiantes y futuros investigadores, el espíritu del Doc Brown encarna la mayor virtud del quehacer científico: la curiosidad insaciable, el coraje para formular preguntas audaces sobre el cosmos y la humildad para someter cada hipótesis al juicio inapelable de la naturaleza."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown encarna el método científico a la perfección. Cuando prueba el DeLorean por primera vez en el centro comercial Twin Pines, graba todo el experimento, usa a Einstein (su perro) para la primera prueba con un reloj sincronizado, observa los resultados (el reloj de Einstein está atrasado 1 minuto), analiza los datos y concluye que el viaje en el tiempo es posible.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El filósofo y científico Alhacén (Ibn al-Haytham), en el siglo XI, fue uno de los primeros en usar un método experimental para comprobar teorías. Usó experimentos controlados para demostrar que la luz viaja en línea recta y entra a nuestros ojos, cambiando para siempre la forma en que entendemos la óptica.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La célebre maqueta a escala de la plaza de Hill Valley construida por el Doc Brown en 1955 para planificar el salto temporal con el rayo es un ejemplo magnífico de modelado experimental. El Doc se disculpa cómicamente ante Marty diciendo: «Por favor, perdona que esté a escala tan burda y no esté pintada», demostrando su rigor artesanal obsesivo incluso ante maquetas caseras de cartón."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El filósofo Karl Popper publicó en 1934 su obra cumbre La lógica de la investigación científica, donde demostró que ninguna cantidad finita de observaciones empíricas positivas puede verificar definitivamente una teoría universal (como afirmar que «todos los cisnes son blancos»), pero una sola observación negativa genuina (un cisne negro) basta para refutarla de forma concluyente."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_metodo-cientifico.webp',
-    bannerCaption: 'El método científico: el motor del progreso y del pensamiento crítico',
-    fact: 'El método científico no es solo para laboratorios; ¡lo usas todos los días! Cuando intentas encender una lámpara y no funciona (observación), piensas que el foco está fundido (hipótesis), cambias el foco por uno nuevo (experimento), y si la luz enciende, tu conclusión es que tenías razón.'
+    "bannerImage": "/assets/bttf/infographic_m7/banner_metodo-cientifico.webp",
+    "bannerCaption": "El método científico: el motor del progreso y del pensamiento crítico",
+    "fact": "Galileo Galilei publicó en 1632 su Diálogo sobre los dos máximos sistemas del mundo, fundamentando el método experimental al medir sistemáticamente la caída libre de esferas de bronce en planos inclinados de madera pulida utilizando relojes de agua clepsidras para registrar el tiempo con una precisión de décimas de segundo, sentando las bases de la física moderna."
   },
   {
-    id: 'electricidad',
-    title: 'Electricidad y Rayos',
-    color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_electricidad.webp',
-    image: '/assets/bttf/infographic_biotecnologia/hero_electricidad.webp',
-    content: [
-      'Un rayo es una descarga de electricidad estática. Durante una tormenta, las partículas en las nubes chocan, creando una carga eléctrica. Cuando la carga es suficiente, busca el camino más corto hacia el suelo.',
-      'La energía de un rayo transporta millones de voltios y alcanza temperaturas de hasta 30,000 grados Celsius. Este calor expande el aire de golpe, generando el sonido del trueno.',
-      'En 1752, el experimento de la cometa de Benjamin Franklin demostró que los rayos comparten la misma naturaleza que la electricidad estática.',
-      'Aunque la electricidad alimenta el mundo moderno, capturar la energía de un rayo natural sigue siendo ineficiente con la tecnología actual debido a su imprevisibilidad.'
+    "id": "electricidad",
+    "title": "Electricidad y Rayos",
+    "color": "#FFD740",
+    "btnImage": "/assets/bttf/infographic_biotecnologia/btn_electricidad.webp",
+    "image": "/assets/bttf/infographic_biotecnologia/hero_electricidad.webp",
+    "content": [
+      "El clímax dramático de la primera película es una de las secuencias más electrizantes del cine contemporáneo: una colosal tormenta eléctrica azota Hill Valley a las 10:04 de la noche, y un rayo descomunal impacta la veleta de bronce de la torre del reloj transmitiendo 1,21 gigavatios de energía directa hacia el condensador de flujo a través de un cable conductor. La escena sintetiza de manera espectacular el asombro y la furia indómita que la electricidad atmosférica ha despertado en la humanidad desde tiempos inmemoriales.",
+      "Un rayo no es un fenómeno mágico, sino una gigantesca descarga electrostática natural que ocurre en la atmósfera entre regiones con cargas eléctricas opuestas dentro de una nube de tormenta cumulonimbus o entre la base de la nube y el suelo terrestre. Durante una tormenta severa, las violentas corrientes térmicas ascendentes provocan continuas colisiones microscópicas entre cristales de hielo y granizo blando o graupel, separando las cargas eléctricas por efecto triboeléctrico.",
+      "Las partículas de hielo más ligeras con carga positiva ascienden hacia la cima de la nube a más de doce kilómetros de altitud, mientras que el granizo más pesado y cargado negativamente se acumula en la base inferior. Cuando la diferencia de potencial eléctrico entre la base de la nube y la superficie de la Tierra supera la rigidez dieléctrica del aire seco (aproximadamente tres millones de voltios por metro lineal), el aire se ioniza violentamente transformándose en un canal conductor de plasma incandescente.",
+      "La descarga de retorno principal asciende desde el suelo a través de este canal de plasma a velocidades asombrosas que superan los cien mil kilómetros por segundo (un tercio de la velocidad de la luz). La corriente eléctrica extrema calienta el aire circundante en fracciones de microsegundo hasta temperaturas astronómicas de casi treinta mil grados Celsius —cinco veces más caliente que la superficie visible del Sol—, provocando una expansión térmica explosiva del aire que genera la onda de choque acústica que llamamos trueno.",
+      "Intentar canalizar la energía de un rayo real para alimentar un aparato tecnológico como hace el Doc Brown en la película es uno de los mayores retos de la ingeniería de alta tensión. La naturaleza caótica, la duración infinitesimal de pocos microsegundos y la intensidad de corriente brutal de hasta doscientos mil amperios de un rayo fundirían cualquier cable convencional de cobre no dimensionado adecuadamente, justificando el monumental desafío técnico afrontado en la ficción."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Para viajar en el tiempo, el condensador de flujo necesita 1.21 gigawatts de potencia. Al no poder conseguir plutonio en 1955, Doc Brown canaliza la energía del rayo que cae en la torre del reloj directamente al DeLorean. Esta es una representación brillante, aunque exagerada, de intentar aprovechar la inmensa energía de la naturaleza.' },
-      { label: 'Dato Científico', icon: 'atom', text: '1.21 Gigawatts es una cantidad colosal de energía. Para generar tanta electricidad de forma continua, necesitarías aproximadamente 3.1 millones de paneles solares funcionando a pleno rendimiento, o la producción combinada de varios reactores nucleares comerciales. ¡Y un solo relámpago lo hace en fracciones de segundo!' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Durante la filmación de la secuencia de la torre del reloj, el actor Christopher Lloyd realizó personalmente la mayoría de las arriesgadas maniobras colgado de cables de seguridad en la cornisa del edificio de la plaza de Universal Studios. La intensa lluvia artificial, el viento forzado de hélices industriales y los relámpagos estroboscópicos convirtieron ese rodaje nocturno en uno de los más extenuantes de su carrera."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La rigidez dieléctrica del aire atmosférico representa el campo eléctrico límite que el gas puede soportar antes de romperse y volverse conductor. En condiciones estándar de presión y temperatura a nivel del mar, este umbral físico se sitúa en torno a 3 x 10 elevado a 6 voltios por metro; al superarse este valor crítico, los electrones se arrancan de las moléculas creando el canal de plasma."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_electricidad.webp',
-    bannerCaption: 'La revolución eléctrica: de la vela al LED y la transmisión inalámbrica',
-    fact: 'Existen relámpagos que no van hacia el suelo, sino hacia arriba. Conocidos como "Duendes Rojos" (Red Sprites) y "Chorros Azules" (Blue Jets), estas misteriosas descargas eléctricas ocurren muy por encima de las nubes de tormenta, alcanzando hasta el borde del espacio.'
+    "bannerImage": "/assets/bttf/infographic_m7/banner_electricidad.webp",
+    "bannerCaption": "La revolución eléctrica: de la vela al LED y la transmisión inalámbrica",
+    "fact": "La red global de detección de rayos de satélites meteorológicos registra en promedio entre 40 y 50 impactos de rayos por segundo en todo el planeta Tierra, sumando más de 1.400 millones de descargas eléctricas atmosféricas anuales; el lago de Maracaibo en Venezuela ostenta el récord planetario con hasta 250 rayos por kilómetro cuadrado al año debido a sus singulares tormentas del Catatumbo."
   },
   {
-    id: 'guerra-corrientes',
-    title: 'La Guerra de Corrientes',
-    color: '#FF8A80',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_corrientes.webp',
-    image: '/assets/bttf/infographic_biotecnologia/hero_corrientes.webp',
-    content: [
-      'A finales del siglo XIX, Thomas Edison y Nikola Tesla compitieron en la "Guerra de las Corrientes" para establecer el estándar del sistema de transmisión eléctrica comercial.',
-      'Thomas Edison defendía la Corriente Continua (DC), un sistema donde la electricidad fluye en una sola dirección. Su principal limitación era la pérdida de energía al transmitirse a largas distancias.',
-      'Nikola Tesla propuso la Corriente Alterna (AC), que invierte su dirección continuamente. Este sistema permitía usar transformadores para elevar el voltaje y transmitir la energía a grandes distancias con eficiencia.',
-      'El sistema de Corriente Alterna triunfó para la distribución eléctrica a gran escala. En la actualidad, usamos AC en la red eléctrica y DC en baterías y dispositivos electrónicos.'
+    "id": "guerra-corrientes",
+    "title": "La Guerra de Corrientes",
+    "color": "#FF8A80",
+    "btnImage": "/assets/bttf/infographic_biotecnologia/btn_corrientes.webp",
+    "image": "/assets/bttf/infographic_biotecnologia/hero_corrientes.webp",
+    "content": [
+      "En el laboratorio del Doc Brown coexisten cables de alta tensión, bobinas electromagnéticas, transformadores zumbantes e interruptores industriales con aisladores cerámicos que parecen salidos de la época dorada de la electrificación urbana. La estética del taller del científico rinde homenaje indirecto a uno de los episodios más apasionantes y encarnizados de la historia de la ciencia y la tecnología moderna: la legendaria Guerra de las Corrientes librada a finales del siglo XIX.",
+      "A finales de la década de 1880, Estados Unidos y Europa se encontraban en plena transición hacia la electrificación masiva de sus metrópolis industriales. Thomas Alva Edison defendía con uñas y dientes el monopolio comercial de la corriente continua (CC), donde el flujo de electrones viaja en una sola dirección constante a voltajes relativamente bajos. Edison había desplegado las primeras centrales eléctricas urbanas con dinamos de vapor, pero se enfrentaba a una limitación física insalvable: no podía transportar la electricidad a más de dos kilómetros sin pérdidas energéticas gigantescas.",
+      "En la otra acera se alzaban el genial inventor serbio Nikola Tesla y el acaudalado empresario e ingeniero George Westinghouse, defensores pioneros de la corriente alterna (CA). En la corriente alterna, la dirección del flujo de electrones oscila periódicamente hacia adelante y hacia atrás muchas veces por segundo (habitualmente a cincuenta o sesenta hercios). La ventaja física decisiva de la corriente alterna residía en la invención del transformador eléctrico basado en la ley de inducción de Faraday.",
+      "Mediante transformadores de bobinas acopladas, la corriente alterna podía elevarse fácilmente a decenas de miles de voltios en la central generadora para ser transportada a través de cientos de kilómetros de tendidos eléctricos con mínimas pérdidas de energía por efecto Joule (P = I² · R). Al llegar a las ciudades o fábricas, otros transformadores reductores bajaban el voltaje a niveles seguros de 110 o 220 voltios para el consumo doméstico y el alumbrado público general.",
+      "La superioridad de la corriente alterna quedó consagrada definitivamente en 1893 cuando Westinghouse y Tesla iluminaron la Exposición Universal de Chicago con decenas de miles de bombillas de corriente alterna y construyeron en 1895 la primera gran central hidroeléctrica del mundo en las cataratas del Niágara, sentando la infraestructura tecnológica sobre la que descansa la red eléctrica global que hoy alimenta nuestros hogares, fábricas y ordenadores."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Doc Brown tiene mucho en común con Nikola Tesla. Ambos son genios excéntricos, inventores solitarios y algo incomprendidos por la sociedad de su tiempo, obsesionados con controlar grandes cantidades de energía. El enorme amplificador de guitarra en la casa de Doc y sus experimentos salvajes recuerdan el famoso laboratorio de Tesla en Colorado Springs.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Durante la Guerra de las Corrientes, Edison organizó demostraciones públicas donde electrocutaba animales usando corriente alterna para intentar asustar a la gente y convencerlos de que el sistema de Tesla era peligroso. A pesar de estas tácticas sucias, la eficiencia matemática y física del sistema de Tesla finalmente prevaleció.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La fascinación del Doc Brown por los pioneros de la electricidad se manifiesta en la decoración de su laboratorio de 1955: en la pared cuelgan retratos solemnes de cuatro gigantes de la ciencia que inspiraron su vocación experimental: Isaac Newton, Benjamin Franklin, Thomas Edison y Albert Einstein, reflejando su devoción por los genios de la física teórica y aplicada."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El efecto Joule, descubierto por el físico británico James Prescott Joule en 1841, establece que el calor generado por una corriente eléctrica en un conductor es proporcional al cuadrado de la intensidad de corriente multiplicado por la resistencia y el tiempo. Al elevar el voltaje diez veces mediante transformadores, la corriente se reduce diez veces y las pérdidas térmicas disminuyen cien veces."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_guerra-corrientes.webp',
-    bannerCaption: 'La guerra de las corrientes: Tesla vs Edison y la batalla del AC vs DC',
-    fact: 'Nikola Tesla soñaba con transmitir electricidad de forma inalámbrica a todo el planeta a través del aire y la tierra. Construyó la enorme Torre Wardenclyffe en Nueva York para probar esto, pero el proyecto se quedó sin fondos antes de completarse.'
+    "bannerImage": "/assets/bttf/infographic_m7/banner_guerra-corrientes.webp",
+    "bannerCaption": "La guerra de las corrientes: Tesla vs Edison y la batalla del AC vs DC",
+    "fact": "La histórica central hidroeléctrica de Edward Dean Adams en las cataratas del Niágara, inaugurada formalmente en agosto de 1895 con gigantescos alternadores bifásicos de 5.000 caballos de fuerza diseñados por Nikola Tesla y construidos por Westinghouse, transmitió por primera vez electricidad en alta tensión a la ciudad de Búfalo a más de 32 kilómetros de distancia en noviembre de 1896."
   },
   {
-    id: 'semiconductores',
-    title: 'Revolución Digital',
-    color: '#B388FF',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_semiconductores.webp',
-    image: '/assets/bttf/infographic_biotecnologia/hero_semiconductores.webp',
-    content: [
-      'El transistor, inventado en 1947, reemplazó a los frágiles tubos de vacío en las computadoras. Cumplía la misma función siendo más pequeño y emitiendo menos calor.',
-      'Un transistor funciona como un interruptor que controla el flujo de electricidad (representando un "1" o un "0"). Están fabricados con materiales semiconductores como el silicio.',
-      'La integración de múltiples transistores en un solo bloque de silicio dio origen al microchip. La "Ley de Moore" predijo que la cantidad de transistores en un circuito integrado se duplicaría aproximadamente cada dos años.',
-      'Esta reducción de tamaño permitió el desarrollo de los dispositivos electrónicos modernos, desde computadoras personales hasta teléfonos móviles.'
+    "id": "semiconductores",
+    "title": "Revolución Digital",
+    "color": "#B388FF",
+    "btnImage": "/assets/bttf/infographic_biotecnologia/btn_semiconductores.webp",
+    "image": "/assets/bttf/infographic_biotecnologia/hero_semiconductores.webp",
+    "content": [
+      "Cuando Marty McFly viaja a 1955, se encuentra con un mundo analógico dominado por radios de válvulas incandescentes, discos de vinilo de 78 revoluciones y enormes cajas registradoras de engranajes mecánicos. El Doc Brown de 1955 contempla con incredulidad el reproductor portátil de casetes de Marty y sus zapatillas deportivas modernas. Este contraste temporal refleja el impacto descomunal de la mayor transformación tecnológica de la historia humana reciente: la revolución digital basada en los semiconductores.",
+      "En la década de 1950, los ordenadores electrónicos como el ENIAC ocupaban salas enteras de cientos de metros cuadrados, consumían cientos de kilovatios de electricidad y utilizaban más de dieciocho mil válvulas de vacío o tubos termoiónicos que se fundían continuamente tras pocas horas de uso. El punto de inflexión definitivo ocurrió en los Laboratorios Bell en diciembre de 1947, cuando John Bardeen, Walter Brattain y William Shockley crearon el primer transistor de contacto de germanio del mundo.",
+      "Un semiconductor, como el silicio cristalino ultrapuro, es un material cuya conductividad eléctrica se sitúa entre la de un metal conductor y la de un aislante de vidrio. Mediante un proceso químico denominado «dopaje», consistente en introducir cantidades diminutas de impurezas de fósforo o boro en la red cristalina, los ingenieros pueden controlar el flujo de electrones con absoluta precisión, permitiendo que el transistor funcione como un diminuto interruptor electrónico binario sin piezas móviles.",
+      "En 1958, Jack Kilby en Texas Instruments y Robert Noyce en Fairchild Semiconductor dieron el salto decisivo al integrar múltiples transistores, resistencias y condensadores sobre una única oblea plana de silicio, naciendo el primer circuito integrado o microchip. En 1965, Gordon Moore formuló su célebre observación empírica: el número de transistores integrados en un microprocesador se duplicaría aproximadamente cada dos años, reduciendo su coste y disparando su velocidad de cálculo.",
+      "Hoy en día, un teléfono inteligente de bolsillo que cualquier estudiante lleva en su mochila contiene miles de millones de transistores microscópicos en un chip más pequeño que una uña, poseyendo una potencia de procesamiento miles de veces superior a todos los ordenadores combinados que utilizaron la NASA y el programa Apolo para llevar a los astronautas a la Luna en 1969, materializando un futuro digital que ni el propio Doc Brown sospechaba."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cuando el Doc de 1955 ve la videocámara JVC portátil de Marty, se sorprende por su tamaño y capacidad. En 1955, el transistor apenas comenzaba a usarse, y las cámaras de televisión eran enormes equipos de estudio que dependían de pesados tubos de vacío. ¡La videocámara de Marty era verdadera magia del futuro!' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los transistores modernos son tan pequeños que su tamaño se mide en nanómetros. Para que te hagas una idea, un cabello humano tiene un grosor de unos 80,000 nanómetros. Los transistores en los chips actuales pueden medir apenas 3 nanómetros de ancho. ¡Son casi a escala atómica!' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En Regreso al Futuro Parte III, ambientada en 1885, el circuito de control del tiempo del DeLorean se avería por un microchip quemado. El Doc Brown de 1885 debe fabricar un módulo de reemplazo artesanal utilizando válvulas de vacío termoiónicas de vidrio soplado montadas sobre el capó del coche en una enorme caja de madera con correas de cuero para sustituir al diminuto chip de 1985."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los transistores modernos de silicio han alcanzado la escala nanométrica mediante litografía ultravioleta extrema (EUV). Con nodos de fabricación avanzados de 3 nanómetros, la puerta lógica de un transistor mide apenas unos 15 átomos de silicio de ancho, aproximándose a los límites cuánticos donde el efecto túnel cuántico comienza a dificultar el bloqueo del paso de electrones."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_semiconductores.webp',
-    bannerCaption: 'La era de los semiconductores: del transistor al nanochip moderno',
-    fact: 'El silicio es el material estrella para los semiconductores, ¡y es sorprendentemente común! Es el segundo elemento más abundante en la corteza terrestre, después del oxígeno. La arena normal de la playa está hecha principalmente de dióxido de silicio.'
+    "bannerImage": "/assets/bttf/infographic_m7/banner_semiconductores.webp",
+    "bannerCaption": "La era de los semiconductores: del transistor al nanochip moderno",
+    "fact": "El microprocesador Apple M3 Max lanzado a finales de 2023 contiene más de 92.000 millones de transistores en un único chip de silicio de poco más de 400 milímetros cuadrados fabricado mediante fotolitografía de 3 nanómetros por TSMC, capaz de ejecutar más de 35 billones de operaciones matemáticas por segundo con un consumo de solo unas pocas decenas de vatios de potencia."
   },
   {
-    id: 'biotecnologia',
-    title: 'CRISPR y Biotecnología',
-    color: '#00E5FF',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_biotec.webp',
-    image: '/assets/bttf/infographic_biotecnologia/hero_biotec.webp',
-    content: [
-      'En 2012, Jennifer Doudna y Emmanuelle Charpentier desarrollaron la herramienta CRISPR-Cas9, un método para editar secuencias de ADN de manera precisa.',
-      'Antes de CRISPR, la modificación genética era un proceso complejo. Esta tecnología permite identificar una secuencia específica de ADN, cortarla y reemplazarla, facilitando el tratamiento de enfermedades de origen genético.',
-      'El sistema CRISPR fue adaptado de un mecanismo de defensa bacteriano. Las bacterias utilizan fragmentos de ADN viral para reconocer y destruir virus recurrentes mediante la enzima Cas9.',
-      'La biotecnología tiene aplicaciones en la medicina y en la agricultura, permitiendo el desarrollo de cultivos resistentes. Su uso plantea debates éticos sobre los límites de la edición genética.'
+    "id": "biotecnologia",
+    "title": "CRISPR y Biotecnología",
+    "color": "#00E5FF",
+    "btnImage": "/assets/bttf/infographic_biotecnologia/btn_biotec.webp",
+    "image": "/assets/bttf/infographic_biotecnologia/hero_biotec.webp",
+    "content": [
+      "En la visión del año 2015 de Regreso al Futuro Parte II, el doctor Emmett Brown visita una clínica médica de rejuvenecimiento estético en el futuro para cambiarse la sangre por completo, sustituir su bazo y aplicarse un tratamiento facial celular que promete sumarle treinta o cuarenta años de vida saludable. Aunque en 1989 el guion abordaba la medicina del porvenir como una parodia humorística, la biomedicina contemporánea del siglo XXI está convirtiendo la regeneración biológica en una realidad palpable gracias a la ingeniería genética.",
+      "Durante milenios, la humanidad modificó indirectamente el genoma de plantas y animales mediante la selección artificial y el cruzamiento selectivo empírico de especies agrícolas. El descubrimiento trascendental de la estructura en doble hélice del ADN por Rosalind Franklin, James Watson y Francis Crick en 1953 reveló que las instrucciones fundamentales de todos los seres vivos sobre la Tierra están escritas en un lenguaje químico universal compuesto por cuatro bases nitrogenadas: adenina, timina, citosina y guanina.",
+      "La auténtica revolución de precisión molecular estalló en 2012 con el desarrollo de la tecnología de edición genética CRISPR-Cas9 por parte de las investigadoras Emmanuelle Charpentier y Jennifer Doudna, galardonadas con el Premio Nobel de Química en 2020. Basándose en un sistema inmunitario bacteriano natural descubierto originalmente por el microbiólogo español Francis Mojica, CRISPR funciona como una tijera molecular guiada por ARN capaz de cortar, corregir o insertar genes con exactitud quirúrgica.",
+      "Las aplicaciones de esta revolución biotecnológica son colosales y transformadoras. En la medicina clínica actual, las terapias génicas basadas en CRISPR y células CAR-T están curando enfermedades hereditarias hasta ahora mortales como la anemia de células falciformes o la beta-talasemia, reprogramando las propias células madre de los pacientes para corregir mutaciones genéticas congénitas directamente en su código biológico fundamental.",
+      "Paralelamente, los campos de la biología sintética y la medicina regenerativa con células madre pluripotentes inducidas (iPSC) exploran la regeneración de tejidos dañados y el rejuvenecimiento celular mediante factores epigenéticos de Yamanaka. Este horizonte científico plantea a su vez dilemas éticos y bioéticos profundos sobre los límites de la edición en la línea germinal humana, recordándonos que el poder de editar el código de la vida debe guiarse por la prudencia y el bienestar universal."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cuando Doc viaja al futuro (año 2015), visita una clínica de rejuvenecimiento que le añade décadas a su vida. Le cambian la sangre, el bazo y el colon, y le reducen las arrugas. Hoy, la ciencia médica moderna con CRISPR y terapias génicas busca algo similar: entender y eventualmente ralentizar el envejecimiento celular real de nuestro cuerpo.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Por su desarrollo de CRISPR-Cas9, Emmanuelle Charpentier y Jennifer Doudna ganaron el Premio Nobel de Química en 2020. Fue la primera vez en la historia que un Premio Nobel de ciencias fue otorgado a dos mujeres, marcando un hito inspirador para la ciencia y la igualdad.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Cuando el Doc Brown se arranca una máscara de látex transparente de su rostro en la plaza de 2015 para mostrarse visiblemente rejuvenecido ante Marty, explica que pasó dos semanas enteras internado en una clínica estética especializada del futuro para someterse a una renovación completa de colon, bazo y sustitución sanguínea para vivir sano durante el próximo siglo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El microbiólogo español Francis Mojica descubrió en 1993 en las salinas de Santa Pola que las secuencias de ADN repetidas con espaciadores encontradas en arqueas haloófilas eran en realidad un registro inmunológico de memoria frente a virus bacteriófagos invasores, bautizando el fenómeno con el acrónimo CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats)."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_biotecnologia.webp',
-    bannerCaption: 'Biotecnología del futuro: edición genética, órganos artificiales y medicina personalizada',
-    fact: 'La biotecnología no solo se aplica a humanos. Se está utilizando tecnología genética para intentar "resucitar" o proteger especies en peligro. Existen proyectos en marcha que buscan traer de vuelta al mamut lanudo alterando genéticamente el ADN de sus parientes vivos más cercanos, los elefantes asiáticos.'
+    "bannerImage": "/assets/bttf/infographic_m7/banner_biotecnologia.webp",
+    "bannerCaption": "Biotecnología del futuro: edición genética, órganos artificiales y medicina personalizada",
+    "fact": "En diciembre de 2023, la Administración de Alimentos y Medicamentos de Estados Unidos (FDA) y la agencia reguladora del Reino Unido (MHRA) aprobaron formalmente Casgevy, el primer tratamiento médico del mundo basado en edición genética CRISPR-Cas9 para su uso clínico en pacientes humanos afectados por anemia de células falciformes severa."
   },
   {
-    id: 'espacio-futuro',
-    title: 'Exploración Espacial',
-    color: '#CE93D8',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_espacio.webp',
-    image: '/assets/bttf/infographic_biotecnologia/hero_espacio.webp',
-    content: [
-      'La industria espacial ha logrado avances mediante el desarrollo de cohetes reutilizables. Anteriormente, los cohetes se descartaban tras un solo uso. Ahora, algunas etapas pueden aterrizar y utilizarse nuevamente.',
-      'El programa Artemis de la NASA tiene como objetivo el retorno humano a la Luna, incluyendo la construcción de una estación en órbita lunar y bases de superficie como preparación para misiones a Marte.',
-      'El Telescopio Espacial James Webb permite analizar las atmósferas de exoplanetas y observar galaxias formadas en las etapas tempranas del universo.',
-      'El desarrollo tecnológico espacial también ha impulsado iniciativas comerciales y proyectos a largo plazo sobre el uso de recursos extraterrestres.'
+    "id": "espacio-futuro",
+    "title": "Exploración Espacial",
+    "color": "#CE93D8",
+    "btnImage": "/assets/bttf/infographic_biotecnologia/btn_espacio.webp",
+    "image": "/assets/bttf/infographic_biotecnologia/hero_espacio.webp",
+    "content": [
+      "A lo largo de la trilogía de Regreso al Futuro, el cielo nocturno y las estrellas contempladas por el Doc Brown y Clara Clayton a través de su telescopio de latón evocan la eterna aspiración humana de explorar el cosmos. En la ficción, el DeLorean conquista las nubes de Hill Valley mediante propulsores atmosféricos flotantes; pero en la ciencia de vanguardia del siglo XXI, el verdadero desafío de la especie humana es abandonar la cuna terrestre para establecer asentamientos habitables permanentes en la Luna y en Marte.",
+      "La conquista espacial moderna está viviendo un renacimiento extraordinario gracias a la combinación de agencias gubernamentales internacionales y el empuje de la industria aeroespacial privada. El desarrollo de cohetes pesados completamente reutilizables ha transformado la economía del transporte espacial, reduciendo el coste de poner un kilogramo de carga útil en órbita baja terrestre de diez mil dólares en la era de los transbordadores espaciales a menos de dos mil dólares en la actualidad.",
+      "El programa Artemis de la NASA, en colaboración estrecha con la Agencia Espacial Europea (ESA), Japón y Canadá, planea el regreso sostenido de seres humanos a la superficie lunar en el polo sur de nuestro satélite natural. En esa región inhóspita existen cráteres de sombra eterna donde instrumentos orbitales han detectado millones de toneladas de hielo de agua atrapado en el regolito, un recurso vital que puede ser purificado para consumo humano o descompuesto en hidrógeno y oxígeno para fabricar combustible de cohetes.",
+      "Al mismo tiempo, observatorios espaciales revolucionarios como el Telescopio Espacial James Webb (JWST), situado a un millón y medio de kilómetros de la Tierra en el punto de Lagrange L2, están escudriñando las primeras galaxias que se encendieron en el cosmos apenas unos cientos de millones de años después del Big Bang y analizando la composición química de las atmósferas de planetas extrasolares en busca de biomarcadores de vida extraterrestre.",
+      "La exploración del espacio profundo obliga a resolver formidables desafíos biológicos y de ingeniería: la radiación cósmica galáctica de iones pesados, los efectos destructivos de la microgravedad prolongada sobre la masa ósea humana y la necesidad de desarrollar reactores nucleares compactos de fisión espacial para alimentar bases extraterrestres durante la gélida y prolongada noche lunar de catorce días terrestres consecutivos."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En BTTF, el 2015 está lleno de autos voladores usando "aeroconversión". Aunque todavía no tenemos autos voladores diarios por razones de seguridad, las tecnologías de propulsión están avanzando. La visión de la película sobre la gravedad controlada y el transporte futurista se refleja hoy en los avances de la aeronáutica, cohetes de despegue vertical e investigaciones en levitación magnética.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El viaje a Marte toma alrededor de 7 a 9 meses usando la tecnología de propulsión química actual, y las oportunidades de lanzamiento ocurren solo cada 26 meses cuando la Tierra y Marte están alineados. ¡Es un viaje largo y sin paradas de descanso!' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La pasión astronómica une a Clara Clayton y a Emmett Brown en Regreso al Futuro Parte III: en su primera cita romántica nocturna en Hill Valley de 1885, ambos contemplan el firmamento con un telescopio refractor y conversan entusiasmados sobre las novelas de Jules Verne De la Tierra a la Luna y Alrededor de la Luna, soñando con el día en que la humanidad viaje a las estrellas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El punto de Lagrange L2 del sistema Tierra-Sol es una posición orbital de equilibrio gravitatorio dinámico donde la atracción combinada del Sol y de la Tierra proporciona la fuerza centrípeta exacta necesaria para que un satélite artificial orbite el Sol al unísono con nuestro planeta, manteniendo un escudo térmico solar siempre alineado de espaldas a los detectores infrarrojos."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_espacio-futuro.webp',
-    bannerCaption: 'El espacio como frontera final: colonias, minería y naves generacionales',
-    fact: 'El Telescopio Espacial James Webb usa un espejo recubierto de oro. La capa de oro es tan fina que, a pesar de que el espejo mide 6.5 metros de ancho, ¡solo se usaron aproximadamente 48 gramos de oro para cubrirlo todo (el tamaño de una pelota de golf)!'
+    "bannerImage": "/assets/bttf/infographic_m7/banner_espacio-futuro.webp",
+    "bannerCaption": "El espacio como frontera final: colonias, minería y naves generacionales",
+    "fact": "El espejo primario del Telescopio Espacial James Webb (JWST) está compuesto por 18 segmentos hexagonales de berilio ultraligero recubiertos por una capa molecular de oro puro de apenas 100 nanómetros de espesor (utilizando solo 48 gramos de oro en total), optimizada para reflejar la radiación infrarroja térmica del universo profundo con una reflectividad superior al 98%."
   },
   {
-    id: 'sostenibilidad',
-    title: 'Futuro Sostenible',
-    color: '#66BB6A',
-    btnImage: '/assets/bttf/infographic_biotecnologia/btn_sostenible.webp',
-    image: '/assets/bttf/infographic_biotecnologia/hero_sostenible.webp',
-    content: [
-      'La sostenibilidad busca satisfacer las necesidades actuales sin comprometer los recursos de las generaciones futuras. Un desafío principal es mitigar el cambio climático asociado a los gases de efecto invernadero.',
-      'La transición energética implica reducir la dependencia de los combustibles fósiles a favor de fuentes renovables como la energía solar, eólica y geotérmica, junto con métodos eficientes de almacenamiento.',
-      'El modelo de economía circular promueve la reducción de residuos mediante el diseño de productos orientados a la reutilización y el reciclaje.',
-      'La implementación de prácticas sostenibles depende de la adopción de tecnologías limpias y de políticas ambientales a largo plazo.'
+    "id": "sostenibilidad",
+    "title": "Futuro Sostenible",
+    "color": "#66BB6A",
+    "btnImage": "/assets/bttf/infographic_biotecnologia/btn_sostenible.webp",
+    "image": "/assets/bttf/infographic_biotecnologia/hero_sostenible.webp",
+    "content": [
+      "En una de las escenas más visionarias y divertidas de Regreso al Futuro, el Doc Brown regresa del año 2015 a toda prisa, abre el cubo de basura de los McFly y arroja restos de cáscaras de plátano, posos de café y una lata de cerveza vacía en el interior de un reactor cilíndrico montado en el capó trasero del DeLorean llamado «Mr. Fusion Home Energy Reactor». La película anticipó con brillantez cómica uno de los grandes imperativos éticos y científicos de nuestro siglo: la transición hacia una economía circular y una energía limpia.",
+      "En el mundo real actual, el modelo energético global basado en la combustión incesante de carbón, petróleo y gas fósil ha liberado más de un billón y medio de toneladas métricas de dióxido de carbono a la atmósfera terrestre desde el comienzo de la Revolución Industrial. Este incremento acelerado de los gases de efecto invernadero atrapa la radiación infrarroja térmica saliente, provocando el calentamiento global, el deshielo de glaciares polares y la alteración de los patrones climáticos planetarios.",
+      "Frente a este colosal desafío civilizatorio, la ciencia y la tecnología están protagonizando una revolución energética sin precedentes históricos. La generación eléctrica mediante paneles solares fotovoltaicos basados en silicio y aerogeneradores eólicos marinos ha experimentado una reducción de costes superior al 85% en la última década, convirtiéndose en la fuente de energía eléctrica nueva más barata y abundante en la inmensa mayoría de las naciones del globo terráqueo.",
+      "Paralelamente, la investigación en biocombustibles avanzados, digestores anaeróbicos de residuos orgánicos municipales para producir biometano y el desarrollo de tecnologías de captura directa de carbono del aire (DAC) representan pasos concretos hacia la economía circular que Mr. Fusion caricaturizaba con tanta simpatía. Convertir los desechos de nuestra sociedad en recursos energéticos útiles es la clave de la bioeconomía moderna.",
+      "El gran reto del siglo XXI consiste en integrar estas tecnologías sostenibles en redes eléctricas inteligentes de alta eficiencia apoyadas por almacenamiento químico en baterías de iones de litio y sodio, y el desarrollo futuro de la fusión nuclear comercial limpia en proyectos internacionales como ITER. Como nos enseñó el Doc Brown, el futuro de la Tierra no está condenado de antemano: está enteramente en nuestras manos construir un mañana limpio, próspero y en armonía con la naturaleza."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Al final de la película, el Doc de 2015 usa el "Mr. Fusion", un dispositivo en el DeLorean que convierte restos de basura (cáscaras de plátano, cerveza sobrante) en energía masiva y limpia. ¡Ese es el sueño absoluto de la sostenibilidad y la economía circular! Transformar los desechos directamente en energía usable sin contaminación.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El 100% de la energía que usa el país de Islandia proviene de fuentes renovables. Debido a su geografía volcánica única, utilizan casi exclusivamente energía geotérmica e hidroeléctrica, demostrando que es posible operar una sociedad moderna completa sin depender de combustibles fósiles.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El prop de atrezo del generador Mr. Fusion instalado en el maletero del DeLorean fue fabricado por el equipo artístico reutilizando un molinillo de café doméstico de la marca alemana Krups (modelo Coffina 223) montado sobre una base plástica automotriz, demostrando cómo los diseñadores de cine transforman objetos cotidianos en iconos de tecnología futurista sostenible."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El proyecto internacional ITER (International Thermonuclear Experimental Reactor), en construcción en Cadarache, Francia, mediante la colaboración de 35 países, albergará el reactor de fusión por confinamiento magnético de tipo tokamak más colosal del mundo, diseñado para confinar un plasma a 150 millones de grados Celsius y producir 500 megavatios de energía térmica a partir de 50 MW suministrados."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m7/banner_sostenibilidad.webp',
-    bannerCaption: 'Tecnología para la sostenibilidad: energía limpia, captura de carbono y ciudades verdes',
-    fact: 'Existen bacterias descubiertas recientemente, como la "Ideonella sakaiensis", que han evolucionado naturalmente para alimentarse de plástico PET. Los científicos están usando biotecnología para estudiar sus enzimas e intentar crear súper-bacterias que nos ayuden a reciclar las montañas de plástico que hemos creado.'
+    "bannerImage": "/assets/bttf/infographic_m7/banner_sostenibilidad.webp",
+    "bannerCaption": "Tecnología para la sostenibilidad: energía limpia, captura de carbono y ciudades verdes",
+    "fact": "La concentración de dióxido de carbono (CO2) en la atmósfera terrestre superó las 424 partes por millón (ppm) en mayo de 2023 según los registros del Observatorio de Mauna Loa en Hawái, el nivel más elevado registrado en los últimos 3 millones de años geológicos de la historia de la Tierra, frente a los 280 ppm de la época preindustrial previa a 1750."
   }
 ];
 

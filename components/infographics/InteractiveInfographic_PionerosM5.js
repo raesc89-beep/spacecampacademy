@@ -93,120 +93,200 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'mision-vosjod',
-              bannerImage: '/assets/pioneros/infographic_m5/banner_mision-vosjod.webp',
-    title: 'La Misión Vosjod 2',
-    color: '#D87D4A',
-    btnImage: '/assets/pioneros/infographic_m5/btn_mision-vosjod.webp',
-    image: '/assets/pioneros/infographic_m5/hero_mision-vosjod.webp',
-    content: ['El 18 de marzo de 1965, la nave espacial Vosjod 2 despegó desde el cosmódromo de Baikonur rumbo a las estrellas.', 'A bordo iban dos valientes tripulantes: el comandante Pavel Belyayev y el piloto Alexei Leonov.', 'Su objetivo principal era realizar la primera caminata espacial en la historia de la humanidad, un paso gigante para la exploración.', 'La nave era una versión modificada del modelo Vostok, a la que le añadieron una esclusa de aire inflable llamada Volga.', 'Los ingenieros soviéticos trabajaron bajo mucha presión de tiempo para adelantarse al programa Gemini de la NASA.'],
-    expandables: [
-      { label: 'Análisis Detallado', icon: 'zap', text: ['La misión duró un total de 26 horas en órbita alrededor de la Tierra.', 'El diseño de la esclusa Volga permitía que Leonov saliera al espacio sin despresurizar la cabina principal donde estaba Belyayev.', 'Volga pesaba 250 kilogramos y se extendía 2.5 metros hacia afuera una vez inflada en el espacio.', 'La nave alcanzó una altitud máxima de 495 kilómetros, mucho más alto de lo planeado originalmente.', 'Durante el despegue, los cosmonautas experimentaron una fuerza de gravedad intensa que los pegó a sus asientos.'] },
-      { label: 'Contexto Histórico', icon: 'clock', text: ['En plena Guerra Fría, la Unión Soviética y Estados Unidos competían por demostrar su superioridad tecnológica en el espacio.', 'El programa Vosjod fue un esfuerzo apresurado para lograr nuevos récords antes que los estadounidenses.', 'La nave Vostok original solo tenía espacio para un piloto, pero la Vosjod acomodó a dos eliminando los pesados asientos eyectables.', 'Los cosmonautas sabían que los sistemas no estaban completamente probados, pero aceptaron el riesgo por su país.', 'Este vuelo marcó el inicio de las actividades extravehiculares, esenciales hoy en día para mantener la Estación Espacial Internacional.'] }
+    "id": "mision-vosjod",
+    "bannerImage": "/assets/pioneros/infographic_m5/banner_mision-vosjod.webp",
+    "title": "La Misión Vosjod 2",
+    "color": "#D87D4A",
+    "btnImage": "/assets/pioneros/infographic_m5/btn_mision-vosjod.webp",
+    "image": "/assets/pioneros/infographic_m5/hero_mision-vosjod.webp",
+    "content": [
+      "El 18 de marzo de 1965, la Unión Soviética lanzó la audaz misión Vosjod 2 desde el cosmódromo de Baikonur, tripulada por el comandante Pável Beliáyev y el copiloto Alekséi Arjípovich Leónov. El objetivo supremo del vuelo era realizar la primera actividad extravehicular (EVA) o caminata espacial de la historia de la humanidad, adelantándose al programa Gemini estadounidense. La nave Vosjod era una versión modificada de la cápsula Vostok, a la cual se le había retirado el pesado asiento eyectable para permitir acomodar a dos cosmonautas.",
+      "Dado que la cabina interna no podía ser despresurizada por completo sin comprometer los sistemas electrónicos refrigerados por aire, los ingenieros de la oficina OKB-1 diseñaron un ingenioso dispositivo externo: una esclusa de aire inflable de lona multicapa llamada Volga. Durante el lanzamiento, la esclusa permaneció plegada a lo largo del fuselaje cilíndrico del vehículo, desplegándose mediante cuarenta cámaras tubulares presurizadas con gas una vez alcanzada la órbita terrestre.",
+      "El cohete lanzador Vosjod 11A57 situó a la nave en una órbita elíptica inusualmente alta, con un apogeo de cuatrocientos setenta y cinco kilómetros sobre la superficie terrestre y un perigeo de ciento setenta y tres kilómetros, batiendo el récord de altitud orbital de la época. A esa altitud extrema, la nave cruzaba los cinturones exteriores de la atmósfera y quedaba expuesta a niveles mayores de radiación cósmica primaria y temperaturas superficiales extremas.",
+      "El entrenamiento de Beliáyev y Leónov incluyó docenas de vuelos parabólicos en un bombardero militar Tupolev Tu-104 adaptado para generar veinticinco segundos de gravedad cero por parábola. En el interior del fuselaje del avión, los cosmonautas practicaron repetidamente la compleja coreografía motora de entrar y salir de la maqueta de la esclusa inflable Volga mientras vestían sus pesados trajes espaciales presurizados.",
+      "El lanzamiento y la inserción orbital transcurrieron con precisión milimétrica. Apenas al completar la primera revolución completa al planeta, Beliáyev comenzó los procedimientos formales para presurizar la esclusa de aire y abrir la escotilla interior, preparando a Leónov para dar el salto más trascendental y arriesgado jamás intentado en la historia de la exploración astronáutica mundial."
     ],
-    fact: 'La nave Vosjod 2 voló tan alto que estuvo cerca de quedarse atrapada en el espacio por meses si los motores fallaban.'
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La esclusa de aire Volga constaba de treinta y seis costillas neumáticas inflables y una masa de doscientos cincuenta kilogramos; tras completarse con éxito la actividad extravehicular histórica, fue expulsada pirotécnicamente de la cápsula para no desestabilizar la trayectoria balística de frenado durante el reingreso atmosférico."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El transmisor de televisión de a bordo de la Vosjod 2 transmitió imágenes en vivo de la esclusa a las estaciones de control soviéticas; no obstante, cuando la caminata espacial experimentó graves contratiempos biomédicos con el inflado del traje, la emisión televisiva fue interrumpida de inmediato y reemplazada con música sinfónica."
+      }
+    ],
+    "fact": "La misión Vosjod 2 despegó desde Baikonur el 18 de marzo de 1965 y alcanzó un apogeo orbital récord de 475 kilómetros sobre la superficie de la Tierra, utilizando una revolucionaria esclusa inflable de lona hermética de dos metros y medio llamada Volga para permitir que Alekséi Leónov realizara la primera caminata humana."
   },
   {
-    id: 'traje-berkut',
-              bannerImage: '/assets/pioneros/infographic_m5/banner_traje-berkut.webp',
-    title: 'El Traje Espacial Berkut',
-    color: '#D4B872',
-    btnImage: '/assets/pioneros/infographic_m5/btn_traje-berkut.webp',
-    image: '/assets/pioneros/infographic_m5/hero_traje-berkut.webp',
-    content: ['El traje espacial Berkut, que significa "águila dorada", fue diseñado por la empresa rusa NPO Zvezda.', 'Pesaba 20 kilogramos en la Tierra e incluía una mochila especial con soporte vital para 45 minutos.', 'Tenía un torso rígido de aluminio, mientras que los brazos y piernas estaban hechos de capas flexibles de goma.', 'Su casco brillante contaba con un filtro dorado para proteger los ojos de Leonov de los fuertes rayos del Sol.', 'Para mantener la presión necesaria y permitir la respiración, el traje se inflaba como un globo gigante en el vacío.'],
-    expandables: [
-      { label: 'Análisis Detallado', icon: 'zap', text: ['El mayor problema del traje Berkut fue que se infló demasiado en el espacio, volviéndose duro como una tabla.', 'Las articulaciones se pusieron tan tensas que doblar un brazo o una pierna requería una fuerza física enorme.', 'La mochila, llamada KP-55, suministraba oxígeno puro y eliminaba el dióxido de carbono producido al respirar.', 'Para volver a entrar a la nave, Leonov tuvo que liberar aire del traje usando una válvula de emergencia.', 'Bajar la presión rápidamente era muy peligroso, ya que podía causarle la enfermedad por descompresión en la sangre.'] },
-      { label: 'Contexto Histórico', icon: 'clock', text: ['Antes del Berkut, los trajes espaciales solo servían para proteger a los pilotos dentro de la cabina en caso de emergencia.', 'Este fue el primer diseño creado específicamente para operar de manera autónoma en el duro ambiente del espacio exterior.', 'Los ingenieros tuvieron que inventar materiales completamente nuevos que resistieran cambios extremos de temperatura.', 'El diseño base del Berkut sentó las bases para los trajes Orlan que usan los cosmonautas rusos en la actualidad.', 'La experiencia de Leonov demostró que los futuros trajes necesitarían articulaciones mucho más avanzadas y móviles.'] }
+    "id": "traje-berkut",
+    "bannerImage": "/assets/pioneros/infographic_m5/banner_traje-berkut.webp",
+    "title": "El Traje Espacial Berkut",
+    "color": "#D4B872",
+    "btnImage": "/assets/pioneros/infographic_m5/btn_traje-berkut.webp",
+    "image": "/assets/pioneros/infographic_m5/hero_traje-berkut.webp",
+    "content": [
+      "Para permitir la supervivencia de Alekséi Leónov en el letal vacío espacial, la fábrica Zvezda bajo la dirección del ingeniero Guy Severin desarrolló el traje espacial Berkut ('Águila Real'). Se trataba de una obra pionera de bioingeniería que integraba dos capas de contención hermética de goma vulcanizada, revestidas por múltiples capas de tejido aislante aluminizado para reflejar la feroz radiación solar y resistir temperaturas desde -140 °C hasta +120 °C.",
+      "A diferencia de los trajes intravehiculares previos, el Berkut era un sistema autónomo de soporte vital para actividades extravehiculares. Disponía de una mochila dorsal rígida KP-55 que suministraba oxígeno puro presurizado a una presión de 0.4 atmósferas (unos cuatrocientos milibares) para prevenir la ebullición de los fluidos corporales del cosmonauta y mantener la oxigenación alveolar sin requerir una mezcla de nitrógeno.",
+      "El casco del traje Berkut incorporaba un visor de doble cristal con una fina capa de oro puro depositada al vacío. Este recubrimiento metálico óptico actuaba como un filtro reflectante infrarrojo y ultravioleta indispensable, protegiendo las retinas de Leónov del cegador brillo del Sol no atenuado por la atmósfera terrestre, mientras permitía una visibilidad angular panorámica de ciento ochenta grados.",
+      "La ventilación pulmonar y la regulación térmica del cosmonauta dependían enteramente de un flujo continuo de oxígeno a circuito abierto: el gas entraba en el casco, pasaba por la zona facial y se expulsaba hacia el espacio arrastrando el vapor de agua y el dióxido de carbono producido por la respiración, un diseño simple y robusto que evitaba el uso de bombas eléctricas complejas.",
+      "El traje estaba diseñado con fuelles mecánicos articulados en codos y rodillas para facilitar la flexión anatómica bajo presión diferencial interna. Sin embargo, dado que no existían antecedentes experimentales de presurización real en el vacío sideral absoluto, nadie anticipó con exactitud el comportamiento hiperbárico que las paredes elásticas exhibirían una vez expuestas al entorno espacial."
     ],
-    fact: '¡El traje se infló tanto que los pies de Leonov se salieron de sus botas y sus manos ya no alcanzaban los guantes!'
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El traje Berkut mantenía una presión interna diferencial de cuarenta kilopascales contra el vacío absoluto del espacio sideral; esta disparidad manométrica convirtió al tejido en una estructura inflada y rígida similar a un neumático presurizado, exigiendo al cosmonauta un esfuerzo muscular titánico para flexionar cualquier coyuntura."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Debido a la ausencia de un circuito interno de refrigeración líquida activa, la temperatura corporal central de Leónov ascendió a casi treinta y nueve grados centígrados durante los momentos de tensión biomecánica, perdiendo más de cinco kilogramos de peso por sudoración profusa acumulada en las botas en menos de media hora de misión."
+      }
+    ],
+    "fact": "El traje espacial Berkut incorporaba una visera reflectante tratada con una película de oro vaporizado de pocos nanómetros de espesor para filtrar la radiación ultravioleta del Sol y utilizaba una mochila dorsal KP-55 con cuarenta y cinco minutos de oxígeno puro presurizado para sustentar la fisiología de Alekséi Leónov en el cosmos."
   },
   {
-    id: 'caminata-historica',
-              bannerImage: '/assets/pioneros/infographic_m5/banner_caminata-historica.webp',
-    title: 'La Caminata Histórica',
-    color: '#80DEEA',
-    btnImage: '/assets/pioneros/infographic_m5/btn_caminata-historica.webp',
-    image: '/assets/pioneros/infographic_m5/hero_caminata-historica.webp',
-    content: ['A las 11:34 de la mañana, Alexei Leonov abrió la escotilla y salió flotando hacia la inmensidad del cosmos.', 'Estuvo fuera de la nave durante 12 minutos y 9 segundos, conectado solo por un cordón de seguridad de 5.35 metros.', 'Desde allá arriba, Leonov pudo ver montañas, ríos y nubes moviéndose lentamente sobre la superficie terrestre.', 'Experimentó cambios de temperatura brutales: de -150°C en la sombra hasta +150°C bajo la luz directa del sol.', 'La caminata fue transmitida por televisión en vivo a toda Rusia, sorprendiendo a millones de espectadores.'],
-    expandables: [
-      { label: 'Análisis Detallado', icon: 'zap', text: ['El traje de Leonov se infló tanto que no podía doblar los dedos para usar la cámara fotográfica.', 'Al intentar regresar, descubrió que era demasiado ancho para pasar por la entrada de la esclusa Volga.', 'Tuvo que tomar la arriesgada decisión de desinflar su traje manualmente mientras seguía flotando en el espacio.', 'En lugar de entrar de cabeza como estaba planeado, tuvo que entrar de pies para poder cerrar la puerta.', 'El esfuerzo físico fue tan grande que Leonov sudó litros de agua, empañando por completo el visor de su casco.'] },
-      { label: 'Contexto Histórico', icon: 'clock', text: ['Esta hazaña comprobó que los humanos podían sobrevivir y trabajar fuera de una nave espacial.', 'Estados Unidos logró su primera caminata espacial casi tres meses después, realizada por el astronauta Ed White.', 'Leonov reportó que el espacio era increíblemente silencioso, pudiendo escuchar solo su propia respiración y latidos.', 'Durante la caminata, la nave viajaba a una velocidad asombrosa de 28,000 kilómetros por hora alrededor de la Tierra.', 'Los médicos en Tierra estaban muy preocupados, ya que el ritmo cardíaco de Leonov llegó a 143 latidos por minuto.'] }
+    "id": "caminata-historica",
+    "bannerImage": "/assets/pioneros/infographic_m5/banner_caminata-historica.webp",
+    "title": "La Caminata Histórica",
+    "color": "#80DEEA",
+    "btnImage": "/assets/pioneros/infographic_m5/btn_caminata-historica.webp",
+    "image": "/assets/pioneros/infographic_m5/hero_caminata-historica.webp",
+    "content": [
+      "A las 11:34 hora de Moscú del 18 de marzo de 1965, Alekséi Leónov cruzó la escotilla exterior de la esclusa Volga y se empujó suavemente hacia el abismo espacial sobre el estrecho de Kerch, entre el mar Negro y el mar de Azov. Con ese primer impulso biomecánico, se transformó en el primer ser humano en la historia en flotar libremente en el cosmos, protegido únicamente por la delgada envoltura de su traje espacial presurizado.",
+      "Leónov estaba conectado a la nave Vosjod 2 mediante un cordón umbilical de seguridad de cinco metros y treinta y cinco centímetros de longitud. Este cabo de acero entrelazado con cables de comunicaciones telefónicas de radio y una línea de oxígeno de reserva evitaba que el cosmonauta se alejara a la deriva en órbita, actuando al mismo tiempo como su único puente físico con la civilización humana.",
+      "Durante los doce minutos y nueve segundos que permaneció en el exterior, Leónov experimentó una sobrecogedora sensación de inmensidad cósmica y silencio absoluto. Describió el cielo como un terciopelo negro impenetrable tachonado de estrellas inmóviles que no titilaban, mientras contemplaba a sus pies la gigantesca esfera de la Tierra, reconociendo con nitidez la curvatura del horizonte, la cordillera del Cáucaso y el río Volga.",
+      "El cosmonauta fijó una pequeña cámara cinematográfica mecánica en el borde de la esclusa para filmar sus movimientos y saludó hacia la cámara mientras su cuerpo rotaba lentamente en caída libre. No experimentó vértigo ni desorientación espacial patológica, demostrando que el sistema nervioso humano puede orientarse en el vacío sideral empleando el relieve planetario como marco de referencia visual preponderante.",
+      "Sin embargo, el tiempo de seguridad asignado para la actividad extravehicular llegaba a su término crítico y el comandante Pável Beliáyev ordenó a Leónov por los auriculares de radio iniciar de inmediato las maniobras de aproximación y reingreso a la esclusa inflable antes de que la nave cruzara hacia el hemisferio nocturno y se agotara la reserva de oxígeno de la mochila dorsal KP-55."
     ],
-    fact: 'Mientras flotaba en el vacío, Leonov reportó haber escuchado extraños crujidos, que en realidad era el metal de la nave contrayéndose por el frío.'
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En ausencia de resistencia aerodinámica en órbita, cada pequeño impulso que Leónov ejercía contra la esclusa generaba un momento angular opuesto e igual de acuerdo con la tercera ley de la dinámica de Newton, provocando que su cuerpo rotara de manera continua en tres dimensiones hasta tensar por completo el cordón de seguridad."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Alekséi Leónov era además un consumado dibujante y pintor artístico; llevó consigo a la esclusa lápices de cera dura sujetos con correas elásticas a su muñeca para realizar los primeros bocetos en color de la curvatura terrestre y el cielo cósmico jamás elaborados por la mano humana en el entorno de ingravidez del espacio exterior."
+      }
+    ],
+    "fact": "Alekséi Leónov flotó en el vacío del espacio exterior durante doce minutos y nueve segundos a más de 28,000 km/h sobre las aguas del mar Negro y las montañas del Cáucaso, conectado a la nave Vosjod 2 únicamente por un cable de seguridad de acero de cinco metros y treinta y cinco centímetros con enlace telefónico por radio."
   },
   {
-    id: 'regreso-peligroso',
-              bannerImage: '/assets/pioneros/infographic_m5/banner_regreso-peligroso.webp',
-    title: 'Un Regreso al Límite',
-    color: '#3949AB',
-    btnImage: '/assets/pioneros/infographic_m5/btn_regreso-peligroso.webp',
-    image: '/assets/pioneros/infographic_m5/hero_regreso-peligroso.webp',
-    content: ['Después de la caminata, los problemas continuaron cuando el sistema de aterrizaje automático de la nave falló por completo.', 'El comandante Belyayev tuvo que tomar el control manual para encender los cohetes de frenado.', 'Debido a las dificultades, la cápsula aterrizó a 386 kilómetros de su objetivo original, en medio de la nieve.', 'Cayeron en lo profundo del bosque de taiga en los Montes Urales, rodeados de osos y lobos salvajes.', 'Pasaron dos noches soportando temperaturas de -30°C dentro de su cápsula atrapada entre grandes árboles.'],
-    expandables: [
-      { label: 'Análisis Detallado', icon: 'zap', text: ['Para poder orientar la nave correctamente, Belyayev tuvo que desabrocharse el cinturón y asomarse por la ventana.', 'El peso extra afectó el centro de gravedad, causando que la nave girara de manera brusca al entrar a la atmósfera.', 'La escotilla quedó bloqueada por un gran árbol, así que tuvieron que empujarla con todas sus fuerzas para poder salir.', 'El sistema eléctrico falló, por lo que los ventiladores dejaron de funcionar y la cabina se llenó de un frío intenso.', 'Los helicópteros de rescate los encontraron rápido, pero no podían aterrizar debido a lo espeso que era el bosque.'] },
-      { label: 'Contexto Histórico', icon: 'clock', text: ['Los medios de comunicación soviéticos ocultaron el desvío y dijeron que los cosmonautas estaban descansando en el bosque.', 'Este aterrizaje de emergencia obligó a los ingenieros a mejorar los sistemas de navegación para futuras misiones.', 'El equipo de rescate tuvo que llegar esquiando, abriendo un claro en el bosque para que un helicóptero pudiera bajar.', 'Finalmente, los cosmonautas tuvieron que esquiar 9 kilómetros a través del espeso bosque para llegar a la nave de rescate.', 'A pesar de todos los contratiempos casi mortales, Leonov y Belyayev fueron recibidos como héroes nacionales en Moscú.'] }
+    "id": "regreso-peligroso",
+    "bannerImage": "/assets/pioneros/infographic_m5/banner_regreso-peligroso.webp",
+    "title": "Un Regreso al Límite",
+    "color": "#3949AB",
+    "btnImage": "/assets/pioneros/infographic_m5/btn_regreso-peligroso.webp",
+    "image": "/assets/pioneros/infographic_m5/hero_regreso-peligroso.webp",
+    "content": [
+      "Al intentar regresar a la esclusa inflable, Leónov se topó con una pesadilla biomecánica imprevista: en el vacío exterior, la presión interna del oxígeno había inflado el traje Berkut hasta deformarlo por completo, volviendo los guantes y botas excesivamente rígidos y expandiendo el traje hasta superar el diámetro de un metro de la escotilla de entrada.",
+      "Sus manos se habían salido de los dedos del guante por la elongación de las mangas y era incapaz de flexionar las articulaciones para entrar con los pies hacia adelante como exigía el protocolo. Con el pulso disparado a ciento noventa latidos por minuto y su temperatura corporal alcanzando niveles febriles, Leónov tomó una decisión desesperada y no autorizada por radio: abrir una válvula manual para purgar oxígeno al espacio y despresurizar el traje a niveles críticos.",
+      "Arriesgándose a sufrir embolias gaseosas letales por descompresión súbita y anoxia cerebral, Leónov logró reducir la rigidez del traje lo suficiente para introducirse de cabeza en la esclusa Volga. Una vez dentro, ejecutó una extenuante contorsión en un tubo de apenas ochenta centímetros de diámetro interior para poder cerrar la escotilla exterior con sus propias manos antes de desmayarse por el agotamiento térmico.",
+      "El drama continuó durante el reingreso al planeta al día siguiente: el sistema de orientación solar automático falló, obligando a Beliáyev a realizar la primera orientación y encendido manual de retrocohetes de la historia soviética. Esto retrasó la trayectoria balística de frenado, provocando que la cápsula ameritara en la inhóspita y densa taiga siberiana cubierta de nieve profunda en los Montes Urales, cerca de Perm, a miles de kilómetros de la zona prevista.",
+      "Los cosmonautas pasaron dos días y dos noches aislados a veinticinco grados bajo cero rodeados de lobos y osos salvajes antes de que los equipos de rescate con esquís pudieran llegar hasta ellos. A pesar de los múltiples peligros mortales superados, la misión Vosjod 2 demostró con valentía y heroísmo que el ser humano puede abandonar el nido de su nave para trabajar activamente en el espacio exterior."
     ],
-    fact: 'Los cosmonautas llevaban una pistola especial de supervivencia en su equipo de emergencia para defenderse de los lobos hambrientos del bosque.'
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La despresurización manual de emergencia ejecutada por Leónov al purgar oxígeno al espacio exterior conllevaba un riesgo inminente de aeroembolismo descompresivo letal con formación de burbujas de gas en articulaciones y médula, mitigado únicamente porque había respirado oxígeno puro en tierra durante el protocolo de desnitrogenación."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El kit de supervivencia invernal de la cápsula Vosjod 2 incluía una pistola de tres cañones combinados TP-82 con cartuchos de caza mayor y bengalas luminosas para protegerse de los lobos y osos de la taiga siberiana, junto con machetes plegables y trajes térmicos impermeables que salvaron la vida de la tripulación en el bosque."
+      }
+    ],
+    "fact": "Para poder reingresar a la esclusa tras inflarse su traje por la diferencia de presión en el vacío, Leónov purgó manualmente su oxígeno a niveles críticos de 0.27 atmósferas arriesgando la anoxia cerebral aguda, y tras un descenso balístico manual forzoso debió sobrevivir dos noches gélidas en los Urales a 25 grados bajo cero."
   },
   {
-    id: 'leonov-regreso-dificil',
-              bannerImage: '/assets/pioneros/infographic_m5/banner_leonov-regreso-dificil.webp',
-    title: 'Los 12 Minutos que Casi Matan a Leonov',
-    color: '#EF5350',
-    btnImage: '/assets/pioneros/infographic_m5/btn_leonov-regreso.webp',
-    image: '/assets/pioneros/infographic_m5/hero_leonov_reentry.webp',
-    content: [
-      'La caminata espacial de Alexei Leonov el 18 de marzo de 1965 duró 12 minutos y 9 segundos visibles fuera de la nave, pero el episodio que casi lo mató ocurrió al intentar regresar. El traje espacial Berkut, al inflarse completamente en el vacío, aumentó tanto su rigidez que Leonov no podía doblar los brazos lo suficiente para entrar a la esclusa de airlock, que tenía 1.2 metros de diámetro. Probó durante varios minutos usando la fuerza total de sus brazos, pero el traje hinchado actuaba como un globo rígido que no cedía. En ese momento, tomó una decisión que no estaba autorizada por el control de la misión: abrió una válvula de purga para reducir la presión interna de su traje de 0.4 a 0.27 atmósferas, al límite mínimo para mantener la consciencia, arriesgando pérdida de conocimiento y narcosis por nitrógeno.',
-      'Con la presión reducida, Leonov logró doblar suficientemente el traje para entrar a la esclusa de cabeza —contra el protocolo establecido de entrar con los pies primero— lo que significaba que tendría que maniobrar dentro del espacio reducido del airlock para reposicionarse antes de cerrar la escotilla exterior. Esta maniobra, en un espacio apenas mayor que su cuerpo, con el corazón latiendo a 190 pulsaciones por minuto y sudando profusamente por el esfuerzo y el estrés, le tomó ocho minutos adicionales. La temperatura interna de su traje había subido a 38°C y sus botas se habían llenado con 6 litros de sudor. Logró cerrar la escotilla exterior solo cuando sus niveles de saturación de oxígeno comenzaban a descender peligrosamente.',
-      'El regreso a la Tierra de la misión Voskhod 2 tuvo tres problemas adicionales al del traje. El sistema automático de orientación falló durante la reentrada, obligando a Leonov y al comandante Pavel Belyayev a realizar la primera reentrada manual guiada a través del ojo de la ventana, aterrizando 386 km fuera de la zona de aterrizaje prevista en los densos bosques de los Urales. La cápsula quedó atrapada en un árbol a 1.5 metros del suelo en una zona sin caminos, con temperaturas de -30°C y lobos merodeando en el exterior. Los cosmonautas pasaron la noche en la cápsula y fueron rescatados 24 horas después por esquiadores de una unidad militar que llegó a pie a través de la nieve profunda.',
-      'La decisión de reducir la presión del traje sin autorización del control de la misión fue una de las pocas violaciones de protocolo documentadas y públicamente reconocidas en el programa espacial soviético, aunque no fue divulgada en el momento. Décadas después, cuando los archivos se desclasificaron, quedó claro que esta violación del protocolo fue lo que salvó la vida de Leonov. El episodio cambió los requisitos de diseño de los trajes espaciales para todos los programas subsiguientes: todos los trajes post-Berkut incorporaron sistemas de ajuste de presión de emergencia controlables por el astronauta, y los airlocks se diseñaron con mayor diámetro para acomodar trajes inflados.',
-      'La historia del regreso de Leonov es un caso de estudio en la toma de decisiones bajo presión extrema, en el que el conocimiento técnico del astronauta y su disposición a actuar contra el protocolo establecido fue más valioso que el seguimiento estricto de los procedimientos. Este principio se formalizó en el Manual de Operaciones de la ISS como la "Regla de Autoridad Autónoma" que establece que en situaciones de emergencia de vida, el astronauta tiene autoridad absoluta sobre el control de tierra para tomar las acciones que juzgue necesarias para su supervivencia.'
+    "id": "leonov-regreso-dificil",
+    "bannerImage": "/assets/pioneros/infographic_m5/banner_leonov-regreso-dificil.webp",
+    "title": "Los 12 Minutos que Casi Matan a Leonov",
+    "color": "#EF5350",
+    "btnImage": "/assets/pioneros/infographic_m5/btn_leonov-regreso.webp",
+    "image": "/assets/pioneros/infographic_m5/hero_leonov_reentry.webp",
+    "content": [
+      "La caminata espacial de Alexei Leonov el 18 de marzo de 1965 duró 12 minutos y 9 segundos visibles fuera de la nave, pero el episodio que casi lo mató ocurrió al intentar regresar. El traje espacial Berkut, al inflarse completamente en el vacío, aumentó tanto su rigidez que Leonov no podía doblar los brazos lo suficiente para entrar a la esclusa de airlock, que tenía 1.2 metros de diámetro. Probó durante varios minutos usando la fuerza total de sus brazos, pero el traje hinchado actuaba como un globo rígido que no cedía. En ese momento, tomó una decisión que no estaba autorizada por el control de la misión: abrió una válvula de purga para reducir la presión interna de su traje de 0.4 a 0.27 atmósferas, al límite mínimo para mantener la consciencia, arriesgando pérdida de conocimiento y narcosis por nitrógeno.",
+      "Con la presión reducida, Leonov logró doblar suficientemente el traje para entrar a la esclusa de cabeza —contra el protocolo establecido de entrar con los pies primero— lo que significaba que tendría que maniobrar dentro del espacio reducido del airlock para reposicionarse antes de cerrar la escotilla exterior. Esta maniobra, en un espacio apenas mayor que su cuerpo, con el corazón latiendo a 190 pulsaciones por minuto y sudando profusamente por el esfuerzo y el estrés, le tomó ocho minutos adicionales. La temperatura interna de su traje había subido a 38°C y sus botas se habían llenado con 6 litros de sudor. Logró cerrar la escotilla exterior solo cuando sus niveles de saturación de oxígeno comenzaban a descender peligrosamente.",
+      "El regreso a la Tierra de la misión Voskhod 2 tuvo tres problemas adicionales al del traje. El sistema automático de orientación falló durante la reentrada, obligando a Leonov y al comandante Pavel Belyayev a realizar la primera reentrada manual guiada a través del ojo de la ventana, aterrizando 386 km fuera de la zona de aterrizaje prevista en los densos bosques de los Urales. La cápsula quedó atrapada en un árbol a 1.5 metros del suelo en una zona sin caminos, con temperaturas de -30°C y lobos merodeando en el exterior. Los cosmonautas pasaron la noche en la cápsula y fueron rescatados 24 horas después por esquiadores de una unidad militar que llegó a pie a través de la nieve profunda.",
+      "La decisión de reducir la presión del traje sin autorización del control de la misión fue una de las pocas violaciones de protocolo documentadas y públicamente reconocidas en el programa espacial soviético, aunque no fue divulgada en el momento. Décadas después, cuando los archivos se desclasificaron, quedó claro que esta violación del protocolo fue lo que salvó la vida de Leonov. El episodio cambió los requisitos de diseño de los trajes espaciales para todos los programas subsiguientes: todos los trajes post-Berkut incorporaron sistemas de ajuste de presión de emergencia controlables por el astronauta, y los airlocks se diseñaron con mayor diámetro para acomodar trajes inflados.",
+      "La historia del regreso de Leonov es un caso de estudio en la toma de decisiones bajo presión extrema, en el que el conocimiento técnico del astronauta y su disposición a actuar contra el protocolo establecido fue más valioso que el seguimiento estricto de los procedimientos. Este principio se formalizó en el Manual de Operaciones de la ISS como la \"Regla de Autoridad Autónoma\" que establece que en situaciones de emergencia de vida, el astronauta tiene autoridad absoluta sobre el control de tierra para tomar las acciones que juzgue necesarias para su supervivencia."
     ],
-    expandables: [
-      { label: 'Traje Casi Mortal', icon: 'Zap', text: 'Leonov redujo la presión de su traje por su cuenta, sin avisar al control de misión, arriesgando pérdida de conocimiento. Su violación del protocolo lo salvó — y cambió el diseño de todos los trajes espaciales posteriores.' },
-      { label: '24h en los Urales', icon: 'Star', text: 'Después de la casi-muerte en la EVA, aterrizaron 386 km fuera de rango en bosques con -30°C y lobos. Pasaron la noche en la cápsula y esquiadores militares los rescataron 24 horas después. La misión tuvo tres emergencias mortales en un solo día.' }
+    "expandables": [
+      {
+        "label": "Traje Casi Mortal",
+        "icon": "Zap",
+        "text": "Al comprobar que el traje Berkut se había dilatado más de diez centímetros por la presión diferencial contra el vacío sideral absoluto, Leónov abrió la válvula de purga manual arriesgando una ebullición letal del nitrógeno tisular; este incidente obligó a rediseñar las uniones mecánicas de todos los trajes espaciales soviéticos y estadounidenses."
+      },
+      {
+        "label": "24h en los Urales",
+        "icon": "Star",
+        "text": "Tras la compleja actividad extravehicular y el reingreso balístico manual no guiado, Beliáyev y Leónov tomaron tierra en un denso bosque de abetos en los Montes Urales a casi cuatrocientos kilómetros del área de aterrizaje programada, viéndose forzados a pernoctar a treinta grados bajo cero protegidos únicamente por la envoltura térmica de la cápsula."
+      }
     ],
-    fact: 'Leonov redujo la presión de su traje al límite mínimo de consciencia sin pedir permiso. Este acto de desobediencia técnica salvó su vida y es la base de la "Regla de Autoridad Autónoma" que hoy da a los astronautas de la ISS poder absoluto sobre el control de tierra en emergencias de vida.'
+    "fact": "Alekséi Leónov redujo la presión de su traje espacial al límite mínimo de la consciencia humana sin autorización previa por radio para poder comprimir la envoltura inflada y acceder a la esclusa; esta audaz iniciativa técnica salvó su vida y fundamentó los protocolos modernos de autoridad autónoma en emergencias extravehiculares."
   },
   {
-    id: 'berkut-ingenieria',
-              bannerImage: '/assets/pioneros/infographic_m5/banner_berkut-ingenieria.webp',
-    title: 'El Traje Berkut: Ingeniería del Primer Paso al Vacío',
-    color: '#66BB6A',
-    btnImage: '/assets/pioneros/infographic_m5/btn_berkut-ingenieria.webp',
-    image: '/assets/pioneros/infographic_m5/hero_berkut_suit.webp',
-    content: [
-      'El traje espacial Berkut (Águila Dorada) utilizado por Leonov en 1965 fue diseñado en solo 18 meses por el equipo de Gai Ilyich Severin del Instituto de Investigación de Aparatos de Vuelo Estatal (NIISSU) —un logro notable considerando que nadie había construido antes un traje para funcionar en el vacío completo. El Berkut era un traje de presión "blanda" compuesto de múltiples capas: goma interior para retener el gas presurizado, capas de tela resistente a la abrasión, mylar reflectante para control térmico y cubierta exterior de nylon blanco. Pesaba 100 kg con la mochila de oxígeno portátil (PLSS) y proporcionaba 30 minutos de autonomía — suficiente para la EVA planificada con margen de seguridad.',
-      'La limitación fatal del Berkut — la rigidez al inflarse — era conocida por los ingenieros durante el desarrollo pero fue subestimada. Los trajes presurizados a 0.4 atmósferas desarrollan una rigidez proporcional al cuadrado de la presión: en el vacío completo, la diferencia entre 0.4 atm interior y 0 exterior crea fuerzas de tensión en la tela que la hacen actuar como un globo rígido. Los ingenieros habían diseñado "correas de restricción" para mantener la forma durante la presurización, pero estas correas no previnieron la reducción de movilidad en las articulaciones en el grado que ocurrió en órbita real. La lección fue que los trajes espaciales deben probarse exhaustivamente en cámaras de vacío con humanos realizando movimientos completos.',
-      'El Berkut introdujo varias innovaciones técnicas incorporadas en todos los trajes posteriores: el casco de visera doble con recubrimiento de oro para filtrar el 97% de la radiación UV solar (que destruiría la vista en minutos de exposición directa sin filtro), el sistema de regulación de temperatura por ventilación de oxígeno sobre la piel, y la filosofía de "redundancia de vida" donde cada sistema crítico tiene un respaldo manual accesible sin herramientas. La visera dorada del Berkut es el ancestro directo de las viseras del casco de los trajes EMU de la ISS y del xEMU del programa Artemis.',
-      'Los trajes espaciales modernos son órdenes de magnitud más sofisticados que el Berkut pero comparten su desafío fundamental: cómo permitir que un humano realice trabajo físico en un entorno que lo mataría en 15 segundos. El traje EMU (Extravehicular Mobility Unit) de la ISS tiene 14 capas de materiales incluyendo Dacron, Neopreno, Mylar, Ortho-Fabric y LCVG (Liquid Cooling and Ventilation Garment), pesa 127 kg y cuesta aproximadamente 12 millones de dólares por unidad. Tiene autonomía de 7 horas de oxígeno, refrigeración por agua en circulación, comunicaciones de voz y video, y un sistema de propulsión de seguridad SAFER para casos de desconexión del tether.',
-      'El diseño de trajes para Marte plantea desafíos únicos que el Berkut y el EMU no resolvieron. A 0.38g marciana, un traje rígido de 127 kg haría que caminar fuera agotador. El xEMU del programa Artemis pesa 81 kg, tiene mayor rango de movimiento en las articulaciones gracias a nuevas juntas de "rodamiento de bola" y se diseñó con una espalda de apertura para que el astronauta entre y salga sin asistencia — una innovación directamente inspirada en la dificultad de Leonov para entrar al airlock del Voskhod 2 en 1965.'
+    "id": "berkut-ingenieria",
+    "bannerImage": "/assets/pioneros/infographic_m5/banner_berkut-ingenieria.webp",
+    "title": "El Traje Berkut: Ingeniería del Primer Paso al Vacío",
+    "color": "#66BB6A",
+    "btnImage": "/assets/pioneros/infographic_m5/btn_berkut-ingenieria.webp",
+    "image": "/assets/pioneros/infographic_m5/hero_berkut_suit.webp",
+    "content": [
+      "El traje espacial Berkut (Águila Dorada) utilizado por Leonov en 1965 fue diseñado en solo 18 meses por el equipo de Gai Ilyich Severin del Instituto de Investigación de Aparatos de Vuelo Estatal (NIISSU) —un logro notable considerando que nadie había construido antes un traje para funcionar en el vacío completo. El Berkut era un traje de presión \"blanda\" compuesto de múltiples capas: goma interior para retener el gas presurizado, capas de tela resistente a la abrasión, mylar reflectante para control térmico y cubierta exterior de nylon blanco. Pesaba 100 kg con la mochila de oxígeno portátil (PLSS) y proporcionaba 30 minutos de autonomía — suficiente para la EVA planificada con margen de seguridad.",
+      "La limitación fatal del Berkut — la rigidez al inflarse — era conocida por los ingenieros durante el desarrollo pero fue subestimada. Los trajes presurizados a 0.4 atmósferas desarrollan una rigidez proporcional al cuadrado de la presión: en el vacío completo, la diferencia entre 0.4 atm interior y 0 exterior crea fuerzas de tensión en la tela que la hacen actuar como un globo rígido. Los ingenieros habían diseñado \"correas de restricción\" para mantener la forma durante la presurización, pero estas correas no previnieron la reducción de movilidad en las articulaciones en el grado que ocurrió en órbita real. La lección fue que los trajes espaciales deben probarse exhaustivamente en cámaras de vacío con humanos realizando movimientos completos.",
+      "El Berkut introdujo varias innovaciones técnicas incorporadas en todos los trajes posteriores: el casco de visera doble con recubrimiento de oro para filtrar el 97% de la radiación UV solar (que destruiría la vista en minutos de exposición directa sin filtro), el sistema de regulación de temperatura por ventilación de oxígeno sobre la piel, y la filosofía de \"redundancia de vida\" donde cada sistema crítico tiene un respaldo manual accesible sin herramientas. La visera dorada del Berkut es el ancestro directo de las viseras del casco de los trajes EMU de la ISS y del xEMU del programa Artemis.",
+      "Los trajes espaciales modernos son órdenes de magnitud más sofisticados que el Berkut pero comparten su desafío fundamental: cómo permitir que un humano realice trabajo físico en un entorno que lo mataría en 15 segundos. El traje EMU (Extravehicular Mobility Unit) de la ISS tiene 14 capas de materiales incluyendo Dacron, Neopreno, Mylar, Ortho-Fabric y LCVG (Liquid Cooling and Ventilation Garment), pesa 127 kg y cuesta aproximadamente 12 millones de dólares por unidad. Tiene autonomía de 7 horas de oxígeno, refrigeración por agua en circulación, comunicaciones de voz y video, y un sistema de propulsión de seguridad SAFER para casos de desconexión del tether.",
+      "El diseño de trajes para Marte plantea desafíos únicos que el Berkut y el EMU no resolvieron. A 0.38g marciana, un traje rígido de 127 kg haría que caminar fuera agotador. El xEMU del programa Artemis pesa 81 kg, tiene mayor rango de movimiento en las articulaciones gracias a nuevas juntas de \"rodamiento de bola\" y se diseñó con una espalda de apertura para que el astronauta entre y salga sin asistencia — una innovación directamente inspirada en la dificultad de Leonov para entrar al airlock del Voskhod 2 en 1965."
     ],
-    expandables: [
-      { label: 'Visera Dorada', icon: 'Star', text: 'La visera de oro del Berkut filtra el 97% de los UV solares que destruirían la vista en minutos de exposición. El mismo principio protege los cascos del Artemis — descendiente directo de la solución que los ingenieros soviéticos inventaron en 18 meses en 1963.' },
-      { label: 'xEMU y Leonov', icon: 'Sparkles', text: 'El nuevo traje xEMU tiene una espalda de apertura para que el astronauta entre solo. Esta innovación existe directamente porque Leonov casi muere entrando al Voskhod 2. 60 años después, su accidente sigue diseñando los trajes del futuro.' }
+    "expandables": [
+      {
+        "label": "Visera Dorada",
+        "icon": "Star",
+        "text": "La película de oro puro aplicada mediante deposición física de vapor sobre el visor de policarbonato del casco Berkut filtraba el noventa y siete por ciento de la radiación ultravioleta y el espectro infrarrojo solar; este principio óptico de reflectancia selectiva continúa protegiendo los cascos de las unidades extravehiculares modernas de la NASA en la ISS."
+      },
+      {
+        "label": "xEMU y Leonov",
+        "icon": "Sparkles",
+        "text": "Los trajes espaciales contemporáneos como el xEMU del programa Artemis incorporan un sistema de ingreso trasero mediante escotilla dorsal rígida que permite al astronauta colocarse el equipo de manera autónoma sin ayuda externa, una innovación ergonómica derivada directamente de las lecciones biomecánicas del peligroso vuelo de Leónov en la Vosjod 2."
+      }
     ],
-    fact: 'El Berkut fue diseñado en 18 meses por ingenieros que nunca habían construido un traje para el vacío. Sus innovaciones — visera dorada, redundancia manual — están en todos los trajes actuales. Sus errores — rigidez en el vacío — también rediseñaron todos los trajes actuales. Un solo accidente de 12 minutos cambió 60 años de ingeniería espacial.'
+    "fact": "El traje espacial Berkut fue desarrollado en dieciocho meses por la factoría Zvezda y sus aportes en visores de oro puro y redundancia manual sentaron las bases universales de los trajes extravehiculares de la actualidad, demostrando la necesidad crítica de dotar al equipo de movilidad bajo presión negativa."
   },
   {
-    id: 'fisica-eva',
-              bannerImage: '/assets/pioneros/infographic_m5/banner_fisica-eva.webp',
-    title: 'La Física de Caminar en el Vacío',
-    color: '#9C27B0',
-    btnImage: '/assets/pioneros/infographic_m5/btn_fisica-eva.webp',
-    image: '/assets/pioneros/infographic_m5/hero_eva_physics.webp',
-    content: [
-      'Una actividad extravehicular (EVA) es uno de los entornos físicos más extremos que un ser humano puede experimentar: temperatura oscilando entre -157°C en la sombra y +121°C al sol, vacío con presión de 10^-9 atmósferas, radiación ultravioleta sin filtrar atmosférico, y microgravedad completa sin ningún punto de referencia gravitacional. El traje espacial es una nave espacial en miniatura diseñada para mantener vivo a un ser humano en este ambiente por 7-8 horas.',
-      'La termorregulación es el desafío físico más complejo de la EVA porque en el vacío no existe la convección —la principal forma de disipación de calor del cuerpo humano en la Tierra. En el espacio, el calor generado por el metabolismo del astronauta (hasta 1,500 W durante trabajo físico intenso) solo puede disiparse por radiación infrarroja, que es un proceso lento. La solución en los trajes modernos es el LCVG (Liquid Cooling and Ventilation Garment): una red de tubos de poliuretano de 91 metros de longitud total entretejidos en una camiseta interior que circula agua fría a 3-20°C, absorbiendo el calor metabólico antes de que eleve la temperatura corporal a niveles peligrosos.',
-      'La microgravedad en la EVA crea un problema de mecánica newtoniana que los astronautas deben aprender intuitivamente: cualquier fuerza aplicada a un objeto externo genera una reacción igual y opuesta en el astronauta que, al no tener fricción contra ninguna superficie, se desplazará en la dirección opuesta. Para apretar un perno, el astronauta debe estar anclado contra dos puntos de reacción simultáneamente — los "foot restraints" y el "hip restraint" — o de lo contrario el torque del perno lo hará girar en sentido contrario. Los astronautas del Apollo tenían el suelo lunar como punto de reacción; los de la ISS deben construir mentalmente sus propias cadenas de reacción antes de cada tarea.',
-      'El riesgo de micrometeoritos en la EVA es estadísticamente bajo pero real: la superficie exterior de la ISS tiene más de 1,500 impactos de partículas visibles en sus módulos de aluminio. Un micrometeorito de 1 mm impactando a 72 km/s tiene la energía cinética de una bala de rifle de gran calibre. Los trajes tienen capas de Kevlar y Spectra que pueden absorber impactos de hasta 1-2 mm. La probabilidad estadística de un impacto peligroso en una EVA de 7 horas es de 1 en 750 — suficientemente baja para aceptar el riesgo operacional.',
-      'La orientación espacial durante la EVA es uno de los desafíos cognitivos más complejos de la exploración humana. En la ISS, los astronautas se mueven alrededor de una estructura del tamaño de un campo de fútbol en microgravedad donde "arriba" y "abajo" son conceptos arbitrarios. El entrenamiento se realiza en la piscina Neutral Buoyancy Laboratory de la NASA, donde 1,100 empleados mantienen réplicas de tamaño real de todos los módulos de la ISS. Los astronautas practican cada movimiento de la EVA durante 10 horas en agua por cada hora de EVA real prevista.'
+    "id": "fisica-eva",
+    "bannerImage": "/assets/pioneros/infographic_m5/banner_fisica-eva.webp",
+    "title": "La Física de Caminar en el Vacío",
+    "color": "#9C27B0",
+    "btnImage": "/assets/pioneros/infographic_m5/btn_fisica-eva.webp",
+    "image": "/assets/pioneros/infographic_m5/hero_eva_physics.webp",
+    "content": [
+      "Una actividad extravehicular (EVA) es uno de los entornos físicos más extremos que un ser humano puede experimentar: temperatura oscilando entre -157°C en la sombra y +121°C al sol, vacío con presión de 10^-9 atmósferas, radiación ultravioleta sin filtrar atmosférico, y microgravedad completa sin ningún punto de referencia gravitacional. El traje espacial es una nave espacial en miniatura diseñada para mantener vivo a un ser humano en este ambiente por 7-8 horas.",
+      "La termorregulación es el desafío físico más complejo de la EVA porque en el vacío no existe la convección —la principal forma de disipación de calor del cuerpo humano en la Tierra. En el espacio, el calor generado por el metabolismo del astronauta (hasta 1,500 W durante trabajo físico intenso) solo puede disiparse por radiación infrarroja, que es un proceso lento. La solución en los trajes modernos es el LCVG (Liquid Cooling and Ventilation Garment): una red de tubos de poliuretano de 91 metros de longitud total entretejidos en una camiseta interior que circula agua fría a 3-20°C, absorbiendo el calor metabólico antes de que eleve la temperatura corporal a niveles peligrosos.",
+      "La microgravedad en la EVA crea un problema de mecánica newtoniana que los astronautas deben aprender intuitivamente: cualquier fuerza aplicada a un objeto externo genera una reacción igual y opuesta en el astronauta que, al no tener fricción contra ninguna superficie, se desplazará en la dirección opuesta. Para apretar un perno, el astronauta debe estar anclado contra dos puntos de reacción simultáneamente — los \"foot restraints\" y el \"hip restraint\" — o de lo contrario el torque del perno lo hará girar en sentido contrario. Los astronautas del Apollo tenían el suelo lunar como punto de reacción; los de la ISS deben construir mentalmente sus propias cadenas de reacción antes de cada tarea.",
+      "El riesgo de micrometeoritos en la EVA es estadísticamente bajo pero real: la superficie exterior de la ISS tiene más de 1,500 impactos de partículas visibles en sus módulos de aluminio. Un micrometeorito de 1 mm impactando a 72 km/s tiene la energía cinética de una bala de rifle de gran calibre. Los trajes tienen capas de Kevlar y Spectra que pueden absorber impactos de hasta 1-2 mm. La probabilidad estadística de un impacto peligroso en una EVA de 7 horas es de 1 en 750 — suficientemente baja para aceptar el riesgo operacional.",
+      "La orientación espacial durante la EVA es uno de los desafíos cognitivos más complejos de la exploración humana. En la ISS, los astronautas se mueven alrededor de una estructura del tamaño de un campo de fútbol en microgravedad donde \"arriba\" y \"abajo\" son conceptos arbitrarios. El entrenamiento se realiza en la piscina Neutral Buoyancy Laboratory de la NASA, donde 1,100 empleados mantienen réplicas de tamaño real de todos los módulos de la ISS. Los astronautas practican cada movimiento de la EVA durante 10 horas en agua por cada hora de EVA real prevista."
     ],
-    expandables: [
-      { label: '91 Metros de Tubo', icon: 'Atom', text: 'El traje EMU tiene 91 metros de tubos de agua fría entretejidos en la camiseta interior. Sin esta red de refrigeración, el metabolismo de una EVA intensa elevaría la temperatura corporal a niveles letales en menos de 30 minutos — el vacío no tiene ningún mecanismo para disipar el calor.' },
-      { label: 'Bala a 72 km/s', icon: 'Zap', text: 'Un micrometeorito de 1 mm a 72 km/s tiene la energía de una bala de rifle. La probabilidad de impacto en una EVA de 7 horas es de 1 en 750. Lo suficientemente baja para aceptar el riesgo — pero no cero. Cada EVA es una apuesta calculada contra el azar cósmico.' }
+    "expandables": [
+      {
+        "label": "91 Metros de Tubo",
+        "icon": "Atom",
+        "text": "La prenda interior de refrigeración líquida y ventilación (LCVG) utilizada en los paseos espaciales modernos integra más de noventa metros de tubos capilares de plástico por los que circula agua fría en circuito cerrado, disipando de forma continua los quinientos vatios de calor metabólico generados por el esfuerzo físico muscular del astronauta."
+      },
+      {
+        "label": "Bala a 72 km/s",
+        "icon": "Zap",
+        "text": "Un impacto de micrometeorito de apenas un milímetro de diámetro viajando a setenta y dos kilómetros por segundo posee la energía cinética equivalente al impacto de un proyectil de fusil; por ello, los trajes espaciales modernos incorporan capas exteriores de tejido balístico Kevlar, Mylar aluminizado y Nomex para amortiguar colisiones orbitales hiperveloces."
+      }
     ],
-    fact: 'Para apretar un perno en la ISS, el astronauta debe anclarse en dos puntos simultáneamente — sin ellos, el torque lo haría girar. Cada EVA es un problema de mecánica newtoniana tridimensional en tiempo real, con un traje de 12 millones de dólares y el vacío del espacio como margen de error.'
+    "fact": "Para apretar una simple tuerca en el vacío exterior, un astronauta en microgravedad debe anclarse firmemente en dos puntos biomecánicos independientes; de lo contrario, el torque de reacción rotará su propio cuerpo en sentido opuesto según las leyes newtonianas de conservación del momento angular, convirtiendo cada tarea en un desafío físico."
   }
 ];
 

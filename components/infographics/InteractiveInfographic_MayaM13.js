@@ -86,201 +86,201 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'uaxactun-sitio',
-              bannerImage: '/assets/maya/infographic_m13/banner_uaxactun-sitio.webp',
-    title: 'El Sitio: Uaxactún',
-    color: '#A1887F',
-    btnImage: '/assets/maya/infographic_m13/btn_uaxactun-sitio.jpg',
-    image: '/assets/maya/infographic_m13/hero_uaxactun-sitio.jpg',
-    content: [
-      'Imagina una ciudad antigua oculta en la selva. Uaxactún, ubicada en Petén, Guatemala, es uno de los asentamientos más antiguos de la civilización maya. Sus constructores levantaron edificios desde el período Preclásico (900 a.C.). Usaban herramientas de piedra y conocimientos matemáticos para diseñar su entorno.',
-      "El nombre fue dado en 1920 por Sylvanus Morley. Encontró una estela que marcaba el 'Baktún 8', así que combinó 'Uaxac' (ocho) y 'Tún' (piedra). Así nació 'Ocho Piedras'. Su nombre original podría haber sido Siaan K'aan, que significa 'Nacida del Cielo'.",
-      'Durante siglos, Uaxactún fue un reino poderoso que compitió con la ciudad de Tikal, ubicada a 23 kilómetros. En el siglo IV, esta rivalidad culminó en un conflicto liderado por Tikal. Esto marcó la política maya de las tierras bajas.',
-      'Uaxactún destacó por su conocimiento astronómico. Sus plazas y edificios interactuaban de forma perfecta con el sol, las estrellas y las estaciones. Eran maestros del espacio y el tiempo, organizando la ciudad para la observación.',
-      'Su mayor logro fue la creación de un conjunto arquitectónico que funcionaba como laboratorio astronómico. Este complejo permitía a los sacerdotes saber con precisión cuándo sembrar, cosechar y realizar festivales. Se convirtió en un modelo copiado por muchas ciudades.',
+    "id": "uaxactun-sitio",
+    "bannerImage": "/assets/maya/infographic_m13/banner_uaxactun-sitio.webp",
+    "title": "El Sitio: Uaxactún",
+    "color": "#A1887F",
+    "btnImage": "/assets/maya/infographic_m13/btn_uaxactun-sitio.jpg",
+    "image": "/assets/maya/infographic_m13/hero_uaxactun-sitio.jpg",
+    "content": [
+      "Situado en el corazón de la densa selva del Petén guatemalteco, a escasos veinte kilómetros al norte de la monumental metrópoli de Tikal, el yacimiento arqueológico de Uaxactún ocupa un lugar de honor indiscutible en la historia de la arqueología maya. En las inscripciones jeroglíficas del periodo Clásico, la urbe era conocida bajo el nombre sagrado de Siaan K'aan, que traduce con elocuencia poética «Nacida del Cielo».",
+      "El nombre moderno de Uaxactún («Ocho Piedras») le fue asignado en 1916 por el insigne arqueólogo estadounidense Sylvanus Morley. Al explorar las ruinas cubiertas por la vegetación tropical, Morley descubrió en la Estela 9 una inscripción grabada con la fecha de Cuenta Larga 8.14.10.13.15, correspondiente al año 328 d.C., la cual representaba en aquel momento el registro calendárico del Baktún 8 más antiguo jamás descubierto en las tierras bajas.",
+      "Las investigaciones pioneras realizadas entre 1926 y 1937 por la Institución Carnegie de Washington, bajo la dirección de Oliver Ricketson y Frans Blom, sentaron las bases metodológicas de la arqueología científica moderna en la región. Las meticulosas excavaciones estratigráficas permitieron establecer la primera secuencia cerámica completa del área maya, dividida en las fases Mamom, Chicanel, Tzakol y Tepeu, aún vigente hoy en día.",
+      "Durante el periodo Preclásico Tardío y el Clásico Temprano, Uaxactún floreció como una potencia política independiente que dominaba las rutas comerciales entre las cuencas de El Mirador y el río Usumacinta. Sin embargo, en el año 378 d.C., la ciudad fue derrotada militarmente en una célebre batalla decisiva registrada en las estelas por el general teotihuacano Siyaj K'ak' («Nace el Fuego»), integrándose a la esfera de influencia de Tikal.",
+      "A pesar de su posterior subordinación política, Uaxactún mantuvo intacto su prestigio como uno de los centros de saber astronómico y arquitectónico más venerados del mundo maya. Sus templos y observatorios sirvieron como modelo prototípico para decenas de metrópolis mesoamericanas que replicaron durante más de un milenio la disposición espacial de sus plazas para conmemorar los ciclos perpetuos del astro solar."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: '¿Sabías que...?',
-        icon: 'clock',
-        text: 'En Uaxactún se descubrió una de las primeras pinturas al fresco del mundo maya, mostrando escenas cortesanas. También tiene arquitectura preclásica que prueba el genio de sus constructores.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el Grupo E de Uaxactún, los arqueólogos de la Carnegie descubrieron la célebre pirámide E-VII Sub oculta bajo una estructura tardía en ruinas. Al retirar el escombro exterior, apareció una joya intacta del Preclásico de color blanco inmaculado, decorada con dieciocho colosales mascarones de estuco que representan al dios solar y a la serpiente celestial."
       },
       {
-        label: 'Dato Astronómico',
-        icon: 'atom',
-        text: 'Los observatorios mayas no usaban lentes. Miraban el horizonte al amanecer o atardecer para medir los cambios de posición de los astros a simple vista.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La secuencia cerámica de Uaxactún fue la primera en utilizar análisis granulométricos y tipología de pastas de arcilla para fechar estratos arqueológicos en Mesoamérica. Las arcillas de la fase Chicanel (300 a.C. - 250 d.C.) contienen inclusiones volcánicas distintivas que indican un intercambio comercial activo con las tierras altas de Guatemala."
+      }
     ],
-    fact: 'Uaxactún tuvo ocupación continua desde el 900 a.C. Hasta el 900 d.C. Casi 2000 años. En comparación, muchos países modernos apenas tienen cientos de años.',
+    "fact": "La Estela 9 de Uaxactún, fechada el 9 de abril del 328 d.C., fue el primer monumento maya en confirmar que los antiguos pobladores contaban los días transcurridos desde una fecha cero primordial situada en el 3114 a.C. Este hallazgo revolucionó la cronología americana al probar la existencia de registros históricos exactos de más de mil setecientos años de antigüedad."
   },
   {
-    id: 'grupo-e-original',
-              bannerImage: '/assets/maya/infographic_m13/banner_grupo-e-original.webp',
-    title: 'El Grupo E Original',
-    color: '#2E7D32',
-    btnImage: '/assets/maya/infographic_m13/btn_grupo-e-original.jpg',
-    image: '/assets/maya/infographic_m13/hero_grupo-e-original.jpg',
-    content: [
-      'En 1924, el arqueólogo Frans Blom cartografió Uaxactún y nombró los conjuntos de edificios con letras. Al llegar a una plaza con cuatro estructuras, la llamó "Grupo E".',
-      'Blom notó una alineación particular. Había una pirámide al oeste y una plataforma al este con tres templos. Descubrió que los edificios marcaban las salidas del sol en solsticios y equinoccios.',
-      'El Grupo E era un reloj solar gigante. Para los mayas, la arquitectura era su telescopio. El diseño mostraba ángulos exactos entre la pirámide y los templos.',
-      'Este hallazgo hizo que el "Grupo E"se convirtiera en un término arqueológico oficial. Si se encuentra un complejo similar con pirámide al oeste y plataforma al este, se clasifica como"Complejo Tipo Grupo E".',
-      'Esta revelación demostró que las ciudades mayas estaban planificadas matemáticamente desde sus inicios. No solo construían edificios, sino instrumentos astronómicos habitables.',
+    "id": "grupo-e-original",
+    "bannerImage": "/assets/maya/infographic_m13/banner_grupo-e-original.webp",
+    "title": "El Grupo E Original",
+    "color": "#2E7D32",
+    "btnImage": "/assets/maya/infographic_m13/btn_grupo-e-original.jpg",
+    "image": "/assets/maya/infographic_m13/hero_grupo-e-original.jpg",
+    "content": [
+      "Hacia el año 1924, el explorador Oliver Ricketson identificó en el sector oriental de Uaxactún un conjunto arquitectónico cuya singular disposición espacial no se parecía a los recintos residenciales o palaciegos convencionales. Denominado técnicamente como Grupo E, este complejo cívico-ceremonial demostró ser el primer observatorio solar institucionalizado documentado y analizado científicamente en toda la América precolombina.",
+      "El conjunto arquitectónico está estructurado en torno a una espaciosa plaza nivelada de caliza orientada según los ejes cardinales. En el costado occidental se erige una pirámide radial aislada (conocida como la Estructura E-VII), provista de escalinatas en sus cuatro fachadas. En el costado este de la plaza, directamente frente a la pirámide, se levanta una plataforma alargada de norte a sur que sostiene tres pequeños templos alineados.",
+      "La genialidad de este complejo radica en su geometría astronómica interactiva. Si un sacerdote o agrimensor se sitúa en el punto central de la escalinata superior de la pirámide occidental y dirige su mirada hacia la plataforma oriental, los tres templos actúan como un gigantesco horizonte artificial calibrado para enmarcar las posiciones extremas y medias del disco solar a lo largo de las cuatro estaciones del año.",
+      "Este descubrimiento conmocionó al mundo académico de la década de 1920, ya que probó que los constructores mayas del periodo Preclásico (hacia el 300 a.C.) ya poseían conocimientos geométricos y astronómicos extraordinariamente avanzados. Lejos de ser templos construidos al azar, el Grupo E fue planificado y ejecutado como una máquina arquitectónica monumental consagrada a la medición física del tiempo solar.",
+      "A raíz de estas investigaciones fundacionales, la disciplina arqueológica adoptó universalmente el término «Grupo E» o «complejo de conmemoración astronómica» para clasificar a cualquier conjunto mesoamericano que reproduzca esta misma configuración espacial bimembre, consolidando a Uaxactún como el punto de referencia tipológico ineludible para el estudio de la arquitectura sagrada en el continente."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: 'En la Arqueología',
-        icon: 'clock',
-        text: 'Frans Blom también exploró Palenque y Chiapas. Junto a Oliver La Farge, realizó expediciones que revelaron ciudades mayas ocultas en la selva.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Para comprobar el funcionamiento del Grupo E, Oliver Ricketson acampó en la plaza de Uaxactún durante el equinoccio de primavera de 1928. Al amanecer del 21 de marzo, observó cómo el primer rayo de sol emergía exactamente sobre la cúspide del templo central oriental, confirmando de forma irrefutable la teoría del alineamiento solar deliberado."
       },
       {
-        label: 'Mecánica del Observatorio',
-        icon: 'atom',
-        text: 'El Grupo E transforma el movimiento de la Tierra en el movimiento visible del sol. Desde la pirámide oeste, el sol parece moverse a lo largo de los templos orientales.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las excavaciones demostraron que la plataforma oriental del Grupo E fue reconstruida y ampliada al menos cinco veces a lo largo de ocho siglos. En cada remodelación, los arquitectos mayas recalibraron meticulosamente las alturas y vanos de los tres templos para compensar los sutiles cambios en la línea visual provocados por la elevación del suelo de la plaza."
+      }
     ],
-    fact: 'El Grupo E era centro de ceremonias públicas. Los sacerdotes observaban el sol naciente frente a multitudes, uniendo ciencia y religión.',
+    "fact": "La pirámide radial E-VII Sub de Uaxactún, sepultada intacta bajo la pirámide posterior E-VII, mide apenas 8 metros de altura pero cuenta con 4 escalinatas cardinales y 18 mascarones de estuco modelado de más de dos metros de ancho cada uno. Es una de las obras cumbres del arte preclásico maya mejor preservadas que han sobrevivido hasta nuestros días."
   },
   {
-    id: 'tres-templos',
-              bannerImage: '/assets/maya/infographic_m13/banner_tres-templos.webp',
-    title: 'Los Tres Templos',
-    color: '#F8BBD0',
-    btnImage: '/assets/maya/infographic_m13/btn_tres-templos.jpg',
-    image: '/assets/maya/infographic_m13/hero_tres-templos.jpg',
-    content: [
-      'En la Plaza del Grupo E, una plataforma este soporta tres edificios: las Estructuras E-I, E-II y E-III. Funcionaban como miras astronómicas de piedra.',
-      'El templo norte marca el solsticio de verano, el 21 de junio. Un observador en la pirámide oeste vería al sol salir detrás de este templo. Anunciaba el punto máximo del ciclo cálido.',
-      'El templo central marca los equinoccios de marzo y septiembre, días en que la luz y la oscuridad duran lo mismo. El sol sale por el centro de este edificio.',
-      'El templo sur marca el solsticio de invierno, alrededor del 21 de diciembre. A partir de esa fecha, los días comienzan a alargarse de nuevo.',
-      'Los constructores crearon un marco para el recorrido del sol. El sol se mueve de un templo a otro a lo largo del año, usando el horizonte oriental como pantalla.',
+    "id": "tres-templos",
+    "bannerImage": "/assets/maya/infographic_m13/banner_tres-templos.webp",
+    "title": "Los Tres Templos",
+    "color": "#F8BBD0",
+    "btnImage": "/assets/maya/infographic_m13/btn_tres-templos.jpg",
+    "image": "/assets/maya/infographic_m13/hero_tres-templos.jpg",
+    "content": [
+      "La plataforma oriental del Grupo E de Uaxactún sostiene sobre su terraza superior tres templos independientes dispuestos en una estricta hilera continua de norte a sur: la Estructura E-I en el extremo septentrional, la Estructura E-II en la posición central y la Estructura E-III en el extremo meridional. Cada uno de estos santuarios de piedra caliza fue diseñado con dimensiones y orientaciones específicas para cumplir un rol astronómico único.",
+      "El Templo Central (E-II) es el edificio más prominente y elevado de la tríada. Levantado sobre el eje este-oeste exacto que corta la pirámide occidental, su vano de acceso principal mira hacia el poniente, recibiendo de frente la mirada del observador situado en la pirámide. Este templo estaba consagrado a la conmemoración de los equinoccios de primavera y otoño, momentos en que el día y la noche alcanzan idéntica duración de doce horas.",
+      "El Templo Norte (E-I) se ubica en el límite septentrional de la plataforma corrida. Su función geométrica era señalar el punto extremo hacia el cual se desplaza la salida del Sol en el horizonte durante el solsticio de verano, cuando el astro rey alcanza su declinación boreal máxima (+23.5°). Este evento marcaba el día más largo del año y el apogeo de la temporada de lluvias torrenciales indispensable para los cultivos selváticos.",
+      "En contraposición simétrica, el Templo Sur (E-III) se erige en el extremo meridional de la terraza para marcar el punto de salida solar durante el solsticio de invierno, momento en que el Sol alcanza su declinación austral máxima (-23.5°). Esta fecha señalaba la noche más larga del año, el inicio de las mañanas frías y brumosas en el Petén y el descenso paulatino del nivel de las aguas en los bajos y lagunas estacionales.",
+      "Los tres templos funcionaban así como los postes indicadores de una escala graduada monumental. Al contemplar la procesión anual del Sol saliendo sucesivamente sobre el templo norte, el templo central y el templo sur, los sacerdotes y el pueblo congregado en la plaza leían en el perfil arquitectónico el avance inexorable de las estaciones, transformando la piedra labrada en un calendario solar viviente y comprensible para todos."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: 'Geometría Exacta',
-        icon: 'atom',
-        text: 'La distancia entre la pirámide y los templos requería matemáticas complejas. Los arquitectos calcularon la amplitud angular del movimiento solar para espaciar los templos.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Bajo los pisos de estuco de los tres templos del Grupo E, los arqueólogos descubrieron ricas ofrendas votivas depositadas durante su consagración en el Preclásico. Entre ellas destacaban vasijas polícromas, navajillas de obsidiana verde de Pachuca y placas de jade pulido, colocadas para sacralizar los puntos solsticiales y equinocciales del horizonte."
       },
       {
-        label: '¿Sabías que...?',
-        icon: 'clock',
-        text: 'En su apogeo, estos templos estaban cubiertos de estuco y pintados de rojo. El sol brillante coronaba edificios rojos en medio de la selva.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La distancia angular entre el solsticio de verano y el solsticio de invierno vista desde la latitud de Uaxactún (17° 23' N) es de aproximadamente 49 grados sobre el horizonte oriental. Los constructores mayas calcularon la longitud total de la plataforma oriental (unos 70 metros) para que los templos norte y sur coincidieran con esta apertura angular exacta."
+      }
     ],
-    fact: 'El diseño de tres templos se volvió sagrado e influyó en otros edificios. En su religión, la creación del mundo se marcaba con tres piedras celestiales, el Fogón de la Creación.',
+    "fact": "La alineación visual de los tres templos de Uaxactún no solo servía para el Sol, sino que permitía registrar ortos de estrellas brillantes. Durante el periodo Clásico Temprano, la estrella Sirio (la más luminosa del firmamento) y las estrellas del cinturón de Orión salían en alineación visual directa con el Templo Sur (E-III) durante las noches de otoño e invierno."
   },
   {
-    id: 'funcionamiento-solar',
-              bannerImage: '/assets/maya/infographic_m13/banner_funcionamiento-solar.webp',
-    title: 'Cómo Funciona',
-    color: '#FF8F00',
-    btnImage: '/assets/maya/infographic_m13/btn_funcionamiento-solar.jpg',
-    image: '/assets/maya/infographic_m13/hero_funcionamiento-solar.jpg',
-    content: [
-      'Imagina ser un astrónomo maya. Te sitúas en la Estructura E-VII-sub, una pirámide al oeste de la plaza. Te preparas al amanecer para observar el horizonte oriental.',
-      'Desde la cima, miras la plataforma con los tres templos. Registras en qué punto sale el sol cada día a lo largo de los meses.',
-      'La salida del sol se desplaza por el horizonte. En junio, amanece en el templo norte. En septiembre, en el templo central, y en diciembre, en el templo sur.',
-      'Este viaje marca el ciclo solar. El Grupo E anunciaba fechas importantes para la agricultura, indicando el inicio de las lluvias y el tiempo de siembra.',
-      'El sistema dependía del punto de vista. El observador debía estar en el eje de la pirámide oeste. La arquitectura guiaba a los astrónomos al punto exacto para la medición.',
+    "id": "funcionamiento-solar",
+    "bannerImage": "/assets/maya/infographic_m13/banner_funcionamiento-solar.webp",
+    "title": "Cómo Funciona",
+    "color": "#FF8F00",
+    "btnImage": "/assets/maya/infographic_m13/btn_funcionamiento-solar.jpg",
+    "image": "/assets/maya/infographic_m13/hero_funcionamiento-solar.jpg",
+    "content": [
+      "El principio operativo del observatorio solar del Grupo E combina una elegante simplicidad geométrica con una rigurosa comprensión de la mecánica celeste heliocéntrica. Desde la perspectiva de un observador terrenal, el punto por donde sale el Sol en el horizonte oriental no es estático, sino que oscila continuamente hacia el norte y hacia el sur a lo largo de un ciclo perpetuo de 365 días impulsado por la inclinación axial de la Tierra.",
+      "Para utilizar el dispositivo, el astrónomo maya se colocaba de pie sobre la plataforma superior de la pirámide radial E-VII al amanecer. Utilizando un gnomón vertical o una mirilla de madera fija en el suelo como punto de mira cero, dirigía la vista hacia el horizonte oriental donde se recortaban las siluetas de los tres templos alineados sobre la plataforma, esperando el primer destello de luz solar que quebraba la penumbra matinal.",
+      "Durante el equinoccio de primavera (alrededor del 21 de marzo), el disco solar emergía exactamente detrás de la cúspide del Templo Central (E-II). Con el paso de las semanas, la salida del Sol se desplazaba día tras día hacia la izquierda (norte), alcanzando la esquina exterior del Templo Norte (E-I) el 21 de junio en el solsticio de verano, momento en que el astro frenaba su avance aparente para iniciar su viaje de regreso al sur.",
+      "Tres meses después, hacia el 22 de septiembre en el equinoccio de otoño, el Sol salía nuevamente sobre el Templo Central. Continuaba su marcha hacia la derecha (sur) hasta posarse el 21 de diciembre sobre la cumbre del Templo Sur (E-III) en el solsticio de invierno, donde se detenía una vez más antes de emprender el retorno hacia el norte, completando un ciclo solar trópico perfecto que reiniciaba la cuenta calendárica agrícola.",
+      "Además de marcar las cuatro fechas cardinales del año astronómico, el intervalo de tiempo que tardaba el Sol en viajar de un templo al otro permitía dividir el año en periodos rituales de 46, 65 y 91 días. Esta división matemática interna sincronizaba los cómputos de la Rueda Calendárica de 52 años y del almanaque sagrado Tzolk'in de 260 días, transformando al Grupo E en un gigantesco ordenador astronómico analógico a cielo abierto."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: 'Calendario Agrícola',
-        icon: 'clock',
-        text: 'Construir el Grupo E aseguraba la producción de alimentos. Conocer el momento exacto para sembrar antes de las lluvias evitaba la hambruna.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La palabra «solsticio» proviene del latín solstitium, que significa «Sol detenido». En los días previos y posteriores al 21 de junio y al 21 de diciembre, el punto de salida del Sol parece quedarse completamente inmóvil sobre los templos norte y sur de Uaxactún durante casi una semana, un fenómeno que los sacerdotes mayas vigilaban con suma devoción."
       },
       {
-        label: 'Ilusión de Movimiento',
-        icon: 'clock',
-        text: 'Aunque vemos al sol moverse, es la Tierra la que orbita. Los mayas midieron el resultado visible de esta mecánica celeste sin tecnología moderna.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La oscilación estacional del punto de salida solar se debe a la inclinación del eje de rotación de la Tierra, que forma un ángulo de 23.44 grados respecto al plano de su órbita alrededor del Sol. Sin esta inclinación axial planetaria, no existirían las cuatro estaciones del año y el Sol saldría siempre por el mismo punto del horizonte los 365 días del año."
+      }
     ],
-    fact: 'Estudios de arqueólogos como Ivan Šprajc muestran que los Grupos E también marcaban fechas agrarias importantes, como el 20 de febrero o el 30 de abril.',
+    "fact": "Aunque las mediciones arqueoastronómicas modernas indican que en Uaxactún la alineación de los equinoccios presenta un ligero desvío de unos pocos días respecto al equinoccio astronómico verdadero debido a la refracción atmosférica sobre la selva, el complejo funcionaba con perfecta efectividad como un calendario observacional práctico para la agricultura comunal."
   },
   {
-    id: 'grupos-e-mundo-maya',
-              bannerImage: '/assets/maya/infographic_m13/banner_grupos-e-mundo-maya.webp',
-    title: 'Grupos E en el Mundo Maya',
-    color: '#039BE5',
-    btnImage: '/assets/maya/infographic_m13/btn_grupos-e-mundo-maya.jpg',
-    image: '/assets/maya/infographic_m13/hero_grupos-e-mundo-maya.jpg',
-    content: [
-      'El diseño del Grupo E se replicó en Mesoamérica. Los arqueólogos han descubierto más de 100 de estos complejos astronómicos en la región.',
-      'Se encuentran en Chiapas, Guatemala y Belice. Todos tienen una estructura de observación al poniente y una plataforma al oriente, siendo un diseño estandarizado.',
-      'Con el crecimiento de las dinastías en el Período Clásico, el significado cambió. Ciudades como Tikal construyeron Grupos E que ya no apuntaban a los solsticios con exactitud.',
-      'Estos Grupos E tardíos pasaron de ser observatorios a escenarios rituales. Servían para conectar a los reyes con el poder del sol y afirmar su autoridad.',
-      'La estandarización demuestra la conexión entre las ciudades mayas. Eran una red de arquitectos que compartían diseños, probando su unidad cultural.',
+    "id": "grupos-e-mundo-maya",
+    "bannerImage": "/assets/maya/infographic_m13/banner_grupos-e-mundo-maya.webp",
+    "title": "Grupos E en el Mundo Maya",
+    "color": "#039BE5",
+    "btnImage": "/assets/maya/infographic_m13/btn_grupos-e-mundo-maya.jpg",
+    "image": "/assets/maya/infographic_m13/hero_grupos-e-mundo-maya.jpg",
+    "content": [
+      "Tras el descubrimiento y descripción del Grupo E de Uaxactún, las exploraciones arqueológicas en Mesoamérica comenzaron a identificar complejos arquitectónicos con patrones espaciales prácticamente idénticos en cientos de asentamientos. Lejos de constituir una rareza local aislada, los complejos de conmemoración astronómica tipo Grupo E representaron el modelo canónico de planificación cívica en las tierras bajas durante más de mil años.",
+      "Hasta la fecha, los arqueólogos han documentado más de 150 complejos de tipo Grupo E dispersos por Guatemala, Belice, México y Honduras. Entre los más colosales y destacados figuran la Plaza del Mundo Perdido en Tikal, el Grupo E de Calakmul en Campeche, el complejo de Caracol en Belice, y los conjuntos monumentales de Nakbé, San Bartolo, El Zotz y Yaxhá, demostrando la universalidad de este concepto arquitectónico en toda la civilización.",
+      "En ciudades de gran jerarquía como Tikal, el complejo del Mundo Perdido alcanzó proporciones monumentales gigantescas. Su pirámide radial principal (Estructura 5C-54) se eleva a más de treinta metros de altura y domina una plataforma oriental de más de cien metros de longitud, funcionando como el gran teatro ceremonial y astronómico donde la dinastía reinante convocaba a multitudes para presenciar los milagros solares del calendario.",
+      "Investigaciones recientes han revelado que muchos de estos Grupos E evolucionaron con los siglos: aunque comenzaron en el Preclásico como observatorios solares funcionales de rigurosa precisión geométrica, durante el Clásico Tardío adquirieron un valor predominantemente simbólico y conmemorativo, funcionando como templos dinásticos donde se erigían estelas reales para celebrar los finales de período calendárico de 20 años (K'atunes).",
+      "La dispersión geográfica uniforme de los Grupos E confirma la existencia de profundas redes de intercambio cultural, religioso y científico que unificaban a los pueblos mayas a pesar de sus rivalidades militares. Construir un Grupo E en el corazón de una ciudad proclamaba ante los vecinos que sus gobernantes poseían la legitimidad cósmica y el conocimiento sagrado para armonizar a su comunidad con las leyes eternas del universo."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: 'Sitios Emblemáticos',
-        icon: 'atom',
-        text: 'Se han encontrado Grupos E en Nakbé, El Mirador y Caracol. Muchos siguen ocultos en la selva, descubiertos ahora por tecnología LIDAR.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el sitio arqueológico de San Bartolo, Guatemala, las excavaciones dentro de un complejo tipo Grupo E sacaron a la luz en 2001 los murales pintados más antiguos del mundo maya (fechados hacia el 100 a.C.). Las pinturas murales representan al Dios del Maíz y escenas de la creación del cosmos, confirmando la íntima unión entre mitología y arquitectura solar."
       },
       {
-        label: '¿Sabías que...?',
-        icon: 'atom',
-        text: 'Que distintos reinos independientes construyeran los mismos complejos astronómicos es un misterio de la arqueología que demuestra su gran cohesión cultural.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El análisis espacial mediante Sistemas de Información Geográfica (SIG) revela que la orientación de la mayoría de los Grupos E de las tierras bajas mayas presenta una ligera desviación de entre 1° y 4° al norte del este verdadero. Esta inclinación intencional permitía sincronizar las líneas de mira con fechas específicas del calendario agrícola de 260 días."
+      }
     ],
-    fact: 'Aguada Fénix en Tabasco, anterior al 1000 a.C., presenta una plataforma orientada este-oeste. Esto indica que la importancia de las alineaciones solares es más antigua de lo pensado.',
+    "fact": "El complejo del Mundo Perdido en Tikal es el Grupo E de mayor volumen constructivo conocido en Mesoamérica. Su plataforma oriental y pirámide radial superaron las seis fases de remodelación a lo largo de más de mil doscientos años ininterrumpidos (desde el 600 a.C. hasta el 850 d.C.), convirtiéndose en el núcleo ceremonial más antiguo de la gran metrópoli guatemalteca."
   },
   {
-    id: 'ceibal-mas-antiguo',
-              bannerImage: '/assets/maya/infographic_m13/banner_ceibal-mas-antiguo.webp',
-    title: 'Ceibal: El Más Antiguo',
-    color: '#5D4037',
-    btnImage: '/assets/maya/infographic_m13/btn_ceibal-mas-antiguo.jpg',
-    image: '/assets/maya/infographic_m13/hero_ceibal-mas-antiguo.jpg',
-    content: [
-      'Por mucho tiempo se creyó que Uaxactún fue el primer Grupo E. Sin embargo, excavaciones recientes en Ceibal cambiaron la historia en 2013.',
-      'Bajo las pirámides de Ceibal, hallaron un complejo Grupo E que data del 1000 a 950 a.C. Es más antiguo que Uaxactún y los centros olmecas como La Venta.',
-      'En el 950 a.C. Ceibal tenía montículos de tierra con templos de madera. Aunque los materiales eran sencillos, la matemática de las alineaciones ya estaba presente.',
-      'La observación del sol comenzó antes de que los mayas construyeran bóvedas de piedra. La planificación astronómica fue el primer proyecto comunitario maya.',
-      'Este descubrimiento sugiere que las ideas astronómicas surgieron de comunidades interactuando y experimentando. El Grupo E fue el resultado de generaciones de observaciones.',
+    "id": "ceibal-mas-antiguo",
+    "bannerImage": "/assets/maya/infographic_m13/banner_ceibal-mas-antiguo.webp",
+    "title": "Ceibal: El Más Antiguo",
+    "color": "#5D4037",
+    "btnImage": "/assets/maya/infographic_m13/btn_ceibal-mas-antiguo.jpg",
+    "image": "/assets/maya/infographic_m13/hero_ceibal-mas-antiguo.jpg",
+    "content": [
+      "Durante casi un siglo, la comunidad científica asumió que los complejos de conmemoración astronómica tipo Grupo E se habían originado en el Petén central en torno al 300 a.C., durante el auge del periodo Preclásico Tardío. Sin embargo, los descubrimientos revolucionarios efectuados en el sitio arqueológico de Ceibal (Seibal), a orillas del río La Pasión en Guatemala, transformaron por completo los paradigmas cronológicos mesoamericanos.",
+      "A partir del año 2005, el Proyecto Arqueológico Ceibal-Petexbatún, dirigido por los arqueólogos Takeshi Inomata y Daniela Triadan, llevó a cabo excavaciones estratigráficas de alta precisión en la Plaza Central del Grupo A de Ceibal. Empleando pozos profundos y decenas de dataciones por radiocarbono de espectrometría de masas con aceleradores (AMS), el equipo descubrió los cimientos de un complejo Grupo E de antigüedad insospechada.",
+      "Las dataciones científicas concluyeron de forma contundente que la primera versión del Grupo E de Ceibal fue construida alrededor del año 950 a 1000 a.C., en el periodo Preclásico Medio. Este resultado situó el origen de los complejos astronómicos mayas casi siete siglos antes de lo estimado tradicionalmente, convirtiendo al conjunto de Ceibal en el complejo ceremonial planificado más antiguo documentado en todas las tierras bajas mayas.",
+      "Este hallazgo arrojó luz decisiva sobre el enigmático proceso de transición social entre las sociedades de cazadores-recolectores móviles y los primeros asentamientos aldeanos sedentarios. Los datos revelaron que las poblaciones preclásicas no comenzaron viviendo en aldeas agrícolas permanentes para luego edificar templos, sino que primero se congregaron como comunidad para construir este observatorio ritual colectivo conmemorativo.",
+      "Asimismo, el descubrimiento de Ceibal reabrió el debate sobre las relaciones tempranas entre la civilización maya y la cultura olmeca de la costa del Golfo de México. El Grupo E de Ceibal comparte patrones espaciales y ejes astronómicos con el centro ceremonial olmeca de La Venta, sugiriendo un horizonte de innovación intercultural compartida donde diversos pueblos mesoamericanos colaboraron en la creación del calendario sagrado."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: 'Cita en la Ciencia',
-        icon: 'atom',
-        text: 'La investigación en Ceibal fue liderada por Takeshi Inomata y publicada en "Science". Dataciones de radiocarbono probaron los orígenes tempranos del complejo.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el eje central del Grupo E de Ceibal, los arqueólogos desenterraron una serie de ofrendas ceremoniales que datan del 900 a.C., compuestas por hermosas hachas pulidas de jadeíta verde dispuestas en forma cruciforme que apuntan hacia los cuatro puntos cardinales, confirmando que la consagración astronómica de los rumbos del mundo comenzó hace tres mil años."
       },
       {
-        label: 'De Tierra a Piedra',
-        icon: 'clock',
-        text: 'Los mayas comenzaron construyendo con tierra compactada. Siglos después, aprendieron a revestir los edificios masivos con bloques de piedra cortada.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La técnica de datación por radiocarbono con espectrometría de masas con aceleradores (AMS) permite fechar fragmentos microscópicos de carbón vegetal con un margen de error menor a veinte años. En Ceibal se procesaron más de 150 muestras de carbón extraídas de los pisos de arcilla más profundos, garantizando una robustez cronológica sin precedentes en la arqueología maya."
+      }
     ],
-    fact: 'En la plaza temprana de Ceibal, se encontraron hachas de jadeíta enterradas en forma de cruz. El jade tuvo que ser importado, demostrando la riqueza del centro.',
+    "fact": "La construcción del Grupo E de Ceibal hacia el 1000 a.C. implicó la excavación y nivelación de más de diez mil metros cúbicos de lecho rocoso y tierra arcillosa en una meseta natural sobre el río La Pasión. Esta colosal obra colectiva fue completada por comunidades que todavía no utilizaban cerámica avanzada ni herramientas de metal, guiadas únicamente por la fe cósmica."
   },
   {
-    id: 'legado-arquitectonico',
-              bannerImage: '/assets/maya/infographic_m13/banner_legado-arquitectonico.webp',
-    title: 'El Legado de los Grupos E',
-    color: '#283593',
-    btnImage: '/assets/maya/infographic_m13/btn_legado-arquitectonico.jpg',
-    image: '/assets/maya/infographic_m13/hero_legado-arquitectonico.jpg',
-    content: [
-      'Al estudiar los Grupos E, los científicos concluyen que los mayas fueron astrónomos rigurosos desde sus orígenes. Su pensamiento empírico rivaliza con otras civilizaciones antiguas.',
-      'Los mayas construyeron plazas ceremoniales para comprender los ritmos universales. Era un proyecto científico monumental para su tiempo.',
-      'No separaron la ciencia del arte y la comunidad. El Grupo E era un lugar de encuentro donde se unían ciencia y religión frente a la sociedad.',
-      'La tecnología LIDAR sigue revelando Grupos E ocultos bajo la selva. Esto confirma la importancia de este diseño en las ciudades mayas.',
-      'El Grupo E muestra cómo la humanidad busca medir el tiempo y comprender el cielo para asegurar la supervivencia agrícola y cultural.',
+    "id": "legado-arquitectonico",
+    "bannerImage": "/assets/maya/infographic_m13/banner_legado-arquitectonico.webp",
+    "title": "El Legado de los Grupos E",
+    "color": "#283593",
+    "btnImage": "/assets/maya/infographic_m13/btn_legado-arquitectonico.jpg",
+    "image": "/assets/maya/infographic_m13/hero_legado-arquitectonico.jpg",
+    "content": [
+      "El concepto arquitectónico del Grupo E constituye una de las contribuciones más trascendentales y duraderas del genio mesoamericano al patrimonio cultural universal. Al integrar la geometría del espacio edificado con los movimientos perpetuos de la bóveda celeste, los sabios y alarifes mayas inventaron un modelo de urbanismo sagrado que transformaba a la comunidad entera en partícipe directa de los grandes ritmos cósmicos del universo.",
+      "La perdurabilidad de los Grupos E a lo largo de más de dos mil años de historia prehispánica —desde los orígenes arcaicos en Ceibal hacia el 1000 a.C. hasta el ocaso del periodo Clásico cerca del 900 d.C.— testimonia la incomparable solidez institucional de la astronomía maya. Pocas civilizaciones en la historia humana mantuvieron una continuidad arquitectónica tan estricta y devota al servicio de la medición del tiempo solar.",
+      "En el ámbito de la ciencia arqueológica contemporánea, el estudio de los Grupos E ha sido completamente revolucionado por la tecnología de escaneo láser LIDAR. Entre 2018 y 2024, consorcios internacionales de investigación descubrieron cientos de complejos de tipo Grupo E sepultados bajo la selva virgen del norte de Guatemala y el sur de México que habían permanecido completamente invisibles a las exploraciones de superficie.",
+      "Estos nuevos mapas satelitales tridimensionales han demostrado que los Grupos E no eran privilegios exclusivos de las grandes capitales dinásticas, sino centros ceremoniales estandarizados que estructuraban el territorio de pequeñas aldeas y asentamientos secundarios, actuando como las escuelas cívicas y calendáricas fundamentales donde las poblaciones campesinas aprendían a sincronizar sus vidas con el cosmos.",
+      "Hoy en día, contemplar el amanecer en Uaxactún o en el Mundo Perdido de Tikal sigue siendo una experiencia profundamente sobrecogedora para científicos y visitantes de todo el planeta. La perfecta armonía entre los templos milenarios de piedra caliza y el disco solar que despunta sobre el horizonte selvático nos recuerda la capacidad de los seres humanos para encontrar sentido, belleza y orden en las leyes inmutables de la naturaleza."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: 'Alineaciones Complejas',
-        icon: 'clock',
-        text: 'Mediciones recientes indican que las alineaciones también marcaban fechas críticas de la siembra y eventos lunares, revelando una gran profundidad científica.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los habitantes actuales de la comunidad forestal de Uaxactún, descendientes directos de los antiguos pobladores mayas, colaboran activamente como guías arqueológicos y custodios de la Reserva de la Biosfera Maya, combinando la cosecha sustentable de pimienta gorda, xate y chicle con la preservación del emblemático Grupo E de sus antepasados."
       },
       {
-        label: '¿Sabías que...?',
-        icon: 'clock',
-        text: 'Urbanistas contemporáneos en Latinoamérica integran ejes solares en parques y plazas. Es un tributo al ingenio arquitectónico prehispánico.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las exploraciones con tecnología LIDAR en la cuenca de El Mirador y el valle de Calakmul revelaron en 2020 que los Grupos E estaban interconectados mediante calzadas elevadas de piedra caliza (sacbeob) que se extendían en línea recta por decenas de kilómetros a través de pantanos y selvas, creando una red regional integrada de orientación astronómica y comercial."
+      }
     ],
-    fact: 'Los mayas dominaron la ingeniería con el uso de morteros de cal y el cálculo de la luz antes de construir sus majestuosos templos.',
-  },
+    "fact": "La orientación solar del Grupo E ejerció una influencia directa en el diseño de los centros urbanos olmecas, zapotecos y del Altiplano Central mexicano, incluyendo la gran metrópoli de Teotihuacan. El trazado de la Calzada de los Muertos y la orientación de la Pirámide del Sol reflejan principios de alineación solar y topográfica nacidos en los Grupos E mayas del Preclásico."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

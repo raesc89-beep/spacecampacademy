@@ -87,144 +87,200 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'tzab-ek-nombre',
-              bannerImage: '/assets/maya/infographic_m10/banner_tzab-ek-nombre.webp',
-    title: 'Tzab-ek: La Serpiente',
-    color: '#E8EAF6',
-    btnImage: '/assets/maya/infographic_m10/btn_tzab-ek-nombre.jpg',
-    image: '/assets/maya/infographic_m10/hero_tzab-ek-nombre.jpg',
-    content: [
-      'Imagina que miras el cielo nocturno y ves un grupo de estrellas. Este racimo parece una nube de luz. Los astrónomos mayas observaron este grupo hace miles de años. Lo llamaron Tzab-ek, que significa la cola de la serpiente. Cuando miras a estas estrellas, parecen los segmentos de un cascabel.',
-      'Hoy conocemos a este grupo como las Pléyades. Es un cúmulo estelar abierto, lo que significa que son estrellas jóvenes que nacieron juntas. Para los mayas, este grupo no era solo un adorno. Era una de las constelaciones más importantes de su cultura. Las observaban cada noche.',
-      'Aunque las llamamos Siete Hermanas, la cantidad de estrellas que ves depende del cielo. En una noche despejada, podrías llegar a contar hasta nueve estrellas. Los sabios mayas, que tenían cielos oscuros, podían ver muchos detalles. Construyeron ciudades para seguir el camino de estas estrellas.',
-      'El cielo funcionaba como un reloj gigante para los observadores. Tzab-ek era como la manecilla de este reloj. Al observar dónde salían estas estrellas, los sacerdotes podían saber en qué parte del año estaban. Esto era vital para sobrevivir y saber cuándo cambiarían las estaciones.',
-      'Piensa en el cielo como un mapa en movimiento. Las Pléyades se encuentran en la constelación de Tauro. Para encontrar a Tzab-ek, solo tienes que buscar una forma de cucharón. Es tan distintiva que siempre la encontrarás rápidamente.'
+    "id": "tzab-ek-nombre",
+    "bannerImage": "/assets/maya/infographic_m10/banner_tzab-ek-nombre.webp",
+    "title": "Tzab-ek: La Serpiente",
+    "color": "#E8EAF6",
+    "btnImage": "/assets/maya/infographic_m10/btn_tzab-ek-nombre.jpg",
+    "image": "/assets/maya/infographic_m10/hero_tzab-ek-nombre.jpg",
+    "content": [
+      "En la astronomía maya clásica, el cúmulo estelar abierto de las Pléyades recibía el nombre jeroglífico de Tzab o Tzab-ek, término que en maya yucateco traduce literalmente «los cascabeles» de la serpiente de cascabel (Crotalus durissus durissus). Este grupo estelar compacto, situado en la constelación moderna de Tauro, no era contemplado como un conjunto de ninfas o hermanas mitológicas, sino como el apéndice córneo y vibrante de un reptil celeste protector.",
+      "Los sacerdotes observadores asociaron la apariencia visual granulada y centelleante del cúmulo con los segmentos de queratina que forman el cascabel articulado de estos ofidios venenosos. Al igual que el sonido del cascabel en la selva advierte a los caminantes sobre un peligro inminente o anuncia un cambio brusco, la aparición de Tzab-ek en el horizonte oriental alertaba a las poblaciones sobre transformaciones meteorológicas y temporales vitales.",
+      "En las inscripciones del Clásico Tardío halladas en sitios como Toniná y Cobá, el glifo de Tzab aparece formado por un signo que simula tres círculos entrelazados o un racimo de elementos globulares, reflejando fielmente la silueta telescópica y a simple vista de las estrellas más brillantes del grupo. Esta convención iconográfica perduró durante más de un milenio, consolidando una tradición observacional uniforme en toda la región maya.",
+      "La serpiente en Mesoamérica representaba el agua terrestre, la fertilidad de los campos de cultivo y la bóveda celeste en movimiento continuo. Al adjudicarle un cascabel estelar en la figura de Tzab-ek, los sabios mayas unieron orgánicamente la zoología de la selva tropical con la mecánica del cielo nocturno, otorgando a este pequeño grupo de estrellas un rol fundamental en la estructura simbólica y ritual de la sociedad.",
+      "Diversos estudios arqueológicos en la región del Puuc yucateco han revelado cómo las fachadas de palacios y pirámides, como el Cuadrángulo de las Monjas en Uxmal, integran serpientes ondulantes de piedra tallada cuyos extremos convergen hacia puntos astronómicos clave. En estos frisos de caliza, el cascabel terminal apunta con frecuencia hacia las direcciones por donde emergen las Pléyades durante fechas señaladas del calendario ritual."
     ],
-    expandables: [
-      { label: 'El viaje de la luz', icon: 'clock', text: 'Cuando miras a Tzab-ek hoy, la luz que entra a tus ojos comenzó su viaje hace aproximadamente cuatrocientos cuarenta años. Esto significa que estás viendo las estrellas tal como eran en el pasado. Es como recibir una carta que tardó siglos en llegar viajando a la velocidad máxima permitida por el cosmos infinito.' },
-      { label: 'Cúmulos estelares jóvenes', icon: 'atom', text: 'Las Pléyades son estrellas muy jóvenes en términos astronómicos. Tienen solo cien millones de años. Eso suena a mucho tiempo, pero nuestro Sol tiene cuatro mil quinientos millones de años. Si el Sol fuera un abuelo, las estrellas de Tzab-ek serían apenas unos bebés brillando en su cuna de polvo.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La serpiente de cascabel de las tierras bajas mayas añade un nuevo segmento a su cascabel cada vez que muda de piel, proceso que suele ocurrir entre dos y cuatro veces al año. Los sacerdotes mayas consideraron esta renovación periódica como una prueba biológica de la naturaleza cíclica del tiempo, análoga a la reaparición anual de Tzab-ek en el firmamento nocturno."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cúmulo abierto de las Pléyades (Messier 45) se ubica a una distancia aproximada de 444 años luz del sistema solar y contiene más de 1,000 estrellas ligadas gravitacionalmente, aunque solo seis o siete son visibles a simple vista bajo condiciones atmosféricas óptimas. Su edad estimada es de apenas 100 millones de años, tratándose de estrellas azules extraordinariamente jóvenes y luminosas."
+      }
     ],
-    fact: 'Las Pléyades contienen en realidad más de mil estrellas en total, aunque nuestros ojos sin ayuda de telescopios solo pueden ver las más brillantes. Toda esta familia estelar está unida por la fuerza de gravedad y se mueve junta a través del espacio a una velocidad de cuarenta kilómetros por segundo. Con el tiempo, dentro de doscientos cincuenta millones de años, este grupo se separará lentamente.'
+    "fact": "El término maya «Tzab» no solo designaba al cúmulo de las Pléyades y al cascabel ofídico, sino que se utilizaba como unidad de medida numérica y geométrica para describir conjuntos agrupados de objetos homogéneos, como manojos de plumas preciosas, granos de cacao o mazorcas de maíz seleccionadas para las ofrendas ceremoniales en los templos."
   },
   {
-    id: 'paso-cenital',
-              bannerImage: '/assets/maya/infographic_m10/banner_paso-cenital.webp',
-    title: 'El Paso Cenital',
-    color: '#1565C0',
-    btnImage: '/assets/maya/infographic_m10/btn_paso-cenital.jpg',
-    image: '/assets/maya/infographic_m10/hero_paso-cenital.jpg',
-    content: [
-      'Imagina que el cielo es una cúpula sobre tu cabeza. El punto más alto se llama el cenit. El paso cenital ocurre cuando un astro pasa por este punto. En las ciudades mayas, este evento astronómico tiene una importancia enorme.',
-      'Cuando el Sol o unas estrellas pasan por el cenit, los objetos no hacen sombra hacia los lados. Es un momento donde la luz cae verticalmente. Para los mayas, el paso de Tzab-ek por el cenit era un aviso. Ocurría cerca del mes de mayo. Era la alarma que despertaba a la naturaleza para un nuevo ciclo.',
-      'El paso cenital de las Pléyades anunciaba la llegada de las lluvias. Piensa en la lluvia como la sangre que da vida a la tierra. Después de meses de sol, los campesinos miraban el cielo esperando esta señal. Cuando el cascabel cruzaba el firmamento, sabían que las nubes traerían agua. La astronomía dictaba el ritmo de la vida.',
-      'Los arquitectos mayas construyeron edificios especiales para marcar este momento. Hacían agujeros en los techos de cavernas o creaban chimeneas de piedra. Durante el paso cenital, la luz bajaba por estos túneles e iluminaba una cámara oscura. Era una forma inteligente de capturar el tiempo.',
-      'Este alineamiento demuestra que los mayas entendían la geometría del espacio. Ellos sabían que la Tierra es redonda y que la posición de las estrellas cambia dependiendo de dónde te encuentres. Si viajas al norte, las Pléyades nunca pasarán justo arriba de tu cabeza.'
+    "id": "paso-cenital",
+    "bannerImage": "/assets/maya/infographic_m10/banner_paso-cenital.webp",
+    "title": "El Paso Cenital",
+    "color": "#1565C0",
+    "btnImage": "/assets/maya/infographic_m10/btn_paso-cenital.jpg",
+    "image": "/assets/maya/infographic_m10/hero_paso-cenital.jpg",
+    "content": [
+      "El concepto de paso cenital constituía uno de los pilares de la astronomía en la zona intertropical mesoamericana. Ocurre cuando un cuerpo celeste cruza exactamente el punto más alto de la bóveda celeste (el cenit, a 90 grados sobre el horizonte), de tal forma que los objetos verticales dejan de proyectar sombras laterales al mediodía si se trata del Sol, o culminan en la vertical perfecta del observador durante la noche si se trata de estrellas.",
+      "En la franja geográfica del mundo maya, situada aproximadamente entre los 14° y los 21° de latitud norte, las Pléyades gozaban de una particularidad geométrica extraordinaria: su declinación en la época prehispánica coincidía casi milimétricamente con el cenit local. Esto provocaba que, una vez al año, Tzab-ek pasara exactamente por la vertical absoluta del cielo a la medianoche, dividiendo la bóveda en dos mitades perfectas.",
+      "Las investigaciones arqueoastronómicas han demostrado que este cenit estelar nocturno de las Pléyades se producía a mediados de noviembre. Para los mayas, esta fecha marcaba la culminación de la época de lluvias y el arranque formal de la temporada de secas o de recolección de granos, funcionando como un punto de equilibrio celeste que contrastaba simétricamente con el primer paso cenital del Sol a comienzos de mayo.",
+      "Para constatar con exactitud el tránsito cenital, los constructores mayas perforaban chimeneas cenitales en cámaras subterráneas y templos de piedra. Ejemplos de estos pozos de luz existen en Monte Albán, Xochicalco y en cavernas modificadas del área maya, donde la luz estelar o solar descendía verticalmente iluminando marcadores glíficos tallados en el suelo rocoso únicamente cuando el astro alcanzaba el cenit geométrico.",
+      "La simetría entre el paso cenital diurno del Sol y el paso cenital nocturno de las Pléyades permitió a los astrónomos establecer un eje ordenador del año trópico. Esta correlación matemática entre el día y la noche ofrecía una herramienta científica confiable para sincronizar el calendario civil con los ritmos biológicos de los cultivos y las oscilaciones térmicas características del entorno selvático centroamericano."
     ],
-    expandables: [
-      { label: 'La danza de las sombras', icon: 'clock', text: 'Durante un paso cenital solar, puedes pararte derecho al mediodía y ver cómo tu propia sombra desaparece debajo de tus zapatos. Los mayas medían estas sombras con estelas altas de piedra para calcular con gran exactitud la duración del año trópico. Es un método elegante de usar las herramientas de la naturaleza natural.' },
-      { label: 'Medición del tiempo nocturno', icon: 'clock', text: 'Las estrellas sirven para medir el tiempo durante la noche al igual que el Sol lo hace durante el día. Observar a Tzab-ek cruzar el meridiano superior ayudaba a los sacerdotes a dividir la noche en horas exactas. El cielo era un reloj gigante lleno de puntos brillantes que giraban sobre un eje invisible y constante.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Debido al movimiento de precesión de los equinoccios, las coordenadas celestes de las estrellas varían lentamente con los siglos. En el periodo Clásico maya (hacia el 600 d.C.), las Pléyades poseían una declinación de aproximadamente +18° a +19°, lo que hacía que pasaran casi exactamente por el cenit sobre ciudades mayas como Tikal, Uaxactún, Yaxchilán y Edzná."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El paso cenital solar es un fenómeno exclusivo de la región intertropical, comprendida entre el trópico de Cáncer (23.4° N) y el trópico de Capricornio (23.4° S). En latitudes superiores, como en Europa o el norte de América, el Sol jamás alcanza los 90 grados de altitud sobre el horizonte, razón por la cual los astrónomos europeos antiguos no utilizaban este marcador geométrico."
+      }
     ],
-    fact: 'El paralelo de veinte grados pasa justo por encima de la península de Yucatán. Debido a la inclinación del eje del planeta Tierra, las estrellas que tienen una declinación cercana a los veinticuatro grados, como las Pléyades, logran alcanzar el punto cenital visible en esta región geográfica. Los cálculos para predecir esto requieren observaciones de muchas décadas continuas.'
+    "fact": "En las latitudes mayas centrales, como la de Tikal a 17° 13' N, el Sol cruza el cenit en dos fechas separadas: la primera ocurre alrededor del 9 de mayo y la segunda cerca del 3 de agosto. La distancia temporal entre ambos tránsitos cenitales solares (aproximadamente 260 días) coincide de forma asombrosa con la duración exacta del calendario sagrado Tzolk'in."
   },
   {
-    id: 'calendario-agricola',
-              bannerImage: '/assets/maya/infographic_m10/banner_calendario-agricola.webp',
-    title: 'Calendario Agrícola',
-    color: '#F9A825',
-    btnImage: '/assets/maya/infographic_m10/btn_calendario-agricola.jpg',
-    image: '/assets/maya/infographic_m10/hero_calendario-agricola.jpg',
-    content: [
-      'El orto helíaco ocurre en el primer día del año en que puedes ver una estrella salir por el este antes de que el Sol la borre. Es la primera aparición visible de la estrella después de estar escondida. Para Tzab-ek, esto pasa a finales de abril.',
-      'Cuando el cascabel volvía a aparecer, era un aviso para los campesinos. Significaba que era el momento exacto para preparar la milpa, el campo de maíz. Las estrellas funcionaban como un calendario perfecto que todos podían leer en el horizonte.',
-      'El ciclo de cultivar el maíz estaba atado a los movimientos de las Pléyades. Las familias trabajaban quemando la maleza del campo antes de que llegaran las lluvias prometidas por las estrellas. La ceniza servía como abono nutritivo para la tierra.',
-      'Es fascinante que la supervivencia dependía de observar luces distantes. No usaban termómetros. Su tecnología era la observación metódica. Sabían que las estrellas nunca mienten. El ciclo biológico de las plantas estaba conectado con el universo.',
-      'El maíz no era solo un alimento; era una sustancia sagrada. Seguir a Tzab-ek para saber cuándo sembrar era una actividad religiosa. Era como seguir instrucciones de los creadores escritas en el cielo. Cada semilla plantada era una respuesta a las estrellas.'
+    "id": "calendario-agricola",
+    "bannerImage": "/assets/maya/infographic_m10/banner_calendario-agricola.webp",
+    "title": "Calendario Agrícola",
+    "color": "#F9A825",
+    "btnImage": "/assets/maya/infographic_m10/btn_calendario-agricola.jpg",
+    "image": "/assets/maya/infographic_m10/hero_calendario-agricola.jpg",
+    "content": [
+      "La subsistencia de millones de habitantes en las ciudades-estado mayas dependía de cosechas exitosas de maíz, frijol, calabaza y chile cultivados bajo el sistema de milpa en suelos delgados y kársticos. En este entorno ecológico frágil, carente de sistemas masivos de irrigación artificial en el norte peninsular, sembrar en la fecha incorrecta antes de las lluvias acarreaba la pérdida total de las semillas por desecación o plagas.",
+      "El cúmulo estelar de Tzab-ek funcionaba como el marcador calendárico agrícola por excelencia. A principios de mayo, tras haber permanecido ocultas detrás del brillo solar durante varias semanas, las Pléyades reaparecían sobre el horizonte oriental justo antes de la salida del Sol, un evento astronómico denominado orto helíaco. Esta señal celeste indicaba sin margen de error la llegada inminente de las primeras lluvias torrenciales.",
+      "Al observar el orto helíaco de Tzab-ek, los campesinos mayas sabían que disponían de escasos días para finalizar la quema controlada del monte seco y depositar los granos de maíz en los hoyos abiertos con el bastón sembrador o espeque. El fósforo y potasio de las cenizas fertilizaban el suelo, mientras que las lluvias de mayo, previstas por la posición estelar, hidrataban los granos iniciando el ciclo biológico de germinación.",
+      "Medio año más tarde, en el mes de noviembre, se producía el ocaso helíaco de las Pléyades o su culminación a la medianoche. Este momento marcaba el fin de las lluvias y la desecación de las mazorcas en los tallos doblados de las milpas. Las familias campesinas iniciaban entonces la cosecha masiva y el almacenamiento de granos en chultunes o silos subterráneos de caliza protegidos contra la humedad y los roedores selváticos.",
+      "De este modo, la observación de las Pléyades dotaba a las comunidades mayas de una brújula cronológica independiente de las variaciones climáticas locales fortuitas. Mientras que una lluvia aislada en abril podía engañar a un sembrador inexperto, el reloj astronómico de Tzab-ek confirmaba si las condiciones estacionales a gran escala estaban verdaderamente listas para asegurar la cosecha comunal."
     ],
-    expandables: [
-      { label: 'El giro de la Tierra', icon: 'clock', text: 'El orto helíaco sucede porque la Tierra se mueve alrededor del Sol a lo largo del año. Cada día que pasa, el Sol parece moverse un poco hacia el este en relación a las estrellas de fondo. Esto hace que diferentes constelaciones queden visibles en momentos diferentes del año. Es un ciclo anual y cíclico sin fin aparente.' },
-      { label: 'El cultivo de la milpa', icon: 'atom', text: 'El sistema agrícola maya no solo sembraba maíz. Sembraban frijoles que se enredaban en el tallo del maíz y calabazas que cubrían el suelo para mantener la humedad. Este método inteligente previene las plagas destructivas y mantiene la tierra sana durante mucho tiempo. Es un sistema ecológico finamente equilibrado.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La técnica agrícola tradicional de doblar la caña del maíz («dobla de la milpa») se realiza cuando el grano ya maduró para evitar que el agua de las últimas lluvias penetre en la mazorca e incube hongos destructivos. Esta labor se programaba rigurosamente observando la elevación de las Pléyades durante las primeras horas del anochecer otoñal."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El orto helíaco de un cuerpo celeste ocurre el primer día del año en que el astro se hace visible por el horizonte este al amanecer, breves minutos antes de que el resplandor solar opaque su luz. Para las Pléyades en Centroamérica durante el siglo VII d.C., este evento ocurría con precisión milimétrica durante los primeros días de mayo, anunciando el monzón mesoamericano."
+      }
     ],
-    fact: 'El Códice de Madrid, que es uno de los pocos libros mayas originales que sobrevivieron a la historia, contiene páginas dedicadas exclusivamente a los ciclos agrícolas. Muestra dibujos de dioses plantando semillas usando palos afilados, acompañados por glifos que indican las fechas astronómicas exactas. Los investigadores han encontrado una relación directa entre estas fechas y los movimientos de Tzab-ek.'
+    "fact": "Un chultún maya típico, excavado en la roca caliza impermeable bajo las viviendas y sellado con estuco de cal, podía almacenar entre 2,000 y 8,000 litros de grano seco de maíz. Este sistema de acopio alimentario, regulado anualmente por las observaciones estelares de Tzab-ek, permitía alimentar a una familia campesina numerosa durante periodos de sequía prolongada."
   },
   {
-    id: 'nueva-cuenta-fuego',
-              bannerImage: '/assets/maya/infographic_m10/banner_nueva-cuenta-fuego.webp',
-    title: 'Cuenta del Fuego',
-    color: '#6D4C41',
-    btnImage: '/assets/maya/infographic_m10/btn_nueva-cuenta-fuego.jpg',
-    image: '/assets/maya/infographic_m10/hero_nueva-cuenta-fuego.jpg',
-    content: [
-      'Imagina vivir en un mundo donde el calendario se acaba. Para los habitantes de Mesoamérica, esto pasaba cada cincuenta y dos años. Sus calendarios civil y ritual volvían a empezar juntos en ese momento.',
-      'Esta fecha se marcaba con una ceremonia llamada el Fuego Nuevo. La señal cósmica para iniciar este ritual era el paso de las Pléyades por el punto más alto del cielo durante la medianoche. Si el cascabel continuaba su camino, el universo seguiría existiendo.',
-      'Para prepararse, la gente rompía sus vasijas viejas y limpiaba sus casas. Apagaban todos los fuegos de las ciudades. Imagina un mundo en oscuridad, sin una llama encendida. La única luz era la de las estrellas cruzando el cielo.',
-      'Cuando los sacerdotes observaban que Tzab-ek cruzaba el cenit, sabían que el mundo estaba a salvo. Entonces tomaban dos trozos de madera y los frotaban para crear una chispa. De esta llama, mensajeros corrían con antorchas para llevar el fuego a cada templo.',
-      'Es una analogía sobre los ciclos del tiempo. Así como las estrellas giran y vuelven a su lugar, la vida humana debe renovarse. El cosmos participaba en esta fiesta del mundo. Las Pléyades eran los engranajes que marcaban el inicio y el fin del tiempo.'
+    "id": "nueva-cuenta-fuego",
+    "bannerImage": "/assets/maya/infographic_m10/banner_nueva-cuenta-fuego.webp",
+    "title": "Cuenta del Fuego",
+    "color": "#6D4C41",
+    "btnImage": "/assets/maya/infographic_m10/btn_nueva-cuenta-fuego.jpg",
+    "image": "/assets/maya/infographic_m10/hero_nueva-cuenta-fuego.jpg",
+    "content": [
+      "En la cosmovisión mesoamericana compartida por mayas, mexicas y zapotecos, el transcurso del tiempo no era lineal e infinito, sino una sucesión de ciclos periódicos que debían ser renovados mediante ceremonias solemnes de fuego sagrado. La coincidencia del calendario ritual de 260 días con el calendario solar de 365 días generaba un ciclo mayor de 52 años civiles, conocido modernamente como la Rueda Calendárica o atado de años.",
+      "Al concluir cada periodo de 52 años, existía la angustia colectiva de que el Sol pudiera no volver a salir y que los demonios de la oscuridad descendieran para aniquilar a la humanidad. Para conjurar este peligro cósmico, los sacerdotes realizaban la ceremonia del Fuego Nuevo, apagando absolutamente todas las fogatas domésticas y de templos en la ciudad para aguardar en tinieblas totales el dictamen del firmamento nocturno.",
+      "El indicador astronómico supremo que decidía si el mundo continuaría existiendo durante otros 52 años era el tránsito a medianoche del cúmulo estelar de las Pléyades por el cenit del cielo. Los sacerdotes astrónomos subían a la cima de pirámides aisladas o templos de observación, siguiendo segundo a segundo el ascenso pausado de Tzab-ek a través del meridiano local mediante gnomones y cuadrantes fijos de piedra.",
+      "Si las Pléyades cruzaban sin tropiezo la cúspide cenital a la medianoche, se confirmaba que el cosmos mantenía su estabilidad matemática y que la vida humana continuaría. En ese instante de euforia ritual, los sacerdotes taladraban dos maderas sagradas mediante fricción sobre el pecho de una ofrenda ceremonial, generando una chispa viva que encendía una hoguera colosal visible desde decenas de kilómetros a la redonda.",
+      "Corredores veloces armados con antorchas de pino encendidas transportaban el fuego nuevo desde el templo central hacia cada barrio, palacio y hogar campesino de la región. El renacimiento del fuego simbolizaba la renovación de la energía universal, la reconciliación entre deidades y mortales, y la sustitución de utensilios cerámicos rotos y ropas viejas por objetos flamantes para inaugurar una era próspera."
     ],
-    expandables: [
-      { label: 'El ciclo del Siglo', icon: 'atom', text: 'El número cincuenta y dos no es casualidad. Es el mínimo común múltiplo de los dos calendarios importantes. Pasaban trece mil ochocientos ochenta días exactos para que las fechas volvieran a combinarse igual. Una persona que vivía para ver este evento dos veces se consideraba un anciano de enorme respeto y sabiduría total.' },
-      { label: 'Constelación del Fuego', icon: 'clock', text: 'En muchas culturas antiguas, a las Pléyades se les asocia con el fuego. Esto podría ser porque parecen un grupo de brasas calientes que brillan juntas en la oscuridad. Su luz azulada parpadea mucho más cuando están cerca del horizonte, debido a las turbulencias invisibles de la atmósfera terrestre que distorsionan la visión.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante la noche del Fuego Nuevo, las familias quebraban platos, vasijas de barro y manos de metate viejas, arrojándolos a basureros rituales, mientras las mujeres embarazadas eran encerradas en cuartos cerrados con máscaras de corteza de maguey por temor a que la oscuridad las transformara en monstruos feroces llamados Tzitzimime."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La Rueda Calendárica de 52 años equivale al mínimo común múltiplo entre el Tzolk'in de 260 días y el Haab' de 365 días: exactamente 18,980 días solares, lo que corresponde a 73 ciclos sagrados de 260 días y 52 años de 365 días. Esta concordancia matemática perfecta aseguraba que una combinación específica de fecha se repitiera solo una vez cada medio siglo."
+      }
     ],
-    fact: 'Los registros históricos escritos muestran que la última gran Ceremonia del Fuego Nuevo celebrada por los aztecas ocurrió en el año mil quinientos siete de nuestra era. Fue realizada en la cumbre del Cerro de la Estrella, ubicado cerca del centro de la actual Ciudad de México. Las investigaciones astronómicas confirman que en noviembre de ese año específico, las Pléyades cruzaron el cenit de ese lugar exacto.'
+    "fact": "La excavación arqueológica de templos piramidales en Mesoamérica ha revelado superposiciones arquitectónicas sucesivas donde una nueva pirámide se construía cubriendo por completo a la anterior. Muchas de estas ampliaciones monumentales coinciden cronológicamente con los periodos de 52 años marcados por la ceremonia de renovación del Fuego Nuevo."
   },
   {
-    id: 'astronomia-precisa',
-              bannerImage: '/assets/maya/infographic_m10/banner_astronomia-precisa.webp',
-    title: 'Astronomía Precisa',
-    color: '#2E7D32',
-    btnImage: '/assets/maya/infographic_m10/btn_astronomia-precisa.jpg',
-    image: '/assets/maya/infographic_m10/hero_astronomia-precisa.jpg',
-    content: [
-      'Los mayas lograron una precisión astronómica increíble usando solo sus ojos humanos y edificios de piedra. Imagina usar la pared de tu casa para ver por dónde sale el sol cada día y hacer marcas a lo largo de los años. Así empezaron a entender el universo.',
-      'Los sabios descubrieron un movimiento de la Tierra llamado la precesión de los equinoccios. Nuestro planeta se tambalea lentamente. Este tambaleo hace que la posición aparente de las estrellas cambie un poquito cada siglo. ¡Es un ciclo de veintiséis mil años!',
-      'Detectar un cambio minúsculo requiere observaciones durante muchas generaciones. Los abuelos pasaban sus libros a los nietos. Notaron que el punto por donde Tzab-ek salía iba cambiando con el paso de los años.',
-      'En zonas arqueológicas como Chichén Itzá o Uxmal, hay edificios orientados hacia las Pléyades. Las calles y plazas siguen líneas rectas que apuntan al horizonte por donde este cascabel subía al cielo. Usaron la arquitectura como un instrumento astronómico.',
-      'Esta precisión asombra a los científicos de hoy. Usando una matemática vigesimal, lograron calcular órbitas planetarias con precisión. Conocer el movimiento exacto del universo les daba un poder político inmenso, demostrando que estaban en sintonía con los dioses.'
+    "id": "astronomia-precisa",
+    "bannerImage": "/assets/maya/infographic_m10/banner_astronomia-precisa.webp",
+    "title": "Astronomía Precisa",
+    "color": "#2E7D32",
+    "btnImage": "/assets/maya/infographic_m10/btn_astronomia-precisa.jpg",
+    "image": "/assets/maya/infographic_m10/hero_astronomia-precisa.jpg",
+    "content": [
+      "La capacidad de los astrónomos mayas para medir y predecir los movimientos de las Pléyades sin lentes ópticos ni relojes mecánicos representa uno de los logros científicos más notables de la antigüedad. En lugar de instrumental complejo, desarrollaron una rigurosa metodología empírica basada en horizontes artificiales, mirillas de observación fija y una disciplina de registro gráfico transmitida ininterrumpidamente por generaciones.",
+      "Los observatorios mayas no poseían cúpulas esféricas modernas, sino vanos arquitectónicos estrechos, jambas de puertas monolíticas y estelas alineadas en crestas de colinas distantes. Al sentarse en un punto fijo marcado en el suelo de una cámara sagrada y mirar a través de un par de varas cruzadas colocadas en el quicio de una ventana, el sabio maya creaba una línea de puntería que interceptaba el orto estelar en el horizonte.",
+      "Mediante este método de retícula visual fija, los astrónomos lograron calcular las fechas exactas del orto matutino, la culminación cenital y el ocaso vespertino de Tzab-ek con un margen de error menor a un día solar. La constancia de sus observaciones les permitió percatarse de que las estrellas fijas adelantan su aparición cuatro minutos cada noche respecto al tiempo solar, descubriendo de facto la duración del día sidéreo.",
+      "Este rigor cuantitativo se integró de manera magistral en las tablas matemáticas de códices como el de Dresde, París y Madrid. Aunque estos libros plegados contienen principalmente efemérides de Venus, Marte y la Luna, los cómputos calendáricos subyacentes incorporan factores de ajuste estelar que sincronizaban los periodos sinódicos planetarios con el fondo estelar inmóvil personificado por las Pléyades y Orión.",
+      "La arqueología moderna ha corroborado la exactitud de estos alineamientos estelares utilizando teodolitos láser y software de reconstrucción arqueoastronómica tridimensional. Los resultados confirman que los constructores mayas orientaban muros monumentales y ejes procesionales con desviaciones inferiores a medio grado de arco respecto a las posiciones reales que ocupaba Tzab-ek en los siglos VI y VII de nuestra era."
     ],
-    expandables: [
-      { label: 'Arquitectura alienada', icon: 'atom', text: 'El famoso Palacio del Gobernador en Uxmal no está alineado con el resto de la ciudad. Su fachada principal está girada unos grados hacia el sureste. Los arqueólogos descubrieron que apunta exactamente al punto por donde salía Venus cuando alcanzaba su extremo máximo en el horizonte durante el siglo noveno.' },
-      { label: 'Matemáticas estelares', icon: 'clock', text: 'El sistema numérico maya era muy elegante. Solo necesitaban tres símbolos básicos para escribir cualquier cantidad enorme: un punto que vale uno, una raya horizontal que vale cinco y un caracol marino que representa el número cero. Fueron una de las primeras civilizaciones mundiales en usar el cero de forma posicional matemática.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el sitio arqueológico de Copán, la orientación visual entre la Estela 12 y la Estela 10, emplazadas sobre colinas opuestas que dominan el valle a una distancia de siete kilómetros, formaba una gigantesca línea de mira solar y estelar utilizada por los sabios reales para calibrar las fechas críticas del calendario agrícola y ritual."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Un día sidéreo es el tiempo que tarda la Tierra en completar un giro sobre su propio eje respecto a las estrellas lejanas: 23 horas, 56 minutos y 4.09 segundos. Es aproximadamente 3 minutos y 56 segundos más corto que el día solar medio de 24 horas, una discrepancia sutil que los astrónomos mayas compensaban acumulando días bisiestos implícitos en su Cuenta Larga."
+      }
     ],
-    fact: 'El arqueoastrónomo Anthony Aveni comprobó midiendo las calles de la ciudad antigua de Teotihuacán que su orientación principal tiene una desviación de quince grados y medio al este del norte geográfico verdadero. Esa línea recta milenaria apunta exactamente a la posición donde se veía el ocultamiento de las Pléyades en el horizonte durante la época en que la enorme metrópolis urbana fue construida laboriosamente.'
+    "fact": "La precisión con la que los astrónomos mayas determinaron los ciclos lunares y sinódicos superaba a la de sus contemporáneos en la Europa medieval. En Copán, calcularon que 149 lunas nuevas equivalían exactamente a 4,400 días, lo que arroja una duración del mes lunar de 29.53020 días, frente al valor moderno medido por satélites de 29.53059 días: ¡un error minúsculo de escasos segundos!"
   },
   {
-    id: 'cascabel-cosmico',
-              bannerImage: '/assets/maya/infographic_m10/banner_cascabel-cosmico.webp',
-    title: 'Cascabel Cósmico',
-    color: '#311B92',
-    btnImage: '/assets/maya/infographic_m10/btn_cascabel-cosmico.jpg',
-    image: '/assets/maya/infographic_m10/hero_cascabel-cosmico.jpg',
-    content: [
-      '¿Por qué llamaron a este grupo de estrellas una cola de serpiente? Para entenderlo, tenemos que pensar como un campesino mesoamericano rodeado de selva. La serpiente de cascabel es un animal poderoso en su región tropical.',
-      'Si miras el dibujo que forman las estrellas principales de las Pléyades, se parece a los anillos del cascabel de la víbora. Cuando Tzab-ek aparecía brillando en el cielo matutino, era un aviso de que el tiempo lluvioso estaba a punto de llegar.',
-      'En la mitología maya, hay un dios llamado Chaac, el dios de la lluvia. A menudo se le representa acompañado por serpientes míticas de agua. La serpiente celestial de estrellas está conectada íntimamente con este dios benefactor de la lluvia.',
-      'El arte mesoamericano está lleno de dibujos de serpientes con plumas y estrellas. La Serpiente Emplumada de Chichén Itzá es parte de este lenguaje. Tzab-ek era un animal cósmico gigante que nadaba a través del cielo.',
-      'Usar analogías de animales para entender las estrellas es algo que los humanos hacemos siempre. Los griegos vieron toros; los mayas vieron tortugas, jaguares y serpientes. Es nuestra manera de intentar ordenar un universo inmenso.'
+    "id": "cascabel-cosmico",
+    "bannerImage": "/assets/maya/infographic_m10/banner_cascabel-cosmico.webp",
+    "title": "Cascabel Cósmico",
+    "color": "#311B92",
+    "btnImage": "/assets/maya/infographic_m10/btn_cascabel-cosmico.jpg",
+    "image": "/assets/maya/infographic_m10/hero_cascabel-cosmico.jpg",
+    "content": [
+      "La asociación entre las Pléyades y el cascabel de la víbora trasciende la mera denominación léxica para convertirse en uno de los motivos centrales de la iconografía monumental mesoamericana. En estelas, dinteles de madera de chicozapote, vasijas de ofrenda y murales al fresco, el cascabel articulado de la serpiente aparece recurrentemente coronando estandartes celestes y cetros de mando empuñados por gobernantes supremos.",
+      "Los epigrafistas han descubierto que el glifo de Tzab-ek no solo señalaba al cúmulo astronómico, sino que funcionaba como un título honorífico asumido por reyes y reinas guerreras. Al portar insignias ofídicas con cascabeles estelares, el soberano manifestaba ante su pueblo que poseía el poder de conjurar la lluvia, comunicarse con las fuerzas celestiales y controlar los ritmos agrícolas que garantizaban la supervivencia.",
+      "En el Templo de las Pinturas de Bonampak, Chiapas, los murales pintados hacia el año 790 d.C. representan escenas bélicas y rituales donde los dignatarios visten pieles de jaguar adornadas con cascabeles de bronce y oro, así como fajas ceremoniales que rematan en cabezas de serpiente bicéfala cuyos extremos reproducen fielmente los segmentos de queratina del cascabel estelar observado en las noches claras de la selva.",
+      "Asimismo, en las inscripciones de Chichén Itzá correspondientes al periodo Posclásico Temprano, la serpiente emplumada Kukulcán exhibe en el remate de su cola de plumas de quetzal un sonoro cascabel de reptil. La integración de plumas celestiales de ave y cascabeles estelares de reptil terrestre sintetizaba la unión mística del aire, el viento fertilizador, el cielo estrellado y la tierra nutricia sobre la que germinaba el maíz.",
+      "Esta iconografía del cascabel cósmico cumplía además una función acústica durante las grandes fiestas públicas. Los danzantes reales ataban sartales de conchas marinas y cascabeles secos a sus tobillos y muñecas. Al ejecutar sus danzas rítmicas sobre las plazas de estuco blanco, el sonido crepitante imitaba simultáneamente el aviso sonoro de la víbora de cascabel y el rumor de las gotas de lluvia que caían desde el cielo."
     ],
-    expandables: [
-      { label: 'Estrellas animales', icon: 'clock', text: 'Otra constelación muy importante para los mayas era Ak-ek, que significa la Estrella Tortuga. Esta corresponde a una parte de lo que nosotros conocemos hoy como la constelación de Orión. Las tres estrellas del cinturón de Orión formaban el caparazón duro de la tortuga cósmica flotando en el cielo estrellado y vasto.' },
-      { label: 'El sonido del cascabel', icon: 'atom', text: 'El cascabel de la serpiente real no tiene piezas adentro que suenen como unas maracas. El sonido peculiar se produce porque los anillos de queratina hueca chocan entre sí muy rápido, unas cincuenta veces por cada segundo. Las estrellas vibran con luz distante; la serpiente vibra con un sonido rápido de advertencia constante.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el Altar 41 de Copán, los escultores tallaron una descomunal serpiente de cascabel enroscada sobre sí misma. En la base de su cola esculpieron minuciosamente seis anillos de cascabel, número que coincide de forma deliberada con la cantidad de estrellas principales que el ojo humano distingue a simple vista dentro del cúmulo de las Pléyades."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las serpientes de cascabel generan su sonido característico haciendo vibrar los segmentos huecos de queratina de su cola a una frecuencia de entre 50 y 100 hercios mediante músculos de contracción ultrarrápida. Los sacerdotes mayas consideraban este sonido una manifestación terrenal del trueno sordo que acompaña a las tempestades nocturnas tropicales."
+      }
     ],
-    fact: 'En el famoso libro sagrado maya llamado Popol Vuh, que narra la creación misteriosa del mundo, se menciona a un grupo de cuatrocientos muchachos jóvenes que fueron asesinados por un monstruo terrestre llamado Zipacná. Las leyendas dicen que estos jóvenes inocentes subieron al cielo oscuro para convertirse en las brillantes estrellas del grupo de las Pléyades y vivir allí eternamente como luces en la noche profunda.'
+    "fact": "En las ofrendas ceremoniales del Cenote Sagrado de Chichén Itzá, los arqueólogos subacuáticos han rescatado más de 300 cascabeles de cobre, oro y aleaciones metálicas (tumbaga), muchos de ellos grabados con diseños ofídicos y símbolos de estrellas centelleantes, arrojados a las aguas subterráneas como tributo a las Pléyades y al dios de la lluvia Chaac."
   },
   {
-    id: 'culturas-comparadas',
-              bannerImage: '/assets/maya/infographic_m10/banner_culturas-comparadas.webp',
-    title: 'Culturas Comparadas',
-    color: '#FFEE58',
-    btnImage: '/assets/maya/infographic_m10/btn_culturas-comparadas.jpg',
-    image: '/assets/maya/infographic_m10/hero_culturas-comparadas.jpg',
-    content: [
-      'Lo increíble de las Pléyades es que casi todas las culturas antiguas del mundo les prestaron la misma atención. Como es un grupo estelar compacto, resalta mucho en la bóveda del cielo. Es un faro luminoso único que llama la vista.',
-      'En Japón, a este grupo de estrellas lo llaman Subaru. Significa unir fuerzas o agruparse. Si has visto el logotipo de los autos marca Subaru, notarás que es un grupo de seis estrellas conectadas. Ellos también usaban el cielo para plantar arroz.',
-      'Para los navegantes del pueblo maorí en Nueva Zelanda, este conjunto de estrellas se llama Matariki. Su aparición lenta marca el inicio del año nuevo tradicional de su calendario. Las familias se reúnen para celebrar una nueva cosecha.',
-      'En la India, el grupo se conoce como Krittika, asociado con el fuego místico de la creación. En la mitología clásica europea, son famosas como las Siete Hermanas que fueron convertidas en pájaros y estrellas para escapar de un cazador.',
-      'Es un recordatorio de que los seres humanos compartimos el mismo cielo nocturno. Aunque los mayas imaginaron una cola de serpiente de cascabel y los griegos vieron siete hermanas huyendo, el propósito práctico era el mismo. El universo estrellado fue nuestro maestro global.'
+    "id": "culturas-comparadas",
+    "bannerImage": "/assets/maya/infographic_m10/banner_culturas-comparadas.webp",
+    "title": "Culturas Comparadas",
+    "color": "#FFEE58",
+    "btnImage": "/assets/maya/infographic_m10/btn_culturas-comparadas.jpg",
+    "image": "/assets/maya/infographic_m10/hero_culturas-comparadas.jpg",
+    "content": [
+      "El cúmulo abierto de las Pléyades ha cautivado a casi todas las civilizaciones del planeta, ocupando un papel estelar en sus mitologías y calendarios. Comparar la visión maya de Tzab-ek con las concepciones desarrolladas en la Grecia clásica, los Andes sudamericanos, la Polinesia y la antigua China revela cómo diferentes pueblos del mundo interpretaron el mismo fenómeno óptico celeste para resolver problemas humanos idénticos.",
+      "En la mitología de la Grecia arcaica, descrita por poetas como Homero y Hesíodo hacia el siglo VIII a.C., las Pléyades eran las siete hijas del titán Atlas y de la ninfa Pléyone, perseguidas por el cazador Orión hasta ser transformadas en palomas estelares por Zeus. Para los marinos griegos del mar Egeo, el orto helíaco de las Pléyades marcaba el inicio de la temporada segura para la navegación comercial tras las tormentas invernales.",
+      "En el extremo opuesto del continente americano, la civilización inca de los Andes veneraba a este cúmulo bajo el nombre quechua de Qollqa o «el almacén de granos». Los astrónomos del Imperio Inca observaban con minuciosidad la claridad y nitidez de las Pléyades en las madrugadas de junio: si aparecían brillantes y nítidas pronosticaban abundancia agrícola, pero si se veían borrosas predecían sequías provocadas por el fenómeno de El Niño.",
+      "Para los navegantes polinesios que colonizaron los archipiélagos del océano Pacífico en canoas dobles de madera, las Pléyades recibían el nombre de Matariki («los ojos del dios»). Su primera aparición matutina sobre las olas oceánicas a finales de mayo inauguraba el Año Nuevo tradicional Maorí, señalando el periodo sagrado de tregua bélica, agradecimiento por las cosechas y descanso para las cuadrillas de exploradores marinos.",
+      "Mientras que griegos y polinesios asociaron las Pléyades con doncellas u ojos luminosos, los sabios mayas coincidieron con varias etnias aborígenes de Norteamérica al ver en ellas un cascabel de ofidio o una reunión de ancianos. Esta asombrosa convergencia intercultural confirma que el cúmulo M45 funcionó como el reloj astronómico de la humanidad entera, guiando la agricultura y la navegación en todas las latitudes terrestres."
     ],
-    expandables: [
-      { label: 'El mito perdido', icon: 'atom', text: 'Muchas culturas mundiales separadas tienen mitos sobre por qué una de las siete estrellas principales se perdió y ahora solo se ven seis. Los científicos descubrieron que hace cien mil años, dos estrellas del grupo estaban mucho más separadas y eran visibles como dos diferentes. Luego se movieron muy juntas gradualmente.' },
-      { label: 'Herramienta universal', icon: 'clock', text: 'Sin importar si cultivaban el sagrado maíz verde en México, el arroz húmedo en Japón o las papas grandes en Nueva Zelanda, el movimiento anual regular y preciso de este cúmulo abierto en el cielo profundo servía para marcar fielmente los tiempos del delicado mundo natural. Era el mismo reloj para toda la humanidad antigua.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En Japón, el cúmulo de las Pléyades es conocido desde hace más de mil años con el nombre de Subaru, que significa «unión» o «reunirse en un racimo». La famosa corporación automotriz japonesa adoptó este nombre tradicional y luce con orgullo seis estrellas brillantes del cúmulo estelar en su emblemático logotipo metálico ovalado."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las investigaciones meteorológicas modernas han confirmado la validez del método de pronóstico inca sobre las Pléyades: en los años en que el fenómeno de El Niño calienta las aguas del Pacífico, se forman nubes cirros tenues a gran altitud sobre los Andes que vuelven borrosas las estrellas del cúmulo, avisando con meses de antelación sobre sequías agrícolas inminentes."
+      }
     ],
-    fact: 'La mención escrita más antigua y verificada sobre las brillantes Pléyades se encuentra en los famosos textos chinos astronómicos que datan aproximadamente del año dos mil trescientos cincuenta antes de nuestra era común. También aparecen representadas visualmente en el enigmático Disco Celeste de Nebra, un artefacto de bronce europeo que tiene más de tres mil seiscientos años de antigüedad misteriosa e indiscutible.'
+    "fact": "Existen registros gráficos del cúmulo de las Pléyades que se remontan a la Edad del Bronce europea, como el célebre Disco Celeste de Nebra hallado en Alemania y fechado hacia el 1600 a.C. En este artefacto de bronce e incrustaciones de oro, las Pléyades aparecen plasmadas con siete puntos dorados agrupados, demostrando la fascinación global de la humanidad por este cúmulo estelar."
   }
 ];
 

@@ -151,149 +151,237 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'pelicula', title: 'El Aeropatín en la Película', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_pelicula.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_pelicula.webp',
-    content: [
-      'En «Volver al Futuro Parte II» (1989), Marty McFly viaja al año 2015 y utiliza un aeropatín (una tabla flotante). La película muestra el uso de estos dispositivos en la ciudad. El director Robert Zemeckis bromeó afirmando que los aeropatines existían pero no se comercializaban por motivos de seguridad.',
-      'Para filmar estas escenas, los actores utilizaron tablas sujetas con arneses y cables. La producción empleó pantallas azules y plataformas mecánicas. El accesorio original, un aeropatín rosa, se convirtió en un elemento representativo del cine de ciencia ficción.',
-      'La predicción de la película inspiró desarrollos tecnológicos. En 2015, empresas como Lexus y Hendo presentaron prototipos funcionales de aeropatines, trasladando el concepto a aplicaciones científicas reales.',
-      'En la ficción, el aeropatín parece anular la gravedad, una de las fuerzas fundamentales del universo. En la realidad, esto se logra generando una fuerza de repulsión ascendente mediante levitación magnética.',
-      'Posteriormente al estreno, se comercializaron réplicas que no flotaban. Un modelo original utilizado en la filmación fue subastado en 2021 por 501,000 dólares. Existen pocos ejemplares auténticos de esta utilería.'
+    "id": "pelicula",
+    "title": "El Aeropatín en la Película",
+    "color": "#E040FB",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_pelicula.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_pelicula.webp",
+    "content": [
+      "En una de las escenas más memorables de la historia del cine de aventuras, Marty McFly escapa de la pandilla de Griff Tannen flotando grácilmente sobre una tabla rosa brillante de la marca Mattel a unos centímetros del suelo. El hoverboard de Regreso al Futuro Parte II cautivó al instante la imaginación infantil de millones de espectadores en todo el mundo. Sin embargo, para la física de la levitación y la propulsión mecánica, hacer flotar un monopatín humano sin contacto con el suelo representa un formidable desafío tecnológico.",
+      "El director Robert Zemeckis contribuyó involuntariamente a una leyenda urbana colosal durante las entrevistas promocionales de 1989, cuando declaró con humor irónico que los hoverboards existían de verdad gracias a fuerzas magnéticas secretas, pero que las asociaciones de padres de familia impedían su comercialización masiva por considerarlos demasiado peligrosos. Miles de niños y familias llamaron a los almacenes de juguetes exigiendo comprar la codiciada tabla voladora, creyendo ciegamente en la broma del realizador.",
+      "Para lograr el asombroso efecto visual en pantalla en una era previa a los efectos digitales por ordenador masivos, el equipo de efectos prácticos recurrió a cables invisibles de piano ultrafinos y arneses metálicos suspendidos de grúas industriales móviles. Los zapatos de Michael J. Fox estaban atornillados físicamente a la parte superior de la tabla plástica para que ambos cuerpos se movieran como una sola unidad en el aire mientras las cámaras rodaban a gran velocidad por los decorados de Universal Studios.",
+      "La trama introduce además un límite físico intrigante y recordado por todos: «¡Oye, chico! Esas tablas no funcionan sobre el agua a menos que tengas potencia motriz». En el guion, el monopatín pierde sustentación y queda varado en medio del estanque de la plaza municipal cuando Marty intenta cruzarlo. Aunque en la ficción la causa es un límite de diseño ficticio, en el electromagnetismo real el agua dulce es un medio dieléctrico con baja conductividad que no permite generar corrientes inducidas de repulsión.",
+      "A pesar de ser un mero artificio dramático concebido para una persecución cómica de comedia cinematográfica, el hoverboard rosa se convirtió en el santo grial de la cultura popular de finales del siglo XX. Su impacto fue tan profundo que impulsó a corporaciones automovilísticas, universidades de ingeniería y laboratorios de física aplicada a invertir millones de dólares en la creación de prototipos reales capaces de emular esa fascinante sensación de deslizarse por el aire sin fricción."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_pelicula.webp',
-    bannerCaption: 'El icónico aeropatín de BTTF2 flotando sobre las calles de Hill Valley 2015',
-    fact: 'El icónico aeropatín rosa de Mattel que usó Michael J. Fox no era más que una tabla de madera de un scooter modificada. Los utileros de la película le quitaron las ruedas, la repintaron con colores brillantes y le agregaron un parche de velcro para que los zapatos del actor se mantuvieran en su lugar.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El hoverboard rosa de Mattel aparece en «Volver al Futuro Parte II» (1989) cuando Marty lo toma de una niña en Hill Valley 2015 para escapar de los Tannen. El hoverboard flota gracias a superconductores magnéticos que repelen el campo magnético del suelo, según la explicación implícita de la película. Cuando Marty intenta cruzar el lago Courthouse, el hoverboard deja de funcionar porque el agua interrumpe el efecto de levitación — un guiño científico a que los superconductores reales funcionan mejor sobre superficies conductoras. La escena fue tan impactante que Nike y Mattel recibieron miles de cartas preguntando cuándo estarían en venta.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m5/banner_pelicula.webp",
+    "bannerCaption": "El icónico aeropatín de BTTF2 flotando sobre las calles de Hill Valley 2015",
+    "fact": "La tabla aeropatín original utilizada por Michael J. Fox durante el rodaje de 1989, fabricada en madera ligera y espuma de resina con gráficos serigrafiados de Mattel, fue subastada en Londres en noviembre de 2021 alcanzando un precio de venta récord de 375.000 libras esterlinas (más de 500.000 dólares estadounidenses).",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La célebre tabla rosa con manillar desmontable fue diseñada por el director de arte John Bell. Para rodar los primeros planos de los pies de Marty sobre el monopatín flotante, el equipo construyó tablas especiales con imanes industriales ocultos bajo las suelas de las zapatillas Nike Mag del actor, permitiéndole subir y bajar con fluidez en los planos medios sin tambalearse."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El teorema de Earnshaw, formulado por el matemático británico Samuel Earnshaw en 1842, demuestra matemáticamente que es físicamente imposible lograr una levitación magnética estática y estable utilizando exclusivamente imanes permanentes y cargas electrostáticas fijas, obligando a emplear materiales superconductores o campos dinámicos de retroalimentación."
+      }
+    ]
   },
   {
-    id: 'maglev', title: 'Trenes Maglev: Levitación Real', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_maglev.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_maglev.webp',
-    content: [
-      'Los trenes de levitación magnética (maglev) operan flotando sobre sus vías. Al carecer de contacto físico, se elimina la fricción mecánica, operando sobre un campo magnético.',
-      'El sistema Maglev de Shanghái alcanza los 431 km/h. Utiliza un sistema de suspensión electromagnética (EMS) en el cual los electroimanes del vehículo son atraídos hacia un riel ferromagnético, manteniendo un espacio libre de 10 milímetros.',
-      'En 2015, el tren SCMaglev de Japón alcanzó los 603 km/h. Emplea imanes superconductores enfriados con helio líquido, generando una fuerza que eleva el tren 10 centímetros sobre la vía.',
-      'El principio básico es la repulsión magnética entre polos iguales. Este sistema se amplifica utilizando electroimanes potentes en la base del vehículo, mientras que imanes laterales aseguran su alineación en la vía.',
-      'El efecto Meissner ocurre cuando ciertos materiales, al enfriarse por debajo de una temperatura crítica, se convierten en superconductores y expelen campos magnéticos. Esto genera una fuerza de levitación que mantiene al superconductor suspendido, principio físico aplicado en la tecnología maglev.'
+    "id": "maglev",
+    "title": "Trenes Maglev: Levitación Real",
+    "color": "#00CCFF",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_maglev.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_maglev.webp",
+    "content": [
+      "Mientras que el aeropatín cinematográfico flota mágicamente sobre cualquier superficie de asfalto o césped sin emitir ruido alguno, la ingeniería moderna ha conquistado la levitación a gran escala a través de los trenes de levitación magnética o Maglev. En lugar de desafiar la gravedad con tecnologías desconocidas, estos titanes del transporte terrestre emplean las fuerzas de atracción y repulsión electromagnética descritas por James Clerk Maxwell para suspender convoyes de cientos de toneladas sobre rieles de acero.",
+      "Existen dos tecnologías electromagnéticas principales en la ingeniería del Maglev mundial. La primera es la suspensión electromagnética (EMS), utilizada en el sistema alemán Transrapid y desplegada comercialmente en la línea del aeropuerto de Shanghái. En este sistema, electroimanes convencionales instalados en la parte inferior del tren se curvan alrededor de la viga de acero guía y son atraídos magnéticamente hacia arriba, manteniendo una separación de solo 15 milímetros mediante sensores electrónicos de alta velocidad.",
+      "La segunda variante es la suspensión electrodinámica (EDS), desarrollada por los ferrocarriles de Japón para su tren bala de levitación Chuo Shinkansen. Este coloso utiliza potentes bobinas superconductoras refrigeradas a temperaturas criogénicas montadas a bordo del tren. Cuando el tren se desplaza a gran velocidad sobre la vía de hormigón, el movimiento de sus potentes campos magnéticos induce corrientes eléctricas en las bobinas de las paredes laterales que generan un campo magnético opuesto que lo levanta.",
+      "Al flotar en el aire sin tocar físicamente los rieles, los trenes Maglev eliminan por completo la fricción mecánica de rodadura de las ruedas de acero tradicionales, permitiéndoles alcanzar velocidades de crucero extraordinarias con un desgaste mecánico mínimo. La única fuerza resistente que deben vencer los motores lineales a altas velocidades es la resistencia aerodinámica del aire circundante, lo que exige perfiles hiperaerodinámicos en la carrocería inspirados en el pico del martín pescador.",
+      "La gran limitación de los trenes Maglev frente al monopatín de ficción radica en su estricta dependencia de infraestructuras ferroviarias ultracomplejas y costosas. Un tren Maglev no puede levitar sobre una carretera común ni desviarse un solo milímetro fuera de su carril magnético dedicado, demostrando que en el mundo real la levitación magnética es un prodigio de la ingeniería civil guiada y no un atributo autónomo de un vehículo individual."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_maglev.webp',
-    bannerCaption: 'Trenes Maglev reales: levitación magnética a más de 600 km/h',
-    fact: 'El Maglev de Shanghái acelera de 0 a 431 km/h en solo 2 minutos. El viaje del aeropuerto a la ciudad toma solo 7 minutos y 20 segundos. Durante el viaje, puedes sostener una moneda de canto sobre la bandeja ¡y no se cae! â€” no hay vibración porque el tren nunca toca la vía.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Los trenes de levitación magnética (Maglev) son la tecnología más cercana al hoverboard de la película. El tren Maglev japonez SCMaglev alcanzó en 2015 una velocidad récord de 603 km/h. En «BTTF II», Doc Brown llega en un tren de vapor convertido en máquina del tiempo al final de la película, pero en el 2015 ficticio se ven vehículos que levitan silenciosamente, consistentes con la tecnología Maglev escalada. La película imaginó que para 2015 la levitación magnética sería tan común como los coches actuales, lo que no ocurrió por el alto costo de infraestructura y la complejidad de los superconductores a temperatura ambiente.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m5/banner_maglev.webp",
+    "bannerCaption": "Trenes Maglev reales: levitación magnética a más de 600 km/h",
+    "fact": "El tren japonés experimental de levitación superconductora L0 Series Maglev, desarrollado por la compañía Central Japan Railway, estableció el 21 de abril de 2015 el récord mundial de velocidad para vehículos ferroviarios tripulados al registrar exactamente 603 kilómetros por hora en una pista de pruebas de Yamanashi.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Al final de Regreso al Futuro Parte III, el Doc Brown regresa triunfante a 1985 conduciendo una majestuosa locomotora de vapor del siglo XIX reconvertida en máquina del tiempo voladora mediante aeroconversión futurista del año 2015, fusionando la estética del tren clásico de carbón con la levitación electromagnética avanzada de la ciencia ficción."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La ley de inducción electromagnética de Faraday y la ley de Lenz explican el funcionamiento del Maglev electrodinámico: cuando un campo magnético se desplaza sobre un conductor metálico cerrado, induce una corriente eléctrica cuya dirección genera un campo magnético propio que se opone diametralmente al movimiento del imán emisor, generando sustentación vertical."
+      }
+    ]
   },
   {
-    id: 'lexus', title: 'El Hoverboard de Lexus (2015)', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_lexus.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_lexus.webp',
-    content: [
-      'En 2015, la compañía automotriz Lexus presentó un prototipo funcional denominado "SLIDE", un aeropatín diseñado para levitar usando tecnología de superconductores.',
-      'El dispositivo integra criostatos con superconductores enfriados a -197°C mediante nitrógeno líquido. Estos materiales aprovechan el efecto Meissner para levitar al repeler los campos magnéticos de una superficie inferior.',
-      'La demostración se realizó en una pista construida en Barcelona que integraba imanes bajo el concreto. El aeropatín requiere esta infraestructura específica para levitar, siendo inoperante en superficies comunes.',
-      'Debido a que el nitrógeno líquido se evapora en aproximadamente 20 minutos, los criostatos requieren recargas frecuentes. Operar el dispositivo requiere habilidad, ya que la ausencia de fricción cambia por completo la dinámica de movimiento.',
-      'La iniciativa, aunque fue una campaña publicitaria, demostró la viabilidad técnica de la levitación mediante superconductores en vehículos personales ligeros.'
+    "id": "lexus",
+    "title": "El Hoverboard de Lexus (2015)",
+    "color": "#7C4DFF",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_lexus.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_lexus.webp",
+    "content": [
+      "El año 2015, la fecha exacta a la que Marty McFly viaja en el futuro de la ficción, desató una auténtica fiebre tecnológica entre las grandes corporaciones para convertir el mítico aeropatín en un producto funcional de la vida real. La marca automovilística japonesa Lexus aceptó el titánico reto de ingeniería y reclutó a un equipo internacional de científicos pioneros en superconductividad para desarrollar el proyecto SLIDE: el primer hoverboard auténtico capaz de sostener el peso de un ser humano en el aire.",
+      "A diferencia del aeropatín de plástico de Mattel que funcionaba en la película por pura magia cinematográfica, el hoverboard de Lexus era una obra maestra de la termodinámica criogénica y la ciencia de materiales. El dispositivo albergaba dos criostatos herméticos fabricados en fibra de carbono y bambú natural, en cuyo interior se encontraban pastillas de material superconductor cerámico de óxido de itrio, bario y cobre (YBCO) sumergidas en nitrógeno líquido a 197 grados Celsius bajo cero.",
+      "Para lograr que la tabla flotara en el aire, el equipo de ingenieros tuvo que construir en secreto un parque de monopatín especial en la localidad de Cubelles, cerca de Barcelona. La pista parecía de asfalto y madera ordinaria ante las cámaras de filmación, pero debajo de su superficie escondía cientos de metros de rieles magnéticos de neodimio de alta potencia dispuestos en una configuración geométrica continua que creaba un colchón magnético invisible.",
+      "Cuando el skater profesional Ross McGouran se subió a la tabla por primera vez, experimentó las extrañas leyes de la levitación sin fricción. Deslizarse en un hoverboard real requería reaprender a patinar por completo: al carecer del agarre mecánico de las ruedas de goma sobre el suelo, cualquier pequeño balanceo del cuerpo humano amenazaba con expulsar al patinador, obligando a los deportistas a equilibrar su centro de masa con precisión acrobática.",
+      "El proyecto SLIDE demostró fehacientemente que la levitación humana es posible con las leyes físicas contemporáneas, pero también expuso con crudeza sus insalvables limitaciones operativas. La tabla expulsaba columnas continuas de vapor de nitrógeno frío al exterior y requería rellenar sus depósitos criogénicos cada diez minutos de uso activo, sumado a la imposibilidad insalvable de flotar fuera de la pista magnética oculta construida a un coste millonario."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_lexus.webp',
-    bannerCaption: 'El Lexus Slide: un hoverboard real que usa superconductores y nitrógeno líquido',
-    fact: 'Cuando Ross McGouran intentó el aeropatín de Lexus por primera vez, ¡se cayó inmediatamente! No hay fricción contra qué empujar â€” girar, frenar y balancearte son diferentes al skateboarding. Dijo que era como «intentar pararte sobre una bola de hielo». Le tomó 6 semanas de práctica dominar trucos básicos.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En 2015, año exacto al que viaja Marty en BTTF II, Lexus lanzó el hoverboard "SLIDE" como demostración tecnológica real. Usaba superconductores de nitrógeno líquido y requería una pista especial con imanes debajo de la superficie. Tony Hawk, el skatboarder más famoso del mundo, lo probó públicamente. El video viral generó 70 millones de vistas en una semana. El hoverboard de Lexus funcionaba exactamente como en la película: flotaba aproximadamente 1.5 cm sobre la pista magnética y producía una nube de vapor de nitrógeno. El costo de fabricación fue estimado en $750,000 USD, muy lejos de ser un producto de consumo masivo.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m5/banner_lexus.webp",
+    "bannerCaption": "El Lexus Slide: un hoverboard real que usa superconductores y nitrógeno líquido",
+    "fact": "La pista construida para el hoverboard de Lexus en Barcelona requirió la instalación de más de 200 metros lineales de rieles de imanes permanentes de neodimio de alta potencia enterrados bajo láminas de madera y resina, requiriendo más de 400 días de trabajo conjunto entre científicos de Dresden, Alemania, e ingenieros automotrices.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Durante la preproducción de la segunda película, los productores consideraron originalmente que la tabla de Marty fuera de color negro y metalizado con motivos militares, pero el diseñador John Bell y la productora Kathleen Kennedy insistieron en que el color rosa chillón con toques fluorescentes resultaría mucho más memorable e irónico para la personalidad del héroe."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El material cerámico YBCO (YBa2Cu3O7) es un superconductor de alta temperatura crítica descubierto en 1987. A diferencia de los superconductores metálicos clásicos que requerían helio líquido a 4 kelvin, el YBCO alcanza el estado superconductor a 93 kelvin (-180,15 °C), permitiendo su enfriamiento con nitrógeno líquido comercial accesible."
+      }
+    ]
   },
   {
-    id: 'hendo', title: 'El Hendo Hoverboard y Tony Hawk', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_hendo.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_hendo.webp',
-    content: [
-      'En 2014, Arx Pax desarrolló el aeropatín Hendo. El prototipo generó atención tras una demostración en la que participó el deportista Tony Hawk.',
-      'El dispositivo utiliza la Ley de Lenz y corrientes de Foucault. El movimiento de un campo magnético sobre una superficie conductora genera corrientes eléctricas inducidas, las cuales crean un campo magnético que se opone al movimiento original.',
-      'Al incorporar motores que giran conjuntos de imanes, el dispositivo genera corrientes en una superficie metálica, produciendo una fuerza de levitación constante.',
-      'Esta tecnología requiere superficies conductoras, como paneles de cobre o aluminio, por lo que no opera sobre asfalto o concreto. Su objetivo original era desarrollar sistemas de levitación arquitectónica para mitigar daños sísmicos.',
-      'El prototipo Hendo logró financiarse parcialmente a través de campañas de participación pública. El dispositivo flota a 2.5 centímetros de la superficie y emite un ruido característico debido al giro de los motores magnéticos.'
+    "id": "hendo",
+    "title": "El Hendo Hoverboard y Tony Hawk",
+    "color": "#FF6B00",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_hendo.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_hendo.webp",
+    "content": [
+      "Casi al mismo tiempo que Lexus experimentaba con superconductores criogénicos en Europa, una empresa emergente californiana llamada Arx Pax sorprendió al mundo con un enfoque de ingeniería completamente diferente para emular la película de Robert Zemeckis: el Hendo Hoverboard. En lugar de enfriar materiales a temperaturas bajo cero, los inventores Jill y Greg Henderson recurrieron a la fuerza electrodinámica de las corrientes parásitas de Foucault para hacer levitar a personas en tiempo real.",
+      "El Hendo Hoverboard utilizaba cuatro potentes motores eléctricos discoidales giratorios denominados «motores de arquitectura de campo magnético primario». Estos motores hacían rotar imanes permanentes a miles de revoluciones por minuto sobre una superficie metálica conductora, típicamente una plancha maciza de cobre o aluminio. El campo magnético alterno variable inducía intensas corrientes eléctricas circulares en el metal que generaban un campo magnético opuesto que levantaba la tabla.",
+      "Para validar mediáticamente su invento ante la comunidad internacional, los creadores invitaron al legendario skater Tony Hawk a subirse y probar el prototipo. El vídeo de Hawk flotando a tres centímetros de altura sobre una rampa de cobre pulido dio la vuelta al planeta en pocas horas. El propio Hawk declaró con asombro que la experiencia era completamente real, aunque la ausencia total de rozamiento lateral volvía el control direccional de la tabla sumamente resbaladizo e inestable.",
+      "A diferencia del silencio casi místico del aeropatín de Marty McFly en la película, el dispositivo de Hendo era una máquina ruidosa que emitía un silbido penetrante y agudo similar al de una turbina de avión en miniatura, provocado por la rotación frenética de sus rotores mecánicos internos y los ventiladores de refrigeración forzada que impedían que las baterías de litio y las bobinas se fundieran por el colosal calor acumulado.",
+      "Aunque el prototipo sufría de una autonomía de batería limitada a apenas quince minutos y solo podía funcionar sobre superficies de metales no ferrosos de alta pureza como el cobre, la tecnología patentada de Hendo abrió vías de aplicación fascinantes en otros campos de la ingeniería, como el aislamiento antisísmico de edificios durante terremotos y la manipulación industrial de cargas pesadas en fábricas automatizadas."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_hendo.webp',
-    bannerCaption: 'El Hendo Hoverboard: inducción electromagnética sobre superficie de cobre',
-    fact: 'Para financiar su primer modelo de aeropatín, Hendo lanzó una campaña en Kickstarter en 2014 con una meta de $250,000 dólares. El proyecto fue un éxito masivo y recaudó más de $510,000. Los patrocinadores que aportaron $10,000 o más recibieron uno de los primeros diez aeropatines funcionales producidos.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En octubre de 2014, un año antes del 2015 de BTTF II, la startup Hendo lanzó el primer hoverboard comercial real usando tecnología de campo de Halbach. Tony Hawk fue el primer famoso en montarlo. El dispositivo generaba un campo magnético rotante que inducía corrientes en el suelo de cobre debajo, creando repulsión. El "Hendo Hoverboard" flotaba 2.5 cm sobre superficies conductoras y consumía tanta energía como un secador de pelo industrial. Se vendieron 10 unidades a $10,000 USD cada una. La ironía es que Reggie Watts, en el video de lanzamiento, llevó el hoverboard al mismo lago del parking donde Marty lo usó en la película — y demostró que tampoco funciona sobre el agua.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m5/banner_hendo.webp",
+    "bannerCaption": "El Hendo Hoverboard: inducción electromagnética sobre superficie de cobre",
+    "fact": "La campaña de financiación colectiva del Hendo Hoverboard en la plataforma Kickstarter recaudó más de 510.000 dólares estadounidenses en 2014, ofreciendo réplicas funcionales a escala real por 10.000 dólares la unidad que fueron adquiridas por coleccionistas tecnológicos de Silicon Valley y entusiastas del cine.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Para filmar las tomas en las que Marty gira en el aire sobre el estanque de agua frente al tribunal, el especialista de acción Charlie Croughwell tuvo que ser suspendido de un arnés de cables móviles conectado a una grúa móvil de construcción mientras decenas de operarios tiraban coordinadamente de cuerdas para generar la ilusión de inercia y caída."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las corrientes de Foucault o corrientes parásitas fueron descubiertas por el físico francés Léon Foucault en 1851. Ocurren cuando un conductor experimenta un campo magnético variable en el tiempo; los electrones libres dentro del metal forman remolinos circulares que disipan energía térmica y generan campos de repulsión electrodinámica cuantificables."
+      }
+    ]
   },
   {
-    id: 'newton', title: 'Las Leyes de Newton y la Gravedad', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_newton.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_newton.webp',
-    content: [
-      'La ley de la gravitación universal de Isaac Newton (1687) establece que todo objeto con masa atrae a otros objetos. En la Tierra, esta aceleración es de 9.8 m/s².',
-      'Cuando un objeto sostiene otro, ejerce una fuerza ascendente que iguala a la fuerza gravitacional descendente. Un sistema de levitación opera mediante un principio similar, aplicando una fuerza que contrarresta la gravedad.',
-      'La aceleración gravitacional varía según el cuerpo celeste. En la Luna es de 1.6 m/s² (aproximadamente una sexta parte de la terrestre), mientras que en Júpiter es de 24.8 m/s².',
-      'La Tercera Ley de Newton, que postula que toda acción tiene una reacción igual y opuesta, es fundamental. Los imanes ejercen una fuerza hacia abajo sobre la superficie conductora, la cual reacciona empujando el dispositivo hacia arriba.',
-      'En ausencia de resistencia del aire (vacío), todos los objetos caen a la misma velocidad independientemente de su masa, ya que la gravedad los acelera por igual. Galileo propuso este principio en el siglo XVII.'
+    "id": "newton",
+    "title": "Las Leyes de Newton y la Gravedad",
+    "color": "#FFA500",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_newton.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_newton.webp",
+    "content": [
+      "En las películas de ciencia ficción, los objetos flotantes parecen burlar las leyes de la naturaleza como si la gravedad terrestre pudiera apagarse con un simple interruptor de estado sólido. Marty McFly empuja con el pie el asfalto y se desliza sin perder velocidad ni caer al suelo. Sin embargo, para la física clásica inaugurada por Isaac Newton en sus inmortales Principia Mathematica de 1687, la gravedad no es una sugerencia optativa: es una fuerza universal implacable que actúa sobre toda masa.",
+      "La primera ley de Newton, o ley de la inercia, establece que todo cuerpo permanece en estado de reposo o movimiento rectilíneo uniforme a menos que actúe sobre él una fuerza externa neta. Cuando un skater común patina sobre una acera, la fricción entre las ruedas de poliuretano y el cemento, junto con el rozamiento del aire, frena gradualmente su avance. En un hoverboard ideal sin contacto con el suelo, la fricción sólida se reduce a cero, haciendo que el móvil conserve su velocidad de forma perpetua.",
+      "La segunda ley fundamental de Newton (F = m · a) dicta que para acelerar o frenar una masa corporal de setenta kilogramos es imprescindible aplicar una fuerza real en la dirección deseada. En un monopatín convencional, el usuario empuja el suelo hacia atrás con el pie; la tercera ley de Newton (acción y reacción) hace que el suelo empuje al skater hacia adelante con igual magnitud. Flotando en el aire sin tocar una superficie sólida, el patinador carece de un punto de apoyo directo para impulsarse mecánicamente.",
+      "Esta paradoja mecánica explica por qué Marty McFly queda indefenso e inmóvil sobre el agua en la película cuando pierde su inercia inicial: no tiene contra qué empujar para acelerar. En un vehículo volador real, la propulsión exigiría expulsar un fluido hacia atrás a gran velocidad mediante hélices o motores a reacción, empujando masa de aire para que la reacción aerodinámica impulse la tabla hacia adelante en cumplimiento estricto de la tercera ley newtoniana.",
+      "La ley de la gravitación universal formulada por Newton recuerda además que la atracción entre la Tierra y cualquier cuerpo depende exclusivamente de sus masas y de la distancia radial que los separa al cuadrado. Ninguna pintura plástica rosa ni caja de circuitos electrónicos puede cancelar esa atracción gravitatoria intrínseca; para levitar, un dispositivo debe generar continuamente una fuerza ascendente neta exactamente igual y opuesta al peso del vehículo y su ocupante."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_newton.webp',
-    bannerCaption: 'Las leyes de Newton y la gravedad: el obstáculo a superar para levitar',
-    fact: 'En 1971, el astronauta del Apollo 15 David Scott se paró en la Luna y soltó un martillo y una pluma al mismo tiempo en televisión en vivo. Golpearon la superficie lunar simultáneamente. Dijo «¡Qué tal! Esto demuestra que el Sr. Galileo tenía razón.» El video ha sido visto más de 20 millones de veces en YouTube.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La película usa las Leyes de Newton de forma implícita en cada escena del hoverboard. Cuando Marty es empujado por Griff Tannen, conserva el momentum (Primera Ley). Cuando agarra el jeep de Griff, hay una clara transferencia de fuerza (Segunda Ley: F=ma). La persecución termina cuando el momentum lleva a Griff contra el juzgado (Tercera Ley: acción-reacción). En el 2015 real, los ingenieros de hoverboards lucharon exactamente con estas leyes: la Tercera Ley de Newton hace que cualquier movimiento lateral requiera superficies de repulsión perfectamente calibradas, de lo contrario el rider se cae hacia los lados.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m5/banner_newton.webp",
+    "bannerCaption": "Las leyes de Newton y la gravedad: el obstáculo a superar para levitar",
+    "fact": "En 1665, durante la Gran Peste de Londres que obligó a cerrar la Universidad de Cambridge, Isaac Newton se confinó en la granja familiar de Woolsthorpe Manor; en ese periodo de reclusión solitaria concibió el cálculo diferencial, la descomposición de la luz blanca en el prisma y la ley de la gravitación universal tras observar la caída de manzanas en su huerto.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La escena del estanque contiene uno de los chistes visuales más celebrados de la trilogía: mientras Marty flota desesperadamente agitando los brazos sin poder moverse sobre el agua, Griff y su pandilla se acercan rugiendo montados en un gigantesco aeropatín cohete llamado «Pit Bull», equipado con dos reactores de postcombustión que les proporcionan empuje direccional continuo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Para sostener en el aire a una persona de 70 kilogramos sobre la superficie terrestre, un sistema de sustentación antigravitatoria o aerodinámica debe suministrar una fuerza ascendente constante de al menos 686 newtons de magnitud (calculada como el producto de la masa por la aceleración gravitacional estándar g = 9,81 m/s²)."
+      }
+    ]
   },
   {
-    id: 'quantum', title: 'Levitación Cuántica: Flux Pinning', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_quantum.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_quantum.webp',
-    content: [
-      'La levitación cuántica permite que un disco superconductor, enfriado a -196°C, quede fijo en el aire sobre una pista magnética. El disco mantiene su posición incluso si se altera la orientación de la pista.',
-      'Este fenómeno se conoce como bloqueo cuántico o flux pinning. En los superconductores de Tipo II, las líneas de campo magnético quedan atrapadas en las imperfecciones del material, fijando al superconductor en su posición relativa al campo magnético.',
-      'En 2011, el Dr. Boaz Almog realizó una demostración en la que un disco superconductor levitaba a lo largo de una pista circular sin fricción mecánica.',
-      'La superconductividad es un fenómeno cuántico macroscópico. A bajas temperaturas, los electrones forman pares de Cooper que se desplazan sin resistencia eléctrica, permitiendo el flujo de corriente sin pérdida de energía.',
-      'Actualmente, se investiga su aplicación en trenes maglev, rodamientos de precisión y almacenamiento de energía. El requisito de operar a temperaturas criogénicas representa su principal limitación técnica.'
+    "id": "quantum",
+    "title": "Levitación Cuántica: Flux Pinning",
+    "color": "#00E676",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_quantum.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_quantum.webp",
+    "content": [
+      "Si los efectos especiales de Hollywood representan la levitación como un truco visual de cables transparentes, la física del estado sólido alberga un fenómeno cuántico tan asombroso que supera con creces a la propia ficción: el anclaje de flujo magnético o «flux pinning». Mediante este prodigio de la mecánica cuántica moderna, un objeto sólido puede no solo flotar en el aire sobre imanes permanentes, sino quedar literalmente congelado e inmovilizado en cualquier posición espacial tridimensional.",
+      "Este fenómeno se manifiesta de forma exclusiva en los llamados superconductores de tipo II cuando son enfriados por debajo de su temperatura crítica de transición. A diferencia de los superconductores ideales de tipo I que expulsan por completo todo campo magnético exterior de su interior mediante el efecto Meissner-Ochsenfeld clásico, los superconductores de tipo II permiten que ciertas líneas de flujo magnético penetren a través de su estructura cristalina en canales microscópicos.",
+      "Estos canales individuales de penetración magnética se conocen como vórtices de Abrikosov, nombrados en honor al físico ruso Alexei Abrikosov, galardonado con el Premio Nobel. Cada vórtice contiene un filamento minúsculo de campo magnético rodeado por un remolino de supercorrientes cuánticas. Las imperfecciones e impurezas naturales de la red cristalina del material actúan como trampas energéticas que atrapan físicamente estos vórtices en posiciones espaciales fijas.",
+      "El resultado macroscópico del anclaje de flujo es una estabilidad mecánica desconcertante que desafía las restricciones del teorema de Earnshaw. Si se coloca una pastilla superconductora con anclaje de flujo sobre una pista magnética, el superconductor levitará a una distancia exacta. Pero si se empuja la pastilla hacia abajo o hacia los lados con los dedos, o incluso si se coloca la pista completamente boca abajo, el superconductor permanece rígidamente suspendido sin caer jamás al vacío.",
+      "Esta levitación cuántica pasiva no requiere ningún tipo de sensor informático, giroscopio ni baterías eléctricas para mantener la sustentación vertical: es una manifestación directa de la coherencia cuántica macroscópica de miles de millones de pares de electrones de Cooper operando en perfecta sincronía cuántica a temperaturas criogénicas, mostrando cómo las leyes del microcosmos pueden dominar objetos cotidianos de nuestro mundo visible."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_quantum.webp',
-    bannerCaption: 'Quantum flux pinning: superconductores que se anclan en el aire',
-    fact: 'En la Universidad de Tel Aviv, el Dr. Boaz Almog demostró un disco superconductor de solo 0.5 mm de espesor â€” más delgado que una tarjeta de crédito â€” flotando en una pista magnética cargando 70,000 veces su propio peso. Inclinó la pista a 90 grados y el disco se quedó bloqueado. La volteó de cabeza y el disco colgó sin caerse. La audiencia quedó boquiabierta.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La levitación cuántica por "flux pinning" (anclaje de flujo) es la tecnología real más cercana a los hoverboards de la película. Se logra enfriando un superconductor con nitrógeno líquido (-196°C) sobre un imán. Los vórtices magnéticos quedan "anclados" en defectos del superconductor, creando una levitación estable. En «BTTF II», cuando el hoverboard flota con Marty encima sin moverse lateralmente hasta que él lo impulsa, esto recuerda exactamente al flux pinning real: el objeto queda "congelado" en el espacio magnético hasta que se aplica una fuerza. El experimento de levitación cuántica de la Universidad de Tel Aviv (2011) se hizo viral con 8 millones de vistas, citando BTTF directamente.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m5/banner_quantum.webp",
+    "bannerCaption": "Quantum flux pinning: superconductores que se anclan en el aire",
+    "fact": "El físico ruso Alexei Abrikosov predijo la existencia de la red periódica de vórtices magnéticos en superconductores de tipo II en 1957 empleando la teoría cuántica de Ginzburg-Landau, un logro de la física teórica soviética que fue finalmente reconocido con el Premio Nobel de Física en 2003 junto a Vitaly Ginzburg y Anthony Leggett.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La compañía cinematográfica Universal Studios llegó a patentar varios diseños de maquetas y soportes mecánicos para rodar las secuencias de vuelo de la película, incluyendo prototipos a escala de aeropatines con rodamientos de bolas minúsculos integrados en la base de la tabla para planos rodados sobre pistas de plexiglás transparente pulido."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cuanto elemental de flujo magnético cuántico (phi cero), que representa la cantidad exacta e indivisible de campo magnético que puede pasar por un solo vórtice de Abrikosov, equivale exactamente a la constante de Planck h dividida entre el doble de la carga fundamental del electrón (2e), con un valor numérico universal de 2,067833848 x 10 a la menos 15 webers."
+      }
+    ]
   },
   {
-    id: 'electro', title: 'Suspensión EM en la Vida Real', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_electro.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_electro.webp',
-    content: [
-      'La suspensión electromagnética se emplea en trenes maglev, rodamientos magnéticos para turbinas industriales y cabezales de discos duros, los cuales operan a nanómetros de la superficie del disco magnético.',
-      'Existen dos variantes: la suspensión electromagnética (EMS), que utiliza atracción entre electroimanes y un riel ferromagnético superior, y la electrodinámica (EDS), basada en la repulsión magnética sobre una vía conductora, que requiere alta velocidad inicial.',
-      'El concepto Hyperloop propone integrar levitación electromagnética en tubos de baja presión. Al minimizar la resistencia aerodinámica y mecánica, se proyectan velocidades superiores a los 1,000 km/h.',
-      'Las turbinas eólicas con eje de levitación magnética reducen la fricción mecánica, incrementando su eficiencia energética y disminuyendo el desgaste operativo. Estas turbinas pueden generar energía con vientos de menor intensidad.',
-      'La levitación acústica utiliza la presión de radiación de las ondas sonoras para mantener pequeños objetos suspendidos en los nodos de una onda estacionaria, permitiendo la manipulación sin contacto físico.'
+    "id": "electro",
+    "title": "Suspensión EM en la Vida Real",
+    "color": "#FFD740",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_electro.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_electro.webp",
+    "content": [
+      "En Regreso al Futuro Parte II, los coches y monopatines del año 2015 parecen flotar sin esfuerzo sobre autopistas llamadas «Skyways» gracias a un sistema de aeroconversión instalado por cuarenta mil dólares en talleres mecánicos callejeros. En la industria tecnológica actual, la levitación electromagnética activa no es un producto de garaje, sino una disciplina de alta precisión que gobierna sistemas críticos donde cualquier fricción mecánica destruiría mecanismos ultrasensibles.",
+      "Una de las aplicaciones más consolidadas de la suspensión electromagnética se encuentra en los rodamientos magnéticos activos (AMB). Estos dispositivos suspenden ejes de turbinas de alta velocidad que giran a más de cien mil revoluciones por minuto en el vacío sin que el metal toque jamás las paredes del estator. Para impedir que el eje colapse por inestabilidades magnéticas, una red de sensores de posición inductivos mide la posición del eje miles de veces por segundo y ajusta la corriente eléctrica.",
+      "Otro campo revolucionario es la levitación electrostática y óptica empleada en laboratorios de investigación de materiales espaciales. En instalaciones como el Centro de Levitación Electrostática de la NASA en el Centro Marshall de Vuelos Espaciales, gotas de metales refractarios incandescentes a más de dos mil grados Celsius flotan suspendidas en el centro de cámaras de vacío entre electrodos de alta tensión, permitiendo medir propiedades térmicas sin que el crisol contamine la muestra líquida.",
+      "Las pinzas ópticas ideadas por el físico Arthur Ashkin, galardonadas con el Premio Nobel de Física en 2018, constituyen otra variante microscópica extraordinaria de suspensión electromagnética. Utilizando la presión de radiación de un haz de luz láser de precisión enfocado a través de un microscopio, los científicos pueden atrapar, levitar y mover virus, bacterias individuales y hebras de ADN vivo en tres dimensiones sin dañarlas físicamente.",
+      "Estas tecnologías demuestran que domesticar los campos electromagnéticos para suspender cuerpos en el espacio exige un control de retroalimentación computacional a microescala de una sofisticación extrema. Lejos de la simplicidad de la tabla de Marty McFly, la levitación contemporánea es una danza constante de algoritmos de control digital, sensores de barrido rápido y amplificadores de potencia que compensan cada milisegundo las inestabilidades naturales del cosmos físico."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_electro.webp',
-    bannerCaption: 'Suspensión electromagnética real: ingeniería de feedback activo',
-    fact: 'Dentro del disco duro de tu computadora, el cabezal de lectura-escritura «vuela» a solo 3-5 nanómetros sobre el disco giratorio — eso es aproximadamente 1/20,000 del ancho de un cabello humano. Si el cabezal fuera un Boeing 747, estaría volando a 800 km/h a solo 1 milímetro sobre el suelo. Cualquier partícula de polvo a esa escala sería como una montaña. Por eso los discos duros están sellados.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La suspensión electromagnética activa (EMS) ya existe en los trenes Maglev alemanes Transrapid. En «BTTF II», los vehículos voladores de 2015 parecen usar un principio similar: flotan a alturas fijas sin requerir superficies especiales. Esto correspondería a la levitación EMS con control activo, donde sensores y electroimanes ajustan continuamente la separación para evitar el colapso. El automóvil de Doc Brown — una versión voladora del DeLorean — tiene ruedas que se pliegan hacia abajo al aterrizar, un diseño que los ingenieros modernos de vehículos eléctricos citan como inspiración para los conceptos de eVTOL (vehículos de despegue vertical eléctrico) que empresas como Joby Aviation están desarrollando actualmente.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m5/banner_electro.webp",
+    "bannerCaption": "Suspensión electromagnética real: ingeniería de feedback activo",
+    "fact": "El físico neerlandés Andre Geim logró en 1997 hacer levitar en el aire a una rana viva suspendida dentro de un campo magnético colosal de 16 teslas en la Universidad de Nijmegen gracias al diamagnetismo natural de las moléculas de agua del cuerpo del anfibio, hazaña científica que le valió el Premio Ig Nobel en el año 2000.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La secuencia de apertura de Regreso al Futuro Parte II muestra al DeLorean descendiendo desde las nubes en medio de una tormenta eléctrica hacia una autopista aérea con carriles de neón y señales de tráfico digitales flotantes, un diseño conceptual concebido por el ilustrador de ciencia ficción Syd Mead, célebre por su influyente trabajo artístico en Blade Runner."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La presión de radiación electromagnética de la luz se produce por la transferencia directa de momento lineal de los fotones cuando impactan o son absorbidos por una superficie material. En el vacío del espacio, la radiación solar ejerce una fuerza de aproximadamente 9 micronewtons por metro cuadrado sobre reflectores perfectos a la distancia de la órbita de la Tierra."
+      }
+    ]
   },
   {
-    id: 'futuro-antgrav', title: 'El Futuro de la Antigravedad', color: '#FF5252',
-    btnImage: '/assets/bttf/infographic_aeropatines/btn_futuro.webp',
-    image: '/assets/bttf/infographic_aeropatines/hero_futuro.webp',
-    content: [
-      'Las tecnologías de levitación demostradas incluyen levitación magnética, bloqueo cuántico, suspensión electromagnética y levitación acústica.',
-      'En física teórica, la posibilidad de anular el campo gravitacional mediante antigravedad permanece como una hipótesis no demostrada, ya que aún no se ha detectado experimentalmente el gravitón, la partícula mediadora de la gravedad.',
-      'Investigaciones como el motor "EmDrive", evaluadas por la NASA, sugirieron empuje sin propelente, pero experimentos posteriores atribuyeron los resultados a errores de medición. Los avances científicos requieren verificación rigurosa.',
-      'El desarrollo de metamateriales (estructuras a escala sub-longitud de onda) ha permitido desviar ondas electromagnéticas, como la luz. Teóricamente, estructuras análogas podrían interactuar con ondas gravitacionales, aunque esto es especulativo.',
-      'La innovación en transporte personal continúa. La investigación en superconductores a temperatura ambiente sigue su curso. Paralelamente, vehículos aéreos personales basados en propulsión de drones han demostrado vuelos funcionales, logrando hitos en la aviación experimental.'
+    "id": "futuro-antgrav",
+    "title": "El Futuro de la Antigravedad",
+    "color": "#FF5252",
+    "btnImage": "/assets/bttf/infographic_aeropatines/btn_futuro.webp",
+    "image": "/assets/bttf/infographic_aeropatines/hero_futuro.webp",
+    "content": [
+      "A lo largo de toda la saga cinematográfica de Regreso al Futuro, el sueño supremo de la ingeniería automotriz es la conquista definitiva de la gravedad: coches familiares que despegan verticalmente para evitar los atascos de tráfico y tablas juveniles que navegan sobre el aire sin esfuerzo alguno. Mientras que el celuloide trata la antigravedad como un logro técnico mundano de la sociedad de consumo, para la física teórica contemporánea representa uno de los santos griales más esquivos del conocimiento cósmico.",
+      "Desde la formulación de la relatividad general de Albert Einstein, sabemos que la gravedad no es una sustancia o un fluido que pueda ser repelido o blindado con una placa metálica aislante como se hace con las ondas de radio. La gravedad es la manifestación directa de la curvatura del espaciotiempo provocada por la densidad de masa y energía. Para crear un campo de «antigravedad» genuino a escala macroscópica sería imprescindible disponer de materia con masa negativa o densidades de energía negativa exótica.",
+      "En el laboratorio de la física de partículas en el CERN de Ginebra, los científicos abordan esta incógnita analizando el comportamiento de la antimateria en experimentos de precisión como ALPHA y AEGIS. Durante años se debatió si un átomo de antihidrógeno caería hacia abajo en el campo gravitatorio de la Tierra como la materia ordinaria o si experimentaría una fuerza repulsiva ascendente hacia arriba. Los resultados experimentales concluyentes de 2023 confirmaron que la antimateria cae hacia abajo como la materia normal.",
+      "A nivel cosmológico, sin embargo, el universo entero está dominado por una forma real de aceleración repulsiva: la energía oscura. Descubierta en 1998 a través de la observación de supernovas lejanas de tipo Ia, la energía oscura actúa como una presión negativa que estira el tejido del cosmos y acelera la expansión del universo observable, superando a la gravedad atractiva de toda la materia acumulada en las galaxias.",
+      "Aunque no podamos embotellar la energía oscura en el chasis de un automóvil ni fabricar un aeropatín para las calles peatonales de nuestra ciudad, el afán científico por descifrar la gravedad cuántica y la física del vacío nos está dotando de tecnologías antes inimaginables. El sueño cinematográfico de Marty McFly sigue vivo como una estrella polar de inspiración que alienta a nuevas generaciones de estudiantes a estudiar física y transformar los mitos en futuros inventos reales."
     ],
-    bannerImage: '/assets/bttf/infographic_m5/banner_futuro-antgrav.webp',
-    bannerCaption: 'El futuro de la antigravedad: ciudades flotantes con superconductores de temperatura ambiente',
-    fact: 'En 2015, el inventor canadiense Catalin Alexandru Duru estableció el Récord Guinness para el vuelo más largo en aeropatín: 275.9 metros a una altura de 5 metros. Su tabla usaba hélices de dron, no imanes. En 2019, el inventor francés Franky Zapata cruzó el Canal de la Mancha en su Flyboard Air â€” 35 km en 22 minutos a velocidades de hasta 170 km/h y alturas de hasta 15 metros. Literalmente voló sobre el mar en un aeropatín.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El final de «BTTF II» introduce el tren de vapor volador de Doc Brown, sugeriendo que para finales del siglo XX o principios del XXI la antigravedad sería convencional. En la realidad, el mayor obstáculo no es tecnológico sino energético: los superconductores a temperatura ambiente (que funcionarían sin nitrógeno líquido) seguían siendo un desafío en 2025. En 2023, el laboratorio coreano LK-99 anunció un superconductor a temperatura ambiente, generando enorme expectativa mundial — ningún laboratorio del mundo pudo replicar los resultados. La búsqueda continúa. Si algún día se logra, los hoverboards de Marty McFly pasarán de ser ciencia ficción a tecnología de consumo masivo, exactamente como la película predijo.' },
-    ],
-  },
+    "bannerImage": "/assets/bttf/infographic_m5/banner_futuro-antgrav.webp",
+    "bannerCaption": "El futuro de la antigravedad: ciudades flotantes con superconductores de temperatura ambiente",
+    "fact": "El 27 de septiembre de 2023, la colaboración internacional ALPHA del CERN publicó en la prestigiosa revista Nature la confirmación experimental de que los átomos de antihidrógeno atrapados magnéticamente caen hacia abajo bajo la aceleración gravitatoria terrestre con un valor de 0,75 +/- 0,29 g, descartando la hipótesis de la antigravedad para la antimateria estándar.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En el cartel publicitario del año 2015 visible en la plaza municipal de Hill Valley, un enorme anuncio luminoso ofrece la «Aeroconversión de coches por 39.999 dólares», un guiño de los guionistas que imaginaba que para cambiar las cuatro ruedas de goma por impulsores flotantes solo hacía falta llevar el vehículo a un taller mecánico ordinario de barrio."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La constante cosmológica lambda introducida por Einstein en 1917 en sus ecuaciones de campo de la relatividad general representa la densidad de energía intrínseca del espacio vacío. En la cosmología moderna describe la energía oscura, responsable de más del 68% de toda la densidad de masa-energía del universo actual en el modelo Lambda-CDM estándar."
+      }
+    ]
+  }
 ];
 
 /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•

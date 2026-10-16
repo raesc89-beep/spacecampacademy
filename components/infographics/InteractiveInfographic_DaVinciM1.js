@@ -120,144 +120,200 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: "ornithopter-diseno",
-    bannerImage: '/assets/davinci/infographic_m1/banner_ornithopter-diseno.webp',
-    title: "Diseño del Ornitóptero",
-    color: '#D4A843',
-    btnImage: '/assets/davinci/infographic_m1/btn_ornithopter-diseno.webp',
-    image: '/assets/davinci/infographic_m1/hero_ornithopter-diseno.webp',
-    content: [
+    "id": "ornithopter-diseno",
+    "bannerImage": "/assets/davinci/infographic_m1/banner_ornithopter-diseno.webp",
+    "title": "Diseño del Ornitóptero",
+    "color": "#D4A843",
+    "btnImage": "/assets/davinci/infographic_m1/btn_ornithopter-diseno.webp",
+    "image": "/assets/davinci/infographic_m1/hero_ornithopter-diseno.webp",
+    "content": [
       "El ornitóptero es quizás una de las máquinas más emblemáticas diseñadas por Leonardo da Vinci, representando su profundo deseo de conquistar los cielos mediante la imitación de la naturaleza. Este ingenio mecánico fue concebido para que un ser humano pudiera volar batiendo alas artificiales, impulsadas por su propia fuerza muscular, a semejanza del vuelo de los pájaros y los murciélagos. Leonardo dedicó incontables horas a estudiar la anatomía de las alas y a diseñar mecanismos complejos que permitieran transmitir la fuerza de los brazos y las piernas del piloto hacia las alas batientes de la máquina.",
       "A través de sus numerosos bocetos y manuscritos, como el famoso Códice sobre el vuelo de los pájaros, Da Vinci detalló minuciosamente la estructura del ornitóptero. Utilizó materiales ligeros pero resistentes que estaban disponibles en su época, tales como madera de pino, cañas, seda cruda y cuero fuerte. El diseño incorporaba un sistema de poleas, engranajes y pedales que buscaban multiplicar la fuerza humana, ya que Leonardo comprendía, aunque de forma intuitiva, que la relación entre el peso del ser humano y su capacidad de generar potencia muscular era un desafío monumental para lograr el vuelo sostenido.",
       "A pesar de la brillantez conceptual de sus dibujos, el ornitóptero de Leonardo da Vinci enfrentaba limitaciones insuperables debido a las restricciones tecnológicas y fisiológicas de su tiempo. La fisiología humana simplemente no puede producir la energía necesaria de manera continua para levantar su propio peso junto con el de una estructura mecánica mediante el batir de alas. Los pájaros poseen músculos pectorales masivos en proporción a su tamaño corporal, además de un sistema respiratorio altamente eficiente, características evolutivas de las que los seres humanos carecen por completo.",
       "Sin embargo, el valor del ornitóptero no reside en su viabilidad práctica en el siglo XV, sino en su revolucionario enfoque científico y de ingeniería. Leonardo fue pionero en aplicar principios mecánicos y observaciones anatómicas rigurosas al problema de la aviación. En lugar de recurrir a la magia o al mito, confió en la observación empírica y la racionalidad matemática. Sus estudios sobre los centros de gravedad, la resistencia del aire y la aerodinámica incipiente sentaron las bases conceptuales para las generaciones futuras de inventores y pioneros de la aeronáutica.",
       "Hoy en día, los diseños del ornitóptero de Leonardo da Vinci siguen inspirando a ingenieros, artistas y soñadores. Se han construido numerosas maquetas y réplicas a escala natural basadas en sus dibujos, demostrando la precisión de sus conceptos mecánicos, aunque requieran materiales modernos y fuentes de energía artificial para elevarse realmente. El ornitóptero simboliza el eterno anhelo humano por la libertad y la exploración, uniendo la creatividad artística sin límites con la naciente ingeniería mecánica del Renacimiento italiano."
     ],
-    expandables: [
-      { label: "Dato Científico", icon: "atom", text: "La física del vuelo batiente requiere una comprensión profunda de la aerodinámica inestable. A diferencia de los aviones de ala fija que dependen de un flujo de aire constante sobre superficies aerodinámicas estáticas, un ornitóptero debe generar tanto sustentación como empuje simultáneamente mediante movimientos oscilatorios complejos. Esta dinámica fluida implica vórtices de borde de ataque y fuerzas no lineales que desafían los modelos aerodinámicos tradicionales, convirtiendo el sueño de Da Vinci en un desafío que la robótica moderna apenas comienza a dominar por completo en micro-vehículos aéreos." },
-      { label: "¿Sabías que...?", icon: "sparkles", text: "¿Sabías que Leonardo da Vinci diseñó una versión de su máquina voladora en la que el piloto operaría la nave en posición horizontal, casi recostado o boca abajo? En sus notas, Leonardo argumentaba que esta postura permitiría al piloto utilizar la fuerza combinada de sus brazos y piernas simultáneamente, maximizando la producción de energía muscular y, al mismo tiempo, reduciendo significativamente la resistencia frontal al viento durante el vuelo. Esta disposición aerodinámica se asemeja asombrosamente a la posición adoptada por los pilotos de los primeros planeadores modernos y alas deltas." }
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La física del vuelo batiente requiere una comprensión profunda de la aerodinámica inestable. A diferencia de los aviones de ala fija que dependen de un flujo de aire constante sobre superficies aerodinámicas estáticas, un ornitóptero debe generar tanto sustentación como empuje simultáneamente mediante movimientos oscilatorios complejos. Esta dinámica fluida implica vórtices de borde de ataque y fuerzas no lineales que desafían los modelos aerodinámicos tradicionales, convirtiendo el sueño de Da Vinci en un desafío que la robótica moderna apenas comienza a dominar por completo en micro-vehículos aéreos."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "¿Sabías que Leonardo da Vinci diseñó una versión de su máquina voladora en la que el piloto operaría la nave en posición horizontal, casi recostado o boca abajo? En sus notas, Leonardo argumentaba que esta postura permitiría al piloto utilizar la fuerza combinada de sus brazos y piernas simultáneamente, maximizando la producción de energía muscular y, al mismo tiempo, reduciendo significativamente la resistencia frontal al viento durante el vuelo. Esta disposición aerodinámica se asemeja asombrosamente a la posición adoptada por los pilotos de los primeros planeadores modernos y alas deltas."
+      }
     ],
-    fact: "En el Manuscrito B del Instituto de Francia, fechado alrededor de 1487-1489, Leonardo esbozó uno de sus ornitópteros más detallados. En estas páginas advirtió específicamente que las pruebas de vuelo deberían realizarse sobre un lago y que el piloto debía llevar un gran odre flotante como medida de seguridad para evitar ahogarse en caso de una caída inevitable, evidenciando su pragmatismo.",
+    "fact": "En el Manuscrito B del Instituto de Francia, fechado alrededor de 1487-1489, Leonardo esbozó uno de sus ornitópteros más detallados. En estas páginas advirtió específicamente que las pruebas de vuelo deberían realizarse sobre un lago y que el piloto debía llevar un gran odre flotante como medida de seguridad para evitar ahogarse en caso de una caída inevitable, evidenciando su pragmatismo."
   },
   {
-    id: "aves-observacion",
-    bannerImage: '/assets/davinci/infographic_m1/banner_aves-observacion.webp',
-    title: "Observación de las Aves",
-    color: '#B08D57',
-    btnImage: '/assets/davinci/infographic_m1/btn_aves-observacion.webp',
-    image: '/assets/davinci/infographic_m1/hero_aves-observacion.webp',
-    content: [
+    "id": "aves-observacion",
+    "bannerImage": "/assets/davinci/infographic_m1/banner_aves-observacion.webp",
+    "title": "Observación de las Aves",
+    "color": "#B08D57",
+    "btnImage": "/assets/davinci/infographic_m1/btn_aves-observacion.webp",
+    "image": "/assets/davinci/infographic_m1/hero_aves-observacion.webp",
+    "content": [
       "La obsesión de Leonardo da Vinci por el vuelo humano tenía sus raíces en una observación meticulosa y exhaustiva del mundo natural, particularmente en el estudio del comportamiento, la anatomía y las técnicas de vuelo de las aves. Da Vinci pasaba incontables horas observando el cielo de Florencia y Milán, registrando en sus cuadernos cómo los pájaros aprovechaban las corrientes de aire, cómo ajustaban sus plumas y cómo posicionaban sus alas durante el despegue, el vuelo sostenido y el aterrizaje. Esta dedicación al estudio empírico fue el fundamento de todas sus teorías aerodinámicas.",
       "En su famoso \"Códice sobre el vuelo de los pájaros\" (Codice sul volo degli uccelli), compilado alrededor del año 1505, Leonardo documentó sus investigaciones sobre la física aviar. Observó detalladamente que los pájaros no simplemente baten sus alas de arriba hacia abajo de manera uniforme, sino que realizan un movimiento complejo en forma de ocho que genera propulsión y sustentación. Comprendió el papel crucial de la cola como timón y estabilizador, y cómo las aves rapaces utilizaban las corrientes térmicas ascendentes para planear en espiral sin realizar ningún esfuerzo muscular aparente.",
       "Leonardo diseccionó aves e insectos para comprender la estructura muscular y ósea subyacente que hacía posible el milagro del vuelo. Estudió la ligereza de sus huesos huecos y la extraordinaria fuerza de sus músculos pectorales. Al comparar la anatomía de un pájaro con la del ser humano, Leonardo pudo calcular las proporciones necesarias para un ala artificial y concluyó que el hombre necesitaría alas de dimensiones formidables para compensar su peso. Sus detallados dibujos anatómicos muestran un conocimiento biomecánico que estaba siglos por delante de su tiempo histórico.",
       "Una de las conclusiones más brillantes de Leonardo derivada de su observación de las aves fue el principio de que \"el aire ejerce tanta resistencia contra la cosa, como la cosa ejerce contra el aire\". Esta afirmación es, en esencia, una anticipación asombrosa de la Tercera Ley del Movimiento de Isaac Newton (acción y reacción), formulada casi doscientos años después. Leonardo aplicó este principio para explicar cómo las alas de los pájaros se apoyan en el aire denso bajo ellas para impulsarse hacia arriba, un concepto fundamental para el diseño de cualquier máquina voladora.",
       "El legado de los estudios aviares de Da Vinci trasciende la mera curiosidad naturalista; representa el nacimiento de la biomimética, la ciencia de emular los modelos, sistemas y elementos de la naturaleza para resolver problemas humanos complejos. Aunque sus máquinas voladoras no lograron conquistar los cielos en su época, su metodología científica, basada en observar, analizar y replicar los mecanismos biológicos del vuelo, sentó el precedente indispensable para el desarrollo de la aeronáutica moderna y sigue siendo una fuente de inspiración para los ingenieros contemporáneos."
     ],
-    expandables: [
-      { label: "Dato Científico", icon: "atom", text: "La observación minuciosa de Leonardo le permitió identificar el fenómeno del alula o ala bastarda, un pequeño apéndice plumoso en el borde de ataque del ala de muchas aves. Observó cómo las aves despliegan esta pequeña estructura durante maniobras lentas o al aterrizar. Hoy en día sabemos que el alula actúa como un dispositivo hipersustentador (similar a los slats en los aviones modernos), retrasando la entrada en pérdida al suavizar el flujo de aire turbulento sobre la superficie superior del ala en altos ángulos de ataque, una maravilla de la ingeniería natural." },
-      { label: "¿Sabías que...?", icon: "sparkles", text: "¿Sabías que Leonardo da Vinci no solo estudió a los pájaros, sino también a los murciélagos, y que estos últimos inspiraron gran parte de sus diseños alares finales? A diferencia de las alas emplumadas de las aves, que permiten el paso del aire entre las plumas en el movimiento ascendente, las alas membranosas de los murciélagos le parecieron a Leonardo mucho más eficientes para imitar artificialmente. Consideraba que una membrana continua de cuero o seda gruesa atraparía mejor el aire, lo que se refleja claramente en los famosos bocetos de su ornitóptero." }
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La observación minuciosa de Leonardo le permitió identificar el fenómeno del alula o ala bastarda, un pequeño apéndice plumoso en el borde de ataque del ala de muchas aves. Observó cómo las aves despliegan esta pequeña estructura durante maniobras lentas o al aterrizar. Hoy en día sabemos que el alula actúa como un dispositivo hipersustentador (similar a los slats en los aviones modernos), retrasando la entrada en pérdida al suavizar el flujo de aire turbulento sobre la superficie superior del ala en altos ángulos de ataque, una maravilla de la ingeniería natural."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "¿Sabías que Leonardo da Vinci no solo estudió a los pájaros, sino también a los murciélagos, y que estos últimos inspiraron gran parte de sus diseños alares finales? A diferencia de las alas emplumadas de las aves, que permiten el paso del aire entre las plumas en el movimiento ascendente, las alas membranosas de los murciélagos le parecieron a Leonardo mucho más eficientes para imitar artificialmente. Consideraba que una membrana continua de cuero o seda gruesa atraparía mejor el aire, lo que se refleja claramente en los famosos bocetos de su ornitóptero."
+      }
     ],
-    fact: "En su Códice sobre el vuelo, Leonardo dedicó extensas notas al estudio del centro de gravedad y el centro de presión aerodinámica en las aves. Comprendió que la estabilidad en el aire dependía de la relación entre estos dos puntos. Si un pájaro deseaba descender, movía su centro de gravedad hacia adelante; si quería ascender o frenar, lo desplazaba hacia atrás.",
+    "fact": "En su Códice sobre el vuelo, Leonardo dedicó extensas notas al estudio del centro de gravedad y el centro de presión aerodinámica en las aves. Comprendió que la estabilidad en el aire dependía de la relación entre estos dos puntos. Si un pájaro deseaba descender, movía su centro de gravedad hacia adelante; si quería ascender o frenar, lo desplazaba hacia atrás."
   },
   {
-    id: "aerodinamica-renacimiento",
-    bannerImage: '/assets/davinci/infographic_m1/banner_aerodinamica-renacimiento.webp',
-    title: "Aerodinámica en el Renacimiento",
-    color: '#8C6B4F',
-    btnImage: '/assets/davinci/infographic_m1/btn_aerodinamica-renacimiento.webp',
-    image: '/assets/davinci/infographic_m1/hero_aerodinamica-renacimiento.webp',
-    content: [
+    "id": "aerodinamica-renacimiento",
+    "bannerImage": "/assets/davinci/infographic_m1/banner_aerodinamica-renacimiento.webp",
+    "title": "Aerodinámica en el Renacimiento",
+    "color": "#8C6B4F",
+    "btnImage": "/assets/davinci/infographic_m1/btn_aerodinamica-renacimiento.webp",
+    "image": "/assets/davinci/infographic_m1/hero_aerodinamica-renacimiento.webp",
+    "content": [
       "Durante el Renacimiento, una época caracterizada por el redescubrimiento del conocimiento clásico y un florecimiento sin precedentes de las artes y las ciencias, Leonardo da Vinci se erigió como un pionero solitario en el campo incipiente de la aerodinámica. En una época en la que el aire era considerado un elemento etéreo y misterioso, casi espiritual, Leonardo lo analizó como un fluido físico con propiedades medibles, tales como densidad, resistencia y presión. Sus cuadernos están repletos de estudios hidrodinámicos que aplicó directamente para comprender el comportamiento del aire en movimiento.",
       "Uno de los mayores logros de Leonardo en la aerodinámica del Renacimiento fue el diseño del primer anemómetro mecánico para medir la velocidad del viento, así como instrumentos para medir la humedad del aire (higrómetro) y la presión atmosférica. Entendió que las condiciones atmosféricas eran variables críticas que afectarían el rendimiento de cualquier máquina voladora. A través de la experimentación con corrientes de agua y modelos, observó cómo se formaban remolinos y turbulencias detrás de objetos de diferentes formas, anticipando el concepto moderno de resistencia aerodinámica o \"drag\".",
       "Leonardo llegó a concebir la idea del paracaídas mucho antes de que existiera cualquier medio práctico para elevarse a grandes alturas. En un dibujo fechado en 1485, diseñó una estructura piramidal cubierta de tela de lino sellada, acompañada de la nota: \"Si un hombre tiene una tienda de lino de cuyas aberturas se han tapado todas, y que tenga doce braccia (codos) de ancho y doce de profundidad, podrá arrojarse desde cualquier gran altura sin sufrir ningún daño\". Esta asombrosa invención demostraba su comprensión de cómo maximizar la resistencia del aire para contrarrestar la gravedad.",
       "Además de estudiar la sustentación y la resistencia, Leonardo reflexionó profundamente sobre los perfiles aerodinámicos. Observó que los cuerpos con forma de huso o de gota (como el cuerpo de un pez o de un pájaro) se movían a través de fluidos con mucha mayor eficiencia que los objetos con superficies planas. Estos principios geométricos los aplicó al diseño de proyectiles, embarcaciones y, por supuesto, a sus máquinas voladoras, intentando minimizar la fricción estructural y maximizar el flujo suave del aire sobre las superficies de sustentación, un principio básico de la aviación actual.",
       "Lamentablemente, los estudios aerodinámicos de Leonardo da Vinci permanecieron ocultos en sus cuadernos privados durante varios siglos tras su muerte. Sus manuscritos, escritos en su característica escritura especular de derecha a izquierda, fueron dispersados por Europa y no fueron publicados y analizados sistemáticamente hasta finales del siglo XIX y principios del XX. De haber sido compartidos con la comunidad intelectual de su tiempo, es posible que el desarrollo de la ciencia aerodinámica y de la ingeniería aeronáutica se hubiera adelantado varios siglos de manera espectacular."
     ],
-    expandables: [
-      { label: "Dato Científico", icon: "atom", text: "La genialidad intuitiva de Leonardo da Vinci sobre la dinámica de fluidos lo llevó a esbozar las líneas de corriente (streamlines) del aire fluyendo alrededor de objetos sólidos, un concepto matemático que no fue formalizado rigurosamente hasta el siglo XVIII por científicos como Daniel Bernoulli y Leonhard Euler. Sus dibujos muestran claramente zonas de alta y baja presión, así como la formación de vórtices en la estela posterior, lo que demuestra una comprensión visual extraordinariamente profunda de la física que gobierna la aerodinámica contemporánea." },
-      { label: "¿Sabías que...?", icon: "sparkles", text: "¿Sabías que en el año 2000, el paracaidista británico Adrian Nicholas puso a prueba el diseño original del paracaídas de Leonardo da Vinci? Construido rigurosamente según las especificaciones del maestro renacentista, utilizando solo herramientas y materiales disponibles en el siglo XV (madera, cuerda de cáñamo y tela de lino), Nicholas saltó desde un globo aerostático a 3.000 metros de altura. El paracaídas piramidal funcionó perfectamente, proporcionando un descenso más suave y estable que los paracaídas modernos tradicionales, validando la teoría aerodinámica de Leonardo 500 años después." }
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La genialidad intuitiva de Leonardo da Vinci sobre la dinámica de fluidos lo llevó a esbozar las líneas de corriente (streamlines) del aire fluyendo alrededor de objetos sólidos, un concepto matemático que no fue formalizado rigurosamente hasta el siglo XVIII por científicos como Daniel Bernoulli y Leonhard Euler. Sus dibujos muestran claramente zonas de alta y baja presión, así como la formación de vórtices en la estela posterior, lo que demuestra una comprensión visual extraordinariamente profunda de la física que gobierna la aerodinámica contemporánea."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "¿Sabías que en el año 2000, el paracaidista británico Adrian Nicholas puso a prueba el diseño original del paracaídas de Leonardo da Vinci? Construido rigurosamente según las especificaciones del maestro renacentista, utilizando solo herramientas y materiales disponibles en el siglo XV (madera, cuerda de cáñamo y tela de lino), Nicholas saltó desde un globo aerostático a 3.000 metros de altura. El paracaídas piramidal funcionó perfectamente, proporcionando un descenso más suave y estable que los paracaídas modernos tradicionales, validando la teoría aerodinámica de Leonardo 500 años después."
+      }
     ],
-    fact: "En el Códice Atlántico, Leonardo ilustra varios experimentos en los que dejaba caer objetos de diferentes formas y pesos desde torres para observar la fricción del aire. Se dio cuenta de que la resistencia aumentaba exponencialmente con la velocidad de caída, un principio fundamental de la mecánica de fluidos que desafiaba directamente la física aristotélica aceptada en su época.",
+    "fact": "En el Códice Atlántico, Leonardo ilustra varios experimentos en los que dejaba caer objetos de diferentes formas y pesos desde torres para observar la fricción del aire. Se dio cuenta de que la resistencia aumentaba exponencialmente con la velocidad de caída, un principio fundamental de la mecánica de fluidos que desafiaba directamente la física aristotélica aceptada en su época."
   },
   {
-    id: "maquinas-guerra",
-    bannerImage: '/assets/davinci/infographic_m1/banner_maquinas-guerra.webp',
-    title: "Máquinas de Guerra Aeronáuticas",
-    color: '#C9A24B',
-    btnImage: '/assets/davinci/infographic_m1/btn_maquinas-guerra.webp',
-    image: '/assets/davinci/infographic_m1/hero_maquinas-guerra.webp',
-    content: [
+    "id": "maquinas-guerra",
+    "bannerImage": "/assets/davinci/infographic_m1/banner_maquinas-guerra.webp",
+    "title": "Máquinas de Guerra Aeronáuticas",
+    "color": "#C9A24B",
+    "btnImage": "/assets/davinci/infographic_m1/btn_maquinas-guerra.webp",
+    "image": "/assets/davinci/infographic_m1/hero_maquinas-guerra.webp",
+    "content": [
       "Aunque hoy recordamos a Leonardo da Vinci principalmente por sus contribuciones al arte, la anatomía y sus sueños de vuelo humano pacífico, durante gran parte de su carrera se ganó la vida y el favor de poderosos mecenas ofreciendo sus servicios como ingeniero militar. En un período marcado por constantes conflictos entre las ciudades-estado italianas y las potencias extranjeras, los gobernantes valoraban inmensamente las innovaciones bélicas. Da Vinci diseñó una impresionante variedad de máquinas de guerra, demostrando su capacidad para aplicar la mecánica avanzada a propósitos destructivos.",
       "Uno de sus diseños bélicos más famosos es el precursor del tanque moderno. Leonardo diseñó un vehículo blindado circular, con forma de caparazón de tortuga, cubierto de placas protectoras y erizado de cañones en todas las direcciones. Este vehículo de combate debía ser propulsado desde el interior por un equipo de hombres que hacían girar manivelas conectadas a ruedas dentadas. Aunque su movilidad práctica en un campo de batalla real habría sido muy limitada debido a su enorme peso y a la tracción humana, el concepto revolucionario de un vehículo móvil blindado y fuertemente armado no tiene precedentes.",
       "Leonardo también revolucionó el diseño de la artillería con invenciones como la ametralladora de múltiples cañones. Para solucionar el problema del lento tiempo de recarga de los cañones tradicionales, ideó un sistema con varios cañones dispuestos en abanico sobre un soporte giratorio. Mientras una hilera de cañones disparaba, otra hilera podía estar enfriándose, y una tercera estaba lista para ser recargada. Esta invención buscaba aumentar drásticamente la cadencia de fuego en el campo de batalla, un objetivo táctico que se convirtió en el pilar de la guerra moderna siglos más tarde con armas como la Gatling.",
       "En el ámbito naval, Leonardo no fue menos prolífico. Trabajando para la República de Venecia, que temía un ataque naval del Imperio Otomano, diseñó equipos de buceo rudimentarios para que los saboteadores pudieran acercarse en secreto a los barcos enemigos y perforar sus cascos bajo el agua. Sus trajes de buceo incluían tubos de respiración de cuero reforzados con anillos metálicos (para evitar que la presión del agua los colapsara), gafas de vidrio, e incluso compartimentos inflables integrados que funcionaban como chalecos compensadores de flotabilidad para permitir ascender y descender.",
       "Es notable la dicotomía ética presente en la obra militar de Leonardo. Por un lado, describió repetidamente la guerra como una \"locura bestial\" (pazzia bestialissima) y un acto de barbarie. Por otro lado, dedicó su genio excepcional a inventar armamento de una letalidad teórica devastadora. Algunos historiadores argumentan que, consciente del potencial destructivo de sus inventos, introdujo intencionalmente fallos mecánicos sutiles en los planos de ciertas máquinas (como en los engranajes del tanque), asegurando que si caían en manos equivocadas, la maquinaria simplemente se atascaría al ser construida."
     ],
-    expandables: [
-      { label: "Dato Científico", icon: "atom", text: "La enorme ballesta gigante ideada por Leonardo, diseñada para intimidar más que para disparar flechas convencionales, tenía brazos con una envergadura de casi 24 metros. El proyectil propuesto no era una saeta, sino grandes bolas de piedra o bombas incendiarias. El intrincado mecanismo de retroceso y el sistema de poleas para tensar la inmensa cuerda de la ballesta revelan una comprensión excepcional de las leyes de la palanca, la elasticidad y la acumulación de energía potencial elástica, características de la ingeniería mecánica renacentista más avanzada." },
-      { label: "¿Sabías que...?", icon: "sparkles", text: "¿Sabías que Leonardo da Vinci diseñó cañones que se cargaban por la recámara en lugar de por la boca (avancarga)? En su época, la artillería se cargaba introduciendo la pólvora y el proyectil por la parte frontal del cañón, un proceso peligrosamente lento que exponía a los artilleros al fuego enemigo. El concepto de retrocarga de Leonardo, equipado con un mecanismo de bloqueo hermético, no se convirtió en la norma estándar de la artillería militar mundial hasta bien entrado el siglo XIX, debido a que la metalurgia del Renacimiento no podía forjar sellos lo suficientemente fuertes." }
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La enorme ballesta gigante ideada por Leonardo, diseñada para intimidar más que para disparar flechas convencionales, tenía brazos con una envergadura de casi 24 metros. El proyectil propuesto no era una saeta, sino grandes bolas de piedra o bombas incendiarias. El intrincado mecanismo de retroceso y el sistema de poleas para tensar la inmensa cuerda de la ballesta revelan una comprensión excepcional de las leyes de la palanca, la elasticidad y la acumulación de energía potencial elástica, características de la ingeniería mecánica renacentista más avanzada."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "¿Sabías que Leonardo da Vinci diseñó cañones que se cargaban por la recámara en lugar de por la boca (avancarga)? En su época, la artillería se cargaba introduciendo la pólvora y el proyectil por la parte frontal del cañón, un proceso peligrosamente lento que exponía a los artilleros al fuego enemigo. El concepto de retrocarga de Leonardo, equipado con un mecanismo de bloqueo hermético, no se convirtió en la norma estándar de la artillería militar mundial hasta bien entrado el siglo XIX, debido a que la metalurgia del Renacimiento no podía forjar sellos lo suficientemente fuertes."
+      }
     ],
-    fact: "En la famosa carta de presentación que Leonardo envió a Ludovico Sforza, duque de Milán, en 1482, de sus diez puntos enumerando sus habilidades, nueve estaban dedicados exclusivamente a la ingeniería militar naval y terrestre. Solo en el último párrafo mencionó sus habilidades como arquitecto, escultor y pintor.",
+    "fact": "En la famosa carta de presentación que Leonardo envió a Ludovico Sforza, duque de Milán, en 1482, de sus diez puntos enumerando sus habilidades, nueve estaban dedicados exclusivamente a la ingeniería militar naval y terrestre. Solo en el último párrafo mencionó sus habilidades como arquitecto, escultor y pintor."
   },
   {
-    id: "helice-espiral",
-    bannerImage: '/assets/davinci/infographic_m1/banner_helice-espiral.webp',
-    title: "El Tornillo Aéreo",
-    color: '#9C7E5A',
-    btnImage: '/assets/davinci/infographic_m1/btn_helice-espiral.webp',
-    image: '/assets/davinci/infographic_m1/hero_helice-espiral.webp',
-    content: [
+    "id": "helice-espiral",
+    "bannerImage": "/assets/davinci/infographic_m1/banner_helice-espiral.webp",
+    "title": "El Tornillo Aéreo",
+    "color": "#9C7E5A",
+    "btnImage": "/assets/davinci/infographic_m1/btn_helice-espiral.webp",
+    "image": "/assets/davinci/infographic_m1/hero_helice-espiral.webp",
+    "content": [
       "Entre las visiones más futuristas y proféticas esbozadas por Leonardo da Vinci se encuentra el tornillo aéreo (Vite Aerea), universalmente reconocido como el precursor directo del helicóptero moderno. Diseñado alrededor del año 1489, esta máquina fascinante no se basaba en el movimiento batiente de las alas de los pájaros (ornitóptero), sino en un principio aerodinámico completamente diferente y revolucionario: la rotación constante de una superficie helicoidal para generar sustentación vertical. Era un concepto puro de ala rotatoria, una idea que se adelantaba más de cuatrocientos años a la tecnología de su tiempo.",
       "El diseño del tornillo aéreo consistía en una gran hélice espiral construida con una estructura de caña, recubierta de tela de lino fuertemente almidonada para hacerla impermeable al aire, sostenida por cables y un mástil central. El funcionamiento teórico requería que un equipo de cuatro hombres, de pie sobre una plataforma circular en la base, empujara unas palancas o manivelas en sentido giratorio. Leonardo anotó en sus cuadernos que si esta máquina se construía correctamente y se giraba rápidamente, el tornillo \"haría su rosca en el aire\" y se elevaría hacia el cielo, como un tornillo penetra en la madera.",
       "La inspiración original para este diseño tan inusual probablemente provino de varias fuentes contemporáneas y clásicas. Leonardo estaba familiarizado con el tornillo de Arquímedes, una antigua invención utilizada para bombear agua hacia arriba mediante una estructura helicoidal. También es muy probable que haya observado un juguete popular asiático que había llegado a Europa, el trompo volador o libélula de bambú, un pequeño rotor de madera que se hacía girar frotando un eje entre las manos. Leonardo aplicó brillantemente estos principios hidráulicos y lúdicos al denso medio de la atmósfera terrestre.",
       "El principal obstáculo técnico del tornillo aéreo de Da Vinci, al igual que con su ornitóptero, era la falta de un motor o planta motriz adecuada. La fuerza muscular humana es completamente insuficiente para generar las revoluciones por minuto necesarias para que una estructura de ese tamaño levante su propio peso en contra de la gravedad. Además, el diseño carecía de un rotor de cola o un mecanismo para contrarrestar el par motor (torque); por lo tanto, incluso si la hélice principal lograra girar con suficiente fuerza, la plataforma base simplemente habría girado incontrolablemente en la dirección opuesta.",
       "A pesar de estas fallas operativas insuperables para la tecnología del siglo XV, el impacto conceptual del tornillo aéreo ha sido monumental en la historia de la aviación. La idea de que una superficie aerodinámica giratoria podía crear sustentación independientemente del movimiento hacia adelante del vehículo fue el concepto fundamental que eventualmente condujo al desarrollo exitoso de los autogiros y helicópteros en el siglo XX por pioneros como Juan de la Cierva e Igor Sikorsky. El esbozo del tornillo aéreo sigue siendo hoy un ícono atemporal del genio inventivo puro de Leonardo."
     ],
-    expandables: [
-      { label: "Dato Científico", icon: "atom", text: "La eficiencia aerodinámica del diseño del tornillo aéreo ha sido analizada mediante simulaciones modernas de dinámica de fluidos computacional (CFD). Sorprendentemente, los resultados muestran que la inmensa estructura de lino sólido es aerodinámicamente muy ineficiente y generaría enormes cantidades de arrastre (drag) con muy poca sustentación útil. Las palas de rotor de los helicópteros modernos, que son largas, estrechas y con un perfil aerodinámico complejo, funcionan bajo principios muy diferentes a los del \"tornillo continuo\" imaginado por Da Vinci." },
-      { label: "¿Sabías que...?", icon: "sparkles", text: "¿Sabías que un equipo de estudiantes de ingeniería aeronáutica de la Universidad de Maryland construyó en 2022 un cuadricóptero volador funcional (un dron llamado \"Crimson Spin\") utilizando rotores modelados exactamente según el diseño del tornillo aéreo de Leonardo da Vinci? Utilizando materiales modernos, impresión 3D y pequeños motores eléctricos de alta potencia, lograron demostrar que, aunque ineficiente, el concepto aerodinámico original de Leonardo para generar sustentación vertical realmente funciona bajo condiciones tecnológicas contemporáneas." }
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La eficiencia aerodinámica del diseño del tornillo aéreo ha sido analizada mediante simulaciones modernas de dinámica de fluidos computacional (CFD). Sorprendentemente, los resultados muestran que la inmensa estructura de lino sólido es aerodinámicamente muy ineficiente y generaría enormes cantidades de arrastre (drag) con muy poca sustentación útil. Las palas de rotor de los helicópteros modernos, que son largas, estrechas y con un perfil aerodinámico complejo, funcionan bajo principios muy diferentes a los del \"tornillo continuo\" imaginado por Da Vinci."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "¿Sabías que un equipo de estudiantes de ingeniería aeronáutica de la Universidad de Maryland construyó en 2022 un cuadricóptero volador funcional (un dron llamado \"Crimson Spin\") utilizando rotores modelados exactamente según el diseño del tornillo aéreo de Leonardo da Vinci? Utilizando materiales modernos, impresión 3D y pequeños motores eléctricos de alta potencia, lograron demostrar que, aunque ineficiente, el concepto aerodinámico original de Leonardo para generar sustentación vertical realmente funciona bajo condiciones tecnológicas contemporáneas."
+      }
     ],
-    fact: "Leonardo especificó claramente en sus manuscritos las dimensiones que debía tener el tornillo aéreo para ser funcional: debía poseer un radio de cuatro braccia (aproximadamente 2,4 metros) y requería estar construido con materiales excepcionalmente robustos y ligeros.",
+    "fact": "Leonardo especificó detalladamente en el Manuscrito B de París las dimensiones que debía tener el tornillo aéreo para ser operativo: debía poseer un radio de cuatro braccia (aproximadamente 2,4 metros), un rotor con recubrimiento de lienzo almidonado y un eje central impulsado por cables de tracción, precursor del rotor de helicóptero moderno."
   },
   {
-    id: "vuelo-moderno",
-    bannerImage: '/assets/davinci/infographic_m1/banner_vuelo-moderno.webp',
-    title: "El Vuelo Moderno",
-    color: '#A88B5E',
-    btnImage: '/assets/davinci/infographic_m1/btn_vuelo-moderno.webp',
-    image: '/assets/davinci/infographic_m1/hero_vuelo-moderno.webp',
-    content: [
+    "id": "vuelo-moderno",
+    "bannerImage": "/assets/davinci/infographic_m1/banner_vuelo-moderno.webp",
+    "title": "El Vuelo Moderno",
+    "color": "#A88B5E",
+    "btnImage": "/assets/davinci/infographic_m1/btn_vuelo-moderno.webp",
+    "image": "/assets/davinci/infographic_m1/hero_vuelo-moderno.webp",
+    "content": [
       "El camino desde los visionarios pero impracticables bocetos de Leonardo da Vinci hasta la realidad tangible del vuelo moderno fue un proceso largo, arduo y repleto de fracasos monumentales y sacrificios humanos. Mientras que Da Vinci se centró principalmente en imitar el vuelo batiente de las aves y el concepto del rotor, la clave para el vuelo humano sostenido y controlado resultaría ser el ala fija. A lo largo del siglo XIX, inventores y científicos como George Cayley establecieron los principios modernos de la aerodinámica, separando el sistema de sustentación (el ala) del sistema de propulsión (el motor).",
       "Otto Lilienthal, un ingeniero alemán de finales del siglo XIX, llevó la experimentación aeronáutica a nuevas alturas mediante la construcción y prueba exhaustiva de planeadores de ala fija. A diferencia de Da Vinci, Lilienthal realizó miles de vuelos documentados, recopilando datos empíricos cruciales sobre la curvatura de las alas (perfil aerodinámico) y la distribución de presiones. Sus meticulosas tablas aerodinámicas y su insistencia en volar repetidamente para perfeccionar el control influyeron profundamente en los hermanos Wright, sirviendo como el puente crítico entre la teoría renacentista y la aviación motorizada.",
       "El hito definitivo en la historia de la aviación se logró el 17 de diciembre de 1903, cuando Orville y Wilbur Wright consiguieron el primer vuelo sostenido, controlado y con motor en las dunas de Kitty Hawk, Carolina del Norte. Su éxito no se basó simplemente en acoplar un motor a un planeador, sino en resolver el problema más complejo del vuelo: el control dinámico en los tres ejes del espacio (cabeceo, balanceo y guiñada). Los hermanos Wright desarrollaron un sistema de alabeo, un mecanismo para torcer las puntas de las alas, logrando la estabilidad que siempre eludió a los pioneros anteriores.",
       "El desarrollo de motores de combustión interna ligeros y potentes fue la tecnología habilitadora que finalmente proporcionó la fuerza motriz que Leonardo da Vinci soñó obtener de la anatomía humana. El motor fabricado a medida por Charles Taylor para el Flyer de los Wright generaba 12 caballos de fuerza pesando solo unos 80 kilos. Esta revolucionaria relación potencia-peso permitió que una máquina más pesada que el aire superara la resistencia aerodinámica de manera constante, abriendo la puerta a una rápida evolución tecnológica que pasaría de aviones de madera y tela a los reactores supersónicos en unas pocas décadas.",
       "Hoy en día, la aviación moderna abarca desde enormes aviones comerciales intercontinentales de fuselaje ancho hasta vehículos aéreos no tripulados (drones) microscópicos, pasando por aeronaves de despegue y aterrizaje vertical, cazas de combate invisibles al radar y la inminente era de la exploración espacial comercial. Cada vez que una aeronave surca los cielos, lleva consigo el eco innegable del espíritu pionero de Leonardo da Vinci. Él fue quien se atrevió a imaginar que los límites impuestos por la gravedad terrestre no eran absolutos, sino simplemente desafíos mecánicos esperando a ser resueltos por la inventiva humana."
     ],
-    expandables: [
-      { label: "Dato Científico", icon: "atom", text: "La evolución del ala de las aeronaves es una maravilla de la ingeniería de materiales y la mecánica de fluidos. Desde las estructuras de madera de abeto recubiertas de tela de algodón de los primeros pioneros, hasta las alas modernas fabricadas con compuestos avanzados de fibra de carbono incrustados con sensores piezoeléctricos. Estos materiales compuestos no solo ofrecen una extraordinaria relación resistencia-peso, sino que permiten fabricar perfiles aerodinámicos supercríticos altamente eficientes que minimizan el arrastre de onda a velocidades cercanas a la barrera del sonido." },
-      { label: "¿Sabías que...?", icon: "sparkles", text: "¿Sabías que el sistema de alabeo (wing warping) inventado por los hermanos Wright para controlar el balanceo de su aeronave fue rápidamente sustituido por los alerones (pequeñas superficies articuladas en el borde de fuga de las alas)? Sin embargo, en un giro fascinante de la ingeniería moderna, los aviones experimentales y algunos drones de vanguardia actuales están volviendo a explorar la tecnología de \"alas deformables\" utilizando materiales inteligentes y aleaciones con memoria de forma, retornando al concepto biomimético de modificar la forma del ala de manera fluida, como lo hace un pájaro en vuelo." }
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La evolución del ala de las aeronaves es una maravilla de la ingeniería de materiales y la mecánica de fluidos. Desde las estructuras de madera de abeto recubiertas de tela de algodón de los primeros pioneros, hasta las alas modernas fabricadas con compuestos avanzados de fibra de carbono incrustados con sensores piezoeléctricos. Estos materiales compuestos no solo ofrecen una extraordinaria relación resistencia-peso, sino que permiten fabricar perfiles aerodinámicos supercríticos altamente eficientes que minimizan el arrastre de onda a velocidades cercanas a la barrera del sonido."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "¿Sabías que el sistema de alabeo (wing warping) inventado por los hermanos Wright para controlar el balanceo de su aeronave fue rápidamente sustituido por los alerones (pequeñas superficies articuladas en el borde de fuga de las alas)? Sin embargo, en un giro fascinante de la ingeniería moderna, los aviones experimentales y algunos drones de vanguardia actuales están volviendo a explorar la tecnología de \"alas deformables\" utilizando materiales inteligentes y aleaciones con memoria de forma, retornando al concepto biomimético de modificar la forma del ala de manera fluida, como lo hace un pájaro en vuelo."
+      }
     ],
-    fact: "El primer avión comercial de reacción del mundo, el de Havilland Comet, introducido en 1952, sufrió varios accidentes trágicos debido a un fenómeno entonces desconocido: la fatiga del metal exarcebada por sus ventanas de cabina de forma cuadrada, lo que provocó una revisión mundial que estandarizó las ventanas elípticas u ovaladas para distribuir mejor las tensiones estructurales.",
+    "fact": "El primer avión comercial de reacción del mundo, el de Havilland Comet, introducido en 1952, sufrió varios accidentes trágicos debido a un fenómeno entonces desconocido: la fatiga del metal exarcebada por sus ventanas de cabina de forma cuadrada, lo que provocó una revisión mundial que estandarizó las ventanas elípticas u ovaladas para distribuir mejor las tensiones estructurales."
   },
   {
-    id: "legado-aviacion",
-    bannerImage: '/assets/davinci/infographic_m1/banner_legado-aviacion.webp',
-    title: "El Legado de la Aviación",
-    color: '#E0B860',
-    btnImage: '/assets/davinci/infographic_m1/btn_legado-aviacion.webp',
-    image: '/assets/davinci/infographic_m1/hero_legado-aviacion.webp',
-    content: [
+    "id": "legado-aviacion",
+    "bannerImage": "/assets/davinci/infographic_m1/banner_legado-aviacion.webp",
+    "title": "El Legado de la Aviación",
+    "color": "#E0B860",
+    "btnImage": "/assets/davinci/infographic_m1/btn_legado-aviacion.webp",
+    "image": "/assets/davinci/infographic_m1/hero_legado-aviacion.webp",
+    "content": [
       "El legado de Leonardo da Vinci en el campo de la aviación va mucho más allá de los bocetos específicos que dejó en sus códices dispersos. Su verdadera contribución perdurable fue el establecimiento de un paradigma metodológico visionario: la firme convicción de que los misterios del vuelo podrían ser desentrañados y dominados a través de la observación minuciosa de la naturaleza, el estudio empírico riguroso, la aplicación de principios matemáticos y la experimentación sistemática. Rompió radicalmente con las nociones místicas o mitológicas, como la historia de Ícaro, para acercar la aeronáutica al dominio de la ciencia exacta.",
       "La figura del inventor renacentista encarna la fusión indispensable entre el arte, la ingeniería y las ciencias naturales, un enfoque holístico e interdisciplinario que sigue siendo vital en la ingeniería aeroespacial moderna. Los diseños de Da Vinci, dibujados con una maestría artística insuperable, no eran meras fantasías estéticas; eran hipótesis mecánicas detalladas que mostraban un entendimiento profundo de la cinemática, la transmisión de engranajes y la dinámica de fluidos. Sus bellas ilustraciones continúan inspirando el diseño estético de tecnologías de vanguardia y vehículos conceptuales del futuro.",
       "Además del ornitóptero, el paracaídas y el tornillo aéreo, Leonardo conceptualizó otros dispositivos relacionados con la navegación aérea que resultaron asombrosamente clarividentes. Esbozó diseños para anemómetros, inclinómetros (para medir el ángulo de vuelo) e incluso propuso un primitivo tren de aterrizaje retráctil para reducir la resistencia aerodinámica en vuelo. Cada uno de estos instrumentos y conceptos son componentes absolutamente críticos y estándar en las cabinas de pilotaje y en la arquitectura de diseño de cualquier aeronave comercial o militar en la actualidad.",
       "Es un tributo apropiado a su visión profética que en el año 1960, el Aeropuerto Internacional de Roma-Fiumicino fuera nombrado oficialmente \"Aeropuerto Intercontinental Leonardo da Vinci\". Además, una enorme e impresionante estatua de bronce del sabio renacentista, sosteniendo un modelo de su tornillo aéreo, da la bienvenida a los millones de viajeros internacionales que transitan por sus terminales cada año, un recordatorio tangible de que el inmenso tráfico aéreo global contemporáneo tiene raíces profundas en los sueños trazados en papel por un artista toscano quinientos años atrás.",
       "En la era actual de la exploración espacial, el espíritu de Leonardo da Vinci sigue asombrosamente vivo y relevante. Cuando ingenieros de la NASA y de agencias espaciales globales diseñan rovers para explorar la superficie de Marte, helicópteros marcianos como el Ingenuity, o conceptualizan futuras misiones atmosféricas en las lunas de Júpiter o Saturno, continúan aplicando los mismos principios de curiosidad insaciable, adaptabilidad mecánica y biomimetismo que caracterizaron al genio de Vinci. Leonardo demostró de una vez por todas que la imaginación humana, cuando se combina con la perseverancia científica, no tiene límites ni fronteras terrenales."
     ],
-    expandables: [
-      { label: "Dato Científico", icon: "atom", text: "En homenaje a la universalidad de su genio y su conexión intrínseca con el anhelo de exploración, varias misiones espaciales han llevado obras de Da Vinci más allá de la atmósfera terrestre. Una copia digitalizada del \"Códice sobre el vuelo de los pájaros\" fue llevada a bordo del rover marciano Curiosity de la NASA, que aterrizó en el Planeta Rojo en 2012. Este gesto simbólico sitúa las reflexiones originales sobre la mecánica del vuelo humano en la superficie de un mundo alienígena, un logro que seguramente habría maravillado al propio Leonardo." },
-      { label: "¿Sabías que...?", icon: "sparkles", text: "¿Sabías que un cráter de impacto en la superficie de la Luna, ubicado en la región del Mare Fecunditatis, fue nombrado oficialmente \"Da Vinci\" en su honor? Además, un asteroide del cinturón principal descubierto en 1981 lleva la designación \"3000 Leonardo\". Estos reconocimientos astronómicos subrayan cómo su insaciable sed de conocimiento, que abarcaba desde la geología y la botánica hasta la astronomía y el diseño de máquinas voladoras, lo ha convertido en un símbolo perdurable y universal del intelecto humano proyectado hacia el cosmos infinito." }
+    "expandables": [
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En homenaje a la universalidad de su genio y su conexión intrínseca con el anhelo de exploración, varias misiones espaciales han llevado obras de Da Vinci más allá de la atmósfera terrestre. Una copia digitalizada del \"Códice sobre el vuelo de los pájaros\" fue llevada a bordo del rover marciano Curiosity de la NASA, que aterrizó en el Planeta Rojo en 2012. Este gesto simbólico sitúa las reflexiones originales sobre la mecánica del vuelo humano en la superficie de un mundo alienígena, un logro que seguramente habría maravillado al propio Leonardo."
+      },
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "¿Sabías que un cráter de impacto en la superficie de la Luna, ubicado en la región del Mare Fecunditatis, fue nombrado oficialmente \"Da Vinci\" en su honor? Además, un asteroide del cinturón principal descubierto en 1981 lleva la designación \"3000 Leonardo\". Estos reconocimientos astronómicos subrayan cómo su insaciable sed de conocimiento, que abarcaba desde la geología y la botánica hasta la astronomía y el diseño de máquinas voladoras, lo ha convertido en un símbolo perdurable y universal del intelecto humano proyectado hacia el cosmos infinito."
+      }
     ],
-    fact: "En 1994, el magnate fundador de Microsoft, Bill Gates, adquirió en una subasta el famoso Códice Leicester de Leonardo da Vinci por más de 30 millones de dólares. Este cuaderno de notas se centra principalmente en el agua, la astronomía y las propiedades de las rocas y los fósiles, demostrando que la fascinación por el intelecto y el proceso científico de Leonardo sigue atrayendo enormemente a los grandes pioneros de la tecnología de nuestra era moderna.",
+    "fact": "En 1994, el magnate fundador de Microsoft, Bill Gates, adquirió en una subasta el famoso Códice Leicester de Leonardo da Vinci por más de 30 millones de dólares. Este cuaderno de notas se centra principalmente en el agua, la astronomía y las propiedades de las rocas y los fósiles, demostrando que la fascinación por el intelecto y el proceso científico de Leonardo sigue atrayendo enormemente a los grandes pioneros de la tecnología de nuestra era moderna."
   }
 ];
 

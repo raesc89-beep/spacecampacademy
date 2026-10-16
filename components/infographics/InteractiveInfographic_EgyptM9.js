@@ -155,141 +155,229 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'disco-zodiacal',
-              bannerImage: '/assets/egypt/infographic_m9/banner_djer-primera-dinastia.webp',
-    title: 'El Disco del Cielo',
-    color: '#D46A6A',
-    btnImage: '/assets/egypt/infographic_dendera/btn_disco.webp',
-    image: '/assets/egypt/infographic_dendera/hero_disco.webp',
-    content: [
-      'En el techo de un cuarto del templo de Hathor en Dendera, existía un disco de piedra arenisca de 2.5 metros de diámetro. Este artefacto es el mapa circular más antiguo del cielo nocturno que se conserva.',
-      'El Zodiaco de Dendera fue tallado hace aproximadamente 2,050 años (c. 50 a.C.) durante la dinastía ptolemaica. Muestra el firmamento como un reloj: el centro indica el polo norte celeste con estrellas circumpolares, y en los bordes se ubican 36 constelaciones del calendario egipcio.',
-      'Su diseño presenta simetría. Cuatro pares de figuras sostienen el disco desde los bordes, representando los ocho puntos cardinales e intercardinales. El disco funciona como mapa astronómico y obra religiosa.',
-      'La astrónoma Sylvie Cauville dedicó 20 años a traducir los jeroglíficos del templo. Descubrió que cada figura del zodiaco tiene un nombre específico y un significado astronómico.',
-      'La orientación del disco ilustra la precesión de los equinoccios: el eje está desplazado respecto al centro, lo que demuestra que los egipcios conocían este fenómeno astronómico.',
-      'Este disco de piedra es un esfuerzo notable por documentar el firmamento en una sola imagen.',
+    "id": "disco-zodiacal",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_djer-primera-dinastia.webp",
+    "title": "El Disco del Cielo",
+    "color": "#D46A6A",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_disco.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_disco.webp",
+    "content": [
+      "El Zodiaco de Dendera representa una de las obras cumbres del arte y la astronomía del período greco-romano en el Antiguo Egipto. Esculpido en un bajorrelieve sobre una colosal losa de arenisca arenosa de dos metros y medio de lado, este bajorrelieve decoraba originalmente el techo de una capilla dedicada al dios Osiris en la terraza superior del Templo de Hathor. La obra ofrece una síntesis visual deslumbrante entre las tradiciones cosmológicas autóctonas del Nilo y la astronomía helenística.",
+      "La composición del disco celeste es una proeza de equilibrio geométrico y dinamismo visual. El planisferio circular central está sostenido en el aire por doce figuras antropomorfas que personifican los pilares del cielo: cuatro diosas celestiales de pie en las cuatro esquinas cardinales y cuatro parejas de deidades con cabeza de halcón arrodilladas en los ejes intermedios. Juntas simbolizan los doce meses del año y las fuerzas cósmicas que impiden el colapso de la bóveda estrellada.",
+      "A diferencia de las representaciones lineales de los techos astronómicos del Imperio Nuevo, como el de Senenmut, el Zodiaco de Dendera es una proyección polar plana que abarca la totalidad de la cúpula celeste visible. En una sola superficie circular continua, los escribas y astrónomos lograron integrar los doce signos del zodiaco babilónico-griego, los treinta y seis decanos tradicionales egipcios y las constelaciones boreales y australes propias de la religión faraónica.",
+      "El disco no fue concebido como un simple mapa científico neutro, sino como una máquina teológica para la resurrección mística del dios Osiris. Según los misterios de Dendera, Osiris moría y renacía en sincronía con los ciclos de la Luna y las estrellas imperecederas. Las constelaciones actuaban como testigos sagrados que garantizaban la continuidad de la vida en la Tierra a través de la inundación anual del Nilo y el renacimiento cotidiano de la luz solar.",
+      "La losa original de arenisca pesa más de dos toneladas métricas y mide doscientos cincuenta y cinco centímetros de anchura por doscientos cincuenta y tres centímetros de longitud, con un grosor medio de cincuenta centímetros. La finura de sus incisiones y el pulido exquisito de las figuras celestiales revelan la destreza de los escultores tolemaicos, capaces de esculpir detalles anatómicos diminutos en una roca arenisca relativamente quebradiza."
     ],
-    fact: 'El Zodiaco de Dendera es el único mapa celeste circular completo de la Antigüedad. Los mapas babilonios eran tablas numéricas, y los griegos usaban esferas armilares. Solo los egipcios crearon un "planisferio" tallado en piedra.',
+    "fact": "La losa de arenisca que conforma el Zodiaco de Dendera posee un peso de dos mil doscientas toneladas, con unas medidas de dos metros y medio de lado y un espesor de cincuenta centímetros, labrada originalmente en el techo de la capilla osiríaca hacia el año 50 a.C., sostenida por doce figuras celestes que encarnan los pilares cardinales del firmamento.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El Zodiaco de Dendera es el único planisferio circular completo del mundo antiguo que ha llegado hasta nuestros días. Aunque civilizaciones como la babilónica y la griega desarrollaron descripciones matemáticas de las constelaciones, ninguna otra cultura plasmó una carta celeste redonda de estas dimensiones en piedra monumental."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Desde una perspectiva cartográfica rigurosa, el Zodiaco de Dendera es una proyección estereográfica polar cenital rudimentaria. En ella, el polo norte celeste se sitúa cerca del centro geométrico del bajorrelieve, mientras que las constelaciones zodiacales de la eclíptica se distribuyen en una banda espiralada concéntrica."
+      }
+    ]
   },
   {
-    id: 'constelaciones',
-              bannerImage: '/assets/egypt/infographic_m9/banner_fin-egipto.webp',
-    title: 'Las 12 + las Egipcias',
-    color: '#7EB8C9',
-    btnImage: '/assets/egypt/infographic_dendera/btn_constelaciones.webp',
-    image: '/assets/egypt/infographic_dendera/hero_constelaciones.webp',
-    content: [
-      'El Zodiaco de Dendera muestra las 12 constelaciones zodiacales que conocemos hoy. También incluye constelaciones egipcias que no aparecen en otros mapas de la antigüedad.',
-      'El Cocodrilo Celestial (Sobek) aparece cerca de Capricornio. El Hipopótamo (Taweret) sostiene un bastón en la posición de la Osa Mayor. Un Chacal marca el lugar de la constelación del Boyero.',
-      'En este disco coexisten el toro mesopotámico, el león griego y el hipopótamo egipcio. Es un documento que muestra la convergencia de las tradiciones astronómicas babilónica, griega y egipcia.',
-      'Los egipcios originalmente no usaban el zodíaco de 12 signos. Se basaban en 36 Decanos, grupos de estrellas que se levantaban cada 10 días a lo largo del año.',
-      'El egiptólogo Christian Leitz señaló que el Zodiaco de Dendera representa la transición del sistema decanal egipcio al sistema zodiacal greco-babilónico.',
-      'Esta mezcla de constelaciones y deidades ilustra cómo diferentes culturas integraron sus conocimientos celestes.',
+    "id": "constelaciones",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_fin-egipto.webp",
+    "title": "Las 12 + las Egipcias",
+    "color": "#7EB8C9",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_constelaciones.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_constelaciones.webp",
+    "content": [
+      "El elemento más revolucionario del Zodiaco de Dendera es la coexistencia armónica de dos sistemas astronómicos totalmente distintos en una misma superficie: el catálogo zodiacal mesopotámico-griego de doce figuras y el sistema de constelaciones indígenas del valle del Nilo. Esta fusión cultural refleja la atmósfera cosmopolita del Egipto ptolemaico, donde sacerdotes nativos y filósofos griegos de Alejandría intercambiaban activamente conocimientos científicos.",
+      "Los doce signos zodiacales que hoy nos resultan familiares aparecen claramente esculpidos en una espiral que serpentea por el disco: Aries el carnero, Tauro el toro con el disco lunar entre los cuernos, Géminis los gemelos celestiales, Cáncer representado como un escarabajo sagrado (Jepri) en lugar de un cangrejo marino, Leo el león majestuoso sobre una barca, y Virgo la doncella sosteniendo una espiga de trigo que simboliza la estrella Spica.",
+      "A continuación figuran Libra la balanza de dos platillos perfectamente nivelada, Escorpio el escorpión gigante, Sagitario personificado como un centauro alado con dos caras y doble cola de escorpión disparando un arco, Capricornio representado como una cabra con cola de pez, Acuario como el dios Hapi derramando dos jarras de agua viva del Nilo, y Piscis como dos peces simétricos unidos por un cordel estelar.",
+      "Entre estos signos helenísticos se intercalan las constelaciones genuinamente egipcias que ya aparecían en tumbas de hace mil quinientos años. En el centro exacto del mapa reina Meskhetiu, la pierna de toro que personifica la Osa Mayor, vigilada de cerca por la diosa Tueris con su figura híbrida de hipopótamo hembra, cocodrilo y patas de león. Hacia el sur destaca Sah (Orión) empuñando el cetro uas y Sopdet (Sirio) recostada en una barca divina.",
+      "Esta superposición de iconografías permitía a los sacerdotes de Hathor leer el cielo en dos lenguajes paralelos. Podían calcular la posición del Sol en los signos zodiacales para la astrología horaria helenística y, al mismo tiempo, seguir el cómputo litúrgico de las horas nocturnas mediante el ascenso de los treinta y seis decanos que orlan todo el perímetro exterior de la rueda celeste."
     ],
-    fact: 'Los 36 Decanos egipcios fueron adoptados por los astrónomos griegos como "prosopa" (caras), después por los astrólogos árabes, y finalmente llegaron a la Europa medieval. Los 36 naipes de la baraja española descienden indirectamente de los Decanos egipcios.',
+    "fact": "El disco de Dendera contiene sesenta y ocho figuras celestiales identificables, combinando los doce signos del zodiaco de origen babilónico con treinta y seis decanos nilóticos y veinte constelaciones propias de la tradición litúrgica faraónica del Reino Antiguo, ofreciendo un testimonio único de síntesis astronómica entre Oriente Próximo y el valle del Nilo.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el Zodiaco de Dendera, el signo de Cáncer no fue esculpido como un crustáceo griego, sino como el escarabajo sagrado Jepri. Los sacerdotes egipcios consideraban que cuando el Sol alcanzaba el solsticio de verano en esa constelación, empujaba la luz del mismo modo que el escarabajo hace rodar su bola de alimento regenerador."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La banda zodiacal o eclíptica está inclinada aproximadamente veintitrés coma cinco grados respecto al ecuador celeste. En el bajorrelieve de Dendera, los escultores curvaron deliberadamente la secuencia de las doce constelaciones zodiacales para imitar la trayectoria senoidal aparente que traza el Sol a lo largo del año trópico."
+      }
+    ]
   },
   {
-    id: 'templo-hathor',
-              bannerImage: '/assets/egypt/infographic_m9/banner_menes-narmer.webp',
-    title: 'El Templo de Hathor',
-    color: '#C9A96E',
-    btnImage: '/assets/egypt/infographic_dendera/btn_templo.webp',
-    image: '/assets/egypt/infographic_dendera/hero_templo.webp',
-    content: [
-      'El templo de Hathor en Dendera fue construido entre el 54 a.C. Y el 20 d.C. Hathor era considerada la diosa del amor y la astronomía.',
-      'Las 24 columnas del hall hipóstilo tienen capiteles con el rostro de Hathor. El techo del hall presenta escenas que muestran el viaje del Sol y las constelaciones, conservando pigmentos antiguos.',
-      'Cleopatra VII está representada en los relieves exteriores junto a su hijo Cesarión. Es una de las pocas representaciones auténticas de la reina ptolemaica que existen.',
-      'Debajo de las cámaras hay criptas donde se guardaban objetos rituales. Las paredes muestran relieves de flores de loto con serpientes y otros símbolos religiosos.',
-      'El templo funcionaba como observatorio astronómico. El techo de la capilla de Osiris tiene aberturas para observar estrellas específicas, permitiendo a los sacerdotes marcar horas y festivos.',
-      'Para los egipcios, el estudio matemático de los astros estaba integrado con su veneración religiosa.',
+    "id": "templo-hathor",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_menes-narmer.webp",
+    "title": "El Templo de Hathor",
+    "color": "#C9A96E",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_templo.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_templo.webp",
+    "content": [
+      "El Templo de Hathor en Dendera, situado a unos sesenta kilómetros al norte de Luxor en la orilla occidental del Nilo, es uno de los complejos arquitectónicos mejor conservados de todo Egipto. Aunque el lugar albergaba santuarios desde el Reino Antiguo bajo el reinado de Pepi I, el edificio colosal que podemos contemplar hoy fue erigido durante los reinados de los últimos faraones ptolemaicos, destacando Cleopatra VII Filopátor, y concluido bajo los emperadores romanos Tiberio y Nerón.",
+      "La arquitectura del templo está consagrada por entero al culto de Hathor, diosa del cielo, el amor, la danza y la fertilidad cósmica. La imponente fachada de la sala hipóstila exterior o pronaos se abre mediante veinticuatro columnas monumentales rematadas por capiteles cuadrifrontes que muestran el rostro sereno de la diosa con orejas de vaca. El techo de esta sala conserva una policromía original intacta de azules de malaquita y amarillos que recrea el viaje diurno y nocturno del Sol.",
+      "En la azotea del templo se construyeron dos complejos de capillas consagradas a los misterios de la resurrección de Osiris. Era precisamente en la cámara central del santuario oriental de Osiris donde se encontraba empotrado el bajorrelieve del Zodiaco circular como techo sagrado. En estas estancias elevadas, expuestas al cielo abierto, los sacerdotes realizaban en el mes de Khoiak el ritual de regeneración donde la efigie de Osiris era expuesta a los rayos solares para renacer.",
+      "Todo el templo de Hathor fue concebido como un microcosmos de piedra que encarnaba la estructura del universo físico. Los muros exteriores están decorados con relieves gigantescos que muestran a Cleopatra VII y a su hijo Cesarión (Ptolomeo XV) realizando ofrendas a las divinidades patronas. El templo se comunicaba además con una red de criptas subterráneas secretas talladas en el grosor de los muros, donde se guardaban los instrumentos rituales y las cartas estelares en papiro.",
+      "La conservación excepcional de Dendera se debe a que el templo permaneció sepultado bajo toneladas de arena del desierto y escombros de adobe hasta mediados del siglo diecinueve. Cuando el arqueólogo francés Auguste Mariette emprendió las excavaciones sistemáticas del complejo en 1860, el templo emergió de las arenas prácticamente intacto, con sus escaleras de caracol procesionales, sus capillas de azotea y sus inscripciones astronómicas en un estado prístino."
     ],
-    fact: 'El templo de Hathor en Dendera fue usado como iglesia cristiana copta durante siglos después de la caída del paganismo (c. 400 d.C.). El hollín de las hogueras coptas ennegrecía los techos, pero también los protegió de la erosión. Al limpiar el hollín en el siglo XIX, los colores originales aparecieron perfectamente conservados.',
+    "fact": "El complejo de Dendera abarca un recinto amurallado de ladrillo de adobe de cuarenta mil metros cuadrados con muros de diez metros de espesor, albergando en su interior el Templo de Hathor con un pronaos de veintiséis metros de altura y veinticuatro columnas hathóricas colosales, siendo uno de los santuarios mejor conservados de todo el Egipto grecorromano.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En los muros de las criptas subterráneas de Dendera se encuentran los famosos relieves de las «bombillas de Dendera», que arqueólogos serios han demostrado que representan en realidad serpientes sagradas naciendo de flores de loto cósmicas dentro de cápsulas de protección ritual conocidas como djed."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El eje longitudinal del templo de Dendera está orientado a setenta y un grados al este del norte astronómico. Esta orientación no mira hacia el amanecer solar, sino hacia el orto helíaco de la estrella Sirio (Sopdet) en el momento de su fundación ceremonial, vinculando el templo con la crecida vivificante del Nilo."
+      }
+    ]
   },
   {
-    id: 'robo-louvre',
-              bannerImage: '/assets/egypt/infographic_m9/banner_periodo-tardio.webp',
-    title: 'El Robo del Zodiaco',
-    color: '#8B6B8B',
-    btnImage: '/assets/egypt/infographic_dendera/btn_louvre.webp',
-    image: '/assets/egypt/infographic_dendera/hero_louvre.webp',
-    content: [
-      'En 1820, el ingeniero francés Claude Lelorrain removió el Zodiaco del techo del templo por encargo consular. Su equipo cortó la piedra usando sierras y pólvora.',
-      'El bloque de piedra fue transportado a París. Lelorrain vendió el Zodiaco al rey Luis XVIII y, desde 1822, el artefacto se exhibe en el Museo del Louvre.',
-      'En el techo del templo en Dendera se instaló una copia de yeso como sustitución. Este evento refleja las prácticas de sustracción de bienes arqueológicos de la época.',
-      'Egipto ha solicitado formalmente la devolución del Zodiaco de Dendera, considerándolo un objeto de alto valor patrimonial para la nación.',
-      'La situación del Zodiaco genera debate sobre la preservación en museos extranjeros frente al derecho de origen. El templo original tiene capacidad para resguardar la pieza.',
-      'Aunque la pieza original se encuentra en Francia, representa el conocimiento astronómico alcanzado en el antiguo Egipto.',
+    "id": "robo-louvre",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_periodo-tardio.webp",
+    "title": "El Robo del Zodiaco",
+    "color": "#8B6B8B",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_louvre.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_louvre.webp",
+    "content": [
+      "La historia de la extracción del Zodiaco de Dendera y su posterior traslado a Francia es uno de los episodios más dramáticos y controvertidos de la arqueología del siglo diecinueve. Durante la expedición militar y científica de Napoleón Bonaparte a Egipto en 1798, el dibujante e ingeniero Dominique Vivant Denon quedó fascinado por el bajorrelieve de la capilla de Osiris, publicando grabados minuciosos en su célebre obra «Voyage dans la Basse et la Haute Égypte» que cautivaron a toda Europa.",
+      "Años después, en 1820, el aristócrata francés Sébastien Louis Saulnier y el maestro de obras Jean Baptiste Lelorrain concibieron un plan clandestino para apoderarse físicamente del bajorrelieve y venderlo en París. Lelorrain viajó en secreto a Dendera provisto de sierras mecánicas, gatos de tracción, palancas de hierro y varios barriles de pólvora negra. Trabajando en la penumbra de la azotea del templo, los operarios serraron las vigas maestras del techo y utilizaron explosiones controladas.",
+      "La detonación de pólvora fracturó la losa de arenisca en dos grandes fragmentos, desprendiéndola violentamente del techo de la capilla y causando daños irreparables en los muros colindantes del santuario ptolemaico. Lelorrain y su cuadrilla arrastraron los pesados bloques de dos toneladas y media sobre rodillos de madera a través del desierto hasta el Nilo, donde los embarcaron en una falúa burlando la vigilancia de los diplomáticos británicos y las autoridades otomanas locales.",
+      "Tras una azarosa navegación por el Mediterráneo, el Zodiaco llegó al puerto de Marsella en 1821 y fue trasladado triunfalmente a París. En 1822, el rey Luis XVIII de Francia compró la pieza arqueológica para las colecciones estatales por la colosal suma de ciento cincuenta mil francos de oro de la época. El bajorrelieve fue exhibido primero en la Biblioteca Real y finalmente trasladado en 1919 al Museo del Louvre, donde permanece expuesto en la sala de antigüedades egipcias.",
+      "En la actualidad, en el techo original de la capilla de Osiris en Dendera se exhibe una réplica exacta de escayola tintada colocada a principios del siglo veinte. En las últimas décadas, el gobierno de Egipto y destacados arqueólogos como el doctor Zahi Hawass han solicitado formalmente la restitución del Zodiaco original a su ubicación histórica en Dendera, considerándolo un tesoro expoliado ilícitamente que pertenece a la memoria cultural del pueblo egipcio."
     ],
-    fact: 'Cuando Napoleón invadió Egipto en 1798, llevó consigo 167 científicos y artistas (la "Commission des Sciences et des Arts") además de sus soldados. Esta expedición produjo la monumental"Description de l\'Égypte" (23 volúmenes) pero también inició la era del saqueo arqueológico a escala industrial.',
+    "fact": "El Zodiaco de Dendera fue arrancado con dinamita y sierras en abril de 1821 por Lelorrain y adquirido en 1822 por el rey Luis XVIII por ciento cincuenta mil francos de oro, exhibiéndose hoy en la Sala 321 del Departamento de Antigüedades Egipcias del Museo del Louvre, mientras que una réplica exacta de yeso ocupa su emplazamiento original en el templo de Egipto.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Para disimular el enorme peso del bajorrelieve durante el viaje marítimo de regreso a Francia, Lelorrain camufló los cajones de madera etiquetándolos como «piedras de lastre y especímenes geológicos sin valor», impidiendo que los cónsules británicos en Alejandría confiscaran el cargamento de contrabando."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El impacto de la onda de choque generada por la pólvora negra en 1821 provocó microfisuras por tensión en la matriz de arenisca del bajorrelieve. Estudios de tomografía por ultrasonidos realizados en el Louvre revelaron fisuras internas que requirieron la inyección de consolidantes de silicato de etilo."
+      }
+    ]
   },
   {
-    id: 'datacion',
-              bannerImage: '/assets/egypt/infographic_m9/banner_ramseses-ii.webp',
-    title: 'Fotografía del Cielo del 50 a.C.',
-    color: '#E8C96A',
-    btnImage: '/assets/egypt/infographic_dendera/btn_datacion.webp',
-    image: '/assets/egypt/infographic_dendera/hero_datacion.webp',
-    content: [
-      'El Zodiaco de Dendera muestra la alineación del cielo de hace 2,000 años. Los astrónomos han comparado estas tallas con simulaciones por computadora y determinaron que corresponden al cielo del 50 a.C.',
-      'Cinco planetas visibles a simple vista aparecen representados en posiciones específicas. Los astrónomos Eric Aubourg y Juan Antonio Belmonte confirmaron que estas ubicaciones coinciden con una alineación planetaria del año 50 a.C.',
-      'La arqueoastronomía computacional usa la previsibilidad de las órbitas para fechar monumentos. Los movimientos estelares permiten calcular posiciones en épocas pasadas con exactitud.',
-      'La datación astronómica del Zodiaco causó debate en el siglo XIX sobre la edad de la Tierra. El investigador Jean-Baptiste Biot resolvió la cuestión mediante cálculos astronómicos.',
-      'El matemático Jean-Baptiste Fourier analizó numéricamente el Zodiaco tras acompañar a Napoleón en su expedición a Egipto.',
-      'Los análisis matemáticos comprueban que los sacerdotes crearon un mapa estelar muy preciso.',
+    "id": "datacion",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_ramseses-ii.webp",
+    "title": "Fotografía del Cielo del 50 a.C.",
+    "color": "#E8C96A",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_datacion.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_datacion.webp",
+    "content": [
+      "Tras la llegada del Zodiaco de Dendera a París en 1821, la pieza desató una feroz controversia científica y teológica que sacudió los cimientos intelectuales de la Europa decimonónica. Algunos científicos de la Ilustración y pensadores anticlericales afirmaban que el zodiaco egipcio tenía más de quince mil años de antigüedad, lo que contradecía de forma directa la cronología bíblica de la Creación y el Diluvio Universal calculada tradicionalmente por la Iglesia.",
+      "El enigma comenzó a resolverse de manera irrefutable gracias a Jean-François Champollion, el descifrador de la Piedra de Rosetta. En 1822, Champollion examinó minuciosamente las inscripciones jeroglíficas que enmarcan el disco y logró identificar el cartucho real con el título griego de «Autokrator», un epíteto imperial romano atribuido a emperadores como Augusto o Tiberio. Esto demostró que el templo no databa de la prehistoria, sino de las postrimerías del mundo faraónico.",
+      "Sin embargo, el espaldarazo definitivo a la cronología del monumento provino de la astronomía computacional moderna. Los arqueoastrónomos descubrieron que el bajorrelieve de Dendera no es una alegoría mitológica atemporal, sino una auténtica fotografía instantánea del firmamento nocturno, un registro astronómico de eclipses reales y conjunciones planetarias acaecidas a mediados del siglo primero antes de nuestra era sobre el cielo de Egipto.",
+      "En el disco aparecen grabados con exactitud dos fenómenos celestes extraordinarios. El primero es un eclipse total de Luna representado en la constelación de Piscis mediante un círculo que encierra el ojo de Horus (Udyat), correspondiente con exactitud al eclipse lunar observado en Dendera el veinticinco de septiembre del año cincuenta y dos antes de Cristo. El segundo es un eclipse solar reflejado en la diosa Isis sosteniendo un babuino, acaecido el siete de marzo del cincuenta y uno antes de Cristo.",
+      "Cálculos astrofísicos retrospectivos ejecutados con programas de simulación orbital contemporáneos confirmaron que las posiciones de los cinco planetas visibles en el disco respecto a las constelaciones de fondo corresponden a una configuración celeste real observable entre los años cincuenta y cuarenta y siete antes de nuestra era, durante el reinado conjunto de la legendaria reina Cleopatra VII y su hermano Ptolomeo XIII."
     ],
-    fact: 'La Transformada de Fourier, inventada por el mismo matemático que estudió el Zodiaco de Dendera, es la base del formato JPEG, la compresión MP3, el WiFi, la resonancia magnética médica y prácticamente toda la tecnología digital moderna. ¡El estudio de un mapa estelar egipcio contribuyó a inventar el futuro!',
+    "fact": "Los cálculos arqueoastronómicos confirman que el Zodiaco de Dendera registra dos eclipses empíricos consecutivos: el eclipse lunar del 25 de septiembre del 52 a.C. y el eclipse solar del 7 de marzo del 51 a.C., situando su concepción en el reinado de Cleopatra VII, confirmando la minuciosidad de las observaciones celestes de los sacerdotes ptolemaicos.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El matemático y físico francés Jean-Baptiste Biot dedicó años a calcular las efemérides astronómicas del Zodiaco de Dendera. Sus deducciones demostraron por primera vez que la astronomía matemática moderna podía utilizarse como una herramienta infalible para fechar monumentos históricos sin depender de crónicas escritas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El eclipse solar del siete de marzo del 51 a.C. registrado en el disco fue un eclipse anular cuya franja de sombra central cruzó el Alto Egipto a las doce horas y treinta y cuatro minutos de tiempo solar local, cubriendo más del noventa por ciento del disco solar visible desde el santuario de Dendera."
+      }
+    ]
   },
   {
-    id: 'criaturas',
-              bannerImage: '/assets/egypt/infographic_m9/banner_reino-antiguo.webp',
-    title: 'Criaturas del Cielo Egipcio',
-    color: '#6B8E6B',
-    btnImage: '/assets/egypt/infographic_dendera/btn_criaturas.webp',
-    image: '/assets/egypt/infographic_dendera/hero_criaturas.webp',
-    content: [
-      'El cielo egipcio incluía figuras ausentes en otros sistemas. El Hipopótamo (Taweret) se representa de pie con cola de cocodrilo y garras de león. En el Zodiaco, sostiene un bastón y un cocodrilo.',
-      'Taweret corresponde a la Osa Mayor. La otra constelación circumpolar principal es la "Pata de Buey" (Mesketiu), formada por las siete estrellas brillantes que componen la pata trasera de un toro.',
-      'El cocodrilo Sobek servía como marcador horario. Los sacerdotes observaban el paso de ciertas estrellas cruzando el meridiano para medir las horas nocturnas.',
-      'La cobra celestial (Wadjet) representa a Hydra. Era símbolo del Bajo Egipto y funcionaba como protección faraónica, además de acompañar al disco solar en el inframundo.',
-      'El astrónomo José Lull catalogó más de 100 figuras celestes egipcias. Solo unas 40 han sido relacionadas con constelaciones actuales. Las restantes continúan en investigación.',
-      'Cada civilización asoció animales y mitos a las estrellas para estructurar su visión del cielo.',
+    "id": "criaturas",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_reino-antiguo.webp",
+    "title": "Criaturas del Cielo Egipcio",
+    "color": "#6B8E6B",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_criaturas.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_criaturas.webp",
+    "content": [
+      "El bestiario celeste esculpido en el Zodiaco de Dendera ofrece una fascinante ventana a la zoología sagrada y al imaginario mitológico del valle del Nilo. Para los antiguos egipcios, los animales de su entorno ribereño no eran meros seres biológicos, sino vehículos vivientes de principios cósmicos fundamentales. Al proyectar estas criaturas sobre las estrellas, dotaban al firmamento nocturno de un orden ecológico y moral que gobernaba los destinos humanos.",
+      "Entre las figuras más singulares destaca la diosa Tueris, el hipopótamo preñado erguido sobre sus patas traseras. En Dendera, esta deidad aparece coronada con una piel de cocodrilo sobre su espalda y sosteniendo en sus garras delanteras la pata trasera de toro que personifica a la Osa Mayor. El hipopótamo hembra encarnaba la ferocidad protectora materna, capaz de defender a sus crías y a los dioses solares de las embestidas caóticas de las tinieblas primordiales.",
+      "Otra criatura enigmática es el pez oxirrinco, esculpido en estrecha proximidad a la constelación de Piscis. En la teología osiríaca, el oxirrinco era un pez mormírido del Nilo que había tragado el falo sagrado de Osiris tras ser descuartizado por Seth. Su presencia estelar garantizaba que ningún elemento vital del dios quedara olvidado en el abismo acuático del Nun, asegurando la restauración integral del cuerpo divino en el cielo.",
+      "Asimismo, encontramos halcones coronados que vigilan los cuadrantes del disco, un león celestial que camina victorioso sobre una serpiente del inframundo, carneros de cuatro cuernos que personifican los cuatro vientos cardinales y gacelas del desierto asociadas a estrellas menores. Cada animal aportaba su atributo instintivo —la velocidad del halcón, la fuerza del león, la visión nocturna del escorpión— a la compleja danza de los cuerpos celestes.",
+      "Los escribas que diseñaron estas efigies tallaron cada escama de cocodrilo, cada pluma de halcón y cada vellón de carnero con un naturalismo sorprendente. La coexistencia de este bestiario nativo junto a las figuras mitológicas grecorromanas, como el centauro y los gemelos, convirtió al bajorrelieve de Dendera en el documento iconográfico más exuberante de la antigüedad tardía mediterránea."
     ],
-    fact: 'Taweret (el Hipopótamo Erguido del cielo) era también la diosa protectora del embarazo y el parto. Los amuletos de Taweret eran los más populares en el Egipto antiguo â€” se han encontrado miles en excavaciones. Una diosa hipopótama celestial protegiendo a las madres: ¡la primera constelación "maternal" de la historia!',
+    "fact": "El bestiario de Dendera comprende más de veinticinco especies animales sagradas diferentes esculpidas en el planisferio, incluyendo hipopótamos, halcones, leones, carneros, vacas hathóricas, escorpiones, serpientes y tres especies ictiológicas autóctonas del río Nilo, cada una portando atributos mitológicos precisos vinculados al movimiento estelar.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El pez oxirrinco del Nilo (Mormyrus kannume) produce campos eléctricos débiles mediante un órgano especializado en su cola para orientarse en aguas turbias. Los antiguos egipcios percibían intuitivamente esta habilidad sensorial extraordinaria, considerándolo un pez sagrado provisto de facultades adivinatorias."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La distribución de los animales en el bajorrelieve respeta una estricta jerarquía polar: los mamíferos pesados (hipopótamo, león, toro) ocupan las regiones interiores de baja velocidad aparente, mientras que las aves veloces y los peces acuáticos ocupan los márgenes exteriores de mayor desplazamiento angular."
+      }
+    ]
   },
   {
-    id: 'planetas',
-              bannerImage: '/assets/egypt/infographic_m9/banner_reino-medio.webp',
-    title: 'Los Dioses Errantes',
-    color: '#E8A87C',
-    btnImage: '/assets/egypt/infographic_dendera/btn_planetas.webp',
-    image: '/assets/egypt/infographic_dendera/hero_planetas.webp',
-    content: [
-      'Los egipcios notaron que los planetas se movían respecto a las estrellas fijas. En el Zodiaco de Dendera, los cinco planetas visibles combinan iconografía egipcia y griega.',
-      'Saturno aparece como Horus-Toro sobre una barca. Júpiter es Horus-Misterioso y Marte es Horus-Rojo. Venus se identifica como la Estrella de la Mañana y Mercurio como el Planeta de Set.',
-      'La identificación planetaria con Horus es propia de Egipto. Griegos y babilonios usaron sus propias deidades para nombrar los mismos planetas.',
-      'Los astrónomos de Dendera registraban posiciones planetarias con fines astrológicos y médicos. Estos registros aportaron datos útiles para reconstruir órbitas orbitales.',
-      'Llamar a Marte "Horus Rojo" indica que notaron el color provocado por el óxido de hierro de su superficie. Esta característica fue verificada por sondas espaciales modernas.',
-      'El registro del color y órbitas muestra el nivel observacional de los sacerdotes egipcios.',
+    "id": "planetas",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_reino-medio.webp",
+    "title": "Los Dioses Errantes",
+    "color": "#E8A87C",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_planetas.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_planetas.webp",
+    "content": [
+      "En el Zodiaco de Dendera, los cinco planetas clásicos visibles a simple vista ocupan un lugar protagonista dentro de la estructura celeste. Conocidos en el mundo griego como «planētes» (errantes) y en Egipto como estrellas que no reposan jamás, estos astros no están dispuestos de manera arbitraria o decorativa, sino situados en posiciones astrológicas exactas conocidas en la literatura astronómica helenística como sus casas de «exaltación» o hypsoma.",
+      "El planeta Venus figura bajo el nombre jeroglífico de «la estrella de la mañana» o Neter-duau, personificado por una figura antropomorfa con dos cabezas que mira simultáneamente hacia el este y el oeste, reflejando su doble condición de lucero matutino y vespertino. En el relieve, Venus se encuentra esculpido en el signo de Piscis, que es exactamente el lugar astronómico de su máxima exaltación astrológica según el sistema de Claudio Ptolomeo.",
+      "Marte, el planeta rojo, está representado como «Horus el rojo» (Hor-desher) bajo la forma de un halcón divino que navega sobre una barca sagrada en la constelación de Capricornio, su lugar canónico de exaltación. Júpiter, identificado como «Horus que desvela los misterios» (Hor-peshesh-taui), aparece esculpido junto al signo de Cáncer, donde la tradición astrológica helenística situaba su mayor influjo benéfico sobre los gobernantes terrenales.",
+      "Saturno figura bajo la designación de «Horus, el toro del cielo» (Hor-ka-pet), representado como un sacerdote con cabeza de halcón coronado por el disco solar, situado en la constelación de Libra, su signo de exaltación. Por último, Mercurio aparece personificado como el dios Thoth o el «dios de Sebau», dotado de cabeza de ibis o chacal y ubicado cerca de Virgo, donde la astronomía grecorromana fijaba su punto de mayor dignidad zodiacal.",
+      "La disposición simultánea de todos los planetas en sus signos de exaltación convierte al Zodiaco de Dendera en un «thema mundi» o carta natal cósmica idealizada. Este esquema teórico representaba el estado del universo en el momento sagrado de la Creación primordial o zep tepi, garantizando que el templo de Hathor fuera un catalizador permanente de orden y armonía universal contra el caos circundante."
     ],
-    fact: 'Los nombres de los días de la semana en español (Lunes=Luna, Martes=Marte, Miércoles=Mercurio, Jueves=Júpiter, Viernes=Venus) vienen directamente de la asociación planetaria que los egipcios transmitieron a los griegos, los griegos a los romanos, y los romanos a nosotros. ¡Cada semana usamos astronomía egipcia!',
+    "fact": "Los cinco planetas visibles conocidos en la antigüedad están grabados en el disco de Dendera en sus puntos astronómicos canónicos de máxima exaltación: Venus en Piscis, Júpiter en Cáncer, Mercurio en Virgo, Saturno en Libra y Marte en Capricornio, reflejando las coordenadas astrológicas de mayor influencia en la bóveda celeste según la doctrina alejandrina.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La representación béfala de Venus en Dendera es la formulación iconográfica más ingeniosa de la antigüedad para resolver el dilema de si el lucero del alba (Eósforo) y la estrella del atardecer (Héspero) eran el mismo astro o dos deidades independientes en el firmamento, unificando ambas apariciones celestes bajo la figura del dios Tioumoutiri con dos cabezas opuestas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El concepto astronómico de «exaltación planetaria» se fundamenta en posiciones longitudinales donde la luminosidad aparente y la visibilidad de un planeta coinciden con las estaciones cardinales terrestres. Por ejemplo, Marte alcanza su máximo brillo en oposición durante su perihelio en el hemisferio sur celeste."
+      }
+    ]
   },
   {
-    id: 'legado',
-              bannerImage: '/assets/egypt/infographic_m9/banner_reino-nuevo.webp',
-    title: 'El Viaje de 5,000 Años',
-    color: '#9B8EC7',
-    btnImage: '/assets/egypt/infographic_dendera/btn_legado.webp',
-    image: '/assets/egypt/infographic_dendera/hero_legado.webp',
-    content: [
-      'El Zodiaco de Dendera muestra la transmisión del conocimiento. En Babilonia se creó un zodíaco basado en la eclíptica por donde transitan el Sol y la Luna.',
-      'Los griegos mejoraron el zodíaco babilónico. Hiparco de Nicea elaboró un catálogo estelar y descubrió la precesión. Con la conquista de Alejandro Magno, esta astronomía llegó a Egipto.',
-      'Los egipcios unieron la astronomía griega con su sistema de Decanos. El Zodiaco de Dendera documenta la síntesis física de dos modelos astronómicos distintos.',
-      'Este conocimiento pasó a Roma y luego al resto de Europa. Los astrólogos árabes tradujeron los textos egipcios y griegos, diseminando los Decanos en la época medieval.',
-      'El zodíaco actual proviene del modelo babilónico y egipcio. La astronomía moderna tiene sus raíces en las observaciones iniciales realizadas por pueblos mesopotámicos.',
-      'El disco de Dendera es un documento que enlaza las observaciones antiguas con los mapas celestes contemporáneos.',
+    "id": "legado",
+    "bannerImage": "/assets/egypt/infographic_m9/banner_reino-nuevo.webp",
+    "title": "El Viaje de 5,000 Años",
+    "color": "#9B8EC7",
+    "btnImage": "/assets/egypt/infographic_dendera/btn_legado.webp",
+    "image": "/assets/egypt/infographic_dendera/hero_legado.webp",
+    "content": [
+      "El Zodiaco de Dendera corona un viaje intelectual de cinco milenios de observación estelar en el noreste de África. Desde los alineamientos megalíticos prehistóricos de Nabta Playa en el desierto sahariano hasta los tratados astronómicos de la Biblioteca de Alejandría, la civilización del Nilo persiguió sin descanso descifrar las leyes matemáticas que gobernaban el cielo para aplicarlas al bienestar de la sociedad terrenal.",
+      "Como encrucijada cultural definitiva, Dendera sintetizó tres grandes corrientes del pensamiento antiguo: la cosmología religiosa y el cómputo decánico del Egipto faraónico, las tablas matemáticas de posiciones planetarias de Mesopotamia y la geometría esférica desarrollada por los filósofos y astrónomos griegos. Esta amalgama sirvió de puente conceptual para la astronomía medieval árabe y, en última instancia, para el Renacimiento europeo.",
+      "En la historia de la ciencia moderna, el debate generado por el Zodiaco en el París del siglo diecinueve aceleró de manera decisiva la profesionalización de la arqueoastronomía y el refinamiento de los métodos filológicos de traducción jeroglífica. Obligó a los científicos a desarrollar modelos matemáticos capaces de calcular retrocesos orbitales de miles de años, inaugurando el uso sistemático de la astrofísica en la datación histórica de yacimientos.",
+      "Hoy en día, el bajorrelieve original conservado en el Museo del Louvre y su réplica emplazada en el Templo de Hathor continúan cautivando a cientos de miles de escolares, científicos y amantes del arte de todo el mundo. La imagen del disco celeste suspendido por deidades y poblado por constelaciones familiares recuerda que la necesidad de mirar hacia arriba y cartografiar las estrellas es una pulsión universal inherente a la condición humana.",
+      "El legado del Zodiaco de Dendera pervive no solo en los museos de historia, sino en cada carta celeste y en cada aplicación astronómica digital que consultamos en nuestros dispositivos móviles. Aquellos signos que los escultores tolemaicos grabaron con cinceles de bronce en la arenisca de Dendera hace dos mil años son los mismos símbolos que hoy nos orientan cuando alzamos los ojos hacia el manto infinito del universo nocturno."
     ],
-    fact: 'La palabra "zodiaco" viene del griego "zodiakos kyklos"(círculo de animales). Pero en realidad, solo 7 de los 12 signos son animales (Aries, Tauro, Cáncer, Leo, Escorpio, Capricornio, Piscis). Los otros cinco son humanos (Géminis, Virgo, Acuario, Sagitario) o un objeto (Libra). ¡El"círculo de animales" no es tan animal como su nombre sugiere!',
-  },
+    "fact": "El Zodiaco de Dendera integra una tradición astronómica ininterrumpida que abarca desde los alineamientos megalíticos de Nabta Playa del 4500 a.C. hasta su plasmación monumental en el 50 a.C., constituyendo el eslabón final entre la astronomía faraónica y la ciencia alejandrina, legando a la civilización contemporánea la matriz geométrica del mapa del cielo nocturno.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los símbolos gráficos utilizados hoy en día en astronomía y astrología para representar a los planetas y constelaciones (como el tridente de Neptuno o los cuernos de Aries) derivan directamente de abreviaturas taquigráficas bizantinas basadas en los glifos greco-egipcios de manuscritos alejandrinos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad angular del fenómeno de precesión axial de la Tierra (veintiséis mil años por ciclo completo) ha desplazado las constelaciones zodiacales casi treinta grados respecto a los meses calendáricos desde que se esculpió Dendera en el 50 a.C., fenómeno verificable al comparar el disco con el cielo real actual."
+      }
+    ]
+  }
 ];
 
 // â”€â”€â”€ Star Field Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

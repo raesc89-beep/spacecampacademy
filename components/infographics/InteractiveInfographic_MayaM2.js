@@ -97,145 +97,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'piramide-castillo',
-              bannerImage: '/assets/maya/infographic_m2/banner_cacao-fermentacion.webp',
-    title: 'El Castillo',
-    color: '#FF6D00',
-    btnImage: '/assets/maya/infographic_m2/btn_piramide-castillo.jpg',
-    image: '/assets/maya/infographic_m2/hero_piramide-castillo.jpg',
-    content: [
-      'La pirámide de "El Castillo" se ubica en el centro de Chichén Itzá. Tiene 30 metros de altura y fue construida alrededor del año 1000 d.C. Es una obra maestra de la arquitectura monumental maya.',
-      'Su estructura tiene 9 terrazas escalonadas. Estas plataformas representan los 9 niveles del Xibalbá, el inframundo maya. La pirámide es un modelo a escala de su universo espiritual, construido con bloques de piedra caliza.',
-      'El Castillo tiene escalinatas en sus cuatro lados. Cada escalera cuenta con 91 escalones. Al multiplicar 91 por 4 y sumar la plataforma superior, obtenemos 365, el número de días en un año solar.',
-      'Esta pirámide funciona como un calendario de piedra. Los mayas observaban el cielo con precisión y calcularon la duración del año solar (Haab). Construyeron el edificio para demostrar su dominio del tiempo y el espacio.',
-      'La ubicación de El Castillo tiene una desviación calculada respecto al norte verdadero. Esta rotación permite que el sol interactúe con la arquitectura en días específicos, funcionando como un reloj solar.',
+    "id": "piramide-castillo",
+    "bannerImage": "/assets/maya/infographic_m2/banner_cacao-fermentacion.webp",
+    "title": "El Castillo",
+    "color": "#FF6D00",
+    "btnImage": "/assets/maya/infographic_m2/btn_piramide-castillo.jpg",
+    "image": "/assets/maya/infographic_m2/hero_piramide-castillo.jpg",
+    "content": [
+      "El Castillo de Chichén Itzá, conocido formalmente como el Templo de Kukulcán, es la edificación más emblemática de la civilización maya. Erigida en el corazón de la gran explanada ceremonial de la ciudad hacia el año 1000 d.C., durante el periodo Posclásico Temprano, esta imponente pirámide cuadrangular sintetiza la concepción maya del espacio sagrado y el orden cósmico. Su arquitectura monumental fusiona tradiciones constructivas mayas clásicas con influencias estilísticas procedentes del altiplano central de México.",
+      "La base cuadrangular del monumento mide exactamente 55.3 metros de longitud por cada uno de sus cuatro costados. El cuerpo piramidal escalonado asciende a través de nueve plataformas superpuestas hasta alcanzar 24 metros de altura vertical, sobre la cual se asienta el templo superior de 6 metros de elevación. La altura total del conjunto alcanza así los 30 metros exactos desde el piso de la plaza, convirtiéndose en el hito visual dominante en toda la planicie boscosa circundante.",
+      "Cada una de las cuatro fachadas de la pirámide cuenta con una monumental escalinata central que asciende con una pendiente promedio de 45 grados de inclinación. La escalinata de la fachada norte es la más elaborada del edificio, pues sus balaustradas o muros laterales culminan al nivel del suelo en dos colosales cabezas de serpiente talladas en piedra caliza maciza. Estas cabezas presentan fauces abiertas, lenguas bífidas salientes y ojos almendrados que originalmente contenían incrustaciones de obsidiana pulida.",
+      "El templo superior que corona la cúspide posee una entrada orientada hacia el norte flanqueada por dos enormes columnas serpentinas con forma de cascabel. En su interior, el santuario albergaba un altar ceremonial sostenido por figuras antropomorfas de atlantes y un recinto reservado para ofrendas estatales. Desde esta cima privilegiada, los sacerdotes y gobernantes tenían un campo visual ilimitado para presenciar el movimiento del Sol sobre el horizonte y comunicarse visualmente con otras ciudades del territorio yucateco.",
+      "Durante el siglo XVI, los conquistadores españoles comandados por Francisco de Montejo denominaron popularmente a la estructura como «El Castillo» debido a su solidez defensiva y a su semejanza con las fortalezas militares de la península ibérica. Sin embargo, su propósito nunca fue militar, sino puramente astronómico, ritual y cosmológico, funcionando como un eje del mundo o axis mundi que conectaba el cielo diurno con los nueve estratos oscuros del inframundo mesoamericano."
     ],
-    expandables: [
-      { label: 'El Haab Maya', icon: 'clock', text: 'El calendario Haab de 365 días se dividía en 18 meses de 20 días, más un periodo final llamado "Wayeb" de 5 días, que se consideraba un tiempo de rituales.' },
-      { label: 'Un Nombre Español', icon: 'clock', text: 'Los conquistadores españoles llamaron "El Castillo" al edificio en el siglo XVI. Para los mayas, era el Templo de Kukulcán, el dios serpiente emplumada.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los constructores mayas labraron los peldaños de las cuatro escalinatas con una altura progresiva ligeramente decreciente conforme se asciende hacia la cima. Esta técnica de corrección de perspectiva forzada provoca que la pirámide parezca aún más alta e imponente cuando una persona la observa de pie desde la base de la gran plaza ceremonial, engañando con elegancia a la visión humana."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Estudios geofísicos realizados por investigadores de la Universidad Nacional Autónoma de México (UNAM) mediante tomografía de resistividad eléctrica tridimensional confirmaron en 2015 la existencia de un cenote natural de agua dulce ubicado directamente a 20 metros de profundidad debajo del centro geométrico exacto de la pirámide de Kukulcán."
+      }
     ],
-    fact: 'En el interior de la pirámide principal hay otra pirámide más antigua. Los gobernantes construían nuevos templos envolviendo los edificios anteriores.',
+    "fact": "La pirámide de Kukulcán posee una base cuadrada de 55.3 metros por lado y una masa pétrea estimada en más de 60,000 toneladas de bloques de caliza y mortero de estuco, estructurada para fungir como el epicentro religioso, astronómico y administrativo de Chichén Itzá durante el colapso del periodo Clásico y el auge del Posclásico mesoamericano."
   },
   {
-    id: 'equinoccio-serpiente',
-              bannerImage: '/assets/maya/infographic_m2/banner_cacao-moneda.webp',
-    title: 'La Serpiente de Luz',
-    color: '#8D6E63',
-    btnImage: '/assets/maya/infographic_m2/btn_equinoccio-serpiente.jpg',
-    image: '/assets/maya/infographic_m2/hero_equinoccio-serpiente.jpg',
-    content: [
-      'Dos veces al año, un fenómeno visual ocurre en El Castillo durante los equinoccios de primavera y otoño (20 de marzo y 22 de septiembre). En estas fechas, el día y la noche tienen la misma duración.',
-      'Al final de la tarde, los rayos del sol golpean la esquina noroeste de las 9 terrazas escalonadas. Esto proyecta sombras triangulares sobre la alfarda de la escalinata norte.',
-      'Conforme el sol desciende, se forman 7 triángulos de luz y sombra. Estos triángulos se conectan con la cabeza de serpiente de piedra en la base, creando la ilusión de una serpiente luminosa.',
-      'Esta "Serpiente de Luz" representaba a Kukulcán descendiendo del cielo. Para los mayas, el evento marcaba el inicio del ciclo agrícola de primavera o las cosechas en otoño.',
-      'El fenómeno es dinámico. A lo largo de aproximadamente tres horas, la serpiente parece deslizarse por el costado de la pirámide a medida que cambia el ángulo del sol.',
+    "id": "equinoccio-serpiente",
+    "bannerImage": "/assets/maya/infographic_m2/banner_cacao-moneda.webp",
+    "title": "La Serpiente de Luz",
+    "color": "#8D6E63",
+    "btnImage": "/assets/maya/infographic_m2/btn_equinoccio-serpiente.jpg",
+    "image": "/assets/maya/infographic_m2/hero_equinoccio-serpiente.jpg",
+    "content": [
+      "El fenómeno arqueoastronómico más célebre de Chichén Itzá ocurre durante las tardes cercanas a los equinoccios de primavera y otoño, en los meses de marzo y septiembre. Conforme el Sol desciende hacia el horizonte poniente alrededor de las 16:00 horas, las aristas salientes de los nueve cuerpos escalonados de la pirámide proyectan su sombra sobre la balaustrada occidental de la escalinata norte. El contraste entre sombra y luz solar directa genera un efecto óptico verdaderamente asombroso sobre la piedra.",
+      "De manera gradual y milimétrica, la sombra de las terrazas recorta sobre el muro inclinado una serie de triángulos luminosos isósceles que se van dibujando en secuencia descendente. A las 16:45 horas aproximadamente, siete triángulos equiláteros de luz solar pura quedan perfectamente perfilados a lo largo de la balaustrada. Esta franja luminosa ondulante se conecta sin fisuras con la colosal cabeza de serpiente tallada en la base, dando la ilusión visual de un cuerpo serpentino gigantesco que se desliza.",
+      "Para los campesinos mayas de la península de Yucatán, esta proyección visual representaba el descenso físico de Kukulcán, la Serpiente Emplumada, deidad del viento, del agua y de la fertilidad de la tierra. La serpiente descendía desde los cielos celestiales hacia la tierra para fecundar el suelo e iniciar el ciclo de siembra del maíz. Una vez en el suelo, la figura serpentina parecía ingresar metafóricamente en las entrañas de la tierra kárstica a través de los cenotes sagrados que circundan la gran explanada.",
+      "El espectáculo visual alcanza su plenitud durante unos 45 minutos antes de la puesta de Sol, cuando los siete triángulos resplandecen con un tono dorado intenso sobre el estuco calizo. Conforme el disco solar toca la línea del horizonte, la sombra envuelve gradualmente la cabeza de la serpiente en la base y el reptil de luz se desvanece en la penumbra crepuscular. Este suceso congregaba a miles de peregrinos de toda Mesoamérica en una festividad agrícola de renovación comunitaria colectiva.",
+      "Lejos de ser un truco místico fortuito, el fenómeno de la serpiente de luz es el resultado directo de una sofisticada aplicación de trigonometría, geometría tridimensional y observación solar continua a lo largo de varias generaciones. Los arquitectos mayas calcularon con exactitud el ángulo de elevación y azimut del astro diurno para diseñar la curvatura, la altura de las terrazas y el grosor de los tableros con el propósito de sincronizar el monumento con el compás de las estaciones terrestres."
     ],
-    expandables: [
-      { label: 'Un Dios Viajero', icon: 'atom', text: 'Kukulcán es la versión maya de Quetzalcóatl de la cultura tolteca. Significa "Serpiente Emplumada" y era una deidad unificadora en Mesoamérica.' },
-      { label: 'Precisión Relojera', icon: 'clock', text: 'El evento es visible varios días alrededor de los equinoccios, pero alcanza la forma de 7 triángulos completos exactamente en el día del equinoccio.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Aunque la multitud moderna se reúne en Chichén Itzá principalmente el 21 de marzo para celebrar el equinoccio de primavera, los arqueoastrónomos han demostrado que el juego de los siete triángulos de luz y sombra es visible con igual nitidez y dramatismo durante un periodo de tres días continuos antes y después de la fecha equinoccial astronómica."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El arqueólogo mexicano Luis E. Arochi fue uno de los primeros científicos en documentar fotográficamente de manera sistemática en la década de 1970 el fenómeno del descenso equinoccial de Kukulcán, demostrando que la inclinación de la balaustrada de 45 grados y el corte de los cuerpos piramidales fueron concebidos deliberadamente para actuar como pantalla de proyección solar."
+      }
     ],
-    fact: 'Un error en el ángulo de inclinación de los muros de la pirámide habría arruinado el efecto visual. Los arquitectos mayas dominaban la geometría tridimensional.',
+    "fact": "La formación de los siete triángulos de luz solar que configuran el cuerpo de la serpiente en la escalinata norte de El Castillo requiere una alineación angular exacta de la estructura orientada a 17 grados al este del norte geográfico, una orientación que se vincula matemáticamente con la trayectoria solar del cenit y los equinoccios tropicales."
   },
   {
-    id: 'geometria-solar',
-              bannerImage: '/assets/maya/infographic_m2/banner_cacao-origen.webp',
-    title: 'Geometría Solar',
-    color: '#FFD600',
-    btnImage: '/assets/maya/infographic_m2/btn_geometria-solar.jpg',
-    image: '/assets/maya/infographic_m2/hero_geometria-solar.jpg',
-    content: [
-      'Los mayas lograron la figura de la serpiente mediante astronomía y geometría. La pirámide fue diseñada para reflejar la luz del sol debido a su ubicación y forma.',
-      'El Castillo está rotado unos 20 grados al este del norte verdadero. Chichén Itzá se encuentra en la latitud de 20 grados norte. Esta coincidencia angular es esencial para el fenómeno de luz y sombra.',
-      'La forma de las terrazas también es clave. Las esquinas están diseñadas con formas redondeadas. La luz rasante del atardecer choca contra estos bordes y proyecta los 7 triángulos.',
-      'El ángulo del sol, la inclinación de las terrazas y la pendiente de la escalera debían estar sincronizados para crear las sombras. Todo fue calculado con precisión.',
-      'Los constructores observaron los ciclos solares desde observatorios como El Caracol. Entendieron el movimiento de los astros y lo aplicaron a la arquitectura del edificio.',
+    "id": "geometria-solar",
+    "bannerImage": "/assets/maya/infographic_m2/banner_cacao-origen.webp",
+    "title": "Geometría Solar",
+    "color": "#FFD600",
+    "btnImage": "/assets/maya/infographic_m2/btn_geometria-solar.jpg",
+    "image": "/assets/maya/infographic_m2/hero_geometria-solar.jpg",
+    "content": [
+      "El Castillo de Chichén Itzá no está alineado con los cuatro puntos cardinales astronómicos exactos, sino que su fachada principal presenta una desviación deliberada de aproximadamente 17 grados hacia el este del norte geográfico. Esta ligera inclinación no fue producto de un error constructivo, sino de una meditada decisión geométrica común a múltiples urbes del área maya y mesoamericana central. Dicha orientación responde a la necesidad de coordinar los rumbos arquitectónicos con ciclos de salida y puesta del Sol.",
+      "La orientación de 17 grados permite que el eje perpendicular de la fachada norte apunte directamente hacia la puesta de Sol durante el día del paso cenital solar en mayo, cuando el astro rey alcanza el punto vertical más alto en la bóveda celeste. En esta latitud intertropical (20.68° N), el Sol cruza dos veces al año el cenit absoluto: el 23 de mayo y el 19 de julio. Estas fechas delimitaban de forma invariable las fases críticas de desmonte de selva, quema de milpa y primera siembra de granos de maíz.",
+      "Asimismo, en el solsticio de verano (21 de junio), cuando el Sol alcanza su posición más septentrional en el horizonte, la pirámide experimenta un notable fenómeno de bisección lumínica. Al amanecer, las caras norte y este del monumento quedan completamente iluminadas por los rayos solares mientras que las caras sur y oeste permanecen sumergidas en una penumbra uniforme. Esta división perfecta entre luz y sombra parte el edificio diagonalmente en dos mitades simétricas de luz pura.",
+      "Durante el solsticio de invierno (21 de diciembre), el proceso se invierte con rigurosa exactitud geométrica, proyectando patrones de iluminación complementarios en las caras sur y oeste de la estructura. La pirámide funcionaba de este modo como un gnomón tridimensional colosal, cuyas sombras arrojadas sobre la explanada servían a los sabios locales para verificar el avance ininterrumpido de las cuatro estaciones del año tropical y detectar cualquier desviación en los cómputos de los sacerdotes.",
+      "El control de la luz solar demostraba el dominio tecnológico de la élite de Chichén Itzá sobre el medio ambiente. Al materializar en bloques de piedra caliza los puntos de detención y retorno del Sol a lo largo del año, los reyes sacerdotes personificaban el vínculo indiscutible entre el orden cósmico superior y la vida cotidiana de las aldeas agrícolas, garantizando el suministro oportuno de alimentos y la estabilidad del reino maya."
     ],
-    expandables: [
-      { label: 'Luz y Sombra', icon: 'clock', text: 'El uso de luz y sombra en la arquitectura se llama "hierofanía", una revelación de lo sagrado. Para los mayas, el sol animaba la estructura de piedra.' },
-      { label: 'Matemática Maya', icon: 'atom', text: 'Los mayas usaban un sistema matemático vigesimal e inventaron el cero de forma independiente. Esto les permitió realizar cálculos astronómicos complejos.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los mayas no empleaban instrumentos metálicos como compases o teodolitos de bronce. Para trazar ángulos de 17 grados en el terreno selvático, utilizaban largas cuerdas de fibra vegetal tensadas con pesos de plomo o piedra y estacas de madera alineadas visualmente con la estrella polar antigua y con la salida del Sol en fechas calendáricas específicas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La familia de orientaciones mesoamericanas de 17 grados al este del norte, identificada por el arqueoastrónomo Ivan Šprajc, divide el año solar de 365 días en intervalos múltiplos del calendario sagrado Tzolk'in de 260 días y del ciclo agrícola de 105 días, asegurando una correlación matemática perfecta entre agricultura y religión."
+      }
     ],
-    fact: 'A pesar de la precesión de los equinoccios, el fenómeno visual sigue funcionando porque se basa en el ciclo anual del sol respecto a la estructura.',
+    "fact": "La desviación de 17 grados este de la pirámide de Kukulcán genera que durante el solsticio de verano la luz matutina ilumine con exactitud matemática el 50% de la masa del edificio, dejando en penumbra simétrica el otro 50%, operando como un reloj solar tridimensional que señalaba el punto de retorno máximo del Sol en el hemisferio norte."
   },
   {
-    id: 'calendario-piedra',
-              bannerImage: '/assets/maya/infographic_m2/banner_cacao-salud.webp',
-    title: 'Calendario en Piedra',
-    color: '#29B6F6',
-    btnImage: '/assets/maya/infographic_m2/btn_calendario-piedra.jpg',
-    image: '/assets/maya/infographic_m2/hero_calendario-piedra.jpg',
-    content: [
-      'Los 365 escalones de El Castillo simbolizan el año Haab. Además, la pirámide codifica los ciclos del tiempo maya, funcionando como un calendario monumental.',
-      'Las terrazas de la pirámide están divididas por las escaleras centrales. Hay 18 secciones en cada cara, que representan los 18 meses (uinales) de 20 días del calendario Haab.',
-      'Los mayas usaban el calendario sagrado Tzolkín de 260 días. El Haab y el Tzolkín formaban la Rueda Calendárica, donde un ciclo completo dura 52 años solares.',
-      'Las fachadas de la pirámide tienen paneles decorativos. Hay exactamente 52 tableros tallados en cada lado, representando los años del ciclo de la Rueda Calendárica.',
-      'El diseño de las terrazas, paneles y escalones integra números astronómicos. La estructura monumental es un registro de los ciclos del tiempo mesoamericano.',
+    "id": "calendario-piedra",
+    "bannerImage": "/assets/maya/infographic_m2/banner_cacao-salud.webp",
+    "title": "Calendario en Piedra",
+    "color": "#29B6F6",
+    "btnImage": "/assets/maya/infographic_m2/btn_calendario-piedra.jpg",
+    "image": "/assets/maya/infographic_m2/hero_calendario-piedra.jpg",
+    "content": [
+      "El Castillo es a menudo definido por los arqueólogos y matemáticos como un auténtico calendario solar esculpido en piedra caliza. Cada uno de los elementos arquitectónicos que conforman la pirámide posee un significado numérico vinculado a las cuentas calendáricas mayas: el ciclo solar de 365 días (Haab), el ciclo ritual de 260 días (Tzolk'in) y la Rueda Calendárica de 52 años que sincronizaba ambos sistemas temporales mesoamericanos en una sola marcha regular.",
+      "El conteo de los escalones de la pirámide constituye la prueba más visible de esta correlación matemática directa. Cada una de las cuatro caras del edificio cuenta con una escalinata de 91 peldaños tallados individualmente. Al multiplicar 91 por las cuatro escalinatas exteriores se obtiene un total de 364 escalones. Al sumar la plataforma superior común que sirve de antesala al templo de la cúspide, el número total de peldaños asciende a 365, coincidiendo con los días del año solar Haab.",
+      "Los cuerpos piramidales escalonados también poseen un significado aritmético profundo. La estructura cuenta con 9 terrazas horizontales superpuestas. Sin embargo, cada una de estas terrazas está cortada por la escalinata central que asciende por cada costado, dividiendo el nivel en dos secciones laterales independientes. Esto produce 18 secciones de terrazas por cada fachada, una cifra que equivale exactamente a los 18 meses o uinales de veinte días que integraban el calendario agrícola maya.",
+      "En los muros de las terrazas se encuentran dispuestos paneles o tableros de piedra labrada rectangulares. En cada fachada se contabilizan exactamente 52 paneles de mampostería distribuidos ordenadamente entre los nueve cuerpos escalonados. El número 52 corresponde con rigurosa precisión a los 52 años solares que integran la Rueda Calendárica, el gran ciclo tras el cual una fecha del Tzolk'in y una fecha del Haab volvían a coincidir de forma idéntica en la historia maya.",
+      "Esta armonía cuantitativa convertía al monumento en una herramienta pedagógica y de propaganda estatal incomparable. Los ciudadanos que se reunían en la plaza ceremonial no requerían saber leer glifos complejos en códices de amate para entender el funcionamiento del tiempo; bastaba con observar la pirámide misma para contemplar el balance ordenado de los días, los meses y los siglos tallados en bloques inmutables de roca."
     ],
-    expandables: [
-      { label: 'El Fuego Nuevo', icon: 'atom', text: 'Al final del ciclo de 52 años, los mayas celebraban la "Ceremonia del Fuego Nuevo" para asegurar la continuidad del mundo y el sol.' },
-      { label: 'Dos Engranajes', icon: 'clock', text: 'El calendario Haab y el Tzolkín funcionan como dos engranajes. Tardan exactamente 52 años solares en volver a alinearse en la misma posición inicial.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los 5 días sobrantes del año solar que no formaban parte de los 18 meses regulares de 20 días eran conocidos por los mayas como Wayeb. Eran considerados días de transición delicada y peligro cósmico, representados sutilmente en la pirámide por la plataforma superior que corona y culmina la suma de los 364 escalones de las cuatro caras."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El célebre investigador Michael D. Coe destacó que El Castillo es uno de los pocos ejemplos mundiales de arquitectura icónica donde las cantidades numéricas de elementos constructivos (escalones, terrazas y paneles) corresponden sin excepciones forzadas a constantes astronómicas y ciclos calendáricos documentados en textos contemporáneos."
+      }
     ],
-    fact: 'Los mayas usaban la "Cuenta Larga" para registrar fechas desde el año 3114 a.C. Esto les permitía fechar eventos pasados y calcular futuros con notación de puntos y barras.',
+    "fact": "La composición aritmética de El Castillo integra 4 escalinatas de 91 peldaños más 1 plataforma superior para sumar 365 días del año Haab, 18 terrazas divididas por fachada para los 18 meses de veinte días, y 52 tableros por cara para los 52 años de la Rueda Calendárica, conformando un monumento matemático integral sin paralelo en la historia."
   },
   {
-    id: 'acustica-quetzal',
-              bannerImage: '/assets/maya/infographic_m2/banner_chocolate-europeo.webp',
-    title: 'Acústica del Quetzal',
-    color: '#00C853',
-    btnImage: '/assets/maya/infographic_m2/btn_acustica-quetzal.jpg',
-    image: '/assets/maya/infographic_m2/hero_acustica-quetzal.jpg',
-    content: [
-      'Al aplaudir frente a la pirámide, se produce un efecto acústico. El edificio no devuelve un eco común de aplauso.',
-      'El sonido rebota desde los escalones de piedra y produce un eco reverberante. Este sonido es similar al canto del quetzal, el ave sagrada del mundo maya y símbolo de Kukulcán.',
-      'El efecto ocurre porque las ondas de sonido rebotan en los 91 escalones. Los peldaños más altos están más lejos, por lo que el sonido tarda un poco más en regresar.',
-      'Este retraso continuo entre los ecos crea un "chirrido acústico" (frecuencia modulada). Los espectrogramas muestran que las frecuencias del eco son muy similares al canto real del quetzal.',
-      'Se cree que la arquitectura fue diseñada intencionalmente. La altura y profundidad de los peldaños producirían tanto las sombras de la Serpiente de Luz como la acústica del ave sagrada.',
+    "id": "acustica-quetzal",
+    "bannerImage": "/assets/maya/infographic_m2/banner_chocolate-europeo.webp",
+    "title": "Acústica del Quetzal",
+    "color": "#00C853",
+    "btnImage": "/assets/maya/infographic_m2/btn_acustica-quetzal.jpg",
+    "image": "/assets/maya/infographic_m2/hero_acustica-quetzal.jpg",
+    "content": [
+      "Además de sus propiedades astronómicas y calendáricas, El Castillo de Chichén Itzá alberga un prodigioso fenómeno acústico que ha maravillado a ingenieros y físicos modernos de todo el mundo. Cuando una persona se posiciona al pie de la escalinata noreste de la pirámide y produce una palmada seca y sonora, el sonido que rebota desde la parte alta de la estructura no regresa como un eco ordinario, sino transformado en un chirrido agudo que reproduce el canto del quetzal (*Pharomachrus mocinno*).",
+      "El sonido reflejado posee una frecuencia modulada descendente muy característica que imita de forma casi idéntica el trino vocal de esta ave sagrada centroamericana, asociada en la mitología maya con el dios Kukulcán. Los estudios espectrográficos demuestran que el eco se inicia en una frecuencia de aproximadamente 1,500 hercios y decae rápidamente hacia los 900 hercios en una fracción de segundo, generando un sonido que parece emitido por un animal vivo oculto en el templo superior.",
+      "El mecanismo físico detrás de este fenómeno fue explicado formalmente por el ingeniero acústico estadounidense David Lubman en 1998 ante la Sociedad Acústica de América. Lubman demostró que el eco chirriado o chirp es provocado por el fenómeno ondulatorio de difracción e interferencia acústica sobre una rejilla periódica de escalones de piedra. Cada peldaño de la escalinata funciona como un dispersor acústico individual que refleja una porción de la onda sonora original.",
+      "Dado que los peldaños inferiores se encuentran más cerca del observador que los peldaños superiores, el sonido reflejado por cada escalón llega al oído con un retardo temporal acumulativo de unos pocos milisegundos. Esta superposición de ecos individuales con desfase progresivo crea una onda compuesta cuya longitud de onda se estira en el tiempo, transformando el impulso seco de la palmada en una nota musical continua con tono descendente de notable belleza física.",
+      "Para la liturgia maya prehispánica, este efecto sonoro poseía un tremendo impacto psicológico y espiritual sobre las multitudes congregadas. Cuando el sumo sacerdote aplaudía o golpeaba percutores ceremoniales frente a la multitud reunida en la plaza, la pirámide parecía cobrar vida y responder con la voz sobrenatural del ave divina. La acústica de la arquitectura servía de puente entre el lenguaje humano y el ámbito sagrado de las deidades celestes."
     ],
-    expandables: [
-      { label: 'El Ave Sagrada', icon: 'clock', text: 'El quetzal tiene plumas esmeraldas que se usaban para los penachos de los gobernantes. Era considerada el ave de la libertad en Mesoamérica.' },
-      { label: 'El Gran Juego de Pelota', icon: 'clock', text: 'El Gran Juego de Pelota en Chichén Itzá tiene otra característica acústica. Un sonido en un extremo se escucha a más de 135 metros debido a los muros paralelos.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Si una persona aplaude de pie desde la base de la pirámide y otra persona se encuentra caminando sobre los escalones más altos de la cúspide, el sonido de los pasos percibido por la multitud en la plaza adquiere una resonancia que imita con fidelidad el repiqueteo de gotas de lluvia torrencial golpeando contra el suelo de piedra."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Simulaciones acústicas computacionales realizadas por físicos de la Universidad de Gante y la Universidad de Lovaina en Bélgica confirmaron que la profundidad de 26 centímetros y la altura de 26 centímetros de cada peldaño de El Castillo son las medidas teóricas idóneas para difractar frecuencias sonoras en el rango auditivo exacto del quetzal."
+      }
     ],
-    fact: 'El ingeniero acústico David Lubman presentó un estudio en 1998 demostrando la similitud entre el eco del aplauso y el quetzal, cambiando la forma de estudiar el sonido arqueológico.',
+    "fact": "El eco chirriado de El Castillo descompone una palmada humana en una serie de reflexiones periódicas de 91 peldaños que descienden de 1,500 Hz a 900 Hz en menos de 200 milisegundos, reproduciendo con exactitud física las frecuencias acústicas fundamentales registradas en el canto territorial del ave sagrada quetzal."
   },
   {
-    id: 'construccion-capas',
-              bannerImage: '/assets/maya/infographic_m2/banner_industria-chocolate.webp',
-    title: 'Construcción en Capas',
-    color: '#D50000',
-    btnImage: '/assets/maya/infographic_m2/btn_construccion-capas.jpg',
-    image: '/assets/maya/infographic_m2/hero_construccion-capas.jpg',
-    content: [
-      'El Castillo actual es la capa exterior del edificio. Los mayas construyeron esta pirámide sobre estructuras más antiguas, sellándolas en su interior en lugar de demolerlas.',
-      'En los años treinta, arqueólogos excavaron la base de El Castillo. Descubrieron una pirámide interior casi intacta (la Subestructura) con su propio templo en la cima.',
-      'En este templo interior ("Kukulcán I"), los arqueólogos encontraron un Chac Mool (una figura de piedra reclinada) y el Trono del Jaguar.',
-      'El Trono del Jaguar es una escultura roja con incrustaciones de discos de jade. Sus ojos y dientes también tienen decoraciones y permanecía oculta en la pirámide interior.',
-      'Construir en capas permitía a los nuevos gobernantes ampliar el templo principal mientras conservaban la santidad de los edificios anteriores.',
+    "id": "construccion-capas",
+    "bannerImage": "/assets/maya/infographic_m2/banner_industria-chocolate.webp",
+    "title": "Construcción en Capas",
+    "color": "#D50000",
+    "btnImage": "/assets/maya/infographic_m2/btn_construccion-capas.jpg",
+    "image": "/assets/maya/infographic_m2/hero_construccion-capas.jpg",
+    "content": [
+      "A semejanza de una muñeca matrioshka rusa de arquitectura monumental, El Castillo de Chichén Itzá no fue erigido en una sola campaña de construcción, sino que oculta en su interior varias pirámides previas superpuestas. En Mesoamérica, los gobernantes mayas no solían demoler los santuarios de sus predecesores dinásticos; en su lugar, los rellenaban cuidadosamente con toneladas de escombros de caliza y levantaban una nueva pirámide de mayores proporciones encima de la anterior.",
+      "Entre 1931 y 1935, el arqueólogo mexicano José Efrén Erosa Peniche dirigió excavaciones pioneras dentro de la masa sólida de la pirámide mediante la apertura de túneles estrechos. Para sorpresa de la comunidad científica internacional, las exploraciones hallaron intacta una estructura piramidal anterior de 33 metros de base y 17 metros de altura, fechada entre los años 600 y 800 d.C., correspondiente al periodo Clásico Tardío de ocupación itzá.",
+      "Dentro del templo superior de esta subestructura sepultada se descubrió una cámara secreta que contenía dos de los tesoros arqueológicos más deslumbrantes de América: una escultura de Chac Mool en piedra con ojos de concha nácar y el célebre Trono del Jaguar Rojo. Este trono real fue esculpido en una sola pieza de piedra caliza, pintado con un vivo pigmento de cinabrio rojo brillante e incrustado con 74 discos pulidos de jade verde jadeíta para simular las manchas del felino.",
+      "En el año 2016, un equipo multidisciplinario de científicos del Instituto Nacional de Antropología e Historia (INAH) y de la Universidad Nacional Autónoma de México (UNAM) aplicó técnicas de tomografía eléctrica no invasivas. El estudio detectó una tercera pirámide aún más antigua y pequeña en el corazón del monumento, de unos 10 metros de elevación, construida tentativamente entre los años 500 y 550 d.C., en los orígenes mismos del asentamiento urbano.",
+      "Esta sucesión de capas constructivas refleja una profunda práctica religiosa de renovación cíclica de la energía vital del sitio sagrado. Cada nueva pirámide que envolvía a la precedente absorbía el prestigio espiritual acumulado por los antepasados y amplificaba el poder ceremonial de los nuevos mandatarios, convirtiendo al edificio definitivo en una síntesis física de más de cinco siglos ininterrumpidos de devoción ritual y maestría arquitectónica."
     ],
-    expandables: [
-      { label: 'Una Tercera Pirámide', icon: 'atom', text: 'En 2015, se descubrió otra pirámide más pequeña (Kukulcán 0) dentro de Kukulcán I utilizando tomografía eléctrica de resistividad 3D.' },
-      { label: 'El Cenote Oculto', icon: 'atom', text: 'El escaneo 3D reveló que la pirámide de El Castillo está construida sobre un cenote oculto. Los cenotes eran considerados portales al inframundo.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los colmillos del Trono del Jaguar Rojo hallado en la subestructura interna de El Castillo no fueron tallados en piedra, sino que fueron elaborados con incrustaciones de conchas marinas de caracol blanco pulido, mientras que sus ojos felinos están hechos de esferas de jadeíta pura que aún resplandecen en la oscuridad de la cámara."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La tomografía de resistividad eléctrica tridimensional realizada en 2016 con electrodos planos sobre los escalones exteriores permitió cartografiar el interior de la pirámide sin necesidad de perforar un solo muro, descubriendo una rampa de acceso y el templo superior de la estructura más antigua de época Clásica Temprana."
+      }
     ],
-    fact: 'El color original de la pirámide exterior era rojo con detalles en azul y verde. Estaba cubierta de estuco, a diferencia de la piedra gris expuesta de hoy.',
+    "fact": "Bajo la envoltura exterior de El Castillo descansan al menos dos pirámides previas perfectamente conservadas: una estructura intermedia de 17 metros con el Trono del Jaguar Rojo de 74 jades y el Chac Mool intactos, y una estructura basal más arcaica de 10 metros erigida en los albores del siglo VI d.C."
   },
   {
-    id: 'patrimonio-mundial',
-              bannerImage: '/assets/maya/infographic_m2/banner_xocolatl-bebida.webp',
-    title: 'Patrimonio Mundial',
-    color: '#D7CCC8',
-    btnImage: '/assets/maya/infographic_m2/btn_patrimonio-mundial.jpg',
-    image: '/assets/maya/infographic_m2/hero_patrimonio-mundial.jpg',
-    content: [
-      'Chichén Itzá es un sitio arqueológico reconocido, y El Castillo es su estructura principal. En 1988, la UNESCO declaró la ciudad Patrimonio de la Humanidad.',
-      'En 2007, Chichén Itzá y su pirámide principal fueron seleccionadas como una de las "Nuevas Siete Maravillas del Mundo Moderno" mediante una votación global.',
-      'Millones de turistas visitan Chichén Itzá cada año. Este volumen de personas causa desgaste en la piedra caliza de los escalones de la pirámide.',
-      'Desde 2006, las autoridades prohibieron escalar El Castillo. La medida protege la estructura y evita accidentes, garantizando su preservación.',
-      'Los esfuerzos de conservación incluyen la limpieza y el estudio mediante escáneres de radar y tecnología moderna. Esto asegura que la ingeniería maya se mantenga conservada.',
+    "id": "patrimonio-mundial",
+    "bannerImage": "/assets/maya/infographic_m2/banner_xocolatl-bebida.webp",
+    "title": "Patrimonio Mundial",
+    "color": "#D7CCC8",
+    "btnImage": "/assets/maya/infographic_m2/btn_patrimonio-mundial.jpg",
+    "image": "/assets/maya/infographic_m2/hero_patrimonio-mundial.jpg",
+    "content": [
+      "El valor universal excepcional de Chichén Itzá y de la pirámide de Kukulcán fue reconocido solemnemente en 1988, cuando la UNESCO inscribió a la ciudad prehispánica en la prestigiosa Lista del Patrimonio Mundial de la Humanidad. El comité de selección destacó la extraordinaria conservación de sus monumentos, la síntesis artística mesoamericana y el valor incalculable de sus testimonios arqueoastronómicos que ilustran una etapa decisiva en la historia cultural de la civilización.",
+      "En julio del año 2007, tras una votación internacional masiva en la que participaron más de cien millones de personas alrededor del planeta, la pirámide de Kukulcán fue electa como una de las Nuevas Siete Maravillas del Mundo Moderno. Este reconocimiento global catapultó el interés turístico y científico por el monumento, atrayendo a más de dos millones y medio de visitantes nacionales y extranjeros cada año a la península de Yucatán para contemplar su esplendor pétreo.",
+      "Para salvaguardar la integridad física del edificio ante el desgaste continuo provocado por el tránsito masivo de personas, el Instituto Nacional de Antropología e Historia (INAH) tomó la decisión en el año 2006 de clausurar el ascenso público a las escalinatas y el acceso a la cámara interna del Jaguar Rojo. Esta medida urgente ha permitido frenar la erosión de los peldaños de caliza y conservar la estabilidad estructural de las bóvedas para las generaciones futuras.",
+      "Hoy en día, científicos de múltiples instituciones globales aplican tecnologías de vanguardia para estudiar el monumento sin alterarlo, desde modelos tridimensionales fotogramétricos de alta resolución hasta sensores de rayos cósmicos (muones) para radiografiar cavidades subterráneas ocultas. Estos estudios continúan revelando pasajes sellados, ofrendas de cerámica y detalles de ingeniería que permanecieron ignorados durante siglos bajo la selva.",
+      "El Castillo de Chichén Itzá permanece como un símbolo indiscutible del orgullo de México y de la herencia originaria de los pueblos mayas contemporáneos que aún habitan las tierras de Yucatán, Campeche, Quintana Roo, Chiapas y Guatemala. Su silueta piramidal coronada por el templo de las serpientes nos recuerda el poder de la inteligencia humana para dialogar armoniosamente con las estrellas y convertir la piedra en un testimonio eterno del orden del cosmos."
     ],
-    expandables: [
-      { label: 'Redescubrimiento', icon: 'clock', text: 'Chichén Itzá fue abandonada y cubierta por la selva. En el siglo XIX, exploradores como John Lloyd Stephens y Frederick Catherwood la documentaron y atrajeron atención mundial.' },
-      { label: 'Un Cielo para el Mañana', icon: 'clock', text: 'Existe un movimiento para conservar el "Cielo Oscuro" reduciendo la contaminación lumínica urbana, permitiendo observar las estrellas en sitios astronómicos antiguos.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante décadas del siglo XX, los turistas tenían permitido subir libremente por los 91 empinados escalones de la pirámide de Kukulcán ayudados por una cuerda gruesa en el centro. Sin embargo, el desgaste visible en las piedras calizas y el riesgo de accidentes obligaron al cierre definitivo del ascenso a visitantes en enero de 2006."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Científicos del Instituto de Física de la UNAM y de los laboratorios Fermilab de Estados Unidos instalaron detectores de muones cósmicos en túneles cercanos a El Castillo para medir la densidad interna del monumento y confirmar la existencia de cámaras ceremoniales no descubiertas dentro de sus núcleos macizos de roca."
+      }
     ],
-    fact: 'En la década de 1920, la Institución Carnegie financió excavaciones en Chichén Itzá. El arqueólogo Sylvanus Morley dirigió los esfuerzos de excavación de la ciudad.',
-  },
+    "fact": "Declarada Patrimonio Cultural de la Humanidad por la UNESCO en 1988 y consagrada como una de las Nuevas Siete Maravillas del Mundo en 2007, la pirámide de Kukulcán recibe actualmente más de 2.5 millones de visitantes al año, consolidándose como uno de los sitios arqueológicos más estudiados y protegidos de todo el continente americano."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

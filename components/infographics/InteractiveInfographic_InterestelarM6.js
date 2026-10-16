@@ -93,152 +93,208 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'lanzamiento-1977',
-    title: 'El Lanzamiento',
-    color: '#FFD54F',
-    btnImage: '/assets/interestelar/infographic_m6/btn_lanzamiento-1977.jpg',
-    image: '/assets/interestelar/infographic_m6/hero_lanzamiento-1977.jpg',
-    content: [
-      'Lanzar una sonda y hacer que pase sobre cuatro planetas en movimiento usando solo el impulso inicial es muy complejo. La NASA aprovechó una alineación planetaria rara que ocurre cada 176 años. Los gigantes gaseosos estaban en la posición perfecta para que una nave pudiera visitarlos en un solo viaje. Esta ventana de oportunidad se llamó el "Gran Tour". Si perdían esta oportunidad en 1977, la humanidad tendría que esperar hasta el año 2153 para intentarlo de nuevo.',
-      'La sonda Voyager 2 despegó el 20 de agosto de 1977. La Voyager 1 fue lanzada dieciséis días después. La Voyager 1 viajaba en una trayectoria más rápida y directa hacia Júpiter y Saturno, por lo que alcanzaría estos planetas antes. Ambas naves fueron impulsadas por cohetes Titan IIIE-Centaur, que las aceleraron a altas velocidades para escapar de la gravedad de la Tierra.',
-      'El diseño de las naves Voyager es una maravilla de la ingeniería. No tenían los microchips modernos que usamos hoy. El procesador de tu teléfono celular es millones de veces más potente que las computadoras a bordo de estas sondas. Sin embargo, su diseño era tan robusto que han sobrevivido más de cuatro décadas en el vacío del espacio. Tienen antenas grandes para comunicarse y cámaras que nos dieron vistas detalladas de los mundos exteriores.',
-      'El viaje comenzó con gran expectación. Los ingenieros del Laboratorio de Propulsión a Chorro trabajaron para asegurar que todo funcionara. Cada comando enviado a la nave tardaba minutos en llegar, y ese retraso aumentaría a medida que las naves se alejaran. Esto significaba que las naves tenían que ser lo suficientemente autónomas para cuidar de sí mismas en emergencias. Fue un concepto revolucionario para la exploración espacial.',
-      'El lanzamiento en sí fue un espectáculo de poder. A medida que las sondas ascendían a través de la atmósfera, llevaban instrumentos científicos avanzados y la curiosidad de la humanidad. Estaban a punto de embarcarse en una gran aventura, un viaje sin retorno hacia el cosmos para estudiar el sistema solar exterior.'
+    "id": "lanzamiento-1977",
+    "title": "El Lanzamiento",
+    "color": "#FFD54F",
+    "btnImage": "/assets/interestelar/infographic_m6/btn_lanzamiento-1977.jpg",
+    "image": "/assets/interestelar/infographic_m6/hero_lanzamiento-1977.jpg",
+    "content": [
+      "En el verano de 1977, la NASA inauguró una de las mayores hazañas científicas de la era espacial desde la base de Cabo Cañaveral en Florida. El objetivo era enviar dos naves robóticas gemelas hacia los confines inexplorados del sistema solar exterior aprovechando una alineación geométrica de los cuatro mundos gigantes gaseosos que ocurre únicamente una vez cada 175 años.",
+      "Curiosamente, la sonda Voyager 2 fue lanzada primero, el 20 de agosto de 1977, impulsada por un cohete Titan IIIE-Centaur. Se le asignó una trayectoria balística más abierta que le permitiría sobrevolar Júpiter, Saturno, Urano y Neptuno. Su hermana gemela, la Voyager 1, despegó dos semanas más tarde, el 5 de septiembre de 1977, siguiendo una trayectoria más directa y veloz.",
+      "El cohete Titan IIIE incorporaba una tercera etapa criogénica Centaur de hidrógeno líquido y una cuarta etapa de combustible sólido Star-37E. Esta potente combinación de propulsores impartió a las naves una energía de inyección hiperbólica C3 superior a los ciento cinco kilómetros cuadrados por segundo al cuadrado, permitiéndoles cruzar la órbita de la Luna en menos de diez horas de vuelo.",
+      "El diseño mecánico de cada sonda Voyager fue concebido para operar de manera autónoma en un entorno cósmico gélido y hostil a miles de millones de kilómetros de cualquier asistencia humana. Su estructura principal está dominada por una gigantesca antena parabólica reflectora de alta ganancia de 3.7 metros de diámetro, construida con fibra de grafito ultraligera.",
+      "A pesar de contar con computadoras de a bordo cuya memoria total apenas alcanzaba unos sesenta y ocho kilobytes —una capacidad de cómputo millones de veces inferior a la de cualquier teléfono inteligente moderno—, los ingenieros del Laboratorio de Propulsión a Chorro (JPL) programaron rutinas de autodiagnóstico capaces de solucionar fallos mecánicos imprevistos en ruta."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El programa original del Gran Tour fue cancelado por ser muy caro, siendo reemplazado por la misión "Mariner Jupiter-Saturn". Los ingenieros diseñaron en secreto las naves para que pudieran sobrevivir el viaje completo hasta Urano y Neptuno. Gracias a esa previsión, logramos visitar los cuatro gigantes gaseosos.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Para escapar de la gravedad terrestre, el cohete Titán-Centaur les dio a las Voyager una velocidad de escape de 14 kilómetros por segundo. A esa velocidad, podrías viajar de Nueva York a Los Ángeles en menos de cinco minutos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La alineación planetaria de Júpiter, Saturno, Urano y Neptuno fue calculada por el joven matemático del JPL Gary Flandro en 1965 mientras trabajaba en el diseño de trayectorias gravitatorias. Descubrió que los planetas no volverían a colocarse en esa misma posición geométrica favorable hasta mediados del siglo XXII."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La etapa Centaur D-1T empleó dos motores Pratt & Whitney RL10A-3-3 que quemaban hidrógeno y oxígeno líquidos con un impulso específico en el vacío de 444 segundos. Esta configuración imprimió una velocidad de escape de 15.3 kilómetros por segundo respecto a la superficie terrestre en el momento de la desconexión."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m6/banner_lanzamiento-1977.webp',
-    bannerCaption: 'Lanzamiento 1977: Voyager 1 y 2 despegaron con pocas semanas de diferencia iniciando la gran gira planetaria',
-    fact: 'Las Voyager utilizan computadoras con apenas 69 kilobytes de memoria. Aún con esa memoria limitada, las naves son capaces de ejecutar maniobras complejas, recopilar datos valiosos y transmitirlos a la Tierra a miles de millones de kilómetros.',
+    "bannerImage": "/assets/interestelar/infographic_m6/banner_lanzamiento-1977.webp",
+    "bannerCaption": "Lanzamiento 1977: Voyager 1 y 2 despegaron con pocas semanas de diferencia iniciando la gran gira planetaria",
+    "fact": "El programa Voyager de la NASA aprovechó una alineación geométrica de los cuatro gigantes gaseosos que ocurre una vez cada 175 años. Utilizando cohetes Titan IIIE-Centaur en 1977, Voyager 2 despegó el 20 de agosto y Voyager 1 el 5 de septiembre, alcanzando una energía hiperbólica C3 récord superior a 105 km²/s²."
   },
   {
-    id: 'gran-tour-planetario',
-    title: 'El Gran Tour',
-    color: '#2979FF',
-    btnImage: '/assets/interestelar/infographic_m6/btn_gran-tour-planetario.jpg',
-    image: '/assets/interestelar/infographic_m6/hero_gran-tour-planetario.jpg',
-    content: [
-      'El Gran Tour Planetario utilizó una técnica llamada asistencia gravitatoria. En lugar de usar motores grandes para viajar, las sondas robaron un poco de la energía orbital de los planetas gigantes. Esto les dio un impulso extra, acelerando su velocidad hacia el siguiente destino.',
-      'La Voyager 1 visitó Júpiter en 1979 y Saturno en 1980. Descubrió volcanes activos en la luna Ío y anillos delgados alrededor de Júpiter. En Saturno, se acercó a la luna Titán, un mundo envuelto en nubes de smog donde llueven hidrocarburos líquidos. Esta trayectoria desvió a la nave fuera del plano del sistema solar, impidiendo que visitara Urano y Neptuno.',
-      'La Voyager 2 continuó el Gran Tour. Pasó por Júpiter y Saturno, y luego se dirigió hacia Urano en 1986. Allí descubrió diez nuevas lunas, dos anillos y un campo magnético inclinado. Fue la primera vez que una nave humana visitó este gigante de hielo, revelando un sistema complejo y dinámico.',
-      'En 1989, la Voyager 2 llegó a Neptuno. Descubrió la Gran Mancha Oscura, una tormenta gigante, y géiseres de nitrógeno líquido en la luna Tritón. Después de Neptuno, la Voyager 2 fue lanzada en una trayectoria hacia el espacio interestelar. Hasta hoy, ninguna otra nave espacial ha vuelto a visitar Urano o Neptuno.',
-      'Las imágenes enviadas durante este Gran Tour cambiaron nuestra comprensión de los planetas exteriores. Antes de las Voyager, se veían como esferas simples. Las sondas nos revelaron planetas complejos con sistemas de anillos y lunas diversas. Esta hazaña se logró gracias a la coreografía orbital calculada por matemáticos usando computadoras de los años 70.'
+    "id": "gran-tour-planetario",
+    "title": "El Gran Tour",
+    "color": "#2979FF",
+    "btnImage": "/assets/interestelar/infographic_m6/btn_gran-tour-planetario.jpg",
+    "image": "/assets/interestelar/infographic_m6/hero_gran-tour-planetario.jpg",
+    "content": [
+      "El periplo de las naves Voyager por los planetas exteriores representó una obra maestra de la mecánica celeste aplicada. Los ingenieros de la misión utilizaron la técnica de asistencia gravitatoria, o efecto honda planetario, para impulsar a las naves de un planeta al siguiente sin necesidad de transportar pesados cargamentos de propelente químico en sus depósitos.",
+      "Al sobrevolar un planeta gigante por detrás en su trayectoria orbital, la nave aprovecha el colosal pozo de potencial gravitatorio del mundo para robar una fracción infinitesimal del momento angular planetario. Este intercambio de energía desvía y acelera drásticamente a la sonda espacial respecto al Sol, catapultándola hacia su próximo objetivo a velocidades muy superiores.",
+      "Voyager 1 alcanzó el sistema de Júpiter en marzo de 1979 y Saturno en noviembre de 1980. En Júpiter, las imágenes de la nave descubrieron con asombro volcanes de azufre activos en erupción sobre la luna Ío —detectados por la ingeniera Linda Morabito— y revelaron una corteza agrietada de hielo puro en Europa que ocultaba un océano líquido global bajo su superficie.",
+      "En Saturno, Voyager 1 realizó una maniobra prioritaria para estudiar de cerca la densa atmósfera anaranjada de Titán, rica en nitrógeno e hidrocarburos. La gravedad de Titán desvió la trayectoria de Voyager 1 fuera del plano de la eclíptica hacia el norte galáctico, impidiéndole continuar hacia otros planetas pero lanzándola en una ruta directa hacia el medio interestelar.",
+      "Voyager 2 completó el Gran Tour en su totalidad. Tras estudiar Júpiter y Saturno, prosiguió su vuelo hacia el gélido gigante de hielo Urano en enero de 1986, descubriendo diez lunas nuevas y dos anillos oscuros. En agosto de 1989 sobrevoló Neptuno a escasos cuatro mil kilómetros sobre su polo norte, fotografiando la Gran Mancha Oscura y géiseres activos de nitrógeno en Tritón."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La asistencia gravitatoria en Júpiter le dio a las Voyager un aumento de velocidad de más de 35,000 kilómetros por hora. Al robar esta energía orbital a Júpiter, el planeta se ralentizó en su órbita por una cantidad minúscula e imperceptible.' },
-      { label: 'En la Misión', icon: 'zap', text: 'Durante el encuentro de la Voyager 2 con Neptuno, la luz del sol era muy débil, lo que exigía exposiciones largas para tomar fotos. Para evitar que las imágenes salieran borrosas debido a la velocidad, los ingenieros programaron los propulsores para girar la nave espacial y compensar el movimiento.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El descubrimiento de volcanes activos en Ío por la Voyager 1 fue el primer hallazgo de vulcanismo activo fuera de la Tierra en toda la historia. La ingeniera Linda Morabito advirtió una extraña nube en forma de hongo en el borde de la luna mientras procesaba fotografías para calibrar la navegación óptica de la sonda."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Durante el sobrevuelo de Júpiter, la Voyager 1 experimentó un incremento de velocidad heliocéntrica de aproximadamente 13 kilómetros por segundo mediante asistencia gravitatoria pura, mientras que la rotación orbital de Júpiter se ralentizó en una magnitud teórica imperceptible de 10⁻²⁴ segundos por año."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m6/banner_gran-tour-planetario.webp',
-    bannerCaption: 'La Gran Gira Planetaria: alineación de 175 años que permitió visitar Júpiter, Saturno, Urano y Neptuno',
-    fact: 'Gracias a las asistencias gravitatorias, las naves Voyager redujeron el tiempo de viaje a Neptuno de 30 años a solo 12 años.',
+    "bannerImage": "/assets/interestelar/infographic_m6/banner_gran-tour-planetario.webp",
+    "bannerCaption": "La Gran Gira Planetaria: alineación de 175 años que permitió visitar Júpiter, Saturno, Urano y Neptuno",
+    "fact": "Mediante asistencias gravitatorias consecutivas en Júpiter y Saturno, las sondas Voyager transformaron la planetología moderna. Voyager 1 descubrió el vulcanismo activo de Ío y la atmósfera de Titán, mientras que Voyager 2 culminó el Gran Tour visitando Urano en 1986 y Neptuno en 1989 antes de enfilar hacia el vacío interestelar."
   },
   {
-    id: 'disco-de-oro',
-    title: 'El Disco de Oro',
-    color: '#FF8A65',
-    btnImage: '/assets/interestelar/infographic_m6/btn_disco-de-oro.jpg',
-    image: '/assets/interestelar/infographic_m6/hero_disco-de-oro.jpg',
-    content: [
-      '¿Qué mensaje enviarías a una civilización alienígena? Esa fue la pregunta que la NASA le hizo al astrónomo Carl Sagan antes del lanzamiento de las Voyager. Su solución fue crear el Disco de Oro: un disco fonográfico de cobre chapado en oro de 12 pulgadas. Contiene sonidos e imágenes seleccionados para retratar la diversidad de la vida y la cultura en la Tierra. Es un mensaje en una botella lanzado al océano cósmico.',
-      'El disco contiene saludos hablados en 55 idiomas diferentes, desde antiguos lenguajes hasta idiomas modernos. Además de voces humanas, el disco incluye una "sinfonía de la Tierra" con sonidos de volcanes, lluvia, el canto de una ballena, un beso y el latido de un corazón. Estos sonidos muestran cómo es nuestro hogar.',
-      'La sección musical del disco dura casi 90 minutos y abarca varias épocas históricas. Incluye piezas clásicas de Bach, Mozart y Beethoven, además de música tradicional de diferentes países y ritmos modernos como el de Chuck Berry. Carl Sagan quería incluir música de The Beatles, pero no se obtuvieron los derechos de autor para el espacio exterior.',
-      'El Disco de Oro también contiene 115 imágenes codificadas de forma analógica. Estas imágenes muestran diagramas científicos, el ADN humano, paisajes, animales y personas realizando actividades cotidianas. Para evitar malentendidos, se excluyeron imágenes de guerra y violencia, mostrando una representación idealizada de la humanidad.',
-      'En la cubierta exterior del disco protector, hay instrucciones grabadas con símbolos científicos para explicar cómo reproducir el disco. También incluye un mapa de la posición de nuestro sistema solar en relación a 14 púlsares, proporcionando una dirección cósmica para encontrar la Tierra. Además, lleva un trozo de uranio-238, cuya radiactividad permitirá calcular cuánto tiempo ha pasado desde el lanzamiento.'
+    "id": "disco-de-oro",
+    "title": "El Disco de Oro",
+    "color": "#FF8A65",
+    "btnImage": "/assets/interestelar/infographic_m6/btn_disco-de-oro.jpg",
+    "image": "/assets/interestelar/infographic_m6/hero_disco-de-oro.jpg",
+    "content": [
+      "Conscientes de que las dos sondas Voyager navegarían por el espacio interestelar durante millones o miles de millones de años mucho después de que la civilización terrestre pudiera haberse extinguido, la NASA aprobó la instalación de un mensaje interestelar formal a bordo de cada una de las dos naves cósmicas. Este disco fonográfico de cobre bañado en oro fue diseñado por un comité encabezado por el célebre astrónomo y divulgador Carl Sagan.",
+      "El proyecto fue liderado por un comité científico presidido por el célebre astrónomo Carl Sagan de la Universidad de Cornell, junto a Ann Druyan, Frank Drake y Timothy Ferris. Diseñaron el Disco de Oro de las Voyager (The Golden Record), un fonógrafo de doce pulgadas fabricado en cobre bañado en oro y protegido por una carcasa hermética de aluminio anodizado.",
+      "En la cubierta exterior del disco se grabaron diagramas explicativos concebidos como un manual de instrucciones universal en lenguaje físico y matemático. Incluye un mapa de catorce púlsares milimétricos que triangulan la posición exacta del Sol respecto a fuentes periódicas galácticas y el esquema de la transición hiperfina del átomo de hidrógeno como estándar de tiempo y escala métrica.",
+      "El disco contiene 115 fotografías y diagramas científicos codificados en señales analógicas de televisión que ilustran la anatomía humana, el ADN, la biosfera, paisajes terrestres, ciudades y tecnologías. Asimismo, alberga saludos verbales en cincuenta y cinco idiomas humanos antiguos y modernos, un mensaje de bienvenida de las Naciones Unidas y el canto ancestral de ballenas jorobadas.",
+      "La sección sonora incluye una biblioteca acústica de los Sonidos de la Tierra: truenos de tormentas, olas rompiendo en costas rocosas, viento en bosques, pasos humanos, el motor de un tren a vapor y el despegue de un cohete Saturno V. La música ocupa noventa minutos con composiciones maestras de Bach, Beethoven, Mozart, Stravinski, Chuck Berry, Blind Willie Johnson y piezas folclóricas de los cinco continentes."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La grabación incluyó las ondas cerebrales de Ann Druyan, quien trabajaba en el proyecto y se había comprometido con Carl Sagan pocos días antes. De esta manera, el sonido del amor humano viaja actualmente hacia las estrellas.' },
-      { label: 'En la Cultura Pop', icon: 'zap', text: 'En una broma de Saturday Night Live en 1978, Steve Martin anunció que los alienígenas habían respondido al Disco de Oro. El supuesto mensaje extraterrestre decía: "Envíen más Chuck Berry".' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Junto al disco se incluyó una aguja fonográfica de zafiro puro dentro de la carcasa protectora con instrucciones visuales sobre cómo hacer girar el disco a una velocidad exacta de 16.66 revoluciones por minuto para reproducir el audio analógico grabado en los surcos metálicos, complementadas con diagramas grabados con precisión atómica sobre la transición hiperfina del hidrógeno."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La cubierta del disco contiene una capa galvanizada ultrafina de uranio-238 puro electrodepositado. Debido a que el U-238 decae mediante emisión alfa con una vida media conocida de 4.468 millones de años, cualquier civilización alienígena receptora podrá calcular la fecha exacta de fabricación midiendo la proporción residual de plomo."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m6/banner_disco-de-oro.webp',
-    bannerCaption: 'El Disco de Oro: 116 imágenes y sonidos de la Tierra enviados al cosmos como mensaje de la humanidad',
-    fact: 'El disco está fabricado con protección de aluminio y se espera que dure mil millones de años en el vacío del espacio sin degradarse significativamente. El Disco de Oro podría sobrevivir a la especie humana.',
+    "bannerImage": "/assets/interestelar/infographic_m6/banner_disco-de-oro.webp",
+    "bannerCaption": "El Disco de Oro: 116 imágenes y sonidos de la Tierra enviados al cosmos como mensaje de la humanidad",
+    "fact": "El Disco de Oro viaja montado en ambas sondas Voyager como un mensaje imperecedero de doce pulgadas bañado en oro. Diseñado por Carl Sagan y su equipo, contiene 115 imágenes codificadas, saludos en 55 lenguas humanas, sonidos terrestres y 90 minutos de música mundial, junto con un reloj radiactivo de uranio-238 para datar la misión."
   },
   {
-    id: 'heliopausa-cruce',
-    title: 'Cruzando la Heliopausa',
-    color: '#00E676',
-    btnImage: '/assets/interestelar/infographic_m6/btn_heliopausa-cruce.jpg',
-    image: '/assets/interestelar/infographic_m6/hero_heliopausa-cruce.jpg',
-    content: [
-      'Nuestro Sol produce un viento continuo de partículas calientes que infla una burbuja protectora llamada heliosfera. Esta heliosfera nos protege contra los rayos cósmicos que provienen del espacio profundo. El borde donde este viento solar choca con el plasma del medio interestelar se llama heliopausa.',
-      'Nadie sabía a qué distancia se encontraba la heliopausa, porque ninguna nave humana había llegado tan lejos. El 25 de agosto de 2012, la sonda Voyager 1 hizo historia. Estaba a 121.6 Unidades Astronómicas de distancia. De repente, los científicos notaron un cambio radical en el entorno magnético.',
-      'Los instrumentos de la Voyager 1 mostraron que las partículas solares disminuyeron drásticamente. Al mismo tiempo, los rayos cósmicos galácticos aumentaron. La prueba concluyente llegó cuando el instrumento de ondas de plasma captó el sonido del gas circundante. La vibración indicaba que el plasma era más denso, la firma del medio interestelar.',
-      'La Voyager 2 viajó en una dirección diferente y cruzó la heliopausa el 5 de noviembre de 2018, a 119 Unidades Astronómicas. A diferencia de su hermana, la Voyager 2 todavía tenía su instrumento de plasma funcional. Esto permitió a los científicos observar cómo el viento solar interactúa y se mezcla con el plasma interestelar.',
-      'Cruzar la heliopausa sigue siendo un hito histórico para la humanidad. Estas naves construidas en los años 70 lograron romper la burbuja magnética del Sol y entrar en la galaxia Vía Láctea. Nos enseñaron que la heliopausa es una frontera compleja, cambiante y turbulenta.'
+    "id": "heliopausa-cruce",
+    "title": "Cruzando la Heliopausa",
+    "color": "#00E676",
+    "btnImage": "/assets/interestelar/infographic_m6/btn_heliopausa-cruce.jpg",
+    "image": "/assets/interestelar/infographic_m6/hero_heliopausa-cruce.jpg",
+    "content": [
+      "A lo largo de su viaje hacia el exterior, las sondas Voyager se mantuvieron inmersas dentro de la heliosfera, una gigantesca burbuja magnética de gas ionizado soplada por el viento solar que fluye desde nuestra estrella a velocidades supersónicas de cientos de kilómetros por segundo, protegiendo a los planetas de la radiación cósmica galáctica. Esta frontera dinámica se extiende mucho más allá de la órbita de Plutón, frenando partículas altamente energéticas del medio interestelar.",
+      "En la periferia remota de esta burbuja, el viento solar colisiona contra el gas interestelar frío y denso. Primero atraviesa el frente de choque de terminación (termination shock), donde el flujo solar desacelera bruscamente de régimen supersónico a subsónico. Más allá se extiende la heliofunda (heliosheath), una zona turbulenta de transición magnética.",
+      "El límite definitivo e impenetrable entre la atmósfera solar y el medio interestelar local es la heliopausa. En esta frontera astrofísica crítica, la presión dinámica del viento solar se iguala con la presión combinada del gas ionizado y los campos magnéticos del medio interestelar galáctico, sellando la frontera del dominio estelar directo del Sol.",
+      "El 25 de agosto de 2012, los sensores de la Voyager 1 registraron un cambio físico monumental a una distancia de 121.6 unidades astronómicas del Sol (unos 18.200 millones de kilómetros). El detector de rayos cósmicos liderado por el astrofísico Edward Stone observó una caída abrupta del cien por ciento en las partículas solares de baja energía. Al mismo tiempo, las lecturas de rayos cósmicos de origen galáctico se dispararon, confirmando el cruce histórico de la heliopausa.",
+      "Simultáneamente, el flujo de rayos cósmicos galácticos de alta energía procedentes de supernovas lejanas se disparó en más de un treinta por ciento. Semanas después, una oscilación provocada por una erupción solar previa permitió al instrumento de ondas de plasma medir una densidad electrónica de 0.08 electrones por centímetro cúbico, cuarenta veces superior a la heliosfera. Voyager 1 había penetrado formalmente en el medio interestelar."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La heliosfera tiene forma de cometa. Mientras el sistema solar viaja a través de la galaxia a 720,000 kilómetros por hora, la heliosfera choca contra el medio interestelar, creando una curva por delante y dejando una cola magnética por detrás.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Aunque las naves Voyager han cruzado la heliopausa, todavía no han salido del sistema solar. Los astrónomos definen el límite real del sistema solar como el borde exterior de la Nube de Oort. Las Voyager tardarán unos 30,000 años más en alcanzar y cruzar ese límite.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante meses antes del cruce histórico, los científicos discutían acaloradamente si la Voyager 1 ya había salido del sistema solar o si se encontraba en una región magnética desconocida. El veredicto final llegó cuando una llamarada solar tardó un año en alcanzar a la sonda y provocó que el plasma interestelar denso vibrara como una campana cósmica."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El instrumento PWS de ondas de plasma de Voyager 1 midió frecuencias de oscilación de plasma de 2.6 a 3.1 kilohercios, lo que permitió deducir una densidad electrónica local de ne ≈ 0.08 cm⁻³, característica inequívoca del medio interestelar no perturbado por el viento solar, ofreciendo la primera medición empírica directa de la materia situada fuera de la influencia heliosférica del Sol."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m6/banner_heliopausa-cruce.webp',
-    bannerCaption: 'Cruce de la heliopausa: Voyager 1 entró al espacio interestelar en agosto 2012, primera vez en la historia',
-    fact: 'El instrumento de ondas de plasma de la Voyager funciona escuchando fluctuaciones electromagnéticas. Cuando estas frecuencias se traducen a sonido, el cruce de la heliopausa suena como un zumbido cósmico agudo.',
+    "bannerImage": "/assets/interestelar/infographic_m6/banner_heliopausa-cruce.webp",
+    "bannerCaption": "Cruce de la heliopausa: Voyager 1 entró al espacio interestelar en agosto 2012, primera vez en la historia",
+    "fact": "Voyager 1 cruzó formalmente la heliopausa el 25 de agosto de 2012 a 121.6 UA del Sol, convirtiéndose en el primer artefacto humano en penetrar en el medio interestelar. Voyager 2 confirmó el cruce el 5 de noviembre de 2018 a 119 UA, registrando una densidad de plasma de 0.08 e⁻/cm³ y un salto en los rayos cósmicos galácticos."
   },
   {
-    id: 'espacio-interestelar',
-    title: 'En el Espacio Interestelar',
-    color: '#B388FF',
-    btnImage: '/assets/interestelar/infographic_m6/btn_espacio-interestelar.jpg',
-    image: '/assets/interestelar/infographic_m6/hero_espacio-interestelar.jpg',
-    content: [
-      '¿Qué están encontrando las sondas Voyager 1 y 2 en el espacio interestelar? A menudo pensamos en el espacio profundo como un vacío absoluto. Sin embargo, la realidad es diferente: el espacio entre las estrellas es un lugar dinámico, lleno de materia invisible que forma las nubes de las que nacen nuevas estrellas y planetas.',
-      'Lo primero que notaron las sondas fue que el plasma interestelar es más denso que el viento solar dentro de nuestra heliosfera. Es como soplar aire dentro de una piscina de agua: la burbuja de aire es menos densa que el agua. El medio interestelar está comprimiendo la heliosfera de nuestro Sol desde el exterior con mayor presión.',
-      'Las naves también experimentaron un aumento en el bombardeo de rayos cósmicos galácticos. Estas partículas subatómicas viajan a velocidades cercanas a la de la luz y son creadas por supernovas en otras partes de la Vía Láctea. Sin el escudo del viento solar, el espacio interestelar es un entorno de radiación hostil para la vida biológica.',
-      'Otra revelación es cómo se comporta el campo magnético en el espacio interestelar. Los científicos esperaban que, al cruzar la heliopausa, las naves detectarían un cambio en la dirección de las líneas del campo magnético galáctico. Sorprendentemente, no fue así. Las líneas magnéticas del medio interestelar parecen alineadas en paralelo con el campo magnético de nuestro Sol.',
-      'A medida que las Voyager se adentran en la galaxia, están viajando a través de la Nube Interestelar Local, una masa de polvo y gas de 30 años luz de ancho. Cada dato que estas naves envían a la Tierra es una ventana inestimable a la galaxia en la que vivimos.'
+    "id": "espacio-interestelar",
+    "title": "En el Espacio Interestelar",
+    "color": "#B388FF",
+    "btnImage": "/assets/interestelar/infographic_m6/btn_espacio-interestelar.jpg",
+    "image": "/assets/interestelar/infographic_m6/hero_espacio-interestelar.jpg",
+    "content": [
+      "Navegar por el espacio interestelar no significa haber abandonado por completo la influencia gravitatoria del Sol. Aunque las sondas Voyager se encuentran fuera del alcance del viento solar en términos de física de plasmas, la atracción gravitacional de nuestra estrella domina una región inmensamente más vasta que se extiende a lo largo de un año luz de radio.",
+      "Las sondas tardarán aproximadamente trescientos años en alcanzar el borde interno de la nube de Oort, el colosal almacén esférico que alberga billones de cometas primordiales congelados. Cruzar de lado a lado la espesura de esta nube helada les exigirá unos treinta mil años de navegación balística continua a sus velocidades actuales. Este largo periplo interestelar demuestra las dimensiones abrumadoras del sistema solar exterior más allá de los planetas conocidos.",
+      "Actualmente, la sonda Voyager 1 se desplaza a una velocidad heliocéntrica de aproximadamente 16.9 kilómetros por segundo (equivalente a unas 3.56 unidades astronómicas por año) alejándose hacia la constelación de Ofiuco. Por su parte, la Voyager 2 se desplaza a 15.3 kilómetros por segundo (unas 3.23 unidades astronómicas por año) con rumbo hacia la constelación de Pavo.",
+      "La distancia que las separa de la Tierra es tan monumental que las comunicaciones por radio operan con retrasos asombrosos gobernados por la velocidad constante de la luz en el vacío. Una señal electromagnética enviada desde las antenas terrestres de la Red de Espacio Profundo de la NASA tarda más de veintidós horas y media en alcanzar a la Voyager 1, y otras veintidós horas y media en retornar con su respuesta.",
+      "Para captar las tenues transmisiones de radio de las sondas, cuya potencia de emisión es de tan solo veintidós vatios —equivalente a la bombilla pequeña de un refrigerador doméstico—, la NASA debe sincronizar las gigantescas antenas parabólicas de setenta metros de diámetro situadas en Madrid, California y Canberra. Estas colosales estaciones de la Red del Espacio Profundo (DSN) aplican amplificadores criogénicos maser para extraer los datos del ruido cósmico."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La señal de radio de las Voyager, transmitida con la energía equivalente a una pequeña bombilla de 22 vatios, tarda casi 23 horas viajando a la velocidad de la luz para llegar a las antenas de la Red del Espacio Profundo en la Tierra.' },
-      { label: 'En la Misión', icon: 'zap', text: 'Para captar las débiles señales de las naves Voyager, la NASA usa antenas colosales de 70 metros de diámetro. Deben enfriar los componentes electrónicos a temperaturas cercanas al cero absoluto para reducir el ruido térmico.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La señal de radio recibida en la Tierra de la Voyager 1 llega con una potencia ridícula de una fracción de una trillonésima de vatio (10⁻²⁰ vatios). La energía total de todas las señales recibidas desde su lanzamiento en 1977 no alcanzaría para encender una vela durante medio segundo, exigiendo el procesado digital de señales más sensible y sofisticado jamás diseñado por la ingeniería de telecomunicaciones."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "A una distancia heliocéntrica superior a 160 unidades astronómicas, el tiempo de propagación de la señal de radio unidireccional de la Voyager 1 supera las 22.5 horas luz. Las correcciones Doppler demuestran que la velocidad asintótica se mantiene estable con variaciones gravitatorias residuales inferiores a milímetros por segundo."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m6/banner_espacio-interestelar.webp',
-    bannerCaption: 'En el espacio interestelar: Voyager mide en tiempo real el medio interestelar a más de 163 UA del Sol',
-    fact: 'El medio interestelar donde se encuentran las sondas Voyager no está oscuro. Está lleno del brillo ultravioleta emitido por estrellas jóvenes cercanas en nuestra galaxia Vía Láctea.',
+    "bannerImage": "/assets/interestelar/infographic_m6/banner_espacio-interestelar.webp",
+    "bannerCaption": "En el espacio interestelar: Voyager mide en tiempo real el medio interestelar a más de 163 UA del Sol",
+    "fact": "En el medio interestelar, Voyager 1 viaja a 16.9 km/s (3.56 UA/año) a más de 160 UA del Sol, mientras que Voyager 2 avanza a 15.3 km/s. Una señal de radio a la velocidad de la luz tarda más de 22 horas y media en cruzar la distancia unidireccional entre la Tierra y Voyager 1, requiriendo antenas parabólicas de 70 metros de la DSN."
   },
   {
-    id: 'energia-plutonio',
-    title: 'Energía de Plutonio',
-    color: '#FFD740',
-    btnImage: '/assets/interestelar/infographic_m6/btn_energia-plutonio.jpg',
-    image: '/assets/interestelar/infographic_m6/hero_energia-plutonio.jpg',
-    content: [
-      '¿Cómo es posible que una nave espacial de los años 70 siga funcionando hoy en el espacio profundo? No pueden usar paneles solares porque están tan lejos que el Sol se ve solo como un punto minúsculo; no proporciona suficiente luz para generar electricidad. La respuesta es la energía nuclear. Las naves Voyager están impulsadas por tres Generadores Termoeléctricos de Radioisótopos (RTGs) que producen potencia eléctrica.',
-      'Un RTG no es como un reactor nuclear. No hay engranajes que giren ni turbinas móviles. Contienen pastillas de dióxido de plutonio-238. A medida que este material radiactivo se descompone de forma natural, emite una cantidad constante de calor. Dispositivos especiales llamados termopares convierten este calor directamente en electricidad de corriente continua para la sonda.',
-      'El plutonio-238 es un isótopo ideal para esta misión porque tiene una vida media de 87.7 años. Esto significa que cada nueve décadas, la cantidad de calor generado por la pastilla disminuye a la mitad. Por lo tanto, el generador RTG de las Voyager produce aproximadamente 4 vatios menos de potencia eléctrica cada año.',
-      'Esta pérdida de energía eléctrica significa que el equipo de ingenieros de la NASA tiene que gestionar la energía de forma estricta. Tienen que decidir qué instrumentos apagar para ahorrar vatios. A lo largo de los años, han apagado sistemáticamente cámaras fotográficas, calentadores y muchos sensores para mantener las sondas vivas.',
-      'A pesar de esta lenta pérdida de energía nuclear, la NASA predice que las naves tendrán energía eléctrica residual para que al menos un par de instrumentos puedan recopilar y transmitir datos científicos hasta la década de 2025 o, con suerte, hasta 2030.'
+    "id": "energia-plutonio",
+    "title": "Energía de Plutonio",
+    "color": "#FFD740",
+    "btnImage": "/assets/interestelar/infographic_m6/btn_energia-plutonio.jpg",
+    "image": "/assets/interestelar/infographic_m6/hero_energia-plutonio.jpg",
+    "content": [
+      "A distancias superiores a las cien unidades astronómicas del Sol, el uso de paneles solares fotovoltaicos es absolutamente inviable. A esa distancia cósmica, el Sol no se percibe como un disco térmico cegador, sino como una estrella puntual intensamente brillante que suministra una diezmilésima parte de la luz que baña a nuestro planeta natal. En ese gélido vacío espacial, únicamente la desintegración radiactiva controlada puede proveer el calor y la electricidad necesarios.",
+      "Para suministrar energía eléctrica ininterrumpida a sus ordenadores, transmisores y sensores durante décadas, cada nave Voyager fue equipada con tres generadores termoeléctricos de radioisótopos (RTG, por sus siglas en inglés) montados sobre un brazo mecánico extensible alejado deliberadamente de los instrumentos científicos más delicados. Este distanciamiento geométrico impidió que la radiación y el calor emitidos interfirieran con los magnetómetros y detectores de partículas.",
+      "Cada RTG contiene esferas cerámicas compactas de dióxido de plutonio enriquecidas con el isótopo radiactivo plutonio-238 (Pu-238). Este isótopo inestable decae emitiendo partículas alfa de alta energía que son absorbidas por el propio material blindado, generando un calor espontáneo y constante superior a los setecientos grados Celsius. Pares de termopares de silicio-germanio convierten directamente este gradiente térmico en corriente eléctrica continua sin piezas móviles.",
+      "Alrededor del núcleo radiactivo caliente se disponen cientos de termopares fabricados con una aleación semiconductora de silicio y germanio. Basándose en el efecto físico Seebeck, los termopares convierten directamente el gradiente térmico entre el núcleo ardiente de plutonio y el gélido frío del espacio circundante en corriente eléctrica continua útil.",
+      "En el momento del despegue en 1977, los tres generadores térmicos de cada nave suministraban cuatrocientos setenta vatios de potencia eléctrica. Sin embargo, el plutonio-238 tiene una vida media de 87.7 años y los termopares sufren degradación atómica paulatina, lo que reduce la potencia disponible en unos cuatro vatios por año. Para prolongar la vida útil de las sondas, los ingenieros desconectaron progresivamente los calentadores e instrumentos no esenciales."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La situación es tan crítica con la energía que los ingenieros de la NASA apagaron los calefactores de los instrumentos para ahorrar vatios. Algunos componentes han seguido funcionando bien incluso en el frío extremo del espacio interestelar.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El plutonio-238 usado en estas misiones no es el isótopo utilizado para fabricar armas nucleares (Plutonio-239). El Pu-238 es valorado por la comunidad científica por emitir calor constante sin radiaciones penetrantes dañinas para los instrumentos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las famosas cámaras fotográficas de ambas sondas Voyager fueron desconectadas definitivamente por la NASA en 1990 poco después de tomar el «Pálido Punto Azul». Mantenerlas calientes en el espacio consumía demasiada electricidad que era indispensable reservar para los detectores de partículas y la antena principal."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Cada unidad MHW-RTG contiene 4.5 kilogramos de óxido de plutonio-238 distribuidos en veinticuatro esferas de combustible cerámico prensado. El efecto Seebeck genera electricidad estática con una eficiencia de conversión térmica a eléctrica de aproximadamente 6.6 por ciento en circuito cerrado, garantizando un funcionamiento termoeléctrico ininterrumpido durante más de medio siglo en el vacío espacial."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m6/banner_energia-plutonio.webp',
-    bannerCaption: 'Energía de plutonio: los RTG de Voyager convierten el calor del Pu-238 en electricidad, ahora con menos de 40W',
-    fact: 'El diseño de los generadores RTGs en las sondas Voyager no tiene ninguna pieza móvil. Por esta razón de ingeniería, estos aparatos jamás sufren del típico desgaste mecánico por fricción que destruiría un motor en menos de una década.',
+    "bannerImage": "/assets/interestelar/infographic_m6/banner_energia-plutonio.webp",
+    "bannerCaption": "Energía de plutonio: los RTG de Voyager convierten el calor del Pu-238 en electricidad, ahora con menos de 40W",
+    "fact": "Las sondas Voyager funcionan con tres generadores termoeléctricos de radioisótopos (RTG) cargados con plutonio-238, cuya desintegración alfa con vida media de 87.7 años genera calor convertido en electricidad mediante termopares de silicio-germanio. Su potencia decrece ~4 W al año, permitiendo su operación científica hasta cerca de 2030."
   },
   {
-    id: 'legado-humanidad',
-    title: 'El Legado',
-    color: '#80CBC4',
-    btnImage: '/assets/interestelar/infographic_m6/btn_legado-humanidad.jpg',
-    image: '/assets/interestelar/infographic_m6/hero_legado-humanidad.jpg',
-    content: [
-      'Las misiones Voyager 1 y 2 representan uno de los mayores logros tecnológicos y científicos de la historia humana. Han ampliado de forma espectacular nuestra perspectiva del vecindario estelar y han empujado el horizonte de la exploración espacial.',
-      'Hoy en día, la Voyager 1 ostenta el honor de ser el objeto construido por humanos que se encuentra más lejos de la Tierra. A partir de cálculos precisos en 2024, viaja en el vacío a más de 160 Unidades Astronómicas de nuestro planeta azul.',
-      'Incluso después de que sus baterías nucleares dejen de producir electricidad útil, las Voyager continuarán viajando silenciosamente por la Vía Láctea. Se convertirán de por vida en monumentos póstumos y testimonios pacíficos de nuestra existencia.',
-      'Pasarán decenas de miles de años antes de que estas exploradoras se acerquen de nuevo a otra estrella o sistema planetario. La Voyager 1 pasará a unos 1.6 años luz de la estrella Gliese 445 en aproximadamente 40,000 años.',
-      'Si un día una civilización extraterrestre avanzada encuentra y logra decodificar el legendario Disco de Oro, sabrán que en un pequeño punto azul existió una joven civilización de humanos curiosos.'
+    "id": "legado-humanidad",
+    "title": "El Legado",
+    "color": "#80CBC4",
+    "btnImage": "/assets/interestelar/infographic_m6/btn_legado-humanidad.jpg",
+    "image": "/assets/interestelar/infographic_m6/hero_legado-humanidad.jpg",
+    "content": [
+      "Las sondas espaciales Voyager representan una de las cumbres más nobles y trascendentes de la creatividad, la ciencia y la tecnología de la civilización humana. Cuando sus últimos generadores de plutonio se apaguen hacia la década de 2030 y sus antenas enmudezcan definitivamente, su periplo cósmico no habrá terminado; en realidad, apenas estará comenzando.",
+      "Desprovistas de energía y flotando en el más absoluto silencio en el vacío galáctico a cientos de grados bajo cero, ambas naves continuarán desplazándose por inercia balística pura a lo largo de una órbita circular alrededor del centro masivo de la Vía Láctea, completando una revolución galáctica completa cada doscientos veinticinco millones de años.",
+      "En aproximadamente cuarenta mil años terrestres, la sonda Voyager 1 pasará a una distancia de 1.6 años luz de la estrella enana roja Gliese 445 en la constelación boreal de Camelopardalis. Por su parte, la Voyager 2 se aproximará a 1.7 años luz de la estrella Ross 248 en la constelación de Andrómeda en una escala temporal similar. Ambas continuarán su silenciosa órbita galáctica alrededor del centro de la Vía Láctea durante miles de millones de años.",
+      "En el espacio profundo interestelar no existen vientos, lluvia, erosión geológica ni atmósferas que desgasten las estructuras mecánicas. Salvo por el impacto sumamente improbable de un micrometeoroide denso, los armazones de aluminio, las antenas de grafito y los Discos de Oro de las Voyager permanecerán prácticamente intactos durante miles de millones de años.",
+      "Es un hecho científico contrastado que las dos sondas Voyager sobrevivirán a la propia existencia de la vida sobre la faz de la Tierra. Mucho después de que los océanos terrestres se evaporen bajo la radiación de un Sol agonizante transformado en gigante roja dentro de cinco mil millones de años, las naves seguirán surcando la oscuridad de la galaxia."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La famosa e icónica fotografía conocida como el "Punto Azul Pálido" fue tomada por la Voyager 1 a sugerencia directa del astrónomo Carl Sagan.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Las naves Voyager nunca, bajo ninguna circunstancia, regresarán a la Tierra. Continuarán su viaje a través del cosmos de forma permanente.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El 14 de febrero de 1990, a petición de Carl Sagan, la Voyager 1 giró sus cámaras por última vez hacia el sistema solar interior y fotografió a la Tierra a 6.000 millones de kilómetros de distancia como un diminuto píxel azul brillante, inspirando la legendaria reflexión del «Pálido Punto Azul», recordándonos la fragilidad de nuestro hogar común y la responsabilidad compartida de preservar la vida en el cosmos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La tasa de erosión por colisiones de polvo interestelar sobre el fuselaje de las Voyager se estima en menos de un nanómetro por cada millón de años de navegación en el medio interestelar local, lo que asegura que los surcos analógicos del Disco de Oro perdurarán legibles por más de 1.000 millones de años."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m6/banner_legado-humanidad.webp',
-    bannerCaption: 'El legado de Voyager: símbolo de la curiosidad humana que sigue hablando con la Tierra desde 23,000 millones de km',
-    fact: 'Las famosas sondas espaciales Voyager llevan un mensaje pacífico que afirma: "Este es un presente de un pequeño y distante mundo".',
-  },
+    "bannerImage": "/assets/interestelar/infographic_m6/banner_legado-humanidad.webp",
+    "bannerCaption": "El legado de Voyager: símbolo de la curiosidad humana que sigue hablando con la Tierra desde 23,000 millones de km",
+    "fact": "Las sondas Voyager continuarán orbitando el centro de la Vía Láctea cada 225 millones de años durante miles de millones de años tras agotar su energía en ~2030. En ~40.000 años, Voyager 1 pasará a 1.6 años luz de Gliese 445 y Voyager 2 a 1.7 años luz de Ross 248, sobreviviendo como cápsulas del tiempo intactas más allá de la vida del Sol."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

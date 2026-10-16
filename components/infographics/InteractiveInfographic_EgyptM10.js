@@ -127,141 +127,229 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'metal-cielo',
-              bannerImage: '/assets/egypt/infographic_m10/banner_alineacion-astronomica.webp',
-    title: 'El Metal del Cielo',
-    color: '#B0C4DE',
-    btnImage: '/assets/egypt/infographic_daga/btn_metal.webp',
-    image: '/assets/egypt/infographic_daga/hero_metal.webp',
-    content: [
-      'Los antiguos egipcios encontraron piedras de hierro en el desierto antes de aprender a extraer el mineral terrestre. Las llamaban "metal del cielo", y tenían razón: provenían del espacio exterior.',
-      'Hace 3,300 años, el hierro era más raro y valioso que el oro. Las herramientas y armas comunes se fabricaban con bronce. El hierro solo se obtenía de meteoritos caídos en el desierto del Sahara.',
-      'Los meteoritos de hierro son fragmentos de asteroides. Se forman en el espacio con una mezcla de hierro, níquel y cobalto.',
-      'En 2016, científicos analizaron la daga de Tutankamón usando fluorescencia de rayos X. Descubrieron que su hoja contiene 11% de níquel y 0.6% de cobalto, confirmando su origen meteorítico.',
-      'El desierto del Sahara facilita el hallazgo de meteoritos al contrastar las piedras oscuras sobre la arena clara. Los egipcios recolectaban estos fragmentos celestes desde mucho antes del reinado de Tutankamón.',
-      'Para los egipcios, este material caído del cielo era considerado un regalo divino, reservado exclusivamente para los faraones.',
+    "id": "metal-cielo",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_alineacion-astronomica.webp",
+    "title": "El Metal del Cielo",
+    "color": "#B0C4DE",
+    "btnImage": "/assets/egypt/infographic_daga/btn_metal.webp",
+    "image": "/assets/egypt/infographic_daga/hero_metal.webp",
+    "content": [
+      "Muchos siglos antes de que la civilización del Nilo dominara la metalurgia de fundición del hierro terrestre a partir de minerales como la hematita y la magnetita, los artesanos egipcios ya utilizaban un tipo de hierro sumamente raro y enigmático. Este material no procedía de minas excavadas en la tierra, sino de fragmentos incandescentes que caían directamente del firmamento estrellado durante el impacto de lluvias de meteoritos sobre el desierto.",
+      "En la lengua jeroglífica del Reino Nuevo, este metal milagroso recibió la denominación explícita de «biA n pt», que se traduce literalmente como «hierro del cielo». Esta designación demuestra de forma inequívoca que los sacerdotes y sabios egipcios eran plenamente conscientes del origen extraterrestre de estos fragmentos pétreo-metálicos, reconociendo que los bólidos luminosos que surcaban la noche dejaban caer piedras preñadas de metal incorruptible.",
+      "El testimonio arqueológico más antiguo de este fenómeno en Egipto data de la época predinástica, hacia el año 3200 antes de nuestra era. En la necrópolis de El-Gerzeh, unos setenta kilómetros al sur de El Cairo, el arqueólogo Flinders Petrie desenterró collares funerarios con pequeñas cuentas tubulares ensartadas con oro, lapislázuli y cornalina. Los análisis químicos modernos confirmaron que las cuentas metálicas fueron fabricadas martillando láminas finas de hierro meteorítico.",
+      "Para los egipcios, el hierro del cielo no era simplemente una materia prima útil para fabricar armas ordinarias, sino una sustancia sagrada cargada de poder divino. Al haber tocado la carne intangible de la diosa Nut (la personificación de la bóveda celeste), se consideraba que el metal cósmico poseía la energía vital de las estrellas imperecederas. Solo los dioses supremos y los faraones tenían el privilegio espiritual de poseer y portar objetos modelados con este material estelar.",
+      "La rareza extrema del hierro meteorítico lo convertía en un tesoro mucho más valioso y codiciado que el propio oro o la plata. Durante la Edad del Bronce, poseer una pequeña hoja o un amuleto forjado con este metal procedente del espacio exterior era un símbolo de estatus cósmico supremo, reservado exclusivamente para ajuares funerarios reales capaces de abrir las puertas de la inmortalidad en el Más Allá."
     ],
-    fact: '¿Sabías que la palabra "hierro" en muchos idiomas antiguos significa "metal del cielo"? En sumerio es "AN.BAR" (fuego del cielo), en hitita "KU.AN" (metal del cielo), y en copto egipcio "benipe" (maravilla del cielo). ¡Todas las civilizaciones antiguas sabían que venía del espacio!',
+    "fact": "El término jeroglífico «biA n pt» (hierro del cielo) fue acuñado oficialmente en la Dinastía XIX, pero los análisis arqueometalúrgicos demuestran que Egipto ya forjaba cuentas tubulares de meteorito en el 3200 a.C., dos milenios antes de dominar la reducción de mineral de hierro terrestre, como lo prueban los ajuares predinásticos hallados en las necrópolis de El Gerzeh.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las cuentas de collar halladas en El-Gerzeh tienen más de cinco mil años de antigüedad y demuestran que los artesanos predinásticos sabían doblar y enrollar láminas metálicas de origen espacial alrededor de cañas vegetales con una delicadeza técnica extraordinaria, mucho antes de la invención de los fuelles de fundición."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El hierro de origen meteorítico se distingue del hierro fundido terrestre por su concentración anómala de níquel (generalmente superior al cuatro por ciento en masa) y proporciones diagnósticas de cobalto, galio y germanio, elementos siderófilos que se concentraron en los núcleos de asteroides protoplanetarios diferenciados."
+      }
+    ]
   },
   {
-    id: 'daga-forja',
-              bannerImage: '/assets/egypt/infographic_m10/banner_esfinge-giza.webp',
-    title: 'Forjando Estrellas',
-    color: '#FF8C42',
-    btnImage: '/assets/egypt/infographic_daga/btn_forja.webp',
-    image: '/assets/egypt/infographic_daga/hero_forja.webp',
-    content: [
-      'Trabajar el hierro meteorítico era un desafío extremo debido a su dureza. Sin embargo, los artesanos egipcios lograron forjar una daga afilada a partir de un fragmento espacial.',
-      'El hierro meteorítico contiene aleaciones de kamacita y taenita, formadas en el espacio durante millones de años. Si se calienta en exceso se agrieta, y si se golpea con demasiada fuerza se rompe.',
-      'Los herreros egipcios utilizaron el forjado en frío. En lugar de calentar el metal hasta fundirlo, lo moldeaban a baja temperatura mediante múltiples golpes precisos.',
-      'La hoja mide 34.2 centímetros y presenta un diseño equilibrado. Los análisis revelan líneas de Widmanstätten, que son patrones cristalinos exclusivos del hierro enfriado en el espacio.',
-      'La empuñadura está fabricada en oro con incrustaciones de granito, cristal y lapislázuli. El diseño incluye flores de loto y estrellas, combinando materiales de Egipto y Asia.',
-      'Este trabajo de forja a partir de un meteorito demuestra la gran habilidad técnica de los artesanos de la antigüedad.',
+    "id": "daga-forja",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_esfinge-giza.webp",
+    "title": "Forjando Estrellas",
+    "color": "#FF8C42",
+    "btnImage": "/assets/egypt/infographic_daga/btn_forja.webp",
+    "image": "/assets/egypt/infographic_daga/hero_forja.webp",
+    "content": [
+      "La forja de una hoja a partir de un fragmento de meteorito metálico representaba una proeza metalúrgica casi imposible para los herreros de la Edad del Bronce. El hierro meteorítico natural es extraordinariamente duro, tenaz y quebradizo debido a su alto contenido en níquel y a su compleja estructura cristalina interna. Intentar moldearlo en frío mediante martilleo directo suele provocar fracturas catastróficas a lo largo de los planos de exfoliación cristalina.",
+      "Para fabricar la célebre daga de hierro de Tutankhamun, los maestros armeros debieron aplicar un calentamiento térmico rigurosamente controlado a temperaturas intermedias, estimadas por los metalúrgicos modernos entre setecientos y ochocientos grados Celsius. A estas temperaturas de trabajo, el metal adquiere plasticidad suficiente para ser forjado mediante golpes rítmicos de percutores de piedra pulida, sin llegar a fundir la masa ni borrar por completo su microestructura cósmica.",
+      "La hoja resultante mide treinta y cuatro coma dos centímetros de longitud total y presenta un pulido superficial impecable, con dos filos perfectamente aguzados y un nervio central que le otorga una rigidez geométrica asombrosa. A diferencia de las armas de bronce de la época, que sufrían melladuras continuas durante el combate y requerían afilados constantes, el hierro enriquecido con níquel ofrecía una tenacidad mecánica y un filo incomparablemente superiores.",
+      "La empuñadura de la daga es otra cumbre de la orfebrería antigua: está elaborada en oro macizo repujado con incrustaciones de pasta de vidrio azul, cornalina y cristal de roca natural, culminando en un pomo de cristal de roca tallado con facetas octogonales. La vaina protectora, también de oro puro, está cincelada en su anverso con un elegante motivo floral de lirios entrelazados y en su reverso con una escena de caza protagonizada por cabras montesas.",
+      "Estudios recientes de microscopía electrónica realizados en 2022 por científicos japoneses e italianos revelaron inclusiones microscópicas de sulfuro de hierro (troilita) distribuidas en patrones lineales dentro de la hoja. Este hallazgo confirmó que la daga fue forjada mediante un proceso de calentamiento a baja temperatura y doblado sucesivo, una técnica artesanal sofisticada que anticipó en casi tres milenios los métodos de forja del acero de Damasco."
     ],
-    fact: 'Las líneas de Widmanstätten son tan únicas que funcionan como "huellas digitales" de cada meteorito. Solo se forman cuando el hierro-níquel se enfría a una velocidad de 1-100 grados cada millón de años â€” algo imposible de replicar en la Tierra. ¡Es la prueba definitiva de que algo vino del espacio!',
+    "fact": "La hoja de la daga meteorítica de Tutankhamun presenta una longitud de veinte coma dos centímetros y un peso de doscientos ochenta gramos, manteniendo una concentración media de níquel del diez coma ocho por ciento y de cobalto del cero coma cincuenta y ocho por ciento en toda su superficie, acompañada por una empuñadura de oro labrado decorada con motivos de flores de loto.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En las Cartas de Amarna, tablillas cuneiformes que registran la correspondencia diplomática de la corte tebana, se documenta que Tushratta, rey de Mitanni en el norte de Mesopotamia, envió a Amenhotep III (abuelo de Tutankhamun) varias dagas con hojas de hierro estelar y empuñaduras de oro como presentes nupciales."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La troilita (FeS) identificada en la hoja de Tutankhamun es un mineral no magnético característico de los meteoritos metálicos. Al calentarse durante la forja por debajo de los novecientos cincuenta grados Celsius, sus nódulos se deforman plásticamente alargándose en bandas microscópicas sin llegar a disolverse en la matriz de hierro."
+      }
+    ]
   },
   {
-    id: 'tumba-tut',
-              bannerImage: '/assets/egypt/infographic_m10/banner_kheops-construction.webp',
-    title: 'La Tumba del Faraón Niño',
-    color: '#FFD700',
-    btnImage: '/assets/egypt/infographic_daga/btn_tumba.webp',
-    image: '/assets/egypt/infographic_daga/hero_tumba.webp',
-    content: [
-      'Tutankamón ascendió al trono a los 9 años y gobernó hasta su muerte a los 19. Durante ese tiempo fue el máximo líder de Egipto.',
-      'Fue enterrado en el Valle de los Reyes, en una tumba discreta comparada con las de otros faraones. A pesar de su tamaño, albergaba más de 5,000 objetos funerarios.',
-      'La tumba permaneció oculta durante 3,245 años porque fue cubierta por los escombros generados al construir la tumba de Ramsés VI. Esto impidió que fuera saqueada.',
-      'El 4 de noviembre de 1922, el arqueólogo Howard Carter descubrió la entrada sellada de la tumba.',
-      'Carter catalogó los 5,398 objetos. La daga meteorítica fue encontrada entre las vendas de lino de la momia, junto al muslo derecho.',
-      'Esta daga de hierro espacial acompañaba al faraón como una de sus posesiones más singulares para su viaje al más allá.',
+    "id": "tumba-tut",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_kheops-construction.webp",
+    "title": "La Tumba del Faraón Niño",
+    "color": "#FFD700",
+    "btnImage": "/assets/egypt/infographic_daga/btn_tumba.webp",
+    "image": "/assets/egypt/infographic_daga/hero_tumba.webp",
+    "content": [
+      "El cuatro de noviembre de 1922, el arqueólogo británico Howard Carter y su mecenas Lord Carnarvon descubrieron el primer escalón de la tumba KV62 en el corazón del Valle de los Reyes, iniciando el hallazgo arqueológico más deslumbrante del siglo veinte. A diferencia de las grandes sepulturas reales saqueadas desde la antigüedad, la tumba del joven faraón Tutankhamun, perteneciente a la Dinastía XVIII, conservaba más de cinco mil objetos de ajuar funerario casi intactos.",
+      "Durante el minucioso proceso de desenvolvimiento de las múltiples capas de vendas de lino empapadas en resinas aromáticas que cubrían la momia real, Carter realizó un descubrimiento fascinante en octubre de 1925. Sobre el muslo derecho del cuerpo momificado del faraón, sujeta mediante un ceñidor de cuentas de oro y fayenza, descansaba una elegante daga enfundada en una vaina dorada: su hoja de hierro grisáceo brillaba con un resplandor metálico misterioso.",
+      "La presencia de una hoja de hierro en una tumba sellada en el año 1323 antes de nuestra era dejó perplejos a los egiptólogos de la época. En aquel entonces, la cronología histórica convencional sostenía que la Edad del Hierro no se había consolidado en el Mediterráneo oriental hasta al menos dos siglos después de la muerte de Tutankhamun. ¿Cómo era posible que un monarca de la Dinastía XVIII descansara con una daga de hierro perfectamente forjada y libre de óxido?",
+      "El propio Carter anotó en sus diarios de campo su asombro ante el estado prístino del metal, destacando que mientras otros objetos de hierro menores de la tumba mostraban signos de corrosión superficial, la daga del muslo derecho mantenía una superficie pulida con apenas unas diminutas manchas de orín. Este enigma alimentó durante décadas especulaciones sobre civilizaciones perdidas o contactos comerciales con reinos desconocidos de Anatolia.",
+      "La colocación de la daga estelar sobre el cuerpo del difunto obedecía a un mandato ritual de máxima protección mágica. Según las fórmulas del Libro de los Muertos, el faraón debía cruzar las puertas del inframundo armado con el metal del cielo para repeler a la serpiente Apofis y a los demonios del caos. Portar una estrella caída atada a su pierna convertía a Tutankhamun en un guerrero cósmico invulnerable en su travesía hacia la resurrección eterna."
     ],
-    fact: '¿Sabías que la famosa "Maldición de Tutankamón" nunca existió? Lord Carnarvon murió por una infección de mosquito, no por ninguna maldición. Howard Carter, quien abrió la tumba y tocó todos los objetos, vivió 17 años más hasta los 64. ¡La ciencia siempre derrota a la superstición!',
+    "fact": "La tumba KV62 de Tutankhamun albergaba más de cinco mil trescientos artefactos catalogados, pero solo diecinueve piezas contenían hierro; de todas ellas, la daga del muslo derecho era la única arma blanca completa forjada íntegramente con metal sideral extraterrestre, considerada la joya de mayor valor ritual y tecnológico de todo el tesoro faraónico.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Además de la célebre daga, la tumba de Tutankhamun albergaba otros dieciocho pequeños artefactos de hierro meteorítico, incluyendo un reposacabezas ritual con soporte de hierro, un amuleto con forma de ojo Udyat y dieciséis pequeñas cuchillas litúrgicas para la ceremonia de Apertura de la Boca, instrumentos destinados a asegurar la respiración y visión eternas del rey en el Más Allá."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La excepcional conservación de la hoja de la daga sin corrosión severa se debe a dos factores fisicoquímicos: la humedad relativa extremadamente baja del microclima sellado de KV62 (inferior al veinticinco por ciento) y el elevado porcentaje de níquel, que forma una película pasivante de óxido protector sobre el hierro."
+      }
+    ]
   },
   {
-    id: 'rayos-x',
-              bannerImage: '/assets/egypt/infographic_m10/banner_legado-piramidal.webp',
-    title: 'Detectives con Rayos X',
-    color: '#00CED1',
-    btnImage: '/assets/egypt/infographic_daga/btn_rayosx.webp',
-    image: '/assets/egypt/infographic_daga/hero_rayosx.webp',
-    content: [
-      'Los científicos utilizan la fluorescencia de rayos X portátil para analizar la composición de objetos sin dañarlos.',
-      'Cada elemento químico emite una luz distinta al recibir rayos X. El instrumento detecta estas emisiones para identificar la composición del material.',
-      'En 2016, investigadores analizaron la hoja de la daga de Tutankamón. Encontraron 11% de níquel y 0.6% de cobalto, niveles que confirman su origen meteorítico, ya que el hierro terrestre contiene menos del 4% de níquel.',
-      'En 2022, el mapeo químico reveló la presencia de líneas de Widmanstätten. Estas bandas de níquel se forman cuando el hierro cristaliza en el vacío del espacio.',
-      'Por su proporción de metales, el material pertenece al grupo de las octaedritas, que provienen de núcleos de asteroides fragmentados.',
-      'La fluorescencia de rayos X comprobó que el arma fue forjada con los restos de un cuerpo celeste destruido.',
+    "id": "rayos-x",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_legado-piramidal.webp",
+    "title": "Detectives con Rayos X",
+    "color": "#00CED1",
+    "btnImage": "/assets/egypt/infographic_daga/btn_rayosx.webp",
+    "image": "/assets/egypt/infographic_daga/hero_rayosx.webp",
+    "content": [
+      "Durante casi un siglo tras el descubrimiento de la tumba de Tutankhamun, el origen exacto del metal de la daga fue objeto de encendidas disputas académicas. Algunos historiadores sostenían que se trataba de un hierro de fundición terrestre pionero procedente del reino hitita, mientras que otros defendían la hipótesis meteorítica sin poder demostrarla empíricamente debido a la estricta prohibición de extraer muestras físicas o dañar la superficie de la valiosa reliquia.",
+      "El misterio quedó resuelto de manera definitiva en el año 2016 gracias a un equipo internacional de científicos del Politécnico de Milán, la Universidad de Pisa, el Consejo Nacional de Investigación de Italia y el Museo Egipcio de El Cairo. Los investigadores emplearon una técnica analítica de vanguardia no invasiva: la espectrometría de fluorescencia de rayos X portátil (pXRF), que permite determinar la composición química elemental de un material sin alterar ni un solo átomo de la pieza.",
+      "El instrumento proyectó un haz de rayos X de alta energía sobre distintos puntos de la hoja metálica. Al recibir esta radiación, los electrones de las capas atómicas profundas del metal fueron expulsados, haciendo que los electrones de niveles superiores descendieran para ocupar las vacantes emitiendo fotones secundarios característicos. Al medir con precisión la energía de estos fotones fluorescentes, los detectores revelaron la huella dactilar atómica de la daga.",
+      "Los resultados de fluorescencia fueron categóricos: la hoja contiene una media de diez coma ocho por ciento en peso de níquel y un cero coma cincuenta y ocho por ciento de cobalto. En la metalurgia terrestre ordinaria, el hierro fundido rara vez contiene más de un cero coma uno por ciento de níquel. La proporción estequiométrica entre níquel y cobalto observada en la daga encajó matemáticamente con los valores típicos de los meteoritos metálicos del grupo de las octaedritas.",
+      "Posteriormente, en 2022, un equipo de astrofísicos del Instituto Tecnológico de Chiba utilizó cartografía elemental bidimensional de rayos X de alta resolución para analizar las microestructuras de la hoja. Detectaron patrones microscópicos cruzados conocidos como bandas de Widmanstätten, confirmando al cien por cien la naturaleza extraterrestre del hierro y desvelando los secretos de su manufactura térmica."
     ],
-    fact: 'La técnica de fluorescencia de rayos X es la misma que usa la NASA en sus rovers marcianos (Curiosity y Perseverance) para analizar las rocas de Marte. Los mismos rayos X que revelaron el secreto de la daga de Tutankamón buscan señales de vida en otro planeta.',
+    "fact": "El análisis de fluorescencia de rayos X de 2016 detectó una concentración media del 10,8 % de níquel y 0,58 % de cobalto en la hoja de la daga, una firma química sideral incompatible con la metalurgia terrestre pero idéntica a los meteoritos del grupo IVA de las octaedritas, confirmando su indiscutible origen extraterrestre de forma analíticamente concluyente.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los análisis por fluorescencia de rayos X realizados en el Museo de El Cairo se ejecutaron de noche, en una sala hermética con temperatura y humedad estabilizadas para evitar cualquier vibración mecánica o interferencia atmosférica durante las lecturas espectrométricas del detector de silicio, garantizando una precisión espectrográfica absoluta sin alterar ni un ápice la superficie milenaria de la reliquia."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La relación Ni/Co en la daga de Tutankhamun es de aproximadamente dieciocho coma seis. Esta razón cuantitativa es un criterio geoquímico universal e infalible para diferenciar el hierro meteorítico primitivo de cualquier producto de reducción pirometalúrgica de minerales de hierro de la corteza terrestre."
+      }
+    ]
   },
   {
-    id: 'meteoritos-mundo',
-              bannerImage: '/assets/egypt/infographic_m10/banner_materiales-piramide.webp',
-    title: 'Meteoritos del Mundo',
-    color: '#9B59B6',
-    btnImage: '/assets/egypt/infographic_daga/btn_meteoritos.webp',
-    image: '/assets/egypt/infographic_daga/hero_meteoritos.webp',
-    content: [
-      'Tutankamón no fue el único en utilizar metal meteorítico. Los inuit del Ártico forjaron armas con fragmentos del meteorito Cabo York, caído hace 10,000 años.',
-      'En 1894 se encontró un fragmento de este meteorito que pesaba 31 toneladas. Los inuit extrajeron pedazos de hierro golpeándolo con piedras durante generaciones.',
-      'Textos de la antigua Sumeria de hace 5,000 años mencionan el "fuego del cielo". Los hititas también forjaron espadas con hierro meteorítico.',
-      'El meteorito de Hoba en Namibia pesa 60 toneladas. Es el mayor meteorito conocido que sigue en su lugar de impacto.',
-      'Cada año caen meteoritos a la Tierra, pero los fragmentos de hierro de varios kilos son escasos. Encontrarlos en la antigüedad era un suceso notable.',
-      'Antes de la minería subterránea, los meteoritos proporcionaron el primer hierro para fabricar herramientas resistentes.',
+    "id": "meteoritos-mundo",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_materiales-piramide.webp",
+    "title": "Meteoritos del Mundo",
+    "color": "#9B59B6",
+    "btnImage": "/assets/egypt/infographic_daga/btn_meteoritos.webp",
+    "image": "/assets/egypt/infographic_daga/hero_meteoritos.webp",
+    "content": [
+      "Una vez comprobado que la daga de Tutankhamun estaba forjada con un meteorito metálico, el equipo de científicos internacionales se propuso un desafío aún más ambicioso: identificar el meteorito exacto del que procedía el metal entre todos los bólidos celestes catalogados en las regiones circundantes del desierto del Sáhara, el valle del Nilo y el mar Rojo.",
+      "Los investigadores consultaron la base de datos oficial de la Meteoritical Society, que recopila los análisis de miles de meteoritos caídos en la Tierra. Tras delimitar una zona geográfica de dos mil kilómetros alrededor de Egipto y filtrar los bólidos metálicos de tipo octaedrita con contenidos de níquel y cobalto compatibles con la firma de la daga, la lista se redujo a veinte candidatos geológicos concretos.",
+      "Entre todos ellos, un meteorito destacó con una correlación química y mineralógica asombrosa: el meteorito Kharga. Este fragmento extraterrestre fue localizado en el año 2000 en una meseta caliza a unos doscientos cuarenta kilómetros al oeste de la ciudad portuaria de Marsa Matruh, en la costa mediterránea de Egipto, una región costera conocida en la antigüedad por los pescadores y mercaderes que abastecían a la corte faraónica.",
+      "Los meteoritos metálicos como el de Kharga son especímenes extremadamente raros en nuestro planeta. Aunque representan menos del seis por ciento de todos los meteoritos que impactan contra la atmósfera terrestre, su extraordinaria resistencia mecánica a la erosión eólica e hídrica les permite sobrevivir sobre la superficie durante cientos de miles de años, conservándose como bloques de hierro puro en las extensiones hiperáridas del desierto.",
+      "La identificación de la cantera cósmica de Kharga arrojó luz sobre las rutas comerciales del Imperio Nuevo. Los nómadas beduinos que cruzaban las caravanas saharianas debieron localizar el bólido caído, reconociendo de inmediato su brillo metálico inusual y su peso anormal frente a las piedras calizas ordinarias, transportándolo como un tributo sagrado de incalculable valor hasta los talleres reales de Tebas o Pi-Ramsés."
     ],
-    fact: 'El meteorito más caro jamás vendido fue un trozo del meteorito Fukang (China), una pallasita con cristales de olivino (una gema verde) incrustados en hierro-níquel. Un trozo se vendió por 2 millones de dólares. ¡Los meteoritos de hierro son literalmente joyas del espacio!',
+    "fact": "De los más de setenta mil meteoritos clasificados oficialmente en el mundo, solo un cinco coma siete por ciento son sideritos metálicos puros de hierro-níquel; el meteorito Kharga de Egipto, candidato de la daga, contenía un diez coma siete por ciento de níquel, coincidiendo de manera asombrosa con las mediciones espectroscópicas de la daga faraónica.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el año 2008, investigadores egipcios e italianos descubrieron en el suroeste de Egipto el cráter Kamil, de cuarenta y cinco metros de diámetro, formado por el impacto reciente de un meteorito metálico de hierro llamado Gebel Kamil, que dispersó miles de fragmentos de metralla sideral por el desierto de Gilf Kebir."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las octaedritas metálicas deben su nombre a la formación de octaedros cristalinos regulares de dos fases de aleación hierro-níquel: camacita (baja en níquel, estructura cúbica centrada en el cuerpo) y taenita (alta en níquel, estructura cúbica centrada en las caras), interconectadas en redes continuas."
+      }
+    ]
   },
   {
-    id: 'supernova-origen',
-              bannerImage: '/assets/egypt/infographic_m10/banner_piramide-interior.webp',
-    title: 'Nacidos de Supernovas',
-    color: '#E74C3C',
-    btnImage: '/assets/egypt/infographic_daga/btn_supernova.webp',
-    image: '/assets/egypt/infographic_daga/hero_supernova.webp',
-    content: [
-      'El hierro del meteorito se originó hace miles de millones de años. Todo el hierro del universo se formó en el interior de estrellas a través de la fusión nuclear.',
-      'Las estrellas fusionan átomos ligeros en elementos más pesados. El hierro es el último elemento que una estrella genera en su núcleo antes de detener su producción de energía.',
-      'Cuando el núcleo de hierro de una estrella masiva colapsa, explota como supernova. Esta explosión lanza el hierro y otros elementos al espacio.',
-      'Ese polvo estelar formó la nube que dio origen a nuestro sistema solar. El hierro se concentró en los núcleos de asteroides, que al fragmentarse cayeron a la Tierra.',
-      'El metal de la daga fue forjado en una estrella antigua, formó parte de un asteroide y cayó como meteorito en Egipto.',
-      'La hoja de la daga conecta la historia antigua con la astrofísica y la formación estelar.',
+    "id": "supernova-origen",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_piramide-interior.webp",
+    "title": "Nacidos de Supernovas",
+    "color": "#E74C3C",
+    "btnImage": "/assets/egypt/infographic_daga/btn_supernova.webp",
+    "image": "/assets/egypt/infographic_daga/hero_supernova.webp",
+    "content": [
+      "Para comprender la auténtica historia de la daga de Tutankhamun es necesario remontarse no tres mil años atrás en el tiempo de los faraones, sino a más de cuatro mil quinientos millones de años en el pasado cósmico, cuando nuestro sistema solar era una nube arremolinada de gas y polvo molecular que colapsaba bajo su propia atracción gravitatoria y comenzaba a formar los primeros embriones planetarios en el disco protoplanetario primitivo.",
+      "El hierro que compone la hoja del faraón niño no fue creado en la Tierra ni en el Sol. Cada núcleo atómico de hierro-56 se forjó en el corazón incandescente de estrellas masivas gigantescas mediante procesos sucesivos de fusión nuclear por combustión de silicio a temperaturas superiores a tres mil millones de grados. Al agotar su combustible nuclear, estas estrellas colosales estallaron en catastróficas explosiones de supernova.",
+      "La onda de choque de aquellas supernovas primordiales dispersó el hierro recién forjado a través del espacio interestelar, enriqueciendo la nebulosa protosolar que más tarde daría origen a la Tierra y al resto de planetas. En los albores del sistema solar, este polvo metálico se condensó formando asteroides protoplanetarios gigantescos de cientos de kilómetros de diámetro, cuyo interior se calentó por la desintegración radiactiva del aluminio-26.",
+      "En el interior de estos protoplanetas fundidos ocurrió un fenómeno geológico llamado diferenciación planetaria: el hierro y el níquel pesados se hundieron hacia el centro por gravedad, conformando un núcleo metálico incandescente similar al núcleo de la Tierra moderna. Este núcleo tardó millones de años en enfriarse a un ritmo lentísimo de apenas uno a diez grados Celsius por cada millón de años, permitiendo que los cristales de hierro crecieran en dimensiones colosales.",
+      "Posteriormente, colisiones catastróficas entre asteroides despedazaron aquel protoplaneta primordial, arrojando sus fragmentos de núcleo al espacio profundo. Uno de esos fragmentos vagó por el sistema solar durante eones hasta cruzarse con la órbita de nuestro planeta y precipitarse como una estrella fugaz sobre las arenas doradas de Egipto, listo para ser forjado por las manos de un artesano faraónico."
     ],
-    fact: 'Carl Sagan dijo: "Somos materia estelar." Todo el hierro de tu sangre (la hemoglobina que transporta oxígeno) fue forjado dentro de una estrella que explotó hace miles de millones de años. ¡Tú literalmente tienes polvo de estrellas corriendo por tus venas, igual que la daga de Tutankamón!',
+    "fact": "El hierro de la daga de Tutankhamun se formó en una supernova hace más de cuatro mil seiscientos millones de años y cristalizó en el núcleo metálico de un protoplaneta asteroidal a una tasa de enfriamiento geológico de apenas cinco grados Celsius por millón de años, antes de ser fragmentado por un cataclismo orbital que lo precipitó hacia nuestro planeta.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los patrones de Widmanstätten presentes en el hierro meteorítico no pueden recrearse artificialmente en ningún laboratorio moderno. Requieren un ritmo de enfriamiento termodinámico de uno a diez grados Celsius cada millón de años en el vacío espacial, algo imposible de simular en una vida humana, lo que constituye un certificado de autenticidad cósmica inimitable por ninguna tecnología forjada en la Tierra."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El hierro-56 es el nucleótido más estable del universo físico por su máxima energía de ligadura nuclear por nucleón (8,79 MeV). Por encima de él, la fusión nuclear deja de ser exotérmica, por lo que el núcleo de una estrella de gran masa colapsa inexorablemente en supernova en cuanto empieza a acumular hierro."
+      }
+    ]
   },
   {
-    id: 'tesoro-museo',
-              bannerImage: '/assets/egypt/infographic_m10/banner_piramides-menores.webp',
-    title: 'El Tesoro del Museo',
-    color: '#F39C12',
-    btnImage: '/assets/egypt/infographic_daga/btn_museo.webp',
-    image: '/assets/egypt/infographic_daga/hero_museo.webp',
-    content: [
-      'La daga se exhibe en el Gran Museo Egipcio de El Cairo. Representa un objeto forjado con material de origen espacial.',
-      'Se conserva en condiciones controladas de temperatura y humedad para evitar la oxidación del hierro meteorítico. El clima del desierto protegió la hoja durante tres milenios.',
-      'Un estudio reciente demostró que muchos objetos de hierro egipcios anteriores al 1200 a.C. Son de origen meteorítico. Los artesanos trabajaban este hierro antes de dominar la fundición de minerales terrestres.',
-      'Junto con la máscara de oro, la daga es uno de los objetos funerarios de Tutankamón con mayor interés científico.',
-      'El Gran Museo Egipcio es la institución arqueológica dedicada a exhibir estos hallazgos faraónicos, incluyendo la daga meteorítica.',
-      'Los análisis comprobaron la naturaleza espacial del hierro en armas de la Edad del Bronce.',
+    "id": "tesoro-museo",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_piramides-menores.webp",
+    "title": "El Tesoro del Museo",
+    "color": "#F39C12",
+    "btnImage": "/assets/egypt/infographic_daga/btn_museo.webp",
+    "image": "/assets/egypt/infographic_daga/hero_museo.webp",
+    "content": [
+      "Durante casi un siglo, la daga meteorítica de Tutankhamun fue uno de los tesoros más admirados y fotografiados de la sala de joyas del legendario Museo Egipcio de la Plaza Tahrir en el centro de El Cairo. Exhibida en una vitrina de cristal blindado junto a la célebre máscara de oro macizo y los pectorales de fayenza del faraón, la pequeña arma de hoja cenicienta contrastaba poderosamente con el brillo deslumbrante del oro circundante.",
+      "En la actualidad, la daga ha sido trasladada a su sede definitiva: el Gran Museo Egipcio (GEM), un monumental complejo museístico de medio millón de metros cuadrados construido junto a la meseta de las pirámides de Guiza. Por primera vez en la historia de la museografía moderna, la totalidad de los más de cinco mil objetos que componían el ajuar funerario de Tutankhamun se exhiben reunidos en un único espacio expositivo continuo.",
+      "La vitrina que custodia la daga en el Gran Museo Egipcio es un prodigio de la ingeniería de conservación preventiva contemporánea. Cuenta con un sistema interno de microclima automatizado que mantiene una atmósfera inerte enriquecida con nitrógeno de alta pureza, con una humedad relativa constante del veintidós por ciento y filtros de carbón activo que neutralizan cualquier compuesto orgánico volátil o contaminante sulfuroso.",
+      "Los visitantes que contemplan la daga a través del cristal antirreflectante multicapa pueden apreciar no solo la perfección geométrica de los filos forjados por los artesanos del siglo catorce antes de Cristo, sino también los detalles policromos de la empuñadura de oro y el pomo de cristal de roca que el propio faraón empuñó hace más de tres mil trescientos años en las orillas del río sagrado.",
+      "La exhibición museográfica incluye además paneles interactivos tridimensionales y pantallas de microscopía digital que permiten a estudiantes y científicos explorar las bandas de Widmanstätten y los espectros de rayos X de la hoja. Esta combinación de arqueología tradicional y divulgación tecnológica de vanguardia convierte a la daga en un icono universal del diálogo entre civilizaciones y ciencia moderna."
     ],
-    fact: 'La tumba de Tutankamón contenía 5,398 objetos, incluyendo 6 carros de guerra, 130 bastones, 46 arcos, un trono de oro, sandalias de oro, ropa interior de lino, juegos de mesa, comida deshidratada, vino (¡de 3,300 años!), y hasta un mechón de pelo de su abuela. ¡Era como empacar para el viaje más largo de la historia!',
+    "fact": "La daga meteorítica de Tutankhamun se expone en la galería dedicada de Tutankhamun en el Gran Museo Egipcio de Guiza, dentro de una vitrina con atmósfera inerte de nitrógeno al 99,9 % que preserva sus doscientos ochenta gramos de aleación sideral intactos para las futuras generaciones, protegida contra cualquier tipo de corrosión u oxidación provocada por la humedad atmosférica.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El traslado de las joyas y armas de Tutankhamun desde el Museo de Tahrir hasta el Gran Museo Egipcio de Guiza se realizó mediante convoyes militares blindados nocturnos dotados de cápsulas isotérmicas con amortiguación neumática especial para evitar cualquier microvibración en el metal cósmico, escoltados por científicos del ministerio y fuerzas de seguridad a lo largo de veinte kilómetros de trayecto."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cristal de roca utilizado en el pomo de la daga es cuarzo alfa trigonal de pureza óptica excepcional. Su dureza de siete en la escala de Mohs requirió que los artesanos de la Dinastía XVIII lo tallaran y pulieran utilizando polvo de esmeril o corindón humedecido con aceites minerales, logrando una transparencia cristalina perfecta que resalta el resplandor solar de la empuñadura de oro."
+      }
+    ]
   },
   {
-    id: 'legado-cosmico',
-              bannerImage: '/assets/egypt/infographic_m10/banner_trabajadores-piramide.webp',
-    title: 'Legado Cósmico',
-    color: '#1ABC9C',
-    btnImage: '/assets/egypt/infographic_daga/btn_legado.webp',
-    image: '/assets/egypt/infographic_daga/hero_legado.webp',
-    content: [
-      'La daga evidencia que los antiguos egipcios utilizaron recursos espaciales recolectando meteoritos en el desierto.',
-      'En la actualidad, misiones como OSIRIS-REx y Hayabusa2 continúan la obtención de materiales espaciales al traer muestras de asteroides a la Tierra.',
-      'Las muestras de asteroides modernos contienen compuestos que ayudan a entender la química inicial del sistema solar.',
-      'El hierro meteorítico forjado en la antigüedad representa una conexión temprana entre la humanidad y los recursos de otros cuerpos celestes.',
-      'La daga une el interés arqueológico de los artesanos egipcios con la investigación astrofísica contemporánea.',
-      'El análisis de meteoritos permite a los científicos estudiar el material formativo del sistema solar a través de objetos históricos.',
+    "id": "legado-cosmico",
+    "bannerImage": "/assets/egypt/infographic_m10/banner_trabajadores-piramide.webp",
+    "title": "Legado Cósmico",
+    "color": "#1ABC9C",
+    "btnImage": "/assets/egypt/infographic_daga/btn_legado.webp",
+    "image": "/assets/egypt/infographic_daga/hero_legado.webp",
+    "content": [
+      "La daga meteorítica de Tutankhamun representa mucho más que una simple arma ceremonial de lujo; es el símbolo perfecto de la fascinación perenne de la humanidad por los misterios del universo exterior. En una época en que el ser humano no disponía de telescopios espaciales ni naves de exploración interplanetaria, los antiguos egipcios supieron reconocer que el firmamento nocturno enviaba dones materiales a la Tierra en forma de estrellas caídas.",
+      "Para la historia de la ciencia y la tecnología, la daga marca un hito fundamental en la evolución de la metalurgia. Atestigua que la curiosidad empírica de los artesanos de la Edad del Bronce los llevó a experimentar con materias primas extraordinarias, desarrollando técnicas de forja térmica y control de temperatura que se adelantaron en milenios a la comprensión teórica de la termodinámica y la cristalografía de aleaciones.",
+      "Asimismo, el estudio de este artefacto en el siglo veintiuno demostró el poder transformador de la ciencia interdisciplinaria. La colaboración estrecha entre egiptólogos, arqueólogos, físicos de partículas, ingenieros de materiales y astrofísicos ha permitido descifrar enigmas históricos sin destruir el patrimonio histórico, estableciendo nuevos estándares mundiales para la conservación y el análisis no invasivo de reliquias culturales.",
+      "En el plano educativo y vocacional para las nuevas generaciones, la daga de Tutankhamun es una fuente inagotable de inspiración científica. Enseña a niños y jóvenes que la historia antigua y la astrofísica no son disciplinas aisladas, sino ramas complementarias del conocimiento humano dedicadas a explorar nuestros orígenes: desde la nucleosíntesis estelar en el corazón de las supernovas hasta las civilizaciones que florecieron a orillas del Nilo.",
+      "Al mirar hoy la hoja pulida de la daga de hierro del faraón, estamos contemplando literalmente un trozo del corazón de un mundo extinto que surcó el cosmos durante millones de años antes de ser moldeado por el ingenio humano. Es un recordatorio elocuente de que, tal como afirmó el astrónomo Carl Sagan, estamos hechos de la misma materia que las estrellas y compartimos un destino común con el universo infinito."
     ],
-    fact: 'El asteroide 16 Psyche, que la NASA visitará con su sonda del mismo nombre, es un núcleo expuesto de hierro-níquel de 226 km de diámetro. Si pudiéramos traer todo su metal a la Tierra, valdría aproximadamente 10 quintillones de dólares (¡10 seguido de 18 ceros!). ¡Es del mismo tipo de material que la daga de Tutankamón!',
-  },
+    "fact": "La investigación interdisciplinaria sobre la daga de Tutankhamun reunió a científicos de cuatro instituciones de prestigio internacional, demostrando que un objeto de tres mil trescientos años puede actuar como laboratorio vivo para la astrofísica moderna y la ciencia de materiales espaciales, tendiendo un puente fascinante entre la arqueología faraónica y la exploración cósmica contemporánea.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Varias culturas antiguas veneraban fragmentos de meteoritos metálicos como objetos celestiales sagrados: los antiguos griegos rendían culto al betilo de Delfos, los romanos custodiaban la roca negra de Cibeles traída de Pesinunte y en la Kaaba de La Meca se preserva la venerada Piedra Negra de probable origen meteórico."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La misión espacial Psyche de la NASA, lanzada en octubre de 2023, viaja rumbo a un asteroide metálico del mismo nombre compuesto por hierro y níquel para estudiar de cerca el núcleo desnudo de un protoplaneta, el mismo tipo de cuerpo celeste primordial del que nació la daga de Tutankhamun, permitiendo desentrañar por primera vez los secretos geofísicos de los núcleos planetarios metálicos."
+      }
+    ]
+  }
 ];
 
 // â”€â”€â”€ Star Field Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

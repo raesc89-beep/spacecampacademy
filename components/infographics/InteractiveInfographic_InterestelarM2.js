@@ -79,144 +79,207 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'descubrimiento-2017',
-    title: 'El Descubrimiento',
-    color: '#FFB74D',
-    btnImage: '/assets/interestelar/infographic_m2/btn_descubrimiento-2017.jpg',
-    image: '/assets/interestelar/infographic_m2/hero_descubrimiento-2017.jpg',
-    content: [
-      'El 19 de octubre de 2017, el investigador Robert Weryk notó algo inusual en las imágenes de su telescopio. Trabajaba en el observatorio Pan-STARRS1 en Hawái, que escanea el cielo en busca de asteroides locales. Al principio, el objeto detectado parecía un asteroide ordinario.',
-      'Al calcular su trayectoria, descubrieron que no orbitaba el Sol. Los objetos locales tienen órbitas cerradas debido a la gravedad solar. Este objeto viajaba a 87 kilómetros por segundo, trazando una trayectoria hiperbólica abierta.',
-      'Su velocidad era tan alta que la gravedad del Sol no podía capturarlo. Esto indicaba que era un visitante fugaz. Había viajado por el espacio interestelar durante millones de años antes de cruzar nuestro sistema solar.',
-      'Este descubrimiento cambió la astronomía. Fue la primera prueba directa de objetos rocosos vagando entre las estrellas. Abrió una nueva era en la exploración de cuerpos interestelares.'
+    "id": "descubrimiento-2017",
+    "title": "El Descubrimiento",
+    "color": "#FFB74D",
+    "btnImage": "/assets/interestelar/infographic_m2/btn_descubrimiento-2017.jpg",
+    "image": "/assets/interestelar/infographic_m2/hero_descubrimiento-2017.jpg",
+    "content": [
+      "La noche del 19 de octubre de 2017, el astrónomo Robert Weryk examinaba las imágenes captadas por el telescopio Pan-STARRS1, ubicado en la cima del volcán Haleakala en la isla hawaiana de Maui. El sistema automático de alerta había detectado un punto luminoso diminuto que se desplazaba con una rapidez angular desconcertante entre las estrellas fijas de la constelación de Pegaso. El objeto no coincidía con ninguna órbita de asteroide o cometa catalogado previamente en las bases de datos de la NASA.",
+      "Al rastrear la posición preliminar hacia atrás en el tiempo, los astrofísicos descubrieron que el cuerpo ya había cruzado su punto más cercano al Sol, denominado perihelio, el 9 de septiembre de 2017. En aquel instante crítico pasó a solo 38 millones de kilómetros del astro rey, una distancia inferior a la órbita de Mercurio. La gravedad solar curvó bruscamente su rumbo antes de que cualquier telescopio terrestre hubiese registrado su presencia, catapultándolo hacia el espacio exterior a una velocidad vertiginosa.",
+      "El Centro de Planetas Menores de la Unión Astronómica Internacional clasificó inicialmente al viajero como el cometa C/2017 U1. No obstante, observaciones inmediatas de alta resolución efectuadas desde el Very Large Telescope en Chile demostraron de forma concluyente la ausencia total de coma gaseosa o cola de polvo. Ante la falta de actividad cometaria detectable, los científicos rectificaron rápidamente su clasificación formal para designarlo como el asteroide A/2017 U1.",
+      "El análisis orbital definitivo reveló un parámetro asombroso: una excentricidad orbital de 1.1995. En mecánica celeste, cualquier órbita con excentricidad mayor que 1.0 describe una hipérbola abierta, lo que demuestra matemáticamente que el cuerpo no se encuentra ligado por la fuerza gravitatoria del Sol. Procedía directamente del espacio profundo interestelar a una velocidad asintótica de 26.3 kilómetros por segundo, marcando un hito histórico sin precedentes en la astronomía moderna.",
+      "La trayectoria hiperbólica evidenció que el intruso descendió desde una dirección cercana a la estrella Vega, en la constelación de Lyra, atravesando el plano de la eclíptica casi de forma perpendicular. Su velocidad de entrada era tan elevada que el tirón gravitatorio de los planetas gigantes gaseosos apenas pudo perturbar levemente su camino de escape. La humanidad contemplaba por primera vez en la historia un mensajero tangible expulsado de otro sistema planetario lejano."
     ],
-    expandables: [
-      { label: 'El Telescopio Pan-STARRS', icon: 'zap', text: 'El telescopio Pan-STARRS1 en Hawái tiene una cámara de 1.400 megapíxeles. Está diseñado para detectar objetos pequeños y rápidos que se mueven por el cielo nocturno.' },
-      { label: 'Velocidad Increíble', icon: 'clock', text: 'Oumuamua pasó por el Sol a casi 315.000 kilómetros por hora. A esa velocidad, el viaje de la Tierra a la Luna tomaría poco más de una hora.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cuando Robert Weryk revisó las placas de Pan-STARRS, pensó que se trataba de un asteroide ordinario cercano a la Tierra. Para despejar cualquier duda, contactó con el astrónomo Marco Micheli en la estación óptica de la Agencia Espacial Europea en Tenerife. Al combinar ambas mediciones, comprendieron con asombro que ningún proceso gravitatorio interno del sistema solar podía generar semejante trayectoria hiperbólica."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad hiperbólica de exceso al infinito de 'Oumuamua se fijó en 26.33 kilómetros por segundo respecto al estándar local de reposo galáctico. Esta velocidad relativa concuerda con las velocidades promedio de las estrellas vecinas en el disco de la Vía Láctea, lo que confirma que vagó durante cientos de millones de años por el vacío interestelar antes de cruzarse casualmente con nuestro Sol."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m2/banner_descubrimiento-2017.webp',
-    bannerCaption: 'Descubrimiento 2017: Robert Weryk en Pan-STARRS detectó el primer visitante interestelar confirmado',
-    fact: 'Oumuamua fue descubierto 40 días después de su máxima aproximación al Sol. Los astrónomos tuvieron solo unas semanas para observarlo antes de que se volviera demasiado tenue.'
+    "bannerImage": "/assets/interestelar/infographic_m2/banner_descubrimiento-2017.webp",
+    "bannerCaption": "Descubrimiento 2017: Robert Weryk en Pan-STARRS detectó el primer visitante interestelar confirmado",
+    "fact": "La excentricidad orbital calculada para 'Oumuamua alcanzó un valor histórico de e = 1.1995, superando con creces el récord previo de cualquier cometa conocido. Este valor numérico certificó matemáticamente y sin ambigüedad su procedencia extrasolar, demostrando que viajaba en una órbita hiperbólica no confinada al pozo de potencial gravitatorio del Sol."
   },
   {
-    id: 'nombre-hawaiano',
-    title: 'El Nombre Hawaiano',
-    color: '#EF5350',
-    btnImage: '/assets/interestelar/infographic_m2/btn_nombre-hawaiano.jpg',
-    image: '/assets/interestelar/infographic_m2/hero_nombre-hawaiano.jpg',
-    content: [
-      'Clasificar este objeto fue difícil. Recibió la etiqueta temporal C/2017 U1 por considerarse un cometa. Al no tener cola de gas, se cambió a A/2017 U1 como asteroide, pero ninguna categoría local encajaba.',
-      'La Unión Astronómica Internacional creó una nueva clasificación para objetos interestelares: "I". El objeto fue nombrado 1I/2017 U1. El "1I" indica que es el primer cuerpo interestelar descubierto.',
-      'El equipo descubridor eligió un nombre especial. Consultaron con expertos en lengua hawaiana y eligieron "Oumuamua". Significa "el primer mensajero que llega de lejos".',
-      'El nombre compara al objeto con un explorador antiguo. Representa a un emisario enviado desde un sistema estelar desconocido. También honra la cultura hawaiana y los observatorios de las islas.'
+    "id": "nombre-hawaiano",
+    "title": "El Nombre Hawaiano",
+    "color": "#EF5350",
+    "btnImage": "/assets/interestelar/infographic_m2/btn_nombre-hawaiano.jpg",
+    "image": "/assets/interestelar/infographic_m2/hero_nombre-hawaiano.jpg",
+    "content": [
+      "El descubrimiento de un objeto procedente de fuera del sistema solar planteó un reto taxonómico sin precedentes a la Unión Astronómica Internacional. Las convenciones astronómicas tradicionales solo contemplaban prefijos para asteroides numerados o cometas periódicos identificados con la letra P o no periódicos con la letra C. Ninguna nomenclatura existente estaba diseñada para clasificar de manera inequívoca a un cuerpo macroscópico genuinamente interestelar.",
+      "Ante esta circunstancia excepcional, la Unión Astronómica Internacional aprobó en noviembre de 2017 una serie formal completamente nueva: la letra «I» de interestelar. De este modo, el intruso cósmico recibió la designación oficial definitiva 1I/2017 U1, estableciendo un catálogo permanente para registrar todos los visitantes interestelares que la tecnología astronómica fuera capaz de descubrir en las décadas venideras a lo largo de nuestro vecindario galáctico.",
+      "El equipo de investigación de Pan-STARRS, responsable del avistamiento original en la cima del volcán Haleakala, decidió otorgarle un nombre propio arraigado en la tradición cultural de la región donde operaba el telescopio. Consultaron a Ka'iu Kimura y a Larry Kimura, prestigiosos profesores y especialistas en lengua hawaiana del Centro Astronómico 'Imiloa de la Universidad de Hawái en Hilo, buscando una denominación con profundo significado astronómico y cultural.",
+      "Los lingüistas propusieron el término tradicional 'Oumuamua, cuya pronunciación se inicia con un 'okina, un signo que representa una oclusión glotal fonética en el idioma hawaiano. La palabra se descompone etimológicamente en 'ou, que alude a extender la mano o alcanzar, y mua, repetido para denotar énfasis cronológico o espacial superlativo. Su significado poético y descriptivo se traduce literalmente como «el primer mensajero lejano que llega a nuestro encuentro».",
+      "La asignación del nombre fue acogida con entusiasmo por la comunidad astronómica internacional porque encarnaba con fidelidad la trascendencia científica del suceso. Por primera vez, un objeto foráneo traía consigo información química y geológica directa sobre los materiales primordiales que integran los sistemas protoplanetarios alrededor de otras estrellas. Su denominación honró la histórica tradición de navegación astronómica oceánica de los antiguos polinesios."
     ],
-    expandables: [
-      { label: 'Pronunciación', icon: 'zap', text: 'El nombre incluye una pausa glotal llamada okina, escrita como \'Oumuamua. Muchos medios de comunicación tuvieron dificultades para pronunciarlo correctamente.' },
-      { label: 'La Nueva Categoría', icon: 'atom', text: 'Ahora existe una regla para nombrar estos objetos. El segundo cuerpo interestelar descubierto en 2019 se designó 2I/Borisov, honrando a su descubridor.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El prefijo «1I» se creó específicamente en una reunión extraordinaria de la Unión Astronómica Internacional celebrada pocas semanas después del avistamiento. Hasta ese momento histórico, los astrónomos debatían si debían bautizarlo con nombres mitológicos grecorromanos convencionales, pero la belleza conceptual de la propuesta hawaiana inspiró un consenso unánime que honró las raíces del observatorio descubridor."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La convención de nomenclatura de la Unión Astronómica Internacional estipula que la designación «1I» es permanente e intransferible. El código formal completo 1I/2017 U1 combina el número secuencial de clase interestelar, el año del avistamiento inicial, el código de quincena del mes de octubre representada por la letra U y el número de orden temporal de identificación en dicha quincena."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m2/banner_nombre-hawaiano.webp',
-    bannerCaption: 'El nombre hawaiano: Oumuamua significa mensajero llegado desde lejos, el primer emisario interestelar',
-    fact: 'El equipo consideró llamarlo "Rama" por la novela de Arthur C. Clarke. Finalmente optaron por un nombre que honrara a Hawái y su tradición astronómica.'
+    "bannerImage": "/assets/interestelar/infographic_m2/banner_nombre-hawaiano.webp",
+    "bannerCaption": "El nombre hawaiano: Oumuamua significa mensajero llegado desde lejos, el primer emisario interestelar",
+    "fact": "La creación de la categoría interestelar «I» marcó un hito en la historia de la taxonomía astronómica mundial. 'Oumuamua inauguró formalmente el registro como 1I/2017 U1, garantizando que todos los futuros cuerpos hiperbólicos detectados posean una identidad sistemática rigurosa que diferencie su origen extrasolar de los asteroides y cometas locales del sistema solar."
   },
   {
-    id: 'forma-enigmatica',
-    title: 'La Forma Enigmática',
-    color: '#AB47BC',
-    btnImage: '/assets/interestelar/infographic_m2/btn_forma-enigmatica.jpg',
-    image: '/assets/interestelar/infographic_m2/hero_forma-enigmatica.jpg',
-    content: [
-      'La mayoría de los asteroides locales tienen formas esféricas o irregulares. Oumuamua sorprendió a los científicos al mostrar fluctuaciones extremas en su brillo. Su luz aumentaba y disminuía periódicamente cada 7.3 horas.',
-      'Estos cambios de luz indicaban que Oumuamua tenía una forma muy alargada. Se calcula que era unas diez veces más largo que ancho, midiendo aproximadamente 230 metros de longitud y 35 metros de espesor.',
-      'Ningún cuerpo conocido de nuestro sistema solar tiene estas proporciones. Los científicos plantearon que pudo formarse en un evento cataclísmico. Una colisión planetaria o el tirón gravitacional de una estrella podrían haberlo estirado y fragmentado.',
-      'Otra teoría sugiere que Oumuamua tiene una forma achatada, como un disco. En cualquier caso, sus proporciones extremas reflejan las condiciones violentas de su sistema de origen.'
+    "id": "forma-enigmatica",
+    "title": "La Forma Enigmática",
+    "color": "#AB47BC",
+    "btnImage": "/assets/interestelar/infographic_m2/btn_forma-enigmatica.jpg",
+    "image": "/assets/interestelar/infographic_m2/hero_forma-enigmatica.jpg",
+    "content": [
+      "A medida que los observatorios terrestres más potentes del planeta concentraban sus detectores ópticos en 'Oumuamua, los datos fotométricos comenzaron a revelar anomalías asombrosas en su curva de brillo. El brillo aparente del objeto aumentaba y disminuía periódicamente de manera rítmica en un factor de diez a uno, lo que corresponde a una variación fotométrica extrema de aproximadamente dos magnitudes y media cada pocas horas de observación continua.",
+      "Los astrofísicos determinaron que esta oscilación fotométrica colosal se repetía con un período rotacional medio de entre 7.3 y 8.1 horas. En cuerpos celestes relativamente esféricos, las variaciones de brillo apenas superan unas pocas décimas de magnitud debido a contrastes en el albedo de su superficie. Una modulación de diez a uno solo puede explicarse físicamente si el objeto exhibe una geometría extraordinariamente asimétrica y rota sobre su eje mostrando áreas proyectadas muy dispares.",
+      "El análisis morfológico detallado, realizado mediante complejas inversiones matemáticas de la curva de luz observada por el Very Large Telescope en Chile, indicó una razón de aspecto de al menos seis a uno, y potencialmente de diez a uno. Si bien las primeras recreaciones artísticas y modelos numéricos preliminares propusieron una silueta alargada semejante a un gigantesco cigarro cósmico de cuatrocientos metros de longitud, análisis posteriores sugirieron una forma aplanada parecida a un disco o panqueque.",
+      "Ningún asteroide o cometa nativo del sistema solar exhibe una relación de elongación tan extrema. Los cuerpos rocosos de nuestro entorno suelen presentar proporciones de longitud respecto a anchura no superiores a tres a uno, ya que tensiones de marea y colisiones mutuas tienden a amortiguar formas exageradamente esbeltas. La silueta de 'Oumuamua indicaba una resistencia mecánica interna notable o una historia colisional violenta en su sistema planetario de origen.",
+      "Además de su acusada elongación geométrica, las mediciones revelaron que 'Oumuamua no giraba alrededor de un único eje principal estable. Se encontraba en un estado dinámico denominado rotación caótica o volteo desordenado (tumbling), tambaleándose en el espacio tridimensional como una peonza desbalanceada. Esta oscilación compleja implica que el objeto continuará volteándose durante miles de millones de años antes de que la disipación interna de energía logre estabilizarlo."
     ],
-    expandables: [
-      { label: 'Rotación Caótica', icon: 'zap', text: 'Oumuamua no gira sobre un solo eje, sino que experimenta una rotación no principal. Este movimiento de volteretas caóticas sugiere que sufrió impactos en su pasado.' },
-      { label: 'El Desafío Visual', icon: 'clock', text: 'Ningún telescopio pudo fotografiar la forma real de Oumuamua. Solo aparecía como un punto de luz. Su forma alargada se dedujo matemáticamente a partir de sus variaciones de brillo.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La reconstrucción de la forma de 'Oumuamua obligó a los astrónomos a descartar la idea de una esfera simple. Al presentar alternativamente su cara más extensa y luego su sección transversal mínima hacia la Tierra, la cantidad de fotones solares reflejados fluctuaba en un 90 por ciento, un comportamiento lumínico jamás observado en ningún asteroide de tamaño equivalente en el cinturón principal."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El modelado fotométrico tridimensional restringió las dimensiones principales de 'Oumuamua en rangos estimados de 100 a 400 metros de longitud por 35 a 100 metros de anchura y espesor. Su período de rotación principal de 7.34 horas se combina con un modo de precesión libre que induce tensiones mecánicas mínimas estimadas en varios cientos de pascales en su interior rocoso."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m2/banner_forma-enigmatica.webp',
-    bannerCaption: 'Forma enigmática: relación 10:1 de elongación, como una lenteja plana girando nunca vista antes',
-    fact: 'Su forma extrema exige una alta cohesión estructural para evitar romperse al girar. Los científicos creen que su interior es denso y metálico, no un aglomerado de polvo.'
+    "bannerImage": "/assets/interestelar/infographic_m2/banner_forma-enigmatica.webp",
+    "bannerCaption": "Forma enigmática: relación 10:1 de elongación, como una lenteja plana girando nunca vista antes",
+    "fact": "La variación fotométrica de 2.5 magnitudes observada en la curva de luz de 'Oumuamua equivale a una alternancia de diez veces en su luminosidad aparente reflejada. Esta evidencia cuantitativa confirmó una relación de aspecto de al menos 6:1, convirtiéndolo en el cuerpo celeste natural más elongado jamás registrado por la instrumentación astronómica moderna."
   },
   {
-    id: 'aceleracion-misteriosa',
-    title: 'Aceleración Misteriosa',
-    color: '#26A69A',
-    btnImage: '/assets/interestelar/infographic_m2/btn_aceleracion-misteriosa.jpg',
-    image: '/assets/interestelar/infographic_m2/hero_aceleracion-misteriosa.jpg',
-    content: [
-      'Oumuamua presentó otra anomalía en su trayectoria. A medida que se alejaba del Sol, los telescopios detectaron una aceleración inesperada. El objeto se desviaba ligeramente de la ruta dictada por la gravedad solar.',
-      'Esta "aceleración no gravitacional" es común en los cometas. Cuando el hielo se sublima por el calor, los chorros de gas actúan como propulsores naturales. Sin embargo, Oumuamua no mostraba ninguna cola visible.',
-      'El telescopio infrarrojo Spitzer buscó señales de gas o polvo, pero no detectó nada. La ausencia de desgasificación visible dejó perplejos a los científicos. ¿Cómo podía acelerar sin emitir material?',
-      'Esta incógnita desató un debate en la comunidad astronómica. Las teorías intentaron explicar qué fuerza impulsaba a Oumuamua. Se propusieron desde hielos invisibles hasta radiación solar empujando su superficie.'
+    "id": "aceleracion-misteriosa",
+    "title": "Aceleración Misteriosa",
+    "color": "#26A69A",
+    "btnImage": "/assets/interestelar/infographic_m2/btn_aceleracion-misteriosa.jpg",
+    "image": "/assets/interestelar/infographic_m2/hero_aceleracion-misteriosa.jpg",
+    "content": [
+      "A principios de 2018, un equipo internacional liderado por el astrofísico Marco Micheli llevó a cabo un seguimiento astrométrico ultrapreciso de la trayectoria de 'Oumuamua utilizando observaciones conjuntas del Telescopio Espacial Hubble, el telescopio Canada-France-Hawaii y el Very Large Telescope. El objetivo era fijar con exactitud matemática el vector de salida del objeto a medida que se alejaba en dirección al sistema solar exterior.",
+      "Al contrastar las coordenadas observadas con las ecuaciones gravitatorias clásicas de la relatividad general y la mecánica newtoniana que integran la masa del Sol y de todos los planetas y asteroides mayores, los investigadores detectaron una discordancia sistemática. 'Oumuamua se encontraba ligeramente por delante de la posición prevista por la física gravitatoria pura. Algo le estaba proporcionando un empuje continuo alejándolo radialmente del Sol.",
+      "En los cometas habituales del sistema solar, este tipo de aceleración no gravitacional es un fenómeno físico muy común y bien comprendido. Se produce por la sublimación térmica de hielos superficiales de agua, monóxido y dióxido de carbono al aproximarse al calor solar. Los gases sublimados salen eyectados a presión hacia el espacio formando chorros o jets que actúan exactamente igual que los motores cohete de propulsión a reacción.",
+      "Sin embargo, el caso de 'Oumuamua desconcertó por completo a los especialistas. A pesar de los análisis espectrales más profundos efectuados con el Telescopio Espacial Spitzer en el infrarrojo térmico, no se detectó la menor presencia de gas cianógeno, monóxido de carbono, agua o partículas microscópicas de polvo rodeando al cuerpo. Si existía una desgasificación capaz de acelerar el objeto, debía ser químicamente invisible o completamente anómala para los sensores terrestres.",
+      "La magnitud calculada para esta aceleración anómala resultó ser inversamente proporcional al cuadrado de la distancia al Sol, comportándose con una dependencia matemática de 1 sobre r al cuadrado. Dicho comportamiento cinemático es característico tanto de la sublimación impulsada por radiación solar térmica como del empuje ejercido por la presión directa de radiación lumínica solar sobre una superficie delgada y altamente reflectante."
     ],
-    expandables: [
-      { label: 'Presión de Radiación', icon: 'zap', text: 'Los fotones de la luz solar pueden empujar objetos en el espacio. Algunos sugirieron que Oumuamua era un cuerpo poroso de baja densidad que aceleraba por la presión de radiación.' },
-      { label: 'El Telescopio Spitzer', icon: 'atom', text: 'El telescopio espacial Spitzer observa el universo en luz infrarroja. Su incapacidad para detectar polvo o gas alrededor de Oumuamua demostró que no era un cometa típico.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La aceleración no gravitacional de 'Oumuamua fue minúscula pero acumulativa: del orden de 5 millonésimas de metro por segundo al cuadrado en las inmediaciones del perihelio. Aunque parezca imperceptible para un vehículo cotidiano en la Tierra, a lo largo de varias semanas de viaje cósmico desvió la posición del asteroide en decenas de miles de kilómetros respecto al pronóstico balístico estándar."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El Telescopio Espacial Spitzer apuntó hacia 'Oumuamua durante más de treinta horas de exposición acumulada en el infrarrojo medio sin detectar firmas de emisión térmica de polvo. El límite superior derivado fijó que el objeto no podía estar emitiendo más de unos pocos gramos de granos de silicato por segundo, descartando la desgasificación cometaria convencional rica en polvo."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m2/banner_aceleracion-misteriosa.webp',
-    bannerCaption: 'Aceleración misteriosa: Oumuamua aceleró sin eyección de gas visible, el mayor misterio de su visita',
-    fact: 'La aceleración fue de pocas milésimas de milímetro por segundo al cuadrado. Aunque pequeña, fue suficiente para desviar al objeto miles de kilómetros de la trayectoria calculada.'
+    "bannerImage": "/assets/interestelar/infographic_m2/banner_aceleracion-misteriosa.webp",
+    "bannerCaption": "Aceleración misteriosa: Oumuamua aceleró sin eyección de gas visible, el mayor misterio de su visita",
+    "fact": "El análisis astrométrico definitivo certificó que 'Oumuamua experimentó una aceleración no gravitacional radial positiva proporcional a 1/r², con una magnitud en el perihelio de aproximadamente 4.92 × 10⁻⁶ m/s². Este empuje alejó al objeto de su órbita gravitatoria pura sin producir una coma óptica o infrarroja detectable por ningún telescopio espacial."
   },
   {
-    id: 'hipotesis-cientificas',
-    title: 'Las Hipótesis',
-    color: '#42A5F5',
-    btnImage: '/assets/interestelar/infographic_m2/btn_hipotesis-cientificas.jpg',
-    image: '/assets/interestelar/infographic_m2/hero_hipotesis-cientificas.jpg',
-    content: [
-      'Las anomalías de Oumuamua motivaron múltiples hipótesis. Avi Loeb, de la Universidad de Harvard, sugirió que podría ser una estructura artificial. Propuso que funcionaba como una vela solar fabricada por una civilización alienígena.',
-      'La mayoría de los científicos prefirió explicaciones naturales. En 2021, Steven Desch y Alan Jackson postularon que era un fragmento de un exoplaneta. Si estaba compuesto de nitrógeno congelado, el gas sublimado sería invisible para los telescopios.',
-      'Otra teoría propuso que era un iceberg de hidrógeno molecular. Formado en nubes moleculares frías, liberaría gas hidrógeno invisible al calentarse. Los críticos señalaron que un bloque de hidrógeno no sobreviviría el largo viaje.',
-      'Una hipótesis reciente plantea que es un cometa de agua. Los rayos cósmicos atraparon hidrógeno dentro del hielo durante el viaje. Al acercarse al Sol, este hidrógeno escapó y causó la aceleración sin generar polvo visible.'
+    "id": "hipotesis-cientificas",
+    "title": "Las Hipótesis",
+    "color": "#42A5F5",
+    "btnImage": "/assets/interestelar/infographic_m2/btn_hipotesis-cientificas.jpg",
+    "image": "/assets/interestelar/infographic_m2/hero_hipotesis-cientificas.jpg",
+    "content": [
+      "La ausencia de polvo cometario y la inusual aceleración no gravitacional dieron origen a una intensa carrera de modelos teóricos para desentrañar la verdadera naturaleza física de 'Oumuamua. La comunidad científica se dividió en diversas corrientes que exploraron desde composiciones criogénicas exóticas hasta geometrías extremas moldeadas por la radiación cósmica galáctica a lo largo de millones de años de periplo interestelar.",
+      "Una de las propuestas teóricas más elegantes fue formulada por los astrofísicos Darryl Seligman y Gregory Laughlin en 2020. Plantearon que 'Oumuamua podría ser un iceberg cósmico compuesto predominantemente por hielo de hidrógeno molecular puro (H2). El hidrógeno molecular sublima a temperaturas extraordinariamente bajas de tan solo unos pocos kelvin, permitiendo una desgasificación enérgica e indetectable ópticamente en el perihelio que suministraría el empuje requerido sin expulsar polvo.",
+      "Poco después, los científicos Alan Jackson y Steven Desch propusieron que el objeto representaba un fragmento desprendido de la corteza congelada de un exo-Plutón rico en hielo de nitrógeno sólido (N2). Según este modelo geológico, colisiones protoplanetarias masivas en sistemas extrasolares habrían eyectado fragmentos ricos en nitrógeno puro, cuya reflectividad superficial y tasa de ablación concordarían de manera precisa con las observaciones cinemáticas registradas por los observatorios terrestres.",
+      "En el plano más heterodoxo del debate, los astrofísicos Shmuel Bialy y Avi Loeb, del Centro de Astrofísica Harvard-Smithsonian, publicaron un artículo sugiriendo que la aceleración por 1 sobre r al cuadrado podía atribuirse directamente a la presión de radiación solar. Para que este mecanismo fuese efectivo sin masa eyectada, calcularon que 'Oumuamua debía poseer un espesor diminuto de menos de un milímetro con decenas de metros de superficie, especulando con la posibilidad de una vela de luz artificial o restos de tecnología alienígena.",
+      "La inmensa mayoría de la comunidad astrofísica mundial desestimó la conjetura tecnológica artificial, exigiendo explicaciones estrictamente naturales basadas en los principios de la física de la materia condensada. En 2023, una sólida investigación liderada por Jennifer Bergner y Darryl Seligman en la revista Nature demostró que los rayos cósmicos galácticos bombardean hielos de agua ordinarios en el medio interestelar, dissociando moléculas de H2O y atrapando hidrógeno molecular gaseoso en la matriz porosa."
     ],
-    expandables: [
-      { label: 'La Navaja de Ockham', icon: 'zap', text: 'La ciencia prefiere explicaciones basadas en leyes físicas conocidas. Las teorías sobre hielo de nitrógeno o hidrógeno son más aceptadas que la hipótesis alienígena.' },
-      { label: 'Efecto Yarkovsky', icon: 'atom', text: 'Los asteroides experimentan pequeñas aceleraciones al irradiar calor solar. Los cálculos demostraron que este efecto térmico era insuficiente para explicar la aceleración de Oumuamua.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La hipótesis de la vela de luz extraterrestre atrajo una inmensa atención mediática global en 2018. El proyecto Breakthrough Listen orientó el gigantesco radiotelescopio de Green Bank en Virginia Occidental hacia 'Oumuamua para buscar señales de radio artificiales en múltiples frecuencias, concluyendo con un silencio radioeléctrico absoluto que descartó cualquier transmisión activa."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El modelo de Bergner y Seligman demostró en laboratorio que la radiólisis por rayos cósmicos procesa hielos de agua a profundidades de varios metros durante travesías interestelares de más de 100 millones de años. La liberación del H2 entrampado genera una fuerza específica suficiente para acelerar cuerpos de escala hectométrica sin requerir volátiles exóticos inestables."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m2/banner_hipotesis-cientificas.webp',
-    bannerCaption: 'Hipótesis científicas: iceberg de nitrógeno, cometa de hidrógeno o... la hipótesis alienígena de Loeb',
-    fact: 'El profesor Avi Loeb fundó el "Proyecto Galileo" para buscar otros artefactos de tecnología interestelar utilizando IA y redes de telescopios.'
+    "bannerImage": "/assets/interestelar/infographic_m2/banner_hipotesis-cientificas.webp",
+    "bannerCaption": "Hipótesis científicas: iceberg de nitrógeno, cometa de hidrógeno o... la hipótesis alienígena de Loeb",
+    "fact": "La investigación publicada en Nature en 2023 demostró que la radiólisis inducida por rayos cósmicos sobre hielo de agua en el medio interestelar genera y atrapa hidrógeno molecular (H₂). Al calentarse en el perihelio, este gas se libera mecánicamente proporcionando el empuje exacto observado sin levantar granos de polvo ni requerir hipótesis artificiales."
   },
   {
-    id: 'composicion-superficie',
-    title: 'Superficie y Composición',
-    color: '#FF7043',
-    btnImage: '/assets/interestelar/infographic_m2/btn_composicion-superficie.jpg',
-    image: '/assets/interestelar/infographic_m2/hero_composicion-superficie.jpg',
-    content: [
-      'Sin muestras directas, los astrónomos analizaron la luz reflejada por Oumuamua mediante espectroscopia. Los datos revelaron que su superficie era de color rojo oscuro. Este tono es similar al de los objetos transneptunianos.',
-      'El color rojizo se debe a la irradiación de compuestos de carbono. La exposición prolongada a los rayos cósmicos y la radiación ultravioleta transforma el material orgánico. Se forma una costra gruesa conocida como "tolinas".',
-      'Esta costra oscura actúa como un escudo térmico protector. Si Oumuamua tiene un interior helado, las tolinas evitaron que se sublimara rápidamente. Esto explicaría la ausencia de una coma cometaria.',
-      'El análisis espectral no halló agua ni silicatos comunes. Su composición difiere de los asteroides locales. Oumuamua es un fragmento envuelto en material orgánico irradiado durante su travesía interestelar.'
+    "id": "composicion-superficie",
+    "title": "Superficie y Composición",
+    "color": "#FF7043",
+    "btnImage": "/assets/interestelar/infographic_m2/btn_composicion-superficie.jpg",
+    "image": "/assets/interestelar/infographic_m2/hero_composicion-superficie.jpg",
+    "content": [
+      "A pesar de que 'Oumuamua se alejaba con rapidez y su brillo aparente decaía vertiginosamente, los astrónomos consiguieron obtener perfiles espectroscópicos fundamentales utilizando el Very Large Telescope de ESO en cerro Paranal y el Telescopio William Herschel en la isla de La Palma. Los espectros en el rango óptico e infrarrojo cercano revelaron una firma espectral continua y homogénea sin líneas de emisión o absorción pronunciadas.",
+      "La característica física más sobresaliente de su superficie fue una pendiente espectral marcadamente rojiza, con un color comparable al de los asteroides de tipo D y a los cuerpos helados primitivos del cinturón de Kuiper en los confines del sistema solar. Este enrojecimiento superficial no indica la presencia de óxido de hierro como en el planeta Marte, sino la acción milenaria de procesos fotoquímicos y radiolíticos de alta energía.",
+      "A lo largo de decenas o cientos de millones de años de deriva en el vacío interestelar, el objeto careció de cualquier campo magnético o atmósfera que lo protegiera contra el incesante bombardeo de los rayos cósmicos galácticos y la radiación ultravioleta del medio interestelar. Esta radiación ionizante rompe los enlaces moleculares de los hielos simples de metano, monóxido de carbono y amoníaco, induciendo complejas reacciones de polimerización orgánica.",
+      "El producto resultante de esta degradación continua es una corteza superficial rica en compuestos carbonáceos complejos conocidos en astrobiología y química planetaria como tolinas. Estas macromoléculas orgánicas refractarias forman un manto protector oscuro y rojizo de hasta medio metro de espesor que aísla térmicamente el interior del asteroide, sellando eficazmente los posibles depósitos de hielo subyacentes frente a la radiación solar incidente.",
+      "Los análisis de polarimetría óptica confirmaron además que la superficie de 'Oumuamua presenta un albedo muy bajo, reflejando probablemente menos del diez por ciento de la luz solar que incide sobre ella. Su aspecto exterior es comparable al carbón vegetal húmedo o al asfalto desgastado, desmintiendo las representaciones artísticas de una roca metálica reluciente y ratificando su naturaleza geológica primitiva y carbonácea."
     ],
-    expandables: [
-      { label: 'Espectroscopía', icon: 'zap', text: 'La espectroscopía identifica los materiales por cómo reflejan y absorben la luz. Permite conocer la composición de objetos distantes a partir de su firma luminosa.' },
-      { label: 'El Escudo Protector', icon: 'clock', text: 'La gruesa capa de tolinas se forma tras millones de años de exposición a la radiación cósmica. Indica que Oumuamua tuvo un viaje muy largo por el medio interestelar.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El término «tolina» fue acuñado originalmente por el célebre astrónomo Carl Sagan en 1979 para describir los polímeros orgánicos complejos rojizos creados artificialmente en el laboratorio al irradiar con chispas eléctricas mezclas de gases simples como metano, amoníaco y agua, simulando las atmósferas y superficies de los mundos exteriores."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las observaciones espectroscópicas en el infrarrojo cercano efectuadas con el instrumento X-Shooter del VLT confirmaron que el índice espectral de 'Oumuamua se mantuvo invariable durante toda su rotación. Esto demuestra que la composición química superficial y la cobertura de tolinas son notablemente uniformes a lo largo de toda su superficie irregular."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m2/banner_composicion-superficie.webp',
-    bannerCaption: 'Composición superficial: costra orgánica roja formada por millones de años de radiación cósmica interestelar',
-    fact: 'Oumuamua tiene un albedo muy bajo, similar al del carbón. Al reflejar muy poca luz, fue muy difícil detectarlo contra el fondo oscuro del espacio.'
+    "bannerImage": "/assets/interestelar/infographic_m2/banner_composicion-superficie.webp",
+    "bannerCaption": "Composición superficial: costra orgánica roja formada por millones de años de radiación cósmica interestelar",
+    "fact": "Los espectros ópticos e infrarrojos obtenidos por el Very Large Telescope demostraron que la superficie de 'Oumuamua posee un índice de color neutro a marcadamente rojizo provocado por una capa de tolinas orgánicas de al menos 0.5 metros de grosor, sintetizada tras eones de exposición a los rayos cósmicos en el espacio interestelar."
   },
   {
-    id: 'legado-cientifico',
-    title: 'El Legado Científico',
-    color: '#FFC107',
-    btnImage: '/assets/interestelar/infographic_m2/btn_legado-cientifico.jpg',
-    image: '/assets/interestelar/infographic_m2/hero_legado-cientifico.jpg',
-    content: [
-      'El paso de Oumuamua demostró que nuestro sistema solar interactúa con objetos galácticos. Antes de su hallazgo, los objetos interestelares solo existían en teorías matemáticas y simulaciones de formación planetaria.',
-      'Oumuamua confirmó que la formación de planetas expulsa millones de cuerpos al espacio. Escombros como este vagan por la Vía Láctea tras ser expulsados por la gravedad de planetas gigantes nacientes.',
-      'Su descubrimiento impulsó el desarrollo de nuevos telescopios e instrumentos. El Observatorio Vera C. Rubin se construye para encontrar más de estos visitantes de forma temprana. La búsqueda pasó de ser accidental a un objetivo prioritario.',
-      'Este visitante también inspiró futuros proyectos espaciales. Iniciativas como el "Proyecto Lyra" estudian sondas rápidas capaces de interceptar objetos interestelares. Oumuamua sentó las bases para estudiar materia de otras estrellas en nuestro vecindario.'
+    "id": "legado-cientifico",
+    "title": "El Legado Científico",
+    "color": "#FFC107",
+    "btnImage": "/assets/interestelar/infographic_m2/btn_legado-cientifico.jpg",
+    "image": "/assets/interestelar/infographic_m2/hero_legado-cientifico.jpg",
+    "content": [
+      "El fugaz paso de 1I/'Oumuamua por nuestro sistema solar transformó radicalmente paradigmas teóricos consolidados durante siglos en las ciencias planetarias. Antes de 2017, la existencia de escombros interestelares errantes era únicamente una deducción matemática derivada de modelos de formación planetaria, pero no existía ni una sola prueba observacional directa de su abundancia en la galaxia.",
+      "A partir de este único avistamiento, los astrofísicos pudieron calcular por primera vez la densidad numérica de cuerpos interestelares en la Vía Láctea local. Los cálculos estadísticos indican que, en cualquier instante dado, deben encontrarse miles de millones de fragmentos rocosos y helados de escala kilométrica cruzando las órbitas de nuestro sistema solar interior, la inmensa mayoría de ellos demasiado oscuros y pequeños para los telescopios actuales.",
+      "El fenómeno impulsó el desarrollo de ambiciosas misiones espaciales dedicadas a la intercepción in situ de futuros intrusos hiperbólicos. La Agencia Espacial Europea aprobó formalmente la misión Comet Interceptor, una nave que será enviada al punto de Lagrange L2 para aguardar en estado de hibernación hasta que los observatorios terrestres descubran un nuevo cometa o asteroide interestelar virgen que pueda ser alcanzado en vuelo.",
+      "Asimismo, consorcios aeroespaciales privados y académicos diseñaron el Proyecto Lyra, un estudio de viabilidad técnica para evaluar el lanzamiento de nanosondas de propulsión avanzada capaces de perseguir a objetos interestelares en plena huida, empleando complejas maniobras de asistencia gravitatoria en Júpiter y en las proximidades del Sol mediante el denominado efecto Oberth solar.",
+      "En el ámbito de la observación terrestre, el legado de 'Oumuamua aceleró la optimización de los algoritmos de detección en sondeos panorámicos automatizados de gran campo. La comunidad científica aprendió que la detección temprana es crucial: encontrar al visitante interestelar antes del perihelio otorga meses de estudio detallado y permite coordinar las mayores instalaciones astronómicas del planeta."
     ],
-    expandables: [
-      { label: 'El Segundo Visitante', icon: 'zap', text: 'En 2019 se descubrió 2I/Borisov, el segundo cuerpo interestelar. A diferencia de Oumuamua, Borisov se comportó como un cometa típico, validando que el espacio está lleno de estos objetos.' },
-      { label: 'Misiones de Intercepción', icon: 'atom', text: 'La Agencia Espacial Europea planea la misión "Comet Interceptor". Lanzará una sonda que esperará en el espacio para interceptar a un nuevo visitante interestelar.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La misión Comet Interceptor de la ESA, cuyo lanzamiento está previsto para 2029, viajará al espacio sin un destino fijado de antemano. Permanecerá estacionada en el punto gravitatorio L2 a 1.5 millones de kilómetros de la Tierra, esperando pacientemente a que los astrónomos descubran un objetivo interestelar adecuado para encender sus motores e interceptarlo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los análisis de densidad de población interestelar derivados tras el paso de 'Oumuamua estiman que existen aproximadamente 1 × 10¹⁵ (mil billones) de objetos interestelares de más de cien metros de tamaño por cada pársec cúbico en el disco galáctico de la Vía Láctea, constituyendo una fracción significativa de la masa eyectada durante la migración planetaria."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m2/banner_legado-cientifico.webp',
-    bannerCaption: 'El legado científico: Oumuamua creó un campo científico nuevo y cambió la forma de estudiar el cosmos',
-    fact: 'Las estimaciones estadísticas sugieren que miles de objetos del tamaño de Oumuamua orbitan dentro de nuestro sistema solar en cualquier momento. La mayoría permanecen indetectados por su baja luminosidad y alta velocidad.'
+    "bannerImage": "/assets/interestelar/infographic_m2/banner_legado-cientifico.webp",
+    "bannerCaption": "El legado científico: Oumuamua creó un campo científico nuevo y cambió la forma de estudiar el cosmos",
+    "fact": "El paso de 1I/'Oumuamua demostró empíricamente por primera vez que el medio interestelar contiene una población colosal de residuos planetarios errantes. Este descubrimiento impulsó el desarrollo de la misión espacial Comet Interceptor de la ESA y redefinió los modelos cuantitativos sobre la masa total eyectada por los sistemas planetarios durante su formación."
   }
 ];
 

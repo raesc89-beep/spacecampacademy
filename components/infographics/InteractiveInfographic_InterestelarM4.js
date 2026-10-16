@@ -126,151 +126,207 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'sistema-atlas',
-    title: 'El Sistema ATLAS',
-    color: '#66BB6A',
-    btnImage: '/assets/interestelar/infographic_m4/btn_sistema-atlas.jpg',
-    image: '/assets/interestelar/infographic_m4/hero_sistema-atlas.jpg',
-    content: [
-      'El Sistema de Última Alerta de Impacto Terrestre de Asteroides (ATLAS) vigila el cielo nocturno. Financiado por la NASA, busca objetos que se acercan a la Tierra. Aunque su objetivo inicial eran los asteroides locales, ahora es una herramienta clave para detectar visitantes interestelares.',
-      'ATLAS cuenta con cuatro telescopios ubicados en Hawái, Chile y Sudáfrica. Esta distribución global permite observar el cielo continuamente. Al estar en diferentes husos horarios y hemisferios, el sistema reduce los puntos ciegos donde los objetos rápidos podrían ocultarse.',
-      'A diferencia de otros telescopios, ATLAS tiene un campo de visión amplio. Utiliza lentes gran angular y sensores de 100 megapíxeles para escanear el cielo. Cada exposición captura una gran porción del firmamento, permitiendo observar todo el cielo visible cada 24 horas.',
-      'La clave de ATLAS es la rapidez con la que vuelve a observar la misma región. Toma cuatro exposiciones por noche de cada zona. Mientras las estrellas permanecen fijas, los objetos cercanos o interestelares cambian de posición entre las imágenes.',
-      'El sistema genera grandes cantidades de datos que se procesan cada noche. ATLAS ha descubierto cientos de cometas y miles de asteroides. Su capacidad de escaneo lo hace ideal para interceptar objetos que viajan a altas velocidades desde otros sistemas estelares.'
+    "id": "sistema-atlas",
+    "title": "El Sistema ATLAS",
+    "color": "#66BB6A",
+    "btnImage": "/assets/interestelar/infographic_m4/btn_sistema-atlas.jpg",
+    "image": "/assets/interestelar/infographic_m4/hero_sistema-atlas.jpg",
+    "content": [
+      "El Sistema de Última Alerta de Impacto Terrestre de Asteroides, conocido formalmente por su acrónimo en inglés ATLAS (Asteroid Terrestrial-impact Last Alert System), es una infraestructura de vigilancia astronómica desarrollada por la Universidad de Hawái con financiamiento directo de la Oficina de Coordinación de Defensa Planetaria de la NASA. Su diseño óptico automatizado permite escanear el cielo cada noche con una eficiencia excepcional.",
+      "El proyecto se diseñó con un propósito primordial: escanear ininterrumpidamente la totalidad de la bóveda celeste visible varias veces por semana para identificar objetos celestes en movimiento rápido antes de que puedan colisionar contra la Tierra o perderse en la inmensidad del espacio profundo. Gracias a sus telescopios de amplio campo, puede alertar con días o semanas de antelación sobre pequeños asteroides y cuerpos errantes.",
+      "Inicialmente, el sistema constaba de dos telescopios gemelos automatizados ubicados en cimas estratégicas del archipiélago hawaiano: uno en la cumbre del volcán Haleakala en la isla de Maui y el segundo en el Observatorio de Maunaloa en la isla grande de Hawái. Esta disposición insular ofrecía cielos nocturnos con extraordinaria transparencia atmosférica.",
+      "Para transformar ATLAS en un escudo de vigilancia planetaria ininterrumpida de veinticuatro horas, la red se expandió hacia el hemisferio sur con la instalación de dos estaciones idénticas adicionales: una en el Observatorio Astronómico de Sudáfrica en Sutherland y otra en el Observatorio El Sauce en la región de Coquimbo en Chile. Esta cobertura global de cuatro estaciones complementa los hemisferios norte y sur sin interrupciones estacionales ni desfases horarios.",
+      "Cada una de las cuatro unidades está equipada con un telescopio reflector de cincuenta centímetros de apertura dotado de óptica Schmidt-Wright ultrarrápida f/2. Esta configuración óptica avanzada permite abarcar un campo visual inmenso de casi treinta grados cuadrados por disparo, equivalente al área de más de cien Lunas llenas proyectadas sobre el firmamento."
     ],
-    expandables: [
-      { label: 'Eventos Transitorios', icon: 'clock', text: 'ATLAS también detecta otros eventos celestes. Identifica supernovas, estrellas variables y destellos de colisiones estelares. Funciona como un sistema de vigilancia para diversos fenómenos astronómicos.' },
-      { label: 'Ingeniería Óptica', icon: 'zap', text: 'Cada telescopio ATLAS tiene un espejo primario de 50 centímetros. Aunque es pequeño para los estándares actuales, su diseño óptico y sensores le permiten escanear grandes áreas del cielo con gran eficiencia.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los telescopios de ATLAS no tienen operadores humanos mirando por oculares por la noche. Sus cúpulas abren automáticamente al ocultarse el Sol si las estaciones meteorológicas confirman la ausencia de nubes o lluvia, apuntan de manera robótica, procesan gigabytes de datos en segundos y envían alertas al instante sin intervención humana."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Cada estación de ATLAS utiliza una cámara CCD masiva de 110 megapíxeles enfriada criogénicamente que alcanza una magnitud límite de 19.5 en una exposición simple de treinta segundos. Esta sensibilidad instrumental permite detectar asteroides de cien metros de diámetro a distancias superiores a cuatro millones de kilómetros."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m4/banner_sistema-atlas.webp',
-    bannerCaption: 'Sistema ATLAS: cubre el cielo completo dos veces por noche buscando objetos de movimiento rápido',
-    fact: 'ATLAS descubrió el cometa C/2019 Y4 y ha detectado asteroides pequeños horas antes de que ingresaran a la atmósfera terrestre. Su eficacia para identificar objetos rápidos está comprobada.'
+    "bannerImage": "/assets/interestelar/infographic_m4/banner_sistema-atlas.webp",
+    "bannerCaption": "Sistema ATLAS: cubre el cielo completo dos veces por noche buscando objetos de movimiento rápido",
+    "fact": "La red de cuatro telescopios robotizados del sistema ATLAS inspecciona el firmamento nocturno completo cada 24 horas desde Hawái, Sudáfrica y Chile. Su campo de visión de 30 grados cuadrados por toma y su procesamiento digital instantáneo la convierten en una de las mayores plataformas mundiales de detección de intrusos interestelares."
   },
   {
-    id: 'deteccion-automatica',
-    title: 'Detección Automática',
-    color: '#F44336',
-    btnImage: '/assets/interestelar/infographic_m4/btn_deteccion-automatica.jpg',
-    image: '/assets/interestelar/infographic_m4/hero_deteccion-automatica.jpg',
-    content: [
-      'Procesar millones de imágenes requiere sistemas automatizados. Antes, los astrónomos usaban un microscopio de parpadeo para buscar cambios entre fotografías. Hoy, las computadoras analizan los datos de manera más rápida y eficiente.',
-      'El software de ATLAS alinea las imágenes y resta la primera de la segunda. Las estrellas estáticas se eliminan del resultado final. Los objetos que se mueven o cambian de brillo permanecen visibles en la imagen procesada.',
-      'Esta resta matemática presenta desafíos. El ruido de los sensores, los rayos cósmicos y los satélites generan falsas alarmas. ATLAS produce millones de detecciones por noche, y la mayoría son errores o basura espacial.',
-      'Los algoritmos de aprendizaje automático filtran estas señales. Analizan la forma, el brillo, la velocidad y la trayectoria de cada punto de luz. Este proceso selecciona a los candidatos reales que los astrónomos deben revisar.',
-      'El software detecta objetos con velocidades inusuales o trayectorias extrañas. Los visitantes interestelares pueden moverse tan rápido que dejan una línea en lugar de un punto. El sistema está diseñado para identificar estos trazos antes de que desaparezcan.'
+    "id": "deteccion-automatica",
+    "title": "Detección Automática",
+    "color": "#F44336",
+    "btnImage": "/assets/interestelar/infographic_m4/btn_deteccion-automatica.jpg",
+    "image": "/assets/interestelar/infographic_m4/hero_deteccion-automatica.jpg",
+    "content": [
+      "El volumen de datos digitales generado por los sensores de sondeos astronómicos modernos supera ampliamente la capacidad de análisis visual de cualquier equipo de astrónomos humanos. Cada noche de observación despejada produce decenas de miles de imágenes de alta resolución que contienen cientos de millones de estrellas y galaxias de fondo. Por esta razón, el procesamiento automatizado mediante redes neuronales y algoritmos de visión artificial resulta imprescindible.",
+      "Para identificar objetos en movimiento entre esa marea de luz estelar, los sistemas informáticos de ATLAS y Pan-STARRS recurren a algoritmos avanzados de sustracción digital de imágenes. El método consiste en tomar una fotografía astronómica del cielo nocturno y restarle píxel a píxel una plantilla estelar de referencia calibrada previamente del mismo sector cósmico.",
+      "Al restar digitalmente la imagen de referencia, todas las estrellas fijas, nebulosas y galaxias lejanas con brillo constante se cancelan matemáticamente de la ecuación, dejando un fondo negro uniforme. Si en la nueva fotografía aparece un cuerpo que ha cambiado de posición o un punto con brillo variable, este resalta de inmediato como un residuo positivo.",
+      "Para verificar que el punto detectado no sea un defecto térmico de la cámara, un rayo cósmico ionizante o un satélite artificial en órbita baja, el telescopio toma cuatro exposiciones consecutivas separadas por intervalos de doce a quince minutos. Los algoritmos de seguimiento cinemático buscan agrupaciones de detecciones que sigan una línea recta coherente en el plano del cielo.",
+      "Una vez que el software confirma la presencia de un rastro cinemático genuino, genera de forma completamente autónoma un paquete de datos astrométricos denominado tracklet. Este registro incluye las coordenadas ecuatoriales de ascensión recta y declinación junto con la fecha y hora exacta con precisión de milisegundos. Este paquete se envía de inmediato al Centro de Planetas Menores (MPC) para su distribución en red a observatorios de todo el mundo."
     ],
-    expandables: [
-      { label: 'El Desafío de los Satélites', icon: 'zap', text: 'Las constelaciones de satélites dejan trazos brillantes que afectan las imágenes. Los sistemas como ATLAS actualizan sus algoritmos para reconocer y eliminar estos rastros de sus datos científicos.' },
-      { label: 'Detección de Trazos', icon: 'atom', text: 'Los objetos muy rápidos cruzan el campo de visión durante la exposición de la cámara, creando una línea. Los algoritmos de Streak Detection buscan estos trazos para identificar cuerpos veloces o cercanos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Antes de la llegada de las computadoras modernas, los astrónomos como Clyde Tombaugh descubrieron Plutón usando un microscopio de parpadeo manual. Miraban con sus propios ojos a través de una lente alternando mecánicamente dos placas de vidrio fotográficas para ver qué diminuto punto se movía entre miles de estrellas fijas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los algoritmos de sustracción digital utilizan el método de convolución matemática de Alard y Lupton, adaptando la función de dispersión de punto (PSF) de cada imagen para compensar las fluctuaciones en la turbulencia atmosférica local entre la imagen nueva y la plantilla estelar histórica, minimizando los artefactos ópticos espurios y falsas alarmas provocadas por el parpadeo de las estrellas."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m4/banner_deteccion-automatica.webp',
-    bannerCaption: 'Detección automática: IA clasifica millones de detecciones nocturnas para encontrar objetos inusuales',
-    fact: 'En 1930, Clyde Tombaugh pasó un año buscando Plutón en placas fotográficas. Hoy, los algoritmos de ATLAS procesan una cantidad equivalente de datos en solo cinco minutos.'
+    "bannerImage": "/assets/interestelar/infographic_m4/banner_deteccion-automatica.webp",
+    "bannerCaption": "Detección automática: IA clasifica millones de detecciones nocturnas para encontrar objetos inusuales",
+    "fact": "Los algoritmos de sustracción digital de imágenes procesan cuatro exposiciones consecutivas en menos de cinco minutos por campo celeste. Al restar la plantilla estelar de referencia, el software aísla automáticamente cualquier fuente móvil de luz, generando tracklets astrométricos que se envían al Minor Planet Center de la IAU sin intervención humana."
   },
   {
-    id: 'candidatos-interestelares',
-    title: 'Candidatos a 3I',
-    color: '#FF9800',
-    btnImage: '/assets/interestelar/infographic_m4/btn_candidatos-interestelares.jpg',
-    image: '/assets/interestelar/infographic_m4/hero_candidatos-interestelares.jpg',
-    content: [
-      'La búsqueda del tercer objeto interestelar (3I) es una prioridad en astronomía. Los sistemas de vigilancia identifican candidatos con trayectorias que parecen ajenas a nuestro Sol. Sin embargo, confirmar su origen requiere evidencia rigurosa.',
-      'La excentricidad orbital determina si un objeto es interestelar. Los planetas tienen órbitas casi circulares, y los cometas locales tienen órbitas elípticas. Una excentricidad mayor a 1 indica una órbita hiperbólica y un origen externo al sistema solar.',
-      'Calcular la órbita inicial es difícil. Se basa en pocas observaciones tomadas durante un tiempo corto, lo que genera un margen de error. Un objeto local puede parecer interestelar si los datos iniciales son imprecisos.',
-      'Cuando se anuncia un candidato, los telescopios del mundo buscan más datos. Semanas de observación ayudan a refinar la trayectoria. A menudo, las órbitas hiperbólicas iniciales se corrigen y los objetos resultan ser cometas locales.',
-      'Confirmar un objeto interestelar es valioso porque aporta información sobre otros sistemas planetarios. Estudiar su composición ayuda a entender cómo se forman los planetas. Encontrar estos objetos requiere observaciones rápidas y precisas.'
+    "id": "candidatos-interestelares",
+    "title": "Candidatos a 3I",
+    "color": "#FF9800",
+    "btnImage": "/assets/interestelar/infographic_m4/btn_candidatos-interestelares.jpg",
+    "image": "/assets/interestelar/infographic_m4/hero_candidatos-interestelares.jpg",
+    "content": [
+      "Tras los descubrimientos históricos de 1I/'Oumuamua en 2017 y de 2I/Borisov en 2019, la comunidad astronómica mundial entró en una fase de intensa búsqueda permanente del codiciado tercer visitante interestelar oficial, cuyo nombre técnico en el catálogo formal será 3I. Los astrónomos proyectan que decenas de estos objetos cruzan el sistema solar interior cada año, esperando ser detectados por los nuevos sondeos de alta sensibilidad.",
+      "Casi todas las semanas, los sistemas de sondeo automatizados detectan objetos que ingresan en la página de confirmación de objetos cercanos a la Tierra (NEOCP) con soluciones orbitales preliminares que exhiben excentricidades ligeramente superiores a 1.0. Estos hallazgos suscitan de inmediato una gran expectación en observatorios profesionales de todo el mundo.",
+      "Sin embargo, otorgar la designación formal de objeto interestelar requiere superar rigurosos filtros científicos establecidos por la Unión Astronómica Internacional. Una excentricidad hiperbólica aparente en un arco de observación muy corto de apenas unas horas suele ser un artefacto matemático originado por errores instrumentales en las coordenadas.",
+      "Varios candidatos prometedores han acaparado titulares mediáticos internacionales antes de ser desclasificados. Un caso célebre fue el bólido CNEOS 2014-01-08, denominado informalmente IM1, un meteoro registrado por sensores del Departamento de Defensa de los Estados Unidos que impactó en la atmósfera terrestre cerca de Papúa Nueva Guinea a una velocidad heliocéntrica estimada en más de cuarenta kilómetros por segundo.",
+      "Aunque algunos astrofísicos argumentaron que la velocidad de impacto de IM1 demostraba un origen foráneo al sistema solar, la comunidad de expertos en dinámicas de meteoros expresó serias reservas debido a la falta de incertidumbres calibradas en los sensores militares originales. La Unión Astronómica Internacional no otorga designaciones «I» sin datos de seguimiento astrométrico telescópico verificables."
     ],
-    expandables: [
-      { label: 'Falsas Alarmas', icon: 'clock', text: 'Algunos candidatos iniciales, como A/2017 U7, parecían tener órbitas hiperbólicas. Observaciones posteriores demostraron que pertenecían a la Nube de Oort y tenían órbitas elípticas extremas.' },
-      { label: 'Aceleración por Gases', icon: 'atom', text: 'La sublimación del hielo crea chorros de gas que alteran la órbita de un cometa. Los astrónomos deben distinguir esta aceleración no gravitacional de una verdadera trayectoria interestelar.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El catálogo oficial de la IAU solo tiene dos miembros: 1I/'Oumuamua y 2I/Borisov. El puesto para «3I» permanece vacante y reservado en las bases de datos mundiales, esperando al próximo cuerpo celeste que demuestre con mediciones irrefutables haber nacido alrededor de otra estrella de nuestra galaxia."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Para que el Minor Planet Center otorgue una designación de clase «I», el objeto debe contar con al menos varias docenas de observaciones astrométricas independientes distribuidas en un arco temporal suficiente para reducir el error de la excentricidad orbital calculada a un nivel de significancia estadística superior a 5 sigma."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m4/banner_candidatos-interestelares.webp',
-    bannerCaption: 'Candidatos interestelares: distinguir verdaderos visitantes de objetos del sistema solar perturbados',
-    fact: 'El cometa 2I/Borisov tuvo una excentricidad confirmada de 3.3. Esta cifra tan alta demostró matemáticamente que no pertenecía al sistema solar, a diferencia de los candidatos que se corrigen a valores menores a 1.'
+    "bannerImage": "/assets/interestelar/infographic_m4/banner_candidatos-interestelares.webp",
+    "bannerCaption": "Candidatos interestelares: distinguir verdaderos visitantes de objetos del sistema solar perturbados",
+    "fact": "La adjudicación de la designación oficial 3I exige que el candidato cuente con un arco observacional multi-nocturno que descarte errores de medición y confirme una excentricidad e > 1 respecto al baricentro del sistema solar. Hasta la fecha, candidatos polémicos como el bólido CNEOS 2014-01-08 no han cumplido los criterios formales de la IAU."
   },
   {
-    id: 'falsos-positivos',
-    title: 'Trampas de Júpiter',
-    color: '#00ACC1',
-    btnImage: '/assets/interestelar/infographic_m4/btn_falsos-positivos.jpg',
-    image: '/assets/interestelar/infographic_m4/hero_falsos-positivos.jpg',
-    content: [
-      'No todas las órbitas de escape provienen del espacio profundo. Los cometas locales pueden parecer interestelares debido a interacciones gravitacionales. Júpiter, con su gran masa, puede alterar las trayectorias de los objetos cercanos.',
-      'Los cometas de la Nube de Oort tienen órbitas elípticas. Si se acercan a Júpiter o Saturno, la gravedad de los planetas puede acelerarlos. Este efecto cambia su velocidad y altera su órbita original.',
-      'Si el cometa gana suficiente velocidad, supera la velocidad de escape del Sol. Su órbita elíptica se convierte en hiperbólica. Si se detecta después de este encuentro, parece un objeto interestelar aunque nació en nuestro sistema.',
-      'Estos casos se conocen como falsos positivos dinámicos. Para identificarlos, los científicos simulan la órbita hacia atrás en el tiempo. Si la trayectoria muestra un encuentro cercano con Júpiter, se descarta su origen extrasolar.',
-      'La interacción planetaria también explica órbitas inusuales como la de Sedna. Aunque no se acerca a Neptuno, tiene una órbita muy alargada. Algunos sugieren que una estrella cercana afectó su trayectoria hace miles de millones de años.'
+    "id": "falsos-positivos",
+    "title": "Trampas de Júpiter",
+    "color": "#00ACC1",
+    "btnImage": "/assets/interestelar/infographic_m4/btn_falsos-positivos.jpg",
+    "image": "/assets/interestelar/infographic_m4/hero_falsos-positivos.jpg",
+    "content": [
+      "Uno de los desafíos matemáticos más delicados en la identificación de verdaderos visitantes interestelares es la existencia de falsos positivos dinámicos ocasionados por la influencia gravitatoria colosal del planeta Júpiter. Este fenómeno físico es conocido coloquialmente entre los astrodinámicos como las trampas gravitatorias de Júpiter. Estos encuentros pueden desviar asteroides ordinarios y simular erróneamente trayectorias hiperbólicas externas.",
+      "Cuando un cometa ordinario procedente de los confines de la nube de Oort se aproxima hacia el sistema solar interior en una órbita elíptica alargada ligada gravitacionalmente al Sol con una excentricidad original de 0.999, puede experimentar un encuentro cercano accidental con el gigante gaseoso Júpiter. Esta aproximación crítica perturba radicalmente sus parámetros orbitales, alterando su velocidad relativa y dirección en el espacio interplanetario.",
+      "La enorme masa del planeta gigante, que equivale a más de trescientas veces la masa de la Tierra, puede transferir una fracción significativa de su propio momento orbital al cometa mediante el mecanismo de asistencia gravitatoria o efecto honda. Esta interacción de tres cuerpos acelera al cometa, incrementando su energía cinética específica. Como resultado directo, la excentricidad orbital calculada puede superar temporalmente el valor unitario de 1.0.",
+      "Como consecuencia directa de este empujón gravitatorio, la excentricidad de la órbita heliocéntrica instantánea del cometa puede superar el valor crítico de 1.0, alcanzando cifras de 1.01 o 1.05. Si un telescopio terrestre descubre al objeto justo después de esta interacción, los parámetros preliminares indicarán erróneamente que se trata de un cuerpo hiperbólico foráneo.",
+      "Para desenmascarar estas ilusiones dinámicas, los astrofísicos no calculan la trayectoria respecto al centro físico del Sol, sino respecto al baricentro del sistema solar, que es el centro común de masa de todos los planetas y el Sol combinados. Luego integran las ecuaciones orbitales hacia atrás en el tiempo a lo largo de décadas o siglos. Si la energía orbital previa al encuentro con Júpiter era negativa, el objeto se descarta como verdadero visitante interestelar."
     ],
-    expandables: [
-      { label: 'Asistencia Gravitacional', icon: 'zap', text: 'Las misiones espaciales usan la gravedad de Júpiter para acelerar sondas. Este mismo efecto natural expulsa cometas de la Nube de Oort hacia el espacio interestelar.' },
-      { label: 'Simulación Orbital', icon: 'clock', text: 'Los astrónomos usan integradores numéricos para simular el pasado de un objeto. Determinar la órbita requiere observaciones precisas para evitar errores en las simulaciones a largo plazo.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El planeta Júpiter funciona como un colosal cañón gravitatorio en nuestro sistema solar. A lo largo de la historia cósmica ha arrojado miles de millones de cometas nativos al medio interestelar, enviándolos como falsos visitantes a otros sistemas estelares lejanos donde confundirán a los astrónomos de otros mundos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La diferencia entre la excentricidad heliocéntrica y la baricéntrica puede alcanzar hasta 0.05 unidades debido a la oscilación periódica del Sol alrededor del centro de masas del sistema solar, impulsada principalmente por el movimiento orbital de Júpiter y Saturno a distancias de entre 5 y 10 unidades astronómicas."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m4/banner_falsos-positivos.webp',
-    bannerCaption: 'Falsos positivos: el desgasamiento cometario puede simular órbitas hiperbólicas engañando a los detectores',
-    fact: 'El cometa C/1980 E1 tiene una trayectoria de escape hiperbólica. Las simulaciones revelaron que pasó cerca de Júpiter en 1980, lo que cambió su órbita y lo expulsó del sistema solar.'
+    "bannerImage": "/assets/interestelar/infographic_m4/banner_falsos-positivos.webp",
+    "bannerCaption": "Falsos positivos: el desgasamiento cometario puede simular órbitas hiperbólicas engañando a los detectores",
+    "fact": "Muchos cometas locales alcanzan excentricidades heliocéntricas temporales superiores a e = 1.0 tras sufrir una asistencia gravitatoria con Júpiter. Para clasificarlos correctamente, los astrónomos calculan la órbita baricéntrica original hacia el pasado, verificando si el cuerpo ya estaba confinado en el sistema solar antes del encuentro planetario."
   },
   {
-    id: 'velocidad-deteccion',
-    title: 'La Necesidad de Velocidad',
-    color: '#9C27B0',
-    btnImage: '/assets/interestelar/infographic_m4/btn_velocidad-deteccion.jpg',
-    image: '/assets/interestelar/infographic_m4/hero_velocidad-deteccion.jpg',
-    content: [
-      'El tiempo es crítico para estudiar los objetos interestelares. Estos cuerpos viajan a velocidades muy altas. Oumuamua entró al sistema solar a 26 kilómetros por segundo y aceleró cerca del Sol.',
-      'Su gran velocidad significa que cruzan el sistema solar interior rápidamente. Permanecen visibles para nuestros telescopios solo por semanas o meses. Si no se detectan a tiempo, desaparecen en el espacio profundo.',
-      'Cuando un sistema identifica un candidato, alerta a la comunidad científica. Los astrónomos tienen poco tiempo para apuntar los telescopios más grandes hacia el objeto. Esta respuesta rápida es fundamental para obtener datos detallados.',
-      'A medida que el objeto se aleja, su brillo disminuye drásticamente. Se necesita tomar su espectro de luz mientras está cerca para conocer su composición química. Si se pierde esta ventana, la información desaparece.',
-      'Los observatorios han creado protocolos para estos casos. Los investigadores pueden interrumpir otras observaciones para estudiar un candidato a objeto interestelar. Esta prioridad permite capturar datos antes de que el visitante se aleje.'
+    "id": "velocidad-deteccion",
+    "title": "La Necesidad de Velocidad",
+    "color": "#9C27B0",
+    "btnImage": "/assets/interestelar/infographic_m4/btn_velocidad-deteccion.jpg",
+    "image": "/assets/interestelar/infographic_m4/hero_velocidad-deteccion.jpg",
+    "content": [
+      "En la astronomía de cuerpos interestelares, el tiempo de respuesta es el factor más implacable y determinante. A diferencia de los asteroides del cinturón principal que orbitan pacientemente alrededor del Sol durante miles de millones de años, un visitante interestelar cruza la zona observable de nuestro sistema planetario en cuestión de pocas semanas.",
+      "Estos objetos se desplazan a velocidades relativas extraordinarias que superan holgadamente los treinta a cincuenta kilómetros por segundo. Cuando un telescopio automático de gran campo detecta por primera vez a un intruso interestelar, este suele encontrarse ya en su punto de máxima proximidad o alejándose rápidamente hacia las tinieblas cósmicas.",
+      "Cada día de demora en realizar observaciones de seguimiento provoca que la elipse de incertidumbre matemática sobre su posición en el cielo se multiplique de forma geométrica. Si los telescopios terrestres no reaccionan en un lapso de veinticuatro a cuarenta y ocho horas, el objeto puede desvanecerse para siempre sin que se logren caracterizar sus propiedades físicas.",
+      "La rapidez en la confirmación es indispensable para planificar mediciones complejas con grandes observatorios como el Very Large Telescope, el Observatorio Keck o el Telescopio Espacial James Webb. Obtener tiempo de observación urgente mediante protocolos de interrupción de objetivos de oportunidad requiere una justificación astrométrica impecable.",
+      "Además, la ventana óptima para estudiar la composición química de los hielos y la presencia de desgasificación activa ocurre exclusivamente cuando el objeto se encuentra dentro de la línea de congelación del agua, a menos de tres unidades astronómicas del Sol, donde el calor estelar sublima sus capas volátiles superficiales. Fuera de esta frontera térmica helada, los cometas apagan su actividad y se vuelven demasiado tenues para los espectrógrafos terrestres."
     ],
-    expandables: [
-      { label: 'El Caso Oumuamua', icon: 'clock', text: 'Oumuamua fue descubierto después de pasar su punto más cercano al Sol. Los astrónomos tuvieron menos de tres semanas para estudiarlo antes de que su brillo fuera indetectable.' },
-      { label: 'Análisis de Luz', icon: 'atom', text: 'La espectroscopía descompone la luz en diferentes colores. Las líneas resultantes revelan los componentes químicos del objeto. Este análisis requiere mucha luz y proximidad.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Con 'Oumuamua, los astrónomos perdieron casi todo el perihelio porque el objeto pasó por detrás del Sol antes de ser descubierto cuando ya se alejaba. La comunidad científica aprendió una lección crucial: unos pocos días de retraso en la detección pueden significar perder el 90 por ciento de los datos más valiosos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El flujo lumínico aparente de un cuerpo celeste que se aleja en una trayectoria hiperbólica decae con una función proporcional a 1 sobre la distancia al Sol al cuadrado multiplicada por la distancia a la Tierra al cuadrado (1 / r²Δ²), lo que reduce su brillo en varias magnitudes en cuestión de días."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m4/banner_velocidad-deteccion.webp',
-    bannerCaption: 'El desafío de la velocidad: los visitantes huyen antes de que los detectemos, tenemos horas para reaccionar',
-    fact: 'La Agencia Espacial Europea diseña la misión Comet Interceptor. El objetivo es lanzar una sonda y mantenerla en órbita para interceptar un objeto interestelar poco después de su descubrimiento.'
+    "bannerImage": "/assets/interestelar/infographic_m4/banner_velocidad-deteccion.webp",
+    "bannerCaption": "El desafío de la velocidad: los visitantes huyen antes de que los detectemos, tenemos horas para reaccionar",
+    "fact": "Debido a velocidades cinemáticas de entre 30 y 60 km/s, la luminosidad de un objeto interestelar en retirada decae exponencialmente según la ley 1/(r²Δ²). Una demora de solo 48 horas en la confirmación astrométrica puede duplicar el área de incertidumbre orbital y dejarlo fuera del alcance de los mayores telescopios ópticos del mundo."
   },
   {
-    id: 'lsst-vera-rubin',
-    title: 'Telescopio Vera Rubin',
-    color: '#2196F3',
-    btnImage: '/assets/interestelar/infographic_m4/btn_lsst-vera-rubin.jpg',
-    image: '/assets/interestelar/infographic_m4/hero_lsst-vera-rubin.jpg',
-    content: [
-      'El Observatorio Vera C. Rubin, en Chile, mejorará la detección de objetos interestelares. Albergará la Investigación del Espacio y el Tiempo como Legado (LSST). Este proyecto cambiará cómo observamos el cielo nocturno.',
-      'El telescopio tiene un espejo primario de 8.4 metros de diámetro. Su gran tamaño le permite recolectar mucha luz y ver objetos tenues. Combina una apertura amplia con un gran campo de visión.',
-      'La cámara del LSST tiene 3,200 megapíxeles. Es la cámara digital más grande construida para la astronomía. Podrá fotografiar amplias zonas del cielo del hemisferio sur cada pocos días.',
-      'Cada imagen capturará objetos muy débiles. El telescopio generará decenas de petabytes de datos durante su misión. Las supercomputadoras analizarán esta información en tiempo real para emitir alertas rápidas sobre objetos en movimiento.',
-      'Los astrónomos esperan que el LSST descubra varios objetos interestelares cada año. Su sensibilidad permitirá detectar a estos visitantes con mayor frecuencia. Esto convertirá los hallazgos aislados en un estudio estadístico detallado.'
+    "id": "lsst-vera-rubin",
+    "title": "Telescopio Vera Rubin",
+    "color": "#2196F3",
+    "btnImage": "/assets/interestelar/infographic_m4/btn_lsst-vera-rubin.jpg",
+    "image": "/assets/interestelar/infographic_m4/hero_lsst-vera-rubin.jpg",
+    "content": [
+      "La próxima gran revolución en la detección y estudio sistemático de visitantes interestelares tiene nombre propio: el Observatorio Vera C. Rubin, una colosal instalación astronómica construida sobre el cerro Pachón en la cordillera de los Andes chilenos, financiada conjuntamente por la Fundación Nacional de Ciencias y el Departamento de Energía de Estados Unidos.",
+      "El observatorio alberga el telescopio de sondeo sinóptico de 8.4 metros de apertura dotado de un diseño óptico de tres espejos curvos extraordinariamente compacto que proporciona un campo de visión de diez grados cuadrados, complementado con la cámara digital astronómica más grande y compleja construida jamás en la historia de la humanidad. Esta formidable configuración óptica permite capturar un área celeste equivalente a cuarenta lunas llenas en una sola exposición.",
+      "Esta cámara titánica posee una resolución física de 3.200 megapíxeles (3.2 gigapíxeles) y está integrada por un mosaico de 189 sensores CCD de silicio enfriados criogénicamente a cien grados bajo cero. Su tamaño es comparable al de un automóvil utilitario y su peso total supera las tres toneladas de ingeniería optomecánica de vanguardia. Su sensibilidad extrema es capaz de detectar fuentes astronómicas con un brillo millones de veces inferior al límite del ojo humano.",
+      "A través de su programa insignia, el Legacy Survey of Space and Time (LSST), el telescopio Vera Rubin fotografiará todo el cielo del hemisferio sur cada tres o cuatro noches consecutivas durante una década completa. Cada imagen capturará detalles con una magnitud límite de 24.5, una sensibilidad fotométrica millones de veces superior a la visión humana.",
+      "Los modelos estadísticos de población astrofísica predicen que el LSST no encontrará uno o dos visitantes aislados por década, sino que descubrirá entre cinco y varias decenas de objetos interestelares cada año. Esta abundancia de detecciones transformará el estudio de intrusos extrasolares de casos anecdóticos aislados en una ciencia demográfica rigurosa."
     ],
-    expandables: [
-      { label: 'Diseño del Espejo', icon: 'zap', text: 'Los espejos primario y terciario del telescopio están tallados en la misma pieza de vidrio. Este diseño compacto permite que el telescopio se mueva rápidamente para tomar múltiples fotografías.' },
-      { label: 'Procesamiento de Datos', icon: 'atom', text: 'El observatorio enviará datos a través de fibra óptica a centros de supercomputación. Las alertas rápidas permitirán que telescopios automatizados observen fenómenos transitorios casi de inmediato.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La lente óptica frontal de la cámara del telescopio Vera Rubin mide más de 1.5 metros de diámetro y fue certificada por el Libro Guinness de los Récords como la lente óptica individual más grande construida por la humanidad para un instrumento científico en toda la historia de la tecnología, pulida con precisión óptica nanométrica para evitar cualquier aberración esférica en las imágenes."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El sondeo LSST generará aproximadamente quince terabytes de datos brutos cada noche de observación, produciendo cerca de diez millones de alertas de fuentes transitorias o variables por noche que serán procesadas y distribuidas a la comunidad astronómica en menos de sesenta segundos por evento, impulsando una revolución masiva en el análisis astrofísico en tiempo real."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m4/banner_lsst-vera-rubin.webp',
-    bannerCaption: 'Vera Rubin LSST: el telescopio que detectará un objeto interestelar por año desde 2025',
-    fact: 'El observatorio honra a Vera C. Rubin, quien aportó evidencia sobre la materia oscura. El telescopio también mapeará la distribución de materia oscura en el universo.'
+    "bannerImage": "/assets/interestelar/infographic_m4/banner_lsst-vera-rubin.webp",
+    "bannerCaption": "Vera Rubin LSST: el telescopio que detectará un objeto interestelar por año desde 2025",
+    "fact": "El Observatorio Vera C. Rubin en Chile, equipado con un espejo de 8.4 metros y la cámara digital astronómica más grande del mundo de 3.2 gigapíxeles, iniciará el sondeo LSST con capacidad de alcanzar magnitud 24.5. Se proyecta que descubrirá decenas de objetos interestelares por año, revolucionando la astronomía observacional."
   },
   {
-    id: 'red-global-vigilancia',
-    title: 'La Red Global',
-    color: '#FDD835',
-    btnImage: '/assets/interestelar/infographic_m4/btn_red-global-vigilancia.jpg',
-    image: '/assets/interestelar/infographic_m4/hero_red-global-vigilancia.jpg',
-    content: [
-      'Descubrir objetos interestelares requiere colaboración internacional. Cuando un telescopio detecta algo inusual, comparte la información. El Centro de Planetas Menores (MPC) centraliza estos datos a nivel mundial.',
-      'El MPC recopila observaciones de asteroides y cometas. Publica coordenadas de posibles nuevos objetos en una página pública. Los observatorios del mundo monitorean esta información para realizar observaciones de seguimiento.',
-      'Los telescopios globales se relevan a medida que la Tierra gira. Diferentes países asumen el seguimiento para asegurar una cobertura continua. Esto es vital para calcular trayectorias precisas rápidamente.',
-      'La astronomía ciudadana también juega un rol clave. Astrónomos aficionados con equipos precisos aportan miles de mediciones al MPC. El cometa Borisov fue descubierto por un aficionado, mostrando el valor de la observación independiente.',
-      'Compartir datos de manera abierta es esencial para estudiar objetos interestelares. La red global permite organizar observaciones y refinar órbitas. La exploración del espacio es un esfuerzo conjunto de la comunidad internacional.'
+    "id": "red-global-vigilancia",
+    "title": "La Red Global",
+    "color": "#FDD835",
+    "btnImage": "/assets/interestelar/infographic_m4/btn_red-global-vigilancia.jpg",
+    "image": "/assets/interestelar/infographic_m4/hero_red-global-vigilancia.jpg",
+    "content": [
+      "La protección de nuestro planeta contra impactos cósmicos y la búsqueda de mensajeros de otros mundos no depende del esfuerzo solitario de una única nación o telescopio, sino de una intrincada y coordinada arquitectura internacional conocida como la Red Internacional de Alerta de Asteroides (IAWN, por sus siglas en inglés). Esta alianza congrega observatorios profesionales, agencias espaciales y científicos de los cinco continentes bajo los auspicios de la ONU.",
+      "Esta red opera bajo el patrocinio formal de la Oficina de Asuntos del Espacio Ultraterrestre de las Naciones Unidas (UNOOSA) y articula a las principales agencias espaciales del planeta, incluyendo a la NASA, la Agencia Espacial Europea (ESA), la Agencia Japonesa de Exploración Aeroespacial (JAXA) y decenas de observatorios universitarios de todos los continentes.",
+      "Dentro de este engranaje internacional, los grandes sistemas de escaneo de campo amplio como ATLAS en Hawái, Chile y Sudáfrica, Pan-STARRS en Maui y el Catalina Sky Survey en las montañas de Arizona actúan como los ojos exploradores de vanguardia, barriendo miles de grados cuadrados de cielo en busca de fuentes anómalas. Cada alerta generada activa telescopios de seguimiento de mayor tamaño como el VLT en Paranal o el Keck en Mauna Kea para caracterizar el objeto.",
+      "Cuando alguno de estos sondeos detecta un candidato hiperbólico o un objeto potencialmente peligroso, la información fluye al instante hacia las estaciones de seguimiento astrométrico de alta precisión, que incluyen telescopios ópticos de gran apertura, observatorios de seguimiento rápido en Europa y Asia, y las estaciones de radar planetario de Goldstone.",
+      "Esta sinergia global garantiza una vigilancia continua sin puntos ciegos temporales provocados por la rotación de la Tierra. Si el cielo se nubla en el desierto de Atacama en Chile o amanece sobre el océano Pacífico, telescopios gemelos ubicados en Sudáfrica, Australia o las Islas Canarias toman el relevo de forma inmediata y automática. De este modo, ningún objeto con trayectoria de interés crítico pasa desapercibido por falta de cobertura observacional."
     ],
-    expandables: [
-      { label: 'Procesamiento con IA', icon: 'zap', text: 'El MPC usa algoritmos para filtrar observaciones ruidosas. Enlazan datos de diferentes telescopios para calcular órbitas precisas. Este proceso es fundamental para la confirmación de nuevos objetos.' },
-      { label: 'Acceso Público', icon: 'clock', text: 'Cualquier persona puede acceder a las predicciones orbitales del MPC. Muchas instituciones educativas usan estos datos para enseñar matemáticas y mecánica celeste a los estudiantes.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La red de defensa planetaria tiene acuerdos formales para que los astrónomos puedan solicitar la interrupción inmediata de observaciones rutinarias en los mayores telescopios del mundo en caso de descubrir un objeto hiperbólico con rumbo de colisión o de extraordinario valor científico, permitiendo reorientar espejos de ocho a diez metros hacia el objetivo en cuestión de minutos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La Red Internacional de Alerta de Asteroides (IAWN) y el Grupo Asesor de Planificación de Misiones Espaciales (SMPAG) coordinan protocolos respaldados por la ONU que integran mediciones astrométricas de más de sesenta observatorios acreditados en veinticinco países diferentes, garantizando una respuesta coordinada ante cualquier peligro astronómico inminente para la Tierra."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m4/banner_red-global-vigilancia.webp',
-    bannerCaption: 'Red global de vigilancia: telescopios en todo el mundo comparten datos en tiempo real para no perder visitantes',
-    fact: 'El cometa 2I/Borisov fue descubierto por un astrónomo aficionado que construyó su propio telescopio. Su hallazgo resalta la importancia de la observación astronómica más allá de los grandes observatorios profesionales.'
+    "bannerImage": "/assets/interestelar/infographic_m4/banner_red-global-vigilancia.webp",
+    "bannerCaption": "Red global de vigilancia: telescopios en todo el mundo comparten datos en tiempo real para no perder visitantes",
+    "fact": "La Red Internacional de Alerta de Asteroides (IAWN), avalada por la ONU, articula observatorios en 25 países coordinando a ATLAS, Pan-STARRS y el Catalina Sky Survey. Esta red global garantiza seguimiento continuo las 24 horas del día sin interrupciones por rotación terrestre, asegurando la detección oportuna de objetos hiperbólicos."
   }
 ];
 

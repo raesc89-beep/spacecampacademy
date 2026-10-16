@@ -85,144 +85,200 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'puente-einstein-rosen',
-    bannerImage: '/assets/interstellar/infographic_m4/banner_puente-einstein-rosen.webp',
-    title: 'El Puente de Einstein y Rosen',
-    color: '#4FC3F7',
-    btnImage: '/assets/interstellar/infographic_m4/btn_puente.webp',
-    image: '/assets/interstellar/infographic_m4/hero_puente.webp',
-    content: [
-      'En 1935, Albert Einstein y Nathan Rosen realizaron un descubrimiento matemático. Al explorar las ecuaciones de la Relatividad General, notaron que la gravedad en un agujero negro podría conectarse con otro distante. Es como una red subterránea que permite viajar sin recorrer la superficie. Esto proporcionó una base para la deformación del espacio-tiempo.',
-      'Este corredor interconectado une dos regiones separadas y se llamó Puente de Einstein-Rosen. Imagina que el cosmos fuera una lámina de goma y dos embudos se tocaran en sus extremos. Esa conexión representaba un pasadizo teórico. Esta topología acorta drásticamente la distancia mediante un atajo.',
-      'Sin embargo, había un problema físico. Los cálculos demostraban que este puente cósmico sería inestable, cerrándose tan rápido que ni la luz podría atravesarlo. La inestabilidad métrica indica que el túnel colapsa antes de que un fotón alcance el lado opuesto.',
-      'En su artículo, argumentaron que esta solución teórica describía partículas subatómicas sin usar mecánica cuántica. Pretendían modelar la materia como puentes en la geometría del espacio-tiempo, como nudos en una alfombra. Su intención era unificar la relatividad con el electromagnetismo mediante modificaciones geométricas.',
-      'Aunque usar esta estructura como atajo intergaláctico parecía imposible, plantó la idea del agujero de gusano. Abrió la puerta a pensar que el universo podría tener atajos. Los desarrollos posteriores en cosmología retomaron estas ecuaciones para explorar los viajes hiperespaciales.'
+    "id": "puente-einstein-rosen",
+    "bannerImage": "/assets/interstellar/infographic_m4/banner_puente-einstein-rosen.webp",
+    "title": "El Puente de Einstein y Rosen",
+    "color": "#4FC3F7",
+    "btnImage": "/assets/interstellar/infographic_m4/btn_puente.webp",
+    "image": "/assets/interstellar/infographic_m4/hero_puente.webp",
+    "content": [
+      "En 1935, Albert Einstein y su colaborador Nathan Rosen publicaron un artículo histórico en la revista Physical Review explorando las consecuencias geométricas de la relatividad general. Al intentar formular un modelo para partículas elementales cargadas sin singularidades infinitas, descubrieron una solución matemática que conectaba dos regiones separadas del espaciotiempo a través de un túnel curvo. Esta estructura matemática fue bautizada originalmente como puente de Einstein-Rosen en la literatura académica.",
+      "El puente surge al extender analíticamente la métrica de Schwarzschild a través de las coordenadas de Kruskal-Szekeres. Desde el punto de vista topológico, esta solución une dos universos paralelos o dos puntos distantes de nuestro propio cosmos mediante una garganta tubular simétrica. En el centro de esta conexión, el espacio no se estrecha hasta un punto infinitesimal, sino que forma una cintura de radio finito que une ambas bocas del túnel en un tejido continuo y unificado sin discontinuidades.",
+      "A pesar de su elegancia geométrica, los físicos John Wheeler y Robert Fuller demostraron en 1962 que el puente clásico de Einstein-Rosen es intrínsecamente no transitable. La garganta del puente se abre y se cierra con tanta rapidez que ni siquiera un rayo de luz que viaje a trescientos mil kilómetros por segundo tendría tiempo suficiente para atravesarlo de extremo a extremo. Cualquier partícula que intente cruzar queda atrapada en el colapso gravitatorio antes de alcanzar la boca de salida.",
+      "El colapso de este túnel ocurre porque la propia gravedad de la masa-energía tiende a estrangular el cuello del espaciotiempo. Según las ecuaciones de Einstein, la gravedad es siempre atractiva cuando actúa sobre materia ordinaria con densidad de energía positiva. Esta atracción gravitatoria convergente aprieta las paredes de la garganta hasta convertirlas en dos singularidades desconectadas de tipo Schwarzschild, transformando el puente en dos agujeros negros impenetrables para un viajero.",
+      "Aunque el puente de Einstein-Rosen original no sirve como medio de transporte interestelar, sentó los cimientos matemáticos de la física de los agujeros de gusano transitables. Demostró que las ecuaciones de la gravedad permiten soluciones topológicamente no triviales donde el espacio puede conectarse consigo mismo a través de atajos intergalácticos. Este concepto abrió una nueva era en la exploración teórica de la estructura global del cosmos y los límites de la causalidad universal."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En Interstellar, los astronautas de la Endurance dependen de este concepto para salvar la Tierra. El puente cerca de Saturno es una variación moderna del Puente de Einstein-Rosen. Esta representación popularizó el concepto abstracto de la topología conectada.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein y Rosen nunca imaginaron que su artículo se convertiría en un pilar de la ciencia ficción. Su objetivo era resolver problemas de física de partículas, no proporcionar modelos para el viaje estelar mediante deformaciones del espaciotiempo.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Cuando la tripulación del Endurance se aproxima al agujero de gusano cerca de Saturno, Romilly utiliza una hoja de papel y un lápiz para explicar la geometría a Cooper. Christopher Nolan basó esta célebre escena en una conversación real con Kip Thorne: el puente no es un agujero plano bidimensional en el vacío, sino una esfera tridimensional que refleja la luz del cosmos lejano, permitiendo ver la otra galaxia como si se mirase a través de una lente de cristal esférica flotante."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En 2013, el físico argentino Juan Maldacena y Leonard Susskind propusieron la conjetura ER=EPR, que establece una equivalencia fundamental entre los puentes de Einstein-Rosen (ER) y el entrelazamiento cuántico de la paradoja Einstein-Podolsky-Rosen (EPR). Esta hipótesis revolucionaria sugiere que dos partículas entrelazadas cuánticamente están unidas a nivel microscópico por un diminuto agujero de gusano de escala de Planck, uniendo la relatividad con la física cuántica en una sola teoría."
+      }
     ],
-    fact: 'El documento de 1935 buscaba eliminar las singularidades (densidad infinita), proponiendo conexiones geométricas como explicación. Este enfoque pretendía crear un modelo del electrón sin masa puntual utilizando la estructura del espacio.'
+    "fact": "El término «agujero de gusano» (wormhole) fue acuñado en 1957 por el eminente físico teórico estadounidense John Archibald Wheeler en un artículo sobre geometrodinámica publicado en Annals of Physics. Wheeler utilizó la analogía de una manzana: para un gusano que desea ir de un lado a otro del fruto, cavar un túnel a través del corazón de la manzana requiere mucha menos distancia y tiempo que recorrer arrastrándose toda la superficie exterior curva de la piel."
   },
   {
-    id: 'hoja-doblada',
-    bannerImage: '/assets/interstellar/infographic_m4/banner_hoja-doblada.webp',
-    title: 'Doblar el Universo',
-    color: '#FF6B35',
-    btnImage: '/assets/interstellar/infographic_m4/btn_hoja.webp',
-    image: '/assets/interstellar/infographic_m4/hero_hoja.webp',
-    content: [
-      'Para explicar un agujero de gusano, los físicos recurren a una analogía didáctica. Toman una hoja de papel, dibujan dos puntos en extremos opuestos y preguntan la forma más rápida de unirlos. En un espacio plano, es trazar una línea recta. Esto ayuda a conceptualizar las matemáticas multidimensionales.',
-      'Si levantas los extremos del papel para curvar la hoja, los puntos se tocarán en tres dimensiones. Si atraviesas ambas capas con un lápiz, creas un atajo. El lápiz representa al puente atravesando el hiperespacio y saltando millones de años luz. Así funciona el viaje hiperespacial teórico.',
-      'Esta metáfora captura cómo la gravedad podría curvar el espacio-tiempo. Nuestro universo tridimensional tendría que doblarse a través de una cuarta dimensión espacial. Las ecuaciones de la relatividad permiten estas deformaciones topológicas extremas bajo condiciones de alta energía.',
-      'Esta explicación se popularizó cuando Carl Sagan escribía Contacto en los años ochenta. Sagan pidió consejo a Kip Thorne para encontrar una forma plausible de cruzar la galaxia. Thorne sugirió agujeros de gusano. Esto impulsó la investigación académica sobre estos atajos relativistas.',
-      'Un agujero de gusano no es un vehículo, sino una ruta alternativa. Es una deformación arquitectónica del universo. Es la prueba matemática de que las distancias inmensas podrían reducirse a pocos pasos. La métrica se reconfigura para conectar regiones del espacio separadas.'
+    "id": "hoja-doblada",
+    "bannerImage": "/assets/interstellar/infographic_m4/banner_hoja-doblada.webp",
+    "title": "Doblar el Universo",
+    "color": "#FF6B35",
+    "btnImage": "/assets/interstellar/infographic_m4/btn_hoja.webp",
+    "image": "/assets/interstellar/infographic_m4/hero_hoja.webp",
+    "content": [
+      "La manera más intuitiva de comprender cómo un agujero de gusano acorta distancias colosales es mediante la analogía de la hoja doblada. Si dibujamos dos puntos distantes en los extremos opuestos de un papel, una hormiga que camine en línea recta sobre la superficie deberá recorrer toda la longitud de la página. Sin embargo, si doblamos la hoja por la mitad a través de una dimensión superior y perforamos el papel con un lápiz, ambos puntos quedan instantáneamente en contacto directo y contiguo.",
+      "En nuestro universo tridimensional, el tejido del espaciotiempo actúa exactamente como esa superficie bidimensional de papel. Las distancias astronómicas entre galaxias abarcan millones de años luz, lo que haría imposible que una nave espacial construida por el ser humano las recorra en una escala de tiempo biológica humana. No obstante, si el espacio tridimensional se curva dentro de una dimensión superior llamada hiperespacio o bulto (bulk), dos puntos cósmicos distantes pueden aproximarse geométricamente.",
+      "La teoría de la relatividad general de Albert Einstein demuestra matemáticamente que la masa y la energía no se limitan a residir dentro del espacio, sino que dictan cómo este debe deformarse y curvarse. Cuando una inmensa concentración de masa-energía deforma el espacio, altera las geodésicas, que son las trayectorias más cortas posibles para la luz y la materia. Un agujero de gusano altera drásticamente esta topología, creando una geodésica atajo que evita tener que atravesar el espacio intermedio.",
+      "Esta deformación no requiere que la nave viaje más rápido que la luz dentro de su entorno local, lo que violaría la relatividad especial. Al atravesar la garganta del agujero de gusano, la nave navega a velocidades sublumínicas ordinarias respecto a su marco de referencia inercial inmediato. Es el propio tejido del espaciotiempo el que se ha plegado a su alrededor, permitiendo que un trayecto de miles de millones de kilómetros se complete en cuestión de minutos de tiempo propio a bordo de la cápsula.",
+      "La comprensión geométrica del espaciotiempo plegado ha transformado la cosmología moderna, demostrando que la distancia física no es una propiedad fija e inmutable del cosmos, sino un parámetro elástico dependiente del tensor de energía-impulso. Los físicos teóricos continúan estudiando si estas topologías plegadas podrían haberse originado de manera natural durante la inflación cósmica primordial tras el Big Bang, dejando túneles fósiles esparcidos por la inmensidad del universo observable."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Esta analogía geométrica se usa en Interstellar cuando Romilly le explica a Cooper cómo funciona el atajo doblando un papel. Es un homenaje a la enseñanza de Carl Sagan. Demuestra cómo una civilización avanzada podría manipular la topología tetradimensional.' },
-      { label: '¿Sabías que...?', icon: 'atom', text: 'La analogía del papel perforado tiene una limitación técnica. Como nuestro universo tiene tres dimensiones espaciales, la entrada no sería un círculo sino una esfera. Las matemáticas de esta entrada esférica son más complejas que el modelo bidimensional educativo.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La escena donde Romilly perfora el papel con un bolígrafo para instruir a Cooper es uno de los momentos de divulgación científica más aclamados del cine contemporáneo. Christopher Nolan explicó que concibió esta analogía visual para desarmar la preconcepción popular del público, que imaginaba un agujero cósmico como un disco plano o un embudo bidimensional. Al doblar la hoja, Nolan logró transmitir con absoluta claridad cómo una entrada esférica en 3D conduce directamente a otra región del cosmos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En matemáticas y relatividad general, una topología no trivial describe un espacio que contiene conexiones múltiples o atajos que no pueden reducirse continuamente a un espacio plano mediante deformaciones suaves. El puente de Einstein-Rosen y los agujeros de gusano de Morris-Thorne modifican el primer grupo de homología del espacio, permitiendo que existan trayectorias cerradas no contraíbles que conectan regiones que de otro modo estarían separadas por horizontes cosmológicos inalcanzables."
+      }
     ],
-    fact: 'Cuando Sagan consultó a Thorne en 1985, Thorne realizó cálculos para asegurar que el viaje fuera posible. Esto provocó un renacimiento en la investigación sobre agujeros de gusano en las universidades. Así, la ciencia ficción inspiró nuevos descubrimientos.'
+    "fact": "La distancia real entre la Tierra y la galaxia de Gargantúa en Interstellar es de aproximadamente diez mil millones de años luz. Viajando en una nave espacial impulsada por fusión nuclear a un diez por ciento de la velocidad de la luz, el trayecto lineal habría requerido cien mil millones de años terrestres. Gracias a la curvatura geométrica del agujero de gusano de Saturno, la nave Endurance cruzó esa inmensidad insalvable en menos de cinco minutos de tiempo propio medido por sus tripulantes."
   },
   {
-    id: 'wormhole-saturno',
-    bannerImage: '/assets/interstellar/infographic_m4/banner_wormhole-saturno.webp',
-    title: 'El Agujero de Gusano de Saturno',
-    color: '#7C4DFF',
-    btnImage: '/assets/interstellar/infographic_m4/btn_saturno.webp',
-    image: '/assets/interstellar/infographic_m4/hero_saturno.webp',
-    content: [
-      'En Interstellar, los científicos descubren un agujero de gusano orbitando Saturno. ¿Cómo se vería este objeto en la realidad? La física calcula que no sería un disco plano bidimensional. Las leyes de la óptica gravitacional dictan que la luz se curva alrededor de masas esféricas superdensas.',
-      'Puesto que nuestro espacio tiene tres dimensiones físicas, este puente debe manifestarse como un objeto tridimensional. La entrada se vería como una esfera transparente suspendida en el vacío. Es como observar una bola de cristal que muestra otro universo. La refracción gravitacional crea esta ilusión óptica.',
-      'Para recrear este fenómeno en el cine, Christopher Nolan trabajó con Kip Thorne. Thorne desarrolló ecuaciones de trazado de rayos relativistas que dictaban cómo los fotones se curvan al acercarse. El resultado fue la representación científica más precisa generada por computadora.',
-      'Al observar esta esfera, los astronautas ven la luz de una galaxia a miles de millones de años luz. La luz es canalizada a través de la garganta y emerge como una lente convexa que deforma las imágenes. Este efecto amplifica y distorsiona el fondo estelar.',
-      'Su ubicación cerca de Saturno implica que una civilización extraterrestre lo colocó a propósito. La energía necesaria para estabilizar una anomalía frente a la gravedad del gigante gaseoso escapa a cualquier fenómeno natural. Los requerimientos energéticos sobrepasan nuestra tecnología.'
+    "id": "wormhole-saturno",
+    "bannerImage": "/assets/interstellar/infographic_m4/banner_wormhole-saturno.webp",
+    "title": "El Agujero de Gusano de Saturno",
+    "color": "#7C4DFF",
+    "btnImage": "/assets/interstellar/infographic_m4/btn_saturno.webp",
+    "image": "/assets/interstellar/infographic_m4/hero_saturno.webp",
+    "content": [
+      "En la trama científica de Interstellar, un misterioso agujero de gusano aparece de forma súbita orbitando en las inmediaciones del planeta Saturno, a mil cuatrocientos millones de kilómetros de la Tierra. Este fenómeno gravitacional fue detectado por primera vez casi cinco décadas antes de la misión Endurance mediante perturbaciones gravitatorias anómalas en las órbitas de las lunas saturnianas, sugiriendo la presencia de una masa esférica concentrada sin emisión térmica convencional perceptible.",
+      "La elección de Saturno como ubicación del agujero de gusano no fue una decisión azarosa de los guionistas, sino el resultado de un riguroso análisis astrodinámico realizado por Kip Thorne. Para que una nave espacial tripulada alcance el portal utilizando tecnología de propulsión química e iónica en un tiempo razonable de dos años, necesitaba aprovechar la asistencia gravitatoria de planetas gigantes gaseosos como Marte y Júpiter, optimizando las ventanas de lanzamiento orbital de la mecánica celeste.",
+      "Desde el exterior, el agujero de gusano no parece una boca oscura como un agujero negro, sino una esfera perfectamente reflectante y transparente al mismo tiempo. Al ser una apertura tridimensional de un túnel cuatridimensional, la boca del agujero refleja y refracta la luz de todo el cosmos circundante. La mitad superior de la esfera refleja las estrellas de la Vía Láctea y los anillos de Saturno, mientras que su interior revela un cielo completamente ajeno: la galaxia distante que aguarda al otro lado.",
+      "El equipo de efectos visuales de Double Negative simuló la aproximación visual al agujero calculando las geodésicas de la luz en la métrica de Morris-Thorne. A medida que la Endurance se acerca a la superficie esférica, la imagen de Saturno se deforma en anillos de Einstein concéntricos y resplandores iridiscentes. Justo en el momento del cruce, la distorsión gravitatoria alcanza su clímax y la nave penetra en el túnel hiperespacial sin experimentar aceleraciones destructivas en sus estructuras.",
+      "La presencia del agujero en el sistema solar plantea preguntas fundamentales sobre su estabilidad y origen. En el libro «The Science of Interstellar», Thorne explica que un agujero de gusano natural de ese tamaño colapsaría instantáneamente sin una ingeniería avanzada que lo mantenga abierto. Su mera existencia cerca de Saturno representaba una prueba irrefutable de que una civilización superior tetradimensional, apodada «Ellos», había colocado deliberadamente el artefacto para ofrecer una vía de escape."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La secuencia de la Endurance aproximándose al agujero tomó meses de renderizado computacional. Cada cuadro requirió calcular cómo la luz se curva alrededor de la esfera. Este esfuerzo generó datos valiosos sobre el comportamiento de la luz en campos gravitatorios extremos.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Kip Thorne estaba tan comprometido con la precisión científica que las ecuaciones que derivó para los efectos visuales se publicaron en revistas científicas. Estos documentos proporcionaron nuevas perspectivas sobre la visualización de lentes gravitacionales cerca de horizontes de sucesos.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Durante el rodaje del cruce del agujero de gusano, Christopher Nolan proyectó las complejas simulaciones físicas de Thorne y Double Negative en pantallas masivas que rodeaban la cabina de la nave Ranger. Los actores Matthew McConaughey y David Gyasi reaccionaron visualmente ante las imágenes reales del espacio plegado deformándose a su alrededor. Esta técnica de iluminación práctica confirió a la secuencia un hiperrealismo físico que los fondos verdes de posproducción digital nunca habrían podido igualar."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La boca del agujero de gusano de Saturno fue modelada con un radio de un kilómetro y una longitud de garganta finita. Debido al efecto de lente gravitacional negativo de la garganta, la esfera produce una imagen virtual comprimida de todo el universo en su borde, conocida como anillo de Einstein externo. Los fotones que ingresan en ángulos rasantes pueden dar múltiples vueltas alrededor de la garganta antes de emerger, creando imágenes concéntricas infinitas de la nave que intenta ingresar."
+      }
     ],
-    fact: 'Si un viajero mirara a través de un agujero de gusano esférico estabilizado, vería una vista esférica comprimida del cielo del otro lado. Esta proyección obedece las reglas de la geometría no euclidiana que rigen la luz en espacios curvos.'
+    "fact": "La sonda espacial Cassini de la NASA necesitó siete años para viajar desde Cabo Cañaveral hasta Saturno entre 1997 y 2004, recorriendo tres mil quinientos millones de kilómetros tras efectuar sobrevuelos de asistencia gravitacional con Venus, la Tierra y Júpiter. La nave Endurance en la película completó el mismo trayecto interplanetario en dos años terrestres gracias a motores de propulsión de plasma alimentados por reactores de fisión compactos de alta eficiencia energética."
   },
   {
-    id: 'materia-exotica',
-    bannerImage: '/assets/interstellar/infographic_m4/banner_materia-exotica.webp',
-    title: 'La Materia Imposible',
-    color: '#F44336',
-    btnImage: '/assets/interstellar/infographic_m4/btn_exotica.webp',
-    image: '/assets/interstellar/infographic_m4/hero_exotica.webp',
-    content: [
-      'Si la gravedad puede curvar el espacio-tiempo para conectar dos puntos, también tiende a cerrar ese túnel de inmediato. Las matemáticas de la Relatividad General indican que las paredes colapsarán, destruyendo cualquier nave. Esta inestabilidad impide el transporte interestelar sin un soporte físico.',
-      'Para evitar el colapso, los físicos determinaron que necesitarían Materia Exótica. A diferencia de la materia normal, esta debe poseer energía negativa y propiedades repulsivas. Esta repulsión gravitatoria contrarrestaría la curvatura contractiva del túnel.',
-      'Esta materia funcionaría como un andamiaje interno. Su presión antigravitatoria empujaría las paredes hacia afuera, contrarrestando la atracción del espacio curvo que intenta cerrar el paso. Es como usar vigas de soporte, pero con campos cuánticos para estabilizar la métrica del espaciotiempo.',
-      'Aunque la energía negativa suene a magia, la física cuántica permite su existencia. Un ejemplo es el Efecto Casimir, donde dos placas en el vacío experimentan atracción debido a que la energía cuántica es menor que cero. Estas fluctuaciones demuestran que los estados de energía negativos son posibles.',
-      'Lamentablemente, las cantidades microscópicas de energía negativa generadas en laboratorios son insuficientes para sostener un túnel humano. Se requerirían cantidades incalculables de materia exótica. Los cálculos sugieren requerimientos energéticos equivalentes a la masa estelar.'
+    "id": "materia-exotica",
+    "bannerImage": "/assets/interstellar/infographic_m4/banner_materia-exotica.webp",
+    "title": "La Materia Imposible",
+    "color": "#F44336",
+    "btnImage": "/assets/interstellar/infographic_m4/btn_exotica.webp",
+    "image": "/assets/interstellar/infographic_m4/hero_exotica.webp",
+    "content": [
+      "La relatividad general impone una condición rigurosa para la existencia de agujeros de gusano transitables: la necesidad imperativa de materia exótica. A diferencia de la materia ordinaria que compone las estrellas, planetas y seres vivos, la materia exótica posee una propiedad asombrosa y contraria al sentido común cotidiano: una densidad de energía negativa y una presión de tensión negativa que repele gravitatoriamente en lugar de atraer, impidiendo que el túnel colapse sobre sí mismo.",
+      "En la física teórica clásica, el tensor de energía-impulso obedece varias condiciones de energía, tales como la condición de energía nula (NEC) y la condición de energía débil (WEC). Estas condiciones estipulan que ningún observador físico puede medir una densidad de energía inferior a cero. Sin embargo, para mantener abierta la garganta de un agujero de gusano, las paredes del túnel deben ser empujadas hacia afuera con una fuerza antigravitatoria constante, lo que exige una violación formal de estas condiciones.",
+      "Sorprendentemente, la mecánica cuántica admite situaciones reales donde surgen densidades de energía negativas a nivel microscópico. El ejemplo experimental más contundente es el efecto Casimir, predicho por el físico holandés Hendrik Casimir en 1948 y confirmado en laboratorio en 1997. Cuando dos placas metálicas conductoras neutras se colocan en el vacío separadas por distancias nanométricas, suprimen ciertas longitudes de onda del campo electromagnético cuántico, creando una presión negativa entre ellas.",
+      "El dilema fundamental radica en la escala y la magnitud de la energía requerida. Mientras que el efecto Casimir genera fuerzas negativas infinitesimales en fracciones de micra, mantener abierto un agujero de gusano del tamaño de un kilómetro como el de Saturno exigiría una cantidad colosal de energía negativa, equivalente a la masa completa de varios planetas como Júpiter convertida íntegramente en tensión exótica, una proeza energética que supera por órdenes de magnitud nuestra tecnología actual.",
+      "Los físicos teóricos exploran si la materia exótica podría ser estabilizada mediante condensados cuánticos de campos escalares o fluctuaciones de energía del vacío inflacionario primigenio. Aunque no sabemos cómo sintetizar o recolectar esta sustancia a escala macroscópica, su compatibilidad con las leyes de la electrodinámica cuántica demuestra que los agujeros de gusano no violan la física fundamental, permaneciendo como fascinantes posibilidades teóricas en la frontera del conocimiento humano."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En la trama, los protagonistas no discuten la composición del agujero de Saturno. Saben que los seres de la quinta dimensión lo construyeron para que la humanidad lo cruzara. La película asume que una civilización avanzada domina la manipulación de estados cuánticos.' },
-      { label: '¿Sabías que...?', icon: 'atom', text: 'La materia exótica con energía negativa rompe las condiciones de energía del universo. Abre posibilidades de crear máquinas del tiempo que alterarían la causalidad. Las violaciones de esta condición plantean paradojas temporales que desafían nuestra comprensión de las leyes físicas.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Kip Thorne explicó a Christopher Nolan que la humanidad del siglo veintiuno carecía por completo de la capacidad para manipular materia exótica y crear un agujero de gusano artificial. Por esta razón científica concluyente, la trama de Interstellar atribuye la creación y estabilización del portal a una civilización hiperavanzada de seres tetradimensionales que dominan la gravedad cuántica y son capaces de tejer filamentos de energía negativa en el espacio tridimensional de nuestro universo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En 1997, el físico Steve Lamoreaux logró medir por primera vez el efecto Casimir con una precisión del cinco por ciento en la Universidad de Washington utilizando un péndulo de torsión ultrasensible. Los resultados demostraron que el vacío cuántico no es un espacio inerte, sino un mar hirviente de partículas virtuales donde la energía puede reducirse localmente por debajo del estado fundamental del vacío, confirmando la existencia real de densidades de energía cuántica negativas en la naturaleza."
+      }
     ],
-    fact: 'El Efecto Casimir, teorizado por Hendrik Casimir en 1948, demostró empíricamente que la energía negativa es una posibilidad física comprobable. Esto otorgó esperanza matemática a los físicos teóricos.'
+    "fact": "Para mantener abierta la garganta de un agujero de gusano de un metro de diámetro apto para una pequeña sonda espacial, los cálculos del físico Matt Visser indican que se necesitaría una masa de energía negativa equivalente a menos una masa solar (aproximadamente -2 × 10³⁰ kilogramos) concentrada en una vaina microscópica alrededor del cuello del túnel, una densidad de tensión repulsiva equivalente a miles de millones de presiones atómicas centrales."
   },
   {
-    id: 'morris-thorne',
-    bannerImage: '/assets/interstellar/infographic_m4/banner_morris-thorne.webp',
-    title: 'El Wormhole que Puedes Cruzar',
-    color: '#26A69A',
-    btnImage: '/assets/interstellar/infographic_m4/btn_morris.webp',
-    image: '/assets/interstellar/infographic_m4/hero_morris.webp',
-    content: [
-      'En 1988, Kip Thorne y Michael Morris enfrentaron el desafío de la exploración cósmica. Inspirados por la novela Contacto de Carl Sagan, publicaron un artículo científico sobre agujeros de gusano. Este trabajo estableció los cimientos para el estudio de las topologías espaciales transitables.',
-      'Morris y Thorne analizaron las reglas para crear un agujero de gusano seguro para humanos. Esto demostró que los atajos no eran caprichos de la relatividad, sino posibilidades viables. Derivaron las métricas exactas para garantizar trayectorias geodésicas libres de singularidades letales.',
-      'Las condiciones postuladas requerían mantener el túnel abierto mediante materia exótica antigravitatoria. Además, las fuerzas de marea gravitacional no debían desgarrar a los viajeros. El cruce completo tendría que durar unos días para ser práctico. Esto definió los parámetros operativos para viajes viables.',
-      'Este trabajo sacó a los agujeros de gusano de la ciencia ficción al estudio de la física cuántica. Fue un logro intelectual monumental que impulsó una rama cosmológica nueva. Se dedicó a comprender las limitaciones energéticas de la relatividad general.',
-      'El documento Morris-Thorne sigue siendo el estándar para discutir la viabilidad de puentes espaciotemporales. La narrativa de Interstellar se basa en estas ecuaciones publicadas en 1988. Los modelos contemporáneos todavía usan estas soluciones para evaluar escenarios de física exótica.'
+    "id": "morris-thorne",
+    "bannerImage": "/assets/interstellar/infographic_m4/banner_morris-thorne.webp",
+    "title": "El Wormhole que Puedes Cruzar",
+    "color": "#26A69A",
+    "btnImage": "/assets/interstellar/infographic_m4/btn_morris.webp",
+    "image": "/assets/interstellar/infographic_m4/hero_morris.webp",
+    "content": [
+      "A mediados de la década de 1980, el afamado astrónomo Carl Sagan estaba escribiendo su célebre novela de ciencia ficción «Contacto» y necesitaba un método físicamente plausible para transportar a su protagonista, la doctora Ellie Arroway, a través de decenas de años luz sin violar la teoría de la relatividad. Sagan recurrió a su amigo y colega Kip Thorne en Caltech, preguntándole si las leyes de la física permitían construir un agujero de gusano que un ser humano pudiera cruzar sin morir en el intento.",
+      "Intrigado por el desafío intelectual de Sagan, Kip Thorne y su talentoso estudiante de doctorado Mike Morris comenzaron a calcular la solución exacta de las ecuaciones de campo de Einstein hacia atrás. En lugar de partir de una distribución conocida de materia y calcular la curvatura resultante, definieron primero las propiedades geométricas deseables de un túnel transitable: sin horizontes de sucesos unidireccionales, sin singularidades letales y con fuerzas de marea tolerables para el cuerpo humano.",
+      "El resultado de esta rigurosa investigación fue publicado en 1988 en la prestigiosa revista American Journal of Physics bajo el título «Wormholes in spacetime and their use for interstellar travel». La métrica de Morris-Thorne describió por primera vez en la historia de la ciencia un agujero de gusano estático, esférico y transitable en ambas direcciones. Demostraron que el viaje era bidireccional y que una tripulación podía cruzarlo en minutos sin experimentar aceleraciones destructivas.",
+      "No obstante, el estudio de Morris y Thorne confirmó matemáticamente que para mantener abierta la garganta del túnel e impedir su colapso instantáneo, se requería inevitablemente la presencia de materia exótica con tensión negativa a lo largo de la garganta. Sin esta fuerza de repulsión gravitatoria que contrarreste la tendencia natural del espaciotiempo a cerrarse, el túnel se transformaría en dos agujeros negros en una fracción de milisegundo, aniquilando a cualquier viajero en su interior.",
+      "El trabajo pionero de Morris y Thorne fundó formalmente el campo moderno de la física de los agujeros de gusano transitables, inspirando cientos de investigaciones teóricas posteriores sobre viajes temporales, topología espaciotemporal y termodinámica cuántica. Al conectar la rigurosidad matemática con la imaginación científica, demostraron que la investigación teórica rigurosa puede expandir los horizontes de lo que consideramos posible en las leyes fundamentales del cosmos."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Para lograr máxima verosimilitud en Interstellar, Kip Thorne usó sus propios cálculos del artículo de 1988. Esto garantizó que el comportamiento físico del agujero de gusano esférico obedeciera las leyes de la física. Esta fidelidad aseguró que la representación visual coincidiera con simulaciones numéricas.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Thorne aceptó ayudar a Carl Sagan mientras viajaban en taxi. Thorne le dio el problema a su estudiante Michael Morris como tarea universitaria. Este proyecto académico produjo uno de los artículos más citados en la relatividad general teórica.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El diseño cinemático del agujero de gusano en Interstellar es la encarnación visual directa de la métrica matemática de Morris-Thorne formulada en 1988. Kip Thorne entregó a los programadores de Double Negative un conjunto de ecuaciones diferenciales que describían con exactitud milimétrica la curvatura del espaciotiempo y la trayectoria de los fotones a través de la garganta, logrando que el portal de la película fuera un modelo físico ejecutable y computable de nivel académico internacional."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las fuerzas de marea tolerables en la métrica de Morris-Thorne exigen que la aceleración diferencial experimentada por un cuerpo humano entre la cabeza y los pies no supere una gravedad terrestre (1 g ≈ 9.8 m/s²). Para satisfacer este criterio biológico estricto en un viaje de travesía de diez minutos a través de la garganta, el radio de curvatura del túnel debe medir como mínimo un kilómetro, evitando que el viajero sufra daños fisiológicos o rotura de tejidos durante el tránsito interestelar."
+      }
     ],
-    fact: 'El documento de Morris y Thorne de 1988 presentó una métrica matemática nueva. Exigía la presencia de una tensión negativa para mantener el atajo abierto. Las matemáticas demostraron que cumplir las ecuaciones de campo requiere violaciones energéticas.'
+    "fact": "El artículo fundacional de Mike Morris y Kip Thorne de 1988 no solo inauguró la investigación formal de los agujeros de gusano transitables, sino que demostró que, si una boca del agujero de gusano se acelera a velocidades relativistas y luego regresa junto a la otra boca estacionaria, la dilatación temporal de Einstein transformaría automáticamente el túnel en una máquina del tiempo cerrada que viola la causalidad cronológica clásica."
   },
   {
-    id: 'dimensiones-extra',
-    bannerImage: '/assets/interstellar/infographic_m4/banner_dimensiones-extra.webp',
-    title: 'Más Allá de Tres Dimensiones',
-    color: '#AB47BC',
-    btnImage: '/assets/interstellar/infographic_m4/btn_dimensiones.webp',
-    image: '/assets/interstellar/infographic_m4/hero_dimensiones.webp',
-    content: [
-      'Si el universo es una superficie curva que puede ser atravesada, surge la pregunta: ¿por dónde viaja el túnel? Para que el papel doblado tenga sentido físico, nuestro universo debe doblarse a través de dimensiones adicionales invisibles. Las teorías matemáticas de dimensiones superiores proporcionan el marco para esto.',
-      'En 1921, Theodor Kaluza sugirió que nuestro cosmos tiene una quinta dimensión espacial oculta. Oskar Klein propuso que esta dimensión está enrollada a nivel microscópico. Juntos crearon la Teoría de Kaluza-Klein, el primer intento de unificar la gravedad y la luz usando tensores métricos ampliados.',
-      'En la Teoría de Cuerdas contemporánea, los científicos creen que el universo requiere diez u once dimensiones para funcionar matemáticamente. Es un salto mental visualizar un multiverso tan vasto. Estas dimensiones compactificadas resuelven las divergencias en los cálculos.',
-      'Los cosmólogos se refieren a este espacio hiperdimensional como El Bulk. Según estos modelos, nuestro universo tridimensional es una membrana suspendida dentro del Bulk infinito. Esta hipótesis postula que las partículas estándar están confinadas a nuestra membrana por restricciones topológicas.',
-      'Cuando un agujero de gusano conecta dos galaxias, su túnel cruza a través del Bulk superior como un puente elevado. Esta arquitectura hiperdimensional permite que los atajos funcionen sin violar la velocidad local de la luz. Las trayectorias atraviesan el volumen hiperespacial.'
+    "id": "dimensiones-extra",
+    "bannerImage": "/assets/interstellar/infographic_m4/banner_dimensiones-extra.webp",
+    "title": "Más Allá de Tres Dimensiones",
+    "color": "#AB47BC",
+    "btnImage": "/assets/interstellar/infographic_m4/btn_dimensiones.webp",
+    "image": "/assets/interstellar/infographic_m4/hero_dimensiones.webp",
+    "content": [
+      "Vivimos en un universo donde nuestros sentidos perciben tres dimensiones espaciales perceptibles (longitud, anchura y altura) complementadas por una cuarta dimensión temporal unidireccional. Sin embargo, para que un agujero de gusano conecte dos puntos distantes mediante un pliegue geométrico sin desgarrar el tejido que habitamos, la relatividad general y la física teórica moderna sugieren que nuestro universo tridimensional debe estar inmerso dentro de un espacio de dimensión superior denominado el bulto (bulk).",
+      "Desde la perspectiva de la física de altas dimensiones, nuestro universo observable es una membrana o brana tridimensional que flota en un hiperespacio de cinco dimensiones físicas. Las partículas subatómicas de la materia ordinaria, tales como los quarks, los electrones y los fotones electromagnéticos, están atadas a la superficie de nuestra brana y no pueden escapar de ella, lo que explica por qué nuestros ojos y detectores no pueden observar directamente las dimensiones suplementarias circundantes.",
+      "En contraste con la materia y la luz electromagnética, la gravedad es una manifestación geométrica pura de la curvatura del propio tejido espaciotemporal. Según los modelos cosmológicos propuestos por los físicos Lisa Randall y Raman Sundrum en 1999, los gravitones, que son las partículas mediadoras de la interacción gravitatoria, no tienen restricciones para viajar a través del bulto tetradimensional. Esto explica por qué la fuerza de la gravedad parece tan débil en comparación con el electromagnetismo.",
+      "Esta capacidad única de la gravedad para propagarse a través de dimensiones adicionales es lo que hace posible la existencia de un agujero de gusano. Una civilización que domine la física pentadimensional podría manipular los campos gravitatorios en el bulto para doblar nuestra brana tridimensional, acercando dos regiones galácticas distantes y perforando una garganta de espaciotiempo que actúe como un canal transitable a través del hiperespacio cósmico sin tocar el espacio intermedio.",
+      "La exploración teórica de las dimensiones adicionales representa una de las avenidas más prometedoras para unificar la relatividad general de Albert Einstein con la mecánica cuántica del modelo estándar. En los grandes aceleradores de partículas como el Gran Colisionador de Hadrones (LHC) del CERN en Ginebra, los científicos buscan microagujeros negros o pérdidas de energía infinitesimales que delaten el escape de gravitones hacia dimensiones ocultas, abriendo una ventana al hiperespacio."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En Interstellar, Cooper se adentra en el Teseracto hiperdimensional. Muestra cómo seres de cinco dimensiones construyeron un espacio manipulable en el Bulk para enviar señales gravitatorias. Esto ilustra la intersección geométrica de un volumen superior penetrando nuestro espacio tridimensional.' },
-      { label: '¿Sabías que...?', icon: 'atom', text: 'De las cuatro fuerzas fundamentales conocidas, solo la gravedad puede escapar de nuestra membrana y filtrarse hacia El Bulk. Esta disipación teórica podría explicar por qué la gravedad es mucho más débil que el electromagnetismo a escalas subatómicas.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En Interstellar, los misteriosos seres apodados «Ellos» que abren el agujero de gusano en Saturno y construyen el teseracto son, en realidad, descendientes humanos hiperavanzados que han evolucionado hasta dominar las cinco dimensiones del espaciotiempo. Christopher Nolan y Kip Thorne concibieron a estos seres no como extraterrestres biológicos distantes, sino como humanos del futuro lejano capaces de percibir el tiempo y el espacio como dimensiones físicas navegables en el bulto hiperespacial."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En 1921, el matemático alemán Theodor Kaluza propuso que la introducción de una cuarta dimensión espacial compactada permitía unificar las ecuaciones de la relatividad de Einstein con el electromagnetismo de James Clerk Maxwell. En 1926, el físico sueco Oskar Klein perfeccionó esta idea demostrando que la dimensión extra podía estar enrollada en un círculo diminuto del orden de la longitud de Planck (10⁻³⁵ metros), volviéndola completamente invisible para nuestros sentidos e instrumentos."
+      }
     ],
-    fact: 'La teoría de Kaluza-Klein de 1921, con su quinta dimensión, unificó las ecuaciones de campo de Einstein y del electromagnetismo de Maxwell. Estableció el paradigma moderno para integrar las interacciones fundamentales usando geometrías multidimensionales complejas.'
+    "fact": "El modelo cosmológico de Randall-Sundrum demostró en 1999 que las dimensiones espaciales extra no necesitan ser infinitesimalmente pequeñas como postulaba Kaluza-Klein, sino que podrían ser infinitamente extensas si el espaciotiempo del bulto posee una curvatura negativa tipo anti-de Sitter, confinando eficazmente a las partículas y fuerzas conocidas a nuestra propia membrana tridimensional excepto a los gravitones libres."
   },
   {
-    id: 'viaje-posible',
-    bannerImage: '/assets/interstellar/infographic_m4/banner_viaje-posible.webp',
-    title: '¿Podremos Cruzar Algún Día?',
-    color: '#FF9800',
-    btnImage: '/assets/interstellar/infographic_m4/btn_viaje.webp',
-    image: '/assets/interstellar/infographic_m4/hero_viaje.webp',
-    content: [
-      '¿Lograremos fabricar y atravesar un agujero de gusano en el futuro? En el siglo XXI, la respuesta es que estamos a milenios de alcanzar semejante prodigio. Los desafíos energéticos sobrepasan los límites ingenieriles actuales de nuestra civilización terrestre.',
-      'Para construir un túnel espacial del tamaño humano, requeriríamos recolectar la energía de millones de estrellas. También tendríamos que procesar cantidades incalculables de energía negativa antigravitatoria para mantenerlo firme. Esto equivale al control total de los recursos físicos galácticos.',
-      'Sin embargo, un avance surgió en 2013, cuando Juan Maldacena y Leonard Susskind formularon la conjetura ER=EPR. Esta idea postula que el entrelazamiento cuántico de partículas es equivalente a un agujero de gusano microscópico. Relaciona la métrica topológica con las correlaciones estadísticas cuánticas.',
-      'Este puente filosófico une la gravedad de la Relatividad General con la Mecánica Cuántica. Sugiere que el universo entero a nivel cuántico podría ser una red de agujeros de gusano subatómicos. Esto implica que el espaciotiempo emerge del entrelazamiento de los qubits.',
-      'En 2022, científicos de Google observaron el intercambio de información cuántica simulando un agujero de gusano teórico usando la computadora cuántica Sycamore. Aunque no abrieron un túnel físico real, demostraron que seguiremos descifrando secretos. Los protocolos validaron predicciones teóricas holográficas.'
+    "id": "viaje-posible",
+    "bannerImage": "/assets/interstellar/infographic_m4/banner_viaje-posible.webp",
+    "title": "¿Podremos Cruzar Algún Día?",
+    "color": "#FF9800",
+    "btnImage": "/assets/interstellar/infographic_m4/btn_viaje.webp",
+    "image": "/assets/interstellar/infographic_m4/hero_viaje.webp",
+    "content": [
+      "La pregunta sobre si la humanidad podrá construir o atravesar un agujero de gusano en el futuro trasciende las páginas de la ciencia ficción para situarse en el centro de los debates sobre las leyes fundamentales del cosmos. Aunque las ecuaciones de la relatividad general de Albert Einstein demuestran formalmente que los túneles transitables son soluciones matemáticas válidas, la realización práctica de semejante hazaña enfrenta desafíos tecnológicos y energéticos verdaderamente titánicos.",
+      "El primer obstáculo insalvable para nuestra tecnología actual es la generación y estabilización de la materia exótica con energía negativa requerida para mantener abierta la garganta. La humanidad apenas comienza a medir fluctuaciones cuánticas del vacío en laboratorios con precisiones de nanogramos, mientras que un portal requeriría masas planetarias de energía negativa estabilizada. Además, aún desconocemos si la materia exótica a escala macroscópica es termodinámicamente estable en la naturaleza.",
+      "El segundo dilema concierne a la conjetura de protección cronológica propuesta por el eminente físico teórico Stephen Hawking en 1992. Hawking argumentó que las leyes de la física conspiran activamente para impedir el viaje en el tiempo y la violación del principio de causalidad. Dado que cualquier agujero de gusano transitable puede transformarse potencialmente en una máquina del tiempo mediante dilataciones relativistas, las fluctuaciones de vacío cuántico podrían amplificarse destruyendo el túnel.",
+      "A pesar de estas objeciones severas, investigaciones recientes en gravedad cuántica y teoría de cuerdas han abierto ventanas de esperanza teórica. En 2017, los físicos Ping Gao, Daniel Jafferis y Aron Wall demostraron que los agujeros de gusano pueden volverse transitables de manera natural sin necesidad de materia exótica exógena si se permite una interacción cuántica directa de entrelazamiento entre las dos bocas del túnel, transmitiendo información de forma análoga a la teletransportación cuántica.",
+      "Aunque el sueño de cruzar un agujero de gusano a bordo de una nave como el Endurance pertenezca a un futuro lejano de una civilización de Tipo III en la escala de Kardashev, el estudio teórico de estos atajos espaciales ya rinde frutos invaluables en el presente. Nos obliga a investigar la frontera última entre la geometría clásica del cosmos y el misterioso reino cuántico, guiando a las futuras generaciones de jóvenes científicos hacia la codiciada unificación de todas las fuerzas universales."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Interstellar sugiere que el viaje cósmico y la manipulación de la gravedad están fuera de nuestras capacidades actuales. Sin embargo, propone que la humanidad evolucionará hasta convertirse en los arquitectos del espacio. El dominio físico representará el próximo estadio tecnológico.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'ER=EPR significa: ER por el artículo del Puente Einstein-Rosen de 1935, y EPR por Einstein-Podolsky-Rosen, quienes en ese mismo año escribieron sobre el entrelazamiento cuántico a distancia.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Al final de la misión interestelar, tras enviar los datos cuánticos desde el teseracto a Murph y permitir el despegue de las estaciones espaciales de la humanidad, Cooper toma una nave monoplaza para reunirse con Amelia Brand en el planeta Edmunds. La película sugiere que la comprensión completa de la gravedad cuántica abre la puerta para que la humanidad manipule el espaciotiempo a su voluntad, transformando los atajos dimensionales en rutas seguras de colonización y supervivencia cósmica."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El protocolo de Gao-Jafferis-Wall formulado en 2017 reveló que el viaje a través de un agujero de gusano cuánticamente transitable obedece a las leyes del procesamiento de información cuántica. Sin embargo, este mecanismo tiene un límite riguroso: el tiempo que tarda una partícula en atravesar el túnel es siempre ligeramente mayor al tiempo que tardaría un rayo de luz en viajar por el espacio exterior convencional circundante, preservando inviolable la causalidad relativista universal."
+      }
     ],
-    fact: 'El experimento de Google de 2022 simuló un agujero de gusano cuántico. Aunque la métrica operaba en un espacio abstracto bidimensional anti-de Sitter, la dinámica fue matemáticamente indistinguible de la gravedad holográfica teórica.'
+    "fact": "El físico soviético Nikolai Kardashev propuso en 1964 una escala para medir el grado de evolución tecnológica de una civilización según su consumo de energía. Una civilización de Tipo I domina la energía de su planeta; una de Tipo II, la de su estrella completa; y una de Tipo III, la de toda su galaxia. Manipular la topología del espaciotiempo para crear agujeros de gusano permanentes requeriría el poderío energético de una civilización de Tipo III, millones de años por delante de nuestra era actual."
   }
 ];
 

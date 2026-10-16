@@ -227,133 +227,229 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'serpiente',
-              bannerImage: '/assets/egypt/infographic_m14/banner_astronomia-egipcia.webp',
-    title: 'La Serpiente del Caos',
-    color: '#FF5252',
-    btnImage: '/assets/egypt/infographic_apofis/btn_serpiente.webp',
-    image: '/assets/egypt/infographic_apofis/hero_serpiente.webp',
-    content: [
-      'Para los egipcios, cada atardecer comenzaba una batalla cósmica. Creían que el sol no se apagaba. Ra, el dios del Sol, navegaba en su barca por el inframundo toda la noche para salir por el oriente al amanecer. Una serpiente gigante intentaba detenerlo cada noche.',
-      'Apofis (o Apep) era la serpiente del caos. Medía decenas de kilómetros y vivía en las profundidades del abismo primordial, en la oscuridad. Su objetivo era devorar a Ra, apagar el sol y hundir todo en el caos.',
-      'Cada noche Ra ganaba y Apofis volvía a intentarlo. Era el ciclo de luz contra oscuridad y orden contra caos. Cada amanecer era la celebración de una victoria cósmica para los egipcios.',
-      'Seth viajaba en la barca de Ra y luchaba con su lanza contra Apofis. Era el dios con la fiereza necesaria para combatir al caos. Fue la primera vez que se usó el caos para controlar al caos como estrategia divina.',
-      'Los sacerdotes realizaban rituales cada noche para ayudar a Ra. Leían hechizos del "Libro de Apofis", que describían cómo cortar y disolver a la serpiente. La batalla nunca paraba.',
+    "id": "serpiente",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_astronomia-egipcia.webp",
+    "title": "La Serpiente del Caos",
+    "color": "#FF5252",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_serpiente.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_serpiente.webp",
+    "content": [
+      "En el panteón mitológico del Antiguo Egipto no existía una encarnación del mal más temible y destructiva que Apofis, conocido en jeroglíficos como Apep. Representado como una serpiente monstruosa de dimensiones titánicas que medía más de dieciséis metros de longitud en los relieves sagrados, Apofis no era un dios convencional al que se pudiera rendir culto o realizar ofrendas pacíficas, sino la personificación viviente de Isfet: el caos primordial y la entropía cósmica.",
+      "A diferencia de las divinidades benévolas creadas por el dios solar Atum, la teología afirmaba que Apofis había surgido espontáneamente del fluido amniótico o cordón umbilical derramado por la diosa Neit en las aguas abisales del Nun. Al no haber sido engendrado por la palabra creadora de Maat, el monstruo carecía de alma inmortal (ba) y habitaba en la oscuridad infinita del inframundo, animado por un único odio obsesivo: aniquilar la luz del Sol y revertir el universo al silencio primordial.",
+      "Cada noche, cuando la barca solar Mesektet descendía a las profundidades de la Duat, Apofis emergía de las tinieblas para emboscar al dios Ra. Con su mirada hipnótica y sus ensordecedores silbidos de trueno, la serpiente intentaba paralizar a la comitiva divina y beberse de golpe las aguas del río cósmico subterráneo, provocando que la barca encallara en bancos de arena estéril para devorar al disco solar en su indefensión.",
+      "Para repeler el asalto diario del monstruo, Ra contaba con guerreros formidables en la proa de su navío. El más destacado era el dios Seth, señor de las tormentas y la fuerza bruta del desierto, quien resistía la mirada paralizante de Apofis y arponaba su cuerpo escamoso con una gran lanza de cobre estelar. En otras tradiciones, era la diosa leona Bastet o el gran Gato solar de Heliópolis quien rebanaba la cabeza de la serpiente bajo el árbol sagrado de Ished.",
+      "Aunque Apofis era derrotado, acuchillado y quemado ritualmente al término de cada vigilia nocturna, el monstruo jamás podía ser destruido de forma definitiva. Al ser la manifestación natural de las fuerzas del caos inherentes al tejido del cosmos, renacía inexorablemente cada crepúsculo. Esta lucha perpetua recordaba a los egipcios que el orden del universo no era una garantía estática, sino una conquista heroica renovada cada amanecer."
     ],
-    fact: 'El nombre "Apofis" viene del griego; en egipcio se decía "Apep". Un papiro del Museo Británico contiene 75 hechizos específicos para derrotar a la serpiente. Es uno de los rituales más elaborados de la antigüedad.',
+    "fact": "La serpiente Apofis aparece documentada en textos funerarios desde el Reino Medio, describiéndose en el Libro de las Puertas con una longitud de treinta codos reales (quince coma siete metros) y pliegues ondulantes que aprisionaban las doce cavernas subterráneas de la Duat, personificando el principio del no-ser (Isfet) en oposición al orden cósmico universal (Maat).",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En los Textos de los Sarcófagos se describe que los ojos de Apofis eran de pedernal ardiente y su aliento emitía miasmas sulfurosos que marchitaban la vegetación terrenal; cuando los escribas reales escribían su nombre jeroglífico, atravesaban el ideograma de la serpiente con puñales grabados para neutralizar mágicamente su poder."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La figura mitológica de Apofis se inspiró biológicamente en la pitón africana de roca (Python sebae), la serpiente más grande de África capaz de alcanzar siete metros y medio de longitud, y en restos fósiles de serpientes marinas gigantescas del Eoceno (Gigantophis garstini) halladas en los estratos calizos de Fayum."
+      }
+    ]
   },
   {
-    id: 'eclipses',
-              bannerImage: '/assets/egypt/infographic_m14/banner_astronomia-medica.webp',
-    title: 'Los Eclipses: Apofis Gana',
-    color: '#D32F2F',
-    btnImage: '/assets/egypt/infographic_apofis/btn_eclipses.webp',
-    image: '/assets/egypt/infographic_apofis/hero_eclipses.webp',
-    content: [
-      'Hace 3,000 años, un eclipse solar era aterrador. El cielo se oscurecía a mediodía, la temperatura bajaba y el sol desaparecía. Para quienes desconocían la astronomía, parecía el fin del mundo.',
-      'Para los egipcios, un eclipse ocurría cuando Apofis lograba engullir al Sol. Un eclipse solar total dura hasta 7 minutos y 32 segundos. Las estrellas aparecen de día y el horizonte se vuelve rojo.',
-      'Los eclipses solares ocurren porque la Luna, siendo 400 veces más pequeña que el Sol, está 400 veces más cerca de la Tierra. Este accidente de escala hace que parezcan del mismo tamaño en el cielo.',
-      'Con el tiempo, los sacerdotes egipcios notaron un patrón en los eclipses. Al llevar registros durante generaciones, descubrieron ciclos de repetición. Podían predecir los eclipses y avisar al pueblo que Ra ganaría de nuevo.',
-      'Los eclipses lunares se explicaban como victorias temporales de Apofis, que mordisqueaba la barca de la Luna. La Luna roja era vista como la sangre de la batalla cósmica.',
+    "id": "eclipses",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_astronomia-medica.webp",
+    "title": "Los Eclipses: Apofis Gana",
+    "color": "#D32F2F",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_eclipses.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_eclipses.webp",
+    "content": [
+      "En una civilización donde el Sol era la fuente incuestionable de toda vida biológica, calor y orden moral sobre la faz de la tierra, la desaparición repentina del astro rey en pleno mediodía constituía una experiencia sobrecogedora y aterradora. Cuando se producía un eclipse solar total, el firmamento despejado de Egipto se teñía súbitamente de un crepúsculo espectral, bajaba bruscamente la temperatura y las estrellas se hacían visibles en pleno día.",
+      "Para la teología del Antiguo Egipto, este fenómeno astronómico no era un simple alineamiento de sombras celestes, sino la temida manifestación física de que la serpiente Apofis había logrado una victoria temporal sobre el dios Ra. Se creía que el monstruo del abismo había saltado desde las profundidades del inframundo para engullir directamente la barca solar entre sus fauces oscuras, amenazando con extinguir la creación para siempre.",
+      "Durante los minutos de oscuridad total del eclipse, el pánico y el fervor religioso se apoderaban de los templos de todo el país. Los sacerdotes no se quedaban paralizados como observadores pasivos: corrían de inmediato a los patios abiertos haciendo sonar ruidosamente campanas de bronce, sistros hathóricos y tambores sagrados para aturdir al monstruo celestial y obligarlo a soltar a su presa divina.",
+      "Al mismo tiempo, los sacerdotes lectores entonaban a gritos los conjuros de protección más violentos del arsenal litúrgico egipcio, amenazando a la serpiente cósmica con el fuego devorador del ojo de Ra y con los cuchillos afilados del dios Horus. En los altares exteriores se encendían piras de madera aromática y se sacrificaban patos negros y figuras de cera roja que representaban al demonio devorador.",
+      "Cuando el disco plateado de la Luna proseguía su avance orbital y los primeros rayos resplandecientes del Sol volvían a asomar por el borde lunar, estallaba un júbilo multitudinario a lo largo del Nilo. La luz había triunfado una vez más sobre el desorden: Seth había arponeado nuevamente a la serpiente y el orden cósmico de Maat quedaba restaurado, demostrando a la humanidad que la vida prevalecería sobre las tinieblas."
     ],
-    fact: 'El eclipse solar total más largo dura 7 minutos y 32 segundos. Los eclipses totales ocurren en un mismo lugar de la Tierra en promedio una vez cada 375 años. Son eventos raros para un observador fijo.',
+    "fact": "Durante un eclipse solar total, la radiación solar incidente sobre el suelo se reduce en más de un 99,9 % en cuestión de setenta segundos, provocando un descenso térmico local de hasta ocho grados Celsius que desorienta por completo a la fauna silvestre y desata vientos crepusculares repentinos, fenómeno atmosférico sobrecogedor que los antiguos interpretaban como el ataque directo de Apofis a la barca solar.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los eclipses de Luna también estaban asociados a los ataques de Apofis; cuando la Luna se teñía de color rojizo cobre durante un eclipse total debido a la refracción de la luz solar en la atmósfera terrestre, los egipcios creían que el satélite estaba empapado en la sangre de las heridas de la batalla celeste."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La coincidencia visual exacta del tamaño aparente del Sol y la Luna en el cielo (ambos con un diámetro angular aproximado de cero coma cinco grados) es un accidente astronómico único: el Sol es cuatrocientas veces más grande que la Luna, pero está exactamente cuatrocientas veces más alejado de la Tierra."
+      }
+    ]
   },
   {
-    id: 'ciclo-saros',
-              bannerImage: '/assets/egypt/infographic_m14/banner_decanos-estelares.webp',
-    title: 'El Ciclo Saros',
-    color: '#E53935',
-    btnImage: '/assets/egypt/infographic_apofis/btn_saros.webp',
-    image: '/assets/egypt/infographic_apofis/hero_saros.webp',
-    content: [
-      'Al estudiar siglos de registros, los astrónomos antiguos notaron que los eclipses se repiten en grupos. Después de 18 años, 11 días y 8 horas, ocurre un eclipse similar al anterior. A esto se le conoce como el ciclo Saros.',
-      'El ciclo Saros ocurre porque tres ciclos lunares se sincronizan cada 18.03 años. Cuando el ciclo sinódico, el dracónico y el anomalístico coinciden, los eclipses se repiten siguiendo el mismo patrón.',
-      'Los babilonios y egipcios usaron este ciclo para predecir eclipses. Con 18 años de registros, podían anticipar el patrón sin necesitar telescopios.',
-      'Cada familia de eclipses se llama "serie Saros". Una serie dura unos 1,300 años y produce entre 69 y 87 eclipses. Hoy hay 40 series Saros activas.',
-      'Actualmente, las computadoras calculan los eclipses con alta precisión. Sin embargo, el principio matemático de los ritmos periódicos sigue siendo el mismo que descubrieron los pueblos antiguos.',
+    "id": "ciclo-saros",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_decanos-estelares.webp",
+    "title": "El Ciclo Saros",
+    "color": "#E53935",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_saros.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_saros.webp",
+    "content": [
+      "A pesar del terror mitológico que inspiraban los eclipses en la población general, los astrónomos de los templos no tardaron en advertir que las victorias aparentes de la serpiente Apofis no ocurrían de manera caótica o impredecible. Mediante el registro paciente y sistemático de las ocultaciones solares y lunares en tablas de archivo conservadas en las bibliotecas sagradas («Casas de la Vida»), descubrieron que el caos celeste obedecía a un ritmo matemático riguroso.",
+      "Esta periodicidad geométrica fundamental es conocida en la astronomía mundial como el Ciclo Saros. Documentado inicialmente por los astrónomos caldeos y ampliamente asimilado por los sabios del Egipto ptolemaico en Alejandría, el Saros es un período temporal de dieciocho años, once días y ocho horas (exactamente seis mil quinientos ochenta y cinco coma treinta y dos días) tras el cual el Sol, la Tierra y la Luna regresan casi exactamente a la misma geometría orbital relativa.",
+      "La base matemática del ciclo Saros descansa en la sincronización armónica de tres períodos orbitales lunares completamente distintos: el mes sinódico (las fases lunares, de 29,53 días), el mes draconítico (el cruce de la Luna por los nodos de la eclíptica, de 27,21 días) y el mes anomalístico (la distancia cambiante de la Luna en su órbita elíptica de perigeo a apogeo, de 27,55 días).",
+      "Doscientos veintitrés meses sinódicos equivalen casi con precisión atómica a doscientos cuarenta y dos meses draconíticos y a doscientos treinta y nueve meses anomalísticos. Esta prodigiosa coincidencia orbital provoca que después de transcurrido un ciclo Saros completo, se repita un eclipse con características geométricas, duración y distancias astronómicas prácticamente idénticas al evento sucedido dieciocho años antes.",
+      "Sin embargo, debido a las ocho horas fraccionarias adicionales del ciclo Saros (un tercio exacto de día), la rotación diurna de la Tierra desplaza la nueva franja de sombra del eclipse aproximadamente ciento veinte grados hacia el oeste del globo terráqueo. Para que un eclipse se repita en la misma región geográfica del Nilo, deben transcurrir tres ciclos Saros consecutivos (cincuenta y cuatro años y un mes), período conocido en astronomía como el ciclo Exeligmos."
     ],
-    fact: 'El eclipse total de 2099 sobre México durará 6 minutos y 22 segundos. Los astrónomos babilonios predecían eclipses con una exactitud de Â±3 días. La NASA lo hace con precisión de segundos para los próximos 5,000 años.',
+    "fact": "El ciclo astronómico Saros abarca exactamente seis mil quinientos ochenta y cinco coma treinta y dos días (18 años, 11 días y 8 horas), vinculando doscientos veintitrés meses sinódicos con doscientos cuarenta y dos meses draconíticos para gobernar la periodicidad matemática de los eclipses, permitiendo predecir con asombrosa certeza la recurrencia geométrica de las sombras lunares sobre la Tierra.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El célebre Mecanismo de Anticitera, una computadora analógica de bronce de engranajes diferenciales construida en el siglo segundo antes de Cristo en el ámbito helenístico alejandrino, contaba con un dial espiral de doscientos veintitrés divisiones diseñado específicamente para calcular los eclipses del ciclo Saros."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La inclinación del plano orbital lunar respecto a la eclíptica es de cinco grados y nueve minutos. Por esta inclinación geométrica, la Luna nueva no produce un eclipse cada mes, requiriendo que la conjunción ocurra a menos de dieciocho coma cinco grados de distancia angular de uno de los nodos orbitales."
+      }
+    ]
   },
   {
-    id: 'asteroide-2029',
-              bannerImage: '/assets/egypt/infographic_m14/banner_dendera-planetas.webp',
-    title: 'Apophis: El Asteroide Real',
-    color: '#C62828',
-    btnImage: '/assets/egypt/infographic_apofis/btn_asteroid2029.webp',
-    image: '/assets/egypt/infographic_apofis/hero_asteroid2029.webp',
-    content: [
-      'En 2004, astrónomos descubrieron un asteroide que se acercaba a la Tierra. Lo llamaron "Apophis" en honor a la serpiente del caos egipcia, pues el objeto parecía amenazar nuestro planeta.',
-      'Apophis mide 370 metros de diámetro, más alto que el Empire State Building. No causaría una extinción masiva, pero un impacto directo sería devastador para una ciudad.',
-      'Los primeros cálculos en 2004 le daban un 2.7% de probabilidad de impacto en 2029. En el contexto de defensa planetaria, esto generó una alerta de nivel máximo.',
-      'Posteriores observaciones descartaron los impactos en 2029, 2036 y 2068. La NASA confirmó que Apophis no chocará con la Tierra al menos en los próximos 100 años.',
-      'El 13 de abril de 2029, Apophis pasará a 31,600 km de la Tierra, más cerca que los satélites geoestacionarios. Será visible a simple vista desde Europa, África y Asia. Nunca se ha registrado el paso de un asteroide tan grande a esta distancia.',
+    "id": "asteroide-2029",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_dendera-planetas.webp",
+    "title": "Apophis: El Asteroide Real",
+    "color": "#C62828",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_asteroid2029.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_asteroid2029.webp",
+    "content": [
+      "El diecinueve de junio de 2004, los astrónomos Roy Tucker, David Tholen y Fabrizio Bernardi descubrieron desde el Observatorio Nacional de Kitt Peak en Arizona un asteroide cercano a la Tierra que revitalizaría para siempre el mito de la serpiente cósmica. Catalogado inicialmente con la designación provisional 2004 MN4, los descubridores bautizaron formalmente a este bólido celeste como 99942 Apophis, en homenaje directo al dios egipcio del caos y la destrucción.",
+      "Apophis es un asteroide rocoso perteneciente al grupo de los asteroides Atón, caracterizados por poseer órbitas heliocéntricas cuyo semieje mayor es inferior a una unidad astronómica. Con unas dimensiones estimadas en trescientos cuarenta metros de anchura en su eje medio y una forma alargada irregular similar a un cacahuete cósmico, este gigante de silicatos y metales posee una masa calculada en más de cuarenta millones de toneladas métricas.",
+      "Pocos meses después de su descubrimiento, en diciembre de 2004, cálculos orbitales preliminares de alta precisión desataron una alarma científica internacional sin precedentes en la historia de la astronomía moderna. Los modelos matemáticos indicaban que existía una probabilidad alarmante de hasta un dos coma siete por ciento (una entre treinta y siete) de que el asteroide Apophis colisionara frontalmente contra el planeta Tierra en su aproximación del trece de abril de 2029.",
+      "Esta escalofriante predicción elevó por primera vez en la historia a un objeto celeste al nivel cuatro de la Escala de Peligro de Impacto Técnico de Turín, movilizando a los mayores telescopios ópticos y radares planetarios del mundo para refinar su trayectoria. Mediciones de radar Doppler ultraprecisas efectuadas desde el radiotelescopio de Goldstone y el telescopio Green Bank lograron descartar definitivamente la posibilidad de una colisión directa en el año 2029.",
+      "Sin embargo, el encuentro cercano del trece de abril de 2029 será uno de los espectáculos astronómicos más sobrecogedores del siglo veintiuno. Apophis cruzará el espacio a tan solo treinta y un mil seiscientos kilómetros sobre la superficie de la Tierra, situándose a una distancia más cercana que los satélites geoestacionarios de telecomunicaciones (35.786 km) y haciéndose visible a simple vista como una estrella fugaz para miles de millones de personas en Europa, África y Asia."
     ],
-    fact: 'En abril de 2029, Apophis llegará a su máxima proximidad. Se moverá a través del cielo nocturno como un punto de luz. Su magnitud aparente permitirá verlo sin telescopios, siendo un espectáculo astronómico notable.',
+    "fact": "El asteroide 99942 Apophis posee un diámetro medio de trescientos cuarenta metros y una masa de cuarenta y un millones de toneladas, sobrevolando la Tierra el 13 de abril de 2029 a tan solo treinta y un mil seiscientos kilómetros, diez veces más cerca que la Luna, siendo visible a simple vista como una estrella en movimiento para miles de millones de personas.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La fecha en que el asteroide Apophis realizará su aproximación récord a la Tierra, el trece de abril de 2029, caerá curiosamente en viernes trece, una fecha cargada de supersticiones populares en la cultura occidental que muchos entusiastas del espacio vincularon humorísticamente con la serpiente del caos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Durante el sobrevuelo de 2029, las descomunales fuerzas de marea gravitacional ejercidas por la masa de la Tierra sobre Apophis alterarán significativamente su período de rotación de treinta coma seis horas y provocarán microterremotos superficiales que modificarán la distribución de los regolitos de su corteza."
+      }
+    ]
   },
   {
-    id: 'peligro',
-              bannerImage: '/assets/egypt/infographic_m14/banner_eclipse-prediccion.webp',
-    title: 'La Amenaza Real',
-    color: '#B71C1C',
-    btnImage: '/assets/egypt/infographic_apofis/btn_peligro.webp',
-    image: '/assets/egypt/infographic_apofis/hero_peligro.webp',
-    content: [
-      'Un asteroide de 370 metros como Apophis liberaría unos 1,200 megatones de TNT al impactar. Esto equivale a miles de veces la energía de la bomba de Hiroshima.',
-      'Un impacto en tierra firme crearía un cráter de varios kilómetros. La onda de choque destruiría la zona cercana, y el polvo atmosférico afectaría la luz solar globalmente.',
-      'Si cayera en el océano, generaría tsunamis destructivos en las costas. El evento de Tunguska en 1908, causado por un objeto de 50 metros, destruyó kilómetros de bosque en Siberia.',
-      'El impacto de Chicxulub hace 66 millones de años involucró un asteroide de 10 km. La energía liberada colapsó la cadena alimentaria y extinguió al 75% de las especies, incluidos los dinosaurios.',
-      'Sin el impacto de Chicxulub, los mamíferos no habrían ocupado los nichos ecológicos vacíos. La extinción masiva permitió la evolución de los primates y los humanos.',
+    "id": "peligro",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_eclipse-prediccion.webp",
+    "title": "La Amenaza Real",
+    "color": "#B71C1C",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_peligro.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_peligro.webp",
+    "content": [
+      "Aunque los cálculos astrofísicos modernos han descartado cualquier riesgo de colisión para el asteroide Apophis durante al menos los próximos cien años, estudiar el escenario teórico de un impacto frontal permite a la ciencia planetaria comprender la magnitud devastadora de la energía cinética almacenada en los objetos cercanos a la Tierra (NEO), recordando por qué los antiguos asociaban a estas rocas con cataclismos globales.",
+      "La física de un impacto cósmico está regida por la ecuación fundamental de la energía cinética: la energía liberada es directamente proporcional a la mitad de la masa del proyectil multiplicada por el cuadrado de su velocidad de impacto (E = 1/2 m v²). Viajando a una velocidad hiperveloz de más de treinta kilómetros por segundo (ciento ocho mil kilómetros por hora) respecto a la atmósfera terrestre, la masa de cuarenta millones de toneladas de Apophis desataría una fuerza inaudita.",
+      "Si un objeto del tamaño de Apophis impactara contra la corteza continental, la liberación de energía superaría de inmediato los mil doscientos megatones de equivalente en trinitrotolueno (TNT). Esta cifra colosal equivale a detonar simultáneamente más de ochenta mil bombas nucleares idénticas a la de Hiroshima, o veinticuatro veces la energía de la Bomba del Zar, el artefacto termonuclear más potente jamás detonado por la humanidad.",
+      "El impacto instantáneo vaporizaría la roca sólida de la corteza, excavando un cráter de impacto de más de cinco kilómetros de diámetro y quinientos metros de profundidad en cuestión de segundos. Una bola de fuego térmica incandescente desataría incendios forestales masivos en un radio de cientos de kilómetros, mientras que una onda de choque hiperbárica arrasaría cualquier estructura humana y derribaría bosques enteros en miles de kilómetros cuadrados a la redonda.",
+      "En caso de producirse un impacto oceánico en las aguas profundas del Atlántico o el Pacífico, la transferencia de energía al agua desplazaría columnas líquidas colosales, generando megatsunamis con olas iniciales de más de cien metros de altura. Estas olas gigantescas viajarían a través de las cuencas oceánicas a la velocidad de un avión comercial, devastando las franjas costeras habitadas con una fuerza destructiva digna del caos de Isfet."
     ],
-    fact: 'Existen unos 2,200 asteroides catalogados como Objetos Potencialmente Peligrosos (PHAs). La NASA rastrea estos cuerpos celestes con telescopios como NEOWISE para anticipar posibles impactos.',
+    "fact": "El impacto cinético de un asteroide de trescientos cuarenta metros como Apophis liberaría mil doscientos megatones de energía de choque térmico, equivalente a ochenta mil bombas atómicas de Hiroshima, excavando un cráter de cinco kilómetros de diámetro en la corteza terrestre, devastando una superficie regional de miles de kilómetros cuadrados en cuestión de pocos minutos.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El asteroide que provocó la extinción masiva de los dinosaurios no aviares hace sesenta y seis millones de años en Chicxulub (México) tenía un diámetro estimado de diez a catorce kilómetros, liberando una energía de impacto cien millones de megatones, casi cien mil veces superior a la de Apophis, desatando megatsunamis globales y un invierno nuclear de varios años de duración sobre la biosfera terrestre."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La radiación térmica producida por un impacto de mil megatones alcanza temperaturas superficiales en el punto de impacto de más de diez mil grados Kelvin, emitiendo un pulso térmico ultravioleta e infrarrojo capaz de provocar quemaduras de tercer grado en organismos expuestos a más de sesenta kilómetros."
+      }
+    ]
   },
   {
-    id: 'dart',
-              bannerImage: '/assets/egypt/infographic_m14/banner_legado-astronomia.webp',
-    title: 'DART: Vencer a Apofis',
-    color: '#E53935',
-    btnImage: '/assets/egypt/infographic_apofis/btn_dart.webp',
-    image: '/assets/egypt/infographic_apofis/hero_dart.webp',
-    content: [
-      'En 2022, la misión DART de la NASA alteró la trayectoria de un asteroide. La sonda chocó contra Dimorphos, reduciendo su periodo orbital en 33 minutos. Esta fue la primera prueba de defensa planetaria.',
-      'La misión requirió impactar una nave contra un asteroide a 22,500 km/h. Las cámaras confirmaron el choque exitoso desde millones de kilómetros de distancia.',
-      'El impacto cinético no destruye el asteroide; modifica su velocidad. Un cambio de milímetros por segundo logra desviar su trayectoria a lo largo de los años para evitar la Tierra.',
-      'La sonda OSIRIS-Apex viaja hacia Apophis para estudiarlo después de su paso cercano en 2029. Analizará cómo la gravedad terrestre afecta al asteroide.',
-      'La defensa planetaria permite prevenir impactos si se detectan a tiempo. A diferencia de otros desastres naturales, las órbitas de asteroides son predecibles y los desvíos son viables con la tecnología actual.',
+    "id": "dart",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_legado-astronomia.webp",
+    "title": "DART: Vencer a Apofis",
+    "color": "#E53935",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_dart.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_dart.webp",
+    "content": [
+      "A diferencia de los sacerdotes faraónicos, que solo podían recurrir a cantos mágicos y figuras de cera para intentar detener a la serpiente celestial, la humanidad contemporánea ha desarrollado por primera vez en cuatro mil millones de años de historia terrestre la capacidad tecnológica real para desviar asteroides peligrosos y defender activamente la vida de nuestro planeta contra los impactos cósmicos.",
+      "Esta revolución tecnológica fue demostrada con éxito rotundo el veintiséis de septiembre de 2022 mediante la misión espacial DART (Double Asteroid Redirection Test), diseñada y ejecutada por la NASA y el Laboratorio de Física Aplicada Johns Hopkins. La nave DART, con una masa de seiscientos diez kilogramos, viajó a través del espacio profundo con un único objetivo: estrellarse deliberadamente a velocidad hiperveloz contra un asteroide para modificar su órbita.",
+      "El blanco elegido para la prueba fue Dimorphos, una pequeña luna asteroidal de ciento sesenta metros de diámetro que orbita alrededor de un asteroide mayor llamado Didymos. La nave impactó de lleno contra el centro del cuerpo celeste a una velocidad relativa vertiginosa de seis coma seis kilómetros por segundo (veintitrés mil setecientos sesenta kilómetros por hora), desintegrándose en una colisión frontal cinéticamente perfecta.",
+      "La transferencia de momento lineal y el empuje reactivo generado por la eyección de miles de toneladas de roca y polvo pulverizado arrojadas al espacio multiplicaron la efectividad del impacto. Las observaciones astronómicas terrestres confirmaron que el impacto de DART redujo el período orbital de Dimorphos en treinta y tres minutos completos (pasando de once horas y cincuenta y cinco minutos a once horas y veintidós minutos), superando en más de veinticinco veces el objetivo mínimo.",
+      "La misión DART demostró formalmente que la técnica del impactador cinético es una herramienta viable y eficaz para la defensa planetaria. Si en el futuro los astrónomos descubren un asteroide como Apophis en rumbo de colisión directa con décadas de antelación, bastará una pequeña desviación de su velocidad de unos pocos milímetros por segundo para que el monstruo pase a decenas de miles de kilómetros de la Tierra, asegurando la supervivencia humana."
     ],
-    fact: 'La misión DART costó unos 330 millones de dólares. La Agencia Espacial Europea lanzó la misión Hera en 2024 para examinar el cráter que dejó DART y estudiar el desvío.',
+    "fact": "La misión DART de la NASA impactó contra el asteroide Dimorphos a 23.760 km/h el 26 de septiembre de 2022, alterando su período orbital en treinta y tres minutos y validando la tecnología de impacto cinético para la defensa planetaria de la humanidad, demostrando nuestra capacidad técnica para proteger activamente el planeta frente a futuras amenazas siderales.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La pequeña nave italiana LICIACube, transportada a bordo de DART y liberada quince días antes del choque, fotografió en tiempo real el penacho de escombros eyectados por el impacto desde una distancia segura de cincuenta kilómetros, enviando imágenes históricas de la colisión a la Tierra, confirmando el éxito de la primera maniobra de redirección de un objeto cercano a la Tierra en la historia humana."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El factor de multiplicación del momento («beta») del impacto DART se calculó entre dos coma dos y tres coma seis. Esto significa que el retroceso impulsivo causado por las rocas eyectadas en dirección contraria aportó más del doble de fuerza de frenado que el simple choque inelástico de la masa de la nave."
+      }
+    ]
   },
   {
-    id: 'libro-muertos',
-              bannerImage: '/assets/egypt/infographic_m14/banner_merkhet.webp',
-    title: 'El Libro para Vencer a Apofis',
-    color: '#FF5252',
-    btnImage: '/assets/egypt/infographic_apofis/btn_libro.webp',
-    image: '/assets/egypt/infographic_apofis/hero_libro.webp',
-    content: [
-      'El nombre real del "Libro de los Muertos" es "Libro para Salir al Día". Era un manual de instrucciones para que el difunto navegara por el inframundo y saliera al amanecer, como el Sol.',
-      'El Capítulo 39 contiene el "Hechizo para repeler a Apophis". Incluía fórmulas recitadas por el difunto para debilitar a la serpiente y ayudar a Ra en su viaje nocturno.',
-      'Los rituales del templo incluían hacer modelos de cera o arcilla de Apofis para destruirlos. Este concepto de "magia simpática" sostenía que dañar la representación afectaba al ente real.',
-      'En la astronomía moderna, se crean modelos computacionales en 3D de asteroides para simular impactos y desvíos. Estas representaciones virtuales permiten probar métodos de defensa planetaria.',
-      'La idea egipcia de que el humano debe mantener el orden cósmico se asemeja a la responsabilidad de la defensa planetaria actual.',
+    "id": "libro-muertos",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_merkhet.webp",
+    "title": "El Libro para Vencer a Apofis",
+    "color": "#FF5252",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_libro.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_libro.webp",
+    "content": [
+      "En la literatura religiosa y sacerdotal del Antiguo Egipto existía un manual ritual especializado concebido expresamente para aniquilar y desarticular mágicamente a las fuerzas del caos: el «Libro para Vencer a Apofis» o el Papiro Bremner-Rhind (catalogado actualmente como Papiro BM EA 10188 en el Museo Británico de Londres). Compilado a finales del siglo cuarto antes de Cristo, este texto reúne liturgias arcanas practicadas en el templo de Amun-Ra en Karnak.",
+      "El ritual requería una preparación ceremonial minuciosa ejecutada por los sacerdotes uab en el sanctasanctórum más apartado del templo tebano. Los sacerdotes comenzaban modelando con cera de abejas virgen una efigie tridimensional de la serpiente Apofis, esculpiendo sus anillos ondulantes y grabando su nombre secreto en el lomo con tinta verde y negra obtenida de malaquita triturada y carbón vegetal.",
+      "A continuación, los oficiantes ataban el muñeco de cera con gruesas cuerdas de esparto negro teñidas, simbolizando las cadenas doradas con que los dioses encadenaban al monstruo en el abismo. Posteriormente, los sacerdotes procedían a mutilar la figura con cuchillos afilados de pedernal ritual, cortando sus articulaciones, aplastando su cabeza bajo sus pies descalzos y escupiendo repetidamente sobre los restos mientras recitaban fórmulas imprecatorias.",
+      "El acto culminante de la liturgia consistía en arrojar los fragmentos cercenados de la serpiente de cera a un brasero de bronce alimentado con brasas al rojo vivo y carbón de acacia. Mientras la cera se derretía lentamente chisporroteando en las llamas hasta consumirse por completo, los sacerdotes apagaban las cenizas residuales vertiendo orina de animal y pisoteándolas con sus sandalias hasta borrarlas de la tierra.",
+      "Este ritual no se consideraba una simple dramatización teatral, sino un acto de física mágica simpática indispensable para mantener la estabilidad del cosmos. Los sacerdotes creían firmemente que al destruir la materia física y el nombre del demonio en la tierra de Karnak, neutralizaban de forma simultánea el poder cósmico de Apofis en el cielo, permitiendo que la barca solar de Ra pudiera amanecer un día más sobre Egipto."
     ],
-    fact: 'El Papiro de Ani (1250 a.C.) es el texto más completo del "Libro para Salir al Día". Incluye ilustraciones del Juicio del Alma y el Campo de las Cañas. Se conserva en el Museo Británico.',
+    "fact": "El Papiro Bremner-Rhind del Museo Británico mide cinco metros y medio de longitud con cuatrocientos cuarenta versos jeroglíficos continuos dedicados exclusivamente a describir los rituales cotidianos de Karnak para derrotar y quemar la efigie de la serpiente Apofis, asegurando mágicamente que el dios Ra resurgiera victorioso cada mañana en el horizonte oriental del Nilo.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El Papiro Bremner-Rhind contiene además el célebre «Canto de las dos plañideras», donde las diosas hermanas Isis y Neftis lloran el cuerpo inerte de Osiris con cantos poéticos de una belleza desgarradora para convocar a su alma de vuelta al cuerpo antes del renacimiento estelar, preservando una de las joyas poéticas y litúrgicas más conmovedoras de toda la literatura tebana del siglo IV a.C."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La cera de abejas utilizada en el ritual está compuesta por ésteres de ácidos grasos (palmitato de miricilo) y alcoholes de cadena larga con un punto de fusión bajo (62 a 64 °C). Su fácil deformación plástica y su rápida combustión la convertían en el material ideal para representar la aniquilación térmica del caos."
+      }
+    ]
   },
   {
-    id: 'legado-caos',
-              bannerImage: '/assets/egypt/infographic_m14/banner_nut-cosmologia.webp',
-    title: 'El Caos que nos Creó',
-    color: '#FF1744',
-    btnImage: '/assets/egypt/infographic_apofis/btn_legado.webp',
-    image: '/assets/egypt/infographic_apofis/hero_legado.webp',
-    content: [
-      'El caos cósmico originado por impactos de asteroides y eventos celestes es permanente. Sin embargo, ese caos es parte de lo que dio forma a la vida terrestre.',
-      'El impacto de Chicxulub extinguió a los dinosaurios hace 66 millones de años. En ese vacío ecológico, los pequeños mamíferos sobrevivientes comenzaron a diversificarse.',
-      'Millones de años después, los mamíferos evolucionaron hasta los primates y los humanos. La extinción masiva permitió la evolución de nuestra especie.',
-      'El sistema de alerta temprana de asteroides, con telescopios como Pan-STARRS, escanea el cielo para detectar objetos en movimiento y calcular sus órbitas.',
-      'El mito de Apofis resalta la necesidad de vigilancia constante. Así como los antiguos observaban el cielo, los astrónomos modernos monitorean el espacio para prevenir amenazas.',
+    "id": "legado-caos",
+    "bannerImage": "/assets/egypt/infographic_m14/banner_nut-cosmologia.webp",
+    "title": "El Caos que nos Creó",
+    "color": "#FF1744",
+    "btnImage": "/assets/egypt/infographic_apofis/btn_legado.webp",
+    "image": "/assets/egypt/infographic_apofis/hero_legado.webp",
+    "content": [
+      "La dialéctica eterna entre el orden sagrado de Maat y el desorden implacable de Isfet encierra una de las lecciones filosóficas y científicas más profundas de la civilización egipcia. Lejos de ser un error del universo o un enemigo puramente destructivo, el caos era reconocido por los sabios del Nilo como la matriz primordial e indispensable de la que surge toda nueva creación y transformación biológica.",
+      "En la astrofísica y la geología modernas, esta intuición antigua se ha confirmado con un rigor científico asombroso. El propio planeta Tierra y la vida que alberga son hijos directos de cataclismos cósmicos y colisiones caóticas. Hace cuatro mil quinientos millones de años, el choque titánico de un protoplaneta del tamaño de Marte llamado Tea contra la joven Tierra arrancó millones de toneladas de roca que se condensaron para formar nuestra Luna, estabilizando el clima.",
+      "Asimismo, los millones de asteroides y cometas que bombardearon la Tierra primitiva durante el Gran Bombardeo Tardío no solo trajeron destrucción: fueron precisamente los bólidos helados los que sembraron nuestros océanos de agua líquida y suministraron los aminoácidos, hidrocarburos y bases nitrogenadas indispensables para el florecimiento de las primeras células vivas en la sopa química primordial.",
+      "Incluso las extinciones masivas provocadas por impactos asteroidales, como la catástrofe que borró a los dinosaurios hace sesenta y seis millones de años, actuaron como gigantescos catalizadores evolutivos. Al despejar los nichos ecológicos dominados por los grandes reptiles, aquel impacto cósmico abrió la puerta a la radiación adaptativa de los pequeños mamíferos, culminando en la aparición de la especie humana y de su capacidad racional para comprender el universo.",
+      "Comprender la danza cósmica entre Maat e Isfet, entre la serenidad del orden gravitatorio y la violencia creadora del impacto asteroidal, nos reconcilia con nuestra propia naturaleza en el cosmos. Cuando hoy la ciencia vigila las órbitas de asteroides como Apophis mediante telescopios y sondas de defensa planetaria, no estamos destruyendo el caos cósmico, sino asumiendo el deber sagrado de preservar la llama de la conciencia humana en la inmensidad del infinito."
     ],
-    fact: 'La probabilidad de que un asteroide de 370 metros golpee la Tierra es de 1 en 6,250 años. El riesgo es manejable con detección temprana.',
-  },
+    "fact": "Los análisis de isótopos de hidrógeno (D/H) confirman que al menos el setenta por ciento del agua que compone los océanos de la Tierra y el Nilo fue transportada por el impacto de asteroides y cometas durante los primeros cuatrocientos millones de años del sistema solar, demostrando que el agua primordial que dio vida a Egipto y al cosmos terrestre posee una cuna sideral.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los meteoritos carbonáceos de tipo condrita como el célebre meteorito Murchison contienen más de setenta aminoácidos distintos y compuestos orgánicos complejos que se formaron en el espacio interestelar antes incluso del nacimiento de la Tierra y el Sol, sugiriendo que los ladrillos moleculares fundamentales de la biología pudieron sembrarse desde el cosmos profundo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La teoría del caos determinista formulada por Edward Lorenz demuestra que sistemas gravitacionales de muchos cuerpos (como el cinturón de asteroides) son inherentemente caóticos a escalas de millones de años, donde perturbaciones resonantes con Júpiter desvían periódicamente asteroides hacia órbitas que cruzan la Tierra."
+      }
+    ]
+  }
 ];
 
 // â”€â”€â”€ Animated Chaos Field (stars + serpent-like particles) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

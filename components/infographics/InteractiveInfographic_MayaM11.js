@@ -209,201 +209,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'palenque-ciudad',
-              bannerImage: '/assets/maya/infographic_m11/banner_palenque-ciudad.webp',
-    title: "La Ciudad: Lakamha",
-    color: "#1B5E20",
-    btnImage: '/assets/maya/infographic_m11/btn_palenque-ciudad.jpg',
-    image: '/assets/maya/infographic_m11/hero_palenque-ciudad.jpg',
-    content: [
-      'Imagina una metrópolis brillante escondida bajo un techo verde de hojas y árboles. Así es Palenque hoy en día, ubicada en el estado de Chiapas, México. Hace más de mil años, durante el Período Clásico, no estaba escondida. Era una ciudad viva, pintada de rojo intenso. Los mayas la llamaban Lakamha, el Lugar de las Grandes Aguas, por los arroyos y cascadas que cruzaban su territorio.',
-      'Piensa en Palenque como el centro intelectual de la selva maya. No era la ciudad más grande, pero era rica en arte y arquitectura. Sus reyes estaban rodeados de artistas, arquitectos y astrónomos. Los constructores inventaron una forma de construir edificios más elegantes. Crearon paredes delgadas y habitaciones amplias, decorando cada rincón con esculturas de estuco.',
-      'Hoy en día, al visitar Palenque, ves impresionantes templos y palacios. Pero lo que ves es una pequeña parte de la ciudad. Los arqueólogos calculan que solo se ha descubierto el diez por ciento. El noventa por ciento restante sigue bajo la selva. Bajo la tierra y las raíces de ceiba, descansan edificios y plazas.',
-      'El entorno de Palenque es un ecosistema vibrante que envuelve las ruinas. Mientras caminas entre los templos, puedes escuchar los rugidos de monos saraguatos en el dosel forestal. Monos araña saltan entre las ramas, mientras tucanes y guacamayas pintan el cielo. Jaguares silenciosos patrullan la selva por la noche. Esta fusión es la razón por la que fue declarada Patrimonio de la Humanidad.',
-      'El agua fue el elemento vital y el mayor desafío para los ingenieros. Construyeron la ciudad en la falda de una montaña lluviosa. Para evitar inundaciones, diseñaron una red subterránea de acueductos. Crearon canales de piedra techados que dirigían el agua debajo de las plazas principales. Uno de estos canales funcionaba como una válvula hidráulica que reducía la presión del agua.'
+    "id": "palenque-ciudad",
+    "bannerImage": "/assets/maya/infographic_m11/banner_palenque-ciudad.webp",
+    "title": "La Ciudad: Lakamha",
+    "color": "#1B5E20",
+    "btnImage": "/assets/maya/infographic_m11/btn_palenque-ciudad.jpg",
+    "image": "/assets/maya/infographic_m11/hero_palenque-ciudad.jpg",
+    "content": [
+      "Enclavada en las estribaciones selváticas del estado de Chiapas, la antigua metrópoli de Palenque fue conocida en las inscripciones jeroglíficas clásicas bajo el nombre de Lakamha', que significa «Lugar de las Grandes Aguas». Esta denominación aludía a los numerosos manantiales, arroyos y cascadas cristalinas que brotan de las montañas circundantes, los cuales fueron encauzados por los ingenieros mayas mediante acueductos subterráneos de piedra abovedada.",
+      "Aunque los primeros asentamientos agrícolas se remontan al periodo Preclásico Tardío (hacia el 100 a.C.), Palenque alcanzó su época de máximo esplendor político, artístico y arquitectónico durante el Clásico Tardío, entre los años 600 y 800 d.C. Bajo el gobierno de dinastías ilustradas, la ciudad se transformó en la capital hegemónica de la cuenca del río Usumacinta, compitiendo militarmente contra centros vecinos como Calakmul, Toniná y Piedras Negras.",
+      "La arquitectura de Palenque se distingue del resto del área maya por su notable elegancia estructural y ligereza volumétrica. Los constructores locales perfeccionaron el uso de la bóveda maya o arco falso mediante finos muros de mampostería, techos mansarda con vertientes pronunciadas y cresterías caladas que aligeraban el peso superior de los edificios, permitiendo la apertura de amplios pórticos que inundaban de luz y ventilación los recintos sagrados.",
+      "El corazón civil y administrativo de la ciudad era El Palacio, un colosal complejo palaciego levantado sobre una terraza artificial de cien metros de longitud. Este conjunto laberíntico de patios ceremoniales, galerías abovedadas, baños de vapor y cámaras residenciales albergaba a la corte real y a los astrónomos oficiales, integrando en sus muros estucos policromados que narraban entronizaciones dinásticas y victorias diplomáticas decisivas.",
+      "Rodeada por un dosel selvático de perenne verdor, Lakamha' no fue simplemente un centro de poder administrativo, sino un cosmos sacralizado en piedra caliza. Cada edificio, plaza y calzada fue diseñado para interactuar con la topografía escarpada del terreno y con el horizonte visual, convirtiendo a la urbe entera en un colosal instrumento topográfico calibrado para registrar las evoluciones cíclicas de los cuerpos celestes."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: "El Verdadero Nombre",
-        icon: "zap",
-        text: 'El nombre "Palenque"en realidad es una palabra de origen español que significa"estacada" o "valla de madera". Se lo dieron los españoles cientos de años después del abandono de la ciudad, porque había un pequeño pueblo cercano rodeado de una valla. ¡Imagina que miles de años en el futuro llamaran a tu ciudad por el nombre de una cerca! Gracias al desciframiento de los jeroglíficos mayas en las últimas décadas, los arqueólogos finalmente descubrieron su verdadero y poético nombre original: Lakamha,"El Lugar de las Grandes Aguas".',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los ingenieros hidráulicos de Palenque diseñaron el primer sistema de acueducto a presión conocido en la América precolombina. Al estrechar gradualmente la sección del canal subterráneo del arroyo Piedras Bolas, generaban suficiente presión hidrostática para elevar una fuente de agua artificial de hasta seis metros de altura en la plaza principal."
       },
       {
-        label: "Comparación Divertida",
-        icon: "clock",
-        text: 'Imagina encontrar una ciudad bajo una cobija gigante de plantas y árboles enormes. Es el desafío de los arqueólogos en Palenque. Usan tecnología láser montada en aviones para ver a través de la selva y descubrir la escala de esta metrópolis escondida.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La roca caliza utilizada en Palenque posee un alto contenido de carbonato de calcio procedente de sedimentos marinos del periodo Cretácico. Esta composición mineral permitía a los escultores tallar relieves de extrema delicadeza y elaborar estucos de cal hidráulica de extraordinaria durabilidad que han resistido doce siglos de lluvias tropicales monzónicas."
+      }
     ],
-    fact: "El acueducto del río Otulum en Palenque es una obra de ingeniería avanzada. Los mayas lo construyeron para evitar inundaciones. Ingeniosamente, estrecharon el canal para crear agua presurizada. Algunos científicos creen que esta presión alimentaba una fuente decorativa, creando un espectáculo visual hace mil años.",
+    "fact": "El área arqueológica explorada de Palenque abarca aproximadamente 2.5 kilómetros cuadrados, pero las prospecciones mediante tecnología LIDAR y reconocimientos de campo han demostrado que esto representa apenas el 10% de la extensión urbana total, permaneciendo más de mil estructuras residenciales y defensivas ocultas bajo el espeso follaje selvático chiapaneco."
   },
   {
-    id: 'pakal-tumba',
-              bannerImage: '/assets/maya/infographic_m11/banner_pakal-tumba.webp',
-    title: "La Tumba de Pakal",
-    color: "#009688",
-    btnImage: '/assets/maya/infographic_m11/btn_pakal-tumba.jpg',
-    image: '/assets/maya/infographic_m11/hero_pakal-tumba.jpg',
-    content: [
-      'Conoce al rey más famoso de la historia maya: Kinich Janaab Pakal, el Grande. Asumió el trono siendo un niño de doce años en el año 615 d.C. En esa época, Palenque estaba destruida por guerras contra una ciudad rival. El rey joven reconstruyó la ciudad y lideró a su pueblo hacia la paz y prosperidad. Gobernó durante sesenta y ocho años.',
-      'Antes de morir, Pakal ordenó la construcción de su lugar de descanso final: el Templo de las Inscripciones. Durante siglos, exploradores caminaron sobre este templo sin tener idea de que debajo descansaba un rey. La tumba estaba escondida, diseñada para proteger el cuerpo por toda la eternidad, rodeada de trampas de piedra y pasillos sellados.',
-      'Todo cambió en mil novecientos cincuenta y dos. El arqueólogo Alberto Ruz Lhuillier notó unas losas de piedra en el suelo del templo con agujeros circulares. Se dio cuenta de que servían para levantar las losas. Al hacerlo, descubrió un pasaje secreto lleno de rocas que descendía hacia las profundidades. Le tomó cuatro años llegar al fondo.',
-      'Al final del pasaje subterráneo, encontraron una puerta de piedra. Al abrirla, descubrieron una cámara secreta. Las paredes estaban decoradas con figuras de los Nueve Señores de la Noche. En el centro había un sarcófago gigante de piedra. Adentro descansaban los restos de Pakal, cubierto de joyas preciosas de jade verde.',
-      'El tesoro más espectacular era su máscara mortuoria. Estaba formada por cientos de piezas de jade, talladas para recrear el rostro del rey. Sus ojos estaban hechos de concha blanca y obsidiana brillante. El jade era muy valioso para los mayas; simbolizaba el agua y la vida eterna. Esta máscara aseguraba el reconocimiento de los dioses.'
+    "id": "pakal-tumba",
+    "bannerImage": "/assets/maya/infographic_m11/banner_pakal-tumba.webp",
+    "title": "La Tumba de Pakal",
+    "color": "#009688",
+    "btnImage": "/assets/maya/infographic_m11/btn_pakal-tumba.jpg",
+    "image": "/assets/maya/infographic_m11/hero_pakal-tumba.jpg",
+    "content": [
+      "El 15 de junio de 1952, el arqueólogo franco-mexicano Alberto Ruz Lhuillier realizó en Palenque uno de los descubrimientos más trascendentales de la historia arqueológica mundial: la cámara funeraria intacta de K'inich Janaab' Pakal I, el más célebre gobernante palencano, quien rigió los destinos de la metrópoli durante 68 años ininterrumpidos, desde el año 615 hasta su muerte acaecida en el 683 d.C. a la edad de 80 años.",
+      "Durante cuatro largas temporadas de excavaciones sistemáticas, Ruz Lhuillier removió toneladas de cascajo y bloques de caliza que cegaban una empinada escalera interior oculta bajo el piso del templo superior. La escalera descendía en dos tramos en zigzag hasta alcanzar las entrañas rocosas de la pirámide, culminando en una antecámara donde yacían los restos óseos de seis jóvenes sacrificados para custodiar el descanso eterno del rey.",
+      "Al traspasar la puerta triangular sellada con una colosal losa de piedra, el equipo de exploradores ingresó a una bóveda subterránea de nueve metros de largo por siete de altura cuyas paredes estaban adornadas con estucos monumentales que retrataban a los Nueve Señores de la Noche. En el centro exacto de la estancia descansaba un sarcófago monolítico labrado en un único bloque de caliza cerrado por una tapa de cinco toneladas.",
+      "En el interior del féretro yacía el esqueleto de Pakal cubierto de polvo rojo de cinabrio (sulfuro de mercurio), un mineral sagrado que simbolizaba la sangre y la inmortalidad. El monarca portaba un suntuoso ajuar funerario compuesto por collares, anillos y pectorales de jadeita, así como una icónica máscara mortuoria elaborada con doscientas teselas de jade verde finamente ensambladas y ojos tallados en concha marina y obsidiana.",
+      "Un detalle de extraordinaria sofisticación arquitectónica fue el «psicoducto», una estrecha moldura hueca de mampostería con forma de serpiente que ascendía desde el borde mismo del sarcófago subterráneo a lo largo de toda la escalera hasta el piso del templo superior. Este canal místico permitía que el espíritu del monarca divinizado mantuviera comunicación espiritual directa con sus descendientes y sacerdotes en la superficie."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: "Un Rey Insuperable",
-        icon: "atom",
-        text: 'El reinado de Pakal duró 68 años. Un niño que nació el día que Pakal fue rey habría sido un abuelito cuando el monarca murió a los ochenta años. Su gobierno fue un período de estabilidad y riqueza que impulsó un renacimiento del arte y arquitectura.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante décadas, los manuales de arqueología sostenían que las pirámides mesoamericanas eran exclusivamente basamentos para sostener templos y jamás criptas funerarias como las pirámides de Egipto. El hallazgo de la tumba de Pakal por Ruz Lhuillier demolió definitivamente ese dogma, probando la función funeraria y conmemorativa de la arquitectura monumental maya."
       },
       {
-        label: "El Descubrimiento del Siglo",
-        icon: "zap",
-        text: 'Alberto Ruz Lhuillier describió la cámara como una caverna mágica. La humedad tropical hizo que minerales gotearan del techo de piedra, formando estalactitas. Las paredes tenían una capa brillante de sales que destellaban con linternas, creando un escenario místico.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cinabrio utilizado profusamente sobre el cuerpo de Pakal es sulfuro de mercurio (HgS), un mineral pesado de color escarlata intenso. Además de su carga simbólica vinculada al renacimiento solar, sus propiedades químicas altamente tóxicas e inhibidoras de microorganismos impidieron la proliferación bacteriana, contribuyendo a la preservación del ajuar óseo y ceremonial."
+      }
     ],
-    fact: "El sarcófago gigante de Pakal, con su pesada tapa tallada, pesa más de veinte toneladas. Era imposible introducirlo por el sinuoso pasadizo. Los ingenieros mayas construyeron el sarcófago al suelo y después edificaron la pirámide de nueve niveles encima de la tumba. La pirámide entera fue un estuche monumental.",
+    "fact": "La máscara funeraria de jade de Pakal está constituida por más de 340 teselas de jade pulido, dos discos de concha nácar para el iris y dos fragmentos de obsidiana negra para las pupilas. Actualmente se exhibe como la pieza maestra de la sala maya en el Museo Nacional de Antropología de la Ciudad de México, restaurada con rigor milimétrico tras su robo y recuperación en la década de 1980."
   },
   {
-    id: 'tapa-sarcofago',
-              bannerImage: '/assets/maya/infographic_m11/banner_tapa-sarcofago.webp',
-    title: "La Tapa del Sarcófago",
-    color: "#BF360C",
-    btnImage: '/assets/maya/infographic_m11/btn_tapa-sarcofago.jpg',
-    image: '/assets/maya/infographic_m11/hero_tapa-sarcofago.jpg',
-    content: [
-      'Imagina un libro de piedra que cuenta el viaje del alma de un rey. Esa es la tapa del sarcófago de Pakal. Es un rectángulo de piedra, tallado con detalle. En el centro de esta obra, vemos a Pakal en su transición. Está recostado en una posición dinámica, atrapado entre el mundo de los vivos y el mundo de los muertos.',
-      'La escena muestra a Pakal descendiendo hacia las fauces de un monstruo de huesos. Este monstruo representa a Xibalbá, el inframundo maya. Es el lugar profundo donde habitan los dioses de la muerte. Es como si el rey estuviera siendo devorado por la tierra. Es un viaje necesario, similar al sol ocultándose en el atardecer.',
-      'Detrás de Pakal se levanta un árbol en forma de cruz. Este es el Wacah Chan, el Árbol Cósmico. Para los mayas, el universo tenía la forma de una ceiba. Sus raíces llegaban a Xibalbá, su tronco representaba la tierra y sus ramas sostenían el cielo. Pakal conecta estos tres mundos con su cuerpo.',
-      'En las ramas superiores descansa Itzam-Ye, el Ave Celestial, que observa desde las alturas. Los bordes de la tapa están decorados con una cinta que muestra símbolos astronómicos: el sol, la luna y las estrellas. Estas bandas nos dicen que el viaje de Pakal es un evento cósmico conectado con el movimiento de los astros.',
-      'En el pasado, algunas personas publicaron que Pakal era un astronauta antiguo. Decían que el Árbol Cósmico era un cohete espacial y que el rey manejaba controles de vuelo. Esto es pura fantasía. Hoy sabemos leer los jeroglíficos. La imagen muestra una explicación espiritual profunda sobre la vida, la muerte y el orden del universo maya.'
+    "id": "tapa-sarcofago",
+    "bannerImage": "/assets/maya/infographic_m11/banner_tapa-sarcofago.webp",
+    "title": "La Tapa del Sarcófago",
+    "color": "#BF360C",
+    "btnImage": "/assets/maya/infographic_m11/btn_tapa-sarcofago.jpg",
+    "image": "/assets/maya/infographic_m11/hero_tapa-sarcofago.jpg",
+    "content": [
+      "La lápida que sella el sarcófago de K'inich Janaab' Pakal es unánimemente considerada la obra cumbre del relieve escultórico mesoamericano. Tallada sobre un descomunal bloque monolítico de caliza de 3.80 metros de largo, 2.20 metros de ancho y 25 centímetros de grosor, con un peso aproximado de siete toneladas, la pieza exhibe en su cara frontal una compleja composición iconográfica que sintetiza la cosmología y la escatología maya.",
+      "En la sección central de la composición aparece la efigie juvenil del rey Pakal, reclinado hacia atrás sobre la cabeza descarnada del Monstruo de la Tierra o Sak B'aak Nah Chapat. El gobernante viste faldellín de cuentas de jade y pectorales ceremoniales, adoptando una postura de tránsito dinámico que marca el instante preciso de su muerte biológica y el inicio de su metamorfosis espiritual en la deidad suprema del grano de maíz.",
+      "Brota directamente del cuerpo de Pakal el tronco cruciforme del Árbol Cósmico Wakah Chan, cuyas ramas serpenteantes están decoradas con joyas de jade y cabezas de serpientes enjoyadas de las que emergen espíritus celestiales. En la cúspide suprema del follaje se posa el ave celeste Itzamye, una manifestación del dios creador Itzamná, simbolizando la trascendencia del soberano hacia los niveles superiores del empíreo cósmico.",
+      "Enmarcando la escena central se esculpió una banda celeste continua que recorre el borde exterior de la losa, repleta de glifos que representan al Sol, la Luna, estrellas centelleantes y los planetas visibles. En los cantos laterales del bloque pétreo, los artistas palencanos grabaron los retratos de los ancestros dinásticos de Pakal emergiendo de la tierra como árboles frutales, legitimando el derecho divino de su linaje a reinar.",
+      "Diversas interpretaciones pseudocientíficas difundidas a mediados del siglo XX pretendieron ver en este bajorrelieve a un astronauta pilotando una nave espacial con controles y toberas de propulsión. Sin embargo, la epigrafía contemporánea ha refutado de forma contundente estas fantasías, demostrando que cada voluta y elemento del diseño encaja con absoluta coherencia en el vocabulario iconográfico y religioso del periodo Clásico."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: "Un Malentendido Espacial",
-        icon: "zap",
-        text: 'La teoría del "astronauta de Palenque"se hizo súper famosa en un libro de 1968. El autor argumentaba que Pakal estaba en una cápsula espacial con tubos de respiración y palancas de aceleración. Pero los arqueólogos y epigrafistas han demostrado, que las supuestas"llamas del cohete"son en realidad raíces del Ãrbol Cósmico sagrado o las fauces del Monstruo de la Tierra del inframundo. Las"palancas" y "controles" son simplemente gestos rituales que el rey hace con las manos, muy comunes en el arte maya, y representaciones de sangre sagrada y joyas de jade.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los epigrafistas Heinrich Berlin y Linda Schele lograron descifrar los textos glíficos inscritos en el canto de la lápida, descubriendo las fechas exactas de nacimiento, ascensión al trono y defunción de Pakal y de su madre, la reina Sak K'uk', quien gobernó como regente antes de entregarle el mando supremo cuando él cumplió doce años de edad."
       },
       {
-        label: "Símbolos Cósmicos Explicados",
-        icon: "clock",
-        text: "Si observas detenidamente la intrincada tapa, verás que el rey Pakal lleva puesto un faldellín de cuentas y una joya en el pecho que representa al Dios del Maíz. Para los antiguos mayas, el maíz era la planta sagrada que moría cuando se sembraba la semilla en la oscura tierra, pero renacía mágicamente como una planta alta, fuerte y verde que alimentaba a la humanidad. Al vestirse con los atributos de este dios vital, Pakal está asegurando que, al igual que la semilla de maíz, él también regresará a la vida, garantizando la prosperidad, el alimento. El orden futuro para su amado pueblo de Palenque.",
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El análisis petrológico de la lápida confirmó que fue extraída de una cantera local de caliza microcristalina situada a menos de tres kilómetros del templo. Para descender este bloque macizo de siete toneladas por la empinada ladera y depositarlo en el fondo de la cripta antes de edificar la pirámide, los ingenieros mayas emplearon rodillos de madera dura y palancas de guayacán."
+      }
     ],
-    fact: "Los bordes de la colosal tapa del sarcófago (que mide 3.8 metros de largo, 2.2 metros de ancho y pesa unas 5 toneladas) no son solo decorativos; actúan como un texto histórico preciso. Tienen inscripciones jeroglíficas labradas alrededor del perímetro que narran una lista dinástica muy exacta. Registran las fechas de nacimiento y fallecimiento de los seis gobernantes anteriores a Pakal, incluyendo a sus padres, creando así un árbol genealógico en piedra que validaba el derecho sagrado de Pakal al trono y conectaba su reinado con los venerados ancestros del pasado.",
+    "fact": "El sarcófago y su colosal lápida fueron colocados en la cámara funeraria subterránea ANTES de que se levantaran los muros del Templo de las Inscripciones. Las dimensiones del sarcófago (3 metros de longitud) superan con creces el ancho de la estrecha escalera interior, lo que demuestra que la pirámide entera fue concebida y construida como un gigantesco mausoleo alrededor del rey."
   },
   {
-    id: 'torre-observatorio',
-              bannerImage: '/assets/maya/infographic_m11/banner_torre-observatorio.webp',
-    title: "La Torre del Palacio",
-    color: "#FFC107",
-    btnImage: '/assets/maya/infographic_m11/btn_torre-observatorio.jpg',
-    image: '/assets/maya/infographic_m11/hero_torre-observatorio.jpg',
-    content: [
-      'En el centro del Gran Palacio de Palenque se levanta una estructura inusual: una torre cuadrada de cuatro pisos. Parece una torre de vigilancia perdida en la selva. Esta torre es el edificio más icónico del Palacio, un complejo de patios y habitaciones donde vivía la familia real de Palenque durante generaciones.',
-      'Imagina cómo se vería esta torre en sus días de gloria. Las escaleras interiores te permiten subir a la cima. Un techo cubría la estructura, adornado con estuco pintado con colores vivos. En una ciudad donde los edificios importantes eran horizontales, esta torre vertical destacaba en el horizonte.',
-      'Los arqueólogos están convencidos de que tenía una función científica: era un observatorio astronómico. Los mayas eran astrónomos apasionados. Registraban los ciclos de la luna y calculaban las órbitas de planetas. Para ellos, el cielo nocturno era un calendario divino y una pantalla inmensa donde los dioses escribían mensajes.',
-      'Desde el último piso, los sacerdotes tenían una vista despejada. Podían observar por dónde se ocultaba el sol en el atardecer a lo largo del año. Marcando estos puntos en el horizonte, predecían cuándo llegarían las lluvias esenciales y cuándo preparar la tierra para sembrar.',
-      'Un detalle arquitectónico demuestra el simbolismo de este lugar. Durante la puesta de sol en el solsticio de invierno, el sol parece sumergirse detrás del Templo de las Inscripciones, la tumba de Pakal. Esta alineación brillante conecta sus conocimientos de las estrellas con su arquitectura.'
+    "id": "torre-observatorio",
+    "bannerImage": "/assets/maya/infographic_m11/banner_torre-observatorio.webp",
+    "title": "La Torre del Palacio",
+    "color": "#FFC107",
+    "btnImage": "/assets/maya/infographic_m11/btn_torre-observatorio.jpg",
+    "image": "/assets/maya/infographic_m11/hero_torre-observatorio.jpg",
+    "content": [
+      "Alzándose de manera imponente sobre los patios interiores de El Palacio, la Torre de Palenque constituye una anomalía arquitectónica fascinante sin paralelos en el resto de Mesoamérica. Se trata de una estructura cuadrangular de cuatro niveles escalonados que alcanza más de quince metros de altura, dotada de una escalera interna de mampostería que permite el acceso seguro a su plataforma superior techada.",
+      "Edificada durante el reinado de K'inich K'an Joy Chitam II, uno de los hijos y sucesores de Pakal a comienzos del siglo VIII d.C., la torre ha sido objeto de intensos debates académicos respecto a su función primordial. Mientras que los primeros exploradores la consideraron un atalaya militar para vigilar las incursiones enemigas desde la llanura de Tabasco, los arqueoastrónomos han demostrado su avanzado uso astronómico.",
+      "La orientación angular de sus vanos y esquinas presenta alineaciones matemáticas rigurosas con respecto a los horizontes este y oeste. Desde el mirador superior, los sacerdotes tenían un campo visual despejado de 360 grados sobre la cordillera selvática y la vasta planicie fluvial, permitiéndoles monitorear los puntos de salida y puesta del Sol durante los solsticios y equinoccios sin interferencia de las copas de los árboles.",
+      "Investigaciones arqueoastronómicas llevadas a cabo por especialistas del INAH y universidades internacionales revelaron que la torre servía como un punto de observación privilegiado para seguir el ciclo sinódico del planeta Venus (Noh Ek'). Las ventanas del penúltimo y último piso enmarcan con precisión los extremos septentrionales y meridionales de Venus como lucero vespertino sobre las crestas montañosas chiapanecas.",
+      "Asimismo, la altura de la torre permitía coordinar señales visuales mediante fuego, humo y reflejos de espejos de pirita con asentamientos periféricos y puestos de vigía situados en las cumbres montañosas del cañón del río Chacamax. Esta síntesis entre observatorio científico, templo de ritos cenitales y centro de comunicaciones tácticas consolidó a El Palacio como el núcleo neurálgico indiscutible de la hegemonía palencana."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: "Un Diseño ÃƒÅ¡nico",
-        icon: "zap",
-        text: 'La Torre del Palacio en Palenque es un misterio arquitectónico. En casi todas las demás ciudades mayas de esa época, construían observatorios circulares especiales, como el famoso "Caracol" en Chichén Itzá, que se parecen asombrosamente a los observatorios astronómicos modernos con cúpulas redondas. Sin embargo, los arquitectos de Palenque decidieron romper las reglas tradicionales y crearon una estructura vertical cuadrada. Algunos expertos sugieren que tal vez fue construida con esta forma inusual para asemejarse visualmente a una gran ceiba, el Ãrbol Cósmico, elevándose firmemente desde el corazón terrenal del Palacio real hacia los reinos celestiales.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante la célebre expedición de John Lloyd Stephens y el dibujante Frederick Catherwood en 1840, Catherwood debió trepar entre espesas enredaderas y raíces colosales para dibujar con su cámara lúcida los cuatro niveles de la torre de Palenque, la cual se hallaba asfixiada por la selva tropical chiapaneca tras diez siglos de absoluto abandono humano."
       },
       {
-        label: "El Sofá de los Planetas",
-        icon: "clock",
-        text: "Dentro de las estrechas habitaciones del segundo piso de la torre, los arqueólogos encontraron un elemento muy peculiar e intrigante: un banco de piedra cuidadosamente tallado y muy bien conservado. Se cree que este asiento fue diseñado específicamente para que los sacerdotes-astrónomos pudieran sentarse cómodamente durante muchas horas en la profunda oscuridad de la noche, observando pacientemente el movimiento de los astros a través de las ventanas alineadas. Además, en las paredes cercanas pintaron un gran símbolo de Venus, lo que nos confirma que ese lugar era un centro avanzado de investigación cósmica y observación planetaria constante.",
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La estabilidad estructural de la torre cuadrangular frente a los frecuentes movimientos telúricos de la falla de Motagua se debe a su núcleo central de mampostería maciza y al uso de tirantes de madera de chicozapote embebidos en el mortero de cal, una técnica antisísmica empírica desarrollada con maestría por los albañiles del Clásico Tardío."
+      }
     ],
-    fact: "El Palacio de Palenque en sí mismo (donde se encuentra la torre) no fue construido de una sola vez por un solo rey. Fue creciendo poco a poco durante más de 400 años de forma continua. Cada nuevo gobernante de la dinastía maya añadía nuevos patios, corredores, habitaciones y edificios al complejo, como si estuvieran ampliando una gigantesca casa familiar generacional. La Torre, que es el punto más alto, fue una de las últimas y más atrevidas adiciones al conjunto, y muy probablemente fue construida por los descendientes directos del gran Pakal, en el siglo ocho de nuestra era.",
+    "fact": "La Torre de Palenque es la única estructura monumental de cuatro pisos dotada de una escalera interior de caracol que sobrevive en toda el área maya del periodo Clásico. Sus muros de caliza conservan restos de pigmento rojo cinabrio y azul maya, indicando que el observatorio resplandecía intensamente sobre el verde de la selva para ser visto a kilómetros de distancia."
   },
   {
-    id: 'inscripciones-templo',
-              bannerImage: '/assets/maya/infographic_m11/banner_inscripciones-templo.webp',
-    title: "El Templo de las Inscripciones",
-    color: "#4A148C",
-    btnImage: '/assets/maya/infographic_m11/btn_inscripciones-templo.jpg',
-    image: "/assets/maya/infographic_m11/hero_inscripciones-templo.jpg",
-    content: [
-      'El Templo de las Inscripciones guarda la tumba de Pakal, pero esconde mucho más. Recibe su nombre por los gigantescos paneles de piedra caliza en las paredes interiores del templo superior. Estos paneles son un libro de piedra abierto.',
-      'Si cuentas los dibujos labrados, encontrarás más de seiscientos bloques de escritura jeroglífica maya. Es el segundo texto jeroglífico continuo más largo del área maya. Es una obra de la literatura antigua tallada con cincel y martillo. Escribir un libro tallando roca dura requería años de trabajo experto.',
-      '¿Qué historia cuenta este libro de piedra? Los arqueólogos lograron descifrar el código maya en el siglo veinte. Es un registro histórico que documenta doscientos años de la dinastía de Palenque. Funciona como un árbol genealógico y un noticiero. Menciona cuándo nació cada rey, sus guerras heroicas y los rituales sagrados.',
-      'Este documento de piedra no solo mira hacia el pasado, también mira hacia el futuro. Los escritores mayas calcularon fechas de eventos cósmicos que equivalen a miles de años en el futuro. Querían dejar claro que la dinastía de Pakal perduraría para siempre. Las ceremonias sagradas continuarían en aniversarios remotos.',
-      'Para los reyes mayas, escribir su historia en piedra no era un acto de ego, era magia. Creían que al tallar eventos, estos se volvían permanentes por la eternidad. El Templo es el intento de Pakal de asegurarse de que ni el paso del tiempo ni la selva borraran su grandeza.'
+    "id": "inscripciones-templo",
+    "bannerImage": "/assets/maya/infographic_m11/banner_inscripciones-templo.webp",
+    "title": "El Templo de las Inscripciones",
+    "color": "#4A148C",
+    "btnImage": "/assets/maya/infographic_m11/btn_inscripciones-templo.jpg",
+    "image": "/assets/maya/infographic_m11/hero_inscripciones-templo.jpg",
+    "content": [
+      "El Templo de las Inscripciones, erigido en el flanco sur de la plaza central de Palenque sobre una colina natural reforzada con terrazas de caliza, es uno de los monumentos más imponentes y significativos de la civilización maya. La pirámide escalonada está compuesta por ocho terrazas superpuestas que, sumadas al templo superior con su pórtico de cinco entradas, totalizan nueve niveles arquitectónicos que emulan las nueve capas del inframundo.",
+      "El edificio debe su nombre moderno a los tres monumentales tableros de piedra caliza tallados en bajorrelieve que cubren los muros interiores de la antecámara del santuario superior. Con un total combinado de 617 cartuchos jeroglíficos perfectamente conservados, este conjunto epigráfico constituye el segundo texto jeroglífico continuo más extenso de todo el mundo maya, superado únicamente por la Escalinata de Copán en Honduras.",
+      "Las inscripciones fueron supervisadas y consagradas por el sucesor de Pakal, su primogénito K'inich Kan Bahlam II, hacia el año 692 d.C. El texto relata de forma pormenorizada la crónica dinástica de Lakamha', conmemorando los finales de período calendárico (K'atunob), las victorias militares, las alianzas matrimoniales y las ceremonias religiosas efectuadas por Pakal el Grande a lo largo de sus casi siete décadas de mandato.",
+      "Además de su valor histórico, el templo cumplía una trascendental función cosmológica como axis mundi o eje del mundo. Al situar la cámara funeraria de Pakal en la base rocosa y coronar la estructura con los anales dinásticos y las efigies estucadas de los dioses patronos de la ciudad (la llamada Tríada de Palenque: GI, GII y GIII), el edificio unía la memoria de los ancestros con los destinos cósmicos de las generaciones futuras.",
+      "La fachada del templo exhibía originalmente seis pilastras de estuco policromado con figuras de tamaño natural que retrataban a dignatarios sosteniendo en brazos al infante divino Unen K'awiil, deidad asociada a los linajes reales y al rayo fertilizador. Estas obras de arte plástico confirmaban a la población que los reyes de Palenque descendían directamente de los dioses que habían ordenado el firmamento en el tiempo primordial."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: "Un Texto en Tres Partes",
-        icon: "zap",
-        text: "Los 620 jeroglíficos están divididos en tres enormes tabletas: la Tableta Este, la Tableta Central y la Tableta Oeste. La primera relata la historia mitológica más antigua de los dioses fundadores al inicio de los tiempos. La central se enfoca en los ancestros y predecesores reales de Pakal, trazando la historia humana de la dinastía. Y la última y más importante habla sobre el glorioso reinado del propio Gran Pakal, sus hazañas, y las ceremonias dedicatorias de sus hijos tras su fallecimiento, asegurando así su inmortalidad en la memoria colectiva.",
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el Tablero de las Inscripciones, los escribas reales mayas calcularon fechas de Cuenta Larga que se proyectan miles de años hacia el futuro. En uno de los pasajes glíficos más asombrosos, se menciona una fecha equivalente al año 4772 de nuestra era para conmemorar el aniversario de la entronización divina de Pakal en un ciclo cósmico renovado."
       },
       {
-        label: "El Desciframiento Mágico",
-        icon: "clock",
-        text: 'Durante más de cien años, los arqueólogos modernos miraron estos paneles con admiración, pero considerándolos simplemente como misteriosos e incomprensibles dibujos artísticos o símbolos decorativos extraños. No fue hasta la década de los años setenta, gracias al brillante e innovador trabajo de pioneros como Linda Schele, David Stuart y Peter Mathews, que se dieron cuenta de que no eran solo dibujos. Eran palabras reales, nombres reales, verbos y fechas exactas. En Palenque, el silencio milenario de la selva finalmente se rompió y las piedras "hablaron" su propia historia por primera vez en siglos.',
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La pirámide del Templo de las Inscripciones alcanza una altura de 22.8 metros desde el nivel de la plaza hasta la cumbre del santuario. Los constructores emplearon un mortero compuesto de cal apagada, agua y savia de corteza del árbol de chukum, un polímero orgánico natural que incrementa notablemente la impermeabilidad y flexibilidad mecánica de las juntas de piedra."
+      }
     ],
-    fact: 'El brillante matemático y arqueólogo aficionado Heinrich Berlin fue el primero en notar algo extraordinario en 1958: en muchos monumentos mayas había un jeroglífico específico que se repetía constantemente, pero que siempre cambiaba un poco dependiendo de la ciudad en la que se encontraba. Lo llamó "Glifo Emblema". Años más tarde, los expertos comprendieron que estos glifos funcionaban exactamente como las banderas modernas o los escudos de armas de los países europeos. Eran el nombre político oficial del reino. El de Palenque muestra una misteriosa"cabeza de hueso", y se lee "Lakamha", el venerado señorío de las Grandes Aguas.',
+    "fact": "Los 617 bloques jeroglíficos del Templo de las Inscripciones están distribuidos en tres losas monolíticas: el Tablero Este con 240 glifos, el Tablero Central con 120 glifos y el Tablero Oeste con 257 glifos. Este tesoro textual ha sido descifrado en más de un 95% por los epigrafistas modernos, permitiendo reconstruir con precisión día a día la historia de Palenque."
   },
   {
-    id: 'alineacion-solsticio',
-              bannerImage: '/assets/maya/infographic_m11/banner_alineacion-solsticio.webp',
-    title: "Alineación del Solsticio",
-    color: "#0288D1",
-    btnImage: '/assets/maya/infographic_m11/btn_alineacion-solsticio.jpg',
-    image: '/assets/maya/infographic_m11/hero_alineacion-solsticio.jpg',
-    content: [
-      'El Templo de las Inscripciones tiene un secreto astronómico que demuestra que los mayas eran genios de la observación del cielo. Todo ocurre el día del solsticio de invierno, el 21 de diciembre. Este es el día en que el sol alcanza su punto más bajo en el horizonte.',
-      'Si visitas Palenque en esa fecha al atardecer, observarás algo mágico. El sol comienza a descender detrás del Templo. En el último momento, los rayos de luz entran por la puerta central superior. Mientras el sol se pone, la línea de los rayos baja velozmente por las escaleras.',
-      'Esa línea de luz del ocaso invernal apunta hacia abajo hasta llegar a la tumba de Pakal en las profundidades. Para los mayas, esto era una representación mística: el rey y el sol eran uno solo. Así como el sol moría en el día más corto, Pakal había descendido al inframundo.',
-      'En la religión maya, el descenso a la oscuridad no era el final. Al día siguiente del solsticio, el sol renace victorioso, calentando la tierra nuevamente. La alineación asegura que Pakal, fusionado con el sol, también renacerá eternamente de la muerte, garantizando la vida a Palenque.',
-      'Lograr esta sincronización requirió de matemáticas complejas y observaciones celestes. Tuvieron que observar las estrellas y la ruta del sol durante años antes de colocar la primera piedra. Esto demuestra un nivel de sofisticación científica que consolida a los mayas como maestros de la arquitectura sagrada.'
+    "id": "alineacion-solsticio",
+    "bannerImage": "/assets/maya/infographic_m11/banner_alineacion-solsticio.webp",
+    "title": "Alineación del Solsticio",
+    "color": "#0288D1",
+    "btnImage": "/assets/maya/infographic_m11/btn_alineacion-solsticio.jpg",
+    "image": "/assets/maya/infographic_m11/hero_alineacion-solsticio.jpg",
+    "content": [
+      "Una de las manifestaciones más espectaculares de la arqueoastronomía maya ocurre en Palenque durante el solsticio de invierno, el 21 de diciembre de cada año. En esta jornada, el día más corto del año y la noche más prolongada en el hemisferio norte, la arquitectura de la ciudad cobra vida para escenificar una sobrecogedora metáfora visual sobre la muerte del Sol y el descanso eterno del gobernante K'inich Janaab' Pakal.",
+      "Si un observador se sitúa en la parte alta de El Palacio o en el patio de la Torre y dirige su mirada hacia el sudoeste al atardecer, podrá constatar un fenómeno óptico asombroso: el disco solar desciende con lentitud y se oculta exactamente detrás del Templo de las Inscripciones, pareciendo resbalar por la cresta superior del santuario antes de desaparecer en el horizonte montañoso que cobija a la cripta subterránea.",
+      "Esta alineación solsticial no es casual ni fortuita. Los sacerdotes astrónomos trazaron deliberadamente la orientación del Templo de las Inscripciones y de los palacios adyacentes para que el ocaso del solsticio de invierno conectara visualmente el astro rey con la tumba de Pakal. El Sol que muere en el invierno entraba así de forma simbólica en la cámara funeraria, acompañando al monarca difunto en su descenso al inframundo.",
+      "Asimismo, durante el amanecer del solsticio de verano, el 21 de junio, los rayos solares matutinos inciden con un ángulo rasante sobre la fachada del Templo de la Cruz, situado en el complejo adyacente edificado por el hijo de Pakal. La luz solar penetra por los vanos del santuario iluminando directamente el tablero esculpido donde Kan Bahlam recibe las insignias del poder real, escenificando el triunfo de la luz sobre las tinieblas.",
+      "Estos sutiles juegos de luces y sombras confirman que la traza urbana de Palenque fue concebida como un inmenso escenario teatral cósmico. La arquitectura no se limitaba a albergar actividades ceremoniales, sino que interactuaba de forma dinámica con los ciclos solares y estacionales, reafirmando ante los ojos del pueblo la íntima alianza existente entre la dinastía reinante y las fuerzas elementales del universo."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: "Un Reloj Inmenso",
-        icon: "clock",
-        text: "Imagina intentar construir un reloj funcional utilizando como material principal montañas de pura piedra maciza, calculando el movimiento exacto del sol gigante que está a millones de kilómetros de distancia. Eso es precisamente lo que lograron los brillantes constructores de Palenque con esta compleja alineación arqueoastronómica. Diseñaron toda la colosal pirámide fúnebre como un sofisticado reloj cósmico y calendario gigante para anunciar y celebrar anualmente la llegada del invierno, conectando la arquitectura con el universo.",
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el momento del ocaso solsticial invernal, la sombra proyectada por el Templo de las Inscripciones se extiende sobre la plaza principal cubriendo progresivamente los accesos a los recintos reales de El Palacio, creando una penumbra solemne que marcaba el instante exacto en que los sacerdotes debían iniciar las plegarias de la noche más larga del año."
       },
       {
-        label: "El Gemelo Divino",
-        icon: "atom",
-        text: "En la rica mitología sagrada de los mayas, recogida en su famoso libro el Popol Vuh, existía la profunda creencia de que el sol mismo era en realidad un joven héroe divino y muy valiente. Este héroe, que bajaba cada atardecer, tenía que superar increíbles pruebas de ingenio, sortear peligros mortales y derrotar a los monstruos tramposos en la oscuridad de Xibalbá para poder salir triunfante y brillar con fuerza nuevamente a la mañana siguiente. El rey Pakal, al asociarse íntimamente con el sol en el diseño de su tumba, se consideraba a sí mismo como este invencible dios triunfador sobre la muerte.",
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El acimut de la puesta de sol en el solsticio de invierno para la latitud de Palenque (17° 29' N) es de aproximadamente 245° respecto al norte verdadero. Los arqueoastrónomos han comprobado con instrumental topográfico de precisión que el eje visual trazado desde la Torre de El Palacio hacia el vértice del Templo coincide con dicho acimut con un margen de error menor a 30 minutos de arco."
+      }
     ],
-    fact: 'Existen otras alineaciones asombrosas en la ciudad. El "Templo de la Cruz" fue diseñado de tal manera que, durante el equinoccio de primavera, una franja de luz solar ilumina un dios del maíz tallado en su santuario interior. Esto simboliza el renacimiento de las plantas y la llegada de las lluvias.',
+    "fact": "El solsticio de invierno marcaba en la cosmovisión maya el renacimiento anual del Sol K'inich Ahau. Al igual que el Sol comenzaba a ganar tiempo de luz diurna día tras día a partir del solsticio invernal, el rey Pakal depositado en el seno del Templo de las Inscripciones iniciaba su camino de regeneración cósmica para renacer glorioso como el dios del maíz en la primavera."
   },
   {
-    id: 'legado-palenque',
-              bannerImage: '/assets/maya/infographic_m11/banner_legado-palenque.webp',
-    title: "El Legado Moderno",
-    color: "#78909C",
-    btnImage: '/assets/maya/infographic_m11/btn_legado-palenque.jpg',
-    image: '/assets/maya/infographic_m11/hero_legado-palenque.jpg',
-    content: [
-      'Palenque no es solo un museo silencioso; es un lugar de actividad científica. El misterio de esta capital continúa desarrollándose. Aunque la tumba de Pakal se descubrió en mil novecientos cincuenta y dos, los arqueólogos no se detuvieron allí. En 1994, hicieron otro descubrimiento en el Templo XIII.',
-      'Oculta dentro de este edificio encontraron la tumba intacta de una mujer. Sus huesos milenarios, su sarcófago de piedra y su ajuar funerario estaban cubiertos de polvo rojo. Este polvo era cinabrio que utilizaban en rituales funerarios. La bautizaron como la Reina Roja y hoy sabemos que fue la esposa de Pakal.',
-      'El conocimiento profundo que poseemos sobre los mayas le debe muchísimo a Palenque. En mil novecientos setenta y tres, ocurrió un evento extraordinario. Un grupo de arqueólogos se reunió en la zona arqueológica. Su objetivo era leer los jeroglíficos del Templo juntos. Lo lograron con gran éxito.',
-      'Esta reunión histórica fue un punto de quiebre. Se descubrió que los símbolos artísticos mayas eran un lenguaje fonético real completo. No eran dibujos sueltos. El proceso de desciframiento avanzó a gran velocidad. La civilización maya se convirtió en la primera cultura de América con una historia escrita detallada.',
-      'Hoy, la tecnología avanzada se une a las tradiciones para desentrañar secretos en Palenque. Con satélites espaciales y sistemas láser que penetran la selva, sabemos que los misterios están lejos de terminarse. Cada texto legible ayuda a armar el rompecabezas de una de las civilizaciones más fascinantes de la historia.'
+    "id": "legado-palenque",
+    "bannerImage": "/assets/maya/infographic_m11/banner_legado-palenque.webp",
+    "title": "El Legado Moderno",
+    "color": "#78909C",
+    "btnImage": "/assets/maya/infographic_m11/btn_legado-palenque.jpg",
+    "image": "/assets/maya/infographic_m11/hero_legado-palenque.jpg",
+    "content": [
+      "El descubrimiento y estudio sistemático de Palenque ha ejercido un impacto revolucionario en la comprensión moderna de la civilización maya y de la América precolombina. Reconocida como Patrimonio de la Humanidad por la UNESCO en 1987, la zona arqueológica y su parque nacional circundante continúan siendo un epicentro mundial para la investigación epigráfica, la conservación arquitectónica y el turismo cultural sustentable.",
+      "Fue en los monumentos de Palenque donde pioneros de la epigrafía como Yuri Knórozov, Tatiana Proskouriakoff, Heinrich Berlin y Linda Schele lograron los avances definitivos que permitieron descifrar la escritura jeroglífica maya. La abundancia y claridad de los textos dinásticos palencanos demostraron de forma concluyente que las inscripciones registraban historias reales de reyes mortales, guerras y alianzas, y no vagos dogmas teológicos.",
+      "En las últimas décadas, proyectos multidisciplinarios liderados por el Instituto Nacional de Antropología e Historia (INAH) han sacado a la luz hallazgos monumentales complementarios, como el suntuoso entierro de la Reina Roja (Ix Tz'akbu Ajaw, consorte de Pakal) en el Templo XIII, cuyo sarcófago de piedra monolítica y ajuar funerario cubierto de cinabrio intacto rivalizan en esplendor ceremonial con la sepultura de su esposo.",
+      "Asimismo, la aplicación de tecnologías de vanguardia, como el escaneo láser aerotransportado (LIDAR) y la fotogrametría digital de alta resolución, ha revelado una densidad urbana insospechada en las laderas selváticas que rodean el centro monumental. Canales de desagüe, terrazas agrícolas de contención, talleres de lítica y complejos residenciales menores demuestran una sofisticada adaptación ecológica al relieve montañoso.",
+      "Hoy en día, Palenque se erige como un símbolo universal de la capacidad humana para armonizar la ciencia matemática, la observación astronómica y la maestría estética con los rigores del medio ambiente tropical. Las lecciones de sus constructores sobre el manejo sustentable del agua y la integración del paisaje continúan inspirando a arquitectos, arqueólogos y jóvenes científicos de todo el orbe en el siglo XXI."
     ],
-    expandables: [
+    "expandables": [
       {
-        label: "El Polvo Rojo",
-        icon: "zap",
-        text: 'El famoso cinabrio utilizado en la tumba de la Reina Roja es un potente mineral que contiene mercurio y tiene un color rojo muy intenso que los mayas asociaban simbólicamente con el vital "este", la dirección por donde nace cada día el sol vivificante. Con el color de la sangre humana. Paradójicamente y de manera peligrosa, es venenoso. Al excavar la tumba en 1994, los arqueólogos modernos tuvieron que usar estrictas precauciones de bioseguridad, utilizando trajes especiales, máscaras y tubos de oxígeno para protegerse de respirar este tóxico polvo antiguo que permaneció sellado por milenios.',
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La tumba de la Reina Roja fue descubierta en 1994 por el arqueólogo Arnoldo González Cruz. A diferencia de Pakal, la dignataria no portaba inscripciones con su nombre dentro de la cámara, pero los análisis de ADN antiguo y la epigrafía del Templo de las Inscripciones confirmaron que se trataba de su noble esposa, la señora Tz'akbu Ajaw de Uxte'k'uh."
       },
       {
-        label: "Un Idioma Resucitado",
-        icon: "clock",
-        text: "Durante el emocionante proceso de desciframiento de los complicados jeroglíficos mayas en las décadas posteriores a la Mesa Redonda, los lingüistas descubrieron algo fascinante e inspirador: la antigua lengua hablada por Pakal. Su gente en Palenque (conocida como Cholti' Clásico) está directamente emparentada y muy cercana a los idiomas mayas, como el chol y el tzeltal, que todavía hablan con orgullo cientos de miles de personas indígenas que viven en el estado de Chiapas hoy en día. ¡La historia antigua está viva en las palabras actuales!",
-      },
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las exploraciones con sensor LIDAR disparan cientos de miles de pulsos de luz láser por segundo desde una aeronave hacia el suelo selvático. Al medir el tiempo de retorno de los pulsos que logran filtrar la densa vegetación tropical, los científicos generan mapas topográficos tridimensionales de resolución decimétrica que desnudan estructuras ocultas bajo la selva chiapaneca."
+      }
     ],
-    fact: "El espectacular descubrimiento conjunto del Templo de las Inscripciones con sus textos dinásticos, junto a la increíble tumba rica de la Reina Roja, ha demostrado científicamente a todos los historiadores modernos que en el complejo mundo de Palenque (y en muchas otras ciudades de la región maya), las mujeres nobles tenían un rol activo, poderoso. De altísima influencia política, económica y religiosa, siendo figuras fundamentales e indispensables para mantener las grandes dinastías familiares reinantes que controlaban la sociedad.",
-  },
+    "fact": "El Parque Nacional Palenque protege una superficie de más de 1,770 hectáreas de selva alta perennifolia donde habitan más de 200 especies de aves, monos aulladores, ocelotes y jaguares. Este ecosistema protegido resguarda no solo los tesoros arqueológicos de la dinastía de Pakal, sino uno de los corredores biológicos más vitales y amenazados de la República Mexicana."
+  }
 ];
 
 // ─── Temporal Particle Field (Canvas Background) ──────────────────────────────

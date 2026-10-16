@@ -82,144 +82,200 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'codice-descubrimiento',
-              bannerImage: '/assets/maya/infographic_m15/banner_codice-descubrimiento.webp',
-    title: 'El Descubrimiento',
-    color: '#C62828',
-    btnImage: '/assets/maya/infographic_m15/btn_codice-descubrimiento.jpg',
-    image: '/assets/maya/infographic_m15/hero_codice-descubrimiento.jpg',
-    content: [
-      'En 1739, Johann Christian Götze, director de la Biblioteca Real de Sajonia en Dresde, Alemania, compró el Códice de Dresde a un propietario en Viena. Se desconocía su autor, idioma y origen exacto.',
-      'Durante casi un siglo, el códice no fue comprendido. Sus dibujos de dioses, animales y símbolos geométricos eran indescifrables. En el siglo XIX, el bibliotecario Ernst Förstemann descubrió que los puntos y barras formaban un sistema matemático.',
-      'Durante la Segunda Guerra Mundial, en 1945, los Aliados bombardearon Dresde. La biblioteca sufrió daños severos, pero el libro sobrevivió en un sótano, aunque sufrió daños por el agua usada para apagar los incendios.',
-      'Hoy, el Códice de Dresde se conserva en la Biblioteca Estatal de Sajonia (Sächsische Landesbibliothek). Se exhibe en una sala con temperatura y humedad controladas para preservarlo. Es uno de los pocos libros mayas que sobrevivieron a la colonia.',
-      'Los historiadores creen que fue enviado a Europa poco después de la conquista española, posiblemente como regalo para el rey Carlos V. Pasó entre coleccionistas antes de llegar a la biblioteca. Permite estudiar el conocimiento astronómico maya.'
+    "id": "codice-descubrimiento",
+    "bannerImage": "/assets/maya/infographic_m15/banner_codice-descubrimiento.webp",
+    "title": "El Descubrimiento",
+    "color": "#C62828",
+    "btnImage": "/assets/maya/infographic_m15/btn_codice-descubrimiento.jpg",
+    "image": "/assets/maya/infographic_m15/hero_codice-descubrimiento.jpg",
+    "content": [
+      "El Códice de Dresde (Codex Dresdensis) es unánimemente reconocido como el manuscrito prehispánico más complejo, refinado y trascendental de la América indígena. Su historia documentada en Europa comenzó en el año 1739, cuando Johann Christian Götze, director de la Biblioteca Real de Sajonia en Dresde, lo adquirió de un coleccionista privado durante un viaje oficial a la ciudad de Viena, incorporándolo a los fondos de la corte real.",
+      "Durante casi un siglo, el manuscrito permaneció como una curiosidad exótica incomprensible en los anaqueles alemanes. Fue el sabio naturalista Alexander von Humboldt quien publicó en 1810 las primeras cinco páginas reproducidas en su obra Vistas de las cordilleras y monumentos de los pueblos indígenas de América, atrayendo la atención de los filólogos europeos hacia la intrincada belleza visual de los jeroglíficos mesoamericanos.",
+      "El verdadero punto de inflexión científico llegó en la década de 1880 de la mano del matemático y bibliotecario Ernst Förstemann. Con una paciencia metódica ejemplar, Förstemann descubrió que los puntos y barras combinados con símbolos de conchas marinas conformaban un sistema de numeración vigesimal posicional con valor de cero, descifrando por primera vez el mecanismo astronómico de la Cuenta Larga y la Rueda Calendárica.",
+      "Förstemann identificó además las célebres tablas astronómicas de Venus y los cómputos de eclipses en las páginas del códice, demostrando que el texto no contenía fábulas astrológicas arbitrarias, sino efemérides científicas de exactitud matemática insospechada. Este hallazgo revolucionario situó a los antiguos mayas al mismo nivel intelectual de las civilizaciones clásicas de Babilonia, Grecia, la India y la China antigua.",
+      "Los estudios filológicos y paleográficos contemporáneos estiman que el códice fue copiado por escribas de élite en el norte de Yucatán —posiblemente en Chichén Itzá o Mayapán— entre los años 1200 y 1250 d.C., en el periodo Posclásico Temprano. El manuscrito sintetiza conocimientos observacionales acumulados durante más de seis siglos en las metrópolis del Clásico, consolidándose como la cumbre del saber mesoamericano."
     ],
-    expandables: [
-      { label: 'Un Tesoro Rescatado', icon: 'clock', text: 'El agua en 1945 hizo que los pigmentos se corrieran. Los restauradores lo secaron durante años. Gracias a fotografías previas a la guerra, se conoce el contenido de las partes borradas.' },
-      { label: 'El Primer Vistazo', icon: 'clock', text: 'El científico Alexander von Humboldt incluyó algunas páginas en sus publicaciones del siglo XIX. Esto permitió que científicos de todo el mundo estudiaran la escritura maya y su matemática.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Johann Christian Götze obtuvo el códice en Viena de forma gratuita como un regalo diplomático de un noble austriaco, quien lo guardaba sin conocer su origen ni contenido. Götze escribió en sus memorias que lo aceptó considerando que se trataba de un «libro mexicano invaluable y curioso escrito en caracteres jeroglíficos desconocidos»."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Ernst Förstemann logró descifrar el calendario maya sin haber viajado jamás a México ni haber visto un monumento arqueológico en persona. Su método deductivo se basó exclusivamente en el análisis aritmético interno de las sumas de intervalos en las páginas del códice de Dresde y en el cotejo de las fechas de la Relación de fray Diego de Landa de 1566."
+      }
     ],
-    fact: 'El Códice de Dresde no se lee de izquierda a derecha. Se divide en "almanaques", y cada uno tiene un orden de lectura específico, a menudo en zigzag.'
+    "fact": "El Códice de Dresde contiene más de setecientos cartuchos jeroglíficos individuales y cientos de números calendáricos pintados con tintas indelebles. Su desciframiento a finales del siglo XIX proporcionó la clave maestra matemática que permitió a los arqueólogos de todo el mundo fechar con precisión absoluta las estelas monolíticas de Tikal, Palenque y Copán."
   },
   {
-    id: 'estructura-fisica',
-              bannerImage: '/assets/maya/infographic_m15/banner_estructura-fisica.webp',
-    title: 'Estructura Física',
-    color: '#5D4037',
-    btnImage: '/assets/maya/infographic_m15/btn_estructura-fisica.jpg',
-    image: '/assets/maya/infographic_m15/hero_estructura-fisica.jpg',
-    content: [
-      'El Códice de Dresde es una tira que mide 3.56 metros de largo. Los mayas lo doblaron como un acordeón, creando 39 hojas que se leen por ambos lados. Este formato se conoce como "libro biombo".',
-      'Está hecho de la corteza interna de un árbol de higuera silvestre, material llamado "amate". Para prepararlo, remojaban y golpeaban la corteza. Finalmente, la cubrían con una capa de cal blanca para pintar.',
-      'Los artistas, conocidos como "escribas", pertenecían a un alto rango social. Usaban pinceles finos de pelo de animal para dibujar glifos con gran precisión en espacios de un centímetro cuadrado.',
-      'Usaron pigmentos naturales: el negro venía del carbón; el rojo, de minerales como la hematita o insectos como la cochinilla; y el "Azul Maya" se lograba mezclando arcilla con la planta del añil. Este azul es muy resistente.',
-      'Se estima que el documento actual es una copia realizada entre los siglos XI y XII (1000 y 1200 d.C.) en Chichén Itzá, Yucatán, basada en tratados astronómicos más antiguos.'
+    "id": "estructura-fisica",
+    "bannerImage": "/assets/maya/infographic_m15/banner_estructura-fisica.webp",
+    "title": "Estructura Física",
+    "color": "#5D4037",
+    "btnImage": "/assets/maya/infographic_m15/btn_estructura-fisica.jpg",
+    "image": "/assets/maya/infographic_m15/hero_estructura-fisica.jpg",
+    "content": [
+      "La manufactura material del Códice de Dresde revela un dominio tecnológico asombroso en la elaboración de soportes orgánicos de escritura. El libro no está encuadernado al estilo europeo, sino confeccionado como una tira continua de papel doblada en forma de biombo o acordeón. Esta estructura plegable permitía a los sacerdotes desplegar secciones específicas sobre esteras ceremoniales para consultar tablas numéricas complejas.",
+      "El soporte del manuscrito es papel de amate, obtenido a partir de la corteza interna fibrosa de higueras silvestres tropicales (Ficus cotinifolia y Ficus padifolia). Los artesanos mayas desprendían las tiras de corteza, las hervían en agua con cal para ablandar las fibras leñosas y luego las maceraban con batidores de piedra estriada sobre tablas planas hasta entrelazar las fibras en láminas continuas de espesor homogéneo.",
+      "Una vez seca la tira de amate, ambas caras eran recubiertas con una imprimatura milimétrica de carbonato de calcio finamente pulverizado mezclado con gomas vegetales. Esta capa de estuco de cal blanca creaba una superficie lisa, impermeable y luminosa de extraordinaria blancura, idéntica al yeso de los murales al fresco, proporcionando el fondo neutro ideal para la aplicación de tintas fluidas con pinceles de pelo fino de animal.",
+      "La paleta cromática del códice incluye pigmentos minerales y vegetales de alta estabilidad química. El negro intenso se obtenía de hollín o carbón vegetal micronizado; el rojo y el marrón procedían de óxidos de hierro y sulfuro de mercurio (cinabrio); y el célebre azul maya se elaboraba fijando químicamente el colorante del índigo (añil) en la matriz cristalina de una arcilla laminar llamada paligorskita mediante calentamiento.",
+      "El manuscrito original consta de treinta y nueve hojas pintadas por ambos lados, totalizando setenta y ocho páginas de las cuales setenta y cuatro contienen ilustraciones y textos jeroglíficos. Con una longitud total desplegada de 3.56 metros y una altura de 20.5 centímetros, el códice fue concebido como un manual portátil de alta jerarquía, diseñado para resistir el uso continuo en ceremonias y consultas palaciegas."
     ],
-    expandables: [
-      { label: 'El Papel Amate', icon: 'atom', text: 'La capa de cal actuaba como sellador; sin ella, la tinta se habría esparcido por las fibras de la madera. Se usaban golpeadores de piedra para aplanar la corteza.' },
-      { label: 'Manos Diferentes', icon: 'atom', text: 'El análisis de los dibujos revela que al menos ocho artistas diferentes trabajaron en el Códice de Dresde. Cada escriba tenía un estilo particular.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El azul maya utilizado en las ilustraciones del dios Chaac en el Códice de Dresde es un pigmento híbrido organo-arcilloso prácticamente indestructible. Resiste la acción de ácidos corrosivos, solventes orgánicos y la radiación solar directa, habiendo conservado su brillantez turquesa original durante más de ochocientos años de historia."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El análisis espectroscópico de las hojas del códice demostró que el grosor de la capa de carbonato de calcio oscila entre 20 y 50 micrómetros. Esta imprimatura no solo aportaba blancura visual, sino que actuaba como un amortiguador químico alcalino natural que neutralizó los ácidos del ambiente impidiendo la degradación celular de las fibras de celulosa del papel."
+      }
     ],
-    fact: 'El formato de acordeón de 39 páginas permite 78 páginas legibles, aunque cuatro están en blanco. Un sacerdote podía abrir el libro en la sección exacta que necesitaba.'
+    "fact": "El Códice de Dresde estuvo originalmente dividido en dos secciones independientes que sumaban 39 hojas de doble cara. Cada pliegue de biombo mide aproximadamente 8.5 centímetros de ancho por 20.5 centímetros de alto, formando un volumen compacto que un sacerdote astrónomo podía transportar cómodamente bajo el brazo envuelto en una funda protectora de piel de jaguar."
   },
   {
-    id: 'tablas-venus',
-              bannerImage: '/assets/maya/infographic_m15/banner_tablas-venus.webp',
-    title: 'Tablas de Venus',
-    color: '#1565C0',
-    btnImage: '/assets/maya/infographic_m15/btn_tablas-venus.jpg',
-    image: '/assets/maya/infographic_m15/hero_tablas-venus.jpg',
-    content: [
-      'Las páginas 24 y de la 46 a la 50 contienen las "Tablas de Venus". Registran el ciclo del planeta visto desde la Tierra, dividiéndolo en cuatro fases.',
-      'Venus representaba una fuerza asociada con deidades guerreras. El ciclo desde que aparece como estrella de la mañana hasta que es estrella de la tarde promedia 584 días. Las tablas registran estos ciclos con gran exactitud.',
-      'Las tablas rastrean a Venus durante más de 33,000 días consecutivos (unos 90 años). Los sacerdotes predecían la "salida helíaca", cuando el planeta aparece antes del amanecer.',
-      'El ciclo de Venus dura exactamente 583.92 días, no 584. Los mayas inventaron un sistema de corrección matemática para restar días y ajustar sus predicciones.',
-      'Gracias a estas correcciones, las Tablas de Venus son los datos astronómicos más exactos del planeta creados antes del telescopio en Europa. Demuestran un dominio matemático mediante la observación.'
+    "id": "tablas-venus",
+    "bannerImage": "/assets/maya/infographic_m15/banner_tablas-venus.webp",
+    "title": "Tablas de Venus",
+    "color": "#1565C0",
+    "btnImage": "/assets/maya/infographic_m15/btn_tablas-venus.jpg",
+    "image": "/assets/maya/infographic_m15/hero_tablas-venus.jpg",
+    "content": [
+      "Las páginas 46 a 50 del Códice de Dresde albergan uno de los monumentos científicos más deslumbrantes de la humanidad: las Tablas de Venus. En este apartado epigráfico, los astrónomos mayas compilaron con precisión matemática los movimientos orbitales aparentes del planeta Venus (Noh Ek'), concebido como una deidad dual que encarnaba tanto al temible lucero matutino (Tlahuizcalpantecuhtli) como a la deidad del crepúsculo.",
+      "Los sabios mayas calcularon que el periodo sinódico de Venus —el intervalo exacto que tarda el planeta en repetir su misma posición visual respecto al Sol visto desde la Tierra— dura un promedio de 584 días. En el códice, este ciclo completo aparece desglosado con exactitud en sus cuatro fases observables: 236 días como lucero matutino, 90 días de ocultamiento tras el Sol, 250 días como lucero vespertino y 8 días de tránsito oscuro inferior.",
+      "La genialidad de la tabla reside en su capacidad para conciliar el ciclo de Venus con el calendario solar de 365 días. Cinco ciclos de Venus de 584 días equivalen con exactitud a ocho años solares de 365 días: 5 × 584 = 8 × 365 = 2,920 días. Al multiplicar este ciclo base por trece, los astrónomos crearon una gran rueda venusina de 37,960 días (104 años solares), equivalente a dos periodos de 52 años de la Rueda Calendárica.",
+      "Conscientes de que el periodo sinódico real de Venus es de 583.92 días y no de 584 días cerrados, los matemáticos mayas introdujeron una ingeniosa tabla de factores de corrección en el prefacio de la página 46. Mediante la sustracción periódica de cuatro días al cabo de sesenta y un ciclos sinódicos, lograron reducir el error acumulado a tan solo un día solar cada quinientos años, superando la precisión de la astronomía europea coetánea.",
+      "Esta tabla astronómica cumplía una trascendental función militar y adivinatoria. La primera reaparición de Venus en el horizonte oriental al amanecer tras los ocho días de invisibilidad en conjunción inferior era considerada un momento de máximo peligro cósmico, señalando la fecha propicia para que los gobernantes desataran la «guerra estelar» contra ciudades rivales, capturando prisioneros para los sacrificios de Estado."
     ],
-    expandables: [
-      { label: 'Las Cuatro Fases', icon: 'atom', text: 'Dividieron el viaje en cuatro fases: 236 días como estrella de la mañana, 90 días detrás del Sol, 250 días como estrella de la tarde, y 8 días frente al Sol.' },
-      { label: 'Corrección del Calendario', icon: 'clock', text: 'La página 24 muestra múltiplos del ciclo de Venus y fechas para saltarse días y corregir el calendario, demostrando un algoritmo de corrección astronómica.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En las Tablas de Venus, el planeta aparece ilustrado como un dios guerrero armado con lanza dardos (átlatl) y flechas ceremoniales. En cada una de las páginas, la deidad dispara sus dardos celestes contra diversas víctimas terrenales: reyes, deidades del maíz o símbolos del agua, advirtiendo los desastres que ocurrirían según el signo del día de su orto."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El periodo sinódico moderno de Venus determinado por la NASA mediante radares satelitales es de 583.92 días solares medios. El ajuste maya de restar cuatro días en la posición de 61 ciclos de Venus arroja una duración promedio estimada de 583.93 días, lo que representa una exactitud superior al 99.98% conseguida únicamente con la vista humana sin lentes telescópicos."
+      }
     ],
-    fact: 'La salida helíaca de Venus era considerada peligrosa. Los mayas creían que la luz del planeta afectaba a los gobernantes y cosechas, por lo que usaban el Códice para anticiparse a estas fechas.'
+    "fact": "La Tabla de Venus del Códice de Dresde abarca una proyección calendárica continua de 37,960 días solares, equivalente exactamente a 65 ciclos sinódicos de Venus, 104 años civiles Haab' de 365 días y 146 almanaques sagrados Tzolk'in de 260 días. Esta sincronización perfecta entre tres astros y calendarios distintos representa una de las cumbres intelectuales de la matemática mundial."
   },
   {
-    id: 'tablas-eclipses',
-              bannerImage: '/assets/maya/infographic_m15/banner_tablas-eclipses.webp',
-    title: 'Tablas de Eclipses',
-    color: '#212121',
-    btnImage: '/assets/maya/infographic_m15/btn_tablas-eclipses.jpg',
-    image: '/assets/maya/infographic_m15/hero_tablas-eclipses.jpg',
-    content: [
-      'En las páginas 51 a 58, los mayas crearon un registro para predecir eclipses solares y lunares. Era un sistema de alerta para realizar rituales a tiempo.',
-      'Registraron las fases lunares y agruparon 405 meses lunares, que equivalen a 11,960 días. Este ciclo conecta los movimientos del Sol, la Luna y la Tierra, permitiendo predecir su alineación.',
-      'Las tablas están divididas en 69 grupos lunares. Agruparon los meses en paquetes de 5 y 6 lunaciones porque los eclipses ocurren en esos intervalos (cada 148 o 177 días).',
-      'El manuscrito contiene dibujos del Sol o la Luna junto a bandas celestiales y criaturas que oscurecen la luz. Estas imágenes indicaban a los sacerdotes cuándo realizar ceremonias.',
-      'La tabla predecía las condiciones matemáticas de un eclipse en la Tierra, aunque no fuera visible en las ciudades mayas. Esto muestra su comprensión de la periodicidad orbital.'
+    "id": "tablas-eclipses",
+    "bannerImage": "/assets/maya/infographic_m15/banner_tablas-eclipses.webp",
+    "title": "Tablas de Eclipses",
+    "color": "#212121",
+    "btnImage": "/assets/maya/infographic_m15/btn_tablas-eclipses.jpg",
+    "image": "/assets/maya/infographic_m15/hero_tablas-eclipses.jpg",
+    "content": [
+      "Las páginas 51 a 58 del Códice de Dresde contienen una de las obras cumbres de la astronomía observacional prehispánica: la Tabla de Eclipses. A lo largo de ocho páginas continuas, los sabios mayas estructuraron un almanaque adivinatorio y científico diseñado para predecir las temporadas de peligro en que podían producirse eclipses de Sol o de Luna, fenómenos temidos que amenazaban la luz vital de las deidades rectoras.",
+      "Los astrónomos mayas comprendieron empíricamente que los eclipses no ocurren de forma caótica, sino en intervalos regulares regulados por los nodos lunares, los puntos donde la órbita de la Luna corta el plano orbital de la Tierra alrededor del Sol. Al carecer de telescopios, registraron durante siglos las fechas de lunaciones completas, descubriendo que los eclipses se concentran en ventanas temporales separadas por seis o cinco meses lunares.",
+      "La tabla de Dresde está estructurada en una secuencia de sesenta y nueve intervalos lunares que totalizan cuatrocientas cinco lunas llenas continuas, equivalentes a 11,960 días solares (casi treinta y tres años terrestres). La inmensa mayoría de estos intervalos abarcan seis meses lunares (177 o 178 días), pero en puntos matemáticos estratégicos se intercalan intervalos cortos de cinco meses lunares (148 días) para reajustar el cómputo.",
+      "Cada una de las divisiones de la tabla está acompañada por pinturas fascinantes que ilustran los mitos asociados a los eclipses. El disco solar o lunar aparece suspendido de una banda celeste tachonada de estrellas, aprisionado entre las mandíbulas abiertas de una gigantesca serpiente cósmica del cielo o devorado por un monstruo descarnado de la muerte, reflejando el combate cósmico por la preservación de la claridad diurna.",
+      "Esta tabla astronómica posee una precisión asombrosa: el ciclo de 11,960 días mayas difiere en apenas unas pocas horas respecto a cuatrocientas cinco lunaciones reales (11,959.89 días). Gracias a este instrumento de cálculo, los sacerdotes anunciaban a la población la llegada inminente de un eclipse con semanas de anticipación, organizando rezos y percusiones ceremoniales de tambores para ayudar al Sol a vencer la oscuridad."
     ],
-    expandables: [
-      { label: 'El Número Mágico 11,960', icon: 'atom', text: 'El ciclo de 11,960 días sincroniza los ciclos lunares, el año solar y el calendario sagrado (Tzolkin), siendo divisible por 260.' },
-      { label: 'Imágenes del Peligro', icon: 'clock', text: 'Las imágenes de serpientes mordiendo el glifo kin (Sol) representaban una batalla cósmica. La tabla indicaba cuándo el sol requeriría ofrendas.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante los eclipses solares, los mayas creían que el Sol estaba siendo devorado por hormigas gigantes celestiales o por el monstruo de la tierra. Para ahuyentar a estos demonios cósmicos y despertar al Sol desmayado, la población entera golpeaba vasijas de barro, hacía sonar caracoles marinos y gritaba al unísono hacia el firmamento oscurecido."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El ciclo de 11,960 días del Códice de Dresde se aproxima de forma asombrosa al período astronómico conocido en la actualidad como «Saros doble» o ciclo de nodos. Cuatrocientas cinco lunaciones sinódicas (29.53059 días × 405 = 11,959.89 días) coinciden casi con 46 semiannos de eclipse (242 revoluciones dracónicas), probando un dominio empírico de la mecánica de los nodos."
+      }
     ],
-    fact: 'Astrónomos confirmaron que la tabla de eclipses del Códice de Dresde cubre 33 años en el siglo VIII d.C. Y predice ventanas de eclipses solares con precisión.'
+    "fact": "La Tabla de Eclipses de Dresde registra 405 lunas consecutivas distribuidas en 69 grupos de lunaciones. Los mayas calcularon que 405 meses lunares equivalían a 11,960 días solares, lo que otorga una duración del mes lunar de 29.53086 días: ¡una desviación de menos de un minuto respecto a las mediciones atómicas contemporáneas más avanzadas!"
   },
   {
-    id: 'tablas-lluvia',
-              bannerImage: '/assets/maya/infographic_m15/banner_tablas-lluvia.webp',
-    title: 'Tablas de Lluvia y Marte',
-    color: '#00695C',
-    btnImage: '/assets/maya/infographic_m15/btn_tablas-lluvia.jpg',
-    image: '/assets/maya/infographic_m15/hero_tablas-lluvia.jpg',
-    content: [
-      'Una gran parte del Códice de Dresde está dedicada a almanaques agrícolas. Conectan los ciclos astronómicos con las lluvias y las estaciones de siembra.',
-      'Chaac, el dios de la lluvia, aparece frecuentemente. Está ilustrado con hachas (truenos) y vasijas (agua). Se asocia a los cuatro puntos cardinales para indicar la dirección de vientos y tormentas.',
-      'El códice también incluye tablas sobre Marte. Los mayas mapearon el movimiento retrógrado de Marte, cuando el planeta parece detenerse y moverse hacia atrás en el cielo nocturno.',
-      'El ciclo de Marte en las tablas es de 780 días. El período sinódico real es de 779.94 días. Los mayas lograron esta alta precisión sin instrumentos ópticos.',
-      'Estos almanaques indicaban cuándo preparar la tierra y sembrar. Combinando los ciclos de Marte, la Luna y las estaciones, aseguraban la producción agrícola.'
+    "id": "tablas-lluvia",
+    "bannerImage": "/assets/maya/infographic_m15/banner_tablas-lluvia.webp",
+    "title": "Tablas de Lluvia y Marte",
+    "color": "#00695C",
+    "btnImage": "/assets/maya/infographic_m15/btn_tablas-lluvia.jpg",
+    "image": "/assets/maya/infographic_m15/hero_tablas-lluvia.jpg",
+    "content": [
+      "Además de las efemérides de Venus y la Luna, el Códice de Dresde dedica extensas secciones a la predicción meteorológica y al seguimiento de los planetas exteriores. En las páginas 43 a 45 se encuentra la enigmática Tabla de Marte, donde los astrónomos mayas compilaron el ciclo sinódico del planeta rojo (780 días), vinculándolo estrechamente con la figura mítica de una criatura zoomorfa conocida como la «Bestia de Marte».",
+      "La Bestia de Marte aparece pintada colgando de las patas de una banda celeste adornada con glifos de estrellas y constelaciones, mostrando un cuerpo escamoso con pezuñas de venado y trompa alargada. Los sacerdotes identificaron que tres periodos del calendario sagrado Tzolk'in de 260 días sumaban exactamente setecientos ochenta días solares (3 × 260 = 780), coincidiendo con la duración del ciclo orbital sinódico de Marte en el firmamento.",
+      "Las secciones consagradas a las lluvias y la agricultura abarcan las páginas 29 a 42 y 65 a 73 del manuscrito, dominadas por la omnipresente figura de Chaac, la deidad benéfica del agua celeste y las tormentas. Chaac aparece retratado en decenas de advocaciones rituales: empuñando hachas de rayo para quebrar las nubes, remando en canoas cósmicas sobre el mar primordial y plantando semillas de maíz en campos fertilizados.",
+      "Estas tablas de lluvia asociaban las fechas de precipitación con los cuatro rumbos cardinales del mundo mesoamericano, asignando colores sagrados a cada punto: rojo para el este fértil, blanco para el norte frío, negro para el oeste del atardecer y amarillo para el sur. Al correlacionar los días del Tzolk'in con estos rumbos, los sabios dictaminaban qué regiones gozarían de cosechas abundantes o padecerían sequías y plagas.",
+      "La culminación pictórica del códice se encuentra en la célebre página 74, conocida como la escena del Gran Diluvio Cósmico. En ella, un colosal cocodrilo celeste derrama torrentes infinitos de agua sobre la tierra a través de sus fauces abiertas, mientras una anciana deidad destructora vuelca una vasija de agua invertida, escenificando el mito del fin catastrófico de una era cósmica previo a la regeneración universal."
     ],
-    expandables: [
-      { label: 'El Dios Chaac', icon: 'atom', text: 'Chaac se asocia a cuatro colores: rojo (Este), blanco (Norte), negro (Oeste) y amarillo (Sur). Estas direcciones eran clave para el clima de Yucatán.' },
-      { label: 'El Planeta Rojo', icon: 'atom', text: 'Dividieron el ciclo de 780 días de Marte en intervalos de 78 días. Este ciclo refleja el tiempo que tarda la Tierra en rebasar a Marte en su órbita.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En varias páginas del códice, el dios Chaac aparece montado sobre el lomo de un ciervo, sumergido en un cenote subterráneo o sentado en la copa de un árbol cósmico de ceiba. Cada una de estas posturas representaba un tipo diferente de fenómeno meteorológico: brumas matinales, lloviznas suaves o huracanes devastadores con truenos destructivos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El periodo sinódico medio de Marte respecto a la Tierra es de 779.94 días solares. La tabla del Códice de Dresde redondeó este valor a 780 días exactos, lo que representa un error relativo minúsculo de apenas 0.008%. Esta concordancia matemática permitió a los mayas integrar el planeta Marte en su calendario ritual de 260 días de manera armónica."
+      }
     ],
-    fact: 'La página 74 muestra "El Diluvio": un cocodrilo celeste y una diosa vertiendo agua. Podría representar la temporada de huracanes o una narración mitológica.'
+    "fact": "La página 74 del Códice de Dresde es una de las composiciones visuales más dramáticas del arte maya prehispánico. Pintada con fondo negro y tonalidades verdosas de azul maya, muestra al Monstruo Celestial vomitando un río continuo de agua con glifos de eclipses solares y lunares, advirtiendo sobre el poder colosal del agua en el destino de Mesoamérica."
   },
   {
-    id: 'matematica-codice',
-              bannerImage: '/assets/maya/infographic_m15/banner_matematica-codice.webp',
-    title: 'La Matemática',
-    color: '#F9A825',
-    btnImage: '/assets/maya/infographic_m15/btn_matematica-codice.jpg',
-    image: '/assets/maya/infographic_m15/hero_matematica-codice.jpg',
-    content: [
-      'El Códice de Dresde documenta el sistema matemático maya. Usaban una base vigesimal, agrupando cantidades de 20 en 20.',
-      'Escribían números con dos símbolos: un punto representaba el uno y una barra el cinco. Al combinarlos y apilarlos en posiciones verticales, podían registrar cantidades mayores.',
-      'Un gran logro fue el uso del cero, representado con una concha. El cero posicional les permitía escribir y calcular grandes cifras, facilitando la medición de ciclos largos.',
-      'El códice contiene "Fechas de Cuenta Larga", un calendario que contaba los días desde la fecha de su creación mítica (3114 a.C.). Las páginas muestran cálculos de millones de días.',
-      'Utilizaban algoritmos de corrección en el códice. Instruían a los sacerdotes a sumar o restar cantidades para ajustar los ciclos astronómicos a las observaciones reales.'
+    "id": "matematica-codice",
+    "bannerImage": "/assets/maya/infographic_m15/banner_matematica-codice.webp",
+    "title": "La Matemática",
+    "color": "#F9A825",
+    "btnImage": "/assets/maya/infographic_m15/btn_matematica-codice.jpg",
+    "image": "/assets/maya/infographic_m15/hero_matematica-codice.jpg",
+    "content": [
+      "La base intelectual que sostiene todo el aparato astronómico del Códice de Dresde es un sofisticado sistema matemático posicional vigesimal (base 20) que constituye uno de los pináculos del pensamiento abstracto de la antigüedad. Mientras que las matemáticas romanas eran incapaces de realizar multiplicaciones o divisiones complejas, los matemáticos mayas operaban con soltura aritmética manejando magnitudes astronómicas millonarias.",
+      "El sistema notacional maya requería únicamente de tres símbolos gráficos elementales: un punto para el valor unitario de uno, una barra horizontal para el valor de cinco y una estilizada concha marina o flor de cuatro pétalos para representar el cero posicional. Con estos tres signos sencillos, dispuestos verticalmente en niveles superpuestos de valor creciente (1, 20, 400, 8,000, 160,000), podían escribir cualquier número imaginable.",
+      "En el Códice de Dresde, los escribas emplearon una variante adaptada a la cronología astronómica, donde el tercer nivel numérico se multiplicaba por 18 en lugar de 20 para acercarse al año solar: 20 × 18 = 360 días (un Tun). Los niveles superiores continuaban multiplicándose por 20: el K'atun de 7,200 días y el B'ak'tun de 144,000 días, permitiendo registrar ciclos históricos continuos a lo largo de decenas de siglos sin error.",
+      "Un elemento matemático asombroso en el manuscrito son los llamados «Números de Serpiente», que aparecen en las páginas 61 a 69. Estos números consisten en colosales columnas de cifras vigesimales inscritas dentro de las ondulaciones del cuerpo de serpientes emplumadas gigantescas. Estas cuentas registran intervalos temporales colosales de más de doce millones de días que proyectan fechas míticas al origen de la creación cósmica.",
+      "Asimismo, el códice utiliza ingeniosos factores multiplicadores llamados «números de anillo», que permitían a los astrónomos calcular hacia atrás en el tiempo para fijar eventos celestes antiguos que sirvieran como puntos de calibración o fecha cero para las tablas de efemérides. Esta disciplina combinatoria confirma que los mayas trataban al tiempo no como una abstracción poética, sino como una ciencia métrica exacta."
     ],
-    expandables: [
-      { label: 'El Cero de Concha', icon: 'clock', text: 'El uso del cero posicional permitió a los mayas realizar cálculos complejos siglos antes de su uso común en Europa.' },
-      { label: 'Multiplicaciones Antiguas', icon: 'atom', text: 'El Códice incluye múltiplos precalculados de ciclos, como 91 o 78 días, funcionando como tablas de referencia para agilizar cálculos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El concepto matemático del cero como marcador de posición vacía y valor nulo fue inventado por los astrónomos mayas en el periodo Preclásico Tardío (alrededor del 36 a.C.), varios siglos antes de que los matemáticos de la India desarrollaran el cero de forma independiente en el siglo V d.C. y más de un milenio antes de su adopción en Europa."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La base vigesimal (base 20) utilizada por los mayas tiene su origen fisiológico en el conteo humano con los diez dedos de las manos y los diez dedos de los pies. En las lenguas mayenses, la palabra que designa al número veinte (Uinik o Winik) es la misma palabra que traduce «persona completa» o «ser humano entero», reflejando una matemática encarnada."
+      }
     ],
-    fact: 'El "Número Serpiente" en el códice contiene un cálculo de más de 12 millones de días, apuntando a fechas mitológicas en el pasado distante.'
+    "fact": "En las páginas 61 y 62 del Códice de Dresde, los Números de Serpiente registran una cifra calendárica equivalente a más de 34,000 años solares continuos proyectados hacia el pasado primordial. Ningún otro documento manuscrito conservado en todo el continente americano maneja intervalos de tiempo tan inmensos con tanta rigurosidad posicional."
   },
   {
-    id: 'supervivencia-codice',
-              bannerImage: '/assets/maya/infographic_m15/banner_supervivencia-codice.webp',
-    title: 'Supervivencia',
-    color: '#FFF8E1',
-    btnImage: '/assets/maya/infographic_m15/btn_supervivencia-codice.jpg',
-    image: '/assets/maya/infographic_m15/hero_supervivencia-codice.jpg',
-    content: [
-      'El Códice de Dresde es uno de los cuatro códices mayas prehispánicos que sobreviven, junto al de Madrid, París y el Códice Maya de México.',
-      'En 1562, el obispo franciscano Diego de Landa realizó un "auto de fe" en Maní, Yucatán. Ordenó quemar miles de objetos sagrados y códices mayas, destruyendo gran parte del registro histórico y científico.',
-      'Landa justificó la quema afirmando que los libros contenían "supersticiones". Se perdió un conocimiento invaluable de astronomía, medicina e historia.',
-      'Los cuatro códices sobrevivieron porque fueron enviados a Europa antes de las quemas. El Códice de Dresde es considerado el más complejo en contenido científico y matemático.',
-      'El documento es una enciclopedia en papel de amate que sobrevivió a la colonia, al viaje oceánico y a la guerra. Preserva el registro astronómico de la civilización maya.'
+    "id": "supervivencia-codice",
+    "bannerImage": "/assets/maya/infographic_m15/banner_supervivencia-codice.webp",
+    "title": "Supervivencia",
+    "color": "#FFF8E1",
+    "btnImage": "/assets/maya/infographic_m15/btn_supervivencia-codice.jpg",
+    "image": "/assets/maya/infographic_m15/hero_supervivencia-codice.jpg",
+    "content": [
+      "La existencia contemporánea del Códice de Dresde es un auténtico milagro de la historia de la conservación del patrimonio cultural de la humanidad. Durante la conquista y colonización española de Yucatán en el siglo XVI, cientos de manuscritos jeroglíficos mayas fueron confiscados y destruidos sistemáticamente en hogueras inquisitoriales, entre las cuales destaca el infame Auto de Fe de Maní perpetrado por fray Diego de Landa en 1562.",
+      "De las decenas de miles de libros científicos y religiosos que resguardaban el saber de las cortes mayas, únicamente sobrevivieron cuatro manuscritos auténticos reconocidos por la comunidad internacional: el Códice de Dresde en Alemania, el Códice de París en Francia, el Códice de Madrid en España y el Códice Maya de México (antes conocido como Códice Grolier). De todos ellos, el de Dresde es el más extenso, bello y científico.",
+      "Sin embargo, las amenazas contra el códice continuaron en el siglo XX en suelo europeo. Durante la Segunda Guerra Mundial, en la noche del 13 al 14 de febrero de 1945, la ciudad de Dresde fue sometida a un devastador bombardeo aéreo aliado que destruyó la mayor parte del centro histórico y el edificio barroco de la Biblioteca Real Japonesa donde se resguardaban las colecciones bibliográficas más preciadas de Sajonia.",
+      "Afortunadamente, el códice había sido evacuado y almacenado preventivamente dentro de una caja metálica estanca en las bodegas subterráneas de un castillo cercano. No obstante, la rotura de tuberías y las filtraciones masivas de agua durante los ataques provocaron daños por humedad que afectaron los bordes superiores de varias láminas, desvaneciendo parcialmente algunas líneas glíficas y pigmentos de caliza.",
+      "Hoy en día, el manuscrito se preserva bajo condiciones atmosféricas de temperatura y humedad estrictamente controladas en una bóveda de alta seguridad de la Biblioteca Estatal y Universitaria de Sajonia (SLUB) en Dresde. Totalmente digitalizado en resolución milimétrica de ultra alta definición, el Códice de Dresde continúa siendo descifrado por epigrafistas globales como un testimonio eterno del genio cósmico maya."
     ],
-    expandables: [
-      { label: 'Los Cuatro Sobrevivientes', icon: 'atom', text: 'El Códice de París trata rituales, el de Madrid es un almanaque agrícola, y el Códice Maya de México se enfoca en el planeta Venus.' },
-      { label: 'La Ironía Histórica', icon: 'clock', text: 'Diego de Landa documentó parte del alfabeto maya en su crónica posterior. Esas notas ayudaron a los epigrafistas modernos a descifrar los códices.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Antes de los bombardeos de la Segunda Guerra Mundial, el erudito Ernst Förstemann había publicado en 1880 y 1892 una edición facsimilar litográfica de extraordinaria fidelidad fotográfica en color del Códice de Dresde. Estas copias facsimilares tempranas permitieron a los arqueólogos reconstruir los fragmentos dañados por el agua en 1945."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las técnicas modernas de imagen multiespectral (MSI) y fluorescencia de rayos X (XRF) aplicadas al Códice de Dresde han permitido leer trazos de pintura y glifos subyacentes borrados por el agua en 1945. Al iluminar el documento con distintas longitudes de onda, desde el ultravioleta hasta el infrarrojo, los pigmentos antiguos vuelven a revelarse."
+      }
     ],
-    fact: 'Cuando el astrónomo John Teeple analizó las tablas del Códice de Dresde en los años 1920, la comunidad científica reconoció el alto nivel matemático de la cultura maya.'
+    "fact": "El Códice de Dresde fue inscrito en el Registro de la Memoria del Mundo de la UNESCO como Patrimonio Documental de la Humanidad. Es considerado el tratado astronómico más antiguo y sofisticado producido en el continente americano antes de la llegada de los europeos, constituyendo un puente invaluable entre el conocimiento antiguo y la ciencia contemporánea."
   }
 ];
 

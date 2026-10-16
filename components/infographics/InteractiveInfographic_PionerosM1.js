@@ -28,17 +28,17 @@ const INFOGRAPHIC_NODES = [
       "Junto a su compañero de cuarto y gran amigo Gherman Titov, Gagarin fue llevado al Cosmódromo de Baikonur en abril de 1961. Aunque Titov poseía calificaciones académicas ligeramente superiores, Koroliov y la comisión estatal seleccionaron a Gagarin como piloto titular para la misión histórica no solo por su impecable pericia técnica, sino también por su carácter sereno, su temple ante la adversidad y su extraordinaria capacidad de comunicación con el pueblo.",
       "La elección de Gagarin reflejaba la filosofía del programa soviético: un joven talentoso surgido de las raíces obreras de la nación que encarnaba los valores de disciplina, rigor y valentía. La noche previa al lanzamiento, Gagarin durmió plácidamente durante siete horas continuas con los electrodos médicos fijados en su pecho, demostrando la prodigiosa compostura de un hombre que estaba a punto de cambiar el destino de la civilización."
     ],
-    "fact": "Yuri Gagarin fue seleccionado entre más de 3,000 pilotos de caza soviéticos tras soportar semanas en cámaras de aislamiento sensorial y pruebas en centrífugas de hasta 12 G en la Ciudad de las Estrellas.",
+    "fact": "Yuri Alekséyevich Gagarin fue seleccionado entre más de tres mil pilotos de combate de caza soviéticos tras superar extenuantes pruebas de centrifugado a 12 G, semanas en cámaras de aislamiento sensorial profundo y rigurosos exámenes termodinámicos en la Ciudad de las Estrellas, destacando por su serenidad y brillantez.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los médicos seleccionaron pilotos con estatura inferior a 170 cm y peso menor a 70 kg debido a las limitaciones de masa y volumen de la cabina esférica Vostok, de apenas dos punto tres metros de diámetro exterior."
+        "text": "Los criterios biomédicos de la comisión militar soviética exigían estrictamente una estatura menor a un metro con setenta centímetros y un peso inferior a setenta kilogramos debido al volumen restringido de la cabina habitable de la cápsula esférica Vostok, cuyo diámetro exterior medía apenas dos punto tres metros útiles."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Durante la visita a la maqueta de la nave Vostok en 1960, Gagarin fue el único candidato que se quitó los zapatos antes de entrar a la cápsula como muestra de respeto reverencial hacia el trabajo de los ingenieros constructores."
+        "text": "Durante su primera visita de inspección a la maqueta de ingeniería de la nave Vostok en el complejo de diseño OKB-1 en 1960, Gagarin se quitó solemnemente las botas militares antes de subir al habitáculo, mostrando un respeto que impresionó de inmediato al diseñador jefe Serguéi Koroliov sobre todos los demás postulantes."
       }
     ]
   },
@@ -56,17 +56,17 @@ const INFOGRAPHIC_NODES = [
       "No obstante, ante una eventualidad de emergencia o fallo en los sistemas de control automático, Koroliov insistió en dotar a Gagarin de un sistema de control manual alternativo. Para activarlo, el cosmonauta debía abrir un sobre sellado que contenía un código numérico secreto de tres dígitos (el número 125) e ingresarlo en un teclado lógico de seis teclas situado junto a su visor de navegación astronómica 'Vzor'.",
       "El diseño de la Vostok 1 priorizó la seguridad pasiva y la redundancia aerodinámica. Su forma perfectamente esférica garantizaba que, debido a su centro de gravedad desplazado, la cápsula se autoorientara por fuerzas aerodinámicas naturales durante el reingreso a la atmósfera densa, protegiendo al cosmonauta del calor extremo incluso si los sistemas eléctricos de propulsión de actitud fallaban por completo."
     ],
-    "fact": "La cápsula Vostok 1 tenía forma esférica para autoorientarse de forma aerodinámica durante el reingreso y contaba con un código secreto sellado (125) que Gagarin podía usar para desbloquear el control manual.",
+    "fact": "La cápsula Vostok 1 diseñada por Serguéi Koroliov poseía un perfil esférico autoalineable por gravedad pasiva durante el reingreso y resguardaba en un sobre sellado el código numérico secreto 125, el cual permitía a Gagarin desbloquear los mandos manuales de la consola Vzor si los algoritmos automáticos fallaban en órbita.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La esfera Vostok tenía una masa de dos mil cuatrocientos sesenta kilogramos y utilizaba un escudo ablativo compuesto de resinas fenólicas que absorbía el calor por sublimación térmica a más de dos mil grados centígrados."
+        "text": "La esfera habitable de descenso Vostok tenía una masa de dos mil cuatrocientos sesenta kilogramos y contaba con un escudo térmico de protección ablativa fenólica capaz de disipar el flujo térmico mediante sublimación controlada a temperaturas superficiales que sobrepasaban con creces los dos mil quinientos grados centígrados."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "La identidad del diseñador jefe Serguéi Koroliov se mantuvo como el secreto de estado mejor guardado de la URSS; en la prensa mundial solo se le llamaba misteriosamente 'El Ingeniero Jefe'."
+        "text": "La identidad de Serguéi Koroliov fue protegida bajo el más estricto secreto de estado por la Unión Soviética durante toda su vida operativa; la prensa internacional y los comunicados del Kremlin solo se referían a su persona como 'El Diseñador Jefe' para resguardar su seguridad frente a cualquier intento de sabotaje extranjero."
       }
     ]
   },
@@ -84,17 +84,17 @@ const INFOGRAPHIC_NODES = [
       "A los diez minutos del despegue, se produjo la separación limpia de la etapa final del cohete lanzador. El rugido de los motores se apagó bruscamente y fue reemplazado por un silencio cósmico absoluto. La nave Vostok 1 ingresó en una órbita elíptica alrededor de la Tierra con un perigeo de ciento sesenta y nueve kilómetros y un apogeo de trescientos veintisiete kilómetros, viajando a la vertiginosa velocidad orbital de veintiocho mil doscientos sesenta kilómetros por hora.",
       "Gagarin miró a través del visor óptico de su escotilla y contempló un panorama que ningún ojo humano había presenciado jamás: la curvatura perfecta y luminosa de la Tierra recortada contra la infinita negrura del espacio profundo, envuelta por un finísimo y resplandeciente halo de atmósfera azul cobalto. 'La Tierra es azul... ¡Qué hermosa es!', exclamó emocionado por el canal de radio 'Zarya', transmitiendo el asombro de toda la especie humana."
     ],
-    "fact": "A las 09:07 hora de Moscú del 12 de abril de 1961, Yuri Gagarin exclamó '¡Poyéjaly!' al despegar desde Baikonur, alcanzando la órbita terrestre a 28,260 km/h en solo diez minutos de vuelo balístico.",
+    "fact": "A las 09:07 hora de Moscú del 12 de abril de 1961, Yuri Gagarin pronunció su célebre exclamación '¡Poyéjaly!' al encenderse los motores del cohete Vostok-K en Baikonur, alcanzando la órbita de inserción terrestre a una velocidad de 28,260 km/h en solo diez minutos de aceleración constante que alcanzaron los cinco G de empuje.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La velocidad orbital de la Vostok 1 (siete punto ocho kilómetros por segundo) equilibraba con exactitud la fuerza centrífuga con la atracción gravitacional, permitiendo un estado de caída libre perpetua en órbita."
+        "text": "La velocidad orbital de la nave Vostok 1 (siete punto ocho kilómetros por segundo) contrarrestaba con exactitud milimétrica la aceleración de la gravedad terrestre, permitiendo que tanto el vehículo espacial como el cosmonauta entraran en un estado de caída libre continua o ingravidez a más de trescientos kilómetros de altura."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "La palabra 'Poyéjaly' se convirtió en una expresión popular en toda la cultura rusa para iniciar proyectos audaces, celebraciones o momentos de aventura que requieren valentía y determinación."
+        "text": "La palabra rusa '¡Poyéjaly!' (traducible como '¡Vámonos!' o '¡En marcha!') se arraigó de inmediato en el lenguaje popular de la cultura rusa y mundial como una expresión icónica para inaugurar proyectos científicos audaces, misiones espaciales ambiciosas y momentos decisivos que exigen valentía histórica y espíritu de progreso."
       }
     ]
   },
@@ -112,17 +112,17 @@ const INFOGRAPHIC_NODES = [
       "La visión del ciclo día-noche desde el espacio dejó una huella imborrable en el piloto. En menos de hora y media, Gagarin presenció el crepúsculo más espectacular de su vida: la transición entre el día radiante y la noche cerrada ocurrió en apenas unos segundos, observando cómo el horizonte terrestre se teñía de una banda iridiscente de tonos naranja, rojo carmesí, azul zafiro y violeta profundo antes de sumergirse en la oscuridad estelar.",
       "Durante toda la órbita, los científicos en tierra supervisaron de forma ininterrumpida su frecuencia cardíaca, su respiración y su nivel de alerta mediante la red de estaciones de radio soviéticas. Gagarin no experimentó cinetosis espacial, desorientación espacial ni náuseas, demostrando que el cerebro humano conserva su plena agudeza intelectual, capacidad analítica y juicio crítico mientras viaja a través del vacío sideral."
     ],
-    "fact": "En 108 minutos, Gagarin dio la vuelta al mundo entero, convirtiéndose en el primer ser humano en comer, beber, flotar y escribir en microgravedad, verificando que el cuerpo humano opera con normalidad en órbita.",
+    "fact": "En un recorrido orbital de ciento ocho minutos alrededor de la Tierra, Gagarin se convirtió en el primer ser humano en alimentarse con pastas nutritivas en tubos presurizados, beber líquidos en microgravedad y observar cómo los objetos flotaban en la cabina, confirmando la perfecta viabilidad de las funciones orgánicas humanas.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Gagarin orbitó a una altitud máxima de 327 kilómetros, atravesando la termosfera inferior donde la presión atmosférica residual es de apenas una milmillonésima de la presión a nivel del mar."
+        "text": "La trayectoria orbital elíptica de la Vostok 1 alcanzó un apogeo máximo de trescientos veintisiete kilómetros sobre la superficie marina, cruzando la termosfera inferior donde la densidad del gas atmosférico es de apenas una billonésima de la presión a nivel del mar, eliminando casi toda resistencia de frenado aerodinámico."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Durante la noche orbital sobre el Pacífico, Gagarin pudo observar con nitidez las auroras boreales brillando por debajo de la nave, describiéndolas como cortinas mágicas de luz verde esmeralda y oro."
+        "text": "Mientras sobrevolaba la noche orbital sobre el Océano Pacífico, Gagarin contempló con asombro las auroras polares resplandeciendo por debajo del horizonte de la nave, describiendo por radio el espectáculo visual como inmensas cortinas iridiscentes de luz verde esmeralda y destellos de fuego dorado danzando sobre el planeta."
       }
     ]
   },
@@ -140,17 +140,17 @@ const INFOGRAPHIC_NODES = [
       "A siete kilómetros de altitud, con la cápsula desacelerada por un paracaídas de frenado piloto a una velocidad subsónica, se ejecutó el procedimiento estándar del sistema Vostok: la escotilla de la cabina salió disparada por cargas pirotécnicas y el asiento de Gagarin fue eyectado al vacío propulsado por cohetes de combustible sólido, separándose del asiento segundos después para permitir que el cosmonauta descendiera colgado de su propio paracaídas personal.",
       "A las 08:05 UTC, Gagarin descendió suavemente en un campo cultivado cerca de la aldea de Smelovka, en la región de Sarátov, a orillas del río Volga. Las primeras personas en verlo fueron una campesina llamada Anna Tajtárova y su nieta Rita, quienes se asustaron al ver aproximarse a una figura vestida con un traje naranja brillante y un gran casco blanco. Gagarin se quitó el casco con una sonrisa y les dijo con calma: '¡No tengan miedo! Soy un ciudadano soviético como ustedes, vengo del cielo'."
     ],
-    "fact": "Gagarin no aterrizó dentro de la nave Vostok 1: se eyectó en su asiento a 7,000 metros de altitud y descendió con su paracaídas personal en un campo de trigo cerca de Smelovka, junto al río Volga.",
+    "fact": "Gagarin no aterrizó dentro de la esfera Vostok 1: se eyectó mediante cohetes de combustible sólido a siete mil metros de altitud y descendió con su paracaídas personal en un campo de trigo cercano a Smelovka, junto al río Volga, donde una campesina y su nieta fueron las primeras en contemplar su traje espacial naranja.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La ionización del aire alrededor del escudo térmico durante el reingreso a Mach 24 formó una vaina de plasma conductor que bloqueó las ondas de radio durante varios minutos, fenómeno conocido como apagón de radio."
+        "text": "La disociación e ionización térmica del aire circundante durante el reingreso hipersónico a Mach 24 generó una densa envoltura de plasma ionizado que causó un apagón de comunicaciones por radio de varios minutos de duración, bloqueando por completo la telemetría telemétrica entre la nave Vostok y el cosmódromo de control."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Durante más de una década, la Unión Soviética mantuvo en secreto el detalle de la eyección en paracaídas para que la Federación Aeronáutica Internacional validara oficialmente el récord mundial de altitud y masa en órbita."
+        "text": "La Unión Soviética mantuvo bajo reserva oficial el mecanismo de eyección y aterrizaje en paracaídas independiente de Gagarin durante varios años para asegurar la homologación internacional definitiva del récord aeronáutico ante la Federación Aeronáutica Internacional (FAI), que en esa época exigía aterrizar dentro de la nave."
       }
     ]
   },
@@ -168,17 +168,17 @@ const INFOGRAPHIC_NODES = [
       "En cuanto a las funciones cognitivas superiores, la prueba de la grabadora de audio reveló que Gagarin mantuvo una articulación lingüística perfecta, un tono de voz firme y una memoria de trabajo impecable. Describió con exactitud meteorológica la distribución de frentes nubosos sobre los continentes, la luminosidad de los océanos y la nitidez de las sombras proyectadas por las cordilleras montañosas.",
       "Los informes biomédicos desclasificados décadas después confirmaron que la Vostok 1 representó un éxito biomédico absoluto. La información recopilada permitió diseñar los regímenes de entrenamiento, las dietas energéticas, los ejercicios físicos con bandas de resistencia y los protocolos médicos que hasta el día de hoy garantizan la salud de los cosmonautas y astronautas en la Estación Espacial Internacional."
     ],
-    "fact": "La telemetría médica de Gagarin demostró que el ritmo cardíaco humano se estabiliza de inmediato al entrar en microgravedad, refutando los pronósticos médicos que temían una parálisis neuromuscular en el espacio.",
+    "fact": "Los registros biomédicos telemétricos de Gagarin demostraron empíricamente que la frecuencia cardíaca y la presión arterial de un ser humano se estabilizan rápidamente tras el choque inicial de la ingravidez, disipando para siempre los temores clínicos de que la microgravedad causaría un colapso cardiovascular irreversible.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los sensores de respiración neumográfica registraron dieciocho ciclos por minuto durante la órbita, evidenciando que el diafragma y la musculatura torácica no sufren esfuerzo adicional en ausencia de presión hidrostática."
+        "text": "El registro del sensor neumográfico torácico documentó una frecuencia respiratoria estable de dieciocho ciclos por minuto a lo largo de toda la órbita, demostrando que el diafragma, la mecánica ventilatoria y el intercambio gaseoso alveolar operan con absoluta normalidad sin la presencia de un gradiente de peso hidrostático."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Gagarin llevaba consigo una pequeña ración de emergencia que incluía jugo de grosella negra enriquecido con vitamina C y extracto de té concentrado en tubos térmicos para evitar la deshidratación rápida."
+        "text": "Dentro de la pequeña ración de provisiones de supervivencia de la Vostok 1, los nutricionistas aeroespaciales incluyeron tubos especiales de jugo de grosella negra concentrado y puré de carne enriquecido con glucosa, permitiendo que Gagarin realizara la primera ingestión de alimentos en ingravidez de la historia astronáutica."
       }
     ]
   },
@@ -196,17 +196,17 @@ const INFOGRAPHIC_NODES = [
       "El impacto del vuelo de Gagarin catalizó de inmediato la carrera espacial moderna. Apenas seis semanas después de la hazaña soviética, el presidente estadounidense John F. Kennedy pronunció su histórico discurso ante el Congreso anunciando la meta nacional de llevar un ser humano a la Luna y devolverlo sano y salvo antes del término de la década de 1960, acelerando un período sin precedentes de desarrollo científico.",
       "Aunque Yuri Gagarin falleció trágicamente en un accidente de aviación durante un vuelo de entrenamiento en un caza MiG-15 en 1968 a la temprana edad de treinta y cuatro años, su memoria permanece viva como el símbolo supremo de la exploración del cosmos. El 12 de abril fue proclamado por la Asamblea General de las Naciones Unidas como el Día Internacional de los Vuelos Espaciales Tripulados y 'La Noche de Yuri', recordándonos por siempre el día en que la humanidad tocó las estrellas."
     ],
-    "fact": "La hazaña de Gagarin fue declarada por la ONU como el Día Internacional de los Vuelos Espaciales Tripulados, conmemorando el día en que un hijo de campesinos abrió las puertas del cosmos para toda la humanidad.",
+    "fact": "La gesta de Gagarin inspiró a la Asamblea General de la ONU a instituir el 12 de abril como el Día Internacional de los Vuelos Espaciales Tripulados y la celebración de 'La Noche de Yuri', conmemorando el histórico amanecer en que un joven hijo de campesinos obreros cruzó las fronteras del planeta para guiar a toda la humanidad.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "El vuelo de Gagarin sirvió de catalizador directo para el programa Apolo de la NASA y el programa Soyuz soviético, multiplicando por diez los presupuestos mundiales de investigación astronáutica y robótica orbital."
+        "text": "El triunfo del vuelo de la Vostok 1 impulsó directamente el desarrollo tecnológico de los programas de exploración Apolo de la NASA y Soyuz soviético, catalizando una inversión internacional sin precedentes en metalurgia avanzada, computación digital de estado sólido, sensores miniaturizados y ciencias de propulsión de cohetes."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Los astronautas del Apolo 11, Neil Armstrong y Buzz Aldrin, dejaron sobre el suelo lunar en julio de 1969 una medalla conmemorativa en tributo eterno a Yuri Gagarin y su valentía pionera."
+        "text": "Durante el primer alunizaje humano en el Mar de la Tranquilidad en julio de 1969, los astronautas del Apolo 11 Neil Armstrong y Buzz Aldrin depositaron solemnemente en la superficie lunar una medalla de tributo a Yuri Gagarin y Vladímir Komarov, demostrando que la hermandad y el respeto científico trascienden las fronteras terrestres."
       }
     ]
   }

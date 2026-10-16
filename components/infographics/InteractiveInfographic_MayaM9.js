@@ -88,144 +88,200 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'wakah-chan-arbol',
-              bannerImage: '/assets/maya/infographic_m9/banner_wakah-chan-arbol.webp',
-    title: 'Wakah Chan: El Árbol Cósmico',
-    color: '#CFD8DC',
-    btnImage: '/assets/maya/infographic_m9/btn_wakah-chan-arbol.jpg',
-    image: '/assets/maya/infographic_m9/hero_wakah-chan-arbol.jpg',
-    content: [
-      'Wakah Chan significa "Cielo Elevado". Es un árbol gigante, pero no de madera y hojas. Es un árbol de estrellas. Imagina que sales en una noche oscura, miras hacia arriba y ves una banda de polvo estelar cruzando el cielo. Nosotros la llamamos Vía Láctea. Para los mayas, esa banda de estrellas era el Wakah Chan. Era el árbol más grande del universo, plantado en el centro del mundo para sostener todo.',
-      'Este árbol estelar funciona como una carretera que conecta tres lugares. Imagina un edificio con tres pisos. El sótano oscuro es Xibalbá, el mundo subterráneo donde viven los señores del inframundo. El primer piso es la Tierra, donde vivimos y construimos ciudades. El segundo piso es el cielo diurno, donde brillan el sol y los planetas. El Wakah Chan es el ascensor que conecta estos tres niveles.',
-      'Las raíces del árbol se hunden en el suelo, bajando hacia las cuevas de Xibalbá. Su tronco pasa a través de nuestra Tierra, y sus ramas se abren en el cielo. Esta idea ayudaba a los mayas a entender cómo las cosas del cielo podían afectar a la tierra, como la lluvia. Todo estaba conectado por este pilar de polvo estelar, que mantiene el universo unido.',
-      'Los gobernantes mayas querían ser como este árbol cósmico. Cuando un rey se vestía para una ceremonia, usaba ropa que lo hacía ver como el Wakah Chan. Se ponía un cinturón que representaba el tronco y plumas en la cabeza que representaban las ramas. El rey creía que podía traer energía del cielo a su pueblo, actuando como un puente entre los dioses y los humanos.',
-      'Entender el Wakah Chan nos ayuda a ver cómo la ciencia y la imaginación trabajan juntas. Los mayas miraban las mismas estrellas que vemos con nuestros telescopios. En lugar de ver solo rocas espaciales, veían un mapa que explicaba cómo funcionaba su mundo. Era su forma de explicar la galaxia, usando la imagen de un árbol que veían crecer en su selva.'
+    "id": "wakah-chan-arbol",
+    "bannerImage": "/assets/maya/infographic_m9/banner_wakah-chan-arbol.webp",
+    "title": "Wakah Chan: El Árbol Cósmico",
+    "color": "#CFD8DC",
+    "btnImage": "/assets/maya/infographic_m9/btn_wakah-chan-arbol.jpg",
+    "image": "/assets/maya/infographic_m9/hero_wakah-chan-arbol.jpg",
+    "content": [
+      "Para la civilización maya del periodo Clásico (250 a 900 d.C.), el universo no era un espacio vacío e inerte, sino una estructura viva orientada por un eje vertical llamado Wakah Chan, traducido como «Cielo Elevado» o «Árbol Erguido». Este pilar cósmico conectaba el inframundo subterráneo, la superficie terrestre y las trece capas celestiales, sirviendo como canal de comunicación entre los dioses creadores y los gobernantes mortales.",
+      "Los sacerdotes astrónomos de centros ceremoniales como Tikal, Palenque y Copán identificaron visualmente este árbol cósmico con la banda brillante de la Vía Láctea cuando cruza verticalmente la bóveda celeste de norte a sur. Durante ciertas épocas del año, la galaxia parece alzarse directamente desde el horizonte nocturno, simulando el tronco de una ceiba colosal cuyas ramas sostienen el firmamento y cuyas raíces penetran en la oscuridad telúrica.",
+      "En los monumentos de piedra esculpidos en el Petén guatemalteco y las tierras bajas de Chiapas, los reyes mayas eran retratados portando cetros ceremoniales y vestimentas que personificaban al Wakah Chan. Al colocarse en el centro de las plazas ceremoniales orientadas hacia los puntos cardinales, el soberano k'uhul ajaw se transformaba en el eje viviente del mundo, capaz de sostener el orden cósmico mediante rituales de autosacrificio y plegarias astronómicas.",
+      "Las investigaciones arqueoastronómicas dirigidas por especialistas como Anthony Aveni y Linda Schele demostraron que las representaciones del árbol sagrado en estelas y cerámicas polícromas coinciden con posiciones estelares observables a simple vista. La hendidura visible en la Gran Nebulosa Oscura de la Vía Láctea, cercana a las constelaciones modernas de Sagitario y Escorpio, era concebida como la entrada primordial al reino subterráneo de Xibalbá.",
+      "El simbolismo del Wakah Chan no solo explicaba la génesis mítica, sino que regulaba la arquitectura urbana y los ciclos agrícolas en Mesoamérica. Las pirámides mayas eran erigidas como montañas artificiales o witz que emulaban este árbol celestial, elevando los santuarios hacia las alturas del cielo para facilitar la observación de los solsticios, los tránsitos cenitales solares y el movimiento constante de las constelaciones nocturnas."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los mayas no construyeron telescopios de cristal como nosotros. Hacían sus observaciones astronómicas usando palos cruzados, líneas visuales en edificios de piedra y mucha paciencia. Registraron el movimiento de las estrellas con tanta precisión matemática que sus mapas celestes siguen siendo exactos hoy. ¡Eran verdaderos científicos del cielo nocturno!' },
-      { label: 'Concepto Científico', icon: 'atom', text: 'La Vía Láctea que los mayas llamaron Wakah Chan es en realidad un disco plano y enorme formado por miles de millones de soles. Como vivimos dentro de ese disco estelar, lo vemos de lado. Por eso parece una banda alargada cruzando el cielo, como el tronco de un árbol altísimo de luz brillante sobre nuestras cabezas.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el famoso sarcófago de K'inich Janaab' Pakal en Palenque, tallado en caliza hacia el año 683 d.C., el emperador aparece recostado en la base del Wakah Chan. De su pecho surge el árbol cósmico cruciforme rematado por el ave celestial Itzamye, simbolizando su renacimiento triunfal hacia los cielos superiores como el dios del maíz divinizado."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La banda de la Vía Láctea contiene entre 100,000 y 400,000 millones de estrellas y abarca un diámetro aproximado de 100,000 años luz. Los astrónomos mayas lograron cartografiar su desplazamiento visual y sus nubes de polvo interestelar sin telescopios, utilizando únicamente gnomones de madera, miras de piedra tallada y una observación sistemática transmitida por generaciones."
+      }
     ],
-    fact: 'El nombre completo del árbol cósmico en las inscripciones mayas antiguas a menudo aparece escrito con un símbolo que parece una cruz y otro que significa cielo. Esta "cruz" maya no tiene relación con otras religiones, sino que marca el cruce de direcciones, el centro absoluto de su mundo. Al entender este glifo, los arqueólogos lograron leer que las plazas centrales de las ciudades mayas eran réplicas a escala de este árbol central.'
+    "fact": "El eje de la Vía Láctea se alinea de forma casi perfectamente vertical de norte a sur sobre las latitudes mayas de la península de Yucatán (entre 17° y 21° de latitud norte) durante las medianoches de los meses de abril y mayo, marcando con exactitud matemática el inicio de la temporada de lluvias y la germinación del maíz en Mesoamérica."
   },
   {
-    id: 'via-lactea-maya',
-              bannerImage: '/assets/maya/infographic_m9/banner_via-lactea-maya.webp',
-    title: 'La Vía Láctea Maya',
-    color: '#4A148C',
-    btnImage: '/assets/maya/infographic_m9/btn_via-lactea-maya.jpg',
-    image: '/assets/maya/infographic_m9/hero_via-lactea-maya.jpg',
-    content: [
-      'La Vía Láctea no siempre se ve igual en el cielo. Como nuestro planeta gira y viaja alrededor del sol, la posición de las estrellas parece cambiar. A veces, la Vía Láctea está de pie, apuntando de norte a sur. Cuando los mayas veían esta línea vertical, decían que era el árbol cósmico levantado. Parecía un pilar que sostenía el cielo para que no cayera.',
-      'A medida que avanzaba la noche, la banda de estrellas parecía inclinarse y acostarse en el cielo, apuntando de este a oeste. Cuando la Vía Láctea estaba horizontal, los mayas ya no veían un árbol. La imaginaban como una canoa cósmica flotando en un río de estrellas, o como un cocodrilo estelar nadando a través del océano de la noche.',
-      'Piensa en esto como mirar una nube en el cielo. Si la miras desde un lado, puede parecer un perro, pero si el viento la voltea, puede parecer un barco. Los mayas hicieron lo mismo con la galaxia. Usaron diferentes nombres y formas para describir la misma banda de estrellas, dependiendo de cómo estuviera girada en relación con el horizonte.',
-      'Esta transformación de árbol a cocodrilo era información valiosa sobre cómo se movía el mundo físico. Los sacerdotes mayas pasaban noches enteras en lo alto de sus pirámides, mirando hacia arriba. Al observar cómo el árbol estelar se inclinaba y se convertía en cocodrilo, podían saber qué hora de la noche era sin relojes mecánicos.',
-      'Este cambio estelar también anunciaba la llegada de las estaciones climáticas. Si el árbol de estrellas estaba de pie después de que se ponía el sol, los mayas sabían que el clima seco terminaba y llegarían las lluvias. La forma del cielo les decía cuándo debían plantar sus semillas en la tierra. Las estrellas eran su calendario gigante.'
+    "id": "via-lactea-maya",
+    "bannerImage": "/assets/maya/infographic_m9/banner_via-lactea-maya.webp",
+    "title": "La Vía Láctea Maya",
+    "color": "#4A148C",
+    "btnImage": "/assets/maya/infographic_m9/btn_via-lactea-maya.jpg",
+    "image": "/assets/maya/infographic_m9/hero_via-lactea-maya.jpg",
+    "content": [
+      "En la cosmovisión astronómica maya, la Vía Láctea recibía múltiples nombres y metáforas según su posición angular respecto al horizonte terrestre. Durante las noches de invierno, cuando cruza el firmamento de este a oeste, los observadores del periodo Clásico la denominaban Sak Beh o «Camino Blanco», la calzada luminosa por donde transitaban las almas de los ancestros fallecidos y los héroes legendarios hacia sus moradas eternas.",
+      "Cuando la rotación terrestre hace que la Vía Láctea gire sobre la bóveda y se incline hacia el norte, los textos jeroglíficos la identificaban con una gigantesca serpiente bicéfala celestial. Este reptil cósmico, adornado con escamas de estrellas y glifos celestes, derramaba periódicamente líquidos sagrados sobre la tierra en forma de rocío y tormentas benéficas indispensables para la supervivencia de las comunidades agrícolas mesoamericanas.",
+      "Un rasgo sobresaliente de la arqueoastronomía maya fue su atención rigurosa a las zonas oscuras de la galaxia, conocidas hoy como nebulosas de absorción interestelar compuestas de gas frío y polvo cósmico denso. En lugar de limitarse a trazar figuras uniendo estrellas brillantes, los sabios de ciudades como Calakmul y Yaxchilán delinearon constelaciones oscuras sobre la Gran Grieta galáctica, identificando animales míticos y deidades tutelares.",
+      "La bifurcación oscura que se extiende desde la constelación de Cygnus hasta la constelación de Escorpio era interpretada como el cruce de caminos del inframundo o Xibalbá Be. Según los relatos del Popol Vuh, los gemelos divinos Hunahpú e Ixbalanqué debieron recorrer este sendero tenebroso de bifurcaciones celestiales para enfrentar y derrotar en el juego ritual de pelota a los soberbios señores de la muerte y la enfermedad.",
+      "Los escribas y astrónomos mayas plasmaron estos movimientos galácticos en códices de papel amate plegado y en vasijas funerarias de estilo códice procedentes de la cuenca de El Mirador. La precisión de sus registros calendáricos demuestra que comprendían los ciclos anuales de traslación terrestre a través de las variaciones estacionales del arco galáctico, utilizándolo como una escala temporal de inmensa magnitud cósmica."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En muchas culturas antiguas de todo el mundo, la Vía Láctea fue imaginada como un camino, un río o un árbol. Los antiguos griegos pensaban que era leche derramada, los aborígenes australianos veían un emú oscuro y las tribus de América del Norte veían el camino polvoriento por donde caminaban los espíritus estelares.' },
-      { label: 'Observación Diaria', icon: 'clock', text: 'A diferencia de nosotros que tenemos farolas brillantes y luces de ciudad que ocultan las estrellas, los antiguos mayas tenían noches de oscuridad total. Su vista de la Vía Láctea era tan intensa y detallada que podían ver nubes oscuras de polvo espacial bloqueando la luz de las estrellas detrás, formando figuras en negro.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En varios vasos cerámicos del periodo Clásico Tardío (600 a 800 d.C.), la Gran Grieta de la Vía Láctea aparece dibujada como la mandíbula abierta de un monstruo reptil cósmico. Esta colosal boca telúrica tragaba al Sol durante el atardecer y permitía que los astros realizaran su peligroso periplo nocturno a través de las oscuras aguas subterráneas antes del amanecer."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La Gran Nebulosa Oscura de la Vía Láctea está formada por densas nubes moleculares de polvo y gas que bloquean la radiación electromagnética visible de las estrellas ubicadas detrás de ellas. Esta estructura galáctica se extiende por más de mil años luz de longitud y su centro aparente coincide en coordenadas celestes con el agujero negro supermasivo Sagitario A*, el corazón de nuestra galaxia."
+      }
     ],
-    fact: 'El monstruo cósmico que los mayas veían en la Vía Láctea horizontal solía representarse como un cocodrilo con dos cabezas. Esto parece raro, pero tiene sentido científico astronómico. Una cabeza apuntaba hacia el lugar donde sale el sol y la otra hacia donde se oculta. Las dos bocas del reptil representaban los puntos opuestos del horizonte, conectando el ciclo completo del día y la noche.'
+    "fact": "La Vía Láctea completa una rotación visual de 360 grados respecto al horizonte terrestre cada 23 horas y 56 minutos debido al día sidéreo de la Tierra. Los astrónomos mayas registraron con asombrosa constancia este desplazamiento continuo mediante postes indicadores y alineaciones arquitectónicas fijadas en plataformas ceremoniales de caliza."
   },
   {
-    id: 'canoa-cosmica',
-              bannerImage: '/assets/maya/infographic_m9/banner_canoa-cosmica.webp',
-    title: 'La Canoa Cósmica',
-    color: '#0277BD',
-    btnImage: '/assets/maya/infographic_m9/btn_canoa-cosmica.jpg',
-    image: '/assets/maya/infographic_m9/hero_canoa-cosmica.jpg',
-    content: [
-      'Cuando la Vía Láctea se pone horizontal y corre de este a oeste, los mayas la llamaban la Canoa Cósmica. Imagina una barca flotando en un río de estrellas, navegando a través del cielo. En la historia de la creación maya, escrita en el Popol Vuh, esta canoa galáctica tiene un trabajo importante: transportar al Dios del Maíz en su viaje.',
-      'En la proa va un dios que rema con fuerza; y en la popa va otro remero cósmico. Los llamamos los "Dioses Remeros". Estos remeros guían la barca que lleva el alma del Dios del Maíz hacia Xibalbá, el reino bajo la tierra, después de que termina la cosecha. Este viaje a través de las estrellas es una historia sobre cómo las cosas mueren y vuelven a nacer.',
-      'Los mayas tallaron escenas de esta historia en huesos. Los arqueólogos encontraron huesos tallados en la ciudad de Tikal, que muestran este viaje cósmico. En el hueso grabado se ve la canoa con los dioses remando a través del agua estelar, mientras el Dios del Maíz va sentado en el centro con un sombrero alto.',
-      'Esta historia ayudaba a los niños a entender hechos sobre su alimento. El viaje del Dios del Maíz explicaba por qué las semillas deben ser enterradas en la tierra para poder brotar como nuevas plantas. La canoa que viajaba hacia el inframundo representaba las semillas entrando bajo tierra para empezar a crecer con la lluvia.',
-      'Los remeros estelares corresponden a estrellas que los observadores podían ver brillar en el cielo. Usaron su mapa galáctico para contar la historia más importante de su cultura. Ver la Canoa Cósmica les daba esperanza. Les decía que el motor del cielo seguía girando y traería nueva vida a sus campos.'
+    "id": "canoa-cosmica",
+    "bannerImage": "/assets/maya/infographic_m9/banner_canoa-cosmica.webp",
+    "title": "La Canoa Cósmica",
+    "color": "#0277BD",
+    "btnImage": "/assets/maya/infographic_m9/btn_canoa-cosmica.jpg",
+    "image": "/assets/maya/infographic_m9/hero_canoa-cosmica.jpg",
+    "content": [
+      "Uno de los mitos astronómicos más bellos y complejos del periodo Clásico maya representa a la Vía Láctea inclinándose hacia el horizonte como una gran canoa cósmica que surca las aguas primordiales del cielo. Esta embarcación estelar es piloteada por dos deidades ancianas conocidas por los epigrafistas como los Dioses Remeros: el Remero Raya, asociado al oeste y la noche, y el Remero Jaguar, vinculado al este y la radiación solar diurna.",
+      "En el centro de la embarcación viaja el Dios del Maíz, una de las figuras esenciales de la teología maya, quien inicia su travesía hacia el lugar mítico de su muerte ritual y posterior resurrección. Conforme la Vía Láctea avanza durante la noche y desciende horizontalmente sobre el horizonte occidental, la canoa parece hundirse bajo el mar primordial, simbolizando el tránsito inevitable del grano de maíz depositado en la tierra antes de brotar.",
+      "Esta escena fue descubierta de forma magistral en los huesos grabados hallados dentro del Entierro 116 de Tikal, correspondiente a la suntuosa sepultura del soberano Jasaw Chan K'awiil I, fallecido en 734 d.C. Los grabados en hueso de jaguar y venado exhiben con asombroso detalle la canoa en descenso cargada con diversos animales sagrados: un mono aullador, una iguana, un perro de aguas y un loro, todos acompañando la metamorfosis del dios.",
+      "Arqueoastrónomos contemporáneos han vinculado directamente esta narrativa visual con el fenómeno astronómico que ocurre a finales del verano. Hacia el mes de agosto, la Vía Láctea se posiciona al atardecer en sentido cenital y, al paso de las horas, desciende en un arco horizontal hasta tocar el horizonte noroeste cerca de la medianoche, escenificando con fidelidad astronómica el mítico hundimiento de la canoa celeste en las aguas cósmicas.",
+      "La correspondencia entre el mito de la canoa y los ciclos agrícolas reafirma que para los mayas la ciencia astronómica y la religión formaban una unidad indivisible. Cada movimiento observable de los cuerpos celestes aportaba una guía cronológica exacta para las faenas de roza, quema y cosecha, protegiendo a la sociedad civil de hambrunas mediante una estricta planificación basada en las leyes inmutables del firmamento observable."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los famosos huesos tallados de Tikal, que muestran la historia completa de la canoa cósmica remando hacia el inframundo, son pequeños. Algunos miden menos de un palmo de largo. Los artistas mayas usaban herramientas afiladas hechas de piedra obsidiana, porque el metal aún no era común en su selva tropical húmeda.' },
-      { label: 'Concepto Científico', icon: 'atom', text: 'La idea de un río brillante flotando en el cielo es una descripción bastante precisa de cómo se ve nuestro brazo en espiral de la galaxia desde la superficie de la tierra. Estamos mirando a través del plano galáctico, donde se concentra todo el polvo, el gas brillante y millones de estrellas jóvenes apretadas en una banda.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los Dioses Remeros grabados en las piezas óseas de Tikal muestran signos de ancianidad con rostros arrugados y ojos saltones característicos de los seres primordiales. Los textos jeroglíficos detallan que estos ancianos eternos fueron convocados el 13 de agosto del 3114 a.C., la fecha inicial de la Cuenta Larga maya, para colocar las piedras sagradas del hogar cósmico primordial."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El fenómeno de precesión de los equinoccios modifica gradualmente la orientación aparente de las constelaciones a razón de un grado cada 71.6 años terrestres. Hace 1,300 años, durante el reinado de Jasaw Chan K'awiil I en Tikal, la inclinación de la Vía Láctea al anochecer en agosto era perceptiblemente más pronunciada que en la actualidad, coincidiendo de forma todavía más exacta con el mito fluvial."
+      }
     ],
-    fact: 'Algunos investigadores han notado que en ciertas épocas del año y bajo el cielo despejado de América Central, las estrellas brillantes que forman la constelación moderna de Orión están ubicadas justo donde estarían los Dioses Remeros en la Vía Láctea, dirigiendo la gran canoa brillante a lo largo de su viaje celestial.'
+    "fact": "El hueso tallado con el dibujo de la Canoa Cósmica recuperado en el Entierro 116 de Tikal mide apenas 23 centímetros de largo. En ese reducido espacio de materia orgánica fosilizada, un artista maya plasmó una escena cósmica completa que resume la traslación galáctica, la teología del grano de maíz y la legitimidad divina de la dinastía reinante."
   },
   {
-    id: 'ceiba-sagrada',
-              bannerImage: '/assets/maya/infographic_m9/banner_ceiba-sagrada.webp',
-    title: 'La Ceiba Sagrada',
-    color: '#1B5E20',
-    btnImage: '/assets/maya/infographic_m9/btn_ceiba-sagrada.jpg',
-    image: '/assets/maya/infographic_m9/hero_ceiba-sagrada.jpg',
-    content: [
-      'El árbol en el que se basaron para imaginar el Wakah Chan galáctico es un árbol real llamado ceiba. Si caminas por la selva del sur de México, notarás la ceiba inmediatamente. Crece mucho más alto que el resto del bosque. Algunas ceibas pueden medir más de 60 metros de altura, como un edificio de veinte pisos.',
-      'En la parte inferior, el tronco de la ceiba tiene raíces que parecen paredes de madera, llamadas raíces tabulares. Estas raíces anchas se extienden hundiendo sus puntas en la tierra. Para los constructores de ciudades, estas raíces que bajaban a la tierra representaban las entradas al Xibalbá, el mundo inferior.',
-      'El tronco central del árbol es recto y está cubierto de espinas. Esta parte alta representaba el mundo terrestre, donde vivimos las personas, los animales y las plantas. En la cima de la ceiba, las ramas crecen horizontalmente formando un techo plano, como un paraguas verde tocando las nubes.',
-      'Ese dosel alto y ancho bloquea el sol y forma una plataforma natural. En la imaginación maya, estas ramas altas correspondían a los niveles celestiales del universo. Tenía sentido usar la ceiba gigante como la plantilla para entender la Vía Láctea que cruza el cielo.',
-      'Hoy en día, en muchas plazas de Centroamérica, encontrarás un árbol de ceiba creciendo en el centro. La gente aún lo considera un ser vivo respetado. Cada ciudad maya antigua también fue construida como un mapa mágico, con las plazas abiertas imitando el claro de la selva y las pirámides rodeando un árbol central.'
+    "id": "ceiba-sagrada",
+    "bannerImage": "/assets/maya/infographic_m9/banner_ceiba-sagrada.webp",
+    "title": "La Ceiba Sagrada",
+    "color": "#1B5E20",
+    "btnImage": "/assets/maya/infographic_m9/btn_ceiba-sagrada.jpg",
+    "image": "/assets/maya/infographic_m9/hero_ceiba-sagrada.jpg",
+    "content": [
+      "La ceiba pentandra, conocida en lengua maya yucateca como Ya'axche o «Primer Árbol Verde», es una especie botánica gigantesca que alcanza alturas de hasta 70 metros y desarrolla majestuosas raíces tabulares en la selva tropical. Para los sacerdotes y constructores mayas, este árbol no era un vegetal común, sino el modelo viviente del universo que materializaba en el plano terrenal la geometría sagrada del Árbol Cósmico Wakah Chan.",
+      "Según la tradición cosmológica mesoamericana, en el momento primordial de la creación los dioses plantaron cuatro ceibas sagradas en las cuatro esquinas del mundo para delimitar los rumbos cardinales: la ceiba roja en el este, la blanca en el norte, la negra en el oeste y la amarilla en el sur. En el punto medio exacto sembraron la Gran Ceiba Verde central, elevando el cielo para evitar que colapsara sobre la superficie terrestre.",
+      "Las ramas superiores de la ceiba penetraban en los trece estratos del Oxlahuntik'in o supra-mundo celeste, donde habitaban los dioses creadores y los astros luminosos como el Sol diurno y Venus. Sus raíces colosales, por el contrario, descendían a través de las nueve capas cavernosas del Bolontik'in o inframundo de Xibalbá, creando una vía de comunicación vertical indispensable para la circulación de la energía cósmica y las plegarias.",
+      "La arquitectura de las grandes metrópolis del Clásico, como Calakmul en Campeche o Cobá en Quintana Roo, emulaba físicamente esta distribución arbórea. Las pirámides truncadas imitaban los troncos escalonados de las ceibas, mientras que los templos superiores actuaban como el follaje verde desde el cual los sacerdotes vigilaban la aparición de las estrellas guía, monitoreando las estaciones del año con instrumental lítico calibrado.",
+      "La veneración hacia la ceiba sagrada sobrevivió a la conquista militar española y aún persiste viva entre las comunidades mayas contemporáneas de los Altos de Chiapas y la península de Yucatán. Hoy en día, cortar una ceiba sin solicitar permiso formal a los espíritus guardianes del monte mediante ofrendas ceremoniales es considerado una falta grave que altera el equilibrio ecológico y espiritual de las comunidades tradicionales."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las semillas esponjosas de la ceiba flotan en el viento como la nieve suave. Esta pelusa especial se llama kapok. En épocas recientes, antes de que existieran los materiales sintéticos, el material flotante kapok de la ceiba se usaba para rellenar salvavidas de emergencia en los grandes barcos del océano profundo.' },
-      { label: 'Mundo Biológico', icon: 'atom', text: 'El árbol sagrado no solo conecta mundos en la historia mítica. En la biología real de la selva espesa, es un verdadero universo conectado. Murciélagos fruteros polinizan sus flores de noche en el nivel medio, monos comen hojas arriba y miles de insectos raros viven entre las grandes raíces tabulares en el suelo sombreado.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las semillas de la Ceiba pentandra están envueltas en una fibra sedosa e impermeable llamada capoc. Los antiguos mayas utilizaban este material ligero para amortiguar recipientes ceremoniales y transportar ofrendas delicadas, asociando la suave fibra blanca con las nubes algodonosas que descienden sobre la bóveda celeste durante las mañanas brumosas de la selva tropical."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Un ejemplar maduro de Ceiba pentandra puede absorber más de 1,000 litros de agua al día y transpirarla hacia la atmósfera mediante evapotranspiración. Este fenómeno biológico colosal genera microclimas húmedos y nubes bajas sobre las copas de la selva, un hecho ecológico observable que los sacerdotes mayas relacionaban con el poder del árbol cósmico para atraer las lluvias celestiales."
+      }
     ],
-    fact: 'En las piezas de arte antiguas descubiertas por los arqueólogos modernos, como en el sarcófago grabado del famoso rey Kinich Janaab Pakal en la gran ciudad de Palenque, el árbol ceiba cósmico aparece con un pájaro celestial parado en la punta. Este monstruo aviar místico representa el reino más alto del cielo, observando tranquilamente todo el mundo debajo de sus plumas mágicas.'
+    "fact": "La copa de una ceiba madura puede alcanzar un diámetro de más de 40 metros y albergar un ecosistema microscópico y macroscópico con más de 200 especies diferentes de epífitas, orquídeas, aves nocturnas, murciélagos polinizadores e insectos, funcionando como un verdadero cosmos viviente suspendido entre el suelo y el cielo de la selva maya."
   },
   {
-    id: 'tres-niveles',
-              bannerImage: '/assets/maya/infographic_m9/banner_tres-niveles.webp',
-    title: 'Los Tres Niveles del Cosmos',
-    color: '#FFD54F',
-    btnImage: '/assets/maya/infographic_m9/btn_tres-niveles.jpg',
-    image: '/assets/maya/infographic_m9/hero_tres-niveles.jpg',
-    content: [
-      'Los arquitectos mayas imaginaron un mundo estructurado, como un teatro de varios pisos. No veían un espacio vacío lleno de esferas de roca. Imaginaron que el cosmos tenía tres niveles. Arriba, estaba el cielo alto, dividido en trece pisos invisibles, donde vivían las nubes, los vientos, el sol y la luna.',
-      'En el medio estaba nuestro mundo, la Tierra firme donde vivimos. Imaginaban que el mundo humano era un lugar plano. Creían que estábamos de pie sobre la espalda de un monstruo, como un cocodrilo cósmico o una tortuga de tierra, que flotaba en un océano. Así explicaban cómo el suelo se siente fuerte rodeado por el mar.',
-      'Y abajo estaba Xibalbá, el mundo subterráneo que tenía nueve pisos descendentes. Este lugar temido, un laberinto de cuevas y ríos de sangre, era regido por los señores de la muerte. El mundo bajo tierra era una parte normal del ciclo natural. Las semillas caen a la oscuridad antes de brotar con vida nueva.',
-      'El árbol cósmico Wakah Chan era la parte más importante de esta casa galáctica. Era la estructura resistente que pasaba a través de los tres pisos, conectando Xibalbá, la Tierra y el Cielo. A través del tronco del árbol, los espíritus, el agua y los dioses podían subir y bajar.',
-      'El sistema matemático reflejaba estos números constantemente. El ciclo de tiempo, llamado Tzolkin, usa combinaciones del número trece y veinte para marcar días importantes. Para ellos, el tiempo y el espacio del cosmos no eran dos cosas separadas, sino una máquina conectada de tres niveles y ciclos numéricos.'
+    "id": "tres-niveles",
+    "bannerImage": "/assets/maya/infographic_m9/banner_tres-niveles.webp",
+    "title": "Los Tres Niveles del Cosmos",
+    "color": "#FFD54F",
+    "btnImage": "/assets/maya/infographic_m9/btn_tres-niveles.jpg",
+    "image": "/assets/maya/infographic_m9/hero_tres-niveles.jpg",
+    "content": [
+      "La arquitectura del cosmos maya estaba dividida rigurosamente en tres estratos superpuestos y complementarios: el mundo celeste superior (Cab), la superficie terrestre intermedia y el reino subterráneo e hídrico del inframundo (Xibalbá). Lejos de representar un modelo estático, estos tres reinos estaban entrelazados por una dinámica constante de ciclos temporales, donde la muerte en un estrato posibilitaba la vida en el siguiente.",
+      "El plano celeste superior constaba de trece niveles escalonados gobernados por una asamblea de deidades conocidas colectivamente como Oxlahuntik'u. En este cielo diáfano transitaban el Sol, la Luna, los planetas visibles a simple vista y las constelaciones zodiacales mayas. Cada nivel celeste poseía características espirituales y meteorológicas propias que influían directamente en los destinos humanos y en los pronósticos adivinatorios.",
+      "La superficie terrestre habitada por los seres humanos era concebida como el lomo rugoso de un reptil cósmico gigantesco, una tortuga o un cocodrilo mitológico flotando sobre una inmensa laguna de nenúfares. Las montañas eran consideradas pirámides naturales sagradas llamadas witz, y las cuevas y cenotes eran bocas abiertas y conductos hidrogeológicos que conducían de forma directa a las profundidades secretas del inframundo maya.",
+      "El inframundo o Xibalbá comprendía nueve estratos subterráneos regidos por los temibles señores Bolontik'u. Este mundo no era un infierno de castigo moral, sino un húmedo útero primordial donde la materia orgánica se descomponía para renacer. Cada atardecer, el Sol K'inich Ahau descendía en las fauces de Xibalbá transformándose en un jaguar nocturno que combatía en la oscuridad para renacer victorioso al alba por el horizonte oriental.",
+      "Los sacerdotes astrónomos unificaron este esquema tridimensional con el calendario ritual de 260 días (Tzolk'in), que multiplicaba los 13 números celestes por los 20 signos diarios terrestres. Asimismo, estructuraron los enterramientos reales de las élites dinásticas dentro del lecho rocoso de las pirámides, garantizando que el gobernante fallecido cruzara los nueve estratos oscuros para ascender triunfante hacia los trece cielos."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las antiguas pirámides de piedra mayas no eran solo tumbas para gobernantes o fortalezas de defensa. Eran modelos arquitectónicos detallados de los tres grandes niveles cósmicos. La base ancha tocaba Xibalbá oscuro en el fondo, las escaleras representaban el nivel humano del suelo y el templo pequeño de arriba simulaba la puerta celestial sagrada.' },
-      { label: 'Leyendas Antiguas', icon: 'clock', text: 'Según las viejas historias heroicas, cruzar a Xibalbá era un viaje muy peligroso y aterrador. Había ríos de escorpiones picadores, casas de hielo congelante, murciélagos con grandes garras, y señores de la oscuridad con nombres feos que engañaban a los héroes humanos jóvenes. Era la prueba extrema de valor humano inteligente.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el sitio arqueológico de Copán, Honduras, los arqueólogos hallaron altares tallados con la forma de un cocodrilo cósmico flotante. En su lomo vegetal brotan flores de loto y lirios de agua que representan la fertilidad del suelo, confirmando cómo los sabios mayas unían la biología local de los humedales con la estructura general del universo tridimensional."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La península de Yucatán está formada por una gigantesca plataforma de roca caliza permeable con más de 7,000 cenotes interconectados por ríos subterráneos. Los mayas no poseían ríos superficiales en el norte, por lo que su cosmovisión de un inframundo acuático navegable reflejaba de forma fidedigna la estructura hidrogeológica kárstica real de su territorio geográfico."
+      }
     ],
-    fact: 'El número sagrado trece correspondía a las principales articulaciones mayores del cuerpo humano fuerte: dos tobillos bajos, dos rodillas sólidas, dos caderas, dos muñecas sueltas, dos codos curvos, dos hombros anchos y un cuello móvil central. Así, los pensadores mayas conectaron inteligentemente la anatomía física humana interna con los grandes trece niveles altos del gran cielo nocturno exterior, conectando la persona con el universo amplio.'
+    "fact": "La suma de los 13 niveles celestiales del Oxlahuntik'u y los 9 niveles del inframundo de Xibalbá equivale a 22 estratos cósmicos invisibles que rodean a la superficie terrestre intermedia. Los números 13 y 9 se repiten de forma deliberada en las proporciones métricas, número de terrazas y escalones de templos en Tikal, Palenque y Chichén Itzá."
   },
   {
-    id: 'orientacion-nocturna',
-              bannerImage: '/assets/maya/infographic_m9/banner_orientacion-nocturna.webp',
-    title: 'Orientación Nocturna',
-    color: '#4E342E',
-    btnImage: '/assets/maya/infographic_m9/btn_orientacion-nocturna.jpg',
-    image: '/assets/maya/infographic_m9/hero_orientacion-nocturna.jpg',
-    content: [
-      'Si queremos saber la hora en la noche, miramos nuestros relojes y teléfonos. Si queremos saber a dónde viajar, miramos las pantallas. Los antiguos astrónomos no tenían herramientas electrónicas. Su herramienta de navegación nocturna colgaba sobre sus cabezas: el majestuoso Wakah Chan estelar.',
-      'Al igual que el Sol cruza el cielo durante el día, la banda blanca de la Vía Láctea cambia de posición a lo largo de la noche. Los guardianes celestes aprendieron este giro lento como si memorizaran los números de un reloj. A medida que el árbol galáctico se acostaba en la negrura, sabían que el amanecer estaba cerca.',
-      'Como la Tierra gira y da una vuelta alrededor del Sol, el cielo estrellado se ve diferente cada semana del año. En enero, el pilar brillante del árbol aparece en una posición diferente a la que tiene en junio a la misma hora después del atardecer.',
-      'Esta comprensión experta de los relojes del universo les daba un poder importante. Saber a qué hora terminar la ceremonia, cuándo plantar la semilla de maíz y cómo evitar perderse en el bosque, requería conocer las estrellas y la Vía Láctea.',
-      'Los edificios mayas se construían alineando sus ventanas y pórticos con posiciones clave que la Vía Láctea ocupaba en la bóveda oscura. Eran observatorios de roca sólida, alineados como lentes de cámaras para atrapar líneas visuales. Así, la ceiba cósmica gobernaba cómo trazaban las calles rectas en la tierra.'
+    "id": "orientacion-nocturna",
+    "bannerImage": "/assets/maya/infographic_m9/banner_orientacion-nocturna.webp",
+    "title": "Orientación Nocturna",
+    "color": "#4E342E",
+    "btnImage": "/assets/maya/infographic_m9/btn_orientacion-nocturna.jpg",
+    "image": "/assets/maya/infographic_m9/hero_orientacion-nocturna.jpg",
+    "content": [
+      "La observación sistemática de la noche permitió a los navegantes, cazadores y sacerdotes mayas orientarse con precisión matemática en medio de la densa y uniforme selva tropical. Al carecer de brújulas magnéticas, los mayas utilizaron la estrella polar norte (conocida como Xaman Ek' o la Estrella del Norte) y las constelaciones circumpolares como referencias angulares fijas para definir las rutas comerciales y la traza urbana.",
+      "Xaman Ek' era venerada como la deidad protectora de los comerciantes y viajeros que recorrían miles de kilómetros a pie transportando sal, obsidiana, cacao y jade a lo largo de Mesoamérica. Debido a su aparente inmovilidad en el cielo del hemisferio norte, este astro servía como un faro celestial inmutable, asegurando que las caravanas mercantiles no perdieran el rumbo en travesías nocturnas realizadas para eludir el sofocante calor diurno.",
+      "Para medir los ángulos astronómicos sin instrumental óptico moderno, los sabios mayas idearon herramientas visuales de extraordinaria sencillez y efectividad geométrica. Cruzaban dos varas delgadas de madera o caña dentro del vano de una ventana o pórtico de observación, creando una retícula fija que permitía encuadrar el horizonte y marcar con exactitud el instante en que un cuerpo celeste cruzaba el meridiano local del observador.",
+      "Ciudades enteras fueron diseñadas conforme a estas directrices estelares. En sitios como Copán, Uaxactún y Mayapán, las calzadas monumentales de piedra caliza blanca (sacbeob) y los muros de los palacios presentan desviaciones deliberadas de unos pocos grados respecto al norte geográfico verdadero, alineándose intencionalmente hacia ortos estelares significativos o hacia las posiciones extremas de constelaciones clave.",
+      "La regularidad de las constelaciones estacionales funcionaba además como un reloj nocturno de alta fiabilidad. Al observar qué grupo de estrellas culminaba en el cenit a la medianoche, los vigías sacerdotales calculaban las horas nocturnas restantes, organizaban los turnos de guardia militar y determinaban el momento exacto para iniciar las ceremonias de encendido de antorchas y sacrificios previos a la salida del Sol matutino."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los antiguos sabios mayas usaban palos rústicos cruzados simples con muescas como simples herramientas visuales manuales prácticas, colocados frente a puertas cuadradadas alineadas. Desde un punto oscuro fijo y un palo cruzado en X adelante, creaban un sistema de puntería efectivo barato, muy parecido a las miras pequeñas de los rifles largos modernos que alinean un pequeño tubo metálico para enfocar puntos lejanos oscuros precisamente.' },
-      { label: 'Uso Práctico', icon: 'atom', text: 'Aún hoy en tiempos rápidos modernos en partes apartadas silenciosas y remotas de las selvas húmedas mexicanas sureñas grandes, algunas viejas personas campesinas usan la sombra larga blanca y el cambio angular que hace la galaxia nocturna blanca como indicador útil básico para predecir lluvia mojada pesada sobre los campos de granja.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En los textos jeroglíficos y representaciones pictóricas, Xaman Ek' aparece con frecuencia dibujada con la nariz chata y los rasgos distintivos de un mono aullador benévolo. Los sacerdotes la llamaban «la guía de los caminantes», ya que era el único punto de luz en la bóveda nocturna que permanecía fijo mientras todas las demás estrellas giraban a su alrededor."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En el año 700 d.C., la estrella Polaris actual no era el polo norte celeste exacto debido a la precesión del eje terrestre, cuyo ciclo dura 25,772 años. En la época clásica maya, el punto inmóvil del firmamento norte se encontraba a varios grados de distancia, cerca de la constelación de Draco, una sutil variación angular que los astrónomos mayas compensaban en sus cálculos empíricos."
+      }
     ],
-    fact: 'Un arqueólogo moderno famoso llamado Anthony Aveni usó grandes computadoras potentes digitales rápidas con datos viejos astronómicos y logró descubrir asombrado que las avenidas principales amplias peatonales en la gran metrópolis de Teotihuacan lejana en México grande se alineaban intencionalmente a la perfección con el hundimiento profundo de la gran Vía Láctea lejana hace casi ya cerca de largos dos mil pesados años.'
+    "fact": "La latitud geográfica de ciudades mayas centrales como Tikal (17° 13' N) permitía observar tanto las estrellas circumpolares del norte como la resplandeciente constelación de la Cruz del Sur en el horizonte meridional. Esta doble visibilidad otorgaba a los astrónomos mayas un dominio astronómico excepcional de ambos hemisferios celestes simultáneamente."
   },
   {
-    id: 'popol-vuh-cielo',
-              bannerImage: '/assets/maya/infographic_m9/banner_popol-vuh-cielo.webp',
-    title: 'El Popol Vuh y el Cielo',
-    color: '#212121',
-    btnImage: '/assets/maya/infographic_m9/btn_popol-vuh-cielo.jpg',
-    image: '/assets/maya/infographic_m9/hero_popol-vuh-cielo.jpg',
-    content: [
-      'El libro más famoso de los mayas se llama el Popol Vuh. Aunque parece un cuento sobre dos gemelos que viajan bajo tierra para jugar un juego de pelota contra los señores de la muerte, es mucho más. Este libro es un mapa de ciencias del cielo disfrazado de relato. Cada personaje en sus páginas corresponde a algo en el cielo nocturno.',
-      'En la historia, los Gemelos Héroes bajan al Xibalbá para jugar contra reyes engañosos. Los astrónomos descubrieron que el viaje de estos muchachos coincide con la manera en que el sol y la luna viajan en el cielo y desaparecen bajo el horizonte. Cuando el sol se oculta, decían que entraba al mundo de los muertos para luchar durante la noche, y nacer al amanecer.',
-      'Los personajes monstruosos también tienen identidades astronómicas precisas. Un personaje llamado Siete Guacamayo, un ave fanfarrona, fingía ser el sol. El mito habla de cómo los héroes le disparan y el ave cae. Esto describe el movimiento de las estrellas que forman la Osa Mayor cuando caen hacia el horizonte norte.',
-      'Hasta el momento central cuando los niños patean la pelota para ganar se sincroniza con los ciclos astronómicos. Los movimientos estelares de Venus se pueden medir mediante estos mitos. El conocimiento empírico fue empacado en cuentos emocionantes para la gente.',
-      'Los mayas fueron sabios brillantes. Al contar un cuento emocionante, lograron que un conocimiento astronómico pasara de abuelos a nietos durante cientos de años. Entender esto prueba que la ciencia matemática no es un invento reciente. Wakah Chan, la Vía Láctea, era el escenario de la primera ciencia humana en América.'
+    "id": "popol-vuh-cielo",
+    "bannerImage": "/assets/maya/infographic_m9/banner_popol-vuh-cielo.webp",
+    "title": "El Popol Vuh y el Cielo",
+    "color": "#212121",
+    "btnImage": "/assets/maya/infographic_m9/btn_popol-vuh-cielo.jpg",
+    "image": "/assets/maya/infographic_m9/hero_popol-vuh-cielo.jpg",
+    "content": [
+      "El Popol Vuh o «Libro del Consejo», texto sagrado conservado por los mayas k'iche' de las tierras altas de Guatemala, constituye una de las obras cumbres de la literatura universal y un testimonio astronómico de primer orden. Aunque fue redactado en caracteres latinos a mediados del siglo XVI por nobles indígenas cristianizados y copiado por Fray Francisco Ximénez hacia 1701, sus mitos hunden sus raíces en el periodo Clásico mesoamericano.",
+      "Los epigrafistas modernos, entre ellos Dennis Tedlock y Michael Coe, demostraron que las hazañas de los héroes míticos narradas en el texto corresponden con precisión a ciclos astronómicos observables. La lucha de los gemelos Hunahpú e Ixbalanqué contra los señores de Xibalbá no es una fábula moral desprovista de contexto empírico, sino una alegoría cosmológica que codifica los movimientos del Sol, la Luna, Venus y la Vía Láctea.",
+      "El soberbio monstruo pájaro Vucub Caquix («Siete Guacamaya»), quien pretendía iluminar el mundo antes de la creación del Sol verdadero, representa a la constelación de la Osa Mayor. Cuando los gemelos divinos le disparan con su cerbatana derribándolo de su árbol cósmico de nance, el mito describe con fidelidad arqueoastronómica el descenso estacional de la Osa Mayor bajo el horizonte septentrional al inicio de la temporada de secas.",
+      "Tras vencer las pruebas mortales de la Casa Oscura, la Casa de las Navajas y la Casa de los Murciélagos en el inframundo, los gemelos divinos ascienden triunfalmente al cielo. Hunahpú se transforma en el Sol viviente y dador de energía diurna, mientras que su hermano gemelo Ixbalanqué se convierte en la Luna llena o, según análisis iconográficos alternativos, en el resplandeciente lucero matutino del planeta Venus.",
+      "Esta mitología estelar quedaba grabada de forma permanente en las plazas de juego de pelota de ciudades como Copán y Yaxchilán, donde los marcadores centrales de piedra escenificaban los enfrentamientos celestes. Jugar a la pelota con un esférico de hule macizo era recrear el pulso cósmico del universo, garantizando que los cuerpos celestes continuaran su trayectoria cíclica indispensable para la regeneración de la vida biológica."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El texto del Popol Vuh casi se perdió en el tiempo. Solo sobrevivió porque un sacerdote europeo en Guatemala, llamado Francisco Ximénez, escuchó las historias, copió un manuscrito oculto y lo tradujo. Sin ese momento de suerte, no sabríamos nada de esta conexión astronómica que inventaron los antiguos pueblos de América. Hoy es nuestro mayor tesoro.' },
-      { label: 'Conexión Cultural', icon: 'clock', text: 'Para estudiar ciencia hoy, nosotros vamos a aulas cerradas con pizarras blancas. Para aprender ciencia en la selva antigua, las personas se reunían alrededor del fuego para escuchar cantos. La historia poética y el mito colorido eran la mejor manera de guardar información compleja sobre la rotación terrestre en su memoria.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En vasijas funerarias polícromas pintadas mil años antes de la transcripción colonial del Popol Vuh, ya aparecen retratados los gemelos Hunahpú e Ixbalanqué con sus cerbatanas disparando contra un ave monstruosa posada en la copa de un árbol cósmico. Esto comprueba que la tradición mitológica y astronómica maya se transmitió intacta durante milenios."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La declinación aparente de las estrellas que componen la Osa Mayor (Vucub Caquix) provocaba que, en las latitudes mesoamericanas del año 500 d.C., el asterismo tocara el horizonte norte y desapareciera de la vista nocturna durante el mes de octubre, un fenómeno celeste regular que coincide exactamente con el momento en que el mito relata la caída y derrota del falso sol."
+      }
     ],
-    fact: 'En muchas lenguas mayas indígenas, la palabra para decir sol, la palabra para decir día y la palabra para nombrar el concepto abstracto del tiempo son exactamente la misma palabra corta: K\'in. Esta antigua palabra de una sílaba resume perfectamente su ciencia astronómica. Entendían que el movimiento de los astros brillantes en el firmamento oscuro, la duración de nuestras pequeñas vidas mortales y el avance del tiempo eran todo la misma fuerza giratoria.'
+    "fact": "El manuscrito del Popol Vuh rescatado por el fraile dominico Francisco Ximénez en el pueblo de Chichicastenango consta de 112 folios escritos a doble columna en lengua k'iche' y traducción al español. Actualmente se preserva en la Biblioteca Newberry de Chicago, consolidado como una enciclopedia invaluable de la mitología astronómica mesoamericana."
   }
 ];
 

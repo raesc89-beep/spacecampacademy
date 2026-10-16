@@ -143,144 +143,207 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'naturaleza-tiempo',
-    title: 'La Naturaleza del Tiempo',
-    color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_naturaleza.webp',
-    image: '/assets/bttf/infographic_gigawatts/hero_naturaleza.webp',
-    content: [
-      '¿Qué es el tiempo? San Agustín dijo: "Si nadie me lo pregunta, lo sé; pero si trato de explicarlo, no lo sé." Durante siglos se creyó que el tiempo era un flujo constante, avanzando a la misma velocidad en todo el universo.',
-      'Isaac Newton describió el tiempo como un reloj perfecto. En su modelo, relojes sincronizados siempre marcarían la misma hora, sin importar su ubicación. Esta visión clásica sugería un universo con reglas ordenadas.',
-      'Albert Einstein demostró que el tiempo no es absoluto, sino elástico. El tiempo se estira y comprime de manera similar a una malla flexible, alterándose según la masa de los objetos y la velocidad de movimiento.',
-      'No existe un "reloj" maestro en el universo. Cada objeto tiene su propio ritmo de tiempo. Este concepto científico fundamenta la física moderna y nuestra comprensión del espacio-tiempo.'
+    "id": "naturaleza-tiempo",
+    "title": "La Naturaleza del Tiempo",
+    "color": "#7C4DFF",
+    "btnImage": "/assets/bttf/infographic_gigawatts/btn_naturaleza.webp",
+    "image": "/assets/bttf/infographic_gigawatts/hero_naturaleza.webp",
+    "content": [
+      "En la mítica secuencia inicial de Regreso al Futuro, decenas de relojes de pared hacen tictac al unísono en el taller del Doc Brown, creando la reconfortante ilusión de un tiempo universal que avanza como un metrónomo perfecto. La cinematografía de Robert Zemeckis utiliza esta sinfonía mecánica para sumergirnos en la nostalgia de los minutos contados. Sin embargo, para la física del siglo XXI, ese tiempo absoluto y uniforme de los relojes es una quimera: el tiempo no es un escenario fijo donde ocurren los hechos, sino un componente dinámico del espaciotiempo que se estira y deforma.",
+      "Desde la Grecia clásica hasta la Revolución Científica, pensadores ilustres intentaron definir qué es realmente el tiempo. Aristóteles lo vinculó al movimiento y al cambio de las cosas materiales, argumentando que si nada se transformara en el universo, el tiempo dejaría de tener significado alguno. Siglos más tarde, Isaac Newton postuló su célebre hipótesis del «tiempo absoluto, verdadero y matemático», una corriente invisible que fluía eternamente por sí misma a un ritmo invariable y sin relación alguna con el mundo exterior circundante.",
+      "El golpe mortal a la concepción newtoniana provino de la teoría de la relatividad formulated por Albert Einstein. Al demostrar que la velocidad de la propagación de la luz en el vacío es idéntica para todos los observadores sin importar su velocidad de desplazamiento, Einstein probó que el intervalo temporal entre dos sucesos no es absoluto. No existe un reloj cósmico maestro en el centro de la galaxia: cada partícula, cada ser humano y cada planeta transporta su propio tiempo propio, dictado por su trayectoria específica en el cosmos.",
+      "En la física teórica contemporánea, destacados investigadores como Carlo Rovelli proponen la revolucionaria hipótesis del «tiempo térmico». Según este marco de la gravedad cuántica, a nivel fundamental de partículas elementales las ecuaciones básicas de la física fundamental no contienen ninguna variable temporal «t». El tiempo no sería una propiedad elemental de la realidad, sino un fenómeno macroscópico emergente generado por nuestra ignorancia de los microestados cuánticos, de forma análoga a cómo la temperatura emerge de la agitación molecular colectiva.",
+      "Comprender la verdadera naturaleza del tiempo transforma radicalmente la visión que tenemos de nuestra propia existencia cósmica. Lejos de ser prisioneros atrapados en un río implacable que nos arrastra hacia un futuro desconocido, la física moderna nos enseña que formamos parte integral de un tejido cuatridimensional donde cada instante vivido permanece grabado para siempre en la geometría del universo de bloque, accesible a través de las leyes fundamentales de la naturaleza."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Doc Brown utiliza una pizarra para explicar a Marty cómo sus acciones han alterado la naturaleza de su tiempo. Dibuja una línea de tiempo recta y luego muestra cómo se divide en un 1985 alternativo. Esta es una brillante visualización de la idea de que el tiempo puede tomar múltiples direcciones dependiendo de nuestras elecciones.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'A nivel fundamental de la física cuántica, muchas ecuaciones funcionan igual de bien hacia adelante o hacia atrás en el tiempo. La dirección del tiempo no está codificada en las leyes más básicas del universo, lo que ha llevado a algunos físicos a sugerir que el flujo del tiempo podría ser una ilusión.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La secuencia inicial de los relojes en el laboratorio del Doc Brown requirió días enteros de preparación artesanal en el plató de rodaje. El equipo técnico sincronizó cuidadosamente más de cincuenta relojes de cuco, de péndulo y digitales, incluyendo un reloj mecánico donde una figura en miniatura de Harold Lloyd cuelga de las manecillas, un homenaje explícito al clásico del cine mudo de 1923 El hombre cañón."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La famosa ecuación de Wheeler-DeWitt, formulada por John Wheeler y Bryce DeWitt en 1967 para intentar unificar la mecánica cuántica y la relatividad general en una función de onda del universo entero, destaca por una peculiaridad matemática desconcertante: la variable temporal «t» no aparece en ningún miembro de la ecuación, sugiriendo un cosmos cuántico atemporal en su base."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_naturaleza-tiempo.webp',
-    bannerCaption: 'La naturaleza filosófica y física del tiempo como dimensión fundamental',
-    fact: 'San Agustín, en el siglo IV, propuso que el pasado y el futuro no existen realmente; solo existe un "presente continuo" en la mente humana. Esta antigua idea sigue debatiéndose entre los físicos teóricos de hoy en día.'
+    "bannerImage": "/assets/bttf/infographic_m4/banner_naturaleza-tiempo.webp",
+    "bannerCaption": "La naturaleza filosófica y física del tiempo como dimensión fundamental",
+    "fact": "La definición científica oficial de un segundo internacional del Sistema Internacional (SI) fue fijada en 1967 y no depende de la rotación de la Tierra, sino de la frecuencia de transición hiperfina del estado fundamental del átomo de cesio 133 sin perturbaciones, equivalente a exactamente 9.192.631.770 periodos completos de oscilación de la radiación electromagnética emitida."
   },
   {
-    id: 'simultaneidad',
-    title: 'La Simultaneidad',
-    color: '#FF6B35',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_simultaneidad.webp',
-    image: '/assets/bttf/infographic_gigawatts/hero_simultaneidad.webp',
-    content: [
-      'Einstein demostró que eventos que parecen simultáneos para una persona pueden ocurrir en distintos momentos para otra. Este concepto, llamado Relatividad de la Simultaneidad, es central en la física moderna.',
-      'En un tren en movimiento, si dos rayos caen en los extremos al mismo tiempo, un observador exterior los verá simultáneos. Pero un pasajero moviéndose hacia uno de los rayos lo verá caer primero.',
-      'Ambos observadores tienen razón. La percepción de simultaneidad depende del estado de movimiento. Esto demuestra que es imposible establecer un momento "presente" absoluto que aplique a todo el universo.',
-      'Si el "ahora"varía entre observadores, el pasado, presente y futuro coexisten de alguna forma. A este modelo se le llama el"Universo Bloque", donde todos los momentos integran una estructura de cuatro dimensiones.'
+    "id": "simultaneidad",
+    "title": "La Simultaneidad",
+    "color": "#FF6B35",
+    "btnImage": "/assets/bttf/infographic_gigawatts/btn_simultaneidad.webp",
+    "image": "/assets/bttf/infographic_gigawatts/hero_simultaneidad.webp",
+    "content": [
+      "En el cine de aventuras temporales, la narración suele recurrir al dramatismo del «mientras tanto»: la película nos muestra a Marty esquivando a Biff en 1955 al mismo tiempo que el Doc Brown prepara afanosamente el cable en la torre del reloj bajo la lluvia. Esta noción de acontecimientos que suceden simultáneamente en lugares distintos es intuitiva y vital para el suspense fílmico. No obstante, uno de los descubrimientos más radicales de la relatividad especial es que la simultaneidad absoluta no existe en el universo físico.",
+      "Albert Einstein formuló un célebre experimento mental que involucraba un tren en movimiento y dos rayos que caen sobre las vías férreas. Si un observador situado en el andén de la estación ve caer dos rayos al mismo tiempo sobre la parte delantera y trasera del convoy, un pasajero sentado exactamente en el centro del vagón en movimiento verá caer primero el rayo delantero. Como la luz del frente viaja hacia él mientras se desplaza a su encuentro, la señal óptica le llega antes que la del rayo trasero.",
+      "Dado que la velocidad de la luz en el vacío es idéntica e inmutable para ambos observadores, la conclusión física es demoledora e inapelable: ninguno de los dos observadores tiene más razón que el otro. Para el observador del andén los dos impactos fueron estrictamente simultáneos; para el pasajero del tren fueron consecutivos y separados por un intervalo temporal medible. El orden de los sucesos distantes en el espacio depende de la velocidad relativa del marco inercial de referencia adoptado.",
+      "Este fenómeno derrumba la creencia tradicional de que existe un «ahora» universal compartido por todas las civilizaciones del cosmos. Cuando miramos a través de un telescopio hacia la galaxia de Andrómeda, no estamos contemplando su estado actual, sino la luz que partió de sus estrellas hace dos millones y medio de años terrestres. Un observador que camina lentamente en la Tierra y otro que viaja en un cohete supersónico poseen planos de simultaneidad diferentes que cortan el tiempo de Andrómeda con días enteros de disparidad.",
+      "La pérdida de la simultaneidad universal condujo a los físicos matemáticos, encabezados por Hermann Minkowski, a concebir la realidad como un «universo de bloque» tetradimensional. En esta estructura geométrica, todos los puntos espaciotemporales coexisten en una malla inmutable: el pasado de un observador puede coincidir con el presente de otro y con el futuro de un tercero, dependiendo de sus velocidades relativas, haciendo que la división entre pasado, presente y futuro sea solo una persistente ilusión humana."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Hay momentos en la saga donde Marty y Doc experimentan los mismos eventos desde perspectivas de tiempo totalmente diferentes. En la primera película, el "presente" de Marty en 1985 ocurre simultáneamente con el "futuro" que el Doc original de 1955 está intentando cambiar. Sus líneas temporales personales se cruzan de forma fascinante.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Debido a la velocidad a la que la luz viaja desde las estrellas, siempre estamos viendo el pasado. Si la estrella Betelgeuse explotara hoy mismo, los humanos no se enterarían hasta dentro de unos 600 años. Por lo tanto, el concepto de "simultaneidad" a escalas cósmicas pierde su significado habitual.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La sincronización temporal es un elemento crucial de suspense en el clímax de la primera película: Marty debe acelerar el DeLorean para alcanzar exactamente 88 millas por hora en el segundo preciso en que el rayo impacta la veleta de la torre a las 10:04 pm. Bob Gale calculó con precisión cronométrica cada línea de diálogo para que la cuenta regresiva del Doc coincidiera con la tensión musical de Alan Silvestri."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La relatividad de la simultaneidad exige que dos eventos separados por un intervalo de tipo espacial no puedan tener una relación causal directa de causa y efecto. Esto garantiza que ninguna señal física ni información electromagnética pueda propagarse a mayor velocidad que la luz en el vacío, protegiendo el orden de los acontecimientos que están causalmente vinculados."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_simultaneidad.webp',
-    bannerCaption: 'Simultaneidad relativa: dos observadores ven los mismos eventos en diferente orden',
-    fact: 'Si te estás moviendo rápidamente respecto a una persona en la otra punta del universo, tu "ahora" podría incluir eventos que para ellos ocurrieron en el siglo XIX, o eventos que sucederán en el siglo XXII.'
+    "bannerImage": "/assets/bttf/infographic_m4/banner_simultaneidad.webp",
+    "bannerCaption": "Simultaneidad relativa: dos observadores ven los mismos eventos en diferente orden",
+    "fact": "La galaxia de Andrómeda (M31) dista aproximadamente 2,537 millones de años luz de la Tierra; debido al efecto de inclinación del plano de simultaneidad relativista, dos personas caminando en direcciones opuestas en una calle terrestre a solo 5 km/h poseen rebanadas de presente en Andrómeda desfasadas en más de varios días completos respecto a qué acontecimientos estelares ocurren «ahora»."
   },
   {
-    id: 'entropia',
-    title: 'Entropía y Desorden',
-    color: '#00E5FF',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_entropia.webp',
-    image: '/assets/bttf/infographic_gigawatts/hero_entropia.webp',
-    content: [
-      'La tendencia de los sistemas a pasar del orden al desorden se llama entropía. Es un principio de la Segunda Ley de la Termodinámica.',
-      'La entropía proporciona una dirección al tiempo. Aunque las ecuaciones de movimiento funcionan en ambas direcciones temporales, el universo se vuelve más desordenado. A esto se le llama la "flecha del tiempo".',
-      'Para que la entropía aumente hoy, el universo debió iniciar en un estado de baja entropía. El Big Bang representa ese estado ordenado. La historia del universo es un proceso de aumento de entropía.',
-      'Utilizar grandes cantidades de energía genera calor y aumenta la entropía global. Un viaje temporal requeriría manipular esa energía y contrarrestar la tendencia natural al desorden.'
+    "id": "entropia",
+    "title": "Entropía y Desorden",
+    "color": "#00E5FF",
+    "btnImage": "/assets/bttf/infographic_gigawatts/btn_entropia.webp",
+    "image": "/assets/bttf/infographic_gigawatts/hero_entropia.webp",
+    "content": [
+      "En la cinematografía fantástica, revertir el tiempo suele mostrarse como rebobinar una cinta de vídeo: las gotas de lluvia ascienden hacia las nubes, los cristales rotos saltan del suelo para recomponer una ventana y los coches circulan hacia atrás. Regreso al Futuro fantasea con deshacer los errores del pasado con solo viajar a 1955. Sin embargo, en la física experimental real existe un principio implacable que prohíbe taxativamente ese rebobinado espontáneo: la segunda ley de la termodinámica y el concepto de entropía.",
+      "Formulada a mediados del siglo XIX por físicos colosales como Rudolf Clausius y Ludwig Boltzmann, la segunda ley establece que en cualquier sistema termodinámico aislado la entropía global tiende inevitablemente a aumentar con el paso del tiempo. La entropía es una medida cuantitativa del número de microestados microscópicos correspondientes a un mismo estado macroscópico observable, lo que popularmente se interpreta como la medida del desorden molecular de la materia.",
+      "Existe un número astronómico de formas en que las moléculas de una taza de porcelana pueden estar dispuestas sobre el suelo tras romperse en mil pedazos, pero existe un número sumamente reducido y exclusivo de configuraciones en que esas mismas moléculas forman una taza íntegra y funcional. Por pura probabilidad estadística y sin necesidad de magia, es prácticamente imposible que las fluctuaciones térmicas aleatorias del aire reúnan los fragmentos de cerámica rota y los vuelvan a fusionar espontáneamente sobre la mesa.",
+      "Esta asimetría probabilística es la responsable directa de lo que el astrofísico británico Arthur Eddington bautizó en 1927 como la «flecha del tiempo». Todas las leyes fundamentales de la física teórica clásica y cuántica —como las leyes del movimiento de Newton, el electromagnetismo de Maxwell o la ecuación cuántica de Schrödinger— son enteramente simétricas respecto al tiempo: funcionarían de manera idéntica hacia adelante o hacia atrás. Es la termodinámica la que impone la dirección irreversible del devenir.",
+      "Para revertir localmente la entropía en una región reducida del espacio —por ejemplo, para ensamblar un automóvil nuevo a partir de minerales dispersos o mantener viva una célula biológica— es imperativo inyectar energía externa continua y disipar calor hacia el entorno. A nivel cósmico global, el universo entero avanza inexorablemente desde un estado primordial de entropía ultrabaja en el Big Bang hacia una disolución final conocida como la muerte térmica del cosmos, donde ya no habrá gradientes energéticos útiles."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cuando el viejo Biff le entrega el almanaque deportivo a su yo joven, desata una cascada de eventos que aumenta drásticamente el "desorden" (la entropía) de la línea temporal. El Hill Valley pacífico se convierte en un caos dominado por el crimen. Es una representación metafórica perfecta de cómo el caos tiende a dominar si se altera el orden inicial.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Ludwig Boltzmann, quien formuló las ecuaciones de la entropía, sugirió que tal vez vivimos en una rara burbuja de baja entropía dentro de un multiverso inmenso. Esta idea ayudó a sentar las bases de la cosmología moderna.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La paradoja de revertir el desorden se explora con ironía visual en la tercera entrega de la saga en el Salvaje Oeste de 1885: el Doc Brown construye una gigantesca y ruidosa máquina de vapor artesanal en su herrería que ocupa toda la habitación y quema carbón durante horas simplemente para fabricar dos diminutos cubitos de hielo para su té, mostrando el colosal coste termodinámico del enfriamiento."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La fórmula fundamental de la entropía estadística de Boltzmann, grabada por deseo expreso del físico sobre su propia lápida conmemorativa en el cementerio central de Viena, reza «S = k log W», donde S representa la entropía del sistema, k es la constante universal de Boltzmann (1,38 x 10 a la menos 23 julios por kelvin) y W es el número total de microestados posibles."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_entropia.webp',
-    bannerCaption: 'La entropía define la flecha del tiempo hacia mayor desorden',
-    fact: 'El hielo derritiéndose en un vaso de agua es un ejemplo perfecto del aumento de entropía. El calor se distribuye y las moléculas de agua se vuelven más caóticas. ¡El flujo del tiempo se puede medir con un cubo de hielo!'
+    "bannerImage": "/assets/bttf/infographic_m4/banner_entropia.webp",
+    "bannerCaption": "La entropía define la flecha del tiempo hacia mayor desorden",
+    "fact": "El universo primitivo inmediatamente posterior al Big Bang poseía una entropía extraordinariamente baja debido a la extraordinaria homogeneidad de la distribución de masa y energía en el espacio; los cosmólogos estiman que la probabilidad estadística de que esa configuración de baja entropía emergiera al azar era de 1 entre 10 elevado a la potencia de 10 elevado a 123, según Roger Penrose."
   },
   {
-    id: 'memoria-tiempo',
-    title: 'Memoria y el Tiempo',
-    color: '#FFA726',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_memoria.webp',
-    image: '/assets/bttf/infographic_gigawatts/hero_memoria.webp',
-    content: [
-      'Recordar el pasado y no el futuro es un problema complejo en la física. La memoria es una huella física creada por el aumento de entropía en el cerebro.',
-      'Las experiencias modifican las sinapsis cerebrales. Este proceso consume energía, genera calor y crea un rastro de información irreversible.',
-      'Algunos modelos sugieren que la percepción del flujo del tiempo surge de cómo el cerebro procesa y almacena estas memorias de forma secuencial.',
-      'Viajar al pasado generaría conflictos en la formación de memorias. Si un viajero altera su historia para no construir la máquina, el origen de sus recuerdos físicos queda sin explicación.'
+    "id": "memoria-tiempo",
+    "title": "Memoria y el Tiempo",
+    "color": "#FFA726",
+    "btnImage": "/assets/bttf/infographic_gigawatts/btn_memoria.webp",
+    "image": "/assets/bttf/infographic_gigawatts/hero_memoria.webp",
+    "content": [
+      "En Regreso al Futuro, Marty McFly y el Doc Brown poseen recuerdos nítidos de eventos históricos que solo ellos vivieron, mientras que el resto de los habitantes de Hill Valley ven sus memorias adaptadas automáticamente a la nueva realidad. En el lenguaje del cine, la memoria humana es el ancla emocional que permite al héroe reconocer que el presente ha cambiado. En la neurobiología y la física cognitiva, sin embargo, surge un enigma apasionante: ¿por qué los seres humanos recordamos perfectamente el pasado, pero jamás recordamos el futuro?",
+      "La respuesta a este enigma no es puramente biológica, sino profundamente física y termodinámica. Para almacenar un recuerdo en un cerebro biológico o en el disco duro de un ordenador, es indispensable disipar energía hacia el entorno exterior y generar un aumento neto de entropía. Cuando nuestras neuronas forman nuevas conexiones sinápticas tras presenciar un acontecimiento, el cerebro consume moléculas de glucosa y oxígeno, liberando calor residual hacia la corriente sanguínea y el aire circundante.",
+      "Este proceso de registro informacional deja una huella física imborrable que llamamos «registro» o «memoria». Las huellas geológicas en las rocas sedimentarias, los cráteres causados por meteoritos en la Luna y las memorias neuronales en el lóbulo temporal del cerebro humano son exactamente la misma clase de fenómeno: cicatrices macroscópicas causadas por procesos irreversibles que tuvieron lugar en una época donde la entropía del cosmos era menor a la actual.",
+      "Si la entropía cósmica no aumentara con el tiempo, sería físicamente imposible distinguir entre el ayer y el mañana a nivel informativo. No tendríamos manera de registrar datos sobre estados futuros porque el proceso mismo de procesar información genera necesariamente calor y desorden ambiental. Nuestra percepción psicológica del flujo temporal como un devenir continuo es el resultado evolutivo directo de estar equipados con cerebros termodinámicos optimizados para sobrevivir en un universo con gradientes de energía.",
+      "Asimismo, la neurociencia moderna demuestra que recordar el pasado y proyectar el futuro emplean los mismos circuitos neuronales de la llamada red neuronal por defecto en el cerebro humano. Al recordar la infancia o planear las tareas del día de mañana, el cerebro reconstruye fragmentos de información archivados previamente. Lejos de ser una cámara de vídeo inmutable, la memoria es un órgano dinámico de predicción adaptativa modelado por la termodinámica del entorno que nos rodea."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Uno de los elementos visuales más icónicos de BTTF es la fotografía de la familia de Marty. A medida que él altera el pasado, sus hermanos (y eventualmente él mismo) comienzan a borrarse de la foto. Esto ilustra cómo las alteraciones temporales destruyen las pruebas físicas (como fotos o memorias) del pasado original.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Los ordenadores también tienen una flecha del tiempo ligada a la memoria. El Principio de Landauer establece que borrar un solo bit de información en un ordenador siempre liberará una pequeña cantidad de calor. La memoria y la entropía térmica están unidas.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Cuando Marty regresa a su hogar en el Hill Valley restaurado de 1985 al final de la primera película, descubre atónito que su padre George es un exitoso autor de novelas de ciencia ficción y Biff es un sumiso limpiador de coches. Marty es el único ser humano sobre el planeta que conserva la memoria intacta de la línea temporal deprimente previa, creando un contraste cómico entrañable."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El principio de Landauer, formulado por el físico Rolf Landauer en los laboratorios de IBM en 1961, demostró rigurosamente que borrar o registrar un solo bit de información en cualquier sistema informático conlleva un coste termodinámico mínimo e inevitable de calor disipado igual a k multiplicado por T por el logaritmo natural de 2, conectando la computación con la entropía."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_memoria-tiempo.webp',
-    bannerCaption: 'La memoria y la percepción psicológica del tiempo en el cerebro humano',
-    fact: 'El "presente" que percibes tiene en realidad unos 80 milisegundos de retraso. El cerebro tarda ese tiempo en juntar la información de la vista, el oído y el tacto, para crear un momento coherente. ¡Siempre vives en el pasado reciente!'
+    "bannerImage": "/assets/bttf/infographic_m4/banner_memoria-tiempo.webp",
+    "bannerCaption": "La memoria y la percepción psicológica del tiempo en el cerebro humano",
+    "fact": "El cerebro humano adulto pesa en promedio apenas 1,4 kilogramos (aproximadamente el 2% de la masa corporal total), pero consume de manera continua más del 20% del oxígeno y de la energía metabólica de la glucosa del organismo entero, funcionando como un potente motor disipador de entropía que sostiene miles de millones de operaciones de memoria por segundo."
   },
   {
-    id: 'cuantica-tiempo',
-    title: 'Mecánica Cuántica',
-    color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_cuantica.webp',
-    image: '/assets/bttf/infographic_gigawatts/hero_cuantica.webp',
-    content: [
-      'A nivel subatómico, las partículas pueden estar en múltiples estados a la vez en la mecánica cuántica. Al ser observadas, colapsan en un estado definido, marcando un antes y un después.',
-      'El tiempo podría ser una propiedad emergente. Así como la temperatura surge de moléculas en movimiento, el tiempo podría originarse por el entrelazamiento cuántico entre partículas.',
-      'La ecuación de Wheeler-DeWitt no incluye la variable del tiempo al intentar unificar la cuántica y la gravedad. Según este modelo, el estado fundamental del universo es estático.',
-      'Los futuros computadores cuánticos podrían simular o manipular eventos a escala subatómica para controlar la física requerida en un eventual viaje temporal.'
+    "id": "cuantica-tiempo",
+    "title": "Mecánica Cuántica",
+    "color": "#E040FB",
+    "btnImage": "/assets/bttf/infographic_gigawatts/btn_cuantica.webp",
+    "image": "/assets/bttf/infographic_gigawatts/hero_cuantica.webp",
+    "content": [
+      "En la iconografía de Regreso al Futuro, el condensador de flujo brilla con tres haces pulsantes de luz azulada formando una «Y» dentro de una caja de vidrio transparente, simbolizando la misteriosa tecnología que domina el tiempo. En la década de 1980, Hollywood recurría a efectos visuales estroboscópicos para sugerir física cuántica avanzada. En la física subatómica moderna, la relación entre el tiempo y la mecánica cuántica es todavía más desconcertante: a escala cuántica, el tiempo desafía todas nuestras intuiciones cotidianas de orden y causa.",
+      "Uno de los principios angulares del mundo subatómico es el principio de incertidumbre formulado por Werner Heisenberg en 1927. Aunque comúnmente se asocia con la posición y el momento de una partícula, existe una versión cuántica complementaria para la energía y el tiempo: delta E multiplicado por delta t es mayor o igual a la constante de Planck reducida dividida entre dos. Esto implica que durante intervalos de tiempo extraordinariamente breves, la conservación estricta de la energía puede fluctuar espontáneamente en el vacío cuántico.",
+      "Gracias a esta incertidumbre temporal fundamental, el vacío cuántico no es la nada absoluta, sino un océano hirviente de actividad microscópica donde pares de partículas y antipartículas virtuales brotan espontáneamente de la nada, interactúan entre sí y se aniquilan en fracciones infinitesimales de segundo sin violar ninguna ley cósmica medible. Este efecto microscópico es el responsable directo de fenómenos medibles en laboratorio como el efecto Casimir y la radiación térmica emitida por los agujeros negros.",
+      "Más desconcertante aún es el fenómeno de la retrocausalidad cuántica aparente estudiado en experimentos de laboratorio como el de la «elección retardada» propuesto por John Wheeler. En estas pruebas ópticas de laboratorio con interferómetros de fotones, la decisión de los físicos sobre cómo medir un fotón en el presente parece determinar retrospectivamente si la partícula cuántica se comportó como una onda extendida o como una partícula localizada en el pasado de su trayectoria.",
+      "Pese a estas extrañezas que alimentan la imaginación de los guionistas cinematográficos, los físicos teóricos subrayan que la mecánica cuántica no permite enviar mensajes telegráficos hacia el pasado para alterar la historia humana. El principio cuántico de no-señalización (no-signaling theorem) demuestra matemáticamente que el entrelazamiento cuántico entre partículas distantes jamás puede ser utilizado para transmitir información clásica más rápido que la luz ni violar la causalidad temporal macroscópica."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El momento exacto en que el rayo golpea la torre del reloj (a las 10:04 pm) requiere una transferencia precisa de energía cuántica. Doc Brown tiene que calcular el milisegundo exacto para que la energía canalice hacia el condensador de flujo. Es una metáfora de los eventos cuánticos precisos y repentinos que cambian el curso del universo.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Un experimento famoso conocido como el "Borrador Cuántico de Elección Retardada" sugiere que, a escala subatómica, una medición en el presente puede aparentemente influir en el estado de un fotón en el pasado. ¡El tiempo a nivel cuántico es verdaderamente extraño!' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El célebre condensador de flujo fue ideado por Bob Gale y Robert Zemeckis basándose en una anécdota ficticia narrada por Emmett Brown: el 5 de noviembre de 1955, el científico resbaló mientras intentaba colgar un reloj en el baño subido al inodoro húmedo, se golpeó la cabeza contra el lavabo y, al despertar del desmayo conmocionado, visualizó la estructura trifásica del condensador."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El experimento de la goma de borrar cuántica de elección retardada, realizado con éxito experimental por Yoon-Ho Kim y sus colaboradores en 1999, demostró que borrar la información sobre qué trayectoria siguió un fotón restaura el patrón de interferencia ondulatoria, ilustrando la sutil relación entre la información cuántica disponible y el orden temporal aparente."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_cuantica-tiempo.webp',
-    bannerCaption: 'El tiempo en la mecánica cuántica: discreto, continuo y bidireccional',
-    fact: 'Las partículas cuánticas pueden entrar en un estado de superposición donde están, de alguna forma, "fuera" del flujo normal del tiempo. Solo interactúan con la historia cuando se enredan con el mundo macroscópico.'
+    "bannerImage": "/assets/bttf/infographic_m4/banner_cuantica-tiempo.webp",
+    "bannerCaption": "El tiempo en la mecánica cuántica: discreto, continuo y bidireccional",
+    "fact": "La constante reducida de Planck (h-barra), valor fundamental de la escala cuántica universal, equivale a 1,054571817 x 10 a la menos 34 julios por segundo; a causa de este valor infinitesimal, los efectos cuánticos de superposición temporal e incertidumbre se promedian y ocultan totalmente en el mundo macroscópico de los objetos cotidianos."
   },
   {
-    id: 'viaje-futuro',
-    title: 'Viaje al Futuro',
-    color: '#66BB6A',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_futuro.webp',
-    image: '/assets/bttf/infographic_gigawatts/hero_futuro.webp',
-    content: [
-      'La relatividad demuestra que el tiempo pasa más lento a velocidades altas, fenómeno conocido como dilatación del tiempo.',
-      'Experimentos con relojes atómicos en aviones confirman esto: regresan marcando fracciones de segundo menos que los relojes estacionarios en la Tierra.',
-      'Los astronautas viajan a más de 27,000 km/h en órbita. Al regresar, han avanzado una fracción de segundo hacia el futuro en relación con la Tierra.',
-      'Los satélites GPS ajustan continuamente sus relojes para compensar los efectos de su velocidad y la menor gravedad terrestre. Sin estas correcciones relativistas, el sistema de navegación fallaría.'
+    "id": "viaje-futuro",
+    "title": "Viaje al Futuro",
+    "color": "#66BB6A",
+    "btnImage": "/assets/bttf/infographic_gigawatts/btn_futuro.webp",
+    "image": "/assets/bttf/infographic_gigawatts/hero_futuro.webp",
+    "content": [
+      "En el desenlace de la primera película, el DeLorean despega propulsado hacia el cielo mientras el Doc exclama una de las frases más celebradas del cine moderno: «¿Carreteras? A donde vamos no necesitamos carreteras», poniendo rumbo directo al 21 de octubre de 2015. El público suele asumir que viajar al futuro es un artificio narrativo tan inverosímil como la levitación antigravitatoria. Sin embargo, para la física teórica contemporánea, viajar hacia el futuro no solo es científicamente viable: es una realidad inevitable plenamente comprobada.",
+      "La teoría de la relatividad de Albert Einstein ofrece dos métodos rigurosos y demostrados para acelerar el viaje hacia el futuro. El primer mecanismo es la dilatación temporal cinemática descrita por la relatividad especial: cuanto más rápido se desplaza un objeto a través del espacio respecto a un observador en reposo, más lento avanza su reloj interno en comparación con el reloj del observador estacionario.",
+      "Si una tripulación humana abordara una nave espacial impulsada por fusión nuclear o antimateria capaz de acelerar de forma constante a 1 g de confort terrestre hasta alcanzar el 99,9999% de la velocidad de la luz, el factor de Lorentz provocaría una dilatación colosal. Mientras para los astronautas a bordo de la nave transcurrirían únicamente unos pocos años de vida biológica y alimentación regular, en el planeta Tierra habrían transcurrido siglos enteros, permitiéndoles desembarcar en el futuro remoto de la civilización.",
+      "El segundo método para viajar al futuro prescinde de la alta velocidad y utiliza la gravedad masiva mediante la relatividad general. Cerca de un cuerpo celeste hiperdenso, como una estrella de neutrones o en las proximidades del horizonte de sucesos de un agujero negro supermasivo como Sagitario A*, el tiempo se frena drásticamente respecto al espacio interestelar lejano. Pasar unas pocas semanas orbitando ese pozo gravitatorio equivaldría a saltar miles de años hacia el porvenir terrestre.",
+      "La asimetría fundamental del viaje al futuro reside en su carácter estrictamente unidireccional. A diferencia de las aventuras cinematográficas de Marty McFly, en las que el bólido puede regresar cómodamente a 1985 para cenar con la familia, un viaje relativista al futuro es un boleto de ida irrevocable: una vez que una persona ha avanzado mil años hacia el porvenir del cosmos, ninguna ley física conocida le permitirá jamás volver hacia atrás para narrar lo vivido."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro II", Marty viaja al año 2015 y encuentra patinetas voladoras, zapatos que se abrochan solos y publicidad holográfica. Aunque la película sobreestimó algunas tecnologías, la idea de dar un"salto" y encontrar una sociedad transformada por la innovación tecnológica captura la esencia del viaje hacia el futuro.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Partículas subatómicas llamadas muones, que se crean cuando los rayos cósmicos chocan con la atmósfera, duran tan poco que deberían desintegrarse antes de llegar al suelo. Sin embargo, llegan a la superficie porque viajan casi a la velocidad de la luz, lo que "ralentiza" su reloj interno. ¡Ellos experimentan su propio viaje al futuro!' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La célebre fecha del futuro elegida en Regreso al Futuro Parte II fue el miércoles 21 de octubre de 2015 a las 04:29 de la tarde en Hill Valley, California. Los guionistas eligieron un salto de exactamente treinta años hacia adelante para crear una simetría cronológica perfecta con el salto de treinta años hacia el pasado realizado en la primera película entre 1985 y 1955."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El físico teórico Kip Thorne actuó como asesor científico principal de la película Interstellar (2014) de Christopher Nolan, donde calculó minuciosamente la dilatación temporal gravitatoria del planeta de Miller orbitando cerca del agujero negro Gargantúa: cada hora transcurrida en la superficie de ese mundo equivale exactamente a siete años enteros transcurridos en la Tierra."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-futuro.webp',
-    bannerCaption: 'El viaje al futuro ya es posible: dilatación del tiempo en cohetes y satélites',
-    fact: 'Si pudieras viajar en una nave al 99.99% de la velocidad de la luz durante lo que para ti sería 1 año, al volver a la Tierra descubrirías que han pasado casi 70 años. ¡Habrías saltado al futuro de la humanidad!'
+    "bannerImage": "/assets/bttf/infographic_m4/banner_viaje-futuro.webp",
+    "bannerCaption": "El viaje al futuro ya es posible: dilatación del tiempo en cohetes y satélites",
+    "fact": "El cosmonauta soviético Sergei Krikalev, apodado «el último ciudadano de la URSS» tras permanecer a bordo de la estación Mir durante la disolución de su país en 1991, acumuló 803 días en órbita terrestre, viajando de forma efectiva hacia el futuro de nuestro planeta en aproximadamente 0,02 segundos reales por efectos de la velocidad orbital relativista."
   },
   {
-    id: 'viaje-pasado',
-    title: 'Viaje al Pasado',
-    color: '#FF7043',
-    btnImage: '/assets/bttf/infographic_gigawatts/btn_pasado.webp',
-    image: '/assets/bttf/infographic_gigawatts/hero_pasado.webp',
-    content: [
-      'La relatividad general indica que el espacio-tiempo puede doblarse y crear Curvas Cerradas de Tiempo. Seguir estas curvas permitiría regresar a un momento anterior.',
-      'El viaje al pasado genera paradojas temporales. La paradoja del abuelo plantea qué sucede si alguien impide que sus ancestros se conozcan, creando una contradicción sobre su propio nacimiento.',
-      'Stephen Hawking propuso la Conjetura de Protección de la Cronología. Este modelo sugiere que fluctuaciones físicas evitarán la formación macroscópica de curvas cerradas de tiempo.',
-      'La teoría de los universos paralelos ofrece una solución a las paradojas. Alterar el pasado no afectaría la línea original, sino que crearía una rama nueva y separada de la realidad.'
+    "id": "viaje-pasado",
+    "title": "Viaje al Pasado",
+    "color": "#FF7043",
+    "btnImage": "/assets/bttf/infographic_gigawatts/btn_pasado.webp",
+    "image": "/assets/bttf/infographic_gigawatts/hero_pasado.webp",
+    "content": [
+      "El regreso de Marty McFly a 1955 para arreglar la vida sentimental de sus padres es uno de los viajes al pasado más queridos del cine comercial. En la pantalla grande, el pasado se muestra como un destino geográfico congelado en el tiempo al que se puede viajar como quien toma un tren hacia una ciudad vecina. No obstante, para la física moderna de la relatividad general y la teoría cuántica de campos, viajar al pasado representa uno de los desafíos más formidables, controvertidos y teóricamente restringidos de toda la ciencia.",
+      "Las ecuaciones de la relatividad general de Albert Einstein son formalmente compatibles con trayectorias que regresan al punto de origen cronológico, conocidas técnicamente como curvas temporales cerradas. A lo largo de las décadas, físicos eminentes han descubierto soluciones exactas a las ecuaciones de campo que albergan estas curvas: el universo rotatorio formulado por Kurt Gödel en 1949, el cilindro masivo de rotación infinita concebido por Frank Tipler en 1974 y los agujeros de gusano transitables teorizados por Kip Thorne en 1988.",
+      "Sin embargo, la inmensa mayoría de estas soluciones matemáticas exige condiciones físicas extremas que rozan la imposibilidad empírica. El modelo de Tipler, por ejemplo, requiere construir un cilindro metálico con una masa superior a millones de estrellas comprimida a densidades nucleares, con una longitud infinita y rotando sobre su propio eje longitudinal a más de mil millones de revoluciones por minuto para arrastrar el espaciotiempo circundante mediante el efecto Lense-Thirring.",
+      "En el caso de los agujeros de gusano transitables —túneles hipotéticos que conectan dos regiones separadas del espaciotiempo— el obstáculo insalvable reside en mantener abierta la garganta gravitatoria. Según los cálculos de Morris y Thorne, cualquier masa ordinaria hace que el túnel colapse instantáneamente en una singularidad destructiva; para estabilizar la entrada temporal se necesitaría inyectar materia exótica con densidad de energía negativa masiva, cuya existencia macroscópica no ha sido jamás demostrada.",
+      "Por encima de todas estas trabas de ingeniería cósmica se alzan las restricciones termodinámicas y cuánticas descritas por la física fundamental. La conjetura de protección cronológica de Stephen Hawking y el aumento inexorable de la entropía cósmica sugieren que la propia fábrica del universo posee mecanismos de defensa intrínsecos que impiden los saltos al pasado, preservando la coherencia de la historia humana como un tapiz que se teje hacia adelante en una sola dirección irreversible."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La trama de la primera película gira exactamente en torno al peligro del viaje al pasado. Al interactuar con sus padres adolescentes en 1955, Marty rompe la cadena causal que lleva a su propio nacimiento, corriendo el riesgo de ser borrado de la existencia. Él debe actuar como un "reparador" de la línea temporal para salvarse.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El físico Kip Thorne descubrió matemáticamente que podrías, en teoría, convertir un agujero de gusano en una máquina para viajar al pasado moviendo uno de sus extremos a casi la velocidad de la luz y luego trayéndolo de vuelta.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Para filmar el viaje hacia el pasado de 1955, el director de arte Rick Carter diseñó una plaza central de Hill Valley con dos caras meticulosamente documentadas: la versión degradada y llena de tiendas de empeño de 1985 y la versión luminosa, pulcra y optimista de la posguerra estadounidense de 1955 con anuncios de neón de Texaco y cafeterías de batidos con gramolas mecánicas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cilindro de Tipler fue propuesto por el físico Frank J. Tipler en 1974 como una solución rigurosa a las ecuaciones de Einstein. Cálculos posteriores realizados por Stephen Hawking demostraron que un cilindro de longitud finita no puede generar curvas temporales cerradas a menos que se viole la condición débil de energía, haciendo inviable su construcción con materia real."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m4/banner_viaje-pasado.webp',
-    bannerCaption: 'Los obstáculos físicos que impiden el viaje al pasado',
-    fact: 'A nivel de las matemáticas puras de Einstein, viajar al pasado está permitido. Son las complicaciones y paradojas lógicas posteriores las que hacen que los físicos sospechen que el universo debe tener un mecanismo oculto para prohibirlo.'
+    "bannerImage": "/assets/bttf/infographic_m4/banner_viaje-pasado.webp",
+    "bannerCaption": "Los obstáculos físicos que impiden el viaje al pasado",
+    "fact": "Para mantener abierto un agujero de gusano transitable de solo un metro de diámetro apto para que cruce un ser humano, los cálculos teóricos de Thorne y Morris estiman que se requeriría una cantidad de materia exótica con energía negativa equivalente a la masa entera del planeta Júpiter concentrada en una garganta microscópica."
   }
 ];
 

@@ -28,17 +28,17 @@ const INFOGRAPHIC_NODES = [
       "El descenso de la ojiva culminó en un impacto catastrófico en el terreno desértico debido a que el sistema de expulsión de paracaídas sufrió una rotura mecánica por la extrema resistencia aerodinámica. El equipo de recuperación aeromédica liderado por el doctor James P. Henry tuvo que lidiar con la pérdida del sujeto, pero las cintas de telemetría de radio recuperadas de la estación terrestre aportaron la primera confirmación empírica de que los impulsos nerviosos y el sistema circulatorio básico de un primate pueden continuar operando a decenas de miles de metros de altitud.",
       "La misión de Albert I dejó lecciones de ingeniería indispensables para el diseño de habitáculos espaciales. Demostró con crudeza que los contenedores estáticos no eran suficientes y que se requerían cápsulas con amortiguación biomecánica activa, redundancia múltiple en el flujo de oxígeno y paracaídas con desaceleración en varias fases. Aquel trágico primer paso marcó el nacimiento formal de la medicina aeroespacial moderna y colocó el soporte vital de mamíferos como la máxima prioridad de la ingeniería de vuelo."
     ],
-    "fact": "La cápsula de Albert I en el cohete V-2 de White Sands fue el primer habitáculo biológico en la historia humana equipado con telemetría telemétrica en tiempo real para transmitir datos respiratorios y cardíacos desde la alta atmósfera hacia antenas receptoras terrestres.",
+    "fact": "La cápsula biológica de Albert I instalada en la ojiva del cohete V-2 lanzado en White Sands en junio de 1948 constituyó el primer habitáculo aeromédico experimental en la historia de la astronáutica en equipar telemetría en tiempo real, transmitiendo registros electrocardiográficos continuos y frecuencia respiratoria hacia estaciones de radio en tierra.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los análisis aeromédicos de 1948 evidenciaron que la desaceleración del flujo de oxígeno a presiones atmosféricas inferiores a cincuenta milibares requiere sistemas presurizados automáticos con válvulas antirretorno para impedir la anoxia anóxica cerebral súbita en primates."
+        "text": "Las evaluaciones aeromédicas dirigidas por el doctor James P. Henry en 1948 determinaron que a presiones atmosféricas por debajo de 50 milibares, la hemoglobina pierde rápidamente su capacidad de transporte de oxígeno molecular, exigiendo cabinas presurizadas herméticas y sistemas automáticos con válvulas antirretorno para prevenir la anoxia cerebral aguda en primates."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "El doctor James Henry bautizó informalmente al macaco como Albert en homenaje a Albert Einstein, inaugurando la histórica serie de experimentos biológicos suborbitales que llevaría el mismo nombre a lo largo de toda la década de 1950 en Estados Unidos."
+        "text": "El equipo médico de la Fuerza Aérea asignó de manera informal el nombre Albert al primer macaco rhesus en tributo al físico Albert Einstein; esta denominación se convirtió en el código protocolar estándar para toda la serie histórica de investigaciones biológicas suborbitales estadounidenses desarrolladas entre los años 1948 y 1952."
       }
     ]
   },
@@ -56,17 +56,17 @@ const INFOGRAPHIC_NODES = [
       "Desafortunadamente, durante el reingreso a la atmósfera densa a más de cinco veces la velocidad del sonido, el sistema de paracaídas volvió a fallar por un desgarro en las cuerdas de suspensión provocado por la violencia del choque con las capas de aire. La cápsula se estrelló a alta velocidad en el desierto, acabando instantáneamente con la vida del primate. A pesar del fatídico desenlace, la instrumentación de registro fue recuperada casi intacta dentro de su caja de acero endurecido.",
       "El sacrificio de Albert II proporcionó la prueba científica definitiva de que un mamífero complejo puede sobrevivir a las brutales aceleraciones del despegue y a la ingravidez orbital sin sufrir paros cardiorrespiratorios ni daños cerebrales. Este hito demostró empíricamente a la comunidad médica internacional que el ser humano poseía la capacidad biológica para viajar al espacio, transformando la exploración espacial de una fantasía teórica en una meta de ingeniería viable."
     ],
-    "fact": "Albert II fue el primer mamífero de la historia en rebasar los 100 kilómetros de altitud, registrando datos biomédicos activos a 134 kilómetros sobre la superficie de la Tierra y demostrando que la microgravedad no paraliza el corazón de los primates.",
+    "fact": "El macaco rhesus Albert II se convirtió el 14 de junio de 1949 en el primer mamífero en la historia en cruzar la frontera del espacio exterior o línea de Kármán, registrando signos vitales estables y telemetría activa a 134 kilómetros sobre la superficie de la Tierra, demostrando que la microgravedad prolongada no paraliza el miocardio.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los electrocardiogramas de Albert II transmitidos a 134 km de altitud demostraron que el sistema cardiovascular de los mamíferos mantiene la perfusión cerebral y el gasto cardíaco sin depender exclusivamente del gradiente de gravedad terrestre convencional."
+        "text": "El registro electrocardiográfico telemétrico de Albert II durante el apogeo a 134 kilómetros de altitud aportó la primera evidencia empírica cuantitativa de que el sistema circulatorio de los mamíferos conserva la presión arterial media y el gasto cardíaco sin depender exclusivamente del gradiente de gravedad hidrostática terrestre."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Los técnicos de White Sands apodaban al cohete V-2 que transportó a Albert II 'La Flecha Sagrada' debido a la extraordinaria estabilidad aerodinámica que mantuvo durante los primeros noventa segundos de vuelo en su rumbo al espacio exterior."
+        "text": "Los técnicos e ingenieros de White Sands apodaban cariñosamente al cohete V-2 número 47 de Albert II como 'La Flecha Sagrada' debido a la extraordinaria pureza de su trayectoria vertical, la cual no sufrió oscilaciones angulares perceptibles durante los primeros noventa segundos de propulsión hacia la alta atmósfera."
       }
     ]
   },
@@ -84,17 +84,17 @@ const INFOGRAPHIC_NODES = [
       "A pesar de haber superado el impacto del aterrizaje con signos vitales estables, Yorick falleció un par de horas más tarde debido al sobrecalentamiento térmico acumulado dentro de la cápsula mientras esperaba al equipo de rescate bajo el abrasador sol del desierto de White Sands. Los once ratones, por su parte, sobrevivieron sin secuelas a largo plazo y fueron estudiados durante meses en los laboratorios de Wright-Patterson para evaluar la posible degradación tisular celular.",
       "La serie de misiones de Holloman transformó radicalmente la bioingeniería aeroespacial estadounidense. Se descubrió la necesidad crítica de dotar a las cápsulas espaciales de sistemas de control ambiental y refrigeración activa posaterrizaje, sellados herméticos con aislamiento térmico multicapa y transmisores de localización por radiobaliza, tecnologías que serían adoptadas directamente por el naciente Proyecto Mercury para proteger a los futuros astronautas."
     ],
-    "fact": "El macaco Yorick (Albert VI) y sus once compañeros roedores en el cohete Aerobee de 1951 fueron los primeros mamíferos en sobrevivir físicamente al aterrizaje de una cápsula tras un vuelo a la alta atmósfera, validando los paracaídas de frenado progresivo.",
+    "fact": "El macaco Yorick (Albert VI) y once ratones de laboratorio a bordo del cohete Aerobee en septiembre de 1951 fueron los primeros mamíferos en sobrevivir físicamente al aterrizaje de una cápsula espacial tras alcanzar la alta atmósfera, validando los sistemas combinados de frenado por paracaídas y amortiguación balística.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La recuperación de los ratones de Yorick en 1951 permitió realizar los primeros estudios histológicos y cromosómicos de mamíferos expuestos al bombardeo de radiación cósmica primaria sin el escudo de la atmósfera inferior densa."
+        "text": "La recuperación con vida de los once ratones de la misión Yorick en 1951 permitió llevar a cabo las primeras necropsias e historiales cromosómicos en mamíferos expuestos a la radiación ionizante primaria y rayos cósmicos pesados más allá de las capas densas de absorción atmosférica sin detectarse daño tisular agudo."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Yorick fue inmortalizado con una réplica de su litera de amortiguación en el Museo Nacional del Aire y el Espacio del Smithsonian en Washington, reconociendo su papel indispensable en el desarrollo del soporte vital de la NASA."
+        "text": "La litera de amortiguación anatómica de poliuretano y aleación ligera utilizada por Yorick durante el impacto en el desierto de White Sands fue preservada como pieza histórica fundamental y se exhibe en el Museo Nacional del Aire y el Espacio del Instituto Smithsonian en Washington D. C. para conmemorar este hito."
       }
     ]
   },
@@ -112,17 +112,17 @@ const INFOGRAPHIC_NODES = [
       "La cápsula amerizó en el Océano Atlántico a casi doscientos kilómetros de distancia del buque de rescate USS Donner debido a la trayectoria más alta de lo planificado. Para complicar las cosas, la cápsula comenzó a inundarse con agua marina por una válvula abierta. Afortunadamente, un helicóptero de rescate izó la nave a tiempo y extrajo a Ham sano y salvo. Al salir, Ham estrechó la mano del médico del barco y comió con entusiasmo una manzana y media naranja.",
       "El éxito indiscutible del vuelo de Ham demostró al mundo y a la dirección de la NASA que la cápsula espacial Mercury era segura, presurizable y funcional para un ser vivo. Con los datos médicos y de desempeño cognitivo de Ham en la mano, el director médico de la misión dio luz verde definitiva para que el astronauta Alan Shepard realizara el primer vuelo espacial tripulado por un estadounidense en mayo de ese mismo año."
     ],
-    "fact": "El chimpancé Ham ejecutó pruebas psicomotoras accionando palancas bajo 14.7 G de aceleración y 6.6 minutos de microgravedad en el vuelo MR-2 de 1961, demostrando que un ser vivo puede operar controles de una nave espacial en órbita.",
+    "fact": "El chimpancé Ham realizó pruebas operativas psicomotoras accionando palancas bajo una aceleración extrema de 14.7 G y 6.6 minutos de microgravedad en el vuelo Mercury-Redstone 2 del 31 de enero de 1961, demostrando formalmente que un ser vivo puede operar controles de vuelo y mantener reflejos intactos en el espacio exterior.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los sensores instalados en el traje de Ham registraron un pulso basal de setenta latidos por minuto que subió a ciento setenta durante el empuje de catorce G, estabilizándose de inmediato al ingresar en microgravedad orbital sin arritmias."
+        "text": "La telemetría bioelectrónica del traje presurizado de Ham evidenció un ritmo cardíaco basal de 70 latidos por minuto que ascendió a 170 latidos durante el empuje de 14.7 G, estabilizándose de forma inmediata en parámetros seguros al entrar en ingravidez, sin anomalías en la presión venosa central ni arritmias cardíacas."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "El nombre 'HAM' es un acrónimo de Holloman Aerospace Medical Center; la NASA mantuvo en secreto su nombre antes del vuelo para evitar críticas públicas si la misión suborbital sufría un accidente catastrófico."
+        "text": "El nombre HAM fue creado como un acrónimo confidencial en honor al Holloman Aerospace Medical Center; la dirección de la NASA mantuvo en estricto secreto la identidad del chimpancé hasta después de su exitoso rescate en el mar para evitar controversias públicas si la misión suborbital sufría un percance catastrófico."
       }
     ]
   },
@@ -140,17 +140,17 @@ const INFOGRAPHIC_NODES = [
       "Simultáneamente, los sensores térmicos de la nave detectaron un sobrecalentamiento en la cabina y una avería en los propulsores de actitud de gas helio, lo que causaba un balanceo descontrolado. El director de vuelo Christopher Kraft tomó la prudente decisión de cancelar la tercera órbita y ordenar el reingreso inmediato tras completar dos vueltas al planeta. Enos amerizó en el mar de Puerto Rico y fue recuperado en excelente estado de salud física y mental.",
       "La misión orbital de Enos fue la prueba de fuego definitiva para el hardware del Proyecto Mercury. Demostró que el cohete Atlas era confiable para transportar vidas, que el traje espacial protegía del calor excesivo y que un piloto primate podía mantener la serenidad y la precisión mental bajo estrés técnico severo. El vuelo allanó el camino directo para que John Glenn se convirtiera en el primer estadounidense en orbitar la Tierra tres meses después."
     ],
-    "fact": "Enos completó dos órbitas completas alrededor del planeta Tierra a 28,000 km/h en la misión Mercury-Atlas 5 de 1961, resistiendo fallos de propulsión y problemas de sobrecalentamiento de la nave con disciplina operativa.",
+    "fact": "El chimpancé Enos completó dos órbitas terrestres completas a 28,000 km/h en la misión Mercury-Atlas 5 el 29 de noviembre de 1961, manteniendo una concentración mental y disciplina psicomotora asombrosas a pesar de sufrir descargas eléctricas accidentales por una falla de circuito y sobrecalentamiento en la cabina.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La telemetría de Enos permitió monitorear durante más de tres horas y quince minutos la hidratación, excreción y respuesta neuromuscular en ingravidez continua, refutando los mitos de atrofia neuromuscular súbita en el espacio."
+        "text": "Durante tres horas y quince minutos de vuelo orbital continuo, los sensores biomédicos de Enos registraron la excreción urinaria, temperatura corporal y respuesta refleja neuromuscular en ingravidez completa, refutando los temores de los neurólogos sobre desorientación psicomotora o alucinaciones inducidas por la microgravedad."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Cuando los rescatistas abrieron la escotilla en el USS Stormes, Enos saltó con energía alrededor de la cubierta y abrazó afectuosamente a sus entrenadores, mostrando un estado físico impecable tras su hazaña orbital."
+        "text": "Al completarse con éxito el amerizaje de rescate en el mar de Puerto Rico y abrirse la escotilla de la cápsula a bordo del destructor USS Stormes, Enos demostró tal vitalidad y júbilo que dio saltos en la cubierta, tomó la mano de su veterinario y comió gustoso rodajas de plátano fresco ante las cámaras de la prensa naval."
       }
     ]
   },
@@ -168,17 +168,17 @@ const INFOGRAPHIC_NODES = [
       "El escudo ablativo resistió de manera impecable los más de mil seiscientos grados centígrados de fricción atmosférica y los paracaídas se desplegaron a la perfección. La ojiva amerizó cerca de la isla de Antigua y el buque USS Kiowa rescató a ambas monas completamente vivas y activas. Fue la primera vez en la historia de los Estados Unidos que mamíferos regresaban con vida e ilesos de un viaje espacial balístico a gran escala.",
       "La mona Baker se convirtió en una celebridad mundial y un símbolo del avance biomédico espacial. Fue condecorada con medallas de mérito civil y vivió durante veinticinco años en el Centro Espacial y de Cohetes de Alabama en Huntsville, donde falleció pacíficamente de vejez en 1984 a los veintisiete años de edad, habiendo inspirado a millones de estudiantes y futuros ingenieros espaciales en todo el planeta."
     ],
-    "fact": "Able y Baker sobrevivieron a un reingreso a 16,000 km/h y 38 G de desaceleración en el misil Júpiter en 1959, convirtiéndose en los primeros mamíferos de EE. UU. en regresar con vida de un vuelo a más de 500 km de altitud.",
+    "fact": "Las monas Able y Baker sobrevivieron a un reingreso atmosférico balístico a más de 16,000 km/h soportando un pico de 38 G de desaceleración en el cono frontal del misil Júpiter AM-18 en mayo de 1959, convirtiéndose en los primeros seres vivos de los Estados Unidos en regresar ilesos de un vuelo espacial a 514 km de altitud.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La litera de Baker incluía un electroencefalograma de cuatro canales acoplado a un transmisor FM de estado sólido, siendo uno de los primeros circuitos electrónicos miniaturizados aplicados con éxito a la medicina de vuelo."
+        "text": "La litera biocontenida de la mona Baker integró un electroencefalograma de cuatro canales acoplado a un transmisor miniaturizado de modulación de frecuencia (FM) de estado sólido, siendo uno de los primeros hitos tecnológicos mundiales en bioelectrónica de semiconductores aplicada con éxito a la medicina de vuelo orbital."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "La tumba de la mona Baker en Huntsville, Alabama, es un sitio histórico muy visitado donde niños y visitantes de todo el mundo acostumbran dejar plátanos y nueces sobre su lápida como homenaje a su contribución espacial."
+        "text": "La mona ardilla Baker vivió veinticinco años tras su histórico vuelo espacial en el Centro Espacial y de Cohetes de Alabama en Huntsville, donde falleció pacíficamente por causas naturales en 1984 a los veintisiete años; miles de visitantes continúan depositando plátanos sobre su tumba en homenaje a su legado espacial."
       }
     ]
   },
@@ -196,17 +196,17 @@ const INFOGRAPHIC_NODES = [
       "El sacrificio y desempeño de estos animales también impulsó una profunda evolución bioética en la comunidad científica internacional. Las dificultades enfrentadas durante las primeras misiones de los cohetes V-2 obligaron a formular normativas internacionales estrictas sobre bienestar animal, protocolos no invasivos de contención y sistemas de respaldo de emergencia que hoy regulan cualquier investigación biológica en órbita terrestre y en la Estación Espacial Internacional.",
       "Al conmemorar los grandes hitos de astronautas legendarios como Yuri Gagarin, Alan Shepard o John Glenn, la historia aeroespacial reconoce que ninguno de sus logros habría sido posible sin el camino trazado por estos pioneros biológicos. Sus viajes a través de la atmósfera y el espacio exterior demostraron de forma concluyente que la vida de nuestro planeta puede aventurarse más allá de los confines de la Tierra y conquistar el cosmos."
     ],
-    "fact": "Los sistemas de telemetría cardiovascular y electrodos miniaturizados diseñados para los primates en Holloman fueron transferidos directamente a la medicina hospitalaria para crear las primeras unidades de terapia intensiva y monitoreo cardíaco en tierra.",
+    "fact": "La arquitectura telemétrica cardiovascular, los electrodos adhesivos secos y los protocolos de oxigenación diseñados para los primates en Holloman y White Sands fueron transferidos íntegramente a la medicina intensiva hospitalaria terrestre, dando origen directo a las modernas unidades de cuidados intensivos y monitoreo de urgencias.",
     "expandables": [
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los protocolos de aceleración controlada en centrífugas probados en primates determinaron los límites humanos de tolerancia a fuerzas G vectoriales (Gx y Gz), estableciendo la orientación supina de las butacas de los astronautas del Proyecto Mercury."
+        "text": "Los rigurosos ensayos biomecánicos en centrífugas de aceleración angular con primates definieron las tablas cuantitativas de tolerancia biológica a fuerzas de aceleración vectorial transversal (Gx) y lineal (Gz), dictando el diseño anatómico y la postura supina de las butacas de amortiguación en las cápsulas Mercury y Apolo."
       },
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "En el Centro de Vuelo Espacial Goddard de la NASA existe una placa conmemorativa dedicada a los primates y animales pioneros que brindaron los datos médicos necesarios para que la humanidad pudiera alcanzar la Luna con seguridad."
+        "text": "En los jardines exteriores del Centro de Vuelo Espacial Goddard de la NASA se erige una placa de bronce conmemorativa que honra expresamente a los primates y animales pioneros cuyos datos fisiológicos abrieron con seguridad las compuertas de la exploración espacial para que los primeros seres humanos pudieran alcanzar la Luna."
       }
     ]
   }

@@ -88,197 +88,197 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "calendario-365",
-              "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-365.webp",
+    "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-365.webp",
     "title": "El Primer Calendario de 365 Días",
     "color": "#80D080",
     "btnImage": "/assets/egypt/infographic_calendario/btn_calendario-365.webp",
     "image": "/assets/egypt/infographic_calendario/hero_calendario-365.webp",
     "content": [
-      "El calendario que usas todos los días para saber cuándo es tu cumpleaños, tus vacaciones o el fin de semana, es un invento que tiene más de 5,000 años de historia. Nació en las orillas del río Nilo. Los antiguos egipcios fueron los primeros seres humanos en crear un calendario civil de exactamente 365 días, independiente de las fases de la Luna, basándose exclusivamente en el movimiento del Sol y las estrellas.",
-      "A diferencia de otros pueblos antiguos, los egipcios resolvieron el rompecabezas del tiempo de una forma matemática. Observaron el cielo durante generaciones y descubrieron que el año solar exacto, el tiempo que tarda la Tierra en dar una vuelta completa al Sol, dura aproximadamente 365 días y un cuarto. A partir de este descubrimiento, crearon un calendario dividido en 12 meses idénticos, donde cada mes tenía exactamente 30 días, formando un bloque de 360 días que era fácil de calcular.",
-      "Pero los matemáticos egipcios sabían que 360 días no eran suficientes para completar el viaje orbital de nuestro planeta alrededor del Sol. Si dejaban el calendario así, las estaciones del año se desfasarían. Para solucionar este problema, añadieron 5 días extra al final del año. Estos 5 días adicionales, conocidos como 'días epagómenos', eran un puente entre el año viejo y el nuevo, logrando alcanzar los 365 días necesarios para mantener su mundo sincronizado.",
-      "Para los ciudadanos del antiguo Egipto, estos 5 días extra eran considerados días poderosos y mágicos. Creían que se encontraban fuera del tiempo normal, en una zona de transición donde se celebraban los cumpleaños de los dioses: Osiris, Horus, Seth, Isis y Neftis. Durante estos cinco días epagómenos, la vida cotidiana se detenía y los trabajos pesados se suspendían.",
-      "La sincronización entre el tiempo humano y el tiempo astronómico era crucial para la supervivencia de su civilización. Este ingenioso sistema de 365 días fue tan exitoso y práctico que sentó las bases para todos los calendarios futuros de la humanidad. Cada vez que miras la fecha en la pantalla de tu teléfono, estás utilizando una versión moderna de aquel sistema egipcio."
+      "En los albores del tercer milenio antes de nuestra era, durante el período dinástico temprano, la administración del Antiguo Egipto concibió una de las mayores invenciones intelectuales de la historia humana: el primer calendario solar civil regular de trescientos sesenta y cinco días. A diferencia de las sociedades mesopotámicas contemporáneas, cuyos calendarios dependían de los ciclos erráticos de la Luna, Egipto adoptó una estructura geométrica uniforme basada en el ritmo invariable del Sol.",
+      "El calendario civil dividía el año en doce meses idénticos de exactamente treinta días cada uno, sumando un bloque básico de trescientos sesenta días. Cada mes se organizaba en tres semanas regulares de diez días de duración, conocidas como décadas. Esta regularidad decimal perfecta simplificaba extraordinariamente la recaudación de impuestos fiscales del Estado faraónico, el pago de raciones de trigo a los obreros de las pirámides y la administración de los contratos comerciales en todo el valle.",
+      "Para cuadrar este esquema matemático con la duración real del año solar, los astrónomos reales añadieron un grupo festivo de cinco días complementarios al final del duodécimo mes, conocidos en lengua jeroglífica como «heriu renpet» (los que están sobre el año) y denominados en la tradición griega posterior como días epagómenos. Estos cinco días eran considerados un período sagrado fuera del tiempo ordinario, consagrados a celebrar el nacimiento terrenal de cinco grandes deidades.",
+      "Según la teología heliopolitana, durante estos cinco días epagómenos nacieron sucesivamente los dioses Osiris, Horus el Viejo, Seth, Isis y Neftis. La mitología advertía que este intervalo liminar era espiritualmente peligroso y propenso a maldiciones cósmicas, por lo que la población encendía antorchas protectoras, recitaba amuletos específicos y evitaba emprender viajes largos o firmar tratados legales hasta la llegada del primer día del Año Nuevo («Uep Renpet»).",
+      "A pesar de su asombrosa regularidad matemática, el calendario civil adolecía de una discrepancia astrofísica crucial: el año trópico real dura aproximadamente trescientos sesenta y cinco días y seis horas (365,2422 días). Al no intercalar un día bisiesto cada cuatro años, el calendario oficial acumulaba un retraso sistemático de un día entero cada cuatro años solares, provocando que las festividades religiosas se desplazaran lentamente a través de las estaciones agrícolas naturales."
     ],
-    "fact": "Los sacerdotes-astrónomos egipcios, conocidos como 'Khery-hebet', eran los guardianes del tiempo. Cada mes observaban el cielo nocturno con instrumentos de medición, como el'merkhet', para confirmar que las estrellas estaban en sus posiciones correctas, garantizando que el imperio mantuviera una sincronización precisa.",
+    "fact": "El calendario civil egipcio constaba de doce meses de treinta días subdivididos en décadas exactas más cinco días epagómenos festivos al final del ciclo, totalizando trescientos sesenta y cinco días estables que rigieron la administración pública faraónica durante tres milenios continuos, constituyendo el sistema civil más duradero y ordenado de la cronología universal.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Aunque el calendario civil tenía 365 días y era utilizado para la administración del gobierno y la recolección de impuestos, los sacerdotes mantenían un calendario lunar paralelo estrictamente para fines religiosos. Esto significa que un ciudadano egipcio común vivía en dos dimensiones de tiempo simultáneas."
+        "text": "El papiro mágico de Leiden registra conjuros específicos que los egipcios recitaban durante los cinco días epagómenos para evitar que la temible diosa leona Sejmet enviara vientos pestilentes o fiebres epidémicas a los hogares durante ese peligroso período fuera del cómputo oficial de los meses, encendiendo antorchas purificadoras y ofreciendo vasijas de cerveza roja en honor de la divinidad solar pacificadora."
       },
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La precisión del antiguo calendario egipcio revela un conocimiento avanzado de mecánica celeste. Aunque el año solar dura exactamente 365.24219 días, el sistema egipcio de 365 días fijos, sin contemplar el año bisiesto, provocaba que su calendario retrocediera un día astronómico cada cuatro años."
+        "text": "La tasa de desfase del calendario civil egipcio respecto al año trópico es de exactamente cero coma dos mil cuatrocientos veintidós días por año. Esto equivale a la pérdida acumulada de veinticuatro horas completas cada mil cuatrocientos sesenta años, intervalo que los astrónomos antiguos bautizaron como el gran período sótico."
       }
     ]
   },
   {
     "id": "calendario-lunar",
-              "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-lunar.webp",
+    "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-lunar.webp",
     "title": "El Problema del Calendario Lunar",
     "color": "#7EC8E3",
     "btnImage": "/assets/egypt/infographic_calendario/btn_calendario-lunar.webp",
     "image": "/assets/egypt/infographic_calendario/hero_calendario-lunar.webp",
     "content": [
-      "Antes de que la civilización egipcia revolucionara la forma de medir el tiempo, la mayoría de las civilizaciones antiguas utilizaban calendarios lunares, basados en observar las fases de la Luna en el cielo nocturno. Mirar cómo la Luna crece desde una fina cuña hasta un disco completo era un reloj evidente y accesible para cualquier persona que elevara la mirada hacia las estrellas.",
-      "Sin embargo, este antiguo sistema lunar tenía un problema matemático que complicaba la vida. El mes lunar dura aproximadamente 29.5 días. Si sumamos 12 de estos meses, obtenemos 354 días en el año, lo cual es 11 días más corto que los 365 días que tarda la Tierra en orbitar el Sol.",
-      "Las consecuencias de este corto calendario lunar eran significativas. Al faltar 11 días cada año en relación con las estaciones climáticas impulsadas por el Sol, un mes de 'primavera'dentro de un calendario lunar terminaría desplazándose de forma continua a lo largo de un ciclo de 33 años. Eventualmente ese mismo mes de'primavera' aterrizaría en pleno invierno.",
-      "Coordinar un calendario lunar con las estaciones climáticas que dictaban cuándo sembrar o cosechar resultaba un desafío inmanejable. Las civilizaciones agrarias, como el Antiguo Egipto, requerían un sistema predecible y fijo que no se desplazara a través de las diferentes épocas.",
-      "Fue entonces que los egipcios comprendieron que la Luna simplemente no constituía un marcador de tiempo confiable a gran escala. Necesitaban anclar su civilización al ciclo del Sol y al movimiento de las estrellas fijas."
+      "Antes de la implantación oficial del calendario civil de trescientos sesenta y cinco días, y conviviendo paralelamente con él a lo largo de toda la historia dinástica, Egipto se regía por un calendario lunar original mucho más antiguo. Este cómputo sacerdotal primigenio se fundamentaba en la observación directa de las fases de la Luna, comenzando cada mes el día exacto en que la última franja de la Luna menguante desaparecía del cielo oriental justo antes de la alborada matutina.",
+      "Un mes lunar o período sinódico tiene una duración media real de veintinueve días, doce horas, cuarenta y cuatro minutos y dos coma ocho segundos (29,53059 días). Como consecuencia de esta cifra fraccionaria, los meses del calendario lunar egipcio alternaban de forma natural entre duraciones de veintinueve y treinta días, totalizando un año lunar de apenas trescientos cincuenta y cuatro días. Esto generaba un desajuste crónico de once días completos cada año respecto al ciclo solar.",
+      "Si los sacerdotes no hubieran corregido este desfase periódico, las celebraciones agrícolas y los rituales litúrgicos lunares se habrían desincronizado con extrema rapidez de las estaciones terrestres: las fiestas de la siembra se habrían terminado celebrando en plena cosecha y los festivales de la crecida habrían caído en la estación seca en un lapso de apenas quince o dieciséis años civiles ordinarios.",
+      "Para solucionar esta grave anomalía calendárica, los astrónomos de los templos idearon un sistema empírico de intercalación inteligente. Observaban atentamente la aparición de la brillante estrella Sirio (Sopdet) en el horizonte matutino: si el orto helíaco de Sirio caía dentro de los últimos once días del duodécimo mes lunar, los sacerdotes insertaban inmediatamente un mes bisiesto adicional llamado «Thoth intercalar», restableciendo la sincronía cósmica entre la Luna y las estaciones.",
+      "De este modo, la sociedad faraónica funcionó durante siglos con un sofisticado sistema de doble calendario complementario. Por un lado, el calendario civil solar de trescientos sesenta y cinco días regulaba los asuntos administrativos del gobierno, el cobro de tributos y la justicia; por otro lado, el calendario lunar intercalado gobernaba los rituales litúrgicos de los templos, las ofrendas en las necrópolis y las grandes festividades populares consagradas a los dioses."
     ],
-    "fact": "Diversas civilizaciones, como los mesopotámicos, intentaron solucionar el problema del calendario lunar añadiendo meses adicionales de forma irregular, pero el sistema solar egipcio resultó más organizado y preciso.",
+    "fact": "El año lunar egipcio de doce meses sumaba trescientos cincuenta y cuatro días, generando un desfase acumulado de once días anuales respecto al año solar que obligaba a los sacerdotes a intercalar un decimotercer mes bisiesto cada dos o tres años para sincronizar las fiestas litúrgicas, denominado Thoth Menor y consagrado a los rituales de purificación estacional del templo.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "La herencia del calendario lunar sigue presente en algunas culturas. En el calendario islámico, que es lunar y no usa meses bisiestos, el mes de Ramadán recorre todas las estaciones a lo largo de un ciclo que abarca 33 años solares."
+        "text": "Los sacerdotes encargados de vigilar la desaparición de la Luna menguante recibían el título oficial de «horólogos observadores de la hora». Se apostaban en las terrazas superiores de los pilonos de los templos con varas de avistamiento para certificar la noche de invisibilidad lunar conocida como «pesdjentyu»."
       },
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "El desfase de 11 días entre el año solar de 365 días y un año lunar de 354 días sucede porque el ciclo de las fases de la Luna terrestre no está perfectamente sincronizado con el tiempo que tarda la Tierra en dar la vuelta al Sol."
+        "text": "El ciclo de intercalación lunar egipcio anticipó en casi mil años al célebre ciclo de Metón formulado en Atenas en el 432 a.C. Ambos sistemas se basan en el hecho de que doscientos treinta y cinco meses sinódicos lunares equivalen con extraordinaria precisión matemática a diecinueve años trópicos solares."
       }
     ]
   },
   {
     "id": "tres-estaciones",
-              "bannerImage": "/assets/egypt/infographic_m13/banner_gregorio-reforma.webp",
+    "bannerImage": "/assets/egypt/infographic_m13/banner_gregorio-reforma.webp",
     "title": "Akhet, Peret y Shemu",
     "color": "#E8C96A",
     "btnImage": "/assets/egypt/infographic_calendario/btn_tres-estaciones.webp",
     "image": "/assets/egypt/infographic_calendario/hero_tres-estaciones.webp",
     "content": [
-      "Aunque el mundo moderno experimenta cuatro estaciones en el año (verano, otoño, invierno y primavera), el año civil de los egipcios estaba dividido en solo tres estaciones de cuatro meses cada una, sintonizadas con los ciclos naturales de su territorio.",
-      "La primera estación se llamaba 'Akhet' (la inundación). Durante esta temporada, el río Nilo experimentaba crecidas que desbordaban sus riberas naturales. Esta agua empapaba los campos de cultivo y dejaba un lodo oscuro lleno de nutrientes, preparando el terreno desértico para la agricultura.",
-      "A continuación llegaba la segunda estación, 'Peret' (la siembra y el crecimiento). Una vez que las aguas de la inundación comenzaban a retroceder, los agricultores egipcios aprovechaban para plantar sus semillas en el lodo recién formado.",
-      "Finalmente, el calor inauguraba la tercera estación, 'Shemu' (la cosecha), la época seca en la cual el Sol maduraba los cultivos. Los campos rebosaban de grano y los campesinos trabajaban para recolectar las toneladas de trigo.",
-      "Este ciclo continuo de inundación, siembra y cosecha constituía la columna vertebral de la civilización egipcia. A través de este calendario de tres estaciones, los egipcios lograban predecir el comportamiento del río y planificar la producción de alimentos."
+      "A diferencia de las cuatro estaciones astronómicas tradicionales del mundo templado moderno (primavera, verano, otoño e invierno), la vida biológica y económica del Antiguo Egipto estaba articulada en torno a tres grandes estaciones climáticas naturales de cuatro meses de treinta días cada una. Estas tres fases recibían los nombres de Akhet (la Inundación), Peret (la Emergencia o Siembra) y Shemu (la Cosecha o la Estación Seca).",
+      "La primera estación, Akhet («la inundación del río»), se extendía aproximadamente desde mediados de julio hasta mediados de noviembre según el calendario moderno. Durante estos meses, las aguas turbias y rojizas del Nilo, cargadas de nutrientes minerales y limo orgánico fertilizante arrastrado desde los macizos volcánicos de Etiopía, desbordaban los diques naturales y anegaban la totalidad del valle arable. Con los campos bajo el agua, los campesinos eran reclutados para las obras monumentales del Estado.",
+      "La segunda estación era Peret («la salida o emergencia»), que abarcaba de mediados de noviembre a mediados de marzo. En este período, las aguas del río se retiraban gradualmente hacia su cauce principal, dejando sobre la tierra una capa esponjosa de limo negro húmedo («kemet»). Era el momento frenético de arar los campos con yuntas de bueyes, sembrar trigo candeal, cebada cervecera y lino textil, y reparar los canales de riego y compuertas mediante agrimensores oficiales.",
+      "La tercera y última estación era Shemu («la cosecha o el estiaje»), que transcurría de mediados de marzo a mediados de julio. Durante estos meses de calor sofocante, las espigas maduraban y los campesinos segaban el grano con hoces de sílice y madera de acacia, aventaban la paja en eras circulares empujadas por asnos y almacenaban las cosechas en gigantescos silos cónicos estatales, antes de que el río descendiera a su caudal mínimo anual.",
+      "La íntima dependencia de estas tres estaciones respecto al comportamiento hidrológico del río Nilo forjó la psicología colectiva de la civilización faraónica. Cada estación reflejaba una fase del ciclo cósmico de resurrección: Akhet era el caos acuático primordial regenerador, Peret representaba el renacimiento de la vida vegetal sobre la tierra fértil, y Shemu simbolizaba la maduración plena y la recolección de los dones concedidos por los dioses a la humanidad."
     ],
-    "fact": "Durante la estación de inundaciones 'Akhet', como no se podía cultivar nada, los campesinos eran reclutados por los gobernantes para trabajar en proyectos de construcción, como templos y pirámides.",
+    "fact": "El año nilótico se subdividía en tres estaciones de exactamente cuatro meses de treinta días cada una: Akhet (inundación), Peret (emergencia y siembra) y Shemu (estiaje y recolección), conformando el ciclo agroclimático más regular y productivo de la cuenca mediterránea antigua, determinando la recaudación fiscal de granos y el reclutamiento de mano de obra para las obras públicas.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Los antiguos egipcios utilizaban instrumentos llamados 'nilómetros'. Se trataba de escaleras talladas en la roca que descendían hacia el río para medir y registrar el nivel del agua durante la inundación."
+        "text": "Los meses egipcios no tenían originalmente nombres propios, sino que se designaban numéricamente dentro de su estación: «primer mes de Akhet», «segundo mes de Akhet», y así sucesivamente; los nombres populares como Thoth, Paophi o Hathor fueron oficializados en el Período Tardío, reflejando la primacía absoluta de la hidrología agraria sobre las festividades litúrgicas particulares."
       },
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Las intensas lluvias que ocasionaban la crecida del Nilo en 'Akhet' no sucedían en el desierto egipcio, sino en las zonas montañosas de Etiopía."
+        "text": "El limo fértil arrastrado por la inundación de Akhet estaba compuesto por esmectitas, cuarzo coloidal y óxidos de hierro procedentes de la meteorización del basalto en la meseta de Abisinia. Este sedimento aportaba una media de un milímetro de suelo nuevo anual rico en fósforo y nitrógeno asimilable."
       }
     ]
   },
   {
     "id": "sirio-sopdet",
-              "bannerImage": "/assets/egypt/infographic_m13/banner_haab-maya.webp",
+    "bannerImage": "/assets/egypt/infographic_m13/banner_haab-maya.webp",
     "title": "Sirio y el Orto Heliaco",
     "color": "#B388FF",
     "btnImage": "/assets/egypt/infographic_calendario/btn_sirio-sopdet.webp",
     "image": "/assets/egypt/infographic_calendario/hero_sirio-sopdet.webp",
     "content": [
-      "Para lograr sincronizar su calendario solar fijo con las estaciones del río Nilo, los astrónomos egipcios fijaron su vista en las estrellas. Buscaron un indicador visible en el cielo nocturno. Su solución fue Sirio, la estrella blanca más luminosa de toda la bóveda estelar.",
-      "Ellos bautizaron a esta estrella con el nombre de Sopdet. Los astrónomos observaron durante años de estudio que, después de estar oculta por el resplandor del Sol durante decenas de días, la estrella Sirio volvía a asomarse visible en el cielo.",
-      "Este renacimiento de la estrella, reapareciendo en el horizonte justo antes de que amaneciera, es conocido científicamente hoy como el 'orto helíaco'. Sorprendentemente, este evento celestial sucedía de manera cíclica cada 365 días completos.",
-      "Por un capricho de la astronomía, este orto helíaco exacto de la estrella Sirio coincidía casi con precisión en el verano con la fecha en que las aguas de la inundación del Nilo llegaban a la capital de Menfis.",
-      "Esto significaba que la astronomía y el calendario agrícola estaban sincronizados cósmicamente. Esto garantizaba la planificación de las cosechas y la prosperidad que sostuvo a la civilización egipcia."
+      "El faro astronómico supremo que marcaba el compás del tiempo y el destino de toda la nación egipcia era la estrella Sirio, conocida en la astronomía moderna como Alfa Canis Maioris y adorada por los sacerdotes faraónicos bajo el nombre sagrado de Sopdet («la aguda» o «la resplandeciente»). Como la estrella más brillante de todo el firmamento nocturno visible, con una magnitud aparente de menos uno coma cuarenta y seis, su presencia era reverenciada con fervor místico.",
+      "Tras permanecer invisible por debajo del horizonte durante un período de setenta días debido a la proximidad angular del Sol diurno, Sirio reaparecía finalmente en el firmamento en un acontecimiento astronómico crucial denominado orto helíaco. Este fenómeno consistía en la primera aparición fugaz de la estrella sobre el horizonte oriental, brillando con un fulgor azulado e intenso durante unos pocos minutos antes de que la luz cegadora del amanecer borrara las estrellas.",
+      "En el tercer milenio antes de Cristo, el orto helíaco de Sopdet coincidía con asombrosa exactitud con el solsticio de verano (finales de julio) y con la llegada de las primeras aguas espumosas de la inundación del Nilo a la frontera de Elefantina en Asuán. Los sacerdotes interpretaban esta coincidencia cósmica como una señal divina irrefutable: la estrella Sopdet era la lágrima celestial derramada por la diosa Isis que fertilizaba las tierras de Egipto para resucitar a Osiris.",
+      "Debido a que el calendario civil egipcio de trescientos sesenta y cinco días acumulaba un desfase de un cuarto de día por año respecto al año solar y estelar, la fecha del orto helíaco de Sirio no caía siempre en el primer día del calendario civil («I Akhet 1»). Por el contrario, la estrella se iba retrasando un día en el calendario civil cada cuatro años, recorriendo lentamente los doce meses del año a lo largo de un colosal período de mil cuatrocientos sesenta años solares.",
+      "Este ciclo cósmico completo recibía el nombre de Ciclo Sótico o «gran año». El escritor romano Censorino dejó constancia documental de que en el año 139 después de Cristo, bajo el reinado del emperador Antonino Pío, el orto helíaco de Sirio volvió a coincidir de manera matemática con el primer día del calendario civil egipcio, marcando la culminación histórica de uno de estos gigantescos ciclos milenarios de sincronización estelar."
     ],
-    "fact": "La estrella Sirius A tiene una diminuta y caliente compañera cósmica llamada Sirius B. Estas dos estrellas giran en un baile gravitacional alrededor de su centro común.",
+    "fact": "El ciclo sótico requería exactamente mil cuatrocientos sesenta años julianos (equivalentes a mil cuatrocientos sesenta y un años civiles egipcios de 365 días) para que el orto helíaco de la estrella Sirio volviera a coincidir con el primer día oficial del calendario civil de las Dos Tierras, registrado históricamente por el censor romano Censorino en el 139 d.C. con notable rigor cronográfico.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "La estrella Sirio forma una reconocible constelación llamada el Can Mayor. Los antiguos griegos decían que los días calurosos de verano, o la 'canícula', iniciaban exactamente con su orto helíaco."
+        "text": "El período de setenta días en que la estrella Sirio permanecía invisible bajo el horizonte coincidía de forma exacta con la duración canónica del proceso de momificación en los talleres funerarios, interpretándose como el tiempo en que el difunto debía permanecer oculto antes de renacer purificado, sincronizando el tránsito de ultratumba del difunto con la trayectoria cósmica de la diosa Sopdet en la Duat."
       },
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "El 'orto helíaco' se define en astrofísica como la primera aparición de un objeto celestial brillante sobre el horizonte, despuntando poco antes de que amanezca el Sol."
+        "text": "Sirio es un sistema estelar binario situado a ocho coma seis años luz de la Tierra. Está compuesto por una estrella de la secuencia principal de tipo espectral A1V (Sirio A) y una enana blanca densa (Sirio B), cuya altísima luminosidad estelar garantizaba su visibilidad a través de la calima desértica matutina."
       }
     ]
   },
   {
     "id": "julio-cesar",
-              "bannerImage": "/assets/egypt/infographic_m13/banner_julio-cesar.webp",
+    "bannerImage": "/assets/egypt/infographic_m13/banner_julio-cesar.webp",
     "title": "De Egipto a Roma: El Calendario Juliano",
     "color": "#FF8A65",
     "btnImage": "/assets/egypt/infographic_calendario/btn_julio-cesar.webp",
     "image": "/assets/egypt/infographic_calendario/hero_julio-cesar.webp",
     "content": [
-      "Si avanzamos en el tiempo unos cuantos miles de años desde Egipto hasta encontrarnos en la antigua Roma, descubriremos que el famoso líder y estratega Julio César modificó el calendario basándose en la ciencia egipcia.",
-      "Alrededor del año 46 a.C. La ciudad de Roma se hallaba estancada en un sistema caótico lunisolar. César se impresionó con el calendario civil matemático y exacto de los antiguos sabios egipcios.",
-      "Para implementar esta enorme adaptación astronómica, trajo a Roma a un sabio erudito de la ciudad de Alejandría llamado Sosígenes. Juntos implementaron una reforma profunda al calendario romano.",
-      "Sosígenes resolvió el complejo problema matemático de los 365 días y su cuarto de día. Propuso incluir un año bisiesto, añadiendo un día extra al mes de febrero cada cuatro años.",
-      "Esta reforma produjo el célebre calendario juliano. Este fue el sistema de medir el tiempo que dominaría al mundo durante siglos, estabilizando finalmente las fechas y las estaciones."
+      "A mediados del siglo primero antes de nuestra era, la República romana sufría un caos administrativo mayúsculo provocado por la ineficiencia y la manipulación política de su anticuado calendario republicano. Basado en un ciclo lunar tradicional de trescientos cincuenta y cinco días, el calendario romano dependía de que los pontífices máximos insertaran arbitrariamente un mes intercalar llamado Mercedonius, lo que provocó que en el año cuarenta y siete antes de Cristo las fechas oficiales llevaran tres meses enteros de desfase respecto a las estaciones.",
+      "Durante su estancia militar y amorosa en Alejandría junto a la reina Cleopatra VII en el año cuarenta y ocho antes de Cristo, el general y dictador romano Julio César quedó fascinado por los conocimientos astronómicos de los sabios de la corte ptolemaica. Conoció allí al eminente astrónomo y matemático alejandrino Sosígenes, quien le explicó con rigor técnico la superioridad absoluta del calendario solar egipcio de trescientos sesenta y cinco días y le propuso una reforma revolucionaria.",
+      "Siguiendo los cálculos matemáticos de Sosígenes, Julio César promulgó en el año cuarenta y seis antes de nuestra era una reforma legislativa integral que abolió para siempre el calendario lunar de Roma. Para compensar los siglos de negligencia previa, el año cuarenta y seis a.C. fue extendido de forma excepcional hasta alcanzar cuatrocientos cuarenta y cinco días de duración mediante tres meses intercalares, siendo bautizado irónicamente como el «último año de la confusión».",
+      "El nuevo calendario, bautizado en honor del dictador como Calendario Juliano, adoptó la estructura básica del año solar egipcio de trescientos sesenta y cinco días distribuidos en doce meses, pero introdujo una corrección matemática genial que los faraones nunca habían aplicado con éxito: añadir un día adicional de veinticuatro horas cada cuatro años entre el veintitrés y el veinticuatro de febrero (el día bisiesto, llamado «bis sextus dies ante calendas martias»).",
+      "La reforma juliana transformó el calendario solar nacido en las riberas del Nilo en el estándar cronográfico universal de todo el Imperio Romano y, posteriormente, de toda la cristiandad medieval. Aunque adaptó los nombres de los meses a la tradición romana (como Iulius para julio y Augustus para agosto), su corazón mecánico continuó siendo el cómputo astronómico de las estaciones desarrollado milenios atrás por los sacerdotes de Ra."
     ],
-    "fact": "La reforma fue tan drástica que provocó que el año 46 a.C. llegara a contar con 445 días. Se le llamó el 'año de la confusión'.",
+    "fact": "La reforma del calendario juliano en el 46 a.C., diseñada por el astrónomo alejandrino Sosígenes a instancias de Julio César, adoptó el año solar egipcio de 365 días e introdujo el primer sistema de año bisiesto cuatrienal de la civilización occidental, suprimiendo el caótico calendario lunar romano y unificando el cómputo del tiempo en todo el Imperio.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "El mes de julio fue nombrado en honor a Julio César, mientras que el mes de agosto lo fue en honor a su sucesor, Augusto César."
+        "text": "En el año 238 a.C., dos siglos antes de Julio César, el faraón Ptolomeo III ya había intentado introducir el día bisiesto cada cuatro años mediante el célebre «Decreto de Canopus», pero los sacerdotes conservadores tebanos se opusieron tenazmente a alterar la tradición litúrgica de los trescientos sesenta y cinco días."
       },
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La aproximación de 365.25 días era útil, pero el año astronómico real tiene 365.24219 días, provocando un pequeño margen de error que se iría acumulando con los siglos."
+        "text": "El calendario juliano fijó la duración del año en trescientos sesenta y cinco días y seis horas exactas (365,25 días). Esto representaba una aproximación magnífica, pero sobreestimaba la duración real del año trópico (365,2422 días) en once minutos y catorce segundos cada año solar, acumulando un error de un día completo cada ciento veintiocho años de aplicación cronológica ininterrumpida."
       }
     ]
   },
   {
     "id": "gregorio-reforma",
-              "bannerImage": "/assets/egypt/infographic_m13/banner_sirio-sopdet.webp",
+    "bannerImage": "/assets/egypt/infographic_m13/banner_sirio-sopdet.webp",
     "title": "La Reforma Gregoriana de 1582",
     "color": "#4FC3F7",
     "btnImage": "/assets/egypt/infographic_calendario/btn_gregorio-reforma.webp",
     "image": "/assets/egypt/infographic_calendario/hero_gregorio-reforma.webp",
     "content": [
-      "Aunque el calendario juliano funcionó bastante bien durante más de un milenio en Europa, la diferencia microscópica de 0.0078 días entre el año juliano (365.25 días) y el verdadero año solar (365.2422 días) se fue acumulando. Para el siglo XVI, el calendario oficial se había desfasado 10 días completos con respecto a las posiciones estelares.",
-      "Para remediar este desfase, que afectaba la celebración de festividades como la Pascua, el papa Gregorio XIII reunió a un equipo de matemáticos y astrónomos en Roma para diseñar una segunda actualización al calendario egipcio en el año 1582.",
-      "La primera acción de la reforma gregoriana consistió en eliminar de golpe aquellos 10 días que se habían acumulado erróneamente. Esto significó que en muchos territorios, las personas se acostaron la noche del jueves 4 de octubre, y despertaron en un viernes 15 de octubre de 1582.",
-      "Para evitar que este desfase regresara en el futuro, el equipo ajustó la regla que marcaba los años bisiestos. Decretaron que los años que terminan en dos ceros, como 1900, no serían bisiestos, a menos que fueran divisibles por 400. Esto resultó ser el toque preciso que estabilizó las fechas.",
-      "Este calendario gregoriano se convirtió en un estándar. Hoy en día se usa en todo el planeta de forma universal. El calendario exacto que dirige nuestra época cibernética es el descendiente directo de aquel invento milenario de los faraones."
+      "Aunque el calendario juliano inspirado en Egipto representó un avance colosal para la civilización, contenía una sutil discrepancia matemática que terminó acumulando un problema secular de proporciones mayúsculas. Los once minutos y catorce segundos de exceso que el año juliano atribuía anualmente al Sol frente a la realidad astronómica parecían insignificantes en una vida humana, pero con el transcurso de los siglos generaron una deriva inevitable.",
+      "Hacia el siglo dieciséis, aquel pequeño desfase anual de once minutos se había transformado en un error astronómico acumulado de diez días completos. Como resultado directo de esta desviación, el equinoccio de primavera boreal, fijado por el Concilio de Nicea del año 325 en el veintiuno de marzo para calcular la fecha móvil de la Pascua de Resurrección, se producía en la realidad física el once de marzo, amenazando con desplazar la liturgia cristiana hacia el invierno.",
+      "Para solucionar esta crisis cronológica de forma definitiva, el papa Gregorio XIII promulgó el veinticuatro de febrero de 1582 la célebre bula pontificia «Inter gravissimas». La comisión científica que diseñó la reforma estuvo liderada por el eminente médico y astrónomo italiano Aloysius Lilius y por el insigne matemático jesuita alemán Christopher Clavius, quienes emplearon las tablas astronómicas más avanzadas de la época renacentista.",
+      "La reforma gregoriana aplicó una cirugía cronológica audaz en dos fases. En primer lugar, eliminó de un plumazo el error acumulado: se decretó que al jueves cuatro de octubre de 1582 le seguiría inmediatamente el viernes quince de octubre, borrando diez días del calendario de la historia europea. En segundo lugar, refinó la regla de los años bisiestos para que el calendario no volviera a desfasarse jamás.",
+      "La nueva fórmula matemática estipuló que los años seculares terminados en dos ceros solo serían bisiestos si eran exactamente divisibles por cuatrocientos. De este modo, años como 1600 y 2000 mantuvieron su día bisiesto, mientras que 1700, 1800 y 1900 pasaron a ser años comunes de trescientos sesenta y cinco días. Este ajuste magistral redujo el margen de error a apenas un día cada tres mil trescientos años, rigiendo la vida global hasta hoy."
     ],
-    "fact": "El Imperio británico se rehusó a aceptar este calendario hasta el siglo XVIII. Para cuando lo adoptaron en 1752, tuvieron que eliminar 11 días completos de su calendario.",
+    "fact": "La reforma gregoriana de 1582 suprimió diez días del calendario civil en octubre y ajustó la regla secular de los años bisiestos, perfeccionando el cómputo solar iniciado en Egipto hasta alcanzar una exactitud de un día de desvío cada tres mil trescientos años, siendo adoptada paulatinamente por todas las naciones civilizadas del mundo contemporáneo.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Miguel de Cervantes y William Shakespeare murieron en la misma fecha (23 de abril de 1616), pero con un desfase de 10 días reales, ya que España usaba el calendario gregoriano e Inglaterra aún usaba el juliano."
+        "text": "Santa Teresa de Jesús falleció en Alba de Tormes exactamente en la noche del cuatro de octubre de 1582; debido a la entrada en vigor inmediata del calendario gregoriano en España esa misma medianoche, fue enterrada oficialmente al día siguiente: el quince de octubre, saltando diez fechas de golpe sin que transcurrieran más de doce horas reales entre el óbito y las exequias."
       },
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "La fórmula gregoriana del año bisiesto reduce el error a tan solo un día de desfase cada 3,300 años, logrando una precisión asombrosa para la época."
+        "text": "La duración media del año en el calendario gregoriano es de 365,2425 días terrestres (365 días, 5 horas, 49 minutos y 12 segundos). Esta cifra difiere del año trópico real en tan solo veintiséis segundos anuales, una precisión matemática verdaderamente portentosa para el siglo dieciséis, lograda gracias a las exhaustivas observaciones astronómicas de matemáticos como Cristóbal Clavio y Luis Lilio."
       }
     ]
   },
   {
     "id": "haab-maya",
-              "bannerImage": "/assets/egypt/infographic_m13/banner_tres-estaciones.webp",
+    "bannerImage": "/assets/egypt/infographic_m13/banner_tres-estaciones.webp",
     "title": "Los Mayas: Otro 365",
     "color": "#A5D6A7",
     "btnImage": "/assets/egypt/infographic_calendario/btn_haab-maya.png",
     "image": "/assets/egypt/infographic_calendario/hero_haab-maya.webp",
     "content": [
-      "Mientras los astrónomos egipcios observaban el cielo a orillas del río Nilo, los sabios de civilizaciones al otro lado del océano también miraban el cielo estrellado con interés.",
-      "Miles de años después, en un mundo verde y húmedo de espesas selvas centroamericanas, los mayas desarrollaron el calendario Haab, de manera independiente.",
-      "Resulta asombroso que los mayas descubrieron, al igual que los egipcios, la misma cantidad exacta de 365 días necesarios para completar un ciclo solar. Ambas culturas llegaron a la misma conclusión observando los mismos astros.",
-      "Sin embargo, los mayas dividieron el año de una forma ligeramente diferente. Usaban 18 meses de exactamente 20 días cada uno, más cinco días extras al final.",
-      "Estos cinco días adicionales eran llamados 'Wayeb'. Al igual que en el antiguo Egipto, estos días fuera del tiempo regular eran considerados de mala suerte. Esta convergencia demuestra que la observación atenta de la naturaleza produjo soluciones paralelas universales."
+      "A miles de kilómetros de distancia del valle del Nilo y en un aislamiento geográfico y cultural absoluto a través de los océanos, otra brillante civilización astronómica de la antigüedad llegó de forma independiente a la misma conclusión matemática que los sabios faraónicos: los mayas de Mesoamérica. Para regular sus ciclos agrícolas de siembra y quema de la selva tropical, los astrónomos mayas desarrollaron el calendario solar civil conocido como Haab.",
+      "La estructura arquitectónica del Haab presenta una coincidencia verdaderamente asombrosa con el calendario civil egipcio. El año maya constaba de exactamente trescientos sesenta y cinco días distribuidos en dieciocho meses de veinte días cada uno (con base vigesimal mesoamericana), totalizando trescientos sesenta días básicos denominados Tun. Al final de este ciclo, los mayas añadían un período especial de cinco días suplementarios conocidos como los días Wayeb.",
+      "Al igual que ocurría con los días epagómenos en el Antiguo Egipto, los cinco días Wayeb eran percibidos por la sociedad maya como un intervalo sumamente peligroso, nefasto y liminar. Los sacerdotes enseñaban que durante esos cinco días los portales del inframundo (Xibalbá) quedaban entreabiertos, permitiendo que deidades malignas y espíritus errantes cruzaran a la tierra. La gente evitaba salir de sus casas, no se peinaba ni realizaba labores físicas pesadas.",
+      "Los mayas sabían perfectamente que el año trópico solar era superior a los trescientos sesenta y cinco días enteros del Haab. Sin embargo, en lugar de intercalar días bisiestos mecánicos que habrían roto la armonía matemática de su complejo sistema calendárico interconectado (que combinaba el Haab con el calendario ritual sagrado Tzolk'in de doscientos sesenta días en la Rueda Calendárica de cincuenta y dos años), registraban la desviación astronómica mediante tablas de corrección grabadas en estelas.",
+      "Esta extraordinaria convergencia cultural entre el Nilo y la selva del Petén demuestra que cuando las civilizaciones humanas observan con paciencia metódica y rigor geométrico las mismas leyes físicas del cosmos —la rotación de la Tierra sobre su eje inclinado y su traslación anual alrededor del Sol—, la inteligencia humana converge de forma natural hacia soluciones matemáticas idénticas para descifrar el tiempo."
     ],
-    "fact": "La convergencia de soluciones astronómicas independientes entre culturas separadas por miles de kilómetros es un fenómeno fascinante del desarrollo humano.",
+    "fact": "El calendario solar Haab de la civilización maya constaba de dieciocho meses de veinte días más cinco días peligrosos Wayeb, sumando trescientos sesenta y cinco días en una asombrosa coincidencia matemática independiente con el calendario civil del Egipto faraónico, demostrando la universalidad de la respuesta humana ante la duración del ciclo solar terrestre.",
     "expandables": [
       {
         "label": "¿Sabías que...?",
         "icon": "sparkles",
-        "text": "Los mayas no utilizaban el calendario Haab por sí solo. Lo combinaban con otro calendario sagrado de 260 días llamado Tzolk'in."
+        "text": "Los mayas calculaban la duración del año solar trópico en 365,2420 días en monumentos de Copán, una cifra que difiere en apenas dos diezmilésimas de día del valor astronómico moderno (365,2422 días), alcanzando una precisión superior a la del calendario juliano europeo coetáneo, calculada mediante observaciones de horizontes montañosos sin instrumentos ópticos de vidrio."
       },
       {
         "label": "Dato Científico",
         "icon": "atom",
-        "text": "Los sabios mayas calcularon la duración del año y precisa, superando la exactitud del calendario juliano que se usaba en Europa en su época."
+        "text": "El sistema calendárico maya operaba mediante un mínimo común múltiplo exacto: la Rueda Calendárica combinaba los ciclos del Tzolk'in (260 días) y del Haab (365 días), tardando exactamente dieciocho mil novecientos ochenta días (cincuenta y dos años solares) en repetir una fecha idéntica completa, articulando de forma perfecta los ritmos sagrados de la liturgia con el cómputo astronómico civil mesoamericano."
       }
     ]
   }

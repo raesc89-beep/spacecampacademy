@@ -89,144 +89,200 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'dzibilchaltun-sitio',
-              bannerImage: '/assets/maya/infographic_m6/banner_codices-mayas.webp',
-    title: 'El Sitio: Dzibilchaltún',
-    color: '#ECEFF1',
-    btnImage: '/assets/maya/infographic_m6/btn_dzibilchaltun-sitio.jpg',
-    image: '/assets/maya/infographic_m6/hero_dzibilchaltun-sitio.jpg',
-    content: [
-      'Imagina una ciudad gigante escondida bajo la selva durante miles de años. Dzibilchaltún, cuyo nombre maya significa el "lugar donde hay escritura sobre piedras planas", fue uno de los asentamientos más grandes del norte de Yucatán. La gente comenzó a vivir aquí desde el año quinientos antes de Cristo. Estuvo ocupado sin interrupción hasta que llegaron los españoles.',
-      'El sitio es colosal en su tamaño. Se han descubierto alrededor de ocho mil cuatrocientas estructuras esparcidas por un área de dieciséis kilómetros cuadrados. La mayoría no son pirámides gigantescas, sino basamentos de piedra sobre los cuales construían sus casas de madera y techos de palma. Hoy en día, la selva se ha tragado muchas de estas construcciones.',
-      'La ubicación de Dzibilchaltún no fue un accidente. Los antiguos mayas sabían elegir el mejor terreno. Estaban cerca de la costa del Golfo de México, lo que les permitía comerciar con la valiosa sal marina. Además, el subsuelo de piedra caliza facilitaba la construcción y el movimiento.',
-      'Uno de los aspectos fascinantes de Dzibilchaltún es su diseño urbano. A diferencia de nuestras ciudades modernas con calles en cuadrícula, esta ciudad estaba organizada en torno a conjuntos de edificios agrupados. Estos grupos se comunicaban mediante caminos elevados de piedra blanca. Cada familia importante tenía su propia plaza y santuario.',
-      'A pesar de su tamaño, Dzibilchaltún guarda muchos secretos todavía. Durante cientos de años, la naturaleza recuperó su espacio. Los árboles crecieron sobre las plazas y las raíces rompieron las piedras. Fueron necesarias décadas de trabajo arqueológico paciente, retirando capas de tierra, para que el famoso Templo de las Siete Muñecas volviera a ver la luz del sol.'
+    "id": "dzibilchaltun-sitio",
+    "bannerImage": "/assets/maya/infographic_m6/banner_codices-mayas.webp",
+    "title": "El Sitio: Dzibilchaltún",
+    "color": "#ECEFF1",
+    "btnImage": "/assets/maya/infographic_m6/btn_dzibilchaltun-sitio.jpg",
+    "image": "/assets/maya/infographic_m6/hero_dzibilchaltun-sitio.jpg",
+    "content": [
+      "Dzibilchaltún es uno de los asentamientos arqueológicos más antiguos, extensos y fascinantes del norte de la península de Yucatán. Situado a tan solo 17 kilómetros al norte de la actual ciudad de Mérida, su nombre en lengua maya yucateca significa literalmente «lugar donde hay escritura sobre piedras planas» (de ts'íib, escribir o grabar; il, locativo; y ch'áaltun, piedra plana o laja de caliza), aludiendo a las numerosas estelas conmemorativas halladas en sus plazas cívicas.",
+      "A diferencia de muchas grandes metrópolis mayas que experimentaron colapsos demográficos repentinos al final del periodo Clásico, Dzibilchaltún se distingue por una longevidad habitacional casi ininterrumpida de más de dos milenios. Las exploraciones arqueológicas documentan los primeros campamentos agrícolas estables hacia el año 500 a.C., durante el periodo Preclásico Medio, y constatan que la urbe continuó poblada durante el Clásico, el Posclásico e incluso hasta la conquista española en el siglo XVI.",
+      "Los reconocimientos topográficos y fotogramétricos coordinados por la Universidad de Tulane registraron más de 8,400 estructuras individuales de mampostería distribuidas a lo largo de un área nuclear y periférica superior a los 16 kilómetros cuadrados. En su época de máximo esplendor demográfico, entre los años 600 y 850 d.C., la ciudad albergó una población permanente estimada en más de 25,000 habitantes que aprovechaban su proximidad a las ricas salineras de la costa norte del golfo.",
+      "El trazado urbano de Dzibilchaltún se organiza alrededor de un monumental núcleo cívico y ceremonial conectado mediante amplias calzadas de piedra blanca llamadas sacbeob. La Plaza Mayor agrupa palacios residenciales de la nobleza, plataformas para danzas multitudinarias, templos piramidales y una singular capilla cristiana abierta del siglo XVI construida por frailes franciscanos en el corazón mismo de la antigua explanada indígena.",
+      "La riqueza económica y la relevancia geopolítica del asentamiento se derivaban del control monopólico sobre el comercio regional de la sal marina, el henequén silvestre y los productos pesqueros de la costa hacia las ciudades del interior peninsular. Esta sólida base mercantil permitió a los gobernantes financiar ambiciosos programas arquitectónicos orientados a la observación astronómica y a la legitimación ritual de su poder sagrado frente a las comunidades vasallas."
     ],
-    expandables: [
-      { label: 'Un Nombre Misterioso', icon: 'clock', text: 'El nombre "Dzibilchaltún" no es el nombre original que los antiguos pobladores le daban a la ciudad. En realidad, los arqueólogos modernos adoptaron este nombre basándose en cómo los mayas locales llamaban a la zona debido a unas estelas (piedras grabadas) que se encontraron allí. El verdadero nombre ancestral de esta gigantesca metrópolis sigue siendo un misterio que tal vez nunca lleguemos a conocer con certeza.' },
-      { label: 'Comparando Tamaños', icon: 'clock', text: 'Para entender la magnitud de Dzibilchaltún, piensa en que, en su momento de máximo esplendor, la ciudad pudo haber albergado a más de cuarenta mil habitantes. Esto la hacía más grande que muchas ciudades europeas de la misma época. La planificación requerida para alimentar y proporcionar agua a tantas personas en un entorno donde no hay ríos superficiales es un verdadero logro de ingeniería humana.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el centro de la gran plaza ceremonial de Dzibilchaltún sobrevive una capilla abierta de piedra con arcos de medio punto construida por misioneros católicos españoles alrededor de 1590. Los frailes utilizaron los bloques de caliza de templos mayas en ruinas para levantar este templo cristiano directamente en el patio prehispánico."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El proyecto cartográfico intensivo dirigido por el arqueólogo E. Wyllys Andrews IV entre 1956 y 1965 inventarió 8,400 estructuras en 19 kilómetros cuadrados de cuadrícula, convirtiendo a Dzibilchaltún en una de las ciudades prehispánicas con mayor densidad de levantamiento topográfico de toda América Latina."
+      }
     ],
-    fact: 'Una peculiaridad de la región de Dzibilchaltún es la falta absoluta de ríos y lagos en la superficie. Todo el sistema hidráulico de la zona es subterráneo. Esto significa que los mayas dependían de las lluvias y de los cenotes (ojos de agua) para sobrevivir, lo que influyó en su religión y su veneración por los dioses de la lluvia y el agua.'
+    "fact": "Dzibilchaltún ostenta un registro de ocupación ininterrumpida de más de 2,000 años (desde 500 a.C. hasta 1540 d.C.) y cuenta con más de 8,400 estructuras documentadas en 16 km², constituyendo el centro urbano y comercial más longevo de la planicie septentrional de la península de Yucatán, consolidado gracias a su estratégica explotación y comercio de la sal marina en las costas del golfo de México."
   },
   {
-    id: 'templo-munecos',
-              bannerImage: '/assets/maya/infographic_m6/banner_desciframiento-maya.webp',
-    title: 'El Templo de las 7 Muñecas',
-    color: '#BF360C',
-    btnImage: '/assets/maya/infographic_m6/btn_templo-munecos.jpg',
-    image: '/assets/maya/infographic_m6/hero_templo-munecos.jpg',
-    content: [
-      'El Templo de las Siete Muñecas es el corazón de Dzibilchaltún. Imagina un edificio sólido con pequeñas puertas cuadradas y una torre en la parte superior. A diferencia de las pirámides escalonadas, esta estructura es un basamento pequeño. Fue construido alrededor del año ochocientos y tiene cuatro puertas apuntando hacia los puntos cardinales.',
-      'El nombre del templo es tan intrigante como el edificio. Cuando los arqueólogos exploraron su interior, hicieron un descubrimiento sorprendente bajo el suelo del altar principal. Encontraron exactamente siete figurillas de arcilla que representaban formas humanas con características inusuales. Parecían haber sido colocadas allí como una ofrenda sagrada.',
-      '¿Pero por qué este edificio es tan diferente? En la arquitectura maya, la crestería en forma de ventana cuadrada que corona el templo es única. Los científicos creen que esta torre no solo servía como decoración. Formaba parte integral del sistema de observación astronómica que los sacerdotes utilizaban para medir el tiempo.',
-      'La construcción de este santuario demuestra un conocimiento matemático extraordinario. Las paredes están hechas de bloques de piedra caliza perfectamente tallados que encajan. Para crear el efecto de luz, los constructores calcularon los ángulos con una precisión increíble. Utilizaron únicamente su observación, palos rectos y cuerdas para medir.',
-      'Con el paso de los siglos, los propios mayas decidieron cubrir el Templo de las Siete Muñecas. Construyeron un edificio más grande encima de él y lo rellenaron con rocas y tierra, dejándolo escondido como una cápsula del tiempo. Esta práctica de superposición era muy común entre los antiguos mayas.'
+    "id": "templo-munecos",
+    "bannerImage": "/assets/maya/infographic_m6/banner_desciframiento-maya.webp",
+    "title": "El Templo de las 7 Muñecas",
+    "color": "#BF360C",
+    "btnImage": "/assets/maya/infographic_m6/btn_templo-munecos.jpg",
+    "image": "/assets/maya/infographic_m6/hero_templo-munecos.jpg",
+    "content": [
+      "El Templo de las Siete Muñecas, catalogado técnicamente por los arqueólogos como la Estructura 1-sub de Dzibilchaltún, es una de las joyas constructivas más singulares de toda Mesoamérica. Erigido hacia el año 700 d.C., en pleno florecimiento del periodo Clásico Tardío, el monumento presenta una silueta arquitectónica atípica que se aleja radicalmente del modelo piramidal escalonado convencional con un solo acceso frontal orientado hacia las plazas.",
+      "El edificio consiste en una torre o santuario de planta cuadrangular asentado sobre una plataforma piramidal baja accesible mediante cuatro escalinatas simétricas. La cámara central superior está coronada por una torre cuadrada maciza provista de aberturas de ventilación y vanos orientados a los cuatro puntos cardinales. Cada una de las cuatro fachadas del templo cuenta con una amplia puerta de entrada y dos ventanas rectangulares laterales talladas en muros gruesos de mampostería.",
+      "Esta disposición cruciforme con vanos y puertas alineadas de oriente a poniente y de norte a sur permite una transparencia visual completa a través del corazón del edificio. Los observadores situados a distancia pueden mirar a través de los vanos opuestos como si se tratara del túnel óptico de un instrumento científico colosal. Dicha singularidad constructiva fue concebida intencionalmente para convertir la estructura en una pantalla receptora de fenómenos de luz solar extrema.",
+      "El nombre popular de «Templo de las Siete Muñecas» se debe al sensacional descubrimiento arqueológico realizado en su interior durante las excavaciones de 1957. Debajo del piso estucado del santuario, los investigadores hallaron una ofrenda ritual intacta colocada en una cista de piedra: siete figurillas toscas de arcilla cocida de aspecto antropomorfo que presentaban deformaciones físicas deliberadas en sus extremidades y cuerpos.",
+      "Los análisis etnohistóricos sugieren que estas siete figuras de barro representaban espíritus tutelares o personas afectadas por padecimientos que formaban parte de un complejo rito terapéutico y expiatorio de renovación comunitaria. Una vez enterrada la ofrenda junto con cuentas de jadeíta, conchas marinas y huesos tallados, los sacerdotes consagraron el templo como un santuario eterno dedicado a la fertilidad de la tierra y al renacimiento del dios solar."
     ],
-    expandables: [
-      { label: 'Las Misteriosas Figurillas', icon: 'atom', text: 'Las siete figurillas de barro encontradas no son muñecas para jugar. Los expertos sugieren que representan a individuos con enfermedades o deformidades físicas. En la cosmovisión maya, las personas que nacían con características inusuales a menudo eran consideradas como tocadas por los dioses o con una conexión especial con el mundo espiritual. Fueron enterradas ritualmente para consagrar el espacio o pedir sanación.' },
-      { label: 'Arquitectura Cuadrangular', icon: 'clock', text: 'La forma cuadrada del templo y sus cuatro puertas no son un capricho estético. El número cuatro es uno de los números más sagrados para los mayas. Representa las cuatro esquinas del universo, los cuatro rumbos del cosmos y los cuatro colores principales (rojo, blanco, negro y amarillo) asociados a las deidades que sostenían el cielo y la tierra. El templo es, literalmente, una maqueta del universo en piedra.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Las siete figurillas de arcilla que bautizaron al templo miden apenas entre 8 y 10 centímetros de alto. Varias de ellas son figuras desnudas con jorobas pronunciadas, torsos curvados o rasgos faciales asimétricos, lo que llevó a los arqueólogos a interpretarlas como ofrendas médicas para sanar enfermos o alejar epidemias de la urbe."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La Estructura 1-sub sobrevivió milagrosamente intacta porque los propios mayas del periodo Posclásico Temprano (hacia 800 d.C.) la cubrieron por completo con toneladas de escombros para levantar encima una pirámide mayor que la selló y protegió de la intemperie hasta su excavación científica a mediados del siglo XX."
+      }
     ],
-    fact: 'El descubrimiento del templo oculto fue una de las sorpresas más grandes de la arqueología moderna. Cuando E. Wyllys Andrews IV excavaba lo que parecía ser una pirámide en ruinas bastante común, notó que había un muro tallado debajo del relleno. Al retirar toneladas de roca con muchísimo cuidado, desenterró un edificio que había permanecido intacto y a oscuras durante siglos.'
+    "fact": "La Estructura 1-sub o Templo de las Siete Muñecas presenta una torre central de piedra caliza con vanos cruzados que ofrecen transparencia visual horizontal en sus cuatro caras, diseñada hacia el 700 d.C. para funcionar como una cámara de observación solar directa y consagrada con una ofrenda basal de siete efigies de arcilla."
   },
   {
-    id: 'equinoccio-solar',
-              bannerImage: '/assets/maya/infographic_m6/banner_escritura-jeroglificos-maya.webp',
-    title: 'El Fenómeno del Equinoccio',
-    color: '#FFC400',
-    btnImage: '/assets/maya/infographic_m6/btn_equinoccio-solar.jpg',
-    image: '/assets/maya/infographic_m6/hero_equinoccio-solar.jpg',
-    content: [
-      'El espectáculo más impresionante del Templo de las Siete Muñecas ocurre durante los equinoccios de primavera y otoño, el veinte de marzo y el veintidós de septiembre. Mientras el sol comienza a asomarse por el horizonte oriental, la esfera brillante aparece en el centro de la puerta del este del templo. La luz penetra directamente por la entrada y cruza todo el edificio.',
-      'Para lograr este efecto visual, los arquitectos mayas tuvieron que alinear el edificio de una forma precisa. Un equinoccio es el momento en que el sol sale por el punto cardinal este. Se pone por el punto cardinal oeste, haciendo que el día y la noche duren lo mismo en todo el planeta.',
-      '¿Por qué molestarse en hacer este truco de luz? Para los antiguos mayas, este no era un simple espectáculo de luces, era el momento en el que lo divino se conectaba con la humanidad. El equinoccio de primavera marcaba un punto crucial en el calendario agrícola: el momento de preparar la tierra para la siembra antes de la temporada de lluvias.',
-      'El fenómeno es tan exacto que miles de personas se congregan cada año en Dzibilchaltún solo para ser testigos de este evento. Cuando el sol se eleva y su luz intensa se enmarca en las puertas cuadradas, la multitud suele guardar silencio o tocar instrumentos antiguos. Es una experiencia que te hace sentir conectado con la inteligencia de los astrónomos.',
-      'Lo más extraordinario de esta alineación es que no solo depende del edificio, sino del horizonte plano de Yucatán. Como la península no tiene montañas grandes que bloqueen la vista del sol, los mayas podían observar la salida del sol en su punto más bajo. Los arqueólogos modernos utilizan herramientas láser para medir estas alineaciones hoy en día.'
+    "id": "equinoccio-solar",
+    "bannerImage": "/assets/maya/infographic_m6/banner_escritura-jeroglificos-maya.webp",
+    "title": "El Fenómeno del Equinoccio",
+    "color": "#FFC400",
+    "btnImage": "/assets/maya/infographic_m6/btn_equinoccio-solar.jpg",
+    "image": "/assets/maya/infographic_m6/hero_equinoccio-solar.jpg",
+    "content": [
+      "El Templo de las Siete Muñecas es el epicentro de uno de los acontecimientos arqueoastronómicos más sobrecogedores y precisos de la América prehispánica. Dos veces al año, durante los amaneceres de los equinoccios de primavera (21 de marzo) y de otoño (21 al 23 de septiembre), el Sol naciente protagoniza una sincronización óptica perfecta con la arquitectura del monumento que congrega a miles de espectadores en la península de Yucatán.",
+      "Conforme el disco solar emerge sobre la línea horizontal de la selva baja en el horizonte oriental, sus primeros rayos atraviesan con precisión milimétrica la puerta este del templo, cruzan la cámara central abovedada y salen por la puerta oeste proyectándose hacia el exterior. Durante un lapso de varios minutos, el vano de la entrada principal queda completamente saturado por una esfera resplandeciente de fuego solar dorado que parece quedar atrapada dentro del templo de piedra.",
+      "Para los espectadores congregados a cientos de metros al poniente, sobre la amplia calzada del sacbé procesional, el efecto visual es prodigioso: el santuario entero parece incendiarse desde dentro, transformándose en una colosal linterna cósmica que anuncia el instante exacto en que el día y la noche alcanzan la misma duración temporal de doce horas en todo el planeta Tierra.",
+      "En la cosmovisión maya, este evento marcaba el triunfo absoluto del dios solar Kinich Ahau sobre las fuerzas tenebrosas del inframundo nocturno. El astro rey hacía su entrada triunfal a través de la casa de las deidades para bendecir las labores agrícolas del pueblo maya. La luz que bañaba el sacbé blanco guiaba la energía vital del Sol hacia el centro de la ciudad, inaugurando oficialmente el ciclo estacional de preparación de la milpa para la siembra primaveral.",
+      "Los cálculos astronómicos requeridos para diseñar este efecto exigieron una rigurosa nivelación topográfica del terreno kárstico y la determinación exacta del punto de orto solar equinoccial (azimut de 90 grados). Los arquitectos de Dzibilchaltún calcularon la altura precisa de la plataforma basal para que el dosel de la vegetación selvática no obstruyera la trayectoria horizontal del haz de luz, demostrando un dominio formidable de la óptica geométrica natural."
     ],
-    expandables: [
-      { label: 'La Importancia Agrícola', icon: 'clock', text: 'En una región donde las estaciones no están marcadas por la nieve o el frío extremo, sino por los periodos de lluvia y sequía, saber exactamente en qué día del año estás es asunto de vida o muerte. Si un agricultor sembraba su maíz antes de tiempo, las semillas se secarían; si lo hacía demasiado tarde, las lluvias inundarían los brotes. El templo del equinoccio les garantizaba que su reloj agrícola no se desfasara jamás.' },
-      { label: 'Un Espectáculo Efímero', icon: 'clock', text: 'El paso de la luz a través del templo durante el equinoccio dura apenas unos cuantos minutos. El sol se mueve rápidamente por el cielo al amanecer, y casi tan pronto como se alinea perfectamente con ambas puertas, continúa su ascenso, y el rayo de luz deja de atravesar directamente el centro. Es un momento fugaz que requería que los sacerdotes estuvieran atentos y listos en el instante preciso.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Para presenciar en su máximo esplendor el fenómeno del equinoccio solar en Dzibilchaltún, los visitantes deben ingresar al sitio arqueológico alrededor de las 05:30 horas de la madrugada, antes de que aclare el cielo, colocándose sobre el eje central del Sacbé 1 para ver brotar la luz del Sol a través de las puertas del templo a las 06:15 horas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La orientación del eje visual del Templo de las Siete Muñecas coincide con el punto de orto solar con una desviación menor a 0.25 grados respecto al equinoccio astronómico verdadero. Esta exactitud elimina cualquier hipótesis de alineación aleatoria y prueba la existencia de observaciones horizonales continuadas durante décadas."
+      }
     ],
-    fact: 'El equinoccio no es el único evento que se observa aquí. Debido a la forma en que los mayas entendían el tiempo como un ciclo interminable y sagrado, cada equinoccio (primavera y otoño) era celebrado con rituales específicos, ofrendas de incienso de copal, música de caracolas marinas y ceremonias para asegurar que el universo siguiera funcionando de manera equilibrada y armónica.'
+    "fact": "Durante los amaneceres de los equinoccios de primavera y otoño, el disco solar emerge por el horizonte este y penetra limpiamente por las puertas alineadas del Templo de las Siete Muñecas, proyectando un haz de luz dorada a lo largo del Sacbé 1 con una exactitud de azimut astronómico de 90 grados, confirmando la formidable destreza de la arquitectura astronómica e ingeniería óptica desarrollada por los constructores mayas clásicos."
   },
   {
-    id: 'solsticio-alineacion',
-              bannerImage: '/assets/maya/infographic_m6/banner_glifos-modernos.webp',
-    title: 'Los Solsticios: Las Otras Fechas',
-    color: '#00B8D4',
-    btnImage: '/assets/maya/infographic_m6/btn_solsticio-alineacion.jpg',
-    image: '/assets/maya/infographic_m6/hero_solsticio-alineacion.jpg',
-    content: [
-      'Si el Templo de las Siete Muñecas solo funcionara en los equinoccios, ya sería un logro impresionante. Sin embargo, los astrónomos mayas fueron mucho más ambiciosos. El edificio está diseñado para marcar cuatro fechas críticas del movimiento solar a lo largo del año. Además de los equinoccios, la estructura interactúa con los solsticios.',
-      'Durante el solsticio de verano, el día más largo del año en el hemisferio norte, si te pones frente al templo verás que el sol no se alinea con la puerta central. Parece salir por una de las esquinas del techo del edificio. Los ángulos de la base y las esquinas fueron calculados para que sirvieran como mirillas.',
-      'Piensa en el edificio como un observatorio de piedra gigantesco. Nosotros usamos telescopios con lentes de cristal montados sobre ejes robóticos que giran para seguir las estrellas. Los mayas utilizaron el horizonte, la línea de visión y las aristas inamovibles de sus edificios para rastrear los astros.',
-      'El solsticio de invierno marca el día más corto del año, el momento en el que el sol parece detenerse en el cielo antes de comenzar a regresar hacia el norte. En este día, otra esquina del templo entra en juego, alineándose con los últimos rayos del sol poniente.',
-      'La capacidad de registrar con tal exactitud los solsticios y equinoccios permitía a los gobernantes mayas sincronizar sus calendarios. Poseer este conocimiento era considerado un poder divino. El gobernante que podía predecir dónde saldría el sol demostraba a su pueblo que tenía el favor cósmico.'
+    "id": "solsticio-alineacion",
+    "bannerImage": "/assets/maya/infographic_m6/banner_glifos-modernos.webp",
+    "title": "Los Solsticios: Las Otras Fechas",
+    "color": "#00B8D4",
+    "btnImage": "/assets/maya/infographic_m6/btn_solsticio-alineacion.jpg",
+    "image": "/assets/maya/infographic_m6/hero_solsticio-alineacion.jpg",
+    "content": [
+      "Aunque el fenómeno del equinoccio es el más famoso y promocionado a nivel turístico, las investigaciones arqueoastronómicas multidisciplinarias han demostrado que el Templo de las Siete Muñecas formaba parte de un complejo observacional mucho más vasto que registraba otras efemérides cardinales del año solar: los solsticios de verano y de invierno, así como los días del paso cenital del astro diurno.",
+      "Los estudios de campo dirigidos por arqueoastrónomos como Franz Tichy y Anthony Aveni revelaron que las diagonales trazadas a través de las esquinas exteriores del edificio y las ventanas laterales no eran simples elementos ornamentales. Durante el solsticio de verano (21 de junio), cuando el Sol alcanza su posición de salida más septentrional en el horizonte, los rayos matutinos penetran en ángulo rasante por la ventana nororiental del santuario, iluminando el altar interior.",
+      "De manera complementaria, en el solsticio de invierno (21 de diciembre), cuando el Sol nace en su punto más meridional sobre el horizonte, la luz solar se proyecta a través de la ventana suroriental, creando un patrón de iluminación diagonal inverso sobre los muros estucados. De esta forma, el templo funcionaba como un dial o tablero astronómico integral capaz de calibrar el avance continuo del Sol entre sus dos límites extremos de declinación boreal y austral.",
+      "Asimismo, los arqueólogos descubrieron en la gran explanada una serie de estelas lisas y basamentos de piedra que actuaban como marcadores de mira lejanos al ser observados desde la plataforma del templo. La alineación con estos monolitos marcaba intervalos de 73 días y 65 días antes y después de los solsticios, subdivisiones aritméticas exactas vinculadas de forma directa con la estructura del calendario sagrado Tzolk'in de 260 días (4 × 65 = 260).",
+      "Esta pluralidad de alineaciones astronómicas demuestra que el edificio no era un monumento diseñado para un solo día festivo al año, sino una estación científica permanente de colimación solar. Los sabios mayas de Dzibilchaltún monitoreaban cotidianamente el desplazamiento del punto de salida del Sol a lo largo del horizonte oriental para mantener actualizado el calendario agrícola de toda la región norte de Yucatán."
     ],
-    expandables: [
-      { label: 'El Concepto de Tiempo Cíclico', icon: 'atom', text: 'Nosotros a menudo imaginamos el tiempo como una línea recta que va desde el pasado hacia el futuro. Los mayas, por otro lado, veían el tiempo como una serie de ciclos interminables en forma de engranajes interconectados. Los movimientos del sol, marcados por el Templo de las Siete Muñecas, eran la demostración visible de que los engranajes cósmicos giraban correctamente, repitiendo patrones sagrados una y otra vez eternamente.' },
-      { label: 'Precisión Arquitectónica', icon: 'clock', text: 'Para que las esquinas y los vanos de un edificio se alineen con el sol durante todo el año, la plataforma base debe estar perfectamente nivelada. Los arqueólogos han descubierto que los mayas usaron sofisticados niveles hechos de agua contenida en canales estrechos, permitiéndoles construir bases kilométricas que no variaban ni un par de centímetros de elevación. ¡Una hazaña tecnológica extraordinaria!' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Al pararse de espaldas al Templo de las Siete Muñecas durante el atardecer del solsticio de invierno, la sombra proyectada por la torre central se estira de manera monumental a lo largo de los casi 500 metros del sacbé empedrado, apuntando como una flecha oscura directa hacia el centro ceremonial del palacio principal."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El intervalo temporal de 73 días resultante de las líneas de mira solsticiales en Dzibilchaltún posee un valor matemático clave en Mesoamérica: 73 es el factor exacto que conmensura el Tzolk'in de 260 días con el Haab' de 365 días en la Rueda Calendárica de 52 años (73 × 260 = 52 × 365 = 18,980 días)."
+      }
     ],
-    fact: 'El estudio de estas alineaciones se llama Arqueoastronomía, una fascinante mezcla entre arqueología y astronomía. Los investigadores utilizan modelos informáticos tridimensionales del terreno de Dzibilchaltún y del cielo estrellado antiguo para confirmar que, hace más de mil años, el sol realmente salía exactamente en los puntos marcados por las esquinas del templo, demostrando que nada en su arquitectura era al azar.'
+    "fact": "El diseño geométrico del Templo de las Siete Muñecas incorpora líneas de mira diagonales a través de sus ventanas laterales que enmarcan las salidas del Sol en los solsticios de verano e invierno, subdividiendo el año solar en múltiplos de 65 y 73 días congruentes con la matemática de la Rueda Calendárica."
   },
   {
-    id: 'sacbe-procesional',
-              bannerImage: '/assets/maya/infographic_m6/banner_inscripciones-palenque.webp',
-    title: 'El Sacbé: El Camino Blanco',
-    color: '#FFE0B2',
-    btnImage: '/assets/maya/infographic_m6/btn_sacbe-procesional.jpg',
-    image: '/assets/maya/infographic_m6/hero_sacbe-procesional.jpg',
-    content: [
-      'Imagina una supercarretera elevada, recta y cubierta con un estuco blanco que resplandece bajo la luz de la luna. Esto es un "sacbé", que en idioma maya significa camino blanco. En Dzibilchaltún, el sacbé más importante es una calzada que conecta el Templo de las Siete Muñecas con el majestuoso Cenote Xlakah.',
-      'Construir un sacbé no era una tarea sencilla; era un proyecto colosal de ingeniería pública. Los trabajadores mayas rellenaban el terreno irregular de la selva con toneladas de rocas, creando una base sólida y elevada. Luego, nivelaban la superficie con grava y la cubrían con una espesa capa de estuco hecho a base de piedra caliza.',
-      'El sacbé no estaba diseñado simplemente para caminar más rápido de un lugar a otro. Era, sobre todo, una ruta procesional. Durante los días del equinoccio o las grandes festividades agrícolas, los sacerdotes y gobernantes caminaban a lo largo de este camino blanco. Largas filas de dignatarios tocando tambores y quemando incienso.',
-      'La alineación del sacbé también es clave. No es una simple línea trazada al azar; el camino actúa como un eje que une el templo con el cenote que almacena el agua vital. Así, el camino blanco conectaba el inframundo con la superficie de los hombres y los movimientos celestes.',
-      'Hoy en día, puedes caminar a lo largo del mismo sacbé por el que transitaban los reyes mayas. Aunque el estuco blanco se ha perdido en su mayor parte debido a la erosión de los siglos, la base elevada de piedra permanece firme. Caminar por esta vía milenaria es una experiencia evocadora.'
+    "id": "sacbe-procesional",
+    "bannerImage": "/assets/maya/infographic_m6/banner_inscripciones-palenque.webp",
+    "title": "El Sacbé: El Camino Blanco",
+    "color": "#FFE0B2",
+    "btnImage": "/assets/maya/infographic_m6/btn_sacbe-procesional.jpg",
+    "image": "/assets/maya/infographic_m6/hero_sacbe-procesional.jpg",
+    "content": [
+      "Uno de los elementos urbanos y ceremoniales más imponentes de Dzibilchaltún es el denominado Sacbé 1, una colosal calzada elevada de mampostería de piedra que une de forma rectilínea el Templo de las Siete Muñecas en el extremo oriental con el núcleo monumental de la Plaza Mayor en el poniente. El vocablo maya «sacbé» (plural sacbeob) se compone de las raíces sac (blanco) y bé (camino), aludiendo al brillante pavimento de estuco de cal con el que estaban recubiertas estas vías.",
+      "El Sacbé 1 mide aproximadamente 480 metros de longitud rectilínea ininterrumpida y alcanza un ancho promedio de entre 8 y 10 metros, elevándose más de un metro sobre el nivel del terreno selvático circundante mediante muros de contención construidos con bloques labrados de piedra caliza. El núcleo del camino fue rellenado con miles de toneladas de piedras toscas y cascajo, sellado en su superficie superior por una gruesa capa de sascab compactado con rodillos de madera.",
+      "Lejos de ser un simple sendero de tránsito peatonal para el comercio cotidiano, el Sacbé 1 operaba como una monumental pista procesional y como una línea de colimación óptica astronómica. Su trazado rigurosamente horizontal y recto permitía a los sacerdotes y fieles mantener una perspectiva visual despejada del Templo de las Siete Muñecas a lo largo de casi medio kilómetro de distancia, amplificando el impacto visual de los fenómenos solares.",
+      "Durante las festividades religiosas de los equinoccios, solemnes procesiones encabezadas por el Halach Uinic, sacerdotes ataviados con plumas de quetzal y músicos que ejecutaban trompetas de caracol marino desfilaban lentamente por el Sacbé 1. Conforme la luz del Sol naciente emergía del templo en el este, la multitud avanzaba en sentido inverso hacia el poniente, llevando metafóricamente la bendición solar hacia los palacios gubernamentales de la ciudad.",
+      "Los sacbeob de Dzibilchaltún simbolizaban también la unificación política y territorial del reino. Al conectar grupos arquitectónicos distantes construidos en distintas épocas, las calzadas blancas actuaban como arterias físicas que integraban a los diferentes linajes nobles bajo una autoridad centralizada, facilitando a la vez el movimiento rápido de tropas defensivas y el acarreo de mercancías tributarias desde las áreas residenciales periféricas."
     ],
-    expandables: [
-      { label: 'Las "Carreteras" Nocturnas', icon: 'clock', text: 'El estuco blanco del sacbé tenía una función práctica fantástica: reflejaba intensamente la luz de la luna. Antes de que existiera la electricidad, viajar de noche en la selva oscura y densa era muy peligroso. Los caminos blancos de los mayas, sin embargo, brillaban tenuemente bajo el resplandor lunar, permitiendo que los viajeros comerciales y mensajeros navegaran con seguridad entre ciudades conectadas, como si caminaran sobre una pista fosforescente.' },
-      { label: 'La Red Regional', icon: 'clock', text: 'Dzibilchaltún no era la única ciudad con estas vías. Por todo el mundo maya existía una inmensa red de sacbeob (plural de sacbé). Algunos, como el famoso sacbé que une Cobá con Yaxuná, medían más de cien kilómetros de longitud. Eran las súper-autopistas del mundo antiguo, demostrando que las diferentes capitales mayas mantenían un contacto constante, comerciando bienes, conocimientos y estableciendo alianzas poderosas.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Por las noches de luna llena, el acabado de estuco de cal blanca pulida de los sacbeob reflejaba la luz plateada de la Luna con tanta intensidad que los habitantes mayas podían caminar a lo largo de las calzadas a oscuras a través de la selva sin necesidad de encender antorchas para alumbrar sus pasos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los análisis de ingeniería vial prehispánica realizados por el INAH en el Sacbé 1 revelaron que la calzada cuenta con un ligero declive lateral de 1.5 grados en sus bordes exteriores, diseñado como un eficiente sistema de drenaje pluvial para evitar que los encharcamientos destruyeran la superficie de sascab durante los huracanes veraniegos."
+      }
     ],
-    fact: 'El esfuerzo físico para construir el sacbé fue inmenso, especialmente considerando que los mayas no usaban animales de carga como caballos o bueyes, ni tampoco vehículos con ruedas para el transporte. Cada piedra, cada cesta de grava y cada kilo de estuco fue transportado sobre las espaldas y hombros de los trabajadores humanos a lo largo de incontables meses de ardua labor colectiva.'
+    "fact": "El Sacbé 1 de Dzibilchaltún constituye una avenida ceremonial elevada de 480 metros de largo por 10 metros de ancho pavimentada con caliza y sascab blanco, construida con una rectitud topográfica milimétrica para enlazar el Templo de las Siete Muñecas con la Plaza Mayor y canalizar la visión del equinoccio solar."
   },
   {
-    id: 'cenote-xlakah',
-              bannerImage: '/assets/maya/infographic_m6/banner_landa-destruccion.webp',
-    title: 'Cenote Xlakah: El Portal de Agua',
-    color: '#0097A7',
-    btnImage: '/assets/maya/infographic_m6/btn_cenote-xlakah.jpg',
-    image: '/assets/maya/infographic_m6/hero_cenote-xlakah.jpg',
-    content: [
-      'En el extremo opuesto del sacbé principal nos encontramos con el Cenote Xlakah, una maravilla natural que fue el corazón de agua de Dzibilchaltún. Un cenote es un pozo o cueva inundada que se forma cuando el techo de piedra caliza de un río subterráneo se derrumba. Xlakah es uno de los cenotes a cielo abierto más grandes de la región.',
-      'El cenote es un gigante silencioso: su superficie parece tranquila, cubierta en las orillas por hermosos lirios acuáticos, pero sus profundidades son impresionantes. Alcanza más de cuarenta metros de profundidad, hundiéndose en un túnel oscuro. Durante miles de años, esta fue la fuente inagotable de agua dulce para decenas de miles de habitantes.',
-      'Para los antiguos mayas, un cenote no era solamente un tanque de agua; era un portal sagrado. Ellos creían en un universo dividido en tres niveles: los cielos, la tierra de los vivos y el inframundo oscuro. Los cenotes eran las entradas directas a este mundo subterráneo, el hogar de Chaac, el dios de la lluvia.',
-      'Los arqueólogos han buceado en las misteriosas profundidades de Xlakah y han realizado descubrimientos que te dejarán sin aliento. En el fondo cubierto de lodo, han encontrado más de treinta mil artefactos. Entre ellos hay cántaros enteros que mujeres y niños dejaron caer al sacar agua. Pero también hallaron ofrendas intencionales.',
-      'Hoy en día, el Cenote Xlakah es un ecosistema vibrante. Hasta hace poco tiempo, los visitantes del sitio arqueológico podían nadar en sus frescas aguas después de explorar las ruinas. Aunque las reglas de conservación cambian, el cenote sigue siendo un recordatorio de que las grandes civilizaciones dependen de su entorno natural.'
+    "id": "cenote-xlakah",
+    "bannerImage": "/assets/maya/infographic_m6/banner_landa-destruccion.webp",
+    "title": "Cenote Xlakah: El Portal de Agua",
+    "color": "#0097A7",
+    "btnImage": "/assets/maya/infographic_m6/btn_cenote-xlakah.jpg",
+    "image": "/assets/maya/infographic_m6/hero_cenote-xlakah.jpg",
+    "content": [
+      "En el corazón geográfico y espiritual del centro monumental de Dzibilchaltún se encuentra el majestuoso Cenote Xlakah, una de las dolinas kársticas a cielo abierto más profundas e importantes de toda la península de Yucatán. Su nombre en maya significa literalmente «pueblo viejo» (de xla', viejo o antiguo; y kah, pueblo o comunidad), lo que evidencia el carácter ancestral que los habitantes originarios otorgaban a este cuerpo acuífero natural.",
+      "El cenote presenta una forma ovalada en su superficie de aproximadamente 100 metros de longitud por 40 metros de anchura, con aguas cristalinas de tonalidad azul turquesa. Su profundidad comienza con una orilla somera de un metro de fondo y desciende de forma empinada y vertiginosa hacia el oriente, abriéndose en una gigantesca caverna sumergida horizontal que alcanza más de 44 metros de profundidad explorada por buzos profesionales sin llegar a su fondo final.",
+      "En una región como el norte de Yucatán, totalmente desprovista de ríos o arroyos superficiales debido a la permeabilidad de la plataforma caliza, el Cenote Xlakah fue la causa primordial que posibilitó el florecimiento y sostenimiento de más de 25,000 habitantes urbanos durante dos milenios continuos. Era la fuente inagotable de agua dulce potable para la población y el santuario central para el culto al dios de la lluvia Chaac.",
+      "Entre 1957 y 1959, la National Geographic Society y la Universidad de Tulane financiaron expediciones pioneras de arqueología subacuática en las profundidades del cenote, dirigidas por buzos de la marina estadounidense y arqueólogos mexicanos. Utilizando mangueras de succión de aire y tanques de buceo, los exploradores recuperaron del sedimento sumergido más de 30,000 artefactos arqueológicos intactos de incalculable valor histórico.",
+      "Entre los hallazgos subacuáticos destacan miles de vasijas de cerámica polícroma ceremonial, flautas de barro, collares de cuentas de jade verde, huesos humanos y animales con inscripciones jeroglíficas incisas y agujas ceremoniales de espina de mantarraya. Estos objetos fueron ofrendados a lo largo de siglos por los peregrinos que arrojaban dones preciosos a las aguas sagradas para pedir a los dioses del inframundo lluvias abundantes y salud para sus cosechas de maíz."
     ],
-    expandables: [
-      { label: 'Ecosistema Único', icon: 'atom', text: 'Los cenotes como Xlakah tienen una biología especial. Al estar aislados y formados por aguas filtradas a través de kilómetros de roca caliza, albergan especies de plantas y peces que a menudo son endémicas, lo que significa que no existen en ningún otro lugar del planeta. Algunas de estas especies de peces ciegos se han adaptado a vivir exclusivamente en las partes más oscuras y cavernosas del sistema subterráneo.' },
-      { label: 'La Flor de Loto Maya', icon: 'clock', text: 'En la superficie del cenote florecen lirios acuáticos blancos y amarillos, una flor sagrada en el arte maya. En las pinturas murales y las cerámicas antiguas, a menudo se dibuja a los reyes y deidades usando tocados adornados con estas flores o emergiendo de ellas, simbolizando la vida pura que brota desde el acuático inframundo hacia la luz dorada del sol.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En las aguas transparentes del Cenote Xlakah habita una pequeña especie de pez endémico sumamente raro y adaptado a las aguas kársticas de Yucatán: la dama blanca ciega (*Typhliasina pearsei*), un pez de color lechoso y sin ojos funcionales que habita en los rincones más profundos y oscuros de la caverna sumergida."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La exploración con sónar y buceo espeleológico en Cenote Xlakah confirmó que la galería sumergida se conecta con una intrincada red de ríos subterráneos freáticos que fluyen hacia el mar Caribe y el Golfo de México, alimentada por el gigantesco anillo de cenotes asociado al cráter de impacto de Chicxulub."
+      }
     ],
-    fact: 'Durante las expediciones subacuáticas patrocinadas por la National Geographic en los años cincuenta, los buzos tuvieron enormes problemas para excavar el fondo del Cenote Xlakah. La visibilidad era casi nula debido al sedimento fino. La profundidad extrema causó que los buzos experimentaran descompresión y narcosis por nitrógeno, arriesgando literalmente sus vidas para rescatar las reliquias de jade de los antiguos mayas sumergidas en el barro negro.'
+    "fact": "El Cenote Xlakah posee una cuenca abierta de 100 por 40 metros que desciende a más de 44 metros de profundidad sumergida, de donde expediciones de la National Geographic Society y el INAH rescataron más de 30,000 ofrendas mayas prehispánicas de cerámica polícroma, jade y huesos tallados, consolidándolo como uno de los reservorios arqueológicos subacuáticos más fecundos y determinantes de la civilización maya."
   },
   {
-    id: 'restauracion-moderna',
-              bannerImage: '/assets/maya/infographic_m6/banner_legado-escritura-maya.webp',
-    title: 'La Restauración Moderna',
-    color: '#2E7D32',
-    btnImage: '/assets/maya/infographic_m6/btn_restauracion-moderna.jpg',
-    image: '/assets/maya/infographic_m6/hero_restauracion-moderna.jpg',
-    content: [
-      'El Dzibilchaltún que vemos hoy, con sus plazas limpias y el imponente Templo de las Siete Muñecas destacando bajo el cielo azul, es el resultado de décadas de trabajo de arqueólogos e ingenieros modernos. Entre los años mil novecientos cincuenta y seis y mil novecientos sesenta y cinco, el arqueólogo E. Wyllys Andrews IV lideró un proyecto masivo de exploración y restauración.',
-      'Restaurar una ruina maya es como armar un rompecabezas gigante y complejo, pero sin tener la imagen de la caja. A lo largo de los siglos, las raíces de los árboles separaron los bloques de piedra, mientras que la erosión colapsó los techos. Los equipos tuvieron que desenterrar las piedras caídas y numerar minuciosamente cada bloque.',
-      'Uno de los debates más intensos en la arqueología es cuánto se debe reconstruir. El Instituto Nacional de Antropología e Historia aplica rigurosos estándares de conservación en Dzibilchaltún. El objetivo no es construir un edificio nuevo, sino estabilizar las ruinas originales para que no sigan deteriorándose.',
-      'Hoy, Dzibilchaltún es mucho más que un montón de rocas antiguas; es un centro educativo. El sitio cuenta con el Museo del Pueblo Maya, que exhibe los tesoros de jade y cerámica rescatados de las tumbas y el cenote. Además, cuenta la historia ininterrumpida de los mayas desde la prehistoria hasta las comunidades actuales.',
-      'El esfuerzo por proteger y estudiar Dzibilchaltún continúa todos los días. Las lluvias ácidas, la vegetación y el impacto de miles de pisadas turísticas amenazan constantemente las frágiles estructuras de piedra caliza. Cada vez que visitas un sitio como este, te conviertes en parte de la tarea de conservación.'
+    "id": "restauracion-moderna",
+    "bannerImage": "/assets/maya/infographic_m6/banner_legado-escritura-maya.webp",
+    "title": "La Restauración Moderna",
+    "color": "#2E7D32",
+    "btnImage": "/assets/maya/infographic_m6/btn_restauracion-moderna.jpg",
+    "image": "/assets/maya/infographic_m6/hero_restauracion-moderna.jpg",
+    "content": [
+      "La recuperación científica y la restauración arquitectónica de Dzibilchaltún constituyen un hito fundamental en los anales de la arqueología moderna mesoamericana. A mediados del siglo XX, el Templo de las Siete Muñecas no era visible como la elegante torre transparente que contemplamos hoy en día; en su lugar, se erguía una informe colina de escombros de piedra y tierra cubierta por la densa maleza espinosa de la selva yucateca.",
+      "A partir de 1956, el Instituto Nacional de Antropología e Historia (INAH) de México y el Instituto de Investigaciones Mesoamericanas (MARI) de la Universidad de Tulane, bajo el liderazgo del eminente arqueólogo E. Wyllys Andrews IV, iniciaron un ambicioso proyecto de excavación a gran escala. Al desmantelar metódicamente los restos derrumbados de la pirámide exterior del Posclásico, los especialistas descubrieron con asombro la Estructura 1-sub intacta en su interior.",
+      "El proceso de anastilosis y consolidación estructural demandó años de laboriosa ingeniería. Cada sillar de piedra caliza desplomado fue codificado, catalogado y recolocado en su posición original utilizando morteros compatibles a base de cal apagada y sascab para no alterar la porosidad de la roca original. Asimismo, se reforzaron las bóvedas mayas superiores y se reconstruyeron los vanos de las cuatro fachadas para devolverles su funcionalidad astronómica original.",
+      "Fue durante estas meticulosas labores de campo cuando los investigadores descubrieron con sorpresa la alineación del fenómeno del equinoccio. Al limpiar los vanos oriental y occidental y despejar el trazado del Sacbé 1, los arqueólogos presenciaron al amanecer cómo el disco del Sol naciente se posicionaba en el centro geométrico exacto de las puertas del templo, confirmando que la arquitectura maya obedecía a rigurosos planos arqueoastronómicos.",
+      "En la actualidad, Dzibilchaltún cuenta con el moderno Museo del Pueblo Maya, administrado por el INAH, que resguarda las siete muñecas originales de arcilla, estelas glíficas y tesoros extraídos del Cenote Xlakah. El sitio permanece como un laboratorio vivo de investigación y un destino cultural de primer nivel donde la ciencia contemporánea dialoga cotidianamente con la milenaria sabiduría cósmica de los constructores originarios de Yucatán."
     ],
-    expandables: [
-      { label: 'Un Arqueólogo Entregado', icon: 'clock', text: 'E. Wyllys Andrews IV dedicó gran parte de su carrera profesional y pasión personal a Dzibilchaltún. Su trabajo fue tan extenso y metódico que reescribió los libros de historia sobre cuándo y cómo comenzó la civilización en la parte norte de la península. Curiosamente, su hijo, E. Wyllys Andrews V, también se convirtió en un destacado arqueólogo especializado en el mundo maya, continuando el legado familiar de descubrimiento.' },
-      { label: 'El Desafío del Estuco', icon: 'clock', text: 'Originalmente, casi todos los edificios mayas estaban recubiertos con una gruesa capa de estuco liso y pintados de colores brillantes, principalmente rojo carmesí. Hoy en día, los restauradores raramente intentan replicar este estuco pintado. Prefieren dejar la piedra desnuda, parcialmente porque recrear la pintura exacta es casi imposible. Porque la imagen moderna de ruinas de piedra gris se ha convertido en el estándar visual que el público espera encontrar, aunque los edificios antiguos fueran mucho más coloridos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante los trabajos de consolidación de la torre en la década de 1960, los arqueólogos tuvieron que diseñar un discreto sistema de tirantes internos de acero inoxidable ocultos dentro del mortero de cal para sostener las pesadas jambas de piedra de las ventanas sin alterar la apariencia visual prehispánica del monumento."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los levantamientos tridimensionales mediante tecnología de fotogrametría digital con drones realizados por el INAH han creado una réplica virtual milimétrica de la Estructura 1-sub, permitiendo a astrónomos de cualquier parte del mundo simular la trayectoria del Sol en cualquier fecha del año mediante computadoras."
+      }
     ],
-    fact: 'Aunque el sitio arqueológico es enorme, se estima que menos del cinco por ciento del total de los ocho mil cuatrocientos edificios detectados en Dzibilchaltún han sido excavados y consolidados de manera formal. Esto significa que la gran mayoría de la antigua ciudad y sus secretos siguen escondidos de manera segura bajo nuestros pies, durmiendo pacíficamente bajo la sombra verde de la selva yucateca, esperando pacientemente a los arqueólogos del futuro.'
+    "fact": "La restauración científica del Templo de las Siete Muñecas por el INAH y la Universidad de Tulane (1956-1965) rescató la Estructura 1-sub sepultada bajo una pirámide posterior colapsada, reintegrando sus muros mediante anastilosis y redescubriendo empíricamente el fenómeno de alineación equinoccial."
   }
 ];
 

@@ -108,145 +108,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'edzna-ciudad',
-              bannerImage: '/assets/maya/infographic_m14/banner_edzna-ciudad.webp',
-    title: 'La Ciudad',
-    color: '#8D6E63',
-    btnImage: '/assets/maya/infographic_m14/btn_edzna-ciudad.jpg',
-    image: '/assets/maya/infographic_m14/hero_edzna-ciudad.jpg',
-    content: [
-      'Imagina que estás construyendo una ciudad de bloques gigante en medio de una selva espesa. Así es Edzná, una antigua metrópoli construida por los mayas en lo que hoy es Campeche, México. Su nombre significa "La Casa de los Itzáes". Esta familia gobernó la región durante cientos de años. Esta ciudad estuvo llena de vida desde el 600 a.C. hasta el 1500 d.C.',
-      'A diferencia de donde vives, en Edzná no había ríos naturales cercanos para obtener agua potable. Los mayas diseñaron un sofisticado sistema hidráulico. Crearon una enorme red de canales y embalses artificiales para capturar y distribuir la lluvia. Transformaron un terreno salvaje en un paraíso donde el agua fluía de forma controlada.',
-      'Piensa en la metrópoli como si fuera un embudo inteligente. Los arquitectos mayas construyeron plazas y plataformas con una inclinación sutil. Cuando llovía, esa pendiente obligaba al agua a correr hacia canales subterráneos y grandes depósitos. Gracias a esta planificación, la ciudad sobrevivía durante los meses secos.',
-      'Además de su manejo acuático, Edzná estaba decorada con plazas hermosas, estelas de piedra y pirámides imponentes. Era una ciudad que conectaba el suelo fértil con los misterios celestiales. La vida diaria combinaba mercados, ceremonias religiosas y un trabajo meticuloso de observación astronómica.',
-      'El núcleo urbano era la acrópolis central, una inmensa plataforma elevada donde descansaban los edificios principales. Hoy, al observar las ruinas blancas, puedes sentir la grandeza de los arquitectos que construyeron maravillas. Cada piedra guarda un mensaje sobre cómo los mayas entendían su cosmos.'
+    "id": "edzna-ciudad",
+    "bannerImage": "/assets/maya/infographic_m14/banner_edzna-ciudad.webp",
+    "title": "La Ciudad",
+    "color": "#8D6E63",
+    "btnImage": "/assets/maya/infographic_m14/btn_edzna-ciudad.jpg",
+    "image": "/assets/maya/infographic_m14/hero_edzna-ciudad.jpg",
+    "content": [
+      "Emplazada en una amplia cuenca sedimentaria del estado de Campeche, la metrópoli maya de Edzná —cuyo nombre en maya yucateco traduce tradicionalmente «Casa de los Itzáes» o «Casa de los Gestos»— representa uno de los logros más deslumbrantes de la ingeniería y la arquitectura mesoamericana. Ocupada de forma continua desde el año 600 a.C. hasta el 1450 d.C., la ciudad floreció como un centro rector durante el Clásico Tardío.",
+      "La posición geopolítica de Edzná le otorgó un papel estratégico como nodo comercial y bisagra cultural entre las diversas regiones del mundo maya. En sus monumentos confluyen de manera armónica los estilos arquitectónicos Petén, con sus basamentos colosales y taludes pronunciados, Chenes, reconocible por sus fachadas de estuco ornamentadas, y Puuc, célebre por su mampostería de piedras labradas y columnillas encajadas.",
+      "El núcleo cívico y ceremonial de la urbe se organiza en torno a la Gran Plaza, una inmensa explanada abierta de más de ciento sesenta metros de longitud rodeada por estructuras monumentales como el Nohochná («La Casa Grande»), la Plataforma de los Cuchillos y la cancha del juego de pelota. Hacia el flanco oriental de esta plaza se alza la Gran Acrópolis, una terraza monumental elevada que sostiene los santuarios de la élite gobernante.",
+      "Las excavaciones arqueológicas dirigidas por investigadores como Román Piña Chán y George Andrews demostraron que la prosperidad de Edzná se cimentó en el dominio absoluto de su entorno ecológico. En un valle naturalmente propenso a severas inundaciones durante las tormentas estivales y a una sequía extrema en los meses invernales, sus pobladores transformaron el terreno hostil en un vergel agrícola de alta productividad.",
+      "Declarada zona de monumentos arqueológicos protegida por el estado mexicano, Edzná asombra a los especialistas por su perfecta integración espacial entre edificios de gobierno, santuarios religiosos y obras de infraestructura hidráulica. La urbe entera fue concebida como un organismo vivo donde la captación de aguas pluviales y la observación de los astros marchaban en íntima sincronía con la vida civil cotidiana."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Edzná alcanzó su máximo tamaño y esplendor alrededor del año 900 d.C. Alojando a más de 25,000 personas. Para alimentar a toda esta multitud, no solo bebían el agua capturada, sino que criaban peces dulces en los canales y usaban el lodo húmedo del fondo como fertilizante súper nutritivo para sus cultivos, logrando cosechas abundantes.' },
-      { label: 'Ingenio Maya', icon: 'clock', text: 'La gigantesca red de canales funcionaba también como verdaderas autopistas acuáticas. Los ciudadanos utilizaban ligeras canoas de madera para transportar pesadas cargas de comida y piedras de construcción rápidamente a través de la urbe, ahorrando muchísima energía humana en comparación con cargar todo sobre la espalda bajo el fuerte sol tropical.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El nombre jeroglífico clásico original de Edzná no era «Edzná», sino que en las estelas dinásticas del Clásico Temprano se le identifica con el topónimo de B'aknal o el Reino del Pájaro Centinela. El nombre moderno procede de relatos coloniales del siglo XVI recopilados tras la dispersión de las familias nobles itzáes por la península."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El valle de Edzná está asentado sobre una formación geológica de arcillas montmorilloníticas de drenaje lento conocidas como vertisoles. Este tipo de suelo arcilloso se expande e impermeabiliza naturalmente al absorber las primeras lluvias, una propiedad pedológica que los ingenieros mayas aprovecharon para sellar los fondos de sus canales sin mortero artificial."
+      }
     ],
-    fact: 'Durante sus 2,000 años de historia ininterrumpida, Edzná experimentó enormes cambios arquitectónicos, fusionando distintos estilos como el Petén, el Puuc y estilos tardíos. Esto nos indica que no era un pueblo aislado, sino un centro cosmopolita brillante, conectado comercialmente con lejanas capitales mayas. Sus edificios superpuestos relatan visualmente las cambiantes modas de una civilización dinámica y viva.',
+    "fact": "La Gran Plaza de Edzná abarca más de 25,000 metros cuadrados de superficie nivelada artificialmente con gravas de caliza y mortero de estuco blanco. Bajo su pavimento se diseñó una red invisible de drenes pluviales subterráneos con pendientes de 1 a 2 grados que desalojaban instantáneamente el exceso de lluvia torrencial hacia los canales agrícolas periféricos."
   },
   {
-    id: 'paso-cenital',
-              bannerImage: '/assets/maya/infographic_m14/banner_paso-cenital.webp',
-    title: 'El Paso Cenital',
-    color: '#FFD600',
-    btnImage: '/assets/maya/infographic_m14/btn_paso-cenital.jpg',
-    image: '/assets/maya/infographic_m14/hero_paso-cenital.jpg',
-    content: [
-      '¿Has notado cómo tu sombra cambia de tamaño durante el día? En la mañana es larga, al mediodía se encoge y en la tarde vuelve a estirarse. Imagina un momento celestial donde, justo al mediodía, tu sombra desaparece. Este evento se llama "paso cenital", y ocurre cuando el sol pasa directamente por encima de tu cabeza.',
-      'Piensa en una linterna que alumbra una pelota desde un lado: la pelota siempre proyecta una sombra estirada. Pero si colocas la linterna exactamente arriba, la sombra se oculta debajo. Este espectáculo no sucede en todo el mundo, solo ocurre dentro de las regiones tropicales. Las ciudades mayas prosperaron en esta franja geográfica.',
-      'Para los sacerdotes mayas, este paso cenital no era un simple truco visual. El sol alcanza el cenit exactamente dos veces al año en la región maya. Estos días sin sombra funcionaban como marcadores divinos, permitiéndoles calibrar sus calendarios con una perfección asombrosa. Era una sincronización automática de su tiempo.',
-      'Conocer la fecha exacta del paso cenital resultaba vital para los habitantes. Estos días coincidían con la llegada de las lluvias anuales y el momento idóneo para plantar el maíz. Cuando el sol quemaba en el cenit, ordenaba a los agricultores comenzar las siembras que mantendrían vivas a sus familias.',
-      'Detectar el día cenital preciso requería suma paciencia. Sin utilizar ningún telescopio moderno, poseían una agudeza visual fenomenal. Erigían postes verticales y construían pirámides que funcionaban como observatorios solares. Confirmaban matemáticamente cuándo el disco luminoso tocaba la cúspide del firmamento. Así se convirtieron en grandes astrónomos de la antigua América.'
+    "id": "paso-cenital",
+    "bannerImage": "/assets/maya/infographic_m14/banner_paso-cenital.webp",
+    "title": "El Paso Cenital",
+    "color": "#FFD600",
+    "btnImage": "/assets/maya/infographic_m14/btn_paso-cenital.jpg",
+    "image": "/assets/maya/infographic_m14/hero_paso-cenital.jpg",
+    "content": [
+      "En la latitud tropical del valle de Edzná (19° 35' de latitud norte), el Sol protagoniza un fenómeno óptico y astronómico de inmensa trascendencia física dos veces al año: el paso cenital. En estas dos jornadas señaladas, el disco solar alcanza una elevación de noventa grados exactos sobre el horizonte local al mediodía verdadero, situándose en el cenit geométrico absoluto de la bóveda celeste.",
+      "Durante el instante del cenit solar, los postes verticales, las columnas cilíndricas y las paredes perfectamente aplomadas dejan de proyectar sombra lateral alguna sobre el suelo. La luz incide perpendicularmente desde el cenit, iluminando el fondo de pozos profundos y penetrando verticalmente a través de orificios diseñados en los techos de las cámaras sagradas, creando una vivencia visual de sobrecogedora solemnidad.",
+      "En las coordenadas geográficas de Edzná, el primer paso cenital del año ocurre aproximadamente el 17 de mayo, mientras que el segundo tránsito cenital tiene lugar cerca del 26 de julio. El intervalo entre ambas fechas comprende setenta días exactos, un lapso que coincide con el núcleo más intenso de la temporada de precipitaciones pluviales estivales y con el periodo de máximo crecimiento vegetativo del maíz en la milpa.",
+      "Para los sacerdotes astrónomos de Edzná, el 17 de mayo representaba la fecha de arranque del calendario productivo y litúrgico. La desaparición de la sombra al mediodía era interpretada como el momento en que el Sol descendía físicamente a la tierra para fecundarla con su energía radiante, confirmando que la naturaleza estaba lista para recibir las semillas sagradas en los campos previamente labrados y fertilizados.",
+      "Diversos templos de la ciudad, en particular los aposentos superiores de la Gran Acrópolis, presentan alineaciones solares rigurosas orientadas hacia el acimut del mediodía cenital. La exactitud de estos registros permitía a la corte maya calibrar anualmente el calendario civil Haab' de 365 días, evitando los errores acumulativos que habrían distorsionado las fechas de siembra y recolección a lo largo de las décadas."
     ],
-    expandables: [
-      { label: 'Reloj Cósmico', icon: 'clock', text: 'A diferencia de los conocidos equinoccios, que ocurren el mismo día en todo el planeta, la fecha precisa del paso cenital cambia según la latitud de la ciudad. Cuanto más hacia el norte viajes, más tarde ocurrirá el fenómeno. Esto causaba que cada ciudad maya festejara sus mágicos "días sin sombra" en fechas diferentes, generando calendarios locales únicos.' },
-      { label: 'Magia Acuática', icon: 'atom', text: 'Durante el místico mediodía del paso cenital, si observas cuidadosamente el interior de un profundo cenote natural, el poderoso haz de luz solar ilumina el agua cristalina hasta el fondo rocoso, sin dejar ninguna esquina oscura. Los mayas celebraban cómo la energía luminosa penetraba directamente hacia el acuático inframundo subterráneo, conectando el cosmos entero.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el folclore maya yucateco tradicional, el día del paso cenital es conocido como el día del «Sol sin sombra». Los campesinos contemporáneos colocan botellas de agua o varas rectas de madera al mediodía para observar cómo la sombra desaparece bajo la base, recordando una tradición astronómica milenaria heredada de sus ancestros clásicos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El paso cenital solar no ocurre en una fecha idéntica en toda Mesoamérica, sino que varía según la latitud geográfica del observador. En Copán (14° 50' N) ocurre a finales de abril y mediados de agosto, mientras que en el norte de Yucatán (Chichén Itzá, 20° 40' N) se produce a finales de mayo y mediados de julio, avanzando como una ola geográfica hacia el norte."
+      }
     ],
-    fact: 'El alucinante paso cenital solamente puede experimentarse visualmente estando entre el Trópico de Cáncer y el Trópico de Capricornio. Fuera de esta extensa franja planetaria, como en los países europeos o norteamericanos, el Sol jamás alcanza un punto perfecto de 90 grados perpendiculares sobre nuestras cabezas. Por ello, los perplejos conquistadores europeos quedaron atónitos al atestiguar sombras que desaparecían, algo físicamente imposible en sus lejanos continentes de origen.',
+    "fact": "La separación temporal entre el primer paso cenital (17 de mayo) y el segundo paso cenital (26 de julio) en Edzná es de exactamente 70 días. El periodo complementario que transcurre desde el segundo paso cenital hasta el regreso del Sol al cenit el año siguiente dura exactamente 295 días (70 + 295 = 365 días), integrando una proporción matemática solar perfecta."
   },
   {
-    id: 'gnomon-vertical',
-              bannerImage: '/assets/maya/infographic_m14/banner_gnomon-vertical.webp',
-    title: 'El Gnomón',
-    color: '#212121',
-    btnImage: '/assets/maya/infographic_m14/btn_gnomon-vertical.jpg',
-    image: '/assets/maya/infographic_m14/hero_gnomon-vertical.jpg',
-    content: [
-      'Muchas veces, las herramientas científicas más trascendentales son también rudimentarias. Imagina que tomas un palo recto y lo entierras en la tierra. Acabas de fabricar el instrumento astronómico inicial de la humanidad: el gnomón. Aunque la palabra significa "el que comprende" en griego, para los mayas esta vara era el decodificador del universo.',
-      'El gnomón opera como el puntero de un reloj solar. Conforme la estrella avanza por el cielo, la vara proyecta una sombra que altera su longitud y dirección. Observando estos cambios, los mayas descifraron los engranajes celestiales. Aprendieron a anticipar las estaciones registrando cuán corta era la sombra al mediodía.',
-      'Durante el paso cenital, el gnomón se convertía en el protagonista ceremonial. En el mediodía astronómico, cuando el sol coronaba el ápice del cielo, la sombra del palo desaparecía. La oscuridad se encogía bajo la madera. Para el astrónomo maya, la nulidad de sombra representaba una confirmación categórica.',
-      'Los sabios mayas no se limitaron a utilizar ramas de madera para sus investigaciones. Transmutaron su arquitectura en gnomones pétreos. Empleaban estelas rectangulares, pilones y las aristas de sus pirámides para atrapar la radiación solar y medir el transcurrir del tiempo cósmico.',
-      'La meticulosidad astronómica que alcanzaron observando sombras fue deslumbrante. Marcando el extremo de la sombra matutina y vespertina, consiguieron estructurar calendarios que abarcaban millones de días. El humilde gnomón permitió amalgamar las complejas existencias sociales, agrícolas y místicas de la cultura mesoamericana.'
+    "id": "gnomon-vertical",
+    "bannerImage": "/assets/maya/infographic_m14/banner_gnomon-vertical.webp",
+    "title": "El Gnomón",
+    "color": "#212121",
+    "btnImage": "/assets/maya/infographic_m14/btn_gnomon-vertical.jpg",
+    "image": "/assets/maya/infographic_m14/hero_gnomon-vertical.jpg",
+    "content": [
+      "El instrumento astronómico fundamental utilizado por los sabios de Edzná para medir con precisión instrumental el paso cenital y la declinación solar fue el gnomón vertical. En su forma más pura, consistía en una columna monolítica de piedra caliza pulida, un poste de madera dura cilíndrica o una estela erigida con riguroso aplomo perpendicular respecto a un piso ceremonial perfectamente nivelado con mortero de cal hidráulica.",
+      "Los principios trigonométricos del gnomón se fundamentan en la proyección de sombras. A lo largo del año, la sombra proyectada por el vértice del gnomón al mediodía solar varía diariamente en longitud y dirección: alcanza su máxima extensión hacia el norte durante el solsticio de invierno, se acorta progresivamente durante los equinoccios de primavera y otoño, y se reduce a cero absoluto durante el paso cenital.",
+      "En la explanada de la Gran Acrópolis de Edzná se conservan basamentos circulares y cavidades pétreas que sirvieron como receptáculos fijos para estos instrumentos de medición. Alrededor de la base del gnomón, los matemáticos trazaban círculos concéntricos y líneas radiales grabadas en el estuco que operaban como cuadrantes solares, permitiendo medir la velocidad angular del Sol y predecir los cambios estacionales.",
+      "Además de las estelas al aire libre, los constructores de Edzná idearon gnomones de luz invertidos dentro de recintos techados. Al perforar un conducto vertical angosto o chimenea cenital en el techo abovedado de una cámara sagrada, un haz cilíndrico de luz solar descendía al mediodía, proyectando una mancha brillante en el piso oscuro que alcanzaba el centro de un disco de piedra únicamente el día del paso cenital exacto.",
+      "La utilización sistemática del gnomón desmiente el mito de que los antiguos mayas dependían de corazonadas místicas o magia para ordenar su sociedad. Se trataba de una ciencia empírica rigurosa, basada en la experimentación física, la geometría descriptiva y la recopilación metódica de datos numéricos contrastables, situando a los astrónomos de Edzná entre los físicos observacionales más avanzados de su tiempo."
     ],
-    expandables: [
-      { label: 'Sombras Cruzadas', icon: 'clock', text: 'Para incrementar dramáticamente la precisión, los estudiosos mayas plantaban múltiples gnomones alineados estratégicamente. Observando cautelosamente cómo se cruzaban e intersectaban las líneas visuales entre ellos durante los amaneceres, fundaban asombrosos observatorios de horizonte. Si el sol despuntaba exactamente detrás del poste focal, inauguraban formalmente la festividad estacional correspondiente.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La utilización astronómica del gnomón vertical no se restringía de ninguna manera a documentar la iluminación diurna. Los mayas también aplicaban lógicamente estos infalibles principios geométricos durante las oscuras noches, usando las aristas pétreas para rastrear detalladamente el sinuoso trayecto de la resplandeciente Luna y del vital planeta Venus.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el Templo de los Cinco Pisos se descubrieron restos de estelas líticas lisas, carentes de figuras talladas o jeroglíficos. Durante décadas los arqueólogos creyeron que estaban inconclusas, pero los arqueoastrónomos demostraron que funcionaban deliberadamente como gnomones lisos para no distorsionar la línea de sombra con relieves escultóricos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Un gnomón de dos metros de altura colocado a 19° 35' de latitud norte proyecta una sombra de mediodía de más de 1.80 metros durante el solsticio de invierno (diciembre), mientras que el 17 de mayo y el 26 de julio la sombra se reduce a cero milímetros. Este contraste geométrico evidente facilitaba mediciones cuantitativas sin instrumentos ópticos modernos."
+      }
     ],
-    fact: 'El eminente estudio de las cambiantes sombras proyectadas mediante postes rectos generó el nacimiento fáctico de la trigonometría temprana. Al medir la altura del palo vertical comparándola constantemente con la longitud de su oscura sombra tendida, los matemáticos antiguos deducían ángulos solares precisos. El rústico gnomón materializa la profunda premisa de que no requieres en absoluto tecnología electrónica para poder realizar cálculos y deducciones sofisticadas.',
+    "fact": "Para garantizar que los gnomones tuvieran un aplomo vertical perfecto de 90 grados respecto al horizonte, los constructores de Edzná utilizaban plomadas de cuerda con pesos cónicos de hematita o basalto pulido, combinadas con canales perimetrales de agua inmóvil en el suelo que funcionaban como niveles hidrostáticos de insuperable precisión óptica."
   },
   {
-    id: 'edificio-cinco-pisos',
-              bannerImage: '/assets/maya/infographic_m14/banner_edificio-cinco-pisos.webp',
-    title: 'Edificio de Cinco Pisos',
-    color: '#8D6E63',
-    btnImage: '/assets/maya/infographic_m14/btn_edificio-cinco-pisos.jpg',
-    image: '/assets/maya/infographic_m14/hero_edificio-cinco-pisos.jpg',
-    content: [
-      'Presidiendo la urbe de Edzná, encontramos una estructura inusual dentro del orbe maya: el Edificio de Cinco Pisos. Imáginate un pastel escalonado, alzándose a 31 metros de altura, construido con piedra caliza. Este portento arquitectónico domina majestuosamente la Acrópolis ceremonial.',
-      'El aspecto singular de este palacio-pirámide reside en su diseño híbrido. Regularmente, los palacios son recintos horizontales, mientras que las pirámides son elevaciones sólidas que culminan en templos pequeños. Este edificio conjuga ambas funciones. Sus masivos niveles inferiores ostentan recámaras abovedadas, coronadas por un santuario empinado.',
-      'Esta montaña labrada no sirvió meramente para ostentar opulencia. Su alineación geométrica la transforma en un observatorio astronómico. La ancha fachada principal fue planificada encarando directamente la trayectoria estacional del sol. Ingenieros y astrónomos sincronizaron sus disciplinas para interactuar físicamente con el astro.',
-      'Cuando la sagrada fecha del paso cenital arribaba, los rayos solares caían sobre la caliza. Justo al mediodía, las escalinatas, cornisas y rebordes de la pirámide cesaban de emitir sombra. La edificación absorbía la lumbre cenital, transformándose en un pilar fulgurante.',
-      'Coronando la quinta planta, reside una muralla pétrea denominada crestería. Cuando los sabios gobernantes escalaban las gradas para escudriñar cómo se filtraba la luz por las ventanas de piedra, refrendaban los augurios cósmicos. El edificio amalgama la autoridad política y el dominio celestial.'
+    "id": "edificio-cinco-pisos",
+    "bannerImage": "/assets/maya/infographic_m14/banner_edificio-cinco-pisos.webp",
+    "title": "Edificio de Cinco Pisos",
+    "color": "#8D6E63",
+    "btnImage": "/assets/maya/infographic_m14/btn_edificio-cinco-pisos.jpg",
+    "image": "/assets/maya/infographic_m14/hero_edificio-cinco-pisos.jpg",
+    "content": [
+      "Coronando con majestuosidad la plataforma de la Gran Acrópolis, el Edificio de los Cinco Pisos (Estructura 414) es indiscutiblemente el monumento emblemático y la cúspide estética de Edzná. Con una altura de 31.5 metros desde el suelo de la plaza hasta la crestería superior, esta colosal pirámide escalonada es célebre en la historia de la arquitectura universal por su audaz integración entre pirámide ceremonial y palacio residencial.",
+      "A diferencia de las pirámides convencionales del área maya, cuyos cuerpos escalonados son masas sólidas de mampostería maciza, los primeros cuatro niveles del Edificio de los Cinco Pisos albergan decenas de cámaras habitacionales abovedadas provistas de puertas adinteladas que dan a amplias terrazas corridas. Esta concepción espacial híbrida combinaba la residencia de la familia real con las funciones religiosas del culto estatal.",
+      "En la cúspide del monumento se erige el santuario del quinto piso, rematado por una soberbia crestería calada de más de seis metros de altura decorada originalmente con relieves policromados en estuco. La fachada principal del templo superior mira hacia el poniente, dominando un panorama visual inmenso sobre la Gran Plaza y sobre el horizonte plano de la península de Yucatán que facilitaba la observación crepuscular del Sol y Venus.",
+      "Una monumental escalinata central de mampostería asciende por la fachada oeste comunicando directamente la plaza de la Acrópolis con el templo superior. En los frentes de los escalones de caliza, los canteros grabaron glifos jeroglíficos que registran fechas conmemorativas de finales de K'atun y rituales dinásticos dedicados al dios solar K'inich Ahau, convirtiendo la ascensión física al templo en un recorrido cronológico sagrado.",
+      "Desde el punto de vista arquitectónico, el edificio constituye una síntesis magistral de estilos regionales: las cámaras de los niveles inferiores reflejan la influencia del estilo Chenes con su decoración de estuco, mientras que los paramentos lisos con molduras biseladas y columnillas empotradas en los niveles superiores anuncian la sobriedad geométrica del estilo Puuc, testimoniando siglos de maestría edilicia acumulada."
     ],
-    expandables: [
-      { label: 'Ingenio en Piedra', icon: 'atom', text: 'Examinando las sólidas estancias contenidas interiormente, los arquitectos contemporáneos confirmaron cómo los mayas implementaron la sofisticada "bóveda en saledizo". Esta ingeniosa técnica superpone progresivamente hileras de grandes rocas hasta cerrar pesados techos interiores, permitiendo soportar asombrosamente las abrumadoras toneladas del masivo templo superior sin sufrir derrumbes estructurales.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La ancha escalinata central del monumental inmueble resguarda asombrosos secretos tallados. Múltiples peldaños inferiores ostentan detalladísimos bloques cincelados exhibiendo elaborados jeroglíficos antiguos. Ascender por esta histórica escalera equivalía literalmente a pisotear devotamente las victoriosas efemérides y el abolengo reverencial de los poderosos caudillos fundacionales de Edzná.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante los atardeceres de los equinoccios de primavera y otoño, los rayos del sol poniente descienden sobre la fachada escalonada del Edificio de los Cinco Pisos iluminando sucesivamente cada una de sus terrazas abovedadas, produciendo un efecto de cascada luminosa dorada que simbolizaba la bendición del dios solar sobre las estancias de la élite real."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El diseño estructural del edificio distribuye el peso de los pisos superiores sobre los muros de carga inferiores mediante contrafuertes y bóvedas mayas escalonadas rellenas de hormigón de cal y cascajo. Esta técnica de ingeniería alivió la presión sobre las cámaras residenciales, garantizando la estabilidad de la estructura durante más de doce siglos."
+      }
     ],
-    fact: 'El soberbio Edificio de Cinco Pisos jamás fue alzado repentinamente, sino que materializa el denodado esfuerzo acumulado de múltiples generaciones a través de dilatados siglos. Evolucionó partiendo de un santuario basal modestísimo, siendo envuelto progresivamente por monumentales añadidos exteriores. Visualmente documenta la brillante hibridación arquitectónica, combinando el macizo y sobrio estilo inicial Petén oculto en su masivo núcleo, recubierto por los intrincadísimos detalles del tardío estilo Puuc.',
+    "fact": "El Edificio de los Cinco Pisos cuenta con un total de veintisiete habitaciones abovedadas distribuidas en sus cuatro primeros niveles: seis cuartos en el primer piso, siete en el segundo, ocho en el tercero y seis en el cuarto, además del templo terminal en la cumbre. Ningún otro edificio del periodo Clásico maya combina tantas viviendas palaciegas dentro de una pirámide."
   },
   {
-    id: 'sistema-hidraulico',
-              bannerImage: '/assets/maya/infographic_m14/banner_sistema-hidraulico.webp',
-    title: 'Sistema Hidráulico',
-    color: '#0288D1',
-    btnImage: '/assets/maya/infographic_m14/btn_sistema-hidraulico.jpg',
-    image: '/assets/maya/infographic_m14/hero_sistema-hidraulico.jpg',
-    content: [
-      'Situémonos en un asentamiento edificado sobre barros que mutan de pantanos anegados a terrenos polvorientos. Semejante escenario era el escollo de la metrópoli. Los valerosos mayas, en lugar de claudicar, concibieron un manejo hídrico colosal. Demostraron un gran tesón ingenieril.',
-      'Elaboraron un tejido integrado por treinta kilómetros de canales y embalses notables. Figura estas excavaciones como venas irrigando la totalidad cívica. El conducto supremo supera mil metros longitudinales, acaparando cincuenta metros horizontales. Recolectaba la lluvia y la canalizaba controladamente.',
-      '¿Cómo lograba engarzarse la recolección acuífera con las esferas celestiales? Las inclemencias climáticas de Edzná gravitaban sobre un ciclo hídrico rígido. Observando los cenit solares, la jerarquía presagiaba el arribo del temporal lluvioso. Intersecaban la astronomía con la supervivencia estricta.',
-      'Pronosticar certeramente la precipitación otorgaba la ventaja temporal para maniobrar compuertas lodosas, limpiar inmensos aljibes y depositar las semillas del maíz en las parcelas. Fallar estos cálculos astronómicos abocaría a la hambruna generalizada o a inundaciones devastadoras. La astrología cimentaba la prosperidad nutricional.',
-      'Paralelamente al suministro potable y al riego de los sembradíos, este reticulado acuático propiciaba una movilidad expedita. Sustituyendo los acarreos peatonales, ágiles navegantes tripulaban pequeñas canoas, distribuyendo pertrechos por el circuito. Domando el agua cristalizaron su hegemonía cívica.'
+    "id": "sistema-hidraulico",
+    "bannerImage": "/assets/maya/infographic_m14/banner_sistema-hidraulico.webp",
+    "title": "Sistema Hidráulico",
+    "color": "#0288D1",
+    "btnImage": "/assets/maya/infographic_m14/btn_sistema-hidraulico.jpg",
+    "image": "/assets/maya/infographic_m14/hero_sistema-hidraulico.jpg",
+    "content": [
+      "El mayor prodigio técnico de Edzná no reside únicamente en sus templos de piedra, sino en el colosal sistema de ingeniería hidráulica que hizo posible la vida y la prosperidad agrícola de decenas de miles de personas. El valle donde se asienta la ciudad carece de ríos superficiales, cenotes naturales abiertos y manantiales perennes, dependiendo exclusivamente del régimen estacional de lluvias monzónicas para su subsistencia.",
+      "Para resolver este desafío vital, los ingenieros mayas del periodo Preclásico Tardío (hacia el 200 a.C.) iniciaron la excavación de una gigantesca red de canales artificiales rectilíneos tallados en el lecho arcilloso y rocoso del valle. El sistema comprende treinta y un canales principales interconectados que suman más de veintidós kilómetros de longitud lineal combinada, complementados por decenas de canales secundarios de riego.",
+      "El canal principal del sistema, conocido como el Gran Canal, alcanza cincuenta metros de ancho y más de dos metros de profundidad, extendiéndose a lo largo de doce kilómetros en dirección sur hacia la sabana de Pich. Esta vía acuática no solo actuaba como un colector de aguas pluviales durante las inundaciones estivales, sino como una arteria fluvial navegable por donde transitaban canoas de carga transportando cosechas y mercancías.",
+      "La red desembocaba en inmensos depósitos artificiales escalonados y aguadas cívicas capaces de almacenar millones de metros cúbicos de agua dulce para la temporada seca. Los bordes de los canales estaban reforzados con terrazas agrícolas sobreelevadas o campos drenados (camellones), donde el fango fértil extraído periódicamente del fondo de las zanjas se utilizaba como abono orgánico para alimentar cosechas continuas de maíz y frijol.",
+      "Este sistema integral de control hidrológico cumplía una triple función esencial: prevenía las destructivas inundaciones de las áreas residenciales, garantizaba el riego continuo de los cultivos durante la sequía invernal y proporcionaba agua potable segura a la población urbana, situando a Edzná como uno de los ejemplos más extraordinarios de ingeniería hidráulica sustentable y planificación ecológica de la antigüedad."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Durante la penosa excavación de los mastodónticos canales zanjados, los incansables operarios extrajeron millares de toneladas del fecundo sustrato inferior. Jamás desperdiciaron este material orgánico: reutilizaron la totalidad del barro extraído para sobrellevar elevadas plataformas residenciales, protegiendo sagazmente sus delicadas habitaciones de las crecidas pluviales.' },
-      { label: 'Mantenimiento Colosal', icon: 'clock', text: 'Indefectiblemente, la prolongada época de acentuada sequedad propiciaba un intensivo y organizado mantenimiento comunitario de la intrincada urdimbre hídrica. Pelotones de trabajadores paleaban el cenagoso limo residual depositado en la base de los acueductos, aprovechándolo directamente como inmejorable abono para fertilizar copiosamente los cercanos huertos familiares y vastas milpas periféricas.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En los canales de Edzná, los habitantes criaban peces dulceacuícolas, tortugas y caracoles de río como fuente complementaria de proteínas alimenticias. El sistema hidráulico operaba así como una gigantesca granja acuícola integrada a las milpas, aprovechando el agua estancada para generar alimento de forma ininterrumpida todo el año."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las prospecciones topográficas con teodolito revelaron que la pendiente del Gran Canal de Edzná es de apenas 5 a 10 centímetros por cada kilómetro de recorrido. Esta pendiente extremadamente suave permitía que el agua fluyera por gravedad sin erosionar los taludes de arcilla, logrando una velocidad de sedimentación ideal para purificar el líquido por decantación."
+      }
     ],
-    fact: 'Escaneos topográficos, empleando potentes rayos láser pulsados (LiDAR), confirmaron apabullantemente que la monumental obra civil de recolección fluida dominaba una astronómica cuenca cercana a los quince vastísimos kilómetros cuadrados. Semejantes proezas demuestran rotundamente avanzados conocimientos hidrodinámicos empíricos, equiparables plenamente a la magistral ingeniería de conducción de acueductos ejecutada masivamente durante el apogeo del antiguo Imperio Romano.',
+    "fact": "El volumen total de tierra y roca excavado por los constructores mayas para crear la red hidráulica de canales y reservorios de Edzná se calcula en más de dos millones de metros cúbicos. Toda esta descomunal obra pública fue completada a mano utilizando herramientas de piedra pulida, cestos de mimbre y cuadrillas de miles de trabajadores organizados por el Estado."
   },
   {
-    id: 'latitud-tropical',
-              bannerImage: '/assets/maya/infographic_m14/banner_latitud-tropical.webp',
-    title: 'Latitud Tropical',
-    color: '#4FC3F7',
-    btnImage: '/assets/maya/infographic_m14/btn_latitud-tropical.jpg',
-    image: '/assets/maya/infographic_m14/hero_latitud-tropical.jpg',
-    content: [
-      'Visualiza nuestra gigantesca Tierra rotando como un trompo inclinado persiguiendo al sol. Debido a esta postura, la irradiación solar bombardea diferentes sectores dependiendo de la progresión estacional del año. La cálida cintura que abraza el ecuador constituye la latitud tropical.',
-      'Habitar dentro de esta zona geográfica permite atestiguar asombrosos eventos astronómicos. Únicamente dentro de estos linderos tropicales puede el sol situarse a noventa grados sobre nuestra posición, gestando el cenit. Poblaciones ubicadas fuera del perímetro soportan radiaciones oblicuas y persistentes sombras.',
-      'Las capitales del universo maya, como Palenque, Tikal, Copán y Edzná, emergieron abrigadas bajo este palio tropical. Consecuentemente, la bóveda estelar que presenciaban estos polímatas difería de la perspectiva observable por los pensadores europeos.',
-      'Considerando la curvatura de nuestra morada terrestre, el fenómeno cenital no se manifiesta sincrónicamente en todas partes. El cénit progresa barriendo el horizonte. Visita primeramente Copán, postergándose varias semanas hasta cobijar a Edzná. Diferentes poblados experimentaban sus jornadas sin sombra en distintas fechas.',
-      'Esta asincronía climática obligó a los matemáticos de las diversas agrupaciones ciudadanas a forjar adecuaciones locales a su almanaque general. Ajustaron fórmulas geométricas para coincidir con el ángulo de su región. Demostraron una penetrante comprensión conceptual de la geometría esférica subyacente.'
+    "id": "latitud-tropical",
+    "bannerImage": "/assets/maya/infographic_m14/banner_latitud-tropical.webp",
+    "title": "Latitud Tropical",
+    "color": "#4FC3F7",
+    "btnImage": "/assets/maya/infographic_m14/btn_latitud-tropical.jpg",
+    "image": "/assets/maya/infographic_m14/hero_latitud-tropical.jpg",
+    "content": [
+      "La ubicación astronómica de un asentamiento humano sobre el globo terráqueo determina por completo las características de su bóveda celeste y el comportamiento de las estaciones. Edzná se localiza en las coordenadas geográficas 19° 35' de latitud norte y 90° 14' de longitud oeste, emplazada en pleno cinturón intertropical del planeta, una posición geográfica que condicionó de forma directa la cosmovisión y la ciencia de sus habitantes.",
+      "En las latitudes templadas y boreales situadas al norte del trópico de Cáncer (23° 26' N), como en Europa central o el norte de América, el Sol siempre culmina al sur del cenit al mediodía y los objetos jamás dejan de proyectar sombras septentrionales. Por el contrario, en la latitud tropical de Edzná, el Sol cruza al hemisferio norte durante los meses de verano, colocándose en dos ocasiones anuales exactamente sobre la coronilla del cielo.",
+      "Esta particularidad astronómica divide el año solar de Edzná en dos periodos asimétricos delimitados por los pasos cenitales del 17 de mayo y el 26 de julio. Entre ambas fechas median setenta días durante los cuales el Sol de mediodía se ubica al norte del observador, proyectando sombras orientadas hacia el sur. Durante los doscientos noventa y cinco días restantes del año, el Sol transita al sur del observador proyectando sombras al norte.",
+      "Esta oscilación cenital tropical permitía a los astrónomos de la corte predecir con absoluta fidelidad la llegada del régimen monzónico del Atlántico y del Golfo de México. El calentamiento solar directo provocado por el Sol cenital en mayo intensifica la evaporación marina y las corrientes convectivas atmosféricas, desencadenando la temporada de tormentas tropicales indispensables para llenar los canales de la metrópoli.",
+      "Comprender las propiedades geométricas de la latitud tropical permitió a los sacerdotes de Edzná desmarcarse de modelos calendáricos rígidos e inventar soluciones astronómicas empíricas adaptadas a su suelo natal. El paisaje celeste local fue integrado en la vida cívica, convirtiendo a la latitud de la ciudad en un marco matemático único donde cada sombra proyectada en el suelo calizo aportaba información vital para la comunidad."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El extendido y popular término "Trópico"procede curiosamente del arcaico léxico helénico (tropikós) denotando el concepto cardinal de"retorno". Los antiguos vigías astrales se percataron sagazmente de que al tocar los límites paralelos norte y sur, la candente estrella simulaba detenerse por completo para retroceder lentamente su marcha, señalando con espectacularidad los grandiosos solsticios celestiales extremos.' },
-      { label: 'Copán y Astronomía', icon: 'atom', text: 'La colosal metrópoli sureña de Copán es universalmente distinguida por su manifiesta obsesión con la obsesiva exactitud calendárica de ciclos entrelazados. Su latitud propicia que el avasallante rayo cenital los impacte primeramente. Los sabios erigieron monumentales estelas monolíticas en cumbres remotas del extenso valle, buscando alineaciones solares perfectas durante los albares para decretar fehacientemente el inicio ceremonial del próspero tiempo fértil.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los primeros cronistas españoles que llegaron a la península de Yucatán en el siglo XVI quedaron desconcertados al observar que en verano el Sol se colocaba al norte de sus cabezas y proyectaba sombras hacia el sur al mediodía, un fenómeno celeste que jamás habían experimentado en España y que los mayas comprendían y medían a la perfección."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La energía de radiación solar recibida por unidad de superficie alcanza su máximo teórico cuando los rayos solares inciden perpendicularmente a 90 grados sobre el terreno, como ocurre durante el paso cenital. En Edzná, la insolación en esas jornadas supera los 1,000 vatios por metro cuadrado, generando un brusco calentamiento térmico que detona lluvias convectivas vespertinas."
+      }
     ],
-    fact: 'El inclinado y fundamental eje planetario terrestre, el cual propicia integralmente el incesante recambio periódico de todas nuestras coloridas y necesarias estaciones medioambientales, ostenta una peculiar angulación que fluctúa aproximadamente 23.5 grados. Por increíble y arcano que parezca, debido al pausado y paulatino efecto precesional astronómico espaciotemporal a lo largo de milenios, el preciso foco geométrico y los cálculos matemáticos de radiación solar esgrimidos por los mayas originales se han sutilmente desplazado del firmamento observable actual.',
+    "fact": "La latitud de 19° 35' N sitúa a Edzná a escasos cuatrocientos kilómetros al sur del trópico de Cáncer, el límite geográfico septentrional máximo donde es físicamente posible el paso cenital solar en la Tierra. Si la ciudad hubiera estado situada apenas 450 kilómetros más al norte, sus habitantes jamás habrían podido presenciar el fenómeno del Sol sin sombra al mediodía."
   },
   {
-    id: 'medicion-tiempo',
-              bannerImage: '/assets/maya/infographic_m14/banner_medicion-tiempo.webp',
-    title: 'Medición del Tiempo',
-    color: '#E65100',
-    btnImage: '/assets/maya/infographic_m14/btn_medicion-tiempo.jpg',
-    image: '/assets/maya/infographic_m14/hero_medicion-tiempo.jpg',
-    content: [
-      'Visualicemos la encrucijada de intentar estructurar un calendario preciso careciendo de relojes modernos o telescopios de cuarzo. Dependiendo exclusivamente de sus ojos escrutadores, simples formaciones líticas y delgados postes vegetales, los mayas resolvieron el laberinto cósmico. Ubicaban puntos topográficos referenciales e inventariaban las secuencias del retorno solar.',
-      'No obstante, el rudimentario recuento manual de amaneceres conlleva errores acumulativos. Una prolongada densidad de tormentas tropicales o dislexias numéricas arruinarían los pronósticos matemáticos. Ambicionaban una rúbrica celestial, exenta de debilidad perceptiva humana. El paso cenital confirió justamente esa exactitud irrefutable demandada por sus dogmas.',
-      'Semejante singularidad óptica ejercía las funciones de un cronómetro rectificador impecable. Invocado en la jornada central, la exactitud del mediodía astronómico facultaba a la casta erudita maya para recalibrar cualquier desvío numérico. Podían corregir los errores que infestaban gradualmente sus calendarios a lo largo de un año cívico.',
-      "Como un reloj integrado por discos dentados, orquestaron su paradigmática Rueda Calendárica. Sincronizaron su almanaque sagrado de 260 jornadas (Tzolkin) con el predecible recuento cívico-solar agrícola de 365 días (Haab'). Esta inmensa arquitectura numérica descansaba avalada constantemente por las puntuales intersecciones cenitales astronómicas anuales.",
-      'Respaldados por siglos de devoción escudriñadora, los peritos matemáticos elaboraron un guarismo cronológico. Tasaron minuciosamente la traslación planetaria incesante del sol en 365.242 días reales. Este soberbio logro deductivo, alcanzado mediante troncos desnudos y cordeles, rivaliza sin ruborizarse contra las mediciones telescópicas satelitales actuales.'
+    "id": "medicion-tiempo",
+    "bannerImage": "/assets/maya/infographic_m14/banner_medicion-tiempo.webp",
+    "title": "Medición del Tiempo",
+    "color": "#E65100",
+    "btnImage": "/assets/maya/infographic_m14/btn_medicion-tiempo.jpg",
+    "image": "/assets/maya/infographic_m14/hero_medicion-tiempo.jpg",
+    "content": [
+      "Para la civilización maya en Edzná, la medición del tiempo trascendía la simple contabilización de los días transcurridos para convertirse en un arte de ordenamiento moral, agrícola y cosmológico del universo. Los sabios locales desarrollaron un complejo sistema cronológico matricial que sincronizaba simultáneamente el calendario solar civil (Haab'), el almanaque ritual (Tzolk'in), la Cuenta Larga dinástica y los ciclos de los astros.",
+      "La arquitectura monumental de la ciudad operaba como un descomunal dispositivo de registro cronológico. Al correlacionar las sombras cenitales proyectadas por los gnomones de la Acrópolis con las líneas de mira solares trazadas desde el Edificio de los Cinco Pisos hacia las estructuras periféricas de la Gran Plaza, los sacerdotes establecían con precisión de horas el inicio y cierre de los periodos temporales de veinte días (Uinales).",
+      "Las inscripciones glíficas descubiertas en las estelas fechadas de Edzná registran conmemoraciones de finales de K'atun (periodos de 7,200 días o casi veinte años solares). En cada una de estas conmemoraciones periódicas, el gobernante supremo encabezaba sacrificios de incienso de copal, sangre y autosacrificio ante el pueblo, reafirmando que el pacto sagrado entre la comunidad y los dioses del firmamento continuaba vigente y próspero.",
+      "Asimismo, los matemáticos de la urbe dominaban el ciclo sinódico del planeta Venus (583.92 días) y los intervalos regulares de los eclipses lunares y solares. Al plasmar estos cómputos en registros públicos legibles para las delegaciones visitantes, Edzná se consolidó como una capital intelectual donde los gobernantes de ciudades secundarias acudían para homologar sus propios calendarios locales y aprender métodos de cálculo.",
+      "La medición rigurosa del tiempo en Edzná demuestra la íntima conexión existente entre la ciencia matemática y la supervivencia humana en las tierras bajas mayas. Al predecir con exactitud milimétrica el retorno de los astros y las estaciones de lluvia, los sabios mayas lograron disipar la incertidumbre de la existencia selvática, transformando la regularidad celeste en una fuente inagotable de seguridad, fe y florecimiento cultural."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El enigmático y sacrosanto número de 260, conformante basal de su místico almanaque litúrgico, está entrañablemente ligado indisolublemente al astro rey calórico. Puntualmente evaluado sobre influyentes metrópolis meridionales, el compás aguardado para la traslación desde la inicial fulminación cenital observada estivalmente hasta su eventual y anhelado reencuentro de retorno, totalizaba pasmosamente una exacta contabilidad ininterrumpida de doscientas sesenta idénticas jornadas solares precisas.' },
-      { label: 'Códices Antiguos', icon: 'clock', text: 'Extensa magnitud de nuestros vigentes entendimientos empíricos sobre las portentosas mecánicas del minucioso cronometrado cósmico maya florece íntegramente de un invaluable y esporádico rescate bibliográfico histórico: el venerable e intrincado "Códice de Dresde". En los frágiles pliegos amate apilados con pigmentos orgánicos imborrables, aquellos peritos estamparon pasmosas constancias tabuladas prediciendo espeluznantemente las cíclicas oscilaciones de las resplandecientes esferas celestiales y los espantosos oscurecimientos ecplípsales por decenas de generaciones venideras.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En la Estela 18 de Edzná, consagrada hacia el año 711 d.C., se describe la celebración solemne de un final de K'atun presidido por una reina gobernante que porta un suntuoso pectoral de jade con el símbolo de la flor solar de cuatro pétalos Kin, demostrando el destacado protagonismo político de las mujeres mayas en los rituales astronómicos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El sistema calendárico maya operaba mediante una notación posicional vigesimal (base 20) que incorporaba el concepto abstracto del cero antes de que fuera utilizado en el continente europeo. Esta matemática vigesimal facilitaba cálculos cronológicos monumentales que abarcaban millones de días solares sin acumular desfasamientos aritméticos."
+      }
     ],
-    fact: 'Reconociendo pragmáticamente la fraccionada acumulación diaria de residuales minutos cósmicos que impiden la simetría gregoriana absoluta (el sobrante empírico cuantificado), los eruditos mesoamericanos rehusaron añadir toscamente burdos días bisiestos artificiales interpolados en sus sagradas contabilidades inmemoriales originarias. Invocaron sabiamente una alternativa matemática purista, desarrollando laberínticas tablas de rectificación perpetua finamente inscritas en roca dura, cautelando imperturbablemente que el prístino transcurrir del engranaje temporal fundacional mítico del origen inmaculado fluyese majestuoso, prístino. Jamás resultase corrompido ni truncado transitoriamente.',
-  },
+    "fact": "La combinación de los ciclos Haab' (365 días) y Tzolk'in (260 días) genera el ciclo de 18,980 días (52 años) de la Rueda Calendárica. En Edzná, las excavaciones han recuperado ofrendas de cerámica quebrada y fogatas ceremoniales que coinciden cronológicamente con estas fechas de renovación de medio siglo, demostrando la observancia ininterrumpida de este ciclo cósmico."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

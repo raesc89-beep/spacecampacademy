@@ -80,144 +80,200 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'tzolkin-estructura',
-              bannerImage: '/assets/maya/infographic_m4/banner_constelaciones-mayas.webp',
-    title: 'Estructura',
-    color: '#7B1FA2',
-    btnImage: '/assets/maya/infographic_m4/btn_tzolkin-estructura.jpg',
-    image: '/assets/maya/infographic_m4/hero_tzolkin-estructura.jpg',
-    content: [
-      'El calendario sagrado maya se llama Tzolkin. Funciona con dos ruedas giratorias en lugar de meses largos. Una rueda muestra números del uno al trece, y la otra tiene veinte nombres de días. Cada mañana, ambas avanzan un paso simultáneo, creando combinaciones únicas.',
-      'El ciclo dura exactamente 260 días porque es el resultado de multiplicar trece por veinte. Esta cantidad no coincide con el año solar, pero se aproxima al periodo de gestación humana en el vientre materno. Los mayas combinaron este ciclo biológico con sus observaciones astronómicas.',
-      'El Tzolkin no tiene un día de año nuevo fijo. Actúa como un ciclo continuo que se reinicia al llegar a la última combinación. Funciona como una bicicleta, donde cada impulso hace girar simultáneamente el engranaje de números y la rueda de días.',
-      'Para documentar las fechas, los escribanos mayas usaban un sistema numérico de puntos y barras. Un punto valía uno y una barra valía cinco. Junto al número, dibujaban el símbolo del día correspondiente. Dominar este método de escritura requería extensa preparación.',
-      'Los arqueólogos han descubierto fechas talladas en monumentos de piedra antigua. Aunque imperios enteros cayeron, varias comunidades indígenas mantienen la cuenta ininterrumpida desde hace milenios.'
+    "id": "tzolkin-estructura",
+    "bannerImage": "/assets/maya/infographic_m4/banner_constelaciones-mayas.webp",
+    "title": "Estructura",
+    "color": "#7B1FA2",
+    "btnImage": "/assets/maya/infographic_m4/btn_tzolkin-estructura.jpg",
+    "image": "/assets/maya/infographic_m4/hero_tzolkin-estructura.jpg",
+    "content": [
+      "El Tzolk'in, cuyo significado literal en lengua maya yucateca es «la cuenta de los días», es el calendario sagrado y adivinatorio más antiguo y venerado de toda Mesoamérica. A diferencia del calendario solar civil Haab' de 365 días que medía las estaciones astronómicas, el Tzolk'in operaba como una matriz cósmica y espiritual cerrada de 260 días únicos. Este ciclo no dependía de la duración del año solar ni de las fases lunares directas, sino de una elegante conmensurabilidad matemática y mística.",
+      "La estructura del Tzolk'in se origina a partir del engranaje simultáneo de dos ruedas numéricas independientes que giraban al unísono: una serie de 13 números secuenciales (del 1 al 13) y una lista de 20 nombres de días sagrados inmutables. Dado que los números 13 y 20 son matemáticamente coprimos o primos relativos entre sí (no comparten ningún divisor común aparte de la unidad), el número de combinaciones posibles antes de repetir una fecha exacta es su mínimo común múltiplo: 13 × 20 = 260 días.",
+      "El avance diario del Tzolk'in funcionaba mediante la progresión paralela de ambos componentes. Si el primer día de la serie era 1 Imix, la jornada siguiente recibía obligatoriamente la denominación 2 Ik', seguida sucesivamente por 3 Ak'b'al, hasta alcanzar 13 B'en. En ese punto, la serie de los números se agotaba y volvía a comenzar con el número 1, pero la lista de nombres continuaba con el decimocuarto signo, produciendo la combinación 1 Ix, seguida de 2 Men, y así sucesivamente.",
+      "Para que una fecha idéntica (por ejemplo, 1 Imix) volviera a manifestarse en el curso del tiempo, era indispensable que transcurrieran exactamente 260 días solares completos. Durante ese lapso de casi nueve meses gregorianos, cada jornada individual poseía un nombre propio compuesto por un número y un glifo sagrado, otorgándole una carga energética, una deidad tutelar y una personalidad cósmica irrepetible que determinaba el destino de los seres humanos nacidos en su seno.",
+      "Las raíces arqueológicas del Tzolk'in se remontan a épocas muy remotas del periodo Preclásico mesoamericano, encontrándose evidencias inscritas en monumentos tempranos de San José Mogote en Oaxaca y en estelas olmecas de la costa del Golfo de México fechadas con anterioridad al año 600 a.C. Este calendario sagrado se convirtió en el pilar espiritual indispensable sobre el cual florecieron la astronomía, la escritura glífica y la religión estatal de la civilización maya clásica."
     ],
-    expandables: [
-      { label: 'Un Ciclo Sin Fin', icon: 'clock', text: 'El ciclo de 260 días se repite sin interrupciones ni días compensatorios. Funciona como un eslabón continuo de registro temporal a través de los siglos.' },
-      { label: 'Matemática Maya', icon: 'atom', text: 'El sistema vigesimal maya (base 20) se derivaba del conteo con los dedos de manos y pies. Multiplicar trece por veinte genera el periodo exacto de 260 días.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El término «Tzolk'in» fue acuñado formalmente por los mayistas e historiadores a finales del siglo XIX basándose en las raíces mayas yucatecas «tzol» (poner en orden) y «k'in» (día o Sol). Entre los mayas k'iche' de las tierras altas de Guatemala, donde este calendario sagrado sigue vivo hoy en día, su nombre tradicional es «Cholq'ij»."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La cifra canónica de 260 días posee propiedades aritméticas fascinantes: es divisible exactamente entre 2, 4, 5, 10, 13, 20, 26, 52 y 65, lo que permitía a los sacerdotes matemáticos subdividir el ciclo en múltiples intervalos rituales armónicos sin generar fracciones residuales en sus pronósticos de eclipses y planetas."
+      }
     ],
-    fact: 'El término Tzolkin es una invención arqueológica moderna que significa "cuenta de días" en maya yucateco. El vocablo original utilizado por los antiguos mayas aún es objeto de debate.'
+    "fact": "La matriz del Tzolk'in articula 13 coeficientes numéricos con 20 nombres sagrados de días para generar un ciclo continuo de 260 combinaciones únicas sin repetirse (13 × 20 = 260), constituyendo el cómputo ritual ininterrumpido más antiguo documentado en el registro arqueológico del continente americano."
   },
   {
-    id: 'veinte-dias',
-              bannerImage: '/assets/maya/infographic_m4/banner_copa-observacion.webp',
-    title: 'Los 20 Días',
-    color: '#FFC107',
-    btnImage: '/assets/maya/infographic_m4/btn_veinte-dias.jpg',
-    image: '/assets/maya/infographic_m4/hero_veinte-dias.jpg',
-    content: [
-      'El ciclo sagrado posee veinte días únicos. Cada jornada tiene un nombre y un símbolo distintivo. El recorrido comienza con Imix, representado como un lirio acuático o un cocodrilo en aguas primordiales. Simboliza la tierra fértil flotando sobre el océano.',
-      'El segundo día, Ik, representa el viento y el aliento vital. Su símbolo tiene forma de "T", evocando la entrada de los templos y el viento que mantiene el fuego y la voz. Tras la tierra primordial de Imix, Ik trae vida dinámica.',
-      'El tercer día es Akbal, la oscuridad nocturna. Su ícono gráfico es la cabeza de un murciélago o las manchas del jaguar. Recuerda que las semillas germinan en la oscuridad. El cuarto día, Kan, simboliza la semilla madura de maíz.',
-      'El quinto glifo es Chicchan, la serpiente celestial portadora de lluvias. En la visión maya, representaba la energía del agua. Los demás días recorren elementos como el pedernal, el perro guía, el mono, la muerte y el sol.',
-      'Cada día encierra un presagio que dictaba las acciones recomendadas para la comunidad. Algunos días eran propicios para arrancar labores o viajar, y otros para honrar a los ancestros. Este vocabulario cósmico estructuraba la vida y el orden social.'
+    "id": "veinte-dias",
+    "bannerImage": "/assets/maya/infographic_m4/banner_copa-observacion.webp",
+    "title": "Los 20 Días",
+    "color": "#FFC107",
+    "btnImage": "/assets/maya/infographic_m4/btn_veinte-dias.jpg",
+    "image": "/assets/maya/infographic_m4/hero_veinte-dias.jpg",
+    "content": [
+      "Los veinte nombres sagrados de los días que conformaban la lista básica del Tzolk'in personificaban una amplia gama de fuerzas cósmicas, fenómenos naturales, deidades tutelares y animales reverenciados en el panteón maya. La secuencia completa comenzaba invariablemente con el signo Imix (el monstruo acuático primordial o lirio de agua) y culminaba con el sagrado Ajaw (el señor divino, el sol supremo y el rey de la corte celestial), cerrando un círculo eterno de regeneración.",
+      "La lista completa de los veinte días en lengua maya clásica comprende: Imix, Ik', Ak'b'al, K'an, Chikchan, Kimi, Manik', Lamat, Muluk, Ok, Chuwen, Eb, B'en, Ix, Men, Kib, Kab'an, Etz'nab', Kawak y Ajaw. Cada uno de estos signos representaba conceptos vitales: Ik' era el viento vital y el aliento divino; Ak'b'al, la oscuridad de la noche cósmica y las cuevas; K'an, el grano dorado del maíz maduro y la abundancia fértil; Chikchan, la serpiente celestial emplumada conectada con el rayo.",
+      "Otros signos encarnaban la fauna sagrada de la selva tropical: Manik' simbolizaba la garra del ciervo y la caza; Lamat, la luz fulgurante del planeta Venus; Ok, el perro leal que guiaba las almas de los difuntos a través de las aguas subterráneas del inframundo; Chuwen, el mono aullador patrón de los artesanos, músicos y escribas reales; Ix, el espíritu silencioso y poderoso del jaguar manchado (*Panthera onca*); y Men, el vuelo majestuoso del águila sobre las copas de los árboles.",
+      "Los días finales de la veintena abordaban las fuerzas telúricas de la creación: Kib personificaba la cera purificadora de las abejas meliponas y la memoria de los antepasados; Kab'an, el movimiento sísmico de la tierra y los terremotos; Etz'nab', el cuchillo ceremonial de pedernal y la obsidiana afilada; Kawak, la tormenta de truenos con nubarrones oscuros; y finalmente Ajaw, el día de mayor rango litúrgico, consagrado a la entronización de los reyes y a las ofrendas directas al Sol.",
+      "En los monumentos esculpidos, cada uno de estos veinte días se grababa dentro de un elegante cartucho cuadrangular provisto de tres pequeños soportes basales redondeados, un diseño gráfico exclusivo que advertía al lector de que se trataba de una fecha sagrada del Tzolk'in. Los escribas mayas cuidaban con celo la ejecución plástica de estos glifos, reconociendo que cada trazo de piedra alojaba la presencia física de la deidad que gobernaba esa jornada."
     ],
-    expandables: [
-      { label: 'Secuencia Natural', icon: 'clock', text: 'La secuencia de días refleja una narrativa cronológica. Inicia con agua, sigue con el viento dador de vida, luego la noche que cobija la germinación y finaliza con el sol.' },
-      { label: 'El Mono Artesano', icon: 'clock', text: 'El día once, Chuwen, muestra el rostro de un mono. Los monos eran patronos de artistas y artesanos. Se creía que los nacidos en este día poseían grandes dotes creativas.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El glifo del día Ajaw es uno de los más frecuentes en toda la epigrafía mesoamericana. Representa un rostro humano de perfil o de frente con labios circulares prominentes y una diadema real en la frente. Los soberanos mayas programaban sus coronaciones dinásticas y banquetes solemnes para coincidir obligatoriamente con días presididos por el glifo Ajaw."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El antropólogo J. Eric S. Thompson demostró que los 20 nombres de los días del Tzolk'in conservan una correspondencia conceptual idéntica con los 20 días del calendario náhuatl azteca Tonalpohualli (por ejemplo: Ik' equivale a Ehécatl/Viento, Kimi a Miquiztli/Muerte, e Ix a Océlotl/Jaguar), probando un origen ideológico mesoamericano común."
+      }
     ],
-    fact: 'Muchos de los glifos de los 20 días incorporan elementos de la flora y fauna mesoamericana. Por ejemplo, el glifo Ix muestra tres manchas negras que imitan el pelaje del jaguar.'
+    "fact": "La serie de 20 días del Tzolk'in abarca desde Imix (el origen acuático) hasta Ajaw (el Sol regio), inscritos siempre dentro de cartuchos trilobulados exclusivos que identificaban visualmente a los días como encarnaciones directas de las fuerzas divinas de la naturaleza mesoamericana, otorgando a cada posición diurna un rango teológico soberano e inmutable dentro de la cosmovisión astronómica de las tierras bajas mayas."
   },
   {
-    id: 'trece-numeros',
-              bannerImage: '/assets/maya/infographic_m4/banner_eclipse-maya.webp',
-    title: 'Los 13 Números',
-    color: '#C62828',
-    btnImage: '/assets/maya/infographic_m4/btn_trece-numeros.jpg',
-    image: '/assets/maya/infographic_m4/hero_trece-numeros.jpg',
-    content: [
-      'El número trece ocupa un lugar sagrado en la cosmovisión mesoamericana. Según los mitos de creación, existían trece niveles celestiales escalonados superiores a la tierra, contrastando con los nueve planos del inframundo.',
-      'El calendario Tzolkin combina este número trece (asociado al firmamento) con el veinte (asociado a la base biológica humana). La cuenta va del uno al trece y salta de nuevo al uno, continuando su combinación infinita con la rueda de los días.',
-      'Esta estructura cíclica agrupa los días en bloques conocidos como "trecenas", periodos de trece jornadas continuas que funcionaban como las semanas actuales. Cada trecena está presidida por la influencia o deidad del día número uno que la encabeza.',
-      'Los chamanes mayas relacionaron el número trece con el cuerpo humano al contabilizar trece articulaciones mayores (cuello, hombros, codos, muñecas, caderas, rodillas y tobillos). Consideraban que el humano reproducía la geometría del cielo estrellado.',
-      'La cuenta giratoria del uno al trece formaba un ciclo de energía rítmica. El primer día de trecena representaba el arranque; los días intermedios marcaban el desarrollo, y el trece significaba la conclusión madura.'
+    "id": "trece-numeros",
+    "bannerImage": "/assets/maya/infographic_m4/banner_eclipse-maya.webp",
+    "title": "Los 13 Números",
+    "color": "#C62828",
+    "btnImage": "/assets/maya/infographic_m4/btn_trece-numeros.jpg",
+    "image": "/assets/maya/infographic_m4/hero_trece-numeros.jpg",
+    "content": [
+      "El número 13 poseía una trascendencia mística y cosmológica de primer orden en el pensamiento maya prehispánico. Lejos de ser una cifra elegida al azar, el 13 representaba la totalidad de los estratos celestiales que conformaban la bóveda superior del universo, conocida como Oxlahuntik'u («los Trece Dioses Celestiales»). Cada uno de estos trece niveles del cielo estaba regido por una deidad específica que aportaba una energía particular al fluir constante del tiempo sagrado.",
+      "En el engranaje del Tzolk'in, los coeficientes numéricos del 1 al 13 actuaban como multiplicadores cualitativos de la influencia del día. Mientras que el nombre del día (los 20 signos) indicaba la naturaleza o esencia del ser cósmico presente, el número revelaba la intensidad, la madurez o la dirección de esa fuerza divina. El número 1 simbolizaba el nacimiento, la chispa inicial y la pureza germinal, mientras que el número 13 encarnaba la culminación, la máxima potencia y el cierre de un ciclo de energía.",
+      "Los escribas mayas representaban los trece números mediante dos sistemas gráficos complementarios de gran elegancia visual. El sistema ordinario empleaba barras horizontales y puntos circulares: los puntos valían uno y las barras equivalían a cinco (por ejemplo, el número 8 se componía de una barra con tres puntos superpuestos, y el 13 se plasmaba con dos barras y tres puntos). Este código aritmético permitía una lectura instantánea y libre de errores en cualquier dintel o códice.",
+      "En monumentos conmemorativos solemnes erigidos por los reyes, los escultores sustituían las barras y puntos por las llamadas variantes de cabeza o glifos cefalomorfos. En esta variante artística superior, cada número del 1 al 13 era personificado por el retrato del perfil sagrado de su respectiva deidad celeste: el dios del maíz joven para el número 8, el dios de la muerte para el número 10, o el dios solar con ojos estrábicos Kinich Ahau para el número 4.",
+      "La interacción armónica entre el número y el signo generaba trece ciclos menores de veinte días cada uno (13 × 20 = 260) conocidos como «trecenas». Cada trecena comenzaba formalmente con un día dotado con el coeficiente número 1 (por ejemplo, la trecena 1 Imix o la trecena 1 Manik') y funcionaba como una especie de semana sagrada maya durante la cual imperaban los augurios y presagios dictados por el dios patrono del día inaugural."
     ],
-    expandables: [
-      { label: 'Anatomía y Cosmos', icon: 'clock', text: 'La conexión de las trece articulaciones humanas simbolizaba cómo el orden del universo se repetía en el cuerpo físico del individuo.' },
-      { label: 'Las 20 Trecenas', icon: 'atom', text: 'El ciclo sagrado de 260 días se organiza en 20 trecenas (bloques de 13 días). Toda la aritmética maya refleja simetría y ritmos cósmicos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los mayas también asociaban el número 13 con las articulaciones principales del cuerpo humano por donde creían que fluía la energía vital: dos tobillos, dos rodillas, dos caderas, dos muñecas, dos codos, dos hombros y el cuello vertebral. Así, el ser humano era concebido como un microcosmos vivo del calendario de trece niveles celestes."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las variantes cefalomorfas de los números del 1 al 13 en las estelas de Copán y Quiriguá presentan detalles anatómicos diagnósticos inalterables: los números del 14 al 19 se formaban combinando la mandíbula descarnada del dios de la muerte (número 10) con los rasgos faciales de los números del 4 al 9, demostrando un sistema gráfico modular."
+      }
     ],
-    fact: 'El trece era tan importante que el panteón de los dioses celestiales principales se organizaba en una asamblea de exactamente trece divinidades conocidas como Oxlahuntiku.'
+    "fact": "El número 13 simbolizaba en la cosmología maya los 13 niveles del supramundo gobernados por los Oxlahuntik'u, y al combinarse con los 20 signos diarios dividía el Tzolk'in en 20 trecenas regulares o semanas sagradas, representadas en estelas reales mediante retratos de rostros de dioses patronos y deidades numéricas celestes que regían de manera ininterrumpida el destino de los linajes gobernantes."
   },
   {
-    id: 'destino-nacimiento',
-              bannerImage: '/assets/maya/infographic_m4/banner_milky-way-maya.webp',
-    title: 'Destino al Nacer',
-    color: '#00838F',
-    btnImage: '/assets/maya/infographic_m4/btn_destino-nacimiento.jpg',
-    image: '/assets/maya/infographic_m4/hero_destino-nacimiento.jpg',
-    content: [
-      'Al momento de nacer, tu coordenada calendárica en el Tzolkin determinaba tu carácter y tu vocación, formando parte de tu nombre. La comunidad entera trataba esta lectura como un indicador vital del destino individual.',
-      'Por ejemplo, nacer en un día "8 Batz" (ocho mono) era señal de destreza manual y talento creativo. Un niño nacido en esa fecha estaba destinado a ser artesano o tejedor, y la profesión se asumía como una misión dictada por el calendario.',
-      'Este destino calendárico orientaba la educación de los niños. A los nacidos bajo el signo de la guerra o el pedernal se les entrenaba como guerreros y se les enseñaba a dominar su propensión natural al conflicto o el enojo repentino.',
-      'Antes del matrimonio, especialistas consultaban el calendario para comparar las energías de ambos contrayentes. Buscaban verificar si la pareja compartía presagios compatibles antes de unir sus vidas.',
-      'Actualmente, en las comunidades de Guatemala, muchas familias kiche mantienen esta tradición y determinan la personalidad y vocación de los niños analizando el calendario sagrado de 260 días.'
+    "id": "destino-nacimiento",
+    "bannerImage": "/assets/maya/infographic_m4/banner_milky-way-maya.webp",
+    "title": "Destino al Nacer",
+    "color": "#00838F",
+    "btnImage": "/assets/maya/infographic_m4/btn_destino-nacimiento.jpg",
+    "image": "/assets/maya/infographic_m4/hero_destino-nacimiento.jpg",
+    "content": [
+      "En el mundo maya antiguo, la fecha en que una persona llegaba al mundo dentro del calendario Tzolk'in determinaba de forma decisiva su carácter personal, sus habilidades innatas, sus debilidades físicas y su destino social dentro de la comunidad. Esta concepción fatalista y ordenada del nacimiento partía de la convicción de que cada individuo recibía como alma compañera o espíritu guardián la energía espiritual inmanente al día sagrado en que había respirado por primera vez.",
+      "Tan pronto como una mujer daba a luz en su hogar, los padres acudían a la residencia del sacerdote contador de los días, conocido como el Ajk'ij o ah k'in. El sabio desenrollaba las láminas policromadas de sus códices adivinatorios de papel amate para consultar las tablas de pronósticos correspondientes a la combinación numérica y al signo del día del recién nacido, evaluando si el nacimiento había ocurrido bajo un augurio favorable, neutro o peligroso.",
+      "El día de nacimiento otorgaba al infante su nombre calendárico de por vida, que lo acompañaría antes de recibir su nombre propio de linaje familiar. Así, un gobernante célebre podía llamarse formalmente 18 Conejo (Waxaklajun Ub'ah K'awiil) en Copán o 8 Ciervo en otras regiones mesoamericanas. Si un niño nacía en un día con coeficiente 13 o bajo el signo Ajaw, los presagios anticipaban que poseería elocuencia, liderazgo político y vocación de mando militar.",
+      "Por el contrario, nacer bajo signos regidos por deidades del inframundo, como Kimi (la muerte) o en ciertas combinaciones del signo Eb (la maleza que marchita), requería precauciones extraordinarias. Los sacerdotes no consideraban estos días como una condena inevitable, sino como una advertencia preventiva que obligaba a la familia a realizar baños rituales purificatorios en cenotes y a ofrecer copal aromático para desviar las influencias desfavorables del destino.",
+      "Los dones profesionales también se derivaban del Tzolk'in: aquellos nacidos bajo el signo Chuwen se convertían en tejedores virtuosos, escultores de jade o escribas letrados; los nacidos en Manik' eran cazadores certeros y rastreadores infalibles en la manigua; y los nacidos en Men poseían visión profética y capacidad para interpretar visiones celestes. De esta forma, el calendario sagrado asignaba a cada individuo un lugar funcional y digno dentro de la estructura social colectiva."
     ],
-    expandables: [
-      { label: 'Un Nombre, Una Misión', icon: 'clock', text: 'Personajes históricos como el gobernante "Ocho Venado" llevaban su fecha de nacimiento como nombre propio principal e indicativo de su naturaleza.' },
-      { label: 'Fechas Temibles', icon: 'atom', text: 'Las configuraciones calendáricas desafortunadas, como los últimos cinco días del ciclo solar Haab, requerían rituales de compensación al momento de nacer.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Entre los mayas contemporáneos k'iche' y kaqchikeles de Guatemala, esta tradición del signo de nacimiento se conserva con el nombre de «Nawal». Al consultar al guía espiritual comunitario, una persona puede conocer su Nawal protector para orientar sus decisiones vocacionales, su vida matrimonial y su salud física a lo largo de la vida."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La antropóloga Barbara Tedlock documentó en su obra clásica «Time and the Highland Maya» que los sacerdotes mayas de Momostenango realizan complejos diagnósticos de psicología tradicional y terapias comunitarias interpretando el signo del Tzolk'in de los pacientes, manteniendo una tradición terapéutica ininterrumpida de milenios."
+      }
     ],
-    fact: 'En las tierras altas de Guatemala, la población indígena aún celebra el cumpleaños Tzolkin de las personas (que ocurre cada 260 días) con ceremonias tradicionales.'
+    "fact": "El signo del Tzolk'in asignaba a cada ser humano al nacer su nombre calendárico oficial, su espíritu guardián protector (Nawal) y su perfil vocacional ante la comunidad, estructurando la identidad psicológica y las responsabilidades sociales de cada individuo desde su primer día de vida terrenal, influyendo decisivamente en sus rituales de iniciación, matrimonio y asignación de deberes dentro de la jerarquía cívico-religiosa."
   },
   {
-    id: 'ciclo-agricola-ritual',
-              bannerImage: '/assets/maya/infographic_m4/banner_observatorio-caracol.webp',
-    title: 'Ciclo Ritual',
-    color: '#2E7D32',
-    btnImage: '/assets/maya/infographic_m4/btn_ciclo-agricola-ritual.jpg',
-    image: '/assets/maya/infographic_m4/hero_ciclo-agricola-ritual.jpg',
-    content: [
-      'El Tzolkin era una herramienta práctica para las actividades cotidianas y agrarias. Sus ciclos conectaban la matemática astronómica con el ritmo biológico y agrícola de las poblaciones mayas en Mesoamérica.',
-      'La similitud entre los 260 días del ciclo y el periodo promedio de gestación humana fortaleció la idea de interdependencia entre los astros lejanos y la biología corporal terrestre.',
-      'En algunas latitudes geográficas del sur, los 260 días marcan la distancia entre los dos pasos del sol por el cénit anual (cuando no proyecta sombra). Este marcador solar determinaba los ritmos agrícolas.',
-      'La agenda ritual empataba las fechas del Tzolkin con el ciclo de cultivo del maíz. Fallar en la sincronización de siembra y ofrendas se consideraba un riesgo para la alimentación comunitaria.',
-      'Los astrónomos utilizaban el ciclo de 260 jornadas junto a observaciones de planetas como Venus, creando mecanismos que les permitían sincronizar eclipses y eventos orbitales clave en un solo reloj calendárico.'
+    "id": "ciclo-agricola-ritual",
+    "bannerImage": "/assets/maya/infographic_m4/banner_observatorio-caracol.webp",
+    "title": "Ciclo Ritual",
+    "color": "#2E7D32",
+    "btnImage": "/assets/maya/infographic_m4/btn_ciclo-agricola-ritual.jpg",
+    "image": "/assets/maya/infographic_m4/hero_ciclo-agricola-ritual.jpg",
+    "content": [
+      "Uno de los grandes misterios que cautivó a los arqueólogos durante el siglo XX fue descifrar por qué los antiguos mayas y sus antecesores mesoamericanos eligieron precisamente el intervalo de 260 días como base para su calendario sagrado, una cifra que aparentemente no coincide con ningún ciclo orbital terrestre inmediato ni con el año trópico ordinario de 365 días.",
+      "Diversos científicos contemporáneos han formulado explicaciones biológicas y agronómicas sumamente sólidas. La teoría biológica más respaldada subraya que 260 días corresponden de manera casi exacta al periodo de gestación humana promedio, que transcurre a lo largo de aproximadamente 266 días desde la fecundación biológica hasta el parto (equivalente a unas 38 semanas o 9 meses lunares). Para una sociedad que veneraba la fertilidad de la vida, este paralelismo resultaba sagrado.",
+      "Desde la perspectiva agrícola, en las tierras altas del sur de Mesoamérica (donde probablemente nació el sistema calendárico), el periodo de 260 días coincide con exactitud con el intervalo completo de cultivo del maíz de temporal: desde que la semilla germina en la tierra tras las primeras lluvias primaverales de mayo hasta la cosecha definitiva del grano maduro a finales del otoño, cerrando el ciclo sagrado de la alimentación comunitaria.",
+      "En el ámbito de la mecánica celeste, el número 260 encierra conmensurabilidades formidables con otros cuerpos celestes. Tres periodos del ciclo sinódico del planeta Mercurio (cuyo ciclo es de 115.88 días terrestres) suman aproximadamente 348 días, los cuales guardan relaciones proporcionales con el Tzolk'in. Asimismo, dos ciclos del Tzolk'in (520 días) equivalen con sorprendente precisión a tres «años de eclipses» astronómicos de 173.31 días cada uno (3 × 173.31 = 519.93 días).",
+      "Esta asombrosa convergencia entre la reproducción del cuerpo humano, la germinación sagrada del maíz en la milpa y los intervalos de peligro de eclipses solares y lunares convertía al Tzolk'in en una ecuación cósmica perfecta. Para la cosmovisión maya, el calendario de 260 días no era una invención artificial humana, sino el descubrimiento directo del código secreto con el que los dioses habían diseñado el funcionamiento sincronizado de la vida en la Tierra y el cielo."
     ],
-    expandables: [
-      { label: 'El Paso Cenital', icon: 'atom', text: 'En regiones como Copán, el intervalo de 260 días exactos entre los pasos del sol cenital probablemente inspiró el nacimiento de este calendario en la antigüedad.' },
-      { label: 'Venus y la Guerra', icon: 'atom', text: 'Los astrónomos sincronizaban el Tzolkin con las órbitas de Venus. Este planeta se asociaba con la guerra, dictando momentos precisos para campañas militares.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Entre el 12 de agosto y el 30 de abril transcurren exactamente 260 días solares en el calendario civil. Esta ventana temporal coincide con las fechas de paso del Sol por el cenit en la latitud de 14.8° Norte (donde se ubica el sitio preclásico de Izapa), lo que refuerza la tesis astronómica del origen geográfico meridional del Tzolk'in mesoamericano."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La relación matemática exacta de que dos ciclos de Tzolk'in (520 días) coinciden con tres semestres de eclipses o estaciones nodales de la órbita lunar (519.93 días con una diferencia de solo 0.07 días) fue la herramienta fundamental que permitió a los astrónomos mayas compilar la tabla de predicción de eclipses del Códice de Dresde."
+      }
     ],
-    fact: 'Las comunidades mayas actuales siguen empleando el ciclo adivinatorio agrario de 260 días para guiar las fechas de siembra y planificar fiestas patronales.'
+    "fact": "El periodo de 260 días del Tzolk'in unifica el tiempo promedio de gestación del ser humano (266 días), el ciclo completo de maduración del maíz de temporal y la relación matemática exacta de 2 ciclos de Tzolk'in por cada 3 estaciones de eclipses solares (520 días = 519.93 días astronómicos nodales)."
   },
   {
-    id: 'sacerdotes-contadores',
-              bannerImage: '/assets/maya/infographic_m4/banner_pleiades-mayas.webp',
-    title: 'Los Sacerdotes Contadores',
-    color: '#263238',
-    btnImage: '/assets/maya/infographic_m4/btn_sacerdotes-contadores.jpg',
-    image: '/assets/maya/infographic_m4/hero_sacerdotes-contadores.jpg',
-    content: [
-      'El mantenimiento de este sistema matemático requería especialistas entrenados. Existía una jerarquía dedicada a la observación astronómica y calendárica. Aún se conocen en Guatemala como "aj qij" o Contadores de los Días.',
-      'Estos chamanes utilizaban cristales de cuarzo y semillas de colorín en pequeños envoltorios de tela. Al esparcir y organizar las semillas sobre un altar, calculaban fechas en un proceso místico y matemático.',
-      'El conocimiento profundo del calendario no era público, sino un saber esotérico y protegido. Se transmitía a aprendices solo después de rigurosas iniciaciones y extensa disciplina preparatoria.',
-      'Su rol era central para la sociedad. Además de marcar tiempos de siembra o matrimonio, actuaban como asesores y orientadores de la comunidad, indicando los ritos necesarios para afrontar problemas cotidianos.',
-      'La supervivencia de la cuenta ininterrumpida de días hasta hoy es mérito de estos sabios. Durante siglos defendieron su matemática del acecho colonial e inquisitorial y mantuvieron viva esta reliquia cronológica cultural.'
+    "id": "sacerdotes-contadores",
+    "bannerImage": "/assets/maya/infographic_m4/banner_pleiades-mayas.webp",
+    "title": "Los Sacerdotes Contadores",
+    "color": "#263238",
+    "btnImage": "/assets/maya/infographic_m4/btn_sacerdotes-contadores.jpg",
+    "image": "/assets/maya/infographic_m4/hero_sacerdotes-contadores.jpg",
+    "content": [
+      "El cuidado, la interpretación y la transmisión del calendario sagrado Tzolk'in recaían sobre una corporación sacerdotal especializada conocida en lengua maya como los Ajk'ijob (término k'iche' que traduce literalmente «los contadores del Sol y de los días») o ah k'inob en las tierras bajas de Yucatán. Estos sabios constituían la élite intelectual, moral y espiritual más respetada en las comunidades urbanas y rurales de todo el territorio maya.",
+      "Para realizar sus cálculos calendáricos y adivinatorios, los sacerdotes no dependían únicamente de su prodigiosa memoria. Portaban consigo una bolsa ceremonial de tejido tradicional llamada «vara» o «morral sagrado», que contenía los instrumentos litúrgicos de su oficio: cientos de semillas rojas brillantes del árbol de tz'ite' o colorín (*Erythrina corallodendron*), pequeños cristales de roca de cuarzo transparente recogidos en cavernas sagradas y jadeítas pulidas de antiguos ancestros.",
+      "Durante una sesión de consulta, el Ajk'ij limpiaba una mesa de madera o una estera de petate y arrojaba puñados de semillas de tz'ite' sobre la superficie. Mediante hábiles agrupaciones de cuatro en cuatro semillas (representando los cuatro rumbos del universo) y contando progresivamente a través de las trecenas del Tzolk'in, el sacerdote interpretaba el mensaje oracular de acuerdo con el número de granos sobrantes y las sensaciones musculares involuntarias de sus propios brazos.",
+      "La preparación para convertirse en contador del tiempo era un proceso riguroso que demandaba años de discipulado con un maestro anciano. El aspirante debía superar periodos prolongados de ayuno en cuevas oscuras, aprender de memoria los cientos de presagios de cada fecha, dominar la farmacopea botánica tradicional para curar enfermedades físicas y demostrar una conducta ética intachable ante los miembros de su linaje familiar y comunitario.",
+      "A pesar de la destrucción masiva de códices mayas y templos durante la conquista española del siglo XVI y las campañas de evangelización forzada, la corporación de los Ajk'ijob demostró una resistencia cultural sin parangón en América. En las comunidades mayas de las montañas de Guatemala, los sacerdotes contadores han mantenido el cómputo diario del Tzolk'in día por día, sin haber perdido una sola jornada de la cuenta sagrada en más de dos mil años ininterrumpidos."
     ],
-    expandables: [
-      { label: 'La Resistencia Viva', icon: 'clock', text: 'El calendario adivinatorio jamás perdió un solo día durante la conquista y colonización, logrando sostenerse intacto gracias a la resistencia pacífica en la clandestinidad.' },
-      { label: 'Iniciación Chamánica', icon: 'clock', text: 'El aprendizaje iniciático incluye años de entrenamiento riguroso. Los aprendices recogen ceremoniales en las montañas sagradas antes de ser reconocidos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los sacerdotes Ajk'ijob interpretan diminutos espasmos o temblores involuntarios en los músculos de sus brazos y piernas (conocidos como «el relámpago en la sangre») durante la lectura de las semillas de tz'ite'. Consideran que estas pulsaciones físicas son respuestas directas de las deidades celestes confirmando la verdad de un oráculo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Estudios etnológicos contemporáneos coordinados por la Universidad de San Carlos de Guatemala han censado a miles de guías espirituales mayas debidamente iniciados que ejercen activamente en santuarios de montaña, altares de cueva y sitios arqueológicos como Iximché y Kaminaljuyú calculando el Cholq'ij a diario."
+      }
     ],
-    fact: 'El vocablo quiché "aj qij" se traduce como "Aquel del sol o Aquel del día". Su función es ser el mediador interpretativo entre las deidades calendáricas y las personas.'
+    "fact": "Los sacerdotes contadores Ajk'ijob utilizan morrales ceremoniales con semillas rojas de tz'ite' (*Erythrina corallodendron*) y cristales de cuarzo para efectuar conteos de cuatro en cuatro semillas, una técnica matemática de adivinación oracular que ha sobrevivido intacta en Guatemala desde tiempos prehispánicos."
   },
   {
-    id: 'mesoamerica-universal',
-              bannerImage: '/assets/maya/infographic_m4/banner_venus-maya.webp',
-    title: 'Calendario Universal',
-    color: '#FF5722',
-    btnImage: '/assets/maya/infographic_m4/btn_mesoamerica-universal.jpg',
-    image: '/assets/maya/infographic_m4/hero_mesoamerica-universal.jpg',
-    content: [
-      'El ciclo ritual de los 260 días no fue exclusivo de los mayas. Operó como un calendario estándar en todo el territorio mesoamericano y sus diversas culturas, conectando el norte, el altiplano y la costa.',
-      'La cultura azteca conocía esta misma cuenta bajo el nombre náhuatl "Tonalpohualli", y mantenía la estructura de trece números combinados con veinte signos patronímicos.',
-      'Civilizaciones más distantes, como los zapotecas y mixtecos en Oaxaca, emplearon el mismo sistema temporal cíclico, utilizando nombres y glifos pictográficos propios pero manteniendo el reloj idéntico.',
-      'Esta universalidad sugiere que el ciclo fue concebido en el albor de la historia formativa de la región, probablemente por la civilización matriz olmeca de la costa del Golfo.',
-      'Esta herramienta interconectada permitía a reinos enemigos calibrar sus augurios en el mismo formato matemático, proveyendo a toda Mesoamérica de un marco cósmico y de convivencia unificado.'
+    "id": "mesoamerica-universal",
+    "bannerImage": "/assets/maya/infographic_m4/banner_venus-maya.webp",
+    "title": "Calendario Universal",
+    "color": "#FF5722",
+    "btnImage": "/assets/maya/infographic_m4/btn_mesoamerica-universal.jpg",
+    "image": "/assets/maya/infographic_m4/hero_mesoamerica-universal.jpg",
+    "content": [
+      "El calendario de 260 días no fue una creación exclusiva ni aislada de la cultura maya; constituyó el rasgo civilizatorio más unificador, definitorio y universal de toda el área cultural mesoamericana. Desde las áridas fronteras septentrionales del río Lerma en el centro de México hasta el golfo de Nicoya en Costa Rica, decenas de civilizaciones con lenguas y orígenes étnicos radicalmente distintos compartieron este mismo mecanismo cronológico con exactitud sincronizada.",
+      "Entre los pueblos de habla náhuatl del altiplano central, incluidos los mexicas o aztecas de Tenochtitlan, este ciclo recibía el nombre de Tonalpohualli («la cuenta de los destinos» o tonallis), organizado con idéntica mecánica de 13 números y 20 signos diarios. Los zapotecos y mixtecos de los valles y serranías de Oaxaca lo denominaban Piye; los totonacas de Veracruz y los pipiles de Centroamérica lo integraron con reverencia similar en sus respectivos panteones religiosos.",
+      "Lo verdaderamente extraordinario desde el punto de vista histórico y arqueoastronómico es que, a pesar de las inmensas distancias geográficas y de los siglos de guerras y transformaciones políticas que sacudieron la región, el calendario de 260 días marchaba con una sincronía absoluta en toda Mesoamérica. Una fecha del Tzolk'in en una estela clásica maya de Tikal o Palenque correspondía matemáticamente al mismo día exacto del Tonalpohualli grabado en códices mixtecos o mexicas.",
+      "Esta concordancia interétnica perfecta prueba que todos los calendarios mesoamericanos de 260 días derivaban de una fuente cultural común primigenia, desarrollada probablemente por las sociedades olmecas o zapotecas tempranas durante el primer milenio antes de Cristo. Dicho cómputo original se transmitió como un pacto civilizatorio sagrado que ninguna dinastía osó alterar ni desfasar a lo largo de más de treinta siglos continuos de historia documentada.",
+      "Hoy en día, el Tzolk'in maya y sus equivalentes mesoamericanos son reconocidos por antropólogos e historiadores universales como uno de los sistemas cronológicos y cosmológicos más originales jamás concebidos por el genio humano. Al margen de cualquier influencia externa del Viejo Mundo, los pueblos originarios de Mesoamérica crearon un reloj sagrado que supo entrelazar con pasmosa belleza las matemáticas, la naturaleza, la ética social y el destino del cosmos."
     ],
-    expandables: [
-      { label: 'El Origen Olmeca', icon: 'atom', text: 'Se sospecha que la matriz originaria de este ciclo calendario de 260 días nació entre los olmecas costeros y se dispersó al resto de las culturas vecinas.' },
-      { label: 'Un Interlingua', icon: 'atom', text: 'Aunque culturas distintas hablaran idiomas irreconocibles entre sí, el calendario funcionaba como un lenguaje matemático cósmico que todo mesoamericano comprendía.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cuando el conquistador Hernán Cortés desembarcó en las costas de Veracruz en 1519, los cronistas españoles registraron con asombro que los sacerdotes aztecas, totonacas y mayas compartían el mismo cómputo sagrado del día, permitiéndoles correlacionar con exactitud el calendario indígena con el calendario cristiano europeo de la época."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El célebre mayista Alfonso Caso demostró mediante análisis comparativos de más de cincuenta manuscritos pictográficos que la correlación entre el Tonalpohualli mexica, el Piye zapoteco y el Tzolk'in maya clásico funcionaba sin un solo día de desfase en todo el territorio de Mesoamérica en el momento del contacto en el siglo XVI."
+      }
     ],
-    fact: 'El Códice Borgia de origen mixteco-puebla es hoy en día uno de los manuales adivinatorios precolombinos mejor preservados de este ciclo análogo de 260 días.'
+    "fact": "El ciclo sagrado de 260 días operó de forma sincronizada y universal en todas las grandes culturas mesoamericanas (como Tzolk'in maya, Tonalpohualli náhuatl y Piye zapoteco), manteniendo una correlación matemática idéntica de día por día a lo largo de más de tres mil años ininterrumpidos de historia."
   }
 ];
 

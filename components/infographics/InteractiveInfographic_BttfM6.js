@@ -140,144 +140,207 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'hg-wells',
-    title: 'La Primera Máquina del Tiempo',
-    color: '#FF6B35',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_wells.webp',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_wells.webp',
-    content: [
-      'En 1895, el escritor inglés H.G. Wells publicó \'La Máquina del Tiempo\', cambiando la concepción del viaje temporal. Wells imaginó un dispositivo mecánico capaz de avanzar y retroceder en el tiempo de forma controlada.',
-      'Wells escribió esta obra diez años antes de que Einstein publicara su teoría de la relatividad. En ese momento, la ciencia consideraba que el tiempo era absoluto. Wells anticipó la idea de que el tiempo podía ser flexible.',
-      'Previamente, la literatura abordaba el viaje temporal mediante elementos mágicos o sueños. La contribución de Wells fue introducir una máquina tecnológica, vinculando el concepto a la ciencia y la ingeniería.',
-      'La novela también exploró dilemas filosóficos sobre el futuro de la humanidad. El protagonista viaja al año 802,701 y encuentra a la especie humana dividida en los Eloi y los Morlocks, planteando interrogantes sobre la evolución social.'
+    "id": "hg-wells",
+    "title": "La Primera Máquina del Tiempo",
+    "color": "#FF6B35",
+    "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_wells.webp",
+    "image": "/assets/bttf/infographic_maquina_tiempo/hero_wells.webp",
+    "content": [
+      "En la cultura audiovisual moderna, la imagen definitiva de una máquina del tiempo es un reluciente deportivo DeLorean plateado con puertas de ala de gaviota y luces de neón azules. Robert Zemeckis transformó la idea del salto temporal en una aventura sobre ruedas por los suburbios estadounidenses. Sin embargo, toda esta mitología contemporánea desciende en línea directa de una obra literaria fundacional escrita casi un siglo antes: la célebre novela corta La máquina del tiempo publicada por el británico H. G. Wells en 1895.",
+      "Antes de la obra de Wells, los viajes en el tiempo en la literatura tradicional se explicaban mediante encantamientos mágicos, visiones oníricas o siestas prolongadas como en el cuento de Rip Van Winkle de Washington Irving. Herbert George Wells fue el primero en introducir una máquina mecánica con palancas de marfil, cristal de roca y latón que trataba el tiempo no como un misterio místico, sino explícitamente como una cuarta dimensión geométrica del espacio que un aparato humano podía recorrer hacia atrás o adelante.",
+      "Lo asombroso del planteamiento wellsiano es que su intuición geométrica precedió en toda una década a la publicación formal de la relatividad especial de Albert Einstein en 1905 y al formalismo tetradimensional de Hermann Minkowski en 1908. En el primer capítulo de la novela, el Viajero del Tiempo explica a un grupo de académicos incrédulos que cualquier cuerpo físico real debe poseer cuatro dimensiones fundamentales: longitud, anchura, grosor y duración temporal, sin la cual ningún objeto puede existir en la realidad física.",
+      "Wells utilizó esta máquina mecánica victoriana como un poderoso vehículo sociológico para proyectar las desigualdades de la Revolución Industrial hacia el año 802.701 d.C., donde la humanidad se ha dividido biológicamente en dos especies degeneradas: los frágiles y ociosos Eloi en la superficie y los monstruosos y laboriosos Morlocks en el subsuelo subterráneo, demostrando que la mejor ciencia ficción utiliza el futuro como un espejo crítico de los dilemas éticos y políticos del presente.",
+      "El doctor Emmett Brown es el heredero espiritual indiscutible de ese Viajero del Tiempo victoriano de Wells. En la tercera entrega de la saga cinematográfica, el Doc rinde un explícito y conmovedor homenaje al autor inglés bautizando a sus dos hijos pequeños nacidos en el siglo XIX con los nombres de Julio y Verne, conectando de forma entrañable las raíces literarias del siglo XIX con la ciencia ficción cinematográfica del siglo XX."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En \'Regreso al Futuro\', Doc Brown es un inventor excéntrico que crea una máquina del tiempo en su garaje. Esto es un homenaje directo a H.G. Wells: un genio solitario que construye algo imposible. La diferencia es que Doc usa un DeLorean y Wells imaginó una silla con palancas de cristal. ¡Pero la idea fundamental es idéntica!' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'H.G. Wells predijo los tanques de guerra (en \'La Guerra de los Mundos\', 1898), los bombardeos aéreos (en \'La Guerra en el Aire\', 1908) y la energía nuclear (en \'The World Set Free\', 1914, ¡30 años antes de Hiroshima!). Winston Churchill lo consultaba sobre el futuro de la tecnología militar.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En el desenlace de Regreso al Futuro Parte III, el doctor Emmett Brown y su esposa Clara Clayton presentan formalmente a sus dos hijos ante un atónito Marty McFly en la estación de ferrocarril de 1985. Los dos niños se llaman Julio y Verne Brown, un tributo cinematográfico reverente a Jules Verne, el maestro literario de los viajes extraordinarios del siglo XIX."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El matemático alemán Hermann Minkowski introdujo en 1908 su célebre formulación geométrica tetradimensional del espaciotiempo con la frase: «De ahora en adelante el espacio por sí mismo y el tiempo por sí mismo están condenados a desvanecerse en meras sombras, y solo una especie de unión de ambos preservará una realidad independiente»."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_hg-wells.webp',
-    bannerCaption: 'H.G. Wells y su Máquina del Tiempo: el origen literario del viaje temporal',
-    fact: 'La novela \'La Máquina del Tiempo\'de Wells se ha adaptado al cine dos veces (1960 y 2002), pero ninguna captura la verdadera intención de Wells: era una crítica social sobre la desigualdad de clases en la Inglaterra victoriana. Los Eloi representaban a la aristocracia ociosa y los Morlocks a la clase trabajadora. ¡La ciencia ficción como espejo de la sociedad!'
+    "bannerImage": "/assets/bttf/infographic_m6/banner_hg-wells.webp",
+    "bannerCaption": "H.G. Wells y su Máquina del Tiempo: el origen literario del viaje temporal",
+    "fact": "La primera edición de la novela The Time Machine de H. G. Wells fue publicada por la editorial londinense William Heinemann en mayo de 1895 con una tirada inicial de 10.000 ejemplares en rústica, vendiéndose en pocos meses y consagrando el término «máquina del tiempo» en el vocabulario de todas las lenguas modernas del mundo civilizado."
   },
   {
-    id: 'agujeros-gusano',
-    title: 'Agujeros de Gusano',
-    color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gusano.webp',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_gusano.webp',
-    content: [
-      'Un agujero de gusano es un atajo teórico a través del espacio-tiempo, que conectaría dos puntos distantes uniendo áreas curvadas del tejido espacial.',
-      'En 1935, Einstein y Nathan Rosen propusieron esta teoría, conocida como \'puentes Einstein-Rosen\'. Postularon que la curvatura extrema del espacio-tiempo podría crear un túnel entre dos regiones separadas.',
-      'El físico Kip Thorne propuso en 1988 que un agujero de gusano podría funcionar como máquina del tiempo. Si un extremo se acelera a velocidades cercanas a la de la luz, experimentaría dilatación temporal, existiendo en un momento diferente al otro extremo.',
-      'La dificultad principal es que mantener abierto este túnel requeriría \'materia exótica\'con densidad de energía negativa. Actualmente, no hay evidencia de que esta materia exista en cantidades suficientes para este propósito.'
+    "id": "agujeros-gusano",
+    "title": "Agujeros de Gusano",
+    "color": "#7C4DFF",
+    "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_gusano.webp",
+    "image": "/assets/bttf/infographic_maquina_tiempo/hero_gusano.webp",
+    "content": [
+      "En la ficción de Regreso al Futuro, el DeLorean atraviesa una nube brillante de chispas eléctricas y descargas de plasma para aparecer instantáneamente en otra fecha sin recorrer el espacio intermedio. Esta forma de salto dimensional recuerda conceptualmente a una de las predicciones más fascinantes de la relatividad general de Albert Einstein: los puentes de Einstein-Rosen, conocidos popularmente en la física moderna como agujeros de gusano o túneles topológicos del espaciotiempo.",
+      "Propuestos inicialmente en 1935 por Albert Einstein y Nathan Rosen como soluciones matemáticas puras para describir partículas elementales en el marco de la gravitación clásica, los agujeros de gusano son hipotéticos atajos espaciales que conectan dos regiones distantes del cosmos a través de una garganta hiperespacial. Décadas más tarde, el físico John Archibald Wheeler acuñó el término «wormhole», comparando el universo con una manzana donde un gusano perfora un túnel central directo en lugar de arrastrarse por la superficie curva de la fruta.",
+      "En 1988, el astrofísico de Caltech Kip Thorne y sus estudiantes Michael Morris y Ulvi Yurtsever publicaron un estudio trascendental en la revista Physical Review Letters que demostró cómo un agujero de gusano podría transformarse teóricamente en una auténtica máquina del tiempo. Si una de las dos bocas del túnel se acelera a velocidades cercanas a la luz o se coloca cerca de un pozo gravitatorio intenso, la dilatación temporal de Einstein crea un desfase cronológico permanente entre ambas entradas.",
+      "Un viajero que ingrese por la boca acelerada y salga por la boca estacionaria emergería físicamente en el pasado de la región externa, completando un viaje temporal a través de una curva temporal cerrada. No obstante, mantener abierto un agujero de gusano de tamaño macroscópico apto para naves humanas requiere desafiar la física conocida: las fuerzas gravitatorias colapsarían la garganta en un microsegundo a menos que esté forrada internamente con materia exótica que posea densidades de energía negativas.",
+      "La existencia de densidades de energía negativa está demostrada a escala cuántica microscópica mediante el efecto Casimir, descubierto en 1948 por el físico Hendrik Casimir, donde la presión de radiación entre dos placas conductoras paralelas en el vacío se vuelve negativa respecto al exterior. Sin embargo, extrapolar este efecto cuántico infinitesimal para mantener abierta una garganta gravitatoria de varios metros representa un obstáculo de ingeniería cósmica que roza lo insuperable."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En BTTF, el condensador de flujo crea una \'ruptura\'en el espacio-tiempo que el DeLorean atraviesa a 88 mph. Aunque la película no usa la palabra \'agujero de gusano\', la idea de un puente que conecta dos puntos distantes en el tiempo se basa en este mismo principio teórico.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Kip Thorne escribió el primer artículo científico serio sobre agujeros de gusano como máquinas del tiempo en 1988... ¡inspirado por una pregunta de Carl Sagan! Sagan estaba escribiendo su novela \'Contact\'y necesitaba un método científicamente plausible para viajar instantáneamente. Le pidió ayuda a Thorne, y de esa consulta entre amigos salió un artículo que cambió la física teórica.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Para crear el efecto visual del salto temporal del DeLorean en 1985, los artistas de efectos ópticos de Industrial Light & Magic filmaron descargas eléctricas reales sobre una maqueta a escala y combinaron varias capas de animación óptica fotograma a fotograma para simular el colapso luminoso del espacio antes de que el coche desaparezca dejando dos huellas de fuego sobre el asfalto."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El efecto Casimir predice una fuerza de atracción entre dos placas metálicas neutras situadas en el vacío cuántico separadas por distancias nanométricas. Esta fuerza se debe a que la cavidad entre las placas restringe los modos de longitud de onda de los fotones virtuales del vacío, generando una densidad de energía neta inferior a la del vacío exterior circundante."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_agujeros-gusano.webp',
-    bannerCaption: 'Agujeros de gusano traversables: túneles teóricos a través del espacio-tiempo',
-    fact: 'En 2019, los físicos Juan Maldacena y Alexei Milekhin propusieron un agujero de gusano \'humanamente atravesable\'que NO requeriría materia exótica, solo geometría del espacio-tiempo muy específica. El viaje tomaría menos de un segundo para el viajero, pero miles de años pasarían en el exterior. ¡Es un viaje al futuro, no al pasado!'
+    "bannerImage": "/assets/bttf/infographic_m6/banner_agujeros-gusano.webp",
+    "bannerCaption": "Agujeros de gusano traversables: túneles teóricos a través del espacio-tiempo",
+    "fact": "En su estudio pionero de 1988, Kip Thorne calculó que para estabilizar un agujero de gusano esférico de Morris-Thorne de 1 metro de diámetro se necesitaría una tensión radial negativa colosal en la garganta equivalente a 10 elevado a la potencia de 38 pascales, una presión negativa de magnitud astronómica muy superior a la presión reinante en el centro de las estrellas más masivas."
   },
   {
-    id: 'motor-alcubierre',
-    title: 'El Motor Warp',
-    color: '#00E5FF',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_warp.webp',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_warp.webp',
-    content: [
-      'En 1994, el físico Miguel Alcubierre propuso un modelo matemático que permitiría viajar a velocidades superiores a la de la luz sin violar la teoría de la relatividad general de Einstein.',
-      'El motor de curvatura funcionaría expandiendo el espacio detrás de una nave y contrayéndolo por delante. La nave permanecería inmóvil dentro de una burbuja espaciotemporal, mientras que el espacio a su alrededor se desplazaría.',
-      'Esto es compatible con la relatividad porque la restricción de velocidad lumínica aplica a objetos moviéndose a través del espacio, no a la expansión o contracción del espacio mismo.',
-      'Los principales obstáculos del modelo de Alcubierre incluyen el requerimiento de enormes cantidades de materia exótica y la emisión de radiación letal. Aunque inviable tecnológicamente en el presente, representa un avance teórico importante.'
+    "id": "motor-alcubierre",
+    "title": "El Motor Warp",
+    "color": "#00E5FF",
+    "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_warp.webp",
+    "image": "/assets/bttf/infographic_maquina_tiempo/hero_warp.webp",
+    "content": [
+      "En Regreso al Futuro Parte II, cuando el DeLorean vuela a través del cielo del año 2015 o salta entre siglos, los personajes parecen eludir las barreras impuestas por la relatividad especial sin experimentar aumentos infinitos de masa relativista. En 1994, el físico teórico mexicano Miguel Alcubierre Moya propuso un modelo matemático asombroso dentro de la relatividad general que revolucionó la ciencia de la propulsión superlumínica: la métrica de Alcubierre o motor de curvatura warp.",
+      "Inspirado por la ciencia ficción televisiva de Star Trek mientras cursaba sus estudios doctorales en la Universidad de Gales en Cardiff, Alcubierre demostró que una nave espacial podría viajar formalmente a mayor velocidad que la luz respecto a observadores distantes sin violar la velocidad local de la luz. El secreto reside en no mover la nave a través del espacio local, sino en deformar la propia geometría del espaciotiempo que rodea al vehículo.",
+      "La métrica de Alcubierre propone generar una «burbuja de curvatura» que comprime el espaciotiempo delante de la nave y expande el espaciotiempo detrás de ella en igual proporción. La nave espacial permanece en reposo relativo en el interior de una región de espacio plano en el centro de la burbuja, lo que protege a los tripulantes de fuerzas de aceleración gravitatoria mortales y de efectos destructivos de dilatación temporal relativista mientras la burbuja se desliza a velocidades superlumínicas arbitrarias.",
+      "El vínculo fascinante entre el motor de Alcubierre y las máquinas del tiempo fue demostrado poco después por físicos teóricos como Allen Everett. Si las leyes fundamentales de la naturaleza permitieran mover una burbuja de curvatura a velocidades hiperlumínicas a través del espacio plano, dos o más de estos motores coordinados en marcos de referencia móviles permitirían construir trayectorias espaciales que regresan al punto de origen antes de haber partido, formando una curva temporal cerrada.",
+      "Al igual que los agujeros de gusano transitables de Thorne, el gran talón de Aquiles de la métrica de Alcubierre es su dependencia matemática ineludible de la materia exótica con energía negativa. Cálculos iniciales sugerían que la energía negativa necesaria para envolver una nave de tamaño modesto equivaldría a la masa total de todo el universo observable, aunque refinamientos geométricos posteriores han logrado reducir ese requerimiento teórico a masas del orden de la masa del planeta Júpiter."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El DeLorean no usa un motor warp, pero la idea de necesitar una velocidad específica (88 mph) para \'activar\'el viaje en el tiempo tiene una analogía real: en el motor Alcubierre, la burbuja necesita alcanzar una configuración energética precisa para formarse. Es como si hubiera un \'umbral\'que debes cruzar â€” ¡exactamente como las 88 millas por hora!' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Miguel Alcubierre, el físico mexicano que propuso el motor warp, se inspiró DIRECTAMENTE en Star Trek. Era fan de la serie cuando era niño en la Ciudad de México. Años después, como estudiante de doctorado en Gales, se preguntó: \'¿Podría la relatividad general permitir algo así?\'La respuesta fue sí. ¡De niño fan a físico que cambió el campo!' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El célebre DeLorean DMC-12 modificado por el Doc Brown exhibe dos grandes tubos de escape plateados en su parte trasera que expulsan vapor criogénico y condensación tras cada salto. Zemeckis y Gale querían que el automóvil pareciera un cruce tosco y verosímil entre un caza militar a reacción de los años ochenta y una nave espacial ensamblada en un garaje suburbano."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad de la luz en el vacío es una barrera insuperable para cualquier cuerpo que se mueva «a través» del espacio local, según la relatividad especial. Sin embargo, las ecuaciones de Einstein en la relatividad general no imponen ningún límite de velocidad a la rapidez con la que el propio tejido del espaciotiempo puede expandirse, contraerse o deformarse dinámicamente."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_motor-alcubierre.webp',
-    bannerCaption: 'El motor Alcubierre: viaje superlumínico comprimiendo el espacio-tiempo',
-    fact: 'En 2021, el físico Erik Lentz publicó un artículo proponiendo una burbuja warp que NO necesitaría materia exótica, solo energía positiva organizada de una manera específica. Aunque necesitaría la energía equivalente a cientos de masas solares, es la primera vez que se elimina el requisito de materia exótica. La comunidad científica lo debate activamente.'
+    "bannerImage": "/assets/bttf/infographic_m6/banner_motor-alcubierre.webp",
+    "bannerCaption": "El motor Alcubierre: viaje superlumínico comprimiendo el espacio-tiempo",
+    "fact": "El físico e ingeniero aeroespacial de la NASA Harold «Sonny» White propuso en 2011 una modificación a la geometría de la burbuja de Alcubierre suavizando la interfaz del anillo de curvatura mediante oscilaciones de intensidad; sus cálculos teóricos demostraron que esta optimización reducía el requerimiento de energía exótica desde el equivalente a la masa de Júpiter hasta unos 700 kilogramos de masa-energía."
   },
   {
-    id: 'delorean-ingenieria',
-    title: 'Ingeniería del DeLorean',
-    color: '#FFA726',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_delorean.webp',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_delorean.webp',
-    content: [
-      'El DeLorean DMC-12 fue desarrollado por John DeLorean, quien estableció su fábrica en Irlanda del Norte con apoyo del gobierno británico.',
-      'Su carrocería está fabricada en acero inoxidable sin pintar. Este material contiene cromo, el cual forma una capa de óxido que previene la corrosión.',
-      'Las puertas de "ala de gaviota" se abren verticalmente mediante resortes de torsión y amortiguadores de gas, un diseño que facilita el acceso en espacios reducidos.',
-      'La producción se limitó a 9,000 unidades entre 1981 y 1983 debido a problemas financieros. Actualmente, existen empresas dedicadas a la restauración y mantenimiento de los vehículos restantes.'
+    "id": "delorean-ingenieria",
+    "title": "Ingeniería del DeLorean",
+    "color": "#FFA726",
+    "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_delorean.webp",
+    "image": "/assets/bttf/infographic_maquina_tiempo/hero_delorean.webp",
+    "content": [
+      "En la gran pantalla, el DeLorean DMC-12 aparece como un prodigio de la tecnología científica capaz de saltar épocas con la precisión de un bisturí y aterrizar intacto sobre el barro de 1885 o el asfalto de 1955. La magia del celuloide oculta que, bajo esa carrocería plateada de acero inoxidable, el automóvil real era un vehículo sumamente complejo, pesado y repleto de compromisos mecánicos que rozaron la pesadilla de ingeniería durante su accidentada fabricación industrial en Irlanda del Norte.",
+      "El chasis del automóvil fue rediseñado por el legendario ingeniero británico Colin Chapman, fundador de la escudería de Fórmula 1 Lotus Cars. Chapman implementó una estructura de chasis de acero en doble «Y» similar a la del deportivo Lotus Esprit, complementada con un cuerpo monocasco inferior de plástico reforzado con fibra de vidrio (ERPC). Esta base servía de soporte estructural para los paneles exteriores de acero inoxidable austenítico cepillado de 1,2 milímetros de espesor.",
+      "Uno de los elementos visuales más icónicos del vehículo son sus puertas de ala de gaviota con apertura vertical. A diferencia de las puertas convencionales con bisagras laterales, estas requerían barras de torsión criogénicas de aleación especial de titanio y puntales neumáticos de gas presurizado para contrarrestar el considerable peso del metal y permitir que una persona pudiera abrir la puerta hacia arriba con un esfuerzo mínimo de solo unos pocos kilogramos de fuerza.",
+      "En las secuencias de filmación de la trilogía, el equipo de efectos especiales mecánicos liderado por Michael Lantieri tuvo que resolver constantes dolores de cabeza mecánicos. El sistema eléctrico original del DeLorean de serie era notoriamente frágil y sufría continuas caídas de tensión eléctrica cuando se conectaban los cientos de bombillas halógenas, sintetizadores de sonido estéreo y pantallas de tubos fluorescentes de neón instaladas en el salpicadero interior por los cineastas.",
+      "La integración del reactor nuclear de fisión en el maletero trasero añadió un peso considerable a un vehículo que ya sufría de una distribución de masas desequilibrada (con más del 65% del peso total cargado sobre el eje posterior). Para evitar que el morro del coche se levantara durante las aceleraciones bruscas en los rodajes nocturnos, los mecánicos de producción instalaron contrapesos de plomo en el vano delantero y amortiguadores de competición reforzados."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El guion original de BTTF tenía la máquina del tiempo como un REFRIGERADOR, no un coche. Steven Spielberg (productor ejecutivo) temió que los niños se encerraran en refrigeradores imitando a Marty, así que los guionistas lo cambiaron a un coche. Eligieron el DeLorean porque su carrocería de acero y puertas de gaviota ya parecían una nave espacial.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'A 88 mph (141 km/h), el DeLorean enfrenta una fuerza de arrastre aerodinámico de aproximadamente 450 Newtons. Su coeficiente aerodinámico (Cd) es de 0.35 â€” no es terrible, pero tampoco elegante. Para comparar: un Tesla Model S tiene 0.208. El motor V6 PRV de 2.8 litros del DeLorean producía solo 130 HP, lo justo para alcanzar 88 mph... ¡pero sin sobrar potencia!' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Durante los rodajes en el desierto de Mojave para las escenas de 1885 en Regreso al Futuro Parte III, el terreno accidentado y las rocas destruyeron continuamente los bajos del coche deportivo. El equipo técnico construyó un chasis especial montado sobre el bastidor de un todoterreno Volkswagen buggy para que el coche pudiera rodar a gran velocidad sobre las vías del tren de vapor."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las barras de torsión criogénicas de las puertas de ala de gaviota del DeLorean fueron diseñadas por la compañía Grumman Aerospace. El metal era sometido a un tratamiento térmico criogénico extremo sumergiéndolo en nitrógeno líquido para fijar la estructura metalográfica de la aleación y evitar que la barra perdiera elasticidad mecánica tras miles de aperturas continuas."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_delorean-ingenieria.webp',
-    bannerCaption: 'La ingeniería real del DeLorean DMC-12: el auto que inspiro a la máquina del tiempo',
-    fact: 'En la vida real, el DeLorean era un coche bastante lento. Su motor V6 de 130 caballos (originalmente iba a ser un Wankel rotativo) lo aceleraba de 0 a 100 km/h en 10.5 segundos â€” más lento que un Honda Civic actual. La ironía es que la máquina del tiempo más famosa del cine necesita velocidad para funcionar, ¡pero el coche real era notoriamente lento!'
+    "bannerImage": "/assets/bttf/infographic_m6/banner_delorean-ingenieria.webp",
+    "bannerCaption": "La ingeniería real del DeLorean DMC-12: el auto que inspiro a la máquina del tiempo",
+    "fact": "El DeLorean DMC-12 poseía un coeficiente de resistencia aerodinámica (Cx) de aproximadamente 0,35 a 0,37 en su versión comercial de fábrica; al instalar en el exterior las tuberías de refrigeración, bobinas magnéticas y rejillas del condensador temporal para la película, su resistencia aerodinámica empeoró drásticamente, obligando a usar motores V8 trucados para las tomas dinámicas."
   },
   {
-    id: 'condensador-flujo',
-    title: 'El Condensador de Flujo',
-    color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_condensador.webp',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_condensador.webp',
-    content: [
-      'En la ficción, el condensador de flujo permite el viaje en el tiempo. Según la historia, Doc Brown ideó su diseño en forma de "Y" invertida tras un accidente doméstico en 1955.',
-      'En la física, el flujo electromagnético es una magnitud real que cuantifica el campo magnético a través de una superficie. Sus variaciones pueden inducir corriente eléctrica, principio base de los generadores.',
-      'El requerimiento energético de 1.21 gigavatios es comparable a la producción de una central nuclear. Los rayos naturales pueden alcanzar estas potencias, aunque durante fracciones de segundo.',
-      'Posteriormente, el dispositivo utiliza un reactor de fusión que transforma materia en energía. La fusión nuclear, similar a la reacción en las estrellas, es un área activa de investigación para la generación de energía.'
+    "id": "condensador-flujo",
+    "title": "El Condensador de Flujo",
+    "color": "#E040FB",
+    "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_condensador.webp",
+    "image": "/assets/bttf/infographic_maquina_tiempo/hero_condensador.webp",
+    "content": [
+      "«Esto es lo que hace que los viajes en el tiempo sean posibles: el condensador de flujo», pronuncia un solemne Emmett Brown señalando una caja metálica montada entre los dos respaldos de los asientos del DeLorean. En la mitología cinematográfica, este artefacto trifásico con luces pulsantes es el corazón místico de la máquina. Aunque en la ciencia real no existe ningún dispositivo con ese nombre, el concepto condensa ideas fascinantes del electromagnetismo de altas energías y la física de condensadores.",
+      "En la ingeniería eléctrica convencional, un condensador o capacitor es un componente pasivo diseñado para almacenar energía electrostática en un campo eléctrico generado entre dos placas conductoras separadas por un material aislante dieléctrico. Cuando un condensador se descarga bruscamente en un circuito oscilante RLC, es capaz de entregar potencias de pico gigantescas en fracciones de microsegundo, un principio empleado en los láseres de fusión del National Ignition Facility y en los desfibriladores médicos.",
+      "La ficción cinematográfica postula que el condensador de flujo no almacena meras cargas eléctricas de electrones, sino un misterioso «flujo temporal» concentrado que se libera cuando el coche alcanza exactamente 88 millas por hora. Para alimentar este proceso, el Doc recurre inicialmente a pastillas de plutonio 239 militar que alimentan un reactor nuclear de fisión instalado en el maletero del coche, capaz de generar la colosal potencia instantánea de 1,21 gigavatios declarada por el inventor.",
+      "Si interpretamos este dispositivo con los ojos de la física moderna, el condensador de flujo funcionaría de manera análoga a un generador de curvatura espaciotemporal ultraconcentrado. Para rasgar la geometría plana del espaciotiempo y abrir una garganta de tipo agujero de gusano durante una milésima de segundo en la trayectoria del vehículo, se requeriría una densidad de energía puntual equiparable a la liberada en el colapso gravitatorio de una supernova en miniatura.",
+      "El diseño estético del condensador, con sus tres brazos luminosos formando una «Y» mayúscula que convergen en un punto nodal central, es una obra maestra de diseño industrial de Hollywood. Transmite visualmente al cerebro humano la idea intuitiva de líneas de fuerza que se concentran en un único punto focal, logrando que un concepto de pura fantasía científica se sienta tangible, peligroso y tecnológicamente creíble para el espectador."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En los primeros borradores del guion de "Regreso al Futuro", la máquina del tiempo era un refrigerador forrado de plomo. Para obtener la energía inmensa necesaria para el viaje temporal, Marty debía llevar el refrigerador al centro de una prueba de explosión nuclear en Nevada.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En 2014, científicos de la Universidad de Queensland, Australia, crearon un dispositivo real que llamaron \'capacitor de flujo cuántico\'(quantum flux capacitor). No viaja en el tiempo, pero puede hacer que la información cuántica circule en dos direcciones simultáneamente â€” algo que las computadoras cuánticas necesitan. Los científicos reconocieron que el nombre fue un homenaje deliberado a BTTF.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La célebre caja del condensador de flujo fue fabricada por el departamento de atrezo utilizando una caja de fusibles eléctricos industriales de la marca Stahlin Enclosures. Las luces pulsantes de color ámbar y azul se consiguieron con bombillas incandescentes de salpicadero conectadas a un secuenciador electrónico casero que aceleraba el parpadeo a medida que el coche ganaba velocidad."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En electromagnetismo clásico, el término «flujo» designa formalmente la cantidad de campo magnético o eléctrico que atraviesa una superficie cerrada determinada, medido matemáticamente a través de las leyes fundamentales de Gauss y Maxwell. El flujo magnético se mide en el Sistema Internacional en webers, que equivale a voltios multiplicados por segundo."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_condensador-flujo.webp',
-    bannerCaption: 'El condensador de flujo: la pieza que hace posible el viaje en el tiempo',
-    fact: 'El diseño en \'Y\'del condensador de flujo fue dibujado por el diseñador de producción Lawrence G. Paull. La forma tiene tres \'brazos\'que convergen en un centro brillante. Curiosamente, algunos chips de computadora modernos tienen una topología similar para distribuir energía. El condensador de flujo ficción inspiró investigación real en distribución de flujo energético.'
+    "bannerImage": "/assets/bttf/infographic_m6/banner_condensador-flujo.webp",
+    "bannerCaption": "El condensador de flujo: la pieza que hace posible el viaje en el tiempo",
+    "fact": "El isótopo de plutonio 239 utilizado en la película para suministrar la energía nuclear inicial posee una vida media radiactiva de 24.110 años y emite partículas alfa de alta energía; su masa crítica para una esfera metálica desnuda sin reflector es de aproximadamente 10 kilogramos, con un diámetro de solo 10 centímetros debido a su extrema densidad física de 19,86 g/cm³."
   },
   {
-    id: 'turistas-futuro',
-    title: '¿Dónde Están los Turistas?',
-    color: '#66BB6A',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_turistas.webp',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_turistas.webp',
-    content: [
-      'La paradoja sobre la ausencia de turistas temporales sugiere que, si el viaje al pasado fuera posible, deberíamos haber recibido visitantes del futuro.',
-      'En 2009, el físico Stephen Hawking organizó una recepción para viajeros en el tiempo, enviando las invitaciones después del evento. Ningún invitado asistió, lo que ilustró esta paradoja.',
-      'Algunas hipótesis proponen que el viaje al pasado solo sería posible hasta el momento de creación de la primera máquina, o que los visitantes evitan la detección.',
-      'La Conjetura de Protección de la Cronología de Hawking sugiere que las leyes físicas impiden el viaje al pasado. Según esta idea, los efectos cuánticos destruirían cualquier máquina temporal antes de su uso.'
+    "id": "turistas-futuro",
+    "title": "¿Dónde Están los Turistas?",
+    "color": "#66BB6A",
+    "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_turistas.webp",
+    "image": "/assets/bttf/infographic_maquina_tiempo/hero_turistas.webp",
+    "content": [
+      "En Regreso al Futuro Parte II, Marty McFly compra un modesto libro de estadísticas deportivas en una tienda de antigüedades del año 2015 con la intención egoísta de hacerse millonario apostando en su propio tiempo. Este acto cómico toca un punto neurálgico de la física teórica y la cosmología de civilizaciones: si el ser humano inventará la máquina del tiempo en algún momento de los próximos diez mil o diez millones de años, ¿por qué no vemos a turistas del futuro pululando por nuestras ciudades históricas?",
+      "Este interrogante es una variante temporal directa de la célebre paradoja de Fermi formulada por el físico Enrico Fermi en 1950 respecto a los extraterrestres: si el cosmos es tan antiguo y vasto, ¿dónde está todo el mundo? En el contexto de los viajes en el tiempo, si la tecnología para viajar al pasado llega a ser descubierta por civilizaciones avanzadas, el registro histórico de todas las épocas humanas debería estar repleto de crónicas irrefutables de visitantes con tecnologías hiperavanzadas.",
+      "Los físicos teóricos ofrecen varias explicaciones rigurosas a esta aparente ausencia. La primera explicación técnica proviene de las soluciones matemáticas de agujeros de gusano de Morris y Thorne: una máquina del tiempo basada en la física de la relatividad general jamás puede viajar a una fecha anterior al momento exacto en que la máquina fue encendida y activada por primera vez. Como aún no hemos construido la primera máquina del tiempo en la Tierra, el pasado permanece cerrado para el futuro.",
+      "Una segunda hipótesis proviene de la sociología de civilizaciones y la ética de la preservación histórica, similar a la directiva primaria de no interferencia de la literatura de ficción. Los viajeros del futuro podrían poseer tecnologías de invisibilidad óptica cuántica tan sofisticadas que observarían nuestros acontecimientos en modo pasivo sin interactuar físicamente ni alterar los registros materiales para evitar desencadenar cataclismos causales o ramificaciones indeseadas.",
+      "La tercera posibilidad, defendida por físicos escépticos como Stephen Hawking, es mucho más tajante y desmitificadora: los turistas del futuro no están entre nosotros por la sencilla razón de que las leyes inviolables de la termodinámica, la radiación cuántica y la gravitación prohíben de forma absoluta y permanente el viaje físico de seres macroscópicos hacia el pasado, convirtiendo los saltos pretéritos en una quimera exclusivamente literaria."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En BTTF, la máquina del tiempo SOLO transporta a quien está dentro del DeLorean. No hay \'turistas\'aleatorios apareciendo del futuro porque solo existe UNA máquina (la de Doc). Cuando Biff roba el DeLorean en BTTF II, es la primera vez que alguien más la usa â€” y crea un desastre temporal. La película ilustra perfectamente por qué controlar el acceso a una máquina del tiempo es crucial.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La paradoja del turista tiene una solución matemática elegante llamada \'Principio de Autoconsistencia de Novikov\'(1980s): las leyes de la física solo permitirían viajes al pasado que NO crean paradojas. No podrías matar a tu abuelo ni crear contradicciones. El universo te \'forzaría\'a actuar de manera consistente. Es como si la realidad tuviera un auto-corrector.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El libro del almanaque deportivo Gray's Sports Almanac 1950-2000, con los resultados oficiales de cincuenta años de fútbol americano, béisbol, boxeo y carreras de caballos, es el motor dramático que destruye la línea temporal original. En el rodaje de 1989 se imprimieron decenas de copias con páginas interiores rellenas de resultados deportivos auténticos combinados con tipografías ficticias."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En física de agujeros de gusano de Lorentzian, el horizonte de Cauchy marca el instante límite en el que se forma la primera curva temporal cerrada. Los cálculos cuánticos demuestran que en ese instante exacto la radiación de vacío se amplifica hasta densidades energéticas destructivas, impidiendo que el túnel conecte con instantes previos al encendido del dispositivo."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_turistas-futuro.webp',
-    bannerCaption: 'El turismo temporal del futuro: visitar la historia sin cambiarla',
-    fact: 'Hawking consideró su fiesta vacía como \'evidencia experimental\'(con humor) contra el viaje al pasado. Pero hay un detalle delicioso: un viajero del futuro inteligente SABRÍA que ir a la fiesta de Hawking confirmaría públicamente el viaje temporal, con consecuencias impredecibles. ¡Quizás la razón de no ir a la fiesta es que sería la peor decisión posible para un viajero del tiempo!'
+    "bannerImage": "/assets/bttf/infographic_m6/banner_turistas-futuro.webp",
+    "bannerCaption": "El turismo temporal del futuro: visitar la historia sin cambiarla",
+    "fact": "El 28 de junio de 2009, Stephen Hawking celebró en el Gonville and Caius College de Cambridge su fiesta para viajeros temporales con champán y canapés selectos; las invitaciones, con coordenadas GPS exactas (52° 12' 21\" N, 0° 7' 4\" E), se publicaron tras la fiesta y continúan grabadas en registros digitales a la espera de que alguien aparezca."
   },
   {
-    id: 'gobernanza-temporal',
-    title: 'Gobernanza del Tiempo',
-    color: '#FF7043',
-    btnImage: '/assets/bttf/infographic_maquina_tiempo/btn_gobernanza.webp',
-    image: '/assets/bttf/infographic_maquina_tiempo/hero_gobernanza.webp',
-    content: [
-      'Si se desarrollara tecnología para viajar en el tiempo, surgirían importantes cuestiones sobre su control y acceso, planteando desafíos éticos complejos.',
-      'La escala de Kardashev clasifica a las civilizaciones según su uso de energía. Construir una máquina del tiempo requeriría un control energético muy superior al nivel actual de la humanidad.',
-      'La capacidad de alterar eventos pasados genera dilemas sobre las consecuencias de dichos cambios. Algunos filósofos, como David Lewis, sostienen que cualquier alteración resultaría en una historia autoconsistente.',
-      'La gestión de estas tecnologías implicaría definir la responsabilidad de preservar o modificar la historia, evitando conflictos sobre las alteraciones temporales.'
+    "id": "gobernanza-temporal",
+    "title": "Gobernanza del Tiempo",
+    "color": "#FF7043",
+    "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_gobernanza.webp",
+    "image": "/assets/bttf/infographic_maquina_tiempo/hero_gobernanza.webp",
+    "content": [
+      "A lo largo de las tres entregas de Regreso al Futuro, el doctor Emmett Brown vive en una angustia moral permanente ante el poder destructivo de su propia creación. Advierte a Marty contra el riesgo de alterar matrimonios, ganar dinero fácil o destruir el tejido del espaciotiempo, llegando a la conclusión desgarradora de que la máquina debe ser destruida por el bien de la humanidad. Esta reflexión cinematográfica plantea un debate ético crucial: si el viaje en el tiempo fuera posible, ¿cómo debería regularse y gobernarse?",
+      "La ciencia ficción ha imaginado diversas estructuras de gobernanza para administrar el tiempo: desde la «Patrulla del Tiempo» concebida por el escritor Poul Anderson hasta la compleja burocracia de la TVA en los cómics contemporáneos. Estas agencias operan con agentes temporales dedicados a monitorizar las líneas de universo, erradicar contrabandistas cronológicos y neutralizar anomalías causales que amenacen con borrar civilizaciones enteras del tapiz histórico.",
+      "Desde la perspectiva de la teoría de juegos y las relaciones internacionales contemporáneas, una máquina del tiempo representaría el arma asimétrica suprema y definitiva, infinitamente más peligrosa y desestabilizadora que el arsenal termonuclear más potente. Si una nación o corporación tuviera la capacidad de viajar al pasado para sabotear el desarrollo científico, industrial o militar de sus rivales antes de que nazcan, la estabilidad geopolítica del planeta colapsaría instantáneamente.",
+      "El problema de la regulación se complica aún más al considerar la economía y los derechos ontológicos fundamentales. ¿A quién pertenecería un invento o descubrimiento científico si un viajero viaja al pasado para registrarlo antes que su autor original? ¿Qué tribunal civil o penal tendría jurisdicción legal sobre un delito cometido en un siglo pretérito por una persona que biológicamente nació trescientos años después en una jurisdicción soberana inexistente en aquella época?",
+      "La lección humanista que nos deja la trilogía trasciende las ecuaciones de la física relativista. En su mensaje de despedida antes de desaparecer hacia nuevas aventuras en el espaciotiempo, el Doc Brown nos recuerda que la mejor forma de gobernar el tiempo es vivir con responsabilidad moral en nuestro propio presente, comprendiendo que el futuro de la sociedad se construye con las decisiones cotidianas que tomamos en este preciso instante."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Doc Brown destruye el DeLorean al final de BTTF III porque comprende que la máquina del tiempo es demasiado peligrosa. Es una decisión de \'gobernanza temporal\'personal: elige que nadie más pueda viajar en el tiempo. Sin embargo, Doc construye un NUEVO vehículo temporal (la locomotora) â€” sugiriendo que la tentación del viaje temporal es irresistible, incluso para su inventor.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La humanidad consume actualmente unos 18 terawatts de energía total (toda la electricidad, transporte, industria del planeta). Una civilización Tipo I necesitaría 174 petawatts (10,000 veces más). Una Tipo II usaría la energía total del Sol: 3.8 × 10²â¶ watts. Para tener perspectiva: la energía que produce el Sol en UN SEGUNDO bastaría para alimentar toda la civilización humana actual durante 500,000 años.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Al final de la tercera entrega cinematográfica, el DeLorean es arrollado e instantáneamente pulverizado por una locomotora de carga moderna al aparecer sobre las vías en 1985. Marty contempla los restos mecánicos destrozados con alivio y aceptación, mientras el Doc Brown le envía una carta afirmando que la máquina finalmente está donde debía estar: destruida."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En filosofía de la ciencia y metafísica temporal, la teoría del eternalismo sostiene que todos los puntos del tiempo (pasado, presente y futuro) poseen exactamente el mismo estatus ontológico de existencia real en el universo de bloque, lo que plantea dilemas éticos profundos sobre si las acciones futuras son ya inmutables o susceptibles de elección moral."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m6/banner_gobernanza-temporal.webp',
-    bannerCaption: 'La gobernanza ética del viaje temporal: leyes y organismos del futuro',
-    fact: 'En 2004, el astrofísico Richard Gott III calculó que la probabilidad de que nuestra civilización sobreviva lo suficiente para construir una máquina del tiempo es de menos del 5%, usando el \'Argumento del Juicio Final\'(Doomsday Argument). Su razonamiento estadístico sugiere que el hecho de que existamos tan temprano en la historia de la humanidad hace improbable que la humanidad dure millones de años más. ¡Demoledor pero fascinante!'
+    "bannerImage": "/assets/bttf/infographic_m6/banner_gobernanza-temporal.webp",
+    "bannerCaption": "La gobernanza ética del viaje temporal: leyes y organismos del futuro",
+    "fact": "El Tratado sobre el Espacio Ultraterrestre de las Naciones Unidas de 1967, firmado por más de 110 países para regular la exploración pacífica de la Luna y otros cuerpos celestes prohibiendo armas de destrucción masiva orbitales, es citado a menudo por juristas internacionales como el modelo normativo preliminar a seguir en caso de que la humanidad desarrolle tecnologías temporales."
   }
 ];
 

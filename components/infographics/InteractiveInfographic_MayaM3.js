@@ -119,145 +119,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'haab-estructura',
-              bannerImage: '/assets/maya/infographic_m3/banner_calendarios-calculo.webp',
-    title: 'Estructura del Haab',
-    color: '#FDD835',
-    btnImage: '/assets/maya/infographic_m3/btn_haab-estructura.jpg',
-    image: '/assets/maya/infographic_m3/hero_haab-estructura.jpg',
-    content: [
-      'Imagina que quieres organizar una fiesta o un festival, pero no tienes un calendario en la pared ni un teléfono. ¿Cómo sabrías cuándo celebrar? Los antiguos mayas construyeron su propio sistema para medir el tiempo. Crearon el "Haab", un calendario solar de trescientos sesenta y cinco días. Era como un reloj que guiaba la vida de su civilización.',
-      'Al igual que nosotros agrupamos nuestros días en meses, ellos también lo hacían, pero con reglas matemáticas diferentes. En lugar de tener doce meses desiguales, los mayas dividieron su año en dieciocho meses simétricos. Cada uno de estos meses tenía exactamente veinte días.',
-      'Si multiplicas dieciocho meses por veinte días, el resultado es trescientos sesenta. Casi todo el año estaba organizado en periodos de veinte días. Pero un año solar verdadero tiene trescientos sesenta y cinco días. Los mayas reservaron los cinco días restantes para el final.',
-      'Añadieron un mes especial de solo cinco días al terminar su ciclo regular, llamado "Wayeb". Con esto, la cuenta llegaba a trescientos sesenta y cinco días de forma exacta. Esta estructura matemática les permitía planificar desde ceremonias en templos hasta el momento para cultivar su milpa.',
-      'Piensa en el calendario Haab como los engranajes de un reloj. Cada día tenía un número del cero al diecinueve, y cada mes tenía su propio nombre. El cero fue un número que los mayas descubrieron antes que los europeos. Por eso, el primer día del mes era el "asiento", representando el cero. El tiempo fluía de forma matemática.'
+    "id": "haab-estructura",
+    "bannerImage": "/assets/maya/infographic_m3/banner_calendarios-calculo.webp",
+    "title": "Estructura del Haab",
+    "color": "#FDD835",
+    "btnImage": "/assets/maya/infographic_m3/btn_haab-estructura.jpg",
+    "image": "/assets/maya/infographic_m3/hero_haab-estructura.jpg",
+    "content": [
+      "El Haab' era el calendario solar civil utilizado por los antiguos mayas para organizar las actividades agrícolas, cívicas y tributarias en sus ciudades-estado. A diferencia del calendario sagrado Tzolk'in de carácter adivinatorio, el Haab' medía de forma directa el curso aparente del Sol a lo largo de las cuatro estaciones tropicales. Su estructura matemática básica comprendía exactamente 365 días solares enteros organizados en un esquema regular y predecible que regulaba el ritmo de la vida cotidiana.",
+      "Este calendario se dividía en dieciocho periodos regulares de veinte días cada uno, denominados uinalob en las lenguas mayas. La multiplicación de estos 18 meses por los 20 días asignados producía una cuenta regular de 360 días solares, un periodo base conocido astronómicamente como Tun. Para completar la duración del año solar observable en la Tierra, los sabios mayas agregaban un decimonoveno periodo suplementario muy breve compuesto por únicamente cinco días finales conocidos como Wayeb'.",
+      "La correlación aritmética de 18 meses de veinte días más los cinco días adicionales del Wayeb' (18 × 20 + 5 = 365) convertía al Haab' en un instrumento calendárico extraordinariamente estable y metódico. Cada día del año poseía un identificador numérico que iba acompañado por el nombre específico del mes correspondiente. De esta manera, el paso del tiempo quedaba registrado sin ambigüedad en los códices pintados de papel amate y en los dinteles de piedra caliza de las acrópolis.",
+      "Una característica técnica fascinante del Haab' era su sistema de numeración interna para los días de cada mes. En lugar de comenzar a contar desde el día 1, los mayas iniciaban cada periodo con una fecha denominada Chum, que los epigrafistas modernos traducen como el «asiento» o entronización del mes, funcionando como un día cero de preparación. Tras el asiento de la veintena, los días siguientes se numeraban de manera correlativa del 1 hasta el 19, completando así los veinte días asignados.",
+      "Para los agricultores y gobernantes mayas, el Haab' representaba el orden civil inmutable del universo físico. Mientras que el cómputo de la Cuenta Larga registraba la historia dinástica a lo largo de milenios, el Haab' ofrecía el marco temporal indispensable para la supervivencia de las comunidades, indicando cuándo preparar los campos de cultivo, cuándo almacenar el grano cosechado en los chultunes subterráneos y cuándo celebrar las fiestas cívicas dedicadas a los dioses del agua."
     ],
-    expandables: [
-      { label: 'Las Matemáticas del Tiempo', icon: 'clock', text: 'Los mayas usaban un sistema matemático vigesimal, basado en el número veinte, usando los dedos de las manos y pies. A diferencia de nuestro sistema decimal, era lógico para ellos crear meses de veinte días. Todo en su calendario encajaba con su forma de contar.' },
-      { label: 'El Ciclo Sin Fin', icon: 'clock', text: 'Los mayas veían el tiempo como ruedas engranadas girando en ciclos, a diferencia de nuestra cuenta lineal. El Haab se combinaba con un calendario de 260 días llamado Tzolkin, formando la Rueda Calendárica. Pasaban cincuenta y dos años solares antes de que una fecha se repitiera de manera idéntica.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La palabra maya «Haab'» no solo significaba «año solar», sino que en sus raíces etimológicas más arcaicas aludía directamente a la lluvia y al agua torrencial. Esto demuestra que para los pueblos mayas el concepto mismo del año estaba ligado de manera inseparable a la llegada periódica de las precipitaciones que revivían la selva tropical."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El concepto mesoamericano del «asiento del mes» (Chum) refleja una concepción filosófica avanzada del tiempo donde el mes entrante toma posesión física del espacio cósmico mientras el mes saliente agota su influencia, funcionando conceptualmente como el número cero dentro del sistema posicional vigesimal maya."
+      }
     ],
-    fact: 'Los astrónomos mayas calcularon la duración del año solar con un margen de error minúsculo. Observaron el cielo desde sus pirámides sin telescopios. Su observación empírica fue tan precisa que sus conocimientos astronómicos rivalizaban con los cálculos de los científicos europeos de esa época.',
+    "fact": "La estructura matemática del Haab' comprende 18 meses de 20 días que suman 360 días (el Tun), a los que se incorporan 5 días finales denominados Wayeb' para alcanzar un total inmutable de 365 días enteros, un cómputo solar utilizado sin interrupción en Mesoamérica durante más de dos mil años documentados."
   },
   {
-    id: 'dieciocho-meses',
-              bannerImage: '/assets/maya/infographic_m3/banner_legado-matematico.webp',
-    title: 'Los 18 Meses',
-    color: '#795548',
-    btnImage: '/assets/maya/infographic_m3/btn_dieciocho-meses.jpg',
-    image: '/assets/maya/infographic_m3/hero_dieciocho-meses.jpg',
-    content: [
-      'Nuestros meses actuales provienen de antiguos dioses o números romanos. Sin embargo, para la civilización maya, los nombres de sus dieciocho meses tenían un significado práctico. Estaban conectados con la naturaleza que los rodeaba en las selvas y montañas de Mesoamérica.',
-      'Cada uno de los meses del Haab duraba veinte días. Tenían nombres como Pop, Wo, Sip, Sotz, Sek, Xul, Yaxkin, Mol, Chen, Yax, Sak, Keh, Mak, Kankin, Muwan, Pax, Kayab y Kumku. Estos nombres estaban vinculados a las actividades agrícolas, animales de la selva y ciclos de lluvias.',
-      'Por ejemplo, el mes "Sotz" significa "murciélago". Durante esta época del año, estos animales eran más activos y los mayas realizaban ceremonias para honrar su papel como polinizadores. El mes"Yaxkin", que se traduce como "primer sol", marcaba el inicio de la temporada seca tras las lluvias.',
-      'Estos meses funcionaban como una guía de supervivencia y prosperidad comunitaria. Le decían a los agricultores y gobernantes cuándo la tierra estaría húmeda para sembrar, cuándo el sol secaría los campos, o cuándo los animales de caza estarían migrando por sus territorios.',
-      'Su calendario era un manual de instrucciones de la naturaleza traducido por los astrónomos. Hoy consultamos aplicaciones meteorológicas para saber si va a llover, pero los mayas miraban su calendario Haab para comprender en qué momento del ciclo natural se encontraban.',
+    "id": "dieciocho-meses",
+    "bannerImage": "/assets/maya/infographic_m3/banner_legado-matematico.webp",
+    "title": "Los 18 Meses",
+    "color": "#795548",
+    "btnImage": "/assets/maya/infographic_m3/btn_dieciocho-meses.jpg",
+    "image": "/assets/maya/infographic_m3/hero_dieciocho-meses.jpg",
+    "content": [
+      "Los dieciocho meses que integraban el calendario regular del Haab' constituían una verdadera enciclopedia de las estaciones ecológicas y los ciclos productivos de la península de Yucatán y las tierras bajas mayas. Cada mes llevaba un nombre en lengua maya yucateca o cholana que describía con precisión poética las condiciones climáticas reinantes, el comportamiento de los animales selváticos o las labores agrícolas específicas que la comunidad entera debía emprender bajo supervisión comunal.",
+      "El primer mes del año recibía el nombre de Pop, vocablo que significa «estera» o «petate», el símbolo por excelencia de la autoridad política, el trono de los gobernantes y el reinicio civil del orden social. A este le seguían meses como Wo (asociado a la rana y a los cantos nocturnos de la lluvia temprana), Sip (dedicado al venado rojo de cola blanca y a los cazadores de la selva) y Sotz' (el mes del murciélago vampiro, cuando las noches se volvían más frescas en la serranía).",
+      "A mitad del año se sucedían meses fundamentales para el cultivo de la milpa como Yaxk'in, cuyo significado literal es «Sol nuevo» o «primera fuerza solar», marcando el periodo de calor canicular indispensable para secar los campos desmontados de vegetación. Meses como Mol aludían a la recolección comunitaria, mientras que Ch'en y Yax hacían referencia al agua limpia de los cenotes sagrados, a los primeros brotes verdes del maíz y a la renovación de los árboles frutales en las huertas residenciales.",
+      "Los meses finales del ciclo incluían denominaciones como Sak' («lo blanco» o tiempo de maduración de las mazorcas), Keh («ciervo maduro» de cornamenta completa), Mak («cubrir» o clausurar las trampas de caza) y Kumk'u («olla de barro» o grano guardado en los graneros comunales). Cada uno de estos nombres funcionaba como una instrucción colectiva que sincronizaba las actividades de cientos de miles de campesinos dispersos por las selvas de Campeche, Quintana Roo y el Petén guatemalteco.",
+      "Durante el transcurso de cada uno de estos dieciocho periodos de veinte días, las ciudades mayas celebraban ceremonias públicas obligatorias en las plazas centrales. En estas festividades se ofrendaban bebidas fermentadas de balché con miel de abeja melipona, resina de copal quemada en sahumadores policromados y danzas multitudinarias con trajes de plumas que agradecían a los protectores del bosque por la abundancia recibida y aseguraban la continuidad biológica de la especie."
     ],
-    expandables: [
-      { label: 'El Mes Pop', icon: 'atom', text: 'El mes "Pop" significa "estera" o "petate", un tapete donde se sentaban los reyes y gobernantes mayas. Este mes marcaba el primer día del Año Nuevo en el calendario Haab. Se encendían fuegos en los templos y las comunidades limpiaban sus casas para dar la bienvenida a un ciclo nuevo.' },
-      { label: 'Ceremonias del Fuego', icon: 'clock', text: 'Durante el mes "Mak", se realizaban ceremonias en las que los sacerdotes extinguían los fuegos en las plazas de las ciudades mayas. Esta ceremonia simbolizaba el final de la temporada de sequía. Era una forma de pedir a las deidades que trajeran las lluvias para los campos de maíz.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los 18 nombres de los meses del Haab' en maya yucateco clásico son: Pop, Wo, Sip, Sotz', Sek, Xul, Yaxk'in, Mol, Ch'en, Yax, Sak', Keh, Mak, K'ank'in, Muwan, Pax, K'ayab y Kumk'u. Cada uno de estos periodos contaba con una deidad tutelar protectora que custodiaba las energías del tiempo durante sus veinte días de vigencia."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las investigaciones etnobotánicas contemporáneas en comunidades mayas de Yucatán han demostrado que los nombres tradicionales de los meses del Haab' coinciden con una precisión de más del 90% con las fases fenológicas de floración, germinación y recolección de las especies vegetales nativas de la selva caducifolia peninsular."
+      }
     ],
-    fact: 'Muchos de estos nombres de meses tienen diferentes interpretaciones dependiendo de la región maya, ya que hablaban más de treinta idiomas distintos. A pesar de las diferencias en la pronunciación, los símbolos jeroglíficos tallados en la piedra significaban lo mismo en todos sus dominios.',
+    "fact": "La secuencia continua de los 18 meses del Haab' estructuraba el año solar en 18 intervalos regulares de 20 días, ofreciendo un sistema métrico vigesimal regular que evitaba las irregularidades de meses con 28, 30 o 31 días propias de los calendarios de origen grecorromano, permitiendo una correspondencia algorítmica impecable con los registros astronómicos y los ciclos agrícolas estacionales."
   },
   {
-    id: 'wayeb-peligroso',
-              bannerImage: '/assets/maya/infographic_m3/banner_matematica-maya.webp',
-    title: 'Los 5 Días Wayeb',
-    color: '#D84315',
-    btnImage: '/assets/maya/infographic_m3/btn_wayeb-peligroso.jpg',
-    image: '/assets/maya/infographic_m3/hero_wayeb-peligroso.jpg',
-    content: [
-      '¿Alguna vez has sentido que un día es extraño o está fuera de lugar? Los antiguos mayas sentían esta preocupación durante cinco días enteros, y toda la comunidad compartía este sentimiento. Así eran los días "Wayeb". Estos cinco días adicionales al final de sus meses sumaban los 365 días del año.',
-      'El Wayeb no era un momento de celebración. Los mayas consideraban que estos días eran peligrosos y de mala suerte. Era un período transitorio donde el orden normal del mundo se detenía. Durante este hueco temporal, las barreras protectoras entre nuestro mundo y el inframundo se debilitaban.',
-      'A estos días se les llamaba los "días sin nombre". Eran vistos como portales a través de los cuales seres monstruosos y energías oscuras podían cruzar hacia el mundo de los humanos. Por eso, durante el Wayeb, la actividad de las ciudades mayas se detenía en un silencio solemne.',
-      'Para mantenerse a salvo, las personas se quedaban escondidas dentro de sus casas y hablaban en voz baja. Evitaban trabajos físicos y viajes por la selva. Incluso intentaban no lavarse el cabello, no barrer sus patios y no encender fuegos para no atraer mala fortuna.',
-      'Los sacerdotes y chamanes trabajaban realizando rituales de protección en las pirámides. Estos ritos sagrados ayudaban a alejar las fuerzas adversas, garantizando que el universo no colapsara y asegurando que el sol volviera a brillar en el Año Nuevo.'
+    "id": "wayeb-peligroso",
+    "bannerImage": "/assets/maya/infographic_m3/banner_matematica-maya.webp",
+    "title": "Los 5 Días Wayeb",
+    "color": "#D84315",
+    "btnImage": "/assets/maya/infographic_m3/btn_wayeb-peligroso.jpg",
+    "image": "/assets/maya/infographic_m3/hero_wayeb-peligroso.jpg",
+    "content": [
+      "El periodo más singular y temido del calendario solar maya era el Wayeb', un intervalo suplementario de únicamente cinco días que se intercalaba al final de los dieciocho meses regulares para alcanzar los 365 días del año astronómico. En las fuentes coloniales y en las inscripciones epigráficas, estos cinco días eran descritos como «días sin nombre», «días vacíos» o «días nefastos» (uayeyab), un tiempo liminal de grave peligro en el que el orden del cosmos se debilitaba temporalmente.",
+      "De acuerdo con la cosmovisión maya, durante el Wayeb' las fronteras protectoras entre el mundo visible terrenal y el inframundo de Xibalbá se volvían delgadas y permeables. Los nueve señores de la muerte y las deidades de las enfermedades podían cruzar libremente hacia la superficie de la Tierra para sembrar caos, pestes y desgracias entre los seres humanos. Para evitar atraer la atención de estos espíritus errantes, la vida cotidiana de las urbes mayas se paralizaba por completo.",
+      "Durante estas cinco jornadas de rigurosa abstinencia, los habitantes evitaban salir de sus casas al caer la noche, no realizaban viajes comerciales por los sacbeob ni iniciaban construcciones monumentales de mampostería. Las mujeres no peinaban sus cabellos ni lavaban sus ropas ceremoniales, los campesinos no tocaban la tierra con herramientas agrícolas y los sacerdotes se abstenían de impartir justicia civil o dictar sentencias públicas, concentrándose exclusivamente en rituales de purificación.",
+      "En los hogares se apagaban todos los fuegos domésticos de los fogones de piedra caliza, simbolizando la muerte física del año viejo que fenecía. Los utensilios de cocina rajados, las esteras viejas de palma y las cerámicas desgastadas eran rotos intencionalmente y arrojados fuera de los poblados para expulsar la mala fortuna acumulada. Toda la comunidad permanecía en una tensa vigilia espiritual, esperando con ansiedad el nacimiento del nuevo ciclo anual solar.",
+      "En la última noche del Wayeb', los sacerdotes ah k'inob subían a las terrazas de las pirámides más altas para escudriñar el firmamento en busca del ascenso de la constelación de las Pléyades o de las estrellas guías del amanecer. En la cima del templo mayor taladraban maderas secas para encender el Fuego Nuevo; de esa llama primordial se encendían antorchas que los corredores distribuían a todos los altares y hogares del reino, marcando la victoria de la vida sobre las tinieblas."
     ],
-    expandables: [
-      { label: 'Criaturas del Inframundo', icon: 'clock', text: 'La sociedad maya creía que deidades y criaturas del Xibalbá (su inframundo) caminaban libres durante el Wayeb. Las leyendas hablaban sobre entes traviesos y deidades de la enfermedad deambulando. El mayor peligro era el colapso repentino y definitivo del universo.' },
-      { label: 'El Dios Mam', icon: 'clock', text: 'Durante este periodo transicional, una deidad antigua llamada el Dios "Mam" reinaba como dueño de estos cinco días. Se le representaba como un anciano llevando una caracola. Simbolizaba el peso de la edad, el declive inminente y la inestabilidad de la creación antes de que el Año Nuevo la reiniciara.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los mayas creían que los niños nacidos durante los cinco días del Wayeb' cargaban con un destino personal desafortunado y enfermizo. Para contrarrestar este augurio negativo, los sacerdotes realizaban ceremonias de bautismo expiatorio en cenotes sagrados y les asignaban nombres protectores que apaciguaran la cólera de los dioses del inframundo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Desde una perspectiva antropológica funcionalista, el periodo del Wayeb' operaba como un mecanismo cultural de cohesión y reinicio psicológico anual: al suspender temporalmente las jerarquías sociales y destruir los objetos deteriorados, la comunidad experimentaba una catarsis colectiva que consolidaba la estabilidad social."
+      }
     ],
-    fact: 'En muchas comunidades mayas modernas que preservan tradiciones orales de sus antepasados, persiste la costumbre de mantenerse en quietud. Evitan tareas arduas y toman precauciones en los días finales que preceden al comienzo de un ciclo calendárico nuevo, honrando la herencia del Wayeb.',
+    "fact": "Los 5 días del Wayeb' constituían un periodo liminal de retiro colectivo en el que se apagaban todos los fuegos domésticos y se suspendía la actividad pública en las ciudades mayas, culminando con la ceremonia del Fuego Nuevo en la cumbre de los templos piramidales para inaugurar el día 0 del mes Pop."
   },
   {
-    id: 'agricola-estacional',
-              bannerImage: '/assets/maya/infographic_m3/banner_numeros-gigantes.webp',
-    title: 'Calendario Agrícola',
-    color: '#66BB6A',
-    btnImage: '/assets/maya/infographic_m3/btn_agricola-estacional.jpg',
-    image: '/assets/maya/infographic_m3/hero_agricola-estacional.jpg',
-    content: [
-      '¿Cómo saben los agricultores cuándo sembrar sus semillas para que crezcan sanas? Los antiguos mayas no tenían estaciones marcadas en calendarios modernos; su reloj agrícola era el calendario Haab. Este calendario era una herramienta de supervivencia esencial de su civilización agraria.',
-      'A diferencia de lugares con primavera, verano, otoño e invierno, las regiones tropicales de Mesoamérica tienen dos estaciones principales: una estación seca y una estación lluviosa con tormentas tropicales. El Haab fue diseñado para sincronizarse y rastrear este ciclo climático de lluvia y sequía.',
-      'El corazón de la cultura maya era la parcela de cultivo llamada "milpa". En la milpa crecía maíz, frijoles, calabazas y chiles. Para que el maíz creciera fuerte, los campesinos tenían que sembrar las semillas justo antes de que comenzaran las lluvias tropicales.',
-      'Los sacerdotes, que eran astrónomos expertos, utilizaban el calendario Haab para informar a los agricultores. Les indicaban cuándo debían talar los bosques, cuándo quemar la vegetación para crear cenizas fertilizantes, y en qué día preciso sembrar cada semilla en la tierra húmeda.',
-      'Una señal astronómica crucial en el calendario agrícola del Haab era el "paso del sol por el cenit". Dos veces al año, en las latitudes donde vivían los mayas, el sol se posicionaba directamente sobre sus cabezas al mediodía sin producir sombras. Este fenómeno anunciaba el inicio de la temporada de lluvias.',
+    "id": "agricola-estacional",
+    "bannerImage": "/assets/maya/infographic_m3/banner_numeros-gigantes.webp",
+    "title": "Calendario Agrícola",
+    "color": "#66BB6A",
+    "btnImage": "/assets/maya/infographic_m3/btn_agricola-estacional.jpg",
+    "image": "/assets/maya/infographic_m3/hero_agricola-estacional.jpg",
+    "content": [
+      "La función principal y primordial del calendario Haab' era garantizar la supervivencia biológica de las densas poblaciones mayas mediante la coordinación milimétrica del ciclo agrícola del maíz (*Zea mays*), el frijol, la calabaza y el chile. En el entorno geográfico de la península de Yucatán, donde no existen ríos superficiales debido a la permeabilidad de la roca kárstica, el éxito de las cosechas dependía exclusivamente del aprovechamiento óptimo del régimen anual de lluvias estacionales.",
+      "El año ecológico maya se divide en dos grandes estaciones climáticas: la temporada seca o de estiaje prolongado (k'in tunil), que se extiende desde noviembre hasta mayo, y la temporada de intensas precipitaciones torrenciales (ch'a chak), que abarca desde junio hasta finales de octubre. El Haab' funcionaba como un reloj astronómico infalible que permitía a los agricultores anticipar el inicio de cada una de estas etapas indispensables para la técnica de la milpa itinerante.",
+      "A finales de la estación seca, durante los meses de Yaxk'in y Mol, los campesinos talaban parcelas de selva primaria y dejaban secar la vegetación bajo el sol abrasador del trópico. En una fecha calendárica rigurosamente fijada por los sacerdotes de acuerdo con la posición del Sol cenital en mayo, se procedía a la quema controlada de los troncos secos. Las cenizas ricas en minerales fertilizaban el suelo delgado de caliza justo antes de que las primeras gotas de lluvia cayeran sobre la milpa.",
+      "La siembra comunitaria del maíz comenzaba inmediatamente después de las primeras tormentas veraniegas. Los hombres perforaban el suelo húmedo con bastones plantadores puntiagudos de madera llamados coas y depositaban de tres a cinco granos de maíz junto con semillas de frijol negro, mientras las mujeres preparaban ofrendas de atole blanco para los Chaacob, las deidades del trueno y los relámpagos que custodiaban los cuatro puntos cardinales del campo de cultivo.",
+      "Durante los meses de Sak' y Keh, cuando las milpas alcanzaban su máxima madurez vegetal, el Haab' señalaba el inicio de la cosecha y el almacenamiento masivo del grano en chultunes, bodegas subterráneas impermeabilizadas con estuco de cal capaces de conservar miles de fanegas de maíz secas y protegidas de insectos durante años, asegurando la alimentación del imperio ante sequías prolongadas."
     ],
-    expandables: [
-      { label: 'El Maíz Sagrado', icon: 'atom', text: 'El maíz no era solo un alimento; era sagrado. Según el Popol Vuh, el libro de la creación de los mayas kiche\', los dioses intentaron crear a los humanos con barro y madera sin éxito. Finalmente lograron moldear a las personas usando masa de maíz blanco y amarillo.' },
-      { label: 'Las Pirámides y el Sol', icon: 'clock', text: 'Las pirámides mayas eran instrumentos astronómicos diseñados para medir el calendario solar Haab. Sus escalinatas en lugares como Chichén Itzá o Uaxactún estaban alineadas por constructores para marcar la salida y la puesta del sol durante los solsticios y equinoccios de las siembras.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los mayas practicaban el sistema de cultivo asociado conocido como la milpa tradicional o «las tres hermanas»: el maíz servía de tutor vertical para que el frijol trepara, el frijol fijaba nitrógeno biológico en el suelo arenoso y las anchas hojas de la calabaza cubrían la tierra reteniendo la humedad y evitando la erosión por las lluvias."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Estudios paleoclimáticos basados en núcleos sedimentarios de lagos de Yucatán y estalagmitas de cuevas han demostrado que la gran sincronización del Haab' permitió a los mayas maximizar la producción de maíz durante siglos, pero los ciclos severos de megasequías plurianuales entre los años 800 y 1000 d.C. sobrepasaron la capacidad del calendario."
+      }
     ],
-    fact: 'La técnica agrícola maya de la milpa es una de las formas más sostenibles de agricultura. Mezclan diferentes cultivos que crecen juntos y se nutren mutuamente en el mismo suelo, evitando agotar rápidamente a la naturaleza.',
+    "fact": "El calendario Haab' sincronizaba el ciclo de roza, tumba y quema de la milpa en la selva peninsular con el paso cenital del Sol a finales de mayo, permitiendo a millones de campesinos mayas sembrar en el día exacto de las primeras lluvias tropicales para evitar que las semillas de maíz se pudrieran o secaran."
   },
   {
-    id: 'comparacion-gregoriano',
-              bannerImage: '/assets/maya/infographic_m3/banner_paralelo-india.webp',
-    title: 'Comparación con el Gregoriano',
-    color: '#42A5F5',
-    btnImage: '/assets/maya/infographic_m3/btn_comparacion-gregoriano.jpg',
-    image: '/assets/maya/infographic_m3/hero_comparacion-gregoriano.jpg',
-    content: [
-      'Nuestro calendario se llama "calendario gregoriano", en honor al Papa Gregorio XIII, quien lo introdujo en el año 1582. Si comparamos este calendario moderno con el calendario Haab de los mayas, encontraremos similitudes que demuestran una gran observación astronómica.',
-      'Ambos calendarios comparten una característica fundamental: los dos están basados en la duración de 365 días. Esto demuestra que, sin importar la distancia y sin haberse conocido, tanto los estudiosos mayas en América como los pensadores de Europa llegaron a conclusiones solares similares.',
-      'Sin embargo, hay una diferencia matemática profunda entre los dos sistemas. El viaje anual de la Tierra alrededor del Sol no tarda exactamente trescientos sesenta y cinco días cerrados, sino trescientos sesenta y cinco días con casi seis horas adicionales.',
-      'En nuestro calendario gregoriano, los matemáticos resolvieron este desfase sumando un año bisiesto. Añaden un día extra el veintinueve de febrero cada cuatro años. Pero los mayas no insertaban días adicionales. Como resultado, el calendario Haab iba desfasándose de las estaciones reales en un día cada cuatro años solares.',
-      'Esto significaba que, en un ciclo largo, un mes del Haab que originariamente correspondía a las lluvias, años después caería en la temporada seca. Para los mayas, esto no era un error. Valoraban el ciclo matemático abstracto más que mantener inamovibles las estaciones climáticas en su calendario de piedra.',
+    "id": "comparacion-gregoriano",
+    "bannerImage": "/assets/maya/infographic_m3/banner_paralelo-india.webp",
+    "title": "Comparación con el Gregoriano",
+    "color": "#42A5F5",
+    "btnImage": "/assets/maya/infographic_m3/btn_comparacion-gregoriano.jpg",
+    "image": "/assets/maya/infographic_m3/hero_comparacion-gregoriano.jpg",
+    "content": [
+      "Al comparar el calendario solar maya Haab' con los sistemas calendáricos del Viejo Mundo, como el calendario juliano romano o el moderno calendario gregoriano promulgado por el papa Gregorio XIII en 1582, se aprecian notables diferencias conceptuales y similitudes de precisión cuantitativa. Mientras que el calendario gregoriano recurre a la inserción periódica de un día bisiesto cada cuatro años para corregir el desfase del año solar trópico, el Haab' mantenía una cuenta inalterable de 365 días.",
+      "En la física astronómica real, la duración del año trópico o estacional de la Tierra no es de 365 días exactos, sino de aproximadamente 365.242198 días solares medios (unos 365 días, 5 horas, 48 minutos y 46 segundos). Esta fracción decimal acumulada de casi un cuarto de día cada año provoca que un calendario rígido de 365 días completos sufra una deriva de un día cada cuatro años respecto a la posición verdadera de los solsticios y equinoccios en el horizonte celeste.",
+      "Los sabios astrónomos mayas conocían perfectamente esta deriva estacional del año solar gracias a siglos continuos de mediciones en observatorios como El Caracol y los Grupos E. Sin embargo, tomaron la decisión consciente de no intercalar días bisiestos dentro del cuerpo regular del Haab'. Para la mentalidad mesoamericana, romper la sucesión continua de los días mediante días añadidos de forma artificial habría destruido los engranajes sagrados de la Rueda Calendárica de 52 años.",
+      "En su lugar, los astrónomos resolvieron el problema de la deriva del año mediante sofisticadas tablas aritméticas de corrección suplementarias calculadas en códices y estelas. En la acrópolis de Copán y en los templos de Palenque, los epigrafistas han descubierto inscripciones glíficas donde los sacerdotes registraban la diferencia matemática acumulada entre el año civil de 365 días y el año trópico real, calculando factores de ajuste con una precisión de segundos de arco.",
+      "El resultado de esta metodología matemática abstracta fue asombroso: mientras que el calendario juliano empleado en Europa hasta el siglo XVI acumulaba un error de 10 días completos que obligó a una traumática reforma eclesiástica internacional, los cálculos de corrección solar maya poseían una exactitud que igualaba y en varios aspectos superaba la precisión del calendario gregoriano actual, todo ello sin contar con relojes mecánicos de péndulo."
     ],
-    expandables: [
-      { label: 'Una Visión Distinta del Tiempo', icon: 'clock', text: 'La decisión maya de no usar años bisiestos artificiales no fue producto de la ignorancia. Conocían perfectamente la discrepancia solar que existía. Pero consideraban que su ciclo de días era demasiado sagrado para ser alterado con días sueltos e insertados artificialmente.' },
-      { label: 'Correcciones Telescópicas', icon: 'clock', text: 'Para corregir su desviación paulatina respecto del sol, los sacerdotes mayas registraban fechas precisas en monumentos de piedra. Documentaban la diferencia exacta, logrando mantener una sincronicidad estelar que duraría miles de años, superando en algunos casos a los cálculos griegos y romanos.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cuando en 1582 el papa Gregorio XIII implantó el calendario gregoriano en Europa para corregir el desajuste solar acumulado por el viejo calendario de Julio César, la Iglesia católica tuvo que eliminar diez días de golpe de los registros oficiales: la gente se acostó el 4 de octubre y despertó al día siguiente como 15 de octubre."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cálculo maya del año solar documentado en las inscripciones monumentales del periodo Clásico Tardío de Copán arrojaba un valor estimado de 365.2420 días por año trópico, un valor sorprendentemente cercano al estándar astronómico moderno de 365.2422 días y superior al valor del calendario juliano europeo de 365.2500 días."
+      }
     ],
-    fact: 'El calendario gregoriano europeo fue una actualización al antiguo sistema juliano romano. Durante la época del Imperio Romano, su propio calendario también se había desfasado muchísimos días completos respecto al sol primaveral y los equinoccios de las festividades agrícolas.',
+    "fact": "Los astrónomos mayas conocían la duración fraccionaria del año trópico de 365.2422 días pero decidieron mantener el Haab' en 365 días enteros exactos para no alterar la conmensurabilidad de la Rueda Calendárica, registrando los desfases mediante fórmulas suplementarias en estelas de Copán y Palenque."
   },
   {
-    id: 'glifos-meses',
-              bannerImage: '/assets/maya/infographic_m3/banner_sistema-cero.webp',
-    title: 'Los Glifos',
-    color: '#009688',
-    btnImage: '/assets/maya/infographic_m3/btn_glifos-meses.jpg',
-    image: '/assets/maya/infographic_m3/hero_glifos-meses.jpg',
-    content: [
-      'Para los constructores mayas, la escritura antigua era algo más que anotar registros. Escribían los meses de su calendario Haab usando intrincados "glifos". En lugar de ser simples palabras, cada mes era retratado como una obra de arte tallada en las piedras de las pirámides.',
-      'Un glifo maya de un mes calendario no es como nuestra letra "A". Es un cuadro detallado que muestra una cara humana estilizada, el perfil de un animal sagrado de la selva o diseños complejos de motivos de plantas y del cosmos.',
-      'Cada uno de los dieciocho meses del Haab tenía su propio diseño jeroglífico inconfundible, acompañado con un número expresado en barras y puntos. Una barra horizontal representaba un valor de cinco, y un punto representaba el número uno. Esto convertía a la escritura maya en un sistema visual y compacto.',
-      'Para los antiguos escribas que pintaban los códices mayas, o para los artesanos que tallaban en roca, esculpir el glifo de un mes era un trabajo respetado. Los escribas eran considerados nobles porque poseían la habilidad de registrar los eventos históricos y el tiempo.',
-      'Si examinas uno de estos símbolos del Haab tallado en piedra, notarás que el glifo central reposaba dentro de un marco decorativo o cartucho que funcionaba como pedestal. Era una manera de enmarcar y darle importancia a este período cíclico en la historia del cosmos.',
+    "id": "glifos-meses",
+    "bannerImage": "/assets/maya/infographic_m3/banner_sistema-cero.webp",
+    "title": "Los Glifos",
+    "color": "#009688",
+    "btnImage": "/assets/maya/infographic_m3/btn_glifos-meses.jpg",
+    "image": "/assets/maya/infographic_m3/hero_glifos-meses.jpg",
+    "content": [
+      "El sistema de escritura jeroglífica maya es una de las creaciones intelectuales más deslumbrantes de la humanidad precolombina. Cada uno de los dieciocho meses del Haab' y el periodo Wayeb' poseían un glifo distintivo tallado en bajorrelieve en estelas de piedra caliza, dinteles de madera de chicozapote, murales polícromos y códices de papel amate. Estos signos gráficos no eran meros pictogramas simplificados, sino ideogramas y signos fonéticos altamente sofisticados.",
+      "Los glifos del Haab' se inscribían habitualmente dentro de cartuchos cuadrangulares con bordes redondeados. En la epigrafía maya clásica existían dos estilos principales para representar estos signos: la variante geométrica o abstracta, utilizada comúnmente en textos rápidos o de menor tamaño, y la variante de cabeza antropomorfa o zoomorfa, empleada en los grandes monumentos dinásticos oficiales erigidos por los reyes en las plazas ceremoniales.",
+      "Por ejemplo, el glifo del mes Pop incorporaba un diseño entrelazado que imitaba el tejido de fibras de palma de las esteras reales. El glifo del mes Sotz' representaba el rostro de perfil de un murciélago selvático con su distintiva hoja nasal puntiaguda y orejas ensanchadas. El glifo del mes Yaxk'in fusionaba el símbolo solar Kin (una flor de cuatro pétalos estilizada) con el prefijo Yax (que simboliza lo nuevo, lo verde y lo precioso), expresando visualmente el concepto del Sol regenerador.",
+      "Para indicar la fecha exacta, los escribas anteponían al glifo del mes un prefijo numérico. Si se trataba del día cero o inauguración de la veintena, añadían el glifo Chum («asiento»), consistente en un signo con forma de flor estilizada o media luna descansando sobre una base curva. Del día 1 al 19 utilizaban la elegante notación de puntos y barras: un punto redondo representaba una unidad, mientras que una barra horizontal gruesa equivalía al valor de cinco unidades enteras.",
+      "El desciframiento de estos glifos calendáricos por pioneros de la epigrafía como Heinrich Berlin, Tatiana Proskouriakoff y Yuri Knorozov a mediados del siglo XX permitió a los arqueólogos leer con precisión matemática absoluta las fechas cinceladas en miles de monumentos del mundo maya, devolviendo la voz histórica y el orden cronológico a una civilización cuya memoria había permanecido sellada durante siglos."
     ],
-    expandables: [
-      { label: 'El Arte de Escribir', icon: 'atom', text: 'La escritura jeroglífica maya es uno de los pocos sistemas originales inventados de forma autónoma en la historia humana. Aprender a tallar los glifos requería años de estudio en escuelas dedicadas exclusivamente al arte de la caligrafía mesoamericana precolombina.' },
-      { label: 'Sobrevivientes de Papel', icon: 'clock', text: 'Solamente tres libros mayas antiguos originales, llamados códices, sobrevivieron a la destrucción provocada por los conquistadores españoles. Estos libros desplegables están hechos de corteza de árbol de amate y contienen registros sobre sus ciclos astronómicos y ceremoniales.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los escribas mayas de la corte real (llamados ah ts'ib) gozaban de tanta libertad artística que rara vez labraban dos glifos del mismo mes de manera idéntica. Competían entre sí para añadir adornos caligráficos, volutas de humo y variantes de cabeza de dioses que demostraran su maestría poética y estética sobre la piedra."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El lingüista ruso Yuri Knorozov demostró en la década de 1950 que los jeroglíficos mayas no eran ideogramas puros ni símbolos alfabéticos occidentales, sino un sistema logosilábico mixto donde signos que representaban palabras completas se combinaban libremente con signos que representaban sílabas fonéticas individuales (CV)."
+      }
     ],
-    fact: 'Durante siglos, los glifos mayas fueron un misterio indescifrable. No fue hasta la década de mil novecientos ochenta que expertos y epigrafistas lograron comprender y leer de manera exitosa la mayoría de estas antiguas piedras talladas en Centroamérica.',
+    "fact": "Cada mes del Haab' contaba con dos estilos glíficos oficiales: una variante geométrica compuesta por signos fonéticos y una variante de cabeza esculpida con retratos de deidades zoomorfas, combinada con el glifo Chum para el día de asiento o barras y puntos para los números del 1 al 19, evidenciando una sofisticada duplicidad plástica y epigráfica única en la escritura monumental de Mesoamérica."
   },
   {
-    id: 'uso-cotidiano',
-              bannerImage: '/assets/maya/infographic_m3/banner_vigesimal.webp',
-    title: 'Uso Cotidiano',
-    color: '#FF8F00',
-    btnImage: '/assets/maya/infographic_m3/btn_uso-cotidiano.jpg',
-    image: '/assets/maya/infographic_m3/hero_uso-cotidiano.jpg',
-    content: [
-      'Lejos de las pirámides ceremoniales donde se hacían los cálculos celestes, el calendario Haab era el reloj comunitario que sincronizaba la vida de la sociedad maya. Para una familia regular de comerciantes o campesinos, conocer la fecha exacta era fundamental para sus actividades diarias.',
-      'Los mercados mesoamericanos operaban en días fijos específicos de las semanas o meses del Haab. Conocer qué fecha calendario era, les permitía a las familias caminar arduas jornadas para vender sus productos, como plumas o cacao, y saber que llegarían en un día de actividad comercial.',
-      'El Haab también era necesario para agendar festivales y celebraciones públicas. Al igual que nosotros celebramos el Año Nuevo, los mayas usaban el calendario Haab para programar festines, ceremonias de bailes, representaciones teatrales y juegos de pelota en los centros de las ciudades.',
-      'Este sistema preciso no se usaba únicamente para fines organizativos a nivel comunitario; formaba parte del sistema administrativo y gubernamental. Sirvió eficientemente como registro oficial. Cuando el hijo de un gobernante nacía, su fecha Haab y nombre calendárico se inscribían en monumentos.',
-      'Este calendario de trescientos sesenta y cinco días entrelazaba la vida diaria de su civilización. Así como los estudiantes asisten a la escuela y celebran su cumpleaños basándose en calendarios modernos, un habitante maya organizaba su vida inmerso en este ritmo cósmico medido por el Haab.'
+    "id": "uso-cotidiano",
+    "bannerImage": "/assets/maya/infographic_m3/banner_vigesimal.webp",
+    "title": "Uso Cotidiano",
+    "color": "#FF8F00",
+    "btnImage": "/assets/maya/infographic_m3/btn_uso-cotidiano.jpg",
+    "image": "/assets/maya/infographic_m3/hero_uso-cotidiano.jpg",
+    "content": [
+      "En la vida cotidiana de las urbes y aldeas mayas, el calendario Haab' constituía el eje organizador de todas las relaciones cívicas, económicas y administrativas. Lejos de ser un saber esotérico restringido únicamente a los sacerdotes astrónomos de los templos altos, los ciclos de veinte días del Haab' eran conocidos y respetados por la totalidad de la población, desde los nobles linajes mercaderes hasta los alfareros y agricultores más humildes.",
+      "El pago de los tributos estatales al soberano o Halach Uinic estaba estrictamente pautado por las fechas del Haab'. Cada determinado número de meses o al finalizar ciclos estacionales específicos, las aldeas tributarias debían entregar en la corte mantas tejidas de algodón fino, sartales de cuentas de jade verde, sacos de granos de cacao, plumas de quetzal, miel de abeja y tinajas de sal marina extraída de las salineras costeras de la península.",
+      "Los mercados comunales o tianguis periódicos celebrados en las explanadas cívicas también seguían el ritmo regular del calendario solar. Los mercaderes itinerantes organizaban sus caravanas de cargadores a través de los caminos sacbeob para coincidir con las ferias cívicas de los asientos de mes, momentos en que miles de familias acudían a las ciudades para participar en ceremonias religiosas e intercambiar vasijas de cerámica, obsidiana volcánica y herramientas de pedernal.",
+      "En el ámbito familiar, el Haab' regulaba los acuerdos de matrimonio entre linajes, los contratos de trabajo comunal para la limpieza de aguadas y cenotes, y la construcción cooperativa de viviendas de paja y bajareque. Al nacer un niño, los ancianos de la familia memorizaban de inmediato la fecha del Haab' junto con la del calendario ritual Tzolk'in, fijando de por vida las responsabilidades tributarias y los deberes cívicos que el nuevo ciudadano asumiría con su comunidad.",
+      "De este modo, el calendario solar civil integraba la multiplicidad de vidas humanas dentro de una maquinaria cronológica majestuosa. Gracias a la solidez del Haab', la sociedad maya logró mantener su continuidad cultural, agrícola y comercial a través de los siglos, transformando la marcha física del Sol en un pacto civil de cooperación y orden que permitió el florecimiento de una de las civilizaciones más brillantes del mundo antiguo."
     ],
-    expandables: [
-      { label: 'Nombres al Nacer', icon: 'clock', text: 'La fecha calendárica exacta en que nacía un bebé maya tenía una gran importancia personal y astronómica. Muchos gobernantes y campesinos tomaban como su propio nombre personal el día específico en el que habían nacido, conectándose así al ciclo temporal maya.' },
-      { label: 'La Vida del Campesino', icon: 'clock', text: 'Para las familias de campesinos, el Haab era una herramienta práctica para el mantenimiento del hogar. Leer las estaciones solares era crucial para saber cuándo reparar sus casas techadas con hojas secas, o saber en qué momento recolectar recursos en la selva.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los granos de cacao no solo se utilizaban para preparar la bebida espumosa y amarga reservada para la nobleza maya, sino que funcionaban como la moneda de cambio universal en los mercados organizados según el Haab': una semilla compraba un aguacate, mientras que por cien semillas se podía adquirir un conejo de monte recién cazado."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Estudios etnoarqueológicos en las tierras altas de Guatemala han revelado que varias comunidades mayas contemporáneas de etnias k'iche', mam e ixil continúan utilizando versiones orales tradicionales del calendario solar de 365 días en combinación con el calendario sagrado para guiar sus siembras comunales de maíz y frijol."
+      }
     ],
-    fact: 'Las inscripciones que conmemoran eventos como coronaciones y batallas, encontradas en estelas y pirámides mayas, combinaban una fecha Haab con otros ciclos sagrados. Esta combinación creaba una "Cuenta Larga" histórica de extrema exactitud a nivel mundial.',
-  },
+    "fact": "El Haab' regulaba la recaudación regular de tributos en especie (cacao, algodón, sal y obsidiana), el cronograma de ferias de intercambio comercial a lo largo de los sacbeob y los censos comunales en las ciudades-estado mayas, operando como el marco legal y administrativo de la civilización durante más de dos milenios."
+  }
 ];
 
 // ─── Temporal Particle Field (Canvas Background) ──────────────────────────────

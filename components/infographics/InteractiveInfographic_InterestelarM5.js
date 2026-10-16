@@ -99,152 +99,208 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'que-es-oort',
-    title: '¿Qué es la Nube de Oort?',
-    color: '#1A237E',
-    btnImage: '/assets/interestelar/infographic_m5/btn_que-es-oort.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_que-es-oort.jpg',
-    content: [
-      '¿Qué es la nube que envuelve nuestro vecindario cósmico? Imagina que el Sol es una bombilla en el centro de una gran habitación. A su alrededor giran los planetas. Mucho más lejos, en los límites de la habitación, hay una esfera gigante de bolas de hielo. Esa esfera es la Nube de Oort. Fue propuesta en 1950 por el astrónomo holandés Jan Oort. Él notó que muchos cometas veloces venían de todas direcciones del cielo, no solo del plano orbital de los planetas. Esto le dio una pista sobre su forma tridimensional.',
-      'Esta nube funciona como un enorme congelador esférico. Se extiende desde dos mil hasta cien mil veces la distancia entre la Tierra y el Sol. Esa distancia fundamental se llama Unidad Astronómica. Para dar una idea, Plutón está a 39 unidades astronómicas del Sol. La Nube de Oort está miles de veces más lejos. Es la región más distante de nuestro sistema solar. Aunque tiene miles de millones de objetos de hielo, el espacio entre ellos es tan vasto que podrías viajar durante años sin chocar.',
-      'La materia que forma esta nube es primordial. Está hecha de restos congelados que sobraron cuando se formaron los planetas pesados hace cuatro mil seiscientos millones de años. Estos bloques de hielo contienen agua sólida, metano, amoníaco y otros compuestos. Es como tener un archivo histórico de los ingredientes que formaron nuestro mundo. Al estudiar los cometas que provienen de allí, los científicos pueden leer la receta de nuestro sistema estelar. Es como viajar al pasado usando hielo cósmico.',
-      'Curiosamente, la Nube de Oort nunca ha sido vista directamente por ningún telescopio. Los objetos allí son oscuros y pequeños, y están tan lejos que la luz solar apenas los ilumina. ¿Cómo sabemos que existe? Los astrónomos notaron que los cometas de largo período necesitaban venir de un depósito lejano y esférico. La gravedad de estrellas cercanas desestabiliza a veces a estos objetos, empujándolos hacia el Sol y confirmando estas sospechas.',
-      'El modelo original propuesto por Jan Oort sigue siendo la mejor explicación. Aunque se llama nube, no se parece a las nubes de nuestro cielo. Se divide principalmente en dos regiones: una nube esférica exterior y una nube interior con forma de rosquilla llamada Nube de Hills. Esta estructura explica por qué hay distintos tipos de trayectorias de cometas. Esta frontera remota actúa como el borde definitivo del territorio solar.'
+    "id": "que-es-oort",
+    "title": "¿Qué es la Nube de Oort?",
+    "color": "#1A237E",
+    "btnImage": "/assets/interestelar/infographic_m5/btn_que-es-oort.jpg",
+    "image": "/assets/interestelar/infographic_m5/hero_que-es-oort.jpg",
+    "content": [
+      "¿Qué es la nube que envuelve nuestro vecindario cósmico? Imagina que el Sol es una bombilla en el centro de una gran habitación. A su alrededor giran los planetas. Mucho más lejos, en los límites de la habitación, hay una esfera gigante de bolas de hielo. Esa esfera es la Nube de Oort. Fue propuesta en 1950 por el astrónomo holandés Jan Oort. Él notó que muchos cometas veloces venían de todas direcciones del cielo, no solo del plano orbital de los planetas. Esto le dio una pista sobre su forma tridimensional.",
+      "Esta nube funciona como un enorme congelador esférico. Se extiende desde dos mil hasta cien mil veces la distancia entre la Tierra y el Sol. Esa distancia fundamental se llama Unidad Astronómica. Para dar una idea, Plutón está a 39 unidades astronómicas del Sol. La Nube de Oort está miles de veces más lejos. Es la región más distante de nuestro sistema solar. Aunque tiene miles de millones de objetos de hielo, el espacio entre ellos es tan vasto que podrías viajar durante años sin chocar.",
+      "La materia que forma esta nube es primordial. Está hecha de restos congelados que sobraron cuando se formaron los planetas pesados hace cuatro mil seiscientos millones de años. Estos bloques de hielo contienen agua sólida, metano, amoníaco y otros compuestos. Es como tener un archivo histórico de los ingredientes que formaron nuestro mundo. Al estudiar los cometas que provienen de allí, los científicos pueden leer la receta de nuestro sistema estelar. Es como viajar al pasado usando hielo cósmico.",
+      "Curiosamente, la Nube de Oort nunca ha sido vista directamente por ningún telescopio. Los objetos allí son oscuros y pequeños, y están tan lejos que la luz solar apenas los ilumina. ¿Cómo sabemos que existe? Los astrónomos notaron que los cometas de largo período necesitaban venir de un depósito lejano y esférico. La gravedad de estrellas cercanas desestabiliza a veces a estos objetos, empujándolos hacia el Sol y confirmando estas sospechas.",
+      "El modelo original propuesto por Jan Oort sigue siendo la mejor explicación. Aunque se llama nube, no se parece a las nubes de nuestro cielo. Se divide principalmente en dos regiones: una nube esférica exterior y una nube interior con forma de rosquilla llamada Nube de Hills. Esta estructura explica por qué hay distintos tipos de trayectorias de cometas. Esta frontera remota actúa como el borde definitivo del territorio solar."
     ],
-    expandables: [
-      { label: 'El Astrónomo Jan Oort', icon: 'atom', text: 'Jan Oort fue uno de los astrónomos más famosos del siglo veinte. Además de proponer la Nube de Oort, calculó la distancia desde el Sol hasta el centro galáctico y demostró que la Vía Láctea está rotando. Sus estudios establecieron bases sólidas. Deducir la existencia de una nube invisible analizando las órbitas de los cometas fue un salto intelectual extraordinario.' },
-      { label: 'Forma Tridimensional', icon: 'zap', text: 'A diferencia del cinturón de Kuiper que es como un disco plano de objetos helados, la Nube de Oort exterior es una esfera completa. Imagina una burbuja enorme que encierra a nuestro sistema planetario. Esta geometría ocurre porque los tirones gravitacionales de las estrellas han alterado las órbitas planas, dispersando los objetos en direcciones tridimensionales.' }
+    "expandables": [
+      {
+        "label": "El Astrónomo Jan Oort",
+        "icon": "atom",
+        "text": "Jan Oort fue uno de los astrónomos más famosos del siglo veinte. Además de proponer la Nube de Oort, calculó la distancia desde el Sol hasta el centro galáctico y demostró que la Vía Láctea está rotando. Sus estudios establecieron bases sólidas. Deducir la existencia de una nube invisible analizando las órbitas de los cometas fue un salto intelectual extraordinario."
+      },
+      {
+        "label": "Forma Tridimensional",
+        "icon": "zap",
+        "text": "A diferencia del cinturón de Kuiper que es como un disco plano de objetos helados, la Nube de Oort exterior es una esfera completa. Imagina una burbuja enorme que encierra a nuestro sistema planetario. Esta geometría ocurre porque los tirones gravitacionales de las estrellas han alterado las órbitas planas, dispersando los objetos en direcciones tridimensionales."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m5/banner_que-es-oort.webp',
-    bannerCaption: 'La Nube de Oort: billones de cuerpos helados envuelven el sistema solar hasta casi la mitad de la estrella más próxima',
-    fact: 'Se calcula que la Nube de Oort contiene al menos varios billones de objetos helados que superan el kilómetro de diámetro. A pesar de este número asombroso, su masa total combinada se estima entre cinco y cien veces la masa de la Tierra. Están hechos principalmente de hielo ligero y polvo, ocupando un volumen espacial inmenso.',
+    "bannerImage": "/assets/interestelar/infographic_m5/banner_que-es-oort.webp",
+    "bannerCaption": "La Nube de Oort: billones de cuerpos helados envuelven el sistema solar hasta casi la mitad de la estrella más próxima",
+    "fact": "Se calcula que la Nube de Oort contiene al menos varios billones de objetos helados que superan el kilómetro de diámetro. A pesar de este número asombroso, su masa total combinada se estima entre cinco y cien veces la masa de la Tierra. Están hechos principalmente de hielo ligero y polvo, ocupando un volumen espacial inmenso."
   },
   {
-    id: 'escala-distancia',
-    title: 'La Escala Inmensa',
-    color: '#B3E5FC',
-    btnImage: '/assets/interestelar/infographic_m5/btn_escala-distancia.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_escala-distancia.jpg',
-    content: [
-      'Para comprender el tamaño de la Nube de Oort, tenemos que usar la velocidad de la luz como nuestra cinta métrica. La luz viaja a trescientos mil kilómetros por segundo. La luz del Sol tarda solo ocho minutos en llegar a la Tierra, pero tarda casi dos años en alcanzar el borde exterior de la Nube de Oort. Imagina encender una linterna y que la luz tarde casi dos años en tocar la pared de la habitación.',
-      'Si redujéramos el Sol al tamaño de una pelota de baloncesto, la Tierra sería del tamaño de una semilla a unos treinta metros. Plutón estaría a un kilómetro de distancia. En este modelo, el borde interior de la Nube de Oort estaría a noventa kilómetros de distancia, y su borde exterior llegaría casi a tres mil kilómetros. Esto demuestra que la mayor parte del sistema solar es espacio vacío.',
-      'Hablemos de nuestras naves espaciales. La sonda Voyager 1 es la nave más rápida que hemos construido. Viaja a sesenta y un mil kilómetros por hora y ha superado a todos los planetas. A pesar de esa velocidad, a la Voyager 1 le tomará aproximadamente trescientos años alcanzar el borde interior de la Nube de Oort. Y tardará unos treinta mil años más en cruzarla por completo.',
-      'Las distancias son tan enormes que la gravedad del Sol se vuelve muy débil en las zonas exteriores. A cien mil unidades astronómicas, el agarre del Sol compite con la influencia de estrellas vecinas y el tirón gravitatorio de la Vía Láctea. Es una zona de equilibrio frágil. Los objetos helados orbitan con una lentitud majestuosa. Cada órbita alrededor del Sol puede durar millones de años terrestres.',
-      'Los astrónomos usan estas escalas gigantes para entender cómo se relacionan los sistemas estelares. La Nube de Oort es tan grande que su borde exterior toca casi las nubes hipotéticas del sistema Alfa Centauri. Esto significa que las estrellas vecinas podrían estar intercambiando cometas constantemente. Nuestro sistema no es una burbuja aislada, sino una vasta red que se extiende en el espacio interestelar.'
+    "id": "escala-distancia",
+    "title": "La Escala Inmensa",
+    "color": "#B3E5FC",
+    "btnImage": "/assets/interestelar/infographic_m5/btn_escala-distancia.jpg",
+    "image": "/assets/interestelar/infographic_m5/hero_escala-distancia.jpg",
+    "content": [
+      "Para comprender el tamaño de la Nube de Oort, tenemos que usar la velocidad de la luz como nuestra cinta métrica. La luz viaja a trescientos mil kilómetros por segundo. La luz del Sol tarda solo ocho minutos en llegar a la Tierra, pero tarda casi dos años en alcanzar el borde exterior de la Nube de Oort. Imagina encender una linterna y que la luz tarde casi dos años en tocar la pared de la habitación.",
+      "Si redujéramos el Sol al tamaño de una pelota de baloncesto, la Tierra sería del tamaño de una semilla a unos treinta metros. Plutón estaría a un kilómetro de distancia. En este modelo, el borde interior de la Nube de Oort estaría a noventa kilómetros de distancia, y su borde exterior llegaría casi a tres mil kilómetros. Esto demuestra que la mayor parte del sistema solar es espacio vacío.",
+      "Hablemos de nuestras naves espaciales. La sonda Voyager 1 es la nave más rápida que hemos construido. Viaja a sesenta y un mil kilómetros por hora y ha superado a todos los planetas. A pesar de esa velocidad, a la Voyager 1 le tomará aproximadamente trescientos años alcanzar el borde interior de la Nube de Oort. Y tardará unos treinta mil años más en cruzarla por completo.",
+      "Las distancias son tan enormes que la gravedad del Sol se vuelve muy débil en las zonas exteriores. A cien mil unidades astronómicas, el agarre del Sol compite con la influencia de estrellas vecinas y el tirón gravitatorio de la Vía Láctea. Es una zona de equilibrio frágil. Los objetos helados orbitan con una lentitud majestuosa. Cada órbita alrededor del Sol puede durar millones de años terrestres.",
+      "Los astrónomos usan estas escalas gigantes para entender cómo se relacionan los sistemas estelares. La Nube de Oort es tan grande que su borde exterior toca casi las nubes hipotéticas del sistema Alfa Centauri. Esto significa que las estrellas vecinas podrían estar intercambiando cometas constantemente. Nuestro sistema no es una burbuja aislada, sino una vasta red que se extiende en el espacio interestelar."
     ],
-    expandables: [
-      { label: 'Unidad Astronómica (UA)', icon: 'clock', text: 'La Unidad Astronómica es la regla de medir indispensable para nuestro sistema solar. Equivale a la distancia media exacta entre la Tierra y el Sol: 149.5 millones de kilómetros. Cuando decimos que la Nube de Oort se extiende cien mil unidades astronómicas, significa que su borde lejano está cien mil veces más lejos del Sol que nuestro planeta.' },
-      { label: 'Esfera de Hill', icon: 'zap', text: 'La frontera invisible donde la Nube de Oort exterior termina marca el borde de la esfera de Hill del Sol. Esta esfera define el volumen donde la gravedad solar domina sobre la atracción de la galaxia y las estrellas vecinas. Si un cometa supera ese límite, vagará por el espacio interestelar.' }
+    "expandables": [
+      {
+        "label": "Unidad Astronómica (UA)",
+        "icon": "clock",
+        "text": "La Unidad Astronómica es la regla de medir indispensable para nuestro sistema solar. Equivale a la distancia media exacta entre la Tierra y el Sol: 149.5 millones de kilómetros. Cuando decimos que la Nube de Oort se extiende cien mil unidades astronómicas, significa que su borde lejano está cien mil veces más lejos del Sol que nuestro planeta."
+      },
+      {
+        "label": "Esfera de Hill",
+        "icon": "zap",
+        "text": "La sonda espacial Voyager 1, lanzada en 1977 y viajando a más de diecisiete kilómetros por segundo en dirección interestelar, tardará aproximadamente trescientos años en alcanzar los bordes interiores de la Nube de Oort y requerirá cerca de treinta mil años para cruzar enteramente su inmensa envoltura esférica helada."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m5/banner_escala-distancia.webp',
-    bannerCaption: 'La escala imposible: la Nube de Oort está a casi 2 años luz y Voyager tardará 300 años en alcanzarla',
-    fact: 'El borde exterior de la Nube de Oort se ubica a un tercio del camino hacia Próxima Centauri, la estrella más cercana al Sol. Las distancias cósmicas son tan inmensas que las nubes de Oort de las estrellas cercanas podrían estar interactuando, compartiendo material antiguo.',
+    "bannerImage": "/assets/interestelar/infographic_m5/banner_escala-distancia.webp",
+    "bannerCaption": "La escala imposible: la Nube de Oort está a casi 2 años luz y Voyager tardará 300 años en alcanzarla",
+    "fact": "La Nube de Oort exterior se extiende desde unas 20,000 hasta más de 100,000 Unidades Astronómicas del Sol (casi dos años luz de distancia), abarcando casi la mitad del camino gravitacional hacia el sistema estelar más próximo de Alfa Centauri y constituyendo la verdadera frontera esférica donde concluye el dominio de la gravedad solar."
   },
   {
-    id: 'origen-formacion',
-    title: 'El Origen Turbulento',
-    color: '#CFD8DC',
-    btnImage: '/assets/interestelar/infographic_m5/btn_origen-formacion.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_origen-formacion.jpg',
-    content: [
-      '¿Cómo se formó esta estructura esférica en las afueras de nuestro sistema? Tenemos que retroceder 4,600 millones de años en el pasado. En ese entonces, el joven sistema solar era un disco plano de polvo y gas. Los planetas se formaron chocando material. Sobraron muchos escombros helados cerca de planetas gigantes como Júpiter y Saturno. Eran los ladrillos que no se usaron para construir los planetas.',
-      'Júpiter y Saturno son muy masivos. Su gravedad actuó como catapultas celestiales. Cuando los pequeños objetos de hielo pasaban cerca, la gravedad de los planetas los aceleraba y arrojaba lejos con gran fuerza. Millones de cuerpos helados fueron expulsados de sus órbitas originales hacia los rincones más lejanos del espacio.',
-      'Pero si fueron arrojados tan violentamente, ¿por qué no escaparon del Sol hacia el espacio interestelar? El modelo de Niza ofrece una explicación. Mientras estos objetos volaban hacia afuera, nuestro Sol no estaba solo. Nació en un cúmulo estelar junto con otras estrellas. La gravedad de las estrellas vecinas frenó a estos objetos expulsados. Sus órbitas se curvaron, formando gradualmente la gran esfera que vemos hoy.',
-      'Este proceso tomó cientos de millones de años. Muchos objetos de hielo chocaron, se rompieron o fueron eyectados para siempre al vacío. Se estima que solo una pequeña fracción del material original sobrevivió para formar la Nube de Oort. Los que se quedaron lograron un equilibrio delicado en el que la fuerza de los gigantes gaseosos y el Sol se igualaron con las influencias estelares.',
-      'Recientes descubrimientos sugieren que nuestro Sol podría haber capturado cometas de estrellas cercanas durante este período. Algunos modelos computacionales proponen que un porcentaje de la Nube de Oort podría tener origen extraterrestre. Si esto es cierto, estudiar los cometas de Oort nos permite analizar material de sistemas estelares vecinos sin tener que salir del sistema solar.'
+    "id": "origen-formacion",
+    "title": "El Origen Turbulento",
+    "color": "#CFD8DC",
+    "btnImage": "/assets/interestelar/infographic_m5/btn_origen-formacion.jpg",
+    "image": "/assets/interestelar/infographic_m5/hero_origen-formacion.jpg",
+    "content": [
+      "¿Cómo se formó esta estructura esférica en las afueras de nuestro sistema? Tenemos que retroceder 4,600 millones de años en el pasado. En ese entonces, el joven sistema solar era un disco plano de polvo y gas. Los planetas se formaron chocando material. Sobraron muchos escombros helados cerca de planetas gigantes como Júpiter y Saturno. Eran los ladrillos que no se usaron para construir los planetas.",
+      "A medida que los protoplanetas jovianos acumulaban masa durante la acreción temprana, sus formidables campos gravitatorios actuaron como una gigantesca catapulta orbital. Los fragmentos helados que pasaban cerca de Júpiter y Saturno eran eyectados hacia trayectorias hiperbólicas extremas, siendo desviados hacia los confines más lejanos del espacio interestelar primitivo donde la atracción de la Vía Láctea los estabilizó.",
+      "Pero si fueron arrojados tan violentamente, ¿por qué no escaparon del Sol hacia el espacio interestelar? El modelo de Niza ofrece una explicación. Mientras estos objetos volaban hacia afuera, nuestro Sol no estaba solo. Nació en un cúmulo estelar junto con otras estrellas. La gravedad de las estrellas vecinas frenó a estos objetos expulsados. Sus órbitas se curvaron, formando gradualmente la gran esfera que vemos hoy.",
+      "Este proceso tomó cientos de millones de años. Muchos objetos de hielo chocaron, se rompieron o fueron eyectados para siempre al vacío. Se estima que solo una pequeña fracción del material original sobrevivió para formar la Nube de Oort. Los que se quedaron lograron un equilibrio delicado en el que la fuerza de los gigantes gaseosos y el Sol se igualaron con las influencias estelares.",
+      "Recientes descubrimientos sugieren que nuestro Sol podría haber capturado cometas de estrellas cercanas durante este período. Algunos modelos computacionales proponen que un porcentaje de la Nube de Oort podría tener origen extraterrestre. Si esto es cierto, estudiar los cometas de Oort nos permite analizar material de sistemas estelares vecinos sin tener que salir del sistema solar."
     ],
-    expandables: [
-      { label: 'El Modelo Niza', icon: 'atom', text: 'El modelo Niza, nombrado por la ciudad francesa donde se desarrolló en 2005, propone que los planetas gigantes del sistema solar joven migraron de sus posiciones originales. Esta migración planetaria causó inestabilidades orbitales, dispersando objetos helados pequeños hacia el cinturón de Kuiper y la Nube de Oort, explicando la arquitectura actual.' },
-      { label: 'Captura Estelar', icon: 'zap', text: 'La hipótesis de que el Sol robó cometas es fascinante. En su cúmulo natal, las estrellas pasaban muy cerca unas de otras. Durante estos encuentros, la gravedad solar podría haber arrancado cometas de la periferia de estrellas hermanas, incorporándolos a nuestra propia Nube de Oort y enriqueciendo nuestra diversidad química.' }
+    "expandables": [
+      {
+        "label": "El Modelo Niza",
+        "icon": "atom",
+        "text": "El modelo Niza, nombrado por la ciudad francesa donde se desarrolló en 2005, propone que los planetas gigantes del sistema solar joven migraron de sus posiciones originales. Esta migración planetaria causó inestabilidades orbitales, dispersando objetos helados pequeños hacia el cinturón de Kuiper y la Nube de Oort, explicando la arquitectura actual."
+      },
+      {
+        "label": "Captura Estelar",
+        "icon": "zap",
+        "text": "La hipótesis de que el Sol robó cometas es fascinante. En su cúmulo natal, las estrellas pasaban muy cerca unas de otras. Durante estos encuentros, la gravedad solar podría haber arrancado cometas de la periferia de estrellas hermanas, incorporándolos a nuestra propia Nube de Oort y enriqueciendo nuestra diversidad química."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m5/banner_origen-formacion.webp',
-    bannerCaption: 'Formación hace 4,600 millones de años: planetesimales expulsados por los gigantes gaseosos al frío extremo',
-    fact: 'Si la Tierra entera se redujera al tamaño de un grano de sal, y la distancia desde el Sol al borde lejano de la Nube de Oort se dibujara a esa escala, la nube se extendería por más de 32 kilómetros. Esta metáfora revela la vastedad del espacio dominado por la gravedad de nuestro Sol.',
+    "bannerImage": "/assets/interestelar/infographic_m5/banner_origen-formacion.webp",
+    "bannerCaption": "Formación hace 4,600 millones de años: planetesimales expulsados por los gigantes gaseosos al frío extremo",
+    "fact": "Los billones de cometas de la Nube de Oort no se originaron en la periferia profunda: fueron planetesimales eyectados gravitatoriamente hace 4,500 millones de años desde la región de formación de Júpiter y Saturno, siendo estabilizados en órbitas casi circulares lejanas por las mareas gravitacionales de la Vía Láctea."
   },
   {
-    id: 'cometas-largo-periodo',
-    title: 'Cometas de Largo Período',
-    color: '#6A1B9A',
-    btnImage: '/assets/interestelar/infographic_m5/btn_cometas-largo-periodo.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_cometas-largo-periodo.jpg',
-    content: [
-      'La Nube de Oort es la cuna de los cometas de largo período. Estos cometas viajan en órbitas elípticas muy estiradas. A diferencia del cometa Halley, que visita la Tierra cada 76 años, un cometa de largo período tarda miles o millones de años en completar un viaje alrededor del Sol. El cometa Hale-Bopp, que deslumbró a la humanidad en 1997, tardará más de dos mil años en regresar. Vienen de fronteras muy remotas.',
-      '¿Qué empuja a uno de estos bloques de hielo a emprender un viaje hacia el Sol? Imagina la Nube de Oort como un montón de manzanas colgando débilmente de un árbol. Las manzanas apenas se sostienen de la gravedad solar. Si una estrella pasa cerca, su gravedad fuerte crea una vibración, como agitar la rama del árbol. Esta perturbación cambia la órbita del cometa, haciéndolo caer en picada hacia el interior del sistema solar.',
-      'El viaje largo hacia el centro es oscuro y silencioso al principio. El cometa se mueve lentamente en la oscuridad profunda durante milenios. A medida que se acerca al Sol, la gravedad fuerte lo acelera a altas velocidades. Cuando cruza la órbita de Júpiter, el calor solar comienza a derretir su superficie. Los hielos se subliman en gas expansivo, creando una atmósfera brillante llamada coma y dos colas que pueden medir millones de kilómetros.',
-      'Estos visitantes son cápsulas del tiempo perfectas. Han estado en congelación profunda desde el nacimiento de nuestro sistema solar. Cuando un cometa cruza el cielo terrestre, nos muestra material virginal que no ha cambiado durante 4,600 millones de años. Analizar su luz permite a los científicos descubrir de qué estaba hecha la nebulosa original que nos dio vida. Es una oportunidad para investigar nuestros orígenes.',
-      'Desafortunadamente, estos cometas también representan un peligro. Como caen desde cualquier dirección, son difíciles de detectar a tiempo. A diferencia de los asteroides rocosos del cinturón principal que orbitan en el mismo plano que la Tierra, un cometa oortiano podría aparecer repentinamente. La energía de su impacto sería destructiva debido a su alta velocidad. Por eso, los astrónomos mantienen programas de búsqueda para detectar posibles intrusos veloces.'
+    "id": "cometas-largo-periodo",
+    "title": "Cometas de Largo Período",
+    "color": "#6A1B9A",
+    "btnImage": "/assets/interestelar/infographic_m5/btn_cometas-largo-periodo.jpg",
+    "image": "/assets/interestelar/infographic_m5/hero_cometas-largo-periodo.jpg",
+    "content": [
+      "La Nube de Oort es la cuna de los cometas de largo período. Estos cometas viajan en órbitas elípticas muy estiradas. A diferencia del cometa Halley, que visita la Tierra cada 76 años, un cometa de largo período tarda miles o millones de años en completar un viaje alrededor del Sol. El cometa Hale-Bopp, que deslumbró a la humanidad en 1997, tardará más de dos mil años en regresar. Vienen de fronteras muy remotas.",
+      "¿Qué empuja a uno de estos bloques de hielo a emprender un viaje hacia el Sol? Imagina la Nube de Oort como un montón de manzanas colgando débilmente de un árbol. Las manzanas apenas se sostienen de la gravedad solar. Si una estrella pasa cerca, su gravedad fuerte crea una vibración, como agitar la rama del árbol. Esta perturbación cambia la órbita del cometa, haciéndolo caer en picada hacia el interior del sistema solar.",
+      "El viaje largo hacia el centro es oscuro y silencioso al principio. El cometa se mueve lentamente en la oscuridad profunda durante milenios. A medida que se acerca al Sol, la gravedad fuerte lo acelera a altas velocidades. Cuando cruza la órbita de Júpiter, el calor solar comienza a derretir su superficie. Los hielos se subliman en gas expansivo, creando una atmósfera brillante llamada coma y dos colas que pueden medir millones de kilómetros.",
+      "Estos visitantes son cápsulas del tiempo perfectas. Han estado en congelación profunda desde el nacimiento de nuestro sistema solar. Cuando un cometa cruza el cielo terrestre, nos muestra material virginal que no ha cambiado durante 4,600 millones de años. Analizar su luz permite a los científicos descubrir de qué estaba hecha la nebulosa original que nos dio vida. Es una oportunidad para investigar nuestros orígenes.",
+      "Desafortunadamente, estos cometas también representan un peligro. Como caen desde cualquier dirección, son difíciles de detectar a tiempo. A diferencia de los asteroides rocosos del cinturón principal que orbitan en el mismo plano que la Tierra, un cometa oortiano podría aparecer repentinamente. La energía de su impacto sería destructiva debido a su alta velocidad. Por eso, los astrónomos mantienen programas de búsqueda para detectar posibles intrusos veloces."
     ],
-    expandables: [
-      { label: 'El Cometa Hale-Bopp', icon: 'atom', text: 'El cometa Hale-Bopp, descubierto en 1995, es uno de los cometas de largo período más observados en la historia. Su núcleo medía unos 40 kilómetros de diámetro, lo cual es inusualmente grande. Su brillo en el cielo nocturno fue visible a simple vista durante un récord de 18 meses continuos.' },
-      { label: 'Dos Colas Distintas', icon: 'zap', text: 'Los cometas de Oort desarrollan dos colas cuando se acercan al Sol. La cola de polvo está formada por partículas rocosas y se curva hacia atrás a lo largo de la órbita. La segunda cola, de gas ionizado brillante, apunta en dirección opuesta al Sol debido a la presión del viento solar.' }
+    "expandables": [
+      {
+        "label": "El Cometa Hale-Bopp",
+        "icon": "atom",
+        "text": "Cometas icónicos de largo período orbital como Hale-Bopp (con una órbita de más de dos mil quinientos años) y el cometa Hyakutake proceden directamente de la Nube de Oort, habiendo sido desviados de sus trayectorias estables por la influencia gravitatoria sutil de estrellas errantes cercanas o nubes moleculares gigantes."
+      },
+      {
+        "label": "Dos Colas Distintas",
+        "icon": "zap",
+        "text": "El análisis espectrográfico de los cometas de la Nube de Oort revela hielos pristinos ricos en agua, monóxido de carbono, metano, amoníaco y complejas moléculas orgánicas prebióticas intactas desde el nacimiento del Sistema Solar, aportando pistas claves sobre el origen del agua oceánica y la vida primitiva en la Tierra."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m5/banner_cometas-largo-periodo.webp',
-    bannerCaption: 'Cometas de largo periodo: Hale-Bopp visita cada 2,520 años, llegan desde todas las direcciones del cielo',
-    fact: 'El cometa C/2014 UN271, descubierto por los astrónomos Pedro Bernardinelli y Gary Bernstein, es un objeto gigantesco proveniente de la Nube de Oort. Su núcleo masivo mide más de 130 kilómetros de ancho. Nunca se acercará a la Tierra; su aproximación más cercana en 2031 lo dejará más allá de la órbita de Saturno.',
+    "bannerImage": "/assets/interestelar/infographic_m5/banner_cometas-largo-periodo.webp",
+    "bannerCaption": "Cometas de largo periodo: Hale-Bopp visita cada 2,520 años, llegan desde todas las direcciones del cielo",
+    "fact": "El cometa C/2014 UN271, descubierto por los astrónomos Pedro Bernardinelli y Gary Bernstein, es un objeto gigantesco proveniente de la Nube de Oort. Su núcleo masivo mide más de 130 kilómetros de ancho. Nunca se acercará a la Tierra; su aproximación más cercana en 2031 lo dejará más allá de la órbita de Saturno."
   },
   {
-    id: 'limite-solar-interestelar',
-    title: 'El Límite Interestelar',
-    color: '#00695C',
-    btnImage: '/assets/interestelar/infographic_m5/btn_limite-solar-interestelar.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_limite-solar-interestelar.jpg',
-    content: [
-      '¿Dónde termina nuestro hogar espacial y dónde empieza el espacio interestelar? Responder a esto depende de cómo definas la frontera. Mucha gente cree que el sistema solar termina después de Plutón o en la heliopausa (donde el viento solar choca con el medio interestelar). Gravitacionalmente, la Nube de Oort es la región remota donde la gravedad de nuestro Sol tiene la última palabra, marcando el límite real del imperio solar.',
-      'Esta frontera gravitacional se llama Esfera de Hill. Imagina que el Sol tiene una cuerda atada a todos los cometas. Mientras un cometa esté dentro de esta esfera, el Sol puede retenerlo. Pero a unas cien mil unidades astronómicas, esa cuerda imaginaria se vuelve muy débil. En ese límite, la gravedad combinada de la galaxia y las estrellas cercanas arranca el cometa definitivamente. Al cruzar la línea, se convierte en un objeto interestelar libre.',
-      'Si pudieras pararte sobre un bloque de hielo en el borde de la Nube de Oort, el Sol ya no se vería como un disco brillante. Sería simplemente otra estrella en el cielo, quizás un poco más brillante que Venus. Todo el sistema planetario estaría fusionado en un punto luminoso. El frío allí está a pocos grados por encima del cero absoluto.',
-      'Este límite no es una pared sólida, sino una región difusa. Los cometas entran y salen silenciosamente a lo largo de millones de años. Los objetos helados en el borde son vulnerables. Las nubes de gas gigantes que navegan por la Vía Láctea pueden empujar la marea gravitacional, haciendo que los cometas caigan o escapen. La arquitectura de nuestra Nube de Oort no es fija, sino que cambia lentamente con la danza de nuestra galaxia.',
-      'Esta transición entre la esfera solar y el abismo interestelar subraya nuestro lugar microscópico en el universo. Entender este límite es crucial para la astrofísica porque nos enseña cómo los sistemas solares pierden su material helado primordial. Los pedazos de hielo errantes que abandonan nuestra Nube de Oort se convertirán en visitantes interestelares para sistemas planetarios lejanos, llevando el agua de nuestro origen hacia destinos desconocidos.'
+    "id": "limite-solar-interestelar",
+    "title": "El Límite Interestelar",
+    "color": "#00695C",
+    "btnImage": "/assets/interestelar/infographic_m5/btn_limite-solar-interestelar.jpg",
+    "image": "/assets/interestelar/infographic_m5/hero_limite-solar-interestelar.jpg",
+    "content": [
+      "¿Dónde termina nuestro hogar espacial y dónde empieza el espacio interestelar? Responder a esto depende de cómo definas la frontera. Mucha gente cree que el sistema solar termina después de Plutón o en la heliopausa (donde el viento solar choca con el medio interestelar). Gravitacionalmente, la Nube de Oort es la región remota donde la gravedad de nuestro Sol tiene la última palabra, marcando el límite real del imperio solar.",
+      "Esta frontera gravitacional se llama Esfera de Hill. Imagina que el Sol tiene una cuerda atada a todos los cometas. Mientras un cometa esté dentro de esta esfera, el Sol puede retenerlo. Pero a unas cien mil unidades astronómicas, esa cuerda imaginaria se vuelve muy débil. En ese límite, la gravedad combinada de la galaxia y las estrellas cercanas arranca el cometa definitivamente. Al cruzar la línea, se convierte en un objeto interestelar libre.",
+      "Al superar las cien mil Unidades Astronómicas, el débil tirón gravitatorio del Sol se equilibra con la aceleración gravitatoria del campo de marea promedio del disco de la Vía Láctea. Cualquier cuerpo celeste que navegue más allá de esta distancia crítica escapa irremisiblemente de la influencia solar para convertirse en un objeto interestelar vagabundo navegando libremente entre los sistemas estelares.",
+      "Este límite no es una pared sólida, sino una región difusa. Los cometas entran y salen silenciosamente a lo largo de millones de años. Los objetos helados en el borde son vulnerables. Las nubes de gas gigantes que navegan por la Vía Láctea pueden empujar la marea gravitacional, haciendo que los cometas caigan o escapen. La arquitectura de nuestra Nube de Oort no es fija, sino que cambia lentamente con la danza de nuestra galaxia.",
+      "Esta transición entre la esfera solar y el abismo interestelar subraya nuestro lugar microscópico en el universo. Entender este límite es crucial para la astrofísica porque nos enseña cómo los sistemas solares pierden su material helado primordial. Los pedazos de hielo errantes que abandonan nuestra Nube de Oort se convertirán en visitantes interestelares para sistemas planetarios lejanos, llevando el agua de nuestro origen hacia destinos desconocidos."
     ],
-    expandables: [
-      { label: 'Heliopausa vs Oort', icon: 'zap', text: 'La heliopausa es la frontera donde el viento solar choca con la radiación cósmica galáctica, a 120 unidades astronómicas. La sonda Voyager 1 cruzó la heliopausa en 2012, entrando al medio interestelar. Sin embargo, no dejará el campo gravitacional del Sol hasta que cruce la Nube de Oort en 30,000 años.' },
-      { label: 'El Cero Absoluto', icon: 'atom', text: 'La temperatura típica en las profundidades de la Nube de Oort oscila entre tres y diez grados Kelvin (-265 grados Celsius). En este frío tan profundo, gases comunes como el metano y el monóxido de carbono se congelan como rocas duras, preservando química inalterada.' }
+    "expandables": [
+      {
+        "label": "Heliopausa vs Oort",
+        "icon": "zap",
+        "text": "La heliopausa es la frontera donde el viento solar choca con la radiación cósmica galáctica, a 120 unidades astronómicas. La sonda Voyager 1 cruzó la heliopausa en 2012, entrando al medio interestelar. Sin embargo, no dejará el campo gravitacional del Sol hasta que cruce la Nube de Oort en 30,000 años."
+      },
+      {
+        "label": "El Cero Absoluto",
+        "icon": "atom",
+        "text": "En los confines exteriores de la Nube de Oort a más de 100,000 UA, la velocidad orbital de los cometas disminuye a unos pocos metros por segundo, lo que hace que su enlace gravitatorio con el Sol sea extremadamente frágil y susceptible de ser desprendido al medio interestelar por el paso cercano de cualquier estrella enana roja."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m5/banner_limite-solar-interestelar.webp',
-    bannerCaption: 'El límite solar-interestelar: donde la gravedad del Sol apenas retiene los objetos de la Nube de Oort',
-    fact: 'El concepto de la marea galáctica es parecido a cómo la Luna causa mareas en nuestros océanos terrestres. La masa combinada de las estrellas y el gas interestelar en la Vía Láctea ejerce una fuerza gravitacional continua que moldea la forma de la Nube de Oort.',
+    "bannerImage": "/assets/interestelar/infographic_m5/banner_limite-solar-interestelar.webp",
+    "bannerCaption": "El límite solar-interestelar: donde la gravedad del Sol apenas retiene los objetos de la Nube de Oort",
+    "fact": "La esfera de Hill del Sol (el volumen esférico dentro del cual la atracción gravitacional solar prevalece sobre las fuerzas de marea de la Vía Láctea) tiene un radio límite de aproximadamente dos años luz, definiendo la frontera máxima donde los objetos de la Nube de Oort pueden orbitar de manera estable sin escapar."
   },
   {
-    id: 'perturbaciones-estelares',
-    title: 'Estrellas Errantes Peligrosas',
-    color: '#FF8F00',
-    btnImage: '/assets/interestelar/infographic_m5/btn_perturbaciones-estelares.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_perturbaciones-estelares.jpg',
-    content: [
-      '¿Sabías que las estrellas masivas no se quedan quietas, sino que vagan constantemente como barcos gigantes en un océano infinito? En su viaje alrededor del centro galáctico, nuestro Sol se cruza con otras estrellas. Cuando una estrella intrusa pasa cerca de nuestra frontera extrema, su gravedad causa estragos. Es como caminar por una habitación llena de globos colgando de hilos débiles; el paso brusco hará que todos se muevan y algunos caigan al suelo.',
-      'Uno de los encuentros estelares más famosos es el de la estrella de Scholz. Hace apenas setenta mil años, esta enana roja pasó rozando los límites exteriores de la Nube de Oort. Llegó a estar a menos de un año luz de nuestro Sol. Aunque no causó una catástrofe inmediata, su tirón gravitacional sutil perturbó a muchos cometas helados, alterando sus órbitas permanentemente.',
-      'Pero el evento futuro más dramático será protagonizado por una estrella llamada Gliese 710. Según los datos del satélite Gaia, esta enana naranja se dirige hacia nuestro sistema estelar. En un millón trescientos mil años, Gliese 710 cruzará a través de nuestra Nube de Oort interior y la Nube de Hills. Pasará tan cerca que su perturbación gravitacional desatará una lluvia colosal de cometas hacia los planetas interiores.',
-      'Durante el encuentro con Gliese 710, los astrónomos calculan que miles de cometas de largo período serán lanzados hacia nuestro rincón interior habitado. Los cielos nocturnos de la Tierra podrían llenarse visualmente de múltiples cometas al mismo tiempo. Crearían un espectáculo visual inigualable, pero también aumentarían exponencialmente el riesgo de impactos peligrosos contra nuestro planeta. Afortunadamente, esto no sucederá sino hasta dentro de más de un millón de años.',
-      'Estos encuentros estelares demuestran que el sistema solar no es un reloj aislado, sino parte de una ecología galáctica interactiva. Las estrellas compañeras y el polvo cósmico interactúan e intercambian material frecuentemente con nuestro depósito de hielo ancestral. La Nube de Oort es la interfaz que nos conecta dinámicamente con el resto de la Vía Láctea, siendo moldeada por encuentros casuales en las profundidades del espacio.'
+    "id": "perturbaciones-estelares",
+    "title": "Estrellas Errantes Peligrosas",
+    "color": "#FF8F00",
+    "btnImage": "/assets/interestelar/infographic_m5/btn_perturbaciones-estelares.jpg",
+    "image": "/assets/interestelar/infographic_m5/hero_perturbaciones-estelares.jpg",
+    "content": [
+      "¿Sabías que las estrellas masivas no se quedan quietas, sino que vagan constantemente como barcos gigantes en un océano infinito? En su viaje alrededor del centro galáctico, nuestro Sol se cruza con otras estrellas. Cuando una estrella intrusa pasa cerca de nuestra frontera extrema, su gravedad causa estragos. Es como caminar por una habitación llena de globos colgando de hilos débiles; el paso brusco hará que todos se muevan y algunos caigan al suelo.",
+      "Uno de los encuentros estelares más famosos es el de la estrella de Scholz. Hace apenas setenta mil años, esta enana roja pasó rozando los límites exteriores de la Nube de Oort. Llegó a estar a menos de un año luz de nuestro Sol. Aunque no causó una catástrofe inmediata, su tirón gravitacional sutil perturbó a muchos cometas helados, alterando sus órbitas permanentemente.",
+      "Pero el evento futuro más dramático será protagonizado por una estrella llamada Gliese 710. Según los datos del satélite Gaia, esta enana naranja se dirige hacia nuestro sistema estelar. En un millón trescientos mil años, Gliese 710 cruzará a través de nuestra Nube de Oort interior y la Nube de Hills. Pasará tan cerca que su perturbación gravitacional desatará una lluvia colosal de cometas hacia los planetas interiores.",
+      "Durante el encuentro con Gliese 710, los astrónomos calculan que miles de cometas de largo período serán lanzados hacia nuestro rincón interior habitado. Los cielos nocturnos de la Tierra podrían llenarse visualmente de múltiples cometas al mismo tiempo. Crearían un espectáculo visual inigualable, pero también aumentarían exponencialmente el riesgo de impactos peligrosos contra nuestro planeta. Afortunadamente, esto no sucederá sino hasta dentro de más de un millón de años.",
+      "Estos encuentros estelares demuestran que el sistema solar no es un reloj aislado, sino parte de una ecología galáctica interactiva. Las estrellas compañeras y el polvo cósmico interactúan e intercambian material frecuentemente con nuestro depósito de hielo ancestral. La Nube de Oort es la interfaz que nos conecta dinámicamente con el resto de la Vía Láctea, siendo moldeada por encuentros casuales en las profundidades del espacio."
     ],
-    expandables: [
-      { label: 'La Estrella Gliese 710', icon: 'atom', text: 'Gliese 710 es una enana naranja, con la mitad de la masa del Sol. Actualmente se encuentra inofensivamente a unos 62 años luz de distancia. Cuando llegue a su máxima aproximación crítica en 1.3 millones de años, podría brillar intensamente en nuestros cielos oscuros, rivalizando con Júpiter en brillo planetario.' },
-      { label: 'La Estrella de Scholz', icon: 'zap', text: 'Descubierta en 2013 por el astrónomo Ralf-Dieter Scholz, es un sistema binario peculiar compuesto por una enana roja muy pequeña y una enana marrón tenue. Cuando atravesó nuestra Nube de Oort en el pasado, estaba demasiado oscura para ser vista a simple vista por nuestros antepasados primitivos.' }
+    "expandables": [
+      {
+        "label": "La Estrella Gliese 710",
+        "icon": "atom",
+        "text": "Gliese 710 es una enana naranja, con la mitad de la masa del Sol. Actualmente se encuentra inofensivamente a unos 62 años luz de distancia. Cuando llegue a su máxima aproximación crítica en 1.3 millones de años, podría brillar intensamente en nuestros cielos oscuros, rivalizando con Júpiter en brillo planetario."
+      },
+      {
+        "label": "La Estrella de Scholz",
+        "icon": "zap",
+        "text": "Hace aproximadamente setenta mil años, la estrella enana roja Scholz y su compañera enana marrón cruzaron a través de la Nube de Oort exterior a solo 52,000 Unidades Astronómicas del Sol, perturbando las órbitas de miles de cometas sin provocar una lluvia catastrófica de impactos hacia los planetas interiores terrestres."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m5/banner_perturbaciones-estelares.webp',
-    bannerCaption: 'Perturbaciones estelares: estrellas que pasan y la marea galáctica envían cometas hacia el interior solar',
-    fact: 'El satélite Gaia de la Agencia Espacial Europea ha rastreado el movimiento exacto de millones de estrellas. Sus datos revelan que aproximadamente una docena de estrellas vagabundas han pasado a menos de unos pocos años luz de nuestro Sol durante el último millón de años, agitando continuamente los cometas remotos.',
+    "bannerImage": "/assets/interestelar/infographic_m5/banner_perturbaciones-estelares.webp",
+    "bannerCaption": "Perturbaciones estelares: estrellas que pasan y la marea galáctica envían cometas hacia el interior solar",
+    "fact": "El satélite Gaia de la Agencia Espacial Europea ha rastreado el movimiento exacto de millones de estrellas. Sus datos revelan que aproximadamente una docena de estrellas vagabundas han pasado a menos de unos pocos años luz de nuestro Sol durante el último millón de años, agitando continuamente los cometas remotos."
   },
   {
-    id: 'exploracion-futura',
-    title: 'El Futuro de la Exploración',
-    color: '#ECEFF1',
-    btnImage: '/assets/interestelar/infographic_m5/btn_exploracion-futura.jpg',
-    image: '/assets/interestelar/infographic_m5/hero_exploracion-futura.jpg',
-    content: [
-      'Hasta el día de hoy, ninguna nave espacial robótica humana ha alcanzado la Nube de Oort. Y hay una buena razón científica para esto: está ridículamente lejos en la oscuridad abismal. La sonda New Horizons, que voló más allá de Plutón en 2015 a velocidades récord, tardará siglos largos en rasguñar el borde interior más cercano. Con nuestra actual tecnología de propulsión química tradicional, un viaje hacia ese lugar insondable es prácticamente imposible en el tiempo de vida de un investigador.',
-      'Pero los ingenieros espaciales visionarios nunca se rinden ante un desafío notable. Para explorar este congelador primordial, necesitamos sistemas de propulsión nuevos y revolucionarios. Las velas solares, que usan el empuje suave pero constante de los fotones solares para acelerar en el vacío, podrían alcanzar velocidades increíbles. Esto reduciría el viaje tedioso de milenios a tal vez un siglo de espera. Los cohetes de propulsión nuclear o iónicos, que son más eficientes y poderosos, podrían acercar el viaje a márgenes realistas.',
-      'Una de las misiones propuestas por los científicos es aprovechar la \"Lente Gravitacional Solar\". La teoría de la relatividad de Einstein nos dice que la masa de nuestro Sol deforma el espacio, doblando la luz de objetos distantes exactamente como una lupa óptica gigantesca. El punto focal preciso de esta lente solar natural asombrosa se encuentra a quinientas cincuenta unidades astronómicas, justo en la frontera de la Nube de Hills interior.',
-      'Si logramos enviar un telescopio avanzado hasta esa distancia focal exacta, a más de 50 mil millones de kilómetros del centro, podríamos usar nuestro Sol como el lente primario de un telescopio inmenso. Esto nos permitiría observar nítidamente exoplanetas habitables con resoluciones altísimas sin precedentes. Además, podríamos investigar directamente las profundidades más oscuras de la misma Nube de Oort antigua inexplorada, matando dos pájaros de un solo tiro.',
-      'Hasta que esas naves espaciales futuristas se conviertan en una realidad tangible, nuestra mejor y única ventana para estudiar la Nube de Oort continuará siendo la cuidadosa observación espectroscópica detallada de los cometas prístinos. Cada nuevo cometa veloz que es empujado gentilmente hacia el interior de nuestro vecindario es como un mensajero helado y silencioso antiguo, trayendo secretos químicos primordiales desde el confín más oscuro remoto de nuestro vasto imperio solar.'
+    "id": "exploracion-futura",
+    "title": "El Futuro de la Exploración",
+    "color": "#ECEFF1",
+    "btnImage": "/assets/interestelar/infographic_m5/btn_exploracion-futura.jpg",
+    "image": "/assets/interestelar/infographic_m5/hero_exploracion-futura.jpg",
+    "content": [
+      "Hasta el día de hoy, ninguna nave espacial robótica humana ha alcanzado la Nube de Oort. Y hay una buena razón científica para esto: está ridículamente lejos en la oscuridad abismal. La sonda New Horizons, que voló más allá de Plutón en 2015 a velocidades récord, tardará siglos largos en rasguñar el borde interior más cercano. Con nuestra actual tecnología de propulsión química tradicional, un viaje hacia ese lugar insondable es prácticamente imposible en el tiempo de vida de un investigador.",
+      "Pero los ingenieros espaciales visionarios nunca se rinden ante un desafío notable. Para explorar este congelador primordial, necesitamos sistemas de propulsión nuevos y revolucionarios. Las velas solares, que usan el empuje suave pero constante de los fotones solares para acelerar en el vacío, podrían alcanzar velocidades increíbles. Esto reduciría el viaje tedioso de milenios a tal vez un siglo de espera. Los cohetes de propulsión nuclear o iónicos, que son más eficientes y poderosos, podrían acercar el viaje a márgenes realistas.",
+      "Una de las misiones propuestas por los científicos es aprovechar la \"Lente Gravitacional Solar\". La teoría de la relatividad de Einstein nos dice que la masa de nuestro Sol deforma el espacio, doblando la luz de objetos distantes exactamente como una lupa óptica gigantesca. El punto focal preciso de esta lente solar natural asombrosa se encuentra a quinientas cincuenta unidades astronómicas, justo en la frontera de la Nube de Hills interior.",
+      "Si logramos enviar un telescopio avanzado hasta esa distancia focal exacta, a más de 50 mil millones de kilómetros del centro, podríamos usar nuestro Sol como el lente primario de un telescopio inmenso. Esto nos permitiría observar nítidamente exoplanetas habitables con resoluciones altísimas sin precedentes. Además, podríamos investigar directamente las profundidades más oscuras de la misma Nube de Oort antigua inexplorada, matando dos pájaros de un solo tiro.",
+      "Hasta que esas naves espaciales futuristas se conviertan en una realidad tangible, nuestra mejor y única ventana para estudiar la Nube de Oort continuará siendo la cuidadosa observación espectroscópica detallada de los cometas prístinos. Cada nuevo cometa veloz que es empujado gentilmente hacia el interior de nuestro vecindario es como un mensajero helado y silencioso antiguo, trayendo secretos químicos primordiales desde el confín más oscuro remoto de nuestro vasto imperio solar."
     ],
-    expandables: [
-      { label: 'Propulsión Nuclear', icon: 'zap', text: 'La propulsión nuclear térmica audaz usa un reactor de fisión potente para calentar un gas expansivo ligero y expulsarlo por una boquilla de cohete brillante. Podría teóricamente duplicar la eficiencia de empuje y acortar los tiempos de vuelo hacia los rincones más profundos del espacio oscuro.' },
-      { label: 'Proyecto Breakthrough Starshot', icon: 'atom', text: 'El proyecto Breakthrough Starshot propone usar lásers de potencia gigavatio basados en tierra para impulsar naves espaciales diminutas acopladas a velas reflectantes delgadas. Las acelerarían a un 20% de la velocidad de la luz. A esa velocidad, cruzarían la Nube de Oort en pocos años.' }
+    "expandables": [
+      {
+        "label": "Propulsión Nuclear",
+        "icon": "zap",
+        "text": "Conceptos avanzados de misiones de espacio profundo de la NASA como el 'Interstellar Probe' contemplan utilizar sobrevuelos hiperbólicos cercanos al Sol (maniobra de Oberth solar) para alcanzar velocidades de escape superiores a diez Unidades Astronómicas por año, intentando muestrear la Nube de Oort interna en cincuenta años."
+      },
+      {
+        "label": "Proyecto Breakthrough Starshot",
+        "icon": "atom",
+        "text": "La detección y caracterización remota de planetas enanos y cuerpos helados de la Nube de Oort impulsará el desarrollo de futuros telescopios espaciales infrarrojos de próxima generación y radiotelescopios criogénicos operando desde el punto de Lagrange L2 o la cara oculta de la Luna, libres de interferencias terrestres."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m5/banner_exploracion-futura.webp',
-    bannerCaption: 'Exploración futura: sondas de propulsión nuclear o láser podrían alcanzar la Nube de Oort en décadas',
-    fact: 'El concepto de la lente gravitacional solar natural masiva no es ciencia ficción. La NASA y el JPL están estudiando metódicamente conceptos de misiones y sondas ligeras para llevar telescopios de vanguardia a 550 UA para visualizar otros mundos.',
-  },
+    "bannerImage": "/assets/interestelar/infographic_m5/banner_exploracion-futura.webp",
+    "bannerCaption": "Exploración futura: sondas de propulsión nuclear o láser podrían alcanzar la Nube de Oort en décadas",
+    "fact": "Diseñar misiones de exploración in situ hacia la Nube de Oort requiere desarrollar sistemas de propulsión nuclear de fisión avanzada o velas solares térmicas impulsadas por rayos láser, ya que con la tecnología de cohetes químicos convencionales una sonda tardaría miles de años en cruzar sus primeras capas exteriores."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

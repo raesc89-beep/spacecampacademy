@@ -85,151 +85,207 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'descubrimiento-borisov',
-    title: 'El Descubrimiento',
-    color: '#81D4FA',
-    btnImage: '/assets/interestelar/infographic_m3/btn_descubrimiento-borisov.jpg',
-    image: '/assets/interestelar/infographic_m3/hero_descubrimiento-borisov.jpg',
-    content: [
-      'El 30 de agosto de 2019, el astrónomo aficionado Gennady Borisov descubrió un objeto desde su observatorio en Crimea. Utilizó un telescopio de 0.65 metros que él mismo había construido. No dependía de agencias espaciales con grandes presupuestos, solo de su conocimiento y paciencia.',
-      'El telescopio MARGO es una máquina de precisión con una relación focal rápida para captar objetos difusos. Esa madrugada, Borisov notó una pequeña mancha borrosa moviéndose en la constelación de Casiopea. Al principio, parecía un cometa ordinario, pero su trayectoria revelaría un secreto.',
-      'Descubrir un cometa requiere tomar múltiples fotografías para detectar su movimiento. Borisov envió sus observaciones al Minor Planet Center, la organización responsable de catalogar objetos del sistema solar. El objeto recibió la designación temporal gb00234 mientras se confirmaba su identidad.',
-      'Este hallazgo demuestra que el cielo nocturno todavía guarda secretos para quienes observan. Mientras los telescopios espaciales estudian galaxias lejanas, el espacio cercano nos sigue sorprendiendo. Borisov ya había descubierto otros cometas, pero atrapar a un visitante interestelar demostró el valor de la astronomía amateur.',
-      'La noticia se propagó por observatorios de todo el mundo. Los astrónomos notaron que la trayectoria y la velocidad no correspondían a un cometa local. Comenzó una carrera contrarreloj para usar los grandes telescopios y confirmar si se trataba del segundo visitante interestelar detectado.'
+    "id": "descubrimiento-borisov",
+    "title": "El Descubrimiento",
+    "color": "#81D4FA",
+    "btnImage": "/assets/interestelar/infographic_m3/btn_descubrimiento-borisov.jpg",
+    "image": "/assets/interestelar/infographic_m3/hero_descubrimiento-borisov.jpg",
+    "content": [
+      "En la madrugada del 30 de agosto de 2019, el astrónomo aficionado y consumado constructor de telescopios Gennadiy Borisov se encontraba en su observatorio personal MARGO, emplazado en la localidad de Nauchny, en la península de Crimea. Mientras escudriñaba minuciosamente el cielo nororiental en la constelación de Casiopea antes del amanecer, detectó una débil mota difusa en movimiento que no figuraba en ningún atlas estelar previo.",
+      "Para realizar el avistamiento, Borisov utilizó un telescopio reflector de 0.65 metros de apertura con óptica astrométrica de campo amplio diseñado y construido enteramente por sus propias manos. El instrumento disponía de una cámara digital CCD de alta sensibilidad con la que capturó múltiples exposiciones consecutivas, permitiéndole advertir un desplazamiento angular neto respecto al fondo de estrellas que delataba la presencia de un cometa activo desconocido.",
+      "A diferencia de los observatorios astronómicos profesionales automatizados que suelen rastrear franjas del cielo a medianoche, Borisov concentró su rastreo a baja altura sobre el horizonte oriental, una región celeste descartada frecuentemente por los sondeos oficiales debido a la turbulencia atmosférica y el crepúsculo. Esta estrategia observacional audaz le permitió localizar al viajero con notable anticipación balística.",
+      "Borisov reportó de inmediato las coordenadas ecuatoriales precisas a la base de datos de objetos cercanos a la Tierra del Centro de Planetas Menores en Cambridge, Massachusetts. En pocas horas, decenas de telescopios en todo el mundo se volcaron sobre las coordenadas indicadas, confirmando que la difusa condensación central estaba envuelta en una coma evidente y presentaba una tenue cola de polvo orientada en sentido antisolar.",
+      "El Centro de Planetas Menores asignó inicialmente al objeto la designación provisional de cometa C/2019 Q4 (Borisov). La comunidad astrofísica internacional recibió la noticia con enorme expectación, pues los primeros cálculos cinemáticos sugerían una trayectoria hiperbólica extrema que no parecía pertenecer a ningún cuerpo conocido confinado en el sistema solar interior."
     ],
-    expandables: [
-      { label: 'El Astrónomo y su Máquina', icon: 'zap', text: 'Gennady Borisov es un ingeniero y fabricante de telescopios. Construyó el instrumento MARGO para tener un campo de visión amplio y detectar cometas. Su éxito demuestra que la innovación individual puede competir con los presupuestos de las grandes agencias espaciales.' },
-      { label: '¿Cómo se nombran los cometas?', icon: 'clock', text: 'Los cometas suelen llevar el nombre de sus descubridores. La Unión Astronómica Internacional rompió sus reglas y bautizó a este objeto como 2I/Borisov. El "2I" significa que es el segundo objeto interestelar confirmado (después de 1I/Oumuamua).' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Gennadiy Borisov no utilizó telescopios de miles de millones de dólares para este histórico descubrimiento. Fabricó su telescopio reflector de 65 centímetros con espejos tallados personalmente en su taller doméstico, dedicando años de noches despejadas al rastreo visual del horizonte crepuscular mientras los grandes telescopios robóticos dormían."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las primeras observaciones astrométricas reportadas por Borisov cubrieron un arco orbital preliminar de apenas unas horas, pero revelaron una velocidad geocéntrica de 30 kilómetros por segundo. La rápida publicación de sus datos permitió al Observatorio Europeo Austral y a observatorios de Hawái confirmar la órbita en menos de cuarenta y ocho horas."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m3/banner_descubrimiento-borisov.webp',
-    bannerCaption: 'Borisov 2019: el astrónomo amateur Gennady Borisov descubrió el segundo objeto interestelar con su telescopio casero',
-    fact: 'El cometa se descubrió a unas 3 unidades astronómicas del Sol, más allá de Marte. Aunque la temperatura era baja, fue suficiente para que los hielos de su superficie comenzaran a sublimarse. Esto formó la coma brillante que permitió a Borisov detectarlo.'
+    "bannerImage": "/assets/interestelar/infographic_m3/banner_descubrimiento-borisov.webp",
+    "bannerCaption": "Borisov 2019: el astrónomo amateur Gennady Borisov descubrió el segundo objeto interestelar con su telescopio casero",
+    "fact": "El descubrimiento de 2I/Borisov el 30 de agosto de 2019 por Gennadiy Borisov representó la primera vez en la historia moderna en que un astrónomo independiente descubrió un objeto interestelar empleando un telescopio reflector artesanal de 0.65 metros, adelantándose a los grandes sondeos automatizados mundiales."
   },
   {
-    id: 'confirmacion-interestelar',
-    title: 'Confirmación Interestelar',
-    color: '#1565C0',
-    btnImage: '/assets/interestelar/infographic_m3/btn_confirmacion-interestelar.jpg',
-    image: '/assets/interestelar/infographic_m3/hero_confirmacion-interestelar.jpg',
-    content: [
-      'La órbita de un objeto indica su origen. Los objetos de nuestro sistema solar viajan en órbitas elípticas. La excentricidad mide cuán alargado es ese óvalo, y para los objetos locales es menor a 1. Una excentricidad de 1 representa el límite para escapar de la gravedad.',
-      'Los cálculos mostraron que la órbita de Borisov tenía una excentricidad de 3.36. Una cifra mayor a 1 indica una órbita hiperbólica y abierta. El número era tan alto que confirmaba que este cometa venía del espacio profundo y no volvería jamás.',
-      'Borisov entró al sistema solar a 32.2 kilómetros por segundo (116,000 kilómetros por hora). A esa velocidad, la gravedad del Sol no era lo suficientemente fuerte para capturarlo. Solo logró desviar ligeramente su trayectoria antes de que el cometa regresara al espacio interestelar.',
-      'La confirmación oficial llegó mediante el Minor Planet Center y la NASA. La Unión Astronómica Internacional creó una nueva clasificación y lo rebautizó como 2I/Borisov. Esto abrió la puerta al estudio de objetos de otras estrellas.',
-      'A diferencia de Oumuamua (descubierto en 2017), Borisov fue encontrado meses antes de alcanzar su perihelio. Oumuamua nos sorprendió cuando ya se alejaba, mientras que Borisov nos dio tiempo para planificar observaciones. Así, los astrónomos pudieron usar el Telescopio Hubble para estudiarlo detalladamente.'
+    "id": "confirmacion-interestelar",
+    "title": "Confirmación Interestelar",
+    "color": "#1565C0",
+    "btnImage": "/assets/interestelar/infographic_m3/btn_confirmacion-interestelar.jpg",
+    "image": "/assets/interestelar/infographic_m3/hero_confirmacion-interestelar.jpg",
+    "content": [
+      "A los pocos días del reporte inicial, observatorios de renombre global como el Gran Telescopio Canarias en España, el telescopio Gemini Norte en Hawái y el Very Large Telescope en Chile recopilaron cientos de mediciones astrométricas independientes. La precisión combinada de estos datos permitió fijar con rigor matemático indiscutible los parámetros orbitales de la trayectoria de C/2019 Q4.",
+      "El resultado de las ecuaciones orbitales conmocionó a los astrofísicos: el cometa exhibía una excentricidad orbital de e = 3.356. En la historia registrada de la astronomía, ningún cuerpo natural había mostrado jamás una excentricidad tan descomunal. El récord anterior pertenecía a 'Oumuamua con un valor de 1.1995, por lo que Borisov pulverizó ampliamente cualquier registro de apertura hiperbólica jamás medido.",
+      "Una excentricidad superior a 3.0 significa que la órbita es una hipérbola extraordinariamente abierta y tensa, incompatible con cualquier perturbación gravitatoria inducida por planetas masivos como Júpiter o Saturno sobre un cometa procedente de la lejana nube de Oort. No cabía duda matemática posible: el cometa no estaba ni había estado nunca gravitacionalmente atrapado por el pozo de potencial del Sol.",
+      "El cálculo de la velocidad asintótica de exceso hiperbólico al infinito arrojó una cifra vertiginosa de 32.2 kilómetros por segundo respecto al reposo local galáctico. El bólido se desplazaba a través del espacio con un vector de energía cinética tan descomunal que la gravedad solar apenas logró curvar suavemente su camino en un ángulo de deflexión moderado sin frenar su avance.",
+      "El 24 de septiembre de 2019, la Unión Astronómica Internacional emitió un comunicado histórico bautizando oficialmente al objeto como 2I/Borisov. El prefijo «2I» lo consagró formalmente como el segundo objeto interestelar de la historia de la ciencia y el primer cometa interestelar genuino que exhibía actividad de desgasificación activa al aproximarse al astro rey."
     ],
-    expandables: [
-      { label: 'Matemáticas del Infinito', icon: 'atom', text: 'Un círculo perfecto tiene excentricidad 0, y la Tierra tiene 0.016. Los cometas locales típicos tienen entre 0.9 y 0.99. Una excentricidad de 3.36 significa que la energía cinética del cometa era superior a la energía potencial gravitatoria del Sol.' },
-      { label: 'La Velocidad de Escape', icon: 'zap', text: 'Para capturar un objeto, este debe moverse por debajo de la velocidad de escape, que es unos 24 km/s. Borisov viajaba a más de 30 km/s. Ningún cuerpo del sistema solar podía frenarlo lo suficiente para retenerlo.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los cometas hiperbólicos del sistema solar suelen alcanzar como máximo excentricidades de 1.01 o 1.02 cuando sufren el empuje de la gravedad de Júpiter. Un valor de 3.356 representaba una imposibilidad absoluta de pertenencia local, confirmando de manera instantánea y tajante que venía disparado directamente desde las profundidades del espacio interestelar."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El parámetro de energía orbital específica de 2I/Borisov, expresado mediante la constante C3 de exceso hiperbólico, alcanzó aproximadamente 1037 km²/s². Esta enorme energía orbital positiva demostró que su paso por el sistema solar interior fue un evento transitorio irrepetible a lo largo de toda la historia cósmica."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m3/banner_confirmacion-interestelar.webp',
-    bannerCaption: 'Confirmación interestelar: excentricidad de 3.36, muy por encima del 1.0 necesario para ser interestelar',
-    fact: 'El Telescopio Espacial Hubble capturó imágenes de 2I/Borisov a 300 millones de kilómetros de la Tierra. Fue la primera vez que se observó en detalle el núcleo brillante y la atmósfera de un cometa de otro sistema planetario.'
+    "bannerImage": "/assets/interestelar/infographic_m3/banner_confirmacion-interestelar.webp",
+    "bannerCaption": "Confirmación interestelar: excentricidad de 3.36, muy por encima del 1.0 necesario para ser interestelar",
+    "fact": "La excentricidad orbital calculada para 2I/Borisov alcanzó un valor numérico récord de e = 3.356, con una velocidad de exceso al infinito de 32.2 km/s y una inclinación orbital de 44.05°. Estos guarismos matemáticos establecieron el récord indiscutido de trayectoria hiperbólica abierta en toda la historia de la observación astronómica."
   },
   {
-    id: 'primer-cometa-alien',
-    title: 'Primer Cometa de Otro Sistema',
-    color: '#00BCD4',
-    btnImage: '/assets/interestelar/infographic_m3/btn_primer-cometa-alien.jpg',
-    image: '/assets/interestelar/infographic_m3/hero_primer-cometa-alien.jpg',
-    content: [
-      'Oumuamua nos sorprendió porque no tenía coma ni cola. Sin embargo, Borisov se comportó como un cometa clásico. Presentaba una nube brillante de gas y una cola de polvo que apuntaba lejos del Sol. Era un visitante interestelar pero con características muy familiares.',
-      'Un cometa es una "bola de nieve sucia" compuesta de hielos, polvo y rocas. Cuando se acerca al Sol, el hielo pasa directamente de sólido a gas mediante sublimación. El gas arrastra partículas de polvo y forma la coma y la cola.',
-      'Borisov demostró que el proceso de formación de cometas no es exclusivo de nuestro sistema solar. El hecho de que se comporte como un cometa local indica que hay física y química similares en otras estrellas. Existen nubes de asteroides en exoplanetas esperando ser expulsadas.',
-      'Los análisis mostraron que Borisov expulsaba gas y polvo a tasas similares a los cometas locales. Se detectó cianógeno y carbono diatómico, componentes que dan el tono verdoso a los cometas de nuestro sistema solar. Parecía un residente temporal de nuestro vecindario estelar.',
-      'Este objeto era una reliquia inestimable. Había viajado a temperaturas cercanas al cero absoluto durante miles de millones de años. Al calentarse bajo nuestro Sol, liberó gases sellados en otro sistema estelar. Su coma era una muestra primordial de un mundo lejano.'
+    "id": "primer-cometa-alien",
+    "title": "Primer Cometa de Otro Sistema",
+    "color": "#00BCD4",
+    "btnImage": "/assets/interestelar/infographic_m3/btn_primer-cometa-alien.jpg",
+    "image": "/assets/interestelar/infographic_m3/hero_primer-cometa-alien.jpg",
+    "content": [
+      "El aspecto físico de 2I/Borisov causó un impacto extraordinario en la comunidad científica porque presentaba todas las características visuales y dinámicas de un cometa clásico maduro. Rodeando a su diminuto núcleo sólido se extendía una coma esférica brillante de gas ionizado y partículas de polvo de decenas de miles de kilómetros de diámetro, seguida por una cola difusa que se alargaba en el espacio.",
+      "A medida que el calor solar incidía sobre la corteza congelada del cometa, los hielos primordiales comenzaron a sublimar directamente de fase sólida a gas. Las observaciones espectroscópicas tempranas realizadas con el Telescopio William Herschel en La Palma y el Observatorio Keck en Hawái detectaron con claridad la emisión luminosa de moléculas de cianógeno (CN) y de carbono diatómico (C2) en la envoltura gaseosa.",
+      "La detección de estas moléculas volátiles resultó profundamente reveladora para los astrofísicos. El cianógeno y el carbono diatómico son componentes químicos arquetípicos presentes en prácticamente todos los cometas nacidos en el sistema solar, desde los que orbitan en la lejana nube de Oort hasta los cometas de la familia de Júpiter. La física de los cometas interestelares compartía las mismas leyes universales.",
+      "Los astrónomos lograron estimar la tasa de producción de polvo y la velocidad de eyección de las partículas microscópicas. Las partículas de polvo expulsadas eran arrastradas suavemente por la presión de radiación fotónica del Sol, formando una estela que se extendía a lo largo de más de cien mil kilómetros, ofreciendo a los telescopios un laboratorio natural para medir el tamaño y la distribución de los granos cósmicos.",
+      "Este comportamiento contrastó de forma radical con el enigma que había planteado 'Oumuamua dos años antes. Mientras que el primer visitante interestelar desconcertó a los teóricos por su total carencia de envoltura cometaria visible, 2I/Borisov se comportaba de manera perfectamente comprensible y predecible bajo los modelos termodinámicos de sublimación superficial estándar."
     ],
-    expandables: [
-      { label: 'El Verdadero Oumuamua', icon: 'zap', text: 'Oumuamua se comportó como un asteroide seco, lo que indica que los sistemas estelares expulsan diversos escombros. Pueden ser rocosos o helados, dependiendo de la región de origen. Borisov representa a los objetos helados de los confines de su sistema.' },
-      { label: 'La Coma y el Viento Solar', icon: 'atom', text: 'La coma puede ser más grande que Júpiter, aunque el núcleo mida pocos kilómetros. La cola apunta lejos del Sol debido a que el viento solar y la presión de radiación empujan el gas y el polvo hacia atrás.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La coma de gas y polvo de 2I/Borisov llegó a superar en volumen físico al tamaño del planeta Júpiter. Aunque el núcleo de hielo sólido medía menos de un kilómetro de diámetro, la tenue nube de moléculas brillantes iluminadas por el Sol se expandió a lo largo de más de 150.000 kilómetros en el espacio circundante."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las mediciones espectrofotométricas fijaron una tasa de producción de cianógeno de aproximadamente 3.7 × 10²⁴ moléculas por segundo cuando el cometa se encontraba a 2.6 unidades astronómicas del Sol. Esta tasa de desgasificación coincidía plenamente con los rangos típicos exhibidos por los cometas locales del sistema solar a distancias heliocéntricas análogas."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m3/banner_primer-cometa-alien.webp',
-    bannerCaption: 'El primer cometa alienígena: Borisov tiene coma, colas y desgasifica como un cometa normal pero de otra estrella',
-    fact: 'Las observaciones del Hubble indicaron que el tamaño de la coma era enorme. Las partículas de polvo tenían propiedades de dispersión de luz casi idénticas a las del cometa Hale-Bopp, lo que sugiere procesos de formación similares.'
+    "bannerImage": "/assets/interestelar/infographic_m3/banner_primer-cometa-alien.webp",
+    "bannerCaption": "El primer cometa alienígena: Borisov tiene coma, colas y desgasifica como un cometa normal pero de otra estrella",
+    "fact": "2I/Borisov se consagró como el primer cometa genuinamente interestelar identificado por la ciencia, exhibiendo una coma activa de más de 100.000 kilómetros de diámetro y desgasificación detectable de moléculas de cianógeno (CN) y carbono diatómico (C₂), demostrando que los hielos cometarios son universales en la galaxia."
   },
   {
-    id: 'composicion-molecular',
-    title: 'Composición Molecular',
-    color: '#7E57C2',
-    btnImage: '/assets/interestelar/infographic_m3/btn_composicion-molecular.jpg',
-    image: '/assets/interestelar/infographic_m3/hero_composicion-molecular.jpg',
-    content: [
-      'Aunque Borisov parecía un cometa local, los astrónomos descubrieron que su química era inusual. Utilizaron la espectroscopia para descomponer su luz y encontrar componentes químicos específicos. Al leer este código de luz, detectaron una composición extraordinaria.',
-      'El hallazgo más sorprendente fue la enorme cantidad de monóxido de carbono (CO). En nuestros cometas, el agua es más abundante y el CO es bajo. Sin embargo, ALMA y el Hubble detectaron que el gas CO en Borisov era entre 9 y 26 veces más abundante que en los cometas locales.',
-      'El monóxido de carbono necesita temperaturas por debajo de los -250 grados Celsius (20 Kelvin) para congelarse. Si Borisov está lleno de hielo de CO, se formó en un entorno muy frío. Debió nacer en los confines más alejados de su sistema estelar nativo.',
-      'Además del monóxido de carbono, detectaron cianuro de hidrógeno e isótopos poco comunes. El hielo de agua sugirió que había estado expuesto a la radiación cósmica interestelar. El cometa es una cápsula del tiempo que muestra el impacto del espacio profundo durante su viaje.',
-      'Esta química sugiere que Borisov podría haberse formado alrededor de una estrella enana roja, donde las temperaturas son menores. También podría provenir de un disco protoplanetario rico en carbono. Esto demuestra que los ingredientes de los sistemas planetarios varían en la Vía Láctea.'
+    "id": "composicion-molecular",
+    "title": "Composición Molecular",
+    "color": "#7E57C2",
+    "btnImage": "/assets/interestelar/infographic_m3/btn_composicion-molecular.jpg",
+    "image": "/assets/interestelar/infographic_m3/hero_composicion-molecular.jpg",
+    "content": [
+      "El análisis químico más trascendental sobre 2I/Borisov se llevó a cabo utilizando el Atacama Large Millimeter/submillimeter Array (ALMA), un complejo de sesenta y seis antenas de alta precisión situado a 5.000 metros de altitud en el desierto de Atacama en Chile, complementado por el Telescopio Espacial Hubble y el telescopio orbital Neil Gehrels Swift de la NASA.",
+      "Cuando las antenas de ALMA sintonizaron las frecuencias submilimétricas emitidas por los gases de la coma cometaria, los radioastrónomos descubrieron un fenómeno químico sin parangón: el cometa liberaba torrentes colosales de monóxido de carbono (CO). Las mediciones revelaron que la concentración molecular de monóxido de carbono superaba ampliamente la concentración habitual presente en casi todos los cometas del sistema solar.",
+      "En los cometas originados en nuestro sistema planetario, el agua congelada (H2O) es invariablemente el ingrediente volátil más abundante, mientras que el monóxido de carbono representa solo entre un dos y un diez por ciento de la composición total de hielos. En 2I/Borisov, la abundancia relativa de CO frente a H2O resultó ser entre tres y diez veces mayor que el promedio local, compitiendo directamente con el vapor de agua.",
+      "Esta composición exótica aportó pistas concluyentes sobre el entorno astrofísico en el que se gestó el cometa. El monóxido de carbono es un gas extremadamente volátil que únicamente puede condensarse en hielo sólido en regiones con temperaturas criogénicas inferiores a 25 kelvin, equivalentes a 248 grados Celsius bajo cero. Su núcleo debió condensarse en un ambiente gélido y protegido.",
+      "Los investigadores dedujeron que 2I/Borisov se formó más allá de la línea de congelación de monóxido de carbono en las regiones remotas y ultrafrías del disco protoplanetario de su estrella progenitora. Este ambiente químico sugiere una formación probable alrededor de una estrella enana roja de tipo M, las estrellas más frías, tenues y numerosas de la Vía Láctea, donde la radiación estelar es reducida."
     ],
-    expandables: [
-      { label: 'El Observatorio ALMA', icon: 'zap', text: 'El Atacama Large Millimeter/submillimeter Array (ALMA) es un conjunto de antenas de radio en Chile. Fue clave para detectar CO en Borisov porque este gas emite ondas de radio específicas al rotar en el frío del espacio, imposibles de ver con telescopios ópticos.' },
-      { label: 'Veneno Interestelar', icon: 'atom', text: 'El monóxido de carbono y el cianuro de hidrógeno son comunes en las frías nubes moleculares del espacio interestelar. Aunque son tóxicos en la Tierra, en la astroquímica su presencia indica condiciones de baja temperatura de formación.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La cantidad de monóxido de carbono liberada por Borisov era tan abrumadora que emitía gas a un ritmo superior a sesenta kilogramos de CO por segundo. Respirar en las proximidades de su coma habría sido mortal de forma instantánea debido a la enorme toxicidad de este compuesto volátil concentrado en su envoltura."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las observaciones radioastronómicas con ALMA y el instrumento COS del Hubble cuantificaron una relación molecular CO/H₂O de entre 0.35 y 1.7 en la coma interior de Borisov. Esta cifra es un orden de magnitud superior a la media de los cometas locales de la nube de Oort, fijada típicamente en valores inferiores a 0.04."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m3/banner_composicion-molecular.webp',
-    bannerCaption: 'Composición molecular: agua y monóxido de carbono en alta proporción, formado muy lejos de su estrella natal',
-    fact: 'Borisov expulsaba varios kilogramos de monóxido de carbono por segundo. Emitía tanto gas como varios automóviles acelerando al máximo, proveniente de un núcleo de hielo de menos de un kilómetro de diámetro calentándose.'
+    "bannerImage": "/assets/interestelar/infographic_m3/banner_composicion-molecular.webp",
+    "bannerCaption": "Composición molecular: agua y monóxido de carbono en alta proporción, formado muy lejos de su estrella natal",
+    "fact": "Las mediciones espectroscópicas de ALMA y el Telescopio Espacial Hubble detectaron una concentración de monóxido de carbono (CO) de tres a diez veces mayor que la de cualquier cometa promedio del sistema solar. Esto evidenció que 2I/Borisov se condensó en un disco protoplanetario extrasolar criogénico a temperaturas inferiores a 25 Kelvin."
   },
   {
-    id: 'nucleo-fragmentacion',
-    title: 'El Núcleo y la Fragmentación',
-    color: '#69F0AE',
-    btnImage: '/assets/interestelar/infographic_m3/btn_nucleo-fragmentacion.jpg',
-    image: '/assets/interestelar/infographic_m3/hero_nucleo-fragmentacion.jpg',
-    content: [
-      'En el centro de cada cometa hay un núcleo sólido. Como están rodeados por la coma brillante, observarlo es difícil. Los astrónomos usaron el Hubble para medir su luz central y estimaron que el radio de Borisov era entre 400 y 1000 metros.',
-      'El núcleo era una pequeña montaña de hielo frágil que había sobrevivido un largo viaje espacial. En diciembre de 2019, alcanzó su perihelio a 300 millones de kilómetros del Sol. Esa distancia generó una ola de calor catastrófica para el cometa helado.',
-      'El hielo comenzó a hervir, fisurando la estructura del cometa. Los cometas son objetos porosos y frágiles, unidos débilmente. Los gases volátiles, como el monóxido de carbono, explotaron hacia el exterior y ejercieron presiones extremas sobre el núcleo.',
-      'En marzo de 2020, el cometa se rompió. Los telescopios detectaron múltiples fragmentos dentro de la coma de Borisov. Un trozo importante del núcleo se desprendió debido a los estallidos de gas. Ocurrió a 100,000 kilómetros por hora en el vacío del espacio.',
-      'Afortunadamente, el núcleo principal no se desintegró por completo. El fragmento más pequeño se desvaneció, pero Borisov continuó su viaje. Llevando cicatrices del encuentro con nuestra estrella, se alejó a gran velocidad para nunca volver a nuestro sistema solar.'
+    "id": "nucleo-fragmentacion",
+    "title": "El Núcleo y la Fragmentación",
+    "color": "#69F0AE",
+    "btnImage": "/assets/interestelar/infographic_m3/btn_nucleo-fragmentacion.jpg",
+    "image": "/assets/interestelar/infographic_m3/hero_nucleo-fragmentacion.jpg",
+    "content": [
+      "Determinar las dimensiones exactas del núcleo sólido de 2I/Borisov constituyó un formidable desafío observacional debido a que la densa coma de polvo encubría por completo la superficie rocosa y helada. Para penetrar esta envoltura difusa, los astrónomos recurrieron al poder de resolución angular del Telescopio Espacial Hubble de la NASA y la ESA y a los observatorios terrestres más avanzados del mundo.",
+      "Mediante complejas técnicas de sustracción matemática del perfil lumínico de la coma, los científicos del Hubble lograron restringir el tamaño del núcleo cometario a un radio de entre doscientos y quinientos metros. Se trataba de un cuerpo compacto y relativamente pequeño, lo que hacía aún más impresionante la descomunal nube de gas brillante que era capaz de desplegar a su alrededor en el espacio.",
+      "El 8 de diciembre de 2019, 2I/Borisov cruzó con éxito su perihelio a una distancia mínima de dos unidades astronómicas del Sol, situándose justo más allá de la órbita del planeta Marte. Durante este máximo acercamiento térmico, la radiación solar calentó intensamente las capas superficiales del núcleo, provocando gradientes de presión interna y violentos estallidos de desgasificación localizada.",
+      "En marzo de 2020, imágenes de ultraalta resolución captadas por la Cámara de Gran Campo 3 del Hubble detectaron una anomalía dramática: el núcleo presentaba dos fuentes puntuales de luz separadas por menos de cien kilómetros. El cometa había experimentado un proceso de fragmentación parcial o eyección de un fragmento secundario desprendido de su cuerpo principal.",
+      "Los análisis fotométricos revelaron que el fragmento desprendido no destruyó por completo al viajero cósmico, sino que constituyó un evento no catastrófico donde una sección de su corteza helada se quebró debido a la presión acumulada por los hielos de monóxido de carbono en ebullición. El fragmento menor se sublimó y desvaneció gradualmente en pocas semanas."
     ],
-    expandables: [
-      { label: 'El Efecto Cohete', icon: 'zap', text: 'Los chorros de gas de los cometas actúan como diminutos motores. Empujan físicamente al núcleo y causan aceleración no gravitacional. Esto altera ligeramente la trayectoria del cometa y es un factor que los astrónomos consideran al calcular órbitas.' },
-      { label: 'Como un Azucarillo', icon: 'atom', text: 'Se estima que la densidad típica del núcleo de un cometa es menor a 0.5 g/cm³. Si hubiera un océano lo suficientemente grande, flotarían. Son muy porosos, a diferencia de las rocas sólidas de los asteroides.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cuando el Hubble fotografió la fragmentación de Borisov a principios de 2020, muchos astrónomos temieron que el cometa se desintegrara por completo como le ocurrió al cometa ATLAS. Sin embargo, el núcleo aguantó con firmeza y solo perdió una pequeña lasca superficial, continuando su viaje cósmico sin desviarse de su ruta."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El modelo de dispersión de luz del Hubble restringió el radio efectivo del núcleo sólido de Borisov en R = 0.4 ± 0.2 kilómetros, con una masa estimada entre 1 × 10⁸ y 2 × 10⁹ kilogramos, asumiendo una densidad porosa estándar de 500 kilogramos por metro cúbico típica de núcleos cometarios primitivos."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m3/banner_nucleo-fragmentacion.webp',
-    bannerCaption: 'Fragmentación del núcleo: en abril 2020 el Hubble observó a Borisov partiéndose en dos pedazos',
-    fact: 'El evento de fragmentación en marzo de 2020 aumentó el brillo del cometa. El nuevo material helado en las fracturas del núcleo se sublimó furiosamente, arrojando nubes de polvo reflectante que fueron observadas desde la Tierra.'
+    "bannerImage": "/assets/interestelar/infographic_m3/banner_nucleo-fragmentacion.webp",
+    "bannerCaption": "Fragmentación del núcleo: en abril 2020 el Hubble observó a Borisov partiéndose en dos pedazos",
+    "fact": "El seguimiento con el Telescopio Espacial Hubble restringió el radio del núcleo de 2I/Borisov a entre 200 y 500 metros. En marzo de 2020, el telescopio registró la eyección de un fragmento menor debido a la presión de sublimación del CO tras cruzar el perihelio a 2.006 UA del Sol, confirmando una fragmentación parcial no destructiva."
   },
   {
-    id: 'sistema-origen',
-    title: '¿De Dónde Vino?',
-    color: '#FFB300',
-    btnImage: '/assets/interestelar/infographic_m3/btn_sistema-origen.jpg',
-    image: '/assets/interestelar/infographic_m3/hero_sistema-origen.jpg',
-    content: [
-      'La principal duda era identificar la estrella de origen de Borisov. La misión Gaia de la Agencia Espacial Europea mapeó más de mil millones de estrellas en nuestra galaxia. Conociendo la trayectoria del cometa, los astrónomos pudieron rastrear posibles orígenes en el espacio profundo.',
-      'Un equipo trazó la ruta millones de años hacia el pasado. Encontraron como candidato al sistema estelar Kruger 60, a unos 13 años luz de distancia. Hace un millón de años, Borisov pasó a poca distancia y velocidad cerca de este sistema.',
-      'Kruger 60 es un par de estrellas enanas rojas frías y pequeñas. Borisov podría haber sido expulsado desde los bordes de este sistema por planetas gigantes en migración. La gravedad de esos planetas actuaría como una catapulta para lanzar cometas al espacio.',
-      'Sin embargo, las incertidumbres crecen al retroceder tanto en el tiempo. Kruger 60 es una opción, pero también se cree que Borisov pudo nacer en un entorno rico en carbono. Podría haber sido expulsado de su órbita debido a la interacción violenta de estrellas vecinas.',
-      'El descubrimiento de Borisov confirma que el espacio interestelar está lleno de cometas y asteroides expulsados. Estos objetos flotan solitarios en la galaxia. Solo podemos observar aquellos que pasan por nuestro sistema solar interior y son iluminados por el Sol.'
+    "id": "sistema-origen",
+    "title": "¿De Dónde Vino?",
+    "color": "#FFB300",
+    "btnImage": "/assets/interestelar/infographic_m3/btn_sistema-origen.jpg",
+    "image": "/assets/interestelar/infographic_m3/hero_sistema-origen.jpg",
+    "content": [
+      "Una de las metas más fascinantes y complejas para los astrofísicos tras la confirmación de la órbita de 2I/Borisov consistió en reconstruir su vector cinemático hacia el pasado para intentar identificar el sistema estelar específico del que había sido expulsado hace incontables millones de años. Analizando los catálogos estelares del telescopio espacial Gaia de la ESA, los investigadores rastrearon los encuentros cinemáticos con cientos de miles de estrellas de la vecindad solar.",
+      "Para abordar este enigma balístico galáctico, los investigadores recurrieron a la base de datos astrométrica del telescopio espacial Gaia de la Agencia Espacial Europea. El satélite Gaia ha cartografiado con precisión milimétrica las posiciones, distancias trigonométricas y velocidades tridimensionales propias de más de mil millones de estrellas en nuestra galaxia, permitiendo integrar órbitas estelares hacia atrás en el tiempo.",
+      "Los cálculos cinemáticos revelaron que 2I/Borisov penetró en el sistema solar desde la dirección aparente de la constelación de Casiopea, muy cerca del plano del disco de la Vía Láctea. Los modelos dinámicos integraron la atracción gravitatoria del disco galáctico y los posibles encuentros cercanos con estrellas individuales a lo largo de los últimos diez millones de años de trayectoria balística.",
+      "Aunque no se pudo asociar de forma concluyente su origen con una estrella específica debido a las incertidumbres acumulativas en la integración temporal de millones de años, la cinemática de Borisov encaja notablemente bien con la población de estrellas jóvenes del disco delgado galáctico. Su velocidad de aproximación es moderada en comparación con el estándar local de reposo galáctico.",
+      "La hipótesis teórica más aceptada señala que Borisov nació en un disco protoplanetario circundante a una estrella enana roja. Durante las primeras etapas de formación de dicho sistema planetario, la interacción gravitatoria con un planeta gigante gaseoso en migración perturbó la órbita del cometa, catapultándolo con violencia hacia el vacío interestelar mediante una asistencia gravitatoria natural."
     ],
-    expandables: [
-      { label: 'La Misión Gaia', icon: 'zap', text: 'El satélite Gaia mide la posición y el movimiento de más de mil millones de estrellas con extrema precisión. Sin este mapa tridimensional, sería imposible rastrear el origen de Borisov, ya que desconoceríamos las posiciones estelares del pasado.' },
-      { label: 'El Tirachinas Gravitacional', icon: 'clock', text: 'Los planetas gigantes expulsan material cósmico durante la formación planetaria. En nuestro sistema solar, Júpiter y Neptuno arrojaron billones de rocas y cometas al espacio profundo. Probablemente, otros sistemas planetarios dispersen objetos de manera similar.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los científicos calcularon que nuestro propio sistema solar expulsó billones de cometas al espacio interestelar durante el violento período de migración planetaria de Júpiter y Saturno hace 4.000 millones de años. Es muy probable que cometas nacidos en la Tierra estén cruzando hoy en día sistemas estelares alienígenas distantes."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El rastreo de la trayectoria hacia atrás utilizando el catálogo Gaia DR2 identificó varios encuentros estelares a distancias de unos pocos pársecs en los últimos 5 millones de años, destacando la estrella binaria Kruger 60, aunque con velocidades relativas residuales que no permiten confirmar una eyección directa de ese sistema."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m3/banner_sistema-origen.webp',
-    bannerCaption: 'Sistema de origen: el trayecto de Borisov apunta a Krueger 60, sistema binario de enanas rojas en Cefeo',
-    fact: 'La probabilidad de que un cometa interestelar choque con la Tierra es cercana a cero. No obstante, los astrónomos calculan que miles de estos objetos viajan silenciosamente por los límites de nuestro sistema solar en un momento dado.'
+    "bannerImage": "/assets/interestelar/infographic_m3/banner_sistema-origen.webp",
+    "bannerCaption": "Sistema de origen: el trayecto de Borisov apunta a Krueger 60, sistema binario de enanas rojas en Cefeo",
+    "fact": "La integración dinámica de la trayectoria de 2I/Borisov utilizando los datos del satélite Gaia de la ESA demostró que el cometa provino de la dirección del disco galáctico en Casiopea. Su vector de entrada sugiere que fue eyectado de un sistema estelar de enana roja durante una fase caótica de migración de gigantes gaseosos."
   },
   {
-    id: 'comparacion-oumuamua',
-    title: 'Borisov vs Oumuamua',
-    color: '#B388FF',
-    btnImage: '/assets/interestelar/infographic_m3/btn_comparacion-oumuamua.jpg',
-    image: '/assets/interestelar/infographic_m3/hero_comparacion-oumuamua.jpg',
-    content: [
-      'Borisov y Oumuamua presentaron contrastes enormes que muestran la diversidad cósmica. Oumuamua era alargado, inactivo, no tenía polvo y lucía un tono rojizo. Parecía un fragmento de roca de un planeta destruido y sus movimientos inusuales provocaron muchas especulaciones.',
-      'En cambio, Borisov se comportó como un cometa tradicional. Presentaba una coma brillante y una cola de polvo. Esta normalidad indicó que los procesos de formación de la Nube de Oort ocurren de manera similar en otros sistemas planetarios de la Vía Láctea.',
-      'Ambos objetos compartían su alta velocidad. Oumuamua viajaba a 26 kilómetros por segundo, mientras que Borisov lo hacía a 32. Estas trayectorias hiperbólicas confirmaron su origen extrasolar. Los dos cruzaron nuestro sistema solar y regresaron rápidamente al espacio profundo.',
-      'La química reveló sus orígenes distintos. Oumuamua estaba seco, quizás tostado por una estrella o proveniente de un sistema interno caliente. Borisov estaba repleto de monóxido de carbono, lo que indica un origen en la periferia helada de su sistema estelar original.',
-      'Estos descubrimientos inauguraron un nuevo campo científico para estudiar visitantes interestelares. Astrónomos preparan el Observatorio Vera C. Rubin, que escaneará el cielo continuamente. Su objetivo es descubrir muchos más de estos objetos cada año para estudiar sistemas distantes.'
+    "id": "comparacion-oumuamua",
+    "title": "Borisov vs Oumuamua",
+    "color": "#B388FF",
+    "btnImage": "/assets/interestelar/infographic_m3/btn_comparacion-oumuamua.jpg",
+    "image": "/assets/interestelar/infographic_m3/hero_comparacion-oumuamua.jpg",
+    "content": [
+      "El cotejo directo entre 1I/'Oumuamua y 2I/Borisov ofrece a la astrofísica planetaria una oportunidad única para comparar dos especímenes procedentes del medio interestelar con características físicas, químicas y morfológicas que difícilmente podrían resultar más dispares entre sí. Mientras que el primero desafió las clasificaciones tradicionales al carecer por completo de coma, el segundo mostró una exuberante actividad cometaria rica en hielos primordiales.",
+      "Por un lado, 'Oumuamua desconcertó al mundo por su comportamiento refractario y anómalo. Carecía por completo de coma observable o cola de polvo, exhibía una silueta hiperelongada o aplanada con oscilaciones extremas de brillo de 2.5 magnitudes, y experimentó una misteriosa aceleración no gravitacional impulsada por la desgasificación invisible de hielos moleculares procesados por radiólisis cósmica.",
+      "Por otro lado, 2I/Borisov encarnó la viva imagen de un cometa clásico y tradicional. Mostró desde el inicio una abundante coma de gas, una prolongada cola de polvo microscópico, un núcleo esférico compacto de unos cientos de metros, desgasificación abundante de monóxido de carbono y cianógeno, y una aceleración dominada de manera predecible por la sublimación de volátiles.",
+      "En cuanto a sus propiedades orbitales, Borisov presentó una excentricidad colosal de 3.356 y una velocidad asintótica de 32.2 km/s, superando ampliamente la excentricidad de 1.1995 y los 26.3 km/s medidos en 'Oumuamua. Ambos cuerpos demostraron que los objetos interestelares provienen de orígenes cinemáticos muy diversos y viajan con energías orbitales drásticamente distintas.",
+      "Desde el punto de vista de la física de materiales, ambos viajeros presentan semejanzas superficiales cruciales: un tinte marcadamente rojizo provocado por la radiólisis de compuestos orgánicos generada tras millones de años de bombardeo continuo por rayos cósmicos galácticos en el frío vacío interestelar, dando lugar a costras ricas en tolinas complejas."
     ],
-    expandables: [
-      { label: 'El Misterio de la Forma', icon: 'zap', text: 'Las fluctuaciones de brillo de Oumuamua sugerían una forma alargada y giros caóticos. Borisov no mostró estas variaciones drásticas, indicando un núcleo más redondo y simétrico, similar a cometas conocidos como Halley.' },
-      { label: 'El Telescopio Vera Rubin', icon: 'atom', text: 'El Observatorio Vera C. Rubin tiene una cámara de 3200 megapíxeles. Fotografiará el cielo visible repetidamente y detectará objetos de movimiento rápido en órbitas inusuales. Avisará a los astrónomos con meses de antelación.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Si pudieras colocar a 'Oumuamua y a Borisov lado a lado, parecerían objetos de naturalezas completamente incompatibles. Uno parecería una enorme lasca oscura o un panqueque de asfalto en volteo caótico, mientras que el otro luciría como una resplandeciente bola de nieve brillante envuelta en una inmensa capa de niebla esmeralda."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La diferencia en la tasa de producción de polvo entre ambos objetos es abismal: mientras que en 'Oumuamua el límite superior de emisión de polvo se fijó en menos de 0.001 kg/s, en 2I/Borisov la tasa de pérdida de masa de polvo superó holgadamente los 35 kg/s en las proximidades del perihelio, subrayando la enorme diversidad de composición y volátiles presente en los diferentes sistemas planetarios de la galaxia."
+      }
     ],
-    bannerImage: '/assets/interestelar/infographic_m3/banner_comparacion-oumuamua.webp',
-    bannerCaption: 'Oumuamua vs Borisov: dos visitantes totalmente distintos que muestran la diversidad del cosmos interestelar',
-    fact: 'Oumuamua y Borisov ya han cruzado la órbita de Júpiter y se adentran en el espacio profundo. Viajan a tal velocidad que nuestras sondas espaciales actuales no pueden alcanzarlos. Continuarán su viaje por la Vía Láctea para siempre.'
+    "bannerImage": "/assets/interestelar/infographic_m3/banner_comparacion-oumuamua.webp",
+    "bannerCaption": "Oumuamua vs Borisov: dos visitantes totalmente distintos que muestran la diversidad del cosmos interestelar",
+    "fact": "La comparación entre 1I/'Oumuamua y 2I/Borisov reveló una diversidad cósmica radical: mientras que 'Oumuamua (e = 1.1995) resultó ser un objeto seco, elongado y sin coma detectable con aceleración radiolítica, Borisov (e = 3.356) fue un cometa clásico rico en hielos primordiales de CO con una tasa de emisión de polvo superior a 35 kg/s."
   }
 ];
 

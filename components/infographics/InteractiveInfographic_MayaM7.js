@@ -87,145 +87,201 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'noh-ek',
-              bannerImage: '/assets/maya/infographic_m7/banner_noh-ek.webp',
-    title: 'Noh Ek: La Gran Estrella',
-    color: '#E0E0E0',
-    btnImage: '/assets/maya/infographic_m7/btn_noh-ek.jpg',
-    image: '/assets/maya/infographic_m7/hero_noh-ek.jpg',
-    content: [
-      'Imagina que miras el cielo nocturno y ves un punto brillante. Para los astrónomos mayas, este punto era "Noh Ek", que significa "La Gran Estrella". Hoy lo llamamos el planeta Venus. A diferencia de las estrellas que tintinean, Venus brilla con una luz constante. Es el tercer objeto más brillante del cielo, superado por el Sol y la Luna. Para la civilización maya, su brillo era una advertencia de poder cósmico.',
-      'Noh Ek tenía una identidad doble, como si tuviera una identidad secreta que cambia según el día. A veces aparecía antes del amanecer, anunciando la llegada del Sol. En esta forma matutina, lo llamaban "Ah Chicum Ek", la estrella de la mañana. Otras veces, desaparecía por semanas y regresaba al anochecer. Hoy sabemos que es el mismo planeta orbitando alrededor del Sol. Los mayas entendieron esta dualidad como una transformación sagrada.',
-      'Imagina que Venus es un atleta veloz en una pista circular interior y la Tierra corre en la pista exterior. Como la pista interior es más corta y Venus corre más rápido, a veces nos alcanza y rebasa. Cuando Venus está de un lado del Sol, lo vemos al amanecer; cuando está del otro, lo vemos al atardecer. Los astrónomos mayas registraron estos movimientos utilizando sus ojos y paciencia. Su exactitud asombra a los científicos modernos.',
-      'En la cultura maya, la aparición de Noh Ek como estrella de la mañana era un momento de peligro. Creían que sus primeros rayos de luz eran como lanzas o flechas cósmicas que golpeaban la Tierra. Estos "rayos-flecha" eran considerados peligrosos. Se creía que podían dañar las cosechas, enfermar a los gobernantes y decidir el destino de las batallas. Por esta razón, los sacerdotes y reyes vigilaban el cielo con atención.',
-      'La fascinación maya por Noh Ek era un pilar fundamental de su civilización. La posición de la Gran Estrella dictaba cuándo realizar rituales, coronar a un nuevo rey o iniciar conflictos militares. Venus era el reloj celestial que marcaba el ritmo de la política y el poder maya. Al dominar el conocimiento de sus movimientos, los gobernantes demostraban que tenían el favor de los dioses.',
+    "id": "noh-ek",
+    "bannerImage": "/assets/maya/infographic_m7/banner_noh-ek.webp",
+    "title": "Noh Ek: La Gran Estrella",
+    "color": "#E0E0E0",
+    "btnImage": "/assets/maya/infographic_m7/btn_noh-ek.jpg",
+    "image": "/assets/maya/infographic_m7/hero_noh-ek.jpg",
+    "content": [
+      "En el panteón celeste de la civilización maya, el planeta Venus ocupaba el lugar más prominente y temido después de las dos luminarias mayores, el Sol y la Luna. Conocido en lengua maya clásica bajo diversos nombres reverenciales como Noh Ek («la Gran Estrella»), Chak Ek («la Estrella Gigante o Roja») o Xux Ek («la Estrella Avispa»), este deslumbrante punto de luz no era considerado un cuerpo inerte, sino una poderosa deidad viva cargada de presagios bélicos y transformaciones cósmicas.",
+      "A diferencia de las culturas occidentales que asociaron a Venus con la diosa de la belleza y el amor pacífico, los pueblos mesoamericanos proyectaron sobre este planeta una naturaleza marcial, agresiva y sumamente peligrosa. Venus era concebido como un arquero cósmico armado con dardos de luz letales (conocidos como flechas astrales) que disparaba periódicamente hacia la Tierra al culminar sus periodos de invisibilidad, hiriendo a gobernantes, marchitando sementeras y trayendo plagas a las ciudades.",
+      "Los mitógrafos mayas personificaban a Venus a través de varias entidades sobrenaturales complementarias según su posición en el cielo. En su fase de estrella matutina al oriente, era encarnado por dioses coléricos y armados con propulsores atlatl como Lahun Chan o Tlahuizcalpantecuhtli, provisto de garras y rostro esquelético. En su manifestación vespertina al poniente, se vinculaba estrechamente con Kukulcán, la Serpiente Emplumada que descendía al inframundo.",
+      "Los sacerdotes astrónomos vigilaban cotidianamente las trayectorias de Venus desde las terrazas de sus observatorios con una mezcla de fascinación científica y pavor religioso. El brillo del planeta en el cielo nocturno y crepuscular es tan intenso que es el único cuerpo celeste, aparte de la Luna y el Sol, capaz de arrojar sombras perceptibles de objetos sobre el suelo terrestre y de permanecer visible a simple vista a pleno mediodía en condiciones atmosféricas favorables.",
+      "El estudio sistemático de Noh Ek sentó las bases para el desarrollo de la astronomía observacional cuantitativa en ciudades como Copán, Palenque, Tikal, Uxmal y Chichén Itzá. El seguimiento ininterrumpido de sus ortos y ocasos a lo largo de los siglos permitió a los mayas descubrir las leyes armónicas que rigen su mecánica orbital, convirtiendo a Venus en el metrónomo cósmico sobre el cual se calibraban los grandes ritos de Estado y las alianzas políticas del imperio."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El brillo de Venus es intenso porque está cubierto de nubes de ácido sulfúrico reflectantes. Estas nubes funcionan como un espejo gigante que refleja el 70% de la luz solar. Para los mayas, este brillo era evidencia de la presencia divina y el poder de la estrella matutina.' },
-      { label: 'El Gemelo Divino', icon: 'clock', text: 'En el Popol Vuh, el libro sagrado de los mayas, la historia de los Héroes Gemelos, Hunahpú e Ixbalanqué, está relacionada con el ciclo de Venus y el Sol. Cuando derrotan a los señores del inframundo de Xibalbá, ascienden al firmamento para convertirse en el Sol y la estrella de Venus.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Bajo cielos tropicales completamente oscuros y despejados de contaminación lumínica, el planeta Venus alcanza una magnitud aparente máxima de -4.9. En estas condiciones excepcionales, la luz de Venus es suficiente para permitir a una persona leer un códice jeroglífico en la selva e identificar sombras nítidas sobre muros blancos de cal."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La arqueoastrónoma Susan Milbrath comprobó que las representaciones escultóricas de Venus en los frisos del periodo Clásico varían de aspecto según la fase orbital: cuando el planeta es estrella de la mañana luce un tocado de deidad solar guerrera, mientras que como estrella de la tarde porta atuendos asociados a las deidades acuáticas del inframundo."
+      }
     ],
-    fact: 'Sin contar con telescopios ni instrumentos modernos, los astrónomos mayas calcularon el ciclo de Venus en 584 días. ¡La cifra astronómica científica es de 583.92 días! Esta diferencia es de apenas unas horas. Su cálculo tenía un error de menos de una décima de porcentaje. Lo lograron observando el cielo desde sus pirámides durante generaciones.',
+    "fact": "Venus, llamado Noh Ek o Chak Ek por los mayas, era la deidad planetaria más reverenciada y temida de Mesoamérica, monitoreada como un arquero cósmico cuyos rayos inaugurales al amanecer definían el inicio de temporadas de guerra, tratados de paz y ritos de coronación real en las cortes del periodo Clásico."
   },
   {
-    id: 'ciclo-sinodico',
-              bannerImage: '/assets/maya/infographic_m7/banner_ciclo-sinodico.webp',
-    title: 'Ciclo Sinódico: La Danza Cósmica',
-    color: '#FFD600',
-    btnImage: '/assets/maya/infographic_m7/btn_ciclo-sinodico.jpg',
-    image: '/assets/maya/infographic_m7/hero_ciclo-sinodico.jpg',
-    content: [
-      'Imagina que dos corredores dan vueltas alrededor de un estadio, uno en la pista interior y otro en la exterior. El tiempo que tardan en volver a encontrarse alineados en la línea de salida es el "ciclo sinódico". Para Venus y la Tierra, esta carrera dura 584 días. Los observadores mayas estudiaron cada fase de esta competencia cósmica durante años, registrando cada detalle.',
-      'Los antiguos mayas dividieron este ciclo de 584 días en cuatro etapas visuales. Primero, la estrella de la mañana brillaba durante 236 días. Luego desaparecía en el resplandor del Sol durante 90 días, lo que asociaban con un viaje por el inframundo. Después reaparecía como la estrella del atardecer durante 250 días. Finalmente, desaparecía de nuevo durante 8 días, antes de renacer al amanecer.',
-      'El secreto matemático de los astrónomos mayas radicaba en la "conmensurabilidad". Imagina tratar de sincronizar dos engranajes giratorios de diferente tamaño. Descubrieron que si tomas cinco ciclos completos de Venus (5 x 584 días), obtienes 2,920 días. Y si tomas ocho años solares (8 x 365 días), ¡también obtienes 2,920 días! Esta sincronización matemática era considerada un mensaje sagrado de los dioses.',
-      'Esta equivalencia donde 5 ciclos venusinos son idénticos a 8 ciclos solares significaba que cada ocho años Venus volvía a aparecer en la misma posición en el firmamento. También coincidía con el mismo día del calendario solar Haab. Para los gobernantes mayas, este aniversario era un momento ceremonial poderoso. Celebraban festivales para asegurar que el mecanismo del universo continuara funcionando.',
-      'El conocimiento de la sincronización cósmica no era solo una curiosidad matemática. Los mayas utilizaban estos ciclos para planificar eventos fundamentales en sus vidas. Si un rey deseaba asegurar su victoria en una guerra, o si los sacerdotes necesitaban garantizar que sus ceremonias tuvieran éxito, recurrían a la danza matemática de Venus y la Tierra. La matemática celestial era el lenguaje divino que regía el destino.',
+    "id": "ciclo-sinodico",
+    "bannerImage": "/assets/maya/infographic_m7/banner_ciclo-sinodico.webp",
+    "title": "Ciclo Sinódico: La Danza Cósmica",
+    "color": "#FFD600",
+    "btnImage": "/assets/maya/infographic_m7/btn_ciclo-sinodico.jpg",
+    "image": "/assets/maya/infographic_m7/hero_ciclo-sinodico.jpg",
+    "content": [
+      "El ciclo sinódico de Venus es el tiempo exacto que tarda el planeta en completar una vuelta completa de fases aparentes y regresar a la misma posición relativa respecto a la Tierra y al disco del Sol. Desde la perspectiva astronómica contemporánea, este intervalo orbital posee una duración media real de 583.92 días terrestres. Los sabios mayas lograron calcular este ciclo con pasmosa exactitud, redondeándolo canónicamente en una cifra entera de 584 días solares.",
+      "Los astrónomos de la corte dividieron estos 584 días del ciclo en cuatro fases canónicas perfectamente delimitadas, reflejadas con absoluta fidelidad en los registros glíficos de los códices prehispánicos: la primera fase consistía en 236 días continuos en los que el planeta brillaba como lucero del alba en el horizonte oriental antes del amanecer, acompañando el nacimiento diario del astro solar.",
+      "A continuación, el planeta entraba en una segunda etapa de 90 días de invisibilidad total conocida como la conjunción superior, periodo durante el cual Venus pasaba por detrás del Sol desde la perspectiva visual terrestre y quedaba completamente eclipsado por el resplandor diurno. Tras esta ausencia, emergía la tercera fase: 250 días en los que brillaba majestuosamente como lucero vespertino sobre el horizonte poniente justo después del atardecer.",
+      "Finalmente, el ciclo culminaba con la cuarta y más crítica etapa: 8 días de invisibilidad absoluta durante la conjunción inferior, cuando el planeta cruzaba el espacio entre la Tierra y el Sol. Tras estos ocho días de reclusión metafórica en las tinieblas de la muerte en el inframundo, Venus reaparecía de forma fulgurante por el oriente en su orto helíaco matutino, acontecimiento que marcaba el renacimiento triunfal del ciclo cósmico ante la mirada atenta de los sacerdotes.",
+      "La suma exacta de estas cuatro fases (236 + 90 + 250 + 8 = 584 días) estructuraba una danza geométrica inmutable en la bóveda nocturna. Aunque las duraciones reales de visibilidad varían ligeramente debido a la excentricidad orbital de la Tierra y Venus, los astrónomos mayas idearon este modelo canónico modular para integrar las observaciones empíricas dentro de su sistema de numeración vigesimal y sincronizarlo con el calendario civil Haab'."
     ],
-    expandables: [
-      { label: 'El Gran Ciclo', icon: 'atom', text: 'Además de sincronizar Venus con el Sol, los mayas conectaron estos 2,920 días con su calendario adivinatorio de 260 días, el Tzolkín. Descubrieron que 65 ciclos del Tzolkín (65 x 260) son 16,900 días. Esto equivale a 65 años rituales y sincroniza de nuevo el Sol, Venus y el calendario espiritual, demostrando la complejidad de su sistema.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Durante el periodo de desaparición de 8 días de Venus, conocido como la conjunción inferior (cuando pasa entre la Tierra y el Sol), los mayas consideraban que el planeta estaba muerto. Creían que sufría transformaciones en el inframundo. Pensaban que en la oscuridad la deidad se despojaba de su piel para resurgir.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los ocho días de desaparición de Venus durante su conjunción inferior fueron interpretados mitológicamente en el Popol Vuh como el descenso y agonía de los Héroes Gemelos Hunahpú e Ixbalanqué en el inframundo de Xibalbá, de donde logran resucitar victoriosos convertidos en el Sol y la Gran Estrella de la mañana."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La duración media de 583.92 días del periodo sinódico de Venus genera que en cinco ciclos completos (2,919.6 días) transcurran prácticamente ocho años trópicos solares exactos (2,921.9 días), creando un ciclo de resonancia orbital casi perfecto de 8:13 entre la Tierra y Venus alrededor de nuestra estrella común."
+      }
     ],
-    fact: 'El conocimiento del ciclo de Venus de 584 días era información astronómica de alta seguridad en el mundo maya. Las tablas venusinas no eran accesibles para el ciudadano común. Solo un grupo de sacerdotes matemáticos y el rey (ajaw) tenían el privilegio de aprender, resguardar y utilizar este secreto celestial para dominar el tiempo.',
+    "fact": "El periodo sinódico de Venus de 584 días fue subdividido por los mayas en 4 estaciones exactas: 236 días como estrella matutina oriental, 90 días oculto en conjunción superior, 250 días como estrella vespertina occidental y 8 días de tránsito invisible en conjunción inferior antes de su dramático orto helíaco."
   },
   {
-    id: 'tabla-dresde',
-              bannerImage: '/assets/maya/infographic_m7/banner_tabla-dresde.webp',
-    title: 'Las Tablas de Venus: El Códice de Dresde',
-    color: '#0288D1',
-    btnImage: '/assets/maya/infographic_m7/btn_tabla-dresde.jpg',
-    image: '/assets/maya/infographic_m7/hero_tabla-dresde.jpg',
-    content: [
-      'Imagina un libro plegable elaborado con corteza de árbol de amate, pintado con jeroglíficos y números. Este es el Códice de Dresde, uno de los pocos libros mayas que sobrevivieron a la quema de documentos durante la colonización española. En sus páginas 24 y de la 46 a la 50, el manuscrito contiene las famosas "Tablas de Venus". Esta es una obra maestra del cálculo humano.',
-      'Estas páginas no son simples decoraciones; funcionan como una hoja de cálculo astronómica. En sus filas y columnas de números, representados con barras (valor 5) y puntos (valor 1), los sabios mayas proyectaron los movimientos futuros de Noh Ek. Estas tablas predicen la posición de Venus a lo largo de un periodo de 104 años. ¡Un total de más de 37,960 días anotados!',
-      'El verdadero ciclo astronómico de Venus no es un número entero, sino que dura 583.92 días. Aunque los mayas utilizaban el número de 584 días para simplificar sus cálculos, sabían que el sobrante de 0.08 días se iría acumulando. Entendían que esto terminaría arruinando sus predicciones si no lo solucionaban.',
-      'Como programadores modernos reparando un error en el código, los sabios introdujeron ajustes ocultos en el Códice de Dresde. Similar a cómo agregamos años bisiestos en nuestro calendario para mantenerlo sincronizado con las estaciones, las tablas mayas ordenaban restar ciertos días cada cierto periodo de años. Así mantenían la precisión sin errores perceptibles.',
-      'Junto con los números calendáricos, hay pinturas de una deidad de Venus armada con lanzas, hiriendo a víctimas terrenales. Estas víctimas representan momentos críticos de la temporada del calendario agrícola. El Códice no era solo una tabla astronómica, sino un manual de supervivencia que indicaba cuándo proteger el mundo.',
+    "id": "tabla-dresde",
+    "bannerImage": "/assets/maya/infographic_m7/banner_tabla-dresde.webp",
+    "title": "Las Tablas de Venus: El Códice de Dresde",
+    "color": "#0288D1",
+    "btnImage": "/assets/maya/infographic_m7/btn_tabla-dresde.jpg",
+    "image": "/assets/maya/infographic_m7/hero_tabla-dresde.jpg",
+    "content": [
+      "El documento científico más extraordinario que sobrevive sobre la astronomía prehispánica son las célebres Tablas de Venus, contenidas en las páginas 46 a 50 del Códice de Dresde, un manuscrito jeroglífico maya de papel amate plegado en biombo que data del periodo Posclásico (alrededor del año 1200 d.C.). Estas cinco láminas polícromas componen una sofisticada efeméride astronómica diseñada para predecir las posiciones de Venus a lo largo de siglos enteros.",
+      "La base matemática de la tabla descansa en la sincronización de cinco ciclos sinódicos consecutivos de Venus de 584 días cada uno con ocho años solares Haab' de 365 días. La ecuación fundamental labrada por los escribas establece que: 5 × 584 = 2,920 días solares, cifra que coincide exactamente con: 8 × 365 = 2,920 días. Al desplegarse a través de las cinco páginas del códice, la tabla abarca un gran ciclo mayor de 65 revoluciones de Venus (65 × 584 = 37,960 días), equivalentes a dos Ruedas Calendáricas o 104 años solares completos.",
+      "Sin embargo, dado que el ciclo sinódico real es de 583.92 días y no de 584 enteros, cada revolución de Venus acumula un desfase de 0.08 días en la realidad astronómica. Al término de los 65 ciclos del códice (104 años solares), el error temporal acumulado asciende a 5.2 días enteros de adelanto frente al firmamento real, una discrepancia inaceptable que habría desfasado por completo las fechas sagradas del orto helíaco.",
+      "Para solucionar este problema con genialidad inigualable, los matemáticos mayas introdujeron en la página 24 del códice una tabla de factores de corrección intercalar mediante un mecanismo de reinicio prefijado. Diseñaron una regla que ordenaba restar 4 días al cómputo acumulado al llegar al ciclo sinódico número 61 (unos 97.5 años), y una corrección alternativa que descontaba 8 días tras 301 ciclos sinódicos (unos 481 años solares).",
+      "Con la aplicación metódica de este algoritmo correctivo, la desviación matemática de las tablas de Venus del Códice de Dresde se reduce a tan solo un día de error después de transcurrir más de seis milenios de proyección temporal hacia el futuro. Esta proeza de cálculo posicional vigesimal sitúa al Códice de Dresde en la cúspide de los tratados científicos de la historia de la astronomía mundial premoderna."
     ],
-    expandables: [
-      { label: 'El Descubrimiento', icon: 'atom', text: 'El Códice de Dresde adquirió su nombre porque terminó en la biblioteca real de la ciudad de Dresde, en Alemania. El erudito alemán Ernst Förstemann, quien trabajaba como bibliotecario a fines de los años 1800s, logró descifrar la sección matemática dedicada a Venus.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las predicciones astronómicas en el Códice de Dresde son tan exactas que, si las usáramos hoy, su porcentaje de exactitud para determinar cuándo reaparecerá Venus superaría el 99%. ¡Y esto con tecnología de hace mil años!' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El Códice de Dresde sobrevivió milagrosamente a los bombardeos que destruyeron la ciudad de Dresde durante la Segunda Guerra Mundial en 1945. Resguardado en una caja de seguridad inundada en los sótanos de la Biblioteca Real de Sajonia, el manuscrito fue restaurado cuidadosamente, preservando sus tablas astronómicas para la ciencia moderna."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El mayista británico J. Eric S. Thompson descifró en 1972 la estructura interna de las páginas 46 a 50 del Códice de Dresde, revelando que cada una de las cinco páginas está dividida en cuatro registros horizontales que enumeran los glifos de los días del Tzolk'in, los dioses patronos y las imágenes del arquero cósmico atacando víctimas terrestres."
+      }
     ],
-    fact: 'El manuscrito original del Códice de Dresde sufrió graves daños por los bombardeos aéreos sobre Dresde durante la Segunda Guerra Mundial en 1945. Afortunadamente, unas copias fotográficas de calidad habían sido elaboradas décadas antes, salvando el saber.',
+    "fact": "Las Tablas de Venus del Códice de Dresde sincronizan 5 periodos sinódicos de 584 días con 8 años Haab' de 365 días (2,920 días), aplicando factores de corrección intercalar de -4 días cada 61 ciclos que reducen el margen de error a tan solo 1 día en más de 6,000 años de cálculo continuo, superando en precisión matemática a casi todos los modelos astronómicos contemporáneos del continente europeo."
   },
   {
-    id: 'guerra-estelar',
-              bannerImage: '/assets/maya/infographic_m7/banner_guerra-estelar.webp',
-    title: 'Guerra Estelar: Batallas Celestiales',
-    color: '#B71C1C',
-    btnImage: '/assets/maya/infographic_m7/btn_guerra-estelar.jpg',
-    image: '/assets/maya/infographic_m7/hero_guerra-estelar.jpg',
-    content: [
-      'Olvídate de las naves espaciales disparando rayos láser. En el mundo maya, la "Guerra Estelar" era un conflicto real y violento en las selvas de Centroamérica. Los epigrafistas descubrieron un jeroglífico que muestra una estrella derramando gotas de líquido sobre el emblema de una ciudad enemiga.',
-      'Este jeroglífico se traduce como "Guerra de la Estrella". Describe el tipo de batalla más destructiva que los reyes mayas desataban contra sus rivales. Durante estos enfrentamientos, el objetivo no era solo dominar, sino destruir, saquear los templos y capturar al rey de la ciudad enemiga.',
-      'Estos eventos militares no ocurrían en cualquier día. Las Guerras Estelares estaban cronometradas con las fases visibles de Noh Ek. Se programaban en los días cuando el planeta Venus reaparecía por primera vez en el cielo de la madrugada o cuando alcanzaba posiciones clave.',
-      'El conflicto que transcurrió durante décadas entre Tikal y Calakmul es un ejemplo de la guerra venusina. En varias ocasiones, los ejércitos marchaban al combate en los días en que la estrella de Venus adoptaba su forma de guerrero resplandeciente.',
-      'Imagina la ventaja psicológica. Si fueras un guerrero defendiendo tu ciudad, y ves aproximarse al rey rival vistiendo su traje de batalla decorado con escudos estelares. Esto sucede al mismo tiempo que la estrella Noh Ek destella en el cielo. Creerías que los dioses ya los habían condenado.',
+    "id": "guerra-estelar",
+    "bannerImage": "/assets/maya/infographic_m7/banner_guerra-estelar.webp",
+    "title": "Guerra Estelar: Batallas Celestiales",
+    "color": "#B71C1C",
+    "btnImage": "/assets/maya/infographic_m7/btn_guerra-estelar.jpg",
+    "image": "/assets/maya/infographic_m7/hero_guerra-estelar.jpg",
+    "content": [
+      "En la historia militar del periodo Clásico maya, la observación astronómica de Venus no era una mera devoción pasiva; era el catalizador estratégico que determinaba el estallido de las guerras más cruentas y decisivas entre las grandes dinastías reales. Los epigrafistas modernos han acuñado el término «guerra estelar» o «guerra venusina» para clasificar una serie de batallas registradas en monumentos asociadas directamente a conjunciones críticas del planeta.",
+      "En las inscripciones jeroglíficas labradas en estelas y escalinatas de ciudades como Tikal, Calakmul, Caracol, Naranjo y Dos Pilas, este tipo de conflicto bélico sagrado se identifica mediante un signo distintivo conocido como el «glifo de la concha y la estrella» (Star-Shell glyph). Este jeroglífico muestra una concha marina estilizada coronada por el signo celeste de Venus emitiendo rayos o gotas líquidas de agua o sangre sobre el topónimo de la ciudad derrotada.",
+      "Las guerras estelares no eran escaramuzas fronterizas rutinarias, sino operaciones militares a gran escala diseñadas para derrocar linajes gobernantes enteros, decapitar reyes capturados y someter metrópolis rivales al vasallaje perpetuo. Los comandantes militares programaban sus ataques para coincidir con momentos astronómicos de máxima influencia de Venus: principalmente durante su primera aparición en el orto helíaco o en sus puntos de estacionamiento orbital cuando el planeta detenía su movimiento aparente.",
+      "Uno de los ejemplos históricos más célebres ocurrió el 16 de enero del año 378 d.C., cuando el general teotihuacano Siyaj K'ak' («Nace el Fuego») arribó a Tikal bajo el auspicio del lucero matutino, deponiendo y ejecutando al rey local Chak Tok Ich'aak I para instaurar una nueva dinastía aliada con el centro de México. Siglos después, en el año 562 d.C., la ciudad de Caracol infligió una devastadora derrota estelar a Tikal que sumió a esta última en un silencio monumental de más de un siglo.",
+      "Para los guerreros mayas de élite, combatir bajo el estandarte de Venus significaba actuar como instrumentos físicos de los señores celestiales en la Tierra. Los cautivos capturados en estas campañas estelares eran conducidos en procesión solemne hasta las terrazas de las pirámides, donde eran despojados de sus insignias de jade y ofrendados a los dioses al amanecer en el momento en que Noh Ek se elevaba en el horizonte matutino."
     ],
-    expandables: [
-      { label: 'Simbolismo Militar', icon: 'clock', text: 'Los reyes y guerreros mayas solían vestir trajes conocidos como la indumentaria del dios Tláloc-Venus. Esta incluía grandes anteojeras circulares, tocados de plumas que emulaban rayos y escudos rectangulares decorados con símbolos del planeta luminoso.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Una de las Guerras Estelares más decisivas de Mesoamérica ocurrió en el año 562 d.C. El señor de la ciudad de Calakmul logró derrotar a la metrópoli de Tikal coincidiendo deliberadamente con una fecha del ciclo venusino.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los guerreros mayas que participaban en las guerras de Venus portaban cascos de mosaico de pirita y tocados con forma de serpientes emplumadas o anteojeras de estilo teotihuacano asociadas a Tláloc y al planeta Venus, transformando su apariencia física en la de espíritus marciales temibles para aterrorizar a los ejércitos adversarios."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El arqueólogo David Freidel y la epigrafista Linda Schele correlacionaron matemáticamente decenas de fechas de batallas registradas con el glifo de concha-estrella con los cálculos modernos de efemérides planetarias de la NASA, demostrando que más del 75% de estas ofensivas coincidieron con máximas elongaciones o paradas de Venus."
+      }
     ],
-    fact: 'No todas las batallas entre los mayas eran Guerras Estelares. El glifo de la estrella derramando elementos es raro y específico. Se utiliza para registrar la derrota y captura del gobernante (ajaw) de la ciudad enemiga, denotando el colapso de su dinastía.',
+    "fact": "Las batallas registradas bajo el glifo de la guerra estelar (concha y estrella de Venus) en ciudades como Tikal, Calakmul y Caracol fueron coordinadas militarmente para coincidir con fases críticas de Noh Ek (como ortos helíacos o estacionamientos orbitales), resultando en el derrocamiento y sacrificio de dinastías enteras."
   },
   {
-    id: 'kukulkan-venus',
-              bannerImage: '/assets/maya/infographic_m7/banner_kukulkan-venus.webp',
-    title: 'Kukulcán: La Serpiente y Venus',
-    color: '#1B5E20',
-    btnImage: '/assets/maya/infographic_m7/btn_kukulkan-venus.jpg',
-    image: '/assets/maya/infographic_m7/hero_kukulkan-venus.jpg',
-    content: [
-      'Kukulcán, conocido por los aztecas como Quetzalcóatl, era una deidad maya conectada al planeta Venus. Su nombre se traduce como "Serpiente Emplumada". Esta criatura mítica representa una fusión de la tierra (la serpiente que se arrastra) con el cielo (las plumas del quetzal que vuela).',
-      'La historia de la Serpiente Emplumada es una alegoría diseñada para explicar el ciclo astronómico de Venus al pueblo. Según los mitos de Mesoamérica, este dios fue engañado, se inmoló en un fuego y su corazón ascendió a los cielos para convertirse en la Estrella de la Mañana.',
-      'La ausencia de la estrella Noh Ek del cielo no era vista a la ligera. Los sacerdotes explicaban que durante el período en que Venus desaparecía, Kukulcán realizaba un viaje por las regiones de Xibalbá (el inframundo maya). Allí peleaba contra los Señores de la Enfermedad y la Muerte antes de renacer.',
-      'Un ejemplo de esta conexión celestial se encuentra en la plaza central de Chichén Itzá. Allí, el Templo de Kukulcán, conocido como "El Castillo", está diseñado como un calendario de roca en alineación perfecta. Es el santuario de la deidad venusina.',
-      'El legado de la Serpiente Emplumada demuestra cómo los sabios mayas lograban unir sus matemáticas celestiales con su espiritualidad. Al adorar a Kukulcán en los ritos religiosos, el pueblo celebraba el baile cíclico de las esferas de nuestro universo.',
+    "id": "kukulkan-venus",
+    "bannerImage": "/assets/maya/infographic_m7/banner_kukulkan-venus.webp",
+    "title": "Kukulcán: La Serpiente y Venus",
+    "color": "#1B5E20",
+    "btnImage": "/assets/maya/infographic_m7/btn_kukulkan-venus.jpg",
+    "image": "/assets/maya/infographic_m7/hero_kukulkan-venus.jpg",
+    "content": [
+      "La figura mitológica de Kukulcán, cuyo nombre en lengua maya yucateca significa literalmente «Serpiente Emplumada» (de k'uk', pluma de quetzal; y kan, serpiente), encarna una de las síntesis teológicas y astronómicas más ricas de la América prehispánica. Equivalente directo del Quetzalcóatl del altiplano central de México, Kukulcán no solo era la deidad tutelar del viento, del aliento vital y del comercio, sino la personificación cósmica viva del planeta Venus.",
+      "En el pensamiento religioso maya del periodo Posclásico, el vuelo sinuoso de la serpiente cubierta de plumas de quetzal verde esmeralda simbolizaba el movimiento aparente del planeta Venus ondulando a través de la eclíptica celeste entre las constelaciones. Como deidad del viento o Ehécatl, Kukulcán actuaba como el mensajero divino que barría los caminos del cielo con ráfagas de aire fresco para despejar la atmósfera y anunciar la inminente llegada de las lluvias torrenciales de Chaac.",
+      "Esta profunda conexión entre Venus y Kukulcán se materializó de forma grandiosa en la arquitectura monumental de Chichén Itzá y Mayapán. Los templos de planta circular, como El Caracol y los adoratorios redondos de la península, estaban consagrados a esta deidad serpentina debido a que las formas cilíndricas sin esquinas no oponen resistencia al viento y facilitan las líneas de mira panorámicas hacia los puntos extremos de salida y puesta del planeta en el horizonte.",
+      "Incluso el famoso descenso de la serpiente de luz y sombra en la escalinata norte de El Castillo durante los equinoccios de primavera y otoño encierra una lectura venusina complementaria. Para los sabios iniciados, la sombra ondulante de siete triángulos no solo representaba el descenso del dios a la tierra agrícola, sino la unión mística entre la energía solar y los ciclos sinódicos del lucero que fecundaban el suelo de la península.",
+      "Los soberanos de Chichén Itzá adoptaban el título honorífico de Kukulcán para legitimar su derecho divino a gobernar sobre pueblos diversos. Al presentarse ante la multitud como la encarnación terrestre de la Serpiente Emplumada de Venus, los reyes demostraban su capacidad de intermediación entre las leyes implacables del cosmos y la prosperidad tangible de sus súbditos, asegurando la cohesión social y religiosa del Estado."
     ],
-    expandables: [
-      { label: 'El Descenso', icon: 'atom', text: 'Cada año, durante los equinoccios de primavera y otoño, miles de espectadores se reúnen alrededor del templo de "El Castillo". Esperan presenciar cómo unas sombras triangulares bajan por las escaleras simulando el movimiento serpenteante del dios.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Un monumento vinculado es la plataforma de El Caracol en Chichén Itzá. Su diseño asimétrico contiene ventanas que se alinean con los extremos en el horizonte de la salida y la puesta de Venus en las fechas observadas.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En las pinturas murales polícromas del Templo de los Guerreros de Chichén Itzá, Kukulcán aparece retratado emergiendo directamente de las fauces abiertas de una colosal serpiente con plumas verdes de quetzal, sosteniendo en sus manos dardos y escudos redondos con el símbolo de la cruz cósmica de cuatro pétalos de Venus."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los análisis iconográficos en cerámica mayapán confirman que el glifo calendárico 1 Ajaw, asignado en el Códice de Dresde como el día inaugural supremo de la tabla de Venus, era considerado el cumpleaños cósmico y el nombre calendárico sagrado de la deidad Kukulcán en toda la península de Yucatán, asociando el orto helíaco del lucero del alba con la llegada de presagios de combate, renovación política y transformaciones imperiales profundas."
+      }
     ],
-    fact: 'El arquetipo de la deidad Quetzalcóatl o Kukulcán conectada con la estrella de Venus es más antiguo que la civilización maya. Se ha descubierto en ruinas que este mito astronómico se rastrea hasta las culturas tempranas olmecas.',
+    "fact": "Kukulcán («Serpiente Emplumada») constituía el avatar mitológico de Venus en la teología maya posclásica, personificando el viento huracanado que precede a las lluvias fértiles y gobernando los templos circulares como El Caracol mediante alineaciones orientadas hacia los extremos orbitales del planeta."
   },
   {
-    id: 'observacion-tecnicas',
-              bannerImage: '/assets/maya/infographic_m7/banner_observacion-tecnicas.webp',
-    title: 'Técnicas Sin Telescopios',
-    color: '#F48FB1',
-    btnImage: '/assets/maya/infographic_m7/btn_observacion-tecnicas.jpg',
-    image: '/assets/maya/infographic_m7/hero_observacion-tecnicas.jpg',
-    content: [
-      '¿Alguna vez te has preguntado cómo los astrónomos mayas calcularon con precisión los movimientos del firmamento sin lentes de vidrio? A diferencia de Galileo Galilei, los sacerdotes mayas no poseían telescopios, astrolabios ni sextantes. Su equipo eran los ojos y la paciencia.',
-      'Su primer método era observar el horizonte a simple vista. Imagina ser un astrónomo maya que se para todos los días en una plataforma de piedra para mirar hacia la lejanía. El terreno boscoso, junto con colinas y pirámides, funcionaba como una regla natural del horizonte.',
-      'Para perfeccionar su visión, los constructores elaboraron sistemas formados por pares de edificios. Al pararse en un templo elevado y mirar por encima o a través del resquicio de un segundo templo lejano, creaban una línea recta de visión cruzada. Esto era similar a una mira telescópica moderna.',
-      'El conjunto arquitectónico "Grupo E", ubicado en Uaxactún, Guatemala, fue el observatorio temprano más célebre de la zona maya. Esta maravilla cuenta con una pirámide escalonada que funciona como un mirador. Está enfrente de otros tres edificios alineados que señalan las puestas anuales del sol.',
-      'Para los mayas dedicados a la ciencia, el secreto no era tener máquinas costosas, sino mantener un registro estricto. A lo largo de siglos, cientos de astrónomos escribieron páginas con las fechas de los avistamientos estelares. Transmitieron estos códices astronómicos a las nuevas generaciones sin permitir que se perdieran.',
+    "id": "observacion-tecnicas",
+    "bannerImage": "/assets/maya/infographic_m7/banner_observacion-tecnicas.webp",
+    "title": "Técnicas Sin Telescopios",
+    "color": "#F48FB1",
+    "btnImage": "/assets/maya/infographic_m7/btn_observacion-tecnicas.jpg",
+    "image": "/assets/maya/infographic_m7/hero_observacion-tecnicas.jpg",
+    "content": [
+      "Uno de los aspectos que genera mayor asombro entre los científicos modernos es la capacidad de los astrónomos mayas para obtener mediciones posicionales de extrema precisión sin haber dispuesto jamás de telescopios refractores de lentes ópticas, tubos de aumento ni instrumentos metálicos de medición angular como sextantes o teodolitos. Su ciencia fue una disciplina puramente visual y geométrica basada en el ingenio metódico de la observación horizonaria.",
+      "La técnica fundamental desarrollada por los sabios ah k'inob consistía en el uso de mirillas y líneas de colimación fija de piedra caliza. Dentro de las cámaras altas de edificios como El Caracol de Chichén Itzá o las torres del palacio de Palenque, los observadores fijaban ranuras estrechas en muros gruesos de mampostería. En los marcos de estas ventanas instalaban soportes de madera donde colocaban pares de varillas rígidas cruzadas fabricadas de caña o hueso de jaguar.",
+      "Al mirar a través del punto exacto donde se cruzaban las varillas y hacerlas coincidir con un rasgo destacado del paisaje distante (como una pirámide lejana, una estela aislada en una loma o un árbol sagrado en el horizonte), los astrónomos creaban un sistema de puntería fija inalterable. Cuando el disco solar o el fulgor puntual de Venus tocaban la intersección en el horizonte al amanecer o atardecer, registraban el día exacto de la efeméride en sus códices.",
+      "Para estudiar los astros sin deslumbrarse y sin forzar la vista durante prolongadas vigilias nocturnas, los mayas perfeccionaron el uso de reflectores artificiales planos. Llenaban cuencos de cerámica negra bruñida con agua estancada teñida con carbón vegetal para transformarla en un espejo líquido perfecto donde observaban con nitidez el reflejo de las estrellas y de los planetas brillantes sin interferencia del viento.",
+      "Asimismo, empleaban espejos cóncavos y planos elaborados con teselas unidas de pirita de hierro y obsidiana volcánica pulida con arena abrasiva fina. Estos espejos no solo eran insignias de poder sacerdotal portadas sobre el pecho, sino herramientas auxiliares que permitían proyectar haces de luz solar en el interior de recintos oscuros para calibrar gnomones verticales y medir la inclinación exacta de la sombra al mediodía verdadero."
     ],
-    expandables: [
-      { label: 'Herramientas Simples', icon: 'clock', text: 'Los arqueólogos postulan que los antiguos astrónomos utilizaban herramientas portátiles sencillas. Empleaban pares cruzados formados por varas rectas de madera o hilos tensos anudados que estaban cruzados para ayudar en la observación del cielo.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los observatorios de la civilización maya no poseían las cúpulas hemisféricas abiertas que vemos hoy en los observatorios del mundo moderno. Usualmente, tenían techumbres planas o cámaras angostas en torres.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los mayas masticaban hojas medicinales y utilizaban colirios elaborados con extractos de hierbas selváticas para limpiar y humectar sus ojos antes de las guardias nocturnas, logrando dilatar sus pupilas de forma natural para incrementar la sensibilidad visual ante astros tenues en el horizonte, optimizando la agudeza óptica nocturna y la capacidad de registro telescópico a simple vista en condiciones de oscuridad selvática extrema."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Experimentos modernos de arqueología experimental realizados en observatorios mayas confirmaron que el sistema de varillas cruzadas y colimación de mampostería permite alcanzar una resolución angular humana de 0.1 a 0.2 grados de arco, precisión suficiente para detectar las oscilaciones periódicas del ciclo de Venus y los equinoccios."
+      }
     ],
-    fact: 'El conocimiento del registro celeste requería el paso del tiempo histórico para eliminar los errores acumulativos. Se ha propuesto que tomó no menos de 300 o hasta 400 años continuos de paciencia observacional en los primeros asentamientos preclásicos para ajustar la conmensurabilidad.',
+    "fact": "La metodología astronómica maya prescindió de lentes mediante el uso de mirillas de mampostería gruesa, varillas de colimación cruzadas, espejos de obsidiana y cuencos reflectores de agua con carbón, logrando una resolución visual angular de hasta 6 minutos de arco en el horizonte despejado de Yucatán."
   },
   {
-    id: 'legado-venusino',
-              bannerImage: '/assets/maya/infographic_m7/banner_legado-venusino.webp',
-    title: 'El Legado: Maya vs. Europa',
-    color: '#0288D1',
-    btnImage: '/assets/maya/infographic_m7/btn_legado-venusino.jpg',
-    image: '/assets/maya/infographic_m7/hero_legado-venusino.jpg',
-    content: [
-      'Cuando comparamos los descubrimientos de la civilización maya con el mundo antiguo, el legado astronómico sobre Venus destaca. Los astrónomos matemáticos de los bosques de México y Centroamérica no tenían nada que envidiarle a las mentes griegas o romanas.',
-      'Mucho antes de que Nicolás Copérnico propusiera su sistema heliocéntrico o que Johannes Kepler formulara las leyes físicas, los mayas ya habían registrado los patrones de Noh Ek. Estos astrónomos documentaron a mano los movimientos cíclicos del planeta con una exactitud asombrosa.',
-      'Los antiguos sacerdotes de las ciudades precolombinas conocían los movimientos planetarios a la perfección. Las proyecciones inscritas en el Códice de Dresde llegaban a predecir matemáticamente los futuros movimientos cíclicos por varios milenios.',
-      'A pesar de la destrucción de los registros y códices durante la conquista en Centroamérica, este cuerpo numérico mesoamericano sobrevivió en fragmentos. Estos documentos son de gran valor para el asombro y estudio de los científicos.',
-      'Hoy, gracias a la labor de arqueólogos, lingüistas y especialistas mayistas, entendemos el talento científico y matemático de los mayas. Admiramos su legado y el rastro de la gran Noh Ek.',
+    "id": "legado-venusino",
+    "bannerImage": "/assets/maya/infographic_m7/banner_legado-venusino.webp",
+    "title": "El Legado: Maya vs. Europa",
+    "color": "#0288D1",
+    "btnImage": "/assets/maya/infographic_m7/btn_legado-venusino.jpg",
+    "image": "/assets/maya/infographic_m7/hero_legado-venusino.jpg",
+    "content": [
+      "El balance comparativo entre el conocimiento astronómico desarrollado por los mayas y las ciencias cultivadas en Europa durante el mismo periodo histórico (los siglos del periodo Clásico y Posclásico mesoamericano, contemporáneos a la Alta y Baja Edad Media europea) arroja conclusiones fascinantes que han transformado la historia universal de la ciencia.",
+      "Mientras que la Europa medieval se encontraba atada al modelo cosmológico geocéntrico derivado de Claudio Ptolomeo y Aristóteles —que concebía a los planetas incrustados en esferas cristalinas rígidas centradas en una Tierra inmóvil— y empleaba un calendario juliano defectuoso que acumulaba un día completo de error cada 128 años, los astrónomos mayas operaban con modelos matemáticos predictivos cuantitativos de extrema precisión empírica.",
+      "En el cálculo específico del ciclo sinódico de Venus, los mayas alcanzaron una exactitud cuantitativa que no fue igualada en Europa sino hasta el siglo XVIII, con las observaciones telescópicas de los tránsitos de Venus realizadas por astrónomos como Edmond Halley y Mijaíl Lomonósov. El factor de corrección del Códice de Dresde, que reduce la desviación a 1 día en más de seis milenios, superó con creces cualquier tabla europea previa a la invención del telescopio.",
+      "Esta hazaña intelectual demuestra que el método científico no es patrimonio exclusivo de una sola tradición cultural u occidental. Los astrónomos mayas formularon hipótesis aritméticas rigurosas, llevaron a cabo observaciones sistemáticas estandarizadas a lo largo de decenas de generaciones continuas, registraron anomalías empíricas y diseñaron mecanismos recursivos de autocorrección para mantener la concordancia de sus modelos con la realidad física del cosmos.",
+      "El legado de la astronomía venusina maya perdura en nuestros días como un testimonio grandioso de la dignidad y la capacidad intelectual de los pueblos originarios de las Américas. Sus pirámides alineadas con las estrellas, sus códices salvados de las hogueras inquisitoriales y su matemática vigesimal con cero continúan inspirando a las nuevas generaciones de astrónomos y exploradores espaciales en su búsqueda universal por desentrañar los enigmas del firmamento."
     ],
-    expandables: [
-      { label: 'Más Exactos', icon: 'atom', text: 'Se considera por diversos científicos que, antes del año 1500 d.C. Los matemáticos mesoamericanos poseían el calendario más preciso del mundo. Llegaron a superar la exactitud y rigor observacional del calendario juliano utilizado en Europa.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El conocimiento astronómico mesoamericano ha sido validado en la actualidad usando ordenadores computacionales. Esto ha demostrado que sus observaciones desde plataformas de piedra fueron en su mayoría correctas desde el punto de vista astronómico y numérico.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cuando el erudito alemán Ernst Förstemann descifró por primera vez las tablas de Venus del Códice de Dresde en 1893 en la Biblioteca Real de Dresde, la comunidad científica europea no podía creer que una civilización indígena americana hubiera alcanzado cálculos aritméticos tan avanzados sin influencia del Viejo Mundo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En el año 2012, astrónomos contemporáneos de todo el mundo apuntaron sus telescopios hacia el tránsito de Venus sobre el disco solar, un evento astronómico extremadamente raro que los mayas habían registrado indirectamente mediante los descensos de luminosidad registrados en sus crónicas de eclipses de la península."
+      }
     ],
-    fact: 'El calendario maya de la cuenta larga (famoso por el malentendido sobre el 2012) está estructurado desde su base con los múltiplos matemáticos originados de la estrella Noh Ek. Este diseño es preciso y muestra un gran rigor matemático.',
-  },
+    "fact": "La astronomía de Venus de los mayas superó en estabilidad matemática al calendario juliano medieval europeo al formular factores de corrección fractal en el Códice de Dresde con un desvío menor a 1 día en 6,000 años, logrando una precisión predictiva que Europa solo igualó con la invención del telescopio en la Edad Moderna."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

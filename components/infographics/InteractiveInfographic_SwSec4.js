@@ -74,242 +74,207 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'entrelazamiento-basico',
-    title: 'La Fuerza que Conecta Todo',
-    color: '#B388FF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_entrelazamiento-basico.webp',
-    image: '/assets/starwars/infographic_fuerza/hero_entrelazamiento-basico.webp',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_entrelazamiento-basico.webp',
-    bannerCaption: "Representación del entrelazamiento cuántico: dos partículas comparten estado instantáneamente sin importar la distancia.",
-    content: [
-      "¿Alguna vez has sentido una conexión invisible con un amigo, sabiendo qué piensa sin hablar? En la física, existe un fenómeno real llamado 'entrelazamiento cuántico'. Ocurre cuando dos partículas subatómicas interactúan y sus estados quedan vinculados. Lo que le sucede a una partícula afecta a la otra al instante, incluso si están separadas por años luz en extremos opuestos del universo.",
-      "Imagina que tienes dos dados mágicos de seis caras. Si lanzas uno en la Tierra y sale un seis, el otro, en Marte, mostrará un seis al mismo tiempo. En los laboratorios, los científicos miden una propiedad llamada 'espín' en una partícula, y su gemela entrelazada adopta el estado opuesto instantáneamente, desafiando la física clásica.",
-      "Piensa en un par de guantes guardados en dos cajas separadas. Si abres una caja y encuentras el guante izquierdo, sabes de inmediato que la otra contiene el derecho. En el mundo cuántico, antes de abrir la caja, las partículas no tienen un estado definido. Solo al medirlas colapsan en una realidad fija.",
-      "En el universo de Star Wars, los Jedi hablan de 'La Fuerza', un campo de energía que conecta todo. El entrelazamiento cuántico es lo más cercano que tenemos a esa conexión en el mundo real. Sugiere que el universo no está hecho de piezas aisladas, sino de una red compleja donde la información se relaciona a un nivel subatómico.",
-      "Científicos han verificado este fenómeno utilizando pares de fotones, las partículas que componen la luz. Han separado estos fotones por cientos de kilómetros mediante fibra óptica e incluso usando satélites desde el espacio. En cada prueba, la conexión cuántica se mantuvo perfecta, demostrando que en el nivel subatómico, la distancia no es un obstáculo."
+    "id": "entrelazamiento-basico",
+    "title": "La Fuerza que Conecta Todo",
+    "color": "#B388FF",
+    "btnImage": "/assets/starwars/infographic_fuerza/btn_entrelazamiento-basico.webp",
+    "image": "/assets/starwars/infographic_fuerza/hero_entrelazamiento-basico.webp",
+    "bannerImage": "/assets/starwars/infographic_fuerza/banner_entrelazamiento-basico.webp",
+    "bannerCaption": "Representación del entrelazamiento cuántico: dos partículas comparten estado instantáneamente sin importar la distancia.",
+    "content": [
+      "El entrelazamiento cuántico es uno de los fenómenos más desconcertantes y comprobados de la física moderna. Cuando dos partículas subatómicas interactúan estrechamente o se originan a partir de un mismo evento cuántico, sus propiedades físicas quedan vinculadas de manera intrínseca. A partir de ese instante, dejan de comportarse como entidades independientes y pasan a compartir una única función de onda matemática indivisible, sin importar que luego viajen a extremos opuestos de la galaxia.",
+      "Si medimos el estado físico de una de las partículas entrelazadas, como su espín angular o su plano de polarización electromagnética, su función de onda colapsa instantáneamente en un resultado bien definido. En ese mismo microsegundo exacto, la partícula gemela adopta el estado complementario correspondiente, aun cuando se encuentre a millones de kilómetros de distancia. Esta correlación no requiere cables, ondas electromagnéticas ni señales mecánicas viajando a través del espacio interpuesto.",
+      "En los laboratorios de óptica cuántica, los físicos generan pares de fotones entrelazados mediante un proceso denominado conversión paramétrica descendente espontánea. Al disparar un rayo láser ultravioleta contra un cristal no lineal de beta-borato de bario, un fotón de alta energía se divide espontáneamente en dos fotones de menor frecuencia cuyas polarizaciones están irremediablemente entrelazadas en un estado puro de Bell, listos para ser transmitidos por fibras ópticas hacia detectores separados.",
+      "A pesar de esta conexión inmediata, el entrelazamiento cuántico respeta rigurosamente la teoría de la relatividad especial y no permite la transmisión de información más rápida que la luz. El teorema de no-comunicación matemática demuestra que los resultados individuales observados por cada receptor son completamente aleatorios e impredecibles; la correlación cuántica solo puede manifestarse cuando ambos observadores se comunican mediante un canal clásico convencional para comparar sus mediciones.",
+      "En la saga Star Wars, los Maestros Jedi describen la Fuerza como una energía mística que vincula a todos los seres vivos del cosmos. Aunque la física no ha descubierto campos místicos conscientes, el entrelazamiento cuántico demuestra que la naturaleza posee una estructura fundamental no local, donde las partículas del universo primitivo que estuvieron en contacto en el Big Bang conservan sutiles huellas de interconexión física a lo largo del tejido espaciotemporal."
     ],
-    expandables: [
-      { 
-        label: '¿Sabías que...?', 
-        icon: 'sparkles', 
-        text: 'Aunque nada material viaja más rápido que la luz, la correlación entre dos partículas entrelazadas ocurre de forma instantánea. Albert Einstein llamó a esto "acción fantasmal a distancia", un misterio que ha fascinado a los físicos por décadas.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En Una Nueva Esperanza, Obi-Wan Kenobi explica a Luke en el Halcón Milenario que «La Fuerza es lo que le da al Jedi su poder; es un campo de energía creado por todas las cosas vivientes, nos rodea, nos penetra y mantiene unida a la galaxia». En la física cuántica, no existe una energía mística consciente, pero el entrelazamiento crea una interdependencia física objetiva entre partículas separadas por años luz."
       },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'El físico Erwin Schrödinger acuñó el término "entrelazamiento" en 1935. Se dio cuenta de que no era solo un detalle de la mecánica cuántica, sino la característica principal que la separa de la física clásica de Newton.' 
-      },
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En el Episodio VIII, Rey y Kylo Ren forman una "Díada en la Fuerza". Pueden hablar y verse a pesar de estar en planetas distintos. Esta conexión es una metáfora del entrelazamiento cuántico, donde dos elementos están tan vinculados que parecen ignorar el espacio.' 
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En el año 2022, el Premio Nobel de Física fue otorgado conjuntamente a Alain Aspect, John Clauser y Anton Zeilinger por sus experimentos pioneros con fotones entrelazados que demostraron de forma incontestable la violación de las desigualdades de Bell, confirmando que la naturaleza no se rige por el principio clásico del realismo local."
       }
     ],
-    fact: 'El entrelazamiento cuántico es un fenómeno comprobado en el que dos o más partículas quedan conectadas. El estado cuántico de una no puede describirse sin el de la otra, sin importar la distancia física que las separe.'
+    "fact": "En los experimentos de entrelazamiento fotónico contemporáneos con cristales no lineales, se generan más de un millón de pares de fotones correlacionados por segundo con una fidelidad cuántica superior al noventa y nueve por ciento, verificable mediante tomografía de estado cuántico y matrices de densidad."
   },
   {
-    id: 'epr-paradoja',
-    title: 'La Paradoja EPR',
-    color: '#00BCD4',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_epr-paradoja.webp',
-    image: '/assets/starwars/infographic_fuerza/hero_epr-paradoja.webp',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_epr-paradoja.webp',
-    bannerCaption: "Albert Einstein, Boris Podolsky y Nathan Rosen propusieron en 1935 la paradoja EPR, cuestionando la mecánica cuántica.",
-    content: [
-      "En 1935, Albert Einstein, Boris Podolsky y Nathan Rosen publicaron un documento que cuestionó los cimientos de la mecánica cuántica. Este artículo se conoce como la 'Paradoja EPR' por las iniciales de sus autores. Einstein estaba incómodo con la idea del entrelazamiento cuántico porque contradecía su Teoría de la Relatividad Especial, la cual establece que nada puede superar la velocidad de la luz.",
-      "Einstein argumentaba que si el entrelazamiento fuera real e instantáneo, requeriría una 'acción fantasmal a distancia'. Para él, el universo debía ser lógico y predecible. Creía que las partículas poseían información oculta desde su origen, un concepto que llamó'variables ocultas', las cuales los científicos aún no podían detectar con las herramientas de la época.",
-      "Imagina a dos gemelos que se visten del mismo color todos los días sin consultarse. Einstein diría que no se comunican telepáticamente por la mañana; más bien, acordaron en secreto usar ropa roja antes de separarse. Según su perspectiva, las partículas tenían instrucciones pre-programadas que daban la ilusión de una conexión instantánea.",
-      "En Star Wars, Han Solo dudaba del poder de la Fuerza, considerándola una serie de 'trucos baratos'. De manera similar, Einstein dudaba de la naturaleza aleatoria de la mecánica cuántica. Exigía que el universo funcionara como una máquina precisa, en lugar de depender de la probabilidad y la incertidumbre.",
-      "Durante décadas, la paradoja EPR fue solo un debate filosófico. Parecía imposible probar en un laboratorio si Einstein tenía razón con sus variables ocultas o si la teoría cuántica era correcta sobre la conexión instantánea. Sin embargo, este desacuerdo histórico impulsó el desarrollo de experimentos precisos para medir la naturaleza fundamental de la realidad."
+    "id": "epr-paradoja",
+    "title": "La Paradoja EPR",
+    "color": "#00BCD4",
+    "btnImage": "/assets/starwars/infographic_fuerza/btn_epr-paradoja.webp",
+    "image": "/assets/starwars/infographic_fuerza/hero_epr-paradoja.webp",
+    "bannerImage": "/assets/starwars/infographic_fuerza/banner_epr-paradoja.webp",
+    "bannerCaption": "Albert Einstein, Boris Podolsky y Nathan Rosen propusieron en 1935 la paradoja EPR, cuestionando la mecánica cuántica.",
+    "content": [
+      "En el año 1935, Albert Einstein, Boris Podolsky y Nathan Rosen publicaron en la prestigiosa revista Physical Review un artículo histórico titulado «¿Puede la descripción cuántica de la realidad física considerarse completa?». En este trabajo, conocido universalmente por el acrónimo EPR, los tres científicos presentaron un experimento mental diseñado para demostrar que la mecánica cuántica era una teoría incompleta que requería principios más profundos.",
+      "Einstein rechazaba con firmeza la idea de que una medición efectuada sobre una partícula pudiera influir de manera instantánea en otra partícula lejana, bautizando con ironía este fenómeno como «spukhafte Fernwirkung» o «acción fantasmal a distancia». Para Einstein, cualquier teoría física sensata debía fundamentarse en dos postulados innegociables: el realismo, que afirma que los objetos poseen propiedades fijas independientes de la observación, y la localidad, que prohíbe que las influencias físicas viajen más rápido que la luz.",
+      "Para preservar el realismo local, los autores del artículo EPR propusieron la existencia de «variables ocultas locales». Según su razonamiento, las dos partículas debían poseer desde el momento de su separación una serie de parámetros internos predeterminados y aún no descubiertos por la ciencia, similares a un par de guantes dentro de dos cajas cerradas: si abres una caja y encuentras el guante izquierdo, sabes al instante que la otra caja contiene el guante derecho sin necesidad de ninguna magia.",
+      "Niels Bohr, líder de la célebre Escuela de Copenhague, respondió de inmediato argumentando que la visión mecanicista clásica de Einstein no era aplicable al micromundo cuántico. Bohr defendió el principio de complementariedad, sosteniendo que las partículas no poseen propiedades definidas con anterioridad a su medición y que el acto de observar interactúa de forma indivisible con el sistema experimental completo, conformando una realidad contextual irreductible.",
+      "Durante casi tres décadas, la controversia EPR fue considerada un mero debate filosófico e interpretable sin consecuencias prácticas verificables. Sin embargo, en 1964, el físico norirlandés John Stewart Bell cambió para siempre la historia de la ciencia al formular un teorema matemático que permitía medir en el laboratorio si Einstein o Bohr tenían razón, transformando una paradoja epistemológica en uno de los mayores triunfos de la física experimental."
     ],
-    expandables: [
-      { 
-        label: '¿Sabías que...?', 
-        icon: 'sparkles', 
-        text: 'La frase "acción fantasmal a distancia" fue usada por Einstein en una carta de 1947 dirigida a Max Born para criticar el entrelazamiento cuántico. Hoy en día es uno de los términos más conocidos en física.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Cuando Darth Vader percibe la presencia de Obi-Wan en la primera Estrella de la Muerte («Siento una perturbación en la Fuerza»), la conexión ocurre de forma instantánea a través del espacio. Einstein habría calificado esa comunicación mental inmediata como una acción fantasmal imposible según las leyes relativistas que limitan la velocidad cósmica."
       },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'El artículo original de EPR, publicado en la revista Physical Review, sigue siendo uno de los documentos científicos más citados. Aunque buscaba demostrar fallas en la teoría cuántica, terminó inspirando descubrimientos reales.' 
-      },
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En el Episodio IV, el Almirante Motti se burla de la Fuerza llamándola "religión antigua". Darth Vader le demuestra lo contrario asfixiándolo a distancia. Al igual que los efectos cuánticos, hay fuerzas invisibles que tienen un impacto medible.' 
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El artículo original EPR publicado en Physical Review en mayo de 1935 contiene apenas cuatro páginas, pero se convirtió en uno de los textos más citados y debatidos de la historia científica universal, sentando paradójicamente las bases fundacionales de la moderna teoría de la información cuántica y la computación avanzada."
       }
     ],
-    fact: 'La paradoja EPR de 1935 propuso que la mecánica cuántica estaba incompleta y sugirió la existencia de "variables ocultas locales" para explicar el comportamiento de las partículas mediante reglas clásicas.'
+    "fact": "El teorema de Bell demostró en 1964 que ninguna teoría física determinista de variables ocultas locales puede reproducir todas las predicciones estadísticas de la mecánica cuántica, estableciendo un límite matemático cuantificable mediante la desigualdad CHSH que la naturaleza viola empíricamente hasta el valor de dos raíz de dos."
   },
   {
-    id: 'superposicion-cuantica',
-    title: 'Superposición: Ser Todo a la Vez',
-    color: '#7C4DFF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_superposicion-cuantica.webp',
-    image: '/assets/starwars/infographic_fuerza/hero_superposicion-cuantica.webp',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_superposicion-cuantica.webp',
-    bannerCaption: "En mecánica cuántica, una partícula puede existir en múltiples estados simultáneamente hasta que es observada.",
-    content: [
-      "En el juego del escondite, no sabes si tu amigo está detrás de la puerta o debajo de la cama hasta que lo encuentras. En el mundo microscópico, las partículas pueden estar en ambos lugares a la vez. A esto se le llama 'Superposición Cuántica'. Un electrón puede existir simultáneamente en estados contradictorios, como girar hacia arriba y hacia abajo, hasta el instante en que es medido.",
-      "El experimento mental del 'Gato de Schrödinger', propuesto en 1935, explica este concepto. Imagina un gato en una caja con un mecanismo radiactivo aleatorio. Antes de abrir la caja, la física cuántica establece que el gato está en una superposición: simultáneamente vivo y muerto. Solo la observación obliga a la realidad a definirse por un estado único.",
-      "Piensa en una moneda que gira rápidamente en el aire. Mientras está en movimiento, no es ni 'cara' ni 'cruz', sino una mezcla de ambas posibilidades. Solo cuando la atrapas contra la mesa, lo que equivale a una medición en física cuántica, la moneda se detiene en un resultado definitivo.",
-      "En Star Wars, el destino de Anakin Skywalker refleja una superposición emocional. Durante años, Anakin luchó entre la luz de los Jedi y la oscuridad de los Sith. Ambas posibilidades coexistieron en su interior hasta que un evento clave lo obligó a tomar una decisión, colapsando su destino y transformándolo en Darth Vader.",
-      "Los físicos cuánticos utilizan herramientas matemáticas llamadas 'funciones de onda' para calcular estas posibilidades. Estas ecuaciones no indican la ubicación exacta de una partícula, sino que ofrecen un mapa de probabilidades. Dominar la superposición es fundamental para desarrollar tecnologías modernas como las computadoras cuánticas."
+    "id": "superposicion-cuantica",
+    "title": "Superposición: Ser Todo a la Vez",
+    "color": "#7C4DFF",
+    "btnImage": "/assets/starwars/infographic_fuerza/btn_superposicion-cuantica.webp",
+    "image": "/assets/starwars/infographic_fuerza/hero_superposicion-cuantica.webp",
+    "bannerImage": "/assets/starwars/infographic_fuerza/banner_superposicion-cuantica.webp",
+    "bannerCaption": "En mecánica cuántica, una partícula puede existir en múltiples estados simultáneamente hasta que es observada.",
+    "content": [
+      "El principio de superposición cuántica establece que cualquier sistema físico a escala subatómica puede encontrarse simultáneamente en una combinación lineal de múltiples estados posibles hasta que se realiza una medición. Mientras que en la informática tradicional un bit clásico solo puede ser un cero o un uno, un bit cuántico o qubit puede residir en un continuo infinito de estados superpuestos descritos geométricamente sobre la superficie de la llamada esfera de Bloch.",
+      "Para ilustrar lo contraintuitivo de este principio llevado a la vida cotidiana, Erwin Schrödinger ideó en 1935 su célebre paradoja del gato. Imaginó un felino encerrado dentro de una cámara de acero junto a un núcleo radiactivo que tiene un cincuenta por ciento de probabilidades de desintegrarse en una hora, activando un veneno mortal. Según la mecánica cuántica estricta sin medición, el estado del gato dentro de la caja es una superposición coherente: está vivo y muerto al mismo tiempo.",
+      "La razón por la cual no vemos personas u objetos cotidianos en estados de superposición viva y muerta es el fenómeno de la decoherencia cuántica. Cuando un sistema cuántico interactúa con su entorno térmico circundante, los incontables choques con fotones de luz y moléculas de aire destruyen las relaciones de fase de la función de onda en fracciones infinitesimales de segundo, forzando al sistema a colapsar de inmediato en un único estado clásico determinado.",
+      "Para conservar la superposición cuántica durante tiempos prolongados, los laboratorios contemporáneos aíslan átomos individuales en cámaras de ultraalto vacío criogénico enfriadas con rayos láser hasta temperaturas cercanas al cero absoluto. Mediante trampas electromagnéticas de radiofrecuencia Paul, los científicos atrapan iones cargados de iterbio o calcio, manteniendo estados de superposición cuántica estables durante varios segundos para realizar operaciones lógicas de cómputo.",
+      "La superposición tiene aplicaciones prácticas de vanguardia en la metrología cuántica y la navegación autónoma. Los interferómetros atómicos dividen paquetes de ondas de átomos en trayectorias superpuestas separadas espacialmente; al recombinarlas, las franjas de interferencia resultantes permiten medir el campo gravitatorio de la Tierra con una sensibilidad sin precedentes, detectando túneles subterráneos o minerales sin necesidad de satélites GPS."
     ],
-    expandables: [
-      { 
-        label: '¿Sabías que...?', 
-        icon: 'sparkles', 
-        text: 'El concepto de que el acto de medir un sistema cambia su estado se conoce como el "Efecto del Observador". Es uno de los principios más estudiados en la mecánica cuántica.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En el entrenamiento Jedi, Luke aprende a mantener la mente en calma para percibir múltiples destinos y posibilidades alternativas simultáneamente, como si el futuro fuera un árbol de ramas superpuestas. La mecánica cuántica formaliza este concepto: mientras no se realice una medición, el sistema contiene todas las posibilidades coexistiendo en su función de onda."
       },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'El Experimento de la Doble Rendija demuestra la superposición. Al disparar electrones hacia una pared con dos ranuras, cada partícula pasa por ambas al mismo tiempo, creando un patrón de interferencia ondulatoria.' 
-      },
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En el clímax de El Retorno del Jedi, Darth Vader enfrenta una decisión crítica. Sirve al Emperador pero también quiere salvar a su hijo. Esta doble existencia colapsa en una única realidad cuando decide actuar y derrotar al Emperador.' 
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Físicos de la Universidad de Viena dirigidos por Markus Arndt han demostrado la superposición cuántica y la interferencia ondulatoria utilizando macromoléculas biológicas sintetizadas con más de dos mil átomos y masas superiores a veinticinco mil unidades de masa atómica, difuminando la frontera clásico-cuántica experimental."
       }
     ],
-    fact: 'La superposición establece que un sistema subatómico existe simultáneamente en todos sus estados posibles hasta que es medido, lo que causa el colapso de su función de onda.'
+    "fact": "El tiempo de decoherencia para un objeto microscópico en el aire a temperatura ambiente es del orden de diez elevado a la menos veinte segundos debido al bombardeo colisional de moléculas; por ello, los procesadores cuánticos operan dentro de criostatos de dilución de helio a quince milikelvin, más fríos que el espacio profundo."
   },
   {
-    id: 'teleportacion-cuantica',
-    title: 'Teletransportación Cuántica',
-    color: '#18FFFF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_teleportacion-cuantica.webp',
-    image: '/assets/starwars/infographic_fuerza/hero_teleportacion-cuantica.webp',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_teleportacion-cuantica.webp',
-    bannerCaption: "La teleportación cuántica transfiere estados cuánticos entre partículas distantes usando entrelazamiento.",
-    content: [
-      "La teletransportación cuántica no mueve objetos físicos de un lugar a otro como ocurre en la ciencia ficción. En los laboratorios reales, los científicos teletransportan información cuántica, que es el conjunto de datos sobre cómo está estructurada una partícula. Usan el entrelazamiento cuántico para transferir el estado de un fotón de origen a otro en el destino.",
-      "La materia sólida no viaja a través del espacio. En lugar de transportar un átomo físico, se transfiere su identidad cuántica. Las propiedades exactas de la partícula original se copian en una partícula distante, asumiendo esta última todas las características de la primera de manera instantánea.",
-      "Imagina que construyes un castillo de bloques. En lugar de enviar los bloques por correo, usas un escáner que lee el diseño, desarmando tu castillo en el proceso. Envías las instrucciones a tu amigo, y sus propios bloques se ensamblan al instante en una copia idéntica del tuyo.",
-      "En la Orden Jedi, la 'Proyección de la Fuerza' permite a un Jedi enviar una ilusión realista de sí mismo a otro planeta. De forma similar, la teletransportación cuántica transfiere la información de una partícula a través del vacío, permitiendo que sus propiedades se manifiesten en otro lugar.",
-      "Un principio fundamental en este proceso es el 'Teorema de No-Clonación'. Este dicta que es imposible hacer una copia exacta de un estado cuántico sin destruir el original. Por eso, al teletransportar la información de una partícula, la partícula de origen pierde su identidad."
+    "id": "teleportacion-cuantica",
+    "title": "Teletransportación Cuántica",
+    "color": "#18FFFF",
+    "btnImage": "/assets/starwars/infographic_fuerza/btn_teleportacion-cuantica.webp",
+    "image": "/assets/starwars/infographic_fuerza/hero_teleportacion-cuantica.webp",
+    "bannerImage": "/assets/starwars/infographic_fuerza/banner_teleportacion-cuantica.webp",
+    "bannerCaption": "La teleportación cuántica transfiere estados cuánticos entre partículas distantes usando entrelazamiento.",
+    "content": [
+      "En el año 1993, un equipo de físicos teóricos encabezado por Charles Bennett propuso un protocolo revolucionario denominado teletransportación cuántica. Lejos de desintegrar objetos sólidos para reconstruirlos en otro lugar como en las novelas de ciencia ficción, este protocolo físico permite transferir el estado cuántico exacto e desconocido de una partícula hacia otra partícula idéntica situada a gran distancia, sin que la partícula viaje por el espacio interpuesto.",
+      "El mecanismo operativo exige compartir previamente un par de partículas entrelazadas entre la emisora, habitualmente llamada Alicia, y el receptor, Bob. Cuando Alicia desea teletransportar el estado de un fotón desconocido a Bob, realiza una medición conjunta de estado de Bell entre el fotón desconocido y su mitad del par entrelazado. Esta medición entrelaza las dos partículas de Alicia y destruye irreversiblemente el estado original que se quería transmitir.",
+      "Como resultado de su medición cuántica, Alicia obtiene dos bits clásicos de información convencional. Alicia debe transmitir estos dos bits clásicos a Bob a través de una línea de comunicación tradicional, como un cable de fibra óptica o un enlace de radio por satélite. Una vez que Bob recibe los dos bits, aplica una operación matemática de rotación unitaria (denominadas matrices de Pauli) sobre su partícula entrelazada, transformándola en una réplica exacta del estado original.",
+      "Este protocolo cumple con absoluta fidelidad dos de las leyes más inviolables del cosmos: el límite de la velocidad de la luz y el teorema de no-clonación cuántica. Debido a que Bob necesita esperar la llegada de los dos bits clásicos enviados por Alicia, la teletransportación cuántica jamás puede ocurrir más rápido que la luz. Además, como el estado original de Alicia queda destruido durante la medición, la información cuántica no se duplica, sino que se transfiere fielmente.",
+      "En la práctica experimental contemporánea, la teletransportación cuántica se ha logrado a través de cientos de kilómetros. En 2017, el satélite espacial cuántico chino Micius batió todos los récords mundiales al teletransportar estados cuánticos de fotones desde una estación terrena situada en el Tíbet hasta el satélite en órbita a mil cuatrocientos kilómetros de altitud, marcando el nacimiento de la futura red de comunicaciones cuánticas globales inviolables."
     ],
-    expandables: [
-      { 
-        label: '¿Sabías que...?', 
-        icon: 'sparkles', 
-        text: 'En 2017, un equipo de científicos logró teletransportar fotones desde la Tierra hasta el satélite Micius en el espacio, alcanzando una distancia récord de más de 1.400 kilómetros.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Las proyecciones de la Fuerza, como la realizada por Luke Skywalker desde el planeta Ahch-To hasta Crait en Los Últimos Jedi, permiten proyectar una presencia vívida a través de la galaxia. La teletransportación cuántica real transmite información de estado a través de la distancia, pero requiere partículas físicas preexistentes en ambos extremos."
       },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'El protocolo de teletransportación cuántica fue propuesto en 1993 por un equipo liderado por Charles Bennett. Demostraron que la información cuántica se puede reconstruir a distancia enviando solo dos bits clásicos.' 
-      },
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En Los Últimos Jedi, Luke Skywalker utiliza la Proyección de la Fuerza en el planeta Crait. El esfuerzo de transmitir esta información exige tanta energía que, en un paralelo al Teorema de No-Clonación, termina por consumir su cuerpo físico.' 
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El teorema de no clonación, formulado por Wootters, Zurek y Dieks en 1982, demuestra rigurosamente a partir de la linealidad de los operadores mecánicos cuánticos que es imposible crear una copia idéntica e independiente de un estado cuántico desconocido arbitrario sin alterarlo irremediablemente durante el intento de medición."
       }
     ],
-    fact: 'La teletransportación cuántica transfiere el estado exacto de una partícula a otra distante mediante entrelazamiento. El Teorema de No-Clonación impide duplicar la información original, por lo que el estado de la primera partícula se destruye.'
+    "fact": "En el experimento del satélite Micius en 2017, la teletransportación cuántica cubrió una distancia orbital de hasta mil cuatrocientos kilómetros utilizando enlaces ópticos láser espacio-tierra, logrando una fidelidad de transferencia de estado cuántico comprendida entre el ochenta por ciento y el noventa y cinco por ciento."
   },
   {
-    id: 'computacion-cuantica',
-    title: 'Computadoras del Futuro',
-    color: '#E040FB',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_computacion-cuantica.webp',
-    image: '/assets/starwars/infographic_fuerza/hero_computacion-cuantica.webp',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_computacion-cuantica.webp',
-    bannerCaption: "Los computadores cuánticos utilizan qubits que procesan información exponencialmente más rápido que los bits clásicos.",
-    content: [
-      "Las computadoras y los teléfonos móviles utilizan un lenguaje binario basado en ceros y unos, conocidos como 'bits'. En este sistema clásico, un interruptor electrónico puede estar apagado (0) o encendido (1), pero nunca ambas opciones al mismo tiempo.",
-      "La computación cuántica introduce los 'qubits', o bits cuánticos. Gracias a la superposición, un qubit puede representar un 0, un 1, o cualquier combinación de ambos de forma simultánea. Esto se mantiene siempre y cuando el qubit no sea medido u observado.",
-      "Imagina que estás en un laberinto buscando la salida. Una computadora clásica intentaría cada camino uno por uno hasta encontrar la puerta. Una computadora cuántica, en cambio, explora todos los caminos posibles al mismo tiempo, hallando la solución en una fracción de segundo.",
-      "En Star Wars, calcular rutas seguras a través del hiperespacio requiere procesar millones de variables al instante. Evitar estrellas y asteroides a la velocidad de la luz exigiría la inmensa capacidad de cálculo que promete la computación cuántica.",
-      "Empresas como Google e IBM han construido las primeras computadoras cuánticas en sus laboratorios. Estos equipos operan a temperaturas cercanas al cero absoluto, más frías que el espacio profundo, para proteger la información de sus inestables qubits."
+    "id": "computacion-cuantica",
+    "title": "Computadoras del Futuro",
+    "color": "#E040FB",
+    "btnImage": "/assets/starwars/infographic_fuerza/btn_computacion-cuantica.webp",
+    "image": "/assets/starwars/infographic_fuerza/hero_computacion-cuantica.webp",
+    "bannerImage": "/assets/starwars/infographic_fuerza/banner_computacion-cuantica.webp",
+    "bannerCaption": "Los computadores cuánticos utilizan qubits que procesan información exponencialmente más rápido que los bits clásicos.",
+    "content": [
+      "La computación cuántica representa el cambio de paradigma más radical en la historia del procesamiento de datos desde la invención del transistor de silicio. Mientras que una supercomputadora clásica procesa información evaluando combinaciones binarias de ceros y unos de forma secuencial, un procesador cuántico aprovecha la superposición y el entrelazamiento para mantener y manipular simultáneamente dos elevado a la N estados posibles con solo N qubits.",
+      "Este paralelismo intrínseco permite ejecutar algoritmos matemáticos especializados diseñados para resolver problemas intratables para la computación tradicional. El algoritmo de Peter Shor, descubierto en 1994, demostró que una computadora cuántica suficientemente potente puede descomponer números enteros gigantescos en factores primos en tiempo polinómico, amenazando con quebrar los protocolos de cifrado criptográfico RSA que protegen las comunicaciones financieras mundiales.",
+      "Las plataformas de hardware cuántico más avanzadas emplean circuitos superconductores milimétricos refrigerados casi al cero absoluto. En estos dispositivos, bucles de metal superconductor separados por barreras aislantes ultrafinas forman uniones Josephson (qubits transmon). Mediante pulsos de microondas de alta precisión afinados a frecuencias de gigahercios, los ingenieros manipulan las amplitudes y fases de superposición de los circuitos con un control nanométrico.",
+      "El gran reto que enfrenta la industria es la corrección cuántica de errores. Debido a la extrema fragilidad de los estados cuánticos ante el calor y el electromagnetismo ambiental, los qubits físicos acumulan pequeñas desviaciones de fase y volteos de bit. Los científicos implementan códigos de superficie cuánticos que entrelazan decenas o cientos de qubits físicos redundantes para crear un único «qubit lógico» tolerante a fallos y autoprotegido.",
+      "El mayor impacto científico de las computadoras cuánticas residirá en la simulación directa de la química molecular y la física de materiales complejos. Descifrar el comportamiento exacto de catalizadores enzimáticos para sintetizar fertilizantes verdes o diseñar superconductores de alta temperatura que funcionen sin refrigeración criogénica son tareas que solo una máquina que hable el lenguaje nativo de la cuántica puede conquistar."
     ],
-    expandables: [
-      { 
-        label: '¿Sabías que...?', 
-        icon: 'sparkles', 
-        text: 'En 2019, el procesador cuántico "Sycamore" de Google alcanzó la "supremacía cuántica" al resolver en 200 segundos un cálculo que le habría tomado miles de años a una supercomputadora clásica.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Los droides astromecánicos como R2-D2 y las computadoras del Halcón Milenario calculan trayectorias hiperespaciales complejas en fracciones de segundo para evitar colisiones con agujeros negros o supernovas. Las futuras computadoras cuánticas optimizarán la navegación orbital espacial mediante algoritmos cuánticos de búsqueda ultraveloz."
       },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'El mayor reto en la computación cuántica es la "decoherencia". Los qubits son frágiles y pueden perder su estado de superposición debido a variaciones mínimas de temperatura o vibraciones en el entorno.' 
-      },
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En Una Nueva Esperanza, R2-D2 logra infiltrar la red de la Estrella de la Muerte en segundos. Para procesar códigos de seguridad a esa velocidad, un droide necesitaría procesadores con capacidades cuánticas.' 
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En 2019, el procesador Sycamore de Google demostró la ventaja cuántica computacional al ejecutar una tarea de muestreo de circuitos aleatorios en doscientos segundos, un cálculo que en ese momento se estimaba que tomaría miles de años a la supercomputadora clásica más potente del planeta Tierra, marcando un punto de inflexión histórico en la física aplicada y en el procesamiento cuántico masivo de datos."
       }
     ],
-    fact: 'La computación cuántica utiliza la superposición y el entrelazamiento para procesar datos. Mientras los bits clásicos valen 0 o 1, los qubits mantienen estados de ambos valores simultáneamente.'
+    "fact": "Un procesador cuántico con trescientos qubits entrelazados en superposición coherente puede almacenar simultáneamente tantos números como átomos existen en todo el universo observable (dos elevado a la trescientos, una cifra astronómica de aproximadamente diez elevado a la noventa estados simultáneos)."
   },
   {
-    id: 'no-localidad',
-    title: 'Conexión Instantánea: No-Localidad',
-    color: '#64FFDA',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_no-localidad.webp',
-    image: '/assets/starwars/infographic_fuerza/hero_no-localidad.webp',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_no-localidad.webp',
-    bannerCaption: "La no-localidad cuántica permite que partículas entrelazadas se influyan mutuamente a cualquier distancia, demostrado por John Bell en 1964.",
-    content: [
-      "En el mundo cuántico, la distancia no limita la conexión entre partículas. La 'no-localidad' es un principio comprobado que indica que eventos separados espacialmente pueden estar vinculados. Partículas entrelazadas se afectan mutuamente de inmediato sin que una señal física viaje entre ellas.",
-      "Para resolver el debate de las variables ocultas propuesto por Einstein, el físico John Bell diseñó una prueba matemática en 1964. El 'Teorema de Bell' proporcionó las fórmulas para determinar si el universo funcionaba bajo reglas clásicas predeterminadas o si la mecánica cuántica era correcta.",
-      "Imagina dos máquinas de chicles conectadas. Según la física clásica, ambas fueron cargadas con el mismo orden de colores predeterminado. La mecánica cuántica plantea que los chicles no tienen color hasta que salen, y ambas máquinas deciden instantáneamente producir un chicle rojo al mismo tiempo.",
-      "Yoda enseña que el tamaño de los objetos y la distancia física no importan frente a la Fuerza. La Fuerza interconecta toda la galaxia sin limitaciones geográficas, un concepto que funciona como paralelo a la no-localidad en la física cuántica.",
-      "En 1982, el físico Alain Aspect puso a prueba el Teorema de Bell. Usando detectores de fotones, confirmó que el universo no opera con variables ocultas locales. Esta comprobación de la 'acción a distancia' le valió el Premio Nobel de Física en 2022."
+    "id": "no-localidad",
+    "title": "Conexión Instantánea: No-Localidad",
+    "color": "#64FFDA",
+    "btnImage": "/assets/starwars/infographic_fuerza/btn_no-localidad.webp",
+    "image": "/assets/starwars/infographic_fuerza/hero_no-localidad.webp",
+    "bannerImage": "/assets/starwars/infographic_fuerza/banner_no-localidad.webp",
+    "bannerCaption": "La no-localidad cuántica permite que partículas entrelazadas se influyan mutuamente a cualquier distancia, demostrado por John Bell en 1964.",
+    "content": [
+      "El principio de no-localidad cuántica es la confirmación experimental de que el universo físico no está construido exclusivamente sobre interacciones locales mediadas por fuerzas que viajan en el espacio. Dos partículas que han compartido un estado entrelazado responden a las mediciones con correlaciones estadísticas que desafían cualquier intento de explicación mediante señales que viajen a través del espacio interpuesto respetando el límite de la luz.",
+      "En 1964, John Stewart Bell formuló una desigualdad matemática que estableció una línea divisoria inmutable entre la física clásica local y la mecánica cuántica. Bell demostró que si dos partículas separadas poseen propiedades preexistentes y no se comunican de forma instantánea, el valor matemático de ciertas correlaciones angulares de espín jamás puede exceder el número dos. Si la naturaleza superaba ese valor, el realismo local quedaba formalmente refutado.",
+      "Los históricos experimentos liderados por Alain Aspect en la Universidad de París-Sur en 1982 zanjaron la discusión. Aspect utilizó interruptores ópticos ultrarrápidos que cambiaban la orientación de los polarizadores cada diez nanosegundos, mientras los fotones ya estaban viajando a la velocidad de la luz hacia los detectores. No existía tiempo físico suficiente para que los analizadores intercambiaran señales lumínicas, y aun así, la correlación cuántica violó la desigualdad de Bell con rotundidad.",
+      "Durante los años posteriores, los escépticos plantearon diversas «lagunas experimentales», como la posibilidad de que los detectores solo captaran una muestra sesgada de fotones o que las opciones de medición no fueran genuinamente aleatorias. En 2015, experimentos pioneros simultáneos en la Universidad Tecnológica de Delft, en Viena y en el instituto NIST de Estados Unidos cerraron todas las lagunas posibles, certificando de forma definitiva que el universo es no local.",
+      "La no-localidad no quebranta la teoría de la relatividad especial porque no permite enviar mensajes telegráficos instantáneos: cada observador local solo registra números aleatorios que no transmiten información útil por sí mismos. No obstante, este descubrimiento sacudió los cimientos filosóficos de la ciencia occidental, demostrando que en el tejido más íntimo de la realidad cósmica, el espacio no separa las cosas tan completamente como creíamos."
     ],
-    expandables: [
-      { 
-        label: '¿Sabías que...?', 
-        icon: 'sparkles', 
-        text: 'El principio de que las partes de un sistema entrelazado no pueden estudiarse de forma aislada se conoce como holismo cuántico. Refleja cómo ciertas propiedades solo existen en el sistema completo.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Cuando el planeta Alderaan es destruido por la Estrella de la Muerte en Una Nueva Esperanza, Obi-Wan Kenobi siente una repentina conmoción a años luz de distancia: «Sentí una gran perturbación en la Fuerza, como si millones de voces gritaran de terror y fueran silenciadas de repente». La no-localidad refleja esa interconexión sutil entre extremos cósmicos."
       },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'El Premio Nobel de Física 2022 fue otorgado a Alain Aspect, John Clauser y Anton Zeilinger. Se reconoció su trabajo experimental comprobando violaciones al Teorema de Bell con fotones entrelazados.' 
-      },
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'En El Imperio Contraataca, Leia escucha telepáticamente a Luke cuando él necesita ayuda. Esta conexión instantánea a larga distancia, sin transmisores, ilustra perfectamente el concepto de no-localidad.' 
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad aparente de la correlación cuántica fue medida experimentalmente en Ginebra por el equipo de Nicolas Gisin, demostrando que si existiera alguna señal física oculta viajando entre partículas entrelazadas, debería propagarse al menos a diez mil veces la velocidad de la luz en el vacío, confirmando la naturaleza no-local intrínseca y revolucionaria postulada por la mecánica cuántica moderna."
       }
     ],
-    fact: 'El Teorema de Bell de 1964 establece matemáticamente que ninguna teoría de variables locales clásicas puede explicar los resultados y correlaciones de la mecánica cuántica.'
+    "fact": "El límite de Tsirelson establece el techo cuántico absoluto para las correlaciones no locales en dos raíz de dos (aproximadamente dos coma ochenta y dos); la mecánica cuántica viola el límite clásico de Bell de dos, pero se detiene exactamente en este umbral sin violar la causalidad relativista del espacio-tiempo."
   },
   {
-    id: 'fuerza-universo',
-    title: 'La Fuerza del Universo Real',
-    color: '#AA00FF',
-    btnImage: '/assets/starwars/infographic_fuerza/btn_fuerza-universo.webp',
-    image: '/assets/starwars/infographic_fuerza/hero_fuerza-universo.webp',
-    bannerImage: '/assets/starwars/infographic_fuerza/banner_fuerza-universo.webp',
-    bannerCaption: "Las fuerzas fundamentales del universo â€” gravedad, electromagnetismo, nuclear fuerte y débil â€” gobiernan toda la materia.",
-    content: [
-      "El espacio que existe entre las estrellas no es un vacío inerte. Según la física moderna, lo que consideramos espacio vacío está lleno de 'Campos Cuánticos'. Estos son mares invisibles de energía que vibran de manera continua en todo el universo.",
-      "Estos campos energéticos se extienden por todo el cosmos. Las partículas fundamentales, como los electrones y fotones, son en realidad pequeñas vibraciones u ondulaciones que surgen dentro de estos campos, de la misma forma en que una ola se eleva en el océano.",
-      "Imagina un campo cuántico como la superficie tensa de un tambor. Cuando se le aporta energía, el parche vibra. De manera similar, cuando un campo cuántico se excita, da origen a una partícula material. Toda la materia es el resultado de la vibración de estos campos.",
-      "Yoda describió la Fuerza diciendo: 'La vida la crea, la hace crecer. Su energía nos rodea y nos une'. La física de campos sugiere algo parecido: no somos objetos aislados, sino nodos de energía interactuando dentro de un campo universal interconectado.",
-      "El entrelazamiento y los campos cuánticos muestran que el universo funciona como una red unificada. Todas las partículas y galaxias interactúan dentro de las mismas estructuras fundamentales. La ciencia demuestra que el cosmos es un sistema profundamente entrelazado."
+    "id": "fuerza-universo",
+    "title": "La Fuerza del Universo Real",
+    "color": "#AA00FF",
+    "btnImage": "/assets/starwars/infographic_fuerza/btn_fuerza-universo.webp",
+    "image": "/assets/starwars/infographic_fuerza/hero_fuerza-universo.webp",
+    "bannerImage": "/assets/starwars/infographic_fuerza/banner_fuerza-universo.webp",
+    "bannerCaption": "Las fuerzas fundamentales del universo â€” gravedad, electromagnetismo, nuclear fuerte y débil â€” gobiernan toda la materia.",
+    "content": [
+      "En la cosmología de Star Wars, la Fuerza es una entidad unificada que conecta y armoniza todo el cosmos observable. En la física fundamental contemporánea, los científicos han desentrañado que el funcionamiento del universo no depende de una sola energía mística, sino de cuatro interacciones o fuerzas fundamentales rigurosamente descritas por el Modelo Estándar de la física de partículas y la Teoría de la Relatividad General de Albert Einstein.",
+      "La gravedad es la interacción más familiar y al mismo tiempo la más enigmática a escala cuántica. Einstein demostró que la gravedad no es una fuerza de atracción convencional transmitida por el éter, sino la curvatura geométrica del tejido cuadridimensional del espacio-tiempo provocada por la presencia de masa y energía. Aunque es la más débil de todas las fuerzas a nivel atómico, su alcance infinito y su carácter acumulativo moldean las órbitas planetarias, las estrellas y las galaxias.",
+      "El electromagnetismo, mediado por el intercambio de fotones sin masa, rige todos los fenómenos atómicos, la óptica, la electricidad y las reacciones químicas que permiten la vida biológica. Las otras dos fuerzas actúan confinadas exclusivamente en el interior del núcleo atómico: la fuerza nuclear fuerte, mediada por gluones, mantiene unidos a los quarks para formar protones y neutrones, mientras que la fuerza nuclear débil, mediada por bosones W y Z, desencadena la radiactividad y la fusión estelar.",
+      "Un componente crucial en esta arquitectura es el campo de Higgs, confirmado experimentalmente en 2012 en el Gran Colisionador de Hadrones del CERN en Ginebra. Este campo escalar impregna todo el espacio cósmico desde los primeros instantes del Big Bang. Al interactuar con el campo de Higgs, partículas fundamentales como los quarks y los electrones experimentan una resistencia al cambio de movimiento que percibimos empíricamente como su masa inercial.",
+      "El gran santo grial de la física teórica moderna es lograr la unificación de estas cuatro fuerzas en un único marco matemático consistente: una Teoría de la Gran Unificación completada por una Teoría del Todo. Candidatas como la Teoría de Cuerdas y la Gravedad Cuántica de Bucles postulan que a temperaturas extremas en el nacimiento del cosmos, todas las fuerzas se fundían en una sola interacción primordial simétrica y perfecta."
     ],
-    expandables: [
-      { 
-        label: '¿Sabías que...?', 
-        icon: 'sparkles', 
-        text: 'La misteriosa Energía Oscura, responsable de acelerar la expansión del universo, podría estar directamente relacionada con la energía inherente del vacío cuántico.' 
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El Gran Maestro Yoda enseña a Luke que «el tamaño no importa; mírame a mí, ¿por mi tamaño me juzgas? Pues no deberías, porque mi aliada es la Fuerza, y una poderosa aliada es». En la física de partículas, las partículas más diminutas e invisibles como el bosón de Higgs son las responsables de otorgar masa a toda la materia de la galaxia."
       },
-      { 
-        label: 'Dato Científico', 
-        icon: 'atom', 
-        text: 'En la Teoría Cuántica de Campos, las partículas fundamentales como el bosón de Higgs no son esferas sólidas, sino excitaciones medibles dentro de su respectivo campo.' 
-      },
-      { 
-        label: 'En la Película', 
-        icon: 'zap', 
-        text: 'Yoda le enseña a Luke: "Seres luminosos somos, no esta materia cruda". Esto resuena con la visión cuántica, donde la base de la materia física es energía vibrando en campos invisibles.' 
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El Gran Colisionador de Hadrones del CERN en Ginebra es un anillo subterráneo de veintisiete kilómetros de circunferencia donde protones colisionan a trece coma seis teraelectronvoltios a una velocidad del noventa y nueve coma noventa y nueve por ciento de la velocidad de la luz para estudiar las fuerzas primordiales."
       }
     ],
-    fact: 'La Teoría Cuántica de Campos demuestra que no existe un vacío absoluto. El universo está permeado por campos energéticos cuyas fluctuaciones dan origen a las partículas subatómicas.'
+    "fact": "De las cuatro fuerzas fundamentales, la gravedad es con diferencia la más tenue: la fuerza electromagnética de repulsión entre dos protones es aproximadamente diez elevado a treinta y seis veces más potente que su atracción gravitatoria mutua; la gravedad solo domina a escala astronómica gracias a la neutralidad de la carga eléctrica."
   }
 ];
 

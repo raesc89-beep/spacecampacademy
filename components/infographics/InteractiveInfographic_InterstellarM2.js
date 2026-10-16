@@ -82,145 +82,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'anatomia-agujero-negro',
-              bannerImage: '/assets/interstellar/infographic_m2/banner_anatomia-agujero-negro.webp',
-    title: 'Anatomía de un Agujero Negro',
-    color: '#FF6B35',
-    btnImage: '/assets/interstellar/infographic_m2/btn_anatomia.webp',
-    image: '/assets/interstellar/infographic_m2/hero_anatomia.webp',
-    content: [
-      'Un agujero negro no es un espacio vacío, sino materia contenida en un volumen reducido. Imagina que comprimes la masa del Sol al tamaño de una ciudad. Esta densidad produce un campo gravitatorio tan intenso que ni la luz escapa. Actúa como una aspiradora que traga lo que cruza su camino. Se forma cuando una estrella agota su combustible nuclear y colapsa bajo su gravedad.',
-      'En el centro de la Vía Láctea reside Sagitario A*, un agujero negro con la masa de cuatro millones de soles. Piensa en concentrar millones de cuerpos celestes en un volumen mínimo. Su gravedad mantiene unidas las órbitas de miles de millones de estrellas de manera estable. Así organiza la estructura de nuestra galaxia a través del tiempo cósmico.',
-      'La anatomía de estos objetos tiene tres partes: la singularidad, el horizonte de sucesos y el disco de acreción. Imagina un huracán: el ojo es el centro, los vientos forman la barrera y los escombros son el disco. Los científicos usan telescopios para mapear estas regiones. Así observan los fenómenos de alta energía en estas fronteras.',
-      'Muchos de estos cuerpos celestes rotan rápidamente y poseen una ergosfera. Allí el tejido espaciotemporal es arrastrado como un remolino de agua que empuja a los barcos. En esta región, los objetos giran junto con la masa central. Esto demuestra que la gravedad también arrastra la tela del espacio.',
-      'Rodeando esta estructura está la esfera de fotones, una órbita inestable donde la luz gira antes de escapar o caer. Es similar a una pista de carreras donde los vehículos giran hasta perder la tracción. Esto permite observar los anillos usando radiotelescopios terrestres. Así se revelan las sombras proyectadas por estos objetos.'
+    "id": "anatomia-agujero-negro",
+    "bannerImage": "/assets/interstellar/infographic_m2/banner_anatomia-agujero-negro.webp",
+    "title": "Anatomía de un Agujero Negro",
+    "color": "#FF6B35",
+    "btnImage": "/assets/interstellar/infographic_m2/btn_anatomia.webp",
+    "image": "/assets/interstellar/infographic_m2/hero_anatomia.webp",
+    "content": [
+      "Un agujero negro no es un agujero físico en el tejido espacial, sino una concentración extrema de masa contenida en un volumen que tiende a cero según la relatividad general. Cuando una estrella gigante agota su combustible nuclear, pierde la presión de radiación hidrostática hacia afuera que compensaba su propia atracción gravitatoria. Sin esa resistencia térmica interna, la gravedad comprime toda la materia estelar hasta superar el límite de Oppenheimer-Volkoff, dando origen a una deformación geométrica infinita.",
+      "La estructura teórica de un agujero negro comprende varias zonas bien delimitadas por las leyes de la física. En el exterior se encuentra la esfera de fotones, una región donde los rayos de luz orbitan en trayectorias circulares inestables antes de ser absorbidos o desviados hacia el cosmos. Más adentro yace el horizonte de sucesos, la frontera de causalidad donde la velocidad de escape iguala a la velocidad de la luz, aislando para siempre cualquier señal del universo visible exterior.",
+      "En los agujeros negros que poseen momento angular o rotación, denominados agujeros de Kerr, surge una región adicional llamada ergosfera. En este espacio exterior con forma elipsoidal, el campo gravitatorio rota tan violentamente que arrastra consigo el propio tejido del espaciotiempo. Ninguna partícula, ni siquiera un fotón que viaje a trescientos mil kilómetros por segundo, puede permanecer estática respecto a un observador lejano: todo cuerpo es forzado a girar en la misma dirección orbital.",
+      "El disco de acreción rodea el horizonte de sucesos como un torbellino de gas y polvo incandescente. El gas cae en espiral atraído por la gravedad mientras la fricción viscosa interna calienta el plasma a millones de grados Celsius, emitiendo radiación electromagnética en rayos X y luz visible. Este disco convierte la energía gravitatoria en radiación con una eficiencia térmica de hasta un cuarenta y dos por ciento, superando con creces el rendimiento energético de la fusión nuclear estelar.",
+      "Comprender la anatomía de estos gigantes cósmicos representa el mayor desafío de la astrofísica moderna, ya que une la teoría de la relatividad general de Albert Einstein con la mecánica cuántica de Max Planck. Mientras los telescopios contemporáneos como el Event Horizon Telescope cartografían la sombra de estos abismos estelares, los astrofísicos buscan resolver la paradoja de la pérdida de información cuántica para desentrañar el verdadero funcionamiento del universo a escalas extremas."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cuando la tripulación llega a Gargantúa, enfrentan un coloso con cien millones de masas solares. Esta magnitud permite que los planetas existan sin ser destrozados por las fuerzas de marea. Es un ejemplo de cómo el cine respeta las matemáticas. Integra la relatividad en la misión espacial.' },
-      { label: '¿Sabías que...?', icon: 'atom', text: 'Los agujeros negros de masa estelar nacen tras explosiones de supernovas. Sucede cuando las estrellas agotan su combustible y se derrumban por su propio peso. Es como un edificio que colapsa hacia sus cimientos. El Sol es demasiado pequeño para esto y se convertirá en una enana blanca.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El físico teórico Kip Thorne colaboró estrechamente con Christopher Nolan y el equipo de efectos visuales de Double Negative para construir el modelo de Gargantúa. Nolan exigió que el agujero negro no fuera una simple ilustración artística, sino el resultado visual directo de integrar las ecuaciones de Einstein en un motor de renderizado físico llamado DNGR. El equipo descubrió que la luz del disco trasero se curva por encima y por debajo del horizonte, creando el icónico halo luminoso de la película."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El radio de Schwarzschild define el tamaño exacto del horizonte de sucesos para una masa dada mediante la fórmula R = 2GM/c². Si comprimiéramos la Tierra al tamaño de una canica de nueve milímetros de radio, se transformaría en un microagujero negro. En contraste, Gargantúa posee una masa estimada de cien millones de masas solares, lo que sitúa su radio de Schwarzschild en unos trescientos millones de kilómetros, una dimensión colosal que supera con creces el radio de la órbita terrestre alrededor del Sol."
+      }
     ],
-    fact: 'Si reemplazáramos nuestro Sol por un agujero negro de la misma masa, la Tierra no sería absorbida. Nuestro planeta seguiría orbitando a la misma distancia, congelándose al perder el calor. Esto demuestra que la gravedad depende de la masa total y no del volumen.'
+    "fact": "El agujero negro supermasivo Sagitario A*, situado en el centro de nuestra Vía Láctea a veintiséis mil años luz de distancia, contiene cuatro coma tres millones de masas solares concentradas en una región con un radio de doce millones de kilómetros. En mayo de 2022, el consorcio internacional Event Horizon Telescope publicó su primera fotografía directa, revelando un anillo de plasma brillante que confirmó las predicciones teóricas de la relatividad general con una precisión milimétrica."
   },
   {
-    id: 'horizonte-sucesos',
-              bannerImage: '/assets/interstellar/infographic_m2/banner_horizonte-sucesos.webp',
-    title: 'El Punto de No Retorno',
-    color: '#F44336',
-    btnImage: '/assets/interstellar/infographic_m2/btn_horizonte.webp',
-    image: '/assets/interstellar/infographic_m2/hero_horizonte.webp',
-    content: [
-      'El horizonte de sucesos es el límite donde la velocidad para escapar iguala la de la luz. Se asemeja al borde de una cascada donde un pez es arrastrado irremediablemente. Cualquier objeto que cruce esta línea queda desconectado del universo observable. Se convierte en prisionero de la gravedad cayendo hacia el centro.',
-      'Karl Schwarzschild usó las ecuaciones de Einstein en 1916 para calcular el tamaño de esta frontera. Encontró el radio de Schwarzschild. Un horizonte para nuestro Sol mediría tres kilómetros de radio. Piensa en esconder una central de energía en el tamaño de un barrio. Este radio define donde la gravedad se vuelve absoluta.',
-      'Dado que nada supera la velocidad de los fotones, la luz queda atrapada detrás de este telón. Funciona como una trampa donde los visitantes pueden entrar pero jamás salir. Los observadores no pueden ver lo que ocurre en el interior. Los físicos teóricos intentan comprender este misterio usando herramientas matemáticas y simulaciones.',
-      'Desde lejos, un reloj que se acerca a este horizonte parece disminuir su marcha hasta detenerse. Es como presenciar una película que se congela en un fotograma por la eternidad. Sin embargo, para el viajero que cae, su tiempo avanza de forma normal. Experimenta el viaje sin notar alteraciones temporales en sus instrumentos.',
-      'Esta barrera es un límite geométrico y no posee una superficie física contra la cual chocar. Se compara con la línea del ecuador en un globo terráqueo; puedes cruzarla navegando sin sentir un golpe. Sin embargo, las fuerzas gravitacionales desgarran las moléculas de cualquier material que intente aproximarse, debido a la diferencia de atracción.'
+    "id": "horizonte-sucesos",
+    "bannerImage": "/assets/interstellar/infographic_m2/banner_horizonte-sucesos.webp",
+    "title": "El Punto de No Retorno",
+    "color": "#F44336",
+    "btnImage": "/assets/interstellar/infographic_m2/btn_horizonte.webp",
+    "image": "/assets/interstellar/infographic_m2/hero_horizonte.webp",
+    "content": [
+      "El horizonte de sucesos marca el límite insuperable donde la curvatura espaciotemporal se vuelve tan pronunciada que todas las trayectorias futuras apuntan inexorablemente hacia el centro. No es una superficie sólida con la que una nave espacial pueda colisionar, sino una frontera puramente geométrica y causal. Una vez que cualquier átomo o fotón cruza esta barrera invisible, necesitaría una velocidad superior a la de la luz para regresar, una condición absolutamente prohibida por las leyes físicas universales.",
+      "El físico alemán Karl Schwarzschild dedujo la existencia matemática de este horizonte en 1916 mientras combatía en el frente de la Primera Guerra Mundial, resolviendo de forma exacta las complejas ecuaciones de campo de Einstein apenas meses después de su publicación. Su solución demostró que para cualquier cantidad de masa existe un radio crítico en el cual la dilatación temporal gravitatoria se vuelve infinita respecto a un observador externo situado a una distancia infinita en reposo relativo.",
+      "Para un observador exterior que contempla a un astronauta descender hacia el horizonte, el tiempo del viajero parece ralentizarse de manera progresiva. La luz reflejada por su traje sufre un corrimiento al rojo gravitacional extremo, perdiendo energía y atenuando su intensidad lumínica hasta desvanecerse en longitudes de onda de radio indetectables. El observador exterior jamás verá al astronauta cruzar la frontera; su imagen parecerá congelarse para siempre sobre la superficie del horizonte cósmico.",
+      "En contraste con la perspectiva exterior, el propio viajero en caída libre no percibe ninguna anomalía local al cruzar el horizonte de sucesos. Su reloj de pulsera sigue marcando los segundos con total normalidad y no experimenta ningún cambio brusco en el espacio local. Sin embargo, su destino queda sellado: las coordenadas del espacio y del tiempo intercambian su papel algebraico dentro de la métrica, haciendo que la singularidad central se convierta en un momento futuro inevitable y no en un lugar físico.",
+      "Las fuerzas de marea en el horizonte dependen inversamente del cuadrado de la masa del agujero negro. En un agujero estelar pequeño de pocas masas solares, el gradiente gravitatorio entre los pies y la cabeza de un explorador supera los millones de gravedades terrestres, provocando una espaguetización letal antes del cruce. En cambio, en supermasivos como Gargantúa, el gradiente es tan suave que un humano puede cruzar el horizonte sin sentir desgarros mecánicos inmediatos en su cuerpo."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cooper debe cruzar el horizonte de sucesos de Gargantúa para recolectar datos. Para lograrlo, sacrifica la nave robótica TARS. La película retrata este descenso respetando la teoría física. La luz sigue siendo visible por un tiempo antes de llegar al teseracto, que transmite información.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En 2019, el Telescopio del Horizonte de Sucesos capturó la primera imagen de esta frontera. La fotografía reveló un anillo de gas rodeando un núcleo oscuro en la galaxia M87. Esta hazaña requirió coordinar antenas en múltiples continentes, confirmando visualmente las predicciones teóricas.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En la secuencia clímax de Interstellar, Cooper decide desacoplar su nave Ranger para aligerar la Endurance y permitir que Amelia Brand alcance el planeta habitable de Edmunds. Cooper cae deliberadamente hacia el horizonte de sucesos de Gargantúa junto a TARS. La película plasma con precisión cómo los instrumentos de navegación pierden contacto con el exterior debido a que las ondas de radio no pueden escapar del pozo gravitatorio, ilustrando la pérdida total de causalidad con nuestro universo exterior."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El fenómeno de corrimiento al rojo gravitacional obedece a la pérdida de energía que sufren los fotones al escalar un campo gravitatorio intenso. La longitud de onda observada se dilata según el factor de Schwarzschild √(1 - 2GM/rc²). Justo en la frontera donde r es igual al radio de Schwarzschild, el denominador tiende a cero, lo que significa que la frecuencia del fotón se anula por completo y su energía se disipa íntegramente, haciendo que cualquier señal emitida resulte invisible para el resto del cosmos."
+      }
     ],
-    fact: 'Si un explorador cayera cruzando el horizonte de un agujero estelar, sufriría espaguetización. La gravedad estiraría su cuerpo como un fideo. En agujeros supermasivos, este efecto no ocurre en la frontera. El cruce inicial es tranquilo porque el gradiente gravitatorio es suave a grandes distancias.'
+    "fact": "En abril de 2019, la colaboración del Event Horizon Telescope logró medir experimentalmente el diámetro del horizonte de sucesos del agujero negro central en la galaxia Messier 87. Con una masa de seis mil quinientos millones de masas solares, su horizonte abarca un diámetro de cuarenta mil millones de kilómetros, un tamaño que triplica la órbita completa de Plutón y confirmó la precisión geométrica de la solución de Schwarzschild formulada más de un siglo atrás por la astrofísica teórica."
   },
   {
-    id: 'agujero-negro-kerr',
-              bannerImage: '/assets/interstellar/infographic_m2/banner_agujero-negro-kerr.webp',
-    title: 'El Agujero Negro que Gira',
-    color: '#AB47BC',
-    btnImage: '/assets/interstellar/infographic_m2/btn_kerr.webp',
-    image: '/assets/interstellar/infographic_m2/hero_kerr.webp',
-    content: [
-      'El matemático Roy Kerr resolvió las ecuaciones de Einstein en 1963 para describir agujeros negros en rotación. Imagina encontrar la llave para una caja fuerte geométrica indescifrable. Su solución demostró que el universo contiene objetos giratorios complejos. Reveló que el momento angular altera la estructura del espacio-tiempo.',
-      'A diferencia de las esferas estáticas, los agujeros de Kerr desarrollan un horizonte achatado en sus polos y abultado en el centro. Se asemeja a una calabaza girando velozmente. Esta deformación surge por las fuerzas de rotación. Altera las rutas seguidas por las naves y la luz, creando un entorno dinámico.',
-      'En la solución de Kerr, la masa no colapsa en un punto microscópico. Adopta la forma de un anillo unidimensional muy denso. Piensa en una dona de materia comprimida. Esta singularidad anular gira a tal velocidad que la fuerza centrífuga evita el colapso absoluto hacia el centro.',
-      'En Interstellar, Gargantúa rota al noventa y nueve por ciento de la velocidad de la luz. Es comparable a lanzar un trompo que difumina la realidad. Esta rotación extrema es necesaria para que el planeta Miller orbite de cerca sin precipitarse. Aprovecha el equilibrio entre fuerza centrífuga y gravedad.',
-      'Kip Thorne diseñó estos parámetros para respetar las leyes de la ciencia. Ajustar esta rotación fue como calibrar el motor de un vehículo para un rendimiento óptimo. Lograron que el tiempo se dilatara sin destruir los mundos. Esto demuestra que la ficción puede basarse en ciencia rigurosa.'
+    "id": "agujero-negro-kerr",
+    "bannerImage": "/assets/interstellar/infographic_m2/banner_agujero-negro-kerr.webp",
+    "title": "El Agujero Negro que Gira",
+    "color": "#AB47BC",
+    "btnImage": "/assets/interstellar/infographic_m2/btn_kerr.webp",
+    "image": "/assets/interstellar/infographic_m2/hero_kerr.webp",
+    "content": [
+      "Durante casi cinco décadas después del trabajo de Schwarzschild, los astrofísicos se preguntaron si los agujeros negros reales podían existir en la naturaleza, ya que todas las estrellas en el universo giran y poseen momento angular. En 1963, el matemático neozelandés Roy Kerr halló la solución matemática exacta de las ecuaciones de Einstein para una masa en rotación constante. Este descubrimiento revolucionó la física teórica al describir la geometría realista del espaciotiempo que rodea a estos colosos estelares.",
+      "La rotación induce modificaciones asombrosas en la anatomía del agujero negro. El horizonte de sucesos deja de ser una esfera perfecta y se aplana en los polos mientras se abulta en el ecuador, adquiriendo una silueta esferoidal oblata. Además, un agujero de Kerr posee dos horizontes: un horizonte de sucesos exterior y un horizonte interno o de Cauchy. Entre el horizonte exterior y el límite estático exterior se genera la ergosfera, una zona donde la energía del propio agujero puede ser extraída por naves o partículas.",
+      "En el corazón de un agujero de Kerr, la materia colapsada no se concentra en un punto adimensional como en la solución estática de Schwarzschild. Debido a la conservación del momento angular y la fuerza centrífuga extrema, la materia adopta la forma de un anillo unidimensional de radio finito con densidad infinita, conocido como singularidad anular. En teoría, un objeto que atraviese el interior de este anillo sin tocarlo podría evitar el colapso gravitatorio y acceder a regiones teóricas de espaciotiempo negativo.",
+      "El parámetro de espín adimensional de un agujero negro de Kerr, denotado algebraicamente como a*, mide su velocidad angular relativa respecto al límite físico máximo permitido por la relatividad general. Cuando a* alcanza el valor de uno, el agujero negro rota a la velocidad crítica máxima y su horizonte coincide exactamente con la ergosfera en el ecuador. Si un agujero superara este umbral teórico, su horizonte desaparecería, dejando al descubierto una singularidad desnuda violando el principio de censura cósmica.",
+      "Kip Thorne calculó que Gargantúa debía rotar con un parámetro de espín a* igual a cero coma novecientos noventa y ocho para hacer posible la trama de Interstellar. A esta velocidad de giro casi extrema, las fuerzas gravitacionales y centrífugas se equilibran de forma tan particular que la última órbita circular estable se sitúa a escasa distancia del horizonte de sucesos. Esto permite que el planeta Miller orbite de forma segura en una región de inmensa dilatación temporal sin precipitarse al fondo del abismo."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Christopher Nolan modeló la asimetría de Gargantúa basándose en cálculos científicos. El lado del disco que gira hacia la cámara se ve más brillante por el efecto Doppler. Esta asimetría fue renderizada con fidelidad matemática, creando un hito visual en la cinematografía.' },
-      { label: '¿Sabías que...?', icon: 'atom', text: 'Antes de Kerr, los científicos dudaban de la existencia de agujeros negros. La solución rotatoria demostró que pueden formarse tras explosiones estelares. Toda estrella posee rotación que se conserva según la física. Esto confirmó que la naturaleza puede producir geometrías extremas.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Para lograr que una hora en el planeta Miller equivaliera exactamente a siete años en la Tierra, Kip Thorne demostró que Gargantúa necesitaba girar al 99.8% del límite relativista máximo de Kerr. Con un giro menor, la órbita de Miller habría caído dentro del horizonte de sucesos o habría sido destruida por fuerzas de marea. Christopher Nolan aceptó este requerimiento matemático estricto, convirtiendo las propiedades de la métrica de Kerr en el motor dramático fundamental de la misión de rescate interestelar."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En 1969, el físico Roger Penrose demostró que es posible extraer energía mecánica de un agujero de Kerr mediante el llamado proceso Penrose. Al ingresar a la ergosfera, un objeto puede dividirse en dos fragmentos: uno cae más allá del horizonte con energía negativa respecto al infinito, mientras que el otro escapa hacia el exterior con una energía superior a la de la masa original. Este mecanismo permite convertir hasta un 29% de la masa total del agujero negro en energía cinética útil y aprovechable."
+      }
     ],
-    fact: 'La estructura espaciotemporal de Kerr es tan retorcida que sugiere caminos hacia otras partes del universo. Sin embargo, los científicos advierten que cruzar físicamente este anillo resultaría en desintegración. Las fuerzas de curvatura infinita destruirían cualquier materia.'
+    "fact": "El agujero negro supermasivo Cygnus X-1, primer candidato a agujero negro confirmado en nuestra galaxia a unos seis mil años luz de la Tierra, contiene veintiún masas solares y rota a más de ochocientas revoluciones por segundo. Mediciones de rayos X realizadas por satélites de la NASA estiman su parámetro de espín a* en más de cero coma noventa y nueve, lo que confirma que los agujeros negros en rotación extrema descritos por Roy Kerr son realidades tangibles y frecuentes en el cosmos."
   },
   {
-    id: 'frame-dragging',
-              bannerImage: '/assets/interstellar/infographic_m2/banner_frame-dragging.webp',
-    title: 'Cuando el Espacio Gira Contigo',
-    color: '#4FC3F7',
-    btnImage: '/assets/interstellar/infographic_m2/btn_frame-dragging.webp',
-    image: '/assets/interstellar/infographic_m2/hero_frame-dragging.webp',
-    content: [
-      'El arrastre de marco, predicho por Lense y Thirring, establece que cualquier objeto giratorio arrastra el tejido cósmico. Imagina sumergir una cuchara en miel y dar giros rápidos. La miel gira junto a ella. Así, el espacio acompaña la danza de los astros, creando un vórtice gravitacional.',
-      'En 2011, la misión Gravity Probe B confirmó este efecto alrededor de la Tierra. Un giroscopio flotando en el espacio detectó la torcedura del vacío. Esta sonda demostró que la materia en rotación altera mecánicamente las coordenadas. Así comprobó una predicción sutil de la relatividad general.',
-      'Cerca de Gargantúa, este arrastre es una tormenta donde el espacio gira casi a la velocidad de la luz. Sería como estar atrapado en un tornado colosal de vacío puro. Las naves son llevadas por la corriente sin importar la potencia de sus motores. Esto obliga a calcular trayectorias complejas.',
-      'Este arrastre crea la ergosfera, una zona exterior al horizonte de sucesos donde es imposible permanecer estático. Es como una cinta de correr donde el piso avanza rápidamente. Todo objeto debe girar en la dirección del agujero central, arrastrado por la rotación del tejido espacial.',
-      'El proceso de Penrose propone utilizar la ergosfera para robar energía al agujero negro. Es como arrojar una roca hacia un molino de viento para extraer impulso. Al arrojar parte de su carga hacia el abismo, un vehículo podría escapar con velocidad asombrosa aprovechando la energía rotacional.'
+    "id": "frame-dragging",
+    "bannerImage": "/assets/interstellar/infographic_m2/banner_frame-dragging.webp",
+    "title": "Cuando el Espacio Gira Contigo",
+    "color": "#4FC3F7",
+    "btnImage": "/assets/interstellar/infographic_m2/btn_frame-dragging.webp",
+    "image": "/assets/interstellar/infographic_m2/hero_frame-dragging.webp",
+    "content": [
+      "Uno de los efectos más fascinantes predichos por la relatividad general es el arrastre del marco de referencia espaciotemporal, conocido técnicamente como efecto Lense-Thirring. Postulado en 1918 por los físicos austriacos Josef Lense y Hans Thirring, este fenómeno establece que un cuerpo masivo en rotación no solo deforma la geometría del espacio circundante, sino que literalmente tuerce y arrastra consigo las coordenadas mismas del espaciotiempo, comportándose de manera similar a una esfera girando en miel espesa.",
+      "Alrededor de un agujero negro de Kerr en rápida rotación, el arrastre de marco adquiere una magnitud descomunal. Dentro de la ergosfera, la velocidad de arrastre supera la velocidad local de la luz con respecto a los sistemas de referencia lejanos en reposo. Como consecuencia física directa, ningún objeto material ni señal electromagnética puede permanecer estático sin girar. Para mantenerse en posición fija, una nave necesitaría viajar en sentido contrario más rápido que la luz, una proeza imposible.",
+      "Este arrastre continuo fuerza a las partículas a orbitar en el mismo sentido que el agujero negro, un fenómeno conocido como co-rotación obligatoria. Las órbitas de objetos que intentan moverse en dirección retrógrada u opuesta son inestables y requieren enormes cantidades de energía para subsistir. Esta asimetría dinámica provoca que los discos de acreción de los agujeros negros de espín elevado experimenten fricciones extremas y alcancen temperaturas millones de grados superiores a las de discos estáticos.",
+      "El efecto Lense-Thirring no es una mera hipótesis matemática confinada a la teoría: fue medido y verificado empíricamente en el campo gravitatorio de nuestro propio planeta. La misión satelital Gravity Probe B de la NASA, lanzada en 2004 con giroscopios de cuarzo de ultraprecisión, midió el arrastre inducido por la rotación de la Tierra. Los datos confirmaron una precesión de arrastre de treinta y siete coma dos milisegundos de arco por año, validando con exactitud las predicciones de Albert Einstein.",
+      "En entornos extremos como Gargantúa, el arrastre de marco altera la propagación de los rayos lumínicos, distorsionando las constelaciones de fondo y los bordes del disco luminoso. Este arrastre ensancha el horizonte en la dirección del giro y lo comprime en el sentido contrario, produciendo una silueta asimétrica distintiva. Para los tripulantes del Endurance, este fenómeno implicaba que maniobrar cerca del agujero requería sincronizar sus trayectorias orbitales con la danza inercial del propio cosmos."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La nave Endurance utiliza maniobras de asistencia gravitatoria en el vórtice de Gargantúa. Al volar hacia la ergosfera, Brand aprovecha el impulso del espacio-tiempo para catapultarse hacia el planeta de Edmunds. Esta maniobra extrae energía del monstruo cósmico en movimiento.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El satélite Gravity Probe B requirió las esferas más perfectas jamás creadas. Estos rotores de cuarzo eran tan redondos que, si tuvieran el tamaño de la Tierra, su montaña más alta mediría tres metros. Su precisión fue vital para probar el arrastre de marco.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Cuando la nave Endurance se aproxima al planeta Miller, debe aprovechar el arrastre inercial de Gargantúa para reducir el gasto de combustible en su aproximación orbital. Kip Thorne explicó a Christopher Nolan que el espaciotiempo en rotación ayuda a sostener la órbita de la nave, actuando como una descomunal catapulta gravitacional cinemática. Sin este arrastre del marco de Kerr, la nave habría requerido motores hiperbólicos inalcanzables para resistir la atracción y entrar en la trayectoria del planeta de agua."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El efecto Lense-Thirring provoca que el plano orbital de cualquier cuerpo que no coincida con el ecuador del agujero negro experimente una precesión continua llamada precesión nodular. En astrofísica de altas energías, este bamboleo periódico de la materia en el disco de acreción genera oscilaciones cuasi-periódicas en la emisión de rayos X, lo que permite a los astrónomos medir el momento angular de agujeros negros distantes mediante el análisis de las frecuencias observadas en telescopios espaciales."
+      }
     ],
-    fact: 'Cuando un objeto ingresa a la ergosfera, una porción de su masa se transforma en energía cinética. El mecanismo de Penrose demuestra que los agujeros negros actúan como potentes baterías. Podrían suministrar energía a civilizaciones avanzadas que dominen esta tecnología.'
+    "fact": "La sonda espacial LAGEOS II, en órbita alrededor de la Tierra a cinco mil novecientos kilómetros de altitud, confirmó el arrastre de marco terrestre midiendo el desplazamiento orbital mediante pulsos láser milimétricos durante once años continuos. El equipo internacional liderado por Ignazio Ciufolini determinó en 2004 que el arrastre del espaciotiempo terrestre coincide con la relatividad general con una incertidumbre menor al diez por ciento, una hazaña de metrología gravitacional sin precedentes."
   },
   {
-    id: 'disco-acrecion',
-              bannerImage: '/assets/interstellar/infographic_m2/banner_disco-acrecion.webp',
-    title: 'El Anillo de Fuego',
-    color: '#FF9800',
-    btnImage: '/assets/interstellar/infographic_m2/btn_disco.webp',
-    image: '/assets/interstellar/infographic_m2/hero_disco.webp',
-    content: [
-      'El disco de acreción es una estructura compuesta de gas interestelar caliente y polvo cósmico. Órbita alrededor de un núcleo negro. Funciona como una licuadora que tritura estrellas vecinas reduciéndolas a plasma brillante. La materia se aglomera en carriles concéntricos por la inmensa gravedad, creando un espectáculo luminoso.',
-      'La fricción de las partículas estelares choca a grandes velocidades y eleva la temperatura a millones de grados. Esto genera emisiones de rayos X. Imagina frotar tus manos con fricción suficiente para derretir acero. Este proceso convierte materia en luz, liberando radiación que viaja por el espacio.',
-      'Estos sistemas de discos de gas generan cuásares, los faros celestes más potentes conocidos. Son como luces de emergencia que iluminan la ciudad estelar. Eclipsan la luz combinada de todas las estrellas de su galaxia. Sirven como balizas cósmicas para estudiar la evolución del universo.',
-      'Un efecto relativista llamado haz Doppler provoca que el segmento frontal del disco parezca más brillante al acercarse. Es similar a una sirena de ambulancia que suena más fuerte al dirigirse hacia ti. Este desplazamiento azul aumenta la luminosidad en un extremo del aro, revelando la rotación del plasma.',
-      'La interacción eléctrica entre el plasma y el espacio curvo produce campos magnéticos. Estos actúan como cañones galácticos, canalizando material en finos chorros relativistas. Son como mangueras gigantes que disparan radiación letal. Pueden esterilizar sistemas solares lejanos, demostrando su largo alcance destructivo.'
+    "id": "disco-acrecion",
+    "bannerImage": "/assets/interstellar/infographic_m2/banner_disco-acrecion.webp",
+    "title": "El Anillo de Fuego",
+    "color": "#FF9800",
+    "btnImage": "/assets/interstellar/infographic_m2/btn_disco.webp",
+    "image": "/assets/interstellar/infographic_m2/hero_disco.webp",
+    "content": [
+      "El disco de acreción es una estructura plasmaica colosal formada por gas, polvo y fragmentos estelares que caen en espiral hacia el pozo gravitatorio de un agujero negro. A medida que la materia desciende atraída por el campo gravitatorio, la conservación del momento angular impide que caiga directamente en línea recta, obligándola a aplanarse en una estructura anular rotatoria. Esta formación funciona como uno de los generadores de radiación más potentes y eficientes del cosmos observable.",
+      "Las capas concéntricas del disco giran a distintas velocidades según las leyes del movimiento kepleriano relativista: las regiones internas rotan con mucha mayor rapidez que las externas. Este gradiente de velocidad induce una colosal fricción viscosa impulsada por turbulencias magnetohidrodinámicas conocidas como inestabilidad magnetorotacional. Esta turbulencia transfiere el momento angular hacia afuera, permitiendo que la materia caiga hacia adentro mientras disipa gigantescas cantidades de calor.",
+      "Las temperaturas en el interior del disco pueden alcanzar decenas de millones de kelvins en agujeros negros estelares, emitiendo torrentes de rayos X de alta energía. Sin embargo, en agujeros negros supermasivos como Gargantúa, el disco se distribuye a lo largo de millones de kilómetros, lo que modera su densidad y temperatura media. Su emisión térmica se concentra principalmente en el espectro óptico visible e infrarrojo, permitiendo la existencia de luz brillante similar a la de una estrella gigante.",
+      "El aspecto visual del disco de acreción se ve profundamente alterado por el efecto de lente gravitacional y el efecto Doppler relativista. La gravedad deforma la trayectoria de los fotones emitidos por la cara posterior del disco, proyectándolos por encima y por debajo del horizonte oscuro. Simultáneamente, el lado del disco que se aproxima hacia el observador aparece considerablemente más brillante y azulado por el beaming relativista, mientras que el lado que se aleja se observa atenuado y rojizo.",
+      "Sin la iluminación continua proporcionada por este disco de gas incandescente, los sistemas planetarios que orbitan agujeros negros estarían sumidos en una noche gélida y perpetua. El disco de Gargantúa actúa como un auténtico sol sustituto para los mundos del sistema, proveyendo energía térmica y lumínica a los planetas Miller y Edmunds. Este equilibrio radiativo demuestra que los agujeros negros no son únicamente destructores cósmicos, sino también potenciales centros térmicos de sistemas planetarios."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El modelo del disco de Gargantúa fue modificado para rebajar su emisión de rayos X. En la realidad física, un disco ardiente freiría a la nave espacial Ranger antes de aproximarse. Los creadores realizaron esta concesión artística para permitir que los astronautas sobrevivieran.' },
-      { label: '¿Sabías que...?', icon: 'atom', text: 'Los chorros de alta energía expulsados desde los polos magnéticos viajan a velocidades extremas. Alcanzan el noventa y nueve por ciento de la velocidad de la luz. Tienen potencia para frenar la formación estelar en galaxias vecinas, calentando el gas y regulando el crecimiento galáctico.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Christopher Nolan decidió atenuar ligeramente la asimetría Doppler del disco de Gargantúa para evitar que el público general se confundiera en las salas de cine. En una simulación física rigurosa, el lado izquierdo del disco habría sido cientos de veces más brillante que el derecho debido a la velocidad relativista. Aunque el software DNGR calculó la asimetría exacta con precisión absoluta, Nolan prefirió equilibrar sutilmente la iluminación para preservar la claridad visual y la belleza estética de la escena."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La eficiencia de conversión de masa en energía en un disco de acreción alrededor de un agujero negro de Schwarzschild estático es de aproximadamente un cinco coma siete por ciento. No obstante, en un agujero de Kerr en rotación máxima como Gargantúa, la última órbita circular estable se sitúa mucho más cerca del horizonte, elevando la eficiencia termodinámica teórica hasta un asombroso cuarenta y dos coma cuatro por ciento, casi sesenta veces más eficiente que la fusión del hidrógeno en el núcleo de nuestro Sol."
+      }
     ],
-    fact: 'El gas estelar cercano al abismo se mueve tan rápido que su tiempo interno se reduce radicalmente por la relatividad. Si viajaras en esa zona, verías que el universo envejece millones de años en pocos minutos. Esto ilustra la naturaleza maleable del tiempo espacial.'
+    "fact": "Los cuásares son núcleos galácticos activos alimentados por discos de acreción alrededor de agujeros negros supermasivos devorando gas a ritmos desenfrenados. El cuásar más brillante conocido, SMSS J2157-3602, alberga un agujero negro de treinta y cuatro mil millones de masas solares que devora el equivalente a un Sol diario. Su disco de acreción brilla con una luminosidad equivalente a diez mil veces la luz de todas las estrellas de la Vía Láctea combinadas en una sola fuente cósmica."
   },
   {
-    id: 'simulacion-gargantua',
-              bannerImage: '/assets/interstellar/infographic_m2/banner_simulacion-gargantua.webp',
-    title: 'Gargantúa en la Computadora',
-    color: '#7C4DFF',
-    btnImage: '/assets/interstellar/infographic_m2/btn_simulacion.webp',
-    image: '/assets/interstellar/infographic_m2/hero_simulacion.webp',
-    content: [
-      'Kip Thorne forjó una alianza pionera con Double Negative Effects para diseñar un modelo visual de Gargantúa. Esta colaboración mezcló las matemáticas con la pintura virtual. Lograron una unión sin igual entre la industria del cine y la investigación académica sobre la estructura geométrica del cosmos.',
-      'El programador Oliver James redactó un código de trazado de rayos para doblar las rutas de luz en el espacio curvo. Consistió en diseñar espejos deformantes de una feria virtual utilizando fórmulas complejas. Así simuló la lente gravitacional resolviendo ecuaciones diferenciales para cada trayectoria fotónica.',
-      'Las ecuaciones para renderizar estos paisajes consumían recursos de computación a escala bestial. Requirieron ochocientos terabytes informáticos para guardar cada textura en alta resolución. Es como gestionar una biblioteca completa en discos duros para producir pocos segundos de metraje cinematográfico.',
-      'Interstellar se convirtió en la primera película en incorporar modelos realistas de un agujero gravitatorio extremo. Representa el triunfo de un documental oculto bajo el disfraz de cine popular. Educó al público sobre conceptos avanzados de física teórica mientras ofrecía una experiencia audiovisual emocionante.',
-      'El esfuerzo de este grupo no quedó solo en la industria del entretenimiento. Publicaron sus descubrimientos de programación estelar en dos artículos científicos. Demostraron que la búsqueda de belleza estética puede generar avances científicos genuinos para la academia.'
+    "id": "simulacion-gargantua",
+    "bannerImage": "/assets/interstellar/infographic_m2/banner_simulacion-gargantua.webp",
+    "title": "Gargantúa en la Computadora",
+    "color": "#7C4DFF",
+    "btnImage": "/assets/interstellar/infographic_m2/btn_simulacion.webp",
+    "image": "/assets/interstellar/infographic_m2/hero_simulacion.webp",
+    "content": [
+      "La creación visual de Gargantúa representó un hito histórico donde la investigación científica de vanguardia y la industria cinematográfica de Hollywood colaboraron para avanzar el conocimiento humano. Christopher Nolan y el productor Emma Thomas convocaron al físico teórico Kip Thorne para garantizar que cada elemento visual respondiera rigurosamente a las ecuaciones de la relatividad general, prohibiendo cualquier licencia artística arbitraria que contradijera las leyes físicas conocidas por la ciencia.",
+      "El equipo de computación gráfica de Double Negative, liderado por el científico Oliver James y el supervisor de efectos visuales Paul Franklin, desarrolló un software de renderizado completamente nuevo bautizado como DNGR. En lugar de simular rayos de luz viajando en líneas rectas como hacen los programas tradicionales de animación digital, DNGR integró numéricamente las complejas ecuaciones diferenciales de las geodésicas nulas de Einstein en el espaciotiempo curvo de la métrica de Kerr.",
+      "Para evitar aberraciones ópticas y artefactos de parpadeo en las imágenes de alta resolución, el equipo descubrió que no bastaba con calcular rayos de luz individuales, sino haces completos de fotones mediante técnicas de trazado de rayos diferenciales. Cada fotograma final requirió hasta cien horas de procesamiento informático en granjas de servidores masivas, manejando terabytes de datos para resolver con exactitud milimétrica la curvatura gravitacional y la propagación de cada longitud de onda visible.",
+      "El resultado de las simulaciones sorprendió a los propios científicos. Cuando el software produjo las primeras imágenes del agujero negro rodeado por un disco de acreción plano, Thorne y el equipo pensaron inicialmente que existía un error de programación en el código. Sin embargo, los cálculos revelaron una verdad geométrica: la formidable gravedad curva la luz de la parte posterior del disco por encima y por debajo del horizonte, envolviendo visualmente al agujero negro en una corona luminosa infinita.",
+      "Esta colaboración entre cine y astrofísica teórica derivó en la publicación de artículos científicos formales en prestigiosas revistas especializadas de física, tales como Classical and Quantum Gravity y American Journal of Physics. Las herramientas matemáticas desarrolladas para la película ayudaron a la comunidad científica internacional a visualizar con anticipación lo que años más tarde observaría el Event Horizon Telescope, demostrando el poder transformador de la simulación computacional avanzada."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La creación digital de los anillos brillantes que cruzan el agujero central desconcertó a los animadores. Kip Thorne tuvo que explicar que no existía un error de código. Era la física curvando el disco de gas alrededor de la esfera negra debido a la intensa gravedad.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Algunos fotogramas de esta secuencia requirieron cien horas de procesamiento continuo en redes de servidores. Así lograron completar una imagen brillante con los destellos luminosos correctos según las leyes de la geometría curvada. Esto estableció un nuevo estándar de fidelidad.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Para renderizar las escenas en formato IMAX a resolución de siete mil líneas horizontales con absoluta nitidez, los servidores de Double Negative procesaron simulaciones que alcanzaban hasta ochocientos terabytes de memoria total. Christopher Nolan proyectó estas secuencias directamente en pantallas gigantes durante el rodaje para que los actores Matthew McConaughey y Anne Hathaway pudieran contemplar la majestuosidad de Gargantúa en tiempo real en lugar de actuar frente a fondos verdes vacíos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las geodésicas nulas calculadas por el software DNGR representan las trayectorias que siguen los fotones en un espaciotiempo curvado por la masa y la rotación. Al aproximarse al horizonte de Cauchy en un agujero de Kerr, los haces luminosos sufren fenómenos de cáusticas gravitacionales complejas donde múltiples rayos procedentes de una misma fuente se cruzan, generando imágenes múltiples y anillos de Einstein deformados que revelan la topología subyacente de la geometría del espacio-tiempo."
+      }
     ],
-    fact: 'El motor de simulación descubrió una serie de huellas luminosas matemáticas en el vacío. Reveló que el agujero rotatorio no solo desviaba la luz, sino que atrapaba fotones dando giros infinitos a lo largo del tejido estelar. Fue un fenómeno óptico inédito en la investigación académica.'
+    "fact": "El artículo científico titulado «Gravitational lensing by spinning black holes in astrophysics, and in the movie Interstellar», publicado en febrero de 2015 por Oliver James, Eugénie von Tunzelmann, Paul Franklin y Kip Thorne en la revista Classical and Quantum Gravity, fue descargado más de cincuenta mil veces en sus primeros meses, convirtiéndose en uno de los artículos de física relativista computacional más leídos y citados de la década en todo el mundo."
   },
   {
-    id: 'singularidad',
-              bannerImage: '/assets/interstellar/infographic_m2/banner_singularidad.webp',
-    title: 'El Centro del Misterio',
-    color: '#00BCD4',
-    btnImage: '/assets/interstellar/infographic_m2/btn_singularidad.jpg',
-    image: '/assets/interstellar/infographic_m2/hero_singularidad.jpg',
-    content: [
-      'Una singularidad matemática es una región topológica donde enormes cantidades de materia se aplastan hasta una densidad infinita. Equivale a someter una montaña a trituración hasta ocupar un espacio menor que un grano de arena. Concentra toda su energía en un volumen cercano a cero, desafiando la física.',
-      'Cuando los físicos aplican las fórmulas de la relatividad general a esta región, las ecuaciones retornan errores conocidos como infinitos. Piensa en una calculadora intentando dividir por cero. En este entorno, las leyes de la física clásica pierden por completo su capacidad de predicción.',
-      'Entender la singularidad oscura requiere una teoría unificadora novedosa: la gravedad cuántica. Es como encajar la pieza de un rompecabezas que fusiona dos mapas dispares. Debe unir las reglas del mundo subatómico con la macroscópica curvatura del espacio-tiempo propuesta por Einstein.',
-      'En 1965, Roger Penrose presentó el teorema de la singularidad oculta. Logró detallar los túneles de esta región topológica sin entrar físicamente en ella. Utilizó argumentos innovadores que revolucionaron la cosmología matemática moderna y la astrofísica teórica contemporánea.',
-      'Dentro de un agujero giratorio tipo Kerr, esta densa estructura no colapsa sobre un punto estático. Adopta el perfil topológico de un anillo. Es un aro sideral compuesto de material que gira sin descanso. Crea un torbellino de gravedad repulsiva capaz de expulsar objetos hacia el exterior.'
+    "id": "singularidad",
+    "bannerImage": "/assets/interstellar/infographic_m2/banner_singularidad.webp",
+    "title": "El Centro del Misterio",
+    "color": "#00BCD4",
+    "btnImage": "/assets/interstellar/infographic_m2/btn_singularidad.jpg",
+    "image": "/assets/interstellar/infographic_m2/hero_singularidad.jpg",
+    "content": [
+      "En el corazón más profundo de cualquier agujero negro se encuentra la singularidad, una región donde la materia colapsada se concentra hasta límites donde las magnitudes físicas conocidas pierden todo sentido matemático. La densidad de la materia, la temperatura térmica y la curvatura del espaciotiempo alcanzan valores formalmente infinitos según las ecuaciones de la relatividad general clásica, provocando que la geometría continua del espacio se rompa de manera definitiva e irremediable.",
+      "La presencia de infinitos en las soluciones de Einstein indica que la relatividad general es una teoría incompleta en regímenes extremos, incapaz de describir lo que ocurre a escalas del orden de la longitud de Planck, equivalente a diez elevado a la menos treinta y cinco metros. A esta escala infinitesimal, los efectos de la incertidumbre cuántica dominan la dinámica del tejido espacial, exigiendo una teoría de gravedad cuántica aún no consolidada que unifique la gravitación con la física de partículas.",
+      "En los agujeros negros en rotación de Kerr, la estructura interna de la singularidad no es un punto adimensional esférico, sino una singularidad anular situada en el plano ecuatorial detrás del horizonte de Cauchy. Sin embargo, estudios teóricos dirigidos por Kip Thorne, Werner Israel y Eric Poisson descubrieron que este horizonte interno es inestable ante perturbaciones externas, dando lugar a una singularidad de choque volador inflacionario que destruiría cualquier materia ordinaria que intente atravesarla.",
+      "El renombrado matemático británico Roger Penrose propuso en 1969 la conjetura de la censura cósmica, postulando que la naturaleza siempre oculta estas singularidades detrás de un horizonte de sucesos para proteger la causalidad del resto del universo. Si una singularidad careciera de horizonte, se trataría de una singularidad desnuda, un fenómeno impredecible donde las leyes físicas se desmoronarían a la vista de cualquier observador externo, alterando el orden determinista de la ciencia natural.",
+      "Resolver el misterio de la singularidad es el santo grial de la física fundamental del siglo veintiuno. Modelos contemporáneos como la teoría de cuerdas y la gravedad cuántica de bucles sugieren que los infinitos son ilusiones matemáticas derivadas de suponer un espaciotiempo continuo: a nivel de Planck, el espacio estaría granulado en unidades mínimas de volumen, evitando el colapso a densidad infinita y reemplazando la singularidad con un núcleo de densidad cuántica máxima finita."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El final trascendental muestra a Cooper adentrándose en la singularidad cósmica. Una especie del futuro colocó un teseracto hiperdimensional para protegerlo de las fuerzas de marea. Esto le permite interactuar con la línea temporal a través de cuerdas gravitacionales de la cuarta dimensión.' },
-      { label: '¿Sabías que...?', icon: 'atom', text: 'Roger Penrose recibió el premio Nobel de física en 2020. Su trabajo demostró a la comunidad científica que los agujeros negros son objetos físicos reales y no anomalías matemáticas de soluciones idealizadas. Así cimentó su legado en la historia de la astrofísica.' }
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En el clímax de Interstellar, Cooper y el robot TARS caen a través del horizonte hacia el corazón de Gargantúa con el objetivo de medir los datos cuánticos de la singularidad. El profesor Brand necesitaba desesperadamente estos datos en la Tierra para completar su ecuación de la gravedad y salvar a la humanidad. Cooper sobrevive gracias a que seres tetradimensionales despliegan un teseracto en el interior del abismo, permitiendo que TARS capture los datos cuánticos sin ser destrozado por la singularidad."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El teorema de singularidades de Penrose-Hawking, formulado entre 1965 y 1970, demostró matemáticamente que las singularidades son consecuencias inevitables de la relatividad general bajo condiciones físicas razonables de energía positiva, y no meras anomalías causadas por simetrías perfectas. Por este trabajo pionero que transformó nuestra comprensión sobre el destino final de las estrellas gigantes, Roger Penrose fue galardonado con el Premio Nobel de Física en octubre del año 2020."
+      }
     ],
-    fact: 'Los cálculos cuánticos proponen que una singularidad interior podría no ser un destructivo agujero insondable. Podría representar un conducto dimensional vertiginoso hacia otras regiones de multiversos. Allí las constantes fundamentales del plano físico exhibirían valores distintos a los nuestros.'
-  },
+    "fact": "La escala de Planck representa la barrera física fundamental donde el espaciotiempo clásico deja de existir como concepto continuo. Definida por la longitud de Planck (1.616 × 10⁻³⁵ metros) y el tiempo de Planck (5.391 × 10⁻⁴⁴ segundos), cualquier intento de explorar distancias más diminutas requeriría tanta energía concentrada que crearía espontáneamente un microagujero negro, marcando el límite absoluto hasta donde las leyes conocidas de la física pueden aplicarse en el universo."
+  }
 ];
 
 // â”€â”€â”€ Gargantua Video Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

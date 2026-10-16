@@ -159,133 +159,229 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'senenmut',
-              bannerImage: '/assets/egypt/infographic_m6/banner_canopes.webp',
-    title: 'Senenmut: El Genio',
-    color: '#9B6BFF',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_senenmut.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_senenmut.webp',
-    content: [
-      'Senenmut vivió hace 3,500 años durante la dinastía XVIII. Fue un arquitecto y científico favorecido por la reina Hatshepsut.',
-      'Como arquitecto personal de Hatshepsut, diseñó su templo en Deir el-Bahari. Su tumba, sin embargo, guardaba un registro astronómico notable.',
-      'Senenmut se describía como maestro de las ciencias y artes. Diseñaba templos, calculaba posiciones estelares, supervisaba telares y coordinaba expediciones.',
-      'Recibió un privilegio inédito para alguien que no era de la realeza: el permiso para tener su tumba en el Valle de los Reyes.',
-      'Su tumba fue descubierta en 1925 por Herbert Winlock. Estaba esculpida en la colina de Deir el-Bahari, escondida detrás de la tumba principal.',
+    "id": "senenmut",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_canopes.webp",
+    "title": "Senenmut: El Genio",
+    "color": "#9B6BFF",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_senenmut.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_senenmut.webp",
+    "content": [
+      "Senenmut fue el arquitecto supremo y consejero de mayor confianza durante el reinado de la reina Hatshepsut en la Dinastía XVIII, cerca del año 1473 antes de nuestra era. Aunque procedía de una familia humilde en Hermonthis, su extraordinario talento para las matemáticas y la administración le permitió acumular más de ochenta títulos oficiales en la corte de Tebas. Su proyecto más emblemático fue el templo funerario de Djeser-Djeseru en Deir el-Bahari, una obra maestra de terrazas escalonadas perfectamente integrada en los acantilados de piedra caliza.",
+      "Más allá de sus logros en la arquitectura monumental, Senenmut poseía un profundo conocimiento de los movimientos celestes y los ciclos estelares. En su tumba no decorada para el enterramiento público, catalogada como TT 353 y situada justo debajo de la primera terraza del templo de Hatshepsut, mandó grabar en una cámara subterránea el plano celeste más antiguo que la arqueología moderna ha podido registrar íntegro. Este mapa no era un simple adorno místico, sino una compilación técnica de observaciones acumuladas durante siglos.",
+      "Los escribas que trabajaron bajo su supervisión trazaron diagramas celestes sobre la roca viva pulida, utilizando cuadrículas rojas para mantener proporciones milimétricas antes de aplicar la tinta negra definitiva. Senenmut quiso que su última morada fuera un reflejo directo del orden cósmico o Maat, donde el difunto pudiera orientarse entre las estrellas imperecederas tras la muerte física. Su tumba TT 353 desciende casi sesenta metros en la montaña tebana mediante galerías talladas con ángulos de inclinación muy rigurosos.",
+      "La relación de Senenmut con la familia real fue tan cercana que se le concedió la tutoría exclusiva de la princesa Neferure, heredera directa de Hatshepsut. Diversas esculturas cúbicas conservadas en el Museo Egipcio de El Cairo lo muestran envolviendo a la pequeña princesa con su manto sacerdotal, un honor sin precedentes para un cortesano que no pertenecía a la estirpe real. Su estatus privilegiado le dio acceso directo a los archivos secretos de los templos de Karnak y Heliópolis, donde residían los textos astronómicos.",
+      "El destino final de este polímata egipcio sigue siendo motivo de debate entre los egiptólogos contemporáneos. Hacia el final del reinado de Hatshepsut, sus monumentos sufrieron ataques deliberados y su sarcófago de cuarcita roja fue despedazado, lo que sugiere una caída política antes del ascenso en solitario de Tutmosis III. A pesar de esa damnatio memoriae parcial, su techo astronómico sobrevivió en la oscuridad subterránea para convertirse en el documento estelar más valioso del segundo milenio antes de Cristo."
     ],
-    fact: 'Senenmut tenía más de 80 títulos oficiales. Entre ellos: "Supervisor de los graneros de Amón", "Jefe de los trabajos del rey" y "Tutor de la princesa Neferura".',
+    "fact": "La cámara astronómica de la tumba TT 353 posee unas dimensiones de siete metros de longitud por tres metros de ancho, con una orientación de su eje principal alineada a noventa y un grados con respecto al norte geográfico, lo que permitía una sincronización simbólica con el orto solar en las fechas clave del calendario nilótico.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La tumba TT 353 de Senenmut fue descubierta en el año 1927 por la expedición arqueológica del Museo Metropolitano de Arte de Nueva York, dirigida por Herbert Winlock. Los excavadores encontraron la cámara funeraria a más de noventa metros de profundidad lineal dentro de la roca caliza tebana, intacta en sus pinturas pero desprovista de momia, lo que indica que el arquitecto jamás llegó a descansar en ese hipogeo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El yeso empleado como base para las pinturas del techo astronómico de Senenmut es sulfato de calcio dihidratado purificado mediante calcinación controlada a ciento cincuenta grados Celsius. Sobre esta capa se aplicaron pigmentos minerales estables: carbón vegetal finamente molido para el negro de humo y hematita hidratada para los trazos preliminares de alineación astronómica."
+      }
+    ]
   },
   {
-    id: 'techo-astronomico',
-              bannerImage: '/assets/egypt/infographic_m6/banner_cerebro-extraccion.webp',
-    title: 'El Techo del Cielo',
-    color: '#4A90D9',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_techo.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_techo.webp',
-    content: [
-      'Senenmut representó el cielo nocturno en el techo de su tumba. Es el primer mapa celeste completo conocido en la historia.',
-      'El mapa tiene dos mitades. La mitad norte muestra las constelaciones circumpolares. La mitad sur muestra los 36 Decanos que usaban para medir el tiempo.',
-      'Los artistas utilizaron pigmentos minerales de alta calidad: lapislázuli para el azul y ocre para el amarillo. Los colores siguen estables tras milenios.',
-      'Antes de este mapa, los egipcios representaban el cielo norte o sur por separado. Senenmut fue el primero en combinar ambos.',
-      'La entrada de la tumba estaba orientada de tal forma que, en ciertos días, la luz solar iluminaba el mapa celeste pintado en el techo.',
+    "id": "techo-astronomico",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_cerebro-extraccion.webp",
+    "title": "El Techo del Cielo",
+    "color": "#4A90D9",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_techo.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_techo.webp",
+    "content": [
+      "El techo astronómico de la tumba TT 353 de Senenmut representa la cúspide del conocimiento cosmológico del Imperio Nuevo egipcio. Esta obra magistral divide la bóveda celeste en dos paneles rectangulares perfectamente equilibrados, correspondientes al hemisferio norte y al hemisferio sur. En lugar de ofrecer una pintura puramente artística, el techo funciona como un mapa estelar esquemático y un instrumento cronográfico diseñado para regular los rituales nocturnos del templo y calcular las horas de oscuridad.",
+      "El panel norte está dominado por las constelaciones circumpolares, conocidas por los egipcios como las «estrellas que nunca mueren» o Ikhemu-sek, ya que jamás descendían por debajo del horizonte visible de Tebas. En el centro exacto de este cuadrante destaca la figura imponente de Meskhetiu, identificada con la pierna delantera de un toro y correspondiente al asterismo actual de la Osa Mayor. Alrededor de ella aparecen figuras mitológicas asociadas con deidades guardianas que controlaban el equilibrio estelar nocturno.",
+      "En contraste directo, el panel sur está consagrado a los treinta y seis decanos y al recorrido de los cuerpos celestes a lo largo del año nilótico. Aquí se representan con gran nitidez la constelación de Sah, que personifica a la figura de Orión como guardián de las almas, y la estrella Sopdet, conocida en la astronomía moderna como Sirio. Ambas entidades celestes navegan sobre barcas de papiro orientadas de este a oeste, reflejando el movimiento aparente de los astros causado por la rotación del planeta Tierra.",
+      "Los escribas reales utilizaron una tipografía jeroglífica minuciosa para etiquetar cada estrella individual y cada grupo de decanos con sus nombres canónicos y sus listas de ofrendas requeridas. Cada columna de texto actúa como una tabla horaria que permitía a los sacerdotes astrónomos determinar el paso de la noche observando qué decano culminaba en el meridiano local. Este sistema requería una corrección sistemática cada diez días debido al avance continuo del movimiento de traslación solar.",
+      "La precisión gráfica del techo de Senenmut permitió a los arqueoastrónomos del siglo veinte reconstruir el estado exacto del cielo nocturno sobre el valle de Tebas en el año 1470 antes de nuestra era. Gracias a los cálculos retrospectivos de precesión axial de la Tierra, los científicos modernos confirmaron que las posiciones relativas de las constelaciones y la inclinación del eje polar descritas en el techo corresponden de forma verídica a las observaciones empíricas realizadas durante el reinado de Hatshepsut."
     ],
-    fact: 'Equipos científicos analizan el techo con fotogrametría y escaneo láser 3D. Descubrieron capas invisibles que muestran las correcciones hechas por los artistas durante la obra.',
+    "fact": "El techo de Senenmut registra un total de cuatrocientas veintitrés estrellas individuales representadas mediante jeroglíficos de cinco puntas, distribuidas en dos campos celestes rectangulares que suman más de veintiún metros cuadrados de superficie pintada con pigmentos inorgánicos no degradados, preservando intacta la disposición iconográfica original ideada por los escribas reales tebanos.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El techo de Senenmut muestra una cuadrícula de círculos subdivididos en doce sectores angulares, considerados por los historiadores de la ciencia como los precursores directos de las cartas estelares polares. Cada sector está asociado a una festividad mensual del calendario civil egipcio y a una divinidad tutelar encargada de presidir las ceremonias litúrgicas nocturnas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "A causa del fenómeno astronómico de la precesión de los equinoccios, que desplaza el polo norte celeste a una tasa de un grado cada setenta y dos años aproximadamente, la estrella polar de la época de Senenmut no era Polaris, sino Thuban en la constelación de Draco, situándose a menos de dos grados del verdadero polo norte en el siglo quince antes de Cristo."
+      }
+    ]
   },
   {
-    id: 'planetas-barcas',
-              bannerImage: '/assets/egypt/infographic_m6/banner_conocimiento-medico.webp',
-    title: 'Planetas en Barcas',
-    color: '#FFB347',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_planetas.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_planetas.webp',
-    content: [
-      'Los egipcios identificaron los cinco planetas visibles, diferenciándolos de las estrellas fijas debido a su movimiento independiente.',
-      'El mapa de Senenmut representa a Mercurio, Venus, Marte, Júpiter y Saturno como barcas divinas que navegan por el cielo.',
-      'Cada planeta tenía una identidad divina. A Júpiter lo llamaban "Horus que ilumina las dos tierras" y a Saturno "Horus toro del cielo".',
-      'Las simulaciones astronómicas confirman que las posiciones de los planetas en el mapa corresponden a alineaciones que ocurrieron en los siglos XV y XVI a.C.',
-      'Es la representación más antigua conocida que distingue a los planetas como objetos errantes, un concepto desarrollado milenios después por los griegos.',
+    "id": "planetas-barcas",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_conocimiento-medico.webp",
+    "title": "Planetas en Barcas",
+    "color": "#FFB347",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_planetas.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_planetas.webp",
+    "content": [
+      "En la astronomía del Antiguo Egipto, los planetas visibles a simple vista no eran considerados simples puntos de luz inertes, sino manifestaciones vivas de deidades poderosas que recorrían el firmamento. En el techo astronómico de Senenmut, estos cuerpos celestes reciben el nombre genérico de «estrellas que nunca descansan» o Sebau-jechenu, en alusión directa a su movimiento errante a través de las constelaciones del fondo celeste, en contraste con las estrellas fijas de la bóveda nocturna.",
+      "Cuatro de los cinco planetas visibles conocidos en la antigüedad están explícitamente representados sobre barcas sagradas en el panel sur del techo funerario. Júpiter aparece personificado como «Horus que ilumina las Dos Tierras», navegando majestuosamente con cabeza de halcón coronada por una estrella. Saturno está identificado como «Horus, el toro del cielo», un protector cósmico de ritmo pausado cuyo ciclo orbital de veintinueve años y medio era ya conocido por los observadores de los templos tebanos.",
+      "Mercurio figura bajo la advocación del dios Seth, asociado a menudo con los crepúsculos rápidos y los cambios imprevistos debido a su cercanía angular con el Sol y su visibilidad esquiva sobre el horizonte. Por su parte, Venus aparece como una barca de doble proa presidida por el dios Bennu, el ave fénix primordial asociada con la renovación de la luz y el renacimiento cotidiano. Los sacerdotes registraban tanto sus apariciones matutinas como vespertinas con asombrosa precisión matemática.",
+      "Un enigma fascinante del techo de Senenmut es la ausencia aparente del planeta Marte en su posición convencional entre las barcas celestes. En su lugar, el registro gráfico muestra un espacio vacío o una barca desocupada identificada jeroglíficamente como «Horus el rojo» o Hor-desher. Diversos arqueoastrónomos sugieren que durante el año exacto en que se diseñó el techo, Marte se encontraba en conjunción helíaca con el Sol, desapareciendo del cielo nocturno durante un período prolongado de invisibilidad.",
+      "La navegación de los planetas sobre barcas reflejaba el principio cosmológico de que el cielo era un océano celestial infinito por donde las divinidades viajaban en navíos construidos de madera dorada. Esta conceptualización permitía a los astrónomos egipcios enseñar la mecánica celeste mediante alegorías náuticas familiares para cualquier habitante de las riberas del Nilo, integrando la observación geométrica rigurosa con el simbolismo mitológico oficial de la corte faraónica."
     ],
-    fact: 'Venus se consideraba "estrella de la mañana" o "estrella de la tarde" según su posición en la órbita terrestre. Los egipcios tardaron en notar que se trataba del mismo cuerpo celeste.',
+    "fact": "El techo de Senenmut documenta formalmente cuatro planetas mayores con un orden secuencial que coincide con sus velocidades angulares promedio observadas desde Tebas: Mercurio con ochenta y ocho días de período orbital, Venus con doscientos veinticinco días, Júpiter con doce años y Saturno con veintinueve coma cinco años.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los astrónomos de la corte tebana sabían distinguir a la perfección entre los planetas y las estrellas fijas gracias a que los planetas no centellean apreciablemente a simple vista. Los egipcios llamaban a este fenómeno «la mirada fija de los dioses», diferenciándola del titileo rápido provocado por la turbulencia térmica de la atmósfera terrestre sobre las estrellas lejanas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El movimiento retrógrado aparente de Marte, provocado porque la Tierra orbita el Sol a mayor velocidad angular y adelanta al planeta rojo cada setecientos ochenta días, fue documentado por escribas egipcios como un «retroceso sagrado», siendo la anomalía cinética más compleja que intentaron cartografiar sin modelos heliocéntricos."
+      }
+    ]
   },
   {
-    id: 'constelaciones',
-              bannerImage: '/assets/egypt/infographic_m6/banner_momificacion-proceso.webp',
-    title: 'Monstruos del Cielo',
-    color: '#4CAF50',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_constelaciones.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_constelaciones.webp',
-    content: [
-      'Los egipcios veían figuras diferentes en las estrellas. Donde identificamos la Osa Mayor, ellos veían a "Mesjetiu", la pata de un toro. Draco era un hipopótamo y un cocodrilo.',
-      'La mitad norte del techo muestra las constelaciones circumpolares. Estas nunca desaparecen bajo el horizonte, por lo que eran consideradas inmortales.',
-      'Mesjetiu representaba la pata de un toro sagrado. Taweret, la diosa hipopótamo, sujetaba la pata del toro con una cadena estelar para mantener el orden.',
-      'El cocodrilo celeste estaba asociado a Sobek, dios del agua. Según la creencia, el toro, el hipopótamo y el cocodrilo mantenían el equilibrio cósmico.',
-      'Cada cultura interpreta el cielo según su entorno. Los egipcios vieron animales propios del Nilo en las mismas estrellas que otros pueblos interpretaron de forma distinta.',
+    "id": "constelaciones",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_momificacion-proceso.webp",
+    "title": "Monstruos del Cielo",
+    "color": "#4CAF50",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_constelaciones.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_constelaciones.webp",
+    "content": [
+      "El panel norte del techo astronómico de Senenmut alberga algunas de las representaciones más singulares de la iconografía celeste egipcia. En esta sección de la tumba, las estrellas boreales se agrupan en figuras híbridas que los egiptólogos decimonónicos bautizaron popularmente como monstruos celestiales. Lejos de ser invenciones terroríficas, estas formas correspondían a deidades cósmicas benévolas encargadas de encadenar las fuerzas del desorden y mantener la estabilidad perpetua del universo.",
+      "La figura central de este conjunto es la diosa Tueris o Ipet, representada como un gigantesco hipopótamo hembra erguido sobre sus patas traseras, con cola de cocodrilo y apoyada sobre una estaca de amarre conocida como Menit. Esta figura se corresponde aproximadamente con partes de las constelaciones modernas de Draco, Osa Menor y Boötes. Su función astronómica era vigilar el polo norte del cielo y asegurar que la pata del toro cósmico jamás pudiera descender más allá del horizonte terrenal.",
+      "Frente a Tueris aparece Meskhetiu, la pata de toro que contiene las estrellas principales de la Osa Mayor. Según los Textos de las Pirámides y los Textos de los Sarcófagos, esta constelación representaba la forma astral del dios Seth. Para impedir que Seth perturbara el orden universal, la diosa hipopótamo lo mantenía atado con una cadena de oro invisible a los postes del eje polar, un simbolismo visual brillante para explicar el movimiento circular continuo de las estrellas circumpolares.",
+      "Junto a estas figuras titánicas aparecen representaciones del Halcón divino con cabeza coronada, identificado como An, y un hombre con lanza que atraviesa un cocodrilo cósmico. Cada uno de estos personajes estelares servía como punto de referencia visual para los sacerdotes que realizaban el ritual de «Apertura de la Boca» durante los funerales faraónicos. La azuela ritual de hierro meteórico empleada en esa liturgia imitaba intencionadamente la curvatura geométrica de la constelación de Meskhetiu.",
+      "La cartografía del cielo septentrional en la tumba de Senenmut demuestra que Egipto poseía un sistema de constelaciones propio y completamente autónomo, desarrollado mil años antes de que la influencia babilónica y griega introdujera el zodiaco circular tradicional en el valle del Nilo. Este mapa boreal preservó la memoria de una tradición náutica y pastoril originada en los pastizales saharianos durante el período neolítico predinástico."
     ],
-    fact: 'La constelación Mesjetiu (Osa Mayor) aparece en ataúdes y techos de templos. Sus estrellas apuntan al Polo Norte celeste, sirviendo de brújula para orientar los monumentos.',
+    "fact": "La figura de la diosa hipopótamo Tueris en el techo de Senenmut mide noventa y dos centímetros de altura en el estuco subterráneo y está acompañada por catorce estrellas doradas alineadas sobre su espalda, conformando el registro más antiguo de la constelación precursora de Draco en la arqueología del Nilo.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La azuela ritual utilizada por los sacerdotes de Amun para abrir la boca y los ojos de la momia real tenía exactamente la misma forma que el asterismo de la Osa Mayor. Al tocar el rostro del difunto con este instrumento de hierro estelar, se creía que la persona absorbía la inmortalidad rotatoria de las estrellas imperecederas del norte."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El movimiento aparente circumpolar alrededor del polo norte celeste es un efecto geométrico causado por la inclinación de veintitrés grados y veintisiete minutos del eje de rotación de la Tierra. A la latitud de Tebas, situada a veinticinco coma siete grados norte, cualquier astro a menos de esa distancia angular del polo jamás se oculta en el horizonte."
+      }
+    ]
   },
   {
-    id: 'decanos',
-              bannerImage: '/assets/egypt/infographic_m6/banner_natron-sal.webp',
-    title: 'El Reloj de Estrellas',
-    color: '#E57373',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_decanos.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_decanos.webp',
-    content: [
-      'Los egipcios dividieron el cielo en 36 grupos de estrellas llamados Decanos. Cada grupo gobernaba 10 días del año y servía como reloj nocturno.',
-      'Los sacerdotes miraban el horizonte este. Cuando un Decano específico aparecía, indicaba el inicio de una nueva hora. Así, dividieron la noche en 12 horas.',
-      'El techo de Senenmut exhibe los 36 Decanos en la mitad sur del mapa. Combinados con las 12 horas diurnas medidas por relojes de sol, formaron el día de 24 horas.',
-      'El sistema de 24 horas que utilizamos actualmente proviene de este modelo egipcio. Griegos y romanos adoptaron esta división del tiempo.',
-      'Los Decanos también estructuraban el calendario. 36 Decanos multiplicados por 10 días sumaban 360 días. Añadían 5 días extras para completar el año solar de 365 días.',
+    "id": "decanos",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_natron-sal.webp",
+    "title": "El Reloj de Estrellas",
+    "color": "#E57373",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_decanos.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_decanos.webp",
+    "content": [
+      "El sistema de los decanos constituía el corazón tecnológico del cómputo del tiempo nocturno en el Antiguo Egipto. Los decanos eran grupos de estrellas individuales o pequeños asterismos ubicados en una banda celeste específica cercana a la eclíptica. A lo largo del año, cada decano realizaba su orto helíaco, es decir, su primera aparición matutina sobre el horizonte oriental justo antes de la salida del Sol, con un intervalo de exactamente diez días con respecto al decano precedente.",
+      "En el techo de Senenmut figuran los treinta y seis decanos tradicionales organizados en columnas verticales ordenadas de derecha a izquierda. Debido a que el año civil egipcio constaba de trescientos sesenta días organizados en treinta y seis semanas de diez días llamadas décadas, más cinco días adicionales llamados epagómenos, el ascenso sucesivo de estos grupos estelares permitía sincronizar con rigor matemático el calendario oficial del Estado con la rotación física de la Tierra.",
+      "Durante la noche, los sacerdotes astrónomos observaban la culminación o el surgimiento de doce decanos sucesivos a lo largo de las horas de oscuridad. Dado que la duración del período nocturno varía a lo largo de las estaciones del año debido a la inclinación del eje terrestre, las horas decánicas no tenían una duración fija de sesenta minutos modernos, sino que se expandían en invierno y se contraían en verano, dando origen al concepto de «horas temporales» o estacionales.",
+      "El primer decano de la lista canónica de Senenmut está encabezado por Kenemet, asociado a la estrella Sirio y a la crecida anual del río Nilo. Cada decano cuenta con su nombre litúrgico inscrito en caligrafía jeroglífica cursiva, su representación simbólica antropomorfa o zoomorfa y una relación detallada de las enfermedades o desgracias climáticas que sus deidades protectoras podían desencadenar si no se realizaban los rituales propiciatorios correspondientes en los templos.",
+      "Este impresionante reloj sideral grabado por Senenmut representa la culminación de una tradición que comenzó durante el Reino Antiguo en las tapas de madera de los ataúdes de Asiut. Sin embargo, en la tumba TT 353, el sistema alcanzó una madurez científica sin igual, despojándose de muchas ambigüedades gráficas antiguas y sirviendo como modelo canónico para todos los techos astronómicos reales construidos posteriormente en el Valle de los Reyes durante las dinastías XIX y XX."
     ],
-    fact: 'La aparición de la estrella Sirio (Sopdet) en el horizonte marcaba el inicio del año nuevo egipcio. Este evento coincidía con la inundación anual del Nilo.',
+    "fact": "El catálogo de decanos en la tumba de Senenmut incluye treinta y seis columnas jeroglíficas principales más doce columnas auxiliares de corrección calendárica, registrando un total de doscientos ochenta y ocho intervalos temporales equivalentes al ciclo anual completo del cómputo sacerdotal tebano, estableciendo una correspondencia matemática rigurosa entre las constelaciones ecuatoriales y las horas de oscuridad.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los ataúdes de madera de la Dinastía XI hallados en la necrópolis de Asiut ya contenían «relojes estelares diagonales» pintados en el reverso de sus tapas. Estos diagramas permitían al difunto consultar la hora en el inframundo mirando hacia el cielo nocturno simplemente identificando cuál de los decanos asomaba en el horizonte en cada vigilia."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Cada decano ocupa aproximadamente diez grados de longitud celeste a lo largo del plano ecuatorial. Debido a que la Tierra gira trescientos sesenta grados en veinticuatro horas sidéreas, un decano cruza el meridiano celeste cada cuarenta minutos de tiempo medio, sirviendo como un cronómetro natural sumamente regular para las observaciones sacerdotales."
+      }
+    ]
   },
   {
-    id: 'hatshepsut',
-              bannerImage: '/assets/egypt/infographic_m6/banner_tomografia-momia.webp',
-    title: 'La Reina Faraón',
-    color: '#E91E63',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_hatshepsut.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_hatshepsut.webp',
-    content: [
-      'Hatshepsut gobernó Egipto como faraón. Aunque las mujeres egipcias poseían derechos como heredar o hacer negocios, gobernar con poder absoluto era excepcional.',
-      'En lugar de campañas militares, Hatshepsut priorizó la expansión comercial. Organizó una expedición al País de Punt para obtener incienso, oro y marfil.',
-      'Para consolidar su legitimidad, adoptó símbolos del poder faraónico, como la barba postiza y el tocado real. Usó estas insignias para ser reconocida como gobernante.',
-      'El templo de Deir el-Bahari, diseñado por Senenmut, consta de tres terrazas escalonadas integradas en el acantilado. Sus proporciones matemáticas usan la proporción áurea.',
-      'Tras su muerte, su sucesor Tutmosis III borró su nombre de los monumentos. La tumba secreta de Senenmut sobrevivió y conservó el mapa celeste intacto.',
+    "id": "hatshepsut",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_tomografia-momia.webp",
+    "title": "La Reina Faraón",
+    "color": "#E91E63",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_hatshepsut.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_hatshepsut.webp",
+    "content": [
+      "El techo astronómico de Senenmut es inseparable del contexto político y cultural extraordinario forjado por el reinado de Maatkare Hatshepsut. Como una de las pocas mujeres en asumir los plenos poderes y atributos de un faraón masculino en la historia del Antiguo Egipto, Hatshepsut impulsó un florecimiento artístico, arquitectónico y científico sin precedentes. Su reinado requería una legitimación teológica constante, la cual encontró en la alineación precisa de sus monumentos con los astros.",
+      "Hatshepsut proclamó ser la hija carnal del dios Amun-Ra, concebida para restaurar el orden divino tras el caos del período hicso. Para materializar este vínculo con el dios solar, encomendó a Senenmut la construcción del templo de Djeser-Djeseru, diseñado de tal forma que el eje central del santuario principal quedara alineado de manera matemática con el orto solar durante el solsticio de invierno. Esta orientación permitía que los rayos del sol naciente penetraran hasta la cámara más recóndita del santuario.",
+      "Asimismo, la reina ordenó la extracción, transporte y erección de cuatro gigantescos obeliscos de granito rojo procedentes de las canteras de Asuán para embellecer el gran templo de Amun en Karnak. Estas agujas monolíticas no solo eran ofrendas piadosas, sino gigantescos gnomones solares cuyas sombras proyectadas sobre patios pavimentados permitían a los astrónomos reales registrar con exactitud matemática los equinoccios, los solsticios y las horas culminantes del día.",
+      "La colaboración intelectual entre Hatshepsut y Senenmut transformó a la corte tebana en un núcleo vibrante de experimentación técnica. La expedición comercial a la mítica tierra de Punt, documentada con lujo de detalles en los relieves policromados de Deir el-Bahari, requirió conocimientos astronómicos náuticos avanzados para navegar por las aguas del Mar Rojo guiándose exclusivamente por la altura estelar de Canopo y la Estrella Polar en el horizonte meridional.",
+      "A pesar de los intentos posteriores por borrar el nombre de Hatshepsut de los monumentos oficiales durante las últimas décadas del reinado de Tutmosis III, las evidencias científicas de su época permanecieron imborrables. El techo astronómico de la tumba de su arquitecto sobrevivió precisamente por encontrarse oculto bajo tierra, preservando el testimonio de una era donde la ciencia observacional y el poder político alcanzaron una simbiosis perfecta."
     ],
-    fact: 'Hatshepsut promovió un periodo de prosperidad durante su reinado de 22 años. Construyó múltiples monumentos. Tutmosis III eliminó su nombre para justificar su propia sucesión.',
+    "fact": "El obelisco en pie de Hatshepsut en el templo de Karnak alcanza una altura de veintinueve metros y cincuenta y seis centímetros con un peso estimado de trescientas veintitrés toneladas de granito sienita, manteniendo un error vertical menor a medio grado tras tres mil quinientos años de antigüedad, constituyendo uno de los mayores monolitos erigidos en la historia de la arquitectura egipcia del Imperio Nuevo.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Para erigir los obeliscos de Karnak de casi treinta metros de altura y más de trescientas toneladas de peso, los ingenieros de Hatshepsut tardaron tan solo siete meses desde su extracción en la cantera de Asuán hasta su erección final, una proeza logística y física que asombra a los ingenieros mecánicos de la actualidad."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El eje monumental de Djeser-Djeseru presenta un azimut de ciento dieciséis grados y medio respecto al norte astronómico. Esta orientación garantiza que el veintiuno de diciembre, día del solsticio de invierno, la luz solar directa ilumine exactamente la estatua de Amun ubicada al fondo de la capilla de la reina durante diecinueve minutos matutinos."
+      }
+    ]
   },
   {
-    id: 'ciencia-moderna',
-              bannerImage: '/assets/egypt/infographic_m6/banner_vendaje-momia.webp',
-    title: 'Descifrando el Mapa',
-    color: '#00BCD4',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_ciencia.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_ciencia.webp',
-    content: [
-      'Durante siglos, el mapa de Senenmut fue un misterio. Los investigadores reconocían su temática astronómica, pero no lograban interpretar los símbolos planetarios y estelares.',
-      'El uso de simulaciones astronómicas permitió recrear el cielo nocturno visible desde Luxor hace 3,500 años. Al comparar los modelos, identificaron correlaciones precisas.',
-      'Los resultados indican que el mapa representa una fecha específica del reinado de Hatshepsut. Las posiciones planetarias pintadas coinciden con alineaciones reales de esa época.',
-      'El Techo Astronómico de Seti I, creado 200 años después, es una versión detallada del mapa de Senenmut. Esto demuestra la transmisión y mejora del conocimiento científico egipcio.',
-      'La identificación de los símbolos continúa en investigación. Recientes estudios sugieren qué figuras representan a planetas como Júpiter y Venus.',
+    "id": "ciencia-moderna",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_vendaje-momia.webp",
+    "title": "Descifrando el Mapa",
+    "color": "#00BCD4",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_ciencia.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_ciencia.webp",
+    "content": [
+      "El descubrimiento y estudio del techo astronómico de Senenmut marcó un hito fundacional para la egiptología moderna y el nacimiento formal de la arqueoastronomía como disciplina empírica. Cuando el egiptólogo estadounidense Herbert Winlock descubrió la cámara en 1927, comprendió de inmediato que se encontraba ante un documento irrepetible. Sin embargo, descifrar el significado exacto de sus diagramas requirió décadas de colaboración interdisciplinaria entre arqueólogos, filólogos y astrofísicos.",
+      "En la década de 1960, los investigadores Otto Neugebauer y Richard Parker publicaron su monumental obra de tres volúmenes titulada «Egyptian Astronomical Texts», donde analizaron matemáticamente cada uno de los jeroglíficos y esquemas estelares de la tumba TT 353. Este estudio monumental permitió clasificar las familias de decanos y demostrar que los egipcios no utilizaban el sistema de constelaciones babilónico de doce signos zodiacales, sino una división vernácula del cielo en treinta y seis regiones.",
+      "Más recientemente, los trabajos del arqueoastrónomo español Juan Antonio Belmonte y el astrofísico egipcio Mosalam Shaltout han empleado escaneos láser tridimensionales y simulaciones de planetario computerizadas para revisar las coordenadas del techo. Estos estudios contemporáneos demostraron que los trazos de Senenmut reflejan la posición real del cielo tebano entre los años 1478 y 1460 antes de nuestra era, confirmando las cronologías dinásticas derivadas de la egiptología documental.",
+      "Los análisis físico-químicos no invasivos de fluorescencia de rayos X y espectroscopia Raman realizados sobre las paredes de la tumba han revelado datos asombrosos sobre las técnicas pictóricas del Imperio Nuevo. Los artesanos utilizaron azul egipcio sintético, un silicato de cobre y calcio considerado el primer pigmento artificial fabricado por la humanidad, para pintar los jeroglíficos acuáticos de las barcas divinas y las estrellas que simbolizan la inmensidad del éter.",
+      "Hoy en día, la tumba TT 353 de Senenmut permanece cerrada al turismo masivo para evitar que la humedad generada por la respiración humana y los cambios térmicos deterioren los delicados pigmentos minerales sobre el estuco. La digitalización fotogramétrica de ultra alta resolución ha permitido crear modelos tridimensionales interactivos que científicos y estudiantes de todo el mundo pueden explorar sin poner en riesgo la preservación de esta joya cósmica."
     ],
-    fact: 'El orto helíaco de Sirio era la observación astronómica central del calendario. Los científicos calculan que en tiempos de Senenmut este evento ocurría a mediados de julio.',
+    "fact": "La documentación fotogramétrica moderna de la tumba TT 353 compila más de doce mil quinientas fotografías de sesenta megapíxeles cada una, generando una nube de puntos tridimensional con una resolución submilimétrica de cero coma dos milímetros por píxel en toda la superficie del techo, permitiendo identificar trazos de pincel y pigmentos minerales invisibles para el ojo humano.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "El célebre egiptólogo Otto Neugebauer, una de las mentes más brillantes de la historia de la ciencia matemática, dedicó más de veinte años de su vida a comparar minuciosamente los jeroglíficos del techo de Senenmut con textos astronómicos cuneiformes de Mesopotamia y papiros demóticos tardíos, publicando en 1960 el catálogo canónico de textos astronómicos egipcios más exhaustivo de la historia."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El pigmento azul egipcio empleado en la tumba (cuprorivaita, CaCuSi4O10) posee la propiedad óptica singular de emitir radiación fluorescente en el espectro infrarrojo cercano (910 nanómetros) cuando es iluminado con luz visible, lo que permite detectar trazas invisibles de pintura original mediante cámaras multiespectrales."
+      }
+    ]
   },
   {
-    id: 'legado-cosmos',
-              bannerImage: '/assets/egypt/infographic_m6/banner_vida-eterna.webp',
-    title: 'El Legado Cósmico',
-    color: '#AB47BC',
-    btnImage: '/assets/egypt/infographic_senenmut/btn_legado.webp',
-    image: '/assets/egypt/infographic_senenmut/hero_legado.webp',
-    content: [
-      'El mapa de Senenmut influyó en su cultura. Sacerdotes posteriores copiaron y ampliaron sus representaciones en tumbas y templos clave.',
-      'Comerciantes fenicios transmitieron la astronomía egipcia al Mediterráneo. Filósofos griegos la estudiaron, originando la ciencia astronómica que Ptolomeo plasmaría en Alejandría.',
-      'La división del día en 24 horas y el año de 365 días provienen de Egipto. Los romanos adoptaron y adaptaron este sistema de tiempo.',
-      'Los sistemas actuales de medición de tiempo conservan los conceptos originados por los sacerdotes egipcios al observar los Decanos.',
-      'El mapa muestra el esfuerzo humano por interpretar el universo. Los registros astronómicos de Senenmut evidencian el avance científico alcanzado por su civilización.',
+    "id": "legado-cosmos",
+    "bannerImage": "/assets/egypt/infographic_m6/banner_vida-eterna.webp",
+    "title": "El Legado Cósmico",
+    "color": "#AB47BC",
+    "btnImage": "/assets/egypt/infographic_senenmut/btn_legado.webp",
+    "image": "/assets/egypt/infographic_senenmut/hero_legado.webp",
+    "content": [
+      "El techo astronómico ideado por Senenmut hace más de tres mil cuatrocientos años no fue un logro aislado, sino el punto de partida de una tradición que influyó de manera directa en el desarrollo de la astronomía en el Mediterráneo antiguo. Las observaciones minuciosas de los decanos y la división de la noche en doce segmentos estelares fueron asimiladas siglos después por los astrónomos griegos de Alejandría, como Hiparco y Claudio Ptolomeo, dando origen a la división horaria de veinticuatro partes que rige hoy nuestras vidas.",
+      "La concepción egipcia de medir el tiempo a través de las estrellas imperecederas sentó las bases de los primeros calendarios solares rigurosos. Mientras que civilizaciones coetáneas como Mesopotamia basaban sus cómputos en calendarios lunares complejos que requerían intercalar meses enteros con frecuencia caótica, el calendario solar nilótico de trescientos sesenta y cinco días documentado en las paredes de Senenmut demostró ser tan eficiente que Julio César lo adoptó para Roma en el año cuarenta y seis antes de Cristo.",
+      "Asimismo, el techo de Senenmut inauguró una era de techos cosmológicos monumentales que continuaría en las tumbas de los faraones Seti I, Ramsés II, Ramsés VI y Ramsés IX en el Valle de los Reyes. En cada una de estas obras maestras posteriores, los escribas continuaron perfeccionando los catálogos estelares iniciados por el arquitecto de Hatshepsut, convirtiendo la piedra subterránea en enciclopedias eternas del cosmos.",
+      "Para los jóvenes astrónomos y científicos contemporáneos, la tumba de Senenmut constituye un recordatorio inspirador de cómo la curiosidad humana y la observación paciente de la naturaleza pueden desentrañar los secretos del firmamento sin necesidad de tecnología moderna. Con instrumentos ópticos simples como varas de avistamiento, plomadas de precisión y una rigurosa metodología geométrica, los sabios tebanos lograron cartografiar el universo con asombrosa fidelidad.",
+      "El legado de Senenmut perdura como un puente entre la arqueología antigua y la exploración espacial moderna. Cuando las sondas espaciales de la actualidad surcan el sistema solar fotografiando los anillos de Saturno o la atmósfera densa de Júpiter, están siguiendo la misma estela de asombro y cálculo matemático que aquel cortesano de Hatshepsut grabó con carbón y hematita en la profunda penumbra de la montaña de Tebas."
     ],
-    fact: 'El calendario egipcio de 365 días fue adoptado por los romanos. Su error de un cuarto de día anual fue corregido por Julio César al incorporar el año bisiesto.',
-  },
+    "fact": "La tradición astronómica iniciada formalmente por el techo de Senenmut perduró durante más de mil quinientos años en Egipto, registrándose en al menos setenta y dos techos astronómicos mayores distribuidos en templos faraónicos, capillas tebanas y tumbas reales del Imperio Nuevo y Período Tardío, evidenciando la asombrosa continuidad doctrinal y litúrgica del conocimiento sideral del Nilo.",
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La división moderna del día completo en veinticuatro horas proviene directamente de la combinación egipcia de diez horas diurnas calculadas por gnomon solar, dos horas crepusculares matutina y vespertina, y doce horas nocturnas reguladas por la culminación meridiana de los decanos estelares de Senenmut."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cálculo del año civil egipcio de trescientos sesenta y cinco días acumulaba un desfase de un día cada cuatro años respecto al año trópico real (365,2422 días). Este desplazamiento constante generaba el célebre «ciclo sótico» de mil cuatrocientos sesenta años, en el cual el orto de Sirio volvía a coincidir con el primer día del calendario civil."
+      }
+    ]
+  }
 ];
 
 // â”€â”€â”€ Star Field Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

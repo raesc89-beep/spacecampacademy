@@ -86,145 +86,201 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'caracol-estructura',
-              bannerImage: '/assets/maya/infographic_m1/banner_ciudades-estado.webp',
-    title: 'La Estructura',
-    color: '#4CAF50',
-    btnImage: '/assets/maya/infographic_m1/btn_caracol-estructura.jpg',
-    image: '/assets/maya/infographic_m1/hero_caracol-estructura.jpg',
-    content: [
-      'Imagina una torre de piedra con forma de caracol. En el centro de Chichén Itzá, los mayas construyeron esto hace más de mil años. Esta torre circular mide trece metros de altura y descansa sobre dos plataformas rectangulares. A diferencia de las pirámides cuadradas, este edificio tiene una forma cilíndrica similar a los observatorios modernos.',
-      'El nombre "El Caracol" se lo dieron los exploradores españoles, no los arquitectos mayas. Lo llamaron así porque dentro de la torre existe una escalera que sube dando vueltas, como la espiral de un caracol. Esta escalera permitía a los astrónomos subir hasta la cámara superior. Era su cuarto de observación.',
-      'La construcción del Caracol fue un proyecto que se realizó en varias etapas. Imagina que construyes un castillo de bloques y le agregas torres encima. Los constructores mayas modificaron la torre durante décadas. Añadieron plataformas y cambiaron su forma externa para perfeccionar su función astronómica. Esto demuestra lo importante que era este edificio.',
-      'En la parte alta de la torre, la cúpula original ya no existe, pero quedan partes de los muros con ventanas. El diseño circular de la torre es ideal para un observatorio porque permite mirar libremente hacia cualquier dirección del horizonte abierto. En un edificio cuadrado, las esquinas bloquearían la vista.',
-      'El edificio es una maravilla de la ingeniería antigua. Para sostener el peso de la torre, los arquitectos mayas inventaron un sistema de anillos concéntricos en el interior, creando pasillos circulares que soportan la estructura superior. Usaron un mortero de cal y piedras talladas con una precisión increíble.'
+    "id": "caracol-estructura",
+    "bannerImage": "/assets/maya/infographic_m1/banner_ciudades-estado.webp",
+    "title": "La Estructura",
+    "color": "#4CAF50",
+    "btnImage": "/assets/maya/infographic_m1/btn_caracol-estructura.jpg",
+    "image": "/assets/maya/infographic_m1/hero_caracol-estructura.jpg",
+    "content": [
+      "El Caracol es uno de los edificios más extraordinarios de la antigua ciudad de Chichén Itzá, ubicada en la península de Yucatán. Su nombre popular proviene de una escalera interna de caracol que asciende hacia la cámara superior de observación. Los arqueólogos fechan sus fases constructivas principales entre los años 800 y 1000 d.C., en el periodo Clásico Terminal mesoamericano. Esta torre cilíndrica se erige sobre dos amplias plataformas rectangulares superpuestas que nivelan el terreno kárstico original.",
+      "La plataforma basal inferior mide aproximadamente 67 metros de longitud por 52 metros de ancho, alcanzando una altura de 6 metros sobre la plaza circundante. Encima de ella reposa una segunda plataforma rectangular de 24 metros por 21 metros que eleva el conjunto otros 4 metros. La torre redonda principal tiene un diámetro exterior de 11 metros y conserva una elevación de 13 metros. En su época de máximo esplendor, la estructura superaba los 16 metros de altura total respecto al suelo de la plaza ceremonial.",
+      "A diferencia de la mayoría de los templos piramidales mayas de base cuadrangular, El Caracol adopta una planta circular concéntrica poco habitual en el área maya. Dos corredores anulares concéntricos techados con bóvedas mayas o falsos arcos rodean un núcleo macizo de mampostería de piedra caliza. Este núcleo central alberga el conducto helicoidal estrecho que da acceso al recinto superior. Esta singularidad arquitectónica refleja una clara función especializada orientada a la observación celeste panorámica.",
+      "Los muros de la torre están construidos con bloques regulares de piedra caliza unidos mediante mortero de cal y sascab, un polvo mineral local. En su exterior se aprecian frisos tallados con representaciones del dios de la lluvia Chaac, reconocible por su nariz curvada, alternados con máscaras de deidades celestes asociadas al planeta Venus. El estuco original que cubría las paredes exteriores estaba pintado en vivos tonos rojos, azules y verdes, otorgando un impacto visual imponente a la lejanía selvática.",
+      "Las excavaciones dirigidas por la Institución Carnegie de Washington entre 1925 y 1931 revelaron que el edificio fue reconstruido y ampliado al menos en cuatro ocasiones sucesivas. Cada remodelación añadía contrafuertes y plataformas adicionales para corregir desniveles y ajustar con mayor precisión las líneas de mira hacia el horizonte. Esta evolución constructiva demuestra que los astrónomos mayas refinaron sus puntos de referencia físicos conforme acumulaban generaciones continuas de registros observacionales."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El interior del edificio tiene un pasillo circular que crea un efecto acústico notable. Si hablas en voz baja en un lado del pasillo, la pared refleja el sonido hasta el lado opuesto. Los arqueólogos creen que era el lugar perfecto para que los sacerdotes se comunicaran en secreto.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La piedra caliza que usaron los trabajadores para construir El Caracol es absorbente y retiene humedad. Para proteger las paredes, los mayas cubrieron el edificio con un estuco liso pintado de color rojo intenso. Así resplandecía bajo el sol de la península yucateca.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La escalera interna helicoidal que da nombre a El Caracol es un pasaje sumamente angosto y empinado que serpentea por el corazón macizo de mampostería. Su diseño permitía el ascenso individual y controlado de los sacerdotes hacia la cámara alta en completa penumbra. Para sus prolongadas vigilias nocturnas previas al amanecer, los observadores portaban pequeñas antorchas impregnadas de resina de copal aromático que iluminaban tenuemente los escalones desgastados de piedra caliza."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los estudios arqueoastronómicos pioneros del investigador Anthony Aveni demostraron que la plataforma basal de El Caracol no sigue la cuadrícula urbana predominante de Chichén Itzá. Su marcada desviación intencional de 27.5 grados hacia el norte respecto al oeste geográfico coincide exactamente con el punto de puesta más septentrional alcanzado por el planeta Venus en el horizonte local cada ocho años solares, evidenciando una planificación deliberada."
+      }
     ],
-    fact: 'Aunque parece una torre solitaria hoy en día, El Caracol originalmente estaba rodeado por incensarios y estelas talladas. Los arqueólogos encontraron evidencias de que aquí se realizaban ceremonias bajo la luz de las estrellas.',
+    "fact": "La torre de El Caracol integra dos anillos concéntricos abovedados y una cámara superior emplazada a 13 metros de elevación sobre el terreno selvático, diseñada con muros de casi un metro de grosor para alojar instrumentos de colimación visual fija que permitían registrar las trayectorias de Venus y el Sol sin requerir lentes ópticas refractarias, manteniendo una estabilidad estructural que ha perdurado más de doce siglos."
   },
   {
-    id: 'ventanas-astronomicas',
-              bannerImage: '/assets/maya/infographic_m1/banner_colapso-maya.webp',
-    title: 'Las Ventanas',
-    color: '#FFD54F',
-    btnImage: '/assets/maya/infographic_m1/btn_ventanas-astronomicas.jpg',
-    image: '/assets/maya/infographic_m1/hero_ventanas-astronomicas.jpg',
-    content: [
-      'En la parte superior de la torre queda una cámara de observación que guarda el secreto científico del edificio. Las paredes de esta habitación tienen ventanas estrechas que apuntan hacia direcciones geográficas específicas. Estas ventanas funcionaban como unos tubos de mira gigantescos y precisos.',
-      'La ventana más estudiada del Caracol está alineada con el punto del horizonte donde el planeta Venus se oculta durante su posición norte. Imagina que tomas un tubo de cartón y lo fijas a la ventana para ver una farola; los mayas hicieron esto para capturar la luz de Venus.',
-      'Otra de las aberturas importantes apunta hacia la posición del sol en el día del equinoccio. Durante los equinoccios de primavera y otoño, el día y la noche tienen la misma duración en todo el mundo. Los mayas usaban esta ventana solar para calibrar su calendario agrícola, sabiendo cuándo sembrar el maíz.',
-      'Además de rastrear a Venus y al Sol, existe evidencia de que otras líneas visuales creadas dentro de la estructura marcaban la trayectoria de la Luna. La Luna sigue un ciclo de movimiento más complejo que el del Sol. Sube y baja en el horizonte a lo largo de un período de dieciocho años.',
-      'Lo más increíble de estas ventanas es su estrechez diseñada intencionalmente por los constructores. Las aberturas son anchas por dentro pero se vuelven angostas hacia el exterior, creando una línea visual restringida. Al hacerla estrecha, el observador solo podía ver el astro deseado, reduciendo el margen de error.'
+    "id": "ventanas-astronomicas",
+    "bannerImage": "/assets/maya/infographic_m1/banner_colapso-maya.webp",
+    "title": "Las Ventanas",
+    "color": "#FFD54F",
+    "btnImage": "/assets/maya/infographic_m1/btn_ventanas-astronomicas.jpg",
+    "image": "/assets/maya/infographic_m1/hero_ventanas-astronomicas.jpg",
+    "content": [
+      "En la parte superior de la torre cilíndrica sobrevive una cámara de observación con aberturas estrechas que funcionaban como auténticas ranuras de mira astronómica. Aunque gran parte de la bóveda superior colapsó con los siglos, tres de estas aberturas horizontales se conservaron intactas para el análisis moderno. Estas ventanas no fueron diseñadas para iluminar o ventilar la habitación, sino como tubos de puntería que recortan ángulos visuales muy específicos hacia el horizonte despejado de Yucatán.",
+      "Al mirar a través del grosor de las paredes de mampostería, de casi un metro de espesor, la línea visual que conecta las jambas interiores y exteriores define vectores de azimut precisos. La ventana 1, orientada hacia el oeste, permitía observar la puesta de Sol durante los equinoccios de primavera y otoño, cuando el astro diurno cruza el ecuador celeste. Asimismo, diagonales trazadas desde esquinas opuestas de esa misma ventana marcan con exactitud las puestas solares en los solsticios de verano e invierno.",
+      "Las otras aberturas supervivientes están calibradas hacia eventos astronómicos protagonizados por el planeta Venus. Una de las líneas de mira apunta directamente al extremo septentrional alcanzado por Venus en el horizonte occidental, un fenómeno que ocurre cada ocho años solares. Otra línea señala el extremo meridional del planeta durante su fase de estrella vespertina. Estos puntos extremos marcaban límites fijos en las cartas celestes utilizadas por la élite gobernante para planificar el calendario agrícola y militar.",
+      "Los astrónomos mayas utilizaban varas cruzadas de madera o hueso colocadas en pares sobre soportes fijos dentro de las jambas de estas ventanas. Al hacer coincidir el punto de intersección de las varas con el borde del disco solar o con el destello puntual de un planeta al rozar la línea del horizonte, lograban determinar el instante exacto de un acontecimiento celeste. Este método de gnomónica y colimación visual sustituía con notable ingenio la falta de instrumentos con lentes de aumento.",
+      "La altura de la cámara superior, situada a más de 15 metros por encima del dosel arbóreo de la selva yucateca, garantizaba una visión despejada de 360 grados sin interferencias topográficas. En una región llana carente de montañas elevadas como es el norte de Yucatán, la arquitectura monumental funcionaba como un horizonte artificial controlado. Cada abertura tallada en la roca era una herramienta óptica calibrada para registrar el paso del tiempo con rigurosa exactitud matemática."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'De las varias aberturas originales que tenía la cámara de observación superior, hoy solo sobreviven tres ventanas intactas. Esto se debe a que el techo abovedado de la torre colapsó hace siglos, aplastando los muros superiores.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La ventana número uno del Caracol posee un error de alineación con respecto a la puesta de Venus de apenas una fracción de grado. Lograr ese nivel de exactitud astronómica sin usar telescopios ni instrumentos modernos es considerado un triunfo intelectual.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los mayas no disponían de vidrio transparente ni de lentes ópticas pulidas para telescopios. En su lugar, perfeccionaron el uso de mirillas estrechas talladas en roca maciza y pares de varillas rígidas cruzadas sobre ranuras de mampostería. Este sistema geométrico de referencia tangencial les permitía fijar líneas de puntería estables y registrar variaciones posicionales menores a un cuarto de grado de arco en el firmamento nocturno."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "De las 29 alineaciones astronómicas potenciales analizadas mediante modelos computacionales contemporáneos en la torre de El Caracol, al menos 20 concuerdan de forma concluyente con eventos extremos de Venus y paradas del Sol con márgenes de desviación inferiores a 0.5 grados angulares. Esta concordancia estadística supera ampliamente cualquier probabilidad de coincidencia fortuita en el trazo arquitectónico prehispánico."
+      }
     ],
-    fact: 'El uso de aberturas arquitectónicas para medir el paso del tiempo celeste se conoce como "astronomía de horizonte". Los mayas nunca dependieron de instrumentos portátiles de metal. Su instrumento de medición principal era el horizonte geográfico y los edificios gigantescos que diseñaban.',
+    "fact": "La abertura oeste de la cámara alta de El Caracol conforma un túnel de mira de casi 3 metros de trayectoria geométrica efectiva que enmarca simultáneamente la puesta de Sol durante los equinoccios astronómicos y la desaparición vespertina de Venus en su punto extremo septentrional, logrando una precisión con un error angular inferior a 30 minutos de arco respecto al horizonte real de Yucatán."
   },
   {
-    id: 'venus-ciclo',
-              bannerImage: '/assets/maya/infographic_m1/banner_herencia-maya.webp',
-    title: 'El Ciclo de Venus',
-    color: '#37474F',
-    btnImage: '/assets/maya/infographic_m1/btn_venus-ciclo.jpg',
-    image: '/assets/maya/infographic_m1/hero_venus-ciclo.jpg',
-    content: [
-      'Para los mayas, el planeta Venus era el objeto celeste más importante del cielo nocturno. Superaba al Sol y a la Luna en su significado espiritual. Ellos conocían a Venus bajo el nombre de "Noh Ek", que significa "La Gran Estrella". Es el objeto estelar más brillante de la noche.',
-      'El ciclo visible de Venus es un patrón que dura casi quinientos ochenta y cuatro días terrestres. A este tiempo los astrónomos le llaman el "período sinódico". Es el tiempo que tarda el planeta en volver a la misma posición en el cielo en relación con nuestro Sol.',
-      'Los sacerdotes y astrónomos de Chichén Itzá dedicaron un gran esfuerzo a registrar cada aparición y desaparición de Venus a lo largo de muchos años. Imagina tener que salir cada madrugada antes del amanecer para anotar en qué parte del horizonte aparece un punto de luz.',
-      'El movimiento cíclico de Venus estaba conectado con las decisiones políticas y militares de los gobernantes mayas. Ellos creían que algunas fases del ciclo irradiaban una energía peligrosa hacia el mundo. Por esta razón, los reyes organizaban sus batallas cuidadosamente.',
-      'El conocimiento astronómico sobre Venus estaba ligado al desarrollo matemático de su calendario. El ciclo de quinientos ochenta y cuatro días de Venus se sincronizaba con su calendario sagrado de doscientos sesenta días. Al mismo tiempo, también se sincronizaba con su calendario solar de trescientos sesenta y cinco días.'
+    "id": "venus-ciclo",
+    "bannerImage": "/assets/maya/infographic_m1/banner_herencia-maya.webp",
+    "title": "El Ciclo de Venus",
+    "color": "#37474F",
+    "btnImage": "/assets/maya/infographic_m1/btn_venus-ciclo.jpg",
+    "image": "/assets/maya/infographic_m1/hero_venus-ciclo.jpg",
+    "content": [
+      "Para la civilización maya, el planeta Venus era el cuerpo celeste más reverenciado y temido después del Sol y la Luna. Conocido bajo nombres como Noh Ek («Gran Estrella») o Xux Ek («Estrella Avispa»), Venus era personificado por deidades complejas como Kukulkán o Lahun Chan. Su observación metódica desde El Caracol no respondía a una simple curiosidad teórica, sino a la necesidad imperiosa de coordinar rituales sagrados, ceremonias de entronización real y campañas militares decisivas.",
+      "El ciclo sinódico de Venus, es decir, el tiempo transcurrido para que el planeta regrese a la misma posición respecto a la Tierra y al Sol, tiene una duración astronómica media real de 583.92 días terrestres. Los astrónomos mayas redondearon este valor a 584 días enteros distribuidos en cuatro etapas perfectamente catalogadas: 236 días como estrella matutina al este, 90 días de invisibilidad en conjunción superior, 250 días como estrella vespertina al oeste y 8 días de conjunción inferior.",
+      "El momento de mayor tensión ritual ocurría durante el orto helíaco matutino, cuando Venus reaparecía por el oriente tras ocho días oculto en el resplandor solar. Los sacerdotes creían que los primeros rayos del planeta traían influencias dañinas llamadas flechas astrales, capaces de herir a reyes, marchitar cosechas de maíz o provocar sequías devastadoras. Por ello, predecir con días de anticipación el orto helíaco mediante las ventanas de El Caracol resultaba vital para clausurar templos y realizar ofrendas expiatorias.",
+      "Los sabios de Chichén Itzá descubrieron una relación armónica formidable entre el año solar de 365 días y el ciclo de Venus de 584 días. Observaron que cinco revoluciones sinódicas de Venus equivalen exactamente a ocho años solares (5 × 584 = 2,920 días, mientras que 8 × 365 = 2,920 días). Este principio de conmensurabilidad permitía sincronizar el calendario agrícola con las apariciones del lucero del alba dentro de una pauta temporal cerrada y predecible.",
+      "En las paredes y relieves de El Caracol abundan símbolos dedicados a este ciclo venusino de ocho años. Las estatuas y máscaras de estuco integran motivos de cinco pétalos o cinco elementos geométricos para simbolizar los cinco ciclos sinódicos que completan el pétalo cósmico de Venus en el cielo. La arquitectura se convirtió así en un libro abierto de piedra donde los gobernantes legitimaban su autoridad exhibiendo su control sobre las leyes mecánicas del cosmos observable."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Debido a que la trayectoria de Venus está más cerca del Sol que la órbita de nuestra Tierra, Venus tiene fases visibles que cambian paulatinamente. Ocurre exactamente igual que los cuartos menguantes y crecientes de nuestra Luna. A veces es un hilo de luz y otras veces parece un disco pleno.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El ciclo verdadero de Venus no dura exactamente 584 días cerrados, sino que dura unos 583.92 días terrestres. Esta diferencia decimal de mínimas fracciones de día parecería no tener importancia, pero a la larga desajusta el calendario drásticamente.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los pueblos mayas sentían un sobrecogimiento extremo ante el orto helíaco de Venus tras su conjunción inferior de ocho días. Durante la madrugada en que se calculaba la reaparición del lucero, la población sellaba puertas y rendijas en sus viviendas de bajareque para impedir que los primeros rayos del astro incidieran sobre mujeres embarazadas o niños pequeños, protegiéndolos de supuestas emanaciones astrales nocivas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La proporción matemática de 5 ciclos sinódicos de Venus por cada 8 años solares terrestres genera en el espacio un dibujo orbital asombroso conocido como la rosa o pentagrama de Venus. Cada ocho años, las posiciones relativas de conjunción inferior forman los cinco vértices de una estrella de cinco puntas casi perfecta en el plano de la eclíptica observable desde la superficie de la Tierra."
+      }
     ],
-    fact: 'En la mitología de los pueblos mesoamericanos, el planeta Venus estaba asociado con la deidad de la serpiente emplumada. Era venerada y conocida como Kukulcán por los mayas yucatecos y Quetzalcóatl por los aztecas.',
+    "fact": "La sincronización formal de cinco ciclos sinódicos de Venus de 584 días con ocho años solares Haab de 365 días suma exactamente 2,920 días solares, acumulando un desajuste temporal frente a la mecánica celeste real de apenas 1.2 horas cada ocho años, una proeza matemática que los astrónomos de Chichén Itzá compensaron introduciendo correcciones numéricas tabuladas en el Códice de Dresde."
   },
   {
-    id: 'precision-matematica',
-              bannerImage: '/assets/maya/infographic_m1/banner_mayas-actuales.webp',
-    title: 'Precisión Matemática',
-    color: '#26C6DA',
-    btnImage: '/assets/maya/infographic_m1/btn_precision-matematica.jpg',
-    image: '/assets/maya/infographic_m1/hero_precision-matematica.jpg',
-    content: [
-      'La habilidad más asombrosa de los científicos mayas fue su capacidad para calcular números astronómicos con una precisión casi perfecta. Utilizaban un sistema numérico escrito e ingenioso. A diferencia de nosotros, que hoy usamos diez números, ellos usaban un sistema vigesimal.',
-      'Con tres símbolos sencillos, los matemáticos mayas podían sumar y multiplicar cifras inmensas que llegaban a los millones. El descubrimiento del número cero fue un avance intelectual que los mayas lograron desarrollar muchos siglos antes que los europeos.',
-      'El gran reto matemático era calcular el ciclo orbital del planeta Venus sin cometer errores a lo largo de los siglos. El ciclo moderno de Venus es de exactamente 583.92 días. Los mayas redondearon inicialmente el ciclo a quinientos ochenta y cuatro.',
-      'Para solucionar este problema de fracciones, los matemáticos antiguos inventaron un sistema de correcciones periódicas. Este sistema es similar a cómo nosotros empleamos los años bisiestos. Simplemente agregamos un día extra en febrero cada cuatro años para arreglar nuestro calendario.',
-      'Gracias a esta corrección matemática, el margen de error del calendario de Venus creado por los mayas era de apenas dos horas por cada cuatrocientos ochenta y un años. Imagina tener un reloj fabricado con bloques de piedra que se atrasa tan poco tiempo.'
+    "id": "precision-matematica",
+    "bannerImage": "/assets/maya/infographic_m1/banner_mayas-actuales.webp",
+    "title": "Precisión Matemática",
+    "color": "#26C6DA",
+    "btnImage": "/assets/maya/infographic_m1/btn_precision-matematica.jpg",
+    "image": "/assets/maya/infographic_m1/hero_precision-matematica.jpg",
+    "content": [
+      "La precisión alcanzada por la astronomía maya en El Caracol no fue fruto de la casualidad, sino del uso de un sofisticado sistema matemático posicional de base veinte (vigesimal) que incorporaba el concepto formal del cero siglos antes de su adopción en Europa occidental. Utilizando una notación sencilla de puntos con valor de uno y barras con valor de cinco, los escribas y astrónomos registraban cifras millonarias en estelas de piedra, códices plegados de papel amate y grafitis murales.",
+      "Para sus mediciones celestes, los sacerdotes matemáticos desarrollaron el concepto del día como unidad atómica indivisible llamada k'in. Al acumular k'ines en periodos múltiplos de veinte —uinal (20 días), tun (360 días), k'atun (7,200 días) y b'ak'tun (144,000 días)—, podían calcular fracciones promedio de ciclos orbitales sin necesidad de emplear números decimales complejos. La duración del ciclo lunar, por ejemplo, fue establecida por los mayas en 29.53086 días, frente al valor contemporáneo medido por satélites de 29.53059 días.",
+      "En el caso de Venus, la cifra canónica de 584 días presenta un error acumulado de aproximadamente 0.08 días por revolución frente al valor real de 583.92 días. Para evitar que las tablas predictivas perdieran concordancia con el cielo a lo largo de los siglos, los matemáticos mayas idearon un mecanismo de corrección intercalar extraordinario documentado en el Códice de Dresde. Cada 61 ciclos de Venus (unos 97.5 años), restaban 4 días al cómputo acumulado, y tras 301 ciclos suprimían 8 días adicionales.",
+      "Con este sistema de compensación fractal, el error en la predicción del orto de Venus se reducía a menos de un día cada cinco siglos. Tal exactitud requirió siglos continuos de registros empíricos transmitidos de maestros a discípulos en linajes astronómicos especializados de Chichén Itzá. Los instrumentos de piedra de El Caracol servían como verificadores físicos permanentes para comprobar que los cálculos teóricos de las tablas coincidieran rigurosamente con los sucesos visuales reales.",
+      "La integración entre geometría constructiva y aritmética vigesimal permitía traducir ecuaciones temporales en dimensiones arquitectónicas tangibles. El número de peldaños, las proporciones de los muros, la separación angular entre pilastras y la orientación de las cornisas de El Caracol funcionaban como calculadoras analógicas fijas. La piedra y el estuco cristalizaban la matemática maya para garantizar la estabilidad ceremonial del orden social ante los ciclos implacables del universo."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'En el Códice de Dresde, que es uno de los pocos libros mayas originales que lograron sobrevivir, hay múltiples páginas llenas de tablas. Estos números trazados y puntos pintados predicen la aparición del planeta Venus.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El sistema maya de números se escribía tradicionalmente de manera vertical, desde el fondo hacia arriba. La primera posición valía por unidades simples, la segunda línea hacia arriba valía por veintenas y la tercera por cuatrocientos.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Para ejecutar cálculos numéricos de gran escala antes de labrarlos sobre piedra monumental, los matemáticos mayas utilizaban tableros de cómputo sobre arena fina o esteras tejidas de palma llamadas petates, valiéndose de semillas secas de cacao para las unidades, varillas delgadas de madera para los múltiplos de cinco y conchas marinas de caracol pulidas para señalar la posición del cero."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El algoritmo de corrección intercalar maya para las efemérides de Venus registradas en el Códice de Dresde reduce la desviación acumulada a tan solo un día de desfase a lo largo de más de 6,000 años de proyección temporal teórica. Este nivel de exactitud cuantitativa superaba con holgura al calendario juliano empleado coetáneamente en los reinos medievales de Europa occidental."
+      }
     ],
-    fact: 'La introducción matemática del concepto de número cero no fue solo un triunfo para contar elementos. Fue una necesidad puramente filosófica y científica para indagar sobre el origen remoto del universo observable.',
+    "fact": "A través de registros sistemáticos de 149 lunaciones consecutivas durante 4,400 días continuos documentados en las inscripciones de Copán y Chichén Itzá, los sabios mayas establecieron una duración media para el mes sinódico lunar de 29.53086 días solares, lo que representa una diferencia de tan solo 23 segundos respecto a las mediciones atómicas de la astronomía moderna."
   },
   {
-    id: 'astronomos-mayas',
-              bannerImage: '/assets/maya/infographic_m1/banner_origenes-mayas.webp',
-    title: 'Los Astrónomos',
-    color: '#FF7043',
-    btnImage: '/assets/maya/infographic_m1/btn_astronomos-mayas.jpg',
-    image: '/assets/maya/infographic_m1/hero_astronomos-mayas.jpg',
-    content: [
-      'Los astrónomos mayas no eran científicos encerrados en un laboratorio. Eran sacerdotes importantes conocidos como "ah kin", que significa "el guardián de los días". Estos especialistas pertenecían a la nobleza.',
-      'Convertirse en un astrónomo maya requería décadas de un estudio académico riguroso. Los aprendices pasaban años memorizando los ciclos de los astros y aprendiendo a leer y pintar los jeroglíficos de sus antepasados.',
-      'La información recolectada por los astrónomos era considerada el recurso intelectual más valioso del imperio, siendo más importante que el oro. Los reyes dependían del consejo de estos sacerdotes.',
-      'Todo este conocimiento científico se registraba en hermosos libros llamados códices. Estos libros plegables estaban hechos de tiras continuas de corteza extraída del árbol de amate. Después se aplanaban y se cubrían con una capa de estuco.',
-      'La mayoría de esta biblioteca astronómica se perdió para siempre. Durante la conquista española en el siglo dieciséis, muchos de estos libros valiosos fueron quemados arrojándolos al fuego, porque los exploradores no comprendieron su valor.'
+    "id": "astronomos-mayas",
+    "bannerImage": "/assets/maya/infographic_m1/banner_origenes-mayas.webp",
+    "title": "Los Astrónomos",
+    "color": "#FF7043",
+    "btnImage": "/assets/maya/infographic_m1/btn_astronomos-mayas.jpg",
+    "image": "/assets/maya/infographic_m1/hero_astronomos-mayas.jpg",
+    "content": [
+      "En la sociedad maya del Clásico Terminal, los astrónomos pertenecían a un sector de la élite sacerdotal conocido como los ah k'inob («los del Sol») o ah miatz («los sabios letrados»). Estos especialistas no trabajaban de forma aislada, sino que conformaban cofradías hereditarias vinculadas estrechamente a la corte real de Chichén Itzá. Su función principal consistía en descifrar la voluntad divina expresada en el movimiento de los astros para aconsejar a los gobernantes sobre momentos propicios para sembrar, negociar o combatir.",
+      "El entrenamiento de un astrónomo maya comenzaba desde la infancia y se extendía durante décadas. Los aprendices debían memorizar extensas genealogías dinásticas, complejas tablas de cómputo vigesimal, mitología cosmogónica y centenares de jeroglíficos calendáricos. Aprendían a observar las estrellas sin pestañear durante horas, a registrar la humedad atmosférica que alteraba la visibilidad del horizonte y a correlacionar la aparición de cometas y meteoros con crisis políticas terrestres.",
+      "Los atuendos de estos sacerdotes celestes reflejaban su elevada jerarquía ritual. Portaban capas de plumas de quetzal de color verde esmeralda, tocados decorados con conchas marinas y cuentas de jade pulido, y sostenían cetros en forma de serpiente bicéfala que representaban la eclíptica cósmica. En las ceremonias nocturnas sobre las terrazas de El Caracol, quemaban copal aromático en incensarios de barro para purificar el ambiente visual y comunicarse espiritualmente con las deidades del firmamento.",
+      "Los ah k'inob eran también custodios de los códices sagrados, libros en biombo fabricados con la corteza batida del árbol de higuera silvestre (ficus amate) e impregnados con una capa blanca de estuco de cal apagada. En estos volúmenes pintaban con tintas minerales de hematita roja y negro de carbón las efemérides planetarias para generaciones futuras. Poseer y saber interpretar estos textos otorgaba un poder social indiscutible frente al pueblo común que dependía del calendario para sobrevivir.",
+      "La autoridad de los astrónomos era tan profunda que ningún gobernante de Chichén Itzá tomaba posesión de su cargo ni declaraba la guerra a una ciudad rival sin consultar previamente las conjunciones planetarias señaladas por el colegio de sacerdotes de El Caracol. Su ciencia constituía el puente sagrado que unía el destino cotidiano de la comunidad agrícola con los ritmos gigantescos e inmutables de los dioses que marchaban por la bóveda de la noche."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los astrónomos mayas usaban una herramienta observacional simple pero efectiva: consistía en un par de varas rectas de madera firmemente cruzadas que miraban desde el umbral de una puerta en la madrugada.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La astronomía observacional maya es un tipo de "astronomía posicional". Mientras los científicos modernos intentan entender de qué materia están hechas las estrellas, los antiguos sabios se enfocaban solo en la posición exacta.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "A fin de preservar su agudeza visual durante las extensas jornadas de guardia astronómica nocturna, los sacerdotes ah k'inob evitaban la mirada directa a hogueras o antorchas encendidas. En su lugar, colocaban cuencos de barro negro vidriado llenos de agua tranquila o espejos circulares de pirita y obsidiana para observar con nitidez el reflejo de planetas y constelaciones sin deslumbrarse."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los análisis epigráficos modernos de las inscripciones glíficas mayas han confirmado la existencia de títulos oficiales específicos para la comunidad científica, tales como ah ts'ib («escriba y cartógrafo sagrado») e itz'at («sabio versado en ciencias»), revelando que la observación del cosmos constituía una disciplina profesional altamente institucionalizada y respetada."
+      }
     ],
-    fact: 'En las pinturas de los murales mayas antiguos, a los astrónomos siempre se les reconoce fácilmente porque llevan sus herramientas de escriba apretadas fuertemente en sus manos.',
+    "fact": "Los sacerdotes astrónomos mayas mantenían una categoría diplomática especial entre las diferentes urbes de Mesoamérica, permitiéndoles cruzar fronteras en tiempos de guerra civil para coordinar congresos astronómicos interestatales, como el célebre encuentro de sabios calendáricos celebrado en el año 763 d.C. en la acrópolis de Copán."
   },
   {
-    id: 'orientacion-cardinal',
-              bannerImage: '/assets/maya/infographic_m1/banner_palenque-arte.webp',
-    title: 'Orientación',
-    color: '#3F51B5',
-    btnImage: '/assets/maya/infographic_m1/btn_orientacion-cardinal.jpg',
-    image: '/assets/maya/infographic_m1/hero_orientacion-cardinal.jpg',
-    content: [
-      'Una de las características más sorprendentes de la torre del Caracol es su posición asimétrica con respecto al resto de la ciudad antigua. Si miras un mapa aéreo de la zona, notarás esta diferencia.',
-      'Este giro inusual no fue un error de los constructores mayas. Tampoco fue provocado por la irregular topografía del terreno rocoso yucateco. Los ingenieros alinearon la estructura del edificio circular para alinearla matemáticamente a las estrellas.',
-      'Construir un edificio gigantesco siguiendo el movimiento de un planeta lejano es una tarea titánica y desafiante. Esto significa que antes de mover la roca inicial, debieron investigar el sitio elegido para ello.',
-      'Esta peculiar orientación rotada demuestra que para los habitantes de Chichén Itzá, el cielo y la tierra se encontraban íntimamente unidos, fundiéndose en uno solo sin separación de la experiencia humana.',
-      'Además de rastrear esta línea recta dirigida a Venus, las diagonales geométricas de la plataforma inferior apuntan hacia otras posiciones astronómicas de gran importancia ritual y práctica. Por ejemplo, marcan las salidas del sol en los solsticios de verano.'
+    "id": "orientacion-cardinal",
+    "bannerImage": "/assets/maya/infographic_m1/banner_palenque-arte.webp",
+    "title": "Orientación",
+    "color": "#3F51B5",
+    "btnImage": "/assets/maya/infographic_m1/btn_orientacion-cardinal.jpg",
+    "image": "/assets/maya/infographic_m1/hero_orientacion-cardinal.jpg",
+    "content": [
+      "Para los constructores de Chichén Itzá, el espacio geográfico y el tiempo astronómico formaban una sola entidad indivisible estructurada por los cuatro rumbos del universo. En la cosmología maya, cada punto cardinal poseía una deidad tutelar, un color simbólico, un árbol sagrado y un pájaro protector. El oriente (Lak'in), asociado al color rojo y al renacimiento del Sol, marcaba el rumbo principal de la vida; el poniente (Chik'in), de color negro, simbolizaba la entrada al inframundo o Xibalbá.",
+      "El norte (Xaman), vinculado al color blanco, representaba la región de los antepasados y las lluvias frías del invierno, mientras que el sur (Nohol), representado por el color amarillo, se asociaba con la madurez del maíz y la sequía estacional. En el centro exacto del cosmos se alzaba la Ceiba Verde primordial o Yaxché, cuyo tronco atravesaba los trece niveles del cielo y cuyas raíces profundas se anclaban en los nueve estratos del inframundo subterráneo.",
+      "El Caracol fue emplazado en un punto estratégico del sector meridional de Chichén Itzá para servir como pivote orientador de todo el paisaje sagrado. Su eje longitudinal principal rompe intencionalmente la retícula urbana ortogonal predominante en la ciudad antigua. Los arqueólogos descubrieron que la diagonal de su plataforma inferior se proyecta con precisión hacia el templo mayor de Mayapán situado a decenas de kilómetros al oeste, estableciendo una red geográfica astronómicamente orientada.",
+      "Además de los cuatro puntos cardinales convencionales, los mayas otorgaban una importancia suprema a los puntos de salida y puesta cenital del Sol. Dos veces al año, en mayo y julio en la latitud de Yucatán (alrededor de 20° 40' N), el Sol pasa exactamente por el cenit al mediodía local, eliminando toda sombra proyectada por postes verticales. Las esquinas y pilares de El Caracol fueron tallados para señalar con claridad estos momentos culminantes que anunciaban la llegada de las lluvias.",
+      "La interacción entre la arquitectura circular de la torre y las plataformas rectangulares subyacentes crea un diagrama cósmico tridimensional. Al caminar por las terrazas de El Caracol, los sacerdotes recreaban físicamente la circunvalación de los astros alrededor del centro inmóvil de la Tierra. Cada escalinata, pretil y vano de entrada funcionaba como una coordenada topográfica viva que conectaba la geografía humana con el orden geométrico de las estrellas."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La desviación rotatoria de veintisiete grados del Caracol contrasta con el otro edificio central de Chichén Itzá: la pirámide de Kukulkán. Esa pirámide imponente tiene una rotación diferente orientada para la sombra equinoccial.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'Para lograr localizar con exactitud astronómica el "norte verdadero" inamovible de la tierra sin disponer de brújulas metálicas, los observadores dependían estrictamente del sol incesante.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "A diferencia de las convenciones cartográficas modernas que colocan el norte en la cúspide de los mapas, la cosmovisión maya situaba invariablemente el oriente (Lak'in) en la parte superior. Esto respondía a que el nacimiento cotidiano del disco solar marcaba el inicio de todas las actividades biológicas y la renovación sagrada del orden cósmico en el mundo terrenal."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En la latitud geográfica de Chichén Itzá (20° 41' N), el Sol alcanza el cenit astronómico vertical los días 23 de mayo y 19 de julio. Durante estos instantes del mediodía solar verdadero, los gnomones y columnas verticales de piedra no proyectan sombra alguna hacia los lados, sirviendo como marcadores infalibles para el inicio del ciclo agrícola del maíz."
+      }
     ],
-    fact: 'Muchos de los observatorios y herramientas megalíticas del mundo antiguo civilizado comparten este rasgo asimétrico de estar alineados con un orden invisible, a diferencia de nuestras cuadrículas estrictas modernas.',
+    "fact": "La plataforma basal superior de El Caracol se desvía de forma calculada 27 grados y 30 minutos de arco respecto al oeste geográfico verdadero, una dirección arquitectónica atípica que se alinea con una precisión de medio grado con el extremo más septentrional de la puesta de Venus, fenómeno que se repite invariablemente cada ocho años terrestres exactos."
   },
   {
-    id: 'legado-observatorio',
-              bannerImage: '/assets/maya/infographic_m1/banner_tikal-metropolis.webp',
-    title: 'El Legado',
-    color: '#FFC107',
-    btnImage: '/assets/maya/infographic_m1/btn_legado-observatorio.jpg',
-    image: '/assets/maya/infographic_m1/hero_legado-observatorio.jpg',
-    content: [
-      'El observatorio del Caracol erigido en la ciudad maya de Chichén Itzá no es simplemente una ruina turística cubierta de polvo. Es uno de los monumentos científicos más impresionantes construidos en el mundo entero.',
-      'A pesar de que estas civilizaciones antiguas estaban separadas por vastos océanos, todas compartían un constante deseo humano. Querían entender los patrones celestes de forma persistente.',
-      'Hoy en día, la torre del Caracol se encuentra resguardada en el centro espiritual de la ciudad de Chichén Itzá. Representa la sabiduría de esta metrópoli cosmopolita maya precolombina de imponentes dimensiones.',
-      'El legado intelectual heredado de la observación efectuada desde El Caracol nos enseña una lección valiosa acerca de la importancia de observar la bóveda estelar. Demuestra cómo la paciencia de piedra es capaz de sobreponerse al paso del tiempo.',
-      'Cada vez que un científico contemporáneo usa su telescopio espacial para observar los cielos, su esfuerzo se equipara a los mayas astronómicos de Mesoamérica.'
+    "id": "legado-observatorio",
+    "bannerImage": "/assets/maya/infographic_m1/banner_tikal-metropolis.webp",
+    "title": "El Legado",
+    "color": "#FFC107",
+    "btnImage": "/assets/maya/infographic_m1/btn_legado-observatorio.jpg",
+    "image": "/assets/maya/infographic_m1/hero_legado-observatorio.jpg",
+    "content": [
+      "El observatorio de El Caracol de Chichén Itzá representa una de las cumbres más admirables del conocimiento científico y la ingeniería del continente americano prehispánico. Declarado Patrimonio de la Humanidad por la UNESCO en 1988 como parte integral de la zona arqueológica de Chichén Itzá, el edificio sigue siendo objeto de intensas investigaciones arqueoastronómicas, geofísicas y de escaneo láser tridimensional mediante tecnología LiDAR que revelan nuevos secretos subterráneos.",
+      "A lo largo de casi un siglo de restauraciones científicas, desde las misiones pioneras del arqueólogo Sylvanus Morley hasta los proyectos del Instituto Nacional de Antropología e Historia (INAH) de México, los especialistas han logrado estabilizar la bóveda y proteger los estucos originales de la erosión kárstica. Hoy en día, los datos obtenidos en El Caracol permiten a los astrónomos modernos comprender cómo sociedades sin telescopios construyeron modelos cosmológicos extraordinariamente precisos.",
+      "El estudio de este monumento revolucionó la historia de la ciencia mundial al desmentir el antiguo prejuicio eurocéntrico de que las civilizaciones precolombinas carecían de método científico riguroso. Los mayas no eran simples observadores pasivos o místicos; eran matemáticos sistemáticos que planteaban hipótesis numéricas, contrastaban sus teorías con mediciones cuantitativas en el horizonte y aplicaban factores correctores mediante métodos inductivos y deductivos.",
+      "Para las nuevas generaciones de estudiantes y jóvenes científicos de todo el mundo, El Caracol ofrece una lección inspiradora sobre la capacidad humana de explorar el universo. Con solo piedra caliza, varas de madera, agudeza visual y disciplina intelectual, los constructores mayas descifraron las leyes del movimiento planetario y levantaron un faro de conocimiento que ha resistido más de mil años de intemperie en la selva mexicana.",
+      "Hoy en día, El Caracol permanece erguido como un testimonio imperecedero de la curiosidad y la sabiduría de los pueblos originarios de Mesoamérica. Cada atardecer de equinoccio, cuando la luz solar se filtra por sus estrechas ventanas de piedra tal como lo hacía en el siglo X, el edificio revive su función milenaria: recordar a la humanidad que todos los pueblos de la Tierra comparten el mismo cielo y el mismo anhelo universal por desentrañar sus misterios."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'A finales del siglo diecinueve, una expedición de arqueólogos tuvo que limpiar manualmente y con gran cuidado toda la vegetación tropical asfixiante que cubría las ruinas usando machetes.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'La arqueoastronomía es una rama académica de investigación científica que estudia cómo las civilizaciones antiguas entendían su cosmos estrellado y los ciclos celestes.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Cuando los exploradores John Lloyd Stephens y Frederick Catherwood se adentraron en las ruinas cubiertas de selva de Chichén Itzá en 1842, quedaron atónitos ante la silueta cilíndrica de este edificio. Catherwood dibujó minuciosas litografías del observatorio semiderruido, bautizándolo en sus cuadernos de campo como «El Caracol» debido a su intrincada escalera interna de piedra."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Las campañas recientes con sensores LiDAR de penetración forestal en el área monumental de Chichén Itzá han cartografiado más de doce kilómetros de caminos empedrados elevados (sacbeob) que convergían en El Caracol, confirmando que el edificio operaba como un centro astronómico y cívico neurálgico conectado directamente con complejos habitacionales de la élite."
+      }
     ],
-    fact: 'El reconocimiento público mundial de la avanzada ciencia astronómica precolombina y de su indiscutible precisión matemática ha contribuido a erradicar prejuicios históricos sobre el imperio maya.',
-  },
+    "fact": "En 1988, la UNESCO inscribió oficialmente a El Caracol de Chichén Itzá en el catálogo de Patrimonio Cultural de la Humanidad, consagrándolo como una de las obras cumbres de la arqueoastronomía precolombina al fusionar con éxito arquitectura de mampostería masiva, matemáticas vigesimales con valor posicional y cálculo de ciclos sinódicos planetarios."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

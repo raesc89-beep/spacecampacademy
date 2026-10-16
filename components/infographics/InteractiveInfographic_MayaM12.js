@@ -91,145 +91,201 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'copan-ciudad',
-              bannerImage: '/assets/maya/infographic_m12/banner_copan-ciudad.webp',
-    title: 'La Ciudad: Copán',
-    color: '#D7CCC8',
-    btnImage: '/assets/maya/infographic_m12/btn_copan-ciudad.jpg',
-    image: '/assets/maya/infographic_m12/hero_copan-ciudad.jpg',
-    content: [
-      'Imagina una gran ciudad escondida en la selva. Así es Copán, ubicada en el actual país de Honduras. Esta ciudad se alza en el valle del Río Copán. Los expertos la llaman la "Atenas del Mundo Maya". Copán es famosa por sus esculturas de piedra detalladas. Cada rincón cuenta una historia.',
-      'El sitio fue declarado Patrimonio de la Humanidad por la UNESCO. Representa uno de los logros científicos de la humanidad antigua. Piensa en Copán como una universidad y galería de arte. Aquí, los reyes eran guerreros, intelectuales y astrónomos. La ciudad tenía plazas abiertas y templos pintados de colores brillantes.',
-      'La ubicación de Copán no fue un accidente. El valle ofrecía tierras ricas para el cultivo del maíz, frijoles y calabazas. Tenían un río constante que aseguraba agua todo el año. Estaban cerca de rutas comerciales de obsidiana y jade. Esto permitió que sus gobernantes contrataran a los mejores artistas y arquitectos.',
-      'Si Tikal era como la Nueva York del mundo antiguo por sus pirámides, Copán era como París, la capital del arte y el conocimiento. Sus escultores lograron dar volumen a la piedra. Crearon retratos tridimensionales de sus reyes que asombran en la actualidad.',
-      'Lo que hace especial a Copán es su conexión con las estrellas. Toda la ciudad fue diseñada como un espejo del cielo. Sus plazas y monumentos estaban alineados con los movimientos del sol, la luna, Venus y las constelaciones. La astronomía era la herramienta principal para gobernar y decidir cuándo plantar las cosechas.',
+    "id": "copan-ciudad",
+    "bannerImage": "/assets/maya/infographic_m12/banner_copan-ciudad.webp",
+    "title": "La Ciudad: Copán",
+    "color": "#D7CCC8",
+    "btnImage": "/assets/maya/infographic_m12/btn_copan-ciudad.jpg",
+    "image": "/assets/maya/infographic_m12/hero_copan-ciudad.jpg",
+    "content": [
+      "Ubicada en el fértil valle del río homónimo en el occidente de la actual República de Honduras, la antigua urbe de Copán —denominada en los textos jeroglíficos clásicos como el reino de Xukpi («Rincón» o «Canto de Pájaro»)— representó el bastión cultural más meridional y refinado de las tierras bajas mayas. Declarada Patrimonio de la Humanidad por la UNESCO en 1980, la metrópoli destacó por su insuperable escultura en bulto redondo.",
+      "La dinastía real que llevó a Copán a su edad de oro fue fundada en el año 426 d.C. por el noble foráneo K'inich Yax K'uk' Mo' («Gran Sol Guacamaya Resplandeciente»), un caudillo militar vinculado estrechamente a Teotihuacan y Tikal. A lo largo de cuatro siglos, dieciséis soberanos dinásticos gobernaron el valle transformando el asentamiento original en una colosal acrópolis repleta de palacios, templos y patios ceremoniales elevados.",
+      "A diferencia de la caliza suave de Yucatán, los canteros de Copán dispusieron de toba volcánica andesítica de tonalidad verdosa, un mineral ígneo excepcionalmente maleable al ser recién extraído pero que endurece al contacto con el aire. Esta condición geológica única permitió a los artistas copanecos abandonar el relieve plano tradicional para esculpir esculturas tridimensionales exentas que dotaron a la ciudad de un realismo plástico asombroso.",
+      "El diseño urbano de la Gran Plaza y la Acrópolis de Copán refleja una cuidadosa integración con el curso sinuoso del río y las colinas circundantes. Los constructores levantaron muros de contención monumentales de hasta treinta metros de altura para proteger las terrazas sagradas de las inundaciones estacionales, organizando el espacio cívico para albergar a decenas de miles de personas durante las conmemoraciones rituales del calendario.",
+      "Más allá de su poderío militar y comercial en la ruta del jade del río Motagua, Copán se consolidó como el centro intelectual y astronómico por excelencia del periodo Clásico maya. En sus escuelas sacerdotales se congregaron los matemáticos más sobresalientes de Mesoamérica para descifrar la mecánica celeste, legando a la posteridad cálculos lunares y solares cuya precisión rivaliza con las observaciones de la astronomía moderna."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Copán fue redescubierta en 1839 por John Lloyd Stephens y Frederick Catherwood. Stephens compró la ciudad por cincuenta dólares a un granjero local que cultivaba tabaco.' },
-      { label: 'Tecnología Maya', icon: 'clock', text: 'Los escultores de Copán trabajaban una piedra llamada toba volcánica. Al extraerse, es suave y fácil de tallar. Al exponerse al aire, se endurece, permitiendo que sus obras sobrevivan en la selva.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los análisis de isótopos de estroncio y oxígeno en los restos óseos del fundador K'inich Yax K'uk' Mo', sepultado en la tumba Hunal bajo el Templo 16, confirmaron que no nació en Copán, sino en las lejanas tierras bajas del Petén guatemalteco, y que residió durante años en Teotihuacan antes de llegar al valle hondureño para fundar su dinastía en 426 d.C."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La toba volcánica verde de Copán está compuesta por cenizas y fragmentos de pómez consolidados procedentes de erupciones volcánicas del periodo Terciario. Su relativa porosidad facilitó el tallado profundo con cinceles de pedernal y obsidiana, aunque en la actualidad requiere tratamientos de consolidación con silicato de etilo para prevenir el desgaste erosivo por lluvias ácidas."
+      }
     ],
-    fact: 'A pesar de no tener herramientas de metal, los artistas de Copán crearon esculturas en "alto relieve". Las figuras resaltan de la piedra base y crean efectos de luz según la posición del sol.',
+    "fact": "La Acrópolis de Copán es una de las mayores plataformas artificiales de tierra y piedra construidas en el Nuevo Mundo, con un volumen aproximado de dos millones de metros cúbicos de material de relleno. En su flanco oriental, el corte erosionado producido por el río Copán expuso un corte estratigráfico natural de 30 metros de altura que reveló más de 400 años de fases constructivas superpuestas."
   },
   {
-    id: 'estelas-astronomicas',
-              bannerImage: '/assets/maya/infographic_m12/banner_estelas-astronomicas.webp',
-    title: 'Las Estelas Solares',
-    color: '#F9A825',
-    btnImage: '/assets/maya/infographic_m12/btn_estelas-astronomicas.jpg',
-    image: '/assets/maya/infographic_m12/hero_estelas-astronomicas.jpg',
-    content: [
-      'Las estelas son la firma artística de Copán. Son bloques de piedra de más de cuatro metros de altura. Estas esculturas son retratos de los reyes, cubiertos con símbolos, dioses y registros astronómicos. En Copán hay más de 14 estelas que cuentan la historia del cosmos y la dinastía.',
-      'Piensa en una estela como la portada de una revista tallada en roca. Anuncia el poder del rey y su conexión con el universo. El rey Waxaklajuun Ubaah Kawiil ordenó colocar estas estelas en la Gran Plaza siguiendo patrones geométricos. Se alinean con el sol durante los solsticios y equinoccios.',
-      'El nivel de detalle permite ver las plumas en los tocados y los nudos de los cinturones. En los costados y la parte trasera, los mayas tallaron textos jeroglíficos. Funcionan como calendarios y calculadoras astronómicas. Registran eclipses, movimientos de Venus y ciclos lunares con precisión.',
-      'Para los mayas, el rey mantenía el orden del universo. En las estelas, sostenían barras ceremoniales que simbolizaban el cielo. Las estelas funcionaban como antenas que conectaban la energía planetaria con la tierra. Cuando la luz iluminaba una estela, probaba que el universo funcionaba bien.',
-      'Estas estelas son monumentos matemáticos. Los mayas usaban un sistema vigesimal y conocían el cero. Usando puntos y barras, registraban fechas millones de años en el pasado o futuro. Esto demuestra su comprensión del "tiempo profundo".',
+    "id": "estelas-astronomicas",
+    "bannerImage": "/assets/maya/infographic_m12/banner_estelas-astronomicas.webp",
+    "title": "Las Estelas Solares",
+    "color": "#F9A825",
+    "btnImage": "/assets/maya/infographic_m12/btn_estelas-astronomicas.jpg",
+    "image": "/assets/maya/infographic_m12/hero_estelas-astronomicas.jpg",
+    "content": [
+      "La topografía montañosa del valle de Copán ofreció a los astrónomos locales una ventaja singular: la posibilidad de transformar las crestas naturales del paisaje en un observatorio solar de proporciones colosales. Para lograrlo, durante el siglo VII d.C., bajo el patrocinio del duodécimo rey K'ahk' Uti' Witz' K'awiil («Humo Humano»), se mandaron erigir dos estelas monumentales de piedra sobre colinas opuestas que enmarcan el valle.",
+      "La Estela 12 fue colocada en una elevación en el flanco este del valle, mientras que la Estela 10 se ubicó en la cima de una colina en el flanco oeste, separadas entre sí por una distancia lineal de exactamente 7.1 kilómetros. Al pararse junto a la Estela 12 y contemplar el horizonte occidental, la Estela 10 funciona como una mira milimétrica que señala el punto exacto donde se pone el disco solar en dos fechas críticas del año trópico.",
+      "Las observaciones arqueoastronómicas han demostrado que el Sol se oculta directamente detrás de la Estela 10, visto desde la Estela 12, el 12 de abril y el 7 de septiembre. La fecha del 12 de abril revestía una trascendencia agrícola vital para toda la población del valle: marcaba el día oficial para dar inicio a la tumba y quema de la vegetación seca en las laderas montañosas antes de la inminente llegada del temporal de lluvias.",
+      "La separación temporal entre estas fechas no es aleatoria: el intervalo entre el 12 de abril y el primer paso cenital del Sol en Copán (que ocurre el 30 de abril) establecía una cuenta calendárica rigurosa que permitía a los sacerdotes anunciar con semanas de anticipación el momento exacto para la siembra de la milpa, evitando que las lluvias torrenciales tempranas pudrieran la semilla antes de que los campos estuvieran preparados.",
+      "Estas estelas solares demuestran que los mayas concebían el paisaje físico y el cielo como una unidad geométrica indivisible. La ciudad no se encerraba dentro de sus murallas ceremoniales, sino que proyectaba sus líneas de puntería visual hacia las cumbres lejanas, sacralizando la geografía entera del valle y subordinando la vida comunal cotidiana a los mandatos inapelables de la mecánica astronómica diurna."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Originalmente, estas estelas estaban pintadas con colores vibrantes. El color principal era el rojo de cinabrio, que representaba la vida y el sol. También usaban azul maya, verde, amarillo y negro.' },
-      { label: 'Tecnología Maya', icon: 'atom', text: 'Bajo muchas estelas se encontraron "escondites" o cajas de piedra selladas. Contienen joyas de jade, conchas y vasijas. Estas ofrendas se plantaban para dar poder al monumento al inaugurarse.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante la puesta de sol del 12 de abril, las columnas de humo producidas por la quema de cientos de milpas en las laderas del valle de Copán teñían el cielo de tonos anaranjados y rojizos espectaculares. Los antiguos habitantes consideraban que este humo perfumado con resinas de pino ascendía como una plegaria colectiva hacia el dios solar K'inich Ahau."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Una línea de mira astronómica de 7.1 kilómetros de longitud reduce drásticamente el error angular visual. Con una distancia tan prolongada entre ambas estelas, el desplazamiento aparente del Sol sobre el horizonte de un solo día (aproximadamente medio grado de arco) resultaba evidente a simple vista, permitiendo a los sacerdotes fijar la fecha con una exactitud de 24 horas."
+      }
     ],
-    fact: 'La Estela C tiene un retrato del rey Waxaklajuun Ubaah Kawiil en ambos lados. Un lado muestra al rey joven mirando al este. El otro lado lo muestra anciano mirando al oeste, como metáfora del movimiento del sol.',
+    "fact": "La Estela 10 de Copán se alza a 2,200 metros sobre el nivel del mar en la cima de la colina de El Chino, orientada con un acimut de 278° 20' respecto a la Estela 12. Este colosal dispositivo óptico a cielo abierto constituye una de las líneas de observación arqueoastronómica de mayor envergadura territorial documentadas en todo el continente americano."
   },
   {
-    id: 'congreso-astronomico',
-              bannerImage: '/assets/maya/infographic_m12/banner_congreso-astronomico.webp',
-    title: 'El Gran Congreso del 763',
-    color: '#6A1B9A',
-    btnImage: '/assets/maya/infographic_m12/btn_congreso-astronomico.jpg',
-    image: '/assets/maya/infographic_m12/hero_congreso-astronomico.jpg',
-    content: [
-      'En el año 763 d.C. Copán fue sede de un congreso científico. Astrónomos, matemáticos y sacerdotes mayas se reunieron para debatir descubrimientos astronómicos. Fue similar a una convención científica para resolver problemas del calendario.',
-      'El rey K\'ak\'Yipyaj Chan Kawiil organizó este encuentro. Necesitaban ajustar los calendarios porque se desincronizaron con los movimientos del sol y la luna. Era un ajuste similar a nuestro año bisiesto moderno.',
-      'Los sabios desplegaron códices llenos de cálculos matemáticos. Discutieron cómo calibrar la duración de la lunación. Su objetivo era sincronizar el calendario ceremonial de 260 días con el calendario solar de 365 días.',
-      'El congreso fue un éxito científico. Calcularon la duración de las fases lunares con gran precisión. Determinaron que 149 ciclos lunares equivalían a 4,400 días. Esto da un mes lunar de 29.5302 días, muy cercano al cálculo moderno de 29.53059 días.',
-      'Para conmemorar este éxito, tallaron monumentos como el Altar Q y la Escalinata de los Jeroglíficos. Registraron estas fórmulas de corrección. Los mayas usaban la piedra para compartir conocimiento científico a través de las generaciones.',
+    "id": "congreso-astronomico",
+    "bannerImage": "/assets/maya/infographic_m12/banner_congreso-astronomico.webp",
+    "title": "El Gran Congreso del 763",
+    "color": "#6A1B9A",
+    "btnImage": "/assets/maya/infographic_m12/btn_congreso-astronomico.jpg",
+    "image": "/assets/maya/infographic_m12/hero_congreso-astronomico.jpg",
+    "content": [
+      "A mediados del siglo VIII d.C., la ciudad de Copán fue el escenario de uno de los hitos científicos más extraordinarios de la historia mesoamericana: una asamblea cumbre de sabios astrónomos y sacerdotes matemáticos procedentes de las principales metrópolis mayas, conocida en la historiografía moderna como el Gran Congreso Astronómico del año 763 d.C. (o 776 d.C., según correlaciones de monumentos específicos).",
+      "El motivo central de esta histórica reunión internacional fue la necesidad de homologar y calibrar con absoluta precisión matemática los ciclos lunares y el año trópico solar en todo el territorio maya. Debido a que el año solar real dura aproximadamente 365.2422 días y el calendario civil Haab' empleaba un año fijo de 365 días sin años bisiestos intercalados, se producía un desfasamiento acumulativo que amenazaba el orden ritual.",
+      "En este concilio de sabios, los astrónomos de Copán presentaron su brillante fórmula de equivalencia lunar, grabada en el Altar Q y en monumentos de la Acrópolis: 149 lunaciones sinódicas equivalen con exactitud a 4,400 días solares. Esta sencilla razón matemática arrojaba una duración media del mes lunar de 29.53020 días, un cálculo empírico de pasmosa exactitud que difería en escasos segundos del valor atómico moderno (29.53059 días).",
+      "Asimismo, los delegados debatieron sobre la correlación del ciclo de eclipses solares y lunares mediante intervalos de 177 y 148 días, los cuales quedarían posteriormente compilados en las célebres tablas astronómicas del Códice de Dresde. La adopción colectiva de estas fórmulas en centros distantes como Tikal, Yaxchilán, Quiriguá y Palenque confirma la existencia de una comunidad científica colaborativa e interconectada en Mesoamérica.",
+      "Para conmemorar este triunfo de la razón matemática y el intelecto astronómico, los gobernantes de Copán consagraron altares esculpidos y fechas conmemorativas en la Cuenta Larga. El congreso demostró que, aun en una época marcada por crecientes tensiones geopolíticas y guerras interdinásticas, el intercambio pacífico del saber astronómico trascendía las fronteras militares para beneficio del calendario común."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Venus era el planeta más importante para los mayas. Lo consideraban hermano del sol. Usaban sus ciclos para decidir cuándo ir a la guerra o coronar gobernantes.' },
-      { label: 'Tecnología Maya', icon: 'clock', text: 'Los astrónomos mayas hacían observaciones a simple vista. Construían tubos estrechos de madera o piedra. Al mirar por estos agujeros, rastreaban movimientos estelares y registraban datos.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el Altar Q, los dieciséis reyes de Copán aparecen sentados sobre glifos con sus nombres en una solemne asamblea circular. Aunque el altar conmemora la legitimidad dinástica, los textos inscritos en su cara superior registran una fecha clave del año 776 d.C. que coincide con la calibración final de las tablas astronómicas aprobadas en el congreso."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El cálculo copaneco de 149 lunas = 4,400 días arroja un error relativo de apenas un día cada 500 años. En contraste, en la Europa del siglo VIII d.C., el calendario juliano acumulaba un error de un día entero cada 128 años debido a una estimación solar menos precisa, desfase que no fue corregido en Occidente sino hasta la reforma gregoriana de 1582."
+      }
     ],
-    fact: 'El conocimiento astronómico de este congreso se esparció. Ciudades como Palenque o Quiriguá empezaron a usar las fórmulas matemáticas acordadas en Copán, demostrando una red científica eficiente.',
+    "fact": "Durante el congreso de Copán, los astrónomos también calcularon la duración del año trópico en 365.2420 días mediante una fórmula de ajuste de 29 días acumulados por cada 120 años de Cuenta Larga. El valor moderno medido por relojes atómicos es de 365.2422 días, lo que significa que el cálculo maya difería en menos de veinte segundos al año respecto a la realidad física."
   },
   {
-    id: 'altar-q',
-              bannerImage: '/assets/maya/infographic_m12/banner_altar-q.webp',
-    title: 'El Misterioso Altar Q',
-    color: '#D84315',
-    btnImage: '/assets/maya/infographic_m12/btn_altar-q.jpg',
-    image: '/assets/maya/infographic_m12/hero_altar-q.jpg',
-    content: [
-      'El Altar Q es un bloque de piedra que funciona como un registro histórico. Muestra a los 16 reyes de la dinastía de Copán sentados en cojines jeroglíficos. Fue mandado a hacer por Yax Pasaj Chan Yopaat para demostrar su derecho a gobernar.',
-      'En los lados del altar, cada rey pasa el mando a su sucesor. En la parte delantera, el fundador Yax Kuk Mo\' entrega el cetro al rey 16. Aunque vivieron separados por 350 años, la imagen legitima el poder político.',
-      'El Altar Q contiene un texto jeroglífico sobre la fundación de Copán. Narra que Yax Kuk Mo\' viajó a Teotihuacán en el año 426 d.C. para recibir su cetro y aprender astronomía. Tardó 153 días en llegar a Copán para fundar la ciudad.',
-      'El altar se colocó al pie de la Estructura 16. Durante el año, la sombra del templo ilumina a reyes específicos en aniversarios importantes. Funciona como un reloj solar histórico.',
-      'Debajo del altar, se descubrió una cripta con restos de 15 jaguares sacrificados. El número representaba a los 15 reyes anteriores. Era un ritual para conectar el poder de los felinos con las estrellas.',
+    "id": "altar-q",
+    "bannerImage": "/assets/maya/infographic_m12/banner_altar-q.webp",
+    "title": "El Misterioso Altar Q",
+    "color": "#D84315",
+    "btnImage": "/assets/maya/infographic_m12/btn_altar-q.jpg",
+    "image": "/assets/maya/infographic_m12/hero_altar-q.jpg",
+    "content": [
+      "Emplazado al pie de la imponente escalinata del Templo 16 en la Acrópolis de Copán, el Altar Q constituye uno de los documentos históricos y propagandísticos más fascinantes de toda la epigrafía mesoamericana. Consagrado en el año 776 d.C. bajo el mandato del decimosexto soberano K'inich Yax Pasaj Chan Yopaat («Madrugada Resplandeciente»), este monumento cuadrangular monolítico resume trescientos cincuenta años de linaje ininterrumpido.",
+      "Los cuatro costados del bloque de andesita volcánica están decorados con dieciséis figuras esculpidas en altorrelieve, cuatro en cada cara, que representan a los dieciséis monarcas legítimos de la dinastía copaneca. Cada rey aparece sentado con las piernas cruzadas sobre un cojín ceremonial formado por el glifo jeroglífico de su propio nombre dinástico, ataviado con tocados de plumas, orejeras de jadeita e insignias de poder militar.",
+      "La escena culminante se localiza en la fachada oeste del altar, donde el fundador primordial K'inich Yax K'uk' Mo' (fallecido en 437 d.C.) entrega solemnemente el cetro de mando K'awiil al decimosexto gobernante Yax Pasaj Chan Yopaat. Al recibir el cetro directamente de las manos del patriarca fundador a través de los siglos, el joven rey legitimaba su derecho soberano a gobernar en una época de grave inestabilidad sociopolítica.",
+      "Un detalle iconográfico revelador es que el fundador aparece retratado portando anteojeras circulares y adornos característicos de la deidad de la lluvia y la guerra de Teotihuacan (Tláloc), así como una defensa en el brazo izquierdo. La epigrafía contemporánea ha confirmado que el fundador ostentaba el título de Señor de Occidente, consolidando el prestigio cosmopolita y militar que la metrópoli teotihuacana ejercía sobre la élite maya.",
+      "La superficie superior del altar contiene un extenso texto jeroglífico de 36 cartuchos que narra con fechas exactas la llegada de Yax K'uk' Mo' al valle en el año 426 d.C., tras un viaje de 152 días desde el santuario dinástico original. El Altar Q se convirtió así en la piedra angular que permitió a los arqueólogos modernos ordenar cronológicamente la sucesión completa de los reyes de Copán y descifrar su trayectoria política."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Yax Kuk Mo\'fue real. Los científicos encontraron su tumba bajo las pirámides en los años 90. Tenía heridas graves, demostrando que fue un guerrero. Sus isótopos dentales confirmaron que venía de otra región.' },
-      { label: 'Tecnología Maya', icon: 'atom', text: 'Cada rey en el Altar Q se sienta sobre un glifo. Ese glifo es su propio nombre escrito en jeroglífico. Es una forma inteligente de identificar personajes sin ocupar espacio extra.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Al excavar debajo del Altar Q en la década de 1990, los arqueólogos hallaron una cripta subterránea que contenía los restos de quince jaguares sacrificados en honor a los quince antepasados fallecidos de Yax Pasaj. Este hallazgo confirmó que el monumento no era solo un registro genealógico, sino un altar de autosacrificio y ofrendas reales de sangre."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El bloque del Altar Q mide 1.45 metros por cada lado y 75 centímetros de altura, con una masa estimada de más de tres toneladas. Fue tallado a partir de un solo prisma de andesita volcánica densa, mineral de alta dureza cuya resistencia a la abrasión permitió que los rostros y nombres glíficos de los reyes sobrevivieran a doce siglos de intemperie y colonización biológica."
+      }
     ],
-    fact: 'El diseño cuadrado del Altar Q representa la visión maya del cosmos. Creían que el universo era plano con cuatro esquinas. El altar es un modelo del universo.',
+    "fact": "La epigrafista Tatiana Proskouriakoff utilizó el Altar Q y las estelas fechadas de Copán para demostrar en 1960 que las inscripciones jeroglíficas mayas contenían crónicas históricas reales de gobernantes humanos, rebatiendo la creencia errónea previa de que los jeroglíficos eran únicamente meditaciones teológicas sobre deidades místicas y periodos temporales abstractos."
   },
   {
-    id: 'escalinata-jeroglificos',
-              bannerImage: '/assets/maya/infographic_m12/banner_escalinata-jeroglificos.webp',
-    title: 'La Escalinata de los Jeroglíficos',
-    color: '#0277BD',
-    btnImage: '/assets/maya/infographic_m12/btn_escalinata-jeroglificos.jpg',
-    image: '/assets/maya/infographic_m12/hero_escalinata-jeroglificos.jpg',
-    content: [
-      'La Escalinata de los Jeroglíficos en Copán es una biblioteca de piedra. Tiene 63 escalones con miles de símbolos tallados. Con más de 2,200 jeroglíficos, es el texto maya más largo de la historia.',
-      'Iniciada por Waxaklajuun Ubaah Kawiil, fue terminada por el rey K\'ak\'Yipyaj Chan Kawiil en 755 d.C. Cuenta la historia, guerras y ceremonias de los reyes de Copán. Su legado quedó tallado en la ciudad.',
-      'Con el tiempo, las raíces de los árboles y los sismos derrumbaron la escalera. En el siglo XIX, los arqueólogos la reconstruyeron en orden aleatorio porque no sabían leer jeroglíficos.',
-      'Hoy, los epigrafistas usan computadoras para ordenar las piezas. Han descubierto que la escalinata registra fechas astronómicas. Muestra alineaciones de Venus y ciclos lunares en batallas clave.',
-      'En el centro de la escalinata hay estatuas de guerreros armados. Representan a los espíritus de reyes pasados. En la base, un altar con la deidad del inframundo recuerda el origen de su historia.',
+    "id": "escalinata-jeroglificos",
+    "bannerImage": "/assets/maya/infographic_m12/banner_escalinata-jeroglificos.webp",
+    "title": "La Escalinata de los Jeroglíficos",
+    "color": "#0277BD",
+    "btnImage": "/assets/maya/infographic_m12/btn_escalinata-jeroglificos.jpg",
+    "image": "/assets/maya/infographic_m12/hero_escalinata-jeroglificos.jpg",
+    "content": [
+      "En el flanco occidental del Templo 26 de Copán se alza la Escalinata de los Jeroglíficos, considerada con justicia el texto epigráfico esculpido en piedra más extenso y monumental de toda la América precolombina. La estructura consta de sesenta y tres escalones monumentales de piedra andesítica que ascienden a lo largo de treinta metros sobre la pendiente de la pirámide, coronados por cinco estatuas de bulto redondo de reyes guerreros.",
+      "A lo largo de estos escalones se encuentran grabados más de 2,200 glifos jeroglíficos individuales tallados con maestría caligráfica insuperable. El texto monumental narra la historia oficial, las genealogías, los triunfos bélicos y los rituales sagrados de los gobernantes de Copán, abarcando desde la fundación dinástica en 426 d.C. hasta la consagración final del monumento durante el reinado del decimoquinto rey K'ak' Yipyaj Chan K'awiil en 755 d.C.",
+      "La edificación de esta escalinata colosal cumplió además un urgente propósito de propaganda dinástica y reivindicación militar. En el año 738 d.C., el decimotercer soberano de Copán, el brillante Uaxaclajuun Ub'aah K'awiil («18 Conejo»), había sido capturado y decapitado por el gobernante de la vecina ciudad vasalla de Quiriguá, K'ak' Tiliw Chan Yopaat. La escalinata fue concebida para restaurar el honor y la legitimidad herida de la dinastía.",
+      "Cada peldaño de la escalera funciona como una línea continua de un papiro pétreo gigante. Al ascender físicamente por la escalinata durante las ceremonias públicas, los sacerdotes y nobles recreaban el ascenso temporal de la dinastía a través de las generaciones, culminando en la cúspide del templo donde se practicaban sacrificios propiciatorios ante las deidades celestes para garantizar la fertilidad y la victoria militar del reino.",
+      "Cuando los arqueólogos del Museo Peabody de Harvard excavaron el monumento en la década de 1890, encontraron que la mayor parte de la escalinata se había desplomado por el derrumbe de la pirámide. Aunque los peldaños fueron reconstruidos en su lugar, varios tramos quedaron fuera de su secuencia original, convirtiendo a la escalinata en uno de los rompecabezas epigráficos y filológicos más desafiantes y apasionantes de la arqueología."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'La toba volcánica de Copán es frágil frente a la lluvia. Actualmente, la Escalinata está protegida por una gran carpa para evitar que las lluvias ácidas borren las letras de piedra.' },
-      { label: 'Tecnología Maya', icon: 'clock', text: 'La escritura maya es logosilábica. Un jeroglífico puede representar una palabra completa o sílabas de sonido. Podían escribir la misma palabra de varias formas combinando sonidos e imágenes.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En la actualidad, la Escalinata de los Jeroglíficos está protegida por una colosal lona tensada permanente instalada por el Instituto Hondureño de Antropología e Historia (IHAH) y la UNESCO. Esta cubierta impermeable detiene el impacto directo de la lluvia torrencial y de los rayos ultravioleta, impidiendo la disolución del estuco y la proliferación de musgos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Para reconstruir el orden original de los escalones caídos, los epigrafistas modernos emplean escaneo láser tridimensional y modelos digitales de concordancia morfológica. Al analizar la curvatura de fractura de los bloques de toba y la coherencia sintáctica de las cláusulas verbales mayas, se ha logrado reintegrar virtualmente más del 70% del texto dinástico original."
+      }
     ],
-    fact: 'El texto revela que en el año 738, el gobernante 18 Conejo fue decapitado por el rey de Quiriguá. La escalinata menciona esto de pasada y destaca las victorias posteriores como propaganda.',
+    "fact": "La Escalinata de los Jeroglíficos abarca un total de 10 metros de ancho por 30 metros de longitud en pendiente de 45 grados. Contiene exactamente 63 peldaños monolíticos y más de 2,200 glifos individuales, lo que la sitúa como el documento histórico labrado en piedra más voluminoso de todo el hemisferio occidental, superando en extensión textual a las inscripciones del Antiguo Egipto o Mesopotamia."
   },
   {
-    id: 'cancha-pelota',
-              bannerImage: '/assets/maya/infographic_m12/banner_cancha-pelota.webp',
-    title: 'La Cancha de Pelota Cósmica',
-    color: '#558B2F',
-    btnImage: '/assets/maya/infographic_m12/btn_cancha-pelota.jpg',
-    image: '/assets/maya/infographic_m12/hero_cancha-pelota.jpg',
-    content: [
-      'Copán posee una de las canchas de Juego de Pelota mejor conservadas de Mesoamérica. Se encuentra en la zona principal y fue remodelada tres veces. Alcanzó su forma final bajo el reinado de 18 Conejo.',
-      'El campo tiene forma de letra "I" mayúscula con un corredor central estrecho. Los jugadores golpeaban una pelota de hule con caderas, codos y rodillas. Usaban protecciones pesadas para evitar heridas graves.',
-      'El juego recreaba un evento astronómico y mítico. Según el Popol Vuh, héroes gemelos derrotaron a los dioses del inframundo y resucitaron como el Sol y la Luna. El rebote de la pelota representaba al sol.',
-      'Los marcadores de Copán son cabezas de guacamayas, el ave solar. Estaban fijados en los muros inclinados. Cuando la pelota los golpeaba, representaba el contacto entre humanos y las fuerzas solares.',
-      'La alineación astronómica del Juego de Pelota es precisa. Durante los equinoccios, la luz del sol cruza el campo y divide la luz y las sombras. Esto refleja el equilibrio cósmico.',
+    "id": "cancha-pelota",
+    "bannerImage": "/assets/maya/infographic_m12/banner_cancha-pelota.webp",
+    "title": "La Cancha de Pelota Cósmica",
+    "color": "#558B2F",
+    "btnImage": "/assets/maya/infographic_m12/btn_cancha-pelota.jpg",
+    "image": "/assets/maya/infographic_m12/hero_cancha-pelota.jpg",
+    "content": [
+      "El juego de pelota mesoamericano no era un simple deporte de esparcimiento físico, sino un drama ritual de profunda trascendencia cosmológica donde se representaba la lucha eterna entre las fuerzas de la luz y las tinieblas. La Cancha de Pelota de Copán, conocida como la Estructura A-III situada en el corazón de la Gran Plaza, es universalmente considerada una de las más bellas, refinadas y mejor conservadas del periodo Clásico maya.",
+      "Consagrada en su forma definitiva en el año 738 d.C. por el monarca Uaxaclajuun Ub'aah K'awiil («18 Conejo»), la cancha exhibe una planta clásica en forma de «I» latina o doble «T». Su callejón central de juego mide veintiocho metros de longitud por siete de anchura, flanqueado por dos rampas inclinadas de mampostería fina revestidas de estuco sobre las cuales rebotaba la pesada pelota de hule macizo durante las partidas rituales.",
+      "En lugar de los anillos circulares de piedra perforada característicos de las canchas posclásicas de Yucatán como Chichén Itzá, la cancha de Copán cuenta con seis magníficos marcadores esculpidos con la forma de cabezas tridimensionales de guacamaya roja (Ara macao). Tres de estas cabezas se ubican en la cresta de la rampa oriental y tres en la rampa occidental, vigilando el movimiento de los jugadores y de la esfera en disputa.",
+      "La guacamaya roja era el animal sagrado vinculado a K'inich Ahau, la deidad solar diurna, debido al plumaje escarlata y amarillo encendido que evoca los rayos del amanecer. La pelota de caucho, que los jugadores impulsaban exclusivamente con las caderas, codos y rodillas sin usar manos ni pies, representaba al disco solar transitando por el callejón de la cancha, el cual simbolizaba una grieta o portal directo hacia el inframundo de Xibalbá.",
+      "Excavaciones profundas en el subsuelo de la cancha revelaron que la estructura actual fue construida cubriendo dos canchas más antiguas que datan de los siglos V y VI d.C. Al mantener inalterada la ubicación exacta del campo a lo largo de sucesivas renovaciones dinásticas, los reyes de Copán reafirmaban que su ciudad era el centro terrenal donde los héroes gemelos del Popol Vuh habían derrotado a los señores de la muerte."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Los mayas cosechaban savia de caucho y la mezclaban con jugo de Ipomoea alba. Esta reacción química vulcanizaba la pelota para que rebotara con fuerza.' },
-      { label: 'Tecnología Maya', icon: 'atom', text: 'Debajo de la cancha, los arqueólogos hallaron un escondite con un recipiente de cerámica. Contenía una ofrenda de fundación colocada antes del piso nuevo para dar fuerza al campo.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La pelota de hule mesoamericana era elaborada a partir del látex del árbol Castilla elastica mezclado con la savia de la enredadera Ipomoea alba para lograr una vulcanización química natural. Esta pelota pesaba entre dos y cuatro kilogramos y rebotaba con una fuerza descomunal que podía provocar fracturas mortales a los jugadores que no portaban protectores de cuero."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El caucho vulcanizado por los mayas hace tres mil años precedió en más de tres milenios a la vulcanización moderna patentada por Charles Goodyear en 1844. Al mezclar el látex crudo con el jugo ácido de la gloria de la mañana en proporciones precisas de 3 a 1, los artesanos mayas alteraban los enlaces moleculares del polímero de isopreno, volviéndolo extraordinariamente elástico."
+      }
     ],
-    fact: 'Los sacrificios humanos en el juego de pelota no ocurrían a diario. La mayoría de los juegos eran deportivos. Los sacrificios se reservaban para reyes capturados después de grandes guerras.',
+    "fact": "En el suelo del callejón central de la cancha de pelota de Copán se descubrieron tres marcadores circulares de piedra tallada en bajorrelieve. El marcador central representa al rey 18 Conejo ricamente ataviado como jugador de pelota enfrentándose ritualmente al señor del inframundo, simbolizando el combate cósmico por el renacimiento continuo del Sol y de la vegetación agrícola."
   },
   {
-    id: 'observatorio-copan',
-              bannerImage: '/assets/maya/infographic_m12/banner_observatorio-copan.webp',
-    title: 'El Observatorio de las Colinas',
-    color: '#004D40',
-    btnImage: '/assets/maya/infographic_m12/btn_observatorio-copan.jpg',
-    image: '/assets/maya/infographic_m12/hero_observatorio-copan.jpg',
-    content: [
-      'Los astrónomos de Copán convirtieron el valle en un observatorio astronómico. Instalaron la Estela 10 y la Estela 12 en colinas opuestas. Estaban separadas por siete kilómetros para funcionar como mira telescópica.',
-      'Desde la Estela 12, se creaba una línea visual perfecta hacia la Estela 10. Cada 12 de abril, el sol se oculta justo detrás de la Estela 10. Era un marcador solar preciso.',
-      'El 12 de abril marcaba el final de la época seca. Esta alineación era un reloj agrícola. El rey observaba el sol y anunciaba que era hora de sembrar maíz.',
-      'Esto es astronomía práctica. La alineación del sol servía para la supervivencia agrícola. Si sembraban tarde o temprano, la cosecha fallaría. El sol dictaba la vida de Copán.',
-      'El sistema de estelas formaba triángulos visuales desde los templos. Los mayas demostraron que no necesitan lentes ópticos para medir el universo. Usaron geometría, monumentos y paciencia para atrapar al sol.',
+    "id": "observatorio-copan",
+    "bannerImage": "/assets/maya/infographic_m12/banner_observatorio-copan.webp",
+    "title": "El Observatorio de las Colinas",
+    "color": "#004D40",
+    "btnImage": "/assets/maya/infographic_m12/btn_observatorio-copan.jpg",
+    "image": "/assets/maya/infographic_m12/hero_observatorio-copan.jpg",
+    "content": [
+      "El concepto de observatorio astronómico en Copán trasciende la idea convencional de un edificio individual con instrumentos de mira. En este valle centroamericano, los sabios mayas concibieron un sistema regional holístico donde las elevaciones topográficas, los templos piramidales y una red de estelas monolíticas distribuidas estratégicamente actuaban de manera integrada como una red de telemetría celeste a gran escala.",
+      "Además de la célebre línea visual trazada entre las Estelas 12 y 10, los arqueoastrónomos han cartografiado múltiples alineaciones solares y estelares en el valle. La Estela 2, ubicada en la Gran Plaza, y la Estela 7, emplazada en el sector occidental, forman un eje conmemorativo que marcaba con precisión la puesta de sol durante los equinoccios de primavera y otoño, fechas fundamentales para calibrar el calendario civil de 365 días.",
+      "En el Templo 22 de la Acrópolis, conocido como la Casa de la Meditación o Templo de la Serpiente Bícéfala, los arquitectos diseñaron una estrecha hendidura horizontal en el muro superior de la fachada norte. Durante fechas específicas de mayo y julio, los rayos de la estrella brillante Aldebarán y del cúmulo de las Pléyades penetraban por esta rendija, proyectando un haz de luz sobre el trono sagrado donde meditaba el gobernante.",
+      "Esta red de miras ópticas permitía a los astrónomos de la corte predecir con absoluta fidelidad las variaciones estacionales de la bóveda celeste. Al contrastar las observaciones obtenidas desde las colinas altas con los registros mantenidos en los códices de papel de corteza, los sabios verificaban los sutiles desplazamientos angulares provocados por la precesión equinoccial y las perturbaciones orbitales de los planetas visibles.",
+      "El legado del observatorio de las colinas confirma que para los antiguos mayas la astronomía no constituía una afición teórica aislada de la realidad social. Cada alineación pétrea fijada en la roca andesítica respondía a una necesidad comunitaria imperiosa: regular el ciclo del cultivo del maíz, organizar las jornadas ceremoniales de cohesión colectiva y garantizar la supervivencia biológica y espiritual de toda la civilización."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El sol vuelve a pasar por esa línea el 1 de septiembre, marcando el ciclo de cosecha. Muchos agricultores de Copán siguen usando estas fechas para sus actividades.' },
-      { label: 'Tecnología Maya', icon: 'clock', text: 'Los mayas usaban estacas, cuerdas y observaciones de sombras en el horizonte. No tenían brújula magnética para orientar estas estelas, confiaban en el entorno natural.' },
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En el dintel interior del Templo 22 se esculpió una monumental serpiente bicéfala que representa la Vía Láctea, sostenida en los hombros de dos dioses Bacab o cargadores del cosmos. La boca abierta del templo simula la entrada a una caverna mística desde la cual el soberano observaba el firmamento nocturno transformado en un mediador cósmico supremo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El análisis arqueoastronómico con teodolito de precisión en el Templo 22 demostró que su ventana de rendija posee una apertura de apenas 13 centímetros de ancho por 60 de alto con un ángulo azimutal de 9° 30' norte. Esta estrechez geométrica operaba como un filtro óptico natural que eliminaba la luz difusa ambiental, permitiendo aislar la luz de estrellas débiles en el cenit."
+      }
     ],
-    fact: 'El arqueoastrónomo Anthony Aveni cataloga a Copán como un marcador solar agrícola monumental. Demuestra que los sabios de Copán hacían ciencia de vanguardia.',
-  },
+    "fact": "Las prospecciones arqueológicas han identificado más de veinticinco monumentos alineados astronómicamente a lo largo de los veinticuatro kilómetros de longitud del valle del río Copán. Este complejo sistema de estelas y altares convierte al valle en el mayor paisaje cultural arqueoastronómico planificado e integrado que se conserva en todo el continente americano prehispánico."
+  }
 ];
 
 // ─── Temporal Particle Field (Canvas Background) ──────────────────────────────

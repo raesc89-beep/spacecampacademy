@@ -156,149 +156,237 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'paradoja-abuelo', title: 'La Paradoja del Abuelo', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_abuelo.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_abuelo.webp',
-    content: [
-      'Una paradoja es una premisa sin solución lógica. Por ejemplo: «Esta oración es falsa». Si es falsa, dice la verdad, pero si dice la verdad, debería ser falsa. Las paradojas temporales operan de la misma manera, creando bucles lógicos.',
-      'La paradoja del abuelo plantea que viajas al pasado e impides que tus abuelos se conozcan. Si no se conocen, tus padres no nacen, y tú tampoco. Pero si no naces, no puedes viajar al pasado.',
-      'Las bases de esta paradoja se encuentran en la física. La Teoría de la Relatividad de Einstein permite viajar al futuro, lo cual ha sido comprobado, pero viajar al pasado genera inconsistencias lógicas. Las ecuaciones de Einstein no prohíben el viaje al pasado de forma directa.',
-      'En «Volver al Futuro», esta paradoja ocurre cuando Marty impide que sus padres se conozcan. Su mano comienza a desvanecerse, ilustrando cómo alterar el pasado elimina la propia existencia del viajero.',
-      'En 1949, el matemático Kurt Gödel encontró soluciones a las ecuaciones de la Relatividad que permiten «curvas temporales cerradas», es decir, trayectorias matemáticas hacia el pasado. Este hallazgo preocupó a Einstein porque su teoría permitía situaciones lógicamente inconsistentes.',
+    "id": "paradoja-abuelo",
+    "title": "La Paradoja del Abuelo",
+    "color": "#FFA500",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_abuelo.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_abuelo.webp",
+    "content": [
+      "En la narrativa de Regreso al Futuro, alterar un detalle en 1955 desencadena un efecto dominó que casi borra de la existencia a Marty McFly mientras toca la guitarra en el baile escolar. El cine utiliza una desaparición gradual y poética para generar tensión dramática en el espectador. Sin embargo, para la física teórica y la lógica formal, las paradojas temporales no conceden plazos de gracia: plantean una contradicción causal absoluta e instantánea en la que una acción en el pasado elimina la condición necesaria de su propia existencia futura.",
+      "El dilema clásico del abuelo fue popularizado por la literatura de ciencia ficción en la década de 1930 y refinado por filósofos de la ciencia como René Barjavel. La premisa desafía el principio fundamental de causalidad: si un individuo viaja al pasado y evita que sus abuelos se conozcan, nunca nacerá. Pero si nunca nace, no existe nadie que viaje en el tiempo para impedir dicho encuentro. Esta retroalimentación destructiva convierte el continuo temporal en una ecuación irresoluble sin solución real.",
+      "Desde la teoría de la relatividad general, el problema adquiere rigor matemático al estudiar las llamadas curvas temporales cerradas. Estas curvas son trayectorias espaciotemporales que regresan a su propio punto de partida cronológico, permitidas formalmente por las ecuaciones de campo de Albert Einstein en universos con geometrías rotatorias o agujeros de gusano. Si una partícula material sigue una de estas trayectorias, su interacción consigo misma en el pasado no puede violar la consistencia matemática global.",
+      "Para los físicos modernos, la paradoja revela que la concepción clásica del libre albedrío humano colisiona frontalmente con la topología del espaciotiempo tetradimensional. Si el pasado es una región física ya existente en un universo de bloque cósmico, no se puede «reescribir» como un documento digital. Cualquier intento de intervenir en el pasado ya formaba parte intrínseca de los sucesos acaecidos, haciendo que la historia sea fija, coherente y unívoca para cualquier observador.",
+      "En el laboratorio de la física de partículas, los experimentos con fotones entrelazados cuánticos ayudan a estudiar modelos análogos de bucles temporales cerrados. Estas investigaciones sugieren que a escala subatómica la información cuántica no puede destruirse mediante interferencias paradójicas: las probabilidades cuánticas se reorganizan espontáneamente de forma que los estados incompatibles con la conservación de la energía se cancelan por completo mediante interferencia destructiva."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_paradoja-abuelo.webp',
-    bannerCaption: 'El análisis profundo de la paradoja del abuelo y sus implicaciones lógicas',
-    fact: 'Kurt Gödel le regaló a Einstein un universo en rotación por su cumpleaños en 1949, demostrando que los viajes al pasado eran matemáticamente posibles según la propia teoría de Einstein. A Einstein le inquietó profundamente.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro» (1985), Marty McFly viaja accidentalmente a 1955 e impide que sus padres Lorraine y George se conozcan en el baile de graduación, provocando que su propia existencia empiece a desvanecerse. Su mano derecha desaparece mientras toca la guitarra. Doc Brown le explica que tiene exactamente una semana para reunir a sus padres o desaparecerá de la historia. La solución viene en el baile del "Encanto bajo el Mar" donde George golpea a Biff para defender a Lorraine, restaurando la línea temporal. La paradoja del abuelo es el motor dramático central de toda la película.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m3/banner_paradoja-abuelo.webp",
+    "bannerCaption": "El análisis profundo de la paradoja del abuelo y sus implicaciones lógicas",
+    "fact": "En 1949, el insigne lógico austríaco Kurt Gödel demostró matemáticamente ante su colega Albert Einstein que en un universo rotatorio ideal las ecuaciones de la relatividad general permiten trayectorias espaciales cerradas hacia el pasado sin necesidad de materia exótica, obligando a replantear la definición filosófica del tiempo cósmico universal.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Durante la preproducción de 1984, los guionistas Bob Gale y Robert Zemeckis debatieron intensamente cómo resolver la paradoja en pantalla sin aburrir a los adolescentes con física teórica. Su solución visual maestra fue la fotografía Polaroid donde los hermanos de Marty se desvanecen de arriba hacia abajo, una metáfora visual intuitiva que se convirtió en un hito del lenguaje cinematográfico de los años ochenta."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El físico teórico Seth Lloyd dirigió en el Instituto Tecnológico de Massachusetts (MIT) un experimento innovador en 2011 simulando curvas temporales cerradas mediante computación cuántica post-seleccionada. El estudio confirmó matemáticamente que las partículas cuánticas seleccionadas filtran automáticamente cualquier intento de alterar estados pasados, eliminando la paradoja sin romper las leyes causales."
+      }
+    ]
   },
   {
-    id: 'muchos-mundos', title: 'Universos Paralelos', color: '#00CCFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_mundos.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_mundos.webp',
-    content: [
-      'En 1957, el físico Hugh Everett propuso que, en cada evento cuántico, el universo se divide. Si una partícula puede tomar dos caminos, el universo se separa en dos ramas distintas. En ambas, la realidad continúa.',
-      'Esta teoría resuelve la paradoja del abuelo. Si viajas al pasado y modificas un evento, no cambias tu propia historia, sino que creas una línea temporal alterna. Tu universo original permanece intacto.',
-      'En «Volver al Futuro Parte II», Doc Brown explica este concepto al mostrar cómo la línea temporal se divide cuando Biff altera el pasado, creando un 1985 alternativo.',
-      'Este concepto se relaciona con la «decoherencia cuántica». En el experimento del gato de Schrödinger, el animal está en una superposición de estados. En la interpretación de Muchos Mundos, ambas opciones ocurren en ramas diferentes de la realidad.',
-      'En una encuesta de 2013, aproximadamente el 18% de los físicos especialistas apoyaban la interpretación de Muchos Mundos. Es la segunda opción más aceptada después de la interpretación de Copenhague.',
+    "id": "muchos-mundos",
+    "title": "Universos Paralelos",
+    "color": "#00CCFF",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_mundos.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_mundos.webp",
+    "content": [
+      "Cuando el Doc Brown dibuja en la pizarra escolar una segunda línea temporal ramificada para ilustrar el desastre provocado por Biff Tannen, la película adopta una variante simplificada del multiverso cuántico. En el celuloide, viajar al pasado y alterar un hecho crea una realidad paralela que solapa y anula la anterior. En la física cuántica contemporánea, sin embargo, el postulado de los muchos mundos no destruye ninguna realidad previa: sostiene que todas las historias físicamente concebibles se despliegan simultáneamente en ramas coexistentes.",
+      "La hipótesis fue formulada en 1957 por el físico Hugh Everett III como respuesta al enigmático problema de la medida en mecánica cuántica. En la interpretación ortodoxa de Copenhague, una partícula como un electrón se encuentra en múltiples estados posibles hasta que un observador mide su posición, momento en el cual la función de onda colapsa al azar. Everett propuso que el colapso jamás ocurre: en su lugar, el universo se bifurca en tantas copias tangibles como resultados posibles existan.",
+      "Aplicada a las paradojas temporales, la hipótesis de Everett ofrece una elegante vía de escape lógica. Si un viajero regresa al pasado y altera las circunstancias históricas, no interfiere con su propia línea temporal de procedencia, sino que inaugura una nueva rama cuántica independiente. En esa nueva realidad alternativa los acontecimientos transcurren según las nuevas causas, mientras que en el universo de partida el viajero simplemente desapareció sin alterar la memoria de los suyos.",
+      "Esta formulación matemática descansa sobre el concepto de decoherencia cuántica, estudiado en profundidad por físicos como Wojciech Zurek. La decoherencia describe cómo las interacciones incesantes entre un sistema cuántico microscópico y su entorno térmico destruyen la interferencia entre ramas paralelas en fracciones ínfimas de segundo, impidiendo que los observadores macroscópicos perciban la coexistencia simultánea de los universos paralelos vecinos.",
+      "Pese a su asombrosa belleza matemática, la teoría de los muchos mundos enfrenta debates epistemológicos cruciales entre la comunidad científica internacional. Dado que las diversas ramas cuánticas no pueden comunicarse entre sí por medios electromagnéticos convencionales una vez desacopladas, muchos físicos consideran que la teoría es sumamente difícil de verificar empíricamente, aunque ofrece la formulación más limpia y determinista de las ecuaciones de Schrödinger conocidas."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_muchos-mundos.webp',
-    bannerCaption: 'Universos paralelos y ramas de realidad según la interpretación de muchos mundos',
-    fact: 'Hugh Everett propuso los Muchos Mundos en su tesis doctoral de 1957. Su director John Wheeler la apoyó, pero Niels Bohr la rechazó. Everett abandonó la física y se convirtió en contratista militar. Murió a los 51 años sin saber que su teoría se volvería respetada.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro Parte II» (1989), Doc Brown usa un diagrama de papel para explicar a Marty y Jennifer cómo funciona la división de líneas temporales. Cuando Biff anciano roba el DeLorean en 2015 y lleva el almanaque deportivo a 1955, crea una bifurcación que genera el "1985-A": Hill Valley se convierte en una ciudad corrupta donde Biff Tannen es un multimillonario poderoso. Doc dice: "Estamos atrapados en una línea temporal alternativa." La segunda película es, esencialmente, una exploración visual de la interpretación de Muchos Mundos aplicada al viaje temporal.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m3/banner_muchos-mundos.webp",
+    "bannerCaption": "Universos paralelos y ramas de realidad según la interpretación de muchos mundos",
+    "fact": "En el marco de la cosmología de inflación eterna desarrollada por Alan Guth, se calcula que el número de universos de bolsillo aislados con diferentes condiciones físicas iniciales podría superar el número 10 elevado a la potencia de 10 elevado a 10.000.000, una escala de multiplicidad cósmica donde cualquier configuración molecular imaginable se repite infinitas veces.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La recreación del Hill Valley alternativo de 1985 fue uno de los rodajes más oscuros y exigentes de Regreso al Futuro Parte II. El plató principal de los estudios Universal fue transformado por completo con grafitis, humo, pandillas callejeras y el gigantesco rascacielos-casino de Pleasure Paradise de Biff, inspirándose libremente en la atmósfera opresiva del clásico cinematográfico ¡Qué bello es vivir!."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El célebre físico David Deutsch, pionero británico de la computación cuántica en la Universidad de Oxford, publicó en 1991 un artículo seminal en Physical Review D demostrando formalmente que los viajes temporales a través de curvas temporales cerradas en un multiverso cuántico de Everett son completamente consistentes y carecen de cualquier contradicción paradójica causal."
+      }
+    ]
   },
   {
-    id: 'bootstrap', title: 'El Bucle Bootstrap', color: '#E040FB',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_bootstrap.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_bootstrap.webp',
-    content: [
-      'Una paradoja de bootstrap ocurre cuando un objeto o información existe sin haber sido creado. Si encuentras los planos de una máquina del tiempo, la construyes, viajas al pasado y dejas los planos para que los encuentres, la información existe en un bucle cerrado.',
-      'En la película, esto ocurre con la canción «Johnny B. Goode». Marty la toca en 1955, Chuck Berry la escucha por teléfono y la aprende de Marty, quien originalmente la aprendió de Chuck. Nadie compuso la canción.',
-      'Si un viajero le entrega a Beethoven las partituras de la Quinta Sinfonía antes de que la escriba, y luego las aprende del mismo Beethoven, la música carece de un creador original.',
-      'Las paradojas de bootstrap no violan la termodinámica, ya que la entropía sigue aumentando. Sin embargo, violan el principio de causalidad, porque la causa y el efecto se vuelven indistinguibles.',
-      'El relato «All You Zombies» de Robert Heinlein explora este concepto: una persona viaja en el tiempo y resulta ser su propia madre y su propio padre. Es el ejemplo de un individuo creado en un bucle temporal sin origen externo.',
+    "id": "bootstrap",
+    "title": "El Bucle Bootstrap",
+    "color": "#E040FB",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_bootstrap.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_bootstrap.webp",
+    "content": [
+      "En la electrizante escena final del baile escolar, Marty McFly sube al escenario y toca con virtuosismo el tema «Johnny B. Goode» ante una multitud atónita de 1955, mientras Marvin Berry telefonea a su primo Chuck Berry para que escuche ese sonido revolucionario. Este memorable momento cinematográfico encarna la llamada paradoja ontológica o bucle bootstrap: una situación circular donde un objeto, idea o melodía viaja al pasado y se convierte en la fuente inspiradora de sí misma, sin poseer un punto de creación original.",
+      "El término bootstrap proviene de la expresión inglesa «pull oneself up by one's bootstraps», aludiendo a la imposibilidad mecánica de levantarse a uno mismo en el aire tirando de los cordones de las propias botas. En el terreno de la física teórica y la filosofía del tiempo, el dilema no gira en torno a la contradicción lógica de una acción como matar al abuelo, sino a la génesis de la información: ¿quién compuso originalmente la canción si Chuck la copió de Marty y Marty la aprendió del disco de Chuck?",
+      "Desde la teoría de la información de Claude Shannon y la termodinámica estadística, los bucles ontológicos plantean un quebradero de cabeza extraordinario. La información no es una abstracción inmaterial: requiere soporte físico y energía termodinámica para codificarse en bits o vibraciones sonoras. Si un fragmento de información circula indefinidamente en un circuito causal cerrado sin un acto de creación disipativa, el sistema viola el principio de causalidad informacional.",
+      "Los físicos teóricos analizan este fenómeno mediante partículas virtuales que emergen espontáneamente del vacío cuántico en horizontes de sucesos. Sin embargo, a escala macroscópica, un manuscrito o una partitura física atrapada en un bucle cerrado estaría sometida a la degradación entrópica ineludible: con cada ciclo temporal, el papel envejecería y la tinta se degradaría paulatinamente por oxidación, contradiciendo la noción de un ciclo inmutable y perfectamente cerrado.",
+      "Pese a estas objeciones físicas clásicas, en ciertas soluciones matemáticas de la relatividad general no existe ninguna ley que prohíba de forma explícita las trayectorias causales circulares consistentes para campos cuánticos escalares. Si el bucle cerrado no genera inconsistencias globales ni produce paradojas de no-existencia, la matemática abstracta del espaciotiempo lo acepta como una solución matemáticamente permitida, aunque físicamente desconcertante."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_bootstrap.webp',
-    bannerCaption: 'El bucle bootstrap: paradoja de información sin origen causal',
-    fact: 'El nombre «paradoja bootstrap» viene del relato de Robert Heinlein «By His Bootstraps» (1941). La frase «levantarte tirando de tus propias botas» originalmente describía algo imposible â€” ¡no puedes levantarte tirando de tus propios zapatos!',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La paradoja bootstrap más famosa de la trilogía ocurre con la canción "Johnny B. Goode". En el baile de 1955, Marty toca la canción al estilo de Chuck Berry, quien aún no la ha compuesto. El primo de Chuck Berry está presente y llama por teléfono para que Chuck escuche "su próximo gran éxito". Esto significa que Chuck Berry aprendió su propia canción de Marty, quien la aprendió de Chuck Berry. La canción no tiene creador original: existe en un bucle cerrado sin origen. Robert Zemeckis incluyó esta paradoja deliberadamente como un guiño inteligente a los viajes temporales.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m3/banner_bootstrap.webp",
+    "bannerCaption": "El bucle bootstrap: paradoja de información sin origen causal",
+    "fact": "La guitarra Gibson ES-345 que Marty McFly utiliza en el baile escolar de 1955 presenta un error cronológico fascinante: ese modelo de instrumento eléctrico con selector estéreo Varitone no fue fabricado ni comercializado por la factoría Gibson hasta el año 1958, convirtiendo al propio instrumento material en un objeto adelantado a su tiempo histórico real.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Michael J. Fox no cantó ni tocó los acordes definitivos en la pista sonora original de la película: la voz perteneció al cantante Mark Campbell y los solos de guitarra fueron ejecutados con maestría por el guitarrista Tim May. Sin embargo, Fox ensayó intensamente durante semanas con un profesor particular para aprender a colocar los dedos en los trastes exactos de la Gibson ES-345 roja de 1958."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La paradoja bootstrap fue descrita formalmente en la literatura de ciencia ficción por Robert A. Heinlein en su cuento de 1941 «By His Bootstraps». En física moderna de agujeros negros, la conservación de la información cuántica estudiada por Leonard Susskind y Gerard 't Hooft reafirma que la información cósmica jamás puede surgir de la nada ni destruirse sin huella observable."
+      }
+    ]
   },
   {
-    id: 'gemelos', title: 'La Paradoja de los Gemelos', color: '#FF6B00',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_gemelos.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_gemelos.webp',
-    content: [
-      'La paradoja de los gemelos se basa en principios físicos comprobados. La Teoría de la Relatividad Especial (1905) establece que el tiempo transcurre más lento a medida que aumenta la velocidad del observador.',
-      'Si un gemelo viaja al espacio al 90% de la velocidad de la luz durante 5 años, al regresar a la Tierra habrán pasado 11.5 años para su hermano. La diferencia de edad es un efecto físico real.',
-      'En 1971, el experimento de Hafele-Keating comprobó este efecto volando relojes atómicos en aviones comerciales. Los relojes a bordo registraron una pérdida de tiempo respecto a los relojes en tierra, tal como predecía la relatividad.',
-      'Los satélites GPS aplican estos ajustes a diario. Por orbitar a gran velocidad y menor gravedad terrestre, sus relojes se desfasan 38 microsegundos por día. Sin compensación relativista, el sistema acumularía grandes errores de posición.',
-      'El astronauta Scott Kelly pasó 340 días en la Estación Espacial Internacional. Al volver a la Tierra, resultó ser 5 milisegundos más joven que su hermano gemelo, convirtiéndose en un viajero hacia el futuro.',
+    "id": "gemelos",
+    "title": "La Paradoja de los Gemelos",
+    "color": "#FF6B00",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_gemelos.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_gemelos.webp",
+    "content": [
+      "A diferencia de las máquinas del tiempo que requieren saltos retroactivos mágicos en el guion de cine, la física relativista real posee un método científicamente demostrado para viajar hacia el futuro: la aceleración cinemática. En Regreso al Futuro, el Doc sincroniza dos cronómetros de pulsera y envía a su perro Einstein un minuto al futuro a bordo del DeLorean. Esta escena traslada al lenguaje cinematográfico la célebre paradoja de los gemelos, propuesta por Albert Einstein y Paul Langevin para ilustrar la dilatación temporal.",
+      "El experimento mental original plantea a dos hermanos gemelos idénticos en la Tierra. Uno de ellos aborda una nave espacial que viaja a una fracción considerable de la velocidad de la luz hacia una estrella vecina, mientras el otro permanece en reposo en el hogar terrestre. Al regresar de su expedición interestelar, el astronauta descubre con asombro que mientras para él transcurrieron apenas un par de años biológicos, su hermano gemelo ha envejecido décadas y luce como un anciano respetable.",
+      "La aparente paradoja radica en la cuestión de la simetría: desde la perspectiva relativista del gemelo viajero, ¿no es la Tierra la que se aleja a gran velocidad, y por tanto el hermano terrestre debería ser el más joven? La resolución de este aparente conflicto reside en que ambos marcos de referencia no son equivalentes. El gemelo terrestre permanece en un sistema de referencia inercial constante, mientras que el gemelo viajero experimenta aceleraciones brutales al despegar, frenar y dar la vuelta a su nave espacial.",
+      "La aceleración rompe la simetría inercial y curva la línea de universo del viajero en el espaciotiempo de Minkowski. El cálculo riguroso del tiempo propio a lo largo de esa trayectoria demuestra que el intervalo temporal transcurrido para el gemelo acelerado es estrictamente menor que para el gemelo inercial, un resultado que ha sido verificado con precisión nanométrica mediante aceleradores de partículas de alta energía en centros como el CERN de Ginebra.",
+      "En la vida cotidiana, este fenómeno relativista es imperceptible porque los seres humanos nos movemos a velocidades ridículas en comparación con la velocidad de la luz. Sin embargo, para los satélites de telecomunicaciones, sondas espaciales interplanetarias y partículas subatómicas de alta energía cósmica, la dilatación cinemática del tiempo es un efecto cotidiano fundamental que la ingeniería moderna debe calcular con exactitud milimétrica para evitar fallos de posicionamiento global."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_gemelos.webp',
-    bannerCaption: 'La paradoja de los gemelos: dilatación del tiempo en viaje relativista',
-    fact: 'Scott Kelly es 5 milisegundos más joven que su gemelo idéntico Mark Kelly (ahora senador de EE.UU. Por Arizona) porque pasó 520 días totales en el espacio. La ISS orbita a 7.66 km/s. Cada astronauta que regresa de la ISS ha viajado un poquito al futuro.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La paradoja de los gemelos aparece de forma sutil en «BTTF Parte III» (1990). Doc Brown ha vivido en 1885 durante ocho meses antes de que Marty llegue. Cuando regresan a 1985, Doc ha envejecido biológicamente esos ocho meses. Al final, Doc aparece con Clara y sus dos hijos Jules y Verne en un tren de vapor convertido en máquina del tiempo, con la familia en diferentes "edades temporales" dependiendo de cuánto tiempo han pasado en diferentes épocas. La película ilustra que el envejecimiento biológico es absoluto e independiente de a qué fecha llegues: el tiempo propio siempre avanza.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m3/banner_gemelos.webp",
+    "bannerCaption": "La paradoja de los gemelos: dilatación del tiempo en viaje relativista",
+    "fact": "Los astronautas gemelos de la NASA Scott y Mark Kelly participaron en un experimento biomédico en 2015: tras pasar Scott 340 días continuos en la Estación Espacial Internacional a 27.600 km/h, regresó a la Tierra siendo biológicamente 8,6 milisegundos más joven que su hermano gemelo Mark, quien permaneció en tierra firme durante todo el año de la misión.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Los dos cronómetros idénticos de lectura digital utilizados en la primera prueba del DeLorean en el aparcamiento comercial eran modelos comerciales de la marca Seiko acoplados a carcasas metálicas protectoras. El primer salto cronometrado duró exactamente un minuto terrestre, marcando las 01:21 horas con precisión ante la mirada asombrada de Marty y la euforia desbordante del científico."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los muones producidos por el impacto de rayos cósmicos en las capas altas de la atmósfera terrestre poseen una vida media en reposo de solo 2,2 microsegundos. Sin embargo, al viajar a velocidades superiores al 99,9% de la velocidad de la luz, su reloj interno se dilata tanto que logran alcanzar la superficie terrestre antes de desintegrarse, confirmando experimentalmente la dilatación temporal."
+      }
+    ]
   },
   {
-    id: 'novikov', title: 'El Principio de Autoconsistencia', color: '#7C4DFF',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_novikov.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_novikov.webp',
-    content: [
-      'El físico Igor Novikov propuso que el universo no permite paradojas temporales. Su Principio de Autoconsistencia establece que los eventos influenciados por un viajero en el tiempo deben ser consistentes con la historia previa.',
-      'Según este principio, si intentas alterar el pasado, los factores externos lo impedirán. El universo forzará los eventos para mantener la línea temporal sin alteraciones contradictorias.',
-      'Kip Thorne trabajó con Novikov en el desarrollo matemático de este principio y lo aplicó en asesorías científicas para obras de ficción, manteniendo coherencia con las leyes de la física.',
-      'Thorne analizó un experimento donde una bola de billar viaja al pasado por un agujero de gusano e impacta contra su versión anterior. Demostró matemáticamente que el choque desvía la bola de una manera que previene paradojas.',
-      'En la película, la historia se reajusta tras los cambios provocados por Marty. Sus padres terminan juntos mediante eventos diferentes, manteniendo la consistencia de su propia existencia.',
+    "id": "novikov",
+    "title": "El Principio de Autoconsistencia",
+    "color": "#7C4DFF",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_novikov.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_novikov.webp",
+    "content": [
+      "En la ficción cinematográfica, las reglas del viaje temporal suelen premiar la intervención activa de los héroes: Marty McFly lucha con uñas y dientes para vencer al matón Biff y lograr que sus padres se enamoren en 1955. La trama asume que la historia es plástica y modificable. Sin embargo, a mediados de la década de 1980, el prestigioso astrofísico ruso Igor Dmitriyevich Novikov formuló un principio físico radicalmente opuesto: si las leyes de la física permiten viajar al pasado, la probabilidad de provocar una paradoja es exactamente cero.",
+      "El principio de autoconsistencia de Novikov postula que en presencia de curvas temporales cerradas solo pueden manifestarse localmente aquellos acontecimientos que sean globalmente coherentes con la historia preexistente. Cualquier intento deliberado por parte de un viajero temporal de cambiar un acontecimiento ya registrado en el pasado fracasará inevitablemente por causas fortuitas, mecánicas o biológicas, garantizando que el pasado no se reescriba jamás sino que se cumpla de forma inexorable.",
+      "Bajo la óptica de Novikov, si una persona viaja al pasado con el propósito explícito de impedir el accidente automovilístico de un ser querido, sus propias acciones en el pasado resultarán ser la causa fortuita o inadvertida que desató dicho accidente. Lejos de cambiar la historia, el viajero descubre con impotencia que siempre formó parte del engranaje causal original, cerrando el bucle histórico sin dejar margen para líneas temporales alternativas ni vacíos lógicos.",
+      "Desde la formulación matemática de caminos de Richard Feynman en física cuántica, el principio de Novikov encuentra un respaldo asombroso. Al sumar todas las historias posibles para una partícula cuántica que recorre una curva temporal cerrada, aquellas trayectorias que contienen contradicciones causales poseen amplitudes de probabilidad que se interfieren y anulan destructivamente por completo, sobreviviendo exclusivamente las trayectorias globales matemáticamente consistentes.",
+      "Esta visión elimina el caos paradójico sin recurrir a la proliferación de universos paralelos de Everett, pero arroja una profunda sombra filosófica sobre la libertad de acción en el cosmos. Para los seres conscientes, el universo de Novikov se comporta como una obra de teatro cósmica donde el guion completo ya ha sido interpretado y archivado: podemos movernos hacia atrás en el escenario, pero estamos obligados por las leyes de la termodinámica y la gravitación a recitar los mismos parlamentos previstos."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_novikov.webp',
-    bannerCaption: 'El principio de autoconsistencia de Novikov: el pasado no puede cambiarse',
-    fact: 'Kip Thorne ganó el Nobel de Física 2017 por detectar ondas gravitacionales. También fue consultor científico de «Interstellar» (2014) y sus ecuaciones del agujero negro Gargantúa fueron tan precisas que generaron artículos científicos reales. Literalmente convirtió una película en investigación.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El Principio de Autoconsistencia de Novikov se manifiesta en cómo la trilogía resuelve sus propias paradojas. En el primer film, cuando Marty regresa a 1985, descubre que su familia ha mejorado gracias a sus intervenciones en 1955: su padre George ahora es escritor exitoso y su familia es más próspera. Los eventos que Marty desencadenó inconscientemente crearon exactamente la realidad consistente que permite que él exista y viaje al pasado. Zemeckis y Gale construyeron toda la trilogía respetando implícitamente este principio: las alteraciones terminan siendo parte de la historia original.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m3/banner_novikov.webp",
+    "bannerCaption": "El principio de autoconsistencia de Novikov: el pasado no puede cambiarse",
+    "fact": "El astrofísico Igor Novikov fue uno de los pioneros en estudiar los agujeros negros en la Unión Soviética junto a Yakov Zel'dovich y propuso en 1964 que los agujeros blancos podrían constituir los puntos de salida de túneles espaciotemporales, investigaciones pioneras que sentaron las bases matemáticas de la física gravitatoria de bucles modernos.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Paradójicamente, la primera entrega de Regreso al Futuro coquetea con el principio de Novikov en detalles ingeniosos: cuando Marty choca accidentalmente contra uno de los dos pinos de la granja Peabody en 1955, provoca que el centro comercial de 1985 cambie su nombre original de «Twin Pines Mall» a «Lone Pine Mall», mostrando una causa pasada que ya modeló sutilmente su entorno inicial."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El físico teórico Kip Thorne colaboró estrechamente con Igor Novikov en la década de 1980 explorando soluciones relativistas para billares de Polchinski en agujeros de gusano. Sus cálculos publicados demostraron que para cualquier condición de lanzamiento inicial existen trayectorias autoconsistentes que evitan cualquier choque paradójico entre la bola del futuro y la del pasado."
+      }
+    ]
   },
   {
-    id: 'delorean', title: 'Ciencia Detrás del DeLorean', color: '#FFA500',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_delorean.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_delorean.webp',
-    content: [
-      'Según la relatividad, el tiempo se distorsiona conforme un objeto acelera. Alcanzar el límite de la velocidad de la luz produce efectos temporales marcados.',
-      'Para deformar el espacio-tiempo se requiere materia exótica con energía negativa. Modelos teóricos como el motor warp de Alcubierre dependen de este tipo de energía para funcionar.',
-      'El DeLorean requería 1.21 gigawatts de potencia, una cantidad equivalente a la producida por un reactor nuclear. Esta demanda energética concuerda con las necesidades teóricas para la manipulación espacial.',
-      'A velocidades cercanas a la de la luz, un objeto emitiría radiación de Cherenkov en un espectro azul, distinta a las llamas naranjas presentadas en la película.',
-      'El DeLorean DMC-12 fue seleccionado para la película por su carrocería de acero inoxidable y sus puertas de ala de gaviota. Se fabricaron aproximadamente 9,000 unidades en la década de 1980.',
+    "id": "delorean",
+    "title": "Ciencia Detrás del DeLorean",
+    "color": "#FFA500",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_delorean.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_delorean.webp",
+    "content": [
+      "El doctor Emmett Brown justificó la elección de su bólido ante un perplejo Marty con una frase grabada en la memoria colectiva: «Si vas a construir una máquina del tiempo en un coche, ¿por qué no hacerlo con estilo?». Además de su belleza estética, el Doc argumentó que la carrocería de acero inoxidable facilitaba la dispersión adecuada del flujo temporal durante el salto. En el mundo del diseño automotriz de 1981, el DeLorean DMC-12 era una rareza tecnológica cargada de audacia mecánica y fragilidad empresarial.",
+      "Diseñado por el legendario estilista italiano Giorgetto Giugiaro y concebido por el ejecutivo John DeLorean, el automóvil presentaba paneles exteriores de acero inoxidable austenítico cepillado de grado 304, montados sobre una estructura interna de plástico reforzado con fibra de vidrio y chasis Lotus. Esta aleación metálica, comúnmente utilizada en la industria química y aeroespacial por su resistencia a la corrosión salina, carecía de pintura protectora, otorgándole una apariencia metálica plateada de vanguardia.",
+      "Desde la ingeniería electromagnética real, una carrocería metálica cerrada como la del DeLorean actúa como una excelente jaula de Faraday, descubierta por Michael Faraday en 1836. Cuando el vehículo es alcanzado por el rayo en la torre del reloj en la escena climática de 1955, la enorme corriente eléctrica de la descarga atmosférica viaja por la superficie externa conductora de acero inoxidable y se disipa hacia el suelo, protegiendo a los ocupantes y los circuitos de a bordo de electrocución letal.",
+      "Sin embargo, las prestaciones mecánicas del automóvil real distaban mucho del bólido superdeportivo proyectado en pantalla. Con un peso superior a 1.230 kilogramos y equipado con un motor atmosférico PRV V6 de 2,85 litros desarrollado conjuntamente por Peugeot, Renault y Volvo, el vehículo producía apenas unos modestos 130 caballos de fuerza en su versión estadounidense, tardando más de 10,5 segundos en acelerar de cero a 88 millas por hora en condiciones ordinarias.",
+      "Para las complejas secuencias de acción cinematográfica, el equipo técnico de efectos mecánicos tuvo que modificar profundamente los motores de varios ejemplares de producción, reemplazando el bloque motriz original por motores de ocho cilindros en V más potentes e instalando sistemas de frenado de disco de alto rendimiento para garantizar maniobras seguras en los aparcamientos y calles de rodaje californianas sin poner en peligro a los especialistas de acción."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_delorean.webp',
-    bannerCaption: 'La ciencia real detrás del diseño del DeLorean máquina del tiempo',
-    fact: 'El guion original tenía la máquina del tiempo como un refrigerador, no un auto. Steven Spielberg (productor ejecutivo) temía que los niños se encerraran en refrigeradores imitando la película, así que lo cambiaron a un auto. El DeLorean fue elegido porque su carrocería de acero y puertas de gaviota ya parecían una nave espacial.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'El DeLorean DMC-12 fue elegido porque sus puertas de ala de gaviota y carrocería de acero inoxidable ya parecían futuristas. En el guion original, la máquina del tiempo era un refrigerador transportado en una camioneta. Steven Spielberg lo cambió por temor a que niños imitaran encerrarse en refrigeradores. El DeLorean necesita alcanzar exactamente 88 mph (142 km/h) y generar 1.21 gigawatts mediante el condensador de fluzo (flux capacitor) para activar el viaje temporal. En la película, la energía proviene de un rayo canalizado desde el reloj del juzgado — una solución narrativa que hizo que el clímax fuera una carrera contrarreloj literal.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m3/banner_delorean.webp",
+    "bannerCaption": "La ciencia real detrás del diseño del DeLorean máquina del tiempo",
+    "fact": "La fábrica de DeLorean Motor Cars construyó un total de aproximadamente 9.000 unidades en Dunmurry, Irlanda del Norte, entre enero de 1981 y finales de 1982 antes de declararse en quiebra económica; se calcula que en la actualidad sobreviven más de 6.500 ejemplares cuidados con devoción por coleccionistas automovilísticos de todo el globo terráqueo.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La producción empleó un total de seis automóviles DeLorean DMC-12 auténticos durante el rodaje de la trilogía, además de un modelo de fibra de vidrio a escala real construido expresamente para las tomas aéreas de efectos especiales donde el coche levita en el año 2015 bajo la supervisión de la compañía Industrial Light & Magic de George Lucas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El acero inoxidable austenítico de grado 304 utilizado en los paneles del DeLorean contiene un 18% de cromo y un 8% de níquel, lo que confiere una estructura cristalina cúbica centrada en las caras (austenita) no magnética a temperatura ambiente, exhibiendo una resistividad eléctrica de 72 microohmios por centímetro idónea para disipar corrientes electrostáticas."
+      }
+    ]
   },
   {
-    id: 'cronologia', title: 'La Protección Cronológica', color: '#00E676',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_cronologia.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_cronologia.webp',
-    content: [
-      'En 1992, Stephen Hawking propuso la Conjetura de Protección Cronológica, argumentando que las leyes de la física impiden la formación de curvas cerradas de tiempo para evitar el viaje al pasado.',
-      'Hawking organizó una fiesta para viajeros del tiempo en 2009, enviando las invitaciones después del evento. Ningún viajero asistió a la celebración.',
-      'La formación de una máquina del tiempo mediante agujeros de gusano produciría inestabilidades cuánticas. La concentración de energía destruiría la estructura antes de ser funcional.',
-      'El concepto de «censura cósmica» sugiere que el universo oculta singularidades, del mismo modo que los agujeros negros se ocultan tras sus horizontes de eventos. Esta protección mantendría la coherencia causal.',
-      'El viaje al pasado permanece en un estado teórico indefinido porque la Relatividad General y la Mecánica Cuántica no han sido unificadas. Una teoría de gravedad cuántica podría resolver definitivamente esta cuestión.',
+    "id": "cronologia",
+    "title": "La Protección Cronológica",
+    "color": "#00E676",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_cronologia.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_cronologia.webp",
+    "content": [
+      "En la gran pantalla, los personajes desafían el tiempo a su antojo siempre que consigan suficiente plutonio o conecten un gancho a un cable eléctrico en el instante preciso del rayo. Pero en el universo real, ¿por qué no estamos rodeados de turistas temporales venidos del siglo XXX? A comienzos de la década de 1990, el célebre físico británico Stephen Hawking propuso una respuesta científica contundente a este enigma cósmico: la conjetura de protección cronológica de la física relativista.",
+      "Hawking formuló su conjetura tras revisar minuciosamente los modelos matemáticos de agujeros de gusano transitables desarrollados por Kip Thorne y Michael Morris. El científico de Cambridge demostró que tan pronto como una configuración geométrica del espaciotiempo comienza a desarrollar una curva temporal cerrada, las fluctuaciones de vacío de la mecánica cuántica se retroalimentan de forma destructiva a través del túnel temporal a la velocidad de la luz, generando una explosión de energía destructiva.",
+      "Este fenómeno es idéntico al chirrido ensordecedor que se produce en un concierto de música cuando un cantante acerca accidentalmente el micrófono al altavoz: el sonido emitido entra por el micrófono, se amplifica, sale por el altavoz y vuelve a entrar en una fracción de segundo, multiplicándose exponencialmente hasta saturar los amplificadores de audio. En el tejido espaciotemporal cuántico, esta resonancia desbocada de energía del punto cero destruiría el túnel en el preciso instante de formarse.",
+      "La conjetura de protección cronológica estipula de forma poética y rigurosa que «las leyes de la física conspiran conjuntamente para evitar el viaje en el tiempo al pasado por parte de objetos macroscópicos, protegiendo así la historia para el deleite de los historiadores». Aunque todavía carecemos de una teoría unificada definitiva de la gravedad cuántica para demostrarla con certeza absoluta, la conjetura goza de amplio consenso entre los cosmólogos teóricos modernos.",
+      "Comprender la protección cronológica obliga a distinguir nítidamente entre dos direcciones temporales asimétricas. El viaje hacia el futuro está plenamente avalado por la teoría de la relatividad y es un hecho cotidiano para partículas y satélites espaciales; en cambio, el viaje hacia el pasado parece chocar contra una barrera termodinámica y cuántica insalvable que preserva la coherencia causal del cosmos e impide que la realidad se disuelva en un caos autorreferencial."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_cronologia.webp',
-    bannerCaption: 'La conjetura de protección cronológica de Hawking',
-    fact: 'La fiesta de Stephen Hawking para viajeros del tiempo fue el 28 de junio de 2009 en Cambridge. Las invitaciones se enviaron DESPUÉS, con coordenadas exactas: 52°12\'21"N, 0°7\'4.7"E. Nadie apareció. Hawking mantuvo el champán listo por si acaso y dijo: «Tengo evidencia experimental de que el viaje en el tiempo no es posible.»',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La "Protección Cronológica" está implícita en toda la trilogía: cada vez que Marty altera el pasado, el universo encuentra una forma de mantener la coherencia. El ejemplo más claro ocurre en «BTTF II» cuando Marty intenta recuperar el almanaque deportivo del Biff de 1955. Aunque falla varias veces, los eventos conspiran para que el almanaque termine destruido en el incinerador. Doc Brown dice la frase clave: "El tiempo no permite contradicciones." Irónicamente, la trilogía termina con Doc abandonando el presente para vivir en el pasado con Clara, lo que podría verse como una violación deliberada de este principio — la "protección" no puede detener el amor.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m3/banner_cronologia.webp",
+    "bannerCaption": "La conjetura de protección cronológica de Hawking",
+    "fact": "En su artículo científico de 1992 publicado en Physical Review D bajo el título «Chronology Protection Conjecture», Stephen Hawking calculó formalmente que para mantener estable un agujero de gusano sin que las fluctuaciones cuánticas lo hicieran estallar se requeriría una densidad de energía negativa superior a la masa total de galaxias enteras condensadas.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En el guion original de Regreso al Futuro, el Doc Brown advierte reiteradamente sobre las consecuencias cósmicas catastróficas de alterar el continuo temporal, advirtiendo que una alteración no resuelta podría provocar una reacción en cadena que destruiría el tejido mismo del espaciotiempo y aniquilaría el universo entero, un temor dramático muy afín a la hipótesis de Hawking."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En teoría cuántica de campos en espacios curvos, el tensor de energía-impulso renormalizado diverge asintóticamente cuando una geodésica se aproxima a un horizonte de Cauchy. Esto significa que la densidad de energía cuántica se vuelve matemáticamente infinita en el umbral de la máquina del tiempo, confirmando el mecanismo destructor postulado por Stephen Hawking."
+      }
+    ]
   },
   {
-    id: 'futuro-ciencia', title: 'El Futuro de la Ciencia del Tiempo', color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_paradojas/btn_futuro.webp',
-    image: '/assets/bttf/infographic_paradojas/hero_futuro.webp',
-    content: [
-      'El viaje al futuro es un fenómeno comprobado por la dilatación temporal de la relatividad. Efectos similares se miden en el GPS, los vuelos espaciales y los aceleradores de partículas.',
-      'La viabilidad del viaje al pasado, la estabilización de agujeros de gusano y la Conjetura de Protección Cronológica son problemas pendientes en la investigación física actual.',
-      'La conjetura ER=EPR plantea que los agujeros de gusano y el entrelazamiento cuántico son el mismo fenómeno. De ser correcta, proporcionaría un modelo físico sobre cómo la información conecta diferentes puntos espaciotemporales.',
-      'Las representaciones del viaje temporal en la ciencia ficción han estimulado la formulación de hipótesis matemáticas e impulsan la exploración de la física teórica.',
-      'Las paradojas temporales operan como herramientas para identificar fallos en los modelos actuales. Cuestionar la causalidad o la dirección del tiempo promueve el avance en nuestra comprensión del universo.',
+    "id": "futuro-ciencia",
+    "title": "El Futuro de la Ciencia del Tiempo",
+    "color": "#FFD740",
+    "btnImage": "/assets/bttf/infographic_paradojas/btn_futuro.webp",
+    "image": "/assets/bttf/infographic_paradojas/hero_futuro.webp",
+    "content": [
+      "Las aventuras de Marty McFly a lo largo de tres siglos cinematográficos distintos demuestran que el ser humano siempre ha sentido una fascinación irrefrenable por descifrar el reloj cósmico. Mientras que el cine explora estas ideas mediante aventuras heroicas con efectos especiales deslumbrantes, los laboratorios científicos del siglo XXI abordan el misterio del tiempo con herramientas experimentales de una precisión inconcebible para las generaciones pasadas de científicos y pensadores ilustrados.",
+      "En la vanguardia de la metrología contemporánea, los relojes atómicos de red óptica basados en átomos de estroncio e iterbio han alcanzado una exactitud tan colosal que no perderían un solo segundo aunque hubieran estado funcionando ininterrumpidamente desde el instante inicial del Big Bang, hace 13.800 millones de años. Estos prodigios técnicos son capaces de detectar la dilatación gravitatoria einsteiniana provocada por una diferencia de elevación de apenas dos milímetros en la superficie de un laboratorio.",
+      "Paralelamente, los avances teóricos en gravedad cuántica de bucles y teoría de cuerdas sugieren que el tiempo continuo podría no ser una propiedad fundamental del cosmos, sino una propiedad emergente a gran escala, comparable a la temperatura o la presión de un gas. A nivel ultra-microscópico, en la escala de Planck de 10 a la menos 35 metros, el espaciotiempo se comportaría como una espuma cuántica discontinua donde el concepto convencional de orden cronológico antes y después pierde su sentido operativo.",
+      "La física de la información cuántica también está reescribiendo la conexión íntima entre la entropía termodinámica y el flujo del tiempo. Investigadores internacionales en termodinámica cuántica estudian cómo el entrelazamiento entre partículas subatómicas actúa como el pegamento invisible que genera la flecha irreversible del tiempo macroscópico, transformando la memoria cuántica en un testigo indeleble de cada interacción física acontecida en el universo.",
+      "Aunque construir un vehículo capaz de saltar a voluntad hacia épocas pretéritas seguirá perteneciendo con casi total seguridad a la fantasía cinematográfica más querida, la búsqueda científica de la naturaleza del tiempo nos está revelando los secretos más profundos de la creación cósmica. Cada ecuación resuelta y cada medición atómica de alta precisión nos acerca a descifrar quiénes somos, de dónde venimos y hacia qué horizonte futuro se encamina la especie humana."
     ],
-    bannerImage: '/assets/bttf/infographic_m3/banner_futuro-ciencia.webp',
-    bannerCaption: 'El futuro de la ciencia del tiempo: de la teoría a la posibilidad',
-    fact: 'En 2014, científicos de la Universidad de Queensland simularon un fotón viajando a través de curvas temporales cerradas e interactuando con su versión más joven. La simulación mostró que el fotón SIEMPRE encontraba un camino autoconsistente, apoyando los modelos teóricos de viaje temporal autoconsistente. Fue la primera simulación cuántica de este tipo, publicada en Nature Communications.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Las predicciones de «BTTF Parte II» sobre el año 2015 se han analizado extensamente. Acertadas: videollamadas, televisión de pantalla plana con múltiples canales simultáneos, prendas que se ajustan solas, reconocimiento de huellas digitales, gafas de realidad aumentada. No realizadas en 2015: hoverboards reales (existen prototipos en superficies metálicas), automóviles voladores, deshidratación instantánea de pizza, zapatos que se atan solos (Nike los lanzó como edición especial en 2016). La película predijo que los Chicago Cubs ganarían la Serie Mundial en 2015 — los Cubs ganaron en 2016, un año tarde, en lo que muchos fans consideraron una victoria "inspirada por la película".' },
-    ],
-  },
+    "bannerImage": "/assets/bttf/infographic_m3/banner_futuro-ciencia.webp",
+    "bannerCaption": "El futuro de la ciencia del tiempo: de la teoría a la posibilidad",
+    "fact": "La escala de tiempo de Planck, fijada en aproximadamente 5,39 x 10 a la menos 44 segundos, representa el intervalo temporal más diminuto con significado físico en la teoría cuántica actual; ningún instrumento experimental concebible puede medir lapsos inferiores sin que la energía requerida colapse el espacio en un micro-agujero negro gravitacional.",
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El célebre reloj de la torre del tribunal de Hill Valley, detenido a las 10:04 de la noche tras el impacto del rayo del 12 de noviembre de 1955, es el símbolo visual supremo de la trilogía. En la escena final de la tercera entrega, el Doc y Clara regalan a Marty un cuadro conmemorativo con la esfera del reloj restaurada como homenaje a su amistad a través del tiempo."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El Instituto Nacional de Estándares y Tecnología (NIST) de Estados Unidos y la Universidad de Colorado operan relojes de red óptica de estroncio con una incertidumbre fraccionaria de frecuencia inferior a 1 parte en 10 elevado a 18. Esta sensibilidad permite usar los relojes como sensores geofísicos ultrasensibles para cartografiar el manto terrestre y buscar ondas gravitatorias."
+      }
+    ]
+  }
 ];
 
 /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•

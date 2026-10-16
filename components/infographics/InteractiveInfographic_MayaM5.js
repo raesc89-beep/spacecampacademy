@@ -89,144 +89,200 @@ const DECO_MAP = {
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'rueda-mecanismo',
-              bannerImage: '/assets/maya/infographic_m5/banner_calendario-comparado.webp',
-    title: 'El Mecanismo',
-    color: '#1565C0',
-    btnImage: '/assets/maya/infographic_m5/btn_rueda-mecanismo.jpg',
-    image: '/assets/maya/infographic_m5/hero_rueda-mecanismo.jpg',
-    content: [
-      'Imagina que tienes dos engranajes en una bicicleta que giran juntos al pedalear. Los antiguos mayas hicieron esto con el tiempo. Inventaron la Rueda Calendárica, un sistema que unía dos calendarios. El Tzolkin duraba 260 días y era un calendario sagrado con fines rituales. El Haab era un calendario solar de 365 días, usado para saber cuándo sembrar y cosechar.',
-      'Cuando estos engranajes giraban juntos, cada día recibía un nombre del Tzolkin y otro del Haab. Como los engranajes tienen diferentes tamaños, las combinaciones tardaban mucho tiempo en repetirse. Es como alinear una marca en la rueda delantera de una bicicleta con otra en la trasera. A los mayas les tomaba 18,980 días (aproximadamente 52 años) para que la Rueda Calendárica diera una vuelta completa.',
-      'Este sistema de medir el tiempo también fue utilizado por otras civilizaciones en Mesoamérica, como los olmecas y los aztecas. Era una herramienta esencial para organizar la agricultura, las ceremonias y las guerras. Los astrónomos mayas lograron entender los ritmos del sol y la luna para crear esta rueda sin usar telescopios modernos.',
-      'El Tzolkin estaba formado por los números del 1 al 13 combinados con 20 nombres de días (como Imix, Ik y Akbal). Al multiplicar 13 por 20, obtenemos los 260 días. Se cree que este ciclo estaba relacionado con la duración del embarazo humano. Por otro lado, el Haab tenía 18 meses, y cada mes duraba 20 días.',
-      'Al multiplicar los 18 meses por los 20 días del Haab, obtienes 360 días. Para completar el ciclo solar, los mayas añadían un mes final llamado Wayeb que duraba 5 días. Estos días eran considerados de mala suerte, por lo que la gente evitaba actividades importantes. Después del Wayeb, el ciclo de 365 días volvía a empezar.'
+    "id": "rueda-mecanismo",
+    "bannerImage": "/assets/maya/infographic_m5/banner_calendario-comparado.webp",
+    "title": "El Mecanismo",
+    "color": "#1565C0",
+    "btnImage": "/assets/maya/infographic_m5/btn_rueda-mecanismo.jpg",
+    "image": "/assets/maya/infographic_m5/hero_rueda-mecanismo.jpg",
+    "content": [
+      "La Rueda Calendárica constituye uno de los logros matemáticos y conceptuales más admirables de la civilización mesoamericana. Este ingenioso sistema cronológico integraba los dos calendarios fundamentales mayas en un solo mecanismo continuo y sincronizado: el ciclo sagrado adivinatorio Tzolk'in de 260 días y el ciclo solar civil Haab' de 365 días. Su funcionamiento conjunto permitía a los antiguos escribas registrar fechas inequívocas a lo largo de más de medio siglo de historia terrenal.",
+      "Para visualizar el funcionamiento de la Rueda Calendárica, los arqueólogos modernos suelen recurrir a la metáfora visual de dos engranajes mecánicos dentados que giran de forma acoplada. Una rueda menor de 260 dientes (correspondiente a las combinaciones numéricas y signos del Tzolk'in) engrana con una rueda mayor de 365 dientes (correspondiente a los días y meses del Haab'). Cada jornada transcurrida implicaba el avance simultáneo de un diente en ambos engranajes sin detenerse jamás.",
+      "Dado que el número 260 y el número 365 comparten únicamente al número 5 como su máximo común divisor (260 = 5 × 52 y 365 = 5 × 73), el mínimo común múltiplo entre ambos ciclos se calcula mediante la fórmula matemática: (260 × 365) ÷ 5 = 18,980 días solares. Esto significa que debían transcurrir exactamente 18,980 días enteros para que una combinación específica del Tzolk'in y del Haab' volviera a coincidir en la misma posición de contacto inicial.",
+      "Al dividir estos 18,980 días entre los dos ciclos involucrados, se descubre una prodigiosa armonía aritmética cerrada: 18,980 días equivalen con total exactitud a 73 revoluciones completas del calendario sagrado Tzolk'in (73 × 260 = 18,980) y a exactamente 52 revoluciones del calendario solar civil Haab' (52 × 365 = 18,980). Este intervalo cerrado de 52 años solares constituía la unidad temporal básica de la historia mesoamericana compartida.",
+      "Ninguna persona común en el mundo maya llegaba a presenciar en su vida dos veces la misma fecha idéntica de la Rueda Calendárica, a menos que alcanzara una longevidad excepcional superior a los 52 años solares. Por esta razón, dentro del horizonte de una vida humana ordinaria, este sistema de doble engranaje ofrecía un fechamiento exacto y sin ambigüedades para registrar nacimientos, ascensos al trono real, acuerdos matrimoniales y campañas bélicas dinásticas."
     ],
-    expandables: [
-      { label: 'Engranajes Maestros', icon: 'clock', text: 'Imagina un gran reloj que en lugar de horas y minutos tiene animales, dioses y números. Los mayas no construyeron un mecanismo de metal, pero llevaban este registro mental con precisión. Anotaban cada ciclo en libros de corteza llamados códices y en monumentos de piedra llamados estelas.' },
-      { label: 'Un Ciclo Interminable', icon: 'clock', text: 'El número 18,980 no es casualidad. Es el Mínimo Común Múltiplo entre 260 y 365. Representa la menor cantidad de días necesarios para que ambos calendarios regresen juntos a su punto de partida. Esto demuestra que los mayas entendían conceptos de aritmética avanzada.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La proporción matemática de 73 ciclos de Tzolk'in por cada 52 años de Haab' es una constante inmutable que no requiere fracciones decimales. El número 73 es un número primo absoluto, lo que garantizaba a los matemáticos mayas que no se produjeran subciclos intermedios que pudieran generar duplicidades erróneas en el fechamiento histórico de los monumentos."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "Los arqueoastrónomos han comprobado que el periodo de 18,980 días de la Rueda Calendárica no solo sincroniza el Tzolk'in y el Haab', sino que también es conmensurable con el ciclo sinódico de Venus: 65 revoluciones de Venus de 584 días suman exactamente 37,960 días, equivalentes a dos Ruedas Calendáricas completas (2 × 18,980 = 37,960 días = 104 años)."
+      }
     ],
-    fact: 'El sistema de la Rueda Calendárica sobrevivió a la caída de las ciudades mayas y a la llegada de los españoles. Hoy en día, en algunas comunidades de Guatemala, los guías espirituales llamados "Ajq\'ijab" siguen llevando la cuenta exacta del Tzolkin de 260 días.'
+    "fact": "La Rueda Calendárica integra el Tzolk'in (260 días) con el Haab' (365 días) en un periodo continuo de 18,980 días solares, cifra que equivale con exactitud matemática a 73 ciclos del calendario sagrado y a 52 años solares civiles completos, conformando el siglo mesoamericano de 52 años, tras el cual se celebraba el crucial ritual del Fuego Nuevo para garantizar la continuidad del cosmos y el renacimiento solar."
   },
   {
-    id: 'fecha-completa',
-              bannerImage: '/assets/maya/infographic_m5/banner_daykeepers.webp',
-    title: 'Una Fecha Completa',
-    color: '#FFB300',
-    btnImage: '/assets/maya/infographic_m5/btn_fecha-completa.jpg',
-    image: '/assets/maya/infographic_m5/hero_fecha-completa.jpg',
-    content: [
-      'Cuando nosotros escribimos una fecha, usamos el día, el mes y el año, como "4 de julio de 2024". Para los mayas, una fecha completa incluía la posición del día en ambos calendarios al mismo tiempo. Es decir, incluía el número y el nombre del día en el Tzolkin, seguido por los del Haab.',
-      'Un ejemplo de fecha maya es "4 Ahau 8 Kumku". En esta fecha, "4 Ahau"pertenece al Tzolkin e indica el número 4 combinado con el día Ahau."8 Kumku" pertenece al Haab y representa el octavo día del mes Kumku. Cuando los mayas tallaban estas fechas en estelas, dibujaban glifos para representar los números y nombres.',
-      'En total, existen 18,980 combinaciones posibles de fechas entre estos dos calendarios. Es como tener una caja fuerte con dos diales giratorios que deben alinearse. Cada día, ambos diales avanzaban una posición. Por eso, cualquier fecha específica solo ocurría una vez cada 52 años solares.',
-      'Aprender a leer y escribir estas fechas requería años de estudio bajo la guía de astrónomos. Quienes dominaban la cuenta del tiempo eran muy respetados. Se creía que las fechas ayudaban a predecir eventos, guiar las cosechas y conocer el destino de los recién nacidos.',
-      'Cuando los arqueólogos descubren estelas mayas en la selva, estudian las fechas de la Rueda Calendárica. Al leer estos glifos, pueden determinar cuándo un gobernante subió al trono, cuándo ocurrió una batalla o cuándo se construyó un templo. Es una forma de reconstruir la historia de esta civilización.'
+    "id": "fecha-completa",
+    "bannerImage": "/assets/maya/infographic_m5/banner_daykeepers.webp",
+    "title": "Una Fecha Completa",
+    "color": "#FFB300",
+    "btnImage": "/assets/maya/infographic_m5/btn_fecha-completa.jpg",
+    "image": "/assets/maya/infographic_m5/hero_fecha-completa.jpg",
+    "content": [
+      "En las inscripciones monumentales que decoran las estelas de piedra, los altares y los paneles de los templos mayas, una fecha formal de la Rueda Calendárica se expresaba mediante la yuxtaposición coordinada de cuatro elementos léxicos: el número y el signo del Tzolk'in, seguidos por el número del día y el nombre del mes en el Haab'. Un ejemplo emblemático de esta fórmula es la célebre fecha sagrada «4 Ajaw 8 Kumk'u», punto de anclaje de la cosmología clásica.",
+      "Debido a la relación aritmética interna entre ambos sistemas calendáricos, no cualquier día del Tzolk'in podía combinarse de forma libre con cualquier fecha del Haab'. Dado que el año solar de 365 días dividido entre los 20 signos del Tzolk'in arroja un cociente de 18 con un residuo de 5 días (365 ÷ 20 = 18, con resto 5), cada nuevo año civil de 365 días comenzaba forzosamente 5 posiciones más adelante en la lista de los veinte días sagrados del Tzolk'in.",
+      "Esta ley aritmética inmutable restringía el inicio de cada año solar del Haab' (el día asiento del mes Pop) a únicamente cuatro signos específicos de la lista de veinte días. Estos cuatro signos elegidos por la matemática cósmica eran conocidos por los sacerdotes como los «Cargadores del Año» (K'uch K'ab'al). En el periodo Clásico maya, los cuatro cargadores anuales eran invariablemente los días Ik', Manik', Eb y Kab'an, espaciados exactamente por cinco posiciones.",
+      "Cada uno de estos cuatro Cargadores del Año gobernaba las energías espirituales y climáticas durante el transcurso de los 365 días de su mandato anual, asociándose a su vez con uno de los cuatro rumbos cardinales del universo y con sus respectivos colores sagrados. Un año regido por el cargador Ik' (viento) presagiaba tormentas y renovación, mientras que un año cargado por Manik' (venado) auguraba éxito en las expediciones de caza y estabilidad política.",
+      "La precisión al registrar una fecha completa de la Rueda Calendárica era tal que los epigrafistas modernos pueden determinar con certeza matemática absoluta el día correspondiente en nuestro calendario gregoriano cuando esta fecha se acompaña de una inscripción de la Cuenta Larga. Este rigor epigráfico ha permitido reconstruir con minuciosidad las biografías de reyes, las fechas de guerras fratricidas y los tratados de paz del mundo maya clásico."
     ],
-    expandables: [
-      { label: 'Un Puzzle Gigante', icon: 'atom', text: 'Para calcular una fecha específica, los escribas mayas usaban patrones cíclicos. A menudo utilizaban cuentas de jade, granos de cacao o conchas para realizar cálculos matemáticos antes de tallar el resultado en bloques de piedra caliza.' },
-      { label: 'El Significado Oculto', icon: 'atom', text: 'Cada fecha de la Rueda Calendárica tenía un significado astrológico. Algunos días se consideraban propicios para casarse o iniciar construcciones, mientras que otros se veían como peligrosos para realizar actividades.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Durante el periodo Posclásico maya en Yucatán, los escribas modificaron el cómputo de los Cargadores del Año adelantando la cuenta en un día, lo que transformó los cuatro signos regentes clásicos (Ik', Manik', Eb y Kab'an) en los signos K'an, Muluk, Ix y Kawak, una reforma calendárica descrita por fray Diego de Landa en su crónica colonial de 1566."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "De las 18,980 combinaciones posibles de una Rueda Calendárica, solo 18,980 ÷ (260 × 365) = 1/5 de las combinaciones teóricas son aritméticamente válidas, ya que un signo del Tzolk'in con un coeficiente determinado solo puede emparejarse con cuatro posiciones numéricas específicas dentro de los meses del Haab'."
+      }
     ],
-    fact: 'El estudio de las fechas mayas ha permitido a los epigrafistas reconstruir la historia de varias dinastías. En la ciudad de Yaxchilán, las fechas talladas en los dinteles de piedra nos dan detalles sobre reyes como Pájaro Jaguar IV, incluyendo el día de su coronación.'
+    "fact": "Una fecha formal de la Rueda Calendárica articula cuatro datos (ejemplo: 4 Ajaw 8 Kumk'u) y está gobernada por uno de los cuatro Cargadores del Año, los únicos signos del Tzolk'in matemáticamente capaces de iniciar el año Haab' debido al residuo de 5 días en la división vigesimal (365 mod 20 = 5), estableciendo una alternancia cíclica perfecta que guiaba los augurios imperiales y la liturgia sacerdotal de las dinastías clásicas."
   },
   {
-    id: 'ciclo-52-anos',
-              bannerImage: '/assets/maya/infographic_m5/banner_fin-baktun.webp',
-    title: 'El Ciclo de 52 Años',
-    color: '#00897B',
-    btnImage: '/assets/maya/infographic_m5/btn_ciclo-52-anos.jpg',
-    image: '/assets/maya/infographic_m5/hero_ciclo-52-anos.jpg',
-    content: [
-      'Así como nosotros celebramos el Año Nuevo, los antiguos mesoamericanos tenían una celebración que ocurría una vez cada 52 años. Este momento marcaba el instante en que el Tzolkin y el Haab completaban sus 18,980 días y regresaban a su punto de partida.',
-      'Dado que 52 años era casi la esperanza de vida en esa época, la mayoría de las personas solo vivía esta celebración una vez. El final del ciclo generaba temor en la población. Temían que el sol no volviera a salir y que el mundo llegara a su fin.',
-      'Para evitar el fin del mundo, realizaban el ritual del Fuego Nuevo. Durante los últimos días del ciclo, la gente rompía sus vasijas, apagaba todas las fogatas y limpiaba sus casas. Las ciudades permanecían a oscuras mientras esperaban las señales astronómicas.',
-      'En la noche, los sacerdotes subían a las pirámides para observar el cielo. Cuando las estrellas de las Pléyades cruzaban el centro del cielo nocturno, encendían un fuego nuevo frotando palos de madera. Al aparecer la llama, celebraban que el mundo tenía otros 52 años de vida.',
-      'A partir de ese fuego original, mensajeros llevaban antorchas para encender hogueras en cada templo y hogar. Las personas estrenaban ropa y celebraban con música y comida. Para ellos, el ciclo de 52 años significaba la renovación de la existencia.'
+    "id": "ciclo-52-anos",
+    "bannerImage": "/assets/maya/infographic_m5/banner_fin-baktun.webp",
+    "title": "El Ciclo de 52 Años",
+    "color": "#00897B",
+    "btnImage": "/assets/maya/infographic_m5/btn_ciclo-52-anos.jpg",
+    "image": "/assets/maya/infographic_m5/hero_ciclo-52-anos.jpg",
+    "content": [
+      "La culminación de un ciclo completo de 52 años de la Rueda Calendárica representaba el acontecimiento civil y religioso más solemne y trascendental de toda la vida mesoamericana. Para los pueblos mayas y sus vecinos contemporáneos del altiplano mexicano, el cierre de este intervalo de 18,980 días no era una simple efeméride conmemorativa, sino un momento de profunda angustia cósmica en el que el Sol y el universo entero se enfrentaban a la posibilidad real de su extinción.",
+      "Existía la creencia compartida de que los dioses creadores concedían la luz y el movimiento a los astros únicamente por periodos sucesivos de 52 años solares. Al llegar el último día del ciclo, el mundo pendía de un hilo: si los seres humanos no realizaban las ofrendas rituales prescritas por los antepasados, el Sol podía no renacer al amanecer siguiente y los monstruos de la oscuridad descenderían desde el cielo nocturno para devorar a la humanidad entera en una noche eterna.",
+      "Para conjurar este peligro apocalíptico, las ciudades mayas celebraban la imponente ceremonia del Fuego Nuevo. Al caer la tarde final del ciclo de 52 años, todos los fuegos de los hogares y templos de la ciudad eran rigurosamente extinguidos. La población arrojaba al fondo de los basureros y barrancas sus vasijas de cocina, sus manos de metate para moler maíz y sus estatuillas de deidades protectoras, simbolizando el final definitivo y la purificación del tiempo fenecido.",
+      "En la cumbre del templo piramidal más elevado del reino, mientras las estrellas de la constelación de las Pléyades cruzaban el meridiano cenital a la medianoche, los sacerdotes de mayor jerarquía taladraban con vigor dos maderas secas sobre el pecho de un guerrero ofrendado. Al brotar la primera chispa sagrada, un clamor de júbilo recorría la urbe: el cosmos había renovado su pacto vital con la humanidad y se garantizaban 52 nuevos años de vida sobre la faz de la Tierra.",
+      "Desde esa llama primordial encendida en la cima del templo, mensajeros reales dotados con antorchas de ocote y resina de pino corrían a toda velocidad por los caminos sacbeob para repartir el fuego sagrado a los altares subsidiarios y a cada uno de los fogones familiares. Asimismo, los reyes aprovechaban esta renovación cósmica para iniciar grandes obras arquitectónicas, cubriendo las viejas pirámides con una nueva capa monumental de caliza para inaugurar el siglo entrante."
     ],
-    expandables: [
-      { label: 'Un Silencio Aterrador', icon: 'clock', text: 'Antes de encender el Fuego Nuevo, la gente seguía estrictas medidas. Se pedía a las mujeres embarazadas que se quedaran en casa, y se mantenía despiertos a los niños bajo la creencia de que podrían transformarse en animales si se dormían durante el cambio de era.' },
-      { label: 'Celebración Azteca', icon: 'atom', text: 'Tenemos descripciones detalladas del ritual del Fuego Nuevo gracias a los aztecas. Ellos realizaban esta ceremonia en el Cerro de la Estrella en el Valle de México, donde las personas observaban la hoguera principal desde sus comunidades.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Entre los pueblos nahuas del centro de México, este hito de 52 años recibía el nombre de Xiuhmolpilli («la Atadura de los Años»), en el que los sacerdotes ataban físicamente en un manojo sagrado cincuenta y dos varillas delgadas de caña verde para simbolizar que un haz completo de tiempo solar había sido concluido y guardado para siempre."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La arqueología mesoamericana ha confirmado de forma empírica la realidad del ciclo de 52 años mediante el hallazgo masivo de vertederos cerámicos que contienen miles de platos, cuencos y sahumadores rotos deliberadamente bajo los pisos de plazas cívicas que datan de transiciones calendáricas registradas en monumentos."
+      }
     ],
-    fact: 'El ciclo de 52 años influyó en la arquitectura mesoamericana. Frecuentemente, los gobernantes ordenaban construir nuevas pirámides directamente sobre las antiguas para marcar el inicio de un nuevo ciclo, renovando así los edificios religiosos.'
+    "fact": "El cierre del ciclo de 52 años de la Rueda Calendárica concluía con la liturgia del Fuego Nuevo en la cúspide de las pirámides principales al cruzar las Pléyades el cenit nocturno, momento en el que se destruían las vasijas viejas y se remodelaban los templos para sellar el inicio de un nuevo siglo mesoamericano."
   },
   {
-    id: 'cuenta-larga',
-              bannerImage: '/assets/maya/infographic_m5/banner_haab-solar.webp',
-    title: 'La Cuenta Larga',
-    color: '#BF360C',
-    btnImage: '/assets/maya/infographic_m5/btn_cuenta-larga.jpg',
-    image: '/assets/maya/infographic_m5/hero_cuenta-larga.jpg',
-    content: [
-      'Como el ciclo de la Rueda Calendárica se reiniciaba cada 52 años, era difícil registrar eventos muy antiguos. Para solucionar esto, los mayas inventaron un sistema lineal llamado la Cuenta Larga. Este sistema permitía registrar millones de días sin repetirse.',
-      'A diferencia de nuestro calendario, que suma un año por cada vuelta al sol, la Cuenta Larga registraba los días continuos desde un "Día Cero". Los cálculos modernos indican que este Día Cero corresponde al 11 de agosto de 3114 a.C. No se sabe con certeza por qué eligieron esta fecha.',
-      'La Cuenta Larga agrupaba el tiempo usando un sistema de base 20. El Kin representaba 1 día. Veinte días formaban un Uinal. Dieciocho uinales formaban un Tun (360 días). Veinte tuns hacían un K\'atun (casi 20 años). Y veinte katunes formaban un B\'ak\'tun (cerca de 394 años).',
-      'Cuando un gobernante maya ordenaba tallar una estela, la fecha se escribía detallando todos estos períodos. Por ejemplo, 9 baktunes, 15 katunes, 0 tuns, 0 uinales y 0 k\'ines. Esto permite a los arqueólogos modernos calcular los días transcurridos desde el 3114 a.C. y encontrar la fecha exacta de los eventos.',
-      'El final de un ciclo de 13 B\'ak\'tunes ocurrió el 21 de diciembre de 2012. Para los antiguos mayas, esto no significaba el fin del mundo. Era similar a pasar del 31 de diciembre al 1 de enero en nuestro calendario; simplemente iniciaba un nuevo ciclo.'
+    "id": "cuenta-larga",
+    "bannerImage": "/assets/maya/infographic_m5/banner_haab-solar.webp",
+    "title": "La Cuenta Larga",
+    "color": "#BF360C",
+    "btnImage": "/assets/maya/infographic_m5/btn_cuenta-larga.jpg",
+    "image": "/assets/maya/infographic_m5/hero_cuenta-larga.jpg",
+    "content": [
+      "Aunque la Rueda Calendárica de 52 años era perfecta para la vida cotidiana de las personas, presentaba una grave limitación para los historiadores de la corte real: no permitía distinguir entre dos sucesos que hubieran ocurrido con una separación de 52, 104 o 156 años en el pasado, al carecer de una cuenta acumulativa lineal continua, similar al problema de registrar fechas históricas solo con el día y el mes sin indicar el año del siglo.",
+      "Para superar este obstáculo cronológico y situar las hazañas de sus dinastías dentro de una escala temporal cósmica ilimitada, los sabios mayas perfeccionaron el sistema de la Cuenta Larga. Este calendario lineal absoluto consistía en un cómputo continuo y acumulativo de días transcurridos desde un punto de origen primordial fijado en el pasado mítico, funcionando con una lógica posicional análoga al conteo del día juliano utilizado por los astrónomos modernos contemporáneos.",
+      "El punto cero o fecha inicial de la era de la Cuenta Larga actual fue establecido por los astrónomos mayas en la fecha glífica «13.0.0.0.0 4 Ajaw 8 Kumk'u». Mediante la correlación estándar Goodman-Martínez-Thompson (GMT 584283), respaldada plenamente por dataciones de radiocarbono calibradas con anillos de árboles, esta fecha cero corresponde con absoluta certeza astronómica al 11 de agosto del año 3114 a.C. en el calendario gregoriano proléptico.",
+      "En la mitología cosmogónica plasmada en monumentos como la Estela C de Quiriguá, ese día primordial los dioses reordenaron el universo tras la destrucción de creaciones anteriores, plantaron las tres piedras cósmicas del fogón celeste en la constelación de Orión y levantaron el árbol sagrado Yaxché para separar las aguas del cielo de las de la tierra, inaugurando la cuarta era del cosmos en la que habita la humanidad actual de maíz.",
+      "La estructura de la Cuenta Larga se organizaba en una rigurosa jerarquía posicional vertical compuesta por cinco órdenes numéricos principales: K'in (1 día), Uinal (20 K'in = 20 días), Tun (18 Uinal = 360 días), K'atun (20 Tun = 7,200 días, unos 19.7 años) y B'ak'tun (20 K'atun = 144,000 días, unos 394.3 años). Una fecha clásica maya como 9.17.0.0.0 indicaba exactamente que habían pasado 9 b'ak'tunes y 17 k'atunes desde el génesis del mundo."
     ],
-    expandables: [
-      { label: 'El Primer Día', icon: 'atom', text: 'El 11 de agosto de 3114 a.C. Es una fecha anterior al desarrollo de la civilización maya. Los expertos creen que este Día Cero marcaba un evento mitológico en el que los dioses ordenaron el universo y colocaron las tres piedras fundamentales de la creación.' },
-      { label: 'Tiempo Infinito', icon: 'clock', text: 'Los matemáticos mayas calculaban ciclos de tiempo aún mayores que el B\'ak\'tun. Utilizaban el Piktun (8,000 años), el Kalabtun (158,000 años) y el Kinchiltun (3 millones de años). Su concepción del tiempo abarcaba períodos muy extensos.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "La fecha 13.0.0.0.0 de la Cuenta Larga volvió a completarse recientemente el 21 de diciembre del año 2012 de nuestra era, tras transcurrir un ciclo completo de 5,125 años solares. Lejos de las profecías apocalípticas divulgadas por la cultura popular occidental, las inscripciones mayas antiguas celebraban esa fecha como el inicio festivo de una nueva era."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El sistema de la Cuenta Larga no se limitaba a cinco dígitos: los textos de Cobá y Yaxchilán mencionan periodos colosales superiores al b'ak'tun, tales como el Piktun (2.88 millones de días), el Kalabtun (57.6 millones de días) y el K'inchiltun (1,152 millones de días), proyectando cálculos temporales hacia miles de millones de años al futuro."
+      }
     ],
-    fact: 'En la estela 1 de la ciudad de Cobá, hay inscripciones que mencionan fechas equivalentes a trillones de años en el pasado. Esto demuestra que los mayas podían conceptualizar escalas de tiempo enormes en sus cálculos.'
+    "fact": "La Cuenta Larga registra de forma lineal ininterrumpida los días transcurridos desde el punto cero cósmico del 11 de agosto de 3114 a.C. (13.0.0.0.0 4 Ajaw 8 Kumk'u) mediante una jerarquía posicional de 5 periodos vigesimales (K'in, Uinal, Tun, K'atun y B'ak'tun), permitiendo una precisión cronológica absoluta en la historia maya."
   },
   {
-    id: 'matematica-base-20',
-              bannerImage: '/assets/maya/infographic_m5/banner_long-count.webp',
-    title: 'Matemáticas Base 20',
-    color: '#6A1B9A',
-    btnImage: '/assets/maya/infographic_m5/btn_matematica-base-20.jpg',
-    image: '/assets/maya/infographic_m5/hero_matematica-base-20.jpg',
-    content: [
-      'Nosotros usamos un sistema de base 10 con diez símbolos (del 0 al 9). Los mayas desarrollaron un sistema vigesimal o de "base 20", agrupando las cantidades de veinte en veinte. Esto les permitía hacer cálculos grandes de forma eficiente para estudiar los ciclos celestes.',
-      'Para escribir los números, los mayas utilizaban solo tres símbolos: un punto, una raya y un caparazón. Un punto valía 1, por lo que dos puntos eran 2. Una raya horizontal representaba 5. Al combinar rayas y puntos, formaban los números del 1 al 19.',
-      'El tercer símbolo, que tenía la forma de un caparazón de caracol, representaba el número cero. Los mayas utilizaron el cero mucho antes de que se empleara en Europa. Este concepto de un valor nulo era esencial para realizar operaciones matemáticas avanzadas.',
-      'A diferencia de nuestro sistema horizontal, los mayas escribían sus números verticalmente de abajo hacia arriba. En el primer nivel, contaban las unidades del 1 al 19. En el segundo nivel, cada valor se multiplicaba por 20. En el tercer nivel, se multiplicaba por 400 (20 x 20).',
-      'Este sistema posicional vertical resultaba práctico y rápido. Los comerciantes y astrónomos mayas podían sumar o restar grandes cifras de forma visual. Para facilitar las operaciones, deslizaban semillas de cacao o palos de madera sobre una superficie plana.'
+    "id": "matematica-base-20",
+    "bannerImage": "/assets/maya/infographic_m5/banner_long-count.webp",
+    "title": "Matemáticas Base 20",
+    "color": "#6A1B9A",
+    "btnImage": "/assets/maya/infographic_m5/btn_matematica-base-20.jpg",
+    "image": "/assets/maya/infographic_m5/hero_matematica-base-20.jpg",
+    "content": [
+      "El motor intelectual que hizo posible la invención y el funcionamiento de la Cuenta Larga y los ciclos astronómicos fue el sofisticado sistema de numeración posicional de base veinte (vigesimal) desarrollado por los mayas. A diferencia del sistema decimal de base diez originado en el Viejo Mundo a partir del conteo de los diez dedos de las manos, el sistema vigesimal mesoamericano se fundamentaba en la totalidad de los veinte dedos del cuerpo humano: diez dedos de las manos y diez de los pies.",
+      "Para representar cualquier cantidad matemática, por enorme que fuera, los sabios mayas utilizaban únicamente tres símbolos elementales de gran simplicidad gráfica: un punto redondo para el valor de una unidad, una barra horizontal para el valor de cinco unidades, y una concha marina estilizada o caracol de piedra para representar el número cero, concebido no como ausencia pasiva sino como completitud y orden posicional.",
+      "Las cifras se escribían de abajo hacia arriba en columnas verticales ordenadas por niveles jerárquicos de potencias numéricas. En el primer nivel (la base inferior), cada punto valía 1. En el segundo nivel, cada punto se multiplicaba por 20 (20¹). En el tercer nivel ordinario, cada unidad se multiplicaba por 400 (20²), en el cuarto nivel por 8,000 (20³), y en el quinto nivel por 160,000 (20⁴). Esta notación posicional vertical permitía resolver complejas sumas y restas con extrema rapidez mediante el simple desplazamiento de fichas.",
+      "Sin embargo, al aplicar este sistema vigesimal estricto a las mediciones cronológicas de la Cuenta Larga, los matemáticos mayas introdujeron una genialidad aritmética denominada cómputo calendárico modificado. En el tercer nivel de la cuenta del tiempo, en lugar de multiplicar por 400 (20 × 20), multiplicaron el segundo nivel de veinte días únicamente por 18, fijando el valor del Tun en 360 días solares exactos (18 × 20 = 360).",
+      "Esta deliberada modificación en el tercer nivel obedecía a un riguroso criterio pragmático y astronómico: 360 días se aproximaban con notable fidelidad a la duración real del año solar trópico de 365 días, lo que permitía que los k'atunes (7,200 días, unos 19.7 años) y los b'ak'tunes (144,000 días, unos 394 años) marcharan al compás armónico de las estaciones terrestres y de los ciclos de los planetas visibles en el cielo."
     ],
-    expandables: [
-      { label: 'El Genio del Cero', icon: 'clock', text: 'Escribir grandes cifras sin el número cero es difícil, como ocurre con los números romanos. El símbolo del caparazón maya indicaba "completamiento". Señalaba que una posición en la columna vigesimal estaba vacía y lista para el siguiente orden.' },
-      { label: 'Matemáticas Cósmicas', icon: 'clock', text: 'Las matemáticas mayas no solo se utilizaban en el comercio. Los sacerdotes aplicaban estos cálculos para predecir eclipses solares y lunares con gran precisión. Sus tablas astronómicas muestran un profundo conocimiento del movimiento de los astros.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los mayas concibieron y aplicaron el concepto formal del cero posicional al menos cuatro siglos antes de que los matemáticos de la India desarrollaran su propio sistema numérico independiente, y más de un milenio antes de que el cero fuera introducido y popularizado en Europa occidental a través de los eruditos árabes."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En el sistema vigesimal maya tradicional, las palabras numéricas reflejaban la estructura corporal del ser humano: la palabra «jun winik» significaba simultáneamente el número veinte y «un hombre entero», reconociendo que la suma de los dedos de pies y manos conformaba la unidad anatómica y matemática básica de la sociedad."
+      }
     ],
-    fact: 'El Códice de Dresde, uno de los pocos libros mayas de corteza que sobrevivieron a la colonización, contiene tablas matemáticas complejas. En él se registran cálculos astronómicos en base 20 que predicen ciclos planetarios.'
+    "fact": "El sistema vigesimal maya empleaba notación posicional vertical con solo tres signos (punto = 1, barra = 5 y concha = cero) y modificaba de forma genial el tercer orden posicional al multiplicar por 18 en vez de 20 (18 × 20 = 360 días para el Tun) a fin de sincronizar la aritmética abstracta con el curso del año solar."
   },
   {
-    id: 'engranajes-cosmicos',
-              bannerImage: '/assets/maya/infographic_m5/banner_rueda-calendrica.webp',
-    title: 'Engranajes Cósmicos',
-    color: '#FF6F00',
-    btnImage: '/assets/maya/infographic_m5/btn_engranajes-cosmicos.jpg',
-    image: '/assets/maya/infographic_m5/hero_engranajes-cosmicos.jpg',
-    content: [
-      'Además del Tzolkin y el Haab, los astrónomos mayas coordinaban otros ciclos astronómicos. Estudiaban el movimiento de los planetas y los enlazaban en un modelo matemático. Este sistema les permitía predecir posiciones celestes y eventos importantes.',
-      'Uno de los ciclos más observados era el de Venus, conocido como Chak Ek\'. Como estrella de la mañana o de la tarde, Venus tarda 584 días en completar su órbita aparente y regresar a la misma posición en el cielo.',
-      'Los matemáticos mayas notaron una coincidencia clave: si se multiplican cinco ciclos de Venus (584 días cada uno), el resultado es de 2,920 días. Esto les permitió sincronizar el ciclo del planeta con otros calendarios.',
-      'Esta cantidad de 2,920 días es significativa porque equivale exactamente a ocho años solares del calendario Haab. De este modo, los mayas podían alinear el movimiento de Venus con los ciclos anuales del sol.',
-      'Los gobernantes mayas programaban actividades militares, conocidas como "Guerras de las Estrellas", basándose en estos cálculos. Sincronizaban los combates con posiciones específicas del planeta Venus, dándole un peso ritual a las batallas.'
+    "id": "engranajes-cosmicos",
+    "bannerImage": "/assets/maya/infographic_m5/banner_rueda-calendrica.webp",
+    "title": "Engranajes Cósmicos",
+    "color": "#FF6F00",
+    "btnImage": "/assets/maya/infographic_m5/btn_engranajes-cosmicos.jpg",
+    "image": "/assets/maya/infographic_m5/hero_engranajes-cosmicos.jpg",
+    "content": [
+      "La visión del universo que se desprende de la integración entre la Rueda Calendárica, la Cuenta Larga y los ciclos planetarios es la de un cosmos vivo concebido como una gigantesca maquinaria de relojería cósmica interconectada. Para los filósofos y astrónomos mayas, el tiempo no era una línea abstracta, fría y vacía que transcurre hacia la nada, sino una sustancia divina, cíclica y tangible que transportaba periódicamente las energías y voluntades de los dioses creadores.",
+      "Cada fracción del tiempo poseía un portador divino que la cargaba a sus espaldas durante su jornada de marcha por el firmamento. Los días (k'ines), los meses (uinales) y las eras (k'atunes) eran imaginados en los relieves como dioses celestes que avanzaban por el camino del cosmos portando bultos pesados sostenidos por mecapales sobre la frente. Al terminar su turno asignado, el dios relevaba pacíficamente su carga al siguiente dignatario en una procesión infinita.",
+      "Dado que todos los ciclos temporales eran matemáticamente conmensurables entre sí mediante múltiplos y submúltiplos de números enteros, los sabios mayas creían firmemente en el principio de la repetición histórica fractal. Si una configuración cósmica particular de planetas y fechas sagradas había traído prosperidad o hambruna durante un determinado k'atun del pasado, los sacerdotes profetizaban que sucesos similares volverían a ocurrir cuando esa misma era k'atúnica se repitiera 256 años solares después.",
+      "Esta concepción cíclica del destino histórico no implicaba una resignación paralizante ante lo inevitable, sino una herramienta indispensable de planeación estratégica y preparación colectiva. Los libros sagrados del Chilam Balam de Chumayel y Maní recopilan minuciosas ruedas de trece k'atunes que servían como manuales de advertencia política para que los reyes y consejos de ancianos supieran cómo gobernar ante las crisis periódicas de sequía, peste o invasión armada.",
+      "De este modo, los engranajes calendáricos mayas unían lo infinitamente grande con lo infinitamente pequeño. La rotación diaria de la Tierra, el cultivo de una mazorca de maíz en la milpa, el ascenso y caída de linajes dinásticos y las colosales revoluciones de las estrellas lejanas formaban parte de una misma sinfonía matemática indisoluble, donde el ser humano desempeñaba el noble papel de testigo consciente y guardián devoto del equilibrio del universo."
     ],
-    expandables: [
-      { label: 'El Planeta Rojo', icon: 'atom', text: 'Además de Venus, los astrónomos mayas estudiaron los movimientos de Marte. Calcularon su ciclo orbital en 780 días, demostrando una gran capacidad para registrar trayectorias planetarias a lo largo de décadas.' },
-      { label: 'Eclipses y Dragones', icon: 'clock', text: 'Los mayas identificaron los patrones repetitivos de los eclipses. Crearon tablas para predecir cuándo ocurrirían, permitiéndoles anticipar estos fenómenos astronómicos con precisión.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "En las páginas de los libros coloniales de profecías mayas conocidos como los libros del Chilam Balam («el sacerdote jaguar»), los sabios yucatecos registraron las profecías del k'atun 8 Ajaw, señalando con siglos de anticipación que bajo ese signo recurrente ocurrirían colapsos dinásticos y la llegada de hombres extranjeros a las costas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La rueda de los K'atunes consta de 13 periodos de 7,200 días cada uno (aproximadamente 256.26 años solares en total), en los cuales cada k'atun recibe el nombre del día en que culmina, terminando siempre en un día denominado Ajaw pero variando su coeficiente numérico en saltos descendentes de dos en dos unidades."
+      }
     ],
-    fact: 'El edificio "El Caracol" en Chichén Itzá funcionaba como un observatorio astronómico. Su estructura cilíndrica cuenta con ventanas diseñadas específicamente para alinearse con los eventos celestes de Venus.'
+    "fact": "La cosmología maya articulaba microciclos de 20 días con macrociclos de 13 k'atunes (256 años solares) y eras de 13 b'ak'tunes (5,125 años), fundamentando la profecía histórica en la premisa matemática de que los patrones astronómicos y las energías de los dioses portadores del tiempo regresan periódicamente al escenario humano."
   },
   {
-    id: 'precision-astronomica',
-              bannerImage: '/assets/maya/infographic_m5/banner_tzolkin-calendario.webp',
-    title: 'Precisión Astronómica',
-    color: '#A1887F',
-    btnImage: '/assets/maya/infographic_m5/btn_precision-astronomica.jpg',
-    image: '/assets/maya/infographic_m5/hero_precision-astronomica.jpg',
-    content: [
-      'Una de las características de la astronomía maya es la exactitud de sus observaciones. A través del seguimiento de los astros, calcularon la duración del año solar y de otros ciclos con un margen de error mínimo.',
-      'En Europa, durante muchos siglos, se utilizó el Calendario Juliano, establecido por Julio César. Este calendario calculaba la duración de un año en 365.25 días, basándose en el ciclo estacional.',
-      'Sin embargo, el tiempo que tarda la Tierra en dar una vuelta completa alrededor del sol es de aproximadamente 365.2422 días. Esta pequeña diferencia decimal generaba desfases a lo largo de los siglos.',
-      'Por su imprecisión, el Calendario Juliano se atrasaba un día cada 128 años. En contraste, los mayas lograron una medida más exacta del año solar sin emplear instrumentos ópticos ni tecnología moderna.',
-      'Los astrónomos mayas calcularon el año solar en 365.2420 días. Esta cifra se acerca más al valor real moderno que la utilizada por el calendario europeo de esa misma época.'
+    "id": "precision-astronomica",
+    "bannerImage": "/assets/maya/infographic_m5/banner_tzolkin-calendario.webp",
+    "title": "Precisión Astronómica",
+    "color": "#A1887F",
+    "btnImage": "/assets/maya/infographic_m5/btn_precision-astronomica.jpg",
+    "image": "/assets/maya/infographic_m5/hero_precision-astronomica.jpg",
+    "content": [
+      "La precisión cuantitativa alcanzada por los matemáticos y astrónomos mayas en la calibración de sus sistemas calendáricos ha suscitado la admiración unánime de la comunidad científica contemporánea internacional. Sin contar con lentes de vidrio, astrolabios metálicos, relojes mecánicos de péndulo ni ordenadores digitales, los sabios de ciudades como Copán, Palenque, Tikal y Chichén Itzá lograron estimar las constantes astronómicas orbitales con una exactitud asombrosa.",
+      "Uno de los ejemplos más contundentes de esta maestría matemática se encuentra en el cómputo de la duración media del mes lunar sinódico (el intervalo de tiempo transcurrido entre dos lunas nuevas consecutivas). Mientras que la astronomía moderna con medición láser calcula este valor en 29.530588 días solares, los astrónomos de la ciudad de Copán, en el actual territorio de Honduras, determinaron en el siglo VIII d.C. que 149 lunaciones consecutivas equivalían a 4,400 días exactos, arrojando un promedio de 29.53087 días.",
+      "Esta cifra maya para el mes lunar acumulaba un margen de error infinitesimal de apenas 24 segundos de arco por cada mes sinódico completo, lo que equivale a una desviación de menos de un día tras transcurrir varios milenios de observación continuada. De forma similar, la estimación maya del ciclo de Venus de 583.92 días, corregida periódicamente en el Códice de Dresde, superaba en consistencia cuantitativa a los modelos cosmológicos grecorromanos y ptolemaicos europeos de la misma época histórica.",
+      "La verificación moderna de estas cifras astronómicas mayas fue consolidada a lo largo del siglo XX gracias a la confirmación de la correlación GMT (bautizada en honor a los investigadores Joseph Goodman, Juan Martínez Hernández y J. Eric S. Thompson). Esta fórmula matemática asigna el número de día juliano 584,283 al día cero de la Cuenta Larga maya (13.0.0.0.0 4 Ajaw 8 Kumk'u), permitiendo traducir cualquier fecha glífica maya a su equivalente exacto en el calendario gregoriano.",
+      "Pruebas independientes de datación absoluta mediante carbono-14 de alta precisión realizadas sobre los dinteles tallados de madera de chicozapote de Tikal en laboratorios de Estados Unidos y Europa confirmaron de manera concluyente la validez histórica de la correlación GMT. La ciencia moderna terminó así por respaldar la veracidad de unos cómputos celestes que florecieron en el corazón de las selvas tropicales americanas hace más de mil años."
     ],
-    expandables: [
-      { label: 'A Ojo Desnudo', icon: 'clock', text: 'Los mayas lograron esta precisión astronómica mediante observaciones directas. Construyeron edificios y marcadores de piedra que les ayudaban a rastrear la posición del sol en el horizonte durante los amaneceres y atardeceres.' },
-      { label: 'Un Gran Legado', icon: 'clock', text: 'La Rueda Calendárica y los registros astronómicos mayas son un testimonio de su conocimiento matemático. Reflejan el desarrollo científico de una sociedad que dedicó siglos al estudio sistemático del tiempo.' }
+    "expandables": [
+      {
+        "label": "¿Sabías que...?",
+        "icon": "sparkles",
+        "text": "Los astrónomos de la ciudad maya de Palenque utilizaban una fórmula lunar alternativa igualmente asombrosa: registraron en sus templos que 81 lunas nuevas equivalían a 2,392 días enteros, lo que produce una duración para el mes lunar sinódico de 29.530864 días, compitiendo en precisión milimétrica con los sabios de la acrópolis de Copán."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En el año 2013, un estudio exhaustivo liderado por el profesor Douglas Kennett de la Universidad Estatal de Pensilvania utilizó espectrometría de masas con aceleradores (AMS) sobre anillos de crecimiento de madera en Tikal, confirmando que la correlación astronómica GMT posee un margen de certidumbre arqueológica absoluto dentro de ± 1 año."
+      }
     ],
-    fact: 'Debido a la precisión de sus cálculos solares y planetarios, la astronomía maya es reconocida por los científicos modernos como una de las más avanzadas del mundo antiguo.'
+    "fact": "La fórmula lunar de Copán que sincronizaba 149 lunas con 4,400 días solares posee una precisión con un desvío de apenas 24 segundos respecto al mes sinódico atómico moderno (29.53059 días), demostrando que la correlación calendárica GMT 584283 traduce con exactitud científica impecable las fechas mayas a la cronología universal."
   }
 ];
 

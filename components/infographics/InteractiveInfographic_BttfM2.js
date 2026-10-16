@@ -150,157 +150,208 @@ const BIBLIOGRAPHY = [
 
 const INFOGRAPHIC_NODES = [
   {
-    id: 'relatividad-basico',
-    title: '¿Qué es el Tiempo?',
-    color: '#6EC6FF',
-    btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_relatividad.webp',
-    image: '/assets/bttf/infographic_viajes_tiempo/hero_relatividad.webp',
-    content: [
-      'Si tienes un reloj y tu amigo tiene otro idéntico, y tu amigo viaja en un cohete al 90% de la velocidad de la luz, su reloj se atrasaría respecto al tuyo. El tiempo transcurre más despacio para objetos en movimiento rápido.',
-      'Esto fue demostrado por Albert Einstein en 1905 con la Teoría de la Relatividad Especial. En 1971, los físicos Joseph Hafele y Richard Keating lo comprobaron experimentalmente subiendo relojes atómicos a aviones. Tras dar la vuelta al mundo, estos relojes se atrasaron 59 nanosegundos respecto a los que se quedaron en tierra.',
-      'Los satélites GPS aplican este principio. Por su velocidad (14,000 km/h), sus relojes se atrasan 7 microsegundos al día. Sin embargo, por estar más lejos de la gravedad terrestre, se adelantan 45 microsegundos diarios. El sistema corrige esta diferencia para evitar errores de ubicación.',
-      'El tiempo posee una dirección. Los físicos lo denominan la "flecha del tiempo", relacionada con la entropía, que es la medida del desorden en un sistema. Los sistemas tienden a pasar de un estado ordenado a uno desordenado, marcando el avance temporal.'
+    "id": "relatividad-basico",
+    "title": "¿Qué es el Tiempo?",
+    "color": "#6EC6FF",
+    "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_relatividad.webp",
+    "image": "/assets/bttf/infographic_viajes_tiempo/hero_relatividad.webp",
+    "content": [
+      "En el cine de ciencia ficción, el tiempo suele representarse como un río constante sobre el que una máquina puede navegar hacia atrás o adelante con solo pulsar un interruptor en el tablero. Regreso al Futuro utiliza esta convención narrativa para llevar a Marty McFly a 1955 sin alterar de golpe la física del universo visible. Sin embargo, la física moderna demuestra que el tiempo no fluye de manera uniforme ni aislada: forma una malla indisociable con el espacio tridimensional llamada espaciotiempo, donde cada observador mide ritmos distintos según su velocidad y el campo gravitatorio circundante.",
+      "Durante siglos, la mecánica clásica formulada por Isaac Newton sostuvo que un reloj maestro marcaba los segundos de forma idéntica en cualquier rincón del cosmos. Para Newton, un segundo transcurrido en la Tierra era exactamente igual a un segundo en los anillos de Saturno o en los confines de la galaxia. Esta visión intuitiva gobernó la ciencia hasta principios del siglo XX, pero experimentos ópticos cruciales demostraron anomalías que obligaron a replantear cómo la luz se propaga en el vacío sin importar el movimiento relativo de su fuente emisora.",
+      "Albert Einstein revolucionó nuestra concepción en 1905 al formular la teoría de la relatividad especial, demostrando que la velocidad de la luz en el vacío es una constante universal insuperable, fijada en 299.792.458 metros por segundo. Para preservar esta invariancia de la luz para todos los observadores inerciales, el tiempo y la longitud espacial deben volverse magnitudes relativas y flexibles. Si un cuerpo se mueve a velocidades cercanas a este límite cósmico, su reloj interno avanza perceptiblemente más despacio en comparación con un observador en reposo.",
+      "La termodinámica añade otra pieza fundamental al enigma mediante la llamada flecha del tiempo, regida por la segunda ley del universo observable. Esta ley establece que en cualquier sistema termodinámico aislado la entropía global, entendida como el número de microestados accesibles o medida del desorden, tiende inevitablemente a aumentar con cada transformación energética. Por esta razón vemos huevos romperse o tazas de café enfriarse, pero jamás observamos de forma espontánea cómo los fragmentos dispersos de cerámica rota se ensamblan para regresar íntegros a la mesa.",
+      "Comprender la verdadera naturaleza del tiempo implica reconocer que el pasado, el presente y el futuro no están grabados en compartimentos estáticos del universo. En la cosmología relativista, el concepto de presente universal desaparece por completo: dos sucesos que parecen ocurrir exactamente al mismo instante para un observador terrestre pueden suceder en momentos distintos para un piloto que viaja a bordo de una nave interplanetaria de alta aceleración, revelando que la cronología depende del marco de referencia adoptado."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Si pudieras viajar al 99.9% de la velocidad de la luz, el tiempo pasaría para ti 22 veces más lento. Un viaje de 1 año para ti serían 22 años en la Tierra. ¡Volverías al futuro como Marty McFly!' },
-      { label: 'En la Película', icon: 'zap', text: 'En "Regreso al Futuro", Doc Brown dice que el tiempo es la "cuarta dimensión". ¡Esto es correcto! Einstein unificó las tres dimensiones del espacio con el tiempo en un concepto llamado"espacio-tiempo" de cuatro dimensiones.' },
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "En Regreso al Futuro, el condensador de flujo inventado por Emmett Brown necesita alcanzar exactamente 88 millas por hora para abrir la brecha temporal. Robert Zemeckis y Bob Gale eligieron esa velocidad específica simplemente porque el número 88 resultaba sumamente fácil de recordar para el público y lucía imponente con tipografía digital roja en el velocímetro del deportivo DeLorean DMC-12 durante las secuencias nocturnas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La dilatación temporal predicha por la relatividad einsteiniana es un fenómeno comprobado experimentalmente con relojes atómicos ultraprecisos de cesio y estroncio. Si una nave viajara al 99,9% de la velocidad de la luz durante un año según sus propios cronómetros de a bordo, al regresar a la Tierra descubriría que en la superficie del planeta han transcurrido más de veintidós años completos para sus habitantes."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m2/banner_relatividad-basico.webp',
-    bannerCaption: 'Las bases de la relatividad especial de Einstein y la dilatación del tiempo',
-    fact: 'Los muones â€” partículas diminutas creadas cuando los rayos cósmicos golpean la atmósfera â€” viajan al 99.94% de la velocidad de la luz. Deberían desintegrarse antes de llegar al suelo, pero gracias a la dilatación temporal, el tiempo pasa tan lento para ellos que SÍ llegan. ¡La relatividad ocurre sobre nuestras cabezas todos los días!',
+    "bannerImage": "/assets/bttf/infographic_m2/banner_relatividad-basico.webp",
+    "bannerCaption": "Las bases de la relatividad especial de Einstein y la dilatación del tiempo",
+    "fact": "Los satélites de la red GPS orbitan la Tierra a 20.200 kilómetros de altitud y a casi 14.000 kilómetros por hora; por efectos combinados de velocidad y menor gravedad, sus relojes atómicos ganan 38 microsegundos netos cada día, desfase que obligaría a recalibrar las coordenadas con errores acumulativos de más de 11 kilómetros diarios si no se aplicara la corrección relativista."
   },
   {
-    id: 'delorean-velocidad',
-    title: '88 Millas por Hora',
-    color: '#FFD740',
-    btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_delorean.webp',
-    image: '/assets/bttf/infographic_viajes_tiempo/hero_delorean.webp',
-    content: [
-      'En la película, el DeLorean debe alcanzar 88 millas por hora (141 km/h) para viajar en el tiempo. Aunque se muestra como una velocidad alta, un avión comercial promedio viaja a unos 900 km/h.',
-      'Para que la dilatación temporal relativista sea notable, se requiere viajar a una fracción significativa de la velocidad de la luz (cerca de 1,079 millones de km/h). A la velocidad de la luz, se podrían dar 7.5 vueltas a la Tierra en un segundo.',
-      'El modelo DeLorean DMC-12 fue fabricado en Irlanda del Norte entre 1981 y 1983. Se produjeron unas 9,000 unidades antes del cierre de la compañía. Se caracterizaba por su carrocería de acero inoxidable sin pintar y puertas de ala de gaviota.',
-      'La película indica que la máquina del tiempo requiere 1.21 gigawatts de potencia, equivalente a la energía producida por un reactor nuclear o a la descarga de un rayo. En la ficción, esto se obtiene primero de plutonio y luego de un reactor de fusión.'
+    "id": "delorean-velocidad",
+    "title": "88 Millas por Hora",
+    "color": "#FFD740",
+    "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_delorean.webp",
+    "image": "/assets/bttf/infographic_viajes_tiempo/hero_delorean.webp",
+    "content": [
+      "El clímax de cada salto temporal en la trilogía ocurre cuando el DeLorean DMC-12 supera las 88 millas por hora, dejando dos surcos ardientes de fuego sobre el asfalto del estacionamiento de Twin Pines Mall. En la cinematografía de Hollywood, esta cifra funciona como un umbral casi mágico que separa la cotidianidad de los años ochenta de la década de 1950. Sin embargo, para la física del transporte y la relatividad cinemática, viajar a 141,6 kilómetros por hora apenas equivale a la velocidad de crucero en una autopista alemana contemporánea.",
+      "El velocímetro original de fábrica del DeLorean DMC-12 de 1981 solo marcaba hasta 85 millas por hora debido a una estricta ley federal de seguridad vial promulgada en Estados Unidos por el presidente Jimmy Carter. La producción cinematográfica tuvo que encargar un velocímetro modificado a medida con lecturas de hasta 95 millas por hora para que la aguja pudiera sobrepasar el número 88 en pantalla, demostrando cómo los requisitos dramáticos transformaron un detalle automovilístico cotidiano en un ícono de la cultura popular mundial.",
+      "Si analizamos el consumo energético necesario para acelerar una masa vehicular de 1.230 kilogramos hasta 141,6 kilómetros por hora, la energía cinética requerida es de apenas 950 kilojulios, una cifra diminuta en comparación con la potencia monstruosa de 1,21 gigavatios que el Doc Brown declara necesaria para el condensador de flujo. El verdadero reto físico del viaje no reside en la aceleración mecánica del motor de combustión PRV V6, sino en suministrar una potencia eléctrica colosal en una fracción infinitesimal de segundo.",
+      "Desde la perspectiva de la física de altas energías, cruzar el espacio convencional a velocidades terrestres no altera la geometría del vacío cuántico ni genera trayectorias temporales cerradas. Para curvar el espaciotiempo de modo que dos puntos cronológicos distantes entren en contacto topológico, los modelos teóricos modernos exigen concentraciones energéticas comparables a las densidades del núcleo de una estrella de neutrones o la presencia hipotética de densidades de masa negativa que violen las condiciones de energía clásicas.",
+      "La aceleración continua también impone restricciones fisiológicas severas sobre el organismo de los tripulantes humanos. En la escena cinematográfica, el vehículo salta al instante hacia otra época sin que Marty o su perro Einstein sufran el impacto de fuerzas gravitatorias letales por desaceleración súbita. En un dispositivo físico real, cualquier transición discontinua en el espacio o el tiempo generaría aceleraciones infinitas capaces de disgregar los enlaces moleculares de la materia orgánica si no mediara un campo protector inercial."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las zapatillas Nike Mag de "Regreso al Futuro II" se hicieron realidad. Nike presentó en 2016 las Nike HyperAdapt con sistema de ajuste automático real. Solo se fabricaron 89 pares de las Mag originales, subastadas por hasta $200,000 dólares cada par para caridad.' },
-      { label: 'Dato Científico', icon: 'atom', text: '1.21 gigawatts no es una cifra descabellada. La estación espacial ISS usa solo 120 kilowatts de energía solar. Un rayo produce entre 1 y 5 gigawatts, pero solo durante 30 microsegundos. La fusión nuclear controlada (como en ITER, Francia) podría producir 500 megawatts â€” todavía menos que lo que necesita el DeLorean.' },
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El diseño original del guion no utilizaba un automóvil sino una vieja nevera doméstica conectada a una prueba nuclear en el desierto de Nevada. Steven Spielberg y Robert Zemeckis decidieron descartar la idea por temor a que niños pequeños imitaran a Marty y se quedaran encerrados dentro de refrigeradores domésticos sin ventilación, eligiendo el DeLorean por su aspecto futurista de nave espacial."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La velocidad de 88 millas por hora equivale exactamente a 39,34 metros por segundo, lo que representa solo el 0,000013% de la velocidad límite de la luz en el vacío. A esa velocidad terrestre, el factor de dilatación temporal relativista de Lorentz es tan insignificante que un reloj a bordo apenas se retrasaría una millonésima de segundo tras circular continuamente durante miles de años sin descanso."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m2/banner_delorean-velocidad.webp',
-    bannerCaption: 'El DeLorean alcanza las 88 mph y activa el desplazamiento temporal',
-    fact: 'El número "88 mph"fue elegido por los guionistas Bob Gale y Robert Zemeckis porque les gustó cómo se veía"88" en el velocímetro del DeLorean. No tiene ningún significado científico. Sin embargo, en el sistema métrico, 88 mph = 141.62 km/h, que casualmente es la velocidad máxima real que alcanzaba el DMC-12 original.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro» (1985), la escena más icónica del DeLorean muestra el indicador de velocidad llegando exactamente a 88 mph mientras Marty viaja por Courthouse Square en la lluvia de 1955. Las ruedas traseras echan chispas al rebasar esa velocidad umbral y el auto desaparece dejando marcas de fuego en el asfalto. Doc Brown explica que 88 mph fue el valor elegido porque en 1985 era una velocidad "suficientemente alta para ser dramática pero alcanzable en una calle recta". La cifra se convirtió en referencia cultural: cuando en 2011 la empresa Tesla presentó un auto eléctrico de alto rendimiento, los fans calcularon inmediatamente cuánto tardaba en alcanzar las 88 mph (2.9 segundos).' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m2/banner_delorean-velocidad.webp",
+    "bannerCaption": "El DeLorean alcanza las 88 mph y activa el desplazamiento temporal",
+    "fact": "La potencia eléctrica de 1,21 gigavatios requerida por el condensador de flujo equivale a 1.210.000.000 de vatios, la potencia media suministrada por un reactor nuclear de fisión comercial como los de la planta de Palo Verde en Arizona o la descarga simultánea concentrada de un rayo de tormenta eléctrica promedio con una intensidad de 30.000 amperios a 40.000 voltios sostenidos."
   },
   {
-    id: 'paradoja-abuelo',
-    title: 'La Paradoja del Abuelo',
-    color: '#FF8A80',
-    btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_paradoja.webp',
-    image: '/assets/bttf/infographic_viajes_tiempo/hero_paradoja.webp',
-    content: [
-      'La Paradoja del Abuelo describe un problema de causalidad: si viajas al pasado y evitas que tus abuelos se conozcan, tus padres no nacerían y tú tampoco. Pero si tú no naces, no puedes viajar al pasado para alterar los eventos.',
-      'Esta paradoja plantea una contradicción lógica fundamental sobre el viaje temporal hacia el pasado, creando un bucle causal irresoluble.',
-      'La película ilustra este concepto de forma visual cuando Marty interfiere en el encuentro de sus padres en 1955 y comienza a desaparecer de una fotografía, indicando el riesgo de ser borrado de la existencia.',
-      'La física teórica propone posibles soluciones. La Interpretación de Muchos Mundos sugiere que alterar el pasado crea una línea temporal paralela. El Principio de Autoconsistencia de Novikov plantea que las leyes de la física impiden acciones que generen paradojas.'
+    "id": "paradoja-abuelo",
+    "title": "La Paradoja del Abuelo",
+    "color": "#FF8A80",
+    "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_paradoja.webp",
+    "image": "/assets/bttf/infographic_viajes_tiempo/hero_paradoja.webp",
+    "content": [
+      "El conflicto dramático central de Regreso al Futuro surge cuando Marty McFly interrumpe accidentalmente el primer encuentro fortuito de sus padres adolescentes en 1955, provocando que su propia fotografía comience a desvanecerse gradualmente. Esta imagen visual de los cuerpos transparentes representa la paradoja del abuelo, uno de los dilemas lógicos más célebres de la física teórica y la filosofía causal, donde una modificación retroactiva del pasado amenaza con destruir la causa que posibilitó el propio viaje temporal.",
+      "La formulación clásica del enigma plantea un escenario inquietante: si un viajero viaja en el tiempo hacia el pasado y elimina a su abuelo biológico antes de que conciba a sus progenitores, el viajero nunca habría nacido en el futuro. Pero si nunca llegó a nacer en el presente, resulta imposible que haya podido construir una máquina para viajar al pasado y ejecutar dicho acto. Esta contradicción lógica autorreferencial demuestra que una línea temporal única no puede admitir trayectorias de acción mutuamente excluyentes sin quebrarse.",
+      "En la cinematografía, la desaparición progresiva de Marty y sus hermanos se escenifica de forma lenta y dramática, dándole una ventana de varios días para corregir la situación en el baile del instituto. Sin embargo, la lógica matemática binaria no admite estados intermedios de existencia: un objeto cuántico o una persona no pueden encontrarse parcialmente nacidos a escala macroscópica. O el evento causal ocurre de forma concluyente en el entramado cósmico, o la coherencia interna de la realidad colapsa en el acto.",
+      "Para resolver este atolladero sin renunciar a las soluciones de la relatividad general que permiten curvas temporales cerradas, los físicos teóricos exploran dos grandes avenidas conceptuales. La primera es el principio de autoconsistencia propuesto por el astrofísico ruso Igor Novikov, que estipula que las leyes físicas globales conspiran localmente para impedir cualquier acontecimiento incompatible con la historia ya registrada, haciendo que cualquier tentativa de frustrar el pasado resulte intrínsecamente fallida o termine causando el evento original.",
+      "La segunda alternativa recurre a la mecánica cuántica y a la interpretación de los múltiples mundos postulada por Hugh Everett III en 1957. Bajo este enfoque, cuando Marty aterriza en 1955 y altera las circunstancias del noviazgo paterno, no modifica su propio pasado histórico, sino que bifurca el estado cuántico del universo hacia una nueva rama causal alternativa, protegiendo su propia existencia previa en la línea de origen mientras experimenta una realidad divergente e independiente."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Marty no es el único que casi causa una paradoja. En BTTF II, el viejo Biff roba el DeLorean y se da el almanaque deportivo a sí mismo en 1955, creando una línea temporal alternativa donde es millonario y Hill Valley es un desastre. Doc explica que el viaje creó una "tangente temporal" â€” una rama del tiempo.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'El filósofo David Lewis argumentó en 1976 que no hay paradoja real: si viajaras al pasado para "matar a tu abuelo", algo SIEMPRE lo impediría â€” te resbalarias, fallarías el tiro, cambiarías de opinión. El universo conspiraría para mantener la consistencia. ¡Es como si la realidad tuviera un sistema inmunológico!' },
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La célebre fotografía familiar de Marty donde sus hermanos Linda y Dave van desapareciendo miembro por miembro fue lograda mediante complejas técnicas ópticas artesanales en 1985. En la escena del baile del Encanto Bajo el Mar, el guitarrista comienza a perder la fuerza motriz de su mano derecha al ritmo de «Earth Angel», visualizando la amenaza inminente de su desaparición ontológica total."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "En computación cuántica moderna, simulaciones realizadas con fotones individuales que atraviesan curvas temporales cerradas simuladas han demostrado que los estados cuánticos pueden evitar paradojas mediante la no-linealidad estadística, donde las probabilidades de sucesos inconsistentes se anulan por interferencia destructiva cuántica, preservando la coherencia global del sistema emisor."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m2/banner_paradoja-abuelo.webp',
-    bannerCaption: 'La paradoja del abuelo: el dilema lógico del viaje al pasado',
-    fact: 'En la física real, el concepto más cercano a una "paradoja temporal" ocurre a nivel cuántico. Las partículas de antimateria (como el positrón) se comportan matemáticamente como si fueran partículas normales viajando hacia atrás en el tiempo. El físico Richard Feynman propuso esta interpretación en 1949, ¡y las matemáticas funcionan perfectamente!',
+    "bannerImage": "/assets/bttf/infographic_m2/banner_paradoja-abuelo.webp",
+    "bannerCaption": "La paradoja del abuelo: el dilema lógico del viaje al pasado",
+    "fact": "El físico teórico Joseph Polchinski formuló una variante rigurosa de la paradoja enviando una bola de billar mecánica a través de un agujero de gusano: los cálculos de Novikov demostraron que la bola siempre colisiona de refilón consigo misma con la fuerza y ángulo exactos para desviarse lo justo y entrar al túnel temporal, cumpliendo la trayectoria sin contradicción matemática alguna."
   },
   {
-    id: 'einstein-relatividad',
-    title: 'Einstein y el Tiempo Elástico',
-    color: '#B388FF',
-    btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_einstein.webp',
-    image: '/assets/bttf/infographic_viajes_tiempo/hero_einstein.webp',
-    content: [
-      'En 1905, Albert Einstein publicó la Teoría de la Relatividad Especial, la cual postula que la percepción del tiempo es relativa y depende de la velocidad del observador.',
-      'El modelo describe el tiempo como una dimensión elástica. A velocidades bajas el efecto de dilatación es imperceptible, pero se incrementa de forma significativa a medida que el objeto se acerca a la velocidad de la luz.',
-      'La Paradoja de los Gemelos es un ejemplo teórico: si un gemelo viaja al 90% de la velocidad de la luz durante 5 años, al regresar encontraría que en la Tierra han pasado 11.5 años. Este es un efecto físico comprobado.',
-      'El experimento de Hafele y Keating en 1971 demostró esta dilatación temporal utilizando relojes atómicos en vuelos comerciales, validando las predicciones matemáticas de Einstein.'
+    "id": "einstein-relatividad",
+    "title": "Einstein y el Tiempo Elástico",
+    "color": "#B388FF",
+    "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_einstein.webp",
+    "image": "/assets/bttf/infographic_viajes_tiempo/hero_einstein.webp",
+    "content": [
+      "El perro pastor del Doc Brown lleva con orgullo el nombre de Einstein, un homenaje explícito al sabio alemán que desmontó la rigidez del cosmos newtoniano. En la primera prueba práctica de la máquina en el aparcamiento comercial, el científico envía a su mascota un minuto hacia el futuro cronometrado con relojes gemelos sincronizados. Esta secuencia recrea con asombrosa fidelidad pedagógica los célebres experimentos mentales que Albert Einstein ideó para demostrar que el paso del tiempo depende enteramente de la trayectoria del observador.",
+      "La teoría de la relatividad especial, publicada en 1905, demostró que el tiempo se dilata cuando la velocidad de un móvil se aproxima a la de la radiación electromagnética. Si un objeto incrementa su velocidad respecto a un marco de referencia estacionario, la distancia espacial se contrae en la dirección del movimiento y los intervalos temporales se ensanchan según el factor gamma ideado por el matemático neerlandés Hendrik Lorentz, obligando a los relojes en movimiento relativo a retrasarse respecto a los estáticos.",
+      "Diez años más tarde, en 1915, Einstein amplió este marco al presentar su obra cumbre: la teoría de la relatividad general, incorporando los efectos gravitatorios. La presencia de masa y energía no ejerce una fuerza mágica a distancia como creía la física dieciochesca, sino que deforma y curva la propia geometría del espaciotiempo tetradimensional circundante. Cuanto más intenso resulta el potencial gravitatorio cerca de un cuerpo masivo, más lentamente transcurre el tiempo en comparación con regiones de espacio vacío lejano.",
+      "Este fenómeno de dilatación temporal gravitatoria no es una ilusión óptica ni una falla mecánica de los engranajes relojeros, sino una propiedad fundamental del tejido del cosmos. Un reloj atómico situado al nivel del mar en la costa marina late de forma mesurablemente más pausada que un reloj idéntico ubicado en la cima del monte Everest, debido a que el primer dispositivo se encuentra sumergido en un campo gravitatorio terrestre marginalmente más profundo y denso.",
+      "En la narrativa cinematográfica, el salto del perro Einstein hacia el futuro dura un instante absoluto sin requerir velocidades relativistas continuas gracias a la ficción del condensador de flujo. Sin embargo, en el mundo real, los viajes al futuro no requieren máquinas imposibles: ocurren cada segundo de forma medible. Todos viajamos al futuro a razón de un segundo por segundo, y los cosmonautas que habitan estaciones espaciales a gran velocidad experimentan un adelanto temporal real respecto a quienes nos quedamos en tierra."
     ],
-    expandables: [
-      { label: 'Dato Científico', icon: 'atom', text: 'La ecuación más famosa del mundo, E=mcÂ², dice que la energía (E) es igual a la masa (m) multiplicada por la velocidad de la luz al cuadrado (cÂ²). Como c = 300,000 km/s, cÂ² es un número ENORME. Por eso una cantidad diminuta de masa contiene una cantidad colosal de energía. Una moneda de 1 centavo contiene suficiente energía (según E=mcÂ²) para abastecer a una ciudad pequeña durante varios días.' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Einstein no ganó el Nobel por la relatividad sino por explicar el efecto fotoeléctrico (cómo la luz arranca electrones de los metales). El comité Nobel consideró la relatividad "demasiado teórica" en 1921. Hoy usamos el efecto fotoeléctrico en paneles solares y cámaras digitales.' },
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "El perro del Doc Brown en la versión cinematográfica definitiva es un simpático perro pastor de raza catalana llamado Einstein, pero en los borradores tempranos de 1980 el fiel compañero del científico era un chimpancé travieso llamado Shemp, cambiado por recomendación del ejecutivo de Universal Pictures Sid Sheinberg, quien sostenía que las películas con simios nunca generaban beneficios en taquilla."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El astronauta ruso Gennady Padalka ostentó el récord de permanencia acumulada en órbita con 879 días espaciales distribuidos en múltiples misiones. Debido a su velocidad orbital de 28.000 kilómetros por hora atenuada parcialmente por la altitud, Padalka viajó hacia el futuro de la Tierra aproximadamente 0,023 segundos reales más que sus compatriotas que nunca abandonaron la superficie terrestre."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m2/banner_einstein-relatividad.webp',
-    bannerCaption: 'Einstein y su teoría de la relatividad que redefinió el tiempo y el espacio',
-    fact: 'El astronauta Scott Kelly pasó 340 días en la Estación Espacial Internacional (que orbita a 27,600 km/h). Cuando regresó, era 8.6 milisegundos más joven que su hermano gemelo Mark Kelly (también astronauta). ¡La paradoja de los gemelos ocurrió literalmente! Scott viajó una fracción infinitesimal al futuro.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La película introduce la dilatación temporal de Einstein de forma accesible: cuando Doc le explica a Marty que el DeLorean viaja en el tiempo, muestra su propia demostración con Einstein el perro, el primer pasajero de la máquina. Doc envía a Einstein 1 minuto al futuro y el perro regresa sin haber envejecido subjetivamente ese minuto. Este momento es una demostración cinematográfica de la relatividad especial: el tiempo del pasajero (Einstein-perro) transcurre más lento respecto al observador externo (Doc). El nombre del perro fue elegido deliberadamente como homenaje a Albert Einstein, cuya teoría fundamenta todo el concepto de la película.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m2/banner_einstein-relatividad.webp",
+    "bannerCaption": "Einstein y su teoría de la relatividad que redefinió el tiempo y el espacio",
+    "fact": "En 1971, los físicos Joseph Hafele y Richard Keating montaron cuatro relojes atómicos comerciales de haz de cesio a bordo de vuelos regulares de aviones comerciales que dieron la vuelta completa al planeta; al comparar las lecturas finales con los relojes de referencia del Observatorio Naval estadounidense, confirmaron la dilatación temporal einsteiniana con una precisión superior al 98% de lo predicho matemáticamente."
   },
   {
-    id: 'muchos-mundos',
-    title: 'Líneas Temporales Paralelas',
-    color: '#CE93D8',
-    btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_mundos.webp',
-    image: '/assets/bttf/infographic_viajes_tiempo/hero_mundos.webp',
-    content: [
-      'En la película, Doc Brown ilustra la ramificación de líneas temporales. Este concepto se asemeja a la Interpretación de Muchos Mundos de la mecánica cuántica.',
-      'Propuesta por Hugh Everett III en 1957, esta teoría sugiere que cada evento cuántico provoca una ramificación del universo. Ambas posibilidades de un evento ocurren, pero en realidades separadas.',
-      'Bajo este modelo, existirían múltiples universos paralelos producto de cada variación histórica, aunque no habría interacción directa entre ellos.',
-      'El Principio de Incertidumbre de Heisenberg (1927) establece límites sobre la medición simultánea de la posición y velocidad de una partícula, lo que implica que ciertos eventos a nivel cuántico son probabilísticos, no deterministas.'
+    "id": "muchos-mundos",
+    "title": "Líneas Temporales Paralelas",
+    "color": "#CE93D8",
+    "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_mundos.webp",
+    "image": "/assets/bttf/infographic_viajes_tiempo/hero_mundos.webp",
+    "content": [
+      "En Regreso al Futuro Parte II, el Doc Brown utiliza una pizarra de tiza en el laboratorio alternativo de 1985 para explicar gráficamente cómo el robo del almanaque deportivo por parte del anciano Biff Tannen distorsionó la realidad. Dibujando una línea horizontal continua que representa la historia conocida, el Doc traza una rama secundaria que surge de 1955 y bautiza ese desvío como «1985 alternativo», un mundo distópico gobernado por la corrupción que sustituyó al vecindario pacífico original de Hill Valley.",
+      "Esta elegante explicación pedagógica frente al pizarrón conectó directamente a millones de jóvenes espectadores con uno de los conceptos más apasionantes de la física teórica contemporánea: el multiverso y la teoría de los muchos mundos. Formulada formalmente por el físico Hugh Everett III en su tesis doctoral de la Universidad de Princeton, esta interpretación propone que cada vez que un sistema mecánico cuántico se enfrenta a varios resultados posibles, la función de onda universal no colapsa, sino que todas las posibilidades ocurren simultáneamente en ramificaciones independientes.",
+      "A diferencia del multiverso de Everett, donde la bifurcación no destruye el universo precedente sino que coexiste paralelamente en el gigantesco espacio de Hilbert matemático, el universo de la película opera bajo una física de sobreescritura continua. En la pantalla, cuando se crea la línea temporal corrupta de Biff, el futuro luminoso previo parece borrarse o quedar inaccesible, lo que obliga a los protagonistas a regresar nuevamente al punto de inflexión en 1955 para quemar el almanaque y restaurar el cauce original.",
+      "Desde la perspectiva de la física de partículas y la cosmología de cuerdas, los universos paralelos podrían existir sin necesidad de máquinas del tiempo macroscópicas. Modelos inflacionarios como los desarrollados por Alan Guth y Andrei Linde sugieren que nuestro Big Bang no fue un suceso aislado, sino parte de una inflación cósmica eterna donde brotan constantemente universos burbuja aislados unos de otros por distancias espaciales que se expanden a mayor velocidad que la luz.",
+      "La interacción entre estas líneas divergentes plantea desafíos termodinámicos colosales. Si una persona viaja físicamente a otra línea de tiempo, transfiere de forma efectiva masa, energía e información fuera de su universo de origen hacia el receptor. En física clásica, las leyes de conservación de la energía son estrictas a nivel global; violar estas reglas requeriría mecanismos de compensación simétrica donde partículas exóticas fluyeran en sentido inverso para preservar el equilibrio termodinámico total del multiverso."
     ],
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'Cuando Biff altera 1955 con el almanaque, Doc explica que creó una "tangente temporal" â€” una línea alternativa del tiempo. En esta versión, Hill Valley es un paraíso del crimen y Biff es dueño de un casino. Doc y Marty deben volver a 1955 para restaurar la línea original. ¡Puro Everett en acción!' },
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Hugh Everett abandonó la física en 1960 porque nadie tomaba en serio su teoría. Se dedicó a trabajar para el Pentágono en análisis matemático militar. Murió en 1982 sin saber que su idea se convertiría en una de las interpretaciones más estudiadas y debatidas de la mecánica cuántica. Su hijo Mark Oliver Everett es el cantante de la banda de rock Eels.' },
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La célebre escena de la pizarra donde Emmett Brown ilustra la línea temporal alternativa fue grabada en una sola toma magistral por Christopher Lloyd, quien memorizó la compleja terminología temporal ideada por los guionistas para dotar de una credibilidad académica incuestionable a uno de los giros de guion más intrincados de la historia del cine comercial."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "La interpretación de muchos mundos de Everett resuelve la paradoja de la medida en mecánica cuántica suprimiendo el misterioso colapso de la función de onda de Copenhague. En esta formulación matemática, la decoherencia cuántica explica de manera rigurosa por qué los seres macroscópicos jamás percibimos las ramas superpuestas, preservando el determinismo físico en todo momento."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m2/banner_muchos-mundos.webp',
-    bannerCaption: 'La teoría cuántica de los muchos mundos y las líneas temporales paralelas',
-    fact: 'Si la interpretación de Muchos Mundos es correcta, desde el Big Bang se han creado un número inimaginable de universos paralelos. El físico Max Tegmark calculó que la copia más cercana de ti â€” idéntica átomo por átomo â€” estaría a 10^(10^29) metros de distancia. Eso es un 1 seguido de 100,000,000,000,000,000,000,000,000,000 ceros de metros. ¡Lejos pero existente!',
+    "bannerImage": "/assets/bttf/infographic_m2/banner_muchos-mundos.webp",
+    "bannerCaption": "La teoría cuántica de los muchos mundos y las líneas temporales paralelas",
+    "fact": "El físico Max Tegmark clasificó formalmente cuatro niveles de multiverso físico: el Nivel I de regiones espaciales infinitas más allá de nuestro horizonte cosmológico de 46.500 millones de años luz, el Nivel II de universos inflacionarios con leyes físicas distintas, el Nivel III de Everett basado en la bifurcación cuántica del espacio de Hilbert y el Nivel IV de estructuras puramente matemáticas autónomas."
   },
   {
-    id: 'predicciones-2015',
-    title: 'Predicciones del Futuro',
-    color: '#80CBC4',
-    btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_predicciones.webp',
-    image: '/assets/bttf/infographic_viajes_tiempo/hero_predicciones.webp',
-    content: [
-      'La secuela de la película imaginó el año 2015, anticipando tecnologías como las tabletas electrónicas, las pantallas planas, las videollamadas, el pago mediante biometría y las gafas inteligentes.',
-      'Sin embargo, otras proyecciones no se cumplieron, como el uso masivo de autos voladores, la prevalencia del fax, o el uso cotidiano de ropa autoajustable y aerodeslizadores.',
-      'Las predicciones suelen acertar en las tendencias generales de conectividad y miniaturización, pero divergen en el desarrollo de productos de consumo específicos.',
-      'La película mostró la victoria de los Cubs de Chicago en la Serie Mundial de 2015. En la realidad, el equipo ganó el campeonato en 2016 tras una larga sequía de victorias.'
+    "id": "predicciones-2015",
+    "title": "Predicciones del Futuro",
+    "color": "#80CBC4",
+    "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_predicciones.webp",
+    "image": "/assets/bttf/infographic_viajes_tiempo/hero_predicciones.webp",
+    "content": [
+      "El salto hacia el año 2015 en la segunda entrega cinematográfica sumergió al público en un Hill Valley hipertecnológico repleto de coches voladores guiados por autopistas aéreas luminosas, aeropatinetas que desafían la gravedad terrestre y zapatillas con robótica de autoajuste automático. Robert Zemeckis y su equipo artístico consultaron a futurólogos, diseñadores e ingenieros industriales a finales de los años ochenta con el objetivo expreso de proyectar tecnologías verosímiles pero visualmente atractivas para el cambio de milenio.",
+      "Al contrastar la ficción con la realidad empírica que efectivamente vivimos en 2015, la tasa de acierto del equipo cinematográfico resultó sorprendente en áreas clave de la ingeniería de telecomunicaciones y el software de consumo. La película anticipó con asombrosa lucidez el despliegue universal de las videoconferencias de pantalla plana en el salón doméstico mediante pantallas similares a las plataformas modernas de Zoom o Skype, la identificación biométrica por huella dactilar para abrir cerraduras y el uso cotidiano de gafas de realidad virtual.",
+      "Sin embargo, el filme erró notablemente en otros aspectos tecnológicos y sociales debido al sesgo analógico dominante en 1989. La visión de Zemeckis imaginó un futuro donde los faxes de papel térmico continuaban instalados en cada rincón de la vivienda inteligente escupiendo cartas de despido laboral en segundos, sin anticipar que la revolución invisible de Internet globalizada, los protocolos web y la telefonía móvil de bolsillo con pantallas táctiles liquidarían el fax como medio primordial de mensajería empresarial.",
+      "En el ámbito de la propulsión y el transporte urbano, los coches voladores con reactores nucleares de fusión doméstica Mr. Fusion siguen siendo inviables en nuestras metrópolis actuales. Las leyes de la hidrodinámica atmosférica y la eficiencia energética demuestran que mantener suspendido un vehículo convencional de dos toneladas en el aire requiere un gasto continuo de energía diez veces superior al rodaje mecánico sobre asfalto, sumado a los riesgos inasumibles de accidentes y colisiones en corredores aéreos poblados.",
+      "A pesar de estas discrepancias técnicas, el 2015 de la ficción cumplió una función inspiradora invaluable para el progreso contemporáneo. Numerosas corporaciones tecnológicas de vanguardia dedicaron cuantiosos recursos de ingeniería para desarrollar prototipos funcionales de zapatillas autoajustables y monopatines magnéticos en homenaje explícito a la fecha señalada por el filme, demostrando cómo los sueños de la ciencia ficción impulsan la innovación industrial tangible de nuestra sociedad."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Las zapatillas Nike Mag de la película se hicieron realidad con el sistema "E.A.R.L." (Electro Adaptive Reactive Lacing). Este mecanismo usaba un sensor en el talón que activaba un micromotor a batería, el cual tensaba los cordones automáticamente al detectar el peso del pie del usuario.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El progreso tecnológico avanza más rápido en información que en transporte. En 1969 fuimos a la Luna; en 2026, el cohete más rápido viaja a velocidades similares. Pero la capacidad de computación se ha multiplicado por más de mil millones desde entonces. Por eso tenemos smartphones pero no coches voladores.' },
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "La multinacional Nike comercializó en 2016 una edición limitada y funcional de las célebres zapatillas Nike Mag con cordones motorizados que se abrochan automáticamente al detectar la presión plantar del usuario. La recaudación millonaria de la subasta pública fue donada íntegramente a la Fundación Michael J. Fox para apoyar la investigación biomédica contra el párkinson."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El reactor doméstico Mr. Fusion instalado en el DeLorean funcionaba presuntamente convirtiendo cáscaras de plátano y cerveza en energía limpia. En la física estelar real, la fusión nuclear requiere calentar núcleos de hidrógeno e isótopos a temperaturas de más de cien millones de grados Celsius para superar la repulsión electrostática de Coulomb y liberar energía neta abundante."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m2/banner_predicciones-2015.webp',
-    bannerCaption: 'Las predicciones de BTTF para el año 2015: ¿cuáles se hicieron realidad?',
-    fact: 'La predicción más profunda de BTTF no fue un gadget sino un concepto social: la película mostró un mundo donde la tecnología está integrada naturalmente en la vida cotidiana, donde las personas interactúan con dispositivos constantemente y la información es ubicua e inmediata. Esto describe perfectamente la realidad de 2015 y más allá. Los guionistas entendieron el ESPÍRITU del futuro, aunque no los detalles.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'En «Volver al Futuro Parte II» (1989), Marty y Doc viajan al 26 de octubre de 2015. Las predicciones más precisas de la película fueron: videollamadas de alta calidad (FaceTime existe desde 2010), televisores de pantalla plana con múltiples ventanas simultáneas (Smart TVs actuales), tablets y dispositivos portátiles, reconocimiento de huellas digitales para pagos, gafas de realidad aumentada similares a Google Glass, y drones de videocámaras. Entre las predicciones fallidas: hoverboards masivos (solo existen prototipos caros), autos voladores, deshidratador de pizza en 3 segundos y el famoso juicio de O.J. Simpson que la película imaginó resuelto en segundos. Los Chicago Cubs sí ganaron, pero en 2016, no 2015.' },
-    ],
+    "bannerImage": "/assets/bttf/infographic_m2/banner_predicciones-2015.webp",
+    "bannerCaption": "Las predicciones de BTTF para el año 2015: ¿cuáles se hicieron realidad?",
+    "fact": "El 21 de octubre de 2015, la fecha exacta a la que Marty McFly arriba en el futuro cinematográfico, los cines de más de cincuenta países reestrenaron la película de forma simultánea, congregando a cientos de miles de espectadores que acudieron disfrazados con chalecos térmicos naranjas y gorras holográficas a celebrar el impacto cultural de esta visión de la ciencia aplicada."
   },
   {
-    id: 'ciencia-ficcion',
-    title: 'Ciencia Ficción como Brújula',
-    color: '#FFAB91',
-    btnImage: '/assets/bttf/infographic_viajes_tiempo/btn_cienciaficcion.webp',
-    image: '/assets/bttf/infographic_viajes_tiempo/hero_cienciaficcion.webp',
-    content: [
-      'La ciencia ficción frecuentemente precede a las innovaciones tecnológicas. Los comunicadores de series televisivas inspiraron la invención del teléfono móvil, mientras que la literatura anticipó los submarinos y las tabletas electrónicas.',
-      'El cine ha motivado a investigadores a explorar teorías sobre el tiempo y el espacio. Diversos físicos han analizado la viabilidad teórica de dispositivos de manipulación temporal basándose en principios gravitacionales.',
-      'La causalidad, donde una causa precede a su efecto, es un principio fundamental en física. Stephen Hawking propuso que las leyes del universo impiden la formación de curvas temporales cerradas para preservar esta causalidad.',
-      'La ciencia teórica aborda interrogantes sobre la naturaleza y dirección del tiempo, utilizando modelos matemáticos para establecer los límites físicos de los fenómenos descritos en la ficción.'
+    "id": "ciencia-ficcion",
+    "title": "Ciencia Ficción como Brújula",
+    "color": "#FFAB91",
+    "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_cienciaficcion.webp",
+    "image": "/assets/bttf/infographic_viajes_tiempo/hero_cienciaficcion.webp",
+    "content": [
+      "Las grandes obras de ciencia ficción no tienen como misión predecir el porvenir con rigor milimétrico, sino encender la llama de la curiosidad intelectual en las generaciones jóvenes y cuestionar el rumbo ético de nuestras creaciones técnicas. Regreso al Futuro logró algo extraordinario dentro de la cultura contemporánea: transformó nociones abstractas y complejas de la relatividad general y la mecánica cuántica en una aventura comprensible, divertida y profundamente entrañable para el público infantil y juvenil de todo el mundo.",
+      "Científicos de prestigio internacional, desde astrofísicos dedicados al estudio de la cosmología primordial hasta ingenieros en robótica aeroespacial, han confesado abiertamente haber descubierto su vocación científica tras quedar maravillados en su niñez por los instrumentos luminosos del laboratorio casero del Doc Brown. La imagen de un científico apasionado, bondadoso y comprometido con la experimentación rigurosa ayudó a desterrar el cliché añejo del sabio loco destructivo que imperaba en la literatura gótica decimonónica.",
+      "El relato de viajes en el tiempo funciona asimismo como un potente laboratorio conceptual donde poner a prueba los límites de las leyes fundamentales de la naturaleza. Cuando físicos teóricos como Kip Thorne o Stephen Hawking se sentaron a calcular la viabilidad matemática de atravesar agujeros de gusano o la conjetura de protección cronológica, lo hicieron empleando ecuaciones serias de la relatividad general, motivados por interrogantes planteados inicialmente por relatos literarios y cinematográficos universales.",
+      "Esta retroalimentación constante entre el arte audiovisual y el avance del conocimiento genera un círculo virtuoso indispensable. Los cineastas se nutren de los últimos descubrimientos de los observatorios astronómicos y aceleradores de partículas para dotar de textura a sus universos narrativos, mientras que los investigadores encuentran en la iconografía cinematográfica analogías visuales elocuentes para divulgar descubrimientos herméticos ante la sociedad civil que financia sus proyectos de exploración.",
+      "El mensaje final de la trilogía, pronunciado por el Doc Brown junto a su locomotora temporal al final de la tercera entrega, resuena con una vigencia científica y humana intacta: el futuro de la humanidad no está escrito de forma inmutable en ningún código determinista previo, sino que se forja día a día a través de nuestras decisiones individuales, nuestro trabajo colectivo, nuestra educación científica y nuestra inagotable capacidad creadora para soñar."
     ],
-    expandables: [
-      { label: '¿Sabías que...?', icon: 'clock', text: 'Stephen Hawking organizó una "Fiesta para Viajeros del Tiempo"el 28 de junio de 2009 en la Universidad de Cambridge. Preparó champán, globos y un cartel de bienvenida... Pero envió las invitaciones DESPUÉS de la fiesta. Su lógica: si el viaje al pasado fuera posible, alguien del futuro habría recibido la invitación y asistido. Nadie vino. Hawking lo consideró"evidencia experimental" de que el viaje al pasado probablemente es imposible.' },
-      { label: 'Dato Científico', icon: 'atom', text: 'El físico Kip Thorne (Premio Nobel 2017) demostró en 1988 que los agujeros de gusano PODRÍAN permitir el viaje en el tiempo en teoría, pero requerirían "materia exótica"con energía negativa para mantenerlos abiertos. Aún no sabemos si la materia exótica existe. Thorne fue asesor científico de la película"Interstellar".' },
+    "expandables": [
+      {
+        "label": "En la Película",
+        "icon": "zap",
+        "text": "Christopher Lloyd modeló los gestos corporales y la intensidad vocal del doctor Emmett Brown inspirándose de manera deliberada en dos personalidades colosales del siglo XX: el célebre físico Albert Einstein por su genialidad humanista y el director de orquesta Leopold Stokowski por su enérgica y pasional gestualidad física al dirigir partituras complejas."
+      },
+      {
+        "label": "Dato Científico",
+        "icon": "atom",
+        "text": "El astrofísico Kip Thorne comenzó sus investigaciones formales sobre agujeros de gusano transitables impulsado por una consulta del divulgador Carl Sagan para su novela Contacto. Esos cálculos teóricos rigurosos demostraron matemáticamente que una garganta gravitatoria requeriría materia exótica con densidad de energía negativa para mantenerse abierta contra el colapso gravitacional."
+      }
     ],
-    bannerImage: '/assets/bttf/infographic_m2/banner_ciencia-ficcion.webp',
-    bannerCaption: 'La ciencia ficción como catalizadora de la investigación científica real',
-    fact: 'Michael J. Fox (Marty McFly) fue diagnosticado con Parkinson a los 29 años. Creó la Fundación Michael J. Fox, que ha recaudado más de $1,500 millones de dólares para investigación del Parkinson â€” más que cualquier otra fundación privada de enfermedad neurológica. La ciencia ficción que interpretó ahora financia ciencia real.',
-    expandables: [
-      { label: 'En la Película', icon: 'zap', text: 'La trilogía Volver al Futuro estableció el estándar moderno de la ciencia ficción rigurosa en cine. Los escritores Bob Gale y Robert Zemeckis consultaron física real antes de escribir el guion. El condensador de fluzo (flux capacitor) fue diseñado deliberadamente como un dispositivo imposible pero visualmente coherente: tres tubos en Y que generan el "flujo" necesario para el viaje temporal. La película convenció al público de que el tiempo es la "cuarta dimensión" navegable, popularizando conceptos de la relatividad que solo existían en textos académicos. Décadas después, físicos como Kip Thorne (Nobel 2017) citan BTTF como inspiración que despertó su interés por los agujeros de gusano y la causalidad temporal.' },
-    ],
-  },
+    "bannerImage": "/assets/bttf/infographic_m2/banner_ciencia-ficcion.webp",
+    "bannerCaption": "La ciencia ficción como catalizadora de la investigación científica real",
+    "fact": "El físico Stephen Hawking organizó el 28 de junio de 2009 una famosa fiesta de bienvenida para viajeros del tiempo en la Universidad de Cambridge, pero envió las invitaciones formales con coordenadas geográficas exactas de latitud y longitud solo después de que la fiesta concluyó; nadie acudió al evento, consolidando con humor su conjetura de protección cronológica del cosmos."
+  }
 ];
 
 // â”€â”€â”€ Temporal Particle Field (Canvas Background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
