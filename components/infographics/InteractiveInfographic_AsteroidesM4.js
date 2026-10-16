@@ -97,6 +97,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#4FA3B5",
     "btnImage": "/assets/asteroides/infographic_m4/btn_era-exploracion.webp",
     "image": "/assets/asteroides/infographic_m4/hero_era-exploracion.webp",
+    bannerImage: '/assets/asteroides/infographic_m4/banner_era-exploracion.webp',
+    bannerCaption: 'Revolución de las misiones espaciales dedicadas a cuerpos menores',
+    diagramImage: '/assets/asteroides/infographic_m4/diagram_era-exploracion.webp',
+    diagramCaption: 'Cronología y vectores orbitales de las misiones pioneras de exploración de asteroides',
     "content": [
       "Durante siglos, el conocimiento humano sobre los asteroides estuvo estrictamente limitado a pequeños puntos de luz titilantes observados a través de los telescopios ópticos terrestres. Esta barrera observacional comenzó a derribarse en octubre de 1991, cuando la sonda espacial Galileo de la NASA, en su prolongada trayectoria de asistencia gravitatoria rumbo a Júpiter, realizó el primer sobrevuelo cercano de la historia a solo mil seiscientos kilómetros del asteroide 951 Gaspra, revelando su forma irregular y su manto de cráteres de impacto.",
       "Dos años más tarde, en agosto de 1993, Galileo sobrevoló el asteroide 243 Ida y realizó un descubrimiento revolucionario que transformó la dinámica planetaria moderna: fotografió por primera vez una diminuta luna de uno punto cuatro kilómetros de diámetro orbitando a cien kilómetros de Ida, bautizada formalmente como Dáctilo. Este hallazgo demostró empíricamente la existencia de sistemas asteroidales binarios y permitió a los astrofísicos calcular de forma directa la masa y densidad del asteroide principal mediante las leyes de Kepler.",
@@ -124,6 +128,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#D4A843",
     "btnImage": "/assets/asteroides/infographic_m4/btn_mision-dart.webp",
     "image": "/assets/asteroides/infographic_m4/hero_mision-dart.webp",
+    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-dart-nasa.png',
+    bannerCaption: 'Impacto cinético orbital de DART contra Dimorphos en septiembre de 2022',
+    diagramImage: '/assets/asteroides/infographic_m4/diagram_mision-dart.webp',
+    diagramCaption: 'Física de deflexión por impacto cinético: momento transferido por DART sobre Dimorphos',
     "content": [
       "El 26 de septiembre de 2022, la humanidad ejecutó por primera vez en su historia una prueba activa de defensa planetaria a gran escala con la misión DART (Double Asteroid Redirection Test) de la NASA y el Laboratorio de Física Aplicada Johns Hopkins. El objetivo era evaluar si el impacto cinético de un proyectil robótico a hipervelocidad era capaz de alterar de forma cuantificable la órbita de un asteroide en el espacio interplanetario sin requerir el empleo de peligrosas cargas explosivas nucleares.",
       "El blanco seleccionado fue el asteroide Dimorphos, una luna rocosa de ciento sesenta metros de diámetro que orbita alrededor del asteroide primario Didymos (de setecientos ochenta metros). Al no hallarse en rumbo de colisión con la Tierra, el sistema binario representaba el laboratorio cósmico perfecto: cualquier alteración en el periodo orbital de Dimorphos alrededor de Didymos podía medirse con precisión milimétrica desde telescopios ópticos y radares astronómicos terrestres.",
@@ -151,6 +159,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#80DEEA",
     "btnImage": "/assets/asteroides/infographic_m4/btn_mision-hayabusa2.webp",
     "image": "/assets/asteroides/infographic_m4/hero_mision-hayabusa2.webp",
+    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-hayabusa2.webp',
+    bannerCaption: 'Muestreo de superficie y retorno exitoso del asteroide carbónico Ryugu',
+    diagramImage: '/assets/asteroides/infographic_m4/diagram_mision-hayabusa2.webp',
+    diagramCaption: 'Esquema del penetrador cinético y toma de muestras de superficie de Hayabusa2 en Ryugu',
     "content": [
       "La Agencia de Exploración Aeroespacial de Japón (JAXA) consolidó una de las mayores proezas científicas del siglo XXI con la misión Hayabusa2, lanzada en diciembre de 2014 con destino al asteroide cercano a la Tierra de Tipo C (carbonáceo) denominado 162173 Ryugu. La misión tenía como objetivo prioritario estudiar la morfología de un asteroide primitivo y recolectar muestras prístinas de regolito superficial y subsuperficial para retornarlas intactas a la Tierra.",
       "Al llegar a Ryugu en junio de 2018, Hayabusa2 descubrió un mundo oscuro con forma de diamante o peonza de novecientos metros de diámetro, cubierto por completo de miles de bloques rocosos gigantescos sin zonas llanas evidentes. La nave desplegó con éxito varios microrrovers saltadores MINERVA-II y el módulo de aterrizaje germano-francés MASCOT, que operó durante diecisiete horas sobre la superficie midiendo campos magnéticos y temperaturas in situ.",
@@ -178,6 +190,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#BA68C8",
     "btnImage": "/assets/asteroides/infographic_m4/btn_mision-osiris-rex.webp",
     "image": "/assets/asteroides/infographic_m4/hero_mision-osiris-rex.webp",
+    bannerImage: '/assets/asteroides/infographic_m4/banner_mision-osiris-rex.webp',
+    bannerCaption: 'Recolección del regolito virgen del asteroide carbonáceo Bennu',
+    diagramImage: '/assets/asteroides/infographic_m4/diagram_mision-osiris-rex.webp',
+    diagramCaption: 'Mecanismo TAGSAM de OSIRIS-REx: inyección de nitrógeno y recolección de regolito en Bennu',
     "content": [
       "La misión OSIRIS-REx (Origins, Spectral Interpretation, Resource Identification, Security, Regolith Explorer) de la NASA fue diseñada para estudiar en detalle al asteroide cercano a la Tierra 101955 Bennu, un asteroide de Tipo B rico en carbono de quinientos metros de diámetro que posee una probabilidad acumulada de impacto con la Tierra en el siglo XXII de una entre mil setecientos cincuenta.",
       "Al arribar a Bennu en diciembre de 2018, la nave confirmó que el asteroide es una frágil 'pila de escombros' con una densidad extraordinariamente baja de uno punto diecinueve gramos por centímetro cúbico, lo que significa que el cincuenta por ciento de su volumen interno está vacío. Para sorpresa de los científicos, Bennu demostró ser un asteroide activo que eyectaba continuamente pequeñas piedrecillas y fragmentos rocosos hacia el espacio.",
@@ -205,6 +221,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF884B",
     "btnImage": "/assets/asteroides/infographic_m4/btn_analisis-laboratorio.webp",
     "image": "/assets/asteroides/infographic_m4/hero_analisis-laboratorio.webp",
+    bannerImage: '/assets/asteroides/infographic_m4/banner_analisis-laboratorio.webp',
+    bannerCaption: 'Espectrometría de masas y análisis mineral de muestras prístinas devueltas',
+    diagramImage: '/assets/asteroides/infographic_m4/diagram_analisis-laboratorio.webp',
+    diagramCaption: 'Cadena de custodia y análisis analítico en sala limpia: difracción de rayos X y espectrometría',
     "content": [
       "La recolección directa de muestras extraterrestres mediante sondas robóticas representa un avance científico exponencialmente superior al estudio de meteoritos caídos al azar en la Tierra. Aunque un meteorito es una muestra geológica valiosa, sufre una severa contaminación biológica, química y atmosférica desde el instante en que atraviesa el aire terrestre, se oxida con el oxígeno atmosférico y se empapa de humedad y bacterias microbianas presentes en el suelo.",
       "En contraste, las muestras recuperadas por naves espaciales como Stardust, Hayabusa2 y OSIRIS-REx son aisladas al vacío en cápsulas herméticas antes del reingreso atmosférico, llegando a los laboratorios de ultra alta pureza en cuartos limpios de Clase 10 o Clase 100 donde no existe contacto con el aire terrestre. Esto garantiza que cualquier molécula de agua, aminoácido o compuesto de carbono detectado sea cien por ciento de origen extraterrestre.",
@@ -232,6 +252,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#E57373",
     "btnImage": "/assets/asteroides/infographic_m4/btn_tecnologia-navegacion.webp",
     "image": "/assets/asteroides/infographic_m4/hero_tecnologia-navegacion.webp",
+    bannerImage: '/assets/asteroides/infographic_m4/banner_tecnologia-navegacion.webp',
+    bannerCaption: 'Sistemas de proximidad óptica y navegación autónoma en microgravedad',
+    diagramImage: '/assets/asteroides/infographic_m4/diagram_tecnologia-navegacion.webp',
+    diagramCaption: 'Sistemas de navegación autónoma y cartografía LIDAR en campos de microgravedad irregular',
     "content": [
       "Operar una nave espacial en las inmediaciones de un asteroide pequeño representa uno de los desafíos más complejos y contraintuitivos de toda la astrodinámica orbital. En cuerpos menores de un kilómetro de diámetro, la gravedad superficial es de apenas unas pocas millonésimas o cienmilésimas de la gravedad terrestre (del orden de micro-G), lo que altera por completo las leyes de navegación convencionales aplicables a planetas masivos.",
       "En un entorno de microgravedad tan débil, las fuerzas perturbadoras secundarias que normalmente son despreciables en la Tierra o en la Luna adquieren un protagonismo dominante. La presión de radiación solar ejercida sobre los paneles solares de la nave puede ser superior a la atracción gravitatoria del propio asteroide, empujando a la sonda fuera de órbita si no se ejecutan continuas correcciones de propulsión de milímetros por segundo.",
@@ -259,6 +283,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E4FF",
     "btnImage": "/assets/asteroides/infographic_m4/btn_futuras-misiones.webp",
     "image": "/assets/asteroides/infographic_m4/hero_futuras-misiones.webp",
+    bannerImage: '/assets/asteroides/infographic_m4/banner_futuras-misiones.webp',
+    bannerCaption: 'Próxima generación de exploradores: Hera, Psyche y Lucy de la NASA/ESA',
+    diagramImage: '/assets/asteroides/infographic_m4/diagram_futuras-misiones.webp',
+    diagramCaption: 'Próxima generación de exploradores: arquitecturas de misión para Hera, Psyche y Lucy',
     "content": [
       "La década de 2020 marca la verdadera edad de oro de la exploración internacional de asteroides, con una ambiciosa flota de misiones interplanetarias en desarrollo activo y crucero que expandirán radicalmente nuestra comprensión de la formación del Sistema Solar y consolidarán las capacidades técnicas globales de defensa planetaria ante posibles impactos cósmicos.",
       "La misión Hera de la Agencia Espacial Europea (ESA), lanzada con éxito en octubre de 2024, tiene como meta llegar al sistema Didymos-Dimorphos a finales de 2026. Hera actuará como un detective forense espacial: examinará de cerca el cráter de impacto excavado por la sonda DART en Dimorphos, medirá por primera vez la masa y densidad exacta del asteroide mediante dos CubeSats complementarios (Milani y Juventas) y cartografiará su estructura interna con radar de baja frecuencia.",
@@ -738,6 +766,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.78rem', color: 'rgba(255,255,255,0.7)', textAlign: 'center', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

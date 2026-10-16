@@ -97,6 +97,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#4FA3B5",
     "btnImage": "/assets/asteroides/infographic_m3/btn_anatomia-cometa.webp",
     "image": "/assets/asteroides/infographic_m3/hero_anatomia-cometa.webp",
+    bannerImage: '/assets/asteroides/infographic_m3/banner_anatomia-cometa.webp',
+    bannerCaption: 'Estructura física: núcleo de hielo sucio, coma activa y envoltura de hidrógeno',
+    diagramImage: '/assets/asteroides/infographic_m3/diagram_anatomia-cometa.webp',
+    diagramCaption: 'Anatomía de un cometa: núcleo de hielo poroso, respiraderos activos y coma de gas en expansión',
     "content": [
       "Los cometas son algunos de los cuerpos celestes más espectaculares y primitivos del Sistema Solar. En el año 1950, el astrónomo estadounidense Fred Whipple formuló el célebre modelo de la 'bola de nieve sucia', describiendo el núcleo cometario como un conglomerado poroso de hielos volátiles (principalmente agua, monóxido de carbono, dióxido de carbono y metano) íntimamente mezclados con polvo de silicatos, sulfuros y compuestos orgánicos refractarios de carbono complejo.",
       "El núcleo sólido es un objeto relativamente pequeño, con diámetros típicos que varían entre uno y cincuenta kilómetros. A pesar de contener enormes cantidades de hielo puro en su interior, la superficie exterior de un cometa es sorprendentemente negra y oscura, con un albedo reflectivo de apenas un dos a cuatro por ciento. Esta corteza externa está formada por una costra desvolatilizada de alquitranes de carbono y polvo que aísla térmicamente el interior helado del calor del espacio.",
@@ -124,6 +128,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#80DEEA",
     "btnImage": "/assets/asteroides/infographic_m3/btn_origen-nube-oort.webp",
     "image": "/assets/asteroides/infographic_m3/hero_origen-nube-oort.webp",
+    bannerImage: '/assets/asteroides/infographic_m3/banner_origen-nube-oort.webp',
+    bannerCaption: 'Depósitos cometarios distantes: Cinturón de Kuiper y Nube de Oort exterior',
+    diagramImage: '/assets/asteroides/infographic_m3/diagram_origen-nube-oort.webp',
+    diagramCaption: 'Escala de los reservorios cometarios: el Cinturón de Kuiper toroidal y la Nube de Oort esférica',
     "content": [
       "Los cometas que visitan el Sistema Solar interior provienen de dos inmensos reservorios helados situados en los confines más remotos de nuestro sistema planetario: el Cinturón de Kuiper y la hipotética pero matemáticamente fundamentada Nube de Oort. La distinción entre ambas regiones define la periodicidad, las inclinaciones orbitales y la procedencia dinámica de cada objeto que surca el firmamento.",
       "El Cinturón de Kuiper es una estructura toroidal aplanada en el plano de la eclíptica que se extiende entre treinta y cincuenta y cinco Unidades Astronómicas del Sol, inmediatamente más allá de la órbita de Neptuno. Es el hogar de los cometas de periodo corto (que tardan menos de doscientos años en completar una órbita heliocéntrica), como el célebre cometa Halley. Estos mundos helados conservan órbitas con inclinaciones bajas similares a las de los planetas mayores.",
@@ -151,6 +159,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#E57373",
     "btnImage": "/assets/asteroides/infographic_m3/btn_sublimacion-hielo.webp",
     "image": "/assets/asteroides/infographic_m3/hero_sublimacion-hielo.webp",
+    bannerImage: '/assets/asteroides/infographic_m3/banner_sublimacion-hielo.webp',
+    bannerCaption: 'Desgasificación térmica y eyección de compuestos volátiles al perihelio',
+    diagramImage: '/assets/asteroides/infographic_m3/diagram_sublimacion-hielo.webp',
+    diagramCaption: 'Termodinámica de sublimación en el perihelio: desgasificación de volátiles y chorros supersónicos',
     "content": [
       "En las condiciones de vacío absoluto del espacio interplanetario, el agua líquida no puede existir de forma termodinámicamente estable sobre la superficie de un cuerpo celeste debido a que la presión ambiental es nula, muy por debajo del punto triple del agua (seis punto once milibares). Por lo tanto, cuando un cometa se calienta por la radiación solar, experimenta el fenómeno físico de la sublimación: el paso directo de hielo sólido a vapor gaseoso.",
       "La tasa de sublimación de los diferentes hielos varía en función de su temperatura de equilibrio volátil. Los hielos súper volátiles como el nitrógeno molecular, el monóxido de carbono y el metano comienzan a sublimarse a temperaturas sumamente bajas (menos de setenta Kelvin), liberando tenues penachos de gas a distancias heliocéntricas superiores a cinco UA, mucho antes de que el hielo de agua convencional despierte.",
@@ -178,6 +190,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFD54F",
     "btnImage": "/assets/asteroides/infographic_m3/btn_viento-solar-colas.webp",
     "image": "/assets/asteroides/infographic_m3/hero_viento-solar-colas.webp",
+    bannerImage: '/assets/asteroides/infographic_m3/banner_viento-solar-colas.webp',
+    bannerCaption: 'Doble cola cometaria: plasma ionizado azul y polvo curvado reflejante',
+    diagramImage: '/assets/asteroides/infographic_m3/diagram_viento-solar-colas.webp',
+    diagramCaption: 'Dinámica de la doble cola: cola de iones recta por viento solar y cola de polvo curvada por radiación',
     "content": [
       "Uno de los rasgos más distintivos y emblemáticos de un cometa activo es el desarrollo de sus dos colas claramente diferenciadas: la cola de gas ionizado (o cola de plasma) y la cola de polvo. Aunque a simple vista ambas parecen extenderse juntas detrás del núcleo, están gobernadas por fuerzas físicas completamente independientes y presentan morfologías, composiciones y colores marcadamente distintos.",
       "La cola de polvo está formada por los diminutos granos microscópicos de silicatos y carbono arrastrados por los chorros de gas de la coma. Sobre estas partículas de polvo actúa la presión de radiación solar, es decir, el empuje mecánico ejercido por los fotones de luz solar al rebotar y ser absorbidos por el grano. Como el polvo viaja a velocidades orbitales, la cola de polvo adopta una forma curvada y ancha, brillando con un color blanquecino o amarillento al reflejar la luz solar directa.",
@@ -205,6 +221,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#BA68C8",
     "btnImage": "/assets/asteroides/infographic_m3/btn_cometas-agua-tierra.webp",
     "image": "/assets/asteroides/infographic_m3/hero_cometas-agua-tierra.webp",
+    bannerImage: '/assets/asteroides/infographic_m3/banner_cometas-agua-tierra.webp',
+    bannerCaption: 'Entrega de agua e hidrocarburos volátiles a la Tierra primigenia',
+    diagramImage: '/assets/asteroides/infographic_m3/diagram_cometas-agua-tierra.webp',
+    diagramCaption: 'Comparativa isotópica D/H: firmas moleculares de cometas y origen del agua terrestre',
     "content": [
       "Uno de los misterios más profundos y debatidos de las ciencias de la Tierra y la astrobiología es el origen de los vastos océanos que cubren el setenta y un por ciento de nuestro planeta. Dado que la Tierra se formó en la región interna y cálida del disco protoplanetario (muy dentro de la línea de congelamiento), las altas temperaturas debieron evaporar la mayor parte del agua original, lo que sugiere que los océanos fueron entregados posteriormente por impactos cósmicos.",
       "Durante décadas, la hipótesis dominante sostuvo que los cometas, al ser ricos en agua congelada (hasta un cincuenta por ciento de su masa total), bombardearon la Tierra durante el Bombardeo Intenso Tardío hace tres mil novecientos millones de años, llenando las cuencas oceánicas y aportando moléculas orgánicas precursoras para la abiogénesis y el surgimiento de la vida celular.",
@@ -232,6 +252,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFB74D",
     "btnImage": "/assets/asteroides/infographic_m3/btn_misiones-cometarias.webp",
     "image": "/assets/asteroides/infographic_m3/hero_misiones-cometarias.webp",
+    bannerImage: '/assets/asteroides/infographic_m3/banner_misiones-cometarias.webp',
+    bannerCaption: 'Exploración in situ: Giotto, Stardust, Deep Impact y Rosetta',
+    diagramImage: '/assets/asteroides/infographic_m3/diagram_misiones-cometarias.webp',
+    diagramCaption: 'Trayectoria operativa de Rosetta: inserción orbital y descenso de Philae en el cometa 67P',
     "content": [
       "La exploración espacial de los cometas representa una de las mayores hazañas tecnológicas de la ingeniería interplanetaria, ya que interceptar un proyectil que se desplaza a decenas de kilómetros por segundo rodeado de una atmósfera cegadora de gas abrasador y polvo afilado desafía los límites de los sistemas de navegación autónoma y blindaje de naves.",
       "La era de la exploración in situ comenzó formalmente en marzo de 1986 con la célebre 'Armada a Halley', una flota coordinada de sondas internacionales enviadas por Europa, la Unión Soviética y Japón para estudiar al cometa 1P/Halley. La sonda Giotto de la Agencia Espacial Europea (ESA) realizó una audaz aproximación a tan solo quinientos noventa y seis kilómetros del núcleo activo, capturando las primeras imágenes cercanas de la historia que confirmaron el modelo de Whipple.",
@@ -259,6 +283,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E4FF",
     "btnImage": "/assets/asteroides/infographic_m3/btn_destino-cometas.webp",
     "image": "/assets/asteroides/infographic_m3/hero_destino-cometas.webp",
+    bannerImage: '/assets/asteroides/infographic_m3/banner_destino-cometas.webp',
+    bannerCaption: 'Ciclos orbitales: sublimación completa, colisión planetaria o eyección solar',
+    diagramImage: '/assets/asteroides/infographic_m3/diagram_destino-cometas.webp',
+    diagramCaption: 'Destinos evolutivos de los cometas: desgasificación total, eyección hiperbólica o colisión solar',
     "content": [
       "La vida activa de un cometa en el Sistema Solar interior es un episodio geológicamente efímero que no puede prolongarse indefinidamente. En cada aproximación al perihelio, la intensa radiación solar y la pérdida de masa volátil erosionan físicamente el núcleo rocoso-helado, empujándolo inexorablemente hacia uno de varios desenlaces catastróficos o degenerativos definitivos.",
       "El primer destino es la extinción o agotamiento volátil. Con el paso de cientos o miles de órbitas, los hielos accesibles en las capas superiores se subliman por completo, dejando tras de sí una corteza gruesa y continua de escombros de silicatos y alquitranes orgánicos pesados que sella herméticamente cualquier hielo interior residual. El cuerpo cesa de emitir una coma y se convierte en un 'cometa extinto' o 'asteroide durmiente', indistinguible de un asteroide común de Tipo C o D.",
@@ -738,6 +766,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.78rem', color: 'rgba(255,255,255,0.7)', textAlign: 'center', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

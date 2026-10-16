@@ -98,6 +98,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF6B6B",
     "btnImage": "/assets/asteroides/infographic_m1/btn_que-es-asteroide.webp",
     "image": "/assets/asteroides/infographic_m1/hero_que-es-asteroide.webp",
+    bannerImage: '/assets/asteroides/infographic_m1/banner_que-es-asteroide.webp',
+    bannerCaption: 'Panorama del Cinturón Principal entre las órbitas de Marte y Júpiter',
+    diagramImage: '/assets/asteroides/infographic_m1/diagram_que-es-asteroide.webp',
+    diagramCaption: 'Estructura interna diferenciada de Ceres: núcleo rocoso, manto de hielo de agua y corteza mineral',
     "video": {
       "src": "https://drive.usercontent.google.com/download?id=1CxnhsejhTecAqbY0ltW5juW8-w3l61Ur&export=download&authuser=0",
       "title": "Introducción: Asteroides y Cometas"
@@ -129,6 +133,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#4D96FF",
     "btnImage": "/assets/asteroides/infographic_m1/btn_origen-cinturon.webp",
     "image": "/assets/asteroides/infographic_m1/hero_origen-cinturon.webp",
+    bannerImage: '/assets/asteroides/infographic_m1/banner_origen-cinturon.webp',
+    bannerCaption: 'Acreción planetesimal y perturbaciones orbitales en el Sistema Solar primitivo',
+    diagramImage: '/assets/asteroides/infographic_m1/diagram_origen-cinturon.webp',
+    diagramCaption: 'Arquitectura orbital primordial: la línea de hielo a 2.7 UA y la fragmentación por acreción fallida',
     "content": [
       "En las etapas iniciales de la formación del Sistema Solar, hace aproximadamente cuatro mil seiscientos millones de años, el disco protoplanetario de gas y polvo circunestelar comenzó a enfriarse gradualmente. A través de fuerzas electrostáticas y colisiones a velocidades relativas muy bajas de pocos centímetros por segundo, los granos microscópicos de minerales refractarios se adhirieron mutuamente hasta formar agregados milimétricos y posteriormente planetesimales de varios kilómetros.",
       "En la zona interior del disco, la temperatura solar permitía únicamente la condensación de silicatos de alta densidad y metales pesados como hierro y níquel, mientras que más allá de la llamada 'línea de hielo' o línea de congelamiento (situada cerca de dos punto siete Unidades Astronómicas), las bajas temperaturas posibilitaron la condensación masiva de hielo de agua, monóxido de carbono y metano, sentando las bases de una marcada dicotomía composicional.",
@@ -156,6 +164,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFD93D",
     "btnImage": "/assets/asteroides/infographic_m1/btn_efecto-jupiter.webp",
     "image": "/assets/asteroides/infographic_m1/hero_efecto-jupiter.webp",
+    bannerImage: '/assets/asteroides/infographic_m1/banner_efecto-jupiter.webp',
+    bannerCaption: 'Resonancias gravitatorias y perturbaciones de Júpiter sobre los asteroides',
+    diagramImage: '/assets/asteroides/infographic_m1/diagram_efecto-jupiter.webp',
+    diagramCaption: 'Dinámica de resonancia orbital: perturbaciones periódicas de Júpiter sobre el Cinturón',
     "content": [
       "Júpiter es el objeto dominante del Sistema Solar después del Sol, albergando más de dos veces y media la masa combinada de todos los demás planetas, satélites y asteroides juntos. Su potente pozo gravitatorio ejerce una influencia dominante sobre la dinámica orbital de cualquier cuerpo que se desplace en sus inmediaciones, funcionando como un colosal escultor celeste que define la arquitectura y estabilidad del Cinturón Principal.",
       "A medida que los asteroides giran alrededor del Sol con periodos orbitales que van de tres a seis años terrestres, experimentan tirones gravitacionales periódicos cada vez que alcanzan su máxima aproximación con Júpiter. Cuando la relación entre el periodo de traslación del asteroide y el del planeta gigante corresponde a una fracción exacta de números enteros pequeños, se produce un fenómeno dinámico conocido como resonancia orbital de movimiento medio.",
@@ -183,6 +195,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#6BCB77",
     "btnImage": "/assets/asteroides/infographic_m1/btn_resonancias-kirkwood.webp",
     "image": "/assets/asteroides/infographic_m1/hero_resonancias-kirkwood.webp",
+    bannerImage: '/assets/asteroides/infographic_m1/banner_resonancias-kirkwood.webp',
+    bannerCaption: 'Brechas orbitales de Kirkwood causadas por resonancias de movimiento medio',
+    diagramImage: '/assets/asteroides/infographic_m1/diagram_resonancias-kirkwood.webp',
+    diagramCaption: 'Esquema de las Lagunas de Kirkwood: valles de vaciamiento por resonancias gravitatorias',
     "content": [
       "En el año 1866, el astrónomo y matemático estadounidense Daniel Kirkwood presentó un análisis estadístico pionero de las distancias medias al Sol de todos los asteroides catalogados hasta esa época. Al graficar el número de asteroides en función de su semieje mayor, descubrió notables valles y zonas casi desprovistas de cuerpos rocosos, interrupciones bruscas que hoy se conocen internacionalmente como los 'Huecos de Kirkwood'.",
       "Kirkwood demostró que estos huecos coinciden de forma matemáticamente exacta con ubicaciones orbitales donde el periodo de revolución del asteroide es una fracción simple del periodo orbital de Júpiter (que dura once punto ochenta y seis años terrestres). Las resonancias más prominentes se encuentran en las proporciones 3:1 (a dos punto cincuenta UA), 5:2 (a dos punto ochenta y dos UA), 7:3 (a dos punto noventa y cinco UA) y 2:1 (a tres punto veintisiete UA).",
@@ -210,6 +226,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#9B51E0",
     "btnImage": "/assets/asteroides/infographic_m1/btn_tipos-espectrales.webp",
     "image": "/assets/asteroides/infographic_m1/hero_tipos-espectrales.webp",
+    bannerImage: '/assets/asteroides/infographic_m1/banner_tipos-espectrales.webp',
+    bannerCaption: 'Diferenciación espectral y mineralógica: clases C, S y M',
+    diagramImage: '/assets/asteroides/infographic_m1/diagram_tipos-espectrales.webp',
+    diagramCaption: 'Taxonomía espectral comparativa: composición interna de asteroides tipos C, S y M',
     "content": [
       "La composición mineralógica de los asteroides no es homogénea, sino que refleja las condiciones térmicas y químicas de las zonas del disco protosolar donde se originaron. Para clasificarlos, los astrónomos utilizan la espectroscopía de reflectancia óptica e infrarroja, una técnica que analiza las firmas de absorción de la luz solar reflejada por la superficie de la roca, clasificándolos en los sistemas taxonómicos de Tholen y Bus-DeMeo.",
       "Los asteroides de Tipo C (carbonáceos) son los más abundantes, representando más del setenta y cinco por ciento de todos los cuerpos del Cinturón Principal. Se caracterizan por un albedo extremadamente oscuro, reflejando menos del cinco por ciento de la luz incidente. Su composición incluye grandes concentraciones de compuestos de carbono amorfo, filosilicatos hidratados y minerales de arcilla, predominando en las regiones exteriores del cinturón más allá de dos punto siete UA.",
@@ -237,6 +257,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF884B",
     "btnImage": "/assets/asteroides/infographic_m1/btn_colisiones-familias.webp",
     "image": "/assets/asteroides/infographic_m1/hero_colisiones-familias.webp",
+    bannerImage: '/assets/asteroides/infographic_m1/banner_colisiones-familias.webp',
+    bannerCaption: 'Familias colisionales de fragmentación catastrófica en el Cinturón',
+    diagramImage: '/assets/asteroides/infographic_m1/diagram_colisiones-familias.webp',
+    diagramCaption: 'Fragmentación colisional hipercatastrófica y dispersión vectorial de familias de asteroides',
     "content": [
       "A lo largo de los cuatro mil seiscientos millones de años de historia del Cinturón Principal, las colisiones mutuas a velocidades hiperbólicas han remodelado continuamente la población de asteroides. En el año 1918, el astrónomo japonés Kiyotsugu Hirayama descubrió que numerosos asteroides que orbitan a distancias aparentemente no relacionadas comparten parámetros orbitales fundamentales idénticos: el semieje mayor, la excentricidad y la inclinación orbital propia.",
       "Hirayama propuso la brillante hipótesis de que estos grupos dinámicos, bautizados formalmente como 'Familias de Hirayama' o familias asteroidales colisionales, son los fragmentos dispersos resultantes de la fragmentación catastrófica de un único cuerpo progenitor de gran tamaño. Cuando dos asteroides chocan a varios kilómetros por segundo, la energía cinética pulveriza el objeto menor y desintegra al mayor en miles de piezas que heredan la velocidad orbital orbital del progenitor.",
@@ -264,6 +288,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E4FF",
     "btnImage": "/assets/asteroides/infographic_m1/btn_futuro-cinturon.webp",
     "image": "/assets/asteroides/infographic_m1/hero_futuro-cinturon.webp",
+    bannerImage: '/assets/asteroides/infographic_m1/banner_futuro-cinturon.webp',
+    bannerCaption: 'Evolución dinámica a largo plazo y destino de los cuerpos asteroidales',
+    diagramImage: '/assets/asteroides/infographic_m1/diagram_futuro-cinturon.webp',
+    diagramCaption: 'Mecanismo del Efecto Yarkovsky: radiación térmica asimétrica y deriva orbital secular',
     "content": [
       "Lejos de ser un entorno estático y petrificado, el Cinturón de Asteroides experimenta una sutil pero continua evolución física y orbital impulsada por la interacción de la materia con la radiación del Sol. Durante décadas, los astrónomos no podían explicar por qué ciertos asteroides de tamaño intermedio abandonaban sus órbitas estables más rápido de lo que predecía la mecánica newtoniana gravitatoria estándar.",
       "La respuesta reside en el Efecto Yarkovsky, un mecanismo térmico propuesto por el ingeniero civil ruso Ivan Yarkovsky en 1900 y confirmado empíricamente por telescopios espaciales en 2003. Cuando un asteroide en rotación absorbe la radiación solar en su hemisferio diurno, su superficie rocosa se calienta. Al girar, ese calor no se irradia inmediatamente, sino que es reemitido en el espectro infrarrojo con cierto retardo durante el hemisferio nocturno del cuerpo.",
@@ -743,6 +771,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.78rem', color: 'rgba(255,255,255,0.7)', textAlign: 'center', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

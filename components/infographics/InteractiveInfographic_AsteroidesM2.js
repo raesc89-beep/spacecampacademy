@@ -94,6 +94,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF6B6B",
     "btnImage": "/assets/asteroides/infographic_m2/btn_viaje-atmosferico.webp",
     "image": "/assets/asteroides/infographic_m2/hero_viaje-atmosferico.webp",
+    bannerImage: '/assets/asteroides/infographic_m2/banner_viaje-atmosferico.webp',
+    bannerCaption: 'Entrada atmosférica hipersónica y formación del cono de ablación',
+    diagramImage: '/assets/asteroides/infographic_m2/diagram_viaje-atmosferico.webp',
+    diagramCaption: 'Fases de la reentrada hipersónica: onda de choque, ablación térmica y caída oscura',
     "video": {
       "src": "https://drive.usercontent.google.com/download?id=1Xy8G2VzH9j8V4K0L1M2N3P4Q5R6S7T8U&export=download&authuser=0",
       "title": "Entrada Atmosférica"
@@ -125,6 +129,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#4D96FF",
     "btnImage": "/assets/asteroides/infographic_m2/btn_diferencia-terminos.webp",
     "image": "/assets/asteroides/infographic_m2/hero_diferencia-terminos.webp",
+    bannerImage: '/assets/asteroides/infographic_m2/banner_diferencia-terminos.webp',
+    bannerCaption: 'Meteoroide en el espacio, meteoro en la atmósfera y meteorito en superficie',
+    diagramImage: '/assets/asteroides/infographic_m2/diagram_diferencia-terminos.webp',
+    diagramCaption: 'Clasificación física: meteoroide en el espacio, meteoro en la atmósfera y meteorito en superficie',
     "content": [
       "En el ámbito de las ciencias planetarias y la astronomía observacional, es esencial distinguir rigurosamente entre tres conceptos frecuentemente confundidos: meteoroide, meteoro y meteorito. Cada uno de estos términos describe un estado físico y una localización espacial totalmente diferentes dentro de la evolución dinámica de un fragmento de materia interplanetaria a lo largo de su interacción con el planeta Tierra.",
       "Un meteoroide es el objeto físico mientras todavía viaja por el vacío del espacio interplanetario. La Unión Astronómica Internacional define al meteoroide como un cuerpo sólido natural con dimensiones comprendidas entre treinta micrómetros (el grosor de un cabello humano fino) y un metro de diámetro. Aquellos objetos menores a treinta micrómetros se denominan micrometeoroides o polvo cósmico, mientras que los que superan el metro se clasifican formalmente como asteroides menores.",
@@ -152,6 +160,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFD93D",
     "btnImage": "/assets/asteroides/infographic_m2/btn_tipos-meteoritos.webp",
     "image": "/assets/asteroides/infographic_m2/hero_tipos-meteoritos.webp",
+    bannerImage: '/assets/asteroides/infographic_m2/banner_tipos-meteoritos.webp',
+    bannerCaption: 'Clasificación petrológica: condritas primitivas, acondritas y litosideritos',
+    diagramImage: '/assets/asteroides/infographic_m2/diagram_tipos-meteoritos.webp',
+    diagramCaption: 'Microestructura petrológica: cóndrulos primitivos, basaltos acondríticos y palasitos metálicos',
     "content": [
       "La clasificación científica de los meteoritos se fundamenta en su composición petrológica, geoquímica e historia térmica. Se dividen en tres grandes familias principales: los meteoritos rocosos o pétreos (que representan más del noventa y cuatro por ciento de todas las caídas confirmadas), los meteoritos metálicos de hierro-níquel (alrededor del cinco por ciento) y los litosideritos mixtos o rocoso-metálicos (aproximadamente el uno por ciento).",
       "Dentro de los meteoritos pétreos, las condritas constituyen el grupo más abundante y primitivo de todo el registro geológico solar. Se caracterizan por contener 'cóndrulos', pequeñas esferas milimétricas de silicatos cristalizados de olivino y piroxeno que se formaron por calentamiento súbito y enfriamiento instantáneo en la nube presolar antes de que existieran los planetas. Al no haber sufrido jamás fusión ígnea en un cuerpo matriz grande, las condritas preservan la receta química elemental intacta del Sol primitivo.",
@@ -179,6 +191,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#6BCB77",
     "btnImage": "/assets/asteroides/infographic_m2/btn_formacion-crateres.webp",
     "image": "/assets/asteroides/infographic_m2/hero_formacion-crateres.webp",
+    bannerImage: '/assets/asteroides/infographic_m2/banner_formacion-crateres.webp',
+    bannerCaption: 'Morfología de impacto: eyección, ondas de choque y pico central',
+    diagramImage: '/assets/asteroides/infographic_m2/diagram_formacion-crateres.webp',
+    diagramCaption: 'Mecánica de craterización por impacto: compresión, excavación transitoria y colapso estructural',
     "content": [
       "El cráter de impacto es la forma geológica dominante en la superficie de casi todos los cuerpos sólidos del Sistema Solar, desde la Luna y Mercurio hasta los satélites helados de Júpiter. La excavación de un cráter por un proyectil hiperveloz es un proceso físico extremadamente energético que no responde a una simple excavación mecánica, sino a la liberación instantánea de energía cinética comparable a una detonación nuclear masiva.",
       "La formación de un cráter ocurre a través de tres etapas físicas consecutivas: 1) Etapa de contacto y compresión: el proyectil choca con el terreno diana a velocidades de diez a cuarenta kilómetros por segundo. Se generan ondas de choque biterrestres de presiones monstruosas que superan varios megabares, comprimiendo y fundiendo tanto el asteroide como la roca basal en una fracción de milisegundo.",
@@ -206,6 +222,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#9B51E0",
     "btnImage": "/assets/asteroides/infographic_m2/btn_impacto-chicxulub.webp",
     "image": "/assets/asteroides/infographic_m2/hero_impacto-chicxulub.webp",
+    bannerImage: '/assets/asteroides/infographic_m2/banner_impacto-chicxulub.webp',
+    bannerCaption: 'Estructura de impacto de Chicxulub en la península de Yucatán',
+    diagramImage: '/assets/asteroides/infographic_m2/diagram_impacto-chicxulub.webp',
+    diagramCaption: 'Corte geofísico de Chicxulub: anillo de picos sumergido, brechas de fusión y anillo de cenotes',
     "content": [
       "Hace exactamente sesenta y seis millones cuarenta mil años, al término del periodo Cretácico, un asteroide carbonáceo de entre diez y catorce kilómetros de diámetro impactó contra las plataformas marinas carbonatadas de lo que hoy es la Península de Yucatán, cerca del poblado de Chicxulub en México. El cataclismo liberó una energía colosal estimada en cien millones de megatones de dinamita, desencadenando la quinta extinción masiva de la Tierra.",
       "El choque excavó una cavidad transitoria de casi cien kilómetros de ancho y treinta kilómetros de profundidad en menos de cinco segundos, fundiendo instantáneamente miles de kilómetros cúbicos de granito basal. La roca pulverizada y fundida fue eyectada fuera de la atmósfera a velocidades orbitales, mientras megatsunamis con olas de más de trescientos metros de altura barrieron las costas de todo el Golfo de México y penetraron cientos de kilómetros tierra adentro.",
@@ -233,6 +253,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF884B",
     "btnImage": "/assets/asteroides/infographic_m2/btn_lluvias-estrellas.webp",
     "image": "/assets/asteroides/infographic_m2/hero_lluvias-estrellas.webp",
+    bannerImage: '/assets/asteroides/infographic_m2/banner_lluvias-estrellas.webp',
+    bannerCaption: 'Encuentros orbitales con estelas de escombros de cometas periódicos',
+    diagramImage: '/assets/asteroides/infographic_m2/diagram_lluvias-estrellas.webp',
+    diagramCaption: 'Geometría orbital de las lluvias de meteoros: intersección nodal con estelas de cometas periódicos',
     "content": [
       "Las lluvias de meteoros son espectáculos celestes periódicos que fascinan a la humanidad desde la antigüedad, pero su origen físico es puramente mecánico y astronómico. A medida que un cometa periódico o un asteroide activo orbita alrededor del Sol, el calor solar evapora sus hielos y libera millones de pequeñas partículas de polvo, arena y guijarros que continúan orbitando en una corriente de escombros alargada siguiendo la misma trayectoria elíptica.",
       "Cada año, cuando la Tierra en su viaje orbital de traslación alrededor del Sol cruza una de estas densas corrientes de escombros cósmicos, millones de partículas penetran en la atmósfera a velocidades relativas de decenas de kilómetros por segundo. La ablación colectiva de miles de meteoroides a lo largo de varias noches consecutivas produce la visión coordinada de decenas de estrellas fugaces por hora surcando el firmamento.",
@@ -260,6 +284,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E4FF",
     "btnImage": "/assets/asteroides/infographic_m2/btn_meteoritos-famosos.webp",
     "image": "/assets/asteroides/infographic_m2/hero_meteoritos-famosos.webp",
+    bannerImage: '/assets/asteroides/infographic_m2/banner_meteoritos-famosos.webp',
+    bannerCaption: 'Registro histórico y análisis de meteoritos célebres preservados',
+    diagramImage: '/assets/asteroides/infographic_m2/diagram_meteoritos-famosos.webp',
+    diagramCaption: 'Muestras icónicas: patrones de Widmanstätten en hierro, masa de Hoba y minerales de Allende',
     "content": [
       "A lo largo de los siglos, la caída y hallazgo de meteoritos excepcionales ha dejado una huella indeleble tanto en la ciencia astronómica como en la cultura popular humana. Estos fragmentos cósmicos singulares se conservan en los grandes museos de historia natural como tesoros geológicos irremplazables que documentan cataclismos prehistóricos y la química de mundos desaparecidos.",
       "El meteorito más masivo conocido que yace intacto sobre la superficie terrestre es el meteorito Hoba, descubierto en Namibia en el año 1920. Se trata de un colosal bloque metálico con forma tabular compuesto en un ochenta y cuatro por ciento de hierro y dieciséis por ciento de níquel, con una masa estimada de más de sesenta toneladas. Sorprendentemente, Hoba no excavó un cráter visible, ya que la densa atmósfera terrestre frenó el bloque hasta su velocidad terminal antes del impacto suave.",
@@ -739,6 +767,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.78rem', color: 'rgba(255,255,255,0.7)', textAlign: 'center', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

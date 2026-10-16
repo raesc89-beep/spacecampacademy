@@ -91,6 +91,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF3D00",
     "btnImage": "/assets/asteroides/infographic_m5/btn_descubrimiento-apophis.webp",
     "image": "/assets/asteroides/infographic_m5/hero_descubrimiento-apophis.webp",
+    bannerImage: '/assets/asteroides/infographic_m5/banner_descubrimiento-apophis.webp',
+    bannerCaption: 'Detección y primer cálculo orbital del asteroide 99942 Apophis en 2004',
+    diagramImage: '/assets/asteroides/infographic_m5/diagram_descubrimiento-apophis.webp',
+    diagramCaption: 'Cartografía por radar astronómico delay-Doppler y elipsoides de incertidumbre orbital de Apophis',
     "content": [
       "El 19 de junio de 2004, los astrónomos Roy Tucker, David Tholen y Fabrizio Bernardi descubrieron un nuevo asteroide potencialmente peligroso desde el Observatorio Nacional de Kitt Peak en Arizona, empleando el telescopio Bok de dos punto tres metros. El objeto recibió la designación astronómica provisional 2004 MN4 y, tras confirmarse su órbita periódica alrededor del Sol, fue nombrado formalmente como 99942 Apophis, en honor a la deidad egipcia del caos, la oscuridad y la destrucción.",
       "Apophis es un asteroide rocoso clasificado espectralmente dentro del Tipo Sq (rico en silicatos, piroxenos y olivino), con una morfología alargada y asimétrica con forma de cacahuate o peonza. Posee un diámetro medio equivalente de trescientos cuarenta metros, un volumen aproximado de dos punto dos millones de metros cúbicos y una masa estimada en sesenta y un millones de toneladas métricas, con una densidad media de tres punto dos gramos por centímetro cúbico.",
@@ -118,6 +122,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#D4A843",
     "btnImage": "/assets/asteroides/infographic_m5/btn_encuentro-2029.webp",
     "image": "/assets/asteroides/infographic_m5/hero_encuentro-2029.webp",
+    bannerImage: '/assets/asteroides/infographic_m5/banner_encuentro-2029.webp',
+    bannerCaption: 'Aproximación cercana récord a 32,000 km de la superficie terrestre en abril de 2029',
+    diagramImage: '/assets/asteroides/infographic_m5/diagram_encuentro-2029.webp',
+    diagramCaption: 'Geometría del sobrevuelo del 13 de abril de 2029: trayectoria dentro del anillo geoestacionario',
     "content": [
       "El viernes 13 de abril de 2029, la humanidad será testigo de uno de los fenómenos astrodinámicos más extraordinarios y cercanos jamás registrados en los anales de la ciencia planetaria. El asteroide 99942 Apophis cruzará el espacio próximo a la Tierra a una velocidad relativa de siete punto cuatro kilómetros por segundo, rozando nuestro planeta a una distancia mínima de tan solo treinta y un mil seiscientos kilómetros sobre la superficie terrestre.",
       "Esta distancia es astronómicamente ínfima: el asteroide pasará por debajo del cinturón orbital de los satélites geoestacionarios de telecomunicaciones y meteorología (situados a treinta y cinco mil setecientos ochenta y seis kilómetros de altitud) y a apenas una décima parte de la distancia media entre la Tierra y la Luna. Estadísticamente, un encuentro tan cercano de un objeto rocoso de más de trescientos metros ocurre en promedio una vez cada cinco mil años.",
@@ -145,6 +153,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#80DEEA",
     "btnImage": "/assets/asteroides/infographic_m5/btn_cerradura-gravitacional.webp",
     "image": "/assets/asteroides/infographic_m5/hero_cerradura-gravitacional.webp",
+    bannerImage: '/assets/asteroides/infographic_m5/banner_cerradura-gravitacional.webp',
+    bannerCaption: 'Keyholes orbitales y análisis determinista de trayectorias futuras',
+    diagramImage: '/assets/asteroides/infographic_m5/diagram_cerradura-gravitacional.webp',
+    diagramCaption: 'Concepto de Cerradura Gravitacional: plano b y ventanas resonantes de retorno orbital',
     "content": [
       "En mecánica celeste y dinámica de defensa planetaria, una 'cerradura gravitacional' (en inglés, gravitational keyhole) representa una región espacial de precisión geométrica crítica, a menudo de apenas unos pocos cientos de metros a escasos kilómetros de ancho, a través de la cual el paso de un asteroide puede sellar su destino fatal con nuestro planeta en un retorno futuro.",
       "Cuando un objeto cercano a la Tierra realiza un sobrevuelo a escasa altitud, el pozo gravitatorio de nuestro planeta deforma drásticamente su trayectoria hiperbólica, modificando de forma irreversible su semieje mayor, excentricidad e inclinación orbital. Si el asteroide cruza exactamente a través de una de estas cerraduras microscópicas en el espacio, la desviación angular precisa ajustará su periodo orbital en una resonancia exacta con la órbita terrestre.",
@@ -172,6 +184,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#BA68C8",
     "btnImage": "/assets/asteroides/infographic_m5/btn_efecto-yarkovsky.webp",
     "image": "/assets/asteroides/infographic_m5/hero_efecto-yarkovsky.webp",
+    bannerImage: '/assets/asteroides/infographic_m5/banner_efecto-yarkovsky.webp',
+    bannerCaption: 'Fuerza de empuje térmico asimétrico y desvío de órbitas a escala secular',
+    diagramImage: '/assets/asteroides/infographic_m5/diagram_efecto-yarkovsky.webp',
+    diagramCaption: 'Física del empuje fotónico: inercia térmica diurna y variación continua del semieje mayor',
     "content": [
       "Durante más de una década posterior a su descubrimiento, el cálculo orbital definitivo de Apophis se enfrentó a una sutil pero crucial fuerza no gravitatoria que amenazaba con alterar las predicciones matemáticas a largo plazo: el Efecto Yarkovsky. Esta sutil aceleración física térmica actúa de forma silenciosa e ininterrumpida sobre todos los asteroides de tamaño pequeño y mediano que orbitan en el Sistema Solar interior.",
       "Postulado teóricamente en 1901 por el ingeniero civil polaco-ruso Ivan Osipovich Yarkovsky, el efecto surge de la absorción y reemisión anisotrópica de la radiación electromagnética solar. A medida que un asteroide gira sobre su eje de rotación, la superficie expuesta al Sol absorbe fotones y eleva su temperatura, pero debido a la inercia térmica de los minerales rocosos, el punto de máxima emisión infrarroja se desplaza hacia la tarde local del asteroide.",
@@ -199,6 +215,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF884B",
     "btnImage": "/assets/asteroides/infographic_m5/btn_tecnicas-defensa.webp",
     "image": "/assets/asteroides/infographic_m5/hero_tecnicas-defensa.webp",
+    bannerImage: '/assets/asteroides/infographic_m5/banner_tecnicas-defensa.webp',
+    bannerCaption: 'Métodos de mitigación: impacto cinético, tractor gravitatorio y ablación láser',
+    diagramImage: '/assets/asteroides/infographic_m5/diagram_tecnicas-defensa.webp',
+    diagramCaption: 'Técnicas comparadas de mitigación: impacto cinético, tractor gravitatorio y ablación láser',
     "content": [
       "La defensa planetaria constituye la única rama de la ciencia aplicada donde la humanidad posee la capacidad técnica potencial de prevenir por completo un desastre natural de magnitudes globales. Frente a terremotos, huracanes o erupciones volcánicas donde solo cabe la evacuación y la resiliencia pasiva, los impactos de asteroides pueden anticiparse y neutralizarse con décadas de antelación en el espacio.",
       "La técnica de mitigación más madura y probada empíricamente es el impacto cinético a hipervelocidad, validado con éxito absoluto por la misión DART de la NASA en 2022. Esta técnica consiste en estrellar una o varias naves robóticas masivas a velocidades de entre seis y diez kilómetros por segundo contra el asteroide; aunque la nave apenas altera la velocidad del objetivo en milímetros por segundo, con suficiente tiempo de preaviso esa minúscula variación angular desvía la trayectoria miles de kilómetros.",
@@ -226,6 +246,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#E57373",
     "btnImage": "/assets/asteroides/infographic_m5/btn_redes-vigilancia.webp",
     "image": "/assets/asteroides/infographic_m5/hero_redes-vigilancia.webp",
+    bannerImage: '/assets/asteroides/infographic_m5/banner_redes-vigilancia.webp',
+    bannerCaption: 'Redes telescópicas globales: Pan-STARRS, ATLAS, Catalina y NEO Surveyor',
+    diagramImage: '/assets/asteroides/infographic_m5/diagram_redes-vigilancia.webp',
+    diagramCaption: 'Red global de vigilancia y alerta temprana: integración de sensores infrarrojos espaciales y terrestres',
     "content": [
       "Cualquier estrategia de defensa planetaria o desvío espacial resulta completamente estéril sin un sistema previo de alerta temprana capaz de descubrir y rastrear objetos peligrosos con años o décadas de anticipación. Por ello, las principales agencias espaciales han estructurado una densa red de vigilancia astronómica óptica, infrarroja y de radar que barre el firmamento los trescientos sesenta y cinco días del año.",
       "El pilar de esta vigilancia recae en los sondeos terrestres automatizados de gran campo visual, como el Catalina Sky Survey en Arizona, el telescopio Pan-STARRS en la cumbre del Haleakala en Hawái y el sistema ATLAS (Asteroid Terrestrial-impact Last Alert System), que opera cuatro telescopios robotizados en Hawái, Chile y Sudáfrica capaces de escanear la totalidad del cielo nocturno accesible cada veinticuatro horas en busca de bólidos de aproximación rápida.",
@@ -253,6 +277,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E4FF",
     "btnImage": "/assets/asteroides/infographic_m5/btn_protocolos-respuesta.webp",
     "image": "/assets/asteroides/infographic_m5/hero_protocolos-respuesta.webp",
+    bannerImage: '/assets/asteroides/infographic_m5/banner_protocolos-respuesta.webp',
+    bannerCaption: 'Cooperación científica internacional y directrices de IAWN y SMPAG',
+    diagramImage: '/assets/asteroides/infographic_m5/diagram_protocolos-respuesta.webp',
+    diagramCaption: 'Protocolo internacional de respuesta: flujo de decisión IAWN, comités SMPAG de la ONU y mitigación',
     "content": [
       "El descubrimiento de un asteroide en rumbo inequívoco de colisión contra la Tierra desencadenaría un desafío geopolítico, científico y humanitario sin precedentes históricos. Para evitar la improvisación, el pánico social o conflictos internacionales sobre el uso de tecnologías de desvío, la comunidad internacional ha establecido estrictos protocolos estandarizados de notificación, toma de decisiones y acción coordinada.",
       "Bajo los auspicios de la Oficina de Asuntos del Espacio Ultraterrestre de las Naciones Unidas (UNOOSA) y el Comité COPUOS, se crearon en 2014 dos entidades técnicas globales independientes: la Red Internacional de Alerta de Asteroides (IAWN) y el Grupo Asesor de Planificación de Misiones Espaciales (SMPAG), que agrupan a agencias como la NASA, ESA, JAXA, Roscosmos, CNSA y docenas de institutos de investigación.",
@@ -709,6 +737,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.78rem', color: 'rgba(255,255,255,0.7)', textAlign: 'center', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>
