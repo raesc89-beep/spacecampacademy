@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "helio-del-geocentrismo-al-sol",
+    diagramImage: '/assets/copernico/infographic_m2/diagram_helio-del-geocentrismo-al-sol.webp',
+    diagramCaption: 'El cambio de paradigma del modelo geocéntrico al sistema heliocéntrico',
     bannerImage: '/assets/copernico/infographic_m2/banner_helio-del-geocentrismo-al-sol.webp',
     bannerCaption: "«Heliocéntrico» viene del griego «helios», Sol: un modelo con el Sol en el centro y la Tierra girando a su alrededor.",
     title: "Del universo de Ptolomeo al Sol en el centro",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "helio-commentariolus",
+    diagramImage: '/assets/copernico/infographic_m2/diagram_helio-commentariolus.webp',
+    diagramCaption: 'Copérnico redactando el manuscrito del Commentariolus en la torre de Frombork',
     bannerImage: '/assets/copernico/infographic_m2/banner_helio-commentariolus.webp',
     bannerCaption: "Antes de 1514, Copérnico hizo circular entre amigos un breve manuscrito, el Commentariolus, con las bases de su modelo.",
     title: "El Commentariolus: la revolución en un manuscrito",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "helio-movimiento-retrogrado",
+    diagramImage: '/assets/copernico/infographic_m2/diagram_helio-movimiento-retrogrado.webp',
+    diagramCaption: 'Explicación natural del movimiento retrógrado al adelantar la Tierra a los planetas exteriores',
     bannerImage: '/assets/copernico/infographic_m2/banner_helio-movimiento-retrogrado.webp',
     bannerCaption: "Marte parece retroceder en el cielo unos 72 días cada 26 meses: es un efecto de perspectiva cuando la Tierra lo adelanta.",
     title: "El misterio del movimiento retrógrado",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "helio-orden-y-distancias",
+    diagramImage: '/assets/copernico/infographic_m2/diagram_helio-orden-y-distancias.webp',
+    diagramCaption: 'El orden armónico y las distancias relativas de los planetas respecto al Sol',
     bannerImage: '/assets/copernico/infographic_m2/banner_helio-orden-y-distancias.webp',
     bannerCaption: "Con el Sol en el centro, Copérnico calculó distancias relativas: Venus a 0.72 y Marte a 1.52 veces la distancia Tierra-Sol.",
     title: "El orden de los planetas y sus distancias",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "helio-tierra-en-movimiento",
+    diagramImage: '/assets/copernico/infographic_m2/diagram_helio-tierra-en-movimiento.webp',
+    diagramCaption: 'Doble movimiento de la Tierra: rotación diaria y traslación orbital anual',
     bannerImage: '/assets/copernico/infographic_m2/banner_helio-tierra-en-movimiento.webp',
     bannerCaption: "La Tierra orbita el Sol a unos 107,000 km/h y su ecuador rota a unos 1,670 km/h, pero no sentimos ninguno de esos movimientos.",
     title: "Una Tierra que gira y viaja",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "helio-objecion-del-paralaje",
+    diagramImage: '/assets/copernico/infographic_m2/diagram_helio-objecion-del-paralaje.webp',
+    diagramCaption: 'La geometría del paralaje estelar y las enormes distancias a las estrellas',
     bannerImage: '/assets/copernico/infographic_m2/banner_helio-objecion-del-paralaje.webp',
     bannerCaption: "El paralaje estelar que exigía el modelo de Copérnico se midió por fin en 1838: Bessel lo detectó en la estrella 61 Cygni.",
     title: "La objeción del paralaje estelar",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "helio-error-circulos-perfectos",
+    diagramImage: '/assets/copernico/infographic_m2/diagram_helio-error-circulos-perfectos.webp',
+    diagramCaption: 'El apego inicial a los círculos perfectos antes del descubrimiento de las elipses',
     bannerImage: '/assets/copernico/infographic_m2/banner_helio-error-circulos-perfectos.webp',
     bannerCaption: "Copérnico mantuvo órbitas circulares; en 1609 Kepler demostró que los planetas recorren elipses con el Sol en un foco.",
     title: "El gran error: los círculos perfectos",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

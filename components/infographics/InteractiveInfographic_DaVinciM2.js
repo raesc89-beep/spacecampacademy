@@ -121,6 +121,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "diseccion-secretos",
+    diagramImage: '/assets/davinci/infographic_m2/diagram_diseccion-secretos.webp',
+    diagramCaption: 'Disecciones anatómicas a la luz de las velas: desentrañando los misterios del cuerpo humano',
     "bannerImage": "/assets/davinci/infographic_m2/banner_diseccion-secretos.webp",
     "title": "Disección y Secretos Ocultos",
     "color": "#D4A843",
@@ -149,6 +151,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "vitruvio-proporcion",
+    diagramImage: '/assets/davinci/infographic_m2/diagram_vitruvio-proporcion.webp',
+    diagramCaption: 'El Hombre de Vitruvio: estudio de las proporciones matemáticas ideales del cuerpo humano',
     "bannerImage": "/assets/davinci/infographic_m2/banner_vitruvio-proporcion.webp",
     "title": "El Hombre de Vitruvio",
     "color": "#B08D57",
@@ -177,6 +181,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sistema-circulatorio",
+    diagramImage: '/assets/davinci/infographic_m2/diagram_sistema-circulatorio.webp',
+    diagramCaption: 'Estudio pionero del corazón, las válvulas aórticas y la dinámica de los fluidos sanguíneos',
     "bannerImage": "/assets/davinci/infographic_m2/banner_sistema-circulatorio.webp",
     "title": "El Sistema Circulatorio",
     "color": "#8C6B4F",
@@ -205,6 +211,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "musculos-movimiento",
+    diagramImage: '/assets/davinci/infographic_m2/diagram_musculos-movimiento.webp',
+    diagramCaption: 'Biomecánica muscular: el cuerpo humano analizado como un sistema mecánico de palancas',
     "bannerImage": "/assets/davinci/infographic_m2/banner_musculos-movimiento.webp",
     "title": "Músculos y Movimiento",
     "color": "#C9A24B",
@@ -233,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cerebro-dibujos",
+    diagramImage: '/assets/davinci/infographic_m2/diagram_cerebro-dibujos.webp',
+    diagramCaption: 'Pionero de la neuroanatomía: inyecciones de cera para cartografiar los ventrículos cerebrales',
     "bannerImage": "/assets/davinci/infographic_m2/banner_cerebro-dibujos.webp",
     "title": "Mapeando el Cerebro",
     "color": "#9C7E5A",
@@ -261,6 +271,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "anatomia-arte",
+    diagramImage: '/assets/davinci/infographic_m2/diagram_anatomia-arte.webp',
+    diagramCaption: 'La integración del rigor anatómico científico en la maestría de la pintura renacentista',
     "bannerImage": "/assets/davinci/infographic_m2/banner_anatomia-arte.webp",
     "title": "Anatomía y Arte",
     "color": "#A88B5E",
@@ -289,6 +301,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-medicina",
+    diagramImage: '/assets/davinci/infographic_m2/diagram_legado-medicina.webp',
+    diagramCaption: 'El legado revolucionario de Leonardo que anticipó la ilustración médica moderna',
     "bannerImage": "/assets/davinci/infographic_m2/banner_legado-medicina.webp",
     "title": "El Legado Perdido",
     "color": "#E0B860",
@@ -751,6 +765,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

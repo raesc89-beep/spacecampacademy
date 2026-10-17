@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "fisica-de-aristoteles",
+    diagramImage: '/assets/galileo/infographic_m4/diagram_fisica-de-aristoteles.webp',
+    diagramCaption: 'La física cualitativa de Aristóteles y los conceptos de lugares naturales',
     bannerImage: '/assets/galileo/infographic_m4/banner_fisica-de-aristoteles.webp',
     bannerCaption: "Aristóteles (384-322 a. C.) pensaba que los cuerpos pesados caen más rápido; su idea dominó casi dos mil años.",
     title: "El mundo según Aristóteles",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "torre-de-pisa-y-experimento-mental",
+    diagramImage: '/assets/galileo/infographic_m4/diagram_torre-de-pisa-y-experimento-mental.webp',
+    diagramCaption: 'El experimento mental de Galileo: cuerpos de diferente masa caen a la misma velocidad',
     bannerImage: '/assets/galileo/infographic_m4/banner_torre-de-pisa-y-experimento-mental.webp',
     bannerCaption: "La caída de bolas desde la Torre de Pisa la narró Viviani años después; Galileo nunca la describió en sus libros.",
     title: "La Torre de Pisa: leyenda y razonamiento",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "planos-inclinados-y-relojes-de-agua",
+    diagramImage: '/assets/galileo/infographic_m4/diagram_planos-inclinados-y-relojes-de-agua.webp',
+    diagramCaption: 'Medición empírica de la aceleración constante mediante planos inclinados y relojes de agua',
     bannerImage: '/assets/galileo/infographic_m4/banner_planos-inclinados-y-relojes-de-agua.webp',
     bannerCaption: "Galileo hizo rodar bolas de bronce por una rampa de madera pulida y midió el tiempo pesando agua.",
     title: "Planos inclinados y relojes de agua",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "caida-libre-y-el-martillo-lunar",
+    diagramImage: '/assets/galileo/infographic_m4/diagram_caida-libre-y-el-martillo-lunar.webp',
+    diagramCaption: 'El experimento de caída libre en la Luna: martillo y pluma cayendo juntos en el vacío',
     bannerImage: '/assets/galileo/infographic_m4/banner_caida-libre-y-el-martillo-lunar.webp',
     bannerCaption: "En 1971, el astronauta David Scott soltó un martillo y una pluma en la Luna: tocaron el suelo al mismo tiempo.",
     title: "Caída libre: de Padua a la Luna",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "la-parabola-de-los-proyectiles",
+    diagramImage: '/assets/galileo/infographic_m4/diagram_la-parabola-de-los-proyectiles.webp',
+    diagramCaption: 'Composición de movimientos: inercia horizontal y aceleración gravitatoria parabólica',
     bannerImage: '/assets/galileo/infographic_m4/banner_la-parabola-de-los-proyectiles.webp',
     bannerCaption: "Galileo demostró que un proyectil sigue una parábola: avanza a velocidad constante mientras cae acelerando.",
     title: "La parábola de los proyectiles",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "el-pendulo-isocrono",
+    diagramImage: '/assets/galileo/infographic_m4/diagram_el-pendulo-isocrono.webp',
+    diagramCaption: 'Isocronismo del péndulo: descubrimiento del ritmo regular en la catedral de Pisa',
     bannerImage: '/assets/galileo/infographic_m4/banner_el-pendulo-isocrono.webp',
     bannerCaption: "Galileo notó que un péndulo tarda casi lo mismo en cada vaivén, amplio o corto; su periodo depende de su longitud.",
     title: "El péndulo y el ritmo del tiempo",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "inercia-relatividad-y-newton",
+    diagramImage: '/assets/galileo/infographic_m4/diagram_inercia-relatividad-y-newton.webp',
+    diagramCaption: 'El principio de relatividad galileano: la física dentro del camarote de un barco en marcha',
     bannerImage: '/assets/galileo/infographic_m4/banner_inercia-relatividad-y-newton.webp',
     bannerCaption: "Galileo intuyó la inercia y la relatividad del movimiento; Newton construyó sus leyes sobre esos cimientos en 1687.",
     title: "Inercia, el barco y los hombros de Newton",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

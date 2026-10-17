@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "tycho-brahe-medidor-del-cielo",
+    diagramImage: '/assets/copernico/infographic_m5/diagram_tycho-brahe-medidor-del-cielo.webp',
+    diagramCaption: 'Tycho Brahe y sus mediciones astronómicas de precisión sin precedentes',
     bannerImage: '/assets/copernico/infographic_m5/banner_tycho-brahe-medidor-del-cielo.webp',
     bannerCaption: "Tycho Brahe (1546-1601) midió posiciones planetarias con un error cercano a un minuto de arco, sin usar telescopio.",
     title: "Tycho Brahe: el medidor del cielo",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "kepler-orbitas-elipticas",
+    diagramImage: '/assets/copernico/infographic_m5/diagram_kepler-orbitas-elipticas.webp',
+    diagramCaption: 'Johannes Kepler deduciendo las órbitas elípticas a partir de los datos de Tycho',
     bannerImage: '/assets/copernico/infographic_m5/banner_kepler-orbitas-elipticas.webp',
     bannerCaption: "Kepler publicó sus dos primeras leyes en Astronomia Nova (1609) y la tercera en Harmonices Mundi (1619).",
     title: "Kepler: las órbitas son elipses",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "galileo-pruebas-telescopio",
+    diagramImage: '/assets/copernico/infographic_m5/diagram_galileo-pruebas-telescopio.webp',
+    diagramCaption: 'Galileo apuntando su telescopio al cielo y hallando pruebas del heliocentrismo',
     bannerImage: '/assets/copernico/infographic_m5/banner_galileo-pruebas-telescopio.webp',
     bannerCaption: "En enero de 1610 Galileo descubrió cuatro lunas de Júpiter y en marzo las dio a conocer en su libro Sidereus Nuncius.",
     title: "Galileo: pruebas con el telescopio",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "newton-principia-gravitacion",
+    diagramImage: '/assets/copernico/infographic_m5/diagram_newton-principia-gravitacion.webp',
+    diagramCaption: 'Isaac Newton unificando la mecánica celeste y terrestre en los Principia',
     bannerImage: '/assets/copernico/infographic_m5/banner_newton-principia-gravitacion.webp',
     bannerCaption: "Newton publicó los Principia el 5 de julio de 1687 y explicó con una sola ley la caída de una manzana y las órbitas.",
     title: "Newton y los Principia (1687)",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "revolucion-en-las-ideas",
+    diagramImage: '/assets/copernico/infographic_m5/diagram_revolucion-en-las-ideas.webp',
+    diagramCaption: 'La expansión de la mente humana hacia un cosmos sin fronteras fijas',
     bannerImage: '/assets/copernico/infographic_m5/banner_revolucion-en-las-ideas.webp',
     bannerCaption: "En 1992 el papa Juan Pablo II reconoció los errores cometidos en el juicio contra Galileo, 359 años después de su condena.",
     title: "Una revolución en las ideas",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "principio-de-copernico",
+    diagramImage: '/assets/copernico/infographic_m5/diagram_principio-de-copernico.webp',
+    diagramCaption: 'El principio cosmológico de Copérnico: nuestro lugar en el vasto universo',
     bannerImage: '/assets/copernico/infographic_m5/banner_principio-de-copernico.webp',
     bannerCaption: "El principio de Copérnico afirma que la Tierra no ocupa un lugar privilegiado en el universo.",
     title: "El principio de Copérnico",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "copernico-nombre-en-el-cosmos",
+    diagramImage: '/assets/copernico/infographic_m5/diagram_copernico-nombre-en-el-cosmos.webp',
+    diagramCaption: 'El cráter lunar Copérnico y el homenaje eterno en la exploración espacial',
     bannerImage: '/assets/copernico/infographic_m5/banner_copernico-nombre-en-el-cosmos.webp',
     bannerCaption: "El copernicio, elemento 112, recibió oficialmente su nombre el 19 de febrero de 2010, aniversario del nacimiento de Copérnico.",
     title: "Un nombre en la tabla y en el cielo",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

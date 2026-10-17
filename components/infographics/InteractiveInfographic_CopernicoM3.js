@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "revolutionibus-titulo-y-publicacion",
+    diagramImage: '/assets/copernico/infographic_m3/diagram_revolutionibus-titulo-y-publicacion.webp',
+    diagramCaption: 'Primera edición de De revolutionibus orbium coelestium impresa en Núremberg en 1543',
     bannerImage: '/assets/copernico/infographic_m3/banner_revolutionibus-titulo-y-publicacion.webp',
     bannerCaption: "«De revolutionibus orbium coelestium» significa «Sobre las revoluciones de las esferas celestes». Se imprimió en Nuremberg en 1543.",
     title: "Un título, una fecha: 1543",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "revolutionibus-seis-libros",
+    diagramImage: '/assets/copernico/infographic_m3/diagram_revolutionibus-seis-libros.webp',
+    diagramCaption: 'Estructura de los seis libros de la obra cumbre de la astronomía moderna',
     bannerImage: '/assets/copernico/infographic_m3/banner_revolutionibus-seis-libros.webp',
     bannerCaption: "La obra se divide en seis libros: cosmología general, esfera celeste, Tierra y Sol, la Luna y, al final, los planetas.",
     title: "Seis libros dentro de un libro",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "revolutionibus-rheticus",
+    diagramImage: '/assets/copernico/infographic_m3/diagram_revolutionibus-rheticus.webp',
+    diagramCaption: 'Rheticus revisando los manuscritos y cálculos astronómicos con Copérnico',
     bannerImage: '/assets/copernico/infographic_m3/banner_revolutionibus-rheticus.webp',
     bannerCaption: "En 1539 el joven matemático Georg Joachim Rheticus viajó a Frombork y convenció a Copérnico de publicar su obra completa.",
     title: "Rheticus, el discípulo que lo cambió todo",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "revolutionibus-prologo-osiander",
+    diagramImage: '/assets/copernico/infographic_m3/diagram_revolutionibus-prologo-osiander.webp',
+    diagramCaption: 'El polémico prólogo anónimo de Osiander en los talleres de imprenta',
     bannerImage: '/assets/copernico/infographic_m3/banner_revolutionibus-prologo-osiander.webp',
     bannerCaption: "El teólogo Andreas Osiander añadió un prólogo anónimo que presentaba el sistema como simple hipótesis matemática.",
     title: "El prólogo de Osiander",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "revolutionibus-mayo-1543",
+    diagramImage: '/assets/copernico/infographic_m3/diagram_revolutionibus-mayo-1543.webp',
+    diagramCaption: 'Copérnico en su lecho de muerte recibiendo los primeros ejemplares impresos',
     bannerImage: '/assets/copernico/infographic_m3/banner_revolutionibus-mayo-1543.webp',
     bannerCaption: "Según su amigo Tiedemann Giese, Copérnico vio el libro impreso completo el mismo día de su muerte, el 24 de mayo de 1543.",
     title: "Mayo de 1543: un libro y una despedida",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "revolutionibus-tablas-prutenicas",
+    diagramImage: '/assets/copernico/infographic_m3/diagram_revolutionibus-tablas-prutenicas.webp',
+    diagramCaption: 'Las Tablas Pruténicas de Erasmus Reinhold basadas en el modelo copernicano',
     bannerImage: '/assets/copernico/infographic_m3/banner_revolutionibus-tablas-prutenicas.webp',
     bannerCaption: "En 1551 Erasmus Reinhold publicó las Tablas Prutenicas, calculadas con los parámetros de Copérnico, que reemplazaron a las alfonsinas.",
     title: "Las Tablas Prutenicas",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "revolutionibus-indice-y-legado",
+    diagramImage: '/assets/copernico/infographic_m3/diagram_revolutionibus-indice-y-legado.webp',
+    diagramCaption: 'Difusión de las ideas copernicanas en las universidades y nacimiento de la astrofísica',
     bannerImage: '/assets/copernico/infographic_m3/banner_revolutionibus-indice-y-legado.webp',
     bannerCaption: "En 1616, setenta y tres años después de publicarse, el libro quedó suspendido hasta ser corregido; salió del Índice en 1835.",
     title: "El Índice de 1616 y el libro que sí se leyó",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

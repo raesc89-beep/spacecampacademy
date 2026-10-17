@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "cuadernos-secretos",
+    diagramImage: '/assets/davinci/infographic_m5/diagram_cuadernos-secretos.webp',
+    diagramCaption: 'Los cuadernos de Leonardo: miles de páginas manuscritas con observaciones universales',
     bannerImage: '/assets/davinci/infographic_m5/banner_cuadernos-secretos.webp',
     bannerCaption: "Leonardo llenó miles de páginas con dibujos, preguntas y experimentos; hoy sobreviven unas 7,000.",
     title: "Los cuadernos secretos",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "zurdismo-espejo",
+    diagramImage: '/assets/davinci/infographic_m5/diagram_zurdismo-espejo.webp',
+    diagramCaption: 'La escritura especular: el característico trazado en espejo de izquierda a derecha',
     bannerImage: '/assets/davinci/infographic_m5/banner_zurdismo-espejo.webp',
     bannerCaption: "Leonardo era zurdo y escribía de derecha a izquierda; para leer sus notas con facilidad hace falta un espejo.",
     title: "Zurdo y en espejo",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "aprendiz-verrocchio",
+    diagramImage: '/assets/davinci/infographic_m5/diagram_aprendiz-verrocchio.webp',
+    diagramCaption: 'Aprendizaje en el taller de Verrocchio: la formación interdisciplinar florentina',
     bannerImage: '/assets/davinci/infographic_m5/banner_aprendiz-verrocchio.webp',
     bannerCaption: "Hacia 1466-1469 Leonardo entró en el taller de Andrea del Verrocchio en Florencia, donde aprendió arte y técnica.",
     title: "Aprendiz de Verrocchio",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "mecenazgo-sforza",
+    diagramImage: '/assets/davinci/infographic_m5/diagram_mecenazgo-sforza.webp',
+    diagramCaption: 'Al servicio de Ludovico Sforza en Milán: proyectos de ingeniería y el gran caballo de bronce',
     bannerImage: '/assets/davinci/infographic_m5/banner_mecenazgo-sforza.webp',
     bannerCaption: "De 1482 a 1499 Leonardo trabajó en Milán para Ludovico Sforza como ingeniero, escultor, pintor y escenógrafo.",
     title: "Al servicio de los Sforza",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "exilio-final",
+    diagramImage: '/assets/davinci/infographic_m5/diagram_exilio-final.webp',
+    diagramCaption: 'Últimos años en el castillo de Clos Lucé en Amboise bajo la protección de Francisco I',
     bannerImage: '/assets/davinci/infographic_m5/banner_exilio-final.webp',
     bannerCaption: "Tras dejar Milán, Leonardo vivió en Venecia, Florencia y Roma, y pasó sus últimos años en Clos Lucé, Amboise.",
     title: "Viajes y exilio final",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "codex-atlanticus",
+    diagramImage: '/assets/davinci/infographic_m5/diagram_codex-atlanticus.webp',
+    diagramCaption: 'El Códice Atlántico: el mayor compendio de dibujos científicos y técnicos de Da Vinci',
     bannerImage: '/assets/davinci/infographic_m5/banner_codex-atlanticus.webp',
     bannerCaption: "El Códice Atlántico reúne 1,119 folios de Leonardo; lo compiló Pompeo Leoni y se guarda en la Ambrosiana de Milán.",
     title: "El Códice Atlántico",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "legado-universal",
+    diagramImage: '/assets/davinci/infographic_m5/diagram_legado-universal.webp',
+    diagramCaption: 'Un legado universal que trasciende épocas: la curiosidad insaciable como motor humano',
     bannerImage: '/assets/davinci/infographic_m5/banner_legado-universal.webp',
     bannerCaption: "Más de 500 años después, Leonardo inspira a científicos e ingenieros; su nombre está en la Luna y en el espacio.",
     title: "Un legado universal",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

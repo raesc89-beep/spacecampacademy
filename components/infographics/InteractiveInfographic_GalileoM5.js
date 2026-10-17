@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "la-antorcha-de-galileo",
+    diagramImage: '/assets/galileo/infographic_m5/diagram_la-antorcha-de-galileo.webp',
+    diagramCaption: 'El legado intelectual de Galileo como padre de la física y la astronomía moderna',
     bannerImage: '/assets/galileo/infographic_m5/banner_la-antorcha-de-galileo.webp',
     bannerCaption: "En enero de 1610 Galileo descubrió cuatro lunas de Júpiter; siglos después, naves con su nombre las visitaron.",
     title: "La antorcha que encendió Galileo",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "la-sonda-galileo-en-camino",
+    diagramImage: '/assets/galileo/infographic_m5/diagram_la-sonda-galileo-en-camino.webp',
+    diagramCaption: 'La sonda robótica Galileo de la NASA en viaje interplanetario hacia Júpiter',
     bannerImage: '/assets/galileo/infographic_m5/banner_la-sonda-galileo-en-camino.webp',
     bannerCaption: "Lanzada el 18 de octubre de 1989 desde el transbordador Atlantis, la sonda Galileo tardó seis años en llegar a Júpiter.",
     title: "La sonda Galileo: un viaje de seis años",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "descenso-a-las-nubes-de-jupiter",
+    diagramImage: '/assets/galileo/infographic_m5/diagram_descenso-a-las-nubes-de-jupiter.webp',
+    diagramCaption: 'Entrada atmosférica de la cápsula sonda en las densas nubes de Júpiter en 1995',
     bannerImage: '/assets/galileo/infographic_m5/banner_descenso-a-las-nubes-de-jupiter.webp',
     bannerCaption: "El 7 de diciembre de 1995, la sonda atmosférica de Galileo entró en Júpiter y envió datos durante unos 58 minutos.",
     title: "1995: una sonda dentro de Júpiter",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "secretos-de-las-lunas-galileanas",
+    diagramImage: '/assets/galileo/infographic_m5/diagram_secretos-de-las-lunas-galileanas.webp',
+    diagramCaption: 'Exploración cercana de las cuatro lunas galileanas por misiones espaciales contemporáneas',
     bannerImage: '/assets/galileo/infographic_m5/banner_secretos-de-las-lunas-galileanas.webp',
     bannerCaption: "El orbitador Galileo dio 35 vueltas a Júpiter y halló fuertes indicios de un océano salado bajo el hielo de Europa.",
     title: "Los secretos de Ío, Europa, Ganímedes y Calisto",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "navegacion-galileo-europea",
+    diagramImage: '/assets/galileo/infographic_m5/diagram_navegacion-galileo-europea.webp',
+    diagramCaption: 'Constelación de satélites Galileo de la Agencia Espacial Europea para navegación global',
     bannerImage: '/assets/galileo/infographic_m5/banner_navegacion-galileo-europea.webp',
     bannerCaption: "Galileo es el sistema de navegación por satélite de la Unión Europea; sus servicios iniciales comenzaron en diciembre de 2016.",
     title: "Galileo, el sistema europeo de navegación",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "europa-clipper-y-juice",
+    diagramImage: '/assets/galileo/infographic_m5/diagram_europa-clipper-y-juice.webp',
+    diagramCaption: 'Las misiones Europa Clipper y JUICE rumbo a la exploración de los océanos jovianos',
     bannerImage: '/assets/galileo/infographic_m5/banner_europa-clipper-y-juice.webp',
     bannerCaption: "Europa Clipper despegó el 14 de octubre de 2024 y llegará a Júpiter en 2030 para estudiar el océano de Europa.",
     title: "Europa Clipper y JUICE: rumbo a las lunas de Galileo",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "metodo-cientifico-la-gran-herencia",
+    diagramImage: '/assets/galileo/infographic_m5/diagram_metodo-cientifico-la-gran-herencia.webp',
+    diagramCaption: 'El método científico: observación empírica, formulación matemática y contraste experimental',
     bannerImage: '/assets/galileo/infographic_m5/banner_metodo-cientifico-la-gran-herencia.webp',
     bannerCaption: "La herencia principal de Galileo es el método científico: observar, medir, experimentar y aceptar lo que dicen las evidencias.",
     title: "La gran herencia: ciencia basada en evidencias",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

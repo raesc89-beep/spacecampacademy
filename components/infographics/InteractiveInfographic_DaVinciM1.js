@@ -121,6 +121,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "ornithopter-diseno",
+    diagramImage: '/assets/davinci/infographic_m1/diagram_ornithopter-diseno.webp',
+    diagramCaption: 'Diseño del ornitóptero: la máquina de alas batientes inspirada en las aves',
     "bannerImage": "/assets/davinci/infographic_m1/banner_ornithopter-diseno.webp",
     "title": "Diseño del Ornitóptero",
     "color": "#D4A843",
@@ -149,6 +151,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "aves-observacion",
+    diagramImage: '/assets/davinci/infographic_m1/diagram_aves-observacion.webp',
+    diagramCaption: 'Observación minuciosa del vuelo y la anatomía de las aves en los cielos de la Toscana',
     "bannerImage": "/assets/davinci/infographic_m1/banner_aves-observacion.webp",
     "title": "Observación de las Aves",
     "color": "#B08D57",
@@ -177,6 +181,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "aerodinamica-renacimiento",
+    diagramImage: '/assets/davinci/infographic_m1/diagram_aerodinamica-renacimiento.webp',
+    diagramCaption: 'Estudios pioneros de sustentación y resistencia del aire en el Renacimiento',
     "bannerImage": "/assets/davinci/infographic_m1/banner_aerodinamica-renacimiento.webp",
     "title": "Aerodinámica en el Renacimiento",
     "color": "#8C6B4F",
@@ -205,6 +211,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "maquinas-guerra",
+    diagramImage: '/assets/davinci/infographic_m1/diagram_maquinas-guerra.webp',
+    diagramCaption: 'Bocetos de artilugios aéreos y alas delta defensivas concebidas por Leonardo',
     "bannerImage": "/assets/davinci/infographic_m1/banner_maquinas-guerra.webp",
     "title": "Máquinas de Guerra Aeronáuticas",
     "color": "#C9A24B",
@@ -233,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "helice-espiral",
+    diagramImage: '/assets/davinci/infographic_m1/diagram_helice-espiral.webp',
+    diagramCaption: 'El tornillo aéreo: precursor conceptual del helicóptero moderno',
     "bannerImage": "/assets/davinci/infographic_m1/banner_helice-espiral.webp",
     "title": "El Tornillo Aéreo",
     "color": "#9C7E5A",
@@ -261,6 +271,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "vuelo-moderno",
+    diagramImage: '/assets/davinci/infographic_m1/diagram_vuelo-moderno.webp',
+    diagramCaption: 'De los bocetos de Leonardo al desarrollo de la aeronáutica y el vuelo moderno',
     "bannerImage": "/assets/davinci/infographic_m1/banner_vuelo-moderno.webp",
     "title": "El Vuelo Moderno",
     "color": "#A88B5E",
@@ -289,6 +301,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-aviacion",
+    diagramImage: '/assets/davinci/infographic_m1/diagram_legado-aviacion.webp',
+    diagramCaption: 'El Códice sobre el vuelo de las aves y su legado para la historia de la aviación',
     "bannerImage": "/assets/davinci/infographic_m1/banner_legado-aviacion.webp",
     "title": "El Legado de la Aviación",
     "color": "#E0B860",
@@ -751,6 +765,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

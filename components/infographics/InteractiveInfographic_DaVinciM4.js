@@ -126,6 +126,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "sfumato-tecnica",
+    diagramImage: '/assets/davinci/infographic_m4/diagram_sfumato-tecnica.webp',
+    diagramCaption: 'La técnica del sfumato: gradaciones sutiles de luz y sombra sin líneas marcadas',
     bannerImage: '/assets/davinci/infographic_m4/banner_sfumato-tecnica.webp',
     bannerCaption: "El sfumato funde luces y sombras sin contornos duros mediante capas de veladura finísimas.",
     title: "El Sfumato: pintar con humo",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "la-gioconda",
+    diagramImage: '/assets/davinci/infographic_m4/diagram_la-gioconda.webp',
+    diagramCaption: 'La Gioconda: maestría técnica y misterio en el taller de Leonardo',
     bannerImage: '/assets/davinci/infographic_m4/banner_la-gioconda.webp',
     bannerCaption: "La Gioconda: óleo sobre tabla de álamo de 77 x 53 cm, pintado hacia 1503-1519 y conservado en el Louvre.",
     title: "La Gioconda: un retrato bajo el microscopio",
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "perspectiva-matematica",
+    diagramImage: '/assets/davinci/infographic_m4/diagram_perspectiva-matematica.webp',
+    diagramCaption: 'Geometría de la mirada: construcción de la perspectiva lineal matemática',
     bannerImage: '/assets/davinci/infographic_m4/banner_perspectiva-matematica.webp',
     bannerCaption: "La perspectiva lineal usa la geometría para que líneas paralelas converjan en un punto de fuga y creen profundidad.",
     title: "Perspectiva: la geometría de la mirada",
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ultima-cena",
+    diagramImage: '/assets/davinci/infographic_m4/diagram_ultima-cena.webp',
+    diagramCaption: 'La Última Cena en Milán: composición geométrica convergente hacia el punto de fuga',
     bannerImage: '/assets/davinci/infographic_m4/banner_ultima-cena.webp',
     bannerCaption: "La Última Cena (1495-1498), pintada en el refectorio de Santa Maria delle Grazie de Milán con temple y óleo sobre yeso seco.",
     title: "La Última Cena: geometría en un muro",
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "luz-sombra",
+    diagramImage: '/assets/davinci/infographic_m4/diagram_luz-sombra.webp',
+    diagramCaption: 'Estudios científicos de óptica, sombras arrojadas y claroscuro en el arte',
     bannerImage: '/assets/davinci/infographic_m4/banner_luz-sombra.webp',
     bannerCaption: "Leonardo estudió cómo la luz crea sombras, por qué el cielo es azul y por qué la Luna creciente muestra un brillo ceniciento.",
     title: "Luz y sombra: el pintor que estudiaba el cielo",
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "botanica-zoologia",
+    diagramImage: '/assets/davinci/infographic_m4/diagram_botanica-zoologia.webp',
+    diagramCaption: 'Estudios botánicos y zoológicos dibujados con fidelidad y rigor científico',
     bannerImage: '/assets/davinci/infographic_m4/banner_botanica-zoologia.webp',
     bannerCaption: "Leonardo dibujó plantas y animales con rigor científico y notó patrones como la disposición de las hojas en espiral.",
     title: "Botánica y zoología: la naturaleza como maestra",
@@ -252,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "legado-arte-ciencia",
+    diagramImage: '/assets/davinci/infographic_m4/diagram_legado-arte-ciencia.webp',
+    diagramCaption: 'La unión indivisible del arte y la ciencia en el pensamiento de Leonardo',
     bannerImage: '/assets/davinci/infographic_m4/banner_legado-arte-ciencia.webp',
     bannerCaption: "Los cuadernos de Leonardo muestran que arte y ciencia comparten método: observar, medir, experimentar y representar.",
     title: "El legado: arte y ciencia unidos",
@@ -707,6 +721,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

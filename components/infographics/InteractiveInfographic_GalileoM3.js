@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "dos-modelos-del-universo",
+    diagramImage: '/assets/galileo/infographic_m3/diagram_dos-modelos-del-universo.webp',
+    diagramCaption: 'El gran debate cosmológico entre el geocentrismo de Ptolomeo y el heliocentrismo copernicano',
     bannerImage: '/assets/galileo/infographic_m3/banner_dos-modelos-del-universo.webp',
     bannerCaption: "El modelo heliocéntrico de Copérnico, publicado en 1543, situaba al Sol en el centro y a la Tierra girando a su alrededor.",
     title: "Dos maneras de ordenar el universo",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cartas-y-advertencia-1616",
+    diagramImage: '/assets/galileo/infographic_m3/diagram_cartas-y-advertencia-1616.webp',
+    diagramCaption: 'Galileo en Roma defendiendo la compatibilidad entre la ciencia observacional y la fe',
     bannerImage: '/assets/galileo/infographic_m3/banner_cartas-y-advertencia-1616.webp',
     bannerCaption: "En 1616 la Iglesia declaró herético afirmar que el Sol está inmóvil en el centro, y advirtió a Galileo que no lo defendiera.",
     title: "Las cartas de Galileo y la advertencia de 1616",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "dialogo-de-1632",
+    diagramImage: '/assets/galileo/infographic_m3/diagram_dialogo-de-1632.webp',
+    diagramCaption: 'El Diálogo sobre los dos máximos sistemas del mundo: Salviati, Sagredo y Simplicio',
     bannerImage: '/assets/galileo/infographic_m3/banner_dialogo-de-1632.webp',
     bannerCaption: "En 1632 Galileo publicó el Diálogo sobre los dos máximos sistemas del mundo, una conversación que favorecía a Copérnico.",
     title: "El Diálogo de 1632",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "juicio-de-1633",
+    diagramImage: '/assets/galileo/infographic_m3/diagram_juicio-de-1633.webp',
+    diagramCaption: 'Galileo ante el tribunal de la Inquisición en Roma en el convento de Santa Maria sopra Minerva',
     bannerImage: '/assets/galileo/infographic_m3/banner_juicio-de-1633.webp',
     bannerCaption: "El 22 de junio de 1633 Galileo fue declarado vehementemente sospechoso de herejía y condenado; cumplió arresto domiciliario.",
     title: "El juicio de 1633",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "eppur-si-muove",
+    diagramImage: '/assets/galileo/infographic_m3/diagram_eppur-si-muove.webp',
+    diagramCaption: '«Eppur si muove»: la firmeza de la razón científica ante la imposición dogmática',
     bannerImage: '/assets/galileo/infographic_m3/banner_eppur-si-muove.webp',
     bannerCaption: "La famosa frase «Eppur si muove» aparece por escrito por primera vez en 1757, más de un siglo después del juicio.",
     title: "«Eppur si muove»: historia de una leyenda",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "arcetri-ultimos-anos",
+    diagramImage: '/assets/galileo/infographic_m3/diagram_arcetri-ultimos-anos.webp',
+    diagramCaption: 'Confinamiento en Arcetri: Galileo redacta los «Discursos y demostraciones matemáticas»',
     bannerImage: '/assets/galileo/infographic_m3/banner_arcetri-ultimos-anos.webp',
     bannerCaption: "Bajo arresto domiciliario en Arcetri, y ciego desde 1638, Galileo terminó Dos nuevas ciencias, base de la física moderna.",
     title: "Arcetri: la ciencia no se detiene",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "reconocimiento-de-1992",
+    diagramImage: '/assets/galileo/infographic_m3/diagram_reconocimiento-de-1992.webp',
+    diagramCaption: 'La Academia Pontificia reconoce en 1992 el error histórico de la condena a Galileo',
     bannerImage: '/assets/galileo/infographic_m3/banner_reconocimiento-de-1992.webp',
     bannerCaption: "El 31 de octubre de 1992 el papa Juan Pablo II reconoció ante la Pontificia Academia de las Ciencias el error cometido con Galileo.",
     title: "1992: la Iglesia reconoce el error",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

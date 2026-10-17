@@ -126,6 +126,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "noche-del-7-de-enero",
+    diagramImage: '/assets/galileo/infographic_m2/diagram_noche-del-7-de-enero.webp',
+    diagramCaption: 'La histórica noche del 7 de enero de 1610: Galileo descubre satélites orbitando a Júpiter',
     bannerImage: '/assets/galileo/infographic_m2/banner_noche-del-7-de-enero.webp',
     bannerCaption: "El 7 de enero de 1610 Galileo vio tres puntos de luz junto a Júpiter; el 13 de enero ya contaba cuatro.",
     title: "La noche del 7 de enero de 1610",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "registro-noche-a-noche",
+    diagramImage: '/assets/galileo/infographic_m2/diagram_registro-noche-a-noche.webp',
+    diagramCaption: 'Anotaciones noche a noche en el diario de Galileo documentando la danza orbital de las lunas',
     bannerImage: '/assets/galileo/infographic_m2/banner_registro-noche-a-noche.webp',
     bannerCaption: "Galileo registró la posición de las lunas cada noche despejada y publicó decenas de diagramas en el Sidereus Nuncius.",
     title: "Observar, anotar, repetir",
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "nombres-mediceos-y-marius",
+    diagramImage: '/assets/galileo/infographic_m2/diagram_nombres-mediceos-y-marius.webp',
+    diagramCaption: 'De las «Estrellas Mediceas» de Galileo a los nombres mitológicos propuestos por Marius',
     bannerImage: '/assets/galileo/infographic_m2/banner_nombres-mediceos-y-marius.webp',
     bannerCaption: "Galileo las llamó estrellas mediceas; los nombres Ío, Europa, Ganimedes y Calisto los propuso Simon Marius por idea de Kepler.",
     title: "De las estrellas mediceas a los nombres mitológicos",
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "io-mundo-volcanico",
+    diagramImage: '/assets/galileo/infographic_m2/diagram_io-mundo-volcanico.webp',
+    diagramCaption: 'Ío: el satélite volcánicamente más activo del sistema solar moldeado por fuerzas de marea',
     bannerImage: '/assets/galileo/infographic_m2/banner_io-mundo-volcanico.webp',
     bannerCaption: "Ío es el mundo más volcánico del sistema solar: las mareas de Júpiter lo calientan y mantienen activos cientos de volcanes.",
     title: "Ío, el mundo de los volcanes",
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "europa-oceano-bajo-hielo",
+    diagramImage: '/assets/galileo/infographic_m2/diagram_europa-oceano-bajo-hielo.webp',
+    diagramCaption: 'Europa: corteza de hielo agrietada sobre un vasto océano líquido subterráneo',
     bannerImage: '/assets/galileo/infographic_m2/banner_europa-oceano-bajo-hielo.webp',
     bannerCaption: "Bajo su corteza de hielo, Europa esconde un océano de agua salada que podría tener el doble de agua que los océanos terrestres.",
     title: "Europa, un océano bajo el hielo",
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ganimedes-y-calisto",
+    diagramImage: '/assets/galileo/infographic_m2/diagram_ganimedes-y-calisto.webp',
+    diagramCaption: 'Ganímedes y Calisto: los mundos gigantes helados con campo magnético y cráteres antiguos',
     bannerImage: '/assets/galileo/infographic_m2/banner_ganimedes-y-calisto.webp',
     bannerCaption: "Ganimedes es la luna más grande del sistema solar y tiene campo magnético; Calisto es uno de los mundos más craterizados.",
     title: "Ganimedes y Calisto, los gigantes helados",
@@ -252,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "reloj-del-cielo-y-velocidad-luz",
+    diagramImage: '/assets/galileo/infographic_m2/diagram_reloj-del-cielo-y-velocidad-luz.webp',
+    diagramCaption: 'Ole Rømer calculando la velocidad de la luz mediante los eclipses de Ío en 1676',
     bannerImage: '/assets/galileo/infographic_m2/banner_reloj-del-cielo-y-velocidad-luz.webp',
     bannerCaption: "Los eclipses de las lunas de Júpiter sirvieron para medir longitudes en mapas y, en 1676, para mostrar que la luz tiene velocidad.",
     title: "Un reloj en el cielo y la velocidad de la luz",
@@ -707,6 +721,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

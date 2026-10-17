@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "cielo-a-simple-vista",
+    diagramImage: '/assets/copernico/infographic_m1/diagram_cielo-a-simple-vista.webp',
+    diagramCaption: 'Observación del cielo nocturno y la aparente rotación celeste alrededor de la Tierra',
     bannerImage: '/assets/copernico/infographic_m1/banner_cielo-a-simple-vista.webp',
     bannerCaption: "Antes del telescopio, el cielo parecía girar alrededor de una Tierra inmóvil: así nació el modelo geocéntrico.",
     title: "Un cielo que gira a nuestro alrededor",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ptolomeo-almagesto",
+    diagramImage: '/assets/copernico/infographic_m1/diagram_ptolomeo-almagesto.webp',
+    diagramCaption: 'El sistema geocéntrico de Ptolomeo con epiciclos geométricos en el Almagesto',
     bannerImage: '/assets/copernico/infographic_m1/banner_ptolomeo-almagesto.webp',
     bannerCaption: "Hacia el año 150 d. C., Claudio Ptolomeo reunió en el Almagesto el modelo geocéntrico más completo de la Antigüedad.",
     title: "Ptolomeo y el Almagesto",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "movimiento-retrogrado",
+    diagramImage: '/assets/copernico/infographic_m1/diagram_movimiento-retrogrado.webp',
+    diagramCaption: 'El enigma del movimiento retrógrado de Marte observado desde la Tierra',
     bannerImage: '/assets/copernico/infographic_m1/banner_movimiento-retrogrado.webp',
     bannerCaption: "A veces los planetas parecen frenar y retroceder en el cielo: explicar ese bucle fue el gran reto de la astronomía antigua.",
     title: "El misterio del movimiento retrógrado",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "aristarco-de-samos",
+    diagramImage: '/assets/copernico/infographic_m1/diagram_aristarco-de-samos.webp',
+    diagramCaption: 'Aristarco de Samos calculando las distancias cósmicas en la Grecia clásica',
     bannerImage: '/assets/copernico/infographic_m1/banner_aristarco-de-samos.webp',
     bannerCaption: "Hacia el 270 a. C., Aristarco de Samos propuso que la Tierra gira alrededor del Sol, unos 1,800 años antes que Copérnico.",
     title: "Aristarco: el Sol en el centro, 18 siglos antes",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "astronomia-islamica",
+    diagramImage: '/assets/copernico/infographic_m1/diagram_astronomia-islamica.webp',
+    diagramCaption: 'Astrónomos islámicos perfeccionando astrolabios y tablas astronómicas',
     bannerImage: '/assets/copernico/infographic_m1/banner_astronomia-islamica.webp',
     bannerCaption: "Entre los siglos IX y XIV, astrónomos del mundo islámico tradujeron, criticaron y mejoraron la astronomía de Ptolomeo.",
     title: "Bagdad, Damasco y Toledo: el saber que viajó",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "navegacion-y-calendario",
+    diagramImage: '/assets/copernico/infographic_m1/diagram_navegacion-y-calendario.webp',
+    diagramCaption: 'Uso de las estrellas para la navegación marítima y la reforma del calendario',
     bannerImage: '/assets/copernico/infographic_m1/banner_navegacion-y-calendario.webp',
     bannerCaption: "En el siglo XV la astronomía guiaba a los navegantes y fijaba la fecha de la Pascua; sus errores impulsaron nuevos modelos.",
     title: "Barcos y calendarios: la astronomía útil",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "joven-copernico-renacimiento",
+    diagramImage: '/assets/copernico/infographic_m1/diagram_joven-copernico-renacimiento.webp',
+    diagramCaption: 'El joven Copérnico estudiando astronomía y matemáticas en el Renacimiento',
     bannerImage: '/assets/copernico/infographic_m1/banner_joven-copernico-renacimiento.webp',
     bannerCaption: "Nacido en Toruń en 1473, Copérnico estudió en Cracovia, Bolonia y Padua antes de proponer un universo centrado en el Sol.",
     title: "El joven Copérnico en el Renacimiento",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

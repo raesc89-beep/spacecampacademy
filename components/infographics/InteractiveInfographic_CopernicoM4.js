@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "ojo-desnudo-antes-del-telescopio",
+    diagramImage: '/assets/copernico/infographic_m4/diagram_ojo-desnudo-antes-del-telescopio.webp',
+    diagramCaption: 'Astronomía a simple vista: la contemplación meticulosa del firmamento',
     bannerImage: '/assets/copernico/infographic_m4/banner_ojo-desnudo-antes-del-telescopio.webp',
     bannerCaption: "Copérnico murió en 1543; el telescopio apareció en los Países Bajos en 1608, más de 60 años después de su muerte.",
     title: "Un mundo antes del telescopio",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ojo-desnudo-triquetrum-y-cuadrante",
+    diagramImage: '/assets/copernico/infographic_m4/diagram_ojo-desnudo-triquetrum-y-cuadrante.webp',
+    diagramCaption: 'Instrumentos clásicos de medición: triquetrum de madera y cuadrante de latón',
     bannerImage: '/assets/copernico/infographic_m4/banner_ojo-desnudo-triquetrum-y-cuadrante.webp',
     bannerCaption: "El triquetrum, de tres reglas articuladas de madera, medía la altura de los astros; Copérnico lo describe en De revolutionibus.",
     title: "Triquetrum, cuadrante y esfera armilar",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ojo-desnudo-frombork",
+    diagramImage: '/assets/copernico/infographic_m4/diagram_ojo-desnudo-frombork.webp',
+    diagramCaption: 'La torre de Frombork junto al Báltico donde Copérnico observó durante décadas',
     bannerImage: '/assets/copernico/infographic_m4/banner_ojo-desnudo-frombork.webp',
     bannerCaption: "Copérnico vivió la mayor parte de su vida adulta en Frombork (Frauenburg), Polonia, como canónigo de su catedral.",
     title: "Frombork: un observatorio junto al Báltico",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ojo-desnudo-mercurio-y-venus",
+    diagramImage: '/assets/copernico/infographic_m4/diagram_ojo-desnudo-mercurio-y-venus.webp',
+    diagramCaption: 'Mercurio y Venus observados siempre cerca del resplandor del horizonte solar',
     bannerImage: '/assets/copernico/infographic_m4/banner_ojo-desnudo-mercurio-y-venus.webp',
     bannerCaption: "Venus nunca se aleja del Sol más de unos 47 grados y Mercurio unos 28: ambos orbitan por dentro de la órbita terrestre.",
     title: "Mercurio y Venus, los planetas que no se alejan del Sol",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ojo-desnudo-luna-y-eclipses",
+    diagramImage: '/assets/copernico/infographic_m4/diagram_ojo-desnudo-luna-y-eclipses.webp',
+    diagramCaption: 'Estudio geométrico de los eclipses y la ocultación de estrellas por la Luna',
     bannerImage: '/assets/copernico/infographic_m4/banner_ojo-desnudo-luna-y-eclipses.webp',
     bannerCaption: "El 9 de marzo de 1497, en Bolonia, Copérnico observó cómo la Luna ocultaba la estrella Aldebarán: su primera observación registrada.",
     title: "La Luna, las ocultaciones y los eclipses",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ojo-desnudo-al-battani",
+    diagramImage: '/assets/copernico/infographic_m4/diagram_ojo-desnudo-al-battani.webp',
+    diagramCaption: 'Comparación con los registros observacionales de Al-Battani a lo largo de los siglos',
     bannerImage: '/assets/copernico/infographic_m4/banner_ojo-desnudo-al-battani.webp',
     bannerCaption: "Copérnico citó repetidamente al astrónomo árabe al-Battani, que observó desde Raqqa entre los siglos IX y X.",
     title: "Al-Battani y los registros de siglos",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ojo-desnudo-precision-y-limites",
+    diagramImage: '/assets/copernico/infographic_m4/diagram_ojo-desnudo-precision-y-limites.webp',
+    diagramCaption: 'Límites angulares del ojo humano frente a la geometría instrumental',
     bannerImage: '/assets/copernico/infographic_m4/banner_ojo-desnudo-precision-y-limites.webp',
     bannerCaption: "Las medidas de Copérnico tenían errores de unos 10 minutos de arco; las de Tycho, de 1 a 2. Esa diferencia llevó a las elipses.",
     title: "Precisión, límites y el error de los círculos",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

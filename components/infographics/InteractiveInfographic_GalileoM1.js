@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "de-holanda-a-padua",
+    diagramImage: '/assets/galileo/infographic_m1/diagram_de-holanda-a-padua.webp',
+    diagramCaption: 'Galileo perfeccionando lentes en su taller de Padua para fabricar su primer telescopio',
     bannerImage: '/assets/galileo/infographic_m1/banner_de-holanda-a-padua.webp',
     bannerCaption: "En 1609 Galileo construyó su propio anteojo en Padua y lo mostró al Senado de Venecia desde el campanario de San Marcos.",
     title: "Del anteojo holandés al taller de Padua",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "dentro-del-anteojo-galileano",
+    diagramImage: '/assets/galileo/infographic_m1/diagram_dentro-del-anteojo-galileano.webp',
+    diagramCaption: 'Estructura óptica interna del anteojo de Galileo: combinación de lente convexa y cóncava',
     bannerImage: '/assets/galileo/infographic_m1/banner_dentro-del-anteojo-galileano.webp',
     bannerCaption: "El anteojo galileano combinaba una lente convexa al frente y una cóncava junto al ojo, y mostraba la imagen derecha.",
     title: "Dentro del anteojo galileano",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "montanas-y-crateres-lunares",
+    diagramImage: '/assets/galileo/infographic_m1/diagram_montanas-y-crateres-lunares.webp',
+    diagramCaption: 'Dibujos meticulosos de los cráteres y montañas de la Luna realizados por Galileo en 1609',
     bannerImage: '/assets/galileo/infographic_m1/banner_montanas-y-crateres-lunares.webp',
     bannerCaption: "Galileo observó la Luna a finales de 1609 y descubrió que estaba cubierta de montañas, cráteres y llanuras, no lisa como se creía.",
     title: "Una Luna con montañas y cráteres",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "via-lactea-en-estrellas",
+    diagramImage: '/assets/galileo/infographic_m1/diagram_via-lactea-en-estrellas.webp',
+    diagramCaption: 'Resolución telescópica de la Vía Láctea en miríadas de estrellas individuales',
     bannerImage: '/assets/galileo/infographic_m1/banner_via-lactea-en-estrellas.webp',
     bannerCaption: "Con su telescopio, Galileo descubrió que la franja blanca de la Vía Láctea estaba formada por innumerables estrellas débiles.",
     title: "La Vía Láctea se convierte en estrellas",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "lunas-fases-y-manchas",
+    diagramImage: '/assets/galileo/infographic_m1/diagram_lunas-fases-y-manchas.webp',
+    diagramCaption: 'Descubrimiento de las fases de Venus, manchas solares y satélites jovianos',
     bannerImage: '/assets/galileo/infographic_m1/banner_lunas-fases-y-manchas.webp',
     bannerCaption: "Galileo descubrió cuatro lunas de Júpiter en enero de 1610 y, meses después, que Venus tenía fases completas como la Luna.",
     title: "Lunas de Júpiter, fases de Venus y manchas solares",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "sidereus-nuncius-y-metodo",
+    diagramImage: '/assets/galileo/infographic_m1/diagram_sidereus-nuncius-y-metodo.webp',
+    diagramCaption: 'Publicación del Sidereus Nuncius en Venecia anunciando los nuevos descubrimientos celestes',
     bannerImage: '/assets/galileo/infographic_m1/banner_sidereus-nuncius-y-metodo.webp',
     bannerCaption: "El 13 de marzo de 1610 Galileo publicó Sidereus Nuncius, un breve libro con pruebas que cualquiera podía comprobar.",
     title: "Sidereus Nuncius y el método de Galileo",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "del-anteojo-al-james-webb",
+    diagramImage: '/assets/galileo/infographic_m1/diagram_del-anteojo-al-james-webb.webp',
+    diagramCaption: 'Evolución histórica de la astronomía observacional desde el anteojo de Galileo al telescopio Webb',
     bannerImage: '/assets/galileo/infographic_m1/banner_del-anteojo-al-james-webb.webp',
     bannerCaption: "De la lente pulida de Galileo al espejo de 6.5 metros del James Webb: cuatro siglos de telescopios cada vez más poderosos.",
     title: "Del anteojo de Galileo al James Webb",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

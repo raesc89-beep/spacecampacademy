@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "puentes-rotatorios",
+    diagramImage: '/assets/davinci/infographic_m3/diagram_puentes-rotatorios.webp',
+    diagramCaption: 'Puentes giratorios y estructuras autoportantes diseñadas para despliegue rápido',
     bannerImage: '/assets/davinci/infographic_m3/banner_puentes-rotatorios.webp',
     bannerCaption: "Leonardo diseñó puentes giratorios y autoportantes para cruzar ríos con rapidez, usando contrapesos, rodillos y piezas encajadas.",
     title: "Puentes giratorios y autoportantes",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "maquinas-guerra-leonardo",
+    diagramImage: '/assets/davinci/infographic_m3/diagram_maquinas-guerra-leonardo.webp',
+    diagramCaption: 'Ingenios de guerra: ballestas gigantes, cañones multicañón y máquinas de asedio',
     bannerImage: '/assets/davinci/infographic_m3/banner_maquinas-guerra-leonardo.webp',
     bannerCaption: "Ballestas gigantes, cañones de varios tubos y carros con guadañas: los diseños militares que Leonardo dibujó para sus mecenas.",
     title: "Las máquinas de guerra de Leonardo",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "tanque-guerra",
+    diagramImage: '/assets/davinci/infographic_m3/diagram_tanque-guerra.webp',
+    diagramCaption: 'El carro armado cónico: precursor blindado con tracción mecánica interna',
     bannerImage: '/assets/davinci/infographic_m3/banner_tanque-guerra.webp',
     bannerCaption: "Hacia 1487 Leonardo dibujó un carro armado cubierto, con cañones en todo su contorno, movido por la fuerza de ocho hombres.",
     title: "El carro armado",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "canal-navegacion",
+    diagramImage: '/assets/davinci/infographic_m3/diagram_canal-navegacion.webp',
+    diagramCaption: 'Ingeniería hidráulica: esclusas y canales para la navegación fluvial entre ciudades',
     bannerImage: '/assets/davinci/infographic_m3/banner_canal-navegacion.webp',
     bannerCaption: "Leonardo estudió los canales de Milán, diseñó esclusas de compuertas en ángulo y planeó desviar el río Arno en la guerra contra Pisa.",
     title: "Canales y navegación",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ciudad-ideal",
+    diagramImage: '/assets/davinci/infographic_m3/diagram_ciudad-ideal.webp',
+    diagramCaption: 'La ciudad ideal: diseño urbanístico racional con niveles separados y saneamiento',
     bannerImage: '/assets/davinci/infographic_m3/banner_ciudad-ideal.webp',
     bannerCaption: "Tras la peste de 1484-1485 en Milán, Leonardo proyectó una ciudad en dos niveles con calles anchas, canales y servicios separados.",
     title: "La ciudad ideal",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "energia-hidraulica",
+    diagramImage: '/assets/davinci/infographic_m3/diagram_energia-hidraulica.webp',
+    diagramCaption: 'Aprovechamiento de la energía del agua mediante turbinas y tornillos de Arquímedes',
     bannerImage: '/assets/davinci/infographic_m3/banner_energia-hidraulica.webp',
     bannerCaption: "Leonardo estudió ruedas hidráulicas, tornillos de Arquímedes y remolinos para entender cómo aprovechar la fuerza del agua.",
     title: "La energía del agua",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "legado-ingenieria",
+    diagramImage: '/assets/davinci/infographic_m3/diagram_legado-ingenieria.webp',
+    diagramCaption: 'El legado del ingeniero: mecanismos y engranajes que siguen inspirando a la tecnología',
     bannerImage: '/assets/davinci/infographic_m3/banner_legado-ingenieria.webp',
     bannerCaption: "De sus cuadernos dispersos a las réplicas modernas, como el puente de Ås en Noruega, la ingeniería de Leonardo sigue inspirando.",
     title: "El legado del ingeniero",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (
