@@ -142,6 +142,8 @@ const INFOGRAPHIC_NODES = [
     color: '#C44B4B',
     btnImage: '/assets/astrotrain/infographic_m3/btn_primer-paseo-espacial.webp',
     image: '/assets/astrotrain/infographic_m3/hero_primer-paseo-espacial.webp',
+    diagramImage: '/assets/astrotrain/infographic_m3/diagram_primer-paseo-espacial.webp',
+    diagramCaption: 'Hitos históricos de las EVA: el paseo de Alexei Leonov en Voskhod 2 y Ed White en Gemini 4',
     content: [
       'El 18 de marzo de 1965, el cosmonauta soviético Alexei Leonov se convirtió en el primer ser humano en flotar en el vacío del espacio exterior. La misión Voskhod 2, lanzada desde el cosmódromo de Baikonur en Kazajistán, llevaba a Leonov y al comandante Pavel Belyayev. A las 11:34 hora de Moscú, Leonov abrió la escotilla de la cámara de descompresión inflable y se impulsó hacia el exterior. Durante 12 minutos y 9 segundos, flotó conectado a la nave por un cable umbilical de 5.35 metros de largo, alcanzando una velocidad orbital de 28,000 km/h mientras contemplaba la Tierra y las estrellas sin ninguna barrera sólida entre él y el cosmos.',
       'Lo que el público soviético no supo durante décadas fue que la primera caminata espacial estuvo a punto de terminar en tragedia. En el vacío del espacio, donde la presión exterior es prácticamente cero, el traje Berkut de Leonov se infló como un globo hasta el punto en que no podía doblar las articulaciones. Sus manos se separaron de los guantes y sus pies de las botas dentro del traje rígido. Leonov no podía alcanzar la cámara de la cámara de cine que llevaba montada ni podía maniobrar para regresar a la escotilla de la nave, y su frecuencia cardíaca se disparó a 190 latidos por minuto mientras luchaba contra su propio traje.',
@@ -163,6 +165,8 @@ const INFOGRAPHIC_NODES = [
     color: '#A8B5C0',
     btnImage: '/assets/astrotrain/infographic_m3/btn_traje-emu.webp',
     image: '/assets/astrotrain/infographic_m3/hero_traje-emu.webp',
+    diagramImage: '/assets/astrotrain/infographic_m3/diagram_traje-emu.webp',
+    diagramCaption: 'Estratigrafía del traje EMU: 14 capas protectoras, prenda de refrigeración líquida y mochila PLSS',
     content: [
       'La Unidad de Movilidad Extravehicular (EMU, por sus siglas en inglés) es el traje espacial que los astronautas de la NASA utilizan para realizar caminatas espaciales desde la Estación Espacial Internacional. Este traje no es una simple vestimenta protectora: es una nave espacial individual que permite a un ser humano sobrevivir y trabajar en el vacío del espacio durante períodos de 6 a 8 horas. Cada EMU pesa aproximadamente 127 kilogramos en la Tierra, aunque en microgravedad el astronauta no siente ese peso. El costo de fabricación de un solo traje EMU supera los 12 millones de dólares, y actualmente la NASA mantiene un inventario limitado de estos trajes, algunos de los cuales han estado en servicio desde la década de 1980.',
       'El EMU está compuesto por 14 capas de materiales diferentes, cada una con una función específica. La capa más interna es un forro de nylon que retiene la ventilación. Sobre esta se encuentra la Prenda de Enfriamiento Líquido (LCVG), una malla con 91.5 metros de tubos delgados por donde circula agua fría para regular la temperatura corporal del astronauta. Las capas intermedias incluyen una vejiga de uretano presurizado, una capa de restricción de Dacron que mantiene la forma del traje bajo presión, y múltiples capas de Mylar aluminizado que proporcionan aislamiento térmico. Las capas externas están fabricadas con Ortho-Fabric, una combinación de Gore-Tex, Kevlar y Nomex que resiste impactos de micrometeoritos a velocidades de hasta 7 km/s.',
@@ -184,6 +188,8 @@ const INFOGRAPHIC_NODES = [
     color: '#D45A5A',
     btnImage: '/assets/astrotrain/infographic_m3/btn_preparacion-eva.webp',
     image: '/assets/astrotrain/infographic_m3/hero_preparacion-eva.webp',
+    diagramImage: '/assets/astrotrain/infographic_m3/diagram_preparacion-eva.webp',
+    diagramCaption: 'Protocolo de desnitrogenización y purga de oxígeno en la esclusa Quest para prevenir aeroembolias',
     content: [
       'Antes de que un astronauta pueda abrir la escotilla y flotar en el espacio, debe completar un protocolo de preparación que dura entre 12 y 16 horas, repartidas en varios días. Este proceso no es simplemente vestirse con un traje: involucra procedimientos médicos, verificaciones técnicas del equipo, coordinación con el control de misión en Houston, y un acondicionamiento fisiológico diseñado para prevenir una condición potencialmente mortal conocida como enfermedad por descompresión. Cada paso de la preparación sigue un cronograma estricto verificado por múltiples equipos en tierra y en la estación.',
       'El protocolo de pre-respiración es el procedimiento más crítico antes de una EVA. La Estación Espacial Internacional mantiene una atmósfera de 14.7 psi con 21% de oxígeno y 79% de nitrógeno, igual que en la Tierra. Sin embargo, el traje EMU opera a solo 4.3 psi con oxígeno al 100%. Si un astronauta pasara directamente de la presión de la estación a la del traje, el nitrógeno disuelto en su sangre formaría burbujas, causando la enfermedad por descompresión (conocida como "las curvas" entre los buzos). Para evitarlo, los astronautas respiran oxígeno puro durante varias horas para eliminar el nitrógeno de sus tejidos. El protocolo estándar ISLE requiere que los astronautas duerman en la esclusa a presión reducida de 10.2 psi la noche anterior.',
@@ -205,6 +211,8 @@ const INFOGRAPHIC_NODES = [
     color: '#96A3AE',
     btnImage: '/assets/astrotrain/infographic_m3/btn_herramientas-vacio.webp',
     image: '/assets/astrotrain/infographic_m3/hero_herramientas-vacio.webp',
+    diagramImage: '/assets/astrotrain/infographic_m3/diagram_herramientas-vacio.webp',
+    diagramCaption: 'Herramientas de paseo espacial: atornillador digital PGT, sujeciones articuladas y amarres retráctiles',
     content: [
       'Trabajar en el vacío del espacio presenta desafíos que no existen en la Tierra. No hay gravedad que mantenga las herramientas sobre una mesa, no hay fricción del aire que frene un objeto en movimiento, y cada acción que el astronauta realiza genera una reacción igual y opuesta según la Tercera Ley de Newton. Si un astronauta intenta girar un tornillo sin estar firmemente anclado, su cuerpo entero rotará en la dirección opuesta. Por estas razones, cada herramienta utilizada en caminatas espaciales ha sido diseñada específicamente para funcionar en microgravedad, con mecanismos que compensan la ausencia de peso y la presurización de los guantes.',
       'La herramienta más utilizada durante las EVAs es la Pistola de Agarre (Pistol Grip Tool o PGT), un taladro/destornillador inalámbrico diseñado para el espacio. La PGT puede girar en ambas direcciones y tiene control de torque ajustable, lo cual es esencial porque aplicar demasiada fuerza a un perno en el espacio podría romperlo o hacer que el astronauta pierda su posición. La herramienta funciona con baterías recargables que operan en el rango de temperaturas extremas del espacio (de -157°C a +121°C). Cada PGT viene con un juego de puntas intercambiables de 7/16 de pulgada, el tamaño estándar de todos los pernos de la Estación Espacial Internacional, una decisión de diseño que simplifica enormemente las reparaciones.',
@@ -226,6 +234,8 @@ const INFOGRAPHIC_NODES = [
     color: '#B43A3A',
     btnImage: '/assets/astrotrain/infographic_m3/btn_reparaciones-orbita.webp',
     image: '/assets/astrotrain/infographic_m3/hero_reparaciones-orbita.webp',
+    diagramImage: '/assets/astrotrain/infographic_m3/diagram_reparaciones-orbita.webp',
+    diagramCaption: 'Mantenimiento orbital de alta precisión: intervenciones en el telescopio Hubble y módulos exteriores',
     content: [
       'Las misiones de servicio al Telescopio Espacial Hubble representan algunas de las caminatas espaciales más complejas y exitosas en la historia de la exploración espacial. El Hubble fue lanzado el 24 de abril de 1990 con un defecto en su espejo primario: estaba pulido con una desviación de solo 2.2 micrómetros (más delgado que un cabello humano), pero esa diferencia causaba imágenes borrosas que amenazaban con convertir el telescopio de 1,500 millones de dólares en un fracaso. En diciembre de 1993, la tripulación del Transbordador Endeavour (STS-61) realizó cinco EVAs en cinco días consecutivos para instalar el sistema óptico corrector COSTAR, una hazaña técnica equivalente a realizar cirugía ocular a un paciente del tamaño de un autobús escolar mientras ambos orbitan la Tierra a 27,000 km/h.',
       'Durante las cinco misiones de servicio al Hubble (SM1 en 1993, SM2 en 1997, SM3A en 1999, SM3B en 2002, y SM4 en 2009), los astronautas realizaron un total de 23 caminatas espaciales que sumaron más de 166 horas de trabajo extravehicular. Instalaron nuevas cámaras, espectrógrafos, giróscopos de orientación, paneles solares, baterías y computadoras. La misión SM4 de 2009 fue particularmente desafiante porque incluyó la reparación in-situ del Space Telescope Imaging Spectrograph (STIS), un instrumento que nunca fue diseñado para ser reparado en el espacio. Los astronautas tuvieron que retirar 111 tornillos diminutos con una herramienta especialmente fabricada para esta tarea.',
@@ -247,6 +257,8 @@ const INFOGRAPHIC_NODES = [
     color: '#8491A0',
     btnImage: '/assets/astrotrain/infographic_m3/btn_peligros-espacio.webp',
     image: '/assets/astrotrain/infographic_m3/hero_peligros-espacio.webp',
+    diagramImage: '/assets/astrotrain/infographic_m3/diagram_peligros-espacio.webp',
+    diagramCaption: 'Riesgos letales del vacío: impacto de micrometeoritos a 10 km/s y radiación ionizante solar',
     content: [
       'El vacío del espacio es un entorno letal para el cuerpo humano. Sin la protección de un traje espacial, un astronauta perdería la conciencia en aproximadamente 15 segundos debido a la falta de oxígeno. Los fluidos corporales comenzarían a hervir a temperatura corporal porque el punto de ebullición del agua disminuye con la presión: a presión cero, el agua hierve a 37°C. Sin embargo, la piel humana es lo suficientemente elástica para contener esta ebullición parcialmente, por lo que una persona no "explotaría" como muestran algunas películas. Los datos de este escenario provienen de un accidente en 1966 en una cámara de vacío de la NASA, donde un técnico llamado Jim LeBlanc quedó expuesto al vacío durante 27 segundos antes de ser represurizado. Recordó que su última sensación fue la saliva hirviendo sobre su lengua.',
       'Los micrometeoritos y la basura espacial representan un peligro constante durante las caminatas espaciales. La ISS orbita a una altitud de 408 kilómetros a una velocidad de 7.66 km/s (27,576 km/h). A esta velocidad, incluso un fragmento de pintura de 1 milímetro impactando el traje de un astronauta tendría la energía cinética equivalente a una bala calibre .22. La NASA estima que hay más de 130 millones de fragmentos de basura espacial menores de 1 centímetro en órbita terrestre baja, más de 1 millón de fragmentos entre 1 y 10 centímetros, y aproximadamente 36,500 objetos mayores de 10 centímetros rastreados por el Comando Espacial de EE.UU. Las capas exteriores del EMU están diseñadas para resistir impactos de partículas de hasta 1 milímetro viajando a 7 km/s.',
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
     color: '#E46A6A',
     btnImage: '/assets/astrotrain/infographic_m3/btn_futuro-paseos-espaciales.webp',
     image: '/assets/astrotrain/infographic_m3/hero_futuro-paseos-espaciales.webp',
+    diagramImage: '/assets/astrotrain/infographic_m3/diagram_futuro-paseos-espaciales.webp',
+    diagramCaption: 'Traje de exploración lunar Artemis AxEMU: entrada trasera, articulaciones de cadera y protección regolítica',
     content: [
       'El programa Artemis de la NASA planea devolver astronautas a la superficie lunar para la década de 2020, y con ello surge la necesidad de un traje espacial completamente nuevo. El traje xEMU (Exploration Extravehicular Mobility Unit), desarrollado en colaboración con Axiom Space bajo un contrato de 228.5 millones de dólares, está diseñado para operar tanto en microgravedad orbital como en la superficie lunar con gravedad parcial (1/6 de la terrestre). A diferencia del EMU actual que solo permite a los astronautas moverse de la cintura para arriba, el traje Axiom Extravehicular Activity Suit (AxEMU) incorpora articulaciones de cadera y rodilla avanzadas que permiten caminar, agacharse y recoger muestras del suelo, movimientos que eran difíciles con los trajes Apollo de la década de 1970.',
       'El diseño del AxEMU incluye mejoras fundamentales respecto al EMU de 40 años que sigue en uso. El nuevo traje viene en una variedad de tallas que se ajustan a un rango más amplio de cuerpos humanos, solucionando un problema histórico: en 2019, la NASA tuvo que cancelar la primera caminata espacial exclusivamente femenina porque la estación no tenía dos torsos de traje EMU de talla mediana disponibles al mismo tiempo. El AxEMU incorpora un sistema de soporte vital regenerativo que utiliza amina sólida para absorber CO₂ en lugar de cartuchos de hidróxido de litio desechables, reduciendo la masa de consumibles. El casco tiene un visor con protección mejorada contra el polvo lunar, que es abrasivo como vidrio molido y se adhiere a todo por su carga electrostática.',
@@ -737,6 +751,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             )}
           </div>
         )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
 
         {/* Fact Box */}
         {node.fact && (

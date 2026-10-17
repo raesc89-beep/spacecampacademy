@@ -155,6 +155,8 @@ const INFOGRAPHIC_NODES = [
     color: '#C44B4B',
     btnImage: '/assets/astrotrain/infographic_m5/btn_efectos-microgravedad.webp',
     image: '/assets/astrotrain/infographic_m5/hero_efectos-microgravedad.webp',
+    diagramImage: '/assets/astrotrain/infographic_m5/diagram_efectos-microgravedad.webp',
+    diagramCaption: 'Fisiología en microgravedad: redistribución cefálica de fluidos, desmineralización ósea y atrofia muscular',
     content: [
       'Cuando un astronauta llega a la Estación Espacial Internacional, su cuerpo comienza a experimentar cambios fisiológicos significativos en las primeras 24 a 72 horas. El fenómeno más inmediato es el desplazamiento de fluidos corporales hacia la cabeza, conocido como "fluid shift". En la Tierra, la gravedad mantiene aproximadamente 2 litros de sangre y líquidos en las piernas. Sin gravedad, esos líquidos se redistribuyen hacia el torso y la cabeza, provocando lo que los astronautas llaman "cara de luna llena": el rostro se hincha visiblemente, las venas del cuello se dilatan y la presión dentro del cráneo se incrementa entre un 10% y un 20% respecto a los valores normales en la Tierra.',
       'La pérdida de masa ósea es uno de los efectos más preocupantes de la estancia prolongada en el espacio. Los estudios realizados por la NASA entre 2001 y 2015 demuestran que los astronautas pierden entre un 1% y un 2% de densidad ósea por cada mes en microgravedad, particularmente en los huesos que soportan peso como el fémur, la pelvis y las vértebras lumbares. Este ritmo de pérdida es aproximadamente 10 veces más rápido que el de la osteoporosis terrestre en personas mayores. El mecanismo se relaciona con la falta de carga mecánica: sin gravedad, los osteoclastos (células que destruyen hueso) se activan más que los osteoblastos (células que construyen hueso), rompiendo el equilibrio normal.',
@@ -175,6 +177,8 @@ const INFOGRAPHIC_NODES = [
     color: '#A8B5C0',
     btnImage: '/assets/astrotrain/infographic_m5/btn_radiacion-cosmica.webp',
     image: '/assets/astrotrain/infographic_m5/hero_radiacion-cosmica.webp',
+    diagramImage: '/assets/astrotrain/infographic_m5/diagram_radiacion-cosmica.webp',
+    diagramCaption: 'Radiobiología espacial: roturas de doble cadena de ADN por rayos cósmicos galácticos y blindaje pasivo',
     content: [
       'El espacio exterior es un entorno de radiación constante. Los astronautas están expuestos a dos fuentes principales de radiación ionizante: los rayos cósmicos galácticos (GCR) y los eventos de partículas solares (SPE). Los GCR son núcleos atómicos de alta energía —principalmente protones, pero también iones de helio, carbono, hierro y otros elementos pesados— que viajan a velocidades cercanas a la de la luz. Se originan fuera del sistema solar, probablemente en supernovas y otros eventos cósmicos violentos. Su energía puede superar los 10^20 electronvoltios, lo que les permite atravesar varios centímetros de aluminio, el material principal del casco de la ISS.',
       'Los eventos de partículas solares (SPE) representan un riesgo diferente pero potencialmente más agudo. Durante las erupciones solares y las eyecciones de masa coronal, el Sol libera enormes cantidades de protones de alta energía en pocas horas. El evento más intenso registrado ocurrió en agosto de 1972, entre las misiones Apollo 16 y Apollo 17. Si astronautas hubieran estado en la superficie lunar sin protección adecuada durante ese evento, habrían recibido una dosis estimada de 3.6 sieverts, suficiente para causar síndrome agudo de radiación con náuseas, vómitos y deterioro del sistema inmunológico. La NASA monitorea la actividad solar en tiempo real para emitir alertas tempranas a la tripulación de la ISS.',
@@ -195,6 +199,8 @@ const INFOGRAPHIC_NODES = [
     color: '#D45A5A',
     btnImage: '/assets/astrotrain/infographic_m5/btn_sistema-cardiovascular.webp',
     image: '/assets/astrotrain/infographic_m5/hero_sistema-cardiovascular.webp',
+    diagramImage: '/assets/astrotrain/infographic_m5/diagram_sistema-cardiovascular.webp',
+    diagramCaption: 'Desacondicionamiento cardiovascular: disminución del volumen plasmático e intolerancia ortostática',
     content: [
       'El corazón humano, que en la Tierra trabaja constantemente contra la gravedad para bombear sangre hacia el cerebro y las extremidades superiores, experimenta una remodelación estructural en el espacio. Estudios de ultrasonido cardíaco realizados a astronautas en la ISS han documentado que el corazón adopta una forma más esférica en microgravedad: el ventrículo izquierdo se vuelve un 9.4% más redondo después de 6 meses, según datos publicados por el Dr. James Thomas del equipo médico de la NASA en 2014. Esta remodelación se debe a que el corazón deja de trabajar contra la gravedad y pierde parte de la carga mecánica que mantiene su forma elíptica habitual.',
       'La intolerancia ortostática es uno de los problemas cardiovasculares más comunes al regresar a la Tierra. Tras semanas o meses sin gravedad, el sistema cardiovascular pierde parte de su capacidad para regular la presión arterial cuando el astronauta se pone de pie. Los barorreceptores del cuello y el arco aórtico se desensibilizan, y el volumen total de sangre disminuye entre un 10% y un 15% durante la misión espacial. El resultado es que, al volver a sentir el tirón gravitatorio terrestre, muchos astronautas experimentan mareos, visión borrosa y, en ocasiones, síncope (pérdida momentánea de conciencia) al incorporarse. Este efecto afecta con mayor intensidad a las mujeres astronautas, según datos recopilados entre 1995 y 2017.',
@@ -215,6 +221,8 @@ const INFOGRAPHIC_NODES = [
     color: '#96A3AE',
     btnImage: '/assets/astrotrain/infographic_m5/btn_vision-en-el-espacio.webp',
     image: '/assets/astrotrain/infographic_m5/hero_vision-en-el-espacio.webp',
+    diagramImage: '/assets/astrotrain/infographic_m5/diagram_vision-en-el-espacio.webp',
+    diagramCaption: 'Síndrome ocular SANS: aplanamiento posterior del globo ocular y congestión del nervio óptico',
     content: [
       'El síndrome neuro-ocular asociado al vuelo espacial, conocido por sus siglas en inglés como SANS (Spaceflight Associated Neuro-ocular Syndrome), fue identificado oficialmente en 2011 cuando la NASA compiló datos de exámenes oftalmológicos pre y post-vuelo acumulados durante una década. Los hallazgos revelaron que un porcentaje alto de astronautas desarrollaba cambios estructurales en los ojos después de misiones de larga duración en la ISS. Los cinco signos cardinales del SANS incluyen: edema del disco óptico (inflamación del punto donde el nervio óptico entra al ojo), aplanamiento del polo posterior del globo ocular, pliegues coroideos, desplazamiento hipermetrópico (visión lejana) y manchas de algodón en la retina.',
       'La causa subyacente del SANS sigue siendo objeto de investigación activa, pero la hipótesis principal apunta al aumento crónico de la presión intracraneal. En la Tierra, cuando una persona se acuesta, la presión intracraneal sube de 7 a 15 mmHg, y cuando se pone de pie, baja a valores entre 0 y 5 mmHg. Este ciclo diario permite que los vasos y nervios intracraneales "descansen" de la presión alta. En el espacio, la postura no influye en la presión, que permanece elevada de forma constante alrededor de 20 mmHg. Esta exposición sostenida, día tras día durante meses, genera estrés mecánico sobre las estructuras del nervio óptico y la vaina que lo rodea, provocando edema y remodelación tisular.',
@@ -235,6 +243,8 @@ const INFOGRAPHIC_NODES = [
     color: '#B43A3A',
     btnImage: '/assets/astrotrain/infographic_m5/btn_psicologia-aislamiento.webp',
     image: '/assets/astrotrain/infographic_m5/hero_psicologia-aislamiento.webp',
+    diagramImage: '/assets/astrotrain/infographic_m5/diagram_psicologia-aislamiento.webp',
+    diagramCaption: 'Monitoreo neuroconductual en confinamiento: arquitectura del sueño, biomarcadores de estrés y aislamiento',
     content: [
       'El confinamiento prolongado en un espacio reducido, lejos de familia y amigos, con un grupo pequeño de personas y sin posibilidad de salida, genera efectos psicológicos que las agencias espaciales estudian con rigor desde los años 1960. La estación Mir soviética registró el primer incidente documentado de conflicto interpersonal serio en el espacio cuando, durante la misión Soyuz T-14 en 1985, un cosmonauta fue evacuado prematuramente debido a un cuadro de estrés agudo y depresión. Desde entonces, la selección psicológica de astronautas incluye pruebas estandarizadas de tolerancia al aislamiento, estabilidad emocional y habilidades de comunicación en grupo que pueden durar semanas enteras.',
       'El experimento Mars-500, conducido por el Instituto de Problemas Biomédicos de Rusia en Moscú entre 2010 y 2011, simuló un viaje completo a Marte con 6 voluntarios de diferentes nacionalidades encerrados durante 520 días en un módulo de 550 metros cúbicos. Los resultados, publicados en PNAS en 2013 por Mathieu Basner y colaboradores, revelaron patrones preocupantes: 4 de los 6 participantes desarrollaron trastornos del sueño significativos, la actividad física disminuyó un 25% durante la segunda mitad del experimento, y se documentaron episodios de letargo y reducción de la motivación que los investigadores denominaron "hipokinesia conductual". Un tripulante experimentó depresión crónica durante los últimos 3 meses.',
@@ -255,6 +265,8 @@ const INFOGRAPHIC_NODES = [
     color: '#8491A0',
     btnImage: '/assets/astrotrain/infographic_m5/btn_medicina-emergencia.webp',
     image: '/assets/astrotrain/infographic_m5/hero_medicina-emergencia.webp',
+    diagramImage: '/assets/astrotrain/infographic_m5/diagram_medicina-emergencia.webp',
+    diagramCaption: 'Sistemas médicos de emergencia en órbita: ecografía guiada, fluidos intravenosos y soporte telemédico',
     content: [
       'En la ISS, al menos dos miembros de la tripulación están certificados como Crew Medical Officers (CMO), responsables de proporcionar atención médica de emergencia a bordo. La formación de un CMO incluye 80 horas de entrenamiento médico en el Centro Espacial Johnson, que cubren procedimientos de soporte vital básico y avanzado, uso de desfibrilador externo automático, manejo de vía aérea, inyecciones intramusculares e intravenosas, suturas, extracción dental básica y atención de quemaduras. El CMO no necesita ser médico de profesión: ingenieros, pilotos y científicos reciben esta formación. El entrenamiento se refuerza con sesiones de práctica trimestrales en vuelo mediante telemedicina.',
       'La telemedicina es la columna vertebral de la atención sanitaria en la ISS. Los astronautas pueden comunicarse con el Surgeon Console del Centro de Control de Misión en Houston, donde un equipo de médicos de vuelo está disponible las 24 horas. Las consultas se realizan mediante videoconferencia cifrada, y los médicos en tierra pueden guiar procedimientos complejos en tiempo real. La ISS cuenta con un ecógrafo portátil (modelo GE Vivid-i) que permite al CMO realizar ecografías abdominales, cardíacas, musculoesqueléticas y oculares bajo dirección remota. Este equipo ha sido utilizado para diagnosticar cálculos renales, evaluar lesiones musculares, monitorear la función cardíaca y detectar el caso de trombosis venosa profunda mencionado anteriormente.',
@@ -275,6 +287,8 @@ const INFOGRAPHIC_NODES = [
     color: '#E46A6A',
     btnImage: '/assets/astrotrain/infographic_m5/btn_investigacion-medica-iss.webp',
     image: '/assets/astrotrain/infographic_m5/hero_investigacion-medica-iss.webp',
+    diagramImage: '/assets/astrotrain/infographic_m5/diagram_investigacion-medica-iss.webp',
+    diagramCaption: 'Investigación biomédica en la ISS: cristalografía de proteínas y bioimpresión tisular tridimensional',
     content: [
       'El NASA Twins Study, publicado en la revista Science en abril de 2019, es el estudio médico más completo jamás realizado sobre los efectos del vuelo espacial en el cuerpo humano. Los gemelos idénticos Scott y Mark Kelly, ambos astronautas, participaron en un diseño experimental sin precedentes: Scott pasó 340 días en la ISS mientras Mark permanecía en la Tierra como "control" genético perfecto. El estudio involucró a 84 investigadores de 12 universidades que analizaron más de 300 muestras biológicas. Los resultados revelaron que Scott experimentó cambios en la expresión de más de 7,000 genes (el 7% de su genoma), alteraciones en su microbioma intestinal, inflamación vascular, engrosamiento de las paredes de la arteria carótida, alargamiento temporal de los telómeros cromosómicos y cambios cognitivos medibles.',
       'La cristalización de proteínas en microgravedad es una de las contribuciones más directas de la ISS a la medicina terrestre. En el espacio, los cristales de proteínas crecen más lentamente y con mayor regularidad que en la Tierra, donde la convección y la sedimentación distorsionan su estructura. Estos cristales de alta calidad permiten determinar la estructura tridimensional de las proteínas con mayor precisión mediante difracción de rayos X. La empresa japonesa JAXA ha liderado el programa PCG (Protein Crystal Growth) desde 2003, produciendo cristales que han ayudado a diseñar fármacos más efectivos. Un ejemplo es la mejora del medicamento Xalkori (crizotinib) de Pfizer para el cáncer de pulmón: los cristales cultivados en la ISS revelaron detalles de la unión proteína-fármaco que no se podían observar en cristales terrestres.',
@@ -727,6 +741,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   )}
                 </div>
               )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem',

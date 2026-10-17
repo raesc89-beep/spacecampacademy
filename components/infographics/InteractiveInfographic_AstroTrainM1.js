@@ -148,6 +148,8 @@ const INFOGRAPHIC_NODES = [
     color: '#C44B4B',
     btnImage: '/assets/astrotrain/infographic_m1/btn_sueno-astronauta.webp',
     image: '/assets/astrotrain/infographic_m1/hero_sueno-astronauta.webp',
+    diagramImage: '/assets/astrotrain/infographic_m1/diagram_sueno-astronauta.webp',
+    diagramCaption: 'Proceso de selección aeroespacial: pruebas fisiológicas, perfil en centrífuga y cribado psicológico',
     content: [
       'Convertirse en astronauta es uno de los objetivos profesionales más difíciles de alcanzar en el mundo. De cada convocatoria que abre la NASA, miles y miles de personas presentan su solicitud con la esperanza de volar al espacio, pero el número de seleccionados se cuenta con los dedos de las manos. En la convocatoria de 2017, la NASA recibió 18,300 solicitudes para su clase de astronautas, y seleccionó únicamente a 12 personas. Eso representa una tasa de aceptación del 0.065%, una cifra menor que la de cualquier universidad o programa de élite conocido en la Tierra. Cada uno de esos 12 candidatos superó a más de 1,500 competidores por cada puesto disponible.',
       'La Agencia Espacial Europea (ESA) también presenta cifras de competencia muy altas. En su proceso de selección más reciente, realizado entre 2021 y 2022, la ESA recibió más de 22,500 solicitudes provenientes de ciudadanos de sus estados miembros. Tras meses de evaluaciones que incluyeron pruebas cognitivas, médicas, psicológicas y entrevistas con paneles de expertos, solo 17 personas fueron seleccionadas como astronautas de carrera y de reserva. La ESA también marcó un precedente al seleccionar por primera vez a un parastronauta, un candidato con discapacidad física, como parte de su compromiso con la inclusión en la exploración espacial.',
@@ -171,6 +173,8 @@ const INFOGRAPHIC_NODES = [
     color: '#A8B5C0',
     btnImage: '/assets/astrotrain/infographic_m1/btn_nasa-seleccion-historia.webp',
     image: '/assets/astrotrain/infographic_m1/hero_nasa-seleccion-historia.webp',
+    diagramImage: '/assets/astrotrain/infographic_m1/diagram_nasa-seleccion-historia.webp',
+    diagramCaption: 'Evolución histórica de los criterios de selección de astronautas desde Mercury 7 hasta el programa Artemis',
     content: [
       'La historia de la selección de astronautas de la NASA comenzó en 1959, cuando el presidente Dwight D. Eisenhower ordenó que los primeros astronautas fueran pilotos de pruebas militares. De un grupo inicial de 508 pilotos, la NASA seleccionó a siete hombres para formar el grupo Mercury 7: Scott Carpenter, Gordon Cooper, John Glenn, Gus Grissom, Wally Schirra, Alan Shepard y Deke Slayton. Todos eran varones blancos, menores de 40 años, con al menos 1,500 horas de vuelo y una estatura máxima de 180 cm para caber en la diminuta cápsula Mercury. Alan Shepard se convirtió en el primer estadounidense en el espacio el 5 de mayo de 1961.',
       'Con el programa Gemini y las misiones Apollo, la NASA amplió sus criterios de selección. El Grupo 4 (1965) fue el primero en incluir científicos civiles además de pilotos militares, reconociendo que las misiones lunares requerirían competencias geológicas y científicas. Harrison Schmitt, geólogo del Grupo 4, se convirtió en el primer científico profesional en pisar la Luna durante Apollo 17 en diciembre de 1972. Esta evolución en los criterios de selección reflejó el cambio de paradigma de la exploración espacial: de demostrar capacidad tecnológica a realizar investigación científica de alto nivel en otros mundos.',
@@ -194,6 +198,8 @@ const INFOGRAPHIC_NODES = [
     color: '#D45A5A',
     btnImage: '/assets/astrotrain/infographic_m1/btn_formacion-academica.webp',
     image: '/assets/astrotrain/infographic_m1/hero_formacion-academica.webp',
+    diagramImage: '/assets/astrotrain/infographic_m1/diagram_formacion-academica.webp',
+    diagramCaption: 'Malla curricular multidisciplinar: mecánica orbital, telemetría de sistemas y geología de campo',
     content: [
       'La base académica requerida para ser astronauta de la NASA comienza con una licenciatura en un campo STEM: ciencia, tecnología, ingeniería o matemáticas. Sin embargo, los datos de las clases seleccionadas muestran que la mayoría de los astronautas activos poseen títulos avanzados que van más allá del mínimo exigido. Según estadísticas de la NASA actualizadas a 2023, aproximadamente el 45% de los astronautas activos tienen un doctorado (Ph.D.) o un título de médico (M.D.), y otro 30% posee al menos una maestría. Las disciplinas más representadas incluyen ingeniería aeroespacial, física, biología, medicina y ciencias de la computación.',
       'La formación médica se ha vuelto especialmente relevante para las misiones de larga duración. Los astronautas con títulos de medicina aportan conocimientos críticos sobre fisiología humana, respuesta del cuerpo al estrés extremo y procedimientos de emergencia médica. El astronauta-médico puede monitorear la salud de la tripulación, administrar tratamientos básicos y realizar procedimientos menores como extracciones de sangre, ecografías guiadas desde tierra y suturas. En misiones futuras a Marte, donde la comunicación con la Tierra tendrá un retraso de hasta 24 minutos, la presencia de al menos un miembro de la tripulación con formación médica avanzada será indispensable.',
@@ -215,6 +221,8 @@ const INFOGRAPHIC_NODES = [
     color: '#96A3AE',
     btnImage: '/assets/astrotrain/infographic_m1/btn_entrenamiento-basico.webp',
     image: '/assets/astrotrain/infographic_m1/hero_entrenamiento-basico.webp',
+    diagramImage: '/assets/astrotrain/infographic_m1/diagram_entrenamiento-basico.webp',
+    diagramCaption: 'Entrenamiento básico operativo: reactores T-38 Talon y protocolos de supervivencia en mar abierto',
     content: [
       'Una vez seleccionados, los candidatos a astronauta (ASCAN) se trasladan al Centro Espacial Lyndon B. Johnson en Houston, Texas, donde comienzan un programa de entrenamiento básico que dura aproximadamente dos años. Este período, que la NASA denomina formalmente "Astronaut Candidate Training", cubre una gama amplia de habilidades que incluyen el estudio de la ciencia orbital, los sistemas de la Estación Espacial Internacional, procedimientos de caminata espacial, vuelo en aviones T-38, supervivencia en agua y entrenamiento físico intensivo. El objetivo es transformar a profesionales especializados en operadores espaciales versátiles.',
       'El avión T-38 Talon es una pieza central del entrenamiento de astronautas desde la década de 1960. Este avión supersónico de entrenamiento, fabricado por Northrop, vuela a velocidades de hasta 1,380 km/h (Mach 1.13) y puede alcanzar altitudes de 16,000 metros. Los astronautas no pilotos vuelan como copiloto para desarrollar habilidades de toma de decisiones rápidas, comunicación en entornos de alta velocidad y manejo del estrés fisiológico. Cada ASCAN debe completar un mínimo de 15 horas de vuelo por mes en el T-38 durante su período de entrenamiento, acumulando familiaridad con protocolos de aviación y operaciones multi-tarea bajo presión.',
@@ -236,6 +244,8 @@ const INFOGRAPHIC_NODES = [
     color: '#B43A3A',
     btnImage: '/assets/astrotrain/infographic_m1/btn_piscina-gigante.webp',
     image: '/assets/astrotrain/infographic_m1/hero_piscina-gigante.webp',
+    diagramImage: '/assets/astrotrain/infographic_m1/diagram_piscina-gigante.webp',
+    diagramCaption: 'Laboratorio de Flotabilidad Neutra (NBL): piscina de 23 millones de litros y módulos sumergidos',
     content: [
       'El Laboratorio de Flotabilidad Neutra (NBL, por sus siglas en inglés) de la NASA es una de las instalaciones de entrenamiento más singulares del mundo. Ubicado en el Sonny Carter Training Facility, junto al Centro Espacial Johnson en Houston, Texas, este laboratorio alberga una piscina que contiene aproximadamente 23.5 millones de litros de agua (6.2 millones de galones). Sus dimensiones son notables: 62 metros de largo, 31 metros de ancho y 12.2 metros de profundidad. Para poner estas cifras en contexto, la piscina podría contener nueve piscinas olímpicas dentro de su volumen, y su profundidad equivale a un edificio de cuatro pisos sumergido bajo la superficie del agua.',
       'En el fondo y a lo largo de la piscina se encuentran réplicas a escala real de los módulos de la Estación Espacial Internacional. Los astronautas descienden en trajes presurizados — que simulan las características de los trajes espaciales EMU — y practican las tareas específicas que realizarán durante caminatas espaciales reales. Los técnicos ajustan cuidadosamente los pesos y los dispositivos de flotación en cada traje hasta alcanzar la condición de "flotabilidad neutra", un estado en el que el astronauta no se hunde ni flota, sino que permanece suspendido a cualquier profundidad. Esta condición replica la sensación de ingravidez, aunque el agua genera una resistencia al movimiento que no existe en el vacío del espacio.',
@@ -257,6 +267,8 @@ const INFOGRAPHIC_NODES = [
     color: '#8491A0',
     btnImage: '/assets/astrotrain/infographic_m1/btn_simuladores-vr.webp',
     image: '/assets/astrotrain/infographic_m1/hero_simuladores-vr.webp',
+    diagramImage: '/assets/astrotrain/infographic_m1/diagram_simuladores-vr.webp',
+    diagramCaption: 'Simulación de realidad virtual inmersiva y actuadores hápticos para el telemanejo del Canadarm2',
     content: [
       'El Centro Espacial Johnson alberga el Space Vehicle Mockup Facility (SVMF), una instalación que contiene réplicas a escala real de prácticamente todos los módulos de la Estación Espacial Internacional. Los astronautas pasan semanas enteras dentro de estas réplicas, practicando procedimientos operativos estándar y respondiendo a emergencias simuladas con un grado de realismo que involucra alarmas auditivas, cambios de iluminación y la participación de instructores que actúan como controladores de misión. Las tres categorías de emergencia — incendio, despresurización rápida y fuga de amoníaco tóxico del sistema de refrigeración — se practican repetidamente hasta que los astronautas pueden ejecutar los protocolos de forma automática, incluso en condiciones de fatiga o desorientación.',
       'El entrenamiento con el brazo robótico Canadarm2, desarrollado por la Agencia Espacial Canadiense, es una de las habilidades técnicas más complejas que deben dominar los astronautas. El Canadarm2 mide 17.6 metros de largo, puede manipular cargas de hasta 116 toneladas en microgravedad y opera con dos modos de control: automático y manual. En el simulador, los astronautas practican la captura de naves de abastecimiento como la Cygnus y la HTV japonesa, el reposicionamiento de módulos y la asistencia a astronautas durante caminatas espaciales. La captura de una nave que se aproxima a la estación requiere coordinar la velocidad del brazo con la velocidad relativa de la nave, utilizando únicamente cámaras externas y datos de telemetría.',
@@ -278,6 +290,8 @@ const INFOGRAPHIC_NODES = [
     color: '#E46A6A',
     btnImage: '/assets/astrotrain/infographic_m1/btn_astronautas-futuro.webp',
     image: '/assets/astrotrain/infographic_m1/hero_astronautas-futuro.webp',
+    diagramImage: '/assets/astrotrain/infographic_m1/diagram_astronautas-futuro.webp',
+    diagramCaption: 'Perfil del astronauta de espacio profundo: autonomía médica, soporte vital cerrado y exploración lunar',
     content: [
       'La era de los vuelos comerciales tripulados ha redefinido quién puede viajar al espacio. Desde el primer vuelo operacional de la Crew Dragon de SpaceX el 15 de noviembre de 2020 (misión Crew-1), la NASA dejó de depender exclusivamente de la nave rusa Soyuz para transportar astronautas a la ISS. Boeing también desarrolló la cápsula Starliner CST-100 como parte del programa Commercial Crew de la NASA, que adjudicó contratos por un valor combinado de 6,800 millones de dólares a ambas empresas. Este modelo de asociación público-privada ha reducido los costos de acceso a la órbita baja y ha abierto la posibilidad de que ciudadanos privados compren asientos en vuelos espaciales.',
       'El programa Artemis de la NASA representa el próximo capítulo de la exploración humana del espacio. Nombrado en honor a la diosa griega hermana gemela de Apolo, Artemis tiene como objetivo devolver a los seres humanos a la superficie de la Luna por primera vez desde la misión Apollo 17 en diciembre de 1972. El cohete Space Launch System (SLS), con 98 metros de altura y 39.1 meganewtons de empuje al despegar, es el vehículo más potente construido por la NASA. La misión Artemis I completó un vuelo no tripulado alrededor de la Luna en 2022, y Artemis II enviará a cuatro astronautas en un sobrevuelo lunar. Artemis III tiene previsto llevar a los primeros astronautas a la superficie, incluyendo a la primera mujer y a la primera persona de color en pisar la Luna.',
@@ -747,6 +761,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             )}
           </div>
         )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
 
         {/* Fact Box */}
         {node.fact && (
