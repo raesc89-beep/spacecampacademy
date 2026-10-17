@@ -95,6 +95,10 @@ const INFOGRAPHIC_NODES = [
     color: '#00E5FF',
     btnImage: '/assets/exoplanetas/infographic_m1/btn_que-es-un-exoplaneta.jpg',
     image: '/assets/exoplanetas/infographic_m1/hero_que-es-un-exoplaneta.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_que-es-un-exoplaneta.webp',
+    bannerCaption: 'Concepto y arquitectura de mundos orbitando otras estrellas en nuestra galaxia',
+    diagramImage: '/assets/exoplanetas/infographic_m1/diagram_que-es-un-exoplaneta.webp',
+    diagramCaption: 'Clasificación exoplanetaria: arquitectura orbital y continuo masa-radio respecto al Sistema Solar',
     content: [
       'Un exoplaneta es simplemente cualquier planeta que orbita alrededor de una estrella diferente a nuestro Sol. Imagina que el universo es una gran ciudad nocturna llena de edificios iluminados. Nuestro Sistema Solar es solo una pequeña casa en ese vecindario, con sus ocho planetas girando alrededor de la fogata solar. Los exoplanetas son los mundos que pertenecen a todas las demás casas de la ciudad galáctica. Aunque están increíblemente lejos de nosotros, comparten leyes físicas fundamentales con la Tierra y Júpiter.',
       'Durante siglos, la humanidad se preguntó si nuestro sistema planetario era único en el cosmos. Los filósofos de la antigüedad especulaban con mundos infinitos, pero no existía prueba experimental. Todo cambió en la década de 1990 cuando los astrónomos desarrollaron instrumentos ópticos capaces de medir variaciones diminutas en la luz estelar. Hoy sabemos que casi cada estrella del cielo nocturno alberga al menos un planeta. Nuestra galaxia Vía Láctea contiene cientos de miles de millones de estos mundos lejanos.',
@@ -116,6 +120,10 @@ const INFOGRAPHIC_NODES = [
     color: '#64FFDA',
     btnImage: '/assets/exoplanetas/infographic_m1/btn_metodo-del-transito.jpg',
     image: '/assets/exoplanetas/infographic_m1/hero_metodo-del-transito.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_metodo-del-transito.webp',
+    bannerCaption: 'El método del tránsito: detección fotométrica de la caída periódica de brillo estelar',
+    diagramImage: '/assets/exoplanetas/infographic_m1/diagram_metodo-del-transito.webp',
+    diagramCaption: 'Fundamento geométrico del tránsito astronómico y oscurecimiento del limbo estelar',
     content: [
       'El método del tránsito es la técnica más exitosa de la historia para descubrir nuevos mundos en el espacio profundo. Su funcionamiento se basa en una idea sorprendentemente sencilla: un eclipse diminuto. Imagina que colocas una lámpara encendida en una habitación oscura y haces pasar una canica pequeña justo por delante del foco. Al pasar la canica, bloqueará una mínima fracción de la luz que llega a tus ojos, haciendo que la lámpara parezca parpadear momentáneamente.',
       'En la astronomía real, la lámpara es una estrella distante y la canica es un planeta orbitando a su alrededor. Cuando la órbita del planeta está alineada exactamente con nuestra línea de visión desde la Tierra, el planeta pasa justo por enfrente del disco estelar. Durante este recorrido llamado tránsito, el planeta bloquea un pequeño porcentaje del resplandor de la estrella. Los fotómetros ultrasensibles montados en telescopios registran esta disminución periódica del brillo estelar con precisión matemática.',
@@ -137,6 +145,10 @@ const INFOGRAPHIC_NODES = [
     color: '#B388FF',
     btnImage: '/assets/exoplanetas/infographic_m1/btn_velocidad-radial-doppler.jpg',
     image: '/assets/exoplanetas/infographic_m1/hero_velocidad-radial-doppler.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_velocidad-radial-doppler.webp',
+    bannerCaption: 'Técnica de velocidad radial: bamboleo gravitatorio y corrimiento Doppler espectral',
+    diagramImage: '/assets/exoplanetas/infographic_m1/diagram_velocidad-radial-doppler.webp',
+    diagramCaption: 'Velocidad radial y oscilación Doppler estelar en torno al baricentro del sistema binario',
     content: [
       'La velocidad radial se basa en una verdad astrofísica fascinante: los planetas no orbitan alrededor del centro exacto de una estrella inmóvil. En realidad, la estrella y el planeta orbitan juntos alrededor de un centro de gravedad común llamado baricentro. Imagina a un adulto sosteniendo las manos de un niño pequeño y girando en círculos. El niño gira en un círculo grande mientras el adulto da pequeños pasos en un círculo minúsculo. La estrella experimenta un ligero tambaleo.',
       'Ese sutil bamboleo estelar se puede medir desde la Tierra gracias al famoso efecto Doppler de la luz. Piensa en una ambulancia con la sirena encendida que viaja por la calle. Cuando la ambulancia se acerca a ti, el sonido de la sirena se vuelve más agudo porque las ondas sonoras se comprimen. Cuando la ambulancia se aleja, las ondas se estiran y el sonido se vuelve más grave. Con la luz de las estrellas ocurre exactamente el mismo fenómeno físico.',
@@ -158,6 +170,10 @@ const INFOGRAPHIC_NODES = [
     color: '#FFD740',
     btnImage: '/assets/exoplanetas/infographic_m1/btn_curva-de-luz.jpg',
     image: '/assets/exoplanetas/infographic_m1/hero_curva-de-luz.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_curva-de-luz.webp',
+    bannerCaption: 'Curvas de luz de alta precisión y análisis temporal de tránsitos planetarios',
+    diagramImage: '/assets/exoplanetas/infographic_m1/diagram_curva-de-luz.webp',
+    diagramCaption: 'Análisis paramétrico de la curva de luz: contactos t1 a t4, parámetro de impacto y profundidad',
     content: [
       'Una curva de luz es una gráfica matemática que registra el brillo de una estrella a lo largo del tiempo. Imagina dibujar una línea recta horizontal en un papel para representar el brillo constante de una linterna encendida. Si pasas un objeto por delante de la linterna, la línea caerá en forma de valle en V o en U durante el bloqueo de luz, para luego volver a su nivel normal al terminar el paso.',
       'En el análisis astrofísico de tránsitos, la forma exacta de esa caída curva revela información crucial sobre el exoplaneta y su sistema. La profundidad del perfil determina el tamaño relativo del planeta frente a la estrella. Si el fondo de la curva es plano en lugar de puntiagudo, significa que el planeta completo quedó dentro del disco estelar durante una parte del tránsito, permitiendo medir la duración de la fase total.',
@@ -179,6 +195,10 @@ const INFOGRAPHIC_NODES = [
     color: '#FF9100',
     btnImage: '/assets/exoplanetas/infographic_m1/btn_espectroscopia-doppler.jpg',
     image: '/assets/exoplanetas/infographic_m1/hero_espectroscopia-doppler.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_espectroscopia-doppler.webp',
+    bannerCaption: 'Espectrógrafos de alta dispersión para la medición de velocidades sub-métricas',
+    diagramImage: '/assets/exoplanetas/infographic_m1/diagram_espectroscopia-doppler.webp',
+    diagramCaption: 'Espectrógrafo Echelle de ultra-alta resolución con calibración por peine de frecuencias láser',
     content: [
       'La espectroscopía de alta precisión es la herramienta técnica que permite aplicar la velocidad radial en la práctica astrofísica. Imagina que la luz de una estrella es un código de barras de colores que contiene la firma química de sus elementos. Cuando la luz atraviesa el gas de la atmósfera estelar, elementos como el hierro, el hidrógeno y el sodio absorben colores específicos, dejando líneas negras en el código.',
       'Un espectrógrafo de última generación funciona como un prisma gigantesco que descompone esa luz estelar en miles de bandas de color muy detalladas. Si la estrella se mueve debido a la fuerza gravitacional de un exoplaneta, todo ese código de barras de líneas negras se desliza sutilmente hacia la izquierda o hacia la derecha. Medir ese microdesplazamiento requiere una estabilidad instrumental extraordinaria.',
@@ -200,6 +220,10 @@ const INFOGRAPHIC_NODES = [
     color: '#FF80AB',
     btnImage: '/assets/exoplanetas/infographic_m1/btn_limitaciones-y-sesgos.jpg',
     image: '/assets/exoplanetas/infographic_m1/hero_limitaciones-y-sesgos.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_limitaciones-y-sesgos.webp',
+    bannerCaption: 'Sensibilidad observacional y sesgos de selección en censos exoplanetarios',
+    diagramImage: '/assets/exoplanetas/infographic_m1/diagram_limitaciones-y-sesgos.webp',
+    diagramCaption: 'Sesgos de observación observacionales: probabilidad geométrica y límite de detección instrumental',
     content: [
       'Ningún método de observación científica es perfecto y las técnicas de detección de exoplanetas tienen sesgos de selección inevitables. Un sesgo de selección significa que nuestros instrumentos encuentran con mayor facilidad ciertos tipos de planetas mientras ignoran otros. Piensa en pescar en el océano con una red de malla grande: atraparás peces gigantes fácilmente pero todos los peces pequeños escaparán sin que lo notes.',
       'Tanto el método del tránsito como el de velocidad radial favorecen fuertemente a los planetas masivos y grandes que orbitan muy cerca de sus estrellas. Un planeta gigante en una órbita corta realiza tránsitos frecuentes y profundos, y al mismo tiempo ejerce un tirón gravitacional violento sobre su estrella. Por esta razón histórica, los primeros exoplanetas descubiertos fueron llamados Júpiteres Calientes.',
@@ -221,6 +245,10 @@ const INFOGRAPHIC_NODES = [
     color: '#448AFF',
     btnImage: '/assets/exoplanetas/infographic_m1/btn_complementariedad-metodos.jpg',
     image: '/assets/exoplanetas/infographic_m1/hero_complementariedad-metodos.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m1/banner_complementariedad-metodos.webp',
+    bannerCaption: 'Combinación de tránsito y velocidad radial para deducir la densidad y estructura interna',
+    diagramImage: '/assets/exoplanetas/infographic_m1/diagram_complementariedad-metodos.webp',
+    diagramCaption: 'Complementariedad observacional: derivación conjunta de radio, masa y densidad volumétrica media',
     content: [
       'La verdadera magia de la astrofísica ocurre cuando combinamos el método del tránsito y el método de la velocidad radial en el mismo planeta. Cada técnica por separado nos entrega solo una pieza del rompecabezas: el tránsito nos da el radio físico (tamaño) del planeta y la velocidad radial nos entrega su masa verdadera. Al unir ambas mediciones, obtenemos el retrato físico completo del mundo distante.',
       'Con el radio y la masa calculados con precisión, los científicos aplican la fórmula clásica de la física para obtener la densidad media del exoplaneta (densidad es igual a masa dividida entre volumen). La densidad es la clave definitiva para descubrir la composición interna de un planeta sin necesidad de viajar hasta él. Nos permite saber al instante si el exoplaneta es una bola de gas, un mundo de agua o una roca de hierro.',
@@ -700,6 +728,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

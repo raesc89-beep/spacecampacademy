@@ -102,8 +102,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFD740",
     "btnImage": "/assets/exoplanetas/infographic_m3/btn_mision-kepler.jpg",
     "image": "/assets/exoplanetas/infographic_m3/hero_mision-kepler.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_mision-kepler.webp",
-    "bannerCaption": "Misión Kepler: 9 años mirando el cielo y más de 2,600 exoplanetas confirmados",
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_mision-kepler.webp',
+    bannerCaption: 'El telescopio espacial Kepler de la NASA: la era dorada de la fotometría exoplanetaria',
+    diagramImage: '/assets/exoplanetas/infographic_m3/diagram_mision-kepler.webp',
+    diagramCaption: 'Ingeniería del telescopio espacial Kepler: matriz de 42 detectores CCD y fotometría continua',
     "content": [
       "Lanzado por la NASA en marzo de 2009 hacia una orbita heliocentrica de seguimiento terrestre, el telescopio espacial Kepler transformo de raiz la astronomia observacional al convertirse en el primer instrumento disenado especificamente para determinar la frecuencia estadistica de planetas terrestres en nuestra galaxia. Antes de su despliegue orbital, la humanidad apenas conocia unos pocos cientos de mundos extrasolares masivos; Kepler demostro con rigor empírico que los planetas rocosos son la norma cosmica y no una excepcion biologica.",
       "Para cumplir este colosal reto tecnologico, Kepler monto un fotometro Schmidt de 0.95 metros de apertura con un espejo primario de 1.4 metros y un plano focal gigantesco integrado por cuarenta y dos sensores CCD cientificos que totalizaban noventa y cinco megapixeles. El telescopio apunto de forma ininterrumpida durante cuatro anos hacia un campo visual fijo de ciento quince grados cuadrados ubicado entre las constelaciones de Cygnus y Lyra, monitorizando simultaneamente el brillo de mas de ciento cincuenta mil estrellas cada treinta minutos.",
@@ -131,8 +133,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#64FFDA",
     "btnImage": "/assets/exoplanetas/infographic_m3/btn_fotometria-espacial.jpg",
     "image": "/assets/exoplanetas/infographic_m3/hero_fotometria-espacial.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_fotometria-espacial.webp",
-    "bannerCaption": "Fotometría espacial: medir el brillo estelar con precisión de partes por millón desde el espacio",
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_fotometria-espacial.webp',
+    bannerCaption: 'Técnicas de reducción y calibración fotométrica en el espacio profundo',
+    diagramImage: '/assets/exoplanetas/infographic_m3/diagram_fotometria-espacial.webp',
+    diagramCaption: 'Fotometría diferencial de alta precisión: supresión de ruido instrumental a nivel de partes por millón',
     "content": [
       "La fotometria diferencial de ultra alta precision constituye el pilar fundamental que posibilita la deteccion de mundos extrasolares mediante el metodo del transito. Desde la superficie de la Tierra, las turbulencias termicas y los gradientes de densidad en las capas troposfericas causan la centelleo o parpadeo atmosferico de las estrellas; estas fluctuaciones opticas introducen un ruido estocastico de varios milimagnitudes que enmascara por completo las diminutas senales de transito generadas por planetas terrestres.",
       "Al situar los detectores fotometricos en plataformas orbitales fuera de la envoltura gaseosa de la Tierra, las estrellas brillan con una constancia fotonica impoluta que solo esta limitada por el ruido de disparo cuantico de Poisson intrinseco de los propios fotones y las pulsaciones estelares naturales. En el vacio espacial, los sensores opticos pueden cuantificar caidas en la emision de luz de apenas diez a cincuenta partes por millon con una estabilidad temporal que abarca meses de observacion continua.",
@@ -160,8 +164,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E5FF",
     "btnImage": "/assets/exoplanetas/infographic_m3/btn_mision-tess.jpg",
     "image": "/assets/exoplanetas/infographic_m3/hero_mision-tess.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_mision-tess.webp",
-    "bannerCaption": "Misión TESS: cubriendo el 85% del cielo para encontrar planetas alrededor de estrellas cercanas",
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_mision-tess.webp',
+    bannerCaption: 'Misión TESS: cartografía de tránsitos en estrellas brillantes cercanas en todo el cielo',
+    diagramImage: '/assets/exoplanetas/infographic_m3/diagram_mision-tess.webp',
+    diagramCaption: 'Misión TESS: cámaras gran angular de cuatro lentes y órbita lunar resonante P/2',
     "content": [
       "Puesto en orbita en abril de 2018 como sucesor tecnologico de la mision Kepler, el Satelite de Sondeo de Exoplanetas en Transito (TESS, Transiting Exoplanet Survey Satellite) de la NASA ejecuto un cambio estrategico radical en la exploracion espacial. Mientras que Kepler concentro su mirada en un cono profundo pero estrecho del cielo lejano, TESS fue disenado como un explorador omnidireccional concebido para cartografiar el ochenta y cinco por ciento de la boveda celeste visible.",
       "El objetivo prioritario de TESS es localizar exoplanetas orbitando las estrellas mas brillantes, templadas y proximas a nuestro Sistema Solar (situadas habitualmente a distancias de entre treinta y trescientos anos luz). Al orbitar estrellas comparativamente cercanas y luminosas, estos mundos recien descubiertos se convierten en los candidatos perfectos para que los grandes observatorios terrestres y el James Webb puedan analizar con exito sus masas y atmosferas.",
@@ -189,8 +195,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF9100",
     "btnImage": "/assets/exoplanetas/infographic_m3/btn_telescopio-jwst.jpg",
     "image": "/assets/exoplanetas/infographic_m3/hero_telescopio-jwst.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_telescopio-jwst.webp",
-    "bannerCaption": "JWST: el espejo dorado de 6.5m que analiza atmósferas de exoplanetas a luz infrarroja",
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_telescopio-jwst.webp',
+    bannerCaption: 'El telescopio James Webb: caracterización de atmósferas y química exoplanetaria',
+    diagramImage: '/assets/exoplanetas/infographic_m3/diagram_telescopio-jwst.webp',
+    diagramCaption: 'Arquitectura óptica del JWST: espejo segmentado de berilio dorado de 6.5 m y espectrógrafo NIRSpec',
     "content": [
       "Puesto en orbita el 25 de diciembre de 2021 mediante un lanzador Ariane 5, el Telescopio Espacial James Webb (JWST, fruto de la cooperacion entre NASA, ESA y CSA) marco el inicio de una revolucion cientifica sin parangon en la caracterizacion directa de exoplanetas. Si Kepler y TESS consiguieron censar y cuantificar la existencia geometrica de mundos distantes, el JWST fue disenado para descifrar de que estan compuestas quimicamente sus atmosferas y superficies.",
       "El componente optico principal del observatorio es un colosal espejo segmentado de seis metros y medio de diametro efectivo, integrado por dieciocho paneles hexagonales fabricados en berilio ultraligero y recubiertos por una pelicula de vapor de oro puro de cien nanometros de espesor. El oro exhibe una reflectividad optica superior al noventa y ocho por ciento en el espectro infrarrojo cercano y medio, la region electromagnetica donde se localizan las bandas de absorcion molecular diagnosticas de volatiles planetarios.",
@@ -218,8 +226,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E5FF",
     "btnImage": "/assets/exoplanetas/infographic_m3/btn_espectroscopia-transmision.jpg",
     "image": "/assets/exoplanetas/infographic_m3/hero_espectroscopia-transmision.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_espectroscopia-transmision.webp",
-    "bannerCaption": "Espectroscopía de transmisión: las moléculas de la atmósfera del planeta dejan huella en la luz estelar",
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_espectroscopia-transmision.webp',
+    bannerCaption: 'Espectroscopía de transmisión atmosférica durante el tránsito astronómico',
+    diagramImage: '/assets/exoplanetas/infographic_m3/diagram_espectroscopia-transmision.webp',
+    diagramCaption: 'Espectroscopía de transmisión: filtrado de luz estelar a través del limbo anular atmosférico',
     "content": [
       "La espectroscopia de transmision atmosferica es una de las tecnicas astrofisicas mas elegantes y cuantitativas desarrolladas en la ciencia contemporanea para investigar la composicion quimica de planetas distantes. Durante el transito de un exoplaneta por delante del disco de su estrella anfitriona, el cuerpo planetario solido bloquea opacamente la luz estelar central, pero el anillo exterior correspondiente a su envoltura gaseosa atmosferica permanece semitransparente a los fotones.",
       "A medida que los rayos de luz estelar rasantes atraviesan esta delgada corona atmosferica en su trayectoria hacia los telescopios terrestres o espaciales, las especies atomicas y moleculares suspendidas en el gas absorben y dispersan fotones en longitudes de onda cuantizadas muy especificas, correspondientes a las transiciones electronicas, vibracionales y rotacionales unicas de cada elemento quimico presente en el aire exoplanetario.",
@@ -247,8 +257,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF80AB",
     "btnImage": "/assets/exoplanetas/infographic_m3/btn_fotometria-eclipse-secundario.jpg",
     "image": "/assets/exoplanetas/infographic_m3/hero_fotometria-eclipse-secundario.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_fotometria-eclipse-secundario.webp",
-    "bannerCaption": "Eclipse secundario: cuando el planeta se esconde detrás de la estrella revelamos su propio calor",
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_fotometria-eclipse-secundario.webp',
+    bannerCaption: 'Eclipses secundarios y mapeo térmico longitudinal del lado diurno',
+    diagramImage: '/assets/exoplanetas/infographic_m3/diagram_fotometria-eclipse-secundario.webp',
+    diagramCaption: 'Eclipse secundario y curvas de fase térmica: mapeo longitudinal de emisión del lado diurno',
     "content": [
       "Mientras que el transito primario tiene lugar cuando el planeta cruza por delante de la estrella, exactamente media orbita despues se produce el evento astrofisico complementario: la ocultacion o eclipse secundario. En esta fase geometrica, el exoplaneta se desplaza directamente por detras del disco estelar desde la perspectiva visual terrestre, quedando completamente eclipsado y fuera de la vista de los instrumentos opticos.",
       "Inmediatamente antes de que comience el eclipse secundario, el telescopio recolecta el flujo fotometrico total combinado de ambos cuerpos celestes: la radiacion emitida por la estrella mas la luz termica emitida directamente y la luz estelar reflejada por el hemisferio diurno del exoplaneta. En el momento en que el planeta queda ocultado tras el limbo estelar, el brillo del sistema cae abruptamente; la diferencia exacta entre ambas mediciones corresponde a la senal pura del planeta.",
@@ -276,8 +288,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#B388FF",
     "btnImage": "/assets/exoplanetas/infographic_m3/btn_futuro-observatorios.jpg",
     "image": "/assets/exoplanetas/infographic_m3/hero_futuro-observatorios.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m3/banner_futuro-observatorios.webp",
-    "bannerCaption": "Observatorios del futuro: el ELT de 39m y el HWO buscarán gemelas de la Tierra directamente",
+    bannerImage: '/assets/exoplanetas/infographic_m3/banner_futuro-observatorios.webp',
+    bannerCaption: 'Futuros observatorios espaciales y coronografía para la búsqueda de Tierras gemelas',
+    diagramImage: '/assets/exoplanetas/infographic_m3/diagram_futuro-observatorios.webp',
+    diagramCaption: 'Telescopios espaciales de próxima generación: coronografía activa del Roman y Habitable Worlds',
     "content": [
       "La caracterizacion fisica y astrobiologica de los exoplanetas se encuentra en los albores de una era dorada sin precedentes, impulsada por el desarrollo simultaneo de colosales telescopios opticos terrestres y sofisticadas flotas de observatorios espaciales especificamente optimizados para el aislamiento optico de gemelos terrestres y el analisis sistematico de biofirmas gaseosas en la Via Lactea.",
       "En el ambito de la exploracion espacial europea, la Agencia Espacial Europea avanza en la construccion de la mision PLATO (Planetary Transits and Oscillations of stars), cuyo lanzamiento esta previsto para 2026. PLATO desplegara una plataforma con veintiseis camaras opticas simultaneas para detectar y caracterizar exoplanetas rocosos en orbitas de largo periodo en zonas habitables alrededor de estrellas de tipo solar, determinando sus radios y edades evolutivas con precision sismica.",
@@ -763,6 +777,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

@@ -98,6 +98,10 @@ const INFOGRAPHIC_NODES = [
     color: '#FF9100',
     btnImage: '/assets/exoplanetas/infographic_m2/btn_jupiteres-calientes.jpg',
     image: '/assets/exoplanetas/infographic_m2/hero_jupiteres-calientes.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_jupiteres-calientes.webp',
+    bannerCaption: 'Gigantes gaseosos en órbitas ultracortas a escasas milésimas de unidad astronómica',
+    diagramImage: '/assets/exoplanetas/infographic_m2/diagram_jupiteres-calientes.webp',
+    diagramCaption: 'Dinámica atmosférica de Júpiteres Calientes: acoplamiento de marea y vientos térmicos supersónicos',
     content: [
       'Un Júpiter caliente es un gigante de gas comparable en tamaño al mayor planeta de nuestro Sistema Solar, pero con una diferencia extrema: orbita absurdamente cerca de su estrella madre. Imagina tomar a nuestro gigante Júpiter y trasladarlo desde su ubicación fría original hasta situarlo a solo unos pocos millones de kilómetros del Sol. Estaría veinte veces más cerca de la estrella que la propia Tierra. Su año entero duraría menos de tres días terrestres completos.',
       'A esa distancia tan corta, la radiación estelar abrasadora calienta la atmósfera superior del planeta hasta alcanzar temperaturas brutales que superan los mil quinientos grados Celsius. Este calor infernal provoca que el gas hidrógeno y helio de la atmósfera se expanda drásticamente, haciendo que el planeta se hinche como un globo de aire caliente. Algunos Júpiteres calientes tienen densidades tan bajas que flotarían perfectamente si existiera un océano de agua lo suficientemente grande.',
@@ -119,6 +123,10 @@ const INFOGRAPHIC_NODES = [
     color: '#64FFDA',
     btnImage: '/assets/exoplanetas/infographic_m2/btn_migracion-planetaria.jpg',
     image: '/assets/exoplanetas/infographic_m2/hero_migracion-planetaria.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_migracion-planetaria.webp',
+    bannerCaption: 'Dinámica de migración por interacción gravitatoria con el disco protoplanetario',
+    diagramImage: '/assets/exoplanetas/infographic_m2/diagram_migracion-planetaria.webp',
+    diagramCaption: 'Mecanismos de migración planetaria en disco protoplanetario: regímenes de Tipo I y Tipo II',
     content: [
       'Durante décadas, los modelos de formación planetaria asumían que los planetas permanecían para siempre en la misma órbita donde nacieron. Sin embargo, la existencia de los Júpiteres calientes demostró que esa hipótesis era incorrecta. Las leyes de la química física demuestran que los gigantes gaseosos no pueden acumular su enorme volumen cerca de una estrella, porque el calor estelar evapora el gas antes de que pueda condensarse. Tuvieron que nacer lejos.',
       'El proceso por el cual un planeta cambia drásticamente su distancia a la estrella se denomina migración planetaria. Imagina un embotellamiento de tráfico en un remolino de agua. Cuando un sistema planetario es joven, la estrella está rodeada por un denso disco protoplanetario compuesto de gas y polvo acumulado. Cuando un planeta gigante se forma en las regiones exteriores frías, crea ondas de gravedad que se propagan por todo el disco estelar.',
@@ -140,6 +148,10 @@ const INFOGRAPHIC_NODES = [
     color: '#00E5FF',
     btnImage: '/assets/exoplanetas/infographic_m2/btn_supertierras.jpg',
     image: '/assets/exoplanetas/infographic_m2/hero_supertierras.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_supertierras.webp',
+    bannerCaption: 'Mundos de masa intermedia entre la Tierra y Neptuno: el misterio del radio gap',
+    diagramImage: '/assets/exoplanetas/infographic_m2/diagram_supertierras.webp',
+    diagramCaption: 'El valle de Fulton: dicotomía estructural entre Super-Tierras rocosas y Sub-Neptunos con envoltura',
     content: [
       'Una Supertierra es una categoría exoplanetaria que designa a aquellos mundos que tienen una masa mayor que la Tierra pero significativamente menor que Neptuno. Específicamente, abarcan masas situadas entre dos y diez veces la masa terrestre. Lo más sorprendente de estas familias planetarias es que no existe ningún ejemplo de Supertierra en nuestro Sistema Solar, lo que nos deja sin un modelo cercano para estudiarlas directamente.',
       'Los censos fotométricos realizados por los telescopios espaciales han revelado una verdad asombrosa: las Supertierras y los Subneptunos son la clase de planetas más abundante y común en toda la galaxia Vía Láctea. A pesar de que nuestro Sistema Solar saltó abruptamente de la Tierra rocosa al helado Neptuno sin nada en medio, el resto del universo está repleto de estos mundos de tamaño intermedio.',
@@ -161,6 +173,10 @@ const INFOGRAPHIC_NODES = [
     color: '#448AFF',
     btnImage: '/assets/exoplanetas/infographic_m2/btn_planetas-oceano.jpg',
     image: '/assets/exoplanetas/infographic_m2/hero_planetas-oceano.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_planetas-oceano.webp',
+    bannerCaption: 'Mundos cubiertos por hidrosferas colosales y mantos de hielo a alta presión',
+    diagramImage: '/assets/exoplanetas/infographic_m2/diagram_planetas-oceano.webp',
+    diagramCaption: 'Estructura interna de un planeta océano: hidrosfera profunda y mantos de hielo exótico VII y VI',
     content: [
       'Un mundo océano o planeta hídrico es un exoplaneta teórico y observationalmente sugerido cuya masa está compuesta en una fracción enorme por agua pura o hielos volátiles. En la Tierra, aunque los océanos cubren tres cuartas partes de la superficie, representan apenas el cero punto cero dos por ciento de la masa total del planeta. En un verdadero planeta océano, el agua puede constituir entre el diez y el cincuenta por ciento de toda la masa planetaria.',
       'Imagina un mundo donde no existe ni un solo continente ni isla de roca sobre la superficie. Toda la esfera planetaria está cubierta por un océano ininterrumpido de cientos o miles de kilómetros de profundidad. En la parte superior de esta masa líquida, olas gigantescas se desplazan bajo atmósferas ricas en vapor. Sin embargo, las condiciones en las profundidades de estos mares son extrañas para la física cotidiana.',
@@ -182,6 +198,10 @@ const INFOGRAPHIC_NODES = [
     color: '#FF5252',
     btnImage: '/assets/exoplanetas/infographic_m2/btn_enanos-rojos.jpg',
     image: '/assets/exoplanetas/infographic_m2/hero_enanos-rojos.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_enanos-rojos.webp',
+    bannerCaption: 'Planetas orbitando enanas rojas ultrafrías M: desafíos para la habitabilidad',
+    diagramImage: '/assets/exoplanetas/infographic_m2/diagram_enanos-rojos.webp',
+    diagramCaption: 'Interacción enana roja y planeta en zona habitable: fulguraciones magnéticas y erosión atmosférica',
     content: [
       'Las estrellas enanas rojas (también llamadas estrellas tipo M) son las estrellas más diminutas, frías y abundantes del universo. Constituyen más del setenta y cinco por ciento de todas las estrellas que habitan en la Vía Láctea. A diferencia de nuestro Sol brillante de color amarillo, las enanas rojas arden muy despacio y pueden vivir durante billones de años. Por esta razón, la gran mayoría de los exoplanetas descubiertos orbitan alrededor de estas pequeñas estrellas rojas.',
       'Dado que una enana roja emite apenas una pequeña fracción de la luz y el calor del Sol, su zona habitable se encuentra extremadamente cerca de la superficie estelar. Para que un exoplaneta reciba la cantidad adecuada de calor para mantener agua líquida alrededor de una enana roja, debe orbitar a distancias muy cortas, a menudo completando un año entero en pocos días o semanas terrestres.',
@@ -203,6 +223,10 @@ const INFOGRAPHIC_NODES = [
     color: '#B388FF',
     btnImage: '/assets/exoplanetas/infographic_m2/btn_planetas-ultra-densos.jpg',
     image: '/assets/exoplanetas/infographic_m2/hero_planetas-ultra-densos.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_planetas-ultra-densos.webp',
+    bannerCaption: 'Planetas ctonianos: densos núcleos metálicos despojados de su envoltura gaseosa',
+    diagramImage: '/assets/exoplanetas/infographic_m2/diagram_planetas-ultra-densos.webp',
+    diagramCaption: 'Planetas ctonianos: núcleos metálicos de hierro expuestos por fotoevaporación hidrodinámica masiva',
     content: [
       'Entre la exótica zoología de exoplanetas descubiertos existen mundos con densidades tan anormalmente altas que desafían los modelos simples. Estos son los planetas de núcleos metálicos expuestos y mundos ultra densos. Imagina un planeta del tamaño de la Tierra pero con una masa tres o cuatro veces superior, compuesto casi por entero de hierro y níquel macizo, carente por completo de rocas ligeras o manto de silicatos.',
       '¿Cómo se forma un planeta de hierro puro? La explicación principal radica en cataclismos de colisión a gran escala durante la juventud del sistema estelar. Cuando dos grandes protoplanetas rocosos ya diferenciados colisionan de frente a velocidades extremas, el impacto brutal puede arrancar e incinerar todo el manto rocoso exterior de silicio, dejando desnudo únicamente el pesado núcleo metálico interior.',
@@ -224,6 +248,10 @@ const INFOGRAPHIC_NODES = [
     color: '#FFD740',
     btnImage: '/assets/exoplanetas/infographic_m2/btn_diversidad-zooloogica.jpg',
     image: '/assets/exoplanetas/infographic_m2/hero_diversidad-zooloogica.jpg',
+    bannerImage: '/assets/exoplanetas/infographic_m2/banner_diversidad-zooloogica.webp',
+    bannerCaption: 'Panorama de la extraordinaria diversidad de arquitecturas planetarias conocidas',
+    diagramImage: '/assets/exoplanetas/infographic_m2/diagram_diversidad-zooloogica.webp',
+    diagramCaption: 'Taxonomía exoplanetaria en el diagrama masa-radio y curvas teóricas de composición',
     content: [
       'Al estudiar los miles de exoplanetas confirmados hasta la fecha, la lección científica más importante es que la naturaleza posee una imaginación mucho más rica que nuestras teorías tradicionales. Durante siglos asumimos que todos los sistemas planetarios debían organizarse como el nuestro: pequeños planetas rocosos cerca del Sol y gigantes de gas helado ordenados pacíficamente en las afueras.',
       'La realidad observacional ha demostrado que nuestro Sistema Solar es solo una arquitectura entre muchas posibles, e incluso podría no ser el tipo de sistema más común en el universo. Encontramos sistemas planetarios compactos donde cinco o seis planetas están apretados dentro de una distancia menor que la órbita de Mercurio, moviéndose en resonancias armónicas matemáticamente perfectas.',
@@ -703,6 +731,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

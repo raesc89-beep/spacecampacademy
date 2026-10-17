@@ -106,8 +106,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#64FFDA",
     "btnImage": "/assets/exoplanetas/infographic_m4/btn_concepto-zona-habitable.jpg",
     "image": "/assets/exoplanetas/infographic_m4/hero_concepto-zona-habitable.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_concepto-zona-habitable.webp",
-    "bannerCaption": "Zona habitable: la franja dorada alrededor de cada estrella donde el agua líquida puede existir",
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_concepto-zona-habitable.webp',
+    bannerCaption: 'Límites termodinámicos de la zona habitable y agua líquida en superficie',
+    diagramImage: '/assets/exoplanetas/infographic_m4/diagram_concepto-zona-habitable.webp',
+    diagramCaption: 'Límites termodinámicos de la zona habitable circunestelar: invernadero desbocado y condensación de CO2',
     "content": [
       "La zona habitable circunestelar (denominada en la divulgacion cientifica como zona Ricitos de Oro) se define en astrofisica teorica como la region anular alrededor de una estrella donde los niveles de flujo radiativo incidente permiten que un planeta de masa rocosa y atmosfera adecuada sostenga agua pura en estado liquido sobre su superficie de forma termodinamicamente estable durante eones geologicos continuados.",
       "Los limites fisicos precisos de esta zona fueron modelados cuantitativamente mediante balances radiativo-convectivos unidimensionales por el geofisico James Kasting en 1993 y perfeccionados por Ravi Kopparapu en 2013. El limite interior conservador viene determinado por el umbral del invernadero humedo (moist greenhouse) y el efecto invernadero desbocado (runaway greenhouse), donde la insolacion excesiva provoca que la columna de vapor de agua se vuelva opticamente densa, desatando la ebullicion de los oceanos.",
@@ -135,8 +137,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#00E5FF",
     "btnImage": "/assets/exoplanetas/infographic_m4/btn_factores-habitabilidad.jpg",
     "image": "/assets/exoplanetas/infographic_m4/hero_factores-habitabilidad.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_factores-habitabilidad.webp",
-    "bannerCaption": "Factores de habitabilidad: campo magnético, tectónica, luna estabilizadora y atmósfera son clave",
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_factores-habitabilidad.webp',
+    bannerCaption: 'Condiciones geofísicas indispensables: campo magnético, masa y atmósfera',
+    diagramImage: '/assets/exoplanetas/infographic_m4/diagram_factores-habitabilidad.webp',
+    diagramCaption: 'Nexo multifactorial de habitabilidad: masa crítica, geodinamo dipolar y reciclaje tectónico',
     "content": [
       "La emergencia y perpetuacion de una biosfera planetaria exige una compleja red de factores endogenos y dinamicos que trascienden con creces la simple ubicacion orbital. Un planeta rocoso potencialmente habitable debe funcionar como un motor geofisico acoplado donde la litosfera, el nucleo metalico profundo, la columna atmosferica y la hidrosfera interactuen mediante ciclos biogeoquimicos autorregulados capaces de amortiguar perturbaciones cosmicas catastroficas.",
       "El factor determinante primario es la masa planetaria critica, la cual debe situarse idealmente entre 0.5 y 5 masas terrestres. Planetas con masa deficiente sufren una rapida disipacion del calor radiogenico primordial y carecen del potencial gravitatorio necesario para evitar el escape hidrodinamico de gases ligeros hacia el espacio; por el contrario, mundos excesivamente masivos pueden atrapar envelopes de hidrogeno primordial convirtiendose en sub-Neptunos inhabitables.",
@@ -164,8 +168,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF5252",
     "btnImage": "/assets/exoplanetas/infographic_m4/btn_sistema-trappist-1.jpg",
     "image": "/assets/exoplanetas/infographic_m4/hero_sistema-trappist-1.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_sistema-trappist-1.webp",
-    "bannerCaption": "TRAPPIST-1: 7 planetas del tamaño de la Tierra a solo 40 años luz, 3 en zona habitable",
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_sistema-trappist-1.webp',
+    bannerCaption: 'El fascinante sistema TRAPPIST-1: siete mundos terrestres en resonancia armónica',
+    diagramImage: '/assets/exoplanetas/infographic_m4/diagram_sistema-trappist-1.webp',
+    diagramCaption: 'Arquitectura resonante del sistema TRAPPIST-1: siete mundos terrestres en resonancia de Laplace',
     "content": [
       "Localizado a escasos 39.6 anos luz de distancia en la constelacion austral de Acuario, el sistema planetario TRAPPIST-1 se erige como el laboratorio astrofisico y astrobiologico mas prometedor de la galaxia para estudiar mundos rocosos templados. Descubierto en 2017 por un consorcio internacional encabezado por Michael Gillon, este singular enclave estelar alberga una prolifica familia de siete exoplanetas de dimensiones y composiciones homologas a la Tierra y Venus.",
       "La estrella anfitriona TRAPPIST-1 es una enana roja ultrafría de tipo espectral M8V con una masa equivalente al nueve por ciento de la masa solar y un diametro apenas ligeramente superior al del planeta Jupiter. Dado que la luminosidad bolometrica de esta diminuta estrella es casi dos mil veces inferior a la del Sol, la totalidad de su cohorte planetaria orbita a distancias increiblemente compactas, confinada dentro de un radio menor a una quinta parte de la distancia entre Mercurio y el Sol.",
@@ -193,8 +199,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF80AB",
     "btnImage": "/assets/exoplanetas/infographic_m4/btn_biofirmas-atmosfericas.jpg",
     "image": "/assets/exoplanetas/infographic_m4/hero_biofirmas-atmosfericas.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_biofirmas-atmosfericas.webp",
-    "bannerCaption": "Biofirmas atmosféricas: oxígeno + metano en desequilibrio químico sería señal inequívoca de vida",
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_biofirmas-atmosfericas.webp',
+    bannerCaption: 'Gases de desequilibrio químico y biomarcadores espectrales en la atmósfera',
+    diagramImage: '/assets/exoplanetas/infographic_m4/diagram_biofirmas-atmosfericas.webp',
+    diagramCaption: 'Desequilibrio químico termodinámico y biofirmas espectrales simultáneas: O2, O3, CH4 y H2O',
     "content": [
       "En la vanguardia de la astrobiologia contemporanea, una biofirma atmosferica remota se define como la deteccion espectroscopica inequivoca de una especie gaseosa, conjunto de moleculas o patron temporal reflectivo cuya abundancia y persistencia en la columna atmosferica exoplanetaria no puede ser reconciliada con ningun mecanismo fisico abiotico conocido, demandando la intervencion sostenida de actividad metabolica biologica.",
       "El estandar de oro de las biofirmas gaseosas reside en la deteccion de especies quimicas en profundo desequilibrio termodinamico redox simultaneo, tipificado en la Tierra por la coexistencia anomala de dioxido de carbono, oxigeno molecular (O2) y metano (CH4). En terminos de cinetica quimica, el metano y el oxigeno reaccionan de manera espontanea en presencia de fotones solares para formar agua y dioxido de carbono; por lo tanto, su coexistencia continuada en concentraciones significativas solo es factible si una biosfera activa repone ambos gases a tasas colosales.",
@@ -222,8 +230,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#B388FF",
     "btnImage": "/assets/exoplanetas/infographic_m4/btn_tecnofirmas-espaciales.jpg",
     "image": "/assets/exoplanetas/infographic_m4/hero_tecnofirmas-espaciales.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_tecnofirmas-espaciales.webp",
-    "bannerCaption": "Tecnofirmas: contaminación industrial, megaestructuras o comunicaciones señalarían civilizaciones",
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_tecnofirmas-espaciales.webp',
+    bannerCaption: 'Búsqueda de tecnofirmas: señales artificiales y megaestructuras estelares',
+    diagramImage: '/assets/exoplanetas/infographic_m4/diagram_tecnofirmas-espaciales.webp',
+    diagramCaption: 'Detección astrofísica de tecnofirmas: contaminantes industriales CFCs, emisiones de radio y megaestructuras',
     "content": [
       "El dominio cientifico de las tecnofirmas (tecnosignatures) abarca la busqueda astronomica de cualquier manifestacion energetica, modificacion artificial de la composicion quimica ambiental o megaestructura orbital que evidencie el uso deliberado de tecnologia avanzada por parte de una civilizacion no humana. A diferencia de las biofirmas que buscan vestigios de vida microbiana o vegetal, las tecnofirmas exploran la firma material de inteligencias tecnologicas activas.",
       "Entre las tecnofirmas atmosfericas mas diagnosticas sobresale la deteccion de moleculas gaseosas puramente sinteticas y recalcitrantes que no poseen rutas de sintesis geoquimica o fotoquimica en la naturaleza inorganica. Los clorofluorocarbonos (como el CFC-11 y CFC-12) y los perfluorocarbonos (CF4 y C2F6) representan compuestos manufacturados industrialmente por la humanidad para propelentes y refrigeracion que poseen vidas medias atmosfericas que superan los cincuenta mil anos de persistencia quimica.",
@@ -251,8 +261,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFD740",
     "btnImage": "/assets/exoplanetas/infographic_m4/btn_falsos-positivos-biofirmas.jpg",
     "image": "/assets/exoplanetas/infographic_m4/hero_falsos-positivos-biofirmas.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_falsos-positivos-biofirmas.webp",
-    "bannerCaption": "Falsos positivos: el oxígeno abiótico y los volcanes pueden imitar señales de vida",
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_falsos-positivos-biofirmas.webp',
+    bannerCaption: 'Identificación rigurosa de procesos fotoquímicos abióticos de oxígeno y ozono',
+    diagramImage: '/assets/exoplanetas/infographic_m4/diagram_falsos-positivos-biofirmas.webp',
+    diagramCaption: 'Falsos positivos abióticos: fotólisis por radiación EUV estelar y acumulación inorgánica de O2',
     "content": [
       "En la prospeccion astrobiologica contemporanea, el mayor desafio epistemologico y metodologico radica en identificar y refutar rigurosamente los falsos positivos y falsos negativos de biofirmas. Un falso positivo se produce cuando un mecanismo astrofisico o geofisico completamente inorganico genera una acumulacion atmosferica masiva de un gas supuestamente diagnostico de vida (como el oxigeno o el metano), induciendo a conclusiones erroneas.",
       "El ejemplo mas critico de falso positivo es la genesis abiotica de oxigeno molecular (O2). En planetas que orbitan estrellas con intensa emision de radiacion ultravioleta lejana (FUV) y deficiencia de hidrogeno o trampas frias ineficientes, la fotolisis masiva de moleculas de vapor de agua (H2O) en la estratosfera superior libera atomos de hidrogeno que escapan al espacio debido a su baja masa molecular, dejando tras de si una acumulacion residual de decenas de bares de oxigeno molecular libre sin presencia biologica.",
@@ -280,8 +292,10 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF9100",
     "btnImage": "/assets/exoplanetas/infographic_m4/btn_busqueda-vida-futuro.jpg",
     "image": "/assets/exoplanetas/infographic_m4/hero_busqueda-vida-futuro.jpg",
-    "bannerImage": "/assets/exoplanetas/infographic_m4/banner_busqueda-vida-futuro.webp",
-    "bannerCaption": "La búsqueda de vida en el futuro: analizar cientos de atmósferas para responder si estamos solos",
+    bannerImage: '/assets/exoplanetas/infographic_m4/banner_busqueda-vida-futuro.webp',
+    bannerCaption: 'El futuro de la astrobiología: imágenes directas y detección de biósferas activas',
+    diagramImage: '/assets/exoplanetas/infographic_m4/diagram_busqueda-vida-futuro.webp',
+    diagramCaption: 'Visión futura de la astrobiología: parasol estelar starshade en vuelo en formación y coronografía directa',
     "content": [
       "La exploracion astrobiologica entra de lleno en una transicion paradigmatica donde la inferencia estadistica indirecta cedera el paso a la resolucion optica y espectroscopica directa de planetas rocosos templados. Durante las proximas dos decadas, una alianza sinergica entre colosales infraestructuras astronomicas terrestres e innovadores observatorios espaciales coronograficos abordara de forma definitiva la cuestion de la vida cosmica.",
       "El proyecto insignia supremo planificado por la NASA para la decada de 2030 es el Habitable Worlds Observatory (HWO), un telescopio espacial optico, ultravioleta e infrarrojo cercano provisto de un espejo segmentado de seis metros. Su mision fundamental sera implementar coronografia de contraste extremo (10^-10), capaz de suprimir el deslumbramiento estelar en un factor de diez mil millones para fotografiar de forma directa la luz reflejada por al menos veinticinco análogos terrestres.",
@@ -767,6 +781,45 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
             {node.bannerCaption && (
               <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>

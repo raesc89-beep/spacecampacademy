@@ -67,8 +67,10 @@ const INFOGRAPHIC_NODES = [
     color: '#D87D4A',
     btnImage: '/assets/gaseosos/infographic_m1/btn_jupiter-rey.webp',
     image: '/assets/gaseosos/infographic_m1/hero_jupiter-rey.webp',
-    bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
-    bannerCaption: 'Júpiter gobierna como el monarca absoluto de nuestro sistema estelar.',
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_jupiter-rey.webp',
+    bannerCaption: 'Júpiter el rey: la Gran Mancha Roja es una tormenta mayor que la Tierra que lleva 350 años sin detenerse',
+    diagramImage: '/assets/gaseosos/infographic_m1/diagram_jupiter-rey.webp',
+    diagramCaption: 'Estructura radial de Júpiter: atmósfera gaseosa, manto de hidrógeno metálico líquido y núcleo diluido',
     content: [
       'Júpiter es el planeta más grande de nuestro sistema solar, un coloso compuesto principalmente de hidrógeno y helio, sorprendentemente similar en composición a una estrella. Con una masa que es más de 300 veces la de la Tierra, su inmensa gravedad actúa como un escudo protector cósmico para los planetas interiores, atrayendo asteroides y cometas peligrosos hacia su atmósfera antes de que puedan amenazar nuestro frágil hogar rocoso. Es verdaderamente tan inmenso que más de 1,300 planetas como la Tierra podrían caber en su vasto interior sin ningún problema, convirtiéndolo en un verdadero monarca celestial incuestionable en nuestro vecindario estelar.',
       'A diferencia de los familiares planetas rocosos como el nuestro, Júpiter carece por completo de una superficie sólida donde aterrizar. Si una nave intentara descender en él, simplemente se hundiría cada vez más profundo a través de densísimas nubes de amoníaco y cristales de hielo de agua, enfrentando presiones colosales que eventualmente la aplastarían sin piedad mucho antes de alcanzar el supuesto núcleo. Este gigante gaseoso se caracteriza visualmente por sus espectaculares bandas de nubes multicolores, las cuales son impulsadas incesantemente por vientos supersónicos que superan fácilmente velocidades de 600 kilómetros por hora.',
@@ -90,8 +92,10 @@ const INFOGRAPHIC_NODES = [
     color: '#D4B872',
     btnImage: '/assets/gaseosos/infographic_m1/btn_saturno-anillos.webp',
     image: '/assets/gaseosos/infographic_m1/hero_saturno-anillos.webp',
-    bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
-    bannerCaption: 'Los espectaculares anillos de Saturno, formados por innumerables fragmentos helados.',
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_saturno-anillos.webp',
+    bannerCaption: 'Saturno y sus anillos: 282,000 km de diámetro pero solo 20 metros de grosor, hielo y roca en órbita perfecta',
+    diagramImage: '/assets/gaseosos/infographic_m1/diagram_saturno-anillos.webp',
+    diagramCaption: 'Dinámica orbital de los anillos de Saturno: resonancias con Mimas y confinamiento por lunas pastoras',
     content: [
       'Saturno es indiscutiblemente la joya visual suprema de nuestro vecindario cósmico, famoso en todo el mundo por su espectacular e inigualable sistema de brillantes anillos. Siendo el segundo planeta más grande del sistema solar después del monarca Júpiter, Saturno es otro colosal gigante gaseoso compuesto abrumadoramente por los elementos más ligeros del universo: hidrógeno y helio puros. A pesar de su gargantuesco tamaño físico, Saturno posee una densidad global curiosamente tan increíblemente baja que es el único planeta conocido que, de existir un océano oceánico lo suficientemente grande en el universo para contenerlo, flotaría sin hundirse como una manzana.',
       'El aspecto más hipnótico y legendario de este distante planeta son sus anillos superlativos, los cuales no son bandas sólidas inquebrantables como parecen de lejos, sino incontables millones de fragmentos individuales giratorios de hielo cristalino, roca espacial y polvo microscópico. Algunos de estos fragmentos helados son tan minúsculos como delicados granos de arena fina, mientras que otros son auténticos peñascos espaciales tan grandes como montañas enteras, todos ellos atrapados en una perfecta danza orbital gravitatoria alrededor del inmenso ecuador de Saturno, extendiéndose ampliamente por cientos de miles de kilómetros en la negrura del espacio.',
@@ -113,8 +117,10 @@ const INFOGRAPHIC_NODES = [
     color: '#80DEEA',
     btnImage: '/assets/gaseosos/infographic_m1/btn_urano-inclinado.webp',
     image: '/assets/gaseosos/infographic_m1/hero_urano-inclinado.webp',
-    bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
-    bannerCaption: 'Urano es un mundo congelado e inclinado sobre su costado.',
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_urano-inclinado.webp',
+    bannerCaption: 'Urano el inclinado: rueda de lado alrededor del Sol con una inclinación de 98 grados',
+    diagramImage: '/assets/gaseosos/infographic_m1/diagram_urano-inclinado.webp',
+    diagramCaption: 'Geofísica de Urano: inclinación axial extrema de 98°, dípolo magnético ladeado y manto superiónico',
     content: [
       'Urano, el séptimo enigmático planeta desde nuestro ardiente Sol, se clasifica rigurosamente en la astronomía moderna como un enigmático gigante de hielo en lugar de un gigante gaseoso convencional como los gigantescos Júpiter y Saturno. Aunque indiscutiblemente posee una espesa y turbulenta atmósfera de gas hidrógeno y liviano helio, la mayor parte de su densa masa interna y profunda está misteriosamente constituida por una densa e interminable "sopa" súper caliente y a altísima presión conformada esencialmente de fluidos congelados como agua pura, asfixiante amoníaco y denso metano líquido comprimido.',
       'El brillante y hermoso tono azul celeste pálido inconfundible de este solitario planeta frío no se debe en absoluto a la presencia de océanos acuosos de agua líquida como en la Tierra, sino estrictamente a la abundancia sustancial del gas metano tóxico acumulado en las elevadas y frías capas superiores de su atmósfera joviana exterior. El espeso gas de metano flotante actúa como un gigantesco y eficiente filtro planetario que absorbe rápidamente casi toda la luz roja visible proveniente de nuestro distante Sol, reflejando exclusivamente el resplandor de los gélidos tonos azulados y verdosos de la luz blanca entrante.',
@@ -136,8 +142,10 @@ const INFOGRAPHIC_NODES = [
     color: '#3949AB',
     btnImage: '/assets/gaseosos/infographic_m1/btn_neptuno-vientos.webp',
     image: '/assets/gaseosos/infographic_m1/hero_neptuno-vientos.webp',
-    bannerImage: '/assets/course/viaje-planetas-gaseosos/banner_gaseosos.jpg',
-    bannerCaption: 'Neptuno, el distante gigante de hielo barrido por implacables tormentas.',
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_neptuno-vientos.webp',
+    bannerCaption: 'Neptuno supersónico: vientos de 2,100 km/h y tormentas oscuras del tamaño de la Tierra',
+    diagramImage: '/assets/gaseosos/infographic_m1/diagram_neptuno-vientos.webp',
+    diagramCaption: 'Dinámica atmosférica de Neptune: vientos supersónicos de 2,100 km/h y flujo de calor interno',
     content: [
       'Neptuno es con total seguridad el planeta orbital oficial más alejado y solitario de nuestro magnífico y candente Sol en la era actual espacial. Al igual y de idéntica constitución elemental que su cercano hermano helado Urano, este inmenso gigante azul oscuro está catalogado científicamente bajo la familia astrofísica de los fríos gigantes de hielo pesados. Su lejanía extrema es verdaderamente tan incomprensiblemente vasta que la diminuta e imperceptible luz de nuestro brillante Sol tarda casi unas agónicas y largas cuatro extenuantes horas viajando incesantemente en el vacío para lograr apenas iluminarlo débilmente.',
       'A pesar abrumadoramente de recibir muchísima menos energía térmica solar radiante y vigorosa que el resto de los planetas debido a su gran distancia helada, Neptuno extrañamente posee y hace alarde de albergar el clima tormentoso e implacable más dinámico y extremadamente violento conocido jamás por la astronomía contemporánea en nuestro sistema planetario estelar. Sus poderosos vientos supersónicos huracanados soplan de manera escalofriante alcanzando picos alarmantes que superan sin esfuerzo alguno la tremenda velocidad de los 2,000 escandalosos kilómetros por majestuosa hora atmosférica de pura destrucción en chorro libre.',
@@ -159,6 +167,10 @@ const INFOGRAPHIC_NODES = [
     color: '#FFB74D',
     btnImage: '/assets/course/viaje-planetas-gaseosos/btn_lunas-gaseosos.webp',
     image: '/assets/course/viaje-planetas-gaseosos/hero_lunas_gaseosos.webp',
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_lunas-gaseosos.webp',
+    bannerCaption: 'Lunas de los gigantes: Ío volcánico, Europa con océano global y Titán con lagos de metano',
+    diagramImage: '/assets/gaseosos/infographic_m1/diagram_lunas-gaseosos.webp',
+    diagramCaption: 'Geofísica comparada de los satélites jovianos y saturnianos: Ío, Europa, Ganimedes y Titán',
     content: [
       'Los cuatro planetas gaseosos del sistema solar tienen colectivamente 217 lunas confirmadas, de las cuales 95 pertenecen a Júpiter, 146 a Saturno, 28 a Urano y 16 a Neptuno —con varios satélites menores pendientes de confirmación en todos los sistemas. Esta proliferación de satélites es consecuencia directa de la enorme masa gravitacional de los gigantes gaseosos, que capturó asteroides del cinturón exterior durante los primeros 500 millones de años del sistema solar cuando los planetas migraron de sus órbitas originales. Las cuatro lunas galileanas de Júpiter —Ío, Europa, Ganímedes y Calisto— fueron descubiertas por Galileo Galilei en enero de 1610, y su observación moviéndose alrededor de Júpiter fue la primera evidencia directa de que no todos los objetos celestes orbitan la Tierra.',
       'Europa, la luna más pequeña de las galileanas con un diámetro de 3,121 km, es considerada el lugar del sistema solar con mayor probabilidad de albergar vida extraterrestre. Debajo de su superficie helada de 10-30 km de espesor existe un océano líquido de agua salada de al menos 100 km de profundidad —más agua total que todos los océanos terrestres combinados— mantenido líquido por las fuerzas de marea de la enorme gravedad de Júpiter. El sondeo gravitacional de la nave Galileo en la década de 1990 detectó perturbaciones en el campo magnético de Júpiter consistentes con un océano conductor de electricidad —es decir, salado— dentro de Europa, y la misión Europa Clipper de la NASA, lanzada en 2024, está realizando 49 sobrevuelos para caracterizar en detalle este océano subsuperficial.',
@@ -180,6 +192,10 @@ const INFOGRAPHIC_NODES = [
     color: '#A5D6A7',
     btnImage: '/assets/course/viaje-planetas-gaseosos/btn_saturno.webp',
     image: '/assets/course/viaje-planetas-gaseosos/hero_saturno.webp',
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_anillos-saturno.webp',
+    bannerCaption: 'Estructura fina de los anillos de Saturno y divisiones gravitatorias de Cassini y Encke',
+    diagramImage: '/assets/gaseosos/infographic_m1/diagram_anillos-saturno.webp',
+    diagramCaption: 'Estructura física fina de los anillos de Saturno: espesor métrico, ondas de densidad y colisiones',
     content: [
       'Los anillos de Saturno, visibles desde la Tierra con un telescopio básico de 50mm, son una de las estructuras más complejas del sistema solar: siete anillos principales compuestos mayoritariamente de partículas de hielo de agua (95%) con cantidades menores de polvo y roca, que van desde granos de arena hasta bloques del tamaño de una casa. Su extensión radial total, desde el anillo D interior hasta el anillo E exterior, es de 282,000 km —casi el 74% de la distancia Tierra-Luna— pero tienen un grosor de solo 10-100 metros en la mayoría de su extensión, haciendo que la relación diámetro/grosor sea comparable a una hoja de papel escala planetaria.',
       'La edad de los anillos de Saturno fue objeto de intenso debate durante décadas, pero los datos finales de la misión Cassini antes de su desintegración controlada en 2017 permitieron calcular que los anillos principales son geológicamente jóvenes: tienen entre 10 y 100 millones de años de antigüedad, formados probablemente por la desintegración de una luna helada o por la captura gravitacional de un cometa en la misma época en que los dinosaurios no aviares dominaban la Tierra. Esta edad joven fue sorprendente porque implica que Saturno existió durante la mayor parte de su historia (4,500 millones de años) sin sus icónicos anillos, y que cuando los primeros organismos multicelulares evolucionaban en la Tierra hace 600 millones de años, Saturno era un planeta sin anillos reconocible.',
@@ -201,6 +217,10 @@ const INFOGRAPHIC_NODES = [
     color: '#80DEEA',
     btnImage: '/assets/course/viaje-planetas-gaseosos/btn_exploracion-gaseosos.webp',
     image: '/assets/course/viaje-planetas-gaseosos/hero_cassini_saturn.webp',
+    bannerImage: '/assets/gaseosos/infographic_m1/banner_exploracion-gaseosos.webp',
+    bannerCaption: 'Misiones históricas a los gigantes gaseosos: Voyager 1 y 2, Galileo y Cassini-Huygens',
+    diagramImage: '/assets/gaseosos/infographic_m1/diagram_exploracion-gaseosos.webp',
+    diagramCaption: 'Mecánica orbital de las misiones Voyager, Galileo y Cassini: asistencias gravitatorias y entrada atmosférica',
     content: [
       'Pioneer 10 y Pioneer 11 fueron las primeras sondas en cruzar el cinturón de asteroides y alcanzar Júpiter (1973 y 1974 respectivamente), demostrando que el espacio exterior al cinturón de asteroides era navegable para naves no tripuladas. Las imágenes de Júpiter que enviaron Pioneer —aunque de baja resolución— revelaron la Gran Mancha Roja como un sistema de alta presión persistente y permitieron medir el campo magnético joviano, 14 veces más intenso que el terrestre. Pioneer 11 continuó hasta Saturno en 1979, proporcionando las primeras mediciones de sus anillos y confirmando la presencia del anillo F, una estructura estrecha y trenzada que desconcertó a los físicos de la época.',
       'Las sondas Voyager 1 y 2, lanzadas en 1977 y aún operativas, realizaron lo que se conoce como el "Gran Tour" del sistema solar exterior, aprovechando una alineación planetaria que ocurre cada 176 años. Voyager 1 sobrevoló Júpiter en 1979 y Saturno en 1980; Voyager 2 voló por los cuatro gigantes gaseosos entre 1979 y 1989. Las imágenes de los sobrevuelos de Voyager transformaron a Júpiter, Saturno, Urano y Neptuno de puntos de luz en mundos con personalidad propia: descubrieron los anillos de Urano y Neptuno, los volcanes de Ío, los géiseres de nitrógeno de Tritón, y las nubes en bandas de todos los gigantes con una resolución nunca antes lograda.',
@@ -459,15 +479,68 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
           })}
         </div>
 
-        {/* Optional Banner */}
+        {/* --- Banner Image --- */}
         {node.bannerImage && (
-          <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', cursor: 'pointer' }} onClick={() => setLightboxSrc(node.bannerImage)}>
+          <div style={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+            position: 'relative',
+            zIndex: 2,
+            cursor: 'pointer'
+          }} onClick={() => setLightboxSrc(node.bannerImage)}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={node.bannerImage} alt={node.bannerCaption || ''} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)', pointerEvents: 'none' }} />
+            <img
+              src={node.bannerImage}
+              alt={node.bannerCaption || node.title}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }}
+              loading="lazy"
+            />
             {node.bannerCaption && (
-              <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center', fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic', textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic' }}>
                 {node.bannerCaption}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
               </p>
             )}
           </div>
