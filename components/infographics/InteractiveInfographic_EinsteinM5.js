@@ -142,6 +142,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'infancia-munich',
+    diagramImage: '/assets/einstein/infographic_m5/diagram_infancia-munich.webp',
+    diagramCaption: 'Infancia en el taller electrotécnico familiar en Múnich y primeros estímulos científicos',
     title: 'Infancia en Múnich',
     color: '#2C3E6B',
     btnImage: '/assets/einstein/infographic_m5/btn_infancia-munich.webp',
@@ -163,6 +165,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'estudiante-rebelde',
+    diagramImage: '/assets/einstein/infographic_m5/diagram_estudiante-rebelde.webp',
+    diagramCaption: 'La estancia en la escuela cantonal de Aarau y el método de visualización intuitiva',
     title: 'El Estudiante Rebelde',
     color: '#D4A03C',
     btnImage: '/assets/einstein/infographic_m5/btn_estudiante-rebelde.webp',
@@ -184,6 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'oficina-patentes',
+    diagramImage: '/assets/einstein/infographic_m5/diagram_oficina-patentes.webp',
+    diagramCaption: 'El trabajo minucioso evaluando inventos electromagnéticos en la oficina de Berna',
     title: 'La Oficina de Patentes',
     color: '#3A5280',
     btnImage: '/assets/einstein/infographic_m5/btn_oficina-patentes.webp',
@@ -205,6 +211,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fama-exilio',
+    diagramImage: '/assets/einstein/infographic_m5/diagram_fama-exilio.webp',
+    diagramCaption: 'Giras internacionales de divulgación y el posterior exilio a Estados Unidos en 1933',
     title: 'Fama y Exilio',
     color: '#C4922E',
     btnImage: '/assets/einstein/infographic_m5/btn_fama-exilio.webp',
@@ -226,6 +234,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'princeton-ultimos',
+    diagramImage: '/assets/einstein/infographic_m5/diagram_princeton-ultimos.webp',
+    diagramCaption: 'Madurez en el Instituto de Estudios Avanzados de Princeton dedicada a la investigación',
     title: 'Princeton: Los Últimos Años',
     color: '#4A6694',
     btnImage: '/assets/einstein/infographic_m5/btn_princeton-ultimos.webp',
@@ -247,6 +257,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'einstein-humanista',
+    diagramImage: '/assets/einstein/infographic_m5/diagram_einstein-humanista.webp',
+    diagramCaption: 'Compromiso pacifista y defensa incansable de la justicia y los derechos humanos',
     title: 'Einstein Humanista',
     color: '#B88420',
     btnImage: '/assets/einstein/infographic_m5/btn_einstein-humanista.webp',
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-personal',
+    diagramImage: '/assets/einstein/infographic_m5/diagram_legado-personal.webp',
+    diagramCaption: 'El legado personal de Einstein: la curiosidad y la imaginación como motores del saber',
     title: 'El Legado Personal',
     color: '#1E2D52',
     btnImage: '/assets/einstein/infographic_m5/btn_legado-personal.webp',
@@ -718,6 +732,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

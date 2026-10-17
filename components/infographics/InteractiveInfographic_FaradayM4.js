@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "que-es-electrolisis",
+    diagramImage: '/assets/faraday/infographic_m4/diagram_que-es-electrolisis.webp',
+    diagramCaption: 'La electrólisis: descomposición de compuestos químicos mediante corriente eléctrica',
     bannerImage: '/assets/faraday/infographic_m4/banner_que-es-electrolisis.webp',
     bannerCaption: "Electrólisis: usar corriente eléctrica para descomponer sustancias. Necesita una fuente, dos electrodos y un electrolito.",
     title: "¿Qué es la electrólisis?",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "vocabulario-faraday",
+    diagramImage: '/assets/faraday/infographic_m4/diagram_vocabulario-faraday.webp',
+    diagramCaption: 'Acuñación de términos universales: ion, ánodo, cátodo, electrodo y electrolito',
     bannerImage: '/assets/faraday/infographic_m4/banner_vocabulario-faraday.webp',
     bannerCaption: "Electrodo, ánodo, cátodo, ion, anión, catión y electrolito: términos creados por Faraday con William Whewell en 1834.",
     title: "Las palabras que inventó Faraday",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "leyes-electrolisis",
+    diagramImage: '/assets/faraday/infographic_m4/diagram_leyes-electrolisis.webp',
+    diagramCaption: 'Las leyes cuantitativas de la electrólisis que relacionan masa y carga eléctrica',
     bannerImage: '/assets/faraday/infographic_m4/banner_leyes-electrolisis.webp',
     bannerCaption: "En 1833 Faraday formuló sus leyes: la masa transformada en la electrólisis es proporcional a la carga eléctrica que circula.",
     title: "Las leyes de 1833",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "agua-hidrogeno-oxigeno",
+    diagramImage: '/assets/faraday/infographic_m4/diagram_agua-hidrogeno-oxigeno.webp',
+    diagramCaption: 'Descomposición del agua en gases de hidrógeno y oxígeno mediante electrólisis',
     bannerImage: '/assets/faraday/infographic_m4/banner_agua-hidrogeno-oxigeno.webp',
     bannerCaption: "La electrólisis del agua produce hidrógeno en el cátodo y oxígeno en el ánodo, en proporción de dos volúmenes a uno.",
     title: "Agua: hidrógeno y oxígeno",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "aluminio-hall-heroult",
+    diagramImage: '/assets/faraday/infographic_m4/diagram_aluminio-hall-heroult.webp',
+    diagramCaption: 'Proceso Hall-Héroult: obtención industrial del aluminio por reducción electrolítica',
     bannerImage: '/assets/faraday/infographic_m4/banner_aluminio-hall-heroult.webp',
     bannerCaption: "Desde 1886, el proceso Hall-Héroult obtiene aluminio por electrólisis; abarató el metal de aviones, naves y latas.",
     title: "Aluminio: de joya a lata",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "hidrogeno-cohetes",
+    diagramImage: '/assets/faraday/infographic_m4/diagram_hidrogeno-cohetes.webp',
+    diagramCaption: 'Producción de hidrógeno verde por electrólisis para combustible aeroespacial',
     bannerImage: '/assets/faraday/infographic_m4/banner_hidrogeno-cohetes.webp',
     bannerCaption: "La NASA usa hidrógeno líquido con oxígeno líquido en motores como el RS-25: la reacción inversa de la electrólisis del agua.",
     title: "Hidrógeno para cohetes",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "galvanoplastia-baterias",
+    diagramImage: '/assets/faraday/infographic_m4/diagram_galvanoplastia-baterias.webp',
+    diagramCaption: 'Galvanoplastia protectora y reacciones electroquímicas en baterías modernas',
     bannerImage: '/assets/faraday/infographic_m4/banner_galvanoplastia-baterias.webp',
     bannerCaption: "Galvanoplastia, refinado de cobre, cloro para agua potable y baterías recargables: la electrólisis está en todas partes.",
     title: "Metales brillantes y baterías",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

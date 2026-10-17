@@ -137,6 +137,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'polonia-imperio-ruso',
+    diagramImage: '/assets/curie/infographic_m1/diagram_polonia-imperio-ruso.webp',
+    diagramCaption: 'Varsovia bajo dominio ruso: juventud marcada por el patriotismo y el rigor intelectual',
     title: 'Polonia Bajo el Imperio Ruso',
     color: '#4CAF50',
     btnImage: '/assets/curie/infographic_m1/btn_polonia-imperio-ruso.webp',
@@ -158,6 +160,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'maria-sklodowska',
+    diagramImage: '/assets/curie/infographic_m1/diagram_maria-sklodowska.webp',
+    diagramCaption: 'La joven Maria Skłodowska: pasión por las matemáticas y la física en tiempos difíciles',
     title: 'Maria Skłodowska',
     color: '#6A1B9A',
     btnImage: '/assets/curie/infographic_m1/btn_maria-sklodowska.webp',
@@ -179,6 +183,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'la-institutriz',
+    diagramImage: '/assets/curie/infographic_m1/diagram_la-institutriz.webp',
+    diagramCaption: 'Años de institutriz en Szczuki para financiar los estudios de su hermana en París',
     title: 'La Institutriz',
     color: '#66BB6A',
     btnImage: '/assets/curie/infographic_m1/btn_la-institutriz.webp',
@@ -200,6 +206,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'universidad-volante',
+    diagramImage: '/assets/curie/infographic_m1/diagram_universidad-volante.webp',
+    diagramCaption: 'La Universidad Volante: educación clandestina en Polonia desafiando la censura zarista',
     title: 'La Universidad Volante',
     color: '#7B1FA2',
     btnImage: '/assets/curie/infographic_m1/btn_universidad-volante.webp',
@@ -221,6 +229,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sueno-paris',
+    diagramImage: '/assets/curie/infographic_m1/diagram_sueno-paris.webp',
+    diagramCaption: 'Llegada a París en 1891 para matricularse en la Facultad de Ciencias de la Sorbona',
     title: 'El Sueño de París',
     color: '#81C784',
     btnImage: '/assets/curie/infographic_m1/btn_sueno-paris.webp',
@@ -242,6 +252,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'primeros-estudios',
+    diagramImage: '/assets/curie/infographic_m1/diagram_primeros-estudios.webp',
+    diagramCaption: 'Estudios abnegados en una buhardilla parisina: licenciaturas en física y matemáticas',
     title: 'Primeros Estudios',
     color: '#8E24AA',
     btnImage: '/assets/curie/infographic_m1/btn_primeros-estudios.webp',
@@ -263,6 +275,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'encuentro-pierre',
+    diagramImage: '/assets/curie/infographic_m1/diagram_encuentro-pierre.webp',
+    diagramCaption: 'Encuentro con Pierre Curie: unión de dos mentes brillantes dedicadas a la investigación',
     title: 'El Encuentro con Pierre',
     color: '#388E3C',
     btnImage: '/assets/curie/infographic_m1/btn_encuentro-pierre.webp',
@@ -713,6 +727,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

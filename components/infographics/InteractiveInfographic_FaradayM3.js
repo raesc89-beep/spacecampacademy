@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "campos-invisibles",
+    diagramImage: '/assets/faraday/infographic_m3/diagram_campos-invisibles.webp',
+    diagramCaption: 'Visualización de las líneas de fuerza magnética mediante limaduras de hierro',
     bannerImage: '/assets/faraday/infographic_m3/banner_campos-invisibles.webp',
     bannerCaption: "Faraday imaginó el espacio lleno de «líneas de fuerza»: la idea de campo que explica por qué funciona su jaula.",
     title: "Faraday y los campos invisibles",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "experimento-1836",
+    diagramImage: '/assets/faraday/infographic_m3/diagram_experimento-1836.webp',
+    diagramCaption: 'El experimento de la jaula de 1836: seguridad dentro de una sala metálica electrificada',
     bannerImage: '/assets/faraday/infographic_m3/banner_experimento-1836.webp',
     bannerCaption: "En 1836 Faraday forró un cuarto de 3.7 m con metal, lo electrificó por fuera y comprobó que dentro no había carga.",
     title: "El cuarto metálico de 1836",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "como-funciona-jaula",
+    diagramImage: '/assets/faraday/infographic_m3/diagram_como-funciona-jaula.webp',
+    diagramCaption: 'Distribución electrostática de cargas superficiales anulando el campo interior',
     bannerImage: '/assets/faraday/infographic_m3/banner_como-funciona-jaula.webp',
     bannerCaption: "Los electrones del metal se reacomodan y anulan el campo exterior; una malla funciona si sus huecos son menores que la onda.",
     title: "¿Cómo funciona la jaula?",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "microondas-y-hogar",
+    diagramImage: '/assets/faraday/infographic_m3/diagram_microondas-y-hogar.webp',
+    diagramCaption: 'Blindaje en electrodomésticos: la rejilla del microondas bloquea las ondas electromagnéticas',
     bannerImage: '/assets/faraday/infographic_m3/banner_microondas-y-hogar.webp',
     bannerCaption: "El horno de microondas es una jaula de Faraday: su caja metálica y la rejilla de la puerta mantienen las ondas dentro.",
     title: "Jaulas en tu casa",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "rayos-autos-aviones",
+    diagramImage: '/assets/faraday/infographic_m3/diagram_rayos-autos-aviones.webp',
+    diagramCaption: 'Seguridad ante rayos: la estructura metálica de aviones y automóviles protege el interior',
     bannerImage: '/assets/faraday/infographic_m3/banner_rayos-autos-aviones.webp',
     bannerCaption: "Un auto con techo metálico protege de un rayo por su carrocería, no por sus neumáticos: la corriente fluye por fuera.",
     title: "Rayos, autos y aviones",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "naves-espaciales",
+    diagramImage: '/assets/faraday/infographic_m3/diagram_naves-espaciales.webp',
+    diagramCaption: 'Escudos magnéticos para proteger a los astronautas de la radiación cósmica en el espacio',
     bannerImage: '/assets/faraday/infographic_m3/banner_naves-espaciales.webp',
     bannerCaption: "Las naves usan cajas y blindajes metálicos para proteger su electrónica de descargas, interferencias y radiación espacial.",
     title: "Escudos para naves espaciales",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "escudo-magnetico-tierra",
+    diagramImage: '/assets/faraday/infographic_m3/diagram_escudo-magnetico-tierra.webp',
+    diagramCaption: 'La magnetosfera terrestre desviando el viento solar y creando las auroras polares',
     bannerImage: '/assets/faraday/infographic_m3/banner_escudo-magnetico-tierra.webp',
     bannerCaption: "La magnetosfera desvía el viento solar como un escudo natural; sin ese escudo, Marte perdió gran parte de su atmósfera.",
     title: "La Tierra, un planeta blindado",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

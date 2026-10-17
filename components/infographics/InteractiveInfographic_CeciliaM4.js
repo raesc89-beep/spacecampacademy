@@ -153,6 +153,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'nubes-gas-polvo',
+    diagramImage: '/assets/cecilia/infographic_m4/diagram_nubes-gas-polvo.webp',
+    diagramCaption: 'Nebulosas moleculares: inmensos criaderos de gas y polvo interestelar donde nacen las estrellas',
     title: 'Nubes de Gas y Polvo',
     color: '#4A7FB5',
     btnImage: '/assets/cecilia/infographic_m4/btn_nubes-gas-polvo.webp',
@@ -174,6 +176,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nacimiento-estrella',
+    diagramImage: '/assets/cecilia/infographic_m4/diagram_nacimiento-estrella.webp',
+    diagramCaption: 'Colapso gravitatorio de una protoestrella y el encendido de la fusión termonuclear',
     title: 'Nacimiento de una Estrella',
     color: '#D4736A',
     btnImage: '/assets/cecilia/infographic_m4/btn_nacimiento-estrella.webp',
@@ -195,6 +199,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'diagrama-hr',
+    diagramImage: '/assets/cecilia/infographic_m4/diagram_diagrama-hr.webp',
+    diagramCaption: 'El diagrama Hertzsprung-Russell: mapa fundamental de la luminosidad frente a la temperatura estelar',
     title: 'El Diagrama H-R',
     color: '#5A8FC5',
     btnImage: '/assets/cecilia/infographic_m4/btn_diagrama-hr.webp',
@@ -216,6 +222,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'secuencia-principal',
+    diagramImage: '/assets/cecilia/infographic_m4/diagram_secuencia-principal.webp',
+    diagramCaption: 'Vida en la secuencia principal: equilibrio hidrostático entre presión de radiación y gravedad',
     title: 'La Vida en la Secuencia Principal',
     color: '#C46358',
     btnImage: '/assets/cecilia/infographic_m4/btn_secuencia-principal.webp',
@@ -237,6 +245,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gigantes-enanas',
+    diagramImage: '/assets/cecilia/infographic_m4/diagram_gigantes-enanas.webp',
+    diagramCaption: 'Evolución final de estrellas de masa media: gigantes rojas y núcleos remanentes como enanas blancas',
     title: 'Gigantes Rojas y Enanas Blancas',
     color: '#6A9FD5',
     btnImage: '/assets/cecilia/infographic_m4/btn_gigantes-enanas.webp',
@@ -258,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'supernovas-neutrones',
+    diagramImage: '/assets/cecilia/infographic_m4/diagram_supernovas-neutrones.webp',
+    diagramCaption: 'Explosiones de supernova colapsando núcleos masivos en densas estrellas de neutrones y púlsares',
     title: 'Supernovas y Estrellas de Neutrones',
     color: '#B4534A',
     btnImage: '/assets/cecilia/infographic_m4/btn_supernovas-neutrones.webp',
@@ -279,6 +291,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'agujeros-negros-estelares',
+    diagramImage: '/assets/cecilia/infographic_m4/diagram_agujeros-negros-estelares.webp',
+    diagramCaption: 'Agujeros negros de masa estelar capturando materia de estrellas compañeras en sistemas binarios',
     title: 'Agujeros Negros Estelares',
     color: '#3A6FA5',
     btnImage: '/assets/cecilia/infographic_m4/btn_agujeros-negros-estelares.webp',
@@ -733,6 +747,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

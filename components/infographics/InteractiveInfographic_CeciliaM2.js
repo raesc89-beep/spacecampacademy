@@ -142,6 +142,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'luz-estrellas',
+    diagramImage: '/assets/cecilia/infographic_m2/diagram_luz-estrellas.webp',
+    diagramCaption: 'Descomposición de la luz estelar a través de prismas espectrográficos astronómicos',
     title: 'La Luz de las Estrellas',
     color: '#4A7FB5',
     btnImage: '/assets/cecilia/infographic_m2/btn_luz-estrellas.webp',
@@ -163,6 +165,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'espectros-absorcion',
+    diagramImage: '/assets/cecilia/infographic_m2/diagram_espectros-absorcion.webp',
+    diagramCaption: 'Líneas de absorción oscuras: las huellas dactilares químicas de las atmósferas estelares',
     title: 'Espectros de Absorción',
     color: '#D4736A',
     btnImage: '/assets/cecilia/infographic_m2/btn_espectros-absorcion.webp',
@@ -184,6 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'clasificacion-harvard',
+    diagramImage: '/assets/cecilia/infographic_m2/diagram_clasificacion-harvard.webp',
+    diagramCaption: 'La secuencia espectral de Harvard (O, B, A, F, G, K, M): del azul caliente al rojo frío',
     title: 'La Clasificación de Harvard',
     color: '#5A8FC5',
     btnImage: '/assets/cecilia/infographic_m2/btn_clasificacion-harvard.webp',
@@ -205,6 +211,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ecuacion-saha',
+    diagramImage: '/assets/cecilia/infographic_m2/diagram_ecuacion-saha.webp',
+    diagramCaption: 'La ecuación de ionización de Meghnad Saha: temperatura y estados de excitación atómica',
     title: 'La Ecuación de Saha',
     color: '#C46358',
     btnImage: '/assets/cecilia/infographic_m2/btn_ecuacion-saha.webp',
@@ -226,6 +234,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'clave-cecilia',
+    diagramImage: '/assets/cecilia/infographic_m2/diagram_clave-cecilia.webp',
+    diagramCaption: 'La revelación de Cecilia: las diferencias espectrales se deben a la temperatura, no a escasez química',
     title: 'La Clave de Cecilia',
     color: '#6A9FD5',
     btnImage: '/assets/cecilia/infographic_m2/btn_clave-cecilia.webp',
@@ -247,6 +257,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'composicion-estelar',
+    diagramImage: '/assets/cecilia/infographic_m2/diagram_composicion-estelar.webp',
+    diagramCaption: 'El descubrimiento cósmico: las estrellas están compuestas mayoritariamente de hidrógeno y helio',
     title: 'Composición Estelar',
     color: '#B4534A',
     btnImage: '/assets/cecilia/infographic_m2/btn_composicion-estelar.webp',
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'espectroscopia-moderna',
+    diagramImage: '/assets/cecilia/infographic_m2/diagram_espectroscopia-moderna.webp',
+    diagramCaption: 'Espectroscopía astronómica moderna analizando atmósferas de exoplanetas lejanos',
     title: 'Espectroscopía Moderna',
     color: '#3A6FA5',
     btnImage: '/assets/cecilia/infographic_m2/btn_espectroscopia-moderna.webp',
@@ -719,6 +733,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

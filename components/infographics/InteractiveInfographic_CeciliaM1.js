@@ -141,6 +141,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'infancia-wendover',
+    diagramImage: '/assets/cecilia/infographic_m1/diagram_infancia-wendover.webp',
+    diagramCaption: 'Infancia en Wendover: amor temprano por la botánica, la física y el cielo nocturno',
     title: 'Infancia en Wendover',
     color: '#4A7FB5',
     btnImage: '/assets/cecilia/infographic_m1/btn_infancia-wendover.webp',
@@ -162,6 +164,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cambridge-eddington',
+    diagramImage: '/assets/cecilia/infographic_m1/diagram_cambridge-eddington.webp',
+    diagramCaption: 'La conferencia de Arthur Eddington en Cambridge que encendió su vocación astronómica',
     title: 'Cambridge y Eddington',
     color: '#D4736A',
     btnImage: '/assets/cecilia/infographic_m1/btn_cambridge-eddington.webp',
@@ -183,6 +187,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'viaje-harvard',
+    diagramImage: '/assets/cecilia/infographic_m1/diagram_viaje-harvard.webp',
+    diagramCaption: 'Travesía trasatlántica a Harvard en 1923 en busca de oportunidades científicas',
     title: 'El Viaje a Harvard',
     color: '#5A8FC5',
     btnImage: '/assets/cecilia/infographic_m1/btn_viaje-harvard.webp',
@@ -204,6 +210,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tesis-astronomia',
+    diagramImage: '/assets/cecilia/infographic_m1/diagram_tesis-astronomia.webp',
+    diagramCaption: 'La tesis doctoral de 1925: considerada una de las más brillantes de la astronomía',
     title: 'La Tesis que Cambió la Astronomía',
     color: '#C46358',
     btnImage: '/assets/cecilia/infographic_m1/btn_tesis-astronomia.webp',
@@ -225,6 +233,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rechazo-russell',
+    diagramImage: '/assets/cecilia/infographic_m1/diagram_rechazo-russell.webp',
+    diagramCaption: 'El escepticismo inicial de Henry Norris Russell ante la abundancia del hidrógeno estelar',
     title: 'El Rechazo de Russell',
     color: '#6A9FD5',
     btnImage: '/assets/cecilia/infographic_m1/btn_rechazo-russell.webp',
@@ -246,6 +256,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'carrera-harvard',
+    diagramImage: '/assets/cecilia/infographic_m1/diagram_carrera-harvard.webp',
+    diagramCaption: 'Décadas de docencia e investigación observacional estelar en el Observatorio de Harvard',
     title: 'Carrera en Harvard',
     color: '#B4534A',
     btnImage: '/assets/cecilia/infographic_m1/btn_carrera-harvard.webp',
@@ -267,6 +279,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'reconocimiento-tardio',
+    diagramImage: '/assets/cecilia/infographic_m1/diagram_reconocimiento-tardio.webp',
+    diagramCaption: 'En 1956 Cecilia Payne se convierte en la primera mujer catedrática titular en Harvard',
     title: 'El Reconocimiento Tardío',
     color: '#3A6FA5',
     btnImage: '/assets/cecilia/infographic_m1/btn_reconocimiento-tardio.webp',
@@ -715,6 +729,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

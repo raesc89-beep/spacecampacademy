@@ -126,6 +126,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'tragedia-pierre',
+    diagramImage: '/assets/curie/infographic_m3/diagram_tragedia-pierre.webp',
+    diagramCaption: 'La trágica muerte de Pierre Curie en 1906 y el inmenso dolor superado por la vocación',
     title: 'La Tragedia de Pierre',
     color: '#4CAF50',
     btnImage: '/assets/curie/infographic_m3/btn_tragedia-pierre.webp',
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sola-contra-mundo',
+    diagramImage: '/assets/curie/infographic_m3/diagram_sola-contra-mundo.webp',
+    diagramCaption: 'Primera catedrática de la Sorbona: Marie asume la dirección de la cátedra de Pierre',
     title: 'Sola Contra el Mundo',
     color: '#6A1B9A',
     btnImage: '/assets/curie/infographic_m3/btn_sola-contra-mundo.webp',
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'escandalo-langevin',
+    diagramImage: '/assets/curie/infographic_m3/diagram_escandalo-langevin.webp',
+    diagramCaption: 'Campaña de hostigamiento mediático en París superada con dignidad y firmeza moral',
     title: 'El Escándalo Langevin',
     color: '#66BB6A',
     btnImage: '/assets/curie/infographic_m3/btn_escandalo-langevin.webp',
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nobel-quimica-1911',
+    diagramImage: '/assets/curie/infographic_m3/diagram_nobel-quimica-1911.webp',
+    diagramCaption: 'Segundo Premio Nobel en 1911: Marie Curie obtiene el Nobel de Química en solitario',
     title: 'Nobel de Química 1911',
     color: '#7B1FA2',
     btnImage: '/assets/curie/infographic_m3/btn_nobel-quimica-1911.webp',
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'instituto-radio',
+    diagramImage: '/assets/curie/infographic_m3/diagram_instituto-radio.webp',
+    diagramCaption: 'Creación del Instituto del Radio en París: un centro de vanguardia para la investigación',
     title: 'El Instituto del Radio',
     color: '#81C784',
     btnImage: '/assets/curie/infographic_m3/btn_instituto-radio.webp',
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'petites-curies',
+    diagramImage: '/assets/curie/infographic_m3/diagram_petites-curies.webp',
+    diagramCaption: 'Las Petites Curies: ambulancias radiológicas creadas por Marie en la Primera Guerra Mundial',
     title: 'Las Petites Curies',
     color: '#8E24AA',
     btnImage: '/assets/curie/infographic_m3/btn_petites-curies.webp',
@@ -252,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-cientifico',
+    diagramImage: '/assets/curie/infographic_m3/diagram_legado-cientifico.webp',
+    diagramCaption: 'Consolidación de la investigación nuclear y formación de nuevas generaciones de científicos',
     title: 'Legado Científico',
     color: '#388E3C',
     btnImage: '/assets/curie/infographic_m3/btn_legado-cientifico.webp',
@@ -702,6 +716,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

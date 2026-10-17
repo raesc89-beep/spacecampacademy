@@ -143,6 +143,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'pensamiento-feliz',
+    diagramImage: '/assets/einstein/infographic_m3/diagram_pensamiento-feliz.webp',
+    diagramCaption: 'El pensamiento más feliz: el principio de equivalencia entre gravedad y aceleración',
     title: 'El Pensamiento Más Feliz',
     color: '#2C3E6B',
     btnImage: '/assets/einstein/infographic_m3/btn_pensamiento-feliz.webp',
@@ -164,6 +166,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gravedad-geometria',
+    diagramImage: '/assets/einstein/infographic_m3/diagram_gravedad-geometria.webp',
+    diagramCaption: 'La gravedad interpretada como la curvatura geométrica del espaciotiempo',
     title: 'La Gravedad como Geometría',
     color: '#D4A03C',
     btnImage: '/assets/einstein/infographic_m3/btn_gravedad-geometria.webp',
@@ -185,6 +189,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ecuaciones-campo',
+    diagramImage: '/assets/einstein/infographic_m3/diagram_ecuaciones-campo.webp',
+    diagramCaption: 'Las ecuaciones de campo de Einstein que describen la dinámica del universo',
     title: 'Las Ecuaciones de Campo',
     color: '#3A5280',
     btnImage: '/assets/einstein/infographic_m3/btn_ecuaciones-campo.webp',
@@ -206,6 +212,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eclipse-1919',
+    diagramImage: '/assets/einstein/infographic_m3/diagram_eclipse-1919.webp',
+    diagramCaption: 'El eclipse total de 1919: la desviación de la luz estelar confirma la relatividad general',
     title: 'El Eclipse de 1919',
     color: '#C4922E',
     btnImage: '/assets/einstein/infographic_m3/btn_eclipse-1919.webp',
@@ -227,6 +235,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ondas-gravitacionales',
+    diagramImage: '/assets/einstein/infographic_m3/diagram_ondas-gravitacionales.webp',
+    diagramCaption: 'Ondas gravitacionales: ondulaciones en el tejido del espaciotiempo por colisiones cósmicas',
     title: 'Ondas Gravitacionales',
     color: '#4A6694',
     btnImage: '/assets/einstein/infographic_m3/btn_ondas-gravitacionales.webp',
@@ -248,6 +258,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'agujeros-negros',
+    diagramImage: '/assets/einstein/infographic_m3/diagram_agujeros-negros.webp',
+    diagramCaption: 'Agujeros negros: cuerpos de gravedad extrema predichos por la relatividad general',
     title: 'Agujeros Negros',
     color: '#B88420',
     btnImage: '/assets/einstein/infographic_m3/btn_agujeros-negros.webp',
@@ -269,6 +281,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gps-vida-cotidiana',
+    diagramImage: '/assets/einstein/infographic_m3/diagram_gps-vida-cotidiana.webp',
+    diagramCaption: 'El sistema GPS: correcciones relativistas diarias indispensables para la navegación',
     title: 'GPS y Vida Cotidiana',
     color: '#1E2D52',
     btnImage: '/assets/einstein/infographic_m3/btn_gps-vida-cotidiana.webp',
@@ -721,6 +735,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

@@ -135,6 +135,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'observatorio-harvard',
+    diagramImage: '/assets/cecilia/infographic_m3/diagram_observatorio-harvard.webp',
+    diagramCaption: 'El Observatorio de Harvard y el monumental archivo de placas fotográficas de vidrio',
     title: 'El Observatorio de Harvard',
     color: '#4A7FB5',
     btnImage: '/assets/cecilia/infographic_m3/btn_observatorio-harvard.webp',
@@ -156,6 +158,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'computadoras-humanas',
+    diagramImage: '/assets/cecilia/infographic_m3/diagram_computadoras-humanas.webp',
+    diagramCaption: 'Las «Computadoras de Harvard»: astrónomas pioneras analizando el firmamento placa a placa',
     title: 'Las Computadoras Humanas',
     color: '#D4736A',
     btnImage: '/assets/cecilia/infographic_m3/btn_computadoras-humanas.webp',
@@ -177,6 +181,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'williamina-fleming',
+    diagramImage: '/assets/cecilia/infographic_m3/diagram_williamina-fleming.webp',
+    diagramCaption: 'Williamina Fleming: catalogadora de decenas de miles de estrellas y descubridora de la Nebulosa Cabeza de Caballo',
     title: 'Williamina Fleming',
     color: '#5A8FC5',
     btnImage: '/assets/cecilia/infographic_m3/btn_williamina-fleming.webp',
@@ -198,6 +204,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'annie-jump-cannon',
+    diagramImage: '/assets/cecilia/infographic_m3/diagram_annie-jump-cannon.webp',
+    diagramCaption: 'Annie Jump Cannon: creadora del sistema de clasificación espectral con más de 225,000 estrellas',
     title: 'Annie Jump Cannon',
     color: '#C46358',
     btnImage: '/assets/cecilia/infographic_m3/btn_annie-jump-cannon.webp',
@@ -219,6 +227,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'henrietta-swan-leavitt',
+    diagramImage: '/assets/cecilia/infographic_m3/diagram_henrietta-swan-leavitt.webp',
+    diagramCaption: 'Henrietta Swan Leavitt: la relación periodo-luminosidad de las cefeidas que midió el cosmos',
     title: 'Henrietta Swan Leavitt',
     color: '#6A9FD5',
     btnImage: '/assets/cecilia/infographic_m3/btn_henrietta-swan-leavitt.webp',
@@ -240,6 +250,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'antonia-maury',
+    diagramImage: '/assets/cecilia/infographic_m3/diagram_antonia-maury.webp',
+    diagramCaption: 'Antonia Maury: análisis detallado de líneas espectrales y precursora de la clasificación de luminosidad',
     title: 'Antonia Maury',
     color: '#B4534A',
     btnImage: '/assets/cecilia/infographic_m3/btn_antonia-maury.webp',
@@ -261,6 +273,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-computadoras',
+    diagramImage: '/assets/cecilia/infographic_m3/diagram_legado-computadoras.webp',
+    diagramCaption: 'El legado imborrable de las astrónomas de Harvard en la cartografía del universo',
     title: 'El Legado de las Computadoras',
     color: '#3A6FA5',
     btnImage: '/assets/cecilia/infographic_m3/btn_legado-computadoras.webp',
@@ -712,6 +726,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

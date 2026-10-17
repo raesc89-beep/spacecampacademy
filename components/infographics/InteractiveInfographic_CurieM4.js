@@ -154,6 +154,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'barreras-historicas',
+    diagramImage: '/assets/curie/infographic_m4/diagram_barreras-historicas.webp',
+    diagramCaption: 'La superación de barreras institucionales por parte de las mujeres en la historia científica',
     title: 'Barreras Históricas',
     color: '#4CAF50',
     btnImage: '/assets/curie/infographic_m4/btn_barreras-historicas.webp',
@@ -175,6 +177,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'irene-joliot-curie',
+    diagramImage: '/assets/curie/infographic_m4/diagram_irene-joliot-curie.webp',
+    diagramCaption: 'Irène Joliot-Curie y el descubrimiento de la radiactividad artificial (Nobel de Química 1935)',
     title: 'Irène Joliot-Curie',
     color: '#6A1B9A',
     btnImage: '/assets/curie/infographic_m4/btn_irene-joliot-curie.webp',
@@ -196,6 +200,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lise-meitner',
+    diagramImage: '/assets/curie/infographic_m4/diagram_lise-meitner.webp',
+    diagramCaption: 'Lise Meitner y la explicación teórica fundamental del fenómeno de la fisión nuclear',
     title: 'Lise Meitner',
     color: '#66BB6A',
     btnImage: '/assets/curie/infographic_m4/btn_lise-meitner.webp',
@@ -217,6 +223,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rosalind-franklin',
+    diagramImage: '/assets/curie/infographic_m4/diagram_rosalind-franklin.webp',
+    diagramCaption: 'Rosalind Franklin y la Fotografía 51: revelando la estructura helicoidal del ADN',
     title: 'Rosalind Franklin',
     color: '#7B1FA2',
     btnImage: '/assets/curie/infographic_m4/btn_rosalind-franklin.webp',
@@ -238,6 +246,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'chien-shiung-wu',
+    diagramImage: '/assets/curie/infographic_m4/diagram_chien-shiung-wu.webp',
+    diagramCaption: 'Chien-Shiung Wu: física experimental que desentrañó la no conservación de la paridad',
     title: 'Chien-Shiung Wu',
     color: '#81C784',
     btnImage: '/assets/curie/infographic_m4/btn_chien-shiung-wu.webp',
@@ -259,6 +269,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mujeres-nobel-ciencias',
+    diagramImage: '/assets/curie/infographic_m4/diagram_mujeres-nobel-ciencias.webp',
+    diagramCaption: 'Mujeres laureadas con el Premio Nobel en física, química y fisiología a través de la historia',
     title: 'Mujeres Nobel en Ciencias',
     color: '#8E24AA',
     btnImage: '/assets/curie/infographic_m4/btn_mujeres-nobel-ciencias.webp',
@@ -280,6 +292,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'efecto-marie-curie',
+    diagramImage: '/assets/curie/infographic_m4/diagram_efecto-marie-curie.webp',
+    diagramCaption: 'El efecto Marie Curie: inspiración permanente para vocaciones científicas femeninas',
     title: 'El Efecto Marie Curie',
     color: '#388E3C',
     btnImage: '/assets/curie/infographic_m4/btn_efecto-marie-curie.webp',
@@ -730,6 +744,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

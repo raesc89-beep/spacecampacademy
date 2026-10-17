@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "la-pista-de-oersted",
+    diagramImage: '/assets/faraday/infographic_m2/diagram_la-pista-de-oersted.webp',
+    diagramCaption: 'El experimento de Ørsted en 1820: la corriente eléctrica desvía la aguja imantada',
     bannerImage: '/assets/faraday/infographic_m2/banner_la-pista-de-oersted.webp',
     bannerCaption: "En 1820 Hans Christian Ørsted observó que una corriente eléctrica desvía la aguja de una brújula.",
     title: "La pista de Ørsted (1820)",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "el-anillo-de-induccion",
+    diagramImage: '/assets/faraday/infographic_m2/diagram_el-anillo-de-induccion.webp',
+    diagramCaption: 'El anillo de hierro de 1831: el nacimiento de la inducción electromagnética',
     bannerImage: '/assets/faraday/infographic_m2/banner_el-anillo-de-induccion.webp',
     bannerCaption: "El 29 de agosto de 1831 Faraday usó un anillo de hierro con dos bobinas y detectó por primera vez una corriente inducida.",
     title: "El anillo de hierro (29 de agosto de 1831)",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "iman-en-movimiento",
+    diagramImage: '/assets/faraday/infographic_m2/diagram_iman-en-movimiento.webp',
+    diagramCaption: 'Movimiento relativo: un imán entrando en una bobina genera corriente eléctrica',
     bannerImage: '/assets/faraday/infographic_m2/banner_iman-en-movimiento.webp',
     bannerCaption: "El 17 de octubre de 1831 Faraday produjo corriente simplemente metiendo y sacando un imán de una bobina de alambre.",
     title: "Un imán que entra y sale de una bobina",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "disco-de-faraday-primer-generador",
+    diagramImage: '/assets/faraday/infographic_m2/diagram_disco-de-faraday-primer-generador.webp',
+    diagramCaption: 'El disco de cobre giratorio: el primer generador eléctrico continuo de la historia',
     bannerImage: '/assets/faraday/infographic_m2/banner_disco-de-faraday-primer-generador.webp',
     bannerCaption: "El 28 de octubre de 1831 Faraday hizo girar un disco de cobre entre los polos de un imán y obtuvo corriente continua.",
     title: "El disco de Faraday: el primer generador",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ley-de-faraday-y-lenz",
+    diagramImage: '/assets/faraday/infographic_m2/diagram_ley-de-faraday-y-lenz.webp',
+    diagramCaption: 'La ley de Faraday y la oposición del sentido de la corriente inducida de Lenz',
     bannerImage: '/assets/faraday/infographic_m2/banner_ley-de-faraday-y-lenz.webp',
     bannerCaption: "La ley de Faraday dice que el voltaje inducido es proporcional a la rapidez con que cambia el flujo magnético.",
     title: "La ley de Faraday y la regla de Lenz",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "maxwell-y-las-ondas",
+    diagramImage: '/assets/faraday/infographic_m2/diagram_maxwell-y-las-ondas.webp',
+    diagramCaption: 'James Clerk Maxwell formalizando las líneas de fuerza en ecuaciones matemáticas',
     bannerImage: '/assets/faraday/infographic_m2/banner_maxwell-y-las-ondas.webp',
     bannerCaption: "James Clerk Maxwell, nacido en 1831, convirtió las ideas de Faraday en ecuaciones y demostró que la luz es una onda electromagnética.",
     title: "De las líneas de fuerza a las ecuaciones de Maxwell",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "induccion-en-la-vida-diaria",
+    diagramImage: '/assets/faraday/infographic_m2/diagram_induccion-en-la-vida-diaria.webp',
+    diagramCaption: 'La inducción en transformadores, motores y generadores de la red eléctrica moderna',
     bannerImage: '/assets/faraday/infographic_m2/banner_induccion-en-la-vida-diaria.webp',
     bannerCaption: "Cocinas de inducción, cargadores inalámbricos y tarjetas sin contacto funcionan con el principio que Faraday descubrió en 1831.",
     title: "La inducción en casa y en el espacio",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

@@ -137,6 +137,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'becquerel-rayos-uranicos',
+    diagramImage: '/assets/curie/infographic_m2/diagram_becquerel-rayos-uranicos.webp',
+    diagramCaption: 'El descubrimiento de Becquerel: sales de uranio velando placas fotográficas sin luz',
     title: 'Becquerel y los Rayos Uránicos',
     color: '#4CAF50',
     btnImage: '/assets/curie/infographic_m2/btn_becquerel-rayos-uranicos.webp',
@@ -158,6 +160,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eleccion-tema-tesis',
+    diagramImage: '/assets/curie/infographic_m2/diagram_eleccion-tema-tesis.webp',
+    diagramCaption: 'Elección de la radiactividad como tesis doctoral utilizando el electrómetro de Pierre',
     title: 'La Elección del Tema de Tesis',
     color: '#6A1B9A',
     btnImage: '/assets/curie/infographic_m2/btn_eleccion-tema-tesis.webp',
@@ -179,6 +183,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'polonio-por-polonia',
+    diagramImage: '/assets/curie/infographic_m2/diagram_polonio-por-polonia.webp',
+    diagramCaption: 'Descubrimiento del polonio en 1898: bautizado en homenaje a su patria Polonía',
     title: 'Polonio: Por Polonia',
     color: '#66BB6A',
     btnImage: '/assets/curie/infographic_m2/btn_polonio-por-polonia.webp',
@@ -200,6 +206,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'radio-elemento-brilla',
+    diagramImage: '/assets/curie/infographic_m2/diagram_radio-elemento-brilla.webp',
+    diagramCaption: 'El radio: aislamiento de un elemento luminiscente con una radiactividad colosal',
     title: 'Radio: El Elemento que Brilla',
     color: '#7B1FA2',
     btnImage: '/assets/curie/infographic_m2/btn_radio-elemento-brilla.webp',
@@ -221,6 +229,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cobertizo-rue-lhomond',
+    diagramImage: '/assets/curie/infographic_m2/diagram_cobertizo-rue-lhomond.webp',
+    diagramCaption: 'El legendario cobertizo de la Rue Lhomond: toneladas de pechblenda procesadas a mano',
     title: 'El Cobertizo de la Rue Lhomond',
     color: '#81C784',
     btnImage: '/assets/curie/infographic_m2/btn_cobertizo-rue-lhomond.webp',
@@ -242,6 +252,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nobel-fisica-1903',
+    diagramImage: '/assets/curie/infographic_m2/diagram_nobel-fisica-1903.webp',
+    diagramCaption: 'Premio Nobel de Física de 1903 concedido a Marie Curie, Pierre Curie y Henri Becquerel',
     title: 'Nobel de Física 1903',
     color: '#8E24AA',
     btnImage: '/assets/curie/infographic_m2/btn_nobel-fisica-1903.webp',
@@ -263,6 +275,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ciencia-radiactividad',
+    diagramImage: '/assets/curie/infographic_m2/diagram_ciencia-radiactividad.webp',
+    diagramCaption: 'Nacimiento de la ciencia de la radiactividad y el estudio de la desintegración atómica',
     title: 'La Ciencia de la Radiactividad',
     color: '#388E3C',
     btnImage: '/assets/curie/infographic_m2/btn_ciencia-radiactividad.webp',
@@ -712,6 +726,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

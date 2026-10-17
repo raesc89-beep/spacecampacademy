@@ -165,6 +165,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'atomo-por-dentro',
+    diagramImage: '/assets/curie/infographic_m5/diagram_atomo-por-dentro.webp',
+    diagramCaption: 'Estructura interna del núcleo atómico: protones, neutrones y fuerzas nucleares',
     title: 'El Átomo por Dentro',
     color: '#4CAF50',
     btnImage: '/assets/curie/infographic_m5/btn_atomo-por-dentro.webp',
@@ -186,6 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tipos-radiacion',
+    diagramImage: '/assets/curie/infographic_m5/diagram_tipos-radiacion.webp',
+    diagramCaption: 'Diferenciación física de las radiaciones nucleares: partículas alfa, beta y rayos gamma',
     title: 'Tipos de Radiación',
     color: '#6A1B9A',
     btnImage: '/assets/curie/infographic_m5/btn_tipos-radiacion.webp',
@@ -207,6 +211,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'desintegracion-radiactiva',
+    diagramImage: '/assets/curie/infographic_m5/diagram_desintegracion-radiactiva.webp',
+    diagramCaption: 'La ley de desintegración radiactiva y el concepto fundamental de periodo de semidesintegración',
     title: 'Desintegración Radiactiva',
     color: '#66BB6A',
     btnImage: '/assets/curie/infographic_m5/btn_desintegracion-radiactiva.webp',
@@ -228,6 +234,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fision-fusion-nuclear',
+    diagramImage: '/assets/curie/infographic_m5/diagram_fision-fusion-nuclear.webp',
+    diagramCaption: 'Fisión nuclear en reactores y fusión termonuclear en el interior de las estrellas',
     title: 'Fisión y Fusión Nuclear',
     color: '#7B1FA2',
     btnImage: '/assets/curie/infographic_m5/btn_fision-fusion-nuclear.webp',
@@ -249,6 +257,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'medicina-nuclear',
+    diagramImage: '/assets/curie/infographic_m5/diagram_medicina-nuclear.webp',
+    diagramCaption: 'Medicina nuclear moderna: diagnóstico por imagen PET y radioterapia oncológica',
     title: 'Medicina Nuclear',
     color: '#81C784',
     btnImage: '/assets/curie/infographic_m5/btn_medicina-nuclear.webp',
@@ -270,6 +280,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'energia-nuclear',
+    diagramImage: '/assets/curie/infographic_m5/diagram_energia-nuclear.webp',
+    diagramCaption: 'Generación de energía nucleoeléctrica y el resplandor de la radiación Cherenkov',
     title: 'Energía Nuclear',
     color: '#8E24AA',
     btnImage: '/assets/curie/infographic_m5/btn_energia-nuclear.webp',
@@ -291,6 +303,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'seguridad-radiologica',
+    diagramImage: '/assets/curie/infographic_m5/diagram_seguridad-radiologica.webp',
+    diagramCaption: 'Principios de protección radiológica: blindaje de plomo, distancia y dosimetría',
     title: 'Seguridad Radiológica',
     color: '#388E3C',
     btnImage: '/assets/curie/infographic_m5/btn_seguridad-radiologica.webp',
@@ -741,6 +755,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

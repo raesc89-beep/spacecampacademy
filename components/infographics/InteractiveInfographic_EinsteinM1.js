@@ -139,6 +139,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'ulm-1879',
+    diagramImage: '/assets/einstein/infographic_m1/diagram_ulm-1879.webp',
+    diagramCaption: 'Nacimiento en Ulm y el misterio de la brújula magnética que despertó su curiosidad',
     title: 'Ulm, 1879',
     color: '#2C3E6B',
     btnImage: '/assets/einstein/infographic_m1/btn_ulm-1879.webp',
@@ -160,6 +162,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'alumno-rebelde',
+    diagramImage: '/assets/einstein/infographic_m1/diagram_alumno-rebelde.webp',
+    diagramCaption: 'El joven Einstein en Múnich cuestionando los métodos de enseñanza memorística',
     title: 'El Alumno Rebelde',
     color: '#D4A535',
     btnImage: '/assets/einstein/infographic_m1/btn_alumno-rebelde.webp',
@@ -181,6 +185,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'italia-libertad',
+    diagramImage: '/assets/einstein/infographic_m1/diagram_italia-libertad.webp',
+    diagramCaption: 'Caminatas juveniles por los paisajes de Italia y el florecimiento del pensamiento libre',
     title: 'Italia y la Libertad',
     color: '#3A4F7D',
     btnImage: '/assets/einstein/infographic_m1/btn_italia-libertad.webp',
@@ -202,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'politecnica-zurich',
+    diagramImage: '/assets/einstein/infographic_m1/diagram_politecnica-zurich.webp',
+    diagramCaption: 'Años formativos de estudio y experimentos en el Politécnico Federal de Zúrich',
     title: 'La Politécnica de Zúrich',
     color: '#C49225',
     btnImage: '/assets/einstein/infographic_m1/btn_politecnica-zurich.webp',
@@ -223,6 +231,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'oficina-patentes',
+    diagramImage: '/assets/einstein/infographic_m1/diagram_oficina-patentes.webp',
+    diagramCaption: 'El trabajo minucioso evaluando inventos electromagnéticos en la oficina de Berna',
     title: 'La Oficina de Patentes',
     color: '#4A5F8D',
     btnImage: '/assets/einstein/infographic_m1/btn_oficina-patentes.webp',
@@ -244,6 +254,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'amigos-olympia',
+    diagramImage: '/assets/einstein/infographic_m1/diagram_amigos-olympia.webp',
+    diagramCaption: 'La Academia Olympia: debates juveniles sobre filosofía y ciencia en Berna',
     title: 'Los Amigos de Olympia',
     color: '#B88420',
     btnImage: '/assets/einstein/infographic_m1/btn_amigos-olympia.webp',
@@ -265,6 +277,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'visperas-revolucion',
+    diagramImage: '/assets/einstein/infographic_m1/diagram_visperas-revolucion.webp',
+    diagramCaption: 'Paseos nocturnos en Berna reflexionando sobre los relojes y la velocidad de la luz',
     title: 'En Vísperas de la Revolución',
     color: '#1E2D5A',
     btnImage: '/assets/einstein/infographic_m1/btn_visperas-revolucion.webp',
@@ -715,6 +729,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

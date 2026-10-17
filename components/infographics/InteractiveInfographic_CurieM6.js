@@ -141,6 +141,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'ultimos-anios',
+    diagramImage: '/assets/curie/infographic_m6/diagram_ultimos-anios.webp',
+    diagramCaption: 'Últimos años de dedicación al Instituto del Radio y al avance de las aplicaciones médicas',
     title: 'Los Últimos Años de Marie',
     color: '#4CAF50',
     btnImage: '/assets/curie/infographic_m6/btn_ultimos-anios.webp',
@@ -162,6 +164,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'muerte-legado',
+    diagramImage: '/assets/curie/infographic_m6/diagram_muerte-legado.webp',
+    diagramCaption: 'Fallecimiento en 1934 y reconocimiento mundial a su sacrificio por el progreso científico',
     title: 'Muerte y Legado Inmediato',
     color: '#6A1B9A',
     btnImage: '/assets/curie/infographic_m6/btn_muerte-legado.webp',
@@ -183,6 +187,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'el-pantheon',
+    diagramImage: '/assets/curie/infographic_m6/diagram_el-pantheon.webp',
+    diagramCaption: 'El Panteón de París: sepultura de honor para Marie Curie junto a los grandes de Francia',
     title: 'El Panteón',
     color: '#66BB6A',
     btnImage: '/assets/curie/infographic_m6/btn_el-pantheon.webp',
@@ -204,6 +210,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'familia-curie',
+    diagramImage: '/assets/curie/infographic_m6/diagram_familia-curie.webp',
+    diagramCaption: 'La dinastía Curie: una familia científica con cinco Premios Nobel en dos generaciones',
     title: 'La Familia Curie',
     color: '#7B1FA2',
     btnImage: '/assets/curie/infographic_m6/btn_familia-curie.webp',
@@ -225,6 +233,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'curie-cultura',
+    diagramImage: '/assets/curie/infographic_m6/diagram_curie-cultura.webp',
+    diagramCaption: 'Presencia de Marie Curie en la cultura popular, la numismática y la divulgación global',
     title: 'Marie Curie en la Cultura',
     color: '#81C784',
     btnImage: '/assets/curie/infographic_m6/btn_curie-cultura.webp',
@@ -246,6 +256,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'instituto-curie',
+    diagramImage: '/assets/curie/infographic_m6/diagram_instituto-curie.webp',
+    diagramCaption: 'El Instituto Curie en la actualidad: referencia internacional en investigación oncológica',
     title: 'El Instituto Curie Hoy',
     color: '#8E24AA',
     btnImage: '/assets/curie/infographic_m6/btn_instituto-curie.webp',
@@ -267,6 +279,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'inspiracion-eterna',
+    diagramImage: '/assets/curie/infographic_m6/diagram_inspiracion-eterna.webp',
+    diagramCaption: 'El legado inmortal de Marie Curie: pasión por la verdad y servicio a la humanidad',
     title: 'Inspiración Eterna',
     color: '#388E3C',
     btnImage: '/assets/curie/infographic_m6/btn_inspiracion-eterna.webp',
@@ -716,6 +730,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

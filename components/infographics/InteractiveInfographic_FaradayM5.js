@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "de-encuadernador-a-leyenda",
+    diagramImage: '/assets/faraday/infographic_m5/diagram_de-encuadernador-a-leyenda.webp',
+    diagramCaption: 'Las conferencias navideñas de la Royal Institution para el público y la juventud',
     bannerImage: '/assets/faraday/infographic_m5/banner_de-encuadernador-a-leyenda.webp',
     bannerCaption: "Faraday nació pobre en 1791, aprendió leyendo los libros que encuadernaba y llegó a ser uno de los grandes de la ciencia.",
     title: "De encuadernador a leyenda",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "faradio-unidad",
+    diagramImage: '/assets/faraday/infographic_m5/diagram_faradio-unidad.webp',
+    diagramCaption: 'El faradio: la unidad internacional de capacidad eléctrica en honor a Faraday',
     bannerImage: '/assets/faraday/infographic_m5/banner_faradio-unidad.webp',
     bannerCaption: "El faradio (F) es la unidad de capacidad eléctrica del Sistema Internacional: mide cuánta carga guarda un condensador.",
     title: "El faradio: una unidad con su nombre",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "de-lineas-a-ondas",
+    diagramImage: '/assets/faraday/infographic_m5/diagram_de-lineas-a-ondas.webp',
+    diagramCaption: 'De las líneas de fuerza a la predicción intuitiva de las ondas electromagnéticas',
     bannerImage: '/assets/faraday/infographic_m5/banner_de-lineas-a-ondas.webp',
     bannerCaption: "Maxwell convirtió las líneas de fuerza de Faraday en ecuaciones (1865) y descubrió que la luz es una onda electromagnética.",
     title: "De las líneas de fuerza a las ondas",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "einstein-y-faraday",
+    diagramImage: '/assets/faraday/infographic_m5/diagram_einstein-y-faraday.webp',
+    diagramCaption: 'El retrato de Faraday presidía el estudio de Einstein junto a Newton y Maxwell',
     bannerImage: '/assets/faraday/infographic_m5/banner_einstein-y-faraday.webp',
     bannerCaption: "Einstein tenía en su estudio retratos de Faraday, Newton y Maxwell; el problema del imán y el conductor inspiró su relatividad.",
     title: "El retrato en el estudio de Einstein",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "induccion-en-tu-vida",
+    diagramImage: '/assets/faraday/infographic_m5/diagram_induccion-en-tu-vida.webp',
+    diagramCaption: 'La tecnología de inducción que impulsa los motores y la energía en la sociedad actual',
     bannerImage: '/assets/faraday/infographic_m5/banner_induccion-en-tu-vida.webp',
     bannerCaption: "La inducción de 1831 hace funcionar generadores, transformadores, cargadores inalámbricos y motores de autos eléctricos.",
     title: "La inducción mueve el mundo",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "faraday-divulgador",
+    diagramImage: '/assets/faraday/infographic_m5/diagram_faraday-divulgador.webp',
+    diagramCaption: 'La historia química de una vela: obra maestra de la divulgación científica popular',
     bannerImage: '/assets/faraday/infographic_m5/banner_faraday-divulgador.webp',
     bannerCaption: "Faraday impulsó en 1825 las Conferencias de Navidad de la Royal Institution, que aún hoy acercan la ciencia a los jóvenes.",
     title: "El gran divulgador de la ciencia",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "leccion-curiosidad",
+    diagramImage: '/assets/faraday/infographic_m5/diagram_leccion-curiosidad.webp',
+    diagramCaption: 'Curiosidad, rigor experimental y constancia: las grandes lecciones de Faraday',
     bannerImage: '/assets/faraday/infographic_m5/banner_leccion-curiosidad.webp',
     bannerCaption: "Faraday murió el 25 de agosto de 1867; su lección es que la curiosidad y la dedicación superan la falta de privilegios.",
     title: "La lección: curiosidad y constancia",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

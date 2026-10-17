@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "infancia-humilde-en-londres",
+    diagramImage: '/assets/faraday/infographic_m1/diagram_infancia-humilde-en-londres.webp',
+    diagramCaption: 'Una infancia humilde en Londres: repartiendo periódicos en callejuelas victorianas',
     bannerImage: '/assets/faraday/infographic_m1/banner_infancia-humilde-en-londres.webp',
     bannerCaption: "Michael Faraday nació el 22 de septiembre de 1791 en Newington Butts, al sur de Londres, en una familia muy pobre.",
     title: "Una infancia humilde en Londres",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "aprendiz-de-encuadernador",
+    diagramImage: '/assets/faraday/infographic_m1/diagram_aprendiz-de-encuadernador.webp',
+    diagramCaption: 'Aprendiz en la librería de Riebau: encuadernando libros y devorando ciencia',
     bannerImage: '/assets/faraday/infographic_m1/banner_aprendiz-de-encuadernador.webp',
     bannerCaption: "En 1805, con 14 años, Faraday empezó un aprendizaje de siete años como encuadernador con el librero George Riebau.",
     title: "Aprendiz en una librería",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "conversaciones-sobre-quimica",
+    diagramImage: '/assets/faraday/infographic_m1/diagram_conversaciones-sobre-quimica.webp',
+    diagramCaption: 'El libro de Jane Marcet que despertó su vocación científica autodidacta',
     bannerImage: '/assets/faraday/infographic_m1/banner_conversaciones-sobre-quimica.webp',
     bannerCaption: "Conversaciones sobre Química, de Jane Marcet (1805), fue el libro que inspiró a Faraday a dedicarse a la ciencia.",
     title: "El libro que lo cambió todo",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cuaderno-para-davy",
+    diagramImage: '/assets/faraday/infographic_m1/diagram_cuaderno-para-davy.webp',
+    diagramCaption: 'El cuaderno manuscrito de conferencias enviado a Humphry Davy en la Royal Institution',
     bannerImage: '/assets/faraday/infographic_m1/banner_cuaderno-para-davy.webp',
     bannerCaption: "En 1812 Faraday asistió a cuatro conferencias de Humphry Davy y le envió sus notas encuadernadas, de más de 300 páginas.",
     title: "Un cuaderno para Humphry Davy",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "asistente-en-la-royal-institution",
+    diagramImage: '/assets/faraday/infographic_m1/diagram_asistente-en-la-royal-institution.webp',
+    diagramCaption: 'De ayudante de laboratorio a viajero por Europa con los grandes científicos',
     bannerImage: '/assets/faraday/infographic_m1/banner_asistente-en-la-royal-institution.webp',
     bannerCaption: "Entre 1813 y 1815 Faraday viajó por Europa con Davy y conoció a científicos como Ampère y Volta.",
     title: "Asistente y viajero por Europa",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "primeros-grandes-descubrimientos",
+    diagramImage: '/assets/faraday/infographic_m1/diagram_primeros-grandes-descubrimientos.webp',
+    diagramCaption: 'Descubrimiento del benceno y licuefacción pionera de gases en el laboratorio',
     bannerImage: '/assets/faraday/infographic_m1/banner_primeros-grandes-descubrimientos.webp',
     bannerCaption: "En 1821 Faraday logró la primera rotación electromagnética, el principio del motor eléctrico.",
     title: "De ayudante a gran descubridor",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "legado-de-un-autodidacta",
+    diagramImage: '/assets/faraday/infographic_m1/diagram_legado-de-un-autodidacta.webp',
+    diagramCaption: 'El triunfo de la perseverancia: el mayor autodidacta de la historia de la ciencia',
     bannerImage: '/assets/faraday/infographic_m1/banner_legado-de-un-autodidacta.webp',
     bannerCaption: "Faraday impartió 19 series de Conferencias de Navidad para jóvenes; la de 1860 se publicó como La historia química de una vela.",
     title: "El legado de un autodidacta",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

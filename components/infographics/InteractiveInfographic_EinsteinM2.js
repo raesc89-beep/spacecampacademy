@@ -129,6 +129,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'annus-mirabilis',
+    diagramImage: '/assets/einstein/infographic_m2/diagram_annus-mirabilis.webp',
+    diagramCaption: 'El año milagroso 1905: cuatro artículos que revolucionaron la ciencia universal',
     title: 'El Año Milagroso: 1905',
     color: '#2C3E6B',
     btnImage: '/assets/einstein/infographic_m2/btn_annus-mirabilis.webp',
@@ -150,6 +152,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'postulados-relatividad',
+    diagramImage: '/assets/einstein/infographic_m2/diagram_postulados-relatividad.webp',
+    diagramCaption: 'Los dos postulados fundamentales de la teoría de la relatividad especial',
     title: 'Los Dos Postulados',
     color: '#D4A03C',
     btnImage: '/assets/einstein/infographic_m2/btn_postulados-relatividad.webp',
@@ -171,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dilatacion-temporal',
+    diagramImage: '/assets/einstein/infographic_m2/diagram_dilatacion-temporal.webp',
+    diagramCaption: 'Dilatación temporal: el tiempo transcurre a diferente ritmo según el movimiento',
     title: 'Dilatación del Tiempo',
     color: '#3A5280',
     btnImage: '/assets/einstein/infographic_m2/btn_dilatacion-temporal.webp',
@@ -192,6 +198,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'contraccion-longitud',
+    diagramImage: '/assets/einstein/infographic_m2/diagram_contraccion-longitud.webp',
+    diagramCaption: 'Contracción de la longitud: la deformación del espacio a velocidades cercanas a la luz',
     title: 'Contracción de la Longitud',
     color: '#C4922E',
     btnImage: '/assets/einstein/infographic_m2/btn_contraccion-longitud.webp',
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'equivalencia-masa-energia',
+    diagramImage: '/assets/einstein/infographic_m2/diagram_equivalencia-masa-energia.webp',
+    diagramCaption: 'E=mc²: la equivalencia matemática fundamental entre la masa y la energía',
     title: 'E=mc²: Masa y Energía',
     color: '#4A6694',
     btnImage: '/assets/einstein/infographic_m2/btn_equivalencia-masa-energia.webp',
@@ -234,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'evidencia-experimental',
+    diagramImage: '/assets/einstein/infographic_m2/diagram_evidencia-experimental.webp',
+    diagramCaption: 'Confirmación experimental en aceleradores de partículas y física subatómica',
     title: 'Evidencia Experimental',
     color: '#B88420',
     btnImage: '/assets/einstein/infographic_m2/btn_evidencia-experimental.webp',
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'relatividad-cotidiana',
+    diagramImage: '/assets/einstein/infographic_m2/diagram_relatividad-cotidiana.webp',
+    diagramCaption: 'La sincronización relativista aplicada a los sistemas de telecomunicaciones modernos',
     title: 'Relatividad en Tu Vida',
     color: '#1E2D52',
     btnImage: '/assets/einstein/infographic_m2/btn_relatividad-cotidiana.webp',
@@ -702,6 +716,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

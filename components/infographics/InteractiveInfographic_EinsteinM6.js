@@ -134,6 +134,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'constante-cosmologica',
+    diagramImage: '/assets/einstein/infographic_m6/diagram_constante-cosmologica.webp',
+    diagramCaption: 'La constante cosmológica: de la hipótesis del universo estático a la energía oscura',
     title: 'La Constante Cosmológica',
     color: '#2C3E6B',
     btnImage: '/assets/einstein/infographic_m6/btn_constante-cosmologica.webp',
@@ -155,6 +157,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'expansion-universo',
+    diagramImage: '/assets/einstein/infographic_m6/diagram_expansion-universo.webp',
+    diagramCaption: 'El descubrimiento de la expansión de las galaxias por Edwin Hubble y su confirmación',
     title: 'Expansión del Universo',
     color: '#D4A03C',
     btnImage: '/assets/einstein/infographic_m6/btn_expansion-universo.webp',
@@ -176,6 +180,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lentes-gravitacionales',
+    diagramImage: '/assets/einstein/infographic_m6/diagram_lentes-gravitacionales.webp',
+    diagramCaption: 'Lentes gravitacionales: cúmulos de galaxias deformando la luz de astros lejanos',
     title: 'Lentes Gravitacionales',
     color: '#3A5280',
     btnImage: '/assets/einstein/infographic_m6/btn_lentes-gravitacionales.webp',
@@ -197,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'condensado-bose-einstein',
+    diagramImage: '/assets/einstein/infographic_m6/diagram_condensado-bose-einstein.webp',
+    diagramCaption: 'Condensado de Bose-Einstein: materia en estado cuántico colectivo cerca del cero absoluto',
     title: 'Condensado de Bose-Einstein',
     color: '#C4922E',
     btnImage: '/assets/einstein/infographic_m6/btn_condensado-bose-einstein.webp',
@@ -218,6 +226,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cosmologia-moderna',
+    diagramImage: '/assets/einstein/infographic_m6/diagram_cosmologia-moderna.webp',
+    diagramCaption: 'Evolución cósmica moderna desde la gran explosión primordial hasta la actualidad',
     title: 'Cosmología Moderna',
     color: '#4A6694',
     btnImage: '/assets/einstein/infographic_m6/btn_cosmologia-moderna.webp',
@@ -239,6 +249,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'busqueda-unificacion',
+    diagramImage: '/assets/einstein/infographic_m6/diagram_busqueda-unificacion.webp',
+    diagramCaption: 'La búsqueda inconclusa de una teoría del campo unificado para todas las fuerzas',
     title: 'La Búsqueda de la Unificación',
     color: '#B88420',
     btnImage: '/assets/einstein/infographic_m6/btn_busqueda-unificacion.webp',
@@ -260,6 +272,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'einstein-tenia-razon',
+    diagramImage: '/assets/einstein/infographic_m6/diagram_einstein-tenia-razon.webp',
+    diagramCaption: 'Confirmaciones científicas del siglo XXI: la sombra del agujero negro y las ondas gravitacionales',
     title: 'Einstein Tenía Razón',
     color: '#1E2D52',
     btnImage: '/assets/einstein/infographic_m6/btn_einstein-tenia-razon.webp',
@@ -709,6 +723,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

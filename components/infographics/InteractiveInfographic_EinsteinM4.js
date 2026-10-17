@@ -138,6 +138,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'crisis-fisica-clasica',
+    diagramImage: '/assets/einstein/infographic_m4/diagram_crisis-fisica-clasica.webp',
+    diagramCaption: 'La crisis de la física clásica y la solución cuántica de Max Planck',
     title: 'La Crisis de la Física Clásica',
     color: '#2C3E6B',
     btnImage: '/assets/einstein/infographic_m4/btn_crisis-fisica-clasica.webp',
@@ -159,6 +161,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fotones-luz-particulas',
+    diagramImage: '/assets/einstein/infographic_m4/diagram_fotones-luz-particulas.webp',
+    diagramCaption: 'El concepto de fotón: la radiación electromagnética cuantizada en paquetes de energía',
     title: 'Fotones: La Luz Son Partículas',
     color: '#D4A03C',
     btnImage: '/assets/einstein/infographic_m4/btn_fotones-luz-particulas.webp',
@@ -180,6 +184,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'efecto-fotoelectrico',
+    diagramImage: '/assets/einstein/infographic_m4/diagram_efecto-fotoelectrico.webp',
+    diagramCaption: 'El efecto fotoeléctrico: emisión de electrones por interacción con cuantos de luz',
     title: 'El Efecto Fotoeléctrico',
     color: '#3A5280',
     btnImage: '/assets/einstein/infographic_m4/btn_efecto-fotoelectrico.webp',
@@ -201,6 +207,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dualidad-onda-particula',
+    diagramImage: '/assets/einstein/infographic_m4/diagram_dualidad-onda-particula.webp',
+    diagramCaption: 'La misteriosa dualidad onda-corpúsculo en el comportamiento cuántico de la luz',
     title: 'Dualidad Onda-Partícula',
     color: '#C4922E',
     btnImage: '/assets/einstein/infographic_m4/btn_dualidad-onda-particula.webp',
@@ -222,6 +230,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'einstein-vs-bohr',
+    diagramImage: '/assets/einstein/infographic_m4/diagram_einstein-vs-bohr.webp',
+    diagramCaption: 'Los históricos debates de Solvay entre Albert Einstein y Niels Bohr sobre la física cuántica',
     title: 'Einstein vs Bohr',
     color: '#4A6694',
     btnImage: '/assets/einstein/infographic_m4/btn_einstein-vs-bohr.webp',
@@ -243,6 +253,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'entrelazamiento-cuantico',
+    diagramImage: '/assets/einstein/infographic_m4/diagram_entrelazamiento-cuantico.webp',
+    diagramCaption: 'Entrelazamiento cuántico: la conexión instantánea entre partículas correlacionadas',
     title: 'Entrelazamiento Cuántico',
     color: '#B88420',
     btnImage: '/assets/einstein/infographic_m4/btn_entrelazamiento-cuantico.webp',
@@ -264,6 +276,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tecnologia-cuantica-hoy',
+    diagramImage: '/assets/einstein/infographic_m4/diagram_tecnologia-cuantica-hoy.webp',
+    diagramCaption: 'Aplicaciones de la física cuántica: computación cuántica, láseres y sensores avanzados',
     title: 'Tecnología Cuántica Hoy',
     color: '#1E2D52',
     btnImage: '/assets/einstein/infographic_m4/btn_tecnologia-cuantica-hoy.webp',
@@ -713,6 +727,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 
