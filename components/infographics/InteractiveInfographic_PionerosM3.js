@@ -137,6 +137,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "proyecto-mercury",
+    diagramImage: '/assets/pioneros/infographic_m3/diagram_proyecto-mercury.webp',
+    diagramCaption: 'El cohete Atlas impulsando al Friendship 7 hacia la primera órbita estadounidense',
     "bannerImage": "/assets/pioneros/infographic_m3/banner_proyecto-mercury.webp",
     "title": "Proyecto Mercury",
     "color": "#D87D4A",
@@ -165,6 +167,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "friendship-7",
+    diagramImage: '/assets/pioneros/infographic_m3/diagram_friendship-7.webp',
+    diagramCaption: 'La diminuta cápsula Friendship 7 orbitando a 28,000 km/h el 20 de febrero de 1962',
     "bannerImage": "/assets/pioneros/infographic_m3/banner_friendship-7.webp",
     "title": "Friendship 7",
     "color": "#D4B872",
@@ -193,6 +197,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "vuelo-orbital",
+    diagramImage: '/assets/pioneros/infographic_m3/diagram_vuelo-orbital.webp',
+    diagramCaption: 'Las misteriosas «luciérnagas espaciales» que Glenn descubrió en el amanecer orbital',
     "bannerImage": "/assets/pioneros/infographic_m3/banner_vuelo-orbital.webp",
     "title": "El Vuelo Orbital",
     "color": "#80DEEA",
@@ -221,6 +227,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "reentrada-critica",
+    diagramImage: '/assets/pioneros/infographic_m3/diagram_reentrada-critica.webp',
+    diagramCaption: 'Reingreso crítico con el paquete de retrocohetes colocado ante la sospecha de escudo suelto',
     "bannerImage": "/assets/pioneros/infographic_m3/banner_reentrada-critica.webp",
     "title": "Reentrada Crítica",
     "color": "#3949AB",
@@ -249,6 +257,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-glenn",
+    diagramImage: '/assets/pioneros/infographic_m3/diagram_legado-glenn.webp',
+    diagramCaption: 'El homenaje multitudinario a John Glenn y el impulso definitivo a la exploración espacial',
     "bannerImage": "/assets/pioneros/infographic_m3/banner_legado-glenn.webp",
     "title": "Legado de Glenn",
     "color": "#2C3E50",
@@ -277,6 +287,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "glenn-1998",
+    diagramImage: '/assets/pioneros/infographic_m3/diagram_glenn-1998.webp',
+    diagramCaption: 'El regreso triunfal al espacio en 1998 a bordo del transbordador Discovery a los 77 años',
     "bannerImage": "/assets/pioneros/infographic_m3/banner_glenn-1998.webp",
     "title": "Glenn Regresa: 77 Años en Órbita",
     "color": "#42A5F5",
@@ -305,6 +317,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "geopolitica-mercury",
+    diagramImage: '/assets/pioneros/infographic_m3/diagram_geopolitica-mercury.webp',
+    diagramCaption: 'La carrera espacial como símbolo de vanguardia científica y diplomacia tecnológica',
     "bannerImage": "/assets/pioneros/infographic_m3/banner_geopolitica-mercury.webp",
     "title": "Mercury y la Guerra Fría: La Carrera Espacial como Arma",
     "color": "#EF5350",
@@ -751,6 +765,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

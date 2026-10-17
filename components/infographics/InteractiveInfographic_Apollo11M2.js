@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "puerto-espacial-florida",
+    diagramImage: '/assets/apollo11/infographic_m2/diagram_puerto-espacial-florida.webp',
+    diagramCaption: 'El Centro Espacial Kennedy en la costa este de Florida aprovechando la rotación de la Tierra',
     bannerImage: '/assets/apollo11/infographic_m2/banner_puerto-espacial-florida.webp',
     bannerCaption: "Desde Florida, los cohetes despegan hacia el este sobre el océano y aprovechan unos 1,470 km/h de la rotación terrestre.",
     title: "¿Por qué despegar desde Florida?",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "vab-y-crawler",
+    diagramImage: '/assets/apollo11/infographic_m2/diagram_vab-y-crawler.webp',
+    diagramCaption: 'El gigantesco transportador oruga trasladando el cohete hacia la plataforma de despegue',
     bannerImage: '/assets/apollo11/infographic_m2/banner_vab-y-crawler.webp',
     bannerCaption: "El VAB mide 160 m de alto; el Crawler Transporter, de unas 2,700 toneladas, llevaba el cohete a la plataforma a 1.6 km/h.",
     title: "El VAB y el gigante oruga",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "vida-en-columbia",
+    diagramImage: '/assets/apollo11/infographic_m2/diagram_vida-en-columbia.webp',
+    diagramCaption: 'Vida a bordo del Módulo de Mando Columbia durante el crucero translunar de tres días',
     bannerImage: '/assets/apollo11/infographic_m2/banner_vida-en-columbia.webp',
     bannerCaption: "Tres astronautas compartieron unos 6 m³ habitables en el Módulo de Mando Columbia, un cono de 3.9 m de diámetro.",
     title: "La vida a bordo de Columbia",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "katherine-johnson-calculos",
+    diagramImage: '/assets/apollo11/infographic_m2/diagram_katherine-johnson-calculos.webp',
+    diagramCaption: 'Katherine Johnson y los cálculos matemáticos fundamentales de mecánica orbital lunar',
     bannerImage: '/assets/apollo11/infographic_m2/banner_katherine-johnson-calculos.webp',
     bannerCaption: "Katherine Johnson calculó trayectorias para los primeros vuelos tripulados de la NASA y trabajó en los cálculos del programa Apolo.",
     title: "Katherine Johnson y las computadoras humanas",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "navegar-entre-mundos",
+    diagramImage: '/assets/apollo11/infographic_m2/diagram_navegar-entre-mundos.webp',
+    diagramCaption: 'Navegación óptica espacial con sextante para calibrar la posición exacta entre la Tierra y la Luna',
     bannerImage: '/assets/apollo11/infographic_m2/banner_navegar-entre-mundos.webp',
     bannerCaption: "La nave perdió velocidad al alejarse de la Tierra; los astronautas se guiaban con un sextante y 37 estrellas de referencia.",
     title: "Navegar entre la Tierra y la Luna",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "orbita-lunar-loi",
+    diagramImage: '/assets/apollo11/infographic_m2/diagram_orbita-lunar-loi.webp',
+    diagramCaption: 'Frenado en la cara oculta de la Luna e inserción en la órbita de aproximación',
     bannerImage: '/assets/apollo11/infographic_m2/banner_orbita-lunar-loi.webp',
     bannerCaption: "El 19 de julio de 1969, la nave encendió su motor casi 6 minutos detrás de la Luna, sin contacto por radio, para quedar en órbita.",
     title: "Frenar detrás de la Luna",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "camaras-hasselblad",
+    diagramImage: '/assets/apollo11/infographic_m2/diagram_camaras-hasselblad.webp',
+    diagramCaption: 'Cámaras Hasselblad de 70 milímetros con lentes Zeiss capturando la Luna con nitidez histórica',
     bannerImage: '/assets/apollo11/infographic_m2/banner_camaras-hasselblad.webp',
     bannerCaption: "Las cámaras suecas Hasselblad del Apolo 11 usaban película de 70 mm y una placa con cruces para medir distancias en las fotos.",
     title: "Hasselblad: fotografiar otro mundo",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

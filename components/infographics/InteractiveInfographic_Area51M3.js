@@ -129,6 +129,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "a51m3-verano-de-los-platillos",
+    diagramImage: '/assets/area51/infographic_m3/diagram_a51m3-verano-de-los-platillos.webp',
+    diagramCaption: 'El verano de 1947: el avistamiento de Kenneth Arnold y el nacimiento de la fascinación por los ovnis',
     bannerImage: '/assets/area51/infographic_m3/banner_a51m3-verano-de-los-platillos.webp',
     bannerCaption: "El 24 de junio de 1947 el piloto Kenneth Arnold reportó nueve objetos cerca del monte Rainier; la prensa habló de «platillos voladores».",
     title: "1947: el verano de los platillos voladores",
@@ -150,6 +152,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m3-roswell-y-proyecto-mogul",
+    diagramImage: '/assets/area51/infographic_m3/diagram_a51m3-roswell-y-proyecto-mogul.webp',
+    diagramCaption: 'Proyecto Mogul: globos estratosféricos ultrasecretos para detectar pruebas nucleares soviéticas',
     bannerImage: '/assets/area51/infographic_m3/banner_a51m3-roswell-y-proyecto-mogul.webp',
     bannerCaption: "En julio de 1947 el ejército anunció haber recuperado un «disco volador» cerca de Roswell; luego habló de un globo. Era Mogul.",
     title: "Roswell 1947: del «disco volador» al Proyecto Mogul",
@@ -171,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m3-silencio-oficial-y-avistamientos",
+    diagramImage: '/assets/area51/infographic_m3/diagram_a51m3-silencio-oficial-y-avistamientos.webp',
+    diagramCaption: 'Avistamientos en el crepúsculo: aviones U-2 y SR-71 iluminados por el sol a 21 km cuando abajo ya era noche cerrada',
     bannerImage: '/assets/area51/infographic_m3/banner_a51m3-silencio-oficial-y-avistamientos.webp',
     bannerCaption: "El Proyecto Libro Azul analizó 12,618 reportes de OVNIs entre 1952 y 1969; 701 quedaron como «no identificados».",
     title: "El silencio oficial y los cielos de Nevada",
@@ -192,6 +198,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m3-bob-lazar-y-la-evidencia",
+    diagramImage: '/assets/area51/infographic_m3/diagram_a51m3-bob-lazar-y-la-evidencia.webp',
+    diagramCaption: 'Análisis empírico: cotejo de expedientes universitarios y física de partículas frente al mito de S-4',
     bannerImage: '/assets/area51/infographic_m3/banner_a51m3-bob-lazar-y-la-evidencia.webp',
     bannerCaption: "En 1989 Bob Lazar dijo en televisión haber trabajado con naves alienígenas cerca del Área 51; sus afirmaciones nunca se verificaron.",
     title: "Bob Lazar: cómo poner a prueba un testimonio",
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m3-de-la-pantalla-a-storm-area-51",
+    diagramImage: '/assets/area51/infographic_m3/diagram_a51m3-de-la-pantalla-a-storm-area-51.webp',
+    diagramCaption: 'Fenómeno viral de 2019: cómo un meme de internet movilizó a miles de curiosos hacia el desierto de Nevada',
     bannerImage: '/assets/area51/infographic_m3/banner_a51m3-de-la-pantalla-a-storm-area-51.webp',
     bannerCaption: "En 2019 más de dos millones de personas se apuntaron en Facebook a «asaltar» el Área 51; el 20 de septiembre nadie entró.",
     title: "De la pantalla a internet: Storm Area 51",
@@ -234,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m3-la-mente-que-busca-patrones",
+    diagramImage: '/assets/area51/infographic_m3/diagram_a51m3-la-mente-que-busca-patrones.webp',
+    diagramCaption: 'Apophenia y pareidolia: la tendencia del cerebro humano a encontrar rostros y naves en sombras y reflejos',
     bannerImage: '/assets/area51/infographic_m3/banner_a51m3-la-mente-que-busca-patrones.webp',
     bannerCaption: "Nuestro cerebro detecta patrones incluso en el azar; esa habilidad útil también puede llevarnos al pensamiento conspirativo.",
     title: "La mente que busca patrones",
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m3-herramientas-del-cazador-de-mitos",
+    diagramImage: '/assets/area51/infographic_m3/diagram_a51m3-herramientas-del-cazador-de-mitos.webp',
+    diagramCaption: 'El kit del escéptico: navaja de Ockham, evidencia contrastable y el principio de Carl Sagan',
     bannerImage: '/assets/area51/infographic_m3/banner_a51m3-herramientas-del-cazador-de-mitos.webp',
     bannerCaption: "Falsabilidad, navaja de Ockham y la regla de Sagan: «afirmaciones extraordinarias requieren evidencias extraordinarias».",
     title: "Las herramientas del cazador de mitos",
@@ -710,6 +724,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

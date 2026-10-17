@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "despegue-lunar-y-regreso",
+    diagramImage: '/assets/apollo11/infographic_m6/diagram_despegue-lunar-y-regreso.webp',
+    diagramCaption: 'Encendido de inyección hacia la Tierra: despidiéndose de la Luna con rumbo a casa',
     bannerImage: '/assets/apollo11/infographic_m6/banner_despegue-lunar-y-regreso.webp',
     bannerCaption: "El 21 de julio de 1969 el Eagle despegó de la Luna; al día siguiente, el Columbia encendió su motor rumbo a la Tierra.",
     title: "Adiós a la Luna: el viaje de vuelta",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "reentrada-escudo-termico",
+    diagramImage: '/assets/apollo11/infographic_m6/diagram_reentrada-escudo-termico.webp',
+    diagramCaption: 'Atravesando el manto de plasma a 40,000 km/h durante el reingreso atmosférico',
     bannerImage: '/assets/apollo11/infographic_m6/banner_reentrada-escudo-termico.webp',
     bannerCaption: "El 24 de julio de 1969 el Columbia entró en la atmósfera a casi 11 km por segundo, protegido por un escudo térmico ablativo.",
     title: "La reentrada: atravesar el fuego",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "paracaidas-y-amerizaje",
+    diagramImage: '/assets/apollo11/infographic_m6/diagram_paracaidas-y-amerizaje.webp',
+    diagramCaption: 'Apertura de los tres paracaídas principales sobre el océano Pacífico',
     bannerImage: '/assets/apollo11/infographic_m6/banner_paracaidas-y-amerizaje.webp',
     bannerCaption: "El Columbia amerizó el 24 de julio de 1969 a las 16:50 UTC, a unos 24 km del portaaviones USS Hornet.",
     title: "Paracaídas y amerizaje en el Pacífico",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cuarentena-biologica",
+    diagramImage: '/assets/apollo11/infographic_m6/diagram_cuarentena-biologica.webp',
+    diagramCaption: 'El protocolo de cuarentena biológica en la instalación móvil del USS Hornet',
     bannerImage: '/assets/apollo11/infographic_m6/banner_cuarentena-biologica.webp',
     bannerCaption: "Por precaución, los astronautas del Apolo 11 pasaron 21 días aislados, contados desde que dejaron la superficie lunar.",
     title: "Cuarentena: ¿gérmenes de la Luna?",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "rocas-lunares-y-legado",
+    diagramImage: '/assets/apollo11/infographic_m6/diagram_rocas-lunares-y-legado.webp',
+    diagramCaption: 'El legado imperecedero de las rocas lunares estudiadas por generaciones de científicos',
     bannerImage: '/assets/apollo11/infographic_m6/banner_rocas-lunares-y-legado.webp',
     bannerCaption: "El Apolo 11 trajo 21.5 kg de roca y suelo lunar; su estudio cambió lo que sabemos sobre el origen de la Luna.",
     title: "Las rocas lunares y el legado del Apolo 11",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "artemis-gateway-starship",
+    diagramImage: '/assets/apollo11/infographic_m6/diagram_artemis-gateway-starship.webp',
+    diagramCaption: 'El programa Artemis y la estación orbital Lunar Gateway: el regreso sostenible a la Luna',
     bannerImage: '/assets/apollo11/infographic_m6/banner_artemis-gateway-starship.webp',
     bannerCaption: "Artemis es el programa de la NASA para volver a la Luna con astronautas, apoyado en Orion, el Gateway y el Starship de SpaceX.",
     title: "Artemis: el Gateway y el Starship",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "recursos-lunares-y-marte",
+    diagramImage: '/assets/apollo11/infographic_m6/diagram_recursos-lunares-y-marte.webp',
+    diagramCaption: 'Utilización de recursos in situ y robótica autónoma preparando el salto tripulado hacia Marte',
     bannerImage: '/assets/apollo11/infographic_m6/banner_recursos-lunares-y-marte.webp',
     bannerCaption: "Helio-3, hielo de agua, sondas como Voyager 1 y robots en Marte preparan el siguiente gran paso: astronautas en Marte.",
     title: "Más allá del Apolo: recursos, robots y Marte",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

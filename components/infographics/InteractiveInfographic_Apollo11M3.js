@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "modulo-lunar-eagle",
+    diagramImage: '/assets/apollo11/infographic_m3/diagram_modulo-lunar-eagle.webp',
+    diagramCaption: 'El Módulo Lunar Eagle desacoplado en órbita lunar antes de iniciar el descenso final',
     bannerImage: '/assets/apollo11/infographic_m3/banner_modulo-lunar-eagle.webp',
     bannerCaption: "El Módulo Lunar Eagle, construido por Grumman, tenía dos etapas y paredes de aluminio tan finas como varias hojas de papel.",
     title: "Eagle: una nave hecha para el vacío",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "alarmas-1202-software",
+    diagramImage: '/assets/apollo11/infographic_m3/diagram_alarmas-1202-software.webp',
+    diagramCaption: 'Las alarmas de sobrecarga 1202 y la respuesta impecable del software de vuelo de Margaret Hamilton',
     bannerImage: '/assets/apollo11/infographic_m3/banner_alarmas-1202-software.webp',
     bannerCaption: "Durante el descenso, la computadora AGC mostró alarmas por sobrecarga; su software descartó tareas secundarias y siguió guiando.",
     title: "Alarmas 1202 y 1201: el software al rescate",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "aterrizaje-base-tranquilidad",
+    diagramImage: '/assets/apollo11/infographic_m3/diagram_aterrizaje-base-tranquilidad.webp',
+    diagramCaption: 'El Águila se posa suavemente sobre el Mar de la Tranquilidad el 20 de julio de 1969',
     bannerImage: '/assets/apollo11/infographic_m3/banner_aterrizaje-base-tranquilidad.webp',
     bannerCaption: "El 20 de julio de 1969, a las 20:17:40 UTC, el Eagle se posó en el mar de la Tranquilidad tras un tramo final pilotado a mano.",
     title: "«El Águila ha aterrizado»",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "rocas-capsulas-tiempo",
+    diagramImage: '/assets/apollo11/infographic_m3/diagram_rocas-capsulas-tiempo.webp',
+    diagramCaption: 'Muestras de rocas lunares primitivas: cápsulas del tiempo geológico de más de 4,000 millones de años',
     bannerImage: '/assets/apollo11/infographic_m3/banner_rocas-capsulas-tiempo.webp',
     bannerCaption: "El Apolo 11 trajo 21.5 kg de rocas y polvo; la Luna conserva rocas de hace más de 4,000 millones de años porque no recicla su corteza.",
     title: "Rocas lunares: cápsulas del tiempo",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "crateres-cronologia-impactos",
+    diagramImage: '/assets/apollo11/infographic_m3/diagram_crateres-cronologia-impactos.webp',
+    diagramCaption: 'Topografía y cronología de cráteres de impacto que revelan la historia temprana del Sistema Solar',
     bannerImage: '/assets/apollo11/infographic_m3/banner_crateres-cronologia-impactos.webp',
     bannerCaption: "Contando cráteres y comparándolos con la edad de las rocas del Apolo, los científicos estiman la edad de cada región lunar.",
     title: "Cráteres: el reloj de la superficie",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "polos-frios-hielo",
+    diagramImage: '/assets/apollo11/infographic_m3/diagram_polos-frios-hielo.webp',
+    diagramCaption: 'Cráteres polares en sombra perpetua y depósitos de hielo de agua en los polos lunares',
     bannerImage: '/assets/apollo11/infographic_m3/banner_polos-frios-hielo.webp',
     bannerCaption: "En los polos lunares hay cráteres que nunca reciben luz solar, con temperaturas cercanas a -250 °C, donde se conserva hielo de agua.",
     title: "Cráteres en sombra eterna y hielo lunar",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "tubos-lava-polvo-lunar",
+    diagramImage: '/assets/apollo11/infographic_m3/diagram_tubos-lava-polvo-lunar.webp',
+    diagramCaption: 'Tubos de lava subterráneos: cavernas naturales para refugios presurizados protegidos de la radiación',
     bannerImage: '/assets/apollo11/infographic_m3/banner_tubos-lava-polvo-lunar.webp',
     bannerCaption: "Bajo la Luna hay túneles de lava antigua que podrían proteger futuras bases; su polvo afilado olía a pólvora quemada.",
     title: "Tubos de lava y el olor del polvo lunar",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

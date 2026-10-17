@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "infancia-y-paracaidismo",
+    diagramImage: '/assets/pioneros/infographic_m6/diagram_infancia-y-paracaidismo.webp',
+    diagramCaption: 'Una juventud dedicada a la aviación y récords mundiales de paracaidismo en la URSS',
     bannerImage: '/assets/pioneros/infographic_m6/banner_infancia-y-paracaidismo.webp',
     bannerCaption: "Svetlana Savitskaya nació en Moscú el 8 de agosto de 1948, hija de un célebre piloto de caza soviético.",
     title: "Una infancia entre aviones y paracaídas",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "campeona-de-acrobacia",
+    diagramImage: '/assets/pioneros/infographic_m6/diagram_campeona-de-acrobacia.webp',
+    diagramCaption: 'Campeona mundial de acrobacia aérea en 1970 demostrando una destreza de vuelo inigualable',
     bannerImage: '/assets/pioneros/infographic_m6/banner_campeona-de-acrobacia.webp',
     bannerCaption: "En 1970 Savitskaya fue campeona mundial absoluta de acrobacia aérea con aviones de pistón, en Hullavington, Inglaterra.",
     title: "Campeona mundial de acrobacia aérea",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "piloto-de-pruebas-y-records",
+    diagramImage: '/assets/pioneros/infographic_m6/diagram_piloto-de-pruebas-y-records.webp',
+    diagramCaption: 'Piloto de pruebas del legendario MiG-25 con 18 récords mundiales de velocidad y altitud',
     bannerImage: '/assets/pioneros/infographic_m6/banner_piloto-de-pruebas-y-records.webp',
     bannerCaption: "Savitskaya batió numerosos récords con aviones a reacción, entre ellos uno de velocidad femenina de unos 2,683 km/h en 1975.",
     title: "Piloto de pruebas y cazadora de récords",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "seleccion-cosmonauta",
+    diagramImage: '/assets/pioneros/infographic_m6/diagram_seleccion-cosmonauta.webp',
+    diagramCaption: 'Selección para el cuerpo de cosmonautas en 1980 tras superar rigurosos filtros técnicos',
     bannerImage: '/assets/pioneros/infographic_m6/banner_seleccion-cosmonauta.webp',
     bannerCaption: "En 1980 Savitskaya fue elegida en un grupo de mujeres candidatas a cosmonautas del programa espacial soviético.",
     title: "Del cielo al cosmos: la selección",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "soyuz-t7-salyut-7",
+    diagramImage: '/assets/pioneros/infographic_m6/diagram_soyuz-t7-salyut-7.webp',
+    diagramCaption: 'Misión Soyuz T-7 en 1982: la segunda mujer en el espacio y primera en habitar una estación espacial',
     bannerImage: '/assets/pioneros/infographic_m6/banner_soyuz_t7.webp',
     bannerCaption: "El 19 de agosto de 1982 la Soyuz T-7 despegó con Popov, Serebrov y Savitskaya rumbo a la estación espacial Salyut 7.",
     title: "Soyuz T-7: la segunda mujer en el espacio",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "soyuz-t12-caminata-espacial",
+    diagramImage: '/assets/pioneros/infographic_m6/diagram_soyuz-t12-caminata-espacial.webp',
+    diagramCaption: 'La primera caminata espacial de una mujer en 1984: 3 horas y media realizando soldadura en el vacío',
     bannerImage: '/assets/pioneros/infographic_m6/banner_soyuz-t12-caminata-espacial.webp',
     bannerCaption: "El 25 de julio de 1984 Savitskaya salió de la Salyut 7 y se convirtió en la primera mujer en realizar una caminata espacial.",
     title: "Soyuz T-12: la primera caminata espacial de una mujer",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "legado-de-savitskaya",
+    diagramImage: '/assets/pioneros/infographic_m6/diagram_legado-de-savitskaya.webp',
+    diagramCaption: 'El legado imborrable de Savitskaya: pionera en dos vuelos espaciales y trabajo extravehicular',
     bannerImage: '/assets/pioneros/infographic_m6/banner_legado-de-savitskaya.webp',
     bannerCaption: "Savitskaya acumuló unos 19 días y 17 horas en el espacio y recibió dos veces el título de Héroe de la Unión Soviética.",
     title: "Un legado que abrió caminos",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

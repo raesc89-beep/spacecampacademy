@@ -16,6 +16,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "seleccion-primer-grupo",
+    diagramImage: '/assets/pioneros/infographic_m1/diagram_seleccion-primer-grupo.webp',
+    diagramCaption: 'El primer grupo de cosmonautas soviéticos seleccionados para el programa Vostok en 1960',
     "title": "La Selección Secreta: El Grupo de Cosmonautas de 1960",
     "color": "#D4A843",
     "btnImage": "/assets/pioneros/hub_yuri.webp",
@@ -44,6 +46,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "koroliov-diseno-r7",
+    diagramImage: '/assets/pioneros/infographic_m1/diagram_koroliov-diseno-r7.webp',
+    diagramCaption: 'Serguéi Koroliov concibiendo la cápsula esférica Vostok y el cohete lanzador R-7',
     "title": "Koroliov y la Nave Vostok: Genio de la Ingeniería",
     "color": "#80DEEA",
     "btnImage": "/assets/pioneros/hub_yuri.webp",
@@ -72,6 +76,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "lanzamiento-baikonur-1961",
+    diagramImage: '/assets/pioneros/infographic_m1/diagram_lanzamiento-baikonur-1961.webp',
+    diagramCaption: 'El histórico despegue del Vostok 1 el 12 de abril de 1961 al grito de «¡Poyéjaly!»',
     "title": "El Despegue Histórico: ¡Poyéjaly! (12 de Abril de 1961)",
     "color": "#E57373",
     "btnImage": "/assets/pioneros/hub_yuri.webp",
@@ -100,6 +106,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "orbita-108-minutos",
+    diagramImage: '/assets/pioneros/infographic_m1/diagram_orbita-108-minutos.webp',
+    diagramCaption: 'La órbita de 108 minutos: «La Tierra es azul, qué hermosa es»',
     "title": "La Órbita de 108 Minutos: El Hombre en el Cosmos",
     "color": "#BA68C8",
     "btnImage": "/assets/pioneros/hub_yuri.webp",
@@ -128,6 +136,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "reingreso-eyeccion-paracaidas",
+    diagramImage: '/assets/pioneros/infographic_m1/diagram_reingreso-eyeccion-paracaidas.webp',
+    diagramCaption: 'Reingreso y eyección a gran altitud: aterrizaje en paracaídas cerca del río Volga',
     "title": "Reingreso y Eyección: Los Minutos de Máximo Peligro",
     "color": "#FFB74D",
     "btnImage": "/assets/pioneros/hub_yuri.webp",
@@ -156,6 +166,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "telemetria-observaciones",
+    diagramImage: '/assets/pioneros/infographic_m1/diagram_telemetria-observaciones.webp',
+    diagramCaption: 'Telemetría biomédica y primeras anotaciones manuscritas realizadas en ingravidez',
     "title": "La Telemetría y Respuestas Fisiológicas del Vuelo",
     "color": "#4DB6AC",
     "btnImage": "/assets/pioneros/hub_yuri.webp",
@@ -184,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "triunfo-legado-gagarin",
+    diagramImage: '/assets/pioneros/infographic_m1/diagram_triunfo-legado-gagarin.webp',
+    diagramCaption: 'El triunfo universal de Yuri Gagarin: el primer ser humano en navegar el cosmos',
     "title": "El Triunfo Universal: El Hombre que Unió al Planeta",
     "color": "#FFD54F",
     "btnImage": "/assets/pioneros/hub_yuri.webp",
@@ -375,7 +389,7 @@ export default function InteractiveInfographic_PionerosM1() {
               marginBottom: 28,
               position: 'relative',
               cursor: 'zoom-in',
-            }} onClick={() => setLightboxSrc(node.bannerImage)} >
+            }} onClick={() => setLightboxSrc(node.bannerImage)}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={node.bannerImage}
@@ -390,6 +404,45 @@ export default function InteractiveInfographic_PionerosM1() {
               }} />
             </div>
           )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
 
           {/* Titulo con Mini-Avatar Circular */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 24 }}>

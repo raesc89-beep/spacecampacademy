@@ -62,6 +62,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "seleccion",
+    diagramImage: '/assets/pioneros/infographic_m4/diagram_seleccion.webp',
+    diagramCaption: 'La selección pionera de paracaidistas civiles para el programa espacial femenino de 1962',
     "bannerImage": "/assets/pioneros/infographic_m4/banner_seleccion.webp",
     "title": "La Selección y Preparación",
     "color": "#D87D4A",
@@ -90,6 +92,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "nave-vostok",
+    diagramImage: '/assets/pioneros/infographic_m4/diagram_nave-vostok.webp',
+    diagramCaption: 'Preparación de la nave Vostok 6 antes de su vuelo orbital conjunto con Vostok 5',
     "bannerImage": "/assets/pioneros/infographic_m4/banner_nave-vostok.webp",
     "title": "La Nave Vostok 6",
     "color": "#80DEEA",
@@ -118,6 +122,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "orbita",
+    diagramImage: '/assets/pioneros/infographic_m4/diagram_orbita.webp',
+    diagramCaption: 'La gaviota en el cosmos: 48 órbitas terrestres completadas durante casi tres días de vuelo',
     "bannerImage": "/assets/pioneros/infographic_m4/banner_orbita.webp",
     "title": "El Vuelo y la Órbita",
     "color": "#D4B872",
@@ -146,6 +152,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "regreso",
+    diagramImage: '/assets/pioneros/infographic_m4/diagram_regreso.webp',
+    diagramCaption: 'Aterrizaje en las estepas de Kazajistán tras completar más tiempo en el espacio que todos los astronautas de EE.UU. juntos',
     "bannerImage": "/assets/pioneros/infographic_m4/banner_regreso.webp",
     "title": "El Descenso y Regreso",
     "color": "#3949AB",
@@ -174,6 +182,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado",
+    diagramImage: '/assets/pioneros/infographic_m4/diagram_legado.webp',
+    diagramCaption: 'El hito de la primera mujer en viajar al espacio exterior el 16 de junio de 1963',
     "bannerImage": "/assets/pioneros/infographic_m4/banner_legado.webp",
     "title": "El Legado de Valentina",
     "color": "#2C3E50",
@@ -202,6 +212,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tereshkova-post-vuelo",
+    diagramImage: '/assets/pioneros/infographic_m4/diagram_tereshkova-post-vuelo.webp',
+    diagramCaption: 'Trayectoria científica y política: doctora en ingeniería aeronáutica y defensora de la ciencia',
     "bannerImage": "/assets/pioneros/infographic_m4/banner_tereshkova-post-vuelo.webp",
     "title": "Valentina Después del Espacio: Política y Legado",
     "color": "#EC407A",
@@ -230,6 +242,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "mujeres-programa-sovietico",
+    diagramImage: '/assets/pioneros/infographic_m4/diagram_mujeres-programa-sovietico.webp',
+    diagramCaption: 'Las cinco cosmonautas pioneras del grupo femenino de 1962 que rompieron barreras históricas',
     "bannerImage": "/assets/pioneros/infographic_m4/banner_mujeres-programa-sovietico.webp",
     "title": "Las Cinco: Las Otras Candidatas que la Historia Olvidó",
     "color": "#AB47BC",
@@ -684,6 +698,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

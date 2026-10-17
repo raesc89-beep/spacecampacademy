@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "a51m1-punto-secreto-en-el-mapa",
+    diagramImage: '/assets/area51/infographic_m1/diagram_a51m1-punto-secreto-en-el-mapa.webp',
+    diagramCaption: 'Ubicación geográfica de Groom Lake en el desierto de Nevada a 130 km al noroeste de Las Vegas',
     bannerImage: '/assets/area51/infographic_m1/banner_a51m1-punto-secreto-en-el-mapa.webp',
     bannerCaption: "El Área 51 está junto al lago seco Groom, en el sur de Nevada (EE. UU.), a unos 130 km al noroeste de Las Vegas.",
     title: "Un punto secreto en el mapa",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m1-nacida-en-la-guerra-fria",
+    diagramImage: '/assets/area51/infographic_m1/diagram_a51m1-nacida-en-la-guerra-fria.webp',
+    diagramCaption: 'Fundación de la base secreta en abril de 1955 bajo la dirección de Richard Bissell y Kelly Johnson',
     bannerImage: '/assets/area51/infographic_m1/banner_a51m1-nacida-en-la-guerra-fria.webp',
     bannerCaption: "En abril de 1955, enviados de la CIA y de Lockheed eligieron Groom Lake para probar en secreto el avión espía U-2.",
     title: "1955: una base nacida en la Guerra Fría",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m1-u2-espia-de-la-estratosfera",
+    diagramImage: '/assets/area51/infographic_m1/diagram_a51m1-u2-espia-de-la-estratosfera.webp',
+    diagramCaption: 'El avión espía U-2 volando a más de 21 kilómetros de altitud, rozando el límite de la atmósfera',
     bannerImage: '/assets/area51/infographic_m1/banner_a51m1-u2-espia-de-la-estratosfera.webp',
     bannerCaption: "El U-2 volaba a unos 21 km de altura (70,000 pies), por encima del alcance de los cazas soviéticos de 1956.",
     title: "El U-2: el espía que tocaba la estratosfera",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m1-oxcart-y-blackbird-mach-3",
+    diagramImage: '/assets/area51/infographic_m1/diagram_a51m1-oxcart-y-blackbird-mach-3.webp',
+    diagramCaption: 'Proyecto OXCART y el SR-71 Blackbird surcando el cielo a 3,500 km/h con fuselaje de titanio',
     bannerImage: '/assets/area51/infographic_m1/banner_a51m1-oxcart-y-blackbird-mach-3.webp',
     bannerCaption: "El A-12 OXCART voló por primera vez en Groom Lake en 1962; su pariente, el SR-71 Blackbird, superaba Mach 3.",
     title: "OXCART y Blackbird: tres veces la velocidad del sonido",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m1-invisibles-al-radar",
+    diagramImage: '/assets/area51/infographic_m1/diagram_a51m1-invisibles-al-radar.webp',
+    diagramCaption: 'Tecnología de baja observabilidad (Stealth): facetas angulares del prototipo Have Blue y F-117 Nighthawk',
     bannerImage: '/assets/area51/infographic_m1/banner_a51m1-invisibles-al-radar.webp',
     bannerCaption: "Los aviones stealth usan formas y materiales que desvían o absorben las ondas de radar en vez de devolverlas a la antena.",
     title: "Stealth: el arte de no devolver el eco",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m1-la-cia-abre-sus-archivos",
+    diagramImage: '/assets/area51/infographic_m1/diagram_a51m1-la-cia-abre-sus-archivos.webp',
+    diagramCaption: 'Desclasificación histórica en 2013: la CIA publica 400 páginas que confirman la historia de Groom Lake',
     bannerImage: '/assets/area51/infographic_m1/banner_a51m1-la-cia-abre-sus-archivos.webp',
     bannerCaption: "En 2013 la CIA desclasificó su historia de los programas U-2 y OXCART, que reconoce oficialmente el Área 51.",
     title: "2013: la CIA abre sus archivos",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m1-la-base-hoy-y-el-pensamiento-critico",
+    diagramImage: '/assets/area51/infographic_m1/diagram_a51m1-la-base-hoy-y-el-pensamiento-critico.webp',
+    diagramCaption: 'Pensamiento crítico y divulgación: separar la innovación tecnológica documentada de los mitos populares',
     bannerImage: '/assets/area51/infographic_m1/banner_a51m1-la-base-hoy-y-el-pensamiento-critico.webp',
     bannerCaption: "Desde 1996 la ruta estatal 375 de Nevada se llama oficialmente «Extraterrestrial Highway» y pasa por el pueblo de Rachel.",
     title: "La base hoy y las preguntas inteligentes",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

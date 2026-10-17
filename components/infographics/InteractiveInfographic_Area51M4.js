@@ -127,6 +127,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "a51m4-aerodinamica-mach",
+    diagramImage: '/assets/area51/infographic_m4/diagram_a51m4-aerodinamica-mach.webp',
+    diagramCaption: 'Ondas de choque y conos de entrada variables en los motores Pratt & Whitney J58 a velocidad hipersónica',
     bannerImage: '/assets/area51/infographic_m4/banner_a51m4-aerodinamica-mach.webp',
     bannerCaption: "La aerodinámica estudia cómo se mueven los objetos a través del aire; a Mach 3 el aire se comporta de forma muy distinta.",
     title: "Aerodinámica: domar las ondas de choque",
@@ -148,6 +150,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m4-titanio-barrera-termica",
+    diagramImage: '/assets/area51/infographic_m4/diagram_a51m4-titanio-barrera-termica.webp',
+    diagramCaption: 'La barrera térmica: temperaturas superiores a 300°C en el borde de ataque del fuselaje durante el vuelo a Mach 3',
     bannerImage: '/assets/area51/infographic_m4/banner_a51m4-titanio-barrera-termica.webp',
     bannerCaption: "A Mach 3 la compresión del aire calienta la piel del avión a cientos de grados; el titanio resistió donde el aluminio habría fallado.",
     title: "La barrera térmica y el titanio",
@@ -169,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m4-fisica-del-sigilo",
+    diagramImage: '/assets/area51/infographic_m4/diagram_a51m4-fisica-del-sigilo.webp',
+    diagramCaption: 'Ecuaciones de difracción de ondas electromagnéticas: dispersión de señales de radar lejos de la antena receptora',
     bannerImage: '/assets/area51/infographic_m4/banner_a51m4-fisica-del-sigilo.webp',
     bannerCaption: "El radar detecta aviones por los ecos de sus ondas; la tecnología furtiva reduce esos ecos con geometría y materiales especiales.",
     title: "La física del sigilo: esconderse del radar",
@@ -190,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m4-materiales-absorbentes-radar",
+    diagramImage: '/assets/area51/infographic_m4/diagram_a51m4-materiales-absorbentes-radar.webp',
+    diagramCaption: 'Materiales RAM: partículas magnéticas de ferrita que absorben la energía de radiofrecuencia y la disipan',
     bannerImage: '/assets/area51/infographic_m4/banner_a51m4-materiales-absorbentes-radar.webp',
     bannerCaption: "Los materiales absorbentes de radar convierten parte de la energía de las microondas en calor en lugar de reflejarla como eco.",
     title: "Materiales que se «comen» el radar",
@@ -211,6 +219,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m4-navegacion-y-optica",
+    diagramImage: '/assets/area51/infographic_m4/diagram_a51m4-navegacion-y-optica.webp',
+    diagramCaption: 'Navegación astroinercial Nortronics: seguimiento automático de estrellas en pleno día sin depender de señales de radio',
     bannerImage: '/assets/area51/infographic_m4/banner_a51m4-navegacion-y-optica.webp',
     bannerCaption: "Giroscopios, acelerómetros y un rastreador de estrellas guiaban al SR-71; cámaras de precisión fotografiaban desde más de 20 km.",
     title: "Navegar sin GPS y fotografiar desde la estratosfera",
@@ -232,6 +242,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m4-cuerpo-en-la-estratosfera",
+    diagramImage: '/assets/area51/infographic_m4/diagram_a51m4-cuerpo-en-la-estratosfera.webp',
+    diagramCaption: 'Línea de Armstrong a 19 km de altitud: trajes presurizados completos para evitar la ebullición de fluidos corporales',
     bannerImage: '/assets/area51/infographic_m4/banner_a51m4-cuerpo-en-la-estratosfera.webp',
     bannerCaption: "Por encima del límite de Armstrong, unos 19 km, los líquidos corporales expuestos hierven a 37 °C: hacía falta un traje presurizado.",
     title: "El cuerpo humano a 21 kilómetros: trajes de presión",
@@ -253,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m4-metodo-cientifico",
+    diagramImage: '/assets/area51/infographic_m4/diagram_a51m4-metodo-cientifico.webp',
+    diagramCaption: 'El método científico: contrastación empírica, replicabilidad de experimentos y rigor documental',
     bannerImage: '/assets/area51/infographic_m4/banner_a51m4-metodo-cientifico.webp',
     bannerCaption: "Para la ciencia, una afirmación es válida si se apoya en evidencia medible y en resultados que otros pueden repetir y comprobar.",
     title: "Ciencia o ficción: cómo se pone a prueba una afirmación",
@@ -708,6 +722,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

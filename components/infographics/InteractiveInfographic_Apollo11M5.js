@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "a11-motor-ascenso",
+    diagramImage: '/assets/apollo11/infographic_m5/diagram_a11-motor-ascenso.webp',
+    diagramCaption: 'Despegue de la etapa de ascenso desde la Luna utilizando el motor hipergólico de retorno',
     bannerImage: '/assets/apollo11/infographic_m5/banner_a11-motor-ascenso.webp',
     bannerCaption: "El 21 de julio de 1969 a las 17:54 UTC, el motor de ascenso del Eagle elevó a Armstrong y Aldrin hacia la órbita lunar.",
     title: "Un solo motor para despegar",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-discurso-contingencia",
+    diagramImage: '/assets/apollo11/infographic_m5/diagram_a11-discurso-contingencia.webp',
+    diagramCaption: 'El histórico discurso de contingencia preparado por William Safire que afortunadamente nunca se leyó',
     bannerImage: '/assets/apollo11/infographic_m5/banner_a11-discurso-contingencia.webp',
     bannerCaption: "William Safire escribió para Nixon un discurso por si los astronautas quedaban varados; el memorando lleva fecha del 18 de julio de 1969.",
     title: "El discurso que nunca se leyó",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-rendezvous-columbia",
+    diagramImage: '/assets/apollo11/infographic_m5/diagram_a11-rendezvous-columbia.webp',
+    diagramCaption: 'Cita y acoplamiento orbital (rendezvous) entre el Eagle y el Columbia sobre la Luna',
     bannerImage: '/assets/apollo11/infographic_m5/banner_a11-rendezvous-columbia.webp',
     bannerCaption: "Tras unas 28 horas solo en órbita, Michael Collins acopló el Columbia con el Eagle el 21 de julio de 1969 a las 21:35 UTC.",
     title: "Rendezvous con el Columbia",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-margaret-hamilton",
+    diagramImage: '/assets/apollo11/infographic_m5/diagram_a11-margaret-hamilton.webp',
+    diagramCaption: 'Margaret Hamilton y el equipo de ingeniería de software del MIT que aseguró el éxito de la misión',
     bannerImage: '/assets/apollo11/infographic_m5/banner_a11-margaret-hamilton.webp',
     bannerCaption: "Margaret Hamilton dirigió en el MIT el equipo que escribió el software de vuelo de las computadoras del Apollo.",
     title: "Margaret Hamilton y el software",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-agc-circuitos",
+    diagramImage: '/assets/apollo11/infographic_m5/diagram_a11-agc-circuitos.webp',
+    diagramCaption: 'Circuitos integrados pioneros y memoria de núcleos de ferrita de la computadora de guía AGC',
     bannerImage: '/assets/apollo11/infographic_m5/banner_a11-agc-circuitos.webp',
     bannerCaption: "La AGC fue una de las primeras computadoras con circuitos integrados; el Apollo compró gran parte de los primeros chips fabricados en EE. UU.",
     title: "La computadora AGC y los chips",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-traje-ilc",
+    diagramImage: '/assets/apollo11/infographic_m5/diagram_a11-traje-ilc.webp',
+    diagramCaption: 'Manufactura artesanal y de alta precisión de las 21 capas del traje espacial lunar A7L',
     bannerImage: '/assets/apollo11/infographic_m5/banner_a11-traje-ilc.webp',
     bannerCaption: "ILC, empresa que fabricaba ropa interior de la marca Playtex, ganó el contrato de los trajes lunares A7L del Apollo.",
     title: "El traje A7L de ILC Dover",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-telemetria-archivo",
+    diagramImage: '/assets/apollo11/infographic_m5/diagram_a11-telemetria-archivo.webp',
+    diagramCaption: 'Consolas del Centro de Control de Misión en Houston registrando telemetría biomédica y de vuelo',
     bannerImage: '/assets/apollo11/infographic_m5/banner_a11-telemetria-archivo.webp',
     bannerCaption: "Sensores en el pecho de los astronautas enviaban su ritmo cardíaco a Houston; hoy los documentos del Apollo son públicos.",
     title: "Telemetría médica y archivos abiertos",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

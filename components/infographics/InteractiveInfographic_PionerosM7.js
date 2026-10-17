@@ -61,6 +61,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "sally-ride",
+    diagramImage: '/assets/pioneros/infographic_m7/diagram_sally-ride.webp',
+    diagramCaption: 'De atleta universitaria y doctora en astrofísica a la clase de astronautas de la NASA en 1978',
     "bannerImage": "/assets/pioneros/infographic_m7/banner_sally-ride.webp",
     "title": "Primeros Pasos",
     "color": "#D87D4A",
@@ -89,6 +91,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sts-7",
+    diagramImage: '/assets/pioneros/infographic_m7/diagram_sts-7.webp',
+    diagramCaption: 'Lanzamiento histórico del Challenger en la misión STS-7: Sally Ride la primera mujer estadounidense en el espacio',
     "bannerImage": "/assets/pioneros/infographic_m7/banner_sts-7.webp",
     "title": "Misión STS-7",
     "color": "#D4B872",
@@ -117,6 +121,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "shuttle-program",
+    diagramImage: '/assets/pioneros/infographic_m7/diagram_shuttle-program.webp',
+    diagramCaption: 'El transbordador espacial como plataforma científica de vanguardia en órbita baja terrestre',
     "bannerImage": "/assets/pioneros/infographic_m7/banner_shuttle-program.webp",
     "title": "Transbordador Espacial",
     "color": "#80DEEA",
@@ -145,6 +151,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "robotic-arm",
+    diagramImage: '/assets/pioneros/infographic_m7/diagram_robotic-arm.webp',
+    diagramCaption: 'Operación pionera del brazo robótico Canadarm para despliegue y captura de satélites',
     "bannerImage": "/assets/pioneros/infographic_m7/banner_robotic-arm.webp",
     "title": "El Brazo Robótico",
     "color": "#3949AB",
@@ -173,6 +181,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "challenger",
+    diagramImage: '/assets/pioneros/infographic_m7/diagram_challenger.webp',
+    diagramCaption: 'La Comisión Rogers: rigor técnico e integridad de Sally Ride identificando la causa del accidente',
     "bannerImage": "/assets/pioneros/infographic_m7/banner_challenger.webp",
     "title": "Comisión Rogers",
     "color": "#2C3E50",
@@ -201,6 +211,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legacy",
+    diagramImage: '/assets/pioneros/infographic_m7/diagram_legacy.webp',
+    diagramCaption: 'El legado educativo de Sally Ride Science inspirando vocaciones científicas en jóvenes de todo el mundo',
     "bannerImage": "/assets/pioneros/infographic_m7/banner_legacy.webp",
     "title": "Legado e Inspiración",
     "color": "#D87D4A",
@@ -229,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "women-stem-legacy",
+    diagramImage: '/assets/pioneros/infographic_m7/diagram_women-stem-legacy.webp',
+    diagramCaption: 'El \'Efecto Sally Ride\': miles de mujeres liderando la investigación científica aeroespacial global',
     "bannerImage": "/assets/pioneros/infographic_m7/banner_women-stem-legacy.webp",
     "title": "Mujeres en STEM: El Efecto Sally Ride",
     "color": "#9E4FD4",
@@ -665,6 +679,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "cohete-saturn-v",
+    diagramImage: '/assets/apollo8/infographic_m2/diagram_cohete-saturn-v.webp',
+    diagramCaption: 'Corte transversal del lanzador Saturn V: desglose por etapas S-IC, S-II y S-IVB con criogenia',
     bannerImage: '/assets/apollo8/infographic_m2/banner_cohete-saturn-v.webp',
     bannerCaption: "El Saturn V, desarrollado por el equipo de Wernher von Braun, medía unos 111 metros y tenía tres etapas.",
     title: "El Saturn V de Wernher von Braun",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "nave-mando-servicio",
+    diagramImage: '/assets/apollo8/infographic_m2/diagram_nave-mando-servicio.webp',
+    diagramCaption: 'Corte técnico del Módulo de Mando y Servicio (CSM): cabina presurizada, propulsión SPS y pilas de combustible',
     bannerImage: '/assets/apollo8/infographic_m2/banner_nave-mando-servicio.webp',
     bannerCaption: "La tripulación vivió seis días en el Módulo de Mando, una cápsula cónica de unos 3.9 metros de diámetro.",
     title: "El Módulo de Mando y Servicio",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "traje-a7l",
+    diagramImage: '/assets/apollo8/infographic_m2/diagram_traje-a7l.webp',
+    diagramCaption: 'Capas estructurales y sistema de presurización del traje espacial intravehicular Apolo A7L',
     bannerImage: '/assets/apollo8/infographic_m2/banner_traje-a7l.webp',
     bannerCaption: "Los trajes A7L se fabricaron en Dover, Delaware, y se describen con hasta 21 capas de materiales distintos.",
     title: "El Traje Espacial A7L",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "computadora-agc",
+    diagramImage: '/assets/apollo8/infographic_m2/diagram_computadora-agc.webp',
+    diagramCaption: 'Arquitectura de la computadora de guía AGC: teclado DSKY, memoria de cuerda y telescopio de navegación',
     bannerImage: '/assets/apollo8/infographic_m2/banner_computadora-agc.webp',
     bannerCaption: "La computadora AGC, diseñada en el MIT, usó circuitos integrados y memoria tejida a mano para guiar la nave.",
     title: "La Computadora de Guía Apollo",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "comunicaciones-tierra",
+    diagramImage: '/assets/apollo8/infographic_m2/diagram_comunicaciones-tierra.webp',
+    diagramCaption: 'Red del Espacio Profundo (DSN) y sistema de banda S unificada para telemetría, voz y datos de vuelo',
     bannerImage: '/assets/apollo8/infographic_m2/banner_comunicaciones-tierra.webp',
     bannerCaption: "Antenas en California, España y Australia mantuvieron el contacto; la voz tardaba 1.3 segundos en llegar desde la Luna.",
     title: "Hablar con la Tierra a 384,000 Kilómetros",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "reingreso-escudo",
+    diagramImage: '/assets/apollo8/infographic_m2/diagram_reingreso-escudo.webp',
+    diagramCaption: 'Reingreso atmosférico hiperbólico: comportamiento térmico ablativo del escudo AVCOAT a 40,000 km/h',
     bannerImage: '/assets/apollo8/infographic_m2/banner_reingreso-escudo.webp',
     bannerCaption: "La cápsula entró en la atmósfera a casi 40,000 km/h y un escudo térmico ablativo la protegió del calor.",
     title: "Reingreso a Casi 40,000 km/h",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "camara-y-legado",
+    diagramImage: '/assets/apollo8/infographic_m2/diagram_camara-y-legado.webp',
+    diagramCaption: 'Despiece óptico y mecánico de la cámara Hasselblad 500EL modificada para fotografía espacial lunar',
     bannerImage: '/assets/apollo8/infographic_m2/banner_camara-y-legado.webp',
     bannerCaption: "Una cámara Hasselblad captó Earthrise; unas 400,000 personas trabajaron en el programa Apollo en su momento de mayor actividad.",
     title: "La Cámara de Earthrise y 400,000 Personas",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

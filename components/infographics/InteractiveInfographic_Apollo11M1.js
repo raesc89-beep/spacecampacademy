@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "saturn-v-gigante",
+    diagramImage: '/assets/apollo11/infographic_m1/diagram_saturn-v-gigante.webp',
+    diagramCaption: 'El colosal Saturn V en la plataforma 39A antes del despegue lunar',
     bannerImage: '/assets/apollo11/infographic_m1/banner_saturn-v-gigante.webp',
     bannerCaption: "El Saturn V medía 110.6 m, pesaba unas 2,900 toneladas al despegar y casi el 90 % de esa masa era combustible.",
     title: "El gigante de 110 metros",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "etapa-s-ic-motores-f1",
+    diagramImage: '/assets/apollo11/infographic_m1/diagram_etapa-s-ic-motores-f1.webp',
+    diagramCaption: 'Los cinco motores F-1 de la primera etapa liberando 34 millones de newtons de empuje',
     bannerImage: '/assets/apollo11/infographic_m1/banner_etapa-s-ic-motores-f1.webp',
     bannerCaption: "Cinco motores F-1 producían unos 34 millones de newtons de empuje y vaciaban la primera etapa en unos 2 minutos y 40 segundos.",
     title: "La etapa S-IC y los cinco motores F-1",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "etapas-superiores-hidrogeno",
+    diagramImage: '/assets/apollo11/infographic_m1/diagram_etapas-superiores-hidrogeno.webp',
+    diagramCaption: 'Separación de la etapa S-II y encendido criogénico de hidrógeno líquido camino a la órbita',
     bannerImage: '/assets/apollo11/infographic_m1/banner_etapas-superiores-hidrogeno.webp',
     bannerCaption: "Las etapas superiores quemaban hidrógeno líquido a -253 °C, un combustible ligero que da más impulso por cada kilogramo.",
     title: "S-II y S-IVB: la fuerza del hidrógeno",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "unidad-instrumentos-tli",
+    diagramImage: '/assets/apollo11/infographic_m1/diagram_unidad-instrumentos-tli.webp',
+    diagramCaption: 'La unidad de instrumentos calculando la inyección translunar precisa hacia la órbita de la Luna',
     bannerImage: '/assets/apollo11/infographic_m1/banner_unidad-instrumentos-tli.webp',
     bannerCaption: "La Unidad de Instrumentos de IBM guiaba el cohete; el encendido de inyección translunar duró unos 5 minutos y 47 segundos.",
     title: "El cerebro del cohete y el salto a la Luna",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "fisica-del-cohete",
+    diagramImage: '/assets/apollo11/infographic_m1/diagram_fisica-del-cohete.webp',
+    diagramCaption: 'Leyes de Newton aplicadas al vuelo orbital: acción, reacción y velocidad de escape',
     bannerImage: '/assets/apollo11/infographic_m1/banner_fisica-del-cohete.webp',
     bannerCaption: "La tercera ley de Newton y la ecuación de Tsiolkovski explican por qué los cohetes empujan en el vacío y se dividen en etapas.",
     title: "Acción, reacción y la ecuación del cohete",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "legado-trece-vuelos",
+    diagramImage: '/assets/apollo11/infographic_m1/diagram_legado-trece-vuelos.webp',
+    diagramCaption: 'El legado de trece lanzamientos impecables del programa Saturn V en la historia aeroespacial',
     bannerImage: '/assets/apollo11/infographic_m1/banner_legado-trece-vuelos.webp',
     bannerCaption: "Entre 1967 y 1973 el Saturn V voló 13 veces: llevó 24 astronautas hacia la Luna y lanzó la estación Skylab.",
     title: "Trece vuelos y un legado",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "mas-alla-propulsion",
+    diagramImage: '/assets/apollo11/infographic_m1/diagram_mas-alla-propulsion.webp',
+    diagramCaption: 'De la Luna a Marte: la evolución de los sistemas de propulsión interplanetaria',
     bannerImage: '/assets/apollo11/infographic_m1/banner_mas-alla-propulsion.webp',
     bannerCaption: "Voyager 1, LightSail 2 y la fusión nuclear muestran cómo la propulsión espacial sigue el camino que abrió el Saturn V.",
     title: "De la Luna a las estrellas",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

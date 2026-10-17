@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "a11-escalerilla-eagle",
+    diagramImage: '/assets/apollo11/infographic_m4/diagram_a11-escalerilla-eagle.webp',
+    diagramCaption: 'El descenso por la escalerilla del Eagle hacia la superficie lunar',
     bannerImage: '/assets/apollo11/infographic_m4/banner_a11-escalerilla-eagle.webp',
     bannerCaption: "El 21 de julio de 1969, a las 02:56:15 UTC, Neil Armstrong apoyó su bota izquierda en el Mar de la Tranquilidad.",
     title: "Bajando la escalerilla del Eagle",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-pequeno-paso",
+    diagramImage: '/assets/apollo11/infographic_m4/diagram_a11-pequeno-paso.webp',
+    diagramCaption: 'La huella sobre el polvo lunar y el primer paso histórico de la humanidad en otro mundo',
     bannerImage: '/assets/apollo11/infographic_m4/banner_a11-pequeno-paso.webp',
     bannerCaption: "Armstrong describió el suelo como un polvo fino que se pegaba en capas a sus botas, «como carbón en polvo».",
     title: "Un pequeño paso y el suelo lunar",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-aldrin-bandera",
+    diagramImage: '/assets/apollo11/infographic_m4/diagram_a11-aldrin-bandera.webp',
+    diagramCaption: 'Despliegue de la bandera y placa conmemorativa de paz en la Base Tranquilidad',
     bannerImage: '/assets/apollo11/infographic_m4/banner_a11-aldrin-bandera.webp',
     bannerCaption: "Buzz Aldrin bajó unos 19 minutos después de Armstrong y describió el paisaje como «desolación magnífica».",
     title: "Aldrin, la bandera y la placa",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-muestras-easep",
+    diagramImage: '/assets/apollo11/infographic_m4/diagram_a11-muestras-easep.webp',
+    diagramCaption: 'Experimentos científicos EASEP: sismómetro pasivo y retrorreflector láser lunar',
     bannerImage: '/assets/apollo11/infographic_m4/banner_a11-muestras-easep.webp',
     bannerCaption: "La tripulación reunió 21.5 kg de muestras e instaló un sismómetro y un retrorreflector láser que todavía se usa.",
     title: "Rocas lunares y experimentos",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-columbia-cabina",
+    diagramImage: '/assets/apollo11/infographic_m4/diagram_a11-columbia-cabina.webp',
+    diagramCaption: 'Michael Collins manteniendo la órbita solitaria a bordo del Columbia a 100 km de altitud',
     bannerImage: '/assets/apollo11/infographic_m4/banner_a11-columbia-cabina.webp',
     bannerCaption: "El módulo de mando Columbia medía 3.9 m de diámetro en su base y fue la única parte del Apollo 11 que volvió a la Tierra.",
     title: "Columbia: la cabina de regreso",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-escudo-avcoat",
+    diagramImage: '/assets/apollo11/infographic_m4/diagram_a11-escudo-avcoat.webp',
+    diagramCaption: 'El escudo térmico de AVCOAT disipando miles de grados durante el retorno a 40,000 km/h',
     bannerImage: '/assets/apollo11/infographic_m4/banner_a11-escudo-avcoat.webp',
     bannerCaption: "El escudo de AVCOAT se quemaba de forma controlada; en la reentrada la tripulación soportó un máximo de unos 6.5 G.",
     title: "El escudo AVCOAT y los 6.5 G",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a11-amerizaje-hornet",
+    diagramImage: '/assets/apollo11/infographic_m4/diagram_a11-amerizaje-hornet.webp',
+    diagramCaption: 'Amerizaje seguro en las aguas del océano Pacífico cerca del portaaviones USS Hornet',
     bannerImage: '/assets/apollo11/infographic_m4/banner_a11-amerizaje-hornet.webp',
     bannerCaption: "El 24 de julio de 1969, el Columbia amerizó en el Pacífico a unos 24 km del portaaviones USS Hornet.",
     title: "Amerizaje junto al USS Hornet",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

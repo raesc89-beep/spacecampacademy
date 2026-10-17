@@ -749,7 +749,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               borderBottom: `1px solid ${node.color}25`
             }}>
               <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+                🎨 ILUSTRACIÓN CIENTÍFICA
               </span>
               <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
             </div>

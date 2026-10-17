@@ -94,6 +94,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "mision-vosjod",
+    diagramImage: '/assets/pioneros/infographic_m5/diagram_mision-vosjod.webp',
+    diagramCaption: 'La esclusa inflable Volga desplegándose desde la nave Voskhod 2 el 18 de marzo de 1965',
     "bannerImage": "/assets/pioneros/infographic_m5/banner_mision-vosjod.webp",
     "title": "La Misión Vosjod 2",
     "color": "#D87D4A",
@@ -122,6 +124,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "traje-berkut",
+    diagramImage: '/assets/pioneros/infographic_m5/diagram_traje-berkut.webp',
+    diagramCaption: 'El traje espacial Berkut: primer traje diseñado para la exposición directa al vacío cósmico',
     "bannerImage": "/assets/pioneros/infographic_m5/banner_traje-berkut.webp",
     "title": "El Traje Espacial Berkut",
     "color": "#D4B872",
@@ -150,6 +154,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "caminata-historica",
+    diagramImage: '/assets/pioneros/infographic_m5/diagram_caminata-historica.webp',
+    diagramCaption: 'La primera caminata espacial de la historia: 12 minutos flotando en el vacío del cosmos',
     "bannerImage": "/assets/pioneros/infographic_m5/banner_caminata-historica.webp",
     "title": "La Caminata Histórica",
     "color": "#80DEEA",
@@ -178,6 +184,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "regreso-peligroso",
+    diagramImage: '/assets/pioneros/infographic_m5/diagram_regreso-peligroso.webp',
+    diagramCaption: 'Aterrizaje forzoso en la taiga siberiana: supervivencia en el bosque nevado de los Urales',
     "bannerImage": "/assets/pioneros/infographic_m5/banner_regreso-peligroso.webp",
     "title": "Un Regreso al Límite",
     "color": "#3949AB",
@@ -206,6 +214,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "leonov-regreso-dificil",
+    diagramImage: '/assets/pioneros/infographic_m5/diagram_leonov-regreso-dificil.webp',
+    diagramCaption: 'La angustiosa reentrada a la esclusa reduciendo la presión barométrica del traje al límite',
     "bannerImage": "/assets/pioneros/infographic_m5/banner_leonov-regreso-dificil.webp",
     "title": "Los 12 Minutos que Casi Matan a Leonov",
     "color": "#EF5350",
@@ -234,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "berkut-ingenieria",
+    diagramImage: '/assets/pioneros/infographic_m5/diagram_berkut-ingenieria.webp',
+    diagramCaption: 'Ingeniería del traje Berkut: sellado hermético contra temperaturas de -100°C a +120°C',
     "bannerImage": "/assets/pioneros/infographic_m5/banner_berkut-ingenieria.webp",
     "title": "El Traje Berkut: Ingeniería del Primer Paso al Vacío",
     "color": "#66BB6A",
@@ -262,6 +274,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "fisica-eva",
+    diagramImage: '/assets/pioneros/infographic_m5/diagram_fisica-eva.webp',
+    diagramCaption: 'La física de la actividad extravehicular: inercia, conservación de momento y velocidad orbital',
     "bannerImage": "/assets/pioneros/infographic_m5/banner_fisica-eva.webp",
     "title": "La Física de Caminar en el Vacío",
     "color": "#9C27B0",
@@ -683,6 +697,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

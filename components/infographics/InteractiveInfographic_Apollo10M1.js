@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "mision-tipo-f",
+    diagramImage: '/assets/apollo10/infographic_m1/diagram_mision-tipo-f.webp',
+    diagramCaption: 'Matriz de misiones de la NASA: perfil del vuelo Tipo F como ensayo general completo previo al alunizaje',
     bannerImage: '/assets/apollo10/infographic_m1/banner_mision-tipo-f.webp',
     bannerCaption: "Apollo 10, en mayo de 1969, repitió cada paso de un alunizaje excepto tocar la superficie de la Luna.",
     title: "¿Por Qué un Ensayo General?",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "tripulacion-veterana",
+    diagramImage: '/assets/apollo10/infographic_m1/diagram_tripulacion-veterana.webp',
+    diagramCaption: 'Procedimientos y coordinación operativa de la tripulación más experimentada: Stafford, Young y Cernan',
     bannerImage: '/assets/apollo10/infographic_m1/banner_tripulacion-veterana.webp',
     bannerCaption: "Thomas Stafford fue comandante, John Young piloto del Módulo de Mando y Eugene Cernan piloto del Módulo Lunar.",
     title: "Stafford, Young y Cernan",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "snoopy-charlie-brown",
+    diagramImage: '/assets/apollo10/infographic_m1/diagram_snoopy-charlie-brown.webp',
+    diagramCaption: 'Configuración y desvinculación orbital del Módulo de Mando «Charlie Brown» y el Módulo Lunar «Snoopy»',
     bannerImage: '/assets/apollo10/infographic_m1/banner_snoopy-charlie-brown.webp',
     bannerCaption: "El Módulo Lunar se llamó Snoopy y el Módulo de Mando Charlie Brown, por los personajes de Peanuts de Charles M. Schulz.",
     title: "Snoopy y Charlie Brown en el Espacio",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "lanzamiento-mayo",
+    diagramImage: '/assets/apollo10/infographic_m1/diagram_lanzamiento-mayo.webp',
+    diagramCaption: 'Cartografía de las 31 órbitas lunares y reconocimiento fotográfico del Sitio de Alunizaje 2',
     bannerImage: '/assets/apollo10/infographic_m1/banner_lanzamiento-mayo.webp',
     bannerCaption: "Apollo 10 despegó el 18 de mayo de 1969 desde la plataforma 39B y completó 31 órbitas alrededor de la Luna.",
     title: "Despegue y 31 Órbitas Lunares",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "descenso-15-km",
+    diagramImage: '/assets/apollo10/infographic_m1/diagram_descenso-15-km.webp',
+    diagramCaption: 'Perfil de descenso DOI: Snoopy rozando las crestas lunares a solo 15.6 kilómetros de altitud',
     bannerImage: '/assets/apollo10/infographic_m1/banner_descenso-15-km.webp',
     bannerCaption: "El 22 de mayo de 1969 Snoopy bajó a unos 15 km de la superficie y sobrevoló el sitio de alunizaje de Apollo 11.",
     title: "Snoopy a 15 Kilómetros de la Luna",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "giro-y-reunion",
+    diagramImage: '/assets/apollo10/infographic_m1/diagram_giro-y-reunion.webp',
+    diagramCaption: 'Separación de la etapa de ascenso, resolución de la guiñada inesperada y cita orbital con Charlie Brown',
     bannerImage: '/assets/apollo10/infographic_m1/banner_giro-y-reunion.webp',
     bannerCaption: "Un interruptor en posición equivocada hizo girar a Snoopy sin control; Stafford lo estabilizó en segundos.",
     title: "El Giro de Snoopy y la Reunión",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "record-velocidad",
+    diagramImage: '/assets/apollo10/infographic_m1/diagram_record-velocidad.webp',
+    diagramCaption: 'Récord histórico de velocidad para una nave tripulada: 39,897 km/h durante el reingreso terrestre',
     bannerImage: '/assets/apollo10/infographic_m1/banner_record-velocidad.webp',
     bannerCaption: "Al volver el 26 de mayo de 1969, Apollo 10 alcanzó 39,897 km/h, la mayor velocidad registrada por seres humanos.",
     title: "Récord de Velocidad y Regreso",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

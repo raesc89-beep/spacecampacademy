@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "a51m5-nace-skunk-works",
+    diagramImage: '/assets/area51/infographic_m5/diagram_a51m5-nace-skunk-works.webp',
+    diagramCaption: 'Origen del Skunk Works en 1943: el equipo de Kelly Johnson construyendo el caza a reacción XP-80 en tiempo récord',
     bannerImage: '/assets/area51/infographic_m5/banner_a51m5-nace-skunk-works.webp',
     bannerCaption: "Kelly Johnson creó en 1943 la división secreta de Lockheed que terminó el prototipo XP-80, su primer caza a reacción, en 143 días.",
     title: "1943: nace el Skunk Works",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m5-reglas-de-kelly",
+    diagramImage: '/assets/area51/infographic_m5/diagram_a51m5-reglas-de-kelly.webp',
+    diagramCaption: 'Las 14 reglas de gestión de Kelly Johnson: equipos reducidos, comunicación directa y autonomía técnica',
     bannerImage: '/assets/area51/infographic_m5/banner_a51m5-reglas-de-kelly.webp',
     bannerCaption: "Kelly Johnson escribió 14 reglas para dirigir proyectos: equipos pequeños, autoridad clara, pocos informes y confianza mutua.",
     title: "Las 14 reglas de Kelly",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m5-u2-contra-el-reloj",
+    diagramImage: '/assets/area51/infographic_m5/diagram_a51m5-u2-contra-el-reloj.webp',
+    diagramCaption: 'El desarrollo relámpago del U-2: de los primeros planos a su vuelo inaugural en Groom Lake en solo 8 meses',
     bannerImage: '/assets/area51/infographic_m5/banner_a51m5-u2-contra-el-reloj.webp',
     bannerCaption: "Aprobado a finales de 1954, el U-2 hizo su primer vuelo en agosto de 1955, unos ocho meses después, en Groom Lake, Nevada.",
     title: "El U-2: un avión espía contra el reloj",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m5-aterrizar-un-u2",
+    diagramImage: '/assets/area51/infographic_m5/diagram_a51m5-aterrizar-un-u2.webp',
+    diagramCaption: 'Aterrizaje del U-2 guiado por coche de persecución: asistencia visual por radio a 220 km/h sobre la pista',
     bannerImage: '/assets/area51/infographic_m5/banner_a51m5-aterrizar-un-u2.webp',
     bannerCaption: "El U-2 aterriza guiado por radio desde un coche deportivo conducido por otro piloto de U-2, que le indica la altura sobre la pista.",
     title: "Aterrizar un U-2: el coche persecutor",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m5-janet-y-secreto",
+    diagramImage: '/assets/area51/infographic_m5/diagram_a51m5-janet-y-secreto.webp',
+    diagramCaption: 'La flota aérea JANET: vuelos civiles diarios trasladando científicos e ingenieros a Groom Lake y Tonopah',
     bannerImage: '/assets/area51/infographic_m5/banner_a51m5-janet-y-secreto.webp',
     bannerCaption: "Los trabajadores de Groom Lake vuelan desde Las Vegas en aviones Boeing 737 blancos con franja roja que usan el indicativo JANET.",
     title: "JANET y la vida bajo secreto",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m5-ben-rich-liderazgo",
+    diagramImage: '/assets/area51/infographic_m5/diagram_a51m5-ben-rich-liderazgo.webp',
+    diagramCaption: 'Ben Rich al frente del Skunk Works: liderando la revolución del sigilo con el prototipo Have Blue y el F-117',
     bannerImage: '/assets/area51/infographic_m5/banner_a51m5-ben-rich-liderazgo.webp',
     bannerCaption: "Ben Rich sucedió a Kelly Johnson en 1975 y dirigió el Skunk Works durante el desarrollo del demostrador Have Blue y del F-117.",
     title: "Ben Rich: liderar una nueva generación",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m5-legado-innovacion",
+    diagramImage: '/assets/area51/infographic_m5/diagram_a51m5-legado-innovacion.webp',
+    diagramCaption: 'El legado de la innovación aeroespacial: cómo la audacia técnica transformó la historia de la aviación mundial',
     bannerImage: '/assets/area51/infographic_m5/banner_a51m5-legado-innovacion.webp',
     bannerCaption: "Hoy «skunkworks» designa a cualquier equipo pequeño y autónomo que desarrolla un proyecto innovador al margen de la burocracia.",
     title: "El legado: equipos pequeños, grandes ideas",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

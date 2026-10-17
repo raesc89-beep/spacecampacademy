@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "a51m2-ver-sin-ser-visto",
+    diagramImage: '/assets/area51/infographic_m2/diagram_a51m2-ver-sin-ser-visto.webp',
+    diagramCaption: 'Historia de la fotografía aérea de gran altitud: cámaras panorámicas Hycon y película Eastman Kodak',
     bannerImage: '/assets/area51/infographic_m2/banner_a51m2-ver-sin-ser-visto.webp',
     bannerCaption: "Entre 1955 y los años 80, el Área 51 fue banco de pruebas de los aviones espía y furtivos más avanzados de EE. UU.",
     title: "La carrera por ver sin ser visto",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m2-u2-alas-de-planeador",
+    diagramImage: '/assets/area51/infographic_m2/diagram_a51m2-u2-alas-de-planeador.webp',
+    diagramCaption: 'Aerodinámica de planeador con envergadura de 31 metros diseñada para la delgada atmósfera estratosférica',
     bannerImage: '/assets/area51/infographic_m2/banner_a51m2-u2-alas-de-planeador.webp',
     bannerCaption: "Para sostenerse en el aire tan delgado a 21 km, el U-2 necesitaba alas enormes, muy poco peso y un combustible especial.",
     title: "U-2: alas de planeador a 21 kilómetros",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m2-derribo-de-powers-1960",
+    diagramImage: '/assets/area51/infographic_m2/diagram_a51m2-derribo-de-powers-1960.webp',
+    diagramCaption: '1 de mayo de 1960: el derribo del U-2 de Gary Powers por un misil SA-2 Guideline soviético',
     bannerImage: '/assets/area51/infographic_m2/banner_a51m2-derribo-de-powers-1960.webp',
     bannerCaption: "El 1 de mayo de 1960 un misil soviético derribó el U-2 de Francis Gary Powers cerca de Sverdlovsk; Powers fue capturado vivo.",
     title: "1 de mayo de 1960: el derribo de Powers",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m2-familia-blackbird",
+    diagramImage: '/assets/area51/infographic_m2/diagram_a51m2-familia-blackbird.webp',
+    diagramCaption: 'La familia Blackbird: del monoplaza secreto A-12 de la CIA al biplaza SR-71 de la Fuerza Aérea',
     bannerImage: '/assets/area51/infographic_m2/banner_a51m2-familia-blackbird.webp',
     bannerCaption: "El SR-71 Blackbird volaba a más de Mach 3 y a unos 25 km de altura; se construyeron 32 ejemplares.",
     title: "A-12 y SR-71: la familia Blackbird",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m2-titanio-metal-contra-el-calor",
+    diagramImage: '/assets/area51/infographic_m2/diagram_a51m2-titanio-metal-contra-el-calor.webp',
+    diagramCaption: 'Metalurgia aeroespacial: aleaciones de titanio Beta-120 para soportar la fricción cinética a Mach 3.2',
     bannerImage: '/assets/area51/infographic_m2/banner_a51m2-titanio-metal-contra-el-calor.webp',
     bannerCaption: "Más del 80 % de la estructura del SR-71 era de titanio, un metal ligero que resiste temperaturas superiores a 300 °C.",
     title: "Titanio: el metal que soportó el calor",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m2-have-blue-f117-b2",
+    diagramImage: '/assets/area51/infographic_m2/diagram_a51m2-have-blue-f117-b2.webp',
+    diagramCaption: 'Evolución del sigilo: del algoritmo matemático de Pyotr Ufimtsev a los bombarderos invisibles B-2',
     bannerImage: '/assets/area51/infographic_m2/banner_a51m2-have-blue-f117-b2.webp',
     bannerCaption: "El F-117 Nighthawk, probado en Groom Lake desde 1981, fue el primer avión operativo diseñado con tecnología stealth.",
     title: "Del Have Blue al F-117 y el B-2",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "a51m2-drones-secretos-y-legado",
+    diagramImage: '/assets/area51/infographic_m2/diagram_a51m2-drones-secretos-y-legado.webp',
+    diagramCaption: 'Drones de reconocimiento D-21 y el legado de vehículos no tripulados desarrollados en secreto',
     bannerImage: '/assets/area51/infographic_m2/banner_a51m2-drones-secretos-y-legado.webp',
     bannerCaption: "El D-21, un dron supersónico sin piloto de los años 60, se lanzaba desde un M-21 de la familia Blackbird o desde un B-52.",
     title: "Drones, secretos y legado",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

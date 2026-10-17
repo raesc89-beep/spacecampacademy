@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "contexto-1968",
+    diagramImage: '/assets/apollo8/infographic_m1/diagram_contexto-1968.webp',
+    diagramCaption: 'Contexto histórico de la carrera espacial en 1968: misiones Zond soviéticas vs. programa Apolo',
     bannerImage: '/assets/apollo8/infographic_m1/banner_contexto-1968.webp',
     bannerCaption: "En 1968 Estados Unidos y la Unión Soviética competían por llegar primero a la Luna en medio de guerras y protestas.",
     title: "1968: Un Año Difícil y una Carrera Espacial",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "decision-agosto",
+    diagramImage: '/assets/apollo8/infographic_m1/diagram_decision-agosto.webp',
+    diagramCaption: 'Diagrama de decisión estratégica de la NASA: envío del Apolo 8 a la órbita lunar sin módulo de alunizaje',
     bannerImage: '/assets/apollo8/infographic_m1/banner_decision-agosto.webp',
     bannerCaption: "El retraso del Módulo Lunar llevó a la NASA a cambiar el plan de Apollo 8 y enviarlo directamente a la órbita de la Luna.",
     title: "La Decisión Audaz de Agosto de 1968",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "tripulacion",
+    diagramImage: '/assets/apollo8/infographic_m1/diagram_tripulacion.webp',
+    diagramCaption: 'Distribución de puestos y tareas de la tripulación: Borman (Comandante), Lovell (Navegación) y Anders (Sistemas)',
     bannerImage: '/assets/apollo8/infographic_m1/banner_tripulacion.webp',
     bannerCaption: "Frank Borman fue comandante, James Lovell piloto del Módulo de Mando y William Anders piloto del Módulo Lunar.",
     title: "Borman, Lovell y Anders: La Tripulación",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "lanzamiento-viaje",
+    diagramImage: '/assets/apollo8/infographic_m1/diagram_lanzamiento-viaje.webp',
+    diagramCaption: 'Trayectoria de inyección translunar (TLI) y maniobras de corrección a medio camino hacia la Luna',
     bannerImage: '/assets/apollo8/infographic_m1/banner_lanzamiento-viaje.webp',
     bannerCaption: "El 21 de diciembre de 1968 un Saturn V llevó por primera vez a una tripulación; el viaje a la Luna duró cerca de 3 días.",
     title: "Despegue y Viaje de Tres Días",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "orbita-lunar",
+    diagramImage: '/assets/apollo8/infographic_m1/diagram_orbita-lunar.webp',
+    diagramCaption: 'Inserción en órbita lunar (LOI): encendido del motor SPS en la cara oculta y zona de silencio de radio',
     bannerImage: '/assets/apollo8/infographic_m1/banner_orbita-lunar.webp',
     bannerCaption: "El motor que frenó a Apollo 8 para entrar en órbita lunar se encendió detrás de la Luna, sin comunicación con la Tierra.",
     title: "Detrás de la Luna: La Inserción en Órbita",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "nochebuena-genesis",
+    diagramImage: '/assets/apollo8/infographic_m1/diagram_nochebuena-genesis.webp',
+    diagramCaption: 'Esquema del sistema de telecomunicaciones y cámara de TV en la histórica transmisión de Nochebuena',
     bannerImage: '/assets/apollo8/infographic_m1/banner_nochebuena-genesis.webp',
     bannerCaption: "En la Nochebuena de 1968 la tripulación leyó los primeros versículos del Génesis en una transmisión desde la órbita lunar.",
     title: "La Transmisión de Nochebuena",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "earthrise-regreso",
+    diagramImage: '/assets/apollo8/infographic_m1/diagram_earthrise-regreso.webp',
+    diagramCaption: 'Geometría orbital de la fotografía Earthrise y maniobra de inyección de regreso a la Tierra (TEI)',
     bannerImage: '/assets/apollo8/infographic_m1/banner_earthrise-regreso.webp',
     bannerCaption: "William Anders fotografió la Tierra saliendo sobre el horizonte lunar; la nave amerizó en el Pacífico el 27 de diciembre.",
     title: "Earthrise y el Regreso a Casa",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

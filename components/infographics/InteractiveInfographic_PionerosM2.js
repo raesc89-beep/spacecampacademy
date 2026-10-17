@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "de-new-hampshire-a-la-marina",
+    diagramImage: '/assets/pioneros/infographic_m2/diagram_de-new-hampshire-a-la-marina.webp',
+    diagramCaption: 'La formación de Alan Shepard como piloto naval y aviador de pruebas',
     bannerImage: '/assets/pioneros/infographic_m2/banner_de-new-hampshire-a-la-marina.webp',
     bannerCaption: "Alan Shepard nació el 18 de noviembre de 1923 en East Derry, New Hampshire, y se formó como piloto en la Marina.",
     title: "De New Hampshire a la Marina",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "los-siete-del-mercury",
+    diagramImage: '/assets/pioneros/infographic_m2/diagram_los-siete-del-mercury.webp',
+    diagramCaption: 'Los siete astronautas pioneros seleccionados para el Proyecto Mercury en 1959',
     bannerImage: '/assets/pioneros/infographic_m2/banner_los-siete-del-mercury.webp',
     bannerCaption: "El 9 de abril de 1959, la NASA presentó a sus siete primeros astronautas; Alan Shepard era uno de ellos.",
     title: "Los Siete del Mercury",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "freedom-7-cohete-y-capsula",
+    diagramImage: '/assets/pioneros/infographic_m2/diagram_freedom-7-cohete-y-capsula.webp',
+    diagramCaption: 'El cohete Mercury-Redstone y la cápsula Freedom 7 en la plataforma LC-5',
     bannerImage: '/assets/pioneros/infographic_m2/banner_freedom-7-cohete-y-capsula.webp',
     bannerCaption: "La cápsula Freedom 7 viajó sobre un cohete Mercury-Redstone, derivado de un misil y adaptado para llevar personas.",
     title: "Freedom 7: el cohete y la cápsula",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "quince-minutos-que-cambiaron-la-historia",
+    diagramImage: '/assets/pioneros/infographic_m2/diagram_quince-minutos-que-cambiaron-la-historia.webp',
+    diagramCaption: 'Los 15 minutos y 22 segundos del primer vuelo espacial estadounidense el 5 de mayo de 1961',
     bannerImage: '/assets/pioneros/infographic_m2/banner_quince-minutos-que-cambiaron-la-historia.webp',
     bannerCaption: "El 5 de mayo de 1961, Freedom 7 hizo un vuelo suborbital de 15 minutos y 22 segundos que alcanzó 187 km de altura.",
     title: "15 minutos y 22 segundos que cambiaron la historia",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "meniere-el-astronauta-en-tierra",
+    diagramImage: '/assets/pioneros/infographic_m2/diagram_meniere-el-astronauta-en-tierra.webp',
+    diagramCaption: 'Superando la enfermedad de Ménière: perseverancia médica para volver a volar al espacio',
     bannerImage: '/assets/pioneros/infographic_m2/banner_meniere-el-astronauta-en-tierra.webp',
     bannerCaption: "La enfermedad de Ménière, un trastorno del oído interno que causa vértigo, dejó a Shepard sin volar durante años.",
     title: "La enfermedad de Ménière: un astronauta en tierra",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "apolo-14-regreso-a-la-luna",
+    diagramImage: '/assets/pioneros/infographic_m2/diagram_apolo-14-regreso-a-la-luna.webp',
+    diagramCaption: 'Apolo 14 en 1971: Alan Shepard camina sobre la Luna a los 47 años en Fra Mauro',
     bannerImage: '/assets/pioneros/infographic_m2/banner_apolo-14-regreso-a-la-luna.webp',
     bannerCaption: "Apolo 14 despegó el 31 de enero de 1971; Shepard, con 47 años, alunizó en Fra Mauro el 5 de febrero con Edgar Mitchell.",
     title: "Apolo 14: el regreso a la Luna",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "golf-lunar-y-legado",
+    diagramImage: '/assets/pioneros/infographic_m2/diagram_golf-lunar-y-legado.webp',
+    diagramCaption: 'Los célebres tiros de golf en la Luna demostrando la baja gravedad lunar (1/6 G)',
     bannerImage: '/assets/pioneros/infographic_m2/banner_golf-lunar-y-legado.webp',
     bannerCaption: "El 6 de febrero de 1971, Shepard golpeó dos pelotas de golf en la Luna con una cabeza de hierro 6 unida a una herramienta.",
     title: "Golf en la Luna y un legado de perseverancia",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (
