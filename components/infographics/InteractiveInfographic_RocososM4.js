@@ -97,6 +97,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#2A9D8F",
     "btnImage": "/assets/rocosos/infographic_m4/btn_tectonica-de-placas.webp",
     "image": "/assets/rocosos/infographic_m4/hero_tectonica-de-placas.webp",
+    "diagramImage": "/assets/rocosos/infographic_m4/diagram_tectonica-de-placas.webp",
+    "diagramCaption": "Tectónica de placas activa: subducción litosférica, convección del manto y dorsales oceánicas",
     "content": [
       "La Tierra es el único cuerpo planetario conocido en todo el Sistema Solar que posee un régimen geodinámico de tectónica de placas activo y continuo. A diferencia de las litosferas de placa única rígida e inmóvil que recubren a Mercurio, Marte o la Luna, la litosfera terrestre se encuentra fragmentada en más de una docena de placas tectónicas rígidas mayores y menores que flotan, colisionan y se deslizan sobre la astenosfera viscosa subyacente.",
       "El motor termodinámico primordial que impulsa este movimiento es la convección térmica del manto terrestre combinada con la fuerza dominante de tirón de placa (slab pull): cuando una placa oceánica fría y densa envejece, se hidrata y se metamorfosea en eclogita densa, hundiéndose gravitatoriamente en las zonas de subducción hacia las profundidades del manto, arrastrando tras de sí al resto del lecho oceánico con una fuerza colosal.",
@@ -125,6 +127,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#48CAE4",
     "btnImage": "/assets/rocosos/infographic_m4/btn_escudo-magnetico.webp",
     "image": "/assets/rocosos/infographic_m4/hero_escudo-magnetico.webp",
+    "diagramImage": "/assets/rocosos/infographic_m4/diagram_escudo-magnetico.webp",
+    "diagramCaption": "Geodinamo del núcleo externo terrestre y magnetosfera con cinturones de radiación de Van Allen",
     "content": [
       "A dos mil novecientos kilómetros de profundidad bajo la superficie terrestre, en la frontera entre el manto silicatado y el núcleo, opera el generador electromagnético más poderoso de los mundos terrestres: la geodinamo. Este mecanismo físico se aloja en el núcleo externo, una colosal capa de dos mil doscientos sesenta kilómetros de espesor compuesta por una aleación líquida supercaliente de hierro y níquel enriquecida con elementos ligeros como silicio y azufre.",
       "La combinación de la convección térmica vigorosa provocada por el enfriamiento del planeta y la rápida rotación de la Tierra sobre su eje (fuerza de Coriolis) organiza el flujo del hierro metálico fundido en columnas cilíndricas helicoidales paralelas al eje de rotación. Al ser el hierro un fluido conductor de electricidad, este movimiento turbulento genera gigantescas corrientes eléctricas que autoinducen y sostienen un potente campo magnético dipolar.",
@@ -153,6 +157,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#52B788",
     "btnImage": "/assets/rocosos/infographic_m4/btn_termostato-carbono.jpg",
     "image": "/assets/rocosos/infographic_m4/hero_termostato-carbono.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m4/diagram_termostato-carbono.webp",
+    "diagramCaption": "Termostato biogeoquímico silicato-carbonato: secuestro mineral de carbono y reciclaje volcánico",
     "content": [
       "Uno de los misterios más profundos de la astrofísica planetaria es cómo la Tierra ha logrado conservar océanos de agua líquida y temperaturas habitables casi ininterrumpidas a lo largo de cuatro mil millones de años, a pesar de que el Sol primitivo era entre un veinticinco y un treinta por ciento menos luminoso en el Arcaico (la paradoja del Sol joven y débil). La clave de esta asombrosa estabilidad climática reside en el ciclo geoquímico silicato-carbonato.",
       "Formalizado en 1981 por los geocientíficos James Walker, Paul Hays y James Kasting, este ciclo biogeoquímico funciona como un termostato de retroalimentación negativa autorregulador a escala planetaria. El dióxido de carbono presente en el aire se disuelve en las gotas de lluvia formando ácido carbónico diluido; este ácido ataca químicamente las rocas continentales de silicato (meteorización química), liberando iones de calcio y bicarbonato solubles.",
@@ -181,6 +187,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#0077B6",
     "btnImage": "/assets/rocosos/infographic_m4/btn_oceanos-y-agua.webp",
     "image": "/assets/rocosos/infographic_m4/hero_oceanos-y-agua.webp",
+    "diagramImage": "/assets/rocosos/infographic_m4/diagram_oceanos-y-agua.webp",
+    "diagramCaption": "Circulación termohalina global y redistribución de calor en los 1,332 millones de km³ de océanos",
     "content": [
       "Observada desde los confines del espacio interplanetario, la Tierra se distingue como un fascinante 'punto azul pálido'. Es el único mundo del Sistema Solar donde el agua no solo existe en abundancia, sino que coexiste de manera termodinámicamente estable en sus tres estados de agregación fundamentales: hielo sólido en las banquisas y glaciares, vapor gaseoso en la atmósfera y agua líquida en la colosal hidrosfera oceánica.",
       "Los océanos cubren aproximadamente el setenta punto ocho por ciento de la superficie del globo terrestre (más de trescientos sesenta y un millones de kilómetros cuadrados) y albergan un volumen líquido colosal de mil trescientos treinta y dos millones de kilómetros cúbicos de agua. Su profundidad media se sitúa en tres mil seiscientos ochenta y dos metros, alcanzando su abismo máximo en la fosa de las Marianas a casi once mil metros.",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#E9C46A",
     "btnImage": "/assets/rocosos/infographic_m4/btn_la-luna-estabilizadora.jpg",
     "image": "/assets/rocosos/infographic_m4/hero_la-luna-estabilizadora.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m4/diagram_la-luna-estabilizadora.webp",
+    "diagramCaption": "Estabilización gravitatoria de la oblicuidad terrestre en 23.5° y mareas por el influjo lunar",
     "content": [
       "La Tierra cuenta con una compañera orbital anómalamente gigantesca en relación con el tamaño de los planetas rocosos del Sistema Solar. Con un diámetro ecuatorial de tres mil cuatrocientos setenta y cuatro kilómetros (más del veintisiete por ciento del diámetro terrestre) y una relación de masas de uno a ochenta y uno punto tres, el sistema Tierra-Luna se comporta gravitatoriamente como un planeta doble coordinado.",
       "Originada hace cuatro mil quinientos diez millones de años tras el impacto cataclísmico rasante de un protoplaneta del tamaño de Marte bautizado como Tea contra la proto-Tierra en consolidación, la Luna ha desempeñado un papel geofísico insustituible: actúa como un ancla gravitatoria estabilizadora que frena la oscilación caótica del eje de rotación de nuestro planeta a lo largo de escalas temporales de millones de años.",
@@ -237,6 +247,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#70E000",
     "btnImage": "/assets/rocosos/infographic_m4/btn_oxigenacion-biosfera.jpg",
     "image": "/assets/rocosos/infographic_m4/hero_oxigenacion-biosfera.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m4/diagram_oxigenacion-biosfera.webp",
+    "diagramCaption": "La Gran Oxidación: fotosíntesis por cianobacterias y precipitación de formaciones de hierro bandeado",
     "content": [
       "Durante la primera mitad de la historia geológica de la Tierra, durante los eones Hádico y Arcaico, la atmósfera terrestre carecía casi por completo de oxígeno diatómico libre (su concentración era inferior al cero punto cero cero uno por ciento del nivel actual). El aire primordial estaba dominado por nitrógeno molecular, dióxido de carbono, metano volcánico y vapor de agua en equilibrio reductor anóxico.",
       "Esta química atmosférica reductora experimentó una revolución radical hace aproximadamente dos mil cuatrocientos millones de años durante el Paleoproterozoico, como resultado directo de una innovación biológica sin parangón: el surgimiento de la fotosíntesis oxigénica en las cianobacterias primitivas, las cuales comenzaron a utilizar la luz solar para disociar moléculas de agua y liberar oxígeno molecular gaseoso como subproducto metabólico.",
@@ -265,6 +277,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#9B5DE5",
     "btnImage": "/assets/rocosos/infographic_m4/btn_oasis-habitabilidad.webp",
     "image": "/assets/rocosos/infographic_m4/hero_oasis-habitabilidad.webp",
+    "diagramImage": "/assets/rocosos/infographic_m4/diagram_oasis-habitabilidad.webp",
+    "diagramCaption": "Ecuación de habitabilidad: convergencia de zona habitable estelar, geodinamo y biosfera activa",
     "content": [
       "La habitabilidad de la Tierra no es el fruto de una única cualidad fortuita, sino el resultado armónico y sinérgico de una intrincada constelación de factores astronómicos, geofísicos y biogeoquímicos operando simultáneamente a lo largo de escalas temporales de miles de millones de años. La ciencia planetaria contemporánea define este equilibrio multivariable como la arquitectura holística de la habitabilidad.",
       "En el plano astronómico, la Tierra orbita dentro de la Zona de Habitabilidad Circunestelar Continua de una estrella enana amarilla de tipo espectral G2V, cuya vida en la secuencia principal de diez mil millones de años suministra estabilidad fotométrica y radiativa prolongada. Asimismo, la masa planetaria de una masa terrestre exacta proporciona la gravedad superficial necesaria para retener una atmósfera sin atrapar un sofocante manto de hidrógeno.",
@@ -710,6 +724,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

@@ -101,6 +101,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF6B35",
     "btnImage": "/assets/rocosos/infographic_m1/btn_disco-protoplanetario.jpg",
     "image": "/assets/rocosos/infographic_m1/hero_disco-protoplanetario.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m1/diagram_disco-protoplanetario.webp",
+    "diagramCaption": "Gradiente térmico y distribución de elementos refractarios en el disco protoplanetario circumsolar",
     "content": [
       "Hace aproximadamente cuatro mil quinientos sesenta y siete millones de años, nuestro Sistema Solar se originó a partir del colapso gravitatorio de una densa nube molecular interestelar compuesta principalmente por hidrógeno, helio y diminutas motas de polvo presolar. La perturbación inicial, probablemente desatada por las ondas de choque supersónicas de una supernova cercana, provocó que el núcleo de la nube comenzara a contraerse bajo su propia masa gravitacional, iniciando el nacimiento de nuestra estrella.",
       "Debido a la ley física de conservación del momento angular, a medida que la nube colapsaba y reducía su radio, su velocidad de rotación se aceleró exponencialmente, adoptando la morfología de un disco circunestelar aplanado y giratorio perpendicular a su eje de rotación. En el centro geométrico de máxima densidad se acumuló más del noventa y nueve punto ocho por ciento de la masa de la nebulosa, encendiendo el colosal horno de fusión nuclear de nuestra protoestrella solar.",
@@ -129,6 +131,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#F7C59F",
     "btnImage": "/assets/rocosos/infographic_m1/btn_condensacion-silicatos.jpg",
     "image": "/assets/rocosos/infographic_m1/hero_condensacion-silicatos.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m1/diagram_condensacion-silicatos.webp",
+    "diagramCaption": "Secuencia termodinámica de Grossman: condensación de inclusiones CAIs, olivino y piroxeno",
     "content": [
       "A medida que la masa gaseosa supercaliente del disco protoplanetario se expandía y radiaba gradualmente su energía térmica hacia el espacio interestelar, la temperatura descendió por debajo del punto de sublimación de los elementos químicos más refractarios. Este enfriamiento progresivo gobernó la condensación química termodinámica descrita matemáticamente por la célebre secuencia de condensación de Lawrence Grossman y John Wood en la década de 1970.",
       "A temperaturas superiores a los mil seiscientos kelvin, los primeros minerales sólidos en precipitar directamente desde el vapor gaseoso primigenio fueron los óxidos de calcio, titanio y aluminio, dando origen a la corindón, la perovskita y la melilita. Estas fases ultrarrefractarias se agruparon en nódulos milimétricos blanquecinos que los petrólogos denominan Inclusiones Ricas en Calcio y Aluminio (CAIs), los objetos sólidos más antiguos jamás datados en el Sistema Solar.",
@@ -157,6 +161,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#EFE9F4",
     "btnImage": "/assets/rocosos/infographic_m1/btn_acrecion-planetesimales.jpg",
     "image": "/assets/rocosos/infographic_m1/hero_acrecion-planetesimales.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m1/diagram_acrecion-planetesimales.webp",
+    "diagramCaption": "Mecanismos de acreción: superación de la barrera del metro por inestabilidad de flujo gravitatorio",
     "content": [
       "El paso físico desde partículas microscópicas de polvo aglomeradas por fuerzas electrostáticas hasta bloques macroscópicos de tamaño kilométrico representó uno de los enigmas más desafiantes de la astrofísica planetaria. Cuando los agregados minerales alcanzaban tamaños de entre un centímetro y un metro, las colisiones mutuas a velocidades superiores a un metro por segundo dejaban de provocar adhesión y causaban la fragmentación destructiva o el rebote elástico de los granos.",
       "Asimismo, los objetos de un metro de diámetro experimentaban una intensa fuerza de arrastre aerodinámico con el gas del disco en rotación subkepleriana, perdiendo momento angular de forma catastrófica y precipitándose en espiral hacia el Sol en menos de cien años (la conocida 'barrera del metro'). Para eludir esta barrera destructiva, la naturaleza recurrió a procesos hidrodinámicos colectivos conocidos en la actualidad como inestabilidad de flujo (streaming instability).",
@@ -185,6 +191,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFD166",
     "btnImage": "/assets/rocosos/infographic_m1/btn_diferenciacion-planetaria.jpg",
     "image": "/assets/rocosos/infographic_m1/hero_diferenciacion-planetaria.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m1/diagram_diferenciacion-planetaria.webp",
+    "diagramCaption": "Diferenciación geoquímica y catástrofe del hierro: decantación del núcleo por calor de Al-26",
     "content": [
       "A medida que los embriones protoplanetarios superaban los quinientos kilómetros de diámetro, sus interiores experimentaron un drástico incremento de temperatura inducido por tres fuentes termodinámicas masivas: la conversión de energía cinética en calor durante las violentas colisiones de acreción, la compresión adiabática gravitacional interna de los materiales rocosos y, primordialmente, el decaimiento radiactivo de radioisótopos de vida corta.",
       "Entre estos radionucleidos extintos, el aluminio-26 (con una vida media de apenas setecientos diecisiete mil años) y el hierro-60 liberaron colosales cantidades de energía térmica en los primeros dos millones de años del Sistema Solar. Esta potencia térmica superó el punto de fusión de los metales y silicatos, derritiendo total o parcialmente los cuerpos protoplanetarios y transformándolos en esferas de magma fluido sujetas a separación gravitacional por densidades.",
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#4ECDC4",
     "btnImage": "/assets/rocosos/infographic_m1/btn_linea-de-nieve.jpg",
     "image": "/assets/rocosos/infographic_m1/hero_linea-de-nieve.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m1/diagram_linea-de-nieve.webp",
+    "diagramCaption": "Línea de nieve primordial: frontera termodinámica entre silicatos secos y volátiles congelados",
     "content": [
       "En la arquitectura física del disco protoplanetario existía un límite termodinámico fundamental conocido en astrofísica como la línea de congelación o línea de nieve del agua. Esta demarcación radial invisible señalaba la distancia heliocéntrica a partir de la cual la temperatura del gas caía por debajo de aproximadamente ciento cincuenta a ciento setenta kelvin a las presiones de la nebulosa, permitiendo que las moléculas de agua pasaran directamente de vapor a cristales de hielo sólido.",
       "En las fases formativas iniciales del Sistema Solar, esta frontera de condensación de volátiles se localizaba a una distancia aproximada de entre dos punto siete y tres punto dos unidades astronómicas del Sol, situándose en la región que actualmente ocupa la porción exterior del Cinturón Principal de Asteroides. Su posición no fue estática, sino que migró dinámicamente hacia el interior a medida que el disco se enfriaba y reducía su tasa de acreción estelar.",
@@ -241,6 +251,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF007F",
     "btnImage": "/assets/rocosos/infographic_m1/btn_bombardeo-intenso.jpg",
     "image": "/assets/rocosos/infographic_m1/hero_bombardeo-intenso.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m1/diagram_bombardeo-intenso.webp",
+    "diagramCaption": "Gran Bombardeo Intenso: migración de gigantes gaseosos y desestabilización orbital del cinturón",
     "content": [
       "Entre cuatro mil cien y tres mil ochocientos millones de años atrás, varios cientos de millones de años después de completada la fase principal de ensamblaje de los planetas rocosos, el Sistema Solar interior experimentó una cataclísmica reactivación de colisiones a hipervelocidad conocida en la geología planetaria como el Gran Bombardeo Intenso Tardío (Late Heavy Bombardment o LHB).",
       "La explicación dinámica más respaldada por la comunidad astronómica internacional es el célebre Modelo de Niza, desarrollado en el Observatorio de la Costa Azul en 2005. Este modelo astrodinámico postula que la interacción gravitatoria entre los planetas gigantes gaseosos y un denso disco primordial de planetesimales transneptunianos provocó una lenta migración orbital de Júpiter hacia adentro y de Saturno, Urano y Neptuno hacia afuera.",
@@ -269,6 +281,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#E71D36",
     "btnImage": "/assets/rocosos/infographic_m1/btn_magma-y-corteza.jpg",
     "image": "/assets/rocosos/infographic_m1/hero_magma-y-corteza.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m1/diagram_magma-y-corteza.webp",
+    "diagramCaption": "Océanos de magma globales: cristalización fraccionada y flotación de la corteza de plagioclasas",
     "content": [
       "Durante los estadios postreros de la acreción planetaria, la energía liberada por los gigantescos choques entre protoplanetas —culminando en el caso de la Tierra con el impacto cataclísmico rasante del protoplaneta Tea hace cuatro mil quinientos diez millones de años— suministró suficiente calor cinético como para fundir la totalidad de la envoltura silicatada exterior, originando océanos de magma globales de más de mil kilómetros de profundidad.",
       "Bajo estas condiciones extremas, la superficie planetaria no poseía solidez mecánica alguna, sino que consistía en un turbulento mar de roca fundida en régimen de convección vigorosa a temperaturas superiores a los dos mil doscientos kelvin. Sobre este océano ardiente pesaba una atmósfera densa y asfixiante de vapor de agua supercrítico, monóxido de carbono, metano y sílice gaseosa a presiones de varios cientos de atmósferas terrestres.",
@@ -714,6 +728,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

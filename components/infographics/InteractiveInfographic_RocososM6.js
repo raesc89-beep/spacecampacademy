@@ -99,6 +99,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF0054",
     "btnImage": "/assets/rocosos/infographic_m6/btn_gigante-roja.webp",
     "image": "/assets/rocosos/infographic_m6/hero_gigante-roja.webp",
+    "diagramImage": "/assets/rocosos/infographic_m6/diagram_gigante-roja.webp",
+    "diagramCaption": "Evolución estelar: expansión del Sol en gigante roja y engullimiento de los planetas interiores",
     "content": [
       "Los planetas rocosos no son entidades estables e imperecederas; su ciclo existencial y destino termodinamico estan subordinados de manera ineludible a las fases de evolucion estelar del Sol. Nuestra estrella central es una enana amarilla de la secuencia principal (clasificacion espectral G2V) que funde hidrogeno en helio dentro de su nucleo termonuclear a un ritmo constante, encontrandose actualmente en la mitad de su vida activa de aproximadamente diez mil millones de anos.",
       "Dentro de unos cinco mil millones de anos (5 Ga), el hidrogeno nuclear del nucleo solar se agotara por completo, provocando la perdida del equilibrio hidrostatico interno. Al cesar las reacciones de fusion central, el nucleo de cenizas de helio colapsara bajo su propio peso gravitatorio, elevando su temperatura hasta encender la fusion de hidrogeno en una capa delgada periférica; este incremento radical de la presion de radiacion empujara las capas convectivas exteriores del Sol en una expansion monstruosa hacia el espacio interplanetario.",
@@ -127,6 +129,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFBD00",
     "btnImage": "/assets/rocosos/infographic_m6/btn_evaporacion-oceanos.webp",
     "image": "/assets/rocosos/infographic_m6/hero_evaporacion-oceanos.webp",
+    "diagramImage": "/assets/rocosos/infographic_m6/diagram_evaporacion-oceanos.webp",
+    "diagramCaption": "Evaporación runaway de los océanos terrestres por el aumento secular del brillo solar",
     "content": [
       "La habitabilidad superficial de la Tierra posee una fecha de caducidad geofisica mucho mas proxima en el tiempo que la invasion fisica de la gigante roja. Debido a la fisica de los reactores de fusion estelar, a medida que el Sol transforma nucleos de hidrogeno en helio dentro de su corazon termonuclear, el peso molecular medio del plasma central aumenta; esto obliga al nucleo a contraerse lentamente y a elevar su temperatura, provocando que la luminosidad del Sol aumente de forma inexorable a un ritmo de aproximadamente un diez por ciento cada mil cien millones de anos.",
       "Dentro de aproximadamente mil millones de anos (1.0 a 1.1 Ga en el futuro), la irradiacion solar que incide sobre la parte superior de la atmosfera terrestre se habra incrementado lo suficiente para alterar de forma catastrofica el ciclo geoquimico del carbono y el clima planetario. Las temperaturas medias globales sobrepasaran los sesenta y setenta grados Celsius, provocando una tasa masiva y acelerada de evaporacion de los oceanos mundiales que saturara por completo la columna troposferica de vapor de agua.",
@@ -155,6 +159,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF5400",
     "btnImage": "/assets/rocosos/infographic_m6/btn_descomposicion-venus.webp",
     "image": "/assets/rocosos/infographic_m6/hero_descomposicion-venus.webp",
+    "diagramImage": "/assets/rocosos/infographic_m6/diagram_descomposicion-venus.webp",
+    "diagramCaption": "Metamorfismo térmico y fusión cortical de Venus bajo un flujo solar intensificado",
     "content": [
       "Ubicado a tan solo 0.72 unidades astronomicas del Sol, el planeta Venus sera el primer cuerpo planetario de masa terrestre en experimentar de lleno la devastacion termica y estructural provocada por la agonia estelar. Mucho antes de que el Sol alcance su diametro de gigante roja maximo, el incremento sustancial en el flujo radiativo estelar calentara la ya abrasadora superficie venusiana (actualmente a cuatrocientos sesenta y cinco grados Celsius) hasta extremos termodinamicos inauditos.",
       "Cuando la insolacion solar sobrepase con holgura los cinco mil vatios por metro cuadrado, las temperaturas superficiales en Venus ascenderan por encima de los mil quinientos y dos mil grados Celsius (1,800 a 2,300 K). A estas temperaturas infernales, el punto de fusion de los silicatos y basaltos comunes sera rebasado con holgura: la totalidad de la corteza solida y las altiplanicies volcanicas de Ishtar y Aphrodite Terra colapsaran, convirtiendo al planeta entero en un reluciente oceano global de magma incandescente.",
@@ -183,6 +189,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#3A86FF",
     "btnImage": "/assets/rocosos/infographic_m6/btn_marte-segundo-hogar.webp",
     "image": "/assets/rocosos/infographic_m6/hero_marte-segundo-hogar.webp",
+    "diagramImage": "/assets/rocosos/infographic_m6/diagram_marte-segundo-hogar.webp",
+    "diagramCaption": "Macroingeniería planetaria: dipolo magnético en L1 y liberación de gases para espesar la atmósfera",
     "content": [
       "A medida que la irradiacion solar incremente sus valores y convierta progresivamente a la Tierra en un desierto estéril a lo largo de los proximos dos mil millones de anos, la zona de habitabilidad del Sistema Solar se desplazara hacia el exterior, intersecando de lleno la orbita del planeta Marte (situada a una distancia media de 1.52 unidades astronomicas). Este desplazamiento astrofisico confiere al Planeta Rojo un papel estrategico en la supervivencia a largo plazo de la civilizacion biologica y tecnologica.",
       "En el plano teorico e ingenieril de la planetologia, el concepto de terraformacion persigue transformar deliberadamente el ambiente hiperarido, gelido e hipobarico de Marte en una biosfera abierta con presion atmosferica respirable, temperatura clemente y ciclos hidrologicos superficiales estables. No obstante, los inventarios cuantitativos de volatiles realizados por misiones orbitales modernas han impuesto severas restricciones fisicas a este sueno exploratorio.",
@@ -211,6 +219,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#8338EC",
     "btnImage": "/assets/rocosos/infographic_m6/btn_exoplanetas-rocosos.webp",
     "image": "/assets/rocosos/infographic_m6/hero_exoplanetas-rocosos.webp",
+    "diagramImage": "/assets/rocosos/infographic_m6/diagram_exoplanetas-rocosos.webp",
+    "diagramCaption": "Arquitectura orbital comparada: los 7 exoplanetas rocosos de TRAPPIST-1 en resonancia armónica",
     "content": [
       "La frontera del conocimiento geologico y astrobiologico de los mundos rocosos ha trascendido definitivamente los confines del Sistema Solar. A traves de las observaciones fotometricas de precision de los telescopios espaciales Kepler, TESS y CHEOPS, y la caracterizacion espectroscopica pionera del Telescopio Espacial James Webb (JWST), los astronomos han confirmado la existencia de miles de exoplanetas de naturaleza solida y litosferica en la Via Lactea.",
       "Entre estos hallazgos destaca la ubicua clase de las Super-Tierras: exoplanetas terrestres con masas comprendidas entre una y diez veces la masa terrestre y radios de hasta 1.5 o 1.7 radios terrestres. Las mediciones espectroscopicas de alta resolucion han permitido identificar el denominado valle del radio de Fulton, una profunda division observacional a 1.8 radios terrestres que separa mundos puramente rocosos con nucleos metalicos de sub-Neptunos gaseosos envueltos en densos mantos de hidrogeno primordial.",
@@ -239,6 +249,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#00F5D4",
     "btnImage": "/assets/rocosos/infographic_m6/btn_recursos-planetarios.webp",
     "image": "/assets/rocosos/infographic_m6/hero_recursos-planetarios.webp",
+    "diagramImage": "/assets/rocosos/infographic_m6/diagram_recursos-planetarios.webp",
+    "diagramCaption": "Utilización de recursos in situ (ISRU): extracción de agua y refinación magnética de metales siderófilos",
     "content": [
       "El devenir evolutivo de la civilizacion industrial humana esta indisolublemente ligado a la explotacion geologica y quimica de los cuerpos rocosos y metalicos menores del Sistema Solar. Los recursos minerales accesibles en la corteza terrestre sufren un continuo agotamiento energetico y ecologico debido a milenios de extraccion minera intensiva; en contraposicion, los asteroides cercanos a la Tierra (NEAs) y el cinturon principal conservan una cornucopia mineral intacta desde la nebulosa protoplanetaria.",
       "Desde la optica de la geoquimica cosmica, los cuerpos rocosos diferenciados del cinturon de asteroides experimentaron procesos de segregacion gravitatoria similares a los planetas terrestres mayores. Los asteroides de tipo espectral M, cuyo maximo exponente es el titan 16 Psyche (un asteroide de mas de doscientos kilometros de diametro que constituye el nucleo metalico expuesto de un protoplaneta destrozado por colisiones catastroficas), estan formados casi integramente por aleaciones puras de hierro, niquel y cobalto nativos.",
@@ -267,6 +279,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#7000FF",
     "btnImage": "/assets/rocosos/infographic_m6/btn_destino-final-rocas.webp",
     "image": "/assets/rocosos/infographic_m6/hero_destino-final-rocas.webp",
+    "diagramImage": "/assets/rocosos/infographic_m6/diagram_destino-final-rocas.webp",
+    "diagramCaption": "Destino cósmico final: enana blanca central rodeada por disco de escombros planetarios desintegrados",
     "content": [
       "A escalas de tiempo cosmológicas que superan miles de millones y billones de anos, ¿cual es el destino ultimo que aguarda a toda la materia rocosa del cosmos? Tras concluir su convulsa fase de gigante roja y expeler sus capas fotosfericas externas en una efimera nebulosa planetaria enriquecida de carbono, el Sol colapsara en un nucleo remanente estelar ultra-denso e inerte: una enana blanca de carbono y oxigeno con una masa del cincuenta y cinco por ciento de la solar comprimida en el volumen de la Tierra.",
       "Los planetas y cuerpos rocosos que logren sobrevivir a la era de gigante roja solar (como Marte, los asteroides mayores y las lunas litoesfericas exteriores) continuaran orbitando alrededor de esta estrella enana blanca en enfriamiento durante cientos de miles de millones de anos en la oscuridad perpetua de un universo en expansion termica acelerada. En este gelido escenario, las interacciones gravitatorias seculares entre los cuerpos remanentes alteraran progresivamente las excentricidades e inclinaciones orbitales.",
@@ -712,6 +726,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

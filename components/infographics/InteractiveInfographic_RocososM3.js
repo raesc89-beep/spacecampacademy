@@ -97,6 +97,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF595E",
     "btnImage": "/assets/rocosos/infographic_m3/btn_invernadero-desbocado.webp",
     "image": "/assets/rocosos/infographic_m3/hero_invernadero-desbocado.webp",
+    "diagramImage": "/assets/rocosos/infographic_m3/diagram_invernadero-desbocado.webp",
+    "diagramCaption": "Efecto invernadero desbocado: absorción infrarroja por dióxido de carbono y 465 °C de temperatura",
     "content": [
       "Venus es considerado con frecuencia el gemelo astronómico de la Tierra debido a su notable similitud en radio ecuatorial (seis mil cincuenta y dos kilómetros frente a seis mil trescientos setenta y ocho), masa gravitatoria (ochenta y uno punto cinco por ciento de la terrestre) y densidad media. Sin embargo, su evolución geofísica divergió hacia una pesadilla climática irreversible regida por el efecto invernadero desbocado más extremo y letal de todo el Sistema Solar.",
       "La atmósfera de Venus está constituida en un noventa y seis punto cinco por ciento por dióxido de carbono molecular puro, complementado por un tres punto cinco por ciento de nitrógeno y trazas de dióxido de azufre, vapor de agua y monóxido de carbono. Esta colosal envoltura gaseosa genera una opacidad óptica casi absoluta en el espectro infrarrojo térmico, impidiendo que la radiación emitida por la corteza superficial caliente pueda escapar hacia el espacio.",
@@ -125,6 +127,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFCA3A",
     "btnImage": "/assets/rocosos/infographic_m3/btn_atmosfera-aplastante.webp",
     "image": "/assets/rocosos/infographic_m3/hero_atmosfera-aplastante.webp",
+    "diagramImage": "/assets/rocosos/infographic_m3/diagram_atmosfera-aplastante.webp",
+    "diagramCaption": "Perfil barométrico vertical: atmósfera de CO2 en estado supercrítico a 93 bares de presión",
     "content": [
       "La presión atmosférica ejercida sobre la superficie de Venus constituye una de las fuerzas más destructivas y desafiantes de toda la exploración planetaria. Al nivel medio de la llanura basal venusiana, la masa de la columna de gas ejerce una presión estática descomunal de noventa y tres bares (nueve punto tres megapascales), una cifra noventa y tres veces superior a la presión barométrica de la Tierra al nivel medio del mar.",
       "Esta presión atmosférica equivale a la que experimentaría un vehículo sumergido a más de novecientos metros de profundidad en las fosas oceánicas terrestres. La colosal masa de la atmósfera de Venus (unas cuatro punto ocho por diez a la veinte kilogramos) es aproximadamente noventa y tres veces mayor que la masa combinada de toda la atmósfera terrestre, comprimiendo el suelo bajo un peso acumulado de billones de toneladas de gas.",
@@ -153,6 +157,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#8AC926",
     "btnImage": "/assets/rocosos/infographic_m3/btn_nubes-acido.jpg",
     "image": "/assets/rocosos/infographic_m3/hero_nubes-acido.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m3/diagram_nubes-acido.webp",
+    "diagramCaption": "Estructura vertical de las nubes de ácido sulfúrico condensado entre 48 y 70 km de altitud",
     "content": [
       "La brillante silueta amarillenta que hace de Venus el objeto más resplandeciente del firmamento nocturno después de la Luna se debe a una densa y perpetua cubierta nubosa que envuelve el planeta de polo a polo. Lejos de estar compuestas por vapor de agua o cristales de hielo como en la Tierra, las nubes de Venus están formadas por diminutas microgotas de ácido sulfúrico concentrado al setenta y cinco y ochenta y cinco por ciento.",
       "Esta monumental estructura nubosa se extiende verticalmente a lo largo de más de veinte kilómetros de espesor, situada a altitudes comprendidas entre los cuarenta y ocho y los setenta kilómetros sobre el suelo. Se subdivide en tres capas estratificadas: la cubierta superior (de sesenta a setenta kilómetros), la capa media (de cincuenta y dos a sesenta kilómetros) y la densa capa inferior (de cuarenta y ocho a cincuenta y dos kilómetros de altitud).",
@@ -181,6 +187,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#E07A5F",
     "btnImage": "/assets/rocosos/infographic_m3/btn_vulcanismo-venusiano.webp",
     "image": "/assets/rocosos/infographic_m3/hero_vulcanismo-venusiano.webp",
+    "diagramImage": "/assets/rocosos/infographic_m3/diagram_vulcanismo-venusiano.webp",
+    "diagramCaption": "Vulcanismo de punto caliente y coronas tectónicas en una litosfera de placa única estancada",
     "content": [
       "La cartografía de radar de apertura sintética obtenida por la nave espacial Magellan de la NASA entre 1990 y 1994 reveló que Venus posee una de las superficies geológicamente más volcánicas de todo el Sistema Solar. Más del ochenta por ciento de la superficie del planeta está pavimentada por extensas llanuras de basalto volcánico, salpicadas por miles de edificios eruptivos y formaciones ígneas de dimensiones colosales.",
       "Venus alberga más de ciento sesenta volcanes gigantescos con diámetros basales superiores a los cien kilómetros, entre los cuales destaca el colosal Maat Mons en la región de Atla Regio, que se eleva más de cinco kilómetros sobre el nivel medio del terreno. A estos colosos se suman cientos de miles de pequeños conos de escoria, domos volcánicos en forma de tortita (pancake domes) creados por lavas de alta viscosidad y extensos campos de lavas fluidas.",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#1982C4",
     "btnImage": "/assets/rocosos/infographic_m3/btn_rotacion-retrograda.jpg",
     "image": "/assets/rocosos/infographic_m3/hero_rotacion-retrograda.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m3/diagram_rotacion-retrograda.webp",
+    "diagramCaption": "Rotación retrógrada con inclinación de 177.4° y superrotación atmosférica a 360 km/h",
     "content": [
       "La cinemática de rotación de Venus constituye una anomalía mecánica desconcertante dentro de la dinámica planetaria. Mientras que casi todos los planetas del Sistema Solar giran sobre su eje en sentido prógrado (en sentido antihorario visto desde el polo norte celeste, igual a como orbitan al Sol), Venus rota en sentido retrógrado horario, con una inclinación axial o de oblicuidad de ciento setenta y siete punto cuatro grados.",
       "Para un observador situado sobre la superficie de Venus, este giro invertido provocaría que el Sol saliera por el oeste y se pusiera lentamente por el este. Además, la velocidad de rotación es asombrosamente lenta: Venus tarda exactamente doscientos cuarenta y tres punto cero dos días terrestres en completar una sola vuelta sobre su propio eje, lo que convierte su velocidad de rotación ecuatorial en apenas seis punto cinco kilómetros por hora.",
@@ -237,6 +247,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#6A4C93",
     "btnImage": "/assets/rocosos/infographic_m3/btn_agua-evaporada.jpg",
     "image": "/assets/rocosos/infographic_m3/hero_agua-evaporada.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m3/diagram_agua-evaporada.webp",
+    "diagramCaption": "Desecación atmosférica: fotodisociación solar del agua y escape térmico de hidrógeno ligero",
     "content": [
       "A pesar de su aridez infernal contemporánea, los modelos paleo-climáticos de circulación general (GCM) desarrollados por el Instituto Goddard de Estudios Espaciales de la NASA sugieren que durante los primeros dos mil millones de años del Sistema Solar, Venus pudo haber albergado océanos de agua líquida poco profundos y un clima templado y potencialmente habitable.",
       "En aquella época primigenia, el Sol joven brillaba con un treinta por ciento menos de luminosidad que en la actualidad. Si Venus ya poseía una rotación lenta, los modelos climáticos demuestran que se habría formado un gigantesco banco de nubes reflectantes en el hemisferio diurno, bloqueando la mayor parte de la radiación solar y permitiendo la condensación de agua superficial en mares estables.",
@@ -265,6 +277,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#F4A261",
     "btnImage": "/assets/rocosos/infographic_m3/btn_sondas-venera.webp",
     "image": "/assets/rocosos/infographic_m3/hero_sondas-venera.webp",
+    "diagramImage": "/assets/rocosos/infographic_m3/diagram_sondas-venera.webp",
+    "diagramCaption": "Ingeniería de aterrizadores Venera y misión orbital VERITAS con radar de apertura sintética",
     "content": [
       "La exploración in situ de la superficie de Venus representa uno de los capítulos más heroicos y técnicamente demandantes de toda la historia espacial. Entre 1961 y 1984, el programa soviético Venera logró una serie de hitos sin precedentes al diseñar sondas de aterrizaje blindadas de titanio capaces de descender en paracaídas y operar en el suelo abrasador de noventa y tres bares y cuatrocientos sesenta y cinco grados Celsius.",
       "El 15 de diciembre de 1970, la nave soviética Venera 7 se convirtió en el primer artefacto construido por la humanidad en aterrizar con éxito sobre la superficie de otro planeta y transmitir telemetría científica directa hacia la Tierra durante veintitrés minutos. En octubre de 1975, Venera 9 y Venera 10 transmitieron las primeras fotografías panorámicas de la historia en blanco y negro desde el suelo de otro mundo, mostrando lajas de basalto fracturado.",
@@ -710,6 +724,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

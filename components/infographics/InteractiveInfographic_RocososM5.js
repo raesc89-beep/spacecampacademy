@@ -100,6 +100,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#E63946",
     "btnImage": "/assets/rocosos/infographic_m5/btn_polvo-de-oxido.webp",
     "image": "/assets/rocosos/infographic_m5/hero_polvo-de-oxido.webp",
+    "diagramImage": "/assets/rocosos/infographic_m5/diagram_polvo-de-oxido.webp",
+    "diagramCaption": "Corte transversal del regolito marciano: micropartículas de hematita férrica y saltación de polvo",
     "content": [
       "El caracteristico tono rojizo que confiere a Marte el sobrenombre de Planeta Rojo no procede de rocas incandescentes ni de pigmentos biologicos, sino de una fina pelicula de regolito superficial profundamente oxidado. Esta capa, cuyo espesor oscila entre escasos milimetros y unos pocos metros segun la region topografica, esta compuesta mayoritariamente por nanominerales de oxido de hierro, destacando la hematita cristalina (Fe2O3), la maghemita ferromagnetica y fases amorfas de ferrihidrita dispersas de forma omnipresente.",
       "El origen petrologico de esta herrumbre global radica en la meteorizacion quimica de las rocas igneas primigenias del planeta, compuestas predominantemente por basaltos toleiticos ricos en olivino y piroxeno ferromagnesianos. Durante eones, trazas ancestrales de vapor de agua y moleculas de dioxido de carbono, fotoionizadas por la implacable radiacion ultravioleta solar en una atmosfera desprovista de capa de ozono, oxidaron sistematicamente el hierro bivalente ferroso (Fe2+) de los silicatos primitivos a hierro trivalente ferrico (Fe3+).",
@@ -128,6 +130,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#F4A261",
     "btnImage": "/assets/rocosos/infographic_m5/btn_volcanes-gigantes.jpg",
     "image": "/assets/rocosos/infographic_m5/hero_volcanes-gigantes.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m5/diagram_volcanes-gigantes.webp",
+    "diagramCaption": "Estructura volcánica del Monte Olimpo: 21.9 km de altura y apilamiento sobre un punto caliente estático",
     "content": [
       "Marte ostenta el edificio volcanico mas colosal y masivo de todo el Sistema Solar: el Monte Olimpo (Olympus Mons). Emplazado en el borde noroccidental del gigantesco abultamiento volcano-tectonico de Tarsis, este titan en escudo se eleva veintiun kilometros y novecientos metros sobre el datum altimetrico de referencia global, superando con holgura el doble y medio de la altitud del Monte Everest y triplicando la altura del Mauna Kea medido desde su fosa oceanica abisal.",
       "La planta basal del Monte Olimpo abarca un diametro medio superior a los seiscientos kilometros, una huella superficial comparable a la superficie territorial total de paises enteros como Polonia o el estado de Arizona. El perimetro exterior del volcan no desciende suavemente hacia el terreno colindante, sino que esta delimitado abruptamente por un imponente escarpe o acantilado basal continuo que en varios sectores alcanza desniveles verticales de seis a ocho kilometros de caida libre.",
@@ -156,6 +160,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#D62828",
     "btnImage": "/assets/rocosos/infographic_m5/btn_valles-marineris.jpg",
     "image": "/assets/rocosos/infographic_m5/hero_valles-marineris.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m5/diagram_valles-marineris.webp",
+    "diagramCaption": "Falla tectónica de Valles Marineris: 4,000 km de longitud y 11 km de profundidad vertical",
     "content": [
       "Extendiendose a lo largo de mas de cuatro mil kilometros en sentido este-oeste sobre la banda ecuatorial de Marte, el colosal sistema de fracturas de Valles Marineris constituye el canion tectonico mas extenso y profundo del Sistema Solar interior. Su longitud longitudinal cubre practicamente una cuarta parte de la circunferencia entera del planeta, con anchuras que superan los doscientos kilometros en sus fosas centrales y abismos que descienden verticalmente hasta diez u once kilometros de profundidad.",
       "A diferencia del celebre Gran Canion del rio Colorado en la Tierra, cuya genesis responde preponderantemente a la abrasion fluvial continua del agua a traves de estratos horizontales, Valles Marineris es un megasistema de fisuras de origen primordialmente tectonico y estructural. Corresponde a una descomunal fosa tectonica de tipo rift continental generada por los esfuerzos de extension y cizalla que desgarraron la corteza marciana durante el levantamiento del domo magmatico de Tarsis hace tres mil quinientos millones de anos.",
@@ -184,6 +190,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#48CAE4",
     "btnImage": "/assets/rocosos/infographic_m5/btn_agua-ancestral.webp",
     "image": "/assets/rocosos/infographic_m5/hero_agua-ancestral.webp",
+    "diagramImage": "/assets/rocosos/infographic_m5/diagram_agua-ancestral.webp",
+    "diagramCaption": "Paleohidrología marciana: delta fluvial dendrítico y sedimentación lacustre en el Noeico",
     "content": [
       "A pesar de que Marte se manifiesta en la actualidad como un hiperarido desierto helado dominado por una atmosfera hipertenue, las evidencias geologicas, mineralogicas y geomorfologicas acumuladas confirman sin ambiguedades que el planeta albergo ingentes volumenes de agua liquida estable en su superficie durante la epoca Noequiana temprana, comprendida entre 4.1 y 3.7 miles de millones de anos atras, en una fase climatica templada diametralmente opuesta a la actual.",
       "A lo largo de las antiguas tierras altas del hemisferio sur marciano se conservan miles de redes dendriticas de valles fluviales ramificados, cuya jerarquia de orden hidrologico y patrones de meandros solo pueden ser modelados mediante la precipitacion sostenida de lluvia o nieve y escorrentia superficial duradera. Multiples modelos paleoclimaticos sugieren que las planicies del norte alojaron un oceano primordial circumpolar (Oceanus Borealis) que llego a cubrir un tercio del area planetaria.",
@@ -212,6 +220,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#A8DADC",
     "btnImage": "/assets/rocosos/infographic_m5/btn_colapso-atmosferico.webp",
     "image": "/assets/rocosos/infographic_m5/hero_colapso-atmosferico.webp",
+    "diagramImage": "/assets/rocosos/infographic_m5/diagram_colapso-atmosferico.webp",
+    "diagramCaption": "Despojo atmosférico por el viento solar tras el apagado del geodinamo marciano (misión MAVEN)",
     "content": [
       "El colapso ambiental que transformo a Marte de un planeta templado con rios superficiales en un desierto gelido e inhospito fue desencadenado primordialmente por el cese definitivo de su geodinamo interna. Al poseer un radio de tan solo tres mil trescientos noventa kilometros y una masa equivalente al 10.7% de la terrestre, Marte presento una relacion area-volumen significativamente mayor que la de la Tierra, acelerando la perdida radiativa de su calor termodinamico primordial.",
       "Aproximadamente hace cuatro mil millones de anos (casi coincidiendo con la transicion entre el Noequiano y el Hesperiano temprano), la conveccion en el nucleo exterior metalico de hierro y azufre se debilito por enfriamiento conductivo o estratificacion quimica, colapsando irreversiblemente el dipolo magnetico global que hasta entonces blindaba al planeta frente al plasma interplanetario. Desde ese instante, la alta atmosfera marciana quedo expuesta de lleno al impacto sin frenos del viento solar.",
@@ -240,6 +250,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#F1FAEE",
     "btnImage": "/assets/rocosos/infographic_m5/btn_casquetes-polares.jpg",
     "image": "/assets/rocosos/infographic_m5/hero_casquetes-polares.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m5/diagram_casquetes-polares.webp",
+    "diagramCaption": "Estratigrafía polar de Marte: núcleo de hielo de agua permanente y cubierta estacional de hielo seco",
     "content": [
       "En las regiones boreales y australes de Marte se asientan dos espectaculares formaciones glaciares permanentes: Planum Boreum en el polo norte y Planum Australe en el polo sur. A diferencia de las masas de hielo de la Tierra compuestas exclusivamente por agua mineralizada, los casquetes marcianos presentan una singular arquitectura hibrida de dos componentes termodinamicos: un nucleo perenne de hielo de agua (H2O) cubierto estacionalmente por un estrato dinamico de dioxido de carbono congelado (CO2) o hielo seco.",
       "El casquete boreal permanente es la reserva mas voluminosa de agua superficial del planeta: se extiende sobre un diametro circular de mil kilometros con espesores centrales que superan los tres kilometros, albergando aproximadamente 1.6 millones de kilometros cubicos de hielo de agua cristalina de alta pureza. En cambio, el polo sur exhibe un casquete residual permanente mucho menor, pero recubierto de forma continua por una capa de hielo seco de dioxido de carbono de varios metros de grosor que nunca llega a sublimar del todo.",
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FFB703",
     "btnImage": "/assets/rocosos/infographic_m5/btn_caza-de-biofirmas.webp",
     "image": "/assets/rocosos/infographic_m5/hero_caza-de-biofirmas.webp",
+    "diagramImage": "/assets/rocosos/infographic_m5/diagram_caza-de-biofirmas.webp",
+    "diagramCaption": "Perforación robótica de testigos sedimentarios para la detección de biofirmas en el cráter Jezero",
     "content": [
       "La busqueda de biofirmas (evidencias quimicas, texturales, mineralogicas o isotopicas de vida microbiana preterita) constituye la piedra angular de la exploracion contemporanea de Marte. Aunque la superficie presente es esteril e inhospita debido a la combinacion letal de radiacion cosmica galactica, flujo ultravioleta y la accion lixiviante de sales percloradas oxidantes, las rocas sedimentarias de cuatro mil millones de anos preservan entornos donde la quimica prebiotica pudo evolucionar.",
       "La investigacion comenzo historicamente en 1976 con los experimentos metabolicos de biologia a bordo de las sondas Viking 1 y 2 (Liberacion Etiquetada, Liberacion Pirolitica e Intercambio de Gases). Aunque se registraron reacciones cineticas positivas inmediatas, el consenso cientifico moderno determino que los resultados fueron producto de la extrema reactividad quimica abiotica de los peroxidos y percloratos del regolito catalizados por radiacion UV, y no de metabolismo celular.",
@@ -713,6 +727,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

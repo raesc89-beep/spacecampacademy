@@ -102,6 +102,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#E63946",
     "btnImage": "/assets/rocosos/infographic_m2/btn_nucleo-gigante.webp",
     "image": "/assets/rocosos/infographic_m2/hero_nucleo-gigante.webp",
+    "diagramImage": "/assets/rocosos/infographic_m2/diagram_nucleo-gigante.webp",
+    "diagramCaption": "Estructura interna de Mercurio: núcleo metálico de hierro ocupando el 85% del radio planetario",
     "content": [
       "Mercurio es el planeta más pequeño del Sistema Solar, con un radio ecuatorial de dos mil cuatrocientos treinta y nueve kilómetros, pero oculta una anomalía geofísica sin parangón en su interior. Mientras que en la Tierra el núcleo metálico representa apenas el diecisiete por ciento del volumen global, en Mercurio el núcleo de hierro y níquel abarca más del ochenta y cinco por ciento de su radio y un impresionante cincuenta y siete por ciento de todo su volumen volumétrico total.",
       "Esta extraordinaria desproporción anatómica significa que el manto rocoso de silicatos y la corteza superficial exterior constituyen una delgadísima cáscara envolvente de apenas cuatrocientos kilómetros de espesor total. En términos mecánicos y gravitatorios, Mercurio se comporta prácticamente como una gigantesca bola metálica de aleación de hierro y níquel apenas recubierta por un fino barniz de roca basáltica oscura y pulverizada.",
@@ -130,6 +132,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#FF9F1C",
     "btnImage": "/assets/rocosos/infographic_m2/btn_temperaturas-extremas.webp",
     "image": "/assets/rocosos/infographic_m2/hero_temperaturas-extremas.webp",
+    "diagramImage": "/assets/rocosos/infographic_m2/diagram_temperaturas-extremas.webp",
+    "diagramCaption": "Oscilación térmica extrema: contraste entre 430 °C diurnos y -180 °C nocturnos sin atmósfera",
     "content": [
       "Mercurio presenta la oscilación térmica diurna más extrema y violenta de todo el Sistema Solar. Al orbitar a una distancia heliocéntrica promedio de solo cincuenta y siete punto nueve millones de kilómetros (alcanzando cuarenta y seis millones de kilómetros en su perihelio), la cara iluminada por el Sol recibe una irradiancia solar descomunal de hasta catorce mil cuatrocientos noventa vatios por metro cuadrado, diez veces superior a la que alcanza la órbita de la Tierra.",
       "Bajo este bombardeo incesante de fotones y radiación térmica, la temperatura del suelo rocoso en el punto subsolar diurno se eleva hasta los setecientos kelvin (aproximadamente cuatrocientos veintisiete grados Celsius). Este calor infernal es suficiente para fundir metales como el plomo, el estaño y el zinc en cuestión de minutos, transformando la superficie rocosa expuesta en un páramo abrasador de radiación infrarroja incandescente.",
@@ -158,6 +162,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#CB997E",
     "btnImage": "/assets/rocosos/infographic_m2/btn_escarpas-tectonicas.jpg",
     "image": "/assets/rocosos/infographic_m2/hero_escarpas-tectonicas.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m2/diagram_escarpas-tectonicas.webp",
+    "diagramCaption": "Escarpas lobuladas de contracción: acortamiento cortical de 7 km por enfriamiento del núcleo",
     "content": [
       "A diferencia de la Tierra, cuya dinámica superficial está regida por la tectónica de placas con bordes divergentes, convergentes y transformantes, Mercurio es un planeta geológicamente de una sola placa litosférica rígida global. Sin embargo, su relieve exhibe impresionantes deformaciones tectónicas compresivas que recorren miles de kilómetros en forma de acantilados lobulados denominados escarpas de contracción o rupes.",
       "Estas majestuosas estructuras geológicas surgieron como consecuencia directa del enfriamiento secular y la cristalización progresiva de su gigantesco núcleo metálico de hierro a lo largo de los últimos cuatro mil millones de años. Al perder calor interno hacia el espacio, el núcleo metálico redujo su volumen físico; al contraerse el corazón del planeta, la corteza rocosa sólida exterior fue sometida a enormes esfuerzos compresivos horizontales.",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#00B4D8",
     "btnImage": "/assets/rocosos/infographic_m2/btn_crateres-y-hielo.webp",
     "image": "/assets/rocosos/infographic_m2/hero_crateres-y-hielo.webp",
+    "diagramImage": "/assets/rocosos/infographic_m2/diagram_crateres-y-hielo.webp",
+    "diagramCaption": "Trampas frías polares en sombra perpetua con depósitos de hielo de agua a -170 °C",
     "content": [
       "La coexistencia de hielo de agua estable en el planeta más cercano al ardiente horno solar representa uno de los hallazgos más asombrosos y paradójicos de toda la planetología moderna. Este fenómeno es físicamente posible gracias a una particularidad geométrica crítica: la oblicuidad axial de Mercurio respecto al plano de su órbita es de apenas cero punto cero tres grados (prácticamente perpendicular).",
       "Debido a esta inclinación axial casi nula, Mercurio carece de estaciones térmicas y el Sol se desplaza eternamente rozando el horizonte en los polos norte y sur. En consecuencia, el interior de los cráteres de impacto profundos situados en latitudes polares elevadas (como Prokofiev, Kandinsky, Tolkien y Chesterton) jamás recibe la luz directa del disco solar, permaneciendo en un régimen de oscuridad absoluta perpetua.",
@@ -214,6 +222,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#9D4EDD",
     "btnImage": "/assets/rocosos/infographic_m2/btn_campo-magnetico.jpg",
     "image": "/assets/rocosos/infographic_m2/hero_campo-magnetico.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m2/diagram_campo-magnetico.webp",
+    "diagramCaption": "Geodinamo activa en el núcleo líquido externo y formación de magnetosfera dipolar",
     "content": [
       "Antes de la era de la exploración interplanetaria in situ, los modelos geofísicos clásicos predecían que Mercurio carecía de campo magnético global. La teoría de la geodínamo estipulaba que para generar un escudo dipolar activo un planeta requería un núcleo metálico fluido con vigorosa convección térmica y una rápida rotación sobre su eje; al ser Mercurio un cuerpo pequeño de rotación lenta, se asumía que su interior estaba rígidamente enfriado.",
       "Para asombro de la comunidad científica mundial, en marzo de 1974 la sonda Mariner 10 de la NASA detectó un campo magnético intrínseco activo durante su primer sobrevuelo rasante. Aunque su intensidad ecuatorial en superficie es modesta (aproximadamente trescientos nanoteslas, equivalente al uno punto uno por ciento del campo magnético terrestre), demostró de manera incontrovertible que el corazón de Mercurio alberga una dínamo magnetohidrodinámica activa.",
@@ -242,6 +252,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#F15BB5",
     "btnImage": "/assets/rocosos/infographic_m2/btn_gran-impacto.jpg",
     "image": "/assets/rocosos/infographic_m2/hero_gran-impacto.jpg",
+    "diagramImage": "/assets/rocosos/infographic_m2/diagram_gran-impacto.webp",
+    "diagramCaption": "Hipótesis del gran impacto rasante: eyección catastrófica del manto primitivo de silicatos",
     "content": [
       "El enigma fundamental de por qué Mercurio posee un núcleo metálico tan desproporcionadamente masivo en relación con su escaso manto de silicatos ha sido objeto de intensos debates en la cosmogeoquímica planetaria. La explicación más sólida y ampliamente modelada numéricamente es la Teoría del Gran Impacto Despojador (Giant Impact Hypothesis), un evento cataclísmico acontecido durante la fase terminal de acreción planetaria.",
       "Hace aproximadamente cuatro mil cuatrocientos millones de años, el proto-Mercurio era un embrión planetario con una masa equivalente al doble de la actual y una proporción roca-metal similar a la de la Tierra primitiva o Marte. Sin embargo, en medio del caos gravitacional primigenio, un protoplaneta intruso del tamaño aproximado de Marte impactó de forma oblicua y rasante contra Mercurio a una velocidad de colisión de veinte a treinta kilómetros por segundo.",
@@ -270,6 +282,8 @@ const INFOGRAPHIC_NODES = [
     "color": "#00F5D4",
     "btnImage": "/assets/rocosos/infographic_m2/btn_exploracion-bepicolombo.webp",
     "image": "/assets/rocosos/infographic_m2/hero_exploracion-bepicolombo.webp",
+    "diagramImage": "/assets/rocosos/infographic_m2/diagram_exploracion-bepicolombo.webp",
+    "diagramCaption": "Misiones orbitales MESSENGER y BepiColombo: asistencias gravitatorias y cartografía global",
     "content": [
       "Enviar una nave espacial a Mercurio constituye una de las mayores hazañas y proezas de la ingeniería astronáutica. Debido a la colosal atracción gravitacional del Sol, cualquier sonda que viaje hacia el interior del Sistema Solar acelera vertiginosamente, requiriendo un cambio acumulado de velocidad (delta-V) mayor incluso que el necesario para enviar una misión interplanetaria hacia Plutón en los confines exteriores.",
       "La era de la exploración in situ fue inaugurada por la misión Mariner 10 de la NASA, que entre 1974 y 1975 realizó tres sobrevuelos rasantes gracias a la asistencia gravitatoria de Venus calculada por el matemático italiano Giuseppe 'Bepi' Colombo, cartografiando por primera vez el cuarenta y cinco por ciento de su superficie craterizada y descubriendo su insospechado campo magnético intrínseco.",
@@ -715,6 +729,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Diagram Image (4ª Imagen: Esquema Técnico) --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (
