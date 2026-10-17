@@ -275,7 +275,7 @@ const INFOGRAPHIC_NODES = [
     btnImage: '/assets/astrotrain/infographic_m6/btn_colonias-espaciales.webp',
     image: '/assets/astrotrain/infographic_m6/hero_colonias-espaciales.webp',
     diagramImage: '/assets/astrotrain/infographic_m6/diagram_colonias-espaciales.webp',
-    diagramCaption: 'Hábitats espaciales a gran escala: cilindros de O'Neill con gravedad artificial por rotación centrífuga',
+    diagramCaption: 'Hábitats espaciales a gran escala: cilindros de O\'Neill con gravedad artificial por rotación centrífuga',
     content: [
       'El concepto de colonias espaciales fue desarrollado formalmente por el físico Gerard K. O\'Neill de la Universidad de Princeton en la década de 1970. En su libro "The High Frontier" (1977), O\'Neill propuso enormes estructuras cilíndricas rotatorias, conocidas como "cilindros de O\'Neill", que generarían gravedad artificial mediante fuerza centrífuga. El diseño más grande tendría 32 km de largo y 6.4 km de diámetro, con una superficie habitable interna de 650 km², suficiente para albergar a varios millones de personas. La rotación a una velocidad de 0.53 rpm (una vuelta cada 114 segundos) simularía una gravedad equivalente a la terrestre en la superficie interior del cilindro.',
       'El Torus de Stanford, diseñado durante un estudio de verano de la NASA en 1975 dirigido por O\'Neill, es una estructura con forma de anillo (donut) de 1.8 km de diámetro que giraría una vez por minuto para generar gravedad terrestre en su perímetro interior. Diseñado para 10,000 a 140,000 habitantes, el torus tendría un espejo central que reflejaría la luz solar hacia espejos secundarios que la distribuirían uniformemente por el interior del anillo, creando un ciclo de día y noche artificial. La agricultura se realizaría en módulos externos no rotatorios, y el blindaje contra radiación cósmica consistiría en escoria lunar procesada de varios metros de espesor.',
@@ -752,7 +752,7 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               borderBottom: `1px solid ${node.color}25`
             }}>
               <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                📐 ESQUEMA TÉCNICO Y DIAGRAMA
+                🎨 ILUSTRACIÓN CIENTÍFICA
               </span>
               <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
             </div>
