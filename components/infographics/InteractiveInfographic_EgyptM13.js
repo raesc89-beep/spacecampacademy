@@ -88,6 +88,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "calendario-365",
+    diagramImage: '/assets/egypt/infographic_m13/diagram_calendario-365.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Primer Calendario de 365 Días',
     "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-365.webp",
     "title": "El Primer Calendario de 365 Días",
     "color": "#80D080",
@@ -116,6 +118,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "calendario-lunar",
+    diagramImage: '/assets/egypt/infographic_m13/diagram_calendario-lunar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Problema del Calendario Lunar',
     "bannerImage": "/assets/egypt/infographic_m13/banner_calendario-lunar.webp",
     "title": "El Problema del Calendario Lunar",
     "color": "#7EC8E3",
@@ -144,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tres-estaciones",
+    diagramImage: '/assets/egypt/infographic_m13/diagram_tres-estaciones.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Akhet, Peret y Shemu',
     "bannerImage": "/assets/egypt/infographic_m13/banner_gregorio-reforma.webp",
     "title": "Akhet, Peret y Shemu",
     "color": "#E8C96A",
@@ -172,6 +178,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sirio-sopdet",
+    diagramImage: '/assets/egypt/infographic_m13/diagram_sirio-sopdet.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Sirio y el Orto Heliaco',
     "bannerImage": "/assets/egypt/infographic_m13/banner_haab-maya.webp",
     "title": "Sirio y el Orto Heliaco",
     "color": "#B388FF",
@@ -200,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "julio-cesar",
+    diagramImage: '/assets/egypt/infographic_m13/diagram_julio-cesar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre De Egipto a Roma: El Calendario Juliano',
     "bannerImage": "/assets/egypt/infographic_m13/banner_julio-cesar.webp",
     "title": "De Egipto a Roma: El Calendario Juliano",
     "color": "#FF8A65",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gregorio-reforma",
+    diagramImage: '/assets/egypt/infographic_m13/diagram_gregorio-reforma.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Reforma Gregoriana de 1582',
     "bannerImage": "/assets/egypt/infographic_m13/banner_sirio-sopdet.webp",
     "title": "La Reforma Gregoriana de 1582",
     "color": "#4FC3F7",
@@ -256,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "haab-maya",
+    diagramImage: '/assets/egypt/infographic_m13/diagram_haab-maya.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Mayas: Otro 365',
     "bannerImage": "/assets/egypt/infographic_m13/banner_tres-estaciones.webp",
     "title": "Los Mayas: Otro 365",
     "color": "#A5D6A7",
@@ -622,6 +636,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem', background: `linear-gradient(135deg, ${node.color}12, ${node.color}05)`,

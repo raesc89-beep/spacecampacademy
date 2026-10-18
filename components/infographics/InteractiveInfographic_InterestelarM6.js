@@ -94,6 +94,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "lanzamiento-1977",
+    diagramImage: '/assets/interestelar/infographic_m6/diagram_lanzamiento-1977.webp',
+    diagramCaption: 'Lanzamiento 1977: Voyager 1 y 2 despegaron con pocas semanas de diferencia iniciando la gran gira planetaria',
     "title": "El Lanzamiento",
     "color": "#FFD54F",
     "btnImage": "/assets/interestelar/infographic_m6/btn_lanzamiento-1977.jpg",
@@ -123,6 +125,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gran-tour-planetario",
+    diagramImage: '/assets/interestelar/infographic_m6/diagram_gran-tour-planetario.webp',
+    diagramCaption: 'La Gran Gira Planetaria: alineación de 175 años que permitió visitar Júpiter, Saturno, Urano y Neptuno',
     "title": "El Gran Tour",
     "color": "#2979FF",
     "btnImage": "/assets/interestelar/infographic_m6/btn_gran-tour-planetario.jpg",
@@ -152,6 +156,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "disco-de-oro",
+    diagramImage: '/assets/interestelar/infographic_m6/diagram_disco-de-oro.webp',
+    diagramCaption: 'El Disco de Oro: 116 imágenes y sonidos de la Tierra enviados al cosmos como mensaje de la humanidad',
     "title": "El Disco de Oro",
     "color": "#FF8A65",
     "btnImage": "/assets/interestelar/infographic_m6/btn_disco-de-oro.jpg",
@@ -181,6 +187,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "heliopausa-cruce",
+    diagramImage: '/assets/interestelar/infographic_m6/diagram_heliopausa-cruce.webp',
+    diagramCaption: 'Cruce de la heliopausa: Voyager 1 entró al espacio interestelar en agosto 2012, primera vez en la historia',
     "title": "Cruzando la Heliopausa",
     "color": "#00E676",
     "btnImage": "/assets/interestelar/infographic_m6/btn_heliopausa-cruce.jpg",
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "espacio-interestelar",
+    diagramImage: '/assets/interestelar/infographic_m6/diagram_espacio-interestelar.webp',
+    diagramCaption: 'En el espacio interestelar: Voyager mide en tiempo real el medio interestelar a más de 163 UA del Sol',
     "title": "En el Espacio Interestelar",
     "color": "#B388FF",
     "btnImage": "/assets/interestelar/infographic_m6/btn_espacio-interestelar.jpg",
@@ -239,6 +249,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "energia-plutonio",
+    diagramImage: '/assets/interestelar/infographic_m6/diagram_energia-plutonio.webp',
+    diagramCaption: 'Energía de plutonio: los RTG de Voyager convierten el calor del Pu-238 en electricidad, ahora con menos de 40W',
     "title": "Energía de Plutonio",
     "color": "#FFD740",
     "btnImage": "/assets/interestelar/infographic_m6/btn_energia-plutonio.jpg",
@@ -268,6 +280,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-humanidad",
+    diagramImage: '/assets/interestelar/infographic_m6/diagram_legado-humanidad.webp',
+    diagramCaption: 'El legado de Voyager: símbolo de la curiosidad humana que sigue hablando con la Tierra desde 23,000 millones de km',
     "title": "El Legado",
     "color": "#80CBC4",
     "btnImage": "/assets/interestelar/infographic_m6/btn_legado-humanidad.jpg",
@@ -739,6 +753,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

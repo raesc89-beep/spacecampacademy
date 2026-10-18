@@ -228,6 +228,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "serpiente",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_serpiente.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Serpiente del Caos',
     "bannerImage": "/assets/egypt/infographic_m14/banner_astronomia-egipcia.webp",
     "title": "La Serpiente del Caos",
     "color": "#FF5252",
@@ -256,6 +258,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "eclipses",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_eclipses.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Eclipses: Apofis Gana',
     "bannerImage": "/assets/egypt/infographic_m14/banner_astronomia-medica.webp",
     "title": "Los Eclipses: Apofis Gana",
     "color": "#D32F2F",
@@ -284,6 +288,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ciclo-saros",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_ciclo-saros.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Ciclo Saros',
     "bannerImage": "/assets/egypt/infographic_m14/banner_decanos-estelares.webp",
     "title": "El Ciclo Saros",
     "color": "#E53935",
@@ -312,6 +318,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "asteroide-2029",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_asteroide-2029.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Apophis: El Asteroide Real',
     "bannerImage": "/assets/egypt/infographic_m14/banner_dendera-planetas.webp",
     "title": "Apophis: El Asteroide Real",
     "color": "#C62828",
@@ -340,6 +348,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "peligro",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_peligro.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Amenaza Real',
     "bannerImage": "/assets/egypt/infographic_m14/banner_eclipse-prediccion.webp",
     "title": "La Amenaza Real",
     "color": "#B71C1C",
@@ -368,6 +378,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "dart",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_dart.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre DART: Vencer a Apofis',
     "bannerImage": "/assets/egypt/infographic_m14/banner_legado-astronomia.webp",
     "title": "DART: Vencer a Apofis",
     "color": "#E53935",
@@ -396,6 +408,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "libro-muertos",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_libro-muertos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Libro para Vencer a Apofis',
     "bannerImage": "/assets/egypt/infographic_m14/banner_merkhet.webp",
     "title": "El Libro para Vencer a Apofis",
     "color": "#FF5252",
@@ -424,6 +438,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-caos",
+    diagramImage: '/assets/egypt/infographic_m14/diagram_legado-caos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Caos que nos Creó',
     "bannerImage": "/assets/egypt/infographic_m14/banner_nut-cosmologia.webp",
     "title": "El Caos que nos Creó",
     "color": "#FF1744",
@@ -763,6 +779,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem',

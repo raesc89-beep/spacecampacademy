@@ -162,6 +162,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'primeros-ictiosaurios',
+    diagramImage: '/assets/marinos/infographic_m2/diagram_primeros-ictiosaurios.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Primeros Ictiosaurios',
               bannerImage: '/assets/marinos/infographic_m2/banner_primeros-ictiosaurios.webp',
     title: 'Los Primeros Ictiosaurios',
     color: '#5B7B9A',
@@ -182,6 +184,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'anatomia-nadador',
+    diagramImage: '/assets/marinos/infographic_m2/diagram_anatomia-nadador.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Anatomía de un Nadador Perfecto',
               bannerImage: '/assets/marinos/infographic_m2/banner_anatomia-nadador.webp',
     title: 'Anatomía de un Nadador Perfecto',
     color: '#B87D5E',
@@ -202,6 +206,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ophthalmosaurus-ojo',
+    diagramImage: '/assets/marinos/infographic_m2/diagram_ophthalmosaurus-ojo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ophthalmosaurus: El Ojo Gigante',
               bannerImage: '/assets/marinos/infographic_m2/banner_ophthalmosaurus-ojo.webp',
     title: 'Ophthalmosaurus: El Ojo Gigante',
     color: '#6E8FA8',
@@ -222,6 +228,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'shonisaurus-gigante',
+    diagramImage: '/assets/marinos/infographic_m2/diagram_shonisaurus-gigante.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Shonisaurus: El Gigante del Triásico',
               bannerImage: '/assets/marinos/infographic_m2/banner_shonisaurus-gigante.webp',
     title: 'Shonisaurus: El Gigante del Triásico',
     color: '#8B6B4A',
@@ -242,6 +250,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nacimiento-mar',
+    diagramImage: '/assets/marinos/infographic_m2/diagram_nacimiento-mar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Nacimiento en el Mar',
               bannerImage: '/assets/marinos/infographic_m2/banner_nacimiento-mar.webp',
     title: 'Nacimiento en el Mar',
     color: '#7C93A8',
@@ -262,6 +272,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dieta-caza',
+    diagramImage: '/assets/marinos/infographic_m2/diagram_dieta-caza.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Dieta y Caza',
               bannerImage: '/assets/marinos/infographic_m2/banner_dieta-caza.webp',
     title: 'Dieta y Caza',
     color: '#9E7B5C',
@@ -282,6 +294,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'desaparicion-temprana',
+    diagramImage: '/assets/marinos/infographic_m2/diagram_desaparicion-temprana.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Desaparición Temprana',
               bannerImage: '/assets/marinos/infographic_m2/banner_desaparicion-temprana.webp',
     title: 'La Desaparición Temprana',
     color: '#4A6F8C',
@@ -738,6 +752,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

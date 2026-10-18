@@ -55,6 +55,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "felicette",
+    diagramImage: '/assets/animales/infographic_m4/diagram_felicette.webp',
+    diagramCaption: 'Félicette: El Primer Felino Astronauta',
     "title": "Félicette: El Primer Felino Astronauta",
     "color": "#D87D4A",
     "btnImage": "/assets/animales/infographic_m4/btn_felicette.webp",
@@ -84,6 +86,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "moscas",
+    diagramImage: '/assets/animales/infographic_m4/diagram_moscas.webp',
+    diagramCaption: 'Moscas de la Fruta: Los Pioneros',
     "title": "Moscas de la Fruta: Los Pioneros",
     "color": "#D4B872",
     "btnImage": "/assets/animales/infographic_m4/btn_moscas.webp",
@@ -113,6 +117,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "invertebrados",
+    diagramImage: '/assets/animales/infographic_m4/diagram_invertebrados.webp',
+    diagramCaption: 'Resistencia Extrema: Tardígrados',
     "title": "Resistencia Extrema: Tardígrados",
     "color": "#3949AB",
     "btnImage": "/assets/animales/infographic_m4/btn_invertebrados.webp",
@@ -142,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tardigrados-espacio",
+    diagramImage: '/assets/animales/infographic_m4/diagram_tardigrados-espacio.webp',
+    diagramCaption: 'Tardígrados: Los Invencibles del Cosmos',
     "title": "Tardígrados: Los Invencibles del Cosmos",
     "color": "#81C784",
     "btnImage": "/assets/animales/infographic_m4/btn_tardigrados-espacio.webp",
@@ -171,6 +179,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "elegans-columbia",
+    diagramImage: '/assets/animales/infographic_m4/diagram_elegans-columbia.webp',
+    diagramCaption: 'C. elegans y el Columbia: Sobrevivientes del Desastre',
     "title": "C. elegans y el Columbia: Sobrevivientes del Desastre",
     "color": "#4FC3F7",
     "btnImage": "/assets/animales/infographic_m4/btn_elegans-columbia.webp",
@@ -200,6 +210,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "peces-zebrafish",
+    diagramImage: '/assets/animales/infographic_m4/diagram_peces-zebrafish.webp',
+    diagramCaption: 'Peces Cebra: Vertebrados en Microgravedad',
     "title": "Peces Cebra: Vertebrados en Microgravedad",
     "color": "#7986CB",
     "btnImage": "/assets/animales/infographic_m4/btn_peces-zebrafish.webp",
@@ -229,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ratones-reproduccion",
+    diagramImage: '/assets/animales/infographic_m4/diagram_ratones-reproduccion.webp',
+    diagramCaption: 'Mamíferos en Órbita: El Futuro de la Vida en el Espacio',
     "title": "Mamíferos en Órbita: El Futuro de la Vida en el Espacio",
     "color": "#FF8A65",
     "btnImage": "/assets/animales/infographic_m4/btn_ratones-reproduccion.webp",
@@ -543,6 +557,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

@@ -86,6 +86,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "puente-einstein-rosen",
+    diagramImage: '/assets/interstellar/infographic_m4/diagram_puente-einstein-rosen.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Puente de Einstein y Rosen',
     "bannerImage": "/assets/interstellar/infographic_m4/banner_puente-einstein-rosen.webp",
     "title": "El Puente de Einstein y Rosen",
     "color": "#4FC3F7",
@@ -114,6 +116,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "hoja-doblada",
+    diagramImage: '/assets/interstellar/infographic_m4/diagram_hoja-doblada.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Doblar el Universo',
     "bannerImage": "/assets/interstellar/infographic_m4/banner_hoja-doblada.webp",
     "title": "Doblar el Universo",
     "color": "#FF6B35",
@@ -142,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "wormhole-saturno",
+    diagramImage: '/assets/interstellar/infographic_m4/diagram_wormhole-saturno.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Agujero de Gusano de Saturno',
     "bannerImage": "/assets/interstellar/infographic_m4/banner_wormhole-saturno.webp",
     "title": "El Agujero de Gusano de Saturno",
     "color": "#7C4DFF",
@@ -170,6 +176,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "materia-exotica",
+    diagramImage: '/assets/interstellar/infographic_m4/diagram_materia-exotica.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Materia Imposible',
     "bannerImage": "/assets/interstellar/infographic_m4/banner_materia-exotica.webp",
     "title": "La Materia Imposible",
     "color": "#F44336",
@@ -198,6 +206,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "morris-thorne",
+    diagramImage: '/assets/interstellar/infographic_m4/diagram_morris-thorne.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Wormhole que Puedes Cruzar',
     "bannerImage": "/assets/interstellar/infographic_m4/banner_morris-thorne.webp",
     "title": "El Wormhole que Puedes Cruzar",
     "color": "#26A69A",
@@ -226,6 +236,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "dimensiones-extra",
+    diagramImage: '/assets/interstellar/infographic_m4/diagram_dimensiones-extra.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Más Allá de Tres Dimensiones',
     "bannerImage": "/assets/interstellar/infographic_m4/banner_dimensiones-extra.webp",
     "title": "Más Allá de Tres Dimensiones",
     "color": "#AB47BC",
@@ -254,6 +266,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "viaje-posible",
+    diagramImage: '/assets/interstellar/infographic_m4/diagram_viaje-posible.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre ¿Podremos Cruzar Algún Día?',
     "bannerImage": "/assets/interstellar/infographic_m4/banner_viaje-posible.webp",
     "title": "¿Podremos Cruzar Algún Día?",
     "color": "#FF9800",

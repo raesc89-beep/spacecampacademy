@@ -127,6 +127,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "limite-velocidad-luz",
+    diagramImage: '/assets/wormhole/infographic_m2/diagram_limite-velocidad-luz.webp',
+    diagramCaption: 'La luz viaja en el vacío a 299,792.458 km/s; un año luz es la distancia que recorre en un año: unos 9.46 billones de km.',
     bannerImage: '/assets/wormhole/infographic_m2/banner_limite-velocidad-luz.webp',
     bannerCaption: "La luz viaja en el vacío a 299,792.458 km/s; un año luz es la distancia que recorre en un año: unos 9.46 billones de km.",
     title: "El límite de velocidad del universo",
@@ -148,6 +150,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "proxima-centauri-distancias",
+    diagramImage: '/assets/wormhole/infographic_m2/diagram_proxima-centauri-distancias.webp',
+    diagramCaption: 'Próxima Centauri, la estrella más cercana al Sol, está a unos 4.24 años luz: su luz tarda más de cuatro años en llegarnos.',
     bannerImage: '/assets/wormhole/infographic_m2/banner_proxima-centauri-distancias.webp',
     bannerCaption: "Próxima Centauri, la estrella más cercana al Sol, está a unos 4.24 años luz: su luz tarda más de cuatro años en llegarnos.",
     title: "Próxima Centauri: la vecina más cercana",
@@ -169,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "atajo-sin-romper-reglas",
+    diagramImage: '/assets/wormhole/infographic_m2/diagram_atajo-sin-romper-reglas.webp',
+    diagramCaption: 'En un agujero de gusano el viajero nunca supera localmente la velocidad de la luz: lo que cambia es la longitud del camino.',
     bannerImage: '/assets/wormhole/infographic_m2/banner_atajo-sin-romper-reglas.webp',
     bannerCaption: "En un agujero de gusano el viajero nunca supera localmente la velocidad de la luz: lo que cambia es la longitud del camino.",
     title: "Un atajo sin romper las reglas",
@@ -190,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "metrica-morris-thorne-1988",
+    diagramImage: '/assets/wormhole/infographic_m2/diagram_metrica-morris-thorne-1988.webp',
+    diagramCaption: 'En 1988 Michael Morris y Kip Thorne publicaron la primera descripción detallada de un agujero de gusano atravesable por personas.',
     bannerImage: '/assets/wormhole/infographic_m2/banner_metrica-morris-thorne-1988.webp',
     bannerCaption: "En 1988 Michael Morris y Kip Thorne publicaron la primera descripción detallada de un agujero de gusano atravesable por personas.",
     title: "1988: la métrica de Morris-Thorne",
@@ -211,6 +219,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "kip-thorne-interstellar",
+    diagramImage: '/assets/wormhole/infographic_m2/diagram_kip-thorne-interstellar.webp',
+    diagramCaption: 'Kip Thorne compartió el Premio Nobel de Física 2017 con Rainer Weiss y Barry Barish por su papel decisivo en el detector LIGO.',
     bannerImage: '/assets/wormhole/infographic_m2/banner_kip-thorne-interstellar.webp',
     bannerCaption: "Kip Thorne compartió el Premio Nobel de Física 2017 con Rainer Weiss y Barry Barish por su papel decisivo en el detector LIGO.",
     title: "Kip Thorne: del Nobel a «Interstellar»",
@@ -232,6 +242,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ligo-ondas-gravitacionales",
+    diagramImage: '/assets/wormhole/infographic_m2/diagram_ligo-ondas-gravitacionales.webp',
+    diagramCaption: 'El 14 de septiembre de 2015 LIGO detectó por primera vez ondas gravitacionales, producidas por la fusión de dos agujeros negros.',
     bannerImage: '/assets/wormhole/infographic_m2/banner_ligo-ondas-gravitacionales.webp',
     bannerCaption: "El 14 de septiembre de 2015 LIGO detectó por primera vez ondas gravitacionales, producidas por la fusión de dos agujeros negros.",
     title: "LIGO y las ondas gravitacionales",
@@ -253,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "er-epr-entrelazamiento",
+    diagramImage: '/assets/wormhole/infographic_m2/diagram_er-epr-entrelazamiento.webp',
+    diagramCaption: 'En 2013 Juan Maldacena y Leonard Susskind propusieron que sistemas entrelazados estarían unidos por puentes de Einstein-Rosen.',
     bannerImage: '/assets/wormhole/infographic_m2/banner_er-epr-entrelazamiento.webp',
     bannerCaption: "En 2013 Juan Maldacena y Leonard Susskind propusieron que sistemas entrelazados estarían unidos por puentes de Einstein-Rosen.",
     title: "ER=EPR: agujeros de gusano y entrelazamiento",
@@ -708,6 +722,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

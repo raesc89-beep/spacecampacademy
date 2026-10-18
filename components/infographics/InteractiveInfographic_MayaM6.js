@@ -90,6 +90,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "dzibilchaltun-sitio",
+    diagramImage: '/assets/maya/infographic_m6/diagram_dzibilchaltun-sitio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Sitio: Dzibilchaltún',
     "bannerImage": "/assets/maya/infographic_m6/banner_codices-mayas.webp",
     "title": "El Sitio: Dzibilchaltún",
     "color": "#ECEFF1",
@@ -118,6 +120,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "templo-munecos",
+    diagramImage: '/assets/maya/infographic_m6/diagram_templo-munecos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Templo de las 7 Muñecas',
     "bannerImage": "/assets/maya/infographic_m6/banner_desciframiento-maya.webp",
     "title": "El Templo de las 7 Muñecas",
     "color": "#BF360C",
@@ -146,6 +150,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "equinoccio-solar",
+    diagramImage: '/assets/maya/infographic_m6/diagram_equinoccio-solar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Fenómeno del Equinoccio',
     "bannerImage": "/assets/maya/infographic_m6/banner_escritura-jeroglificos-maya.webp",
     "title": "El Fenómeno del Equinoccio",
     "color": "#FFC400",
@@ -174,6 +180,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "solsticio-alineacion",
+    diagramImage: '/assets/maya/infographic_m6/diagram_solsticio-alineacion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Solsticios: Las Otras Fechas',
     "bannerImage": "/assets/maya/infographic_m6/banner_glifos-modernos.webp",
     "title": "Los Solsticios: Las Otras Fechas",
     "color": "#00B8D4",
@@ -202,6 +210,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sacbe-procesional",
+    diagramImage: '/assets/maya/infographic_m6/diagram_sacbe-procesional.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Sacbé: El Camino Blanco',
     "bannerImage": "/assets/maya/infographic_m6/banner_inscripciones-palenque.webp",
     "title": "El Sacbé: El Camino Blanco",
     "color": "#FFE0B2",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cenote-xlakah",
+    diagramImage: '/assets/maya/infographic_m6/diagram_cenote-xlakah.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cenote Xlakah: El Portal de Agua',
     "bannerImage": "/assets/maya/infographic_m6/banner_landa-destruccion.webp",
     "title": "Cenote Xlakah: El Portal de Agua",
     "color": "#0097A7",
@@ -258,6 +270,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "restauracion-moderna",
+    diagramImage: '/assets/maya/infographic_m6/diagram_restauracion-moderna.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Restauración Moderna',
     "bannerImage": "/assets/maya/infographic_m6/banner_legado-escritura-maya.webp",
     "title": "La Restauración Moderna",
     "color": "#2E7D32",
@@ -728,6 +742,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}

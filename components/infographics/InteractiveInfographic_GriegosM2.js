@@ -150,6 +150,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'el-hombre-y-la-leyenda',
+    diagramImage: '/assets/griegos/infographic_m2/diagram_el-hombre-y-la-leyenda.webp',
+    diagramCaption: 'El hombre y la leyenda: Pitágoras de Samos, entre el filósofo histórico y el místico matemático',
     title: 'El Hombre y la Leyenda',
     color: '#E8E0D4',
     btnImage: '/assets/los_griegos/infographic_m2/btn_el-hombre-y-la-leyenda.webp',
@@ -171,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'la-escuela-pitagorica',
+    diagramImage: '/assets/griegos/infographic_m2/diagram_la-escuela-pitagorica.webp',
+    diagramCaption: 'La escuela pitagórica: una comunidad filosófico-matemática con hombres y mujeres por igual',
     title: 'La Escuela Pitagórica',
     color: '#2E6B8A',
     btnImage: '/assets/los_griegos/infographic_m2/btn_la-escuela-pitagorica.webp',
@@ -192,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'el-teorema-de-pitagoras',
+    diagramImage: '/assets/griegos/infographic_m2/diagram_el-teorema-de-pitagoras.webp',
+    diagramCaption: 'El Teorema de Pitágoras: a²+b²=c², la relación matemática más famosa de la historia',
     title: 'El Teorema de Pitágoras',
     color: '#D4C9B8',
     btnImage: '/assets/los_griegos/infographic_m2/btn_el-teorema-de-pitagoras.webp',
@@ -213,6 +219,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'musica-y-matematicas',
+    diagramImage: '/assets/griegos/infographic_m2/diagram_musica-y-matematicas.webp',
+    diagramCaption: 'Música y matemáticas: Pitágoras descubrió que los intervalos musicales son razones numéricas simples',
     title: 'Música y Matemáticas',
     color: '#3A7FA0',
     btnImage: '/assets/los_griegos/infographic_m2/btn_musica-y-matematicas.webp',
@@ -234,6 +242,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'numeros-irracionales',
+    diagramImage: '/assets/griegos/infographic_m2/diagram_numeros-irracionales.webp',
+    diagramCaption: 'Los números irracionales: la crisis que sacudió la escuela pitagórica cuando √2 resultó ser irracional',
     title: 'Números Irracionales',
     color: '#C0B09C',
     btnImage: '/assets/los_griegos/infographic_m2/btn_numeros-irracionales.webp',
@@ -255,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'los-numeros-perfectos',
+    diagramImage: '/assets/griegos/infographic_m2/diagram_los-numeros-perfectos.webp',
+    diagramCaption: 'Los números perfectos: para Pitágoras los números tenían propiedades místicas y sagradas',
     title: 'Los Números Perfectos',
     color: '#1E5B7A',
     btnImage: '/assets/los_griegos/infographic_m2/btn_los-numeros-perfectos.webp',
@@ -276,6 +288,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-matematico',
+    diagramImage: '/assets/griegos/infographic_m2/diagram_legado-matematico.webp',
+    diagramCaption: 'El legado matemático: el Teorema de Pitágoras en la arquitectura, navegación y computación moderna',
     title: 'Legado Matemático',
     color: '#F0EAE0',
     btnImage: '/assets/los_griegos/infographic_m2/btn_legado-matematico.webp',
@@ -771,6 +785,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

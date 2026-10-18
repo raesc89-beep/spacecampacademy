@@ -151,6 +151,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "relatividad-basico",
+    diagramImage: '/assets/bttf/infographic_m2/diagram_relatividad-basico.webp',
+    diagramCaption: 'Las bases de la relatividad especial de Einstein y la dilatación del tiempo',
     "title": "¿Qué es el Tiempo?",
     "color": "#6EC6FF",
     "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_relatividad.webp",
@@ -180,6 +182,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "delorean-velocidad",
+    diagramImage: '/assets/bttf/infographic_m2/diagram_delorean-velocidad.webp',
+    diagramCaption: 'El DeLorean alcanza las 88 mph y activa el desplazamiento temporal',
     "title": "88 Millas por Hora",
     "color": "#FFD740",
     "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_delorean.webp",
@@ -209,6 +213,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "paradoja-abuelo",
+    diagramImage: '/assets/bttf/infographic_m2/diagram_paradoja-abuelo.webp',
+    diagramCaption: 'La paradoja del abuelo: el dilema lógico del viaje al pasado',
     "title": "La Paradoja del Abuelo",
     "color": "#FF8A80",
     "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_paradoja.webp",
@@ -238,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "einstein-relatividad",
+    diagramImage: '/assets/bttf/infographic_m2/diagram_einstein-relatividad.webp',
+    diagramCaption: 'Einstein y su teoría de la relatividad que redefinió el tiempo y el espacio',
     "title": "Einstein y el Tiempo Elástico",
     "color": "#B388FF",
     "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_einstein.webp",
@@ -267,6 +275,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "muchos-mundos",
+    diagramImage: '/assets/bttf/infographic_m2/diagram_muchos-mundos.webp',
+    diagramCaption: 'La teoría cuántica de los muchos mundos y las líneas temporales paralelas',
     "title": "Líneas Temporales Paralelas",
     "color": "#CE93D8",
     "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_mundos.webp",
@@ -296,6 +306,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "predicciones-2015",
+    diagramImage: '/assets/bttf/infographic_m2/diagram_predicciones-2015.webp',
+    diagramCaption: 'Las predicciones de BTTF para el año 2015: ¿cuáles se hicieron realidad?',
     "title": "Predicciones del Futuro",
     "color": "#80CBC4",
     "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_predicciones.webp",
@@ -325,6 +337,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ciencia-ficcion",
+    diagramImage: '/assets/bttf/infographic_m2/diagram_ciencia-ficcion.webp',
+    diagramCaption: 'La ciencia ficción como catalizadora de la investigación científica real',
     "title": "Ciencia Ficción como Brújula",
     "color": "#FFAB91",
     "btnImage": "/assets/bttf/infographic_viajes_tiempo/btn_cienciaficcion.webp",
@@ -783,6 +797,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

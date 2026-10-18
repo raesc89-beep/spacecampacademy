@@ -149,6 +149,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'atenas-siglo-v',
+    diagramImage: '/assets/griegos/infographic_m3/diagram_atenas-siglo-v.webp',
+    diagramCaption: 'Atenas en el siglo V a.C.: la ciudad dorada donde Sócrates caminó y enseñó en el ágora',
     title: 'Atenas en el Siglo V',
     color: '#E8E0D4',
     btnImage: '/assets/los_griegos/infographic_m3/btn_atenas-siglo-v.webp',
@@ -170,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'socrates-el-hombre',
+    diagramImage: '/assets/griegos/infographic_m3/diagram_socrates-el-hombre.webp',
+    diagramCaption: 'Sócrates el hombre: filósofo descalzo que interrogaba a todos en el ágora de Atenas',
     title: 'Sócrates el Hombre',
     color: '#2E6B8A',
     btnImage: '/assets/los_griegos/infographic_m3/btn_socrates-el-hombre.webp',
@@ -191,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'metodo-socratico',
+    diagramImage: '/assets/griegos/infographic_m3/diagram_metodo-socratico.webp',
+    diagramCaption: 'El método socrático: preguntar hasta que el interlocutor descubre sus propias contradicciones',
     title: 'El Método Socrático',
     color: '#3A7FA0',
     btnImage: '/assets/los_griegos/infographic_m3/btn_metodo-socratico.webp',
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'vida-examinada',
+    diagramImage: '/assets/griegos/infographic_m3/diagram_vida-examinada.webp',
+    diagramCaption: 'La vida examinada: ‘Una vida sin examen no merece ser vivida’ — la ética de Sócrates',
     title: 'La Vida Examinada',
     color: '#D4C9B8',
     btnImage: '/assets/los_griegos/infographic_m3/btn_vida-examinada.webp',
@@ -233,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'el-juicio',
+    diagramImage: '/assets/griegos/infographic_m3/diagram_el-juicio.webp',
+    diagramCaption: 'El juicio de Sócrates: 501 ciudadanos atenienses votaron su condena a muerte en 399 a.C.',
     title: 'El Juicio de Sócrates',
     color: '#C0B09C',
     btnImage: '/assets/los_griegos/infographic_m3/btn_el-juicio.webp',
@@ -254,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'muerte-de-socrates',
+    diagramImage: '/assets/griegos/infographic_m3/diagram_muerte-de-socrates.webp',
+    diagramCaption: 'La muerte de Sócrates: bebió la cicuta con serenidad rodeado de sus discípulos en llanto',
     title: 'La Muerte de Sócrates',
     color: '#1E5B7A',
     btnImage: '/assets/los_griegos/infographic_m3/btn_muerte-de-socrates.webp',
@@ -275,6 +287,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-socratico',
+    diagramImage: '/assets/griegos/infographic_m3/diagram_legado-socratico.webp',
+    diagramCaption: 'El legado socrático: Sócrates → Platón → Aristóteles → la filosofía occidental completa',
     title: 'El Legado Socrático',
     color: '#F0EAE0',
     btnImage: '/assets/los_griegos/infographic_m3/btn_legado-socratico.webp',
@@ -774,6 +788,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "abismo-energia-lhc",
+    diagramImage: '/assets/wormhole/infographic_m12/diagram_abismo-energia-lhc.webp',
+    diagramCaption: 'El LHC hace chocar protones a 13,6 TeV; la energía de Planck es casi mil billones de veces mayor.',
     bannerImage: '/assets/wormhole/infographic_m12/banner_abismo-energia-lhc.webp',
     bannerCaption: "El LHC hace chocar protones a 13,6 TeV; la energía de Planck es casi mil billones de veces mayor.",
     title: "El Abismo de Energía",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "dimensiones-extra-mini-agujeros",
+    diagramImage: '/assets/wormhole/infographic_m12/diagram_dimensiones-extra-mini-agujeros.webp',
+    diagramCaption: 'En 1998, el modelo ADD propuso dimensiones extra que permitirían crear mini agujeros negros en colisionadores.',
     bannerImage: '/assets/wormhole/infographic_m12/banner_dimensiones-extra-mini-agujeros.webp',
     bannerCaption: "En 1998, el modelo ADD propuso dimensiones extra que permitirían crear mini agujeros negros en colisionadores.",
     title: "Dimensiones Extra y Mini Agujeros Negros",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "efecto-casimir-vacio",
+    diagramImage: '/assets/wormhole/infographic_m12/diagram_efecto-casimir-vacio.webp',
+    diagramCaption: 'En 1948, Hendrik Casimir predijo que dos placas metálicas en el vacío se atraen; en 1997 se midió con precisión.',
     bannerImage: '/assets/wormhole/infographic_m12/banner_efecto-casimir-vacio.webp',
     bannerCaption: "En 1948, Hendrik Casimir predijo que dos placas metálicas en el vacío se atraen; en 1997 se midió con precisión.",
     title: "Energía Negativa en el Laboratorio",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "chip-sycamore-2022",
+    diagramImage: '/assets/wormhole/infographic_m12/diagram_chip-sycamore-2022.webp',
+    diagramCaption: 'En 2022, un equipo liderado por Caltech usó 9 cúbits del procesador Sycamore de Google para simular un agujero de gusano.',
     bannerImage: '/assets/wormhole/infographic_m12/banner_chip-sycamore-2022.webp',
     bannerCaption: "En 2022, un equipo liderado por Caltech usó 9 cúbits del procesador Sycamore de Google para simular un agujero de gusano.",
     title: "Un Agujero de Gusano en un Chip",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "debate-holograma-cuantico",
+    diagramImage: '/assets/wormhole/infographic_m12/diagram_debate-holograma-cuantico.webp',
+    diagramCaption: 'En 2023, Kobrin, Schuster y Yao argumentaron que el modelo reducido de 2022 no reproducía bien la física de un agujero de gusano.',
     bannerImage: '/assets/wormhole/infographic_m12/banner_debate-holograma-cuantico.webp',
     bannerCaption: "En 2023, Kobrin, Schuster y Yao argumentaron que el modelo reducido de 2022 no reproducía bien la física de un agujero de gusano.",
     title: "¿Túnel Real o Túnel Simulado?",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "lentes-tuneles-luz",
+    diagramImage: '/assets/wormhole/infographic_m12/diagram_lentes-tuneles-luz.webp',
+    diagramCaption: 'En 1995, Cramer, Forward, Morris, Visser, Benford y Landis calcularon cómo un agujero de gusano con masa negativa desviaría la luz.',
     bannerImage: '/assets/wormhole/infographic_m12/banner_lentes-tuneles-luz.webp',
     bannerCaption: "En 1995, Cramer, Forward, Morris, Visser, Benford y Landis calcularon cómo un agujero de gusano con masa negativa desviaría la luz.",
     title: "Lentes Cósmicas: Buscar Túneles con Luz",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ecos-ondas-gravitacionales",
+    diagramImage: '/assets/wormhole/infographic_m12/diagram_ecos-ondas-gravitacionales.webp',
+    diagramCaption: 'En 2016, Cardoso, Franzin y Pani propusieron que ecos tras una fusión podrían delatar un objeto sin horizonte, como un agujero de gusano.',
     bannerImage: '/assets/wormhole/infographic_m12/banner_ecos-ondas-gravitacionales.webp',
     bannerCaption: "En 2016, Cardoso, Franzin y Pani propusieron que ecos tras una fusión podrían delatar un objeto sin horizonte, como un agujero de gusano.",
     title: "Ecos en las Ondas Gravitacionales",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

@@ -79,6 +79,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "ensayos-biologicos",
+    diagramImage: '/assets/animales/infographic_m1/diagram_ensayos-biologicos.webp',
+    diagramCaption: 'Primeros Ensayos Biológicos en el Espacio',
     "title": "Primeros Ensayos Biológicos en el Espacio",
     "color": "#D87D4A",
     "btnImage": "/assets/animales/infographic_m1/btn_ensayos-biologicos.webp",
@@ -108,6 +110,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "vuelo-primates",
+    diagramImage: '/assets/animales/infographic_m1/diagram_vuelo-primates.webp',
+    diagramCaption: 'El Vuelo de los Primates y la Tolerancia G',
     "title": "El Vuelo de los Primates y la Tolerancia G",
     "color": "#D4B872",
     "btnImage": "/assets/animales/infographic_m1/btn_vuelo-primates.webp",
@@ -137,6 +141,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "caninos-sovieticos",
+    diagramImage: '/assets/animales/infographic_m1/diagram_caninos-sovieticos.webp',
+    diagramCaption: 'Los Caninos Soviéticos y el Aislamiento Orbital',
     "title": "Los Caninos Soviéticos y el Aislamiento Orbital",
     "color": "#80DEEA",
     "btnImage": "/assets/animales/infographic_m1/btn_caninos-sovieticos.webp",
@@ -166,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ecosistemas-cerrados",
+    diagramImage: '/assets/animales/infographic_m1/diagram_ecosistemas-cerrados.webp',
+    diagramCaption: 'Ecosistemas Cerrados y Microorganismos Extremófilos',
     "title": "Ecosistemas Cerrados y Microorganismos Extremófilos",
     "color": "#3949AB",
     "btnImage": "/assets/animales/infographic_m1/btn_ecosistemas-cerrados.webp",
@@ -195,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "insectos-espacio",
+    diagramImage: '/assets/animales/infographic_m1/diagram_insectos-espacio.webp',
+    diagramCaption: 'Insectos y Gusanos: Los Organismos Modelo del Cosmos',
     "title": "Insectos y Gusanos: Los Organismos Modelo del Cosmos",
     "color": "#6EC6FF",
     "btnImage": "/assets/animales/infographic_m1/btn_insectos-espacio.webp",
@@ -224,6 +234,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "peces-microgravedad",
+    diagramImage: '/assets/animales/infographic_m1/diagram_peces-microgravedad.webp',
+    diagramCaption: 'Peces en Gravedad Cero: El Laberinto de la Orientación',
     "title": "Peces en Gravedad Cero: El Laberinto de la Orientación",
     "color": "#D87D4A",
     "btnImage": "/assets/animales/infographic_m1/btn_peces-microgravedad.webp",
@@ -253,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ranas-otolitos",
+    diagramImage: '/assets/course/animales_pioneros/diagram_ranas-otolitos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ranas en Órbita: El Sistema Vestibular al Desnudo',
     "title": "Ranas en Órbita: El Sistema Vestibular al Desnudo",
     "color": "#3DC9A0",
     "btnImage": "/assets/animales/infographic_m1/btn_ranas-otolitos.webp",
@@ -715,6 +729,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

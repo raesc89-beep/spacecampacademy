@@ -100,6 +100,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "que-es-oort",
+    diagramImage: '/assets/interestelar/infographic_m5/diagram_que-es-oort.webp',
+    diagramCaption: 'La Nube de Oort: billones de cuerpos helados envuelven el sistema solar hasta casi la mitad de la estrella más próxima',
     "title": "¿Qué es la Nube de Oort?",
     "color": "#1A237E",
     "btnImage": "/assets/interestelar/infographic_m5/btn_que-es-oort.jpg",
@@ -129,6 +131,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "escala-distancia",
+    diagramImage: '/assets/interestelar/infographic_m5/diagram_escala-distancia.webp',
+    diagramCaption: 'La escala imposible: la Nube de Oort está a casi 2 años luz y Voyager tardará 300 años en alcanzarla',
     "title": "La Escala Inmensa",
     "color": "#B3E5FC",
     "btnImage": "/assets/interestelar/infographic_m5/btn_escala-distancia.jpg",
@@ -158,6 +162,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "origen-formacion",
+    diagramImage: '/assets/interestelar/infographic_m5/diagram_origen-formacion.webp',
+    diagramCaption: 'Formación hace 4,600 millones de años: planetesimales expulsados por los gigantes gaseosos al frío extremo',
     "title": "El Origen Turbulento",
     "color": "#CFD8DC",
     "btnImage": "/assets/interestelar/infographic_m5/btn_origen-formacion.jpg",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cometas-largo-periodo",
+    diagramImage: '/assets/interestelar/infographic_m5/diagram_cometas-largo-periodo.webp',
+    diagramCaption: 'Cometas de largo periodo: Hale-Bopp visita cada 2,520 años, llegan desde todas las direcciones del cielo',
     "title": "Cometas de Largo Período",
     "color": "#6A1B9A",
     "btnImage": "/assets/interestelar/infographic_m5/btn_cometas-largo-periodo.jpg",
@@ -216,6 +224,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "limite-solar-interestelar",
+    diagramImage: '/assets/interestelar/infographic_m5/diagram_limite-solar-interestelar.webp',
+    diagramCaption: 'El límite solar-interestelar: donde la gravedad del Sol apenas retiene los objetos de la Nube de Oort',
     "title": "El Límite Interestelar",
     "color": "#00695C",
     "btnImage": "/assets/interestelar/infographic_m5/btn_limite-solar-interestelar.jpg",
@@ -245,6 +255,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "perturbaciones-estelares",
+    diagramImage: '/assets/interestelar/infographic_m5/diagram_perturbaciones-estelares.webp',
+    diagramCaption: 'Perturbaciones estelares: estrellas que pasan y la marea galáctica envían cometas hacia el interior solar',
     "title": "Estrellas Errantes Peligrosas",
     "color": "#FF8F00",
     "btnImage": "/assets/interestelar/infographic_m5/btn_perturbaciones-estelares.jpg",
@@ -274,6 +286,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "exploracion-futura",
+    diagramImage: '/assets/interestelar/infographic_m5/diagram_exploracion-futura.webp',
+    diagramCaption: 'Exploración futura: sondas de propulsión nuclear o láser podrían alcanzar la Nube de Oort en décadas',
     "title": "El Futuro de la Exploración",
     "color": "#ECEFF1",
     "btnImage": "/assets/interestelar/infographic_m5/btn_exploracion-futura.jpg",
@@ -763,6 +777,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

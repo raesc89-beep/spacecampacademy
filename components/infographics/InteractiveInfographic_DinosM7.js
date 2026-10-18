@@ -142,6 +142,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'ultimo-dia-cretacico',
+    diagramImage: '/assets/dinos/infographic_m7/diagram_ultimo-dia-cretacico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Último Día del Cretácico',
               bannerImage: '/assets/dinos/infographic_m7/banner_ultimo-dia-cretacico.webp',
     title: 'El Último Día del Cretácico',
     color: '#5D8A68',
@@ -162,6 +164,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'chicxulub-crater',
+    diagramImage: '/assets/dinos/infographic_m7/diagram_chicxulub-crater.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Chicxulub: El Cráter Oculto',
               bannerImage: '/assets/dinos/infographic_m7/banner_chicxulub-crater.webp',
     title: 'Chicxulub: El Cráter Oculto',
     color: '#C17829',
@@ -182,6 +186,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'invierno-impacto',
+    diagramImage: '/assets/dinos/infographic_m7/diagram_invierno-impacto.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Invierno de Impacto',
               bannerImage: '/assets/dinos/infographic_m7/banner_invierno-impacto.webp',
     title: 'El Invierno de Impacto',
     color: '#6B8E96',
@@ -202,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'deccan-traps',
+    diagramImage: '/assets/dinos/infographic_m7/diagram_deccan-traps.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Deccan Traps: El Otro Sospechoso',
               bannerImage: '/assets/dinos/infographic_m7/banner_deccan-traps.webp',
     title: 'Deccan Traps: El Otro Sospechoso',
     color: '#8B5E3C',
@@ -222,6 +230,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sobrevivientes-extincion',
+    diagramImage: '/assets/dinos/infographic_m7/diagram_sobrevivientes-extincion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Quién Sobrevivió y Quién No',
               bannerImage: '/assets/dinos/infographic_m7/banner_sobrevivientes-extincion.webp',
     title: 'Quién Sobrevivió y Quién No',
     color: '#A67B3D',
@@ -242,6 +252,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'evidencia-fosil',
+    diagramImage: '/assets/dinos/infographic_m7/diagram_evidencia-fosil.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Evidencia Fósil',
               bannerImage: '/assets/dinos/infographic_m7/banner_evidencia-fosil.webp',
     title: 'La Evidencia Fósil',
     color: '#7D6B99',
@@ -262,6 +274,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mundo-despues',
+    diagramImage: '/assets/dinos/infographic_m7/diagram_mundo-despues.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Mundo Después',
               bannerImage: '/assets/dinos/infographic_m7/banner_mundo-despues.webp',
     title: 'El Mundo Después',
     color: '#3E7C8B',
@@ -736,6 +750,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

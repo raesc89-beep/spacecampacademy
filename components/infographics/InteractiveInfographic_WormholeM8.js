@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "travesia-paso-a-paso",
+    diagramImage: '/assets/wormhole/infographic_m8/diagram_travesia-paso-a-paso.webp',
+    diagramCaption: 'Un agujero de gusano no acelera la nave más allá de la luz: solo le ofrece un camino mucho más corto entre dos lugares.',
     bannerImage: '/assets/wormhole/infographic_m8/banner_travesia-paso-a-paso.webp',
     bannerCaption: "Un agujero de gusano no acelera la nave más allá de la luz: solo le ofrece un camino mucho más corto entre dos lugares.",
     title: "La Travesía Paso a Paso",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "reloj-que-se-congela",
+    diagramImage: '/assets/wormhole/infographic_m8/diagram_reloj-que-se-congela.webp',
+    diagramCaption: 'Desde lejos, un objeto que cae a un agujero negro parece frenarse, enrojecer y apagarse sin llegar a cruzar el horizonte.',
     bannerImage: '/assets/wormhole/infographic_m8/banner_reloj-que-se-congela.webp',
     bannerCaption: "Desde lejos, un objeto que cae a un agujero negro parece frenarse, enrojecer y apagarse sin llegar a cruzar el horizonte.",
     title: "Visto desde Fuera: un Reloj que se Congela",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cruzar-el-horizonte",
+    diagramImage: '/assets/wormhole/infographic_m8/diagram_cruzar-el-horizonte.webp',
+    diagramCaption: 'El horizonte de Sagitario A* mide unos 24 millones de km de diámetro; cruzarlo no se notaría en el momento.',
     bannerImage: '/assets/wormhole/infographic_m8/banner_cruzar-el-horizonte.webp',
     bannerCaption: "El horizonte de Sagitario A* mide unos 24 millones de km de diámetro; cruzarlo no se notaría en el momento.",
     title: "Visto desde Dentro: Cruzar sin Notarlo",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "espaguetizacion",
+    diagramImage: '/assets/wormhole/infographic_m8/diagram_espaguetizacion.webp',
+    diagramCaption: 'Las fuerzas de marea estiran a lo largo y comprimen a lo ancho; en 2019 se observó una estrella destrozada así por un agujero negro.',
     bannerImage: '/assets/wormhole/infographic_m8/banner_espaguetizacion.webp',
     bannerCaption: "Las fuerzas de marea estiran a lo largo y comprimen a lo ancho; en 2019 se observó una estrella destrozada así por un agujero negro.",
     title: "Espaguetización",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "tunel-sin-espagueti",
+    diagramImage: '/assets/wormhole/infographic_m8/diagram_tunel-sin-espagueti.webp',
+    diagramCaption: 'Un agujero de gusano traversable bien diseñado minimizaría las fuerzas de marea para que el viajero llegue intacto.',
     bannerImage: '/assets/wormhole/infographic_m8/banner_tunel-sin-espagueti.webp',
     bannerCaption: "Un agujero de gusano traversable bien diseñado minimizaría las fuerzas de marea para que el viajero llegue intacto.",
     title: "Un Túnel Diseñado contra las Mareas",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "inestabilidad-cuantica",
+    diagramImage: '/assets/wormhole/infographic_m8/diagram_inestabilidad-cuantica.webp',
+    diagramCaption: 'Las fluctuaciones del vacío cuántico podrían amplificarse en el cuello y hacer colapsar el túnel antes de que alguien lo cruce.',
     bannerImage: '/assets/wormhole/infographic_m8/banner_inestabilidad-cuantica.webp',
     bannerCaption: "Las fluctuaciones del vacío cuántico podrían amplificarse en el cuello y hacer colapsar el túnel antes de que alguien lo cruce.",
     title: "El Problema de la Estabilidad Cuántica",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "por-que-seguir-investigando",
+    diagramImage: '/assets/wormhole/infographic_m8/diagram_por-que-seguir-investigando.webp',
+    diagramCaption: 'Estudiar agujeros de gusano, aunque quizá no existan, revela pistas sobre la gravedad, la mecánica cuántica y el espacio-tiempo.',
     bannerImage: '/assets/wormhole/infographic_m8/banner_por-que-seguir-investigando.webp',
     bannerCaption: "Estudiar agujeros de gusano, aunque quizá no existan, revela pistas sobre la gravedad, la mecánica cuántica y el espacio-tiempo.",
     title: "¿Por Qué Seguir Investigando?",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

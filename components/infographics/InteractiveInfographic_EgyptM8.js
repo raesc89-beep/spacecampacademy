@@ -200,6 +200,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "fenomeno",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_fenomeno.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Fenómeno Solar',
     "bannerImage": "/assets/egypt/infographic_m8/banner_agricultura-egipcia.webp",
     "title": "El Fenómeno Solar",
     "color": "#FF9A3C",
@@ -228,6 +230,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "colosos",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_colosos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Cuatro Colosos',
     "bannerImage": "/assets/egypt/infographic_m8/banner_calendario-agricola.webp",
     "title": "Los Cuatro Colosos",
     "color": "#FF8C00",
@@ -256,6 +260,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ingenieria",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_ingenieria.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ingeniería Faraónica',
     "bannerImage": "/assets/egypt/infographic_m8/banner_geometria-catastro.webp",
     "title": "Ingeniería Faraónica",
     "color": "#E8851A",
@@ -284,6 +290,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ramses",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_ramses.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ramsés el Grande',
     "bannerImage": "/assets/egypt/infographic_m8/banner_impuestos-grano.webp",
     "title": "Ramsés el Grande",
     "color": "#FF7043",
@@ -312,6 +320,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "arenisca",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_arenisca.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Arenisca Dorada',
     "bannerImage": "/assets/egypt/infographic_m8/banner_legado-hidraulica.webp",
     "title": "La Arenisca Dorada",
     "color": "#D4870A",
@@ -340,6 +350,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "rescate",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_rescate.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Gran Rescate',
     "bannerImage": "/assets/egypt/infographic_m8/banner_nilo-crecida.webp",
     "title": "El Gran Rescate",
     "color": "#FF6B2B",
@@ -368,6 +380,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "nefertari",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_nefertari.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Templo de Nefertari',
     "bannerImage": "/assets/egypt/infographic_m8/banner_nilometro.webp",
     "title": "El Templo de Nefertari",
     "color": "#FF8C5A",
@@ -396,6 +410,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado",
+    diagramImage: '/assets/egypt/infographic_m8/diagram_legado.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Legado Universal',
     "bannerImage": "/assets/egypt/infographic_m8/banner_shaduf-riego.webp",
     "title": "Legado Universal",
     "color": "#FF9A3C",
@@ -762,6 +778,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem',

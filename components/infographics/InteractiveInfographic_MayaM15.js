@@ -83,6 +83,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "codice-descubrimiento",
+    diagramImage: '/assets/maya/infographic_m15/diagram_codice-descubrimiento.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Descubrimiento',
     "bannerImage": "/assets/maya/infographic_m15/banner_codice-descubrimiento.webp",
     "title": "El Descubrimiento",
     "color": "#C62828",
@@ -111,6 +113,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "estructura-fisica",
+    diagramImage: '/assets/maya/infographic_m15/diagram_estructura-fisica.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Estructura Física',
     "bannerImage": "/assets/maya/infographic_m15/banner_estructura-fisica.webp",
     "title": "Estructura Física",
     "color": "#5D4037",
@@ -139,6 +143,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tablas-venus",
+    diagramImage: '/assets/maya/infographic_m15/diagram_tablas-venus.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Tablas de Venus',
     "bannerImage": "/assets/maya/infographic_m15/banner_tablas-venus.webp",
     "title": "Tablas de Venus",
     "color": "#1565C0",
@@ -167,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tablas-eclipses",
+    diagramImage: '/assets/maya/infographic_m15/diagram_tablas-eclipses.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Tablas de Eclipses',
     "bannerImage": "/assets/maya/infographic_m15/banner_tablas-eclipses.webp",
     "title": "Tablas de Eclipses",
     "color": "#212121",
@@ -195,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tablas-lluvia",
+    diagramImage: '/assets/maya/infographic_m15/diagram_tablas-lluvia.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Tablas de Lluvia y Marte',
     "bannerImage": "/assets/maya/infographic_m15/banner_tablas-lluvia.webp",
     "title": "Tablas de Lluvia y Marte",
     "color": "#00695C",
@@ -223,6 +233,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "matematica-codice",
+    diagramImage: '/assets/maya/infographic_m15/diagram_matematica-codice.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Matemática',
     "bannerImage": "/assets/maya/infographic_m15/banner_matematica-codice.webp",
     "title": "La Matemática",
     "color": "#F9A825",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "supervivencia-codice",
+    diagramImage: '/assets/maya/infographic_m15/diagram_supervivencia-codice.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Supervivencia',
     "bannerImage": "/assets/maya/infographic_m15/banner_supervivencia-codice.webp",
     "title": "Supervivencia",
     "color": "#FFF8E1",
@@ -703,6 +717,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

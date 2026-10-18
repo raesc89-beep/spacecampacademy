@@ -128,6 +128,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "metal-cielo",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_metal-cielo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Metal del Cielo',
     "bannerImage": "/assets/egypt/infographic_m10/banner_alineacion-astronomica.webp",
     "title": "El Metal del Cielo",
     "color": "#B0C4DE",
@@ -156,6 +158,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "daga-forja",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_daga-forja.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Forjando Estrellas',
     "bannerImage": "/assets/egypt/infographic_m10/banner_esfinge-giza.webp",
     "title": "Forjando Estrellas",
     "color": "#FF8C42",
@@ -184,6 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tumba-tut",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_tumba-tut.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Tumba del Faraón Niño',
     "bannerImage": "/assets/egypt/infographic_m10/banner_kheops-construction.webp",
     "title": "La Tumba del Faraón Niño",
     "color": "#FFD700",
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "rayos-x",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_rayos-x.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Detectives con Rayos X',
     "bannerImage": "/assets/egypt/infographic_m10/banner_legado-piramidal.webp",
     "title": "Detectives con Rayos X",
     "color": "#00CED1",
@@ -240,6 +248,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "meteoritos-mundo",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_meteoritos-mundo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Meteoritos del Mundo',
     "bannerImage": "/assets/egypt/infographic_m10/banner_materiales-piramide.webp",
     "title": "Meteoritos del Mundo",
     "color": "#9B59B6",
@@ -268,6 +278,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "supernova-origen",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_supernova-origen.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Nacidos de Supernovas',
     "bannerImage": "/assets/egypt/infographic_m10/banner_piramide-interior.webp",
     "title": "Nacidos de Supernovas",
     "color": "#E74C3C",
@@ -296,6 +308,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tesoro-museo",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_tesoro-museo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Tesoro del Museo',
     "bannerImage": "/assets/egypt/infographic_m10/banner_piramides-menores.webp",
     "title": "El Tesoro del Museo",
     "color": "#F39C12",
@@ -324,6 +338,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-cosmico",
+    diagramImage: '/assets/egypt/infographic_m10/diagram_legado-cosmico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Legado Cósmico',
     "bannerImage": "/assets/egypt/infographic_m10/banner_trabajadores-piramide.webp",
     "title": "Legado Cósmico",
     "color": "#1ABC9C",
@@ -696,6 +712,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem',

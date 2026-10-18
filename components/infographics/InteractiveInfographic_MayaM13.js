@@ -87,6 +87,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "uaxactun-sitio",
+    diagramImage: '/assets/maya/infographic_m13/diagram_uaxactun-sitio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Sitio: Uaxactún',
     "bannerImage": "/assets/maya/infographic_m13/banner_uaxactun-sitio.webp",
     "title": "El Sitio: Uaxactún",
     "color": "#A1887F",
@@ -115,6 +117,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "grupo-e-original",
+    diagramImage: '/assets/maya/infographic_m13/diagram_grupo-e-original.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Grupo E Original',
     "bannerImage": "/assets/maya/infographic_m13/banner_grupo-e-original.webp",
     "title": "El Grupo E Original",
     "color": "#2E7D32",
@@ -143,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tres-templos",
+    diagramImage: '/assets/maya/infographic_m13/diagram_tres-templos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Tres Templos',
     "bannerImage": "/assets/maya/infographic_m13/banner_tres-templos.webp",
     "title": "Los Tres Templos",
     "color": "#F8BBD0",
@@ -171,6 +177,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "funcionamiento-solar",
+    diagramImage: '/assets/maya/infographic_m13/diagram_funcionamiento-solar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cómo Funciona',
     "bannerImage": "/assets/maya/infographic_m13/banner_funcionamiento-solar.webp",
     "title": "Cómo Funciona",
     "color": "#FF8F00",
@@ -199,6 +207,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "grupos-e-mundo-maya",
+    diagramImage: '/assets/maya/infographic_m13/diagram_grupos-e-mundo-maya.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Grupos E en el Mundo Maya',
     "bannerImage": "/assets/maya/infographic_m13/banner_grupos-e-mundo-maya.webp",
     "title": "Grupos E en el Mundo Maya",
     "color": "#039BE5",
@@ -227,6 +237,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ceibal-mas-antiguo",
+    diagramImage: '/assets/maya/infographic_m13/diagram_ceibal-mas-antiguo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ceibal: El Más Antiguo',
     "bannerImage": "/assets/maya/infographic_m13/banner_ceibal-mas-antiguo.webp",
     "title": "Ceibal: El Más Antiguo",
     "color": "#5D4037",
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-arquitectonico",
+    diagramImage: '/assets/maya/infographic_m13/diagram_legado-arquitectonico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Legado de los Grupos E',
     "bannerImage": "/assets/maya/infographic_m13/banner_legado-arquitectonico.webp",
     "title": "El Legado de los Grupos E",
     "color": "#283593",
@@ -702,6 +716,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

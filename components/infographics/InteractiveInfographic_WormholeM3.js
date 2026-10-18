@@ -126,6 +126,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "schwarzschild-carta-desde-el-frente",
+    diagramImage: '/assets/wormhole/infographic_m3/diagram_schwarzschild-carta-desde-el-frente.webp',
+    diagramCaption: 'Karl Schwarzschild envió su solución a Einstein en diciembre de 1915 desde el frente ruso; Einstein la presentó en enero de 1916.',
     bannerImage: '/assets/wormhole/infographic_m3/banner_schwarzschild-carta-desde-el-frente.webp',
     bannerCaption: "Karl Schwarzschild envió su solución a Einstein en diciembre de 1915 desde el frente ruso; Einstein la presentó en enero de 1916.",
     title: "1916: una solución escrita en el frente de guerra",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "horizonte-de-eventos",
+    diagramImage: '/assets/wormhole/infographic_m3/diagram_horizonte-de-eventos.webp',
+    diagramCaption: 'El horizonte de eventos, o de sucesos, es la frontera de un agujero negro: lo que lo cruza hacia dentro ya no puede volver a salir.',
     bannerImage: '/assets/wormhole/infographic_m3/banner_horizonte-de-eventos.webp',
     bannerCaption: "El horizonte de eventos, o de sucesos, es la frontera de un agujero negro: lo que lo cruza hacia dentro ya no puede volver a salir.",
     title: "El horizonte de eventos: la frontera sin retorno",
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "colapso-estelar-tipos",
+    diagramImage: '/assets/wormhole/infographic_m3/diagram_colapso-estelar-tipos.webp',
+    diagramCaption: 'Las estrellas de unas 20 masas solares o más pueden terminar su vida colapsando y formando un agujero negro de masa estelar.',
     bannerImage: '/assets/wormhole/infographic_m3/banner_colapso-estelar-tipos.webp',
     bannerCaption: "Las estrellas de unas 20 masas solares o más pueden terminar su vida colapsando y formando un agujero negro de masa estelar.",
     title: "Cómo nacen los agujeros negros",
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "sagitario-a-estrella",
+    diagramImage: '/assets/wormhole/infographic_m3/diagram_sagitario-a-estrella.webp',
+    diagramCaption: 'Sagitario A*, en el centro de la Vía Láctea, tiene unos 4 millones de masas solares; el EHT publicó su primera imagen en 2022.',
     bannerImage: '/assets/wormhole/infographic_m3/banner_sagitario-a-estrella.webp',
     bannerCaption: "Sagitario A*, en el centro de la Vía Láctea, tiene unos 4 millones de masas solares; el EHT publicó su primera imagen en 2022.",
     title: "Sagitario A*: el gigante de nuestra galaxia",
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "kruskal-puente-no-atravesable",
+    diagramImage: '/assets/wormhole/infographic_m3/diagram_kruskal-puente-no-atravesable.webp',
+    diagramCaption: 'En 1960 Kruskal y Szekeres describieron la geometría completa de Schwarzschild: dos regiones exteriores unidas por un puente.',
     bannerImage: '/assets/wormhole/infographic_m3/banner_kruskal-puente-no-atravesable.webp',
     bannerCaption: "En 1960 Kruskal y Szekeres describieron la geometría completa de Schwarzschild: dos regiones exteriores unidas por un puente.",
     title: "Por qué el puente de Einstein-Rosen no se puede cruzar",
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "kerr-agujeros-que-giran",
+    diagramImage: '/assets/wormhole/infographic_m3/diagram_kerr-agujeros-que-giran.webp',
+    diagramCaption: 'En 1963 el matemático neozelandés Roy Kerr encontró la solución exacta que describe un agujero negro en rotación.',
     bannerImage: '/assets/wormhole/infographic_m3/banner_kerr-agujeros-que-giran.webp',
     bannerCaption: "En 1963 el matemático neozelandés Roy Kerr encontró la solución exacta que describe un agujero negro en rotación.",
     title: "Kerr: los agujeros negros que giran",
@@ -252,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "radiacion-hawking-informacion",
+    diagramImage: '/assets/wormhole/infographic_m3/diagram_radiacion-hawking-informacion.webp',
+    diagramCaption: 'En 1974 Stephen Hawking predijo que los agujeros negros emiten una débil radiación térmica por efectos cuánticos y pueden evaporarse.',
     bannerImage: '/assets/wormhole/infographic_m3/banner_radiacion-hawking-informacion.webp',
     bannerCaption: "En 1974 Stephen Hawking predijo que los agujeros negros emiten una débil radiación térmica por efectos cuánticos y pueden evaporarse.",
     title: "La radiación de Hawking y el misterio de la información",
@@ -707,6 +721,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

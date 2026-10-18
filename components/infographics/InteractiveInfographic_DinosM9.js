@@ -133,6 +133,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'que-es-un-fosil',
+    diagramImage: '/assets/dinos/infographic_m9/diagram_que-es-un-fosil.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre ¿Qué es un Fósil?',
               bannerImage: '/assets/dinos/infographic_m9/banner_que-es-un-fosil.webp',
     title: '¿Qué es un Fósil?',
     color: '#5D8A68',
@@ -153,6 +155,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'proceso-fosilizacion',
+    diagramImage: '/assets/dinos/infographic_m9/diagram_proceso-fosilizacion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Proceso de Fosilización',
               bannerImage: '/assets/dinos/infographic_m9/banner_proceso-fosilizacion.webp',
     title: 'El Proceso de Fosilización',
     color: '#C17829',
@@ -173,6 +177,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'herramientas-paleontologo',
+    diagramImage: '/assets/dinos/infographic_m9/diagram_herramientas-paleontologo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Herramientas del Paleontólogo',
               bannerImage: '/assets/dinos/infographic_m9/banner_herramientas-paleontologo.webp',
     title: 'Herramientas del Paleontólogo',
     color: '#6B8E96',
@@ -193,6 +199,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'excavaciones-famosas',
+    diagramImage: '/assets/dinos/infographic_m9/diagram_excavaciones-famosas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Excavaciones Famosas',
               bannerImage: '/assets/dinos/infographic_m9/banner_excavaciones-famosas.webp',
     title: 'Excavaciones Famosas',
     color: '#8B5E3C',
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'campo-al-laboratorio',
+    diagramImage: '/assets/dinos/infographic_m9/diagram_campo-al-laboratorio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Del Campo al Laboratorio',
               bannerImage: '/assets/dinos/infographic_m9/banner_campo-al-laboratorio.webp',
     title: 'Del Campo al Laboratorio',
     color: '#A67B3D',
@@ -233,6 +243,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'datacion-edad',
+    diagramImage: '/assets/dinos/infographic_m9/diagram_datacion-edad.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Datación: ¿Cuántos Años Tiene?',
               bannerImage: '/assets/dinos/infographic_m9/banner_datacion-edad.webp',
     title: 'Datación: ¿Cuántos Años Tiene?',
     color: '#7D6B99',
@@ -253,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fosiles-cambiaron-historia',
+    diagramImage: '/assets/dinos/infographic_m9/diagram_fosiles-cambiaron-historia.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Fósiles que Cambiaron la Historia',
               bannerImage: '/assets/dinos/infographic_m9/banner_fosiles-cambiaron-historia.webp',
     title: 'Fósiles que Cambiaron la Historia',
     color: '#3E7C8B',
@@ -709,6 +723,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

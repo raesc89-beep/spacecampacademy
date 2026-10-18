@@ -128,6 +128,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "denis-villeneuve",
+    diagramImage: '/assets/arrival/infographic_m6/diagram_denis-villeneuve.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Denis Villeneuve',
     "bannerImage": "/assets/arrival/infographic_m6/banner_denis-villeneuve.webp",
     "title": "Denis Villeneuve",
     "color": "#8B9DAF",
@@ -156,6 +158,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "amy-adams-louise",
+    diagramImage: '/assets/arrival/infographic_m6/diagram_amy-adams-louise.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Amy Adams como Louise Banks',
     "bannerImage": "/assets/arrival/infographic_m6/banner_amy-adams-louise.webp",
     "title": "Amy Adams como Louise Banks",
     "color": "#7A8C9E",
@@ -184,6 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "impacto-cultural",
+    diagramImage: '/assets/arrival/infographic_m6/diagram_impacto-cultural.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Impacto Cultural',
     "bannerImage": "/assets/arrival/infographic_m6/banner_impacto-cultural.webp",
     "title": "El Impacto Cultural",
     "color": "#4E4E4E",
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ted-chiang-autor",
+    diagramImage: '/assets/arrival/infographic_m6/diagram_ted-chiang-autor.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ted Chiang: El Autor',
     "bannerImage": "/assets/arrival/infographic_m6/banner_ted-chiang-autor.webp",
     "title": "Ted Chiang: El Autor",
     "color": "#6A7B8D",
@@ -240,6 +248,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "linguistica-despues",
+    diagramImage: '/assets/arrival/infographic_m6/diagram_linguistica-despues.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Lingüística Después de Arrival',
     "bannerImage": "/assets/arrival/infographic_m6/banner_linguistica-despues.webp",
     "title": "Lingüística Después de Arrival",
     "color": "#3D3D3D",
@@ -268,6 +278,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ciencia-ficcion-intelectual",
+    diagramImage: '/assets/arrival/infographic_m6/diagram_ciencia-ficcion-intelectual.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ciencia Ficción Intelectual',
     "bannerImage": "/assets/arrival/infographic_m6/banner_ciencia-ficcion-intelectual.webp",
     "title": "Ciencia Ficción Intelectual",
     "color": "#2C2C2C",
@@ -296,6 +308,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "mensaje-final",
+    diagramImage: '/assets/arrival/infographic_m6/diagram_mensaje-final.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Mensaje Final',
     "bannerImage": "/assets/arrival/infographic_m6/banner_mensaje-final.webp",
     "title": "El Mensaje Final",
     "color": "#1B1B1B",
@@ -759,6 +773,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

@@ -152,6 +152,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'sinosauropteryx-descubrimiento',
+    diagramImage: '/assets/dinos/infographic_m8/diagram_sinosauropteryx-descubrimiento.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Descubrimiento que Cambió Todo',
               bannerImage: '/assets/dinos/infographic_m8/banner_sinosauropteryx-descubrimiento.webp',
     title: 'El Descubrimiento que Cambió Todo',
     color: '#5D8A68',
@@ -172,6 +174,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'archaeopteryx-eslabon',
+    diagramImage: '/assets/dinos/infographic_m8/diagram_archaeopteryx-eslabon.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Archaeopteryx: El Eslabón',
               bannerImage: '/assets/dinos/infographic_m8/banner_archaeopteryx-eslabon.webp',
     title: 'Archaeopteryx: El Eslabón',
     color: '#C17829',
@@ -192,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'plumas-funciones',
+    diagramImage: '/assets/dinos/infographic_m8/diagram_plumas-funciones.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Plumas: No Solo para Volar',
               bannerImage: '/assets/dinos/infographic_m8/banner_plumas-funciones.webp',
     title: 'Plumas: No Solo para Volar',
     color: '#6B8E96',
@@ -212,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dromeosaurios-emplumados',
+    diagramImage: '/assets/dinos/infographic_m8/diagram_dromeosaurios-emplumados.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Dromeosaurios Emplumados',
               bannerImage: '/assets/dinos/infographic_m8/banner_dromeosaurios-emplumados.webp',
     title: 'Los Dromeosaurios Emplumados',
     color: '#8B5E3C',
@@ -232,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'origen-vuelo',
+    diagramImage: '/assets/dinos/infographic_m8/diagram_origen-vuelo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cómo Aprendieron a Volar',
               bannerImage: '/assets/dinos/infographic_m8/banner_origen-vuelo.webp',
     title: 'Cómo Aprendieron a Volar',
     color: '#A67B3D',
@@ -252,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'colores-prehistoricos',
+    diagramImage: '/assets/dinos/infographic_m8/diagram_colores-prehistoricos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Colores Prehistóricos',
               bannerImage: '/assets/dinos/infographic_m8/banner_colores-prehistoricos.webp',
     title: 'Colores Prehistóricos',
     color: '#7D6B99',
@@ -272,6 +284,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'aves-dinosaurios-vivos',
+    diagramImage: '/assets/dinos/infographic_m8/diagram_aves-dinosaurios-vivos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Aves: Dinosaurios Vivos',
               bannerImage: '/assets/dinos/infographic_m8/banner_aves-dinosaurios-vivos.webp',
     title: 'Aves: Dinosaurios Vivos',
     color: '#3E7C8B',
@@ -743,6 +757,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

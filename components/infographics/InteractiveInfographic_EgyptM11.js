@@ -119,6 +119,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "nut",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_nut.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre ¿Quién es Nut?',
     "bannerImage": "/assets/egypt/infographic_m11/banner_anubis-juicio.webp",
     "title": "¿Quién es Nut?",
     "color": "#C4A7E7",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "nilo-cielo",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_nilo-cielo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Nilo del Cielo',
     "bannerImage": "/assets/egypt/infographic_m11/banner_ennead-dioses.webp",
     "title": "El Nilo del Cielo",
     "color": "#7EC8E3",
@@ -175,6 +179,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "arriba-abajo",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_arriba-abajo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Como es Arriba, es Abajo',
     "bannerImage": "/assets/egypt/infographic_m11/banner_horus-halcon.webp",
     "title": "Como es Arriba, es Abajo",
     "color": "#FFD700",
@@ -203,6 +209,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "orion-piramides",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_orion-piramides.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Orión y las Pirámides',
     "bannerImage": "/assets/egypt/infographic_m11/banner_isis-alas.webp",
     "title": "Orión y las Pirámides",
     "color": "#E8C96A",
@@ -231,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sagitario",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_sagitario.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Monstruo del Centro',
     "bannerImage": "/assets/egypt/infographic_m11/banner_osiris-mito.webp",
     "title": "El Monstruo del Centro",
     "color": "#FF6B6B",
@@ -259,6 +269,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "viaje-faraon",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_viaje-faraon.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Viaje del Faraón',
     "bannerImage": "/assets/egypt/infographic_m11/banner_ra-solar.webp",
     "title": "El Viaje del Faraón",
     "color": "#F5A623",
@@ -287,6 +299,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "navegantes",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_navegantes.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre ¡Navegantes del Nilo Cósmico!',
     "bannerImage": "/assets/egypt/infographic_m11/banner_sincretismo-religioso.webp",
     "title": "¡Navegantes del Nilo Cósmico!",
     "color": "#4ECDC4",
@@ -315,6 +329,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "galaxia-numeros",
+    diagramImage: '/assets/egypt/infographic_m11/diagram_galaxia-numeros.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Nuestra Galaxia en Números',
     "bannerImage": "/assets/egypt/infographic_m11/banner_thoth-escriba.webp",
     "title": "Nuestra Galaxia en Números",
     "color": "#00E4FF",
@@ -681,6 +697,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem',

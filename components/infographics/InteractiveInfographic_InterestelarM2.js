@@ -80,6 +80,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "descubrimiento-2017",
+    diagramImage: '/assets/interestelar/infographic_m2/diagram_descubrimiento-2017.webp',
+    diagramCaption: 'Descubrimiento 2017: Robert Weryk en Pan-STARRS detectó el primer visitante interestelar confirmado',
     "title": "El Descubrimiento",
     "color": "#FFB74D",
     "btnImage": "/assets/interestelar/infographic_m2/btn_descubrimiento-2017.jpg",
@@ -109,6 +111,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "nombre-hawaiano",
+    diagramImage: '/assets/interestelar/infographic_m2/diagram_nombre-hawaiano.webp',
+    diagramCaption: 'El nombre hawaiano: Oumuamua significa mensajero llegado desde lejos, el primer emisario interestelar',
     "title": "El Nombre Hawaiano",
     "color": "#EF5350",
     "btnImage": "/assets/interestelar/infographic_m2/btn_nombre-hawaiano.jpg",
@@ -138,6 +142,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "forma-enigmatica",
+    diagramImage: '/assets/interestelar/infographic_m2/diagram_forma-enigmatica.webp',
+    diagramCaption: 'Forma enigmática: relación 10:1 de elongación, como una lenteja plana girando nunca vista antes',
     "title": "La Forma Enigmática",
     "color": "#AB47BC",
     "btnImage": "/assets/interestelar/infographic_m2/btn_forma-enigmatica.jpg",
@@ -167,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "aceleracion-misteriosa",
+    diagramImage: '/assets/interestelar/infographic_m2/diagram_aceleracion-misteriosa.webp',
+    diagramCaption: 'Aceleración misteriosa: Oumuamua aceleró sin eyección de gas visible, el mayor misterio de su visita',
     "title": "Aceleración Misteriosa",
     "color": "#26A69A",
     "btnImage": "/assets/interestelar/infographic_m2/btn_aceleracion-misteriosa.jpg",
@@ -196,6 +204,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "hipotesis-cientificas",
+    diagramImage: '/assets/interestelar/infographic_m2/diagram_hipotesis-cientificas.webp',
+    diagramCaption: 'Hipótesis científicas: iceberg de nitrógeno, cometa de hidrógeno o... la hipótesis alienígena de Loeb',
     "title": "Las Hipótesis",
     "color": "#42A5F5",
     "btnImage": "/assets/interestelar/infographic_m2/btn_hipotesis-cientificas.jpg",
@@ -225,6 +235,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "composicion-superficie",
+    diagramImage: '/assets/interestelar/infographic_m2/diagram_composicion-superficie.webp',
+    diagramCaption: 'Composición superficial: costra orgánica roja formada por millones de años de radiación cósmica interestelar',
     "title": "Superficie y Composición",
     "color": "#FF7043",
     "btnImage": "/assets/interestelar/infographic_m2/btn_composicion-superficie.jpg",
@@ -254,6 +266,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-cientifico",
+    diagramImage: '/assets/interestelar/infographic_m2/diagram_legado-cientifico.webp',
+    diagramCaption: 'El legado científico: Oumuamua creó un campo científico nuevo y cambió la forma de estudiar el cosmos',
     "title": "El Legado Científico",
     "color": "#FFC107",
     "btnImage": "/assets/interestelar/infographic_m2/btn_legado-cientifico.jpg",
@@ -726,6 +740,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

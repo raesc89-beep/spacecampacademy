@@ -82,6 +82,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "extremofilos",
+    diagramImage: '/assets/starwars/infographic_fauna/diagram_extremofilos.webp',
+    diagramCaption: 'Los tardígrados sobreviven condiciones extremas: vacío espacial, radiación y temperaturas de âˆ’272°C a 150°C.',
     "title": "Vida en lo Imposible: Extremófilos",
     "color": "#66BB6A",
     "btnImage": "/assets/starwars/infographic_fauna/btn_extremofilos.webp",
@@ -116,6 +118,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sarlacc-digestivo",
+    diagramImage: '/assets/starwars/infographic_fauna/diagram_sarlacc-digestivo.webp',
+    diagramCaption: 'Los depredadores emboscadores, como las arañas trampilla, emplean estrategias pasivas para capturar presas sin persecución.',
     "title": "El Sarlacc: Digestión de 1000 Años",
     "color": "#FFB74D",
     "btnImage": "/assets/starwars/infographic_fauna/btn_sarlacc_digestivo.webp",
@@ -150,6 +154,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "rancor-megafauna",
+    diagramImage: '/assets/starwars/infographic_fauna/diagram_rancor-megafauna.webp',
+    diagramCaption: 'La megafauna terrestre, como el Paraceratherium de 20 toneladas, requería estructuras óseas reforzadas por la ley del cuadrado-cubo.',
     "title": "El Rancor: Megafauna Prehistórica",
     "color": "#26A69A",
     "btnImage": "/assets/starwars/infographic_fauna/btn_rancor_megafauna.webp",
@@ -184,6 +190,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tauntaun-adaptacion",
+    diagramImage: '/assets/starwars/infographic_fauna/diagram_tauntaun-adaptacion.webp',
+    diagramCaption: 'Los mamíferos árticos desarrollan grasa subcutánea, contracorriente vascular y pelaje multicapa para sobrevivir a âˆ’50°C.',
     "title": "Tauntauns: Adaptación al Frío Extremo",
     "color": "#AED581",
     "btnImage": "/assets/starwars/infographic_fauna/btn_tauntaun_adaptacion.webp",
@@ -218,6 +226,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "purrgil-migracion",
+    diagramImage: '/assets/starwars/infographic_fauna/diagram_purrgil-migracion.webp',
+    diagramCaption: 'Las ballenas jorobadas migran 8,000 km guiándose por el campo magnético terrestre, fenómeno llamado magnetorrecepción.',
     "title": "Los Purrgil: Migración Espacial",
     "color": "#FF7043",
     "btnImage": "/assets/starwars/infographic_fauna/btn_purrgil_migracion.webp",
@@ -252,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "bioluminiscencia",
+    diagramImage: '/assets/starwars/infographic_fauna/diagram_bioluminiscencia.webp',
+    diagramCaption: 'La bioluminiscencia es una reacción química entre luciferina y luciferasa que produce luz sin calor en organismos marinos.',
     "title": "Criaturas Brillantes del Espacio",
     "color": "#4DB6AC",
     "btnImage": "/assets/starwars/infographic_fauna/btn_bioluminiscencia.webp",
@@ -286,6 +298,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "exobiologia-futuro",
+    diagramImage: '/assets/starwars/infographic_fauna/diagram_exobiologia-futuro.webp',
+    diagramCaption: 'El telescopio James Webb analiza las atmósferas de exoplanetas buscando biofirmas como oxígeno, metano y vapor de agua.',
     "title": "Buscando Vida Extraterrestre",
     "color": "#8BC34A",
     "btnImage": "/assets/starwars/infographic_fauna/btn_exobiologia_futuro.webp",
@@ -535,7 +549,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
           <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC', marginTop: '1rem' }}>{node.content[2]}</p>
           {node.bannerImage && (
             <div style={{ margin: '2rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}55` }}>
-              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
+              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               {node.bannerCaption && (
                 <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic' }}>{node.bannerCaption}</div>
               )}

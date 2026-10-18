@@ -149,6 +149,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'lecciones-del-pasado',
+    diagramImage: '/assets/marinos/infographic_m10/diagram_lecciones-del-pasado.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Lecciones del Pasado',
               bannerImage: '/assets/marinos/infographic_m10/banner_lecciones-del-pasado.webp',
     title: 'Lecciones del Pasado',
     color: '#5B7B9A',
@@ -169,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'los-oceanos-hoy',
+    diagramImage: '/assets/marinos/infographic_m10/diagram_los-oceanos-hoy.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Océanos Hoy',
               bannerImage: '/assets/marinos/infographic_m10/banner_los-oceanos-hoy.webp',
     title: 'Los Océanos Hoy',
     color: '#B87D5E',
@@ -189,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'calentamiento-acidificacion',
+    diagramImage: '/assets/marinos/infographic_m10/diagram_calentamiento-acidificacion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Calentamiento y Acidificación',
               bannerImage: '/assets/marinos/infographic_m10/banner_calentamiento-acidificacion.webp',
     title: 'Calentamiento y Acidificación',
     color: '#6E8FA8',
@@ -209,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'especies-en-peligro',
+    diagramImage: '/assets/marinos/infographic_m10/diagram_especies-en-peligro.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Especies en Peligro',
               bannerImage: '/assets/marinos/infographic_m10/banner_especies-en-peligro.webp',
     title: 'Especies en Peligro',
     color: '#8B6B4A',
@@ -229,6 +237,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'biomimetica-marina',
+    diagramImage: '/assets/marinos/infographic_m10/diagram_biomimetica-marina.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Biomimética Marina',
               bannerImage: '/assets/marinos/infographic_m10/banner_biomimetica-marina.webp',
     title: 'Biomimética Marina',
     color: '#7C93A8',
@@ -249,6 +259,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paleoceanografia',
+    diagramImage: '/assets/marinos/infographic_m10/diagram_paleoceanografia.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Paleoceanografía',
               bannerImage: '/assets/marinos/infographic_m10/banner_paleoceanografia.webp',
     title: 'Paleoceanografía',
     color: '#9E7B5C',
@@ -269,6 +281,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'conservar-para-el-futuro',
+    diagramImage: '/assets/marinos/infographic_m10/diagram_conservar-para-el-futuro.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Conservar para el Futuro',
               bannerImage: '/assets/marinos/infographic_m10/banner_conservar-para-el-futuro.webp',
     title: 'Conservar para el Futuro',
     color: '#4A6F8C',
@@ -723,6 +737,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

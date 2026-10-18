@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "tunel-maquina-tiempo",
+    diagramImage: '/assets/wormhole/infographic_m13/diagram_tunel-maquina-tiempo.webp',
+    diagramCaption: 'En 1988, Morris, Thorne y Yurtsever mostraron que mover una boca de un agujero de gusano podría crear una máquina del tiempo.',
     bannerImage: '/assets/wormhole/infographic_m13/banner_tunel-maquina-tiempo.webp',
     bannerCaption: "En 1988, Morris, Thorne y Yurtsever mostraron que mover una boca de un agujero de gusano podría crear una máquina del tiempo.",
     title: "Cómo un Túnel se Vuelve Máquina del Tiempo",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "paradoja-abuelo-logica",
+    diagramImage: '/assets/wormhole/infographic_m13/diagram_paradoja-abuelo-logica.webp',
+    diagramCaption: 'Una versión clásica aparece en la novela «Le Voyageur imprudent» (1943) de René Barjavel, donde un viajero mata a un antepasado.',
     bannerImage: '/assets/wormhole/infographic_m13/banner_paradoja-abuelo-logica.webp',
     bannerCaption: "Una versión clásica aparece en la novela «Le Voyageur imprudent» (1943) de René Barjavel, donde un viajero mata a un antepasado.",
     title: "La Paradoja del Abuelo",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "billar-polchinski",
+    diagramImage: '/assets/wormhole/infographic_m13/diagram_billar-polchinski.webp',
+    diagramCaption: 'Joseph Polchinski planteó a Kip Thorne una paradoja con bolas de billar; Echeverria, Klinkhammer y Thorne la analizaron en 1991.',
     bannerImage: '/assets/wormhole/infographic_m13/banner_billar-polchinski.webp',
     bannerCaption: "Joseph Polchinski planteó a Kip Thorne una paradoja con bolas de billar; Echeverria, Klinkhammer y Thorne la analizaron en 1991.",
     title: "La Paradoja del Billar",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "principio-novikov",
+    diagramImage: '/assets/wormhole/infographic_m13/diagram_principio-novikov.webp',
+    diagramCaption: 'Ígor Nóvikov propuso en los años ochenta que solo pueden ocurrir historias que sean coherentes consigo mismas.',
     bannerImage: '/assets/wormhole/infographic_m13/banner_principio-novikov.webp',
     bannerCaption: "Ígor Nóvikov propuso en los años ochenta que solo pueden ocurrir historias que sean coherentes consigo mismas.",
     title: "El Principio de Autoconsistencia de Nóvikov",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "muchos-mundos-ramas",
+    diagramImage: '/assets/wormhole/infographic_m13/diagram_muchos-mundos-ramas.webp',
+    diagramCaption: 'Hugh Everett propuso en 1957 la interpretación de los muchos mundos; David Deutsch la aplicó al viaje en el tiempo en 1991.',
     bannerImage: '/assets/wormhole/infographic_m13/banner_muchos-mundos-ramas.webp',
     bannerCaption: "Hugh Everett propuso en 1957 la interpretación de los muchos mundos; David Deutsch la aplicó al viaje en el tiempo en 1991.",
     title: "Universos Paralelos: la Salida de los Muchos Mundos",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "paradoja-conocimiento-bucle",
+    diagramImage: '/assets/wormhole/infographic_m13/diagram_paradoja-conocimiento-bucle.webp',
+    diagramCaption: 'El nombre inglés «bootstrap paradox» procede del relato «By His Bootstraps» (1941), de Robert A. Heinlein, sobre un bucle temporal.',
     bannerImage: '/assets/wormhole/infographic_m13/banner_paradoja-conocimiento-bucle.webp',
     bannerCaption: "El nombre inglés «bootstrap paradox» procede del relato «By His Bootstraps» (1941), de Robert A. Heinlein, sobre un bucle temporal.",
     title: "La Paradoja del Conocimiento",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "proteccion-cronologia-hawking",
+    diagramImage: '/assets/wormhole/infographic_m13/diagram_proteccion-cronologia-hawking.webp',
+    diagramCaption: 'En 1992, Stephen Hawking propuso la conjetura de protección de la cronología: las leyes físicas impedirían las máquinas del tiempo.',
     bannerImage: '/assets/wormhole/infographic_m13/banner_proteccion-cronologia-hawking.webp',
     bannerCaption: "En 1992, Stephen Hawking propuso la conjetura de protección de la cronología: las leyes físicas impedirían las máquinas del tiempo.",
     title: "La Protección de la Cronología",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

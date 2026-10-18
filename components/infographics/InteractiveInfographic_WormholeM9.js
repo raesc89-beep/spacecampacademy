@@ -126,6 +126,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "puente-que-se-cierra",
+    diagramImage: '/assets/wormhole/infographic_m9/diagram_puente-que-se-cierra.webp',
+    diagramCaption: 'En 1962, Fuller y Wheeler demostraron que el puente de Einstein-Rosen se estrangula tan rápido que ni la luz alcanza a cruzarlo.',
     bannerImage: '/assets/wormhole/infographic_m9/banner_puente-que-se-cierra.webp',
     bannerCaption: "En 1962, Fuller y Wheeler demostraron que el puente de Einstein-Rosen se estrangula tan rápido que ni la luz alcanza a cruzarlo.",
     title: "El puente de Einstein-Rosen se cierra",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "fuerzas-de-marea",
+    diagramImage: '/assets/wormhole/infographic_m9/diagram_fuerzas-de-marea.webp',
+    diagramCaption: 'Cerca de un agujero negro de 10 masas solares, la diferencia de gravedad entre cabeza y pies destrozaría a una persona antes del horizonte.',
     bannerImage: '/assets/wormhole/infographic_m9/banner_fuerzas-de-marea.webp',
     bannerCaption: "Cerca de un agujero negro de 10 masas solares, la diferencia de gravedad entre cabeza y pies destrozaría a una persona antes del horizonte.",
     title: "Fuerzas de marea: el estirón cósmico",
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "anillo-de-einstein",
+    diagramImage: '/assets/wormhole/infographic_m9/diagram_anillo-de-einstein.webp',
+    diagramCaption: 'La gravedad curva la luz: en 1919, Eddington midió cómo el Sol desviaba la luz de estrellas lejanas durante un eclipse total.',
     bannerImage: '/assets/wormhole/infographic_m9/banner_anillo-de-einstein.webp',
     bannerCaption: "La gravedad curva la luz: en 1919, Eddington midió cómo el Sol desviaba la luz de estrellas lejanas durante un eclipse total.",
     title: "Lentes gravitacionales y el anillo de Einstein",
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "boca-esfera-de-cristal",
+    diagramImage: '/assets/wormhole/infographic_m9/diagram_boca-esfera-de-cristal.webp',
+    diagramCaption: 'Para «Interstellar» (2014), Kip Thorne y el estudio Double Negative calcularon cómo se vería la boca esférica de un agujero de gusano.',
     bannerImage: '/assets/wormhole/infographic_m9/banner_boca-esfera-de-cristal.webp',
     bannerCaption: "Para «Interstellar» (2014), Kip Thorne y el estudio Double Negative calcularon cómo se vería la boca esférica de un agujero de gusano.",
     title: "La boca: una esfera de cristal hacia otro cielo",
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "dentro-de-la-garganta",
+    diagramImage: '/assets/wormhole/infographic_m9/diagram_dentro-de-la-garganta.webp',
+    diagramCaption: 'Desde el interior del túnel verías dos cielos: el del destino al frente y el de tu punto de partida detrás de ti.',
     bannerImage: '/assets/wormhole/infographic_m9/banner_dentro-de-la-garganta.webp',
     bannerCaption: "Desde el interior del túnel verías dos cielos: el del destino al frente y el de tu punto de partida detrás de ti.",
     title: "Dentro de la garganta: dos cielos a la vez",
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "atajo-en-el-tiempo",
+    diagramImage: '/assets/wormhole/infographic_m9/diagram_atajo-en-el-tiempo.webp',
+    diagramCaption: 'En 1988, Morris, Thorne y Yurtsever mostraron que mover una boca a gran velocidad podría convertir un agujero de gusano en máquina del tiempo.',
     bannerImage: '/assets/wormhole/infographic_m9/banner_atajo-en-el-tiempo.webp',
     bannerCaption: "En 1988, Morris, Thorne y Yurtsever mostraron que mover una boca a gran velocidad podría convertir un agujero de gusano en máquina del tiempo.",
     title: "Un atajo en el tiempo",
@@ -252,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "senales-y-salida",
+    diagramImage: '/assets/wormhole/infographic_m9/diagram_senales-y-salida.webp',
+    diagramCaption: 'Si la luz cruza el túnel, también lo harían las ondas de radio: podrías hablar con tu base durante el viaje, si el diseño lo permite.',
     bannerImage: '/assets/wormhole/infographic_m9/banner_senales-y-salida.webp',
     bannerCaption: "Si la luz cruza el túnel, también lo harían las ondas de radio: podrías hablar con tu base durante el viaje, si el diseño lo permite.",
     title: "Mensajes desde el túnel y la salida",
@@ -707,6 +721,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

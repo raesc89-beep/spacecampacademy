@@ -152,6 +152,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "pelicula",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_pelicula.webp',
+    diagramCaption: 'El icónico aeropatín de BTTF2 flotando sobre las calles de Hill Valley 2015',
     "title": "El Aeropatín en la Película",
     "color": "#E040FB",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_pelicula.webp",
@@ -181,6 +183,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "maglev",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_maglev.webp',
+    diagramCaption: 'Trenes Maglev reales: levitación magnética a más de 600 km/h',
     "title": "Trenes Maglev: Levitación Real",
     "color": "#00CCFF",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_maglev.webp",
@@ -210,6 +214,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "lexus",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_lexus.webp',
+    diagramCaption: 'El Lexus Slide: un hoverboard real que usa superconductores y nitrógeno líquido',
     "title": "El Hoverboard de Lexus (2015)",
     "color": "#7C4DFF",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_lexus.webp",
@@ -239,6 +245,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "hendo",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_hendo.webp',
+    diagramCaption: 'El Hendo Hoverboard: inducción electromagnética sobre superficie de cobre',
     "title": "El Hendo Hoverboard y Tony Hawk",
     "color": "#FF6B00",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_hendo.webp",
@@ -268,6 +276,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "newton",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_newton.webp',
+    diagramCaption: 'Las leyes de Newton y la gravedad: el obstáculo a superar para levitar',
     "title": "Las Leyes de Newton y la Gravedad",
     "color": "#FFA500",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_newton.webp",
@@ -297,6 +307,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "quantum",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_quantum.webp',
+    diagramCaption: 'Quantum flux pinning: superconductores que se anclan en el aire',
     "title": "Levitación Cuántica: Flux Pinning",
     "color": "#00E676",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_quantum.webp",
@@ -326,6 +338,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "electro",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_electro.webp',
+    diagramCaption: 'Suspensión electromagnética real: ingeniería de feedback activo',
     "title": "Suspensión EM en la Vida Real",
     "color": "#FFD740",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_electro.webp",
@@ -355,6 +369,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "futuro-antgrav",
+    diagramImage: '/assets/bttf/infographic_m5/diagram_futuro-antgrav.webp',
+    diagramCaption: 'El futuro de la antigravedad: ciudades flotantes con superconductores de temperatura ambiente',
     "title": "El Futuro de la Antigravedad",
     "color": "#FF5252",
     "btnImage": "/assets/bttf/infographic_aeropatines/btn_futuro.webp",
@@ -695,6 +711,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               {node.bannerCaption}
             </p>
           )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         </div>
       )}
     </motion.div>

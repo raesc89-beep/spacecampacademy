@@ -135,6 +135,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'huellas-historias',
+    diagramImage: '/assets/dinos/infographic_m6/diagram_huellas-historias.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Huellas que Cuentan Historias',
               bannerImage: '/assets/dinos/infographic_m6/banner_huellas-historias.webp',
     title: 'Huellas que Cuentan Historias',
     color: '#5D8A68',
@@ -155,6 +157,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'vida-en-manada',
+    diagramImage: '/assets/dinos/infographic_m6/diagram_vida-en-manada.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Vida en Manada',
               bannerImage: '/assets/dinos/infographic_m6/banner_vida-en-manada.webp',
     title: 'Vida en Manada',
     color: '#C17829',
@@ -175,6 +179,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nidos-cuidado-parental',
+    diagramImage: '/assets/dinos/infographic_m6/diagram_nidos-cuidado-parental.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Nidos y Cuidado Parental',
               bannerImage: '/assets/dinos/infographic_m6/banner_nidos-cuidado-parental.webp',
     title: 'Nidos y Cuidado Parental',
     color: '#6B8E96',
@@ -195,6 +201,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'comunicacion-dinosaurios',
+    diagramImage: '/assets/dinos/infographic_m6/diagram_comunicacion-dinosaurios.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Comunicación entre Dinosaurios',
               bannerImage: '/assets/dinos/infographic_m6/banner_comunicacion-dinosaurios.webp',
     title: 'Comunicación entre Dinosaurios',
     color: '#8B5E3C',
@@ -215,6 +223,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'migracion-territorio',
+    diagramImage: '/assets/dinos/infographic_m6/diagram_migracion-territorio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Migración y Territorio',
               bannerImage: '/assets/dinos/infographic_m6/banner_migracion-territorio.webp',
     title: 'Migración y Territorio',
     color: '#A67B3D',
@@ -235,6 +245,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dinosaurios-nocturnos',
+    diagramImage: '/assets/dinos/infographic_m6/diagram_dinosaurios-nocturnos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Dinosaurios Nocturnos',
               bannerImage: '/assets/dinos/infographic_m6/banner_dinosaurios-nocturnos.webp',
     title: 'Dinosaurios Nocturnos',
     color: '#7D6B99',
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'etologia-comparada',
+    diagramImage: '/assets/dinos/infographic_m6/diagram_etologia-comparada.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Etología Comparada',
               bannerImage: '/assets/dinos/infographic_m6/banner_etologia-comparada.webp',
     title: 'Etología Comparada',
     color: '#3E7C8B',
@@ -711,6 +725,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

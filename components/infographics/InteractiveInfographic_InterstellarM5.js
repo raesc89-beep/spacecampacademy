@@ -88,6 +88,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "dimensiones-geometria",
+    diagramImage: '/assets/interstellar/infographic_m5/diagram_dimensiones-geometria.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre De Punto a Hipercubo',
     "bannerImage": "/assets/interstellar/infographic_m5/banner_dimensiones-geometria.webp",
     "title": "De Punto a Hipercubo",
     "color": "#7C4DFF",
@@ -116,6 +118,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "quinta-dimension",
+    diagramImage: '/assets/interstellar/infographic_m5/diagram_quinta-dimension.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Quinta Dimensión',
     "bannerImage": "/assets/interstellar/infographic_m5/banner_quinta-dimension.webp",
     "title": "La Quinta Dimensión",
     "color": "#4FC3F7",
@@ -144,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "teoria-cuerdas",
+    diagramImage: '/assets/interstellar/infographic_m5/diagram_teoria-cuerdas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cuerdas Vibrantes',
     "bannerImage": "/assets/interstellar/infographic_m5/banner_teoria-cuerdas.webp",
     "title": "Cuerdas Vibrantes",
     "color": "#FF6B35",
@@ -172,6 +178,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "branas-universo",
+    diagramImage: '/assets/interstellar/infographic_m5/diagram_branas-universo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Universos en Rebanadas',
     "bannerImage": "/assets/interstellar/infographic_m5/banner_branas-universo.webp",
     "title": "Universos en Rebanadas",
     "color": "#AB47BC",
@@ -200,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gravedad-transdimensional",
+    diagramImage: '/assets/interstellar/infographic_m5/diagram_gravedad-transdimensional.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Gravedad Cruza Dimensiones',
     "bannerImage": "/assets/interstellar/infographic_m5/banner_gravedad-transdimensional.webp",
     "title": "La Gravedad Cruza Dimensiones",
     "color": "#FF9800",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "teseracto-cooper",
+    diagramImage: '/assets/interstellar/infographic_m5/diagram_teseracto-cooper.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Teseracto de Cooper',
     "bannerImage": "/assets/interstellar/infographic_m5/banner_teseracto-cooper.webp",
     "title": "El Teseracto de Cooper",
     "color": "#F44336",
@@ -256,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "mensaje-tiempo",
+    diagramImage: '/assets/interstellar/infographic_m5/diagram_mensaje-tiempo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Un Mensaje a Través del Tiempo',
     "bannerImage": "/assets/interstellar/infographic_m5/banner_mensaje-tiempo.webp",
     "title": "Un Mensaje a Través del Tiempo",
     "color": "#26A69A",
@@ -714,6 +728,46 @@ export default function InteractiveInfographic_InterstellarM5() {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {/* Fact Box */}

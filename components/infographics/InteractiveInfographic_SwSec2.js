@@ -90,6 +90,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "tatooine-soles",
+    diagramImage: '/assets/starwars/infographic_mundos/diagram_tatooine-soles.webp',
+    diagramCaption: 'El doble atardecer de Tatooine â€” inspirado en Kepler-16b',
     "title": "Tatooine: Los Dos Soles",
     "color": "#FFB74D",
     "btnImage": "/assets/starwars/infographic_mundos/btn_tatooine.webp",
@@ -129,6 +131,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "metodo-eclipse",
+    diagramImage: '/assets/starwars/infographic_mundos/diagram_metodo-eclipse.webp',
+    diagramCaption: 'El telescopio Kepler observó más de 150,000 estrellas.',
     "title": "El Método del Eclipse",
     "color": "#64B5F6",
     "btnImage": "/assets/starwars/infographic_mundos/btn_eclipse.webp",
@@ -158,6 +162,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "hoth-hielo",
+    diagramImage: '/assets/starwars/infographic_mundos/diagram_hoth-hielo.webp',
+    diagramCaption: 'Europa tiene un océano subterráneo que podría albergar vida.',
     "title": "Hoth: Mundos de Hielo",
     "color": "#B3E5FC",
     "btnImage": "/assets/starwars/infographic_mundos/btn_hoth.webp",
@@ -197,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "dagobah-pantano",
+    diagramImage: '/assets/starwars/infographic_mundos/diagram_dagobah-pantano.webp',
+    diagramCaption: 'En el Carbonífero, la Tierra lucía como Dagobah.',
     "title": "Dagobah: Pantanos Prehistóricos",
     "color": "#81C784",
     "btnImage": "/assets/starwars/infographic_mundos/btn_dagobah.webp",
@@ -236,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "mundos-lava",
+    diagramImage: '/assets/starwars/infographic_mundos/diagram_mundos-lava.webp',
+    diagramCaption: '55 Cancri e: su superficie supera los 2,000°C.',
     "title": "Mundos de Fuego y Lava",
     "color": "#FF7043",
     "btnImage": "/assets/starwars/infographic_mundos/btn_lava.webp",
@@ -279,6 +289,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "trappist-sistema",
+    diagramImage: '/assets/starwars/infographic_mundos/diagram_trappist-sistema.webp',
+    diagramCaption: 'Los planetas de TRAPPIST-1 están muy cerca unos de otros.',
     "title": "TRAPPIST-1: Siete Mundos",
     "color": "#CE93D8",
     "btnImage": "/assets/starwars/infographic_mundos/btn_trappist.webp",
@@ -308,6 +320,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "busqueda-vida",
+    diagramImage: '/assets/starwars/infographic_mundos/diagram_busqueda-vida.webp',
+    diagramCaption: 'El James Webb detectó COâ‚‚ y metano en K2-18b.',
     "title": "La Búsqueda de Vida",
     "color": "#4FC3F7",
     "btnImage": "/assets/starwars/infographic_mundos/btn_vida.webp",
@@ -647,7 +661,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
           {node.bannerImage && (
             <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
               <img src={node.bannerImage} alt={node.bannerCaption || ''} 
-                   onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
+                   onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)', pointerEvents: 'none' }} />
               {node.bannerCaption && (
                 <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center', fontSize: '0.85rem', color: '#FFF', margin: 0, fontStyle: 'italic', textShadow: '0 1px 3px rgba(0,0,0,0.8)', pointerEvents: 'none' }}>

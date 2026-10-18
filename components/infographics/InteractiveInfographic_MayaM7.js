@@ -88,6 +88,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "noh-ek",
+    diagramImage: '/assets/maya/infographic_m7/diagram_noh-ek.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Noh Ek: La Gran Estrella',
     "bannerImage": "/assets/maya/infographic_m7/banner_noh-ek.webp",
     "title": "Noh Ek: La Gran Estrella",
     "color": "#E0E0E0",
@@ -116,6 +118,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ciclo-sinodico",
+    diagramImage: '/assets/maya/infographic_m7/diagram_ciclo-sinodico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ciclo Sinódico: La Danza Cósmica',
     "bannerImage": "/assets/maya/infographic_m7/banner_ciclo-sinodico.webp",
     "title": "Ciclo Sinódico: La Danza Cósmica",
     "color": "#FFD600",
@@ -144,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tabla-dresde",
+    diagramImage: '/assets/maya/infographic_m7/diagram_tabla-dresde.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Las Tablas de Venus: El Códice de Dresde',
     "bannerImage": "/assets/maya/infographic_m7/banner_tabla-dresde.webp",
     "title": "Las Tablas de Venus: El Códice de Dresde",
     "color": "#0288D1",
@@ -172,6 +178,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "guerra-estelar",
+    diagramImage: '/assets/maya/infographic_m7/diagram_guerra-estelar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Guerra Estelar: Batallas Celestiales',
     "bannerImage": "/assets/maya/infographic_m7/banner_guerra-estelar.webp",
     "title": "Guerra Estelar: Batallas Celestiales",
     "color": "#B71C1C",
@@ -200,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "kukulkan-venus",
+    diagramImage: '/assets/maya/infographic_m7/diagram_kukulkan-venus.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Kukulcán: La Serpiente y Venus',
     "bannerImage": "/assets/maya/infographic_m7/banner_kukulkan-venus.webp",
     "title": "Kukulcán: La Serpiente y Venus",
     "color": "#1B5E20",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "observacion-tecnicas",
+    diagramImage: '/assets/maya/infographic_m7/diagram_observacion-tecnicas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Técnicas Sin Telescopios',
     "bannerImage": "/assets/maya/infographic_m7/banner_observacion-tecnicas.webp",
     "title": "Técnicas Sin Telescopios",
     "color": "#F48FB1",
@@ -256,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-venusino",
+    diagramImage: '/assets/maya/infographic_m7/diagram_legado-venusino.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Legado: Maya vs. Europa',
     "bannerImage": "/assets/maya/infographic_m7/banner_legado-venusino.webp",
     "title": "El Legado: Maya vs. Europa",
     "color": "#0288D1",
@@ -701,6 +715,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

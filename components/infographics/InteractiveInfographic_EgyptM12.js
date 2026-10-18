@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "reloj-solar",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_reloj-solar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Reloj del Faraón',
     "bannerImage": "/assets/egypt/infographic_m12/banner_abu-simbel.webp",
     "title": "El Reloj del Faraón",
     "color": "#E8C96A",
@@ -151,6 +153,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "piramidion",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_piramidion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Punta de Oro',
     "bannerImage": "/assets/egypt/infographic_m12/banner_dendera-zodiaco.webp",
     "title": "La Punta de Oro",
     "color": "#FFD700",
@@ -179,6 +183,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cantera-asuan",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_cantera-asuan.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Gigantes de Granito',
     "bannerImage": "/assets/egypt/infographic_m12/banner_hatshepsut-templo.webp",
     "title": "Gigantes de Granito",
     "color": "#C4846C",
@@ -207,6 +213,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "calendario-piedra",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_calendario-piedra.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Calendario de Piedra',
     "bannerImage": "/assets/egypt/infographic_m12/banner_karnak-templo.webp",
     "title": "Calendario de Piedra",
     "color": "#7EC8E3",
@@ -235,6 +243,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "roma-obeliscos",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_roma-obeliscos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Roma: Ciudad de Obeliscos',
     "bannerImage": "/assets/egypt/infographic_m12/banner_luxor-temple.webp",
     "title": "Roma: Ciudad de Obeliscos",
     "color": "#D4674A",
@@ -263,6 +273,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "aguja-cleopatra",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_aguja-cleopatra.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Aguja de Cleopatra',
     "bannerImage": "/assets/egypt/infographic_m12/banner_obelisco-origen.webp",
     "title": "La Aguja de Cleopatra",
     "color": "#9B59B6",
@@ -291,6 +303,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "eratostenes",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_eratostenes.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Midiendo la Tierra',
     "bannerImage": "/assets/egypt/infographic_m12/banner_tutankhamun-tumba.webp",
     "title": "Midiendo la Tierra",
     "color": "#1ABC9C",
@@ -319,6 +333,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-tiempo",
+    diagramImage: '/assets/egypt/infographic_m12/diagram_legado-tiempo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Del Obelisco al Reloj Atómico',
     "bannerImage": "/assets/egypt/infographic_m12/banner_valley-kings.webp",
     "title": "Del Obelisco al Reloj Atómico",
     "color": "#E67E22",
@@ -637,6 +653,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem',

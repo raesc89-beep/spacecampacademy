@@ -98,6 +98,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "piramide-castillo",
+    diagramImage: '/assets/maya/infographic_m2/diagram_piramide-castillo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Castillo',
     "bannerImage": "/assets/maya/infographic_m2/banner_cacao-fermentacion.webp",
     "title": "El Castillo",
     "color": "#FF6D00",
@@ -126,6 +128,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "equinoccio-serpiente",
+    diagramImage: '/assets/maya/infographic_m2/diagram_equinoccio-serpiente.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Serpiente de Luz',
     "bannerImage": "/assets/maya/infographic_m2/banner_cacao-moneda.webp",
     "title": "La Serpiente de Luz",
     "color": "#8D6E63",
@@ -154,6 +158,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "geometria-solar",
+    diagramImage: '/assets/maya/infographic_m2/diagram_geometria-solar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Geometría Solar',
     "bannerImage": "/assets/maya/infographic_m2/banner_cacao-origen.webp",
     "title": "Geometría Solar",
     "color": "#FFD600",
@@ -182,6 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "calendario-piedra",
+    diagramImage: '/assets/maya/infographic_m2/diagram_calendario-piedra.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Calendario en Piedra',
     "bannerImage": "/assets/maya/infographic_m2/banner_cacao-salud.webp",
     "title": "Calendario en Piedra",
     "color": "#29B6F6",
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "acustica-quetzal",
+    diagramImage: '/assets/maya/infographic_m2/diagram_acustica-quetzal.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Acústica del Quetzal',
     "bannerImage": "/assets/maya/infographic_m2/banner_chocolate-europeo.webp",
     "title": "Acústica del Quetzal",
     "color": "#00C853",
@@ -238,6 +248,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "construccion-capas",
+    diagramImage: '/assets/maya/infographic_m2/diagram_construccion-capas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Construcción en Capas',
     "bannerImage": "/assets/maya/infographic_m2/banner_industria-chocolate.webp",
     "title": "Construcción en Capas",
     "color": "#D50000",
@@ -266,6 +278,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "patrimonio-mundial",
+    diagramImage: '/assets/maya/infographic_m2/diagram_patrimonio-mundial.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Patrimonio Mundial',
     "bannerImage": "/assets/maya/infographic_m2/banner_xocolatl-bebida.webp",
     "title": "Patrimonio Mundial",
     "color": "#D7CCC8",
@@ -731,6 +745,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '2rem',

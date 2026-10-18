@@ -156,6 +156,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "disco-zodiacal",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_disco-zodiacal.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Disco del Cielo',
     "bannerImage": "/assets/egypt/infographic_m9/banner_djer-primera-dinastia.webp",
     "title": "El Disco del Cielo",
     "color": "#D46A6A",
@@ -184,6 +186,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "constelaciones",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_constelaciones.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Las 12 + las Egipcias',
     "bannerImage": "/assets/egypt/infographic_m9/banner_fin-egipto.webp",
     "title": "Las 12 + las Egipcias",
     "color": "#7EB8C9",
@@ -212,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "templo-hathor",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_templo-hathor.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Templo de Hathor',
     "bannerImage": "/assets/egypt/infographic_m9/banner_menes-narmer.webp",
     "title": "El Templo de Hathor",
     "color": "#C9A96E",
@@ -240,6 +246,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "robo-louvre",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_robo-louvre.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Robo del Zodiaco',
     "bannerImage": "/assets/egypt/infographic_m9/banner_periodo-tardio.webp",
     "title": "El Robo del Zodiaco",
     "color": "#8B6B8B",
@@ -268,6 +276,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "datacion",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_datacion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Fotografía del Cielo del 50 a.C.',
     "bannerImage": "/assets/egypt/infographic_m9/banner_ramseses-ii.webp",
     "title": "Fotografía del Cielo del 50 a.C.",
     "color": "#E8C96A",
@@ -296,6 +306,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "criaturas",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_criaturas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Criaturas del Cielo Egipcio',
     "bannerImage": "/assets/egypt/infographic_m9/banner_reino-antiguo.webp",
     "title": "Criaturas del Cielo Egipcio",
     "color": "#6B8E6B",
@@ -324,6 +336,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "planetas",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_planetas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Dioses Errantes',
     "bannerImage": "/assets/egypt/infographic_m9/banner_reino-medio.webp",
     "title": "Los Dioses Errantes",
     "color": "#E8A87C",
@@ -352,6 +366,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado",
+    diagramImage: '/assets/egypt/infographic_m9/diagram_legado.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Viaje de 5,000 Años',
     "bannerImage": "/assets/egypt/infographic_m9/banner_reino-nuevo.webp",
     "title": "El Viaje de 5,000 Años",
     "color": "#9B8EC7",
@@ -710,6 +726,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {/* Fact Box */}
         {node.fact && (
           <div style={{

@@ -72,6 +72,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "plasma-estado",
+    diagramImage: '/assets/starwars/infographic_sec6/diagram_plasma-estado.webp',
+    diagramCaption: 'El plasma: el cuarto estado de la materia, más común en el universo que el sólido líquido y gas juntos',
     "title": "El Cuarto Estado de la Materia",
     "color": "#FF5252",
     "btnImage": "/assets/starwars/infographic_plasmas/btn_plasma_estado.webp",
@@ -101,6 +103,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sable-laser",
+    diagramImage: '/assets/starwars/infographic_sec6/diagram_sable-laser.webp',
+    diagramCaption: 'Por qué es imposible un sable de luz real: el plasma necesita confinamiento magnético o se dispersa instantáneamente',
     "title": "¿Podremos Construir un Sable Láser?",
     "color": "#448AFF",
     "btnImage": "/assets/starwars/infographic_plasmas/btn_sable_laser.webp",
@@ -130,6 +134,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "blasters-energia",
+    diagramImage: '/assets/starwars/infographic_sec6/diagram_blasters-energia.webp',
+    diagramCaption: 'Los blasters de Star Wars: en la realidad los láseres viajan a velocidad de luz, no en cámara lenta como en la película',
     "title": "Blasters: Armas de Energía Dirigida",
     "color": "#FF6E40",
     "btnImage": "/assets/starwars/infographic_plasmas/btn_blasters_energia.webp",
@@ -159,6 +165,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "escudos-deflectores",
+    diagramImage: '/assets/starwars/infographic_sec6/diagram_escudos-deflectores.webp',
+    diagramCaption: 'Escudos deflectores: la magnetosfera terrestre es un escudo real, investigadores diseñan versiones para naves espaciales',
     "title": "Escudos Deflectores: ¿Son Posibles?",
     "color": "#40C4FF",
     "btnImage": "/assets/starwars/infographic_plasmas/btn_escudos_deflectores.webp",
@@ -188,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "fusion-nuclear",
+    diagramImage: '/assets/starwars/infographic_plasmas/diagram_fusion-nuclear.webp',
+    diagramCaption: 'Los reactores tokamak confinan plasma a 150 millones de grados en forma toroidal para lograr la fusión nuclear controlada.',
     "title": "Fusión Nuclear: La Energía de las Estrellas",
     "color": "#FF1744",
     "btnImage": "/assets/starwars/infographic_plasmas/btn_fusion_nuclear.webp",
@@ -217,6 +227,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "rayos-ionicos",
+    diagramImage: '/assets/starwars/infographic_plasmas/diagram_rayos-ionicos.webp',
+    diagramCaption: 'Los motores iónicos aceleran gas xenón ionizado para generar empuje continuo, alcanzando velocidades de 90 km/s.',
     "title": "Cañones de Iones y Propulsión",
     "color": "#2979FF",
     "btnImage": "/assets/starwars/infographic_plasmas/btn_rayos_ionicos.webp",
@@ -246,6 +258,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "estrella-muerte",
+    diagramImage: '/assets/starwars/infographic_plasmas/diagram_estrella-muerte.webp',
+    diagramCaption: 'Los láseres de alta potencia concentran fotones coherentes mediante cristales amplificadores para transferir energía a largas distancias.',
     "title": "La Estrella de la Muerte: Superláseres",
     "color": "#FF9100",
     "btnImage": "/assets/starwars/infographic_plasmas/btn_estrella_muerte.webp",
@@ -275,6 +289,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "fusion-tokamak",
+    diagramImage: '/assets/starwars/infographic_sec6/diagram_fusion-tokamak.webp',
+    diagramCaption: 'El tokamak ITER: plasma a 150 millones de grados confinado por imanes superconductores — la energía del futuro',
     "title": "Plasma en Fusión Nuclear: El Sol en una Botella",
     "color": "#FF7043",
     "btnImage": "/assets/starwars/swsec6/btn_fusion-tokamak.webp",
@@ -304,6 +320,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sonoluminiscencia",
+    diagramImage: '/assets/starwars/infographic_sec6/diagram_sonoluminiscencia.webp',
+    diagramCaption: 'Sonoluminiscencia: una burbuja que colapsa por ultrasonido crea plasma a millones de grados por nanosegundos',
     "title": "Sonoluminiscencia: Luz del Sonido, Misterio del Plasma",
     "color": "#7E57C2",
     "btnImage": "/assets/starwars/swsec6/btn_sonoluminiscencia.webp",
@@ -333,6 +351,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "magnetares-plasma",
+    diagramImage: '/assets/starwars/infographic_sec6/diagram_magnetares-plasma.webp',
+    diagramCaption: 'Magnetares: estrellas de neutrones con campos magnéticos un billón de veces más fuertes que el de la Tierra',
     "title": "Magnetares: El Plasma más Extremo del Universo",
     "color": "#26A69A",
     "btnImage": "/assets/starwars/swsec6/btn_magnetares-plasma.webp",
@@ -652,7 +672,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
 
           {node.bannerImage && (
             <div style={{ margin: '2rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}33` }}>
-              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
+              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               {node.bannerCaption && (
                 <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic' }}>
                   {node.bannerCaption}

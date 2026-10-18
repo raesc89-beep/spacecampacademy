@@ -74,6 +74,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "amigdala-meditacion",
+    diagramImage: '/assets/starwars/infographic_jedi/diagram_amigdala-meditacion.webp',
+    diagramCaption: 'Un Padawan aprendiendo a calmar su mente en los silenciosos salones del Templo Jedi.',
     "title": "La Amígdala: Tu Alarma Interna",
     "color": "#7B68EE",
     "btnImage": "/assets/starwars/infographic_jedi/btn_amigdala_meditacion.webp",
@@ -103,6 +105,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "mindfulness-jedi",
+    diagramImage: '/assets/starwars/infographic_jedi/diagram_mindfulness-jedi.webp',
+    diagramCaption: 'La profunda conexión con la Fuerza comienza silenciando el ruido del universo exterior.',
     "title": "Meditación Jedi: La Ciencia del Mindfulness",
     "color": "#00CED1",
     "btnImage": "/assets/starwars/infographic_jedi/btn_mindfulness_jedi.webp",
@@ -132,6 +136,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "neuroplasticidad",
+    diagramImage: '/assets/starwars/infographic_jedi/diagram_neuroplasticidad.webp',
+    diagramCaption: 'Las vías neuronales se fortalecen con la repetición, igual que el dominio del sable de luz.',
     "title": "El Cerebro que se Entrena: Neuroplasticidad",
     "color": "#FFB74D",
     "btnImage": "/assets/starwars/infographic_jedi/btn_neuroplasticidad.webp",
@@ -161,6 +167,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "respiracion-kenobi",
+    diagramImage: '/assets/starwars/infographic_jedi/diagram_respiracion-kenobi.webp',
+    diagramCaption: 'El control del aire es el control de la mente, un puente directo hacia el sistema nervioso.',
     "title": "Respira como Obi-Wan: Técnica 4-7-8",
     "color": "#66BB6A",
     "btnImage": "/assets/starwars/infographic_jedi/btn_respiracion_kenobi.webp",
@@ -190,6 +198,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "inteligencia-emocional",
+    diagramImage: '/assets/starwars/infographic_jedi/diagram_inteligencia-emocional.webp',
+    diagramCaption: 'Sentir las emociones de otros en la galaxia: la ciencia de las neuronas espejo.',
     "title": "El Poder de la Empatía Jedi",
     "color": "#42A5F5",
     "btnImage": "/assets/starwars/infographic_jedi/btn_inteligencia_emocional.webp",
@@ -219,6 +229,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "lado-oscuro-cortisol",
+    diagramImage: '/assets/starwars/infographic_jedi/diagram_lado-oscuro-cortisol.webp',
+    diagramCaption: 'El miedo lleva a la ira, la ira al odio... Y el estrés crónico daña el cerebro.',
     "title": "El Lado Oscuro: Estrés y Cortisol",
     "color": "#EF5350",
     "btnImage": "/assets/starwars/infographic_jedi/btn_lado_oscuro_cortisol.webp",
@@ -248,6 +260,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sueno-jedi",
+    diagramImage: '/assets/starwars/infographic_jedi/diagram_sueno-jedi.webp',
+    diagramCaption: 'Incluso los Maestros más poderosos necesitan que su cerebro se repare en la noche.',
     "title": "Sueño REM: El Entrenamiento Nocturno",
     "color": "#AB47BC",
     "btnImage": "/assets/starwars/infographic_jedi/btn_sueno_jedi.webp",
@@ -566,7 +580,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
 
           {node.bannerImage && (
             <div style={{ margin: '2rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}55` }}>
-              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
+              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               {node.bannerCaption && (
                 <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic' }}>
                   {node.bannerCaption}

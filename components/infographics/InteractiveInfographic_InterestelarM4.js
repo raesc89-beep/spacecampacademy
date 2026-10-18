@@ -127,6 +127,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "sistema-atlas",
+    diagramImage: '/assets/interestelar/infographic_m4/diagram_sistema-atlas.webp',
+    diagramCaption: 'Sistema ATLAS: cubre el cielo completo dos veces por noche buscando objetos de movimiento rápido',
     "title": "El Sistema ATLAS",
     "color": "#66BB6A",
     "btnImage": "/assets/interestelar/infographic_m4/btn_sistema-atlas.jpg",
@@ -156,6 +158,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "deteccion-automatica",
+    diagramImage: '/assets/interestelar/infographic_m4/diagram_deteccion-automatica.webp',
+    diagramCaption: 'Detección automática: IA clasifica millones de detecciones nocturnas para encontrar objetos inusuales',
     "title": "Detección Automática",
     "color": "#F44336",
     "btnImage": "/assets/interestelar/infographic_m4/btn_deteccion-automatica.jpg",
@@ -185,6 +189,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "candidatos-interestelares",
+    diagramImage: '/assets/interestelar/infographic_m4/diagram_candidatos-interestelares.webp',
+    diagramCaption: 'Candidatos interestelares: distinguir verdaderos visitantes de objetos del sistema solar perturbados',
     "title": "Candidatos a 3I",
     "color": "#FF9800",
     "btnImage": "/assets/interestelar/infographic_m4/btn_candidatos-interestelares.jpg",
@@ -214,6 +220,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "falsos-positivos",
+    diagramImage: '/assets/interestelar/infographic_m4/diagram_falsos-positivos.webp',
+    diagramCaption: 'Falsos positivos: el desgasamiento cometario puede simular órbitas hiperbólicas engañando a los detectores',
     "title": "Trampas de Júpiter",
     "color": "#00ACC1",
     "btnImage": "/assets/interestelar/infographic_m4/btn_falsos-positivos.jpg",
@@ -243,6 +251,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "velocidad-deteccion",
+    diagramImage: '/assets/interestelar/infographic_m4/diagram_velocidad-deteccion.webp',
+    diagramCaption: 'El desafío de la velocidad: los visitantes huyen antes de que los detectemos, tenemos horas para reaccionar',
     "title": "La Necesidad de Velocidad",
     "color": "#9C27B0",
     "btnImage": "/assets/interestelar/infographic_m4/btn_velocidad-deteccion.jpg",
@@ -272,6 +282,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "lsst-vera-rubin",
+    diagramImage: '/assets/interestelar/infographic_m4/diagram_lsst-vera-rubin.webp',
+    diagramCaption: 'Vera Rubin LSST: el telescopio que detectará un objeto interestelar por año desde 2025',
     "title": "Telescopio Vera Rubin",
     "color": "#2196F3",
     "btnImage": "/assets/interestelar/infographic_m4/btn_lsst-vera-rubin.jpg",
@@ -301,6 +313,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "red-global-vigilancia",
+    diagramImage: '/assets/interestelar/infographic_m4/diagram_red-global-vigilancia.webp',
+    diagramCaption: 'Red global de vigilancia: telescopios en todo el mundo comparten datos en tiempo real para no perder visitantes',
     "title": "La Red Global",
     "color": "#FDD835",
     "btnImage": "/assets/interestelar/infographic_m4/btn_red-global-vigilancia.jpg",
@@ -777,6 +791,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

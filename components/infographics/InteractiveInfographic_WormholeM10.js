@@ -126,6 +126,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "viaje-de-diseno",
+    diagramImage: '/assets/wormhole/infographic_m10/diagram_viaje-de-diseno.webp',
+    diagramCaption: 'Morris y Thorne diseñaron en 1988 un túnel teórico donde la marea nunca supera la gravedad terrestre y el viaje resulta cómodo.',
     bannerImage: '/assets/wormhole/infographic_m10/banner_viaje-de-diseno.webp',
     bannerCaption: "Morris y Thorne diseñaron en 1988 un túnel teórico donde la marea nunca supera la gravedad terrestre y el viaje resulta cómodo.",
     title: "Un viaje de diseño: el túnel ideal",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "horizonte-sin-retorno",
+    diagramImage: '/assets/wormhole/infographic_m10/diagram_horizonte-sin-retorno.webp',
+    diagramCaption: 'El radio del horizonte de un agujero negro crece con su masa: unos 3 km por cada masa solar, sin importar de qué esté hecho.',
     bannerImage: '/assets/wormhole/infographic_m10/banner_horizonte-sin-retorno.webp',
     bannerCaption: "El radio del horizonte de un agujero negro crece con su masa: unos 3 km por cada masa solar, sin importar de qué esté hecho.",
     title: "El horizonte de eventos: la puerta sin regreso",
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "espacio-y-tiempo-intercambian",
+    diagramImage: '/assets/wormhole/infographic_m10/diagram_espacio-y-tiempo-intercambian.webp',
+    diagramCaption: 'Dentro del horizonte, la singularidad deja de ser un lugar y se convierte en un momento de tu futuro, imposible de esquivar.',
     bannerImage: '/assets/wormhole/infographic_m10/banner_espacio-y-tiempo-intercambian.webp',
     bannerCaption: "Dentro del horizonte, la singularidad deja de ser un lugar y se convierte en un momento de tu futuro, imposible de esquivar.",
     title: "Cuando el espacio y el tiempo cambian de papel",
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cuanto-dura-la-caida",
+    diagramImage: '/assets/wormhole/infographic_m10/diagram_cuanto-dura-la-caida.webp',
+    diagramCaption: 'En Sagitario A*, el tiempo máximo entre el horizonte y la singularidad sería de alrededor de un minuto; en M87*, más de un día.',
     bannerImage: '/assets/wormhole/infographic_m10/banner_cuanto-dura-la-caida.webp',
     bannerCaption: "En Sagitario A*, el tiempo máximo entre el horizonte y la singularidad sería de alrededor de un minuto; en M87*, más de un día.",
     title: "¿Cuánto tiempo te quedaría?",
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "universos-bebe",
+    diagramImage: '/assets/wormhole/infographic_m10/diagram_universos-bebe.webp',
+    diagramCaption: 'En 1992, Lee Smolin propuso que cada agujero negro podría dar origen a un universo nuevo con leyes físicas ligeramente distintas.',
     bannerImage: '/assets/wormhole/infographic_m10/banner_universos-bebe.webp',
     bannerCaption: "En 1992, Lee Smolin propuso que cada agujero negro podría dar origen a un universo nuevo con leyes físicas ligeramente distintas.",
     title: "¿Universos bebé dentro de los agujeros negros?",
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "mensajes-que-no-salen",
+    diagramImage: '/assets/wormhole/infographic_m10/diagram_mensajes-que-no-salen.webp',
+    diagramCaption: 'Para un observador lejano, una sonda que cae parece frenarse y enrojecer junto al horizonte hasta desvanecerse por completo.',
     bannerImage: '/assets/wormhole/infographic_m10/banner_mensajes-que-no-salen.webp',
     bannerCaption: "Para un observador lejano, una sonda que cae parece frenarse y enrojecer junto al horizonte hasta desvanecerse por completo.",
     title: "Mensajes que nunca salen",
@@ -252,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "paradoja-de-la-informacion",
+    diagramImage: '/assets/wormhole/infographic_m10/diagram_paradoja-de-la-informacion.webp',
+    diagramCaption: 'En 1974, Stephen Hawking calculó que los agujeros negros emiten una radiación muy débil y, con el tiempo, podrían evaporarse.',
     bannerImage: '/assets/wormhole/infographic_m10/banner_paradoja-de-la-informacion.webp',
     bannerCaption: "En 1974, Stephen Hawking calculó que los agujeros negros emiten una radiación muy débil y, con el tiempo, podrían evaporarse.",
     title: "La paradoja de la información de Hawking",
@@ -707,6 +721,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

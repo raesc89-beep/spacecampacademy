@@ -141,6 +141,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'amos-cielo-mesozoico',
+    diagramImage: '/assets/dinos/infographic_m5/diagram_amos-cielo-mesozoico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Amos del Cielo Mesozoico',
               bannerImage: '/assets/dinos/infographic_m5/banner_amos-cielo-mesozoico.webp',
     title: 'Los Amos del Cielo Mesozoico',
     color: '#5D8A68',
@@ -161,6 +163,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pteranodon-planeador',
+    diagramImage: '/assets/dinos/infographic_m5/diagram_pteranodon-planeador.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Pteranodon: El Planeador',
               bannerImage: '/assets/dinos/infographic_m5/banner_pteranodon-planeador.webp',
     title: 'Pteranodon: El Planeador',
     color: '#C17829',
@@ -181,6 +185,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'quetzalcoatlus-gigante',
+    diagramImage: '/assets/dinos/infographic_m5/diagram_quetzalcoatlus-gigante.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Quetzalcoatlus: El Gigante Volador',
               bannerImage: '/assets/dinos/infographic_m5/banner_quetzalcoatlus-gigante.webp',
     title: 'Quetzalcoatlus: El Gigante Volador',
     color: '#6B8E96',
@@ -201,6 +207,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rhamphorhynchus-primitivos',
+    diagramImage: '/assets/dinos/infographic_m5/diagram_rhamphorhynchus-primitivos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Rhamphorhynchus y los Primitivos',
               bannerImage: '/assets/dinos/infographic_m5/banner_rhamphorhynchus-primitivos.webp',
     title: 'Rhamphorhynchus y los Primitivos',
     color: '#8B5E3C',
@@ -221,6 +229,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mecanica-vuelo',
+    diagramImage: '/assets/dinos/infographic_m5/diagram_mecanica-vuelo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Mecánica del Vuelo',
               bannerImage: '/assets/dinos/infographic_m5/banner_mecanica-vuelo.webp',
     title: 'La Mecánica del Vuelo',
     color: '#A67B3D',
@@ -241,6 +251,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'huevos-crias-social',
+    diagramImage: '/assets/dinos/infographic_m5/diagram_huevos-crias-social.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Huevos, Crías y Vida Social',
               bannerImage: '/assets/dinos/infographic_m5/banner_huevos-crias-social.webp',
     title: 'Huevos, Crías y Vida Social',
     color: '#7D6B99',
@@ -261,6 +273,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fin-dinastia',
+    diagramImage: '/assets/dinos/infographic_m5/diagram_fin-dinastia.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Fin de una Dinastía',
               bannerImage: '/assets/dinos/infographic_m5/banner_fin-dinastia.webp',
     title: 'El Fin de una Dinastía',
     color: '#3E7C8B',
@@ -715,6 +729,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

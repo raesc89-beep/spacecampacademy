@@ -141,6 +141,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'maquina-tiempo',
+    diagramImage: '/assets/bttf/infographic_m1/diagram_maquina-tiempo.webp',
+    diagramCaption: 'El DeLorean: la máquina del tiempo más icónica del cine, necesitaba alcanzar 88 mph y 1.21 gigavatios',
     title: 'La Máquina del Tiempo',
     color: '#6EC6FF',
     btnImage: '/assets/bttf/infographic_condensador/btn_maquina.webp',
@@ -162,6 +164,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tiempo-newton',
+    diagramImage: '/assets/bttf/infographic_m1/diagram_tiempo-newton.webp',
+    diagramCaption: 'El tiempo newtoniano: un reloj universal que ticta igual para todos en el cosmos, absoluto e inmutable',
     title: 'El Tiempo de Newton',
     color: '#FFD740',
     btnImage: '/assets/bttf/infographic_condensador/btn_newton.webp',
@@ -183,6 +187,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'einstein-relativo',
+    diagramImage: '/assets/bttf/infographic_m1/diagram_einstein-relativo.webp',
+    diagramCaption: 'El tiempo de Einstein: los relojes del GPS se corrigen por relatividad o darían posiciones erróneas en kilómetros',
     title: 'El Tiempo Elástico',
     color: '#B388FF',
     btnImage: '/assets/bttf/infographic_condensador/btn_einstein.webp',
@@ -204,6 +210,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'flecha-tiempo',
+    diagramImage: '/assets/bttf/infographic_m1/diagram_flecha-tiempo.webp',
+    diagramCaption: 'La flecha del tiempo: la entropía siempre aumenta por eso un huevo roto no se vuelve a juntar solo',
     title: 'La Flecha del Tiempo',
     color: '#FF8A80',
     btnImage: '/assets/bttf/infographic_condensador/btn_flecha.webp',
@@ -225,6 +233,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paradoja-causal',
+    diagramImage: '/assets/bttf/infographic_m1/diagram_paradoja-causal.webp',
+    diagramCaption: 'La paradoja del abuelo: si viajas al pasado y evitas tu propio nacimiento, cómo viajaste al pasado?',
     title: 'La Paradoja del Abuelo',
     color: '#CE93D8',
     btnImage: '/assets/bttf/infographic_condensador/btn_paradoja.webp',
@@ -246,6 +256,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'condensador-flujo',
+    diagramImage: '/assets/bttf/infographic_m1/diagram_condensador-flujo.webp',
+    diagramCaption: 'El condensador de flujo: la pieza ficticia que inspiró debates reales de física sobre manipulación del espacio-tiempo',
     title: 'El Condensador de Flujo',
     color: '#00E5FF',
     btnImage: '/assets/bttf/infographic_condensador/btn_condensador.webp',
@@ -267,6 +279,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-cientifico',
+    diagramImage: '/assets/bttf/infographic_m1/diagram_legado-cientifico.webp',
+    diagramCaption: 'El legado científico de BttF: inspiró a una generación de físicos y aparece en papers académicos sobre causalidad',
     title: 'Legado Científico',
     color: '#FFAB91',
     btnImage: '/assets/bttf/infographic_condensador/btn_legado.webp',
@@ -740,6 +754,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
         {/* â”€â”€â”€ Fact Box â”€â”€â”€ */}

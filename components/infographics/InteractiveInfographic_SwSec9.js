@@ -87,6 +87,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "protesis-bionicas",
+    diagramImage: '/assets/starwars/infographic_vader/diagram_protesis-bionicas.webp',
+    diagramCaption: 'Las prótesis biónicas modernas usan sensores mioeléctricos que traducen señales musculares en movimientos precisos.',
     "title": "Prótesis Biónicas: El Brazo de Luke",
     "color": "#D32F2F",
     "btnImage": "/assets/starwars/infographic_vader/btn_protesis_bionicas.webp",
@@ -121,6 +123,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "soporte-vital",
+    diagramImage: '/assets/starwars/infographic_vader/diagram_soporte-vital.webp',
+    diagramCaption: 'Los sistemas de soporte vital regulan presión, oxígeno y temperatura para sustituir funciones orgánicas comprometidas.',
     "title": "El Traje: Sistema de Soporte Vital",
     "color": "#607D8B",
     "btnImage": "/assets/starwars/infographic_vader/btn_soporte_vital.webp",
@@ -155,6 +159,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "exoesqueletos",
+    diagramImage: '/assets/starwars/infographic_vader/diagram_exoesqueletos.webp',
+    diagramCaption: 'Los exoesqueletos robóticos asisten la movilidad multiplicando la fuerza humana mediante actuadores hidráulicos y eléctricos.',
     "title": "Exoesqueletos: Armaduras del Futuro",
     "color": "#B71C1C",
     "btnImage": "/assets/starwars/infographic_vader/btn_exoesqueletos.webp",
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "interfaz-cerebro",
+    diagramImage: '/assets/starwars/infographic_vader/diagram_interfaz-cerebro.webp',
+    diagramCaption: 'Las interfaces cerebro-computadora (BCI) decodifican señales neuronales corticales para controlar dispositivos externos.',
     "title": "Interfaces Cerebro-Máquina",
     "color": "#90A4AE",
     "btnImage": "/assets/starwars/infographic_vader/btn_interfaz_cerebro.webp",
@@ -223,6 +231,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "regeneracion-tejidos",
+    diagramImage: '/assets/starwars/infographic_vader/diagram_regeneracion-tejidos.webp',
+    diagramCaption: 'La medicina regenerativa emplea células madre y bioandamios para reconstruir tejidos dañados como cartílago y piel.',
     "title": "Tanques de Bacta: Regeneración Celular",
     "color": "#C62828",
     "btnImage": "/assets/starwars/infographic_vader/btn_regeneracion_tejidos.webp",
@@ -257,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "respiracion-asistida",
+    diagramImage: '/assets/starwars/infographic_vader/diagram_respiracion-asistida.webp',
+    diagramCaption: 'Los ventiladores mecánicos administran ciclos de presión positiva para asistir o reemplazar la respiración pulmonar.',
     "title": "La Respiración de Vader",
     "color": "#78909C",
     "btnImage": "/assets/starwars/infographic_vader/btn_respiracion_asistida.webp",
@@ -291,6 +303,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cyborgs-futuro",
+    diagramImage: '/assets/starwars/infographic_vader/diagram_cyborgs-futuro.webp',
+    diagramCaption: 'El concepto de cyborg, acuñado en 1960 por Clynes y Kline, explora la integración de tecnología con biología humana.',
     "title": "Cyborgs: El Futuro de la Humanidad",
     "color": "#E53935",
     "btnImage": "/assets/starwars/infographic_vader/btn_cyborgs_futuro.webp",
@@ -615,7 +629,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
 
           {node.bannerImage && (
             <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}33`, boxShadow: '0 10px 20px rgba(0,0,0,0.3)' }}>
-              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
+              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               {node.bannerCaption && (
                 <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic' }}>
                   {node.bannerCaption}

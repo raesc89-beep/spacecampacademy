@@ -131,6 +131,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'observatorio',
+    diagramImage: '/assets/egypt/infographic_m1/diagram_observatorio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Primer Observatorio',
               bannerImage: '/assets/egypt/infographic_m1/banner_circulo-piedras.webp',
     title: 'El Primer Observatorio',
     color: '#D4A843',
@@ -153,6 +155,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'sahara-verde',
+    diagramImage: '/assets/egypt/infographic_m1/diagram_sahara-verde.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Sahara Verde',
               bannerImage: '/assets/egypt/infographic_m1/banner_sahara-verde.webp',
     title: 'El Sahara Verde',
     color: '#4CAF50',
@@ -175,6 +179,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'megalitos',
+    diagramImage: '/assets/egypt/infographic_m1/diagram_megalitos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Las Piedras Gigantes',
               bannerImage: '/assets/egypt/infographic_m1/banner_nabta-playa.webp',
     title: 'Las Piedras Gigantes',
     color: '#A0522D',
@@ -197,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'solsticio',
+    diagramImage: '/assets/egypt/infographic_m1/diagram_solsticio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Reloj del Solsticio',
               bannerImage: '/assets/egypt/infographic_m1/banner_nilo-migracion.webp',
               bannerImage: '/assets/egypt/infographic_m1/banner_solsticio.webp',
     title: 'El Reloj del Solsticio',
@@ -220,6 +228,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orion-map',
+    diagramImage: '/assets/egypt/infographic_m1/diagram_orion-map.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Mapa de Orión',
               bannerImage: '/assets/egypt/infographic_m1/banner_orion-constelacion.webp',
     title: 'El Mapa de Orión',
     color: '#7EC8E3',
@@ -242,6 +252,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tribus',
+    diagramImage: '/assets/egypt/infographic_nabta/diagram_tribus.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Primeros Científicos',
     title: 'Los Primeros Científicos',
     color: '#E57373',
     btnImage: '/assets/egypt/infographic_nabta/btn_tribus.webp',
@@ -263,6 +275,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'stonehenge',
+    diagramImage: '/assets/egypt/infographic_nabta/diagram_stonehenge.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Más Antiguo que Stonehenge',
     title: 'Más Antiguo que Stonehenge',
     color: '#9E9E9E',
     btnImage: '/assets/egypt/infographic_nabta/btn_stonehenge.webp',
@@ -284,6 +298,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-nilo',
+    diagramImage: '/assets/egypt/infographic_m1/diagram_legado-nilo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Camino al Nilo',
               bannerImage: '/assets/egypt/infographic_m1/banner_wendorf-schild.webp',
               bannerImage: '/assets/egypt/infographic_m1/banner_legado-nilo.webp',
     title: 'El Camino al Nilo',
@@ -652,6 +668,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem',

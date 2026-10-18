@@ -73,6 +73,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "iss-naves",
+    diagramImage: '/assets/starwars/infographic_cruceros/diagram_iss-naves.webp',
+    diagramCaption: 'El espacio requiere naves gigantescas para su exploración.',
     "title": "De la ISS a los Destructores Estelares",
     "color": "#90CAF9",
     "btnImage": "/assets/starwars/infographic_cruceros/btn_iss-naves.webp",
@@ -102,6 +104,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "materiales",
+    diagramImage: '/assets/starwars/infographic_cruceros/diagram_materiales.webp',
+    diagramCaption: 'Nuevas aleaciones permitirán estructuras imposibles hoy.',
     "title": "Supermateriales del Futuro",
     "color": "#B0BEC5",
     "btnImage": "/assets/starwars/infographic_cruceros/btn_materiales.webp",
@@ -131,6 +135,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "propulsion",
+    diagramImage: '/assets/starwars/infographic_cruceros/diagram_propulsion.webp',
+    diagramCaption: 'Los motores iónicos ya son una realidad científica.',
     "title": "Motores Estelares: Química a Iones",
     "color": "#FFB74D",
     "btnImage": "/assets/starwars/infographic_cruceros/btn_propulsion.webp",
@@ -160,6 +166,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "megaestructuras",
+    diagramImage: '/assets/starwars/infographic_cruceros/diagram_megaestructuras.webp',
+    diagramCaption: 'Cilindros de O',
     "title": "Megaestructuras de Ingeniería",
     "color": "#CE93D8",
     "btnImage": "/assets/starwars/infographic_cruceros/btn_megaestructuras.webp",
@@ -189,6 +197,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "mineria",
+    diagramImage: '/assets/starwars/infographic_cruceros/diagram_mineria.webp',
+    diagramCaption: 'Extraer recursos en el espacio evitará la carga de lanzar materiales desde la Tierra.',
     "title": "Minería de Asteroides",
     "color": "#FFD54F",
     "btnImage": "/assets/starwars/infographic_cruceros/btn_mineria.webp",
@@ -218,6 +228,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "soporte-vital",
+    diagramImage: '/assets/starwars/infographic_cruceros/diagram_soporte-vital.webp',
+    diagramCaption: 'En el vacío, el agua y el oxígeno son tesoros valiosos.',
     "title": "Reciclar para Sobrevivir",
     "color": "#81C784",
     "btnImage": "/assets/starwars/infographic_cruceros/btn_soporte-vital.webp",
@@ -247,6 +259,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gravedad",
+    diagramImage: '/assets/starwars/infographic_cruceros/diagram_gravedad.webp',
+    diagramCaption: 'La microgravedad debilita los huesos; la rotación podría ser nuestra salvación.',
     "title": "Creando Gravedad Artificial",
     "color": "#64B5F6",
     "btnImage": "/assets/starwars/infographic_cruceros/btn_gravedad.webp",
@@ -568,7 +582,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
           {node.bannerImage && (
             <div style={{ margin: '1.5rem 0', borderRadius: '12px', overflow: 'hidden', position: 'relative', background: '#0a0c1e' }}>
               <img src={node.bannerImage} alt={node.bannerCaption || ''} 
-                   onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
+                   onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)', pointerEvents: 'none' }} />
               {node.bannerCaption && (
                 <p style={{ position: 'absolute', bottom: '0.5rem', width: '100%', textAlign: 'center',

@@ -136,6 +136,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "fisica-naves",
+    diagramImage: '/assets/arrival/infographic_m5/diagram_fisica-naves.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Física de las Naves',
     "bannerImage": "/assets/arrival/infographic_m5/banner_fisica-naves.webp",
     "title": "La Física de las Naves",
     "color": "#8B9DAF",
@@ -164,6 +166,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gravedad-artificial",
+    diagramImage: '/assets/arrival/infographic_m5/diagram_gravedad-artificial.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Gravedad Artificial',
     "bannerImage": "/assets/arrival/infographic_m5/banner_gravedad-artificial.webp",
     "title": "Gravedad Artificial",
     "color": "#7A8C9E",
@@ -192,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "atmosfera-alienigena",
+    diagramImage: '/assets/arrival/infographic_m5/diagram_atmosfera-alienigena.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Atmósfera Alienígena',
     "bannerImage": "/assets/arrival/infographic_m5/banner_atmosfera-alienigena.webp",
     "title": "La Atmósfera Alienígena",
     "color": "#6A7B8D",
@@ -220,6 +226,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "armas-no-armas",
+    diagramImage: '/assets/arrival/infographic_m5/diagram_armas-no-armas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Armas y No-Armas',
     "bannerImage": "/assets/arrival/infographic_m5/banner_armas-no-armas.webp",
     "title": "Armas y No-Armas",
     "color": "#4E4E4E",
@@ -248,6 +256,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tiempo-no-lineal",
+    diagramImage: '/assets/arrival/infographic_m5/diagram_tiempo-no-lineal.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Tiempo No Lineal en la Física',
     "bannerImage": "/assets/arrival/infographic_m5/banner_tiempo-no-lineal.webp",
     "title": "Tiempo No Lineal en la Física",
     "color": "#3D3D3D",
@@ -276,6 +286,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "paradoja-fermi-arrival",
+    diagramImage: '/assets/arrival/infographic_m5/diagram_paradoja-fermi-arrival.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Paradoja de Fermi en Arrival',
     "bannerImage": "/assets/arrival/infographic_m5/banner_paradoja-fermi-arrival.webp",
     "title": "La Paradoja de Fermi en Arrival",
     "color": "#2C2C2C",
@@ -304,6 +316,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ciencia-ficcion-dura",
+    diagramImage: '/assets/arrival/infographic_m5/diagram_ciencia-ficcion-dura.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ciencia Ficción Dura',
     "bannerImage": "/assets/arrival/infographic_m5/banner_ciencia-ficcion-dura.webp",
     "title": "Ciencia Ficción Dura",
     "color": "#1B1B1B",
@@ -767,6 +781,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

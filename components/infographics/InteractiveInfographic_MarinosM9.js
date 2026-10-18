@@ -135,6 +135,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'fosiles-mary-anning',
+    diagramImage: '/assets/marinos/infographic_m9/diagram_fosiles-mary-anning.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Fósiles que Reescribieron la Historia',
               bannerImage: '/assets/marinos/infographic_m9/banner_fosiles-mary-anning.webp',
     title: 'Los Fósiles que Reescribieron la Historia',
     color: '#5B7B9A',
@@ -155,6 +157,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ictiosaurio-holzmaden',
+    diagramImage: '/assets/marinos/infographic_m9/diagram_ictiosaurio-holzmaden.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Ictiosaurio de Holzmaden',
               bannerImage: '/assets/marinos/infographic_m9/banner_ictiosaurio-holzmaden.webp',
     title: 'El Ictiosaurio de Holzmaden',
     color: '#B87D5E',
@@ -175,6 +179,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mosasaurio-maastricht',
+    diagramImage: '/assets/marinos/infographic_m9/diagram_mosasaurio-maastricht.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Mosasaurio de Maastricht',
               bannerImage: '/assets/marinos/infographic_m9/banner_mosasaurio-maastricht.webp',
     title: 'El Mosasaurio de Maastricht',
     color: '#6E8FA8',
@@ -195,6 +201,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'western-interior-seaway',
+    diagramImage: '/assets/marinos/infographic_m9/diagram_western-interior-seaway.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Fósiles del Western Interior Seaway',
               bannerImage: '/assets/marinos/infographic_m9/banner_western-interior-seaway.webp',
     title: 'Fósiles del Western Interior Seaway',
     color: '#8B6B4A',
@@ -215,6 +223,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'descubrimientos-sudamerica',
+    diagramImage: '/assets/marinos/infographic_m9/diagram_descubrimientos-sudamerica.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Descubrimientos en Sudamérica',
               bannerImage: '/assets/marinos/infographic_m9/banner_descubrimientos-sudamerica.webp',
     title: 'Descubrimientos en Sudamérica',
     color: '#7C93A8',
@@ -235,6 +245,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tecnicas-modernas',
+    diagramImage: '/assets/marinos/infographic_m9/diagram_tecnicas-modernas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Técnicas Modernas de Estudio',
               bannerImage: '/assets/marinos/infographic_m9/banner_tecnicas-modernas.webp',
     title: 'Técnicas Modernas de Estudio',
     color: '#9E7B5C',
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fosiles-visitar',
+    diagramImage: '/assets/marinos/infographic_m9/diagram_fosiles-visitar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Fósiles Marinos que Puedes Visitar',
               bannerImage: '/assets/marinos/infographic_m9/banner_fosiles-visitar.webp',
     title: 'Fósiles Marinos que Puedes Visitar',
     color: '#4A6F8C',
@@ -710,6 +724,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

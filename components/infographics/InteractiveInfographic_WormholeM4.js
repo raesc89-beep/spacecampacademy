@@ -127,6 +127,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "puentes-einstein-rosen",
+    diagramImage: '/assets/wormhole/infographic_m4/diagram_puentes-einstein-rosen.webp',
+    diagramCaption: 'En 1935, Einstein y Nathan Rosen publicaron en Physical Review el artículo que dio origen a los «puentes» del espacio-tiempo.',
     bannerImage: '/assets/wormhole/infographic_m4/banner_puentes-einstein-rosen.webp',
     bannerCaption: "En 1935, Einstein y Nathan Rosen publicaron en Physical Review el artículo que dio origen a los «puentes» del espacio-tiempo.",
     title: "1935: Los Puentes de Einstein-Rosen",
@@ -148,6 +150,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "wheeler-bautiza-el-gusano",
+    diagramImage: '/assets/wormhole/infographic_m4/diagram_wheeler-bautiza-el-gusano.webp',
+    diagramCaption: 'En 1957, Charles Misner y John A. Wheeler usaron por primera vez la palabra «wormhole»: agujero de gusano.',
     bannerImage: '/assets/wormhole/infographic_m4/banner_wheeler-bautiza-el-gusano.webp',
     bannerCaption: "En 1957, Charles Misner y John A. Wheeler usaron por primera vez la palabra «wormhole»: agujero de gusano.",
     title: "Wheeler Bautiza al «Gusano»",
@@ -169,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "espacio-tiempo-unificado",
+    diagramImage: '/assets/wormhole/infographic_m4/diagram_espacio-tiempo-unificado.webp',
+    diagramCaption: 'En 1908, Hermann Minkowski mostró que la relatividad especial se describe mejor uniendo espacio y tiempo en cuatro dimensiones.',
     bannerImage: '/assets/wormhole/infographic_m4/banner_espacio-tiempo-unificado.webp',
     bannerCaption: "En 1908, Hermann Minkowski mostró que la relatividad especial se describe mejor uniendo espacio y tiempo en cuatro dimensiones.",
     title: "Espacio y Tiempo: Un Solo Tejido",
@@ -190,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "la-curvatura-es-gravedad",
+    diagramImage: '/assets/wormhole/infographic_m4/diagram_la-curvatura-es-gravedad.webp',
+    diagramCaption: 'En noviembre de 1915, Einstein presentó las ecuaciones de la relatividad general: la gravedad es la curvatura del espacio-tiempo.',
     bannerImage: '/assets/wormhole/infographic_m4/banner_la-curvatura-es-gravedad.webp',
     bannerCaption: "En noviembre de 1915, Einstein presentó las ecuaciones de la relatividad general: la gravedad es la curvatura del espacio-tiempo.",
     title: "La Gravedad Es Curvatura",
@@ -211,6 +219,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "pruebas-eclipse-y-gps",
+    diagramImage: '/assets/wormhole/infographic_m4/diagram_pruebas-eclipse-y-gps.webp',
+    diagramCaption: 'El 29 de mayo de 1919, durante un eclipse total, se midió que la luz estelar se curva al pasar junto al Sol, como predijo Einstein.',
     bannerImage: '/assets/wormhole/infographic_m4/banner_pruebas-eclipse-y-gps.webp',
     bannerCaption: "El 29 de mayo de 1919, durante un eclipse total, se midió que la luz estelar se curva al pasar junto al Sol, como predijo Einstein.",
     title: "La Prueba del Eclipse y el GPS",
@@ -232,6 +242,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "topologia-del-espacio",
+    diagramImage: '/assets/wormhole/infographic_m4/diagram_topologia-del-espacio.webp',
+    diagramCaption: 'Para la topología, una taza con asa y una dona son la misma figura: ambas tienen exactamente un agujero.',
     bannerImage: '/assets/wormhole/infographic_m4/banner_topologia-del-espacio.webp',
     bannerCaption: "Para la topología, una taza con asa y una dona son la misma figura: ambas tienen exactamente un agujero.",
     title: "Topología: La Forma Que No Cambia",
@@ -253,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "espuma-cuantica",
+    diagramImage: '/assets/wormhole/infographic_m4/diagram_espuma-cuantica.webp',
+    diagramCaption: 'Wheeler propuso que, a escalas de unos 10 elevado a menos 35 metros, el espacio-tiempo podría bullir como una espuma.',
     bannerImage: '/assets/wormhole/infographic_m4/banner_espuma-cuantica.webp',
     bannerCaption: "Wheeler propuso que, a escalas de unos 10 elevado a menos 35 metros, el espacio-tiempo podría bullir como una espuma.",
     title: "La Espuma Cuántica de Wheeler",
@@ -708,6 +722,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

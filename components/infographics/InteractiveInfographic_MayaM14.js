@@ -109,6 +109,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "edzna-ciudad",
+    diagramImage: '/assets/maya/infographic_m14/diagram_edzna-ciudad.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Ciudad',
     "bannerImage": "/assets/maya/infographic_m14/banner_edzna-ciudad.webp",
     "title": "La Ciudad",
     "color": "#8D6E63",
@@ -137,6 +139,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "paso-cenital",
+    diagramImage: '/assets/maya/infographic_m14/diagram_paso-cenital.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Paso Cenital',
     "bannerImage": "/assets/maya/infographic_m14/banner_paso-cenital.webp",
     "title": "El Paso Cenital",
     "color": "#FFD600",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gnomon-vertical",
+    diagramImage: '/assets/maya/infographic_m14/diagram_gnomon-vertical.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Gnomón',
     "bannerImage": "/assets/maya/infographic_m14/banner_gnomon-vertical.webp",
     "title": "El Gnomón",
     "color": "#212121",
@@ -193,6 +199,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "edificio-cinco-pisos",
+    diagramImage: '/assets/maya/infographic_m14/diagram_edificio-cinco-pisos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Edificio de Cinco Pisos',
     "bannerImage": "/assets/maya/infographic_m14/banner_edificio-cinco-pisos.webp",
     "title": "Edificio de Cinco Pisos",
     "color": "#8D6E63",
@@ -221,6 +229,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sistema-hidraulico",
+    diagramImage: '/assets/maya/infographic_m14/diagram_sistema-hidraulico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Sistema Hidráulico',
     "bannerImage": "/assets/maya/infographic_m14/banner_sistema-hidraulico.webp",
     "title": "Sistema Hidráulico",
     "color": "#0288D1",
@@ -249,6 +259,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "latitud-tropical",
+    diagramImage: '/assets/maya/infographic_m14/diagram_latitud-tropical.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Latitud Tropical',
     "bannerImage": "/assets/maya/infographic_m14/banner_latitud-tropical.webp",
     "title": "Latitud Tropical",
     "color": "#4FC3F7",
@@ -277,6 +289,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "medicion-tiempo",
+    diagramImage: '/assets/maya/infographic_m14/diagram_medicion-tiempo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Medición del Tiempo',
     "bannerImage": "/assets/maya/infographic_m14/banner_medicion-tiempo.webp",
     "title": "Medición del Tiempo",
     "color": "#E65100",
@@ -728,6 +742,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.expandables && node.expandables.length > 0 && (

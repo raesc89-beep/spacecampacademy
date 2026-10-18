@@ -124,6 +124,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "el-cuello-que-se-cierra",
+    diagramImage: '/assets/wormhole/infographic_m7/diagram_el-cuello-que-se-cierra.webp',
+    diagramCaption: 'En 1962, Fuller y Wheeler mostraron que el puente de Einstein-Rosen se estrangula más rápido de lo que la luz puede cruzarlo.',
     bannerImage: '/assets/wormhole/infographic_m7/banner_el-cuello-que-se-cierra.webp',
     bannerCaption: "En 1962, Fuller y Wheeler mostraron que el puente de Einstein-Rosen se estrangula más rápido de lo que la luz puede cruzarlo.",
     title: "El Cuello que Quiere Cerrarse",
@@ -145,6 +147,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "dos-bocas-un-cuello",
+    diagramImage: '/assets/wormhole/infographic_m7/diagram_dos-bocas-un-cuello.webp',
+    diagramCaption: 'Un agujero de gusano traversable típico tiene dos bocas unidas por un cuello, y puede recorrerse en ambos sentidos.',
     bannerImage: '/assets/wormhole/infographic_m7/banner_dos-bocas-un-cuello.webp',
     bannerCaption: "Un agujero de gusano traversable típico tiene dos bocas unidas por un cuello, y puede recorrerse en ambos sentidos.",
     title: "Dos Bocas y un Cuello",
@@ -166,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "viaje-sin-singularidad",
+    diagramImage: '/assets/wormhole/infographic_m7/diagram_viaje-sin-singularidad.webp',
+    diagramCaption: 'Morris y Thorne exigieron que su túnel no tuviera horizonte ni singularidad y que las fuerzas sobre el viajero fueran soportables.',
     bannerImage: '/assets/wormhole/infographic_m7/banner_viaje-sin-singularidad.webp',
     bannerCaption: "Morris y Thorne exigieron que su túnel no tuviera horizonte ni singularidad y que las fuerzas sobre el viajero fueran soportables.",
     title: "Un Viaje sin Singularidad",
@@ -187,6 +193,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ventana-esferica",
+    diagramImage: '/assets/wormhole/infographic_m7/diagram_ventana-esferica.webp',
+    diagramCaption: 'Desde fuera, la boca de un agujero de gusano se vería como una esfera que muestra, distorsionado, el cielo del otro extremo.',
     bannerImage: '/assets/wormhole/infographic_m7/banner_ventana-esferica.webp',
     bannerCaption: "Desde fuera, la boca de un agujero de gusano se vería como una esfera que muestra, distorsionado, el cielo del otro extremo.",
     title: "Una Ventana Esférica a Otro Cielo",
@@ -208,6 +216,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "agujero-de-interstellar",
+    diagramImage: '/assets/wormhole/infographic_m7/diagram_agujero-de-interstellar.webp',
+    diagramCaption: 'Para la película Interstellar (2014), el estudio Double Negative y Kip Thorne simularon con física real cómo se vería un agujero de gusano.',
     bannerImage: '/assets/wormhole/infographic_m7/banner_agujero-de-interstellar.webp',
     bannerCaption: "Para la película Interstellar (2014), el estudio Double Negative y Kip Thorne simularon con física real cómo se vería un agujero de gusano.",
     title: "El Agujero de Gusano de Interstellar",
@@ -229,6 +239,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "entrar-sin-caer",
+    diagramImage: '/assets/wormhole/infographic_m7/diagram_entrar-sin-caer.webp',
+    diagramCaption: 'En 1973, Homer Ellis describió un agujero de gusano que no atrae a los objetos lejanos: un túnel sin masa aparente.',
     bannerImage: '/assets/wormhole/infographic_m7/banner_entrar-sin-caer.webp',
     bannerCaption: "En 1973, Homer Ellis describió un agujero de gusano que no atrae a los objetos lejanos: un túnel sin masa aparente.",
     title: "Entrar sin Caer",
@@ -250,6 +262,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "atajo-para-mensajes",
+    diagramImage: '/assets/wormhole/infographic_m7/diagram_atajo-para-mensajes.webp',
+    diagramCaption: 'La luz tarda más de 22 horas en llegar a la Voyager 1; a través de un agujero de gusano, la señal recorrería un camino mucho más corto.',
     bannerImage: '/assets/wormhole/infographic_m7/banner_atajo-para-mensajes.webp',
     bannerCaption: "La luz tarda más de 22 horas en llegar a la Voyager 1; a través de un agujero de gusano, la señal recorrería un camino mucho más corto.",
     title: "Un Atajo para los Mensajes",
@@ -705,6 +719,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

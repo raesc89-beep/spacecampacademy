@@ -134,6 +134,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'oceano-panthalassa',
+    diagramImage: '/assets/marinos/infographic_m1/diagram_oceano-panthalassa.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Océano Panthalassa',
               bannerImage: '/assets/marinos/infographic_m1/banner_oceano-panthalassa.webp',
     title: 'El Océano Panthalassa',
     color: '#5B7B9A',
@@ -154,6 +156,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'primeros-reptiles-marinos',
+    diagramImage: '/assets/marinos/infographic_m1/diagram_primeros-reptiles-marinos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Primeros Reptiles Marinos',
               bannerImage: '/assets/marinos/infographic_m1/banner_primeros-reptiles-marinos.webp',
     title: 'Los Primeros Reptiles Marinos',
     color: '#B87D5E',
@@ -174,6 +178,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nothosaurus-dos-mundos',
+    diagramImage: '/assets/marinos/infographic_m1/diagram_nothosaurus-dos-mundos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Nothosaurus: Entre Dos Mundos',
               bannerImage: '/assets/marinos/infographic_m1/banner_nothosaurus-dos-mundos.webp',
     title: 'Nothosaurus: Entre Dos Mundos',
     color: '#6E8FA8',
@@ -194,6 +200,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'evolucion-natacion',
+    diagramImage: '/assets/marinos/infographic_m1/diagram_evolucion-natacion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Evolución de la Natación',
               bannerImage: '/assets/marinos/infographic_m1/banner_evolucion-natacion.webp',
     title: 'La Evolución de la Natación',
     color: '#8B6B4A',
@@ -214,6 +222,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cadenas-alimentarias',
+    diagramImage: '/assets/marinos/infographic_m1/diagram_cadenas-alimentarias.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cadenas Alimentarias Antiguas',
               bannerImage: '/assets/marinos/infographic_m1/banner_cadenas-alimentarias.webp',
     title: 'Cadenas Alimentarias Antiguas',
     color: '#7C93A8',
@@ -234,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'fosiles-bajo-mar',
+    diagramImage: '/assets/marinos/infographic_m1/diagram_fosiles-bajo-mar.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Fósiles Bajo el Mar',
               bannerImage: '/assets/marinos/infographic_m1/banner_fosiles-bajo-mar.webp',
     title: 'Fósiles Bajo el Mar',
     color: '#9E7B5C',
@@ -254,6 +266,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'oceanos-mesozoico',
+    diagramImage: '/assets/marinos/infographic_m1/diagram_oceanos-mesozoico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Océanos del Mesozoico',
               bannerImage: '/assets/marinos/infographic_m1/banner_oceanos-mesozoico.webp',
     title: 'Los Océanos del Mesozoico',
     color: '#4A6F8C',
@@ -708,6 +722,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

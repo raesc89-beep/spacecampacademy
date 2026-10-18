@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "espacio-casi-vacio",
+    diagramImage: '/assets/colisiones/infographic_m1/diagram_espacio-casi-vacio.webp',
+    diagramCaption: 'Las estrellas están tan separadas que, cerca del Sol, la vecina más próxima se encuentra a 4.24 años luz.',
     bannerImage: '/assets/colisiones/infographic_m1/banner_espacio-casi-vacio.webp',
     bannerCaption: "Las estrellas están tan separadas que, cerca del Sol, la vecina más próxima se encuentra a 4.24 años luz.",
     title: "¿Por Qué las Estrellas Casi Nunca Chocan?",
@@ -146,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cumulos-densos",
+    diagramImage: '/assets/colisiones/infographic_m1/diagram_cumulos-densos.webp',
+    diagramCaption: 'En el centro de los cúmulos globulares las estrellas están tan juntas que algunas chocan y forman rezagadas azules.',
     bannerImage: '/assets/colisiones/infographic_m1/banner_cumulos-densos.webp',
     bannerCaption: "En el centro de los cúmulos globulares las estrellas están tan juntas que algunas chocan y forman rezagadas azules.",
     title: "Cúmulos Globulares: Donde Sí Hay Choques",
@@ -167,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "fusiones-binarias",
+    diagramImage: '/assets/colisiones/infographic_m1/diagram_fusiones-binarias.webp',
+    diagramCaption: 'En 2008 la estrella V1309 Scorpii brilló de pronto: dos estrellas que giraban juntas se fusionaron en una sola.',
     bannerImage: '/assets/colisiones/infographic_m1/banner_fusiones-binarias.webp',
     bannerCaption: "En 2008 la estrella V1309 Scorpii brilló de pronto: dos estrellas que giraban juntas se fusionaron en una sola.",
     title: "Estrellas en Pareja que se Fusionan",
@@ -188,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "kilonova-oro",
+    diagramImage: '/assets/colisiones/infographic_m1/diagram_kilonova-oro.webp',
+    diagramCaption: 'En 2017 se observó por primera vez el choque de dos estrellas de neutrones, que produjo una kilonova y metales pesados.',
     bannerImage: '/assets/colisiones/infographic_m1/banner_kilonova-oro.webp',
     bannerCaption: "En 2017 se observó por primera vez el choque de dos estrellas de neutrones, que produjo una kilonova y metales pesados.",
     title: "Estrellas de Neutrones: Kilonovas y Oro",
@@ -209,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ondas-gravitacionales-ligo",
+    diagramImage: '/assets/colisiones/infographic_m1/diagram_ondas-gravitacionales-ligo.webp',
+    diagramCaption: 'El 14 de septiembre de 2015 LIGO detectó por primera vez ondas gravitacionales, producidas por dos agujeros negros al fusionarse.',
     bannerImage: '/assets/colisiones/infographic_m1/banner_ondas-gravitacionales-ligo.webp',
     bannerCaption: "El 14 de septiembre de 2015 LIGO detectó por primera vez ondas gravitacionales, producidas por dos agujeros negros al fusionarse.",
     title: "Ondas Gravitacionales y LIGO",
@@ -230,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "galaxias-en-choque",
+    diagramImage: '/assets/colisiones/infographic_m1/diagram_galaxias-en-choque.webp',
+    diagramCaption: 'Las galaxias Antenas, a unos 45-65 millones de años luz, muestran cómo un choque galáctico enciende nuevas estrellas.',
     bannerImage: '/assets/colisiones/infographic_m1/banner_galaxias-en-choque.webp',
     bannerCaption: "Las galaxias Antenas, a unos 45-65 millones de años luz, muestran cómo un choque galáctico enciende nuevas estrellas.",
     title: "Galaxias que Chocan",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "andromeda-futuro",
+    diagramImage: '/assets/colisiones/infographic_m1/diagram_andromeda-futuro.webp',
+    diagramCaption: 'Andrómeda se acerca a la Vía Láctea a unos 110 km/s; la estimación clásica sitúa un choque dentro de unos 4,000 millones de años.',
     bannerImage: '/assets/colisiones/infographic_m1/banner_andromeda-futuro.webp',
     bannerCaption: "Andrómeda se acerca a la Vía Láctea a unos 110 km/s; la estimación clásica sitúa un choque dentro de unos 4,000 millones de años.",
     title: "La Vía Láctea y Andrómeda: El Futuro",
@@ -706,6 +720,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

@@ -130,6 +130,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "que-nos-hace-humanos",
+    diagramImage: '/assets/arrival/infographic_m1/diagram_que-nos-hace-humanos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre ¿Qué Nos Hace Humanos?',
     "bannerImage": "/assets/arrival/infographic_m1/banner_que-nos-hace-humanos.webp",
     "title": "¿Qué Nos Hace Humanos?",
     "color": "#8B9DAF",
@@ -158,6 +160,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "componentes-lenguaje",
+    diagramImage: '/assets/arrival/infographic_m1/diagram_componentes-lenguaje.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Componentes del Lenguaje',
     "bannerImage": "/assets/arrival/infographic_m1/banner_componentes-lenguaje.webp",
     "title": "Los Componentes del Lenguaje",
     "color": "#A0B4C8",
@@ -186,6 +190,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "lenguas-del-mundo",
+    diagramImage: '/assets/arrival/infographic_m1/diagram_lenguas-del-mundo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Lenguas del Mundo',
     "bannerImage": "/assets/arrival/infographic_m1/banner_lenguas-del-mundo.webp",
     "title": "Lenguas del Mundo",
     "color": "#6A7B8D",
@@ -214,6 +220,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "adquisicion-lenguaje",
+    diagramImage: '/assets/arrival/infographic_m1/diagram_adquisicion-lenguaje.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Adquisición del Lenguaje',
     "bannerImage": "/assets/arrival/infographic_m1/banner_adquisicion-lenguaje.webp",
     "title": "La Adquisición del Lenguaje",
     "color": "#B0C4D8",
@@ -242,6 +250,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "lenguaje-y-pensamiento",
+    diagramImage: '/assets/arrival/infographic_m1/diagram_lenguaje-y-pensamiento.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Lenguaje y Pensamiento',
     "bannerImage": "/assets/arrival/infographic_m1/banner_lenguaje-y-pensamiento.webp",
     "title": "Lenguaje y Pensamiento",
     "color": "#7A8C9E",
@@ -270,6 +280,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "escritura-habla-texto",
+    diagramImage: '/assets/arrival/infographic_m1/diagram_escritura-habla-texto.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Escritura: Del Habla al Texto',
     "bannerImage": "/assets/arrival/infographic_m1/banner_escritura-habla-texto.webp",
     "title": "Escritura: Del Habla al Texto",
     "color": "#9AAABB",
@@ -298,6 +310,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "comunicacion-no-verbal",
+    diagramImage: '/assets/arrival/infographic_m1/diagram_comunicacion-no-verbal.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Comunicación No Verbal',
     "bannerImage": "/assets/arrival/infographic_m1/banner_comunicacion-no-verbal.webp",
     "title": "Comunicación No Verbal",
     "color": "#5A6B7D",
@@ -761,6 +775,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

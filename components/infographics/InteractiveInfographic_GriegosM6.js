@@ -136,6 +136,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'siracusa-ciudad-genio',
+    diagramImage: '/assets/griegos/infographic_m6/diagram_siracusa-ciudad-genio.webp',
+    diagramCaption: 'Siracusa: la ciudad siciliana más poderosa del Mediterráneo occidental, cuna de Arquímedes',
     title: 'Siracusa: La Ciudad del Genio',
     color: '#E8E0D4',
     btnImage: '/assets/los_griegos/infographic_m6/btn_siracusa-ciudad-genio.webp',
@@ -157,6 +159,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eureka-corona',
+    diagramImage: '/assets/griegos/infographic_m6/diagram_eureka-corona.webp',
+    diagramCaption: '¡Eureka!: Arquímedes descubrió el principio del empuje en un baño público de Siracusa',
     title: '¡Eureka!',
     color: '#2E6B8A',
     btnImage: '/assets/los_griegos/infographic_m6/btn_eureka-corona.webp',
@@ -178,6 +182,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'principio-arquimedes',
+    diagramImage: '/assets/griegos/infographic_m6/diagram_principio-arquimedes.webp',
+    diagramCaption: 'El Principio de Arquímedes: un cuerpo sumergido experimenta un empuje igual al peso del fluido desplazado',
     title: 'El Principio de Arquímedes',
     color: '#D4C9B8',
     btnImage: '/assets/los_griegos/infographic_m6/btn_principio-arquimedes.webp',
@@ -199,6 +205,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'palanca-maquinas',
+    diagramImage: '/assets/griegos/infographic_m6/diagram_palanca-maquinas.webp',
+    diagramCaption: 'La palanca y las máquinas: ‘Dadme un punto de apoyo y moveré el mundo’ — Arquímedes',
     title: 'La Palanca y las Máquinas',
     color: '#3A7FA0',
     btnImage: '/assets/los_griegos/infographic_m6/btn_palanca-maquinas.webp',
@@ -220,6 +228,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'geometria-arquimedes',
+    diagramImage: '/assets/griegos/infographic_m6/diagram_geometria-arquimedes.webp',
+    diagramCaption: 'La geometría de Arquímedes: calculó π y el volumen de la esfera anticipando el cálculo integral',
     title: 'La Geometría de Arquímedes',
     color: '#C0B09C',
     btnImage: '/assets/los_griegos/infographic_m6/btn_geometria-arquimedes.webp',
@@ -241,6 +251,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'maquinas-guerra',
+    diagramImage: '/assets/griegos/infographic_m6/diagram_maquinas-guerra.webp',
+    diagramCaption: 'Las máquinas de guerra: Arquímedes mantuvo a raya a Roma durante 3 años con sus inventos',
     title: 'Las Máquinas de Guerra',
     color: '#1E5B7A',
     btnImage: '/assets/los_griegos/infographic_m6/btn_maquinas-guerra.webp',
@@ -262,6 +274,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'muerte-legado',
+    diagramImage: '/assets/griegos/infographic_m6/diagram_muerte-legado.webp',
+    diagramCaption: 'Muerte y legado: Arquímedes murió resolviendo un problema geométrico durante el saqueo romano',
     title: 'Muerte y Legado',
     color: '#F0EAE0',
     btnImage: '/assets/los_griegos/infographic_m6/btn_muerte-legado.webp',
@@ -757,6 +771,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

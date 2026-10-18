@@ -210,6 +210,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "palenque-ciudad",
+    diagramImage: '/assets/maya/infographic_m11/diagram_palenque-ciudad.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Ciudad: Lakamha',
     "bannerImage": "/assets/maya/infographic_m11/banner_palenque-ciudad.webp",
     "title": "La Ciudad: Lakamha",
     "color": "#1B5E20",
@@ -238,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "pakal-tumba",
+    diagramImage: '/assets/maya/infographic_m11/diagram_pakal-tumba.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Tumba de Pakal',
     "bannerImage": "/assets/maya/infographic_m11/banner_pakal-tumba.webp",
     "title": "La Tumba de Pakal",
     "color": "#009688",
@@ -266,6 +270,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "tapa-sarcofago",
+    diagramImage: '/assets/maya/infographic_m11/diagram_tapa-sarcofago.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Tapa del Sarcófago',
     "bannerImage": "/assets/maya/infographic_m11/banner_tapa-sarcofago.webp",
     "title": "La Tapa del Sarcófago",
     "color": "#BF360C",
@@ -294,6 +300,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "torre-observatorio",
+    diagramImage: '/assets/maya/infographic_m11/diagram_torre-observatorio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Torre del Palacio',
     "bannerImage": "/assets/maya/infographic_m11/banner_torre-observatorio.webp",
     "title": "La Torre del Palacio",
     "color": "#FFC107",
@@ -322,6 +330,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "inscripciones-templo",
+    diagramImage: '/assets/maya/infographic_m11/diagram_inscripciones-templo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Templo de las Inscripciones',
     "bannerImage": "/assets/maya/infographic_m11/banner_inscripciones-templo.webp",
     "title": "El Templo de las Inscripciones",
     "color": "#4A148C",
@@ -350,6 +360,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "alineacion-solsticio",
+    diagramImage: '/assets/maya/infographic_m11/diagram_alineacion-solsticio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Alineación del Solsticio',
     "bannerImage": "/assets/maya/infographic_m11/banner_alineacion-solsticio.webp",
     "title": "Alineación del Solsticio",
     "color": "#0288D1",
@@ -378,6 +390,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-palenque",
+    diagramImage: '/assets/maya/infographic_m11/diagram_legado-palenque.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Legado Moderno',
     "bannerImage": "/assets/maya/infographic_m11/banner_legado-palenque.webp",
     "title": "El Legado Moderno",
     "color": "#78909C",
@@ -1041,6 +1055,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

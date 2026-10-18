@@ -83,6 +83,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "anatomia-agujero-negro",
+    diagramImage: '/assets/interstellar/infographic_m2/diagram_anatomia-agujero-negro.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Anatomía de un Agujero Negro',
     "bannerImage": "/assets/interstellar/infographic_m2/banner_anatomia-agujero-negro.webp",
     "title": "Anatomía de un Agujero Negro",
     "color": "#FF6B35",
@@ -111,6 +113,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "horizonte-sucesos",
+    diagramImage: '/assets/interstellar/infographic_m2/diagram_horizonte-sucesos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Punto de No Retorno',
     "bannerImage": "/assets/interstellar/infographic_m2/banner_horizonte-sucesos.webp",
     "title": "El Punto de No Retorno",
     "color": "#F44336",
@@ -139,6 +143,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "agujero-negro-kerr",
+    diagramImage: '/assets/interstellar/infographic_m2/diagram_agujero-negro-kerr.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Agujero Negro que Gira',
     "bannerImage": "/assets/interstellar/infographic_m2/banner_agujero-negro-kerr.webp",
     "title": "El Agujero Negro que Gira",
     "color": "#AB47BC",
@@ -167,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "frame-dragging",
+    diagramImage: '/assets/interstellar/infographic_m2/diagram_frame-dragging.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cuando el Espacio Gira Contigo',
     "bannerImage": "/assets/interstellar/infographic_m2/banner_frame-dragging.webp",
     "title": "Cuando el Espacio Gira Contigo",
     "color": "#4FC3F7",
@@ -195,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "disco-acrecion",
+    diagramImage: '/assets/interstellar/infographic_m2/diagram_disco-acrecion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Anillo de Fuego',
     "bannerImage": "/assets/interstellar/infographic_m2/banner_disco-acrecion.webp",
     "title": "El Anillo de Fuego",
     "color": "#FF9800",
@@ -223,6 +233,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "simulacion-gargantua",
+    diagramImage: '/assets/interstellar/infographic_m2/diagram_simulacion-gargantua.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Gargantúa en la Computadora',
     "bannerImage": "/assets/interstellar/infographic_m2/banner_simulacion-gargantua.webp",
     "title": "Gargantúa en la Computadora",
     "color": "#7C4DFF",
@@ -251,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "singularidad",
+    diagramImage: '/assets/interstellar/infographic_m2/diagram_singularidad.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Centro del Misterio',
     "bannerImage": "/assets/interstellar/infographic_m2/banner_singularidad.webp",
     "title": "El Centro del Misterio",
     "color": "#00BCD4",
@@ -685,6 +699,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

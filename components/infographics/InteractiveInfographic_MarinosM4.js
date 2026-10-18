@@ -139,6 +139,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'origenes-varanidos',
+    diagramImage: '/assets/marinos/infographic_m4/diagram_origenes-varanidos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Lagartos que Conquistaron el Océano',
               bannerImage: '/assets/marinos/infographic_m4/banner_origenes-varanidos.webp',
     title: 'Los Lagartos que Conquistaron el Océano',
     color: '#5B7B9A',
@@ -159,6 +161,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tylosaurus-apex',
+    diagramImage: '/assets/marinos/infographic_m4/diagram_tylosaurus-apex.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Tylosaurus: El Depredador Apex',
               bannerImage: '/assets/marinos/infographic_m4/banner_tylosaurus-apex.webp',
     title: 'Tylosaurus: El Depredador Apex',
     color: '#B87D5E',
@@ -179,6 +183,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mosasaurus-rey',
+    diagramImage: '/assets/marinos/infographic_m4/diagram_mosasaurus-rey.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Mosasaurus: El Rey del Cretácico',
               bannerImage: '/assets/marinos/infographic_m4/banner_mosasaurus-rey.webp',
     title: 'Mosasaurus: El Rey del Cretácico',
     color: '#6E8FA8',
@@ -199,6 +205,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'anatomia-monstruo',
+    diagramImage: '/assets/marinos/infographic_m4/diagram_anatomia-monstruo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Anatomía de un Monstruo Marino',
               bannerImage: '/assets/marinos/infographic_m4/banner_anatomia-monstruo.webp',
     title: 'Anatomía de un Monstruo Marino',
     color: '#8B6B4A',
@@ -219,6 +227,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'diversidad-global',
+    diagramImage: '/assets/marinos/infographic_m4/diagram_diversidad-global.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Diversidad Global',
               bannerImage: '/assets/marinos/infographic_m4/banner_diversidad-global.webp',
     title: 'Diversidad Global',
     color: '#7C93A8',
@@ -239,6 +249,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mosasaurios-cine',
+    diagramImage: '/assets/marinos/infographic_m4/diagram_mosasaurios-cine.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Mosasaurios y el Cine',
               bannerImage: '/assets/marinos/infographic_m4/banner_mosasaurios-cine.webp',
     title: 'Los Mosasaurios y el Cine',
     color: '#9E7B5C',
@@ -259,6 +271,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'apogeo-extincion',
+    diagramImage: '/assets/marinos/infographic_m4/diagram_apogeo-extincion.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Apogeo y Extinción',
               bannerImage: '/assets/marinos/infographic_m4/banner_apogeo-extincion.webp',
     title: 'Apogeo y Extinción',
     color: '#4A6F8C',
@@ -715,6 +729,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

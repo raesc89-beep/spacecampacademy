@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "sagan-astronomo-planetario",
+    diagramImage: '/assets/wormhole/infographic_m14/diagram_sagan-astronomo-planetario.webp',
+    diagramCaption: 'Carl Sagan (1934–1996) fue astrónomo planetario en la Universidad Cornell y participó en las misiones Mariner, Viking y Voyager.',
     bannerImage: '/assets/wormhole/infographic_m14/banner_sagan-astronomo-planetario.webp',
     bannerCaption: "Carl Sagan (1934–1996) fue astrónomo planetario en la Universidad Cornell y participó en las misiones Mariner, Viking y Voyager.",
     title: "Carl Sagan, Astrónomo de los Planetas",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "nacimiento-novela-contacto",
+    diagramImage: '/assets/wormhole/infographic_m14/diagram_nacimiento-novela-contacto.webp',
+    diagramCaption: 'La novela «Contacto» se publicó en 1985 y narra cómo la astrónoma Ellie Arroway detecta una señal de radio procedente de Vega.',
     bannerImage: '/assets/wormhole/infographic_m14/banner_nacimiento-novela-contacto.webp',
     bannerCaption: "La novela «Contacto» se publicó en 1985 y narra cómo la astrónoma Ellie Arroway detecta una señal de radio procedente de Vega.",
     title: "El Nacimiento de «Contacto» (1985)",
@@ -169,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "consulta-sagan-thorne",
+    diagramImage: '/assets/wormhole/infographic_m14/diagram_consulta-sagan-thorne.webp',
+    diagramCaption: 'En 1985, Sagan pidió a su amigo Kip Thorne que revisara la física de su novela; la respuesta llevó a la teoría de agujeros de gusano transitables.',
     bannerImage: '/assets/wormhole/infographic_m14/banner_consulta-sagan-thorne.webp',
     bannerCaption: "En 1985, Sagan pidió a su amigo Kip Thorne que revisara la física de su novela; la respuesta llevó a la teoría de agujeros de gusano transitables.",
     title: "La Pregunta de Sagan a Kip Thorne",
@@ -191,6 +197,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cosmos-viaje-personal",
+    diagramImage: '/assets/wormhole/infographic_m14/diagram_cosmos-viaje-personal.webp',
+    diagramCaption: '«Cosmos: un viaje personal» se estrenó en 1980 en la cadena pública PBS: 13 episodios escritos por Sagan, Ann Druyan y Steven Soter.',
     bannerImage: '/assets/wormhole/infographic_m14/banner_cosmos-viaje-personal.webp',
     bannerCaption: "«Cosmos: un viaje personal» se estrenó en 1980 en la cadena pública PBS: 13 episodios escritos por Sagan, Ann Druyan y Steven Soter.",
     title: "«Cosmos»: un Viaje Personal (1980)",
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "afirmaciones-extraordinarias",
+    diagramImage: '/assets/wormhole/infographic_m14/diagram_afirmaciones-extraordinarias.webp',
+    diagramCaption: 'Sagan popularizó en «Cosmos» (1980) la frase «las afirmaciones extraordinarias requieren evidencias extraordinarias».',
     bannerImage: '/assets/wormhole/infographic_m14/banner_afirmaciones-extraordinarias.webp',
     bannerCaption: "Sagan popularizó en «Cosmos» (1980) la frase «las afirmaciones extraordinarias requieren evidencias extraordinarias».",
     title: "Afirmaciones Extraordinarias, Evidencias Extraordinarias",
@@ -235,6 +245,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "punto-azul-palido",
+    diagramImage: '/assets/wormhole/infographic_m14/diagram_punto-azul-palido.webp',
+    diagramCaption: 'El 14 de febrero de 1990, la Voyager 1 fotografió la Tierra desde unos 6.000 millones de kilómetros a petición de Carl Sagan.',
     bannerImage: '/assets/wormhole/infographic_m14/banner_punto-azul-palido.webp',
     bannerCaption: "El 14 de febrero de 1990, la Voyager 1 fotografió la Tierra desde unos 6.000 millones de kilómetros a petición de Carl Sagan.",
     title: "El Punto Azul Pálido",
@@ -257,6 +269,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "fermi-seti-busqueda",
+    diagramImage: '/assets/wormhole/infographic_m14/diagram_fermi-seti-busqueda.webp',
+    diagramCaption: 'En 1950, Enrico Fermi preguntó en Los Álamos «¿dónde está todo el mundo?», dando nombre a la paradoja de Fermi.',
     bannerImage: '/assets/wormhole/infographic_m14/banner_fermi-seti-busqueda.webp',
     bannerCaption: "En 1950, Enrico Fermi preguntó en Los Álamos «¿dónde está todo el mundo?», dando nombre a la paradoja de Fermi.",
     title: "La Paradoja de Fermi y la Búsqueda SETI",
@@ -713,6 +727,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

@@ -126,6 +126,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'mileto-cuna-filosofia',
+    diagramImage: '/assets/griegos/infographic_m1/diagram_mileto-cuna-filosofia.webp',
+    diagramCaption: 'Mileto en el siglo VI a.C.: la ciudad jónica donde nació la filosofía occidental',
     title: 'Mileto: Cuna de la Filosofía',
     color: '#2E6B8A',
     btnImage: '/assets/los_griegos/infographic_m1/btn_mileto-cuna-filosofia.webp',
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tales-y-el-agua',
+    diagramImage: '/assets/griegos/infographic_m1/diagram_tales-y-el-agua.webp',
+    diagramCaption: 'Tales y el agua: el primer filósofo que explicó el cosmos sin dioses, solo con razón natural',
     title: 'Tales y el Agua',
     color: '#3A7FA0',
     btnImage: '/assets/los_griegos/infographic_m1/btn_tales-y-el-agua.webp',
@@ -168,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eclipse-predicho',
+    diagramImage: '/assets/griegos/infographic_m1/diagram_eclipse-predicho.webp',
+    diagramCaption: 'El eclipse predicho: Tales predijo el eclipse solar del 585 a.C., deteniendo una guerra',
     title: 'El Eclipse Predicho',
     color: '#E8E0D4',
     btnImage: '/assets/los_griegos/infographic_m1/btn_eclipse-predicho.webp',
@@ -189,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'geometria-matematicas',
+    diagramImage: '/assets/griegos/infographic_m1/diagram_geometria-matematicas.webp',
+    diagramCaption: 'Geometría y matemáticas: Tales midió la altura de las pirámides con sombras y triángulos similares',
     title: 'Geometría y Matemáticas',
     color: '#D4C9B8',
     btnImage: '/assets/los_griegos/infographic_m1/btn_geometria-matematicas.webp',
@@ -210,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'anaximandro-discipulo',
+    diagramImage: '/assets/griegos/infographic_m1/diagram_anaximandro-discipulo.webp',
+    diagramCaption: 'Anaximandro: trazó el primer mapa del mundo y propuso que la Tierra flota en el espacio',
     title: 'Anaximandro: El Discípulo',
     color: '#1E5B7A',
     btnImage: '/assets/los_griegos/infographic_m1/btn_anaximandro-discipulo.webp',
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'anaximenes-tercer-milesio',
+    diagramImage: '/assets/griegos/infographic_m1/diagram_anaximenes-tercer-milesio.webp',
+    diagramCaption: 'Anaxímenes: propuso el aire como sustancia primordial que todo lo crea por condensación y rarefacción',
     title: 'Anaxímenes: El Tercer Milesio',
     color: '#C0B09C',
     btnImage: '/assets/los_griegos/infographic_m1/btn_anaximenes-tercer-milesio.webp',
@@ -252,6 +264,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nacimiento-pensamiento-racional',
+    diagramImage: '/assets/griegos/infographic_m1/diagram_nacimiento-pensamiento-racional.webp',
+    diagramCaption: 'El nacimiento del pensamiento racional: de los mitos a los dioses a las causas naturales',
     title: 'El Nacimiento del Pensamiento Racional',
     color: '#F0EAE0',
     btnImage: '/assets/los_griegos/infographic_m1/btn_nacimiento-pensamiento-racional.webp',
@@ -750,6 +764,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

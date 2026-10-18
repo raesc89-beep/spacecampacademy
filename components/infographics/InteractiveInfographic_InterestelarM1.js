@@ -80,6 +80,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     id: 'que-es-interestelar',
+    diagramImage: '/assets/interestelar/infographic_m1/diagram_que-es-interestelar.webp',
+    diagramCaption: 'Objetos interestelares: visitantes de otros sistemas estelares que cruzan el solar en trayectorias hiperbólicas',
     title: '¿Qué es Interestelar?',
     color: '#00E5FF',
     btnImage: '/assets/interestelar/infographic_m1/btn_que-es-interestelar.jpg',
@@ -101,6 +103,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'velocidad-escape',
+    diagramImage: '/assets/interestelar/infographic_m1/diagram_velocidad-escape.webp',
+    diagramCaption: 'Velocidad de escape: un objeto más rápido de 42 km/s en la Tierra no puede ser capturado por el Sol',
     title: 'Velocidad de Escape',
     color: '#B388FF',
     btnImage: '/assets/interestelar/infographic_m1/btn_velocidad-escape.jpg',
@@ -122,6 +126,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'orbita-hiperbolica',
+    diagramImage: '/assets/interestelar/infographic_m1/diagram_orbita-hiperbolica.webp',
+    diagramCaption: 'Órbita hiperbólica: la firma matemática que delata el origen interestelar de un objeto',
     title: 'Ãƒ"rbitas Hiperbólicas',
     color: '#64FFDA',
     btnImage: '/assets/interestelar/infographic_m1/btn_orbita-hiperbolica.jpg',
@@ -143,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'catalogo-nomadas',
+    diagramImage: '/assets/interestelar/infographic_m1/diagram_catalogo-nomadas.webp',
+    diagramCaption: 'Catálogo de nómadas: solo dos confirmados hasta hoy, pero el LSST descubrirá uno por año desde 2025',
     title: 'El Catálogo de Nómadas',
     color: '#FF9100',
     btnImage: '/assets/interestelar/infographic_m1/btn_catalogo-nomadas.webp',
@@ -164,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'deteccion-pan-starrs',
+    diagramImage: '/assets/interestelar/infographic_m1/diagram_deteccion-pan-starrs.webp',
+    diagramCaption: 'Detección Pan-STARRS: el telescopio hawaiano capturó a Oumuamua 40 días después de su acercamiento',
     title: 'Pan-STARRS y Telescopios',
     color: '#448AFF',
     btnImage: '/assets/interestelar/infographic_m1/btn_deteccion-pan-starrs.webp',
@@ -185,6 +195,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'composicion-quimica',
+    diagramImage: '/assets/interestelar/infographic_m1/diagram_composicion-quimica.webp',
+    diagramCaption: 'Composición química: su color rojizo por radiación cósmica revela la química de otro sistema estelar',
     title: 'Composición Química',
     color: '#FF80AB',
     btnImage: '/assets/interestelar/infographic_m1/btn_composicion-quimica.webp',
@@ -206,6 +218,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-caza',
+    diagramImage: '/assets/interestelar/infographic_m1/diagram_futuro-caza.webp',
+    diagramCaption: 'La caza futura: el LSST y misiones de respuesta rápida para interceptar el próximo visitante interestelar',
     title: 'El Futuro de la Caza',
     color: '#FFD740',
     btnImage: '/assets/interestelar/infographic_m1/btn_futuro-caza.webp',
@@ -662,6 +676,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

@@ -141,6 +141,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "metodo-cientifico",
+    diagramImage: '/assets/bttf/infographic_m7/diagram_metodo-cientifico.webp',
+    diagramCaption: 'El método científico: el motor del progreso y del pensamiento crítico',
     "title": "El Método Científico",
     "color": "#6EC6FF",
     "btnImage": "/assets/bttf/infographic_biotecnologia/btn_metodo.webp",
@@ -170,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "electricidad",
+    diagramImage: '/assets/bttf/infographic_m7/diagram_electricidad.webp',
+    diagramCaption: 'La revolución eléctrica: de la vela al LED y la transmisión inalámbrica',
     "title": "Electricidad y Rayos",
     "color": "#FFD740",
     "btnImage": "/assets/bttf/infographic_biotecnologia/btn_electricidad.webp",
@@ -199,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "guerra-corrientes",
+    diagramImage: '/assets/bttf/infographic_m7/diagram_guerra-corrientes.webp',
+    diagramCaption: 'La guerra de las corrientes: Tesla vs Edison y la batalla del AC vs DC',
     "title": "La Guerra de Corrientes",
     "color": "#FF8A80",
     "btnImage": "/assets/bttf/infographic_biotecnologia/btn_corrientes.webp",
@@ -228,6 +234,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "semiconductores",
+    diagramImage: '/assets/bttf/infographic_m7/diagram_semiconductores.webp',
+    diagramCaption: 'La era de los semiconductores: del transistor al nanochip moderno',
     "title": "Revolución Digital",
     "color": "#B388FF",
     "btnImage": "/assets/bttf/infographic_biotecnologia/btn_semiconductores.webp",
@@ -257,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "biotecnologia",
+    diagramImage: '/assets/bttf/infographic_m7/diagram_biotecnologia.webp',
+    diagramCaption: 'Biotecnología del futuro: edición genética, órganos artificiales y medicina personalizada',
     "title": "CRISPR y Biotecnología",
     "color": "#00E5FF",
     "btnImage": "/assets/bttf/infographic_biotecnologia/btn_biotec.webp",
@@ -286,6 +296,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "espacio-futuro",
+    diagramImage: '/assets/bttf/infographic_m7/diagram_espacio-futuro.webp',
+    diagramCaption: 'El espacio como frontera final: colonias, minería y naves generacionales',
     "title": "Exploración Espacial",
     "color": "#CE93D8",
     "btnImage": "/assets/bttf/infographic_biotecnologia/btn_espacio.webp",
@@ -315,6 +327,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sostenibilidad",
+    diagramImage: '/assets/bttf/infographic_m7/diagram_sostenibilidad.webp',
+    diagramCaption: 'Tecnología para la sostenibilidad: energía limpia, captura de carbono y ciudades verdes',
     "title": "Futuro Sostenible",
     "color": "#66BB6A",
     "btnImage": "/assets/bttf/infographic_biotecnologia/btn_sostenible.webp",
@@ -784,6 +798,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

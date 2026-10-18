@@ -143,6 +143,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'gran-mortandad',
+    diagramImage: '/assets/dinos/infographic_m1/diagram_gran-mortandad.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Gran Mortandad',
               bannerImage: '/assets/dinos/infographic_m1/banner_gran-mortandad.webp',
     title: 'La Gran Mortandad',
     color: '#C17829',
@@ -163,6 +165,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pangea-un-solo-mundo',
+    diagramImage: '/assets/dinos/infographic_m1/diagram_pangea-un-solo-mundo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Pangea: Un Solo Mundo',
               bannerImage: '/assets/dinos/infographic_m1/banner_pangea-un-solo-mundo.webp',
     title: 'Pangea: Un Solo Mundo',
     color: '#8B5E3C',
@@ -183,6 +187,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'arcosaurios-herederos',
+    diagramImage: '/assets/dinos/infographic_m1/diagram_arcosaurios-herederos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Arcosaurios Herederos',
               bannerImage: '/assets/dinos/infographic_m1/banner_arcosaurios-herederos.webp',
     title: 'Los Arcosaurios Herederos',
     color: '#6B8E96',
@@ -203,6 +209,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'eoraptor-primer-dinosaurio',
+    diagramImage: '/assets/dinos/infographic_m1/diagram_eoraptor-primer-dinosaurio.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Eoraptor: El Primer Dinosaurio',
               bannerImage: '/assets/dinos/infographic_m1/banner_eoraptor-primer-dinosaurio.webp',
     title: 'Eoraptor: El Primer Dinosaurio',
     color: '#5D8A68',
@@ -223,6 +231,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'herrerasaurus-cazador',
+    diagramImage: '/assets/dinos/infographic_m1/diagram_herrerasaurus-cazador.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Herrerasaurus: El Cazador',
               bannerImage: '/assets/dinos/infographic_m1/banner_herrerasaurus-cazador.webp',
     title: 'Herrerasaurus: El Cazador',
     color: '#A67B3D',
@@ -243,6 +253,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rivales-triasico',
+    diagramImage: '/assets/dinos/infographic_m1/diagram_rivales-triasico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Rivales del Triásico',
               bannerImage: '/assets/dinos/infographic_m1/banner_rivales-triasico.webp',
     title: 'Rivales del Triásico',
     color: '#7D6B99',
@@ -263,6 +275,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'triunfo-dinosaurios',
+    diagramImage: '/assets/dinos/infographic_m1/diagram_triunfo-dinosaurios.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Triunfo de los Dinosaurios',
               bannerImage: '/assets/dinos/infographic_m1/banner_triunfo-dinosaurios.webp',
     title: 'El Triunfo de los Dinosaurios',
     color: '#3E7C8B',
@@ -720,6 +734,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

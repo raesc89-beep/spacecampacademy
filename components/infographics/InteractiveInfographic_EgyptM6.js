@@ -160,6 +160,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "senenmut",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_senenmut.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Senenmut: El Genio',
     "bannerImage": "/assets/egypt/infographic_m6/banner_canopes.webp",
     "title": "Senenmut: El Genio",
     "color": "#9B6BFF",
@@ -188,6 +190,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "techo-astronomico",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_techo-astronomico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Techo del Cielo',
     "bannerImage": "/assets/egypt/infographic_m6/banner_cerebro-extraccion.webp",
     "title": "El Techo del Cielo",
     "color": "#4A90D9",
@@ -216,6 +220,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "planetas-barcas",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_planetas-barcas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Planetas en Barcas',
     "bannerImage": "/assets/egypt/infographic_m6/banner_conocimiento-medico.webp",
     "title": "Planetas en Barcas",
     "color": "#FFB347",
@@ -244,6 +250,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "constelaciones",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_constelaciones.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Monstruos del Cielo',
     "bannerImage": "/assets/egypt/infographic_m6/banner_momificacion-proceso.webp",
     "title": "Monstruos del Cielo",
     "color": "#4CAF50",
@@ -272,6 +280,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "decanos",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_decanos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Reloj de Estrellas',
     "bannerImage": "/assets/egypt/infographic_m6/banner_natron-sal.webp",
     "title": "El Reloj de Estrellas",
     "color": "#E57373",
@@ -300,6 +310,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "hatshepsut",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_hatshepsut.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Reina Faraón',
     "bannerImage": "/assets/egypt/infographic_m6/banner_tomografia-momia.webp",
     "title": "La Reina Faraón",
     "color": "#E91E63",
@@ -328,6 +340,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ciencia-moderna",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_ciencia-moderna.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Descifrando el Mapa',
     "bannerImage": "/assets/egypt/infographic_m6/banner_vendaje-momia.webp",
     "title": "Descifrando el Mapa",
     "color": "#00BCD4",
@@ -356,6 +370,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-cosmos",
+    diagramImage: '/assets/egypt/infographic_m6/diagram_legado-cosmos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Legado Cósmico',
     "bannerImage": "/assets/egypt/infographic_m6/banner_vida-eterna.webp",
     "title": "El Legado Cósmico",
     "color": "#AB47BC",
@@ -664,6 +680,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {/* Fact Box */}
         {node.fact && (
           <div style={{

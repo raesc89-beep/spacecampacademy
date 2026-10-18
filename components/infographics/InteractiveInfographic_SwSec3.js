@@ -74,6 +74,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'lenguaje-ia',
+    diagramImage: '/assets/starwars/infographic_droides/diagram_lenguaje-ia.webp',
+    diagramCaption: 'De los jeroglíficos a los Transformers: la evolución del lenguaje artificial',
     title: 'C-3PO: El Lenguaje de las Máquinas',
     color: '#FFD54F',
     btnImage: '/assets/starwars/infographic_droides/btn_lenguaje_ia.webp',
@@ -106,6 +108,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rovers-autonomos',
+    diagramImage: '/assets/starwars/infographic_droides/diagram_rovers-autonomos.webp',
+    diagramCaption: 'Perseverance recorre Marte de forma autónoma usando IA para evitar obstáculos',
     title: 'R2-D2 en Marte: Perseverance e Ingenuity',
     color: '#FF7043',
     btnImage: '/assets/starwars/infographic_droides/btn_rovers_autonomos.webp',
@@ -138,6 +142,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'protesis-bionicas',
+    diagramImage: '/assets/starwars/infographic_droides/diagram_protesis-bionicas.webp',
+    diagramCaption: 'Las prótesis modernas pueden sentir presión y temperatura gracias a interfaces neuronales',
     title: 'La Mano de Luke: Prótesis Biónicas',
     color: '#42A5F5',
     btnImage: '/assets/starwars/infographic_droides/btn_protesis_bionicas.webp',
@@ -167,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'robots-cirujanos',
+    diagramImage: '/assets/starwars/infographic_droides/diagram_robots-cirujanos.webp',
+    diagramCaption: 'El sistema Da Vinci ha realizado más de 12 millones de cirugías desde el año 2000',
     title: 'Droides Médicos: El Sistema Da Vinci',
     color: '#66BB6A',
     btnImage: '/assets/starwars/infographic_droides/btn_robots_cirujanos.webp',
@@ -196,6 +204,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'atlas-spot',
+    diagramImage: '/assets/starwars/infographic_droides/diagram_atlas-spot.webp',
+    diagramCaption: 'Atlas puede correr, saltar y hacer parkour â€” Spot inspecciona fábricas y obras',
     title: 'Boston Dynamics: Atlas y Spot',
     color: '#AB47BC',
     btnImage: '/assets/starwars/infographic_droides/btn_atlas_spot.webp',
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ia-cientifica',
+    diagramImage: '/assets/starwars/infographic_droides/diagram_ia-cientifica.webp',
+    diagramCaption: 'AlphaFold predijo la estructura de 200 millones de proteínas â€” Nobel de Química 2024',
     title: 'AlphaFold: IA que Salva Vidas',
     color: '#4FC3F7',
     btnImage: '/assets/starwars/infographic_droides/btn_ia_cientifica.webp',
@@ -257,6 +269,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'futuro-droides',
+    diagramImage: '/assets/starwars/infographic_droides/diagram_futuro-droides.webp',
+    diagramCaption: 'Arduino, LEGO y FIRST Robotics: la robótica está al alcance de todos',
     title: 'Construye tu Propio Droide',
     color: '#CE93D8',
     btnImage: '/assets/starwars/infographic_droides/btn_futuro_droides.webp',
@@ -580,7 +594,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
 
           {node.bannerImage && (
             <div style={{ position: 'relative', width: '100%', height: '160px', borderRadius: '12px', overflow: 'hidden', margin: '1.5rem 0', border: `1px solid ${node.color}33` }}>
-              <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${node.bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center', cursor: 'pointer' }} onClick={() => setLightboxSrc(node.bannerImage)}/>
+              <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${node.bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center', cursor: 'pointer' }} onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+/>
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%)', pointerEvents: 'none' }} />
               {node.bannerCaption && (
                 <div style={{ position: 'absolute', bottom: '1rem', left: '1rem', right: '1rem', textAlign: 'center', fontSize: '0.9rem', color: '#FFF', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic', textShadow: '0 2px 4px rgba(0,0,0,0.8)', pointerEvents: 'none' }}>

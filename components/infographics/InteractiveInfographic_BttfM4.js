@@ -144,6 +144,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "naturaleza-tiempo",
+    diagramImage: '/assets/bttf/infographic_m4/diagram_naturaleza-tiempo.webp',
+    diagramCaption: 'La naturaleza filosófica y física del tiempo como dimensión fundamental',
     "title": "La Naturaleza del Tiempo",
     "color": "#7C4DFF",
     "btnImage": "/assets/bttf/infographic_gigawatts/btn_naturaleza.webp",
@@ -173,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "simultaneidad",
+    diagramImage: '/assets/bttf/infographic_m4/diagram_simultaneidad.webp',
+    diagramCaption: 'Simultaneidad relativa: dos observadores ven los mismos eventos en diferente orden',
     "title": "La Simultaneidad",
     "color": "#FF6B35",
     "btnImage": "/assets/bttf/infographic_gigawatts/btn_simultaneidad.webp",
@@ -202,6 +206,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "entropia",
+    diagramImage: '/assets/bttf/infographic_m4/diagram_entropia.webp',
+    diagramCaption: 'La entropía define la flecha del tiempo hacia mayor desorden',
     "title": "Entropía y Desorden",
     "color": "#00E5FF",
     "btnImage": "/assets/bttf/infographic_gigawatts/btn_entropia.webp",
@@ -231,6 +237,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "memoria-tiempo",
+    diagramImage: '/assets/bttf/infographic_m4/diagram_memoria-tiempo.webp',
+    diagramCaption: 'La memoria y la percepción psicológica del tiempo en el cerebro humano',
     "title": "Memoria y el Tiempo",
     "color": "#FFA726",
     "btnImage": "/assets/bttf/infographic_gigawatts/btn_memoria.webp",
@@ -260,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cuantica-tiempo",
+    diagramImage: '/assets/bttf/infographic_m4/diagram_cuantica-tiempo.webp',
+    diagramCaption: 'El tiempo en la mecánica cuántica: discreto, continuo y bidireccional',
     "title": "Mecánica Cuántica",
     "color": "#E040FB",
     "btnImage": "/assets/bttf/infographic_gigawatts/btn_cuantica.webp",
@@ -289,6 +299,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "viaje-futuro",
+    diagramImage: '/assets/bttf/infographic_m4/diagram_viaje-futuro.webp',
+    diagramCaption: 'El viaje al futuro ya es posible: dilatación del tiempo en cohetes y satélites',
     "title": "Viaje al Futuro",
     "color": "#66BB6A",
     "btnImage": "/assets/bttf/infographic_gigawatts/btn_futuro.webp",
@@ -318,6 +330,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "viaje-pasado",
+    diagramImage: '/assets/bttf/infographic_m4/diagram_viaje-pasado.webp',
+    diagramCaption: 'Los obstáculos físicos que impiden el viaje al pasado',
     "title": "Viaje al Pasado",
     "color": "#FF7043",
     "btnImage": "/assets/bttf/infographic_gigawatts/btn_pasado.webp",
@@ -787,6 +801,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

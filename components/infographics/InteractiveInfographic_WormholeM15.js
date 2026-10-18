@@ -125,6 +125,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "senal-wow-1977",
+    diagramImage: '/assets/wormhole/infographic_m15/diagram_senal-wow-1977.webp',
+    diagramCaption: 'El 15 de agosto de 1977, el radiotelescopio Big Ear de Ohio captó una señal de 72 segundos que Jerry Ehman marcó con un «Wow!».',
     bannerImage: '/assets/wormhole/infographic_m15/banner_senal-wow-1977.webp',
     bannerCaption: "El 15 de agosto de 1977, el radiotelescopio Big Ear de Ohio captó una señal de 72 segundos que Jerry Ehman marcó con un «Wow!».",
     title: "La Señal Wow! de 1977",
@@ -147,6 +149,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "maquina-vega-planos",
+    diagramImage: '/assets/wormhole/infographic_m15/diagram_maquina-vega-planos.webp',
+    diagramCaption: 'En «Contacto», los planos ocultos en la señal de Vega describen una máquina capaz de llevar a sus pasajeros a través de agujeros de gusano.',
     bannerImage: '/assets/wormhole/infographic_m15/banner_maquina-vega-planos.webp',
     bannerCaption: "En «Contacto», los planos ocultos en la señal de Vega describen una máquina capaz de llevar a sus pasajeros a través de agujeros de gusano.",
     title: "La Máquina de Vega",
@@ -169,6 +173,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "viaje-tuneles-vega",
+    diagramImage: '/assets/wormhole/infographic_m15/diagram_viaje-tuneles-vega.webp',
+    diagramCaption: 'En «Contacto», la protagonista cruza unos 26 años luz hasta Vega en un tiempo muy breve atravesando una red de agujeros de gusano.',
     bannerImage: '/assets/wormhole/infographic_m15/banner_viaje-tuneles-vega.webp',
     bannerCaption: "En «Contacto», la protagonista cruza unos 26 años luz hasta Vega en un tiempo muy breve atravesando una red de agujeros de gusano.",
     title: "El Viaje por los Túneles",
@@ -191,6 +197,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "ciencia-y-fe-contacto",
+    diagramImage: '/assets/wormhole/infographic_m15/diagram_ciencia-y-fe-contacto.webp',
+    diagramCaption: 'En 1985, Sagan impartió las Conferencias Gifford en Glasgow sobre ciencia y religión, publicadas en 2006 por Ann Druyan.',
     bannerImage: '/assets/wormhole/infographic_m15/banner_ciencia-y-fe-contacto.webp',
     bannerCaption: "En 1985, Sagan impartió las Conferencias Gifford en Glasgow sobre ciencia y religión, publicadas en 2006 por Ann Druyan.",
     title: "Ciencia, Fe y la Navaja de Ockham",
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "de-contacto-a-interstellar",
+    diagramImage: '/assets/wormhole/infographic_m15/diagram_de-contacto-a-interstellar.webp',
+    diagramCaption: 'Kip Thorne fue productor ejecutivo y asesor científico de «Interstellar» (2014) y escribió el libro «La ciencia de Interstellar».',
     bannerImage: '/assets/wormhole/infographic_m15/banner_de-contacto-a-interstellar.webp',
     bannerCaption: "Kip Thorne fue productor ejecutivo y asesor científico de «Interstellar» (2014) y escribió el libro «La ciencia de Interstellar».",
     title: "De «Contacto» a «Interstellar»",
@@ -235,6 +245,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cosmos-nueva-generacion",
+    diagramImage: '/assets/wormhole/infographic_m15/diagram_cosmos-nueva-generacion.webp',
+    diagramCaption: 'En 2014, Neil deGrasse Tyson presentó «Cosmos: una odisea en el espacio-tiempo», continuación de la serie de Sagan de 1980.',
     bannerImage: '/assets/wormhole/infographic_m15/banner_cosmos-nueva-generacion.webp',
     bannerCaption: "En 2014, Neil deGrasse Tyson presentó «Cosmos: una odisea en el espacio-tiempo», continuación de la serie de Sagan de 1980.",
     title: "«Cosmos» para una Nueva Generación",
@@ -257,6 +269,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "legado-imaginacion-razon",
+    diagramImage: '/assets/wormhole/infographic_m15/diagram_legado-imaginacion-razon.webp',
+    diagramCaption: 'En 1997, la NASA rebautizó el módulo de aterrizaje de Mars Pathfinder como Estación Conmemorativa Carl Sagan.',
     bannerImage: '/assets/wormhole/infographic_m15/banner_legado-imaginacion-razon.webp',
     bannerCaption: "En 1997, la NASA rebautizó el módulo de aterrizaje de Mars Pathfinder como Estación Conmemorativa Carl Sagan.",
     title: "Imaginación Guiada por la Razón",
@@ -713,6 +727,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

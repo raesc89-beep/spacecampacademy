@@ -139,6 +139,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'discipulo-platon',
+    diagramImage: '/assets/griegos/infographic_m5/diagram_discipulo-platon.webp',
+    diagramCaption: 'El discípulo de Platón: Aristóteles estudió 20 años en la Academia antes de superar a su maestro',
     title: 'El Discípulo de Platón',
     color: '#E8E0D4',
     btnImage: '/assets/los_griegos/infographic_m5/btn_discipulo-platon.webp',
@@ -160,6 +162,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'el-liceo',
+    diagramImage: '/assets/griegos/infographic_m5/diagram_el-liceo.webp',
+    diagramCaption: 'El Liceo: la escuela de Aristóteles donde enseñaba paseando junto a sus estudiantes',
     title: 'El Liceo',
     color: '#2E6B8A',
     btnImage: '/assets/los_griegos/infographic_m5/btn_el-liceo.webp',
@@ -181,6 +185,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'logica-silogismos',
+    diagramImage: '/assets/griegos/infographic_m5/diagram_logica-silogismos.webp',
+    diagramCaption: 'Lógica y silogismos: Aristóteles inventó la lógica formal con sus célebres silogismos',
     title: 'Lógica y Silogismos',
     color: '#D4C9B8',
     btnImage: '/assets/los_griegos/infographic_m5/btn_logica-silogismos.webp',
@@ -202,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'filosofia-natural',
+    diagramImage: '/assets/griegos/infographic_m5/diagram_filosofia-natural.webp',
+    diagramCaption: 'Filosofía natural: Aristóteles clasificó más de 500 especies animales e inventó la biología',
     title: 'Filosofía Natural',
     color: '#3A7FA0',
     btnImage: '/assets/los_griegos/infographic_m5/btn_filosofia-natural.webp',
@@ -223,6 +231,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tutor-alejandro',
+    diagramImage: '/assets/griegos/infographic_m5/diagram_tutor-alejandro.webp',
+    diagramCaption: 'El tutor de Alejandro: Aristóteles enseñó a Alejandro Magno por tres años en el jardín de Mieza',
     title: 'El Tutor de Alejandro',
     color: '#C0B09C',
     btnImage: '/assets/los_griegos/infographic_m5/btn_tutor-alejandro.webp',
@@ -244,6 +254,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'etica-politica',
+    diagramImage: '/assets/griegos/infographic_m5/diagram_etica-politica.webp',
+    diagramCaption: 'Ética y política: la eudaimonia de Aristóteles y el ser humano como animal político',
     title: 'Ética y Política',
     color: '#1E5B7A',
     btnImage: '/assets/los_griegos/infographic_m5/btn_etica-politica.webp',
@@ -265,6 +277,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-aristotelico',
+    diagramImage: '/assets/griegos/infographic_m5/diagram_legado-aristotelico.webp',
+    diagramCaption: 'El legado aristotélico: preservado por los árabes, base de la teología medieval y la biología moderna',
     title: 'El Legado Aristotélico',
     color: '#F0EAE0',
     btnImage: '/assets/los_griegos/infographic_m5/btn_legado-aristotelico.webp',
@@ -763,6 +777,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

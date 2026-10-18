@@ -141,6 +141,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'thalattosuchia-intro',
+    diagramImage: '/assets/marinos/infographic_m6/diagram_thalattosuchia-intro.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cocodrilos: Los Otros Reptiles Marinos',
               bannerImage: '/assets/marinos/infographic_m6/banner_thalattosuchia-intro.webp',
     title: 'Cocodrilos: Los Otros Reptiles Marinos',
     color: '#5B7B9A',
@@ -161,6 +163,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'metriorhynchus-aletas',
+    diagramImage: '/assets/marinos/infographic_m6/diagram_metriorhynchus-aletas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Metriorhynchus: Aletas en Vez de Patas',
               bannerImage: '/assets/marinos/infographic_m6/banner_metriorhynchus-aletas.webp',
     title: 'Metriorhynchus: Aletas en Vez de Patas',
     color: '#B87D5E',
@@ -181,6 +185,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dakosaurus-apex',
+    diagramImage: '/assets/marinos/infographic_m6/diagram_dakosaurus-apex.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Dakosaurus: El Cocodrilo T-Rex',
               bannerImage: '/assets/marinos/infographic_m6/banner_dakosaurus-apex.webp',
     title: 'Dakosaurus: El Cocodrilo T-Rex',
     color: '#6E8FA8',
@@ -201,6 +207,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'steneosaurus-primitivos',
+    diagramImage: '/assets/marinos/infographic_m6/diagram_steneosaurus-primitivos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Steneosaurus y los Primitivos',
               bannerImage: '/assets/marinos/infographic_m6/banner_steneosaurus-primitivos.webp',
     title: 'Steneosaurus y los Primitivos',
     color: '#8B6B4A',
@@ -221,6 +229,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'adaptaciones-oceano',
+    diagramImage: '/assets/marinos/infographic_m6/diagram_adaptaciones-oceano.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Adaptaciones al Océano',
               bannerImage: '/assets/marinos/infographic_m6/banner_adaptaciones-oceano.webp',
     title: 'Adaptaciones al Océano',
     color: '#7C93A8',
@@ -241,6 +251,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'machimosaurus-gigante',
+    diagramImage: '/assets/marinos/infographic_m6/diagram_machimosaurus-gigante.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Machimosaurus: El Gigante',
               bannerImage: '/assets/marinos/infographic_m6/banner_machimosaurus-gigante.webp',
     title: 'Machimosaurus: El Gigante',
     color: '#9E7B5C',
@@ -261,6 +273,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'herencia-moderna',
+    diagramImage: '/assets/marinos/infographic_m6/diagram_herencia-moderna.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Herencia Moderna',
               bannerImage: '/assets/marinos/infographic_m6/banner_herencia-moderna.webp',
     title: 'La Herencia Moderna',
     color: '#4A6F8C',
@@ -715,6 +729,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

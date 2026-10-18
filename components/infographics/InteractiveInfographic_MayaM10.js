@@ -88,6 +88,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "tzab-ek-nombre",
+    diagramImage: '/assets/maya/infographic_m10/diagram_tzab-ek-nombre.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Tzab-ek: La Serpiente',
     "bannerImage": "/assets/maya/infographic_m10/banner_tzab-ek-nombre.webp",
     "title": "Tzab-ek: La Serpiente",
     "color": "#E8EAF6",
@@ -116,6 +118,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "paso-cenital",
+    diagramImage: '/assets/maya/infographic_m10/diagram_paso-cenital.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Paso Cenital',
     "bannerImage": "/assets/maya/infographic_m10/banner_paso-cenital.webp",
     "title": "El Paso Cenital",
     "color": "#1565C0",
@@ -144,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "calendario-agricola",
+    diagramImage: '/assets/maya/infographic_m10/diagram_calendario-agricola.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Calendario Agrícola',
     "bannerImage": "/assets/maya/infographic_m10/banner_calendario-agricola.webp",
     "title": "Calendario Agrícola",
     "color": "#F9A825",
@@ -172,6 +178,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "nueva-cuenta-fuego",
+    diagramImage: '/assets/maya/infographic_m10/diagram_nueva-cuenta-fuego.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cuenta del Fuego',
     "bannerImage": "/assets/maya/infographic_m10/banner_nueva-cuenta-fuego.webp",
     "title": "Cuenta del Fuego",
     "color": "#6D4C41",
@@ -200,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "astronomia-precisa",
+    diagramImage: '/assets/maya/infographic_m10/diagram_astronomia-precisa.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Astronomía Precisa',
     "bannerImage": "/assets/maya/infographic_m10/banner_astronomia-precisa.webp",
     "title": "Astronomía Precisa",
     "color": "#2E7D32",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cascabel-cosmico",
+    diagramImage: '/assets/maya/infographic_m10/diagram_cascabel-cosmico.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Cascabel Cósmico',
     "bannerImage": "/assets/maya/infographic_m10/banner_cascabel-cosmico.webp",
     "title": "Cascabel Cósmico",
     "color": "#311B92",
@@ -256,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "culturas-comparadas",
+    diagramImage: '/assets/maya/infographic_m10/diagram_culturas-comparadas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Culturas Comparadas',
     "bannerImage": "/assets/maya/infographic_m10/banner_culturas-comparadas.webp",
     "title": "Culturas Comparadas",
     "color": "#FFEE58",
@@ -617,6 +631,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

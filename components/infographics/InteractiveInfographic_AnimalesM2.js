@@ -16,6 +16,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "albert-1-v2",
+    diagramImage: '/assets/animales/infographic_m1/diagram_albert-1-v2.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Albert I: El Primer Ensayo en Cohete V-2',
     "title": "Albert I: El Primer Ensayo en Cohete V-2",
     "color": "#4FA3B5",
     "btnImage": "/assets/animales/mamiferos_rhesus.webp",
@@ -44,6 +46,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "albert-2-karman",
+    diagramImage: '/assets/animales/infographic_m1/diagram_albert-2-karman.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Albert II: Cruce Histórico de la Línea de Kármán',
     "title": "Albert II: Cruce Histórico de la Línea de Kármán",
     "color": "#D4A843",
     "btnImage": "/assets/animales/mamiferos_rhesus.webp",
@@ -72,6 +76,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "albert-3-4-redstone",
+    diagramImage: '/assets/animales/infographic_m1/diagram_albert-3-4-redstone.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Albert III, IV y Yorick: Telemetría Continua',
     "title": "Albert III, IV y Yorick: Telemetría Continua",
     "color": "#8FAF7A",
     "btnImage": "/assets/animales/mamiferos_rhesus.webp",
@@ -100,6 +106,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ham-chimpance-mr2",
+    diagramImage: '/assets/animales/infographic_m1/diagram_ham-chimpance-mr2.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ham el Chimpancé: El Vuelo Suborbital Mercury-Redstone 2',
     "title": "Ham el Chimpancé: El Vuelo Suborbital Mercury-Redstone 2",
     "color": "#FF9FFF",
     "btnImage": "/assets/animales/ham_training.webp",
@@ -128,6 +136,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "enos-orbita-mercury",
+    diagramImage: '/assets/animales/infographic_m1/diagram_enos-orbita-mercury.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Enos: El Primer Primate Estadounidense en Órbita',
     "title": "Enos: El Primer Primate Estadounidense en Órbita",
     "color": "#00E4FF",
     "btnImage": "/assets/animales/ham_training.webp",
@@ -156,6 +166,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "baker-able-jupiter",
+    diagramImage: '/assets/animales/infographic_m1/diagram_baker-able-jupiter.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Able y Baker: Supervivencia Heroica en el Cohete Júpiter',
     "title": "Able y Baker: Supervivencia Heroica en el Cohete Júpiter",
     "color": "#FFD700",
     "btnImage": "/assets/animales/mamiferos_rhesus.webp",
@@ -184,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "legado-biomedico-espacial",
+    diagramImage: '/assets/animales/infographic_m1/diagram_legado-biomedico-espacial.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Legado Biomédico: El Camino Hacia el Ser Humano',
     "title": "El Legado Biomédico: El Camino Hacia el Ser Humano",
     "color": "#A8FF78",
     "btnImage": "/assets/animales/mamiferos_rhesus.webp",
@@ -375,7 +389,47 @@ export default function InteractiveInfographic_AnimalesM2() {
               marginBottom: 28,
               position: 'relative',
               cursor: 'zoom-in',
-            }} onClick={() => setLightboxSrc(node.bannerImage)} >
+            }} onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={node.bannerImage}

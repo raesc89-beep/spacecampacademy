@@ -87,6 +87,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'gravedad-newton',
+    diagramImage: '/assets/interstellar/infographic_m1/diagram_gravedad-newton.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Gravedad de Newton',
               bannerImage: '/assets/interstellar/infographic_m1/banner_gravedad-newton.webp',
     title: 'La Gravedad de Newton',
     color: '#F4A261',
@@ -107,6 +109,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'einstein-1915',
+    diagramImage: '/assets/interstellar/infographic_m1/diagram_einstein-1915.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Einstein Cambia Todo',
               bannerImage: '/assets/interstellar/infographic_m1/banner_einstein-1915.webp',
     title: 'Einstein Cambia Todo',
     color: '#4FC3F7',
@@ -127,6 +131,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'curvatura-espaciotiempo',
+    diagramImage: '/assets/interstellar/infographic_m1/diagram_curvatura-espaciotiempo.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Espacio se Curva',
               bannerImage: '/assets/interstellar/infographic_m1/banner_curvatura-espaciotiempo.webp',
     title: 'El Espacio se Curva',
     color: '#7C4DFF',
@@ -147,6 +153,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'geodesicas',
+    diagramImage: '/assets/interstellar/infographic_m1/diagram_geodesicas.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Líneas Rectas Curvas',
               bannerImage: '/assets/interstellar/infographic_m1/banner_geodesicas.webp',
     title: 'Líneas Rectas Curvas',
     color: '#FF6B35',
@@ -167,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lentes-gravitacionales',
+    diagramImage: '/assets/interstellar/infographic_m1/diagram_lentes-gravitacionales.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre El Universo como Lupa',
               bannerImage: '/assets/interstellar/infographic_m1/banner_lentes-gravitacionales.webp',
     title: 'El Universo como Lupa',
     color: '#00BCD4',
@@ -187,6 +197,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ondas-gravitacionales',
+    diagramImage: '/assets/interstellar/infographic_m1/diagram_ondas-gravitacionales.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Olas en el Espacio',
               bannerImage: '/assets/interstellar/infographic_m1/banner_ondas-gravitacionales.webp',
     title: 'Olas en el Espacio',
     color: '#AB47BC',
@@ -207,6 +219,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'gps-relatividad',
+    diagramImage: '/assets/interstellar/infographic_m1/diagram_gps-relatividad.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Einstein en tu Bolsillo',
               bannerImage: '/assets/interstellar/infographic_m1/banner_gps-relatividad.webp',
     title: 'Einstein en tu Bolsillo',
     color: '#26A69A',
@@ -633,6 +647,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

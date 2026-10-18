@@ -129,6 +129,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "bocas-esfericas",
+    diagramImage: '/assets/wormhole/infographic_m5/diagram_bocas-esfericas.webp',
+    diagramCaption: 'La boca de un agujero de gusano se vería como una esfera de cristal que muestra, deformado, el paisaje del otro extremo.',
     bannerImage: '/assets/wormhole/infographic_m5/banner_bocas-esfericas.webp',
     bannerCaption: "La boca de un agujero de gusano se vería como una esfera de cristal que muestra, deformado, el paisaje del otro extremo.",
     title: "Bocas Esféricas, No Agujeros Planos",
@@ -150,6 +152,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "garganta-y-atajo",
+    diagramImage: '/assets/wormhole/infographic_m5/diagram_garganta-y-atajo.webp',
+    diagramCaption: 'La garganta es la parte más estrecha del túnel; su forma decide cuánto dura el viaje y qué fuerzas sentiría el viajero.',
     bannerImage: '/assets/wormhole/infographic_m5/banner_garganta-y-atajo.webp',
     bannerCaption: "La garganta es la parte más estrecha del túnel; su forma decide cuánto dura el viaje y qué fuerzas sentiría el viajero.",
     title: "La Garganta: El Punto Más Estrecho",
@@ -171,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "puente-que-se-cierra",
+    diagramImage: '/assets/wormhole/infographic_m5/diagram_puente-que-se-cierra.webp',
+    diagramCaption: 'En 1962, Fuller y Wheeler mostraron que el puente de Einstein-Rosen se abre y se estrangula tan rápido que ni la luz lo cruza.',
     bannerImage: '/assets/wormhole/infographic_m5/banner_puente-que-se-cierra.webp',
     bannerCaption: "En 1962, Fuller y Wheeler mostraron que el puente de Einstein-Rosen se abre y se estrangula tan rápido que ni la luz lo cruza.",
     title: "Un Puente Que Se Cierra Solo",
@@ -192,6 +198,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "materia-exotica",
+    diagramImage: '/assets/wormhole/infographic_m5/diagram_materia-exotica.webp',
+    diagramCaption: 'Para mantener abierta la garganta haría falta materia exótica, con una tensión mayor que su propia densidad de energía.',
     bannerImage: '/assets/wormhole/infographic_m5/banner_materia-exotica.webp',
     bannerCaption: "Para mantener abierta la garganta haría falta materia exótica, con una tensión mayor que su propia densidad de energía.",
     title: "Materia Exótica: Abrir en Vez de Cerrar",
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "condiciones-de-energia",
+    diagramImage: '/assets/wormhole/infographic_m5/diagram_condiciones-de-energia.webp',
+    diagramCaption: 'Las condiciones de energía son reglas que cumple la materia ordinaria; los agujeros de gusano traversables necesitan violarlas.',
     bannerImage: '/assets/wormhole/infographic_m5/banner_condiciones-de-energia.webp',
     bannerCaption: "Las condiciones de energía son reglas que cumple la materia ordinaria; los agujeros de gusano traversables necesitan violarlas.",
     title: "Las Condiciones de Energía",
@@ -234,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cuanta-energia-negativa",
+    diagramImage: '/assets/wormhole/infographic_m5/diagram_cuanta-energia-negativa.webp',
+    diagramCaption: 'Según estimaciones de Matt Visser, una garganta de un metro necesitaría energía negativa equivalente a la masa de Júpiter.',
     bannerImage: '/assets/wormhole/infographic_m5/banner_cuanta-energia-negativa.webp',
     bannerCaption: "Según estimaciones de Matt Visser, una garganta de un metro necesitaría energía negativa equivalente a la masa de Júpiter.",
     title: "¿Cuánta Energía Negativa Haría Falta?",
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "fuerzas-de-marea",
+    diagramImage: '/assets/wormhole/infographic_m5/diagram_fuerzas-de-marea.webp',
+    diagramCaption: 'Las fuerzas de marea estiran a lo largo y aprietan a lo ancho; Morris y Thorne exigieron que no superaran la gravedad terrestre.',
     bannerImage: '/assets/wormhole/infographic_m5/banner_fuerzas-de-marea.webp',
     bannerCaption: "Las fuerzas de marea estiran a lo largo y aprietan a lo ancho; Morris y Thorne exigieron que no superaran la gravedad terrestre.",
     title: "Fuerzas de Marea: El Estirón del Viajero",
@@ -710,6 +724,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

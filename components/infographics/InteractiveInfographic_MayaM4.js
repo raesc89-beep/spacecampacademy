@@ -81,6 +81,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "tzolkin-estructura",
+    diagramImage: '/assets/maya/infographic_m4/diagram_tzolkin-estructura.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Estructura',
     "bannerImage": "/assets/maya/infographic_m4/banner_constelaciones-mayas.webp",
     "title": "Estructura",
     "color": "#7B1FA2",
@@ -109,6 +111,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "veinte-dias",
+    diagramImage: '/assets/maya/infographic_m4/diagram_veinte-dias.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los 20 Días',
     "bannerImage": "/assets/maya/infographic_m4/banner_copa-observacion.webp",
     "title": "Los 20 Días",
     "color": "#FFC107",
@@ -137,6 +141,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "trece-numeros",
+    diagramImage: '/assets/maya/infographic_m4/diagram_trece-numeros.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los 13 Números',
     "bannerImage": "/assets/maya/infographic_m4/banner_eclipse-maya.webp",
     "title": "Los 13 Números",
     "color": "#C62828",
@@ -165,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "destino-nacimiento",
+    diagramImage: '/assets/maya/infographic_m4/diagram_destino-nacimiento.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Destino al Nacer',
     "bannerImage": "/assets/maya/infographic_m4/banner_milky-way-maya.webp",
     "title": "Destino al Nacer",
     "color": "#00838F",
@@ -193,6 +201,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "ciclo-agricola-ritual",
+    diagramImage: '/assets/maya/infographic_m4/diagram_ciclo-agricola-ritual.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Ciclo Ritual',
     "bannerImage": "/assets/maya/infographic_m4/banner_observatorio-caracol.webp",
     "title": "Ciclo Ritual",
     "color": "#2E7D32",
@@ -221,6 +231,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sacerdotes-contadores",
+    diagramImage: '/assets/maya/infographic_m4/diagram_sacerdotes-contadores.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Los Sacerdotes Contadores',
     "bannerImage": "/assets/maya/infographic_m4/banner_pleiades-mayas.webp",
     "title": "Los Sacerdotes Contadores",
     "color": "#263238",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "mesoamerica-universal",
+    diagramImage: '/assets/maya/infographic_m4/diagram_mesoamerica-universal.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Calendario Universal',
     "bannerImage": "/assets/maya/infographic_m4/banner_venus-maya.webp",
     "title": "Calendario Universal",
     "color": "#FF5722",
@@ -651,6 +665,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                   </p>
                 </div>
               )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               {node.fact && (
           <div style={{
             marginTop: '1.5rem', padding: '1.2rem', borderRadius: '12px',

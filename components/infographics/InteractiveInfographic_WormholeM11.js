@@ -128,6 +128,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "dos-teorias-incompatibles",
+    diagramImage: '/assets/wormhole/infographic_m11/diagram_dos-teorias-incompatibles.webp',
+    diagramCaption: 'La relatividad general y la mecánica cuántica han superado todas las pruebas, pero sus matemáticas chocan a la escala de Planck.',
     bannerImage: '/assets/wormhole/infographic_m11/banner_dos-teorias-incompatibles.webp',
     bannerCaption: "La relatividad general y la mecánica cuántica han superado todas las pruebas, pero sus matemáticas chocan a la escala de Planck.",
     title: "Dos teorías geniales que no se entienden",
@@ -149,6 +151,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "espuma-cuantica",
+    diagramImage: '/assets/wormhole/infographic_m11/diagram_espuma-cuantica.webp',
+    diagramCaption: 'John Wheeler imaginó en 1955 que, a la escala de Planck, el espacio-tiempo hierve como espuma, con diminutos túneles efímeros.',
     bannerImage: '/assets/wormhole/infographic_m11/banner_espuma-cuantica.webp',
     bannerCaption: "John Wheeler imaginó en 1955 que, a la escala de Planck, el espacio-tiempo hierve como espuma, con diminutos túneles efímeros.",
     title: "La espuma cuántica de Wheeler",
@@ -170,6 +174,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "cuerdas-que-vibran",
+    diagramImage: '/assets/wormhole/infographic_m11/diagram_cuerdas-que-vibran.webp',
+    diagramCaption: 'En la teoría de cuerdas, cada partícula sería un modo de vibración distinto de una cuerda diminuta, como las notas de una guitarra.',
     bannerImage: '/assets/wormhole/infographic_m11/banner_cuerdas-que-vibran.webp',
     bannerCaption: "En la teoría de cuerdas, cada partícula sería un modo de vibración distinto de una cuerda diminuta, como las notas de una guitarra.",
     title: "Cuerdas que vibran en diez dimensiones",
@@ -191,6 +197,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "atomos-de-espacio",
+    diagramImage: '/assets/wormhole/infographic_m11/diagram_atomos-de-espacio.webp',
+    diagramCaption: 'La gravedad cuántica de bucles propone que el espacio está hecho de unidades mínimas de área y volumen, cerca de la escala de Planck.',
     bannerImage: '/assets/wormhole/infographic_m11/banner_atomos-de-espacio.webp',
     bannerCaption: "La gravedad cuántica de bucles propone que el espacio está hecho de unidades mínimas de área y volumen, cerca de la escala de Planck.",
     title: "Átomos de espacio: la gravedad cuántica de bucles",
@@ -212,6 +220,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "universo-holografico",
+    diagramImage: '/assets/wormhole/infographic_m11/diagram_universo-holografico.webp',
+    diagramCaption: 'La información máxima que cabe en una región del espacio no depende de su volumen, sino del área de la superficie que la rodea.',
     bannerImage: '/assets/wormhole/infographic_m11/banner_universo-holografico.webp',
     bannerCaption: "La información máxima que cabe en una región del espacio no depende de su volumen, sino del área de la superficie que la rodea.",
     title: "El principio holográfico",
@@ -233,6 +243,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "correspondencia-ads-cft",
+    diagramImage: '/assets/wormhole/infographic_m11/diagram_correspondencia-ads-cft.webp',
+    diagramCaption: 'En 1997, Juan Maldacena propuso que una teoría con gravedad en cierto espacio curvo equivale a una teoría cuántica sin gravedad en su borde.',
     bannerImage: '/assets/wormhole/infographic_m11/banner_correspondencia-ads-cft.webp',
     bannerCaption: "En 1997, Juan Maldacena propuso que una teoría con gravedad en cierto espacio curvo equivale a una teoría cuántica sin gravedad en su borde.",
     title: "AdS/CFT: el diccionario de Maldacena",
@@ -254,6 +266,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "er-igual-epr",
+    diagramImage: '/assets/wormhole/infographic_m11/diagram_er-igual-epr.webp',
+    diagramCaption: 'En 2013, Maldacena y Susskind propusieron que dos agujeros negros entrelazados estarían unidos por un agujero de gusano no transitable.',
     bannerImage: '/assets/wormhole/infographic_m11/banner_er-igual-epr.webp',
     bannerCaption: "En 2013, Maldacena y Susskind propusieron que dos agujeros negros entrelazados estarían unidos por un agujero de gusano no transitable.",
     title: "ER=EPR: ¿el espacio está tejido con entrelazamiento?",
@@ -709,6 +723,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (

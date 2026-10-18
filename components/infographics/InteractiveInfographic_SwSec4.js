@@ -75,6 +75,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "entrelazamiento-basico",
+    diagramImage: '/assets/starwars/infographic_fuerza/diagram_entrelazamiento-basico.webp',
+    diagramCaption: 'Representación del entrelazamiento cuántico: dos partículas comparten estado instantáneamente sin importar la distancia.',
     "title": "La Fuerza que Conecta Todo",
     "color": "#B388FF",
     "btnImage": "/assets/starwars/infographic_fuerza/btn_entrelazamiento-basico.webp",
@@ -104,6 +106,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "epr-paradoja",
+    diagramImage: '/assets/starwars/infographic_fuerza/diagram_epr-paradoja.webp',
+    diagramCaption: 'Albert Einstein, Boris Podolsky y Nathan Rosen propusieron en 1935 la paradoja EPR, cuestionando la mecánica cuántica.',
     "title": "La Paradoja EPR",
     "color": "#00BCD4",
     "btnImage": "/assets/starwars/infographic_fuerza/btn_epr-paradoja.webp",
@@ -133,6 +137,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "superposicion-cuantica",
+    diagramImage: '/assets/starwars/infographic_fuerza/diagram_superposicion-cuantica.webp',
+    diagramCaption: 'En mecánica cuántica, una partícula puede existir en múltiples estados simultáneamente hasta que es observada.',
     "title": "Superposición: Ser Todo a la Vez",
     "color": "#7C4DFF",
     "btnImage": "/assets/starwars/infographic_fuerza/btn_superposicion-cuantica.webp",
@@ -162,6 +168,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "teleportacion-cuantica",
+    diagramImage: '/assets/starwars/infographic_fuerza/diagram_teleportacion-cuantica.webp',
+    diagramCaption: 'La teleportación cuántica transfiere estados cuánticos entre partículas distantes usando entrelazamiento.',
     "title": "Teletransportación Cuántica",
     "color": "#18FFFF",
     "btnImage": "/assets/starwars/infographic_fuerza/btn_teleportacion-cuantica.webp",
@@ -191,6 +199,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "computacion-cuantica",
+    diagramImage: '/assets/starwars/infographic_fuerza/diagram_computacion-cuantica.webp',
+    diagramCaption: 'Los computadores cuánticos utilizan qubits que procesan información exponencialmente más rápido que los bits clásicos.',
     "title": "Computadoras del Futuro",
     "color": "#E040FB",
     "btnImage": "/assets/starwars/infographic_fuerza/btn_computacion-cuantica.webp",
@@ -220,6 +230,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "no-localidad",
+    diagramImage: '/assets/starwars/infographic_fuerza/diagram_no-localidad.webp',
+    diagramCaption: 'La no-localidad cuántica permite que partículas entrelazadas se influyan mutuamente a cualquier distancia, demostrado por John Bell en 1964.',
     "title": "Conexión Instantánea: No-Localidad",
     "color": "#64FFDA",
     "btnImage": "/assets/starwars/infographic_fuerza/btn_no-localidad.webp",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "fuerza-universo",
+    diagramImage: '/assets/starwars/infographic_fuerza/diagram_fuerza-universo.webp',
+    diagramCaption: 'Las fuerzas fundamentales del universo â€” gravedad, electromagnetismo, nuclear fuerte y débil â€” gobiernan toda la materia.',
     "title": "La Fuerza del Universo Real",
     "color": "#AA00FF",
     "btnImage": "/assets/starwars/infographic_fuerza/btn_fuerza-universo.webp",
@@ -508,7 +522,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
 
           {node.bannerImage && (
             <div style={{ margin: '2rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}55` }}>
-              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)} style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
+              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', cursor: 'pointer', display: 'block' }} />
               {node.bannerCaption && (
                 <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif', fontStyle: 'italic' }}>
                   {node.bannerCaption}

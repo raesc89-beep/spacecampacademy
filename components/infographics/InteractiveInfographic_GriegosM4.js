@@ -144,6 +144,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'discipulo-socrates',
+    diagramImage: '/assets/griegos/infographic_m4/diagram_discipulo-socrates.webp',
+    diagramCaption: 'El discípulo de Sócrates: el joven Platón aristócrata transformado por la filosofía de su maestro',
     title: 'El Discípulo de Sócrates',
     color: '#E8E0D4',
     btnImage: '/assets/los_griegos/infographic_m4/btn_discipulo-socrates.webp',
@@ -165,6 +167,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'la-academia',
+    diagramImage: '/assets/griegos/infographic_m4/diagram_la-academia.webp',
+    diagramCaption: 'La Academia: fundada por Platón en 387 a.C., la primera universidad de la historia occidental',
     title: 'La Academia',
     color: '#2E6B8A',
     btnImage: '/assets/los_griegos/infographic_m4/btn_la-academia.webp',
@@ -186,6 +190,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'teoria-ideas',
+    diagramImage: '/assets/griegos/infographic_m4/diagram_teoria-ideas.webp',
+    diagramCaption: 'La Teoría de las Ideas: el mundo de Formas perfectas e inmutables más allá del mundo material',
     title: 'La Teoría de las Ideas',
     color: '#3A7FA0',
     btnImage: '/assets/los_griegos/infographic_m4/btn_teoria-ideas.webp',
@@ -207,6 +213,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'alegoria-caverna',
+    diagramImage: '/assets/griegos/infographic_m4/diagram_alegoria-caverna.webp',
+    diagramCaption: 'La Alegoría de la Caverna: la más poderosa metáfora del conocimiento y la ignorancia humana',
     title: 'La Alegoría de la Caverna',
     color: '#1E5B7A',
     btnImage: '/assets/los_griegos/infographic_m4/btn_alegoria-caverna.webp',
@@ -228,6 +236,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'la-republica',
+    diagramImage: '/assets/griegos/infographic_m4/diagram_la-republica.webp',
+    diagramCaption: 'La República: la ciudad ideal de Platón gobernada por filósofos-reyes sabios y justos',
     title: 'La República',
     color: '#D4C9B8',
     btnImage: '/assets/los_griegos/infographic_m4/btn_la-republica.webp',
@@ -249,6 +259,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'los-dialogos',
+    diagramImage: '/assets/griegos/infographic_m4/diagram_los-dialogos.webp',
+    diagramCaption: 'Los Diálogos: las obras de Platón como dramas filosóficos que preservaron el pensamiento de Sócrates',
     title: 'Los Diálogos',
     color: '#C0B09C',
     btnImage: '/assets/los_griegos/infographic_m4/btn_los-dialogos.webp',
@@ -270,6 +282,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-platon',
+    diagramImage: '/assets/griegos/infographic_m4/diagram_legado-platon.webp',
+    diagramCaption: 'El legado de Platón: toda la filosofía occidental es una serie de notas al pie de Platón',
     title: 'El Legado de Platón',
     color: '#F0EAE0',
     btnImage: '/assets/los_griegos/infographic_m4/btn_legado-platon.webp',
@@ -766,6 +780,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

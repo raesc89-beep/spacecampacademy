@@ -80,6 +80,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "relojes-velocidad",
+    diagramImage: '/assets/interstellar/infographic_m3/diagram_relojes-velocidad.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Relojes que se Atrasan',
     "bannerImage": "/assets/interstellar/infographic_m3/banner_relojes-velocidad.webp",
     "title": "Relojes que se Atrasan",
     "color": "#4FC3F7",
@@ -108,6 +110,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gemelos-einstein",
+    diagramImage: '/assets/interstellar/infographic_m3/diagram_gemelos-einstein.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Paradoja de los Gemelos',
     "bannerImage": "/assets/interstellar/infographic_m3/banner_gemelos-einstein.webp",
     "title": "La Paradoja de los Gemelos",
     "color": "#AB47BC",
@@ -136,6 +140,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "dilatacion-gravitacional",
+    diagramImage: '/assets/interstellar/infographic_m3/diagram_dilatacion-gravitacional.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre La Gravedad Frena el Tiempo',
     "bannerImage": "/assets/interstellar/infographic_m3/banner_dilatacion-gravitacional.webp",
     "title": "La Gravedad Frena el Tiempo",
     "color": "#FF6B35",
@@ -164,6 +170,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gps-real",
+    diagramImage: '/assets/interstellar/infographic_m3/diagram_gps-real.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Tu Celular Necesita a Einstein',
     "bannerImage": "/assets/interstellar/infographic_m3/banner_gps-real.webp",
     "title": "Tu Celular Necesita a Einstein",
     "color": "#26A69A",
@@ -192,6 +200,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "planeta-miller",
+    diagramImage: '/assets/interstellar/infographic_m3/diagram_planeta-miller.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Una Hora = Siete Años',
     "bannerImage": "/assets/interstellar/infographic_m3/banner_planeta-miller.webp",
     "title": "Una Hora = Siete Años",
     "color": "#F44336",
@@ -220,6 +230,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "paradoja-gemelos",
+    diagramImage: '/assets/interstellar/infographic_m3/diagram_paradoja-gemelos.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre ¿Quién Envejece Más?',
     "bannerImage": "/assets/interstellar/infographic_m3/banner_paradoja-gemelos.webp",
     "title": "¿Quién Envejece Más?",
     "color": "#7C4DFF",
@@ -248,6 +260,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "futuro-crononauta",
+    diagramImage: '/assets/interstellar/infographic_m3/diagram_futuro-crononauta.webp',
+    diagramCaption: 'Ilustración científica e histórica sobre Viajeros del Tiempo Reales',
     "bannerImage": "/assets/interstellar/infographic_m3/banner_futuro-crononauta.webp",
     "title": "Viajeros del Tiempo Reales",
     "color": "#FF9800",
@@ -676,6 +690,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
               {node.fact && (

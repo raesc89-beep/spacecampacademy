@@ -157,6 +157,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "paradoja-abuelo",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_paradoja-abuelo.webp',
+    diagramCaption: 'El análisis profundo de la paradoja del abuelo y sus implicaciones lógicas',
     "title": "La Paradoja del Abuelo",
     "color": "#FFA500",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_abuelo.webp",
@@ -186,6 +188,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "muchos-mundos",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_muchos-mundos.webp',
+    diagramCaption: 'Universos paralelos y ramas de realidad según la interpretación de muchos mundos',
     "title": "Universos Paralelos",
     "color": "#00CCFF",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_mundos.webp",
@@ -215,6 +219,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "bootstrap",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_bootstrap.webp',
+    diagramCaption: 'El bucle bootstrap: paradoja de información sin origen causal',
     "title": "El Bucle Bootstrap",
     "color": "#E040FB",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_bootstrap.webp",
@@ -244,6 +250,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gemelos",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_gemelos.webp',
+    diagramCaption: 'La paradoja de los gemelos: dilatación del tiempo en viaje relativista',
     "title": "La Paradoja de los Gemelos",
     "color": "#FF6B00",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_gemelos.webp",
@@ -273,6 +281,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "novikov",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_novikov.webp',
+    diagramCaption: 'El principio de autoconsistencia de Novikov: el pasado no puede cambiarse',
     "title": "El Principio de Autoconsistencia",
     "color": "#7C4DFF",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_novikov.webp",
@@ -302,6 +312,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "delorean",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_delorean.webp',
+    diagramCaption: 'La ciencia real detrás del diseño del DeLorean máquina del tiempo',
     "title": "Ciencia Detrás del DeLorean",
     "color": "#FFA500",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_delorean.webp",
@@ -331,6 +343,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "cronologia",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_cronologia.webp',
+    diagramCaption: 'La conjetura de protección cronológica de Hawking',
     "title": "La Protección Cronológica",
     "color": "#00E676",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_cronologia.webp",
@@ -360,6 +374,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "futuro-ciencia",
+    diagramImage: '/assets/bttf/infographic_m3/diagram_futuro-ciencia.webp',
+    diagramCaption: 'El futuro de la ciencia del tiempo: de la teoría a la posibilidad',
     "title": "El Futuro de la Ciencia del Tiempo",
     "color": "#FFD740",
     "btnImage": "/assets/bttf/infographic_paradojas/btn_futuro.webp",
@@ -699,6 +715,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
               {node.bannerCaption}
             </p>
           )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
         </div>
       )}
     </motion.div>

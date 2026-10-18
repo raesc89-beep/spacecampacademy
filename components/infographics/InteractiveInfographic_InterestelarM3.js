@@ -86,6 +86,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "descubrimiento-borisov",
+    diagramImage: '/assets/interestelar/infographic_m3/diagram_descubrimiento-borisov.webp',
+    diagramCaption: 'Borisov 2019: el astrónomo amateur Gennady Borisov descubrió el segundo objeto interestelar con su telescopio casero',
     "title": "El Descubrimiento",
     "color": "#81D4FA",
     "btnImage": "/assets/interestelar/infographic_m3/btn_descubrimiento-borisov.jpg",
@@ -115,6 +117,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "confirmacion-interestelar",
+    diagramImage: '/assets/interestelar/infographic_m3/diagram_confirmacion-interestelar.webp',
+    diagramCaption: 'Confirmación interestelar: excentricidad de 3.36, muy por encima del 1.0 necesario para ser interestelar',
     "title": "Confirmación Interestelar",
     "color": "#1565C0",
     "btnImage": "/assets/interestelar/infographic_m3/btn_confirmacion-interestelar.jpg",
@@ -144,6 +148,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "primer-cometa-alien",
+    diagramImage: '/assets/interestelar/infographic_m3/diagram_primer-cometa-alien.webp',
+    diagramCaption: 'El primer cometa alienígena: Borisov tiene coma, colas y desgasifica como un cometa normal pero de otra estrella',
     "title": "Primer Cometa de Otro Sistema",
     "color": "#00BCD4",
     "btnImage": "/assets/interestelar/infographic_m3/btn_primer-cometa-alien.jpg",
@@ -173,6 +179,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "composicion-molecular",
+    diagramImage: '/assets/interestelar/infographic_m3/diagram_composicion-molecular.webp',
+    diagramCaption: 'Composición molecular: agua y monóxido de carbono en alta proporción, formado muy lejos de su estrella natal',
     "title": "Composición Molecular",
     "color": "#7E57C2",
     "btnImage": "/assets/interestelar/infographic_m3/btn_composicion-molecular.jpg",
@@ -202,6 +210,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "nucleo-fragmentacion",
+    diagramImage: '/assets/interestelar/infographic_m3/diagram_nucleo-fragmentacion.webp',
+    diagramCaption: 'Fragmentación del núcleo: en abril 2020 el Hubble observó a Borisov partiéndose en dos pedazos',
     "title": "El Núcleo y la Fragmentación",
     "color": "#69F0AE",
     "btnImage": "/assets/interestelar/infographic_m3/btn_nucleo-fragmentacion.jpg",
@@ -231,6 +241,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "sistema-origen",
+    diagramImage: '/assets/interestelar/infographic_m3/diagram_sistema-origen.webp',
+    diagramCaption: 'Sistema de origen: el trayecto de Borisov apunta a Krueger 60, sistema binario de enanas rojas en Cefeo',
     "title": "¿De Dónde Vino?",
     "color": "#FFB300",
     "btnImage": "/assets/interestelar/infographic_m3/btn_sistema-origen.jpg",
@@ -260,6 +272,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "comparacion-oumuamua",
+    diagramImage: '/assets/interestelar/infographic_m3/diagram_comparacion-oumuamua.webp',
+    diagramCaption: 'Oumuamua vs Borisov: dos visitantes totalmente distintos que muestran la diversidad del cosmos interestelar',
     "title": "Borisov vs Oumuamua",
     "color": "#B388FF",
     "btnImage": "/assets/interestelar/infographic_m3/btn_comparacion-oumuamua.jpg",
@@ -731,6 +745,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

@@ -141,6 +141,8 @@ const DECO_MAP = {
 const INFOGRAPHIC_NODES = [
   {
     "id": "hg-wells",
+    diagramImage: '/assets/bttf/infographic_m6/diagram_hg-wells.webp',
+    diagramCaption: 'H.G. Wells y su Máquina del Tiempo: el origen literario del viaje temporal',
     "title": "La Primera Máquina del Tiempo",
     "color": "#FF6B35",
     "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_wells.webp",
@@ -170,6 +172,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "agujeros-gusano",
+    diagramImage: '/assets/bttf/infographic_m6/diagram_agujeros-gusano.webp',
+    diagramCaption: 'Agujeros de gusano traversables: túneles teóricos a través del espacio-tiempo',
     "title": "Agujeros de Gusano",
     "color": "#7C4DFF",
     "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_gusano.webp",
@@ -199,6 +203,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "motor-alcubierre",
+    diagramImage: '/assets/bttf/infographic_m6/diagram_motor-alcubierre.webp',
+    diagramCaption: 'El motor Alcubierre: viaje superlumínico comprimiendo el espacio-tiempo',
     "title": "El Motor Warp",
     "color": "#00E5FF",
     "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_warp.webp",
@@ -228,6 +234,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "delorean-ingenieria",
+    diagramImage: '/assets/bttf/infographic_m6/diagram_delorean-ingenieria.webp',
+    diagramCaption: 'La ingeniería real del DeLorean DMC-12: el auto que inspiro a la máquina del tiempo',
     "title": "Ingeniería del DeLorean",
     "color": "#FFA726",
     "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_delorean.webp",
@@ -257,6 +265,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "condensador-flujo",
+    diagramImage: '/assets/bttf/infographic_m6/diagram_condensador-flujo.webp',
+    diagramCaption: 'El condensador de flujo: la pieza que hace posible el viaje en el tiempo',
     "title": "El Condensador de Flujo",
     "color": "#E040FB",
     "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_condensador.webp",
@@ -286,6 +296,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "turistas-futuro",
+    diagramImage: '/assets/bttf/infographic_m6/diagram_turistas-futuro.webp',
+    diagramCaption: 'El turismo temporal del futuro: visitar la historia sin cambiarla',
     "title": "¿Dónde Están los Turistas?",
     "color": "#66BB6A",
     "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_turistas.webp",
@@ -315,6 +327,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "gobernanza-temporal",
+    diagramImage: '/assets/bttf/infographic_m6/diagram_gobernanza-temporal.webp',
+    diagramCaption: 'La gobernanza ética del viaje temporal: leyes y organismos del futuro',
     "title": "Gobernanza del Tiempo",
     "color": "#FF7043",
     "btnImage": "/assets/bttf/infographic_maquina_tiempo/btn_gobernanza.webp",
@@ -784,6 +798,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                       {node.bannerCaption}
                     </p>
                   )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
                 </div>
               )}
 

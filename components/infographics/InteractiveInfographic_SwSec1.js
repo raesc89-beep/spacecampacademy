@@ -113,6 +113,8 @@ const FALCON_GALLERY = [
 const INFOGRAPHIC_NODES = [
   {
     "id": "parsec-definicion",
+    diagramImage: '/assets/starwars/infographic_kessel/diagram_parsec-definicion.webp',
+    diagramCaption: 'El Halcón Milenario navegando el temible Corredor de Kessel acortando distancias.',
     "title": "¿Qué es un Parsec?",
     "color": "#00CFFF",
     "btnImage": "/assets/starwars/infographic_kessel/btn_parsec.webp",
@@ -142,6 +144,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "paralaje-estelar",
+    diagramImage: '/assets/starwars/infographic_kessel/diagram_paralaje-estelar.webp',
+    diagramCaption: 'La Tierra en su órbita ofrece dos perspectivas distintas para medir distancias.',
     "title": "El Truco del Paralaje",
     "color": "#FFD54F",
     "btnImage": "/assets/starwars/infographic_kessel/btn_paralaje.webp",
@@ -171,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "escalera-distancias",
+    diagramImage: '/assets/starwars/infographic_kessel/diagram_escalera-distancias.webp',
+    diagramCaption: 'Cada peldaño de la escalera cósmica nos permite medir distancias cada vez más inmensas.',
     "title": "La Escalera Cósmica",
     "color": "#AB47BC",
     "btnImage": "/assets/starwars/infographic_kessel/btn_escalera.webp",
@@ -200,6 +206,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "velocidad-luz",
+    diagramImage: '/assets/starwars/infographic_kessel/diagram_velocidad-luz.webp',
+    diagramCaption: 'La luz viaja a 300,000 km/s â€” el límite absoluto del cosmos.',
     "title": "Nada Supera a la Luz",
     "color": "#FF7043",
     "btnImage": "/assets/starwars/infographic_kessel/btn_velocidad.webp",
@@ -229,6 +237,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "warp-drive",
+    diagramImage: '/assets/starwars/infographic_kessel/diagram_warp-drive.webp',
+    diagramCaption: 'Del concepto de Alcubierre a los solitones de Lentz: la evolución del motor de curvatura.',
     "title": "El Motor de Curvatura",
     "color": "#66BB6A",
     "btnImage": "/assets/starwars/infographic_kessel/btn_warp.webp",
@@ -258,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "agujeros-negros",
+    diagramImage: '/assets/starwars/infographic_kessel/diagram_agujeros-negros.webp',
+    diagramCaption: 'Los agujeros negros retuercen tanto la gravedad que ni siquiera la luz puede escapar de su interior.',
     "title": "El Sumidero de Kessel",
     "color": "#EF5350",
     "btnImage": "/assets/starwars/infographic_kessel/btn_agujeros.webp",
@@ -287,6 +299,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     "id": "navegacion-estelar",
+    diagramImage: '/assets/starwars/infographic_kessel/diagram_navegacion-estelar.webp',
+    diagramCaption: 'La Red del Espacio Profundo mantiene contacto con nuestras sondas más lejanas.',
     "title": "GPS del Espacio Profundo",
     "color": "#42A5F5",
     "btnImage": "/assets/starwars/infographic_kessel/btn_navegacion.webp",
@@ -605,7 +619,47 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
 
           {node.bannerImage && (
             <div style={{ margin: '2rem 0', borderRadius: '12px', overflow: 'hidden', border: `1px solid ${node.color}55` }}>
-              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)} style={{ cursor: 'pointer', width: '100%', height: 'auto', display: 'block' }} />
+              <img src={node.bannerImage} alt="banner" onClick={() => setLightboxSrc(node.bannerImage)}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+ style={{ cursor: 'pointer', width: '100%', height: 'auto', display: 'block' }} />
               {node.bannerCaption && (
                 <div style={{ background: '#1A1C29', padding: '0.75rem', textAlign: 'center', fontSize: '0.9rem', color: '#90A4AE', fontFamily: '"Oswald", sans-serif' }}>
                   {node.bannerCaption}

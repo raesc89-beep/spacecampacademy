@@ -123,6 +123,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: "espacio-tiempo-curvo",
+    diagramImage: '/assets/wormhole/infographic_m1/diagram_espacio-tiempo-curvo.webp',
+    diagramCaption: 'En 1915 Einstein presentó la relatividad general: la gravedad es la curvatura del espacio-tiempo causada por la masa y la energía.',
     bannerImage: '/assets/wormhole/infographic_m1/banner_espacio-tiempo-curvo.webp',
     bannerCaption: "En 1915 Einstein presentó la relatividad general: la gravedad es la curvatura del espacio-tiempo causada por la masa y la energía.",
     title: "El espacio-tiempo que se curva",
@@ -144,6 +146,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "puente-einstein-rosen-1935",
+    diagramImage: '/assets/wormhole/infographic_m1/diagram_puente-einstein-rosen-1935.webp',
+    diagramCaption: 'En 1935 Albert Einstein y Nathan Rosen publicaron en Physical Review la solución hoy conocida como puente de Einstein-Rosen.',
     bannerImage: '/assets/wormhole/infographic_m1/banner_puente-einstein-rosen-1935.webp',
     bannerCaption: "En 1935 Albert Einstein y Nathan Rosen publicaron en Physical Review la solución hoy conocida como puente de Einstein-Rosen.",
     title: "1935: el puente de Einstein y Rosen",
@@ -165,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "wheeler-nombre-agujero-gusano",
+    diagramImage: '/assets/wormhole/infographic_m1/diagram_wheeler-nombre-agujero-gusano.webp',
+    diagramCaption: 'El físico estadounidense John Archibald Wheeler acuñó en 1957 el término «wormhole», que en español llamamos agujero de gusano.',
     bannerImage: '/assets/wormhole/infographic_m1/banner_wheeler-nombre-agujero-gusano.webp',
     bannerCaption: "El físico estadounidense John Archibald Wheeler acuñó en 1957 el término «wormhole», que en español llamamos agujero de gusano.",
     title: "John Wheeler y el nombre «agujero de gusano»",
@@ -186,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "anatomia-bocas-y-garganta",
+    diagramImage: '/assets/wormhole/infographic_m1/diagram_anatomia-bocas-y-garganta.webp',
+    diagramCaption: 'Un agujero de gusano teórico tendría dos bocas esféricas conectadas por un conducto estrecho llamado garganta.',
     bannerImage: '/assets/wormhole/infographic_m1/banner_anatomia-bocas-y-garganta.webp',
     bannerCaption: "Un agujero de gusano teórico tendría dos bocas esféricas conectadas por un conducto estrecho llamado garganta.",
     title: "Anatomía de un agujero de gusano",
@@ -207,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "puente-que-se-cierra",
+    diagramImage: '/assets/wormhole/infographic_m1/diagram_puente-que-se-cierra.webp',
+    diagramCaption: 'En 1962 Robert Fuller y John Wheeler mostraron que el puente de Einstein-Rosen se cierra antes de que incluso la luz pueda cruzarlo.',
     bannerImage: '/assets/wormhole/infographic_m1/banner_puente-que-se-cierra.webp',
     bannerCaption: "En 1962 Robert Fuller y John Wheeler mostraron que el puente de Einstein-Rosen se cierra antes de que incluso la luz pueda cruzarlo.",
     title: "Un puente que se cierra demasiado rápido",
@@ -228,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "materia-exotica-efecto-casimir",
+    diagramImage: '/assets/wormhole/infographic_m1/diagram_materia-exotica-efecto-casimir.webp',
+    diagramCaption: 'En 1948 Hendrik Casimir predijo que dos placas metálicas muy juntas en el vacío se atraen; el efecto se midió con precisión en 1997.',
     bannerImage: '/assets/wormhole/infographic_m1/banner_materia-exotica-efecto-casimir.webp',
     bannerCaption: "En 1948 Hendrik Casimir predijo que dos placas metálicas muy juntas en el vacío se atraen; el efecto se midió con precisión en 1997.",
     title: "Materia exótica y el efecto Casimir",
@@ -249,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: "espuma-cuantica-escala-planck",
+    diagramImage: '/assets/wormhole/infographic_m1/diagram_espuma-cuantica-escala-planck.webp',
+    diagramCaption: 'La longitud de Planck, de unos 1.6 × 10⁻³⁵ metros, es la escala en la que el espacio-tiempo podría volverse «espumoso».',
     bannerImage: '/assets/wormhole/infographic_m1/banner_espuma-cuantica-escala-planck.webp',
     bannerCaption: "La longitud de Planck, de unos 1.6 × 10⁻³⁵ metros, es la escala en la que el espacio-tiempo podría volverse «espumoso».",
     title: "Agujeros de gusano diminutos: la espuma cuántica",
@@ -704,6 +718,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                     {node.bannerCaption}
                   </p>
                 )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
               </div>
             )}
               {node.fact && (
