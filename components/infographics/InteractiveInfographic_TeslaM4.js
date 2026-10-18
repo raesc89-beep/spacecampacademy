@@ -148,6 +148,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'plan-ambicioso',
+    diagramImage: '/assets/tesla/infographic_m4/diagram_plan-ambicioso.webp',
+    diagramCaption: 'El Sistema Mundial Inalámbrico: la visión de transmitir mensajes e información a escala global',
     title: 'El Plan Más Ambicioso',
     color: '#D4A535',
     btnImage: '/assets/nikola_tesla/infographic_m4/btn_plan-ambicioso.webp',
@@ -169,6 +171,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'torre-wardenclyffe',
+    diagramImage: '/assets/tesla/infographic_m4/diagram_torre-wardenclyffe.webp',
+    diagramCaption: 'La torre de Wardenclyffe en Long Island con su estructura de madera de 57 metros y cúpula',
     title: 'La Torre de Wardenclyffe',
     color: '#6B7B8A',
     btnImage: '/assets/nikola_tesla/infographic_m4/btn_torre-wardenclyffe.webp',
@@ -190,6 +194,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'jp-morgan-financiero',
+    diagramImage: '/assets/tesla/infographic_m4/diagram_jp-morgan-financiero.webp',
+    diagramCaption: 'Acuerdo inicial con el banquero J.P. Morgan para financiar la estación transatlántica',
     title: 'J.P. Morgan: El Financiero',
     color: '#C49225',
     btnImage: '/assets/nikola_tesla/infographic_m4/btn_jp-morgan-financiero.webp',
@@ -211,6 +217,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'construccion-torre',
+    diagramImage: '/assets/tesla/infographic_m4/diagram_construccion-torre.webp',
+    diagramCaption: 'El edificio de ladrillo diseñado por Stanford White junto a la gran torre resonante en 1901',
     title: 'La Construcción',
     color: '#7A8B96',
     btnImage: '/assets/nikola_tesla/infographic_m4/btn_construccion-torre.webp',
@@ -232,6 +240,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'colapso-financiero',
+    diagramImage: '/assets/tesla/infographic_m4/diagram_colapso-financiero.webp',
+    diagramCaption: 'Interrupción del proyecto tras el agotamiento de fondos y el auge de la radio de Marconi',
     title: 'El Colapso Financiero',
     color: '#8A9AA6',
     btnImage: '/assets/nikola_tesla/infographic_m4/btn_colapso-financiero.webp',
@@ -253,6 +263,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'demolicion-torre',
+    diagramImage: '/assets/tesla/infographic_m4/diagram_demolicion-torre.webp',
+    diagramCaption: 'Demolición de la torre en 1917 mientras el laboratorio original de ladrillo sobrevivió',
     title: 'La Demolición',
     color: '#B88420',
     btnImage: '/assets/nikola_tesla/infographic_m4/btn_demolicion-torre.webp',
@@ -274,6 +286,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'wardenclyffe-hoy',
+    diagramImage: '/assets/tesla/infographic_m4/diagram_wardenclyffe-hoy.webp',
+    diagramCaption: 'El Centro Científico Tesla en Wardenclyffe preservado como patrimonio histórico de la ciencia',
     title: 'Wardenclyffe Hoy',
     color: '#5A6B7A',
     btnImage: '/assets/nikola_tesla/infographic_m4/btn_wardenclyffe-hoy.webp',
@@ -742,6 +756,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

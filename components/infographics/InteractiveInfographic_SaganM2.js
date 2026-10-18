@@ -129,6 +129,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'nave-imaginacion',
+    diagramImage: '/assets/sagan/infographic_m2/diagram_nave-imaginacion.webp',
+    diagramCaption: 'La Nave de la Imaginación: una semilla de diente de león surcando el universo',
     title: 'La Nave de la Imaginación',
     color: '#5B3D8F',
     btnImage: '/assets/sagan/infographic_m2/btn_nave-imaginacion.webp',
@@ -150,6 +152,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'trece-episodios',
+    diagramImage: '/assets/sagan/infographic_m2/diagram_trece-episodios.webp',
+    diagramCaption: 'Un viaje épico a través de trece episodios por la historia de la ciencia y la astronomía',
     title: 'Los 13 Episodios',
     color: '#D4A535',
     btnImage: '/assets/sagan/infographic_m2/btn_trece-episodios.webp',
@@ -171,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'produccion-cosmos',
+    diagramImage: '/assets/sagan/infographic_m2/diagram_produccion-cosmos.webp',
+    diagramCaption: 'Innovación visual y rigor científico en la producción de Cosmos: Un Viaje Personal',
     title: 'La Producción',
     color: '#7A5BAF',
     btnImage: '/assets/sagan/infographic_m2/btn_produccion-cosmos.webp',
@@ -192,6 +198,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'calendario-cosmico',
+    diagramImage: '/assets/sagan/infographic_m2/diagram_calendario-cosmico.webp',
+    diagramCaption: 'El Calendario Cósmico: los 13,800 millones de años del universo comprimidos en un solo año',
     title: 'El Calendario Cósmico',
     color: '#C49225',
     btnImage: '/assets/sagan/infographic_m2/btn_calendario-cosmico.webp',
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'mensajes-cientificos',
+    diagramImage: '/assets/sagan/infographic_m2/diagram_mensajes-cientificos.webp',
+    diagramCaption: '«Estamos hechos de polvo de estrellas»: el origen estelar de los elementos químicos de la vida',
     title: 'Mensajes Científicos Clave',
     color: '#9370C4',
     btnImage: '/assets/sagan/infographic_m2/btn_mensajes-cientificos.webp',
@@ -234,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-serie',
+    diagramImage: '/assets/sagan/infographic_m2/diagram_legado-serie.webp',
+    diagramCaption: 'Más de 500 millones de espectadores inspirados por la divulgación astronómica en televisión',
     title: 'El Legado de la Serie',
     color: '#B88420',
     btnImage: '/assets/sagan/infographic_m2/btn_legado-serie.webp',
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cosmos-siglo-xxi',
+    diagramImage: '/assets/sagan/infographic_m2/diagram_cosmos-siglo-xxi.webp',
+    diagramCaption: 'La continuidad del legado de Cosmos en la exploración científica del siglo XXI',
     title: 'Cosmos en el Siglo XXI',
     color: '#4A2D6F',
     btnImage: '/assets/sagan/infographic_m2/btn_cosmos-siglo-xxi.webp',
@@ -752,6 +766,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

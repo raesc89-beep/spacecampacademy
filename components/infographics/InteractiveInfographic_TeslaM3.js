@@ -135,6 +135,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'mision-colorado',
+    diagramImage: '/assets/tesla/infographic_m3/diagram_mision-colorado.webp',
+    diagramCaption: 'Llegada a Colorado Springs en 1899 buscando aire seco y tormentas eléctricas naturales',
     title: 'La Misión en Colorado',
     color: '#6B7B8A',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_mision-colorado.webp',
@@ -156,6 +158,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'laboratorio-loco',
+    diagramImage: '/assets/tesla/infographic_m3/diagram_laboratorio-loco.webp',
+    diagramCaption: 'La estación experimental de alta tensión con su mástil coronado por una esfera de cobre',
     title: 'El Laboratorio Más Loco del Mundo',
     color: '#D4A535',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_laboratorio-loco.webp',
@@ -177,6 +181,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rayos-artificiales',
+    diagramImage: '/assets/tesla/infographic_m3/diagram_rayos-artificiales.webp',
+    diagramCaption: 'Descargas eléctricas artificiales de millones de voltios generadas por el transmisor amplificador',
     title: 'Rayos Artificiales',
     color: '#7A8B96',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_rayos-artificiales.webp',
@@ -198,6 +204,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'ondas-estacionarias',
+    diagramImage: '/assets/tesla/infographic_m3/diagram_ondas-estacionarias.webp',
+    diagramCaption: 'Detección de ondas electromagnéticas y tormentas a cientos de kilómetros de distancia',
     title: 'Ondas Estacionarias Terrestres',
     color: '#C49225',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_ondas-estacionarias.webp',
@@ -219,6 +227,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'transmision-inalambrica',
+    diagramImage: '/assets/tesla/infographic_m3/diagram_transmision-inalambrica.webp',
+    diagramCaption: 'Encendido inalámbrico de lámparas incandescentes mediante acoplamiento resonante en Colorado',
     title: 'Transmisión Inalámbrica de Energía',
     color: '#8A9AA6',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_transmision-inalambrica.webp',
@@ -240,6 +250,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'cuadernos-colorado',
+    diagramImage: '/assets/tesla/infographic_m3/diagram_cuadernos-colorado.webp',
+    diagramCaption: 'Notas de Colorado Springs: registro detallado de experimentos de alta frecuencia',
     title: 'Los Cuadernos de Colorado',
     color: '#B88420',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_cuadernos-colorado.webp',
@@ -261,6 +273,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-cientifico',
+    diagramImage: '/assets/tesla/infographic_m3/diagram_legado-cientifico.webp',
+    diagramCaption: 'Avances en resonancia eléctrica que abrieron el camino a las telecomunicaciones modernas',
     title: 'El Legado Científico',
     color: '#5A6B7A',
     btnImage: '/assets/nikola_tesla/infographic_m3/btn_legado-cientifico.webp',
@@ -726,6 +740,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

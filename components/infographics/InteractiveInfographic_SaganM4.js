@@ -129,6 +129,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'ecuacion-drake',
+    diagramImage: '/assets/sagan/infographic_m4/diagram_ecuacion-drake.webp',
+    diagramCaption: 'La Ecuación de Drake: estimación probabilística de civilizaciones comunicativas en la galaxia',
     title: 'La Ecuación de Drake',
     color: '#5B3D8F',
     btnImage: '/assets/sagan/infographic_m4/btn_ecuacion-drake.webp',
@@ -150,6 +152,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'seti-escuchando',
+    diagramImage: '/assets/sagan/infographic_m4/diagram_seti-escuchando.webp',
+    diagramCaption: 'El proyecto SETI: radiotelescopios rastreando señales artificiales en el silencio cósmico',
     title: 'SETI: Escuchando al Cosmos',
     color: '#D4A535',
     btnImage: '/assets/sagan/infographic_m4/btn_seti-escuchando.webp',
@@ -171,6 +175,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'paradoja-fermi',
+    diagramImage: '/assets/sagan/infographic_m4/diagram_paradoja-fermi.webp',
+    diagramCaption: 'La Paradoja de Fermi: la inmensidad de mundos frente a la ausencia de señales confirmadas',
     title: 'La Paradoja de Fermi',
     color: '#7A5BAF',
     btnImage: '/assets/sagan/infographic_m4/btn_paradoja-fermi.webp',
@@ -192,6 +198,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'exoplanetas',
+    diagramImage: '/assets/sagan/infographic_m4/diagram_exoplanetas.webp',
+    diagramCaption: 'Descubrimiento de miles de exoplanetas orbitando otras estrellas de nuestra galaxia',
     title: 'Exoplanetas',
     color: '#C49225',
     btnImage: '/assets/sagan/infographic_m4/btn_exoplanetas.webp',
@@ -213,6 +221,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'vida-sistema-solar',
+    diagramImage: '/assets/sagan/infographic_m4/diagram_vida-sistema-solar.webp',
+    diagramCaption: 'Mundos con potencial astrobiológico en el sistema solar: Marte, Europa, Encélado y Titán',
     title: 'Vida en el Sistema Solar',
     color: '#9370C4',
     btnImage: '/assets/sagan/infographic_m4/btn_vida-sistema-solar.webp',
@@ -234,6 +244,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'astrobiologia',
+    diagramImage: '/assets/sagan/infographic_m4/diagram_astrobiologia.webp',
+    diagramCaption: 'Experimentos prebióticos sobre la síntesis de moléculas orgánicas esenciales para la vida',
     title: 'Astrobiología',
     color: '#B88420',
     btnImage: '/assets/sagan/infographic_m4/btn_astrobiologia.webp',
@@ -255,6 +267,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'contact-ciencia-ficcion',
+    diagramImage: '/assets/sagan/infographic_m4/diagram_contact-ciencia-ficcion.webp',
+    diagramCaption: 'La obra Contact: convergencia entre la radioastronomía real y la narrativa científica',
     title: 'Contact: Ciencia y Ficción',
     color: '#4A2D6F',
     btnImage: '/assets/sagan/infographic_m4/btn_contact-ciencia-ficcion.webp',
@@ -734,6 +748,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

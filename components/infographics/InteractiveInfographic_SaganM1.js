@@ -142,6 +142,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'brooklyn-1934',
+    diagramImage: '/assets/sagan/infographic_m1/diagram_brooklyn-1934.webp',
+    diagramCaption: 'Infancia en Brooklyn y el asombro ante el futuro en la Feria Mundial de Nueva York de 1939',
     title: 'Brooklyn, 1934',
     color: '#5B8DB8',
     btnImage: '/assets/sagan/infographic_m1/btn_brooklyn-1934.webp',
@@ -167,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'nino-estrellas',
+    diagramImage: '/assets/sagan/infographic_m1/diagram_nino-estrellas.webp',
+    diagramCaption: 'El descubrimiento en la biblioteca de que las estrellas son soles gigantescos muy lejanos',
     title: 'El Niño de las Estrellas',
     color: '#E8A87C',
     btnImage: '/assets/sagan/infographic_m1/btn_nino-estrellas.webp',
@@ -192,6 +196,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'universidad-chicago',
+    diagramImage: '/assets/sagan/infographic_m1/diagram_universidad-chicago.webp',
+    diagramCaption: 'Formación científica en la Universidad de Chicago estudiando atmósferas planetarias',
     title: 'La Universidad de Chicago',
     color: '#7BAFD4',
     btnImage: '/assets/sagan/infographic_m1/btn_universidad-chicago.webp',
@@ -217,6 +223,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'misiones-espaciales',
+    diagramImage: '/assets/sagan/infographic_m1/diagram_misiones-espaciales.webp',
+    diagramCaption: 'Participación clave en las misiones Mariner, Viking y Voyager de la NASA',
     title: 'Las Misiones Espaciales',
     color: '#D49568',
     btnImage: '/assets/sagan/infographic_m1/btn_misiones-espaciales.webp',
@@ -242,6 +250,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'comunicador-cientifico',
+    diagramImage: '/assets/sagan/infographic_m1/diagram_comunicador-cientifico.webp',
+    diagramCaption: 'El gran puente entre la astrofísica académica y el asombro del público mundial',
     title: 'El Comunicador Científico',
     color: '#4E8FAE',
     btnImage: '/assets/sagan/infographic_m1/btn_comunicador-cientifico.webp',
@@ -267,6 +277,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'palido-punto-azul',
+    diagramImage: '/assets/sagan/infographic_m1/diagram_palido-punto-azul.webp',
+    diagramCaption: 'El Pálido Punto Azul: la Tierra fotografiada a 6,000 millones de kilómetros de distancia',
     title: 'El Pálido Punto Azul',
     color: '#82C4E0',
     btnImage: '/assets/sagan/infographic_m1/btn_palido-punto-azul.webp',
@@ -292,6 +304,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'legado-memoria',
+    diagramImage: '/assets/sagan/infographic_m1/diagram_legado-memoria.webp',
+    diagramCaption: 'La estación conmemorativa Carl Sagan en Marte junto al rover Sojourner',
     title: 'Legado y Memoria',
     color: '#C08254',
     btnImage: '/assets/sagan/infographic_m1/btn_legado-memoria.webp',
@@ -774,6 +788,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

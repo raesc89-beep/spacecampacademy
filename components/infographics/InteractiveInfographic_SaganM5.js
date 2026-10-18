@@ -140,6 +140,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'kit-deteccion',
+    diagramImage: '/assets/sagan/infographic_m5/diagram_kit-deteccion.webp',
+    diagramCaption: 'Herramientas del pensamiento crítico para evaluar afirmaciones con rigor empírico',
     title: 'El Kit de Detección de Tonterías',
     color: '#5B3D8F',
     btnImage: '/assets/sagan/infographic_m5/btn_kit-deteccion.webp',
@@ -161,6 +163,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'metodo-cientifico',
+    diagramImage: '/assets/sagan/infographic_m5/diagram_metodo-cientifico.webp',
+    diagramCaption: 'El método científico como mecanismo autocorrectivo para descubrir el funcionamiento de la naturaleza',
     title: 'El Método Científico',
     color: '#D4A535',
     btnImage: '/assets/sagan/infographic_m5/btn_metodo-cientifico.webp',
@@ -182,6 +186,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'falacias-logicas',
+    diagramImage: '/assets/sagan/infographic_m5/diagram_falacias-logicas.webp',
+    diagramCaption: 'Identificación de falacias lógicas y sesgos cognitivos en la argumentación',
     title: 'Falacias Lógicas Comunes',
     color: '#7A5BAF',
     btnImage: '/assets/sagan/infographic_m5/btn_falacias-logicas.webp',
@@ -203,6 +209,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pseudociencia-ciencia',
+    diagramImage: '/assets/sagan/infographic_m5/diagram_pseudociencia-ciencia.webp',
+    diagramCaption: 'Contraste entre las afirmaciones sin pruebas y la ciencia basada en evidencia verificable',
     title: 'Pseudociencia vs Ciencia',
     color: '#C49225',
     btnImage: '/assets/sagan/infographic_m5/btn_pseudociencia-ciencia.webp',
@@ -224,6 +232,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'dragon-garaje',
+    diagramImage: '/assets/sagan/infographic_m5/diagram_dragon-garaje.webp',
+    diagramCaption: 'La parábola del dragón invisible en el garaje: por qué la carga de la prueba exige evidencia',
     title: 'El Dragón en Mi Garaje',
     color: '#9370C4',
     btnImage: '/assets/sagan/infographic_m5/btn_dragon-garaje.webp',
@@ -245,6 +255,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'pensamiento-digital',
+    diagramImage: '/assets/sagan/infographic_m5/diagram_pensamiento-digital.webp',
+    diagramCaption: 'Importancia de la alfabetización científica frente a la desinformación contemporánea',
     title: 'Pensamiento Crítico en la Era Digital',
     color: '#B88420',
     btnImage: '/assets/sagan/infographic_m5/btn_pensamiento-digital.webp',
@@ -266,6 +278,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'escepticismo-virtud',
+    diagramImage: '/assets/sagan/infographic_m5/diagram_escepticismo-virtud.webp',
+    diagramCaption: 'El equilibrio entre la apertura maravillada al cosmos y el escepticismo riguroso',
     title: 'El Escepticismo como Virtud',
     color: '#4A2D6F',
     btnImage: '/assets/sagan/infographic_m5/btn_escepticismo-virtud.webp',
@@ -761,6 +775,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

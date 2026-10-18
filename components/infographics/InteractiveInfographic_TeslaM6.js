@@ -139,6 +139,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'dos-genios-dos-visiones',
+    diagramImage: '/assets/tesla/infographic_m6/diagram_dos-genios-dos-visiones.webp',
+    diagramCaption: 'Thomas Edison y Nikola Tesla: dos métodos opuestos ante el futuro de la electrificación',
     title: 'Dos Genios, Dos Visiones',
     color: '#6B7B8A',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_dos-genios-dos-visiones.webp',
@@ -160,6 +162,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'encuentro-nueva-york',
+    diagramImage: '/assets/tesla/infographic_m6/diagram_encuentro-nueva-york.webp',
+    diagramCaption: 'El joven Tesla trabajando en la mejora de dinamos de corriente continua en Manhattan',
     title: 'El Encuentro en Nueva York',
     color: '#D4A535',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_encuentro-nueva-york.webp',
@@ -181,6 +185,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'la-ruptura',
+    diagramImage: '/assets/tesla/infographic_m6/diagram_la-ruptura.webp',
+    diagramCaption: 'Independencia de Tesla para desarrollar su sistema de corriente alterna polifásica',
     title: 'La Ruptura',
     color: '#7A8B96',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_la-ruptura.webp',
@@ -202,6 +208,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'westinghouse-entra',
+    diagramImage: '/assets/tesla/infographic_m6/diagram_westinghouse-entra.webp',
+    diagramCaption: 'Alianza histórica con George Westinghouse para industrializar el motor y la red de alterna',
     title: 'Westinghouse Entra en Escena',
     color: '#C49225',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_westinghouse-entra.webp',
@@ -223,6 +231,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'batalla-opinion-publica',
+    diagramImage: '/assets/tesla/infographic_m6/diagram_batalla-opinion-publica.webp',
+    diagramCaption: 'Demostraciones públicas de Tesla encendiendo tubos luminiscentes con corriente de alta frecuencia',
     title: 'La Batalla de la Opinión Pública',
     color: '#8A9AA6',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_batalla-opinion-publica.webp',
@@ -244,6 +254,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'chicago-1893-ac-gana',
+    diagramImage: '/assets/tesla/infographic_m6/diagram_chicago-1893-ac-gana.webp',
+    diagramCaption: 'La Exposición Mundial de Chicago de 1893 iluminada íntegramente con corriente alterna',
     title: 'Chicago 1893: AC Gana',
     color: '#B88420',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_chicago-1893-ac-gana.webp',
@@ -265,6 +277,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'veredicto-historia',
+    diagramImage: '/assets/tesla/infographic_m6/diagram_veredicto-historia.webp',
+    diagramCaption: 'La adopción universal del sistema polifásico como estándar de las redes eléctricas mundiales',
     title: 'El Veredicto de la Historia',
     color: '#5A6B7A',
     btnImage: '/assets/nikola_tesla/infographic_m6/btn_veredicto-historia.webp',
@@ -746,6 +760,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

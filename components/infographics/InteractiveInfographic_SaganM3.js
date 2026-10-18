@@ -153,6 +153,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'foto-lejana',
+    diagramImage: '/assets/sagan/infographic_m3/diagram_foto-lejana.webp',
+    diagramCaption: 'Voyager 1 gira su cámara el 14 de febrero de 1990 para tomar el retrato de familia solar',
     title: 'La Foto Más Lejana',
     color: '#5B3D8F',
     btnImage: '/assets/sagan/infographic_m3/btn_foto-lejana.webp',
@@ -174,6 +176,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'el-discurso',
+    diagramImage: '/assets/sagan/infographic_m3/diagram_el-discurso.webp',
+    diagramCaption: 'Reflexión sobre nuestra responsabilidad de preservar y cuidar el único hogar que conocemos',
     title: 'El Discurso',
     color: '#D4A535',
     btnImage: '/assets/sagan/infographic_m3/btn_el-discurso.webp',
@@ -195,6 +199,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'voyager-1-y-2',
+    diagramImage: '/assets/sagan/infographic_m3/diagram_voyager-1-y-2.webp',
+    diagramCaption: 'El Gran Tour planetario de las sondas gemelas Voyager por los gigantes gaseosos',
     title: 'Voyager 1 y 2',
     color: '#7A5BAF',
     btnImage: '/assets/sagan/infographic_m3/btn_voyager-1-y-2.webp',
@@ -216,6 +222,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'disco-de-oro',
+    diagramImage: '/assets/sagan/infographic_m3/diagram_disco-de-oro.webp',
+    diagramCaption: 'El Disco de Oro de las Voyager: sonidos, música e imágenes de la Tierra para el cosmos',
     title: 'El Disco de Oro',
     color: '#C49225',
     btnImage: '/assets/sagan/infographic_m3/btn_disco-de-oro.webp',
@@ -237,6 +245,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'perspectiva-cosmica',
+    diagramImage: '/assets/sagan/infographic_m3/diagram_perspectiva-cosmica.webp',
+    diagramCaption: 'La perspectiva cósmica como lección de humildad y fraternidad para toda la humanidad',
     title: 'Perspectiva Cósmica',
     color: '#9370C4',
     btnImage: '/assets/sagan/infographic_m3/btn_perspectiva-cosmica.webp',
@@ -258,6 +268,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'espacio-interestelar',
+    diagramImage: '/assets/sagan/infographic_m3/diagram_espacio-interestelar.webp',
+    diagramCaption: 'El cruce de la heliopausa hacia el medio interestelar por las sondas Voyager',
     title: 'El Espacio Interestelar',
     color: '#B88420',
     btnImage: '/assets/sagan/infographic_m3/btn_espacio-interestelar.webp',
@@ -279,6 +291,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'lugar-en-cosmos',
+    diagramImage: '/assets/sagan/infographic_m3/diagram_lugar-en-cosmos.webp',
+    diagramCaption: 'De un rincón de la Vía Láctea a la comprensión de nuestro lugar en el universo',
     title: 'Nuestro Lugar en el Cosmos',
     color: '#4A2D6F',
     btnImage: '/assets/sagan/infographic_m3/btn_lugar-en-cosmos.webp',
@@ -758,6 +772,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

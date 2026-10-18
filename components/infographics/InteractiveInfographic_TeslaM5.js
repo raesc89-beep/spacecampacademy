@@ -144,6 +144,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'bobina-tesla',
+    diagramImage: '/assets/tesla/infographic_m5/diagram_bobina-tesla.webp',
+    diagramCaption: 'La bobina de Tesla: transformador resonante de núcleo de aire para altas frecuencias',
     title: 'La Bobina de Tesla',
     color: '#6B7B8A',
     btnImage: '/assets/nikola_tesla/infographic_m5/btn_bobina-tesla.webp',
@@ -165,6 +167,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'radio-tesla-marconi',
+    diagramImage: '/assets/tesla/infographic_m5/diagram_radio-tesla-marconi.webp',
+    diagramCaption: 'Circuitos sintonizados de radio y el reconocimiento de las patentes fundamentales de Tesla',
     title: 'Radio: ¿Tesla o Marconi?',
     color: '#D4A535',
     btnImage: '/assets/nikola_tesla/infographic_m5/btn_radio-tesla-marconi.webp',
@@ -186,6 +190,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'control-remoto',
+    diagramImage: '/assets/tesla/infographic_m5/diagram_control-remoto.webp',
+    diagramCaption: 'El teleautómata de 1898: el primer barco dirigido por control remoto mediante ondas de radio',
     title: 'Control Remoto',
     color: '#7A8B96',
     btnImage: '/assets/nikola_tesla/infographic_m5/btn_control-remoto.webp',
@@ -207,6 +213,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rayos-x-tesla',
+    diagramImage: '/assets/tesla/infographic_m5/diagram_rayos-x-tesla.webp',
+    diagramCaption: 'Primeras radiografías experimentales obtenidas por Tesla con tubos de vacío de alta frecuencia',
     title: 'Rayos X',
     color: '#C49225',
     btnImage: '/assets/nikola_tesla/infographic_m5/btn_rayos-x-tesla.webp',
@@ -228,6 +236,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'turbina-tesla',
+    diagramImage: '/assets/tesla/infographic_m5/diagram_turbina-tesla.webp',
+    diagramCaption: 'La turbina sin álabes que aprovecha la viscosidad y la capa límite de los fluidos',
     title: 'Turbina de Tesla',
     color: '#8A9AA6',
     btnImage: '/assets/nikola_tesla/infographic_m5/btn_turbina-tesla.webp',
@@ -249,6 +259,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rayo-de-la-muerte',
+    diagramImage: '/assets/tesla/infographic_m5/diagram_rayo-de-la-muerte.webp',
+    diagramCaption: 'El proyecto Teleforce: concepto de haz de partículas concebido como defensa disuasoria',
     title: 'El Rayo de la Muerte',
     color: '#B88420',
     btnImage: '/assets/nikola_tesla/infographic_m5/btn_rayo-de-la-muerte.webp',
@@ -270,6 +282,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'patentes-legado',
+    diagramImage: '/assets/tesla/infographic_m5/diagram_patentes-legado.webp',
+    diagramCaption: 'Más de 300 patentes internacionales que transformaron la ingeniería eléctrica moderna',
     title: 'Patentes que Cambiaron el Mundo',
     color: '#5A6B7A',
     btnImage: '/assets/nikola_tesla/infographic_m5/btn_patentes-legado.webp',
@@ -751,6 +765,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

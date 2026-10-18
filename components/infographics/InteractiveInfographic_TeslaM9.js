@@ -146,6 +146,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'cientifico-ciencia-ficcion',
+    diagramImage: '/assets/tesla/infographic_m9/diagram_cientifico-ciencia-ficcion.webp',
+    diagramCaption: 'La figura de Tesla entre arcos voltaicos como inspiración del científico visionario en el arte',
     title: 'El Científico de Ciencia Ficción',
     color: '#6B7B8A',
     btnImage: '/assets/nikola_tesla/infographic_m9/btn_cientifico-ciencia-ficcion.webp',
@@ -167,6 +169,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tesla-en-el-cine',
+    diagramImage: '/assets/tesla/infographic_m9/diagram_tesla-en-el-cine.webp',
+    diagramCaption: 'Apariciones de Nikola Tesla y sus bobinas resonantes en la historia del cine',
     title: 'Tesla en el Cine',
     color: '#D4A535',
     btnImage: '/assets/nikola_tesla/infographic_m9/btn_tesla-en-el-cine.webp',
@@ -188,6 +192,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tesla-en-videojuegos',
+    diagramImage: '/assets/tesla/infographic_m9/diagram_tesla-en-videojuegos.webp',
+    diagramCaption: 'Estética retrofuturista inspirada en bobinas y generadores eléctricos en los videojuegos',
     title: 'Tesla en Videojuegos',
     color: '#7A8B96',
     btnImage: '/assets/nikola_tesla/infographic_m9/btn_tesla-en-videojuegos.webp',
@@ -209,6 +215,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'tesla-en-comics-libros',
+    diagramImage: '/assets/tesla/infographic_m9/diagram_tesla-en-comics-libros.webp',
+    diagramCaption: 'Novelas gráficas y obras literarias que acercan la biografía de Tesla a los jóvenes',
     title: 'Tesla en Cómics y Libros',
     color: '#C49225',
     btnImage: '/assets/nikola_tesla/infographic_m9/btn_tesla-en-comics-libros.webp',
@@ -230,6 +238,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'la-marca-tesla',
+    diagramImage: '/assets/tesla/infographic_m9/diagram_la-marca-tesla.webp',
+    diagramCaption: 'El motor de inducción de corriente alterna como corazón de la movilidad eléctrica actual',
     title: 'La Marca Tesla',
     color: '#8A9AA6',
     btnImage: '/assets/nikola_tesla/infographic_m9/btn_la-marca-tesla.webp',
@@ -251,6 +261,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'teorias-conspirativas',
+    diagramImage: '/assets/tesla/infographic_m9/diagram_teorias-conspirativas.webp',
+    diagramCaption: 'Separando los mitos populares de las verdaderas leyes físicas del electromagnetismo',
     title: 'Teorías Conspirativas',
     color: '#B88420',
     btnImage: '/assets/nikola_tesla/infographic_m9/btn_teorias-conspirativas.webp',
@@ -272,6 +284,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'rescatando-tesla-real',
+    diagramImage: '/assets/tesla/infographic_m9/diagram_rescatando-tesla-real.webp',
+    diagramCaption: 'El Museo Nikola Tesla en Belgrado: preservación de sus inventos reales y el Huevo de Colón',
     title: 'Rescatando al Tesla Real',
     color: '#5A6B7A',
     btnImage: '/assets/nikola_tesla/infographic_m9/btn_rescatando-tesla-real.webp',
@@ -754,6 +768,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 

@@ -140,6 +140,8 @@ const BIBLIOGRAPHY = [
 const INFOGRAPHIC_NODES = [
   {
     id: 'electricidad-basico',
+    diagramImage: '/assets/tesla/infographic_m8/diagram_electricidad-basico.webp',
+    diagramCaption: 'Flujo ordenado de electrones libres a través de una red cristalina conductora de cobre',
     title: 'Electricidad: Lo Básico',
     color: '#6B7B8A',
     btnImage: '/assets/nikola_tesla/infographic_m8/btn_electricidad-basico.webp',
@@ -161,6 +163,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'voltaje-corriente-resistencia',
+    diagramImage: '/assets/tesla/infographic_m8/diagram_voltaje-corriente-resistencia.webp',
+    diagramCaption: 'La Ley de Ohm ilustrada mediante la analogía hidráulica de presión, caudal y estrechamiento',
     title: 'Voltaje, Corriente y Resistencia',
     color: '#D4A535',
     btnImage: '/assets/nikola_tesla/infographic_m8/btn_voltaje-corriente-resistencia.webp',
@@ -182,6 +186,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'circuitos-electricos',
+    diagramImage: '/assets/tesla/infographic_m8/diagram_circuitos-electricos.webp',
+    diagramCaption: 'Funcionamiento de los circuitos eléctricos en serie y en paralelo con componentes luminosos',
     title: 'Circuitos Eléctricos',
     color: '#7A8B96',
     btnImage: '/assets/nikola_tesla/infographic_m8/btn_circuitos-electricos.webp',
@@ -203,6 +209,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'magnetismo-electromagnetismo',
+    diagramImage: '/assets/tesla/infographic_m8/diagram_magnetismo-electromagnetismo.webp',
+    diagramCaption: 'Electroimán de núcleo de hierro demostrando la unión entre electricidad y magnetismo',
     title: 'Magnetismo y Electromagnetismo',
     color: '#C49225',
     btnImage: '/assets/nikola_tesla/infographic_m8/btn_magnetismo-electromagnetismo.webp',
@@ -224,6 +232,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'induccion-electromagnetica',
+    diagramImage: '/assets/tesla/infographic_m8/diagram_induccion-electromagnetica.webp',
+    diagramCaption: 'Generación de ondas sinusoidales trifásicas mediante un rotor magnético giratorio',
     title: 'Inducción Electromagnética',
     color: '#8A9AA6',
     btnImage: '/assets/nikola_tesla/infographic_m8/btn_induccion-electromagnetica.webp',
@@ -245,6 +255,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'potencia-electrica',
+    diagramImage: '/assets/tesla/infographic_m8/diagram_potencia-electrica.webp',
+    diagramCaption: 'Transporte eficiente en alta tensión para minimizar pérdidas por calentamiento de Joule',
     title: 'Potencia Eléctrica',
     color: '#B88420',
     btnImage: '/assets/nikola_tesla/infographic_m8/btn_potencia-electrica.webp',
@@ -266,6 +278,8 @@ const INFOGRAPHIC_NODES = [
   },
   {
     id: 'electricidad-siglo-xxi',
+    diagramImage: '/assets/tesla/infographic_m8/diagram_electricidad-siglo-xxi.webp',
+    diagramCaption: 'Integración de energías renovables y redes inteligentes sobre la base polifásica de Tesla',
     title: 'La Electricidad en el Siglo XXI',
     color: '#5A6B7A',
     btnImage: '/assets/nikola_tesla/infographic_m8/btn_electricidad-siglo-xxi.webp',
@@ -730,6 +744,46 @@ function ContentPanel({ node, onClose, setLightboxSrc }) {
                 {node.bannerCaption}
               </p>
             )}
+
+        {/* --- Ilustración Científica Temática --- */}
+        {node.diagramImage && (
+          <div style={{
+            marginTop: '1.2rem',
+            marginBottom: '0.5rem',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            border: `1px solid ${node.color}35`,
+            background: 'rgba(5, 7, 20, 0.55)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+            position: 'relative',
+            zIndex: 2
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${node.color}20, transparent)`,
+              borderBottom: `1px solid ${node.color}25`
+            }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: node.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                🎨 ILUSTRACIÓN CIENTÍFICA
+              </span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={node.diagramImage}
+              alt={node.diagramCaption || node.title}
+              onClick={() => setLightboxSrc(node.diagramImage)}
+              style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+              loading="lazy"
+            />
+            {node.diagramCaption && (
+              <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                {node.diagramCaption}
+              </p>
+            )}
+          </div>
+        )}
+
           </div>
         )}
 
