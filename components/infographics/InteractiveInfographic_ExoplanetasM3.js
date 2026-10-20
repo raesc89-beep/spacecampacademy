@@ -547,8 +547,8 @@ function NodeButton({ node, isActive, onClick, index }) {
       }}
     >
       <div style={{
-        width: '82px',
-        height: '82px',
+        width: '116px',
+        height: '116px',
         borderRadius: '50%',
         overflow: 'hidden',
         border: `3px solid ${isActive ? node.color : 'rgba(255,215,64,0.25)'}`,

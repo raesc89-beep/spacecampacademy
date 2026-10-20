@@ -509,7 +509,7 @@ function NodeButton({ node, isActive, onClick, index }) {
       }}
     >
       <div style={{
-        width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden',
+        width: '116px', height: '116px', borderRadius: '50%', overflow: 'hidden',
         border: `3px solid ${isActive ? node.color : 'rgba(240,165,0,0.2)'}`,
         boxShadow: isActive
           ? `0 0 20px ${node.color}50, 0 0 40px ${node.color}20, inset 0 0 15px ${node.color}30`
@@ -534,9 +534,9 @@ function NodeButton({ node, isActive, onClick, index }) {
       </div>
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem', fontWeight: 700, letterSpacing: '0.3px',
+        fontSize: '0.86rem', fontWeight: 700, letterSpacing: '0.3px',
         textAlign: 'center', lineHeight: 1.2, transition: 'color 0.3s',
-        maxWidth: '100px', textShadow: isActive ? `0 0 8px ${node.color}40` : 'none',
+        maxWidth: '128px', textShadow: isActive ? `0 0 8px ${node.color}40` : 'none',
       }}>
         {node.title}
       </span>

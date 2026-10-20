@@ -477,8 +477,8 @@ function NodeButton({ node, isActive, onClick, index }) {
       }}
     >
       <div style={{
-        width: '90px',
-        height: '90px',
+        width: '116px',
+        height: '116px',
         borderRadius: '50%',
         overflow: 'hidden',
         border: `3px solid ${isActive ? node.color : 'rgba(0,229,255,0.2)'}`,
@@ -507,11 +507,11 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
+        fontSize: '0.86rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
-        maxWidth: '100px',
+        maxWidth: '128px',
         textShadow: isActive ? `0 0 8px ${node.color}40` : 'none',
       }}>
         {node.title}
@@ -945,13 +945,21 @@ export default function InteractiveInfographic_BttfM4() {
           </motion.p>
         )}
 
-        {/* Nodes Grid */}
+                {/* Nodes Grid */}
         <div style={{
           display: 'flex',
           justifyContent: 'center',
+          alignItems: 'flex-start',
           flexWrap: 'wrap',
-          gap: '1.5rem',
-          marginBottom: '2rem',
+          gap: '1.75rem 2rem',
+          margin: '0 auto 2.5rem',
+          maxWidth: '1150px',
+          padding: '1.5rem 1rem',
+          background: 'rgba(15, 23, 42, 0.45)',
+          borderRadius: '24px',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.25)',
+          backdropFilter: 'blur(10px)',
         }}>
           {INFOGRAPHIC_NODES.map((node, i) => (
             <NodeButton

@@ -474,8 +474,8 @@ const NodeButton = ({ node, isVisited, onClick }) => {
       onClick={() => onClick(node)}
       style={{
         position: 'relative',
-        width: '90px',
-        height: '90px',
+        width: '116px',
+        height: '116px',
         borderRadius: '50%',
         padding: 0,
         border: `3px solid ${isComplete ? node.color : '#333'}`,

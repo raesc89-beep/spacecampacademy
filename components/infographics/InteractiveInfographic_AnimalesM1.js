@@ -413,8 +413,8 @@ function NodeButton({ node, isActive, onClick, index }) {
       }}
     >
       <div style={{
-        width: '100px',
-        height: '100px',
+        width: '116px',
+        height: '116px',
         borderRadius: '50%',
         overflow: 'hidden',
         border: `3px solid ${isActive ? node.color : 'rgba(216,125,74,0.25)'}`,
@@ -447,7 +447,7 @@ function NodeButton({ node, isActive, onClick, index }) {
         textAlign: 'center',
         lineHeight: 1.25,
         transition: 'color 0.3s',
-        maxWidth: '110px',
+        maxWidth: '128px',
         textShadow: isActive ? `0 0 10px ${node.color}45` : 'none',
       }}>
         {node.title}

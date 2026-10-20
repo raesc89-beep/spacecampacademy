@@ -416,8 +416,8 @@ const NodeButton = ({ node, isVisited, onClick }) => {
       onClick={() => onClick(node)}
       style={{
         position: 'relative',
-        width: '90px',
-        height: '90px',
+        width: '116px',
+        height: '116px',
         borderRadius: '50%',
         padding: 0,
         border: `3px solid ${isComplete ? node.color : '#333'}`,
@@ -558,7 +558,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
           </div>
         </div>
 
-        <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <div style={{ padding: '3rem 2rem', maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
             <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC', margin: 0, padding: '1.5rem', background: 'rgba(255,255,255,0.03)', borderRadius: '12px' }}>

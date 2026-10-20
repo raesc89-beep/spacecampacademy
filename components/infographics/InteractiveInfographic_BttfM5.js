@@ -549,7 +549,7 @@ function NodeButton({ node, isActive, isExplored, onClick }) {
       whileHover={{ scale: 1.1, rotate: [0, -2, 2, 0] }}
       whileTap={{ scale: 0.92 }}
       style={{
-        position: 'relative', width: 78, height: 78, borderRadius: 8,
+        position: 'relative', width: 116, height: 116, borderRadius: 8,
         border: `2px solid ${node.color}`,
         borderTop: `2px solid ${node.color}cc`,
         borderBottom: `3px solid ${node.color}66`,

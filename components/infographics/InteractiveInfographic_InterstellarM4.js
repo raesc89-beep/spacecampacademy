@@ -372,8 +372,8 @@ function NodeButton({ node, isActive, onClick, index }) {
       }}
     >
       <div style={{
-        width: '90px',
-        height: '90px',
+        width: '116px',
+        height: '116px',
         borderRadius: '50%',
         overflow: 'hidden',
         border: `3px solid ${isActive ? node.color : 'rgba(79,195,247,0.2)'}`,
@@ -402,11 +402,11 @@ function NodeButton({ node, isActive, onClick, index }) {
 
       <span style={{
         color: isActive ? node.color : 'rgba(255,255,255,0.75)',
-        fontSize: '0.78rem', fontWeight: 700, letterSpacing:'0.3px',
+        fontSize: '0.86rem', fontWeight: 700, letterSpacing:'0.3px',
         textAlign: 'center',
         lineHeight: 1.2,
         transition: 'color 0.3s',
-        maxWidth: '100px',
+        maxWidth: '128px',
         textShadow: isActive ? `0 0 8px ${node.color}40` : 'none',
       }}>
         {node.title}
@@ -656,6 +656,44 @@ export default function InteractiveInfographic_InterstellarM4() {
                 <img src={activeNode.bannerImage} alt={activeNode.bannerCaption || ''}
                      style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 60%, rgba(10,12,30,0.6) 100%)' }} />
+              </div>
+            )}
+
+            {/* --- Ilustración Científica Temática --- */}
+            {activeNode.diagramImage && (
+              <div style={{
+                margin: '1.5rem 0',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                border: `1px solid ${activeNode.color}35`,
+                background: 'rgba(5, 7, 20, 0.55)',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+                position: 'relative',
+                zIndex: 2
+              }}>
+                <div style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                  padding: '0.6rem 1rem', background: `linear-gradient(90deg, ${activeNode.color}20, transparent)`,
+                  borderBottom: `1px solid ${activeNode.color}25`
+                }}>
+                  <span style={{ fontSize: '0.72rem', fontWeight: 800, color: activeNode.color, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                    🎨 ILUSTRACIÓN CIENTÍFICA
+                  </span>
+                  <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.45)' }}>Click para ampliar</span>
+                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={activeNode.diagramImage}
+                  alt={activeNode.diagramCaption || activeNode.title}
+                  onClick={() => setLightboxSrc(activeNode.diagramImage)}
+                  style={{ width: '100%', maxHeight: '340px', objectFit: 'contain', cursor: 'pointer', display: 'block', padding: '0.5rem', background: 'rgba(0,0,0,0.2)' }}
+                  loading="lazy"
+                />
+                {activeNode.diagramCaption && (
+                  <p style={{ fontSize: '0.78rem', color: '#aaa', textAlign: 'center', margin: '0.4rem 0.8rem 0.8rem', fontStyle: 'italic' }}>
+                    {activeNode.diagramCaption}
+                  </p>
+                )}
               </div>
             )}
             {activeNode.content.slice(1).map((paragraph, idx) => (

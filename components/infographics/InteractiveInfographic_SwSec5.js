@@ -447,8 +447,8 @@ const NodeButton = ({ node, isVisited, onClick }) => {
       onClick={() => onClick(node)}
       style={{
         position: 'relative',
-        width: '90px',
-        height: '90px',
+        width: '116px',
+        height: '116px',
         borderRadius: '50%',
         padding: 0,
         border: `3px solid ${isComplete ? node.color : '#333'}`,
@@ -531,7 +531,7 @@ const ContentPanel = ({ node, onClose, onNext, isLast, setLightboxSrc }) => {
             }} />
           </div>
         </div>
-        <div style={{ padding: '3rem 2rem', maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <div style={{ padding: '3rem 2rem', maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <p style={{ fontFamily: '"Lora", serif', fontSize: '1.1rem', lineHeight: 1.8, color: '#CFD8DC' }}>{node.content[1]}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '1rem' }}>
             <div style={{ position: 'relative', padding: '1.5rem', background: `linear-gradient(135deg, ${node.color}11, transparent)`, border: `1px solid ${node.color}33`, borderRadius: '12px' }}>
@@ -627,7 +627,7 @@ export default function InteractiveInfographic_SwSec5() {
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.15, backgroundImage: 'url(/assets/starwars/infographic_fauna/bg_fauna.png)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
       <div style={{ position: 'relative', zIndex: 10, padding: '3rem 2rem', maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <GalacticHeader nodes={INFOGRAPHIC_NODES} activeId={activeNode} />
-        <div style={{ position: 'relative', width: '100%', maxWidth: '800px', height: '400px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '2rem', marginTop: '3rem' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: '1100px', minHeight: '260px', padding: '1.5rem 1rem', background: 'rgba(15, 23, 42, 0.45)', borderRadius: '24px', border: '1px solid rgba(255, 255, 255, 0.08)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.25)', backdropFilter: 'blur(10px)', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '2rem', marginTop: '3rem' }}>
           {INFOGRAPHIC_NODES.map((node, i) => (
             <motion.div key={node.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}>
               <NodeButton node={node} isVisited={(id) => visitedNodes.has(id)} onClick={handleNodeClick} />
@@ -651,7 +651,7 @@ export default function InteractiveInfographic_SwSec5() {
             </motion.div>
           )}
         </AnimatePresence>
-        <div style={{ marginTop: '5rem', width: '100%', maxWidth: '800px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
+        <div style={{ marginTop: '5rem', width: '100%', maxWidth: '1100px', background: '#0B0D17', border: '1px solid #333', borderRadius: '12px', padding: '2rem', textAlign: 'left' }}>
           <h3 style={{ fontFamily: '"Oswald", sans-serif', color: '#B0BEC5', fontSize: '1.2rem', marginTop: 0, borderBottom: '1px solid #333', paddingBottom: '1rem' }}>ARCHIVOS HOLOCRÓN (Bibliografía)</h3>
           <ul style={{ margin: 0, padding: '0 0 0 1rem', color: '#78909C', fontFamily: '"Lora", serif', fontSize: '0.9rem', lineHeight: 1.8 }}>
             {BIBLIOGRAPHY.map((item, idx) => <li key={idx} style={{ marginBottom: '0.5rem' }}>{item}</li>)}

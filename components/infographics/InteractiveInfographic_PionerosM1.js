@@ -313,8 +313,8 @@ export default function InteractiveInfographic_PionerosM1() {
               }}
             >
               <div style={{
-                width: isMobile ? 54 : 70,
-                height: isMobile ? 54 : 70,
+                width: isMobile ? 76 : 116,
+                height: isMobile ? 76 : 116,
                 borderRadius: '50%',
                 padding: 3,
                 background: isSelected
@@ -343,11 +343,11 @@ export default function InteractiveInfographic_PionerosM1() {
                 </div>
               </div>
               <span style={{
-                fontSize: isMobile ? '0.7rem' : '0.8rem',
+                fontSize: isMobile ? '0.78rem' : '0.86rem',
                 fontWeight: isSelected ? 700 : 500,
                 color: isSelected ? n.color : '#94a3b8',
                 marginTop: 8,
-                maxWidth: isMobile ? 70 : 90,
+                maxWidth: isMobile ? 90 : 128,
                 textAlign: 'center',
                 whiteSpace: 'nowrap',
                 overflow: 'hidden',
